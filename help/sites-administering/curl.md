@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '883'
 ht-degree: 34%
 
 ---
@@ -29,7 +29,7 @@ Bei cURL handelt es sich um ein Open-Source-Befehlszeilen-Tool für die URL-Mani
 
 cURL ist ein bewährtes und weit verbreitetes Tool zum Abrufen oder Senden von Daten mithilfe der URL-Syntax und wurde ursprünglich 1997 veröffentlicht. Der Name &quot;cURL&quot;bedeutete ursprünglich &quot;see URL&quot;.
 
-Aufgrund der RESTful-Eigenschaft des Sling-Frameworks, auf dem AEM erstellt wird, können die meisten Aufgaben auf einen URL-Aufruf reduziert werden, der mit cURL ausgeführt werden kann. [Aufgaben zur Inhaltsbearbeitung](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) wie das Aktivieren von Seiten und das Starten von Workflows sowie [operative Aufgaben](/help/sites-administering/curl.md#common-operational-aem-curl-commands) z. B. Paketverwaltung und Benutzerverwaltung können mithilfe von cURL automatisiert werden. Darüber hinaus können Sie [Erstellen einer eigenen cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) -Befehle für die meisten Aufgaben in AEM.
+Aufgrund der RESTful-Eigenschaft des Sling-Frameworks, auf dem AEM erstellt wird, können die meisten Aufgaben auf einen URL-Aufruf reduziert werden, der mit cURL ausgeführt werden kann. [Aufgaben zur Inhaltsbearbeitung](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) wie das Aktivieren von Seiten und das Starten von Workflows und [operative Aufgaben](/help/sites-administering/curl.md#common-operational-aem-curl-commands) z. B. Paketverwaltung und Benutzerverwaltung können mithilfe von cURL automatisiert werden. Darüber hinaus können Sie [Erstellen einer eigenen cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) -Befehle für die meisten Aufgaben in AEM.
 
 >[!NOTE]
 >

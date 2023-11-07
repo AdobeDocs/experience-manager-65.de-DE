@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Leader, Architect, User
 exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
-source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 65%
@@ -26,7 +26,7 @@ Die [!DNL Assets]-Funktionen von [!DNL Experience Manager] bieten Ihnen folgende
 * Verwalten von Assets durch Gruppierung nach Tags, Lightbox oder Bewertung (Favoriten). Hinzufügen von Anmerkungen zu Assets.
 * Suchen Sie nach Assets, indem Sie nach Dateinamen, dem Volltext von Dokumenten und nach Daten, Dokumenttyp und Tags suchen.
 * Hinzufügen oder Bearbeiten von Metadateninformationen für Assets. Metadaten werden automatisch mit dem entsprechenden Asset in einer Version zusammengefasst. Sie können Asset-Metadaten importieren und exportieren.
-* Führen Sie Bildbearbeitungsfunktionen wie Skalierung und Hinzufügen von Bildfiltern durch. Importieren und exportieren Sie mehrere digitale Assets gleichzeitig mit einem WebDAV- oder CIFS-Ordner.
+* Führen Sie Bildbearbeitungsfunktionen wie Skalierung und Hinzufügen von Bildfiltern durch. Importieren und exportieren Sie mehrere digitale Assets gleichzeitig mit einem WebDAV- oder CIF-Ordner.
 * Verwenden von Workflows und Benachrichtigungen, um die gemeinsame Verarbeitung und den gemeinsamen Download mehrerer Assets zu ermöglichen und Zugriffsrechte auf Assets zu verwalten.
 
 ### [!DNL Experience Manager Assets] ist mit [!DNL Experience Manager Sites] integriert {#aem-assets-fully-integrated-in-cq-wcm}
@@ -66,7 +66,7 @@ Beim Arbeiten mit digitalen Assets in [!DNL Experience Manager]ist es hilfreich,
 
 * **Tagging**: [!DNL Assets] können mit Tags versehen und klassifiziert werden. Siehe [Organisieren von Assets](/help/assets/organize-assets.md).
 
-* **Ausgabedarstellungen**: Eine Ausgabedarstellung ist die binäre Darstellung eines Assets. [!DNL Assets] verfügen stets über eine primäre Darstellung, nämlich die der hochgeladenen Datei. Sie können über eine beliebige Anzahl zusätzlicher Darstellungen verfügen, die erstellt werden, beispielsweise durch benutzerdefinierte Workflow-Schritte oder beim Hochladen eines Assets. Ausgabedarstellungen können eine andere Größe aufweisen, mit einer anderen Auflösung, mit einem hinzugefügten Wasserzeichen oder einem anderen geänderten Merkmal.
+* **Ausgabedarstellungen**: Eine Ausgabedarstellung ist die binäre Darstellung eines Assets. [!DNL Assets] verfügen stets über eine primäre Darstellung, nämlich die der hochgeladenen Datei. Sie können über eine beliebige Anzahl zusätzlicher Darstellungen verfügen, die beispielsweise durch benutzerdefinierte Workflow-Schritte oder beim Hochladen eines Assets erstellt werden. Ausgabedarstellungen können eine andere Größe aufweisen, mit einer anderen Auflösung, mit einem hinzugefügten Wasserzeichen oder einem anderen geänderten Merkmal.
 
 * **Versionen**: Bei der Versionierung wird eine Momentaufnahme von digitalen Assets zu einem bestimmten Zeitpunkt aufgezeichnet. Sie können frühere Versionen von Assets wiederherstellen. Siehe [Versionierung in  [!DNL Assets]](manage-assets.md#asset-versioning).
 

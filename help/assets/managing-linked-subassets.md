@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1421'
-ht-degree: 97%
+source-wordcount: '1420'
+ht-degree: 96%
 
 ---
 
@@ -63,7 +63,7 @@ Dieses Verfahren weist Ähnlichkeiten mit dem [Hinzufügen digitaler Assets als 
 
 ### Erstellen von Referenzen zu Assets durch Exportieren einer ZIP-Datei {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
-1. Gehen Sie die Schritte in [Erstellen von Workflow-Modellen](/help/sites-developing/workflows-models.md) durch, um einen neuen Workflow zu erstellen.
+1. Führen Sie die Schritte unter [Workflow-Modelle erstellen](/help/sites-developing/workflows-models.md) , um einen Workflow zu erstellen.
 1. Exportieren Sie das Dokument mit der [Paketfunktion](https://helpx.adobe.com/indesign/how-to/save-share-projects.html) von [!DNL Adobe InDesign]. [!DNL Adobe InDesign] kann ein Dokument und die verknüpften Assets als Paket exportieren. In diesem Fall enthält der exportierte Ordner einen `Links`-Ordner, der Unter-Assets in der [!DNL InDesign]-Datei enthält. Der `Links`-Ordner befindet sich im selben Ordner wie die INDD-Datei.
 1. Erstellen Sie eine ZIP-Datei und laden Sie sie in das [!DNL Experience Manager]-Repository hoch.
 1. Starten Sie den `Unarchiver`-Workflow.

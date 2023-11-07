@@ -12,7 +12,7 @@ discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '6057'
 ht-degree: 99%
@@ -428,7 +428,7 @@ Beispiele:
 * Wenn Sie alle Meldungen des Typs **FEHLER** erfassen möchten, ist keine Konfiguration erforderlich. Alle FEHLER-Meldungen werden standardmäßig erfasst.
 * Wenn alle Meldungen des Typs **FEHLER**, **WARNUNG** und **INFO** erfasst werden sollen, sollte der Logger-Name auf „**Stamm**“ und die Protokollierungsstufe auf **INFO** festgelegt werden.
 
-* Wenn Sie alle Meldungen aus einem bestimmten Paket erfassen möchten (z. B. com.adobe.granite), sollte der Logger-Name auf „com.adobe.granite“ festgelegt werden. Darüber hinaus sollte die Protokollierungsebene auf **DEBUG** festgelegt werden (dadurch werden alle Meldungen des Typs **FEHLER**, **WARNUNG**, **INFO** und **DEBUG** erfasst), wie in der Abbildung unten dargestellt.
+* Wenn Sie alle Nachrichten aus einem bestimmten Paket erfassen möchten (z. B. com.adobe.granite), sollte der Logger-Name auf &quot;com.adobe.granite&quot;gesetzt werden. Darüber hinaus sollte die Protokollierungsebene auf **DEBUG** festgelegt werden (dadurch werden alle Meldungen des Typs **FEHLER**, **WARNUNG**, **INFO** und **DEBUG** erfasst), wie in der Abbildung unten dargestellt.
 
 ![chlimage_1-121](assets/chlimage_1-121.png)
 

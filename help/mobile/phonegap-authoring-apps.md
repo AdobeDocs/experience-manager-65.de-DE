@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 1%
@@ -71,7 +71,7 @@ Das Inhaltspaket ermöglicht es dem AEM App-Autor, Seiteninhalte in AEM zu verwa
 
 Das Inhaltspaket erstellt für jedes Update eine ZIP-Datei, die als Inhaltsfreigabepaket gilt. Diese Pakete enthalten HTML-Ressourcen und HTML-Seiten, die beim Rendern der App generiert werden und intelligent genug sind, nur die Dateien zu verpacken, die seit der letzten Aktualisierung geändert wurden.
 
-Die Kachel &quot;Inhaltspaket verwalten&quot; **Typ** -Spalte zeigt entweder &quot;App&quot;an, um Application Shell-Inhalt anzugeben, z. B. das Framework oder die Infrastruktur der App, die von einem Entwickler verwaltet wird, oder &quot;Inhalt&quot;, der den vom Inhaltsautor verwalteten Seiteninhalt darstellt.
+Die Kachel &quot;Inhaltspaket verwalten&quot; **Typ** -Spalte zeigt entweder &quot;App&quot;an, um Application Shell-Inhalt anzugeben, z. B. das Framework oder die Infrastruktur der App, die von einem Entwickler verwaltet wird, oder &quot;Inhalt&quot;, die den vom Inhaltsautor verwalteten Seiteninhalt darstellt.
 
 Inhalte können als Sprache oder als bestimmter Teil der App dargestellt werden, in dem die App mehrere Inhaltsfreigabe-Pakete nutzt. Die Art und Weise, wie Sie Inhalte bündeln, ist flexibel und hängt vollständig davon ab, wie Sie Inhalte für Ihre Anwendung verwalten möchten.
 

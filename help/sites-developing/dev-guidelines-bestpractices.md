@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
-source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 20%
+source-wordcount: '1084'
+ht-degree: 21%
 
 ---
 
@@ -25,7 +25,7 @@ Angenommen, eine Newslisten-Seite, die Auszüge aus bereits veröffentlichten Ar
 
 Die empfohlene Vorgehensweise bei einer solchen Herausforderung wäre:
 
-* Verwenden Sie eine vorhandene Vorlage erneut, damit Sie einen neuen Seitentyp erstellen können. Die Vorlage definiert grob die Seitenstruktur (Navigationselemente, Bedienfelder usw.), die durch ihr Design (CSS, Grafiken) weiter optimiert wird.
+* Verwenden Sie eine vorhandene Vorlage erneut, damit Sie einen Seitentyp erstellen können. Die Vorlage definiert grob die Seitenstruktur (Navigationselemente, Bedienfelder usw.), die durch ihr Design (CSS, Grafiken) weiter optimiert wird.
 * Verwenden Sie das Absatzsystem (parsys/iparsys) auf den neuen Seiten.
 * Definieren Sie Zugriffsberechtigungen für den Design-Modus der Absatzsysteme, damit diese nur von berechtigten Personen (normalerweise der Administrator) geändert werden können.
 * Definieren Sie die im angegebenen Absatzsystem zulässigen Komponenten, damit Editoren die erforderlichen Komponenten dann auf der Seite platzieren können. In diesem Fall kann es sich um eine Listenkomponente handeln, die eine Unterstruktur von Seiten durchlaufen und die Informationen anhand vordefinierter Regeln extrahieren kann.
@@ -46,7 +46,7 @@ Die folgenden allgemeinen Regeln für Entwickler sind in den meisten gängigen P
 
 ### Anpassen von Komponenten und anderen Elementen {#customizing-components-and-other-elements}
 
-Wenn Sie eigene Komponenten erstellen oder eine vorhandene Komponente anpassen, ist es häufig am einfachsten (und sichersten), vorhandene Definitionen wiederzuverwenden. Dasselbe gilt auch für andere Elemente in AEM, z. B. für den Fehler-Handler.
+Wenn Sie eigene Komponenten erstellen oder eine vorhandene Komponente anpassen, ist es häufig am einfachsten (und sichersten), vorhandene Definitionen wiederzuverwenden. Die gleichen Prinzipien gelten auch für andere Elemente in AEM, z. B. den Fehler-Handler.
 
 Kopieren Sie dazu die vorhandene Definition und überlagern Sie sie, wie nachfolgend beschrieben: Mit anderen Worten, kopieren Sie die Definition von `/libs` zu `/apps/<your-project>`. Sie können die neue Definition in `/apps` Anforderungen entsprechend aktualisieren.
 
@@ -109,7 +109,7 @@ Verwenden Sie zum Rendern von Inhalten den Navigationszugriff auf die Inhaltsstr
 >Wenn Sie die [Query Builder](/help/sites-developing/querybuilder-api.md)verwenden Sie JCR-Abfragen, da Query Builder JCR-Abfragen im Hintergrund generiert.
 >
 
-## Sicherheitsaspekte {#security-considerations}
+## Sicherheitsüberlegungen {#security-considerations}
 
 >[!NOTE]
 >

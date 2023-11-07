@@ -5,10 +5,10 @@ contentOwner: AG
 role: Architect, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 55%
+source-wordcount: '1795'
+ht-degree: 53%
 
 ---
 
@@ -55,13 +55,13 @@ Womöglich verfügen Sie bereits über eine Tag-Taxonomie für Ihre Bilder. Zwar
 
 ### Aufnehmen von Assets {#ingesting-assets}
 
-Leistung und Stabilität sind bei der Aufnahme von Assets in das System von großer Bedeutung. Da Sie eine große Menge an Daten in das System laden, sollten Sie sicherstellen, dass das System so gut wie möglich funktioniert, um die erforderliche Zeit zu minimieren und eine Überlastung des Systems zu vermeiden, was zu einem Systemabsturz führen kann, insbesondere bei Systemen, die bereits in Produktion sind.
+Leistung und Stabilität sind bei der Aufnahme von Assets in das System von großer Bedeutung. Da Sie eine große Menge an Daten in das System laden, möchten Sie sicherstellen, dass das System funktioniert und dass es die erforderliche Zeit minimieren kann, um eine Überlastung des Systems zu vermeiden, was zu einem Systemabsturz führen kann, insbesondere bei Systemen, die bereits in Produktion sind.
 
 Es gibt zwei Ansätze zum Laden der Assets in das System: einen Push-basierten Ansatz mit HTTP oder einen Pull-basierten Ansatz mit den JCR-APIs.
 
 #### Senden über HTTP {#pushing-through-http}
 
-Das Managed Services-Team von Adobe lädt Daten mit einem Tool namens Glutton in Kundenumgebungen. Glutton ist eine kleine Java-Anwendung, die alle Assets von einem Verzeichnis in ein anderes Verzeichnis einer [!DNL Experience Manager]-Bereitstellung lädt. Statt Glutton können Sie auch Tools wie Perl-Skripts zum Posten der Assets in das Repository verwenden.
+Das Adobe Managed Services-Team verwendet ein Tool namens Glutton, um Daten in Kundenumgebungen zu laden. Glutton ist eine kleine Java-Anwendung, die alle Assets von einem Verzeichnis in ein anderes Verzeichnis einer [!DNL Experience Manager]-Bereitstellung lädt. Statt Glutton können Sie auch Tools wie Perl-Skripts zum Posten der Assets in das Repository verwenden.
 
 Der Push-basierte Ansatz mit HTTP hat zwei wesentliche Nachteile:
 
@@ -82,7 +82,7 @@ Nachdem Sie die Assets in das System geladen haben, müssen Sie sie über den Wo
 
 Wenn Sie den Workflow den Anforderungen entsprechend konfiguriert haben, stehen Ihnen zwei Optionen zur Ausführung zur Verfügung:
 
-1. Die einfachste Herangehensweise bietet [Bulk Workflow Manager von ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Mit diesem Tool können Sie eine Abfrage ausführen und die Ergebnisse der Abfrage mithilfe eines Workflows verarbeiten. Es gibt auch Optionen zum Festlegen von Stapelgrößen.
+1. Der einfachste Ansatz ist [Bulk Workflow Manager von ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Mit diesem Tool können Sie eine Abfrage ausführen und die Ergebnisse der Abfrage mithilfe eines Workflows verarbeiten. Es gibt auch Optionen zum Festlegen von Stapelgrößen.
 1. Sie können [Fast Action Manager von ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) zusammen mit [Synthetic Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html) verwenden. Dieser Ansatz erfordert zwar viel mehr Mitwirkung, Sie können jedoch den Verwaltungsaufwand für die [!DNL Experience Manager]-Workflow-Engine verringern und gleichzeitig die Verwendung von Server-Ressourcen optimieren. Darüber hinaus steigert der Fast Action Manager die Leistung durch die dynamische Überwachung der Serverressourcen und die Einschränkung der Systemlast. Beispielskripte wurden auf der Seite mit den ACS Commons-Funktionen bereitgestellt.
 
 ### Aktivieren von Assets {#activating-assets}

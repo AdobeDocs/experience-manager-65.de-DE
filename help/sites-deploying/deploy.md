@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1766'
-ht-degree: 59%
+source-wordcount: '1765'
+ht-degree: 58%
 
 ---
 
@@ -66,7 +66,7 @@ Auf Infrastrukturebene bietet AEM Folgendes:
 
 * **Web-Anwendungs-Server**: AEM kann im eigenständigen Modus (es umfasst einen integrierten Jetty-Webserver) oder als Web-Anwendung innerhalb eines Anwendungs-Servers eines Drittanbieters bereitgestellt werden.
 * **Web-Anwendungs-Framework**: AEM beinhaltet das Sling-Web-Anwendungs-Framework, das das Schreiben von RESTful-Web-Anwendungen vereinfacht.
-* **Content-Repository**: AEM enthält ein Java™ Content Repository (JCR), ein Typ hierarchischer Datenbank, die speziell für unstrukturierte und teilstrukturierte Daten entwickelt wurde. Das Repository speichert nicht nur den für den Benutzer sichtbaren Inhalt, sondern auch alle von der Anwendung verwendeten Code, Vorlagen und internen Daten.
+* **Inhalts-Repository**: AEM umfasst ein Java™ Content Repository (JCR), ein Typ hierarchischer Datenbank, die speziell für unstrukturierte und teilstrukturierte Daten entwickelt wurde. Das Repository speichert nicht nur den für den Benutzer sichtbaren Inhalt, sondern auch alle von der Anwendung verwendeten Code, Vorlagen und internen Daten.
 
 Auf dieser Grundlage bietet AEM außerdem mehrere Funktionen auf Anwendungsebene für die Verwaltung von:
 
@@ -103,9 +103,9 @@ In den folgenden Abschnitten werden beide Szenarien beschrieben:
 
 ### On-Premise {#on-premise}
 
-Sie können AEM auf Servern in Ihrer Unternehmensumgebung installieren. Typische Installationsinstanzen sind: Entwicklungs-, Test- und Veröffentlichungsumgebungen. Siehe [Erste Schritte](/help/sites-deploying/deploy.md#getting%20started) für grundlegende Informationen, wie Sie die AEM Software dazu bringen, sie lokal zu installieren.
+Sie können AEM auf Servern in Ihrer Unternehmensumgebung installieren. Typische Instanzen der Installation sind: Entwicklungs-, Test- und Veröffentlichungsumgebungen. Siehe [Erste Schritte](/help/sites-deploying/deploy.md#getting%20started) für grundlegende Informationen, wie Sie die AEM Software dazu bringen, sie lokal zu installieren.
 
-Weitere Informationen zu typischen On-Premise-Bereitstellungen finden Sie unter [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md).
+Weitere Informationen zu typischen lokalen Implementierungen finden Sie unter [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md).
 
 ### Managed Services mit Cloud Manager {#managed-services-using-cloud-manager}
 
@@ -117,7 +117,7 @@ Mit AEM Managed Services können Kundinnen und Kunden die folgenden Vorteile erz
 
 **Höhere Leistung:** Bietet zuverlässige digitale Erlebnisse für Ihr Unternehmen mit vier Service-Verfügbarkeitsoptionen, 99,5 %, 99,9 %, 99,95 % und 99,99 %. Außerdem ermöglicht es automatische Backup- und Multimode-Disaster Recovery-Modelle, um Zuverlässigkeit und Notfallmanagement zu gewährleisten.
 
-**Optimierte IT-Kosten:** Proaktive Beratung und Expertenwissen helfen Unternehmen dabei, auf dem neuesten Stand der AEM zu bleiben. Adobe Platinum Maintenance and Support ist automatisch in neue Bereitstellungen von AMS Enterprise/Basic eingebunden und bietet technisches Know-how und operative Erfahrung, um Unternehmen bei der Pflege ihrer unternehmenskritischen Anwendungen zu unterstützen. Kostenlose grundlegende Analytics- oder Target-Funktionen bieten zusätzlichen Mehrwert für mittelständische Unternehmen mit begrenztem Bedarf hinsichtlich Analysen und Personalisierung.
+**Optimierte IT-Kosten:** Proaktive Beratung und Expertenwissen helfen Unternehmen dabei, auf dem neuesten Stand der AEM zu bleiben. Adobe Platinum Maintenance and Support ist automatisch in neue Bereitstellungen von AMS Enterprise/Basic integriert und bietet technische Kenntnisse und Betriebserfahrung, um Unternehmen bei der Pflege ihrer unternehmenskritischen Anwendungen zu unterstützen. Kostenlose grundlegende Analytics- oder Target-Funktionen bieten zusätzlichen Mehrwert für mittelständische Unternehmen mit begrenztem Bedarf hinsichtlich Analysen und Personalisierung.
 
 **Oberste Sicherheit:** Stellt physische, Netzwerk- und Datensicherheit auf Unternehmensniveau sicher, indem Kunden-Applikationen in einer Einrichtung mit beschränktem Zugang, hinter Firewall-Systemen oder in einer virtuellen, privaten Cloud, gehostet werden. Es beinhaltet virtuelle Maschinen für Einzelmandanten mit robuster Datenspeicherverschlüsselung, Virenschutz und Datenisolierung.
 
@@ -155,7 +155,7 @@ Im folgenden Abschnitt wird die **eigenständige Installation** beschrieben. Wei
 
    Windows-Installationsspeicherort: **`C:\Program Files\aem`**
 
-   Ebenso ist es üblich, Beispielinstanzen in einem Ordner direkt auf dem Desktop zu installieren. Auf jeden Fall wird dieser Ort im Allgemeinen wie folgt bezeichnet:
+   Ebenso ist es üblich, Beispielinstanzen in einem Ordner direkt auf dem Desktop zu installieren. Auf jeden Fall bezieht sich Adobe auf diesen Ort im Allgemeinen wie folgt:
 
    `<aem-install>`
 
@@ -169,7 +169,7 @@ Im folgenden Abschnitt wird die **eigenständige Installation** beschrieben. Wei
        license.properties
    ```
 
-   Wenn Sie keine `license.properties` -Datei, AEM Ihren Browser zu einem **Willkommen** -Bildschirm beim Start, wo Sie einen Lizenzschlüssel eingeben können. Wenn Sie noch keinen Lizenzschlüssel haben, müssen Sie bei Adobe einen gültigen Lizenzschlüssel anfordern.
+   Wenn Sie keine `license.properties` -Datei, AEM Ihren Browser zu einem **Willkommen** -Bildschirm beim Start, wo Sie einen Lizenzschlüssel eingeben können. Sie müssen einen gültigen Lizenzschlüssel von Adobe anfordern, wenn Sie noch keinen haben.
 
 1. Um die Instanz in einer GUI-Umgebung zu starten, doppelklicken Sie auf die **`cq-quickstart-6.5.0.jar`** -Datei.
 
@@ -281,7 +281,7 @@ AEM startet und leitet Ihren Webbrowser automatisch zur entsprechenden Seite um.
 
 ![Anmeldebildschirm](assets/screen_shot_2019-04-08at83533am.png)
 
-Nach der Anmeldung haben Sie Zugriff auf AEM. Weitere Informationen finden Sie je nach Ihrer Rolle unter:
+Nach der Anmeldung haben Sie Zugriff auf AEM. Weitere Informationen finden Sie je nach Ihrer Rolle in den folgenden Abschnitten:
 
 * [Authoring –](/help/sites-authoring/home.md)
 * [Verwalten](/help/sites-administering/home.md)

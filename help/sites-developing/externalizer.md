@@ -7,9 +7,9 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '490'
 ht-degree: 55%
 
 ---
@@ -20,7 +20,7 @@ In Adobe Experience Manager (AEM) wird die **Externalizer** ist ein OSGi-Dienst,
 
 Dieser Dienst bietet einen zentralen Ort für die Konfiguration und Erstellung von externen URLs, weil eine Instanz ihre extern sichtbare URL nicht kennen kann, wenn sie hinter einer Web-Layer läuft, und weil manchmal ein Link außerhalb des Anfrageumfangs erstellt werden muss.
 
-Auf dieser Seite wird beschrieben, wie Sie die **Externalizer** und wie Sie ihn verwenden. Weitere Informationen finden Sie im Abschnitt [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
+Auf dieser Seite wird beschrieben, wie Sie die **Externalizer** und wie Sie ihn verwenden. Weitere Informationen finden Sie unter [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Konfigurieren des Externalizer-Dienstes {#configuring-the-externalizer-service}
 
@@ -55,7 +55,7 @@ Definieren Sie eine Domain-Zuordnung für den **Externalizer**-Service wie folgt
    * **Port** (optional) ist die Portnummer.
    * **Kontextpfad** (optional) wird nur festgelegt, wenn AEM als Web-App unter einem anderen Kontextpfad installiert wird.
 
-   Beispiel: `production https://my.production.instance`
+   Zum Beispiel: `production https://my.production.instance`
 
    Die folgenden Zuordnungsnamen sind vordefiniert und müssen festgelegt werden, da AEM von ihnen abhängt:
 

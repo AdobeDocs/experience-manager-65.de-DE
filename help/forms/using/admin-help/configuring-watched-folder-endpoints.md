@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 22d9b22a0fc0bc5f753f2e11ca66e2627e1a8405
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7181'
+source-wordcount: '7177'
 ht-degree: 24%
 
 ---
@@ -62,7 +62,7 @@ Wenn der Auftrag mehr als eine Eingabedatei enthält, muss der Benutzer einen Or
 
 ## Ausgabe des überwachten Ordners {#watched-folder-output}
 
-Wenn die Eingabe ein Ordner ist und die Ausgabe aus mehreren Dateien besteht, erstellt AEM Formulare einen Ausgabeordner mit demselben Namen wie der Eingabeordner und kopiert die Ausgabedateien in diesen Ordner. Wenn die Ausgabe aus einer Dokumentzuordnung besteht, die ein Schlüssel-Wert-Paar enthält, z. B. die Ausgabe eines Output-Prozesses, wird der Schlüssel als Name der Ausgabedatei verwendet.
+Wenn die Eingabe ein Ordner ist und die Ausgabe aus mehreren Dateien besteht, erstellt AEM Formulare einen Ausgabeordner mit demselben Namen wie der Eingabeordner und kopiert die Ausgabedateien in diesen Ordner. Wenn die Ausgabe aus einer Dokumentzuordnung besteht, die ein Schlüssel-Wert-Paar enthält, z. B. die Ausgabe aus einem Output-Prozess, wird der Schlüssel als Name der Ausgabedatei verwendet.
 
 Die Ausgabedateinamen, die aus einem Endpunktprozess resultieren, dürfen keine anderen Zeichen als Buchstaben, Zahlen und einen Punkt (.) enthalten vor der Dateierweiterung. AEM Formulare konvertiert andere Zeichen in Hexadezimalwerte.
 
@@ -386,7 +386,7 @@ Im Folgenden finden Sie einige Tipps und Tricks zum Konfigurieren des Endpunkts 
    * Für `java.lang.String` gilt: Der Administrator hat zwei Möglichkeiten. Zunächst kann der Administrator den Zuordnungstyp als `Literal` angeben und einen Zuordnungswert als Zeichenfolge eingeben, z. B. `hello.`. Der überwachte Ordner ruft den Service mit der Zeichenfolge `hello` auf. Zweitens kann der Administrator den Zuordnungstyp als `Variable` angeben und einen Zuordnungswert mit einem Muster wie `*.txt` eingeben. Im zweiten Fall werden Dateien mit der TXT-Endung als Dokument gelesen, das zwangsweise in eine Zeichenfolge umgewandelt ist, um den Dienst aufzurufen.
    * Der Administrator kann den Zuordnungstyp als `Literal` angeben und den Wert vorgeben. Der Watched Folder-Dienst ruft den Dienst mit dem angegebenen Wert auf.
 
-* Der Watched Folder-Dienst ist für die Arbeit mit Dokumenten vorgesehen. Unterstützte Ausgaben sind `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node` sowie eine Liste und Zuordnung dieser Typen. Jeder andere Typ führt zu einer Fehlerausgabe im Fehlerordner.
+* Der Watched Folder-Dienst ist für die Arbeit mit Dokumenten vorgesehen. Die unterstützten Ausgaben sind `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node`und eine Liste und Zuordnung dieser Typen. Jeder andere Typ führt zu einer Fehlerausgabe im Fehlerordner.
 * Wenn sich die Ergebnisse nicht im Ergebnisordner befinden, überprüfen Sie den Fehlerordner, um festzustellen, ob ein Fehler aufgetreten ist.
 * Der Watched Folder-Dienst funktioniert am besten, wenn er im asynchronen Modus verwendet wird. In diesem Modus platziert der Watched Folder-Dienst die Aufrufanforderung in die Warteschlange und ruft zurück. Die Warteschlange wird dann asynchron verarbeitet. Wenn die Option &quot;Asynchron&quot;nicht festgelegt ist, ruft der Watched Folder-Dienst den Zieldienst synchron auf und die Prozess-Engine wartet, bis der Dienst mit der Anforderung fertig ist und Ergebnisse generiert werden. Wenn die Verarbeitung der Anforderung durch den Zieldienst lange dauert, kann es beim Watched Folder-Dienst zu Zeitüberschreitungsfehlern kommen.
 * Die Erstellung von überwachten Ordnern für Import- und Exportvorgänge ermöglicht keine Abstraktion von Dateinamenerweiterungen. Beim Aufrufen des Form Data Integration-Dienstes mit überwachten Ordnern stimmt der Dateinamenerweiterungstyp für die Ausgabedatei möglicherweise nicht mit dem beabsichtigten Ausgabeformat für den Dokumentobjekttyp überein. Wenn die Eingabedatei für einen überwachten Ordner, der den Exportvorgang aufruft, beispielsweise ein XFA-Formular ist, das Daten enthält, sollte die Ausgabe eine XDP-Datendatei sein. Um eine Ausgabedatei mit der richtigen Dateinamenerweiterung zu erhalten, können Sie sie in der Zuordnung der Ausgabeparameter angeben. In diesem Beispiel können Sie %F.xdp für die Zuordnung von Ausgabeparametern verwenden.

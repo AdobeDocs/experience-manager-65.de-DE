@@ -1,14 +1,14 @@
 ---
 title: App-Leistung mit Adobe Mobile Analytics verfolgen
-description: Mit Adobe Mobile Services können Sie durch Tracking der Nutzung, von App-Abstürzen, von Gerätedetails und vielen weiteren wichtigen Metriken für Ihre mobilen Apps Einblicke in die Verwendung Ihrer mobilen Apps erhalten. Auf dieser Seite erfahren Sie mehr.
+description: Mit Adobe Mobile Services können Sie durch Tracking der Nutzung, von App-Abstürzen, Gerätedetails und so vielen weiteren wichtigen Metriken für Ihre mobilen Apps Einblicke in die Verwendung Ihrer mobilen Apps erhalten. Auf dieser Seite erfahren Sie mehr.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 7e358660-bc2f-4d8f-8d74-6cdb6c1ea7b5
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1051'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Was macht Ihre AEM Mobile-App für Ihre Marketingkampagnen?
 
 Wie können Sie Ihre Mobile Apps anpassen, um den Benutzern das beste Erlebnis zu bieten?
 
-Mit Adobe Mobile Services können Sie durch Tracking der Nutzung, von App-Abstürzen, von Gerätedetails und vielen weiteren wichtigen Metriken für Ihre mobilen Apps Einblicke in die Verwendung Ihrer mobilen Apps erhalten.
+Mit Adobe Mobile Services können Sie durch Tracking der Nutzung, von App-Abstürzen, Gerätedetails und so vielen weiteren wichtigen Metriken für Ihre mobilen Apps Einblicke in die Verwendung Ihrer mobilen Apps erhalten.
 
 Adobe Experience Manager Mobile bietet einen Einblick in die Details Ihrer mobilen Analyse direkt über das AEM Mobile Application Dashboard. Die **Mobilmetrikbereich** im Dashboard bietet Real-Time Analytics für Ihre Mobile App, sodass Entwickler, Autoren und Administratoren einen schnellen Überblick über den Zustand Ihrer Mobile App erhalten. Unter den Abdeckung ist die Aktivierung der Analyse die [Adobe Mobile Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html) SDK. Das Adobe Mobile Analytics-SDK kann nativ oder über ein PhoneGap Bridge-Plug-in für Webansichten an Ihre Anwendungen angeschlossen werden. Metriken werden erfasst und auf dem Gerät zwischengespeichert, bis das Gerät verbunden ist, an dem die Daten zur Berichterstellung und Analyse an die Adobe Mobile Services Cloud gesendet werden.
 
@@ -40,7 +40,7 @@ Adobe Mobile Analytics SDK bietet Folgendes:
 1. **Geolocation-Analyse** - Ermitteln Sie, wo Ihre App-Benutzer Ihre mobilen Erlebnisse starten und mit ihnen interagieren, nach GPS-Standort oder Zielpunkten.
 1. **Pfadanalyse** - Erfahren Sie, wie Benutzer durch Ihre App navigieren, um zu ermitteln, welche Bildschirme und Benutzeroberflächenelemente Benutzer anregen und welche dazu führen, dass Benutzer abbrechen.
 
-In diesem Abschnitt wird beschrieben, wie [AEM Entwickler](#developers) Anschließend erfahren Sie, wie Sie AEM Mobile-Apps mit Analytics-Tracking instrumentieren.
+In diesem Abschnitt werden die [AEM Entwickler](#developers) Anschließend erfahren Sie, wie Sie AEM Mobile-Apps mit dem Analytics-Tracking instrumentieren.
 
 Schließlich [AEM Administratoren](#administrators) Lernen Sie:
 
@@ -48,17 +48,17 @@ Schließlich [AEM Administratoren](#administrators) Lernen Sie:
 * Erstellen einer Mobile Service-Konfiguration und Verknüpfen einer Report Suite
 * Mobile Service-Konfiguration mit einer Mobile App verknüpfen
 * Metriken über das AEM Apps Command Center anzeigen
-* Weisen Sie Ihrer Mobile App die AMS-SDK-Konfiguration zu.
+* Weisen Sie Ihrer Mobile App die AMS-SDK-Konfiguration zu
 
 ## Für Entwickler - Integration von Analytics in Ihre App {#for-developers-integrate-analytics-into-your-app}
 
-**Voraussetzung:** AEM Administratoren müssen die Cloud-Konfiguration der Adobe Mobile Services konfigurieren. [wie unten beschrieben](#amscloudserviceconfig).
+**Voraussetzung:** AEM-Administratoren müssen die Adobe Mobile Services-Cloud-Konfiguration konfigurieren. [wie unten beschrieben](#amscloudserviceconfig).
 
-Entwickler sind für [Hinzufügen von Analysen zu einer AEM Mobile-App](/help/mobile/phonegap-add-analytics-to-apps.md) , um zu verfolgen, darüber zu berichten und zu verstehen, wie Ihre Benutzer mit Ihren mobilen App-Inhalten interagieren, und wichtige Lebenszyklusmetriken wie Starts, Zeit in der App und Absturzhäufigkeit zu messen.
+Entwickler sind für [Hinzufügen von Analysen zu einer AEM Mobile-App](/help/mobile/phonegap-add-analytics-to-apps.md) bei Bedarf verfolgen, berichten und verstehen, wie Ihre Benutzer mit Ihren mobilen App-Inhalten interagieren und wichtige Lebenszyklusmetriken wie Starts, Zeit in der App und Absturzhäufigkeit messen.
 
-## Für Administratoren - Adobe Mobile Services Cloud Service konfigurieren {#for-administrators-configure-the-adobe-mobile-services-cloud-service}
+## Für Administratoren - Konfigurieren des Adobe Mobile Services-Cloud Service {#for-administrators-configure-the-adobe-mobile-services-cloud-service}
 
-Um Adobe Mobile Services nutzen zu können, müssen Sie den Cloud Service für AEM Adobe Mobile Services mit Ihren Adobe Analytics-Kontoinformationen konfigurieren. Das Apps-Befehlszentrum bietet eine **Metriken analysieren** Kachel, in der Sie den Cloud-Service erstellen und mit Ihrer mobilen App verknüpfen können.
+Um Adobe Mobile Services nutzen zu können, müssen Sie den Cloud Service AEM Adobe Mobile Services mit Ihren Adobe Analytics-Kontoinformationen konfigurieren. Das Apps-Befehlszentrum bietet eine **Metriken analysieren** Kachel, in der Sie den Cloud-Service erstellen und mit Ihrer mobilen App verknüpfen können.
 
 Konfigurieren Sie den Cloud-Service für Ihre mobile App, indem Sie auf das Zahnradsymbol auf der Kachel Metriken analysieren klicken.
 
@@ -66,9 +66,9 @@ Konfigurieren Sie den Cloud-Service für Ihre mobile App, indem Sie auf das Zahn
 
 Wenn Sie auf das Zahnradsymbol in der Kachel Metriken analysieren klicken, wird das modale Dialogfeld &quot;Mobile Services Analytics konfigurieren&quot;geöffnet. Wählen Sie Ihre Konfiguration aus der Dropdown-Liste &quot;Mobile Service-Konfiguration auswählen&quot;aus. Wenn Sie eine Konfiguration erstellen müssen, klicken Sie auf die Schraubenschlüsselschaltfläche .
 
-Um einen Adobe Mobile Service-Cloud-Service zu erstellen, sind zwei Schritte erforderlich: die Verbindung zum Dienst und die Auswahl der Report Suite, die der Konfiguration zugewiesen werden soll.
+Zum Erstellen eines Adobe Mobile Service-Cloud-Service-Dienstes sind zwei Schritte erforderlich: die Verbindung zum Dienst und die Auswahl der Report Suite, die der Konfiguration zugewiesen werden soll.
 
-Klicken Sie zunächst auf die Schaltfläche &quot;+&quot;auf der Kachel Cloud Services verwalten im Dashboard.
+Klicken Sie zunächst auf die Schaltfläche &quot;+&quot;auf der Kachel Cloud Service verwalten im Dashboard.
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 
@@ -76,7 +76,7 @@ Nachdem Sie auf &quot;**+**&quot;, die **Cloud Service hinzufügen** angezeigt.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-Wählen Sie eine neue Mobile Service-Konfiguration aus oder erstellen Sie sie, indem Sie die erforderlichen Felder wie unten dargestellt ausfüllen. Ihr AEM-Administrator benötigt diese Informationen, um die Verbindung zu Adobe Mobile Services erfolgreich herstellen zu können.
+Wählen Sie eine Mobile Service-Konfiguration aus oder erstellen Sie sie, indem Sie die erforderlichen Felder wie unten dargestellt ausfüllen. Ihr AEM-Administrator benötigt diese Informationen, um die Verbindung zu Adobe Mobile Services erfolgreich herstellen zu können.
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
@@ -109,6 +109,6 @@ Jetzt, da die mobile App Zugriff auf die Datei ADBMobileConfig.json hat, verfüg
 1. [Mein AEM Mobile-App-Erlebnis starten](/help/mobile/starting-aem-phonegap-app.md)
 1. [Inhalt meiner App verwalten](/help/mobile/phonegap-manage-app-content.md)
 1. [Meine Anwendung erstellen](/help/mobile/building-app-mobile-phonegap.md)
-1. [Verfolgen der Leistung meiner App mit Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md)
+1. [Tracking der Leistung meiner App mit Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md)
 1. [Bereitstellen eines personalisierten App-Erlebnisses mit Adobe Target](/help/mobile/phonegap-aem-mobile-content-personalization.md)
 1. [Senden wichtiger Nachrichten an meine Benutzer](/help/mobile/phonegap-push-notifications.md)

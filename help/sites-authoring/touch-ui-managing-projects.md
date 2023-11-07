@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 98%
+source-wordcount: '981'
+ht-degree: 93%
 
 ---
 
@@ -36,7 +36,7 @@ Um dies umzusetzen, erteilen Sie am besten der Gruppe **projects-users** Lesezug
 
 ## Erstellen eines Projekts {#creating-a-project}
 
-Gehen Sie wie folgt vor, um ein neues Projekt zu erstellen.
+Führen Sie diese Schritte aus, um ein Projekt zu erstellen.
 
 1. Tippen oder klicken Sie in der **Projektekonsole** auf **Erstellen**, um den Assistenten zur **Projekterstellung** zu öffnen.
 1. Wählen Sie eine Vorlage aus und klicken Sie auf **Weiter**. Weitere Informationen zu den standardmäßigen Projektvorlagen finden Sie [hier](/help/sites-authoring/projects.md#project-templates).
@@ -72,15 +72,15 @@ So fügen Sie einer Kachel Elemente hinzu:
 
 1. Navigieren Sie in **Projekte** zum Projekt, klicken Sie oben rechts in der Kachel, der Sie ein Element hinzufügen möchten, auf das Pfeilsymbol nach unten und wählen Sie die entsprechende Option aus.
 
-   * Die Option hängt vom Typ der Kachel ab. Zum Beispiel kann es **Aufgabe erstellen** für die Kachel **Aufgaben** oder **Workflow starten** für die Kachel **Workflows** sein.
+   * Die Option hängt vom Typ der Kachel ab. Beispielsweise kann es sein, dass **Aufgabe erstellen** für die **Aufgaben** Baustein oder **Workflow starten** für die **Workflows** Kachel.
 
    ![Kachel-Chevron](assets/project-tile-create-task.png)
 
-1. Fügen Sie der Kachel auf dieselbe Weise ein Element hinzu wie bei der Erstellung einer neuen Kachel. Projektkacheln werden [hier](/help/sites-authoring/projects.md#project-tiles) beschrieben.
+1. Fügen Sie das Element wie beim Erstellen einer Kachel zur Kachel hinzu. Projektkacheln werden [hier](/help/sites-authoring/projects.md#project-tiles) beschrieben.
 
 ## Anzeigen von Projektinformationen {#viewing-project-info}
 
-Der Hauptzweck von Projekten besteht darin, verknüpfte Informationen an einem Ort zu gruppieren, um sie leichter zugänglich und umsetzbar zu machen. Sie haben verschiedene Möglichkeiten, auf diese Informationen zuzugreifen.
+Der Hauptzweck von Projekten besteht darin, verknüpfte Informationen an einem Ort zu gruppieren, um sie leichter zugänglich und umsetzbar zu machen. Sie haben mehrere Möglichkeiten, auf diese Informationen zuzugreifen.
 
 ### Öffnen einer Kachel {#opening-a-tile}
 

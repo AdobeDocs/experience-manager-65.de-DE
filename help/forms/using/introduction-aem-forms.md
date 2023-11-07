@@ -11,7 +11,7 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 27%
@@ -58,9 +58,9 @@ Mit AEM Forms können Sie neue und vorhandene Formulare erweitern, um Folgendes 
 * pixelgenaues, paginiertes HTML und PDF forms, die fast wie Papier aussehen, oder
 * adaptive Formulare, die automatisch für das Gerät und den Browser eines Benutzers wiedergegeben werden.
 
-**PDF forms**
+**PDF-Formulare**
 
-PDF forms können offline ausgefüllt, lokal gespeichert und Formulardaten gesendet werden, wenn Sie das nächste Mal online sind. Sie können 2D-Barcodes verwenden, um Formulardaten zu erfassen, und digitale Signaturen verwenden, um die Authentizität für Benutzer zu überprüfen.
+PDF forms können offline ausgefüllt, lokal gespeichert und Formulardaten gesendet werden, wenn Sie das nächste Mal online sind. Sie können 2D-Barcodes verwenden, um Formulardaten zu erfassen, und digitale Signaturen verwenden, um die Authentizität für Benutzer zu validieren.
 
 **HTML-Formulare**
 
@@ -68,7 +68,7 @@ HTML5 browserbasierte Formulare können sowohl auf Mobilgeräten als auch in Des
 
 **Adaptive Formulare**
 
-Adaptive Formulare können sich dynamisch an Benutzerantworten anpassen, indem sie nach Bedarf Felder oder Abschnitte hinzufügen oder entfernen. AEM ermöglicht die Wiederverwendung von XML-Formularvorlagen für Adoben, um adaptive Formulare zu erstellen.
+Adaptive Formulare können sich dynamisch an Benutzerantworten anpassen, indem sie nach Bedarf Felder oder Abschnitte hinzufügen oder entfernen. AEM ermöglicht die Wiederverwendung von Adobe XML-Formularvorlagen zum Erstellen adaptiver Formulare.
 
 ### Unterstützte Funktionen {#supported-features}
 

@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 8737c989927b1be148d440aa1944cf4cfb216b69
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2226'
-ht-degree: 56%
+ht-degree: 59%
 
 ---
 
@@ -93,7 +93,7 @@ Das tatsächliche Erscheinungsbild und die Handhabung hängen vom verwendeten Ge
   In der oberen Symbolleiste in der **Komponenten** -Browser verwenden, können Sie Folgendes tun:
 
    * Komponenten nach Namen filtern
-   * Begrenzen Sie die Anzeige mithilfe der Dropdown-Auswahl auf eine bestimmte Gruppe.
+   * Mittels Dropdown-Auswahl die Anzeige auf eine bestimmte Gruppe begrenzen
 
   Für eine detailliertere Beschreibung der Komponente können Sie im Browser **Komponenten** auf das Informationssymbol neben der Komponente tippen/klicken (falls verfügbar). Beispiel für den **Layout-Container**:
 
@@ -144,7 +144,7 @@ Das tatsächliche Erscheinungsbild und die Handhabung hängen vom verwendeten Ge
 
 >[!NOTE]
 >
->Ein Mobilgerät wird erkannt, wenn die Breite weniger als 1024 Pixel beträgt, d. h. auch bei einem kleinen Desktop-Fenster.
+>Ein Mobilgerät wird erkannt, wenn die Breite geringer als 1024 Pixel ist, d. h. auch bei einem kleinen Desktop-Fenster.
 
 * **Mobilgerät, z. B. iPad**
 
@@ -180,7 +180,7 @@ Wenn Sie den Seitenbereich öffnen, wird er von der linken Seite aus eingeblende
 
 Da eine Seite häufig zahlreiche Komponenten desselben Typs enthält, wird in der Komponentenstruktur (Inhalt) neben dem Namen des Komponententyps (schwarz dargestellt) zusätzlich eine Beschreibung angezeigt (grau dargestellt). Der Text für diese Beschreibung wird aus den allgemeinen Eigenschaften der Komponente (z. B. Titel oder Text) entnommen.
 
-Komponententypen werden in der Benutzersprache angezeigt, während der Text für die Komponentenbeschreibung aus der Seitensprache stammt.
+Die Komponententypen werden in der für die Benutzeroberfläche ausgewählten Sprache angezeigt, die Beschreibung dagegen in der Sprache, die für die Seite verwendet wird.
 
 Wenn Sie auf den Pfeil neben einer Komponente klicken, wird diese Ebene reduziert oder erweitert.
 
@@ -304,7 +304,7 @@ Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über d
 
 * [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) - ermöglicht die Anzeige des Seitenstatus zu einem bestimmten Zeitpunkt.
 * [Live Copy-Status:](/help/sites-authoring/editing-content.md#live-copy-status) Für einen schnellen Überblick über den Live Copy-Status und darüber, welche Komponenten übernommen oder nicht übernommen wurden.
-* [Vorschau](/help/sites-authoring/editing-content.md#previewing-pages) - wird verwendet, um die Seite so anzuzeigen, wie sie in der Veröffentlichungsumgebung angezeigt wird, oder um mithilfe von Links im Inhalt zu navigieren.
+* [Vorschau](/help/sites-authoring/editing-content.md#previewing-pages): Dient zur Anzeige der Darstellung der Seite in der Publishing-Umgebung oder zur Navigation anhand der Links im Inhalt.
 
 * [Anmerken](/help/sites-authoring/annotations.md): In diesem Modus können Sie Anmerkungen auf der Seite hinzufügen oder anzeigen.
 

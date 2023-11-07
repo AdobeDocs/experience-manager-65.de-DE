@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 role: Developer
 exl-id: 85e00003-8c8b-463a-b728-66af174be295
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1872'
-ht-degree: 99%
+source-wordcount: '1865'
+ht-degree: 93%
 
 ---
 
@@ -71,7 +71,7 @@ Die vom Web-Programm verwendeten XML-Datendateien wurden vom Ordner „Data“ n
 
 Führen Sie die folgenden Schritte aus, um ein Web-basiertes Programm zu erstellen, das Formulare wiedergibt, die auf Fragmenten basieren:
 
-1. Erstellen Sie ein neues Web-Projekt.
+1. Erstellen eines Web-Projekts.
 1. Erstellen Sie die Java-Anwendungslogik, die das Java-Servlet darstellt.
 1. Erstellen Sie die Web-Seite für das Web-Programm.
 1. Verpacken Sie das Web-Programm in eine WAR-Datei.
@@ -84,7 +84,7 @@ Führen Sie die folgenden Schritte aus, um ein Web-basiertes Programm zu erstell
 
 ### Erstellen eines Web-Projekts {#creating-a-web-project}
 
-Der erste Schritt zum Erstellen eines Web-Programms mit einem Java-Servlet, das den Forms-Service aufrufen kann, besteht darin, ein neues Web-Projekt zu erstellen. Die Java-IDE, auf der dieses Dokument basiert, ist Eclipse 3.3. Erstellen Sie mithilfe der Eclipse-IDE ein Web-Projekt und fügen Sie die erforderlichen JAR-Dateien zu Ihrem Projekt hinzu. Fügen Sie schließlich eine HTML-Seite mit dem Namen *index.html* und ein Java-Servlet zu Ihrem Projekt hinzu.
+Der erste Schritt zum Erstellen einer Webanwendung, die ein Java-Servlet enthält, das den Forms-Dienst aufrufen kann, besteht darin, ein Webprojekt zu erstellen. Die Java-IDE, auf der dieses Dokument basiert, ist Eclipse 3.3. Erstellen Sie mithilfe der Eclipse-IDE ein Web-Projekt und fügen Sie die erforderlichen JAR-Dateien zu Ihrem Projekt hinzu. Fügen Sie schließlich eine HTML-Seite mit dem Namen *index.html* und ein Java-Servlet zu Ihrem Projekt hinzu.
 
 In der folgenden Liste sind die JAR-Dateien aufgeführt, die Sie zu Ihrem Web-Projekt hinzufügen müssen:
 
@@ -145,12 +145,12 @@ Normalerweise würden Sie keinen Client-Code innerhalb der Methode `doGet` oder 
 Führen Sie die folgenden Aufgaben aus, um ein auf Fragmenten basierendes Formular mithilfe der Forms-Service-API wiederzugeben:
 
 1. Fügen Sie Client-JAR-Dateien wie „adobe-forms-client.jar“ in den Klassenpfad Ihres Java-Projekts ein. Weitere Informationen über den Speicherort dieser Dateien finden Sie unter [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
-1. Rufen Sie den Wert der Optionsschaltfläche ab, der vom HTML-Formular gesendet wird, und geben Sie an, ob amerikanische oder kanadische Daten verwendet werden sollen. Wenn es um amerikanische Daten geht, erstellen Sie ein `com.adobe.idp.Document`, das die Daten in der Datei *Purchase Order US.xml* speichert. Wenn es sich um kanadische Daten handelt, erstellen Sie entsprechend ein `com.adobe.idp.Document`, das Daten in der Datei *Purchase Order Canada.xml* speichert.
+1. Rufen Sie den Wert der Optionsschaltfläche ab, der vom HTML-Formular gesendet wird, und geben Sie an, ob amerikanische oder kanadische Daten verwendet werden sollen. Wenn American gesendet wird, erstellen Sie eine `com.adobe.idp.Document` , das Daten im *Purchase Order US.xml*. Erstellen Sie auf die gleiche Weise, wenn Kanadier `com.adobe.idp.Document` , das Daten im *Purchase Order Canada.xml* -Datei.
 1. Erstellen Sie ein `ServiceClientFactory`-Objekt, das Verbindungseigenschaften enthält. (Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 1. Erstellen Sie ein `FormsServiceClient`-Objekt, indem Sie seinen Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben.
 1. Erstellen Sie ein `URLSpec`-Objekt, das URI-Werte mithilfe seines Konstruktors speichert.
 1. Rufen Sie die Methode `setApplicationWebRoot` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Web-Stamm des Programms darstellt.
-1. Rufen Sie die `setContentRootURI`-Methode des `URLSpec`-Objekts auf und übergeben Sie ihr einen Zeichenfolgenwert, der den Inhaltsstamm-URI angibt. Stellen Sie sicher, dass sich der Formularentwurf und die Fragmente im URI des Inhaltsstamms befinden. Andernfalls löst der Forms-Service eine Ausnahme aus. Um auf das AEM Forms-Repository zu verweisen, geben Sie `repository://` an.
+1. Rufen Sie die Methode `setContentRootURI` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den URI-Wert des Inhaltsstamms angibt. Stellen Sie sicher, dass sich der Formularentwurf und die Fragmente im Inhaltsstamm-URI befinden. Andernfalls löst der Forms-Service eine Ausnahme aus. Um auf das AEM Forms-Repository zu verweisen, geben Sie `repository://` an.
 1. Rufen Sie die Methode `setTargetURL` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Wert der Ziel-URL angibt, an die die Formulardaten gesendet werden. Wenn Sie die Ziel-URL im Formularentwurf definieren, können Sie auch eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular zur Durchführung von Berechnungen gesendet wird.
 1. Rufen Sie die Methode `renderPDFForm` des `FormsServiceClient`-Objekts auf und übergeben Sie ihr folgende Werte:
 
@@ -184,7 +184,7 @@ Das folgende Code-Beispiel stellt das Java-Servlet dar, das den Forms-Service au
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs
      *
      * For complete details about the location of these JAR files,
@@ -331,7 +331,7 @@ Das Java-Servlet erfasst die von der HTML-Seite veröffentlichten Daten mithilfe
              }
 ```
 
-Der folgende HTML-Code befindet sich in der Datei „index.html“, die beim Einrichten der Entwicklungsumgebung erstellt wurde. (Weitere Informationen finden Sie unter [Erstellen eines Webprojekts](/help/forms/developing/rendering-forms.md#creating-a-web-project).)
+Der folgende HTML-Code befindet sich in der Datei index.html , die beim Einrichten der Entwicklungsumgebung erstellt wurde. (Weitere Informationen finden Sie unter [Erstellen eines Webprojekts](/help/forms/developing/rendering-forms.md#creating-a-web-project).)
 
 ```xml
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

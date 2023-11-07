@@ -2,7 +2,7 @@
 title: Verwenden von Edge Delivery Services
 description: Verwenden von Edge Delivery Services (EDS)
 exl-id: 6c9178b0-c8f3-4fc7-8614-8e71ffc2f0b8
-source-git-commit: 6a1d96125ca6647770718fff74ec21afb5c91a68
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 2%
@@ -28,7 +28,7 @@ Mit der Edge-Bereitstellung ist die Veröffentlichung von Inhalten unabhängig v
 
 ## Edge Delivery Services und GitHub {#github-edge}
 
-Die Edge-Bereitstellung nutzt GitHub, damit Kunden Code direkt über ihr GitHub-Repository verwalten und bereitstellen können. Sie können beispielsweise Inhalte entweder in Google Docs oder Microsoft Word schreiben und die Funktionalität Ihrer Site mithilfe von CSS und JavaScript in GitHub entwickeln. Websites werden automatisch für jeden Ihrer Zweige erstellt, von der Inhaltsvorschau bis zur Produktion. Jede Ressource, die Sie in Ihr GitHub-Repository einfügen, steht auf Ihrer Website ohne Build-Prozess zur Verfügung.
+Die Edge-Bereitstellung verwendet GitHub, damit Kunden Code direkt über ihr GitHub-Repository verwalten und bereitstellen können. Sie können beispielsweise Inhalte entweder in Google Docs oder Microsoft Word schreiben und die Funktionalität Ihrer Site mithilfe von CSS und JavaScript in GitHub entwickeln. Websites werden automatisch für jeden Ihrer Zweige erstellt, von der Inhaltsvorschau bis zur Produktion. Jede Ressource, die Sie in Ihr GitHub-Repository einfügen, steht auf Ihrer Website ohne Build-Prozess zur Verfügung.
 
 ## Verwenden des Sidekick {#using-sidekick}
 

@@ -1,8 +1,8 @@
 ---
 title: Übergeben von Dokumenten an den Forms-Service
 seo-title: Passing Documents to the FormsService
-description: Übergeben Sie ein com.adobe.idp.Document-Objekt, das den Formularentwurf enthält, an den Forms-Service. Der Forms-Service gibt den Formularentwurf wieder, der sich im com.adobe.idp.Document-Objekt befindet.
-seo-description: Pass a com.adobe.idp.Document object that contains the form design to the Forms service. The Forms service renders the form design located in the com.adobe.idp.Document object.
+description: Übergeben Sie ein com.adobe.idp.Document-Objekt, das den Formularentwurf enthält, an den Forms-Service. Der Forms-Dienst rendert den Formularentwurf im Objekt com.adobe.idp.Document .
+seo-description: Pass a com.adobe.idp.Document object that contains the form design to the Forms service. The Forms service renders the form design in the com.adobe.idp.Document object.
 uuid: 841e97f3-ebb8-4340-81a9-b6db11f0ec82
 contentOwner: admin
 content-type: reference
@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: e23de3c3-f8a0-459f-801e-a0942fb1c6aa
 role: Developer
 exl-id: 29c7ebda-407a-464b-a9db-054163f5b737
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1684'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1682'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
 
-Der AEM Forms-Service gibt interaktive PDF-Formulare an Client-Geräte aus, in der Regel Webbrowser, um Informationen von Benutzern zu erfassen. Ein interaktives PDF-Formular basiert auf einem Formularentwurf, der normalerweise in Designer erstellt und als XDP-Datei gespeichert wird. Was AEM Forms betrifft, können Sie ein `com.adobe.idp.Document`-Objekt, das den Formularentwurf enthält, an den Forms-Service übergeben. Der Forms-Service gibt dann den Formularentwurf wieder, der sich im `com.adobe.idp.Document`-Objekt befindet.
+Der AEM Forms-Service gibt interaktive PDF-Formulare an Client-Geräte aus, in der Regel Webbrowser, um Informationen von Benutzern zu erfassen. Ein interaktives PDF-Formular basiert auf einem Formularentwurf, der normalerweise in Designer erstellt und als XDP-Datei gespeichert wird. Was AEM Forms betrifft, können Sie ein `com.adobe.idp.Document`-Objekt, das den Formularentwurf enthält, an den Forms-Service übergeben. Der Forms-Dienst rendert den Formularentwurf dann im `com.adobe.idp.Document` -Objekt.
 
 Ein Vorteil der Übergabe eines `com.adobe.idp.Document`-Objekts an den Forms-Service ist, dass andere Service-Vorgänge eine `com.adobe.idp.Document`-Instanz zurückgeben. Das heißt, Sie können eine `com.adobe.idp.Document`-Instanz von einem anderen Service-Vorgang erhalten und sie wiedergeben. Nehmen Sie zum Beispiel an, dass eine XDP-Datei in einem Knoten von Content Services (veraltet) mit dem Namen `/Company Home/Form Designs` gespeichert ist, wie in der folgenden Abbildung gezeigt.
 
@@ -156,6 +156,7 @@ Je nach Art des Client-Programms können Sie das Formular in einen Client-Webbro
       * Weisen Sie dem Feld `FormsServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `FormsServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+
    * Weisen Sie den Konstantenwert `BasicHttpSecurityMode.TransportCredentialOnly` zum Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
    >[!NOTE]

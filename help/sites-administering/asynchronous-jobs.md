@@ -2,10 +2,10 @@
 title: Asynchrone Aufträge
 description: Adobe Experience Manager optimiert die Leistung durch asynchrone Ausführung einiger ressourcenintensiver Aufgaben.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: cc63291c32f7a234398ebe8bf67ab53aaf8fa90f
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 100%
+source-wordcount: '798'
+ht-degree: 94%
 
 ---
 
@@ -55,7 +55,7 @@ Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie z
 
    ![Stoppsymbol](assets/async-stop-icon.png)
 
-1. Um zusätzliche Details anzuzeigen, beispielsweise eine Beschreibung und Protokolle, wählen Sie den Vorgang aus und tippen/klicken Sie in der Symbolleiste auf **[!UICONTROL Öffnen]**.
+1. Um zusätzliche Details anzuzeigen, beispielsweise eine Beschreibung und Protokolle, wählen Sie den Vorgang aus und klicken Sie auf **[!UICONTROL Öffnen]** aus der Symbolleiste.
 
    ![Öffnen-Symbol](assets/async-open-icon.png)
 
@@ -88,7 +88,7 @@ Sie können den Zeitplan für den Bereinigungsauftrag bearbeiten. Außerdem kön
 
 ## Konfigurieren der asynchronen Verarbeitung {#configuring-asynchronous-processing}
 
-Sie können die Schwellenwerte für Assets, Seiten oder Verweise konfigurieren, damit AEM einen bestimmten Vorgang asynchron verarbeitet, und E-Mail-Benachrichtigungen für den Zeitpunkt der erfolgten Auftragsverarbeitung ein- oder ausschalten.
+Sie können den Schwellenwert für Assets, Seiten oder Verweise so konfigurieren, dass AEM einen bestimmten Vorgang asynchron verarbeiten und E-Mail-Benachrichtigungen für den Zeitpunkt der Auftragsverarbeitung umschalten.
 
 ### Konfigurieren von asynchronen Vorgängen zum Löschen von Assets {#configuring-synchronous-delete-operations}
 

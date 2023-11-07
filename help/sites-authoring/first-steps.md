@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 85ebc05d-ce45-4bbb-b9cc-b21810d0d877
 docset: aem65
 exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '407'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '405'
+ht-degree: 92%
 
 ---
 
@@ -23,10 +23,10 @@ In diesem Abschnitt finden Sie einen Überblick über die wichtigsten Funktionen
 Dieser umfasst:
 
 * [Erste Schritte](#getting-started)\
-   Details zur grundlegenden Ereignisabfolge, die Sie für das Erstellen und Veröffentlichen Ihrer ersten Seite benötigen.
+  Details zur grundlegenden Ereignisabfolge, die Sie für das Erstellen und Veröffentlichen Ihrer ersten Seite benötigen.
 
 * [Weitere Aktionen](#further-actions)\
-   Viele weitere Aktionen, die Sie bei der Bearbeitung von Inhalten verwenden können.
+  Viele weitere Aktionen, die Sie bei der Bearbeitung von Inhalten verwenden können.
 
 ## Erste Schritte {#getting-started}
 
@@ -38,7 +38,7 @@ Der Inhalt Ihrer Website wird in einer Baumstruktur archiviert. Um eine Seite zu
 
 ### Erstellen einer neuen Seite {#creating-a-new-page}
 
-Vor der Bearbeitung müssen Sie [eine neue Seite erstellen](/help/sites-authoring/managing-pages.md#creating-a-new-page).
+Vor der Bearbeitung [Erstellen einer Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page).
 
 ### Öffnen einer Seite {#opening-a-page}
 
@@ -46,7 +46,7 @@ Für viele Aktionen, z. B. die Bearbeitung, müssen Sie eine [Seite öffnen](/h
 
 ### Bearbeiten einer Seite {#editing-a-page}
 
-Unabhängig davon, ob Ihre Instanz bereits über vorhandene Seiten verfügt oder ob Sie gerade selbst eine neue Seite erstellt haben, können Sie [eine Seite bearbeiten](/help/sites-authoring/editing-content.md), indem Sie folgende Schritte befolgen:
+Unabhängig davon, ob Ihre Instanz bereits über vorhandene Seiten verfügt oder ob Sie selbst eine neue Seite erstellt haben, können Sie [Bearbeiten einer Seite](/help/sites-authoring/editing-content.md) durch:
 
 * [Einfügen einer Komponente (Absatz)](/help/sites-authoring/editing-content.md#inserting-a-component)
 * [Bearbeiten/Konfigurieren/Kopieren/Ausschneiden/Löschen/Einfügen](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) einer Komponente

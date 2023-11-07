@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: 0b4aa1a4-449a-4882-8f7c-3ceea6ac7f83
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '796'
 ht-degree: 2%
 
 ---
@@ -113,7 +113,7 @@ Der allgemeine Workflow zum Löschen einer Sammlung:
 1. Wählen Sie den zu löschenden Artikel im **Verwalten von Sammlungen** Kachel.
 1. Stellen Sie sicher, dass es in der Liste ausgewählt ist (wählen Sie nach Bedarf andere aus, die gelöscht werden sollen).
 1. Klicks **Löschen** in der Aktionsleiste aus.
-1. Überprüfen Sie, ob Sie sowohl AEM als auch Mobile On-Demand löschen möchten.
+1. Überprüfen Sie, ob Sie aus AEM und Mobile On-Demand löschen möchten.
 1. Klicken Sie auf **Löschen**.
 1. Ihre Sammlung wird jetzt aus der Liste entfernt.
 

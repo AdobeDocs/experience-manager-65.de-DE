@@ -5,10 +5,10 @@ contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 67e145e250bbe386168ab2c0f8967f91aa9d8a36
-workflow-type: ht
-source-wordcount: '1591'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1589'
+ht-degree: 92%
 
 ---
 
@@ -44,6 +44,7 @@ Dieses Befehlsskript führt folgende Aktionen aus:
       * Struktur, Text und alle Mediendateien werden extrahiert.
       * PDF- und JPG-Ausgabeformate werden generiert.
       * HTML- und IDML-Ausgabeformate werden generiert.
+
    * Veröffentlicht die resultierenden Dateien wieder in [!DNL Experience Manager Assets].
 
    >[!NOTE]
@@ -52,7 +53,7 @@ Dieses Befehlsskript führt folgende Aktionen aus:
 
    >[!CAUTION]
    >
-   >Wenn der [!DNL InDesign Server] nicht installiert oder konfiguriert ist, können Sie trotzdem eine INDD-Datei in [!DNL Experience Manager] hochladen. Allerdings sind die generierten Ausgabeformate auf PNG und JPEG beschränkt und Sie können keine HTML- oder IDML-Dateien sowie keine Seitenausgabe generieren.
+   >Wenn der [!DNL InDesign Server] nicht installiert oder konfiguriert ist, können Sie trotzdem eine INDD-Datei in [!DNL Experience Manager] hochladen. Die erzeugten Ausgabedarstellungen sind jedoch auf PNG und JPEG beschränkt. Sie können keine HTML-, .idml- oder Seitenausgabeformate generieren.
 
 1. Nach der Extraktion und Ausgabegenerierung:
 
@@ -152,7 +153,7 @@ Anpassungen können Sie im Schritt **[!UICONTROL Extrahierung von Seiten]** auf 
 >
 >Der Worker befindet sich in der Proxy-Instanz.
 
-1. Erweitern Sie in der Tools-Konsole im linken Bereich den Eintrag **[!UICONTROL Cloud-Service-Konfigurationen]**. Anschließend erweitern Sie den Eintrag **[!UICONTROL Cloud-Proxy-Konfiguration]**.
+1. Erweitern Sie in der Tools-Konsole **[!UICONTROL Cloud Service-Konfigurationen]** im linken Bereich. Anschließend erweitern Sie den Eintrag **[!UICONTROL Cloud-Proxy-Konfiguration]**.
 
 1. Doppelklicken Sie auf den **[!UICONTROL IDS-Worker]**, um ihn für die Konfiguration zu öffnen.
 
@@ -182,7 +183,7 @@ Wenn [!DNL InDesign Server] und [!DNL Experience Manager] auf unterschiedlichen 
 Sie können jetzt die parallele Auftragsverarbeitung für IDS aktivieren. Bestimmen Sie die maximale Anzahl paralleler Aufträge (`x`), die ein [!DNL InDesign Server] verarbeiten kann:
 
 * Auf einem einzelnen Mehrprozessor-Computer ist die Anzahl der parallelen Aufträge (`x`), die ein [!DNL InDesign Server] verarbeiten kann, um eins kleiner als die Anzahl der Prozessoren, die IDS ausführen.
-* Wenn Sie IDS auf mehreren Computern ausführen, müssen Sie von der Gesamtanzahl der verfügbaren Prozessoren (auf allen Computern) die Gesamtanzahl der Computer abziehen.
+* Wenn Sie IDS auf mehreren Computern ausführen, müssen Sie die Gesamtanzahl der verfügbaren Prozessoren (d. h. auf allen Computern) zählen und dann die Gesamtanzahl der Maschinen subtrahieren.
 
 So konfigurieren Sie die Anzahl der parallelen IDS-Aufträge:
 
@@ -229,13 +230,12 @@ Führen Sie für [!DNL InDesign Server] 10.0 oder höher die folgenden Schritte
 
 ## Konfigurieren der [!DNL Experience Manager]-Anmeldeinformationen {#configure-aem-credentials}
 
-Sie können die standardmäßigen Admin-Anmeldeinformationen (Benutzername und Passwort) für den Zugriff auf den [!DNL InDesign Server] in Ihrer [!DNL Experience Manager]-Implementierung ändern, ohne die Integration mit dem [!DNL InDesign Server] aufzuheben.
+Sie können die standardmäßigen Admin-Anmeldeinformationen (Benutzername und Passwort) für den Zugriff auf den [!DNL InDesign Server] in Ihrer [!DNL Experience Manager]-Bereitstellung ändern, ohne die Integration mit dem [!DNL InDesign Server] aufzuheben.
 
 1. Wechseln zu `/etc/cloudservices/proxy.html`.
-1. Geben Sie in diesem Dialogfeld den neuen Benutzernamen und das Kennwort ein.
-1. Speichern Sie die Anmeldedaten.
+1. Geben Sie im Dialogfeld den neuen Benutzernamen und das neue Kennwort an.
+1. Speichern Sie die Anmeldeinformationen.
 
 >[!MORELIKETHIS]
 >
 >* [Über Adobe InDesign Server](https://www.adobe.com/de/products/indesignserver/faq.html)
-

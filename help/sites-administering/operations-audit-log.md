@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
 feature: Operations
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 51%
+source-wordcount: '600'
+ht-degree: 49%
 
 ---
 
@@ -26,7 +26,7 @@ Die Wartung des Auditprotokolls umfasst verschiedene Funktionsbereiche, mit dene
 
 Es wird als konfigurierbare wöchentliche Wartungsaufgabe implementiert und kann über die Überwachungskonsole des Vorgangs-Dashboards aufgerufen werden.
 
-Weitere Informationen finden Sie in der [Dokumentation zum Vorgangs-Dashboard](/help/sites-administering/operations-dashboard.md).
+Weitere Informationen finden Sie unter [Dokumentation zum Vorgangs-Dashboard](/help/sites-administering/operations-dashboard.md).
 
 Es gibt drei Arten von Optionen zur Auditprotokolllöschung:
 
@@ -58,7 +58,7 @@ Führen Sie die folgenden Schritte aus, um die Auditprotokolllöschung zu konfig
    >Der Inhalts-Pfad gilt nur für untergeordnete Elemente des Knotens `/var/audit/com.day.cq.wcm.core.page` im Repository.
 
 1. Speichern Sie die Regel.
-1. Die soeben erstellte Regel muss im Vorgangs-Dashboard verfügbar gemacht werden, damit sie ausgeführt werden kann. Gehen Sie dazu **Tools - Betrieb - Wartung** über den AEM Willkommensbildschirm aus.
+1. Die erstellte Regel muss im Vorgangs-Dashboard verfügbar gemacht werden, damit sie ausgeführt werden kann. Gehen Sie dazu **Tools - Betrieb - Wartung** über den AEM Willkommensbildschirm aus.
 
 1. Klicken Sie auf die Karte **Wöchentliches Wartungsfenster**.
 

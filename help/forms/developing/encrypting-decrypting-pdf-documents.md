@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '8187'
-ht-degree: 98%
+source-wordcount: '8184'
+ht-degree: 97%
 
 ---
 
@@ -86,9 +86,9 @@ Sie müssen ein unverschlüsseltes PDF-Dokument abrufen, um das Dokument mit ein
 
 Um ein PDF-Dokument mit einem Kennwort zu verschlüsseln, geben Sie vier Werte an, darunter zwei Kennwortwerte. Der erste Kennwortwert wird zum Verschlüsseln des PDF-Dokuments verwendet und muss beim Öffnen des PDF-Dokuments angegeben werden. Der zweite Kennwortwert, der sogenannte „Master-Kennwortwert“, wird zum Entfernen der Verschlüsselung vom PDF-Dokument verwendet. Bei Kennwortwerten wird zwischen Groß- und Kleinschreibung unterschieden und diese beiden Kennwortwerte dürfen nicht dieselben Werte enthalten.
 
-Sie müssen die zu verschlüsselnden Ressourcen des PDF-Dokuments angeben. Sie können das gesamte PDF-Dokument, alles außer den Metadaten des Dokuments oder nur die Anlagen des Dokuments verschlüsseln. Wenn Sie nur die Anhänge des Dokuments verschlüsseln, wird ein Benutzer beim Versuch, auf die Dateianhänge zuzugreifen, zur Eingabe eines Kennworts aufgefordert.
+Geben Sie die zu verschlüsselnden PDF-Dokumentressourcen an. Sie können das gesamte PDF-Dokument, alles außer den Metadaten des Dokuments oder nur die Anlagen des Dokuments verschlüsseln. Wenn Sie nur die Anhänge des Dokuments verschlüsseln, wird ein Benutzer beim Versuch, auf die Dateianhänge zuzugreifen, zur Eingabe eines Kennworts aufgefordert.
 
-Beim Verschlüsseln eines PDF-Dokuments können Sie Berechtigungen festlegen, die mit dem geschützten Dokument verknüpft sind. Durch Festlegen von Berechtigungen können Sie die Aktionen steuern, die ein Benutzer, der ein kennwortverschlüsseltes PDF-Dokument öffnet, durchführen darf. Um beispielsweise Formulardaten erfolgreich zu extrahieren, müssen Sie die folgenden Berechtigungen festlegen
+Beim Verschlüsseln eines PDF-Dokuments können Sie Berechtigungen festlegen, die mit dem geschützten Dokument verknüpft sind. Durch Festlegen von Berechtigungen können Sie die Aktionen steuern, die ein Benutzer, der ein kennwortverschlüsseltes PDF-Dokument öffnet, durchführen darf. Zum erfolgreichen Extrahieren von Formulardaten müssen Sie beispielsweise die folgenden Berechtigungen festlegen:
 
 * PASSWORD_EDIT_ADD
 * PASSWORD_EDIT_MODIFY
@@ -142,7 +142,7 @@ So verschlüsseln Sie ein PDF-Dokument mit einem Kennwort mithilfe der Verschlü
    * Erstellen Sie ein `PasswordEncryptionOptionSpec`-Objekt, indem Sie seinen Konstruktor aufrufen.
    * Geben Sie die zu verschlüsselnden PDF-Dokumentressourcen an, indem Sie die Methode `setEncryptOption` des `PasswordEncryptionOptionSpec`-Objekts aufrufen und einen `PasswordEncryptionOption`-Auflistungswert übergeben, der die zu verschlüsselnden Dokumentressourcen angibt. Um beispielsweise das gesamte PDF-Dokument einschließlich der Metadaten und Anlagen zu verschlüsseln, geben Sie `PasswordEncryptionOption.ALL` an.
    * Erstellen Sie ein `java.util.List`-Objekt, das die Verschlüsselungsberechtigungen speichert, indem Sie den `ArrayList`-Konstruktor verwenden.
-   * Geben Sie eine Berechtigung an, indem Sie die Methode `add` des `java.util.List`-Objekts aufrufen und einen Auflistungswert übergeben, der der festzulegenden Berechtigung entspricht. Um zum Beispiel die Berechtigung festzulegen, die es einem Benutzer erlaubt, Daten im PDF-Dokument zu kopieren, geben Sie `PasswordEncryptionPermission.PASSWORD_EDIT_COPY` an. (Wiederholen Sie diesen Schritt für jede festzulegende Berechtigung.)
+   * Geben Sie eine Berechtigung an, indem Sie die Methode `add` des `java.util.List`-Objekts aufrufen und einen Auflistungswert übergeben, der der festzulegenden Berechtigung entspricht. Um beispielsweise die Berechtigung festzulegen, mit der ein Benutzer Daten im PDF-Dokument kopieren kann, geben Sie `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Wiederholen Sie diesen Schritt für jede festzulegende Berechtigung.)
    * Geben Sie die Acrobat-Kompatibilitätsoption an, indem Sie die Methode `setCompatability` des `PasswordEncryptionOptionSpec`-Objekts aufrufen und einen Auflistungswert übergeben, der die Acrobat-Kompatibilitätsstufe angibt. Sie können beispielsweise `PasswordEncryptionCompatability.ACRO_7` angeben.
    * Geben Sie den Kennwortwert an, mit dem ein Benutzer das verschlüsselte PDF-Dokument öffnen kann, indem Sie die Methode `setDocumentOpenPassword` des `PasswordEncryptionOptionSpec`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der das Kennwort zum Öffnen darstellt.
    * Geben Sie den Wert des übergeordneten Kennworts an, mit dem ein Benutzer die Verschlüsselung des PDF-Dokuments aufheben kann, indem Sie die Methode `setPermissionPassword` des `PasswordEncryptionOptionSpec`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der das übergeordnete Kennwort darstellt.

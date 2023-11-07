@@ -7,9 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '599'
 ht-degree: 4%
 
 ---
@@ -148,7 +148,7 @@ Nach der Veröffentlichung der Haupt-Community-Site:
 
 ## Erlebnis bei Veröffentlichung {#experience-on-publish}
 
-Es ist möglich, die verschiedenen Gruppen bei der Anmeldung zu erleben, z. B. mit der [Demobenutzer](/help/communities/tutorials.md#demo-users) verwendet für:
+Die verschiedenen Gruppen können beispielsweise bei der Anmeldung mit der [Demobenutzer](/help/communities/tutorials.md#demo-users) verwendet für:
 
 * Mitglied der Gruppe Kunst/Verlauf : `emily.andrews@mailinator.com/password`
    * Die eingeschränkte (geheime) Gruppe, Kunst/Verlauf, ist sichtbar:

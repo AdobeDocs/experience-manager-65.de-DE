@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2286'
+source-wordcount: '2287'
 ht-degree: 33%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 33%
 
 >[!NOTE]
 >
->Das eCommerce-Framework kann mit jeder eCommerce-Lösung verwendet werden. Bestimmte Einzelheiten und Beispiele, die hier behandelt werden, beziehen sich auf die [hybris](https://www.sap.com/products/crm.html) -Lösung.
+>Das eCommerce-Framework kann mit jeder eCommerce-Lösung verwendet werden. Bestimmte Einzelheiten und Beispiele, die hier behandelt werden, finden Sie unter [hybris](https://www.sap.com/products/crm.html) -Lösung.
 
 Das Integrations-Framework enthält eine Integrationsebene mit einer API. Damit können Sie:
 
@@ -405,7 +405,7 @@ public class AxisFilter implements VariantFilter {
 
 * Der Warenkorb wird von `CommerceSession:` gesteuert:
 
-   * `CommerceSession` führt Hinzufügen/Entfernen-Aktionen usw. durch.
+   * Die `CommerceSession` führt Hinzufügen/Entfernen usw. durch.
    * `CommerceSession` nimmt auch die diversen Berechnungen des Warenkorbs vor. ``
 
 * Obwohl dies nicht direkt mit dem Warenkorb zusammenhängt, muss `CommerceSession` auch Katalogpreisinformationen angeben (da sie die Preise steuert).

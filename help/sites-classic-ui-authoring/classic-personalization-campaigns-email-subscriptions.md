@@ -1,19 +1,15 @@
 ---
 title: Verwalten von Abonnements
-seo-title: Managing Subscriptions
 description: Benutzer können über die Formular-Komponente auf einer AEM-Webseite gebeten werden, Mailing-Listen eines E-Mail-Dienstanbieters zu abonnieren. Damit Sie eine AEM-Seite mit einem Abonnementformular erstellen können, das für die Anmeldung bei Mailing-Listen Ihres E-Mail-Diensts konfiguriert ist, müssen Sie die entsprechende Dienstkonfiguration auf die AEM-Seite anwenden, die der potenzielle Abonnent besuchen wird.
-seo-description: Users can be asked to subscribe to Email Service Provider's mailing lists with the help of the Form component used on an AEM web page. To prepare an AEM page with a sign-up form for subscription to your e-mail service mailing lists, you must apply the corresponding service configuration to the AEM page that the potential subscriber will visit.
-uuid: b2578a3d-dba1-4114-b21a-5f34c0cccc5a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
 exl-id: add05d22-3a11-49e9-a554-2315962552d5
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 58%
+source-wordcount: '913'
+ht-degree: 57%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 58%
 >[!NOTE]
 >
 >Adobe plant nicht, diese Funktionen (Lead- und Listenverwaltung) weiter auszubauen.
->Die Empfehlung lautet, [Adobe Campaign und die AEM-Integration](/help/sites-administering/campaign.md) zu nutzen.
+>Es wird empfohlen, [Adobe Campaign und seine AEM](/help/sites-administering/campaign.md).
 
 Benutzer können über die Komponente **Formular** auf einer AEM-Web-Seite gebeten werden, Mailing-Listen eines **E-Mail-Dienstanbieters** zu abonnieren. Damit Sie eine AEM-Seite mit einem Abonnementformular erstellen können, das für die Anmeldung bei Mailing-Listen Ihres E-Mail-Diensts konfiguriert ist, müssen Sie die entsprechende Dienstkonfiguration auf die AEM-Seite anwenden, die der potenzielle Abonnent besuchen wird.
 
@@ -72,7 +68,7 @@ So erstellen Sie ein Anmeldeformular und konfigurieren es für Abonnements auf d
 Damit das Abonnieren und Abmelden von E-Mail-Diensten über das Anmeldeformular in der Veröffentlichungsinstanz funktioniert, müssen Sie die folgenden Schritte ausführen:
 
 1. Navigieren Sie in der Autoreninstanz zum Package Manager.
-1. Erstellen Sie ein neues Paket. Wählen Sie den Filter `/etc/key` aus.
+1. Erstellen Sie ein Paket. Wählen Sie den Filter `/etc/key` aus.
 1. Erstellen Sie das Paket und laden Sie es herunter.
 1. Navigieren Sie in der Veröffentlichungsinstanz zum Package Manager und laden Sie dieses Paket hoch.
 1. Navigieren Sie zur OSGi-Konsole für die Veröffentlichung und starten Sie das Bundle mit dem Namen **Adobe Granite Crypto-Unterstützung**.

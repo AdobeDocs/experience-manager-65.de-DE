@@ -5,10 +5,10 @@ contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '992'
-ht-degree: 77%
+ht-degree: 76%
 
 ---
 
@@ -57,9 +57,9 @@ Die Befehlszeilenargumente für die Imaging Transcoding Library können Folgende
 Für den Parameter `-resize` können folgende Optionen konfiguriert werden:
 
 * `X`: Funktioniert ähnlich wie [!DNL Experience Manager]. Beispiel: -resize 319.
-* `WxH`: Das Seitenverhältnis wird nicht beibehalten, z. B. `-resize 319x319`.
-* `Wx`: Legt die Breite fest und berechnet die Höhe mit Beibehaltung des Seitenverhältnisses. Beispiel `-resize 319x`.
-* `xH`: Legt die Höhe fest und berechnet die Breite mit Beibehaltung des Seitenverhältnisses. Beispiel `-resize x319`.
+* `WxH`: Das Seitenverhältnis wird beispielsweise nicht beibehalten. `-resize 319x319`.
+* `Wx`: Legt die Breite fest und berechnet die Höhe mit Beibehaltung des Seitenverhältnisses. Zum Beispiel: `-resize 319x`.
+* `xH`: Legt die Höhe fest und berechnet die Breite mit Beibehaltung des Seitenverhältnisses. Zum Beispiel: `-resize x319`.
 
 ```shell
  -AllowUpsampling (Resizes smaller images)

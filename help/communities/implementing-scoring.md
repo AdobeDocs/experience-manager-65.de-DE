@@ -9,9 +9,9 @@ docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2852'
+source-wordcount: '2851'
 ht-degree: 3%
 
 ---
@@ -156,7 +156,7 @@ Scoring-Regeln sind die Grundlage für die Vergabe von Badges.
 
 Jede Scoring-Regel ist eine Liste mit einer oder mehreren Unterregeln. Scoring-Regeln werden auf den Community-Site-Inhalt angewendet, um die Regeln zu identifizieren, die bei der Aktivierung von Badges angewendet werden sollen.
 
-Scoring-Regeln werden vererbt, sind jedoch nicht additiv. Zum Beispiel:
+Scoring-Regeln werden vererbt, sind jedoch nicht additiv. Beispiel:
 
 * Wenn Seite 2 die Scoring-Regel2 enthält und ihr Vorgänger Seite 1 die Scoring-Regel 1 enthält.
 * Eine Aktion auf einer Komponente &quot;Seite 2&quot;ruft sowohl Regel1 als auch Regel2 auf.
@@ -196,7 +196,7 @@ Standardmäßig werden Punkte dem Mitglied zugewiesen, das eine Aktion durchfüh
 
 Jede Unterregel kann in einer oder mehreren Scoring-Regeln enthalten sein.
 
-Der Name der Unterregel folgt normalerweise dem Muster der Verwendung einer *subject*, *Objekt*, und *verb*. Zum Beispiel:
+Der Name der Unterregel folgt normalerweise dem Muster der Verwendung einer *subject*, *Objekt*, und *verb*. Beispiel:
 
 * member-comment-create
 * member-receive-Votum
@@ -285,7 +285,7 @@ In der Version sind zwei Scoring-Regeln für die [Forumsfunktion](/help/communit
 * `subRules` ist ein Attribut des Typs String[] zur Regel `jcr:content` Knoten.
 
 * `sub-rules` kann für verschiedene Scoring-Regeln freigegeben werden.
-* `rules` sollte sich in einem Repository-Speicherort mit Leseberechtigung für alle befinden.
+* `rules` sollte sich in einem Repository-Speicherort mit Leserechte für alle befinden.
 
    * Regelnamen müssen unabhängig vom Speicherort eindeutig sein.
 
@@ -302,7 +302,7 @@ Badging-Regeln verknüpfen Scoring-Regeln mit Abzeichen, indem Folgendes angegeb
 
 Badging-Regeln sind Knoten des Typs `cq:Page` mit Eigenschaften auf `jcr:content` -Knoten, der Scoring-Regeln mit Bewertungen und Abzeichen korreliert.
 
-Die Badging-Regeln beinhalten eine obligatorische `thresholds` -Eigenschaft, die eine geordnete Liste von Bewertungen darstellt, die Abzeichen zugeordnet sind. Die Werte müssen in zunehmendem Wert geordnet werden. Zum Beispiel:
+Die Badging-Regeln beinhalten eine obligatorische `thresholds` -Eigenschaft, die eine geordnete Liste von Bewertungen darstellt, die Abzeichen zugeordnet sind. Die Werte müssen in zunehmendem Wert geordnet werden. Beispiel:
 
 * `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
@@ -385,15 +385,15 @@ cURL -i -X POST -H *header* -u *Anmelden* -F *operation* -F *badge* *member-prof
 
 *header* = Benutzerdefinierte Kopfzeile &quot;Accept:application/json&quot;, die an den Server übergeben wird (erforderlich)
 
-*Anmelden* = administrator-id:password zum Beispiel : admin:admin
+*Anmelden* = administrator-id:password zum Beispiel admin:admin
 
 *operation* = &quot;:operation=social:assignBadge&quot; ODER &quot;:operation=social:deleteBadge&quot;
 
 *badge* = &quot;badgeContentPath=*badge-image-file*&quot;
 
-*badge-image-file* = der Speicherort der Badge-Bilddatei im Repository, z. B.: /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
+*badge-image-file* = der Speicherort der Badge-Bilddatei im Repository, z. B. /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
 
-*member-profile-url* = Endpunkt für das Profil des Mitglieds auf der Veröffentlichungsinstanz, z. B.: https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
+*member-profile-url* = Endpunkt für das Profil des Mitglieds in der Veröffentlichungsinstanz, z. B. https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
 
 >[!NOTE]
 >
@@ -616,7 +616,7 @@ Als Nächstes [erneut veröffentlichen](/help/communities/sites-console.md#publi
 Abschließend,
 
 * Navigieren Sie zur Komponente in der Veröffentlichungsinstanz.
-* Melden Sie sich als Community-Mitglied an (z. B.: weston.mccall@dodgit.com / password).
+* Melden Sie sich als Community-Mitglied an (z. B. weston.mccall@dodgit.com / Kennwort).
 * Posten Sie ein neues Forumthema.
 * Die Seite muss aktualisiert werden, damit der Badge angezeigt wird.
 

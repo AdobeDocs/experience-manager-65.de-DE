@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: be2aa297-5b78-4b1d-8ff1-e6a585a177dd
 exl-id: 17a4e4dc-804e-44a9-9942-c37dbfc8016f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '858'
-ht-degree: 78%
+source-wordcount: '856'
+ht-degree: 76%
 
 ---
 
@@ -53,7 +53,7 @@ Wenn Sie der Eigenschaft `s.pageName` im Framework keine CQ-Variable zuordnen, w
 
 ## Wahren der Kontinuität beim Analytics-Reporting {#maintaining-continuity-in-analytics-reporting}
 
-Um einen vollständigen Verlauf der Analysedaten für eine Seite zu erhalten, muss sich der Wert der Eigenschaft s.pageName, die für eine Seite verwendet wird, nie ändern. Die Analytics-Eigenschaften, die die Foundation-Seitenkomponente definiert, können jedoch einfach geändert werden. Beispielsweise ändert das Verschieben einer Seite den Wert von `pagedata.path`. Damit ist die Kontinuität des Berichtsverlaufs nicht mehr gewahrt:
+Um einen vollständigen Verlauf der Analysedaten für eine Seite zu erhalten, muss sich der Wert der Eigenschaft s.pageName, die für eine Seite verwendet wird, nie ändern. Die Analytics-Eigenschaften, die die Foundation-Seitenkomponente definiert, können jedoch einfach geändert werden. Wenn Sie beispielsweise eine Seite verschieben, ändert sich der Wert von `pagedata.path` und unterbricht die Kontinuität des Berichtverlaufs:
 
 * Daten, die für den vorherigen Pfad erfasst wurden, sind nicht mehr mit der Seite verknüpft.
 * Wenn eine andere Seite den Pfad verwendet, den eine andere Seite verwendet hat, übernimmt die andere Seite die Daten für diesen Pfad.
@@ -154,7 +154,7 @@ Die folgende Implementierung der getResource -Methode gibt das Resource -Objekt 
     }
 ```
 
-Der folgende Code stellt die gesamte Klasse dar, einschließlich SCR-Anmerkungen, die den Dienst konfigurieren. Beachten Sie, dass der Service-Rang 200 ist, wodurch der Standarddienst außer Kraft gesetzt wird.
+Der folgende Code stellt die gesamte Klasse dar, einschließlich SCR-Anmerkungen, die den Dienst konfigurieren. Der Dienstrang ist 200, wodurch der Standarddienst außer Kraft gesetzt wird.
 
 ```java
 /*************************************************************************

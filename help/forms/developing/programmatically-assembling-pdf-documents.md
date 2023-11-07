@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 role: Developer
 exl-id: 7d6fd230-e477-4286-9fb3-18a3474e3e48
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '2124'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '2123'
+ht-degree: 99%
 
 ---
 
@@ -119,7 +119,7 @@ Nachdem Sie den Service-Client erstellt, eine DDX-Datei referenziert, ein Auflis
 
 Der Assembler-Service gibt ein `java.util.Map`-Objekt zurück, das vom `AssemblerResult`-Objekt abgerufen werden kann und Vorgangsergebnisse enthält. Das zurückgegebene `java.util.Map`-Objekt enthält die resultierenden Dokumente und alle Ausnahmen.
 
-Die folgende Tabelle fasst einige der Schlüsselwerte und Objekttypen zusammen, die in dem zurückgegebenen `java.util.Map`-Objekt enthalten sind.
+Die folgende Tabelle fasst einige der Schlüsselwerte und Objekttypen zusammen, die in der zurückgegebenen `java.util.Map` -Objekt.
 
 <table>
  <thead>

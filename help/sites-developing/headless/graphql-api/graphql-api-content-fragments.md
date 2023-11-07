@@ -3,7 +3,7 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 79fa58e63596301e1669903ce10dd8b2ba7d0a1b
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '4774'
 ht-degree: 92%
@@ -207,7 +207,7 @@ Wenn Sie zum Beispiel:
 
 1. ein Paket installieren, das `Content-Fragment-Model-1` und `Content-Fragment-Model-2` enthält:
 
-   1. Es werden GraphQL-Typen für `Model-1` und `Model-2` generiert.
+   1. GraphQL-Typen werden für `Model-1` und `Model-2` generiert.
 
 1. Ändern Sie anschließend `Content-Fragment-Model-2`:
 
@@ -383,7 +383,7 @@ Weitere Informationen finden Sie unter [Beispielabfrage – Alle Städte mit ein
 
 >[!NOTE]
 >
->Wenn die angegebene Variante für ein Inhaltsfragment nicht existiert, werden die Originaldaten (auch bekannt als Master-Variante) als (Ersatz-)Standard zurückgegeben.
+>Wenn die angegebene Variante für ein Inhaltsfragment nicht vorhanden ist, werden die Originaldaten (auch bekannt als primäre Variante) als Standard (Ersatz) zurückgegeben.
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -855,7 +855,7 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 
         >[!NOTE]
         >
-        >Wenn die angegebene Variante für ein Inhaltsfragment nicht existiert, wird standardmäßig die primäre Variante (als Fallback) zurückgegeben.
+        >Wenn die angegebene Variante für ein Inhaltsfragment nicht vorhanden, wird standardmäßig die primäre Variante (als Ersatz) zurückgegeben.
 
         >[!CAUTION]
         >Das systemgenerierte Feld `_variation` kann nicht zusammen mit dem Filter `includeVariations` verwendet werden.

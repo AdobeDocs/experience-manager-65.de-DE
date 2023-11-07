@@ -8,9 +8,9 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: 0dea2b3e-fd7c-4811-a04a-6852ffc1e6d6
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2399'
+source-wordcount: '2397'
 ht-degree: 45%
 
 ---
@@ -25,7 +25,7 @@ Dieses Handbuch hilft bei der Festlegung klarer Ziele, Phasen und Lieferziele be
 
 Der AEM-Upgrade-Prozess muss sorgfältig mit Planungs-, Analyse- und Ausführungsphasen durchgeführt werden, wobei für jede Phase die wichtigsten Ergebnisse definiert sind.
 
-Es ist möglich, ein direktes Upgrade von AEM Version 6.0 und bis 6.5 durchzuführen. Kunden, die 5.6.x und älter ausführen, müssen zunächst ein Upgrade auf Version 6.0 oder höher durchführen, wobei 6.0 (SP3) empfohlen wird. Außerdem wird jetzt das neue Oak Segment Tar-Format für den Segment-Knotenspeicher seit 6.3 verwendet, und die Repository-Migration auf dieses neue Format ist auch für 6.0, 6.1 und 6.2 obligatorisch.
+Es ist möglich, direkt von AEM Version 6.0 und bis zu 6.5 zu aktualisieren. Kunden, die 5.6.x und älter ausführen, müssen zunächst ein Upgrade auf Version 6.0 oder höher durchführen, wobei 6.0 (SP3) empfohlen wird. Außerdem wird jetzt das neue Oak Segment Tar-Format für den Segment-Knotenspeicher seit 6.3 verwendet, und die Repository-Migration auf dieses neue Format ist auch für 6.0, 6.1 und 6.2 obligatorisch.
 
 >[!CAUTION]
 >
@@ -89,11 +89,11 @@ Es muss sichergestellt werden, dass Sie ein unterstütztes Betriebssystem, eine 
 
 ## Projektphasen {#project-phases}
 
-Viel Arbeit geht in die Planung und Durchführung eines AEM-Upgrades. Um die verschiedenen Anstrengungen zu verdeutlichen, die in diesem Prozess unternommen werden, hat die Adobe die Planungs- und Ausführungsübungen in separate Phasen unterteilt. In den folgenden Abschnitten führt jede Phase zu einem Lieferziel, das häufig von einer künftigen Projektphase verwendet wird.
+Viel Arbeit geht in die Planung und Durchführung eines AEM-Upgrades. Um die verschiedenen Bemühungen zu verdeutlichen, die in diesem Prozess unternommen werden, hat die Adobe die Planungs- und Ausführungsübungen in separate Phasen unterteilt. In den folgenden Abschnitten führt jede Phase zu einem Lieferziel, das häufig von einer künftigen Projektphase verwendet wird.
 
 ### Planen der Autorenschulung {#planning-for-author-training}
 
-In jeder neuen Version ist mit potenziellen Änderungen an der Benutzeroberfläche und den Benutzer-Workflows zu rechnen. Darüber hinaus werden durch neue Versionen neue Funktionen eingeführt, die für das Unternehmen von Vorteil sein können. Adobe empfiehlt, die eingeführten Funktionsänderungen zu überprüfen und einen Plan zu organisieren, um Ihre Benutzer bei der effektiven Verwendung dieser Funktionen zu schulen.
+In jeder neuen Version ist mit potenziellen Änderungen an der Benutzeroberfläche und den Benutzer-Workflows zu rechnen. Darüber hinaus werden durch neue Versionen neue Funktionen eingeführt, die für das Unternehmen von Vorteil sein können. Adobe empfiehlt, die eingeführten Funktionsänderungen zu überprüfen und einen Plan zu organisieren, um Ihre Benutzer auf ihre effektive Nutzung zu trainieren.
 
 ![unu_cropped](assets/unu_cropped.png)
 
@@ -139,7 +139,7 @@ Mit AEM werden Änderungen an der Repository-Struktur eingeführt, mit denen Upg
 
 ### Bewertung der Komplexität des Upgrades {#assessing-upgrade-complexity}
 
-Aufgrund der großen Vielfalt an Anpassungen, die Adobe-Kunden in ihren AEM-Umgebungen anwenden, ist es wichtig, einige Zeit vor dem Upgrade zu verbringen, um den Gesamtaufwand zu ermitteln, der bei Ihrem Upgrade erwartet werden sollte.
+Aufgrund der großen Vielfalt an Anpassungen, die Adobe-Kunden für ihre AEM-Umgebungen anwenden, ist es wichtig, einige Zeit vor dem Upgrade zu verbringen, um den Gesamtaufwand zu ermitteln, der bei Ihrem Upgrade erwartet werden sollte.
 
 Es gibt zwei Ansätze, mit denen Sie die Komplexität des Upgrades bewerten können. Eine Vorphase kann den neu eingeführten Musterdetektor verwenden, der für Ihre AEM 6.1, 6.2 und 6.3-Instanzen verfügbar ist. Der Musterdetektor bietet die einfachste Möglichkeit, die erwartete Gesamtkomplexität des Upgrades anhand der gefundenen Muster zu bewerten. Der Musterdetektorbericht enthält Muster zum Identifizieren nicht verfügbarer APIs, die von der benutzerdefinierten Codebase verwendet werden (dies wurde mithilfe von Kompatibilitätsprüfungen vor der Aktualisierung in 6.3 durchgeführt).
 
@@ -151,11 +151,11 @@ Der kürzlich eingeführte Musterdetektor liefert Ihnen eine recht genaue Schät
 
 ### Erstellen des Runbooks für das Upgrade und das Rollback {#building-the-upgrade-and-rollback-runbook}
 
-Während Adobe den Prozess zum Aktualisieren einer AEM-Instanz dokumentiert hat, erfordern das Netzwerklayout, die Bereitstellungsarchitektur und die Anpassungen jedes Kunden eine Feinabstimmung und Anpassung dieses Ansatzes. Aus diesem Grund empfiehlt Ihnen Adobe, alle bereitgestellten Dokumentationen zu lesen und sie zu verwenden, um ein projektspezifisches Runbook zu informieren, in dem die spezifischen Upgrade- und Rollback-Verfahren beschrieben werden, die Sie in Ihrer Umgebung anwenden werden. Stellen Sie bei einer Aktualisierung von CRX2 sicher, dass Sie die Dauer der Inhaltsmigration von CRX2 auf Oak evaluieren. Für große Repositorys könnte dies erheblich sein.
+Während Adobe den Prozess zum Aktualisieren einer AEM-Instanz dokumentiert hat, erfordern das Netzwerklayout, die Bereitstellungsarchitektur und die Anpassungen jedes Kunden eine Feinabstimmung und Anpassung dieses Ansatzes. Aus diesem Grund empfiehlt Ihnen Adobe, die gesamte bereitgestellte Dokumentation zu lesen und sie zu verwenden, um ein projektspezifisches Runbook zu informieren, in dem die spezifischen Upgrade- und Rollback-Verfahren beschrieben werden, die Sie in Ihrer Umgebung anwenden werden. Stellen Sie bei einer Aktualisierung von CRX2 sicher, dass Sie die Dauer der Inhaltsmigration von CRX2 auf Oak evaluieren. Für große Repositorys könnte dies erheblich sein.
 
 ![runbook-diagram](assets/runbook-diagram.png)
 
-Adobe hat Upgrade- und Rollback-Verfahren in [Aktualisierungsverfahren](/help/sites-deploying/upgrade-procedure.md) und schrittweise Anleitungen zum Anwenden des Upgrades unter Ausführen eines [Ersetzende Aktualisierung](/help/sites-deploying/in-place-upgrade.md). Diese Anweisungen sollten überprüft und mit Ihrer Systemarchitektur, Ihren Anpassungen und Ihrer Ausfallzeittoleranz in Betracht gezogen werden, um die geeigneten Umstellungs- und Rollback-Verfahren zu bestimmen, die Sie während des Upgrades ausführen. Änderungen an der Architektur oder Servergröße sollten bei der Erstellung Ihres benutzerdefinierten Runbooks miteinbezogen werden. Beachten Sie, dass diese Version als erster Entwurf gelten sollte. Möglicherweise sind nach Abschluss der QS- und Entwicklungszyklen und der Bereitstellung des Upgrades in der Staging-Umgebung weitere Schritte erforderlich. Die Informationen im Dokument sollten möglichst umfassend sein, sodass Ihr Betriebspersonal das Upgrade anhand der darin enthaltenen Informationen vollständig durchführen und abschließen kann.
+Adobe hat Upgrade- und Rollback-Verfahren in [Aktualisierungsverfahren](/help/sites-deploying/upgrade-procedure.md) und schrittweise Anleitungen zum Anwenden des Upgrades unter Ausführen eines [Ersetzende Aktualisierung](/help/sites-deploying/in-place-upgrade.md). Diese Anweisungen sollten überprüft und mit Ihrer Systemarchitektur, Ihren Anpassungen und Ihrer Ausfallzeittoleranz in Betracht gezogen werden, um die geeigneten Umstellungs- und Rollback-Verfahren zu bestimmen, die Sie während des Upgrades ausführen werden. Änderungen an der Architektur oder Servergröße sollten bei der Erstellung Ihres benutzerdefinierten Runbooks miteinbezogen werden. Beachten Sie, dass diese Version als erster Entwurf gelten sollte. Möglicherweise sind nach Abschluss der QS- und Entwicklungszyklen und der Bereitstellung des Upgrades in der Staging-Umgebung weitere Schritte erforderlich. Die Informationen im Dokument sollten möglichst umfassend sein, sodass Ihr Betriebspersonal das Upgrade anhand der darin enthaltenen Informationen vollständig durchführen und abschließen kann.
 
 ### Entwickeln eines Projektplans {#developing-a-project-plan}
 
@@ -176,7 +176,7 @@ Ein umfassender Projektplan sollte folgende Punkte beinhalten:
 
 ### Entwicklung und Qualitätssicherung durchführen {#performing-development-and-qa}
 
-Die Adobe hat Verfahren für [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) , um mit AEM 6.5 kompatibel zu sein. Da dieser iterative Prozess ausgeführt wird, sollten nach Bedarf Änderungen am Runbook vorgenommen werden. Siehe auch [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md) Informationen dazu, wie Ihre Anpassungen in der Regel abwärtskompatibel bleiben können, ohne dass sofort nach der Aktualisierung eine Entwicklung erforderlich ist.
+Adobe hat Verfahren für die [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) mit AEM 6.5 kompatibel sein. Da dieser iterative Prozess ausgeführt wird, sollten bei Bedarf Änderungen am Runbook vorgenommen werden. Siehe auch [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md) Informationen dazu, wie Ihre Anpassungen in der Regel abwärtskompatibel bleiben können, ohne dass sofort nach der Aktualisierung eine Entwicklung erforderlich ist.
 
 ![patru_cropped](assets/patru_cropped.png)
 
@@ -192,8 +192,8 @@ Dieser Schritt ist notwendig, da dies die einzige Gelegenheit ist, bei der Sie d
 
 ### Durchführen des Upgrades {#performing-the-upgrade}
 
-Sobald die endgültige Abnahme von allen Beteiligten eingegangen ist, ist es an der Zeit, die definierten Runbook-Verfahren auszuführen. Adobe hat Schritte für die Aktualisierung und das Rollback-Verfahren in [Aktualisierungsverfahren](/help/sites-deploying/upgrade-procedure.md) und Installationsschritte unter Ausführen einer [Ersetzende Aktualisierung](/help/sites-deploying/in-place-upgrade.md) als Referenzpunkt.
+Sobald die endgültige Abnahme von allen Beteiligten eingegangen ist, ist es an der Zeit, die definierten Runbook-Verfahren auszuführen. Adobe hat Schritte für die Aktualisierung und das Rollback in [Aktualisierungsverfahren](/help/sites-deploying/upgrade-procedure.md) und Installationsschritte unter Ausführen einer [Ersetzende Aktualisierung](/help/sites-deploying/in-place-upgrade.md) als Referenzpunkt.
 
 ![perform-upgrade](assets/perform-upgrade.png)
 
-Adobe hat einige Schritte in den Aktualisierungsanweisungen für die Umgebungsvalidierung bereitgestellt. Dazu gehören grundlegende Prüfungen wie das Überprüfen der Aktualisierungsprotokolle und die Überprüfung, ob alle OSGi-Bundles ordnungsgemäß gestartet wurden. Adobe empfiehlt jedoch auch, anhand Ihrer eigenen Testfälle anhand Ihrer Geschäftsprozesse zu validieren. Adobe empfiehlt außerdem, den Zeitplan für AEM Online-Revisionsbereinigung und zugehörige Routinen zu überprüfen, um sicherzustellen, dass diese in einer stillen Zeit für Ihr Unternehmen stattfinden. Diese Routinen sind für die langfristige AEM von entscheidender Bedeutung.
+Adobe hat einige Schritte in den Upgrade-Anweisungen zur Umgebungsvalidierung bereitgestellt. Dazu gehören grundlegende Prüfungen wie das Überprüfen der Upgrade-Protokolle und das Überprüfen, ob alle OSGi-Bundles ordnungsgemäß gestartet wurden. Adobe empfiehlt jedoch, anhand Ihrer Geschäftsprozesse auch eigene Testfälle zu validieren. Adobe empfiehlt außerdem, den Zeitplan für die AEM Online-Revisionsbereinigung und die damit verbundenen Routinen zu überprüfen, um sicherzustellen, dass sie in einer stillen Zeit für Ihr Unternehmen stattfinden. Diese Routinen sind für die langfristige AEM von entscheidender Bedeutung.

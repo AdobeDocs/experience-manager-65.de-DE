@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 89%
+source-wordcount: '1304'
+ht-degree: 86%
 
 ---
 
@@ -24,7 +24,7 @@ Dadurch entfällt die Notwendigkeit, eine benutzerdefinierte Komponente für jed
 
 ## Nutzungsszenario {#use-case}
 
-Vorlagenautorinnen und -autoren benötigen nicht nur die Möglichkeit, die Funktionsweise von Komponenten für Inhaltsautorinnen und -autoren zu konfigurieren, sondern auch die Möglichkeit, eine Reihe alternativer visueller Varianten einer Komponente zu konfigurieren.
+Vorlagenautoren müssen nicht nur die Funktion von Komponenten für Inhaltsautoren konfigurieren, sondern auch verschiedene alternative visuelle Varianten einer Komponente konfigurieren können.
 
 Ebenso müssen Inhaltsautorinnen und -autoren nicht nur die Möglichkeit haben, ihren Inhalt zu strukturieren und anzuordnen, sondern sie müssen auch auswählen können, wie er visuell dargestellt wird.
 
@@ -111,7 +111,7 @@ Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, gehen 
 
 >[!CAUTION]
 >
->Die als Stil-Eigenschaften einer Komponentenrichtlinie konfigurierten CSS-Klassen (sowie das erforderliche JavaScript) müssen als [Client-Bibliotheken](/help/sites-developing/clientlibs.md) zu arbeiten.
+>Die als Stil-Eigenschaften einer Komponentenrichtlinie konfigurierten CSS-Klassen (und das erforderliche JavaScript) müssen als [Client-Bibliotheken](/help/sites-developing/clientlibs.md) zu arbeiten.
 
 ## Einrichtung {#setup}
 
@@ -160,4 +160,4 @@ Diese Eigenschaft wird auf dem Knoten `cq:Component` festgelegt. Beispiel:
 
 Diese Möglichkeit, Stilnamen zu definieren, ist für sehr allgemeine Komponenten wie den Layout-Container oder die Inhaltsfragment-Komponente nützlich, um ihnen eine zusätzliche Bedeutung zu verleihen.
 
-Zum Beispiel können einem Layout-Container dadurch semantishce Elemente wie `<main>`, `<aside>`, `<nav>` usw. zugewiesen werden.
+So kann beispielsweise einem Layout-Container Semantik-Elemente wie `<main>`, `<aside>`, `<nav>`usw.

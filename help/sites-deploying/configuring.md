@@ -7,7 +7,7 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2116'
 ht-degree: 30%
@@ -89,11 +89,11 @@ Wenn also eine IP-Adresse angegeben werden muss, können Sie (nach Bedarf) Folge
 
 * eine IPv6-Adresse
 
-  zum Beispiel `https://[ab12::34c5:6d7:8e90:1234]:4502`
+  Beispiel: `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * eine IPv4-Adresse
 
-  zum Beispiel `https://123.1.1.4:4502`
+  Beispiel: `https://123.1.1.4:4502`
 
 * einen Server-Namen
 
@@ -287,7 +287,7 @@ Siehe [Grundlagen der Berichtsanpassung](/help/sites-administering/reporting.md#
 
 CQ sendet E-Mail-Benachrichtigungen an Benutzer, die:
 
-* Seitenereignisse wie Änderungen oder Replikationen abonniert haben.
+* Sie haben Seitenereignisse abonniert, z. B. Änderungen oder Replikation.
 * Forumsveranstaltungen abonniert haben.
 * Einen Schritt in einem Workflow ausführen müssen.
 

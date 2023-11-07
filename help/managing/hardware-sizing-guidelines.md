@@ -7,9 +7,9 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2796'
+source-wordcount: '2798'
 ht-degree: 46%
 
 ---
@@ -31,7 +31,7 @@ Grundlegende Faktoren sind (in dieser Reihenfolge):
    * Erwarteter Traffic
    * Komplexität von Vorlagen, Anwendungen und Komponenten
    * Gleichzeitige Autoren
-   * Komplexität des Authoring-Vorgangs (einfache Inhaltsbearbeitung, MSM-Rollout usw.)
+   * Komplexität des Bearbeitungsvorgangs (einfache Inhaltsbearbeitung, MSM-Rollout usw.)
 
 * **I/O-Leistung**
 
@@ -81,7 +81,7 @@ Die Anforderungen an die Hardwaredimensionierung für erweiterte Anwendungsfäll
 
 Der erforderliche Speicherplatz hängt stark vom Volumen und Typ Ihrer Webanwendung ab. Die Berechnungen sollten Folgendes berücksichtigen:
 
-* Anzahl und Größe von Seiten, Assets und anderen im Repository gespeicherten Entitäten wie Workflows, Profilen usw.
+* die Menge und Größe von Seiten, Assets und anderen im Repository gespeicherten Entitäten wie Workflows, Profilen usw.
 * die geschätzte Häufigkeit von Inhaltsänderungen und damit die Erstellung von Inhaltsversionen
 * das Volumen der DAM-Asset-Ausgabedarstellungen, die generiert werden
 * das Gesamtwachstum von Inhalten im Zeitverlauf
@@ -137,9 +137,9 @@ In der Autorenumgebung ist die Effizienz der Zwischenspeicherung in der Regel de
 
 ### Paralleles Arbeiten von Autoren {#authors-working-in-parallel}
 
-In der Autorenumgebung sind die Anzahl der parallel arbeitenden Autoren und das Laden ihrer Interaktionen, die zum System hinzugefügt werden, die wichtigsten Begrenzungsfaktoren. Daher empfiehlt Adobe, das System auf der Grundlage des gemeinsamen Datendurchsatzes zu skalieren.
+In der Autorenumgebung sind die Anzahl der parallel arbeitenden Autoren und das Laden ihrer Interaktionen, die zum System hinzugefügt werden, die wichtigsten Begrenzungsfaktoren. Daher empfiehlt Adobe, dass Sie Ihr System basierend auf dem gemeinsamen Datendurchsatz skalieren.
 
-In solchen Fällen führt Adobe Benchmarktests auf einem Cluster von Autoreninstanzen mit zwei Knoten &quot;shared-Nothing&quot;aus.
+In solchen Fällen führen Adobe Benchmark-Tests auf einem Cluster von Autoreninstanzen mit zwei Knoten &quot;shared-Nothing&quot;aus.
 
 * **Benchmarktest 1a** Mit einem aktiv-aktiven Shared-Nothing-Cluster von 2 Autoreninstanzen berechnen Sie den maximalen Durchsatz mit einem Lastprofil, bei dem Benutzer eine einfache Seitenübung auf einer Grundlast von 300 vorhandenen Seiten durchführen, die alle von ähnlicher Art sind.
 
@@ -168,11 +168,11 @@ Siehe auch [Parallelisierung](/help/managing/hardware-sizing-guidelines.md#paral
 
 ### Hardware-Recommendations {#hardware-recommendations}
 
-In der Regel können Sie dieselbe Hardware für Ihre Autorenumgebung verwenden, wie für Ihre Veröffentlichungsumgebung empfohlen wird. In der Regel ist der Website-Traffic auf Authoring-Systemen viel geringer, aber auch die Cache-Effizienz ist geringer. Entscheidend ist jedoch die Anzahl der parallel arbeitenden Autoren und die Art der Aktionen, die am System vorgenommen werden. Im Allgemeinen ist AEM Clustering (der Autorenumgebung) am effektivsten bei der Skalierung von Lesevorgängen. Anders ausgedrückt: Ein AEM-Cluster skaliert gut mit Autoren, die grundlegende Bearbeitungsvorgänge durchführen.
+In der Regel können Sie dieselbe Hardware für Ihre Autorenumgebung verwenden, wie für Ihre Veröffentlichungsumgebung empfohlen wird. In der Regel ist der Website-Traffic auf Authoring-Systemen viel geringer, aber auch die Cache-Effizienz ist geringer. Entscheidend ist jedoch die Anzahl der parallel arbeitenden Autoren und die Art der Aktionen, die am System vorgenommen werden. Im Allgemeinen ist AEM Clustering (der Autorenumgebung) am effektivsten bei der Skalierung von Lesevorgängen, d. h. ein AEM Cluster skaliert gut mit Autoren, die grundlegende Bearbeitungsvorgänge durchführen.
 
 Die Benchmarktests an Adobe wurden mit dem Betriebssystem Red Hat® 5.5 durchgeführt, das auf einer Hewlett-Packard ProLiant DL380 G5-Hardwareplattform mit folgender Konfiguration ausgeführt wird:
 
-* Zwei Intel Xeon® X5450er-Quadcore-Prozessoren mit 3,00 GHz
+* Zwei Intel Xeon® X5450 Quadcore-Prozessoren mit 3,00 GHz
 * 8 GB RAM
 * Broadcom NetXtreme II BCM5708 Gigabit-Ethernet
 * HP Smart Array RAID Controller, 256 MB Cache
@@ -183,7 +183,7 @@ AEM Instanzen wurden mit einer minimalen Heap-Größe von 256M ausgeführt, eine
 
 ## Umgebungsspezifische Berechnungen veröffentlichen {#publish-environment-specific-calculations}
 
-### Caching-Effizienz und Traffic {#caching-efficiency-and-traffic}
+### Caching-Effizienz und -Traffic {#caching-efficiency-and-traffic}
 
 Die Cache-Effizienz ist für die Geschwindigkeit der Website von entscheidender Bedeutung. Die folgende Tabelle zeigt, wie viele Seiten pro Sekunde ein optimiertes AEM mit einem Reverse-Proxy wie dem Dispatcher verarbeiten kann:
 

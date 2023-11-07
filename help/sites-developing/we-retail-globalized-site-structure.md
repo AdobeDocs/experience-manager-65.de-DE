@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: e1de20b0-6d7a-4bda-b62f-c2808fd0af28
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 25%
+source-wordcount: '419'
+ht-degree: 21%
 
 ---
 
@@ -66,6 +66,6 @@ We.Retail wurde mit einer globalisierten Site-Struktur erstellt, die einen Sprac
 >
 >Dieses Verfahren zeigt die integrierte Integration mit der maschinellen Übersetzung von Microsoft®. Verwenden der [AEM Framework für die Übersetzungsintegration](/help/sites-administering/translation.md), können Sie mit vielen Standardübersetzungsdiensten integrieren, um die Übersetzung von AEM zu koordinieren.
 
-## Weiterführende Informationen {#further-information}
+## Weitere Informationen {#further-information}
 
-Weitere Informationen sowie vollständige technische Details finden Sie im Dokument [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md).
+Weitere Informationen finden Sie im Authoring-Dokument . [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md) für vollständige technische Details.

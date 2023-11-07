@@ -1,19 +1,15 @@
 ---
 title: Microsoft Dynamics OData-Konfiguration
-seo-title: Microsoft Dynamics ODtata configuration
-description: Erfahren Sie, wie Sie mithilfe des Formulardatenmodells die Integration und die Arbeit mit Online- und lokalen Microsoft Dynamics-Services nutzen können.
-seo-description: Learn how to leverage integrate and work with online and on-premises Microsoft Dynamics services through form data model.
-uuid: 37e59633-484b-4a20-808d-2a0bc0d336cc
+description: Erfahren Sie, wie Sie Microsoft Dynamics-Dienste über ein Formulardatenmodell verwenden, integrieren und mit diesen online und lokal verwenden können.
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 627507f5-1ffc-48f8-8cc9-5dbc5e409ae3
 docset: aem65
 feature: Form Data Model
 exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
-source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1227'
-ht-degree: 64%
+source-wordcount: '1230'
+ht-degree: 61%
 
 ---
 
@@ -26,13 +22,13 @@ ht-degree: 64%
 
 ![data-integeration](assets/data-integeration.png)
 
-Microsoft Dynamics ist eine Software für Customer Relationship Management (CRM) und Enterprise Resource Planning (ERP), die Unternehmenslösungen für die Erstellung und Verwaltung von Kundenkonten, Kontakten, Leads, Chancen und Fällen bietet. [AEM Forms-Datenintegration](../../forms/using/data-integration.md) bietet eine OData-Cloud-Service-Konfiguration zur Integration von Forms in Online- und On-Premise-Microsoft Dynamics-Server. Damit können Sie ein Formulardatenmodell erstellen, das auf den im Microsoft Dynamics-Dienst definierten Entitäten, Attributen und Diensten basiert. Das Formulardatenmodell kann verwendet werden, um adaptive Formulare zu erstellen, die mit Microsoft Dynamics Server interagieren, um Geschäfts-Workflows zu ermöglichen. Beispiel:
+Microsoft Dynamics ist eine Software für Customer Relationship Management (CRM) und Enterprise Resource Planning (ERP), die Unternehmenslösungen für die Erstellung und Verwaltung von Kundenkonten, Kontakten, Leads, Chancen und Fällen bietet. [AEM Forms-Datenintegration](../../forms/using/data-integration.md) bietet eine OData-Cloud-Service-Konfiguration zur Integration von Forms in den Online- und lokalen Microsoft Dynamics-Server. Damit können Sie ein Formulardatenmodell erstellen, das auf den im Microsoft Dynamics-Dienst definierten Entitäten, Attributen und Diensten basiert. Das Formulardatenmodell kann verwendet werden, um adaptive Formulare zu erstellen, die mit Microsoft Dynamics Server interagieren, um Geschäfts-Workflows zu ermöglichen. Beispiel:
 
 * Abfragen des Microsoft Dynamics-Servers nach Daten und Vorausfüllen der adaptiven Formulare
 * Schreiben von Daten in Microsoft Dynamics bei der Sendung von adaptiven Formularen
 * Schreiben von Daten in Microsoft Dynamics durch benutzerdefinierte Entitäten, die im Formulardatenmodell definiert sind, und umgekehrt
 
-AEM Forms beinhaltet auch ein Add-on-Paket für die OData-Referenzkonfiguration, mit der Sie Microsoft Dynamics schnell in AEM Forms integrieren können.
+Das AEM Forms Add-On-Paket enthält auch eine Referenz-OData-Konfiguration, die Sie verwenden können, um Microsoft Dynamics schnell in AEM Forms zu integrieren.
 
 Wenn das Paket installiert ist, sind die folgenden Entitäten und Dienste in Ihrer AEM Forms-Instanz verfügbar:
 
@@ -53,7 +49,7 @@ Bevor Sie mit der Einrichtung und Konfiguration von Microsoft Dynamics beginnen,
 
 * [Das Programm wurde für den Microsoft Dynamics-Online-Service bei Microsoft Azure Active Directory registriert](https://docs.microsoft.com/de-de/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Notieren Sie sich die Werte für die Client-ID (die auch als Anwendungs-ID bezeichnet wird) und den geheimen Clientschlüssel für den registrierten Service. Diese Werte werden verwendet, während [Konfigurieren des Cloud-Dienstes für Ihren Microsoft Dynamics-Dienst](../../forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service).
 
-## Festlegen der Antwort-URL für registrierte Microsoft Dynamics-Anwendung {#set-reply-url-for-registered-microsoft-dynamics-application}
+## Festlegen der Antwort-URL für die registrierte Microsoft Dynamics-Anwendung {#set-reply-url-for-registered-microsoft-dynamics-application}
 
 Führen Sie die folgenden Schritte aus, um die Antwort-URL für die registrierte Microsoft Dynamics-Anwendung festzulegen:
 
@@ -147,7 +143,7 @@ Wenn Sie das AEM Forms-Paket installieren, wird ein Formulardatenmodell, **Micro
 
 Beim erstmaligen Öffnen des Formulardatenmodells stellt es eine Verbindung zum konfigurierten Microsoft Dynamics-Dienst her und ruft Entitäten von Ihrer Microsoft Dynamics-Instanz ab. Die Entitäten &quot;contact&quot;und &quot;lead&quot;aus Microsoft Dynamics wurden bereits im Formulardatenmodell hinzugefügt.
 
-Um das Formulardatenmodell zu überprüfen, navigieren Sie zu **[!UICONTROL Formulare > Datenintegrationen]**. Auswählen **Microsoft Dynamics FDM** und klicken Sie auf **Bearbeiten** , um das Formulardatenmodell im Bearbeitungsmodus zu öffnen. Alternativ können Sie das Formulardatenmodell direkt über die folgende URL öffnen:
+Um das Formulardatenmodell zu überprüfen, navigieren Sie zu **[!UICONTROL Formulare > Datenintegrationen]**. Auswählen **Microsoft Dynamics FDM** und klicken **Bearbeiten** , um das Formulardatenmodell im Bearbeitungsmodus zu öffnen. Alternativ können Sie das Formulardatenmodell direkt über die folgende URL öffnen:
 
 `https://'[server]:[port]'/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
 

@@ -1,19 +1,15 @@
 ---
 title: Verwalten von Tags
-seo-title: Administering Tags
 description: Erfahren Sie, wie Sie Tags in Adobe Experience Manager verwalten und verwalten.
-seo-description: Learn how to administer Tags in AEM.
-uuid: 77e1280a-feea-4edd-94b6-4fb825566c42
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
-discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 73%
+source-wordcount: '1761'
+ht-degree: 70%
 
 ---
 
@@ -78,7 +74,7 @@ So greifen Sie auf die Tagging-Konsole zu:
 
 ### Erstellen eines Namespace {#creating-a-namespace}
 
-Um einen neuen Namespace zu erstellen, klicken Sie auf das Symbol **`Create Namespace`**.
+Um einen Namespace zu erstellen, wählen Sie die **`Create Namespace`** Symbol.
 
 Der Namespace selbst ist ein Tag und muss keine untergeordneten Tags enthalten. Um jedoch mit dem Erstellen eines Klassifikationsschemas fortzufahren, [erstellen Sie untergeordnete Tags](#creating-tags), bei denen es sich um Leaf-Tags oder Container-Tags handeln kann.
 
@@ -211,7 +207,7 @@ Zeigt zunächst den aktuellen `name`-Wert des Tags an. Sie können einen neuen `
 
 Das Zusammenführen von Tags kann sich anbieten, wenn im Klassifikationsschema Duplikate vorhanden sind. Wenn Tag A mit Tag B zusammengeführt wird, werden alle mit Tag A getaggten Seiten mit Tag B versehen und Tag A steht Autoren nicht mehr zur Verfügung.
 
-Wenn Sie einen Namespace oder ein anderes Tag ausgewählt haben, klicken Sie auf das Symbol **Zusammenführen**. Daraufhin wird ein Bedienfeld geöffnet, in dem Sie den Pfad für die Zusammenführung auswählen können.
+Wenn ein Namespace oder ein anderes Tag ausgewählt wird, wählen Sie die **Zusammenführen** -Symbol öffnet ein Bedienfeld, in dem der Pfad, zu dem zusammengeführt werden soll, ausgewählt werden kann.
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
@@ -296,7 +292,7 @@ Wenn Sie alle Übersetzungen eingegeben haben, klicken Sie auf **Speichern**, um
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
-Grundsätzlich wird die Sprache für das Tag entsprechend der Sprache der Seite ausgewählt, wenn vorhanden. Wird das [`tag`Widget ](/help/sites-developing/building.md#tagging-on-the-client-side) in anderen Fällen verwendet (z. B. in Formularen oder Dialogfeldern), hängt die Tag-Sprache vom Kontext ab.
+Grundsätzlich wird die Sprache für das Tag entsprechend der Sprache der Seite ausgewählt, wenn vorhanden. Wenn die Variable [`tag` Widget](/help/sites-developing/building.md#tagging-on-the-client-side) in anderen Fällen verwendet wird (z. B. in Formularen oder in Dialogfeldern), hängt die Tag-Sprache vom Kontext ab.
 
 Statt der Spracheinstellung der Seite verwendet die Tagging-Konsole die Spracheinstellung des Benutzers. Für einen Benutzer, der als Sprache in den Benutzereinstellungen Französisch ausgewählt hat, wird das Tag „Tiere“ als „Animaux“ in der Tagging-Konsole angezeigt.
 
@@ -310,6 +306,6 @@ Wenn Sie eine neue Sprache zum Dialogfeld hinzufügen möchten, finden Sie detai
 
 * [Tagging für Entwickler](/help/sites-developing/tags.md)
 
-  Informationen über das Tagging-Framework sowie die Einbeziehung und Erweiterung von Tags in benutzerdefinierten Anwendungen.
+  Informationen zum Tagging-Framework sowie zum Erweitern und Einschließen von Tags in benutzerdefinierten Anwendungen.
 
 * [Tagging-Konsole der klassischen Benutzeroberfläche](/help/sites-administering/classic-console.md)

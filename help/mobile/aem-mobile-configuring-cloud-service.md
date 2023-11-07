@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: d370d772-ef4d-4f38-826c-e90d07735822
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1274'
 ht-degree: 1%
 
 ---
@@ -23,23 +23,23 @@ ht-degree: 1%
 >
 >Dieses Dokument ist Teil der [Erste Schritte mit Adobe Experience Manager (AEM) Mobile](/help/mobile/getting-started-aem-mobile.md) Guide, ein empfohlener Ausgangspunkt für die AEM Mobile-Referenz.
 
-Es gibt mehrere Schritte, die zusammenkommen müssen, bevor Inhaltsautoren beginnen können, zielgerichtete Inhalte für mobile Apps zu generieren: Es gibt die richtigen Berechtigungen für Benutzer und Gruppen, das Erstellen von Cloud-Services, das Konfigurieren der Anwendung für die Aktivität und schließlich das Generieren des Inhalts.
+Es gibt mehrere Schritte, die zusammenkommen müssen, bevor Inhaltsautoren beginnen können, zielgerichtete Inhalte für mobile Apps zu generieren: Es gibt die richtigen Berechtigungen für Benutzer und Gruppen, das Erstellen von Cloud-Services, das Konfigurieren der Anwendung für die Aktivität und das Generieren des Inhalts.
 
 Die Annahme, dass die [AEM Mobile Hybrid-Referenzanwendung](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) wurde erfolgreich bereitgestellt und kann über das AEM Mobile-Dashboard aufgerufen werden.
 
 ## Berechtigungen {#permissions}
 
-Benutzer, die Zugriff auf die Personalisierungskonsole benötigen, müssen Teil der `target-activity-authors` hinzugefügt. Es wird empfohlen, dass die target-activity-group im Rahmen der Benutzer- und Gruppeneinrichtung zur Gruppe apps-admins hinzugefügt wird. Durch Hinzufügen der Gruppe target-activity-authors können Benutzer den Menüeintrag Personalisierung-Navigation sehen.
+Benutzer, die Zugriff auf die Personalisierungskonsole benötigen, müssen `target-activity-authors` hinzugefügt. Es wird empfohlen, dass die target-activity-group im Rahmen der Benutzer- und Gruppeneinrichtung zur Gruppe apps-admins hinzugefügt wird. Durch Hinzufügen der Gruppe target-activity-authors können Benutzer den Menüeintrag Personalisierung-Navigation sehen.
 
 Wenn Sie vergessen, die Benutzer oder Gruppen, die Sie auf die Personalisierungskonsole zugreifen möchten, zur Gruppe target-activity-authors hinzuzufügen, wird verhindert, dass die Personalisierungskonsole angezeigt wird.
 
 ## Cloud Services {#cloud-services}
 
-Damit zielgerichtete Inhalte für mobile Anwendungen funktionieren, müssen zwei Dienste konfiguriert werden: Der Adobe Target-Dienst und der Adobe Mobile Services-Dienst. Der Adobe Target-Dienst stellt die Engine für die Verarbeitung von Client-Anforderungen und die Rückgabe personalisierter Inhalte bereit. Der Adobe Mobile Services-Dienst stellt die Verbindung zwischen den Adobe-Diensten und der Mobile App über die Datei ADBMobileConfig.json her, die vom AMS-Cordova-Plug-in genutzt wird. Im AEM Mobile Dashboard können Sie Ihre Anwendung konfigurieren, indem Sie die beiden Dienste hinzufügen.
+Damit zielgerichtete Inhalte für mobile Anwendungen funktionieren, müssen zwei Dienste konfiguriert werden: der Adobe Target-Dienst und der Adobe Mobile Services-Dienst. Der Adobe Target-Dienst stellt die Engine für die Verarbeitung von Client-Anforderungen und die Rückgabe personalisierter Inhalte bereit. Der Adobe Mobile Services-Dienst stellt die Verbindung zwischen den Adobe-Diensten und der Mobile App über die Datei ADBMobileConfig.json her, die vom AMS-Cordova-Plug-in genutzt wird. Im AEM Mobile Dashboard können Sie Ihre Anwendung konfigurieren, indem Sie die beiden Dienste hinzufügen.
 
 ## Adobe Target Cloud Service {#adobe-target-cloud-service}
 
-Suchen Sie im AEM Mobile Dashboard die Schaltfläche Cloud Services verwalten und klicken Sie auf die Schaltfläche + .
+Suchen Sie im AEM Mobile Dashboard die Schaltfläche Cloud Service verwalten und klicken Sie auf die Schaltfläche + .
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
@@ -65,11 +65,11 @@ Um sich bei AMS-Diensten anzumelden, besuchen Sie [https://mobilemarketing.adobe
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 
-Nachdem der Clientcode mit der Mobile App verknüpft wurde, werden die Diensteinstellungen über die Datei ADBMobileConfig.json bereitgestellt, wenn der AMS-Cloud-Service über das Adobe Mobile Dashboard konfiguriert wird.
+Nachdem der Clientcode mit der Mobile App verknüpft wurde, werden die Einstellungen für die Diensteinstellungen über die Datei ADBMobileConfig.json bereitgestellt, wenn der AMS-Cloud-Service über das Adobe Mobile Dashboard konfiguriert wird.
 
 ### Adobe Mobile Service Cloud Service {#adobe-mobile-service-could-service}
 
-Nachdem AMS konfiguriert wurde, ist es an der Zeit, die Mobile App im Adobe Mobile Dashboard zu verknüpfen. Suchen Sie im AEM Mobile Dashboard die Schaltfläche Cloud Services verwalten und klicken Sie auf die Schaltfläche + .
+Nachdem AMS konfiguriert wurde, ist es an der Zeit, die Mobile App im Adobe Mobile Dashboard zu verknüpfen. Suchen Sie im AEM Mobile Dashboard die Schaltfläche Cloud Service verwalten und klicken Sie auf die Schaltfläche + .
 
 ![chlimage_1-12](assets/chlimage_1-12.png)
 
@@ -79,7 +79,7 @@ Wählen Sie die Adobe Mobile Services -Karte aus und klicken Sie auf Weiter.
 
 Wählen Sie im Schritt Erstellen oder Auswählen des Assistenten die Dropdown-Liste Mobile Service aus und wählen Sie den Eintrag Konfiguration erstellen . Geben Sie einen Titel, ein Unternehmen, einen Benutzernamen und ein Kennwort ein und wählen Sie das entsprechende Rechenzentrum aus. Wenn Sie diese Werte nicht kennen, wenden Sie sich an Ihren Adobe Mobile Service-Administrator, um sie zu erhalten. Nachdem alle Felder ausgefüllt sind, klicken Sie auf **Überprüfen**. Der Überprüfungsprozess wird an AMS gesendet und überprüft die Anmeldeinformationen für das Konto. Nach erfolgreicher Überprüfung wird eine Liste mit Mobile Apps gefüllt, in der Sie die zugehörige Mobile App aus der Dropdown-Liste auswählen. Klicken Sie auf die Schaltfläche Senden , um den Assistenten abzuschließen. Der Prozess kann ein wenig Zeit in Anspruch nehmen, um die Konfigurationsdaten und alle damit verbundenen Analysen mit der Anwendung abzurufen. Klicken Sie nach Abschluss des Vorgangs auf **Fertig** aus dem Modal zurück, um zum Adobe Mobile Dashboard zurückzukehren.
 
-Kehren Sie zum Mobile Dashboard zurück und die Kachel Cloud Services verwalten enthält den AMS-Cloud-Service. Beachten Sie außerdem, dass die Kachel Metriken analysieren mit Lebenszyklusberichten gefüllt ist.
+Kehren Sie zum Mobile Dashboard zurück und die Kachel Cloud Service verwalten enthält den AMS-Cloud-Service. Außerdem wird die Kachel Metriken analysieren mit Lebenszyklusberichten gefüllt.
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
@@ -97,7 +97,7 @@ Nachdem der Aktivitätspfad in der Pfadeigenschaft des Handlers mobileappoffers 
 
 Der Handler für mobileappoffers ist für Veröffentlichungs- und Entwicklungskonfigurationen anders konfiguriert. Für Veröffentlichungskonfigurationen gibt es eine Eigenschaft mit dem Namen *renderMode* mit dem Wert *publish* auf den Knoten cq:ContentSyncConfig eingestellt ist. Der Handler mobileappoffer verweist auf den renderMode und bearbeitet, falls auf &quot;publish&quot;festgelegt, die zu erstellende Mbox-ID. Standardmäßig werden bei Mboxes, die von AEM erstellt werden, an die Mbox-ID der Wert —author angehängt. Dadurch wird festgestellt, dass die Aktivität noch nicht veröffentlicht wurde, und die nicht veröffentlichte Kampagne sollte für Angebotsauflösungen verwendet werden.
 
-Wenn Inhalte über das Adobe Mobile Dashboard gestaffelt werden, werden Staging-Inhalte als produktionsbereite Inhalte betrachtet und über die Konfiguration der Inhaltssynchronisierung ohne Entwicklungsumgebung gerendert. Auf diese Weise wird —author aus allen Mbox-IDs entfernt und es wird erwartet, dass eine veröffentlichte Aktivität auf dem Target-Server verfügbar ist. Bevor Sie gestaffelte Inhalte testen, stellen Sie sicher, dass die Aktivität veröffentlicht ist.
+Wenn Inhalte über das Adobe Mobile Dashboard gestaffelt werden, werden Staging-Inhalte als produktionsbereite Inhalte betrachtet und über die Konfiguration für die Inhaltssynchronisierung ohne Entwicklungsumgebung gerendert. Auf diese Weise wird —author aus allen Mbox-IDs entfernt und es wird erwartet, dass eine veröffentlichte Aktivität auf dem Target-Server verfügbar ist. Bevor Sie gestaffelte Inhalte testen, stellen Sie sicher, dass die Aktivität veröffentlicht ist.
 
 ## Erstellen von Inhalten {#creating-content}
 

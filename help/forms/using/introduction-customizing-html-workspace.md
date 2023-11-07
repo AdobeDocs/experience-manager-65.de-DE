@@ -1,7 +1,7 @@
 ---
 title: Einführung zur Anpassung von AEM Forms Workspace
 seo-title: Introduction to Customizing AEM form workspace
-description: Eine kurze Einführung mit konzeptuellen und technischen Informationen zur Anpassung von LiveCycle AEM Forms Workspace für die Prozessverwaltung.
+description: Eine kurze Einführung mit konzeptionellen und technischen Informationen zur Anpassung von LiveCycle AEM Forms Workspace für die Prozessverwaltung.
 seo-description: A quick introduction, with conceptual and technical information, to customize LiveCycle AEM Forms workspace for process management.
 uuid: 38759071-e6b8-4976-8b06-909ad7a786cd
 contentOwner: robhagat
@@ -11,10 +11,10 @@ topic-tags: forms-workspace
 discoiquuid: 021c6606-8cd3-472c-a80b-b1bcace7e87f
 docset: aem65
 exl-id: b183d42f-343c-4acb-bc73-f80ad72e54df
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1763'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1760'
+ht-degree: 30%
 
 ---
 
@@ -24,36 +24,36 @@ AEM Forms Workspace bietet Funktionen zum Ändern der Darstellung und der Funkti
 
 ![cu_customized_workspace_example](assets/cu_customized_workspace_example.png)
 
-Beispiel für einen benutzerdefinierten Workspace
+Beispiel für einen benutzerdefinierten Arbeitsbereich
 
-## Arten der Anpassung {#types-of-customizations}
+## Arten von Anpassungen {#types-of-customizations}
 
-AEM Forms Workspace unterstützt viele Anpassungen, mit denen das Layout, die Darstellung, die Funktionalität und andere Aspekte der Benutzeroberfläche aktualisiert werden können. Bei den Anpassungen wird mindestens eins der folgenden Faktoren aktualisiert:
+AEM Forms Workspace unterstützt viele Anpassungen, mit denen das Layout, die Darstellung, die Funktionalität und andere Aspekte der Benutzeroberfläche aktualisiert werden können. Die Anpassungen umfassen die Aktualisierung einer oder mehrerer der folgenden Elemente:
 
-* Aussehen der Benutzeroberfläche
-* Funktionen mithilfe der semantischen Anpassungen
+* Erscheinungsbild der Benutzeroberfläche
+* Funktionalität mithilfe semantischer Anpassungen
 * Wiederverwenden von HTML-Komponenten in anderen Anwendungen
 
-### Änderungen der Benutzeroberfläche {#user-interface-changes}
+### Änderungen an der Benutzeroberfläche {#user-interface-changes}
 
 Sie können das Aussehen, Layout und andere Darstellungsfaktoren von AEM Forms Workspace ändern. Ändern Sie den Workspace durch Anpassen der CSS- und HTML-Vorlagen und JavaScript™-Dateien. Alle Standarddateien werden in der Standardinstallation bereitgestellt.
 
-Die am häufigsten angewandten Schritte werden in [Generische Schritte zur Anpassung von AEM Forms Workspace](../../forms/using/generic-steps-html-workspace-customization.md) beschrieben. Einzelne Beispiele für Anpassungen, einschließlich der ausführlichen Schritte, finden Sie in den jeweiligen Artikeln am Ende des Artikels.
+Die am häufigsten angewandten Schritte werden in [Generische Schritte zur Anpassung von AEM Forms Workspace](../../forms/using/generic-steps-html-workspace-customization.md) beschrieben. Spezifische Beispiele für solche Anpassungen, einschließlich der detaillierten Schritte, finden Sie in den entsprechenden Artikeln am Ende dieses Artikels.
 
-#### Grundlagen des Stylesheet {#understanding-the-style-sheet}
+#### Grundlagen zum Stylesheet {#understanding-the-style-sheet}
 
-Bevor Sie Workspace anpassen, machen Sie sich mit dem Standard-Stylesheet vertraut, das mit AEM Forms unter /libs/ws/css/style.css bereitgestellt wird.
+Machen Sie sich vor dem Anpassen von Workspace mit dem Standard-Stylesheet vertraut, das unter /libs/ws/css/style.css mit AEM Forms bereitgestellt wird.
 
-Zur Anpassung des Workspace wird empfohlen, dass Sie sich mit dem vorhandenen Stylesheet „style.css“ im Ordner /libs/ws/css vertraut machen. Einige wichtige Komponenten werden im Folgenden beschrieben.
+Um den Arbeitsbereich anzupassen, sollten Sie sich mit dem vorhandenen Stylesheet style.css im Ordner /libs/ws/css vertraut machen. Nachfolgend werden einige wichtige Komponenten beschrieben.
 
 <table>
  <tbody>
   <tr>
    <th><p>CSS-Element</p> </th>
-   <th><p>Geänderte Benutzeroberflächenkomponente</p> </th>
+   <th><p>Änderung der Benutzeroberflächenkomponente</p> </th>
   </tr>
   <tr>
-   <td><p>#header</p> </td>
+   <td><p>#Kopfzeile</p> </td>
    <td><p>Header von AEM Forms Workspace</p> </td>
   </tr>
   <tr>
@@ -62,7 +62,7 @@ Zur Anpassung des Workspace wird empfohlen, dass Sie sich mit dem vorhandenen St
   </tr>
   <tr>
    <td><p>.categoryList .header</p> </td>
-   <td><p>Header der Kategorienliste</p> </td>
+   <td><p>Kopfzeile der Kategorienliste</p> </td>
   </tr>
   <tr>
    <td><p>.categories, .filters</p> </td>
@@ -74,11 +74,11 @@ Zur Anpassung des Workspace wird empfohlen, dass Sie sich mit dem vorhandenen St
   </tr>
   <tr>
    <td><p>.category:hover, .category.selected, .filter:hover, .filter.selected</p> </td>
-   <td><p>Ausgewählte Kategorie und Mouseover-Stil der Kategorie</p> </td>
+   <td><p>Ausgewählte Kategorie und Mauszeiger über die Kategorie</p> </td>
   </tr>
   <tr>
    <td><p>categoryListBar .tool, categoryListBar .content</p> </td>
-   <td><p>Seite für den Startprozess (geschlossene Kategorienliste)</p> </td>
+   <td><p>Prozessseite starten (geschlossene Kategorienliste)</p> </td>
   </tr>
   <tr>
    <td><p>filterListBar .tool, filterListBar .content</p> </td>
@@ -86,88 +86,88 @@ Zur Anpassung des Workspace wird empfohlen, dass Sie sich mit dem vorhandenen St
   </tr>
   <tr>
    <td><p>processNameListBar .tool, processNameListBar .content</p> </td>
-   <td><p>Seite „Verfolgung“ (geschlossene Prozessnamenliste)</p> </td>
+   <td><p>Tracking-Seite (geschlossene Prozessnamenliste)</p> </td>
   </tr>
   <tr>
    <td><p>.startPointList, .tasklist</p> </td>
-   <td><p>Startpunktliste oder Aufgabenliste</p> </td>
+   <td><p>Die Startpunktliste oder die Aufgabenliste</p> </td>
   </tr>
   <tr>
    <td><p>.startPointList .header, .tasklist .header</p> </td>
-   <td><p>Header einer Startpunktliste oder einer Aufgabenliste</p> </td>
+   <td><p>Die Kopfzeile einer Startpunktliste oder einer Aufgabenliste</p> </td>
   </tr>
   <tr>
    <td><p>.startpoint.selected, .task.selected</p> </td>
-   <td><p>Ausgewählter Startpunkt oder ausgewählte Aufgabe</p> </td>
+   <td><p>Der ausgewählte Startpunkt oder die ausgewählte Aufgabe</p> </td>
   </tr>
   <tr>
    <td><p>.startpoint.selected .description, .task.selected .description</p> </td>
-   <td><p>Beschreibung des ausgewählten Startpunkts oder der Aufgabe</p> </td>
+   <td><p>Beschreibung des ausgewählten Startpunkts oder der ausgewählten Aufgabe</p> </td>
   </tr>
   <tr>
    <td><p>#taskarea</p> </td>
-   <td><p>Aufgabenbereich</p> </td>
+   <td><p>Der Aufgabenbereich</p> </td>
   </tr>
   <tr>
    <td><p>#header .dropdown</p> </td>
-   <td><p>Benutzer-Dropdown-Komponente im Header</p> </td>
+   <td><p>Benutzer-Dropdown in der Kopfzeile</p> </td>
   </tr>
   <tr>
    <td><p>.sortDrop dd ul</p> </td>
-   <td><p>Dropdown-Komponente für Sortieraufgabe</p> </td>
+   <td><p>Dropdown-Liste "Sortieraufgabe"</p> </td>
   </tr>
  </tbody>
 </table>
 
 #### CSS {#css}
 
-Das Erscheinungsbild von AEM Forms Workspace wird aus einer CSS übernommen. Durch Anpassen der CSS können Sie die Darstellungseigenschaften des Workspace ändern, z. B. die Schriftarten, Farben, das Branding und Layout.
+Das Erscheinungsbild von AEM Forms Workspace wird aus einer CSS übernommen. Durch die Anpassung des CSS können Sie die Darstellungssemantik von Workspace wie Schriftarten, Farben, Branding und Layout ändern.
 
-Die wesentlichen Schritte für die CSS-Anpassung sind:
+Die wichtigsten Schritte zur CSS-Anpassung sind:
 
-* Erstellen Sie die eine CSS-Datei.
-* Fügen Sie der CSS-Datei Stilelemente hinzu. Weiteren Informationen finden Sie im entsprechenden Artikel zum Thema CSS-Stile.
+* Erstellen Sie eine CSS-Datei.
+* Fügen Sie diesem CSS Stilelemente hinzu. Weitere Informationen finden Sie unter Grundlagen zu CSS-Stilen .
 * Aktualisieren Sie die betreffenden Verweise in der Datei `html.jsp`.
 
-Die ausführlichen Schritte zur Umsetzung dieser Anpassungen finden Sie unter [Generische Schritte zur Anpassung von AEM Forms Workspace](../../forms/using/generic-steps-html-workspace-customization.md). Die mit AEM Forms Workspace bereitgestellte CSS-Datei ist unter /libs/ws/css/ zu finden. Verwenden Sie für diese CSS-Anpassungen das [Ship-Paket](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). Einzelne Beispiele für CSS-Anpassungen finden Sie in den jeweiligen Hilfethemen am Ende des Artikels.
+Die ausführlichen Schritte zur Umsetzung dieser Anpassungen finden Sie unter [Generische Schritte zur Anpassung von AEM Forms Workspace](../../forms/using/generic-steps-html-workspace-customization.md). Die mit AEM Forms Workspace bereitgestellte CSS-Datei ist unter /libs/ws/css/ zu finden. Verwenden Sie für diese CSS-Anpassungen das [Ship-Paket](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). Spezifische Beispiele für CSS-bezogene Anpassungen finden Sie in den entsprechenden Hilfethemen am Ende dieses Artikels.
 
 #### Bild {#image}
 
-Sie können AEM Forms Workspace anpassen, um Avatare von Benutzern oder das Logo Ihres Unternehmens hinzuzufügen. Verwenden Sie für diese Anpassungen das [Ship-Paket](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
+Sie können AEM Forms Workspace anpassen, um Avatare von Benutzern oder das Logo Ihres Unternehmens hinzuzufügen. Verwenden Sie für diese Anpassungen [Ship-Paket](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
 
-Die wesentlichen Schritte für die Anpassungen der Bilder sind:
+Die wichtigsten Schritte zur Anpassung der Bilder sind:
 
-* Installieren und konfigurieren Sie WebDAV.
+* WebDAV installieren und konfigurieren
 * Fügen Sie neue Bilder hinzu.
-* Fügen Sie neue Stile entsprechend den hinzugefügten Bildern hinzu.
+* Fügen Sie neue Stile hinzu, die den hinzugefügten Bildern entsprechen.
 * Stellen Sie eine Verknüpfung zu der neuen CSS-Datei in der Datei `html.jsp` her.
 
-Um mit der Anpassung der Bilder in AEM Forms Workspace zu beginnen, führen Sie die [Generischen Schritte zur Anpassung von AEM Forms Workspace](../../forms/using/generic-steps-html-workspace-customization.md) aus. Einzelne Beispiele für Bildanpassungen finden Sie in den jeweiligen Hilfethemen am Ende des Artikels.
+Um mit der Anpassung der Bilder in AEM Forms Workspace zu beginnen, führen Sie die [Generischen Schritte zur Anpassung von AEM Forms Workspace](../../forms/using/generic-steps-html-workspace-customization.md) aus. Spezifische Beispiele für bildbezogene Anpassungen finden Sie in den entsprechenden Hilfethemen am Ende dieses Artikels.
 
 #### HTML-Vorlage {#html-template}
 
-HTML-Vorlagen dienen dazu, das Erscheinungsbild und Layout der Benutzeroberfläche des Arbeitsbereichs zu definieren. Indem Sie die Standard-HTML-Vorlagen aktualisieren, können Sie das Layout der Standard-Benutzeroberfläche anpassen.
+HTML-Vorlagen dienen dazu, das Erscheinungsbild und Layout der Benutzeroberfläche des Arbeitsbereichs zu definieren. Durch die Aktualisierung der Standard-HTML-Vorlagen können Sie die Standard-Benutzeroberfläche des Layouts anpassen.
 
-Die wesentlichen Schritte für die Anpassungen der HTML-Vorlagen sind:
+Die wichtigsten Schritte zur Anpassung der HTML-Vorlage sind:
 
-* Erstellen Sie in einem benutzerdefinierten Ordner die Kopien von den erforderlichen Standarddateien.
-* Fügen Sie dem benutzerdefinierten Ordner neue Vorlagen hinzu.
-* Nehmen Sie an den kopierten Dateien die entsprechenden Aktualisierungen vor, z. B. die Aktualisierung des Pfads der neuen Vorlage.
+* Erstellen Sie in einem vom Benutzer erstellten Ordner Kopien der erforderlichen Standarddateien.
+* Fügen Sie neue Vorlagen im benutzerdefinierten Ordner hinzu.
+* Nehmen Sie relevante Aktualisierungen an den kopierten Dateien vor, z. B. den Pfad der neuen Vorlage.
 
-Einzelne Beispiele für diese Anpassungen finden Sie in den jeweiligen Hilfethemen am Ende des Artikels. Wählen Sie je nach der anzupassenden Vorlage das [Ship-Paket](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) oder das [Dev-Paket](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
+Spezifische Beispiele für solche Anpassungen finden Sie in den Hilfethemen am Ende dieses Artikels. Wählen Sie zwischen [Ship-Paket](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) oder [Entwicklungspaket](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), abhängig von der anzupassenden Vorlage.
 
-### Änderung der Semantik {#semantic-changes}
+### Semantische Änderungen {#semantic-changes}
 
-Verändern Sie den JavaScript Quell-Code, um die AEM Forms Workspace-Funktionen zu ändern. Änderungen in der Kernfunktion werden als Semantikänderungen bezeichnet. Ändern Sie Modelle, Ansichten und Vorlagen, die als Teil des Quellcodes von AEM Forms Workspace bereitgestellt werden.
+Verändern Sie den JavaScript Quell-Code, um die AEM Forms Workspace-Funktionen zu ändern. Änderungen an der Kernfunktion werden als Semantische Änderungen bezeichnet. Sie ändern Modelle, Ansichten und Vorlagen, die im Quellcode von AEM Forms Workspace bereitgestellt werden.
 
 Die wesentlichen Schritte zur Änderung der Semantik und damit zur Änderung der Funktionen von AEM Forms Workspace sind:
 
-* Erstellen Sie in einem benutzerdefinierten Ordner die Kopien von den entsprechenden Standarddateien.
-* Fügen Sie dem benutzerdefinierten Ordner neue Modelle und Ansichten hinzu.
-* Nehmen Sie die erforderlichen Aktualisierungen vor, z. B. die Aktualisierung der Pfade der neu hinzugefügten Modelle und Ansichten in den Standard-JavaScript-Dateien.
-* Minimieren Sie das Paket zum Optimieren der Leistung.
+* Erstellen Sie in einem vom Benutzer erstellten Ordner Kopien der entsprechenden Standarddateien.
+* Fügen Sie im benutzerdefinierten Ordner neue Modelle und Ansichten hinzu.
+* Nehmen Sie relevante Aktualisierungen vor, z. B. Aktualisieren von Pfaden neu hinzugefügter Modelle und Ansichten in den standardmäßigen JavaScript-Dateien.
+* Minimieren Sie das Paket zur Leistungsoptimierung.
 
-Weitere grundlegende Informationen zu den Komponenten, die Teil des Quellcodes sind, finden Sie unter [Beschreibung wiederverwendbarer Komponenten](/help/forms/using/description-reusable-components.md). Für diese Anpassungen verwenden Sie das Dev-Paket.
+Weitere grundlegende Informationen zu den Komponenten, die Teil des Quellcodes sind, finden Sie unter [Beschreibung wiederverwendbarer Komponenten](/help/forms/using/description-reusable-components.md). Verwenden Sie für diese Anpassungen das Entwicklungspaket .
 
 ### Wiederverwendbare Komponenten {#reusable-components}
 
@@ -181,17 +181,17 @@ Weitere grundlegende Informationen finden Sie unter der [Beschreibung wiederverw
 
 Das Paket enthält den Quellcode von AEM Forms Workspace. Das Paket ist verfügbar unter `[LC root]\sdk\html-workspace\adobe-lc-workspace-src.zip`.
 
-Es dient vor allem für Anpassungen, denn es bietet Funktionen um Folgendes zu generieren:
+Sie ist in erster Linie für Anpassungen vorgesehen, da sie folgende Funktionen bietet:
 
 * CRX-Pakete für Ship-, Debug- und Dev-Profile (siehe unten unter [CRX-Pakete](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)).
-* Minimierte Version des benutzerspezifischen Codes (für Semantikänderungen).
+* Minimierte Version des benutzerdefinierten Codes (für semantische Änderungen).
 
 #### WS-Inhalt {#ws-content}
 
 * client-pkg:
 
-   * src – Enthält die Artefakte, die erforderlich sind, um CRX-Knotenpunkte zu erstellen.
-   * pom.xml – Das Skript zum Erstellen von Bereitstellungspaketen für verschiedene Profile WS-Deploy Package
+   * src - Enthält Artefakte, die zum Erstellen von CRX-Knoten erforderlich sind.
+   * pom.xml - Skript zum Erstellen von Bereitstellungspaketen für verschiedene Profile WS-Bereitstellungspaket
 
 * client-html:
 
@@ -199,38 +199,38 @@ Es dient vor allem für Anpassungen, denn es bietet Funktionen um Folgendes zu g
    * src/main/webapp -
 
       * css - Enthält Stylesheets für AEM Forms Workspace.
-      * images - Enthält die Bilder, die in AEM Forms Workspace verwendet werden.
+      * images - Enthält Bilder, die in AEM Forms Workspace verwendet werden.
       * js:
 
-         * libs – Enthält alle Drittanbieterbibliotheken, die in AEM Forms Workspace verwendet werden.
-         * licenses – Enthält Lizenzen für HTML- und JS-Dateien sowie den Code, der als Präfix für diese Lizenzen dient und sie den entsprechenden Quelldateien zuordnet.
+         * libs - Enthält alle Bibliotheken von Drittanbietern, die in AEM Forms Workspace verwendet werden.
+         * licenses - Enthält Lizenzen für HTML- und JS-Dateien und -Code, um diese Lizenzen den jeweiligen Quelldateien vorzustellen.
          * minifier – Wird für die Kombination, Minimierung und Verschleierung des benutzerdefinierten JavaScript-Codes verwendet.
          * resourcejs_optimizer – Wird für die Kombination, Minimierung und Verschleierung der JavaScript-Quelle verwendet.
          * resource_generator – Wird für die Generierung von register.js und modelcontrollerpath.js verwendet.
          * runtime:
 
-            * initializer - Enthält initializer.js, das zum Initialisieren der Backbone-Ansichten und -Modelle in AEM Forms Workspace verwendet wird.
-            * models - Enthält Backbone-Modelle aller Komponenten in AEM Forms Workspace.
+            * initializer - Enthält initializer.js , das zum Initialisieren von Backbone-Ansichten und -Modellen verwendet wird, die in AEM Forms Workspace verwendet werden.
+            * models - Enthält Backbone-Modelle aller Komponenten, die in AEM Forms Workspace vorhanden sind.
             * routes – Enthält JavaScript-Dateien und HTML-Dateien, die den Startvorgang, Aufgaben, Verfolgung und Einstellungen in AEM Forms Workspace laden.
-            * services - Enthält in AEM Forms Workspace verwendete service.js. Alle Serveraufrufe erfolge über service.js.
-            * templates - Enthält alle Vorlagen, d. h. HTML-Dateien aller Ansichten in AEM Forms Workspace.
-            * util - Enthält alle in AEM Forms Workspace verwendeten Dienstprogrammdateien (javascript).
+            * services - Enthält in AEM Forms Workspace verwendete service.js. Alle Server-Aufrufe erfolgen über service.js.
+            * templates - Enthält alle Vorlagen, d. h. HTML-Dateien aller Ansichten in AEM Forms Workspace.
+            * util - Enthält alle in AEM Forms Workspace verwendeten Dienstprogrammdateien (JavaScript).
             * views - Enthält Backbone-Ansichten aller Komponenten in AEM Forms Workspace.
+
          * main.js
          * router.js
+
       * libs/ws: pdf.html und pluginPing.pdf werden zum Laden von PDF-Formularen in AEM Forms Workspace verwendet. WSNextAdapter.swf wird verwendet, um SWF-Formulare und -Guides in AEM Forms Workspace zu laden.
       * locales:
 
          * de-DE - Enthält translation.json für Deutsch.
-         * en-US - Enthält translation.json für English.
+         * en-US - Enthält translation.json für Englisch.
          * fr-FR - Enthält translation.json für Französisch.
          * ja-JP - Enthält translation.json für Japanisch.
-         * html.jsp - Enthält Code, um aktuelles Browser-Gebietsschema herauszufinden.
+         * html.jsp - Enthält Code, um das aktuelle Browsergebietsschema zu ermitteln.
+
       * html.jsp
       * GET.jsp
-
-
-
 
 ### CRX-Paket {#crx-package}
 
@@ -240,20 +240,20 @@ Dieses Paket kann mithilfe der drei folgenden Profile erstellt werden, die nachs
 
 | **Profil** | **Beschreibung** | **Nutzung** |
 |---|---|---|
-| Ship-Profil | Dieses Profil erstellt ein CRX-Paket der kleinstmöglichen Größe mithilfe der Minimierung. Dieses Paket ist das effizienteste. Alle JavaScript™-Dateien werden zusammengefasst und zu einer JS-Datei minimiert. | Verwenden Sie dieses Profil, wenn keine weiteren Semantikänderungen in den JS-Dateien erforderlich sind. |
-| Debug-Profil | Dieses Profil erstellt ein mitteleffizientes CRX-Paket. Die Größe des Pakets ist etwas größer als die Größe eines Pakets, das mit dem Ship-Profil erstellt wird. Dieses Paket fasst die meisten JavaScript-Dateien in einer JS-Datei zusammen. | Verwenden Sie dieses Profil für das Debuggen. |
-| Dev-Profil | Dieses Profil erstellt ein CRX-Paket der größtmöglichen Größe. Alle JavaScript-Dateien sind separat verfügbar, wie im SDK-Paket. | Verwenden Sie dieses Profil, wenn Semantikänderungen notwendig sin. |
+| Ship-Profil | Dieses Profil erstellt ein CRX-Paket der kleinstmöglichen Größe mithilfe der Minimierung. Dieses Paket ist das effizienteste. Alle JavaScript™-Dateien werden kombiniert und in eine JS-Datei minimiert. | Verwenden Sie dieses Profil, wenn keine weiteren semantischen Änderungen in JS-Dateien erforderlich sind. |
+| Debug-Profil | Dieses Profil erstellt ein mäßig effizientes CRX-Paket. Die Größe des Pakets ist etwas größer als das mit dem Ship-Profil erstellte Paket. Dieses Paket enthält die meisten JavaScript-Dateien, die zu einer JS-Datei zusammengefasst sind. | Verwenden Sie dieses Profil zum Debugging. |
+| Entwicklungsprofil | Dieses Profil erstellt ein CRX-Paket der größtmöglichen Größe. Alle JavaScript-Dateien sind separat verfügbar, da sie sich im SDK-Paket befinden. | Verwenden Sie dieses Profil, wenn Sie semantische Änderungen einbinden. |
 
 #### Ship-Profil {#ship-profile}
 
 #### Befehl {#command}
 
-* mvn clean -P Ship install auf client-pkg von Source-Paket an Client gesendet.
+* mvn clean -P Ship install auf client-pkg Ordner des Quellpakets, das an den Client geliefert wurde.
 * Befehlsausführung von Ship-Profil funktioniert nur auf einer 64-Bit-JVM.
 
 #### WS-Inhalt {#ws-content-1}
 
-* css - Enthält style.css, ie.css und jqueri-ui.css.
+* css - Enthält style.css, ie.css und jquery-ui.css.
 * images - Enthält alle Bilder.
 * js:
 
@@ -261,13 +261,13 @@ Dieses Paket kann mithilfe der drei folgenden Profile erstellt werden, die nachs
 
       * require - Enthält require.js.
       * jqueryui - Enthält jquery.ui.datepicker.ja.js.
+
    * runtime:
 
       * templates - Enthält alle Vorlagen, d. h. HTML-Dateien aller Komponenten in AEM Forms Workspace.
+
    * main.js (kombiniert, minimiert und verschleiert).
    * registry.js
-
-
 
 * libs:
 
@@ -277,12 +277,12 @@ Dieses Paket kann mithilfe der drei folgenden Profile erstellt werden, die nachs
 * locales:
 
    * de-DE - Enthält translation.json für Deutsch.
-   * en-US - Enthält translation.json für English.
+   * en-US - Enthält translation.json für Englisch.
    * fr-FR - Enthält translation.json für Französisch.
    * ja-JP - Enthält translation.json für Japanisch.
-   * html.jsp - Enthält Code, um aktuelles Browser-Gebietsschema herauszufinden.
+   * html.jsp - Enthält Code, um das aktuelle Browsergebietsschema zu ermitteln.
 
-* Index - Enthält .content.xml.
+* Index - Enthält .content.xml
 * profile - Enthält offline.jsp.
 * GET.jsp
 * html.jsp
@@ -293,8 +293,8 @@ Dieses Paket kann mithilfe der drei folgenden Profile erstellt werden, die nachs
 
 #### Befehl {#command-1}
 
-* mvn clean -P Debug-Installation auf Client-Paket
-* Befehlsausführung von Debug-Profil funktioniert nur auf 64-Bit-JVM.
+* mvn clean -P Debug install on client-pkg
+* Die Befehlsausführung des Debug-Profils funktioniert nur auf 64-Bit-JVM.
 
 #### WS-Inhalt {#ws-content-2}
 
@@ -306,13 +306,13 @@ Dieses Paket kann mithilfe der drei folgenden Profile erstellt werden, die nachs
 
       * require - Enthält require.js.
       * jqueryui - Enthält jquery.ui.datepicker.ja.js.
+
    * runtime:
 
       * templates - Enthält alle Vorlagen, d. h. HTML-Dateien aller Komponenten in AEM Forms Workspace.
+
    * main.js (kombiniert).
    * registry.js
-
-
 
 * libs:
 
@@ -322,23 +322,23 @@ Dieses Paket kann mithilfe der drei folgenden Profile erstellt werden, die nachs
 * locales:
 
    * de-DE - Enthält translation.json für Deutsch.
-   * en-US - Enthält translation.json für English.
+   * en-US - Enthält translation.json für Englisch.
    * fr-FR - Enthält translation.json für Französisch.
    * ja-JP - Enthält translation.json für Japanisch.
-   * html.jsp - Enthält Code, um aktuelles Browser-Gebietsschema herauszufinden.
+   * html.jsp - Enthält Code, um das aktuelle Browsergebietsschema zu ermitteln.
 
-* Index - Enthält .content.xml.
+* Index - Enthält .content.xml
 * profile - Enthält offline.jsp.
 * GET.jsp
 * html.jsp
 * content.xml
 * _rep_policy.xml
 
-#### Dev-Profil {#dev-profile}
+#### Entwicklungsprofil {#dev-profile}
 
 #### Befehl {#command-2}
 
-mvn clean -P Dev-Installation auf Client-Paket
+mvn clean -P Dev install on client-pkg
 
 #### WS-Inhalt {#ws-content-3}
 
@@ -356,12 +356,12 @@ mvn clean -P Dev-Installation auf Client-Paket
       * routes – Enthält JavaScript-Dateien und HTML-Dateien, die den Startvorgang, Aufgaben, Verfolgung und Einstellungen in AEM Forms Workspace laden.
       * services - Enthält die in AEM Forms Workspace verwendete service.js.
       * templates - Enthält alle Vorlagen, d. h. HTML-Dateien aller Komponenten in AEM Forms Workspace.
-      * util - Enthält alle in AEM Forms Workspace verwendeten Dienstprogrammdateien (javascript).
+      * util - Enthält alle in AEM Forms Workspace verwendeten Dienstprogrammdateien (JavaScript).
       * views - Enthält Ansichten aller Komponenten in AEM Forms Workspace.
+
    * main.js
    * registry.js
    * router.js
-
 
 * libs:
 
@@ -371,12 +371,12 @@ mvn clean -P Dev-Installation auf Client-Paket
 * locales:
 
    * de-DE - Enthält translation.json für Deutsch.
-   * en-US - Enthält translation.json für English.
+   * en-US - Enthält translation.json für Englisch.
    * fr-FR - Enthält translation.json für Französisch.
    * ja-JP - Enthält translation.json für Japanisch.
-   * html.jsp - Enthält Code, um aktuelles Browser-Gebietsschema herauszufinden.
+   * html.jsp - Enthält Code, um das aktuelle Browsergebietsschema zu ermitteln.
 
-* Index - Enthält .content.xml.
+* Index - Enthält .content.xml
 * profile - Enthält offline.jsp.
 * GET.jsp
 * html.jsp

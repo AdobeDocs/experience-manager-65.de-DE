@@ -11,9 +11,9 @@ discoiquuid: 5855d21b-340c-4139-aabe-c3a534cedb98
 docset: aem65
 feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1310'
 ht-degree: 78%
 
 ---
@@ -25,7 +25,7 @@ Die Benutzeroberfläche für das Erstellen von [interaktiver Kommunikation](/hel
 * WYSIWYG Drag-and-Drop-Dokumenteditor
 * Integriertes Repository für Assets – die Assets, die auf den Server hochgeladen und dort erstellt wurden, sind im Asset-Browser der Authoring-Oberfläche der interaktiven Kommunikation verfügbar.
 
-Wenn Sie eine [neue interaktive Kommunikation](../../forms/using/create-interactive-communication.md) erstellen oder eine vorhandene bearbeiten, verwenden Sie die folgenden Elemente der Benutzeroberfläche:
+Wenn Sie [Erstellen oder Bearbeiten einer vorhandenen interaktiven Kommunikation](../../forms/using/create-interactive-communication.md)verwenden Sie die folgenden Elemente der Benutzeroberfläche:
 
 * [Randleiste](#sidebar)
 * [Seitensymbolleiste](#page-toolbar)
@@ -96,7 +96,7 @@ Die wichtigsten Punkte beim Arbeiten mit interaktiven Kommunikationskomponenten 
 
 ![Komponenten-Symbolleistenbeschriftungen](do-not-localize/component_toolbar_labels_new.png)
 
-Wenn Sie eine Komponente auswählen, wird eine Symbolleiste angezeigt, über die Sie mit ihr arbeiten können. Sie erhalten Optionen zum Ausschneiden, Einfügen, Verschieben und Angeben von Eigenschaften der Komponenten. Ihre Optionen sind:
+Wenn Sie eine Komponente auswählen, wird eine Symbolleiste angezeigt, über die Sie mit ihr arbeiten können. Sie erhalten Optionen zum Ausschneiden, Einfügen, Verschieben und Festlegen von Eigenschaften der Komponenten. Ihre Optionen sind:
 
 A. **Konfigurieren**: Wenn Sie auf **Konfigurieren** tippen, werden in der Seitenleiste Komponenteneigenschaften sichtbar.
 

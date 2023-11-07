@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3310'
-ht-degree: 70%
+source-wordcount: '3306'
+ht-degree: 74%
 
 ---
 
@@ -80,7 +80,7 @@ Sling ist *inhaltzentriert*. Dies bedeutet, dass sich die Verarbeitung auf den I
 
 Aufgrund der inhaltsorientierten Philosophie implementiert Sling einen REST-orientierten Server und bietet damit ein neues Konzept für Webanwendungs-Frameworks. Die Vorteile:
 
-* RESTful, nicht nur auf der Oberfläche; Ressourcen und Darstellungen werden korrekt innerhalb des Servers modelliert
+* RESTful, nicht nur an der Oberfläche; Ressourcen und Darstellungen werden innerhalb des Servers korrekt modelliert
 * entfernt ein oder mehrere Datenmodelle
 
    * zuvor war Folgendes erforderlich: URL-Struktur, Geschäftsobjekte, DB-Schema;
@@ -96,9 +96,9 @@ Wenn Sie die folgende URL analysieren:
 https://myhost/tools/spy.printable.a4.html/a/b?x=12
 ```
 
-Sie können sie in ihre zusammengesetzten Teile aufschlüsseln:
+Sie lässt sich in ihre Bestandteile zerlegen:
 
-| protocol | host | content path | Selektoren | Erweiterung |  | Suffix |  | params |
+| protocol | host | content path | selectors | Erweiterung |  | Suffix |  | params |
 |---|---|---|---|---|---|---|---|---|
 | https:// | Myhost  | tools/spy | .printable.a4. | html | / | a/b | ? | x=12 |
 
@@ -106,7 +106,7 @@ Sie können sie in ihre zusammengesetzten Teile aufschlüsseln:
 
 **host** – Name der Website.
 
-**content path** – Pfad, der den Inhalt angibt, der gerendert werden soll. Wird mit der -Erweiterung verwendet. In diesem Beispiel übersetzen sie in `tools/spy.html`.
+**Inhaltspfad** Pfad, der den zu rendernden Inhalt angibt. Wird mit der -Erweiterung verwendet. In diesem Beispiel übersetzen sie in `tools/spy.html`.
 
 **Selektoren** Wird für alternative Methoden zum Rendern des Inhalts verwendet, in diesem Beispiel eine druckerfreundliche Version im A4-Format.
 
@@ -183,7 +183,7 @@ Unter Verwendung des obigen Beispiels, wenn der `sling:resourceType` `hr/jobs` l
 
   Beispiel: `../content/corporate/jobs/developer.pdf`
 
-  Das Skript ist `/apps/hr/jobs/jobs.pdf.esp`; das Suffix wird dem Skriptnamen hinzugefügt.
+  Das Skript ist `/apps/hr/jobs/jobs.pdf.esp`. Das Suffix wird zum Skriptnamen hinzugefügt.
 
 * URLs mit Selektoren
 
@@ -191,7 +191,7 @@ Unter Verwendung des obigen Beispiels, wenn der `sling:resourceType` `hr/jobs` l
 
   Wenn Sie sich eine druckerfreundliche Version ansehen, in der der Selektor *print*, wie in `../content/corporate/jobs/developer.print.html`
 
-  Das Skript ist `/apps/hr/jobs/jobs.print.esp`; der Selektor wird dem Skriptnamen hinzugefügt.
+  Das Skript ist `/apps/hr/jobs/jobs.print.esp`. Der Selektor wird zum Skriptnamen hinzugefügt.
 
 * Wenn kein sling:resourceType definiert ist, dann:
 
@@ -231,7 +231,7 @@ Angenommen, Sie haben die folgende Liste von Skripten am richtigen Speicherort:
 
 Dann wäre die Reihenfolge der Bevorzugung (8) - (7) - (6) - (5) - (4) - (3) - (2) - (1).
 
-Zusätzlich zu den Ressourcentypen (hauptsächlich definiert durch die `sling:resourceType` -Eigenschaft), gibt es auch den Supertyp der Ressource. Dies wird durch die Variable `sling:resourceSuperType` -Eigenschaft. Diese Supertypen werden ebenfalls berücksichtigt, wenn Sie versuchen, ein Skript zu finden. Der Vorteil von Ressourcensupertypen besteht darin, dass sie eine Hierarchie von Ressourcen bilden können, wobei der Standard-Ressourcentyp `sling/servlet/default` (von den Standard-Servlets verwendet) effektiv der Stamm ist.
+Zusätzlich zu den Ressourcentypen (primär definiert durch die Eigenschaft `sling:resourceType`) gibt es auch den Supertyp der Ressource. Dies wird durch die Variable `sling:resourceSuperType` -Eigenschaft. Diese Supertypen werden ebenfalls berücksichtigt, wenn Sie versuchen, ein Skript zu finden. Der Vorteil von Ressourcensupertypen besteht darin, dass sie eine Hierarchie von Ressourcen bilden können, wobei der Standard-Ressourcentyp `sling/servlet/default` (von den Standard-Servlets verwendet) effektiv der Stamm ist.
 
 Der Ressourcensupertyp einer Ressource kann auf zwei Arten definiert werden:
 
@@ -277,7 +277,7 @@ Wenn Sie die Repräsentation (das Skript) direkt aufrufen, blenden Sie die Resso
 
 * automatische Handhabung von HTTP-Methoden außer GET, einschließlich:
 
-   * POST, PUT, DELETE, das mit einer standardmäßigen Sling-Implementierung verarbeitet wird
+   * POST, PUT, DELETE, die mit einer Sling-Standardimplementierung behandelt werden
    * Das `POST.jsp`-Skript in Ihrem sling:resourceType-Speicherort
 
 * Ihre Code-Architektur ist nicht mehr so sauber oder so klar strukturiert, wie sie es sein sollte. Dies ist besonders wichtig für die Entwicklung in großem Maßstab.
@@ -307,7 +307,7 @@ OSGi definiert eine Architektur für die Entwicklung und Bereitstellung modulare
 
 Diese Services und Verträge bieten eine Architektur, die es einzelnen Elementen ermöglicht, sich dynamisch für die Zusammenarbeit zu entdecken.
 
-Ein OSGi-Framework bietet Ihnen dann dynamisches Laden/Entladen, Konfiguration und Steuerung dieser Bundles - ohne dass ein Neustart erforderlich ist.
+Ein OSGi-Framework bietet Ihnen dann dynamisches Laden/Entladen, Konfiguration und Steuerung dieser Bundles, ohne dass ein Neustart erforderlich ist.
 
 >[!NOTE]
 >
@@ -315,7 +315,7 @@ Ein OSGi-Framework bietet Ihnen dann dynamisches Laden/Entladen, Konfiguration u
 >
 >Speziell die Seite mit grundlegenden Informationen beinhaltet eine Sammlung von Präsentationen und Tutorials.
 
-Mit dieser Architektur können Sie Sling mit anwendungsspezifischen Modulen erweitern. Sling, und daher CQ5, verwendet die [Apache Felix](https://felix.apache.org/documentation/index.html)-Implementierung von OSGI (Open Services Gateway Initiative) und basiert auf der OSGi Service Platform Release 4 Version 4.2. Beides sind Sammlungen von OSGi-Bundles, die in einem OSGi-Framework ausgeführt werden.
+Diese Architektur ermöglicht es Ihnen, Sling um anwendungsspezifische Module zu erweitern. Sling, und daher CQ5, verwendet die [Apache Felix](https://felix.apache.org/documentation/index.html)-Implementierung von OSGI (Open Services Gateway Initiative) und basiert auf der OSGi Service Platform Release 4 Version 4.2. Beides sind Sammlungen von OSGi-Bundles, die in einem OSGi-Framework ausgeführt werden.
 
 Auf diese Weise können Sie die folgenden Aktionen für beliebige Pakete innerhalb Ihrer Installation durchführen:
 
@@ -335,7 +335,7 @@ Folgendes ist für die Entwicklung von Interesse:
 
 **Element** Ein Element ist entweder ein Knoten oder eine Eigenschaft.
 
-Detaillierte Informationen zum Bearbeiten von Item-Objekten finden Sie im Abschnitt [Java™-Dokumente](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) der Schnittstelle javax.jcr.Item
+Detaillierte Informationen zum Bearbeiten von Item-Objekten finden Sie unter [Java™-Dokumente](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) der Schnittstelle javax.jcr.Item
 
 **Knoten (und ihre Eigenschaften)** Knoten und ihre Eigenschaften sind in der JCR API 2.0-Spezifikation (JSR 283) definiert. Sie speichern Inhalte, Objektdefinitionen, Rendering-Skripte und andere Daten.
 
@@ -351,7 +351,7 @@ Um beispielsweise die Eigenschaften des aktuellen Knotens abzurufen, können Sie
 
 Der currentNode ist das aktuelle Knotenobjekt.
 
-Weitere Informationen zum Bearbeiten von Knotenobjekten finden Sie im Abschnitt [Java™-Dokumente](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
+Weitere Informationen zum Bearbeiten von Knotenobjekten finden Sie unter [Java™-Dokumente](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 **Widget** In AEM werden sämtliche Benutzereingaben von Widgets verwaltet. Diese werden häufig verwendet, um die Bearbeitung eines Inhaltselements zu steuern.
 
@@ -390,7 +390,7 @@ Um beispielsweise den Namen der aktuellen Seite abzurufen, können Sie den folge
 
 S`tring pageName = currentPage.getName();`
 
-TcurrentPage ist das aktuelle Seitenobjekt. Weitere Informationen zum Bearbeiten von Seitenobjekten finden Sie im Abschnitt [Java™-Dokumente](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
+TcurrentPage ist das aktuelle Seitenobjekt. Weitere Informationen zum Bearbeiten von Seitenobjekten finden Sie unter [Java™-Dokumente](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Seiten-Manager** Der Seiten-Manager ist eine Schnittstelle, die Methoden für Vorgänge auf Seitenebene bereitstellt.
 
@@ -398,7 +398,7 @@ Um beispielsweise die übergeordnete Seite einer Ressource abzurufen, können Si
 
 Page myPage = pageManager.getContainingPage(myResource);
 
-pageManager ist das Seitenmanagerobjekt und myResource ein Ressourcenobjekt. Weitere Informationen zu den vom Seitenmanager bereitgestellten Methoden finden Sie im Abschnitt [Java™-Dokumente](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
+pageManager ist das Seitenmanagerobjekt und myResource ein Ressourcenobjekt. Weitere Informationen zu den vom Seitenmanager bereitgestellten Methoden finden Sie unter [Java™-Dokumente](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Struktur innerhalb des Repositorys {#structure-within-the-repository}
 
@@ -412,7 +412,7 @@ Die folgende Liste gibt einen Überblick über die Struktur, die Sie im Reposito
 
 >[!CAUTION]
 >
->Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen. Für Konfiguration und andere Änderungen kopieren Sie das Element aus `/libs` nach `/apps` und nehmen Änderungen in `/apps`.
+>Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen. Für die Konfiguration und andere Änderungen kopieren Sie das Element von `/libs` nach `/apps` und nehmen Sie alle Änderungen innerhalb von `/apps` vor.
 
 * `/apps`
 

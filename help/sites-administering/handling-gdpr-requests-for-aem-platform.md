@@ -3,10 +3,10 @@ title: Umgang mit DSGVO-Anfragen für die Adobe Experience Manager Foundation
 description: Umgang mit DSGVO-Anfragen für die Adobe Experience Manager Foundation
 contentOwner: sarchiz
 exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 66%
+source-wordcount: '438'
+ht-degree: 65%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 66%
 
 >[!IMPORTANT]
 >
->Die DSGVO dient in den folgenden Abschnitten als Beispiel, die jeweiligen Informationen gelten jedoch für alle Datenschutzvorschriften und -bestimmungen. wie DSGVO, CCPA usw.
+>Die DSGVO wird in den folgenden Abschnitten als Beispiel verwendet, die betroffenen Details gelten jedoch für alle Datenschutz- und Datenschutzbestimmungen wie DSGVO, CCPA usw.
 
 ## AEM Foundation – DSGVO-Unterstützung {#aem-foundation-gdpr-support}
 
@@ -38,7 +38,7 @@ Auf AEM Foundation-Ebene werden personenbezogene Daten im Benutzerprofil gespeic
 
 ### HTTP-API {#http-api}
 
-Wie bereits erwähnt, stellt Adobe APIs für den Zugriff auf Benutzerdaten bereit, um die Automatisierung zu erleichtern. Es stehen verschiedene Arten von APIs zur Verfügung:
+Wie bereits ausgeführt, bietet Adobe APIs, mit denen der Zugriff auf Benutzerdaten automatisiert werden kann. Es stehen verschiedene Arten von APIs zur Verfügung:
 
 **UserProperties-API**
 
@@ -72,7 +72,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 ### Deaktivieren von Benutzern {#disable-user}
 
 1. Öffnen Sie die Konsole für die Benutzerverwaltung und suchen Sie nach dem entsprechenden Benutzer, wie oben beschrieben.
-1. Bewegen Sie den Mauszeiger über den Benutzer und klicken Sie auf das Auswahlsymbol. Das Profil wird grau dargestellt und zeigt an, dass es ausgewählt ist.
+1. Bewegen Sie den Mauszeiger über den Benutzer und klicken Sie auf das Auswahlsymbol. Das Profil wird grau, was anzeigt, dass es ausgewählt wurde.
 
 1. Klicken Sie auf die Schaltfläche Deaktivieren im oberen Menü, um den Benutzer zu deaktivieren:
 

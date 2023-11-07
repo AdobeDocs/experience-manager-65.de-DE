@@ -8,10 +8,10 @@ content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6177'
-ht-degree: 39%
+source-wordcount: '6176'
+ht-degree: 38%
 
 ---
 
@@ -188,7 +188,7 @@ Aktivieren Sie diese Optionen, um festzulegen, wie Inhalte angezeigt werden, wie
 
 **Seiten-Layout**: Wählen Sie die Art des Seiten-Layouts für das PDF-Dokument.
 
-**Vergrößerung**: Wählen Sie die voreingestellte Vergrößerung für die Ansicht beim Öffnen des PDF-Dokuments oder wählen Sie einen benutzerdefinierten Wert. Das Übernehmen der Standardeinstellung bedeutet, dass die Standardvergrößerung von Acrobat verwendet werden soll.
+**Vergrößerung**: Wählen Sie die voreingestellte Vergrößerung für die Ansicht beim Öffnen des PDF-Dokuments oder wählen Sie einen benutzerdefinierten Wert. Wenn Sie eine Standardeinstellung auswählen, wird die standardmäßige Acrobat-Vergrößerung verwendet.
 
 **Auf folgender Seite öffnen**: Geben Sie die Nummer der Seite an, auf der das PDF-Dokument geöffnet werden soll.
 

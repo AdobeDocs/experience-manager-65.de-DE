@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Collaboration
 exl-id: 130cec6d-1cdd-4304-94bb-65e6bb573e55
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '950'
-ht-degree: 64%
+ht-degree: 60%
 
 ---
 
@@ -39,7 +39,7 @@ Das folgende Diagramm bietet einen Überblick über die Integration.
 
 Die Integration umfasst folgende Elemente:
 
-* **[!DNL Experience Manager Assets]** im Unternehmensnetzwerk (Managed Services oder On-Premise) bereitgestellt werden: Die Ordnerfreigabe wird hier initiiert.
+* **[!DNL Experience Manager Assets]** im Unternehmensnetzwerk bereitgestellt (Managed Services oder On-Premise): Hier wird die Ordnerfreigabe initiiert.
 * **[!DNL Adobe Experience Cloud Assets]-Hauptdienst**: Vermittler zwischen [!DNL Experience Manager]- und [!DNL Creative Cloud]-Speicherdiensten. Ein Administrator einer Organisation, die die Integration verwendet, muss eine Vertrauensbeziehung zwischen der Experience Cloud-Organisation und der [!DNL Assets] Implementierung. Um für zusätzliche Sicherheit zu sorgen, wird [eine Liste von zugelassenen Creative Cloud-Mitwirkenden definiert](https://experienceleague.adobe.com/docs/core-services/interface/services/assets/t-admin-add-cc-user.html), für die Benutzende von [!DNL Assets] Ordner freigeben können.
 
 * **[!DNL Creative Cloud]Assets Web-Services** (Web-Benutzeroberfläche für Speicher und [!DNL Creative Cloud]-Dateien): Hier können bestimmte Benutzende der Creative Cloud-App, für die ein [!DNL Assets]-Ordner freigegeben wurde, eine Einladung annehmen und den Ordner in ihrem Speicherort im Creative Cloud-Konto sehen.
@@ -55,7 +55,7 @@ Die Integration umfasst folgende Elemente:
 
 * **Platzbeschränkungen:** Größe und Volumen der ausgetauschten Dateien sind durch die spezifischen [Creative Cloud Assets-Kontingent](https://helpx.adobe.com/de/creative-cloud/kb/file-storage-quota.html) für kreative Benutzer (abhängig von der Abonnementebene) und eine Beschränkung der maximalen Dateigröße von 5 GB. Der Speicherplatz wird auch durch das Asset-Kontingent begrenzt, das das Unternehmen in Adobe Experience Cloud Assets Core Service hat.
 
-* **Raumbedarf:** Die Dateien in freigegebenen Ordnern müssen auch physisch in [!DNL Experience Manager] und dann [!DNL Creative Cloud] -Konto mit einer zwischengespeicherten Kopie in [!DNL Experience Cloud Assets] Hauptdienst.
+* **Weltraumanforderungen:** Die Dateien in freigegebenen Ordnern müssen auch physisch in [!DNL Experience Manager] und dann in [!DNL Creative Cloud] -Konto mit einer zwischengespeicherten Kopie in [!DNL Experience Cloud Assets] Hauptdienst.
 * **Netzwerke und Bandbreite:** Die Dateien in freigegebenen Ordnern und alle Updates müssen über das Netzwerk zwischen den Systemen übertragen werden. Stellen Sie sicher, dass nur relevante Dateien und Updates freigegeben sind.
 * **Ordnerart**: Die Freigabe eines [!DNL Assets]-Ordners vom Typ `sling:OrderedFolder` wird bei der Freigabe in [!DNL Adobe Experience Cloud] nicht unterstützt. Wenn Sie einen Ordner freigeben möchten, wählen Sie beim Erstellen in [!DNL Assets] nicht die Option [!UICONTROL Geordnet] aus.
 
@@ -66,7 +66,7 @@ Best Practices für die Verwendung der [!DNL Experience Manager] nach [!DNL Crea
 * **Überlegungen zum Volumen:** Die Ordnerfreigabe zwischen [!DNL Experience Manager] und [!DNL Creative Cloud] sollte für eine kleinere Anzahl von Dateien verwendet werden, z. B. für eine bestimmte Kampagne oder Aktivität. Greifen Sie für das Freigeben größerer Mengen von Assets, z. B. aller genehmigten Assets in der Organisation, besser auf andere Methoden (z. B. [!DNL Assets Brand Portal]) oder auf das [!DNL Experience Manager]-Desktop-Programm zurück.
 * **Vermeiden Sie die Freigabe tiefer Hierarchien:** Die Freigabe erfolgt rekursiv und lässt keine selektive Aufhebung der Freigabe zu. In der Regel sollten nur Ordner ohne Unterordner oder mit einer flachen Hierarchie (wie eine Unterordnerebene) für die Freigabe berücksichtigt werden.
 * **Separate Ordner für die Einwegfreigabe:** Für das Freigeben von endgültigen Assets aus [!DNL Assets] für [!DNL Creative Cloud]-Dateien und umgekehrt zum Freigeben von Assets für die kreative Bearbeitung aus [!DNL Creative Cloud]-Dateien für [!DNL Assets] sollten separate Ordner verwendet werden. In Verbindung mit einer sinnvollen Benennungskonvention für diese Ordner entsteht eine Arbeitsumgebung, die für Benutzende von [!DNL Assets] und [!DNL Creative Cloud] gleichermaßen verständlich ist.
-* **Vermeidung von laufenden Arbeiten in einem freigegebenen Ordner:** Freigegebene Ordner sollten nicht für laufende Arbeiten verwendet werden. Verwenden Sie einen separaten Ordner in Creative Cloud Files, um Arbeiten zu erledigen, die häufige Änderungen an der Datei erfordern.
+* **Vermeiden Sie WIP im freigegebenen Ordner:** Verwenden Sie keinen freigegebenen Ordner für laufende Arbeiten - verwenden Sie einen separaten Ordner in Creative Cloud-Dateien, um Arbeiten durchzuführen, die häufige Dateiänderungen erfordern.
 * **Beginn neuer Arbeit außerhalb eines freigegebenen Ordners:** Es empfiehlt sich, mit der Erstellung neuer Designs (kreativer Dateien) in einem separaten Ordner für laufende Prozesse in Creative Cloud Files zu beginnen. Sobald die Designs für Benutzende von [!DNL Assets] freigegeben werden können, sollten sie in den freigegebenen Ordner verschoben oder in diesem gespeichert werden.
 * **Vereinfachung der Freigabestruktur:** Überlegen Sie sich für eine besser verwaltbare Funktionsweise, die Freigabestruktur zu vereinfachen. Statt für alle kreativen Benutzer freizugeben, [!DNL Assets] -Ordner sollten nur für Teamvertreter wie Kreativdirektor oder Teammanager freigegeben werden. Auf diese Weise kann der Leiter des Kreativbereichs endgültige Assets erhalten, über die Arbeitsaufteilung entscheiden und dann die Designer in ihren eigenen Creative Cloud-Konten an den unfertigen Assets arbeiten lassen. Sie können die Creative Cloud-Zusammenarbeitsfunktionen verwenden, um die Arbeit zu koordinieren, und Assets, die für die Freigabe bereit sind, auswählen und wieder für [!DNL Assets] im Ordner für kreatives Arbeiten freigeben.
 

@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: ba518290-dd82-44dc-ae7c-c8152df89179
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 98%
+source-wordcount: '843'
+ht-degree: 93%
 
 ---
 
 # Integrieren mit Adobe Experience Cloud{#integrating-with-the-adobe-marketing-cloud}
 
-[Adobe Experience Cloud](https://business.adobe.com/de/products/marketing-cloud/main.html) enthält leistungsstarke Produkte zur Web-Analyse und Website-Optimierung, die umsetzbare Echtzeitdaten und Einblicke liefern, um erfolgreiche Online-Initiativen zu fördern. Es bietet eine integrierte und offene Plattform für die Optimierung Ihres Online-Business. Die Cloud besteht aus integrierten Anwendungen, mit denen Kundeneinblicke gesammelt und nutzbar gemacht werden können, um die Akquise, Konversion und Bindung von Kundinnen und Kunden sowie die Erstellung und Verteilung von Inhalten zu optimieren.
+[Adobe Experience Cloud](https://business.adobe.com/de/products/marketing-cloud/main.html) enthält leistungsstarke Produkte zur Web-Analyse und Website-Optimierung, die umsetzbare Echtzeitdaten und Einblicke liefern, um erfolgreiche Online-Initiativen zu fördern. Es bietet eine integrierte und offene Plattform für die Optimierung Ihres Online-Business. Die Cloud besteht aus integrierten Anwendungen, mit denen Kundeneinblicke gesammelt und freigesetzt werden können, um die Akquise, Konvertierung und Bindung von Kunden sowie die Erstellung und Verteilung von Inhalten zu optimieren.
 
 Mit Adobe Experience Manager (AEM) können Sie die nahtlose Integration mit folgenden Produkten von Adobe Experience Cloud durchführen:
 
@@ -37,7 +37,7 @@ Sie können Adobe Analytics verwenden, um Daten aus Ihren Sites zu analysieren.
 Durch die Integration mit Adobe Analytics haben Sie folgende Möglichkeiten:
 
 * Aktivieren von Analytics-Benutzer-Tracking
-* Zuweisen von Ausführungsmodi (z. B. Submit Client Context variables as conversion variables or traffic properties.) zu unterschiedlichen Report Suites
+* Ordnen Sie Ihre Ausführungsmodi (z. B. Autor, Veröffentlichung) verschiedenen Report Suites zu.
 * Übermitteln von Client-Kontextvariablen als Konversionsvariablen oder Traffic-Eigenschaften
 * Verwenden von vordefinierten Variablenzuweisungen
 * Konfigurieren von gesamten Site-Bereichen auf einmal
@@ -89,7 +89,7 @@ Die Audience Manager-Integration wurde in AEM 6.3 entfernt.
 
 <!-- Search&Promote is end of life as of September 1, 2022 ## Integrating with Search&Promote {#integrating-with-search-promote} -->
 
-<!-- Search&Promote is end of life as of September 1, 2022 Adobe Search&Promote enables marketers to optimizehow visitors browse, find, compare, and select relevant products and content on web and mobile sites. Businesses can easily promote priority items based on business objectives and visitor intent, as well as automate merchandising and promotions activity via KPI-based triggers or metrics. -->
+<!-- Search&Promote is end of life as of September 1, 2022 Adobe Search&Promote enables marketers to optimizehow visitors browse, find, compare, and select relevant products and content on web and mobile sites. Businesses can easily promote priority items based on business objectives and visitor intent, and automate merchandising and promotions activity via KPI-based triggers or metrics. -->
 
 <!-- Search&Promote is end of life as of September 1, 2022 Adobe Search&Promote is a reliable and scalable hosted site search application, capable of scaling to millions of pages or products, for heavily visited online businesses ranging from retail to news sites. It offers unprecedented levels of marketer control and metrics-based relevance. -->
 

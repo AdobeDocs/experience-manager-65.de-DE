@@ -11,10 +11,10 @@ discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 role: Admin
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '671'
-ht-degree: 34%
+ht-degree: 35%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 34%
 Sie können Ihre Formulare aus Ihrem lokalen Dateisystem in das CRX-Repository importieren, indem Sie sie in AEM Forms hochladen. Der Upload-Vorgang wird für die folgenden Asset-Typen unterstützt:
 
 * Formularvorlagen (XFA-Formulare)
-* PDF forms
+* PDF-Formulare
 * Dokument (einfache PDF-Dokumente)
 
 Sie können die unterstützten Assettypen einzeln oder als ZIP-Archiv hochladen. Sie können ein Asset des Typs `Resource` nur zusammen mit einem XFA-Formular in einem ZIP-Archiv hochladen.
@@ -81,7 +81,7 @@ Die Felder eines adaptiven Formulars, das auf eine XFA verweist, sind an die in 
 Das Entfernen einer Formularvorlage beschädigt das abhängige adaptive Formular oder die Formularvorlage. Ein solches adaptives Formular wird manchmal informell als schmutziges Formular bezeichnet. In der Benutzeroberfläche von AEM Forms finden Sie die schmutzigen Formulare auf zwei Arten:
 
 * Auf der Miniaturansicht des adaptiven Formulars in der Asset-Liste wird ein Warnsymbol angezeigt. Die folgende Meldung wird angezeigt, wenn Sie den Mauszeiger über das Warnsymbol bewegen.\
-  `Schema/Form Template for this adaptive form has been updated so please go to Authoring mode and rebase it with new version.`
+  `Schema/Form Template for this adaptive form has been updated so go to Authoring mode and rebase it with new version.`
 
 ![Warnung für ein unsynchronisiertes adaptives Formular nach dem Aktualisieren der zugehörigen XFA](assets/dirtyaf.png)
 

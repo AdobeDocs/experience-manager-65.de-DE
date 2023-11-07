@@ -2,10 +2,10 @@
 title: Grundlagen zum Authoring
 description: Erfahren Sie mehr über die Konzepte und Mechanismen sw Authoring für Ihr Headless-CMS mithilfe von Inhaltsfragmenten.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 98%
+source-wordcount: '1688'
+ht-degree: 95%
 
 ---
 
@@ -102,7 +102,7 @@ Dazu können Sie im Abschnitt **Dateien** der Assets-Konsole eine Reihe von Ordn
 
 ![Option „Ordner erstellen“](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Daraufhin wird ein Dialogfeld geöffnet, in dem Sie die Details eingeben und dann mit **Erstellen** bestätigen können:
+Ein Dialogfeld wird geöffnet, in das Sie die Details eingeben und dann mit **Erstellen**:
 
 ![Dialogfeld „Ordner erstellen“](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -201,7 +201,7 @@ Inhaltsfragmentmodelle sind für Ihre Inhaltsfragmente von entscheidender Bedeut
 
   Dies ist ziemlich offensichtlich, da es sich um eine Registerkarte im Editor handelt.
 
-  Inhaltsfragmente sind in AEM seit einigen Versionen verfügbar. Ursprünglich wurden sie für die „traditionelle“ Verwendung beim Authoring von Seiten zur Verfügung gestellt...und werden weiterhin in diesem Zusammenhang verwendet. Dazu kann es gehören, Assets (z. B. Bilder) zuzuordnen, die zwar nicht in das Fragment eingebettet sind, aber für den Autor beim Erstellen und Bearbeiten einer Seite verfügbar sein müssen.
+  Inhaltsfragmente sind in AEM seit einigen Versionen verfügbar. Ursprünglich wurden sie für die „traditionelle“ Verwendung beim Authoring von Seiten zur Verfügung gestellt...und werden weiterhin in diesem Zusammenhang verwendet. Dazu kann es gehören, Assets (z. B. Bilder) zuzuordnen, die zwar nicht in das Fragment eingebettet sind, aber für den Autor beim Erstellen einer Seite verfügbar sein müssen.
 
 * **Vorschau**
 
@@ -209,7 +209,7 @@ Inhaltsfragmentmodelle sind für Ihre Inhaltsfragmente von entscheidender Bedeut
 
 * **Seitenverweise aktualisieren**
 
-  Diese Aktion ist im Dropdown-Menü **...** (Ellipsen) verfügbar. Es ist für Headless-Autoren nicht interessant, da es sich auf die Seitenbearbeitung bezieht.
+  Diese Aktion ist im Dropdown-Menü **…** (Auslassungspunkte) verfügbar. Es ist für Headless-Autoren nicht interessant, da es sich auf die Seitenbearbeitung bezieht.
 
 ### Veröffentlichung {#publishing}
 

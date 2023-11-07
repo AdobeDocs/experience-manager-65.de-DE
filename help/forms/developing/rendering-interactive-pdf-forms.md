@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2483'
-ht-degree: 79%
+source-wordcount: '2478'
+ht-degree: 78%
 
 ---
 
@@ -76,7 +76,7 @@ Dieses Formular wird durch das Beispiel für einen Kreditantrag wiedergegeben `H
 
 ![ri_ri_confirm](assets/ri_ri_confirm.png)
 
-Die `HandleData` Java Servlet füllt dieses Formular vorab mit dem Vor- und Nachnamen des Benutzers sowie dem Betrag. Nachdem das Formular vorausgefüllt wurde, wird es an den Client-Webbrowser gesendet. (Siehe [Vorausfüllen von Forms mit flexiblen Layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md))
+Die `HandleData` Java Servlet füllt dieses Formular mit dem Vor- und Nachnamen des Benutzers und dem Betrag vorab aus. Nachdem das Formular vorausgefüllt wurde, wird es an den Client-Webbrowser gesendet. (Siehe [Vorausfüllen von Forms mit flexiblen Layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md))
 
 **Java-Servlets**
 
@@ -133,7 +133,7 @@ Um auf diesen Formularentwurf zuzugreifen, geben Sie `Applications/FormsApplicat
 >
 >Informationen zum Erstellen eines Forms-Programms mit Workbench finden Sie in der [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63_de).
 
-Der Pfad zu einer Ressource in einem Forms-Programm lautet:
+Der Pfad zu einer Ressource in einer Forms-Anwendung lautet:
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 

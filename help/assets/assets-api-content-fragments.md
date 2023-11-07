@@ -5,10 +5,10 @@ feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1956'
-ht-degree: 97%
+source-wordcount: '1959'
+ht-degree: 93%
 
 ---
 
@@ -204,7 +204,7 @@ Die Antwort enthält Paging-Informationen im Bereich `properties` der SIREN-Ausg
 
 Ordner dienen als Container für Assets und andere Ordner. Ihre Struktur entspricht den Inhalts-Repositorys von AEM.
 
-Die Assets-REST-API gewährt Zugriff auf die Eigenschaften eines Ordners, z. B. Name, Titel, usw. Assets werden als untergeordnete Entitäten von Ordnern und Unterordnern bereitgestellt.
+Die Assets-REST-API bietet Zugriff auf die Eigenschaften eines Ordners, z. B. seinen Namen, Titel usw. Assets werden als untergeordnete Entitäten von Ordnern und Unterordnern bereitgestellt.
 
 >[!NOTE]
 >
@@ -235,9 +235,9 @@ Inhaltsfragmente:
 
 #### Inhaltsmodelle und Inhaltsfragmente {#content-models-and-content-fragments}
 
-Derzeit werden die Modelle, die die Struktur eines Inhaltsfragments definieren, nicht über eine HTTP-API bereitgestellt. Daher benötigt der *Benutzer* (zumindest einige) Informationen über das Modell eines Fragments. Die meisten Informationen kann er jedoch aus der Payload ableiten. So sind z. B. Datentypen Teil der Definition.
+Derzeit werden die Modelle, die die Struktur eines Inhaltsfragments definieren, nicht über eine HTTP-API bereitgestellt. Daher *Verbraucher* muss über das Modell eines Fragments wissen (mindestens) - obwohl die meisten Informationen aus der Payload abgeleitet werden können, wie Datentypen usw. Teil der Definition.
 
-Zum Erstellen eines neuen Inhaltsfragments muss der Pfad (des internen Repositorys) für das Modell angegeben werden.
+Um ein Inhaltsfragment zu erstellen, muss der Pfad (internes Repository) des Modells angegeben werden.
 
 #### Zugehörige Inhalte {#associated-content}
 
@@ -307,7 +307,7 @@ Nutzung erfolgt über:
 
 Es gibt einige Beschränkungen:
 
-* **Inhaltsfragmentmodelle werden derzeit nicht unterstützt**: sie können weder gelesen noch erstellt werden. Zum Erstellen eines neuen oder Aktualisieren eines vorhandenen Inhaltsfragments müssen Entwickler den richtigen Pfad zum Inhaltsfragmentmodell kennen. Derzeit ist dies lediglich über die Verwaltungsoberfläche möglich.
+* **Inhaltsfragmentmodelle werden derzeit nicht unterstützt**: sie können weder gelesen noch erstellt werden. Um ein Inhaltsfragment zu erstellen oder ein vorhandenes zu aktualisieren, müssen Entwickler den richtigen Pfad zum Inhaltsfragmentmodell kennen. Derzeit ist dies lediglich über die Verwaltungsoberfläche möglich.
 * **Verweise werden ignoriert**. Zurzeit sind keine Überprüfungen für Verweise auf vorhandene Inhaltsfragmente verfügbar. Wenn Sie beispielsweise ein Inhaltsfragment löschen, treten möglicherweise Probleme auf einer Seite auf, die einen Verweis auf das gelöschte Inhaltsfragment enthält.
 * **JSON-Datentyp** Die REST-API-Ausgabe des *JSON-Datentyps* basiert derzeit auf *Zeichenfolgen*.
 

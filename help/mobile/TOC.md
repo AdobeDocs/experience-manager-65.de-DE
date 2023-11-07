@@ -7,10 +7,10 @@ breadcrumb-title: Mobilanleitung
 user-guide-description: Erstellen und verwalten Sie Inhalte für Mobile Apps.
 feature: Mobile
 role: User
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 12%
+source-wordcount: '330'
+ht-degree: 13%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 12%
    + [Bearbeiten von App-Metadaten](phonegap-editmetadata.md)
    + [App-Definitionen](phonegap-app-definitions.md)
    + [Erstellen und Verwalten von App-Inhalten](phonegap-manage-app-content.md)
-   + [Erstellen einer neuen AEM Mobile-App mit dem Assistenten zum Erstellen](phonegap-create-new-app.md)
+   + [Erstellen einer AEM Mobile-App mit dem Assistenten zum Erstellen](phonegap-create-new-app.md)
    + [Erstellen von mobilen Anwendungen](phonegap-authoring-apps.md)
    + [App-Kachel verwalten](phonegap-app-details-tile.md)
    + [Personalisierung von AEM Mobile-Inhalten](phonegap-aem-mobile-content-personalization.md)

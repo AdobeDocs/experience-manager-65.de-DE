@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2072'
-ht-degree: 21%
+source-wordcount: '2065'
+ht-degree: 18%
 
 ---
 
@@ -109,7 +109,7 @@ DB2 verfügt über integrierte Funktionen zum Sichern einer Datenbank in Tivoli 
 
 Verwenden Sie Snapshot-Sicherungen oder konfigurieren Sie Ihre Oracle-Datenbank so, dass sie im Archivprotokollmodus ausgeführt wird. (Siehe [Oracle Backup: Eine Einführung](https://www.databasedesign-resource.com/oracle-backup.md)) Weitere Informationen zum Sichern und Wiederherstellen Ihrer Oracle-Datenbank finden Sie auf diesen Sites:
 
-[Oracle Backup and Recovery: ](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html)Erläutert die Konzepte bei Sicherung und Wiederherstellung und beschreibt detailliert die gängigsten Verfahren zum Verwenden von Recovery Manager (RMAN) für die Sicherung, Wiederherstellung und Berichterstellung und bietet weitere Informationen zum Entwickeln einer Sicherungs- und Wiederherstellungsstrategie.
+[Oracle Backup und Wiederherstellung:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Erläutert die Konzepte der Sicherung und Wiederherstellung sowie die gängigsten Verfahren zur Verwendung von Recovery Manager (RMAN) für die Sicherung, Wiederherstellung und Berichterstellung und liefert detailliertere Informationen zur Planung einer Sicherungs- und Wiederherstellungsstrategie.
 
 [Oracle Database Backup and Recovery User&#39;s Guide:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) Enthält ausführliche Informationen zur RMAN-Architektur, zu Sicherungs- und Wiederherstellungskonzepten und -mechanismen, zu erweiterten Wiederherstellungsverfahren wie Point-in-Time-Recovery- und Datenbank-Flashback-Funktionen sowie zur Leistungsoptimierung bei Sicherung und Wiederherstellung. Es umfasst auch benutzerverwaltete Backup- und Recovery-Vorgänge, bei denen die Betriebssysteme des Hosts anstelle von RMAN verwendet werden. Dieses Volumen ist für die Sicherung und Wiederherstellung komplexerer Datenbankbereitstellungen und für erweiterte Wiederherstellungsszenarien unerlässlich.
 
@@ -163,7 +163,7 @@ Sichern Sie die folgenden Ordner im Stammordner für Inhalte:
 
 /backup-lucene-indexes
 
-Wenn der Ordner &quot;/backup-lucene-indexes&quot;nicht vorhanden ist, sichern Sie den Ordner &quot;/lucene-indexes&quot;, der sich ebenfalls im Stammordner für Inhalte befindet. Wenn der Ordner &quot;/backup-lucene-indexes&quot;vorhanden ist, sichern Sie den Ordner &quot;/lucene-indexes&quot;nicht, da dies zu Fehlern führen kann.
+Wenn der Ordner &quot;/backup-lucene-indexes&quot;nicht vorhanden ist, sichern Sie den Ordner &quot;/lucene-indexes&quot;, auch im Stammordner für Inhalte. Wenn der Ordner &quot;/backup-lucene-indexes&quot;vorhanden ist, sichern Sie den Ordner &quot;/lucene-indexes&quot;nicht, da dies zu Fehlern führen kann.
 
 ### Speicherort des Stammordners für Inhalte (Clusterumgebung) {#content-storage-root-location-clustered-environment}
 
@@ -183,7 +183,7 @@ Der Standardspeicherort für das Stammverzeichnis der Inhaltsablage ist `[GDS ro
 
 /backup-lucene-indexes
 
-Wenn der Ordner &quot;/backup-lucene-indexes&quot;nicht vorhanden ist, sichern Sie den Ordner &quot;/lucene-indexes&quot;, der sich ebenfalls im Stammordner für Inhalte befindet. Wenn der Ordner &quot;/backup-lucene-indexes&quot;vorhanden ist, sichern Sie den Ordner &quot;/lucene-indexes&quot;nicht, da dies zu Fehlern führen kann.
+Wenn der Ordner &quot;/backup-lucene-indexes&quot;nicht vorhanden ist, sichern Sie den Ordner &quot;/lucene-indexes&quot;, auch im Stammordner für Inhalte. Wenn der Ordner &quot;/backup-lucene-indexes&quot;vorhanden ist, sichern Sie den Ordner &quot;/lucene-indexes&quot;nicht, da dies zu Fehlern führen kann.
 
 Der Standardspeicherort für das Index-Stammverzeichnis ist `[aem-forms root]/lucene-indexes` auf jedem Knoten.
 
@@ -193,6 +193,6 @@ Wenn Sie zusätzliche Schriftarten in Ihrer AEM Forms-Umgebung installiert haben
 
 >[!NOTE]
 >
-Standardmäßig befinden sich die Adobe-Schriftarten, die zusammen mit AEM Forms installiert werden, im Ordner `[aem-forms root]/fonts`.
+Standardmäßig befinden sich die mit AEM Formularen installierten Adobe-Schriftarten im `[aem-forms root]/fonts` Verzeichnis.
 
 Wenn Sie das Betriebssystem auf dem Hostcomputer neu initialisieren und Schriftarten aus dem vorherigen Betriebssystem verwenden möchten, sollte auch der Inhalt des Ordners für Systemschriftarten gesichert werden. (Spezifische Anweisungen finden Sie in der Dokumentation für Ihr Betriebssystem.)

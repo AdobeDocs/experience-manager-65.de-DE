@@ -11,9 +11,9 @@ discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 feature: Correspondence Management
 exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1659'
+source-wordcount: '1657'
 ht-degree: 34%
 
 ---
@@ -168,7 +168,7 @@ Im folgenden Beispiel erfahren Sie, wie Sie mithilfe der Wiederholung die Kredit
 
    Um den statischen Text zusammen mit den DD-Elementen zu wiederholen, müssen Sie eine Wiederholung wie in den weiteren Schritten beschrieben anwenden.
 
-1. Wählen Sie den statischen Text sowie die DD-Elemente aus, die Sie wiederholen möchten, wie unten dargestellt:
+1. Wählen Sie den statischen Text und die DD-Elemente aus, die Sie wiederholen möchten, wie unten dargestellt:
 
    ![2_repeat_selecttext](assets/2_repeat_selecttext.png)
 

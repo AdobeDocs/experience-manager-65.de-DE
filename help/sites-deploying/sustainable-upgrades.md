@@ -8,9 +8,9 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '834'
 ht-degree: 18%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 18%
 
 ### Architektur (funktional/infrastruktur/content/application)  {#architecture-functional-infrastructure-content-application}
 
-Die Funktion des Anpassungs-Frameworks soll dazu beitragen, Verstöße in nicht erweiterbaren Bereichen des Codes (wie APIS) oder von Inhalten (wie Überlagerungen) zu reduzieren, die nicht aktualisierungsfreundlich sind.
+Die Funktion des Anpassungsrahmens soll dazu beitragen, Verstöße in nicht erweiterbaren Bereichen des Codes (wie APIS) oder von Inhalten (wie Überlagerungen) zu reduzieren, die nicht aktualisierungsfreundlich sind.
 
 Es gibt zwei Komponenten des Anpassungs-Frameworks: die **API-Oberfläche** und **Inhaltsklassifizierung**.
 
@@ -29,21 +29,21 @@ Es gibt zwei Komponenten des Anpassungs-Frameworks: die **API-Oberfläche** und 
 
 In früheren Versionen von Adobe Experience Manager (AEM) wurden viele APIs über das Uber Jar verfügbar gemacht. Einige dieser APIs waren nicht für die Verwendung durch Kunden vorgesehen, wurden aber für die Unterstützung AEM Funktionen in mehreren Bundles bereitgestellt. Künftig werden die Java™-APIs als öffentlich oder privat gekennzeichnet, um Kunden anzuzeigen, welche APIs im Zusammenhang mit Upgrades sicher verwendet werden können. Weitere Besonderheiten sind:
 
-* Java™-APIs, die als `Public` kann von benutzerdefinierten Implementierungspaketen verwendet und referenziert werden.
+* Java™ APIs, die als `Public` kann von benutzerdefinierten Implementierungspaketen verwendet und referenziert werden.
 
 * Die öffentlichen APIs sind abwärtskompatibel mit der Installation eines Kompatibilitätspakets.
 * Das Kompatibilitätspaket enthält eine Kompatibilitäts-Uber JAR, um Abwärtskompatibilität sicherzustellen
-* Java™-APIs, die als `Private` sind nur für die Verwendung AEM internen Bundles vorgesehen und sollten nicht von benutzerdefinierten Bundles verwendet werden.
+* Java™ APIs, die als `Private` sind nur für die Verwendung durch AEM internen Bundles vorgesehen, nicht für benutzerdefinierte Bundles.
 
 >[!NOTE]
 >
->Der Begriff `Private` und `Public` in diesem Zusammenhang nicht mit Java™-Vorstellungen öffentlicher und privater Klassen verwechselt werden.
+>Das Konzept der `Private` und `Public` in diesem Zusammenhang nicht mit Java™-Vorstellungen öffentlicher und privater Klassen verwechselt werden.
 
 ![image2018-2-12_23-52-48](assets/image2018-2-12_23-52-48.png)
 
 #### Inhaltsklassifizierungen {#content-classifications}
 
-AEM verwendet seit langem den Prinzipal von Überlagerungen und Sling Resource Merger, um Kunden zu ermöglichen, AEM Funktionalität zu erweitern und anzupassen. Vordefinierte Funktionen, die die AEM Konsolen und die Benutzeroberfläche bedienen, werden in **/libs**. Kunden können nie etwas ändern unter **/libs** kann jedoch zusätzlichen Inhalt hinzufügen unter **/apps** , um die in **/libs** (Weitere Informationen finden Sie unter Entwickeln mit Überlagerungen .) Dies führte bei der Aktualisierung von AEM als Inhalt in **/libs** kann sich ändern, wodurch die Überlagerungsfunktion auf unerwartete Weise beschädigt wird. Kunden können AEM Komponenten auch durch Vererbung über `sling:resourceSuperType`oder einfach auf eine Komponente in verweisen **/libs** direkt über sling:resourceType. Ähnliche Aktualisierungsprobleme können bei Referenz- und Außerkraftsetzungsfällen auftreten.
+AEM verwendet seit langem den Prinzipal von Überlagerungen und Sling Resource Merger, um Kunden zu ermöglichen, AEM Funktionalität zu erweitern und anzupassen. Vordefinierte Funktionen, die die AEM Konsolen und die Benutzeroberfläche bedienen, werden in **/libs**. Kunden können nie etwas ändern unter **/libs** kann jedoch zusätzlichen Inhalt hinzufügen unter **/apps** , um die in **/libs** (Weitere Informationen finden Sie unter Entwickeln mit Überlagerungen .) Dies führte bei der Aktualisierung von AEM als Inhalt in **/libs** kann sich ändern, wodurch die Überlagerungsfunktion auf unerwartete Weise beschädigt wird. Kunden können AEM Komponenten auch durch Vererbung über `sling:resourceSuperType`, oder referenzieren Sie einfach eine Komponente in **/libs** direkt über sling:resourceType. Ähnliche Aktualisierungsprobleme können bei Referenz- und Außerkraftsetzungsfällen auftreten.
 
 So können Kunden leichter nachvollziehen, welche Bereiche von **/libs** sicher sind, den Inhalt in zu verwenden und zu überlagern **/libs** wurde mit den folgenden Mixins klassifiziert:
 
@@ -53,7 +53,7 @@ So können Kunden leichter nachvollziehen, welche Bereiche von **/libs** sicher 
 
 * **Endgültig (granite:FinalArea)** – Definiert einen Knoten als „Endgültig“. Als endgültig eingestufte Knoten sollten idealerweise nicht überlagert oder vererbt werden. Endgültige Knoten können direkt über `sling:resourceType`. Unterknoten der endgültigen Knoten werden standardmäßig als intern eingestuft
 
-* ***Intern (granite:InternalArea)*** – Definiert einen Knoten als „Intern“. Als „intern“ klassifizierte Knoten sollten idealerweise nicht überlagert, vererbt oder direkt verwendet werden. Diese Knoten sind nur für die interne Funktionalität von AEM vorgesehen.
+* ***Intern (granite:InternalArea)*** – Definiert einen Knoten als „Intern“. Als „intern“ klassifizierte Knoten sollten idealerweise nicht überlagert, vererbt oder direkt verwendet werden. Diese Knoten sind nur für die interne Funktionalität von AEM
 
 * **Keine Anmerkung** - Knoten übernehmen die Klassifizierung basierend auf der Baumstruktur. Der /root-Wert ist standardmäßig Öffentlich. **Knoten mit einem übergeordneten Element, das als &quot;Intern&quot;oder &quot;Endgültig&quot;klassifiziert ist, sind ebenfalls als &quot;Intern&quot;zu behandeln.**
 
@@ -63,7 +63,7 @@ Diese Richtlinien werden nur bei pfadbasierten Sling-Suchmechanismen durchgesetz
 
 #### CRXDE Lite Content Type Indicators {#crxde-lite-content-type-indicators}
 
-In CRXDE Lite angewendete Mixins zeigen Inhaltsknoten und -bäume an, die als `INTERNAL` abgeblendet (ausgegraut). Für `FINAL`, wird nur das Symbol abgeblendet angezeigt. Die untergeordneten Elemente dieser Knoten erscheinen ebenfalls abgeblendet. In beiden Fällen ist die Funktion Überlagerungsknoten deaktiviert.
+Auf CRXDE Lite angewendete Mixins zeigen Inhaltsknoten und Bäume an, die als `INTERNAL` abgeblendet (ausgegraut). Für `FINAL`, wird nur das Symbol abgeblendet angezeigt. Die untergeordneten Elemente dieser Knoten erscheinen ebenfalls abgeblendet. In beiden Fällen ist die Funktion Überlagerungsknoten deaktiviert.
 
 **Öffentlich**
 
@@ -94,7 +94,7 @@ Das scannt **/apps** und dauert normalerweise mehrere Sekunden.
 Gehen Sie wie folgt vor, um auf diese neue Konsistenzprüfung zuzugreifen:
 
 1. Navigieren Sie auf der AEM-Startseite zu **Tools > Vorgänge > Statusberichte**
-1. Klicken **Prüfung des Inhaltszugriffs auf Sling/Granite**.
+1. Klicks **Prüfung des Inhaltszugriffs auf Sling/Granite**.
 
    ![screen_shot_2017-12-14at55648pm](assets/screen_shot_2017-12-14at55648pm.png)
 

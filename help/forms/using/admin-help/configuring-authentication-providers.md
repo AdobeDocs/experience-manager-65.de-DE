@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren von Authentifizierungsanbietern
 seo-title: Configuring authentication providers
-description: Fügen Sie Authentifizierungsanbieter hinzu, bearbeiten oder löschen Sie diese, ändern Sie die Authentifizierungseinstellungen und informieren Sie sich über Just-in-time-Bereitstellung.
+description: Hinzufügen, Bearbeiten oder Löschen von Authentifizierungsanbietern, Ändern der Authentifizierungseinstellungen und Lesen Sie mehr über die Just-in-time-Bereitstellung von Benutzern.
 seo-description: Add, edit, or delete authentication providers, change authentication settings, and read about just-in-time provisioning of users.
 uuid: 90e7690b-1ce0-4604-b58f-6dca4f2372cf
 contentOwner: admin
@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 31dd8db3-ddac-429e-82f8-8c5dc4ffc186
 exl-id: d72a3977-1423-49e0-899b-234bb76be378
-source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
-workflow-type: ht
-source-wordcount: '1576'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1575'
+ht-degree: 54%
 
 ---
 
@@ -21,30 +21,30 @@ ht-degree: 100%
 
 Hybrid-Domains erfordern mindestens einen Authentifizierungsanbieter und für Unternehmens-Domains ist mindestens ein Authentifizierungs- oder Ordneranbieter erforderlich.
 
-Wenn Sie die einmalige Anmeldung mithilfe von SPNEGO aktivieren, fügen Sie einen Kerberos-Authentifizierungsanbieter mit aktiviertem SPNEGO hinzu sowie einen LDAP-Anbieter als Sicherung. Diese Konfiguration ermöglicht Benutzerauthentifizierung mit einer Benutzer-ID und einem Kennwort, falls SPNEGO nicht funktioniert. (Siehe [Einmalige Anmeldung über SPNEGO aktivieren](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#enable-sso-using-spnego).)
+Wenn Sie die einmalige Anmeldung über SPNEGO aktivieren, fügen Sie einen Kerberos-Authentifizierungsanbieter mit aktiviertem SPNEGO und einen LDAP-Provider als Sicherung hinzu. Diese Konfiguration ermöglicht die Benutzerauthentifizierung mit einer Benutzer-ID und einem Kennwort, wenn SPNEGO nicht funktioniert. (Siehe [SSO mit SPNEGO aktivieren](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#enable-sso-using-spnego).
 
 ## Authentifizierungsanbieter hinzufügen {#add-an-authentication-provider}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Wählen Sie die gewünschte Domain in der Liste aus. Wenn Sie die Authentifizierung für eine neue Domain einrichten möchten, lesen Sie [Eine Unternehmens-Domain hinzufügen](/help/forms/using/admin-help/adding-domains.md#add-an-enterprise-domain) oder [Hybrid-Domain hinzufügen](/help/forms/using/admin-help/adding-domains.md#add-a-hybrid-domain) hinzuzufügen.
-1. Klicken Sie auf „Authentifizierung hinzufügen“ und wählen Sie in der Liste „Authentifizierungsanbieter“ einen der Authentifizierungsmethode Ihres Unternehmens entsprechenden Anbieter aus.
-1. Geben Sie weitere auf dieser Seite angeforderte Informationen ein. (Siehe [Authentifizierungseinstellungen](configuring-authentication-providers.md#authentication-settings).)
-1. (Optional) Klicken Sie auf „Testen“ um die Konfiguration zu testen.
-1. Klicken Sie auf „OK“ und dann erneut auf „OK“.
+1. Klicken Sie auf Authentifizierung hinzufügen und wählen Sie in der Liste Authentifizierungsanbieter je nach Authentifizierungsmechanismus, den Ihr Unternehmen verwendet, einen Anbieter aus.
+1. Geben Sie zusätzliche Informationen an, die auf der Seite erforderlich sind. (Siehe [Authentifizierungseinstellungen](configuring-authentication-providers.md#authentication-settings).
+1. (Optional) Klicken Sie auf Testen , um die Konfiguration zu testen.
+1. Klicken Sie auf OK und dann erneut auf OK .
 
-## Einen vorhandenen Authentifizierungsanbieter bearbeiten {#edit-an-existing-authentication-provider}
+## Vorhandenen Authentifizierungsanbieter bearbeiten {#edit-an-existing-authentication-provider}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Wählen Sie die gewünschte Domain in der Liste aus.
-1. Wählen Sie auf der angezeigten Seite in der Liste den geeigneten Authentifizierungsanbieter aus und nehmen Sie erforderliche Änderungen vor. (Siehe [Authentifizierungseinstellungen](configuring-authentication-providers.md#authentication-settings).)
+1. Wählen Sie auf der angezeigten Seite den entsprechenden Authentifizierungsanbieter aus der Liste aus und nehmen Sie die erforderlichen Änderungen vor. (Siehe [Authentifizierungseinstellungen](configuring-authentication-providers.md#authentication-settings).
 1. Klicken Sie auf OK.
 
-## Einen Authentifizierungsanbieter löschen {#delete-an-authentication-provider}
+## Authentifizierungsanbieter löschen {#delete-an-authentication-provider}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Wählen Sie die gewünschte Domain in der Liste aus.
-1. Aktivieren Sie die Kontrollkästchen der Authentifizierungsanbieter, die gelöscht werden sollen, und klicken Sie auf „Löschen“.
-1. Klicken Sie zuerst auf der angezeigten Bestätigungsseite auf „OK“ und dann erneut auf „OK“.
+1. Aktivieren Sie die Kontrollkästchen der Authentifizierungsanbieter, die gelöscht werden sollen, und klicken Sie auf &quot;Löschen&quot;.
+1. Klicken Sie auf der angezeigten Bestätigungsseite auf OK und klicken Sie erneut auf OK .
 
 ## Authentifizierungseinstellungen {#authentication-settings}
 
@@ -54,25 +54,25 @@ Die folgenden Einstellungen stehen je nach gewähltem Domain- und Authentifizier
 
 Wenn Sie die Authentifizierung für eine Unternehmens- oder Hybrid-Domain konfigurieren und LDAP-Authentifizierung auswählen, können Sie den in Ihrer Ordnerkonfiguration angegebenen LDAP-Server verwenden oder einen anderen LDAP-Server auswählen, der zur Authentifizierung verwendet werden soll. Wenn Sie einen anderen Server auswählen, müssen Ihre Benutzer auf beiden LDAP-Servern vorhanden sein.
 
-Um den in Ihrer Ordnerkonfiguration angegebenen LDAP-Server zu verwenden, wählen Sie LDAP als Authentifizierungsanbieter aus und klicken Sie auf „OK“.
+Um den in Ihrer Ordnerkonfiguration angegebenen LDAP-Server zu verwenden, wählen Sie LDAP als Authentifizierungsanbieter aus und klicken Sie auf OK.
 
-Wenn Sie einen anderen LDAP-Server für die Authentifizierung verwenden möchten, wählen Sie LDAP als Authentifizierungsanbieter aus und aktivieren Sie das Kontrollkästchen „Benutzerdefinierte LDAP-Authentifizierung“. Es werden die folgenden Konfigurationseinstellungen angezeigt.
+Um einen anderen LDAP-Server für die Authentifizierung zu verwenden, wählen Sie LDAP als Authentifizierungsanbieter aus und aktivieren Sie das Kontrollkästchen Benutzerdefinierte LDAP-Authentifizierung . Die folgenden Konfigurationseinstellungen werden angezeigt.
 
 **Server** (obligatorisch): Der vollständig qualifizierte Domain-Name (FQDN) des Verzeichnis-Servers. Für einen Computer namens x im Netzwerk example.com lautet der FQDN beispielsweise x.example.com. Anstelle des vollständig qualifizierten Servernamens kann auch eine IP-Adresse verwendet werden.
 
 **Port** (obligatorisch): Der Port, den der Verzeichnis-Server verwendet. Dies ist in der Regel Anschluss 389 bzw. 636, falls das SSL-Protokoll (Secure Sockets Layer) zum Senden der Authentifizierungsinformationen über das Netzwerk verwendet wird.
 
-**SSL** (obligatorisch): Gibt an, ob der Verzeichnis-Server beim Senden von Daten über das Netzwerk SSL verwendet. Die Standardeinstellung ist „Nein“. Wenn Sie „Ja“ wählen, muss das entsprechende LDAP-Serverzertifikat von der Java™-Umgebung (Java Runtime Environment) des Anwendungsservers als vertrauenswürdig betrachtet werden.
+**SSL** (obligatorisch): Gibt an, ob der Verzeichnis-Server beim Senden von Daten über das Netzwerk SSL verwendet. Der Standardwert ist &quot;Nein&quot;. Wenn &quot;Ja&quot;festgelegt ist, muss das entsprechende LDAP-Serverzertifikat von der Java™-Laufzeitumgebung (JRE) des Anwendungsservers als vertrauenswürdig eingestuft werden.
 
 **Bindung** (obligatorisch): Legt fest, wie auf das Verzeichnis zugegriffen werden soll.
 
 **Anonym**: Es ist kein Benutzername oder Kennwort erforderlich.
 
-**Benutzer**: Authentifizierung ist erforderlich. Geben Sie im Feld „Name“ den Namen des Benutzereintrags an, der auf den Ordner zugreifen darf. Am besten geben Sie den vollständigen definierten Namen (DN) des Benutzerkontos ein, z. B. cn=Jane Doe, ou=user, dc=can, dc=com. Geben Sie im Feld „Kennwort“ das zugehörige Kennwort an. Wenn Sie „Benutzer“ als Bindungsoption auswählen, sind diese Einstellungen obligatorisch.
+**Benutzer**: Authentifizierung ist erforderlich. Geben Sie im Feld „Name“ den Namen des Benutzereintrags an, der auf den Ordner zugreifen darf. Am besten geben Sie den vollständigen definierten Namen (DN) des Benutzerkontos ein, z. B. cn=Jane Doe, ou=user, dc=can, dc=com. Geben Sie im Feld &quot;Kennwort&quot;das zugehörige Kennwort an. Diese Einstellungen sind erforderlich, wenn Sie Benutzer als Bindungsoption auswählen.
 
 **Basis-DNs abrufen:** (Nicht obligatorisch) Ruft die Basis-DNs ab und zeigt sie in der Dropdown-Liste an. Diese Einstellung ist sinnvoll, wenn mehrere Basis-DNs vorhanden sind und Sie einen Wert auswählen müssen.
 
-**Basis-DN:** (Obligatorisch) Wird als Ausgangspunkt für die Synchronisierung von Benutzern und Gruppen aus der LDAP-Hierarchie verwendet. Es empfiehlt sich, einen Basis-DN auf der niedrigsten Hierarchieebene anzugeben, die sämtliche Benutzer und Gruppen enthält, die für Dienste synchronisiert werden müssen. Diese Einstellung enthält nicht den definierten Namen (DN) des Benutzers. Um einen bestimmten Benutzer zu synchronisieren, wählen Sie die Einstellung „Suchfilter“.
+**Basis-DN:** (Obligatorisch) Wird als Ausgangspunkt für die Synchronisierung von Benutzern und Gruppen aus der LDAP-Hierarchie verwendet. Es empfiehlt sich, einen Basis-DN auf der untersten Hierarchieebene anzugeben, der alle Benutzer und Gruppen umfasst, die für Dienste synchronisiert werden müssen. Schließen Sie den DN des Benutzers nicht in diese Einstellung ein. Verwenden Sie die Einstellung Suchfilter , um einen bestimmten Benutzer zu synchronisieren.
 
 **Seite mit folgenden Elementen füllen:** (Nicht obligatorisch) Wenn diese Einstellung aktiviert ist, werden Attribute auf den Seiten „Benutzereinstellungen“ und „Gruppeneinstellungen“ mit entsprechenden LDAP-Standardwerten aufgefüllt.
 
@@ -96,40 +96,40 @@ Wenn Sie die Authentifizierung für eine Unternehmens- oder Hybrid-Domain konfig
 
 ### SAML-Einstellungen {#saml-settings}
 
-Wenn Sie die Authentifizierung für eine Unternehmens- oder Hybrid-Domain konfigurieren und die SAML-Authentifizierung wählen, sind die folgenden Einstellungen verfügbar. Informationen zu weiteren SAML-Einstellungen finden Sie unter [SAML-Dienstanbietereinstellungen konfigurieren](/help/forms/using/admin-help/configure-saml-service-provider-settings.md#configure-saml-service-provider-settings).
+Wenn Sie die Authentifizierung für eine Unternehmens- oder Hybrid-Domain konfigurieren und die SAML-Authentifizierung wählen, sind die folgenden Einstellungen verfügbar. Weitere Informationen zu weiteren SAML-Einstellungen finden Sie unter [SAML-Dienstanbietereinstellungen konfigurieren](/help/forms/using/admin-help/configure-saml-service-provider-settings.md#configure-saml-service-provider-settings).
 
 **Wählen Sie eine zu importierende Metadatendatei des SAML-Identitätsanbieters aus:** Klicken Sie auf „Durchsuchen“, um eine von Ihrem IDP generierte Metadatendatei des SAML-Identitätsanbieters auszuwählen, und klicken Sie dann auf „Importieren“. Die Details des Identitätsanbieters werden angezeigt.
 
 **Titel:** Alias zu der von der Entitäts-ID bezeichneten URL. Der Titel wird ebenfalls auf der Anmeldeseite für Unternehmen und lokale Benutzer angezeigt.
 
-**Identitäts-Provider unterstützt Client-Standardauthentifizierung:** Die Client Standardauthentifizierung wird verwendet, wenn der IDP ein SAML-Artefaktauflösungsprofil verwendet. In diesem Profil stellt User Management eine Verbindung zurück zu einem Webdienst her, der beim IDP ausgeführt wird, um die aktuelle SAML-Bestätigung abzurufen. Der IDP erfordert möglicherweise eine Authentifizierung. Wenn der IDP eine Authentifizierung erfordert, wählen Sie diese Option aus und geben Sie in den entsprechenden Feldern einen Benutzernamen und ein Kennwort an.
+**Identitäts-Provider unterstützt Client-Standardauthentifizierung:** Die Client Standardauthentifizierung wird verwendet, wenn der IDP ein SAML-Artefaktauflösungsprofil verwendet. In diesem Profil stellt User Management eine Verbindung zu einem Webdienst her, der beim IDP ausgeführt wird, um die tatsächliche SAML-Bestätigung abzurufen. Der IDP erfordert möglicherweise eine Authentifizierung. Wenn der IDP keine Authentifizierung erfordert, wählen Sie diese Option aus und geben Sie in den angegebenen Feldern einen Benutzernamen und ein Kennwort an.
 
-**Benutzerdefinierte Eigenschaften:** Hiermit können Sie zusätzliche Eigenschaften angeben. Die zusätzlichen Eigenschaften lauten Name=Wert, Paare durch neue Zeilen getrennt.
+**Benutzerdefinierte Eigenschaften:** Hiermit können Sie zusätzliche Eigenschaften angeben. Die zusätzlichen Eigenschaften sind Name=Wert-Paare, getrennt durch neue Zeilen.
 
-Die folgenden benutzerdefinierten Eigenschaften sind erforderlich, wenn Artefaktbindung verwendet wird.
+Die folgenden benutzerdefinierten Eigenschaften sind erforderlich, wenn die Artefaktbindung verwendet wird.
 
-* Fügen Sie folgende benutzerdefinierte Eigenschaft hinzu, um einen Benutzernamen anzugeben, der den AEM Forms-Dienstanbieter darstellt, welcher für die Authentifizierung des IDP-Artefaktauflösungsdienstes verwendet wird.
-   `saml.idp.resolve.username=<username>`
+* Fügen Sie die folgende benutzerdefinierte Eigenschaft hinzu, um einen Benutzernamen anzugeben, der den AEM Forms Service Provider darstellt, der für die Authentifizierung beim IDP Artefaktauflösungsdienst verwendet wird.
+  `saml.idp.resolve.username=<username>`
 
 * Fügen Sie folgende benutzerdefinierte Eigenschaft hinzu, um das Kennwort für den Benutzer, der in `saml.idp.resolve.username` angegeben ist, anzugeben.
-   `saml.idp.resolve.password=<password>`
+  `saml.idp.resolve.password=<password>`
 
 * Fügen Sie folgende benutzerdefinierte Eigenschaft hinzu, damit der Dienstanbieter die Zertifikatsüberprüfung ignorieren kann, während er die Verbindung zum Artefaktauflösungsdienst über SSL herstellt.
-   `saml.idp.resolve.ignorecert=true`
+  `saml.idp.resolve.ignorecert=true`
 
 ### Benutzerdefinierte Einstellungen {#custom-settings}
 
 Wenn Sie die Authentifizierung für eine Unternehmens- oder Hybrid-Domain konfigurieren und die benutzerdefinierte Authentifizierung wählen, müssen Sie den Namen des Authentifizierungsanbieters auswählen.
 
-## Just-in-time-Bereitstellung {#just-in-time-provisioning-of-users}
+## Just-in-time-Bereitstellung von Benutzern {#just-in-time-provisioning-of-users}
 
-Just-in-time-Bereitstellung erstellt automatisch einen Benutzer in der User Management-Datenbank, nachdem der Benutzer über einen Authentifizierungsanbieter authentifiziert wurde. Relevante Rollen und Gruppen werden dem neuen Benutzer außerdem dynamisch zugewiesen. Sie können Just-in-time-Bereitstellung für Unternehmens- und Hybrid-Domains aktivieren.
+Just-in-time-Bereitstellung erstellt automatisch einen Benutzer in der User Management-Datenbank, nachdem der Benutzer über einen Authentifizierungsanbieter authentifiziert wurde. Relevante Rollen und Gruppen werden dem neuen Benutzer auch dynamisch zugewiesen. Sie können Just-in-time-Bereitstellung für Unternehmens- und Hybrid-Domains aktivieren.
 
-Im vorliegenden Verfahren wird beschrieben, wie herkömmliche Authentifizierung in AEM Forms funktioniert:
+In diesem Verfahren wird beschrieben, wie herkömmliche Authentifizierung in AEM Formularen funktioniert:
 
-1. Wenn sich der Benutzer bei AEM Forms anmeldet, übergibt User Management die Anmeldeinformationen sequenziell an alle verfügbaren Authentifizierungsanbieter. (Anmeldeinformationen beinhalten Benutzername-/Kennwort-Kombination, Kerberos-Ticket, PKCS7-Signatur usw.)
+1. Wenn ein Benutzer versucht, sich bei AEM Formularen anzumelden, übergibt User Management seine Anmeldeinformationen nacheinander an alle verfügbaren Authentifizierungsanbieter. (Die Anmeldedaten umfassen die Kombination aus Benutzername und Kennwort, Kerberos-Ticket, PKCS7-Signatur usw.)
 1. Der Authentifizierungsanbieter überprüft die Anmeldeinformationen.
-1. Der Authentifizierungsanbieter prüft anschließend, ob der Benutzer in der User Management-Datenbank vorhanden ist. Die folgenden Status sind möglich:
+1. Der Authentifizierungsanbieter prüft dann, ob der Benutzer in der User Management-Datenbank vorhanden ist. Die folgenden Status sind möglich:
 
    **Vorhanden** Wenn der Benutzer aktuell und nicht gesperrt ist, gibt User Management an, dass die Authentifizierung erfolgreich war. Wenn der Benutzer nicht aktuell oder gesperrt ist, gibt User Management an, dass die Authentifizierung nicht erfolgreich war.
 
@@ -137,25 +137,25 @@ Im vorliegenden Verfahren wird beschrieben, wie herkömmliche Authentifizierung 
 
    **Ungültig** User Management gibt an, dass die Authentifizierung nicht erfolgreich war.
 
-1. Das vom Authentifizierungsanbieter zurückgegebene Ergebnis wird ausgewertet. Wenn der Authentifizierungsanbieter angibt, dass die Authentifizierung erfolgreich war, kann sich der Benutzer anmelden. Andernfalls nimmt User Management mit dem nächsten Authentifizierungsanbieter eine Überprüfung vor (Schritte 2 bis 3).
-1. Die Authentifizierung war nicht erfolgreich, wenn kein verfügbarer Authentifizierungsanbieter die Anmeldeinformationen des Benutzers überprüft.
+1. Das vom Authentifizierungsanbieter zurückgegebene Ergebnis wird ausgewertet. Wenn der Authentifizierungsanbieter die Authentifizierung erfolgreich zurückgegeben hat, kann sich der Benutzer anmelden. Andernfalls prüft User Management mit dem nächsten Authentifizierungsanbieter (Schritte 2 bis 3).
+1. Authentifizierungsfehler wird zurückgegeben, wenn kein verfügbarer Authentifizierungsanbieter die Benutzeranmeldeinformationen validiert.
 
-Wenn Just-in-time-Bereitstellung aktiviert ist, werden neue Benutzer dynamisch in User Management erstellt, wenn einer der Authentifizierungsanbieter deren Anmeldedaten validiert. (Nach Schritt 3 im obigen Verfahrens.)
+Wenn Just-in-time-Bereitstellung aktiviert ist, werden neue Benutzer dynamisch in User Management erstellt, wenn einer der Authentifizierungsanbieter ihre Anmeldeinformationen validiert. (Nach Schritt 3 im obigen Verfahren.)
 
-Ohne Just-in-time-Bereitstellung ist die Authentifizierung nicht erfolgreich, wenn ein Benutzer authentifiziert wird, aber nicht in der User Management-Datenbank gefunden wird. Just-in-time-Bereitstellung fügt dem Authentifizierungsverfahren einen Schritt hinzu, um den Benutzer zu erstellen und ihm Rollen und Gruppen zuzuweisen.
+Ohne Just-in-time-Bereitstellung schlägt die Authentifizierung fehl, wenn ein Benutzer erfolgreich authentifiziert wurde, aber nicht in der User Management-Datenbank gefunden wird. Just-in-time-Bereitstellung fügt einen Schritt im Authentifizierungsverfahren hinzu, um den Benutzer zu erstellen und ihm Rollen und Gruppen zuzuweisen.
 
 ### Just-in-time-Bereitstellung für eine Domain aktivieren {#enable-just-in-time-provisioning-for-a-domain}
 
-1. Schreiben Sie einen Dienstcontainer, der IdentityCreator- und AssignmentProvider-Schnittstelle implementiert. (Weitere Informationen finden Sie unter [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).)
+1. Schreiben Sie einen Dienstcontainer, der die IdentityCreator- und AssignmentProvider-Schnittstellen implementiert. (Siehe [Programmieren mit AEM](https://www.adobe.com/go/learn_aemforms_programming_63_de).
 1. Stellen Sie den Dienstcontainer auf dem Formularserver bereit.
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 
    Wählen Sie eine vorhandene Domain oder klicken Sie auf „Neue Unternehmens-Domain“.
 
 1. Zum Erstellen einer neuen Domain klicken Sie auf „Neue Unternehmens-Domain“ oder „Neue Hybrid-Domain“. Um eine vorhandene Domain zu bearbeiten, klicken Sie auf den Namen der Domain.
-1. Wählen Sie „Just-in-time-Bereitstellung aktivieren“.
+1. Wählen Sie Just-in-time-Bereitstellung aktivieren aus.
 
    ***Hinweis **: Wenn das Kontrollkästchen „Just-in-time-Bereitstellung aktivieren“ fehlt, klicken auf „Startseite“ > „Einstellungen“ > „User Management“ „Konfiguration“ > „Erweiterte Systemattribute“ und klicken Sie anschließend auf „Neu laden“.*
 
-1. Authentifizierungsanbieter hinzufügen. Wählen Sie beim Hinzufügen von Authentifizierungsanbietern auf dem Bildschirm „Neue Authentifizierung“ einen registrierten ID-Ersteller und einen Zuweisungsanbieter. (Siehe [Authentifizierungsanbieter konfigurieren](configuring-authentication-providers.md#configuring-authentication-providers).)
+1. Authentifizierungsanbieter hinzufügen. Wählen Sie beim Hinzufügen von Authentifizierungsanbietern im Bildschirm &quot;Neue Authentifizierung&quot;einen registrierten Identitäts-Ersteller und einen Zuweisungsanbieter aus. (Siehe [Authentifizierungsanbieter konfigurieren](configuring-authentication-providers.md#configuring-authentication-providers).
 1. Speichern Sie die Domain.

@@ -1,20 +1,16 @@
 ---
 title: Erstellen von geschlossenen Benutzergruppen
-seo-title: Creating a Closed User Group
 description: Erfahren Sie, wie Sie eine geschlossene Benutzergruppe erstellen.
-seo-description: Learn how to work with Closed User Groups in Adobe Experience Manager.
-uuid: dc3c7dbd-2e86-43f9-9377-3b75053203b3
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 70%
+source-wordcount: '747'
+ht-degree: 66%
 
 ---
 
@@ -54,7 +50,7 @@ So erstellen Sie eine geschlossene Benutzergruppe:
 
    ![screen_shot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
-1. Drücken Sie die **Erstellen** oben rechts, um eine neue Gruppe zu erstellen.
+1. Drücken Sie die **Erstellen** Schaltfläche oben rechts, um eine Gruppe zu erstellen.
 1. Benennen Sie Ihre neue Gruppe, z. B. `cug_access`.
 
    ![screen_shot_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
@@ -92,11 +88,11 @@ Dies ist optional. Wenn Sie das Feld leer lassen, wird die standardmäßige Anme
 
    >[!NOTE]
    >
-   >Beachten Sie, dass CUGs auf der Registerkarte „Berechtigungen“ aus Blueprints nicht zu Live Copies ausgerollt werden können. Planen Sie dies ein, wenn Sie eine Live Copy konfigurieren.
+   >Beachten Sie, dass CUGs auf der Registerkarte „Berechtigungen“ aus Blueprints nicht zu Live Copies ausgerollt werden können. Planen Sie dies bei der Konfiguration der Live Copy.
    >
    >Weitere Informationen finden Sie auf [dieser Seite](closed-user-groups.md#aem-livecopy).
 
-1. Der Dialog **Geschlossene Benutzergruppe bearbeiten** öffnet sich. Hier können Sie nach Ihrer CUG suchen und diese auswählen und dann die Gruppenauswahl mit **Speichern** bestätigen.
+1. Die **Geschlossene Benutzergruppe bearbeiten** wird geöffnet. Hier können Sie nach Ihrer CUG suchen und diese auswählen und dann die Gruppenauswahl mit **Speichern** bestätigen.
 
    Die Gruppe wird der Liste hinzugefügt; beispielsweise die Gruppe **cug_access**.
 

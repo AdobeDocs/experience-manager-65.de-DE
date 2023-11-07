@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
-workflow-type: ht
-source-wordcount: '1920'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1915'
+ht-degree: 95%
 
 ---
 
@@ -32,7 +32,7 @@ Weitere Informationen zum Barcode-Formular-Service finden Sie in der [Service-Re
 
 ## Decodieren der Daten von Barcode-Formularen {#decoding-barcoded-form-data}
 
-Sie können die Barcode-Formular-Service-API verwenden, um Daten aus einem PDF-Formular oder einem Bild mit einem Barcode zu decodieren. Das Decodieren von Formulardaten bedeutet das Extrahieren von Daten, die im Barcode enthalten sind. Bevor Daten aus einem PDF-Formular (oder Bild) decodiert werden können, muss ein Benutzer das Formular mit Daten ausfüllen.
+Sie können die Barcode-Formular-Service-API verwenden, um Daten aus einem PDF-Formular oder einem Bild mit einem Barcode zu decodieren. Das Dekodieren von Formulardaten bedeutet das Extrahieren von Daten, die sich im Barcode befinden. Bevor Daten aus einem PDF-Formular (oder Bild) decodiert werden können, muss ein Benutzer das Formular mit Daten ausfüllen.
 
 >[!NOTE]
 >
@@ -60,9 +60,9 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-barcodedforms-client.jar
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* xercesImpl.jar (unter &lt;Installationsverzeichnis>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
+* xercesImpl.jar (in &lt;install directory=&quot;&quot;>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
 
-Wenn AEM Forms auf einem unterstützten J2EE-Programm-Server bereitgestellt wird, bei dem es sich nicht um JBoss handelt, müssen Sie die Dateien „adobe-utilities.jar“ und „jbossall-client.jar“ durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Programm-Server sind, auf dem AEM Forms bereitgestellt wird. Informationen zum Speicherort aller AEM Forms-JAR-Dateien finden Sie unter [Einbeziehen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Wenn AEM Forms auf einem unterstützten J2EE-Anwendungsserver bereitgestellt wird, der nicht JBOSS ist, müssen Sie adobe-utilities.jar und jbossall-client.jar durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Anwendungsserver sind, auf dem AEM Forms bereitgestellt wird. Informationen zum Speicherort aller AEM Forms-JAR-Dateien finden Sie unter [Einbeziehen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Erstellen eines Client-API-Objekts für Barcode-Formulare**
 
@@ -160,7 +160,7 @@ So decodieren Sie Formulardaten mithilfe der Barcode-Formulare-API (Java):
 
 1. Verarbeiten der decodierten Daten
 
-   * Iterieren Sie durch das `java.util.List`-Objekt, um jedes `org.w3c.dom.Document`-Objekt zu erhalten, das sich in der Liste befindet.
+   * Iteration durch die `java.util.List` Objekt zum Abrufen `org.w3c.dom.Document` -Objekt, das sich in der Liste befindet.
    * Konvertieren Sie für jedes Element in der Liste das `org.w3c.dom.Document`-Objekt in ein `com.adobe.idp.Document`-Objekt. (Die Anwendungslogik, die ein `org.w3c.dom.Document`-Objekt in ein `com.adobe.idp.Document`-Objekt umwandelt, wird im Beispiel zum Dekodieren von Barcode-Formulardaten mithilfe der Java-API gezeigt).
    * Speichern Sie die XML-Daten als XML-Datei, indem Sie `copyToFile` des `com.adobe.idp.Document`-Objekts aufrufen und ein Dateiobjekt übergeben, das die XML-Datei darstellt.
 

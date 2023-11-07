@@ -2,10 +2,10 @@
 title: Bearbeiten der Eigenschaften von Inhaltsseiten
 description: Definieren Sie die erforderlichen Eigenschaften für eine Seite in Adobe Experience Manager.
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1872'
-ht-degree: 63%
+source-wordcount: '1871'
+ht-degree: 62%
 
 ---
 
@@ -257,7 +257,7 @@ Sie können Seiteneigenschaften definieren:
 
 * In der Konsole **Sites**:
 
-   * [beim Erstellen einer neuen Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page) (ein Teil der Eigenschaften)
+   * [Erstellen einer Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page) (eine Untergruppe der Eigenschaften)
 
    * durch Klicken oder Tippen auf **Eigenschaften**
 
@@ -363,7 +363,7 @@ Nachdem Sie die Massenbearbeitung eingegeben haben, haben Sie folgende Möglichk
    * Sie können die Werte in den verfügbaren Feldern aktualisieren.
 
       * Die neuen Werte werden auf alle gewählten Seiten angewendet, wenn Sie **Fertig** wählen.
-      * Wenn es sich um ein mehrwertiges Feld handelt (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
+      * Wenn das Feld mehrwertig ist (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
 
    * Gemeinsame Felder, die unterschiedliche Werte auf den verschiedenen Seiten aufweisen, werden durch einen speziellen Wert wie den Text gekennzeichnet `<Mixed Entries>`.
 

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '5484'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,6 @@ Informationen zur Verwendung aller Dynamic Media Classic-Komponenten auf einer S
 >* Bevor Sie Dynamic Media Classic für die Verwendung mit Experience Manager konfigurieren, lesen Sie [Best Practices](#best-practices-for-integrating-scene-with-aem) zur Integration von Dynamic Media Classic mit Experience Manager.
 >* Wenn Sie Dynamic Media Classic mit einer benutzerdefinierten Proxy-Konfiguration verwenden, müssen Sie beide HTTP-Client-Proxy-Konfigurationen konfigurieren, da einige Funktionen von Experience Manager die 3.x-APIs verwenden und andere die 4.x-APIs. 3.x wird mit [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) konfiguriert und 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) konfiguriert.
 >
-
 
 ## Integration von Experience Manager/Dynamic Media Classic im Vergleich zu Dynamic Media {#aem-scene-integration-versus-dynamic-media}
 
@@ -62,15 +61,15 @@ Wenn Sie innerhalb dieser Lösung mit Assets arbeiten, befolgen Sie diesen Workf
 1. Laden Sie Assets mit einzelnen Bildern und Videos direkt in Experience Manager hoch.
 1. Kodieren Sie Videos direkt in Experience Manager.
 1. Erstellen Sie bildbasierte Sets direkt in Experience Manager.
-1. Fügen Sie Bildern und Videos bei Bedarf interaktive Elemente hinzu.
+1. Fügen Sie Bildern oder Videos gegebenenfalls Interaktivität hinzu.
 
-Die von Ihnen für Dynamic Media verwendeten Komponenten befinden sich im Komponentenbereich **[!UICONTROL Dynamic Media]** im [Designmodus](/help/sites-authoring/author-environment-tools.md#page-modes). Sie umfassen Folgendes:
+Die Komponenten, die Sie für Dynamic Media verwenden, finden Sie im **[!UICONTROL Dynamic Media]** Komponentenbereich in [Designmodus](/help/sites-authoring/author-environment-tools.md#page-modes). Dazu gehören:
 
-* **[!UICONTROL Dynamic Media]** – Die Komponente **[!UICONTROL Dynamic Media]** ist intelligent. In Abhängigkeit davon, ob Sie ein Bild oder Video hinzufügen, haben Sie verschiedene Optionen. Die Komponente unterstützt Bildvorgaben, bildbasierte Viewer wie Bildsets sowie Rotationssets, Sets für gemischte Medien und Videos. Zudem ist der Viewer dynamisch. Die Anzeigegröße ändert sich demnach automatisch auf Grundlage der Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
+* **[!UICONTROL Dynamic Media]** - die **[!UICONTROL Dynamic Media]** -Komponente intelligent ist - je nachdem, ob Sie ein Bild oder ein Video hinzufügen, haben Sie verschiedene Optionen. Die Komponente unterstützt Bildvorgaben, bildbasierte Viewer wie Bildsets sowie Rotationssets, Sets für gemischte Medien und Videos. Zudem ist der Viewer dynamisch. Die Anzeigegröße ändert sich demnach automatisch auf Grundlage der Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
 
 * **[!UICONTROL Interaktive Medien]** – Die Komponente **[!UICONTROL Interaktive Medien]** ist für Assets wie Karussellbanner, interaktive Bilder und interaktive Videos geeignet. Solche Assets weisen Interaktivität auf, z. B. Hotspots oder Imagemaps. Diese Komponente ist intelligent. Dies bedeutet: Je nachdem, ob Sie ein Bild oder Video hinzufügen, werden Ihnen unterschiedliche Optionen zur Verfügung gestellt. Zudem ist der Viewer responsiv. Die Größe des Bildschirms ändert sich demnach automatisch auf Grundlage der Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
 
-### Szenario einer Doppelnutzung {#dual-use-scenario}
+### Szenario mit doppeltem Verwendungszweck {#dual-use-scenario}
 
 Standardmäßig können Sie die Dynamic Media- und Dynamic Media Classic-Integrationsfunktionen von Experience Manager gleichzeitig nutzen. Die folgende Tabelle mit Anwendungsfällen beschreibt, wo Sie bestimmte Bereiche ein- und ausschalten können.
 
@@ -303,7 +302,7 @@ Eine Cloud-Konfiguration definiert die Zuordnung zwischen einem Dynamic Media Cl
 
 **So erstellen Sie eine Cloud-Konfiguration für Dynamic Media Classic:**
 
-1. Wählen Sie das Experience Manager-Symbol aus und navigieren Sie zu **[!UICONTROL Implementierung]** > **[!UICONTROL Cloud-Services]**, damit Sie auf Adobe Dynamic Media Classic zugreifen können.
+1. Wählen Sie das Experience Manager-Symbol aus und navigieren Sie zu **[!UICONTROL Bereitstellung]** > **[!UICONTROL Cloud-Services]**, damit Sie auf Adobe Dynamic Media Classic zugreifen können.
 
 1. Wählen Sie **[!UICONTROL Jetzt konfigurieren]** aus.
 
@@ -315,7 +314,7 @@ Eine Cloud-Konfiguration definiert die Zuordnung zwischen einem Dynamic Media Cl
    >
    >Beim Erstellen weiterer Konfigurationen wird das Feld **[!UICONTROL Übergeordnete Konfiguration]** angezeigt.
    >
-   >Ändern Sie **nicht** die übergeordnete Konfiguration. Das Ändern der übergeordneten Konfiguration kann zum Scheitern der Integration führen.
+   >Do **not** die übergeordnete Konfiguration ändern. Eine Änderung der übergeordneten Konfiguration kann die Integration unterbrechen.
 
 1. Geben Sie die E-Mail-Adresse, das Kennwort und die Region Ihres Dynamic Media Classic-Kontos ein und wählen Sie **[!UICONTROL Mit Dynamic Media Classic verbinden]** aus. Sie sind nun mit dem Dynamic Media Classic-Server verbunden und das Dialogfeld wird mit weiteren Optionen erweitert.
 
@@ -327,7 +326,7 @@ Eine Cloud-Konfiguration definiert die Zuordnung zwischen einem Dynamic Media Cl
 
    >[!CAUTION]
    >
-   >Je nach Größe des Dynamic Media Classic-Ordners kann der Import eines Stammordners viel Zeit in Anspruch nehmen. Darüber hinaus können Dynamic Media Classic-Daten den Experience Manager-Speicher überschreiten. Stellen Sie sicher, dass Sie in den richtigen Ordner importieren. Der Import einer zu großen Menge von Daten kann zur Unterbrechung Ihres Systems führen.
+   >Je nach Größe des Dynamic Media Classic-Ordners kann der Import eines Stammordners viel Zeit in Anspruch nehmen. Darüber hinaus können Dynamic Media Classic-Daten den Experience Manager-Speicher überschreiten. Stellen Sie sicher, dass Sie den richtigen Ordner importieren. Der Import zu vieler Daten kann Ihr System stoppen.
 
    ![chlimage_1-298](assets/chlimage_1-298.png)
 
@@ -340,7 +339,6 @@ Eine Cloud-Konfiguration definiert die Zuordnung zwischen einem Dynamic Media Cl
 >* Beim erneuten Herstellen einer Verbindung mit Dynamic Media Classic beim Veröffentlichen funktioniert das Zurücksetzen des Kennworts beim Veröffentlichen oder erneuten Verbinden nicht (kein Problem in der Autoreninstanz).
 >* Wenn Sie Werte ändern, wie zum Beispiel Region und Unternehmensname, müssen Sie erneut eine Verbindung mit Dynamic Media Classic herstellen. Wenn Konfigurationsoptionen geändert, aber nicht gespeichert wurden, zeigt Experience Manager fälschlicherweise nach wie vor an, dass die Konfiguration gültig ist. Achten Sie darauf, erneut eine Verbindung herzustellen.
 >
-
 
 ### Aktivieren des DAM-Listeners für Adobe CQ Dynamic Media Classic {#enabling-the-adobe-cq-scene-dam-listener}
 
@@ -363,11 +361,11 @@ Wenn eine Experience Manager-Instanz so konfiguriert wird, dass die Videokodieru
 
    ![chlimage_1-300](assets/chlimage_1-300.png)
 
-1. Ändern Sie die Zahl wie gewünscht im Feld **[!UICONTROL Zeitüberschreitung bei aktiven Aufträgen]**. Jede positive Zahl wird binnen Sekunden mit der Maßeinheit akzeptiert. Standardmäßig ist diese Zahl auf 2100 festgelegt.
+1. Ändern Sie die Zahl wie gewünscht in der **[!UICONTROL Zeitüberschreitung bei aktiven Aufträgen]** -Feld. Jede nicht negative Zahl wird mit der Maßeinheit in Sekunden akzeptiert. Standardmäßig ist diese Zahl auf 2100 festgelegt.
 
    >[!NOTE]
    >
-   >Best Practice: Bei den meisten Assets dauert das Übernehmen höchstens einige Minuten (beispielsweise bei Bildern). Erhöhen Sie in bestimmten Fällen – beispielsweise bei größeren Videos – den Timeout-Wert auf 7200 Sekunden (2 Stunden), um eine lange Verarbeitungszeit zu ermöglichen. Andernfalls wird dieser Dynamic Media Classic-Upload-Auftrag mit **[!UICONTROL UploadFailed]** in den JCR-Metadaten (Java™ Content Repository) gekennzeichnet.
+   >Best Practice: Bei den meisten Assets dauert das Übernehmen höchstens einige Minuten (beispielsweise bei Bildern). In bestimmten Fällen - z. B. bei größeren Videos - erhöhen Sie den Timeout-Wert jedoch auf 7200 Sekunden (zwei Stunden), um eine lange Verarbeitungszeit zu ermöglichen. Andernfalls wird dieser Dynamic Media Classic-Upload-Auftrag mit **[!UICONTROL UploadFailed]** in den JCR-Metadaten (Java™ Content Repository) gekennzeichnet.
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
@@ -383,7 +381,7 @@ Wenn ein Asset zu Experience Manager Assets hinzugefügt wird, wird es automatis
 
 **So laden Sie automatisch aus Experience Manager Assets hoch:**
 
-1. Wählen Sie das Experience Manager-Symbol aus und navigieren Sie zu **[!UICONTROL Implementierung]** > **[!UICONTROL Cloud-Services]**.
+1. Wählen Sie das Experience Manager-Symbol aus und navigieren Sie zu **[!UICONTROL Bereitstellung]** > **[!UICONTROL Cloud-Services]**.
 1. Wählen Sie unter der Überschrift „Dynamic Media“ unter „Verfügbare Konfigurationen“ die Option **[!UICONTROL dms7 (Dynamic Media)]** aus.
 1. Wählen Sie die Registerkarte **[!UICONTROL Erweitert]** aus, aktivieren Sie das Kontrollkästchen **[!UICONTROL Automatisches Hochladen aktivieren]** und wählen Sie dann **[!UICONTROL OK]** aus. Jetzt müssen Sie den DAM-Asset-Workflow so konfigurieren, dass er das Hochladen in Dynamic Media Classic umfasst.
 
@@ -402,7 +400,6 @@ Wenn ein Asset zu Experience Manager Assets hinzugefügt wird, wird es automatis
    >
    >* Beim Hinzufügen von Assets nach der Automatisierung werden diese nicht in Dynamic Media Classic hochgeladen, wenn sie sich nicht im CQ-Zielordner befinden.
    >* Experience Manager bettet alle Metadaten als XMP ein, bevor sie in Dynamic Media Classic hochgeladen werden, sodass alle Eigenschaften auf dem Metadatenknoten in Dynamic Media Classic als XMP verfügbar sind.
-
 
 ### Konfigurieren des Status (veröffentlicht/unveröffentlicht) der auf Dynamic Media Classic gepushten Assets {#configuring-the-state-published-unpublished-of-assets-pushed-to-scene}
 
@@ -448,7 +445,7 @@ Beachten Sie die folgenden Beschränkungen, wenn Sie diese Funktion verwenden:
 
 **So legen Sie den Status der auf Dynamic Media Classic gepushten Assets auf „unveröffentlicht“ fest:**
 
-1. Wählen Sie das Experience Manager-Symbol aus und navigieren Sie zu **[!UICONTROL Implementierung]** > **[!UICONTROL Cloud-Services]**.
+1. Wählen Sie das Experience Manager-Symbol aus und navigieren Sie zu **[!UICONTROL Bereitstellung]** > **[!UICONTROL Cloud-Services]**.
 1. Wählen Sie **[!UICONTROL Dynamic Media Classic]** aus.
 1. Wählen Sie Ihre Konfiguration in Dynamic Media Classic aus.
 1. Wählen Sie die Registerkarte **[!UICONTROL Erweitert]** aus.
@@ -505,7 +502,7 @@ Es kann immer nur eine Dynamic Media Classic-Konfiguration als Standard markiert
 
 **So konfigurieren Sie eine Standardkonfiguration:**
 
-1. Wählen Sie das Experience Manager-Symbol aus und navigieren Sie zu **[!UICONTROL Implementierung]** > **[!UICONTROL Cloud-Services]**.
+1. Wählen Sie das Experience Manager-Symbol aus und navigieren Sie zu **[!UICONTROL Bereitstellung]** > **[!UICONTROL Cloud-Services]**.
 1. Wählen Sie **[!UICONTROL Dynamic Media Classic]** aus.
 1. Wählen Sie Ihre Konfiguration in Dynamic Media Classic aus.
 1. Um die Konfiguration zu öffnen, wählen Sie **[!UICONTROL Bearbeiten]** aus.
@@ -524,7 +521,7 @@ Sie können den bedarfsabhängigen Ordner, in den Assets hochgeladen werden, in 
 
 **So konfigurieren Sie den Ad-hoc-Ordner:**
 
-1. Wählen Sie das Experience Manager-Symbol aus und navigieren Sie zu **[!UICONTROL Implementierung]** > **[!UICONTROL Cloud-Services]**.
+1. Wählen Sie das Experience Manager-Symbol aus und navigieren Sie zu **[!UICONTROL Bereitstellung]** > **[!UICONTROL Cloud-Services]**.
 1. Wählen Sie **[!UICONTROL Dynamic Media Classic]** aus.
 1. Wählen Sie Ihre Konfiguration in Dynamic Media Classic aus.
 1. Um die Konfiguration zu öffnen, wählen Sie **[!UICONTROL Bearbeiten]** aus.
@@ -590,11 +587,11 @@ Wenn Sie Probleme bei der Integration von Experience Manager mit Dynamic Media C
 * Überprüfen Sie, ob das Asset, das sie hochladen, im **[!UICONTROL CQ-Zielordner]** vorhanden ist (Sie geben diesen Ordner in der Dynamic Media Classic-Cloud-Konfiguration an).
 * Falls nicht, müssen Sie die Cloud-Konfiguration in den **[!UICONTROL Seiteneigenschaften]** zu dieser Seite konfigurieren, um das Hochladen in den **[!UICONTROL CQ-Ad-hoc-Ordner]** zu ermöglichen.
 
-* Überprüfen Sie die Protokolle auf etwaige Informationen.
+* Überprüfen Sie die Protokolle auf Informationen.
 
 **Wenn Ihre Videovorgaben nicht angezeigt werden:**
 
-* Stellen Sie sicher, dass Sie die Cloud-Konfiguration dieser Seite durch die **[!UICONTROL Seiteneigenschaften]** konfiguriert haben. Videovorgaben sind in der Dynamic Media Classic-Videokomponente verfügbar.
+* Stellen Sie sicher, dass Sie die Cloud-Konfiguration dieser Seite konfiguriert haben über **[!UICONTROL Seiteneigenschaften]**. Videovorgaben sind in der Dynamic Media Classic-Videokomponente verfügbar.
 
 **Wenn Ihre Video-Assets nicht in Experience Manager wiedergegeben werden:**
 
@@ -606,7 +603,7 @@ Wenn Sie Probleme bei der Integration von Experience Manager mit Dynamic Media C
 * Stellen Sie sicher, dass Sie die Cloud-Services-Konfiguration konfiguriert haben, um das automatische Hochladen zu aktivieren, und dass Sie den DAM-Asset-Workflow aktualisiert und gespeichert haben, sodass er das Hochladen in Dynamic Media Classic umfasst.
 * Stellen Sie beim Hochladen eines Bildes in einen Unterordner des Dynamic Media Classic-Zielordners sicher, dass Sie eine der folgenden Aktionen ausführen:
 
-   * Stellen Sie sicher, dass die Namen aller Assets unabhängig von ihrem Speicherort eindeutig sind. Andernfalls wird das Asset im Hauptzielordner gelöscht und es verbleibt nur das Asset im Unterordner.
+   * Stellen Sie sicher, dass die Namen aller Assets unabhängig vom Speicherort eindeutig sind. Andernfalls wird das Asset im Hauptzielordner gelöscht und nur das Asset im Unterordner bleibt erhalten.
    * Ändern Sie, wie Dynamic Media Classic Assets im Bereich „Einstellungen“ des Dynamic Media Classic-Kontos überschreibt. Legen Sie nicht fest, dass Dynamic Media Classic Assets unabhängig vom Speicherort überschreibt, wenn Sie Assets mit dem gleichen Namen in Unterordnern verwenden.
 
 **Wenn Ihre gelöschten Assets oder Ordner nicht zwischen Dynamic Media Classic und Experience Manager synchronisiert werden:**

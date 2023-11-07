@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4609'
-ht-degree: 60%
+source-wordcount: '4602'
+ht-degree: 59%
 
 ---
 
@@ -85,7 +85,7 @@ Zwar werden alle Abfragen vor der Ausführung in SQL2 konvertiert, jedoch ist de
 
 ### Das Tool „Abfrage erläutern“ {#the-explain-query-tool}
 
-Wie bei jeder Abfragesprache besteht der erste Schritt zur Optimierung einer Abfrage darin, zu verstehen, wie sie ausgeführt wird. Dies ermöglicht das [Tool „Abfrage erläutern“](/help/sites-administering/operations-dashboard.md#explain-query), das zum Vorgangs-Dashboard gehört. Mithilfe dieses Tools kann eine Abfrage geladen und erläutert werden. Es wird eine Warnung angezeigt, wenn die Abfrage Probleme mit einem großen Repository und einer langen Laufzeit sowie mit den verwendeten Indizes verursacht. Das Tool kann auch eine Liste langsamer und gängiger Abfragen laden, die dann erläutert und optimiert werden können.
+Wie bei jeder Abfragesprache besteht der erste Schritt zur Optimierung einer Abfrage darin, zu verstehen, wie sie ausgeführt wird. Dies ermöglicht das [Tool „Abfrage erläutern“](/help/sites-administering/operations-dashboard.md#explain-query), das zum Vorgangs-Dashboard gehört. Mithilfe dieses Tools kann eine Abfrage geladen und erläutert werden. Eine Warnung wird angezeigt, wenn die Abfrage Probleme mit einem großen Repository und einer langen Laufzeit sowie mit den verwendeten Indizes verursacht. Das Tool kann auch eine Liste langsamer und gängiger Abfragen laden, die dann erläutert und optimiert werden können.
 
 ### DEBUG-Protokollierung für Abfragen {#debug-logging-for-queries}
 
@@ -109,7 +109,7 @@ Nachdem Sie in der JMX-Konsole angemeldet sind, suchen Sie nach **Lucene-Indexst
 
 Sehen Sie sich die MBean mit dem Namen **Oak Query Statistics**.
 
-Um Ihre Indizes mit einem Tool wie [Luke](https://code.google.com/archive/p/luke/) durchzugehen, müssen Sie die Oak-Konsole aufrufen und den Index vom `NodeStore` in einem Dateisystemverzeichnis sichern. Anweisungen hierzu finden Sie in der [Lucene-Dokumentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+Um Ihre Indizes mit einem Tool wie [Luke](https://code.google.com/archive/p/luke/) durchzugehen, müssen Sie die Oak-Konsole aufrufen und den Index vom `NodeStore` in einem Dateisystemverzeichnis sichern. Anweisungen hierzu finden Sie im Abschnitt [Lucene-Dokumentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 Sie können die Indizes in Ihrem System auch im JSON-Format extrahieren. Dazu müssen Sie `https://server:port/oak:index.tidy.-1.json`
 
@@ -189,7 +189,7 @@ In der Oak-Dokumentation für Lucene-Indizes sind verschiedene Überlegungen auf
 * In einem Eigenschaftenindex trägt ein eindeutiger Eigenschaftsname dazu bei, die Indexgröße zu reduzieren, aber für Lucene-Indizes sollten `nodeTypes` und `mixins` zum Erstellen kohäsiver Indizes verwendet werden. Die Abfrage nach einem bestimmten `nodeType` oder `mixin` ist leistungsstärker als eine `nt:base`-Abfrage. Definieren Sie bei diesem Ansatz `indexRules` für die fraglichen `nodeTypes`.
 
 * Wenn Ihre Abfragen nur unter bestimmten Pfaden ausgeführt werden, erstellen Sie diese Indizes unter diesen Pfaden. Indizes müssen nicht im Stammverzeichnis des Repositorys gespeichert werden.
-* Es wird empfohlen, einen einzigen Index zu verwenden, wenn alle zu indizierenden Eigenschaften miteinander zusammenhängen, damit Lucene so viele Eigenschaftseinschränkungen wie möglich nativ bewerten kann. Außerdem verwendet eine Abfrage nur einen Index, auch wenn ein Join ausgeführt wird.
+* Verwenden Sie einen einzigen Index, wenn alle zu indizierenden Eigenschaften miteinander verbunden sind, damit Lucene so viele Eigenschaftsbeschränkungen wie möglich nativ bewerten kann. Außerdem verwendet eine Abfrage nur einen Index, auch wenn ein Join ausgeführt wird.
 
 ### CopyOnRead {#copyonread}
 
@@ -426,7 +426,7 @@ Die Textvorextraktion kann nicht für neue Inhalte verwendet werden, die zum Rep
 
 Neue Inhalte, die dem Repository hinzugefügt werden, werden nämlich automatisch und schrittweise durch die asynchrone Volltextindizierung indiziert (standardmäßig alle 5 Sekunden).
 
-Bei normalem AEM-Betrieb, etwa beim Hochladen von Assets über die Web-Benutzeroberfläche oder bei der programmgesteuerten Aufnahme von Assets, führt AEM eine automatische und schrittweise Volltextindizierung des neuen Binärinhalts durch. Da die Datenmenge inkrementell und relativ klein ist (in etwa die Datenmenge, die in 5 Sekunden in das Repository persistiert werden kann), kann AEM während der Indizierung eine Volltextextraktion aus den Binärdateien durchführen, ohne die Gesamtleistung des Systems zu beeinträchtigen.
+Unter normalen AEM, z. B. beim Hochladen von Assets über die Web-Benutzeroberfläche oder bei der programmatischen Erfassung von Assets, wird AEM den neuen binären Inhalt automatisch und inkrementell mit Volltext indizieren. Da die Datenmenge inkrementell und relativ klein ist (in etwa die Datenmenge, die in 5 Sekunden in das Repository persistiert werden kann), kann AEM während der Indizierung eine Volltextextraktion aus den Binärdateien durchführen, ohne die Gesamtleistung des Systems zu beeinträchtigen.
 
 #### Voraussetzungen für die Verwendung der Textvorextraktion {#prerequisites-to-using-text-pre-extraction}
 

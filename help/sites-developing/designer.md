@@ -1,19 +1,15 @@
 ---
 title: Designs und der Designer
-seo-title: Designs and the Designer
-description: Sie müssen ein Design für Ihre Website erstellen. In AEM verwenden Sie dazu den Designer.
-seo-description: You will need to create a design for your website and in AEM, you do so by using the Designer
-uuid: b880ab49-8bea-4925-9b7b-e911ebda14ee
+description: Erfahren Sie, wie Sie mit Designer ein Design für Ihre Website und in AEM erstellen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
 exl-id: c81c5910-b6c9-41bd-8840-a6782792701f
-source-git-commit: adbdff9ff5b5bd8f5f6b22fb724a0e5273072de2
-workflow-type: ht
-source-wordcount: '362'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 70%
 
 ---
 
@@ -21,15 +17,15 @@ ht-degree: 100%
 
 >[!CAUTION]
 >
->In diesem Artikel wird erläutert, wie Sie Websites über die klassische Benutzeroberfläche erstellen. Adobe empfiehlt, die neuesten AEM-Technologien für Ihre Websites zu nutzen, wie ausführlich im Artikel [Erste Schritte bei der Entwicklung von AEM Sites](/help/sites-developing/getting-started.md) beschrieben.
+>In diesem Artikel wird erläutert, wie Sie Websites über die klassische Benutzeroberfläche erstellen. Adobe empfiehlt die Verwendung der neuesten AEM für Ihre Websites, wie im Artikel ausführlich beschrieben [Erste Schritte bei der Entwicklung von AEM Sites](/help/sites-developing/getting-started.md).
 
 Mit dem Designer erstellen Sie mit der [klassischen Benutzeroberfläche](/help/release-notes/touch-ui-features-status.md) in AEM einen Entwurf für Ihre Website.
 
 >[!NOTE]
 >
->Weitere Informationen zum Webzugriff finden Sie unter [AEM und Richtlinien für barrierefreien Webzugang](/help/managing/web-accessibility.md).
+>Weitere Informationen zur Barrierefreiheit im Web finden Sie unter [AEM und Richtlinien für barrierefreien Web-Zugang](/help/managing/web-accessibility.md).
 
-## Verwenden des Designers {#using-the-designer}
+## Verwenden von Designer {#using-the-designer}
 
 Das Design wird auf der Registerkarte **Tools** im Abschnitt **Designs** definiert:
 
@@ -43,11 +39,11 @@ Designs werden gespeichert unter `/apps/<your-project>`. Der Pfad zu einem Desig
 
 >[!NOTE]
 >
->Alle Änderungen, die im Designmodus an einer Seite vorgenommen werden, werden unterhalb des Designknotens der Website beibehalten und automatisch auf alle Seiten mit demselben Design angewendet.
+>Alle Änderungen, die auf einer Seite im Designmodus vorgenommen werden, bleiben unter dem Design-Knoten der Site erhalten und werden automatisch auf alle Seiten angewendet, die dasselbe Design aufweisen.
 
-## Voraussetzungen {#what-you-will-need}
+## Was Sie benötigen {#what-you-will-need}
 
-Zur Realisierung des Design benötigen Sie:
+Zur Realisierung Ihres Designs benötigen Sie Folgendes:
 
 **CSS**: Cascading Style Sheets definieren die Formate bestimmter Bereiche auf Ihren Seiten.
 **Bild**: Alle Bilder, die Sie für Funktionen wie Hintergrundbilder oder Schaltflächen benötigen.

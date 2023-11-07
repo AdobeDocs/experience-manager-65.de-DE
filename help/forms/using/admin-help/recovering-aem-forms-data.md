@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
-workflow-type: ht
-source-wordcount: '1122'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1121'
+ht-degree: 97%
 
 ---
 
@@ -124,7 +124,7 @@ Falls der globale Dokumentenspeicher an einem anderen als dem ursprünglichen Sp
 
 >[!NOTE]
 >
->Die Komponentenbereitstellung schlägt unter Windows fehl, wenn sich der Ordner des globalen Dokumentenspeichers im Stammordner des Laufwerks befindet (z. B. D:\). Beim globalen Dokumentenspeicher müssen Sie daher sicherstellen, dass sich der Ordner nicht im Stammordners des Laufwerks befindet, sondern in einem Unterverzeichnis. Der Ordner sollte beispielsweise „D:\GDS“ und nicht einfach „D:\“ lauten.
+>Die Komponentenbereitstellung schlägt unter Windows fehl, wenn sich der Ordner des globalen Dokumentenspeichers im Stammordner des Laufwerks befindet (z. B. D:\). Beim globalen Dokumentenspeicher müssen Sie sicherstellen, dass sich der Ordner nicht im Stammverzeichnis des Laufwerks befindet, sondern in einem Unterverzeichnis. Der Ordner sollte beispielsweise „D:\GDS“ und nicht einfach „D:\“ lauten.
 
 ## Wiederherstellen des globalen Dokumentenspeichers in einer Cluster-Umgebung {#recovering-the-gds-to-a-clustered-environment}
 

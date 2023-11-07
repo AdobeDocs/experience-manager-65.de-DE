@@ -1,20 +1,16 @@
 ---
 title: Verwalten von Benutzern
-seo-title: Managing Users
-description: Verwenden Sie die User Management-API, um Client-Programme zu erstellen, die Rollen, Berechtigungen und Prinzipale (welche Benutzer oder Gruppen sein können) verwalten und Benutzer authentifizieren können.
-seo-description: Use the User Management API to create client applications that can manage roles, permissions, and principals (which can be users or groups), as well as authenticate users.
-uuid: 68d8a0bc-6e3d-4286-ba5c-534dcf58cb84
+description: Verwenden Sie die User Management-API, um Clientanwendungen zu erstellen, die Rollen, Berechtigungen und Prinzipale verwalten (d. h. Benutzer oder Gruppen) und Benutzer authentifizieren können.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6226'
-ht-degree: 99%
+source-wordcount: '6218'
+ht-degree: 82%
 
 ---
 
@@ -24,7 +20,7 @@ ht-degree: 99%
 
 **Über User Management**
 
-Sie können die User Management-API verwenden, um Client-Programme zu erstellen, die Rollen, Berechtigungen und Prinzipale (die Benutzer oder Gruppen sein können) verwalten und Benutzer authentifizieren können. Die User Management-API besteht aus den folgenden AEM Forms-APIs:
+Sie können die User Management-API verwenden, um Clientanwendungen zu erstellen, mit denen Rollen, Berechtigungen und Prinzipale (d. h. Benutzer oder Gruppen) verwaltet und Benutzer authentifiziert werden können. Die User Management-API besteht aus den folgenden AEM Forms-APIs:
 
 * Directory Manager Service-API
 * Authentication Manager Service-API
@@ -142,7 +138,7 @@ Wenn Sie einen neuen Benutzer mithilfe der Directory Manager Service-API hinzuf�
 
 **Hinzufügen des Benutzers zu AEM Forms**
 
-Nachdem Sie Benutzerinformationen definiert haben, können Sie den Benutzer zu AEM Forms hinzufügen. Um einen Benutzer hinzuzufügen, rufen Sie die Methode `DirectoryManagerServiceClient` des `createLocalUser`-Objekts auf.
+Nachdem Sie Benutzerinformationen definiert haben, können Sie den Benutzer zu AEM Forms hinzufügen. Um einen Benutzer hinzuzufügen, rufen Sie die `DirectoryManagerServiceClient` -Objekt `createLocalUser` -Methode.
 
 **Überprüfen, ob der Benutzer hinzugefügt wurde**
 
@@ -166,7 +162,7 @@ So fügen Sie Benutzer mithilfe der Directory Manager Service-API (Java) hinzu:
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-usermanager-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-usermanager-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie einen DirectoryManagerServices-Client.
 
@@ -175,31 +171,31 @@ So fügen Sie Benutzer mithilfe der Directory Manager Service-API (Java) hinzu:
 1. Definieren Sie Benutzerinformationen.
 
    * Erstellen Sie ein Objekt `UserImpl`, indem Sie den Konstruktor verwenden.
-   * Legen Sie den Domain-Namen fest, indem Sie die Methode `setDomainName` des `UserImpl`-Objekts aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Domain-Namen angibt.
-   * Legen Sie den Prinzipaltyp fest, indem Sie die `setPrincipalType`-Methode des `UserImpl`-Objekts aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Typ des Benutzers angibt. Sie können beispielsweise `USER` angeben.
-   * Legen Sie den Wert der Benutzerkennung fest, indem Sie die `setUserid`-Methode des `UserImpl`-Objekts aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Wert der Benutzerkennung angibt. Sie können beispielsweise `wblue` angeben.
-   * Legen Sie den kanonischen Namen fest, indem Sie die `setCanonicalName`-Methode des `UserImpl`-Objekts aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den kanonischen Namen des Benutzers angibt. Sie können beispielsweise `wblue` angeben.
-   * Legen Sie den Vornamen fest, indem Sie die `setGivenName`-Methode des `UserImpl`-Objekts aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Vornamen des Benutzers angibt. Sie können beispielsweise `Wendy` angeben.
-   * Legen Sie den Familiennamen fest, indem Sie die `setFamilyName`-Methode des `UserImpl`-Objekts aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Familiennamen des Benutzers angibt. Sie können beispielsweise `Blue` angeben.
+   * Legen Sie den Hauptnamen fest, indem Sie die `UserImpl` -Objekt `setDomainName` -Methode. Übergeben Sie einen Zeichenfolgenwert, der den Domain-Namen angibt.
+   * Legen Sie den Prinzipaltyp fest, indem Sie die `UserImpl` -Objekt `setPrincipalType` -Methode. Übergeben Sie einen Zeichenfolgenwert, der den Typ des Benutzers angibt. Sie können beispielsweise `USER` angeben.
+   * Legen Sie den Benutzer-ID-Wert fest, indem Sie die `UserImpl` -Objekt `setUserid` -Methode. Übergeben Sie einen Zeichenfolgenwert, der den Wert der Benutzerkennung angibt. Sie können beispielsweise `wblue` angeben.
+   * Legen Sie den kanonischen Namen fest, indem Sie die `UserImpl` -Objekt `setCanonicalName` -Methode. Übergeben Sie einen string -Wert, der den kanonischen Namen des Benutzers angibt. Sie können beispielsweise `wblue` angeben.
+   * Legen Sie den Vornamen fest, indem Sie die `UserImpl` -Objekt `setGivenName` -Methode. Übergeben Sie einen string -Wert, der den Vornamen des Benutzers angibt. Sie können beispielsweise `Wendy` angeben.
+   * Legen Sie den Familiennamen fest, indem Sie die `UserImpl` -Objekt `setFamilyName` -Methode. Übergeben Sie einen string -Wert, der den Familiennamen des Benutzers angibt. Sie können beispielsweise `Blue` angeben.
 
    >[!NOTE]
    >
-   >Rufen Sie eine Methode auf, die zum `UserImpl`-Objekt gehört, um andere Werte festzulegen. Sie können beispielsweise den Wert des Gebietsschemas festlegen, indem Sie die `setLocale`-Methode des `UserImpl`-Objekts aufrufen.
+   >Rufen Sie eine Methode auf, die zum `UserImpl`-Objekt gehört, um andere Werte festzulegen. Sie können beispielsweise den Wert des Gebietsschemas festlegen, indem Sie die `UserImpl` -Objekt `setLocale` -Methode.
 
 1. Fügen Sie den Benutzer zu AEM Forms hinzu.
 
-   Rufen Sie die `createLocalUser`-Methode des `DirectoryManagerServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `DirectoryManagerServiceClient` -Objekt `createLocalUser` -Methode verwenden und die folgenden Werte übergeben:
 
    * Das `UserImpl`-Objekt, das den neuen Benutzer darstellt
-   * Einen Zeichenfolgenwert, der das Kennwort des Benutzers darstellt
+   * Ein string -Wert, der das Kennwort des Benutzers darstellt
 
    Die `createLocalUser`-Methode gibt einen Zeichenfolgenwert zurück, der den Wert der lokalen Benutzerkennung angibt.
 
 1. Stellen Sie sicher, dass der Benutzer hinzugefügt wurde.
 
    * Erstellen Sie ein Objekt `PrincipalSearchFilter`, indem Sie den Konstruktor verwenden.
-   * Legen Sie den Wert der Benutzerkennung fest, indem Sie die `setUserId`-Methode des `PrincipalSearchFilter`-Objekts aufrufen. Ein Zeichenfolgenwert, der den Wert der Benutzerkennung darstellt.
-   * Rufen Sie die `findPrincipals`-Methode des `DirectoryManagerServiceClient`-Objekts auf, und übergeben Sie das `PrincipalSearchFilter`-Objekt. Diese Methode gibt eine `java.util.List`-Instanz zurück, bei der jedes Element ein `User`-Objekt ist. Iterieren Sie durch die `java.util.List`-Instanz, um den Benutzer zu suchen.
+   * Legen Sie den Benutzer-ID-Wert fest, indem Sie die `PrincipalSearchFilter` -Objekt `setUserId` -Methode. Ein Zeichenfolgenwert, der den Wert der Benutzerkennung darstellt.
+   * Rufen Sie die Methode `findPrincipals` des `DirectoryManagerServiceClient`-Objekts auf und übergeben Sie das `PrincipalSearchFilter`-Objekt. Diese Methode gibt eine `java.util.List`-Instanz zurück, bei der jedes Element ein `User`-Objekt ist. Iterieren Sie durch die `java.util.List`-Instanz, um den Benutzer zu suchen.
 
 **Siehe auch**
 
@@ -228,7 +224,7 @@ Fügen Sie Benutzer mithilfe der Directory Manager-Service-API (Webservice) hinz
    * Erstellen Sie ein `DirectoryManagerServiceClient`-Objekt, indem Sie dessen Standardkonstruktor verwenden.
    * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `DirectoryManagerServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Stellen Sie sicher, dass Sie `?blob=mtom` angeben.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `DirectoryManagerServiceClient.Endpoint.Binding`-Feldes abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -239,26 +235,26 @@ Fügen Sie Benutzer mithilfe der Directory Manager-Service-API (Webservice) hinz
 1. Definieren Sie Benutzerinformationen.
 
    * Erstellen Sie ein Objekt `UserImpl`, indem Sie den Konstruktor verwenden.
-   * Legen Sie den Domain-Namen fest, indem Sie dem Feld `domainName` des `UserImpl`-Objekts einen Zeichenfolgenwert zuweisen.
-   * Legen Sie den Prinzipaltyp fest, indem Sie dem Feld `principalType` des `UserImpl`-Objekts einen Zeichenfolgenwert zuweisen. Sie können beispielsweise `USER` angeben.
-   * Legen Sie den Wert der Benutzerkennung fest, indem Sie dem Feld `userid` des `UserImpl`-Objekts einen Zeichenfolgenwert zuweisen.
-   * Legen Sie den kanonischen Namenswert fest, indem Sie dem Feld `canonicalName` des `UserImpl`-Objekts einen Zeichenfolgenwert zuweisen.
-   * Legen Sie den angegebenen Namenswert fest, indem Sie dem Feld `givenName` des `UserImpl`-Objekts einen Zeichenfolgenwert zuweisen.
-   * Legen Sie den Wert des Familiennamens fest, indem Sie dem Feld `familyName` des `UserImpl`-Objekts einen Zeichenfolgenwert zuweisen.
+   * Legen Sie den Hauptnamen fest, indem Sie dem `UserImpl` -Objekt `domainName` -Feld.
+   * Legen Sie den Prinzipaltyp fest, indem Sie dem `UserImpl` -Objekt `principalType` -Feld. Sie können beispielsweise `USER` angeben.
+   * Den Benutzer-ID-Wert durch Zuweisen eines Zeichenfolgenwerts zum `UserImpl` -Objekt `userid` -Feld.
+   * Den kanonischen Namenswert durch Zuweisung eines Zeichenfolgenwerts zum `UserImpl` -Objekt `canonicalName` -Feld.
+   * Legen Sie den angegebenen Namenswert fest, indem Sie dem `UserImpl` -Objekt `givenName` -Feld.
+   * Legen Sie den Familiennamen-Wert fest, indem Sie dem `UserImpl` -Objekt `familyName` -Feld.
 
 1. Fügen Sie den Benutzer zu AEM Forms hinzu.
 
-   Rufen Sie die `createLocalUser`-Methode des `DirectoryManagerServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `DirectoryManagerServiceClient` -Objekt `createLocalUser` -Methode verwenden und die folgenden Werte übergeben:
 
    * Das `UserImpl`-Objekt, das den neuen Benutzer darstellt
-   * Einen Zeichenfolgenwert, der das Kennwort des Benutzers darstellt
+   * Ein string -Wert, der das Kennwort des Benutzers darstellt
 
    Die `createLocalUser`-Methode gibt einen Zeichenfolgenwert zurück, der den Wert der lokalen Benutzerkennung angibt.
 
 1. Stellen Sie sicher, dass der Benutzer hinzugefügt wurde.
 
    * Erstellen Sie ein Objekt `PrincipalSearchFilter`, indem Sie den Konstruktor verwenden.
-   * Legen Sie den Wert der Benutzerkennung des Benutzers fest, indem Sie dem Feld `userId` des `PrincipalSearchFilter`-Objekts einen Zeichenfolgenwert zuweisen, der den Wert der Benutzerkennung darstellt.
+   * Legen Sie den Benutzer-ID-Wert des Benutzers fest, indem Sie dem `PrincipalSearchFilter` -Objekt `userId` -Feld.
    * Rufen Sie die Methode `findPrincipals` des `DirectoryManagerServiceClient`-Objekts auf und übergeben Sie das `PrincipalSearchFilter`-Objekt. Diese Methode gibt ein `MyArrayOfUser`-Sammlungsobjekt zurück, bei dem jedes Element ein `User`-Objekt ist. Iterieren Sie durch die `MyArrayOfUser`-Sammlung, um den Benutzer zu finden.
 
 **Siehe auch**
@@ -296,7 +292,7 @@ Sie können einen Benutzer angeben, der gelöscht werden soll, indem Sie den Ken
 
 **Löschen des Benutzers aus AEM Forms**
 
-Um einen Benutzer zu löschen, rufen Sie die Methode `deleteLocalUser` des `DirectoryManagerServiceClient`-Objekts auf.
+Um einen Benutzer zu löschen, rufen Sie die `DirectoryManagerServiceClient` -Objekt `deleteLocalUser` -Methode.
 
 **Siehe auch**
 
@@ -316,7 +312,7 @@ So löschen Sie Benutzer mithilfe der Directory Manager Service-API (Java):
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-usermanager-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-usermanager-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie einen DirectoryManagerService-Client.
 
@@ -325,12 +321,12 @@ So löschen Sie Benutzer mithilfe der Directory Manager Service-API (Java):
 1. Geben Sie den zu löschenden Benutzer an.
 
    * Erstellen Sie ein Objekt `PrincipalSearchFilter`, indem Sie den Konstruktor verwenden.
-   * Legen Sie den Wert der Benutzerkennung fest, indem Sie die `setUserId`-Methode des `PrincipalSearchFilter`-Objekts aufrufen. Ein Zeichenfolgenwert, der den Wert der Benutzerkennung darstellt.
-   * Rufen Sie die `findPrincipals`-Methode des `DirectoryManagerServiceClient`-Objekts auf, und übergeben Sie das `PrincipalSearchFilter`-Objekt. Diese Methode gibt eine `java.util.List`-Instanz zurück, bei der jedes Element ein `User`-Objekt ist. Iterieren Sie durch die `java.util.List`-Instanz, um den zu löschenden Benutzer zu suchen.
+   * Legen Sie den Benutzer-ID-Wert fest, indem Sie die `PrincipalSearchFilter` -Objekt `setUserId` -Methode. Ein Zeichenfolgenwert, der den Wert der Benutzerkennung darstellt.
+   * Rufen Sie die Methode `findPrincipals` des `DirectoryManagerServiceClient`-Objekts auf und übergeben Sie das `PrincipalSearchFilter`-Objekt. Diese Methode gibt eine `java.util.List`-Instanz zurück, bei der jedes Element ein `User`-Objekt ist. Iterieren Sie durch die `java.util.List`-Instanz, um den zu löschenden Benutzer zu suchen.
 
 1. Löschen Sie den Benutzer aus AEM Forms.
 
-   Rufen Sie die `deleteLocalUser`-Methode des `DirectoryManagerServiceClient`-Objekts auf und übergeben Sie den Wert des `oid`-Feldes des `User`-Objekts. Rufen Sie die `getOid`-Methode des `User`-Objekts auf. Verwenden Sie das `User`-Objekt, das aus der `java.util.List`-Instanz abgerufen wurde.
+   Rufen Sie die `DirectoryManagerServiceClient` -Objekt `deleteLocalUser` -Methode verwenden und den Wert der `User` -Objekt `oid` -Feld. Rufen Sie die `User` -Objekt `getOid` -Methode. Verwenden Sie das `User`-Objekt, das aus der `java.util.List`-Instanz abgerufen wurde.
 
 **Siehe auch**
 
@@ -350,14 +346,14 @@ Löschen Sie Benutzer mithilfe der Directory Manager-Service-API (Webservice):
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-usermanager-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-usermanager-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie einen DirectoryManagerService-Client.
 
    * Erstellen Sie ein `DirectoryManagerServiceClient`-Objekt, indem Sie dessen Standardkonstruktor verwenden.
    * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `DirectoryManagerServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Stellen Sie sicher, dass Sie `blob=mtom.` angeben
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `DirectoryManagerServiceClient.Endpoint.Binding`-Feldes abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -368,12 +364,12 @@ Löschen Sie Benutzer mithilfe der Directory Manager-Service-API (Webservice):
 1. Geben Sie den zu löschenden Benutzer an.
 
    * Erstellen Sie ein Objekt `PrincipalSearchFilter`, indem Sie den Konstruktor verwenden.
-   * Legen Sie den Wert der Benutzerkennung durch Zuweisen eines Zeichenfolgenwerts zum `userId`-Feld des `PrincipalSearchFilter`-Objekts fest.
-   * Rufen Sie die `findPrincipals`-Methode des `DirectoryManagerServiceClient`-Objekts auf und übergeben Sie das `PrincipalSearchFilter`-Objekt. Diese Methode gibt ein `MyArrayOfUser`-Sammlungsobjekt zurück, bei dem jedes Element ein `User`-Objekt ist. Iterieren Sie durch die `MyArrayOfUser`-Sammlung, um den Benutzer zu finden. Das `User`-Objekt, das aus dem `MyArrayOfUser`-Sammlungsobjekt abgerufen wurde, wird zum Löschen des Benutzers verwendet.
+   * Den Benutzer-ID-Wert durch Zuweisen eines Zeichenfolgenwerts zum `PrincipalSearchFilter` -Objekt `userId` -Feld.
+   * Rufen Sie die Methode `findPrincipals` des `DirectoryManagerServiceClient`-Objekts auf und übergeben Sie das `PrincipalSearchFilter`-Objekt. Diese Methode gibt ein `MyArrayOfUser`-Sammlungsobjekt zurück, bei dem jedes Element ein `User`-Objekt ist. Iterieren Sie durch die `MyArrayOfUser`-Sammlung, um den Benutzer zu finden. Das `User`-Objekt, das aus dem `MyArrayOfUser`-Sammlungsobjekt abgerufen wurde, wird zum Löschen des Benutzers verwendet.
 
 1. Löschen Sie den Benutzer aus AEM Forms.
 
-   Löschen Sie den Benutzer, indem Sie den Wert des `oid`-Feldes des `User`-Objekts an die `deleteLocalUser`-Methode des `DirectoryManagerServiceClient`-Objekts übergeben.
+   Löschen Sie den Benutzer, indem Sie die `User` -Objekt `oid` Feldwert auf `DirectoryManagerServiceClient` -Objekt `deleteLocalUser` -Methode.
 
 **Siehe auch**
 
@@ -448,7 +444,7 @@ So erstellen Sie eine Gruppe mithilfe der Directory Manager Service-API (Java):
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-usermanager-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-usermanager-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie einen DirectoryManagerService-Client.
 
@@ -457,26 +453,26 @@ So erstellen Sie eine Gruppe mithilfe der Directory Manager Service-API (Java):
 1. Ermitteln Sie, ob die Gruppe vorhanden ist.
 
    * Erstellen Sie ein Objekt `PrincipalSearchFilter`, indem Sie den Konstruktor verwenden.
-   * Legen Sie den Prinzipaltyp fest, indem Sie Die Methode `setPrincipalType` des `PrincipalSearchFilter`-Objekts aufrufen. Übergeben Sie den Wert `com.adobe.idp.um.api.infomodel.Principal.PRINCIPALTYPE_GROUP`.
-   * Legen Sie die Domain fest, indem Sie die Methode `setSpecificDomainName` des `PrincipalSearchFilter`-Objekts aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Domain-Namen angibt.
-   * Um eine Gruppe zu finden, rufen Sie die Methode `findPrincipals` des `DirectoryManagerServiceClient`-Objekts auf (ein Prinzipal kann eine Gruppe sein). Übergeben Sie das `PrincipalSearchFilter`-Objekt, das den Prinzipaltyp und den Domain-Namen angibt. Diese Methode gibt eine `java.util.List`-Instanz zurück, bei der jedes Element eine `Group`-Instanz ist. Jede Gruppeninstanz entspricht dem Filter, der mithilfe des `PrincipalSearchFilter`-Objekts angegeben wird.
+   * Legen Sie den Prinzipaltyp fest, indem Sie die `PrincipalSearchFilter` -Objekt `setPrincipalType` -Objekt. Übergeben Sie den Wert `com.adobe.idp.um.api.infomodel.Principal.PRINCIPALTYPE_GROUP`.
+   * Festlegen der Domäne durch Aufrufen der `PrincipalSearchFilter` -Objekt `setSpecificDomainName` -Objekt. Übergeben Sie einen Zeichenfolgenwert, der den Domain-Namen angibt.
+   * Um eine Gruppe zu finden, rufen Sie die `DirectoryManagerServiceClient` -Objekt `findPrincipals` -Methode (ein Prinzipal kann eine Gruppe sein). Übergeben Sie das `PrincipalSearchFilter`-Objekt, das den Prinzipaltyp und den Domain-Namen angibt. Diese Methode gibt eine `java.util.List`-Instanz zurück, bei der jedes Element eine `Group`-Instanz ist. Jede Gruppeninstanz entspricht dem Filter, der mithilfe des `PrincipalSearchFilter`-Objekts angegeben wird.
    * Iterieren Sie durch die `java.util.List`-Instanz. Rufen Sie für jedes Element den Gruppennamen ab. Stellen Sie sicher, dass der Gruppenname nicht mit dem neuen Gruppennamen übereinstimmt.
 
 1. Erstellen Sie die Gruppe.
 
-   * Wenn die Gruppe nicht existiert, rufen Sie die Methode `setCommonName` des `Group`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Gruppennamen angibt.
-   * Rufen Sie die Methode `setDescription` des `Group`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der die Gruppenbeschreibung angibt.
-   * Rufen Sie die Methode `setDomainName` des `Group`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Domain-Namen angibt.
-   * Rufen Sie die Methode `createLocalGroup` des `DirectoryManagerServiceClient`-Objekts auf und übergeben Sie die `Group`-Instanz.
+   * Wenn die Gruppe nicht vorhanden ist, rufen Sie die `Group` -Objekt `setCommonName` -Methode verwenden und einen string -Wert übergeben, der den Gruppennamen angibt.
+   * Rufen Sie die `Group` -Objekt `setDescription` -Methode verwenden und einen string -Wert übergeben, der die Gruppenbeschreibung angibt.
+   * Rufen Sie die `Group` -Objekt `setDomainName` -Methode verwenden und einen string -Wert übergeben, der den Domänennamen angibt.
+   * Rufen Sie die `DirectoryManagerServiceClient` -Objekt `createLocalGroup` -Methode und übergeben Sie `Group` -Instanz.
 
    Die Methode `createLocalUser` gibt einen Zeichenfolgenwert zurück, der den Wert der lokalen Benutzerkennung angibt.
 
 1. Führen Sie eine Aktion mit der Gruppe aus.
 
    * Erstellen Sie ein Objekt `PrincipalSearchFilter`, indem Sie den Konstruktor verwenden.
-   * Legen Sie den Wert der Benutzerkennung fest, indem Sie die `setUserId`-Methode des `PrincipalSearchFilter`-Objekts aufrufen. Ein Zeichenfolgenwert, der den Wert der Benutzerkennung darstellt.
-   * Rufen Sie die `findPrincipals`-Methode des `DirectoryManagerServiceClient`-Objekts auf, und übergeben Sie das `PrincipalSearchFilter`-Objekt. Diese Methode gibt eine `java.util.List`-Instanz zurück, bei der jedes Element ein `User`-Objekt ist. Iterieren Sie durch die `java.util.List`-Instanz, um den Benutzer zu suchen.
-   * Fügen Sie einen Benutzer zur Gruppe hinzu, indem Sie die Methode `addPrincipalToLocalGroup` des `DirectoryManagerServiceClient`-Objekts aufrufen. Übergeben Sie den Rückgabewert der Methode `getOid` des `User`-Objekts. Übergeben Sie den Rückgabewert der Methode `getOid` des `Group`-Objekts (verwenden Sie die `Group`-Instanz, die die neue Gruppe darstellt).
+   * Legen Sie den Benutzer-ID-Wert fest, indem Sie die `PrincipalSearchFilter` -Objekt `setUserId` -Methode. Ein Zeichenfolgenwert, der den Wert der Benutzerkennung darstellt.
+   * Rufen Sie die Methode `findPrincipals` des `DirectoryManagerServiceClient`-Objekts auf und übergeben Sie das `PrincipalSearchFilter`-Objekt. Diese Methode gibt eine `java.util.List`-Instanz zurück, bei der jedes Element ein `User`-Objekt ist. Iterieren Sie durch die `java.util.List`-Instanz, um den Benutzer zu suchen.
+   * Fügen Sie der Gruppe einen Benutzer hinzu, indem Sie die `DirectoryManagerServiceClient` -Objekt `addPrincipalToLocalGroup` -Methode. Übergeben Sie den Rückgabewert der `User` -Objekt `getOid` -Methode. Übergeben Sie den Rückgabewert der `Group` Objekte `getOid` -Methode (verwenden Sie die `Group` -Instanz, die die neue Gruppe darstellt).
 
 **Siehe auch**
 
@@ -539,7 +535,7 @@ Führen Sie die folgenden Aufgaben aus, um Benutzer, Gruppen und Domains mithilf
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-usermanager-client.jar“ in den Klassenpfad Ihres Java-Projekts ein. Weitere Informationen über den Speicherort dieser Dateien finden Sie unter [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+   Schließen Sie Client-JAR-Dateien wie adobe-usermanager-client.jar in den Klassenpfad Ihres Java-Projekts ein. Weitere Informationen über den Speicherort dieser Dateien finden Sie unter [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 1. Erstellen Sie einen DirectoryManagerService-Client.
 
@@ -547,15 +543,15 @@ Führen Sie die folgenden Aufgaben aus, um Benutzer, Gruppen und Domains mithilf
 
 1. Rufen Sie die entsprechenden Benutzer- oder Gruppenvorgänge auf.
 
-   Um einen Benutzer oder eine Gruppe zu finden, rufen Sie eine der Methoden des `DirectoryManagerServiceClient`-Objekts zum Auffinden von Prinzipalen auf (da ein Prinzipal ein Benutzer oder eine Gruppe sein kann). Im folgenden Beispiel wird die Methode `findPrincipals` mithilfe eines Suchfilters (ein `PrincipalSearchFilter`-Objekt) aufgerufen.
+   Um einen Benutzer oder eine Gruppe zu finden, rufen Sie einen der `DirectoryManagerServiceClient` -Methoden des -Objekts zum Auffinden von Prinzipalen (da ein Prinzipal ein Benutzer oder eine Gruppe sein kann). Im folgenden Beispiel wird die Methode `findPrincipals` mithilfe eines Suchfilters (ein `PrincipalSearchFilter`-Objekt) aufgerufen.
 
    Da der Rückgabewert in diesem Fall eine `java.util.List` ist, die `Principal`-Objekte enthält, iterieren Sie durch das Ergebnis und wandeln die `Principal`-Objekte entweder in `User`- oder `Group`-Objekte um.
 
-   Mithilfe des resultierenden `User`- oder `Group`-Objekts (beide stammen von der `Principal`-Schnittstelle ab) können Sie die Informationen abrufen, die Sie für Ihre Workflows benötigen. Beispielsweise identifizieren die Werte für Domain-Namen und kanonische Namen gemeinsam einen Prinzipal eindeutig. Diese werden durch Aufrufen der Methoden `getDomainName` bzw. `getCanonicalName` des `Principal`-Objekts abgerufen.
+   Mithilfe des resultierenden `User`- oder `Group`-Objekts (beide stammen von der `Principal`-Schnittstelle ab) können Sie die Informationen abrufen, die Sie für Ihre Workflows benötigen. Beispielsweise identifizieren die Werte für Domain-Namen und kanonische Namen gemeinsam einen Prinzipal eindeutig. Diese werden durch Aufrufen der `Principal` -Objekt `getDomainName` und `getCanonicalName` -Methoden.
 
-   Um einen lokalen Benutzer zu löschen, rufen Sie die Methode `deleteLocalUser` des `DirectoryManagerServiceClient`-Objekts auf und übergeben die Kennung des Benutzers.
+   Um einen lokalen Benutzer zu löschen, rufen Sie die `DirectoryManagerServiceClient` -Objekt `deleteLocalUser` -Methode verwenden und die Kennung des Benutzers übergeben.
 
-   Um eine lokale Gruppe zu löschen, rufen Sie die Methode `deleteLocalGroup` des `DirectoryManagerServiceClient`-Objekts auf und übergeben die Kennung der Gruppe.
+   Um eine lokale Gruppe zu löschen, rufen Sie die `DirectoryManagerServiceClient` -Objekt `deleteLocalGroup` -Methode verwenden und die Kennung der Gruppe übergeben.
 
 **Siehe auch**
 
@@ -576,11 +572,11 @@ Führen Sie die folgenden Aufgaben aus, um Benutzer, Gruppen und Domains mithilf
 
 1. Erstellen Sie einen DirectoryManagerService-Client.
 
-   Erstellen Sie ein `DirectoryManagerServiceService`-Objekt, indem Sie den Konstruktor Ihrer Proxy-Klasse verwenden.
+   Erstellen Sie eine `DirectoryManagerServiceService` -Objekt mithilfe des Konstruktors Ihrer Proxy-Klasse.
 
 1. Rufen Sie die entsprechenden Benutzer- oder Gruppenvorgänge auf.
 
-   Um einen Benutzer oder eine Gruppe zu finden, rufen Sie eine der Methoden des `DirectoryManagerServiceService`-Objekts zum Suchen von Prinzipalen (da ein Prinzipal ein Benutzer oder eine Gruppe sein kann). Im folgenden Beispiel wird die Methode `findPrincipalsWithFilter` mithilfe eines Suchfilters (ein `PrincipalSearchFilter`-Objekt) aufgerufen. Bei Verwendung eines `PrincipalSearchFilter`-Objekts werden lokale Prinzipale nur dann zurückgegeben, wenn die Eigenschaft `isLocal` auf `true` gesetzt ist. Dieses Verhalten unterscheidet sich von dem, das mit der Java-API auftreten würde.
+   Um einen Benutzer oder eine Gruppe zu finden, rufen Sie einen der `DirectoryManagerServiceService` -Methoden des -Objekts zum Auffinden von Prinzipalen (da ein Prinzipal ein Benutzer oder eine Gruppe sein kann). Im folgenden Beispiel wird die Methode `findPrincipalsWithFilter` mithilfe eines Suchfilters (ein `PrincipalSearchFilter`-Objekt) aufgerufen. Bei Verwendung eines `PrincipalSearchFilter`-Objekts werden lokale Prinzipale nur dann zurückgegeben, wenn die Eigenschaft `isLocal` auf `true` gesetzt ist. Dieses Verhalten unterscheidet sich von dem, das mit der Java-API auftreten würde.
 
    >[!NOTE]
    >
@@ -588,11 +584,11 @@ Führen Sie die folgenden Aufgaben aus, um Benutzer, Gruppen und Domains mithilf
 
    Da der Rückgabewert in diesem Fall ein `object[]` mit `Principal`-Objekten ist, iterieren Sie durch das Ergebnis und wandeln die `Principal`-Objekte entweder in `User`- oder `Group`-Objekte um.
 
-   Mithilfe des resultierenden `User`- oder `Group`-Objekts (beide stammen von der `Principal`-Schnittstelle ab) können Sie die Informationen abrufen, die Sie für Ihre Workflows benötigen. Beispielsweise identifizieren die Werte für Domain-Namen und kanonische Namen gemeinsam einen Prinzipal eindeutig. Diese werden durch Aufrufen der Felder `domainName` bzw. `canonicalName` des `Principal`-Objekts abgerufen.
+   Mithilfe des resultierenden `User`- oder `Group`-Objekts (beide stammen von der `Principal`-Schnittstelle ab) können Sie die Informationen abrufen, die Sie für Ihre Workflows benötigen. Beispielsweise identifizieren die Werte für Domain-Namen und kanonische Namen gemeinsam einen Prinzipal eindeutig. Diese werden durch Aufrufen der `Principal` -Objekt `domainName` und `canonicalName` angegeben.
 
-   Um einen lokalen Benutzer zu löschen, rufen Sie die Methode `deleteLocalUser` des `DirectoryManagerServiceService`-Objekts auf und übergeben die Kennung des Benutzers.
+   Um einen lokalen Benutzer zu löschen, rufen Sie die `DirectoryManagerServiceService` -Objekt `deleteLocalUser` -Methode verwenden und die Kennung des Benutzers übergeben.
 
-   Um eine lokale Gruppe zu löschen, rufen Sie die Methode `deleteLocalGroup` des `DirectoryManagerServiceService`-Objekts auf und übergeben die Kennung der Gruppe.
+   Um eine lokale Gruppe zu löschen, rufen Sie die `DirectoryManagerServiceService` -Objekt `deleteLocalGroup` -Methode verwenden und die Kennung der Gruppe übergeben.
 
 **Siehe auch**
 
@@ -648,7 +644,7 @@ Führen Sie die folgenden Aufgaben aus, um Rollen und Berechtigungen mithilfe de
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-usermanager-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-usermanager-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie einen AuthorizationManagerService-Client.
 
@@ -656,12 +652,12 @@ Führen Sie die folgenden Aufgaben aus, um Rollen und Berechtigungen mithilfe de
 
 1. Rufen Sie die entsprechenden Rollen- oder Berechtigungsvorgänge auf.
 
-   Um einem Prinzipal eine Rolle zuzuweisen, rufen Sie die `assignRole`-Methode des `AuthorizationManagerServiceClient`-Objekts auf und übergeben ihr die folgenden Werte:
+   Um einem Prinzipal eine Rolle zuzuweisen, rufen Sie die `AuthorizationManagerServiceClient` -Objekt `assignRole` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein `java.lang.String`-Objekt, das die Rollenkennung enthält
    * Ein Array von `java.lang.String`-Objekten, die die Prinzipalkennungen enthalten.
 
-   Um eine Rolle aus einem Prinzipal zu entfernen, rufen Sie die `unassignRole`-Methode des `AuthorizationManagerServiceClient`-Objekts auf und übergeben ihr die folgenden Werte:
+   Um eine Rolle aus einem Prinzipal zu entfernen, rufen Sie die `AuthorizationManagerServiceClient` -Objekt `unassignRole` -Methode verwenden und die folgenden Werte übergeben:
 
    * ein `java.lang.String`-Objekt, das die Rollenkennung enthält.
    * Ein Array von `java.lang.String`-Objekten, die die Prinzipalkennungen enthalten.
@@ -693,7 +689,7 @@ Verwalten Sie Rollen und Berechtigungen mithilfe der Authorization Manager Servi
    * Erstellen Sie mithilfe des Standardkonstruktors ein `AuthorizationManagerServiceClient`-Objekt.
    * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `AuthorizationManagerServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/AuthorizationManagerService?blob=mtom`). Sie müssen das Attribut `lc_version` nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekr, indem Sie den Wert des Felds `AuthorizationManagerServiceClient.Endpoint.Binding` abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -703,12 +699,12 @@ Verwalten Sie Rollen und Berechtigungen mithilfe der Authorization Manager Servi
 
 1. Rufen Sie die entsprechenden Rollen- oder Berechtigungsvorgänge auf.
 
-   Um einem Prinzipal eine Rolle zuzuweisen, rufen Sie die `assignRole`-Methode des `AuthorizationManagerServiceClient`-Objekts auf und übergeben ihr die folgenden Werte:
+   Um einem Prinzipal eine Rolle zuzuweisen, rufen Sie die `AuthorizationManagerServiceClient` -Objekt `assignRole` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein `string`-Objekt, das die Rollenkennung enthält
    * Ein `MyArrayOf_xsd_string`-Objekt, das die Prinzipalkennungen enthält.
 
-   Um eine Rolle aus einem Prinzipal zu entfernen, rufen Sie die Methode `unassignRole` des `AuthorizationManagerServiceService`-Objekts auf und übergeben ihr die folgenden Werte:
+   Um eine Rolle aus einem Prinzipal zu entfernen, rufen Sie die `AuthorizationManagerServiceService` -Objekt `unassignRole` -Methode verwenden und die folgenden Werte übergeben:
 
    * ein `string`-Objekt, das die Rollenkennung enthält.
    * Ein Array von `string`-Objekten, die die Prinzipalkennungen enthalten.
@@ -729,7 +725,7 @@ Angenommen, ein Benutzer gibt auf einer Webseite einen Benutzernamen und ein Ken
 
 Bei erfolgreicher Authentifizierung greift das Programm auf eine gesicherte Unternehmensdatenbank zu. Andernfalls wird dem Benutzer eine Nachricht gesendet, in der er darauf hingewiesen wird, dass er kein autorisierter Benutzer ist.
 
-Das folgende Diagramm zeigt den logischen Ablauf des Programms.
+Das folgende Diagramm zeigt den Logikfluss der Anwendung.
 
 ![au_au_umauth_process](assets/au_au_umauth_process.png)
 
@@ -781,7 +777,7 @@ Bevor Sie einen Benutzer programmgesteuert authentifizieren können, müssen Sie
 
 **Authentifizierungsvorgang aufrufen**
 
-Nachdem Sie den Service-Client erstellt haben, können Sie den Authentifizierungsvorgang aufrufen. Für diesen Vorgang sind Informationen zum Benutzer erforderlich, z. B. Name und Kennwort des Benutzers. Wenn der Benutzer nicht authentifiziert werden kann, wird eine Ausnahme ausgelöst.
+Nachdem Sie den Service-Client erstellt haben, können Sie den Authentifizierungsvorgang aufrufen. Für diesen Vorgang sind Informationen zum Benutzer erforderlich, z. B. der Name und das Kennwort des Benutzers. Wenn der Benutzer nicht authentifiziert werden kann, wird eine Ausnahme ausgelöst.
 
 **Authentifizierungskontext abrufen**
 
@@ -803,7 +799,7 @@ Authentifizieren Sie einen Benutzer mit der Authentication Manager Service API (
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-usermanager-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-usermanager-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie einen AuthenticationManagerServices-Client.
 
@@ -811,18 +807,18 @@ Authentifizieren Sie einen Benutzer mit der Authentication Manager Service API (
 
 1. Rufen Sie den Authentifizierungsvorgang auf.
 
-   Rufen Sie die `authenticate`-Methode des `AuthenticationManagerServiceClient`-Objekts auf und übergeben Sie ihr folgende Werte:
+   Rufen Sie die `AuthenticationManagerServiceClient` -Objekt `authenticate` -Methode verwenden und die folgenden Werte übergeben:
 
-   * Ein `java.lang.String`-Objekt, das den Namen des Benutzers enthält.
-   * Ein Byte-Array (ein `byte[]`-Objekt), das das Kennwort des Benutzers enthält. Sie können das `byte[]`-Objekt durch Aufrufen der `getBytes`-Methode des `java.lang.String`-Objekts beziehen.
+   * A `java.lang.String` -Objekt, das den Namen des Benutzers enthält.
+   * Ein Byte-Array (ein `byte[]` -Objekt), das das Kennwort des Benutzers enthält. Sie können die `byte[]` -Objekt durch Aufrufen der `java.lang.String` -Objekt `getBytes` -Methode.
 
    Die Authentifizierungsmethode gibt ein `AuthResult`-Objekt zurück, das Informationen zum authentifizierten Benutzer enthält.
 
 1. Rufen Sie den Authentifizierungskontext ab.
 
-   Rufen Sie die `getContext`-Methode des `ServiceClientFactory`-Objekts auf, die ein `Context`-Objekt zurückgibt.
+   Rufen Sie die `ServiceClientFactory` -Objekt `getContext` -Methode, die eine `Context` -Objekt.
 
-   Rufen Sie dann die `initPrincipal`-Methode des `Context`-Objekts auf und übergeben Sie ihr das `AuthResult`.
+   Rufen Sie dann die `Context` -Objekt `initPrincipal` -Methode und übergeben Sie `AuthResult`.
 
 ### Benutzer mithilfe der Webservice-API authentifizieren {#authenticate-a-user-using-the-web-service-api}
 
@@ -835,15 +831,15 @@ Authentifizieren Sie einen Benutzer mit der Authentication Manager Service API (
 
 1. Erstellen Sie einen AuthenticationManagerService-Client.
 
-   Erstellen Sie mithilfe des Konstruktors Ihrer Proxyklasse ein `AuthenticationManagerServiceService`-Objekt.
+   Erstellen Sie eine `AuthenticationManagerServiceService` -Objekt mithilfe des Konstruktors Ihrer Proxy-Klasse.
 
 1. Rufen Sie den Authentifizierungsvorgang auf.
 
-   Rufen Sie die `authenticate`-Methode des `AuthenticationManagerServiceClient`-Objekts auf und übergeben Sie ihr die folgenden Werte:
+   Rufen Sie die `AuthenticationManagerServiceClient` -Objekt `authenticate` -Methode verwenden und die folgenden Werte übergeben:
 
-   * Ein `string`-Objekt, das den Namen des Benutzers enthält
-   * Ein Byte-Array (ein `byte[]`-Objekt), das das Kennwort des Benutzers enthält. Sie können das `byte[]`-Objekt erhalten, indem Sie ein `string`-Objekt, das das Kennwort enthält, mit der im folgenden Beispiel gezeigten Logik in ein `byte[]`-Array konvertieren.
-   * Der zurückgegebene Wert ist ein `AuthResult`-Objekt, das Sie zum Abrufen von Informationen über den Benutzer verwendet können. Im folgenden Beispiel werden die Informationen des Benutzers abgerufen, indem zunächst das `authenticatedUser`-Feld des `AuthResult`-Objekts und anschließend die Felder `canonicalName` und `domainName` des resultierenden `User`-Objekts abgerufen werden.
+   * A `string` -Objekt, das den Namen des Benutzers enthält
+   * Ein Byte-Array (ein `byte[]` -Objekt), das das Kennwort des Benutzers enthält. Sie können das `byte[]`-Objekt erhalten, indem Sie ein `string`-Objekt, das das Kennwort enthält, mit der im folgenden Beispiel gezeigten Logik in ein `byte[]`-Array konvertieren.
+   * Der zurückgegebene Wert ist ein `AuthResult`-Objekt, das Sie zum Abrufen von Informationen über den Benutzer verwendet können. Im folgenden Beispiel werden die Informationen des Benutzers abgerufen, indem zunächst die `AuthResult` -Objekt `authenticatedUser` Feld und anschließendes Abrufen des Ergebnisses `User` -Objekt `canonicalName` und `domainName` -Felder.
 
 **Siehe auch**
 
@@ -853,7 +849,7 @@ Authentifizieren Sie einen Benutzer mit der Authentication Manager Service API (
 
 ## Programmgesteuerte Synchronisierung von Benutzern {#programmatically-synchronizing-users}
 
-Sie können Benutzer mithilfe der User Management-API programmgesteuert synchronisieren. Wenn Sie Benutzer synchronisieren, aktualisieren Sie AEM Forms mit Benutzerdaten, die sich in Ihrem Benutzer-Repository befinden. Angenommen, Sie fügen Ihrem Benutzer-Repository neue Benutzer hinzu. Nachdem Sie einen Synchronisierungsvorgang durchgeführt haben, werden die neuen Benutzer zu AEM Forms-Benutzern. Außerdem werden Benutzer, die sich nicht mehr in Ihrem Benutzer-Respository befinden, aus AEM Forms entfernt.
+Sie können Benutzer mithilfe der User Management-API programmgesteuert synchronisieren. Wenn Sie Benutzer synchronisieren, aktualisieren Sie AEM Forms mit Benutzerdaten, die sich in Ihrem Benutzerrepository befinden. Angenommen, Sie fügen Ihrem Benutzer-Repository neue Benutzer hinzu. Nachdem Sie einen Synchronisierungsvorgang durchgeführt haben, werden die neuen Benutzer zu AEM Forms-Benutzern. Außerdem werden Benutzer, die sich nicht mehr in Ihrem Benutzer-Respository befinden, aus AEM Forms entfernt.
 
 Das folgende Diagramm zeigt das Synchronisieren von AEM Forms mit einem Benutzer-Respository.
 
@@ -912,7 +908,7 @@ Bevor Sie mithilfe der User Management-API einen Synchronisierungsvorgang durchf
 
 **Aufrufen des Synchronisierungsvorgangs**
 
-Nachdem Sie eine oder mehrere Unternehmens-Domains angegeben haben, können Sie den Synchronisierungsvorgang durchführen. Wie viel Zeit für diesen Vorgang benötigt wird, hängt von der Anzahl der Benutzerdatensätze ab, die sich im Benutzer-Repository befinden.
+Nachdem Sie eine oder mehrere Unternehmens-Domains angegeben haben, können Sie den Synchronisierungsvorgang durchführen. Die für die Durchführung dieses Vorgangs benötigte Zeit hängt von der Anzahl der Benutzerdatensätze im Benutzer-Repository ab.
 
 **Prüfen, ob der Synchronisierungsvorgang abgeschlossen ist**
 
@@ -934,7 +930,7 @@ So synchronisieren Sie Benutzer mithilfe der User Management-API (Java):
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-usermanager-client.jar“ und „adobe-usermanager-util-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-usermanager-client.jar und adobe-usermanager-util-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie einen UserManagerUtilServiceClient-Client.
 
@@ -942,15 +938,15 @@ So synchronisieren Sie Benutzer mithilfe der User Management-API (Java):
 
 1. Geben Sie die Unternehmens-Domain an.
 
-   * Rufen Sie die Methode `scheduleSynchronization` des `UserManagerUtilServiceClient`-Objekts auf, um den Vorgang der Benutzersynchronisierung zu starten.
+   * Rufen Sie die `UserManagerUtilServiceClient` -Objekt `scheduleSynchronization` -Methode, um den Benutzersynchronisierungsvorgang zu starten.
    * Erstellen Sie eine `java.util.Set`-Instanz mit Hilfe eines `HashSet`-Konstruktors. Stellen Sie sicher, dass Sie `String` als Datentyp angeben. Diese `Java.util.Set`-Instanz speichert die Domain-Namen, für die der Synchronisierungsvorgang gilt.
-   * Rufen Sie für jeden hinzuzufügenden Domain-Namen die Methode Add des `java.util.Set`-Objekts auf und übergeben Sie den Domain-Namen.
+   * Rufen Sie für jeden hinzuzufügenden Domänennamen die `java.util.Set` -Methode hinzufügen und den Domänennamen übergeben.
 
 1. Rufen Sie den Synchronisierungsvorgang auf.
 
-   Rufen Sie die Methode `getContext` des `ServiceClientFactory`-Objekts auf, die ein `Context`-Objekt zurückgibt.
+   Rufen Sie die `ServiceClientFactory` -Objekt `getContext` -Methode, die eine `Context` -Objekt.
 
-   Rufen Sie dann die Methode `initPrincipal` des `Context`-Objekts auf und übergeben Sie das `AuthResult`.
+   Rufen Sie dann die `Context` -Objekt `initPrincipal` -Methode und übergeben Sie `AuthResult`.
 
 **Siehe auch**
 

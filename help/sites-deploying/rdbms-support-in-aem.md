@@ -1,21 +1,17 @@
 ---
 title: RDBMS-Unterstützung in AEM 6.4
-seo-title: RDBMS Support in AEM 6.4
 description: Erfahren Sie mehr über die Unterstützung der Persistenz von relationalen Datenbanken in AEM 6.4 und die verfügbaren Konfigurationsoptionen.
-seo-description: Learn about the relational database persistence support in AEM 6.4 and the available configuration options.
-uuid: c8422b0d-c6df-488d-bb6a-af92c9afda50
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 6a754d42-da30-4c2f-8b9c-369e1f1f92b5
 docset: aem65
 feature: Configuring
 exl-id: 1e34c5ca-9e08-4b2a-901c-ab28aeb4a807
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 74%
+source-wordcount: '616'
+ht-degree: 72%
 
 ---
 
@@ -27,7 +23,7 @@ Die Unterstützung der relativen Datenbankpersistenz in AEM wird mithilfe des Do
 
 Er umfasst eine Java-API, die auf der Mongo-Java-API basiert. Eine BlobStore-API wird ebenfalls implementiert. Standardmäßig werden Blobs in der Datenbank gespeichert.
 
-Weitere Informationen zu den Implementierungsdetails finden Sie im [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) und [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) Dokumentation.
+Weitere Informationen zu den Implementierungsdetails finden Sie unter [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) und [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) Dokumentation.
 
 >[!NOTE]
 >
@@ -35,7 +31,7 @@ Weitere Informationen zu den Implementierungsdetails finden Sie im [RDBDocumentS
 
 ## Unterstützte Datenbanken {#supported-databases}
 
-Weitere Informationen zur Unterstützung relationaler Datenbanken in AEM finden Sie auf der [Seite mit den technischen Anforderungen](/help/sites-deploying/technical-requirements.md). 
+Weitere Informationen zur Unterstützung der Relationalen Datenbank in AEM finden Sie im Abschnitt [Seite &quot;Technische Anforderungen&quot;](/help/sites-deploying/technical-requirements.md).
 
 ## Konfigurationsschritte {#configuration-steps}
 

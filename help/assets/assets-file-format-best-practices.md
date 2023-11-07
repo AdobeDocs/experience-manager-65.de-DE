@@ -5,10 +5,10 @@ contentOwner: AG
 role: Admin
 feature: Asset Management,Developer Tools
 exl-id: da080f12-4cf7-4c26-901b-cd40d9c00bcb
-source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 100%
+ht-degree: 74%
 
 ---
 
@@ -26,17 +26,17 @@ Eine vollständige Liste der unterstützten Dateiformate finden Sie unter [Von A
 
 Zur Leistungsoptimierung empfiehlt Adobe die Verwendung der [!DNL Adobe Camera Raw]-Bibliothek für RAW- und DNG-Dateien.
 
-Die [!DNL Adobe Camera Raw]-Bibliothek unterstützt das CMYK-Farbprofil als Eingabe. Sie generiert die Ausgabe jedoch im RGB-Farbraum und unterstützt nur Darstellungen im JPEG-Format. Sie behält nicht den Quelldatei-Farbraum (z. B. CMYK) in den Miniaturen bei.
+Die [!DNL Adobe Camera Raw]-Bibliothek unterstützt das CMYK-Farbprofil als Eingabe. Es erzeugt jedoch die Ausgabe im RGB-Farbraum und unterstützt nur die Ausgabe im JPEG-Format. Der Farbraum der Quelldatei (z. B. CMYK) wird nicht in den Miniaturansichten beibehalten.
 
 Weitere Informationen finden Sie unter [Camera Raw-Unterstützung](/help/assets/camera-raw.md).
 
 ## Adobe PDF Rasterizer-Bibliothek {#adobe-pdf-rasterizer-library}
 
-Um optimale Ergebnisse zu erzielen, sollte die Adobe PDF Rasterizer-Bibliothek für folgende Dateien verwendet werden:
+Für optimale Ergebnisse empfiehlt Adobe die Verwendung der Adobe PDF Rasterizer-Bibliothek für die folgenden Dateien:
 
-* Große PDF-Dateien mit viel Inhalt
-* AI-Dateien mit nicht standardmäßig generierten Miniaturbildern
-* Für AI-Dateien mit SPOT (PMS)-Farben
+* Hohe, inhaltsintensive PDF-Dateien
+* AI-Dateien mit nicht standardmäßig generierten Miniaturansichten
+* Für AI-Dateien mit SPOT-Farben (PMS)
 
 Die Miniaturbilder und Vorschauen, die mit PDF-Rasterizer generiert werden, haben eine bessere Qualität als die standardmäßige Rasterausgabe. Die Adobe PDF Rasterizer-Bibliothek unterstützt keine Farbraumkonvertierung. Ungeachtet des Farbraums der Quell-PDF-Datei generiert Adobe PDF Rasterizer nur eine RGB-Ausgabe.
 
@@ -52,23 +52,23 @@ Derzeit unterstützt [!DNL Dynamic Media] Videos mit bis zu 15 GB Inhalt pro Da
 
 ## ImageMagick-Bibliothek {#imagemagick-library}
 
-Adobe empfiehlt, die ImageMagick-Bibliothek für folgende Zwecke zu verwenden:
+Adobe empfiehlt die Verwendung der ImageMagick-Bibliothek in den folgenden Szenarien:
 
-* Generieren von Miniaturausgabeformaten für EPS-Dateien.
+* So generieren Sie Miniaturansichten für EPS-Dateien.
 * Beibehaltung von Bildprofilinformationen.
 * Beibehaltung von Transparenz.
 * Verarbeitung von PSD- und PSB-Dateien.
 
-Informationen dazu, wie die [!DNL ImageMagick]-Bibliothek in [!DNL Experience Manager] eingerichtet wird, finden Sie unter [Verwenden von ImageMagick](/help/assets/media-handlers.md#an-example-using-imagemagick). Hinweise zur optimalen Verwendung finden Sie unter [Best Practices zur Konfiguration von ImageMagick](/help/assets/best-practices-for-imagemagick.md).
+Informationen dazu, wie die [!DNL ImageMagick]-Bibliothek in [!DNL Experience Manager] eingerichtet wird, finden Sie unter [Verwenden von ImageMagick](/help/assets/media-handlers.md#an-example-using-imagemagick). Informationen zur optimalen Verwendung finden Sie unter [Best Practices für die Konfiguration von ImageMagick](/help/assets/best-practices-for-imagemagick.md).
 
-## Imaging Transcoding Library {#image-transcoding-library}
+## Bildtranskodierungsbibliothek {#image-transcoding-library}
 
 Bei der Adobe Imaging Transcoding Library handelt es sich um eine Lösung zur Bildverarbeitung, die essenzielle Bildfunktionen übernimmt, darunter Bildkodierung, -transkodierung, Größenanpassung usw.
 
-Die Imaging Transcoding Library unterstützt folgende MIME-Typen:
+Die Imaging Transcoding Library unterstützt die folgenden MIME-Typen:
 
 * JPG/JPEG
-* PNG (8 und 16 Bit)
+* PNG (8 Bit und 16 Bit)
 * GIF
 * BMP
 * TIFF/Komprimiertes TIFF (außer 32-Bit-Tiff und PTiff).

@@ -8,9 +8,9 @@ content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '765'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Diese Konfiguration eignet sich für *Nicht-Produktion* Umgebungen, z. B. für E
 
 * MongoDB herunterladen von [https://www.mongodb.com/](https://www.mongodb.com/)
 
-   * Wahl des Betriebssystems:
+   * Betriebssystem:
 
       * Linux®
       * Mac 10.8
@@ -55,7 +55,7 @@ Diese Konfiguration eignet sich für *Nicht-Produktion* Umgebungen, z. B. für E
       * Es ist nicht erforderlich, Mongos oder die Freigabe zu konfigurieren.
 
    * Der installierte Ordner MongoDB heißt &lt;mongo-install>.
-   * Der definierte Datenordnerpfad wird als &lt;mongo-dbpath>.
+   * Der definierte Datenordnerpfad heißt &lt;mongo-dbpath>.
 
 * MongoDB kann auf demselben Host wie AEM ausgeführt oder remote ausgeführt werden.
 
@@ -69,7 +69,7 @@ Dadurch wird ein MongoDB-Server mit dem Standardanschluss 27017 gestartet.
 
 >[!NOTE]
 >
->Wenn MongoDB gestartet wird *after* AEM **Neustart** all **AEM** Instanzen ordnungsgemäß mit MongoDB verbunden werden.
+>Wenn MongoDB gestartet wird *after* AEM, **Neustart** all **AEM** Instanzen ordnungsgemäß mit MongoDB verbunden werden.
 
 ### Demoproduktionsoption: MongoDB-Replikat-Set einrichten {#demo-production-option-setup-mongodb-replica-set}
 
@@ -95,8 +95,8 @@ Die folgenden Befehle sind ein Beispiel für die Einrichtung einer Replikatgrupp
 
 * Solr herunterladen von [Apache Lucene](https://archive.apache.org/dist/lucene/solr/):
 
-   * Für jedes Betriebssystem geeignet.
-   * Solr Version 7.0.
+   * Geeignet für jedes Betriebssystem.
+   * Solr-Version 7.0.
    * Solr erfordert Java™ 1.7 oder höher.
 
 * Grundlegende Konfiguration

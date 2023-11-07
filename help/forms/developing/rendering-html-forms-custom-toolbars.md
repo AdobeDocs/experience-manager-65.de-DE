@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 role: Developer
 exl-id: 0b992b1c-3878-447a-bccc-7034aa3e98bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '2345'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '2340'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Mit dem Forms-Service können Sie eine Symbolleiste anpassen, die mit einem HTML
 
 >[!NOTE]
 >
->Dieser URI-Speicherort befindet sich in der Datei „adobe-forms-core.jar“ innerhalb der Datei „adobe-forms-dsc.jar“. Die Datei „adobe-forms-dsc.jar“ befindet sich im Ordner „C:\Adobe\Adobe_Experience_Manager_forms\“ („C:\“ ist das Installationsverzeichnis). Sie können ein Dateiextraktions-Tool wie Win RAR verwenden, um folgende Datei zu öffnen: adobe.
+>Dieser URI-Speicherort befindet sich in der Datei &quot;adobe-forms-core.jar&quot;, die sich in der Datei &quot;adobe-forms-dsc.jar&quot;befindet. Die Datei &quot;adobe-forms-dsc.jar&quot;befindet sich im Ordner &quot;C:\Adobe\Adobe_Experience_Manager_forms\&quot;(C:\ ist der Installationsordner). Sie können ein Dateiextraktions-Tool wie Win RAR verwenden, um folgende Datei zu öffnen: adobe.
 
 Sie können die Datei „fscmenu.xml“ von diesem Speicherort kopieren, sie an Ihre Anforderungen anpassen und sie dann an einem benutzerdefinierten URI-Speicherort ablegen. Als Nächstes legen Sie mithilfe der Forms Service-API Laufzeitoptionen fest, damit der Forms-Service Ihre Datei „fscmenu.xml“ aus dem angegebenen Speicherort verwendet. Diese Aktionen führen dazu, dass der Forms-Service ein HTML-Formular rendert, das über eine benutzerdefinierte Symbolleiste verfügt.
 
@@ -56,7 +56,7 @@ Sie können auch die absoluten Speicherorte dieser JS- und CSS-Dateien angeben, 
 >
 >Es wird nicht empfohlen, die Art und Weise, wie auf diese Dateien verwiesen wird, zu vermischen. Das heißt, auf alle URIs sollte entweder mit dem Schlüsselwort `FSToolBarURI` oder durch Angabe einer absoluten Position verwiesen werden.
 
-Sie können die JS- und CSS-Dateien abrufen, indem Sie die Datei „adobe-forms-&lt;appserver>.ear“ öffnen. Öffnen Sie in dieser Datei „adobe-forms-res.war“. Alle diese Dateien befinden sich in der WAR-Datei. Die Datei „adobe-forms-&lt;appserver>.ear“ befindet sich im Installationsordner für AEM Forms (C:\ ist das Installationsverzeichnis). Sie können die Datei „adobe-forms-&lt;appserver>.ear“ mit einem Dateiextraktions-Tool wie WinRAR öffnen.
+Sie können die JS- und CSS-Dateien abrufen, indem Sie die Datei „adobe-forms-&lt;appserver>.ear“ öffnen. Öffnen Sie in dieser Datei „adobe-forms-res.war“. Alle diese Dateien befinden sich in der WAR-Datei. Die adobe-forms-&lt;appserver>Die .ear-Datei befindet sich im Installationsordner für AEM Formulare (C:\ ist der Installationsordner). Sie können die Datei „adobe-forms-&lt;appserver>.ear“ mit einem Dateiextraktions-Tool wie WinRAR öffnen.
 
 Die folgende XML-Syntax zeigt ein Beispiel für eine Datei „fscmenu.xml“.
 

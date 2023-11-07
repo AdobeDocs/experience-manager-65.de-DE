@@ -11,10 +11,10 @@ discoiquuid: 79437b96-7b57-4581-b7e7-fcaedc3d05de
 docset: aem65
 feature: Correspondence Management
 exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4435'
-ht-degree: 57%
+source-wordcount: '4428'
+ht-degree: 54%
 
 ---
 
@@ -47,7 +47,7 @@ Dieses Szenario zeigt, wie Sie eine benutzerdefinierte Eigenschaft zu allen Asse
 Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Eigenschaft zu allen Assettypen und Briefen hinzuzufügen:
 
 1. Wechseln Sie zu `https://'[server]:[port]'/[ContextPath]/crx/de` und melden Sie sich als „Administrator“ an.
-1. Erstellen Sie im Verzeichnis Programme einen Ordner mit dem Namen „css“ und einem Pfad/einer Struktur ähnlich dem css-Ordner (der sich im ccrui-Ordner befindet), indem Sie die folgenden Schritte ausführen:
+1. Erstellen Sie im Apps-Ordner einen Ordner mit dem Namen css mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der css-Ordner (im ccrui-Ordner), indem Sie folgende Schritte durchführen:
 
    1. Klicken Sie mit der rechten Maustaste auf den Elementordner in folgendem Pfad und wählen Sie **Überlagerungsknoten**:
 
@@ -105,7 +105,7 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Eigenschaft z
 
    >[!NOTE]
    >
-   >Die allgemeinen Eigenschaften für alle von Ihnen hinzugefügten Assets werden auf der Registerkarte &quot;Standard&quot;der Asset-Eigenschaften angezeigt. Standardmäßig werden die allgemeinen Eigenschaften, die für alle Assets hinzugefügt werden, auf der Eigenschaftenseite sowie auf der Seite zur Asset-Erstellung angezeigt. Um die allgemeinen Eigenschaften auszublenden, müssen Sie <!--link to show / hide properties]-->.
+   >Die allgemeinen Eigenschaften für alle von Ihnen hinzugefügten Assets werden auf der Registerkarte &quot;Standard&quot;der Asset-Eigenschaften angezeigt. Standardmäßig werden die allgemeinen Eigenschaften, die für alle Assets hinzugefügt werden, auf der Seite &quot;Eigenschaften&quot;und auf der Seite zur Asset-Erstellung angezeigt. Um die allgemeinen Eigenschaften auszublenden, müssen Sie <!--link to show / hide properties]-->.
 
 ### Szenario: Benutzerdefinierte Dropdown-Liste und Werte zu einer benutzerdefinierten Eigenschaft/einem benutzerdefinierten Feld hinzufügen {#scenario-add-custom-drop-down-and-values-to-a-custom-property-field}
 
@@ -149,7 +149,7 @@ Erstellen Sie einen Knoten für jede Eigenschaft (Felder), für die Sie ein Drop
    </tbody>
    </table>
 
-1. Fügen Sie unter dem property-Knoten (hier geographicallocation) einen neuen Knoten mit dem Namen `items` hinzu. Fügen Sie unter dem Knoten items jeweils einen Knoten für die Werte in der Dropdown-Liste hinzu. Als Best Practice empfiehlt es sich, den ersten Knoten als leer hinzuzufügen, um als Standardwert der Dropdown-Liste und eine Option zu verwenden, mit der der Benutzer keinen Wert für das Feld angeben kann. Um mehrere Optionen/Dropdown-Werte hinzuzufügen, wiederholen Sie die folgenden Schritte:
+1. Fügen Sie unter dem property-Knoten (hier geographicallocation) einen neuen Knoten mit dem Namen `items` hinzu. Fügen Sie unter dem Knoten items jeweils einen Knoten für die Werte in der Dropdown-Liste hinzu. Als Best Practice empfiehlt es sich, den ersten Knoten als leer hinzuzufügen, um als Standardwert der Dropdown-Liste zu dienen, und dem Benutzer die Option, keinen Wert für das Feld anzugeben. Um mehrere Optionen/Dropdown-Werte hinzuzufügen, wiederholen Sie die folgenden Schritte:
 
    1. Klicken Sie auf den property-Knoten, (hier: geographicallocation) mit der rechten Maustaste und wählen Sie **Erstellen** > **Knoten erstellen**.
    1. Geben Sie `item1,` als Namen des Felds ein, behalten Sie als Typ „nt:unstructured“ bei und klicken Sie auf **OK**.
@@ -190,7 +190,7 @@ Dieses Szenario zeigt, wie Sie eine benutzerdefinierte Registerkarte, Empfänger
 Mithilfe des folgenden Verfahrens können Sie eine Registerkarte mit einem Feld zu allen Assets hinzufügen:
 
 1. Wechseln Sie zu `https://'[server]:[port]'/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
-1. Erstellen Sie im Programmordner einen Ordner mit dem Namen „cmmetadataproperties“ mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner „cmmetadataproperties“, der sich im Inhaltsordner befindet, indem Sie folgende Schritte durchführen:
+1. Erstellen Sie im Apps-Ordner einen Ordner mit dem Namen cmmetadataproperties mit einem ähnlichen Pfad/einer ähnlichen Struktur zum Ordner cmmetadataproperties (im Inhaltsordner), indem Sie folgende Schritte durchführen:
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner „cmmetadataproperties“ im folgenden Pfad und wählen Sie **Überlagerungsknoten**:
 
@@ -310,7 +310,7 @@ Mithilfe des folgenden Verfahrens können Sie eine Registerkarte mit einem Feld 
 
       | **Name** | **Typ** | **Wert** |
       |---|---|---|
-      | fieldLabel | Zeichenfolge | Speicherort der Empfänger (oder der Name, den Sie dem Feld geben möchten) |
+      | fieldLabel | Zeichenfolge | Speicherort der Empfänger (oder der Name, den Sie dem Feld geben möchten.) |
       | name | Zeichenfolge | ./extendedproperties/GeographicalLocation |
       | renderReadOnly | Boolesch | Ja |
       | sling:resourceType | Zeichenfolge | `/libs/granite/ui/components/coral/foundation/form/textfield` |
@@ -434,7 +434,7 @@ Um eine Eigenschaft einem Assettyp hinzuzufügen, führen Sie die folgenden Schr
 
       **Typ:** nt:unstructured
 
-   1. Klicken Sie auf den neu erstellten Knoten (hier customtab). CRX zeigt die Eigenschaften des Knotens an.
+   1. Klicken Sie auf den neuen Knoten, den Sie erstellt haben (hier customtab). CRX zeigt die Eigenschaften des Knotens an.
    1. Fügen Sie die folgenden zwei Eigenschaften zum Knoten hinzu (hier customtab):
 
       | **Name** | **Typ** | **Wert** |
@@ -505,7 +505,7 @@ Um eine Eigenschaft einem Assettyp hinzuzufügen, führen Sie die folgenden Schr
 
       | **Name** | **Typ** | **Wert** |
       |---|---|---|
-      | fieldLabel | Zeichenfolge | Speicherort der Empfänger (oder der Name, den Sie dem Feld geben möchten) |
+      | fieldLabel | Zeichenfolge | Speicherort der Empfänger (oder der Name, den Sie dem Feld geben möchten.) |
       | name | Zeichenfolge | `./extendedproperties/GeoLocation` |
       | renderReadOnly | Boolesch | Ja |
       | sling:resourceType | Zeichenfolge | granite/ui/components/coral/foundation/form/textfield |
@@ -685,7 +685,7 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Eigenschaft in
       <%@page import="java.util.Map"%>
       ```
 
-   1. Fügen Sie am Ende der Datei den folgenden Code einer Funktion hinzu, die Werte für jede benutzerdefinierte Eigenschaft abruft:
+   1. Fügen Sie am Ende der Datei den folgenden Code einer Funktion hinzu, die einen Wert für jede benutzerdefinierte Eigenschaft abruft:
 
       ```jsp
       <%!
@@ -824,7 +824,7 @@ Um die Indexerstellung von benutzerdefinierten Eigenschaften zu ermöglichen, f�
 
       **Typ:** nt:unstructured
 
-   1. Klicken Sie auf den neuen Knoten, den Sie erstellt haben (hier Speicherort). CRX zeigt die Eigenschaften des Knotens an.
+   1. Klicken Sie auf den neuen Knoten, den Sie erstellt haben (hier: Speicherort). CRX zeigt die Eigenschaften des Knotens an.
    1. Fügen Sie folgende Eigenschaften dem Knoten hinzu (hier: location):
 
       | **Name** | **Typ** | **Wert** |
@@ -847,7 +847,7 @@ Um die Indexerstellung von benutzerdefinierten Eigenschaften zu ermöglichen, f�
 ## Standardansicht der Suchseite ändern {#change-default-view-of-the-search-page}
 
 1. Gehen Sie zu `https://'[server]:[port]'/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
-1. Erstellen Sie im Anwendungsordner einen Ordner mit dem Namen „list“ mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der des list-Ordners unter /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views:
+1. Erstellen Sie im Apps-Ordner einen Ordner mit dem Namen list mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Listenordner in /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views:
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner „Elemente“ im folgenden Pfad und wählen Sie **Überlagerungsknoten**:
 
@@ -891,7 +891,7 @@ Um die Indexerstellung von benutzerdefinierten Eigenschaften zu ermöglichen, f�
 >Mit diesen Schritten wird die Standardansicht aller Konsolen wie Forms und Dokumente, Assets und Sites geändert.
 
 1. Wechseln Sie zu `https://'[server]:[port]'/[ContextPath]/crx/de` und melden Sie sich als „Administrator“ an.
-1. Erstellen Sie im Programmordner einen Ordner mit dem Namen „list“ und einem ähnlichen Pfad/einer ähnlichen Struktur wie dem/der des list-Ordners unter:
+1. Erstellen Sie im Apps-Ordner einen Ordner mit dem Namen list mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Listenordner in:
 
    /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/
 
@@ -934,7 +934,7 @@ Um die Indexerstellung von benutzerdefinierten Eigenschaften zu ermöglichen, f�
 
 Führen Sie die folgenden Schritte aus, um die benutzerdefinierten Eigenschaften ein- oder auszublenden:
 
-1. Ausgehend von dem benutzerdefinierten property-Knoten, wie „geographicallocation“, erstellen Sie einen neuen Knoten vom Typ „nt:unstructured“, der den Namen „granite:rendercondition“ erhält.
+1. Erstellen Sie unter dem benutzerdefinierten Eigenschaftsknoten, z. B. geographicallocation, einen Knoten mit dem Namen &quot;granite:rendercondition&quot;vom Typ &quot;nt:unstructured&quot;.
 1. Fügen Sie dem Knoten die folgenden Eigenschaften hinzu und klicken Sie auf **Alle speichern**:
 
    <table>

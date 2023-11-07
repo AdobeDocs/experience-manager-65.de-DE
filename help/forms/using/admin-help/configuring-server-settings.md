@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren der Server-Einstellungen
 seo-title: Configuring Server Settings
-description: 'Auf der Seite „Servereinstellungen“ erhalten Sie Zugriff auf verschiedene Einstellungen für E-Mails, Aufgaben- und Administratorbenachrichtigungen:'
+description: Auf der Seite "Servereinstellungen"können Sie auf die Einstellungen für E-Mails, Aufgabenbenachrichtigungen und Administratorbenachrichtigungen zugreifen.
 seo-description: The Server Settings page provides access to email, task notification and administrator notification settings.
 uuid: 73b51ac0-56e5-4748-bb33-e3986c69eb2d
 contentOwner: admin
@@ -10,48 +10,48 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: ht
-source-wordcount: '2625'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '2623'
+ht-degree: 22%
 
 ---
 
 # Konfigurieren der Server-Einstellungen {#configuring-server-settings}
 
-Auf der Seite „Servereinstellungen“ erhalten Sie Zugriff auf verschiedene Einstellungen für den Arbeitsablauf für Formulare:
+Die Seite &quot;Servereinstellungen&quot;bietet Zugriff auf verschiedene Einstellungen für den Arbeitsablauf für Formulare:
 
-* **E-Mail-Einstellungen**, die ausgehende E-Mail-Nachrichten zusammen mit den für diese Nachrichten verwendeten E-Mail-Servereinstellungen aktivieren. (Siehe [E-Mail-Einstellungen konfigurieren](configuring-server-settings.md#configuring-email-settings).)
+* **E-Mail-Einstellungen** die ausgehende E-Mail-Nachrichten sowie die für diese Nachrichten verwendeten E-Mail-Server-Einstellungen aktivieren. (Siehe [E-Mail-Einstellungen konfigurieren](configuring-server-settings.md#configuring-email-settings).
 * **Aufgabenbenachrichtigungseinstellungen,** die mit E-Mail-Benachrichtigungen an Endbenutzer und Gruppen gesendeten Nachrichten zu Aufgaben aktivieren, deaktivieren oder ändern. (Siehe [Benachrichtigungen für Benutzer und Gruppen konfigurieren](configuring-server-settings.md#configuring-notifications-for-users-and-groups).)
-* **Administratorbenachrichtigungseinstellungen,** die mit E-Mail-Benachrichtigungen gesendeten Nachrichten zu Verwaltungsaufgaben aktivieren, deaktivieren oder ändern. (Siehe [Benachrichtigungen für Administratoren konfigurieren](configuring-server-settings.md#configuring-notifications-for-administrators).)
+* **Administratorbenachrichtigungseinstellungen,** die mit E-Mail-Benachrichtigungen gesendeten Nachrichten zu Verwaltungsaufgaben aktivieren, deaktivieren oder ändern. (Siehe [Benachrichtigungen für Administratoren konfigurieren](configuring-server-settings.md#configuring-notifications-for-administrators).
 
 ## E-Mail-Einstellungen konfigurieren {#configuring-email-settings}
 
-Sie können ein E-Mail-Konto für den Formularserver angeben, über das dieser E-Mail-Nachrichten an AEM Forms-Benutzer und -Administratoren sendet und von diesen empfängt. Mit diesen E-Mail-Nachrichten werden Benutzer über auszuführende Aufgaben benachrichtigt bzw. daran erinnert. Außerdem wird der Benutzer auf Aufgaben, für die ein Termin fällig geworden ist, hingewiesen und der Administrator wird über aufgetretene Fehler im Prozess informiert.
+Sie können ein E-Mail-Konto für den Formularserver angeben, über das dieser E-Mail-Nachrichten an AEM Benutzer und Administratoren von Formularen sendet. Diese E-Mail-Nachrichten werden verwendet, um Benutzer auf die Aufgaben aufmerksam zu machen, die sie ausführen müssen, den Benutzer über Aufgaben zu informieren, für die ein Termin erreicht wurde, und den Administrator über eventuelle Prozessfehler zu informieren.
 
-Um das Senden von E-Mail-Nachrichten zwischen AEM Forms und Benutzern zu aktivieren, konfigurieren Sie die Einstellungen für ausgehende E-Mail auf der Seite „E-Mail-Einstellungen“. Für ausgehende E-Mail muss ein SMTP-Server verwendet werden.
+Um das Senden von E-Mail-Nachrichten zwischen AEM Formularen und Benutzern zu aktivieren, konfigurieren Sie die Einstellungen für ausgehende E-Mails auf der Seite E-Mail-Einstellungen . Ausgehende E-Mails müssen einen SMTP-Server verwenden.
 
 Damit AEM Forms eingehende E-Mail-Nachrichten von Benutzern empfangen und verarbeiten kann, müssen Sie einen E-Mail-Endpunkt für den Complete Task-Dienst erstellen. (Siehe [E-Mail-Endpunkt für den Complete Task-Dienst erstellen](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)).
 
-Wenn Ihre Prozesse so entworfen und implementiert sind, dass sie keine E-Mail benötigen, müssen keine der Optionen auf der Seite „E-Mail-Einstellungen“ konfiguriert werden.
+Wenn Ihre Prozesse ohne E-Mail-Empfang konzipiert und implementiert wurden, müssen Sie keine der Optionen auf der Seite E-Mail-Einstellungen konfigurieren.
 
-### Einstellungen für ausgehende E-Mail konfigurieren {#configure-outgoing-email-settings}
+### Ausgehende E-Mail-Einstellungen konfigurieren {#configure-outgoing-email-settings}
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Servereinstellungen“ > „E-Mail-Einstellungen“.
-1. Wählen Sie „Ausgehende Nachrichten aktivieren“.
-1. Geben Sie in das Feld „SMTP-Server“ den Namen oder die IP-Adresse des E-Mail-Servers ein. Alle E-Mail-Nachrichten für Benachrichtigungen vom Arbeitsablauf für Formulare werden von diesem E-Mail-Server gesendet.
-1. Geben Sie in die Felder „Benutzername“ und „Kennwort“ den Anmeldenamen und das Kennwort ein, die verwendet werden sollen, wenn der SMTP-Server eine Authentifizierung erfordert. Um anonyme Anmeldungen zuzulassen, lassen Sie die Felder unausgefüllt.
-1. Geben Sie im Feld „E-Mail-Adresse“ die E-Mail-Adresse ein, die als Antwortadresse für E-Mail-Nachrichten verwendet werden soll, die vom Arbeitsablauf für Formulare gesendet werden.
+1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;Arbeitsablauf für Formulare&quot;> &quot;Servereinstellungen&quot;> &quot;E-Mail-Einstellungen&quot;.
+1. Wählen Sie Ausgehende Nachrichten aktivieren aus.
+1. Geben Sie in das Feld SMTP Server den Namen des E-Mail-Servers oder die IP-Adresse ein. Alle Benachrichtigungs-E-Mail-Nachrichten aus dem Arbeitsablauf für Formulare werden von diesem E-Mail-Server gesendet.
+1. Geben Sie in die Felder &quot;Benutzername&quot;und &quot;Kennwort&quot;den Anmeldenamen und das Kennwort ein, die verwendet werden sollen, wenn der SMTP-Server eine Authentifizierung erfordert. Lassen Sie sie leer, wenn die anonyme Anmeldung zulässig ist.
+1. Geben Sie in das Feld &quot;E-Mail-Adresse&quot;die E-Mail-Adresse ein, die als Rücksenderadresse für E-Mail-Nachrichten verwendet werden soll, die vom Arbeitsablauf für Formulare gesendet werden.
 
    >[!NOTE]
    >
-   >Wenn Sie Microsoft Exchange Server verwenden und die E-Mail-Adresse eine ungültige E-Mail-Adresse ist, kann der Microsoft Exchange Server keine E-Mail an die Verteilerliste senden. Um dieses Problem zu beheben, aktivieren Sie die Option **Externe Kommunikation aktivieren** separat für jede Verteilerliste auf Microsoft Exchange Server. 
+   >Wenn Sie Microsoft Exchange Server verwenden und die E-Mail-Adresse eine ungültige E-Mail-Adresse ist, kann der Microsoft Exchange-Server keine E-Mail an die Verteilerlisten senden. Um dieses Problem zu beheben, aktivieren Sie die Option **Externe Kommunikation aktivieren** separat für jede Verteilerliste auf Microsoft Exchange Server. 
 
 1. Klicken Sie auf Speichern.
 
 >[!NOTE]
 >
->Wenn Sie falsche Informationen eingeben, können Sie durch Klicken auf „Abbrechen“ zur vorher angezeigten Seite zurückkehren.
+>Wenn Sie falsche Informationen eingeben, können Sie auf Abbrechen klicken, um zur zuvor angezeigten Seite zurückzukehren.
 
 ### Konfigurieren von E-Mail-Vorlagen für die Verwendung von AEM Forms Workspace {#configuring-email-templates-to-use-html-workspace}
 
@@ -59,10 +59,10 @@ Wenn Ihre Prozesse so entworfen und implementiert sind, dass sie keine E-Mail be
 >
 >Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.
 
-Standardmäßig enthalten die E-Mails, die von AEM Forms gesendet werden, Links zu Flex Workspace (nicht mehr unterstützt für AEM Forms on JEE). Sie können AEM Forms so konfigurieren, das E-Mails mit Links zu AEM Forms Workspace gesendet werden. Um mehr über die Vorteile von AEM Forms Workspace gegenüber Flex Workspace (nicht mehr unterstützt für AEM Forms on JEE) zu erfahren, lesen Sie [diesen Artikel](/help/forms/using/features-html-workspace-available-flex.md).
+Standardmäßig enthalten die von AEM Formularen gesendeten E-Mails Links zu Flex Workspace (nicht mehr unterstützt für AEM Forms on JEE). Sie können AEM Forms so konfigurieren, das E-Mails mit Links zu AEM Forms Workspace gesendet werden. Weitere Informationen zu den Vorteilen von AEM Forms Workspace gegenüber Flex Workspace (nicht mehr unterstützt für AEM Forms on JEE) finden Sie unter [this](/help/forms/using/features-html-workspace-available-flex.md) Artikel.
 
-1. Klicken Sie in Administration Console auf „Startseite“ > „Dienste“ > „Arbeitsablauf für Formulare“ > „Aufgabenbenachrichtigungen“.
-1. Öffnen Sie Aufgabenzuweisungsvorlage.
+1. Klicken Sie in Administration Console auf &quot;Startseite&quot;> &quot;Dienste&quot;> &quot;Arbeitsablauf für Formulare&quot;> &quot;Servereinstellungen&quot;> &quot;Aufgabenbenachrichtigungen&quot;.
+1. Öffnen Sie die Aufgabenzuweisungsvorlage.
 1. Legen Sie die Vorlage in den Aufgabenbenachrichtigungen auf folgendes fest:  `https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@`
 
    ```java
@@ -71,15 +71,15 @@ Standardmäßig enthalten die E-Mails, die von AEM Forms gesendet werden, Links 
 
 ## Benachrichtigungen für Benutzer und Gruppen konfigurieren {#configuring-notifications-for-users-and-groups}
 
-Auf der Seite „Aufgabenbenachrichtigung“ können Sie Vorlagen konfigurieren, die der Arbeitsablauf für Formulare nutzt, um E-Mail-Benachrichtigungen zu generieren, die an Benutzer und Gruppen gesendet werden. Sie können die Benachrichtigungen mithilfe von Variablen des Arbeitsablaufs für Formulare anpassen und formatieren.
+Auf der Seite &quot;Aufgabenbenachrichtigung&quot;können Sie Vorlagen konfigurieren, die der Arbeitsablauf für Formulare verwendet, um die E-Mail-Benachrichtigungen zu generieren, die an Benutzer und Gruppen gesendet werden. Sie können die Benachrichtigungen mithilfe von Variablen des Arbeitsablaufs für Formulare anpassen und formatieren.
 
-Folgende Benachrichtigungstypen können für Benutzer und Gruppen konfiguriert werden:
+Sie konfigurieren die folgenden Benachrichtigungstypen für Benutzer und Gruppen:
 
 * Erinnerungen
 * Aufgabenzuweisungen
 * Termine
 
-Um E-Mail-Benachrichtigungen für eine Gruppe zu generieren, müssen Sie in User Management eine E-Mail-Adresse für die Gruppe angeben. <!--Fix broken link See Setting up and organizing users -->Wenn der Arbeitsablauf für Formulare eine E-Mail-Benachrichtigung an eine Gruppe sendet, geht die Benachrichtigung an jedes Mitglied der Gruppe, dessen E-Mail-Adresse angegeben ist. Wenn ein Mitglied der Gruppe eine E-Mail-Benachrichtigung erhält und die Aufgabe anfordern möchte, muss auf die in der E-Mail-Benachrichtigung enthaltene Anforderungsverknüpfung klicken, wodurch die Seite mit den Aufgabendetails in Workspace geöffnet wird. Dort kann das Mitglied das Arbeitselement entweder anfordern oder anfordern und öffnen.
+Um E-Mail-Benachrichtigungen für eine Gruppe zu generieren, geben Sie in User Management eine E-Mail-Adresse für die Gruppe an. <!--Fix broken link See Setting up and organizing users -->Wenn der Arbeitsablauf für Formulare eine E-Mail-Benachrichtigung an eine Gruppe sendet, geht die Benachrichtigung an jedes Mitglied der Gruppe, dessen E-Mail-Adresse angegeben ist. Wenn ein Mitglied der Gruppe eine E-Mail-Benachrichtigung erhält und die Aufgabe anfordern möchte, muss das Mitglied in der E-Mail-Benachrichtigung auf den Anforderungslink klicken, wodurch die Aufgabendetailseite in Workspace geöffnet wird. Von dort aus kann das Mitglied das Arbeitselement entweder anfordern oder anfordern und öffnen.
 
 >[!NOTE]
 >
@@ -87,46 +87,46 @@ Um E-Mail-Benachrichtigungen für eine Gruppe zu generieren, müssen Sie in User
 
 ### Erinnerungen für Benutzer oder Gruppen konfigurieren {#configure-reminders-for-users-or-groups}
 
-Sie können Erinnerungsbenachrichtigungen an den zugewiesenen Benutzer bzw. die Gruppe senden, wenn ein Termin zum Durchführen einer Aufgabe heranrückt. Die Regeln zum Ermitteln des genauen Zeitpunktes, zu dem eine Erinnerungsbenachrichtigung zu senden ist, werden vom Entwickler des Prozesses festgelegt.
+Sie können Erinnerungsbenachrichtigungen an den zugewiesenen Benutzer oder die zugewiesene Gruppe senden, wenn ein Termin zum Abschließen einer Aufgabe näher rückt. Die Regeln, die genau bestimmen, wann eine Erinnerungsbenachrichtigung gesendet wird, werden vom Prozessentwickler festgelegt.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Servereinstellungen“ > „Aufgabenbenachrichtigungen“.
-1. Klicken Sie unter „Benachrichtigungstyp“ für Benutzer auf „Erinnerung“ bzw. für Gruppen auf „Gruppe - Erinnerung“.
-1. Wählen Sie „Erinnerung aktivieren“ bzw. „Gruppe - Erinnerung aktivieren“.
-1. (Nur für Benutzerbenachrichtigungen) Um das Formular mit Daten als Anlage in die E-Mail-Erinnerungsnachricht zu übernehmen, aktivieren Sie „Formulardaten aufnehmen“.
-1. Geben Sie in das Feld „Betreff“ den Text für die Betreffzeile der E-Mail-Nachricht ein. Dieses Feld ist bereits vorab mit Standardtext ausgefüllt. Detaillierte Informationen zum Anpassen dieses Felds finden Sie unter [Inhalt von Nachrichten anpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Geben Sie in das Feld „Benachrichtigungsvorlage“ den Text für den Nachrichtentext der E-Mail-Nachricht ein. Dieses Feld ist bereits vorab mit Standardtext ausgefüllt. Detaillierte Informationen zum Anpassen dieses Felds finden Sie unter [Inhalt von Nachrichten anpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Wählen Sie in der Liste „Nachrichtenformat“ das Format aus, in dem die E-Mail-Nachricht gesendet werden soll, entweder HTML oder Text. Das Standardformat ist HTML.
-1. Wählen Sie in der Liste „E-Mail-Kodierung“ das für die E-Mail-Nachricht zu verwendende Kodierformat aus. Der Standardwert ist UTF-8, der von den meisten Benutzern außerhalb von Japan benutzt wird. Benutzer in Japan wählen eher ISO2022-JP.
+1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;Forms-Workflow&quot;> &quot;Servereinstellungen&quot;> &quot;Aufgabenbenachrichtigungen&quot;.
+1. Klicken Sie unter &quot;Benachrichtigungstyp&quot;für Benutzer auf Erinnerung oder für Gruppen auf Gruppe - Erinnerung .
+1. Wählen Sie &quot;Erinnerung aktivieren&quot;oder &quot;Gruppe - Erinnerung aktivieren&quot;.
+1. (Nur für Benutzerbenachrichtigungen) Um eine Anlage des Formulars und seiner Daten mit der Erinnerungsnachricht einzuschließen, wählen Sie &quot;Formulardaten einschließen&quot;.
+1. Geben Sie in das Feld Betreff den Text für die Betreffzeile der E-Mail-Nachricht ein. Dieses Feld enthält bereits den Standardtext. Weitere Informationen zum Anpassen dieses Felds finden Sie unter [Inhalt von Benachrichtigungen anpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Geben Sie im Feld &quot;Benachrichtigungsvorlage&quot;den Text für den Nachrichtentext der E-Mail ein. Dieses Feld enthält bereits den Standardtext. Weitere Informationen zum Anpassen dieses Felds finden Sie unter [Inhalt von Benachrichtigungen anpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Wählen Sie in der Liste &quot;Nachrichtenformat&quot;das Format aus, in dem die E-Mail-Nachricht gesendet wird, entweder HTML oder Text. Das Standardformat ist HTML.
+1. Wählen Sie in der Liste E-Mail-Kodierung das Kodierungsformat für die E-Mail-Nachricht aus. Die Standardeinstellung ist UTF-8, die von den meisten Benutzern außerhalb Japans verwendet wird. Benutzer in Japan können &quot;ISO2022-JP&quot;auswählen.
 1. Klicken Sie auf Speichern.
 
-### Benachrichtigungen über Aufgabenzuweisungen für Benutzer und Gruppen konfigurieren {#configure-task-assignment-notifications-for-users-or-groups}
+### Benachrichtigungen für Aufgabenzuweisungen für Benutzer oder Gruppen konfigurieren {#configure-task-assignment-notifications-for-users-or-groups}
 
-Sie können Benachrichtigungen über Aufgabenzuweisungen an Benutzer oder eine Gruppe senden, wenn diesen eine Aufgabe zugewiesen wird.
+Sie können Benachrichtigungen über Aufgabenzuweisungen an einen Benutzer oder eine Gruppe senden, wenn ihm eine Aufgabe zugewiesen wird.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Servereinstellungen“ > „Aufgabenbenachrichtigungen“.
-1. Klicken Sie unter „Benachrichtigungstyp“ für Benutzer auf Aufgabenzuweisung bzw. für Gruppen auf Gruppe - Aufgabenzuweisung.
-1. Wählen Sie für Benutzer „Aufgabenzuweisung aktivieren“ bzw. für Gruppen „Gruppe - Aufgabenzuweisung aktivieren“.
-1. (Nur für Benutzerbenachrichtigungen) Um das Formular mit Daten als Anlage in die E-Mail-Aufgabenzuweisungsnachricht zu übernehmen, aktivieren Sie „Formulardaten aufnehmen“.
-1. Geben Sie in das Feld „Betreff“ den Text für die Betreffzeile der E-Mail-Nachricht ein. Dieses Feld ist bereits vorab mit Standardtext ausgefüllt. Detaillierte Informationen zum Anpassen dieses Felds finden Sie unter [Inhalt von Nachrichten anpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Geben Sie in das Feld „Benachrichtigungsvorlage“ den Text für den Nachrichtentext der E-Mail-Nachricht ein. Dieses Feld ist bereits vorab mit Standardtext ausgefüllt. Detaillierte Informationen zum Anpassen dieses Felds finden Sie unter [Inhalt von Nachrichten anpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Wählen Sie in der Liste „Nachrichtenformat“ das Format aus, in dem die E-Mail-Nachricht gesendet werden soll, entweder HTML oder Text. Das Standardformat ist HTML.
-1. Wählen Sie in der Liste „E-Mail-Kodierung“ das für die E-Mail-Nachricht zu verwendende Kodierformat aus. Der Standardwert ist UTF-8, der von den meisten Benutzern außerhalb von Japan benutzt wird. Benutzer in Japan wählen eher ISO2022-JP.
+1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;Forms-Workflow&quot;> &quot;Servereinstellungen&quot;> &quot;Aufgabenbenachrichtigungen&quot;.
+1. Klicken Sie unter &quot;Benachrichtigungstyp&quot;für Benutzer auf Aufgabenzuweisung oder für Gruppen auf Gruppe - Aufgabenzuweisung .
+1. Wählen Sie &quot;Aufgabenzuweisung für Benutzer aktivieren&quot;oder &quot;Gruppe - Aufgabenzuweisung für Gruppen aktivieren&quot;.
+1. (Nur für Benutzerbenachrichtigungen) Um eine Anlage des Formulars und seiner Daten in die E-Mail-Nachricht zur Aufgabenzuweisung einzuschließen, wählen Sie &quot;Formulardaten einschließen&quot;.
+1. Geben Sie in das Feld Betreff den Text für die Betreffzeile der E-Mail-Nachricht ein. Dieses Feld enthält bereits den Standardtext. Weitere Informationen zum Anpassen dieses Felds finden Sie unter [Inhalt von Benachrichtigungen anpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Geben Sie im Feld &quot;Benachrichtigungsvorlage&quot;den Text für den Nachrichtentext der E-Mail ein. Dieses Feld enthält bereits den Standardtext. Weitere Informationen zum Anpassen dieses Felds finden Sie unter [Inhalt von Benachrichtigungen anpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Wählen Sie in der Liste &quot;Nachrichtenformat&quot;das Format aus, in dem die E-Mail-Nachricht gesendet wird, entweder HTML oder Text. Das Standardformat ist HTML.
+1. Wählen Sie in der Liste E-Mail-Kodierung das Kodierungsformat für die E-Mail-Nachricht aus. Die Standardeinstellung ist UTF-8, die von den meisten Benutzern außerhalb Japans verwendet wird. Benutzer in Japan können &quot;ISO2022-JP&quot;auswählen.
 1. Klicken Sie auf Speichern.
 
-### Terminbenachrichtigungen für Benutzer und Gruppen konfigurieren {#configure-deadline-notifications-for-users-or-groups}
+### Konfigurieren von Terminbenachrichtigungen für Benutzer oder Gruppen {#configure-deadline-notifications-for-users-or-groups}
 
-Sie können Terminbenachrichtigungen an Benutzer und Gruppen senden, wenn der Termin für die Durchführung einer Aufgabe verstrichen ist. Eine Terminbenachrichtigung hat normalerweise reinen Informationscharakter, weil der Benutzer die zugewiesene Aufgabe nicht mehr ausführen kann.
+Sie können Benutzern und Gruppen Terminbenachrichtigungen senden, wenn die Frist für die Bearbeitung einer zugewiesenen Aufgabe abgelaufen ist. Eine Terminbenachrichtigung ist in der Regel informativ, da der Benutzer die zugewiesene Aufgabe nicht mehr bearbeiten kann.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Servereinstellungen“ > „Aufgabenbenachrichtigungen“.
-1. Klicken Sie unter „Benachrichtigungstyp“ für Benutzer auf „Termin“ bzw. für Gruppen auf „Gruppe - Termin“.
-1. Wählen Sie „Erinnerung aktivieren“ bzw. „Gruppe - Erinnerung aktivieren“.
-1. Geben Sie in das Feld „Betreff“ den Text für die Betreffzeile der E-Mail-Nachricht ein. Dieses Feld ist bereits vorab mit Standardtext ausgefüllt. Detaillierte Informationen zum Anpassen dieses Felds finden Sie unter [Inhalt von Nachrichten anpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Geben Sie in das Feld „Benachrichtigungsvorlage“ den Text für den Nachrichtentext der E-Mail-Nachricht ein. Dieses Feld ist bereits vorab mit Standardtext ausgefüllt. Detaillierte Informationen zum Anpassen dieses Felds finden Sie unter [Inhalt von Nachrichten anpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Wählen Sie in der Liste „Nachrichtenformat“ das Format aus, in dem die E-Mail-Nachricht gesendet werden soll, entweder HTML oder Text. Das Standardformat ist HTML.
-1. Wählen Sie in der Liste „E-Mail-Kodierung“ das für die E-Mail-Nachricht zu verwendende Kodierformat aus. Der Standardwert ist UTF-8, der von den meisten Benutzern außerhalb von Japan benutzt wird. Benutzer in Japan wählen eher ISO2022-JP.
+1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;Forms-Workflow&quot;> &quot;Servereinstellungen&quot;> &quot;Aufgabenbenachrichtigungen&quot;.
+1. Klicken Sie unter &quot;Benachrichtigungstyp&quot;auf &quot;Deadline (für Benutzer)&quot;oder &quot;Gruppe - Deadline&quot;(für Gruppen).
+1. Wählen Sie &quot;Deadline aktivieren&quot;oder &quot;Gruppe - Deadline aktivieren&quot;.
+1. Geben Sie in das Feld Betreff den Text für die Betreffzeile der E-Mail-Nachricht ein. Dieses Feld enthält bereits den Standardtext. Weitere Informationen zum Anpassen dieses Felds finden Sie unter [Inhalt von Benachrichtigungen anpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Geben Sie im Feld &quot;Benachrichtigungsvorlage&quot;den Text für den Nachrichtentext der E-Mail ein. Dieses Feld enthält bereits den Standardtext. Weitere Informationen zum Anpassen dieses Felds finden Sie unter [Inhalt von Benachrichtigungen anpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Wählen Sie in der Liste &quot;Nachrichtenformat&quot;das Format aus, in dem die E-Mail-Nachricht gesendet wird, entweder HTML oder Text. Das Standardformat ist HTML.
+1. Wählen Sie in der Liste E-Mail-Kodierung das Kodierungsformat für die E-Mail-Nachricht aus. Die Standardeinstellung ist UTF-8, die von den meisten Benutzern außerhalb Japans verwendet wird. Benutzer in Japan können &quot;ISO2022-JP&quot;auswählen.
 1. Klicken Sie auf Speichern.
 
-### Blenden Sie das Tag „DO NOT DELETE“ für alle E-Mails aus. {#hide-the-do-not-delete-tag-for-all-emails}
+### Das Tag DO NOT DELETE für alle E-Mails ausblenden {#hide-the-do-not-delete-tag-for-all-emails}
 
 Sie können die E-Mails so konfigurieren, dass der Verfolgungstag „DO NOT DELETE“ in allen E-Mails ausgeblendet wird, die in einem am Menschen orientierten Prozess gesendet werden.
 
@@ -136,62 +136,62 @@ For details, see [How to hide the 'DO-NOT-DELETE' tag with CSS](https://blogs.ad
 
 ## Benachrichtigungen für Administratoren konfigurieren {#configuring-notifications-for-administrators}
 
-Sie können Vorlagen konfigurieren, die der Arbeitsablauf für Formulare nutzt, um E-Mail-Benachrichtigungen zu generieren, die an Administratoren gesendet werden.
+Sie können Vorlagen konfigurieren, die der Arbeitsablauf für Formulare verwendet, um die E-Mail-Benachrichtigungen zu generieren, die an Administratoren gesendet werden.
 
-Folgende Benachrichtigungstypen können für Administratoren konfiguriert werden:
+Sie konfigurieren die folgenden Benachrichtigungstypen für Administratoren:
 
 * Angehaltener Zweig
 * Angehaltener Vorgang
 
 ### Benachrichtigungen bei angehaltenen Zweigen konfigurieren {#configure-stalled-branch-notifications}
 
-Wenn ein Zweig anhält (also dessen Fortsetzung absichtlich oder wegen eines Fehlers beendet wird), können Sie veranlassen, dass eine E-Mail-Benachrichtigung an einen Administrator oder einen anderen Benutzer gesendet wird, der das Problem untersuchen kann.
+Wenn ein Zweig anhält (also die Fortsetzung absichtlich oder wegen eines Fehlers beendet wird), können Sie eine E-Mail-Benachrichtigung an einen Administrator oder einen anderen Benutzer senden, der dann das Problem untersuchen kann.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Servereinstellungen“ > „Administratorbenachrichtigungen“.
-1. Klicken Sie unter Benachrichtigungstyp auf Angehaltener Zweig.
-1. Wählen Sie „&#39;Angehaltener Zweig&#39; aktivieren“.
-1. Geben Sie in das Feld „E-Mail-Adresse“ die Adressen der Benutzer ein, die benachrichtigt werden sollen, wenn ein Zweig anhält. Sie müssen das Format „Benutzer@Domain.com“ verwenden und jede Adresse durch ein Komma abtrennen. Normalerweise handelt es sich hierbei um die E-Mail-Adresse eines Administrators.
-1. Geben Sie in das Feld „Betreff“ den Text für die Betreffzeile der E-Mail-Nachricht ein. Dieses Feld ist bereits vorab mit Standardtext ausgefüllt. Detaillierte Informationen zum Anpassen dieses Felds finden Sie unter [Inhalt von Nachrichten anpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Geben Sie in das Feld „Benachrichtigungsvorlage“ den Text für den Nachrichtentext der E-Mail-Nachricht ein. Dieses Feld ist bereits vorab mit Standardtext ausgefüllt. Detaillierte Informationen zum Anpassen dieses Felds finden Sie unter [Inhalt von Nachrichten anpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Wählen Sie in der Liste „Nachrichtenformat“ das Format aus, in dem die E-Mail-Nachricht gesendet werden soll, entweder HTML oder Text. Das Standardformat ist HTML.
-1. Wählen Sie in der Liste „E-Mail-Kodierung“ das für die E-Mail-Nachricht zu verwendende Kodierformat aus. Der Standardwert ist UTF-8, der von den meisten Benutzern außerhalb von Japan benutzt wird. Benutzer in Japan wählen eher ISO2022-JP.
+1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;Forms-Workflow&quot;> &quot;Servereinstellungen&quot;> &quot;Administratorbenachrichtigungen&quot;.
+1. Klicken Sie unter &quot;Benachrichtigungstyp&quot;auf &quot;Angehaltener Zweig&quot;.
+1. Wählen Sie Angehaltene Verzweigung aktivieren aus.
+1. Geben Sie in das Feld &quot;E-Mail-Adresse&quot;die Adressen der Benutzer ein, die benachrichtigt werden sollen, wenn eine Verzweigung anhält. Sie müssen das Format „Benutzer@Domain.com“ verwenden und jede Adresse durch ein Komma abtrennen. Normalerweise ist diese E-Mail-Adresse für einen Administrator bestimmt.
+1. Geben Sie in das Feld Betreff den Text für die Betreffzeile der E-Mail-Nachricht ein. Dieses Feld enthält bereits den Standardtext. Weitere Informationen zum Anpassen dieses Felds finden Sie unter [Inhalt von Benachrichtigungen anpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Geben Sie im Feld &quot;Benachrichtigungsvorlage&quot;den Text für den Nachrichtentext der E-Mail ein. Dieses Feld enthält bereits den Standardtext. Weitere Informationen zum Anpassen dieses Felds finden Sie unter [Inhalt von Benachrichtigungen anpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Wählen Sie in der Liste &quot;Nachrichtenformat&quot;das Format aus, in dem die E-Mail-Nachricht gesendet wird, entweder HTML oder Text. Das Standardformat ist HTML.
+1. Wählen Sie in der Liste E-Mail-Kodierung das Kodierungsformat für die E-Mail-Nachricht aus. Die Standardeinstellung ist UTF-8, die von den meisten Benutzern außerhalb Japans verwendet wird. Benutzer in Japan können &quot;ISO2022-JP&quot;auswählen.
 1. Klicken Sie auf Speichern.
 
-### Benachrichtigungen bei angehaltenen Vorgängen konfigurieren {#configure-stalled-operation-notifications}
+### Benachrichtigungen bezüglich angehaltener Vorgänge konfigurieren {#configure-stalled-operation-notifications}
 
-Wenn ein Vorgang anhält (also dessen Fortsetzung absichtlich oder wegen eines Fehlers beendet wird), können Sie veranlassen, dass eine E-Mail-Benachrichtigung an einen Administrator oder einen anderen Benutzer gesendet wird, der das Problem untersuchen kann.
+Wenn ein Vorgang angehalten wird (also die Fortsetzung absichtlich oder aufgrund eines Fehlers beendet wird), können Sie eine E-Mail-Benachrichtigung an einen Administrator oder einen anderen Benutzer senden, der das Problem untersuchen kann.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Servereinstellungen“ > „Administratorbenachrichtigungen“.
-1. Klicken Sie unter „Benachrichtigungstyp“ auf „Angehaltener Vorgang“.
-1. Wählen Sie „Angehaltener Vorgang aktivieren“.
-1. Geben Sie in das Feld „E-Mail-Adresse“ die Adressen der Benutzer ein, die benachrichtigt werden sollen, wenn ein Vorgang anhält. Sie müssen das Format „Benutzer@Domain.com“ verwenden und jede Adresse durch ein Komma abtrennen. Normalerweise handelt es sich hierbei um die E-Mail-Adresse eines Administrators.
-1. Geben Sie in das Feld „Betreff“ den Text für die Betreffzeile der E-Mail-Nachricht ein. Dieses Feld ist bereits vorab mit Standardtext ausgefüllt. Detaillierte Informationen zum Anpassen dieses Felds finden Sie unter [Inhalt von Nachrichten anpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Geben Sie in das Feld „Benachrichtigungsvorlage“ den Text für den Nachrichtentext der E-Mail-Nachricht ein. Dieses Feld ist bereits vorab mit Standardtext ausgefüllt. Detaillierte Informationen zum Anpassen dieses Felds finden Sie unter [Inhalt von Nachrichten anpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;Forms-Workflow&quot;> &quot;Servereinstellungen&quot;> &quot;Administratorbenachrichtigungen&quot;.
+1. Klicken Sie unter &quot;Benachrichtigungstyp&quot;auf &quot;Angehaltener Vorgang&quot;.
+1. Wählen Sie &quot;Angehaltener Vorgang aktivieren&quot;.
+1. Geben Sie im Feld &quot;E-Mail-Adressen&quot;die Adressen der Benutzer ein, die benachrichtigt werden sollen, wenn ein Vorgang anhält. Sie müssen das Format „Benutzer@Domain.com“ verwenden und jede Adresse durch ein Komma abtrennen. Normalerweise ist diese E-Mail-Adresse für einen Administrator bestimmt.
+1. Geben Sie in das Feld Betreff den Text für die Betreffzeile der E-Mail-Nachricht ein. Dieses Feld enthält bereits den Standardtext. Weitere Informationen zum Anpassen dieses Felds finden Sie unter [Inhalt von Benachrichtigungen anpassen](configuring-server-settings.md#customizing-the-content-of-notifications)
+1. Geben Sie im Feld &quot;Benachrichtigungsvorlage&quot;den Text für den Nachrichtentext der E-Mail ein. Dieses Feld enthält bereits den Standardtext. Weitere Informationen zum Anpassen dieses Felds finden Sie unter [Inhalt von Benachrichtigungen anpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Klicken Sie auf Speichern.
 
-## Anpassen des Inhalts von Benachrichtigungen {#customizing-the-content-of-notifications}
+## Inhalt von Benachrichtigungen anpassen {#customizing-the-content-of-notifications}
 
-Auf den Seiten „Aufgabenbenachrichtigungen“ und „Administratorbenachrichtigungen“ stehen mehrere Funktionen zur Verfügung, mit deren Hilfe Benachrichtigungsmeldungen angepasst werden können:
+Die Seiten &quot;Aufgabenbenachrichtigungen&quot;und &quot;Administratorbenachrichtigungen&quot;bieten verschiedene Funktionen, mit denen Sie Benachrichtigungsinhalte anpassen können:
 
 * Rich-Text-Editor
 * Variablenauswahl
-* URL-Erzeugung
+* URL-Generierung
 
 ### Rich-Text-Editor {#rich-text-editor}
 
-Der Bereich „Benachrichtigungsvorlage“ ist ein Rich-Text-Editor, in dem Sie HTML-Code für die E-Mail-Benachrichtigungsmeldungen erzeugen können. Es stehen dort Optionen für die Schriftarten- und Absatzformatierung zur Verfügung, die unterhalb des Feldes „Benachrichtigungsvorlage“ zu finden sind. Diese Optionen umfassen Schriftart, -grad, -stil und -farbe sowie Absatzausrichtung und Aufzählungszeichen.
+Der Bereich Benachrichtigungsvorlage ist ein Rich-Text-Editor, mit dem Sie HTML für die E-Mail-Benachrichtigungsinhalte generieren können. Es bietet Schriftart- und Absatzformatierungsoptionen, die unter dem Feld &quot;Benachrichtigungsvorlage&quot;zu finden sind. Zu den Optionen gehören Schriftart, Größe, Stil und Farbe sowie Absatzausrichtung und Aufzählungszeichen.
 
-### URL-Erzeugung {#url-generation}
+### URL-Generierung {#url-generation}
 
-Nur für Aufgabenbenachrichtigungen: Der Arbeitsablauf für Formulare enthält zwei vordefinierte URL-Konfigurationen, die aus der Liste „URL-Erzeugung“ in das Feld „Benachrichtigungsvorlage “ gezogen und dann angepasst werden können:
+Nur für Aufgabenbenachrichtigungen umfasst der Forms-Workflow zwei vordefinierte URL-Konfigurationen, die Sie aus der Liste &quot;URL-Erstellung&quot;in das Feld &quot;Benachrichtigungsvorlage&quot;ziehen und dann anpassen können:
 
-* OpenTask ist für die Benachrichtigungstypen „Erinnerung“ und „Aufgabenzuweisung“ verfügbar. Diese URL bietet eine Verknüpfung mit der Aufgabe in Workspace, wodurch der Benutzer schnell aus der E-Mail-Benachrichtigung heraus auf die Aufgabe zugreifen kann. Wenn Sie die OpenTask-URL in das Feld „Benachrichtigungsvorlage“ ziehen, ist die URL im folgenden Format:
+* OpenTask ist für die Benachrichtigungstypen &quot;Erinnerung&quot;und &quot;Aufgabenzuweisung&quot;verfügbar. Diese URL bietet eine Verknüpfung mit der Aufgabe in Workspace, wodurch der Benutzer schnell aus der E-Mail-Benachrichtigung heraus auf die Aufgabe zugreifen kann. Wenn Sie die OpenTask-URL in das Feld &quot;Benachrichtigungsvorlage&quot;ziehen, weist die URL folgendes Format auf:
 
-   `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
+  `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
 
-* „ClaimTask“ ist für die Benachrichtigungstypen „Gruppe - Erinnerung“ und „Gruppe - Aufgabenzuweisung“ verfügbar. Diese URL bietet eine Verknüpfung mit der Seite „Aufgabendetails“ in Workspace, auf der der Benutzer das Arbeitselement entweder anfordern oder anfordern und öffnen kann. Wenn Sie die ClaimTask-URL in das Feld „Benachrichtigungsvorlage“ ziehen, ist die URL im folgenden Format:
+* ClaimTask ist für die Benachrichtigungstypen Gruppe - Erinnerung und Gruppe - Aufgabenzuweisung verfügbar. Diese URL bietet einen Link zur Aufgabendetailseite in Workspace, auf der der Benutzer das Arbeitselement entweder anfordern oder anfordern und öffnen kann. Wenn Sie die ClaimTask-URL in das Feld &quot;Benachrichtigungsvorlage&quot;ziehen, weist die URL das folgende Format auf:
 
-   `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
+  `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
 
 >[!NOTE]
 >
@@ -211,11 +211,11 @@ Damit diese URLs korrekt funktionieren, müssen Sie `<`*PORT* `>` durch die Port
 
 >[!NOTE]
 >
->Wenn Sie mithilfe einer benutzerdefinierten anderen Webanwendung als Forms Benutzern den Zugriff auf die Aufgaben ermöglichen, müssen Sie stattdessen ein URL-Format verwenden, das dem der benutzerdefinierten Anwendung entspricht.
+>Wenn Sie eine andere benutzerdefinierte Webanwendung als Forms verwenden, um Benutzern Zugriff auf die Aufgaben zu gewähren, müssen Sie stattdessen ein URL-Format verwenden, das für Ihre benutzerdefinierte Anwendung geeignet ist.
 
 ### Variablenauswahl {#variable-picker}
 
-Die Liste „Variablenauswahl“ bietet nützliche Variablen, die in die Felder „Betreff“ und „Benachrichtigungsvorlage“ gezogen und dort abgelegt werden können. Beim Ablegen einer Variablen in einem der Felder „Betreff“ oder „Benachrichtigungsvorlage“ ändert sich deren Name in den tatsächlichen Namen der Variablen des Workflows für Formulare mit je zwei führenden und nachfolgenden @-Symbolen, z. B. `@@taskid@@`.
+Die Variablenauswahlliste bietet nützliche Variablen, die Sie per Drag &amp; Drop in die Felder &quot;Betreff&quot;oder &quot;Benachrichtigungsvorlage&quot;ziehen können. Beim Ablegen einer Variablen in einem der Felder „Betreff“ oder „Benachrichtigungsvorlage“ ändert sich deren Name in den tatsächlichen Namen der Variablen des Workflows für Formulare mit je zwei führenden und nachfolgenden @-Symbolen, z. B. `@@taskid@@`.
 
 Für Erinnerungen, Aufgabenzuweisungen und Termine für Benutzer und Gruppen können Sie die folgenden Variablen in den Feldern „Betreff“ und „Benachrichtigungsvorlage“ verwenden:
 
@@ -241,7 +241,7 @@ Zusätzlich können für Gruppenerinnerungen, Gruppenaufgabenzuweisungen und Gru
 >
 >Wenn eine Variable keinen Wert hat, wird nichts zurückgegeben.
 
-Für angehaltene Zweige können Sie die folgenden Variablen in den Feldern „Betreff“ und „Benachrichtigungsvorlage“ verwenden:
+Für angehaltene Zweige können Sie die folgenden Variablen in den Feldern Betreff und Benachrichtigungsvorlage verwenden:
 
 **branch-id** Die Zweig-ID.
 
@@ -259,9 +259,9 @@ Für angehaltene Vorgänge können Sie die folgenden Variablen in den Feldern �
 
 **notification-host** Der Host-Name des AEM Forms-Programm-Servers.
 
-### Variable im Feld „Betreff“ verwenden {#using-a-variable-in-the-subject-box}
+### Variable im Feld &quot;Betreff&quot;verwenden {#using-a-variable-in-the-subject-box}
 
-Wenn Sie den folgenden Text für Benachrichtigungen über Aufgabenzuweisungen in das Feld „Betreff“ eingeben:
+Wenn Sie den folgenden Text in das Feld &quot;Betreff&quot;für Benachrichtigungen über Aufgabenzuweisungen eingeben:
 
 `Please complete task @@taskid@@`
 
@@ -269,9 +269,9 @@ Erhält der Benutzer eine E-Mail-Nachricht mit dem folgenden Betreff, wenn die A
 
 `Please complete task 376`
 
-### Verwenden von Variablen im Feld „Benachrichtigungsvorlage“ {#using-variables-in-the-notification-template-box}
+### Verwenden von Variablen im Feld &quot;Benachrichtigungsvorlage&quot; {#using-variables-in-the-notification-template-box}
 
-Wenn Sie den folgenden Text für Benachrichtigungen bei angehaltenen Zweigen in das Feld „Benachrichtigungsvorlage“ eingeben:
+Wenn Sie den folgenden Text in das Feld &quot;Benachrichtigungsvorlage&quot;für Benachrichtigungen über angehaltene Verzweigungen eingeben:
 
 `Branch @@branch-id@@ has stalled! You have received this notification from @@notification-host@@.`
 
@@ -279,16 +279,16 @@ Erhält der Administrator eine E-Mail-Nachricht mit folgendem Inhalt, wenn die Z
 
 `Branch 4868 has stalled! You have received this notification from ServerXYZ.`
 
-## Business Activity Monitoring-Verbindungen konfigurieren {#configuring-business-activity-monitoring-connections}
+## Verbindungen zur Business Activity Monitoring konfigurieren {#configuring-business-activity-monitoring-connections}
 
-Business Activity Monitoring, ein optionales Modul, bietet eine Reihe von Betriebsdashboards, mit denen Ihre Vorgänge und wichtige Leistungsindikatoren in Echtzeit visualisiert werden.
+Business Activity Monitoring, ein optionales Modul, bietet eine Reihe operativer Dashboards, die eine Echtzeit-Sichtbarkeit Ihrer Vorgänge und wichtigen Leistungsindikatoren bieten.
 
-Auf der Seite „BAM-Konfigurationseinstellungen“ können Sie die Verbindungen mit dem Server festlegen, auf dem BAM ausgeführt wird, sodass prozessbezogene Ereignisse verfolgt und an diesen Server übermittelt werden können.
+Auf der Seite &quot;BAM-Konfigurationseinstellungen&quot;legen Sie die Verbindungen zum Server fest, auf dem BAM ausgeführt wird, damit prozessbezogene Ereignisse verfolgt und an diesen Server übertragen werden können.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Servereinstellungen“ > „BAM-Konfigurationseinstellungen“.
-1. Geben Sie in das Feld „BAM-Host“ den Namen des Servers ein, auf dem BAM ausgeführt wird. Der Standardwert ist localhost.
-1. Geben Sie in das Feld „BAM-Anschluss“ den Anschluss ein, über den die Verbindung mit dem Server hergestellt werden soll, auf dem BAM ausgeführt wird. Der BAM-Standardanschluss für JBoss ist 8080, für WebLogic 7001 und für WebSphere 9080.
-1. Geben Sie in das Feld „Serverhost“ den Namen oder die IP-Adresse des Host-Formularservers ein. Der Standardwert lautet localhost.
-1. Geben Sie in das Feld „Serveranschluss“ die vom Formularserver verwendete Anschlussnummer ein.
-1. Geben Sie in die Felder „Benutzername“ und „Kennwort“ die entsprechende Benutzer-ID und das Kennwort für den Zugriff auf den BAM-Server ein. Der Standardbenutzername ist „CognosNowAdmin“, das Standardkennwort „manager“.
+1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;Forms-Workflow&quot;> &quot;Servereinstellungen&quot;> &quot;BAM-Konfigurationseinstellungen&quot;.
+1. Geben Sie in das Feld &quot;BAM Host&quot;den Namen des Servers ein, auf dem BAM ausgeführt wird. Die Standardeinstellung ist localhost.
+1. Geben Sie in das Feld &quot;BAM Port&quot;den Anschluss ein, über den eine Verbindung zu dem Server hergestellt werden soll, auf dem BAM ausgeführt wird. Der standardmäßige BAM-Port für JBoss ist 8080, WebLogic ist 7001 und WebSphere ist 9080.
+1. Geben Sie in das Feld &quot;Server Host&quot;den Namen oder die IP-Adresse des Host-Formularservers ein. Der Standardwert lautet localhost.
+1. Geben Sie in das Feld &quot;Server Port&quot;die vom Formularserver verwendete Anschlussnummer ein.
+1. Geben Sie in die Felder &quot;Benutzername&quot;und &quot;Kennwort&quot;die entsprechende Benutzer-ID und das Kennwort für den Zugriff auf den BAM-Server ein. Der Standardbenutzername lautet CognosNowAdmin und das Standardkennwort lautet manager.
 1. Klicken Sie auf Speichern.

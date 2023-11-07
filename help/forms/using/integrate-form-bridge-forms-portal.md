@@ -11,10 +11,10 @@ discoiquuid: bd9bf095-d74d-458c-afe7-fab04050849d
 docset: aem65
 feature: Mobile Forms
 exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 26%
+source-wordcount: '391'
+ht-degree: 23%
 
 ---
 
@@ -24,7 +24,7 @@ FormBridge ist eine HTML5 Forms Bridge-API, mit der Sie mit einem Formular inter
 
 Sie können die FormBridge-API verwenden, um die Werte von Formularfeldern von der HTML-Seite abzurufen oder festzulegen und das Formular zu senden. Sie können beispielsweise die API verwenden, um ein assistentenähnliches Erlebnis zu erstellen.
 
-Eine bestehende HTML-Anwendung kann die FormBridge-API nutzen, um mit einem Formular zu interagieren und es in die HTML-Seite einzubetten. Sie können die folgenden Schritte ausführen, um den Wert eines Felds mithilfe der Form Bridge-API festzulegen.
+Eine bestehende HTML-Anwendung kann die FormBridge-API verwenden, um mit einem Formular zu interagieren und es in die HTML-Seite einzubetten. Sie können die folgenden Schritte ausführen, um den Wert eines Felds mithilfe der Form Bridge-API festzulegen.
 
 ## Integrieren von HTML5-Formularen in eine Webseite {#integrating-html-forms-to-a-web-page}
 
@@ -34,7 +34,7 @@ Eine bestehende HTML-Anwendung kann die FormBridge-API nutzen, um mit einem Form
    1. Melden Sie sich mit Administratorberechtigungen an.
    1. Erstellen Sie ein Profil oder wählen Sie ein vorhandenes Profil aus.
 
-      Weitere Informationen zum Erstellen eines Profils finden Sie unter [Erstellen eines neuen Profils](/help/forms/using/custom-profile.md).
+      Weitere Informationen zum Erstellen eines Profils finden Sie unter [Erstellen eines Profils](/help/forms/using/custom-profile.md).
 
 1. **Ändern des HTML-Profils**
 

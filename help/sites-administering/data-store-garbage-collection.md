@@ -11,20 +11,20 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1889'
+source-wordcount: '1885'
 ht-degree: 39%
 
 ---
 
 # Datenspeicherbereinigung {#data-store-garbage-collection}
 
-Wenn ein herkömmliches WCM-Asset entfernt wird, kann der Verweis auf den zugrunde liegenden Datenspeicherdatensatz aus der Knotenhierarchie entfernt werden, der Datenspeichersatz selbst bleibt jedoch erhalten. Dieser nicht referenzierte Datenspeicherdatensatz wird dann zu &quot;Müll&quot;, der nicht beibehalten werden muss. In Fällen, in denen eine Reihe von Garbage Assets vorhanden ist, ist es von Vorteil, diese zu entfernen, um Speicherplatz zu sparen und die Backup- und Dateisystemwartungsleistung zu optimieren.
+Wenn ein herkömmliches WCM-Asset entfernt wird, kann der Verweis auf den zugrunde liegenden Datenspeicherdatensatz aus der Knotenhierarchie entfernt werden, der Datenspeichersatz selbst bleibt jedoch erhalten. Dieser nicht referenzierte Datenspeicherdatensatz wird dann zu &quot;Müll&quot;, der nicht beibehalten werden muss. In Fällen, in denen mehrere Garbage Assets vorhanden sind, ist es von Vorteil, diese zu entfernen, um Speicherplatz zu sparen und die Backup- und Dateisystemwartungsleistung zu optimieren.
 
 Meistens sammelt eine WCM-Anwendung Informationen, löscht aber Informationen nicht so häufig. Obwohl neue Bilder hinzugefügt werden, selbst wenn alte Versionen ersetzt werden, behält das Versionskontrollsystem die alte Version bei und unterstützt bei Bedarf die Wiederherstellung. Somit wird der Großteil der Inhalte, die wir als Hinzufügen zum System betrachten, effektiv dauerhaft gespeichert. Was ist also die typische Quelle für &quot;Müll&quot;im Repository, den wir bereinigen möchten?
 
-AEM verwendet das Repository als Speicher für eine Reihe interner und hosteeping-Aktivitäten:
+AEM verwendet das Repository als Speicher für mehrere interne und speicherinterne Aktivitäten:
 
 * Erstellte und heruntergeladene Pakete
 * Temporäre Dateien, die für die Veröffentlichungsreplikation erstellt wurden
@@ -157,7 +157,7 @@ So führen Sie die Speicherbereinigung durch:
 
 ## Automatisieren der automatischen Datenspeicherbereinigung {#automating-data-store-garbage-collection}
 
-Wenn möglich, sollte die automatische Datenspeicherbereinigung ausgeführt werden, wenn das System wenig ausgelastet ist, z. B. morgens.
+Wenn möglich, sollte die automatische Datenspeicherbereinigung ausgeführt werden, wenn das System beispielsweise morgens wenig ausgelastet ist.
 
 Das integrierte, über das [Vorgangs-Dashboard](/help/sites-administering/operations-dashboard.md) verfügbare wöchentliche Wartungsfenster beinhaltet die integrierte Aufgabe, die Datenspeicherbereinigung sonntags um 1 Uhr morgens durchzuführen. Sie sollten auch überprüfen, ob derzeit keine Sicherungen ausgeführt werden. Der Beginn des Wartungsfensters kann bei Bedarf über das Dashboard angepasst werden.
 

@@ -1,19 +1,15 @@
 ---
 title: Adaptive Formularvorlagen
-seo-title: Adaptive Form Templates
 description: Erstellen Sie Vorlagen für adaptive Formulare, indem Sie die grundlegende Struktur und den anfänglichen Formularinhalt mithilfe des Vorlagen-Editors definieren.
-seo-description: Create adaptive form templates by defining the basic structure and initial form content using the Template Editor.
-uuid: 317ca3ab-f809-49a7-a063-9d0c17a35fe4
 contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
 feature: Adaptive Forms
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2040'
 ht-degree: 77%
 
 ---
@@ -39,9 +35,9 @@ Beispiel: Sie möchten, dass alle Autoren in einem Registrierungsformular bestim
 
 ## Arbeiten mit Vorlagen {#working-with-templates}
 
-Sie können über das Menü Tools auf den Vorlagen-Editor zugreifen, indem Sie zu **Adobe Experience Manager > Tools > Vorlagen**. Hier befinden sich die Vorlagen in Ordnern für bearbeitbare Vorlagen. AEM bietet einen globalen Ordner zum Organisieren von Vorlagen. Er ist jedoch nicht standardmäßig aktiviert. Sie können Ihren Administrator auffordern, den Ordner global zu aktivieren oder einen neuen Ordner für Vorlagen zu erstellen. Weitere Informationen zum Erstellen von Ordnern finden Sie unter [Vorlagenordner](/help/sites-developing/page-templates-editable.md).
+Sie können über das Menü Tools auf den Vorlagen-Editor zugreifen, indem Sie zu **Adobe Experience Manager > Tools > Vorlagen**. Hier befinden sich die Vorlagen in Ordnern für bearbeitbare Vorlagen. AEM bietet einen globalen Ordner zum Organisieren von Vorlagen. Er ist jedoch nicht standardmäßig aktiviert. Sie können Ihren Administrator bitten, den globalen Ordner zu aktivieren, oder einen Ordner für Vorlagen erstellen. Weitere Informationen zum Erstellen von Ordnern finden Sie unter [Vorlagenordner](/help/sites-developing/page-templates-editable.md).
 
-Sobald Sie auf einen Ordner tippen, um ihn zu öffnen, wird eine Schaltfläche „Erstellen“ angezeigt, mit der Sie eine neue Vorlage für adaptive Formulare erstellen können.
+Wenn Sie auf tippen, um einen Ordner zu öffnen, wird die Schaltfläche Erstellen angezeigt, mit der Sie eine Vorlage für adaptive Formulare erstellen können.
 
 ### Erstellen einer Vorlage {#create-template}
 

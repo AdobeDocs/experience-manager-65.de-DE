@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 94%
+source-wordcount: '953'
+ht-degree: 89%
 
 ---
 
@@ -29,7 +29,7 @@ Die Konsolen für die Benutzer- und Gruppenverwaltung sind jeweils über die **[
 
 ![Tools-Konsole](assets/chlimage_1-72a.png)
 
-Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die entsprechende Konsole geöffnet. In beiden können Sie Aktionen durchführen, indem Sie entweder das Kontrollkästchen und dann Aktionen aus der Symbolleiste verwenden oder indem Sie die Kontodetails über den Link unter **Name** aufrufen.
+Entweder **Benutzer** oder **Gruppen** über die Tools-Konsole die entsprechende Konsole öffnen. In beiden können Sie Aktionen durchführen, indem Sie entweder das Kontrollkästchen und dann Aktionen aus der Symbolleiste verwenden oder indem Sie die Kontodetails über den Link unter **Name** aufrufen.
 
 * [Benutzerverwaltung](#user-administration)
 
@@ -59,7 +59,7 @@ Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die en
 
    ![Symbol &quot;Benutzer hinzufügen&quot;](do-not-localize/chlimage_1-1.png)
 
-1. Das Formular **Benutzer erstellen** wird geöffnet:
+1. Die **Benutzer erstellen** Formular wird geöffnet:
 
    ![Formular &quot;Benutzerdetails&quot;](assets/chlimage_1-75a.png)
 
@@ -135,7 +135,7 @@ Sie können das Konto als **aktiv** oder **inaktiv** markieren.
 
    ![Dialogfeld &quot;Kontoeinstellungen&quot;](assets/chlimage_1-76a.png)
 
-1. Das Dialogfeld **Kennwort ändern** wird geöffnet. Geben Sie das neue Kennwort, die Kennwortwiederholung und Ihr Kennwort ein. Bestätigen Sie die Änderungen mit **OK**.
+1. Die **Kennwort ändern** wird geöffnet. Geben Sie das neue Kennwort, die Kennwortwiederholung und Ihr Kennwort ein. Bestätigen Sie die Änderungen mit **OK**.
 
    ![Dialogfeld &quot;Kennwort ändern&quot;](assets/chlimage_1-77a.png)
 
@@ -148,7 +148,7 @@ Sie können das Konto als **aktiv** oder **inaktiv** markieren.
 
    ![Verwenden des Gruppensymbols](do-not-localize/chlimage_1-2.png)
 
-   Hierdurch wird die Dropdown-Liste für die Gruppenauswahl geöffnet:
+   So öffnen Sie das Dropdown-Menü für die Gruppenauswahl:
 
    ![Gruppenauswahl](assets/chlimage_1-78a.png)
 
@@ -176,7 +176,7 @@ Sie können das Konto als **aktiv** oder **inaktiv** markieren.
 
    ![Neue Gruppe hinzufügen](do-not-localize/chlimage_1-4.png)
 
-1. Das Formular **Gruppe erstellen** wird geöffnet:
+1. Die **Gruppe erstellen** Formular wird geöffnet:
 
    ![Gruppendetails-Formular](assets/chlimage_1-79a.png)
 
@@ -188,7 +188,7 @@ Sie können das Konto als **aktiv** oder **inaktiv** markieren.
 
    * **Name**
 
-     Der Name für die Gruppe; dieser wird in der Gruppenkonsole angezeigt.
+     Ein Name für die Gruppe; er wird in der Gruppenkonsole angezeigt.
 
    * **Beschreibung**
 

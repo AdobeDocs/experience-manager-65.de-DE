@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3501'
-ht-degree: 47%
+source-wordcount: '3498'
+ht-degree: 45%
 
 ---
 
@@ -113,7 +113,7 @@ Beachten Sie vor dem Import die folgenden Einschränkungen:
 
 ### Sämtliche Attribute wie „class“ oder „id“, die auf das     &amp;lt;body>-Tag angewendet werden, werden nicht beibehalten. {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
-Wenn ein beliebiges Attribut wie „id“ oder „class“ auf das body-Tag angewendet wird, z. B. `<body id="container">`, bleibt dieses Attribut nach dem Import nicht erhalten. Das importierte Design darf also über keine Abhängigkeiten bei den Attributen verfügen, die auf das `<body>`-Tag angewendet werden.
+Wenn beispielsweise ein beliebiges Attribut wie ID oder Klasse auf das Body-Tag angewendet wird, `<body id="container">` nach dem Import nicht beibehalten. Das importierte Design darf also über keine Abhängigkeiten bei den Attributen verfügen, die auf das `<body>`-Tag angewendet werden.
 
 ### Verschieben einer Zip-Datei per Drag-and-Drop {#drag-and-drop-zip}
 
@@ -300,7 +300,7 @@ HTML-Tag mit in der importierten Zip enthaltenem grafischen Link: Hier ordnet hr
 >
 >Um einen Link „clickthroughgraphical“ zu erstellen, müssen Sie ein Anchortag und das Bild-Tg in einem div mit dem Attribut `data-cq-component="clickthroughgraphicallink"` einschließen.
 >
->Zum Beispiel: `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
+>Beispiel: `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
 >
 >Andere Möglichkeiten zum Verknüpfen eines Bildes mit einem Anker-Tag mithilfe von CSS werden nicht unterstützt. Beispielsweise funktioniert das folgende Markup nicht:
 >
@@ -321,7 +321,7 @@ Ein Lead-Formular ist ein Formular, das dazu verwendet wird, die Informationen e
 
 * Vordefinierte Lead-Felder (Vorname, Nachname, Adresse, Geburtsdatum, Geschlecht, Info, Benutzer-ID, E-Mail-ID, Sende-Schaltfläche) sind im Sidekick verfügbar. Platzieren Sie die erforderliche Komponente einfach per Drag-and-Drop in Ihrem Lead-Formular.
 * Mithilfe dieser Komponenten kann der Autor ein eigenständiges Formular entwerfen. Diese Felder entsprechen den Lead-Formular-Feldern. In eigenständigen oder importierten ZIP-Anwendungen können Benutzer zusätzliche Felder mithilfe von cq:form- oder cta lead form-Formularfeldern hinzufügen, sie benennen und entsprechend den Anforderungen entwerfen.
-* Ordnen Sie Formularfelder mithilfe spezifischer vordefinierter Namen für CTA-Lead-Formulare zu, z. B. „firstName“ für den Vornamen in einem Lead-Formular usw.
+* Weisen Sie Lead-Formular-Felder mit bestimmten vordefinierten Namen des CTA-Lead-Formulars zu, z. B. - firstName für Vorname im Lead-Formular usw.
 * Felder, die nicht dem Lead-Formular zugeordnet sind, werden cq:form-Komponenten zugeordnet - Text, Optionsfeld, Kontrollkästchen, Dropdown, ausgeblendet, Kennwort.
 * Benutzende können den Titel mit dem Tag „Beschriften“ und Stile mit dem Stilattribut „Klasse“ angeben (nur für CTA-Lead-Formular-Komponenten verfügbar).
 * Die Dankeseite und die Abonnement-Liste können als versteckte Parameter des Formulars (vorhanden in der Datei „index.htm“) bereitgestellt werden oder über die Bearbeitungsleiste von „Start des Lead-Formulars“ hinzugefügt oder bearbeitet werden.
@@ -438,9 +438,9 @@ Wenn in der importierten HTML keine Kodierung angegeben ist, ist die vom Design 
 
 ### Vorlage überlagern {#overlaying-template}
 
-Die Vorlage „Leere Einstiegsseite“ kann überlagert werden, indem eine neue erstellt wird unter: `/apps/<appName>/designimporter/templates/<templateName>`
+Die Vorlage für leere Landingpages kann überlagert werden, indem Sie eine Vorlage erstellen unter: `/apps/<appName>/designimporter/templates/<templateName>`
 
-Die Schritte zum Erstellen einer neuen Vorlage in AEM werden [hier](/help/sites-developing/templates.md) erläutert.
+Die Schritte zum Erstellen einer Vorlage in AEM werden erläutert. [here](/help/sites-developing/templates.md).
 
 ### Verweisen auf eine Komponente von der Landingpage {#referring-a-component-from-landing-page}
 

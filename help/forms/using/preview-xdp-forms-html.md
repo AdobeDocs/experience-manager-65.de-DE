@@ -1,7 +1,7 @@
 ---
 title: Generieren einer HTML5-Vorschau eines XDP-Formulars
 seo-title: Generate HTML5 preview of an XDP form
-description: Auf der Registerkarte für die Vorschau im HTML-Format in LiveCycle Designer können Sie das Formular so darstellen, wie es in einem Browser angezeigt würde.
+description: Die Registerkarte "HTML in der Vorschau"in LiveCycle Designer kann verwendet werden, um Formulare so anzuzeigen, wie sie in einem Browser angezeigt werden.
 seo-description: Preview HTML tab in LiveCycle Designer can be used to preview forms as they appear in a browser.
 uuid: cbee956f-bf2d-40c5-8e03-58fce0fa215b
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,20 +10,20 @@ discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 feature: Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '834'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 52%
 
 ---
 
 # Generieren einer HTML5-Vorschau eines XDP-Formulars{#generate-html-preview-of-an-xdp-form}
 
-Beim Erstellen eines Formulars in AEM Forms Designer können Sie nicht nur die PDF-Wiedergabe eines Formulars, sondern auch eine HTML5-Wiedergabe davon in der Vorschau anzeigen. Sie können die Registerkarte **HTML-Vorschau** verwenden, um ein Formular anzuzeigen, wie es im Browser angezeigt werden wird.
+Beim Entwerfen eines Formulars in AEM Forms Designer können Sie neben der Vorschau der PDF-Wiedergabe eines Formulars auch eine HTML5-Ausgabe davon in der Vorschau anzeigen. Sie können die **Vorschau von HTML** um ein Formular so in der Vorschau anzuzeigen, wie es in einem Browser angezeigt wird.
 
-## Aktivieren Sie die HTML-Vorschau für XDP-Formulare in Designer {#html-preview-of-forms-in-forms-designer}
+## Aktivieren der HTML-Vorschau für XDP-Formulare in Designer {#html-preview-of-forms-in-forms-designer}
 
-Um Designer für die Erstellung einer HTML-Vorschau für XDP-Formulare zu aktivieren, müssen Sie folgende Konfigurationen durchführen:
+Um Designer zu aktivieren, um eine HTML-Vorschau von XDP-Formularen zu generieren, führen Sie die folgenden Konfigurationen durch:
 
 * Konfigurieren des Apache Sling-Authentifizierungsdienstes 
 * Abgesicherten Modus deaktivieren
@@ -39,31 +39,32 @@ Um Designer für die Erstellung einer HTML-Vorschau für XDP-Formulare zu aktivi
 
    *  von AEM Forms für JEE
 
-      * -/de/content/xfaforms
+      * -/content/xfaforms
       * -/etc/clientlibs
+
    * AEM Forms on OSGi
 
-      * -/de/content/xfaforms
+      * -/content/xfaforms
       * -/etc/clientlibs/fd/xfaforms
 
    >[!NOTE]
    >
-   >Kopieren Sie nicht den angegebenen Wert in das Feld „Authentifizierungsanforderungen“, das es die Sonderzeichen im Wert beschädigen kann. Geben Sie die stattdessen den spezifizierten Wert in das Feld ein.
+   >Kopieren Sie den angegebenen Wert nicht in das Feld Authentifizierungsanforderungen , da dies die Sonderzeichen im Wert beschädigen kann. Geben Sie stattdessen den angegebenen Wert in das Feld ein.
 
-1. Geben Sie einen Benutzernamen und ein Kennwort für **[!UICONTROL Anonymer Benutzername]** und **[!UICONTROL Anonymes Benutzerkennwort]** ein. Die angegebenen Anmeldeinformationen werden verwendet, um anonyme Authentifizierung zu nutzen und Zugriff auf anonyme Benutzer zuzulassen.
+1. Geben Sie einen Benutzernamen und ein Kennwort in **[!UICONTROL Anonymer Benutzername]** und **[!UICONTROL Anonym-Benutzerkennwort]** angegeben. Die angegebenen Anmeldeinformationen werden verwendet, um die anonyme Authentifizierung zu handhaben und den Zugriff auf anonyme Benutzer zu ermöglichen.
 1. Klicken Sie auf **Speichern**, um die Konfiguration zu speichern.
 
 ### Deaktivieren des abgesicherten Modus {#disable-protected-mode}
 
-Der[ abgesicherte Modus](../../forms/using/get-xdp-pdf-documents-aem.md) ist standardmäßig aktiviert. Behalten Sie dies in Produktionsumgebungen bei. Sie können ihn in Entwicklungsumgebungen deaktivieren, um eine HTML5-Vorschau in Designer anzuzeigen. Gehen Sie wie folgt vor, um ihn zu deaktivieren:
+Die [geschützter Modus](../../forms/using/get-xdp-pdf-documents-aem.md) ist standardmäßig aktiviert. Lassen Sie sie für die Produktionsumgebungen aktiviert. Sie können es für eine Entwicklungsumgebung deaktivieren, um eine Vorschau von HTML5 Forms in Designer anzuzeigen. Gehen Sie wie folgt vor, um ihn zu deaktivieren:
 
 1. Melden Sie sich bei der AEM-Web-Konsole als Administrator an.
 
    * URL für AEM Forms unter OSGi: `https://'[server]:[port]'/system/console/configMgr`
    * URL für AEM Forms unter JEE: `https://'[server]:[port]'/lc/system/console/configMgr`
 
-1. Öffnen Sie **[!UICONTROL Mobile Forms-Konfigurationen]** für die Bearbeitung.
-1. Wählen Sie die Option **[!UICONTROL Abgesicherter Modus]** und klicken Sie auf **[!UICONTROL Speichern]**.
+1. Öffnen **[!UICONTROL Mobile Forms-Konfigurationen]** zur Bearbeitung.
+1. Deaktivieren Sie die **[!UICONTROL Geschützter Modus]** und klicken Sie auf **[!UICONTROL Speichern]**.
 
 ### Angeben von Details zum AEM Forms-Server {#provide-details-of-aem-forms-server}
 
@@ -72,13 +73,14 @@ Der[ abgesicherte Modus](../../forms/using/get-xdp-pdf-documents-aem.md) ist sta
 
    * **Server URL**: AEM Forms-Server URL.
 
-   * **HTTP-Portnummer**: AEM-Server-Port. Der Standardwert ist 4502.
+   * **HTTP-Anschlussnummer**: AEM Server-Port. Der Standardwert ist 4502.
    * **HTML-Vorschaukontext:** Pfad des Profils, der für die Wiedergabe der XFA-Formulare verwendet wird. Die folgenden Standardprofile werden verwendet, um das Formular in Designer in der Vorschau anzuzeigen. Sie können außerdem den Pfad zu einem benutzerdefinierten Profil angeben.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)
 
       * `/lc/content/xfaforms/profiles/default.html` (AEM Forms on JEE)
-   * **Forms Manager Context:** Kontextpfad, an dem die Forms Manager-Benutzeroberfläche bereitgestellt wird. Die Standardwerte lauten:
+
+   * **Forms Manager-Kontext:** Kontextpfad, unter dem die Forms Manager-Benutzeroberfläche bereitgestellt wird. Die Standardwerte sind:
 
       * `/aem/forms` (AEM Forms on OSGi)
       * `/lc/forms` (AEM Forms on JEE)
@@ -98,21 +100,22 @@ Der[ abgesicherte Modus](../../forms/using/get-xdp-pdf-documents-aem.md) ist sta
    >
    >
    >
-   >    * Wenn die Registerkarte für die HTML-Vorschau geschlossen ist, drücken Sie F4, um sie zu öffnen. Sie können die HTML-Vorschau auch über das Menü „Ansicht“ wählen, um die betreffende Registerkarte zu öffnen.
+   >    * Wenn die Registerkarte HTML-Vorschau geschlossen ist, drücken Sie F4, um die Registerkarte Vorschau-HTML zu öffnen. Sie können auch im Menü &quot;Ansicht&quot;die Option Vorschau-HTML auswählen, um die Registerkarte Vorschau-HTML zu öffnen.
    >    * Die HTML-Vorschau unterstützt keine PDF-Dokumente. Die HTML-Vorschau ist nur für XDP-Dokumente vorgesehen.
-
+   >
+   >
 
    >[!CAUTION]
    >
    >Um das tatsächliche Benutzererlebnis zu testen, sollten Sie Ihre Formulare auch in externen Browsern (Google Chrome, Microsoft Edge, Mozilla Firefox usw.) ausprobieren. Jeder Browser verwendet eine andere Engine zum Rendern von HTML, sodass es einige Unterschiede in der Vorschau eines Formulars in Designer und einem externen Browser geben kann.
 
-## So zeigen Sie die Vorschau eines Formulars mit Musterdaten an {#to-preview-a-form-using-sample-data}
+## So zeigen Sie eine Vorschau eines Formulars mit Musterdaten an {#to-preview-a-form-using-sample-data}
 
-Sie können Ihr Formular in Designer mit Hilfe von Muster-XML-Daten testen und in der Vorschau anzeigen. Es wird empfohlen, das Formular häufig mit Musterdaten zu testen, um sicherzustellen, dass es richtig wiedergegeben wird.
+In Designer können Sie das Formular mithilfe von XML-Musterdaten in der Vorschau anzeigen und testen. Es wird empfohlen, das Formular häufig mit Musterdaten zu testen, um sicherzustellen, dass es korrekt wiedergegeben wird.
 
-Falls Ihnen keine Musterdaten vorliegen, können Sie sie von Designer erstellen lassen oder auch selbst erstellen. (Siehe [So generieren Sie automatisch Musterdaten für die Vorschau eines Formulars](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) und [So erstellen Sie Musterdaten für die Vorschau eines Formulars](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
+Wenn Sie keine Beispieldaten haben, können Sie diese von Designer erstellen oder selbst erstellen. (Siehe [So generieren Sie automatisch Musterdaten für die Vorschau eines Formulars](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) und [So erstellen Sie Musterdaten für die Vorschau eines Formulars](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).
 
-Durch Testen Ihres Formulars mit Hilfe von Musterdaten können Sie sicherstellen, dass die Daten und Felder zugeordnet werden und dass sich wiederholende Teilformulare erwartungsgemäß wiederholt werden. Sie können ein ausgeglichenes Formularlayout erstellen, das den jeweiligen Objekten genügend Platz zur Anzeige der zusammengeführten Daten bietet.
+Durch das Testen Ihres Formulars mit einer Beispieldatenquelle wird sichergestellt, dass die Daten und Felder zugeordnet werden und sich wiederholende Teilformulare erwartungsgemäß wiederholt werden. Sie können ein ausgeglichenes Formularlayout erstellen, das für jedes Objekt den geeigneten Platz zur Anzeige der zusammengeführten Daten bietet.
 
 1. Wählen Sie **Datei > Formulareigenschaften**.
 
@@ -120,6 +123,6 @@ Durch Testen Ihres Formulars mit Hilfe von Musterdaten können Sie sicherstellen
 
 1. Klicken Sie auf **OK**. Wenn Sie das nächste Mal eine Vorschau des Formulars auf der Registerkarte **HTML-Vorschau** anzeigen, werden die Datenwerte der XML-Musterdatei in den entsprechenden Objekten dargestellt.
 
-## Formulare in einem Repository in der Vorschau anzeigen {#html-preview-of-forms-in-forms-manager}
+## Vorschau von Formularen in einem Repository {#html-preview-of-forms-in-forms-manager}
 
-In AEM Forms können Sie die Formulare und Dokumente in einem Repository in der Vorschau anzeigen. Mithilfe der Vorschau können Sie genau sehen, wie die Formulare aussehen und wie sie von Endbenutzern verwendet werden.
+In AEM Forms können Sie eine Vorschau von Formularen und Dokumenten in einem Repository anzeigen. Die Vorschau zeigt genau, wie die Formulare aussehen und sich verhalten, die Endbenutzer verwenden.

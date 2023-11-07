@@ -7,9 +7,9 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '956'
 ht-degree: 4%
 
 ---
@@ -145,7 +145,7 @@ Das Mitglied kann einer oder mehreren Mitgliedergruppen hinzugefügt werden. Geb
 
 ### Registerkarte &quot;BADGES&quot; {#badges-tab}
 
-Die `BADGES` bietet die Möglichkeit, Badges manuell zuzuweisen und zu widerrufen. Die Abzeichen können für zugewiesene Rollen sowie für gewöhnlich verdiente Abzeichen verwendet werden.
+Die `BADGES` bietet die Möglichkeit, Badges manuell zuzuweisen und zu widerrufen. Die Abzeichen können für zugewiesene Rollen und Abzeichen verwendet werden, die normalerweise verdient werden.
 
 Siehe auch [Scoring und Abzeichen](implementing-scoring.md).
 
@@ -174,7 +174,7 @@ Auswählen `Add Group` , um eine Gruppe in der Veröffentlichungsumgebung zu ers
 
 ![Das Fenster Neue Gruppe erstellen](assets/group-console1.png)
 
-Die erforderlichen Felder zum Erstellen einer neuen veröffentlichungsseitigen Mitgliedergruppe sind:
+Die folgenden Felder sind zum Erstellen einer veröffentlichungsseitigen Mitgliedergruppe erforderlich:
 
 * **[!UICONTROL ID]**
 

@@ -11,9 +11,9 @@ discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 feature: Interactive Communication
 exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2612'
+source-wordcount: '2608'
 ht-degree: 84%
 
 ---
@@ -161,7 +161,7 @@ Konfigurieren Sie beim Erstellen von Diagrammen für Druck- und Web-Kanäle die 
    <td><p>Neben den allgemeinen Konfigurationen sind die folgenden spezifischen Diagrammkonfiguration verfügbar:</p>
     <ul>
      <li><strong>Legende anzeigen: </strong>Zeigt eine Legende für das Torten- oder Ringdiagramm an, wenn aktiviert.</li>
-     <li><strong>Legendenposition: </strong>Legt die Position der Legende in Bezug auf das Diagramm fest. Die verfügbaren Optionen sind rechts, links, oben und unten. Es wird empfohlen, die rechte Legende im Druckkanal zu verwenden.</li>
+     <li><strong>Legendenposition: </strong>Legt die Position der Legende in Bezug auf das Diagramm fest. Die verfügbaren Optionen sind rechts, links, oben und unten. Verwenden Sie die rechte Legende im Druckkanal.</li>
      <li><strong>Innerer Radius</strong>: Für Ringdiagramme verfügbar, um den Radius (in Pixeln) für den inneren Kreis des Diagramms anzugeben.</li>
      <li><strong>Linienfarbe</strong>: Verfügbar für Liniendiagramme, Linien- und Punktdiagramme sowie Bereichsdiagramme, um den hexadezimalen Farbwert für die Linie im Diagramm anzugeben.</li>
      <li><strong>Punktfarbe</strong>: Verfügbar für Punktdiagramme sowie Linien- und Punktdiagramme, um den hexadezimalen Farbwert für den Punkt im Diagramm anzugeben.<br /> </li>

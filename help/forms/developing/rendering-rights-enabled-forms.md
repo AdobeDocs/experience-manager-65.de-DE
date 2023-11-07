@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1455'
 ht-degree: 93%
 
 ---
@@ -57,7 +57,7 @@ Bevor Sie einen Client-API-Vorgang für den Forms-Service programmgesteuert durc
 
 **Festlegen von Laufzeitoptionen für Nutzungsrechte**
 
-Sie müssen Laufzeitoptionen für Nutzungsrechte festlegen, um ein Formular mit aktivierten Nutzungsrechten zu rendern. Sie müssen auch den Alias der Anmeldeinformationen angeben, die zum Anwenden von Nutzungsrechten auf ein Formular verwendet werden. Nachdem Sie den Alias-Wert angegeben haben, geben Sie jedes Nutzungsrecht an, das auf das Formular angewendet werden soll.
+Legen Sie Laufzeitoptionen für Verwendungsrechte fest, um ein Formular mit aktivierten Verwendungsrechten wiederzugeben. Sie müssen auch den Alias der Anmeldeinformationen angeben, die zum Anwenden von Nutzungsrechten auf ein Formular verwendet werden. Nachdem Sie den Alias-Wert angegeben haben, geben Sie jedes Nutzungsrecht an, das auf das Formular angewendet werden soll.
 
 **Rendern eines Formulars mit aktivierten Nutzungsrechten**
 

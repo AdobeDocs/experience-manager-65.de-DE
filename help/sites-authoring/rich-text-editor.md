@@ -2,10 +2,10 @@
 title: Verwenden des Rich-Text-Editors zum Erstellen von Inhalten
 description: Verwenden des Rich-Text-Editors zum Erstellen von Inhalten in Adobe Experience Manager 6.5.
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 95%
+source-wordcount: '266'
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,7 @@ Bei der Auswahl einer textbasierten Komponente durch einfaches Tippen oder Klick
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-Wenn Sie nochmals darauf tippen/klicken oder gleich anfangs die Komponente mit einem langsamen Doppeltippen/-klick auswählen, wird die Bearbeitung im Kontext geöffnet, die über eine eigene Symbolleiste verfügt. Hier können Sie den Inhalt bearbeiten und grundlegende Formatierungsänderungen vornehmen.
+Durch Tippen/Klicken auf die Komponente oder anfängliches Auswählen der Komponente mit einem langsamen Doppeltippen/Klicken wird die Bearbeitung im Kontext geöffnet, die über eine eigene Symbolleiste verfügt. Hier können Sie den Inhalt bearbeiten und grundlegende Formatierungsänderungen vornehmen.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 

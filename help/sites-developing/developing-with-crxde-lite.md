@@ -7,10 +7,10 @@ topic-tags: development-tools
 content-type: reference
 docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2120'
-ht-degree: 26%
+source-wordcount: '2119'
+ht-degree: 29%
 
 ---
 
@@ -65,7 +65,7 @@ CRXDE Lite bietet folgende Funktionen:
   </tr>
   <tr>
    <td>Explorer-Bereich</td>
-   <td><p>Zeigt eine Struktur aller Knoten im Repository an.</p> <p>Klicken Sie auf einen Knoten, damit dessen Eigenschaften im <strong>Eigenschaften</strong> Registerkarte. Nachdem Sie auf einen Knoten geklickt haben, können Sie eine Aktion in der Symbolleiste auswählen. Klicken Sie erneut auf den Knoten , um ihn umzubenennen.</p> <p>Strukturnavigationsfilter (binokulares Symbol): ermöglicht das Filtern der Knoten im Repository, für die der Name den Eingabetext enthält. Gilt nur für Knoten, die lokal geladen wurden.<br /> </p> </td>
+   <td><p>Zeigt eine Struktur aller Knoten im Repository an.</p> <p>Klicken Sie auf einen Knoten, damit dessen Eigenschaften im <strong>Eigenschaften</strong> Registerkarte. Nachdem Sie auf einen Knoten geklickt haben, können Sie eine Aktion in der Symbolleiste auswählen. Klicken Sie erneut auf den Knoten, um ihn umzubenennen.</p> <p>Strukturnavigationsfilter (binokulares Symbol): ermöglicht das Filtern der Knoten im Repository, für die der Name den Eingabetext enthält. Gilt nur für Knoten, die lokal geladen wurden.<br /> </p> </td>
   </tr>
   <tr>
    <td>Bereich bearbeiten</td>
@@ -172,7 +172,7 @@ Sie erstellt Folgendes:
 
 * Ein untergeordneter Knoten vom Typ `cq:PageContent` mit Seiteninhaltseigenschaften
 
-Sie können Ihrer Vorlage Eigenschaften hinzufügen. Weitere Informationen finden Sie im Abschnitt [Erstellen einer Eigenschaft](#creating-a-property) Abschnitt.
+Sie können Eigenschaften zu Ihrer Vorlage hinzufügen: siehe [Erstellen einer Eigenschaft](#creating-a-property) Abschnitt.
 
 ## Erstellen einer Komponente {#creating-a-component}
 
@@ -265,7 +265,7 @@ Mit CRXDE Lite können Sie Knotentypdefinitionen importieren und/oder exportiere
 So exportieren Sie eine Knotentypdefinition:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. Wählen Sie den gewünschten Knoten aus.
+1. Wählen Sie Ihren gewünschten Knoten aus.
 1. Wählen Sie **Tools** und dann **Knotentyp exportieren** aus.
 
 1. Die Definition in cnd -Notation wird in Ihrem Browser angezeigt. Speichern Sie die Informationen bei Bedarf.
@@ -276,7 +276,7 @@ So importieren Sie eine Knotentypdefinition:
 1. Wählen Sie **Tools** und dann **Knotentyp importieren...**.
 
 1. Geben Sie die CND-Notation für die Definition in das Textfeld ein.
-1. Überprüfen **Aktualisierung zulassen** , wenn Sie eine vorhandene Definition aktualisieren.
+1. Aktivieren Sie **Aktualisierung zulassen**, wenn Sie eine vorhandene Definition aktualisieren.
 1. Wählen Sie **Importieren**.
 
 ## Protokollierung {#logging}
@@ -286,7 +286,7 @@ Mit CRXDE Lite können Sie die Datei anzeigen `error.log` , das sich im Dateisys
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
 1. Im **Konsole** im unteren Bereich des Fensters im Dropdown-Menü auf der rechten Seite die Option **Serverprotokolle**.
 
-1. Klicken Sie auf **Anhalten** -Symbol, um die Nachrichten anzuzeigen.
+1. Klicken Sie auf das **Stopp-Symbol**, um die Nachrichten anzuzeigen.
 
 Sie haben folgende Möglichkeiten:
 

@@ -1,23 +1,19 @@
 ---
 title: Konfigurieren von Microsoft Dynamics 365 für den Hypotheken-Workflow der We.Finance-Referenz-Website
-seo-title: Configure Microsoft Dynamics 365 for the home mortgage workflow of the We.Finance reference site
-description: In diesem Dokument erfahren Sie, wie Sie die Microsoft® Dynamics 365-Dienste über adaptive Formularen für den Hypotheken-Arbeitsablauf der We.Finance-Referenzwebsite nutzen.
-seo-description: Learn how to leverage the Microsoft® Dynamics 365 services through adaptive forms for the home mortgage workflow of the We.Finance Reference site
-uuid: a0656d90-84c7-46d1-9a16-dadcc19ff9ef
+description: Erfahren Sie, wie Sie die Dienste Microsoft&reg; Dynamics 365 über adaptive Formulare für den Hypotheken-Workflow der We.Finance-Referenz-Website verwenden.
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: develop, Configuration
-discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
 exl-id: 2ac37dc5-d88d-4f98-8576-cd2ca6f0ea3a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '398'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '400'
+ht-degree: 47%
 
 ---
 
 # Konfigurieren von Microsoft Dynamics 365 für den Hypotheken-Workflow der We.Finance-Referenz-Website {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
 
-In diesem Dokument erfahren Sie, wie Sie die Microsoft® Dynamics 365-Dienste über adaptive Formularen für den Hypotheken-Arbeitsablauf der We.Finance-Referenzwebsite nutzen.
+Erfahren Sie, wie Sie die Microsoft® Dynamics 365-Dienste über adaptive Formulare für den Hypotheken-Workflow der We.Finance-Referenz-Website verwenden.
 
 ## Übersicht {#overview}
 
@@ -27,21 +23,21 @@ AEM Forms bietet einen Cloud-Service zur Integration von Dynamics 365 mit dem Mo
 
 ## Voraussetzungen {#prerequisites}
 
-Bevor Sie mit dem Einrichten und Konfigurieren von Dynamics 365 beginnen, stellen Sie sicher, dass folgende Bedingungen erfüllt sind:
+Bevor Sie Dynamics 365 einrichten und konfigurieren, stellen Sie Folgendes sicher:
 
-* AEM Forms 6.3 Service Pack 1 und höher
+* AEM 6.3 Forms Service Pack 1 und höher
 * Microsoft® Dynamics 365-Konto
 * Registrierte Anwendung für den Dynamics 365-Dienst mit Microsoft® Azure Active Directory
 * Client-ID und Client-Geheimnis für die registrierte Anwendung
 
-## Verknüpfen des Hypothekrechners mit Ihrer Site-Homepage {#link-the-home-mortgage-calculator-with-your-site-home-page}
+## Verknüpfen Sie den Hypothekenrechner mit Ihrer Startseite. {#link-the-home-mortgage-calculator-with-your-site-home-page}
 
-1. Navigieren Sie in der Authoring-Instanz zu der folgenden Seite:
+1. Wechseln Sie in der Autoreninstanz zur folgenden Seite:
 
    `https://[server]:[port]/editor.html/content/we-finance/global/en/loan-landing-page.html`
 
-1. Führen Sie einen Bildlauf nach unten zum Hypothekrechner durch.
-1. Markieren Sie das Bedienfeld der rechten Spalte (Rechner) und tippen Sie, um das Popupmenü anzuzeigen. Tippen Sie im Popupmenü auf „Konfigurieren“. Das Dialogfeld „AEM Forms-Container bearbeiten“ wird angezeigt.
+1. Scrollen Sie nach unten zum Hypothekrechner.
+1. Markieren Sie das Bedienfeld der rechten Spalte (Taschenrechner) und tippen Sie auf , um das Popup-Menü anzuzeigen. Tippen Sie im Popup-Menü auf Konfigurieren. Das Dialogfeld &quot;AEM Forms-Container bearbeiten&quot;wird angezeigt.
 
    ![calculatorconfigurePanel](assets/calculatorconfigurepanel.png)
 
@@ -56,19 +52,19 @@ Bevor Sie mit dem Einrichten und Konfigurieren von Dynamics 365 beginnen, stell
 
    >[!NOTE]
    >
-   >Die Bindung der Rechnerfelder mit dem FDM ist über die We.Finance-Referenzwebsite vorkonfiguriert. Um die Bindungen anzusehen, können Sie das Formular im Bearbeitungsmodus öffnen und die Feldbindungsverweise anzeigen.
+   >Die Bindung der Rechenfelder mit dem FDM wird über das We.Finance-Referenz-Website-Paket vorkonfiguriert. Um die Bindung anzuzeigen, können Sie das Formular im Authoring-Modus öffnen und die Feldbindeverweise anzeigen.
 
-1. Um eine benutzerdefinierte Entität zum Speichern des Antragsteller-Datensatzes für den Hypothekantrag zu erstellen, importieren Sie das AEMFormsFSIRefsite_1_0.zip-Lösungspaket in Ihre Microsoft® Dynamics-Instanz:
+1. Um eine benutzerdefinierte Entität zum Speichern des Antragstellerdatensatzes für die Hypothekenanwendung zu erstellen, importieren Sie das Lösungspaket AEMFormsFSIRefsite_1_0.zip in Ihre Microsoft® Dynamics-Instanz:
 
-   1. Laden Sie das Paket herunter:
+   1. Laden Sie das Paket herunter von:
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
 
    1. Importieren Sie das Lösungspaket in Ihre Microsoft® Dynamics-Instanz. Navigieren Sie in Ihrer Microsoft® Dynamics-Instanz zu **Einstellungen** > **Lösungen** und tippen Sie auf **Importieren**.
 
-1. Um die auf der Referenzwebsite verwendeten Benutzerkontaktdaten einzurichten, importieren Sie das Paket „Sarah Rose Contact.CSV“ in Ihre Microsoft® Dynamics-Instanz:
+1. Um die auf der refsite verwendeten Benutzerkontaktdetails einzurichten, importieren Sie das Paket Sarah Rose Contact.CSV in Ihre Microsoft® Dynamics-Instanz:
 
-   1. Laden Sie das Paket herunter:
+   1. Laden Sie das Paket herunter von:
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 

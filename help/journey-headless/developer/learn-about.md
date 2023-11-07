@@ -2,10 +2,10 @@
 title: Grundlegendes zur CMS-Headless-Entwicklung
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Headless-Technologie und darüber, warum Sie sie verwenden sollten.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1612'
-ht-degree: 98%
+ht-degree: 93%
 
 ---
 
@@ -56,13 +56,13 @@ Benutzer erwarten Interaktionen, unabhängig von der Plattform oder dem Kontaktp
 
 Der Kopf (engl. „head“) eines Systems ist im Allgemeinen der Ausgabe-Renderer dieses Systems, in der Regel in Form einer GUI oder einer anderen grafischen Ausgabe.
 
-Ein Headless-Server beispielsweise sitzt wahrscheinlich in einem Rack irgendwo in einem Server-Raum und hat keinen angeschlossenen Monitor. Um darauf zuzugreifen, müssen Sie sich per Fernzugriff damit verbinden. In diesem Fall ist der Monitor der Kopf, da er das Rendering der Ausgabe des Servers übernimmt. Als Verbraucher des Services stellen Sie Ihren eigenen Kopf (den Monitor) bereit, wenn Sie per Fernzugriff eine Verbindung mit ihm herstellen.
+Ein Headless-Server beispielsweise sitzt wahrscheinlich in einem Rack irgendwo in einem Serverraum und hat keinen Monitor angeschlossen. Um darauf zuzugreifen, müssen Sie sich per Fernzugriff damit verbinden. In diesem Fall ist der Monitor der Kopf, da er das Rendering der Ausgabe des Servers übernimmt. Als Verbraucher des Services stellen Sie Ihren eigenen Kopf (den Monitor) bereit, wenn Sie per Fernzugriff eine Verbindung mit ihm herstellen.
 
 Wenn wir über ein Headless-CMS sprechen, verwaltet das CMS die Inhalte und stellt sie in der Folge für die Verbraucher bereit. Indem ein Headless-CMS jedoch nur die **Inhalte** standardisiert bereitstellt, lässt es das endgültige Ausgabe-Rendering aus, sodass die **Präsentation** des Inhalts dem verbrauchenden Service überlassen bleibt.
 
 ![Headless-CMS](assets/headless-cms.png)
 
-Die verbrauchenden Services – seien es AR-Erlebnisse, ein Webshop, mobile Erlebnisse, Progressive Web Apps (PWAs) usw. – nehmen Inhalte aus dem Headless-CMS auf und stellen ihr eigenes Rendering bereit. Sie sorgen für die Bereitstellung eigener Köpfe für Ihre Inhalte.
+Die verbrauchenden Dienste, seien es AR-Erlebnisse, ein Webshop, mobile Erlebnisse, progressive Web-Apps (PWA) usw., übernehmen Inhalte aus dem Headless-CMS und bieten ihr eigenes Rendering. Sie sorgen für die Bereitstellung eigener Köpfe für Ihre Inhalte.
 
 Das Auslassen des Kopfes vereinfacht das CMS, indem es die Komplexität beseitigt. Dadurch wird auch die Verantwortung für das Rendering der Inhalte auf die Services verlagert, die den Inhalt tatsächlich benötigen und oft besser für dieses Rendering geeignet sind.
 
@@ -84,7 +84,7 @@ Robuste REST-APIs werden weiterhin benötigt. Allerdings können REST-Anfragen g
 
 Bei der Headless-Bereitstellung von Inhalten werden häufig GraphQL-APIs verwendet. GraphQL ermöglicht eine ähnliche statuslose Übertragung, ermöglicht jedoch zielgerichtetere Abfragen, reduziert die Gesamtzahl der erforderlichen Abfragen und verbessert die Leistung. Häufig sieht man Lösungen, die eine Mischung aus REST und GraphQL verwenden, wobei im Wesentlichen das beste Tool für die jeweilige Aufgabe gewählt wird.
 
-Unabhängig von der gewählten API können Sie durch die Definition eines Headless-Systems, das auf gängigen APIs basiert, die neuesten Browser- und andere Web-Technologien wie Progressive Web Apps (PWAs) nutzen. APIs erstellen eine Standardschnittstelle, die einfach erweiterbar und anpassbar ist.
+Unabhängig von der gewählten API können Sie durch die Definition eines Headless-Systems auf der Basis gängiger APIs den neuesten Browser und andere Web-Technologien wie progressive Web-Apps (PWA) nutzen. APIs erstellen eine Standardschnittstelle, die einfach erweiterbar und anpassbar ist.
 
 Normalerweise werden Inhalte Client-seitig gerendert. Das bedeutet normalerweise, dass jemand Ihre Inhalte mit einem Mobilgerät aufruft, dass Ihr CMS die Inhalte bereitstellt und dann das Mobilgerät (der Client) für das Rendering der von Ihnen bereitgestellten Inhalte verantwortlich ist. Wenn das Gerät alt oder anderweitig langsam ist, ist auch Ihr digitales Erlebnis langsam.
 
@@ -96,7 +96,7 @@ Headless eröffnet Ihnen eine Welt der Flexibilität für die Bereitstellung dig
 
 Viele verschiedene Kanäle zu haben, kann bedeuten, dass diese jeweils ihre eigenen Präsentationssysteme haben. Obwohl sie alle dieselben Inhalte über dieselben APIs nutzen, kann das Erlebnis aufgrund der verschiedenen Präsentationen unterschiedlich sein. Die Konsistenz des Kundenerlebnisses muss sorgfältig sichergestellt werden.
 
-Durch die Implementierung sorgfältiger Entwurfssysteme, die Freigabe von Musterbibliotheken und die Nutzung wiederverwendbarer Design-Komponenten sowie etablierter, offener Client-seitiger Frameworks können konsistente Erlebnisse gewährleistet werden. Doch dies muss geplant werden.
+Durch die Implementierung sorgfältiger Designsysteme, die Freigabe von Musterbibliotheken und die Verwendung wiederverwendbarer Designkomponenten und etablierter, offener Client-seitiger Frameworks können konsistente Erlebnisse sichergestellt werden, dies muss jedoch geplant werden.
 
 ## Die Zukunft ist Headless und die Zukunft ist jetzt {#future}
 

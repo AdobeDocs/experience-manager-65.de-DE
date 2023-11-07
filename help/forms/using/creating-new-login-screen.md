@@ -1,23 +1,19 @@
 ---
-title: Erstellen eines neuen Anmeldungsbildschirms
-seo-title: Creating a new login screen
-description: Gehen Sie wie folgt vor, um die Anmeldeseite von LiveCycle-Modulen zu ändern, z. B. AEM Forms Workspace oder Forms Manager.
-seo-description: How-to modify the login page of LiveCycle modules, for example of AEM Forms workspace or Forms Manager.
-uuid: 2d4a72f4-cc9a-412d-856d-0fca75f1272b
+title: Anmeldebildschirm erstellen
+description: So ändern Sie die Anmeldeseite von LiveCycle-Modulen, z. B. von AEM Forms Workspace oder Forms Manager.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
-workflow-type: ht
-source-wordcount: '462'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '460'
+ht-degree: 94%
 
 ---
 
-# Erstellen eines neuen Anmeldungsbildschirms{#creating-a-new-login-screen}
+# Anmeldebildschirm erstellen{#creating-a-new-login-screen}
 
 Sie können den Anmeldebildschirm aller AEM Forms-Module ändern, die den AEM Forms-Anmeldebildschirm verwenden. Beispielsweise wirken sich die Änderungen auf den Anmeldebildschirm von Forms Manager und AEM Forms Workspace aus.
 
@@ -60,6 +56,7 @@ Sie können den Anmeldebildschirm aller AEM Forms-Module ändern, die den AEM Fo
    1. Benennen Sie den Ordner nach dem Gebietsschema, das unterstützt werden soll. Beispiel: `ar`.
 
    1. Ändern Sie den Wert der Eigenschaft `jcr:language` in `ar` (für den Ordner `ar`).
+
    >[!NOTE]
    >
    >Wenn das Gebietsschema eine Sprach- und Ländercodekombination ist, beispielsweise `ar-DZ`, ändern Sie den Ordnernamen und den Eigenschaftswert zu `ar-DZ`.
@@ -212,6 +209,7 @@ String browserLocale = "en";
       * von `/libs/livecycle/core/components/login`
 
       * nach `/apps/livecycle/core/components/login`
+
    1. Ändern Sie `/apps/livecycle/core/components/login/login.jsp`, um den neu hinzugefügten Text einzubinden.
 
    ![Hinzufügen eines neuen Schlüssel-Wert-Paares](assets/capture_new.png)
@@ -254,8 +252,8 @@ String browserLocale = "en";
       * von `/libs/livecycle/core/components/login`
 
       * nach `/apps/livecycle/core/components/login`
-   1. Ändern Sie `/apps/livecycle/core/components/login/login.jsp`, um die neu hinzugefügten Stile einzubinden.
 
+   1. Ändern Sie `/apps/livecycle/core/components/login/login.jsp`, um die neu hinzugefügten Stile einzubinden.
 
 
 Beispiel:
@@ -272,15 +270,15 @@ css.newLoginContentArea {
 * Ändern Sie Folgendes in `/apps/livecycle/core/components/login.jsp`.
 
 
-   ```jsp
-   <div class="loginContentArea">
-   ```
+  ```jsp
+  <div class="loginContentArea">
+  ```
 
-   To
+  To
 
-   ```jsp
-   <div class="newLoginContentArea">
-   ```
+  ```jsp
+  <div class="newLoginContentArea">
+  ```
 
 >[!NOTE]
 >

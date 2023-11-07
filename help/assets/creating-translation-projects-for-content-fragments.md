@@ -8,10 +8,10 @@ content-type: reference
 feature: Content Fragments
 role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 51%
+source-wordcount: '975'
+ht-degree: 48%
 
 ---
 
@@ -36,14 +36,14 @@ Wenn das Quellinhaltsfragment aktualisiert oder geändert wird, muss das entspre
 Der Workflow Erstellen und Übersetzen umfasst die folgenden Optionen. Die mit der jeweiligen Option verbundenen Verfahrensschritte ähneln denen, die mit der entsprechenden Option für Assets verbunden sind.
 
 * Nur Struktur erstellen: Verfahrensschritte finden Sie unter [Erstellen einer Struktur nur für Assets](translation-projects.md#create-structure-only).
-* Erstellen eines neuen Übersetzungsprojekts: Verfahrensschritte finden Sie unter [Erstellen eines neuen Übersetzungsprojekts für Assets](translation-projects.md#create-a-new-translation-project).
+* Erstellen Sie ein Übersetzungsprojekt: Verfahrensschritte finden Sie unter [Erstellen eines Übersetzungsprojekts für Assets](translation-projects.md#create-a-new-translation-project).
 * Hinzufügen zu vorhandenem Übersetzungsprojekt: Verfahrensschritte finden Sie unter [Hinzufügen zu einem vorhandenen Übersetzungsprojekt für Assets](translation-projects.md#add-to-existing-translation-project).
 
 ## Workflow &quot;Sprachkopien aktualisieren&quot; {#update-language-copies-workflow}
 
 Der Workflow zum Aktualisieren der Sprachkopien umfasst die folgenden Optionen. Die mit der jeweiligen Option verbundenen Verfahrensschritte ähneln denen, die mit der entsprechenden Option für Assets verbunden sind.
 
-* Erstellen eines neuen Übersetzungsprojekts: Verfahrensschritte finden Sie unter [Erstellen eines neuen Übersetzungsprojekts für Assets](translation-projects.md#create-a-new-translation-project) (Update-Workflow).
+* Erstellen Sie ein Übersetzungsprojekt: Verfahrensschritte finden Sie unter [Erstellen eines Übersetzungsprojekts für Assets](translation-projects.md#create-a-new-translation-project) (Workflow aktualisieren).
 * Hinzufügen zu vorhandenem Übersetzungsprojekt: Verfahrensschritte finden Sie unter [Hinzufügen zu einem vorhandenen Übersetzungsprojekt für Assets](translation-projects.md#add-to-existing-translation-project) (Update-) Workflow.
 
 Sie können auch temporäre Sprachkopien für Fragmente erstellen, ähnlich wie Sie temporäre Kopien für Assets erstellen. Weitere Informationen finden Sie unter [Erstellen temporärer Sprachkopien für Assets](translation-projects.md#creating-temporary-language-copies).
@@ -159,4 +159,4 @@ Um Inhaltsfragmente, die gemischte Medien enthalten, übersetzen zu können, bea
 
    >[!NOTE]
    >
-   >Die Verfahren zum Hinzufügen eines Inhaltsfragments zu einem vorhandenen Projekt oder zum Durchführen von Aktualisierungs-Workflows ähneln den entsprechenden Verfahren für Assets. Eine Anleitung zu diesen Verfahren finden Sie in den für Assets beschriebenen Verfahren.
+   >Die Verfahren zum Hinzufügen eines Inhaltsfragments zu einem vorhandenen Projekt oder zum Durchführen von Aktualisierungs-Workflows ähneln den entsprechenden Verfahren für Assets. Anleitungen zu diesen Verfahren finden Sie in den für Assets beschriebenen Verfahren.

@@ -1,20 +1,16 @@
 ---
 title: E-Mail-Marketing
-seo-title: E-mail Marketing
-description: E-Mail-Marketing (z. B. Newsletter) ist ein wichtiger Bestandteil jeder Marketingkampagne, da Sie auf diese Weise Ihren Leads Inhalte zukommen lassen können. In AEM können Sie Newsletter aus bestehendem AEM-Inhalt erstellen und neue, für die Newsletter spezifische Inhalte hinzufügen.
-seo-description: E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
-uuid: 565943bf-fe37-4d5c-98c3-7c629c4ba264
+description: E-Mail-Marketing (z. B. Newsletter) ist ein wichtiger Bestandteil jeder Marketingkampagne, da Sie auf diese Weise Ihren Leads Inhalte zukommen lassen können. In AEM können Sie Newsletter aus vorhandenen AEM erstellen und neue, für die Newsletter spezifische Inhalte hinzufügen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
-source-git-commit: 1ba34f95cf3ce3f136482075802d2e4372f28917
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1770'
-ht-degree: 97%
+source-wordcount: '1764'
+ht-degree: 92%
 
 ---
 
@@ -24,9 +20,9 @@ ht-degree: 97%
 >[!NOTE]
 >
 >Adobe plant nicht, die E-Mail-Verfolgung von über den AEM-SMTP-Dienst gesendeten offenen/zurückgesendeten (nicht zustellbaren) Nachrichten weiter auszubauen.
->Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
+>Es wird empfohlen [Adobe Campaign und Integration in AEM](/help/sites-administering/campaign.md).
 
-E-Mail-Marketing (z. B. Newsletter) ist ein wichtiger Bestandteil jeder Marketingkampagne, da Sie auf diese Weise Ihren Leads Inhalte zukommen lassen können. In AEM können Sie Newsletter aus bestehendem AEM-Inhalt erstellen und neue, für die Newsletter spezifische Inhalte hinzufügen.
+E-Mail-Marketing (z. B. Newsletter) ist ein wichtiger Bestandteil jeder Marketingkampagne, da Sie auf diese Weise Ihren Leads Inhalte zukommen lassen können. In AEM können Sie Newsletter aus vorhandenen AEM erstellen und neue, für die Newsletter spezifische Inhalte hinzufügen.
 
 Nach der Erstellung können Sie die Newsletter entweder sofort oder zu einem anderen geplanten Zeitpunkt (mithilfe eines Workflows) an die jeweilige Benutzergruppe senden. Darüber hinaus können Benutzende Newsletter im gewünschten Format abonnieren.
 
@@ -67,7 +63,7 @@ In diesem Dokument werden die Grundlagen zum Erstellen von Newslettern in AEM be
 
 1. Klicken Sie auf **Erstellen**.
 
-1. Ein neues Dialogfeld wird geöffnet. Hier können Sie die Eigenschaften des Newsletters festlegen.
+1. Ein neues Dialogfeld wird sofort geöffnet. Hier können Sie die Eigenschaften des Newsletters festlegen.
 
    Das Feld **Standard-Empfängerliste** muss ausgefüllt werden, da es den Touchpoint für den Newsletter bildet (weitere Informationen zu Listen finden Sie unter [Arbeiten mit Listen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists)).
 
@@ -173,7 +169,7 @@ Um zwischen Clients zu wechseln, klicken Sie auf das entsprechende Symbol, um de
 Obwohl nur autorisierte Benutzende einen Newsletter tatsächlich versenden können, sollten Sie Folgendes anpassen:
 
 * Die Betreffzeile, damit Benutzende Ihre E-Mail öffnen und sichergestellt wird, dass Ihr Newsletter nicht als Spam gekennzeichnet wird.
-* Die Von-Adresse, z. B. noreply@geometrixx.com, damit Benutzer die E-Mail von einer bestimmten Adresse erhalten.
+* Die Absenderadresse, beispielsweise `noreply@geometrixx.com`, sodass Benutzer E-Mails von einer bestimmten Adresse erhalten.
 
 So passen Sie Newsletter-Einstellungen an:
 
@@ -188,7 +184,7 @@ So passen Sie Newsletter-Einstellungen an:
 
 1. Ändern Sie den **Betreff** der E-Mail, falls erforderlich.
 
-1. Wählen Sie aus der Dropdown-Liste eine **Standard-Empfängerliste** aus.
+1. Wählen Sie eine **Standard-Empfängerliste** aus der Dropdown-Liste.
 
 1. Klicken Sie auf **OK**.
 
@@ -223,7 +219,7 @@ So führen Sie einen Testlauf für Newsletter durch:
 >[!NOTE]
 >
 >Adobe plant nicht, die E-Mail-Verfolgung von über den AEM-SMTP-Dienst gesendeten offenen/zurückgesendeten (nicht zustellbaren) Nachrichten weiter auszubauen.
->Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
+>Es wird empfohlen [Adobe Campaign und Integration in AEM](/help/sites-administering/campaign.md).
 
 Sie können einen Newsletter entweder aus dem Newsletter selbst oder aus der Liste versenden. Beide Verfahren werden im Folgenden beschrieben.
 

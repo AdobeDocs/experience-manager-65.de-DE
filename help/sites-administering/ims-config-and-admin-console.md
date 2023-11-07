@@ -7,10 +7,10 @@ topic-tags: Security
 content-type: reference
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 80%
+source-wordcount: '1668'
+ht-degree: 76%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->Diese Funktion ist nur für Kunden von Adobe Managed Services verfügbar.
+>Diese Funktion ist nur für Adobe Managed Services-Kunden verfügbar.
 
 >[!NOTE]
 >
@@ -32,12 +32,12 @@ Durch das AEM-Onboarding für die [!DNL Admin Console] kann Kundschaft von AEM M
 
 ## Wichtige Highlights {#key-highlights}
 
-* AEM IMS-Authentifizierungsunterstützung ist nur für AEM-Autoren, Administratoren oder Entwickler gedacht, nicht für externe Endbenutzer der Kunden-Site wie Site-Besucher.
+* AEM IMS-Authentifizierungsunterstützung ist nur für AEM Autoren, Administratoren oder Entwickler gedacht, nicht für externe Endbenutzer der Kunden-Site wie Site-Besucher.
 * Die [!DNL Admin Console] zeigt Kundinnen und Kunden von AEM Managed Services als „IMS-Organisationen“ und ihre Instanzen als „Produktkontexte“ an. Kundensystem- und Produktadmins können den Zugriff auf Instanzen verwalten.
 * AEM Managed Services synchronisiert Kundentopologien mit der [!DNL Admin Console]. In der [!DNL Admin Console] ist pro Instanz eine AEM Managed Services-Produktkontext-Instanz vorhanden.
 * Produktprofile in der [!DNL Admin Console] legen fest, auf welche Instanzen Benutzerinnen und Benutzer zugreifen können.
 * Federated Authentication über den SAML 2-konformen Identitäts-Provider der Kundin bzw. des Kunden wird unterstützt
-* Es werden nur Enterprise IDs oder Federated IDs (für Single-Sign-On für Kunden) unterstützt, nicht personenbezogene Adoben.
+* Es werden nur Enterprise IDs oder Federated IDs (für Single-Sign-on von Kunden) unterstützt, nicht personenbezogene Adobe-IDs.
 * [!DNL User Management] (in der Adobe [!DNL Admin Console]) ist weiterhin Aufgabe der Kundenadmins.
 
 ## Architektur {#architecture}
@@ -116,7 +116,7 @@ Die Benutzersynchronisierung steht über das Adobe Github-Repository an diesem S
 
 Hinweis: Eine Pre-Release-Version 2.4RC1 mit Unterstützung für dynamische Gruppenerstellung steht hier zur Verfügung: [https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
 
-Die wichtigsten Funktionen dieser Version sind die Möglichkeit, neue LDAP-Gruppen für die Benutzermitgliedschaft in der [!DNL Admin Console] dynamisch zuzuordnen und dynamische Benutzergruppen zu erstellen.
+Die Hauptfunktionen dieser Version sind die Möglichkeit, neue LDAP-Gruppen für die Benutzermitgliedschaft in der [!DNL Admin Console]und der Erstellung einer dynamischen Benutzergruppe.
 
 Weitere Informationen zu den neuen Gruppenfunktionen finden Sie hier:
 
@@ -124,7 +124,7 @@ Weitere Informationen zu den neuen Gruppenfunktionen finden Sie hier:
 
 >[!NOTE]
 >
->Weitere Informationen zum User Sync Tool finden Sie auf der [Dokumentationsseite](https://adobe-apiplatform.github.io/user-sync.py/en/).
+>Weitere Informationen zum Tool zur Benutzersynchronisierung finden Sie in der [Dokumentationsseite](https://adobe-apiplatform.github.io/user-sync.py/en/).
 >
 >
 >Das User Sync Tool muss mit dem [hier](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html) beschriebenen Verfahren als Adobe I/O-Client-UMAPI registriert werden.
@@ -136,7 +136,7 @@ Weitere Informationen zu den neuen Gruppenfunktionen finden Sie hier:
 
 >[!NOTE]
 >
->Die AEM IMS-Konfiguration wird vom Adobe Managed Services-Team vorgenommen. Der Kundenadmin kann sie jedoch gemäß seinen Anforderungen ändern (z. B. automatische Gruppenmitgliedschaft oder Gruppenzuordnung). Der IMS-Client wird auch von Ihrem Managed Services-Team registriert.
+>Die AEM IMS-Konfiguration wird vom Adobe Managed Services-Team vorgenommen. Der Kundenadministrator kann sie jedoch gemäß seinen Anforderungen ändern (z. B. automatische Gruppenmitgliedschaft oder Gruppenzuordnung). Der IMS-Client wird auch von Ihrem Managed Services-Team registriert.
 
 ## Verwendung {#how-to-use}
 
@@ -146,7 +146,7 @@ Wenn sich Produktadmins der Kundschaft bei der [!DNL Admin Console] anmelden, se
 
 ![screen_shot_2018-09-17at105804pm](assets/screen_shot_2018-09-17at105804pm.png)
 
-In diesem Beispiel hat die Organisation *AEM-MS-Onboard* 32 Instanzen mit unterschiedlichen Topologien und Umgebungen wie Staging, Produktion usw.
+In diesem Beispiel wird die *AEM-MS-Onboard* verfügt über 32 Instanzen, die verschiedene Topologien und Umgebungen wie Staging, Produktion usw. umfassen.
 
 ![screen_shot_2018-09-17at105517pm](assets/screen_shot_2018-09-17at105517pm.png)
 
@@ -172,7 +172,7 @@ AEM kann lokale Anmeldungen für Admins weiterhin unterstützen. Der Anmeldebild
 
 #### IMS-basierte Anmeldung {#ims-based-login}
 
-Für andere Benutzende kann die IMS-basierte Anmeldung verwendet werden, sobald IMS für die Instanz konfiguriert wurde. Der Benutzer klickt zuerst auf **Mit Adobe anmelden** wie unten gezeigt:
+Für andere Benutzende kann die IMS-basierte Anmeldung verwendet werden, sobald IMS für die Instanz konfiguriert wurde. Der Benutzer klickt zuerst auf **Anmelden mit Adobe** wie unten gezeigt:
 
 ![image2018-9-18_0-10-32](assets/image2018-9-18_0-10-32.png)
 

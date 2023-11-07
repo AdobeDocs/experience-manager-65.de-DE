@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1487'
 ht-degree: 26%
 
 ---
@@ -94,7 +94,7 @@ Wenn Sie in einem Cluster TCP-Zwischenspeicherung anstelle von UDP verwenden, m�
 
 ### Dateisystempfade für AEM Forms-Knoten ändern {#changing-the-aem-forms-node-file-system-paths}
 
-Wenn Sie die Dateisystempfade für einen eigenständigen Knoten ändern, müssen Sie die entsprechenden Verweise in Voreinstellungen, anderen Systemkonfigurationen, benutzerdefinierten Anwendungen und bereitgestellten AEM Forms-Anwendungen aktualisieren. Bei einem Cluster müssen dagegen alle Knoten dieselbe Dateisystempfad-Konfiguration verwenden. Sie müssen den Stammordner des globalen Dokumentenspeichers (GDS) festlegen und sicherstellen, dass er auf eine Kopie des wiederhergestellten GDS verweist, die mit der wiederhergestellten Datenbank synchronisiert ist. Das Festlegen des GDS-Pfades ist wichtig, da der GDS Daten enthalten kann, die bei jedem Neustart des Anwendungsservers beibehalten werden sollen.
+Wenn Sie die Dateisystempfade für einen eigenständigen Knoten ändern, müssen Sie die entsprechenden Verweise in Voreinstellungen, anderen Systemkonfigurationen, benutzerdefinierten Anwendungen und bereitgestellten AEM Forms-Anwendungen aktualisieren. Bei einem Cluster müssen dagegen alle Knoten dieselbe Dateisystempfad-Konfiguration verwenden. Legen Sie den Stammordner des globalen Dokumentenspeichers (GDS) fest und stellen Sie sicher, dass er auf eine Kopie des wiederhergestellten GDS verweist, die mit der wiederhergestellten Datenbank synchronisiert ist. Das Festlegen des GDS-Pfades ist wichtig, da der GDS Daten enthalten kann, die bei jedem Neustart des Anwendungsservers beibehalten werden sollen.
 
 In einer Clusterumgebung sollte die Dateisystempfad-Konfiguration des Repositorys für alle Clusterknoten vor der Sicherung und nach der Wiederherstellung gleich sein.
 

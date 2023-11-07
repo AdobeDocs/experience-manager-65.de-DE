@@ -3,10 +3,10 @@ title: Schritte zur Aktualisierung von Installationen auf Anwendungs-Servern
 description: Erfahren Sie, wie Sie Instanzen von AEM aktualisieren, die über Anwendungsserver bereitgestellt werden.
 feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 75%
+source-wordcount: '445'
+ht-degree: 69%
 
 ---
 
@@ -67,7 +67,7 @@ In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungs-Server verwen
 
    * Entfernen Sie die Datei **sling.options.file**, indem Sie folgenden Befehl ausführen: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
 
-1. Erstellen Sie nun die Knotenspeicher und Datenspeicher, die mit AEM 6.5 verwendet werden. Sie können zu diesem Zweck zwei Dateien mit den folgenden Namen unter `crx-quickstart\install` erstellen:
+1. Erstellen Sie nun den Knotenspeicher und den Datenspeicher, der mit AEM 6.5 verwendet wird. Erstellen Sie dazu zwei Dateien mit den folgenden Namen unter `crx-quickstart\install`:
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`

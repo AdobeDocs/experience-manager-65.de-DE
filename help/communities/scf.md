@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 5ca58bc3-8505-4d91-9cd1-6b2e2671f1be
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1477'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Vorteile des Frameworks:
 
 * **Funktionell**: Native Integration mit wenig oder gar keiner Anpassung für 80 % der Anwendungsfälle.
 * **Skinnierfähig**: Konsistente Verwendung von HTML-Attributen für CSS-Stile.
-* **Erweiterbar**: Die Komponentenimplementierung ist objektorientiert und basiert auf der Geschäftslogik - einfach hinzuzufügen, inkrementelle Geschäftsanmeldungen auf dem Server.
+* **Erweiterbar**: Die Komponentenimplementierung ist objektorientiert und basiert auf der Geschäftslogik - einfach hinzuzufügen, um eine inkrementelle Geschäftsanmeldung auf dem Server durchzuführen.
 * **Flexibel**: Einfache JavaScript-Templates ohne Logik, die einfach überlagert und angepasst werden können.
 * **Zugänglich**: Die HTTP-API unterstützt das Posten von jedem Client, einschließlich mobiler Apps.
 * **Tragbar**: Integrieren/einbetten Sie in jede Webseite, die auf einer beliebigen Technologie basiert.
@@ -55,9 +55,9 @@ Um die Komponenten anzupassen oder zu erweitern, schreiben Sie nur die Überlage
 * So ändern Sie die Informationen, die für die JS-Vorlage oder den GET-Endpunkt verfügbar sind:
    * Erweitern Sie die [SocialComponent](server-customize.md#socialcomponent-interface).
 * So fügen Sie benutzerdefinierte Verarbeitung während Vorgängen hinzu:
-   * Eine [OperationExtension](server-customize.md#operationextension-class).
-* So fügen Sie einen benutzerdefinierten Vorgang hinzu:
-   * Erstellen Sie eine neue [Sling Post Operation](server-customize.md#postoperation-class).
+   * Schreiben einer [OperationExtension](server-customize.md#operationextension-class).
+* Hinzufügen eines benutzerdefinierten Vorgangs:
+   * Erstellen Sie eine [Sling Post Operation](server-customize.md#postoperation-class).
    * Vorhandene verwenden [OperationServices](server-customize.md#operationservice-class) nach Bedarf.
    * Fügen Sie nach Bedarf JavaScript-Code hinzu, um den Vorgang vom Client aus aufzurufen.
 
@@ -117,7 +117,7 @@ Informationen zum Umgang mit benutzergenerierten Inhalten, die im [Community-Inh
 
 ### Serverseitige Anpassungen {#server-side-customizations}
 
-Besuch [Serverseitige Anpassungen](server-customize.md) Informationen zum Anpassen der Geschäftslogik und des Verhaltens einer Communities-Komponente auf der Server-Seite.
+Besuch [Serverseitige Anpassungen](server-customize.md) für Informationen zum Anpassen der Geschäftslogik und des Verhaltens einer Communities-Komponente auf der Server-Seite.
 
 ## Handlebars JS-Vorlagensprache {#handlebars-js-templating-language}
 
@@ -133,7 +133,7 @@ Wenn Sling auf dem Server eine GET-Anforderung auflöst, identifiziert er das Sk
 
 Handlebars (HBS)-Vorlagendateien (.hbs) entsprechen .jsp- und .html-Vorlagendateien, können jedoch sowohl im Client-Browser als auch auf dem Server für die Wiedergabe verwendet werden. Daher erhält ein Client-Browser, der eine clientseitige Vorlage anfordert, eine .hbs-Datei vom Server.
 
-Dies erfordert, dass alle HBS-Vorlagen im Sling-Suchpfad (alle .hbs-Dateien unter /libs/ oder /apps) von jedem Benutzer aus der Autoren- oder Veröffentlichungsinstanz abgerufen werden können.
+Dazu müssen alle HBS-Vorlagen im Sling-Suchpfad (alle .hbs-Dateien unter /libs/ oder /apps) von jedem Benutzer aus der Autoren- oder Veröffentlichungsinstanz abgerufen werden.
 
 HTTP-Zugriff auf .hbs-Dateien ist möglicherweise nicht verboten.
 
@@ -164,7 +164,7 @@ Es können nur einige ausgewählte AEM Communities-Komponenten dynamisch eingesc
 
 Die [Handbuch zu Community-Komponenten](components-guide.md) ermöglicht, dass integrative Komponenten von der Hinzufügung zur Einbindung umgeschaltet werden.
 
-**Bei Verwendung von Handlebars** Vorlagensprache: Die nicht vorhandene Ressource wird mithilfe der [include helper](handlebars-helpers.md#include) durch Angabe des Ressourcentyps:
+**Bei Verwendung von Handlebars** Vorlagensprache verwenden, wird die nicht vorhandene Ressource mit der [include helper](handlebars-helpers.md#include) durch Angabe seines resourceType:
 
 `{{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}`
 
@@ -185,7 +185,7 @@ Siehe [SCF Handlebars Helpers](handlebars-helpers.md) für eine Liste und Beschr
 
 ## Client-seitiges Framework {#client-side-framework}
 
-### JavaScript-Framework für Modellansichten {#model-view-javascript-framework}
+### Modell-View JavaScript Framework {#model-view-javascript-framework}
 
 Das Framework umfasst eine Erweiterung von [Backbone.js](https://backbonejs.org/), ein JavaScript-Framework zur Modellansicht, um die Entwicklung von komplexen, interaktiven Komponenten zu erleichtern. Die objektorientierte Natur unterstützt ein erweiterbares/wiederverwendbares Framework. Die Kommunikation zwischen Client und Server wird mit der HTTP-API vereinfacht.
 
@@ -196,7 +196,7 @@ Das Framework verwendet serverseitige Handlebars-Vorlagen, um die Komponenten f�
 Die folgenden Konventionen werden zum Definieren und Verwenden von CSS-Klassen empfohlen:
 
 * Verwenden Sie eindeutig Namespace-CSS-Klassenselektornamen und vermeiden Sie allgemeine Namen wie &quot;Überschrift&quot;und &quot;Bild&quot;.
-* Definieren Sie bestimmte Stile für die Klassenauswahl, damit die CSS-Stylesheets gut mit anderen Elementen und Stilen auf der Seite funktionieren. Beispiel: `.social-forum .topic-list .li { color: blue; }`
+* Definieren Sie bestimmte Stile für die Klassenauswahl, damit die CSS-Stylesheets gut mit anderen Elementen und Stilen auf der Seite funktionieren. Zum Beispiel: `.social-forum .topic-list .li { color: blue; }`
 * Halten Sie CSS-Klassen für die Formatierung getrennt von CSS-Klassen für UX, die von JavaScript gesteuert werden.
 
 ### Clientseitige Anpassungen {#client-side-customizations}

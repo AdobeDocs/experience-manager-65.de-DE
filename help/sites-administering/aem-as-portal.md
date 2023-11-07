@@ -1,20 +1,16 @@
 ---
 title: AEM-Portale und Portlets
-seo-title: AEM Portals and Portlets
 description: Erfahren Sie, wie Sie AEM als Portal konfigurieren und verwalten und wie Sie AEM Inhalt in einem Portlet konfigurieren und anzeigen.
-seo-description: Learn how to configure and administer AEM as a portal and how to configure and display AEM content in a portlet.
-uuid: 7f9e316d-277e-4a1e-b6f3-cd89addc897b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6098'
-ht-degree: 27%
+source-wordcount: '6093'
+ht-degree: 26%
 
 ---
 
@@ -193,7 +189,7 @@ So konfigurieren Sie einen Replikationsagenten für das Portal:
 
    ![screen_shot_2012-02-15at40817pm](assets/screen_shot_2012-02-15at40817pm.png)
 
-1. Doppelklicken Sie auf den soeben erstellten Replikationsagenten. Er wird als ungültig angezeigt, da er noch nicht konfiguriert wurde.
+1. Doppelklicken Sie auf den erstellten Replikationsagenten. Er wird als ungültig angezeigt, da er noch nicht konfiguriert wurde.
 
    ![screen_shot_2012-02-15at41001pm](assets/screen_shot_2012-02-15at41001pm.png)
 
@@ -343,7 +339,7 @@ Bei jeder Anfrage, die AEM WCM erhält, wird zunächst die SSO-basierte Authenti
 
 #### Aktivieren der SSO-Authentifizierung in einem AEM Portlet {#enabling-sso-authentication-in-a-aem-portlet}
 
-Damit die zugrundeliegende AEM WCM-Instanz SSO-Anfragen akzeptieren kann, muss der Authentifizierungsmodus des Portlets von **Technisch** in **SSO** geändert werden.
+Damit die zugrunde liegende AEM WCM-Instanz SSO-Anforderungen akzeptieren kann, muss der Authentifizierungsmodus des Portlets von **Technisch** nach **SSO**.
 
 Zur Aktivierung der SSO-Authentifizierung in einem AEM-Portlet:
 
@@ -527,7 +523,7 @@ title="{text}"/>
 
 #### Installieren eines benutzerdefinierten Layouts {#installing-a-custom-layout}
 
-Zur Installation benutzerdefinierter Layouts rufen Sie den Abschnitt **Bundles** der OSGi-Web-Konsole des Portlets auf und laden Sie das Bundle hoch.
+Um ein benutzerdefiniertes Layout zu installieren, greifen Sie auf den Abschnitt &quot;OSGI-Web-Konsole&quot;des Portlets zu und laden Sie das Bundle hoch.
 
 #### Pakete {#packages}
 
@@ -548,7 +544,7 @@ Das AEM Content-Portlet verfügt über eine integrierte Lokalisierungsfunktion, 
 Dies geschieht in zwei Schritten:
 
 1. Der Locale Detector von Portal Directory erkennt das Gebietsschema des Portalbenutzers, indem er die Gebietsschemaeinstellung vom Portal abruft. Dieser Dienst muss mit der Liste der verfügbaren Sprachen in AEM konfiguriert werden.
-1. Der Director Locale Handler für Portal verarbeitet die Lokalisierung der aktuellen Anforderung. Dazu benötigt er den Pfad der angeforderten Inhalte, z. B. `/content/geometrixx/en/company.html`, und je nach Konfiguration wird **en** mit dem tatsächlichen Gebietsschema des Benutzers überschrieben.
+1. Der Director Locale Handler für Portal verarbeitet die Lokalisierung der aktuellen Anforderung. Er nimmt den Pfad des angeforderten Inhalts, z. B. `/content/geometrixx/en/company.html`und entsprechend der Konfiguration wird die **en** mit dem tatsächlichen Gebietsschema des Benutzers.
 
 Der „Portal Director Locale Handler“ kann mit den Pfaden für die Suche nach Gebietsschema-Informationen – für gewöhnlich alles unter `/content` – und mit der Position der Gebietsschema-Informationen unter dem Pfad konfiguriert werden. Standardmäßig befolgt der „Locale Handler“ die Empfehlung zur Strukturierung von mehrsprachigen Sites innerhalb von AEM.
 
@@ -616,7 +612,7 @@ Stellen Sie bei der Implementierung eines solchen Dienstes sicher, dass Sie die 
 | **Name** | **Beschreibung** | **Standardverhalten** |
 |---|---|---|
 | Authenticator | Stellt Authentifizierungsinformationen für AEM bereit | Verwendet einen konfigurierbaren technischen Benutzer für Autor und Veröffentlichung. Oder SSO kann verwendet werden. |
-| HTMLRewriter | Schreibt Links, Bilder usw. um. | Schreibt AEM Links zu Portal-Links um, kann durch einen UrlMapper und einen TextMapper erweitert werden |
+| HTMLRewriter | Schreibt Links, Bilder usw. um | Schreibt AEM Links zu Portal-Links um, kann durch einen UrlMapper und einen TextMapper erweitert werden |
 | HttpClientService | Verarbeitet alle HTTP-Verbindungen | Standardimplementierung |
 | LocaleHandler | Verarbeitet die Gebietsschema-Informationen | Schreibt einen Link zum Inhalt in Bezug auf das Gebietsschema neu. |
 | LocaleDetector | Ermittelt das Gebietsschema des Benutzers. | Verwendet das vom Portal bereitgestellte Gebietsschema. |
@@ -661,7 +657,7 @@ Die AEM Quickstart-JAR-Datei enthält die Portlet-Komponentendateien. Um die Dat
 
    Das Paket speichert die Datei cq-portlet-director-sharedlibs-x.x.x.jar im Ordner /libs/portal/director im Repository.
 
-1. Kopieren Sie cq-portlet-director-sharedlibs-x.x.x.jar auf Ihre Festplatte. Verwenden Sie eine beliebige Methode, um die Datei abzurufen, z. B. FileVault oder einen WebDAV-Client.
+1. Kopieren Sie cq-portlet-director-sharedlibs-x.x.x.jar auf Ihre Festplatte. Verwenden Sie alle Mittel, um die Datei abzurufen, z. B. FileVault oder einen WebDAV-Client.
 1. Verschieben Sie die Datei cq-portlet-director-sharedlibs.x.x.x.jar in den Ordner der freigegebenen Bibliothek Ihres Anwendungsservers, sodass die Klassen für bereitgestellte Portlet-Anwendungen verfügbar sind.
 
 ### Hinzufügen der Portlet-Komponente zum Sidekick {#adding-the-portlet-component-to-sidekick}
@@ -731,7 +727,7 @@ Nutzen Sie die Portlet-Komponente zum Einfügen eines Portlet-Fensters auf Ihrer
 
 Um auf von AEM WCM bereitgestellte Inhalte zuzugreifen, muss der Portal-Server mit dem AEM Portal Director Portlet ausgestattet werden. Installieren, konfigurieren und fügen Sie dazu das Portlet mithilfe der in diesem Abschnitt beschriebenen Schritte zur Portalseite hinzu.
 
-Standardmäßig stellt das Portlet eine Verbindung zur Veröffentlichungsinstanz unter localhost:4503 und zur Autoreninstanz unter localhost:4502 her. Diese Werte können während der Bereitstellung des Portlets geändert werden. Der Portal-Director ist als Inhalt im Repository unter /libs/portal/directory verfügbar. Sie müssen die WAR-Datei der Anwendung vor der Verwendung herunterladen.
+Standardmäßig stellt das Portlet eine Verbindung zur Veröffentlichungsinstanz unter localhost:4503 und zur Autoreninstanz unter localhost:4502 her. Diese Werte können während der Bereitstellung des Portlets geändert werden. Der Portal-Director ist als Inhalt im Repository unter /libs/portal/directory verfügbar. Sie müssen die WAR-Datei der Anwendung herunterladen, bevor Sie sie verwenden.
 
 ### Herunterladen der WAR-Datei {#downloading-the-war-file}
 
@@ -741,7 +737,7 @@ Standardmäßig stellt das Portlet eine Verbindung zur Veröffentlichungsinstanz
 
 >[!NOTE]
 >
->Diese Verfahren verwenden das Websphere-Portal als Beispiel, obwohl sie so allgemein wie möglich sind. Bitte beachten Sie, dass die Verfahren für andere Webportale variieren. Obwohl die Schritte im Wesentlichen für alle Webportale identisch sind, müssen Sie die Schritte für Ihr bestimmtes Webportal erneut verwenden.
+>Diese Verfahren verwenden das Websphere-Portal als Beispiel, obwohl sie so allgemein wie möglich sind. Beachten Sie, dass die Verfahren für andere Webportale variieren. Obwohl die Schritte im Wesentlichen für alle Webportale identisch sind, müssen Sie die Schritte für Ihr bestimmtes Webportal erneut verwenden.
 
 #### Installieren des Portlets {#installing-the-portlet}
 
@@ -800,7 +796,7 @@ Normalerweise verweist der Startpfad direkt auf den Inhalt in AEM. Falls Sie die
 So fügen Sie das Portlet zur Portalseite hinzu:
 
 1. Vergewissern Sie sich, dass Sie sich im Verwaltungsfenster Ihres App-Servers befinden und zu dem Speicherort navigieren, an dem Sie Seiten verwalten. (z. B. in WebSphere 6.1 klicken Sie auf **Verwalten von Seiten**).
-1. Wählen Sie den Namen des Portlets und dann eine vorhandene Seite aus oder erstellen Sie eine neue Seite.
+1. Wählen Sie den Namen des Portlets aus und wählen Sie dann eine vorhandene Seite aus oder erstellen Sie eine Seite.
 1. Bearbeiten Sie das Seitenlayout.
 1. Wählen Sie das Portlet aus und fügen Sie es einem Container hinzu.
 1. Speichern Sie Ihre Änderungen.

@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie eine ersetzende Aktualisierung für AEM 6.5 d
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 49%
+source-wordcount: '1238'
+ht-degree: 43%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 49%
 
 Vor der Durchführung des Upgrades müssen einige Schritte ausgeführt werden. Siehe [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) und [Wartungsaufgaben vor einer Aktualisierung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) für weitere Informationen. Stellen Sie außerdem sicher, dass Ihr System die Anforderungen für die neue Version von AEM erfüllt. Erfahren Sie, wie Sie mit der Mustererkennung die Komplexität Ihrer Aktualisierung abschätzen können, und lesen Sie auch den Abschnitt &quot;Aktualisierungsumfang und -anforderungen&quot;unter [Planung der Aktualisierung](/help/sites-deploying/upgrade-planning.md) für weitere Informationen.
 
-<!--Finally, note that the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
+<!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## Migrationsvoraussetzungen {#migration-prerequisites}
 
@@ -113,7 +113,7 @@ Dabei werden `<<YOUR_PROFILE>>` und `<<ADDITIONAL_FLAGS>>` durch das Profil und 
 
 **Möglicherweise benötigen Sie auch zusätzliche Schalter für folgende Szenarien:** 
 
-* Wenn Sie das Upgrade auf einem Windows-System durchführen, auf dem die Java-Speicherzuordnung nicht korrekt durchgeführt wird, fügen Sie dem Befehl den Parameter `--disable-mmap` hinzu.
+* Wenn Sie die Aktualisierung auf einem Windows-System durchführen, bei dem die Java-Speicherzuordnung nicht ordnungsgemäß durchgeführt wird, fügen Sie die `--disable-mmap` -Parameter auf den -Befehl.
 
 Weitere Informationen über die Verwendung des crx2oak-Tools finden Sie unter „Verwenden des [CRX2Oak Migration Tools](/help/sites-deploying/using-crx2oak.md)“. crx2oak helper JAR kann bei Bedarf manuell aktualisiert werden, indem die Datei manuell durch neuere Versionen ersetzt wird, nachdem die Schnellstart-Datei entpackt wurde. Sie finden die Datei im AEM-Installationsordner unter:   `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. Die neueste Version des CRX2Oak-Migrations-Tools kann vom Adobe-Repository hier heruntergeladen werden: [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
@@ -127,7 +127,7 @@ Prüfen Sie die Konfigurationsdateien unter dem Ordner `crx-quickstart/install`.
 
 ## Fehlerbehebung bei Migrationsproblemen {#troubleshooting-migration-issues}
 
-Bitte überspringen Sie diesen Abschnitt, wenn Sie ein Upgrade von 6.3 durchführen. Während die bereitgestellten crx2oak-Profile den Anforderungen der meisten Kunden entsprechen sollten, sind manchmal zusätzliche Parameter erforderlich. Wenn während der Migration ein Fehler auftritt, sind für manche Aspekte Ihrer Umgebung möglicherweise zusätzliche Konfigurationsoptionen nötig. In diesem Fall tritt wahrscheinlich der folgende Fehler auf:
+Überspringen Sie diesen Abschnitt, wenn Sie ein Upgrade von 6.3 durchführen. Während die bereitgestellten crx2oak-Profile den Anforderungen der meisten Kunden entsprechen sollten, sind manchmal zusätzliche Parameter erforderlich. Wenn während der Migration ein Fehler auftritt, sind für manche Aspekte Ihrer Umgebung möglicherweise zusätzliche Konfigurationsoptionen nötig. In diesem Fall tritt wahrscheinlich der folgende Fehler auf:
 
 **Checkpoints werden nicht kopiert, da kein externer Datenspeicher angegeben wurde. Dadurch wird das gesamte Repository beim ersten Start neu indiziert. Verwenden Sie —skip-checkpoints , um die Migration zu erzwingen, oder finden Sie weitere Informationen unter https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration .**
 
@@ -161,11 +161,11 @@ Dabei entspricht `/path/to/datastore` dem Pfad zu Ihrem Datei-Datenspeicher.
 
 ### Bestimmen des korrekten Befehls zum Starten des Upgrades {#determining-the-correct-upgrade-start-command}
 
-Um das Upgrade auszuführen, ist es wichtig, mit der Verwendung der JAR-Datei zu beginnen, AEM die Instanz aufzurufen. Lesen Sie für die Aktualisierung auf 6.5 auch die Informationen zu den Optionen für die Neustrukturierung und Migration des Inhalts unter [Lazy-Content-Migration](/help/sites-deploying/lazy-content-migration.md), die Sie mit dem Upgrade-Befehl auswählen können.
+Um das Upgrade auszuführen, ist es wichtig, mit der Verwendung der JAR-Datei zu beginnen, AEM die Instanz aufzurufen. Informationen zur Aktualisierung auf 6.5 finden Sie unter Weitere Optionen zur Inhaltsumstrukturierung und -migration unter [Lazy-Content-Migration](/help/sites-deploying/lazy-content-migration.md) die Sie mit dem Upgrade-Befehl auswählen können.
 
 >[!IMPORTANT]
 >
->Wenn Sie Oracle Java 11 ausführen (oder generell Java-Versionen aktueller als 8), werden zusätzliche Parameter zu Ihrer Befehlszeile hinzugefügt, sobald AEM gestartet wird. Weitere Informationen finden Sie unter [Überlegungen zu Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
+>Wenn Sie Oracle Java 11 (oder allgemein Java-Versionen unter 8) ausführen, müssen beim Starten von AEM zusätzliche Switches zu Ihrer Befehlszeile hinzugefügt werden. Weitere Informationen finden Sie unter [Überlegungen zu Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
 Beachten Sie, dass das Starten von AEM ab dem Startskript die Aktualisierung nicht startet. Die meisten Kunden beginnen AEM mit der Verwendung des Startskripts und haben dieses Startskript so angepasst, dass es Switches für Umgebungskonfigurationen wie Speichereinstellungen, Sicherheitszertifikate usw. enthält. Daher empfiehlt Adobe, dieses Verfahren zu befolgen, um den richtigen Aktualisierungsbefehl zu ermitteln:
 

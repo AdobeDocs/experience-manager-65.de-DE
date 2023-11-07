@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2784'
-ht-degree: 70%
+source-wordcount: '2793'
+ht-degree: 67%
 
 ---
 
@@ -51,7 +51,7 @@ Je nach Fragmenttyp werden außerdem Modelle oder Vorlagen verwendet:
    * Inhaltsfragmentmodelle definieren die Struktur eines Inhaltsfragments, wenn dieses erstellt wird.
    * Ein Fragment verweist auf das Modell. Änderungen am Modell können sich daher auf alle abhängigen Fragmente auswirken.
    * Modelle werden anhand von Datentypen erstellt.
-   * Funktionen zum Hinzufügen neuer Varianten und dergleichen müssen das Fragment entsprechend aktualisieren.
+   * Funktionen zum Hinzufügen neuer Varianten usw. müssen das Fragment entsprechend aktualisieren.
 
   >[!CAUTION]
   >
@@ -62,8 +62,8 @@ Je nach Fragmenttyp werden außerdem Modelle oder Vorlagen verwendet:
    * wird zum Definieren von einfachen Inhaltsfragmenten verwendet.
    * Vorlagen definieren die (einfache, schreibgeschützte) Struktur eines Inhaltsfragments bei seiner Erstellung.
    * Die Vorlage wird beim Erstellen in das Fragment kopiert, sodass weitere Änderungen an der Vorlage nicht in vorhandenen Fragmenten übernommen werden.
-   * Funktionen zum Hinzufügen neuer Varianten und dergleichen müssen das Fragment entsprechend aktualisieren.
-   * [Inhaltsfragmentvorlagen](/help/sites-developing/content-fragment-templates.md) auf andere Weise als andere Vorlagenkomponenten innerhalb des AEM Ökosystems (z. B. Seitenvorlagen usw.) arbeiten. Daher sollten sie getrennt betrachtet werden.
+   * Funktionen zum Hinzufügen neuer Varianten usw. müssen das Fragment entsprechend aktualisieren.
+   * [Inhaltsfragmentvorlagen](/help/sites-developing/content-fragment-templates.md) auf andere Weise als andere Vorlagenkomponenten innerhalb des AEM-Ökosystems (z. B. Seitenvorlagen usw.) arbeiten. Daher sollten sie getrennt betrachtet werden.
    * Wenn der MIME-Typ des Inhalts auf einer Vorlage basiert, wird er anhand des tatsächlichen Inhalts verwaltet. Dies bedeutet, dass jedes Element und jede Variante einen anderen MIME-Typ haben kann.
 
 ### Integration mit Assets {#integration-with-assets}
@@ -72,7 +72,7 @@ Die Inhaltsfragmentverwaltung (Content Fragment Management, CFM) ist Teil von AE
 
 * Inhaltsfragmente sind Assets.
 * Sie verwenden vorhandene Assets-Funktionen.
-* Sie sind vollständig mit Assets integriert (Admin-Konsole usw.).
+* Sie sind vollständig in Assets integriert (Admin Consoles usw.).
 
 #### Zuordnen von strukturierten Inhaltsfragmenten zu Assets {#mapping-structured-content-fragments-to-assets}
 
@@ -91,7 +91,8 @@ z. B. `jcr:content/data/myvariation`
    * Die Daten der einzelnen Elemente werden im entsprechenden Unterknoten als Eigenschaft mit dem Elementnamen gespeichert:
 Das Inhaltselement `text` wird beispielsweise mit der Eigenschaft `text` in `jcr:content/data/master` gespeichert.
 
-* Metadaten und verknüpfte Inhalte werden unter `jcr:content/metadata` gespeichert. Eine Ausnahme bilden der Titel und die Beschreibung, die nicht als Metadaten im herkömmlichen Sinne gelten und in `jcr:content` gespeichert werden.
+* Metadaten und verknüpfte Inhalte werden unter `jcr:content/metadata` gespeichert.
+Eine Ausnahme bilden der Titel und die Beschreibung, die nicht als Metadaten im herkömmlichen Sinne gelten und in `jcr:content` gespeichert werden.
 
 #### Zuordnen von einfachen Inhaltsfragmenten zu Assets {#mapping-simple-content-fragments-to-assets}
 
@@ -139,7 +140,7 @@ AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen andere
 * Außerdem kann eine Reihe von Absätzen ausgewählt werden, um die Ausgabe zu beschränken, z. B. für die Ausgabe in mehreren Spalten.
 * Die Komponente ermöglicht [Übergangsinhalte](/help/sites-developing/components-content-fragments.md#in-between-content):
 
-   * Hier können Sie mit der Komponente andere Assets (Bilder usw.) zwischen den Absätzen des Fragments zu platzieren, auf das verwiesen wird.
+   * Hier können Sie mit der Komponente andere Assets (Bilder usw.) zwischen den Absätzen des referenzierten Fragments platzieren.
    * Bei Zwischeninhalten müssen Sie:
 
       * beachten, dass Verweise möglicherweise instabil sind. Bei der Seitenbearbeitung hinzugefügte Zwischeninhalte haben keine feste Beziehung zu dem Absatz, neben dem sie platziert werden; es wird ein neuer Absatz (im Inhaltsfragment-Editor) eingefügt, bevor der Zwischeninhalt die relative Position verlieren kann.
@@ -182,7 +183,7 @@ Es gibt noch einige weitere Richtlinien, die Sie befolgen müssen, um sicherzust
 
 * Falls die Ausgabe mehrerer Elemente (durch Verwendung von `elementNames` zur Angabe mehrerer Elemente) unterstützt wird, wird der tatsächliche Anzeigemodus durch die `displayMode`-Eigenschaft definiert:
 
-   * Falls der Wert `singleText` lautet (und nur ein Element konfiguriert ist), wird das Element als Text mit Zwischeninhalt, Layout-Unterstützung usw. gerendert. Dies ist die Standardeinstellung für Fragmente, in denen nur ein einzelnes Element gerendert wird.
+   * Wenn der Wert `singleText` (und nur ein Element konfiguriert ist) wird das Element als Text mit Zwischeninhalten, Layout-Unterstützung usw. gerendert. Dies ist die Standardeinstellung für Fragmente, in denen nur ein einzelnes Element gerendert wird.
    * Andernfalls wird ein viel einfacherer Ansatz verwendet (könnte als &quot;Formularansicht&quot;bezeichnet werden), bei dem kein Zwischeninhalt unterstützt wird und der Fragmentinhalt unverändert wiedergegeben wird.
 
 * Falls das Fragment für `displayMode` == `singleText` (implizit oder explizit) gerendert wird, müssen auch folgende zusätzlichen Eigenschaften berücksichtigt werden:
@@ -254,7 +255,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
 * **Fragmentvorlage** ([FragmentTemplate](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
-  Verwenden Sie `FragmentTemplate.createFragment()` zum Erstellen eines neuen Fragments.
+  Verwendung `FragmentTemplate.createFragment()` zum Erstellen eines Fragments.
 
   ```
   Resource templateOrModelRsc = resourceResolver.getResource("...");
@@ -492,9 +493,9 @@ if (fragmentResource != null) {
 }
 ```
 
-### Beispiel: Erstellen eines neuen Inhaltsfragments {#example-creating-a-new-content-fragment}
+### Beispiel: Erstellen eines Inhaltsfragments {#example-creating-a-new-content-fragment}
 
-Um programmgesteuert ein neues Inhaltsfragment zu erstellen, müssen Sie Folgendes verwenden:
+Um ein Inhaltsfragment programmgesteuert zu erstellen, müssen Sie Folgendes verwenden:
 
 `com.adobe.cq.dam.cfm.ContentFragmentManager#create`
 

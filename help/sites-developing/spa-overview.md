@@ -1,20 +1,16 @@
 ---
 title: SPA-Editor – Überblick
-seo-title: SPA Editor Overview
 description: Dieser Artikel gibt einen umfassenden Überblick über den SPA-Editor und seine Funktionsweise, einschließlich detaillierter Workflows zur Interaktion des SPA-Editors innerhalb AEM.
-seo-description: This article gives a comprehensive overview of the SPA Editor and how it works included detailed workflows of interaction of the SPA Editor within AEM.
-uuid: c283abab-f5bc-414a-bc81-bf3bdce38534
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 93%
+source-wordcount: '1651'
+ht-degree: 91%
 
 ---
 
@@ -88,7 +84,7 @@ Unter Berücksichtigung der Schlüsselelemente des SPA-Editors erscheint der all
 1. SPA wird in einen eigenen Frame geladen.
 1. SPA fordert JSON-Inhalte an und rendert Komponenten Client-seitig.
 1. SPA-Editor erkennt gerenderte Komponenten und generiert Überlagerungen.
-1. Der Autor klickt auf die Überlagerung und zeigt die Bearbeitungssymbolleiste der Komponente an.
+1. Die Autorin bzw. der Autor klickt auf die Überlagerung und zeigt die Bearbeitungssymbolleiste der Komponente an.
 1. SPA-Editor setzt Bearbeitungen mit einer POST-Anfrage an den Server fort.
 1. Der SPA-Editor fordert ein aktualisiertes JSON an den SPA-Editor an, das mit einem DOM-Ereignis an den SPA-Editor gesendet wird.
 1. SPA rendert die betreffende Komponente erneut und aktualisiert ihr DOM.
@@ -158,7 +154,7 @@ Dies ist ein detaillierterer Überblick, der sich auf das Autorenerlebnis konzen
 
 ## Anforderungen und Einschränkungen {#requirements-limitations}
 
-Damit die Autorin bzw. der Autor den Seiteneditor zum Bearbeiten von Inhalten in einer SPA verwenden kann, muss die SPA für die Interaktion mit dem AEM SPA Editor SDK implementiert sein. Weitere Informationen, die Sie benötigen, um Ihre SPAs zum Laufen zu bringen, finden Sie im Dokument [Erste Schritte mit SPAs in AEM](/help/sites-developing/spa-getting-started-react.md).
+Damit die Autorin bzw. der Autor den Seiteneditor zum Bearbeiten von Inhalten in einer SPA verwenden kann, muss die SPA für die Interaktion mit dem AEM SPA Editor SDK implementiert sein. Siehe [Erste Schritte mit SPA in AEM](/help/sites-developing/spa-getting-started-react.md) für das Minimum, das Sie wissen müssen, um Ihre Arbeit zu starten.
 
 ### Unterstützte Frameworks {#supported-frameworks}
 
@@ -171,7 +167,7 @@ Frühere Versionen dieser Frameworks funktionieren möglicherweise mit dem AEM S
 
 ### Weitere Frameworks {#additional-frameworks}
 
-Für die Arbeit mit dem AEM SPA Editor SDK können weitere SPA-Frameworks implementiert werden. Lesen Sie hierzu die [SPA Blueprint](/help/sites-developing/spa-blueprint.md) Dokument für die Anforderungen, die ein Framework erfüllen muss, um eine Framework-spezifische Ebene aus Modulen, Komponenten und Diensten zu erstellen, die mit dem AEM-SPA-Editor verwendet werden kann.
+Für die Arbeit mit dem AEM SPA Editor SDK können weitere SPA-Frameworks implementiert werden. Siehe [SPA Blueprint](/help/sites-developing/spa-blueprint.md) für die Anforderungen, die ein Framework erfüllen muss, um eine Framework-spezifische Schicht aus Modulen, Komponenten und Diensten zu erstellen, die mit dem AEM-SPA-Editor verwendet werden kann.
 
 ### Verwenden mehrerer Selektoren {#multiple-selectors}
 
@@ -198,6 +194,6 @@ Das AEM SPA Editor SDK wurde mit AEM 6.4 Service Pack 2 eingeführt. Es wird v
 * Konfigurationen bearbeiten (z. B. Listener)
 * Rückgängig/Wiederholen
 * Seitenvergleich und Zeitverzerrung
-* Funktionen, die Server-seitig HTML-Umschreibungen durchführen, wie Link Checker, CDN-Umschreibe-Service, URL-Verkürzung usw.
+* Funktionen zum serverseitigen HTML-Neuschreiben, wie Link Checker, CDN-Rewriter-Dienst, URL-Verkürzung usw.
 * Entwicklermodus
 * AEM-Launches

@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '359'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## Übersicht {#overview}
 
-Im Abschnitt &quot;Authoring&quot;der Dokumentation werden das Hinzufügen von Communities-Funktionen zu AEM Sites im Bearbeitungsmodus für Autoren sowie die Beschreibung von Komponentenkonfigurationen beschrieben.
+Im Abschnitt &quot;Authoring&quot;der Dokumentation wird beschrieben, wie Sie im Bearbeitungsmodus für Autoren Communities-Funktionen zu AEM Sites hinzufügen und Komponentenkonfigurationen beschreiben.
 
 Komponenten können mithilfe einer AEM-Instanz und der interaktiven [Handbuch zu Community-Komponenten](components-guide.md).
 
@@ -37,7 +37,7 @@ Die verfügbaren Communities-Komponenten werden aufgelistet [here](author-commun
 >
 >Wenn Sie nicht mit AEM vertraut sind, lesen Sie die Dokumentation unter [grundlegende Handhabung](../../help/sites-authoring/basic-handling.md).
 
-### Aktivieren des Designmodus {#entering-design-mode}
+### Aufrufen des Designmodus {#entering-design-mode}
 
 Wenn eine **Communities** -Komponente nicht im Komponenten-Browser gefunden werden (Sidekick), muss `Design Mode` , um weitere Communities-Komponenten hinzuzufügen. [Erforderliche clientseitige Bibliotheken](#required-clientlibs) (clientlibs) hinzugefügt werden.
 
@@ -69,9 +69,9 @@ Wenn Sie eine Communities-Komponente zu einer Seite hinzufügen und das Ergebnis
 
 Viele Communities-Funktionen können so konfiguriert werden, dass Mitglieder Inhalte taggen können, die in der Veröffentlichungsumgebung eingegeben (veröffentlicht) wurden.
 
-Wenn Tagging zulässig ist, kann die Konfiguration der Community-Site so eingestellt sein, dass die Namespaces, die Mitgliedern in der Veröffentlichungsumgebung angezeigt werden, beschränkt werden. Siehe [Community-Sites-Konsole](sites-console.md#tagging).
+Wenn Tagging zulässig ist, kann die Konfiguration der Community-Site so festgelegt sein, dass die Namespaces, die Mitgliedern in der Veröffentlichungsumgebung angezeigt werden, beschränkt werden. Siehe [Community-Sites-Konsole](sites-console.md#tagging).
 
-Funktionen, die Tagging ermöglichen: [blog](blog-feature.md), [calendar](calendar.md), [Dateibibliothek](file-library.md), [Forum](forum.md)
+Funktionen, die Tagging ermöglichen: [Blog](blog-feature.md), [calendar](calendar.md), [Dateibibliothek](file-library.md), [Forum](forum.md)
 
 Funktionen, die Tags verwenden: [suchen](search.md), [Social Tag Cloud](tagcloud.md)
 
@@ -82,10 +82,10 @@ Für Informationen zur Bearbeitung:
 Für Verwaltungsinformationen:
 
 * Erstellen von Tag-Namespaces (Taxonomie): [Verwalten von Tags](../../help/sites-administering/tags.md)
-* Community-Site-Konfiguration: see [TAGGING](sites-console.md#tagging)
+* Community-Site-Konfiguration: siehe [TAGGING](sites-console.md#tagging)
 * [Tagging benutzergenerierter Inhalte](../../help/sites-authoring/tags.md)
 
-Entwicklerinformationen:
+Für Entwicklerinformationen:
 
 * [AEM-Tagging-Framework](../../help/sites-developing/framework.md)
 * [Tagging-Grundlagen](tag.md)

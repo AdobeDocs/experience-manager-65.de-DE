@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: df28180f-7af4-437d-8e91-bfd305f73113
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1176'
-ht-degree: 83%
+source-wordcount: '1174'
+ht-degree: 95%
 
 ---
 
@@ -29,19 +29,19 @@ Informationen zum Hinzufügen von UI-Modulen zu ContextHub finden Sie unter [Hin
 
 Der UI-Modultyp contexthub.base ist der Basistyp für alle anderen UI-Modultypen. Sie bietet daher allgemeine Funktionen zum Rendern von Store-Daten.
 
-Die folgenden Funktionen sind verfügbar:
+Die folgenden Optionen sind verfügbar:
 
 * **Titel und Symbol:** Geben Sie einen Titel für das UI-Modul und ein Symbol an. Auf das Symbol kann über eine URL oder aus der Coral-UI-Symbolbibliothek verwiesen werden.
 * **Daten speichern:** Identifizieren Sie einen oder mehrere Stores, aus denen Daten abgerufen werden sollen.
 * **Inhalt:** Geben Sie den Inhalt an, der im UI-Modul angezeigt wird, so wie er in der ContextHub-Symbolleiste angezeigt wird.
 * **Popover-Inhalt:** Geben Sie den Inhalt an, der in einem Popover angezeigt wird, wenn auf das UI-Modul geklickt oder getippt wird.
-* **Vollbildmodus:** Steuern Sie, ob der Vollbildmodus zulässig ist.
+* **Vollbildmodus:** Legen Sie fest, ob der Vollbildmodus zulässig ist.
 
 Der Quell-Code befindet sich unter /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js.
 
 ### Konfiguration {#configuration}
 
-Konfigurieren Sie das Benutzeroberflächenmodul contexthub.base mithilfe eines JavaScript-Objekts im JSON-Format. Fügen Sie eine der folgenden Eigenschaften zum Konfigurieren der UI-Modulfunktionen hinzu:
+Konfigurieren Sie das UI-Modul „contexthub.base“ mithilfe eines JavaScript-Objekts im JSON-Format. Fügen Sie eine der folgenden Eigenschaften zum Konfigurieren der UI-Modulfunktionen hinzu:
 
 * **image:** eine URL zu einem Bild, das als Symbol angezeigt werden soll.
 * **icon:** der Name einer [Coral-Benutzeroberflächensymbolklasse](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html). Wenn Sie einen Wert für das Symbol und die Bildeigenschaften angeben, wird das Bild verwendet.
@@ -55,8 +55,8 @@ Konfigurieren Sie das Benutzeroberflächenmodul contexthub.base mithilfe eines J
 * **list:** ein Array von Elementen, die beim Klicken auf das UI-Modul als Liste in einem Popover angezeigt werden. Wenn Sie diesen Artikel einschließen, schließen Sie popoverTemplate nicht ein. Der Wert ist ein Array von Objekten mit den folgenden Schlüsseln:
 
    * title: Der für dieses Element anzuzeigende Text
-   * image: (Optional) Eine URL zu einem Bild, das links angezeigt werden soll
-   * Symbol: (Optional) Eine CUI-Symbolklasse, die links angezeigt werden soll. ignoriert , wenn ein Bild angegeben ist
+   * image: (optional) Eine URL zu einem Bild, das links angezeigt werden soll
+   * icon: (optional) Eine CUI-Symbolklasse, die links angezeigt werden soll; wird ignoriert, wenn ein Bild angegeben ist
    * selected: (optional) Ein boolescher Wert, der angibt, ob dieses Element als ausgewählt angezeigt werden soll (true=ausgewählt). Standardmäßig werden ausgewählte Elemente in Fettschrift angezeigt. Verwenden Sie eine `listType`-Eigenschaft, um andere Erscheinungen zu konfigurieren (siehe unten).
 
 * **listType:** Der für Popover-Listenelemente zu verwendende Stil. Verwenden Sie einen der folgenden Werte:
@@ -183,7 +183,7 @@ Die Quelle des Benutzeroberflächenmoduls befindet sich unter /libs/granite/cont
 
 ### Konfiguration {#configuration-5}
 
-Instanzen des Benutzeroberflächenmoduls contexthub.screen-orientation benötigen keinen Wert für die Detailkonfiguration. Der folgende JSON-Text repräsentiert die Standardkonfiguration des Moduls. Beachten Sie, dass die `clickable`-Eigenschaft standardmäßig `false` ist. Wenn Sie die Standardkonfiguration überschreiben, um `clickable` auf `true` zu setzen, wird beim Klicken auf das Modul ein Popup angezeigt, in dem Sie die Ausrichtung auswählen können.
+Instanzen des Benutzeroberflächenmoduls contexthub.screen-orientation benötigen keinen Wert für die Detailkonfiguration. Der folgende JSON-Text repräsentiert die Standardkonfiguration des Moduls. Die `clickable` Eigenschaft ist `false` Standardmäßig. Wenn Sie die Standardkonfiguration überschreiben, um `clickable` auf `true` zu setzen, wird beim Klicken auf das Modul ein Popup angezeigt, in dem Sie die Ausrichtung auswählen können.
 
 ```xml
 {
@@ -199,7 +199,7 @@ Instanzen des Benutzeroberflächenmoduls contexthub.screen-orientation benötige
 
 ## Benutzeroberflächenmodultyp contexthub.tagcloud {#contexthub-tagcloud-ui-module-type}
 
-Das Benutzeroberflächenmodul contexthub.tagcloud zeigt Informationen zu Tags an. Auf der Symbolleiste zeigt das UI-Modul die Anzahl der Tags an. Das Popup zeigt eine Tagcloud und eine Texbox zum Hinzufügen neuer Tags an. Das UI-Modul erhält Informationen von einem ContextHub-Store namens &quot;tagcloud&quot;, der auf dem [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) Store-Kandidat.
+Das Benutzeroberflächenmodul contexthub.tagcloud zeigt Informationen zu Tags an. Auf der Symbolleiste zeigt das UI-Modul die Anzahl der Tags an. Das Popup zeigt eine Tagcloud und ein Texbox zum Hinzufügen neuer Tags an. Das UI-Modul erhält Informationen von einem ContextHub-Store namens &quot;tagcloud&quot;, der auf dem [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) Store-Kandidat.
 
 ![chlimage_1-82](assets/chlimage_1-82a.png)
 
@@ -223,7 +223,7 @@ Für Instanzen des Benutzeroberflächenmoduls contexthub.tagcloud ist kein Wert 
 
 ## UI-Modultyp granite.profile {#granite-profile-ui-module-type}
 
-Das ContextHub-Benutzeroberflächenmodul granite.profile zeigt den Anzeigenamen des aktuellen Benutzers an. Das Popup-Fenster zeigt den Anmeldenamen des Benutzers an und ermöglicht es Ihnen, den Wert des Anzeigenamens zu ändern. Das UI-Modul erhält Informationen von einem ContextHub-Store namens Profile, der auf dem Store-Kandidaten [granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) basiert.
+Das ContextHub-Benutzeroberflächenmodul granite.profile zeigt den Anzeigenamen des aktuellen Benutzers an. Das Popup-Fenster zeigt den Anmeldenamen der Benutzenden an und ermöglicht es Ihnen, den Wert des Anzeigenamens zu ändern. Das UI-Modul erhält Informationen von einem ContextHub-Store namens Profile, der auf dem Store-Kandidaten [granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) basiert.
 
 ![chlimage_1-83](assets/chlimage_1-83a.png)
 

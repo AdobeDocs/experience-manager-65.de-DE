@@ -1,19 +1,15 @@
 ---
 title: AEM Brackets-Erweiterung
-seo-title: AEM Brackets Extension
 description: Erfahren Sie, wie Sie die Adobe Experience Manager-Erweiterung für Brackets verwenden.
-seo-description: null
-uuid: 2f0dfa42-eb34-44ae-90eb-b5f321c03b79
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 65%
+source-wordcount: '935'
+ht-degree: 61%
 
 ---
 
@@ -21,7 +17,7 @@ ht-degree: 65%
 
 ## Übersicht {#overview}
 
-Die AEM Brackets-Erweiterung bietet einen reibungslosen Workflow für die Bearbeitung von AEM-Komponenten und Client-Bibliotheken und nutzt die Leistungsfähigkeit des [Brackets](https://brackets.io/)-Code-Editors, der den Zugriff auf Photoshop-Dateien und -Ebenen über den Code-Editor ermöglicht. Die durch die Erweiterung gebotene einfache Synchronisation (kein Maven oder File Vault erforderlich) erhöht die Effizienz der Entwickler und hilft auch Frontend-Entwicklern mit begrenztem AEM-Wissen, an Projekten teilzunehmen. Diese Erweiterung bietet auch Unterstützung für die [HTML Template Language (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de), die JSP die Komplexität nimmt, um die Komponentenentwicklung einfacher und sicherer zu machen.
+Die AEM Brackets-Erweiterung bietet einen reibungslosen Arbeitsablauf zum Bearbeiten AEM Komponenten und Client-Bibliotheken und nutzt die Leistungsfähigkeit des [Brackets](https://brackets.io/) Code-Editor, der den Zugriff von im Code-Editor auf Photoshop-Dateien und -Ebenen ermöglicht. Die durch die Erweiterung gebotene einfache Synchronisation (kein Maven oder File Vault erforderlich) erhöht die Effizienz der Entwickler und hilft auch Frontend-Entwicklern mit begrenztem AEM-Wissen, an Projekten teilzunehmen. Diese Erweiterung bietet auch Unterstützung für die [HTML Template Language (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de), die JSP die Komplexität nimmt, um die Komponentenentwicklung einfacher und sicherer zu machen.
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 
@@ -71,7 +67,7 @@ Das Projekt muss mindestens Folgendes enthalten:
 
 1. a `jcr_root` Ordner (z. B. `myproject/jcr_root`)
 
-1. a `filter.xml` -Datei (z. B. `myproject/META-INF/vault/filter.xml`); für weitere Details zur Struktur der `filter.xml` Datei finden Sie unter [Definition von Workspace-Filtern](https://jackrabbit.apache.org/filevault/filter.html).
+1. a `filter.xml` -Datei (z. B. `myproject/META-INF/vault/filter.xml`); für weitere Details zur Struktur der `filter.xml` -Datei sehen Sie die [Definition von Workspace-Filtern](https://jackrabbit.apache.org/filevault/filter.html).
 
 Im Menü **Datei** von Brackets wählen Sie **Ordner öffnen...** und wählen Sie entweder den Ordner `jcr_root` oder den übergeordneten Projektordner.
 
@@ -127,7 +123,7 @@ Die AEM Brackets-Erweiterung verfügt über ein Benachrichtigungssymbol in der S
 * gelb - einige der Dateien wurden nicht synchronisiert
 * rot - keine der Dateien wurde synchronisiert
 
-Wenn Sie auf das Benachrichtigungssymbol klicken, wird das Dialogfeld Synchronisierungsstatus-Bericht geöffnet, in dem alle Status für jede synchronisierte Datei aufgelistet werden.
+Wenn Sie auf das Benachrichtigungssymbol klicken, wird das Dialogfeld Synchronisierungsstatus -Bericht geöffnet, in dem alle Status für jede synchronisierte Datei aufgelistet sind.
 
 ![chlimage_1-58](assets/chlimage_1-58a.png)
 

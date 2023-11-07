@@ -11,10 +11,10 @@ topic-tags: best-practices
 discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 45%
+source-wordcount: '781'
+ht-degree: 46%
 
 ---
 
@@ -84,7 +84,7 @@ Im Folgenden finden Sie eine Liste der Empfehlungen von Product Management für 
     </ol> <p>In einer zweiten Phase:</p>
     <ol>
      <li>Aktualisieren Sie Ihre Komponentendialogfelder, um das Coral 3-Dialogfeldformat zu verwenden. Adobe empfiehlt die Verwendung der <a href="/help/sites-developing/modernization-tools.md">AEM Modernisierungs-Tools</a> , um die Komponenten zu aktualisieren.</li>
-     <li>Konfigurieren Sie ContextHub (ersetzt ClientContext) und aktualisieren Sie die Seitenvorlagen für die Anwendung von ContextHub. Beachten Sie, dass der ContextHub über einen Kompatibilitätsmodus verfügt, der das Laden benutzerdefinierter ClientContext-Stores ermöglicht.</li>
+     <li>Konfigurieren Sie ContextHub (ersetzt ClientContext) und aktualisieren Sie die Seitenvorlagen für die Anwendung von ContextHub. Der ContextHub verfügt über einen Kompatibilitätsmodus, der das Laden benutzerdefinierter ClientContext-Stores ermöglicht.</li>
     </ol> </td>
   </tr>
   <tr>

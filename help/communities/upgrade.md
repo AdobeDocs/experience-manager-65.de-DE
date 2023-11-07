@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
-source-git-commit: 066a61a332aa620078740d36bd7f8689282fbf14
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '621'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Bei der Installation eines neuen Communities Feature Packs in einer mit MSRP kon
 
 1. Installieren Sie die [neueste Feature Pack](/help/communities/deploy-communities.md#latestfeaturepack).
 1. Installieren Sie die [aktuelle Solr-Konfigurationsdateien](/help/communities/msrp.md#upgrading).
-1. MSRP neu indizieren - siehe Abschnitt [MSRP-Reindex-Tool](/help/communities/msrp.md#msrp-reindex-tool).
+1. MSRP neu indizieren - siehe Abschnitt [MSRP-Neuindizierungs-Tool](/help/communities/msrp.md#msrp-reindex-tool).
 
 ## Upgrade von AEM 6.0 {#upgrading-from-aem}
 
@@ -40,7 +40,7 @@ Wenn bereits vorhandene UGC beibehalten werden müssen, hängt die Vorgehensweis
 
 ### Adobe Cloud Storage {#adobe-cloud-storage}
 
-Wenn die aktualisierte Site für die Verwendung von Adobe Cloud Storage konfiguriert wurde, kann es (falsch) so aussehen, als wäre alles UGC verloren gegangen, da die SRP-Methoden die bereits vorhandene UGC nicht am alten Speicherort finden können.
+Wenn die aktualisierte Site für die Verwendung des Adobe-Cloud-Speichers konfiguriert wurde, kann es (falsch) so aussehen, als wäre alles UGC verloren gegangen, da die SRP-Methoden die bereits vorhandene benutzergenerierte Seite am alten Speicherort nicht finden können.
 
 Somit besteht die Möglichkeit, ASRP anzuweisen, `AEM 6.0 compatability-mode` , um auf UGC zuzugreifen.
 
@@ -61,8 +61,7 @@ Für alle AEM 6.3 Autoren- und Veröffentlichungsinstanzen:
 
          * Wählen Sie **Speichern** aus
 
-      ![utilities](assets/utilities.png)
-
+     ![utilities](assets/utilities.png)
 
 ### On-Premise-Speicher {#on-premise-storage}
 
@@ -83,7 +82,7 @@ Siehe auch [Verwenden von Maven für Communities](/help/communities/maven.md).
 
 Die [Social-Komponenten-Framework](/help/communities/scf.md) (SCF) verwendet die [HandlebarsJS](https://handlebarsjs.com/) (HBS) Vorlagensprache anstelle von Java Server Pages (JSP), die vor AEM 6.0 verwendet wurden.
 
-In AEM 6.0 blieben die JSP-Komponenten neben den neuen HBS-Framework-Komponenten am selben Speicherort, wobei sich die HBS-Komponenten in der Regel in Unterordnern namens &quot;hbs&quot;befanden.
+In AEM 6.0 blieben die JSP-Komponenten neben den neuen HBS-Framework-Komponenten am selben Speicherort, wobei die HBS-Komponenten in der Regel in Unterordnern namens &quot;hbs&quot;enthalten waren.
 
 Ab AEM 6.1 wurden die JSP-Komponenten vollständig entfernt. Für Communities wird empfohlen, die gesamte Verwendung von JSP-Komponenten durch SCF-Komponenten zu ersetzen.
 
@@ -97,7 +96,7 @@ Zusätzlich zum Verschieben von UGC aus früheren Versionen ist es auch möglich
 
 Grundsätzlich gibt es drei Generationen von Communities-Komponenten:
 
-**Gen 1**: Ungefähr zwischen CQ 5.4 und AEM 5.6.0 sind dies die **collab** Komponenten, die benutzergenerierte Inhalte im lokalen Repository mithilfe der Replikation als Möglichkeit zur plattformübergreifenden Synchronisierung von benutzergenerierten Inhalten gespeichert haben. Weitere Unterschiede betreffen die Implementierung mit Java Server Pages (JSP) sowie die Blog-Funktion, die nur aus der Authoring-Umgebung besteht.
+**Gen 1**: Ungefähr CQ 5.4 bis AEM 5.6.0. Dies sind die **collab** Komponenten, die benutzergenerierte Inhalte im lokalen Repository mithilfe der Replikation als Möglichkeit zur plattformübergreifenden Synchronisierung von benutzergenerierten Inhalten gespeichert haben. Weitere Unterschiede betreffen die Implementierung mit Java Server Pages (JSP) und die Blog-Funktion, die nur aus der Autorenumgebung besteht.
 
 **Gen 2**: Von AEM 5.6.1 bis AEM 6.1 ist dies eine Mischung aus **collab** und **social** Komponenten. Mit AEM 6.0 wurde die neue [Social-Komponenten-Framework](/help/communities/scf.md) (SCF) und AEM 6.2 wurde eine [gängiger UGC-Speicher](/help/communities/working-with-srp.md) wo auf benutzergenerierte Inhalte über eine [Speicherressourcenanbieter](/help/communities/srp.md) (SRP).
 

@@ -4,10 +4,10 @@ description: In diesem Artikel werden die Konzepte einer SPA vorgestellt und die
 topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1965'
-ht-degree: 95%
+source-wordcount: '1950'
+ht-degree: 88%
 
 ---
 
@@ -44,9 +44,9 @@ Die exemplarische Anleitung basiert auf AEM-Standardfunktionen und der beispielh
 
 >[!CAUTION]
 >
->Dieses Dokument verwendet die [WKND Spa Project-Anwendung](https://github.com/adobe/aem-guides-wknd-spa) nur zu Demonstrationszwecken. Sie sollte nicht für Projektaufgaben verwendet werden.
+>Dieses Dokument verwendet die [WKND Spa Project-Anwendung](https://github.com/adobe/aem-guides-wknd-spa) nur zu Demonstrationszwecken. Verwenden Sie nicht für Projektarbeiten.
 >
->Jedes AEM-Projekt sollte den [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) nutzen, der SPA-Projekte mit React oder Angular unterstützt und das SPA-SDK nutzt.
+>Jedes AEM Projekt sollte [AEM Projektarchetyp,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) unterstützt SPA Projekte mit React oder Angular und verwendet das SPA SDK.
 
 ### Was ist eine SPA? {#what-is-a-spa}
 
@@ -74,8 +74,8 @@ Da SPAs schneller, nahtloser und eher wie ein natives Programm sind, sind sie ni
 
 **Entwickler**
 
-* Entwickler wünschen sich eine saubere Trennung zwischen Inhalten und Präsentation.
-* Eine saubere Trennung macht das System leichter erweiterbar und erlaubt eine unabhängige Frontend-Entwicklung.
+* Entwickelnde wünschen sich eine saubere Trennung zwischen Inhalten und Präsentation.
+* Eine saubere Trennung macht das System erweiterbarer und ermöglicht eine unabhängige Front-End-Entwicklung.
 
 ### Wie funktioniert eine SPA? {#how-does-a-spa-work}
 
@@ -97,7 +97,7 @@ Durch das Client-seitige Rendern reagieren Seitenelemente schneller; Interaktion
 
 ## Inhaltsbearbeitungserlebnis mit SPA {#content-editing-experience-with-spa}
 
-Wenn eine SPA zur Nutzung des AEM-SPA-Editors konfiguriert ist, merkt der Inhaltsautor beim Bearbeiten und Erstellen von Inhalten keinen Unterschied. Es stehen gängige AEM-Funktionen zur Verfügung; am Workflow des Autors sind keine Änderungen erforderlich.
+Wenn ein SPA für die Verwendung des AEM SPA-Editors erstellt wurde, merkt der Inhaltsautor beim Bearbeiten und Erstellen von Inhalten keinen Unterschied. Es stehen gängige AEM-Funktionen zur Verfügung; am Workflow des Autors keine Änderungen erforderlich sind.
 
 1. Bearbeiten Sie die WKND-SPA-Projekt-App in AEM.
 
@@ -109,7 +109,7 @@ Wenn eine SPA zur Nutzung des AEM-SPA-Editors konfiguriert ist, merkt der Inhalt
 
    ![Schritt 2](assets/spa-walkthrough-step-2.png)
 
-1. Bearbeiten Sie den Inhalt in AEM wie gewohnt und beachten Sie, dass die Änderungen beibehalten werden.
+1. Bearbeiten Sie den Inhalt wie gewohnt in AEM. Die Änderungen werden beibehalten.
 
    ![Schritt 3](assets/spa-walkthrough-step-3.png)
 
@@ -172,7 +172,7 @@ Der nächste Abschnitt, [Laden einer SPA-Anwendung](#loading-an-spa-application)
    ![Schritt 1](assets/spa-walkthrough-step-1-1.png)
 
 1. Verwenden Sie das integrierte Tool Ihres Browsers, um die Quelle der Seiten anzuzeigen.
-1. Beachten Sie, dass der Inhalt der Quelle sehr begrenzt ist.
+1. Der Inhalt der Quelle ist extrem begrenzt.
 
    * Die Seite enthält im Hauptteil keine Inhalte. Sie besteht hauptsächlich aus Stylesheets und einem Aufruf an verschiedene Skripte wie `clientlib-react.min.js`.
    * Diese Skripte sind die Hauptelemente des Programms und für das Rendern sämtlicher Inhalte verantwortlich.
@@ -183,7 +183,7 @@ Der nächste Abschnitt, [Laden einer SPA-Anwendung](#loading-an-spa-application)
 
 1. Wechseln Sie zur Registerkarte **Netzwerk** der Entwickler-Tools und laden Sie die Seite neu.
 
-   Beachten Sie beim Ignorieren von Bildanforderungen, dass die primären Ressourcen, die für die Seite geladen werden, die Seite selbst, CSS, das React-JavaScript, seine Abhängigkeiten sowie JSON-Daten für die Seite sind.
+   Beim Ignorieren von Bildanforderungen sind die primären Ressourcen, die für die Seite geladen werden, die Seite selbst, CSS, das React-JavaScript, seine Abhängigkeiten und JSON-Daten für die Seite.
 
    ![Schritt 5](assets/spa-walkthrough-step-1-5.png)
 
@@ -213,7 +213,7 @@ Der nächste Abschnitt, [Laden einer SPA-Anwendung](#loading-an-spa-application)
 
 ### Interaktion mit dem SPA-Editor {#interaction-with-the-spa-editor}
 
-Mithilfe des exemplarischen WKND-SPA-Projekt-Programms wird deutlich, wie sich die App verhält und beim Veröffentlichen geladen wird. Dabei kommen Inhalts-Services für die JSON-Inhaltsbereitstellung sowie das asynchrone Laden von Ressourcen zum Einsatz.
+Mithilfe der WKND SPA Project-Beispielanwendung ist klar, wie sich die App verhält und beim Veröffentlichen geladen wird. Dazu werden Inhaltsdienste für die Bereitstellung von JSON-Inhalten und das asynchrone Laden von Ressourcen verwendet.
 
 Darüber hinaus ist die Inhaltserstellung mit einem SPA-Editor für den Inhaltsautor in AEM nahtlos.
 
@@ -225,7 +225,7 @@ Im folgenden Abschnitt werden wir uns den Vertrag ansehen, der es dem SPA-Editor
 
 1. Überprüfen Sie mithilfe der integrierten Entwickler-Tools Ihres Browsers den Inhalt der Seite. Wählen Sie mit dem Auswahl-Tool eine bearbeitbare Komponente auf der Seite aus und zeigen Sie die Elementdetails an.
 
-   Beachten Sie, dass die Komponente über ein neues Datenattribut verfügt (`data-cq-data-path`).
+   Die Komponente verfügt über ein neues Datenattribut `data-cq-data-path`.
 
    ![Schritt 2](assets/spa-walkthrough-step-2-2.png)
 
@@ -235,7 +235,7 @@ Im folgenden Abschnitt werden wir uns den Vertrag ansehen, der es dem SPA-Editor
 
    Dieser Pfad ermöglicht ein Abrufen und Verknüpfen des Konfigurationsobjekts mit Bearbeitungskontext der einzelnen Komponenten.
 
-   Dies ist das einzige Markup-Attribut, das erforderlich ist, damit der Editor das Element als bearbeitbare Komponente innerhalb der SPA erkennen kann. Auf Grundlage dieses Attributs bestimmt der SPA-Editor, welche bearbeitbare Konfiguration mit der Komponente verknüpft ist, sodass der richtige Rahmen, die richtige Symbolleiste usw. geladen werden.
+   Dies ist das einzige Markup-Attribut, das erforderlich ist, damit der Editor das Element als bearbeitbare Komponente innerhalb der SPA erkennen kann. Basierend auf diesem Attribut bestimmt der SPA Editor, welche bearbeitbare Konfiguration mit der Komponente verknüpft ist, sodass der richtige Frame, die richtige Symbolleiste usw. geladen wird.
 
    Einige spezifische Klassennamen werden auch für die Kennzeichnung von Platzhaltern und für die Drag-and-Drop-Funktion von Assets hinzugefügt.
 
@@ -252,4 +252,4 @@ Da Sie nun das SPA-Bearbeitungserlebnis in AEM kennen und die Beziehung einer SP
 
 * [Erste Schritte mit SPAs in AEM](/help/sites-developing/spa-getting-started-react.md) zeigt, wie eine einfache SPA für die Zusammenarbeit mit dem SPA-Editor in AEM erstellt wird.
 * [SPA-Editor – Überblick](/help/sites-developing/spa-overview.md) vertieft das Kommunikationsmodell zwischen AEM und der SPA.
-* [Entwicklung von SPAs für AEM](/help/sites-developing/spa-architecture.md) beschreibt, wie Frontend-Entwickler damit beauftragt werden können, eine SPA für AEM zu entwickeln, und wie SPAs mit der Architektur von AEM interagieren.
+* [Entwickeln von SPAs für AEM](/help/sites-developing/spa-architecture.md) beschreibt, wie Front-End-Entwickelnde damit beauftragt werden können, eine SPA für AEM zu entwickeln, und wie SPAs mit der Architektur von AEM interagieren.

@@ -1,20 +1,16 @@
 ---
 title: Einstiegsseiten
-seo-title: Landing Pages
 description: Mit der Funktion für Einstiegsseiten können Sie schnell und einfach ein Design und Inhalte direkt in eine AEM-Seite importieren. Web-Entwickelnde können das HTML und zusätzliche Assets vorbereiten, die als komplette Seite oder nur als Teil einer Seite importiert werden können.
-seo-description: The landing pages feature allows quick and easy importing of a design and content right into an AEM page. A web developer can prepare the HTML and additional assets that can be imported as a full page or only a part of a page.
-uuid: b294c43f-63ae-4b5b-bef0-04566e350b63
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3329'
-ht-degree: 59%
+source-wordcount: '3323'
+ht-degree: 57%
 
 ---
 
@@ -41,7 +37,7 @@ Die Vorbereitung des Designpakets für den Import wird im Abschnitt [Erweitern u
 
 ## Was sind Landingpages? {#what-are-landing-pages}
 
-Einstiegsseiten sind Websites mit einer oder mehreren Seiten, die den „Endpunkt“ einer Marketingkampagne darstellen – beispielsweise mit E-Mail, Adwords/Bannern oder sozialen Medien. Eine Landingpage kann verschiedenen Zwecken dienen, hat jedoch alle eine gemeinsame Sache - der Besucher sollte eine Aufgabe erfüllen und den Erfolg einer Landingpage definieren.
+Landingpages sind einzelne oder mehrseitige Websites, die den &quot;Endpunkt&quot;einer Marketing-Zielgruppe darstellen, z. B. mit E-Mail, Adwords/Bannern und sozialen Medien. Eine Landingpage kann verschiedenen Zwecken dienen, hat jedoch alle eine gemeinsame Sache - der Besucher sollte eine Aufgabe erfüllen und den Erfolg einer Landingpage definieren.
 
 Die Landingpage-Funktion in AEM ermöglicht es Marketingexperten, mit Web-Designern in Agenturen oder internen Kreativteams zusammenzuarbeiten, um Seitenentwürfe zu erstellen, die einfach in AEM importiert und von Marketing-Experten bearbeitbar sind und unter der gleichen Verwaltung wie die anderen AEM veröffentlicht werden können.
 
@@ -351,13 +347,13 @@ Adobe empfiehlt die Verwendung des Design Importers in einer Staging-Instanz. Au
 
 ### Erstellen einer Importtool-Seite {#creating-an-importer-page}
 
-Damit Sie Ihr Einstiegsseitendesign importieren können, müssen Sie eine Importtool-Seite erstellen. Dies ist z. B. unter einer Kampagne möglich. Mit der Vorlage „Importtool-Seite“ können Sie Ihre komplette HTML-Einstiegsseite importieren. Die Seite enthält ein Dropdown-Feld, in das das Designpaket der Landingpage per Drag &amp; Drop importiert werden kann.
+Bevor Sie Ihren Entwurf für die Einstiegsseite importieren können, müssen Sie eine Importtool-Seite erstellen, z. B. unter einer Kampagne. Mit der Vorlage „Importtool-Seite“ können Sie Ihre komplette HTML-Einstiegsseite importieren. Die Seite enthält ein Dropdown-Feld, in das das Designpaket der Landingpage per Drag &amp; Drop importiert werden kann.
 
 >[!NOTE]
 >
 >Standardmäßig kann eine Importtool-Seite nur unter Kampagnen erstellt werden. Sie können diese Vorlage jedoch auch überlagern, um eine Landingpage unter `/content/mysite`.
 
-So erstellen Sie eine neue Landingpage:
+So erstellen Sie eine Landingpage:
 
 1. Navigieren Sie zu **Websites** Konsole.
 1. Wählen Sie Ihre Kampagne im linken Bereich aus.
@@ -417,7 +413,7 @@ Wenn Sie das Designpaket importieren, **Design löschen** und **Importierte Zip 
 
 ### Herunterladen des importierten Designpakets {#downloading-the-imported-design-package}
 
-Beim Herunterladen der Zip-Datei können Sie aufzeichnen, welche Zip-Datei mit einer bestimmten Einstiegsseite importiert wurde. Beachten Sie, dass auf einer Seite vorgenommene Änderungen nicht der ZIP-Datei hinzugefügt werden.
+Beim Herunterladen der Zip-Datei können Sie aufzeichnen, welche Zip-Datei mit einer bestimmten Einstiegsseite importiert wurde. Auf einer Seite vorgenommene Änderungen werden der Zip-Datei nicht hinzugefügt.
 
 Um das importierte Designpaket herunterzuladen, klicken Sie auf **Zip herunterladen** in der Symbolleiste der Einstiegsseite.
 
@@ -439,7 +435,7 @@ Wenn Sie die Einstiegsseite entfernen, können Sie die Inhaltsänderungen lösch
 
 >[!NOTE]
 >
->Wenn Sie sich entscheiden, sämtliche Inhaltsänderungen zu löschen, gehen sämtliche Änderungen, die Sie an der importierten Einstiegsseite vorgenommen haben, sowie sämtliche Seiteneigenschaften verloren, wenn Sie auf **Entfernen** klicken.
+>Wenn Sie die Inhaltsänderungen entfernen, gehen alle Änderungen, die Sie auf der importierten Landingpage vorgenommen haben, sowie alle Seiteneigenschaften verloren, wenn Sie auf **Löschen**.
 
 ### Ändern und Hinzufügen von Komponenten auf einer Landingpage {#modifying-and-adding-components-on-a-landing-page}
 

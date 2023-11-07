@@ -2,10 +2,10 @@
 title: Verwalten von Übersetzungsprojekten
 description: Erfahren Sie, wie Sie Übersetzungsprojekte in Adobe Experience Manager verwalten.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 9438868191961404e9e18cb0dd2e844985ac9db0
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3588'
-ht-degree: 68%
+source-wordcount: '3578'
+ht-degree: 64%
 
 ---
 
@@ -123,7 +123,7 @@ Nachdem Sie ein Übersetzungsprojekt erstellt haben, können Sie im Bereich Ress
 
 Wenn Sie einem Übersetzungsprojekt Seiten hinzufügen, werden die Seiten in einen neuen Übersetzungsauftrag einbezogen. Sie können auch [Seiten zu einem vorhandenen Auftrag hinzufügen](#adding-pages-assets-to-a-translation-job).
 
-Wie beim Erstellen eines neuen Projekts werden beim Hinzufügen von Seiten bei Bedarf Kopien der Seiten zu einem Launch hinzugefügt, um das Überschreiben vorhandener Sprachkopien zu vermeiden. (Siehe [Erstellen von Übersetzungsprojekten für bestehende Sprachkopien](#performing-initial-translations-and-updating-existing-translations).)
+Wie beim Erstellen eines Projekts werden beim Hinzufügen von Seiten bei Bedarf Kopien der Seiten zu einem Launch hinzugefügt, um das Überschreiben vorhandener Sprachkopien zu vermeiden. (Siehe [Erstellen von Übersetzungsprojekten für bestehende Sprachkopien](#performing-initial-translations-and-updating-existing-translations).)
 
 1. Verwenden Sie die Sites-Konsole, um die Seite auszuwählen, die Sie den Übersetzungsprojekten hinzufügen.
 
@@ -234,7 +234,7 @@ Wenn ein Projekt im Bereich Ressourcen einer Seite erstellt wird, werden diese E
 
 ## Überwachen des Status von Übersetzungsaufträgen {#monitoring-the-status-of-a-translation-job}
 
-Die Kachel Übersetzungsauftrag eines Übersetzungsprojekts enthält den Status eines Übersetzungsauftrags sowie die Anzahl der Seiten und Assets im Auftrag.
+Die Kachel &quot;Übersetzungsauftrag&quot;eines Übersetzungsprojekts enthält den Status eines Übersetzungsauftrags sowie die Anzahl der Seiten und Assets im Auftrag.
 
 ![chlimage_1-259](assets/chlimage_1-259.png)
 
@@ -292,7 +292,7 @@ Im folgenden Verfahren wird das Fälligkeitsdatum für einen Übersetzungsauftra
 
 Berechnen Sie den Umfang eines Übersetzungsauftrags, um eine Kostenschätzung für die Übersetzung von Ihrem Übersetzungsdienstleister zu erhalten. Bei der Umfangsberechnung eines Auftrags werden Quelldateien an den Übersetzungsanbieter gesendet, der den Text mit seinem Pool an gespeicherten Übersetzungen (Translation Memory) vergleicht. In der Regel handelt es sich beim Umfang um die Anzahl der zu übersetzenden Wörter.
 
-Wenden Sie sich an Ihren Übersetzungsanbieter, um weitere Informationen zu den Scoping-Ergebnissen zu erhalten.
+Wenden Sie sich an Ihren Übersetzungsanbieter, um weitere Informationen zu den Ergebnissen der Umfangsberechnung zu erhalten.
 
 >[!NOTE]
 >
@@ -412,7 +412,7 @@ Füllen Sie Ihre Sprachkopie so, dass sie Inhalte aus der Stammsprache enthält,
 
 ## Verschieben oder Umbenennen einer Quellseite {#move-source}
 
-Wenn eine bereits übersetzte Quellseite [umbenannt oder verschoben](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page) werden muss, wird bei erneuter Übersetzung der Seite nach dem Verschieben eine neue Sprachkopie auf der Basis des neuen Seitennamens/Speicherorts erstellt. Die alte Sprachkopie mit dem vorherigen Namen/Speicherort bleibt bestehen. Um dies zu verhindern, können Sie die Funktion zum Aktualisieren der Sprachkopie nach dem Verschieben verwenden:
+Wenn eine bereits übersetzte Quellseite [umbenannt oder verschoben](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), wodurch die Seite nach dem Verschieben erneut übersetzt wird, wird eine Sprachkopie erstellt, die auf dem neuen Seitennamen/Speicherort basiert. Die alte Sprachkopie, die auf dem vorherigen Namen/Speicherort basiert, ist noch vorhanden. Um dies zu verhindern, können Sie die Funktion zum Aktualisieren der Sprachkopie nach dem Verschieben verwenden:
 
 1. Verschieben Sie eine Seite mit einer Sprachkopie.
 1. Wählen Sie den Sprach-Copy-Stamm aus.
@@ -423,9 +423,9 @@ Wenn eine bereits übersetzte Quellseite [umbenannt oder verschoben](/help/sites
 1. Klicken Sie auf **Aktualisieren**. A [Launch](/help/sites-authoring/launches-promoting.md) wird erstellt.
 1. Navigieren Sie zum gewünschten Sprachstamm und wählen Sie ihn aus.
 1. Verwenden der **Verweise** Bereich, wählen Sie **Launches**.
-1. Klicken Sie auf den soeben erstellten Launch und dann auf **Launch bewerben**.
+1. Klicken Sie auf den erstellten Launch und klicken Sie auf **Launch bewerben**.
 
-Jetzt wurden die Quellseite sowie die zugehörige Sprachkopie verschoben.
+Jetzt wurde die Quellseite und die zugehörige Sprachkopie verschoben.
 
 ## Erstellen von Übersetzungsprojekten mithilfe der Projektkonsole {#creating-a-translation-project-using-the-projects-console}
 
@@ -450,7 +450,7 @@ Wenn Sie ein Übersetzungsprojekt manuell erstellen, müssen Sie neben den [grun
 
 ## Exportieren von Übersetzungsaufträgen {#exporting-a-translation-job}
 
-Sie können die Inhalte eines Übersetzungsauftrags herunterladen, um sie z. B. an einen Übersetzungsanbieter zu senden, der nicht über einen Connector in AEM integriert ist, oder um die Inhalte zu überprüfen.
+Sie können den Inhalt eines Übersetzungsauftrags herunterladen, um ihn beispielsweise an einen Übersetzungsanbieter zu senden, der nicht über einen Connector mit AEM integriert ist, oder um den Inhalt zu überprüfen.
 
 1. Klicken oder tippen Sie im Dropdown-Menü der Kachel Übersetzungsauftrag auf Exportieren .
 1. Klicken oder tippen Sie im Dialogfeld &quot;Exportieren&quot;auf &quot;Exportierte Datei herunterladen&quot;und speichern Sie die Datei bei Bedarf im Webbrowser-Dialogfeld.
@@ -458,7 +458,7 @@ Sie können die Inhalte eines Übersetzungsauftrags herunterladen, um sie z. B.
 
 ## Importieren von Übersetzungsaufträgen {#importing-a-translation-job}
 
-Sie können übersetzte Inhalte in AEM importieren, zum Beispiel wenn Ihr Übersetzungsanbieter die Inhalte an Sie sendet, da er nicht über einen Connector in AEM integriert ist.
+Sie können übersetzte Inhalte beispielsweise in AEM importieren, wenn Ihr Übersetzungsanbieter sie an Sie sendet, da sie nicht über einen Connector mit AEM integriert sind.
 
 1. Klicken oder tippen Sie im Dropdown-Menü der Kachel Übersetzungsauftrag auf Importieren.
 1. Wählen Sie im Dialogfeld des Webbrowsers die zu importierende Datei aus.

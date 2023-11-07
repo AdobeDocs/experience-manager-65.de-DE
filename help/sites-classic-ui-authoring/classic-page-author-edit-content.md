@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1832'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -79,7 +79,7 @@ So fügen Sie eine neue Komponente ein:
 
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
-1. Sowohl im Sidekick als auch in der Symbolleiste **Neue Komponente einfügen** wird eine Liste der verfügbaren Komponenten (Absatztypen) angezeigt. Diese Liste kann gegliedert sein (z. B. in „Allgemein“, „Spalten“ usw.) und Sie können die Gliederungen nach Bedarf aus- oder einblenden.
+1. Sowohl im Sidekick als auch in der Symbolleiste **Neue Komponente einfügen** wird eine Liste der verfügbaren Komponenten (Absatztypen) angezeigt. Diese können in verschiedene Abschnitte unterteilt werden (z. B. &quot;Allgemein&quot;, &quot;Spalten&quot;usw.), die bei Bedarf erweitert werden können.
 
    Abhängig von Ihrer Produktionsumgebung können diese Optionen unterschiedlich sein. Ausführliche Informationen zu Komponenten finden Sie unter [Standardkomponenten](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
 
@@ -87,9 +87,9 @@ So fügen Sie eine neue Komponente ein:
 
 ### Einfügen einer Komponente mit der Inhaltssuche {#inserting-a-component-using-the-content-finder}
 
-Sie können eine neue Komponente zur Seite hinzufügen, indem Sie ein Asset aus dem [Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder) ziehen. Dadurch wird automatisch eine neue Komponente des entsprechenden Typs erstellt, die das Asset enthält.
+Sie können eine neue Komponente zur Seite hinzufügen, indem Sie ein Asset aus dem [Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder) ziehen. Dadurch wird automatisch eine Komponente des entsprechenden Typs erstellt, die das Asset enthält.
 
-Dies gilt für folgende Asset-Typen (einige sind vom Seiten-/Absatzsystem abhängig):
+Dies gilt für folgende Asset-Typen (einige sind von der Seite/dem Absatzsystem abhängig):
 
 | Asset-Typ | Resultierender Komponententyp |
 |---|---|
@@ -177,7 +177,7 @@ Vererbte Komponenten können sich aus diversen Szenarien ergeben, wie:
 * [Verwaltung mehrerer Sites](/help/sites-administering/msm.md), auch in Kombination mit [Strukturvorlagen](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
 
 * [Launch](/help/sites-classic-ui-authoring/classic-launches.md) (wenn er auf Live Copy basiert).
-* Spezifische Komponenten, z. B. das Vererbungs-Absatzsystem in Geometrixx.
+* Bestimmte Komponenten, z. B. das geerbte Absatzsystem in Geometrixx.
 
 Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Abhängig von der Komponente kann dies über Folgendes verfügbar sein:
 

@@ -12,10 +12,10 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: a95255594ec03c152cd96df48597ced5fce4b315
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '4519'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -404,8 +404,8 @@ Experience Manager zeigt viele verschiedene Viewer-Vorgaben an, wenn Sie ein Ass
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-1. Ändern Sie in der Eigenschaft „limit“ den Wert auf die gewünschte Zahl, z. B. `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`.
-1. Wählen Sie **[!UICONTROL Alle speichern]** aus.
+1. Ändern Sie in der Eigenschaft limit die Zahl auf die gewünschte Zahl, z. B. `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
 ## Erstellen einer neuen Viewer-Vorgabe {#creating-a-new-viewer-preset}
 

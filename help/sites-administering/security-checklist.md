@@ -12,10 +12,10 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 465d3e956ecdd36eea5fe095e250652eedd4b3c5
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3005'
-ht-degree: 100%
+source-wordcount: '3004'
+ht-degree: 98%
 
 ---
 
@@ -393,7 +393,7 @@ Obwohl es nicht empfohlen wird, können Sie dies deaktivieren, falls Sie die alt
 
 ### Paket für anonyme Berechtigungs-Härtung {#anonymous-permission-hardening-package}
 
-Standardmäßig speichert AEM Systemmetadaten wie `jcr:createdBy` oder `jcr:lastModifiedBy` als Knoteneigenschaften neben regulären Inhalten im Repository. Abhängig von der Konfiguration und der Einrichtung der Zugriffskontrolle kann dies in einigen Fällen zur Offenlegung personenbezogener Daten (PII) führen, z. B. wenn solche Knoten als rohe JSON- oder XML-Dateien gerendert werden.
+Standardmäßig speichert AEM Systemmetadaten wie `jcr:createdBy` oder `jcr:lastModifiedBy` als Knoteneigenschaften neben regulären Inhalten im Repository. Abhängig von der Konfiguration und der Einrichtung der Zugriffskontrolle kann dies in einigen Fällen zur Anzeige persönlich identifizierbarer Informationen (PII) führen, z. B. wenn solche Knoten als rohe JSON- oder XML-Dateien gerendert werden.
 
 Wie alle Repository-Daten werden diese Eigenschaften durch den Oak-Autorisierungs-Stapel vermittelt. Der Zugriff auf sie sollte gemäß dem Grundsatz der geringsten Rechte eingeschränkt werden.
 
@@ -407,7 +407,7 @@ mit den Optionen vergleichen, die nach der Installation des Pakets angezeigt wer
 
 ![Nach der Installation des Pakets](/help/sites-administering/assets/after_resized.png)
 
-Weitere Informationen finden Sie in den Versionshinweisen zu Paketen.
+Weitere Informationen finden Sie in den Versionshinweisen zu Paketen .
 
 ### Verhindern von Clickjacking {#prevent-clickjacking}
 

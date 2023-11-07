@@ -1,16 +1,12 @@
 ---
 title: Entwickeln von Mobilanwendungen in AEM
-seo-title: Developing Mobile Applications in AEM
 description: Auf dieser Seite erfahren Sie, wie Sie mit der Entwicklung von Mobile Apps in AEM mit Adobe PhoneGap Enterprise beginnen.
-seo-description: Follow this page to start developing mobile application in AEM using Adobe PhoneGap Enterprise.
-uuid: d8442447-ee04-4bb2-a0d7-17dcc8979dba
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: fd7bcf17-af7e-4bd6-8137-48401d9743c5
 exl-id: cf8ba05c-6dcd-4880-b8bf-72382118cd80
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 1%
@@ -23,7 +19,7 @@ ht-degree: 1%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-AEM nutzt Adobe PhoneGap- und Adobe Publishing Solutions, mit denen Sie inhaltsreiche und anwendungsbasierte, plattformübergreifende mobile Apps erstellen und verwalten können:
+AEM verwendet Adobe PhoneGap und Adobe Publishing Solutions, um inhaltsreiche und anwendungsbasierte, plattformübergreifende mobile Apps zu erstellen und zu verwalten:
 
 * Verwalten Sie alle mobilen Apps Ihrer Unternehmen an einem Ort.
 * Überprüfen Sie Apps in Entwicklungs- und Staging-Umgebungen, ohne die Komplexität von Bereitstellungsprofilen und den zusätzlichen Aufwand zum Erstellen und Hochladen Ihrer App zur Freigabe zu haben.
@@ -56,7 +52,7 @@ Die Readme für das Starter Kit-Git-Repository enthält ein Tutorial zur Verwend
 
 ## Entwickeln für IOS 9- und HTTP-Hosts {#developing-for-ios-and-http-hosts}
 
-iOS-Entwickler sollten sich eines offenen Problems mit Cordova-Apps bewusst sein, das auf iOS 9 ausgeführt wird. Dieses Problem verhindert, dass Anfragen an unsichere Hosts (wie *http://localhost:4502*). Dieses Problem wird mit einer kommenden Version von Cordova-iOS behoben (von der Cordova CLI verwendet), aber in der Zwischenzeit gibt es zwei Problemumgehungen:
+IOS-Entwickler sollten sich eines offenen Problems mit Cordova-Apps bewusst sein, das auf iOS 9 ausgeführt wird. Dieses Problem verhindert, dass Anfragen an unsichere Hosts (wie *http://localhost:4502*). Dieses Problem wird mit einer kommenden Version von Cordova-iOS behoben (von der Cordova CLI verwendet), aber in der Zwischenzeit gibt es zwei Problemumgehungen:
 
 1. Als sofortige Problemumgehung können Sie weiterhin jeden der iOS 8-Simulatoren problemlos verwenden.
 1. Wenn Sie iOS 9 verwenden müssen, Ihre apps -Info.plist (gefunden nach der Ausführung) `cordova platform add ios` in &quot;&lt;app root=&quot;&quot;>/platforms/ios/&lt;app name=&quot;&quot;>/&lt;app name=&quot;&quot;>-Info.plist&quot;) manuell bearbeitet werden, um die folgende Eigenschaft einzuschließen:

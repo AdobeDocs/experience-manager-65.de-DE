@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1095'
 ht-degree: 97%
 
 ---
@@ -25,7 +25,7 @@ Darüber hinaus führt der AEM-Posteingang Benachrichtigungen und Aufgaben aus v
 
 Die Benutzeroberfläche des Posteingangs bietet Listen- und Kalenderansichten zum Anzeigen von Aufgaben. Sie können außerdem die Einstellungen für die Anzeige konfigurieren. Sie können Aufgaben nach verschiedenen Parametern filtern. Weitere Informationen zum Anzeigen und Filtern finden Sie unter [Ihr Posteingang](/help/sites-authoring/inbox.md).
 
-Zusammenfassend können Sie mit dem Posteingang eine neue Anwendung erstellen und zugewiesene Aufgaben verwalten.
+Zusammenfassend können Sie mit dem Posteingang eine Anwendung erstellen und zugewiesene Aufgaben verwalten.
 
 >[!NOTE]
 >

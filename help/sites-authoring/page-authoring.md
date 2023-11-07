@@ -2,10 +2,10 @@
 title: Bearbeiten von Inhaltsseiten in AEM
 description: Die Aufgaben, die beim Bearbeiten einer Inhaltsseite in Adobe Experience Manager 6.5 erforderlich sind.
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 82%
+ht-degree: 71%
 
 ---
 
@@ -38,7 +38,7 @@ Text- und Bildkomponenten können direkt auf der Webseite bearbeitet werden, ohn
 Links auf einer bearbeitbaren Seite kann ein Browser eingeblendet werden. Von hier können Sie Komponenten auf die Seite ziehen und dann bearbeiten.
 
 * **[Asset-Browser](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)**
-Links auf einer bearbeitbaren Seite kann ein Browser eingeblendet werden. Von hier können Assets auf die Seite gezogen werden, z. B. wenn Sie Assets positionieren oder Links zu anderen Seiten erstellen möchten.
+Auf der linken Seite einer bearbeitbaren Seite kann ein Browser eingeblendet werden. Von hier können Assets auf die Seite gezogen werden, z. B. um Assets zu positionieren oder Links zu anderen Seiten zu erstellen.
 
 * **Komponenten-Symbolleiste**
 Sowohl ein einfaches als auch ein langsames Doppelklick/Tippen zeigen die entsprechende Symbolleiste an (einfach für die Symbolleiste der Bearbeitung im Kontext, dann langsam doppelt für die volle Symbolleiste).

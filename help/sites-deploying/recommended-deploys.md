@@ -1,20 +1,16 @@
 ---
 title: Empfohlene Bereitstellungen
-seo-title: Recommended Deployments
 description: In diesem Artikel werden die empfohlenen Topologien für AEM beschrieben.
-seo-description: This article describes the recommended topologies for AEM.
-uuid: bc638121-c531-43eb-9ec6-3283a33519f8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 66d351e1-87f1-4006-bf8a-3cbbd33db9ed
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 57%
+source-wordcount: '1780'
+ht-degree: 55%
 
 ---
 
@@ -76,7 +72,7 @@ Die Nachteile:
 
 >[!NOTE]
 >
->Für die Cold-Standby-Bereitstellung in diesem TarMK-Beispiel müssen die primäre und die Standby-Instanz separat lizenziert werden, da eine konstante Replikation auf dem Failover-Server stattfindet. Weitere Informationen zur Lizenzierung finden Sie in den [allgemeinen Lizenzbedingungen von Adobe](https://www.adobe.com/de/legal/terms/enterprise-licensing.html).
+>Für die Cold-Standby-Bereitstellung in diesem TarMK-Beispiel müssen die primäre und die Standby-Instanz separat lizenziert werden, da eine konstante Replikation auf dem Failover-Server stattfindet. Weitere Informationen zur Lizenzierung finden Sie im [Adobe Allgemeine Lizenzbedingungen](https://www.adobe.com/de/legal/terms/enterprise-licensing.html).
 
 ### TarMK-Farm {#tarmk-farm}
 
@@ -152,7 +148,7 @@ Es ist quasi unmöglich, vorherzusagen, wie das genau Parallelitätsmodell nach 
 
 >[!NOTE]
 >
->Mithilfe von Tough Day kann die Leistung der Kundenanwendung im Kontext der bereitgestellten Hardware-Konfiguration bewertet werden. Weitere Informationen zu diesem Tool finden Sie unter [here](/help/sites-developing/tough-day.md).
+>Tough Day kann verwendet werden, um die Leistung der Anwendung des Kunden im Kontext der bereitgestellten Hardwarekonfiguration zu bewerten. Weitere Informationen zu diesem Tool finden Sie unter [here](/help/sites-developing/tough-day.md).
 
 Eine minimale Bereitstellung mit MongoDB umfasst normalerweise die folgende Topologie:
 
@@ -191,7 +187,7 @@ Falls Sie eine MongoMK-Bereitstellung für AEM in Betracht ziehen, liegt eine Re
 
 >[!NOTE]
 >
->Bei allen weiteren Fragen zu diesen Richtlinien, Voraussetzungen und Empfehlungen wenden Sie sich bitte an [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
+>Bei allen weiteren Fragen zu diesen Richtlinien, Voraussetzungen und Empfehlungen wenden Sie sich an [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
 
 ### Überlegungen zu AEM Communities {#considerations-for-aem-communities}
 

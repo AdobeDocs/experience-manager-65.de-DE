@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '5396'
-ht-degree: 48%
+source-wordcount: '5393'
+ht-degree: 47%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 48%
 
 AEM Forms kann mithilfe der AEM Forms Java-API aufgerufen werden. Bei Verwendung der AEM Forms Java-API können Sie entweder die Aufruf-API oder die Java-Client-Bibliotheken verwenden. Java-Client-Bibliotheken sind für Dienste wie den Rights Management-Dienst verfügbar. Mit diesen stark typisierten APIs können Sie Java-Anwendungen entwickeln, die AEM Forms aufrufen.
 
-Die Aufruf-API sind Klassen, die sich im Paket `com.adobe.idp.dsc`befinden. Mithilfe dieser Klassen können Sie eine Aufrufanforderung direkt an einen Dienst senden und eine zurückgegebene Aufrufantwort verarbeiten. Verwenden Sie die Aufruf-API, um kurzlebige oder langlebige Prozesse aufzurufen, die mithilfe von Workbench erstellt wurden.
+Die Aufruf-API sind Klassen, die sich im `com.adobe.idp.dsc` Paket. Mithilfe dieser Klassen können Sie eine Aufrufanforderung direkt an einen Dienst senden und eine zurückgegebene Aufrufantwort verarbeiten. Verwenden Sie die Aufruf-API, um kurzlebige oder langlebige Prozesse aufzurufen, die mithilfe von Workbench erstellt wurden.
 
 Die empfohlene Methode zum programmgesteuerten Aufrufen eines Dienstes besteht darin, eine Java-Client-Bibliothek zu verwenden, die dem Dienst und nicht der Aufruf-API entspricht. Um beispielsweise den Encryption-Dienst aufzurufen, verwenden Sie die Client-Bibliothek des Encryption-Dienstes. Rufen Sie eine Methode auf, die zum Client-Objekt des Encryption-Dienstes gehört, um einen Vorgang des Encryption-Dienstes durchzuführen. Sie können ein PDF-Dokument mit einem Kennwort verschlüsseln, indem Sie die `EncryptionServiceClient` -Objekt `encryptPDFUsingPassword` -Methode.
 
@@ -632,7 +632,7 @@ In diesem Szenario wird eine Client-Anwendung in ihrer eigenen JVM ausgeführt u
 
 ### Clientanwendung, die Clusterinstanzen von AEM Forms aufruft {#client-application-invoking-clustered-aem-forms-instances}
 
-Das folgende Diagramm zeigt eine Client-Anwendung, die in einer eigenen JVM ausgeführt wird und AEM Forms-Instanzen aufruft, die sich in einem Cluster befinden.
+Das folgende Diagramm zeigt eine Client-Anwendung, die in ihrer eigenen JVM ausgeführt wird und AEM Forms-Instanzen in einem Cluster aufruft.
 
 Dieses Szenario ähnelt einer Client-Anwendung, die eine eigenständige AEM Forms-Instanz aufruft. Die Anbieter-URL ist jedoch anders. Wenn eine Client-Anwendung eine Verbindung zu einem bestimmten J2EE-Anwendungsserver herstellen möchte, muss die Anwendung die URL ändern, um auf den spezifischen J2EE-Anwendungsserver zu verweisen.
 

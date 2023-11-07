@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 97%
+source-wordcount: '1825'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ Durch diese Integration können AEM und Adobe Campaign Standard unabhängig vone
 
 ## Integrationsschritte {#integration-steps}
 
-Die Konfiguration der Integration zwischen AEM und Adobe Campaign Standard erfordert eine Reihe von Schritten in beiden Lösungen.
+Die Konfiguration der Integration zwischen AEM und Adobe Campaign Standard erfordert mehrere Schritte in beiden Lösungen.
 
 1. [Konfigurieren Sie die ](#aemserver-user)
 1. [Überprüfen Sie die ](#resource-type-filter)
@@ -42,7 +42,7 @@ Dieses Dokument führt Sie im Detail durch die einzelnen Schritte.
 ## Voraussetzungen {#prerequisites}
 
 * Administratorzugriff auf Adobe Campaign Standard
-   * Weitere Informationen zum Einrichten und Konfigurieren von Adobe Campaign Standard finden Sie im Abschnitt [Dokumentation zu Adobe Campaign Standard.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=de)
+   * Weitere Informationen zum Einrichten und Konfigurieren von Adobe Campaign Standard finden Sie unter [Dokumentation zu Adobe Campaign Standard.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=de)
 * Administratorzugriff auf AEM
 
 ## Konfigurieren des aemserver-Benutzers in Campaign {#aemserver-user}
@@ -63,7 +63,7 @@ Adobe Campaign Standard enthält standardmäßig einen `aemserver`-Benutzer, den
 
 Ihr `aemserver`-Benutzer verfügt jetzt über die erforderlichen Berechtigungen, damit AEM ihn für die Kommunikation mit Adobe Campaign verwenden kann.
 
-Bevor AEM jedoch den `aemserver`-Benutzer verwenden kann, muss sein Kennwort festgelegt sein. Dies kann nicht über Adobe Campaign erfolgen. Es muss von einem Support-Techniker von Adobe durchgeführt werden. [Bitte erstellen Sie ein Ticket bei der Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-tab=home&amp;lang=de#support), um das Zurücksetzen des `aemserver`-Kennworts anzufordern. Wenn Sie das Kennwort von der Adobe-Kundenunterstützung erhalten haben, bewahren Sie es an einem sicheren Ort auf.
+Bevor AEM jedoch den `aemserver`-Benutzer verwenden kann, muss sein Kennwort festgelegt sein. Dies kann nicht über Adobe Campaign erfolgen. Es muss von einem Support-Techniker von Adobe durchgeführt werden. [Senden eines Tickets an die Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-tab=home&amp;lang=de#support) , um das Zurücksetzen der `aemserver` Kennwort. Sobald Sie das Kennwort von der Adobe-Kundenunterstützung haben, halten Sie es an einem sicheren Ort.
 
 ## Überprüfen der Option „AEMResourceTypeFilter“ in Campaign {#resource-type-filter}
 

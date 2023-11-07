@@ -8,7 +8,7 @@ topic-tags: configuring
 docset: aem65
 feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3389'
 ht-degree: 31%
@@ -113,7 +113,7 @@ Wird für die Replikation von der Veröffentlichungs- zur Autoreninstanz verwend
 
 * Statischer Agent
 Dies ist ein „Agent, der eine statische Repräsentation eines Knotens im Dateisystem speichert“.
-Bei den Standardeinstellungen werden beispielsweise Inhaltsseiten und DAM-Assets unter `/tmp` gespeichert, entweder im HTML- oder im entsprechenden Asset-Format. Weitere Einzelheiten zur Konfiguration finden Sie auf den Registerkarten `Settings` und `Rules`.
+Mit den Standardeinstellungen werden beispielsweise Inhaltsseiten und DAM-Assets unter gespeichert. `/tmp`, entweder als HTML oder das entsprechende Asset-Format. Weitere Einzelheiten zur Konfiguration finden Sie auf den Registerkarten `Settings` und `Rules`.
 Der Grund hierfür war, dass die Inhalte sichtbar sein sollten, wenn die Seite direkt vom Anwendungs-Server angefordert wird. Dies ist ein spezieller Agent und (wahrscheinlich) nicht für die meisten Instanzen erforderlich.
 
 ## Replikationsagenten - Konfigurationsparameter {#replication-agents-configuration-parameters}

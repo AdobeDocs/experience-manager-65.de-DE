@@ -8,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '10699'
+source-wordcount: '10694'
 ht-degree: 56%
 
 ---
@@ -109,7 +109,7 @@ Der Standardwert für diese Einstellung ist `/LiveCycleES/ConnectorforIBMFileNet
 
 ## Einstellungen des Convert PDF-Dienstes {#convert-pdf-service-settings}
 
-Der Convert PDF-Dienst (`ConvertPdfService`) konvertiert PDF-Dokumente in PostScript sowie verschiedene Bildformate (JPEG, JPEG 2000, PNG und TIFF). Die Konvertierung eines PDF-Dokuments in PostScript ist für den unbeaufsichtigten serverbasierten Druck auf einem beliebigen PostScript-Drucker nützlich. Das Konvertieren eines PDF-Dokuments in eine mehrseitige TIFF-Datei ist bei der Archivierung von Dokumenten in Content-Management-Systemen praktisch, die keine PDF-Dokumente unterstützen.
+Der Convert PDF-Dienst ( `ConvertPdfService`) konvertiert PDF-Dokumente in PostScript und verschiedene Bildformate (JPEG, JPEG 2000, PNG und TIFF). Die Konvertierung eines PDF-Dokuments in PostScript ist für den unbeaufsichtigten serverbasierten Druck auf einem beliebigen PostScript-Drucker nützlich. Das Konvertieren eines PDF-Dokuments in eine mehrseitige TIFF-Datei ist bei der Archivierung von Dokumenten in Content-Management-Systemen praktisch, die keine PDF-Dokumente unterstützen.
 
 Folgende Einstellungen sind für den Convert PDF-Dienst verfügbar:
 
@@ -243,7 +243,7 @@ Die folgenden Einstellungen sind für den FTP-Dienst verfügbar.
 
 ## Einstellungen des Generate PDF-Dienstes {#generate-pdf-service-settings}
 
-Mit dem Generate PDF-Dienst (`GeneratePDFService`) können Sie Dateien in verschiedenen nativen Formaten in PDF-Dokumente bzw. PDF-Dokumente in eine Vielzahl von Formaten konvertieren.
+Der Generate PDF-Dienst ( `GeneratePDFService`) konvertiert Dateien in verschiedenen nativen Formaten in PDF-Dokumente und konvertiert PDF-Dokumente in verschiedene Dateiformate.
 
 Folgende Einstellungen sind für den Generate PDF-Dienst verfügbar:
 
@@ -326,7 +326,7 @@ Die Standardwerte für den Guide Utilities-Dienst unterstützen die meisten Anwe
 
 ### Verwenden von Guides in einem Servercluster {#using-guides-in-a-server-cluster}
 
-Das Rendern eines Guides in einem Servercluster, der keine fixierbaren Sitzungen verwendet, schlägt mit einer NullPointerException fehl. Eine Guides-Anfrage nutzt sichere URLs, die standardmäßig für den Server eindeutig sind, auf dem sie generiert werden. In einem Cluster, das persistente Sitzungen verwendet, werden nach einem Treffer einer Anfrage auf einen Knoten im Cluster alle nachfolgenden Anforderungen für diese Sitzung oder diesen Benutzer ausschließlich an diesen Server weitergeleitet, und alles ist in Ordnung. In einem Cluster, das keine fixierbaren Sitzungen verwendet, können nachfolgende Anforderungen jeden Server im Cluster treffen. Wenn der Server, auf den die Anfragen gesendet werden, nicht der Originalserver ist, kann die sichere URL nicht aufgelöst werden.
+Das Rendern eines Guides in einem Servercluster, der keine fixierbaren Sitzungen verwendet, schlägt mit einer NullPointerException fehl. Eine Guides-Anfrage verwendet sichere URLs, die standardmäßig für den Server eindeutig sind, auf dem sie generiert werden. In einem Cluster, das persistente Sitzungen verwendet, werden nach einem Treffer einer Anfrage auf einen Knoten im Cluster alle nachfolgenden Anforderungen für diese Sitzung oder diesen Benutzer ausschließlich an diesen Server weitergeleitet, und alles ist in Ordnung. In einem Cluster, das keine fixierbaren Sitzungen verwendet, können nachfolgende Anforderungen jeden Server im Cluster treffen. Wenn der Server, auf den die Anfragen gesendet werden, nicht der Originalserver ist, kann die sichere URL nicht aufgelöst werden.
 
 Wenn Sie Guides in einem Servercluster verwenden, der keine fixierbaren Sitzungen verwendet, legen Sie den macKeySeed-Wert für den GuidesUtility-Dienst fest und beenden und starten Sie dann den Cluster.
 
@@ -826,7 +826,7 @@ Es werden Standard-Sicherheitsprofile installiert, die dann entsprechend Ihren S
    * **SUPERVISOR_PERM:** Anzeigen der Prozessinstanzdaten für einen Dienst, der aus einem Prozess erstellt wurde
    * **START_STOP_PERM:** Starten und Beenden eines Dienstes
    * **ADD_REMOVE_ENDPOINTS_PERM:** Hinzufügen, Entfernen und Ändern von Endpunkten für einen Dienst
-   * **CREATE_VERSION_PERM:** Erstellen einer neuen Version des Dienstes
+   * **CREATE_VERSION_PERM:** So erstellen Sie eine Version des Dienstes
    * **DELETE_VERSION_PERM:** Löschen einer Version des Dienstes
    * **MODIFY_VERSION_PERM:**&#x200B;Ändern einer Version des Dienstes
    * **READ_PERM:** Anzeigen des Dienstes

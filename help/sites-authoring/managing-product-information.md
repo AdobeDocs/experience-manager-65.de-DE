@@ -1,7 +1,7 @@
 ---
 title: Creative Project und PIM-Integration
 seo-title: Creative Project and PIM Integration
-description: Creative Project optimiert den gesamten Fotoaufnahme-Workflow, einschließlich Generierung einer Fotoshooting-Anfrage, Hochladen eines Fotoshootings, Zusammenarbeit bei einem Fotoshooting und Verpackung von bestätigten Assets
+description: Creative Project optimiert den gesamten Fotoshooting-Workflow, einschließlich der Generierung einer Fotoshooting-Anfrage, des Hochladens eines Fotoshootings, der Zusammenarbeit bei einem Fotoshooting und der Verpackung genehmigter Assets
 seo-description: Creative Project streamlines the entire photo shoot workflow that including generating a photo shoot request, uploading a photo shoot, collaborating on a photo shoot, and packaging approved assets
 uuid: 09f27d36-e725-45cb-88d1-27383aedceed
 contentOwner: Guillaume Carlino
@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
-source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '2989'
-ht-degree: 100%
+ht-degree: 79%
 
 ---
 
@@ -24,10 +24,10 @@ Als Marketer oder Kreativschaffender können Sie die Creative Project-Werkzeuge 
 
 Insbesondere können Sie Creative Project zur Optimierung der folgenden Aufgaben in Ihrem Fotoshooting-Workflow nutzen:
 
-* Generieren einer Fotoshooting-Anfrage
-* Hochladen eines Fotoshootings
-* Zusammenarbeit an einem Fotoshooting
-* Verpacken bestätigter Assets
+* Erstellen einer Fotoshooting-Anfrage
+* Fotoshooting hochladen
+* Zusammenarbeit bei einem Fotoshooting
+* Verpacken genehmigter Assets
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Insbesondere können Sie Creative Project zur Optimierung der folgenden Aufgaben
 
 ## Workflow „Produkt-Fotoshooting“  {#exploring-product-photo-shoot-workflows}
 
-Creative Project bietet mehrere Projektvorlagen, die unterschiedlichen Projektanforderungen gerecht werden. Die Vorlage **Projekt für Produkt-Fotoshooting** ist im Lieferumfang enthalten. Diese Vorlage stellt Fotoshooting-Workflows bereit, mit denen Sie Anfragen für Produkt-Fotoshootings einleiten und verwalten können. Sie enthält darüber hinaus eine Reihe von Aufgaben, die es Ihnen ermöglichen, digitale Bilder für Produkte anhand geeigneter Bewertungs- und Bestätigungsabläufe zu erhalten.
+Creative Project bietet mehrere Projektvorlagen, die unterschiedlichen Projektanforderungen gerecht werden. Die Vorlage **Projekt für Produkt-Fotoshooting** ist im Lieferumfang enthalten. Diese Vorlage enthält Fotoshooting-Workflows, mit denen Sie Anfragen zu Produktfotos einleiten und verwalten können. Sie enthält darüber hinaus eine Reihe von Aufgaben, die es Ihnen ermöglichen, digitale Bilder für Produkte anhand geeigneter Bewertungs- und Bestätigungsabläufe zu erhalten.
 
 ## Erstellen eines Projekts für Produkt-Fotoshootings {#create-a-product-photo-shoot-project}
 
@@ -47,7 +47,7 @@ Creative Project bietet mehrere Projektvorlagen, die unterschiedlichen Projektan
 
    ![Projekt-Assistent](assets/chlimage_1-133a.png)
 
-1. Geben Sie Details zum Projekt einschließlich Titel, Beschreibung und Fälligkeitsdaten ein. Fügen Sie Benutzer hinzu und weisen Sie ihnen verschiedene Rollen zu. Sie können auch ein Miniaturbild für das Projekt hinzufügen.
+1. Geben Sie Projektdetails ein, einschließlich Titel, Beschreibung und Fälligkeitsdatum. Fügen Sie Benutzer hinzu und weisen Sie ihnen verschiedene Rollen zu. Sie können auch eine Miniaturansicht für das Projekt hinzufügen.
 
    ![Projektdetails](assets/chlimage_1-134a.png)
 
@@ -62,40 +62,40 @@ Um eine Fotoshooting-Anfrage einzuleiten, klicken oder tippen Sie auf ein Projek
 
 Ein **Produkt-Fotoshooting-Projekt** umfasst folgende Workflows:
 
-* Workflow **Produkt-Fotoshooting (Commerce-Integration)**: Dieser Workflow nutzt die Commerce-Integration in das PIM-System (Produktinformations-Management) zur automatischen Generierung einer Aufnahmenliste für die ausgewählten Produkte (Hierarchie). Sie können die Produktdaten als Teil der Asset-Metadaten anzeigen, nachdem der Workflow abgeschlossen wurde.
+* **Workflow &quot;Produkt-Fotoshooting (Commerce-Integration)&quot;**: Dieser Workflow verwendet die Commerce-Integration in das PIM-System (Product Information Management), um automatisch eine Aufnahmenliste für die ausgewählten Produkte (Hierarchie) zu erstellen. Sie können die Produktdaten als Teil der Asset-Metadaten anzeigen, nachdem der Workflow abgeschlossen wurde.
 * Workflow **Produkt-Fotoshooting**: Dieser Workflow ermöglicht es Ihnen, eine Aufnahmenliste bereitzustellen, anstatt dies der Commerce-Integration zu überlassen. Dabei werden die hochgeladenen Bilder in einer CSV-Datei im Assets-Ordner des Projekts protokolliert.
 
-Verwenden Sie den Workflow **Produkt-Fotoshooting (Commerce-Integration)** zur Zuordnung von Bild-Assets zu den Produkten in AEM. Dieser Workflow nutzt die Commerce-Integration zur Verknüpfung der genehmigten Bilder mit den vorhandenen Produktdaten unter dem Speicherort `/etc/commerce`.
+Verwenden Sie den Workflow **Produkt-Fotoshooting (Commerce-Integration)** zur Zuordnung von Bild-Assets zu den Produkten in AEM. Dieser Workflow verwendet die Commerce-Integration, um die genehmigten Bilder mit den vorhandenen Produktdaten am Speicherort zu verknüpfen `/etc/commerce`.
 
 Der Workflow **Produkt-Fotoshooting (Commerce-Integration)** umfasst die folgenden Aufgaben:
 
 * Aufnahmenliste erstellen
 * Fotoshooting hochladen
 * Fotoaufnahme retuschieren
-* Bewerten und bestätigen
+* Überprüfen und genehmigen
 * Zu Produktionsaufgabe wechseln
 
-Wenn in AEM keine Produktinformationen verfügbar sind, verwenden Sie den Workflow **Produkt-Fotoshooting**, um Bild-Assets den Produkten auf der Basis der Informationen zuzuordnen, die Sie in eine CSV-Datei hochladen. Die CSV-Datei muss grundlegende Produktinformationen wie zum Beispiel Produkt-ID, Kategorie und Beschreibung enthalten. Der Workflow ruft bestätigte Assets für die Produkte ab.
+Wenn in AEM keine Produktinformationen verfügbar sind, verwenden Sie den Workflow **Produkt-Fotoshooting**, um Bild-Assets den Produkten auf der Basis der Informationen zuzuordnen, die Sie in eine CSV-Datei hochladen. Die CSV-Datei muss grundlegende Produktinformationen wie Produkt-ID, Kategorie und Beschreibung enthalten. Der Workflow ruft genehmigte Assets für die Produkte ab.
 
 Dieser Workflow umfasst die folgenden Aufgaben:
 
 * Aufnahmenliste hochladen
 * Fotoshooting hochladen
 * Fotoaufnahme retuschieren
-* Bewerten und bestätigen
+* Überprüfen und genehmigen
 * Zu Produktionsaufgabe wechseln
 
-Sie können diesen Workflow mit der Workflow-Konfigurationsoption anpassen.
+Sie können diesen Workflow mithilfe der Workflow-Konfigurationsoption anpassen.
 
-Beide Workflows umfassen Schritte zur Verknüpfung von Produkten mit ihren bestätigten Assets. Jeder Workflow umfasst die folgenden Schritte:
+Beide Workflows enthalten Schritte zur Verknüpfung von Produkten mit den genehmigten Assets. Jeder Workflow umfasst die folgenden Schritte:
 
-* Workflow-Konfiguration: Beschreibt die Optionen zur Anpassung des Workflows
+* Workflow-Konfiguration: Beschreibt die Optionen zum Anpassen des Workflows
 * Starten eines Projekt-Workflows: Erläutert, wie ein Produkt-Fotoshooting gestartet wird
-* Workflow-Aufgabendetails: Stellt Details von Aufgaben bereit, die im Workflow zur Verfügung stehen
+* Workflow-Aufgabendetails: Bietet Details zu den im Workflow verfügbaren Aufgaben
 
 ## Verfolgen des Projektfortschritts {#tracking-project-progress}
 
-Sie können den Fortschritt eines Projekts verfolgen, indem Sie die aktiven/abgeschlossenen Aufgaben im Projekt überwachen.
+Sie können den Fortschritt eines Projekts verfolgen, indem Sie die aktiven/abgeschlossenen Aufgaben innerhalb eines Projekts überwachen.
 
 Verwenden Sie Folgendes, um den Fortschritt eines Projekts zu überwachen:
 
@@ -117,9 +117,9 @@ Die Aufgabenliste stellt detaillierte Information zur aktuell aktiven Workflow-A
 
 ## Workflow-Konfiguration {#workflow-configuration}
 
-Diese Aufgabe schließt die Zuweisung von Workflow-Schritten zu Benutzern auf Grundlage ihrer Rollen ein.
+Diese Aufgabe umfasst die Zuweisung von Workflow-Schritten an Benutzer basierend auf ihren Benutzerrollen.
 
-So konfigurieren Sie den Workflow **Produkt-Fotoshooting**:
+So konfigurieren Sie die **Produkt-Fotoshooting** workflow:
 
 1. Navigieren Sie zu **Werkzeuge** > **Workflows** und tippen Sie anschließend auf den Bereich **Modelle**, um die Seite **Workflow-Modelle** zu öffnen.
 1. Wählen Sie den Workflow **Produkt-Fotoshooting** aus und tippen Sie auf der Symbolleiste auf das Symbol **Bearbeiten**, um den Workflow im Bearbeitungsmodus zu öffnen.
@@ -133,12 +133,12 @@ So konfigurieren Sie den Workflow **Produkt-Fotoshooting**:
 1. Tippen oder klicken Sie auf die Registerkarte **Aufgabe**, um Folgendes zu konfigurieren:
 
    * Name der Aufgabe
-   * Standardbenutzer(rolle), der/die die Aufgabe empfängt
+   * Standardbenutzer (Rolle), der die Aufgabe erhält
    * Standardpriorität der Aufgabe, die in der Aufgabenliste des Benutzers angezeigt wird
-   * Aufgabenbeschreibung, die angezeigt wird, wenn der Bevollmächtigte die Aufgabe öffnet
-   * Fälligkeitsdatum für eine Aufgabe, das auf Grundlage des Zeitpunkts des Aufgabenbeginns berechnet wird
+   * Aufgabenbeschreibung, die angezeigt wird, wenn der Verantwortliche die Aufgabe öffnet
+   * Fälligkeitsdatum für eine Aufgabe, das auf der Grundlage des Zeitpunkts berechnet wird, zu dem die Aufgabe gestartet wurde
 
-1. Klicken Sie auf **OK**, um die Konfigurationseinstellungen zu speichern.
+1. Klicks **OK** , um die Konfigurationseinstellungen zu speichern.
 
 Sie können die zusätzlichen Aufgaben für den Workflow **Produkt-Fotoshooting** auf ähnliche Weise konfigurieren.
 
@@ -164,7 +164,7 @@ In diesem Abschnitt wird beschrieben, wie das Produktinformations-Management in 
 
 ### Workflow-Aufgabendetails {#workflow-tasks-details}
 
-Der Fotoshooting-Workflow umfasst mehrere Aufgaben. Jede Aufgabe wird auf Grundlage der für die Aufgabe definierten Konfiguration einer Benutzergruppe zugewiesen.
+Der Fotoshooting-Workflow umfasst mehrere Aufgaben. Jede Aufgabe wird basierend auf der für die Aufgabe definierten Konfiguration einer Benutzergruppe zugewiesen.
 
 #### Aufnahmenlistenaufgabe erstellen {#create-shot-list-task}
 
@@ -186,9 +186,9 @@ Die Aufgabe **Aufnahmenliste erstellen** ermöglicht dem Projekteigentümer die 
 
    ![Auswählen von Produkten](assets/chlimage_1-146a.png)
 
-1. Tippen oder klicken Sie auf die Schaltfläche **Aufnahmenliste hinzufügen**, um eine CSV-Datei mit einer Liste all dieser Produkte zu erstellen. Eine Meldung betätigt, dass die Aufnahmenliste für die ausgewählten Produkte erstellt wird. Klicken Sie auf **Schließen**, um den Workflow abzuschließen.
+1. Tippen oder klicken Sie auf die Schaltfläche **Aufnahmenliste hinzufügen**, um eine CSV-Datei mit einer Liste all dieser Produkte zu erstellen. Eine Meldung bestätigt, dass die Aufnahmenliste für die ausgewählten Produkte erstellt wurde. Klicks **Schließen** , um den Workflow abzuschließen.
 
-1. Nach dem Erstellen einer Aufnahmenliste wird der Link **Aufnahmenliste anzeigen** angezeigt. Um weitere Produkte in die Aufnahmenliste aufzunehmen, tippen oder klicken Sie auf **Zu Aufnahmenliste hinzufügen**. In diesem Fall werden die Daten an die anfangs erstellte Aufnahmenliste angehängt.
+1. Nachdem Sie eine Aufnahmenliste erstellt haben, wird die **Aufnahmenliste anzeigen** angezeigt. Um weitere Produkte in die Aufnahmenliste aufzunehmen, tippen oder klicken Sie auf **Zu Aufnahmenliste hinzufügen**. In diesem Fall werden die Daten an die anfangs erstellte Aufnahmenliste angehängt.
 
    ![Zu Aufnahmenliste hinzufügen](assets/chlimage_1-147a.png)
 
@@ -202,21 +202,21 @@ Die Aufgabe **Aufnahmenliste erstellen** ermöglicht dem Projekteigentümer die 
 
    Klicken Sie nach dem Aktualisieren der Datei auf der Symbolleiste auf **Speichern**, um die Datei zu speichern.
 
-1. Klicken Sie nach dem Hinzufügen der Produkte auf der Aufgabendetailseite **Aufnahmenliste erstellen** auf das Symbol **Fertigstellen**, um die Aufgabe als abgeschlossen zu markieren. Sie können wahlweise einen Kommentar hinzufügen.
+1. Klicken Sie nach dem Hinzufügen der Produkte auf der Aufgabendetailseite **Aufnahmenliste erstellen** auf das Symbol **Fertigstellen**, um die Aufgabe als abgeschlossen zu markieren. Sie können einen optionalen Kommentar hinzufügen.
 
-Durch Abschluss der Aufgabe werden die folgenden Änderungen innerhalb des Projekts eingeführt:
+Nach Abschluss der Aufgabe werden die folgenden Änderungen innerhalb des Projekts eingeführt:
 
-* Der Produkthierarchie entsprechende Assets werden in einem Ordner mit demselben Namen wie der Titel des Workflow erstellt.
-* Die Metadaten für die Assets werden in der Konsole „Assets“ bearbeitbar, sogar bevor der Fotograf die Bilder zur Verfügung stellt.
+* Assets, die der Produkthierarchie entsprechen, werden in einem Ordner mit demselben Namen wie der Workflow-Titel erstellt.
+* Die Metadaten für die Assets können über die Konsole &quot;Assets&quot;bearbeitet werden, selbst bevor der Fotograf die Bilder bereitstellt.
 * Es wird ein Fotoshooting-Ordner erstellt, in dem die vom Fotografen bereitgestellten Bilder gespeichert werden. Dieser Ordner enthält Unterordner für jeden Produkteintrag in der Aufnahmenliste.
 
 ### Aufnahmenlistenaufgabe hochladen {#upload-shot-list-task}
 
-Diese Aufgabe ist Teil des Produkt-Fotoshooting-Workflows. Diese Aufgabe führen Sie aus, wenn in AEM keine Produktinformationen verfügbar sind. In diesem Fall laden Sie eine Liste von Produkten in einer CSV-Datei hoch, für die Bild-Assets erforderlich sind. Anhand der Informationen in der CSV-Datei ordnen Sie die Bild-Assets den Produkten zu. Bei der Datei muss es sich um eine CSV-Datei mit dem Namen `shotlist.csv` handeln.
+Diese Aufgabe ist Teil des Produkt-Fotoshooting-Workflows. Diese Aufgabe führen Sie aus, wenn in AEM keine Produktinformationen verfügbar sind. In diesem Fall laden Sie eine Liste von Produkten in eine CSV-Datei hoch, für die Bild-Assets erforderlich sind. Anhand der Informationen in der CSV-Datei ordnen Sie die Bild-Assets den Produkten zu. Bei der Datei muss es sich um eine CSV-Datei mit dem Namen `shotlist.csv` handeln.
 
-Verwenden Sie den Link **Aufnahmenliste anzeigen** unter der Projektkarte im vorherigen Verfahren, um eine Beispieldatei im CSV-Format herunterzuladen. Überprüfen Sie die Beispieldatei, um sich mit dem üblichen Inhalt einer CSV-Datei vertraut zu machen.
+Verwenden Sie den Link **Aufnahmenliste anzeigen** unter der Projektkarte im vorherigen Verfahren, um eine Beispieldatei im CSV-Format herunterzuladen. Überprüfen Sie die Beispieldatei, um den üblichen Inhalt einer CSV-Datei zu ermitteln.
 
-Die Produktliste oder CSV-Datei kann Felder wie z. B. **Kategorie, Produkt, ID, Beschreibung** und **Pfad** enthalten. Das Feld **ID** ist obligatorisch und enthält die Produkt-ID. Die anderen Felder sind optional.
+Die Produktliste oder die CSV-Datei kann Felder wie **Kategorie, Produkt, ID, Beschreibung**, und **Pfad**. Das Feld **ID** ist obligatorisch und enthält die Produkt-ID. Die anderen Felder sind optional.
 
 Ein Produkt kann zu einer bestimmten Kategorie gehören. Die Produktkategorie kann in der CSV-Datei unterhalb der Spalte **Kategorie** aufgeführt werden. Das Feld **Produkt** enthält den Namen des Produkts. Geben Sie im Feld **Beschreibung** die Produktbeschreibung oder Anleitungen für Fotografen ein.
 
@@ -229,7 +229,7 @@ Ein Produkt kann zu einer bestimmten Kategorie gehören. Die Produktkategorie ka
 
    ![Hochladen der Aufnahmenliste](assets/chlimage_1-151a.png)
 
-1. Tippen oder klicken Sie auf die Schaltfläche **Aufnahmenliste hochladen**, um die CSV-Datei hochzuladen. Der Workflow erkennt diese Datei als eine Quelle, die zum Extrahieren von Produktdaten für die nächste Aufgabe verwendet werden kann.
+1. Tippen oder klicken Sie auf die Schaltfläche **Aufnahmenliste hochladen**, um die CSV-Datei hochzuladen. Der Workflow erkennt diese Datei als Quelle, die zum Extrahieren von Produktdaten für die nächste Aufgabe verwendet werden kann.
 1. Laden Sie eine CSV-Datei hoch, die Produktinformationen im entsprechenden Format enthält. Der Link **Hochgeladene Assets anzeigen** wird unterhalb der Karte angezeigt, nachdem die CSV-Datei hochgeladen wurde.
 
    ![Produktinformationen hochladen](assets/chlimage_1-152a.png)
@@ -273,9 +273,9 @@ Wenn Sie Bearbeitungsrechte haben, führen Sie die Aufgabe **Fotoaufnahme retusc
 
 1. Tippen oder klicken Sie auf der Symbolleiste auf das Symbol **Fertigstellen**, um die Aufgabe abzuschließen.
 
-### Aufgabe „Überprüfen und bestätigen“ {#review-and-approve-task}
+### Aufgabe überprüfen und genehmigen {#review-and-approve-task}
 
-In dieser Aufgabe prüfen Sie die Fotoaufnahmen, die von einem Fotografen hochgeladen wurden, und markieren die Aufnahmen als für die Nutzung freigegeben.
+In dieser Aufgabe überprüfen Sie die von einem Fotografen hochgeladenen Fotoshootbilder und markieren Bilder als zur Verwendung freigegeben.
 
 1. Tippen oder klicken Sie im Projektordner rechts unten auf der [Aufgabenkarte](#tracking-project-progress) auf die Ellipsen, um die Aufgabe im Workflow anzuzeigen.
 1. Wählen Sie die Aufgabe **Überprüfen und bestätigen** aus und tippen oder klicken Sie dann auf der Symbolleiste auf das Symbol **Öffnen**.
@@ -292,7 +292,7 @@ In dieser Aufgabe prüfen Sie die Fotoaufnahmen, die von einem Fotografen hochge
 
 1. Tippen oder klicken Sie auf **Fertigstellen**. Die bestätigten Bilder werden mit den leeren Assets verknüpft, die erstellt wurden.
 
-Sie können Produkte ohne Bilder übergehen. Zu einem späteren Zeitpunkt können Sie zur Aufgabe zurückkehren und sie nach Erledigung als abgeschlossen kennzeichnen.
+Sie können einige Produkte ohne Bilder auslassen. Später können Sie die Aufgabe erneut aufrufen und nach Abschluss markieren.
 
 Mithilfe der Assets-Benutzeroberfläche können Sie zu den Projekt-Assets navigieren und die genehmigten Bilder überprüfen.
 
@@ -306,7 +306,7 @@ Creative Project verbindet bestätigte Assets mit dem referenzierten Produkt. Di
 
 ### Zu Produktionsaufgabe wechseln {#move-to-production-task}
 
-Mit dieser Aufgabe werden die bestätigten Assets in den produktionsbereiten Ordner verschoben, damit sie verwendet werden können.
+Durch diese Aufgabe werden die genehmigten Assets in den produktionsbereiten Ordner verschoben, damit sie zur Verwendung verfügbar sind.
 
 1. Tippen oder klicken Sie im Projektordner rechts unten auf der [Aufgabenkarte](#tracking-project-progress) auf die Ellipsen, um die Aufgabe im Workflow anzuzeigen.
 1. Wählen Sie die Aufgabe **Zur Produktion wechseln** aus und tippen oder klicken Sie dann auf der Symbolleiste auf das Symbol **Öffnen**.
@@ -323,7 +323,7 @@ Mit dieser Aufgabe werden die bestätigten Assets in den produktionsbereiten Ord
 
 1. Tippen oder klicken Sie auf **Zur Produktion wechseln**. Schließen Sie die Bestätigungsmeldung. Die Assets werden in den angegebenen Pfad verschoben, und es wird automatisch ein Rotationsset für die bestätigten Assets für jedes Produkt basierend auf der Ordnerhierarchie erstellt.
 
-1. Tippen/klicken Sie in der Symbolleiste auf das Symbol **Fertig stellen**. Der Workflow wird mit Kennzeichnung des letzten Schritts als fertig gestellt abgeschlossen.
+1. Tippen/klicken Sie in der Symbolleiste auf das Symbol **Fertig stellen**. Der Workflow wird abgeschlossen, wenn der letzte Schritt als abgeschlossen markiert ist.
 
 ## Anzeigen von DAM-Asset-Metadaten {#viewing-dam-asset-metadata}
 
@@ -333,7 +333,7 @@ Tippen oder klicken Sie auf den angezeigten Link, um zur entsprechenden Produktd
 
 ## Anpassen der Workflows für Projekt-Fotoshootings {#customizing-the-project-photo-shoot-workflows}
 
-Sie können die Workflows **Projekt-Fotoshootings** an Ihre Anforderungen anpassen. Dies ist eine optionale rollenbasierte Aufgabe, die zum Festlegen des Werts einer Variablen innerhalb des Projekts durchgeführt wird. Sie können danach den konfigurierten Wert zur Entscheidungsfindung heranziehen.
+Sie können die Workflows **Projekt-Fotoshootings** an Ihre Anforderungen anpassen. Dies ist eine optionale rollenbasierte Aufgabe, die Sie ausführen, um den Wert einer Variablen innerhalb des Projekts festzulegen. Später können Sie dann den konfigurierten Wert verwenden, um zu einer Entscheidung zu gelangen.
 
 1. Klicken oder tippen Sie auf das AEM-Logo und navigieren Sie dann zu **Tools** > **Workflow** > **Modelle**, um die Seite **Workflow-Modelle** zu öffnen.
 1. Wählen Sie den Workflow **Produkt-Fotoshooting (Commerce-Integration)** oder **Produkt-Fotoshooting** aus und klicken oder tippen Sie auf der Symbolleiste auf **Bearbeiten**, um den Workflow im Bearbeitungsmodus zu öffnen.

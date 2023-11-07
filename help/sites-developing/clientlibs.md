@@ -7,10 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2856'
-ht-degree: 87%
+source-wordcount: '2853'
+ht-degree: 86%
 
 ---
 
@@ -122,7 +122,7 @@ Der Webclient benötigt eine Zugriffsberechtigung für den Knoten `cq:ClientLibr
 
 ### Überschreiben von Bibliotheken in /lib {#overriding-libraries-in-lib}
 
-Die Client-Bibliotheksordner, die sich unter `/apps` befinden, haben Vorrang vor gleichnamigen Ordnern, die sich entsprechend in `/libs` befinden. Beispiel: `/apps/cq/ui/widgets` hat Vorrang vor `/libs/cq/ui/widgets`. Wenn diese Bibliotheken derselben Kategorie angehören, wird die Bibliothek unter `/apps` verwendet.
+Unten befindliche Client-Bibliotheksordner `/apps` Vorrang vor Ordnern mit demselben Namen haben, die sich in `/libs`. Beispiel: `/apps/cq/ui/widgets` hat Vorrang vor `/libs/cq/ui/widgets`. Wenn diese Bibliotheken derselben Kategorie angehören, wird die Bibliothek unter `/apps` verwendet.
 
 ### Finden eines Client-Bibliotheksordners und Verwenden des Proxy-Servlets für Client-Bibliotheken {#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet}
 
@@ -134,7 +134,7 @@ In früheren Versionen befanden sich Client-Bibliotheksordner unter `/etc/client
 
 >[!NOTE]
 >
->Um Code besser von Inhalt und Konfiguration zu isolieren, wird empfohlen, Client-Bibliotheken unter `/apps` und stellen sie über `/etc.clientlibs` durch Nutzung der `allowProxy` -Eigenschaft.
+>Um Code besser von Inhalt und Konfiguration zu isolieren, wird empfohlen, Client-Bibliotheken unter `/apps` und stellen sie über `/etc.clientlibs` durch Verwendung von `allowProxy` -Eigenschaft.
 
 Damit die Client-Bibliotheken unter `/apps` zugänglich sind, wird ein Proxy-Servlet verwendet. Die ACLs werden weiterhin im Client-Bibliotheksordner erzwungen, aber das Servlet ermöglicht, dass der Content über `/etc.clientlibs/` gelesen wird, wenn die `allowProxy`-Eigenschaft auf `true` gesetzt ist.
 
@@ -197,7 +197,7 @@ Sie legen die Eigenschaft `allowProxy` für `foo` auf „true“ fest.
 
 ### Verknüpfen mit Abhängigkeiten {#linking-to-dependencies}
 
-Wenn der Code in Ihrem Client-Bibliotheksordner auf andere Bibliotheken verweist, müssen Sie die anderen Bibliotheken als Abhängigkeiten angeben. Durch das JSP-Tag `ui:includeClientLib`, das Ihren Client-Bibliotheksordner referenziert, enthält der HTML-Code einen Link auf Ihre generierte Bibliotheksdatei sowie die Abhängigkeiten.
+Wenn der Code in Ihrem Client-Bibliotheksordner auf andere Bibliotheken verweist, müssen Sie die anderen Bibliotheken als Abhängigkeiten angeben. In der JSP wird die `ui:includeClientLib` -Tag, das auf Ihren Client-Bibliotheksordner verweist, führt dazu, dass der HTML-Code einen Link zu Ihrer generierten Bibliotheksdatei und den Abhängigkeiten enthält.
 
 Die Abhängigkeiten müssen ein anderer `cq:ClientLibraryFolder` sein. Fügen Sie Ihrem `cq:ClientLibraryFolder`-Knoten eine Eigenschaft mit den folgenden Attributen hinzu, um Abhängigkeiten anzugeben:
 

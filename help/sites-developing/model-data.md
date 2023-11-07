@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1775'
 ht-degree: 7%
@@ -53,7 +53,7 @@ Weitere Dateneinschränkungen wie obligatorische oder Typ- und Wertbegrenzungen 
 
 #### Beispiel {#example-1}
 
-Das obige Beispiel für die Verwendung einer `lastModified` Datumseigenschaft für z. B. &quot;Blogpost&quot;-Knoten bedeutet wirklich nicht, dass ein spezieller Knotentyp erforderlich ist. Ich würde zumindest anfänglich auf jeden Fall `nt:unstructured` für meine „blog post“-Knoten verwenden. Da ich in meiner Blogging-Anwendung lediglich das lastModified-Datum anzeige (möglicherweise &quot;bestellen durch&quot;), ist es mir kaum wichtig, ob es überhaupt ein Datum ist. Da ich implizit darauf vertraue, dass meine Blog-Schreibanwendung ohnehin ein &quot;Datum&quot; setzt, ist es wirklich nicht notwendig, das Vorhandensein eines `lastModified` Datum in Form eines Knotentyps.
+Das obige Beispiel für die Verwendung einer `lastModified` Die Datumseigenschaft für z. B. den Knoten &quot;Blogpost&quot; bedeutet nicht, dass ein spezieller Knotentyp erforderlich ist. Ich würde zumindest anfänglich auf jeden Fall `nt:unstructured` für meine „blog post“-Knoten verwenden. Da ich in meiner Blogging-Anwendung lediglich das lastModified-Datum anzeige (möglicherweise &quot;bestellen durch&quot;), ist es mir kaum wichtig, ob es überhaupt ein Datum ist. Da ich implizit darauf vertraue, dass meine Blog-Schreibanwendung ohnehin ein &quot;Datum&quot; setzt, ist es wirklich nicht notwendig, das Vorhandensein eines `lastModified` Datum in Form eines Knotentyps.
 
 ### Regel 2: Gestalten Sie die Inhaltshierarchie. Lassen Sie sie nicht passieren. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 

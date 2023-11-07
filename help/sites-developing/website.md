@@ -7,7 +7,7 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '4941'
 ht-degree: 88%
@@ -18,7 +18,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->In diesem Artikel wird erläutert, wie Sie Websites mithilfe von JSP und basierend auf der klassischen Benutzeroberfläche erstellen. Adobe empfiehlt die Verwendung der neuesten Adobe Experience Manager-AEM (Technologien) für Ihre Websites, wie im Artikel ausführlich beschrieben [Erste Schritte bei der Entwicklung von AEM Sites](/help/sites-developing/getting-started.md).
+>In diesem Artikel wird erläutert, wie Sie Websites mithilfe von JSP und basierend auf der klassischen Benutzeroberfläche erstellen. Adobe empfiehlt die Verwendung der neuesten Adobe Experience Manager (AEM)-Technologien für Ihre Websites, wie im Artikel ausführlich beschrieben [Erste Schritte bei der Entwicklung von AEM Sites](/help/sites-developing/getting-started.md).
 
 In diesem Tutorial können Sie eine Website mit vollständigen Funktionen mit AEM erstellen. Die Website basiert auf einer generischen Website und ist in erster Linie auf Web-Entwicklerinnen und -Entwickler ausgerichtet. Die gesamte Entwicklung erfolgt in einer Authoring-Umgebung.
 
@@ -729,7 +729,7 @@ Entwickeln Sie das Skript für die listchildren-Komponente.
    <%@include file="/libs/foundation/global.jsp"%><%
    %><%@ page import="java.util.Iterator,
             com.day.cq.wcm.api.PageFilter"%><%
-        /* Create a new Page object using the path of the current page */
+        /* Create a Page object using the path of the current page */
          String listroot = properties.get("listroot", currentPage.getPath());
         Page rootPage = pageManager.getPage(listroot);
         /* iterate through the child pages and gather properties */
@@ -1048,7 +1048,7 @@ In diesem Abschnitt wird beschrieben, wie Sie mithilfe des Dialogfelds „Design
 
 In diesem Abschnitt schließen Sie die Breadcrumb-Komponente (Trail) ein, die eine der Foundation-Komponenten ist.
 
-1. Navigieren Sie in CRXDE Lite zu `/apps/mywebsite/components/contentpage`, öffnen Sie die Datei `center.jsp`und ersetzen Sie:
+1. Navigieren Sie unter CRXDE Lite zu `/apps/mywebsite/components/contentpage`, öffnen Sie die Datei `center.jsp`und ersetzen Sie:
 
    ```java
    <div>trail</div>
@@ -1069,7 +1069,7 @@ In diesem Abschnitt schließen Sie die Breadcrumb-Komponente (Trail) ein, die ei
 
 In diesem Abschnitt wird beschrieben, wie Sie die Titelkomponente einbinden, die zu den Foundation-Komponenten gehört.
 
-1. Navigieren Sie in CRXDE Lite zu `/apps/mywebsite/components/contentpage`, öffnen Sie die Datei `center.jsp`und ersetzen Sie:
+1. Navigieren Sie unter CRXDE Lite zu `/apps/mywebsite/components/contentpage`, öffnen Sie die Datei `center.jsp`und ersetzen Sie:
 
    ```xml
    <div>title</div>
@@ -1094,7 +1094,7 @@ Das Absatzsystem (parsys) ist ein wichtiger Teil einer Website, da es eine Liste
 
 Fügen Sie die Parsys-Komponente (eine der Foundation-Komponenten) zu Ihrer Contentpage-Komponente hinzu.
 
-1. Navigieren Sie in CRXDE Lite zu `/apps/mywebsite/components/contentpage`, öffnen Sie die Datei `center.jsp`und suchen Sie die folgende Codezeile:
+1. Navigieren Sie unter CRXDE Lite zu `/apps/mywebsite/components/contentpage`, öffnen Sie die Datei `center.jsp`und suchen Sie die folgende Codezeile:
 
    ```xml
    <div>parsys</div>
@@ -1175,7 +1175,7 @@ In diesem Abschnitt wird beschrieben, wie Sie das Image-Skript erstellen.
 
 In diesem Abschnitt verwenden Sie den Knoten „cq:editConfig“, um Assets aus der Inhaltssuche in Ihre Bildkomponente zu ziehen.
 
-1. Erstellen Sie in CRXDE Lite unter dem Knoten /apps/mywebsite/components/image einen Knoten wie folgt:
+1. Erstellen Sie unter CRXDE Lite unter dem Knoten /apps/mywebsite/components/image einen Knoten wie folgt:
 
    * Name: cq:editConfig.
    * Typ: cq:EditConfig.
@@ -1226,7 +1226,7 @@ In diesem Abschnitt wird beschrieben, wie Sie die Toolbar-Komponente einbinden, 
 
 Im Bearbeitungsmodus und im Designmodus stehen Ihnen verschiedene Optionen zur Verfügung.
 
-1. Navigieren Sie in CRXDE Lite zu `/apps/mywebsite/components/contentpage`, öffnen Sie die `body.jsp` und suchen Sie den folgenden Code:
+1. Navigieren Sie unter CRXDE Lite zu `/apps/mywebsite/components/contentpage`, öffnen Sie die `body.jsp` und suchen Sie den folgenden Code:
 
    ```java
    <div class="toolbar">toolbar</div>
@@ -1514,7 +1514,7 @@ In diesem Abschnitt schließen Sie die Komponente „Vererbungs-Absatzsystem“ 
 
 Für diese Komponente können Sie mehrere Parameter sowohl im Bearbeitungs- als auch im Designmodus festlegen.
 
-1. Navigieren Sie in CRXDE Lite zu `/apps/mywebsite/components/contentpage`, öffnen Sie die Datei `right.jsp`und ersetzen Sie:
+1. Navigieren Sie unter CRXDE Lite zu `/apps/mywebsite/components/contentpage`, öffnen Sie die Datei `right.jsp`und ersetzen Sie:
 
    ```java
    <div>iparsys</div>

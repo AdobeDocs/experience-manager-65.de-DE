@@ -6,10 +6,10 @@ role: User
 feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: ht
-source-wordcount: '1031'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1030'
+ht-degree: 98%
 
 ---
 
@@ -36,7 +36,7 @@ Die URL für Assets, die Sie freigeben möchten, generieren Sie im Dialogfeld [!
 
 1. Wählen Sie in der [!DNL Assets]-Benutzeroberfläche das Asset aus, das als Link freigegeben werden soll.
 
-1. Klicken Sie auf der Symbolleiste auf **[!UICONTROL Link freigeben]** ![Symbol zum Freigeben von Assets](assets/do-not-localize/assets_share.png). Der Link, der nach dem Klicken auf **[!UICONTROL Freigeben]** generiert wird, wird im Feld [!UICONTROL Link freigeben] im Voraus angezeigt. Der Link wird erst erstellt, wenn Sie auf **[!UICONTROL Übermitteln]** klicken.
+1. Klicken Sie auf der Symbolleiste auf **[!UICONTROL Link freigeben]** ![Symbol zum Freigeben von Assets](assets/do-not-localize/assets_share.png). Der Link, der nach dem Klicken auf **[!UICONTROL Freigeben]** wird im Voraus im [!UICONTROL Link freigeben] -Feld. Der Link wird erst erstellt, wenn Sie auf **[!UICONTROL Übermitteln]** klicken.
 
    ![Dialogfeld zur Linkfreigabe](assets/share-assets-as-link.png)
 

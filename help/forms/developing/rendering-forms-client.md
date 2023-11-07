@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 08d36e9f-cafc-478e-9781-8fc29ac6262e
 role: Developer
 exl-id: e485980d-f200-46b7-9284-c9996003aa47
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1698'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1694'
+ht-degree: 98%
 
 ---
 
@@ -53,13 +53,13 @@ Bevor Sie einen Client-API-Vorgang für den Forms-Service programmgesteuert durc
 
 **Einstellen der Laufzeitoptionen beim Client für das Rendering**
 
-Sie müssen die Laufzeitoption zum Rendern eines Formulars auf dem Client aktivieren, indem Sie die `RenderAtClient`-Laufzeitoption auf `true` einstellen. Dadurch wird das Formular an den Client übertragen, auf dem es dann gerendert wird. Wenn `RenderAtClient` `auto` beträgt (Standardwert), kann anhand des Formulardesigns bestimmt werden, ob das Formular auf dem Client gerendert werden soll. Bei dem Formulardesign muss beachtet werden, dass dieses ein flexibles Layout haben muss.
+Legen Sie die Laufzeitoption zum Rendern eines Formulars auf dem Client fest, indem Sie die `RenderAtClient` Laufzeitoption zu `true`. Dadurch wird das Formular an den Client übertragen, auf dem es dann gerendert wird. Wenn `RenderAtClient` `auto` beträgt (Standardwert), kann anhand des Formulardesigns bestimmt werden, ob das Formular auf dem Client gerendert werden soll. Bei dem Formulardesign muss beachtet werden, dass dieses ein flexibles Layout haben muss.
 
 Optional können Sie die Laufzeitoption `SeedPDF` aktivieren. Die `SeedPDF`-Option kombiniert den PDF-Container (Seed-PDF-Dokument) mit dem Formulardesign und den XML-Daten. Sowohl das Formulardesign als auch die XML-Daten werden an Acrobat oder Adobe Reader übermittelt, die das Formular rendern. Die `SeedPDF`-Option kann verwendet werden, wenn der Client nicht über die Schriftarten verfügt, die im Formular verwendet werden, z. B. wenn ein Endbenutzer nicht über die Lizenzen für die Verwendung einer bestimmten Schriftart verfügt, die der Formularinhaber verwenden darf.
 
 Sie können Designer verwenden, um eine einfache dynamische PDF-Datei zur Verwendung als Seed-PDF-Datei zu erstellen. Die folgenden Schritte sind erforderlich, um dieses zu erreichen:
 
-1. Prüfen Sie, ob Sie Schriftarten in die Seed-PDF-Datei einbetten müssen. Die Seed-PDF-Datei muss alle zusätzlichen Schriftarten enthalten, die für das Formular, das gerendert werden soll, erforderlich sind. Stellen Sie beim Einbetten von Schriftarten in die Seed-PDF-Datei sicher, dass Sie keine Lizenzvereinbarungen für die Schriftarten verletzen. In Designer können Sie erkennen, ob Sie eine bestimmte Schriftart rechtmäßig einbetten dürfen. Wenn es beim Speichern Schriftarten geben sollte, die nicht in das Formular eingebettet werden können, zeigt Designer eine Meldung an, in der die Schriftarten aufgeführt werden, die nicht eingebettet werden können. Diese Meldung wird in Designer bei statischen PDF-Dokumenten nicht angezeigt.
+1. Prüfen Sie, ob Sie Schriftarten in die Seed-PDF-Datei einbetten müssen. Die Seed-PDF-Datei muss zusätzliche Schriftarten enthalten, die für das wiedergegebene Formular erforderlich sind. Stellen Sie beim Einbetten von Schriftarten in die Seed-PDF-Datei sicher, dass Sie keine Lizenzvereinbarungen für die Schriftarten verletzen. In Designer können Sie erkennen, ob Sie eine bestimmte Schriftart rechtmäßig einbetten dürfen. Wenn es beim Speichern Schriftarten geben sollte, die nicht in das Formular eingebettet werden können, zeigt Designer eine Meldung an, in der die Schriftarten aufgeführt werden, die nicht eingebettet werden können. Diese Meldung wird in Designer bei statischen PDF-Dokumenten nicht angezeigt.
 1. Wenn Sie die Seed-PDF-Datei in Designer erstellen, wird empfohlen, mindestens ein Textfeld mit einer Nachricht hinzuzufügen. Die Nachricht richtet sich an Benutzer früherer Versionen von Adobe Reader und sollte darauf hinweisen, dass sie Acrobat 7.0 oder höher oder Adobe Reader 7.0 oder höher benötigen, um das Dokument anzeigen zu können.
 1. Speichern Sie die Seed-PDF-Datei als dynamische PDF-Datei mit der Dateinamenerweiterung PDF ab.
 

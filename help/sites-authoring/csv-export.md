@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
 exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 85%
+source-wordcount: '189'
+ht-degree: 83%
 
 ---
 
@@ -55,7 +55,7 @@ Die resultierende Datei `export.csv` kann in Excel (oder einer anderen kompatibl
 
 ![etc-01](assets/etc-01.png)
 
-Die Option **CSV-Bericht erstellen** ist in der **Sites-Konsole** (in der Listenansicht) verfügbar: Sie finden die Option im Dropdown-Menü **Erstellen**:
+Die Erstellung **CSV-Bericht** ist beim Durchsuchen der **Sites** console (in der Listenansicht): ist eine Option der **Erstellen** Dropdown-Menü:
 
 ![etc-02](assets/etc-02.png)
 
@@ -66,5 +66,5 @@ So erstellen Sie einen CSV-Export:
 
    ![etc-03](assets/etc-03.png)
 
-1. Wählen Sie die erforderlichen Eigenschaften aus, die exportiert werden sollen.
+1. Wählen Sie die zu exportierenden Eigenschaften aus.
 1. Wählen Sie **Erstellen**.

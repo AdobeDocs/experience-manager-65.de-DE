@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Developer Tools, Asset Management
 role: Admin, User
 exl-id: 042bd959-256a-4794-a34d-0848a6b8840d
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '560'
-ht-degree: 100%
+ht-degree: 77%
 
 ---
 
@@ -50,31 +50,31 @@ Klicken Sie auf **[!UICONTROL Hier klicken, um Ihr Erlebnis zu konfigurieren]**,
 Die [!DNL Assets]-Startseite enthält die folgenden Abschnitte:
 
 * Begrüßungsabschnitt
-* Widget-Abschnitt
+* Widget-Bereich
 
-**Begrüßungsabschnitt** 
+**Begrüßungsabschnitt**
 
 Wenn Ihr Profil vorhanden ist, wird im Begrüßungsabschnitt eine Begrüßungsnachricht für Sie angezeigt. Darüber hinaus werden Ihr Profilbild und ein Begrüßungsbild angezeigt (wenn bereits konfiguriert).
 
-Wenn Ihr Profil unvollständig ist, zeigt der Begrüßungsabschnitt eine generische Begrüßungsnachricht und einen Platzhalter für Ihr Profilbild an.
+Wenn Ihr Profil unvollständig ist, werden im Bereich &quot;Willkommen&quot;eine allgemeine Willkommensnachricht und ein Platzhalter für Ihr Profilbild angezeigt.
 
-**Widget-Abschnitt** 
+**Widget-Bereich**
 
-Dieser Abschnitt wird unter dem Begrüßungsabschnitt angezeigt und bietet fertige Widgets unter den folgenden Abschnitten:
+Dieser Abschnitt wird unter dem Begrüßungsabschnitt angezeigt und zeigt native Widgets unter den folgenden Abschnitten an:
 
 * Aktivität
 * Aktuell
 * Entdecken
 
-**Aktivität**: Unter diesem Abschnitt zeigt das Widget **[!UICONTROL Meine Aktivität]** die aktuellsten Aktivitäten an, die angemeldete Benutzende mit Assets durchgeführt haben (einschließlich Assets ohne Ausgabedarstellungen), z. B. Asset-Uploads, -Downloads, Asset-Erstellung, Bearbeitungen, Kommentare, Anmerkungen und Freigaben.
+**Aktivität**: Unter diesem Abschnitt wird die **[!UICONTROL Meine Aktivität]** Widget zeigt die letzten Aktivitäten an, die der angemeldete Benutzer mit Assets ausgeführt hat (einschließlich Assets ohne Ausgabedarstellungen), z. B. Asset-Uploads, -Downloads, Asset-Erstellung, Bearbeitungen, Kommentare, Anmerkungen und Teilen-Vorgänge.
 
 **Aktuell**: Das Widget **[!UICONTROL Vor kurzem angezeigt]** unter diesem Abschnitt zeigt vor kurzem durch angemeldete Benutzende aufgerufene Entitäten an, z. B. Ordner, Sammlungen und Projekte.
 
-**Entdecken**: Das Widget **[!UICONTROL Neu]** unter diesem Abschnitt zeigt die Assets und Ausgabedarstellungen an, die zuletzt in die [!DNL Assets]-Implementierung hochgeladen wurden.
+**Entdecken**: Das Widget **[!UICONTROL Neu]** unter diesem Abschnitt zeigt die Assets und Ausgabedarstellungen an, die zuletzt in die [!DNL Assets]-Bereitstellung hochgeladen wurden.
 
-Um das Löschen von Benutzeraktivitätsdaten zu aktivieren, aktivieren Sie den **[!UICONTROL DAM Event Purge-Dienst]** vom Configuration Manager aus. Nachdem Sie den Dienst aktiviert haben, werden die Aktivitäten des angemeldeten Benutzers, die eine bestimmte Anzahl überschreiten, vom System gelöscht.
+Um das Löschen von Benutzeraktivitätsdaten zu aktivieren, aktivieren Sie den **[!UICONTROL DAM Event Purge-Dienst]** vom Configuration Manager aus. Nachdem Sie diesen Dienst aktiviert haben, werden Aktivitäten des angemeldeten Benutzers, die eine bestimmte Anzahl überschreiten, vom System gelöscht.
 
-Der Begrüßungsbildschirm enthält einfache Navigationshilfen, z. B. Symbole in der Symbolleiste für das Zugreifen auf Ordner, Sammlungen und Kataloge.
+Der Begrüßungsbildschirm bietet einfache Navigationshilfen, z. B. Symbole in der Symbolleiste, um auf Ordner, Sammlungen und Kataloge zuzugreifen.
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Der Begrüßungsbildschirm enthält einfache Navigationshilfen, z. B. Symbole in
 
 >[!CAUTION]
 >
->Das Erfassen, Filtern und Bereinigen von Benutzeraktivitäten für die [!DNL Assets]-Startseite erfordert einen gewissen Mehraufwand. Daher sollten Administratoren die Homepage für Zielbenutzer effektiv konfigurieren.
+>Das Erfassen, Filtern und Bereinigen von Benutzeraktivitäten für die [!DNL Assets]-Startseite erfordert einen gewissen Mehraufwand. Daher sollten Administratoren die Startseite für Zielbenutzer effektiv konfigurieren.
 >
 >Adobe empfiehlt Administratoren und Benutzern, die mit großen Datenmengen arbeiten, die Verwendung der Asset-Homepage-Funktion zu vermeiden, um einen Anstieg der Benutzeraktivitäten zu verhindern. Außerdem können Admins Aufzeichnungsaktivitäten von bestimmten Benutzenden unterbinden, indem sie den [!UICONTROL Day CQ DAM Event Recorder] vom [!UICONTROL Configuration Manager] aus konfigurieren.
 >

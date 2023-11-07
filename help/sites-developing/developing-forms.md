@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 58%
+source-wordcount: '1947'
+ht-degree: 54%
 
 ---
 
@@ -40,7 +40,7 @@ Neben der [Entwicklung neuer Komponenten](/help/sites-developing/developing-comp
 
 >[!NOTE]
 >
->Dieses Dokument konzentriert sich auf die Entwicklung von Formularen mit dem [Foundation-Komponenten](/help/sites-authoring/default-components-foundation.md) in der klassischen Benutzeroberfläche. Adobe empfiehlt die Nutzung der neuen [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und [Bedingungen ausblenden](/help/sites-developing/hide-conditions.md) für die Formularentwicklung in der Touch-optimierten Benutzeroberfläche.
+>Dieses Dokument konzentriert sich auf die Entwicklung von Formularen mit dem [Foundation-Komponenten](/help/sites-authoring/default-components-foundation.md) in der klassischen Benutzeroberfläche. Adobe empfiehlt die Verwendung der neuen [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und [Bedingungen ausblenden](/help/sites-developing/hide-conditions.md) für die Formularentwicklung in der Touch-optimierten Benutzeroberfläche.
 
 ## Vorabladen von Formularwerten {#preloading-form-values}
 
@@ -60,7 +60,7 @@ Dies ist ein optionales Feld, das den Pfad zu einem Knoten im Repository angibt.
 
 Verschiedene Formularfelder verfügen auch über die **Element-Ladepfad**, wiederum ein optionaler Pfad, der auf einen Knoten im Repository verweist.
 
-Der **Element-Ladepfad** ist der Pfad zu Knoteneigenschaften, mit dem vordefinierte Werte in dieses Formularfeld geladen werden – z. B. eine [Dropdown-Liste](/help/sites-authoring/default-components-foundation.md#dropdown-list), eine [Gruppe von Kontrollkästchen](/help/sites-authoring/default-components-foundation.md#checkbox-group) oder eine [Gruppe von Optionsschaltern](/help/sites-authoring/default-components-foundation.md#radio-group).
+Die **Element-Ladepfad** ist der Pfad zu den Knoteneigenschaften, mit denen vordefinierte Werte in dieses spezifische Feld im Formular geladen werden, z. B. ein [Dropdown-Liste](/help/sites-authoring/default-components-foundation.md#dropdown-list), [Kontrollkästchengruppe](/help/sites-authoring/default-components-foundation.md#checkbox-group) oder [Optionsfeldgruppe](/help/sites-authoring/default-components-foundation.md#radio-group).
 
 #### Beispiel - Vorausfüllen einer Dropdown-Liste mit mehreren Werten {#example-preloading-a-dropdown-list-with-multiple-values}
 
@@ -68,10 +68,9 @@ Eine Dropdown-Liste kann mit Ihrem Wertebereich zur Auswahl konfiguriert werden.
 
 Die **Element-Ladepfad** kann verwendet werden, um auf eine Liste aus einem Ordner im Repository zuzugreifen und sie in das Feld vorab zu laden:
 
-1. Erstellen Sie einen neuen Sling-Ordner (`sling:Folder`),
-z. B. `/etc/designs/<myDesign>/formlistvalues`
+1. Erstellen Sie einen Sling-Ordner ( `sling:Folder`), zum Beispiel `/etc/designs/<myDesign>/formlistvalues`
 
-1. Fügen Sie eine neue Eigenschaft (z. B. `myList`) des Typs mehrwertige Zeichenfolge (`String[]`) hinzu, die eine Liste der Dropdown-Elemente enthält. Sie können auch mithilfe eines Skripts Inhalte importieren, z. B. mit einem JSP-Skript oder cURL in einem Shell-Skript.
+1. Hinzufügen einer neuen Eigenschaft (z. B. `myList`) vom Typ Zeichenfolge mit mehreren Werten ( `String[]`), um die Liste der Dropdown-Elemente zu enthalten. Sie können auch mithilfe eines Skripts Inhalte importieren, z. B. mit einem JSP-Skript oder cURL in einem Shell-Skript.
 
 1. Verwenden Sie den vollständigen Pfad im Feld **Element-Ladepfad**.
 Zum Beispiel `/etc/designs/geometrixx/formlistvalues/myList`
@@ -80,7 +79,7 @@ Hinweis: Wenn die Werte im `String[]` wie folgt formatiert sind:
 
 * `AL=Alabama`
 * `AK=Alaska`
-* usw.
+* und so weiter
 
 generiert AEM die Liste wie folgt:
 
@@ -210,7 +209,7 @@ Sie können wie folgt Ihre eigenen Einschränkungen für ein einzelnes Feld hinz
 
    * `sling:resourceType`: auf `foundation/components/form/constraint` festlegen
 
-   * `constraintMessage`: eine individuelle Nachricht, die beim Einreichen des Formulars angezeigt wird, wenn das Feld gemäß der Einschränkung nicht gültig ist
+   * `constraintMessage` - eine benutzerdefinierte Meldung, die angezeigt wird, wenn das Feld gemäß der Einschränkung bei der Übermittlung des Formulars ungültig ist
 
    * Optional:
 

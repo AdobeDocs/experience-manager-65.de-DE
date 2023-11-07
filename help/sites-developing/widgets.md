@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 7b234f1f-4470-4de1-a3c3-ab19e5e001ad
 docset: aem65
 exl-id: 56a9591c-cd78-42e8-a5d7-6b48581d6af6
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4926'
+source-wordcount: '4925'
 ht-degree: 99%
 
 ---
@@ -102,7 +102,7 @@ where `<category-nameX>` ist der Name der clientseitigen Bibliothek.
 * um nur JavaScript-Code einzuschließen:
   `<ui:includeClientLib js="<category-name>"/>`
 
-Weitere Informationen finden Sie in der Beschreibung des Tags [&lt;ui:includeClientLib>](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
+Weitere Informationen finden Sie in der Beschreibung des [&lt;ui:includeclientlib>](/help/sites-developing/taglib.md#lt-ui-includeclientlib) -Tag.
 
 Manchmal sollte eine Client-Bibliothek nur im Authoring-Modus verfügbar sein und im Publishing-Modus ausgeschlossen werden. Dies lässt sich wie folgt erreichen:
 
@@ -458,7 +458,7 @@ Um das Widget-basierte Dialogfeld **Benutzerdefiniertes Treebrowse** zu verwende
 
 #### Beispiel 3: Rich-Text-Editor(RTE)-Plug-in {#example-rich-text-editor-rte-plug-in}
 
-Das **Rich-Text-Editor(RTE)-Plug-in** basierte Dialogfeld ist ein auf dem Rich-Text-Editor basierendes Dialogfeld, das eine benutzerdefinierte Schaltfläche zum Einfügen eines benutzerdefinierten Textes in eckigen Klammern enthält. Der benutzerdefinierte Text kann auch anhand einer Server-seitigen Logik geparst werden (in diesem Beispiel nicht implementiert), um beispielsweise Text hinzuzufügen, der am jeweiligen Pfad definiert ist:
+Das **Rich-Text-Editor(RTE)-Plug-in** basierte Dialogfeld ist ein auf dem Rich-Text-Editor basierendes Dialogfeld, das eine benutzerdefinierte Schaltfläche zum Einfügen eines benutzerdefinierten Textes in eckigen Klammern enthält. Der benutzerdefinierte Text kann durch eine serverseitige Logik analysiert werden (in diesem Beispiel nicht implementiert), z. B. um Text hinzuzufügen, der am angegebenen Pfad definiert ist:
 
 Das auf dem **RTE-Plug-in** basierende Dialogfeld:
 

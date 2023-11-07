@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2506'
-ht-degree: 87%
+source-wordcount: '2505'
+ht-degree: 86%
 
 ---
 
@@ -321,4 +321,4 @@ Die vollständige URL zum Aufrufen des Prozesses lautet https://hiro-xp:8080/res
 
 Wenn für den Vorgang ein PDF-Dokument als Eingabewert erforderlich ist, stellen Sie sicher, dass Sie das Formular als PDF übermitteln, wie in der vorherigen Abbildung dargestellt. Um einen Prozess erfolgreich aufzurufen, muss der Prozess außerdem ein PDF-Dokument zurückgeben. Andernfalls kann Acrobat den Rückgabewert nicht verarbeiten und es tritt ein Fehler auf. Sie brauchen den Namen der Eingabeprozessvariablen nicht anzugeben. Der Prozess *MyApplication/EncryptDocument* hat beispielsweise eine Eingabevariable mit dem Namen `inDoc`. Sie brauchen inDoc nicht anzugeben, solange das Formular als PDF übermittelt wird.
 
-Sie können Formulardaten auch als XML an einen Forms-Prozess übermitteln. Um XML-Daten zu übermitteln, stellen Sie sicher, dass in der Dropdown-Liste `Submit As` XML angegeben ist. Da der Rückgabewert des Prozesses ein PDF-Dokument sein muss, wird das PDF-Dokument in Acrobat angezeigt.
+Sie können auch Formulardaten als XML an einen Forms-Prozess senden. Stellen Sie sicher, dass die Variable `Submit As` -Dropdown-Liste gibt XML an. Da der Rückgabewert des Prozesses ein PDF-Dokument sein muss, wird das PDF-Dokument in Acrobat angezeigt.

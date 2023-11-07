@@ -2,10 +2,10 @@
 title: Ihr Posteingang zum Verwalten von Aufgaben
 description: Verwalten Ihrer Aufgaben mit dem Posteingang in Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 98%
+source-wordcount: '1144'
+ht-degree: 96%
 
 ---
 
@@ -67,7 +67,7 @@ So öffnen Sie den Benachrichtigungs-Posteingang in AEM:
 
 1. Klicken/tippen Sie auf die Anzeige in der Symbolleiste.
 
-1. Wählen Sie **Alle anzeigen** aus. Der **AEM-Posteingang** wird geöffnet. Im Posteingang werden Elemente aus den Bereichen Workflows, Projekte und Aufgaben angezeigt.
+1. Wählen Sie **Alle anzeigen** aus. Die **AEM Posteingang** geöffnet. Im Posteingang werden Elemente aus den Bereichen Workflows, Projekte und Aufgaben angezeigt.
 1. Die Standardansicht ist die [Listenansicht](#inbox-list-view), Sie können aber auch zur [Kalenderansicht ](#inbox-calendar-view)wechseln. Dies erfolgt mit der Ansichtsauswahl (Symbolleiste oben rechts).
 
    Für beide Ansichten können Sie auch die [Anzeigeeinstellungen](#inbox-view-settings) festlegen. Die verfügbaren Optionen hängen dabei von der aktuellen Ansicht ab.
@@ -191,7 +191,7 @@ Die Option „Admin-Kontrolle“ ist nur für die Mitglieder der Gruppen `admini
    * Ein Assistent für eine bestimmte Aktion wird gestartet.
    * Eine Dokumentationsseite wird geöffnet.
 
-   Wird etwa die Aktion **Neu zuweisen** ausgeführt, öffnet sich ein Dialogfeld:
+   Beispiel: **Neu zuweisen** öffnet ein Dialogfeld:
 
    ![wf-85](assets/wf-85.png)
 
@@ -223,7 +223,7 @@ Im Posteingang können Sie Aufgaben erstellen:
 
    * **Erweitert**
 
-      * **Name**: Daraus wird die URL gebildet. Wird kein Name angegeben, basiert sie auf dem **Titel**.
+      * **Name**: Wird verwendet, um die URL zu bilden. Wenn das Feld leer ist, basiert die URL auf der **Titel**.
 
    ![wf-87](assets/wf-87.png)
 

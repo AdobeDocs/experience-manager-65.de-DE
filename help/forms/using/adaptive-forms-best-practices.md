@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4734'
-ht-degree: 44%
+source-wordcount: '4725'
+ht-degree: 43%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 44%
 
 ## Übersicht {#overview}
 
-Mit Adobe Experience Manager-Formularen (AEM) können Sie komplexe Transaktionen in einfache, angenehme digitale Erlebnisse umwandeln. Es erfordert jedoch konzertierte Bemühungen, ein effizientes und produktives AEM Forms-Ökosystem zu implementieren, zu erstellen, auszuführen und zu warten.
+Mit Adobe Experience Manager(AEM)-Formularen können Sie komplexe Transaktionen in einfache, beeindruckende digitale Erlebnisse umwandeln. Es erfordert jedoch konzertierte Bemühungen, ein effizientes und produktives AEM Forms-Ökosystem zu implementieren, zu erstellen, auszuführen und zu warten.
 
 Dieses Dokument enthält Vorgaben und Empfehlungen, von denen Forms-Administratoren, Verfasser und Entwickler profitieren können, wenn sie mit AEM Forms und insbesondere mit adaptiven Formularkomponenten arbeiten. Es beschreibt bewährte Verfahren vom Einrichten eines Formularentwicklungsprojekts bis zum Konfigurieren, Anpassen, Authoring und Optimieren von AEM Forms. Diese bewährten Verfahren tragen zusammen zur Gesamtleistung des AEM Forms-Systems bei.
 
@@ -68,7 +68,7 @@ Nachdem Sie Ihr AEM Projekt eingerichtet haben, definieren Sie eine Strategie f�
    * **XFA-Formularvorlage**: Es ist ein ideales Formularmodell, wenn Sie Investitionen in XFA-basierte HTML5-Formulare haben. Es bietet eine direkte Möglichkeit, Ihre XFA-basierten Formulare in adaptive Formulare zu konvertieren. Alle vorhandenen XFA-Regeln werden in den zugehörigen adaptiven Formularen beibehalten. Die resultierenden adaptiven Formulare unterstützen XFA-Konstrukte wie Überprüfungen, Ereignisse, Eigenschaften und Muster.
    * **Formulardatenmodell**: Dies ist das bevorzugte Formularmodell, wenn Sie Ihre Backend-Systeme wie Datenbanken, Web-Services und AEM-Benutzerprofile integrieren möchten, um adaptive Formulare vorauszufüllen und übermittelte Formulardaten zurück in die Backend-Systeme zu schreiben. Mit einem Formulardatenmodell-Editor können Sie Entitäten und Dienste in einem Formulardatenmodell definieren und konfigurieren, das Sie zum Erstellen adaptiver Formulare verwenden können. Weitere Informationen finden Sie unter [AEM Forms-Datenintegration](/help/forms/using/data-integration.md).
 
-Es ist wichtig, das Datenmodell mit Bedacht auszuwählen, das nicht nur Ihren Anforderungen entspricht, aber Ihre bereits getätigten Investitionen in XSD-Asset XFA-Assets erweitert. Es wird empfohlen, das XSD-Modell zu verwenden, um Formularvorlagen zu erstellen, weil die generiert XML-Daten enthält, die per XPFAD vom Schema definiert wurden. Die Verwendung des XSD-Modells als Standardoption für das Formulardatenmodell ist ebenfalls hilfreich, da es den Formularentwurf vom Back-End-System entkoppelt, das Daten verarbeitet und verbraucht, und die Leistung des Formulars verbessert, da das Formularfeld einer zu einer Zuordnung zugeordnet wird. Außerdem kann BindRef des Felds den XPATH seines Datenwerts in XML erstellen.
+Es ist wichtig, das Datenmodell mit Bedacht auszuwählen, das nicht nur Ihren Anforderungen entspricht, aber Ihre bereits getätigten Investitionen in XSD-Asset XFA-Assets erweitert. Verwenden Sie das XSD-Modell, um Formularvorlagen zu erstellen, da die generierte XML Daten gemäß dem vom Schema definierten XPATH enthält. Die Verwendung des XSD-Modells als Standardoption für das Formulardatenmodell ist ebenfalls hilfreich, da es den Formularentwurf vom Back-End-System entkoppelt, das Daten verarbeitet und verbraucht, und die Leistung des Formulars verbessert, da das Formularfeld einer zu einer Zuordnung zugeordnet wird. Außerdem kann BindRef des Felds den XPATH seines Datenwerts in XML erstellen.
 
 Weitere Informationen finden Sie unter [Erstellen eines adaptiven Formulars](/help/forms/using/creating-adaptive-form.md).
 
@@ -103,7 +103,7 @@ Die Formularvorlagen können auch aus Paketen mit adaptiven Formularen, die auf 
 * Der Ausführungsmodus **nosamplecontent** wird nur für Autor- und nicht für Veröffentlichungsknoten empfohlen.
 * Die Bearbeitung von Assets wie adaptiven Formularen, Designs, Vorlagen oder Cloud-Konfigurationen erfolgt nur über Autorknoten, die auf den konfigurierten Veröffentlichungsknoten veröffentlicht werden können.
 Weitere Informationen finden Sie unter [Veröffentlichung von Formularen und Dokumenten und Veröffentlichungen rückgängig machen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=de)
-* Das Add-On-Paket für Forms ist für das Authoring sowie für die Veröffentlichung erforderlich, um die Document Service-Vorgänge zu unterstützen. Daher kann es als Abhängigkeit betrachtet werden.
+* Das Forms-Add-On-Paket ist für die Bearbeitung und Veröffentlichung erforderlich, um die Document Service-Vorgänge zu unterstützen. Daher kann es als Abhängigkeit betrachtet werden.
 Wenn Sie nur Forms-bezogene Beispielvorlagen, Designs und DOR-Pakete möchten, können Sie sie von [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=de) herunterladen.
 
 Weitere Informationen finden Sie im Abschnitt zu empfohlenen Vorgehensweisen unter [Einführung in das Authoring adaptiver Formulare](/help/forms/using/introduction-forms-authoring.md).
@@ -187,7 +187,7 @@ Der Regeleditor bietet einen visuellen Editor und einen Code-Editor zum Schreibe
 
 ### Arbeiten mit Designs {#working-with-themes}
 
-Mit Adaptive für Designs können Sie wiederverwendbare Stile erstellen, die über Formulare hinweg angewendet werden können, um ein konsistentes Erscheinungsbild und Stile zu erhalten. Es wird empfohlen, Designs zu verwenden, um Formatierung für Formularkomponenten und Bedienfelder zu definieren. Einige Best Practices rund um Themen sind:
+Mit Adaptive für Designs können Sie wiederverwendbare Stile erstellen, die über Formulare hinweg angewendet werden können, um ein konsistentes Erscheinungsbild und Stile zu erhalten. Verwenden Sie Designs, um die Formatierung für Formularkomponenten und Bedienfelder zu definieren. Einige Best Practices rund um Themen sind:
 
 * Verwenden Sie die Asset-Bibliothek für die schnelle Anwendung von Textstilen, Hintergrund und Bildern. Wenn ein Stil in der Asset-Bibliothek hinzugefügt wird, ist er für andere Designs und im Stilmodus des Formular-Editors verfügbar.
 * Wenden Sie globale Einstellungen wie Schriftart und Seitenhintergrund mithilfe der Seitenebenenauswahl an.
@@ -241,7 +241,7 @@ Adaptive Formulare benötigen Übermittlungsaktionen für die Verarbeitung der v
 * Sie können eine benutzerdefinierte Sendeaktion schreiben, wenn die standardmäßigen Sendeaktionen Ihren Anwendungsfall nicht erfüllen. Weitere Informationen finden Sie unter[ Schreiben von benutzerdefinierten Übermittlungsaktionen für ein adaptives Formular](/help/forms/using/custom-submit-action-form.md).
 * Beziehen Sie serverseitige Validierungen ein, um zu verhindern, dass ungültige Daten übermittelt werden. 
 
-Sie können Adobe Sign in adaptiven Formularen mit mehreren Signaturen nutzen. Beachten Sie Folgendes bei der Konfiguration von Adobe Sign in adaptiven Formularen. Weitere Informationen finden Sie unter [Verwenden von Adobe Sign in einem adaptiven Formular](/help/forms/using/working-with-adobe-sign.md).
+Sie können Adobe Sign in adaptiven Formularen mit mehreren Signaturen verwenden. Beachten Sie Folgendes bei der Konfiguration von Adobe Sign in adaptiven Formularen. Weitere Informationen finden Sie unter [Verwenden von Adobe Sign in einem adaptiven Formular](/help/forms/using/working-with-adobe-sign.md).
 
 * Adobe Sign-aktiviertes Formular wird nur gesendet, nachdem alle Unterzeichner das Formular unterzeichnet haben. Formulare werden im Status „Ausstehende Signatur“ angezeigt, bis das Formular von allen Signierern unterzeichnet wurde.
 * Sie können das Signiererlebnis im Formular konfigurieren oder Unterzeichner beim Senden zu einer Signaturseite weiterleiten.

@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '5814'
+source-wordcount: '5811'
 ht-degree: 68%
 
 ---
@@ -24,7 +24,7 @@ Mit AEM 6.3 und höher wurde eine Online-Version dieser Funktion namens Online-R
 
 **Hinweis**: [Im Video](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=en) finden Sie eine Einführung in die Verwendung der Online-Revisionsbereinigung.
 
-Der Revisionsbereinigungsprozess besteht aus drei Phasen: **Schätzung**, **compaction** und **bereinigen**. Die Schätzung bestimmt, ob die nächste Phase (Komprimierung) ausgeführt werden soll oder nicht, je nachdem, wie viel Speicherabfall möglicherweise erfasst wird. Während der Komprimierungsphase werden Segmente und TAR-Dateien neu geschrieben, wobei nicht verwendete Inhalte ausgeschlossen werden. In der Bereinigungsphase werden dann die alten Segmente entfernt, einschließlich aller darin enthaltenen Speicherbereinigungen. Der Offline-Modus kann in der Regel mehr Speicherplatz zurückgewinnen, da der Online-Modus AEM Arbeitsset berücksichtigen muss, in dem zusätzliche Segmente nicht erfasst werden.
+Der Revisionsbereinigungsprozess besteht aus drei Phasen: **Schätzung**, **compaction**, und **bereinigen**. Die Schätzung bestimmt, ob die nächste Phase (Komprimierung) ausgeführt werden soll oder nicht, je nachdem, wie viel Speicherabfall möglicherweise erfasst wird. Während der Komprimierungsphase werden Segmente und TAR-Dateien neu geschrieben, wobei nicht verwendete Inhalte ausgeschlossen werden. In der Bereinigungsphase werden dann die alten Segmente entfernt, einschließlich aller darin enthaltenen Speicherbereinigungen. Der Offline-Modus kann in der Regel mehr Speicherplatz zurückgewinnen, da der Online-Modus AEM Arbeitsset berücksichtigen muss, in dem zusätzliche Segmente nicht erfasst werden.
 
 Weitere Informationen zur Revisionsbereinigung finden Sie unter den folgenden Links:
 
@@ -36,7 +36,7 @@ Sie können auch die [offizielle Oak-Dokumentation](https://jackrabbit.apache.or
 
 ### Wann sollte die Online-Revisionsbereinigung anstelle der Offline-Revisionsbereinigung verwendet werden? {#when-to-use-online-revision-cleanup-as-opposed-to-offline-revision-cleanup}
 
-**Die Online-Revisionsbereinigung ist die empfohlene Methode zur Durchführung der Revisionsbereinigung.** Die Offline-Revisionsbereinigung sollte nur in Ausnahmefällen verwendet werden, z. B. vor der Migration zum neuen Speicherformat oder auf Anforderung der Kundenunterstützung von Adobe.
+**Die Online-Revisionsbereinigung ist die empfohlene Methode zur Durchführung der Revisionsbereinigung.** Die Offline-Revisionsbereinigung sollte nur in Ausnahmefällen verwendet werden, z. B. vor der Migration zum neuen Speicherformat oder auf Anforderung der Adobe-Kundenunterstützung.
 
 ## Ausführen der Online-Revisionsbereinigung {#how-to-run-online-revision-cleanup}
 
@@ -132,7 +132,7 @@ Manchmal verzögert der Wechsel zwischen dem Tail- und dem vollständigen Kompri
   </tr>
   <tr>
    <td>Was muss ich beachten, wenn ich auf AEM 6.5 aktualisiere?</td>
-   <td><p>Das Persistenzformat von TarMK ändert sich mit AEM 6.5. Diese Änderungen erfordern keinen proaktiven Migrationsschritt. Vorhandene Repositorys durchlaufen eine rollierende Migration, die für den Benutzer transparent ist. Der Migrationsprozess wird initiiert, wenn AEM 6.5 (oder zugehörige Tools) zum ersten Mal auf das Repository zugreifen.</p> <p><strong>Nachdem die Migration zum Persistenzformat AEM 6.5 eingeleitet wurde, kann das Repository nicht mehr auf das Persistenzformat AEM 6.3 zurückgesetzt werden.</strong></p> </td>
+   <td><p>Das Persistenzformat von TarMK ändert sich mit AEM 6.5. Für diese Änderungen ist kein proaktiver Migrationsschritt erforderlich. Vorhandene Repositorys durchlaufen eine rollierende Migration, die für den Benutzer transparent ist. Der Migrationsprozess wird initiiert, wenn AEM 6.5 (oder zugehörige Tools) zum ersten Mal auf das Repository zugreifen.</p> <p><strong>Nachdem die Migration zum Persistenzformat AEM 6.5 eingeleitet wurde, kann das Repository nicht mehr auf das Persistenzformat AEM 6.3 zurückgesetzt werden.</strong></p> </td>
   </tr>
  </tbody>
 </table>
@@ -261,7 +261,7 @@ Manchmal verzögert der Wechsel zwischen dem Tail- und dem vollständigen Kompri
   </tr>
   <tr>
    <td><strong>Können Autoren weiterarbeiten, während die Online-Revisionsbereinigung läuft?</strong></td>
-   <td>Ja, die Online-Revisionsbereinigung kann gleichzeitige Schreibvorgänge handhaben. Die Online-Revisionsbereinigung funktioniert jedoch schneller und effizienter ohne gleichzeitige Schreibvorgänge. Adobe empfiehlt, die Wartungsaufgabe für die Online-Revisionsbereinigung auf eine relativ ruhige Zeit ohne großen Traffic zu planen.</td>
+   <td>Ja, die Online-Revisionsbereinigung kann gleichzeitige Schreibvorgänge handhaben. Die Online-Revisionsbereinigung funktioniert jedoch schneller und effizienter ohne gleichzeitige Schreibvorgänge. Adobe empfiehlt, die Wartungsaufgabe für die Online-Revisionsbereinigung auf eine relativ ruhige Zeit ohne viel Traffic zu planen.</td>
    <td> </td>
   </tr>
   <tr>
@@ -276,7 +276,7 @@ Manchmal verzögert der Wechsel zwischen dem Tail- und dem vollständigen Kompri
   </tr>
   <tr>
    <td><strong>Wie lange dauert die Ausführung der Online-Revisionsbereinigung erwartungsgemäß?</strong></td>
-   <td>Es sollte nicht länger als zwei Stunden dauern, bis die letzte intern durchgeführte Leistungstest-Adobe ausgeführt wird.</td>
+   <td>Es sollte nicht länger als zwei Stunden dauern, bis das Adobe gemäß den neuesten Leistungstests durchgeführt wird, die intern durchgeführt wurden.</td>
    <td> </td>
   </tr>
   <tr>
@@ -298,7 +298,7 @@ Manchmal verzögert der Wechsel zwischen dem Tail- und dem vollständigen Kompri
    <td><strong>Warum wird die Revisionsbereinigung übersprungen?</strong></td>
    <td><p>Die Revisionsbereinigung beruht auf einer Schätzungsphase, in der entschieden wird, ob ausreichend Datenabfall zur Bereinigung vorhanden ist. Bei der Schätzung wird die aktuelle Größe mit der Größe des Repositorys nach der letzten Komprimierung verglichen. Wenn die Größe das konfigurierte Delta überschreitet, wird die Bereinigung ausgeführt. Der Deltawert für die Größe beträgt 1 GB. Dies bedeutet im Grunde, dass die neue Revisionsbereinigungs-Iteration übersprungen wird, wenn die Repository-Größe seit dem letzten Bereinigungsvorgang nicht um 1 GB gewachsen ist. </p> <p>Unten sehen Sie die für die Schätzungsphase relevanten Protokolleinträge:</p>
     <ul>
-     <li>Revision GC wird ausgeführt: <em>Delta-Größe ist N% oder N/N (N/N Byte), daher laufende Komprimierung</em></li>
+     <li>Revisionsbereinigung wird ausgeführt: <em>Delta-Größe ist N% oder N/N (N/N Byte), daher laufende Komprimierung</em></li>
      <li>Revision GC führt <strong>not</strong> run: <em>Delta-Größe ist N% oder N/N (N/N Byte), daher wird die Komprimierung für jetzt übersprungen</em></li>
     </ul> </td>
    <td> </td>
@@ -330,7 +330,7 @@ Manchmal verzögert der Wechsel zwischen dem Tail- und dem vollständigen Kompri
   </tr>
   <tr>
    <td><strong>Was passiert, wenn zu viele Interferenzen von gleichzeitigen Schreibvorgängen in das Repository auftreten?</strong></td>
-   <td><p>Wenn im System gleichzeitige Schreibvorgänge stattfinden, benötigt die Online-Revisionsbereinigung möglicherweise einen exklusiven Schreibzugriff, um die Änderungen am Ende eines Komprimierungszyklus zu übermitteln. Das System wird in <strong>forceCompact-Modus</strong>, wie im Abschnitt <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html" target="_blank">Oak-Dokumentation</a>. Während der erzwungenen Komprimierung wird eine exklusive Schreibsperre erworben, um die Änderungen endgültig zu übernehmen, ohne dass gleichzeitig Schreibvorgänge stören. Um die Auswirkungen auf die Antwortzeiten zu begrenzen, kann ein Zeitlimitwert definiert werden. Dieser Wert wird standardmäßig auf eine Minute gesetzt. Wenn die erzwungene Komprimierung nicht innerhalb einer Minute abgeschlossen ist, wird der Komprimierungsprozess zugunsten gleichzeitiger Commits abgebrochen.</p> <p>Die Dauer der erzwungenen Komprimierung hängt von folgenden Faktoren ab:</p>
+   <td><p>Wenn im System gleichzeitige Schreibvorgänge stattfinden, benötigt die Online-Revisionsbereinigung möglicherweise einen exklusiven Schreibzugriff, um die Änderungen am Ende eines Komprimierungszyklus zu übermitteln. Das System wird <strong>forceCompact-Modus</strong>, wie im Abschnitt <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html" target="_blank">Oak-Dokumentation</a>. Während der erzwungenen Komprimierung wird eine exklusive Schreibsperre erworben, um die Änderungen endgültig zu übernehmen, ohne dass gleichzeitig Schreibvorgänge stören. Um die Auswirkungen auf die Antwortzeiten zu begrenzen, kann ein Zeitlimitwert definiert werden. Dieser Wert wird standardmäßig auf eine Minute gesetzt. Wenn die erzwungene Komprimierung nicht innerhalb einer Minute abgeschlossen ist, wird der Komprimierungsprozess zugunsten gleichzeitiger Commits abgebrochen.</p> <p>Die Dauer der erzwungenen Komprimierung hängt von folgenden Faktoren ab:</p>
     <ul>
      <li>Hardware: speziell IOPS. Die Dauer nimmt mit zunehmenden IOPS ab.</li>
      <li>Segmentspeichergröße: Die Dauer steigt mit der Größe des Segmentspeichers.</li>
@@ -383,7 +383,7 @@ Manchmal verzögert der Wechsel zwischen dem Tail- und dem vollständigen Kompri
   </tr>
   <tr>
    <td><strong>Wo finden wir die Statistiken der letzten Online-Revisionsbereinigungen?</strong></td>
-   <td><p>Status, Fortschritt und Statistiken werden über JMX (<code>SegmentRevisionGarbageCollection</code> MBean). Weitere Informationen zu MBean <code>SegmentRevisionGarbageCollection</code> finden Sie im <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">folgenden Absatz</a>.</p> <p>Der Fortschritt kann wie folgt verfolgt werden: über das Attribut <code>EstimatedRevisionGCCompletion</code> von <code>SegmentRevisionGarbageCollection MBean.</code></p> <p>Sie können eine MBean-Referenz mit <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code> abrufen.</p> <p>Die Statistiken sind erst seit dem letzten Systemstart verfügbar. Mit externen Überwachungstools können die Daten über AEM Betriebszeit hinaus aufbewahrt werden. In der <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">AEM-Dokumentation finden Sie Informationen zum Anhängen von Konsistenzprüfungen an Nagios als Beispiel für ein externes Überwachungs-Tool</a>.</p> </td>
+   <td><p>Status, Fortschritt und Statistiken werden über JMX (<code>SegmentRevisionGarbageCollection</code> MBean) Weitere Informationen zu MBean <code>SegmentRevisionGarbageCollection</code> finden Sie im <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">folgenden Absatz</a>.</p> <p>Der Fortschritt kann wie folgt verfolgt werden: über das Attribut <code>EstimatedRevisionGCCompletion</code> von <code>SegmentRevisionGarbageCollection MBean.</code></p> <p>Sie können eine MBean-Referenz mit <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code> abrufen.</p> <p>Die Statistiken sind erst seit dem letzten Systemstart verfügbar. Mit externen Überwachungstools können die Daten über AEM Betriebszeit hinaus aufbewahrt werden. In der <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">AEM-Dokumentation finden Sie Informationen zum Anhängen von Konsistenzprüfungen an Nagios als Beispiel für ein externes Überwachungs-Tool</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -392,7 +392,7 @@ Manchmal verzögert der Wechsel zwischen dem Tail- und dem vollständigen Kompri
     <ul>
      <li>Die Online-Revisionsbereinigung wurde gestartet/beendet
       <ul>
-       <li>Die Online-Revisionsbereinigung umfasst drei Phasen: Schätzung, Komprimierung und Bereinigung. In der Schätzungsphase kann das Überspringen der Komprimierung und Bereinigung erzwungen werden, falls das Repository nicht ausreichend viele alte Daten enthält. In der neuesten Version von AEM markiert die Meldung „<code>TarMK GC #{}: estimation started</code>“ den Beginn der Schätzung, „<code>TarMK GC #{}: compaction started, strategy={}</code>“ markiert den Beginn der Komprimierung und „T<code>arMK GC #{}: cleanup started. Current repository size is {} ({} bytes</code>“ markiert den Beginn der Bereinigung.</li>
+       <li>Die Online-Revisionsbereinigung besteht aus drei Phasen: Schätzung, Komprimierung und Bereinigung. In der Schätzungsphase kann das Überspringen der Komprimierung und Bereinigung erzwungen werden, falls das Repository nicht ausreichend viele alte Daten enthält. In der neuesten Version von AEM markiert die Meldung „<code>TarMK GC #{}: estimation started</code>“ den Beginn der Schätzung, „<code>TarMK GC #{}: compaction started, strategy={}</code>“ markiert den Beginn der Komprimierung und „T<code>arMK GC #{}: cleanup started. Current repository size is {} ({} bytes</code>“ markiert den Beginn der Bereinigung.</li>
       </ul> </li>
      <li>Durch die Revisionsbereinigung gewonnener Speicherplatz
       <ul>
@@ -426,12 +426,12 @@ Manchmal verzögert der Wechsel zwischen dem Tail- und dem vollständigen Kompri
   </tr>
   <tr>
    <td><strong>Welche Daten werden einer Konsistenzprüfiung bei der Online-Revisionsbereinigung unterzogen? Wie und wann tragen sie zu den farbcodierten Statuswerten bei? </strong></td>
-   <td><p>Die Konsistenzprüfung der Revisionsbereinigung ist Teil des <a href="/help/sites-administering/operations-dashboard.md#health-reports" target="_blank">Vorgangs-Dashboards</a>.<br /> </p> <p>Der Status lautet <strong>GRÜNE</strong> wenn die letzte Ausführung der Online-Revisionsbereinigung erfolgreich abgeschlossen wurde.</p> <p>Es ist <strong>GELB</strong> wenn die Wartungsaufgabe für die Online-Revisionsbereinigung einmal abgebrochen wurde.<br /> </p> <p>Es ist <strong>RED</strong> wenn die Wartungsaufgabe für die Online-Revisionsbereinigung dreimal hintereinander abgebrochen wurde. <strong>In diesem Fall ist eine manuelle Interaktion erforderlich</strong> oder die Online-Revisionsbereinigung schlägt wahrscheinlich wieder fehl. Weitere Informationen finden Sie im Abschnitt <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-online-revision-cleanup">Fehlerbehebung</a> unten.<br /> </p> <p>Beachten Sie, dass der Status der Konsistenzprüfung nach jedem Systemneustart zurückgesetzt wird. Eine neu gestartete Instanz zeigt daher einen grünen Status bei der Konsistenzprüfung der Revisionsbereinigung an. Mit externen Überwachungstools können die Daten über AEM Betriebszeit hinaus aufbewahrt werden. In der <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios">AEM-Dokumentation finden Sie Informationen zum Anhängen von Konsistenzprüfungen an Nagios als Beispiel für ein externes Überwachungs-Tool</a>.</p> </td>
+   <td><p>Die Konsistenzprüfung der Revisionsbereinigung ist Teil des <a href="/help/sites-administering/operations-dashboard.md#health-reports" target="_blank">Vorgangs-Dashboards</a>.<br /> </p> <p>Der Status lautet <strong>GRÜNE</strong> wenn die letzte Ausführung der Online-Revisionsbereinigung erfolgreich abgeschlossen wurde.</p> <p>Es ist <strong>GELB</strong> wenn die Wartungsaufgabe für die Online-Revisionsbereinigung einmal abgebrochen wurde.<br /> </p> <p>Es ist <strong>RED</strong> wenn die Wartungsaufgabe für die Online-Revisionsbereinigung dreimal hintereinander abgebrochen wurde. <strong>In diesem Fall ist eine manuelle Interaktion erforderlich</strong> oder die Online-Revisionsbereinigung schlägt wahrscheinlich wieder fehl. Weitere Informationen finden Sie im Abschnitt <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-online-revision-cleanup">Fehlerbehebung</a> unten.<br /> </p> <p>Außerdem wird der Status der Konsistenzprüfung nach einem Neustart des Systems zurückgesetzt. Eine neu gestartete Instanz zeigt daher einen grünen Status bei der Konsistenzprüfung der Revisionsbereinigung an. Mit externen Überwachungstools können die Daten über AEM Betriebszeit hinaus aufbewahrt werden. In der <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios">AEM-Dokumentation finden Sie Informationen zum Anhängen von Konsistenzprüfungen an Nagios als Beispiel für ein externes Überwachungs-Tool</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
    <td><p><strong>Wie wird die automatische Bereinigung auf einer Standby-Instanz überwacht?</strong></p> </td>
-   <td><p>Status, Fortschritt und Statistiken werden über JMX mithilfe der Variablen <code>SegmentRevisionGarbageCollection</code> MBean. Siehe auch die folgende <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">Oak-Dokumentation</a>. </p> <p>Sie können eine MBean-Referenz mit <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code> abrufen.</p> <p>Die Statistiken sind erst seit dem letzten Systemstart verfügbar. Mit externen Monitoring-Tools können Sie die Daten über die AEM hinaus aufbewahren. In der <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">AEM-Dokumentation finden Sie Informationen zum Anhängen von Konsistenzprüfungen an Nagios als Beispiel für ein externes Überwachungs-Tool</a>.</p> <p>Die Protokolldateien können auch verwendet werden, um den Status, den Fortschritt und die Statistiken der automatischen Bereinigung zu überprüfen.</p> </td>
+   <td><p>Status, Fortschritt und Statistiken werden über JMX mithilfe der Variablen <code>SegmentRevisionGarbageCollection</code> MBean. Siehe auch die folgende <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">Oak-Dokumentation</a>. </p> <p>Sie können eine MBean-Referenz mit <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code> abrufen.</p> <p>Die Statistiken sind erst seit dem letzten Systemstart verfügbar. Mit externen Überwachungstools können die Daten über die AEM hinaus aufbewahrt werden. In der <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">AEM-Dokumentation finden Sie Informationen zum Anhängen von Konsistenzprüfungen an Nagios als Beispiel für ein externes Überwachungs-Tool</a>.</p> <p>Die Protokolldateien können auch verwendet werden, um den Status, den Fortschritt und die Statistiken der automatischen Bereinigung zu überprüfen.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -660,7 +660,7 @@ Zusätzlich zu den oben beschriebenen Methoden können Sie den Revisionsbereinig
   </tr>
   <tr>
    <td><strong>Wie kann ich die Offline-Revisionsbereinigung beschleunigen, wenn diese Aufgabe nicht innerhalb von acht Stunden abgeschlossen wird?</strong></td>
-   <td>Wenn die Revisionsaufgabe nicht innerhalb von acht Stunden abgeschlossen wird und die <a href="/help/sites-administering/operations-dashboard.md#diagnosis-tools" target="_blank">Thread-Dumps</a> zeigen, dass <code>InMemoryCompactionMap.findEntry</code> das Hauptproblem ist, verwenden Sie mit den <strong>Versionen 1.4</strong> oder höher des Tools „oak-run“ den folgenden Parameter: <code>-Dtar.PersistCompactionMap=true</code>. Die <code>-Dtar.PersistCompactionMap</code> wurde in Oak Version 1.6 entfernt.</td>
+   <td>Wenn die Revisionsaufgabe nicht innerhalb von acht Stunden abgeschlossen wird und die <a href="/help/sites-administering/operations-dashboard.md#diagnosis-tools" target="_blank">Thread-Dumps</a> zeigen, dass <code>InMemoryCompactionMap.findEntry</code> das Hauptproblem ist, verwenden Sie mit den <strong>Versionen 1.4</strong> oder höher des Tools „oak-run“ den folgenden Parameter: <code>-Dtar.PersistCompactionMap=true</code>. Die <code>-Dtar.PersistCompactionMap</code> -Parameter wurde in Oak Version 1.6 entfernt.</td>
   </tr>
  </tbody>
 </table>

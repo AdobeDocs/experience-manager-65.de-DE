@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 role: Developer
 exl-id: 6af148eb-427a-4b54-9c5f-8750736882d8
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3918'
+source-wordcount: '3914'
 ht-degree: 97%
 
 ---
@@ -69,7 +69,7 @@ Um einen Vorgang für den Service „Acrobat Reader DC-Erweiterungen“ programm
 
 **Abrufen eines PDF-Dokuments**
 
-Sie müssen ein PDF-Dokument abrufen, um Verwendungsrechte anzuwenden. Berechtigungsaktivierte PDF-Dokumente enthalten ein Wörterbuch zu Verwendungsrechten. Wenn Adobe Reader ein Dokument öffnet, das ein solches Wörterbuch enthält, werden nur diejenigen Verwendungsrechte aktiviert, die im Wörterbuch für dieses Dokument angegeben sind. Wenn das Dokument kein Wörterbuch für Verwendungsrechte enthält, erstellt der Service „Acrobat Reader DC-Erweiterungen“ eines. Wenn es bereits ein Wörterbuch enthält, überschreibt der Service „Acrobat Reader DC-Erweiterungen“ vorhandene Verwendungsrechte mit den von Ihnen angegebenen. Das Wörterbuch gibt an, welche Verwendungsrechte aktiviert sind. Wenn ein Benutzer das Dokument in Adobe Reader öffnet, sind nur die im Wörterbuch angegebenen Verwendungsrechte zulässig.
+Rufen Sie ein PDF-Dokument ab, um Verwendungsrechte anzuwenden. Berechtigungsaktivierte PDF-Dokumente enthalten ein Wörterbuch zu Verwendungsrechten. Wenn Adobe Reader ein Dokument öffnet, das ein solches Wörterbuch enthält, werden nur diejenigen Verwendungsrechte aktiviert, die im Wörterbuch für dieses Dokument angegeben sind. Wenn das Dokument kein Wörterbuch für Verwendungsrechte enthält, erstellt der Service „Acrobat Reader DC-Erweiterungen“ eines. Wenn es bereits ein Wörterbuch enthält, überschreibt der Service „Acrobat Reader DC-Erweiterungen“ vorhandene Verwendungsrechte mit den von Ihnen angegebenen. Das Wörterbuch gibt an, welche Verwendungsrechte aktiviert sind. Wenn ein Benutzer das Dokument in Adobe Reader öffnet, sind nur die im Wörterbuch angegebenen Verwendungsrechte zulässig.
 
 **Angeben der anzuwendenden Verwendungsrechte**
 
@@ -388,7 +388,7 @@ Bevor Sie einen Service-Vorgang für Acrobat Reader DC-Erweiterungen programmges
 
 **Abrufen eines PDF-Dokuments mit aktivierten Verwendungsrechten**
 
-Sie müssen ein PDF-Dokument mit aktivierten Berechtigungen abrufen, um Informationen über die Berechtigung abzurufen. Sie können auch Informationen zu einer Berechtigung abrufen, indem Sie deren Alias angeben. Wenn Sie jedoch Informationen zu einer Berechtigung abrufen möchten, die zum Anwenden von Verwendungsrechten auf ein bestimmtes PDF-Dokument mit aktivierten Rechten verwendet wurde, müssen Sie das Dokument abrufen.
+Rufen Sie ein PDF-Dokument mit aktivierten Benutzerrechten ab, um Informationen über die Berechtigung abzurufen. Sie können auch Informationen zu einer Berechtigung abrufen, indem Sie deren Alias angeben. Wenn Sie jedoch Informationen zu einer Berechtigung abrufen möchten, die zum Anwenden von Verwendungsrechten auf ein bestimmtes PDF-Dokument mit aktivierten Rechten verwendet wurde, müssen Sie das Dokument abrufen.
 
 **Abrufen von Informationen zur Berechtigung**
 

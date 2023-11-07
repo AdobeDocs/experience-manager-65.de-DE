@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4597'
-ht-degree: 98%
+source-wordcount: '4593'
+ht-degree: 97%
 
 ---
 
@@ -550,7 +550,7 @@ Verwenden Sie beim Übergeben eines sicheren Dokuments Single Sign-On und geben 
 
 >[!NOTE]
 >
-Wenn Sie eine neue Rolle erstellen und Mitglieder dieser Rolle sichere Dokumente hochladen sollen, vergewissern Sie sich, dass Sie die Berechtigung zum Hochladen von Dokumenten angeben.
+Wenn Sie eine Rolle erstellen und möchten, dass Mitglieder dieser Rolle sichere Dokumente hochladen, stellen Sie sicher, dass Sie die Berechtigung zum Hochladen von Dokumenten angeben.
 
 AEM Forms unterstützt einen Vorgang mit dem Namen `getFileUploadToken`, der ein Token zurückgibt, das an das Upload-Servlet übergeben wird. Die `DocumentReference.constructRequestForUpload`-Methode benötigt eine URL zu AEM Forms zusammen mit dem Token, das von der `LC.FileUploadAuthenticator.getFileUploadToken`-Methode zurückgegeben wird. Diese Methode gibt ein `URLRequest`-Objekt zurück, das beim Aufruf des Upload-Servlets verwendet wird. Der folgende Code veranschaulicht diese Anwendungslogik.
 
@@ -889,7 +889,7 @@ Wenn AEM Forms so konfiguriert ist, dass nur sichere Dokumente hochgeladen werde
 
 ## Aufrufen benutzerdefinierter Komponenten-Services mithilfe von Remoting {#invoking-custom-component-services-using-remoting}
 
-Sie können Services aufrufen, die sich in einer benutzerdefinierten Komponente befinden, indem Sie Remoting verwenden. Nehmen wir zum Beispiel die Komponente „Bank“, die den Kundendienst enthält. Sie können Vorgänge, die zum Kundendienst gehören, mithilfe einer in Flex geschriebenen Clientanwendung aufrufen. Bevor Sie den Schnellstart für diesen Abschnitt ausführen können, müssen Sie die benutzerdefinierte Komponente „Bank“ erstellen.
+Sie können Dienste in einer benutzerdefinierten Komponente mithilfe von Remoting aufrufen. Nehmen wir zum Beispiel die Komponente „Bank“, die den Kundendienst enthält. Sie können Vorgänge, die zum Kundendienst gehören, mithilfe einer in Flex geschriebenen Clientanwendung aufrufen. Bevor Sie den Schnellstart für diesen Abschnitt ausführen können, müssen Sie die benutzerdefinierte Komponente „Bank“ erstellen.
 
 Der Kundendienst stellt einen Vorgang mit dem Namen `createCustomer` zur Verfügung. In dieser Diskussion wird beschrieben, wie Sie eine Flex-Clientanwendung erstellen, die den Kundendienst aufruft und einen Kunden erstellt. Dieser Vorgang erfordert ein komplexes Objekt vom Typ `com.adobe.livecycle.sample.customer.Customer` das den neuen Kunden darstellt. Die folgende Abbildung zeigt die Client-Anwendung, die den Kundendienst aufruft und einen neuen Kunden erstellt. Der `createCustomer`-Vorgang gibt einen Wert für die Kundenkennung zurück. Der Wert der Kennung wird im Textfeld „Kundenkennung“ angezeigt.
 
@@ -969,7 +969,7 @@ Die folgende ActionScript-Klasse namens „Kunde“ zeigt, wie sie dem AEM Forms
 
 Der vollständig qualifizierte Datentyp des komplexen AEM Forms-Typs wird dem Alias-Tag zugewiesen.
 
-Die Felder der ActionScript-Klasse entsprechen den Feldern, die zum komplexen AEM Forms-Typ gehören. Die sechs Felder in der Customer ActionScript-Klasse stimmen mit den Feldern überein, die zu `com.adobe.livecycle.sample.customer.Customer` gehören.
+Die Felder der ActionScript-Klasse entsprechen den Feldern, die zum komplexen AEM Forms-Typ gehören. Die sechs Felder in der Customer ActionScript-Klasse entsprechen den Feldern, die zu `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
 >

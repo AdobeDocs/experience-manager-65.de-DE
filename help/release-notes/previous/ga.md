@@ -2,10 +2,10 @@
 title: Allgemeine Versionshinweise zu  [!DNL Adobe Experience Manager]  6.5
 description: Informationen zu [!DNL Adobe Experience Manager] 6.5 mit Versionshinweisen, Angaben zu neuen Funktionen und zur Installation sowie ausführlichen Auflistungen von Änderungen.
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '4675'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -147,25 +147,25 @@ Weitere Informationen zu Änderungen in AEM Screens finden Sie in den Versionsh
 
    * „in“-Operator für Zeichenfolgen, Arrays und Objekte:
 
-      ```html
-      ${'a' in 'abc'}
-      ${100 in myArray}
-      ${'a' in myObject}
-      ```
+     ```html
+     ${'a' in 'abc'}
+     ${100 in myArray}
+     ${'a' in myObject}
+     ```
 
    * Variablendeklarationen mit data-sly-set:
-      `<sly data-sly-set.title="${currentPage.title}"/>${title}`
+     `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
    * Listen- und Wiederholungsparameter: begin, step, end:
-      `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
+     `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
    * Kennungen für data-sly-unwrap:
 
-      ```html
-      <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
-      text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
-      </div>
-      ```
+     ```html
+     <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
+     text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
+     </div>
+     ```
 
    * Unterstützung negativer Zahlen
 
@@ -241,7 +241,6 @@ Weitere Informationen zu Änderungen in AEM Screens finden Sie in den Versionsh
 >
 >* Sowohl `at.js. 1.x` ala auch `at.js 2.x` werden unterstützt, wenn Sie den Export von Experience Fragments nach Target verwenden und Aktivitäten in der Konsole von Target ausführen.
 
-
 * Zur Adobe Target-Integration wird nun die Target Standard-API verwendet. Frühere AEM-Versionen nutzen die Target Classic-HTTP-API, die nun als veraltet gekennzeichnet ist.
 * Adobe Target `mbox.js` Version 6.3 ist enthalten. Adobe empfiehlt ausdrücklich, die Implementierung auf `at.js` Version 1.x umzustellen.
 * `at.js` Version 1.5.0 ist jetzt enthalten. Adobe empfiehlt die Verwendung von [Adobe Experience Platform Launch](https://business.adobe.com/de/products/experience-platform/launch.html), um `at.js` v1.x in der Website bereitzustellen.
@@ -308,7 +307,7 @@ Site-Admins können eine Gruppe auf jeder Hierarchieebene erstellen und zu Stand
 Die Aktivierungsfunktion von AEM 6.5 Communities unterstützt die Engine „Shareable Content Object Reference Model“ [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/).
 
 * Unterstützte Tastaturnavigation bei Aktivierungskomponenten
-* Aktivierungskomponenten (z. B. für Katalog und Kurswiedergabe, Zuweisungen, Dateibibliothek) in AEM Communities unterstützen die Tastaturnavigation und sorgen so für verbesserte Barrierefreiheit.
+* Aktivierungskomponenten (z. B. &quot;Katalog- und Kurswiedergabe&quot;, &quot;Zuweisungen&quot;, &quot;Dateibibliothek&quot;) in AEM Communities unterstützen die Tastaturnavigation für eine verbesserte Barrierefreiheit.
 
 ##### Weitere Verbesserungen {#other-enhancements}
 
@@ -365,9 +364,9 @@ In großen Unternehmen ist die zur Erstellung von Websites erforderliche Infrast
 
 [!DNL Experience Manager Sites] bietet Funktionen zum Erstellen von Web-Seiten, während das Digital Asset Management (DAM)-System ist, das die für Websites erforderlichen Assets bereitstellt. [!DNL Experience Manager Assets] [!DNL Experience Manager] unterstützt nun dank Integration von [!DNL Sites] und [!DNL Assets] das obige Nutzungsszenario. Siehe [Konfigurieren und Verwenden der Funktion „Connected Assets“](/help/assets/use-assets-across-connected-assets-instances.md).
 
-![Ziehen eines Assets aus einer [!DNL Experience Manager]-Implementierung auf einer [!DNL Sites]-Seite einer anderen [!DNL Experience Manager]-Implementierung](/help/release-notes/assets/connected-assets-drag-and-drop-only.gif)
+![Ziehen eines Assets aus einer [!DNL Experience Manager]-Bereitstellung auf einer [!DNL Sites]-Seite einer anderen [!DNL Experience Manager]-Bereitstellung](/help/release-notes/assets/connected-assets-drag-and-drop-only.gif)
 
-*Abbildung: Ziehen eines Assets aus einer [!DNL Experience Manager]-Implementierung auf einer [!DNL Sites]-Seite einer anderen [!DNL Experience Manager]-Implementierung.*
+*Abbildung: Ziehen eines Assets aus einer [!DNL Experience Manager]-Bereitstellung auf einer [!DNL Sites]-Seite einer anderen [!DNL Experience Manager]-Bereitstellung.*
 
 #### Dynamic Media {#dynamic-media}
 
@@ -521,20 +520,20 @@ Für [!DNL Adobe Experience Manager] 6.5 sollten Sie die [Liste veralteter und 
 
 * Es wird ein Problem gemeldet, bei dem CRX-Quickstart und sein Inhalt gelöscht werden.
 
-   Stellen Sie bei jeder dieser Aktionen sicher, dass die Eigenschaft `htmllibmanager.fileSystemOutputCacheLocation` keine leere Zeichenfolge ist:
+  Stellen Sie bei jeder dieser Aktionen sicher, dass die Eigenschaft `htmllibmanager.fileSystemOutputCacheLocation` keine leere Zeichenfolge ist:
 
    1. Bei einem Aufruf von `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`.
    2. Aktualisieren auf AEM 6.5.
    3. Ausführen von „Lazy Content Migration“ in AEM 6.5.
 
-   Ein [Knowledgebase](https://helpx.adobe.com/de/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html)-Artikel mit weiteren Details und einer Umgehungslösung für dieses Problem ist verfügbar.
+  Ein [Knowledgebase](https://helpx.adobe.com/de/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html)-Artikel mit weiteren Details und einer Umgehungslösung für dieses Problem ist verfügbar.
 
 * Wenn Sie JDK 11 mit einer AEM 6.5-Instanz verwenden, werden einige der Seiten nach der Bereitstellung einiger Pakete möglicherweise als leer angezeigt. Die folgende Fehlermeldung wird in der Protokolldatei angezeigt:
 
-   ```java
-   *ERROR* [OsgiInstallerImpl] org.apache.sling.scripting.sightly bundle org.apache.sling.scripting.sightly:1.1.2.1_4_0 (558)[org.apache.sling.scripting.sightly.impl.engine.extension.use.JavaUseProvider(3345)] : Error during instantiation of the implementation object (java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl)
-   java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
-   ```
+  ```java
+  *ERROR* [OsgiInstallerImpl] org.apache.sling.scripting.sightly bundle org.apache.sling.scripting.sightly:1.1.2.1_4_0 (558)[org.apache.sling.scripting.sightly.impl.engine.extension.use.JavaUseProvider(3345)] : Error during instantiation of the implementation object (java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl)
+  java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
+  ```
 
 Um diesen Fehler zu beheben:
 
@@ -582,7 +581,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
    * Mehrere: False
    * Auto Created: False
 
-   Durch diese Eigenschaft können Client-Bibliotheken unter dem Laufzeitordner auf Proxys zugreifen (CQ-4268679)
+  Durch diese Eigenschaft können Client-Bibliotheken unter dem Laufzeitordner auf Proxys zugreifen (CQ-4268679)
 
 * Wenn AEM Forms gestartet wird, wird die Meldung `SAX Security Manager could not be setup` angezeigt.
 * Wenn Sie eine mit AEM Forms Document Security geschützte PDF-Datei auf einem Apple iOS oder iPadOS Version 20.10.00 mit Adobe Acrobat Reader öffnen.

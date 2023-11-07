@@ -2,10 +2,10 @@
 title: Experience Fragments
 description: Experience Fragments  in der Adobe Experience Manager Sites-Bearbeitung.
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 99%
+source-wordcount: '1440'
+ht-degree: 95%
 
 ---
 
@@ -37,7 +37,7 @@ Experience Fragments können in folgenden Fällen verwendet werden:
 >
 >    `experience-fragments-editors`
 >
-Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
+Falls Probleme auftreten, wenden Sie sich an Ihre Systemadmins.
 
 ## Wann ist die Verwendung von Experience Fragments sinnvoll? {#when-should-you-use-experience-fragments}
 
@@ -55,7 +55,7 @@ Experience Fragments sollten in folgenden Fällen verwendet werden:
 * Wenn Sie über ein Erlebnis mit unterschiedlichen Varianten oder Ausgabedarstellungen verfügen.
 
    * Kanal- oder kontextspezifische Varianten
-   * Erlebnisse, für die eine Gruppierung sinnvoll ist (z. B. eine Kampagne, die abhängig vom jeweiligen Kanal unterschiedliche Erlebnisse liefert)
+   * Erlebnisse, die eine Gruppierung sinnvoll sind (z. B. eine Kampagne mit unterschiedlichen Erlebnissen über verschiedene Kanäle hinweg)
 
 * Wenn Sie Omni-Channel-Commerce betreiben.
 
@@ -135,7 +135,7 @@ Dies ist die empfohlene Methode zur Angabe der **zulässigen Vorlagen**, da die 
 >
 Es wird nicht empfohlen, die **zulässigen Vorlagen** mit dieser Methode zu ändern, da die angegebenen Vorlagen bei einer Aktualisierung überschrieben werden können.
 >
-Verwenden Sie diesen Dialog nur zu Informationszwecken.
+Verwenden Sie dieses Dialogfeld nur zu Informationszwecken.
 
 1. Navigieren Sie zur gewünschten Konsole **Experience Fragments**.
 
@@ -234,7 +234,7 @@ Je nach Ihren Anforderungen können Sie Varianten eines Experience Fragments ers
 
    ![xf-06](assets/xf-06.png)
 
-1. Bestätigen Sie Ihre Auswahl mit der Option **Fertig** (Häkchen). Daraufhin wird die neue Variante im Bedienfeld angezeigt:
+1. Bestätigen mit **Fertig** (Häkchensymbol) wird die neue Variante im Bedienfeld angezeigt:
 
    ![xf-07](assets/xf-07.png)
 
@@ -267,7 +267,7 @@ Sie können eine oder mehrere Komponenten auswählen, um einen Baustein zur Wied
 
 ### Erstellen eines Bausteins {#creating-a-building-block}
 
-So erstellen Sie einen neuen Baustein:
+So erstellen Sie einen Baustein:
 
 1. Wählen Sie im Experience Fragment-Editor die Komponenten aus, die Sie wiederverwenden möchten:
 
@@ -281,7 +281,7 @@ So erstellen Sie einen neuen Baustein:
 
    ![xf-11](assets/xf-11.png)
 
-1. Der **Baustein** wird auf der Registerkarte angezeigt und kann im Absatzsystem ausgewählt werden:
+1. Die **Baustein** wird auf der Registerkarte angezeigt und kann im Absatzsystem ausgewählt werden:
 
    ![xf-12](assets/xf-12.png)
 

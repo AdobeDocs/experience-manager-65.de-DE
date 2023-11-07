@@ -11,10 +11,10 @@ feature: Dynamic Media Classic
 role: User, Admin
 mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: d947bd98b3a0f6fd79cde5b5b2fca23487077da3
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '2845'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -53,6 +53,7 @@ Sie können digitale Assets wie folgt in Dynamic Media Classic veröffentlichen:
 >[!NOTE]
 >
 >Experience Manager veröffentlicht asynchron in Dynamic Media Classic. Nachdem Sie **[!UICONTROL Veröffentlichen]** ausgewählt haben, dauert es mehrere Sekunden, bis Ihr Asset in Dynamic Media Classic veröffentlicht wird.
+>
 
 ## Dynamic Media Classic-Komponenten {#scene-components}
 
@@ -130,8 +131,8 @@ Informationen hierzu finden Sie auch unter [Responsives Design für Web-Seiten](
 Auch wenn sich die Konfigurationsoptionen unterscheiden, sind folgende Einstellungen für alle [!UICONTROL Dynamic Media Classic]-Komponenten gleich:
 
 * **[!UICONTROL Dateiverweis]**: Navigieren Sie zu einer Datei, die Sie referenzieren möchten. Der Dateiverweis zeigt die Asset-URL und nicht zwangsläufig die vollständige Dynamic Media Classic-URL, einschließlich der URL-Befehle und -Parameter. Das Hinzufügen von Dynamic Media Classic-URL-Befehlen und -Parametern ist in diesem Feld nicht möglich. Stattdessen fügen Sie sie über die entsprechende Funktionalität in der Komponente hinzu.
-* **[!UICONTROL Breite]**: Hiermit kann die Breite angepasst werden.
-* **[!UICONTROL Höhe]**: Hiermit kann die Höhe angepasst werden.
+* **[!UICONTROL Breite]**: Hier können Sie die Breite festlegen.
+* **[!UICONTROL Höhe]**: Hier können Sie die Höhe festlegen.
 
 Sie können diese Konfigurationsoptionen festlegen, indem Sie eine Dynamic Media Classic-Komponente (per Doppelklick) öffnen. Zum Beispiel beim Öffnen einer **[!UICONTROL Zoom]**-Komponente:
 
@@ -175,7 +176,7 @@ Mit der Dynamic Media Classic-Komponente **[!UICONTROL Bild]** können Sie Bilde
 
 **[!UICONTROL Bildvorgabe]**: Wählen Sie im Dropdown-Menü eine vorhandene Bildvorgabe aus. Wenn die gewünschte Bildvorgabe nicht sichtbar ist, müssen Sie sie sichtbar machen. Siehe [Verwalten von Bildvorgaben](/help/assets/managing-image-presets.md). Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 
-**[!UICONTROL Ausgabeformat]**: Wählen Sie das Ausgabeformat des Bildes aus, beispielsweise JPEG. In Abhängigkeit des von Ihnen ausgewählten Ausgabeformats stehen Ihnen zusätzliche Konfigurationsoptionen zur Verfügung. Siehe [Best Practices für Bildvorgaben](/help/assets/managing-image-presets.md#image-preset-options).
+**[!UICONTROL Ausgabeformat]** - Wählen Sie das Ausgabeformat des Bildes aus, z. B. jpeg. In Abhängigkeit des von Ihnen ausgewählten Ausgabeformats stehen Ihnen zusätzliche Konfigurationsoptionen zur Verfügung. Siehe [Best Practices für Bildvorgaben](/help/assets/managing-image-presets.md#image-preset-options).
 
 **[!UICONTROL Scharfzeichnen]**: Wählen Sie aus, wie Sie das Bild scharfzeichnen möchten. Das Scharfzeichnen wird unter [Best Practices für Bildvorgaben](/help/assets/managing-image-presets.md#image-preset-options) und [Best Practices für das Scharfzeichnen](/help/assets/assets/sharpening_images.pdf) detailliert beschrieben.
 
@@ -272,10 +273,9 @@ Wenn Sie über mehrere Konfigurationen verfügen, zeigt Experience Manager stand
 >   * Einzelnes MP4-Video
 >   * Einzelnes F4V-Video
 
-
 ### Durchsuchen von Inhalt auf der Touch-optimierten Benutzeroberfläche {#browsing-content-in-the-touch-optimized-ui}
 
-Sie können über die Touch-optimierte oder klassische Benutzeroberfläche auf den Inhaltsbrowser zugreifen. Zurzeit weist die Touch-optimierte Benutzeroberfläche die folgende Begrenzung auf:
+Sie können entweder über die Touch-optimierte oder die klassische Benutzeroberfläche auf den Inhaltsbrowser zugreifen. Derzeit gilt für die Touch-optimierte Funktion die folgende Einschränkung:
 
 * FXG- und Flash-Assets aus Dynamic Media Classic werden nicht unterstützt.
 
@@ -287,21 +287,20 @@ Durchsuchen Sie Dynamic Media Classic-Assets, indem Sie **[!UICONTROL Dynamic Me
 >* Wenn Sie einen sicheren Vorschauserver festgelegt haben, verwendet der Browser diesen Vorschauserver zum Darstellen von Miniaturansichten und Assets.
 >
 
-
 ![chlimage_1-240](assets/chlimage_1-240.png)
 
 Zusätzlich können Sie Informationen über Auflösung, Größe, Tage seit der Änderung und Dateiname erhalten, indem Sie den Mauszeiger über das Asset im Browser halten.
 
 ![chlimage_1-241](assets/chlimage_1-241.png)
 
-* Bei adaptiven Videosets und -vorlagen werden für Miniaturansichten keine Größeninformationen generiert.
-* Bei adaptiven Videosets wird für Miniaturansichten keine Auflösung generiert.
+* Für adaptive Videosets und Vorlagen werden keine Größeninformationen für Miniaturansichten generiert.
+* Für adaptive Videosets wird keine Auflösung für Miniaturansichten generiert.
 
 ### Suchen nach Dynamic Media Classic-Assets mit dem Inhaltsbrowser {#searching-for-scene-assets-with-the-content-browser}
 
 Die Suche nach Assets in Dynamic Media Classic ähnelt der Suche nach Assets in Experience Manager Assets. Während der Suche wird Ihnen tatsächlich eine Remote-Ansicht der Assets im Dynamic Media Classic-System angezeigt. Es erfolgt kein direkter Import in Experience Manager.
 
-Sie können die klassische oder Touch-optimierte Benutzeroberfläche verwenden, um Assets anzuzeigen und nach ihnen zu suchen. In Abhängigkeit von der Oberfläche unterscheidet sich die Art und Weise der Suche etwas.
+Sie können entweder die klassische oder die Touch-optimierte Benutzeroberfläche verwenden, um Assets anzuzeigen und nach ihnen zu suchen. Je nach Benutzeroberfläche unterscheidet sich die Suchweise geringfügig.
 
 Wenn Sie auf einer der Benutzeroberflächen suchen, können Sie nach den folgenden Kriterien filtern (wird hier in der Touch-optimierten Benutzeroberfläche gezeigt):
 
@@ -336,7 +335,6 @@ Standardmäßig durchsucht Experience Manager den ausgewählten Ordner und alle 
 >* Beim Durchsuchen eines Videos suchen Sie nach einer einzelnen Ausgabedarstellung. Die Ergebnisse geben die ursprüngliche (nur &amp;ast;.mp4) und die kodierte Ausgabedarstellung zurück.
 >* Beim Suchen nach einem adaptiven Videoset durchsuchen Sie den Ordner und alle Unterordner, jedoch nur dann, wenn Sie zur Suche ein Keyword hinzugefügt haben. Wenn Sie kein Keyword hinzugefügt haben, durchsucht Experience Manager die Unterordner nicht.
 >
-
 
 **[!UICONTROL Veröffentlichungsstatus]**: Sie können Assets nach dem Veröffentlichungsstatus filtern: **[!UICONTROL Unveröffentlicht]** oder **[!UICONTROL Veröffentlicht]**. Wenn Sie keinen **[!UICONTROL Veröffentlichungsstatus]** auswählen, durchsucht Experience Manager standardmäßig alle Veröffentlichungsstatus.
 

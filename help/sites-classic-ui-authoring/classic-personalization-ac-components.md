@@ -1,18 +1,16 @@
 ---
 title: Adobe Campaign-Komponenten
 description: Wenn Sie eine Integration mit Adobe Campaign durchführen, stehen Ihnen Komponenten für die Arbeit mit Newslettern und Formularen zur Verfügung.
-uuid: cc9417c9-4cc1-4554-858e-2ecd682dc92f
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 5afe864d-5794-4ffa-99e7-a3233f982aff
 docset: aem65
 exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 98%
+source-wordcount: '2530'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +22,7 @@ Wenn Sie eine Integration mit Adobe Campaign durchführen, stehen Ihnen Kompone
 >
 >Die E-Mail-Komponenten von AEM werden nicht mehr unterstützt. Aufgrund der Art von E-Mails, bei denen Inhalt und Stil zusammengeführt werden, können die standardmäßig von AEM bereitgestellten E-Mail-Komponenten von Kunden nur eingeschränkt wiederverwendet werden, da benutzerdefinierte Stile in allen Komponenten implementiert werden müssen, die für Projekte erforderlich sind.
 >
->E-Mail-Komponenten können auf Projektebene implementiert werden. Die veralteten AEM-E-Mail-Komponenten veranschaulichen, wie dies erreicht werden kann. Diese veralteten Komponenten sollten jedoch nicht für Projekte verwendet werden.
+>E-Mail-Komponenten können auf Projektebene implementiert werden. Die veralteten AEM-E-Mail-Komponenten veranschaulichen, wie dies erreicht werden kann. Verwenden Sie diese veralteten Komponenten jedoch nicht für Projekte.
 
 ## Adobe Campaign-Newsletter-Komponenten {#adobe-campaign-newsletter-components}
 
@@ -73,7 +71,7 @@ Die Komponente „Bild (Campaign)“ zeigt ein Bild und begleitenden Text gemä�
 
 Sie können ein Bild hochladen und dieses anschließend bearbeiten und anpassen (beispielsweise zuschneiden, drehen oder Links/Titel/Text hinzufügen).
 
-Sie können ein Bild hochladen und dieses anschließend bearbeiten und manipulieren (beispielsweise zuschneiden, drehen oder Links/Titel/Text hinzufügen). Sie können ein Bild aus der [Inhaltssuche](/help/sites-authoring/author-environment-tools.md#thecontentfinderclassicui) per Drag-and-Drop direkt auf die Komponente oder ihren Bearbeitungsdialog ziehen. Sie können auch im zentralen Bereich des Bearbeitungsdialogs doppelklicken, um Ihr lokales Dateisystem zu durchsuchen und ein Bild hochzuladen. Die beiden Registerkarten des Bearbeitungsdialogs steuern auch alle Definitionen und Bearbeitungen des Bildes:
+Sie können ein Bild hochladen und dieses anschließend bearbeiten und anpassen (beispielsweise zuschneiden, drehen oder Links/Titel/Text hinzufügen). Sie können ein Bild aus der [Inhaltssuche](/help/sites-authoring/author-environment-tools.md#thecontentfinderclassicui) per Drag-and-Drop direkt auf die Komponente oder ihren Bearbeitungsdialog ziehen. Sie können auch im zentralen Bereich des Bearbeitungsdialogs doppelklicken, um Ihr lokales Dateisystem zu durchsuchen und ein Bild hochzuladen. Die beiden Registerkarten des Bearbeitungsdialogs steuern auch alle Definitionen und Bearbeitungen des Bildes:
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
 
@@ -175,7 +173,7 @@ Ziehen Sie ein Bild aus dem Content Finder oder klicken Sie, um zu einem Bild zu
 * **Bildeigenschaften** (**Erweiterte Bildeigenschaften**) Hier können Sie Folgendes angeben:
 
    * **Titel**
-Der Titel des Blocks, der angezeigt wird, wenn Sie mit der Maus darauf zeigen.
+Der Titel des Blocks, der durch Bewegen der Maus angezeigt wird.
 
    * **ALT-Text**
 Alternativer Text, der angezeigt wird, wenn das Bild nicht dargestellt werden kann.
@@ -327,7 +325,7 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Kontrollkästchen (Campai
 
 ### „Datumsfeld (Kampagne)“ und „Datumsfeld/HTML 5 (Kampagne)“ {#date-field-campaign-and-date-field-html-campaign}
 
-Verwenden Sie das Datumsfeld, um den Empfängerinnen und Empfängern eine Datumseingabe zu ermöglichen. Sie können beispielsweise von ihnen verlangen, ihr Geburtsdatum anzugeben. Das Datumsformat entspricht dem Format, das in Ihrer Adobe Campaign-Instanz verwendet wird.
+Verwenden Sie das Datumsfeld, um Empfängern ein Datum zu geben. Beispielsweise können Sie von den Empfängern verlangen, ihr Geburtsdatum anzugeben. Das Datumsformat entspricht dem Format, das in Ihrer Adobe Campaign-Instanz verwendet wird.
 
 Neben den [von den meisten Adobe Campaign-Komponenten genutzten Einstellungen](#settings-common-to-most-components) können Sie auch Folgendes konfigurieren:
 
@@ -378,7 +376,7 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Ausgeblendeter Abstimmsch
 
 ### Numerisches Feld (Campaign) {#numeric-field-campaign}
 
-Verwenden Sie das numerische Feld, um Empfängerinnen und Empfängern die Eingabe von Zahlen zu ermöglichen, z. B. ihres Alters.
+Verwenden Sie das numerische Feld, damit Empfänger Zahlen eingeben können, z. B. ihr Alter.
 
 Neben den [von den meisten Adobe Campaign-Komponenten genutzten Einstellungen](#settings-common-to-most-components) können Sie auch Folgendes konfigurieren:
 

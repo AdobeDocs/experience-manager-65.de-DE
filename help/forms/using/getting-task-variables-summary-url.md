@@ -1,30 +1,26 @@
 ---
-title: Aufrufen von Aufgabenvariablen in der Zusammenfassungs-URL
-seo-title: Getting Task Variables in Summary URL
-description: Gehen Sie wie folgt vor, um die Informationen zu einer Aufgabe erneut zu verwenden und eine Zusammenfassungs-URL für die Zusammenfassung oder Beschreibung einer Aufgabe zu generieren.
-seo-description: How-to reuse the information about a task and generate a Summary URL to summarize or describe a task.
-uuid: 9eab3a6a-a99a-40ae-b483-33ec7d21c5b6
+title: Abrufen von Aufgabenvariablen in der Zusammenfassungs-URL
+description: Gehen Sie wie folgt vor, um die Informationen zu einer Aufgabe wiederzuverwenden und eine Zusammenfassungs-URL zu generieren, um eine Aufgabe zusammenzufassen oder zu beschreiben.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 exl-id: b5e27b54-d141-48dd-a4ed-dd0a691319a5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '432'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '431'
+ht-degree: 20%
 
 ---
 
-# Aufrufen von Aufgabenvariablen in der Zusammenfassungs-URL {#getting-task-variables-in-summary-url}
+# Abrufen von Aufgabenvariablen in der Zusammenfassungs-URL {#getting-task-variables-in-summary-url}
 
-Auf der Zusammenfassungsseite werden aufgabenbezogene Informationen angezeigt. Dieser Artikel beschreibt, wie Sie aufgabenbezogene Informationen auf der Zusammenfassungssseite wiederverwenden können.
+Auf der Zusammenfassungsseite werden aufgabenbezogene Informationen angezeigt. In diesem Artikel wird beschrieben, wie Sie aufgabenbezogene Informationen auf der Zusammenfassungsseite wiederverwenden können.
 
-In dieser Beispielorchestrierung reicht ein Mitarbeiter ein Urlaubsantragsformular ein. Das Antragsformular geht dann zur Genehmigung an den Manager des Mitarbeiters.
+In dieser Beispielorchestrierung sendet ein Mitarbeiter ein Urlaubsantragsformular. Das Antragsformular wird dann zur Genehmigung an den Vorgesetzten des Mitarbeiters weitergeleitet.
 
-1. Erstellen Sie einen Beispiel-HTML-Renderer (html.esp) für resourseType **Employees/PtoApplication**.
+1. Erstellen eines HTML-Renderers (html.esp) für resourceType **Employees/PtoApplication**.
 
-   Der Renderer setzt voraus, dass die folgenden Eigenschaften für den Knoten festgelegt wurden:
+   Der Renderer geht davon aus, dass die folgenden Eigenschaften für den Knoten festgelegt werden:
 
    * ename
    * empid
@@ -58,33 +54,33 @@ In dieser Beispielorchestrierung reicht ein Mitarbeiter ein Urlaubsantragsformul
    </html>
    ```
 
-1. Ändern Sie die Orchestrierung, um die vier Eigenschaften aus den übermittelten Formulardaten zu extrahieren. Anschließend erstellen Sie in CRX einen Knoten vom Typ **Employees/PtoApplication**, für den die Eigenschaften ausgefüllt sind.
+1. Ändern Sie die Orchestrierung, um die vier Eigenschaften aus den gesendeten Formulardaten zu extrahieren. Erstellen Sie anschließend einen Knoten des Typs CRX . **Employees/PtoApplication**, wobei die Eigenschaften ausgefüllt sind.
 
-   1. Erstellen Sie einen Prozess **create PTO summary** und verwenden Sie diesen als Teilprozess vor dem **Assign Task**-Vorgang in der Orchestrierung.
+   1. Erstellen eines Prozesses **PTO-Zusammenfassung erstellen** und verwenden Sie dies als Teilprozess vor dem **Aufgabe zuweisen** -Operation in Ihrer Orchestrierung.
    1. Definieren Sie **employeeName**, **employeeID**, **ptoReason**, **totalDays** und **nodeName** als Eingabevariablen in dem neuen Prozess. Diese Variablen werden als gesendete Formulardaten übergeben.
 
-      Definieren Sie auch eine Ausgabevariable **ptoNodePath**, die bei der Festlegung der Zusammenfassungs-URL verwendet wird.
+      Definieren Sie außerdem eine Ausgabevariable. **ptoNodePath** wird beim Festlegen der Zusammenfassungs-URL verwendet.
 
    1. Verwenden Sie im Prozess **create PTO summary** die Komponente **set value**, um die Eingabedetails in einer Zuordnung **nodeProperty** (**nodeProps** ) festzulegen.
 
-      Die Schlüssel in dieser Zuordnung müssen identisch mit den Schlüsseln sein, die in Ihrem HTML-Renderer im vorherigen Schritt definiert wurden.
+      Die Schlüssel in dieser Zuordnung sollten mit den Schlüsseln übereinstimmen, die im vorherigen Schritt im HTML-Renderer definiert wurden.
 
-      Fügen Sie in der Zuordnung außerdem einen Schlüssel **sling:resourceType** mit dem Wert **Employees/PtoApplication** hinzu.
+      Fügen Sie außerdem eine **sling:resourceType** Schlüssel mit Wert **Employees/PtoApplication** in der Karte.
 
-   1. Verwenden Sie den Teilprozess **storeContent** aus dem **ContentRepositoryConnector**-Dienst im Prozess **create PTO summary**. Dieser Teilprozess erstellt einen CRX-Knoten.
+   1. Teilprozess verwenden **storeContent** aus dem **ContentRepositoryConnector** im **PTO-Zusammenfassung erstellen** -Prozess. Dieser Teilprozess erstellt einen CRX-Knoten.
 
-      Er akzeptiert drei Eingabevariablen:
+      Es sind drei Eingabevariablen erforderlich:
 
-      * **Ordnerpfad**: Der Pfad, in dem der neue CRX-Knoten erstellt wird. Legen Sie den Pfad auf **/content** fest.
+      * **Ordnerpfad**: Der Pfad, in dem der neue CRX-Knoten erstellt wird. Legen Sie den Pfad als **/content**.
       * **Knotenname**: Weisen Sie diesem Feld die Eingabevariable nodeName zu. Dies ist eine eindeutige Knotennamen-Zeichenfolge.
-      * **Knotentyp**: Definieren Sie den Typ als **nt:unstructured**. Die Ausgabe dieses Prozesses ist nodePath. NodePath ist der CRX-Pfad des neu erstellten Knotens. NodePath stellt die endgültige Ausgabe des Prozesses **create PTO summary** dar.
-   1. Übergeben Sie die gesendeten Formulardaten (**employeeName**, **employeeID**, **ptoReason** und **totalDays**) als Eingabe für den neuen Prozess **create PTO summary**. Übernehmen Sie die Ausgabe als **ptoSummaryNodePath**.
+      * **Knotentyp**: Definieren Sie den Typ als **nt:unstructured**. Die Ausgabe dieses Prozesses ist nodePath. Der nodePath ist der CRX-Pfad des neu erstellten Knotens. NodePath ist die endgültige Ausgabe der **PTO erstellen** Zusammenfassungsprozess.
 
+   1. Übergeben Sie die gesendeten Formulardaten (**employeeName**, **employeeID**, **ptoReason**, und **totalDays**) als Eingabe für den neuen Prozess **PTO-Zusammenfassung erstellen**. Übernehmen Sie die Ausgabe als **ptoSummaryNodePath**.
 
-1. Definieren Sie die Zusammenfassungs-URL als XPath-Ausdruck, der die Serverdetails zusammen mit **ptoSummaryNodePath** enthält.
+1. Definieren Sie die Zusammenfassungs-URL als XPath-Ausdruck, der die Serverdetails zusammen mit **ptoSummaryNodePath**.
 
    XPath: `concat('https://[*server*]:[*port*]/lc',/process_data/@ptoSummaryNodePath,'.html')`.
 
 Wenn Sie in AEM Forms Workspace eine Aufgabe öffnen, greift die Zusammenfassungs-URL auf den CRX-Knoten zu und der HTML-Renderer zeigt die Zusammenfassung an.
 
-Das Zusammenfassungs-Layout kann geändert werden, ohne den Prozess zu ändern. Der HTML-Renderer zeigt die Zusammenfassung entsprechend an.
+Das Zusammenfassungslayout kann geändert werden, ohne den Prozess zu ändern. Der HTML-Renderer zeigt die Zusammenfassung entsprechend an.

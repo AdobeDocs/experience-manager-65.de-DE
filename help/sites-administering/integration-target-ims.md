@@ -2,10 +2,10 @@
 title: Integration mit Adobe Target mithilfe von IMS
 description: Erfahren Sie mehr über die Integration von AEM mit Adobe Target mithilfe von IMS..
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 67%
+source-wordcount: '1556'
+ht-degree: 70%
 
 ---
 
@@ -47,7 +47,7 @@ Der erste Schritt der Konfiguration besteht darin, in AEM eine IMS-Konfiguration
 1. Öffnen Sie in AEM das Menü **Tools**.
 1. Im **Sicherheit** Bereich, wählen Sie **Adobe IMS-Konfigurationen**.
 1. Wählen Sie **Erstellen** aus, um **Technische Kontokonfiguration für Adobe IMS** zu öffnen.
-1. Dropdown-Liste unter **Cloud-Konfiguration** auswählen **Adobe Target**.
+1. Wählen Sie in der Dropdown-Liste unter **Cloud-Konfiguration** die Option **Adobe Target** aus.
 1. Aktivieren Sie **Neues Zertifikat erstellen** und geben Sie einen neuen Alias ein.
 1. Bestätigen Sie mit **Zertifikat erstellen**.
 
@@ -79,9 +79,9 @@ Um ein Projekt mit Adobe Target zu erstellen, das AEM verwenden können, öffnen
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. Alle Projekte, die Sie haben, werden angezeigt. Auswählen **Neues Projekt erstellen** - Ort und Nutzung hängen von Folgendem ab:
+1. Alle vorhandenen Projekte werden angezeigt. Auswählen **Neues Projekt erstellen** - Ort und Nutzung hängen von Folgendem ab:
 
-   * Wenn Sie noch kein Projekt haben, **Neues Projekt erstellen** ist zentriert, unten.
+   * Wenn Sie noch kein Projekt haben, befindet sich **Neues Projekt erstellen** unten in der Mitte.
      ![Neues Projekt erstellen – Erstes Projekt](assets/integration-target-io-02.png)
    * Wenn Sie bereits über vorhandene Projekte verfügen, werden diese aufgelistet und **Neues Projekt erstellen** oben rechts.
      ![Neues Projekt erstellen – Mehrere Projekte](assets/integration-target-io-03.png)
@@ -89,7 +89,7 @@ Um ein Projekt mit Adobe Target zu erstellen, das AEM verwenden können, öffnen
 
 1. Wählen Sie **Zum Projekt hinzufügen** und dann **API** aus:
 
-   ![Adobe-Entwicklerkonsole](assets/integration-target-io-10.png)
+   ![Adobe Developer Console](assets/integration-target-io-10.png)
 
 1. Wählen Sie **Adobe Target** aus und klicken Sie dann auf **Weiter**:
 
@@ -105,7 +105,7 @@ Um ein Projekt mit Adobe Target zu erstellen, das AEM verwenden können, öffnen
 
 1. Überprüfen Sie die Anmeldeinformationen und setzen Sie den Vorgang mit **Weiter** fort:
 
-   ![Erstellen eines neuen Projekts](assets/integration-target-io-15.png)
+   ![Erstellen eines Projekts](assets/integration-target-io-15.png)
 
 1. Wählen Sie die erforderlichen Produktprofile aus und setzen Sie den Vorgang mit **Konfigurierte API speichern** fort:
 
@@ -177,7 +177,7 @@ Um zur AEM zurückzukehren, können Sie die IMS-Konfiguration abschließen, inde
 
 1. Bestätigen Sie mit **Erstellen**.
 
-1. Ihre Adobe Target-Konfiguration wird in der AEM Console angezeigt.
+1. Ihre Adobe Target-Konfiguration wird in der AEM-Konsole angezeigt.
 
    ![Konfiguration des technischen Adobe IMS-Kontos](assets/integrate-target-io-11.png)
 

@@ -5,10 +5,10 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 93%
+source-wordcount: '1723'
+ht-degree: 92%
 
 ---
 
@@ -60,7 +60,7 @@ Gehen Sie wie folgt vor, um die Ereignisse zu abonnieren:
 1. Gehen Sie in den Cloud-Services zur Registerkarte „Projektverknüpfte Ordner“.
 1. Übergeordneter Pfad des verknüpften Ordners: Wählen Sie einen Ordner im DAM aus, in dem Sie die verknüpften Ordner erstellen möchten. Wenn Sie das Feld leer lassen, wird standardmäßig /content/dam verwendet. Stellen Sie sicher, dass das Metadatenschema für Workfront-Tools und das Metadatenschema für Workfront-Ordner mit verknüpften Ordnern auf den ausgewählten Ordner angewendet wurden.
 1. Verknüpfte Ordnerstruktur: Geben Sie durch Kommas getrennte Werte ein. Jeder Wert sollte `DE:<some-project-custom-form-field>`, Portfolio, Programm, Jahr, Name oder ein „literaler Zeichenfolgenwert“ sein (letzteres in Anführungszeichen). Er ist derzeit auf Portfolio,Programm,Jahr,DE:Projekttyp,Name festgelegt.
-1. Das Kontrollkästchen „Verknüpfte Ordnertitel in Workfront unter Verwendung der Namen der Ordnerstruktur erstellen“ sollte aktiviert werden, wenn der Titel des Ordners in Workfront alle Ordner in der Struktur enthalten soll. Andernfalls wird der Titel des letzten Ordners verwendet.
+1. Das Kontrollkästchen „Verknüpfte Ordnertitel in Workfront unter Verwendung der Namen der Ordnerstruktur erstellen“ sollte aktiviert werden, wenn der Titel des Ordners in Workfront alle Ordner in der Struktur enthalten soll. Andernfalls ist es der Titel des letzten Ordners.
 1. Im Mehrfachfeld „Unterordner“ können Sie eine Liste von Ordnern angeben, die als Unterordner des verknüpften Ordners erstellt werden sollen.
 1. Projektstatus: Wählen Sie den Status des Projekts aus, um den verknüpften Ordner zu erstellen.
 1. Erstellen Sie einen verknüpften Ordner in Projekten mit Portfolio: Liste der Portfolios, zu denen das Projekt gehören muss, um den verknüpften Ordner zu erstellen. Lassen Sie diese Liste leer, wenn der verknüpfte Ordner für alle Projektportfolios erstellt werden soll.
@@ -95,7 +95,7 @@ Die Zuordnung von Metadaten zwischen Adobe Workfront-Dokumenten und Assets wird 
 Gehen Sie wie folgt vor, um die Zuordnungen zu konfigurieren:
 
 1. Navigieren Sie zu **Tools** > **Assets** > **Metadatenschemata**.
-1. Wählen Sie das Metadatenschema-Formular aus, das Sie bearbeiten möchten, und klicken Sie auf **Bearbeiten** oder erstellen Sie ein neues Metadatenschema von Grund auf.
+1. Wählen Sie das Metadatenschema-Formular aus, das Sie bearbeiten möchten, und klicken Sie auf **Bearbeiten** oder erstellen Sie ein Metadatenschema von Grund auf neu.
 1. Wählen Sie das Metadatenschema-Formularfeld aus, das Sie bearbeiten möchten, und wählen Sie die Registerkarte **Einstellungen** im rechten Bedienfeld.
 1. Wählen Sie in [!DNL Workfront] unter „Benutzerdefiniertes Formularfeld“ den Namen des [!DNL Workfront]-Feldes, das Sie der ausgewählten AEM-Eigenschaft zuordnen möchten. Verfügbare Optionen sind:
 
@@ -173,7 +173,7 @@ Um den Versionsverlauf von Assets in AEM beizubehalten, konfigurieren Sie die As
 
 1. Wählen Sie die Option **[!UICONTROL Assets mit demselben Namen wie Versionen des vorhandenen Assets speichern]**. Wenn diese Option aktiviert ist, können Sie Assets speichern, die mit demselben Namen und demselben Speicherort wie die Version des vorhandenen Assets hochgeladen wurden. Wenn diese Option deaktiviert ist, wird ein neues Asset mit einem anderen Namen erstellt (z. B. `asset-name.pdf` und `asset-name-1.pdf`).
 
-1. Wählen Sie die Option **[!UICONTROL Asset-Metadaten beim Erstellen einer neuen Version aktualisieren]**. Wenn diese Option aktiviert ist, werden die Asset-Metadaten bei jeder Erstellung einer neuen Version des Assets aktualisiert. Wenn diese Option deaktiviert ist, behält das Asset die Metadaten bei, die es vor dem Erstellen der neuen Version hatte.
+1. Option auswählen **[!UICONTROL Aktualisieren von Asset-Metadaten beim Erstellen einer Version]**. Wenn diese Option aktiviert ist, werden die Asset-Metadaten bei jeder Erstellung einer neuen Version des Assets aktualisiert. Wenn diese Option deaktiviert ist, behält das Asset die Metadaten bei, die es vor dem Erstellen der neuen Version hatte.
 
 ![Asset-Versionierung konfigurieren](/help/assets/assets/wf-config-versioning.png)
 

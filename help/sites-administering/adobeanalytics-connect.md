@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
-workflow-type: ht
-source-wordcount: '1499'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1497'
+ht-degree: 97%
 
 ---
 
@@ -131,7 +131,7 @@ Für die von Ihnen verwendete Report Suite-ID (RSID) können Sie steuern, welche
    >
    >Im Content Finder auf der linken Seite werden Adobe Analytics-Variablen (SiteCatalyst-Variablen) eingetragen, wenn Sie eine Report Suite-ID auswählen.
 
-1. Um die Server-Instanzen auszuwählen, die Informationen an die Report Suite senden sollen, verwenden Sie die **Ausführungsmodus** Dropdown-Liste (neben der Report Suite-ID).
+1. Um die Serverinstanzen auszuwählen, die Informationen an die Report Suite senden sollen, verwenden Sie die **Ausführungsmodus** Dropdown-Liste (neben der Report Suite-ID).
 
    ![aa-framework-01](assets/aa-framework-01.png)
 
@@ -177,7 +177,7 @@ Untergeordnete Elemente der Seite übernehmen die Verknüpfung mit dem Framework
 1. Öffnen Sie die **[Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md)** entweder direkt über die Konsole oder über den Seiteneditor.
 1. Öffnen Sie die Registerkarte **Cloud-Services**.
 
-1. Verwenden Sie das Dropdown **Konfiguration hinzufügen** und wählen Sie **Adobe Analytics** aus den verfügbaren Optionen aus. Wenn die Vererbung platziert ist, deaktivieren Sie diese, bevor der Selektor verfügbar wird.
+1. Verwenden Sie die **Konfiguration hinzufügen** Dropdown zur Auswahl **Adobe Analytics** aus den verfügbaren Optionen. Wenn die Vererbung platziert ist, deaktivieren Sie diese, bevor der Selektor verfügbar wird.
 
 1. Der Dropdown-Selektor für **Adobe Analytics** wird an die verfügbaren Optionen angehängt. Wählen Sie die erforderliche Framework-Konfiguration aus.
 

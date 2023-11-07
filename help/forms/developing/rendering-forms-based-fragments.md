@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 role: Developer
 exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2205'
-ht-degree: 94%
+source-wordcount: '2199'
+ht-degree: 91%
 
 ---
 
@@ -77,7 +77,7 @@ Bevor Sie einen Client-API-Vorgang für den Forms-Service programmgesteuert durc
 
 Um ein auf Fragmenten basierendes Formular erfolgreich wiederzugeben, müssen Sie sicherstellen, dass der Forms-Service sowohl das Formular als auch die Fragmente (die XDP-Dateien) finden kann, auf die der Formularentwurf verweist. Angenommen, das Formular heißt „PO.xdp“ und verwendet zwei Fragmente mit den Namen „FooterUS.xdp“ und „FooterCanada.xdp“. In diesem Fall muss der Forms-Service alle drei XDP-Dateien finden können.
 
-Sie können ein Formular und seine Fragmente organisieren, indem Sie das Formular an einem Speicherort und die Fragmente an einem anderen Speicherort ablegen. Alternativ können Sie alle XDP-Dateien an demselben Speicherort platzieren. Für die Zwecke dieses Abschnitts wird davon ausgegangen, dass sich alle XDP-Dateien im AEM Forms-Repository befinden. Informationen zum Platzieren von XDP-Dateien im AEM Forms-Repository finden Sie unter [Schreiben von Ressourcen](/help/forms/developing/aem-forms-repository.md#writing-resources).
+Sie können ein Formular und seine Fragmente organisieren, indem Sie das Formular an einem Speicherort und die Fragmente an einem anderen Speicherort ablegen. Alternativ können Sie alle XDP-Dateien an demselben Speicherort platzieren. Für die Zwecke dieses Abschnitts nehmen Sie an, dass sich alle XDP-Dateien im AEM Forms-Repository befinden. Informationen zum Platzieren von XDP-Dateien im AEM Forms-Repository finden Sie unter [Schreiben von Ressourcen](/help/forms/developing/aem-forms-repository.md#writing-resources).
 
 Beim Rendern eines Formulars, das auf Fragmenten basiert, dürfen Sie nur das Formular selbst und nicht die Fragmente referenzieren. Sie müssen beispielsweise auf „PO.xdp“ verweisen, jedoch nicht auf „FooterUS.xdp“ oder „FooterCanada.xdp“. Stellen Sie sicher, dass Sie die Fragmente an einer Stelle ablegen, an der der Forms-Service sie finden kann.
 
@@ -122,7 +122,7 @@ Rendern eines auf Fragmenten basierenden Formulars mithilfe der Forms API (Java)
 
    * Erstellen Sie ein `URLSpec`-Objekt, das URI-Werte speichert, indem Sie seinen Konstruktor verwenden.
    * Rufen Sie die Methode `setApplicationWebRoot` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Web-Stamm des Programms darstellt.
-   * Rufen Sie die `setContentRootURI`-Methode des `URLSpec`-Objekts auf und übergeben Sie ihr einen Zeichenfolgenwert, der den Inhaltsstamm-URI angibt. Stellen Sie sicher, dass sich der Formularentwurf und die Fragmente im URI des Inhaltsstamms befinden. Andernfalls löst der Forms-Service eine Ausnahme aus. Um auf das Repository zu verweisen, geben Sie `repository://` an.
+   * Rufen Sie die Methode `setContentRootURI` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den URI-Wert des Inhaltsstamms angibt. Stellen Sie sicher, dass sich der Formularentwurf und die Fragmente im Inhaltsstamm-URI befinden. Andernfalls löst der Forms-Service eine Ausnahme aus. Um auf das Repository zu verweisen, geben Sie `repository://` an.
    * Rufen Sie die Methode `setTargetURL` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Ziel-URL-Wert angibt, an den die Formulardaten gesendet werden. Wenn Sie die Ziel-URL im Formularentwurf definieren, können Sie auch eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular zur Durchführung von Berechnungen gesendet wird.
 
 1. Wiedergeben des Formulars
@@ -183,7 +183,7 @@ Wiedergabe eines Formulars, das auf Fragmenten basiert, mithilfe der Forms-API (
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `BLOB`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie `null`.
-   * Ein `PDFFormRenderSpec`-Objekt, das Laufzeitoptionen speichert. Beachten Sie, dass die mit Tags versehene PDF-Option nicht festgelegt werden kann, wenn das Eingabedokument ein PDF-Dokument ist. Wenn es sich bei der Eingabedatei um eine XDP-Datei handelt, kann die mit Tags versehene PDF-Option festgelegt werden.
+   * Ein `PDFFormRenderSpec`-Objekt, das Laufzeitoptionen speichert. Die getaggte PDF-Option kann nicht festgelegt werden, wenn das Eingabedokument ein PDF-Dokument ist. Wenn es sich bei der Eingabedatei um eine XDP-Datei handelt, kann die mit Tags versehene PDF-Option festgelegt werden.
    * Ein `URLSpec`-Objekt, das für den Forms-Service erforderliche URI-Werte enthält.
    * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter. Sie können `null` festlegen, wenn Sie keine Dateien an das Formular anhängen möchten.
    * Ein leeres `com.adobe.idp.services.holders.BLOBHolder`-Objekt, das von der Methode aufgefüllt wird. Dieser Parameter wird zum Speichern des wiedergegebenen Formulars verwendet.

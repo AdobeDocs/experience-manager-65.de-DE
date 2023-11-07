@@ -10,10 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: d9f1e24e-51a9-4f28-b2cd-2e97aed63a24
 exl-id: eaef65ec-2e4d-490f-8158-d48d738e3409
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 85%
+source-wordcount: '491'
+ht-degree: 86%
 
 ---
 
@@ -31,7 +31,7 @@ Die App ist für das Routing verantwortlich und wird dann von den Frontend-Entwi
 
 ## Architektur {#architecture}
 
-Eine ausführliche Beschreibung finden Sie im Abschnitt [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) im SPA-Blueprint-Dokument.
+Eine ausführliche Beschreibung finden Sie im Abschnitt [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) Abschnitt des SPA Blueprint-Dokuments.
 
 ## ModelRouter {#modelrouter}
 
@@ -57,7 +57,7 @@ Die aktuelle Implementierung basiert auf der Annahme, dass das SPA-Projekt die H
 
 `ModelRouter` unterstützt das Konzept des Modell-Routings, da es auf `pushState`- und `replaceState`-Aufrufe wartet, um Modellfragmente vorab abzurufen. Intern triggert es den `PageModelManager`, das Modell zu laden, das einer bestimmten URL entspricht, und löst ein `cq-pagemodel-route-changed`-Ereignis aus, das andere Module überwachen können.
 
-Standardmäßig ist dieses Verhalten automatisch aktiviert. Um sie zu deaktivieren, sollte der SPA die folgende Meta-Eigenschaft rendern:
+Standardmäßig ist dieses Verhalten automatisch aktiviert. Um es zu deaktivieren, sollte die SPA die folgende Meta-Eigenschaft rendern:
 
 ```
 <meta property="cq:pagemodel_router" content="disabled"\>

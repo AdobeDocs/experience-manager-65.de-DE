@@ -7,10 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2987'
-ht-degree: 58%
+ht-degree: 60%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 58%
 >* Auf dieser Seite erhalten Sie einen Überblick über die grundlegende Handhabung der Adobe Experience Manager (AEM)-Autorenumgebung. Als Grundlage wird die **Sites-Konsole** verwendet.
 >
 >* Einige Funktionen stehen nicht in allen Konsolen zur Verfügung und in einigen Konsolen können zusätzliche Funktionen zur Verfügung stehen. Spezifische Informationen zu den einzelnen Konsolen und den zugehörigen Funktionen werden auf anderen Seiten ausführlicher behandelt.
->* In AEM stehen verschiedene Tastaturbefehle zur Verfügung, insbesondere bei [der Verwendung von Konsolen](/help/sites-authoring/keyboard-shortcuts.md) und [der Bearbeitung von Seiten](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+>* In AEM stehen verschiedene Tastaturbefehle zur Verfügung, insbesondere beim [Verwenden von Konsolen](/help/sites-authoring/keyboard-shortcuts.md) und beim [Bearbeiten von Seiten](/help/sites-authoring/page-authoring-keyboard-shortcuts.md). 
 >
 
 ## Erste Schritte {#getting-started}
@@ -56,7 +56,7 @@ Die Übersicht wird beim nächsten Zugriff auf eine Konsole neu gestartet, es se
 
 ## Globale Navigation {#global-navigation}
 
-Sie können mithilfe des globalen Navigationsfensters zwischen den Konsolen navigieren. Dies wird als Vollbild-Dropdown-Liste ausgelöst, wenn Sie auf den Link Adobe Experience Manager oben links im Bildschirm klicken oder tippen.
+Sie können mithilfe des globalen Navigationsfensters zwischen den Konsolen navigieren. Dieses Navigationsfenster wird als Vollbild-Dropdown angezeigt, wenn Sie auf den Adobe Experience Manager-Link in der linken oberen Bildschirmecke klicken oder tippen.
 
 Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließen** klicken oder tippen. Sie kehren dann zu Ihrer vorherigen Position zurück.
 
@@ -136,7 +136,7 @@ Im Bedienfeld &quot;Tools&quot;enthält jede Option im seitlichen Bedienfeld ein
 
 ## Die Kopfzeile {#the-header}
 
-Die Kopfzeile befindet sich immer oben im Bildschirm. Die meisten Optionen in der Kopfzeile bleiben unabhängig von Ihrer Position im System gleich, manche sind aber kontextspezifisch.
+Die Kopfzeile befindet sich immer am oberen Rand des Bildschirms. Die meisten Optionen in der Kopfzeile bleiben unabhängig von Ihrer Position im System gleich, manche sind aber kontextspezifisch.
 
 ![Kopfzeile](assets/bh-03.png)
 
@@ -164,7 +164,7 @@ Die Kopfzeile befindet sich immer oben im Bildschirm. Die meisten Optionen in de
 
   ![Benachrichtigungen](do-not-localize/screen_shot_2018-03-23at103558.png)
 
-  Dieses Symbol ist mit der Anzahl der aktuell zugewiesenen unvollständigen Benachrichtigungen gekennzeichnet.
+  Dieses Symbol wird mit der Anzahl der aktuell zugewiesenen unvollständigen Benachrichtigungen gekennzeichnet.
 
   >[!NOTE]
   >
@@ -409,7 +409,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 
      ![Spaltenansicht](assets/bh-17.png)
 
-   * Die untergeordneten Elemente der angeklickten/getippten Ressource werden in der Spalte rechts neben der angeklickten/angetippten Ressource angezeigt.
+   * Die untergeordneten Elemente der angeklickten/angetippten Ressource werden in der Spalte rechts neben der angeklickten/angetippten Ressource angezeigt.
    * Wenn Sie auf einen Ressourcennamen tippen oder klicken, der keine untergeordneten Elemente enthält, werden dessen Details in der letzten Spalte angezeigt.
 
 * Durch Tippen oder Klicken auf die Miniatur wird die Ressource ausgewählt.
@@ -443,7 +443,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 
       * Markierungen, die die erforderlichen Aktionen angeben, können mit Einträgen in Ihrem [Posteingang](/help/sites-authoring/inbox.md) in Verbindung gebracht werden.
 
-* [Schnellaktionen](#quick-actions) sind auch in dieser Ansicht verfügbar, z. B. Auswahl und allgemeine Aktionen wie Bearbeiten.
+* [Schnellaktionen](#quick-actions) sind ebenfalls in dieser Ansicht verfügbar, z. B. Auswahl und allgemeine Aktionen wie Bearbeiten.
 
   ![Kartenansicht – Schnellaktionen](assets/bh-13-1.png)
 
@@ -472,13 +472,13 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 * Wählen Sie die anzuzeigenden Spalten mithilfe der **Anzeigeeinstellungen** -Option unter der Schaltfläche &quot;Ansichten&quot;angezeigt. Die folgenden Spalten stehen zur Anzeige zur Verfügung:
 
    * **Name** – Seitenname, der in einer mehrsprachigen Authoring-Umgebung nützlich sein kann, da er Teil der URL der Seite ist und sich unabhängig von der Sprache nicht ändert
-   * **Geändert** – Datum der letzten Änderung und letzte Änderung durch die Benutzerin oder den Benutzer
+   * **Geändert** – Datum und Person der letzten Änderung
    * **Veröffentlicht** – Veröffentlichungsstatus
    * **Vorlage** – Vorlage, auf der die Seite basiert
    * **Workflow** – Workflow, der derzeit auf die Seite angewendet ist. Weitere Informationen sind verfügbar, wenn Sie die Maus darauf bewegen oder die Timeline öffnen.
 
    * **Seiten-Analytik**
-   * **Unique visitors**
+   * **Unique Visitors**
    * **Zeit auf Seite**
 
   ![Anzeigeeinstellungen – Spalten konfigurieren](assets/bh-21.png)
@@ -565,7 +565,7 @@ Diese Optionen sind über den Pfeil neben dem **Kommentar** -Feld.
 
 ### Verweise {#references}
 
-**Verweise** zeigt alle Verbindungen zur ausgewählten Ressource an. In der Konsole **Sites** wird zum Beispiel folgendes für [Verweise](/help/sites-authoring/author-environment-tools.md#showingpagereferences) für Seiten angezeigt:
+**Verweise** zeigt alle Verbindungen zur ausgewählten Ressource an. In der **Sites**-Konsole wird zum Beispiel folgendes für [Verweise](/help/sites-authoring/author-environment-tools.md#showingpagereferences) für Seiten angezeigt:
 
 * [Launches](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live Copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)

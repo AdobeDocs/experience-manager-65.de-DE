@@ -5,10 +5,10 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
-source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
-workflow-type: ht
-source-wordcount: '3678'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '3677'
+ht-degree: 99%
 
 ---
 
@@ -49,9 +49,8 @@ Im Folgenden finden Sie einige allgemeine Tipps zum Erstellen Ihrer URLs für SE
    * Auf Seiten, die Selektoren verwenden, sind Selektoren, die einen semantischen Wert bieten, zu bevorzugen.
    * Wenn ein Mensch Ihre URL nicht lesen kann, kann eine Suchmaschine dies auch nicht.
    * Beispiel:
-      `mybrand.com/products/product-detail.product-category.product-name.html`
-wird vorgezogen gegenüber 
-`mybrand.com/products/product-detail.1234.html`
+     `mybrand.com/products/product-detail.product-category.product-name.html`
+wird `mybrand.com/products/product-detail.1234.html` vorgezogen
 
 * Vermeiden Sie Subdomains so weit wie möglich, da Suchmaschinen diese als unterschiedliche Einheiten einordnen, wodurch der SEO-Wert der Website fragmentiert wird.
 
@@ -59,7 +58,7 @@ wird vorgezogen gegenüber
 
    * Planen Sie die Inhaltshierarchie gemäß dieser Richtlinie passend zu der Art und Weise, wie die Inhalte dargestellt werden.
 
-* Die Effektivität von Keywords in URLs nimmt bei mit zunehmender Länge der URL und späterer Position des Keywords ab. Mit anderen Worten: je kürzer, umso besser.
+* Die Effektivität von Keywords in URLs nimmt bei mit zunehmender Länge der URL und späterer Position des Keywords ab. Mit anderen Worten: je kürzer, desto besser.
 
    * Nutzen Sie die von AEM zur Verfügung gestellten Techniken und Funktionen zum Kürzen von URLs, um unnötige URL-Elemente zu entfernen.
    * Beispiel: `mybrand.com/en/myPage.html` wird `mybrand.com/content/my-brand/en/myPage.html` vorgezogen.
@@ -91,7 +90,7 @@ Hinsichtlich der Server-Konfiguration können Sie mit den folgenden Schritten ge
 
 * Verwenden Sie eine `robots.txt`-Datei, um Crawling von nicht indizierten Inhalten zu vermeiden.
 
-   * Blockieren Sie **alles** Crawling in Testumgebungen.
+   * Blockieren Sie **jegliches** Crawling in Testumgebungen.
 
 * Richten Sie beim Launch einer neuen Website mit aktualisierten URLs eine 301-Weiterleitung ein, um sicherzustellen, dass das derzeitige SEO-Ranking nicht verloren geht.
 * Fügen Sie ein Favicon für Ihre Site hinzu.
@@ -189,20 +188,20 @@ Wenn ein Autor wünscht, dass die Seite von einem zweiten Ort aus für Werbezwec
 Vielleicht möchten Sie den Benutzern von übersetzten Inhalten lokalisierte Seitennamen anzeigen. Beispiel:
 
 * Anstatt einen Spanisch sprechenden Benutzer zur folgenden URL zu leiten:
-   `www.mydomain.com/es/home.html`
+  `www.mydomain.com/es/home.html`
 
 * wäre folgende URL besser:
-   `www.mydomain.com/es/casa.html`.
+  `www.mydomain.com/es/casa.html`.
 
 Die Herausforderung bei der Lokalisierung des Seitennamens besteht darin, dass viele der für die AEM-Plattform erhältlichen Lokalisierungs-Tools für die Synchronisierung von Inhalten identische Seitennamen für verschiedene Sprachen benötigen.
 
 Die Eigenschaft `sling:alias` ermöglicht das Beste aus beiden Adobe-Welten. `sling:alias` kann als Eigenschaft zu einer Ressource hinzugefügt werden, um einen Alias für die Ressource zu erlauben. Im vorangegangenen Beispiel hätten Sie Folgendes:
 
 * Eine Seite im JCR unter:
-   `…/es/home`
+  `…/es/home`
 
 * Dieser fügen Sie dann eine Eigenschaft hinzu:
-   `sling:alias` = `casa`
+  `sling:alias` = `casa`
 
 Dies würde es den AEM-Übersetzungs-Tools wie dem Multi-Site-Manager ermöglichen, eine Beziehung zwischen folgenden Seiten beizubehalten:
 
@@ -221,12 +220,11 @@ während es Benutzern ermöglicht wird, in ihrer Muttersprache mit dem Seitennam
 Bei der Standardinstallation von AEM:
 
 * für die OSGi-Konfiguration
-   **Apache Sling Resource Resolver Factory**
-( 
-`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+  **Apache Sling Resource Resolver Factory**
+( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
 * ist der Standardwert der Eigenschaft
-   **Zuordnungsspeicherort** ( `resource.resolver.map.location`)
+  **Zuordnungsspeicherort** ( `resource.resolver.map.location`)
 
 * ist standardmäßig auf `/etc/map` eingestellt.
 
@@ -255,8 +253,8 @@ Es gibt jedoch auch einfachere Möglichkeiten, dieses Problem zu beheben:
    Verwenden Sie die Web-Konsole (zum Beispiel localhost:4502/system/console/configMgr), um den Sling Resource Resolver zu konfigurieren:
 
    * **Apache Sling Resource Resolver Factory**
+     `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
-      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
    Adobe empfiehlt, die Zuordnungen, die zum Kürzen von URLs erforderlich sind, als reguläre Ausdrücke zu erstellen und diese Konfigurationen dann unter einem OsgiConfignode `config.publish` zu definieren, der in Ihrem Build enthalten ist.
 
    Anstatt Zuordnungen in `/etc/map` zu definieren, können diese direkt den Eigenschaften der **URL-Zuordnungen** (`resource.resolver.mapping`) zugeordnet werden:
@@ -325,7 +323,7 @@ Das `href`-Attribut kann relativ oder absolut sein. Der Code sollte im Seiten-La
 
 ### Konfigurieren des Dispatchers für das Ignorieren von Groß- und Kleinschreibung {#configuring-the-dispatcher-for-case-insensitivity}
 
-Die Best Practice besteht darin, alle Seiten mit Kleinbuchstaben zu bedienen. Sie möchten jedoch nicht, dass Benutzende einen 404-Fehler erhalten, wenn sie versuchen, auf Ihre Website unter Verwendung von Großbuchstaben in der URL zugreifen. Aus diesem Grund empfiehlt Adobe, dass Sie eine Umschreiberegel in der Apache HTTP Server-Konfiguration hinzufügen, um alle eingehenden URLs in Kleinbuchstaben darzustellen. Darüber hinaus müssen Autoren dahingehend geschult werden, Seiten nur mit Namen in Kleinbuchstaben zu erstellen.
+Die Best Practice besteht darin, alle Seiten mit Kleinbuchstaben zu bedienen. Sie möchten jedoch nicht, dass Benutzende einen 404-Fehler erhalten, wenn sie Ihre Website unter Verwendung von Großbuchstaben in der URL aufrufen. Aus diesem Grund empfiehlt Adobe, dass Sie eine Umschreiberegel in der Apache HTTP Server-Konfiguration hinzufügen, um alle eingehenden URLs in Kleinbuchstaben darzustellen. Darüber hinaus müssen Autoren dahingehend geschult werden, Seiten nur mit Namen in Kleinbuchstaben zu erstellen.
 
 Um Apache so zu konfigurieren, dass sämtlicher eingehender Traffic in Kleinbuchstaben erfolgt, fügen Sie der Konfiguration `vhost` Folgendes hinzu:
 
@@ -470,20 +468,20 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-Darüber hinaus kann die für XML-Sitemaps implementierte Funktionalität auch in verschiedenen Nutzungsszenarien verwendet werden, z. B. um den kanonischen Link oder die Sprachalternativen zum Seiten-Header hinzuzufügen. Weitere Informationen finden Sie in der [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html)-Oberfläche.
+Darüber hinaus kann die für XML-Sitemaps implementierte Funktionalität auch für verschiedene Anwendungsfälle verwendet werden, z. B. um den kanonischen Link hinzuzufügen oder die Sprache wechselt zum Kopf einer Seite. Weitere Informationen finden Sie in der [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html)-Oberfläche.
 
 ### Erstellen von 301-Weiterleitungen für veraltete URLs {#creating-redirects-for-legacy-urls}
 
 Beim Start einer Website mit einer neuen Struktur ist die Implementierung und Prüfung von 301-Weiterleitungen in Apache HTTP Server aus zwei Gründen wichtig:
 
-* Die veralteten URLs bauen über die Zeit hinweg SEO-Wert auf. Durch Implementierung einer Umleitung kann die Suchmaschine diesen Wert auf die neue URL anwenden.
-* Benutzer der Website könnten Lesezeichen für diese Seiten erstellt haben. Durch die Implementierung von Umleitungen können Sie sicherstellen, dass Benutzende auf diejenige Seite der neuen Site geleitet werden, die am ehesten dem entspricht, was sie auf der alten Site gesucht haben.
+* Die veralteten URLs bauen über die Zeit hinweg SEO-Wert auf. Durch Implementierung einer Weiterleitung kann die Suchmaschine diesen Wert auf die neue URL anwenden.
+* Benutzer der Website könnten Lesezeichen für diese Seiten erstellt haben. Durch die Implementierung von Weiterleitungen können Sie sicherstellen, dass Benutzende auf diejenige Seite der neuen Site geleitet werden, die am ehesten dem entspricht, was sie auf der alten Site gesucht haben.
 
 Werfen Sie einen Blick in den Abschnitt mit zusätzlichen Ressourcen, der Anleitungen zur Implementierung von Weiterleitungen des Typs 301 sowie ein Werkzeug zum Testen der Weiterleitung enthält.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Weitere Informationen finden Sie in den folgenden zusätzlichen Ressourcen:
+Weitere Informationen finden Sie in den zusätzlichen Ressourcen:
 
 * [Ressourcenzuordnung](/help/sites-deploying/resource-mapping.md)
 * [https://moz.com/blog/seo-cheat-sheet-anatomy-of-a-url](https://moz.com/blog/seo-cheat-sheet-anatomy-of-a-url)

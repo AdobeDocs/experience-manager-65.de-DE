@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1882'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1878'
+ht-degree: 95%
 
 ---
 
@@ -86,7 +86,7 @@ Die Syntax des Skripts in diesem Formularentwurf lautet wie folgt:
      NumericField3 = NumericField2 + NumericField1
 ```
 
-In diesem Formularentwurf ist die Schaltfläche „Berechnen“ eine Befehlsschaltfläche, und das Skript befindet sich im Ereignis `Click` dieser Schaltfläche. Wenn ein Benutzer Werte in die ersten beiden Felder (NumericField1 und NumericField2) eingibt und auf die Schaltfläche „Berechnen“ klickt, wird das Formular an den Forms-Service gesendet, wo das Skript ausgeführt wird. Der Forms-Service rendert das Formular zurück auf den Client-Computer und zeigt die Ergebnisse der Berechnung im Feld NumericField3 an.
+In diesem Formularentwurf ist die Schaltfläche &quot;Berechnen&quot;eine Befehlsschaltfläche und das Skript befindet sich im `Click` -Ereignis. Wenn ein Benutzer Werte in die ersten beiden Felder (NumericField1 und NumericField2) eingibt und auf die Schaltfläche „Berechnen“ klickt, wird das Formular an den Forms-Service gesendet, wo das Skript ausgeführt wird. Der Forms-Service rendert das Formular zurück auf den Client-Computer und zeigt die Ergebnisse der Berechnung im Feld NumericField3 an.
 
 >[!NOTE]
 >
@@ -125,13 +125,13 @@ Nachdem Sie überprüft haben, dass der mit einem gesendeten Formular verknüpft
 
 **Siehe auch**
 
-[Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
-[Berechnen von Formulardaten mit der Java-API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
-[Berechnen von Formulardaten mit der Webservice-API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
-[Festlegen von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
-[Kurzanleitungen zur Forms Service-API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
-[Rendern interaktiver PDF-Formulare](/help/forms/developing/rendering-interactive-pdf-forms.md)
-[Erstellen von Web-Programmen, die PDF-Formulare rendern](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Einschließen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Formulardaten mit der Java-API berechnen](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
+[Formulardaten mithilfe der Webdienst-API berechnen](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
+[Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[Schnellstarts zur Forms Service-API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Rendern interaktiver PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Erstellen von Webanwendungen, die Forms rendern](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Berechnen von Formulardaten mithilfe der Java-API {#calculate-form-data-using-the-java-api}
 
@@ -152,14 +152,13 @@ So berechnen Sie die Formulardaten mithilfe der Forms API (Java):
    * Rufen Sie die Methode `FormsServiceClient` des `processFormSubmission`-Objekts auf und übergeben Sie die folgenden Werte:
 
       * Das `com.adobe.idp.Document`-Objekt, das die Formulardaten enthält.
-      * Ein Zeichenfolgenwert, der Umgebungsvariablen einschließlich aller relevanten HTTP-Kopfzeilen angibt. Sie müssen den Inhaltstyp angeben, der verarbeitet werden soll, indem Sie einen oder mehrere Werte für die Umgebungsvariable `CONTENT_TYPE` angeben. Um beispielsweise XML- und PDF-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
+      * Ein Zeichenfolgenwert, der Umgebungsvariablen einschließlich aller relevanten HTTP-Kopfzeilen angibt. Geben Sie den zu verarbeitenden Inhaltstyp an, indem Sie einen oder mehrere Werte für die Umgebungsvariable `CONTENT_TYPE` angeben. Um beispielsweise XML- und PDF-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
       * Ein Zeichenfolgenwert, der den Wert der `HTTP_USER_AGENT`-Kopfzeile angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen speichert.
 
-      Die Methode `processFormSubmission` gibt ein `FormsResult`-Objekt zurück, das die Ergebnisse der Formularübermittlung enthält.
+     Die Methode `processFormSubmission` gibt ein `FormsResult`-Objekt zurück, das die Ergebnisse der Formularübermittlung enthält.
 
    * Überprüfen Sie, ob der mit einem übermittelten Formular verbundene Verarbeitungsstatus `1` ist, indem Sie die Methode `getAction` des `FormsResult`-Objekts aufrufen. Wenn diese Methode den Wert `1` zurückgibt, wurde die Berechnung durchgeführt und die Daten können in den Client-Webbrowser zurückgeschrieben werden.
-
 
 1. Schreiben Sie den Formulardaten-Stream zurück in den Client-Webbrowser
 
@@ -172,7 +171,7 @@ So berechnen Sie die Formulardaten mithilfe der Forms API (Java):
 **Siehe auch**
 
 
-[Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Einschließen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Berechnen von Formulardaten mithilfe der Webservice-API {#calculate-form-data-using-the-web-service-api}
@@ -211,10 +210,9 @@ So berechnen Sie Formulardaten mithilfe der Forms API (Webservice):
       * Ein leeres `MyArrayOf_xsd_anyTypeHolder`-Objekt, das von der Methode gefüllt wird. Dieser Parameter wird zum Speichern von Dateianhängen verwendet, die zusammen mit dem Formular gesendet werden.
       * Ein leeres `FormsResultHolder`-Objekt, das von der Methode mit dem gesendeten Formular gefüllt wird.
 
-      Die Methode `processFormSubmission` füllt den Parameter `FormsResultHolder` mit den Ergebnissen der Formularübermittlung. Die Methode `processFormSubmission` gibt ein `FormsResult`-Objekt zurück, das die Ergebnisse der Formularübermittlung enthält.
+     Die Methode `processFormSubmission` füllt den Parameter `FormsResultHolder` mit den Ergebnissen der Formularübermittlung. Die Methode `processFormSubmission` gibt ein `FormsResult`-Objekt zurück, das die Ergebnisse der Formularübermittlung enthält.
 
    * Überprüfen Sie, ob der mit einem übermittelten Formular verbundene Verarbeitungsstatus `1` ist, indem Sie die Methode `getAction` des `FormsResult`-Objekts aufrufen. Wenn diese Methode den Wert `1` zurückgibt, wurde die Berechnung durchgeführt und die Daten können in den Client-Webbrowser zurückgeschrieben werden.
-
 
 1. Schreiben Sie den Formulardaten-Stream zurück in den Client-Webbrowser
 

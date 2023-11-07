@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2692'
+source-wordcount: '2688'
 ht-degree: 1%
 
 ---
@@ -169,16 +169,16 @@ Führen Sie das folgende Verfahren für die Instanz durch, in der Sie den Cache 
 
 ### Verwenden von App-Vorlagen {#using-app-templates}
 
-Diese Funktion ist in Apps 6.1 Feature Pack 2 verfügbar und bietet eine einfache Möglichkeit, vorhandene App-Vorlagen für die Erstellung neuer Apps in AEM zu nutzen.
+Diese Funktion ist in Apps 6.1 Feature Pack 2 verfügbar und bietet eine einfache Möglichkeit, vorhandene App-Vorlagen für die Erstellung neuer Apps in AEM zu verwenden.
 
 Was ist eine App-Vorlage? Stellen Sie sich dies als Sammlung von Seitenvorlagen und Komponenten vor, die eine Grundlinie oder Grundlage einer App darstellen.
-Wenn Sie eine neue App basierend auf der Vorlage einer anderen App erstellen, erhalten Sie eine App mit einem Startpunkt, der für die App steht, aus der sie erstellt wurde.
+Wenn Sie eine App basierend auf der Vorlage einer anderen App erstellen, erhalten Sie eine App mit einem Startpunkt, der für die App steht, aus der sie erstellt wurde.
 
 Sie müssen über eine vorhandene Vorlage für mobile Apps (oder eine installierte App, die über eine App-Vorlage verfügt) verfügen, um diese Funktion nutzen zu können.
 
 Das neueste Beispielpaket für AEM Apps 6.1 enthält eine aktualisierte Version der Geometrixx App mit einer App-Vorlage. Alternativ können Sie das StarterKit installieren, das auch eine Vorlage bereitstellt.
 
-Schritte zum Erstellen einer neuen App basierend auf einer App-Vorlage:
+Schritte zum Erstellen einer App basierend auf einer App-Vorlage:
 
 1. Vergewissern Sie sich, dass das neueste Feature Pack für AEM Apps 6.1 und Referenzbeispiele installiert sind.
 1. Klicken Sie in der linken Leiste auf Apps .
@@ -219,7 +219,7 @@ Um die Anwendung zu öffnen, klicken Sie in der Leiste auf Mobile Apps und wähl
 
 Jede Seite der mobilen App enthält die folgenden Funktionen:
 
-* Eine Zurück-Schaltfläche zum Zurückkehren zur übergeordneten Seite. Beachten Sie, dass die Schaltfläche &quot;Zurück&quot;nicht auf der Startseite angezeigt wird.
+* Eine Zurück-Schaltfläche zum Zurückkehren zur übergeordneten Seite. Die Schaltfläche &quot;Zurück&quot;wird nicht auf der Startseite angezeigt.
 * Eine erweiterbare Leiste, die ein Menü mit Befehlen und Links bietet:
 
    * Öffnen Sie die Seite Standorte .

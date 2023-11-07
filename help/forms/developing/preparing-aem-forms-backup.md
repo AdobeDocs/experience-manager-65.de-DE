@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 role: Developer
 exl-id: aeab003d-ba64-4760-9c56-44638501e9ff
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '2520'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '2519'
+ht-degree: 95%
 
 ---
 
@@ -53,13 +53,13 @@ Sie können folgende Aufgaben mit dem Sicherungs- und Wiederherstellungs-Service
 
 ## Aktivieren des Sicherungsmodus auf dem Formularserver {#entering-backup-mode-on-the-forms-server}
 
-Sie aktivieren den Sicherungsmodus, um Hot-Backups eines Formularservers zu ermöglichen. Wenn Sie den Sicherungsmodus aktivieren, geben Sie die folgenden Informationen basierend auf den Sicherungsverfahren Ihres Unternehmens an:
+Sie aktivieren den Sicherungsmodus, um Hot-Backups eines Formularservers zu ermöglichen. Wenn Sie in den Sicherungsmodus wechseln, geben Sie die folgenden Informationen basierend auf den Sicherungsverfahren Ihres Unternehmens an:
 
 * Eine eindeutige Beschriftung zur Identifizierung der Sicherungsmodussitzung, die für Ihre Sicherungsprozesse nützlich sein kann.
 * Der Zeitpunkt, zu dem das Sicherungsverfahren abgeschlossen sein soll.
 * Ein Flag, das angibt, ob der permanente Sicherungsmodus ausgeführt werden soll. Dies ist nur nützlich, wenn Sie fortlaufende Sicherungen durchführen.
 
-Bevor Sie Anwendungen zum Aktivieren des Sicherungsmodus schreiben, sollten Sie die Sicherungsverfahren verstehen, die verwendet werden, nachdem der Formularserver in den Sicherungsmodus versetzt wurde. Weitere Informationen dazu, was bei der Durchführung von Sicherungen für AEM Forms zu beachten ist, finden Sie in der [Hilfe zur Administration](https://www.adobe.com/go/learn_aemforms_admin_63_de).
+Bevor Sie Anwendungen schreiben, um in den Sicherungsmodus zu wechseln, sollten Sie die Sicherungsverfahren verstehen, die nach dem Versetzen des Formularservers in den Sicherungsmodus angewendet werden. Weitere Informationen dazu, was bei der Durchführung von Backups für AEM Forms zu beachten ist, finden Sie unter [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_63_de).
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ So wechseln Sie mithilfe der Backup- und Wiederherstellungs-Service-API in den B
 
 1. Projektdateien einschließen
 
-   Fügen Sie benötigte Client-JAR-Dateien wie „adobe-backup-restore-client.jar“ in den Klassenpfad des Java-Projekts ein. Um das Java-Client-Programm zu erstellen, müssen die folgenden JAR-Dateien zum Klassenpfad Ihres Projekts hinzugefügt werden:
+   Schließen Sie die erforderlichen Client-JAR-Dateien wie adobe-backup-restore-client-sdk.jar in den Klassenpfad Ihres Java-Projekts ein. Um die Java-Clientanwendung zu erstellen, müssen die folgenden JAR-Dateien zum Klassenpfad Ihres Projekts hinzugefügt werden:
 
    * adobe-backup-restore-client-sdk.jar
    * adobe-livecycle-client.jar
@@ -135,7 +135,7 @@ So wechseln Sie mithilfe der Backup- und Wiederherstellungs-Service-API in den B
    * Einen `int`-Wert, der die Anzahl der Minuten angibt, die im Backup-Modus verblieben werden soll. Sie können einen Wert zwischen `1` und `10080` angeben (Anzahl der Minuten in einer Woche). Dieser Wert wird bei Verwendung des kontinuierlichen Backup-Modus ignoriert.
    * Einen `Boolean`-Wert, der angibt, ob der kontinuierliche Backup-Modus ausgeführt werden soll. Der Wert `True` gibt an, dass der kontinuierliche Backup-Modus ausgeführt werden soll. Im kontinuierlichen Backup-Modus wird der Wert ignoriert, den Sie für die Anzahl der Minuten angeben, die im Backup-Modus verblieben werden soll.
 
-      Der kontinuierliche Backup-Modus bedeutet, dass eine neue Backup-Modus-Sitzung gestartet wird, nachdem die aktuelle Sitzung abgeschlossen ist. Der Wert `False` bedeutet, dass der kontinuierliche Backup-Modus nicht verwendet wird und die Bereinigung der Dateien aus dem globalen Dokumentenspeicher (GDS) nach dem Verlassen des Backup-Modus fortgesetzt wird.
+     Der kontinuierliche Backup-Modus bedeutet, dass eine neue Backup-Modus-Sitzung gestartet wird, nachdem die aktuelle Sitzung abgeschlossen ist. Der Wert `False` bedeutet, dass der kontinuierliche Backup-Modus nicht verwendet wird und die Bereinigung der Dateien aus dem globalen Dokumentenspeicher (GDS) nach dem Verlassen des Backup-Modus fortgesetzt wird.
 
 1. Abrufen von Informationen zur Sicherungsmodussitzung auf dem Server
 
@@ -170,7 +170,7 @@ So wechseln Sie mithilfe des von der Backup- und Wiederherstellungs-Service-API 
    * Einen `Uint32`-Wert, der die Anzahl der Minuten angibt, die im Backup-Modus verblieben werden soll. Sie können einen Wert zwischen `1` und `10080` festlegen (Anzahl der Minuten in einer Woche). Dieser Wert wird bei Verwendung des kontinuierlichen Backup-Modus ignoriert.
    * Einen `Boolean`-Wert, der angibt, ob der kontinuierliche Backup-Modus ausgeführt werden soll. Der Wert `True` gibt an, dass der kontinuierliche Backup-Modus ausgeführt werden soll. Im kontinuierlichen Backup-Modus wird der Wert, den Sie für die Anzahl der Minuten angeben, die im Backup-Modus verbieben werden soll, ignoriert. Der kontinuierliche Backup-Modus bedeutet, dass eine neue Backup-Modus-Sitzung gestartet wird, nachdem die aktuelle Sitzung abgeschlossen ist.
 
-      Der Wert `False` bedeutet, dass der kontinuierliche Backup-Moduss nicht verwendet wird und die Bereinigung der Dateien aus dem globalen Dokumentenspeicher nach dem Verlassen des Backup-Modus fortgesetzt wird.
+     Der Wert `False` bedeutet, dass der kontinuierliche Backup-Moduss nicht verwendet wird und die Bereinigung der Dateien aus dem globalen Dokumentenspeicher nach dem Verlassen des Backup-Modus fortgesetzt wird.
 
 1. Abrufen von Informationen zur Sicherungsmodussitzung auf dem Server
 
@@ -223,7 +223,7 @@ Deaktivieren Sie den Sicherungsmodus mithilfe der Sicherungs- und Wiederherstell
 
 1. Projektdateien einschließen
 
-   Fügen Sie benötigte Client-JAR-Dateien wie „adobe-backup-restore-client.jar“ in den Klassenpfad des Java-Projekts ein. Zum Erstellen der Java-Client-Anwendung müssen die folgenden JAR-Dateien zum Klassenpfad des Projekts hinzugefügt werden:
+   Schließen Sie die erforderlichen Client-JAR-Dateien wie adobe-backup-restore-client-sdk.jar in den Klassenpfad Ihres Java-Projekts ein. Zum Erstellen der Java-Clientanwendung müssen die folgenden JAR-Dateien zum Klassenpfad Ihres Projekts hinzugefügt werden:
 
    * adobe-backup-restore-client-sdk.jar
    * adobe-livecycle-client.jar

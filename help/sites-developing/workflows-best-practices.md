@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1929'
-ht-degree: 29%
+source-wordcount: '1923'
+ht-degree: 27%
 
 ---
 
@@ -33,7 +33,7 @@ Beim Konfigurieren von Workflow-Prozessen (angepasst und/oder vorkonfiguriert) s
 
 Um die Ladevorgänge mit hoher Aufnahme zu optimieren, können Sie eine [Workflow als transient](/help/sites-developing/workflows.md#transient-workflows).
 
-Wenn ein Workflow vorübergehend ist, werden die Laufzeitdaten, die sich auf die Zwischenarbeitsschritte beziehen, bei ihrer Ausführung nicht im JCR persistiert (die Ausgabedarstellungen bleiben natürlich erhalten).
+Wenn ein Workflow vorübergehend ist, werden die Laufzeitdaten, die sich auf die Zwischenarbeitsschritte beziehen, bei ihrer Ausführung nicht im JCR persistiert (die Ausgabedarstellungen werden beibehalten).
 
 Zu den Vorteilen zählen:
 
@@ -68,7 +68,7 @@ Darüber hinaus gibt es eine separate Konfiguration für die **Granite-Workflow-
 
 ### Konfigurieren einzelner Auftragswarteschlangen {#configure-individual-job-queues}
 
-In einigen Fällen ist es nützlich, einzelne Auftragswarteschlangen zu konfigurieren, um gleichzeitige Threads oder andere Warteschlangenoptionen auf Basis einzelner Aufträge zu steuern. Sie können eine einzelne Warteschlange über die Web-Konsole hinzufügen und konfigurieren. **Apache Sling Job Queue-Konfiguration** Fabrik. Führen Sie zum Ermitteln des aufzulistenden Themas das Modell Ihres Workflows aus und suchen Sie in der Konsole **Sling-Aufträge** danach (beispielsweise unter `http://localhost:4502/system/console/slingevent`).
+In einigen Fällen ist es nützlich, einzelne Auftragswarteschlangen zu konfigurieren, um gleichzeitige Threads oder andere Warteschlangenoptionen auf Basis einzelner Aufträge zu steuern. Sie können eine einzelne Warteschlange über die Web-Konsole hinzufügen und konfigurieren. **Apache Sling Job Queue-Konfiguration** Fabrik. Um das entsprechende Thema aufzulisten, führen Sie das Modell Ihres Workflows aus und suchen Sie im **Sling-Aufträge** console, z. B. at `http://localhost:4502/system/console/slingevent`.
 
 Individuelle Auftragswarteschlangen können auch für Verlaufs-Workflows hinzugefügt werden.
 
@@ -255,7 +255,7 @@ Speichern einer Sitzung:
 
 >[!CAUTION]
 >
->Sollten Sie entgegen den hier angegebenen Empfehlungen eine eigene JCR-Sitzung erstellen, muss diese gespeichert werden.
+>Wenn Sie trotz der Empfehlungen hier Ihre eigene JCR-Sitzung erstellen, muss sie gespeichert werden.
 
 ### Anzahl/Umfang der Starter minimieren {#minimize-the-number-scope-of-launchers}
 
@@ -285,7 +285,7 @@ Workflows können einen erheblichen Mehraufwand verursachen, sowohl im Hinblick 
 
 Ein Beispiel hierfür wäre ein Workflow, der einen Geschäftsprozess für einen Satz von Inhalten implementiert und diesen Inhalt dann aktiviert. Es ist besser, einen benutzerdefinierten Workflow-Prozess zu erstellen, der jeden dieser Knoten aktiviert, anstatt einen **Inhalt aktivieren** -Modell für die einzelnen Inhaltsknoten erstellen, die veröffentlicht werden müssen. Dieser Ansatz erfordert zusätzliche Entwicklungsarbeiten, ist jedoch bei der Ausführung effizienter als beim Starten einer separaten Workflow-Instanz für jede Aktivierung.
 
-Ein weiteres Beispiel wäre ein Workflow, der eine Reihe von Knoten verarbeitet, ein Workflow-Paket erstellt und dann dieses Paket aktiviert. Anstatt das Paket zu erstellen und anschließend einen separaten Workflow mit dem Paket als Payload zu erstellen, können Sie im Paketerstellungsschritt die Payload Ihres Workflows ändern und dann den Paketaktivierungsschritt innerhalb desselben Workflow-Modells aufrufen.
+Ein weiteres Beispiel wäre ein Workflow, der mehrere Knoten verarbeitet, ein Workflow-Paket erstellt und dann dieses Paket aktiviert. Anstatt das Paket zu erstellen und anschließend einen separaten Workflow mit dem Paket als Payload zu erstellen, können Sie im Paketerstellungsschritt die Payload Ihres Workflows ändern und dann den Paketaktivierungsschritt innerhalb desselben Workflow-Modells aufrufen.
 
 ### Handler-Fortschritt {#handler-advance}
 

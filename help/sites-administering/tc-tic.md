@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie das Übersetzungsintegrations-Framework in Ad
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1573'
-ht-degree: 80%
+source-wordcount: '1571'
+ht-degree: 78%
 
 ---
 
@@ -196,7 +196,7 @@ Um die Übersetzung Ihrer Quellseiten in andere Sprachen zu konfigurieren, verkn
 * mit der Cloud-Konfiguration, die AEM an Ihren Übersetzungsdienstleister anbindet
 * mit dem Framework für die Übersetzungsintegration, das die Details der Übersetzung konfiguriert
 
-Beachten Sie, dass die Cloud-Konfiguration des Frameworks für die Übersetzungsintegration festlegt, mit welcher Cloud-Konfiguration die Verbindung mit dem Dienstleister hergestellt wird. Wenn Sie eine Quellseite mit der Cloud-Konfiguration eines Frameworks verknüpfen, muss die Seite mit der Cloud-Konfiguration des Dienstleisters verknüpft sein, die die Cloud-Konfiguration des Frameworks nutzt.
+Die Cloud-Konfiguration des Framework für die Übersetzungsintegration identifiziert die Cloud-Konfiguration, die für die Verbindung mit dem Dienstleister verwendet werden soll. Wenn Sie eine Quellseite mit der Cloud-Konfiguration eines Frameworks verknüpfen, muss die Seite mit der Cloud-Konfiguration des Dienstleisters verknüpft sein, die die Cloud-Konfiguration des Frameworks nutzt.
 
 Wenn Sie eine Seite mit einer Cloud-Konfiguration verknüpfen, erben die untergeordneten Elemente der Seite diese Verknüpfung. Wenn Sie z. B. die Seite /content/geometrixx/en/products mit einem Framework für die Übersetzungsintegration verknüpfen, werden die Produktseite und alle untergeordneten Seiten entsprechend diesem Framework übersetzt.
 

@@ -1,17 +1,13 @@
 ---
 title: Erstellen und Verwenden von Designs
-seo-title: Creating and using themes
 description: Sie können Designs verwenden, um ein adaptives Formular oder eine interaktive Kommunikation zu stilisieren und eine visuelle Identität bereitzustellen. Sie können ein Design für eine beliebige Anzahl adaptiver Formulare oder interaktiver Kommunikation freigeben.
-seo-description: You can use themes to stylize and provide a visual identity to an adaptive form or interactive communication. You can share a theme across any number of adaptive forms or interactive communications.
-uuid: 88b6b6fd-181b-48c5-ac15-2b37592bd14b
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, interactive-communications
 content-strategy: max-2018
-discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 feature: Adaptive Forms
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '6106'
 ht-degree: 81%
@@ -40,7 +36,7 @@ Sie haben folgende Möglichkeiten:
 
 ## Erstellen, Herunterladen und Hochladen eines Designs {#creating-downloading-or-uploading-a-theme}
 
-Mit AEM Forms können Sie Designs erstellen, herunterladen oder hochladen. Ein Design wird wie andere Assets wie Formulare, Dokumente und Briefe erstellt. Das Design wird als separate Entität mit Metaeigenschaften wie Formularen gespeichert. Designs, die eine separate Entität sind, ermöglichen die Wiederverwendung in mehreren adaptiven Formularen und interaktiver Kommunikation. Sie können ein Design auch in eine andere Instanz von AEM Forms verschieben und wiederverwenden.
+Mit AEM Forms können Sie Designs erstellen, herunterladen oder hochladen. Ein Design wird wie andere Assets wie Formulare, Dokumente und Briefe erstellt. Das Design wird als separate Entität mit Meta-Eigenschaften wie Formularen gespeichert. Designs, die eine separate Entität sind, ermöglichen die Wiederverwendung in mehreren adaptiven Formularen und interaktiver Kommunikation. Sie können ein Design auch in eine andere Instanz von AEM Forms verschieben und wiederverwenden.
 
 ### Erstellen von Designs {#creating-a-theme}
 
@@ -247,7 +243,7 @@ Wenn Sie auf die Schaltfläche „Bearbeiten“ für eine Komponente in der Seit
 
 Bestimmte Komponenten, wie Textfelder, numerische Felder, Optionsfelder und Kontrollkästchen, werden unter allgemeinen Komponenten, wie „Feld“, kategorisiert. Angenommen, Sie möchten die Formatierung von Optionsfeldern anpassen. Um Optionsfelder für die Formatierung auszuwählen, wählen Sie **Feld > Widget > Optionsfeld**.
 
-Klicken **ALLE ERWEITERN** in der Seitenleiste, um kategorisierte Komponenten, die nicht im Voraus sichtbar sind, anzuzeigen, auszuwählen und zu formatieren.
+Klicks **ALLE erweitern** in der Seitenleiste, um kategorisierte Komponenten, die nicht im Voraus sichtbar sind, anzuzeigen, auszuwählen und zu formatieren.
 
 ### Formatieren von Bereichslayouts {#styling-panel-layouts-br}
 
@@ -377,7 +373,7 @@ Wenn Sie eine Komponente auf der Arbeitsfläche auswählen, wird die Komponenten
 
 ![Komponenten-Symbolleiste](assets/overlay.png)
 
-Komponenten-Symbolleiste im numerischen Feld auf der Arbeitsfläche
+Komponentensymbolleiste im numerischen Feld auf der Arbeitsfläche
 
 ### Verwenden der Seitenleiste {#using-rail}
 
@@ -502,7 +498,7 @@ Führen Sie die folgenden Schritte aus, um Adobe Fonts in AEM zu konfigurieren:
 
 1. Klicken Sie in der Autoreninstanz auf ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Tools ![hammer](assets/hammer.png) > Bereitstellung > Cloud Services.
 1. Navigieren Sie auf der Seite **Cloud Services** zur Option **Adobe Fonts** und öffnen Sie sie. Öffnen Sie den Konfigurationsordner und klicken Sie auf **Erstellen**.
-1. Im **Konfiguration erstellen** ein Dialogfeld, geben Sie einen Titel für die Konfiguration an und klicken Sie auf **Erstellen**.
+1. Im **Konfiguration erstellen** Dialogfeld geben Sie einen Titel für die Konfiguration an und klicken Sie auf **Erstellen**.
 
    Daraufhin werden Sie zur Seite „Konfiguration“ geleitet.
 

@@ -1,6 +1,6 @@
 ---
-title: Stile für Adobe Experience Manager CIF-Kernkomponenten festlegen
-description: Erfahren Sie, wie Sie Adobe Experience Manager CIF-Kernkomponenten gestalten. In diesem Tutorial wird beschrieben, wie Client-seitige Bibliotheken oder Client-Bibliotheken zum Bereitstellen und Verwalten von CSS und JavaScript für eine Adobe Experience Manager (AEM) Commerce-Implementierung verwendet werden. Zudem wird in dem Tutorial erläutert, wie sich das ui.frontend-Modul und ein webpack-Projekt in den End-to-End-Build-Prozess integrieren lassen.
+title: Stile für Adobe Experience Manager CIF-Kernkomponenten gestalten
+description: Erfahren Sie, wie Sie Adobe Experience Manager CIF Kernkomponenten gestalten. In diesem Tutorial wird beschrieben, wie Client-seitige Bibliotheken oder Client-Bibliotheken zum Bereitstellen und Verwalten von CSS und JavaScript für eine Adobe Experience Manager (AEM) Commerce-Implementierung verwendet werden. Zudem wird in dem Tutorial erläutert, wie sich das ui.frontend-Modul und ein webpack-Projekt in den End-to-End-Build-Prozess integrieren lassen.
 sub-product: Commerce
 topics: Development
 version: Cloud Service
@@ -9,16 +9,16 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2535'
-ht-degree: 79%
+source-wordcount: '2533'
+ht-degree: 89%
 
 ---
 
 # Stile für AEM CIF-Kernkomponenten festlegen {#style-aem-cif-core-components}
 
-Das [CIF-Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) ist eine Referenz-Code-Basis für die Verwendung von [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components). In diesem Tutorial untersuchen Sie das Venia-Referenzprojekt und verstehen, wie von AEM CIF-Kernkomponenten verwendete CSS- und JavaScript-Dateien organisiert sind. Sie erstellen auch einen Stil mithilfe von CSS, um den Standardstil des **Produkt-Teaser** -Komponente.
+Das [CIF-Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) ist eine Referenz-Code-Basis für die Verwendung von [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components). In diesem Tutorial können Sie sich das Venia-Referenzprojekt ansehen und erfahren, wie von AEM CIF-Kernkomponenten verwendete CSS- und JavaScript-Dateien organisiert werden. Sie erstellen auch einen Stil mithilfe von CSS, um den Standardstil des **Produkt-Teaser** -Komponente.
 
 >[!TIP]
 >
@@ -26,7 +26,7 @@ Das [CIF-Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) ist eine 
 
 ## Was Sie erstellen werden
 
-In diesem Tutorial wird ein neuer Stil für die Produkt-Teaser-Komponente implementiert, der einer Karte ähnelt. Das im Tutorial erworbene Wissen kann auf andere CIF-Kernkomponenten angewendet werden.
+In diesem Tutorial wird ein neuer Stil für die Produkt-Teaser-Komponente implementiert, der einer Karte ähnlich ist. Das im Tutorial erworbene Wissen kann auf andere CIF-Kernkomponenten angewendet werden.
 
 ![Was Sie erstellen werden](../assets/style-cif-component/what-you-will-build.png)
 
@@ -65,17 +65,17 @@ Wir klonen die [Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) un
 
 ## Client-Bibliotheken und ui.frontend-Modul {#introduction-to-client-libraries}
 
-Die CSS- und JavaScript-Dateien, die für das Rendern der Designs/Stile der Storefront verantwortlich sind, werden in AEM von einer [Client-Bibliothek](/help/sites-developing/clientlibs.md) (kurz clientlibs) verwaltet. Client-Bibliotheken bieten einen Mechanismus zum Organisieren von CSS und JavaScript im Code eines Projekts und zum anschließenden Bereitstellen auf der Seite.
+Die CSS- und JavaScript-Dateien, die für das Rendern der Designs/Stile der Storefront verantwortlich sind, werden in AEM von einer [Client-Bibliothek](/help/sites-developing/clientlibs.md) (kurz clientlibs) verwaltet. Client-Bibliotheken bieten ein Verfahren zum Organisieren von CSS- und JavaScript-Dateien im Code eines Projekts und zum anschließenden Bereitstellen auf der Seite.
 
 Markenspezifische Stile können auf AEM CIF-Kernkomponenten angewendet werden, indem das von diesen Client-Bibliotheken verwaltete CSS hinzugefügt und überschrieben wird. Kenntnisse dazu, wie Client-Bibliotheken strukturiert sind und auf der Seite eingeschlossen werden, sind von entscheidender Bedeutung.
 
 Das [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de) ist ein dediziertes [webpack](https://webpack.js.org/)-Projekt für die Verwaltung aller Frontend-Assets eines Projekts. Dadurch können Frontend-Entwickler eine beliebige Zahl von Sprachen und Technologien wie [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) und vieles mehr nutzen.
 
-Die `ui.frontend` -Modul ist auch ein Maven-Modul und mit dem größeren Projekt integriert, indem ein NPM-Modul verwendet wird, das [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). Während eines Builds kopiert `aem-clientlib-generator` die kompilierten CSS- und JavaScript-Dateien im `ui.apps`-Modul in eine Client-Bibliothek.
+Das `ui.frontend`-Modul ist ebenfalls ein Maven-Modul und mit dem größeren Projekt durch Einsatz eines NPM-Moduls (dem [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator)) integriert. Während eines Builds kopiert `aem-clientlib-generator` die kompilierten CSS- und JavaScript-Dateien im `ui.apps`-Modul in eine Client-Bibliothek.
 
 ![ui.frontend-zu-ui.apps-Architektur](../assets/style-cif-component/ui-frontend-architecture.png)
 
-*Kompilierte CSS- und JavaScript-Dateien werden aus dem `ui.frontend` in das `ui.apps` -Modul als Client-Bibliothek während eines Maven-Builds*
+*Kompilierte CSS- und JavaScript-Dateien werden bei einem Maven-Build aus dem `ui.frontend`-Modul als Client-Bibliothek in das `ui.apps`-Modul kopiert*
 
 ## Teaser-Stil aktualisieren {#ui-frontend-module}
 
@@ -106,7 +106,7 @@ Nehmen Sie als Nächstes eine kleine Änderung am Teaser-Stil vor, um zu sehen, 
    }
    ```
 
-   Die obige Regel sollte der Produkt-Teaser-Komponente einen fett rosa Rahmen hinzufügen.
+   Mit der obigen Regel sollte der Produkt-Teaser-Komponente ein fetter rosa Rahmen hinzugefügt werden.
 
 1. Öffnen Sie ein neues Terminal-Fenster und navigieren Sie zum Ordner `ui.frontend`:
 
@@ -180,7 +180,7 @@ Nehmen Sie als Nächstes eine kleine Änderung am Teaser-Stil vor, um zu sehen, 
 
    **clientlib-cif** – Dies ist ebenfalls eine leere Client-Bibliothek, die die erforderlichen Abhängigkeiten von [AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) einfach einbettet. Die Kategorie lautet `venia.cif`.
 
-   **clientlib-grid** – Dies umfasst die CSS, die zur Aktivierung der Funktion „Responsives Raster“ von AEM erforderlich sind. Die Verwendung des AEM ermöglicht [Layout-Modus](/help/sites-authoring/responsive-layout.md) im AEM Editor und gibt Inhaltsautoren die Möglichkeit, die Größe von Komponenten zu ändern. Die Kategorie lautet `venia.grid` und ist in der `venia.base`-Bibliothek eingebettet.
+   **clientlib-grid** – Dies umfasst die CSS, die zur Aktivierung der Funktion „Responsives Raster“ von AEM erforderlich sind. Durch Verwendung des AEM-Rasters wird der [Layout-Modus](/help/sites-authoring/responsive-layout.md) im AEM-Editor aktiviert und Inhaltsautorinnen und -autoren erhalten die Möglichkeit, die Größe von Komponenten zu ändern. Die Kategorie lautet `venia.grid` und ist in der `venia.base`-Bibliothek eingebettet.
 
 1. Überprüfen Sie die Dateien `customheaderlibs.html` und `customfooterlibs.html` unter `ui.apps/src/main/content/jcr_root/apps/venia/components/page`:
 
@@ -213,7 +213,7 @@ Nachdem die Code-Aktualisierungen bereitgestellt wurden, fügen Sie mit den AEM-
 
    ![Produkt-Teaser mit rosa Rahmen](../assets/style-cif-component/pink-border-product-teaser.png)
 
-   Sie sollten sehen, dass der Produkt-Teaser jetzt einen hellrosa Rahmen hat, der auf der zuvor erstellten CSS-Regeländerung basiert.
+   Sie sollten sehen, dass der Produkt-Teaser nun einen rosa Rahmen hat, der auf der zuvor erstellten CSS-Regeländerung basiert.
 
 ## Client-Bibliotheken auf der Seite überprüfen {#verify-client-libraries}
 
@@ -225,7 +225,7 @@ Nachdem die Code-Aktualisierungen bereitgestellt wurden, fügen Sie mit den AEM-
 
    ![Als veröffentlicht anzeigen](../assets/style-cif-component/view-as-published.png)
 
-   Dadurch wird die Seite geöffnet, ohne dass das AEM Autoren-JavaScript geladen wurde, wie es auf der veröffentlichten Site angezeigt würde. Beachten Sie, dass an die URL der Abfrageparameter `?wcmmode=disabled` angehängt ist. Bei der Entwicklung von CSS und JavaScript empfiehlt es sich, diesen Parameter zu verwenden, um die Seite zu vereinfachen, ohne dass AEM Autor etwas davon hat.
+   Dadurch wird die Seite geöffnet, ohne dass das AEM Autoren-JavaScript geladen wurde, wie es auf der veröffentlichten Site angezeigt würde. Beachten Sie, dass an die URL der Abfrageparameter `?wcmmode=disabled` angehängt ist. Bei der Entwicklung von CSS und JavaScript ist es eine gute Idee, diesen Parameter zur Vereinfachung der Seite zu verwenden (ohne Elemente von AEM Author).
 
 1. Wenn Sie die Seitenquelle anzeigen, sollten Sie in der Lage sein, mehrere enthaltene Client-Bibliotheken zu identifizieren:
 
@@ -261,7 +261,7 @@ Es gibt mehrere Optionen zum Einschließen einer Client-seitigen Bibliothek. Seh
 
    ![Vorlage bearbeiten](../assets/style-cif-component/edit-template.png)
 
-   Dadurch wird die Vorlage für die **Landingpage** geöffnet, auf der die **Startseite** basiert.
+   Dadurch wird die **Landingpage** Vorlage **Startseite** -Seite basiert auf .
 
    >[!NOTE]
    >
@@ -338,11 +338,11 @@ Der webpack-Dev-Server dient als Proxy für Bilder und einige der CSS/JavaScript
 
 ## Kartenstil für den Produkt-Teaser implementieren {#update-css-product-teaser}
 
-Ändern Sie anschließend die Sass-Dateien im `ui.frontend`-Modul, um für den Produkt-Teaser einen kartenähnlichen Stil zu implementieren. Der webpack-Dev-Server wird verwendet, um die Änderungen schnell zu sehen.
+Ändern Sie anschließend die Sass-Dateien im `ui.frontend`-Modul, um für den Produkt-Teaser einen kartenähnlichen Stil zu implementieren. Der webpack-Dev-Server dient dazu, die Änderungen schnell anzuzeigen.
 
 Kehren Sie zur IDE und zum erstellten Projekt zurück.
 
-1. Im **ui.frontend** -Modul, öffnen Sie die Datei erneut. `_productteaser.scss` at `ui.frontend/src/main/styles/commerce/_productteaser.scss`.
+1. Öffnen Sie im Modul **ui.frontend** erneut die Datei `_productteaser.scss` unter `ui.frontend/src/main/styles/commerce/_productteaser.scss`.
 
 1. Nehmen Sie folgende Änderungen am Rahmen des Produkt-Teasers vor:
 
@@ -435,7 +435,7 @@ Kehren Sie zur IDE und zum erstellten Projekt zurück.
 
    Die Änderungen wurden jedoch noch nicht in AEM bereitgestellt. Sie können die [Lösungsdatei hier](../assets/style-cif-component/_productteaser.scss) herunterladen.
 
-1. Stellen Sie die Aktualisierungen mithilfe Ihrer Maven-Kenntnisse über ein Befehlszeilen-Terminal für AEM bereit:
+1. Aktualisierungen über ein Befehlszeilen-Terminal mithilfe Ihrer Maven-Kenntnisse in AEM bereitstellen:
 
    ```shell
    $ cd aem-cif-guides-venia/
@@ -467,7 +467,7 @@ Außerdem versucht AEM, Client-Bibliotheken für höhere Leistung zwischenzuspei
 
 ## Herzlichen Glückwunsch {#congratulations}
 
-Sie haben Ihre erste AEM CIF-Kernkomponente gestylt und einen Webpack-Dev-Server verwendet!
+Sie haben Ihre erste AEM CIF Kernkomponente gestylt und einen Webpack-Dev-Server verwendet!
 
 ## Bonusaufgabe {#bonus-challenge}
 

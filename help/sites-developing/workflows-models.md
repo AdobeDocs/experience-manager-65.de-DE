@@ -1,19 +1,15 @@
 ---
 title: Erstellen von Workflow-Modellen
-seo-title: Creating Workflow Models
 description: Sie erstellen ein Workflow-Modell, um die Schritte zu definieren, die ausgeführt werden, wenn ein Benutzer den Workflow startet.
-seo-description: You create a workflow model to define the series of steps executed when a user starts the workflow.
-uuid: 31071d3a-d6d5-4476-9ac0-7b335de406d9
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2463'
+source-wordcount: '2451'
 ht-degree: 50%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 50%
 
 >[!CAUTION]
 >
->Informationen zur Verwendung der klassischen Benutzeroberfläche finden Sie in der [Dokumentation zu AEM 6.3](https://helpx.adobe.com/de/experience-manager/6-3/help/sites-developing/workflows-models.html) als Referenz.
+>Informationen zur Verwendung der klassischen Benutzeroberfläche finden Sie im Abschnitt [Dokumentation zu AEM 6.3](https://helpx.adobe.com/de/experience-manager/6-3/help/sites-developing/workflows-models.html) als Referenz.
 
 Sie erstellen eine [Workflow-Modell](/help/sites-developing/workflows.md#model) , um die Schritte zu definieren, die beim Starten des Workflows ausgeführt werden. Sie können auch Modelleigenschaften definieren, um beispielsweise festzulegen, ob es sich um einen Übergangs-Workflow oder einen Workflow mit mehreren Ressourcen handelt.
 
@@ -30,14 +26,14 @@ Wenn ein Benutzer einen Workflow startet, wird eine Instanz gestartet. Dies ist 
 
 ## Erstellen eines neuen Workflows {#creating-a-new-workflow}
 
-Wenn Sie zum ersten Mal ein neues Workflow-Modell erstellen, enthält es Folgendes:
+Wenn Sie ein Workflow-Modell neu erstellen, enthält es zunächst:
 
 * Die Schritte **Fluss-Start** und **Fluss-Ende**.
 Diese stellen den Anfang und das Ende des Workflows dar. Diese Schritte sind erforderlich und können nicht bearbeitet bzw. entfernt werden.
 * Ein **Teilnehmer**-Beispielschritt namens **Schritt 1**.
 Dieser Schritt ist so konfiguriert, dass er dem Workflow-Initiator ein Arbeitselement zuordnet. Sie können diesen Schritt nach Bedarf bearbeiten oder löschen und Schritte hinzufügen.
 
-Gehen Sie folgendermaßen vor, um einen neuen Workflow mit dem Editor zu erstellen:
+So erstellen Sie einen Workflow mit dem Editor:
 
 1. Öffnen Sie die **Workflow-Modelle-Konsole** über **Tools** > **Workflow** > **Modelle** oder beispielsweise über: [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
 1. Wählen Sie **Erstellen** und dann **Modell erstellen** aus.
@@ -86,9 +82,9 @@ Wenn Sie eine [Standardmodell und/oder Legacy-Modell](/help/sites-developing/wor
 * Der Schritte-Browser (auf der linken Seite) ist nicht verfügbar.
 * Die Symbolleiste weist eine Option zum **Bearbeiten** auf (auf der rechten Seite).
 * Zunächst werden das Modell und seine Eigenschaften im schreibgeschützten Modus wie folgt dargestellt:
-   * Standard-Workflows befinden sich unter `/libs`.
-   * Legacy-Workflows befinden sich unter `/etc`.
-Durch die Auswahl von **Bearbeiten** wird:
+   * Standard-Workflows befinden sich in `/libs`
+   * Alte Workflows befinden sich unter `/etc`
+Auswählen **Bearbeiten** wird:
 * eine Kopie des Workflows unter `/conf` gespeichert
 * der Schritte-Browser verfügbar gemacht
 * es möglich, Änderungen vorzunehmen.
@@ -167,7 +163,7 @@ Sie können das **Verhalten** von Workflow-Schritten über das Dialogfeld **Schr
 
 ### Erstellen eines Verlaufs-Workflows {#creating-a-transient-workflow}
 
-Sie können eine [Übergangs](/help/sites-developing/workflows.md#transient-workflows) Workflow-Modell beim Erstellen eines neuen Modells oder durch Bearbeiten eines vorhandenen Modells:
+Sie können eine [Übergangs](/help/sites-developing/workflows.md#transient-workflows) Workflow-Modell beim Erstellen eines Modells oder durch Bearbeiten eines vorhandenen Modells:
 
 1. Öffnen Sie das Workflow-Modell für [Bearbeiten](#editinganexistingworkflow).
 1. Auswählen **Workflow-Modelleigenschaften** aus der Symbolleiste.
@@ -207,7 +203,7 @@ Befolgen Sie die Konfiguration, wenn ein Workflow-Modell der klassischen Benutze
 
 ### Konfigurieren eines Workflows für die Unterstützung mehrerer Ressourcen {#configuring-a-workflow-for-multi-resource-support}
 
-Sie können ein Workflow-Modell für [Unterstützung mehrerer Ressourcen](/help/sites-developing/workflows.md#multi-resource-support) beim Erstellen eines neuen Modells oder durch Bearbeiten eines vorhandenen Modells:
+Sie können ein Workflow-Modell für [Unterstützung mehrerer Ressourcen](/help/sites-developing/workflows.md#multi-resource-support) beim Erstellen eines Modells oder durch Bearbeiten eines vorhandenen Modells:
 
 1. Öffnen Sie das Workflow-Modell für [Bearbeiten](#editinganexistingworkflow).
 1. Auswählen **Workflow-Modelleigenschaften** aus der Symbolleiste.
@@ -264,7 +260,7 @@ Zu definieren **Phasen** für Ihren Workflow:
 
 Gehen Sie folgendermaßen vor, um ein Workflow-Modell in ein Paket zu exportieren:
 
-1. Erstellen Sie ein neues Paket mit dem [Package Manager](/help/sites-administering/package-manager.md#package-manager):
+1. Erstellen Sie ein Paket mit dem [Package Manager](/help/sites-administering/package-manager.md#package-manager):
 
    1. Navigieren Sie zum Package Manager über **Instrumente**, **Implementierung**, **Pakete**.
 
@@ -299,7 +295,7 @@ Sie können ein Formular konfigurieren, das vom ausgewählten Workflow verarbeit
 
 So konfigurieren Sie den Workflow für Ihr Formular:
 
-1. Erstellen Sie eine neue Seite und öffnen Sie sie zur Bearbeitung.
+1. Erstellen Sie eine Seite und öffnen Sie sie zur Bearbeitung.
 1. Hinzufügen einer **Formular** -Komponente auf der Seite.
 1. **Konfigurieren** die **Formular-Start** -Komponente, die auf der Seite angezeigt wurde.
 1. Wählen Sie mithilfe von **Workflow starten** den gewünschten Workflow aus den verfügbaren Optionen aus:
@@ -328,7 +324,7 @@ Sie können auch AEM für die Anzeige konfigurieren **DEBUG** Meldungen in den P
 
 Um einige der Möglichkeiten zur Erstellung eines Workflows zu veranschaulichen, wird im folgenden Beispiel eine Variante des Workflows `Publish Example` erstellt.
 
-1. [Erstellen Sie ein neues Workflow-Modell](#creating-a-new-workflow).
+1. [Erstellen Sie ein Workflow-Modell](#creating-a-new-workflow).
 
    Der neue Workflow enthält:
 

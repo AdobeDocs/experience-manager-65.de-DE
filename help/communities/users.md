@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1916'
+source-wordcount: '1912'
 ht-degree: 1%
 
 ---
@@ -74,7 +74,7 @@ Um in der Autorenumgebung registrierte Benutzer und Benutzergruppen zu verwalten
 
 | Wenn Gruppenmitglied... | Primäre Rolle |
 |---|---|
-| Administrierende | Die Gruppe Administratoren besteht aus Systemadministratoren, die über alle Fähigkeiten eines Community-Administrators sowie über die Fähigkeit verfügen, die Gruppe Community-Administratoren zu verwalten. |
+| Administrierende | Die Gruppe Administratoren besteht aus Systemadministratoren, die über alle Fähigkeiten eines Community-Administrators und die Fähigkeit verfügen, die Gruppe Community-Administratoren zu verwalten. |
 | Community-Administratoren | Die Gruppe Community-Administratoren wird automatisch Mitglied aller Community-Sites und aller auf der Site erstellten Community-Gruppen. Die Administratorgruppe ist ein erstmaliges Mitglied der Gruppe Community-Administratoren . In der Autorenumgebung können Community-Administratoren Community-Sites erstellen, Sites verwalten, Mitglieder verwalten (sie können Mitglieder aus der Community verbieten) und Inhalte moderieren. |
 | Community &lt;*Site-Name*> Sitecontentmanager | Der Community-Site-Inhaltsmanager kann herkömmliche AEM erstellen, Seiten für eine Community-Site erstellen und ändern. |
 | Ohne | Ein anonymer Site-Besucher kann nicht auf die Autorenumgebung zugreifen. |
@@ -200,7 +200,7 @@ Führen Sie dieselben Schritte aus wie beim Erstellen und Zuweisen eines Benutze
 
 ### LDAP-Integration {#ldap-integration}
 
-AEM unterstützt die Verwendung von LDAP für die Authentifizierung von Benutzern sowie die Erstellung von Benutzerkonten. Weitere Informationen finden Sie unter [Konfigurieren von LDAP mit AEM 6](../../help/sites-administering/ldap-config.md).
+AEM unterstützt die Verwendung von LDAP zur Authentifizierung von Benutzern und zur Erstellung von Benutzerkonten. Weitere Informationen finden Sie unter [Konfigurieren von LDAP mit AEM 6](../../help/sites-administering/ldap-config.md).
 
 Im Folgenden finden Sie einige Konfigurationsdetails für Community-Mitglieder und Mitgliedergruppen.
 

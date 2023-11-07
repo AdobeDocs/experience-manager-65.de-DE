@@ -3,10 +3,10 @@ title: Erstellen eines Handlers zum Einladen externer Benutzer
 description: Erfahren Sie, wie Sie einen Handler für eingeladene externe Benutzer erstellen. Dadurch kann der Rights Management-Dienst externe Benutzer einladen, Rights Management-Benutzer zu werden.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 94%
+source-wordcount: '1132'
+ht-degree: 93%
 
 ---
 
@@ -32,7 +32,7 @@ Um einen Handler zum Einladen externer Benutzer einzurichten, müssen Sie die fo
 
 ## Einrichten der Entwicklungsumgebung {#setting-up-development-environment}
 
-Um Ihre Entwicklungsumgebung einzurichten, müssen Sie ein neues Java-Projekt erstellen, z. B. ein Eclipse-Projekt. Es wird die Eclipse-Version `3.2.1` oder höher unterstützt.
+Um Ihre Entwicklungsumgebung einzurichten, müssen Sie ein Java-Projekt erstellen, z. B. ein Eclipse-Projekt. Es wird die Eclipse-Version `3.2.1` oder höher unterstützt.
 
 Die Rights Management-SPI erfordert es, dass die Datei `edc-server-spi.jar` im Klassenpfad Ihres Projekts deklariert wird. Wenn Sie diese JAR-Datei nicht angeben, können Sie die Rights Management-SPI nicht in Ihrem Java-Projekt verwenden. Diese JAR-Datei wird zusammen mit dem AEM Forms-SDK im Ordner `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` installiert.
 

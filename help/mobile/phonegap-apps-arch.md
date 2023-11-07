@@ -5,9 +5,9 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: ab4f1c61-be83-420e-a339-02cf1f33efed
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2682'
 ht-degree: 0%
 
 ---
@@ -58,9 +58,9 @@ Der Hauptteil einer Angular-Seite wird je nachdem, ob wcmMode erkannt wird (!= W
 
 Im Autorenmodus wird jede einzelne Seite separat gerendert. Angular behandelt weder das Routing zwischen Seiten noch eine NG-Ansicht zum Laden einer partiellen Vorlage, die die Komponenten der Seite enthält. Stattdessen wird der Inhalt der Seitenvorlage (template.jsp) serverseitig über die `cq:include` -Tag.
 
-Diese Strategie ermöglicht die Autorenfunktionen (wie das Hinzufügen und Bearbeiten von Komponenten im Absatzsystem, Sidekick, Designmodus usw.) , um ohne Änderung zu funktionieren. Seiten, die auf der clientseitigen Wiedergabe basieren, wie z. B. Seiten für Apps, funktionieren im Autorenmodus nicht gut AEM.
+Diese Strategie ermöglicht es, dass die Autorenfunktionen (z. B. das Hinzufügen und Bearbeiten von Komponenten im Absatzsystem, Sidekick, Designmodus usw.) ohne Änderungen funktionieren. Seiten, die auf der clientseitigen Wiedergabe basieren, wie z. B. Seiten für Apps, funktionieren im Autorenmodus nicht gut AEM.
 
-Beachten Sie, dass der Einschluss von template.jsp in einen `div` -Element, das die `ng-controller` Richtlinie. Diese Struktur ermöglicht die Verknüpfung der DOM-Inhalte mit dem Controller. Daher schlagen zwar Seiten fehl, die auf der Client-Seite selbst gerendert werden, doch funktionieren einzelne Komponenten, die dies tun, gut (siehe Abschnitt zu Komponenten unten).
+Der Einschluss von template.jsp wird in eine `div` -Element, das die `ng-controller` Richtlinie. Diese Struktur ermöglicht die Verknüpfung der DOM-Inhalte mit dem Controller. Daher schlagen zwar Seiten fehl, die auf der Client-Seite selbst gerendert werden, doch funktionieren einzelne Komponenten, die dies tun, gut (siehe Abschnitt zu Komponenten unten).
 
 ```xml
 <div ng-controller="<c:out value="${controllerNameStripped}"/>">
@@ -143,7 +143,7 @@ Das Skript controller.js.jsp generiert das Controller-Fragment für jede Seite. 
 ])
 ```
 
-Beachten Sie Folgendes: `data` wird das von der Angular zurückgegebene Promise zugewiesen. `$http.get` -Methode. Jede auf dieser Seite enthaltene Komponente kann bei Bedarf einen beliebigen .json-Inhalt verfügbar machen (über das angular.json.jsp-Skript) und nach der Auflösung auf den Inhalt dieser Anforderung reagieren. Die Anfrage erfolgt sehr schnell auf Mobilgeräten, da sie einfach auf das Dateisystem zugreift.
+Die `data` wird das von der Angular zurückgegebene Promise zugewiesen. `$http.get` -Methode. Jede auf dieser Seite enthaltene Komponente kann bei Bedarf einen beliebigen .json-Inhalt verfügbar machen (über das angular.json.jsp-Skript) und nach der Auflösung auf den Inhalt dieser Anforderung reagieren. Die Anfrage erfolgt sehr schnell auf Mobilgeräten, da sie einfach auf das Dateisystem zugreift.
 
 Damit eine Komponente auf diese Weise Teil des Controllers sein kann, sollte sie die Komponente /libs/mobileapps/components/angular/ng-component erweitern und die Komponente `frameworkType: angular` -Eigenschaft.
 
@@ -366,7 +366,7 @@ Das Verzeichnis www enthält alle Webinhalte (HTML-, JS- und CSS-Dateien), die d
 
 #### www/config.xml {#www-config-xml}
 
-Die PhoneGap-Dokumentation (`https://docs.phonegap.com`) bezeichnet diese Datei als &#39;globale Konfigurationsdatei&#39;. Die Datei &quot;config.xml&quot;enthält viele App-Eigenschaften, z. B. den Namen der App, die App-Voreinstellungen (z. B. ob eine iOS-Webansicht einen Bildlauf ermöglicht) und Plugin-Abhängigkeiten, die *only* Wird vom PhoneGap-Build verwendet.
+Die PhoneGap-Dokumentation (`https://docs.phonegap.com`) bezeichnet diese Datei als &#39;globale Konfigurationsdatei&#39;. Die Datei &quot;config.xml&quot;enthält viele App-Eigenschaften, z. B. den Namen der App, die App-Voreinstellungen (z. B. ob eine iOS-Webansicht einen Overscroll zulässt) und Plugin-Abhängigkeiten, die *only* Wird vom PhoneGap-Build verwendet.
 
 Die Datei &quot;config.xml&quot;ist eine statische Datei in AEM und wird unverändert über die Inhaltssynchronisierung exportiert.
 

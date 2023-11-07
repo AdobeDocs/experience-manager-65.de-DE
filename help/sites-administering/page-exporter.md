@@ -2,10 +2,10 @@
 title: Das Seiten-Export-Tool
 description: Erfahren Sie, wie Sie den Adobe Experience Manager (AEM) Page Exporter verwenden.
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1034'
+ht-degree: 64%
 
 ---
 
@@ -107,7 +107,7 @@ Wenn Ihre Vorlage konfiguriert ist, stellen Sie sie zur Verfügung:
 
 Die Vorlage besteht aus einer Knotenstruktur, da sie das [Content Sync-Framework](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html) verwendet. Jeder Knoten verfügt über die Eigenschaft `type`, die eine spezifische Aktion beim Erstellungsprozess der ZIP-Datei definiert.
 
-<!-- For more details about the type property, refer to the Overview of configuration types section in the Content Sync framework page.
+<!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
 
 Mit den folgenden Knoten können Sie eine Export-Vorlage erstellen:
@@ -131,7 +131,7 @@ Mit dem Knoten page wird die HTML-Seite in die ZIP-Datei kopiert. Er weist die f
 
 * `rewrite`
 Der Knoten rewrite definiert, wie die Links in der exportierten Seite neu geschrieben werden. Die neu geschriebenen Links können entweder auf die Dateien in der ZIP-Datei oder auf die Ressourcen auf dem Server verweisen.
-  <!-- Please refer to the Content Sync page for a complete description of the `rewrite` node. -->
+  <!-- See the Content Sync page for a complete description of the `rewrite` node. -->
 
 * `design`
 Mit dem Knoten design wird das für die exportierte Seite genutzte Design kopiert. Er weist die folgenden Eigenschaften auf:
@@ -156,7 +156,7 @@ Ein generischer Knoten wird verwendet, um Ressourcen wie die `.js`- oder `.css`-
    * Knotentyp ist `nt:unstructured`.
    * Er hat eine `type`-Eigenschaft und mit `type` verwandte Eigenschaften. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
-  Beispielsweise kopiert der folgende Konfigurationsknoten die `mysite.clientlibs.js`-Dateien in die ZIP-Datei:
+  Beispielsweise kopiert der folgende Konfigurationsknoten die `mysite.clientlibs.js` -Dateien in die ZIP-Datei:
 
   ```xml
   "mysite.clientlibs.js": {
@@ -177,7 +177,7 @@ As you may have noticed in the node structure, the **Geometrixx** page export te
 
 Um bestimmte Anforderungen zu erfüllen, implementieren Sie eine [benutzerspezifischer Update-Handler](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html).
 
-<!-- To meet some specific requirements, you may need to implement a custom `type` property: to do so, refer to the Implementing a custom update handler section in the Content Sync page.
+<!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## Programmgesteuertes Exportieren einer Seite {#programmatically-exporting-a-page}

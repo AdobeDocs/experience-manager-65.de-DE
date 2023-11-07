@@ -1,7 +1,7 @@
 ---
 title: Anpassen von Verfolgungstabellen
 seo-title: Customize tracking tables
-description: Gehen Sie wie folgt vor, um die Anzeige der Details von Benutzerprozessen in der Aufgabentabelle zu speichern, die auf der Registerkarte „Verfolgung“ in AEM Forms Workspace angezeigt wird.
+description: Gehen Sie wie folgt vor, um die Anzeige der Details von Benutzerprozessen in der Aufgabentabelle anzupassen, die auf der Registerkarte "Tracking"von AEM Forms Workspace angezeigt wird.
 seo-description: How-to customize the display of the details of user processes in the task table displayed in the tracking tab of AEM Forms workspace.
 uuid: 13d6ebf2-99d5-434f-85f9-b0cba5f5751a
 content-type: reference
@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 exl-id: 9ab657cc-fa8e-4168-8a68-e38ac5c51b29
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '330'
-ht-degree: 100%
+ht-degree: 36%
 
 ---
 
 # Anpassen von Verfolgungstabellen{#customize-tracking-tables}
 
-Die Registerkarte „Tracking“ in AEM Forms Workspace wird verwendet, um die Details von Prozessinstanzen anzuzeigen, an denen der angemeldete Benutzer beteiligt ist. Um die Verfolgungstabellen anzuzeigen, wählen Sie zunächst einen Prozessnamen im linken Fensterbereich aus, um die zugehörige Instanzenliste im mittleren Bereich anzuzeigen. Wählen Sie eine Prozessinstanz aus, um im rechten Fensterbereich eine Tabelle von Aufgaben anzuzeigen, die von dieser Instanz generiert werden. Standardmäßig enthalten die Tabellenspalten die folgenden Aufgabenattribute (das entsprechende Attribut im Aufgabenmodell wird in Klammern angegeben):
+Die Registerkarte „Tracking“ in AEM Forms Workspace wird verwendet, um die Details von Prozessinstanzen anzuzeigen, an denen der angemeldete Benutzer beteiligt ist. Um die Tracking-Tabellen anzuzeigen, wählen Sie zunächst einen Prozessnamen im linken Bereich aus, um die zugehörige Instanzenliste im mittleren Bereich anzuzeigen. Wählen Sie eine Prozessinstanz aus, um eine Tabelle der von dieser Instanz generierten Aufgaben im rechten Bereich anzuzeigen. Standardmäßig zeigen die Tabellenspalten die folgenden Aufgabenattribute an (das entsprechende Attribut im Aufgabenmodell wird in Klammern angegeben):
 
 * ID ( `taskId`)
 * Name ( `stepName`)
@@ -89,7 +89,7 @@ Die übrigen Attribute im Aufgabenmodell, die für die Anzeige in der Aufgabenta
   </tr>
   <tr>
    <td><p>isApprovalUI</p> </td>
-   <td><p>priority</p> </td>
+   <td><p>Priorität</p> </td>
    <td><p>taskACL</p> </td>
   </tr>
   <tr>
@@ -117,9 +117,9 @@ Die übrigen Attribute im Aufgabenmodell, die für die Anzeige in der Aufgabenta
 
 Für die folgenden Anpassungen in der Aufgabentabelle müssen Sie semantische Änderungen im Quellcode vornehmen. In der [Einführung zum Anpassen von AEM Forms Workspace](/help/forms/using/introduction-customizing-html-workspace.md) finden Sie Anweisungen, wie Sie semantische Änderungen mithilfe von Workspace SDK vornehmen und ein minimiertes Paket aus der geänderten Quelle erstellen können.
 
-## Ändern von Tabellenspalten und ihrer Reihenfolge {#changing-table-columns-and-their-order}
+## Tabellenspalten und ihre Reihenfolge ändern {#changing-table-columns-and-their-order}
 
-1. Um die in der Tabelle angezeigten Aufgabenattribute und ihre Reihenfolge zu ändern, konfigurieren Sie die Datei /ws/js/runtime/templates/processinstancehistory.html:
+1. Um die in der Tabelle angezeigten Aufgabenattribute und ihre Reihenfolge zu ändern, konfigurieren Sie die Datei /ws/js/runtime/templates/processinstancehistory.html :
 
    ```html
    <table>
@@ -141,7 +141,7 @@ Für die folgenden Anpassungen in der Aufgabentabelle müssen Sie semantische Ä
        <tbody>
            <%_.each(obj, function(task){%>
            <tr>
-               <!-- Put the task attributes in the order of headings, for example -->
+               <!-- Put the task attributes in the order of headings, for example, -->
                <td><%= task.stepName %></td>
                <td><%= task.instructions %></td>
                <td><%= !task.selectedRoute?'':(task.selectedRoute=='null'?'Default':task.selectedRoute) %></td>
@@ -153,9 +153,9 @@ Für die folgenden Anpassungen in der Aufgabentabelle müssen Sie semantische Ä
    </table>
    ```
 
-## Sortieren einer Verfolgungstabelle {#sorting-a-tracking-table}
+## Tracking-Tabelle sortieren {#sorting-a-tracking-table}
 
-So sortieren Sie die Aufgabenlistentabelle durch Klicken auf die Spaltenüberschrift:
+So sortieren Sie die Aufgabenlistentabelle, wenn Sie auf die Spaltenüberschrift klicken:
 
 1. Registrieren Sie einen Klick-Handler für `.fixedTaskTableHeader th` in der Datei `js/runtime/views/processinstancehistory.js`.
 
@@ -177,9 +177,9 @@ So sortieren Sie die Aufgabenlistentabelle durch Klicken auf die Spaltenübersch
 
 1. Legen Sie die Methode `TaskTableHeaderClick` in `js/runtime/util/history.js` offen.
 
-   Die Methode sucht nach dem task-Attribut im Klick-Ereignis, sortiert die tasklist nach diesem Attribut und gibt die Aufgabentabelle mit der sortierten tasklist aus.
+   Die Methode sucht das Aufgabenattribut aus dem click -Ereignis, sortiert die Aufgabenliste nach diesem Attribut und rendert die Aufgabentabelle mit der sortierten Aufgabenliste.
 
-   Die Sortierung erfolgt mit der Backbone-Sortierfunktion auf der tasklist-Sammlung, indem eine Komparator-Funktion bereitgestellt wird.
+   Die Sortierung erfolgt mithilfe der Backbone-Sortierfunktion in der tasklist-Sammlung, indem eine Vergleichfunktion bereitgestellt wird.
 
    ```javascript
        return {

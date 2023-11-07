@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '634'
-ht-degree: 64%
+ht-degree: 61%
 
 ---
 
@@ -44,7 +44,7 @@ Emulator:
 * Bearbeitet das Seiten-DOM.
 * Das Erscheinungsbild wird über CSS geregelt.
 * Unterstützt Plug-ins (z. B. das Plug-in für die Mobilgeräterotation).
-* Ist nur auf der Autoreninstanz aktiv.
+* Ist nur für Autor aktiv.
 * Die Basiskomponente befindet sich unter `/libs/wcm/emulator/components/base`.
 
 ### Umwandlung des Inhalts durch den Emulator {#how-the-emulator-transforms-the-content}
@@ -143,7 +143,7 @@ So erstellen Sie einen benutzerdefinierten mobilen Emulator:
 
    Beispielsweise können Sie auf den Knoten `/libs/wcm/mobile/components/emulators/iPhone/css` verweisen.
 
-1. Definieren Sie bei Bedarf eine JS-Client-Bibliothek, um beispielsweise ein bestimmtes Plug-in zu definieren: Name = js, Knotentyp = cq:ClientLibrary.
+1. Definieren Sie bei Bedarf eine JS-Client-Bibliothek, um beispielsweise ein bestimmtes Plug-in zu definieren: name = js, node type = cq:ClientLibrary
 
    Beispielsweise können Sie auf den Knoten `/libs/wcm/mobile/components/emulators/base/js` verweisen.
 

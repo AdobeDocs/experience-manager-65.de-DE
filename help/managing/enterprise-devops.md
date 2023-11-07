@@ -1,24 +1,24 @@
 ---
 title: DevOp-Strategien für Unternehmen
-description: Erfahren Sie mehr über die Prozesse, Methoden und Kommunikation, die zur Erleichterung der Bereitstellung und Vereinfachung der Zusammenarbeit erforderlich sind.
+description: Erfahren Sie mehr über die Prozesse, Methoden und Kommunikation, die zur Vereinfachung von Bereitstellung und Zusammenarbeit nötig sind.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing
 content-type: reference
 exl-id: e67f848a-a8cd-4585-a734-e6b1de8a8d74
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 62%
+source-wordcount: '982'
+ht-degree: 74%
 
 ---
 
 # DevOp-Strategien für Unternehmen{#enterprise-devops}
 
-DevOps umfasst die Prozesse, Methoden und Kommunikation, die erforderlich sind, um:
+DevOp-Strategien umfassen die notwendigen Prozesse, Methoden und Kommunikation für Folgendes:
 
 * Erleichterung der Bereitstellung der Software über die verschiedenen Umgebungen hinweg;
-* Vereinfachen Sie die Zusammenarbeit zwischen den Entwicklungs-, Test- und Bereitstellungsteams.
+* Vereinfachung der Zusammenarbeit zwischen der Entwicklungs-, Test- und Bereitstellungs-Teams.
 
 DevOp-Strategien sollen unter anderem zur Vermeidung folgender Probleme beitragen:
 
@@ -43,7 +43,7 @@ Eine Adobe Experience Manager-Bereitstellung (AEM) besteht in der Regel aus mehr
 
 ### Entwicklung {#development}
 
-Die Entwickler sind für die Entwicklung und Anpassung des vorgeschlagenen Projekts (Website, Mobile Apps, DAM-Implementierung usw.) mit allen erforderlichen Funktionen verantwortlich. Sie:
+Die Entwicklenden sind für die Entwicklung und Anpassung des vorgeschlagenen Projekts mit sämtlichen benötigten Funktionen verantwortlich (z. B. Website, Mobile Apps, DAM-Implementierung). Sie:
 
 * entwickeln und passen die notwendigen Elemente an, beispielsweise Vorlagen, Komponenten, Arbeitsabläufe, Anwendungen;
 * setzen das Design um;
@@ -62,10 +62,10 @@ Diese Umgebung wird vom Qualitätssicherungs-Team zu umfassenden [Tests](/help/s
 
 ### Staging   {#staging}
 
-Die Staging-Umgebung sollte ein Spiegel der Produktionsumgebung sein - Konfiguration, Code und Inhalt:
+Die Staging-Umgebung sollte ein Spiegelbild der Produktionsumgebung sein – Konfiguration, Code und Inhalte:
 
-* Sie wird zum Testen von Skripten verwendet, die zur Umsetzung der eigentlichen Bereitstellung genutzt werden.
-* Sie kann für endgültige Tests (Design, Funktionalität und Schnittstellen) vor der Bereitstellung in den Produktionsumgebungen verwendet werden.
+* Sie wird zum Testen von Skripten genutzt, die zur Umsetzung der eigentlichen Bereitstellung verwendet werden.
+* Sie kann für abschließende Tests (Design, Funktionalität und Schnittstellen) vor der Bereitstellung für die Produktionsumgebungen verwendet werden.
 * Obwohl es nicht immer möglich ist, die Staging-Umgebung völlig identisch mit der Produktionsumgebung zu gestalten, sollten die beiden so ähnlich wie möglich sein, um Leistungs- und Belastungstests zu ermöglichen.
 
 ### Produktion - Autoren- und Veröffentlichungsumgebung   {#production-author-and-publish}
@@ -92,9 +92,9 @@ Aktivierte Inhalte werden gebündelt und in der Replikationswarteschlange der Au
 
 Um in einer Veröffentlichungsumgebung generierte Daten rückgängig zu machen, fragt ein Replikations-Listener in der Autorenumgebung die Veröffentlichungsumgebung ab und ruft diese Inhalte aus dem Postausgang für die Rückwärtsreplikation der Veröffentlichungsumgebung ab.
 
-#### Veröffentlichen  {#publish}
+#### Veröffentlichen {#publish}
 
-Eine Veröffentlichungsumgebung befindet sich in der demilitarisierten Zone (DMZ). Dies ist die Umgebung, in der Besucher auf Ihren Inhalt zugreifen (z. B. über eine Website oder eine Mobile App) und mit ihm interagieren; entweder öffentlich oder in Ihrem Intranet sein. Die Veröffentlichungsumgebung:
+Eine Veröffentlichungsumgebung befindet sich in der demilitarisierten Zone (DMZ). Dies ist die Umgebung, in der Besucher auf Ihre Inhalte zugreifen (z. B. über eine Website oder eine Mobile App) und damit interagieren, sei es öffentlich oder in Ihrem Intranet. Die Veröffentlichungsumgebung:
 
 * enthält alle aus der Autorenumgebung replizierten Inhalte;
 * macht Inhalte für Besucher zugänglich;
@@ -105,19 +105,19 @@ Die Veröffentlichungsumgebung erzeugt Ihren Inhalt dynamisch in Echtzeit und er
 
 ## Code-Verschiebung   {#code-movement}
 
-Codeverteilung von unten nach oben:
+Immer Code von unten nach oben verteilen:
 
 * Der Code wird zunächst in der lokalen Umgebung entwickelt und dann in die Entwicklungsumgebungen integriert,
-* gefolgt von gründlichen Tests in den QS-Umgebungen
+* gefolgt von gründlichen Tests in den QA-Umgebungen,
 * und wird dann abermals in den Staging-Umgebungen getestet.
 * Der Code sollte erst danach in den Produktionsumgebungen bereitgestellt werden.
 
-Der Code (z. B. benutzerdefinierte Webanwendungsfunktionen und Designvorlagen) wird durch den Export und Import von Paketen zwischen den verschiedenen Inhalts-Repositorys übertragen. Wo angemessen, kann die Replikation als automatischer Prozess konfiguriert werden.
+Der Code (z. B. benutzerdefinierte Webanwendungsfunktionen und Designvorlagen) wird durch den Export und Import von Paketen zwischen den verschiedenen Inhalts-Repositorys übertragen. Ggf. kann diese Replikation als automatischer Prozess konfiguriert werden.
 
 AEM Projekte stellen häufig Trigger-Code bereit:
 
-* Automatisch: zur Übertragung an die Entwicklungs- und QS-Umgebungen.
-* Manuell: Bereitstellungen in den Staging- und Produktionsumgebungen erfolgen kontrollierter, häufig manuell. bei Bedarf jedoch auch Automatisierung möglich ist.
+* Automatisch: zur Übertragung an die Entwicklungs- und QA-Umgebungen.
+* Manuell: Die Bereitstellung für die Staging- und Produktionsumgebungen erfolgt kontrollierter und häufig manuell. Bei Bedarf ist jedoch eine Automatisierung möglich.
 
 ![chlimage_1](assets/chlimage_1.png)
 
@@ -135,7 +135,7 @@ Die Produktionsinhalte sollten von der Produktionsumgebung in die Staging-Umgebu
 
 Inhalte können übertragen werden:
 
-* zwischen verschiedenen Umgebungen - durch den Export und Import von Paketen;
+* zwischen verschiedenen Umgebungen – durch den Export und Import von Paketen;
 * Zwischen verschiedenen Instanzen - durch direkte Replikation ([AEM](/help/sites-deploying/replication.md)), den Inhalt (über eine HTTP- oder HTTPS-Verbindung).
 
 ![chlimage_1-1](assets/chlimage_1-1.png)

@@ -1,7 +1,7 @@
 ---
 title: Arbeiten mit Aufgaben
 seo-title: Working with Tasks
-description: Aufgaben sind am Inhalt durchgeführte Arbeiten und werden in Projekten verwendet, um festzustellen, inwieweit aktuelle Aufgaben vollständig durchgeführt sind.
+description: Aufgaben stellen zu erledigende Arbeiten am Inhalt dar und werden in Projekten verwendet, um den Grad der Vollständigkeit der laufenden Aufgaben zu bestimmen
 seo-description: Tasks represent items of work to be done on content and are used in projects to determine the level of completeness of current tasks
 uuid: df4efb3f-8298-4159-acfe-305ba6b46791
 contentOwner: Guillaume Carlino
@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 1b79d373-73f4-4228-b309-79e74d191f3e
 exl-id: a0719745-8d67-44bc-92ba-9ab07f31f8d2
-source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
-workflow-type: ht
-source-wordcount: '597'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 97%
 
 ---
 
@@ -26,13 +26,13 @@ Aufgaben werden auch in Projekten verwendet, um den Grad der Vollständigkeit de
 
 ## Verfolgen des Projektfortschritts {#tracking-project-progress}
 
-Sie können den Projektfortschritt verfolgen, indem Sie die aktiven/abgeschlossenen Aufgaben in einem Projekt betrachten, die auf der Kachel **Aufgaben** dargestellt werden. Der Projektfortschritt kann bestimmt werden durch:
+Sie können den Projektfortschritt verfolgen, indem Sie sich die aktiven/abgeschlossenen Aufgaben innerhalb eines Projekts ansehen, das durch die Kachel **Aufgaben** dargestellt wird. Der Projektfortschritt kann durch Folgendes bestimmt werden:
 
 * **Aufgabenkachel:** Ein Gesamtfortschritt des Projekts wird in der Aufgabenkachel dargestellt, die auf der Seite „Projektdetails“ zu sehen ist.
 
 * **Aufgabenliste:** Beim Klicken auf die Aufgabenkachel wird eine Liste von Aufgaben angezeigt. Diese Liste enthält detaillierte Informationen zu allen Aufgaben in Zusammenhang mit dem Projekt.
 
-Beide Optionen listen sowohl Workflow-Aufgaben als auch Aufgaben, die Sie direkt in der Aufgabenkachel erstellen, auf.
+Beide Optionen listen Workflow-Aufgaben und Aufgaben auf, die Sie direkt in der Aufgabenkachel erstellen.
 
 ### Aufgabenkachel {#task-tile}
 
@@ -85,8 +85,8 @@ So fügen Sie eine Aufgabe hinzu:
 
 Anstatt über das Projekt selbst auf Ihre Projektaufgaben zuzugreifen, können Sie direkt über Ihren Posteingang darauf zugreifen. Ihr Posteingang gibt Ihnen einen Überblick über Ihre Aufgaben in allen Projekten, damit Sie Ihren gesamten Workflow verstehen können.
 
-Im Posteingang können Sie die Aufgaben öffnen und den Aufgabenstatus festlegen. Aufgaben werden auch in Ihrem Posteingang angezeigt, wenn sie einer Benutzergruppe zugewiesen werden, der Sie angehören. In diesem Fall kann jedes Mitglied der Gruppe die erforderliche Bearbeitung durchführen und die Aufgabe fertigstellen.
+Im Posteingang können Sie die Aufgaben öffnen und den Aufgabenstatus festlegen. Aufgaben werden auch in Ihrem Posteingang angezeigt, wenn sie einer Benutzergruppe zugewiesen werden, der Sie angehören. In diesem Fall kann jedes Mitglied der Gruppe die Arbeit durchführen und die Aufgabe abschließen.
 
 ![Posteingang](assets/project-inbox.png)
 
-Um eine Aufgabe abzuschließen, wählen Sie die Aufgabe aus und klicken Sie in der Symbolleiste auf **Abschließen**. Fügen Sie Informationen zur Aufgabe hinzu und klicken Sie dann auf **Fertig**. In [Ihrem Posteingang](/help/sites-authoring/inbox.md) finden Sie weitere Informationen.
+Um eine Aufgabe abzuschließen, wählen Sie die Aufgabe aus und klicken Sie in der Symbolleiste auf **Abschließen**. Fügen Sie Informationen zur Aufgabe hinzu und klicken Sie auf **Fertig**. In Ihrem [Posteingang](/help/sites-authoring/inbox.md) finden Sie weitere Informationen.

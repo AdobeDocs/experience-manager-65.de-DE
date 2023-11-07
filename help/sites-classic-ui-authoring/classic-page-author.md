@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 exl-id: a3606d72-1bd8-4886-9285-6457dae66486
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 92%
+ht-degree: 86%
 
 ---
 
@@ -42,7 +42,7 @@ Text- und Bildkomponenten können direkt auf der Webseite bearbeitet werden, ohn
 Ein unverankertes „Inspektor“-Fenster, das auf der bearbeitbaren Seite angezeigt wird. Von hier können Sie neue Komponenten auf die Seite ziehen und seitenspezifische Aktionen ausführen.
 
 * **[Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)** 
-Der Content Finder, der sich links auf jeder bearbeitbaren Seite befindet, bietet schnellen Zugriff auf eine Reihe von Assets, einschließlich digitaler Assets (z. B. Bilder, Flash-Elemente und Dokumente), anderer Seiten und Absätze. Diese Elemente können auf die Seite gezogen werden, z. B. um Assets zu positionieren oder Links zu anderen Seiten zu erstellen.
+Der Content Finder, der sich links auf jeder bearbeitbaren Seite befindet, bietet schnellen Zugriff auf eine Reihe von Assets, einschließlich digitaler Assets (z. B. Bilder, Flash-Elemente und Dokumente), anderer Seiten und Absätze. Diese Elemente können auf die Seite gezogen werden, um beispielsweise Assets zu positionieren oder Links zu anderen Seiten zu erstellen.
 
 * **Kontextmenü**
 Wenn Sie mit der rechten Maustaste auf die meisten Bildschirmelemente (z. B. Absätze auf der Seite) klicken, wird ein Kontextmenü mit den entsprechenden Aktionsoptionen angezeigt.

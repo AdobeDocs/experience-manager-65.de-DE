@@ -9,9 +9,9 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: 5242600c-2281-46f9-a347-d985b4e319b3
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '813'
 ht-degree: 33%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 33%
 >
 >Für das Upgrade sind Ausfallzeiten für die Autorenstufe erforderlich, da die meisten Adobe Experience Manager (AEM)-Upgrades direkt durchgeführt werden. Durch Befolgen dieser Best Practices können Sie Ausfallzeiten der Veröffentlichungsstufe minimieren oder vermeiden.
 
-Beim Aktualisieren Ihrer AEM-Umgebungen müssen Sie die Unterschiede beim Ansatz zwischen dem Aktualisieren von Autorenumgebungen oder Veröffentlichungsumgebungen berücksichtigen, um Ausfallzeiten für Autoren und Endbenutzer zu minimieren. Auf dieser Seite wird das allgemeine Verfahren zum Aktualisieren einer AEM Topologie beschrieben, die derzeit mit einer Version von AEM 6.x ausgeführt wird. Da der Prozess zwischen der Autoren- und Veröffentlichungsstufe sowie Mongo- und TarMK-basierten Implementierungen unterschiedlich ist, wurde jede Ebene und jeder Mikrokernel in einem separaten Abschnitt aufgelistet. Bei der Ausführung Ihrer Bereitstellung empfiehlt Adobe zunächst die Aktualisierung Ihrer Autorenumgebung, um festzustellen, ob sie erfolgreich ist, und dann den Übergang zu den Veröffentlichungsumgebungen.
+Beim Aktualisieren Ihrer AEM-Umgebungen müssen Sie die Unterschiede beim Ansatz zwischen dem Aktualisieren von Autorenumgebungen oder Veröffentlichungsumgebungen berücksichtigen, um Ausfallzeiten für Autoren und Endbenutzer zu minimieren. Auf dieser Seite wird das allgemeine Verfahren zum Aktualisieren einer AEM Topologie beschrieben, die derzeit mit einer Version von AEM 6.x ausgeführt wird. Da der Prozess zwischen der Autoren- und Veröffentlichungsstufe und Mongo- und TarMK-basierten Implementierungen unterschiedlich ist, wurde jede Ebene und jeder Mikrokernel in einem separaten Abschnitt aufgelistet. Bei der Ausführung Ihrer Bereitstellung empfiehlt Adobe zunächst die Aktualisierung Ihrer Autorenumgebung, um festzustellen, ob sie erfolgreich ist, und dann den Übergang zu den Veröffentlichungsumgebungen.
 
 <!--
 >[!IMPORTANT]
@@ -93,7 +93,7 @@ In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster m
 
 1. Beenden Sie das Verfassen von Inhalten..
 1. Klonen Sie den Datenspeicher für die Sicherung.
-1. Beenden Sie alle bis auf eine AEM-Autoreninstanz, Ihre primäre Autoreninstanz.
+1. Beenden Sie alle bis auf eine AEM Autoreninstanz, Ihren primären Autor.
 1. Entfernen Sie alle bis auf einen MongoDB-Knoten aus der Replikatgruppe, Ihrer primären Mongo-Instanz.
 1. Aktualisieren Sie die `DocumentNodeStoreService.cfg` -Datei auf der primären Autoreninstanz, um die Replikatgruppe Ihrer einzelnen Mitglieder widerzuspiegeln.
 1. Starten Sie die primäre Autoreninstanz neu, um sicherzustellen, dass sie ordnungsgemäß neu gestartet wird.

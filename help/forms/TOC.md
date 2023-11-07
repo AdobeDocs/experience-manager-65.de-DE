@@ -9,9 +9,9 @@ breadcrumb-title: Forms-Anleitung
 user-guide-description: Erstellen, Verwalten, Veröffentlichen und Aktualisieren von digitalen Formularen.
 role: User
 feature: Forms Service
-source-git-commit: 28cc10b79d2ac8cf12ddfd0bf7d1a8e013fe6238
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3912'
+source-wordcount: '3911'
 ht-degree: 98%
 
 ---
@@ -228,7 +228,7 @@ ht-degree: 98%
    + [Einführung zur Anpassung des AEM Forms Workspace](using/introduction-customizing-html-workspace.md)
    + [Generische Schritte zur Anpassung von AEM Forms Workspace](using/generic-steps-html-workspace-customization.md)
    + [Ändern des Gebietsschemas der AEM Forms Workspace-Benutzeroberfläche](using/changing-locale-user-interface.md)
-   + [Erstellen eines neuen Anmeldungsbildschirms](using/creating-new-login-screen.md)
+   + [Anmeldebildschirm erstellen](using/creating-new-login-screen.md)
    + [Anpassen von Fehlerdialogfeldern](using/customizing-error-dialogs.md)
    + [Anpassen von Registerkarten für eine Aufgabe](using/customizing-tabs-task.md)
    + [Anpassen der Aufgabendetailseite](using/customizing-task-details-page.md)

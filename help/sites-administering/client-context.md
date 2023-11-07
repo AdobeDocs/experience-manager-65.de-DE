@@ -1,20 +1,16 @@
 ---
 title: ClientContext
-seo-title: Client Context
 description: Erfahren Sie, wie Sie mit ClientContext Informationen zur aktuellen Seite und zum Besucher in Adobe Experience Manager anzeigen können.
-seo-description: Learn how to use the Client Context in AEM.
-uuid: 82b2f976-cb41-42f8-ad4b-3a5cd23cc5f5
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 46%
+source-wordcount: '1979'
+ht-degree: 40%
 
 ---
 
@@ -42,7 +38,7 @@ Mit den Symbolen (nur in der Autorenumgebung verfügbar) können Sie die Details
 ![Die Symbole Bearbeiten, Laden und Zurücksetzen des Fensters ClientContext](do-not-localize/clientcontext_icons.png)
 
 * **Bearbeiten**
-Eine neue Seite wird geöffnet. Dort können Sie [Profileigenschaften bearbeiten, hinzufügen oder entfernen](#editingprofiledetails).
+Eine neue Seite wird geöffnet, auf der Sie [Bearbeiten, Hinzufügen oder Entfernen einer Profileigenschaft](#editingprofiledetails).
 
 * **Laden**
 Sie können [aus einer Liste von Profilen auswählen und das Profil laden](#loading-a-new-user-profile), das getestet werden soll.
@@ -64,13 +60,13 @@ ClientContext kann die folgenden Eigenschaften anzeigen ([je nachdem, was mit Be
 * die **X**-Position der Maus
 * die **Y**-Position der Maus
 
-**Aktivitäts-Stream**: Liefert Informationen zu sozialen Aktivitäten des Benutzers auf verschiedenen Plattformen, z. B. AEM-Foren, Blogs und Bewertungen.
+**Aktivitäts-Stream** Hier erhalten Sie Informationen zur sozialen Aktivität des Benutzers auf verschiedenen Plattformen, z. B. den AEM, Blogs, Bewertungen usw.
 
 **Kampagne**: Ermöglicht es Autoren, ein bestimmtes Erlebnis für eine Kampagne zu simulieren. Diese Komponente setzt die normale Kampagnenauflösung und Erlebnisauswahl außer Kraft, um verschiedene Permutationen testen zu können.
 
 Die Kampagnenauflösung basiert normalerweise auf der Prioritätseigenschaft der Kampagne. Das Erlebnis wird im Regelfall auf Grundlage der Segmentierung ausgewählt.
 
-**Warenkorb**: Zeigt Informationen zum Warenkorb an, darunter Produkteinträge (Titel, Menge, Preisformatierung usw.), aufgelöste Promotions (Titel, Nachricht usw.) und Gutscheine (Code, Beschreibung usw.).
+**Warenkorb** Zeigt Informationen zum Warenkorb an, einschließlich Produkteinträgen (Titel, Menge, PreisFormatiert usw.), aufgelösten Promotions (Titel, Nachricht usw.) und Gutscheinen (Code, Beschreibung usw.).
 
 Der Sitzungsspeicher des Warenkorbs benachrichtigt den Server auch über aufgelöste Promotion-Änderungen (basierend auf Segmentierungsänderungen) mit dem ClientContextCartServlet.
 
@@ -154,7 +150,7 @@ Wenn Sie fertig sind, können Sie [Profil zurücksetzen](#resetting-the-profile-
 
    ![Das Symbol Profil laden in ClientContext](do-not-localize/clientcontext_loadprofile.png)
 
-1. Daraufhin wird das zugehörige Dialogfeld geöffnet. Hier können Sie das zu ladende Profil auswählen:
+1. Dadurch wird das Dialogfeld geöffnet. Hier können Sie das zu ladende Profil auswählen:
 
    ![Das Dialogfeld Profillader mit der Dropdown-Liste zur Auswahl eines Profils](assets/clientcontext_profileloader.png)
 
@@ -164,7 +160,7 @@ Wenn Sie fertig sind, können Sie [Profil zurücksetzen](#resetting-the-profile-
 
 Sie können ein Profil auch mit dem Auswahlregler auswählen:
 
-1. Doppelklicken Sie auf das Symbol für den aktuellen Benutzer. Daraufhin wird die Auswahl geöffnet. Navigieren Sie mit den Pfeilen und sehen Sie sich die verfügbaren Profile an:
+1. Doppelklicken Sie auf das Symbol für den aktuellen Benutzer. Der Selektor wird geöffnet. Navigieren Sie mit den Pfeilen und sehen Sie sich die verfügbaren Profile an:
 
    ![Der Benutzerselektor](assets/clientcontext_profileselector.png)
 
@@ -178,7 +174,7 @@ Sie können ein Profil auch mit dem Auswahlregler auswählen:
 
 ### Ändern der Browser-Plattform {#changing-the-browser-platform}
 
-1. Doppelklicken Sie auf das Symbol, das die Browser-Plattform darstellt. Daraufhin wird die Auswahl geöffnet. Navigieren Sie mit den Pfeilen und sehen Sie sich die verfügbaren Plattformen/Browser an:
+1. Doppelklicken Sie auf das Symbol, das die Browser-Plattform darstellt. Der Selektor wird geöffnet. Navigieren Sie mit den Pfeilen zu den verfügbaren Plattformen/Browsern und sehen Sie sie an:
 
    ![Browser-Plattformauswahl](assets/clientcontext_browserplatform.png)
 
@@ -186,7 +182,7 @@ Sie können ein Profil auch mit dem Auswahlregler auswählen:
 
 ### Geolocation ändern {#changing-the-geolocation}
 
-1. Doppelklicken Sie auf das Geolocation-Symbol. Daraufhin wird eine erweiterte Karte geöffnet. Hier können Sie die Markierung an einen neuen Standort ziehen:
+1. Doppelklicken Sie auf das Geolocation-Symbol. Eine erweiterte Zuordnung wird geöffnet. Hier können Sie die Markierung an eine neue Position ziehen:
 
    ![Geolocation-Detail](assets/clientcontext_geomocationrelocate.png)
 
@@ -194,7 +190,7 @@ Sie können ein Profil auch mit dem Auswahlregler auswählen:
 
 ### Ändern der Tag-Auswahl {#changing-the-tag-selection}
 
-1. Doppelklicken Sie auf den Abschnitt Tag Cloud des ClientContext. Daraufhin wird das zugehörige Dialogfeld geöffnet. Hier können Sie Tags auswählen:
+1. Doppelklicken Sie auf den Abschnitt Tag Cloud des ClientContext. Das Dialogfeld wird geöffnet. Hier können Sie Tags auswählen:
 
    ![Tag-Cloud-Dialogfeld](assets/clientcontext_tagselection.png)
 

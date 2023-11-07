@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1222'
 ht-degree: 18%
 
 ---
@@ -21,7 +21,7 @@ Dieser Abschnitt enthält die folgenden Schritte zum Konfigurieren von SSL mit I
 
 Für die Aktivierung von SSL benötigt WebSphere Zugriff auf ein Benutzerkonto in der Benutzerregistrierung des lokalen Betriebssystems, das zur Verwaltung des Systems berechtigt ist:
 
-* (Windows) Erstellen Sie einen neuen Windows-Benutzer, der der Gruppe &quot;Administratoren&quot;angehört und berechtigt ist, als Teil des Betriebssystems zu fungieren. (Siehe [Windows-Benutzer für WebSphere erstellen](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere).
+* (Windows) Erstellen Sie einen Windows-Benutzer, der der Gruppe Administratoren angehört und berechtigt ist, als Teil des Betriebssystems zu fungieren. (Siehe [Windows-Benutzer für WebSphere erstellen](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere).
 * (Linux, UNIX) Der Benutzer kann ein Root-Benutzer oder ein anderer Benutzer mit Root-Berechtigungen sein. Wenn Sie SSL unter WebSphere aktivieren, verwenden Sie die Serverkennung und das Kennwort dieses Benutzers.
 
 ### Linux- oder UNIX-Benutzer für WebSphere erstellen {#create-a-linux-or-unix-user-for-websphere}
@@ -51,7 +51,7 @@ Für die Aktivierung von SSL benötigt WebSphere Zugriff auf ein Benutzerkonto i
 1. Klicken Sie mit der rechten Maustaste auf Benutzer und wählen Sie **Neuer Benutzer**.
 1. Geben Sie einen Benutzernamen und ein Kennwort in die entsprechenden Felder ein und geben Sie in die übrigen Felder alle weiteren erforderlichen Informationen ein.
 1. Auswahl deaktivieren **Der Benutzer muss das Kennwort bei der nächsten Anmeldung ändern** klicken **Erstellen** und klicken Sie anschließend auf **Schließen**.
-1. Klicks **Benutzer**, klicken Sie mit der rechten Maustaste auf den soeben erstellten Benutzer und wählen Sie **Eigenschaften**.
+1. Klicks **Benutzer**, klicken Sie mit der rechten Maustaste auf den erstellten Benutzer und wählen Sie **Eigenschaften**.
 1. Klicken Sie auf **Mitglied von** und klicken Sie auf **Hinzufügen**.
 1. Geben Sie in das Feld „Geben Sie die zu verwendenden Objektnamen ein“ den Namen `Administrators`. Klicken Sie auf „Namen überprüfen“, um sicherzustellen, dass der Gruppenname richtig ist.
 1. Klicks **OK** und klicken Sie anschließend auf **OK** erneut.
@@ -126,7 +126,7 @@ Truststores und Keystores können mit dem Dienstprogramm ikeyman oder der Admin 
 
 1. Wählen Sie in WebSphere Administrative Console **Sicherheit > Globale Sicherheit**.
 1. Erweitern Sie im Abschnitt Authentifizierung den **RMI/IIOP-Sicherheit** und klicken **CSIv2 Inbound Communications**.
-1. Stellen Sie sicher, dass **SSL-gestützt** wird in der Dropdown-Liste Transport ausgewählt.
+1. Stellen Sie sicher, dass **SSL-gestützt** wird in der Dropdownliste Transport ausgewählt.
 1. Starten Sie das WebSphere-Profil neu.
 
 ## WebSphere zum Konvertieren von URLs konfigurieren, die mit https beginnen {#configuring-websphere-to-convert-urls-that-begins-with-https}

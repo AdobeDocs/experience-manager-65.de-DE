@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Inhalte identifizieren können, die in Adobe 
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1153'
-ht-degree: 85%
+source-wordcount: '1152'
+ht-degree: 83%
 
 ---
 
@@ -160,7 +160,7 @@ Von hier aus können Sie **Kontext hinzufügen**. Damit können Sie einen Pfad 
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
-Anschließend müssen Sie Ihren Kontext auswählen und dann auf **Bearbeiten** klicken. Hierdurch wird der Editor für Übersetzungsregeln geöffnet.
+Anschließend müssen Sie Ihren Kontext auswählen und dann auf **Bearbeiten** klicken. Dadurch wird der Editor für Übersetzungsregeln geöffnet.
 
 ![chlimage_1-58](assets/chlimage_1-58.jpeg)
 
@@ -192,7 +192,7 @@ In der Benutzeroberfläche können Sie **Übernehmen** auf der Registerkarte **E
 
 In der Benutzeroberfläche können Sie **Übersetzen** auf der Registerkarte **Eigenschaften** aktivieren/deaktivieren.
 
-**updateDestinationLanguage** Dieses Attribut wird für Eigenschaften verwendet, die keinen Text, sondern Sprach-Codes enthalten, wie zum Beispiel jcr:language. Der Benutzer übersetzt keinen Text, sondern das Sprachschema von der Quelle ins Ziel. Solche Eigenschaften werden nicht zur Übersetzung versendet.
+**updateDestinationLanguage** Dieses Attribut wird für Eigenschaften verwendet, die keinen Text, sondern Sprachcodes enthalten, z. B. jcr:language. Der Benutzer übersetzt keinen Text, sondern das Sprachschema von der Quelle ins Ziel. Solche Eigenschaften werden nicht zur Übersetzung versendet.
 
 In der Benutzeroberfläche können Sie **Übersetzen** auf der Registerkarte **Eigenschaften** aktivieren/deaktivieren, außer bei den spezifischen Eigenschaften mit Sprach-Codes als Wert.
 

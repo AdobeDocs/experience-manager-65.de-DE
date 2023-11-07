@@ -10,10 +10,10 @@ discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2365'
-ht-degree: 79%
+source-wordcount: '2363'
+ht-degree: 93%
 
 ---
 
@@ -27,7 +27,7 @@ Kenntnisse im Umgang mit CSS und dem LESS-Framework.
 
 ## Was angepasst werden kann {#what-can-be-customized}
 
-Der Artikel listet öffentlich verfügbare CSS-Klassen von adaptiven Formularen. Sie können diese Klassen nutzen, um verschiedene Komponenten eines adaptiven Formulars zu gestalten. Der Stil von Authoring-Komponenten, wie Dialogfelder und Statusleisten, die Warnungen anzeigen, geht über den Rahmen dieses Artikels hinaus. Verwenden Sie diese Stilkonstrukte, um Stile (mit CSS oder LESS) nur dann zu erstellen, wenn Sie mit dem [Designeditor](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/themes.html) keine Komponenten formatieren können.
+Der Artikel listet öffentlich verfügbare CSS-Klassen von adaptiven Formularen. Sie können diese Klassen verwenden, um verschiedene Komponenten eines adaptiven Formulars zu formatieren. Das Gestalten von Authoring-Komponenten, wie Dialogfelder und Statusleisten, die Warnhinweise anzeigen, würde den Rahmen dieses Artikels sprengen. Verwenden Sie diese Stilkonstrukte, um Stile (mit CSS oder LESS) nur dann zu erstellen, wenn Sie mit dem [Designeditor](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/themes.html) keine Komponenten formatieren können.
 
 ## Anpassen von Stilen in adaptiven Formularen {#customizing-styles-in-adaptive-forms}
 
@@ -44,7 +44,7 @@ Sie können das Design eines adaptiven Formulars ändern, um sicherzustellen, da
 
 Änderungen des Gesamtaussehens des adaptiven Formulars mithilfe von CSS-Eigenschaften sind in der Regel Teil der Designänderungen. Große Veränderungen am Aussehen des adaptiven Formulars, wie Änderungen am Layout und an der Platzierung von Komponenten, werden nicht als Design-Änderungen betrachtet.
 
-Basierend auf dem Bootstrap, definiert der folgende Satz von CSS-Eigenschaften das Design einer Web-Seite:
+Basierend auf dem Bootstrap definiert der folgende Satz von CSS-Eigenschaften das Design einer Web-Seite:
 
 * Hintergrundfarbe
 * Rahmen (Typ, Farbe, Stärke)
@@ -186,7 +186,7 @@ Die CSS-Regeln für die Bezeichnung werden mithilfe der **guideFieldLabel**-Beze
 
 ## Widget-Stile {#widgets-styling}
 
-Je nach Typ enthalten Widgets auch Klassen. Normalerweise beinhalten Widgets die `guideFieldWidget`-Klasse. Die Widgets, die mit HTML geliefert werden, verwenden normalerweise die standardmäßige HTML-Elementeingabe und -Auswahl. Die Formatierung erfolgt entsprechend. Sie können ein benutzerdefiniertes Widget nicht formatieren, indem Sie die Variablen ändern.
+Je nach Typ enthalten Widgets auch Klassen. Normalerweise beinhalten Widgets die `guideFieldWidget`-Klasse. Die Widgets, die mit HTML geliefert werden, verwenden normalerweise die standardmäßige HTML-Elementeingabe und -Auswahl. Die Gestaltung wird entsprechend ausgeführt. Sie können ein benutzerdefiniertes Widget nicht gestalten, indem Sie die Variablen ändern.
 
 <table>
  <tbody>
@@ -288,11 +288,11 @@ Je nach Typ enthalten Widgets auch Klassen. Normalerweise beinhalten Widgets die
 
 ### Einschränkungen beim Widget-Stil {#limitations-in-widget-styling}
 
-Die Formatierung für fokussierte, obligatorische und deaktivierte Felder wird mithilfe von Variablen eingeschränkt. Sie können sie jedoch ändern, indem Sie die Stile überschreiben. Einschränkungen mithilfe von Variablen wird hauptsächlich dazu verwendet, um die Anzahl der Variablen zu kontrollieren. Die Einschränkungen können abgeschwächt werden, wenn sich das Erscheinungsbild eines Felds drastisch ändert, da es sich in einem der oben genannten Status befindet.
+Die Gestaltung für fokussierte, obligatorische und deaktivierte Felder wird mithilfe von Variablen eingeschränkt. Sie können sie jedoch ändern, indem Sie die Stile überschreiben. Einschränkungen mithilfe von Variablen wird hauptsächlich dazu verwendet, um die Anzahl der Variablen zu kontrollieren. Die Einschränkungen können abgeschwächt werden, wenn sich das Erscheinungsbild eines Felds drastisch ändert, da es sich in einem der oben genannten Status befindet.
 
 ## Hilfebeschreibung {#help-description}
 
-Ein Autor kann den Hilfeinhalt in den Feldern unter Verwendung der Komponenten für kurze und lange Beschreibungen angeben. Beide Komponenten haben die gemeinsame Klasse `.guideHelpDescription` und eine weitere Klasse `.long`/`.short`, je nach Typ der Beschreibung. Der Hilfeinhalt wird in einem Absatzelement eingeschlossen, um den Stil der Beschreibung zu überschreiben. Die Hilfebeschreibung (lang und kurz) wird mithilfe von Variablen geändert, die mit dem WidgetUp beginnen, wie in der folgenden Tabelle erwähnt:
+Ein Autor kann den Hilfeinhalt in den Feldern unter Verwendung der Komponenten für kurze und lange Beschreibungen angeben. Beide Komponenten haben die gemeinsame Klasse `.guideHelpDescription` und eine weitere Klasse `.long`/`.short`, je nach Typ der Beschreibung. Der Hilfeinhalt wird in einem Absatzelement eingeschlossen, um den Stil der Beschreibung zu überschreiben. Die Hilfebeschreibung (lang und kurz) wird mithilfe der Variablen geändert. Angefangen wird mit Widgets-Hilfe, wie in der nachfolgenden Tabelle angegeben:
 
 <table>
  <tbody>
@@ -482,7 +482,7 @@ HTML-Code für Schaltfläche:
 
 ## Fragezeichen {#question-mark}
 
-Für die Widgets wird ein Fragezeichen angezeigt, wenn ein Autor eine lange Beschreibung in den Hilfeinhalt hinzufügt. Das im Bootstrap bereitgestellte Standardsymbol wird verwendet. Um ein benutzerdefiniertes Symbol zu verwenden, können Sie die Bootstrap-Symbole anpassen.
+Für die Widgets wird ein Fragezeichen angezeigt, wenn eine Autorin bzw. ein Autor eine lange Beschreibung in den Hilfeinhalt hinzufügt. Das im Bootstrap bereitgestellte Standardsymbol wird verwendet. Um ein benutzerdefiniertes Symbol zu verwenden, können Sie die Bootstrap-Symbole anpassen.
 
 <table>
  <tbody>
@@ -574,7 +574,7 @@ Mit dem Dateianhang-Widget von adaptiven Formularen können Sie Dateien hochlade
 
 ## Navigatorstile {#navigator-styles}
 
-Es gibt vier Arten von Navigatorregisterkarten. Dazu gehören Registerkarten links, oben, im Assistenten und im Akkordeon. Jeder Navigator hat eine andere Klasse.
+Es gibt vier Arten von Navigatorregisterkarten. Dazu gehören Registerkarten links, oben, im Assistenten und im Akkordeon. Jeder Navigator beinhaltet eine andere Klasse.
 
 <table>
  <tbody>
@@ -601,7 +601,7 @@ Es gibt vier Arten von Navigatorregisterkarten. Dazu gehören Registerkarten lin
  </tbody>
 </table>
 
-Im Folgenden finden Sie den HTML-Code für das Registerkartennavigatorelement (ähnlich den Bootstrap-Registerkarten):
+Im Folgenden finden Sie den HTML-Code für das Registerkartennavigator-Element (ähnlich den Bootstrap-Registerkarten):
 
 `<li>`
 
@@ -944,7 +944,7 @@ Ein Bedienfeld enthält eine optionale Symbolleiste und entsprechenden Inhalt.
  </tbody>
 </table>
 
-Der Bedienfeldknoten ist in Navigatoren und Inhalte unterteilt. Es `` `` gibt keine separate Stilkomponente für den Inhalt. Die beschriebenen Variablen werden auf den Navigator sowie Inhalte angewendet.
+Der Bedienfeldknoten ist in Navigatoren und Inhalte unterteilt. Es `` `` gibt keine separate Stilkomponente für den Inhalt. Die beschriebenen Variablen werden auf Navigator und Inhalt angewendet.
 
 Das oberste Bedienfeld (RootPanel) verfügt nicht über diese Klasse.
 
@@ -986,7 +986,7 @@ Diese Variablen beeinflussen die Kopfzeilenleiste, die auf einem Mobilgerät ode
 
 ## Scroll-Indikator {#scroll-indicator}
 
-Diese Variablen beeinflussen den Scroll-Indikator, einen orangefarbenen Pfeil, der auf einem Mobilgerät oder Geräten mit kleinem Bildschirm angezeigt wird. Der Scroll-Indikator zeigt an, dass es Inhalt gibt, der über den sichtbaren Bereich des Bildschirms hinausgeht. Sie können nach unten scrollen, um es zu sehen. Wenn Sie das Ende des Inhalts erreichen, verschwindet der Pfeil.
+Diese Variablen beeinflussen den Scroll-Indikator, einen orangefarbenen Pfeil, der auf einem Mobilgerät oder Geräten mit kleinem Bildschirm angezeigt wird. Der Scroll-Indikator zeigt an, dass es Inhalt gibt, der über den sichtbaren Bereich des Bildschirms hinausgeht. Sie können nach unten scrollen, um ihn zu sehen. Wenn Sie das Ende des Inhalts erreichen, verschwindet der Pfeil.
 
 <table>
  <tbody>

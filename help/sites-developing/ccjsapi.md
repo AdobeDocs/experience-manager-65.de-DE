@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
 feature: Context Hub
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3159'
+source-wordcount: '3157'
 ht-degree: 27%
 
 ---
@@ -72,7 +72,7 @@ Beispielsweise basiert ein Sitzungsspeicher auf einem JSON-Objekt und wird über
 * Der Speicher wird mit Standardwerten vorbelegt (init-Eigenschaften), die Anfrage schlägt jedoch fehl (Zeitüberschreitung). Es gibt nur eine Initialisierung mit Standardwerten.
 * Der Speicher ist vorbelegt.
 
-Wenn die Verzögerung auf `true` oder eine Anzahl an Millisekunden festgelegt ist, wartet die Methode, bevor sie die Callback-Methode aufruft. Wenn ein weiteres Initialisierungsereignis ausgelöst wird, bevor die Verzögerung übergeben wird, wartet es, bis die Verzögerungszeit ohne Initialisierungsereignis überschritten wird. Dadurch kann gewartet werden, bis ein zweites Initialisierungsereignis ausgelöst wird, und die Callback-Funktion wird im optimalen Fall aufgerufen.
+Wenn die Verzögerung auf `true` - oder mehrere Millisekunden lang - wartet die Methode, bevor sie die Callback-Methode aufruft. Wenn ein weiteres Initialisierungsereignis ausgelöst wird, bevor die Verzögerung übergeben wird, wartet es, bis die Verzögerungszeit ohne Initialisierungsereignis überschritten wird. Dadurch kann gewartet werden, bis ein zweites Initialisierungsereignis ausgelöst wird, und die Callback-Funktion wird im optimalen Fall aufgerufen.
 
 **Parameter**
 

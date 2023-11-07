@@ -5,10 +5,10 @@ contentOwner: AG
 role: Architect, Admin
 feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1614'
-ht-degree: 56%
+source-wordcount: '1611'
+ht-degree: 55%
 
 ---
 
@@ -92,7 +92,7 @@ Aufgrund der Ressourcen, die von den folgenden Benutzern benötigt werden, ist e
 
 * Asset-Metadaten
 * Asset-Versionen
-* Auditprotokolle
+* Audit-Protokolle
 * Archivierte und aktive Workflows
 
 Da die Binärdateien im Datenspeicher gespeichert werden, belegt jede Binärdatei etwas Platz. Die meisten Repositorys sind kleiner als 100 GB. aber es sind auch größere Repositorys mit bis zu 1 TB möglich. Um eine Offline-Komprimierung durchzuführen, benötigen Sie ausreichend freien Speicherplatz auf dem Volume, um das komprimierte Repository neben der vorab komprimierten Version neu zu schreiben. Eine geeignete Faustregel: Dimensionieren Sie die Festplatte so, dass sie 1,5-mal so groß ist wie die erwartete Repository-Größe.
@@ -103,7 +103,7 @@ Setzen Sie für das Repository SSDs oder Festplatten mit einem IOPS-Level von me
 
 ## Netzwerk {#network}
 
-Für [!DNL Assets] gibt es eine Reihe von Anwendungsbeispielen, in denen die Netzwerkleistung eine größere Bedeutung hat als bei vielen anderen unserer [!DNL Experience Manager]-Projekte. Eine Kundin oder ein Kunde kann zwar über einen schnellen Server verfügen, aber wenn die Netzwerkverbindung nicht für die Auslastung durch die Benutzenden ausreicht, die Assets hochladen und aus dem System herunterladen, scheint der Server nach wie vor langsam zu sein. Eine gute Methodik zum Bestimmen des Drosselpunkts (Choke Point) bei der Netzwerkverbindung von Benutzenden zu [!DNL Experience Manager] finden Sie in den [Assets-Hinweisen zum Benutzererlebnis sowie zur Instanzdimensionierung, Workflow-Bewertung und Netzwerktopologie](/help/assets/assets-network-considerations.md).
+[!DNL Assets] verfügt über mehrere Anwendungsfälle, die die Netzwerkleistung wichtiger machen als bei vielen unserer [!DNL Experience Manager] Projekte. Eine Kundin oder ein Kunde kann zwar über einen schnellen Server verfügen, aber wenn die Netzwerkverbindung nicht für die Auslastung durch die Benutzenden ausreicht, die Assets hochladen und aus dem System herunterladen, scheint der Server nach wie vor langsam zu sein. Eine gute Methodik zum Bestimmen des Drosselpunkts (Choke Point) bei der Netzwerkverbindung von Benutzenden zu [!DNL Experience Manager] finden Sie in den [Assets-Hinweisen zum Benutzererlebnis sowie zur Instanzdimensionierung, Workflow-Bewertung und Netzwerktopologie](/help/assets/assets-network-considerations.md).
 
 ## Beschränkungen {#limitations}
 

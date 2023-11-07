@@ -1,64 +1,60 @@
 ---
 title: Sichern und Wiederherstellen des EMC Documentum-Repositorys
-seo-title: Backing up and recovering the EMC Documentum repository
-description: In diesem Dokument werden die Aufgaben zum Sichern und Wiederherstellen des EMC Documentum-Repositorys beschrieben, das für Ihre AEM Forms-Umgebung konfiguriert ist.
-seo-description: This document describes the tasks required to back up and recover the EMC Documentum repository configured for your AEM forms environment.
-uuid: ab3b1fb1-25b3-4c95-801f-82d4b58f05ff
+description: In diesem Dokument werden die Aufgaben beschrieben, die zum Sichern und Wiederherstellen des für Ihre AEM Forms-Umgebung konfigurierten EMC Documentum-Repositorys erforderlich sind.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 exl-id: bc21659f-88d6-4dff-8baf-12746e1b3ed9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '803'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '802'
+ht-degree: 18%
 
 ---
 
 # Sichern und Wiederherstellen des EMC Documentum-Repositorys {#backing-up-and-recovering-the-emc-documentum-repository}
 
-In diesem Abschnitt werden die Aufgaben zum Sichern und Wiederherstellen des EMC Documentum-Repositorys beschrieben, das für Ihre AEM Forms-Umgebung konfiguriert ist.
+In diesem Abschnitt werden die Aufgaben beschrieben, die zum Sichern und Wiederherstellen des für Ihre AEM Forms-Umgebung konfigurierten EMC Documentum-Repositorys erforderlich sind.
 
 >[!NOTE]
 >
->Diese Anweisungen setzen voraus, dass AEM Forms mit Connectors für ECM und EMC Documentum Content Server ordnungsgemäß installiert und konfiguriert wurden.
+>Bei diesen Anweisungen wird davon ausgegangen, dass AEM Forms mit Connectors für ECM und EMC Documentum Content Server installiert und entsprechend konfiguriert sind.
 
-Bei der Sicherung und Wiederherstellung gibt es zwei Hauptaufgaben:
+Für die Sicherungs- und Wiederherstellungsprozesse gibt es zwei Hauptaufgaben:
 
-* Sichern (oder Wiederherstellen) der AEM Forms-Umgebung
-* Sichern (oder Wiederherstellen) von EMC Documentum Content Server
+* Sichern (oder Wiederherstellen) der AEM Formularumgebung
+* Sichern (oder Wiederherstellen) des EMC Documentum Content Servers
 
 >[!NOTE]
 >
->Sichern Sie die AEM Forms-Daten vor der Sicherung des EMC Documentum-Systems und stellen Sie anschließend das EMC Documentum-System vor der AEM Forms-Umgebung wieder her.
+>Sichern Sie Ihre AEM Formulardaten, bevor Sie das EMC Documentum-System sichern, und stellen Sie anschließend das EMC Documentum-System wieder her, bevor Sie die AEM Forms-Umgebung wiederherstellen.
 
-## Software-Anforderungen {#software-requirements}
+## Softwareanforderungen {#software-requirements}
 
-Zum Durchführen der erforderlichen Sicherungsaufgaben auf dem Computer mit EMC Documentum Content Server erwerben Sie ein geeignetes Dienstprogramm wie EMC NetWorker von EMC oder CYA SmartRecovery(tm) for EMC Documentum von CYA. In den folgenden Anweisungen werden die Schritte für EMC NetWorker Module 7.2.2 beschrieben.
+Um die erforderlichen Backup-Aufgaben auf Ihrem EMC Documentum Content Server durchzuführen, erwerben Sie ein geeignetes Dienstprogramm von Drittanbietern wie EMC NetWorker von EMC oder CYA SmartRecovery für EMC Documentum von CYA. Die folgenden Anweisungen beschreiben die Schritte zur Verwendung des EMC NetWorker-Moduls Version 7.2.2.
 
 Sie benötigen die folgenden EMC NetWorker-Module:
 
-* NetWorker Module
+* NetWorker-Modul
 * NetWorker Configuration Wizard
 * NetWorker Device Configuration Wizard
-* NetWorker Module für den von Ihrem Content Server verwendeten Datenbanktyp
-* NetWorker Module for Documentum
+* NetWorker-Modul für den von Ihrem Content Server verwendeten Datenbanktyp
+* NetWorker-Modul für Documentum
 
-## EMC Document Content Server-Sicherung und -Wiederherstellung vorbereiten {#preparing-the-emc-document-content-server-for-backup-and-recovery}
+## EMC Document Content Server auf Sicherung und Wiederherstellung vorbereiten {#preparing-the-emc-document-content-server-for-backup-and-recovery}
 
-In diesem Abschnitt wird die Installation und Konfiguration der EMC NetWorker-Software auf dem Server mit Content Server beschrieben.
+In diesem Abschnitt wird die Installation und Konfiguration der EMC NetWorker-Software auf dem Content Server beschrieben.
 
-**EMC Documentum-Server auf die Sicherung vorbereiten**
+**EMC Documentum-Server auf Sicherung vorbereiten**
 
-1. Installieren Sie auf EMC Documentum Content Server die EMC NetWorker-Module und übernehmen Sie alle Standardeinstellungen.
+1. Installieren Sie auf dem EMC Documentum Content Server die EMC NetWorker-Module und akzeptieren Sie alle Standardwerte.
 
-   Während des Installationsvorgangs werden Sie aufgefordert, den Namen des Servers, auf dem Content Server ausgeführt wird, als *NetWorker-Servernamen* einzugeben. Wählen Sie bei der Installation des EMC NetWorker-Moduls für Ihre Datenbank den Installationstyp „Complete“ aus.
+   Während des Installationsprozesses werden Sie aufgefordert, den Servernamen des Content Server-Computers als *NetWorker Server-Name*. Wählen Sie bei der Installation des EMC NetWorker-Moduls für Ihre Datenbank eine &quot;Complete&quot;-Installation.
 
-1. Erstellen Sie anhand des folgenden Beispiels eine Konfigurationsdatei mit dem Namen *nsrnmd_win.cfg* und speichern Sie sie an einem freigegebenen Speicherort auf dem Computer mit Content Server. Diese Datei wird von den Sicherungs- und Wiederherstellungsbefehlen aufgerufen.
+1. Erstellen Sie mithilfe des unten stehenden Beispielinhalts eine Konfigurationsdatei mit dem Namen *nsrnmd_win.cfg* und speichern Sie sie an einem zugänglichen Speicherort auf dem Content Server. Diese Datei wird von den Sicherungs- und Wiederherstellungsbefehlen aufgerufen.
 
-   Der folgende Text enthält Formatierungszeichen für Zeilenwechsel. Wenn dieser Text an eine Stelle außerhalb dieses Dokuments kopiert wird, kopieren Sie die Teile einzeln nacheinander und entfernen Sie die Formatierungszeichen, wenn der Text an der neuen Stelle eingefügt wird.
+   Der folgende Text enthält Formatierungszeichen für Zeilenumbrüche. Wenn Sie diesen Text an eine Stelle außerhalb dieses Dokuments kopieren, kopieren Sie jeweils einen Teil und entfernen Sie die Formatierungszeichen, wenn Sie ihn an der neuen Position einfügen.
 
    ```shell
     ################################################
@@ -67,7 +63,7 @@ In diesem Abschnitt wird die Installation und Konfiguration der EMC NetWorker-So
     #
     # Parameters not shown can be set in this file (as per site customisation) #or from the command-line.
     #
-    # Please refer to the user Guides for details on all parameters, including
+    # See the user Guides for details on all parameters, including
     # those not listed below.
     # Note: DCTM environment for D6 is slightly different from D5, refer to D6
     # Installation Guide to update the values.
@@ -187,60 +183,60 @@ In diesem Abschnitt wird die Installation und Konfiguration der EMC NetWorker-So
     NMDDE_DM_PASSWD=XAtup9pl
    ```
 
-   Lassen Sie das Feld für das Passwort der Konfigurationsdatei `NMDDE_DM_PASSWD` leer. Das Kennwort wird im nächsten Schritt festgelegt.
+   Lassen Sie das Feld für das Passwort der Konfigurationsdatei `NMDDE_DM_PASSWD` leer. Sie legen das Kennwort im nächsten Schritt fest.
 
-1. Legen Sie das Kennwort wie folgt in der Konfigurationsdatei fest:
+1. Legen Sie das Kennwort für die Konfigurationsdatei wie folgt fest:
 
    * Öffnen Sie eine Eingabeaufforderung, und wechseln Sie zu `[NetWorker_root]\Legato\nsr\bin`.
    * Führen Sie den folgenden Befehl aus: `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> -P &lt;password>*
 
-1. Erstellen Sie die ausführbaren Batch-Dateien (.bat) zum Sichern der Datenbank. (Weitere Informationen finden Sie in der NetWorker-Dokumentation.) Legen Sie die Details in den Batch-Dateien gemäß Ihrer Installation fest.
+1. Erstellen Sie die ausführbaren Batch-Dateien (.bat), die zum Sichern der Datenbank verwendet werden. (Siehe NetWorker-Dokumentation.) Legen Sie die Details in den Batch-Dateien entsprechend Ihrer Installation fest.
 
    * Vollständige Datenbanksicherung (nsrnmddbf.bat):
 
-      `NetWorker_database_module_root` `-s`*&lt;networker_server_name>* `-U``[username]` `-P`*[password ]*`-l full`*&lt;database_name>*
+     `NetWorker_database_module_root` `-s`*&lt;networker_server_name>* `-U``[username]` `-P`*[password ]*`-l full`*&lt;database_name>*
 
    * Inkrementelle Datenbanksicherung (nsrnmddbi.bat):
 
-      `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
 
    * Datenbankprotokollsicherung (nsrnmddbl.bat):
 
-      `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
 
-      Dabei gilt:
+     Dabei gilt:
 
-      `[NetWorker_database_module_root]` ist der Installationsordner des NetWorker-Moduls. Der standardmäßige Installationsordner von NetWorker Module für SQL Server heißt „C:\Programme\Legato\nsr\bin\nsrsqlsv“.
+     `[NetWorker_database_module_root]` ist der Installationsordner des NetWorker-Moduls. Der standardmäßige Installationsordner von NetWorker Module für SQL Server heißt „C:\Programme\Legato\nsr\bin\nsrsqlsv“.
 
-      `NetWorker_Server_Name` ist der Server, auf dem NetWorker installiert ist.
+     `NetWorker_Server_Name` ist der Server, auf dem NetWorker installiert ist.
 
-      `username` &amp; `password` sind der Benutzername und das Kennwort des Datenbankadministrator-Benutzers.
+     `username` &amp; `password` sind der Benutzername und das Kennwort des Datenbankadministrator-Benutzers.
 
-      `database_name` ist der Name der Datenbank, die gesichert werden soll.
+     `database_name` ist der Name der Datenbank, die gesichert werden soll.
 
-**Sicherungsgerät erstellen**
+**Erstellen eines Sicherungsgeräts**
 
-1. Erstellen Sie auf dem Server mit EMC Documentum einen neuen Ordner und geben Sie den Ordner unter Erteilung voller Zugriffsrechte für alle Benutzer frei.
-1. Starten Sie EMC NetWorker Administrator und klicken Sie auf „Media Management“ > „Devices“.
-1. Klicken Sie mit der rechten Maustaste auf „Geräte“ und wählen Sie „Erstellen“ aus.
-1. Geben Sie die folgenden Werte ein und klicken Sie auf „OK“:
+1. Erstellen Sie einen Ordner auf dem EMC Documentum-Server und geben Sie den Ordner frei, indem Sie allen Benutzern volle Berechtigungen erteilen.
+1. Starten Sie EMC NetWorker Administrator und klicken Sie auf Media Management > Geräte.
+1. Klicken Sie mit der rechten Maustaste auf Geräte und wählen Sie Erstellen aus.
+1. Geben Sie die folgenden Werte ein und klicken Sie auf OK:
 
    **Name:** Der vollständige Pfad des freigegebenen Ordners
 
    **Medientyp:** `File`
 
-1. Klicken Sie mit der rechten Maustaste auf das neue Gerät und wählen Sie Operations aus.
-1. Klicken Sie auf „Label“, geben Sie einen Namen ein, klicken Sie auf „OK“ und klicken Sie dann auf „Mount“.
+1. Klicken Sie mit der rechten Maustaste auf das neue Gerät und wählen Sie &quot;Vorgänge&quot;.
+1. Klicken Sie auf &quot;Titel&quot;, geben Sie einen Namen ein, klicken Sie auf &quot;OK&quot;und anschließend auf &quot;Bereiten&quot;.
 
 Ein Gerät wird hinzugefügt, auf dem die gesicherten Dateien gespeichert werden. Sie können mehrere Geräte mit verschiedenen Formaten hinzufügen.
 
 ## EMC Documentum Content Server sichern {#back-up-the-emc-documentum-content-server}
 
-Führen Sie die folgenden Schritte aus, nachdem Sie eine vollständige Sicherung Ihrer AEM Forms-Daten erstellt haben. (Siehe [Sichern der AEM Forms-Daten](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data).)
+Führen Sie die folgenden Aufgaben aus, nachdem Sie eine vollständige Sicherung der AEM Formulardaten abgeschlossen haben. (Siehe [Sichern der AEM Formulardaten](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data).
 
 >[!NOTE]
 >
->Für die Befehlsskripts ist der vollständige Pfad der Datei „nsrnmd_win.cfg“ erforderlich, die Sie unter [EMC Document Content Server-Sicherung und -Wiederherstellung vorbereiten](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery) erstellt haben.
+>Die Befehlsskripte erfordern den vollständigen Pfad zur Datei &quot;nsrnmd_win.cfg&quot;, die Sie in der [EMC Document Content Server auf Sicherung und Wiederherstellung vorbereiten](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
 1. Öffnen Sie eine Eingabeaufforderung und wechseln Sie zu `[NetWorker_root]\Legato\nsr\bin`.
 1. Führen Sie den folgenden Befehl aus:
@@ -251,17 +247,17 @@ Führen Sie die folgenden Schritte aus, nachdem Sie eine vollständige Sicherung
 
 ## EMC Documentum Content Server wiederherstellen {#restore-the-emc-documentum-content-server}
 
-Führen Sie vor der Wiederherstellung der AEM Forms-Daten die folgenden Aufgaben aus: (Siehe[ Wiederherstellen der AEM Forms-Daten](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data).)
+Führen Sie die folgenden Aufgaben aus, bevor Sie Ihre AEM Formulardaten wiederherstellen. (Siehe [Wiederherstellen der AEM Formulardaten](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data).
 
 >[!NOTE]
 >
->Für die Befehlsskripts ist der vollständige Pfad der Datei „nsrnmd_win.cfg“ erforderlich, die Sie unter [EMC Document Content Server-Sicherung und -Wiederherstellung vorbereiten](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery) erstellt haben.
+>Die Befehlsskripte erfordern den vollständigen Pfad zur Datei &quot;nsrnmd_win.cfg&quot;, die Sie in der [EMC Document Content Server auf Sicherung und Wiederherstellung vorbereiten](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
 1. Beenden Sie den Docbase-Dienst, den Sie wiederherstellen.
-1. Starten Sie das NetWorker User-Dienstprogramm für Ihr Datenbankmodul (z. B. *NetWorker User for SQL Server*).
-1. Klicken Sie auf die Option „Restore“ und wählen Sie „Normal“ aus.
-1. Wählen Sie auf der linken Bildschirmseite die Datenbank für Ihren Docbase-Dienst aus und klicken Sie in der Symbolleiste auf „Start“.
-1. Starten Sie, nachdem die Datenbank wiederhergestellt wurde, den Docbase-Dienst.
+1. Starten Sie das NetWorker User-Dienstprogramm für Ihr Datenbankmodul (beispielsweise *NetWorker User for SQL Server*).
+1. Klicken Sie auf das Tool Wiederherstellen und wählen Sie dann Normal aus.
+1. Wählen Sie auf der linken Bildschirmseite die Datenbank für Ihre Docbase aus und klicken Sie in der Symbolleiste auf die Schaltfläche Starten .
+1. Starten Sie nach der Wiederherstellung der Datenbank den Docbase-Dienst neu.
 1. Öffnen Sie eine Eingabeaufforderung und wechseln Sie zum Ordner „*[NetWorker-Stammordner]*\Legato\nsr\bin“
 1. Führen Sie den folgenden Befehl aus:
 

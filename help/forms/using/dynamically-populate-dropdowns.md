@@ -10,10 +10,10 @@ topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
 docset: aem65
 exl-id: 64b88423-aaae-4258-bf48-73df5c9353ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '332'
-ht-degree: 100%
+ht-degree: 59%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## Voraussetzungen {#prerequisites}
 
-* [Erstellung von OSGI-Bundles](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&amp;CID=RedirectAEMCommunityKautuk)
+* [Erstellen von OSGI-Bundles](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&amp;CID=RedirectAEMCommunityKautuk)
 * [Entwickeln von AEM-Komponenten](/help/sites-developing/components.md)
 * [Erstellen von adaptiven Formularen](../../forms/using/creating-adaptive-form.md)
 * [Bearbeiten adaptiver Formulare](../../forms/using/introduction-forms-authoring.md)
@@ -32,10 +32,10 @@ Gehen Sie von einem Szenario aus, in dem Sie die Dropdownliste **Bundesland** ba
 
 1. Erstellen Sie ein Projekt mit den folgenden Modulen:
 
-   * Das Bundle, das die Logik für das Füllen der Dropdownliste enthält, in diesem Fall handelt es sich um ein Servlet.
-   * Der Inhalt, der die .jar-Datei einbettet und über eine Dropdownressource verfügt. Das Servlet verweist auf diese Ressource.
+   * Das Bundle, das die Logik zum Ausfüllen der Dropdown-Liste enthält, in diesem Fall ein Servlet.
+   * Der Inhalt, der die JAR-Datei einbettet und eine Dropdown-Ressource enthält. Das Servlet verweist auf diese Ressource.
 
-1. Schreiben Sie ein Servlet basierend auf dem Abfrageparameter „Land“, das ein Array mit den Namen der Bundesländer im jeweiligen Land zurückgibt.
+1. Schreiben Sie ein Servlet basierend auf dem Anforderungsparameter Land , das ein Array zurückgibt, das die Namen der Bundesländer im Land enthält.
 
    ```java
    @Component(metatype = false)
@@ -150,10 +150,10 @@ Gehen Sie von einem Szenario aus, in dem Sie die Dropdownliste **Bundesland** ba
 
    ![Erstellen eines Dropdown-Knotens](assets/dropdown-node.png)
 
-1. Komprimieren Sie den Inhaltsknoten und betten Sie die .jar-Datei in einem bestimmten Verzeichnis ein (beispielsweise /apps/myfolder/demo/install/). Stellen Sie dieselbe Datei auf dem Server bereit.
-1. Erstellen Sie ein adaptives Formular und fügen Sie zwei Dropdownlisten, „Land“ und „Bundesland“, hinzu. Die Liste „Land“ kann die Namen von Ländern enthalten. Die Liste „Bundesland“ kann dynamisch die Namen der Bundesländer für das in der ersten Liste ausgewählte Land einfügen.
+1. Komprimieren Sie den Inhaltsknoten und betten Sie die JAR-Datei an einem bestimmten Speicherort ein (z. B. /apps/myfolder/demo/install/). Stellen Sie dieselbe Datei auf dem Server bereit.
+1. Erstellen Sie ein adaptives Formular und fügen Sie zwei Dropdownlisten, „Land“ und „Bundesland“, hinzu. Die Liste „Land“ kann die Namen von Ländern enthalten. Die Liste &quot;Bundesland&quot;kann die Namen der Bundesstaaten für das in der ersten Liste ausgewählte Land dynamisch ausfüllen.
 
-   Fügen Sie die Namen der Länder hinzu, die Sie in der Liste „Land“ anzeigen möchten. Fügen Sie in der Liste „Bundesland“ ein Skript hinzu, mit dem sie basierend auf dem in der Liste „Land“ gewählten Land gefüllt wird.
+   Fügen Sie die Namen der Länder hinzu, die Sie in der Liste „Land“ anzeigen möchten. Fügen Sie in der Liste &quot;Bundesland&quot;ein Skript hinzu, um es basierend auf dem Namen des Landes in der Liste &quot;Land&quot;auszufüllen.
 
    ![Hinzufügen von Ländernamen](assets/country-dropdown.png) ![Hinzufügen eines Skripts zum Ausfüllen mit Bundesländernamen](assets/state-dropdown.png) ![Dropdownlisten „Land“ und „Bundesland“](assets/2dropdowns.png)
 

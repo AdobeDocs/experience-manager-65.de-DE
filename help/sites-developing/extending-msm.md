@@ -1,20 +1,16 @@
 ---
 title: Erweitern des Multi-Site-Managers
-seo-title: Extending the Multi Site Manager
 description: Auf dieser Seite erfahren Sie, wie Sie die Funktionen von Multi Site Manager erweitern können.
-seo-description: This page helps you extend the functionalities of the Multi Site Manager
-uuid: dfa7d050-29fc-4401-8d4d-d6ace6b49bea
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2585'
-ht-degree: 98%
+source-wordcount: '2578'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +19,7 @@ ht-degree: 98%
 Auf dieser Seite erfahren Sie, wie Sie die Funktionen von Multi Site Manager erweitern können:
 
 * Erfahren Sie mehr über die wichtigsten MSM-Java-APIs.
-* Erstellen Sie eine neue Synchronisierungsaktion, die in einer Rollout-Konfiguration verwendet werden kann.
+* Erstellen Sie eine Synchronisierungsaktion, die in einer Rollout-Konfiguration verwendet werden kann.
 * Ändern Sie die Standardsprache und die Länder-Codes.
 
 <!-- * Remove the "Chapters" step in the Create Site wizard. -->
@@ -111,7 +107,7 @@ Erstellen Sie benutzerdefinierte Synchronisierungsaktionen zur Verwendung mit Ih
 
 * `LiveAction`-Klassen umfassen die folgenden Methoden:
 
-   * `getName`: Gibt den Namen der Aktion zurück. Mit diesem Namen wird auf die Aktion verwiesen, z. B. in Rollout-Konfigurationen.
+   * `getName`: Gibt den Namen der Aktion zurück. Der Name wird verwendet, um auf die Aktion zu verweisen, z. B. in Rollout-Konfigurationen.
    * `execute`: Führt die Aufgabe der Aktion aus.
 
 * `LiveActionFactory`-Klassen umfassen die folgenden Mitglieder:
@@ -182,8 +178,6 @@ Die neue Rollout-Konfiguration steht dann zur Verfügung, wenn Sie die Rollout-K
 
 ### Erstellen der Rollout-Konfiguration {#create-the-rollout-configuration}
 
-So erstellen Sie eine neue Rollout-Konfiguration:
-
 1. Öffnen Sie CRXDE Lite; z. B.:
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
@@ -206,7 +200,7 @@ So erstellen Sie eine neue Rollout-Konfiguration:
 
 1. **Erstellen** Sie darunter einen Knoten mit den folgenden Eigenschaften:
 
-   * **Name**: Der Knotenname der Rollout-Konfiguration. md#installed-synchronization-actions), zum Beispiel `contentCopy` oder `workflow`.
+   * **Name**: Der Knotenname der Rollout-Konfiguration. md#installed-sync-actions), zum Beispiel `contentCopy` oder `workflow`.
    * **Typ**: `cq:RolloutConfig`
 
 1. Fügen Sie diesem Knoten die folgenden Eigenschaften hinzu:
@@ -240,7 +234,7 @@ Fügen Sie untergeordnete Knoten des Typs `cq:LiveSyncAction` hinzu, um Synchron
 1. **Erstellen** Sie einen Knoten mit den folgenden Knoteneigenschaften:
 
    * **Name**: Der Knotenname der Synchronisierungsaktion.
-Der Name muss dem **Aktionsnamen** in der Tabelle unter [Synchronisierungsaktionen](/help/sites-administering/msm-sync.md#installed-synchronization-actions) entsprechen, z. B. `contentCopy` oder `workflow`.
+Der Name muss mit dem **Aktionsname** in der Tabelle unter [Synchronisierungsaktionen](/help/sites-administering/msm-sync.md#installed-synchronization-actions), beispielsweise `contentCopy` oder `workflow`.
    * **Typ**: `cq:LiveSyncAction`
 
 1. Fügen Sie so viele Synchronisierungsaktionsknoten hinzu wie erforderlich und konfigurieren Sie sie. Ordnen Sie die Aktionsknoten so an, dass sie die Reihenfolge aufweisen, in der sie ausgeführt werden sollen. Der oberste Aktionsknoten wird zuerst ausgeführt.
@@ -600,7 +594,7 @@ In some cases, the **Chapters** selection is not required in the create site wiz
 1. In CRX Explorer, remove the node:
    `/etc/blueprints/weretail-english/jcr:content/dialog/items/tabs/items/tab_chap`.
 
-1. Navigate to `/libs/wcm/msm/templates/blueprint/defaults/livecopy_tab/items` and create a new node:
+1. Navigate to `/libs/wcm/msm/templates/blueprint/defaults/livecopy_tab/items` and create a node:
 
     1. **Name** = `chapters`; **Type** = `cq:Widget`.
 

@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: PDF Generator
 exl-id: c3fc159e-2677-4b71-b0b2-2feaf69e1a32
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '605'
 ht-degree: 11%
 
 ---
@@ -63,6 +63,6 @@ Benutzer mit der Rolle &quot;PDFG-Administrator&quot;oder &quot;PDFG-Benutzer&qu
 
 1. Klicken Sie unter &quot;Installation des PDFG-Netzwerkdruckers&quot;auf den Link. Wenn Sie zur Eingabe von Benutzerkontoinformationen aufgefordert werden, geben Sie den Benutzernamen und das Kennwort an, mit denen Sie sich in Schritt 1 angemeldet haben. Es wird eine Meldung angezeigt, die besagt, dass der Drucker erfolgreich installiert wurde.
 
-   ***Hinweis **: Wenn sich das Kennwort des Benutzers ändert, müssen die Benutzer den PDFG-Netzwerkdrucker erneut auf ihren Computern installieren. Sie können das Kennwort nicht über Administration Console aktualisieren.*
+   ***Hinweis **: Wenn sich das Kennwort des Benutzers ändert, muss der PDFG-Netzwerkdrucker erneut auf seinem Computer installiert werden. Sie können das Kennwort nicht über Administration Console aktualisieren.*
 
 1. Klicken Sie auf OK.

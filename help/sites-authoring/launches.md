@@ -1,17 +1,15 @@
 ---
 title: Verwenden von Launches zur Entwicklung von Inhalten für eine zukünftige Version
 description: Mit Launches können Sie effizient Inhalte für eine zukünftige Version entwickeln. Sie ermöglichen es Ihnen, Änderungen für eine spätere Veröffentlichung vorzunehmen, während Sie Ihre aktuellen Seiten beibehalten.
-uuid: 4bbd9865-735d-4232-b69c-b64193ac5d83
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '842'
 ht-degree: 93%
 
 ---
@@ -85,8 +83,8 @@ Mit Launches können Sie:
 
 * [Erstellen eines verschachtelten Launches](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) – ein Launch innerhalb eines Launches:
 
-   * Die Quelle ist ein vorhandener Launch.
-   * Sie können [einen verschachtelten Launch](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) zu einem beliebigen Ziel weiterleiten; dies kann ein übergeordneter Launch oder die Quellseiten der obersten Ebene (Produktion) sein.
+   * Die Quelle ist ein schon vorhandener Launch.
+   * Sie können [einen verschachtelten Launch zu einem beliebigen Ziel weiterleiten](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch). Dies kann ein übergeordneter Launch oder die Quellseiten der obersten Ebene (Produktion) sein.
 
   ![Übersicht über verschachtelten Launch](assets/chlimage_1-113.png)
 
@@ -98,7 +96,7 @@ Mit Launches können Sie:
 >
 >Für das Erstellen und Bearbeiten von Launches sind Zugriffsrechte auf `/content/launches` erforderlich (wie bei der Standardgruppe `content-authors`).
 >
->Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
+>Bitte wenden Sie sich an Ihre Systemadmins, falls Probleme auftreten.
 
 >[!CAUTION]
 >
@@ -117,7 +115,7 @@ Die Konsole &quot;Launches&quot;bietet einen Überblick über Ihre Launches und 
 
 ## Launches in „Verweise“ (Sites-Konsole) {#launches-in-references-sites-console}
 
-1. Navigieren Sie in der Konsole **Sites** zur Quelle der Launches.
+1. Navigieren Sie in der **Sites**-Konsole zur Quelle der Launches.
 1. Öffnen Sie die Leiste **Referenzen** und wählen Sie die Quellseite aus.
 1. Wählen Sie **Launches**, die vorhandenen Launches werden aufgelistet:
 

@@ -8,10 +8,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1473'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -25,7 +25,7 @@ Handlebars Helpers (helpers) sind Methoden, die von Handlebars-Skripten aufgeruf
 
 Die Implementierung umfasst eine Client-seitige und eine Server-seitige Definition. Es ist auch möglich, dass Entwickler benutzerdefinierte Helfer erstellen.
 
-Die benutzerdefinierten SCF-Helfer, die mit AEM Communities bereitgestellt werden, werden im Abschnitt [Client-Bibliothek](../../help/sites-developing/clientlibs.md):
+Die mit AEM Communities gelieferten benutzerdefinierten SCF-Helfer werden im Abschnitt [Client-Bibliothek](../../help/sites-developing/clientlibs.md):
 
 * `/etc/clientlibs/social/commons/scf/helpers.js`
 
@@ -45,9 +45,9 @@ Wenn safeString auf &quot;true&quot;gesetzt ist, ist die zurückgegebene Zeichen
 
 ### Parameter {#parameters}
 
-* **context**: Zeichenfolge
+* **context**: String
 
-  (Optional) Der Standardwert ist die leere Zeichenfolge.
+  (Optional) Standardmäßig ist die leere Zeichenfolge
 
 * **maxLength**: Zahl
 
@@ -93,7 +93,7 @@ Ein Hilfsprogramm zum Hinzufügen von zwei Bereichen unter einem div, einer für
 
 ### Parameter {#parameters-1}
 
-* **context**: Zeichenfolge
+* **context**: String
 
   (Optional) Der Standardwert ist die leere Zeichenfolge.
 
@@ -101,11 +101,11 @@ Ein Hilfsprogramm zum Hinzufügen von zwei Bereichen unter einem div, einer für
 
   (Optional) Die Anzahl der Zeichen, die angezeigt werden sollen, wenn kein Volltext angezeigt wird. Der Standardwert ist 100.
 
-* **moreText**: Zeichenfolge
+* **moreText**: String
 
   (Optional) Der anzuzeigende Text, der angibt, dass mehr Text angezeigt werden soll. Der Standardwert ist &quot;more&quot;.
 
-* **ellipsesText**: Zeichenfolge
+* **ellipsesText**: String
 
   (Optional) Der Text, der anzeigt, dass ausgeblendeter Text vorhanden ist. Der Standardwert ist &quot;...&quot;.
 
@@ -137,7 +137,7 @@ Hilfsmittel zum Zurückgeben einer formatierten Datums-Zeichenfolge.
 
   (Optional) ein Millisekunden-Wert, der vom 1. Januar 1970 (Epoche) versetzt wurde. Der Standardwert ist das aktuelle Datum.
 
-* **format**: Zeichenfolge
+* **format**: String
 
   (Optional) Das anzuwendende Datumsformat. Der Standardwert ist &quot;YYYY-MM-DDTHH&quot;:mm:ss.sssZ&quot;und das Ergebnis wird als &quot;2015-03-18T18&quot;angezeigt:17:13-07:00&quot;
 
@@ -161,11 +161,11 @@ Hilfsmittel zum Zurückgeben von Inhalten in Abhängigkeit von einer Gleichheits
 
 ### Parameter {#parameters-3}
 
-* **lvalue**: Zeichenfolge
+* **lvalue**: String
 
   Der zu vergleichende linke Wert.
 
-* **rvalue**: Zeichenfolge
+* **rvalue**: String
 
   Der zu vergleichende Wert auf der rechten Seite.
 
@@ -185,11 +185,11 @@ Ein Block-Helfer, der den aktuellen Wert von [WCM-Modus](https://developer.adobe
 
 ### Parameter {#parameters-4}
 
-* **context**: Zeichenfolge
+* **context**: String
 
   (Optional) Die zu übersetzende Zeichenfolge. Erforderlich, wenn kein Standardwert angegeben wurde.
 
-* **mode**: Zeichenfolge
+* **mode**: String
 
   (Optional) Eine kommagetrennte Liste von [WCM-Modi](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) , um zu testen, falls festgelegt.
 
@@ -211,15 +211,15 @@ Siehe auch [Internationalisieren von Zeichenfolgen in JavaScript-Code](../../hel
 
 ### Parameter {#parameters-5}
 
-* **context**: Zeichenfolge
+* **context**: String
 
   (Optional) Die zu übersetzende Zeichenfolge. Erforderlich, wenn kein Standardwert angegeben wurde.
 
-* **default**: Zeichenfolge
+* **default**: String
 
   (Optional) Die zu übersetzende Standardzeichenfolge. Erforderlich, wenn kein Kontext angegeben wurde.
 
-* **comment**: Zeichenfolge
+* **comment**: String
 
   (Optional) Ein Übersetzungshinweis
 
@@ -232,7 +232,7 @@ Siehe auch [Internationalisieren von Zeichenfolgen in JavaScript-Code](../../hel
 
 ## Einschließen {#include}
 
-Hilfsmittel zum Einfügen einer Komponente als nicht vorhandene Ressource in eine Vorlage.
+Hilfsmittel zum Einschließen einer Komponente als nicht vorhandene Ressource in eine Vorlage.
 
 Diese Methode ermöglicht die programmgesteuerte Anpassung der Ressource, als es für eine Ressource möglich ist, die als JCR-Knoten hinzugefügt wird. Siehe [Hinzufügen oder Einschließen einer Communities-Komponente](scf.md#add-or-include-a-communities-component).
 
@@ -250,15 +250,15 @@ Dieser Helfer, der nur serverseitig geeignet ist, bietet Funktionen, die dem [cq
 
   Verwendung `this.id` zum Abrufen der Ressource unter `id` zum Rendern des angeforderten resourceType .
 
-* **resourceType**: Zeichenfolge
+* **resourceType**: String
 
   (Optional) Der Ressourcentyp ist standardmäßig auf den Ressourcentyp aus dem Kontext eingestellt.
 
-* **template**: Zeichenfolge
+* **template**: String
 
   Pfad zum Komponentenskript.
 
-* **path**: Zeichenfolge
+* **path**: String
 
   (Erforderlich) Der Pfad zur Ressource. Wenn der Pfad relativ ist, muss ein Kontext angegeben werden. Andernfalls wird die leere Zeichenfolge zurückgegeben.
 
@@ -282,19 +282,19 @@ Dieser Helfer, der nur serverseitig geeignet ist, bietet Funktionen, die dem [ui
 
 ### Parameter {#parameters-7}
 
-* **categories**: Zeichenfolge
+* **categories**: String
 
   (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Schließen Sie alle JavaScript- und CSS-Bibliotheken für die angegebenen Kategorien ein. Der Designname wird aus der Abfrage extrahiert.
 
-* **Design**: Zeichenfolge
+* **Design**: String
 
   (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Schließen Sie alle themenbezogenen Bibliotheken (CSS und JS) für die angegebenen Kategorien ein. Der Designname wird aus der Abfrage extrahiert.
 
-* **js**: Zeichenfolge
+* **js**: String
 
   (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Umfasst alle JavaScript-Bibliotheken für die angegebenen Kategorien.
 
-* **css**: Zeichenfolge
+* **css**: String
 
   (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Umfasst alle CSS-Bibliotheken für die angegebenen Kategorien.
 
@@ -377,7 +377,7 @@ Depending on how long in the past, may return
 
 Ein Hilfsprogramm, das eine Quellzeichenfolge für HTML-Elementinhalte kodiert, um den Schutz vor XSS zu unterstützen.
 
-HINWEIS: Dieser Hilfsprogramm ist kein Validator und darf nicht zum Schreiben von Attributwerten verwendet werden.
+HINWEIS: Dieser Assistent ist kein Validator und darf nicht zum Schreiben von Attributwerten verwendet werden.
 
 ### Parameter {#parameters-9}
 
@@ -395,7 +395,7 @@ HINWEIS: Dieser Hilfsprogramm ist kein Validator und darf nicht zum Schreiben vo
 
 Ein Hilfsprogramm, das eine Quellzeichenfolge zum Schreiben in einen HTML-Attributwert kodiert, um den Schutz vor XSS zu erleichtern.
 
-HINWEIS: Dieser Hilfsprogramm ist kein Validator und darf nicht zum Schreiben von umsetzbaren Attributen (href, src, event handlers) verwendet werden.
+HINWEIS: Dieser Helfer ist kein Validator und darf nicht zum Schreiben von verwertbaren Attributen (href, src, event handlers) verwendet werden.
 
 ### Parameter {#parameters-10}
 
@@ -437,7 +437,7 @@ HINWEIS: Dieser Helfer kann eine leere Zeichenfolge zurückgeben.
 
 * **context**: Objekt
 
-  Die URL, die bereinigt werden soll.
+  Die zu bereinigende URL.
 
 ### Beispiel {#example-9}
 
@@ -451,17 +451,17 @@ HINWEIS: Dieser Helfer kann eine leere Zeichenfolge zurückgeben.
 * Parameter können ein einfaches String-, number-, boolesches oder JSON-Objekt und eine optionale Sequenz von Schlüssel-Wert-Paaren (Hash-Argumenten) als letzte Parameter sein.
 * Die Schlüssel in Hash-Argumenten müssen einfache Bezeichner sein.
 * Die Werte in den Hash-Argumenten sind Handlebars-Ausdrücke: einfache Bezeichner, Pfade oder Zeichenfolgen.
-* den aktuellen Kontext, `this`ist immer für Handlebars-Helfer verfügbar.
+* den aktuellen Kontext, `this`, ist immer für Handlebars-Helfer verfügbar.
 * Der Kontext kann ein String-, number-, boolesches oder JSON-Datenobjekt sein.
 * Es ist möglich, ein im aktuellen Kontext verschachteltes Objekt als Kontext zu übergeben, z. B. `this.url` oder `this.id` (siehe folgende Beispiele für einfache und Blockhilfer).
 
 * Block Helpers sind Funktionen, die von überall in der Vorlage aufgerufen werden können. Sie können einen Block der Vorlage jedes Mal null oder mehrmals mit einem anderen Kontext aufrufen. Sie enthalten einen Kontext zwischen `{{#*name*}}` und `{{/*name*}}`.
 
-* Handlebars bieten einen endgültigen Parameter für Helfer namens &quot;options&quot;. Das Sonderobjekt &#39;options&#39; enthält
+* Handlebars bieten einen endgültigen Parameter für Helfer mit dem Namen &quot;options&quot;. Das Sonderobjekt &#39;options&#39; enthält
 
    * Optionale private Daten (options.data)
    * Optionale Tastenwerteigenschaften aus dem Aufruf (options.hash)
-   * Möglichkeit, sich selbst aufzurufen (options.fn())
+   * Möglichkeit zum Aufrufen selbst (options.fn())
    * Möglichkeit, das Umkehren von sich selbst aufzurufen (options.inverse())
 
 * Es wird empfohlen, den von einem Helfer zurückgegebenen HTML String-Inhalt als SafeString zu verwenden.

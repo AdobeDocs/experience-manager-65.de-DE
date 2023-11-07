@@ -8,10 +8,10 @@ geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archiv
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
 exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 22%
+source-wordcount: '1471'
+ht-degree: 20%
 
 ---
 
@@ -79,7 +79,7 @@ Verwenden Sie die Registerkarte &quot;Archive&quot;, um in Workbench erstellte L
 
      **ADD_REMOVE_ENDPOINTS_PERM:** Hinzufügen, Entfernen und Ändern von Endpunkten für einen Dienst
 
-     **CREATE_VERSION_PERM:** Erstellen einer neuen Version des Dienstes
+     **CREATE_VERSION_PERM:** So erstellen Sie eine Version des Dienstes
 
      **DELETE_VERSION_PERM:** Löschen einer Version des Dienstes
 
@@ -146,7 +146,7 @@ Verwenden Sie die Registerkarte &quot;Archive&quot;, um in Workbench erstellte L
 
      **ADD_REMOVE_ENDPOINTS_PERM:** Hinzufügen, Entfernen und Ändern von Endpunkten für einen Dienst
 
-     **CREATE_VERSION_PERM:** Erstellen einer neuen Version des Dienstes
+     **CREATE_VERSION_PERM:** So erstellen Sie eine Version des Dienstes
 
      **DELETE_VERSION_PERM:** Löschen einer Version des Dienstes
 

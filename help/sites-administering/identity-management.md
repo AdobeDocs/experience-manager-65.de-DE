@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 95%
+source-wordcount: '1250'
+ht-degree: 85%
 
 ---
 
@@ -76,7 +76,7 @@ Die Anmeldungskomponente kann verwendet werden, um die Anmeldeinformationen zu e
 
 Sie stellt dem Besucher bzw. der Besucherin die Standardfelder **Benutzername** und **Kennwort** bereit, sowie ferner eine Schaltfläche **Anmelden** zum Aktivieren des Login-Verfahrens bei Eingabe der Anmeldedaten.
 
-Benutzende können sich beispielsweise entweder anmelden oder mithilfe der Option **Anmelden** in der Geometrixx-Symbolleiste ein neues Konto erstellen, welches folgende Seite nutzt:
+Beispielsweise können sich Benutzer entweder mit dem **Anmelden** -Option in der Geometrixx-Symbolleiste, die die Seite verwendet:
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
@@ -94,22 +94,22 @@ Je nach Ihrem Registrierungsformular können die Besuchenden registrierte Inform
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-Um die Daten Ihres Profils einzusehen, klicken Sie in der oberen rechten Ecke einer beliebigen Seite auf **Mein Profil**; beispielsweise mit dem `admin`-Konto:
+Um die Details Ihres Profils anzuzeigen, klicken Sie auf **Mein Profil** in der oberen rechten Ecke einer beliebigen Seite, z. B. mit der `admin` Konto:
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
 Sie können mit dem [ClientContext](/help/sites-administering/client-context.md) (in der Authoring-Umgebung und mit ausreichend Berechtigungen) ein anderes Profil anzeigen:
 
-1. Öffnen Sie eine Seite; beispielsweise die Geometrixx-Seite:
+1. Öffnen Sie eine Seite, z. B. die Geometrixx-Seite:
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
-1. Klicken Sie auf **Mein Profil** in der oberen rechten Ecke. Sie sehen das Profil Ihres aktuellen Kontos. z. B. Admin.
+1. Klicken Sie auf **Mein Profil** in der oberen rechten Ecke. Sie sehen das Profil Ihres aktuellen Kontos, z. B. den Administrator.
 1. Drücken Sie **Strg+Alt+C**, um den Client-Kontext zu öffnen.
 1. Klicken Sie in der oberen linken Ecke des Client-Kontextes auf die Schaltfläche **Profil laden**.
 
    ![Symbol &quot;Profil laden&quot;](do-not-localize/loadprofile.png)
 
-1. Wählen Sie ein anderes Profil aus der Dropdown-Liste im Dialogfenster aus, zum Beispiel **Alina Schmidt**.
+1. Wählen Sie ein anderes Profil aus der Dropdown-Liste im Dialogfeld aus, z. B.: **Alison Parker**.
 1. Klicken Sie auf **OK**.
 1. Klicken Sie erneut auf **Mein Profil**. Das Formular wird mit den Details von Alina aktualisiert.
 
@@ -119,7 +119,7 @@ Sie können mit dem [ClientContext](/help/sites-administering/client-context.md)
 
 ## Hinzufügen von Feldern zur Profildefinition {#adding-fields-to-the-profile-definition}
 
-Sie können der Profildefinition Felder hinzufügen. Beispielsweise zum Hinzufügen eines Felds „Lieblingsfarbe“ zum Geometrixx-Profil:
+Sie können der Profildefinition Felder hinzufügen. So fügen Sie dem Geometrixx beispielsweise das Feld &quot;Lieblingsfarbe&quot;hinzu:
 
 1. Navigieren Sie von der Websites-Konsole zu „Geometrixx Outdoors Site“ > „Deutsch“ > „Benutzer“ > „Mein Profil“.
 1. Doppelklicken Sie auf die Seite **Mein Profil**, um sie zur Bearbeitung zu öffnen.
@@ -145,7 +145,7 @@ Sie können der Profildefinition Felder hinzufügen. Beispielsweise zum Hinzufü
 
 ## Profilstatus {#profile-states}
 
-Es gibt eine Reihe von Nutzungsszenarien, bei denen es wichtig ist zu wissen, ob sich eine Benutzerin bzw. ein Benutzer (oder eher das Profil) in einem *bestimmten Status* befindet.
+Es gibt verschiedene Anwendungsfälle, bei denen es erforderlich ist zu wissen, ob sich ein Benutzer (oder eher sein Profil) in einem *spezifischer Status* oder nicht.
 
 Dazu gehört das Definieren einer entsprechenden Eigenschaft im Benutzerprofil auf eine Weise, die:
 
@@ -163,7 +163,7 @@ Dies geschieht mithilfe von:
 
   Zum Verwalten von statusbezogenen Aktionen.
 
-Es können mehrere Status definiert werden; in Geometrixx umfassen diese beispielsweise:
+Es können mehrere Status definiert werden. In Geometrixx umfassen diese beispielsweise:
 
 * das Abonnieren (oder das Aufheben des Abonnements) von Benachrichtigungen zu Newslettern oder Kommentar-Threads
 * Das Hinzufügen und Entfernen einer Verknüpfung zu einem Freund bzw. einer Freundin

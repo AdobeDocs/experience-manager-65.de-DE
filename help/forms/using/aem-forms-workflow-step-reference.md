@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 5675d69a5bdf296782339f02162db8068daf29e3
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7690'
+source-wordcount: '7689'
 ht-degree: 76%
 
 ---
@@ -135,7 +135,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Erstel
 
 ## Schritt „E-Mail senden“ {#send-email-step}
 
-Verwenden Sie den E-Mail-Schritt, um eine E-Mail zu senden, beispielsweise eine E-Mail mit einem Datensatzdokument, eine Verknüpfung eines adaptiven Formulars, eine Verknüpfung einer interaktiven Kommunikation oder ein angehängtes PDF-Dokument. Der Schritt „E-Mail senden“ unterstützt [HTML-E-Mail](https://en.wikipedia.org/wiki/HTML_email). HTML-E-Mails sind responsiv und passen sich an den E-Mail-Client und die Bildschirmgröße der Empfängerinnen und Empfänger an. Sie können eine HTML-E-Mail-Vorlage verwenden, um das Erscheinungsbild, das Farbschema und das Verhalten der E-Mail zu definieren.
+Verwenden Sie den E-Mail-Schritt, um eine E-Mail zu senden, z. B. eine E-Mail mit einem Datensatzdokument, einem Link eines adaptiven Formulars, einem Link einer interaktiven Kommunikation oder einem angehängten PDF-Dokument. Der Schritt „E-Mail senden“ unterstützt [HTML-E-Mail](https://en.wikipedia.org/wiki/HTML_email). HTML-E-Mails sind responsiv und passen sich an den E-Mail-Client und die Bildschirmgröße der Empfängerinnen und Empfänger an. Sie können eine HTML-E-Mail-Vorlage verwenden, um das Erscheinungsbild, das Farbschema und das Verhalten der E-Mail zu definieren.
 
 Beim E-Mail-Schritt wird der Day CQ Mail Service zum Senden von E-Mails verwenden. Stellen Sie vor Verwendung des E-Mail-Schritts sicher, dass die Variable [Email Service](../../forms/using/aem-forms-workflow.md) konfiguriert ist. Der E-Mail-Schritt hat folgende Eigenschaften:
 

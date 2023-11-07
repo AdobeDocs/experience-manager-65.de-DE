@@ -2,10 +2,10 @@
 title: Erste Schritte mit AEM Headless
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Voraussetzungen für AEM Headless.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3038'
-ht-degree: 94%
+source-wordcount: '3032'
+ht-degree: 92%
 
 ---
 
@@ -81,7 +81,7 @@ Um Inhalte „headless“ zu ändern, bietet AEM zwei robuste APIs.
 * Mit der GraphQL-API können Sie Anfragen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellen.
 * Mit der Assets-REST-API können Sie Inhaltsfragmente (und andere Assets) erstellen und ändern.
 
-In einem späteren Teil der AEM Headless-Tour erfahren Sie mehr über diese APIs und deren Verwendung. Weitere Informationen finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) weiter unten.
+In einem späteren Teil der AEM Headless-Tour erfahren Sie mehr über diese APIs und deren Verwendung. Oder sehen Sie die [Zusätzliche Ressourcen](#additional-resources) unten finden Sie weitere Dokumentationen.
 
 ## Headless-Integrationsebenen {#integration-levels}
 
@@ -113,13 +113,13 @@ Diese Integrationsebene baut auf Ebene zwei auf, indem die meisten Inhalte in de
 
 ### Sie haben noch keinen externen Benutzer der Headless-Inhalte, z. B. eine Single Page Application (SPA). {#do-not-have-a-spa}
 
-Wenn Sie eine neue SPA erstellen möchten, die Inhalte von AEM „headless“ nutzt, können Sie Funktionen wie Inhaltsfragmente verwenden, um Ihre Headless-Inhalte zu verwalten, und auch eine SPA mit dem AEM Editor-Framework erstellen.
+Wenn Sie ein SPA erstellen möchten, das Inhalte von AEM nutzlos nutzt, können Sie Funktionen wie Inhaltsfragmente verwenden, um Headless-Inhalte zu verwalten und auch eine SPA mit AEM Editor-Framework zu erstellen.
 
 Mit dem SPA-Editor nutzt die SPA nicht nur Inhalte aus AEM, sondern kann auch innerhalb von AEM von Ihren Inhaltsautoren vollständig bearbeitet werden, sodass Sie sowohl die Flexibilität der Headless-Bereitstellung als auch der kontextbezogenen Bearbeitung innerhalb von AEM nutzen können.
 
 ## Anforderungen und Vorbedingungen {#requirements-prerequisites}
 
-Bevor Sie mit Ihrem Headless-AEM-Projekt beginnen, müssen Sie eine Reihe von Anforderungen erfüllen.
+Es gibt mehrere Anforderungen, bevor Sie Ihr Headless-AEM-Projekt starten.
 
 ### Kenntnisse {#knowledge}
 

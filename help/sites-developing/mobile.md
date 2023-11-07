@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3787'
-ht-degree: 53%
+source-wordcount: '3786'
+ht-degree: 51%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 53%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Das Erstellen einer mobilen Website ähnelt dem Erstellen einer Standardwebsite, da auch Vorlagen und Komponenten erstellt werden müssen Weitere Informationen zum Erstellen von Vorlagen und Komponenten finden Sie auf den folgenden Seiten: [Vorlagen](/help/sites-developing/templates.md), [Komponenten](/help/sites-developing/components.md)und [Erste Schritte bei der Entwicklung von AEM Sites](/help/sites-developing/getting-started.md). Der Hauptunterschied besteht darin, die integrierten mobilen Funktionen von Adobe Experience Manager (AEM) innerhalb der Site zu aktivieren. Dies wird erreicht, indem eine Vorlage erstellt wird, die auf der mobilen Seitenkomponente basiert.
+Das Erstellen einer mobilen Website ähnelt dem Erstellen einer Standardwebsite, da auch Vorlagen und Komponenten erstellt werden müssen Weitere Informationen zum Erstellen von Vorlagen und Komponenten finden Sie auf den folgenden Seiten: [Vorlagen](/help/sites-developing/templates.md), [Komponenten](/help/sites-developing/components.md), und [Erste Schritte bei der Entwicklung von AEM Sites](/help/sites-developing/getting-started.md). Der Hauptunterschied besteht darin, die integrierten mobilen Funktionen von Adobe Experience Manager (AEM) innerhalb der Site zu aktivieren. Dies wird erreicht, indem eine Vorlage erstellt wird, die auf der mobilen Seitenkomponente basiert.
 
-Erwägen Sie die Verwendung von [responsives Design](/help/sites-developing/responsive.md)erstellen, eine einzelne Site erstellen, die mehrere Bildschirmgrößen unterstützt.
+Verwenden Sie [responsives Design](/help/sites-developing/responsive.md)erstellen, eine einzelne Site erstellen, die mehrere Bildschirmgrößen unterstützt.
 
 Beginnen Sie mit dem **Demosite &quot;We.Retail Mobile&quot;** , die in AEM verfügbar ist.
 
@@ -61,7 +61,7 @@ Die Mobile-Seiten-Komponente (`/libs/wcm/mobile/components/page`):
 
 ## Erstellen einer mobilen Site mit dem Multi-Site-Manager {#creating-a-mobile-site-with-the-multi-site-manager}
 
-Verwenden Sie den Multi-Site-Manager (MSM), um eine mobile Live Copy von einer Standardseite zu erstellen. Die Standard-Site wird automatisch in eine mobile Site umgewandelt: Die mobile Site verfügt über alle Funktionen der mobilen Sites (z. B. Bearbeitung in einem Emulator) und kann synchron mit der standardmäßigen Site verwaltet werden. Siehe den Abschnitt [Erstellen einer Live Copy für unterschiedliche Kanäle](/help/sites-administering/msm.md) auf der Multi-Site-Manager-Seite.
+Verwenden Sie den Multi-Site-Manager (MSM), um eine mobile Live Copy von einer Standardseite zu erstellen. Die Standard-Site wird automatisch in eine mobile Site umgewandelt: Die mobile Site verfügt über alle Funktionen der mobilen Sites (z. B. Bearbeitung in einem Emulator) und kann synchron mit der Standard-Site verwaltet werden. Siehe den Abschnitt [Erstellen einer Live Copy für unterschiedliche Kanäle](/help/sites-administering/msm.md) auf der Multi-Site-Manager-Seite.
 
 ## Server-seitige Mobile-API {#server-side-mobile-api}
 
@@ -169,7 +169,7 @@ Informationen zum Erstellen eines Emulators finden Sie unter [Erstellen eines be
 
 **Hauptmerkmale von mobilen Emulatoren**
 
-* Eine Gerätegruppe besteht aus einem oder mehreren Emulatoren: Die Konfigurationsseite für Gerätegruppen, z. B. /etc/mobile/groups/touch, enthält die `emulators` -Eigenschaft unterhalb der `jcr:content` Knoten.
+* Eine Gerätegruppe besteht aus einem oder mehreren Emulatoren: Die Gerätegruppenkonfigurationsseite, z. B. /etc/mobile/groups/touch, enthält die `emulators` -Eigenschaft unterhalb der `jcr:content` Knoten.
 Hinweis: Obwohl es möglich ist, dass derselbe Emulator zu mehreren Gerätegruppen gehört, hat das wenig Sinn.
 
 * Über das Konfigurationsdialogfeld der Gerätegruppe wird die `emulators` -Eigenschaft mit dem Pfad der gewünschten Emulatoren festgelegt ist. Beispiel: `/libs/wcm/mobile/components/emulators/iPhone4`.
@@ -206,7 +206,7 @@ So weisen Sie Ihrer Site eine Gerätegruppe zu:
 1. Navigieren Sie in Ihrem Browser zur **Siteadmin**-Konsole.
 1. Öffnen Sie die Stammseite Ihrer mobilen Site unten **Websites**.
 1. Öffnen Sie die Seiteneigenschaften.
-1. Wählen Sie die **Mobile** tab:
+1. Wählen Sie die **Mobilnummer** tab:
 
    * Definieren Sie die Gerätegruppen.
    * Klicken Sie auf **OK**.
@@ -237,7 +237,7 @@ Weitere Informationen hierzu finden Sie unter [Erstellen von Gerätegruppenfilte
 Erstellen Sie eine Gerätegruppe, wenn die Gruppen, die AEM installieren, nicht Ihren Anforderungen entsprechen.
 
 1. Navigieren Sie in Ihrem Browser zum **Instrumente** Konsole.
-1. Erstellen einer Seite unten **Instrumente** > **Mobile** > **Gerätegruppen**. Im Dialogfeld **Seite erstellen**:
+1. Erstellen einer Seite unten **Instrumente** > **Mobilnummer** > **Gerätegruppen**. Im Dialogfeld **Seite erstellen**:
 
    * As **Titel**, eingeben `Special Phones`.
 
@@ -257,7 +257,7 @@ Auf der Registerkarte **Allgemein**:
    * **Benutzeragent**: user-agent-String, mit dem die Geräte abgeglichen werden. Es ist optional und kann ein Regex sein. Beispiel: `BlackBerryZ10`
    * **Funktionen**: definiert, ob die Gruppe Bilder, CSS, JavaScript oder Gerätedrehungen verarbeiten kann.
    * **Minimale Bildschirmbreite** und **Höhe**
-   * **Emulator deaktivieren**: , um den Emulator während der Inhaltsbearbeitung zu aktivieren bzw. zu deaktivieren.
+   * **Emulator deaktivieren**: zum Aktivieren/Deaktivieren des Emulators während der Inhaltsbearbeitung.
 
    Im **Emulatoren** tab:
 
@@ -360,18 +360,18 @@ Weitere Informationen zur Integration der Client-Bibliothek finden Sie unter [Ve
 
 ### Bereitstellen alternativer Links {#providing-alternate-links}
 
-Der OSGi-Service `PageVariantsProvider` kann alternative Links für Websites generieren, die zur selben Familie gehören. Um Sites zu konfigurieren, die vom Dienst berücksichtigt werden sollen, muss ein `cq:siteVariant` -Knoten muss zum `jcr:content` Knoten aus dem Stammverzeichnis der Site.
+Der OSGi-Service `PageVariantsProvider` kann alternative Links für Websites generieren, die zur selben Familie gehören. Um Sites zu konfigurieren, die vom Dienst berücksichtigt werden sollen, muss ein `cq:siteVariant` -Knoten muss zum `jcr:content` -Knoten aus dem Stammverzeichnis der Site.
 
 Die `cq:siteVariant` -Knoten muss die folgenden Eigenschaften aufweisen:
 
-* `cq:childNodesMapTo` - bestimmt, welchem Attribut des Link-Elements die untergeordneten Knoten zugeordnet werden; Es wird empfohlen, den Inhalt Ihrer Website so zu organisieren, dass die untergeordneten Elemente des Stammknotens den Stamm für eine Sprachvariante Ihrer globalen Website darstellen (z. B. `/content/mysite/en`, `/content/mysite/de`), wobei der Wert der `cq:childNodesMapTo` sollte `hreflang`;
-* `cq:variantDomain` – gibt an, welche `Externalizer`-Domain zum Generieren der absoluten URLs der Seitenvarianten verwendet wird. Wenn dieser Wert nicht gesetzt ist, werden die Seitenvarianten mit relativen Links erzeugt;
+* `cq:childNodesMapTo` - bestimmt, welchem Attribut des Link-Elements die untergeordneten Knoten zugeordnet werden. Es wird empfohlen, den Inhalt Ihrer Website so zu organisieren, dass die untergeordneten Elemente des Stammknotens den Stamm für eine Sprachvariante Ihrer globalen Website darstellen (z. B. `/content/mysite/en`, `/content/mysite/de`), wobei der Wert der `cq:childNodesMapTo` sollte `hreflang`;
+* `cq:variantDomain` - gibt an, `Externalizer` -Domäne verwendet wird, um die absoluten URLs der Seitenvarianten zu generieren. Wenn dieser Wert nicht festgelegt ist, werden die Seitenvarianten mithilfe relativer Links generiert.
 * `cq:variantFamily` – gibt an, zu welcher Familie von Websites diese Seite gehört; mehrere gerätespezifische Darstellungen derselben Website sollten derselben Familie angehören;
 * `media` – speichert die Werte des Medienattributs des Link-Elements; Es wird empfohlen, den Namen der `BrowserMap`-registrierten `DeviceGroups` zu verwenden, damit die `BrowserMap`-Bibliothek die Clients automatisch an die richtige Variante der Website weiterleiten kann.
 
 #### PageVariantsProvider und Externalizer {#pagevariantsprovider-and-externalizer}
 
-Wenn der Wert der `cq:variantDomain` -Eigenschaft eines `cq:siteVariant` Knoten nicht leer ist, wird die `PageVariantsProvider` -Dienst generiert absolute Links, wobei dieser Wert als konfigurierte Domäne für die `Externalizer` Dienst. Stellen Sie sicher, dass Sie den `Externalizer`-Service entsprechend Ihren Einstellungen konfigurieren.
+Wenn der Wert der `cq:variantDomain` -Eigenschaft eines `cq:siteVariant` -Knoten nicht leer ist, wird die `PageVariantsProvider` -Dienst generiert absolute Links, wobei dieser Wert als konfigurierte Domäne für die `Externalizer` -Dienst. Stellen Sie sicher, dass Sie den `Externalizer`-Service entsprechend Ihren Einstellungen konfigurieren.
 
 >[!NOTE]
 >
@@ -391,7 +391,7 @@ Weitere Informationen finden Sie unter [Benutzerdefinierte BrowserMap](#creating
 
 Wenn keiner der vorherigen Mechanismen eingesetzt wurde, um einen alternativen Standort für `BrowserMap`, dann Selektoren, die die Namen der `DeviceGroups` wird zum `URL`s: In diesem Fall sollten Sie Ihre eigenen Servlets bereitstellen, die die Anfragen verarbeiten.
 
-Zum Beispiel wird ein Gerät, das `www.example.com/index.html` durch BrowserMap als `smartphone` identifiziert, an `www.example.com/index.smartphone.html.` weitergeleitet.
+Beispiel: Ein Gerät durchsuchen `www.example.com/index.html` identifiziert als `smartphone` von BrowserMap wird an weitergeleitet. `www.example.com/index.smartphone.html.`
 
 ### Verwenden von BrowserMap auf Ihren Seiten {#using-browsermap-on-your-pages}
 
@@ -413,7 +413,7 @@ Außerdem müssen Sie die Methode `BrowserMap.forwardRequest()` in Ihrem `JavaSc
 >
 Weitere Informationen zur Integration der Client-Bibliothek finden Sie unter [Verwenden Client-seitiger HTML-Bibliotheken](/help/sites-developing/clientlibs.md).
 
-Nachdem Sie Ihre angepassten `BrowserMap` -Client-Bibliothek, schlägt Adobe den folgenden Ansatz vor:
+Nachdem Sie Ihre angepassten `BrowserMap` Client-Bibliothek, schlägt Adobe den folgenden Ansatz vor:
 
 1. Erstellen Sie eine Datei `browsermap.jsp` in Ihrem Programm.
 
@@ -556,7 +556,7 @@ Sie können einige Statistiken zur Anzahl der Anfragen erhalten, die von Mobilge
 So zeigen Sie die Statistiken an:
 
 1. Navigieren Sie zu **Instrumente** Konsole.
-1. Öffnen Sie die **Gerätestatistiken** Seite unten **Instrumente** > **Mobile**.
+1. Öffnen Sie die **Gerätestatistiken** Seite unten **Instrumente** > **Mobilnummer**.
 1. Klicken Sie auf den Link, um die Statistiken für ein bestimmtes Jahr, einen bestimmten Monat oder einen bestimmten Tag anzuzeigen.
 
 Die **Statistik** -Seite wie folgt aussieht:
@@ -569,15 +569,15 @@ Die Seite **Statistik** wird erstellt, wenn ein Mobilgerät zum ersten Mal auf A
 
 Wenn Sie einen Eintrag in der Statistik generieren müssen, können Sie wie folgt vorgehen:
 
-1. Verwenden Sie ein Mobilgerät oder einen Emulator (wie zum Beispiel https://chrspederick.com/work/user-agent-switcher/ in Firefox).
-1. Fordern Sie eine mobile Seite in der Autoreninstanz an, indem Sie den Authoring-Modus deaktivieren, z. B.:
+1. Verwenden Sie ein Mobilgerät oder einen Emulator (z. B. https://chrispederick.com/work/user-agent-switcher/ in Firefox).
+1. Fordern Sie eine mobile Seite in der Autoreninstanz an, indem Sie den Bearbeitungsmodus deaktivieren, z. B.:
    `https://localhost:4502/content/geometrixx_mobile/en/products.html?wcmmode=disabled`
 
 Die **Statistikseite** ist jetzt verfügbar.
 
 ### Unterstützen von Seiten-Caching für „Link an einen Freund senden“ {#supporting-page-caching-for-send-link-to-a-friend-links}
 
-Mobilseiten können im Dispatcher zwischengespeichert werden, da Seiten, die für eine Gerätegruppe gerendert werden, in der Seiten-URL durch die Gerätegruppenauswahl unterschieden werden, beispielsweise `/content/mobilepage.touch.html`. Eine Anfrage an eine mobile Seite ohne einen Selektor wird niemals zwischengespeichert, da in diesem Fall die Geräteerkennung arbeitet und schließlich zu der entsprechenden Gerätegruppe (oder „Nomatch“) umgeleitet wird. Eine mit einem Gerätegruppenselektor gerenderte mobile Seite wird vom Link-Rewriter verarbeitet, der alle Links auf der Seite so umschreibt, dass sie auch die Gerätegruppenauswahl enthält. Dadurch wird verhindert, dass bei jedem Klick auf eine bereits qualifizierte Seite die Gerätegruppenerkennung wiederholt wird.
+Mobilseiten können im Dispatcher zwischengespeichert werden, da für eine Gerätegruppe gerenderte Seiten in der Seiten-URL durch die Gerätegruppenauswahl unterschieden werden, beispielsweise `/content/mobilepage.touch.html`. Eine Anfrage an eine mobile Seite ohne einen Selektor wird niemals zwischengespeichert, da in diesem Fall die Geräteerkennung arbeitet und schließlich zu der entsprechenden Gerätegruppe (oder „Nomatch“) umgeleitet wird. Eine mit einem Gerätegruppenselektor gerenderte mobile Seite wird vom Link-Rewriter verarbeitet, der alle Links auf der Seite so umschreibt, dass sie auch die Gerätegruppenauswahl enthält. Dadurch wird verhindert, dass bei jedem Klick auf eine bereits qualifizierte Seite die Gerätegruppenerkennung wiederholt wird.
 
 Daher könnte das folgende Szenario eintreten:
 

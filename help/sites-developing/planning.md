@@ -1,19 +1,15 @@
 ---
 title: Planung
-seo-title: Planning
 description: Erfahren Sie, was Sie für die Planung Ihrer Adobe Experience Manager-Tests wissen müssen.
-seo-description: What you need to know to plan for your test
-uuid: 29b1127a-da85-46ed-98e7-1c983eb40cfe
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: 12268c43-93f9-42c1-8dd7-f17f9ae2219b
 exl-id: ed662279-0679-4ba3-b744-6649fb8dda17
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 56%
+source-wordcount: '975'
+ht-degree: 54%
 
 ---
 
@@ -37,7 +33,7 @@ Bevor Sie mit der eigentlichen Analyse und Definition von Tests beginnen, lesen 
 
 Es gibt viele Websites, Bücher und Kurse, die sich mit solchen Grundsätzen befassen, und deshalb werden sie in diesem Dokument nicht ausführlich behandelt.
 
-**Zu vermeidende Annahmen**: Die größte gängige Annahme ist die, dass Ihre Website täglich Millionen von Anfragen bedienen muss. Unter bestimmten Umständen mag dies wahr sein, kann aber nicht angenommen werden.
+**Zu vermeidende Annahmen** - Die größte Annahme ist, dass Ihre Website täglich Millionen von Anfragen bearbeiten muss. Unter bestimmten Umständen mag dies wahr sein, kann aber nicht angenommen werden.
 
 Zukünftige Werte können zwar nicht 100 % genau vorausgesagt werden, aber Sie erhalten einen guten Anhaltspunkt, indem Sie Ihre aktuelle Website und den Besucher-Traffic beobachten. Sie können dann Schätzungen abhängig von dem Faktor machen, mit dem Sie erwarten / hoffen, dass der Traffic zunehmen wird.
 

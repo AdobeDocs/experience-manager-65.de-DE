@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: page-authoring, introduction
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
 exl-id: b41aa7e5-1a5f-4e5e-be79-637d9f71ad72
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '412'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 92%
 
 ---
 
@@ -35,7 +35,7 @@ Der Inhalt Ihrer Website wird in einer Baumstruktur archiviert. Um eine Seite zu
 
 ### Erstellen einer neuen Seite {#creating-a-new-page}
 
-Vor der Bearbeitung müssen Sie [eine neue Seite erstellen](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#creating-a-new-page).
+Vor der Bearbeitung [Erstellen einer Seite](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#creating-a-new-page).
 
 ### Öffnen einer Seite {#opening-a-page}
 
@@ -43,7 +43,7 @@ Für viele Aktionen, z. B. die Bearbeitung, müssen Sie eine [Seite öffnen](/h
 
 ### Bearbeiten einer Seite {#editing-a-page}
 
-Unabhängig davon, ob Ihre Instanz bereits über vorhandene Seiten verfügt oder ob Sie gerade selbst eine neue Seite erstellt haben, können Sie [eine Seite bearbeiten](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md), indem Sie folgende Schritte befolgen:
+Unabhängig davon, ob Ihre Instanz bereits über vorhandene Seiten verfügt oder ob Sie selbst eine neue Seite erstellt haben, können Sie [Bearbeiten einer Seite](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) durch:
 
 * [Einfügen einer Komponente (Absatz)](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#inserting-a-component)
 * [Bearbeiten einer Komponente](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties)

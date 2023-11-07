@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2242'
-ht-degree: 89%
+ht-degree: 88%
 
 ---
 
@@ -115,7 +115,7 @@ Die nachstehende Tabelle enthält eine vollständige Liste der möglichen Instal
    <td><p>Acrobat Pro oder Acrobat Pro Extended (enthält Designer)</p> </td>
    <td><p>Ohne.<br /> 
 Die Workbench-Installation erkennt auf Ihrem Computer eine Instanz von Designer, die entweder mit Acrobat Pro oder Acrobat Pro Extended installiert wurde.<br />
-Verschiedene Versionen von Designer können parallel auf demselben System vorhanden sein – zum Beispiel Designer 6.4.x für Workbench 6.4 und 6.5.0.x für Workbench 6.5. Es ist nicht erforderlich, eine Version von Designer zu deinstallieren, die mit Acrobat 10 Pro, Acrobat 10 Pro Extended oder höher installiert wurde.
+Verschiedene Versionen von Designer können auf demselben System nebeneinander bestehen, z. B. Designer 6.4.x für Workbench 6.4 und Designer 6.5.0.x für Workbench 6.5. Es ist nicht erforderlich, die mit Acrobat 10 Pro oder Acrobat 10 Pro Extended oder höher installierte Version von Designer zu deinstallieren.
 <br /></p> </td>
   </tr>
   <tr>

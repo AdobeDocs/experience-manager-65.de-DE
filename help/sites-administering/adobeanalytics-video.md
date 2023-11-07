@@ -7,10 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 73%
+source-wordcount: '1745'
+ht-degree: 72%
 
 ---
 
@@ -28,7 +28,7 @@ Mit der folgenden Vorgehensweise können Sie ein Framework für das Videotrackin
 
 >[!NOTE]
 >
->Bei neuen Implementierung empfehlen wir, **nicht** die Legacy-Optionen für das Videotracking zu verwenden. Nutzen Sie stattdessen die **Milestones**-Methode.
+>Bei neuen Implementierung empfehlen wir, **nicht** die Legacy-Optionen für das Videotracking zu verwenden. Verwenden Sie die **Milestones** -Methode.
 
 ## Allgemeine Schritte {#common-steps}
 
@@ -376,7 +376,7 @@ Bei Nutzung der **Legacy Seconds**-Methode werden Adobe Analytics-Aufrufe alle N
 
    ![lseconds](assets/lseconds.png)
 
-   *Der Aufruf ähnelt dem obigen Legacy Milestones-Aufruf. Weitere Informationen finden Sie unter pev3 .**[sofern vorhanden](/help/sites-administering/adobeanalytics.md)**.*
+   *Der Aufruf ähnelt dem obigen Legacy Milestones-Aufruf. Siehe Informationen zu pev3 .**[sofern vorhanden](/help/sites-administering/adobeanalytics.md)**.*
 
 **In diesem Tutorial verwendete Referenzen:**
 

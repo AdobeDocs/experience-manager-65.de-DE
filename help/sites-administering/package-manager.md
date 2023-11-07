@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3570'
-ht-degree: 97%
+source-wordcount: '3568'
+ht-degree: 96%
 
 ---
 
@@ -275,7 +275,7 @@ Möglicherweise müssen Sie [das Paket neu aufbauen](#building-a-package), um se
 
 ### Neuverpacken eines Pakets {#rewrapping-a-package}
 
-Sobald ein Paket aufgebaut wurde, kann es neu verpackt werden. Beim Neuverpacken werden die Paketinformationen wie Miniaturansicht, Beschreibung usw. geändert, ohne dass der Inhalt des Pakets geändert wird.
+Sobald ein Paket aufgebaut wurde, kann es neu verpackt werden. Beim erneuten Umbrechen werden die Paketinformationen ohne Miniaturansicht, Beschreibung usw. geändert, ohne dass der Paketinhalt geändert wird.
 
 1. [Greifen Sie auf Package Manager zu.](#accessing)
 
@@ -581,7 +581,7 @@ AEM-Pakete können verwendet werden, um Inhalte über AEM-Umgebungen hinweg zu e
 
 [Softwareverteilung](https://downloads.experiencecloud.adobe.com) ist ein zentralisierter Dienst, der die Suche und den Download AEM Packages vereinfacht.
 
-Weitere Informationen finden Sie im Abschnitt [Dokumentation zur Softwareverteilung](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
+Weitere Informationen finden Sie unter [Dokumentation zur Softwareverteilung.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de)
 
 >[!NOTE]
 >

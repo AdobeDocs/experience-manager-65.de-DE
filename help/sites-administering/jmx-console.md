@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4950'
-ht-degree: 52%
+source-wordcount: '4962'
+ht-degree: 51%
 
 ---
 
@@ -448,7 +448,7 @@ Informationen zum CRX-Repository
   </tr>
   <tr>
    <td>option.unfiled.content.supported</td>
-   <td>Der Wert "true"bedeutet, dass das Repository nicht abgelegte Inhalte unterstützt. Nicht abgelegte Knoten sind nicht Teil der Repository-Hierarchie.</td>
+   <td>Der Wert "true"bedeutet, dass das Repository nicht abgelegten Inhalt unterstützt. Nicht abgelegte Knoten sind nicht Teil der Repository-Hierarchie.</td>
   </tr>
   <tr>
    <td>jcr.specification.name</td>
@@ -472,7 +472,7 @@ Informationen zum CRX-Repository
   </tr>
   <tr>
    <td>option.activities.supported</td>
-   <td>Der Wert „true“ bedeutet, dass das Repository Aktivitäten unterstützt. Aktivitäten sind eine Reihe von Änderungen, die in einem Arbeitsbereich vorgenommen werden und in einem anderen Arbeitsbereich zusammengeführt werden.</td>
+   <td>Der Wert "true"bedeutet, dass das Repository Aktivitäten unterstützt. Aktivitäten sind eine Reihe von Änderungen, die in einem Arbeitsbereich vorgenommen werden und in einem anderen Arbeitsbereich zusammengeführt werden.</td>
   </tr>
   <tr>
    <td>node.type.management.multivalued.properties.supported</td>
@@ -894,7 +894,7 @@ Die Hauptseite der JMX-Konsole enthält eine Tabelle der Dienste. Jede Zeile in 
 
 ## Verwenden externer JMX-Anwendungen zur Überwachung {#using-external-jmx-applications-for-monitoring}
 
-CRX ermöglicht es externen Anwendungen, mit Managed Beans (MBeans) über [Java Management Extensions (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Mit allgemeinen Konsolen wie [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) oder Domain-spezifischen Überwachungsanwendungen können Sie CRX-Konfigurationen und -Eigenschaften abrufen und festlegen sowie die Leistung und Ressourcenauslastung überwachen.
+CRX ermöglicht es externen Anwendungen, mit Managed Beans (MBeans) über [Java Management Extensions (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Verwenden generischer Konsolen wie [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) für domänenspezifische Überwachungsanwendungen, ermöglicht das Abrufen und Festlegen von CRX-Konfigurationen und -Eigenschaften sowie die Überwachung der Leistung und Ressourcennutzung.
 
 ### Verwenden von JConsole zur Verbindung mit CRX {#using-jconsole-to-connect-to-crx}
 
@@ -944,7 +944,7 @@ Nach dem Herstellen einer Verbindung zum Schnellstartprozess stellt JConsole ein
 
 ![screen_shot_2012-03-26at115056am](assets/screen_shot_2012-03-26at115056am.png)
 
-Um auf die internen Überwachungs- und Konfigurationsoptionen von CRX zuzugreifen, gehen Sie zur Registerkarte MBeans und wählen Sie in der hierarchischen Inhaltsstruktur auf der linken Seite den Bereich Attribute oder Vorgänge aus, den Sie interessieren. Beispiel: Abschnitt com.adobe.granite/Repository/Operations .
+Um auf die internen Überwachungs- und Konfigurationsoptionen von CRX zuzugreifen, gehen Sie zur Registerkarte MBeans und wählen Sie in der hierarchischen Inhaltsstruktur auf der linken Seite den Bereich Attribute oder Vorgänge aus, den Sie interessieren. Beispielsweise den Abschnitt com.adobe.granite/Repository/Operations .
 
 Wählen Sie in diesem Abschnitt das gewünschte Attribut oder den gewünschten Vorgang im linken Bereich aus.
 

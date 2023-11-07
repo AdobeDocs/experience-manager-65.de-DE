@@ -2,10 +2,10 @@
 title: Häufig gestellte Fragen zu AEM
 description: Verwenden Sie diese häufig gestellten Fragen, um allgemeine Workflows oder Probleme in AEM zu verstehen, zu konfigurieren und zu beheben.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: f7bfbfab9fb9ec00304f2889735c70be924cc217
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 57%
+source-wordcount: '1085'
+ht-degree: 48%
 
 ---
 
@@ -17,7 +17,7 @@ Erfahren Sie mehr über die Antworten auf einige AEM Probleme bei der Fehlerbehe
 
 ### Wie konfiguriere ich eine Binary-Less-Verteilung? {#how-do-i-configure-binary-less-distribution}
 
-Eine Binary-Less-Verteilung wird für Bereitstellungen über einen freigegebenen Datenspeicher unterstützt und beinhaltet die Verwendung von Agenten, die den Vault-basierten Package Builder „Distribution Package Exporter“ (werkseitige PID: `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`) nutzen.
+Eine Binärdatei-lose Verteilung wird für Bereitstellungen über einen freigegebenen Datenspeicher unterstützt und beinhaltet Agenten, die den Vault-basierten Package Exporter von Verteilungspaketen verwenden (werkseitige PID: `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`) Package Builder.
 
 Bei aktiviertem Binary-Less-Modus enthalten die verteilten Inhaltspakete Verweise auf Binärdaten und nicht die Binärdaten selbst.
 
@@ -61,13 +61,13 @@ Adobe Experience Manager (AEM) 6.4 ist im Lieferumfang des SSL-Assistenten entha
 
 Informationen zum Aktivieren von SSL standardmäßig finden Sie unter [SSL standardmäßig](/help/sites-administering/ssl-by-default.md).
 
-#### Welche Architektur wird empfohlen, wenn AEM Content Services von einer mobilen App, idealerweise React Native, verwendet werden? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
+#### Welche Architektur wird empfohlen, wenn AEM Content Services von einer mobilen App verwendet werden, idealerweise React Native? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
 
 Die Content Services basieren auf Sling-Modellen und AEM-Entwicklerinnen und -Entwickler müssen ein Sling-Modell-POJO für jede zu exportierende Komponente bereitstellen.
 
 Erläuterungen dazu, wie AEM Content Services von einer React-Anwendung genutzt werden, erhalten Sie im Tutorial [Erste Schritte mit AEM Content Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de).
 
-Wenn Entwicklerinnen und Entwickler zudem eine Komponentenstruktur exportieren möchten, können sie auch die Schnittstellen `ComponentExporter` und `ContainerExporter` implementieren sowie mithilfe von `ModelFactory` die untergeordneten Komponenten durchlaufen und ihre Modelldarstellung zurückgeben. Weitere Informationen dazu finden Sie in den nachfolgenden Ressourcen:
+Wenn die Entwickler außerdem eine Komponentenstruktur exportieren möchten, können sie auch die `ComponentExporter` und `ContainerExporter` -Schnittstellen und verwenden Sie `ModelFactory` um die untergeordneten Komponenten zu iterieren und ihre Modelldarstellung zurückzugeben. Weitere Informationen dazu finden Sie in den nachfolgenden Ressourcen:
 
 [1] [Adobe-Marketing-Cloud/aem-core-wcm-components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
 
@@ -79,7 +79,7 @@ Sie können die Erfassung von Nutzungsstatistiken über die Touch-Benutzeroberfl
 
 #### Gibt es eine gute Ressource, die die wichtigsten Funktionen für die Aktualisierung auf AEM 6.4 hervorhebt? {#is-there-a-good-resource-that-highlights-the-key-features-for-upgrading-to-aem}
 
-Lesen Sie die Informationen unter [Verstehen der Gründe für die Aktualisierung auf AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html). Dort finden Sie eine Übersicht über die wichtigsten Funktionen für den Fall, dass Sie eine Aktualisierung auf die neueste Version von Adobe Experience Manager in Betracht ziehen.
+Siehe [Gründe für die Aktualisierung AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) beschreibt die allgemeine Aufschlüsselung der wichtigsten Funktionen für Kunden, die ein Upgrade auf die neueste Version von Adobe Experience Manager in Erwägung ziehen.
 
 ## Assets {#assets}
 
@@ -110,11 +110,11 @@ AEM bietet verschiedene Methoden zum Anpassen von Konsolen und der Seitenbearbei
 
 Für Coral3 wurde ein neuer Satz Sling-Komponenten der Granite-Benutzeroberflächen-Foundation erstellt, die sich unter [/libs/granite/ui/components/coral/foundation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) Es gibt einen Satz für CoralUI 2-basierte Komponenten und einen Satz für CoralUI 3-basierte Komponenten. Der neue Satz ist nicht nur ein Copy &amp; Paste des alten Sets, sondern wird bereinigt (z. B. Straffung, Entfernung veralteter Funktionen). Daher wird empfohlen, dass eine Seite nur einen CoralUI 3-basierten oder CoralUI 2-basierten Satz verwendet.
 
-Weitere Informationen finden Sie im [Migrationsleitfaden für CoralUI 3-basierte Komponenten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
+Weitere Informationen finden Sie unter [Migrationshandbuch für CoralUI 3-basiert](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
 
 #### Wie kann die Suchkomponente in AEM Assets angepasst werden? {#how-to-customize-the-search-component-in-aem-assets}
 
-Weitere Informationen zur Suchsteigerung/zum Ranking und zu weiteren Implementierungsinformationen finden Sie unter [Implementierungshandbuch für einfache Suchen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=de).
+Weitere Informationen zur Suchsteigerung/Rangfolge und weitere Implementierungsinformationen finden Sie unter [Implementierungshandbuch für einfache Suchen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=de).
 
 Bei der Implementierung der einfachen Suche handelt es sich um die Materialien vom Summit Lab „AEM Search Demystified“ von 2017.
 

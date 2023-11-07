@@ -1,15 +1,13 @@
 ---
 title: Benutzerdefinierte eigenständige Installation
-seo-title: Custom Standalone Install
 description: Erfahren Sie mehr über die verfügbaren Optionen beim Installieren einer eigenständigen AEM.
-seo-description: Learn about the options available when installing a standalone AEM instance.
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1616'
-ht-degree: 59%
+source-wordcount: '1618'
+ht-degree: 55%
 
 ---
 
@@ -45,7 +43,7 @@ Beachten Sie beim Umbenennen der Quickstart-JAR-Datei die folgenden Regeln:
 
 ### Überlegungen zu Java 11 {#java-considerations}
 
-Wenn Sie Oracle Java 11 (oder generell neuere Java-Versionen als 8) verwenden, müssen beim Starten von AEM zusätzliche Schalter zur Befehlszeile hinzugefügt werden.
+Wenn Sie Oracle Java 11 (oder allgemein Java-Versionen unter 8) ausführen, müssen beim Starten von AEM zusätzliche Switches zu Ihrer Befehlszeile hinzugefügt werden.
 
 * Folgendes - `-add-opens` -Switches müssen hinzugefügt werden, um entsprechende Reflektionszugriffswarnungen in der `stdout.log`
 
@@ -67,7 +65,7 @@ Wenn Sie eine Instanz ausführen, die von AEM 6.3 aktualisiert wurde, stellen Si
 
 ## Ausführungsmodi {#run-modes}
 
-**Ausführungsmodi** Sie können Ihre AEM-Instanz für einen bestimmten Zweck anpassen, z. B. für Autor oder Veröffentlichung, Test, Entwicklung, Intranet usw. Mit diesen Modi können Sie auch die Verwendung von Beispielinhalten steuern. Diese Beispielinhalte werden vor dem Erstellen von Quickstart definiert und können Pakete, Konfigurationen usw. enthalten. Dies kann vor allem für produktionsbereite Installationen nützlich sein, wenn Sie möchten, dass Ihre Installation schlank und frei von Beispielinhalten ist. Weitere Informationen:
+**Ausführungsmodi** Sie können Ihre AEM-Instanz für einen bestimmten Zweck anpassen, z. B. für Autoren- oder Veröffentlichungsinstanz, Test, Entwicklung, Intranet usw. Mit diesen Modi können Sie auch die Verwendung von Beispielinhalten steuern. Dieser Beispielinhalt wird vor der Erstellung des Schnellstarts definiert und kann Pakete, Konfigurationen usw. enthalten. Dies kann besonders für produktionsbereite Installationen nützlich sein, wenn Sie Ihre Installation schlank und ohne Beispielinhalt durchführen möchten. Weitere Informationen:
 
 * [Ausführungsmodi](/help/sites-deploying/configure-runmodes.md)
 
@@ -143,7 +141,7 @@ Deinstallieren Sie den Dienst, indem Sie entweder in der Systemsteuerung unter *
 
 ## Neudefinieren des Speicherorts für das temporäre Arbeitsverzeichnis {#redefining-the-location-of-the-temporary-work-directory}
 
-Der Standardpfad für den temporären Ordner des Java-Computers ist `/tmp`. AEM greift ebenfalls auf diesen Ordner zurück, etwa beim Erstellen von Paketen.
+Der Standardpfad für den temporären Ordner des Java-Computers ist `/tmp`. AEM verwendet diesen Ordner beispielsweise auch beim Erstellen von Paketen.
 
 Wenn Sie den Pfad des temporären Ordners ändern möchten (wenn Sie zum Beispiel ein Verzeichnis mit mehr freiem Speicherplatz benötigen), definieren Sie einen *`<new-tmp-path>`*, indem Sie den JVM-Parameter:
 

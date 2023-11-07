@@ -2,10 +2,10 @@
 title: Wie kann der Service „execute script“ aus der Workbench von AEM Forms on JEE zum Erstellen von XML-Daten verwendet werden?
 description: Verwenden des Service „execute script“ aus der Workbench von AEM Forms on JEE zum Erstellen von XML-Daten
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 68%
+source-wordcount: '992'
+ht-degree: 69%
 
 ---
 
@@ -36,7 +36,7 @@ Die allgemeine Anwendungs- und Prozesserstellung ist für dieses Tutorial nicht 
 
 Nachdem der Prozess mit der definierten Aktivität „Execute Script“ erstellt wurde, kann diesem Prozess ein Skript hinzugefügt werden. So fügen Sie diesem Prozess ein Skript hinzu:
 
-1. Navigieren Sie zur Palette [!UICONTROL Prozesseigenschaften]. Erweitern Sie in dieser Palette den [!UICONTROL Eingabe] und klicken Sie auf das Symbol &quot;...&quot;.
+1. Navigieren Sie zur Palette [!UICONTROL Prozesseigenschaften]. Erweitern Sie in dieser Palette den [!UICONTROL Eingabe] und klicken Sie auf das Symbol &quot;...&quot;
 
 1. Schreiben Sie Ihr Skript in das angezeigte Textfeld. Wenn das Skript geschrieben wurde, drücken Sie OK (siehe Abbildung unten).
    ![Execute Script](assets/execute-script.jpg)
@@ -47,7 +47,7 @@ Nachdem ein Prozess, der den Service „Execute Script“ enthält, erstellt wur
 
 **Über die Technologie des Service „Execute Script“**
 
-Um zu erfahren, welche Fähigkeiten und Einschränkungen der Execute Script-Dienst-Funktion aufweisen, muss man die technologischen Grundlagen des Dienstes kennen. AEM Forms on JEE verwendet den Parser Apache Xerces Document Object Model (DOM), um XML-Variablen in Prozessen zu erstellen und zu speichern. Xerces ist eine Java™-Implementierung der Dokumentobjektmodellspezifikation des W3C-Consortiums. definiert [here](https://dom.spec.whatwg.org/). Die DOM-Spezifikation ist ein Standardverfahren zur Bearbeitung von XML, das seit 1998 existiert. Die Java™-Implementierung von Xerces, Xerces-J, unterstützt DOM Level 2 Version 1.0.
+Um zu erfahren, welche Fähigkeiten und Einschränkungen der Execute Script-Dienst-Funktion aufweisen, muss man die technologischen Grundlagen des Dienstes kennen. AEM Forms on JEE verwendet den Parser Apache Xerces Document Object Model (DOM), um XML-Variablen in Prozessen zu erstellen und zu speichern. Xerces ist eine Java™-Implementierung der Dokumentobjektmodellspezifikation des W3C-Consortiums; definiert [here](https://dom.spec.whatwg.org/). Die DOM-Spezifikation ist ein Standardverfahren zur Bearbeitung von XML, das seit 1998 existiert. Die Java™-Implementierung von Xerces, Xerces-J, unterstützt DOM Level 2 Version 1.0.
 
 Die zum Speichern von XML-Variablen verwendeten Java™-Klassen sind:
 
@@ -105,7 +105,7 @@ Das Ergebnis dieses einfachen Skripts ist ein neues XML-Dokument mit einem Varia
 
 **Verwenden einer iterativen Schleife zum Hinzufügen von Knoten zur XML-Datei**
 
-Knoten können auch innerhalb des Prozesses zu einer vorhandenen XML-Variablen hinzugefügt werden. Die Variable &quot;node&quot;enthält das soeben erstellte XML-Objekt.
+Knoten können auch innerhalb des Prozesses zu einer vorhandenen XML-Variablen hinzugefügt werden. Die Variable &quot;node&quot;enthält das erstellte XML-Objekt.
 
 ```xml
 Document document = patExecContext.getProcessDataValue("/process_data/node");

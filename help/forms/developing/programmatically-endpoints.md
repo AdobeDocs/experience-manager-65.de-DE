@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '10801'
-ht-degree: 99%
+source-wordcount: '10790'
+ht-degree: 98%
 
 ---
 
@@ -108,7 +108,7 @@ Nachdem Sie die Attribute für den EJB-Endpunkt festgelegt haben, können Sie ei
 
 **Aktivieren des Endpunkts**
 
-Nachdem Sie einen neuen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Nachdem Sie den Endpunkt aktiviert haben, kann er zum Aufrufen des Services verwendet werden. Nachdem Sie den Endpunkt aktiviert haben, können Sie ihn in der Administration-Console anzeigen.
+Nachdem Sie einen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Nachdem Sie den Endpunkt aktiviert haben, kann er zum Aufrufen des Services verwendet werden. Nachdem Sie den Endpunkt aktiviert haben, können Sie ihn in der Administration-Console anzeigen.
 
 **Siehe auch**
 
@@ -213,7 +213,7 @@ Nachdem Sie die Attribute für den SOAP-Endpunkt festgelegt haben, können Sie e
 
 **Aktivieren des Endpunkts**
 
-Nachdem Sie einen neuen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Wenn der Endpunkt aktiviert ist, kann er zum Aufrufen des Service verwendet werden. Nachdem Sie den Endpunkt aktiviert haben, können Sie ihn in der Administration-Console anzeigen.
+Nachdem Sie einen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Wenn der Endpunkt aktiviert ist, kann er zum Aufrufen des Service verwendet werden. Nachdem Sie den Endpunkt aktiviert haben, können Sie ihn in der Administration-Console anzeigen.
 
 **Siehe auch**
 
@@ -319,7 +319,7 @@ Geben Sie die folgenden Werte an, um einen Endpunkt vom Typ „Überwachter Ordn
 
 **Angeben von Konfigurationswerten**
 
-Sie müssen Konfigurationswerte für einen Endpunkt vom Typ „Überwachter Ordner“ angeben, wenn Sie einem Service programmgesteuert einen Endpunkt vom Typ „Überwachter Ordner“ hinzufügen. Diese Konfigurationswerte werden von einem Administrator festgelegt, wenn ein Endpunkt vom Typ „Überwachter Ordner“ mithilfe von Administration Console hinzugefügt wird.
+Geben Sie Konfigurationswerte für einen Endpunkt des Typs &quot;überwachter Ordner&quot;an, wenn Sie einem Dienst programmgesteuert einen Endpunkt des Typs &quot;überwachter Ordner&quot;hinzufügen. Diese Konfigurationswerte werden von einem Administrator festgelegt, wenn ein Endpunkt vom Typ „Überwachter Ordner“ mithilfe von Administration Console hinzugefügt wird.
 
 Die folgende Liste gibt Konfigurationswerte an, die festgelegt werden, wenn einem Service programmgesteuert ein Endpunkt vom Typ „Überwachter Ordner“ hinzugefügt wird:
 
@@ -552,7 +552,7 @@ Geben Sie die folgenden Werte an, um einen E-Mail-Endpunkt für einen Service zu
 
 **Angeben von Konfigurationswerten**
 
-Beim programmgesteuerten Hinzufügen eines E-Mail-Endpunkts zu einem Service müssen Sie Konfigurationswerte für einen E-Mail-Endpunkt angeben. Diese Konfigurationswerte werden von einem Administrator festgelegt, wenn ein E-Mail-Endpunkt über Administration Console hinzugefügt wird.
+Geben Sie Konfigurationswerte für einen E-Mail-Endpunkt an, wenn Sie einem Dienst programmgesteuert einen E-Mail-Endpunkt hinzufügen. Diese Konfigurationswerte werden von einem Administrator festgelegt, wenn ein E-Mail-Endpunkt über Administration Console hinzugefügt wird.
 
 >[!NOTE]
 >
@@ -811,7 +811,7 @@ Nachdem Sie die Remoting-Endpunktattribute festgelegt haben, können Sie einen R
 
 **Aktivieren des Endpunkts**
 
-Nachdem Sie einen neuen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Wenn ein Remoting-Endpunkt aktiviert ist, kann ein Flex-Client damit den Service aufzurufen.
+Nachdem Sie einen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Wenn ein Remoting-Endpunkt aktiviert ist, kann ein Flex-Client damit den Service aufzurufen.
 
 **Siehe auch**
 
@@ -899,7 +899,7 @@ Bevor Sie einen TaskManager-Endpunkt programmgesteuert hinzufügen können, müs
 
 **Erstellen einer Kategorie für den Endpunkt**
 
-Kategorien werden verwendet, um Services in Workspace zu organisieren. Das heißt, ein Workspace-Benutzer kann einen Service aufrufen, der einen TaskManager-Endpunkt hat, indem er eine Kategorie in Workspace auswählt. Beim Erstellen eines TaskManager-Endpunkts können Sie entweder auf eine vorhandene Kategorie verweisen oder programmgesteuert eine neue Kategorie erstellen.
+Kategorien werden verwendet, um Services in Workspace zu organisieren. Das heißt, ein Workspace-Benutzer kann einen Service aufrufen, der einen TaskManager-Endpunkt hat, indem er eine Kategorie in Workspace auswählt. Beim Erstellen eines TaskManager-Endpunkts können Sie entweder auf eine vorhandene Kategorie verweisen oder programmgesteuert eine Kategorie erstellen.
 
 >[!NOTE]
 >
@@ -922,7 +922,7 @@ Nachdem Sie die Attribute eines TaskManager-Endpunkts festgelegt haben, können 
 
 **Aktivieren des Endpunkts**
 
-Nachdem Sie einen neuen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Wenn der Endpunkt aktiviert ist, kann er verwendet werden, um den Service von Workspace aus aufzurufen. Nachdem Sie den Endpunkt aktiviert haben, können Sie ihn in der Verwaltungskonsole anzeigen.
+Nachdem Sie einen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Wenn der Endpunkt aktiviert ist, kann er verwendet werden, um den Service von Workspace aus aufzurufen. Nachdem Sie den Endpunkt aktiviert haben, können Sie ihn in der Verwaltungskonsole anzeigen.
 
 **Siehe auch**
 
@@ -1034,7 +1034,7 @@ Geben Sie beim Ändern eines Endpunkts neue Konfigurationswerte an. Um beispiels
 
 >[!NOTE]
 >
->Sie können den Service, der vom Endpunkt aufgerufen wird, nicht ändern. Wenn Sie versuchen, den Service zu ändern, wird eine Ausnahme ausgelöst. Um den mit einem bestimmten Endpunkt verknüpften Service zu ändern, entfernen Sie den Endpunkt und erstellen Sie einen neuen. (Siehe [Entfernen von Endpunkten](programmatically-endpoints.md#removing-endpoints).)
+>Sie können den Service, der vom Endpunkt aufgerufen wird, nicht ändern. Wenn Sie versuchen, den Service zu ändern, wird eine Ausnahme ausgelöst. Um den mit einem bestimmten Endpunkt verknüpften Dienst zu ändern, entfernen Sie den Endpunkt und erstellen Sie einen Endpunkt. (Siehe [Entfernen von Endpunkten](programmatically-endpoints.md#removing-endpoints).)
 
 **Siehe auch**
 
@@ -1128,7 +1128,7 @@ Sie können einen Endpunkt abrufen, indem Sie eine Liste von Endpunkten abrufen.
 
 **Entfernen des Endpunkts**
 
-Nachdem Sie einen neuen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Wenn der Endpunkt aktiviert ist, kann er zum Aufrufen des Service verwendet werden. Nachdem Sie den Endpunkt aktiviert haben, können Sie ihn in der Verwaltungskonsole anzeigen.
+Nachdem Sie einen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Wenn der Endpunkt aktiviert ist, kann er zum Aufrufen des Service verwendet werden. Nachdem Sie den Endpunkt aktiviert haben, können Sie ihn in der Verwaltungskonsole anzeigen.
 
 **Siehe auch**
 

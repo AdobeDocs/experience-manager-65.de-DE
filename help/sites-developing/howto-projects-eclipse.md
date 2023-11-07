@@ -10,10 +10,10 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aa58cfb8-ec15-4698-a8f0-97683b0de51c
 exl-id: 9d421599-0417-4329-a528-9cda4e3716f5
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 66%
+source-wordcount: '434'
+ht-degree: 62%
 
 ---
 
@@ -52,7 +52,7 @@ Richten Sie Ihr Projekt anschließend wie in [So erstellen Sie AEM-Projekte mit 
 
 ## Vorbereiten der JSP-Unterstützung für Eclipse {#prepare-jsp-support-for-eclipse}
 
-Eclipse kann auch die Arbeit mit JSP unterstützen, z. B.
+Eclipse kann auch die Arbeit mit JSP unterstützen, beispielsweise
 
 * automatische Vervollständigung von Tag-Bibliotheken
 * Eclipse-Präsenz von durch &lt;cq:defineObjects /> und &lt;sling:defineObjects /> definierten Objekten
@@ -133,4 +133,4 @@ Damit dies funktioniert:
 
    >[!NOTE]
    >
-   >Wenn Sie `/libs/foundation/global.jsp` oder andere JSPs in `/libs` einschließen, müssen Sie diese in Ihr Projekt kopieren, damit Eclipse sie auflösen kann. Zudem müssen Sie darauf achten, dass sie nicht von Maven in Ihr Inhaltspaket mit eingeschlossen werden. Weitere Informationen finden Sie unter [So erstellen Sie AEM-Projekte mit Apache Maven](/help/sites-developing/ht-projects-maven.md).
+   >Wenn Sie `/libs/foundation/global.jsp` oder anderen JSPs in `/libs`müssen Sie dies in Ihr Projekt kopieren, damit Eclipse die Einbindung auflösen kann. Zudem müssen Sie darauf achten, dass sie nicht von Maven in Ihr Inhaltspaket mit eingeschlossen werden. Weitere Informationen finden Sie unter [So erstellen Sie AEM-Projekte mit Apache Maven](/help/sites-developing/ht-projects-maven.md).

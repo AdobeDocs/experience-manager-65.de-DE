@@ -7,9 +7,9 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4913'
+source-wordcount: '4907'
 ht-degree: 62%
 
 ---
@@ -26,10 +26,10 @@ In diesem Abschnitt werden zentrale Konzepte und Schwierigkeiten erläutert. Er 
 
 ### Planung {#planning}
 
-Bevor Sie mit der Konfiguration oder Codierung Ihrer Komponente beginnen, sollten Sie Folgendes fragen:
+Bevor Sie beginnen, Ihre Komponente zu konfigurieren oder zu kodieren, sollten Sie Folgendes fragen:
 
 * Was genau soll die neue Komponente tun?
-   * Eine klare Spezifikation hilft in allen Phasen der Entwicklung, des Testens und der Übergabe. Details können sich im Laufe der Zeit ändern, woraufhin die Spezifikation jedoch aktualisiert werden kann (Änderungen sollten jedoch ebenso dokumentiert werden).
+   * Eine klare Spezifikation hilft in allen Phasen der Entwicklung, Tests und Übergabe. Details können sich im Laufe der Zeit ändern, woraufhin die Spezifikation jedoch aktualisiert werden kann (Änderungen sollten jedoch ebenso dokumentiert werden).
 * Müssen Sie die Komponente komplett neu entwickeln oder können Sie die Grundlagen von einer vorhandenen Komponente übernehmen?
    * Sie müssen das Rad nicht neu erfinden.
    * Es gibt mehrere Mechanismen, die von AEM bereitgestellt werden, mit denen Sie Details von einer anderen Komponentendefinition erben und erweitern können, einschließlich Überschreiben, Überlagerung und [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md).
@@ -38,7 +38,7 @@ Bevor Sie mit der Konfiguration oder Codierung Ihrer Komponente beginnen, sollte
 * Benötigt Ihre Komponente eine CSS-Formatierung?
    * Eine CSS-Formatierung sollte getrennt von den Komponentendefinitionen aufbewahrt werden. Legen Sie Konventionen für die Benennung der HTML-Elemente fest, damit Sie sie über externe CSS-Dateien modifizieren können.
 * Welche Sicherheitsaspekte sollte ich beachten?
-   * Siehe [Sicherheits-Checkliste - Best Practices für die Entwicklung](/help/sites-administering/security-checklist.md#development-best-practices) für weitere Details.
+   * Siehe [Sicherheitscheckliste - Best Practices für die Entwicklung](/help/sites-administering/security-checklist.md#development-best-practices) für weitere Details.
 
 ### Touch-optimierte und klassische Benutzeroberfläche {#touch-enabled-vs-classic-ui}
 
@@ -95,7 +95,7 @@ Die Komponenten, die Inhalte rendern, müssen auf derselben AEM Instanz bereitge
 Verwenden Sie die folgenden Tools, um Ihre Komponenten in die Veröffentlichungsinstanz zu verschieben:
 
 * [Mit Package Manager](/help/sites-administering/package-manager.md) können Sie Ihre Komponenten zu einem Paket hinzufügen und in eine andere AEM-Instanz verschieben.
-* [Verwenden des Replikations-Tools Tree aktivieren](/help/sites-authoring/publishing-pages.md#manage-publication) um die Komponenten zu replizieren.
+* [Verwenden des Replikations-Tools Tree aktivieren](/help/sites-authoring/publishing-pages.md#manage-publication) , um die Komponenten zu replizieren.
 
 >[!NOTE]
 >
@@ -114,7 +114,7 @@ Verwenden Sie die folgenden Tools, um Ihre Komponenten in die Veröffentlichungs
    * Das Absatzsystem ist ein wichtiger Teil einer Website, da es eine Liste von Absätzen verwaltet. Sie wird verwendet, um die einzelnen Komponenten zu speichern und zu strukturieren, die den tatsächlichen Inhalt enthalten.
    * Sie können Absätze im Absatzsystem erstellen, verschieben, kopieren und löschen.
    * Sie können auch die Komponenten auswählen, die in einem bestimmten Absatzsystem verwendet werden können.
-   * In einer Standardinstanz stehen diverse Absatzsysteme zur Verfügung (z. B `parsys`, ` [responsivegrid](/help/sites-authoring/responsive-layout.md)`).
+   * In einer Standardinstanz stehen diverse Absatzsysteme zur Verfügung (z. B, `parsys`, ` [responsivegrid](/help/sites-authoring/responsive-layout.md)`).
 
 ## Struktur {#structure}
 
@@ -157,7 +157,7 @@ Die Definition einer Komponente lässt sich wie folgt aufschlüsseln:
 
    * JCR-Eigenschaften:
 
-     eine Liste der jcr-Eigenschaften; Diese sind variabel und einige können optional sein, obwohl die grundlegende Struktur eines Komponentenknotens, seiner Eigenschaften und Unterknoten durch die Variable `cq:Component` Definition
+     Eine Liste von jcr-Eigenschaften. Diese sind variabel und einige können optional sein, obwohl die grundlegende Struktur eines Komponentenknotens, seiner Eigenschaften und Unterknoten durch die Variable `cq:Component` Definition
 
    * Ressourcen:
 
@@ -210,12 +210,12 @@ Das Symbol oder die Abkürzung für die Komponente wird mit JCR-Eigenschaften de
 1. `abbreviation` – Zeichenfolgeneigenschaft, die die Abkürzung des Komponentennamens im Komponenten-Browser anpasst.
    * Die Abkürzung sollte auf zwei Zeichen beschränkt sein.
    * Wenn Sie eine leere Zeichenfolge angeben, wird die Abkürzung aus den ersten beiden Zeichen der `jcr:title` -Eigenschaft.
-      * Beispiel: „Gr“ für „Grafik“.
-      * Der lokalisierte Titel wird verwendet, um die Abkürzung zu erstellen.
+      * Beispiel: „Gr“ für „Grafik“
+      * Zum Erstellen der Abkürzung wird der lokalisierte Titel verwendet.
    * Die Abkürzung wird nur übersetzt, wenn die Komponente die Eigenschaft `abbreviation_commentI18n` aufweist, die dann als Anweisung für eine Übersetzung genutzt wird.
 1. `cq:icon.png` oder `cq:icon.svg` – Symbol für diese Komponente, das im Komponenten-Browser angezeigt wird.
    * Symbole von Standardkomponenten haben eine Größe von 20 x 20 Pixeln.
-      * Größere Symbole werden (clientseitig) herunterskaliert.
+      * Größere Symbole werden (Client-seitig) herunterskaliert.
    * Die empfohlene Farbe ist rgb(112, 112, 112) > #707070.
    * Der Hintergrund von Symbolen von Standardkomponenten ist transparent.
    * Es werden nur `.png`- und `.svg`-Dateien unterstützt.
@@ -316,7 +316,7 @@ Eine Komponente ist ein Knoten des Typs `cq:Component` mit den folgenden Eigensc
   <tr>
    <td><code>cq:childEditConfig</code></td>
    <td><code>cq:EditConfig</code></td>
-   <td>Wenn es sich bei der Komponente um einen Container handelt, z. B. ein Absatzsystem, wird die Bearbeitungskonfiguration der untergeordneten Knoten gesteuert.<br /> </td>
+   <td>Wenn die Komponente ein Container ist, z. B. ein Absatzsystem, wird die Bearbeitungskonfiguration der untergeordneten Knoten gesteuert.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:editConfig</code></td>
@@ -336,12 +336,12 @@ Eine Komponente ist ein Knoten des Typs `cq:Component` mit den folgenden Eigensc
   <tr>
    <td><code>cq:template</code></td>
    <td><code>nt:unstructured</code></td>
-   <td>Wenn dieser Knoten gefunden wird, wird er als Inhaltsvorlage verwendet, wenn die Komponente vom Komponenten-Browser oder -Sidekick hinzugefügt wird.</td>
+   <td>Wenn dieser Knoten gefunden wird, wird er als Inhaltsvorlage verwendet, wenn die Komponente vom Komponenten-Browser oder Sidekick hinzugefügt wird.</td>
   </tr>
   <tr>
    <td><code>cq:templatePath</code></td>
    <td><code>String</code></td>
-   <td>Pfad zu einem Knoten, der als Inhaltsvorlage verwendet werden soll, wenn die Komponente über den Komponenten-Browser oder -Sidekick hinzugefügt wird. Dies muss ein absoluter Pfad sein, nicht relativ zum Komponentenknoten.<br /> Wenn Sie keine bereits an anderer Stelle verfügbaren Inhalte wiederverwenden möchten, ist dies nicht erforderlich und <code>cq:template</code> ausreichend (siehe unten).</td>
+   <td>Pfad zu einem Knoten, der als Inhaltsvorlage verwendet werden soll, wenn die Komponente vom Komponenten-Browser oder Sidekick hinzugefügt wird. Dies muss ein absoluter Pfad sein, nicht relativ zum Komponentenknoten.<br /> Wenn Sie keine bereits an anderer Stelle verfügbaren Inhalte wiederverwenden möchten, ist dies nicht erforderlich und <code>cq:template</code> ausreichend (siehe unten).</td>
   </tr>
   <tr>
    <td><code>jcr:created</code></td>
@@ -366,7 +366,7 @@ Eine Komponente ist ein Knoten des Typs `cq:Component` mit den folgenden Eigensc
   <tr>
    <td><code>virtual</code></td>
    <td><code>sling:Folder</code></td>
-   <td>Aktiviert das Erstellen von virtuellen Komponenten. Ein Beispiel hierfür ist die Kontakt-Komponente unter:<br /> <code>/libs/foundation/components/profile/form/contact</code></td>
+   <td>Aktiviert das Erstellen von virtuellen Komponenten. Ein Beispiel finden Sie in der Kontaktkomponente unter:<br /> <code>/libs/foundation/components/profile/form/contact</code></td>
   </tr>
   <tr>
    <td><code>&lt;breadcrumb.jsp&gt;</code></td>
@@ -381,7 +381,7 @@ Eine Komponente ist ein Knoten des Typs `cq:Component` mit den folgenden Eigensc
   <tr>
    <td><code>thumbnail.png</code></td>
    <td><code>nt:file</code></td>
-   <td>Optionale Miniaturansicht, die angezeigt wird, während die Komponente vom Sidekick an ihre Position gezogen wird.<br /> </td>
+   <td>Optionale Miniaturansicht, die angezeigt wird, während die Komponente von Sidekick an ihre Position gezogen wird.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -451,7 +451,7 @@ Dialogdefinitionen sind spezifisch für die Benutzeroberfläche:
       * speziell für die klassische Benutzeroberfläche
       * werden mit ExtJS-Widgets definiert
       * weisen die Eigenschaft `xtype` auf, die auf ExtJS verweist
-      * kann über eine Eigenschaft verfügen `helpPath` zur Definition der kontextsensitiven Hilferessource (absoluter oder relativer Pfad), auf die beim Zugriff auf die Variable **Hilfe** ausgewählt ist.
+      * kann über eine Eigenschaft verfügen `helpPath` zur Definition der kontextsensitiven Hilferessource (absoluter oder relativer Pfad), auf die beim Zugriff auf die Variable **Hilfe** Schaltfläche ausgewählt ist.
          * Bei vordefinierten Komponenten verweist dies häufig auf eine Seite in der Dokumentation.
          * Wenn kein `helpPath` festgelegt ist, wird die Standard-URL (Übersichtsseite der Dokumentation) angezeigt.
 
@@ -514,7 +514,7 @@ Sehen Sie sich besonders den tatsächlichen Text für eine **Titel**-Komponente 
 
 * Innerhalb des Inhalts wird dadurch die Eigenschaft `jcr:title` erstellt, die den Inhalt des Autors enthält.
 
-Die definierten Eigenschaften hängen von den jeweiligen Definitionen ab. Sie können zwar komplexer sein als oben, folgen aber dennoch denselben Grundprinzipien.
+Die definierten Eigenschaften hängen von den jeweiligen Definitionen ab. Sie können zwar komplexer sein als oben, folgen aber dennoch den gleichen Grundprinzipien.
 
 ## Komponentenhierarchie und Vererbung {#component-hierarchy-and-inheritance}
 
@@ -544,7 +544,7 @@ Komponenten in AEM unterliegen drei verschiedenen Hierarchien:
 
 ## Bearbeitungsverhalten {#edit-behavior}
 
-In diesem Abschnitt wird beschrieben, wie Sie das Bearbeitungsverhalten einer Komponente konfigurieren. Dazu gehören Attribute wie für die Komponente verfügbare Aktionen, Eigenschaften des Editors für die Bearbeitung im Kontext und Listener, die sich auf Ereignisse in der Komponente beziehen.
+In diesem Abschnitt wird beschrieben, wie Sie das Bearbeitungsverhalten einer Komponente konfigurieren. Hierzu zählen Attribute wie Aktionen, die für die Komponente verfügbar sind, Eigenschaften des integrierten Editors für die Bearbeitung und des Listeners in Zusammenhang mit Ereignissen bei der Komponente.
 
 Die Konfiguration gilt dabei sowohl für die Touch-optimierte als auch für die klassische Benutzeroberfläche, wenn auch mit gewissen Unterschieden.
 
@@ -596,7 +596,7 @@ Es gibt viele vorhandene Konfigurationen im Repository. Sie können einfach nach
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* So suchen Sie nach einem untergeordneten Knoten von `cq:editConfig`, können Sie beispielsweise nach `cq:dropTargets`, der vom Typ `cq:DropTargetConfig`; Sie können das Tool &quot;Abfrage&quot;in der &quot;CRXDE Lite&quot;verwenden und mit der folgenden XPath-Abfragezeichenfolge suchen:
+* So suchen Sie nach einem untergeordneten Knoten von `cq:editConfig`, können Sie beispielsweise nach `cq:dropTargets`, der vom Typ `cq:DropTargetConfig`; Sie können das Abfragetool in &quot;CRXDE Lite&quot;verwenden und mit der folgenden XPath-Abfragezeichenfolge suchen:
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 
@@ -710,7 +710,7 @@ Die Eigenschaft `cq:layout` (`String`) legt fest, die wie Komponente in der klas
   </tr>
   <tr>
    <td><code>editbar</code></td>
-   <td>Auf die Komponentenbearbeitung kann über eine Symbolleiste zugegriffen werden.<br /> Beachten Sie für die erweiterte Verwendung, dass das entsprechende clientseitige Objekt: <code>CQ.wcm.EditBar</code>.</td>
+   <td>Auf die Komponentenbearbeitung kann über eine Symbolleiste zugegriffen werden.<br /> Für eine erweiterte Verwendung lautet das entsprechende clientseitige Objekt: <code>CQ.wcm.EditBar</code>.</td>
   </tr>
   <tr>
    <td><code>auto</code></td>
@@ -1026,7 +1026,7 @@ Der Knoten `cq:listeners` (Knotentyp `cq:EditListenersConfig`) legt fest, was ge
 >  * `aftermove`
 >  * `aftercopy`
 
-Der Ereignis-Handler kann mit einer angepassten Implementierung implementiert werden. Beispiel (hier ist `project.customerAction` eine statische Methode):
+Der Ereignis-Handler kann mit einer angepassten Implementierung implementiert werden. Zum Beispiel (hier ist `project.customerAction` eine statische Methode):
 
 `afteredit = "project.customerAction"`
 
@@ -1036,7 +1036,7 @@ Das folgende Beispiel entspricht der `REFRESH_INSERTED`-Konfiguration:
 
 >[!NOTE]
 >
->Im Abschnitt „Ereignisse“ für `before<action>` und `after<action>` der Dokumentation zu den Widgets [`CQ.wcm.EditBar`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) und [`CQ.wcm.EditRollover`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) können Sie sehen, welche Parameter in der klassischen Benutzeroberfläche in den Handlern genutzt werden.
+>Informationen dazu, welche Parameter in den Handlern verwendet werden können, finden Sie in der klassischen Benutzeroberfläche unter `before<action>` und `after<action>` Ereignisabschnitt des [`CQ.wcm.EditBar`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) und [`CQ.wcm.EditRollover`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) Widget-Dokumentation.
 
 Mit der folgenden Konfiguration wird die Seite aktualisiert, nachdem die Komponente gelöscht, bearbeitet, eingefügt oder verschoben wurde:
 

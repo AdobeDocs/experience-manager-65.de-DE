@@ -6,18 +6,18 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2713'
-ht-degree: 84%
+source-wordcount: '2707'
+ht-degree: 82%
 
 ---
 
 # Vewenden des VLT-Tools {#how-to-use-the-vlt-tool}
 
-Das Jackrabbit FileVault Tool (VLT) ist ein von [The Apache Foundation](https://www.apache.org/) entwickeltes Tool, das den Inhalt einer Jackrabbit/AEM-Instanz Ihrem Dateisystem zuordnet. Das VLT-Tool verfügt über ähnliche Funktionen wie der Quellcode-Systemclient (z. B. ein Subversion-Client) und bietet normale Ein- und Auschecken- und Verwaltungsvorgänge sowie Konfigurationsoptionen für eine flexible Darstellung des Projektinhalts.
+Das Jackrabbit FileVault Tool (VLT) ist ein von [The Apache Foundation](https://www.apache.org/) entwickeltes Tool, das den Inhalt einer Jackrabbit/AEM-Instanz Ihrem Dateisystem zuordnet. Das VLT-Tool weist ähnliche Funktionen wie der Quellcode-Systemclient (z. B. ein Subversion-Client) auf und bietet normale Ein- und Auschecken- und Verwaltungsvorgänge sowie Konfigurationsoptionen für eine flexible Darstellung des Projektinhalts.
 
-Sie führen das VLT-Tool von der Befehlszeile aus. In diesem Dokument wird beschrieben, wie Sie das Tool verwenden, einschließlich der ersten Schritte und der Hilfe sowie einer Liste aller [Befehle](#vlt-commands) und verfügbaren [Optionen](#vlt-global-options).
+Sie führen das VLT-Tool von der Befehlszeile aus. In diesem Dokument wird beschrieben, wie Sie das Tool verwenden, einschließlich der ersten Schritte und der Bereitstellung von Hilfe, sowie eine Liste aller [commands](#vlt-commands) und verfügbar [options](#vlt-global-options).
 
 ## Konzepte und Architektur {#concepts-and-architecture}
 
@@ -781,7 +781,7 @@ Der Vault-Synchronisierungsdienst wird verwendet, um Repository-Inhalte mit eine
 
 >[!NOTE]
 >
->Der Vault-Synchronisierungsdienst ist ein Entwicklungstool und es wird dringend davon abgeraten, ihn in einem produktiven System zu verwenden. Beachten Sie außerdem, dass der Dienst nur mit dem lokalen Dateisystem synchronisiert und nicht für die Remote-Entwicklung verwendet werden kann.
+>Der Vault-Synchronisierungsdienst ist ein Entwicklungstool und es wird dringend davon abgeraten, ihn in einem produktiven System zu verwenden. Außerdem kann der Dienst nur mit dem lokalen Dateisystem synchronisieren und nicht für die Remote-Entwicklung verwendet werden.
 
 ### Installieren des Dienstes mit vlt {#installing-the-service-using-vlt}
 

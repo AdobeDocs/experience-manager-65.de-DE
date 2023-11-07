@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2869'
-ht-degree: 97%
+source-wordcount: '2855'
+ht-degree: 91%
 
 ---
 
@@ -34,7 +34,7 @@ Dieses Dokument beschäftigt sich mit den folgenden Themen:
 
 Um festzulegen, wie Ihre Sites personalisierte Inhalte teilen, müssen Sie die folgenden Schritte ausführen:
 
-1. [Erstellen Sie ein neues Gebiet](#creating-new-areas) oder [erstellen Sie ein neues Gebiet als Live Copy](#creating-new-areas). Ein Gebiet umfasst alle Aktivitäten, die für ein *Gebiet* der Seite zur Verfügung stehen; das heißt, die Stelle auf der Seite, auf die die Komponente abzielt. Beim Erstellen eines neuen Gebiets ist dieses zunächst leer, wobei Sie jedoch Inhalte Site-Struktur-übergreifend übernehmen können, wenn Sie das neue Gebiet als Live Copy erstellen.
+1. [Gebiet erstellen](#creating-new-areas) oder [Gebiet als Live Copy erstellen](#creating-new-areas). Ein Gebiet umfasst alle Aktivitäten, die für ein *Gebiet* der Seite zur Verfügung stehen; das heißt, die Stelle auf der Seite, auf die die Komponente abzielt. Beim Erstellen eines Gebiets wird ein leeres Gebiet erstellt, während beim Erstellen eines Gebiets als Live Copy Inhalte über Site-Strukturen hinweg übernommen werden können.
 
 1. [Verknüpfen Sie Ihre Website oder Seite](#linking-sites-to-an-area) mit einem Gebiet.
 
@@ -60,7 +60,7 @@ Eine Site oder Live Copy verweist auf ein Gebiet, das die Aktivitäten enthält,
 
 ## Anwendungsfälle {#use-cases}
 
-Für zielgerichtete Inhalte können Sie je nach Anwendungsfall auf verschiedene Arten Multisite-Unterstützung einrichten. In diesem Abschnitt wird beschrieben, wie diese Einrichtung theoretisch für eine Marke funktioniert. Darüber hinaus [Beispiel: Inhalts-Targeting basierend auf Geografie](#example-targeting-content-based-on-geography)können Sie eine reale Anwendung von Targeting-Inhalten auf mehreren Sites sehen.
+Je nach Anwendungsfall können Sie die Multisite-Unterstützung für zielgerichtete Inhalte auf verschiedene Arten einrichten. In diesem Abschnitt wird beschrieben, wie diese Einrichtung theoretisch für eine Marke funktioniert. Darüber hinaus [Beispiel: Inhalts-Targeting basierend auf Geografie](#example-targeting-content-based-on-geography)können Sie eine reale Anwendung von Targeting-Inhalten auf mehreren Sites sehen.
 
 Zielgerichtete Inhalte werden in sogenannte Gebiete eingeschlossen, die den Umfang für Sites oder Seiten definieren. Diese Gebiete werden auf Markenebene definiert. Eine Marke kann mehrere Gebiete enthalten. Gebiete können sich von Marke zu Marke unterscheiden. So kann beispielsweise eine Marke nur das primäre Gebiet enthalten, das für alle Marken gilt, während eine andere Marke hingegen zeitgleich mehrere Gebiete enthält (beispielsweise mit Unterschieden je nach Region). Marken müssen somit nicht zwingend die gleichen Gebiete aufweisen.
 
@@ -130,11 +130,11 @@ Sie können die Vererbung jederzeit aussetzen oder die Vererbung vollständig tr
 >
 >Technischere Ausführungen zu dieser Funktion finden Sie unter [Strukturierung des Multisite-Managements für zielgerichtete Inhalte](/help/sites-authoring/technical-multisite-targeted.md).
 
-### Erstellen eines neuen Gebiets bzw. eines neuen Gebiets als Live Copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
+### Erstellen eines Bereichs bzw. eines Gebiets als Live Copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
-In AEM haben Sie die Wahl, entweder ein neues Gebiet oder ein neues Gebiet als Live Copy zu erstellen. Bei der Erstellung eines neuen Gebiets werden Aktivitäten und jegliche mit ihnen verbundenen Elemente (Angebote, Erlebnisse usw.) gruppiert. Neue Gebiete werden dann benötigt, wenn Sie entweder einen Satz zielgerichteter erstellen, die sich vollständig von anderen Inhalten unterscheiden, oder wenn Sie einen Satz zielgerichteter Inhalte teilen möchten.
+In AEM haben Sie die Möglichkeit, einen Bereich zu erstellen oder einen Bereich als Live Copy zu erstellen. Beim Erstellen eines Bereichs werden Aktivitäten und alles, was zu diesen Aktivitäten gehört, wie Angebote, Erlebnisse usw. gruppiert. Sie erstellen ein Gebiet, in dem Sie entweder einen völlig eigenen Satz zielgerichteter Inhalte erstellen oder einen Satz zielgerichteter Inhalte freigeben möchten.
 
-Wenn Sie jedoch über MSM eine Vererbung zwischen den beiden Sites eingerichtet haben, möchten Sie die Aktivitäten möglicherweise vererben. In diesem Fall erstellen Sie ein neues Gebiet als Live Copy, wobei Y eine Live Copy von X ist und daher alle Aktivitäten erbt.
+Wenn Sie jedoch über MSM eine Vererbung zwischen den beiden Sites eingerichtet haben, möchten Sie die Aktivitäten möglicherweise vererben. In diesem Fall erstellen Sie ein Gebiet als Live Copy, wobei Y eine Live Copy von X ist und daher alle Aktivitäten übernimmt.
 
 >[!NOTE]
 >
@@ -159,7 +159,7 @@ Gebiete können aktivitäten- und angebotsübergreifend gelten. Nach der Erstell
 >
 >Der Standardbereich „primäres Gebiet“ wird standardmäßig ausgeblendet, wenn Sie auf den Namen einer Marke tippen/klicken, **bis** Sie einen anderen Bereich erstellen. Wählen Sie entweder in der **Aktivitäts-** oder der **Angebotskonsole** eine Marke aus, wird Ihnen die **Gebietskonsole** angezeigt.
 
-So erstellen Sie ein neues Gebiet:
+So erstellen Sie einen Bereich:
 
 1. Navigieren Sie zu **Personalisierung** > **Aktivitäten** oder **Angebote** und dann zu Ihrer Marke.
 1. Tippen oder klicken Sie auf **Gebiet erstellen**.

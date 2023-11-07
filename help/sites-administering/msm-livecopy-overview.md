@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 50%
+source-wordcount: '550'
+ht-degree: 57%
 
 ---
 
@@ -57,8 +57,8 @@ Die **Live Copy-Übersicht** wird über das seitliche Bedienfeld **Verweise** d
 
 Die **Live Copy-Übersicht** kann beim Anzeigen der Eigenschaften einer Blueprint-Seite geöffnet werden:
 
-1. Öffnen **Eigenschaften** für die entsprechende Blueprint-Seite.
-1. Öffnen Sie die **Blueprint** tab - das **Live Copy-Übersicht** wird in der oberen Symbolleiste angezeigt:
+1. Öffnen Sie die **Eigenschaften** für die entsprechende Blueprint-Seite.
+1. Wenn Sie nun die Registerkarte **Blueprint** öffnen, wird die Option **Live Copy-Übersicht** in der oberen Symbolleiste angezeigt:
 
    ![Registerkarte &quot;Blueprint&quot;- Live Copy-Übersicht](assets/chlimage_1-360.png)
 

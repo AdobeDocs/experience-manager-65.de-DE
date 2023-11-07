@@ -6,10 +6,10 @@ role: User, Admin
 feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
-source-git-commit: 8bd103e392bf5630cb2db654dedcfe4f926b2c9d
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '808'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -77,7 +77,7 @@ Die Metadatenänderungen werden in die Ausgabeformate „thumbnail.140.100.png�
 
 [!DNL Experience Manager Assets] unterstützt das Filtern von Blockierungslisten und Zulassungslisten von Eigenschaften/Knoten nach XMP-Metadaten, die von den Binärdateien des Assets gelesen und in JCR gespeichert werden, wenn Assets aufgenommen werden.
 
-Bei der Filterung über eine Blockierungsliste können Sie alle XMP-Metadateneigenschaften importieren – mit Ausnahme der Eigenschaften, für die ein Ausschluss angegeben ist. Jedoch ist der Name der zu filternden Knoten für Elementtypen wie INDD-Dateien mit enormen Mengen an XMP-Metadaten (z. B. 1.000 Knoten mit 10.000 Eigenschaften) nicht immer bereits im Voraus bekannt. Wenn durch das Filtern über eine Blockierungsliste eine große Anzahl von Assets mit vielen XMP-Metadaten importiert werden kann, kann es zu Stabilitätsproblemen in der [!DNL Experience Manager]-Bereitstellung kommen, zum Beispiel zu blockierten Beobachtungswarteschlangen.
+Bei der Filterung über eine Blockierungsliste können Sie alle XMP-Metadateneigenschaften importieren – mit Ausnahme der Eigenschaften, für die ein Ausschluss angegeben ist. Bei Asset-Typen wie INDD-Dateien mit großen Mengen XMP Metadaten (z. B. 1.000 Knoten mit 10.000 Eigenschaften) sind die Namen der zu filternden Knoten jedoch nicht immer im Voraus bekannt. Wenn beim Filtern mit einer Blockierungsliste eine große Anzahl von Assets mit zahlreichen XMP Metadaten importiert werden kann, wird die [!DNL Experience Manager] Bei der Implementierung können Stabilitätsprobleme auftreten, z. B. blockierte Beobachtungswarteschlangen.
 
 Durch Filtern von XMP-Metadaten über die Zulassungsliste wird dieses Problem behoben, indem Sie die zu importierenden XMP-Eigenschaften definieren können. Auf diese Weise werden andere/unbekannte XMP-Eigenschaften ignoriert. Aus Gründen der Abwärtskompatibilität können Sie einige dieser Eigenschaften dem Filter hinzufügen, der eine Blockierungsliste verwendet.
 

@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2009'
-ht-degree: 70%
+source-wordcount: '2008'
+ht-degree: 67%
 
 ---
 
@@ -73,7 +73,7 @@ Die folgenden Aktionen werden mit der REST-API unterstützt:
 
 >[!NOTE]
 >
->Durch die Verwendung von Firebug, einer Firefox-Erweiterung für die Web-Entwicklung, ist es möglich, den HTTP-Traffic zu verfolgen, wenn die Konsole betrieben wird. Sie können beispielsweise mit einer `POST`-Anfrage die Parameter und Werte prüfen, die an den AEM-Server gesendet werden.
+>Durch die Verwendung von Firebug, einer Firefox-Erweiterung für die Web-Entwicklung, ist es möglich, den HTTP-Traffic zu verfolgen, wenn die Konsole betrieben wird. Sie können beispielsweise die Parameter und Werte überprüfen, die mit einer `POST` -Anfrage.
 
 Auf dieser Seite wird angenommen, dass AEM auf localhost auf Port `4502` läuft und der Installationskontext „`/`“ (Root-Verzeichnis) ist. Wenn dies nicht auf Ihre Installation zutrifft, müssen die URIs für die HTTP-Anfragen entsprechend angepasst werden.
 
@@ -99,7 +99,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td><p>Erstellt eine neue Workflow-Instanz. Es gibt folgende Parameter: <br /> – <code>model</code>: die ID (URI) des entsprechenden Workflow-Modells <br /> – <code>payloadType</code>: enthält den Payload-Typ (z. B. <code>JCR_PATH</code> oder URL).<br /> Die Payload wird als Parameter<code>payload</code> gesendet. Eine <code>201</code> (<code>CREATED</code>)-Antwort wird mit Orts-Header zurückgesendet, der die URL der neuen Workflow-Instanzressource enthält.</p> </td>
+   <td><p>Erstellt eine neue Workflow-Instanz. Die Parameter sind:<br /> - <code>model</code>: die ID (URI) des entsprechenden Workflow-Modells<br /> - <code>payloadType</code>: enthält den Typ der Payload (z. B. <code>JCR_PATH</code> oder URL).<br /> Die Payload wird als Parameter<code>payload</code> gesendet. Eine <code>201</code> (<code>CREATED</code>)-Antwort wird mit Orts-Header zurückgesendet, der die URL der neuen Workflow-Instanzressource enthält.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -132,7 +132,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Ändert den Status der Instanz. Der neue Status wird als Parameter <code>state</code> gesendet und muss einen der folgenden Werte aufweisen: <code>RUNNING</code>, <code>SUSPENDED</code> oder <code>ABORTED</code>.<br /> Wenn der neue Status nicht erreicht werden kann (z. B. wenn versucht wird, eine beendete Instanz zu pausieren), wird eine <code>409</code> (<code>CONFLICT</code>)-Antwort an den Client gesendet.</td>
+   <td>Ändert den Status der Instanz. Der neue Status wird als Parameter <code>state</code> gesendet und muss einen der folgenden Werte aufweisen: <code>RUNNING</code>, <code>SUSPENDED</code> oder <code>ABORTED</code>.<br /> Wenn der neue Status nicht erreicht werden kann (z. B. beim Aussetzen einer beendeten Instanz), wird ein <code>409</code> (<code>CONFLICT</code>) wird an den Client zurückgesendet.</td>
   </tr>
  </tbody>
 </table>
@@ -488,7 +488,7 @@ Die verwendeten Beispiele:
 >
 >Beim Löschen wird der Modellknoten nicht entfernt.
 
-Beim Erstellen eines neuen Modells:
+Beim Erstellen eines Modells:
 
 * Der Workflow-Modell-Editor erfordert, dass Modelle eine bestimmte Knotenstruktur unter `/var/workflow/models` verwenden. Der übergeordnete Knoten des Modells muss den Typ `cq:Page` und einen `jcr:content`-Knoten mit den folgenden Eigenschaftswerten aufweisen:
 

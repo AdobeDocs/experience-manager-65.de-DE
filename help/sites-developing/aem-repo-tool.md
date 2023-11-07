@@ -1,19 +1,15 @@
 ---
 title: AEM Repo Tool
-seo-title: AEM Repo Tool
-description: Das AEM Repo Tool ist eine einfache Lösung, mit der Sie JCR-Inhalte ähnlich wie bei FTP über die Befehlszeile zwischen Ihrem lokalen Dateisystem und dem AEM-Server übertragen können. Das AEM Repo Tool ähnelt dem Jackrabbit FileVault-Tool, ist aber schneller, hat minimale Abhängigkeiten und besteht aus einem einfachen Bash-Skript.
-seo-description: The AEM Repo Tool is a simple solution to transfer JCR content between your local filesystem and the AEM server via the command line comparable to FTP. The AEM Repo Tool is similar to the Jackrabbit FileVault tool, but is faster, has minimal dependencies, and is a simple bash script.
-uuid: 6c4a3504-e8e8-46c0-83cb-c18d9791f93e
+description: Das AEM Repo Tool ist eine einfache Lösung, um JCR-Inhalte über eine mit FTP vergleichbare Befehlszeile zwischen Ihrem lokalen Dateisystem und dem AEM-Server zu übertragen. Das AEM Repo Tool ähnelt dem Jackrabbit FileVault-Tool, ist aber schneller, hat minimale Abhängigkeiten und besteht aus einem einfachen Bash-Skript.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: 7de7b2f9-770e-4af3-8a31-c7b4de64fd43
 exl-id: c46c9f0c-b0d2-4f2f-b95c-90fd3ced32a9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '284'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 74%
 
 ---
 
@@ -21,7 +17,7 @@ ht-degree: 100%
 
 Das AEM Repo Tool ist eine einfache Lösung, mit der Sie JCR-Inhalte ähnlich wie bei FTP über die Befehlszeile zwischen Ihrem lokalen Dateisystem und dem AEM-Server übertragen können. Das AEM Repo Tool ähnelt dem [Jackrabbit FileVault-Tool](/help/sites-developing/ht-vlttool.md), ist aber schneller, hat minimale Abhängigkeiten und besteht aus einem einfachen Bash-Skript.
 
-Dieses Tool vereinfacht die Dateiübertragung für Entwickler und lässt sich auch in IntelliJ und Eclipse integrieren, um die Entwicklung noch effizienter zu gestalten.
+Dieses Tool vereinfacht die Übertragung von Dateien für Entwickler und kann auch in IntelliJ und Eclipse integriert werden, um die Entwicklung noch effizienter zu gestalten.
 
 ## Übersicht {#overview}
 
@@ -31,13 +27,13 @@ Mehrere Filterpfade werden vom Tool ebenso wenig unterstützt wie `filter.xml` v
 
 >[!CAUTION]
 >
->Beachten Sie, dass das AEM Repo Tool immer die gesamte angegebene Datei bzw. das gesamte angegebene Verzeichnis überschreibt.
+>Das AEM Repo Tool überschreibt immer die gesamte angegebene Datei oder das angegebene Verzeichnis.
 
 ## Download und Dokumentation {#download-and-documentation}
 
 Das [AEM Repo Tool ist unter diesem Link auf GitHub verfügbar](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo), zusammen mit detaillierten Installations- und Nutzungsanleitungen.
 
-Wenn Sie den Quell-Code des AEM Repo Tools herunterladen möchten, sehen Sie sich das unten verlinkte GitHub-Projekt an.
+Wenn Sie die Quelle des AEM Repo Tool herunterladen möchten, lesen Sie das unten verlinkte GitHub-Projekt.
 
 CODE AUF GITHUB
 

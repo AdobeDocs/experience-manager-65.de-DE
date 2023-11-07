@@ -1,7 +1,7 @@
 ---
 title: Integrieren von Landing-Pages in Adobe Analytics
 seo-title: Integrating Landing Pages with Adobe Analytics
-description: Erfahren Sie, wie Sie mit Adobe Analytics Einstiegsseiten integrieren können.
+description: Erfahren Sie, wie Sie Landingpages in Adobe Analytics integrieren können.
 seo-description: Learn how to integrate landing pages with Adobe Analytics.
 uuid: 8f6672d1-497f-4ccb-b3cc-f6120fc467ba
 contentOwner: msm-service
@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 8ae7ccec-489b-4d20-ac56-6101402fb18a
 exl-id: da3f7b7e-87e5-446a-9a77-4b12b850a381
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '376'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '374'
+ht-degree: 64%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 AEM hat die Einstiegsseitenlösung mithilfe des folgenden Aktionsaufrufs in [Adobe Analytics](https://www.omniture.com/de/products/analytics/sitecatalyst) integriert:
 
 1. Clickthrough-Komponente
-1. Grafischer Link
+1. Grafische Link-Komponente
 
 Diese Komponenten legen bestimmte Attribute offen, die über Adobe Analytics-Variablen (Traffic, Konversionsvariablen) und Erfolgsereignisse zugeordnet werden können, um Informationen an Adobe Analytics zu senden.
 
@@ -38,10 +38,10 @@ In AEM können die **Aktionsaufruf**-Komponenten – **ClickThroughLink** und *
 
 ### Zuordnen von Einstiegsseitenkomponenten zu Adobe Analytics {#mapping-landing-page-components-to-adobe-analytics}
 
-Sie können wie folgt Einstiegsseitenkomponenten zu Adobe Analytics zuordnen:
+So ordnen Sie Einstiegsseitenkomponenten Adobe Analytics zu:
 
-1. Wählen Sie nach der Erstellung der Adobe Analytics-Konfiguration und der Erstellung eines neuen Frameworks die passende Suite für das Reporting aus dem Dropdown-Menü aus. Hierdurch erfolgt das Abrufen der Adobe Analytics-Variablen und ihre Anzeige in der Inhaltssuche.
-1. Ziehen Sie Aktionsaufrufkomponenten bei Bedarf vom Sidekick in den Zuordnungsbereich in der Mitte der Seite und legen Sie sie dort ab.
+1. Nachdem Sie die Adobe Analytics-Konfiguration erstellt und ein Framework erstellt haben, wählen Sie die entsprechende Report Suite aus dem Dropdownmenü aus. Dadurch werden die Adobe Analytics-Variablen abgerufen und im Content Finder angezeigt.
+1. Ziehen Sie die Komponenten &quot;Aktionsaufruf (CTA)&quot;aus dem Sidekick in den Zuordnungsbereich in der Mitte der Seite, falls zutreffend.
 
 <table>
  <tbody>
@@ -89,7 +89,7 @@ Sie können wie folgt Einstiegsseitenkomponenten zu Adobe Analytics zuordnen:
 </table>
 
 1. Weisen Sie diese offengelegten Attribute beliebigen Adobe Analytics-Variablen aus der Inhaltssuche zu. Das Framework ist nun einsatzbereit.
-1. Sie können jetzt eine neue Einstiegsseite oder eine vorhandene Einstiegsseite mit vorhandenen Aktionsaufrufkomponenten erstellen und über den Sidekick auf die Registerkarte **Cloud-Services** in den **Seiteneigenschaften** klicken (wählen Sie in der Touch-optimierten Benutzeroberfläche **Eigenschaften öffnen** aus und klicken Sie auf **Cloud-Services**) und das für die Einstiegsseite zu verwendende Framework konfigurieren. Wählen Sie das Framework aus der Dropdown-Liste aus.
+1. Sie können jetzt eine Landingpage erstellen oder eine vorhandene Landingpage mit vorhandenen CTA-Komponenten öffnen und auf **Cloud Service** Registerkarte in **Seiteneigenschaften** Wählen Sie im Sidekick (in der Touch-optimierten Benutzeroberfläche die Option **Eigenschaften öffnen** und klicken **Cloud Service**) und konfigurieren Sie das Framework für die Verwendung mit der Landingpage. Wählen Sie das Framework aus der Dropdown-Liste aus.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 

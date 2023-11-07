@@ -9,10 +9,10 @@ topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '6503'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,6 @@ Diese Umgebung enthält Inhalte, die Sie Ihren Benutzerinnen und Benutzern zur V
 >
 >* Folgen Sie nach der Konfiguration zur Leistungsoptimierung der Anleitung in [Tough Day](/help/sites-developing/tough-day.md), um die Umgebung unter starker Belastung zu testen.
 >* Siehe auch [Tipps zur Leistungsoptimierung.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=de)
-
 
 ## Methode zur Leistungsoptimierung {#performance-optimization-methodology}
 
@@ -82,7 +81,7 @@ Die „Realität“ nachzubilden ist schwierig und wie viel Aufwand Sie dafür b
 
 Die Bedeutung konkreter Leistungsziele sollte nicht unterschätzt werden. Wenn Personen erst einmal bestimmte Leistungsziele festgelegt haben, ist es oft sehr schwer, diese zu ändern, auch wenn sie nur auf vagen Annahmen beruhen.
 
-Die Festlegung guter, solider Leistungsziele ist wirklich einer der schwierigsten Bereiche. Oft ist es am besten, von einer vergleichbaren Website (z. B. dem Vorgänger der neuen Website) reale Protokolle und Benchmarks zu sammeln.
+Die Festlegung guter, solider Leistungsziele ist wirklich einer der schwierigsten Bereiche. Oft ist es am besten, von einer vergleichbaren Website (z. B. dem Vorgänger der neuen Website) reale Lebensprotokolle und Benchmarks zu sammeln.
 
 ### Relevante Maßnahmen treffen {#stay-relevant}
 
@@ -387,9 +386,9 @@ In beiden Fällen können Sie die erwartete Anzahl von Transaktionen pro Sekunde
 | Komponente | Testtyp | Anzahl der Benutzer | Tx/Sek (erwartet) | Tx/Sek (getestet) | Beschreibung |
 |---|---|---|---|---|---|
 | Einzelbenutzer auf der Startseite | Durchschnitt | 1 | 1 |  |  |
-|  | Spitze | 1 | 3 |  |  |
+|   | Spitze | 1 | 3 |  |  |
 | Startseite 100 Benutzer | Durchschnitt | 100 | 3 |  |  |
-|  | Spitze | 100 | 3 |  |
+|   | Spitze | 100 | 3 |  |
 
 #### Tests kombinierter Komponenten {#combined-component-tests}
 
@@ -398,15 +397,15 @@ Durch das Testen der Komponenten in Kombination wird das Anwendungsverhalten bes
 | Szenario | Komponente | Anzahl der Benutzer | Tx/Sek (erwartet) | Tx/Sek (getestet) | Beschreibung |
 |---|---|---|---|---|---|
 | Durchschnitt gemischt | Homepage | 10 | 1 |  |  |
-|  | Suchen | 10 | 1 |  |  |
-|  | Nachrichten | 10 | 2 |  |  |
-|  | Ereignisse | 10 | 1 |  |  |
-|  | Aktivierungen | 10 | 3 |  | Simulation des Autorenverhaltens. |
+|   | Suchen | 10 | 1 |  |  |
+|   | Nachrichten | 10 | 2 |  |  |
+|   | Ereignisse | 10 | 1 |  |  |
+|   | Aktivierungen | 10 | 3 |  | Simulation des Autorenverhaltens. |
 | Spitzenwert gemischt | Homepage | 100 | 5 |  |  |
-|  | Suchen | 50 | 5 |  |  |
-|  | Nachrichten | 100 | 10 |  |  |
-|  | Ereignisse | 100 | 10 |  |  |
-|  | Aktivierungen | 20 | 20 |  | Simulation des Autorenverhaltens. |
+|   | Suchen | 50 | 5 |  |  |
+|   | Nachrichten | 100 | 10 |  |  |
+|   | Ereignisse | 100 | 10 |  |  |
+|   | Aktivierungen | 20 | 20 |  | Simulation des Autorenverhaltens. |
 
 #### Live-Schaltungs-Tests {#going-live-tests}
 
@@ -415,10 +414,10 @@ In den ersten Tagen nach der Bereitstellung Ihrer Website können Sie mit einem 
 | Szenario | Testtyp | Anzahl der Benutzer | Tx/Sek (erwartet) | Tx/Sek (getestet) | Beschreibung |
 |---|---|---|---|---|---|
 | Spitzenwert Go-Live | Homepage | 200 | 20 |  |  |
-|  | Suchen | 100 | 10 |  |  |
-|  | Nachrichten | 200 | 20 |  |  |
-|  | Ereignisse | 200 | 20 |  |  |
-|  | Aktivierungen | 20 | 20 |  | Simulation des Autorenverhaltens. |
+|   | Suchen | 100 | 10 |  |  |
+|   | Nachrichten | 200 | 20 |  |  |
+|   | Ereignisse | 200 | 20 |  |  |
+|   | Aktivierungen | 20 | 20 |  | Simulation des Autorenverhaltens. |
 
 #### Fehlerszenario-Tests {#error-scenario-tests}
 
@@ -432,9 +431,9 @@ Bei der Konzeption dieser Tests sollte beachtet werden, dass nicht alle Szenarie
 | Fehlerszenario | Fehlertyp | Anzahl der Benutzer | Tx/Sek (erwartet) | Tx/Sek (getestet) | Beschreibung |
 |---|---|---|---|---|---|
 | Überlastung der Suchkomponente | Suche mit einem globalen Platzhalter (Sternchen) | 10 | 1 |  | Es wird nur nach &amp;ast;&amp;ast;&amp;ast; gesucht. |
-|  | Stoppwort | 20 | 2 |  | Suchen nach einem Stoppwort. |
-|  | Leere Zeichenfolge | 10 | 1 |  | Suchen nach einer leeren Zeichenfolge. |
-|  | Sonderzeichen | 10 | 1 |  | Suchen nach Sonderzeichen. |
+|   | Stoppwort | 20 | 2 |  | Suchen nach einem Stoppwort. |
+|   | Leere Zeichenfolge | 10 | 1 |  | Suchen nach einer leeren Zeichenfolge. |
+|   | Sonderzeichen | 10 | 1 |  | Suchen nach Sonderzeichen. |
 
 #### Belastungstests {#endurance-tests}
 
@@ -443,10 +442,10 @@ Bestimmte Probleme treten erst auf, nachdem das System über einen ununterbroche
 | Szenario | Testtyp | Anzahl der Benutzer | Tx/Sek (erwartet) | Tx/Sek (getestet) | Beschreibung |
 |---|---|---|---|---|---|
 | Belastungstest (72 Stunden) | Homepage | 10 | 1 |  |  |
-|  | Suchen | 10 | 1 |  |  |
-|  | Nachrichten | 20 | 2 |  |  |
-|  | Ereignisse | 10 | 1 |  |  |
-|  | Aktivierungen | 1 | 3 |  | Simulation des Autorenverhaltens. |
+|   | Suchen | 10 | 1 |  |  |
+|   | Nachrichten | 20 | 2 |  |  |
+|   | Ereignisse | 10 | 1 |  |  |
+|   | Aktivierungen | 1 | 3 |  | Simulation des Autorenverhaltens. |
 
 ### Optimierung {#optimization}
 
@@ -496,6 +495,7 @@ Der Dispatcher bietet mehrere integrierte Mechanismen, mit denen Sie die Leistun
 >Allgemein beinhalten viele Caching-Strategien die Auswahl von geeigneten URLs ausgewählt, und sie verlassen sich nicht auf diese zusätzlichen Daten.
 >
 >Mit Dispatcher Version 4.1.11 können Sie auch Antwort-Header zwischenspeichern; siehe [Caching von HTTP-Antwort-Headern](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#configuring-the-dispatcher-cache-cache).
+>
 
 ### Berechnen des Dispatcher-Cache-Verhältnisses {#calculating-the-dispatcher-cache-ratio}
 

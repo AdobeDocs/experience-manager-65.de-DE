@@ -1,7 +1,7 @@
 ---
 title: Dienst-Container
 seo-title: Service container
-description: AEM Forms-Services, die sich im Service-Container befinden
+description: AEM Forms-Dienste im Dienstcontainer
 uuid: 89f2fd3d-63d7-4b70-b335-47314441f3ec
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ topic-tags: coding, development-tools
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 role: Developer
 exl-id: 6abf2401-5a87-4f72-9028-74580df5b9de
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '927'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '924'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
 
-AEM Forms-Services, die sich im Service-Container befinden (einschließlich Standard-Services wie dem Verschlüsselungs-Service, langlebigen und kurzlebigen Prozessen), können mit verschiedenen Providern, wie z. B. einem EJB-Provider, aufgerufen werden. Ein EJB-Anbieter ermöglicht den Aufruf von AEM Forms-Services über RMI/IIOP. Ein Webservice-Anbieter stellt Services als Web-Services (WSDL-Generierung) unter Verwendung von Standards wie SOAP/HTTP und SOAP/JMS bereit.
+AEM Forms-Dienste im Dienstcontainer (einschließlich Standarddiensten wie dem Encryption-Dienst, langlebigen und kurzlebigen Prozessen) können mit verschiedenen Anbietern aufgerufen werden, z. B. einem EJB-Anbieter. Ein EJB-Anbieter ermöglicht den Aufruf von AEM Forms-Services über RMI/IIOP. Ein Webservice-Anbieter stellt Services als Web-Services (WSDL-Generierung) unter Verwendung von Standards wie SOAP/HTTP und SOAP/JMS bereit.
 
 In der folgenden Tabelle werden die verschiedenen Methoden zum programmgesteuerten Aufrufen von AEM Forms-Services beschrieben.
 
@@ -61,23 +61,23 @@ Die folgende Abbildung zeigt die verschiedenen Möglichkeiten, wie AEM Forms-Ser
 Der Service-Container bietet die folgenden Funktionen:
 
 * Ermöglicht den Aufruf von AEM Forms-Services mit verschiedenen Methoden. Sie können einen Service konfigurieren, indem Sie Endpunkte festlegen, damit er mit allen Methoden aufgerufen werden kann: Remoting, die Java-API, Web-Services und REST. (Siehe [Programmgesteuertes Verwalten von Endpunkten](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints).)
-* Konvertiert eine Nachricht in ein normalisiertes Format, das als Aufrufanfrage bezeichnet wird. Eine Aufrufanfrage wird von einem Client-Programm (oder einem anderen Service) an einen Service gesendet, der sich im Service-Container befindet. Eine Aufrufanfrage enthält Informationen wie den Namen des aufzurufenden Services und Datenwerte, die zur Durchführung des Vorgangs erforderlich sind. Viele Services benötigen ein Dokument, um einen Vorgang auszuführen. Daher enthält eine Aufrufanfrage normalerweise ein Dokument, bei dem es sich um PDF-Daten, XDP-Daten, XML-Daten usw. handeln kann.
+* Konvertiert eine Nachricht in ein normalisiertes Format, das als Aufrufanfrage bezeichnet wird. Eine Aufrufanforderung wird von einer Clientanwendung (oder einem anderen Dienst) an einen Dienst im Dienstcontainer gesendet. Eine Aufrufanfrage enthält Informationen wie den Namen des aufzurufenden Services und Datenwerte, die zur Durchführung des Vorgangs erforderlich sind. Viele Services benötigen ein Dokument, um einen Vorgang auszuführen. Daher enthält eine Aufrufanfrage normalerweise ein Dokument, bei dem es sich um PDF-Daten, XDP-Daten, XML-Daten usw. handeln kann.
 * Sendet Aufrufanfragen an entsprechende Services (der Name des aufzurufenden Services ist Teil der Aufrufanfrage).
 * Führt Aufgaben durch wie die Bestimmung, ob der Aufrufer berechtigt ist, den angegebenen Service-Vorgang aufzurufen. Die Aufrufanfrage muss einen gültigen Benutzernamen und ein gültiges Kennwort für AEM Forms enthalten.
 
-   Es gibt verschiedene Möglichkeiten, eine Aufrufanfrage an einen Service zu senden. Außerdem gibt es verschiedene Möglichkeiten, erforderliche Eingabewerte an den Service zu senden. Angenommen, Sie verwenden die Java-API zum Aufrufen eines Services, für den ein PDF-Dokument erforderlich ist. Die entsprechende Java-Methode enthält einen Parameter, der ein PDF-Dokument akzeptiert. In diesem Fall lautet der Datentyp des Parameters `com.adobe.idp.Document`. (Siehe [Übergeben von Daten an AEM Forms-Services mithilfe der Java-API](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
+  Es gibt verschiedene Möglichkeiten, eine Aufrufanfrage an einen Service zu senden. Außerdem gibt es verschiedene Möglichkeiten, erforderliche Eingabewerte an den Service zu senden. Angenommen, Sie verwenden die Java-API zum Aufrufen eines Services, für den ein PDF-Dokument erforderlich ist. Die entsprechende Java-Methode enthält einen Parameter, der ein PDF-Dokument akzeptiert. In diesem Fall lautet der Datentyp des Parameters `com.adobe.idp.Document`. (Siehe [Übergeben von Daten an AEM Forms-Services mithilfe der Java-API](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
 
-   Wenn Sie einen Service mithilfe von überwachten Ordnern aufrufen, wird eine Aufrufanfrage gesendet, sobald Sie eine Datei in einem konfigurierten überwachten Ordner platzieren. Wenn Sie einen Service per E-Mail aufrufen, wird eine Aufrufanfrage an einen Service gesendet, sobald eine E-Mail-Nachricht in einem konfigurierten Posteingang eingeht.
+  Wenn Sie einen Service mithilfe von überwachten Ordnern aufrufen, wird eine Aufrufanfrage gesendet, sobald Sie eine Datei in einem konfigurierten überwachten Ordner platzieren. Wenn Sie einen Service per E-Mail aufrufen, wird eine Aufrufanfrage an einen Service gesendet, sobald eine E-Mail-Nachricht in einem konfigurierten Posteingang eingeht.
 
-   Der Service-Container sendet nach Durchführung des Vorgangs eine Aufrufantwort zurück. Eine Aufrufantwort enthält Informationen wie die Vorgangsergebnisse. Wenn der Vorgang beispielsweise ein PDF-Dokument ändert, enthält die Aufrufantwort das geänderte PDF-Dokument. Wenn der Vorgang nicht erfolgreich war, enthält die Aufrufantwort eine Fehlermeldung.
+  Der Service-Container sendet nach Durchführung des Vorgangs eine Aufrufantwort zurück. Eine Aufrufantwort enthält Informationen wie die Vorgangsergebnisse. Wenn der Vorgang beispielsweise ein PDF-Dokument ändert, enthält die Aufrufantwort das geänderte PDF-Dokument. Wenn der Vorgang nicht erfolgreich war, enthält die Aufrufantwort eine Fehlermeldung.
 
-   Eine Aufrufantwort kann auf dieselbe Weise abgerufen werden wie eine Aufrufanfrage. Das heißt, wenn die Aufrufanfrage mit der Java-API gesendet wird, kann mit der Java-API eine Aufrufantwort abgerufen werden. Angenommen, ein Vorgang ändert ein PDF-Dokument. Sie können das geänderte PDF-Dokument abrufen, indem Sie den Rückgabewert der Java-Methode abrufen, die den Service aufgerufen hat.
+  Eine Aufrufantwort kann auf dieselbe Weise abgerufen werden wie eine Aufrufanfrage. Das heißt, wenn die Aufrufanfrage mit der Java-API gesendet wird, kann mit der Java-API eine Aufrufantwort abgerufen werden. Angenommen, ein Vorgang ändert ein PDF-Dokument. Sie können das geänderte PDF-Dokument abrufen, indem Sie den Rückgabewert der Java-Methode abrufen, die den Service aufgerufen hat.
 
-   Wenn ein langlebiger Prozess aufgerufen wird, enthält eine Aufrufantwort einen Kennungswert, der mit der Aufrufanfrage verknüpft ist. Mithilfe dieses Kennungswerts können Sie den Status des Prozesses zu einem späteren Zeitpunkt überprüfen. Nehmen wir zum Beispiel den langlebigen Service MortgageLoan. Mithilfe des Kennungswerts können Sie überprüfen, ob der Prozess erfolgreich abgeschlossen wurde. (Siehe [An Menschen orientierte langlebige Prozesse aufrufen](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
+  Wenn ein langlebiger Prozess aufgerufen wird, enthält eine Aufrufantwort einen Kennungswert, der mit der Aufrufanfrage verknüpft ist. Mithilfe dieses Kennungswerts können Sie den Status des Prozesses zu einem späteren Zeitpunkt überprüfen. Nehmen wir zum Beispiel den langlebigen Service MortgageLoan. Mithilfe des Kennungswerts können Sie überprüfen, ob der Prozess erfolgreich abgeschlossen wurde. (Siehe [An Menschen orientierte langlebige Prozesse aufrufen](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
 
-   Das folgende Diagramm zeigt ein Client-Programm (das die Java-API verwendet), das einen Service aufruft.
+  Das folgende Diagramm zeigt ein Client-Programm (das die Java-API verwendet), das einen Service aufruft.
 
-   Wenn ein Client-Programm einen Service aufruft, treten drei Ereignisse auf:
+  Wenn ein Client-Programm einen Service aufruft, treten drei Ereignisse auf:
 
    1. Ein Client-Programm sendet eine Aufrufanfrage an einen Service.
    1. Der Service führt den in der Aufrufanfrage angegebenen Vorgang aus.

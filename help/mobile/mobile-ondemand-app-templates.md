@@ -1,7 +1,7 @@
 ---
 title: Erstellen und Hinzufügen von Vorlagen und Komponenten
 seo-title: Creating and Adding Templates and Components
-description: Auf dieser Seite erfahren Sie mehr über das Erstellen und Hinzufügen von Vorlagen und Komponenten zu Ihrer App. Die Seite verwendet die Geometrixx Unlimited App als App, die eine Beispiel-App-Vorlage und Seitenvorlagen enthält.
+description: Auf dieser Seite erfahren Sie mehr über das Erstellen und Hinzufügen von Vorlagen und Komponenten zu Ihrer App. Die Seite verwendet die Geometrixx Unlimited App als App, die eine Beispielanwendungsvorlage und Seitenvorlagen enthält.
 seo-description: Follow this page to learn about creating and adding templates and components to your app. The page uses Geometrixx Unlimited App as the app that contains a sample app template and page templates.
 uuid: 3a93017c-8094-413f-a01c-9b72025a2b20
 contentOwner: User
@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1154'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ AEM Mobile On-Demand bietet eine vollständig konfigurierte App-Vorlage, eine Ar
 
 Die We.Unlimited App ist eine Beispielvorlage, die die Shell einer vollständig konfigurierbaren und verwaltbaren AEM Mobile On-Demand-Anwendung darstellt.
 
-Wenn Sie diese Beispielvorlage beim Erstellen einer neuen App auswählen, wird ein Rich-Dashboard für AEM Mobile-Funktionen bereitgestellt.
+Wenn Sie diese Beispielvorlage beim Erstellen einer App auswählen, wird ein Rich-Dashboard für AEM Mobile-Funktionen bereitgestellt.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
 
@@ -36,13 +36,13 @@ Wenn Sie diese Beispielvorlage beim Erstellen einer neuen App auswählen, wird e
 
 ## Erstellen von App-Vorlagen {#creating-app-templates}
 
-Eine App-Vorlage wird zum Erstellen einer neuen App verwendet und dient als Sammlung von Seitenvorlagen und Komponenten, die eine Grundlinie oder Grundlage einer App darstellen. Die Vorlage stempelt einige grundlegende Eigenschaften heraus, um die App auf die richtige Weise zu führen. Im Allgemeinen würde ein Kunde nicht zu viele Apps insgesamt erstellen.
+Eine App-Vorlage wird zum Erstellen einer App verwendet und dient als Sammlung von Seitenvorlagen und Komponenten, die eine Grundlinie oder Grundlage einer App darstellen. Die Vorlage stempelt einige grundlegende Eigenschaften heraus, um die App auf die richtige Weise zu führen. Im Allgemeinen würde ein Kunde nicht zu viele Apps insgesamt erstellen.
 
-App-Vorlagen bieten eine einfache Möglichkeit, vorhandene, von Entwicklern erstellte Designs zu nutzen, die für die Erstellung neuer Apps in AEM verwendet werden.
+App-Vorlagen bieten eine einfache Möglichkeit, vorhandene, von Entwicklern erstellte Designs zu verwenden, die für die Erstellung neuer Apps in AEM verwendet werden.
 
-Wenn Sie eine neue App basierend auf der Vorlage einer anderen App erstellen, erhalten Sie eine App mit einem Startpunkt, der für die App steht, aus der sie erstellt wurde.
+Wenn Sie eine App basierend auf der Vorlage einer anderen App erstellen, erhalten Sie eine App mit einem Startpunkt, der für die App steht, aus der sie erstellt wurde.
 
-Schritte zum Erstellen einer neuen App basierend auf einer App-Vorlage:
+Schritte zum Erstellen einer App basierend auf einer App-Vorlage:
 
 1. Navigieren Sie zum AEM Mobile-App-Katalog: *&lt;server-url>/aem/apps.html/content/mobileapps*
 1. Auswählen **Erstellen** —> **App** wie unten gezeigt
@@ -51,7 +51,7 @@ Nachdem Sie eine App mit dieser Vorlage erstellt haben, können Sie Ihrer App Ar
 
 >[!NOTE]
 >
->Alternativ können Sie auch eine Beispiel-App-Vorlage auswählen, z. B. **We.Unlimited** App, die Ihnen von einem AEM-Entwickler zur Verfügung gestellt wird. Wenn Sie diese Beispielvorlage für Ihre App verwenden, erhalten Sie einige Beispielartikel und Sammlungen, an denen Sie arbeiten können. Sie können die Beispielvorlagen und -komponenten verwenden, die vorhandenen anpassen oder neue für Ihre App erstellen.
+>Alternativ können Sie auch eine Beispiel-App-Vorlage auswählen, z. B.: **We.Unlimited** App, die Ihnen von einem AEM-Entwickler zur Verfügung gestellt wird. Wenn Sie diese Beispielvorlage für Ihre App verwenden, erhalten Sie einige Beispielartikel und Sammlungen, an denen Sie arbeiten können. Sie können die Beispielvorlagen und -komponenten verwenden, die vorhandenen anpassen oder neue für Ihre App erstellen.
 
 >[!CAUTION]
 >
@@ -75,14 +75,14 @@ Jeder Entitätstyp verfügt über zwei vordefinierte Vorlagen. Diese sind:
 
 Der Artikel &quot;Unlimited&quot;ist eine Beispielvorlage, die ein typisches AEM Mobile On-Demand-Artikellayout darstellt.
 
-1. Klicken Sie auf **+** in **Artikel verwalten** , um einen neuen Artikel zu erstellen. Sie können entweder eine **Unbegrenzter Artikel** oder **Rich-Text-Artikel**. Die folgende Abbildung zeigt die Option, aus der Sie eine dieser beiden Artikelvorlagen auswählen können.
+1. In **Artikel verwalten** auswählen **+**  , um einen Artikel zu erstellen. Sie können entweder eine **Unbegrenzter Artikel** oder **Rich-Text-Artikel**. Die folgende Abbildung zeigt die Option, aus der Sie eine dieser beiden Artikelvorlagen auswählen können.
 
-1. Klicken **Nächste** um Artikelmeta-Daten wie Artikelname/Titel, Beschreibung, Autor, Abstract, Abteilung, Miniaturbild, Artikelzugriff usw. zu definieren.
-1. Klicken **Nächste** , um die Eigenschaften der Werbung auszufüllen.
-1. Klicken **Nächste** um Artikelbild oder Social Media-Bild einzugeben
-1. Klicken **Nächste** , um einen Kollektionslink zu diesem neuen Artikel auszuwählen.
-1. Klicken **Nächste** , um Details für Social Sharing einzugeben.
-1. Klicken **Erstellen** , um den Prozess zum Erstellen eines Artikels mithilfe des Beispiels abzuschließen. Klicken Sie entweder auf **Fertig** oder **Artikel bearbeiten** um die Eigenschaften dieses Artikels zu bearbeiten.
+1. Klicks **Nächste** um Artikelmeta-Daten wie Artikelname/Titel, Beschreibung, Autor, Abstract, Abteilung, Miniaturbild, Artikelzugriff usw. zu definieren.
+1. Klicks **Nächste** , um die Eigenschaften der Werbung auszufüllen.
+1. Klicks **Nächste** um ein Artikelbild oder Social Media-Bild einzugeben
+1. Klicks **Nächste** , um einen Kollektionslink zu diesem neuen Artikel auszuwählen.
+1. Klicks **Nächste** , um Details für Social Sharing einzugeben.
+1. Klicks **Erstellen** , um den Prozess zum Erstellen eines Artikels mithilfe des Beispiels abzuschließen. Klicken Sie entweder auf **Fertig** oder **Artikel bearbeiten** um die Eigenschaften dieses Artikels zu bearbeiten.
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
@@ -100,7 +100,7 @@ Wählen Sie &quot;**+**&#39; im linken Bereich, um Komponenten zu Ihrem Artikel 
 
 ### Erstellen von nativen Vorlagen {#creating-out-of-the-box-templates}
 
-Es gibt keine nativen Artikelvorlagen. Es gibt jedoch eine Standardvorlage, die von benutzerdefinierten Vorlagen erweitert werden sollte. Weitere Informationen finden Sie unter Geometrixx Unlimited App [Beispiel für eine Artikelvorlage](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article).
+Es gibt keine nativen Artikelvorlagen. Es gibt jedoch eine Standardvorlage, die benutzerdefinierte Vorlagen erweitern sollten. Weitere Informationen finden Sie unter Geometrixx Unlimited App [Beispiel für eine Artikelvorlage](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article).
 
 Zu den wichtigsten Eigenschaften, die über die normalen erforderlichen Eigenschaften AEM Vorlage hinausgehen, gehören:
 
@@ -108,7 +108,7 @@ Zu den wichtigsten Eigenschaften, die über die normalen erforderlichen Eigensch
 
 Mit dieser Eigenschaft wird sichergestellt, dass die AEM-Seite als AEM Mobile-Targeting-Artikelseite erkannt wird.
 
-Gemäß AEM Vorlagen können Sie der Vorlage alle Standardeigenschaften oder untergeordneten Knoten hinzufügen ***jcr:content***.
+Gemäß AEM Vorlagen können Sie der Vorlage alle Standardeigenschaften oder untergeordneten Knoten hinzufügen. ***jcr:content***.
 
 ### Banner- und Sammlungsvorlagen {#banner-and-collection-templates}
 
@@ -120,7 +120,7 @@ Gemäß AEM Vorlagen können Sie der Vorlage alle Standardeigenschaften oder unt
 
 Komponenten verwenden Widgets und ermöglichen den Zugriff auf Widgets, die zum Rendern des Inhalts verwendet werden.
 
-Eine einfache Komponente ist im Code-Repository enthalten, dessen Quelle in AEM zu finden ist. Anschließend kann es auch lokal in der CRXDE Lite geöffnet werden.
+Eine einfache Komponente ist im Code-Repository enthalten, dessen Quelle in AEM zu finden ist. Anschließend kann es auch lokal in CRXDE Lite geöffnet werden.
 
 >[!NOTE]
 >
@@ -144,16 +144,16 @@ Nachdem die Komponente bereits in eine AEM Seite eingefügt wurde, können Sie d
 
 **So bearbeiten Sie eine vorhandene Komponente:**
 
-1. Wählen Sie diese Seite aus und stellen Sie sicher, dass Sie **Bearbeiten** -Modus und wählen Sie die Komponente aus
+1. Wählen Sie diese Seite aus und stellen Sie sicher, dass Sie sich in **Bearbeiten** -Modus und wählen Sie die Komponente aus
 1. Tippen Sie auf das Schraubenschlüsselsymbol, um die Komponente zu konfigurieren.
 
 >[!NOTE]
 >
->Sie können eine Komponente in AEM erstellen und diese anpassen, indem Sie [Entwickeln mit CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Nachdem Sie die vorhandene Komponente Ihren Anforderungen entsprechend angepasst haben, können Sie sie zu Ihrer Seite hinzufügen, indem Sie die **Bearbeiten** Option unter **Artikel verwalten** wie in der obigen Abbildung dargestellt.
+>Sie können eine Komponente in AEM erstellen und diese anpassen, indem Sie [Entwickeln mit CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Nachdem Sie die vorhandene Komponente Ihren Anforderungen entsprechend angepasst haben, können Sie sie Ihrer Seite mit der **Bearbeiten** Option unter **Artikel verwalten** wie in der obigen Abbildung dargestellt.
 
 >[!NOTE]
 >
->Siehe [Best Practices für die Entwicklung von Vorlagen und Komponenten](/help/mobile/best-practices-aem-mobile.md) in AEM Mobile.
+>Siehe Abschnitt [Best Practices für die Entwicklung von Vorlagen und Komponenten](/help/mobile/best-practices-aem-mobile.md) in AEM Mobile.
 
 ### Die nächsten Schritte {#the-next-steps}
 

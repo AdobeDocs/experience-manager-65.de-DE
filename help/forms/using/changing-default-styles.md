@@ -11,10 +11,10 @@ discoiquuid: 582b0fe8-a92b-4a1d-b859-57f13f53d0d8
 docset: aem65
 feature: Mobile Forms
 exl-id: 4c84cfd1-50a4-416f-b4a5-7f2f4c7f10af
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 54%
+source-wordcount: '366'
+ht-degree: 51%
 
 ---
 
@@ -30,9 +30,9 @@ Die folgenden beiden Bilder zeigen den Unterschied zwischen Standard- und benutz
 
 ## Gestalten Sie Ihre Formulare {#style-your-forms}
 
-1. **Wählen Sie ein Profil aus, um benutzerdefinierte Stile hinzuzufügen**
+1. **Profil auswählen, um benutzerdefinierte Stile hinzuzufügen**
 
-   Rufen Sie die CRX DE-Schnittstelle unter der URL **https://&lt;Server>:&lt;Port>/crx/de** auf und erstellen Sie ein Profil oder wählen Sie ein vorhandenes Profil. Wie Sie ein Profil erstellen, erfahren Sie hier: [Erstellen eines neuen Profils](/help/forms/using/custom-profile.md).
+   Rufen Sie die CRX DE-Schnittstelle unter der URL **https://&lt;Server>:&lt;Port>/crx/de** auf und erstellen Sie ein Profil oder wählen Sie ein vorhandenes Profil. Informationen zum Erstellen eines Profils finden Sie unter [Erstellen eines Profils](/help/forms/using/custom-profile.md)
 
 1. **Erstellen Sie ein CSS-Stylesheet für die Formatierung der HTML5-Formulare**
 
@@ -40,7 +40,7 @@ Die folgenden beiden Bilder zeigen den Unterschied zwischen Standard- und benutz
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner und wählen Sie **erstellen** > **Datei erstellen** aus dem Menü
 
-   1. Geben Sie im Dialogfeld &quot;Datei erstellen&quot;den Namen des Stylesheets ein. Stellen Sie sicher, dass Sie die Erweiterung .css (z. B. stylesheet.css) verwenden.
+   1. Geben Sie im Dialogfeld &quot;Datei erstellen&quot;den Namen des Stylesheets ein. Stellen Sie sicher, dass Sie die Erweiterung .css verwenden (z. B. stylesheet.css).
    1. Öffnen Sie im Navigationsfeld die von Ihnen erstellte CSS-Datei.
    1. Definieren Sie die CSS-Klassen der Komponenten, die Sie gestalten wollen, und fügen Sie in diesen Klassen Stile hinzu.
 

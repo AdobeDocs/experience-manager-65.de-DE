@@ -1,16 +1,16 @@
 ---
 title: Digitales Signieren und Zertifizieren von Dokumenten
-description: Verwenden Sie den Signature-Service, um einem PDF-Dokument digitale Signaturfelder hinzuzufügen und zu löschen, die Namen von Signaturfeldern in einem PDF-Dokument abzurufen, Signaturfelder zu ändern, PDF-Dokumente digital zu signieren, PDF-Dokumente zu zertifizieren, digitale Signaturen in einem PDF-Dokument zu validieren, alle in einem PDF-Dokument enthaltenen digitalen Signaturen zu validieren oder eine digitale Signatur aus einem Signaturfeld zu entfernen.
+description: Mit dem Signature-Dienst können Sie einem PDF-Dokument digitale Signaturfelder hinzufügen und löschen, die Signaturfelder in einem PDF-Dokument abrufen, Signaturfelder ändern, PDF-Dokumente digital signieren, PDF-Dokumente zertifizieren, digitale Signaturen in einem PDF-Dokument validieren, alle digitalen Signaturen in einem PDF-Dokument validieren und eine digitale Signatur aus einem Signaturfeld entfernen.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '17045'
-ht-degree: 85%
+source-wordcount: '17029'
+ht-degree: 83%
 
 ---
 
@@ -37,12 +37,12 @@ Wenn sich mehrere Signaturfelder in einem PDF-Dokument befinden, wird empfohlen,
 Sie können die folgenden Aufgaben mithilfe des Signature-Services ausführen:
 
 * Hinzufügen und Löschen von digitalen Signaturfeldern zu einem PDF-Dokument. (Siehe [Hinzufügen von Signaturfeldern](digitally-signing-certifying-documents.md#adding-signature-fields).)
-* Abrufen der Namen der Signaturfelder, die sich in einem PDF-Dokument befinden. (Siehe [Abrufen von Signaturfeldnamen](digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
+* Rufen Sie die Namen der Signaturfelder in einem PDF-Dokument ab. (Siehe [Abrufen von Signaturfeldnamen](digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
 * Ändern von Signaturfeldern. (Siehe [Ändern von Signaturfeldern](digitally-signing-certifying-documents.md#modifying-signature-fields).)
 * Digitales Signieren von PDF-Dokumenten. (Siehe [Digitales Signieren von PDF-Dokumenten](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 * Zertifizieren von PDF-Dokumenten. (Siehe [Zertifizieren von PDF-Dokumenten](digitally-signing-certifying-documents.md#certifying-pdf-documents).)
-* Validieren digitaler Signaturen, die sich in einem PDF-Dokument befinden. (Siehe [Überprüfen digitaler Signaturen](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
-* Validieren aller digitalen Signaturen, die sich in einem PDF-Dokument befinden. (Siehe [Überprüfen mehrerer digitaler Signaturen](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
+* Digitale Signaturen in einem PDF-Dokument überprüfen. (Siehe [Überprüfen digitaler Signaturen](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
+* Validieren Sie alle digitalen Signaturen in einem PDF-Dokument. (Siehe [Überprüfen mehrerer digitaler Signaturen](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
 * Entfernen einer digitalen Signatur aus einem Signaturfeld. (Siehe [Entfernen digitaler Signaturen](digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
 >[!NOTE]
@@ -347,7 +347,7 @@ Rufen Sie Signaturfeldnamen mit der Signature-API (Webdienst) ab:
 
 ## Ändern von Signaturfeldern {#modifying-signature-fields}
 
-Sie können Signaturfelder in einem PDF-Dokument ändern, indem Sie die Java-API und die Web-Service-API verwenden. Das Ändern eines Signaturfelds umfasst das Manipulieren seiner Signaturfeldsperre- oder Seed-Wert-Lexikonwerte.
+Sie können Signaturfelder in einem PDF-Dokument ändern, indem Sie die Java-API und die Webdienst-API verwenden. Das Ändern eines Signaturfelds umfasst das Manipulieren seiner Signaturfeldsperre- oder Seed-Wert-Lexikonwerte.
 
 Ein *Feldsperre-Wörterbuch* gibt eine Liste von Feldern an, die gesperrt werden, wenn das Signaturfeld signiert wird. Ein gesperrtes Feld verhindert, dass Benutzer Änderungen an dem Feld vornehmen. Ein *Seed-Wert-Wörterbuch* enthält Einschränkungsinformationen, die zum Zeitpunkt der Anwendung der Signatur verwendet werden. Beispiel: Sie können die Berechtigungen ändern, die Aktionen steuern, die auftreten können, ohne dass eine Signatur ungültig wird.
 
@@ -601,7 +601,7 @@ Wenn beim Zertifizieren und Signieren desselben PDF-Dokuments die Zertifizierung
 
 **Signieren von Dokumenten, die XFA-basierte Formulare sind**
 
-Wenn Sie versuchen, ein XFA-basiertes Formular mithilfe der Signature-Service-API zu signieren, fehlen die Daten möglicherweise in der `View` `Signed` `Version`, die sich in Acrobat befindet. Betrachten Sie beispielsweise den folgenden Workflow:
+Wenn Sie versuchen, ein XFA-basiertes Formular mithilfe der Signature-Dienst-API zu signieren, fehlen die Daten möglicherweise in der `View` `Signed` `Version` in Acrobat. Betrachten Sie beispielsweise den folgenden Workflow:
 
 * Mithilfe einer mit Designer erstellten XDP-Datei führen Sie einen Formularentwurf zusammen, der ein Unterschriftsfeld und XML-Daten enthält, die Formulardaten enthalten. Sie verwenden den Forms-Service zum Erzeugen eines interaktiven PDF-Dokuments.
 * Sie signieren das PDF-Dokument mithilfe der Signature-Service-API.
@@ -816,7 +816,7 @@ Digitales Signieren eines PDF-Dokuments mithilfe der Signatur-API (Webdienst):
 
 Sie können ein interaktives Formular signieren, das vom Forms-Service erstellt wird. Betrachten Sie beispielsweise den folgenden Workflow:
 
-* Sie führen mithilfe des Forms-Services ein XFA-basiertes PDF-Formular, das mithilfe von Designer erstellt wurde, und Formulardaten zusammen, die sich in einem XML-Dokument befinden. Der Forms-Server rendert ein interaktives Formular.
+* Sie führen ein XFA-basiertes PDF-Formular zusammen, das mithilfe von Designer erstellt wurde, und Formulardaten in einem XML-Dokument mithilfe des Forms-Dienstes. Der Forms-Server rendert ein interaktives Formular.
 * Sie signieren das interaktive Formular mithilfe der Signature-Service-API.
 
 Das Ergebnis ist ein digital signiertes, interaktives PDF-Formular. Wenn Sie ein PDF-Formular signieren, das auf einem XFA-Formular basiert, stellen Sie sicher, dass Sie die PDF-Datei als statisches Adobe-PDF-Formular speichern. Wenn Sie versuchen, ein PDF-Formular zu signieren, das als Adobe Dynamic PDF-Formular gespeichert ist, tritt eine Ausnahme auf. Da Sie das vom Forms-Dienst zurückgegebene Formular signieren, stellen Sie sicher, dass das Formular ein Signaturfeld enthält.
@@ -1585,7 +1585,7 @@ Beim Zeitstempel wird der Zeitpunkt ermittelt, zu dem ein signiertes oder zertif
 
 **Alle digitalen Signaturen abrufen**
 
-Um alle digitalen Signaturen in einem PDF-Dokument zu überprüfen, rufen Sie die digitalen Signaturen aus dem PDF-Dokument ab. Alle Signaturen werden in einer Liste zurückgegeben. Kontrollieren Sie im Rahmen der Überprüfung einer digitalen Signatur den Status der Signatur.
+Rufen Sie zum Überprüfen aller digitalen Signaturen in einem PDF-Dokument die digitalen Signaturen aus dem PDF-Dokument ab. Alle Signaturen werden in einer Liste zurückgegeben. Kontrollieren Sie im Rahmen der Überprüfung einer digitalen Signatur den Status der Signatur.
 
 >[!NOTE]
 >
@@ -1639,9 +1639,9 @@ Iterieren Sie durch jede Signatur. Das heißt, überprüfen Sie für jede Signat
 
    * Ein `com.adobe.idp.Document`-Objekt, das ein PDF-Dokument mit mehreren digitalen Signaturen enthält.
    * Ein `PKIOptions`-Objekt, das PKI-Laufzeitoptionen enthält.
-   * Eine `VerifySPIOptions`-Instanz, die SPI-Informationen enthält. Sie können `null` für diesen Parameter angeben.
+   * Eine `VerifySPIOptions`-Instanz, die SPI-Informationen enthält. Sie können für diesen Parameter `null` angeben.
 
-   Die `verifyPDFDocument`-Methode gibt ein `PDFDocumentVerificationInfo`-Objekt zurück, das Informationen zu allen digitalen Signaturen, die sich im PDF-Dokument befinden, enthält.
+   Die `verifyPDFDocument` -Methode gibt eine `PDFDocumentVerificationInfo` -Objekt, das Informationen zu allen digitalen Signaturen im PDF-Dokument enthält.
 
 1. Iteration aller Signaturen
 
@@ -1707,7 +1707,7 @@ Iterieren Sie durch jede Signatur. Das heißt, überprüfen Sie für jede Signat
    * Ein `PKIOptions`-Objekt, das PKI-Laufzeitoptionen enthält.
    * Eine `VerifySPIOptions`-Instanz, die SPI-Informationen enthält. Sie können für diesen Parameter null angeben.
 
-   Die Methode `verifyPDFDocument` gibt ein `PDFDocumentVerificationInfo`-Objekt zurück, das Informationen zu allen digitalen Signaturen enthält, die sich im PDF-Dokument befinden.
+   Die `verifyPDFDocument` -Methode gibt eine `PDFDocumentVerificationInfo` -Objekt, das Informationen zu allen digitalen Signaturen im PDF-Dokument enthält.
 
 1. Iteration aller Signaturen
 

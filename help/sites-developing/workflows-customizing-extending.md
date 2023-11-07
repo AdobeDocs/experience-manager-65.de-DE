@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3588'
-ht-degree: 67%
+ht-degree: 66%
 
 ---
 
@@ -528,7 +528,7 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 
 So verwenden Sie das Skript:
 
-1. Erstellen Sie das Skript (z. B. mit CRXDE Lite) und speichern Sie es im Repository unter `//apps/workflow/scripts/`.
+1. Erstellen Sie das Skript (z. B. mit CRXDE Lite) und speichern Sie es im Repository unten `//apps/workflow/scripts/`
 1. Um einen Titel festzulegen, der das Skript im Dialogfeld „Bearbeiten“ von **Prozess-Schritt** identifiziert, fügen Sie die folgenden Eigenschaften zum Knoten `jcr:content` Ihres Skripts hinzu:
 
    | Name | Typ | Wert |
@@ -645,7 +645,7 @@ function getParticipant() {
 }
 ```
 
-1. Erstellen Sie das Skript (z. B. mit CRXDE Lite) und speichern Sie es im Repository unter `//apps/workflow/scripts`.
+1. Erstellen Sie das Skript (z. B. mit CRXDE Lite) und speichern Sie es im Repository unten `//apps/workflow/scripts`
 1. Um einen Titel festzulegen, der das Skript im Dialogfeld „Bearbeiten“ von **Prozess-Schritt** identifiziert, fügen Sie die folgenden Eigenschaften zum Knoten `jcr:content` Ihres Skripts hinzu:
 
    | Name | Typ | Wert |
@@ -825,7 +825,7 @@ Eine einfache Möglichkeit, mit der Erstellung Ihres eigenen benutzerdefinierten
 
      Muss von einem vorhandenen Schritt erben.
 
-     In diesem Beispiel erbt er vom Basisschritt unter `cq/workflow/components/model/step`, aber Sie können auch andere Supertypen wie `participant`, `process` usw. verwenden.
+     In diesem Beispiel erben wir vom Basisschritt bei `cq/workflow/components/model/step`, aber Sie können andere Supertypen wie `participant`, `process`usw.
 
    * `jcr:title`
 
@@ -1042,4 +1042,4 @@ Die in diesem Beispiel verwendete Datei `_cq_dialog/.content.xml`:
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
 >
->  Im Verzeichnis `/libs` dürfen Sie keine Änderungen vornehmen, sondern sollen die Elemente lediglich als Beispiele nutzen. Wenn Sie einen der vorhandenen Schritte nutzen möchten, kopieren Sie ihn in das Verzeichnis `/apps` und bearbeiten Sie ihn dort.
+>  Im Verzeichnis `/libs` dürfen Sie keine Änderungen vornehmen, sondern sollen die Elemente lediglich als Beispiele nutzen. Wenn Sie einen der vorhandenen Schritte verwenden möchten, kopieren Sie ihn in `/apps` und ändern sie dort.

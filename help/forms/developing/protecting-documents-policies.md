@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '15485'
-ht-degree: 83%
+source-wordcount: '15469'
+ht-degree: 82%
 
 ---
 
@@ -293,7 +293,7 @@ So erstellen Sie eine Richtlinie mithilfe der Document Security-API (Webservice)
    * Erstellen Sie ein Objekt `PolicySpec`, indem Sie den Konstruktor verwenden.
    * Legen Sie den Namen der Richtlinie fest, indem Sie dem `PolicySpec` -Objekt `name` Datenelement.
    * Legen Sie die Beschreibung der Richtlinie fest, indem Sie dem `PolicySpec` -Objekt `description` Datenelement.
-   * Geben Sie den Richtliniensatz an, zu dem die Richtlinie gehört, indem Sie dem `PolicySpec` -Objekt `policySetName` Datenelement. Sie müssen den Namen eines bestehenden Richtliniensatzes angeben. (Sie können für diesen Parameterwert `null` angeben, was dazu führt, dass die Richtlinie zu *Meine Richtlinien* hinzugefügt wird).
+   * Geben Sie den Richtliniensatz an, zu dem die Richtlinie gehört, indem Sie dem `PolicySpec` -Objekt `policySetName` Datenelement. Geben Sie einen vorhandenen Richtliniensatznamen an. (Sie können für diesen Parameterwert `null` angeben, was dazu führt, dass die Richtlinie zu *Meine Richtlinien* hinzugefügt wird).
    * Legen Sie die Offline-Nutzungsdauer der Richtlinie fest, indem Sie dem `PolicySpec` -Objekt `offlineLeasePeriod` Datenelement.
    * Legen Sie die `PolicySpec` -Objekt `policyXml` -Datenelement mit einem string -Wert, der PDRL-XML-Daten darstellt. Um diese Aufgabe durchzuführen, erstellen Sie ein .NET `StreamReader`-Objekt mithilfe seines Konstruktors. Übergeben Sie den Speicherort einer PDRL-XML-Datei, die die Richtlinie darstellt, an den `StreamReader`-Konstruktor. Rufen Sie als Nächstes die `StreamReader` -Objekt `ReadLine` -Methode und weisen Sie den Rückgabewert einer Zeichenfolgenvariablen zu. Iterieren Sie durch das `StreamReader`-Objekt, bis die Methode `ReadLine` null zurückgibt. Weisen Sie die Zeichenfolgenvariable dem `PolicySpec` -Objekt `policyXml` Datenelement.
 
@@ -325,7 +325,7 @@ Code-Beispiele zur Verwendung des Document Security-Services finden Sie in den f
 
 Sie können eine bestehende Richtlinie mit der Document Security-Java-API oder der Webservice-API ändern. Um Änderungen an einer bestehenden Richtlinie vorzunehmen, rufen Sie sie ab, ändern Sie sie und aktualisieren Sie dann die Richtlinie auf dem Server. Angenommen, Sie rufen z. B. eine bestehende Richtlinie ab und verlängern ihre Gültigkeitsdauer. Bevor die Änderung wirksam wird, müssen Sie die Richtlinie aktualisieren.
 
-Sie können eine Richtlinie ändern, wenn sich die Geschäftsanforderungen ändern und die Richtlinie diese Anforderungen nicht mehr widerspiegelt. Anstatt eine neue Richtlinie zu erstellen, können Sie einfach eine bestehende Richtlinie aktualisieren.
+Sie können eine Richtlinie ändern, wenn sich die Geschäftsanforderungen ändern und die Richtlinie diese Anforderungen nicht mehr widerspiegelt. Anstatt eine Richtlinie zu erstellen, können Sie einfach eine vorhandene Richtlinie aktualisieren.
 
 Um Richtlinienattribute mithilfe eines Webservices zu ändern (z. B. mithilfe von Java-Proxy-Klassen, die mit JAX-WS erstellt wurden), müssen Sie sicherstellen, dass die Richtlinie beim Document Security-Service registriert ist. Sie können dann mithilfe der Methode `PolicySpec.getPolicyXml` auf die bestehende Richtlinie verweisen und die Richtlinienattribute mithilfe der entsprechenden Methoden ändern. Sie können beispielsweise die Offline-Nutzungsdauer ändern, indem Sie die Methode `PolicySpec.setOfflineLeasePeriod` aufrufen.
 
@@ -353,7 +353,7 @@ Bevor Sie einen Document Security-Service-Vorgang programmgesteuert durchführen
 
 **Abrufen einer bestehenden Richtlinie**
 
-Sie müssen eine vorhandene Richtlinie abrufen, um sie zu ändern. Um eine Richtlinie abzurufen, geben Sie den Richtliniennamen und den Richtliniensatz an, zu dem die Richtlinie gehört. Wenn Sie für den Richtliniensatznamen einen Wert `null` angeben, wird die Richtlinie aus dem Richtliniensatz *Meine Richtlinien* abgerufen.
+Rufen Sie eine vorhandene Richtlinie ab, um sie zu ändern. Um eine Richtlinie abzurufen, geben Sie den Richtliniennamen und den Richtliniensatz an, zu dem die Richtlinie gehört. Wenn Sie für den Richtliniensatznamen einen Wert `null` angeben, wird die Richtlinie aus dem Richtliniensatz *Meine Richtlinien* abgerufen.
 
 **Festlegen der Richtlinienattribute**
 
@@ -878,7 +878,7 @@ Bevor Sie einen Document Security-Service-Vorgang programmatisch ausführen kön
 
 **Abrufen eines richtliniengeschützten PDF-Dokuments**
 
-Sie müssen ein richtliniengeschütztes PDF-Dokument abrufen, um es zu widerrufen. Sie können ein Dokument, das bereits widerrufen wurde oder nicht richtliniengeschützt ist, nicht widerrufen.
+Rufen Sie ein richtliniengeschütztes PDF-Dokument ab, um es zu sperren. Sie können ein Dokument, das bereits widerrufen wurde oder nicht richtliniengeschützt ist, nicht widerrufen.
 
 Wenn Sie den Wert der Lizenzkennung des richtliniengeschützten Dokuments kennen, ist es nicht erforderlich, das richtliniengeschützte PDF-Dokument abzurufen. In den meisten Fällen müssen Sie jedoch das PDF-Dokument abrufen, um den Lizenzkennungswert zu erhalten.
 
@@ -1020,7 +1020,7 @@ Bevor Sie einen Document Security-Service-Vorgang programmatisch ausführen kön
 
 **Abrufen der Lizenzkennung des widerrufenen PDF-Dokuments**
 
-Sie müssen die Lizenzkennung des gesperrten PDF-Dokuments abrufen, um ein gesperrtes PDF-Dokument erneut zu aktivieren. Nachdem Sie den Wert der Lizenzkennung erhalten haben, können Sie ein widerrufenes Dokument erneut zugänglich machen. Wenn Sie versuchen, ein Dokument erneut zugänglich zu machen, das nicht widerrufen wurde, wird eine Ausnahme ausgelöst.
+Rufen Sie die Lizenzkennung des gesperrten PDF-Dokuments ab, um ein gesperrtes PDF-Dokument erneut zu aktivieren. Nachdem Sie den Wert der Lizenzkennung erhalten haben, können Sie ein widerrufenes Dokument erneut zugänglich machen. Wenn Sie versuchen, ein Dokument erneut zugänglich zu machen, das nicht widerrufen wurde, wird eine Ausnahme ausgelöst.
 
 **Wiederherstellen des Zugriffs auf das widerrufene PDF-Dokument**
 
@@ -1287,7 +1287,7 @@ Bevor Sie einen Document Security-Service-Vorgang programmatisch ausführen kön
 
 **Festlegen der Wasserzeichenattribute**
 
-Um ein neues Wasserzeichen zu erstellen, müssen Sie Wasserzeichenattribute festlegen. Das Namensattribut muss immer definiert sein. Zusätzlich zum Namensattribut müssen Sie mindestens eines der folgenden Attribute festlegen:
+Um ein Wasserzeichen zu erstellen, müssen Sie Wasserzeichenattribute festlegen. Das Namensattribut muss immer definiert sein. Zusätzlich zum Namensattribut müssen Sie mindestens eines der folgenden Attribute festlegen:
 
 * Benutzerdefinierter Text
 * DateIncluded
@@ -1408,7 +1408,7 @@ So erstellen Sie ein Wasserzeichen mithilfe der Document Security-API (Java):
    * Legen Sie das Attribut name des Wasserzeichens fest, indem Sie die `Watermark` -Objekt `setName` -Methode verwenden und einen string -Wert übergeben, der den Richtliniennamen angibt.
    * Legen Sie das Hintergrundattribut des Wasserzeichens fest, indem Sie die `Watermark` -Objekt `setBackground` Methode und Übergabe `true`. Wenn Sie dieses Attribut festlegen, wird das Wasserzeichen im Hintergrund des Dokuments angezeigt.
    * Festlegen des benutzerdefinierten Textattributs des Wasserzeichens durch Aufrufen der `Watermark` -Objekt `setCustomText` -Methode verwenden und einen string -Wert übergeben, der den Text des Wasserzeichens darstellt.
-   * Festlegen des Deckkraftattributs des Wasserzeichens durch Aufrufen der `Watermark` -Objekt `setOpacity` -Methode verwenden und einen ganzzahligen Wert übergeben, der die Deckkraft angibt. Der Wert 100 bedeutet, dass das Wasserzeichen vollständig undurchsichtig ist, und der Wert 0 bedeutet, dass das Wasserzeichen vollständig transparent ist.
+   * Festlegen des Deckkraftattributs des Wasserzeichens durch Aufrufen der `Watermark` -Objekt `setOpacity` -Methode verwenden und einen ganzzahligen Wert übergeben, der die Deckkraft angibt. Der Wert 100 zeigt an, dass das Wasserzeichen vollständig undurchsichtig ist, und der Wert 0 zeigt an, dass das Wasserzeichen vollständig transparent ist.
 
 1. Registrieren Sie das Wasserzeichen.
 
@@ -1554,7 +1554,7 @@ So ändern Sie ein Wasserzeichen mithilfe der Document Security-API (Java):
 
 1. Legen Sie die Wasserzeichenattribute fest.
 
-   Festlegen des Deckkraftattributs des Wasserzeichens durch Aufrufen der `Watermark` -Objekt `setOpacity` -Methode verwenden und einen ganzzahligen Wert übergeben, der die Deckkraft angibt. Der Wert 100 bedeutet, dass das Wasserzeichen vollständig undurchsichtig ist, und der Wert 0 bedeutet, dass das Wasserzeichen vollständig transparent ist.
+   Festlegen des Deckkraftattributs des Wasserzeichens durch Aufrufen der `Watermark` -Objekt `setOpacity` -Methode verwenden und einen ganzzahligen Wert übergeben, der die Deckkraft angibt. Der Wert 100 zeigt an, dass das Wasserzeichen vollständig undurchsichtig ist, und der Wert 0 zeigt an, dass das Wasserzeichen vollständig transparent ist.
 
    >[!NOTE]
    >
@@ -1622,9 +1622,9 @@ Der Rights Management-Service verfolgt bestimmte Aktionen, während sie auftrete
 
 Ereignisse werden in die folgenden Kategorien unterteilt:
 
-* Administratorereignisse sind Aktionen, die sich auf einen Administrator beziehen, z. B. die Erstellung eines neuen Administratorkontos.
+* Administrator-Ereignisse sind Aktionen, die sich auf einen Administrator beziehen, z. B. die Erstellung eines Administratorkontos.
 * Dokumentereignisse sind Aktionen im Zusammenhang mit einem Dokument, z. B. das Schließen eines richtliniengeschützten Dokuments.
-* Richtlinienereignisse sind Aktionen im Zusammenhang mit einer Richtlinie, z. B. die Erstellung einer neuen Richtlinie.
+* Richtlinienereignisse sind Aktionen im Zusammenhang mit einer Richtlinie, z. B. das Erstellen einer Richtlinie.
 * Service-Ereignisse sind Aktionen im Zusammenhang mit dem Rights Management-Service, z. B. die Synchronisierung mit dem Benutzerverzeichnis.
 
 Sie können mit der Rights Management-Java-API oder der Webservice-API nach bestimmten Ereignissen suchen. Durch die Suche nach Ereignissen können Sie Aufgaben ausführen, z. B. eine Protokolldatei bestimmter Ereignisse erstellen.
@@ -1652,7 +1652,7 @@ Bevor Sie einen Rights Management-Service-Vorgang programmgesteuert durchführen
 
 **Geben Sie die Ereignisse an, nach denen gesucht werden soll**
 
-Sie müssen das zu suchende Ereignis angeben. Sie können beispielsweise nach dem Richtlinienerstellungsereignis suchen, das beim Erstellen einer neuen Richtlinie auftritt.
+Geben Sie das zu suchende Ereignis an. Sie können beispielsweise nach dem Richtlinienerstellungsereignis suchen, das beim Erstellen einer neuen Richtlinie auftritt.
 
 **Suchen nach dem Ereignis**
 
@@ -1977,7 +1977,7 @@ Bevor Sie einen Document Security-Service-Vorgang programmatisch ausführen kön
 
 **Abrufen eines Word-Dokuments**
 
-Sie müssen ein Word-Dokument abrufen, um eine Richtlinie anzuwenden. Nachdem Sie eine Richtlinie auf das Word-Dokument angewendet haben, sind Benutzer bei der Verwendung des Dokuments eingeschränkt. Wenn die Richtlinie beispielsweise nicht das Öffnen des Dokuments im Offline-Modus ermöglicht, müssen die Benutzer online sein, um das Dokument zu öffnen.
+Rufen Sie ein Word-Dokument ab, um eine Richtlinie anzuwenden. Nachdem Sie eine Richtlinie auf das Word-Dokument angewendet haben, sind Benutzer bei der Verwendung des Dokuments eingeschränkt. Wenn die Richtlinie beispielsweise nicht das Öffnen des Dokuments im Offline-Modus ermöglicht, müssen die Benutzer online sein, um das Dokument zu öffnen.
 
 **Vorhandene Richtlinie auf das Word-Dokument anwenden**
 
@@ -2132,7 +2132,7 @@ Bevor Sie einen Document Security Service-Vorgang programmgesteuert durchführen
 
 **Abrufen eines richtliniengeschützten Word-Dokuments**
 
-Sie müssen ein richtliniengeschütztes Word-Dokument abrufen, um eine Richtlinie zu entfernen. Wenn Sie versuchen, eine Richtlinie aus einem Word-Dokument zu entfernen, das gar nicht durch eine Richtlinie geschützt ist, wird eine Ausnahme verursacht.
+Rufen Sie ein richtliniengeschütztes Word-Dokument ab, um eine Richtlinie zu entfernen. Wenn Sie versuchen, eine Richtlinie aus einem Word-Dokument zu entfernen, das gar nicht durch eine Richtlinie geschützt ist, wird eine Ausnahme verursacht.
 
 **Entfernen der Richtlinie aus dem Word-Dokument**
 

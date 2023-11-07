@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: d0d29b99-53d4-4b0d-947b-39d91b381de7
 exl-id: 37428543-c310-4712-a4ec-1f482579fb4b
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '407'
 ht-degree: 5%
 
 ---
@@ -35,7 +35,7 @@ Von dort aus ist es möglich, Inhalte zu veröffentlichen, in der Vorschau anzuz
 >
 >Weitere Informationen finden Sie unter [Einrichten von AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) im Abschnitt &quot;Administration&quot;.
 
-Um Mobile On-Demand-Cloud Services zu konfigurieren, klicken Sie oben rechts im **Verbindung verwalten** -Kachel aus Ihrem App-Dashboard aus.
+Um Mobile On-Demand-Cloud Service zu konfigurieren, klicken Sie oben rechts im **Verbindung verwalten** -Kachel aus Ihrem App-Dashboard aus.
 
 Sie sollten mit dem App-Dashboard und den verfügbaren Kacheln vertraut sein. Siehe [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) für weitere Details.
 
@@ -47,14 +47,14 @@ Sie sollten mit dem App-Dashboard und den verfügbaren Kacheln vertraut sein. Si
 >
 >Weitere Informationen finden Sie unter [Einrichten von AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) im Abschnitt &quot;Administration&quot;.
 
-Die folgenden Schritte beschreiben die Einrichtung eines Links zur Cloud-Konfiguration:
+Im Folgenden wird beschrieben, wie Sie einen Link zur Cloud-Konfiguration einrichten:
 
-1. Von **Mobile** auswählen **Apps** und dann Ihre Mobile On-Demand-App aus dem Katalog.
+1. Von **Mobilnummer** auswählen **Apps** und dann Ihre Mobile On-Demand-App aus dem Katalog.
 1. Klicken Sie auf das Zahnradsymbol auf **Verbindung verwalten** Kachel.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Geben Sie die bereits vorhandene Konfiguration ein oder erstellen Sie eine neue, indem Sie die **Konfigurationstitel**, **Geräte-ID** und **Geräte-Token**.
+1. Geben Sie die bereits vorhandene Konfiguration ein oder erstellen Sie eine, indem Sie die **Konfigurationstitel**, **Geräte-ID**, und **Geräte-Token**.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
@@ -64,7 +64,7 @@ Die folgenden Schritte beschreiben die Einrichtung eines Links zur Cloud-Konfigu
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-   Die **Verbindung verwalten** -Kachel zeigt Ihre Cloud-Konfiguration an.
+   Die **Verbindung verwalten** zeigt Ihre Cloud-Konfiguration an.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -79,7 +79,7 @@ Die folgenden Schritte beschreiben die Einrichtung eines Links zur Cloud-Konfigu
 Nachdem Sie die Cloud-Konfiguration für Ihre App konfiguriert haben, finden Sie weitere Informationen zum Verwalten von Inhalten in den folgenden Ressourcen:
 
 * [Verwalten von Artikeln](/help/mobile/mobile-on-demand-managing-articles.md)
-* [Verwalten von Bannern](/help/mobile/mobile-on-demand-managing-banners.md)
+* [Banner verwalten](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Verwalten von Sammlungen](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Hochladen freigegebener Ressourcen](/help/mobile/mobile-on-demand-shared-resources.md)
 * [Veröffentlichen/Veröffentlichung des Inhalts rückgängig machen](/help/mobile/mobile-on-demand-publishing-unpublishing.md)

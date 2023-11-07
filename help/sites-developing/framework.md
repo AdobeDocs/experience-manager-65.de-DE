@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1645'
-ht-degree: 47%
+source-wordcount: '1639'
+ht-degree: 60%
 
 ---
 
@@ -23,11 +23,11 @@ Tagging ermöglicht die Kategorisierung und Organisation von Inhalten. Tags kön
 * Siehe Dokument . [Verwenden von Tags](/help/sites-authoring/tags.md) für Informationen zum Tagging von Inhalten als Inhaltsautor.
 * Siehe Dokument . [Verwalten von Tags](/help/sites-administering/tags.md) für die Perspektive eines Administrators zum Erstellen und Verwalten von Tags und darüber, auf welche Inhalts-Tags angewendet wurden.
 
-Dieser Artikel konzentriert sich auf das zugrunde liegende Framework, das Tagging in AEM unterstützt, und auf die Verwendung als Entwickler.
+Dieser Artikel konzentriert sich auf das zugrunde liegende Framework, das Tagging in AEM unterstützt, und darauf, wie man es als Entwicklerin bzw. Entwickler nutzen kann.
 
 ## Einführung {#introduction}
 
-So taggen Sie Inhalte und verwenden die AEM Tagging-Infrastruktur:
+Taggen Sie Inhalte und nutzen Sie die AEM-Tagging-Infrastruktur wie folgt:
 
 * Das Tag muss unterhalb des [Stammknotens der Taxonomie](#taxonomy-root-node) als Knoten vom Typ `[cq:Tag](#tags-cq-tag-node-type)` vorhanden sein.
 
@@ -38,11 +38,11 @@ So taggen Sie Inhalte und verwenden die AEM Tagging-Infrastruktur:
 
 Die Funktion eines Tags wird im Repository in einem Knoten vom Typ `cq:Tag` erfasst..
 
-Ein Tag kann ein einfaches Wort sein (z. B. `sky`) oder stellen eine hierarchische Taxonomie dar (z. B. `fruit/apple`, d. h. sowohl das generische `fruit` und spezifischere `apple`).
+Ein Tag kann ein einfaches Wort sein (zum Beispiel `sky`) oder stellen eine hierarchische Taxonomie dar (z. B. `fruit/apple`, d. h. sowohl das generische `fruit` und spezifischere `apple`).
 
 Tags werden durch eine eindeutige Tag-ID identifiziert.
 
-Ein Tag verfügt über optionale Metainformationen wie einen Titel, lokalisierte Titel und eine Beschreibung. Der Titel sollte, falls vorhanden, auf Benutzeroberflächen anstelle der Tag-ID angezeigt werden.
+Ein Tag weist optionale Metadaten auf, z. B. einen Titel, lokalisierte Titel und eine Beschreibung. Der Titel sollte, falls vorhanden, auf Benutzeroberflächen anstelle der Tag-ID angezeigt werden.
 
 Das Tagging-Framework bietet außerdem die Möglichkeit, Autoren und Website-Besuchern die Verwendung bestimmter, vordefinierter Tags vorzugeben.
 
@@ -50,13 +50,13 @@ Das Tagging-Framework bietet außerdem die Möglichkeit, Autoren und Website-Bes
 
 * Knotentyp ist `cq:Tag`n
 * Knotenname ist eine Komponente der [TagID](#tagid).
-* Die [TagID](#tagid) enthält immer [Namespace.](#tag-namespace)
+* Die [TagID](#tagid) enthält immer eine [Namespace.](#tag-namespace)
 * Die `jcr:title` -Eigenschaft (der Titel, der in der Benutzeroberfläche angezeigt werden soll) optional ist.
 * Die Eigenschaft `jcr:description` ist optional.
 * Wenn untergeordnete Knoten enthalten, wird das Tag als [Container-Tag.](#container-tags)
 * Das Tag wird im Repository unterhalb eines Basispfads gespeichert, der als [Stammknoten der Taxonomie](#taxonomy-root-node) bezeichnet wird.
 
-Da Tags einfach JCR-Knoten sind, müssen die Knotennamen natürlich an die [JCR-Namenskonvention.](naming-conventions.md)
+Da Tags lediglich JCR-Knoten sind, müssen die Knotennamen durch die [JCR-Namenskonvention.](naming-conventions.md)
 
 ### TagID (Tag-ID) {#tagid}
 
@@ -66,7 +66,7 @@ Normalerweise ist die TagID eine kurze Tag-ID, die mit dem Namespace beginnt, od
 
 Wenn Inhalt mit Tags versehen ist und noch nicht vorhanden ist, wird die `[cq:tags](#tagged-content-cq-tags-property)` -Eigenschaft zum Inhaltsknoten hinzugefügt und die TagID zum `String` Array-Wert.
 
-Die Tag-ID besteht aus einem [Namespace](#tag-namespace) gefolgt von der lokalen Tag-ID. [Container-Tags](#container-tags) untergeordnete Tags aufweisen, die eine hierarchische Reihenfolge in der Taxonomie darstellen. Subtags können verwendet werden, um Tags zu referenzieren, die mit jeder lokalen Tag-ID übereinstimmen. Beispiel: Tagging von Inhalten mit `fruit` ist erlaubt, auch wenn es sich um ein Container-Tag mit Untertags handelt, wie z. B. `fruit/apple` und `fruit/banana`.
+Die Tag-ID besteht aus einem [Namespace](#tag-namespace) gefolgt von der lokalen Tag-ID. [Container-Tags](#container-tags) weisen untergeordnete Tags auf, die eine hierarchische Reihenfolge in der Taxonomie darstellen. Subtags können verwendet werden, um Tags zu referenzieren, die mit jeder lokalen Tag-ID übereinstimmen. Beispielsweise ist es erlaubt, Inhalte mit dem Tag `fruit` zu versehen, auch wenn es sich um ein Container-Tag mit untergeordneten Tags handelt, z. B. `fruit/apple` oder `fruit/banana`.
 
 ### Stammknoten der Taxonomie {#taxonomy-root-node}
 
@@ -86,7 +86,7 @@ Alle Tags haben einen Namespace. Wenn kein Namespace angegeben ist, wird das Tag
 
 Container-Tags sind Knoten vom Typ `cq:Tag`, die eine beliebige Anzahl untergeordneter Knoten von beliebigen Typen enthalten. Das ermöglicht die Erweiterung des Tag-Modells mit benutzerdefinierten Metadaten.
 
-Darüber hinaus dienen Container-Tags (oder Super-Tags) in einer Taxonomie als Übergabe aller Unter-Tags. Beispielsweise Inhalte, die mit `fruit/apple` wird als mit `fruit` sowie Das heißt, nach Inhalten suchen, die mit `fruit` auch den Inhalt finden, mit dem `fruit/apple`.
+Darüber hinaus dienen Container-Tags (oder Super-Tags) in einer Taxonomie als Übergabe aller Unter-Tags. Zum Beispiel Inhalte, die mit `fruit/apple` wird als mit `fruit` sowie. Das heißt, bei der Suche nach Inhalten, die mit `fruit` getaggt sind, werden auch Inhalte gefunden, die mit `fruit/apple` getaggt sind.
 
 ### Auflösen von Tag-IDs {#resolving-tagids}
 
@@ -112,8 +112,8 @@ Wenn das Tag die optionale Titelzeichenfolge enthält ( `jcr:title`) kann der Ti
 
 Weitere Informationen finden Sie in den folgenden Dokumenten:
 
-* [Tags in verschiedenen Sprachen](/help/sites-developing/building.md#tags-in-different-languages), in dem die Verwendung der APIs beschrieben wird
-* [Verwalten von Tags in verschiedenen Sprachen](/help/sites-administering/tags.md#managing-tags-in-different-languages), in dem die Verwendung der Tagging-Konsole beschrieben wird
+* [Tags in verschiedenen Sprachen](/help/sites-developing/building.md#tags-in-different-languages); beschreibt die Verwendung der APIs
+* [Verwalten von Tags in verschiedenen Sprachen](/help/sites-administering/tags.md#managing-tags-in-different-languages); beschreibt die Verwendung der Tagging-Konsole
 
 ### Zugriffssteuerung {#access-control}
 
@@ -125,11 +125,11 @@ Eine typische Vorgehensweise umfasst Folgendes:
 
 * Gewähren von Schreibzugriff auf alle Namespaces für die Gruppe/Rolle `tag-administrators` (unter `/content/cq:tags` hinzufügen/ändern). Diese Gruppe enthält AEM standardmäßig.
 * Gewähren von Lesezugriff für Benutzer/Autoren auf alle Namespaces, die sie lesen können müssen (meist alle).
-* Ermöglicht Benutzern/Autoren das Schreiben von Zugriff auf die Namespaces, in denen Tags von Benutzern/Autoren frei definiert werden sollen (fügen Sie einen Knoten unter hinzu `/content/cq:tags/some_namespace`)
+* Ermöglicht Benutzern/Autoren das Schreiben von Zugriff auf die Namespaces, in denen Tags von Benutzern/Autoren frei definiert werden sollen (fügen Sie einen Knoten unter `/content/cq:tags/some_namespace`)
 
 ## Tag-barer Inhalt: cq:Taggable-Mixin {#taggable-content-cq-taggable-mixin}
 
-Damit Anwendungsentwickler Tagging an einen Inhaltstyp anhängen können, muss die Registrierung des Knotens ([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html)) muss Folgendes enthalten: `cq:Taggable` Mixin oder `cq:OwnerTaggable` Mixin.
+Damit Anwendungsentwicklerinnen und -entwickler einen Inhaltstyp mit Tags versehen können, muss die Registrierung eines Knotens ([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html)) das Mixin `cq:Taggable` oder das Mixin `cq:OwnerTaggable` umfassen.
 
 Das Mixin `cq:OwnerTaggable`, das von `cq:Taggable` übernimmt, soll anzeigen, dass der Inhalt vom Besitzer/Autor klassifiziert werden kann. In AEM handelt es sich hierbei nur um ein Attribut des Knotens `cq:PageContent`. Das Mixin `cq:OwnerTaggable` wird vom Tagging-Framework nicht benötigt.
 
@@ -138,7 +138,7 @@ Das Mixin `cq:OwnerTaggable`, das von `cq:Taggable` übernimmt, soll anzeigen, d
 >Es wird empfohlen, Tags nur auf dem Knoten der obersten Ebene eines aggregierten Inhaltselements (oder dessen `jcr:content`-Knoten) zu aktivieren. Beispiele dafür sind:
 >
 >* Seiten (`cq:Page`), wobei die `jcr:content`node is type `cq:PageContent` , der Folgendes umfasst: `cq:Taggable` mixin
->* Assets ( `cq:Asset`), wobei die `jcr:content/metadata` Knoten hat immer die `cq:Taggable` mixin
+>* Assets ( `cq:Asset`), wobei die `jcr:content/metadata` -Knoten hat immer die `cq:Taggable` mixin
 >
 
 ### Knotentypnotation (CND) {#node-type-notation-cnd}
@@ -168,7 +168,7 @@ Die `cq:tags` -Eigenschaft ist `String` -Array, das zum Speichern einer oder meh
 
 >[!NOTE]
 >
->Um AEM Tagging-Funktionen zu verwenden, sollten benutzerdefinierte entwickelte Anwendungen keine anderen Tag-Eigenschaften definieren als `cq:tags`.
+>Um die AEM-Tagging-Funktionalität zu nutzen, sollten benutzerdefiniert entwickelte Anwendungen keine anderen Tag-Eigenschaften als `cq:tags` definieren.
 
 ## Verschieben und Zusammenführen von Tags {#moving-and-merging-tags}
 
@@ -181,7 +181,7 @@ Im Folgenden werden die Auswirkungen im Repository beim Verschieben oder Zusamme
 
 * `cq:movedTo` verweist auf Tag B.
 
-   * Diese Eigenschaft bedeutet, dass Tag A in Tag B verschoben oder zusammengeführt wurde. Durch Verschieben von Tag B wird diese Eigenschaft entsprechend aktualisiert. Tag A ist somit ausgeblendet und wird nur im Repository behalten, um Tag-IDs in Inhaltsknoten aufzulösen, die auf Tag A verweisen. Der Garbage Collector für Tags entfernt Tags wie Tag A, sobald keine Inhaltsknoten mehr darauf verweisen.
+   * Diese Eigenschaft bedeutet, dass Tag A in Tag B verschoben oder zusammengeführt wurde. Durch Verschieben von Tag B wird diese Eigenschaft entsprechend aktualisiert. Tag A ist somit ausgeblendet und wird nur im Repository behalten, um Tag-IDs in Inhaltsknoten aufzulösen, die auf Tag A verweisen. Der Garbage Collector für Tags entfernt Tags wie Tag A, sobald keine Inhaltsknoten mehr darauf verweisen.
 
    * Ein spezieller Wert für `cq:movedTo` Eigenschaft ist `nirvana`. Sie wird angewendet, wenn das Tag gelöscht wird, aber nicht aus dem Repository entfernt werden kann, da es Untertags mit einer `cq:movedTo` die gehalten werden müssen.
 
@@ -192,7 +192,7 @@ Im Folgenden werden die Auswirkungen im Repository beim Verschieben oder Zusamme
   >1. Tag wird im Inhalt verwendet (d. h. es hat einen Verweis) oder
   >1. Das Tag enthält bereits verschobene untergeordnete Elemente.
 
-* `cq:backlinks` behält die Verweise in die andere Richtung. Das heißt, es enthält eine Liste aller Tags, die in Tag B verschoben oder mit Tag B zusammengeführt wurden. Dies ist hauptsächlich erforderlich, um `cq:movedTo` -Eigenschaften aktualisiert werden, wenn Tag B verschoben/zusammengeführt/gelöscht oder Tag B aktiviert wird. In diesem Fall müssen auch alle Backlinks-Tags aktiviert werden.
+* `cq:backlinks` behält die Verweise in die andere Richtung bei. Das heißt, es behält eine Liste aller Tags, die in Tag B verschoben oder mit ihm zusammengeführt wurden. Dies ist hauptsächlich erforderlich, um `cq:movedTo`-Eigenschaften auf dem aktuellen Stand zu halten, wenn Tag B auch verschoben/zusammengeführt/gelöscht oder aktiviert wird. In diesem Fall müssen all seine backlinks-Tags ebenso aktiviert werden.
 
   >[!NOTE]
   >
@@ -221,6 +221,6 @@ Im Folgenden werden die Auswirkungen im Repository beim Verschieben oder Zusamme
 
 ## Tag-Migration {#tags-migration}
 
-Seit Adobe Experience Manager 6.4 werden Tags unter `/content/cq:tags` In früheren Versionen wurden Tags unter gespeichert. `/etc/tags`.
+Seit Adobe Experience Manager 6.4 werden Tags unter `/content/cq:tags` In früheren Versionen wurden Tags unter `/etc/tags`.
 
-Beim Aktualisieren eines AEM Systems von einer Version vor 6.4 müssen Tags in `/content/cq:tags`. Lesen Sie das Dokument [Allgemeine Repository-Neustrukturierung in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags) für weitere Informationen.
+Beim Aktualisieren eines AEM Systems von einer Version vor 6.4 müssen Tags in `/content/cq:tags`. Siehe [Allgemeine Repository-Neustrukturierung in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags) für weitere Informationen.

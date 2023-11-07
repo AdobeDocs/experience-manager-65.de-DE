@@ -1,18 +1,14 @@
 ---
 title: Unterstützung von Encapsulated Tokens
-seo-title: Encapsulated Token Support
 description: Erfahren Sie mehr über die Unterstützung von Encapsulated Token in AEM.
-seo-description: Learn about the Encapsulated Token support in AEM.
-uuid: a7c6f269-bb5a-49ba-abef-ea029202ab6d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '792'
 ht-degree: 35%
 
 ---
@@ -47,7 +43,7 @@ Wie dies in einer geografisch verteilten Bereitstellung mit MongoMK-Autoren und 
 
 >[!NOTE]
 >
->Beachten Sie, dass es beim Encapsulated Token um die Authentifizierung geht. Dadurch wird sichergestellt, dass das Cookie validiert werden kann, ohne auf das Repository zugreifen zu müssen. Es ist jedoch weiterhin erforderlich, dass der Benutzer in allen Instanzen vorhanden ist und dass die unter diesem Benutzer gespeicherten Informationen von jeder Instanz aufgerufen werden können.
+>Das Encapsulated Token bezieht sich auf die Authentifizierung. Dadurch wird sichergestellt, dass das Cookie validiert werden kann, ohne auf das Repository zugreifen zu müssen. Es ist jedoch weiterhin erforderlich, dass der Benutzer in allen Instanzen vorhanden ist und dass die unter diesem Benutzer gespeicherten Informationen von jeder Instanz aufgerufen werden können.
 >
 >Wenn beispielsweise ein neuer Benutzer auf der Veröffentlichungsinstanz Nr. 1 erstellt wird, wird er aufgrund der Funktionsweise des Encapsulated Token erfolgreich auf der Veröffentlichungsinstanz Nr. 2 authentifiziert. Wenn der Benutzer nicht in der zweiten Veröffentlichungsinstanz vorhanden ist, ist die Anfrage trotzdem nicht erfolgreich.
 >

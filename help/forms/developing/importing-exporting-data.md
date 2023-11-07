@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2774'
-ht-degree: 97%
+source-wordcount: '2771'
+ht-degree: 95%
 
 ---
 
@@ -123,7 +123,7 @@ Um Daten in ein PDF-Formular zu importieren, müssen Sie entweder auf ein in Des
 
 **Referenzieren einer XML-Datenquelle**
 
-Um Formulardaten zu importieren, müssen Sie auf eine gültige Datenquelle verweisen. Um Daten in ein in Designer erstelltes XFA-XML-Formular zu importieren, müssen Sie eine XDP-XML-Datenquelle verwenden. Wenn Sie auf ein Acrobat-Formular verweisen, müssen Sie eine XFDF-Datenquelle verwenden. Sie müssen für jedes Feld, in das Sie Daten importieren möchten, einen Wert angeben. Falls ein Element in der XML-Datenquelle keinem Feld im Formular entspricht, wird das Element ignoriert.
+Um Formulardaten zu importieren, müssen Sie auf eine gültige Datenquelle verweisen. Um Daten in ein in Designer erstelltes XFA-XML-Formular zu importieren, müssen Sie eine XDP-XML-Datenquelle verwenden. Wenn Sie auf ein Acrobat-Formular verweisen, müssen Sie eine XFDF-Datenquelle verwenden. Sie müssen für jedes Feld, in das Sie Daten importieren möchten, einen Wert angeben. Wenn ein Element in der XML-Datenquelle keinem Feld im Formular entspricht, wird das Element ignoriert.
 
 **Importieren der Daten in das PDF-Formular**
 
@@ -177,7 +177,7 @@ Importieren von Formulardaten mit der Form Data Integration-API (Java):
    * Das `com.adobe.idp.Document`-Objekt, in dem das PDF-Formular gespeichert wird.
    * Das `com.adobe.idp.Document`-Objekt, in dem Formulardaten gespeichert werden.
 
-   Die `importData`-Methode gibt ein `com.adobe.idp.Document`-Objekt zurück, in dem ein PDF-Formular gespeichert ist, das die Daten aus der XML-Datenquelle enthält.
+   Die `importData` -Methode gibt eine `com.adobe.idp.Document` -Objekt, das ein PDF-Formular speichert, das die Daten in der XML-Datenquelle enthält.
 
 1. Speichern Sie das Formular als PDF-Datei.
 
@@ -242,7 +242,7 @@ Importieren von Formulardaten mithilfe der Form Data Integration-API (Web-Servic
    * Das `BLOB`-Objekt, in dem das PDF-Formular gespeichert wird.
    * Das `BLOB`-Objekt, in dem Formulardaten gespeichert werden.
 
-   Die `importData`-Methode gibt ein `BLOB`-Objekt zurück, in dem ein PDF-Formular gespeichert ist, das die Daten aus der XML-Datenquelle enthält.
+   Die `importData` -Methode gibt eine `BLOB` -Objekt, das ein PDF-Formular speichert, das die Daten in der XML-Datenquelle enthält.
 
 1. Speichern Sie das Formular als PDF-Datei.
 

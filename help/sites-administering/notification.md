@@ -1,19 +1,15 @@
 ---
 title: Konfigurieren von E-Mail-Benachrichtigungen
-seo-title: Configuring Email Notification
 description: Erfahren Sie, wie Sie E-Mail-Benachrichtigungen in Adobe Experience Manager konfigurieren.
-seo-description: Learn how to configure Email Notification in AEM.
-uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2069'
-ht-degree: 95%
+source-wordcount: '2067'
+ht-degree: 93%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 95%
 
 AEM sendet E-Mail-Benachrichtigungen an Benutzerinnen und Benutzer, die:
 
-* Seitenereignisse wie Änderungen oder Replikationen abonniert haben. Im Abschnitt [Benachrichtigungs-Posteingang](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) ist beschrieben, wie solche Ereignisse abonniert werden können.
+* Sie haben Seitenereignisse abonniert, z. B. Änderungen oder Replikation. Im Abschnitt [Benachrichtigungs-Posteingang](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) ist beschrieben, wie solche Ereignisse abonniert werden können.
 
 * Forumsveranstaltungen abonniert haben.
 * Einen Schritt in einem Workflow ausführen müssen. Im Abschnitt [Teilnehmerschritt](/help/sites-developing/workflows-step-ref.md#participant-step) wird beschrieben, wie E-Mail-Benachrichtigungen in einem Workflow ausgelöst werden können.
@@ -279,7 +275,7 @@ Sie können OAuth für mehrere E-Mail-Anbieter konfigurieren, wie unten beschrie
    * `https://mail.google.com/`
    * `https://www.googleapis.com//auth/gmail.send`
 1. Nachdem Sie die Bereiche hinzugefügt haben, gehen Sie zurück zu **Anmeldedaten** im Menü links und dann zu **Erstellen von Anmeldedaten** > **OAuth-Client-ID** > **Desktop-Programm**.
-1. Daraufhin wird ein neues Fenster mit der Client-ID und dem Client-Geheimnis geöffnet.
+1. Ein neues Fenster mit der Client-ID und dem Client-Geheimnis wird geöffnet.
 1. Speichern Sie diese Anmeldedaten.
 
 **AEM-Seitenkonfigurationen**
@@ -361,7 +357,7 @@ Bestätigen Sie abschließend die Konfiguration, indem Sie:
 1. Gehen Sie dann zu **Zertifikate und Geheimnisse**, klicken Sie auf **Neues Client-Geheimnis** und führen Sie die Schritte auf dem Bildschirm aus, um ein Geheimnis zu erstellen. Notieren Sie sich dieses Geheimnis für die spätere Verwendung.
 1. Klicken Sie auf **Überblick** im linken Bereich und kopieren Sie die Werte für **Anwendungs (Client) ID** und **Directory (Mandant) ID** zur späteren Verwendung.
 
-Zusammenfassend benötigen Sie die folgenden Informationen, um OAuth2 für den E-Mail-Service auf der AEM-Seite zu konfigurieren:
+Um eine Neukodierung durchzuführen, müssen Sie über die folgenden Informationen verfügen, um OAuth2 für den Mailer-Dienst auf der AEM zu konfigurieren:
 
 * Die Auth-URL, die mit der Mandanten-ID erstellt wird. Sie hat folgendes Format: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
 * Die Token-URL, die mit der Mandanten-ID erstellt wird. Sie hat folgendes Format: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`

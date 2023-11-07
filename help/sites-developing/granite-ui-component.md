@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: e4820330-2ee6-4eca-83fd-462aa0b83647
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '525'
 ht-degree: 23%
 
 ---
 
 # Erstellen einer neuen Feld-Komponente in der Granite-Benutzeroberfläche{#creating-a-new-granite-ui-field-component}
 
-Die Granite-Benutzeroberfläche bietet eine Reihe von Komponenten, die für die Verwendung in Formularen entwickelt wurden. diese *fields* im Vokabular der Granite-Benutzeroberfläche. Die standardmäßigen Granite-Formularkomponenten sind unter verfügbar:
+Die Granite-Benutzeroberfläche bietet eine Reihe von Komponenten, die für die Verwendung in Formularen entwickelt wurden. Diese werden als *fields* im Vokabular der Granite-Benutzeroberfläche. Die standardmäßigen Granite-Formularkomponenten sind unter verfügbar:
 
 `/libs/granite/ui/components/foundation/form/*`
 
@@ -44,8 +44,8 @@ Verwenden Sie das Foundation-Framework der Granite-Benutzeroberfläche, um Grani
 
 Die generische Komponente `field` der Granite-Benutzeroberfläche beinhaltet zwei wichtige Dateien:
 
-* `init.jsp`: verarbeitet die generische Verarbeitung; Beschriftung, Beschreibung und stellt einen Formularwert bereit, den Sie beim Rendern Ihres Felds benötigen.
-* `render.jsp`: Hier wird das tatsächliche Rendering des Felds durchgeführt und muss für Ihr benutzerdefiniertes Feld überschrieben werden. ist enthalten von `init.jsp`.
+* `init.jsp`: verarbeitet die generische Verarbeitung, Beschriftung und Beschreibung und stellt den Formularwert bereit, den Sie beim Rendern Ihres Felds benötigen.
+* `render.jsp`: Hier wird das tatsächliche Rendering des Felds durchgeführt und muss für Ihr benutzerdefiniertes Feld überschrieben werden. Ist enthalten von `init.jsp`.
 
 Siehe [Granite-UI-Dokumentation - Feld](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) für Details.
 
@@ -85,7 +85,7 @@ Das benutzerdefinierte Feld sollte das `render.jsp`-Skript nur überschreiben, w
    vm.get("value, String.class");
    ```
 
-   Weitere Informationen finden Sie in der Implementierung von nativen Feldern der Granite-Benutzeroberfläche. Beispiel: `/libs/granite/ui/components/foundation/form/textfield`.
+   Weitere Informationen finden Sie in der Implementierung von nativen Feldern der Granite-Benutzeroberfläche, z. B.: `/libs/granite/ui/components/foundation/form/textfield`.
 
    >[!NOTE]
    >

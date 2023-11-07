@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6836'
-ht-degree: 47%
+source-wordcount: '6818'
+ht-degree: 45%
 
 ---
 
@@ -23,7 +23,7 @@ Seit AEM 6.3 gibt es eine neue Implementierung geschlossener Benutzergruppen , d
 
 >[!NOTE]
 >
->Der Einfachheit halber wird das Feature im Rahmen dieser Dokumentation als „CUG“ abgekürzt (für Closed User Group, geschlossene Benutzergruppe).
+>Aus Gründen der Einfachheit wird in dieser Dokumentation die CUG-Abkürzung verwendet.
 
 Das Ziel der neuen Implementierung ist, wo nötig vorhandene Funktionen zu übernehmen, aber gleichzeitig Probleme und entwicklungsbedingte Einschränkungen älterer Versionen zu beheben. Das Ergebnis ist ein neues CUG-Design mit den folgenden Eigenschaften:
 
@@ -104,7 +104,7 @@ Die folgenden Best Practices sollten bei der Definition des eingeschränkten Les
    * Ein übermäßiger Bedarf an verschachtelten CUGs kann Probleme beim Inhaltserstellung hervorheben
    * Ein sehr übermäßiger Bedarf an CUGs (z. B. auf jeder einzelnen Seite) kann auf die Notwendigkeit eines benutzerdefinierten Autorisierungsmodells hinweisen, das möglicherweise besser auf die spezifischen Sicherheitsanforderungen der vorliegenden Anwendung und des vorliegenden Inhalts abgestimmt ist.
 
-* Beschränken Sie die für CUG-Richtlinien unterstützten Pfade auf einige Bäume im Repository, um eine optimierte Leistung zu ermöglichen. Lassen Sie CUGs beispielsweise nur unterhalb des Knotens „/content“ zu, wie seit Einführung von AEM 6.3 standardmäßig festgelegt ist.
+* Beschränken Sie die für CUG-Richtlinien unterstützten Pfade auf einige Bäume im Repository, um eine optimierte Leistung zu ermöglichen. Lassen Sie beispielsweise nur CUGs unter dem Knoten /content zu, die seit AEM 6.3 als Standardwert geliefert wurden.
 * CUG-Richtlinien sind so konzipiert, dass sie Lesezugriff auf eine kleine Gruppe von Prinzipalen gewähren. Die Notwendigkeit einer großen Anzahl von Prinzipalen kann Probleme beim Inhalt oder Anwendungsdesign hervorheben und sollte überdacht werden.
 
 ### Authentifizierung: Definieren der Authentifizierungspflicht {#authentication-defining-the-auth-requirement}
@@ -207,7 +207,7 @@ Der neue Richtlinientyp für die Zugriffssteuerung, mit dem der Lesezugriff für
 
 #### Neue CUG-Richtlinie festlegen {#set-a-new-cug-policy}
 
-Code zum Anwenden einer neuen CUG-Richtlinie auf einen Knoten, für den zuvor keine CUG festgelegt wurde. `getApplicablePolicies` gibt nur neue Richtlinien zurück, die noch nie festgelegt wurden. Am Ende muss die Richtlinie zurückgeschrieben und Änderungen müssen beibehalten werden.
+Code zum Anwenden einer neuen CUG-Richtlinie auf einen Knoten, für den zuvor keine CUG festgelegt wurde. Beachten Sie Folgendes: `getApplicablePolicies` gibt nur neue Richtlinien zurück, die zuvor noch nicht festgelegt wurden. Am Ende muss die Richtlinie zurückgeschrieben und Änderungen müssen beibehalten werden.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -243,7 +243,7 @@ session.save();
 
 #### Vorhandene CUG-Richtlinie bearbeiten {#edit-an-existing-cug-policy}
 
-Die folgenden Schritte sind erforderlich, um eine vorhandene CUG-Richtlinie zu bearbeiten. Die angepasste Richtlinie muss zurückgeschrieben und Änderungen müssen mit `javax.jcr.Session.save()` beibehalten werden.
+Die folgenden Schritte sind erforderlich, um eine vorhandene CUG-Richtlinie zu bearbeiten. Die geänderte Richtlinie muss zurückgeschrieben werden und die Änderungen müssen mithilfe von `javax.jcr.Session.save()`.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -281,7 +281,7 @@ Die JCR-Zugriffssteuerungsverwaltung definiert eine Methode mit bestem Aufwand, 
 
 >[!NOTE]
 >
->Zwischen `getEffectivePolicies` und dem folgenden Codebeispiel, das die Hierarchie von unten nach oben betrachtet, um herauszufinden, ob ein gegebener Pfad bereits Teil einer bestehenden CUG ist, bestehen Unterschiede.
+>Der Unterschied zwischen `getEffectivePolicies` und das nachfolgende Codebeispiel, das die Hierarchie führt, um zu ermitteln, ob ein bestimmter Pfad bereits Teil einer vorhandenen CUG ist.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -338,7 +338,7 @@ Das Erstellen, Ändern oder Entfernen einer neuen Authentifizierungspflicht wird
 
 #### Hinzufügen einer neuen Authentifizierungspflicht {#adding-a-new-auth-requirement}
 
-Die Schritte zum Erstellen einer neuen Authentifizierungspflicht werden nachfolgend beschrieben. Die Pflicht wird nur dann beim Apache Sling Authenticator registriert, wenn der `RequirementHandler` für die Baumstruktur mit dem Zielknoten konfiguriert wurde.
+Die Schritte zum Erstellen einer Authentifizierungspflicht werden nachfolgend beschrieben. Die Anforderung wird nur beim Apache Sling Authenticator registriert, wenn die `RequirementHandler` wurde für den Baum konfiguriert, der den Zielknoten enthält.
 
 ```java
 Node targetNode = [...]
@@ -349,7 +349,7 @@ session.save();
 
 #### Hinzufügen einer neuen Authentifizierungspflicht mit dem Anmeldepfad {#add-a-new-auth-requirement-with-login-path}
 
-Schritte zum Erstellen einer neuen Authentifizierungspflicht, einschließlich eines Anmeldepfads. Die Pflicht und die Ausnahme für den Anmeldepfad wird nur dann beim Apache Sling Authenticator registriert, wenn der `RequirementHandler` für die Baumstruktur mit dem Zielknoten konfiguriert wurde.
+Schritte zum Erstellen einer Authentifizierungspflicht, einschließlich eines Anmeldepfads. Die Pflicht und die Ausnahme für den Anmeldepfad wird nur dann beim Apache Sling Authenticator registriert, wenn der `RequirementHandler` für die Baumstruktur mit dem Zielknoten konfiguriert wurde.
 
 ```java
 Node targetNode = [...]
@@ -582,7 +582,7 @@ Die verfügbaren Konfigurationsoptionen, die mit dem CUG-Autorisierungsmodul ver
 
 #### Ausschluss von Prinzipalen aus der CUG-Auswertung {#excluding-principals-from-cug-evaluation}
 
-Die Befreiung einzelner Prinzipale von der CUG-Bewertung wurde von der früheren Implementierung übernommen. Die neue CUG-Autorisierung behandelt dies anhand einer dedizierten Schnittstelle mit der Bezeichnung „CugExclude“. Apache Jackrabbit Oak 1.4 umfasst eine Standardimplementierung, die einen festen Satz von Prinzipalen sowie eine erweiterte Implementierung umfasst, welche die Konfiguration individueller Prinzipalnamen ermöglicht. Letztere wird in AEM Veröffentlichungsinstanzen konfiguriert.
+Die Befreiung einzelner Prinzipale von der CUG-Bewertung wurde von der früheren Implementierung übernommen. Die neue CUG-Autorisierung behandelt dies anhand einer dedizierten Schnittstelle mit der Bezeichnung „CugExclude“. Apache Jackrabbit Oak 1.4 verfügt über eine Standardimplementierung, die einen festen Satz von Prinzipalen und eine erweiterte Implementierung ausschließt, die die Konfiguration einzelner Prinzipallamen ermöglicht. Letztere wird in AEM Veröffentlichungsinstanzen konfiguriert.
 
 Der Standardwert seit AEM 6.3 verhindert, dass die folgenden Prinzipale von CUG-Richtlinien betroffen sind:
 
@@ -768,11 +768,11 @@ Die Konfiguration von CUGs in Verbindung mit Live Copy wird im Repository durch
 
 Beide Elemente werden unter `cq:Page` erstellt. Mit dem aktuellen Design verarbeitet MSM nur Knoten und Eigenschaften, die sich unter dem Knoten `cq:PageContent` (`jcr:content`) befinden.
 
-Daher können CUG-Gruppen in Live Copies nicht aus Blueprints bereitgestellt werden. Planen Sie dies ein, wenn Sie eine Live Copy konfigurieren.
+Daher können CUG-Gruppen in Live Copies nicht aus Blueprints bereitgestellt werden. Planen Sie dies bei der Konfiguration der Live Copy.
 
 ## Änderungen an der neuen CUG-Implementierung {#changes-with-the-new-cug-implementation}
 
-Ziel dieses Abschnitts ist es, einen Überblick über die Änderungen an der CUG-Funktion sowie einen Vergleich zwischen der alten und der neuen Implementierung zu geben. Er listet die Änderungen auf, die sich auf die Konfiguration der CUG-Unterstützung auswirken, und beschreibt, wie und von wem CUGs im Repository-Inhalt verwaltet werden.
+Ziel dieses Abschnitts ist es, einen Überblick über die Änderungen an der CUG-Funktion und einen Vergleich zwischen der alten und der neuen Implementierung zu geben. Er listet die Änderungen auf, die sich auf die Konfiguration der CUG-Unterstützung auswirken, und beschreibt, wie und von wem CUGs im Repository-Inhalt verwaltet werden.
 
 ### Unterschiede bei CUG-Einrichtung und -Konfiguration {#differences-in-cug-setup-and-configuration}
 

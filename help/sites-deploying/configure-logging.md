@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
 feature: Configuring
 exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 61%
+source-wordcount: '660'
+ht-degree: 62%
 
 ---
 
@@ -135,13 +135,13 @@ Die anderen Paare folgen der Standardkonfiguration:
 
 Sie können Ihr eigenes Logger-/Writer-Paar definieren:
 
-1. Erstellen einer neuen Instanz der Factory-Konfiguration [Apache Sling Logging Logger-Konfiguration](/help/sites-deploying/osgi-configuration-settings.md).
+1. Erstellen einer Instanz der Factory-Konfiguration [Apache Sling Logging Logger-Konfiguration](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. Geben Sie die Protokolldatei an.
    1. Geben Sie den Logger an.
    1. Konfigurieren Sie ggf. die anderen Parameter.
 
-1. Erstellen einer neuen Instanz der Factory-Konfiguration [Apache Sling Logging Writer-Konfiguration](/help/sites-deploying/osgi-configuration-settings.md).
+1. Erstellen einer Instanz der Factory-Konfiguration [Apache Sling Logging Writer-Konfiguration](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. Geben Sie die Protokolldatei an - diese muss mit der für den Logger angegebenen übereinstimmen.
    1. Konfigurieren Sie ggf. die anderen Parameter.

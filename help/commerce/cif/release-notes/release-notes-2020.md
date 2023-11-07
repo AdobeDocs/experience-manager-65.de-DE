@@ -2,9 +2,9 @@
 title: AEM Content and Commerce – Versionshinweise 2020
 description: Versionshinweise zu Adobe Experience Manager Content and Commerce 2020.
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1353'
 ht-degree: 68%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 68%
 
 * Eine neue Karussellkomponente für Kategorie wurde hinzugefügt, damit geschäftliche Benutzer diese Komponente per Drag-and-Drop auf AEM Inhaltsseiten einfügen können, um Inhaltsseiten mit Commerce-Daten anzureichern.
 
-* CIF-Kernkomponenten wurden erweitert, sodass sie die Adobe-Client-Datenschicht durch Senden von Commerce-Daten einbinden. Die Adobe Client-Datenschicht ist eine standardisierte Methode zur Erfassung von Daten und zur Kommunikation der Daten mit Digital Analytics- und Reporting-Servern. Weitere Informationen finden Sie unter [Adobe-Client-Datenschicht](https://github.com/adobe/adobe-client-data-layer/wiki).
+* CIF-Kernkomponenten wurden erweitert, sodass sie die Adobe-Client-Datenschicht durch Senden von Commerce-Daten einbinden. Die Adobe Client-Datenschicht ist eine standardisierte Methode zur Erfassung von Daten und zur Kommunikation der Daten mit Digital Analytics- und Reporting-Servern. Weitere Informationen finden Sie unter [Adobe Client-Datenschicht](https://github.com/adobe/adobe-client-data-layer/wiki).
 
 * Produktdetailseiten und Produktlistenseiten wurden erweitert, um SEO-Metadaten (wie Titel, Meta-Beschreibung, Meta-Schlüsselwörter) automatisch auszufüllen, die über die Adobe Commerce-Benutzeroberfläche für Admins konfiguriert wurden.
 

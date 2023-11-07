@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fec86f03-f81e-460a-9f84-d6304c95128c
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Dieser Handler sollte zu jeder AEM Apps ContentSync-Konfiguration hinzugefügt w
 }
 ```
 
-**mobilecontentpackageslisting** Listet das AEM Inhaltspaket in einer bestimmten App sowie die serverURL auf, an die Aktualisierungsanfragen gestellt werden sollen. Dies wird Client-seitig js auf dem Gerät verwendet, um Inhaltsaktualisierungen anzufordern
+**mobilecontentpackageslisting** Listet das AEM Inhaltspaket in einer bestimmten App und die serverURL auf, an die Aktualisierungsanfragen gestellt werden sollen. Dies wird Client-seitig js auf dem Gerät verwendet, um Inhaltsaktualisierungen anzufordern
 
 Der Handler sollte in AEM App Shell ContentSync Config (Knoten mit page-type=app-instance) verwendet werden
 
@@ -157,7 +157,7 @@ AEM Eigenschaften sind diejenigen, die mit &quot;cq&quot;, &quot;sling&quot;oder
 
    * andere ContentSync-Konfiguration
    * zu einem Inhaltspaket hinzu (verwendet seine phonegap-exportTemplate-Eigenschaft, um die ContentSync-Konfiguration zu finden)
-   * zu einer Mobile-Ressource (App-Content&#39;s finden Sie unter dieser Ressource und wenn diese Inhaltspakete über eine page-includeInBuild -Eigenschaft verfügen, die wahr ist, wird die phonegap-exportTemplate verwendet, um die ContentSync-Konfiguration zu finden).
+   * zu einer mobilen Ressource (App-Inhalte befinden sich unter dieser Ressource und wenn diese Inhaltspakete über eine Eigenschaft &quot;page-includeInBuild&quot;verfügen, die &quot;true&quot;ist, wird die phonegap-exportTemplate verwendet, um die ContentSync-Konfiguration zu finden).
 
 * ***autoCreateFirstUpdateBeforeImport - Boolean*** - Wenn &quot;true&quot;, erstellen Sie eine erste **update** in der Zielkonfiguration vor dem Import, falls noch nicht einmal vorhanden
 

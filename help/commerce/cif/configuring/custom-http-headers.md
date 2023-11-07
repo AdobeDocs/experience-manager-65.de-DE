@@ -2,10 +2,10 @@
 title: Anwenderdefinierte HTTP-Kopfzeilen
 description: Erfahren Sie, wie Sie benutzerdefinierte HTTP-Header in Adobe Experience Manager Commerce konfigurieren.
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 95%
+source-wordcount: '273'
+ht-degree: 82%
 
 ---
 
@@ -26,11 +26,11 @@ Um die benutzerdefinierten HTTP-Kopfzeilen zu konfigurieren, müssen Sie sie zue
 
 Sie können die Werte der HTTP-Kopfzeilen auf der Seite „Cloud Service-Konfiguration“ für Ihr Projekt konfigurieren:
 
-1. Navigieren Sie zur Seite „Cloud Service-Konfiguration“ unter „Tools“ > „Cloud Services“ > „CIF-Konfiguration“.
-1. Öffnen Sie eine vorhandene Konfiguration oder erstellen Sie eine neue.
+1. Rufen Sie die Seite zur Cloud Service-Konfiguration unter Tools > Cloud Services > CIF auf.
+1. Öffnen Sie eine vorhandene Konfiguration oder erstellen Sie eine.
 1. Wechseln Sie zur Registerkarte „Erweitert“ und suchen Sie das Multi-Feld „Anwenderdefinierte HTTP-Kopfzeilen“. Sie können die zuvor definierten Kopfzeilen auswählen und ihnen Werte zuweisen.
 
-Die Komponenten, die die obige Cloud Service-Konfiguration verwenden, senden diese HTTP-Kopfzeilen mit jeder GraphQL-Anfrage.
+Die Komponenten, die die obige Cloud Service-Konfiguration verwenden, senden diese HTTP-Header bei jeder GraphQL-Anforderung.
 
 ## Einschränkungen {#restrictions}
 

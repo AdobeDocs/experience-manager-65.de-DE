@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 693859b0-a0c3-43f1-95c0-be48a90d7d8d
 role: Developer
 exl-id: 1f5a2cf3-ef6b-45b4-8fa8-b300e492fee1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1526'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1525'
+ht-degree: 99%
 
 ---
 
@@ -74,7 +74,7 @@ Wenn Sie ein DDX-Dokument validieren möchten, müssen Sie bestimmte Laufzeitopt
 
 Nachdem Sie den Assembler-Service-Client erstellt, auf das DDX-Dokument verwiesen und Laufzeitoptionen festgelegt haben, können Sie den `invokeDDX`-Vorgang zum Überprüfen des DDX-Dokuments aufrufen. Bei der Validierung des DDX-Dokuments können Sie `null` als map-Parameter übergeben (dieser Parameter speichert in der Regel PDF-Dokumente, die der Assembler benötigt, um die im DDX-Dokument angegebenen Vorgänge auszuführen).
 
-Wenn die Validierung fehlschlägt, wird eine Ausnahme ausgelöst und die Protokolldatei enthält Details, die erklären, warum das DDX-Dokument ungültig ist. Diese Details können Sie von der `OperationException`-Instanz abgerufen werden. Nach der grundlegenden XML-Analyse und Schemaprüfung wird die Validierung anhand der DDX-Spezifikation durchgeführt. Alle im DDX-Dokument enthaltenen Fehler werden im Protokoll angegeben.
+Wenn die Validierung fehlschlägt, wird eine Ausnahme ausgelöst und die Protokolldatei enthält Details, die erklären, warum das DDX-Dokument ungültig ist. Diese Details können Sie von der `OperationException`-Instanz abgerufen werden. Nach der grundlegenden XML-Analyse und Schemaprüfung wird die Validierung anhand der DDX-Spezifikation durchgeführt. Alle Fehler, die im DDX-Dokument enthalten sind, werden im Protokoll angegeben.
 
 **Die Prüfergebnisse in einer Protokolldatei speichern**
 

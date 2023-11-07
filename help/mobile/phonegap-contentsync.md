@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 docset: aem65
 exl-id: 2cadd9c5-4335-48d0-8d1c-941fca717409
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2959'
+source-wordcount: '2957'
 ht-degree: 1%
 
 ---
@@ -287,7 +287,7 @@ Beachten Sie, dass *Fabrik* -Definition enthält die gemeinsame Schnittstelle un
 
 ### Implementieren eines benutzerdefinierten Update-Handlers {#implementing-a-custom-update-handler}
 
-Jede We.Retail Mobile-Seite enthält ein Logo in der oberen linken Ecke, das wir natürlich in die ZIP-Datei aufnehmen möchten. Zur Cache-Optimierung verweist AEM jedoch nicht auf den tatsächlichen Speicherort der Bilddatei im Repository, was verhindert, dass wir einfach die **copy** Konfigurationstyp. Was wir stattdessen tun müssen, ist, uns selbst zu versorgen **logo** Konfigurationstyp, der das Bild an dem von AEM angeforderten Speicherort verfügbar macht. Die folgende Codeauflistung zeigt die vollständige Implementierung des Logupdate-Handlers:
+Jede We.Retail Mobile-Seite enthält ein Logo in der oberen linken Ecke, das wir in die ZIP-Datei aufnehmen möchten. Zur Cache-Optimierung verweist AEM jedoch nicht auf den tatsächlichen Speicherort der Bilddatei im Repository, was verhindert, dass wir einfach die **copy** Konfigurationstyp. Was wir stattdessen tun müssen, ist, uns selbst zu versorgen **logo** Konfigurationstyp, der das Bild an dem von AEM angeforderten Speicherort verfügbar macht. Die folgende Codeauflistung zeigt die vollständige Implementierung des Logupdate-Handlers:
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 

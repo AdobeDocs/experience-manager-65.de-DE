@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 99%
+source-wordcount: '1892'
+ht-degree: 88%
 
 ---
 
@@ -72,7 +72,7 @@ Diese Struktur kann über die Websites-Konsole angezeigt werden, die Sie verwend
 
 ### Seitenbenennungskonventionen {#page-naming-conventions}
 
-Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
+Beim Erstellen einer Seite gibt es zwei Schlüsselfelder:
 
 * **[Titel](#title)**:
 
@@ -84,7 +84,7 @@ Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
    * Mit diesem Wert wird der URI generiert.
    * Benutzereingaben sind für dieses Feld optional. Wenn kein Name angegeben ist, wird der Name vom Titel abgeleitet.
 
-Wenn Sie eine neue Seite erstellen, validiert AEM [den Seitennamen gemäß den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR.
+AEM beim Erstellen einer Seite [validiert den Seitennamen gemäß den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR aufgezwungen.
 
 Die Implementierung und die Liste von zulässigen Zeichen variieren entsprechend der Benutzeroberfläche (umfangreicher für die Touch-optimierte Benutzeroberfläche). Das zulässige Minimum ist:
 
@@ -98,7 +98,7 @@ Verwenden Sie nur diese Zeichen, wenn Sie sicherstellen möchten, dass sie akzep
 
 #### Titel {#title}
 
-Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen** für die Seite von dieser Zeichenfolge ab und [validiert den Namen entsprechend den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR. In beiden Benutzeroberflächen wird ein Feld **Titel**, das ungültige Zeichen enthält, akzeptiert, aber in dem abgeleiteten Namen werden die ungültigen Zeichen ersetzt. Beispiel:
+Wenn Sie nur eine Seite angeben **Titel** leitet AEM die Seite beim Erstellen einer Seite ab **Name** aus dieser Zeichenfolge und [den Namen gemäß den Konventionen validieren](/help/sites-developing/naming-conventions.md) von AEM und JCR aufgezwungen. In beiden Benutzeroberflächen wird ein Feld **Titel**, das ungültige Zeichen enthält, akzeptiert, aber in dem abgeleiteten Namen werden die ungültigen Zeichen ersetzt. Beispiel:
 
 | Titel | Abgeleiteter Name |
 |---|---|
@@ -107,7 +107,7 @@ Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den
 
 #### Name {#name}
 
-Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen entsprechend den Konventionen von AEM und JCR](/help/sites-developing/naming-conventions.md).
+Wenn Sie eine Seite angeben **Name** beim Erstellen einer Seite AEM [validiert den Namen gemäß den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR aufgezwungen.
 
 In der klassischen Benutzeroberfläche ist **die Eingabe von ungültigen Zeichen** im Feld **Name** unzulässig.
 
@@ -155,7 +155,7 @@ Sobald Sie eine Seite erstellt und geöffnet haben, können Sie mithilfe der Kom
 
 Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstellen, bevor Sie mit der Erstellung von Inhalten beginnen können:
 
-1. Wählen Sie aus der Konsole **Websites** die Ebene aus, auf der Sie eine neue Seite erstellen möchten.
+1. Aus dem **Websites** -Konsole, wählen Sie die Ebene aus, auf der Sie eine Seite erstellen möchten.
 
    Im folgenden Beispiel erstellen Sie eine Seite auf der Ebene **Produkte**, die im linken Bereich angezeigt wird. Der rechte Bereich zeigt Seiten, die bereits auf der Ebene unter **Produkte** existieren.
 
@@ -170,7 +170,7 @@ Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstell
    * Angabe eines **Titels**, der für die Benutzenden angezeigt wird.
    * Angabe eines **Namens**, der für die Erzeugung des URI verwendet wird. Wenn kein Name angegeben wird, wird der Name aus dem Titel abgeleitet.
 
-      * Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, validiert AEM [den Namen entsprechend den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR.
+      * Wenn Sie eine Seite angeben **Name** beim Erstellen einer Seite AEM [validiert den Namen gemäß den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR eingeführt.
       * In der klassischen Benutzeroberfläche ist **die Eingabe von ungültigen Zeichen** im Feld **Name** unzulässig.
 
    * Klicken Sie auf die Vorlage, die Sie zum Erstellen der neuen Seite verwenden möchten.
@@ -181,7 +181,7 @@ Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstell
    >
    >Siehe [Seitenbenennungskonventionen](#page-naming-conventions).
 
-   Zum Erstellen einer neuen Seite sind mindestens ein **Titel** und die Vorlage erforderlich.
+   Die zum Erstellen einer Seite mindestens erforderlichen Informationen sind die **Titel** und die erforderliche Vorlage.
 
    ![screen_shot_2012-02-15at114845am](assets/screen_shot_2012-02-15at114845am.png)
 
@@ -191,11 +191,11 @@ Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstell
 
 1. Klicken Sie auf **Erstellen**, um die Seite zu erstellen. Dann kehren Sie zur Konsole **Websites** zurück, wo Sie den Eintrag für die neue Seite sehen können.
 
-   Die Konsole enthält Informationen über die Seite (z. B. wann und von wem sie zuletzt bearbeitet wurde), die nach Bedarf aktualisiert werden.
+   Die Konsole enthält Informationen über die Seite (z. B. wann sie zuletzt bearbeitet wurde und von wem), die nach Bedarf aktualisiert werden.
 
    >[!NOTE]
    >
-   >Sie können auch eine Seite erstellen, wenn Sie eine vorhandene Seite bearbeiten. Mit **Untergeordnete Seite erstellen** auf der Registerkarte **Seite** im Sidekick erstellen Sie eine neue Seite direkt unter der Seite, die Sie bearbeiten.
+   >Sie können auch eine Seite erstellen, wenn Sie eine vorhandene Seite bearbeiten. Verwenden **Untergeordnete Seite erstellen** aus dem **Seite** -Registerkarte des Sidekicks erstellt eine Seite direkt unter der Seite, die bearbeitet wird.
 
 ### Öffnen einer Seite zur Bearbeitung {#opening-a-page-for-editing}
 
@@ -235,7 +235,7 @@ Beim Kopieren können Sie Folgendes kopieren:
 
    >[!NOTE]
    >
-   >Sie können auch **Seite kopieren** auf der Registerkarte **Seite** des Sidekicks verwenden. Dadurch wird ein Dialogfeld geöffnet, in dem Sie das Ziel usw. angeben können.
+   >Sie können auch **Seite kopieren** auf der Registerkarte **Seite** des Sidekicks verwenden. Dadurch wird ein Dialogfeld geöffnet, in dem Sie das Ziel angeben können usw.
 
 ### Verschieben oder Umbenennen einer Seite {#moving-or-renaming-page}
 
@@ -331,7 +331,7 @@ Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite eine [Sei
 
 1. Öffnen Sie die Konsole **Websites** und navigieren Sie zum gewünschten Ort.
 1. Klicken Sie im Menü **Neu...** (klicken Sie auf den Pfeil neben **Neu...**) auf **Neuer Ordner...**
-1. Das Dialogfeld **Ordner erstellen** wird geöffnet. Hier können Sie den **Namen** und den **Titel** eingeben:
+1. Die **Ordner erstellen** wird geöffnet. Hier können Sie den **Namen** und den **Titel** eingeben:
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 

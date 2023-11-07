@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 91%
+source-wordcount: '898'
+ht-degree: 88%
 
 ---
 
@@ -182,7 +182,7 @@ Das **Auditprotokoll** kann über die Registerkarte **Informationen** im Sidekic
 
 ## Seiteninformationen {#page-information}
 
-Die Website-Konsole enthält auch [Informationen zum aktuellen Status der Seite](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), wie zum Beispiel Veröffentlichung, Bearbeitung, gesperrt und Live Copy.
+Die Website-Konsole [liefert Informationen zum aktuellen Status der Seite](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) wie Veröffentlichung, Änderung, Sperrung, Live Copy usw.
 
 ## Seitenmodi {#page-modes}
 
@@ -207,7 +207,7 @@ In diesem Modus können Sie das Design der Seite bearbeiten, indem Sie die verf�
 >
 >* [Strukturvorlage](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
 >* [ClientContext](/help/sites-administering/client-context.md)
->* Websites – öffnet die Konsole „Websites“.
+>* Websites - öffnet die Websites-Konsole.
 >* Neu laden – aktualisiert die Seite.
 
 ## Tastaturbefehle {#keyboard-shortcuts}

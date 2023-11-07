@@ -1,7 +1,7 @@
 ---
 title: Erstellen und Verwalten von Richtliniensätzen
 seo-title: Creating and managing policy sets
-description: Richtliniensätze dienen zum Gruppieren von Richtlinien mit einem gemeinsamen Zweck. Sie können Richtlinien in einem Richtliniensatz erstellen, bearbeiten und löschen.
+description: Richtliniensätze dienen zum Gruppieren von Richtlinien mit einem gemeinsamen Geschäftszweck. Sie können Richtlinien in einem Richtliniensatz erstellen, bearbeiten und löschen.
 seo-description: Policy sets are used to group policies that have a common business purpose. You can create, edit and delete policies in a policy set.
 uuid: 11faf67c-b9b7-4394-8672-d43cace131ad
 contentOwner: admin
@@ -11,106 +11,106 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
 feature: Document Security
 exl-id: 736926af-ae41-4da3-b181-444de72407bd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1295'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1294'
+ht-degree: 15%
 
 ---
 
 # Erstellen und Verwalten von Richtliniensätzen {#creating-and-managing-policy-sets}
 
-Richtliniensätze dienen zum Gruppieren von Richtlinien mit einem gemeinsamen Zweck. Richtliniensätze können einer Untermenge der Benutzer im System zur Verfügung gestellt werden.
+Richtliniensätze dienen zum Gruppieren von Richtlinien mit einem gemeinsamen Geschäftszweck. Richtliniensätze können einer Untergruppe von Benutzern im System zur Verfügung gestellt werden.
 
-Jedem Richtliniensatz ist mindestens ein Richtliniensatzkoordinator zugeordnet. Der *Richtliniensatzkoordinator* ist ein Administrator oder Benutzer mit zusätzlichen Berechtigungen. Der Richtliniensatzkoordinator ist in der Regel ein Spezialist im Unternehmen, der die Richtlinien in einem Richtliniensatz am besten verwalten kann.
+Jedem Richtliniensatz ist mindestens ein Richtliniensatzkoordinator zugeordnet. Die *Richtliniensatzkoordinator* ist ein Administrator oder Benutzer mit zusätzlichen Berechtigungen. Der Richtliniensatzkoordinator ist in der Regel ein Spezialist im Unternehmen, der die Richtlinien in einem bestimmten Richtliniensatz am besten verfassen kann.
 
-Richtliniensatzkoordinatoren können diese Aufgaben ausführen:
+Richtliniensatz-Koordinatorinnen und -Koordinatoren können die folgenden Aufgaben ausführen:
 
 * Neue Richtlinien erstellen
-* Richtlinien in einem Richtliniensatz bearbeiten und löschen
-* Richtliniensatzeinstellungen bearbeiten
-* Koordinatoren für den Richtliniensatz hinzufügen und entfernen
-* Richtlinien- und Dokumentereignisse für die Richtlinien oder Dokumente im Richtliniensatz anzeigen
-* Den Zugriff auf Dokumente aufheben
+* Bearbeiten und Löschen einer beliebigen Richtlinie im Richtliniensatz
+* Bearbeiten von Einstellungen für Richtliniensätze
+* Hinzufügen und Entfernen von Koordinatoren für den Richtliniensatz
+* Anzeigen von Richtlinien- und Dokumentereignissen für jede Richtlinie oder jedes Dokument innerhalb des Richtliniensatzes
+* Widerrufen des Zugangs zu Dokumenten
 * Richtlinien für das Dokument wechseln
 
-Richtliniensätze werden auf den Document Security-Administrationswebseiten von Hauptbenutzern und Richtliniensatzkoordinatoren erstellt und gelöscht, denen die entsprechenden Berechtigungen erteilt wurden.
+Richtliniensätze werden in der Administrator-Benutzeroberfläche von Document Security von Superbenutzern und Richtliniensatzkoordinatoren erstellt und gelöscht, die dazu berechtigt sind.
 
-Beim Löschen eines Richtliniensatzes können Richtlinien, die Bestandteil des Satzes waren, nicht mehr auf neue Dokumente angewendet werden. Sie können jedoch die Richtlinieninformationen für Richtlinien, die noch in Benutzung sind, sowohl in Administration Console als auch auf den Webseiten für Endbenutzer anzeigen. Sie können die Richtlinieninformationen über die Seite „Dokumentdetails“ jedes von dieser Richtlinie geschützten Dokuments anzeigen. Richtlinien, die noch verwendet werden, können bearbeitet werden.
+Wenn Sie einen Richtliniensatz löschen, können Richtlinien, die Teil des Satzes waren, nicht auf neue Dokumente angewendet werden. Sie können die Richtlinieninformationen jedoch sowohl in der Administration Console als auch auf den Webseiten für Endbenutzer für Richtlinien anzeigen, die noch verwendet werden. Sie können die Richtlinieninformationen für jedes durch die Richtlinie geschützte Dokument auf der Dokumentdetailseite anzeigen. Richtlinien, die noch verwendet werden, können bearbeitet werden.
 
 Der Hauptbenutzer oder Richtliniensatzkoordinator muss für jeden Richtliniensatz in User Management erstellte Domains auswählen und zum sichtbaren Benutzer bzw. zur sichtbaren Gruppe hinzufügen. Diese Liste wird dem Richtliniensatzkoordinator angezeigt und dient zum Eingrenzen der Domains, die der Richtliniensatzkoordinator beim Auswählen von Benutzern durchsuchen kann, die Richtlinien hinzugefügt werden sollen.
 
-Beim Erstellen von Richtliniensätzen weisen Sie Benutzern die Rolle des Dokumentherausgebers zu. Der *Dokumentherausgeber* ist der Benutzer, der das Dokument mit einer Richtlinie schützt. Dieser Benutzer wird stets standardmäßig in eine Richtlinie einbezogen und hat Vollzugriffsrechte, so auch zum Sperren des Dokumentzugriffs oder Wechseln der Richtlinie. Administratoren können jedoch die Zugriffsrechte des Dokumentherausgebers für freigegebene Richtlinien ändern. Beispielsweise kann der Administrator dem Dokumentherausgeber die Rechte zum Sperren des Dokumentzugriffs oder Wechseln der Richtlinie entziehen. Wenn ein Administrator die Richtlinie wechselt, die mit dem Dokument verknüpft ist, wird der Herausgeber-Name auf dem Namen des Eigentümers der Richtlinie aktualisiert, die zuletzt auf das Dokument angewendet wurde.
+Beim Erstellen von Richtliniensätzen weisen Sie Benutzern die Rolle des Dokumentherausgebers zu. Der *Dokumentherausgeber* ist der Benutzer, der das Dokument mit einer Richtlinie schützt. Dieser Benutzer wird standardmäßig immer in eine Richtlinie mit vollständigen Zugriffsrechten einbezogen, einschließlich Funktionen zum Sperren und Wechseln von Richtlinien. Administratoren können jedoch die Zugriffsberechtigungen des Dokumentherausgebers für freigegebene Richtlinien ändern. Beispielsweise kann der Administrator die Berechtigung des Dokumentherausgebers zum Sperren des Dokumentzugriffs oder Wechseln der Richtlinie deaktivieren. Wenn ein Administrator die mit dem Dokument verknüpfte Richtlinie wechselt, wird der Herausgebername auf den Namen des Eigentümers der Richtlinie aktualisiert, die zuletzt auf das Dokument angewendet wurde.
 
-Bei der Installation von Document Security wird standardmäßig ein so genannter *globaler Richtliniensatz* erstellt. Dieser Richtliniensatz wird von dem Administrator, der die Software installiert hat, oder dem für diesen Richtliniensatz festgelegten Richtliniensatzkoordinator verwaltet.
+Bei der Installation von Document Security wird ein standardmäßiger Richtliniensatz erstellt, der *Globaler Richtliniensatz*. Dieser Richtliniensatz wird vom Administrator, der die Software installiert hat, oder vom Richtliniensatzkoordinator verwaltet, der für diesen Richtliniensatz bestimmt ist.
 
 ## Erstellen eines Richtliniensatzes {#create-a-policy-set}
 
-Der Richtliniensatz „Global“ ist der einzige Standardrichtliniensatz, der bei der Installation erstellt wird. Sie können weitere Richtliniensätze erstellen und dabei Richtlinien, Benutzer, Richtliniensatzkoordinatoren und Dokumentherausgeber hinzufügen. Nach Erstellen eines Richtliniensatzes können Sie Richtlinien im Satz erstellen.
+Der globale Richtliniensatz ist der einzige StandardRichtliniensatz, der bei der Installation erstellt wird. Sie können zusätzliche Richtliniensätze erstellen und Richtlinien, Benutzer, Richtliniensatzkoordinatoren und Dokumentherausgeber hinzufügen. Nachdem Sie einen Richtliniensatz erstellt haben, können Sie Richtlinien im Satz erstellen.
 
-Klicken Sie bei der Richtliniensatzerstellung auf die Schaltfläche „Zurück“, um zum vorherigen Bildschirm zurückzukehren. Um den Richtliniensatz zu speichern, klicken Sie zu einem beliebigen Zeitpunkt auf die Schaltfläche „Speichern“.
+Bei der Erstellung von Richtliniensätzen können Sie die Schaltfläche Zurück verwenden, um zum vorherigen Bildschirm zurückzukehren, und die Schaltfläche Speichern , um Ihren Richtliniensatz jederzeit zu speichern.
 
-1. Klicken Sie auf der Document Security-Seite auf „Richtlinien“, auf die Registerkarte „Richtliniensätze“ und anschließend auf „Neu“.
-1. Geben Sie in das Feld „Name“ einen Namen für den Richtliniensatz und optional in das Feld „Beschreibung“ eine Beschreibung ein. Klicken Sie danach auf „Weiter“. Der Name darf keinen Doppelpunkt (**:**) enthalten.
+1. Klicken Sie auf der Document Security-Seite auf &quot;Richtlinien&quot;, klicken Sie auf die Registerkarte &quot;Richtliniensätze&quot;und dann auf &quot;Neu&quot;.
+1. Geben Sie in das Feld &quot;Name&quot;einen Namen für den Richtliniensatz ein, geben Sie optional eine Beschreibung ein und klicken Sie auf &quot;Weiter&quot;. Der Name darf keinen Doppelpunkt (**:**) enthalten.
 
    >[!NOTE]
    >
-   >Sie können einen Richtliniensatznamen erstellen, der erweiterte Zeichen enthält. Bei einem Vergleich zwischen zwei derartigen Zeichenfolgen werden jedoch Zeichen mit und ohne Akzentzeichen, wie z. B. „e“ und „é“, als identisch bewertet. Beim Erstellen eines Richtliniensatzes wird ein Vergleich durchgeführt, um zu überprüfen, ob bereits ein Richtliniensatz mit demselben Namen vorhanden ist. Der Vergleich kann nicht zwischen Namen unterscheiden, die sich nur durch Akzentzeichen unterscheiden. Es wird angenommen, dass der Richtliniensatz bereits zur Datenbank hinzugefügt wurde, sodass der neue nicht hinzugefügt wird.
+   >Sie können einen Richtliniensatznamen erstellen, der erweiterte Zeichen enthält. Wenn jedoch ein Vergleich zwischen zwei Zeichenfolgen durchgeführt wird, werden Zeichen mit und ohne Akzentzeichen wie &quot;e&quot;und &quot;é&quot;als identisch betrachtet. Wenn jemand einen Richtliniensatz erstellt, wird ein Vergleich durchgeführt, um zu überprüfen, ob bereits ein Richtliniensatz mit demselben Namen vorhanden ist. Der Vergleich kann nicht zwischen Namen unterscheiden, die mit Ausnahme von Akzentzeichen identisch sind. Es wird davon ausgegangen, dass der Richtliniensatz bereits zur Datenbank hinzugefügt und der neue nicht hinzugefügt wurde.
 
 1. (Optional) Um die Domains festzulegen, die Herausgebern von Dokumenten beim Hinzufügen von Benutzern zu einer Richtlinie angezeigt werden, klicken Sie auf „Domains hinzufügen“, wählen Sie anschließend die Domains aus, die durchsuchbar sein sollen, klicken Sie auf „Hinzufügen“ und danach auf „OK“.
-1. Klicken Sie auf der Seite „Benutzer und Gruppen hinzufügen“ auf „Weiter“.
-1. (Optional) Um einen Richtliniensatzkoordinator hinzuzufügen, klicken Sie auf „Benutzer und Gruppen hinzufügen“ (Schritt 3 von 4) und führen Sie die folgenden Schritte aus:
+1. Klicken Sie auf der Seite &quot;Sichtbare Benutzer und Gruppen hinzufügen&quot;auf Weiter .
+1. (Optional) Um einen Richtliniensatzkoordinator hinzuzufügen, klicken Sie auf der Seite &quot;Richtliniensatzkoordinatoren hinzufügen&quot;(Schritt 3 von 4) auf Benutzer und Gruppen hinzufügen und führen Sie die folgenden Aufgaben aus:
 
-   * Geben Sie in das Feld „Suchen“ den Namen oder die E-Mail-Adresse ein.
-   * Wählen Sie in der Liste „Verwendet“ die passende Option aus.
+   * Geben Sie in das Feld &quot;Suchen&quot;den Namen oder die E-Mail-Adresse ein.
+   * Wählen Sie in der Liste Verwendung die entsprechende Option aus.
    * Wählen Sie in der Liste „Typ“ die Option „Benutzer“ und in der Liste „In“ eine zu durchsuchende Domain aus.
-   * Wählen Sie in der Liste „Anzeigen“ die Anzahl der pro Seite anzuzeigenden Suchergebnisse aus und klicken Sie auf „Suchen“.
-   * Aktivieren Sie das Kontrollkästchen des Benutzers oder der Gruppe, der/die hinzugefügt werden soll, und klicken Sie auf „Weiter“.
-   * Wählen Sie die Berechtigungen des Richtliniensatzkoordinators aus und klicken Sie auf „Hinzufügen“. Die folgenden Berechtigungen können festgelegt werden:
+   * Wählen Sie in der Liste &quot;Anzeigen&quot;die Anzahl der pro Seite anzuzeigenden Ergebnisse aus und klicken Sie auf &quot;Suchen&quot;.
+   * Aktivieren Sie das Kontrollkästchen für den hinzuzufügenden Benutzer oder die hinzuzufügende Gruppe und klicken Sie auf Weiter .
+   * Wählen Sie die Berechtigungen des Richtliniensatzkoordinators aus und klicken Sie auf Hinzufügen. Die folgenden Berechtigungen können festgelegt werden:
 
       * Ereignisse anzeigen
-      * Dokumente verwalten (Sperren und Entsperren von Dokumenten und Wechseln von Richtlinien für Dokumente)
+      * Verwalten von Dokumenten (Sperren und Reaktivieren des Zugriffs auf Dokumente und Wechseln von Richtlinien für Dokumente)
       * Richtlinien verwalten (Richtlinien erstellen, bearbeiten und löschen)
-      * Verwalten von Dokumentherausgebern (Dokumentherausgeber hinzufügen und löschen)
+      * Verwalten von Dokumentherausgebern (Hinzufügen und Entfernen von Dokumentherausgebern)
       * Delegieren (Richtliniensatzkoordinatoren hinzufügen und entfernen)
 
 1. Wiederholen Sie Schritt 5, um weitere Richtliniensatzkoordinatoren hinzuzufügen.
-1. Überprüfen Sie die Einstellungen des Richtliniensatzkoordinators und klicken Sie auf „Weiter“.
-1. Klicken Sie auf „Benutzer und Gruppen hinzufügen“, um Dokumentherausgeber hinzuzufügen, die zum Schützen von Dokumenten die Richtlinien in diesem Richtliniensatz nutzen können.
-1. Führen Sie auf der Seite „Herausgeber des Dokuments hinzufügen“ die folgenden Aufgaben durch:
+1. Überprüfen Sie die Einstellungen des Richtliniensatzkoordinators und klicken Sie auf Weiter.
+1. Klicken Sie auf Benutzer und Gruppen hinzufügen , um Dokumentherausgeber hinzuzufügen, die die Richtlinien im Richtliniensatz zum Schützen von Dokumenten verwenden können.
+1. Führen Sie auf der Seite &quot;Dokumentherausgeber hinzufügen&quot;die folgenden Aufgaben aus:
 
-   * Geben Sie in das Feld „Suchen“ den Namen oder die E-Mail-Adresse ein.
-   * Wählen Sie in der Liste „Verwendet“ die passende Option aus.
+   * Geben Sie in das Feld &quot;Suchen&quot;den Namen oder die E-Mail-Adresse ein.
+   * Wählen Sie in der Liste Verwendung die entsprechende Option aus.
    * Wählen Sie in der Liste „Typ“ die Option „Benutzer“ und in der Liste „In“ eine zu durchsuchende Domain aus.
-   * Wählen Sie in der Liste „Anzeigen“ die Anzahl der pro Seite anzuzeigenden Suchergebnisse aus und klicken Sie auf „Suchen“.
-   * Aktivieren Sie die Kontrollkästchen der hinzuzufügenden Benutzer und Gruppen. Klicken Sie auf „Hinzufügen“ und danach auf „OK“.
+   * Wählen Sie in der Liste &quot;Anzeigen&quot;die Anzahl der pro Seite anzuzeigenden Ergebnisse aus und klicken Sie auf &quot;Suchen&quot;.
+   * Aktivieren Sie die Kontrollkästchen der hinzuzufügenden Benutzer und Gruppen, klicken Sie auf Hinzufügen und anschließend auf OK.
 
 1. Klicken Sie auf Speichern.
 
-Sie können nun dem Richtliniensatz Richtlinien hinzufügen. (Siehe [Richtlinien erstellen und bearbeiten](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
+Sie können Ihrem Richtliniensatz jetzt Richtlinien hinzufügen. (Siehe [Richtlinien erstellen und bearbeiten](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
 
-## Einen Richtliniensatz bearbeiten {#edit-a-policy-set}
+## Richtliniensatz bearbeiten {#edit-a-policy-set}
 
-1. Klicken Sie auf der Document Security-Seite auf „Richtlinien“, anschließend auf die Registerkarte „Richtliniensätze“ und dann auf den zu bearbeitenden Richtliniensatz.
-1. Klicken Sie auf die gewünschte Registerkarte und führen Sie die Bearbeitung durch:
+1. Klicken Sie auf der Document Security-Seite auf &quot;Richtlinien&quot;, klicken Sie auf die Registerkarte &quot;Richtliniensätze&quot;und dann auf den zu bearbeitenden Richtliniensatz.
+1. Klicken Sie auf die entsprechende Registerkarte und bearbeiten Sie sie nach Bedarf:
 
    * **Detail:** Bearbeiten Sie den Namen und die Beschreibung des Richtliniensatzes.
-   * **Richtlinien:** Dient zum Erstellen, Aktivieren, Bearbeiten und Löschen von Richtlinien im Richtliniensatz.
-   * **Sichtbare Benutzer und Gruppen:** Dient zum Hinzufügen und Entfernen sichtbarer Benutzer und Gruppen, die in eine Richtlinie einbezogen werden können.
-   * **Richtliniensatzkoordinatoren:** Dient zum Hinzufügen, Entfernen und Ändern von Berechtigungen für Koordinatoren.
-   * **Dokumentherausgeber:** Dient zum Hinzufügen und Entfernen von Benutzern, die Dokumente unter Verwendung der Richtlinien im Satz veröffentlichen können.
+   * **Richtlinien:** Erstellen, aktivieren, bearbeiten und löschen Sie Richtlinien im Richtliniensatz.
+   * **Sichtbare Benutzer und Gruppen:** Fügen Sie sichtbare Benutzer und Gruppen hinzu und entfernen Sie sie, die in eine Richtlinie aufgenommen werden können.
+   * **Richtliniensatzkoordinatoren:** Berechtigungen für Koordinatoren hinzufügen, entfernen und ändern.
+   * **Dokumentherausgeber:** Fügen Sie Benutzer hinzu und entfernen Sie Benutzer, die Dokumente mithilfe der Richtlinien im Satz veröffentlichen können.
 
-1. Um einen sichtbaren Benutzer, Richtliniensatzkoordinator oder Dokumentherausgeber oder eine sichtbare Gruppe zu löschen, klicken Sie auf die entsprechende Registerkarte und aktivieren Sie das Kontrollkästchen des jeweiligen Eintrags. Klicken Sie dann auf „Löschen“ und anschließend auf „OK“.
-1. Um sichtbare Benutzer, Gruppen, Richtliniensatzkoordinatoren oder Dokumentherausgeber hinzuzufügen, wählen Sie die entsprechende Registerkarte aus und klicken Sie auf „Benutzer oder Gruppen hinzufügen“. Suchen Sie den Benutzer oder die Gruppe, wählen Sie den Eintrag aus, klicken Sie auf „Hinzufügen“ und anschließend auf „OK“.
-1. Auf der Registerkarte „Richtlinien“ können Sie nach Richtlinien suchen, die dem Richtliniensatz hinzugefügt werden sollen, und neue Richtlinien erstellen:
+1. Um einen sichtbaren Benutzer, eine sichtbare Gruppe, einen Richtliniensatzkoordinator oder einen Dokumentherausgeber zu löschen, klicken Sie auf die entsprechende Registerkarte, aktivieren Sie das Kontrollkästchen für den Eintrag, klicken Sie auf &quot;Löschen&quot;und klicken Sie auf &quot;OK&quot;.
+1. Um sichtbare Benutzer oder Gruppen, einen Richtliniensatzkoordinator oder Dokumentherausgeber hinzuzufügen, klicken Sie auf die entsprechende Registerkarte, klicken Sie auf &quot;Benutzer oder Gruppen hinzufügen&quot;, suchen Sie nach dem hinzuzufügenden Benutzer oder der hinzuzufügenden Gruppe, wählen Sie den Eintrag aus, klicken Sie auf &quot;Hinzufügen&quot;und klicken Sie auf &quot;OK&quot;.
+1. Suchen Sie auf der Registerkarte Richtlinien nach Richtlinien, die zum Richtliniensatz hinzugefügt werden sollen, und erstellen Sie neue Richtlinien:
 
-   * Um eine Richtlinie zu suchen, wählen Sie „Richtlinien-ID“ oder „Richtlinienname“ aus, geben den gewünschten Wert ein, wählen die Anzahl anzuzeigender Elemente aus und klicken auf „Suchen“.
-   * Informationen zum Erstellen einer neuen Richtlinie finden Sie unter [Richtlinien erstellen und bearbeiten](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
+   * Um nach einer Richtlinie zu suchen, wählen Sie &quot;Richtlinien-ID&quot;oder &quot;Richtlinienname&quot;, geben Sie den entsprechenden Wert ein, wählen Sie die Anzahl der anzuzeigenden Elemente aus und klicken Sie auf &quot;Suchen&quot;.
+   * Weitere Informationen zum Erstellen einer Richtlinie finden Sie unter [Richtlinien erstellen und bearbeiten](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
 
-## Einen Richtliniensatz löschen {#delete-a-policy-set}
+## Richtliniensatz löschen {#delete-a-policy-set}
 
-Beim Löschen eines Richtliniensatzes können Richtlinien, die Bestandteil des Satzes waren, nicht mehr auf neue Dokumente angewendet werden. Sie können die Richtlinieninformationen aber sowohl in Administration Console als auch auf den Webseiten für Endbenutzer für Richtlinien, die noch in Benutzung sind, anzeigen. Sie können die Richtlinieninformationen über die Seite „Dokumentdetails“ jedes von dieser Richtlinie geschützten Dokuments anzeigen. Richtlinien, die noch verwendet werden, können bearbeitet werden.
+Wenn Sie einen Richtliniensatz löschen, können Richtlinien, die Teil des Satzes waren, nicht auf neue Dokumente angewendet werden. Sie können die Richtlinieninformationen jedoch sowohl in der Administration Console als auch auf den Webseiten für Endbenutzer für Richtlinien anzeigen, die noch verwendet werden. Sie können die Richtlinieninformationen für jedes durch die Richtlinie geschützte Dokument auf der Dokumentdetailseite anzeigen. Richtlinien, die noch verwendet werden, können bearbeitet werden.
 
-1. Klicken Sie auf „Richtlinien“ und anschließend auf die Registerkarte „Richtliniensätze“.
-1. Aktivieren Sie die Kontrollkästchen des Richtliniensatzes, der gelöscht werden soll.
-1. Klicken Sie auf „Löschen“ und dann auf „OK“.
+1. Klicken Sie auf Richtlinien und dann auf die Registerkarte Richtliniensätze .
+1. Aktivieren Sie das Kontrollkästchen für den zu löschenden Richtliniensatz.
+1. Klicken Sie auf Löschen und dann auf OK.

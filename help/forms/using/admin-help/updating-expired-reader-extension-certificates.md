@@ -2,10 +2,10 @@
 title: Die Gültigkeit von Reader Extensions-Zertifikaten und ihre Auswirkungen
 description: Die Gültigkeit von Reader Extensions-Zertifikaten und ihre Auswirkungen
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: 6e9a7f3307ed05f887d60c7c7310100cd4596b23
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '1121'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Kundinnen und Kunden von Adobe Experience Manager Forms (AEM Forms) mit einer Basislizenz für Adobe Managed Services oder On-Premise Enterprise sind berechtigt, den Service Acrobat Reader DC-Erweiterungen zu nutzen. Dieser Service ermöglicht einer Organisation das einfache Freigeben interaktiver PDF-Dokumente, indem er die Funktionalität von Acrobat Reader um zusätzliche Nutzungsrechte erweitert. Der Service fügt einem PDF-Dokument Nutzungsrechte hinzu und aktiviert Funktionen, die beim Öffnen eines PDF-Dokuments mit Adobe Acrobat Reader nicht zur Verfügung stehen, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments. Externe Benutzer benötigen keine zusätzliche Software oder Plug-Ins für das Verwenden von Dokumenten mit aktivierten Benutzerrechten. PDF-Dokumente, für die zusätzlich Nutzungsrechte gelten, werden als Dokumente mit aktivierten Nutzungsrechten bezeichnet. Benutzende, die ein berechtigungsaktiviertes PDF-Dokument in Acrobat Reader öffnen, können Vorgänge durchführen, die für dieses Dokument aktiviert sind.
 
-Adobe nutzt eine Public Key Infrastructure (PKI), um digitale Zertifikate für die Lizenzierung und die Aktivierung von Funktionen auszustellen. Adobe hat Zertifikate unter der Zertifizierungsstelle **Adobe Root CA** ausgestellt, die am 7. Januar 2023 auslaufen wird. Die Gültigkeit des Zertifikats wirkt sich nicht auf PDF-Dokumente aus, die mit Produktionszertifikaten erweitert wurden, welche von den **Adobe Root CA** basierten Zertifikaten ausgestellt wurden (alte Zertifikate). Alle PDF-Dokumente, die mithilfe der alten Zertifikate vor dem 7. Januar 2023 Reader Extended wurden, einschließlich der von Kundenseite aus heruntergeladenen, funktionieren weiterhin mit allen Nutzungsrechten, die für sie gelten, und benötigen keine Updates.
+Adobe verwendet eine PKI (Public Key Infrastructure), um digitale Zertifikate zur Verwendung bei der Lizenzierung und Aktivierung von Funktionen auszustellen. Adobe hat Zertifikate unter der Zertifizierungsstelle **Adobe Root CA** ausgestellt, die am 7. Januar 2023 auslaufen wird. Die Gültigkeit des Zertifikats wirkt sich nicht auf PDF-Dokumente aus, die mit Produktionszertifikaten erweitert wurden, welche von den **Adobe Root CA** basierten Zertifikaten ausgestellt wurden (alte Zertifikate). Alle PDF-Dokumente, die mithilfe der alten Zertifikate vor dem 7. Januar 2023 Reader Extended wurden, einschließlich der von Kundenseite aus heruntergeladenen, funktionieren weiterhin mit allen Nutzungsrechten, die für sie gelten, und benötigen keine Updates.
 
 Eine neue Zertifizierungsstelle, **Adobe Root CA G2**, und Zertifikate, die auf der neuen Zertifizierungsstelle basieren, sind jetzt verfügbar. Beginnen Sie am oder vor dem 7. Januar 2023 mit der Verwendung der neuen Zertifikate, die auf **Adobe Root CA G2** basieren, um die Reader Extension auf Ihre neuen PDF-Dokumente anzuwenden.  Sie können neue Zertifikate [von der Adobe-Lizenzierungs-Website](https://licensing.adobe.com/) oder vom Adobe-Support erhalten.
 
@@ -178,7 +178,7 @@ The following command list the details of the pfx file. Before running the comma
 
 `keytool -v -list -storetype pkcs12 -keystore [name of your .pfx file]`
 
-For example keytool -v -list -storetype pkcs12 -keystore 1005566.pfx where 1005566.pfx is the name of my pfx file
+For example, keytool -v -list -storetype pkcs12 -keystore 1005566.pfx where 1005566.pfx is the name of my pfx file
 
 <!-- ### Remove usage rights from existing rights-enabled PDF documents
 

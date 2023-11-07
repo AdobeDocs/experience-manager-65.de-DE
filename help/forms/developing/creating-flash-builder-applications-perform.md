@@ -11,10 +11,10 @@ topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 role: Developer
 exl-id: 7f1f49e6-028c-47b6-a24d-a83bed40242e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
-workflow-type: ht
-source-wordcount: '1796'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1795'
+ht-degree: 98%
 
 ---
 
@@ -672,7 +672,7 @@ Der folgende Code stellt die Datei „progress.mxml“ dar.
 
 ### Erstellen der Datei „remoting.mxml“ {#creating-the-remoting-mxml-file}
 
-Der folgende Code stellt die Datei „remoting.mxml“ dar, die den `MyApplication/EncryptDocument`-Prozess aufruft. Da ein Dokument an den Prozess übergeben wird, befindet sich in dieser Datei die Anwendungslogik, die für die Übergabe eines sicheren Dokuments an AEM Forms verantwortlich ist. (Siehe [Übergeben sicherer Dokumente zum Aufrufen von Prozessen mithilfe von Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
+Der folgende Code stellt die Datei „remoting.mxml“ dar, die den `MyApplication/EncryptDocument`-Prozess aufruft. Da ein Dokument an den Prozess übergeben wird, befindet sich die Anwendungslogik, die für die Übergabe eines sicheren Dokuments an AEM Forms verantwortlich ist, in dieser Datei. (Siehe [Übergeben sicherer Dokumente zum Aufrufen von Prozessen mithilfe von Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
 ```xml
  <?xml version="1.0" encoding="utf-8"?>

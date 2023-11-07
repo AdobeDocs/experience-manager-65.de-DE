@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 737fb4d1-adef-47e1-9a0d-8cddd13132cb
 exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2523'
 ht-degree: 54%
 
 ---
@@ -108,7 +108,7 @@ Je nach den installierten AEM Formularkomponenten können die folgenden zusätzl
    >
    >Bei Verwendung von MySQL können Sie nicht zwei Rollen erstellen, die denselben Namen, aber unterschiedliche erweiterte Zeichen haben. Wenn Sie beispielsweise versuchen, eine Rolle mit dem Namen &quot;abcde&quot;zu erstellen, wenn bereits eine namens &quot;âbcdè&quot;vorhanden ist, wird ein Fehler ausgegeben.
 
-1. Klicken Sie auf &quot;Berechtigungen suchen&quot;und wählen Sie die Berechtigungen aus, die der Rolle hinzugefügt werden sollen.
+1. Klicken Sie auf Berechtigungen suchen und wählen Sie die Berechtigungen aus, die der Rolle hinzugefügt werden sollen.
 1. Klicken Sie auf OK und dann auf Weiter.
 1. Weisen Sie diese Rolle Benutzern und Gruppen zu:
 
@@ -177,7 +177,7 @@ Sie können die Berechtigungen für alle von Ihnen erstellten Rollen ändern. Si
 1. Um diese Berechtigungen zu ändern, klicken Sie auf &quot;Berechtigungen suchen&quot;, aktivieren die Kontrollkästchen der Berechtigungen, die der Rolle hinzugefügt werden sollen, klicken Sie auf &quot;OK&quot;und klicken Sie auf &quot;Speichern&quot;.
 1. Um eine Berechtigung zu löschen, wählen Sie die Berechtigung aus, klicken auf &quot;Löschen&quot;und anschließend auf &quot;Speichern&quot;.
 
-### Berechtigungen für AEM Formulare {#aem-forms-permissions}
+### Berechtigungen für AEM {#aem-forms-permissions}
 
 **ADD_REMOVE_ENDPOINTS_PERM**: Hinzufügen, Entfernen und Ändern von Endpunkten für einen Service
 
@@ -201,7 +201,7 @@ Sie können die Berechtigungen für alle von Ihnen erstellten Rollen ändern. Si
 
 **Core-Systemeinstellungen steuern**: Die Einstellungen auf der Seite „Core-Systemeinstellungen“ in der Administration-Console verwalten
 
-**CREATE_VERSION_PERM**: Erstellen einer neuen Version des Services
+**CREATE_VERSION_PERM:** Erstellen einer Version eines Dienstes
 
 **Berechtigung ändern**: Beliebige Berechtigungen für die Signierung im Trust Store ändern
 
@@ -291,7 +291,7 @@ Sie können die Berechtigungen für alle von Ihnen erstellten Rollen ändern. Si
 
 **Rights Management-Richtliniensatz – Koordinator hinzufügen**: Berechtigungen für Richtliniensatzkoordinatoren hinzufügen, entfernen und ändern
 
-**Rights Management-Richtliniensatz - Richtlinie erstellen:** Neue Richtlinie für einen Richtliniensatz erstellen
+**Rights Management Policy Set Create Policy:** Erstellen einer Richtlinie für einen Richtliniensatz
 
 **Rights Management-Richtliniensatz – Richtlinie löschen**: Richtlinie aus einem Richtliniensatz entfernen
 
@@ -357,5 +357,5 @@ Auf der Seite &quot;Rollenverwaltung&quot;können Sie Benutzer und Gruppen aus e
    Standardmäßig werden auf der Seite &quot;Rollenverwaltung&quot;alle Rollen in der User Management-Datenbank angezeigt. Wenn die Liste der Rollen groß ist, verwenden Sie den Suchbereich oben auf der Seite, um nach einem bestimmten Rollennamen zu suchen.
 
 1. Klicken Sie in der Liste der Rollen auf den Namen der zu aktualisierenden Rolle und dann auf die Registerkarte Rollenbenutzer . Eine Liste der mit der Rolle verknüpften Benutzer und Gruppen wird angezeigt.
-1. Aktivieren Sie die Kontrollkästchen der Benutzer und Gruppen, die aus der Rolle entfernt werden sollen, und klicken Sie auf &quot;Zuweisung aufheben&quot;.
+1. Aktivieren Sie die Kontrollkästchen der Benutzer und Gruppen, die aus der Rolle entfernt werden sollen, und klicken Sie auf Zuweisung aufheben .
 1. Klicken Sie auf Speichern und dann auf OK.

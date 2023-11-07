@@ -8,10 +8,10 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3776'
-ht-degree: 62%
+source-wordcount: '3775'
+ht-degree: 61%
 
 ---
 
@@ -92,7 +92,7 @@ Damit der Arbeitsablauf für Formulare eingehende E-Mail-Nachrichten von Benutze
 
 **Posteingang - Host:** Der Host-Name oder die IP-Adresse für den Posteingang, der/die vom E-Mail-Anbieter überprüft werden soll.
 
-**Posteingang - Port:** Die Port-Nummer für den Posteingang, die vom E-Mail-Anbieter überprüft werden soll. Wenn der Wert 0 ist, wird der IMAP- oder POP3-Standard-Port verwendet.
+**Posteingang - Port:** Die Port-Nummer für den Posteingang, die vom E-Mail-Anbieter überprüft werden soll. Wenn der Wert 0 beträgt, wird der standardmäßige IMAP- oder POP3-Anschluss verwendet.
 
 **Posteingang - Protokoll:** Das E-Mail-Protokoll, das vom E-Mail-Endpunkt zum Überprüfen des Posteingangs verwendet werden soll. Die Optionen sind IMAP oder POP3. Der Host-Mailserver des Posteingangs muss diese Protokolle unterstützen.
 

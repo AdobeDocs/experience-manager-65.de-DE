@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2257'
-ht-degree: 38%
+source-wordcount: '2223'
+ht-degree: 36%
 
 ---
 
@@ -23,7 +23,7 @@ Das Einrichten einer neuen Kampagne umfasst die folgenden (allgemeinen) Schritte
 1. [Kampagne erstellen](#creating-a-new-campaign) zum Speichern von Erlebnissen, z. B. Teaser-Seiten oder einen Newsletter.
 1. Bei Bedarf können Sie [Eigenschaften für Ihre neue Kampagne definieren](#defining-the-properties-for-your-new-campaign).
 
-Anschließend müssen Sie, abhängig vom Typ des Erlebnisses, das Sie erstellen, [ein Erlebnis erstellen](#creating-a-new-experience). Die Details des Erlebnisses und die Aktionen, die auf seine Erstellung folgen, hängen vom Erlebnistyp ab, den Sie erstellen möchten:
+Je nach Erlebnistyp müssen Sie dann [Erlebnis erstellen](#creating-a-new-experience). Die Details des Erlebnisses und die Aktionen, die auf seine Erstellung folgen, hängen vom Erlebnistyp ab, den Sie erstellen möchten:
 
 * Beim Erstellen eines Teasers:
 
@@ -50,8 +50,6 @@ Anschließend müssen Sie, abhängig vom Typ des Erlebnisses, das Sie erstellen,
 
 ## Erstellen einer neuen Marke {#creating-a-new-brand}
 
-So erstellen Sie eine neue Marke:
-
 1. Öffnen Sie die **MCM** und wählen **Kampagnen** im linken Bereich.
 
 1. Auswählen **Neu...** , um **Titel** und **Name** und der Vorlage für Ihre neue Marke:
@@ -71,8 +69,6 @@ So erstellen Sie eine neue Marke:
 1. Klicken Sie zum Speichern auf **OK**.
 
 ### Erstellen einer neuen Kampagne {#creating-a-new-campaign}
-
-So erstellen Sie eine neue Kampagne:
 
 1. Von **Kampagnen** wählen Sie Ihre neue Marke im linken Bereich aus oder doppelklicken Sie auf das Symbol im rechten Bereich.
 
@@ -105,7 +101,7 @@ Konfigurieren Sie Kampagneneigenschaften, die das Verhalten steuern:
 
 ### Erstellen eines neuen Erlebnisses {#creating-a-new-experience}
 
-Das Verfahren zum Erstellen eines neuen Erlebnisses hängt vom Erlebnistyp ab:
+Die Vorgehensweise zum Erstellen eines Erlebnisses hängt vom Erlebnistyp ab:
 
 * [Erstellen eines Teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaser)
 * [Erstellen eines Newsletters](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletter)
@@ -154,7 +150,7 @@ Wenn Sie über vorhandene Erlebnisse verfügen, können Sie einen Touchpoint dir
 >[!NOTE]
 >
 >Adobe plant nicht, diese Funktion (Lead-Verwaltung) weiter auszubauen.
->Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
+>Es wird empfohlen [Adobe Campaign und Integration in AEM](/help/sites-administering/campaign.md).
 
 In AEM MCM können Sie Leads ordnen und hinzufügen, indem Sie sie manuell eingeben oder indem Sie eine kommagetrennte Liste importieren, z. B. eine Mailing-Liste. Sie können Leads auch über Newsletter-Anmeldungen oder Community-Anmeldungen generieren. (Wenn diese Option konfiguriert ist, kann ein Workflow zum Ausfüllen von Leads Trigger werden.)
 
@@ -172,7 +168,7 @@ Leads werden im Allgemeinen kategorisiert und in eine Liste eingefügt, sodass S
 
 Denken Sie daran, die Leads nach dem Erstellen zu [aktivieren](#activating-or-deactivating-leads), damit Sie deren Aktivitäten auf der Veröffentlichungsinstanz verfolgen und das Benutzererlebnis personalisieren können.
 
-So erstellen Sie einen neuen Lead manuell:
+So erstellen Sie einen Lead manuell:
 
 1. Navigieren Sie in AEM zum MCM. Klicken Sie im Dashboard auf **Leads**.
 1. Klicken Sie auf **Neu**. Die **Neu erstellen** öffnet sich.
@@ -207,7 +203,7 @@ So aktivieren oder deaktivieren Sie Leads:
 
 ### Importieren neuer Leads {#importing-new-leads}
 
-Wenn Sie neue Leads importieren, können Sie sie automatisch zu einer vorhandenen Liste hinzufügen oder eine neue Liste erstellen, um diese Leads einzuschließen.
+Wenn Sie neue Leads importieren, können Sie sie automatisch zu einer vorhandenen Liste hinzufügen oder eine Liste erstellen, um diese Leads einzuschließen.
 
 So importieren Sie Leads aus einer kommagetrennten Liste:
 
@@ -302,7 +298,7 @@ Wählen Sie zum Löschen von bestehenden Leads im MCM das Kontrollkästchen nebe
 >[!NOTE]
 >
 >Adobe plant nicht, diese Funktion (Listenverwaltung) weiter auszubauen.
->Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
+>Es wird empfohlen [Adobe Campaign und Integration in AEM](/help/sites-administering/campaign.md).
 
 Mithilfe von Listen können Sie Ihre Leads in Gruppen organisieren. Mit Listen können Sie Marketing-Kampagnen gezielt für eine bestimmte Personengruppe erstellen, z. B. können Sie einen speziellen Newsletter an eine bestimmte Liste senden. Auf die Listen können Sie im MCM über das Dashboard oder durch Klicken auf **Listen** zugreifen. Beide geben den Namen der Liste und die Anzahl der Mitglieder an.
 
@@ -314,8 +310,6 @@ Wenn Sie auf **Listen** klicken, können Sie auch sehen, ob die Liste Mitglied e
 
 ### Erstellen neuer Listen {#creating-new-lists}
 
-So erstellen Sie eine neue Liste (Gruppe):
-
 1. Klicken Sie im MCM-Dashboard auf **Neue Liste ...** oder **Listen** klicken **Neu** ... Das Fenster Liste erstellen wird geöffnet.
 
    ![screen_shot_2012-02-21at125147pm](assets/screen_shot_2012-02-21at125147pm.png)
@@ -325,8 +319,6 @@ So erstellen Sie eine neue Liste (Gruppe):
    ![screen_shot_2012-02-21at125320pm](assets/screen_shot_2012-02-21at125320pm.png)
 
 ### Vorhandene Listen ändern {#modifying-existing-lists}
-
-So ändern Sie eine vorhandene Liste:
 
 1. Klicken Sie im MCM auf **Listen**.
 
@@ -384,7 +376,7 @@ So führen Sie bestehende Listen zusammen:
 
 Sie können jederzeit anzeigen, welche Leads zu einer bestimmten Liste gehören, indem Sie Mitglieder durchsuchen oder suchen.
 
-So zeigen Sie Leads an, die zu einer Liste gehören:
+So zeigen Sie Leads in Listen an:
 
 1. Klicken Sie im MCM auf **Listen**.
 

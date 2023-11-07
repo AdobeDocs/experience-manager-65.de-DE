@@ -7,9 +7,9 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2385'
+source-wordcount: '2384'
 ht-degree: 77%
 
 ---
@@ -196,7 +196,7 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
    * Verwenden von CRXDE Lite zum Hinzufügen des Werts `<path-to-component>` (Beispiel: `/apps/geometrixx/components/myComponent`) zu den Eigenschaftenkomponenten des Knotens `/etc/designs/geometrixx/jcr:content/contentpage/par`
    * Beachten der Anweisungen in [Hinzufügen neuer Komponenten zu Absatzsystemen](#adding-a-new-component-to-the-paragraph-system-design-mode)
 
-1. Öffnen Sie in AEM WCM eine Seite auf Ihrer Website und fügen Sie einen Absatz des soeben erstellten Typs ein, um sicherzustellen, dass die Komponente ordnungsgemäß funktioniert.
+1. Öffnen Sie in AEM WCM eine Seite auf Ihrer Website und fügen Sie einen Absatz des von Ihnen erstellten Typs ein, um sicherzustellen, dass die Komponente ordnungsgemäß funktioniert.
 
 >[!NOTE]
 >
@@ -206,7 +206,7 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
 
 Nachdem die Komponente entwickelt wurde, fügen Sie sie zum Absatzsystem hinzu, wodurch Autorinnen und Autoren die Komponente auswählen und beim Bearbeiten einer Seite verwenden können.
 
-1. Rufen Sie eine Seite in Ihrer Autorenumgebung auf, die das Absatzsystem verwendet, zum Beispiel `<contentPath>/Test.html`.
+1. Rufen Sie eine Seite in Ihrer Autorenumgebung auf, die das Absatzsystem verwendet, zum Beispiel, `<contentPath>/Test.html`.
 1. Wechseln Sie auf eine der folgenden Arten zum Design-Modus:
 
    * Hinzufügen von `?wcmmode=design` zum Ende der URL und erneuter Zugriff, z. B.:

@@ -1,17 +1,15 @@
 ---
 title: ContextHub-Diagnosen
-seo-title: ContextHub Diagnostics
 description: ContextHub bietet eine Diagnoseseite, auf der Sie einen Überblick über das ContextHub-Framework erhalten.
-seo-description: ContextHub provides a diagnostics page where you can see an overview of the ContextHub framework
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: b833c28b-76c6-42a2-b690-3e81ddf91bc2
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 58%
+source-wordcount: '473'
+ht-degree: 89%
 
 ---
 
@@ -21,11 +19,11 @@ ContextHub bietet eine Diagnoseseite, auf der Sie einen Überblick über das Con
 
 `http://<host>:<port>/conf/<tenant>/settings/cloudsettings/default/contexthub.diagnostics.html`
 
-Auf der Seite &quot;ContextHub-Diagnose&quot;finden Sie Informationen zu den erstellten Stores und Benutzeroberflächenmodulen, den geladenen Client-Bibliotheksordnern und Links zu nützlichen Seiten.
+Die Seite „ContextHub-Diagnose“ enthält Informationen zu den erstellten Speicher- und UI-Modulen sowie zu den geladenen Client-Bibliotheksordnern und Links zu nützlichen Seiten.
 
 >[!NOTE]
 >
->Damit Diagnoseinformationen zurückgegeben werden können, muss der Debug-Modus aktiviert sein, da andernfalls die Diagnoseseite leer ist. Siehe [dieses Dokuments](ch-configuring.md#debugging-contexthub) für Details zum Aktivieren des Debug-Modus.
+>Damit Diagnoseinformationen zurückgegeben werden können, muss der Debug-Modus aktiviert sein, da andernfalls die Diagnoseseite leer ist. In [diesem Dokument](ch-configuring.md#debugging-contexthub) finden Sie Details zum Aktivieren des Debug-Modus.
 
 >[!NOTE]
 >
@@ -38,7 +36,7 @@ Der Abschnitt „Stores“ listet alle ContextHub-Stores auf, die konfiguriert w
 * **Title:** Der [Store-Typ](/help/sites-developing/ch-samplestores.md), auf dem der Store basiert.
 * **path:** Der Pfad zum Repository-Knoten, der die Konfiguration enthält.
 * **resourceType:** Der Pfad des Repository-Knotens, in dem der Speichertyp definiert ist.
-* **clientlibs:** Die Kategorien der geladenen Client-Bibliotheken, die den Store-Typ implementieren.
+* **clientlibs:** Die Kategorien der geladenen Client-Bibliotheken, die den Speichertyp implementieren.
 
 ## Modules {#modules}
 

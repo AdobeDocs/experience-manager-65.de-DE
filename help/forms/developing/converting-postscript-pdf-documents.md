@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 06ad343a-f74d-41f5-b3c8-b85bb723ceeb
 role: Developer
 exl-id: 744df8b2-0c61-410f-89e9-20b8adddbf45
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1325'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1323'
+ht-degree: 99%
 
 ---
 
@@ -62,7 +62,7 @@ Bevor Sie einen Distiller-Dienstvorgang programmgesteuert ausführen können, m�
 
 **Zu konvertierende Datei abrufen**
 
-Sie müssen die Datei abrufen, die Sie konvertieren möchten. Um beispielsweise eine PS-Datei in ein PDF-Dokument zu konvertieren, müssen Sie die PS-Datei abrufen.
+Rufen Sie die Datei ab, die Sie konvertieren möchten. Um beispielsweise eine PS-Datei in ein PDF-Dokument zu konvertieren, müssen Sie die PS-Datei abrufen.
 
 **Aufrufen des PDF-Erstellungsvorgangs**
 
@@ -126,7 +126,6 @@ Konvertieren Sie eine PostScript-Datei mithilfe der Distiller Service API (Java)
 
    * Rufen Sie die `CreatePDFResult` Methode des `getLogDocument` Objekts auf. Dadurch wird ein `com.adobe.idp.Document`-Objekt zurückgegeben.
    * Um das Protokolldokument zu entnehmen, rufen Sie die `copyToFile`Methode des `com.adobe.idp.Document`-Objekts auf.
-
 
 **Siehe auch**
 

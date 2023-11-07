@@ -8,10 +8,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fd96f30c-0616-445e-adb9-050d52862ffc
 exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
-source-git-commit: 6fe5e617ceac3c97a77de2d574ec370f30887330
-workflow-type: ht
-source-wordcount: '338'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 91%
 
 ---
 
@@ -26,17 +26,17 @@ Adobe Campaign ist eine Reihe von Lösungen, mit denen Sie Kampagnen personalisi
 >
 >Dieses Dokument beschreibt die Integration von Adobe Campaign mit AEM 6.5, der lokalen oder von AMS gehosteten AEM-Lösung.
 >
->Einzelheiten zur Integration von Adobe Campaign mit AEM as a Cloud Service, der Cloud-nativen AEM-Lösung, [finden Sie in diesem Dokument.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html?lang=de)
+>Einzelheiten zur Integration von Adobe Campaign in AEM as a Cloud Service, die Cloud-native AEM-Lösung, finden Sie unter [Siehe dieses Dokument.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html?lang=de)
 
-## Integration mit Adobe Campaign Classic {#acc}
+## Integrieren mit Adobe Campaign Classic {#acc}
 
-Es gibt eine Reihe von Adobe Campaign Classic-Versionen (ACC). Die Unterstützung für die Integration mit AEM hängt von der ACC-Version ab, die Sie implementiert haben, und davon, ob AEM lokal auf in Adobe Manager Services (AMS) installiert ist.
+Es gibt mehrere Versionen von Adobe Campaign Classic (ACC). Die Unterstützung für die Integration mit AEM hängt von der ACC-Version ab, die Sie implementiert haben, und davon, ob AEM lokal auf in Adobe Manager Services (AMS) installiert ist.
 
 | ACC-Version | Integration mit AEM 6.5 <br>Lokal | Integration mit AEM 6.5<br>AMS |
 |---|---|---|
 | [v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=de) | Unterstützt | Unterstützt  |
 | [v8](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=de) | Unterstützt | Unterstützt  |
-| Web-Benutzeroberfläche* | Unterstützt | Unterstützt  |
+| Web-Benutzeroberfläche* | Unterstützt | Unterstützt |
 
 *Die Web-Benutzeroberfläche für Adobe Campaign Classic wird Ende 2023 erwartet.
 

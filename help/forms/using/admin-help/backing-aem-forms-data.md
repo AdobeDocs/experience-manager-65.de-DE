@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1533'
 ht-degree: 12%
 
 ---
@@ -35,7 +35,7 @@ Wenn die Datenbank, wie im vorherigen Abschnitt beschrieben, im Protokollierungs
 >
 >Dateien, auf die nicht verwiesen wird, bleiben möglicherweise nach dem Wiederherstellungsprozess im Ordner des globalen Dokumentenspeichers erhalten. Dies ist derzeit eine bekannte Einschränkung.
 
-## Sichern Sie die Ordner &quot;Datenbank&quot;, &quot;Ordner des globalen Dokumentenspeichers&quot;, &quot;AEM Repository&quot;und &quot;Stammordner für Inhalte&quot;. {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
+## Sichern Sie die Ordner &quot;Datenbank&quot;, &quot;Ordner des globalen Dokumentenspeichers&quot;, &quot;AEM&quot;und &quot;Stammordner für Inhalte&quot;. {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
 
 Sie müssen AEM Forms entweder in den abgesicherten Sicherungsmodus (Snapshot-Modus) oder in den kontinuierlichen Sicherungsmodus (kontinuierliche Sicherung) versetzen. Stellen Sie Folgendes sicher, bevor Sie AEM Forms auf einen der Sicherungsmodi einstellen:
 
@@ -48,12 +48,12 @@ Beachten Sie zusätzlich die folgenden Richtlinien für den Sicherungs-/Wiederhe
 * (Optional) Sichern Sie den Stammordner für Inhalte mithilfe eines verfügbaren Betriebssystems oder eines Sicherungs- und Dienstprogramms eines Drittanbieters. (Siehe [Speicherort des Stammordners für Inhalte (eigenständige Umgebung)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) oder [Speicherort des Stammordners für Inhalte (Clusterumgebung)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)
 * Sichern Sie  Autor- und Veröffentlichungsinstanzen (Sicherungskopie des CRX-Repository).
 
-  Um die Correspondence Management Solution-Umgebung zu sichern, führen Sie die Schritte für die Autoren- und Veröffentlichungsinstanzen aus, wie unter [Sicherung und Wiederherstellung](/help/sites-administering/backup-and-restore.md).
+  Um die Correspondence Management Solution-Umgebung zu sichern, führen Sie die Schritte für die Autoren- und Veröffentlichungsinstanzen aus, wie unter [Sichern und Wiederherstellen](/help/sites-administering/backup-and-restore.md).
 
   Beachten Sie beim Sichern der Autoren- und Veröffentlichungsinstanzen die folgenden Punkte:
 
    * Stellen Sie sicher, dass die Sicherung für Autoren- und Veröffentlichungsinstanzen synchronisiert wird, um gleichzeitig zu starten. Sie können zwar weiterhin Autoren- und Veröffentlichungsinstanzen verwenden, während die Sicherung durchgeführt wird, es wird jedoch empfohlen, keine Assets während der Sicherung zu veröffentlichen, um nicht erfasste Änderungen zu vermeiden. Warten Sie, bis die Sicherung der Autoren- und Veröffentlichungsinstanzen beendet ist, bevor Sie neue Assets veröffentlichen.
-   * Die vollständige Sicherung des Autorknotens umfasst die Sicherung der Daten von Forms Manager und AEM Forms Workspace.
+   * Die vollständige Sicherung des Autorknotens umfasst die Sicherung von Forms Manager- und AEM Forms Workspace-Daten.
    * Workbench-Entwickler können ihre Prozesse weiterhin lokal bearbeiten. Sie sollten während der Backup-Phase keine neuen Prozesse bereitstellen.
    * Die Entscheidung über die Dauer jeder Sicherungssitzung (für den kontinuierlichen Sicherungsmodus) sollte auf der Gesamtzeit basieren, die zum Sichern aller Daten in AEM Forms benötigt wird (DB, GDS, AEM Repository und alle anderen zusätzlichen benutzerdefinierten Daten).
 
@@ -72,9 +72,9 @@ Diese Artikel enthalten Anleitungen zu grundlegenden Datenbankfunktionen für di
 >
 >Die Datenbanksicherung muss abgeschlossen sein, bevor Sie mit der Sicherung des globalen Dokumentenspeichers beginnen. Wenn die Datenbanksicherung nicht abgeschlossen ist, sind Ihre Daten nicht synchronisiert.
 
-### Wechseln der Sicherungsmodi {#entering-the-backup-modes}
+### Sicherungsmodi aktivieren {#entering-the-backup-modes}
 
-Sie können entweder Administration Console, den Befehl LCBackupMode oder die mit der AEM Forms-Installation verfügbare API verwenden, um in den Sicherungsmodus zu wechseln und ihn zu verlassen. Für die kontinuierliche Sicherung ist die Option Administration Console nicht verfügbar. sollten Sie entweder die Befehlszeilenoption oder die API verwenden. <!-- Fix broken link For information about using the API to enter and leave backup modes, see AEM Forms API Reference on Help and Tutorials page. -->
+Sie können entweder Administration Console, den Befehl LCBackupMode oder die mit der AEM Forms-Installation verfügbare API verwenden, um in den Sicherungsmodus zu wechseln und ihn zu verlassen. Für die kontinuierliche Sicherung ist die Option Administration Console nicht verfügbar. Sie sollten entweder die Befehlszeilenoption oder die API verwenden. <!-- Fix broken link For information about using the API to enter and leave backup modes, see AEM Forms API Reference on Help and Tutorials page. -->
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ Sie können entweder Administration Console, den Befehl LCBackupMode oder die mi
 
 1. Melden Sie sich bei der Administration-Console an.
 1. Klicken Sie auf Einstellungen > Core-Systemeinstellungen > Backup-Dienstprogramme.
-1. Wählen Sie &quot;Im abgesicherten Sicherungsmodus arbeiten&quot;und klicken Sie auf &quot;OK&quot;.
+1. Wählen Sie im abgesicherten Sicherungsmodus arbeiten aus und klicken Sie auf OK.
 
    Durch diese Methode wird AEM Forms unbegrenzt in den Sicherungsmodus versetzt (kein Timeout), und der Snapshot-Modus wird gestartet, anstatt dass ein kontinuierlicher Sicherungsmodus durchgeführt wird.
 
@@ -126,18 +126,18 @@ Führen Sie die folgenden Aufgaben aus, um mit Administration Console den abgesi
 
 1. Melden Sie sich bei der Administration-Console an.
 1. Klicken Sie auf Einstellungen > Core-Systemeinstellungen > Backup-Dienstprogramme.
-1. Deaktivieren Sie die Option &quot;Im abgesicherten Sicherungsmodus arbeiten&quot;und klicken Sie auf &quot;OK&quot;.
+1. Deaktivieren Sie &quot;Im abgesicherten Sicherungsmodus arbeiten&quot;und klicken Sie auf &quot;OK&quot;.
 
 **Alle Sicherungsmodi beibehalten**
 
-Sie können die Befehlszeilenschnittstelle verwenden, um AEM Forms aus dem abgesicherten Sicherungsmodus (Snapshot-Modus) zu entfernen oder die aktuelle Sicherungsmodussitzung (kontinuierlicher Modus) zu beenden. Sie können die Administration Console nicht verwenden, um den kontinuierlichen Sicherungsmodus zu deaktivieren. Im kontinuierlichen Sicherungsmodus sind die Steuerelemente &quot;Backup Utilities&quot;in Administration Console deaktiviert. Verwenden Sie entweder den API-Aufruf oder den Befehl LCBackupMode .
+Sie können die Befehlszeilenschnittstelle verwenden, um den abgesicherten Sicherungsmodus (Snapshot-Modus) für AEM Forms zu deaktivieren oder die aktuelle Sicherungsmodussitzung (kontinuierlicher Modus) zu beenden. Sie können die Administration Console nicht verwenden, um den kontinuierlichen Sicherungsmodus zu deaktivieren. Im kontinuierlichen Sicherungsmodus sind die Steuerelemente &quot;Backup Utilities&quot;in Administration Console deaktiviert. Verwenden Sie entweder den API-Aufruf oder den Befehl LCBackupMode .
 
 1. Zum Ordner `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` wechseln.
 1. Bearbeiten Sie je nach Betriebssystem das Skript `LCBackupMode.cmd` oder `LCBackupMode.sh`, um für Ihr System geeignete Standardwerte anzugeben.
 
    >[!NOTE]
    >
-   >Sie müssen den Ordner JAVA_HOME wie im entsprechenden Kapitel für Ihren Anwendungsserver in [Vorbereiten der Installation von AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_de)*.*
+   >Legen Sie den Ordner JAVA_HOME wie im entsprechenden Kapitel für Ihren Anwendungsserver in beschrieben fest. [Vorbereiten der Installation von AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_de)*.*
 
 1. Führen Sie den folgenden Befehl in einer einzelnen Zeile aus:
 

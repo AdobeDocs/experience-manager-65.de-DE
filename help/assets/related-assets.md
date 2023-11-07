@@ -5,9 +5,9 @@ contentOwner: AG
 role: User
 feature: Collaboration,Asset Management
 exl-id: ddb69727-74a0-4a4d-a14e-7d3bb5ceea2a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '630'
 ht-degree: 77%
 
 ---
@@ -56,7 +56,7 @@ Mit dieser Funktion können Sie eine PDF- oder JPG-Datei mit niedriger Auflösun
 
 1. Um die Verknüpfung eines Assets aufzuheben, klicken Sie in der Symbolleiste auf **[!UICONTROL Verknüpfung aufheben]** ![Verknüpfung von Assets aufheben](assets/do-not-localize/link-unrelate-icon.png).
 
-1. Wählen Sie die Assets aus, für die Sie die Zuordnung aufheben möchten. **[!UICONTROL Relationen entfernen]** und klicken Sie auf **[!UICONTROL Nicht zuordnen]**.
+1. Wählen Sie die Assets aus, für die Sie die Verknüpfung zum **[!UICONTROL Relationen entfernen]** und klicken Sie **[!UICONTROL Nicht zuordnen]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
@@ -74,7 +74,7 @@ Ist die Quelldatei mit einem anderen Asset verknüpft, ruft [!DNL Experience Man
 
 *Abbildung: Quell-Asset der verknüpften Assets, die zur Übersetzung hinzugefügt werden sollen.*
 
-1. Übersetzen Sie die Assets im Quellordner in eine Zielsprache, indem Sie die Schritte unter [Neues Übersetzungsprojekt erstellen](translation-projects.md#create-a-new-translation-project). Übersetzen Sie in diesem Fall beispielsweise Ihre Assets auf Französisch.
+1. Übersetzen Sie die Assets im Quellordner in eine Zielsprache, indem Sie die Schritte unter [Erstellen eines Übersetzungsprojekts](translation-projects.md#create-a-new-translation-project). Übersetzen Sie in diesem Fall beispielsweise Ihre Assets auf Französisch.
 
 1. Öffnen Sie auf der Seite [!UICONTROL Projekte] den Übersetzungsordner.
 

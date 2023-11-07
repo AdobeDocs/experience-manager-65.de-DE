@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
-workflow-type: ht
-source-wordcount: '2746'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '2740'
+ht-degree: 95%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 # [!DNL Adobe Experience Manager Assets] Anleitung zur Leistungsoptimierung {#assets-performance-tuning-guide}
 
-Das Setup [!DNL Experience Manager Assets] von umfasst eine Reihe von Hardware-, Software- und Netzwerkkomponenten. Je nach Ihrem Bereitstellungsszenario benötigen Sie möglicherweise bestimmte Konfigurationsänderungen an den Hardware-, Software- und Netzwerkkomponenten, um Leistungsengpässe zu vermeiden.
+Ein [!DNL Experience Manager Assets] -Setup enthält mehrere Hardware-, Software- und Netzwerkkomponenten. Je nach Ihrem Bereitstellungsszenario benötigen Sie möglicherweise bestimmte Konfigurationsänderungen an den Hardware-, Software- und Netzwerkkomponenten, um Leistungsengpässe zu vermeiden.
 
 Außerdem schaffen Sie eine solide Grundlage für Ihre [!DNL Experience Manager Assets]-Bereitstellung, mit der Sie alle Anforderungen an Leistung, Skalierbarkeit und Zuverlässigkeit erfüllen, wenn Sie sich an bestimmte Richtlinien zur Optimierung der Hardware und Software halten.
 
@@ -29,11 +29,11 @@ In den folgenden Schlüsselbereichen sollten Sie besonders darauf achten, dass L
 
 ## Plattform {#platform}
 
-Experience Manager wird auf einer Reihe von Plattformen unterstützt. Adobe zufolge werden die nativen Tools jedoch unter Linux und Windows besonders gut unterstützt und können dort zur optimalen Leistung und Vereinfachung der Implementierung beitragen. Ein 64-Bit-Betriebssystem ist ideal für die hohen Speicheranforderungen einer [!DNL Experience Manager Assets]-Bereitstellung. Wie bei jeder Experience Manager-Bereitstellung sollten Sie nach Möglichkeit TarMK implementieren. TarMK kann zwar nicht über eine einzelne Autoreninstanz skaliert werden, erzielt jedoch erfahrungsgemäß eine bessere Leistung als MongoMK. Sie können TarMK-Offload-Instanzen hinzufügen, um die Leistung der Workflow-Verarbeitung Ihrer [!DNL Experience Manager Assets]-Bereitstellung zu erhöhen.
+Obwohl Experience Manager auf mehreren Plattformen unterstützt wird, hat Adobe die größte Unterstützung für native Tools unter Linux und Windows gefunden, was zu einer optimalen Leistung und einfachen Implementierung beiträgt. Ein 64-Bit-Betriebssystem ist ideal für die hohen Speicheranforderungen einer [!DNL Experience Manager Assets]-Bereitstellung. Wie bei jeder Experience Manager-Bereitstellung sollten Sie nach Möglichkeit TarMK implementieren. TarMK kann zwar nicht über eine einzelne Autoreninstanz skaliert werden, erzielt jedoch erfahrungsgemäß eine bessere Leistung als MongoMK. Sie können TarMK-Offload-Instanzen hinzufügen, um die Leistung der Workflow-Verarbeitung Ihrer [!DNL Experience Manager Assets]-Bereitstellung zu erhöhen.
 
 ### Temporärer Ordner {#temp-folder}
 
-Nutzen Sie einen Hochleistungsspeicher für das temporäre Java-Verzeichnis, um das Hochladen der Assets zu beschleunigen. Unter Linux und Windows können Sie beispielsweise ein RAM- oder SSD-Laufwerk verwenden. In Cloud-basierten Umgebungen kann ein äquivalenter Hochgeschwindigkeitsspeicher verwendet werden. In Amazon EC2 beispielsweise kann ein Laufwerk vom Typ [flüchtiges Laufwerk](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) als temporärer Ordner eingesetzt werden.
+Nutzen Sie einen Hochleistungsspeicher für das temporäre Java-Verzeichnis, um das Hochladen der Assets zu beschleunigen. Unter Linux und Windows können Sie beispielsweise ein RAM- oder SSD-Laufwerk verwenden. In Cloud-basierten Umgebungen kann ein äquivalenter Hochgeschwindigkeitsspeicher verwendet werden. Beispiel: In Amazon EC2 wird ein [Kurzfahrwerk](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) -Laufwerk kann für den temporären Ordner verwendet werden.
 
 Bei einer großen Speicherkapazität des Servers kann ein RAM-Laufwerk konfiguriert werden. Führen Sie unter Linux die folgenden Befehle aus, um ein RAM-Laufwerk von 8 GB zu erstellen:
 
@@ -157,11 +157,11 @@ Standardmäßig kann [!DNL Experience Manager] maximal so viele Aufträge parall
 
 1. Greifen Sie in der [!DNL Experience Manager]-Autoreninstanz auf `https://[aem_server]:[port]/system/console/slingevent` zu.
 
-1. Klicken Sie für jede für Ihre Implementierung relevante Workflow-Warteschlange, z. B. für die **[!UICONTROL Ganite-Übergangs-Workflows-Warteschlange]**, auf **[!UICONTROL Bearbeiten]**.
+1. Klicks **[!UICONTROL Bearbeiten]** für jede Workflow-Warteschlange, die für Ihre Implementierung relevant ist, z. B. **[!UICONTROL Granite-Verlaufs-Workflow-Warteschlange]**.
 
 1. Ändern Sie den Wert der **[!UICONTROL maximal parallel ausführbaren Aufträge]** und klicken Sie auf **[!UICONTROL Speichern]**.
 
-Das Festlegen einer Warteschlange auf die Hälfte der verfügbaren Prozessoren ist eine praktikable Lösung, mit der begonnen werden kann. Möglicherweise müssen Sie diese Zahl jedoch erhöhen oder verringern, um den maximalen Durchsatz zu erzielen, und sie je nach Umgebung verfeinern. Es gibt separate Warteschlangen für Übergangs- und Nicht-Übergangs-Workflows sowie für andere Prozesse wie beispielsweise externe Workflows. Sind mehrere Warteschlangen, die auf 50 % der Prozessoren gesetzt sind, gleichzeitig aktiv, kann es schnell zu einer Überlastung des Systems kommen. Welche Warteschlangen stark ausgelastet sind, hängt in hohem Maße von den Benutzerimplementierungen ab. Sie müssen daher sorgfältig und mit Bedacht konfiguriert werden, um eine maximale Effizienz zu erreichen, ohne dass dies zulasten der Server-Stabilität geht.
+Das Festlegen einer Warteschlange auf die Hälfte der verfügbaren Prozessoren ist eine praktikable Lösung, mit der begonnen werden kann. Möglicherweise müssen Sie diese Zahl jedoch erhöhen oder verringern, um den maximalen Durchsatz zu erzielen, und sie je nach Umgebung verfeinern. Es gibt separate Warteschlangen für transiente und nicht transiente Workflows und andere Prozesse, wie externe Workflows. Sind mehrere Warteschlangen, die auf 50 % der Prozessoren gesetzt sind, gleichzeitig aktiv, kann es schnell zu einer Überlastung des Systems kommen. Welche Warteschlangen stark ausgelastet sind, hängt in hohem Maße von den Benutzerimplementierungen ab. Sie müssen daher sorgfältig und mit Bedacht konfiguriert werden, um eine maximale Effizienz zu erreichen, ohne dass dies zulasten der Server-Stabilität geht.
 
 ### Konfiguration von DAM-Update-Asset {#dam-update-asset-configuration}
 
@@ -228,7 +228,7 @@ Das Importieren einer großen Menge an Metadaten kann zu ressourcenintensiven XM
 
 ## Replikation {#replication}
 
-Beim Replizieren von Assets auf eine große Anzahl von Publishing-Instanzen, z. B. in einer Sites-Implementierung, empfiehlt Adobe die Verwendung der Kettenreplikation. In diesem Fall repliziert die Authoring-Instanz auf eine einzelne Publishing-Instanz, die wiederum auf die anderen Publishing-Instanzen repliziert, wodurch die Authoring-Instanz freigehalten wird.
+Beim Replizieren von Assets auf eine große Anzahl von Veröffentlichungsinstanzen, z. B. in einer Sites-Implementierung, empfiehlt Adobe die Verwendung der Kettenreplikation. In diesem Fall repliziert die Authoring-Instanz auf eine einzelne Publishing-Instanz, die wiederum auf die anderen Publishing-Instanzen repliziert, wodurch die Authoring-Instanz freigehalten wird.
 
 ### Konfiguration der Kettenreplikation   {#configure-chain-replication}
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7148'
+source-wordcount: '7146'
 ht-degree: 57%
 
 ---
@@ -73,7 +73,7 @@ Sie können die folgenden Eigenschaften für einen überwachten Ordner konfiguri
 
    * publish
 
-   * author, Veröffentlichungsinstanz
+   * Autor,Veröffentlichen
 
    * publish, author
 
@@ -87,7 +87,7 @@ Sie können die folgenden Eigenschaften für einen überwachten Ordner konfiguri
 
 >[!NOTE]
 >
->Selbst wenn eine Eingabe mithilfe dieses Mechanismus als zeitlich begrenzt markiert wird, kann sie möglicherweise immer noch im Hintergrund verarbeitet werden, sie braucht nur mehr Zeit als erwartet. Wenn die Eingabeinhalte verbraucht wurden, bevor der Timeout-Mechanismus eintrat, kann die Verarbeitung sogar zu einem späteren Zeitpunkt abgeschlossen werden und die Ausgabe wird in den Ergebnisordner abgelegt. Wenn die Inhalte nicht vor der Zeitüberschreitung genutzt wurden, ist es sehr wahrscheinlich, dass die Verarbeitung später beim Versuch, die Inhalte zu nutzen, fehlerhaft wird und dieser Fehler auch im Fehlerordner für dieselbe Eingabe protokolliert wird. Wenn die Verarbeitung für die Eingabe dagegen aufgrund eines zeitweisen Auftrags-/Workflow-Fehlers nie aktiviert wurde (dies ist das Szenario, auf das der Ablaufmechanismus abzielt), tritt natürlich keiner dieser beiden Fälle auf. Daher sollten Sie bei Einträgen im Fehlerordner, die als Fehler wegen einer Zeitüberschreitung gemeldet wurden (suchen Sie im Fehlerprotokoll nach Meldungen der Art „Datei nach erheblicher Zeit nicht verarbeitet, wird als Fehler markiert!“), den Ergebnisordner (und auch den Fehlerordner selbst auf einen anderen Eintrag für dieselbe Eingabe) prüfen, ob die zuvor beschriebenen Fälle tatsächlich eingetreten sind.
+>Selbst wenn eine Eingabe mithilfe dieses Mechanismus als zeitlich begrenzt markiert wird, kann sie möglicherweise immer noch im Hintergrund verarbeitet werden, sie braucht nur mehr Zeit als erwartet. Wenn die Eingabeinhalte verbraucht wurden, bevor der Timeout-Mechanismus eintrat, kann die Verarbeitung sogar zu einem späteren Zeitpunkt abgeschlossen werden und die Ausgabe wird in den Ergebnisordner abgelegt. Wenn die Inhalte nicht vor der Zeitüberschreitung genutzt wurden, ist es sehr wahrscheinlich, dass die Verarbeitung später beim Versuch, die Inhalte zu nutzen, fehlerhaft wird und dieser Fehler auch im Fehlerordner für dieselbe Eingabe protokolliert wird. Wenn die Verarbeitung für die Eingabe dagegen aufgrund eines zeitweisen Auftrags-/Workflow-Fehlers nie aktiviert wurde (dies ist das Szenario, auf das der Ablaufmechanismus abzielt), tritt keiner dieser beiden Fälle auf. Daher sollten Sie bei Einträgen im Fehlerordner, die als Fehler wegen einer Zeitüberschreitung gemeldet wurden (suchen Sie im Fehlerprotokoll nach Meldungen der Art „Datei nach erheblicher Zeit nicht verarbeitet, wird als Fehler markiert!“), den Ergebnisordner (und auch den Fehlerordner selbst auf einen anderen Eintrag für dieselbe Eingabe) prüfen, ob die zuvor beschriebenen Fälle tatsächlich eingetreten sind.
 
 * **deleteExpiredStageFileOnlyWhenThrottled (Boolean, Standard true):** Ob die Zeitüberschreitungsfunktion nur aktiviert werden soll, wenn der überwachte Ordner gedrosselt wird. Der Mechanismus ist für gedrosselte überwachte Ordner relevanter, da eine kleine Anzahl von Dateien, die noch nicht verarbeitet sind (aufgrund zeitweiliger Auftrags-/Workflow-Fehler), die Verarbeitung für den gesamten Batch blockieren kann, wenn die Drosselung aktiviert ist. Wenn diese Eigenschaft als &quot;true&quot;beibehalten wird (Standardeinstellung), wird der Ablaufmechanismus nicht für überwachte Ordner aktiviert, die nicht gedrosselt werden. Wenn die Eigenschaft als „false“ beibehalten wird, tritt die Zeitüberschreitung immer ein, wenn die stageFileExpirationDuration-Eigenschaft eine positive Zahl ist.
 

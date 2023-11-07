@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 57%
+source-wordcount: '1106'
+ht-degree: 55%
 
 ---
 
@@ -39,7 +39,7 @@ Um Ihre E-Mail beim E-Mail-Dienstleister zu veröffentlichen, müssen Sie die fo
 
 Sie können eine E-Mail oder einen Newsletter, die oder den Sie in einem E-Mail-Dienst veröffentlichen möchten, in Kampagnen mithilfe der Vorlage **Geometrixx-Newsletter** erstellen. Alternativ können Sie auch die Vorlage **Geometrixx Outdoors-E-Mail** verwenden. Beispiel-E-Mails oder -Newsletter, die auf der Vorlage **Geometrixx Outdoors-E-Mail** basieren, finden Sie unter `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
 
-So erstellen Sie eine neue E-Mail, die im konfigurierten E-Mail-Dienst veröffentlicht wird:
+So erstellen Sie eine E-Mail, die im konfigurierten E-Mail-Dienst veröffentlicht wird:
 
 1. Gehen Sie zu **Websites** und dann zu **Kampagnen**. Wählen Sie eine Kampagne.
 1. Wählen Sie **Neu**, um das Fenster **Seite erstellen** zu öffnen.

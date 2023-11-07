@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1698'
-ht-degree: 58%
+ht-degree: 55%
 
 ---
 
@@ -67,10 +67,10 @@ Die Personalisierung kann in vielen Fällen verwendet werden, wie zum Beispiel:
 
 ### Spezifische begrenzte Zielbenutzergruppen – Extranets {#extranets}
 
-* Benutzer benötigen zur Autorisierung einen Login. Dieser wird mit einem Profil verknüpft, das für die Personalisierung erforderliche Informationen bereitstellt, möglicherweise Details wie Standort, Beziehung zum Produkt, Nutzungsverlauf, Budgetierungsaufgaben usw.
+* Benutzer benötigen zur Autorisierung einen Login. Dieser wird mit einem Profil verknüpft, das für die Personalisierung erforderliche Informationen bereitstellt, möglicherweise Details wie Standort, Beziehung zum Produkt, Nutzungsverlauf, Budgetierungsverpflichtungen usw.
 * Solche Instanzen können sich auf Websites erstrecken, z. B.:
 * Unternehmen, die Websites für einen hochspezialisierten Bereich ihres Marktes bereitstellen, z. B. ein Pharmaunternehmen, das eine spezialisierte Website für Ärzte bereitstellt.
-* Unternehmen, die Websites bereitstellen, mit denen ihre Kunden aktuelle Konto- und Rechnungsinformationen anzeigen können, so zum Beispiel Telekommunikationsanbieter.
+* Unternehmen, die Websites bereitstellen, die es ihren Kunden ermöglichen, aktuelle Konto- und Rechnungsinformationen anzuzeigen, wie beispielsweise Telefonanbieter.
 
 ### Verkaufs- und Vertriebs-Website {#sales-site}
 
@@ -180,4 +180,4 @@ Ohne Communities-Erweiterung gibt es verschiedene Methoden, das Problem der Kons
 * Synchronisierung der verschiedenen Veröffentlichungsinstanzen, falls erforderlich
 * Senden des UGC von der Veröffentlichungsinstanz an die Autorenumgebung, von wo aus dieser auf eine ähnliche Weise wie Seiteninhalte veröffentlicht werden kann
 
-Die Methode, die verwendet wird, um die Konsistenz des benutzergenerierten Inhalts über mehrere Veröffentlichungsinstanzen hinweg zu erzielen, sollte sorgfältig gestaltet und auf ihre Leistung und Konsistenz hin überprüft werden.
+Die Methode, die verwendet wird, um UGC-Konsistenz in einer Veröffentlichungsumgebung aus mehreren Veröffentlichungsinstanzen zu erzielen, sollte sorgfältig konzipiert und auf Leistung und Konsistenz getestet werden.

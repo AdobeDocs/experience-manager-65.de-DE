@@ -3,10 +3,10 @@ title: Konfigurieren der Rich-Text-Editor-Plug-ins
 description: Erfahren Sie, wie Sie die Rich-Text-Editor-Plug-ins von Adobe Experience Manager konfigurieren, um einzelne Funktionen zu aktivieren.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '4395'
-ht-degree: 63%
+ht-degree: 62%
 
 ---
 
@@ -95,7 +95,7 @@ Sie können Ihren Autoren in der RTE-Symbolleiste nur einige, alle oder keine di
 
 Um die Anzeige der Symbole in RTE zu konfigurieren, führen Sie folgende Schritte aus.
 
-1. Navigieren Sie zu Ihrer Komponente, z. B. `/apps/<myProject>/components/text`.
+1. Navigieren Sie zu Ihrer Komponente, beispielsweise `/apps/<myProject>/components/text`.
 1. Navigieren Sie zum Knoten `rtePlugins/edit`. Lesen Sie die Informationen unter [Aktivieren von Plug-ins](#activateplugin), falls noch kein Knoten vorhanden ist.
 1. Erstellen Sie die Eigenschaft `features` im Knoten `edit` und fügen Sie eine oder mehrere Funktionen hinzu. Speichern Sie alle Änderungen.
 
@@ -226,7 +226,7 @@ Dazu aktivieren Sie das Stil-Plug-in.
 
 Geben Sie dann die Speicherorte der Stylesheets an, auf die Sie verweisen möchten:
 
-1. Navigieren Sie zum Stammknoten der Textkomponente, beispielsweise `/apps/<myProject>/components/text`.
+1. Navigieren Sie zum Stammknoten der Textkomponente, beispielsweise, `/apps/<myProject>/components/text`.
 1. Fügen Sie dem übergeordneten Knoten des Knotens `<rtePlugins-node>` die Eigenschaft `externalStyleSheets` hinzu:
 
    * **Name** `externalStyleSheets`
@@ -327,7 +327,7 @@ Jeglicher im RTE verfasster Text wird in einem Block-Tag platziert, standardmä�
 
 >[!NOTE]
 >
->Wenn ein Block-Tag, beispielsweise ein &lt;hr> -Tag, einem Absatz nicht zugewiesen werden kann, ist dies kein gültiger Anwendungsfall für ein Paraformat-Plug-in.
+>Wenn beispielsweise ein Block-Tag &lt;hr> -Tag, einem Absatz nicht zugewiesen werden kann, ist dies kein gültiger Anwendungsfall für ein Paraformat-Plug-in.
 
 Wenn das Plug-in Absatzformate zum ersten Mal aktiviert wird, sind keine standardmäßigen Absatzformate verfügbar. Die Popup-Liste ist leer. Gehen Sie wie folgt vor, um den Autoren Absatzformate bereitzustellen:
 

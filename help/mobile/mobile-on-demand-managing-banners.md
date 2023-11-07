@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Bannern
+title: Banner verwalten
 seo-title: Managing Banners
 description: Banner stellen normalerweise grafische Werbe-Links dar. Auf dieser Seite erfahren Sie mehr.
 seo-description: Banners represent typically graphical promotional links. Follow this page to learn more.
@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: fb1abaa0-9c02-4f20-aa7c-073def067452
 exl-id: c65a24e6-3041-4774-aeed-8e188ea19b78
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '661'
 ht-degree: 3%
 
 ---
 
-# Verwalten von Bannern{#managing-banners}
+# Banner verwalten{#managing-banners}
 
 >[!NOTE]
 >
@@ -38,20 +38,20 @@ Banner stellen normalerweise grafische Werbe-Links dar.
 >* [Erstellen von Bannern](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
 >
 
-## Erstellen eines Banners {#creating-a-banner}
+## Banner erstellen {#creating-a-banner}
 
 Der allgemeine Workflow zum Erstellen eines Artikels sieht wie folgt aus:
 
-1. Auswählen **Mobile** über die Seitenleiste aus.
+1. Auswählen **Mobilnummer** über die Seitenleiste aus.
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Klicken Sie oben rechts im **Banner verwalten** Kachel.
+1. Klicken Sie oben rechts in der **Banner verwalten** Kachel.
 1. Führen Sie die einzelnen Schritte des Assistenten aus, um mit der Erstellung des neuen Banners fortzufahren.
 1. Wenn Sie bereit sind, klicken Sie auf **Erstellen**.
 1. Ihr neues Banner wird im **Banner verwalten** Kachel.
 
 ![chlimage_1-6](assets/chlimage_1-6.gif)
 
-## Importieren eines neuen Banners {#importing-a-new-banner}
+## Importieren neuer Banner {#importing-a-new-banner}
 
 Vorhandene On-Demand-Inhalte für Mobilgeräte können von Mobile On-Demand heruntergeladen (importiert) werden, um sie zu AEM. Dies ermöglicht die Bearbeitung und Anzeige lokaler Inhalte.
 
@@ -62,8 +62,8 @@ Vorhandene On-Demand-Inhalte für Mobilgeräte können von Mobile On-Demand heru
 Der Workflow zum Importieren eines neuen Artikels
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Klicken Sie oben rechts im **Banner verwalten** und wählen Sie &quot;Banner importieren&quot;aus.
-1. Klicken **Importbanner** im Dialogfeld und dann Schließen.
+1. Klicken Sie oben rechts in der **Banner verwalten** und wählen Sie &quot;Banner importieren&quot;aus.
+1. Klicks **Importbanner** im Dialogfeld und dann Schließen.
 1. Ihre On-Demand-Artikel für Mobilgeräte werden jetzt im **Banner verwalten** Kachel.
 
 >[!CAUTION]
@@ -95,17 +95,17 @@ Allgemeiner Workflow zum Anzeigen/Bearbeiten eines Artikels:
 1. Wählen Sie ein Banner aus dem **Banner verwalten** Kachel.
 
 1. Wählen Sie in der Aktionsleiste **Eigenschaften** aus.
-1. Zeigen Sie alle verfügbaren Metadaten für diesen Artikel an.
+1. Alle verfügbaren Metadaten für diesen Artikel anzeigen.
 1. Bearbeiten Sie die Metadaten nach Bedarf und klicken Sie auf **Speichern** wann geschehen.
 1. Optional können Sie die Änderungen sofort in Mobile On-Demand hochladen.
 
-## Hochladen eines Banners {#uploading-a-banner}
+## Banner hochladen {#uploading-a-banner}
 
-Mit der Aktion &quot;Hochladen&quot;wird der ausgewählte Inhalt kopiert und zu einem Mobile On-Demand-Projekt hinzugefügt. Bereits vorhandene mobile On-Demand-Inhalte werden durch die neue Version ersetzt.
+Mit der Aktion &quot;Hochladen&quot;wird der ausgewählte Inhalt kopiert und zu einem On-Demand-Projekt für Mobilgeräte hinzugefügt. Bereits vorhandene mobile On-Demand-Inhalte werden durch die neue Version ersetzt.
 
 Der allgemeine Workflow zum Hochladen eines Banners:
 
-1. Von **Mobile** wählen Sie Ihre Mobile On-Demand-App aus dem Katalog aus.
+1. Von **Mobilnummer** wählen Sie Ihre Mobile On-Demand-App aus dem Katalog aus.
 1. Im **Banner verwalten** -Kachel ein Banner zum Hochladen auf Mobile On-Demand auswählen.
 1. Fügen Sie bei Bedarf in der Listenansicht weitere Banner hinzu.
 1. Auswählen **Hochladen** Klicken Sie in der Aktionsleiste auf Hochladen im Dialogfeld.
@@ -122,8 +122,8 @@ Der allgemeine Workflow zum Löschen eines Banners:
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
 1. Wählen Sie das zu löschende Banner im **Banner verwalten** Kachel.
 1. Stellen Sie sicher, dass es in der Liste ausgewählt ist (wählen Sie nach Bedarf andere aus, die gelöscht werden sollen).
-1. Klicken **Löschen** in der Aktionsleiste aus.
-1. Überprüfen Sie, ob Sie sowohl AEM als auch Mobile On-Demand löschen möchten.
+1. Klicks **Löschen** in der Aktionsleiste aus.
+1. Überprüfen Sie, ob Sie aus AEM und Mobile On-Demand löschen möchten.
 1. Klicken Sie auf **Löschen**.
 1. Ihr Banner wird jetzt aus der Liste entfernt.
 

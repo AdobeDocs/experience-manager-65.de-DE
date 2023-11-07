@@ -8,7 +8,7 @@ topic-tags: configuring
 docset: aem65
 feature: Configuring
 exl-id: cfa822c8-f9a9-4122-9eac-0293d525f6b5
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1227'
 ht-degree: 42%
@@ -92,7 +92,7 @@ In manchen Fällen ist es u. U. nützlich, die Replikations-Warteschlange anzuh
 
 Seitenberechtigungen werden nicht repliziert, da sie für die Knoten gespeichert werden, auf die Zugriff erteilt wird, und nicht für die Benutzer.
 
-Im Allgemeinen sollten Seitenberechtigungen nicht vom Autor zur Veröffentlichung repliziert werden und sind nicht standardmäßig. Der Grund hierfür ist, das die Zugriffsrechte in diesen beiden Umgebungen unterschiedlich sein müssen. Daher empfiehlt Adobe, ACLs auf Veröffentlichungsinstanz separat vom Autor zu konfigurieren.
+Im Allgemeinen sollten Seitenberechtigungen nicht vom Autor zur Veröffentlichung repliziert werden und sind nicht standardmäßig. Der Grund hierfür ist, das die Zugriffsrechte in diesen beiden Umgebungen unterschiedlich sein müssen. Daher empfiehlt Adobe, dass Sie ACLs auf der Veröffentlichungsinstanz separat von der Autoreninstanz konfigurieren.
 
 ## Replikations-Warteschlange blockiert bei der Replikation von Namespace-Informationen vom Autor zur Veröffentlichung {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
 
@@ -102,10 +102,10 @@ Manchmal wird die Replikationswarteschlange blockiert, wenn versucht wird, Names
 * Der Benutzer hat Lese- und Schreibrechte für den Pfad, in dem der Inhalt installiert ist.
 * Der Benutzer hat die Berechtigung `jcr:namespaceManagement` auf Repository-Ebene. Sie können die Berechtigungen wie folgt erteilen:
 
-1. Melden Sie sich bei CRX/DE an ( `https://localhost:4502/crx/de/index.jsp`) als Administrator.
+1. Melden Sie sich bei CRX/DE ( `https://localhost:4502/crx/de/index.jsp`) als Administrator.
 1. Klicken Sie auf die Registerkarte **Zugriffssteuerung**.
 1. Auswählen **Repository**.
-1. Klicken **Eintrag hinzufügen** (das Pluszeichen).
+1. Klicks **Eintrag hinzufügen** (das Pluszeichen).
 1. Geben Sie den Namen des Benutzers ein.
 1. Wählen Sie in der Liste der Berechtigungen `jcr:namespaceManagement` aus.
 1. Klicken Sie auf **OK**.

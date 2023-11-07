@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '1835'
 ht-degree: 37%
 
 ---
@@ -31,7 +31,7 @@ Im Folgenden finden Sie eine Liste der Bulk Editor-Abfrageparameter:
 
 >[!NOTE]
 >
->Jeder Parameter kann einen langen und einen kurzen Namen haben. Der lange Name für die Suche nach dem Stammverzeichnis ist z. B. `rootPath`, der kurze `rp`. Wenn der lange Name nicht definiert ist, wird der kurze aus der Anfrage ausgelesen.
+>Jeder Parameter kann einen langen und einen kurzen Namen haben. Beispielsweise lautet der lange Name für den Suchstammpfad . `rootPath`, lautet die kurze `rp`. Wenn der lange Name nicht definiert ist, wird der kurze aus der Anfrage ausgelesen.
 
 <table>
  <tbody>
@@ -160,7 +160,7 @@ Im Folgenden finden Sie eine Liste der Bulk Editor-Abfrageparameter:
 
 ### Entwickeln einer auf dem Bulk Editor basierenden Komponente: die Produktlisten-Komponente {#developing-a-bulk-editor-based-component-the-product-list-component}
 
-In diesem Abschnitt erhalten Sie einen Überblick darüber, wie Sie den Bulk Editor verwenden können, und eine Beschreibung der vorhandenen Geometrixx, die auf dem Bulk Editor basiert: die Produktlisten-Komponente.
+Dieser Abschnitt bietet einen Überblick darüber, wie der Bulk Editor verwendet werden kann, und beschreibt die bestehende Geometrixx anhand des Bulk Editors: der Produktlisten-Komponente.
 
 Mit der Komponente Produktliste können Benutzer eine Datentabelle anzeigen und bearbeiten. Beispielsweise können Sie die Produktlisten-Komponente verwenden, um Produkte in einem Katalog darzustellen. Die Informationen werden in einer standardmäßigen HTML-Tabelle dargestellt und alle Bearbeitungen werden in der **Bearbeiten** Dialogfeld, das ein BulkEditor-Widget enthält. (Dieser Bulk Editor entspricht dem Bulk Editor, auf den Sie über /etc/importers/bulkeditor.html oder das Menü Tools zugreifen können.) Die Produktlisten-Komponente wurde für bestimmte, eingeschränkte Bulk Editor-Funktionen konfiguriert. Jeder Teil des Bulk Editors (oder die vom Bulk Editor abgeleiteten Komponenten) kann konfiguriert werden.
 
@@ -168,8 +168,8 @@ Mit dem Bulk Editor können Sie die Zeilen hinzufügen, ändern, löschen, filte
 
 Der Quellcode der Produktlisten-Komponente ist im Repository unter /apps/geometrixx/components/productlist verfügbar und besteht aus mehreren Teilen wie allen Adobe Experience Manager-Komponenten (AEM):
 
-* HTML-Rendering: Das Rendern erfolgt in einer JSP-Datei (/apps/geometrixx/components/productlist/productlist.jsp). Die JSP liest die Unterknoten der aktuellen Produktlisten-Komponente und zeigt jede davon als Zeile einer HTML-Tabelle an.
-* Dialogfeld &quot;Bearbeiten&quot;, in dem Sie die Konfiguration des Bulk Editors definieren. Konfigurieren Sie das Dialogfeld entsprechend den Anforderungen der Komponente: verfügbare Spalten und mögliche Aktionen, die auf das Raster oder die Suche durchgeführt werden. Siehe [Konfigurationseigenschaften des Bulk Editors](#bulk-editor-configuration-properties) für Informationen zu allen Konfigurationseigenschaften.
+* HTML-Rendering: Das Rendering erfolgt in einer JSP-Datei (/apps/geometrixx/components/productlist/productlist.jsp). Die JSP liest die Unterknoten der aktuellen Produktlisten-Komponente und zeigt jede davon als Zeile einer HTML-Tabelle an.
+* Dialogfeld &quot;Bearbeiten&quot;, in dem Sie die Konfiguration des Bulk Editors definieren. Konfigurieren Sie das Dialogfeld entsprechend den Anforderungen der Komponente: verfügbare Spalten und mögliche Aktionen, die auf dem Raster oder bei der Suche durchgeführt werden. Siehe [Konfigurationseigenschaften des Bulk Editors](#bulk-editor-configuration-properties) für Informationen zu allen Konfigurationseigenschaften.
 
 Im Folgenden finden Sie eine XML-Darstellung der Unterknoten des Dialogfelds:
 
@@ -455,9 +455,9 @@ CSS- und schreibgeschützte Spalten
 
 Der Bulk Editor verfügt über drei Spaltenkonfigurationen:
 
-* Cell CSS class name (cellCls): einen CSS-Klassennamen, der zu jeder Zelle der konfigurierten Spalte hinzugefügt wird.
-* Zellstil (cellStyle): einen HTML-Stil, der zu jeder Zelle der konfigurierten Spalte hinzugefügt wird.
-* Schreibgeschützt (readOnly): schreibgeschützt ist für jede Zelle der konfigurierten Spalte festgelegt.
+* Zellen-CSS-Klassenname (cellCls): ein CSS-Klassenname, der zu jeder Zelle der konfigurierten Spalte hinzugefügt wird.
+* Zellstil (cellStyle): ein HTML-Stil, der zu jeder Zelle der konfigurierten Spalte hinzugefügt wird.
+* Schreibgeschützt (readOnly): Schreibgeschützt ist für jede Zelle der konfigurierten Spalte.
 
 Die Konfiguration muss wie folgt definiert sein:
 
@@ -522,11 +522,11 @@ Im vorherigen Beispiel ist die Auswahlspalte die erste Spalte mit forcedPosition
 
 Standardmäßig findet sich das Abfrage-Servlet unter `/libs/wcm/core/components/bulkeditor/json.java`. Sie können einen anderen Pfad konfigurieren, um die Daten abzurufen.
 
-Das Abfrage-Servlet funktioniert wie folgt: empfängt es eine GQL-Abfrage und die zurückzugebenden Spalten, berechnet die Ergebnisse und sendet die Ergebnisse als JSON-Stream an den Bulk Editor.
+Das Abfrage-Servlet funktioniert wie folgt: Es empfängt eine GQL-Abfrage und die zurückzugebenden Spalten, berechnet die Ergebnisse und sendet die Ergebnisse als JSON-Stream an den Bulk Editor.
 
 Im Komponentenfall Produktliste werden die beiden Parameter an das Abfrage-Servlet wie folgt gesendet:
 
-* Abfrage: &quot;path:/content/geometrixx/en/customer/jcr:content/par/productlist Cube&quot;
+* query: &quot;path:/content/geometrixx/en/Customers/jcr:content/par/productlist Cube&quot;
 * cols: &quot;Selection,ProductId,ProductName,Color,CatalogCode,SellingSku&quot;
 
 Und der JSON-Stream wird wie folgt zurückgegeben:
@@ -552,7 +552,7 @@ Sie können das Abfrage-Servlet erweitern, um ein komplexes Vererbungsmodell zur
 
 ### Servlet speichern {#save-servlet}
 
-In der Standardkonfiguration des Bulk Editors ist jede Zeile ein Knoten und der Pfad dieses Knotens wird im Zeileneintrag gespeichert. Der Bulk Editor behält die Verknüpfung zwischen der Zeile und dem Knoten über den jcr-Pfad bei. Wenn ein Benutzer das Raster bearbeitet, wird eine Liste aller Änderungen erstellt. Wenn ein Benutzer auf **Speichern**, wird eine POST-Abfrage an jeden Pfad mit den aktualisierten Eigenschaftswerten gesendet. Dies ist die Grundlage des Sling-Konzepts und funktioniert gut, wenn jede Zelle eine Eigenschaft des Knotens ist. Wenn jedoch das Abfrage-Servlet für die Vererbungsberechnung implementiert ist, kann dieses Modell nicht funktionieren, da eine vom Abfrage-Servlet zurückgegebene Eigenschaft von einem anderen Knoten übernommen werden kann.
+In der Standardkonfiguration des Bulk Editors ist jede Zeile ein Knoten und der Pfad dieses Knotens wird im Zeileneintrag gespeichert. Der Bulk Editor behält die Verknüpfung zwischen Zeile und Knoten über den jcr-Pfad bei. Wenn ein Benutzer das Raster bearbeitet, wird eine Liste aller Änderungen erstellt. Klickt ein Benutzer auf **Speichern**, wird eine POST-Abfrage an jeden Pfad mit den aktualisierten Eigenschaftswerten gesendet. Dies ist die Grundlage des Sling-Konzepts und funktioniert gut, wenn jede Zelle eine Eigenschaft des Knotens ist. Wenn jedoch das Abfrage-Servlet für die Vererbungsberechnung implementiert ist, kann dieses Modell nicht funktionieren, da eine vom Abfrage-Servlet zurückgegebene Eigenschaft von einem anderen Knoten übernommen werden kann.
 
 Das Konzept des Servlets &quot;Speichern&quot;besteht darin, dass die Änderungen nicht direkt an jeden Knoten gesendet werden, sondern in einem Servlet veröffentlicht werden, das den Speicherauftrag ausführt. Dadurch kann dieses Servlet die Änderungen analysieren und die Eigenschaften auf dem richtigen Knoten speichern.
 
@@ -570,4 +570,4 @@ Das Servlet muss wissen, wo die Eigenschaft catalogCode gespeichert ist.
 
 Eine standardmäßige Implementierung des Speichern-Servlets findet sich unter /libs/wcm/bulkeditor/save/POST.jsp und wird in der Produktlisten-Komponente genutzt. Es übernimmt alle Parameter der Anfrage (mit dem Format &lt;jcr path>/&lt;property name>) und schreibt mithilfe der JCR-API Eigenschaften auf Knoten. Außerdem erstellt das Servlet Knoten, wenn sie nicht vorhanden sind (in das Raster eingefügte Zeilen).
 
-Der Standardcode sollte nicht so verwendet werden, wie er ist, da er das, was der Server nativ tut (eine POST auf &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) und ist daher nur ein guter Ausgangspunkt zum Erstellen eines Servlets zum Speichern, das ein Eigenschaftsvererbungsmodell verwalten kann.
+Verwenden Sie den Standardcode nicht so, wie er ist, da er die nativen Aufgaben des Servers (eine POST auf &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) und ist daher nur ein guter Ausgangspunkt zum Erstellen eines Servlets zum Speichern, das ein Eigenschaftsvererbungsmodell verwalten kann.

@@ -1,18 +1,16 @@
 ---
 title: Anwenden von Workflows auf Inhaltsseiten
 description: Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Maßnahmen zu ergreifen. Es ist auch möglich, mehrere Workflows anzuwenden.
-uuid: 652d9a23-907d-43ad-9eef-7ab1d07918cd
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 6472dc94-96e0-4286-8f86-d85726cc843c
 docset: aem65
 exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: ht
-source-wordcount: '649'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '645'
+ht-degree: 94%
 
 ---
 
@@ -40,7 +38,6 @@ Workflows können wie folgt gestartet werden:
 >* [Arbeiten mit Projekt-Workflows](/help/sites-authoring/projects-with-workflows.md).
 >
 
-
 >[!NOTE]
 >
 >AEM-Admins können [Workflows unter Verwendung von mehreren anderen Methoden starten](/help/sites-administering/workflows-starting.md).
@@ -52,9 +49,9 @@ Sie können einen Workflow wie folgt starten:
 * [die Option Erstellen der Sites-Symbolleiste.](#starting-a-workflow-from-the-sites-toolbar)
 * [die Zeitleiste der Sites-Konsole](#starting-a-workflow-from-the-timeline).
 
-In beiden Fällen ist Folgendes nötig:
+In beiden Fällen müssen Sie:
 
-* [Angeben von Workflow-Details im Assistenten „Workflow erstellen“](#specifying-workflow-details-in-the-create-workflow-wizard)
+* [Angeben der Workflow-Details im Assistenten „Workflow erstellen“](#specifying-workflow-details-in-the-create-workflow-wizard)
 
 ### Starten eines Workflows von der Sites-Symbolleiste aus {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -99,10 +96,11 @@ Details können Sie angeben wie folgt:
 
    Je nach Workflow-Modell stehen auch die folgenden Optionen zur Verfügung. Dadurch kann das als Payload erstellte Paket nach Abschluss des Workflows beibehalten werden.
 
-   * **Workflow-Paket behalten**
+   * **Workflow-Paket beibehalten**
    * **Paketname**
 
       * Sie können einen Titel für das Paket angeben, um die Identifizierung zu erleichtern.
+
    >[!NOTE]
    >
    >Die Option **Workflow-Paket behalten** ist verfügbar, wenn der Workflow für Unterstützung für mehrere [Ressourcen konfiguriert](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) wurde und mehrere Ressourcen ausgewählt wurden.
@@ -118,13 +116,13 @@ Details können Sie angeben wie folgt:
    * Eine vorhandene Ressource, um weitere Aktionen zu sehen:
 
       * **Untergeordnete Elemente einbeziehen**, um anzugeben, dass untergeordnete Elemente der betreffenden Ressource im Workflow enthalten sind.
-Ein Dialogfeld wird geöffnet, in dem Sie die Auswahl verfeinern können:
+Daraufhin wird ein Dialogfeld geöffnet, in dem Sie die Auswahl wie folgt verfeinern können:
 
          * Nur unmittelbar untergeordnete Elemente einbeziehen.
          * Nur geänderte Seiten einbeziehen.
          * Nur bereits veröffentlichte Seiten einbeziehen.
 
-         Alle angegebenen untergeordneten Elemente werden der Liste der Ressourcen hinzugefügt, auf die der Workflow angewendet werden soll.
+        Alle angegebenen untergeordneten Elemente werden der Liste der Ressourcen hinzugefügt, auf die der Workflow angewendet werden soll.
 
       * **Auswahl entfernen**, um die betreffende Ressource aus dem Workflow zu entfernen.
 
@@ -138,6 +136,6 @@ Ein Dialogfeld wird geöffnet, in dem Sie die Auswahl verfeinern können:
 
 ## Starten eines Workflows aus dem Seiten-Editor {#starting-a-workflow-from-the-page-editor}
 
-Wenn Sie eine Seite bearbeiten, können Sie die **Seiteninformationen** von der Symbolleiste aus aufrufen. Das Dropdown-Menü enthält die Option **In Workflow starten**. Ein Dialogfeld wird geöffnet, in dem Sie den gewünschten Workflow ggf. zusammen mit einem Titel angeben können:
+Wenn Sie eine Seite bearbeiten, können Sie die **Seiteninformationen** von der Symbolleiste aus aufrufen. Das Dropdown-Menü enthält die Option **In Workflow starten**. Dadurch wird ein Dialogfeld geöffnet, in dem Sie den erforderlichen Workflow ggf. zusammen mit einem Titel angeben können:
 
 ![wf-54](assets/wf-54.png)

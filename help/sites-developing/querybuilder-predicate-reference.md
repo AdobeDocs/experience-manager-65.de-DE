@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2347'
-ht-degree: 29%
+ht-degree: 32%
 
 ---
 
@@ -157,7 +157,7 @@ unterstützt keine Facettenextraktion.
 
 ### fulltext {#fulltext}
 
-Sucht nach Begriffen im Volltext-Index.
+Sucht nach Ausdrücken im Volltextindex.
 
 Filterung wird nicht unterstützt.
 
@@ -232,7 +232,7 @@ Dies ist ein reines Filterprädikat und kann keinen Suchindex verwenden. Facette
 
 * **hasPermission**
 
-  Kommagetrennte JCR-Berechtigungen, die die aktuelle Benutzersitzung ALLE über den betreffenden Knoten verfügen muss. Zum Beispiel, `jcr:write`, `jcr:modifyAccessControl`.
+  Kommagetrennte JCR-Berechtigungen, die die aktuelle Benutzersitzung ALLE über den betreffenden Knoten verfügen muss. Beispiel, `jcr:write`, `jcr:modifyAccessControl`.
 
 ### language {#language}
 
@@ -246,7 +246,7 @@ Unterstützt die Facettenextraktion. Enthält Behälter für jeden eindeutigen S
 
 * **language**
 
-  ISO-Sprach-Code, z. B „`de`“
+  ISO-Sprachcode, z. B. &quot;`de`&quot;
 
 ### mainasset {#mainasset}
 
@@ -306,13 +306,13 @@ Unterstützt die Facettenextraktion auf die gleiche Weise wie das Prädikat „d
 
 ### orderby {#orderby}
 
-Die Ergebnisse können sortiert werden. Wenn die Sortierung durch mehrere Eigenschaften erforderlich ist, muss dieses Präfix mehrmals mit dem Zahlenpräfix hinzugefügt werden, z. B. `1_orderby=first`, `2_oderby=second`.
+Die Ergebnisse können sortiert werden. Wenn nach mehreren Eigenschaften sortiert werden muss, muss dieses Prädikat unter Verwendung des numerischen Präfixes mehrfach hinzugefügt werden, z. B. `1_orderby=first`, `2_oderby=second`.
 
 #### Eigenschaften {#properties-13}
 
 * **orderby**
 
-  Entweder der Name der JCR-Eigenschaft, der durch ein vorangestelltes @ angegeben wird, z. B. `@jcr:lastModified` oder `@jcr:content/jcr:title`oder einer anderen Eigenschaft in der Abfrage, beispielsweise `2_property`, nach dem sortiert werden soll.
+  Entweder der Name der JCR-Eigenschaft, der durch ein vorangestelltes @ angegeben wird, z. B. `@jcr:lastModified` oder `@jcr:content/jcr:title`oder einer anderen Eigenschaft in der Abfrage, z. B. `2_property`, nach dem sortiert werden soll.
 
 * **sortieren**
 
@@ -424,7 +424,7 @@ Beispiel:
 * `lowerBound=-1500` und `upperBound=5500` wählt alles aus, was im Zeitraum zwischen einschließlich 1500 Millisekunden in der Vergangenheit und einschließlich 5500 Millisekunden in der Zukunft liegt. 
 * `lowerBound=1d` und `upperBound=2d` wählt alles am übernächsten Tag aus.
 
-Es werden keine Schaltjahre berücksichtigt und alle Monate sind 30 Tage.
+Schaltjahre werden nicht berücksichtigt, und alle Monate haben 30 Tage.
 
 Filterung wird nicht unterstützt.
 
@@ -458,7 +458,7 @@ Der Name „root“ wird in Abfragen nie verwendet, er ist impliziert.
 
 * **p.guessTotal**
 
-  Empfohlen: Vermeiden Sie die Berechnung der vollständigen Ergebnissumme, die kostspielig sein kann. Entweder eine Zahl, die die maximal zu zählende Gesamtsumme angibt (z. B. 1000, eine Zahl, die Benutzern genügend Feedback zur groben Größe und genauen Zahlen für kleinere Ergebnisse gibt) oder &quot; `true`&quot; nur bis zu dem erforderlichen Minimum zählen. `p.offset` + `p.limit`.
+  Empfohlen: Vermeiden Sie die Berechnung der vollständigen Ergebnissumme, die kostspielig sein kann. Entweder eine Zahl, die die maximal zu zählende Summe angibt (z. B. 1000, eine Zahl, die Benutzern genügend Feedback zur groben Größe und genauen Zahlen für kleinere Ergebnisse gibt) oder &quot; `true`&quot; nur bis zu dem erforderlichen Minimum zählen. `p.offset` + `p.limit`.
 
 * **p.excerpt**
 
@@ -520,7 +520,7 @@ Unterstützt die Facettenextraktion. Stellt Behälter für jedes eindeutige Tag 
 
 * **tag**
 
-  Tag-Titelpfad, nach dem gesucht werden soll, beispielsweise &quot;Asset-Eigenschaften: Ausrichtung/Querformat&quot;.
+  Tag-Titelpfad, der nach z. B. &quot;Asset-Eigenschaften: Ausrichtung/Querformat&quot;sucht.
 
 * **N_value**
 
@@ -540,7 +540,7 @@ Unterstützt die Facettenextraktion. Stellt Behälter für jedes eindeutige Tag 
 
 * **tagid**
 
-  Tag-ID , damit Sie nach z. B. &quot; `properties:orientation/landscape`&quot;.
+  Tag-ID , damit Sie z. B. nach &quot; `properties:orientation/landscape`&quot;.
 
 * **N_value**
 

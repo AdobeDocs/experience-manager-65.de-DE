@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '9901'
-ht-degree: 89%
+source-wordcount: '9888'
+ht-degree: 87%
 
 ---
 
@@ -143,7 +143,7 @@ In der folgenden Tabelle sind die WSDL-Definitionen des Services aufgeführt (un
 
 **WSDL-Definitionen für AEM Forms-Prozesse**
 
-Sie müssen den Programmnamen und den Prozessnamen in der WSDL-Definition angeben, um auf eine WSDL zugreifen zu können, die zu einem in Workbench erstellten Prozess gehört. Angenommen, der Name des Programms lautet `MyApplication` und der Name des Prozesses lautet `EncryptDocument`. Geben Sie in diesem Fall die folgende WSDL-Definition an:
+Geben Sie den Anwendungsnamen und den Prozessnamen in der WSDL-Definition an, um auf eine WSDL zuzugreifen, die zu einem in Workbench erstellten Prozess gehört. Angenommen, der Name des Programms lautet `MyApplication` und der Name des Prozesses lautet `EncryptDocument`. Geben Sie in diesem Fall die folgende WSDL-Definition an:
 
 ```java
  http://localhost:8080/soap/services/MyApplication/EncryptDocument?wsdl
@@ -208,11 +208,11 @@ Die Felder `MTOM` und `swaRef` werden nur in AEM Forms unterstützt. Sie können
 
 **Bereitstellen von BLOB-Objekten in Service-Anforderungen**
 
-Wenn ein Service-Vorgang von AEM Forms einen `BLOB`-Typ als Eingabewert erfordert, erstellen Sie in Ihrer Anwendungslogik eine Instanz des `BLOB`-Typs. (Viele der Webservice-Kurzanleitungen unter *Programmieren mit AEM Forms* zeigen, wie Sie mit einem BLOB-Datentyp arbeiten).
+Wenn ein Service-Vorgang von AEM Forms einen `BLOB`-Typ als Eingabewert erfordert, erstellen Sie in Ihrer Anwendungslogik eine Instanz des `BLOB`-Typs. (Viele der Webdienst-Schnellstarts in *Programmieren mit AEM* zeigen, wie Sie mit einem BLOB-Datentyp arbeiten.)
 
 Weisen Sie den Feldern, die zur `BLOB`-Instanz gehören, wie folgt Werte zu:
 
-* **Base64**: Um Daten als im Base64-Format kodierten Text zu übergeben, geben Sie die Daten im Feld `BLOB.binaryData` und den Datentyp im MIME-Format (beispielsweise `application/pdf`) im Feld `BLOB.contentType` ein. (Siehe [Aufrufen von AEM Forms mit Base64-Kodierung](#invoking-aem-forms-using-base64-encoding).)
+* **Base64**: Um Daten als Text zu übergeben, der in einem Base64-Format kodiert wurde, legen Sie die Daten im `BLOB.binaryData` und legen Sie den Datentyp im MIME-Format fest (z. B. `application/pdf`) in der `BLOB.contentType` -Feld. (Siehe [Aufrufen von AEM Forms mit Base64-Kodierung](#invoking-aem-forms-using-base64-encoding).)
 * **MTOM**: Um Binärdaten in einer MTOM-Anlage zu übergeben, geben Sie die Daten im Feld `BLOB.MTOM` ein. Mit dieser Einstellung werden die Daten über das Java JAX-WS-Framework oder die native API des SOAP-Frameworks an die SOAP-Anfrage angehängt. (Siehe [Aufruf von AEM Forms mit MTOM](#invoking-aem-forms-using-mtom).)
 * **SwaRef**: Um Binärdaten in einem WS-I SwaRef-Anhang zu übergeben, geben Sie die Daten im `BLOB.swaRef`-Feld ein. Mit dieser Einstellung werden die Daten unter Verwendung des Java JAX-WS-Frameworks an die SOAP-Anfrage angehängt. (Siehe [Aufruf von AEM Forms mit SwaRef](#invoking-aem-forms-using-swaref).)
 * **MIME- oder DIME-Anlage**: Um Daten in einer MIME- oder DIME-Anlage zu übergeben, fügen Sie die Daten mithilfe der nativen API des SOAP-Frameworks der SOAP-Anfrage hinzu. Legen Sie die Anlagenkennung im `BLOB.attachmentID`-Feld fest. (Siehe [Aufruf von AEM Forms mit Base64-Kodierung](#invoking-aem-forms-using-base64-encoding).)
@@ -357,7 +357,7 @@ Sie können JAX-WS verwenden, um eine Forms-Dienst-WSDL in Java-Proxy-Klassen zu
 1. Installieren Sie JDK 1.6 oder höher.
 
    * Fügen Sie den JDK-Bin-Ordner zu Ihrem Klassenpfad hinzu.
-   * Fügen Sie den JRE-Bin-Ordner zu Ihrem Klassenpfad hinzu. Dieses Bin befindet sich im `[JDK_INSTALL_LOCATION]/jre`-Ordner.
+   * Fügen Sie den JRE-Bin-Ordner zu Ihrem Klassenpfad hinzu. Diese Klasse befindet sich im `[JDK_INSTALL_LOCATION]/jre` Verzeichnis.
    * Setzen Sie die `JAVA_HOME`-Umgebungsvariable auf den Ordner, in dem Sie das JDK installiert haben.
 
    JDK 1.6 enthält das in der Datei „build.xml“ verwendete Programm wsimport. JDK 1.5 enthält dieses Programm nicht.
@@ -431,7 +431,7 @@ Sie können JAX-WS verwenden, um eine Forms-Dienst-WSDL in Java-Proxy-Klassen zu
 
 1. Verpacken Sie die JAVA-Dateien in einer JAR-Datei. Wenn Sie auf Eclipse arbeiten, führen Sie die folgenden Schritte aus:
 
-   * Erstellen Sie ein neues Java-Projekt, das zum Verpacken der JAVA-Proxy-Dateien in eine JAR-Datei verwendet wird.
+   * Erstellen Sie ein Java-Projekt, das zum Verpacken der JAVA-Proxy-Dateien in eine JAR-Datei verwendet wird.
    * Erstellen Sie einen Quellordner im Projekt.
    * Erstellen Sie ein `com.adobe.idp.services`-Paket im Quellordner.
    * Wählen Sie das `com.adobe.idp.services`-Paket und importieren Sie dann die JAVA-Dateien aus dem Ordner „adobe/idp/services“ in das Paket.
@@ -440,11 +440,11 @@ Sie können JAX-WS verwenden, um eine Forms-Dienst-WSDL in Java-Proxy-Klassen zu
    * Setzen Sie die Konformitätsstufe des Java-Compilers auf 5.0 oder höher.
    * Erstellen Sie das Projekt.
    * Exportieren Sie das Projekt als JAR-Datei.
-   * Importieren Sie diese JAR-Datei in den Klassenpfad eines Client-Projekts. Importieren Sie außerdem alle JAR-Dateien, die sich in „&lt;Installationsverzeichnis>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty“ befinden.
+   * Importieren Sie diese JAR-Datei in den Klassenpfad eines Client-Projekts. Importieren Sie außerdem alle JAR-Dateien in &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
    >[!NOTE]
    >
-   >In allen Kurzanleitungen für Java-Web-Services (mit Ausnahme des Forms-Services), die sich unter „Programmieren mit AEM Forms“ befinden, werden Java-Proxy-Dateien mit JAX-WS erstellt. Darüber hinaus verwenden alle Kurzanleitungen für Java-Webservices SwaRef. (Siehe [Aufrufen von AEM Forms mithilfe von SwaRef](#invoking-aem-forms-using-swaref).)
+   >Alle Schnellstarts des Java-Webdienstes (mit Ausnahme des Forms-Dienstes) unter Programmieren mit AEM Formularen erstellen Java-Proxy-Dateien mit JAX-WS. Darüber hinaus verwenden alle Kurzanleitungen für Java-Webservices SwaRef. (Siehe [Aufrufen von AEM Forms mithilfe von SwaRef](#invoking-aem-forms-using-swaref).)
 
 **Siehe auch**
 
@@ -584,7 +584,7 @@ Sie können eine .NET-Client-Assembly erstellen, um einen Forms-Dienst aus einem
 
 **Proxy-Klasse erstellen**
 
-Sie können mithilfe eines Werkzeuges, das zu Microsoft Visual Studio gehört, eine Proxyklasse zur Erstellung der .NET-Client-Assembly erstellen. Das Werkzeug trägt den Namen „wsdl.exe“ und befindet sich im Installationsordner von Microsoft Visual Studio. Um eine Proxy-Klasse zu erstellen, öffnen Sie die Eingabeaufforderung und navigieren Sie zu dem Ordner, der die Datei „wsdl.exe“ enthält. Weitere Informationen zum Tool „wsdl.exe“ finden Sie in der *MSDN-Hilfe*.
+Sie können mithilfe eines Werkzeuges, das zu Microsoft Visual Studio gehört, eine Proxyklasse zur Erstellung der .NET-Client-Assembly erstellen. Der Name des Tools ist wsdl.exe und befindet sich im Installationsordner von Microsoft Visual Studio. Um eine Proxy-Klasse zu erstellen, öffnen Sie die Eingabeaufforderung und navigieren Sie zu dem Ordner, der die Datei „wsdl.exe“ enthält. Weitere Informationen zum Tool „wsdl.exe“ finden Sie in der *MSDN-Hilfe*.
 
 Geben Sie an der Eingabeaufforderung den folgenden Befehl ein:
 
@@ -669,7 +669,7 @@ Sie können einen AEM Forms-Service mithilfe von Java-Proxy-Klassen und Base64 a
    >Ersetzen Sie `hiro-xp` *durch die IP-Adresse des J2EE-Anwendungsservers, der als Host für AEM Forms dient.*
 
 1. Verpacken Sie die mit JAX-WS erstellten Java-Proxyklassen in eine JAR-Datei.
-1. Schließen Sie die Java-Proxy-JAR-Datei und die JAR-Dateien im Pfad
+1. Schließen Sie die Java-Proxy-JAR-Datei und die JAR-Dateien in den folgenden Pfad ein:
 
    &lt;Installationsverzeichnis>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
@@ -864,7 +864,7 @@ Um den `MyApplication/EncryptDocument`-Prozess mithilfe von Java-Proxy-Dateien a
    >Ersetzen `hiro-xp` *mit der IP-Adresse des J2EE-Anwendungsservers, auf dem AEM Forms gehostet wird.*
 
 1. Verpacken Sie die mit JAX-WS erstellten Java-Proxyklassen in eine JAR-Datei.
-1. Schließen Sie die Java-Proxy-JAR-Datei und die JAR-Dateien im Pfad
+1. Schließen Sie die Java-Proxy-JAR-Datei und die JAR-Dateien in den folgenden Pfad ein:
 
    &lt;Installationsverzeichnis>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
@@ -966,7 +966,7 @@ Sie können den `MyApplication/EncryptDocument`-Dienst (der in Workbench erstell
 1. Rufen Sie die `MyApplication/EncryptDocument` -Prozess durch Aufrufen der `MyApplication_EncryptDocumentService` -Objekt `invoke` -Methode und Übergabe der `BLOB` -Objekt. Dieser Prozess gibt ein verschlüsseltes PDF-Dokument innerhalb eines `BLOB`-Objekts zurück.
 1. Erstellen Sie eine `System.UriBuilder` -Objekt mithilfe des Konstruktors und Übergabe des Werts des zurückgegebenen `BLOB` -Objekt `remoteURL` Datenelement.
 1. Konvertieren Sie das `System.UriBuilder`-Objekt zu einem `System.IO.Stream`-Objekt. (Der C#-Schnellstart, der dieser Liste folgt, veranschaulicht, wie diese Aufgabe ausgeführt wird).
-1. Erstellen Sie ein Byte-Array und fügen Sie es mit den Daten aus dem `System.IO.Stream`-Objekt.
+1. Erstellen Sie ein Byte-Array und fügen Sie es mit den Daten im `System.IO.Stream` -Objekt.
 1. Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
 1. Schreiben Sie die Byte-Array-Inhalte in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter` -Objekt `Write` -Methode verwenden und das Byte-Array übergeben.
 
@@ -987,7 +987,7 @@ Sie können einen AEM Forms-Dienst mit Java-Proxy-Klassen und BLOB-Daten über H
    >Ersetzen `hiro-xp` *mit der IP-Adresse des J2EE-Anwendungsservers, auf dem AEM Forms gehostet wird.*
 
 1. Verpacken Sie die mit JAX-WS erstellten Java-Proxyklassen in eine JAR-Datei.
-1. Schließen Sie die Java-Proxy-JAR-Datei und die JAR-Dateien im Pfad
+1. Schließen Sie die Java-Proxy-JAR-Datei und die JAR-Dateien in den folgenden Pfad ein:
 
    &lt;Installationsverzeichnis>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
@@ -1106,7 +1106,7 @@ Sie können einen Forms-Dienst mit DIME aufrufen. Beachten Sie den `MyApplicatio
 1. Rufen Sie die `EncryptDocumentServiceWse.RequestSoapContext.Attachments.Add`-Methode auf und übergeben Sie das `Microsoft.Web.Services2.Dime.DimeAttachment`-Objekt.
 1. Rufen Sie die `MyApplication/EncryptDocument` -Prozess durch Aufrufen der `EncryptDocumentServiceWse` -Objekt `invoke` -Methode und Übergabe der `BLOB` -Objekt, das die DIME-Anlage enthält. Dieser Prozess gibt ein verschlüsseltes PDF-Dokument innerhalb eines `BLOB`-Objekts zurück.
 1. Rufen Sie den Anlagenkennungswert ab, indem Sie den Wert der zurückgegebenen `BLOB` -Objekt `attachmentID` Datenelement.
-1. Iterieren Sie durch die Anlagen unter `EncryptDocumentServiceWse.ResponseSoapContext.Attachments` und verwenden Sie den Anlagenkennungswert, um das verschlüsselte PDF-Dokument abzurufen.
+1. Iterieren Sie durch die Anlagen in `EncryptDocumentServiceWse.ResponseSoapContext.Attachments` und verwenden Sie den Anlagenkennungswert, um das verschlüsselte PDF-Dokument abzurufen.
 1. Abrufen einer `System.IO.Stream` -Objekt durch Abrufen des Werts der `Attachment` -Objekt `Stream` Datenelement.
 1. Erstellen Sie ein Byte-Array und übergeben Sie dieses Byte-Array an die `System.IO.Stream` -Objekt `Read` -Methode. Diese Methode füllt das Byte-Array mit einem Datenstrom, der das verschlüsselte PDF-Dokument darstellt.
 1. Erstellen Sie ein `System.IO.FileStream`-Objekt durch Aufrufen des Konstruktors und Übergeben eines Zeichenfolgenwerts, der einen Speicherort der PDF-Datei darstellt. Dieses Objekt stellt das verschlüsselte PDF-Dokument dar.

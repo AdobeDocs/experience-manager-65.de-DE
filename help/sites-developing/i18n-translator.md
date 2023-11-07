@@ -1,19 +1,15 @@
 ---
 title: Verwalten von Wörterbüchern mithilfe des Übersetzers
-seo-title: Using Translator to Manage Dictionaries
 description: AEM bietet eine Konsole für die Verwaltung der verschiedenen Übersetzungen von Texten, die in der Komponentenbenutzeroberfläche verwendet werden
-seo-description: AEM provides a console for managing the various translations of texts used in component UI
-uuid: 4eea3110-e958-473e-8d22-c84fa435edbd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
-discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2327'
-ht-degree: 43%
+source-wordcount: '2320'
+ht-degree: 40%
 
 ---
 
@@ -23,9 +19,9 @@ AEM bietet eine Konsole für die Verwaltung der verschiedenen Übersetzungen von
 
 `https://<hostname>:<port-number>/libs/cq/i18n/translator.html`
 
-Mithilfe des Übersetzer-Tools können Sie englischsprachige Zeichenfolgen und die dazugehörigen Übersetzungen verwalten. Die Wörterbücher werden im Repository erstellt (beispielsweise in /apps/myproject/i18n).
+Mithilfe des Übersetzer-Tools können Sie englischsprachige Zeichenfolgen und die dazugehörigen Übersetzungen verwalten. Die Wörterbücher werden im Repository erstellt, z. B. /apps/myproject/i18n.
 
-Hinweis: Das Übersetzer-Tool und die Wörterbücher, die Sie verwalten, dienen zur Darstellung der Komponentenbenutzeroberfläche in verschiedenen Sprachen. Wenn Sie Seiten oder benutzergenerierte Inhalte übersetzen möchten, lesen Sie [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md) und [Übersetzung benutzergenerierter Inhalte](/help/communities/translate-ugc.md).
+Das Übersetzer-Tool und die von Ihnen verwalteten Wörterbücher dienen der Präsentation der Komponenten-Benutzeroberfläche in verschiedenen Sprachen. Wenn Sie Seiten oder benutzergenerierte Inhalte übersetzen möchten, lesen Sie [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md) und [Übersetzung benutzergenerierter Inhalte](/help/communities/translate-ugc.md).
 
 >[!CAUTION]
 >
@@ -43,7 +39,7 @@ Das Übersetzer-Tool zeigt die in AEM verwendeten Texte zusammen mit den verschi
 
 Sie können die englischen und übersetzten Texte durchsuchen, filtern und bearbeiten. Sie können auch Wörterbücher zur Übersetzung in das XLIFF-Format exportieren und die Übersetzungen dann wieder in die Wörterbücher importieren.
 
-Sie können die i18n-Wörterbücher auch über diese Konsole zu einem Übersetzungsprojekt hinzufügen. Sie können entweder eine neue erstellen oder einem vorhandenen Projekt hinzufügen.
+Sie können die i18n-Wörterbücher auch über diese Konsole zu einem Übersetzungsprojekt hinzufügen. Sie können entweder ein Projekt erstellen oder einem vorhandenen Projekt hinzufügen.
 
 1. Klicks **Wörterbuch übersetzen**.
 
@@ -113,7 +109,7 @@ Die Zeichenfolgen, die Sie einem Wörterbuch hinzufügen, müssen genau mit der 
 
 Verwenden Sie die Eigenschaft Kommentar der Wörterbuchzeichenfolge, um dem Übersetzer Informationen zur Klärung der Bedeutung der Zeichenfolge bereitzustellen. Normalerweise unterstützt die Benutzeroberfläche Benutzer bei der Bestimmung der Bedeutung mehrdeutiger Wörter. Der Übersetzer sieht die Zeichenfolge jedoch nicht im Kontext der Benutzeroberfläche. Der Übersetzungshinweis entfernt die Uneindeutigkeit. So kann ein Übersetzer mithilfe eines Kommentars beispielsweise darauf hingewiesen werden, dass das englische Wort „Request“ nicht als Verb, sondern als Substantiv verwendet wird.
 
-Übersetzungshinweise unterscheiden auch Zeichenfolgen, die identisch sind und unterschiedliche Bedeutungen haben. Zum Beispiel kann das Wort &quot;Suche&quot;ein Substantiv oder ein Verb sein, das zwei &quot;Suche&quot;-Einträge im Wörterbuch mit zwei verschiedenen Übersetzungshinweisen erfordert. Der Code, der die Zeichenfolge anfordert, enthält auch den Übersetzungshinweis, sodass die richtige Zeichenfolge in der Benutzeroberfläche verwendet wird.
+Übersetzungshinweise unterscheiden auch Zeichenfolgen, die identisch sind und unterschiedliche Bedeutungen haben. Beispielsweise kann das Wort &quot;Suche&quot;ein Substantiv oder ein Verb sein, das zwei &quot;Suche&quot;-Einträge im Wörterbuch mit zwei verschiedenen Übersetzungshinweisen erfordert. Der Code, der die Zeichenfolge anfordert, enthält auch den Übersetzungshinweis, sodass die richtige Zeichenfolge in der Benutzeroberfläche verwendet wird.
 
 **Einschließen indizierter Variablen**
 
@@ -283,7 +279,7 @@ Die Wörterbuchtabelle des Übersetzer-Tools umfasst folgende Sprachen:
 
 Gehen Sie wie folgt vor, um Sprachen hinzuzufügen oder zu entfernen.
 
-1. Erstellen Sie mit CRXDE Lite einen neuen Knoten:
+1. Erstellen Sie mithilfe von CRXDE Lite einen Knoten:
 
    `/etc/languages`
 
@@ -341,7 +337,7 @@ Die Standardländer werden verwendet, wenn Flags angezeigt werden (z. B. im Dial
 
 >[!NOTE]
 >
->Bei Lokalisierungen, die vom Übersetzer oben verwaltet werden, funktioniert nur die genaue Sprache. Wenn im Dropdown-Menü mit den Spracheinstellungen `en_uk` verwendet wird, muss auch das Repository ein Wörterbuch für `en_uk` enthalten.
+>Bei Lokalisierungen, die vom Übersetzer oben verwaltet werden, funktioniert nur die genaue Sprache. Wenn die Dropdown-Liste mit den Spracheinstellungen `en_uk`, muss eine `en_uk` Wörterbuch im Repository.
 
 So ändern Sie die Standarddefinitionen:
 
@@ -382,7 +378,7 @@ Des Weiteren empfiehlt es sich, Wörterbuchzeichenfolgen im Rahmen des reguläre
 
 >[!NOTE]
 >
->Regelmäßige Veröffentlichungsfunktionen oder Replikation sollten nicht für Wörterbücher verwendet werden. Stattdessen sollten Wörterbücher genauso behandelt werden wie Code und Konfiguration. Dazu gehört die Verwendung der Quell-Code-Kontrolle zur Verfolgung von Änderungen und die Verwendung von Inhaltspaketen zur Anwendung von Änderungen auf die Autoren- und Veröffentlichungsinstanz.
+>Verwenden Sie keine reguläre Veröffentlichungsfunktion oder Replikation für Wörterbücher. Stattdessen sollten Wörterbücher genauso behandelt werden wie Code und Konfiguration. Dazu gehört die Verwendung der Quell-Code-Kontrolle zur Verfolgung von Änderungen und die Verwendung von Inhaltspaketen zur Anwendung von Änderungen auf die Autoren- und Veröffentlichungsinstanz.
 
 >[!NOTE]
 >

@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_je
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bd648c38-731b-420e-973d-a4728b69868e
 exl-id: e1519477-b5a8-4947-8597-26b945a3b819
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1710'
-ht-degree: 32%
+source-wordcount: '1707'
+ht-degree: 31%
 
 ---
 
@@ -61,7 +61,7 @@ Wenn Sie keinen Ordner des globalen Dokumentenspeichers angeben, wird standardm�
 
 >[!NOTE]
 >
->Das Ändern des Werts der Einstellung für den Stammordner des globalen Dokumentenspeichers sollte mit besonderer Sorgfalt erfolgen. Der Ordner des globalen Dokumentenspeichers wird verwendet, um sowohl in einem Prozess verwendete dauerhaft genutzte Dateien als auch kritische AEM Forms-Produktkomponenten zu speichern. Das Ändern des Speicherorts des Ordners des globalen Dokumentenspeichers ist eine wesentliche Systemänderung. Wenn Sie den Speicherort des Ordners des globalen Dokumentenspeichers falsch konfigurieren, sind AEM Formulare funktionsuntüchtig und erfordern möglicherweise eine vollständige Neuinstallation AEM Formulare. Wenn Sie einen neuen Speicherort für den Ordner des globalen Dokumentenspeichers angeben, muss der Anwendungsserver heruntergefahren und die Daten migriert werden, bevor der Server neu gestartet werden kann. Der Systemadministrator muss alle Dateien vom alten Speicherort an den neuen Speicherort verschieben, aber die interne Ordnerstruktur beibehalten.
+>Das Ändern des Werts der Einstellung für den Stammordner des globalen Dokumentenspeichers sollte mit besonderer Sorgfalt erfolgen. Der Ordner des globalen Dokumentenspeichers wird verwendet, um sowohl in einem Prozess verwendete dauerhaft genutzte Dateien als auch kritische AEM Formularkomponenten zu speichern. Das Ändern des Speicherorts des Ordners des globalen Dokumentenspeichers ist eine wesentliche Systemänderung. Wenn Sie den Speicherort des Ordners des globalen Dokumentenspeichers falsch konfigurieren, sind AEM Formulare nicht mehr funktionsfähig und erfordern möglicherweise eine vollständige Neuinstallation AEM Formulare. Wenn Sie einen neuen Speicherort für den Ordner des globalen Dokumentenspeichers angeben, muss der Anwendungsserver heruntergefahren und die Daten migriert werden, bevor der Server neu gestartet werden kann. Der Systemadministrator muss alle Dateien vom alten Speicherort an den neuen Speicherort verschieben, aber die interne Ordnerstruktur beibehalten.
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Zusätzliche Informationen zum GDS-Ordner finden Sie unter [Vorbereiten der Inst
 
 **Speicherort des Ordners für Systemschriftarten** Geben Sie den Pfad zu dem von Ihrem Betriebssystem vorgegebenen Schriftartenordner ein. Mehrere Ordner können hinzugefügt werden, indem sie durch ein Semikolon **;** voneinander getrennt werden.
 
-**Speicherort der Data Service-Konfigurationsdatei** Gibt den Speicherort der Datei „services-config.xml“ an. Diese Datei ist standardmäßig in die Datei „adobe-core-appserver.ear“ eingebettet und für Benutzer nicht zugänglich. Eine Kopie der Standarddatei „services-config.xml“ befindet sich im Ordner „[AEM Forms-Stammordner]\sdk\misc\DataServices\Server-Configuration“. Wenn Sie diese Datei geändert und verschoben haben, geben Sie den neuen Speicherort in dieses Feld ein.
+**Speicherort der Data Service-Konfigurationsdatei** Gibt den Speicherort der Datei „services-config.xml“ an. Diese Datei ist standardmäßig in die Datei „adobe-core-appserver.ear“ eingebettet und für Benutzer nicht zugänglich. Eine Kopie der standardmäßigen Datei services-config.xml befindet sich in [AEM-Forms-Stamm]\sdk\misc\DataServices\Server-Configuration Wenn Sie diese Datei geändert und verschoben haben, geben Sie den neuen Speicherort in dieses Feld ein.
 
 Die Konfigurationsdatei für Data Services ermöglicht die Anpassung der Data Services-Einstellungen, z. B. Authentifizierungstyp und Debug-Ausgabe.
 
@@ -97,7 +97,7 @@ Diese Einstellung ist obligatorisch. Der Standardwert ist 30 Sekunden.
 
 **FIPS aktivieren**: Wählen Sie diese Option zum Aktivieren des FIPS-Modus. FIPS 140-2 (Federal Information Processing Standard) ist ein von der US-Regierung definierter Verschlüsselungsstandard. Bei Ausführung im FIPS-Modus beschränkt AEM Forms den Datenschutz auf gemäß FIPS 140-2 zugelassene Algorithmen, indem das Verschlüsselungsmodul RSA BSAFE Crypto-C 2.1 verwendet wird.
 
-Der FIPS-Modus unterstützt keine Verschlüsselungsalgorithmen, die in Adobe Acrobat®-Versionen vor 7.0 verwendet werden. Wenn der FIPS-Modus aktiviert ist und Sie den Encryption-Dienst zum Verschlüsseln des PDF mit einem Kennwort mit einer Kompatibilitätsstufe verwenden, die auf Acrobat 5 festgelegt ist, schlägt der Verschlüsselungsversuch mit einem Fehler fehl.
+Der FIPS-Modus unterstützt keine Verschlüsselungsalgorithmen, die in Adobe Acrobat®-Versionen vor 7.0 verwendet werden. Wenn der FIPS-Modus aktiviert ist und Sie den Encryption-Dienst zum Verschlüsseln des PDF mit einem Kennwort verwenden, dessen Kompatibilitätsstufe auf Acrobat 5 festgelegt ist, schlägt der Verschlüsselungsversuch mit einem Fehler fehl.
 
 Im Allgemeinen wendet der Assembler-Dienst bei aktiviertem FIPS keine Kennwortverschlüsselung auf Dokumente an. Wenn dies versucht wird, wird eine FIPSModeException-Ausnahme ausgelöst, die angibt, dass &quot;Kennwortverschlüsselung im FIPS-Modus nicht zulässig ist&quot;. Darüber hinaus wird das Element Document Description XML (DDX) PDFsFromBookmarks im FIPS-Modus nicht unterstützt, wenn das Basisdokument kennwortverschlüsselt ist.
 
@@ -117,6 +117,6 @@ Aktivieren Sie diese Option in Entwicklungsumgebungen, in denen Entwickler die W
 
 **Nicht gesicherte RDS-Anforderung zulassen** Wenn diese Option ausgewählt ist, müssen RDS-Anfragen keine HTTPS verwenden. Standardmäßig ist diese Option nicht ausgewählt und die Kommunikation mit Data Services muss über „https“-Anforderungen ausgeführt werden.
 
-**Nicht gesichertes Hochladen von Dokumenten aus Flex-Anwendungen zulassen:** Das Dateiupload-Servlet, das zum Hochladen von Dokumenten aus Adobe Flex®-Anwendungen in AEM Formulare verwendet wird, erfordert, dass Benutzer authentifiziert und autorisiert werden, bevor sie Dokumente hochladen können. Dem Benutzer muss die Rolle &quot;Document Upload Application User&quot;oder eine andere Rolle zugewiesen sein, die die Berechtigung zum Hochladen von Dokumenten enthält. Dadurch wird verhindert, dass nicht autorisierte Benutzer Dokumente auf den AEM forms-Server hochladen. Wählen Sie diese Option aus, wenn Sie diese Sicherheitsfunktion in einer Entwicklungsumgebung oder aus Gründen der Abwärtskompatibilität mit früheren Versionen von AEM Forms deaktivieren möchten. Standardmäßig ist diese Option nicht aktiviert. Weitere Informationen finden Sie unter „Aufrufen von AEM Forms mithilfe von AEM Forms Remoting“ in „Programmieren mit AEM Forms“.
+**Nicht gesichertes Hochladen von Dokumenten aus Flex-Anwendungen zulassen:** Das Dateiupload-Servlet, das zum Hochladen von Dokumenten aus Adobe Flex®-Programmen in AEM Formulare verwendet wird, erfordert, dass Benutzer authentifiziert und autorisiert werden, bevor sie Dokumente hochladen können. Dem Benutzer muss die Rolle &quot;Document Upload Application User&quot;oder eine andere Rolle zugewiesen sein, die die Berechtigung zum Hochladen von Dokumenten enthält. Dadurch wird verhindert, dass nicht autorisierte Benutzer Dokumente auf den AEM forms-Server hochladen. Wählen Sie diese Option aus, wenn Sie diese Sicherheitsfunktion in einer Entwicklungsumgebung oder aus Gründen der Abwärtskompatibilität mit früheren Versionen von AEM Forms deaktivieren möchten. Standardmäßig ist diese Option nicht aktiviert. Weitere Informationen finden Sie unter „Aufrufen von AEM Forms mithilfe von AEM Forms Remoting“ in „Programmieren mit AEM Forms“.
 
 **Nicht gesichertes Hochladen von Dokumenten aus Java SDK-Anwendungen zulassen:** HTTP DocumentManager-Uploads müssen gesichert werden. HTTP-Uploads erfordern standardmäßig, dass Benutzer authentifiziert und autorisiert sind, bevor sie Dokumente hochladen können. Dem Benutzer muss die Rolle &quot;Dienstbenutzer&quot;oder eine andere Rolle zugewiesen sein, die die Berechtigung zum Aufrufen von Diensten enthält. Dadurch wird verhindert, dass nicht autorisierte Benutzer Dokumente auf den Formularserver hochladen. Wählen Sie diese Option aus, wenn Sie diese Sicherheitsfunktion in einer Entwicklungsumgebung deaktivieren möchten, um die Abwärtskompatibilität mit früheren Versionen von AEM Forms zu gewährleisten oder um sie auf der Grundlage Ihrer Firewall-Einrichtung zu installieren. Standardmäßig ist diese Option nicht aktiviert. Weitere Informationen finden Sie unter „Aufrufen von AEM Forms mithilfe der Java-API“ in „Programmieren mit AEM Forms“.

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2689'
-ht-degree: 63%
+ht-degree: 62%
 
 ---
 
@@ -578,13 +578,13 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td>
-   <td><p>Wenn Sie das OSGi-Bundle Day Communique Tagging neu starten, wird der neue Speicherort nur als Tag-Stamm registriert, wenn der vorherige Speicherort leer ist.</p> <p>Verweise auf den vorherigen Speicherort funktionieren auch nach der Migration zum neuen Speicherort für alle Funktionen, die die TagManager-API für die Tag-Auflösung nutzen, weiterhin.</p> <p>Jeder benutzerspezifische Code, der explizit auf den Pfad <code>/etc/tags</code> verweist, muss aktualisiert werden auf <span class="code">/content/
+   <td><p>Wenn Sie das OSGi-Bundle Day Communique Tagging neu starten, wird der neue Speicherort nur als Tag-Stamm registriert, wenn der vorherige Speicherort leer ist.</p> <p>Verweise auf den vorherigen Speicherort funktionieren auch nach der Migration zu "Neuer Speicherort"für alle Funktionen, die AEM TagManager-API für die Tag-Auflösung verwenden.</p> <p>Jeder benutzerspezifische Code, der explizit auf den Pfad verweist <code>/etc/tags</code> muss aktualisiert werden auf <span class="code">/content/
       <code>
        cq
       </code>
       <code>
        :tags
-      </code></span>, oder vorzugsweise umgeschrieben, um die TagManager Java-API gemeinsam mit dieser Migration zu nutzen.</p> </td>
+      </code></span>, oder vorzugsweise umgeschrieben, um die TagManager Java-API zusammen mit dieser Migration zu verwenden.</p> </td>
   </tr>
  </tbody>
 </table>

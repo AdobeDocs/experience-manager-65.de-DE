@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1840'
-ht-degree: 95%
+source-wordcount: '1835'
+ht-degree: 90%
 
 ---
 
@@ -44,7 +44,7 @@ Sie können nun den Text direkt auf der Seite bearbeiten, anstatt ein Dialogfens
 
 >[!NOTE]
 >
->Wenn Sie die Inhaltssuche geöffnet haben, wird oben auf der Registerkarte eine Symbolleiste mit den RTE-Formatierungsoptionen angezeigt (wie oben).
+>Wenn Sie den Content Finder geöffnet haben, wird oben auf der Registerkarte eine Symbolleiste mit den RTE-Formatierungsoptionen angezeigt (wie oben).
 >
 >Wenn die Inhaltssuche nicht geöffnet ist, wird die Symbolleiste nicht angezeigt.
 
@@ -52,7 +52,7 @@ Derzeit ist der Kontext-Bearbeitungsmodus für Seitenelemente aktiviert, die von
 
 >[!NOTE]
 >
->Die [!UICONTROL Titel]-Komponente wurde konzipiert, um kurzen Text ohne Zeilenumbrüche zu enthalten. Wenn Sie einen Titel im Kontext-Bearbeitungsmodus bearbeiten, wird durch die Eingabe eines Zeilenumbruchs eine neue **Text**-Komponente unter dem Titel geöffnet.
+>Die [!UICONTROL Titel]-Komponente wurde konzipiert, um kurzen Text ohne Zeilenumbrüche zu enthalten. Wenn Sie einen Titel im Kontext-Bearbeitungsmodus bearbeiten, wird durch die Eingabe eines Zeilenumbruchs ein neuer **Text** -Komponente unterhalb des Titels.
 
 ## Funktionen des Rich-Text-Editors {#features-of-the-rich-text-editor}
 
@@ -78,7 +78,7 @@ Alle fungieren als Umschalter, sodass bei einer erneuten Auswahl das Format entf
 
 ![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
 
-Ihre Installation kann vordefinierte Stile und Formate enthalten. Diese sind in den Dropdown-Listen **[!UICONTROL Stil]** und **[!UICONTROL Format]** verfügbar und können auf Text angewendet werden, den Sie ausgewählt haben.
+Ihre Installation kann vordefinierte Stile und Formate enthalten. Diese sind mit der Variablen **[!UICONTROL Stil]** und **[!UICONTROL Format]** Dropdown-Listen und können auf den ausgewählten Text angewendet werden.
 
 Ein Stil kann auf eine bestimmte Zeichenfolge angewendet werden (ein Stil ist CSS-basiert):
 
@@ -219,7 +219,7 @@ Bilder können aus der Inhaltssuche gezogen werden, um sie zum Text hinzuzufüge
 
 >[!NOTE]
 >
->AEM bietet auch spezielle Komponenten für eine detailliertere Bildkonfiguration. Beispielsweise stehen Ihnen die Komponenten **Bild** und **Textbild** zur Verfügung.
+>AEM bietet auch spezielle Komponenten für eine detailliertere Bildkonfiguration. Beispiel: die **Bild** und **Textbild** -Komponenten verfügbar sind.
 
 ### Rechtschreibprüfung {#spelling-checker}
 
@@ -233,7 +233,7 @@ Alle falschen Schreibweisen werden hervorgehoben:
 
 >[!NOTE]
 >
->Die Rechtschreibprüfung erfolgt in der Sprache der Website. Dazu wird entweder die Spracheigenschaft der Unterstruktur übernommen oder die Sprache aus der URL extrahiert. Beispielsweise erfolgt die Prüfung für den Zweig `en` in Englisch und für den Zweig `de` in Deutsch.
+>Die Rechtschreibprüfung erfolgt in der Sprache der Website. Dazu wird entweder die Spracheigenschaft der Unterstruktur übernommen oder die Sprache aus der URL extrahiert. Beispiel: die `en` -Zweig wird auf Englisch überprüft, und die `de` Niederlassung für Deutsch.
 
 ### Tabellen {#tables}
 
@@ -354,7 +354,7 @@ Auswählen einer einzelnen Zelle, um sie zu teilen:
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
-Durch Erstellen einer verschachtelten Tabelle wird eine neue, eigenständige Tabelle innerhalb der aktuellen Zelle erstellt.
+Beim Erstellen einer verschachtelten Tabelle wird eine eigenständige Tabelle innerhalb der aktuellen Zelle erstellt.
 
 >[!NOTE]
 >

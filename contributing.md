@@ -1,15 +1,15 @@
 ---
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 78%
+source-wordcount: '516'
+ht-degree: 62%
 
 ---
 # Beiträge zur Adobe Experience Manager-Dokumentation
 
 Vielen Dank, dass Sie zur Adobe Experience Manager-Dokumentation beitragen möchten. Adobe begrüßt Inhaltsbeiträge der gesamten Leser-Community und anderer Mitarbeiter der Adobe.
 
-In dieser Datei wird beschrieben, wie Sie Beiträge beisteuern können und welche Richtlinien zu befolgen sind, wenn Sie Ihre Beiträge vornehmen.
+In dieser Datei wird beschrieben, wie Sie Beiträge einbringen können, und es werden die Richtlinien erläutert, die bei der Erstellung Ihrer Beiträge befolgt werden müssen.
 
 ## Adobe Open Source-Verhaltenskodex
 
@@ -17,7 +17,7 @@ Dieses Projekt folgt dem [Adobe Open Source-Verhaltenskodex](code-of-conduct.md)
 
 ## Richtlinien für Beiträge
 
-Wir freuen uns zwar über jeden Beitrag, um die AEM-Dokumentation zu verbessern, bitten jedoch darum, dass die Beiträge möglichst bestimmten Richtlinien und Standards entsprechen. Weitere Informationen finden Sie in den [Richtlinien für Beiträge zur AEM-Dokumentation](guidelines.md).
+Wir freuen uns zwar über jeden Beitrag, um die AEM-Dokumentation zu verbessern, bitten jedoch darum, dass die Beiträge möglichst bestimmten Richtlinien und Standards entsprechen. Überprüfen Sie die [Richtlinien für Beiträge zur AEM Dokumentation](guidelines.md) für weitere Informationen.
 
 ## So können Sie einen Beitrag leisten
 
@@ -54,7 +54,7 @@ Im folgenden Video erhalten Sie einen schnellen Überblick darüber, wie Problem
 
 Wenn Sie Adobe-Mitarbeiter sind und einen Beitrag einreichen möchten, verwenden Sie die `AdobeDocs` im Git-Repository des Unternehmens.
 
-Wir freuen uns über jeden Beitrag und überprüfen Ihren Beitrag, wenn er im öffentlichen Repository eingereicht wird. Pull-Anfragen von Adobe-Mitarbeitern sind jedoch einfacher zu verarbeiten und können im Repository des Unternehmens schneller genehmigt werden. Bitte stellen Sie sicher, dass geschützte Informationen nur im Repository des Unternehmens diskutiert werden.
+Wir freuen uns über jeden Beitrag und überprüfen Ihren Beitrag, wenn er im öffentlichen Repository eingereicht wird. Pull-Anforderungen von Adobe-Mitarbeitern sind jedoch einfacher zu verarbeiten und können schneller im Repository des Unternehmens genehmigt werden. Stellen Sie sicher, dass geschützte Informationen nur im Repository des Unternehmens diskutiert werden.
 
 ## Weiterführende Informationen
 

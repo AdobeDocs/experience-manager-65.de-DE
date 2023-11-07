@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1783'
-ht-degree: 64%
+source-wordcount: '1774'
+ht-degree: 81%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 64%
 
 Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. Siehe [Verwalten von Zielgruppen](/help/sites-authoring/managing-audiences.md) für Informationen zur Funktionsweise der Segmentierung und zu Schlüsselbegriffen.
 
-Je nach den von Ihnen bereits zu den Besuchern Ihrer Site erfassten Informationen sowie je nach Ihren angepeilten Zielen müssen Sie die erforderlichen Segmente und Strategien für Ihre zielgerichteten Inhalte festlegen.
+Je nachdem, welche Informationen Sie bereits über Ihre Site-Besucher gesammelt haben und welche Ziele Sie erreichen möchten, müssen Sie die für Ihre zielgerichteten Inhalte erforderlichen Segmente und Strategien definieren.
 
 Diese Segmente werden dann verwendet, um einem Besucher gezielt bestimmte Inhalte anzuzeigen. Dieser Inhalt wird im Abschnitt [Personalisierung](/help/sites-authoring/personalization.md) der Website verwaltet. Hier festgelegte [Aktivitäten](/help/sites-authoring/activitylib.md) können auf jeder Seite einbezogen werden – und sie können bestimmen, auf welches Besuchersegment die spezialisierten Inhalte angewendet werden sollen.
 
@@ -34,13 +34,13 @@ AEM ermöglicht Ihnen die einfache Personalisierung des Benutzererlebnisses. Au�
 
 ## Zugriff auf Segmente {#accessing-segments}
 
-Die [Zielgruppen](/help/sites-authoring/managing-audiences.md) -Konsole wird verwendet, um Segmente für ContextHub oder ClientContext sowie Zielgruppen für Ihr Adobe Target-Konto zu verwalten. Diese Dokumentation befasst sich mit der Verwaltung von Segmenten für ContextHub. Für [ClientContext-Segmente](/help/sites-administering/campaign-segmentation.md) und Adobe Target-Segmenten, lesen Sie bitte die entsprechende Dokumentation.
+Die [Zielgruppen](/help/sites-authoring/managing-audiences.md) -Konsole wird verwendet, um Segmente für ContextHub oder ClientContext und Zielgruppen für Ihr Adobe Target-Konto zu verwalten. Diese Dokumentation befasst sich mit der Verwaltung von Segmenten für ContextHub. Für [ClientContext-Segmente](/help/sites-administering/campaign-segmentation.md) und Adobe Target-Segmenten, siehe die entsprechende Dokumentation.
 
 Um auf Ihre Segmente zuzugreifen, müssen Sie Ihre Konfiguration auswählen. Wählen Sie in der globalen Navigation **Navigation > Personalisierung > Zielgruppen**. Ihnen werden die verfügbaren Konfigurationen angezeigt:
 
 ![Zielgruppen – Konfigurationen](assets/segmentation-access-confs.png)
 
-Wählen Sie Ihre Konfiguration aus, um die Segmente anzuzeigen, z. B. WKND-Site:
+Wählen Sie Ihre Konfiguration aus, um die Segmente anzuzeigen, z. B. WKND Site:
 
 ![Zielgruppen – Segmente](assets/segmentation-access-segments.png)
 
@@ -155,7 +155,7 @@ Festlegen eines neuen Segments
 
    ![screen_shot_2012-02-02at103135am](assets/screen_shot_2012-02-02at103135ama.png)
 
-   Legen Sie immer eine **Datentyp** wenn möglich, um sicherzustellen, dass Ihre Vergleiche richtig bewertet werden. Siehe [Vergleiche](/help/sites-administering/segmentation.md#comparisons) für weitere Informationen.
+   Legen Sie, wenn möglich immer einen **Datentyp** fest, um sicherzustellen, dass Ihre Vergleiche richtig bewertet werden. Siehe [Vergleiche](/help/sites-administering/segmentation.md#comparisons) für weitere Informationen.
 
 1. Klicks **OK** , um Ihre Definition zu speichern:
 1. Fügen Sie bei Bedarf weitere Komponenten hinzu. Sie können boolesche Ausdrücke mithilfe der Container-Komponenten für UND- und ODER-Vergleiche formulieren (siehe [Verwenden von UND- und ODER-Containern](/help/sites-administering/segmentation.md#using-and-and-or-containers) unten). Mit dem Segmenteditor können Sie nicht mehr benötigte Komponenten löschen oder diese an neue Positionen innerhalb der Anweisung ziehen.
@@ -181,7 +181,7 @@ Beginnen Sie damit, eine ODER-Container-Komponente innerhalb des standardmäßig
 
 ### Verwenden von Skript-Referenzen {#using-script-references}
 
-Mithilfe der Skript-Referenzkomponente kann die Auswertung einer Segmenteigenschaft an ein externes Skript delegiert werden. Sobald das Skript ordnungsgemäß konfiguriert ist, kann es als jede andere Komponente einer Segmentbedingung verwendet werden.
+Mithilfe der Komponente „Skript-Referenz“ kann die Auswertung einer Segmenteigenschaft an ein externes Skript delegiert werden. Sobald das Skript ordnungsgemäß konfiguriert ist, kann es als jede andere Komponente einer Segmentbedingung verwendet werden.
 
 #### Definieren eines Skripts für einen Verweis {#defining-a-script-to-reference}
 
@@ -228,8 +228,8 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 #### Verweisen auf ein Skript {#referencing-a-script}
 
 1. Erstellen Sie ein ContextHub-Segment.
-1. Hinzufügen **Skript-Referenz** -Komponente an der gewünschten Stelle des Segments.
-1. Öffnen Sie das Dialogfeld &quot;Bearbeiten&quot;der **Skript-Referenz** -Komponente. Wenn [ordnungsgemäß konfiguriert](/help/sites-administering/segmentation.md#defining-a-script-to-reference), sollte das Skript im **Skriptname** angezeigt.
+1. Fügen Sie die Komponente **Skript-Referenz** an der gewünschten Stelle des Segments.
+1. Öffnen Sie das Dialogfeld „Bearbeiten“ der Komponente **Skript-Referenz**. Wenn [ordnungsgemäß konfiguriert](/help/sites-administering/segmentation.md#defining-a-script-to-reference), sollte das Skript in der Dropdown-Liste **Skriptname** verfügbar sein.
 
 ## Organisieren von Segmenten {#organizing-segments}
 
@@ -304,10 +304,10 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 
 Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe von **[ContextHub](/help/sites-authoring/ch-previewing.md) getestet werden.**
 
-1. Seitenvorschau
+1. Vorschau einer Seite
 1. Klicken Sie auf das ContextHub-Symbol, um die ContextHub-Symbolleiste anzuzeigen.
-1. Wählen Sie eine Persona aus, die dem von Ihnen erstellten Segment entspricht
-1. ContextHub löst die entsprechenden Segmente für die ausgewählte Person auf
+1. Wählen Sie eine Rolle aus, die mit dem von Ihnen erstellten Segment übereinstimmt.
+1. Der ContextHub löst die entsprechenden Segmente für die ausgewählte Rolle auf.
 
 Beispielsweise ist unsere einfache Segmentdefinition zur Identifizierung von Benutzern in unserer Hauptaltersgruppe eine einfache Segmentdefinition, die auf dem Alter und Geschlecht des Benutzers basiert. Das Laden einer spezifischen Rolle, die mit diesen Kriterien übereinstimmt, zeigt, ob das Segment erfolgreich aufgelöst wurde:
 
@@ -321,11 +321,11 @@ Oder ob es nicht aufgelöst wurde:
 >
 >Alle Eigenschaften werden sofort aufgelöst, obwohl sich die meisten beim Neuladen der Seite ändern.
 
-Solche Tests können auch auf Inhaltsseiten und in Kombination mit zielgerichteten Inhalten und damit verbundenen Inhalten durchgeführt werden. **Tätigkeiten** und **Erlebnisse**.
+Solche Tests können auch auf Inhaltsseiten und in Kombination mit gezielten Inhalten und damit verbundenen **Aktivitäten** und **Erlebnissen** durchgeführt werden.
 
 Wenn Sie eine Aktivität und ein Erlebnis mithilfe des obigen Segmentbeispiels für die Hauptseitengruppe eingerichtet haben, können Sie Ihr Segment einfach mit der Aktivität testen. Weitere Informationen zum Einrichten einer Aktivität finden Sie in der entsprechenden [Dokumentation zum Verfassen zielgerichteter Inhalte](/help/sites-authoring/content-targeting-touch.md).
 
-1. Im Bearbeitungsmodus einer Seite, auf der Sie zielgerichtete Inhalte eingerichtet haben, können Sie sehen, dass der Inhalt über das Pfeilsymbol im Inhalt angesprochen wird.
+1. Im Bearbeitungsmodus einer Seite, auf der Sie gezielte Inhalte eingerichtet haben, können Sie anhand des Pfeilsymbols auf dem Inhalt erkennen, dass es sich um gezielten Inhalt handelt.
 
    ![chlimage_1-313](assets/chlimage_1-313.png)
 

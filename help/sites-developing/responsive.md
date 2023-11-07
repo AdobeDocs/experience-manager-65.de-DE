@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '5375'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -928,20 +928,20 @@ Das CSS umfasst eine Reihe von Medienabfragen, die die folgende Struktur verwend
 
 Verwenden Sie den folgenden Algorithmus als Ausgangspunkt für die Entwicklung der Elementklassen und CSS-Stile für Ihre Seiten.
 
-1. Definieren Sie einen Klassennamen für das div-Element, das alle Zeilen enthält, z. B. `content.`.
+1. Definieren Sie einen Klassennamen für das div -Element, das alle Zeilen enthält, z. B. `content.`
 1. Definieren Sie eine CSS-Klasse für div-Elemente, die Zeilen darstellen, z. B. `row-fluid`.
 1. Definieren Sie Klassennamen für Inhaltsblockelemente. Für alle möglichen Breiten ist eine Klasse erforderlich, und zwar in Form von Spaltenspannen. Verwenden Sie beispielsweise die Klasse `span3` für `div`-Elemente, die sich über drei Spalten erstrecken, und die Klasse `span4` für Elemente, die sich über vier Spalten erstrecken. Definieren Sie so viele Klassen, wie Spalten in Ihrem Raster vorhanden sind.
 
 1. Fügen Sie der CSS-Datei für jede angestrebte Darstellungsfeldgröße die entsprechende Medienabfrage hinzu. Fügen Sie in jeder Medienabfrage die folgenden Elemente hinzu:
 
-   * Einen Selektor für die Klasse `content`, z. B. `.content{}`.
-   * Selektoren für die span-Klassen, z. B `.span3{ }`.
-   * Einen Selektor für die Klasse `row-fluid`, z. B. `.row-fluid{ }`.
-   * Selektoren für span-Klassen, die sich in row-fluid-Klassen befinden, z. B. `.row-fluid span3 { }`.
+   * Eine Auswahl für `content` -Klasse, beispielsweise `.content{}`.
+   * Selektoren für die span-Klassen, z. B, `.span3{ }`.
+   * Eine Auswahl für `row-fluid` -Klasse, beispielsweise `.row-fluid{ }`
+   * Selektoren für span-Klassen, die sich innerhalb von row-fluid -Klassen befinden, z. B. `.row-fluid span3 { }`.
 
 1. Fügen Sie jedem Selektor width-Stile hinzu:
 
-   1. Legen Sie für die Breite von `content`-Selektoren die absolute Größe der Seite fest, z. B. `width:480px`.
+   1. Festlegen der Breite von `content` Selektoren zur absoluten Größe der Seite, z. B. `width:480px`.
    1. Legen Sie für die Breite aller row-fluid-Selektoren auf 100 % fest.
    1. Legen Sie für die Breite aller span-Selektoren die absolute Breite des Inhaltsblocks fest. Ein triviales Raster verwendet gleichmäßig verteilte Spalten mit der gleichen Breite: `(absolute width of page)/(number of columns)`.
    1. Legen Sie die Breite der `.row-fluid .span`-Selektoren als Prozentsatz der Gesamtbreite fest. Berechnen Sie diese Breite mithilfe der Formel `(absolute span width)/(absolute page width)*100`.

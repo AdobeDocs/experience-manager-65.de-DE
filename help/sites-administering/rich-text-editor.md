@@ -3,10 +3,10 @@ title: Konfigurieren Sie den Rich-Text-Editor, um Inhalte in Adobe Experience Ma
 description: Erfahren Sie, wie Sie den Rich-Text-Editor von Adobe Experience Manager konfigurieren, um Inhalte in Adobe Experience Manager zu erstellen.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2923'
-ht-degree: 99%
+source-wordcount: '2921'
+ht-degree: 98%
 
 ---
 
@@ -182,7 +182,7 @@ Ausführliche Konfigurationen der RTE-Plug-ins finden Sie unter [Aktivieren und 
 >
 >Die [Text-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=de#the-text-component-and-the-rich-text-editor) gestattet es Bearbeitern von Vorlagen, viele RTE-Plug-ins in einer grafischen Benutzeroberfläche als Content-Richtlinien zu konfigurieren, sodass keine technische Konfiguration mehr erforderlich ist. Content-Richtlinien können mit RTE-Benutzeroberflächenkonfigurationen verwendet werden, wie in diesem Dokument beschrieben ist.
 >
->Weitere Informationen finden Sie unter [Einstellungen und Inhaltsrichtlinien der RTE-Benutzeroberfläche](/help/sites-administering/rich-text-editor.md) sowie [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) und [Entwicklerdokumentation für Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=de).
+>Weitere Informationen finden Sie unter [Einstellungen und Content-Richtlinien der RTE-Benutzeroberfläche](/help/sites-administering/rich-text-editor.md) Abschnitt dieses Dokuments und [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) und [Entwicklerdokumentation für Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=de).
 
 >[!NOTE]
 >

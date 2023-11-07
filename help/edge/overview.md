@@ -2,9 +2,9 @@
 title: Erste Schritte mit Edge Delivery Services
 description: Erste Schritte mit Edge Delivery Services (EDS).
 exl-id: 8d2b2d6c-ae11-4829-842e-b186f5491713
-source-git-commit: 6a1d96125ca6647770718fff74ec21afb5c91a68
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '865'
 ht-degree: 2%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 Mit Edge Delivery Services bietet AEM außergewöhnliche Erlebnisse, die Interaktionen und Konversionen fördern. AEM bietet dazu wirkungsvolle Erlebnisse, die schnell erstellt und weiterentwickelt werden können. Es handelt sich dabei um einen zusammenstellbaren Satz von Diensten, die eine schnelle Entwicklungsumgebung ermöglichen, in der Autoren schnell aktualisieren und veröffentlichen können und neue Sites schnell gestartet werden. So können Sie mit Edge Delivery Services die Konversion verbessern, Kosten reduzieren und extreme Content Velocity erzielen.
 
-Durch Nutzung der Edge-Bereitstellung können Sie:
+Mithilfe der Edge-Bereitstellung können Sie:
 
 * Erstellen Sie schnelle Sites mit einem perfekten Lighthouse-Score und überwachen Sie Ihre Site-Leistung kontinuierlich durch reale Benutzerüberwachung (RUM).
 * Erhöhen Sie die Autoreneffizienz durch Entkopplung von Inhaltsquellen. Standardmäßig können Sie sowohl AEM Authoring als auch dokumentbasiertes Authoring verwenden. Daher können Sie mit mehreren Inhaltsquellen auf derselben Website arbeiten.
@@ -29,7 +29,7 @@ Die Edge-Bereitstellung ist ein zusammenstellbarer Satz von Diensten, der eine h
 
 Sie können beispielsweise Inhalte direkt aus Microsoft Word- oder Google-Dokumenten verwenden. Das bedeutet, dass Dokumente aus diesen Quellen Seiten auf Ihrer Website werden können. Darüber hinaus können Überschriften, Listen, Bilder und Schriftelemente von der ursprünglichen Quelle auf die Website übertragen werden. Der neue Inhalt wird sofort ohne Neuerstellungsprozess hinzugefügt.
 
-Die Edge-Bereitstellung nutzt GitHub, damit Kunden Code direkt über ihr GitHub-Repository verwalten und bereitstellen können. Sie können beispielsweise Inhalte entweder in Google Docs oder Microsoft Word schreiben und die Funktionalität Ihrer Site kann mithilfe von CSS und JavaScript in GitHub entwickelt werden. Wenn Sie bereit sind, können Sie die Sidekick-Browsererweiterung verwenden, um Inhaltsaktualisierungen in der Vorschau anzuzeigen und zu veröffentlichen.
+Die Edge-Bereitstellung verwendet GitHub, damit Kunden Code direkt über ihr GitHub-Repository verwalten und bereitstellen können. Sie können beispielsweise Inhalte entweder in Google Docs oder Microsoft Word schreiben und die Funktionalität Ihrer Site kann mithilfe von CSS und JavaScript in GitHub entwickelt werden. Wenn Sie bereit sind, können Sie die Sidekick-Browsererweiterung verwenden, um Inhaltsaktualisierungen in der Vorschau anzuzeigen und zu veröffentlichen.
 
 Weitere Informationen:
 
@@ -49,7 +49,7 @@ Die ersten Schritte mit Edge Delivery Services sind einfach. Beginnen Sie mit de
 
 ## Abrufen der Hilfe von Adobe {#adobe-gethelp}
 
-Sie können über Ihren bereitgestellten Kanal zur Produktzusammenarbeit mit Adobe-Produktteams interagieren (weitere Informationen finden Sie unten), um Fragen zur Produktnutzung oder zu Best Practices zu beantworten. Bitte beachten Sie, dass den Unterhaltungen über den Kanal für die Produktzusammenarbeit keine Service Level Terme (SLT) zugeordnet sind. Wenn ein Produktproblem zusätzliche Untersuchungen und Fehlerbehebungen erfordert und Antwort-SLTs erfüllen muss, können Sie ein Support-Ticket senden, das auf Folgendes folgt: [Support-Prozess](https://experienceleague.adobe.com/?lang=de&amp;support-tab=home#support).
+Sie können über Ihren bereitgestellten Kanal zur Produktzusammenarbeit mit Adobe-Produktteams interagieren (weitere Informationen finden Sie unten), um Fragen zur Produktnutzung oder zu Best Practices zu beantworten. Es gibt keine Service Level Terme (SLT), die mit den Konversationen über den Kanal für die Produktzusammenarbeit verknüpft sind. Wenn ein Produktproblem zusätzliche Untersuchungen und Fehlerbehebungen erfordert und Antwort-SLTs erfüllen muss, können Sie ein Support-Ticket senden, das auf Folgendes folgt: [Support-Prozess](https://experienceleague.adobe.com/?lang=de&amp;support-tab=home#support).
 
 Adobe bietet drei Kanäle, um Ihnen bei Edge Delivery Services zu helfen:
 
@@ -72,7 +72,7 @@ Weitere Informationen finden Sie unter [Verwenden des Slack Bots](https://www.hl
 Schritte zum Protokollieren eines Support-Tickets über die Admin Console:
 
 1. Hinzufügen **Edge-Bereitstellung** im Titel des Tickets.
-2. Geben Sie in der Beschreibung bitte die folgenden Details an:
+2. Geben Sie in der Beschreibung die folgenden Details an:
 
    * URL der Live-Website. Beispiel: [www.mydomain.com].
    * URL der Ursprungs-Website (.hlx-URL).

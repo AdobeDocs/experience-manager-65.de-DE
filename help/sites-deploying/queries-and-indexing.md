@@ -8,9 +8,9 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3034'
+source-wordcount: '3032'
 ht-degree: 24%
 
 ---
@@ -429,7 +429,7 @@ AEM kann auch mit einer Remote-Solr-Server-Instanz konfiguriert werden:
 
 #### Empfohlene Konfiguration für Solr {#recommended-configuration-for-solr}
 
-Nachfolgend finden Sie ein Beispiel für eine Basiskonfiguration, die mit allen drei Solr-Bereitstellungen verwendet werden kann, die in diesem Artikel beschrieben werden. Diese Konfiguration basiert auf den dedizierten Eigenschaften-Indizes, die bereits in AEM vorhanden sind, und sollte nicht mit anderen Anwendungen verwendet werden.
+Nachfolgend finden Sie ein Beispiel für eine Basiskonfiguration, die mit allen drei Solr-Bereitstellungen verwendet werden kann, die in diesem Artikel beschrieben werden. Es unterstützt die dedizierten Eigenschaftenindizes, die bereits in AEM vorhanden sind. Verwenden Sie sie nicht mit anderen Anwendungen.
 
 Um sie ordnungsgemäß zu verwenden, müssen Sie den Inhalt des Archivs direkt im Solr Home Directory platzieren. Bei Bereitstellungen mit mehreren Knoten sollte diese direkt unter den Stammordner jedes Knotens platziert werden.
 

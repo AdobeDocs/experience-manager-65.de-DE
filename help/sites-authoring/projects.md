@@ -2,10 +2,10 @@
 title: Projekte
 description: Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Projektverwaltung erleichtert..
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 1d64a9a6d6dfbc7606d7c222ef50a21bf9b902d6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1365'
-ht-degree: 98%
+source-wordcount: '1359'
+ht-degree: 96%
 
 ---
 
@@ -34,7 +34,7 @@ In der Projektekonsole können Sie innerhalb von AEM auf Ihre Projekte zugreifen
 
 ![Die Projektekonsole](assets/screen-shot_2019-03-05at125110.png)
 
-Die Projektekonsole ähnelt anderen Konsolen in AEM, ermöglicht eine Reihe von Aktionen für einzelne Projekte und passt Ihre Ansicht der Projekte an.
+Die Projektekonsole ähnelt anderen Konsolen in AEM, erlaubt mehrere Aktionen für einzelne Projekte und passt Ihre Ansicht der Projekte an.
 
 ### Modus umschalten {#modes}
 
@@ -129,7 +129,7 @@ Die Symbole geben an, welche Art von Erlebnis dargestellt wird.
 
 ![Link-Kachel](assets/project-tile-links.png)
 
-Sie können dem Link einen aussagekräftigen Namen geben und die Miniatur ändern.
+Sie können dem Link einen aussagekräftigen Namen geben und das Miniaturbild ändern.
 
 ### Projektinformationen {#project-info}
 

@@ -2,10 +2,10 @@
 title: Konfigurieren von Standardkomponenten im Design-Modus
 description: Konfigurieren von Adobe Experience Manager-Komponenten im Designmodus.
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 94%
+source-wordcount: '914'
+ht-degree: 86%
 
 ---
 
@@ -46,7 +46,7 @@ Beispielsweise kann der Inhalt einer Produktseite ein Absatzsystem enthalten, da
 >
 >Bearbeiten des Designs im Design-Modus wie in diesem Artikel beschrieben ist die empfohlene Vorgehensweise zum Definieren von Designs statischer Vorlagen
 >
->Das Ändern von Designs in CRX DE ist beispielsweise nicht ratsam und die Anwendung derartiger Designs kann von erwarteten Verhaltensweisen abweichen. Weitere Informationen finden Sie im Entwicklerdokument [Seitenvorlagen – statisch](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied).
+>Das Ändern von Designs beispielsweise in CRX DE ist keine Best Practice und die Anwendung solcher Designs kann vom erwarteten Verhalten abweichen. Weitere Informationen finden Sie im Entwicklerdokument [Seitenvorlagen – statisch](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied).
 
 ## Aktivieren/Deaktivieren von Komponenten {#enable-disable-components}
 
@@ -66,7 +66,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    Dadurch wird das Absatzsystem mit der aktuellen Komponente ausgewählt.
 
-1. Das Symbol **Konfigurieren** für das Absatzsystem wird in der Aktionsleiste für das übergeordnete Element angezeigt.
+1. Die **Konfigurieren** -Symbol für das Absatzsystem wird in der Aktionsleiste des übergeordneten Elements angezeigt.
 
    ![Konfigurieren](do-not-localize/screen_shot_2018-03-22at103256.png)
 
@@ -95,7 +95,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    >[!NOTE]
    >
-   >Adaptive Formularkomponenten sind für die Verwendung im Container für adaptive Formulare konzipiert, um das Forms-Ökosystem zu nutzen. Entsprechend dürfen diese Komponenten nur im Editor für adaptive Formulare verwendet werden und funktionieren nicht im Seiten-Editor von Sites.
+   >Adaptive Formularkomponenten sind für die Verwendung im Container für adaptive Formulare entwickelt, um das Forms-Ökosystem zu verwenden. Entsprechend dürfen diese Komponenten nur im Editor für adaptive Formulare verwendet werden und funktionieren nicht im Seiten-Editor von Sites.
 
    **Einstellungen**
 
@@ -129,7 +129,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    **Eigenschaften**
 
-   Die **Eigenschaften** -Tab können Sie die wichtigen Design-Parameter der Komponente konfigurieren. Beispielsweise können Sie für eine Bildkomponente die maximal und minimal zulässige Größe des Bildes festlegen.
+   Die **Eigenschaften** -Tab können Sie die wichtigen Design-Parameter der Komponente konfigurieren. Beispielsweise können Sie für eine Bildkomponente die maximal zulässige und minimale Größe des Bildes definieren.
 
    **Funktionen**
 

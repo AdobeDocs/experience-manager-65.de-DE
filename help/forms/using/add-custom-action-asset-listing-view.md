@@ -7,10 +7,10 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1354'
-ht-degree: 98%
+source-wordcount: '1351'
+ht-degree: 93%
 
 ---
 
@@ -43,7 +43,7 @@ Führen Sie die folgenden Schritte aus, um Correspondence Management so anzupass
 
 1. Wechseln Sie zu `https://'[server]:[port]'/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
 
-1. Erstellen Sie im Programmordner einen Ordner mit dem Namen „items“ mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner „items“, der sich im Auswahlordner befindet, indem Sie folgende Schritte durchführen:
+1. Erstellen Sie im Apps-Ordner einen Ordner mit dem Namen items mit einem ähnlichen Pfad/einer ähnlichen Struktur zum items-Ordner im Auswahlordner mithilfe der folgenden Schritte:
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner **items** unter dem folgenden Pfad und wählen Sie **Überlagerungsknoten**:
 
@@ -136,7 +136,7 @@ Führen Sie die folgenden Schritte aus, um Correspondence Management so anzupass
         </tbody>
        </table>
 
-1. Erstellen Sie im Programmordner einen Ordner mit dem Namen „js“ mit einem ähnlichen Pfad/einer ähnlichen Struktur zum Ordner „items“, der sich im Administratorordner befindet, indem Sie folgende Schritte durchführen:
+1. Erstellen Sie im Apps-Ordner einen Ordner mit dem Namen js mit einem ähnlichen Pfad/einer ähnlichen Struktur zum items-Ordner im Admin-Ordner, indem Sie folgende Schritte durchführen:
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner **js** unter dem folgenden Pfad und wählen Sie **Überlagerungsknoten**:
 
@@ -226,7 +226,7 @@ Führen Sie die folgenden Schritte aus, um Correspondence Management so anzupass
 
       Der obige Code dient der für Briefe spezifischen Aktionsbearbeitung des in diesem Verfahren erstellten Befehls. Für die Aktionsbearbeitung anderer Assets müssen Sie den JavaScript-Code ändern.
 
-1. Erstellen Sie im Programmordner einen Ordner mit dem Namen „items“ mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner „items“, der sich im Ordner „actionhandlers“ befindet, indem Sie folgende Schritte durchführen:
+1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen &quot;items&quot;mit einem ähnlichen Pfad/einer ähnlichen Struktur zum Ordner &quot;items&quot;im Ordner &quot;actionhandlers&quot;, indem Sie folgende Schritte durchführen:
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner **items** unter dem folgenden Pfad und wählen Sie **Überlagerungsknoten**:
 

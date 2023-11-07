@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit der klassischen Benutzeroberfläche einen
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 1ae21d80-0683-4ab9-afaa-4d733ff47720
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 31%
+ht-degree: 25%
 
 ---
 
@@ -19,7 +19,7 @@ Im folgenden Verfahren wird die klassische Benutzeroberfläche verwendet, um ein
 1. Fügen Sie eine neue untergeordnete Seite hinzu, die die Sprachversion der Site darstellt:
 
    1. Klicken Sie auf Neu > Neue Seite.
-   1. Geben Sie in das Dialogfeld den Titel und den Namen ein. Der Name muss im Format `<language-code>` oder `<language-code>_<country-code>`, vorliegen, wie beispielsweise en, en_US, en_us, en_GB, en_gb.
+   1. Geben Sie in das Dialogfeld den Titel und den Namen ein. Der Name muss im Format `<language-code>` oder `<language-code>_<country-code>`, zum Beispiel en, en_US, en_us, en_GB, en_gb.
 
       * Der unterstützte Sprachcode ist ein aus zwei Buchstaben bestehender Code in Kleinbuchstaben gemäß ISO-639-1.
       * Der unterstützte Ländercode ist ein aus zwei Buchstaben bestehender Code in Kleinbuchstaben oder Großbuchstaben gemäß ISO 3166.

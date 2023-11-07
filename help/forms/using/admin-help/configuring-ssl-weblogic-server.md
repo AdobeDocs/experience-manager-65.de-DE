@@ -9,9 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1047'
 ht-degree: 35%
 
 ---
@@ -172,11 +172,11 @@ Konfigurieren Sie WebLogic so, dass es den von Ihnen erstellten benutzerdefinier
    1. Überprüfen Sie die **Listen Port Enabled** und **SSL Listen Port aktiviert** aktivieren.
 
 1. Wenn es sich bei diesem Server um einen verwalteten Server handelt, ändern Sie Listen Port in einen nicht verwendeten Anschlusswert (z. B. 8001) und SSL Listen Port in einen nicht verwendeten Anschlusswert (z. B. 8002). Auf einem eigenständigen Server ist der standardmäßige SSL-Anschluss 7002.
-1. Klicken **Versionskonfiguration**.
+1. Klicks **Versionskonfiguration**.
 1. Klicken Sie unter „Umgebung“ in „Domain-Konfigurationen“ auf **Server > [*Managed Server*] > Konfiguration > Allgemein**.
 1. Wählen Sie in den Konfigurationen unter „Allgemein“ die Option **Keystores**.
 1. Klicken Sie im Change Center auf **Sperren und bearbeiten**, um Auswahlen und Werte zu ändern.
-1. Klicken **Änderung** , um die Keystore-Liste als Dropdown-Liste abzurufen, und wählen Sie **Benutzerdefinierte Identität und benutzerdefinierter Vertrauen**.
+1. Klicks **Änderung** , um die Keystore-Liste als Dropdown-Liste abzurufen, und wählen Sie **Benutzerdefinierte Identität und benutzerdefinierter Vertrauen**.
 1. Geben Sie unter Identität die folgenden Werte an:
 
    **Bennitzerdefinierter Identitäts-Keystore**: *[appserverdomain]*/adobe/*[Server-Nname]*/ads-credentials.jks, wobei *[appserverdomain] *der aktuelle Pfad und *[Server-Name]* der Name des Anwendungs-Servers ist.
@@ -201,7 +201,7 @@ Konfigurieren Sie WebLogic so, dass es den von Ihnen erstellten benutzerdefinier
 
    **Passphrase**: *mypassword*
 
-1. Klicken **Versionskonfiguration**.
+1. Klicks **Versionskonfiguration**.
 
 ## Überprüfungsfunktion für Hostnamen deaktivieren {#disable-the-hostname-verification-feature}
 

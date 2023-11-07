@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4150'
-ht-degree: 99%
+source-wordcount: '4143'
+ht-degree: 94%
 
 ---
 
@@ -89,9 +89,9 @@ Sie können Formulare entwerfen, die sich zwischen Seiten (Bedienfeldern) bewege
 
 Es wird empfohlen, Skriptvariablen und Formularfeldern nicht dieselben Namen zu geben, wie z. B. Element. In einigen Webbrowsern wie Internet Explorer wird eine Variable möglicherweise nicht mit demselben Namen wie ein Formularfeld initialisiert, was zu einem Skriptfehler führt. Es empfiehlt sich, Formularfelder und Skriptvariablen unterschiedliche Namen zu geben.
 
-Achten Sie beim Rendern von HTML-Formularen, die sowohl Seitennavigationsfunktionen als auch Formularskripte enthalten (z. B. wenn ein Skript Felddaten jedes Mal aus einer Datenbank abruft, wenn das Formular wiedergegeben wird) darauf, dass sich das Formularskript im form:calculate -Ereignis und nicht im form:readyevent befindet.
+Stellen Sie beim Rendern von HTML-Formularen, die sowohl die Seitennavigationsfunktion als auch Formularskripte enthalten (z. B. wenn ein Skript Felddaten jedes Mal aus einer Datenbank abruft, wenn das Formular wiedergegeben wird) sicher, dass sich das Formularskript im form:calculate -Ereignis und nicht im form:readyevent befindet.
 
-Formularskripte, die sich im form:ready-Ereignis befinden, werden nur einmal während der ersten Wiedergabe des Formulars ausgeführt und nicht für nachfolgende Seitenabrufe. Im Gegensatz dazu wird das form:calculate-Ereignis für jede Seitennavigation ausgeführt, in der das Formular wiedergegeben wird.
+Formularskripte, die sich im form:ready -Ereignis befinden, werden nur einmal während der ersten Wiedergabe des Formulars ausgeführt und nicht für nachfolgende Seitenabrufe. Im Gegensatz dazu wird das form:calculate-Ereignis für jede Seitennavigation ausgeführt, in der das Formular wiedergegeben wird.
 
 >[!NOTE]
 >
@@ -101,7 +101,7 @@ Sie können benutzerdefinierte Skripte vor dem Senden eines Formulars aufrufen. 
 
 Sie müssen zunächst eine Callback-Funktion definieren, die vor dem Absenden des Formulars aufgerufen wird, wobei der Name der Funktion `_user_onsubmit` lautet. Es wird davon ausgegangen, dass die Funktion keine Ausnahme auslöst, oder falls doch, wird die Ausnahme ignoriert. Es wird empfohlen, die JavaScript-Funktion im Head-Abschnitt der HTML-Datei zu platzieren. Sie können sie jedoch auch an einer beliebigen Stelle vor dem Ende der Skript-Tags deklarieren, die `xfasubset.js` enthalten.
 
-Wenn der Formularserver eine XDP-Datei rendert, die eine Dropdown-Liste enthält, werden neben der Erstellung der Dropdown-Liste auch zwei ausgeblendete Textfelder erstellt. Diese Textfelder speichern die Daten der Dropdown-Liste (eines speichert den Anzeigenamen der Optionen, das andere speichert den Wert für die Optionen). Daher werden jedes Mal, wenn ein Benutzer das Formular sendet, alle Daten der Dropdown-Liste gesendet. Wenn Sie nicht jedes Mal so viele Daten senden möchten, können Sie ein benutzerdefiniertes Skript schreiben, um dies zu deaktivieren. Beispiel: Der Name der Dropdown-Liste lautet `drpOrderedByStateProv` und wird in die Kopfzeile des Teilformulars eingeschlossen. Der Name des HTML-Eingabeelements lautet `header[0].drpOrderedByStateProv[0]`. Der Name der ausgeblendeten Felder, die die Daten der Dropdown-Liste speichern und senden, hat die folgenden Namen: `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
+Wenn der Formularserver eine XDP-Datei rendert, die eine Dropdown-Liste enthält, werden neben der Erstellung der Dropdown-Liste auch zwei ausgeblendete Textfelder erstellt. Diese Textfelder speichern die Daten der Dropdown-Liste (eines speichert den Anzeigenamen der Optionen, das andere speichert den Wert für die Optionen). Daher werden jedes Mal, wenn ein Benutzer das Formular sendet, die gesamten Daten der Dropdown-Liste gesendet. Wenn Sie nicht jedes Mal so viele Daten senden möchten, können Sie ein benutzerdefiniertes Skript schreiben, um dies zu deaktivieren. Beispiel: Der Name der Dropdown-Liste lautet `drpOrderedByStateProv` und wird in die Kopfzeile des Teilformulars eingeschlossen. Der Name des HTML-Eingabeelements lautet `header[0].drpOrderedByStateProv[0]`. Der Name der ausgeblendeten Felder, die die Daten der Dropdown-Liste speichern und senden, hat die folgenden Namen: `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
 
 Sie können diese Eingabeelemente wie folgt deaktivieren, wenn Sie die Daten nicht posten möchten. `var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature function _user_onsubmit() { var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]"); elems[0].disabled = true; elems = document.getElementsByName("header[0].drpOrderedByStateProv_VALUEITEMS_[0]"); elems[0].disabled = true; }`
 
@@ -125,7 +125,7 @@ Beim Erstellen von Formularentwürfen, die als HTML wiedergegeben werden sollen,
 
 Skripte, die auf dem Client oder sowohl auf dem Client als auch auf dem Server ausgeführt werden, müssen in die XFA-Teilmenge geschrieben werden. Skripte, die auf dem Server ausgeführt werden, können das vollständige XFA-Skriptmodell verwenden und auch FormCalc verwenden. Informationen zur Verwendung von JavaScript finden Sie unter [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_de).
 
-Beim Ausführen von Skripten auf dem Client kann nur das aktuelle Bedienfeld, das angezeigt wird, das Skript verwenden. Sie können beispielsweise kein Skript für Felder erstellen, die sich im Bereich A befinden, wenn Bereich B angezeigt wird. Beim Ausführen von Skripten auf dem Server können alle Bedienfelder aufgerufen werden.
+Beim Ausführen von Skripten auf dem Client kann nur das aktuelle Bedienfeld, das angezeigt wird, das Skript verwenden. Sie können beispielsweise kein Skript für Felder erstellen, die sich im Bedienfeld A befinden, wenn Bedienfeld B angezeigt wird. Beim Ausführen von Skripten auf dem Server können alle Bedienfelder aufgerufen werden.
 
 Außerdem müssen Sie bei der Verwendung von SOM-Ausdrücken (Scripting Object Model) in Skripten, die auf dem Client ausgeführt werden, vorsichtig sein. Nur eine vereinfachte Untergruppe von SOM-Ausdrücken wird von Skripten unterstützt, die auf dem Client ausgeführt werden.
 
@@ -158,7 +158,7 @@ Es wird empfohlen, die Formularlogik in calculate -Ereignissen zu platzieren, di
 
 Wenn Sie zwischen HTML-Seiten (Bedienfeldern) wechseln, wird nur der Status der Daten beibehalten. Einstellungen wie die Hintergrundfarbe oder die obligatorischen Feldeinstellungen werden nicht beibehalten (wenn sie sich von den ursprünglichen Einstellungen unterscheiden). Um den Präsentationsstatus beizubehalten, müssen Sie Felder (normalerweise ausgeblendet) erstellen, die den Präsentationsstatus von Feldern darstellen. Wenn Sie dem `Calculate`-Ereignis eines Feldes ein Skript hinzufügen, das die Darstellung auf der Grundlage von ausgeblendeten Feldwerten ändert, können Sie den Zustand der Darstellung beibehalten, wenn Sie zwischen HTML-Seiten (Panels) hin- und herwechseln.
 
-Das folgende Skript erhält die `fillColor` eines Feldes auf der Grundlage des Wertes von `hiddenField`. Angenommen, dieses Skript befindet sich im `Calculate`-Ereignis.
+Das folgende Skript erhält die `fillColor` eines Feldes auf der Grundlage des Wertes von `hiddenField`. Angenommen, dieses Skript befindet sich im `Calculate` -Ereignis.
 
 ```java
      If (hiddenField.rawValue == 1)
@@ -188,7 +188,7 @@ Sie können ein vollständiges HTML-Formular wiedergeben, das den Richtlinien f�
 
 ## Validieren von Formulardaten {#validating-form-data}
 
-Es wird empfohlen, die Verwendung von Validierungsregeln für Formularfelder bei der Wiedergabe des Formulars als HTML-Formular zu beschränken. Einige Validierungsregeln werden für HTML-Formulare möglicherweise nicht unterstützt. Wenn beispielsweise ein Validierungsmuster MM-TT-JJJJ auf ein `Date/Time`-Feld angewendet wird, das sich in einem Formularentwurf befindet, der als HTML-Formular wiedergegeben wird, funktioniert es nicht richtig, selbst wenn das Datum richtig eingegeben wird. Bei Formularen, die im PDF-Format dargestellt werden, funktioniert dieses Validierungsmuster jedoch ordnungsgemäß.
+Es wird empfohlen, die Verwendung von Validierungsregeln für Formularfelder bei der Wiedergabe des Formulars als HTML-Formular zu beschränken. Einige Validierungsregeln werden für HTML-Formulare möglicherweise nicht unterstützt. Wenn beispielsweise ein Überprüfungsmuster von MM-TT-JJJJ auf eine `Date/Time` -Feld in einem Formularentwurf, der als HTML-Formular wiedergegeben wird, funktioniert es nicht ordnungsgemäß, auch wenn das Datum richtig eingegeben wurde. Bei Formularen, die im PDF-Format dargestellt werden, funktioniert dieses Validierungsmuster jedoch ordnungsgemäß.
 
 >[!NOTE]
 >

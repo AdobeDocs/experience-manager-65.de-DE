@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
 exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1901'
 ht-degree: 16%
 
 ---
@@ -65,7 +65,7 @@ Wenn Ihr Unternehmen verschiedene Benutzergruppen mit unterschiedlichen geschäf
 
 >[!NOTE]
 >
->Wenn Sie keinen neuen Geschäftskalender erstellen, wird der Standardkalender verwendet.
+>Wenn Sie keinen Geschäftskalender erstellen, wird der Standardkalender verwendet.
 
 1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;Forms-Workflow&quot;> &quot;Geschäftskalender&quot;.
 1. Um einen neuen Geschäftskalender hinzuzufügen, klicken Sie auf ![bus_cal_plus](assets/bus_cal_plus.png). Der Text *Neuer Kalender* in der Dropdown-Liste angezeigt. Wählen Sie den Text aus und geben Sie einen anderen Namen für Ihren Kalender ein.

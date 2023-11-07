@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '10239'
+source-wordcount: '10229'
 ht-degree: 27%
 
 ---
@@ -631,7 +631,7 @@ Geben Sie bei Bedarf für Ihren SMTP-Host die erforderlichen Informationen in di
 
 ### Einstellungen für die Einladungs-E-Mail zur Registrierung {#registration-invitation-email-settings}
 
-Document Security sendet automatisch eine Einladungs-E-Mail zur Registrierung, wenn Sie ein neues Konto für eingeladene Benutzer erstellen oder wenn ein bestehender Benutzer einen externen Empfänger hinzufügt, der sich noch nicht registriert hat oder zur Registrierung eingeladen wurde. Die E-Mail enthält einen Link, über den der Empfänger auf die Registrierungsseite zugreifen und persönliche Kontoinformationen wie Benutzername und Kennwort eingeben kann. Das Kennwort kann eine beliebige Kombination aus acht Zeichen sein.
+Document Security sendet automatisch eine Einladungs-E-Mail zur Registrierung, wenn Sie ein Konto für eingeladene Benutzer erstellen oder wenn ein bestehender Benutzer einen externen Empfänger hinzufügt, der sich noch nicht registriert hat oder zur Registrierung eingeladen wurde. Die E-Mail enthält einen Link, über den der Empfänger auf die Registrierungsseite zugreifen und persönliche Kontoinformationen wie Benutzername und Kennwort eingeben kann. Das Kennwort kann eine beliebige Kombination aus acht Zeichen sein.
 
 Wenn der Empfänger das Konto aktiviert, wird der Benutzer zu einem lokalen Benutzer.
 
@@ -712,7 +712,7 @@ Ihre ausgewählten Benutzer und Gruppen können jetzt benutzerdefinierte Richtli
 
 ### Festlegen von Benutzern und Gruppen, die in Suchvorgängen sichtbar sind {#specify-users-and-groups-that-are-visible-in-searches}
 
-Wenn Benutzer ihre benutzerdefinierten Richtlinien verwalten, können sie nach Benutzern und Gruppen suchen, die zu ihren Richtlinien hinzugefügt werden sollen. Sie müssen die Domains angeben, aus denen Benutzer und Gruppen in diesen Suchergebnissen angezeigt werden sollen.
+Wenn Benutzer ihre benutzerdefinierten Richtlinien verwalten, können sie nach Benutzern und Gruppen suchen, die zu ihren Richtlinien hinzugefügt werden sollen. Geben Sie die Domänen an, von denen aus Benutzer und Gruppen bei diesen Suchvorgängen sichtbar sind.
 
 1. Klicken Sie auf der Document Security-Seite auf &quot;Konfiguration&quot;> &quot;Meine Richtlinien&quot;.
 1. Klicken Sie auf der Seite Meine Richtlinien auf die Registerkarte Sichtbare Benutzer und Gruppen .

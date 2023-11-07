@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1427'
 ht-degree: 58%
 
 ---
@@ -58,7 +58,7 @@ Der Textkörper der Strukturvorlage ist das Formular. Wenn ein Benutzer eine Sei
 
 ### Erstellen einer Strukturvorlage {#creating-a-scaffold}
 
-Um eine neue Grundlage zu erstellen, navigieren Sie zum **Instrumente** Console, dann **Strukturvorlage für Standardseite** und erstellen Sie eine Seite. Ein einseitiger Vorlagentyp ist verfügbar. *Strukturvorlage.*
+Um eine Grundlage zu erstellen, navigieren Sie zum **Instrumente** Console, dann **Strukturvorlage für Standardseite** und erstellen Sie eine Seite. Ein einseitiger Vorlagentyp ist verfügbar. *Strukturvorlage.*
 
 Navigieren Sie zu **Seiteneigenschaften** und legen Sie die *Titeltext*, *Beschreibung*, *Zielvorlage*, und *Zielpfad*, wie oben beschrieben.
 
@@ -163,4 +163,4 @@ Nach dem Entsperren können Sie die Vererbung wiederherstellen, indem Sie auf da
 
 >[!NOTE]
 >
->Wenn die Vererbung auf Seitenebene abgebrochen wird (über die Registerkarte Live Copy der Seiteneigenschaften), sind alle Komponenten in **Strukturvorlage** -Modus (sie werden im entsperrten Status angezeigt).
+>Wenn die Vererbung auf Seitenebene abgebrochen wird (über die Registerkarte Live Copy der Seiteneigenschaften), sind alle Komponenten bearbeitbar in **Strukturvorlage** -Modus (sie werden in einem entsperrten Status angezeigt).

@@ -1,20 +1,16 @@
 ---
 title: Generieren eines Datensatzdokuments für adaptive Formulare
-seo-title: Generate Document of Record for adaptive forms
 description: Erklärt, wie Sie eine Vorlage für ein Datensatzdokument (DoR) für adaptive Formulare generieren können.
-seo-description: Explains how you can generate a template for a document of record (DoR) for adaptive forms.
-uuid: 2dc7e0de-fff9-43fa-9426-e9b047eb2595
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3544'
-ht-degree: 76%
+source-wordcount: '3545'
+ht-degree: 75%
 
 ---
 
@@ -216,7 +212,7 @@ Die Tabellenkomponenten für adaptive Formulare wie Kopf- und Fußzeile sowie Ze
 
 Die Basisvorlage stellt Formatierungs- und Darstellungsinformationen für das Datensatzdokument bereit. Damit können Sie die standardmäßige Darstellung des automatisch erstellten Datensatzdokuments anpassen. Beispiel: Sie möchten Ihr Firmenlogo in der Kopfzeile und Copyright-Informationen in der Fußzeile des Datensatzdokuments hinzufügen. Die Masterseite aus der Basisvorlage wird als Masterseite für die Datensatzdokumentvorlage verwendet. Die Masterseite kann Informationen wie Seitenkopf, Seitenfußzeile und Seitenzahl enthalten, die Sie auf das Datensatzdokument anwenden können. Sie können solche Informationen mithilfe der Basisvorlage für die automatische Erstellung des Datensatzdokuments auf das Datensatzdokument anwenden. Die Verwendung der Basisvorlage ermöglicht es Ihnen, die Standardeinstellungen von Feldern zu ändern.
 
-Bitte folgen Sie bei der Entwicklung Ihrer Basisvorlage den [Konventionen für Basisvorlagen](#base-template-conventions).
+Stellen Sie sicher, dass Sie [Konventionen für Basisvorlagen](#base-template-conventions) wenn Sie eine Basisvorlage erstellen.
 
 ## Konventionen für Basisvorlagen {#base-template-conventions}
 
@@ -232,7 +228,7 @@ Eine Basisvorlage wird verwendet, um Kopf- und Fußzeile, Stil und Erscheinungsb
 
 **Stilkonventionen für Felder**
 
-* Wenn Sie einen Stil auf die Felder im Datensatzdokument anwenden, stellt die Basisvorlage die Felder im Teilformular `AF_FIELDSSUBFORM` bereit, das sich unter dem Stammteilformular `AF_METATEMPLATE` befindet.
+* Um einen Stil auf die Felder im Datensatzdokument anzuwenden, stellt die Basisvorlage Felder im `AF_FIELDSSUBFORM` Unterabschnitt unter `AF_METATEMPLATE` Stammteilformular.
 
 * Die Eigenschaften dieser Felder werden auf die Felder im Datensatzdokument angewendet. Benennungen für diese Felder sollten der Form `AF_<name of field in all caps>_XFO` folgen. So sollte beispielsweise der Feldname für ein Kontrollkästchen `AF_CHECKBOX_XFO` lauten.
 

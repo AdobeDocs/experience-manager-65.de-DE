@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1620'
-ht-degree: 46%
+source-wordcount: '1619'
+ht-degree: 44%
 
 ---
 
@@ -92,9 +92,9 @@ Mit dem folgenden Verfahren können Sie Variablen zur Liste hinzufügen:
 
 1. Erweitern Sie auf der Adobe Analytics-Framework-Seite den Bereich **Allgemeine Analytics-Einstellungen**.
 1. Klicken Sie unter der Liste der Variablen auf „Element hinzufügen“, um eine neue Variable zur Liste hinzuzufügen.
-1. Geben Sie in der linken Zelle einen Namenfür die Variable ein, zum Beispiel `prop10`.
+1. Geben Sie in der linken Zelle einen Namenfür die Variable ein, zum Beispiel, `prop10`.
 
-1. Geben Sie in der rechten Spalte einen Wertfür die Variable ein, zum Beispiel `CONSTANT`.
+1. Geben Sie in der rechten Spalte einen Wertfür die Variable ein, zum Beispiel, `CONSTANT`.
 
 1. Um eine Variable zu entfernen, klicken Sie auf die Schaltfläche (-) neben der Variablen.
 
@@ -199,7 +199,7 @@ Daher sollte Ihr JavaScript `s.usePlugins` nach `true` sodass jeder Code im `s_d
    1. Legen Sie als Ordnernamen `cq` fest und klicken Sie auf „OK“.
    1. Erstellen Sie auf dieselbe Weise die Ordner `analytics` und `components`.
 
-1. Klicken Sie mit der rechten Maustaste auf den Ordner `components`, den Sie gerade erstellt haben, und klicken Sie auf „Erstellen“ > „Komponente erstellen“. Legen Sie die folgenden Eigenschaftswerte fest:
+1. Rechtsklicken Sie auf die `components` Ordner, den Sie erstellt haben, und klicken Sie auf Erstellen > Komponente erstellen . Legen Sie die folgenden Eigenschaftswerte fest:
 
    * Bezeichnung: `sitecatalyst`
    * Titel: `sitecatalyst`
@@ -301,7 +301,7 @@ Mit dem folgenden Verfahren können Sie sich den Plug-in-Code beschaffen, den Co
 
 1. Öffnen Sie die Datei js.txt aus dem Client-Bibliotheksordner.
 
-1. Fügen Sie in einer neuen Zeile den Namen der Datei ein, die das Plug-in enthält, z. B. getQueryParam.js. Klicken Sie dann auf „Alle speichern“ und schließen Sie die Datei.
+1. Fügen Sie in einer neuen Zeile den Namen der Datei hinzu, die das Plug-in enthält, z. B. getQueryParam.js. Klicken Sie dann auf „Alle speichern“ und schließen Sie die Datei.
 
 >[!NOTE]
 >

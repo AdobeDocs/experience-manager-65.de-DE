@@ -1,25 +1,21 @@
 ---
-title: Integrieren von AEM Forms Workspace-Komponenten in Webanwendungen
-seo-title: Integrating AEM Forms workspace components in web applications
-description: Wiederverwenden von AEM Forms Workspace-Komponenten in eigenen Webapps, um Funktion zu nutzen und Integration bereitzustellen.
-seo-description: How to reuse AEM Forms workspace components in your own webapps to leverage functionality and provide tight integration.
-uuid: bb9b8aa0-3f41-4f44-8eb7-944e778ee8a6
+title: Integrieren von Arbeitsbereichskomponenten von AEM Forms in Web-Anwendungen
+description: Wiederverwenden von AEM Forms Workspace-Komponenten in Ihren eigenen Webapps, um Funktionen zu nutzen und eine enge Integration zu ermöglichen.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
 exl-id: bb4a500d-c34f-4586-83f0-ad7ef69b4fb1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 100%
+ht-degree: 52%
 
 ---
 
-# Integrieren von AEM Forms Workspace-Komponenten in Webanwendungen {#integrating-aem-forms-workspace-components-in-web-applications}
+# Integrieren von Arbeitsbereichskomponenten von AEM Forms in Web-Anwendungen {#integrating-aem-forms-workspace-components-in-web-applications}
 
-Sie können die AEM Forms Workspace [Komponenten](/help/forms/using/description-reusable-components.md) in Ihrer eigenen Webanwendung verwenden. In der folgenden Beispielimplementierung werden Komponenten aus einem AEM Forms Workspace-Dev-Paket verwendet, das auf einer CRX™-Instanz installiert ist, um eine Webanwendung zu erstellen. Passen Sie die unten gezeigte Lösung an Ihre spezifischen Anforderungen an. In der Beispielimplementierung werden die Komponenten `UserInfo`, `FilterList` und `TaskList` innerhalb eines Webportals wiederverwendet.
+Sie können AEM Forms Workspace verwenden [Komponenten](/help/forms/using/description-reusable-components.md) in Ihrer eigenen Webanwendung. Die folgende Beispielimplementierung verwendet Komponenten aus einem AEM Forms Workspace-Entwicklungspaket, das auf einer CRX™-Instanz installiert ist, um eine Webanwendung zu erstellen. Passen Sie die unten stehende Lösung an Ihre spezifischen Anforderungen an. In der Beispielimplementierung werden die Komponenten `UserInfo`, `FilterList` und `TaskList` innerhalb eines Webportals wiederverwendet.
 
 1. Melden Sie sich in der CRXDE Lite-Umgebung unter `https://'[server]:[port]'/lc/crx/de/` an. Stellen Sie sicher, dass AEM Forms Workpace Dev-Paket installiert ist.
 1. Erstellen Sie einen Pfad `/apps/sampleApplication/wscomponents`.
@@ -28,8 +24,8 @@ Sie können die AEM Forms Workspace [Komponenten](/help/forms/using/description-
    * von `/libs/ws`
    * nach `/apps/sampleApplication/wscomponents`.
 
-1. Erstellen Sie im Ordner /apps/sampleApplication/wscomponents/js eine Datei mit dem Namen demomain.js. Kopieren Sie Code aus /libs/ws/js/main.js in demomain.js.
-1. Entfernen Sie in demomain.js den Code zum Initialisieren des Routers und fügen Sie folgenden Code hinzu:
+1. Erstellen Sie eine Datei &quot;demomain.js&quot;im Ordner /apps/sampleApplication/wscomponents/js . Kopieren Sie den Code aus /libs/ws/js/main.js in demomain.js.
+1. Entfernen Sie in demomain.js den Code zum Initialisieren des Routers und fügen Sie den folgenden Code hinzu:
 
    ```javascript
    require(['initializer','runtime/util/usersession'],
@@ -53,20 +49,20 @@ Sie können die AEM Forms Workspace [Komponenten](/help/forms/using/description-
    <div class="taskListView gcomponent" data-name="tasklist"></div>
    ```
 
-   Schließen Sie außerdem die CSS-Dateien ein, die für die AEM Forms Workspace-Komponenten erforderlich sind.
+   Schließen Sie auch die CSS-Dateien ein, die für die AEM Forms Workspace-Komponenten erforderlich sind.
 
    >[!NOTE]
    >
-   >Beim render-Prozess wird jede Komponente dem Komponenten-Tag (der Klasse gcomponent) hinzugefügt. Stellen Sie sicher, dass Ihre Startseite die betreffenden Tags enthält. Weitere Informationen zu diesen Basissteuerungstags finden Sie in der Datei von AEM Forms Workspace `html.jsp`.
+   >Jede Komponente wird beim Rendern zum Komponenten-Tag (mit Klasse gcomponent) hinzugefügt. Stellen Sie sicher, dass Ihre Startseite diese Tags enthält. Weitere Informationen zu diesen Basissteuerungstags finden Sie in der Datei von AEM Forms Workspace `html.jsp`.
 
 1. Um die Komponenten anzupassen, können Sie die vorhandenen Ansichten für die erforderliche Komponente wie folgt erweitern:
 
    ```javascript
    define([
-       ‘jquery’,
-       ‘underscore’,
-       ‘backbone’,
-       ‘runtime/views/userinfo'],
+       'jquery',
+       'underscore',
+       'backbone',
+       'runtime/views/userinfo'],
        function($, _, Backbone, UserInfo){
            var demoUserInfo = UserInfo.extend({
                //override the functions to customize the functionality
@@ -81,7 +77,7 @@ Sie können die AEM Forms Workspace [Komponenten](/help/forms/using/description-
    });
    ```
 
-1. Ändern Sie das Portal-CSS, um das Layout, die Positionierung und den Stil der erforderlichen Komponenten im Portal zu konfigurieren. Beispiel: Sie möchten die Hintergrundfarbe Schwarz in diesem Portal behalten, um die Komponente userInfo gut sichtbar darzustellen. Sie können dies tun, indem Sie die Hintergrundfarbe in `/apps/sampleApplication/wscomponents/css/style.css` wie folgt ändern:
+1. Ändern Sie das Portal-CSS, um das Layout, die Positionierung und den Stil der erforderlichen Komponenten im Portal zu konfigurieren. Sie möchten beispielsweise die Hintergrundfarbe für dieses Portal schwarz halten, um die Komponente userInfo gut anzuzeigen. Sie können dies tun, indem Sie die Hintergrundfarbe in `/apps/sampleApplication/wscomponents/css/style.css` wie folgt ändern:
 
    ```css
    body {

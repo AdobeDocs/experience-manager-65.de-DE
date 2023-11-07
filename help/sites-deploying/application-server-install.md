@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 44%
@@ -17,7 +17,7 @@ ht-degree: 44%
 
 >[!NOTE]
 >
->`JAR` und `WAR` sind die Dateitypen, in denen Adobe Experience Manager (AEM) veröffentlicht wird. Diese Formate werden einer Qualitätssicherung unterzogen, um die von der Adobe zugesagten Unterstützungsebenen zu berücksichtigen.
+>`JAR` und `WAR` sind die Dateitypen, in denen Adobe Experience Manager (AEM) veröffentlicht wird. Diese Formate unterliegen einer Qualitätssicherung, um den Support-Level zu berücksichtigen, zu denen sich Adobe verpflichtet hat.
 >
 
 In diesem Abschnitt erfahren Sie, wie Sie Adobe Experience Manager (AEM) mit einem Anwendungsserver installieren. Lesen Sie die [Unterstützte Plattformen](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) Informationen zu den spezifischen Unterstützungsebenen für die einzelnen Anwendungsserver.
@@ -46,7 +46,7 @@ Bei Bereitstellung geschieht standardmäßig Folgendes:
 * Der Ausführungsmodus lautet `author`.
 * Die Instanz (Repository, Felix OSGI-Umgebung, Bundles usw.) wird in installiert. `${user.dir}/crx-quickstart`where `${user.dir}` das aktuelle Arbeitsverzeichnis ist, wird dieser Pfad zu crx-quickstart aufgerufen `sling.home`
 
-* Der Kontextstamm ist der Name der WAR-Datei, z. B. : `aem-6`
+* Der Kontextstamm ist beispielsweise der Name der WAR-Datei.  `aem-6`
 
 #### Konfiguration {#configuration}
 
@@ -69,7 +69,7 @@ Um eine Veröffentlichungsinstanz bereitzustellen, müssen Sie den Ausführungsm
 
 #### Installationsprüfung {#installation-check}
 
-Um zu überprüfen, ob alle installiert sind, können Sie:
+Um zu überprüfen, ob alle installiert sind, können Sie Folgendes tun:
 
 * Untersuchen der Datei `error.log`, um anzuzeigen, ob der gesamte Inhalt installiert ist.
 * Überprüfen in `/system/console`, ob alle Bundles installiert sind
@@ -100,7 +100,7 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
 
 * Lassen Sie einfache Auth-Header durchgehen:
 
-   * Eine Möglichkeit, AEM Benutzer authentifizieren zu können, besteht darin, die globale Verwaltungssicherheit des WebSphere®-Servers zu deaktivieren: Wechseln Sie zu Sicherheit > Globale Sicherheit und deaktivieren Sie das Kontrollkästchen Enable administrative security , speichern und starten Sie den Server neu.
+   * Eine Möglichkeit, AEM Benutzer authentifizieren zu können, besteht darin, die globale Verwaltungssicherheit des WebSphere®-Servers zu deaktivieren. Gehen Sie dazu zu Sicherheit > Globale Sicherheit und deaktivieren Sie das Kontrollkästchen Enable administrative security , speichern und starten Sie den Server neu.
 
 * set `"JAVA_OPTS= -Xmx2048m"`
 * Wenn Sie AEM mit Kontextstamm = / installieren möchten, ändern Sie den Kontextstamm der vorhandenen Standard-Webanwendung.
@@ -117,7 +117,7 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
 
 * Bereitstellen der AEM-WAR-Datei
 
-   * Wählen Sie einen Kontextstamm aus. (Wenn Sie die Sling-Ausführungsmodi festlegen möchten, müssen Sie die detaillierten Schritte des Bereitstellungsassistenten auswählen und dann in Schritt 6 des Assistenten angeben.)
+   * Wählen Sie einen Kontextstamm aus (wenn Sie die Sling-Ausführungsmodi festlegen möchten, müssen Sie die detaillierten Schritte des Bereitstellungsassistenten auswählen und dann in Schritt 6 des Assistenten angeben)
 
 * AEM Webanwendung starten
 
@@ -188,7 +188,7 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
 
    * Erhöhen Sie den für die virtuelle Maschine eingestellten Arbeitsspeicherwert:
 
-      * In `bin/catalina.bat` (bzw. `catalina.sh` Fügen Sie unter UNIX® die folgende Einstellung hinzu:
+      * In `bin/catalina.bat` (resp `catalina.sh` Fügen Sie unter UNIX® die folgende Einstellung hinzu:
       * `set "JAVA_OPTS= -Xmx2048m`
 
    * Tomcat ermöglicht bei der Installation keinen Admin- oder Manager-Zugriff. Daher müssen Sie die `tomcat-users.xml` um Zugriff auf diese Konten zu gewähren:

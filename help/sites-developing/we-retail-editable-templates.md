@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 31%
+source-wordcount: '480'
+ht-degree: 26%
 
 ---
 
@@ -29,7 +29,7 @@ Alle Seiten in We.Retail basieren auf bearbeitbaren Vorlagen, sodass Nicht-Entwi
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
-1. Beachten Sie, dass die Modusauswahl keinen Designmodus mehr bietet. Alle Seiten für We.Retail basieren auf bearbeitbaren Vorlagen. Um das Design bearbeitbarer Vorlagen zu ändern, müssen sie im Vorlageneditor bearbeitet werden.
+1. Die Modusauswahl bietet keinen Designmodus mehr. Alle Seiten für We.Retail basieren auf bearbeitbaren Vorlagen. Um das Design bearbeitbarer Vorlagen zu ändern, müssen sie im Vorlageneditor bearbeitet werden.
 1. Wählen Sie aus dem Menü **Seiteninformationen** die Option **Vorlage bearbeiten** aus.
 1. Sie bearbeiten jetzt die Vorlage Hero Page .
 
@@ -45,7 +45,7 @@ Alle Seiten in We.Retail basieren auf bearbeitbaren Vorlagen, sodass Nicht-Entwi
 
 1. Im Dialogfeld &quot;Design&quot;des Layout-Containers können Sie
 
-   * Wählen Sie eine vorhandene Richtlinie aus oder erstellen Sie eine neue Richtlinie für den Container
+   * Wählen Sie eine vorhandene Richtlinie aus oder erstellen Sie eine Richtlinie für den Container
    * Auswählen, welche Komponenten im Container zulässig sind
    * Definieren Sie die Standardkomponenten, die platziert werden sollen, wenn ein Asset in den Container gezogen wird
 
@@ -55,7 +55,7 @@ Alle Seiten in We.Retail basieren auf bearbeitbaren Vorlagen, sodass Nicht-Entwi
 
    Damit können Sie:
 
-   * Wählen Sie eine vorhandene Richtlinie aus oder erstellen Sie eine neue Richtlinie für den Container
+   * Wählen Sie eine vorhandene Richtlinie aus oder erstellen Sie eine Richtlinie für den Container
    * Definieren Sie die Funktionen, die dem Seitenautor bei Verwendung dieser Komponente zur Verfügung stehen, z. B.
 
       * Zulässige Einfügequellen
@@ -73,6 +73,6 @@ Alle Seiten in We.Retail basieren auf bearbeitbaren Vorlagen, sodass Nicht-Entwi
 
 ## Weitere Informationen {#more-information}
 
-Umfassende technische Informationen zu bearbeitbaren Vorlagen finden Sie im Dokument [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) für Autoren oder im Dokument [Bearbeitbare Seitenvorlagen](/help/sites-developing/page-templates-editable.md) für Entwickler.
+Weitere Informationen finden Sie im Authoring-Dokument . [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) oder der Seite mit dem Entwicklerdokument [Vorlagen - bearbeitbar](/help/sites-developing/page-templates-editable.md) für vollständige technische Details zu bearbeitbaren Vorlagen.
 
 Sie können sich darüber hinaus eingehender mit [Kernkomponenten](/help/sites-developing/we-retail-core-components.md) befassen. Im Dokument [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) für Autoren finden Sie einen Überblick über die Kernkomponenten. Im Dokument [Dokumentation zur Entwicklung der Kernkomponenten](https://helpx.adobe.com/de/experience-manager/core-components/using/developing.html) für Entwickler finden Sie einen technischen Überblick.

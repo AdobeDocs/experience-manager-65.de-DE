@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2672'
+source-wordcount: '2670'
 ht-degree: 48%
 
 ---
@@ -77,11 +77,11 @@ Kleine Schnellstart-Größe: halten Sie die Größe der Schnellstart-JAR-Datei a
 
 Schnellere Startzeit: Wenn Sie eine Änderung vornehmen, die sich auf die Startzeit auswirken könnte, stellen Sie sicher, dass sie kürzer und nicht länger wird.
 
-### Arithmetisches Mittel {#lean-and-mean}
+### Mittelwert {#lean-and-mean}
 
 Wir bevorzugen Code und Projekte, die leicht, klein, schnell und elegant sind. &quot;Gut genug&quot;ist nicht gut genug.
 
-Wiederverwendung von Code: Unsere OSGi-basierte Produktarchitektur und die Philosophie &quot;Alles ist Inhalt&quot; bedeutet, dass wir ungewöhnlich gute Möglichkeiten zur Wiederverwendung von Code und Artefakten haben. Wir versuchen, diese Tatsache, wann immer möglich, zu nutzen, um die Funktionen schlank und mittelschwer zu halten.
+Wiederverwendung von Code: Unsere OSGi-basierte Produktarchitektur und die Philosophie &quot;Alles ist Inhalt&quot; bedeutet, dass wir ungewöhnlich gute Möglichkeiten zur Wiederverwendung von Code und Artefakten haben. Wir versuchen, diese Tatsache, wann immer möglich, zu nutzen, um die Funktionen schlank-und-mittel zu halten.
 
 Lose Kopplung: Wir bevorzugen lose gekoppelte Interaktionen gegenüber engen Abhängigkeiten und „unerwünschter Intimität“. Eine lockere Kopplung ermöglicht auch eine stärkere Wiederverwendung von Code.
 
@@ -101,11 +101,11 @@ Verlassen Sie sich nicht auf Shutdown-Hooks, sorgen Sie für eine Bereinigung be
 
 ### Seien Sie bereit für elastisches Clustering {#be-ready-for-elastic-clustering}
 
-Seien Sie immer bereit für elastisches Clustering; immer davon ausgehen, dass es Clustering gibt. Im Allgemeinen bedeutet die Einhaltung aller im Inhalts-Repository vorhandenen Elemente die integrierte Clustering-Unterstützung.
+Seien Sie immer bereit für elastisches Clustering; gehen Sie immer davon aus, dass es Clustering gibt. Im Allgemeinen bedeutet die Einhaltung aller im Inhalts-Repository vorhandenen Elemente die integrierte Clustering-Unterstützung.
 
 ### Entwerfen Sie für Abwärtskompatibilität {#design-for-backward-compatibility}
 
-Nichts, was Sie tun, sollte den alten Code eines Kunden zerstören. Nur `/libs` sollte Produkt-Code enthalten, der während eines Upgrades aktualisiert werden kann. Die `/apps` -Abschnitt des Repositorys Projektcode ist und die `/etc` enthält benutzerdefinierte Konfigurationen, die beibehalten werden müssen. Im Allgemeinen sollten Sie nichts in `/apps`, `/content`und `/home`. Nach einer Aktualisierung sollten alter Projektcode, Konfigurationen und Inhalt weiterhin so funktionieren, wie es vor der Aktualisierung der Fall war.
+Nichts, was Sie tun, sollte den alten Code eines Kunden zerstören. Nur `/libs` sollte Produkt-Code enthalten, der während eines Upgrades aktualisiert werden kann. Die `/apps` -Abschnitt des Repositorys Projektcode ist und die `/etc` enthält benutzerdefinierte Konfigurationen, die beibehalten werden müssen. Im Allgemeinen sollten Sie nichts in `/apps`, `/content`, und `/home`. Nach einer Aktualisierung sollten alter Projektcode, Konfigurationen und Inhalt weiterhin so funktionieren, wie es vor der Aktualisierung der Fall war.
 
 Durch die Konzeption für die Abwärtskompatibilität wird außerdem sichergestellt, dass das Upgrade-Erlebnis der Einfachheit der ersten Installation entspricht. Einfaches Beenden von AEM, Ersetzen der Schnellstart-JAR-Datei und erneutes Starten von AEM sollte ausreichen. Mit einer schnell wachsenden Installationsbasis stellt die Effizienz der Aktualisierung einen immer größeren Vorteil dar.
 
@@ -137,7 +137,7 @@ Es ist auch möglich, mehrere Instanzen des Content-Repositorys zu einer JCR-Lö
 
 Im Wesentlichen ist JCR ein System von Knoten und Eigenschaften, in dem Knoten von anderen Knoten erben können und der gesamte Inhalt als *Eigenschaftswerte* gespeichert wird. Beachten Sie, dass JCR neben der normalen Vererbung ein Konzept von &quot;Mixin&quot;-Knoten ermöglicht, das die Modellierung der mehrfachen Vererbung ermöglicht.
 
-JCR verfügt über mehrere vordefinierte Knotentypen und Eigenschaftstypen, aber im Allgemeinen ist das Typisierungssystem flexibel. Eine der Stärken von JCR besteht darin, dass es sowohl strukturierte als auch unstrukturierte Inhalte mit gleicher Leichtigkeit speichert/verwaltet. Das heißt, JCR kann sehr strukturierte Daten aufnehmen, kann aber auch beliebige dynamische Datenstrukturen ohne Schemaeinschränkungen aufnehmen.
+JCR verfügt über mehrere vordefinierte Knotentypen und Eigenschaftstypen, aber im Allgemeinen ist das Typisierungssystem flexibel. Eine der Stärken von JCR besteht darin, strukturierte und unstrukturierte Inhalte mit gleicher Leichtigkeit zu speichern/zu verwalten. Das heißt, JCR kann sehr strukturierte Daten aufnehmen, kann aber auch beliebige dynamische Datenstrukturen ohne Schemaeinschränkungen aufnehmen.
 
 Die JavaDoc für die Java™-API von JCR lautet [here](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
@@ -163,7 +163,7 @@ Viele Startoptionen (z. B. die Nummer des aktiven Ports und ob die fragliche AE
 java -jar <quickstartfilename>.jar -help
 ```
 
-**Replikationsagenten** - Replikationsagenten sind von zentraler Bedeutung für AEM als Mechanismus zum Veröffentlichen (Aktivieren) von Inhalten von einem Autor in einer Veröffentlichungsumgebung. Inhalt aus dem Dispatcher-Cache leeren; vom Benutzer generierte Inhalte (z. B. Formulareingaben) aus der Veröffentlichungsumgebung in die Autorenumgebung zurückgeben.
+**Replikationsagenten** - Replikationsagenten sind von zentraler Bedeutung für AEM als Mechanismus zum Veröffentlichen (Aktivieren) von Inhalten von einem Autor in eine Veröffentlichungsumgebung; Löschen von Inhalten aus dem Dispatcher-Cache; Zurückgeben benutzergenerierter Inhalte (z. B. Formulareingaben) aus der Veröffentlichungsumgebung in die Autorenumgebung.
 
 **Strukturvorlage**: Eine Strukturvorlage dient zur Erstellung eines Formulars (einer Struktur), dessen Felder die gewünschte Seitenstruktur bilden. Anhand dieses Formulars können Sie ganz einfach auf dieser Struktur basierende Seiten erstellen.
 
