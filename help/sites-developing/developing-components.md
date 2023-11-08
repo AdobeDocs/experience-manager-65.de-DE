@@ -12,10 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '3447'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -228,7 +228,7 @@ Sobald Sie Ihren Ressourcentyp erstellt haben, können Sie Ihr Feld instanziiere
 
 Wenn Sie Stil und Verhalten für Ihre Komponente definieren möchten, können Sie eine dedizierte [Client-Bibliothek](/help/sites-developing/clientlibs.md) erstellen, die Ihre benutzerdefinierte CSS/LESS- und JS-Datei definiert.
 
-Damit Ihre Client-Bibliothek ausschließlich für Ihr Komponentendialogfeld geladen wird (d. h. sie wird nicht für eine andere Komponente geladen), müssen Sie die -Eigenschaft festlegen `extraClientlibs` des Dialogfelds zum Kategorienamen der von Ihnen erstellten Client-Bibliothek. Dies empfiehlt sich, wenn die Client-Bibliothek recht groß ist und/oder das Feld für dieses Dialogfeld spezifisch ist und nicht in anderen Dialogfeldern benötigt wird.
+Damit Ihre Client-Bibliothek ausschließlich für Ihr Komponentendialogfeld geladen wird (d. h. sie wird nicht für eine andere Komponente geladen), müssen Sie die -Eigenschaft festlegen `extraClientlibs` des Dialogfelds zum Kategorienamen der von Ihnen erstellten Client-Bibliothek. Dies ist ratsam, wenn Ihre Client-Bibliothek sehr groß ist und/oder Ihr Feld für dieses Dialogfeld spezifisch ist und in anderen Dialogfeldern nicht benötigt wird.
 
 Um die Client-Bibliothek für alle Dialogfelder zu laden, legen Sie die Kategorieeigenschaft Ihrer Client-Bibliothek auf `cq.authoring.dialog` fest. Dies ist der Kategoriename der Client-Bibliothek, die beim Rendern aller Dialogfelder standardmäßig enthalten ist. Dies empfiehlt sich, wenn die Client-Bibliothek klein ist und/oder Ihr Feld generisch ist und in anderen Dialogfeldern wiederverwendet werden kann.
 

@@ -11,10 +11,10 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1974'
-ht-degree: 83%
+source-wordcount: '1975'
+ht-degree: 81%
 
 ---
 
@@ -102,7 +102,7 @@ Unter [Dynamic Media – Unterstützte Rasterbildformate](/help/assets/assets-fo
 
 Im Folgenden finden Sie einige Best Practices für Rotationsset-Bilder. Im Allgemeinen gilt: Je mehr Bilder Sie in einem Rotationsset haben, desto besser ist der Bildspinnereffekt. Das Einschließen vieler Bilder in das Set erhöht jedoch auch die Zeit, die zum Laden der Bilder benötigt wird. Adobe Experience Manager empfiehlt die folgenden Richtlinien für die Aufnahme von Bildern für Rotationssets:
 
-* Verwenden Sie mindestens 8 bis 12 Bilder in einem eindimensionalen Rotationsset und 16 bis 24 Bilder in einem zweidimensionalen Rotationsset. Mindestens 8 Bilder sind erforderlich, um eine 360-Grad-Ansicht zu ermöglichen. Eindimensionale Rotationssets werden häufiger verwendet, da zweidimensionale Rotationssets sehr aufwendig zu erstellen sind.
+* Verwenden Sie mindestens 8 bis 12 Bilder in einem eindimensionalen Rotationsset und 16 bis 24 Bilder in einem zweidimensionalen Rotationsset. Mindestens 8 Bilder sind erforderlich, um 360 Grad drehen zu können. Eindimensionale Rotationssets werden häufiger verwendet, da zweidimensionale Rotationssets sehr aufwendig zu erstellen sind.
 * Verwenden Sie ein verlustfreies Format; TIFF und PNG werden empfohlen.
 * Maskieren Sie alle Bilder so, dass das Element auf einem rein weißen oder anderen kontrastreichen Hintergrund angezeigt wird. Fügen Sie optional Schatten hinzu.
 * Stellen Sie sicher, dass die Produktdetails gut beleuchtet und fokussiert sind.

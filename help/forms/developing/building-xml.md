@@ -2,16 +2,16 @@
 title: Wie kann der Service „execute script“ aus der Workbench von AEM Forms on JEE zum Erstellen von XML-Daten verwendet werden?
 description: Verwenden des Service „execute script“ aus der Workbench von AEM Forms on JEE zum Erstellen von XML-Daten
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 69%
+source-wordcount: '990'
+ht-degree: 64%
 
 ---
 
 # Verwenden des Service „execute script“ in AEM Forms on JEE Workbench zum Erstellen von XML-Daten {#using-execute-script-service-forms-jee-workbench}
 
-Viele Prozess-Management-Workflows für AEM Forms on JEE beinhalten XML. XML-Informationen können zum Beispiel in einem Prozess erstellt und an ein Flex-Programm im Arbeitsbereich von AEM Forms on JEE gesendet oder für Systemeinstellungen verwendet werden oder mittels XML können Informationen an und von Formularen übergeben werden. Es gibt viele Fälle, in denen ein Entwickler für AEM Forms on JEE XML verwalten muss. Häufig muss dazu die XML über einen AEM Forms on JEE-Prozess verwaltet werden.
+Es gibt viele XML-Dateien, die mit AEM Forms on JEE Process Management-Workflows verwendet werden, z. B.: XML-Informationen können in einem Prozess erstellt und an eine Flex-Anwendung in AEM Forms on JEE Workspace gesendet werden, die für Systemeinstellungen verwendet wird oder Informationen an und von Formularen übergeben werden. Es gibt viele Fälle, in denen ein Entwickler für AEM Forms on JEE XML verwalten muss. Häufig muss dazu die XML über einen AEM Forms on JEE-Prozess verwaltet werden.
 
 Bei einfachen XML-Einstellungen kann der Service `Set Value` verwendet werden. Es handelt sich dabei um einen Standard-Service von AEM Forms on JEE. Dieser Service legt den Wert eines oder mehrerer Datenelemente im Prozessdatenmodell fest. Für einfache bedingte Logikszenarien mit dem Namen &quot;if this, then that&quot;, kann dieser Dienst dem Zweck entsprechen.
 

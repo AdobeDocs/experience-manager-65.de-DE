@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1835'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -115,7 +115,7 @@ Dies ist das Standard-Einfügeverfahren (Strg+V) für die Komponente. Für Stand
 
 ![Symbolleiste „Rückgängig machen, Wiederholen“](do-not-localize/cq55_rte_undoredo.png)
 
-AEM speichert die jeweils letzten 50 Aktionen in der aktuellen Komponente in chronologischer Reihenfolge. Diese Aktionen können bei Bedarf rückgängig gemacht (und dann wiederholt) werden, aber nur in der Reihenfolge ihrer Durchführung.
+AEM speichert die jeweils letzten 50 Aktionen in der aktuellen Komponente in chronologischer Reihenfolge. Diese Aktionen können bei Bedarf in strikter Reihenfolge rückgängig gemacht (und dann wiederholt) werden.
 
 >[!CAUTION]
 >

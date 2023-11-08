@@ -1,26 +1,24 @@
 ---
 title: Panoramabilder
-description: Erfahren Sie mehr über das Arbeiten mit interaktiven Bildern in Dynamic Media.
-uuid: ced3e5bd-93c8-4d5f-a397-1380d4d0a5e7
+description: Erfahren Sie, wie Sie mit Panoramabildern in Dynamic Media arbeiten.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
-discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 feature: Panoramic Images,Asset Management
 role: User, Admin
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
-workflow-type: ht
-source-wordcount: '574'
-ht-degree: 100%
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+workflow-type: tm+mt
+source-wordcount: '575'
+ht-degree: 88%
 
 ---
 
 # Panoramabilder{#panoramic-images}
 
-In diesem Abschnitt wird beschrieben, wie Sie mit dem Viewer für Panoramabilder Kugelpanoramen für ein intensives 360°-Betrachtungserlebnis eines Zimmers, einer Immobilie, eines Ortes oder einer Landschaft ausgeben können.
+In diesem Abschnitt wird beschrieben, wie Sie mit dem Viewer für Panoramabilder kugelförmige Panoramabilder rendern, um interaktive 360-Grad-Anzeigeerlebnisse für einen Raum, eine Eigenschaft, einen Standort oder eine Landschaft zu ermöglichen.
 
 Informationen hierzu finden Sie unter [Verwalten von Viewer-Vorgaben](/help/assets/managing-viewer-presets.md).
 
@@ -32,7 +30,7 @@ Damit hochgeladene Assets als Kreispanoramen gelten und mit dem Viewer für Pano
 
 * Ein Seitenverhältnis von 2.
 Die Standardeinstellung für das Seitenverhältnis von 2 in CRXDE Lite können Sie hier anpassen:
-   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
+  `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
 * Mit den Keywords `equirectangular` oder `spherical` und `panorama` oder `spherical` und `panoramic` als Tags versehen. Weitere Informationen finden Sie unter [Verwenden von Tags](/help/sites-authoring/tags.md).
 
@@ -49,7 +47,7 @@ Damit der Viewer für Panoramabilder in Adobe Experience Manager ordnungsgemäß
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Setup]** > **[!UICONTROL Anwendungseinrichtung]** > **[!UICONTROL Veröffentlichungseinrichtung]** > **[!UICONTROL Image-Server]**.
 1. Wählen Sie auf der Image-Server-Veröffentlichungsseite im Dropdownmenü **[!UICONTROL Veröffentlichungskontext]** oben die Option **[!UICONTROL Image-Serving]** aus.
 
-1. Suchen Sie auf derselben Image-Server-Veröffentlichungsseite die Überschrift **[!UICONTROL Anfrage-Attribute]**.
+1. Suchen Sie auf derselben Seite &quot;Veröffentlichung zum Image-Server&quot;die Überschrift **[!UICONTROL Anforderungsattribute]**.
 1. Suchen Sie unter der Überschrift „Anfrage-Attribute“ die Option **[!UICONTROL Maximale Größe des Antwortbildes]**. Erhöhen Sie anschließend die Werte in den entsprechenden Feldern „Breite“ und „Höhe“ auf die größtmögliche Bildgröße für Panoramabilder.
 
    Bei Dynamic Media Classic liegt die Obergrenze bei 25.000.000 Pixel. Die zulässige Maximalgröße für Bilder mit einem Seitenverhältnis von 2:1 ist 7000 x 3500. In der Regel ist für Desktopbildschirme jedoch eine Größe von 4096 x 2048 Pixel ausreichend.
@@ -58,10 +56,10 @@ Damit der Viewer für Panoramabilder in Adobe Experience Manager ordnungsgemäß
    >
    >Es werden nur Bilder innerhalb der zulässigen Maximalgröße unterstützt. Anfragen zu Bildern oberhalb der Obergrenze geben einen „403“-Fehler zurück.
 
-1. Gehen Sie unter der Überschrift „Anfrage-Attribute“ wie folgt vor:
+1. Führen Sie unter der Überschrift &quot;Anfrageattribute&quot;die folgenden Schritte aus:
 
-   * Legen Sie den Anfragenverschleierungsmodus auf **[!UICONTROL Deaktiviert]** fest.
-   * Legen Sie den Anfragensperrmodus auf **[!UICONTROL Deaktiviert]** fest.
+   * Stellen Sie den Anforderungsverschleierungsmodus auf **[!UICONTROL Behinderte]**.
+   * Stellen Sie den Anfragensperrmodus auf **[!UICONTROL Behinderte]**.
 
    Diese Einstellungen sind für die Verwendung der `Panoramic Media`-WCM-Komponente in Experience Manager erforderlich.
 

@@ -11,10 +11,10 @@ docset: aem65
 role: User, Admin
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Components,Publishing
-source-git-commit: 5dcea82acdc33c5c2b9e32af412554acd2571281
-workflow-type: ht
-source-wordcount: '3262'
-ht-degree: 100%
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+workflow-type: tm+mt
+source-wordcount: '3263'
+ht-degree: 99%
 
 ---
 
@@ -310,7 +310,7 @@ Sie können die folgenden **[!UICONTROL allgemeinen]** Einstellungen bearbeiten,
 
 ### Panoramamedienkomponente {#panoramic-media-component}
 
-Die Panoramamedienkomponente ist für die Assets bestimmt, bei denen es sich um kugelförmige Panoramabilder handelt. Solche Bilder bieten ein 360°-Betrachtungserlebnis eines Raums, einer Immobile, eines Ortes oder einer Landschaft. Damit ein Bild als kugelförmiges Panoramabild gilt, muss MINDESTENS eine der beiden folgenden Eigenschaften zutreffen:
+Die Panoramamedienkomponente ist für die Assets bestimmt, bei denen es sich um kugelförmige Panoramabilder handelt. Solche Bilder bieten eine 360-Grad-Anzeige eines Raums, einer Eigenschaft, eines Standorts oder einer Landschaft. Damit ein Bild als kugelförmiges Panoramabild gilt, muss MINDESTENS eine der beiden folgenden Eigenschaften zutreffen:
 
 * Ein Seitenverhältnis von 2:1.
 * Mit den Keywords `equirectangular` oder (`spherical` + `panorama`) oder (`spherical` + `panoramic`) markiert. Weitere Informationen finden Sie unter [Verwenden von Tags](/help/sites-authoring/tags.md).

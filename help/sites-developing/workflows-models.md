@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '2451'
-ht-degree: 50%
+ht-degree: 49%
 
 ---
 
@@ -167,7 +167,7 @@ Sie können eine [Übergangs](/help/sites-developing/workflows.md#transient-work
 
 1. Öffnen Sie das Workflow-Modell für [Bearbeiten](#editinganexistingworkflow).
 1. Auswählen **Workflow-Modelleigenschaften** aus der Symbolleiste.
-1. Aktivieren Sie im Dialogfeld das Kontrollkästchen **Übergangs-Workflow** (bzw. deaktivieren Sie es, falls erforderlich):
+1. Aktivieren Sie im Dialogfeld **Übergangs-Workflow** (bzw. bei Bedarf deaktivieren):
 
    ![wf-07](assets/wf-07.png)
 
@@ -208,7 +208,7 @@ Sie können ein Workflow-Modell für [Unterstützung mehrerer Ressourcen](/help/
 1. Öffnen Sie das Workflow-Modell für [Bearbeiten](#editinganexistingworkflow).
 1. Auswählen **Workflow-Modelleigenschaften** aus der Symbolleiste.
 
-1. Aktivieren Sie im Dialogfeld das Kontrollkästchen **Unterstützung für mehrere Ressourcen** (bzw. deaktivieren Sie es, falls erforderlich):
+1. Aktivieren Sie im Dialogfeld **Unterstützung mehrerer Ressourcen** (bzw. bei Bedarf deaktivieren):
 
    ![wf-08](assets/wf-08.png)
 
@@ -416,7 +416,7 @@ Um eine ODER-Regel zu definieren, gehen Sie wie folgt vor:
 
    >[!NOTE]
    >
-   >Sie können die Reihenfolge der Verzweigungen ändern, sofern dies erforderlich ist.
+   >Sie können bei Bedarf die Reihenfolge der Verzweigungen wechseln.
 
 1. Bearbeiten Sie die Eigenschaften von **Zweig 2** der **ODER-Teilung**:
 

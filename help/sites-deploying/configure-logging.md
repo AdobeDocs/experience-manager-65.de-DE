@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
 feature: Configuring
 exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '660'
-ht-degree: 62%
+ht-degree: 59%
 
 ---
 
@@ -105,7 +105,7 @@ Das erste Paar ist ein Sonderfall, da sowohl `request.log`- als auch `access.log
 
    * Schreibt Meldungen in `request.log` oder `access.log`.
 
-Eine Anpassung ist hier ggf. möglich, obwohl die Standardkonfiguration für die meisten Installationen geeignet ist.
+Diese können bei Bedarf angepasst werden, obwohl die Standardkonfiguration für die meisten Installationen geeignet ist.
 
 Die anderen Paare folgen der Standardkonfiguration:
 

@@ -10,7 +10,7 @@ discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '3840'
 ht-degree: 35%
@@ -48,7 +48,7 @@ Verwenden Sie den Datenwörterbucheditor zum Erstellen eines Datenwörterbuchs o
 
 >[!NOTE]
 >
->Für mehrere Briefe, für die ähnliche Elemente erforderlich sind, können Sie ein gemeinsames Datenwörterbuch erstellen. Ein Wörterbuch mit großen Datenmengen mit einer großen Anzahl von Elementen kann jedoch zu Leistungsproblemen bei der Verwendung des Datenwörterbuchs und beim Laden der Elemente führen, z. B. in Briefen und Dokumentfragmenten. Wenn Leistungsprobleme auftreten, versuchen Sie, separate Datenwörterbücher für verschiedene Briefe zu erstellen.
+>Für mehrere Briefe, für die ähnliche Elemente erforderlich sind, können Sie ein gemeinsames Datenwörterbuch erstellen. Ein großes Datenwörterbuch mit einer großen Anzahl von Elementen kann jedoch zu Leistungsproblemen bei der Verwendung des Datenwörterbuchs und beim Laden der Elemente führen, z. B. in Briefen und Dokumentfragmenten. Wenn Leistungsprobleme auftreten, versuchen Sie, separate Datenwörterbücher für verschiedene Briefe zu erstellen.
 
 1. Auswählen **Forms** > **Datenwörterbücher**.
 1. Tippen Sie auf **Datenwörterbuch erstellen**.

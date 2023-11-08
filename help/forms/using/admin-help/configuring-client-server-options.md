@@ -7,7 +7,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '10221'
 ht-degree: 27%
@@ -591,7 +591,7 @@ Die folgenden Einstellungen befinden sich im Bereich &quot;Allgemeine Einstellun
 
 **SMTP-Host:** Der Host-Name des SMTP-Servers. Der SMTP-Server verwaltet die ausgehenden E-Mail-Benachrichtigungen, um eingeladene Benutzerkonten zu registrieren und zu aktivieren.
 
-Geben Sie bei Bedarf für Ihren SMTP-Host die erforderlichen Informationen in die Felder &quot;Kontoname des SMTP-Servers&quot;und &quot;Kennwort des SMTP-Servers&quot;ein, um eine Verbindung zum SMTP-Server herzustellen. Einige Unternehmen setzen diese Anforderung nicht um. Wenn Sie Informationen benötigen, wenden Sie sich an Ihren Systemadministrator.
+Geben Sie bei Bedarf vom SMTP-Host die erforderlichen Informationen in die Felder &quot;Kontoname des SMTP-Servers&quot;und &quot;Kennwort des SMTP-Serverkontos&quot;ein, um eine Verbindung zum SMTP-Server herzustellen. Einige Unternehmen setzen diese Anforderung nicht um. Wenn Sie Informationen benötigen, wenden Sie sich an Ihren Systemadministrator.
 
 **Socket-Klassenname des SMTP-Servers:** Socket-Klassenname für den SMTP-Server. Zum Beispiel javax.net.ssl.SSLSocketFactory.
 

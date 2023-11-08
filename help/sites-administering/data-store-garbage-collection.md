@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 39%
@@ -139,7 +139,7 @@ So führen Sie die Speicherbereinigung durch:
 1. Markieren Sie in der Apache Felix OSGi Management Console die **Main** Registerkarte und wählen Sie **JMX** aus dem folgenden Menü.
 1. Suchen Sie dann nach dem MBean **Repository Manager** und klicken Sie darauf (oder gehen Sie zu `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
 1. Klicken Sie auf **startDataStoreGC(boolean markOnly)**.
-1. Geben Sie falls erforderlich `true` für den Parameter `markOnly` ein:
+1. eintragen`true`&quot; für die `markOnly` Parameter, falls erforderlich:
 
    | **Option** | **Beschreibung** |
    |---|---|

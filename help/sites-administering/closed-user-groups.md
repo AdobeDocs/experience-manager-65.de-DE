@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '6816'
+source-wordcount: '6808'
 ht-degree: 44%
 
 ---
@@ -798,7 +798,7 @@ Dieser Wechsel von den restlichen JCR-Eigenschaften zu einer dedizierten Zugriff
 
 **Von Richtlinie definierter Zielknoten**
 
-Es wird erwartet, dass CUG-Richtlinien auf dem JCR-Knoten erstellt werden, der die Unterstruktur definiert, die eingeschränktem Lesezugriff unterliegen soll. Dies ist wahrscheinlich eine AEM Seite, falls die CUG voraussichtlich die gesamte Baumstruktur betrifft.
+Erstellen Sie CUG-Richtlinien auf dem JCR-Knoten, der die Unterstruktur definiert, die eingeschränktem Lesezugriff unterliegen soll. Dies ist wahrscheinlich eine AEM Seite, falls die CUG voraussichtlich die gesamte Baumstruktur betrifft.
 
 Wird die CUG-Richtlinie am Knoten „jcr:content“ unterhalb einer bestimmten Seite platziert, so wird nur der Zugriff auf den Inhalt (im engeren Sinn) einer bestimmten Seite eingeschränkt, wobei die Richtlinie keine Auswirkungen auf gleichrangige oder untergeordnete Seiten hat. Dies kann ein gültiger Anwendungsfall sein, und es ist möglich, dies mit einem Repository-Editor zu erreichen, der es ermöglicht, feinkörnigen Zugriffsinhalt anzuwenden. Sie steht jedoch im Gegensatz zur früheren Implementierung, bei der das Platzieren einer cq:cugEnabled -Eigenschaft auf dem Knoten jcr:content intern zum Seitenknoten neu zugeordnet wurde. Diese Zuordnung wird nicht mehr durchgeführt.
 
@@ -839,7 +839,7 @@ Soweit die `granite:loginPath` betrifft die Berechtigung, die zum Hinzufügen, �
 
 #### Vom Mixin-Typ definierter Zielknoten {#target-node-defined-by-mixin-type}
 
-Authentifizierungspflichten sollen am JCR-Knoten erstellt werden und die Authentifizierungspflicht für den Teilbaum definieren. Dies ist wahrscheinlich eine AEM Seite, falls die CUG voraussichtlich die gesamte Baumstruktur betrifft und die Benutzeroberfläche für die neue Implementierung dementsprechend den Mixin-Typ auth-requirement auf dem Seitenknoten hinzufügt.
+Erstellen Sie Authentifizierungsanforderungen am JCR-Knoten, der die Unterstruktur definiert, die der erzwungenen Anmeldung unterliegen soll. Dies ist wahrscheinlich eine AEM Seite, falls die CUG voraussichtlich die gesamte Baumstruktur betrifft und die Benutzeroberfläche für die neue Implementierung dementsprechend den Mixin-Typ auth-requirement auf dem Seitenknoten hinzufügt.
 
 Wenn Sie die CUG-Richtlinie nur auf den Knoten jcr:content platzieren, der sich unter einer bestimmten Seite befindet, wird der Zugriff auf den Inhalt nur eingeschränkt, jedoch keine Auswirkungen auf den Seitenknoten selbst oder auf untergeordnete Seiten.
 

@@ -7,10 +7,10 @@ role: User, Admin
 feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '3263'
-ht-degree: 94%
+source-wordcount: '3260'
+ht-degree: 93%
 
 ---
 
@@ -199,7 +199,7 @@ Adobe Asset Link bietet eine gute Unterstützung für diesen Anwendungsfall:
 * Da sich das Asset im Creative Cloud-Konto befindet, ist es auch auf etwaigen anderen Benutzergeräten verfügbar (z. B. zum Öffnen oder Bearbeiten in einer dedizierten Creative Cloud-Mobile-App). Außerdem kann es für andere Creative Cloud-Benutzer zwecks Zusammenarbeit freigegeben werden.
 * Wenn kreative Benutzer keine weiteren Änderungen vornehmen möchten, können sie diese Datei in ihrem Creative Cloud-Programm mit einem optionalen Kommentar einchecken. Das entsprechende Asset in [!DNL Experience Manager] wird versioniert und mit der neuen Binärdatei aktualisiert. [!DNL Experience Manager]-Benutzende wie Marketer oder Branchenbenutzende haben über die Zeitleisten-Benutzeroberfläche von [!DNL Experience Manager] Assets Zugriff auf wichtige Asset-Änderungen oder Meilensteine.
 
-[!DNL Experience Manager] Desktop App bietet eine Netzwerkfreigabe für in der nativen App geöffnete Assets. Standardmäßig werden alle lokalen Änderungen nach kurzer Zeit automatisch in [!DNL Experience Manager] hochgeladen. Mit einer solchen Konfiguration werden häufig gespeicherte Inhalte während der laufenden Arbeit in [!DNL Experience Manager] hochgeladen und versioniert, sodass beträchtlicher Netzwerk-Traffic und potenzielle Herausforderungen mit der Skalierbarkeit entstehen – ganz zu schweigen von den unnötigen Versionen in [!DNL Experience Manager].
+[!DNL Experience Manager] Desktop App bietet eine Netzwerkfreigabe für in der nativen App geöffnete Assets. Standardmäßig werden alle lokalen Änderungen nach kurzer Zeit automatisch in [!DNL Experience Manager] hochgeladen. Mit einer solchen Konfiguration würden häufige Speichervorgänge während der laufenden Phase in [!DNL Experience Manager] und versioniert, wodurch zahlreiche Probleme mit dem Netzwerk-Traffic und der potenziellen Skalierbarkeit entstehen - von unnötigen Versionen in [!DNL Experience Manager].
 
 Es wird empfohlen, hier eine Option in [!DNL Experience Manager] Desktop-Programm zum Deaktivieren automatisierter Aktualisierungen und zum Hochladen von Änderungen in Assets in [!DNL Experience Manager] manuell mithilfe der Aktion zum Hochladen von Änderungen in der Asset Status-Benutzeroberfläche des Programms.
 

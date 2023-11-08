@@ -5,10 +5,10 @@ contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1544'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -160,7 +160,7 @@ Sie können Marketingmaterial sofort nach dem Erstellen bearbeiten. Alternativ h
    Sie können verschiedene Filter anwenden, um die gewünschten Vorlagen zu durchsuchen. Sie können beispielsweise nach Vorlagen suchen, die auf dem Dateityp oder den Tags basieren.
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Weiter]**.
-1. Ordnen Sie die Vorlagen bei Bedarf auf dem Bildschirm **[!UICONTROL Vorschau anzeigen und neu anordnen]** neu an und zeigen Sie eine Vorschau für die ausgewählten Vorlagen für die Zusammenführung an. Klicken Sie dann in der Symbolleiste auf **[!UICONTROL Weiter]**.
+1. Im **[!UICONTROL Vorschau &amp; Neu anordnen]** , ordnen Sie bei Bedarf die Vorlagen neu und zeigen Sie sich eine Vorschau der zusammenzuführenden Vorlagen an. Klicken Sie dann in der Symbolleiste auf **[!UICONTROL Weiter]**.
 
    ![chlimage_1-126](assets/chlimage_1-331.png)
 

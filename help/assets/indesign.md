@@ -5,10 +5,10 @@ contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1589'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -66,7 +66,7 @@ Dieses Befehlsskript führt folgende Aktionen aus:
 Um [!DNL InDesign Server] für die Verwendung mit [!DNL Experience Manager Assets] zu integrieren und nach der Konfiguration des Proxys müssen Sie folgende Schritte durchführen:
 
 1. [Installieren Sie InDesign Server](#installing-the-indesign-server).
-1. Falls erforderlich, [konfigurieren Sie den Experience Manager Assets-Workflow](#configuring-the-aem-assets-workflow).
+1. Falls erforderlich, [Konfigurieren des Experience Manager Assets-Workflows](#configuring-the-aem-assets-workflow).
 Dies ist nur dann notwendig, wenn die Standardwerte für Ihre Instanz nicht geeignet sind.
 1. Konfigurieren Sie einen [Proxy Worker für InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
@@ -76,7 +76,7 @@ Um den [!DNL InDesign Server] für die Verwendung mit [!DNL Experience Manager] 
 
 1. Laden Sie den [!DNL InDesign Server] herunter und Sie installieren ihn.
 
-1. Bei Bedarf können Sie die Konfiguration Ihrer [!DNL InDesign Server]-Instanz anpassen.
+1. Bei Bedarf können Sie die Konfiguration Ihrer [!DNL InDesign Server] -Instanz.
 
 1. Starten Sie den Server über die Befehlszeile:
 

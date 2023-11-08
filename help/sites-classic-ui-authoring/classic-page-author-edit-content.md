@@ -1,18 +1,16 @@
 ---
 title: Bearbeiten des Seiteninhalts
 description: Inhalte werden mithilfe von Komponenten hinzugefügt, die per Drag-and-Drop auf die Seite gezogen werden können. Dort können sie dann bearbeitet, verschoben oder gelöscht werden.
-uuid: e7b65ceb-263c-46f2-91e3-11dec3a016fa
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1832'
-ht-degree: 92%
+source-wordcount: '1831'
+ht-degree: 91%
 
 ---
 
@@ -110,7 +108,7 @@ So erstellen Sie eine Komponente, indem Sie einen der obigen Asset-Typen ziehen:
 
    Eine für den Asset-Typ geeignete Komponente wird am erforderlichen Speicherort erstellt und enthält das ausgewählte Asset.
 
-1. [Bearbeiten](#editmovecopypastedelete) Sie bei Bedarf die Komponente.
+1. [Bearbeiten](#editmovecopypastedelete) die Komponente, falls erforderlich.
 
 ## Bearbeiten einer Komponente (Inhalt und Eigenschaften) {#editing-a-component-content-and-properties}
 
@@ -227,7 +225,7 @@ Bei umfangreicheren Bearbeitungen desselben Satzes wird ein **[Suchen und Ersetz
 
 ## Sperren einer Seite {#locking-a-page}
 
-AEM ermöglicht das Sperren einer Seite, sodass niemand außer Ihnen den Inhalt ändern kann. Dies ist hilfreich, wenn Sie eine Vielzahl von Bearbeitungen an einer bestimmten Seite vornehmen oder wenn Sie eine Seite für eine kurze Zeit einfrieren möchten.
+AEM ermöglicht das Sperren einer Seite, sodass niemand außer Ihnen den Inhalt ändern kann. Dies ist nützlich, wenn Sie zahlreiche Bearbeitungen an einer bestimmten Seite vornehmen oder wenn Sie eine Seite für eine kurze Zeit einfrieren müssen.
 
 >[!CAUTION]
 >

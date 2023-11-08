@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '2794'
-ht-degree: 67%
+ht-degree: 66%
 
 ---
 
@@ -235,7 +235,7 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
 
      `/libs/dam/content/schemaeditors/forms/contentfragment`
 
-     dieses kann bei Bedarf erweitert werden.
+     diese Option kann bei Bedarf erweitert werden.
 
    * Das entsprechende Schemaformular ist mit dem Fragmenteditor integriert.
 

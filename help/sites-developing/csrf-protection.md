@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 54%
+source-wordcount: '247'
+ht-degree: 40%
 
 ---
 
@@ -27,7 +27,7 @@ Das Framework verwendet Tokens, um sicherzustellen, dass die Client-Anfrage legi
 
 ### Abhängigkeiten {#dependencies}
 
-Jede Komponente, die sich auf die Abhängigkeit `granite.jquery` stützt, profitiert automatisch vom CSRF Protection Framework. Wenn dies für eine Ihrer Komponenten nicht der Fall ist, müssen Sie eine Abhängigkeit von `granite.csrf.standalone` deklarieren, bevor Sie das Framework verwenden können.
+Jede Komponente, die auf der `granite.jquery` Abhängigkeiten können automatisch vom CSRF Protection Framework profitieren. Ist dies nicht der Fall, müssen Sie für eine Ihrer Komponenten eine Abhängigkeit zu deklarieren von `granite.csrf.standalone` bevor Sie das Framework verwenden können.
 
 ### Replizieren des Crypto-Schlüssels {#replicating-crypto-keys}
 

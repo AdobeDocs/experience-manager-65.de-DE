@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: repo_restructuring
 feature: Upgrading
 exl-id: b4531792-06dd-4545-9dbb-57224be20dc7
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1460'
-ht-degree: 72%
+source-wordcount: '1457'
+ht-degree: 70%
 
 ---
 
@@ -52,7 +52,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
-   <td><p>Wenn alle neuen oder modifizierten ContextHub-Segmente für die Bearbeitung in der Versionsverwaltung und nicht in AEM vorgesehen sind, müssen Sie an den neuen Speicherort migriert werden:</p>
+   <td><p>Wenn neue oder geänderte ContextHub-Segmente in der Quell-Code-Verwaltung bearbeitet werden, anstatt in AEM bearbeitet zu werden, müssen sie an den neuen Speicherort migriert werden:</p>
     <ol>
      <li>Kopieren Sie alle neuen oder geänderten ContextHub-Segmente vom vorherigen Speicherort an den neuen Speicherort (/<code>apps</code>, <code>/conf/global</code> oder <code>/conf/&lt;tenant&gt;</code>).</li>
      <li>Aktualisieren Sie die Verweise auf ContextHub-Segmente am vorherigen Speicherort auf die migrierten ContextHub-Segmente an den neuen Speicherorten (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>

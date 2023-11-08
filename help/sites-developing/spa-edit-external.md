@@ -2,7 +2,7 @@
 title: Bearbeiten externer SPA in Adobe Experience Manager
 description: In diesem Dokument werden die empfohlenen Schritte zum Hochladen einer eigenständigen SPA in eine Adobe Experience Manager-Instanz, zum Hinzufügen bearbeitbarer Inhaltsabschnitte und zum Aktivieren der Bearbeitung beschrieben.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '2432'
 ht-degree: 87%
@@ -300,7 +300,7 @@ Wenn Sie den vorherigen Beispielen gefolgt sind, kann Ihre externe SPA jetzt in 
 
 ### Stammknoten-ID {#root-node-id}
 
-Standardmäßig wird davon ausgegangen, dass das React-Programm innerhalb einer `div` der Element-ID `spa-root` gerendert wird. Bei Bedarf können Sie dies anpassen.
+Standardmäßig wird davon ausgegangen, dass das React-Programm innerhalb einer `div` der Element-ID `spa-root` gerendert wird. Bei Bedarf kann diese angepasst werden.
 
 Nehmen wir beispielsweise an, wir haben eine SPA, in der das Programm innerhalb einer `div` der Element-ID `root` gerendert wird. Dies muss in drei Dateien widergespiegelt werden.
 

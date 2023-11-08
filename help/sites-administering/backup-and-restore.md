@@ -1,19 +1,15 @@
 ---
 title: Sichern und Wiederherstellen
-seo-title: Backup and Restore
 description: Erfahren Sie, wie Sie Ihre AEM Inhalte und Konfigurationen sichern und wiederherstellen können.
-seo-description: Learn how to backup and restore your AEM content.
-uuid: 446a466f-f508-4430-9e50-42cd4463760e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '2283'
-ht-degree: 43%
+source-wordcount: '2282'
+ht-degree: 41%
 
 ---
 
@@ -232,7 +228,7 @@ Die Dateien werden in vier Phasen in das Zielverzeichnis kopiert:
    * Phase A - Alles außer dem Datenspeicher (mit Verzögerung) wird kopiert.
    * Phase B - nur der Datenspeicher wird kopiert (mit Verzögerung).
 
-1. In der zweiten Kopierstufe (Fortschrittsanzeige 63 % - 65,8 % beim Erstellen einer ZIP-Datei oder 90 % - 94 %, wenn keine ZIP-Datei erstellt wird) werden nur Dateien kopiert, die seit dem Start der ersten Kopierphase im Quellverzeichnis erstellt oder geändert wurden. Abhängig von der Aktivität des Repositorys kann dies bedeuten, dass gar keine Dateien bis hin zu einer signifikanten Anzahl an Dateien enthalten sind (da die erste Dateikopierphase in der Regel sehr viel Zeit in Anspruch nimmt). Der Kopierprozess entspricht dem der ersten Phase (Phase A und Phase B mit Verzögerung).
+1. In der zweiten Kopierstufe (Fortschrittsanzeige 63 % - 65,8 % beim Erstellen einer ZIP-Datei oder 90 % - 94 %, wenn keine ZIP-Datei erstellt wird) werden nur Dateien kopiert, die seit dem Start der ersten Kopierphase im Quellverzeichnis erstellt oder geändert wurden. Abhängig von der Aktivität des Repositorys kann dies von überhaupt keiner Datei bis zu einer erheblichen Anzahl von Dateien reichen (da die erste Dateikopierphase normalerweise die meiste Zeit in Anspruch nimmt). Der Kopierprozess entspricht dem der ersten Phase (Phase A und Phase B mit Verzögerung).
 1. In der dritten Kopierphase (Fortschrittsanzeige 65,8 % bis 68,6 %, wenn eine ZIP-Datei erstellt wird, oder 94 % bis 98 %, wenn keine ZIP-Datei erstellt wird) werden nur Dateien kopiert, die seit dem Start der zweiten Kopierphase im Quellverzeichnis erstellt oder geändert wurden. Abhängig von der Aktivität des Repositorys kann dies bedeuten, dass gar keine Dateien oder nur sehr wenige Dateien zu kopieren sind (da die zweite Dateikopierphase in der Regel sehr schnell abgeschlossen ist). Der Kopierprozess entspricht dem der zweiten Phase (Phase A und Phase B, aber ohne Verzögerung).
 1. Dateikopieretappen von ein bis drei werden alle gleichzeitig ausgeführt, während das Repository ausgeführt wird. Es werden nur Dateien kopiert, die seit dem Start der dritten Kopierphase im Quellverzeichnis erstellt oder geändert wurden. Abhängig von der Aktivität des Repositorys kann dies bedeuten, dass gar keine Dateien oder nur äußerst wenige Dateien zu kopieren sind (da die zweite Dateikopierphase in der Regel sehr schnell abgeschlossen ist). Die Fortschrittsanzeige zeigt 68,6 % bis 70 % an, wenn eine ZIP-Datei erstellt wird, oder 98 % bis 100 %, wenn keine ZIP-Datei erstellt wird. Der Kopiervorgang ähnelt dem dritten Schritt.
 1. Je nach Zielgruppe:

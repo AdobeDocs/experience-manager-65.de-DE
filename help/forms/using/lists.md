@@ -8,10 +8,10 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '6911'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -96,7 +96,7 @@ Die Lösung „Correspondence Management“ unterstützt zwei Arten von dynamisc
    >
    >Die Formatierung des eingefügten Textes hat jedoch einige[ Einschränkungen](https://helpx.adobe.com/de/aem-forms/kb/cm-copy-paste-text-limitations.html).
 
-1. Fügen Sie ggf. Sonderzeichen in das Dokumentfragment ein. Beispielsweise können Sie über die Sonderzeichenpalette die folgenden Zeichen einfügen:
+1. Fügen Sie bei Bedarf Sonderzeichen in das Dokumentfragment ein. Beispielsweise können Sie über die Sonderzeichenpalette die folgenden Zeichen einfügen:
 
    * Währungssymbole wie €,￥ und £
    * Mathematische Symbole wie ∑, √, ∂ und ^
@@ -551,5 +551,5 @@ Um ein Dokumentfragment mit Eigenschaften und Inhalten schnell zu erstellen, das
 1. Wählen Sie in der Liste der Dokumentfragmente ein oder mehrere Dokumentfragmente aus. Auf der Benutzeroberfläche wird das Symbol „Kopieren“ angezeigt.
 1. Tippen Sie auf Kopieren. Auf der Benutzeroberfläche wird das Symbol „Einfügen“ angezeigt. Sie können vor dem Einfügen auch in einen Ordner wechseln. Verschiedene Ordner können Assets mit demselben Namen enthalten. Weitere Informationen zu Ordnern finden Sie unter [Ordner und Organisieren von Assets](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
 1. Tippen Sie auf „Einfügen“. Das Dialogfeld „Einfügen“ wird angezeigt. Wenn Sie die Dokumentfragmente kopieren und an derselben Stelle einfügen, weist das System den neuen Kopien automatisch Namen und Titel zu, Sie können diese jedoch ändern.
-1. Bearbeiten Sie gegebenenfalls den Titel und den Namen, mit denen Sie die Kopie des Dokumentfragmenten speichern möchten.
+1. Bearbeiten Sie bei Bedarf den Titel und den Namen, mit denen Sie die Kopie des Dokumentfragments speichern möchten.
 1. Tippen Sie auf „Einfügen“. Die Kopie des Dokumentfragments wird erstellt.

@@ -3,10 +3,10 @@ title: Erstellen und Synchronisieren von Live Copies
 description: Erfahren Sie, wie Sie Live Copies in Adobe Experience Manager erstellen und synchronisieren.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '4227'
-ht-degree: 65%
+ht-degree: 64%
 
 ---
 
@@ -412,7 +412,7 @@ Nach dem [Aussetzen](#suspending-inheritance-from-page-properties) wird die Akti
 
 ![Fortsetzen ](assets/chlimage_1-229.png)
 
-Wenn diese Option ausgewählt ist, wird das Dialogfeld angezeigt. Sie können ggf. eine Synchronisierung festlegen. Bestätigen Sie anschließend die Aktion.
+Wenn diese Option ausgewählt ist, wird das Dialogfeld angezeigt. Sie können bei Bedarf eine Synchronisierung auswählen und die Aktion bestätigen.
 
 #### Fortsetzen von Live Copy-Seiten über die Live Copy-Übersicht {#resume-a-live-copy-page-from-the-live-copy-overview}
 
@@ -522,7 +522,7 @@ Wenn Sie die Vererbung abbrechen, können Sie den Eigenschaftswert ändern. Ein 
 
 ![Eigenschaft ändern, wenn Vererbung unterbrochen wird](assets/chlimage_1-232.png)
 
-Sie können später ggf. die Vererbung für eine Eigenschaft erneut aktivieren.
+Sie können die Vererbung für eine Eigenschaft später bei Bedarf erneut aktivieren.
 
 >[!NOTE]
 >

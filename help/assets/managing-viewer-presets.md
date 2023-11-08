@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '4519'
+source-wordcount: '4520'
 ht-degree: 99%
 
 ---
@@ -114,7 +114,7 @@ Administratoren können bei der Erstellung von Viewer-Vorgaben die folgenden Ric
   </tr>
   <tr>
    <td><strong>Panoramabild</strong></td>
-   <td><p>Die Viewer für Panoramabilder und PanoramaVR rendern kugelförmige Panoramabilder, um ein 360°-Zuschauererlebnis eines Raums, einer Eigenschaft, eines Standorts oder einer Landschaft zu erzielen.</p> <p>Damit ein hochgeladenes Bild als Kugelpanorama gilt, muss es entweder eine oder beide der folgenden Eigenschaften aufweisen:</p>
+   <td><p>Die Viewer für Panoramabilder und PanoramaVR rendern kugelförmige Panoramabilder, um Benutzer in ein 360-Grad-Betrachtungserlebnis eines Raums, einer Eigenschaft, eines Standorts oder einer Landschaft einzutauchen.</p> <p>Damit ein hochgeladenes Bild als Kugelpanorama gilt, muss es entweder eine oder beide der folgenden Eigenschaften aufweisen:</p>
     <ul>
      <li>Ein Seitenverhältnis von 2:1.</li>
      <li>Mit den Keywords <code>equirectangular</code> oder <code>spherical</code> und <code>panorama</code> oder <code>spherical </code> und <code>panoramic</code> als Tags versehen. Weitere Informationen finden Sie unter <a href="/help/sites-authoring/tags.md">Verwenden von Tags</a>.</li>

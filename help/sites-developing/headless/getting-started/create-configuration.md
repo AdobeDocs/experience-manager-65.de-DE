@@ -2,10 +2,10 @@
 title: 'Schnellstartanleitung für Headless: Erstellen einer Konfiguration'
 description: Erstellen Sie als ersten Schritt eine Konfiguration, um mit Headless in AEM 6.5 zu beginnen.
 exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
-source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
-workflow-type: ht
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 

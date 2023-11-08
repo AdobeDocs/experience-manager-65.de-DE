@@ -11,10 +11,10 @@ discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 feature: Correspondence Management
 exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1657'
-ht-degree: 34%
+ht-degree: 32%
 
 ---
 
@@ -117,7 +117,7 @@ Im folgenden Beispiel erfahren Sie, wie Sie die Wiederholung verwenden, um die K
 
    ![3_repeatdialog](assets/3_repeatdialog.png)
 
-1. Wählen Sie Zeilenumbruch als Trennzeichen und tippen Sie ggf. auf „Bedingung hinzufügen“, um eine Regel zu erstellen. Sie können auch Text als Trennzeichen verwenden und die Textzeichen angeben, die als Trennzeichen verwendet werden sollen.
+1. Wählen Sie Zeilenumbruch als Trennzeichen und tippen Sie bei Bedarf auf Bedingung hinzufügen , um eine Regel zu erstellen. Sie können auch Text als Trennzeichen verwenden und die Textzeichen angeben, die als Trennzeichen verwendet werden sollen.
 
    Das Dialogfeld „Regel erstellen“ wird angezeigt. 
 
@@ -176,7 +176,7 @@ Im folgenden Beispiel erfahren Sie, wie Sie mithilfe der Wiederholung die Kredit
 
    ![3_repeat_dialog](assets/3_repeat_dialog.png)
 
-1. Falls erforderlich, fügen Sie eine Bedingung ein, um Transaktionen selektiv zu rendern, zum Beispiel um Transaktionsbeträge größer als 50 Cent zu rendern:
+1. Fügen Sie bei Bedarf eine Bedingung ein, um die Transaktionen selektiv zu rendern, z. B. um Transaktionsbeträge zu rendern, die größer als 50 Cent sind:
 
    ```javascript
    ${DD_creditcard_TransactionAmount > 0.5}

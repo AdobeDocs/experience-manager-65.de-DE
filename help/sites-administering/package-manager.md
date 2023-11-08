@@ -3,16 +3,14 @@ title: Package Manager
 description: Lernen Sie die Grundlagen der AEM-Paketverwaltung mit Package Manager kennen.
 feature: Administering
 role: Admin
-uuid: cba76a5f-5d75-4d63-a0f4-44c13fa1baf2
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
-discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '3570'
+source-wordcount: '3568'
 ht-degree: 96%
 
 ---
@@ -223,7 +221,7 @@ Es gibt viele Aktionen, die mit einem Paket durchgeführt werden können.
 
    >[!TIP]
    >
-   >Wenn Ihre Instanz viele Pakete hat, kann es eine Ordnerstruktur geben. In solchen Fällen ist es einfacher, zum erforderlichen Zielordner zu navigieren, bevor Sie das neue Paket erstellen.
+   >Wenn Ihre Instanz viele Pakete hat, könnte eine Ordnerstruktur vorhanden sein. In solchen Fällen ist es einfacher, zum erforderlichen Zielordner zu navigieren, bevor Sie das neue Paket erstellen.
 
 1. Geben Sie im Dialogfeld **Neues Paket** die folgenden Felder ein:
 

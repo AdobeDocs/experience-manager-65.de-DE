@@ -2,10 +2,10 @@
 title: Arbeiten mit Inhaltsseitenversionen
 description: Erstellen, Vergleichen und Wiederherstellen von Versionen einer Seite in Adobe Experience Manager.
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1501'
-ht-degree: 72%
+ht-degree: 71%
 
 ---
 
@@ -36,7 +36,7 @@ Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
    ![Timeline - Als Version speichern](assets/screen-shot_2019-03-05at112335.png)
 
 1. Wählen Sie **Als Version speichern**.
-1. Geben Sie eine **Beschriftung** an und ggf. einen **Kommentar** ein.
+1. Geben Sie einen **Titel** und **Kommentar** falls erforderlich.
 
    ![Version erstellen - Titel und Kommentar hinzufügen](assets/chlimage_1-42.png)
 

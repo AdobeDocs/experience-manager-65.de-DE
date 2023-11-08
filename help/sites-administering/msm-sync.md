@@ -12,10 +12,10 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '2694'
-ht-degree: 71%
+ht-degree: 70%
 
 ---
 
@@ -28,7 +28,7 @@ Führen Sie die folgenden Schritte durch, um zu steuern, wie und wann Live Copie
 
 ## Installierte und benutzerdefinierte Rollout-Konfigurationen {#installed-and-custom-rollout-configurations}
 
-In diesem Abschnitt finden Sie Informationen zu den installierten Rollout-Konfigurationen und den von ihnen verwendeten Synchronisierungsaktionen. Außerdem erfahren Sie, wie Sie bei Bedarf benutzerdefinierte Konfigurationen erstellen.
+In diesem Abschnitt finden Sie Informationen zu den installierten Rollout-Konfigurationen und den von ihnen verwendeten Synchronisierungsaktionen sowie dazu, wie Sie bei Bedarf benutzerdefinierte Konfigurationen erstellen.
 
 >[!CAUTION]
 >
@@ -386,7 +386,7 @@ Sie können die Rollout-Konfigurationen für eine Live Copy-Seite auch konfiguri
 
    ![Konfiguration](assets/chlimage_1-1.png)
 
-1. Passen Sie bei Bedarf die Markierung **Live Copy-Vererbung** an. Bei Auswahl dieser Option gilt die Life Copy-Konfiguration für alle untergeordneten Elemente.
+1. Passen Sie bei Bedarf die **Live Copy-Vererbung** Markierung. Bei Auswahl dieser Option gilt die Life Copy-Konfiguration für alle untergeordneten Elemente.
 
 1. Deaktivieren Sie die Eigenschaft **Rollout-Konfiguration aus übergeordnetem Element übernehmen** und wählen Sie dann eine oder mehrere Rollout-Konfigurationen aus der Liste aus.
 

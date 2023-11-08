@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1825'
-ht-degree: 93%
+source-wordcount: '1823'
+ht-degree: 91%
 
 ---
 
@@ -67,7 +67,7 @@ Bevor AEM jedoch den `aemserver`-Benutzer verwenden kann, muss sein Kennwort fes
 
 ## Überprüfen der Option „AEMResourceTypeFilter“ in Campaign {#resource-type-filter}
 
-`AEMResourceTypeFilter` ist eine Option in Adobe Campaign, die zum Filtern von AEM-Ressourcen verwendet wird, die in Adobe Campaign verwendet werden können. Da AEM ein großes Volumen an Inhalten enthält, dient diese Option als Filter, mit dem Adobe Campaign nur die AEM-Inhalte von Typen abrufen kann, die speziell für die Verwendung in Adobe Campaign entwickelt wurden.
+`AEMResourceTypeFilter` ist eine Option in Adobe Campaign, die zum Filtern von AEM-Ressourcen verwendet wird, die in Adobe Campaign verwendet werden können. Da AEM viele Inhalte enthält, dient diese Option als Filter, mit dem Adobe Campaign nur die AEM Inhalte von Typen abrufen kann, die speziell für die Verwendung in Adobe Campaign entwickelt wurden.
 
 Diese Option ist vorkonfiguriert. Sie müssen sie jedoch möglicherweise aktualisieren, wenn Sie die Campaign-Komponenten von AEM angepasst haben. Um sicherzustellen, dass die Option `AEMResourceTypeFilter` konfiguriert ist, führen Sie die folgenden Schritte aus.
 

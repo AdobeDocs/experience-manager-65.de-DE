@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '4834'
 ht-degree: 84%
@@ -125,7 +125,7 @@ Beim Erstellen einer bearbeitbaren Vorlage haben Sie folgende Möglichkeiten:
 * Erstellen Sie bei Bedarf [einen Ordner für die Vorlagen](#creating-a-template-folder-admin).
 * [Erstellen einer Vorlage](#creatinganewtemplateauthor), der anfangs leer ist
 
-* [Definieren Sie bei Bedarf weitere Eigenschaften](#definingtemplatepropertiesauthor) für die Vorlage.
+* [Zusätzliche Eigenschaften definieren](#definingtemplatepropertiesauthor) gegebenenfalls für die Vorlage
 * [Bearbeiten Sie die Vorlage](#editingtemplates), um Folgendes zu definieren:
 
    * [Struktur](#editingatemplatestructureauthor) – vordefinierter Inhalt, der auf Seiten, die mit der Vorlage erstellt werden, nicht geändert werden kann.

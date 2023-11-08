@@ -1,19 +1,15 @@
 ---
 title: Personalisierung
-seo-title: Personalization
 description: Erfahren Sie mehr über die Personalisierung in Adobe Experience Manager, um dem Benutzer eine maßgeschneiderte Umgebung mit dynamischen Inhalten bereitzustellen.
-seo-description: Learn about personalization in AEM.
-uuid: 5790a3e0-f0ec-4785-b915-330a10dea30c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 55%
+source-wordcount: '1696'
+ht-degree: 53%
 
 ---
 
@@ -115,7 +111,7 @@ Berücksichtigen Sie beim Einsetzen von Personalisierung Folgendes:
 
 * Die Personalisierung, die durch die Verfolgung des Benutzerverhaltens oder durch die Festlegung von Regeln auf der Grundlage des Benutzerprofils durchgeführt wird, muss akkurat und logisch sein.
 * Es gibt nichts Frustrierenderes für den Benutzer, als dass ihm Inhalte aufgrund der ungenauen Logik einer Regel aufgezwungen oder verweigert werden.
-* Daher müssen die Regeln gut durchdacht sein. Die Anforderungen des Benutzers müssen dabei immer im Vordergrund stehen. Dies kann sehr mühsam sein und darf nicht unterschätzt werden. Die Festlegung der geschäftlichen Regeln ist häufig aufwendiger als die technischen Maßnahmen bei der Implementierung der Personalisierung.
+* Daher müssen die Regeln gut durchdacht sein. Die Anforderungen des Benutzers müssen dabei immer im Vordergrund stehen. Dies kann viel Aufwand erfordern und ist nicht zu unterschätzen. Die Definition der Geschäftsregeln übersteigt oft den technischen Aufwand bei der Implementierung der Personalisierung.
 
 #### Wann ist sie einzusetzen? {#when-to-use}
 
@@ -157,7 +153,7 @@ Zur Personalisierung stehen verschiedene Komponenten mit AEM zur Verfügung. Ein
 | Formular-Textfeld | Ein Textfeld, in das Benutzer Informationen eingeben können. |
 | Meine Gadgets | Hier können Sie eine Auswahl an verfügbaren Gadgets einbeziehen. |
 | Profil – Avatar-Foto | Ermöglicht die Eingabe eines Avatar-Fotos. |
-| Profil – Genauer Name | Eingabe von Namendetails, einschließlich Elemente wie Titel, zweiter Vorname und Suffix, falls erforderlich. |
+| Profil – Genauer Name | Eingabe von Namensdetails, einschließlich Elementen wie Titel, Vorname und Suffix, falls erforderlich. |
 | Profil – Anzeigename | Anzuzeigender Name. |
 | Profil – E-Mail-Adresse | Eingabe einer E-Mail-Adresse. |
 | Profil – Geschlecht | Ermöglicht die Eingabe des Geschlechts.  |

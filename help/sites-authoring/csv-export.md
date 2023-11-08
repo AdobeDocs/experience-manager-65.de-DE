@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
 exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '189'
-ht-degree: 83%
+ht-degree: 77%
 
 ---
 
@@ -61,7 +61,7 @@ Die Erstellung **CSV-Bericht** ist beim Durchsuchen der **Sites** console (in de
 
 So erstellen Sie einen CSV-Export:
 
-1. Öffnen Sie die **Sites-Konsole** und wechseln Sie zum gewünschten Verzeichnis, falls erforderlich.
+1. Öffnen Sie die **Sites** Navigieren Sie bei Bedarf zum gewünschten Speicherort.
 1. Wählen Sie in der Symbolleiste **Erstellen** und dann **CSV-Bericht** aus, um den Assistenten zu öffnen:
 
    ![etc-03](assets/etc-03.png)

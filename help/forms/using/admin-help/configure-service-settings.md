@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '10692'
 ht-degree: 54%
@@ -612,7 +612,7 @@ Die folgenden Einstellungen sind für den Signature-Dienst verfügbar.
 
 **TSP Server Username:** Der Benutzername, falls vom Zeitstempelanbieter benötigt. Wird nur verwendet, wenn ein gültiger Wert für die URL angegeben ist. Kein Standardwert.
 
-**TSP Server Password:** Das Kennwort für den oben angegebenen Benutzernamen, wenn vom Zeitstempelanbieter angefordert. Wird nur verwendet, wenn ein gültiger Wert für die URL und den Benutzernamen angegeben ist. Kein Standardwert.
+**TSP Server Password:** Das Kennwort für den obigen Benutzernamen, falls vom Zeitstempelanbieter benötigt. Wird nur verwendet, wenn ein gültiger Wert für die URL und den Benutzernamen angegeben ist. Kein Standardwert.
 
 **Request Hash Algorithm:** Gibt den Hash-Algorithmus an, der beim Erstellen der Anforderung für den Zeitstempelanbieter zu verwenden ist. Der Standardwert ist SHA1.
 

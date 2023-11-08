@@ -10,7 +10,7 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
 exl-id: 1e0821f5-627f-4262-ba76-62303890e112
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '2205'
 ht-degree: 54%
@@ -248,7 +248,7 @@ Laden Sie die Dynamic Tag Management-Bibliotheken manuell herunter, um sie auf A
 
 ## Verknüpfen einer dynamischen Tag Management-Konfiguration mit Ihrer Site {#associating-a-dynamic-tag-management-configuration-with-your-site}
 
-Verknüpfen Sie Ihre Dynamic Tag Management-Konfiguration mit den Seiten Ihrer Website, damit AEM das erforderliche Skript zu den Seiten hinzufügt. Verknüpfen Sie die Stammseite Ihrer Site mit der Konfiguration. Alle untergeordneten Elemente dieser Seite übernehmen die Verknüpfung. Bei Bedarf können Sie die Verknüpfung auf einer untergeordneten Seite außer Kraft setzen.
+Verknüpfen Sie Ihre Dynamic Tag Management-Konfiguration mit den Seiten Ihrer Website, damit AEM das erforderliche Skript zu den Seiten hinzufügt. Verknüpfen Sie die Stammseite Ihrer Site mit der Konfiguration. Alle untergeordneten Elemente dieser Seite übernehmen die Verknüpfung. Bei Bedarf können Sie die Verknüpfung auf einer untergeordneten Seite überschreiben.
 
 Gehen Sie wie folgt vor, um eine Seite und die untergeordneten Elemente mit einer Dynamic Tag Management-Konfiguration zu verknüpfen.
 
