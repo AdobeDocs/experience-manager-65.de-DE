@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2670'
-ht-degree: 48%
+source-wordcount: '2668'
+ht-degree: 47%
 
 ---
 
@@ -131,7 +131,7 @@ Es ist auch möglich, mehrere Instanzen des Content-Repositorys zu einer JCR-Lö
 
 **Dispatcher** - Der Dispatcher ist sowohl ein Caching- als auch ein Lastenausgleichswerkzeug und bietet bestimmte Sicherheitsgarantien.
 
-**ExtJS-Widgets**: Die meisten Elemente der Benutzeroberfläche in AEM verwenden ExtJS, eine in JavaScript geschriebene Widget-Bibliothek von Drittanbietern. ExtJS bietet leistungsstarke, anpassbare Benutzeroberflächen-Widgets und ein gut konzipiertes und erweiterbares Komponentenmodell.
+**ExtJS-Widgets** - Die meisten Elemente der Benutzeroberfläche in AEM verwenden ExtJS, eine Widget-Bibliothek von Drittanbietern, die in JavaScript geschrieben wurde. ExtJS bietet leistungsstarke, anpassbare Benutzeroberflächen-Widgets und ein gut konzipiertes und erweiterbares Komponentenmodell.
 
 **JCR, Java™ Content Repository** - Die Java™ Content Repository-Spezifikation (JSR-283) bietet sowohl ein abstraktes Datenmodell als auch eine Anwendungsprogrammierschnittstelle zur Realisierung eines massiv skalierbaren NoSQL-Datenrepository, das Funktionen eines Dateisystems und einer Objektdatenbank kombiniert. Obwohl Sie JSR-283 nicht vollständig verstehen müssen, sollten Sie sich die Zeit nehmen, sich mit den grundlegenden Funktionen von JCR und dem zugrunde liegenden Datenmodell vertraut zu machen, da JCR die &quot;Alles ist Inhalt&quot;-Philosophie von AEM ermöglicht.
 

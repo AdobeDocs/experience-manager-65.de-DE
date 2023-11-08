@@ -2,10 +2,10 @@
 title: Decoration-Tag
 description: Wenn eine Komponente einer Web-Seite gerendert wird, kann ein HTML-Element generiert werden, das die gerenderte Komponente in sich einschließt. Für Entwickler bietet AEM eine klare und einfache Logik für die Steuerung von Decoration-Tags, die enthaltene Komponenten einschließen.
 exl-id: d049ebf1-7fa6-4d2c-86f9-b18e107092ea
-source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
-workflow-type: ht
-source-wordcount: '876'
-ht-degree: 100%
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+workflow-type: tm+mt
+source-wordcount: '878'
+ht-degree: 97%
 
 ---
 
@@ -17,20 +17,20 @@ Wenn eine Komponente einer Web-Seite gerendert wird, kann ein HTML-Element gener
 * Das einschließende Element wird verwendet, um HTML-Klassen anzuwenden, die Folgendes bieten:
 
    * Layoutinformationen
-   * Styling-Informationen
+   * Stilinformationen
 
-Für Entwickler bietet AEM eine klare und einfache Logik für die Steuerung von Decoration-Tags, die enthaltene Komponenten einschließen. Ob und wie das Decoration-Tag gerendert wird, hängt von zwei Faktoren ab, die auf dieser Seite genauer erläutert werden:
+Für Entwickler bietet AEM eine klare und einfache Logik für die Steuerung von Decoration-Tags, die enthaltene Komponenten einschließen. Ob und wie das Decoration-Tag gerendert wird, hängt von der Kombination zweier Faktoren ab, auf die diese Seite eingeht:
 
-* Die Komponenten selbst können ihr Decoration-Tag mit einer Gruppe von Eigenschaften konfigurieren.
-* Die Skripte, die Komponenten enthalten (HTL, JSP, Dispatcher usw.) können die Eigenschaften des Decoration-Tags mit include-Parametern definieren.
+* Die Komponente selbst kann ihr Decoration-Tag mit einer Reihe von Eigenschaften konfigurieren.
+* Die Skripte, die Komponenten enthalten (HTL, JSP, Dispatcher usw.), können die Aspekte des Decoration-Tags mit include-Parametern definieren.
 
 ## Empfehlungen {#recommendations}
 
-Es folgen einige allgemeine Empfehlungen, wann Sie ein einschließendes Element verwenden sollten, um unerwartete Probleme zu vermeiden:
+Im Folgenden finden Sie einige allgemeine Empfehlungen dazu, wann das Wrapper-Element eingeschlossen werden sollte, um unerwartete Probleme zu vermeiden:
 
-* Das einschließende Element sollte unabhängig von WCMModes (Bearbeitungs- oder Vorschaumodus), Instanzen (Autor oder Veröffentlichung) oder Umgebung (Staging oder Produktion) vorhanden bzw. nicht vorhanden sein, damit der CSS- und JavaScript-Code der Seite stets gleich funktionieren.
+* Das Wrapper-Element sollte sich in den verschiedenen WCM-Modi (Bearbeitungs- oder Vorschaumodus), Instanzen (Author oder Publish) oder Umgebungen (Staging oder Produktion) nicht unterscheiden, sodass das CSS und JavaScript der Seite in allen Fällen identisch funktionieren.
 * Das einschließende Element sollte allen bearbeitbaren Komponenten hinzugefügt werden, sodass der Seiteneditor sie korrekt initialisieren und aktualisieren kann.
-* Bei nicht bearbeitbaren Komponenten kann das einschließende Element weggelassen werden, wenn es keinen bestimmten Zweck erfüllt, um das Markup nicht unnötig zu vergrößern.
+* Bei nicht bearbeitbaren Komponenten kann das Wrapper-Element vermieden werden, wenn es keine bestimmte Funktion erfüllt, sodass das resultierende Markup nicht unnötig aufgebläht wird.
 
 ## Komponentensteuerungen {#component-controls}
 
@@ -53,11 +53,11 @@ Das Wrapper-Verhalten unterscheidet sich jedoch, abhängig davon, ob [HTL](/hel
 Im Allgemeinen lässt sich das Wrapper-Verhalten in HTL wie folgt beschreiben:
 
 * Standardmäßig wird kein Wrapper-DIV gerendert (wenn nur `data-sly-resource="foo"` ausgeführt wird).
-* Alle wcm-Modi (deaktiviert, Vorschau, Bearbeiten für Autor oder Veröffentlichung) werden identisch dargestellt.
+* Alle WCM-Modi (Deaktiviert, Vorschau, Bearbeitung in Author und Publish) werden identisch dargestellt.
 
-Das Verhalten des Wrappers kann auch vollständig kontrolliert werden.
+Das Verhalten des Wrappers kann ebenfalls vollständig gesteuert werden.
 
-* Das HTL-Skript hat die vollständige Kontrolle über das resultierende Verhalten des Wrapper-Tags.
+* Das HTL-Skript hat vollständige Kontrolle über das resultierende Verhalten des Wrapper-Tags.
 * Komponenteneigenschaften (wie `cq:noDecoration` und `cq:tagName`) können ebenfalls das Wrapper-Tag definieren.
 
 Sie können das Verhalten der Wrapper-Tags von HTL-Skripten und der zugehörigen Logik vollständig kontrollieren.
@@ -72,9 +72,9 @@ Dieser Entscheidungsbaum fasst die Logik zusammen, die das Verhalten der Wrapper
 
 #### Anwendungsfälle {#use-cases}
 
-Die folgenden drei Anwendungsfälle stellen Beispiele dafür dar, wie die Wrapper-Tags behandelt werden, und zeigen außerdem, wie einfach es ist, das gewünschte Verhalten der Wrapper-Tags zu steuern.
+Die folgenden drei Anwendungsbeispiele veranschaulichen, wie die Wrapper-Tags verarbeitet werden, und veranschaulichen, wie einfach es ist, das gewünschte Verhalten der Wrapper-Tags zu steuern.
 
-In allen Beispielen werden die folgende Inhaltsstruktur und die folgenden Komponenten angenommen:
+Bei allen nachfolgenden Beispielen wird von der folgenden Inhaltsstruktur und den folgenden Komponenten ausgegangen:
 
 ```
 /content/test/

@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '7176'
+source-wordcount: '7174'
 ht-degree: 24%
 
 ---
@@ -211,7 +211,7 @@ Schreibgeschützte Dateien werden nicht verarbeitet und im Fehlerordner gespeich
 
 Der Standardwert ist failure/%Y/%M/%D/.
 
-**Bei Fehler beibehalten**: Eingabedateien werden beibehalten, wenn der Vorgang für einen Service nicht ausgeführt werden kann. Der Standardwert lautet true.
+**Bei Fehler beibehalten:** Bewahren Sie Eingabedateien auf, wenn der Vorgang für einen Dienst nicht ausgeführt werden kann. Der Standardwert lautet true.
 
 **Doppelte Dateinamen überschreiben**: Wenn diese Option auf „True“ gesetzt ist, werden Dateien im Ergebnisordner und im Aufbewahrungsordner überschrieben. Bei Festlegung auf &quot;False&quot;werden Dateien und Ordner mit dem Suffix &quot;Numerischer Index&quot;für den Namen verwendet. Der Standardwert ist False.
 
@@ -225,7 +225,7 @@ Ein Wert von -1 Tagen bedeutet, dass der Ergebnisordner nie gelöscht wird. Der 
 
 **Literal**: Der überwachte Ordner verwendet den in das Feld eingegebenen Wert so, wie er angezeigt wird. Alle grundlegenden Java-Typen werden unterstützt. Wenn eine API beispielsweise Eingaben wie String, Long, Int oder Boolean verwendet, wird die Zeichenfolge in einen ordnungsgemäßen Typ konvertiert und der Dienst aufgerufen.
 
-**Variable**: Der eingegebene Wert ist ein Dateimuster, das vom überwachten Ordner zum Auswählen der Eingabe verwendet wird. Beispielsweise kann der Benutzer beim Kennwortverschlüsselungsdienst, bei dem das Eingabedokument eine PDF-Datei sein muss, „*.pdf“ als Dateimuster verwenden. Der überwachte Ordner nimmt alle Dateien im überwachten Ordner auf, die diesem Muster entsprechen, und ruft den Dienst für jede Datei auf. Wenn eine Variable verwendet wird, werden alle Eingabedateien in Dokumente konvertiert. Es werden nur APIs unterstützt, die Document als Eingabetyp verwenden.
+**Variable**: Der eingegebene Wert ist ein Dateimuster, das vom überwachten Ordner zum Auswählen der Eingabe verwendet wird. Wenn beispielsweise der Dienst für das verschlüsselte Kennwort vorhanden ist, bei dem das Eingabedokument eine PDF-Datei sein muss, kann der Benutzer &amp;ast;.pdf als Dateimuster verwenden. Der überwachte Ordner nimmt alle Dateien im überwachten Ordner auf, die diesem Muster entsprechen, und ruft den Dienst für jede Datei auf. Wenn eine Variable verwendet wird, werden alle Eingabedateien in Dokumente konvertiert. Es werden nur APIs unterstützt, die Document als Eingabetyp verwenden.
 
 **Zuordnungen von Ausgabeparametern**: Dient zur Konfiguration der Ausgaben des Dienstes und des Vorgangs. Die verfügbaren Einstellungen hängen davon ab, welcher Dienst den Endpunkt des überwachten Ordners verwendet.
 
@@ -271,7 +271,7 @@ Wenn das Zuordnungsmuster der Ausgabeparameter mit &quot;File.separator&quot;(de
 
 ## Über Einschränkungen {#about-throttling}
 
-Wenn &quot;Einschränken&quot;für einen Endpunkt des Typs &quot;überwachter Ordner&quot;aktiviert ist, wird die Anzahl der Aufträge für überwachte Ordner begrenzt, die zu jeder Zeit verarbeitet werden können. Die maximale Anzahl von Aufträgen wird durch den Wert für die Stapelgröße bestimmt, der auch im Endpunkt des überwachten Ordners konfigurierbar ist. Eingehende Dokumente im Eingabeordner des überwachten Ordners werden nicht abgerufen, wenn die Beschränkung für die Einschränkungen erreicht wurde. Die Dokumente bleiben auch im Eingabeordner, bis andere Aufträge für überwachte Ordner abgeschlossen und ein weiterer Abrufversuch unternommen wurde. Im Falle der synchronen Verarbeitung werden alle in einer einzigen Abfrage verarbeiteten Aufträge für die Drosselung berücksichtigt, auch wenn die Aufträge nacheinander in einem einzigen Thread verarbeitet werden.
+Wenn &quot;Einschränken&quot;für einen Endpunkt des Typs &quot;überwachter Ordner&quot;aktiviert ist, wird die Anzahl der Aufträge für überwachte Ordner begrenzt, die zu jeder Zeit verarbeitet werden können. Die maximale Anzahl von Aufträgen wird durch den Wert für die Stapelgröße bestimmt, der auch im Endpunkt des überwachten Ordners konfigurierbar ist. Eingehende Dokumente im Eingabeordner des überwachten Ordners werden nicht abgerufen, wenn die Beschränkung für die Einschränkungen erreicht wurde. Die Dokumente bleiben auch im Eingabeordner, bis andere Aufträge für überwachte Ordner abgeschlossen und ein weiterer Abrufversuch unternommen wurde. Bei synchroner Verarbeitung werden alle in einer einzigen Abfrage verarbeiteten Aufträge für die Drosselung berücksichtigt, auch wenn die Aufträge nacheinander in einem einzigen Thread verarbeitet werden.
 
 >[!NOTE]
 >
@@ -284,15 +284,15 @@ Der Watched Folder-Dienst überprüft den Eingabeordner bei jedem Wiederholungsi
 &quot;Einschränken&quot;verhindert, dass der Watched Folder-Dienst neue Aufträge aufruft, wenn die vorherigen Aufträge noch nicht abgeschlossen sind. Der Watched Folder-Dienst erkennt laufende Aufträge und verarbeitet neue Aufträge basierend auf der Batch-Größe abzüglich der laufenden Aufträge. Wenn im zweiten Aufruf beispielsweise nur drei Aufträge abgeschlossen sind und ein Auftrag noch ausgeführt wird, ruft der Watched Folder-Dienst nur drei weitere Aufträge auf.
 
 * Der Watched Folder-Dienst verlässt sich bei der Ermittlung der Anzahl der laufenden Aufträge auf die Anzahl der im Bereitstellungsordner vorhandenen Dateien. Wenn Dateien im Bereitstellungsordner nicht verarbeitet werden, ruft der Watched Folder-Dienst keine weiteren Aufträge auf. Wenn die Stapelgröße beispielsweise 4 beträgt und drei Aufträge angehalten sind, ruft der Watched Folder-Dienst in nachfolgenden Aufrufen nur einen Auftrag auf. Es gibt mehrere Szenarien, in denen Dateien unverarbeitet im Bereitstellungsordner bleiben können. Wenn Aufträge angehalten werden, kann der Administrator den Prozess auf der Verwaltungsseite des Arbeitsablaufs für Formulare beenden, sodass der Watched Folder-Dienst die Dateien aus dem Bereitstellungsordner verschiebt.
-* Wenn der Formularserver heruntergefahren wird, bevor der Watched Folder-Dienst die Aufträge aufrufen kann, kann der Administrator die Dateien aus dem Bereitstellungsordner verschieben. Weitere Informationen finden Sie unter [Fehlerquellen und Wiederherstellung](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
-* Wenn der Formularserver ausgeführt wird, der Watched Folder-Dienst jedoch nicht ausgeführt wird, wenn der Job Manager-Dienst zurückruft (wozu es kommt, wenn Dienste nicht in der richtigen Reihenfolge starten), kann der Administrator die Dateien aus dem Bereitstellungsordner verschieben. Weitere Informationen finden Sie unter [Fehlerquellen und Wiederherstellung](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+* Wenn der Forms-Server heruntergefahren wird, bevor der Watched Folder-Dienst die Aufträge aufrufen kann, kann der Administrator die Dateien aus dem Bereitstellungsordner verschieben. Weitere Informationen finden Sie unter [Fehlerquellen und Wiederherstellung](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+* Wenn der Forms-Server ausgeführt wird, der Watched Folder-Dienst jedoch nicht ausgeführt wird, wenn der Job Manager-Dienst zurückruft (wozu es kommt, wenn Dienste nicht in der richtigen Reihenfolge starten), kann der Administrator die Dateien aus dem Bereitstellungsordner verschieben. Weitere Informationen finden Sie unter [Fehlerquellen und Wiederherstellung](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 
 ## Leistung und Skalierbarkeit {#performance-and-scalability}
 
-Der Watched Folder-Dienst kann insgesamt 100 Ordner auf einem einzelnen Knoten bereitstellen. Die Leistung des überwachten Ordners hängt von der Leistung des Formularservers ab. Bei asynchronem Aufruf hängt die Leistung stärker von der Systemlast und den Aufträgen ab, die sich in der Warteschlange &quot;Job Manager&quot;befinden.
+Der Watched Folder-Dienst kann insgesamt 100 Ordner auf einem einzelnen Knoten bereitstellen. Die Leistung des Watched Folder-Dienstes hängt von der Leistung des Forms-Servers ab. Bei asynchronem Aufruf hängt die Leistung stärker von der Systemlast und den Aufträgen ab, die sich in der Warteschlange &quot;Job Manager&quot;befinden.
 
-Die Leistung des Watched Folder-Dienstes kann durch Hinzufügen von Knoten zum Cluster verbessert werden. Aufträge für überwachte Ordner werden gemäß dem Quartz Scheduler und im Falle asynchroner Anforderungen durch den Job Manager-Dienst auf die Clusterknoten verteilt. Alle Aufträge werden in der Datenbank beibehalten.
+Die Leistung des Watched Folder-Dienstes kann durch Hinzufügen von Knoten zum Cluster verbessert werden. Watched Folder-Aufträge werden durch den Quartz Scheduler auf den Clusterknoten und, falls asynchron, durch den Job Manager-Dienst verteilt. Alle Aufträge werden in der Datenbank beibehalten.
 
 Der Watched Folder-Dienst ist für die Planung, Aufhebung der Zeitplanung und Umplanung der Aufträge vom Scheduler-Dienst abhängig. Andere Dienste wie der Event Management-Dienst, der User Manager-Dienst und der Email Provider-Dienst sind verfügbar, die den Thread-Pool des Scheduler-Dienstes gemeinsam nutzen. Dies kann sich auf die Leistung des überwachten Ordners auswirken. Die Thread-Optimierung des Thread-Pools des Scheduler-Dienstes ist erforderlich, wenn alle Dienste damit beginnen, ihn zu verwenden.
 
@@ -408,7 +408,7 @@ Im Folgenden finden Sie einige Tipps und Tricks zum Konfigurieren des Endpunkts 
 
 ## Dienstspezifische Empfehlungen für überwachte Ordner {#service-specific-recommendations-for-watched-folders}
 
-Bei allen Diensten sollten Sie die Stapelgröße und das Wiederholungsintervall des überwachten Ordners so anpassen, dass die Rate, mit der der Watched Folder-Dienst neue Dateien und Ordner zur Verarbeitung aufnimmt, nicht die Rate der Aufträge überschreitet, die vom AEM forms-Server verarbeitet werden können. Die tatsächlichen Parameter, die verwendet werden sollen, variieren je nachdem, wie viele überwachte Ordner konfiguriert sind, welche Dienste überwachte Ordner verwenden und wie intensiv die Aufträge auf dem Prozessor sind.
+Bei allen Diensten sollten Sie die Stapelgröße und das Wiederholungsintervall des überwachten Ordners so anpassen, dass die Rate, mit der der Watched Folder-Dienst neue Dateien und Ordner zur Verarbeitung aufnimmt, nicht die Verarbeitungsrate für Aufträge überschreitet, die vom AEM Forms-Server verarbeitet werden können. Die tatsächlichen Parameter, die verwendet werden sollen, variieren je nachdem, wie viele überwachte Ordner konfiguriert sind, welche Dienste überwachte Ordner verwenden und wie intensiv die Aufträge auf dem Prozessor sind.
 
 ### Empfehlungen für den Generate PDF-Dienst {#generate-pdf-service-recommendations}
 

@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: be093025-b19f-4499-a7b5-aae5ab74f966
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '630'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ App-Vorlagen bieten eine einfache Möglichkeit, vorhandene, von Entwicklern erst
 Was ist eine App-Vorlage? Stellen Sie sich dies als Sammlung von Seitenvorlagen und Komponenten vor, die eine Grundlinie oder Grundlage einer App darstellen.
 Wenn Sie eine App basierend auf der Vorlage einer anderen App erstellen, erhalten Sie eine App mit einem Startpunkt, der für die App steht, aus der sie erstellt wurde.
 
-Sie müssen über eine vorhandene Vorlage für mobile Apps (oder eine installierte App, die über eine App-Vorlage verfügt) verfügen, um diese Funktion nutzen zu können.
+Sie benötigen eine vorhandene Vorlage für mobile Apps (oder eine installierte App, die über eine App-Vorlage verfügt), um diese Funktion verwenden zu können.
 
 Das neueste Beispielpaket für AEM Apps enthält eine aktualisierte Version der Geometrixx App mit einer App-Vorlage. Alternativ können Sie die [StarterKit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) , das auch eine Vorlage bereitstellt.
 

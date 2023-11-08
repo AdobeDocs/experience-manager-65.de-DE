@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2318'
-ht-degree: 40%
+source-wordcount: '2319'
+ht-degree: 39%
 
 ---
 
@@ -300,7 +300,7 @@ Gehen Sie wie folgt vor, um Sprachen hinzuzufügen oder zu entfernen.
 
    >[!NOTE]
    >
-   >Der Übersetzer speichert nur Übersetzungen für Sprachen, die tatsächlich [im Wörterbuch vorhanden](#creating-a-dictionary) sind (sich also unter dem Wörterbuchpfad befinden; zum Beispiel `/apps/myProject/i18n`).
+   >Der Übersetzer speichert nur Übersetzungen für Sprachen, die tatsächlich sind [im Wörterbuch vorhanden](#creating-a-dictionary) (d. h. unter dem Wörterbuchpfad wie `/apps/myProject/i18n`).
    >
    >Achten Sie darauf, dass diese den im Raster dargestellten Sprachen entsprechen.
 

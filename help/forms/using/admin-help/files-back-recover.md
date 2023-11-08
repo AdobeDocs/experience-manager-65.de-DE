@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '2065'
 ht-degree: 18%
@@ -25,7 +25,7 @@ Beachten Sie die folgenden Punkte bezüglich Sicherung und Wiederherstellung:
 
 ## Ordner des globalen Dokumentenspeichers {#global-document-storage-directory}
 
-Der globale Dokumentenspeicher ist ein Ordner zum Speichern dauerhaft genutzter Dateien in einem Prozess. Die Lebensdauer langlebiger Dateien soll einen oder mehrere Starts eines AEM Forms-Systems umfassen und kann Tage und sogar Jahre umfassen. Diese dauerhaft genutzten Dateien können PDF, Richtlinien und Formularvorlagen enthalten. Langlebige Dateien sind ein wichtiger Bestandteil des Gesamtstatus vieler AEM Formularbereitstellungen. Wenn einige oder alle dauerhaft genutzten Dokumente verloren gehen oder beschädigt sind, kann der Formularserver instabil werden.
+Der globale Dokumentenspeicher ist ein Ordner zum Speichern dauerhaft genutzter Dateien in einem Prozess. Die Lebensdauer langlebiger Dateien soll einen oder mehrere Starts eines AEM Forms-Systems umfassen und kann Tage und sogar Jahre umfassen. Diese dauerhaft genutzten Dateien können PDF, Richtlinien und Formularvorlagen enthalten. Langlebige Dateien sind ein wichtiger Bestandteil des Gesamtstatus vieler AEM Formularbereitstellungen. Wenn einige oder alle dauerhaft genutzten Dokumente verloren gehen oder beschädigt sind, kann der Forms-Server instabil werden.
 
 Eingabedokumente für den asynchronen Auftragsaufruf werden ebenfalls im globalen Dokumentenspeicher gespeichert und müssen zur Verarbeitung von Anforderungen verfügbar sein. Daher ist es wichtig, dass Sie die Zuverlässigkeit des Dateisystems, das als Host für den globalen Dokumentenspeicher dient, berücksichtigen und ein redundantes Array unabhängiger Festplatten (RAID) oder andere Technologien entsprechend Ihren Qualitäts- und Service-Anforderungen verwenden.
 

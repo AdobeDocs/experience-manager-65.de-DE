@@ -1,21 +1,17 @@
 ---
 title: Berechnen von Formulardaten
-seo-title: Calculating Form Data
 description: Verwenden Sie den Forms-Service, um die Werte zu berechnen, die ein Benutzer in ein Formular eingibt, und die Ergebnisse anzuzeigen. Der Forms-Service berechnet die Werte mithilfe der Java-API und der Webservice-API.
-seo-description: Use the Forms service to calculate values that a user enters into a form and display the results. Forms service calculates the values using the Java API and Web Service API.
-uuid: ccd85bc7-8ccc-44d9-9424-dfc1f603e688
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
-discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1878'
-ht-degree: 95%
+source-wordcount: '1876'
+ht-degree: 81%
 
 ---
 
@@ -25,17 +21,17 @@ ht-degree: 95%
 
 Der Forms-Service kann die Werte berechnen, die ein Benutzer in ein Formular eingibt, und die Ergebnisse anzeigen. Zur Berechnung von Formulardaten müssen Sie zwei Aufgaben ausführen. Erstellen Sie zunächst ein Formularentwurfsskript, das Formulardaten berechnet. Ein Formularentwurf unterstützt drei Arten von Skripten. Ein Skripttyp wird auf dem Client ausgeführt, ein anderer auf dem Server und der dritte sowohl auf dem Server als auch auf dem Client. Der in diesem Thema beschriebene Skripttyp wird auf dem Server ausgeführt. Server-seitige Berechnungen werden für HTML-, PDF- und Formularhandbuchtransformationen (veraltet) unterstützt.
 
-Im Rahmen des Formularentwurfsprozesses können Sie Berechnungen und Skripte verwenden, um ein besseres Benutzererlebnis zu bieten. Berechnungen und Skripte können zu den meisten Formularfeldern und -objekten hinzugefügt werden. Sie müssen ein Formularentwurfsskript erstellen, um Berechnungsvorgänge für Daten durchführen zu können, die ein Benutzer in ein interaktives Formular eingibt.
+Im Rahmen des Formularentwurfsprozesses können Sie Berechnungen und Skripten verwenden, um ein besseres Benutzererlebnis zu bieten. Berechnungen und Skripte können zu den meisten Formularfeldern und -objekten hinzugefügt werden. Sie müssen ein Formularentwurfsskript erstellen, um Berechnungsvorgänge für Daten durchführen zu können, die ein Benutzer in ein interaktives Formular eingibt.
 
 Der Benutzer gibt Werte in das Formular ein und klickt auf die Schaltfläche „Berechnen“, um die Ergebnisse anzuzeigen. Im folgenden Prozess wird ein Beispiel-Programm beschrieben, mit dem ein Benutzer Daten berechnen kann:
 
-* Der Benutzer greift auf eine HTML-Seite mit dem Namen „StartLoan.html“ zu, die als Startseite des Web-Programms fungiert. Diese Seite ruft ein Java-Servlet mit dem Namen `GetLoanForm` auf.
+* Der Benutzer greift auf eine HTML-Seite mit dem Namen StartLoan.html zu, die als Startseite der Webanwendung fungiert. Diese Seite ruft ein Java-Servlet mit dem Namen `GetLoanForm` auf.
 * Die `GetLoanForm`-Servlet rendert ein Darlehensformular. Dieses Formular enthält ein Skript, interaktive Felder, eine Berechnungsschaltfläche und eine Senden-Schaltfläche.
-* Der Benutzer gibt Werte in die Felder des Formulars ein und klickt auf die Schaltfläche „Berechnen“. Das Formular wird an das Java-Servlet `CalculateData` gesendet, wo das Skript ausgeführt wird. Das Formular wird mit den im Formular angezeigten Berechnungsergebnissen an den Benutzer zurückgesendet.
+* Der Benutzer gibt Werte in die Formularfelder ein und klickt auf die Schaltfläche Berechnen . Das Formular wird an das Java-Servlet `CalculateData` gesendet, wo das Skript ausgeführt wird. Das Formular wird mit den im Formular angezeigten Berechnungsergebnissen an den Benutzer zurückgesendet.
 * Der Benutzer gibt weitere Werte ein und lässt sie berechnen, bis ein zufriedenstellendes Ergebnis angezeigt wird. Wenn der Benutzer zufrieden ist, klickt er auf die Senden-Schaltfläche, damit das Formular verarbeitet wird. Das Formular wird an ein anderes Java-Servlet mit dem Namen `ProcessForm` gesendet, das für das Abrufen der gesendeten Daten verantwortlich ist. (Siehe [Umgang mit übermittelten Formularen](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
 
-Das folgende Diagramm zeigt den logischen Ablauf des Programms.
+Das folgende Diagramm zeigt den Logikfluss der Anwendung.
 
 ![cf_cf_finsrv_loancalcapp_v1](assets/cf_cf_finsrv_loancalcapp_v1.png)
 
@@ -139,7 +135,7 @@ So berechnen Sie die Formulardaten mithilfe der Forms API (Java):
 
 1. Projektdateien einschließen
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-forms-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-forms-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen eines Forms Client-API-Objekts
 
@@ -148,25 +144,25 @@ So berechnen Sie die Formulardaten mithilfe der Forms API (Java):
 
 1. Abrufen eines Formulars, das ein Berechnungsskript enthält
 
-   * Um Formulardaten abzurufen, die ein Berechnungsskript enthalten, erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie dessen Konstruktor verwenden und die Methode `getInputStream` des `javax.servlet.http.HttpServletResponse`-Objekts vom Konstruktor aus aufrufen.
-   * Rufen Sie die Methode `FormsServiceClient` des `processFormSubmission`-Objekts auf und übergeben Sie die folgenden Werte:
+   * Um Formulardaten abzurufen, die ein Berechnungsskript enthalten, erstellen Sie eine `com.adobe.idp.Document` -Objekt durch Verwendung seines Konstruktors und Aufrufen der `javax.servlet.http.HttpServletResponse` -Objekt `getInputStream` -Methode innerhalb des Konstruktors.
+   * Rufen Sie die `FormsServiceClient` -Objekt `processFormSubmission` -Methode verwenden und die folgenden Werte übergeben:
 
       * Das `com.adobe.idp.Document`-Objekt, das die Formulardaten enthält.
       * Ein Zeichenfolgenwert, der Umgebungsvariablen einschließlich aller relevanten HTTP-Kopfzeilen angibt. Geben Sie den zu verarbeitenden Inhaltstyp an, indem Sie einen oder mehrere Werte für die Umgebungsvariable `CONTENT_TYPE` angeben. Um beispielsweise XML- und PDF-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
       * Ein Zeichenfolgenwert, der den Wert der `HTTP_USER_AGENT`-Kopfzeile angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen speichert.
 
-     Die Methode `processFormSubmission` gibt ein `FormsResult`-Objekt zurück, das die Ergebnisse der Formularübermittlung enthält.
+     Die `processFormSubmission`-Methode gibt ein `FormsResult`-Objekt aus, das die Ergebnisse der Formularübermittlung enthält.
 
-   * Überprüfen Sie, ob der mit einem übermittelten Formular verbundene Verarbeitungsstatus `1` ist, indem Sie die Methode `getAction` des `FormsResult`-Objekts aufrufen. Wenn diese Methode den Wert `1` zurückgibt, wurde die Berechnung durchgeführt und die Daten können in den Client-Webbrowser zurückgeschrieben werden.
+   * Überprüfen Sie, ob der mit einem gesendeten Formular verknüpfte Verarbeitungsstatus `1` durch Aufrufen der `FormsResult` -Objekt `getAction` -Methode. Wenn diese Methode den Wert `1` zurückgibt, wurde die Berechnung durchgeführt und die Daten können in den Client-Webbrowser zurückgeschrieben werden.
 
 1. Schreiben Sie den Formulardaten-Stream zurück in den Client-Webbrowser
 
    * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Senden eines Formulardaten-Streams an den Client-Webbrowser verwendet wird.
-   * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie die Methode `getOutputContent` des `FormsResult`-Objekts aufrufen.
-   * Erstellen Sie ein `java.io.InputStream`-Objekt, indem Sie die Methode `getInputStream` des `com.adobe.idp.Document`-Objekts aufrufen.
-   * Erstellen Sie ein Byte-Array und füllen Sie es mit dem Formulardaten-Stream, indem Sie die Methode `read` des `InputStream`-Objekts aufrufen und das Byte-Array als Argument übergeben.
-   * Rufen Sie die Methode `write` des `javax.servlet.ServletOutputStream`-Objekts auf, um den Formulardaten-Stream an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die Methode `write`.
+   * Erstellen Sie eine `com.adobe.idp.Document` -Objekt durch Aufrufen der `FormsResult` -Objekt `getOutputContent` -Methode.
+   * Erstellen Sie eine `java.io.InputStream` -Objekt durch Aufrufen der `com.adobe.idp.Document` -Objekt `getInputStream` -Methode.
+   * Erstellen Sie ein Byte-Array und füllen Sie es mit dem Formulardatenstream, indem Sie die `InputStream` -Objekt `read` -Methode verwenden und das Byte-Array als Argument übergeben.
+   * Rufen Sie die `javax.servlet.ServletOutputStream` -Objekt `write` -Methode zum Senden des Formulardatenstreams an den Client-Webbrowser. Übergeben Sie das Byte-Array an die Methode `write`.
 
 **Siehe auch**
 
@@ -190,13 +186,13 @@ So berechnen Sie Formulardaten mithilfe der Forms API (Webservice):
 1. Abrufen eines Formulars, das ein Berechnungsskript enthält
 
    * Um Formulardaten abzurufen, die an ein Java-Servlet gesendet wurden, erstellen Sie ein `BLOB`-Objekt, indem Sie seinen Konstruktor verwenden.
-   * Erstellen Sie ein `java.io.InputStream`-Objekt mit Hilfe der Methode `getInputStream` des `javax.servlet.http.HttpServletResponse`-Objekts.
-   * Erstellen Sie ein `java.io.ByteArrayOutputStream`-Objekt, indem Sie seinen Konstruktor verwenden und das `java.io.InputStream`-Objekt übergeben.
+   * Erstellen Sie eine `java.io.InputStream` -Objekt mithilfe der `javax.servlet.http.HttpServletResponse` -Objekt `getInputStream` -Methode.
+   * Erstellen Sie ein `java.io.ByteArrayOutputStream`-Objekt, indem Sie seinen Konstruktor verwenden und die Länge des `java.io.InputStream`-Objekts übergeben.
    * Kopieren Sie den Inhalt des `java.io.InputStream`-Objekts in das `java.io.ByteArrayOutputStream`-Objekt.
-   * Erstellen Sie ein Byte-Array, indem Sie die `toByteArray`-Methode des `java.io.ByteArrayOutputStream`-Objekts aufrufen.
+   * Erstellen Sie ein Byte-Array durch Aufrufen der `java.io.ByteArrayOutputStream` -Objekt `toByteArray` -Methode.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seine `setBinaryData`-Methode aufrufen und das Byte-Array als Argument übergeben.
-   * Erstellen Sie ein Objekt `RenderOptionsSpec`, indem Sie den Konstruktor verwenden. Legen Sie den Gebietsschemawert fest, indem Sie die `setLocale`-Methode des `RenderOptionsSpec`-Objekts aufrufen und einen Zeichenfolgewert übergeben, der den Gebietsschemawert angibt.
-   * Rufen Sie die `processFormSubmission`-Methode des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
+   * Erstellen Sie ein Objekt `RenderOptionsSpec`, indem Sie den Konstruktor verwenden. Festlegen des Gebietsschemawerts durch Aufrufen der `RenderOptionsSpec` -Objekt `setLocale` -Methode verwenden und einen string -Wert übergeben, der den Gebietsschema-Wert angibt.
+   * Rufen Sie die `FormsServiceClient` -Objekt `processFormSubmission` -Methode verwenden und die folgenden Werte übergeben:
 
       * Das `BLOB`-Objekt, das die Formulardaten enthält.
       * Ein Zeichenfolgenwert, der Umgebungsvariablen angibt, die alle relevanten HTTP-Kopfzeilen enthalten. Sie können beispielsweise den folgenden Zeichenfolgenwert angeben: `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`
@@ -212,14 +208,14 @@ So berechnen Sie Formulardaten mithilfe der Forms API (Webservice):
 
      Die Methode `processFormSubmission` füllt den Parameter `FormsResultHolder` mit den Ergebnissen der Formularübermittlung. Die Methode `processFormSubmission` gibt ein `FormsResult`-Objekt zurück, das die Ergebnisse der Formularübermittlung enthält.
 
-   * Überprüfen Sie, ob der mit einem übermittelten Formular verbundene Verarbeitungsstatus `1` ist, indem Sie die Methode `getAction` des `FormsResult`-Objekts aufrufen. Wenn diese Methode den Wert `1` zurückgibt, wurde die Berechnung durchgeführt und die Daten können in den Client-Webbrowser zurückgeschrieben werden.
+   * Überprüfen Sie, ob der mit einem gesendeten Formular verknüpfte Verarbeitungsstatus `1` durch Aufrufen der `FormsResult` -Objekt `getAction` -Methode. Wenn diese Methode den Wert `1` zurückgibt, wurde die Berechnung durchgeführt und die Daten können in den Client-Webbrowser zurückgeschrieben werden.
 
 1. Schreiben Sie den Formulardaten-Stream zurück in den Client-Webbrowser
 
    * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Senden eines Formulardaten-Streams an den Client-Webbrowser verwendet wird.
-   * Erstellen Sie ein `BLOB`-Objekt, das Formulardaten enthält, indem Sie die Methode `getOutputContent` des `FormsResult`-Objekts aufrufen.
-   * Erstellen Sie ein Byte-Array und füllen Sie es auf, indem Sie die Methode `getBinaryData` des `BLOB`-Objekts aufrufen. Mit dieser Aufgabe wird dem Byte-Array der Inhalt des `FormsResult`-Objekts zugewiesen.
-   * Rufen Sie die Methode `write` des `javax.servlet.http.HttpServletResponse`-Objekts auf, um den Formulardaten-Stream an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die Methode `write`.
+   * Erstellen Sie eine `BLOB` -Objekt, das Formulardaten enthält, durch Aufrufen der `FormsResult` -Objekt `getOutputContent` -Methode.
+   * Erstellen Sie ein Byte-Array und füllen Sie es durch Aufrufen der `BLOB` -Objekt `getBinaryData` -Methode. Mit dieser Aufgabe wird dem Byte-Array der Inhalt des `FormsResult`-Objekts zugewiesen.
+   * Rufen Sie die `javax.servlet.http.HttpServletResponse` -Objekt `write` -Methode zum Senden des Formulardatenstreams an den Client-Webbrowser. Übergeben Sie das Byte-Array an die Methode `write`.
 
 **Siehe auch**
 [Aufrufen von AEM Forms mithilfe von Base64-Codierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

@@ -3,10 +3,10 @@ title: Konfigurieren Sie den Rich-Text-Editor, um barrierefrei zugängliche Web-
 description: Konfigurieren Sie den Rich-Text-Editor, um barrierefrei zugängliche Web-Seiten und Websites zu erstellen.
 contentOwner: AG
 exl-id: d2451710-5abf-4816-8052-57d8f04a228e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 84%
+source-wordcount: '933'
+ht-degree: 82%
 
 ---
 
@@ -48,7 +48,7 @@ Durch das Konfigurieren eines Plug-ins innerhalb des entsprechenden `rtePlugins`
 Neue semantische Blockformate können wie folgt zur Auswahl bereitgestellt werden:
 
 1. Legen Sie den [Konfigurationsspeicherort](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations) abhängig von Ihrem RTE fest und navigieren Sie dorthin.
-1. [Absatzauswahlfeld aktivieren](/help/sites-administering/rich-text-editor.md); von [Aktivieren des Plug-ins](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
+1. [Absatzauswahlfeld aktivieren](/help/sites-administering/rich-text-editor.md)durch [Aktivieren des Plug-ins](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
 1. [Geben Sie die Formate an, die im Absatzauswahlfeld verfügbar sein sollen](/help/sites-administering/rich-text-editor.md).
 1. Die Absatzformate sind dann für den Autor der Inhalte aus den Auswahlfeldern im RTE verfügbar. Auf sie kann wie folgt zugegriffen werden:
 
@@ -59,7 +59,7 @@ Mit Strukturelementen, die im RTE über die Absatzformatoptionen verfügbar sind
 
 ## Verwenden der Funktion „Quellenbearbeitung“ {#use-of-the-source-edit-feature}
 
-In einigen Fällen halten Inhaltsautoren es für erforderlich, den mithilfe des RTE erstellten HTML-Quell-Code zu untersuchen und anzupassen. Beispielsweise kann ein innerhalb des RTE erstellter Inhalt zusätzliches Markup erfordern, um die Einhaltung von WCAG 2.0 sicherzustellen. Dies kann mit dem [Quellbearbeitung](/help/sites-administering/rich-text-editor.md#aboutplugins) -Option des RTE. Sie können die Funktion [`sourceedit` im Plug-in `misctools` angeben](/help/sites-administering/rich-text-editor.md#aboutplugins).
+In einigen Fällen halten Inhaltsautoren es für erforderlich, den mithilfe des RTE erstellten HTML-Quell-Code zu untersuchen und anzupassen. Beispielsweise kann ein innerhalb des RTE erstellter Inhalt zusätzliches Markup erfordern, um die Einhaltung von WCAG 2.0 sicherzustellen. Dies kann mit der [Quellbearbeitung](/help/sites-administering/rich-text-editor.md#aboutplugins) -Option des RTE. Sie können die Funktion [`sourceedit` im Plug-in `misctools` angeben](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
@@ -73,7 +73,7 @@ Die folgende Vorgehensweise stellt dar, wie die Komponente **Tabelle** mit einem
 
 ### Beispiel – Hinzufügen der Beschriftung zum Dialogfeld „Tabelleneigenschaften“ {#example-adding-the-caption-to-the-table-properties-dialog}
 
-Fügen Sie im Konstruktor von `TablePropertiesDialog` ein zusätzliches Texteingabefeld hinzu, dass für die Bearbeitung der Beschriftung verwendet wird. Beachten Sie, dass `itemId` auf `caption` festgelegt sein muss (d. h. den Namen des DOM-Attributs), damit sein Inhalt automatisch verarbeitet wird.
+Fügen Sie im Konstruktor von `TablePropertiesDialog` ein zusätzliches Texteingabefeld hinzu, dass für die Bearbeitung der Beschriftung verwendet wird. Beachten Sie Folgendes: `itemId` muss auf `caption` (d. h. der Name des DOM-Attributs), um seinen Inhalt automatisch zu verarbeiten.
 
 Unter **Tabelle** müssen Sie das Attribut explizit zum/vom DOM-Element festlegen/entfernen. Der Wert wird vom Dialogfeld im `config`-Objekt weitergegeben. Beachten Sie, dass DOM-Attribute mithilfe der entsprechenden `CQ.form.rte.Common`-Methoden (`com` ist kurz für `CQ.form.rte.Common`) festgelegt/entfernt werden sollten, um die üblichen Fallstricke bei Browser-Implementierungen zu vermeiden.
 
@@ -100,7 +100,7 @@ RTE kann `strong`- und `em`-Tags anstelle von `b` und `i` verwenden. Fügen Sie 
 
 ### Schrittweise Anleitungen {#step-by-step-instructions}
 
-1. Starten Sie die CRXDE Lite. Beispiel: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
+1. Starten Sie CRXDE Lite. Beispiel: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. Kopieren Sie:
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`

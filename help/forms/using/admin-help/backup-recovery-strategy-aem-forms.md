@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 26%
@@ -61,11 +61,11 @@ Um Datenverlust zu vermeiden, müssen die AEM formularspezifischen Daten so gesi
 
 Verwenden Sie die folgenden Richtlinien, wenn Sie AEM Formulare aufgrund der folgenden Änderungen in einer anderen Umgebung wiederherstellen müssen:
 
-* Änderung der IP-Adresse, des Hostnamens oder Ports des AEM forms-Servers
+* Änderung der IP-Adresse, des Hostnamens oder Ports des AEM Forms-Servers
 * Änderung der Laufwerksbuchstaben oder des Ordnerpfads
 * Änderung an einem anderen Datenbankhost, Port oder Namen
 
-In der Regel werden solche Wiederherstellungsszenarien durch Hardwarefehler des Servers verursacht, der als Host für den Anwendungsserver, Datenbankserver oder Formularserver dient. Zusätzlich zu den AEM formularspezifischen Konfigurationen, die in diesem Abschnitt beschrieben werden, sollten Sie auch die erforderlichen Änderungen für andere Teile der AEM Forms-Bereitstellung vornehmen, z. B. Lastenausgleich und Firewalls, wenn sich der Hostname oder die IP-Adresse eines AEM forms-Servers ändert.
+In der Regel werden solche Wiederherstellungsszenarien durch Hardwarefehler des Servers verursacht, der als Host für den Anwendungsserver, Datenbankserver oder Forms-Server dient. Zusätzlich zu den AEM formularspezifischen Konfigurationen, die in diesem Abschnitt beschrieben werden, sollten Sie auch die erforderlichen Änderungen für andere Teile der AEM Forms-Bereitstellung vornehmen, z. B. Lastenausgleich und Firewalls, wenn sich der Hostname oder die IP-Adresse eines AEM Forms-Servers ändert.
 
 ### Was nicht geändert werden kann {#what-cannot-be-changed}
 
@@ -73,7 +73,7 @@ Auch wenn Sie den Datenbankserver und viele andere Parameter ändern können, k�
 
 ### Neustart nach einer Wiederherstellung {#restarting-after-a-recovery}
 
-Bevor Sie den Formularserver nach einer Wiederherstellung neu starten, gehen Sie wie folgt vor:
+Bevor Sie den Forms-Server nach einer Wiederherstellung neu starten, gehen Sie wie folgt vor:
 
 1. Starten Sie das System im Wartungsmodus.
 1. Führen Sie die folgenden Schritte aus, um sicherzustellen, dass Form Manager mit AEM Formularen im Wartungsmodus synchronisiert wird:
@@ -104,4 +104,4 @@ Verwenden Sie das `LCSetGDS`-Skript im Ordner `[*aem-forms root]*\sdk\misc\Found
 >
 >Dies ist der einzige Umstand, unter dem dieses Skript zum Ändern des Speicherorts für den Ordner des globalen Dokumentenspeichers verwendet werden sollte. Um den Speicherorts für den Ordner des globalen Dokumentenspeichers zu ändern, während AEM Forms ausgeführt wird, verwenden Sie Administration Console. (Siehe [Allgemeine AEM Forms-Einstellungen konfigurieren](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*.) *
 
-Nachdem Sie den GDS-Pfad festgelegt haben, starten Sie den Formularserver im Wartungsmodus und verwenden Sie Administration Console, um die verbleibenden Dateisystempfade für den neuen Knoten zu aktualisieren. Nachdem Sie überprüft haben, ob alle erforderlichen Konfigurationen aktualisiert wurden, starten Sie AEM Formulare neu und testen Sie sie.
+Nachdem Sie den GDS-Pfad festgelegt haben, starten Sie den Forms-Server im Wartungsmodus und verwenden Sie Administration Console, um die verbleibenden Dateisystempfade für den neuen Knoten zu aktualisieren. Nachdem Sie überprüft haben, ob alle erforderlichen Konfigurationen aktualisiert wurden, starten Sie AEM Formulare neu und testen Sie sie.

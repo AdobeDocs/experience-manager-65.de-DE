@@ -1,20 +1,18 @@
 ---
 title: Wie werden Themen für adaptive Formulare erstellt oder angepasst?
-seo-title: How to create a theme for Adaptive Forms Core Components?
 description: Erfahren Sie, wie Sie Designs für adaptive Forms-Kernkomponenten mithilfe von BEM-Spezifikationen erstellen oder anpassen.
-seo-description: Learn to create or customize themes for Adaptive Forms Core Components using BEM specifications
 keywords: Design der Kernkomponenten für adaptive Formulare erstellen, neues Design erstellen, Design anpassen, neues Design hochladen, Design in Formularen verwenden, Design löschen, Design in AEM 6.5 Formularen erstellen
 contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1973'
+source-wordcount: '1971'
 ht-degree: 11%
 
 ---
-
 
 # Erstellen oder Anpassen eines Designs für ein adaptives Formular {#introduction-to-theme}
 
@@ -62,7 +60,7 @@ Sie können [Anpassen dieser Designs, um ein Design zu erstellen](#customize-a-t
 
 ## Anpassen eines Designs {#customize-a-theme-core-components-based-adaptive-forms}
 
-Das Anpassen eines Designs bezieht sich auf den Prozess der Änderung und Personalisierung des Erscheinungsbilds eines Designs. Wenn Sie ein Design anpassen, nehmen Sie Änderungen an seinen Designelementen, Layout, Farben, Typografie und manchmal am zugrunde liegenden Code vor. Auf diese Weise können Sie ein einzigartiges und maßgeschneidertes Erscheinungsbild für Ihre Website oder Anwendung erstellen und dabei die grundlegende Struktur und Funktionalität des Designs beibehalten.
+Das Anpassen eines Designs bezieht sich auf den Prozess der Änderung und Personalisierung des Erscheinungsbilds eines Designs. Wenn Sie ein Design anpassen, ändern Sie dessen Design-Elemente, Layout, Farben, Typografie und manchmal den zugrunde liegenden Code. Auf diese Weise können Sie ein einzigartiges und maßgeschneidertes Erscheinungsbild für Ihre Website oder Anwendung erstellen und dabei die grundlegende Struktur und Funktionalität des Designs beibehalten.
 
 >[!NOTE]
 >
@@ -189,7 +187,7 @@ Sie können auch die Schriftart, Farbe, Größe und andere CSS-Eigenschaften bes
 Um ein Design in einer AEM-Instanz bereitzustellen, muss es in eine Client-Bibliothek konvertiert werden. Führen Sie die folgenden Schritte aus, um das Design in eine Client-Bibliothek zu konvertieren:
 
 1. Öffnen Sie die Eingabeaufforderung oder das Terminal-Fenster.
-1. Navigieren Sie zum Ordner `<your-theme-sources>`. Zum Beispiel: `C:\aem-forms-theme-canvas`
+1. Navigieren Sie zum Ordner `<your-theme-sources>`. Beispiel: `C:\aem-forms-theme-canvas`
 1. Führen Sie den folgenden Befehl aus:
 
    ```
@@ -305,7 +303,7 @@ Designs für adaptive Formulare werden als Teil einer Vorlage für adaptive Form
 So entfernen Sie nicht verwendete oder unerwünschte Designs:
 
 1. Melden Sie sich bei Ihrer Authoring-Instanz an.
-1. Öffnen Sie `http://[Publish Server URL]:[PORT]/crx/de/index.jsp`
+1. Öffnen Sie ein `http://[Publish Server URL]:[PORT]/crx/de/index.jsp`.
 1. Navigieren Sie zu `apps/[AEM Archetype Project Folder]/clientlibs/[yourtheme]`.
 1. Löschen Sie den Designordner und speichern Sie die Änderungen.
 
@@ -339,4 +337,3 @@ So entfernen Sie nicht verwendete oder unerwünschte Designs:
 * [Erstellen einer Vorlage für auf Kernkomponenten basierende adaptive Forms](template-editor.md)
 * [Erstellen oder Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Vorlagen für Musterdesigns und Formulardatenmodelle](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
-

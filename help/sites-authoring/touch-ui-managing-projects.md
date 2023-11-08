@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 93%
+source-wordcount: '980'
+ht-degree: 92%
 
 ---
 
@@ -151,7 +151,7 @@ Gehen Sie wie folgt vor, um ein Projekt inaktiv zu machen.
 
 Gehen Sie wie folgt vor, um ein Projekt zu löschen.
 
-1. Gehen Sie zur obersten Ebene der **Projektekonsole**.
+1. Navigieren Sie zur obersten Ebene der **Projekte** Konsole.
 1. Wählen Sie Ihr Projekt in der Konsole aus.
 1. Tippen oder klicken Sie auf **Löschen** in der Symbolleiste.
 1. AEM kann die zugehörigen Projektdaten beim Löschen des Projekts entfernen/ändern. Wählen Sie die gewünschten Optionen im Dialogfenster **Projekt löschen** aus.

@@ -1,18 +1,15 @@
 ---
 title: Stilkonstrukte für adaptive Formulare
-seo-title: Styling constructs for adaptive forms
 description: Verwenden Sie LESS-Framework, um das Erscheinungsbild adaptiver Formulare anzupassen.
-seo-description: Use LESS framework to customize appearance of adaptive forms.
-uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2363'
+source-wordcount: '2361'
 ht-degree: 93%
 
 ---
@@ -58,7 +55,7 @@ Derzeit sind LESS-Variablen nur für diese Eigenschaften der verschiedenen Eleme
 
 ## Änderung des Komponentenstils {#changing-component-style}
 
-Sie können Änderungen an Aussehen, Layout, Positionierung und Sichtbarkeit von Elementen vornehmen. Erstellen oder aktualisieren Sie dazu Ihre benutzerdefinierten CSS-Dateien und beziehen sie dabei die in diesem Artikel aufgeführten Designkonstrukte ein.
+Sie können das Erscheinungsbild, Layout, Positionierung und Sichtbarkeit von Elementen ändern. Erstellen oder aktualisieren Sie dazu Ihre benutzerdefinierten CSS-Dateien und beziehen sie dabei die in diesem Artikel aufgeführten Designkonstrukte ein.
 
 Um ein Design auf ein adaptives Formular anzuwenden, öffnen Sie das adaptive Formular zum Bearbeiten, öffnen Sie den Container mit den Eigenschaften des adaptiven Formulars und geben Sie im Basisregister den Pfad der benutzerdefinierten CSS-Datei ein. Standard-Designkonstrukte des adaptiven Formulars und mit den in der benutzerdefinierten CSS-Datei aufgeführten Konstrukten überschriebene Konstrukte.
 

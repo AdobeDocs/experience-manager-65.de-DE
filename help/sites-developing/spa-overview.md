@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1651'
-ht-degree: 91%
+ht-degree: 90%
 
 ---
 
@@ -177,7 +177,7 @@ Zusätzliche benutzerdefinierte Selektoren können als Teil einer für das AEM S
 
 Wenn Sie den Editor einer Textkomponente verwenden möchten, die in der SPA erstellt wurde, ist eine zusätzliche Konfiguration erforderlich.
 
-1. Legen Sie ein Attribut (das beliebig sein kann) für das Container-Wrapper-Element fest, das die Text-HTML enthält. Im Falle des WKND-Journal-Beispielinhalts ist dies ein `<div>`-Element und der verwendete Selektor ist `data-rte-editelement`.
+1. Legen Sie ein Attribut (das beliebig sein kann) für das Container-Wrapper-Element fest, das die Text-HTML enthält. Wenn der WKND-Journal-Beispielinhalt vorhanden ist, handelt es sich um einen `<div>` -Element und der verwendete Selektor `data-rte-editelement`.
 1. Legen Sie die `editElementQuery`-Konfiguration für die entsprechende `cq:InplaceEditingConfig` der AEM-Textkomponente fest, die auf diesen Selektor verweist, z. B. `data-rte-editelement`. Dadurch weiß der Editor, welches HTML-Element den HTML-Text umschließt.
 
 Ein Beispiel dafür finden Sie im [WKND-Journal-Beispielinhalt](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files).

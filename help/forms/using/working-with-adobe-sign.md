@@ -11,10 +11,10 @@ discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3935'
-ht-degree: 98%
+source-wordcount: '3936'
+ht-degree: 97%
 
 ---
 
@@ -201,7 +201,7 @@ Sie können für ein adaptives Formular eine einzelne oder mehrere Unterzeichnun
 
    * **[!UICONTROL Wird das Formular von derselben Person ausgefüllt und signiert?]:** Wählen Sie **Ja**, wenn die Person, die das Formular ausfüllt, auch der erste Unterzeichner ist. Wenn für die Option **Nein** eingestellt ist, können Sie die Komponente für den Signaturschritt nicht im adaptiven Formular verwenden. Wenn im Formular eine Komponente „Unterschriftsschritt“ enthalten ist, wird automatisch „Ja“ für das Feld festgelegt.
 
-   * **[!UICONTROL E-Mail-Adresse des Unterzeichners]:** Geben Sie die E-Mail-Adresse des Unterzeichners an. Der Unterzeichner erhält die zu unterschreibenden Dokumente/das Formular unter der angegebenen E-Mail-Adresse. Sie können eine E-Mail-Adresse verwenden, die in einem Formularfeld im AEM-Benutzerprofil der angemeldeten Person angegeben ist, oder manuell eine E-Mail-Adresse eingeben. Dieser Schritt ist obligatorisch. Stellen Sie sicher, dass die E-Mail-Adresse des ersten Signierers oder des einzigen Signierers (im Falle eines einzigen Signierers) nicht mit dem [!DNL Adobe Sign]-Konto identisch ist, das zur Konfiguration der AEM-Cloud-Services verwendet wird.
+   * **[!UICONTROL E-Mail-Adresse des Unterzeichners]:** Geben Sie die E-Mail-Adresse des Unterzeichners an. Der Unterzeichner erhält die zu unterschreibenden Dokumente/das Formular unter der angegebenen E-Mail-Adresse. Sie können eine E-Mail-Adresse verwenden, die in einem Formularfeld im AEM-Benutzerprofil der angemeldeten Person angegeben ist, oder manuell eine E-Mail-Adresse eingeben. Dieser Schritt ist obligatorisch. Stellen Sie sicher, dass die E-Mail-Adresse des ersten Unterzeichners oder des einzigen Unterzeichners (wenn es einen einzelnen Unterzeichner gibt) nicht mit [!DNL Adobe Sign] Konto, das zum Konfigurieren AEM Cloud Services verwendet wird.
 
    * **[!UICONTROL Authentifizierungsmethode für Unterzeichner]:** Geben Sie die Methode zum Authentifizieren einer Person vor dem Öffnen eines Formulars zum Signieren an. Sie können zwischen Authentifizierung per Telefon, Wissensdatenbank und Social Media-Profil wählen. Für Adobe Acrobat Sign Solutions für Behörden stehen nur Telefon- und wissensbasierte Authentifizierungsoptionen zur Verfügung.
 
@@ -355,7 +355,7 @@ Wenn der [!DNL Adobe Sign]-Service für ein adaptives Formular konfiguriert ist,
 * Stellen Sie sicher, dass das API-Programm auf dem [!DNL Adobe Sign]-Server, der zum Konfigurieren des [!DNL Adobe Sign] Cloud-Service verwendet wird, über die erforderlichen Berechtigungen verfügt.
 * Wenn Sie mehrere [!DNL Adobe Sign]-Cloud-Services verwenden, lassen Sie die **[!UICONTROL oAuth-URL]** aller Services auf denselben **[!UICONTROL Adobe Sign-Shard]** verweisen.
 
-* Verwenden Sie separate E-Mail-Adressen, um das [!DNL Adobe Sign]-Konto und das Konto für den ersten und einen einzelnen Unterzeichner zu konfigurieren. Die E-Mail-Adresse des ersten bzw. einzigen Unterzeichners (sofern es nur einen einzelnen Unterzeichner gibt) darf nicht mit dem [!DNL Adobe Sign]-Konto identisch sein, das zum Konfigurieren von AEM Cloud-Services verwendet wird.
+* Verwenden Sie separate E-Mail-Adressen, um das [!DNL Adobe Sign]-Konto und das Konto für den ersten und einen einzelnen Unterzeichner zu konfigurieren. Die E-Mail-Adresse des ersten Unterzeichners oder des einzigen Unterzeichners (wenn es den einzelnen Unterzeichner gibt) kann nicht mit [!DNL Adobe Sign] Konto, das zum Konfigurieren AEM Cloud Services verwendet wird.
 
 ### AEM [!DNL Forms]-Workflow, der für ein [!DNL Adobe Sign]-aktiviertes adaptives Formular konfiguriert wurde, wird nicht gestartet {#adobe-sign-aem-form-workflow-failures}
 

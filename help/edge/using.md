@@ -2,9 +2,9 @@
 title: Verwenden von Edge Delivery Services
 description: Verwenden von Edge Delivery Services (EDS)
 exl-id: 6c9178b0-c8f3-4fc7-8614-8e71ffc2f0b8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '608'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ Mit der Edge-Bereitstellung ist das Authoring einfach, schnell und flexibel. Sie
 * Dokumentenbasiertes Authoring (z. B. Microsoft Word- oder Google-Dokumente) - [Weitere Informationen finden Sie unter diesem Link .](https://www.hlx.live/docs/authoring).
 * Seiten-Editor/Universal Editor - Wenden Sie sich an Ihren Adobe Sales-Support-Mitarbeiter.
 
-Beim dokumentbasierten Authoring können Sie mit verschiedenen Quellen wie Microsoft Word- und Google-Dokumenten arbeiten. Dokumente aus diesen Quellen werden zu Seiten auf Ihrer Website. Überschriften, Listen, Bilder, Schriftelemente und Videos können von der ursprünglichen Quelle auf Ihre Website übertragen werden. Sie können Metadaten für SEO-Zwecke hinzufügen oder Blöcke verwenden, um mit strukturierten Inhalten zu arbeiten und Funktionen hinzuzufügen.
+Wenn es document-basiertes Authoring gibt, können Sie mit einer Vielzahl von Quellen wie Microsoft Word- und Google-Dokumenten arbeiten. Dokumente aus diesen Quellen werden zu Seiten auf Ihrer Website. Überschriften, Listen, Bilder, Schriftelemente und Videos können von der ursprünglichen Quelle auf Ihre Website übertragen werden. Sie können Metadaten für SEO-Zwecke hinzufügen oder Blöcke verwenden, um mit strukturierten Inhalten zu arbeiten und Funktionen hinzuzufügen.
 
 ## Veröffentlichung {#publishing-edge}
 

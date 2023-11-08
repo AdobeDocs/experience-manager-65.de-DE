@@ -2,10 +2,10 @@
 title: Veröffentlichen von Inhaltsseiten
 description: Erfahren Sie, wie Sie Inhaltsseiten in Adobe Experience Manager 6.5 veröffentlichen.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 93%
+source-wordcount: '1662'
+ht-degree: 91%
 
 ---
 
@@ -76,7 +76,7 @@ Wenn Sie eine Seite bearbeiten, kann sie direkt im Editor veröffentlicht werden
 
 >[!NOTE]
 >
->Im Editor kann nur eine teilweise Veröffentlichung vorgenommen werden, d. h. nur die ausgewählten und keine untergeordneten Seiten werden veröffentlicht.
+>Die Veröffentlichung im Editor ist eine flache Veröffentlichung, d. h. nur die ausgewählten Seiten werden veröffentlicht und keine untergeordneten Seiten.
 
 >[!NOTE]
 >
@@ -107,7 +107,7 @@ So veröffentlichen Sie eine Seite mit der Funktion „Quick Publish“:
 
 >[!NOTE]
 >
->Die Option „Quick Publish“ ermöglicht nur die teilweise Veröffentlichung, d. h. nur die ausgewählten und keine untergeordneten Seiten werden veröffentlicht.
+>Die Option „Schnell veröffentlichen“ ermöglicht nur die teilweise Veröffentlichung, d. h. nur die ausgewählten Seiten werden veröffentlicht, aber keine untergeordneten Seiten.
 
 #### Veröffentlichung verwalten {#manage-publication}
 

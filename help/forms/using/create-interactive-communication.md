@@ -1,19 +1,15 @@
 ---
 title: Erstellen einer interaktiven Kommunikation
-seo-title: Create an Interactive Communication
 description: Erstellen Sie eine interaktive Kommunikation mit dem Editor für interaktive Kommunikation. Verwenden Sie Drag & Drop-Funktionen, um die interaktive Kommunikation zu erstellen und Druck- und Webausgaben für verschiedene Gerätetypen in der Vorschau anzuzeigen.
-seo-description: Create an Interactive Communication using the Interactive Communication editor. Use drag-and-drop functionality to build the Interactive Communication, and preview both print and web outputs on different device types.
-uuid: d524a3de-00b4-444f-b3c7-be443fa24ec8
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '6168'
-ht-degree: 89%
+source-wordcount: '6163'
+ht-degree: 88%
 
 ---
 
@@ -141,7 +137,7 @@ Die Authoring-Oberfläche ermöglicht es Ihnen, in einer interaktiven Kommunikat
 
 Wenn Sie den Mauszeiger über diese Elemente bewegen, wird außerdem eine QuickInfo mit der Meldung „Feld“ (Ungebunden) oder „Variable“ (Ungebunden) angezeigt.
 
-Eine in einem Dokumentfragment verwendete ungebundene Variable wird in der Authoring-Oberfläche manchmal nicht angezeigt. Dies kann wegen einer Inline-Textregel in einem Dokumentfragment oder im Fall eines Bedingungsfragments geschehen. In solchen Fällen wird eine in Blau hervorgehobene QuickInfo als Teil des Dokumentfragments angezeigt. Die QuickInfo zeigt die Anzahl der ungebundenen Variablen an, die in einem Dokumentfragment verwendet werden.
+Eine in einem Dokumentfragment verwendete ungebundene Variable wird in der Authoring-Oberfläche manchmal nicht angezeigt. Dies kann durch eine Inline-Textregel in einem Dokumentfragment oder durch ein Bedingungsfragment geschehen. In solchen Fällen wird eine in Blau hervorgehobene QuickInfo als Teil des Dokumentfragments angezeigt. Die QuickInfo zeigt die Anzahl der ungebundenen Variablen an, die in einem Dokumentfragment verwendet werden.
 
 ![Ungebundene Variable](assets/df_unbound_variable_new.png)
 
@@ -562,7 +558,7 @@ Tippen Sie auf **[!UICONTROL Ja]**.
 
 ### Synchronisieren {#synchronize-1}
 
-Wenn Sie „Als übergeordnetes Element für Web-Kanal drucken“ verwenden und Änderungen am Druckkanal vornehmen, können Sie auf Inhalte synchronisieren, um die neu vorgenommenen Änderungen an den Web-Kanal zu übertragen.
+Wenn Sie Druck als Master für Webkanal verwenden und den Druckkanal ändern, können Sie Inhalte synchronisieren, um die neu vorgenommenen Änderungen an den Webkanal zu übertragen.
 
 1. Um den Web-Kanal mit dem Druckkanal zu synchronisieren, wechseln Sie zum WebKanal und tippen Sie auf das Symbol „Weitere Optionen“.
 

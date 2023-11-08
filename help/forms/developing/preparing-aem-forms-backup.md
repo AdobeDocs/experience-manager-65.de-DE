@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 role: Developer
 exl-id: aeab003d-ba64-4760-9c56-44638501e9ff
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '2519'
-ht-degree: 95%
+ht-degree: 82%
 
 ---
 
@@ -24,15 +24,15 @@ ht-degree: 95%
 
 ## Informationen zum Sicherungs- und Wiederherstellungs-Service {#about-the-backup-and-restore-service}
 
-Mit dem Sicherungs- und Wiederherstellungs-Service können Sie AEM Forms in den *Sicherungsmodus* versetzen, wodurch Hot-Backups durchgeführt werden können. Der Sicherungs- und Wiederherstellungs-Service führt keine Sicherung von AEM Forms durch und stellt das System auch nicht wieder her. Stattdessen versetzt er den Server in einen Zustand, der konsistente und zuverlässige Sicherungen ermöglicht, während der Server weiterhin ausgeführt wird. Sie sind für die Aktionen zum Sichern des globalen Dokumentenspeichers (GDS) und der mit dem Formularserver verbundenen Datenbank verantwortlich. Der globale Dokumentenspeicher ist ein Ordner zum Speichern von Dateien, die in einem langlebigen Prozess genutzt werden.
+Mit dem Sicherungs- und Wiederherstellungs-Service können Sie AEM Forms in den *Sicherungsmodus* versetzen, wodurch Hot-Backups durchgeführt werden können. Der Sicherungs- und Wiederherstellungs-Service führt keine Sicherung von AEM Forms durch und stellt das System auch nicht wieder her. Stattdessen versetzt er den Server in einen Zustand, der konsistente und zuverlässige Sicherungen ermöglicht, während der Server weiterhin ausgeführt wird. Sie sind für die Aktionen zum Sichern des globalen Dokumentenspeichers (GDS) und der mit dem Forms-Server verbundenen Datenbank verantwortlich. Der globale Dokumentenspeicher ist ein Ordner zum Speichern von Dateien, die in einem langlebigen Prozess genutzt werden.
 
-Der Sicherungsmodus ist ein Zustand, in den der Server versetzt wird, damit Dateien im globalen Dokumentenspeicher während eines Sicherungsverfahrens nicht bereinigt werden. Stattdessen werden Unterverzeichnisse im Ordner des globalen Dokumentenspeichers erstellt, um einen Datensatz der Dateien zu speichern, die nach Beendigung des Speichersicherungsmodus bereinigt werden sollen. Eine Datei soll Systemneustarts überdauern und kann Tage oder sogar Jahre umfassen. Diese Dateien sind ein wichtiger Bestandteil des Gesamtzustands des Formularservers und können PDF-Dateien, Richtlinien oder Formularvorlagen enthalten. Wenn eine dieser Dateien verloren geht oder beschädigt wird, können die Prozesse auf dem Formularserver instabil werden und Daten gehen verloren.
+Der Sicherungsmodus ist ein Zustand, in den der Server versetzt wird, damit Dateien im globalen Dokumentenspeicher während eines Sicherungsverfahrens nicht bereinigt werden. Stattdessen werden Unterverzeichnisse im Ordner des globalen Dokumentenspeichers erstellt, um einen Datensatz der Dateien zu speichern, die nach Beendigung des Speichersicherungsmodus bereinigt werden sollen. Eine Datei soll Systemneustarts überdauern und kann Tage oder sogar Jahre umfassen. Diese Dateien sind ein wichtiger Bestandteil des Gesamtstatus des Forms-Servers und können PDF-Dateien, Richtlinien oder Formularvorlagen enthalten. Wenn eine dieser Dateien verloren geht oder beschädigt wird, können die Prozesse auf dem Forms-Server instabil werden und Daten gehen verloren.
 
 Sie können Snapshot-Sicherungen durchführen, bei denen Sie in der Regel über einen bestimmten Zeitraum in den Sicherungsmodus wechseln und diesen beenden, nachdem Sie die Sicherungsaktivitäten abgeschlossen haben. Der Sicherungsmodus muss deaktiviert werden, damit Dateien aus dem globalen Dokumentenspeicher gelöscht werden können, sodass dieser nicht unnötig groß wird. Sie können den Sicherungsmodus entweder explizit beenden oder auf den Ablauf einer Sicherungsmodussitzung warten.
 
 Sie können Ihren Server auch im permanenten Sicherungsmodus belassen, was typisch für Sicherungsstrategien für kontinuierliche Sicherungen oder eine kontinuierliche Systemabdeckung ist. Der kontinuierliche Sicherungsmodus gibt an, dass das System stets im Sicherungsmodus ist, wobei eine neue Sicherungsmodussitzung ausgelöst wird, sobald die vorherige Sitzung freigegeben wurde. Im permanenten Sicherungsmodus wird eine Datei nach zwei Sicherungsmodussitzungen bereinigt und nicht mehr referenziert.
 
-Sie können den Sicherungs- und Wiederherstellungs-Service verwenden, um bestehende oder neue Anwendungen hinzuzufügen, die Sie erstellen, um Sicherungen des GDS oder der mit dem Formularserver verbundenen Datenbank durchzuführen.
+Sie können den Sicherungs- und Wiederherstellungsdienst verwenden, um bestehende Anwendungen oder neue Anwendungen hinzuzufügen, die Sie erstellen, um Sicherungen des globalen Dokumentenspeichers oder der mit dem Forms-Server verbundenen Datenbank durchzuführen.
 
 >[!NOTE]
 >
@@ -49,17 +49,17 @@ Sie können folgende Aufgaben mit dem Sicherungs- und Wiederherstellungs-Service
 
 >[!NOTE]
 >
->Weitere Informationen zum Sicherungs- und Wiederherstellungs-Service finden Sie in der [Services-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen über den Service „Backup und Wiederherstellung“ finden Sie unter [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-## Aktivieren des Sicherungsmodus auf dem Formularserver {#entering-backup-mode-on-the-forms-server}
+## Aufrufen des Sicherungsmodus auf dem Forms-Server {#entering-backup-mode-on-the-forms-server}
 
-Sie aktivieren den Sicherungsmodus, um Hot-Backups eines Formularservers zu ermöglichen. Wenn Sie in den Sicherungsmodus wechseln, geben Sie die folgenden Informationen basierend auf den Sicherungsverfahren Ihres Unternehmens an:
+Sie wechseln in den Sicherungsmodus, um Hot-Backups eines Forms-Servers zu ermöglichen. Wenn Sie in den Sicherungsmodus wechseln, geben Sie die folgenden Informationen basierend auf den Sicherungsverfahren Ihres Unternehmens an:
 
 * Eine eindeutige Beschriftung zur Identifizierung der Sicherungsmodussitzung, die für Ihre Sicherungsprozesse nützlich sein kann.
 * Der Zeitpunkt, zu dem das Sicherungsverfahren abgeschlossen sein soll.
 * Ein Flag, das angibt, ob der permanente Sicherungsmodus ausgeführt werden soll. Dies ist nur nützlich, wenn Sie fortlaufende Sicherungen durchführen.
 
-Bevor Sie Anwendungen schreiben, um in den Sicherungsmodus zu wechseln, sollten Sie die Sicherungsverfahren verstehen, die nach dem Versetzen des Formularservers in den Sicherungsmodus angewendet werden. Weitere Informationen dazu, was bei der Durchführung von Backups für AEM Forms zu beachten ist, finden Sie unter [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_63_de).
+Bevor Sie Anwendungen schreiben, um in den Sicherungsmodus zu wechseln, sollten Sie die Sicherungsverfahren verstehen, die nach dem Versetzen des Forms-Servers in den Sicherungsmodus angewendet werden. Weitere Informationen dazu, was bei der Durchführung von Backups für AEM Forms zu beachten ist, finden Sie unter [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_63_de).
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ Um den Backup-Modus programmgesteuert zu deaktivieren, erstellen Sie ein BackupS
 
 **Legen Sie eine eindeutige Beschriftung fest, bestimmen Sie die Zeitdauer für die Durchführung des Backups und entscheiden Sie, ob der kontinuierliche Backup-Modus ausgeführt werden soll.**
 
-Bevor Sie in den Backup-Modus wechseln, sollten Sie sich für eine eindeutige Beschriftung entscheiden, die Zeitdauer festlegen, die Sie für die Durchführung des Backups zuweisen möchten, und entscheiden, ob der Formular-Server im Backup-Modus verbleiben soll. Diese wichtigen Überlegungen sollten unbedingt in die von Ihrem Unternehmen eingerichteten Backup-Verfahren integriert werden. (Siehe [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_63_de).)
+Bevor Sie in den Sicherungsmodus wechseln, sollten Sie sich für eine eindeutige Beschriftung entscheiden, die Zeitdauer festlegen, die Sie für die Durchführung der Sicherung zuweisen möchten, und entscheiden, ob der Forms-Server im Sicherungsmodus verbleiben soll. Diese wichtigen Überlegungen sollten unbedingt in die von Ihrem Unternehmen eingerichteten Backup-Verfahren integriert werden. (Siehe [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_63_de).)
 
 **Backup-Modus aktivieren**
 
@@ -100,7 +100,7 @@ Nachdem Sie den Backup-Modus gestartet haben, können Sie Informationen zur Sitz
 
 **Durchführen des Backups des globalen Dokumentenspeichers (GDS) und der Datenbank**
 
-Nachdem Sie den Backup-Modus erfolgreich aktiviert haben, können Sie ein Backup des globalen Dokumentenspeichers (GDS) und der Datenbank, mit der der Formular-Server verbunden ist, durchführen. Dieser Schritt ist für Ihr Unternehmen spezifisch, da Sie diesen Schritt manuell ausführen können oder andere Werkzeuge zum Ausführen des Backup-Verfahrens nutzen können.
+Nachdem Sie den Sicherungsmodus erfolgreich aktiviert haben, können Sie eine Sicherung des globalen Dokumentenspeichers (GDS) und der Datenbank durchführen, mit der der Forms-Server verbunden ist. Dieser Schritt ist für Ihr Unternehmen spezifisch, da Sie diesen Schritt manuell ausführen können oder andere Werkzeuge zum Ausführen des Backup-Verfahrens nutzen können.
 
 ### Wechseln in den Backup-Modus mithilfe der Java-API {#enter-backup-mode-using-the-java-api}
 
@@ -125,7 +125,7 @@ So wechseln Sie mithilfe der Backup- und Wiederherstellungs-Service-API in den B
 
 1. Festlegen einer eindeutigen Beschriftung, Bestimmen der Zeitdauer für die Durchführung des Backups und Entscheidung, ob der kontinuierliche Backup-Modus ausgeführt werden soll
 
-   Legen Sie eine eindeutige Beschriftung fest, bestimmen Sie die Zeitdauer, die Sie für das Backup zuweisen möchten, und entscheiden Sie, ob der Formular-Server im kontinuierlichen Backup-Modus verbleiben soll.
+   Legen Sie eine eindeutige Beschriftung fest, bestimmen Sie die Zeitdauer, die Sie für die Durchführung der Sicherung zuweisen möchten, und entscheiden Sie, ob der Forms-Server im kontinuierlichen Sicherungsmodus bleiben soll.
 
 1. Aktivieren des Sicherungsmodus
 
@@ -143,7 +143,7 @@ So wechseln Sie mithilfe der Backup- und Wiederherstellungs-Service-API in den B
 
 1. Durchführen des Backups des globalen Dokumentenspeichers und der Datenbank
 
-   Erstellen Sie ein Backup vom globalen Dokumentenspeicher (GDS) und von der Datenbank, mit der Ihr Formular-Server verbunden ist. Die Aktionen zum Ausführen des Backups sind nicht Teil des AEM Forms-SDK und können sogar manuelle Schritte für die Backup-Verfahren in Ihrem Unternehmen enthalten.
+   Sichern Sie den globalen Dokumentenspeicher (GDS) und die Datenbank, mit der Ihr Forms-Server verbunden ist. Die Aktionen zum Ausführen des Backups sind nicht Teil des AEM Forms-SDK und können sogar manuelle Schritte für die Backup-Verfahren in Ihrem Unternehmen enthalten.
 
 ### Starten des Backup-Modus mithilfe der Web-Service-API {#enter-backup-mode-using-the-web-service-api}
 
@@ -160,7 +160,7 @@ So wechseln Sie mithilfe des von der Backup- und Wiederherstellungs-Service-API 
 
 1. Festlegen einer eindeutigen Beschriftung, Bestimmen der Zeitdauer für die Durchführung des Backups und Entscheidung, ob der kontinuierliche Backup-Modus ausgeführt werden soll
 
-   Legen Sie eine eindeutige Beschriftung fest, bestimmen Sie die Zeitdauer, die Sie für das Backup zuweisen möchten, und entscheiden Sie, ob der Formular-Server im kontinuierlichen Backup-Modus verbleiben soll.
+   Legen Sie eine eindeutige Beschriftung fest, bestimmen Sie die Zeitdauer, die Sie für die Durchführung der Sicherung zuweisen möchten, und entscheiden Sie, ob der Forms-Server im kontinuierlichen Sicherungsmodus bleiben soll.
 
 1. Aktivieren des Sicherungsmodus
 
@@ -178,11 +178,11 @@ So wechseln Sie mithilfe des von der Backup- und Wiederherstellungs-Service-API 
 
 1. Durchführen des Backups des globalen Dokumentenspeichers und der Datenbank
 
-   Erstellen Sie ein Backup vom globalen Dokumentenspeicher (GDS) und von der Datenbank, mit der Ihr Formular-Server verbunden ist. Die Aktionen zum Ausführen des Backups sind nicht Teil des AEM Forms-SDK und können sogar manuelle Schritte für die Backup-Verfahren in Ihrem Unternehmen enthalten.
+   Sichern Sie den globalen Dokumentenspeicher (GDS) und die Datenbank, mit der Ihr Forms-Server verbunden ist. Die Aktionen zum Ausführen des Backups sind nicht Teil des AEM Forms-SDK und können sogar manuelle Schritte für die Backup-Verfahren in Ihrem Unternehmen enthalten.
 
-## Verlassen des Backup-Modus auf dem Formular-Server {#leaving-backup-mode-on-the-forms-server}
+## Sicherungsmodus auf dem Forms-Server beenden {#leaving-backup-mode-on-the-forms-server}
 
-Sie verlassen den Backup-Modus, damit der Formular-Server die Bereinigung der Dateien aus dem globalen Dokumentenspeicher (GDS) auf dem Formular-Server fortsetzt.
+Sie verlassen den Sicherungsmodus, damit der Forms-Server das Bereinigen von Dateien aus dem globalen Dokumentenspeicher (GDS) auf dem Forms-Server fortsetzt.
 
 Bevor Sie Programme schreiben, um in den Modus „Verlassen“ zu wechseln, sollten Sie die Backup-Verfahren verstehen, die mit AEM Forms verwendet werden. Weitere Informationen dazu, was bei der Durchführung von Backups für AEM Forms zu beachten ist, finden Sie unter [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_63_de).
 
@@ -197,7 +197,7 @@ Führen Sie die folgenden Schritte aus, um den Backup-Modus zu verlassen:
 1. Schließen Sie Projektdateien ein.
 1. Erstellen Sie ein BackupService-Client-Objekt.
 1. Deaktivieren Sie den Sicherungsmodus.
-1. (Optional) Rufen Sie Informationen zur Backup-Modus-Sitzung ab, die auf dem Formular-Server ausgeführt wurde.
+1. (Optional) Rufen Sie Informationen zur Sicherungsmodussitzung ab, die auf dem Forms-Server ausgeführt wurde.
 
 **Projektdateien einschließen**
 

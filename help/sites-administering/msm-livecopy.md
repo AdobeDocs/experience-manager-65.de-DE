@@ -3,9 +3,9 @@ title: Erstellen und Synchronisieren von Live Copies
 description: Erfahren Sie, wie Sie Live Copies in Adobe Experience Manager erstellen und synchronisieren.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '4226'
+source-wordcount: '4227'
 ht-degree: 65%
 
 ---
@@ -424,7 +424,7 @@ Die [Fortsetzungsaktion ist auch über die Live Copy-Übersicht verfügbar](/he
 
 ### Ändern der Vererbungstiefe (flach/tief) {#changing-inheritance-depth-shallow-deep}
 
-Sie können bei einer vorhandenen Live Copy die Tiefe für eine Seite ändern, d. h., ob untergeordnete Seiten eingeschlossen werden sollen.
+Bei einer vorhandenen Live Copy können Sie die Tiefe einer Seite ändern, d. h., ob untergeordnete Seiten einbezogen werden.
 
 * Wechseln zu einer flachen Live Copy:
 

@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '4840'
-ht-degree: 83%
+source-wordcount: '4834'
+ht-degree: 84%
 
 ---
 
@@ -53,7 +53,7 @@ Beachten Sie vor dem Start die folgenden Punkte:
 
 * Das Erstellen einer Vorlage erfordert Zusammenarbeit. Aus diesem Grund wird für jede Aufgabe eine [Rolle](#roles) angezeigt.
 
-* Je nachdem, wie Ihre Instanz konfiguriert ist, kann es nützlich sein, sich darüber im Klaren zu sein, dass AEM jetzt [zwei grundlegende Vorlagentypen](/help/sites-authoring/templates.md#editable-and-static-templates). Dies hat keine Auswirkungen auf die tatsächliche [Verwenden einer Vorlage zum Erstellen einer Seite](#using-a-template-to-create-a-page), aber es wirkt sich auf den Typ der Vorlage aus, die Sie erstellen können, und darauf aus, wie eine Seite mit der Vorlage in Beziehung steht.
+* Je nach Konfiguration Ihrer Instanz bietet AEM jetzt [zwei grundlegende Vorlagentypen](/help/sites-authoring/templates.md#editable-and-static-templates). Dies hat keine Auswirkungen auf die tatsächliche [Verwenden einer Vorlage zum Erstellen einer Seite](#using-a-template-to-create-a-page), aber es wirkt sich auf den Typ der Vorlage aus, die Sie erstellen können, und darauf aus, wie eine Seite mit der Vorlage in Beziehung steht.
 
 ### Rollen {#roles}
 
@@ -314,7 +314,7 @@ Die folgenden Aspekte einer Vorlage können bearbeitet werden:
 
   >[!NOTE]
   >
-  >In **Anfänglicher Inhalt** -Modus und auf den resultierenden Seiten können alle entsperrten Komponenten, die über ein barrierefreies übergeordnetes Element verfügen (d. h. Komponenten in einem Layout-Container), gelöscht werden.
+  >Im Modus **Anfänglicher Inhalt** und auf den resultierenden Seiten können alle entsperrten Komponenten, bei denen übergeordnete Elemente verfügbar sind (d. h. Komponenten innerhalb eines Layout-Containers), gelöscht werden.
 
 * [Layout](#editingatemplatelayout)
 

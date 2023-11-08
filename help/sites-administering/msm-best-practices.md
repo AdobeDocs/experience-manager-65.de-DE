@@ -4,9 +4,9 @@ description: Finden Sie Best Practices, die von Adobe-Engineering- und Beratungs
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1604'
 ht-degree: 87%
 
 ---
@@ -160,7 +160,7 @@ Weitere Informationen finden Sie unter [Übersetzen von Inhalt für mehrsprachig
 
 ## Anpassen von Rollouts {#customizing-rollouts}
 
-MSM-Rollout-Konfigurationen können in hohem Maße angepasst werden. Beachten Sie, dass die Automatisierung von Rollouts weit reichende Folgen haben kann. Als Best Practice sollten Sie *very* sorgfältig vor, beispielsweise:
+MSM-Rollout-Konfigurationen können in hohem Maße angepasst werden. Die Automatisierung von Rollouts kann weit reichende Folgen haben. Als Best Practice sollten Sie *very* sorgfältig vor, beispielsweise:
 
 * Automatisieren von Rollouts (etwa mit [onModify-Auslösern](#onmodify))
 * Anpassen von [Knotentypen/-eigenschaften](#node-types-properties)

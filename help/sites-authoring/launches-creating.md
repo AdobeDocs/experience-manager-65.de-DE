@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1039'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -64,7 +64,7 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
 
    >[!NOTE]
    >
-   >Um Seiten und/oder Verzweigungen zu einem Launch hinzuzufügen, müssen sie sich auf einer Site befinden, d. h. unterhalb eines gemeinsamen Stammverzeichnisses der obersten Ebene.
+   >Um Seiten und/oder Verzweigungen zu einem Launch hinzuzufügen, müssen sie sich auf einer Site befinden, d. h. unterhalb eines gemeinsamen Stammverzeichnisses der obersten Ebene.
    >
    >Wenn eine Site Sprachstämme unterhalb der obersten Ebene enthält, müssen die Seiten und Verzweigungen für einen Launch unter einem gemeinsamen Sprachstamm liegen.
    >

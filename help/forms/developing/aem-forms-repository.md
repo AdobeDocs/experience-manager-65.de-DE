@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '9095'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -593,7 +593,7 @@ Wenn Sie eine Ressource aktualisieren, wird die neue Version anhand der angegebe
 
 Wenn Sie beispielsweise eine XDP-Datei aktualisieren, die Verweise auf andere Ressourcen enthält, werden diese zusätzlichen Verweise ebenfalls aufgezeichnet. Angenommen, die Datei „form.xdp“ Version 1.0 enthält zwei externe Verweise: ein Logo und ein Stylesheet, und Sie aktualisieren anschließend „form.xdp“, sodass es jetzt drei Verweise enthält: ein Logo, ein Stylesheet und eine Schemadatei. Während der Aktualisierung fügt das Repository die dritte Beziehung (zur Schemadatei) zu seiner ausstehenden Beziehungstabelle hinzu. Sobald die Schemadatei im Repository vorhanden ist, wird die Beziehung automatisch hergestellt. Wenn jedoch „form.xdp-Version 2.0“ das Logo nicht mehr verwendet, weist „form.xdp-Version 2.0“ keine Beziehung zum Logo auf.
 
-Alle Aktualisierungsvorgänge sind atomisch und transaktional. Wenn beispielsweise zwei Benutzer dieselbe Ressource lesen und beide Version 1.0 auf Version 2.0 aktualisieren möchten, wird einer von ihnen erfolgreich sein und einer von ihnen schlägt fehl, wird die Integrität des Repositorys gewahrt und beide erhalten eine Meldung, die den Erfolg oder Fehler bestätigt. Wenn die Transaktion nicht übertragen wird, wird sie im Fall eines Datenbankfehlers zurückgesetzt und abhängig vom Anwendungsserver eine Zeitüberschreitung oder ein Rollback durchgeführt.
+Alle Aktualisierungsvorgänge sind atomisch und transaktional. Wenn beispielsweise zwei Benutzer dieselbe Ressource lesen und beide Version 1.0 auf Version 2.0 aktualisieren möchten, wird einer von ihnen erfolgreich sein und einer von ihnen schlägt fehl, wird die Integrität des Repositorys gewahrt und beide erhalten eine Meldung, die den Erfolg oder Fehler bestätigt. Wenn die Transaktion nicht übertragen wird, wird sie bei einem Datenbankfehler zurückgesetzt und abhängig vom Anwendungsserver eine Zeitüberschreitung oder ein Rollback durchgeführt.
 
 Sie können Ressourcen programmgesteuert aktualisieren, indem Sie die Java-API des Repository-Dienstes oder die Webdienst-API verwenden.
 

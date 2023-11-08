@@ -12,10 +12,10 @@ discoiquuid: db22f775-fab1-4a78-b334-a9c4fa613e43
 docset: aem65
 feature: Mobile Forms
 exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '1416'
-ht-degree: 26%
+ht-degree: 25%
 
 ---
 
@@ -46,7 +46,7 @@ Daher ist die Reduzierung der Größe der externen Ressourcen und die Verwendung
 
 * Verwendung [komprimierte Bilder](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md). Dadurch werden die Netzwerkaktivität und der für die Wiedergabe eines Formulars erforderliche Arbeitsspeicher reduziert. Daher nimmt die Formularladezeit erheblich ab.
 * Verwenden Sie die Minimierungsoption in AEM Configuration Manager (Day CQ HTML Library Manager), um JavaScript- und CSS-Dateien zu komprimieren. Weitere Informationen finden Sie unter [OSGi-Konfigurationseinstellungen](/help/sites-deploying/osgi-configuration-settings.md).
-* Aktivieren Sie die Webkomprimierung. Dadurch wird die Größe der Anforderungen und Antworten reduziert, die von einem Formular stammen. Für andere Details finden Sie weitere Informationen im Abschnitt [Leistungsoptimierung des AEM Forms-Servers](https://helpx.adobe.com/de/aem-forms/6-3/performance-tuning-aem-forms.html).
+* Aktivieren Sie die Webkomprimierung. Dadurch wird die Größe der Anforderungen und Antworten reduziert, die von einem Formular stammen. Weitere Informationen finden Sie unter [Leistungsoptimierung des AEM Forms-Servers](https://helpx.adobe.com/de/aem-forms/6-3/performance-tuning-aem-forms.html).
 
 ## Halten Sie das Interesse am Leben, zeigen Sie nur erforderliche Felder an  {#keep-the-interest-alive-show-only-required-fields}
 

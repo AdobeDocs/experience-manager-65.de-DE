@@ -2,10 +2,10 @@
 title: Ihr Posteingang zum Verwalten von Aufgaben
 description: Verwalten Ihrer Aufgaben mit dem Posteingang in Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 96%
+source-wordcount: '1143'
+ht-degree: 94%
 
 ---
 
@@ -44,7 +44,7 @@ Sie erhalten diese Benachrichtigungen in Ihrem eigenen Posteingang, wo Sie sie a
 
 ## Posteingang in der Kopfzeile {#inbox-in-the-header}
 
-In sämtlichen Konsolen wird in der Kopfzeile die Anzahl der aktuell in Ihrem Posteingang vorhandenen Elemente angezeigt. Sie können diese Anzeige auch öffnen, um schnell auf die Seiten zuzugreifen, auf denen Aktionen nötig sind, oder um den Posteingang aufzurufen.
+In sämtlichen Konsolen wird in der Kopfzeile die Anzahl der aktuell in Ihrem Posteingang vorhandenen Elemente angezeigt. Die Anzeige kann auch geöffnet werden, um einen schnellen Zugriff auf die Seiten zu ermöglichen, die Aktionen erfordern, oder um auf den Posteingang zuzugreifen:
 
 ![wf-80](assets/wf-80.png)
 

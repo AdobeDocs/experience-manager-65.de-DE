@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '2223'
-ht-degree: 36%
+ht-degree: 35%
 
 ---
 
@@ -304,7 +304,7 @@ Mithilfe von Listen können Sie Ihre Leads in Gruppen organisieren. Mit Listen k
 
 ![screen_shot_2012-02-21at125021pm](assets/screen_shot_2012-02-21at125021pm.png)
 
-Wenn Sie auf **Listen** klicken, können Sie auch sehen, ob die Liste Mitglied einer anderen Liste ist, und Sie können eine Beschreibung anzeigen.
+Wenn Sie auf **Listen** können Sie auch anzeigen, ob die Liste Mitglied einer anderen Liste ist, und eine Beschreibung anzeigen.
 
 ![screen_shot_2012-02-21at124828pm](assets/screen_shot_2012-02-21at124828pm.png)
 

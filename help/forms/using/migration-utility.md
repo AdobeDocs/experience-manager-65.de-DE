@@ -9,9 +9,9 @@ content-strategy: max-2018
 docset: aem65
 role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
-source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1734'
 ht-degree: 43%
 
 ---
@@ -27,13 +27,13 @@ Das Migrationsdienstprogramm konvertiert die [Adaptive Forms-Assets](../../forms
 
 >[!NOTE]
 >
->Bei einer nicht ersetzenden Aktualisierung können Sie die Migration für Correspondence Management-Assets jedes Mal ausführen, wenn Sie die Assets importieren. Für die Correspondence Management-Migration muss das Forms-Kompatibilitätspaket installiert sein.
+>Bei einer nicht ersetzenden Aktualisierung für Correspondence Management-Assets können Sie die Migration jedes Mal ausführen, wenn Sie die Assets importieren. Für die Correspondence Management-Migration muss das Forms-Kompatibilitätspaket installiert sein.
 
 ## Migrationsansatz {#approach-to-migration}
 
 Sie können [Upgrade](../../forms/using/upgrade.md) auf die neueste Version von AEM Forms 6.5 von AEM Forms 6.4, 6.3 oder 6.2 oder eine Neuinstallation. Je nachdem, ob Sie Ihre vorherige Installation aktualisiert oder eine Neuinstallation durchgeführt haben, müssen Sie einen der folgenden Schritte ausführen:
 
-**Im Falle einer ersetzenden Aktualisierung**
+**Wenn eine ersetzende Aktualisierung erfolgt**
 
 Wenn Sie eine ersetzende Aktualisierung durchgeführt haben, verfügt die aktualisierte Instanz bereits über die Assets und Dokumente. Bevor Sie die Assets und Dokumente verwenden können, müssen Sie jedoch die [AEMFD-Kompatibilitätspaket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) (enthält das Correspondence Management-Kompatibilitätspaket)
 

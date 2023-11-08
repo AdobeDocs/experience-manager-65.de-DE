@@ -1,18 +1,14 @@
 ---
 title: Das CSRF Protection Framework
-seo-title: The CSRF Protection Framework
 description: Das Framework verwendet Token, um sicherzustellen, dass die Client-Anfrage legitim ist
-seo-description: The framework makes use of tokens to guarantee that the client request is legitimate
-uuid: 7cb222ba-fc7a-46ee-8b49-a5f39a53580b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
 exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '251'
 ht-degree: 54%
 
 ---
@@ -35,7 +31,7 @@ Jede Komponente, die sich auf die Abhängigkeit `granite.jquery` stützt, profit
 
 ### Replizieren des Crypto-Schlüssels {#replicating-crypto-keys}
 
-Um die Token zu nutzen, müssen Sie die HMAC-Binärdatei für alle Instanzen in Ihrer Implementierung replizieren. Siehe [Replizieren des HMAC-Schlüssels](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) für weitere Details.
+Um die Token zu verwenden, müssen Sie die HMAC-Binärdatei auf allen Instanzen in Ihrer Implementierung replizieren. Siehe [Replizieren des HMAC-Schlüssels](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) für weitere Details.
 
 >[!NOTE]
 >

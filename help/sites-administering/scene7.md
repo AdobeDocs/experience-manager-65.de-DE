@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '5484'
+source-wordcount: '5483'
 ht-degree: 96%
 
 ---
@@ -383,7 +383,7 @@ Wenn ein Asset zu Experience Manager Assets hinzugefügt wird, wird es automatis
 
 1. Wählen Sie das Experience Manager-Symbol aus und navigieren Sie zu **[!UICONTROL Bereitstellung]** > **[!UICONTROL Cloud-Services]**.
 1. Wählen Sie unter der Überschrift „Dynamic Media“ unter „Verfügbare Konfigurationen“ die Option **[!UICONTROL dms7 (Dynamic Media)]** aus.
-1. Wählen Sie die Registerkarte **[!UICONTROL Erweitert]** aus, aktivieren Sie das Kontrollkästchen **[!UICONTROL Automatisches Hochladen aktivieren]** und wählen Sie dann **[!UICONTROL OK]** aus. Jetzt müssen Sie den DAM-Asset-Workflow so konfigurieren, dass er das Hochladen in Dynamic Media Classic umfasst.
+1. Wählen Sie die Registerkarte **[!UICONTROL Erweitert]** aus, aktivieren Sie das Kontrollkästchen **[!UICONTROL Automatisches Hochladen aktivieren]** und wählen Sie dann **[!UICONTROL OK]** aus. Sie müssen den DAM Asset-Workflow so konfigurieren, dass er das Hochladen in Dynamic Media Classic einschließt.
 
    >[!NOTE]
    >

@@ -1,20 +1,16 @@
 ---
 title: Programmgesteuertes Verwalten von Endpunkten
-seo-title: Programmatically Managing Endpoints
 description: Verwenden Sie den Dienst „Endpoint Registry“, um EJB-Endpunkte hinzuzufügen, SOAP-Endpunkte hinzuzufügen, Endpunkte für überwachte Ordner hinzuzufügen, E-Mail-Endpunkte hinzuzufügen, Remoting-Endpunkte hinzuzufügen, Task Manager-Endpunkte hinzuzufügen, Endpunkte zu ändern, Endpunkte zu entfernen und Endpunkt-Connector-Informationen abzurufen.
-seo-description: Use the Endpoint Registry service to add EJB endpoints, add SOAP endpoint, add Watched Folder endpoints, add Email endpoints, add  Remoting endpoints, add Task Manager endpoints, modify endpoints, remove endpoints, and retrieve endpoint connector information.
-uuid: 5dc50946-3323-4c5d-a43b-31c1c980bd04
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '10790'
-ht-degree: 98%
+source-wordcount: '10791'
+ht-degree: 83%
 
 ---
 
@@ -124,7 +120,7 @@ So fügen Sie mithilfe der Java-API einen EJB-Endpunkt hinzu:
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-livecycle-client.jar“ in den Klassenpfad Ihres Java-Projekts ein. (
+   Schließen Sie Client-JAR-Dateien wie adobe-livecycle-client.jar in den Klassenpfad Ihres Java-Projekts ein. (
 
 1. Erstellen Sie ein EndpointRegistry-Client-Objekt.
 
@@ -134,19 +130,19 @@ So fügen Sie mithilfe der Java-API einen EJB-Endpunkt hinzu:
 1. Legen Sie die Attribute des EJB-Endpunkts fest.
 
    * Erstellen Sie ein Objekt `CreateEndpointInfo`, indem Sie den Konstruktor verwenden.
-   * Geben Sie den Wert der Connector-ID an, indem Sie die Methode `setConnectorId` des `CreateEndpointInfo`-Objekts aufrufen und den Zeichenfolgenwert `EJB` übergeben.
-   * Geben Sie die Beschreibung des Endpunkts an, indem Sie die Methode `setDescription` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Endpunkt beschreibt.
-   * Geben Sie den Namen des Endpunkts an, indem Sie die Methode `setName` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen angibt.
-   * Geben Sie den Service an, zu dem der Endpunkt gehört, indem Sie die Methode `setServiceId` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen des Services angibt.
-   * Geben Sie den Vorgang an, der aufgerufen wird, indem Sie die Methode `setOperationName` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen des Vorgangs angibt. Geben Sie für SOAP- und EJB-Endpunkte ein Platzhalterzeichen (`*`) an, wodurch alle Vorgänge impliziert werden.
+   * Geben Sie den Wert der Connector-ID an, indem Sie die `CreateEndpointInfo` -Objekt `setConnectorId` -Methode und Übergeben des Zeichenfolgenwerts `EJB`.
+   * Geben Sie die Beschreibung des Endpunkts an, indem Sie die `CreateEndpointInfo` -Objekt `setDescription` -Methode verwenden und einen string -Wert übergeben, der den -Endpunkt beschreibt.
+   * Geben Sie den Namen des Endpunkts an, indem Sie die `CreateEndpointInfo` -Objekt `setName` -Methode verwenden und einen string -Wert übergeben, der den Namen angibt.
+   * Geben Sie den Dienst an, zu dem der Endpunkt gehört, indem Sie die `CreateEndpointInfo` -Objekt `setServiceId` -Methode verwenden und einen string -Wert übergeben, der den Dienstnamen angibt.
+   * Geben Sie den Vorgang an, der durch Aufrufen der `CreateEndpointInfo` -Objekt `setOperationName` -Methode verwenden und einen string -Wert übergeben, der den Vorgangsnamen angibt. Geben Sie für SOAP- und EJB-Endpunkte ein Platzhalterzeichen (`*`) an, wodurch alle Vorgänge impliziert werden.
 
 1. Erstellen Sie einen EJB-Endpunkt.
 
-   Erstellen Sie den Endpunkt, indem Sie die Methode `createEndpoint` des `EndpointRegistryClient`-Objekts aufrufen und das `CreateEndpointInfo`-Objekt übergeben. Diese Methode gibt eine `Endpoint`-Objekt zurück, das den neuen EJB-Endpunkt darstellt.
+   Erstellen Sie den Endpunkt durch Aufrufen der `EndpointRegistryClient` -Objekt `createEndpoint` -Methode und Übergabe der `CreateEndpointInfo` -Objekt. Diese Methode gibt eine `Endpoint`-Objekt zurück, das den neuen EJB-Endpunkt darstellt.
 
 1. Aktivieren Sie den Endpunkt.
 
-   Aktivieren Sie den Endpunkt, indem Sie die Methode „enable“ des `EndpointRegistryClient`-Objekts aufrufen und das `Endpoint`-Objekt übergeben, das von der Methode `createEndpoint` zurückgegeben wurde.
+   Aktivieren Sie den Endpunkt, indem Sie die `EndpointRegistryClient` Die Methode enable des Objekts und Übergabe der `Endpoint` -Objekt, das von der `createEndpoint` -Methode.
 
 **Siehe auch**
 
@@ -229,7 +225,7 @@ So fügen Sie mithilfe der Java-API einen SOAP-Endpunkt zu einem Service hinzu:
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-livecycle-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-livecycle-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie ein EndpointRegistry-Client-Objekt.
 
@@ -239,19 +235,19 @@ So fügen Sie mithilfe der Java-API einen SOAP-Endpunkt zu einem Service hinzu:
 1. Legen Sie die Attribute für den SOAP-Endpunkt fest.
 
    * Erstellen Sie ein Objekt `CreateEndpointInfo`, indem Sie den Konstruktor verwenden.
-   * Geben Sie den Wert der Connector-ID an, indem Sie die Methode `setConnectorId` des `CreateEndpointInfo`-Objekts aufrufen und den Zeichenfolgenwert `SOAP` übergeben.
-   * Geben Sie die Beschreibung des Endpunkts an, indem Sie die Methode `setDescription` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Endpunkt beschreibt.
-   * Geben Sie den Namen des Endpunkts an, indem Sie die Methode `setName` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen angibt.
-   * Geben Sie den Service an, zu dem der Endpunkt gehört, indem Sie die Methode `setServiceId` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen des Services angibt.
-   * Geben Sie den Vorgang an, der aufgerufen wird, indem Sie die Methode `setOperationName` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen des Vorgangs angibt. Geben Sie für SOAP- und EJB-Endpunkte ein Platzhalterzeichen (`*`) an, wodurch alle Vorgänge impliziert werden.
+   * Geben Sie den Wert der Connector-ID an, indem Sie die `CreateEndpointInfo` -Objekt `setConnectorId` -Methode und Übergeben des Zeichenfolgenwerts `SOAP`.
+   * Geben Sie die Beschreibung des Endpunkts an, indem Sie die `CreateEndpointInfo` -Objekt `setDescription` -Methode verwenden und einen string -Wert übergeben, der den -Endpunkt beschreibt.
+   * Geben Sie den Namen des Endpunkts an, indem Sie die `CreateEndpointInfo` -Objekt `setName` -Methode verwenden und einen string -Wert übergeben, der den Namen angibt.
+   * Geben Sie den Dienst an, zu dem der Endpunkt gehört, indem Sie die `CreateEndpointInfo` -Objekt `setServiceId` -Methode verwenden und einen string -Wert übergeben, der den Dienstnamen angibt.
+   * Geben Sie den Vorgang an, der durch Aufrufen der `CreateEndpointInfo` -Objekt `setOperationName` -Methode verwenden und einen string -Wert übergeben, der den Vorgangsnamen angibt. Geben Sie für SOAP- und EJB-Endpunkte ein Platzhalterzeichen (`*`) an, wodurch alle Vorgänge impliziert werden.
 
 1. Erstellen Sie einen SOAP-Endpunkt.
 
-   Erstellen Sie den Endpunkt, indem Sie die Methode `createEndpoint` des `EndpointRegistryClient`-Objekts aufrufen und das `CreateEndpointInfo`-Objekt übergeben. Diese Methode gibt ein `Endpoint`-Objekt zurück, das den neuen SOAP-Endpunkt darstellt.
+   Erstellen Sie den Endpunkt durch Aufrufen der `EndpointRegistryClient` -Objekt `createEndpoint` -Methode und Übergabe der `CreateEndpointInfo` -Objekt. Diese Methode gibt ein `Endpoint`-Objekt zurück, das den neuen SOAP-Endpunkt darstellt.
 
 1. Aktivieren Sie den Endpunkt.
 
-   Aktivieren Sie den Endpunkt, indem Sie die Methode „enable“ des `EndpointRegistryClient`-Objekts aufrufen und das `Endpoint`-Objekt übergeben, das von der Methode `createEndpoint` zurückgegeben wurde.
+   Aktivieren Sie den Endpunkt, indem Sie die `EndpointRegistryClient` Die Methode enable des Objekts wird übergeben. `Endpoint` -Objekt, das von der `createEndpoint` -Methode.
 
 **Siehe auch**
 
@@ -271,7 +267,7 @@ Um einem Service programmgesteuert einen Endpunkt vom Typ „Überwachter Ordner
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
-In diesem Prozess wird ein ungesichertes PDF-Dokument als Eingabewert akzeptiert und das ungesicherte PDF-Dokument dann an den `EncryptPDFUsingPassword`-Vorgang des Encryption-Service übergeben. Das PDF-Dokument wird mit einem Passwort verschlüsselt und das passwortverschlüsselte PDF-Dokument ist der Ausgabewert dieses Vorgangs. Der Name des Eingabewerts (das ungesicherte PDF-Dokument) lautet `InDoc` und der Datentyp ist `com.adobe.idp.Document`. Der Name des Ausgabewerts (das passwortverschlüsselte PDF-Dokument) lautet `SecuredDoc` und der Datentyp ist `com.adobe.idp.Document`.
+Bei diesem Vorgang wird ein ungesichertes PDF-Dokument als Eingabewert akzeptiert und das ungesicherte PDF-Dokument dann an den Encryption-Dienst übergeben. `EncryptPDFUsingPassword` Vorgang. Das PDF-Dokument wird mit einem Passwort verschlüsselt und das passwortverschlüsselte PDF-Dokument ist der Ausgabewert dieses Vorgangs. Der Name des Eingabewerts (das ungesicherte PDF-Dokument) lautet `InDoc` und der Datentyp ist `com.adobe.idp.Document`. Der Name des Ausgabewerts (das passwortverschlüsselte PDF-Dokument) lautet `SecuredDoc` und der Datentyp ist `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -331,7 +327,7 @@ Die folgende Liste gibt Konfigurationswerte an, die festgelegt werden, wenn eine
 * **repeatCount**: Die Häufigkeit, mit der ein überwachter Ordner den Ordner oder das Verzeichnis überprüft. Der Wert &quot;-1&quot;bedeutet uneingeschränktes Überprüfen. Der Standardwert ist -1.
 * **throttleOn**: Begrenzt die Anzahl der Aufträge für überwachte Ordner, die zu einem bestimmten Zeitpunkt verarbeitet werden können. Die maximale Anzahl von Aufträgen wird durch den Wert von „batchSize“ bestimmt.
 * **userName**: Der Benutzername, mit dem ein Ziel-Service aus dem überwachten Ordner aufgerufen wird. Dieser Wert ist erforderlich. Der Standardwert ist „SuperAdmin“.
-* **domainName**: Die Domain des Benutzers. Dieser Wert ist erforderlich. Der Standardwert ist „DefaultDom“.
+* **domainName**: Die Domäne des Benutzers. Dieser Wert ist erforderlich. Der Standardwert ist „DefaultDom“.
 * **batchSize**: Die Anzahl der Dateien oder Ordner, die pro Überprüfung aufgenommen werden. Mit diesem Wert können Sie eine Überlastung des Systems verhindern, da das gleichzeitige Überprüfen zu vieler Dateien zu einem Absturz führen kann. Der Standardwert ist 2.
 * **waitTime**: Die Zeit in Millisekunden, die nach der Erstellung gewartet wird, bevor ein Ordner oder eine Datei überprüft wird. Wenn die Wartezeit beispielsweise 3.600.000 Millisekunden (eine Stunde) beträgt und die Datei vor einer Minute erstellt wurde, wird diese Datei erst nach Ablauf von mindestens 59 Minuten abgerufen. Dieses Attribut ist nützlich, um sicherzustellen, dass eine Datei oder ein Ordner vollständig in den Eingabeordner kopiert wurde. Wenn Sie beispielsweise eine große Datei verarbeiten müssen und das Herunterladen der Datei 10 Minuten dauert, legen Sie die Wartezeit auf 10 x 60 x 1000 Millisekunden fest. Diese Einstellung verhindert, dass der überwachte Ordner die Datei überprüft, wenn er nicht erst zehn Minuten lang gewartet hat. Der Standardwert ist 0.
 * **excludeFilePattern**: Das Muster, das ein überwachter Ordner verwendet, um zu bestimmen, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Alle Dateien oder Ordner, die dieses Muster haben, werden nicht für die Verarbeitung überprüft. Diese Einstellung ist hilfreich, wenn die Eingabe aus einem Ordner mit mehreren Dateien besteht. Der Inhalt des Ordners kann in einen Ordner mit einem Namen kopiert werden, der vom überwachten Ordner aufgenommen wird. Dieser Schritt verhindert, dass der überwachte Ordner einen Ordner für die Verarbeitung aufnimmt, bevor dieser vollständig in den Eingabeordner kopiert ist. Wenn der Wert für „excludeFilePattern“ beispielsweise `data*` ist, werden alle Dateien und Ordner, die `data*` im Namen enthalten, nicht aufgenommen. Hierzu gehören auch Dateien und Ordner mit den Namen `data1`, `data2` usw. Darüber hinaus kann das Muster durch Platzhaltermuster ergänzt werden, um Dateimuster anzugeben. Der überwachte Ordner ändert den regulären Ausdruck, um Platzhaltermuster wie `*.*` und `*.pdf` zu unterstützen. Diese Platzhaltermuster werden von regulären Ausdrücken nicht unterstützt.
@@ -339,7 +335,7 @@ Die folgende Liste gibt Konfigurationswerte an, die festgelegt werden, wenn eine
 * **resultFolderName**: Der Ordner, in dem die Ergebnisse gespeichert werden. Dieser Speicherort kann ein absoluter oder ein relativer Ordnerpfad sein. Wenn die Ergebnisse nicht in diesem Ordner angezeigt werden, überprüfen Sie den Fehlerordner. Schreibgeschützte Dateien werden nicht verarbeitet, sondern im Fehlerordner gespeichert. Der Standardwert ist `result/%Y/%M/%D/`. Dies ist der Ergebnisordner innerhalb des überwachten Ordners.
 * **preserveFolderName**: Der Speicherort, an dem Dateien nach erfolgreicher Überprüfung und Aufnahme gespeichert werden. Der Speicherort kann ein absoluter, relativer oder leerer Ordnerpfad sein. Der Standardwert ist `preserve/%Y/%M/%D/`.
 * **failureFolderName**: Der Ordner, in dem Dateien mit Fehlern gespeichert werden. Dieser Speicherort ist stets relativ zum überwachten Ordner. Schreibgeschützte Dateien werden nicht verarbeitet und im Fehlerordner gespeichert. Der Standardwert ist `failure/%Y/%M/%D/`.
-* **preserveOnFailure**: Bewahrt die Eingabedateien auf, wenn es zu einem Fehler bei der Ausführung des Vorgangs für einen Service kommt. Der Standardwert lautet true.
+* **preserveOnFailure**: Behält die Eingabedateien bei, wenn der Vorgang für einen Dienst nicht ausgeführt werden kann. Der Standardwert lautet true.
 * **overwriteDuplicateFilename**: Bei Festlegung auf „True“ werden Dateien im Ergebnisordner und im Aufbewahrungsordner überschrieben. Bei Festlegung auf „False“ werden Dateien und Ordner, die ein numerisches Indexsuffix aufweisen, als Name verwendet. Der Standardwert lautet false.
 
 **Definieren von Eingabeparameterwerten**
@@ -377,7 +373,7 @@ Geben Sie die folgenden Werte an, um einen für einen Endpunkt des Typs „Über
 
 **Erstellen eines Endpunkts vom Typ „Überwachter Ordner“**
 
-Nachdem Sie die Attribute und Konfigurationswerte des Endpunkts festgelegt und Eingabe- und Ausgabeparameterwerte definiert haben, müssen Sie den Endpunkt „Überwachter Ordner“ erstellen.
+Nachdem Sie die Attribute und Konfigurationswerte des Endpunkts festgelegt und Eingabe- und Ausgabeparameterwerte definiert haben, müssen Sie den Endpunkt des Typs &quot;Überwachter Ordner&quot;erstellen.
 
 **Aktivieren des Endpunkts**
 
@@ -397,7 +393,7 @@ So fügen Sie mithilfe der AEM Forms-Java-API einen Endpunkt des Typs „Überwa
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-livecycle-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-livecycle-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie ein EndpointRegistry-Client-Objekt.
 
@@ -407,15 +403,15 @@ So fügen Sie mithilfe der AEM Forms-Java-API einen Endpunkt des Typs „Überwa
 1. Legen Sie die Attribute des Endpunkts „Überwachter Ordner“ fest.
 
    * Erstellen Sie ein Objekt `CreateEndpointInfo`, indem Sie den Konstruktor verwenden.
-   * Geben Sie den Wert der Connector-ID an, indem Sie die Methode `setConnectorId` des `CreateEndpointInfo`-Objekts aufrufen und den Zeichenfolgenwert `WatchedFolder` übergeben.
-   * Geben Sie die Beschreibung des Endpunkts an, indem Sie die Methode `setDescription` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Endpunkt beschreibt.
-   * Geben Sie den Namen des Endpunkts an, indem Sie die Methode `setName` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen angibt.
-   * Geben Sie den Service an, zu dem der Endpunkt gehört, indem Sie die Methode `setServiceId` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen des Services angibt.
-   * Geben Sie den Vorgang an, der aufgerufen wird, indem Sie die Methode `setOperationName` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen des Vorgangs angibt. Beim Erstellen eines Endpunkts vom Typ „Überwachter Ordner“ für einen Service, der aus einem in Workbench erstellten Prozess stammt, wird normalerweise der Name des Vorgangs aufgerufen.
+   * Geben Sie den Wert der Connector-ID an, indem Sie die `CreateEndpointInfo` -Objekt `setConnectorId` -Methode und Übergeben des Zeichenfolgenwerts `WatchedFolder`.
+   * Geben Sie die Beschreibung des Endpunkts an, indem Sie die `CreateEndpointInfo` -Objekt `setDescription` -Methode verwenden und einen string -Wert übergeben, der den -Endpunkt beschreibt.
+   * Geben Sie den Namen des Endpunkts an, indem Sie die `CreateEndpointInfo` -Objekt `setName` -Methode verwenden und einen string -Wert übergeben, der den Namen angibt.
+   * Geben Sie den Dienst an, zu dem der Endpunkt gehört, indem Sie die `CreateEndpointInfo` -Objekt `setServiceId` -Methode verwenden und einen string -Wert übergeben, der den Dienstnamen angibt.
+   * Geben Sie den Vorgang an, der durch Aufrufen der `CreateEndpointInfo` -Objekt `setOperationName` -Methode verwenden und einen string -Wert übergeben, der den Vorgangsnamen angibt. Beim Erstellen eines Endpunkts vom Typ „Überwachter Ordner“ für einen Service, der aus einem in Workbench erstellten Prozess stammt, wird normalerweise der Name des Vorgangs aufgerufen.
 
 1. Geben Sie Konfigurationswerte an.
 
-   Für jeden Konfigurationswert, der für den Endpunkt „Überwachter Ordner“ festgelegt werden soll, müssen Sie die Methode `setConfigParameterAsText` des `CreateEndpointInfo`-Objekts aufrufen. Um beispielsweise den `url`-Konfigurationswert festzulegen, rufen Sie die Methode `setConfigParameterAsText` des `CreateEndpointInfo`-Objekts auf und übergeben die folgenden Zeichenfolgenwerte:
+   Für jeden Konfigurationswert, der für den Endpunkt des Typs &quot;überwachter Ordner&quot;festgelegt wird, müssen Sie die `CreateEndpointInfo` -Objekt `setConfigParameterAsText` -Methode. Um beispielsweise die `url` Konfigurationswert, rufen Sie die `CreateEndpointInfo` -Objekt `setConfigParameterAsText` -Methode verwenden und die folgenden string-Werte übergeben:
 
    * Ein Zeichenfolgenwert, der den Namen des Konfigurationswerts angibt. Wenn Sie den `url`-Konfigurationswert festlegen, geben Sie `url` an.
    * Ein Zeichenfolgenwert, der den Wert des Konfigurationswerts angibt. Geben Sie beim Festlegen des `url`-Konfigurationswerts den Speicherort des überwachten Ordners an.
@@ -426,7 +422,7 @@ So fügen Sie mithilfe der AEM Forms-Java-API einen Endpunkt des Typs „Überwa
 
 1. Definieren Sie Eingabeparameterwerte.
 
-   Definieren Sie einen Eingabeparameterwert, indem Sie die Methode `setInputParameterMapping` des `CreateEndpointInfo`-Objekts aufrufen und die folgenden Werte übergeben:
+   Definieren Sie einen Eingabeparameterwert durch Aufrufen der `CreateEndpointInfo` -Objekt `setInputParameterMapping` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein Zeichenfolgenwert, der den Namen des Eingabeparameters angibt. Beispielsweise lautet der Name des Eingabeparameters für den EncryptDocument-Service `InDoc`.
    * Ein Zeichenfolgenwert, der den Datentyp des Eingabeparameters angibt. Der Datentyp des Eingabeparameters `InDoc` ist beispielsweise `com.adobe.idp.Document`.
@@ -439,7 +435,7 @@ So fügen Sie mithilfe der AEM Forms-Java-API einen Endpunkt des Typs „Überwa
 
 1. Definieren Sie einen Ausgabeparameterwert.
 
-   Definieren Sie einen Ausgabeparameterwert, indem Sie die Methode `setOutputParameterMapping` des `CreateEndpointInfo`-Objekts aufrufen und die folgenden Werte übergeben:
+   Definieren Sie einen Ausgabeparameterwert durch Aufrufen der `CreateEndpointInfo` -Objekt `setOutputParameterMapping` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein Zeichenfolgenwert, der den Namen des Ausgabeparameters angibt. Beispielsweise lautet der Name des Ausgabeparameters für den EncryptDocument-Service `SecuredDoc`.
    * Ein Zeichenfolgenwert, der den Datentyp des Ausgabeparameters angibt. Der Datentyp des `SecuredDoc`-Ausgabeparameters ist beispielsweise `com.adobe.idp.Document`.
@@ -447,11 +443,11 @@ So fügen Sie mithilfe der AEM Forms-Java-API einen Endpunkt des Typs „Überwa
 
 1. Erstellen Sie einen Endpunkt des Typs „Überwachter Ordner“.
 
-   Erstellen Sie den Endpunkt, indem Sie die Methode `createEndpoint` des `EndpointRegistryClient`-Objekts aufrufen und das `CreateEndpointInfo`-Objekt übergeben. Diese Methode gibt ein `Endpoint`-Objekt zurück, das den Endpunkt „Überwachter Ordner“ darstellt.
+   Erstellen Sie den Endpunkt durch Aufrufen der `EndpointRegistryClient` -Objekt `createEndpoint` -Methode und Übergabe der `CreateEndpointInfo` -Objekt. Diese Methode gibt ein `Endpoint`-Objekt zurück, das den Endpunkt „Überwachter Ordner“ darstellt.
 
 1. Aktivieren Sie den Endpunkt.
 
-   Aktivieren Sie den Endpunkt, indem Sie die Methode `enable` des `EndpointRegistryClient`-Objekts aufrufen und das `Endpoint`-Objekt übergeben, das von der Methode `createEndpoint` zurückgegeben wurde.
+   Aktivieren Sie den Endpunkt, indem Sie die `EndpointRegistryClient` -Objekt `enable` -Methode und Übergabe der `Endpoint` -Objekt, das von der `createEndpoint` -Methode.
 
 **Siehe auch**
 
@@ -504,7 +500,7 @@ Um einem Service programmgesteuert einen E-Mail-Endpunkt hinzuzufügen, beachten
 
 ![ae_ae_encryptdocumentprocess](assets/ae_ae_encryptdocumentprocess.png)
 
-Dieser Prozess akzeptiert ein ungesichertes PDF-Dokument als Eingabewert und übergibt dann das ungesicherte PDF-Dokument an den `EncryptPDFUsingPassword`-Vorgang des Verschlüsselungs-Service. Dieser Prozess verschlüsselt das PDF-Dokument mit einem Kennwort und gibt das kennwortverschlüsselte PDF-Dokument als Ausgabewert zurück. Der Name des Eingabewerts (das ungesicherte PDF-Dokument) lautet `InDoc` und der Datentyp ist `com.adobe.idp.Document`. Der Name des Ausgabewerts (das kennwortverschlüsselte PDF-Dokument) lautet `SecuredDoc` und der Datentyp ist `com.adobe.idp.Document`.
+Bei diesem Vorgang wird ein ungesichertes PDF-Dokument als Eingabewert akzeptiert und das ungesicherte PDF-Dokument dann an den Encryption-Dienst übergeben. `EncryptPDFUsingPassword` Vorgang. Dieser Prozess verschlüsselt das PDF-Dokument mit einem Kennwort und gibt das kennwortverschlüsselte PDF-Dokument als Ausgabewert zurück. Der Name des Eingabewerts (das ungesicherte PDF-Dokument) lautet `InDoc` und der Datentyp ist `com.adobe.idp.Document`. Der Name des Ausgabewerts (das kennwortverschlüsselte PDF-Dokument) lautet `SecuredDoc` und der Datentyp ist `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -556,7 +552,7 @@ Geben Sie Konfigurationswerte für einen E-Mail-Endpunkt an, wenn Sie einem Dien
 
 >[!NOTE]
 >
->Das überwachte E-Mail-Konto ist ein spezielles Konto, das nur für den E-Mail-Endpunkt verwendet wird. Dieses Konto ist kein E-Mail-Konto eines normalen Benutzers. Das E-Mail-Konto eines normalen Benutzers darf nicht als das Konto konfiguriert werden, das der E-Mail-Anbieter verwendet, da der E-Mail-Anbieter E-Mail-Nachrichten aus dem Posteingang löscht, sobald er mit den Nachrichten fertig ist.
+>Das überwachte E-Mail-Konto ist ein spezielles Konto, das nur für den E-Mail-Endpunkt verwendet wird. Dieses Konto ist kein E-Mail-Konto eines normalen Benutzers. Das E-Mail-Konto eines regulären Benutzers darf nicht als das Konto konfiguriert werden, das der E-Mail-Anbieter verwendet, da der E-Mail-Anbieter E-Mail-Nachrichten aus dem Posteingang löscht, nachdem er mit den Nachrichten fertig ist.
 
 Beim programmgesteuerten Hinzufügen eines E-Mail-Endpunkts zu einem Service werden die folgenden Konfigurationswerte festgelegt:
 
@@ -642,7 +638,7 @@ Fügen Sie mithilfe der Java-API einen E-Mail-Endpunkt hinzu:
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-livecycle-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-livecycle-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie ein EndpointRegistry-Client-Objekt.
 
@@ -652,15 +648,15 @@ Fügen Sie mithilfe der Java-API einen E-Mail-Endpunkt hinzu:
 1. Stellen Sie E-Mail-Endpunktattribute ein.
 
    * Erstellen Sie ein Objekt `CreateEndpointInfo`, indem Sie den Konstruktor verwenden.
-   * Geben Sie den Wert der Connector-ID an, indem Sie die Methode `setConnectorId` des `CreateEndpointInfo`-Objekts aufrufen und den Zeichenfolgenwert `Email` übergeben.
-   * Geben Sie die Beschreibung des Endpunkts an, indem Sie die Methode `setDescription` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Endpunkt beschreibt.
-   * Geben Sie den Namen des Endpunkts an, indem Sie die Methode `setName` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen angibt.
-   * Geben Sie den Service an, zu dem der Endpunkt gehört, indem Sie die Methode `setServiceId` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen des Services angibt.
-   * Geben Sie den Vorgang an, der aufgerufen werden soll, indem Sie die `setOperationName`-Methode des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Vorgangsnamen angibt. Beim Erstellen eines E-Mail-Endpunkts für einen Service, der aus einem in Workbench erstellten Prozess stammt, wird normalerweise der Name des Vorgangs aufgerufen.
+   * Geben Sie den Wert der Connector-ID an, indem Sie die `CreateEndpointInfo` -Objekt `setConnectorId` -Methode und Übergeben des Zeichenfolgenwerts `Email`.
+   * Geben Sie die Beschreibung des Endpunkts an, indem Sie die `CreateEndpointInfo` -Objekt `setDescription` -Methode verwenden und einen string -Wert übergeben, der den -Endpunkt beschreibt.
+   * Geben Sie den Namen des Endpunkts an, indem Sie die `CreateEndpointInfo` -Objekt `setName` -Methode verwenden und einen string -Wert übergeben, der den Namen angibt.
+   * Geben Sie den Dienst an, zu dem der Endpunkt gehört, indem Sie die `CreateEndpointInfo` -Objekt `setServiceId` -Methode verwenden und einen string -Wert übergeben, der den Dienstnamen angibt.
+   * Geben Sie den Vorgang an, der durch Aufrufen der `CreateEndpointInfo` -Objekt `setOperationName` -Methode verwenden und einen string -Wert übergeben, der den Vorgangsnamen angibt. Beim Erstellen eines E-Mail-Endpunkts für einen Service, der aus einem in Workbench erstellten Prozess stammt, wird normalerweise der Name des Vorgangs aufgerufen.
 
 1. Geben Sie Konfigurationswerte an.
 
-   Für jeden Konfigurationswert, der für den E-Mail-Endpunkt eingestellt werden soll, müssen Sie die `setConfigParameterAsText`-Methode des `CreateEndpointInfo`-Objekts aufrufen. Um beispielsweise den `smtpHost`-Konfigurationswert einzustellen, rufen Sie die `setConfigParameterAsText`-Methode des `CreateEndpointInfo`-Objekts auf und übergeben Sie die folgenden Werte:
+   Für jeden Konfigurationswert, der für den E-Mail-Endpunkt festgelegt werden soll, müssen Sie die `CreateEndpointInfo` -Objekt `setConfigParameterAsText` -Methode. Um beispielsweise die `smtpHost` Konfigurationswert, rufen Sie die `CreateEndpointInfo` -Objekt `setConfigParameterAsText` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein Zeichenfolgenwert, der den Namen des Konfigurationswerts angibt. Wenn Sie den `smtpHost`-Konfigurationswert festlegen, geben Sie `smtpHost` an.
    * Ein Zeichenfolgenwert, der den Wert des Konfigurationswerts angibt. Wenn Sie den `smtpHost`-Konfigurationswert einstellen, geben Sie einen Zeichenfolgenwert an, der den Namen des SMTP-Servers festlegt.
@@ -671,7 +667,7 @@ Fügen Sie mithilfe der Java-API einen E-Mail-Endpunkt hinzu:
 
 1. Definieren Sie Eingabeparameterwerte.
 
-   Definieren Sie einen Eingabeparameterwert, indem Sie die Methode `setInputParameterMapping` des `CreateEndpointInfo`-Objekts aufrufen und die folgenden Werte übergeben:
+   Definieren Sie einen Eingabeparameterwert durch Aufrufen der `CreateEndpointInfo` -Objekt `setInputParameterMapping` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein Zeichenfolgenwert, der den Namen des Eingabeparameters angibt. Beispielsweise lautet der Name des Eingabeparameters für den EncryptDocument-Service `InDoc`.
    * Ein Zeichenfolgenwert, der den Datentyp des Eingabeparameters angibt. Der Datentyp des Eingabeparameters `InDoc` ist beispielsweise `com.adobe.idp.Document`.
@@ -684,7 +680,7 @@ Fügen Sie mithilfe der Java-API einen E-Mail-Endpunkt hinzu:
 
 1. Definieren Sie einen Ausgabeparameterwert.
 
-   Definieren Sie einen Ausgabeparameterwert, indem Sie die `setOutputParameterMapping`-Methode des `CreateEndpointInfo`-Objekts aufrufen und die folgenden Werte übergeben:
+   Definieren Sie einen Ausgabeparameterwert durch Aufrufen der `CreateEndpointInfo` -Objekt `setOutputParameterMapping` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein Zeichenfolgenwert, der den Namen des Ausgabeparameters angibt. Beispielsweise lautet der Name des Ausgabeparameters für den EncryptDocument-Service `SecuredDoc`.
    * Ein Zeichenfolgenwert, der den Datentyp des Ausgabeparameters angibt. Der Datentyp des `SecuredDoc`-Ausgabeparameters ist beispielsweise `com.adobe.idp.Document`.
@@ -692,11 +688,11 @@ Fügen Sie mithilfe der Java-API einen E-Mail-Endpunkt hinzu:
 
 1. Erstellen Sie den E-Mail-Endpunkt.
 
-   Erstellen Sie den Endpunkt, indem Sie die `createEndpoint`-Methode des `EndpointRegistryClient`-Objekts aufrufen und das `CreateEndpointInfo`-Objekt übergeben. Diese Methode gibt ein `Endpoint`-Objekt zurück, das den E-Mail-Endpunkt darstellt.
+   Erstellen Sie den Endpunkt durch Aufrufen der `EndpointRegistryClient` -Objekt `createEndpoint` -Methode und Übergabe der `CreateEndpointInfo` -Objekt. Diese Methode gibt ein `Endpoint`-Objekt zurück, das den E-Mail-Endpunkt darstellt.
 
 1. Aktivieren Sie den Endpunkt.
 
-   Aktivieren Sie den Endpunkt, indem Sie die Methode `enable` des `EndpointRegistryClient`-Objekts aufrufen und das `Endpoint`-Objekt übergeben, das von der Methode `createEndpoint` zurückgegeben wurde.
+   Aktivieren Sie den Endpunkt, indem Sie die `EndpointRegistryClient` -Objekt `enable` -Methode und Übergabe der `Endpoint` -Objekt, das von der `createEndpoint` -Methode.
 
 **Siehe auch**
 
@@ -760,7 +756,7 @@ Um einem Service programmgesteuert einen Remoting-Endpunkt hinzuzufügen, beacht
 
 ![ar_ar_encryptdocumentprocess](assets/ar_ar_encryptdocumentprocess.png)
 
-Bei diesem Prozess wird ein ungesichertes PDF-Dokument als Eingabewert akzeptiert und das ungesicherte PDF-Dokument wird dann an den `EncryptPDFUsingPassword`-Vorgang des Verschlüsselungsservice übergeben. Das PDF-Dokument wird mit einem Passwort verschlüsselt und das passwortverschlüsselte PDF-Dokument ist der Ausgabewert dieses Vorgangs. Der Name des Eingabewerts (das ungesicherte PDF-Dokument) lautet `InDoc` und der Datentyp ist `com.adobe.idp.Document`. Der Name des Ausgabewerts (das kennwortverschlüsselte PDF-Dokument) lautet `SecuredDoc` und der Datentyp ist `com.adobe.idp.Document`.
+Bei diesem Vorgang wird ein ungesichertes PDF-Dokument als Eingabewert akzeptiert und das ungesicherte PDF-Dokument dann an den Encryption-Dienst übergeben. `EncryptPDFUsingPassword` Vorgang. Das PDF-Dokument wird mit einem Passwort verschlüsselt und das passwortverschlüsselte PDF-Dokument ist der Ausgabewert dieses Vorgangs. Der Name des Eingabewerts (das ungesicherte PDF-Dokument) lautet `InDoc` und der Datentyp ist `com.adobe.idp.Document`. Der Name des Ausgabewerts (das kennwortverschlüsselte PDF-Dokument) lautet `SecuredDoc` und der Datentyp ist `com.adobe.idp.Document`.
 
 Um zu demonstrieren, wie einem Service ein Remoting-Endpunkt hinzugefügt wird, wird in diesem Abschnitt ein Remoting-Endpunkt zu einem Service namens „EncryptDocument“ hinzugefügt.
 
@@ -827,7 +823,7 @@ So fügen Sie mithilfe der Java-API einen Remoting-Endpunkt hinzu:
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-livecycle-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-livecycle-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie ein EndpointRegistry-Client-Objekt.
 
@@ -837,19 +833,19 @@ So fügen Sie mithilfe der Java-API einen Remoting-Endpunkt hinzu:
 1. Legen Sie die Attribute für einen Remoting-Endpunkt fest.
 
    * Erstellen Sie ein Objekt `CreateEndpointInfo`, indem Sie den Konstruktor verwenden.
-   * Geben Sie den Wert der Connector-ID an, indem Sie die Methode `setConnectorId` des `CreateEndpointInfo`-Objekts aufrufen und den Zeichenfolgenwert `Remoting` übergeben.
-   * Geben Sie die Beschreibung des Endpunkts an, indem Sie die Methode `setDescription` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Endpunkt beschreibt.
-   * Geben Sie den Namen des Endpunkts an, indem Sie die Methode `setName` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen angibt.
-   * Geben Sie den Service an, zu dem der Endpunkt gehört, indem Sie die Methode `setServiceId` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen des Services angibt.
-   * Geben Sie den Vorgang an, der durch die Methode `setOperationName` des `CreateEndpointInfo`-Objekts aufgerufen wird, und übergeben Sie einen Zeichenfolgenwert, der den Namen des Vorgangs angibt. Geben Sie für einen Remoting-Endpunkt ein Platzhalterzeichen (*) an.
+   * Geben Sie den Wert der Connector-ID an, indem Sie die `CreateEndpointInfo` -Objekt `setConnectorId` -Methode und Übergeben des Zeichenfolgenwerts `Remoting`.
+   * Geben Sie die Beschreibung des Endpunkts an, indem Sie die `CreateEndpointInfo` -Objekt `setDescription` -Methode verwenden und einen string -Wert übergeben, der den -Endpunkt beschreibt.
+   * Geben Sie den Namen des Endpunkts an, indem Sie die `CreateEndpointInfo` -Objekt `setName` -Methode verwenden und einen string -Wert übergeben, der den Namen angibt.
+   * Geben Sie den Dienst an, zu dem der Endpunkt gehört, indem Sie die `CreateEndpointInfo` -Objekt `setServiceId` -Methode verwenden und einen string -Wert übergeben, der den Dienstnamen angibt.
+   * Geben Sie den Vorgang an, der vom `CreateEndpointInfo` -Objekt `setOperationName` -Methode verwenden und einen string -Wert übergeben, der den Vorgangsnamen angibt. Geben Sie für einen Remoting-Endpunkt ein Platzhalterzeichen (*) an.
 
 1. Erstellen Sie einen Remoting-Endpunkt.
 
-   Erstellen Sie den Endpunkt, indem Sie die Methode `createEndpoint` des `EndpointRegistryClient`-Objekts aufrufen und das `CreateEndpointInfo`-Objekt übergeben. Diese Methode gibt ein `Endpoint`-Objekt zurück, das den neuen Remoting-Endpunkt darstellt.
+   Erstellen Sie den Endpunkt durch Aufrufen der `EndpointRegistryClient` -Objekt `createEndpoint` -Methode und Übergabe der `CreateEndpointInfo` -Objekt. Diese Methode gibt ein `Endpoint`-Objekt zurück, das den neuen Remoting-Endpunkt darstellt.
 
 1. Aktivieren Sie den Endpunkt.
 
-   Aktivieren Sie den Endpunkt, indem Sie die Methode `enable` des `EndpointRegistryClient`-Objekts aufrufen und das `Endpoint`-Objekt übergeben, das von der Methode `createEndpoint` zurückgegeben wurde.
+   Aktivieren Sie den Endpunkt, indem Sie die `EndpointRegistryClient` -Objekt `enable` -Methode und Übergabe der `Endpoint` -Objekt, das von der `createEndpoint` -Methode.
 
 **Siehe auch**
 
@@ -938,7 +934,7 @@ So fügen Sie mithilfe der Java-API einen TaskManager-Endpunkt hinzu:
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-livecycle-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-livecycle-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie ein EndpointRegistry-Client-Objekt.
 
@@ -952,25 +948,25 @@ So fügen Sie mithilfe der Java-API einen TaskManager-Endpunkt hinzu:
       * Einen Zeichenfolgenwert, der den ID-Wert der Kategorie angibt
       * Einen Zeichenfolgenwert, der die Beschreibung der Kategorie angibt
 
-   * Erstellen Sie die Kategorie, indem Sie die Methode `createEndpointCategory` des `EndpointRegistryClient`-Objekts aufrufen und das `CreateEndpointCategoryInfo`-Objekt übergeben. Diese Methode gibt ein `EndpointCategory`-Objekt zurück, das die neue Kategorie darstellt.
+   * Erstellen Sie die Kategorie durch Aufrufen der `EndpointRegistryClient` -Objekt `createEndpointCategory` -Methode und Übergabe der `CreateEndpointCategoryInfo` -Objekt. Diese Methode gibt ein `EndpointCategory`-Objekt zurück, das die neue Kategorie darstellt.
 
 1. Legen Sie die Attribute des TaskManager-Endpunkts fest.
 
    * Erstellen Sie ein Objekt `CreateEndpointInfo`, indem Sie den Konstruktor verwenden.
-   * Geben Sie den Wert der Connector-ID an, indem Sie die Methode `setConnectorId` des `CreateEndpointInfo`-Objekts aufrufen und den Zeichenfolgenwert `TaskManagerConnector` übergeben.
-   * Geben Sie die Beschreibung des Endpunkts an, indem Sie die Methode `setDescription` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Endpunkt beschreibt.
-   * Geben Sie den Namen des Endpunkts an, indem Sie die Methode `setName` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen angibt.
-   * Geben Sie den Service an, zu dem der Endpunkt gehört, indem Sie die Methode `setServiceId` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen des Services angibt.
-   * Geben Sie die Kategorie an, zu der der Endpunkt gehört, indem Sie die Methode `setCategoryId` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den ID-Wert der Kategorie angibt. Sie können die Methode `getId` des `EndpointCategory`-Objekts aufrufen, um den ID-Wert dieser Kategorie abzurufen.
-   * Geben Sie den Vorgang an, der aufgerufen wird, indem Sie die Methode `setOperationName` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen des Vorgangs angibt. Wenn Sie einen `TaskManager`-Endpunkt für einen Service erstellen, der von einem in Workbench erstellten Prozess stammt, lautet der Name des Vorgangs in der Regel `invoke`.
+   * Geben Sie den Wert der Connector-ID an, indem Sie die `CreateEndpointInfo` -Objekt `setConnectorId` -Methode und Übergeben des Zeichenfolgenwerts `TaskManagerConnector`.
+   * Geben Sie die Beschreibung des Endpunkts an, indem Sie die `CreateEndpointInfo` -Objekt `setDescription` -Methode verwenden und einen string -Wert übergeben, der den -Endpunkt beschreibt.
+   * Geben Sie den Namen des Endpunkts an, indem Sie die `CreateEndpointInfo` -Objekt `setName` -Methode verwenden und einen string -Wert übergeben, der den Namen angibt.
+   * Geben Sie den Dienst an, zu dem der Endpunkt gehört, indem Sie die `CreateEndpointInfo` -Objekt `setServiceId` -Methode verwenden und einen string -Wert übergeben, der den Dienstnamen angibt.
+   * Geben Sie die Kategorie an, zu der der Endpunkt gehört, indem Sie die `CreateEndpointInfo` -Objekt `setCategoryId` -Methode verwenden und einen string -Wert übergeben, der den Kategoriekennungswert angibt. Sie können die `EndpointCategory` -Objekt `getId` -Methode, um den Bezeichnerwert dieser Kategorie abzurufen.
+   * Geben Sie den Vorgang an, der durch Aufrufen der `CreateEndpointInfo` -Objekt `setOperationName` -Methode verwenden und einen string -Wert übergeben, der den Vorgangsnamen angibt. Wenn Sie einen `TaskManager`-Endpunkt für einen Service erstellen, der von einem in Workbench erstellten Prozess stammt, lautet der Name des Vorgangs in der Regel `invoke`.
 
 1. Erstellen Sie einen TaskManager-Endpunkt.
 
-   Erstellen Sie den Endpunkt, indem Sie die Methode `createEndpoint` des `EndpointRegistryClient`-Objekts aufrufen und das `CreateEndpointInfo`-Objekt übergeben. Diese Methode gibt ein `Endpoint`-Objekt zurück, das den neuen TaskManager-Endpunkt darstellt.
+   Erstellen Sie den Endpunkt durch Aufrufen der `EndpointRegistryClient` -Objekt `createEndpoint` -Methode und Übergabe der `CreateEndpointInfo` -Objekt. Diese Methode gibt ein `Endpoint`-Objekt zurück, das den neuen TaskManager-Endpunkt darstellt.
 
 1. Aktivieren Sie den Endpunkt.
 
-   Aktivieren Sie den Endpunkt, indem Sie die Methode `enable` des `EndpointRegistryClient`-Objekts aufrufen und das `Endpoint`-Objekt übergeben, das von der Methode `createEndpoint` zurückgegeben wurde.
+   Aktivieren Sie den Endpunkt, indem Sie die `EndpointRegistryClient` -Objekt `enable` -Methode und Übergabe der `Endpoint` -Objekt, das von der `createEndpoint` -Methode.
 
 **Siehe auch**
 
@@ -1050,7 +1046,7 @@ So ändern Sie einen Endpunkt mithilfe der Java-API:
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-livecycle-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-livecycle-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie ein EndpointRegistry-Client-Objekt.
 
@@ -1059,15 +1055,15 @@ So ändern Sie einen Endpunkt mithilfe der Java-API:
 
 1. Rufen Sie den zu ändernden Endpunkt ab.
 
-   * Rufen Sie eine Liste aller Endpunkte ab, auf die der aktuelle Benutzer (angegeben in den Verbindungseigenschaften) zugreifen kann, indem Sie die Methode `getEndpoints` des `EndpointRegistryClient`-Objekts aufrufen und ein `PagingFilter`-Objekt übergeben, das als Filter dient. Sie können einen Wert `(PagingFilter)null` übergeben, damit alle Endpunkte zurückgegeben werden. Diese Methode gibt ein `java.util.List`-Objekt zurück, bei dem jedes Element ein `Endpoint`-Objekt ist. Weitere Informationen zu einem `PagingFilter`-Objekt finden Sie in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Rufen Sie durch Aufrufen der `EndpointRegistryClient` -Objekt `getEndpoints` -Methode und Übergeben einer `PagingFilter` -Objekt, das als Filter dient. Sie können einen Wert `(PagingFilter)null` übergeben, damit alle Endpunkte zurückgegeben werden. Diese Methode gibt ein `java.util.List`-Objekt zurück, bei dem jedes Element ein `Endpoint`-Objekt ist. Weitere Informationen zu einem `PagingFilter`-Objekt finden Sie in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Iterieren Sie durch das `java.util.List`-Objekt, um festzustellen, ob es Endpunkte enthält. Wenn Endpunkte vorhanden sind, ist jedes Element eine `EndPoint`-Instanz.
-   * Ermitteln Sie den Service, der einem Endpunkt entspricht, indem Sie die Methode `getServiceId` des `EndPoint`-Objekts aufrufen. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Namen des Services angibt.
-   * Ermitteln Sie den Typ des Endpunkts, indem Sie die Methode `getConnectorId` des `EndPoint`-Objekts aufrufen. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Typ des Endpunkts angibt. Wenn der Endpunkt beispielsweise ein Endpunkt des Typs „überwachter Ordner“ ist, gibt diese Methode `WatchedFolder` zurück.
+   * Bestimmen Sie den Dienst, der einem Endpunkt entspricht, indem Sie die `EndPoint` -Objekt `getServiceId` -Methode. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Namen des Services angibt.
+   * Bestimmen des Endpunkttyps durch Aufrufen der `EndPoint` -Objekt `getConnectorId` -Methode. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Typ des Endpunkts angibt. Wenn der Endpunkt beispielsweise ein Endpunkt des Typs „überwachter Ordner“ ist, gibt diese Methode `WatchedFolder` zurück.
 
 1. Geben Sie neue Konfigurationswerte an.
 
    * Erstellen Sie ein `ModifyEndpointInfo`-Objekt, indem Sie seinen Konstruktor aufrufen.
-   * Rufen Sie für jeden festzulegenden Konfigurationswert die Methode `setConfigParameterAsText` des `ModifyEndpointInfo`-Objekts auf. Um beispielsweise den URL-Konfigurationswert festzulegen, rufen Sie die Methode `setConfigParameterAsText` des `ModifyEndpointInfo`-Objekts auf und übergeben die folgenden Werte:
+   * Rufen Sie für jeden festzulegenden Konfigurationswert die `ModifyEndpointInfo` -Objekt `setConfigParameterAsText` -Methode. Um beispielsweise den URL-Konfigurationswert festzulegen, rufen Sie die `ModifyEndpointInfo` -Objekt `setConfigParameterAsText` -Methode verwenden und die folgenden Werte übergeben:
 
       * Ein Zeichenfolgenwert, der den Namen des Konfigurationswerts angibt. Um beispielsweise den `url`-Konfigurationswert festzulegen, geben Sie `url` an.
       * Ein Zeichenfolgenwert, der den Wert des Konfigurationswerts angibt. Um einen Wert für den `url`-Konfigurationswert zu definieren, geben Sie den Speicherort des überwachten Ordners an.
@@ -1144,7 +1140,7 @@ So entfernen Sie einen Endpunkt mithilfe der Java-API:
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-livecycle-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-livecycle-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie ein EndpointRegistry-Client-Objekt.
 
@@ -1153,14 +1149,14 @@ So entfernen Sie einen Endpunkt mithilfe der Java-API:
 
 1. Rufen Sie den zu entfernenden Endpunkt ab.
 
-   * Rufen Sie eine Liste aller Endpunkte ab, auf die der aktuelle Benutzer (angegeben in den Verbindungseigenschaften) zugreifen kann, indem Sie die Methode `getEndpoints` des `EndpointRegistryClient`-Objekts aufrufen und ein `PagingFilter`-Objekt übergeben, das als Filter dient. Sie können einen `(PagingFilter)null`-Wert übergeben, damit alle Endpunkte zurückgegeben werden. Diese Methode gibt ein `java.util.List`-Objekt zurück, bei dem jedes Element ein `Endpoint`-Objekt ist.
+   * Rufen Sie durch Aufrufen der `EndpointRegistryClient` -Objekt `getEndpoints` -Methode und Übergeben einer `PagingFilter` -Objekt, das als Filter dient. Sie können einen `(PagingFilter)null`-Wert übergeben, damit alle Endpunkte zurückgegeben werden. Diese Methode gibt ein `java.util.List`-Objekt zurück, bei dem jedes Element ein `Endpoint`-Objekt ist.
    * Iterieren Sie durch das `java.util.List`-Objekt, um festzustellen, ob es Endpunkte enthält. Wenn Endpunkte vorhanden sind, ist jedes Element eine `EndPoint`-Instanz.
-   * Ermitteln Sie den Service, der einem Endpunkt entspricht, indem Sie die Methode `getServiceId` des `EndPoint`-Objekts aufrufen. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Namen des Services angibt.
-   * Ermitteln Sie den Typ des Endpunkts, indem Sie die Methode `getConnectorId` des `EndPoint`-Objekts aufrufen. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Typ des Endpunkts angibt. Wenn der Endpunkt beispielsweise ein EJB-Endpunkt ist, gibt diese Methode `EJB` zurück.
+   * Bestimmen Sie den Dienst, der einem Endpunkt entspricht, indem Sie die `EndPoint` -Objekt `getServiceId` -Methode. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Namen des Services angibt.
+   * Bestimmen des Endpunkttyps durch Aufrufen der `EndPoint` -Objekt `getConnectorId` -Methode. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Typ des Endpunkts angibt. Wenn der Endpunkt beispielsweise ein EJB-Endpunkt ist, gibt diese Methode `EJB` zurück.
 
 1. Entfernen Sie den Endpunkt.
 
-   Entfernen Sie den Endpunkt, indem Sie die Methode `remove` des `EndpointRegistryClient`-Objekts aufrufen und das `EndPoint`-Objekt übergeben, das den zu entfernenden Endpunkt darstellt.
+   Entfernen Sie den Endpunkt, indem Sie die `EndpointRegistryClient` -Objekt `remove` -Methode und Übergabe der `EndPoint` -Objekt, das den zu entfernenden Endpunkt darstellt.
 
 **Siehe auch**
 
@@ -1241,7 +1237,7 @@ So rufen Sie Endpunkt-Connector-Informationen mithilfe der Java-API ab:
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-livecycle-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-livecycle-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie ein Client-Objekt vom Typ ConnectorRegistry.
 
@@ -1250,12 +1246,12 @@ So rufen Sie Endpunkt-Connector-Informationen mithilfe der Java-API ab:
 
 1. Geben Sie den Connector-Typ an.
 
-   Geben Sie den Connector-Typ an, indem Sie die `getEndpointDefinition`-Methode des `ConnectorRegistryClient`-Objekts verwenden und einen Zeichenfolgenwert übergeben, der den Connector-Typ angibt. Um beispielsweise den Connector-Typ „Überwachter Ordner“ anzugeben, übergeben Sie den Zeichenfolgenwert `WatchedFolder`. Diese Methode gibt ein `Endpoint`-Objekt zurück, das dem Connector-Typ entspricht.
+   Geben Sie den Connector-Typ an, indem Sie die `ConnectorRegistryClient` -Objekt `getEndpointDefinition` -Methode verwenden und einen string -Wert übergeben, der den Connector-Typ angibt. Um beispielsweise den Connector-Typ „Überwachter Ordner“ anzugeben, übergeben Sie den Zeichenfolgenwert `WatchedFolder`. Diese Methode gibt ein `Endpoint`-Objekt zurück, das dem Connector-Typ entspricht.
 
 1. Rufen Sie Konfigurationswerte ab.
 
-   * Rufen Sie Konfigurationswerte ab, die mit diesem Endpunkt verknüpft sind, indem Sie die `getConfigParameters`-Methode des `Endpoint`-Objekts aufrufen. Diese Methode gibt ein Array von `ConfigParameter`-Objekten zurück.
-   * Rufen Sie Informationen zu den einzelnen Konfigurationswerten ab, indem Sie jedes Element im Array abrufen. Jedes Element ist ein `ConfigParameter`-Objekt. Sie können beispielsweise feststellen, ob der Konfigurationswert erforderlich oder optional ist, indem Sie die `isRequired`-Methode des `ConfigParameter`-Objekts aufrufen. Wenn der Konfigurationswert erforderlich ist, gibt diese Methode `true` zurück.
+   * Rufen Sie Konfigurationswerte ab, die mit diesem Endpunkt verknüpft sind, indem Sie die `Endpoint` -Objekt `getConfigParameters` -Methode. Diese Methode gibt ein Array von `ConfigParameter`-Objekten zurück.
+   * Rufen Sie Informationen zu den einzelnen Konfigurationswerten ab, indem Sie jedes Element im Array abrufen. Jedes Element ist ein `ConfigParameter`-Objekt. Sie können beispielsweise feststellen, ob der Konfigurationswert erforderlich oder optional ist, indem Sie die `ConfigParameter` -Objekt `isRequired` -Methode. Wenn der Konfigurationswert erforderlich ist, gibt diese Methode `true` zurück.
 
 **Siehe auch**
 

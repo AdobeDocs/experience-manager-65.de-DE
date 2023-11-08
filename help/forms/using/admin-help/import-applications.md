@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 3%
@@ -51,7 +51,7 @@ Verwenden Sie den Tab Anwendungen , um in Workbench erstellte Anwendungen zu imp
 
    Die Registerkarte Eigenschaften auf der rechten Seite zeigt die Eigenschaften des ausgewählten CRX-Knotens an.
 
-   Die **syncState** -Eigenschaft gibt den Status der Synchronisierung von Daten zwischen dem AEM forms-Server und dem CRX-Repository an. Sobald der Importvorgang beginnt, wird dieser Status auf 0 (null) gesetzt. Dieser Status zeigt an, dass die Daten derzeit nicht synchronisiert sind. Wenn die Daten synchronisiert werden, wird der Status auf 1 gesetzt.
+   Die **syncState** -Eigenschaft gibt den Status der Synchronisierung der Daten zwischen dem AEM Forms-Server und dem CRX-Repository an. Sobald der Importvorgang beginnt, wird dieser Status auf 0 (null) gesetzt. Dieser Status zeigt an, dass die Daten derzeit nicht synchronisiert sind. Wenn die Daten synchronisiert werden, wird der Status auf 1 gesetzt.
 
 ## Bereitstellen einer Anwendung {#deploy-an-application}
 

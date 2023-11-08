@@ -1,19 +1,15 @@
 ---
 title: Konfigurieren der Segmentierung mit ContextHub
-seo-title: Configuring Segmentation with ContextHub
 description: Erfahren Sie, wie Sie die Segmentierung mit ContextHub konfigurieren.
-seo-description: Learn how to configure segmentation with Context Hub.
-uuid: 196cfb18-317c-443d-b6f1-f559e4221baa
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 81%
+source-wordcount: '1772'
+ht-degree: 79%
 
 ---
 
@@ -52,7 +48,7 @@ Die **Segment-Editor** ermöglicht Ihnen die einfache Änderung eines Segments. 
 
 Mithilfe des Komponenten-Browsers können Sie **UND**- und **ODER**-Container zur Festlegung der Segmentlogik und anschließend zusätzliche Komponenten zum Vergleich von Eigenschaften und Werten oder Referenzskripts oder anderen Segmenten zur Definition der Auswahlkriterien (siehe [Erstellen eines neuen Segments](#creating-a-new-segment)) hinzufügen, um das genaue Szenario für die Auswahl des Segments festzulegen.
 
-Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufgelöst. Falls mehrere Segmente zutreffen, wird außerdem der Faktor **Verstärken** verwendet. Unter [Erstellen eines neuen Segments](#creating-a-new-segment) finden Sie weitere Details zum [Faktor „Verstärken“](/help/sites-administering/campaign-segmentation.md#boost-factor).
+Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufgelöst. Wenn mehrere anwendbare Segmente vorhanden sind, wird die **Verstärken** wird auch verwendet. Unter [Erstellen eines neuen Segments](#creating-a-new-segment) finden Sie weitere Details zum [Faktor „Verstärken“](/help/sites-administering/campaign-segmentation.md#boost-factor).
 
 >[!CAUTION]
 >
@@ -164,7 +160,7 @@ Festlegen eines neuen Segments
 
 Mithilfe der UND- und ODER-Container-Komponenten können Sie komplexe Segmente in AEM erstellen. Dabei ist es hilfreich, einige grundlegende Punkte zu beachten:
 
-* Die oberste Ebene der Definition ist immer der ursprünglich erstellte UND-Container. Dies kann nicht verändert werden, hat allerdings auch keine Auswirkungen auf den Rest der Segmentdefinition.
+* Die oberste Ebene der Definition ist immer der ursprünglich erstellte UND-Container. Dies kann nicht geändert werden, hat jedoch keine Auswirkungen auf den Rest Ihrer Segmentdefinition.
 * Stellen Sie sicher, dass die Verschachtelung Ihres Containers sinnvoll ist. Die Container können als die Klammern Ihres booleschen Ausdrucks betrachtet werden.
 
 Das folgende Beispiel wird verwendet, um Besucher auszuwählen, die in unserer Hauptaltersgruppe berücksichtigt werden:

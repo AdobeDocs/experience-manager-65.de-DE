@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2505'
-ht-degree: 86%
+source-wordcount: '2503'
+ht-degree: 83%
 
 ---
 
@@ -117,9 +117,9 @@ Wenn das Verwerfen des Auftrags gelungen ist, gibt diese URL eine leere Nachrich
 
 ## Fehlerberichterstattung {#error-reporting}
 
-Wenn eine synchrone oder asynchrone Aufrufanforderung aufgrund einer auf dem Server ausgelösten Ausnahme nicht abgeschlossen werden kann, wird die Ausnahme als Teil der HTTP-Antwortnachricht gemeldet. Wenn die Aufruf-URL (oder die `async_result`-URL bei einem asynchronen Aufruf) kein Suffix „.xml“ aufweist, gibt der REST-Provider den HTTP-Code `500 Internal Server Error` gefolgt von einer Ausnahmemeldung zurück.
+Wenn eine synchrone oder asynchrone Aufrufanforderung aufgrund einer auf dem Server ausgelösten Ausnahme nicht abgeschlossen werden kann, wird die Ausnahme als Teil der HTTP-Antwortnachricht gemeldet. Wenn die Aufruf-URL (oder die `async_result` URL, wenn ein asynchroner Aufruf vorhanden ist) kein .xml-Suffix aufweist, gibt der REST-Provider den HTTP-Code zurück `500 Internal Server Error` gefolgt von einer Ausnahmemeldung.
 
-Wenn die Aufruf-URL (oder die `async_result`-URL bei einem asynchronen Aufruf) das Suffix „.xml“ aufweist, gibt der REST-Provider den HTTP-Code `200 OK` gefolgt von einem XML-Dokument, das die Ausnahme im nachfolgend angegebenen Format beschreibt, zurück.
+Wenn die Aufruf-URL (oder die `async_result` URL, wenn ein asynchroner Aufruf vorhanden ist) das Suffix .xml aufweist, gibt der REST-Provider den HTTP-Code zurück `200 OK`gefolgt von einem XML-Dokument, das die Ausnahme im folgenden Format beschreibt.
 
 ```xml
  <exception>
@@ -143,7 +143,7 @@ Die `DSCError`-Element ist optional und nur vorhanden, wenn die Ausnahme eine In
 
 ## Sicherheit und Authentifizierung {#security-and-authentication}
 
-Um REST-Aufrufe mit einem sicheren Transport bereitzustellen, kann ein AEM Forms-Administrator das HTTPS-Protokoll auf dem J2EE-Anwendungsserver aktivieren, der als Host für AEM Forms dient. Diese Konfiguration ist spezifisch für den J2EE-Anwendungsserver. Sie ist kein Bestandteil der Formular-Server-Konfiguration.
+Um REST-Aufrufe mit einem sicheren Transport bereitzustellen, kann ein AEM Forms-Administrator das HTTPS-Protokoll auf dem J2EE-Anwendungsserver aktivieren, der als Host für AEM Forms dient. Diese Konfiguration ist spezifisch für den J2EE-Anwendungsserver. Sie ist nicht Teil der Forms Server-Konfiguration.
 
 >[!NOTE]
 >

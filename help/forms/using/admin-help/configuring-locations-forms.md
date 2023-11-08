@@ -8,10 +8,10 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d2b7cfb-228c-4cc2-8fcd-d500f0010010
 exl-id: 0d9eb7fe-28a6-444e-957d-023687158c61
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 44%
+source-wordcount: '822'
+ht-degree: 42%
 
 ---
 
@@ -82,11 +82,11 @@ Der Standardwert ist eine leere Zeichenfolge.
 **Standardspeicherort:** Dies ist die Standardauswahl. Wenn diese Option ausgewählt ist, wird der Zwischenspeicher an einem Speicherort erstellt, der von dem von Ihnen verwendeten Anwendungsserver abhängig ist:
 
 * **JBoss:** [JBoss-Startseite]\server\[install type]\svcdata\FormServer\Cache
-* **WebLogic:** [WebLogic-Startseite]\user_projects\domains\[AEM Forms-Domain-Name]\adobe\[Name des Formular-Servers]\FormServer\Cache
+* **WebLogic:** [WebLogic-Startseite]\user_projects\domains\[aem-forms-Domänenname]\adobe\[Forms-Servername]\FormServer\Cache
 * **WebSphere:** [IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
 **Temporärer LC-Ordner:** Der Zwischenspeicher wird in einem Unterordner des temporären Ordners von AEM Forms erstellt, der in der Administration-Console unter „Einstellungen“ > „Core-Systemeinstellungen“ > „Konfigurationen“ > „Speicherort des temporären Verzeichnisses“ angegeben ist. Der Unterordner heißt adobeform_[Servername].
 
 >[!NOTE]
 >
->Wenn Sie ein Bereinigungsprogramm für temporäre Dateien verwenden, beachten Sie, dass das Löschen dieser Verzeichnisse zwar keine Auswirkungen auf die Funktionalität hat, die Leistung jedoch für kurze Zeit erheblich beeinträchtigt werden kann, bis der neue Cache erstellt wird. Um dieses Problem zu vermeiden, sollten Sie diese Ordner nicht löschen, während Sie den temporären Ordner für AEM Formulare löschen.
+>Wenn Sie ein Bereinigungsprogramm für temporäre Dateien verwenden, während das Löschen dieser Verzeichnisse keine Auswirkungen auf die Funktionalität hat, kann dies die Leistung für kurze Zeit erheblich beeinträchtigen, bis der neue Cache erstellt wird. Um dieses Problem zu vermeiden, sollten Sie diese Ordner nicht löschen, während Sie den temporären Ordner für AEM Formulare löschen.

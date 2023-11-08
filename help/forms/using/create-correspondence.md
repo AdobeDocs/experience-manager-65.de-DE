@@ -1,19 +1,15 @@
 ---
 title: Korrespondenz erstellen
-seo-title: Create Correspondence
 description: Nachdem Sie eine Briefvorlage erstellt haben, können Sie sie dafür verwenden, in AEM Forms Korrespondenz zu erstellen, indem Sie Daten, Inhalte und Anhänge verwalten.
-seo-description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
-uuid: 48cf2b26-c9b4-4127-9ea0-1b36addbff60
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3853'
-ht-degree: 99%
+source-wordcount: '3849'
+ht-degree: 98%
 
 ---
 
@@ -261,11 +257,11 @@ Sie können Änderungen an Layout und Inhalt des Briefs vornehmen, um sicherzust
    >
    >Wenn Sie Mozilla Firefox und den Wiedergabetyp HTML verwenden, stellen Sie sicher, dass Sie das native Browser-Plug-in und nicht das Acrobat-Plug-in verwenden, um den Brief als reduzierte PDF-Datei in der Vorschau anzuzeigen. Um das native Browser-Plug-in auszuwählen, gehen Sie zu den Einstellungen von Mozilla Firefox und wählen Sie für den PDF-Inhaltstyp die Option „Vorschau in Firefox“.
 
-1. Wenn die reduzierte PDF-Vorschau Ihren Vorstellungen entspricht, tippen Sie auf **Senden**, um den Brief zu senden. Wenn Sie Änderungen am Brief vornehmen möchten, tippen Sie stattdessen auf **Vorschau beenden**, um zur Vorschau des Briefs in der Benutzeroberfläche „Korrespondenz erstellen“ zurückzukehren und dort die Änderungen vorzunehmen. Wenn Sie auf „Senden“ tippen, wird die Instanz „Brief senden“ erstellt, falls die Konfiguration „Briefinstanz verwalten“ in der Instanz „Veröffentlichen“ aktiviert ist.
+1. Wenn die reduzierte PDF-Vorschau Ihren Vorstellungen entspricht, tippen Sie auf **Senden**, um den Brief zu senden. Um den Brief zu ändern, tippen Sie auf **Vorschau beenden** , um zur Vorschau des Briefs in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;zurückzukehren und dort Änderungen vorzunehmen. Wenn Sie auf „Senden“ tippen, wird die Instanz „Brief senden“ erstellt, falls die Konfiguration „Briefinstanz verwalten“ in der Instanz „Veröffentlichen“ aktiviert ist.
 
    Weitere Informationen finden Sie unter „Entwurfsinstanz“ unter „Speichern von Entwürfen und Senden von Briefinstanzen“.
 
-   Sie können den Brief auch als Entwurf speichern, um später Änderungen daran vorzunehmen.
+   Sie können den Brief auch als Entwurf speichern, um ihn später zu ändern.
 
    Nachdem Sie die erforderlichen Änderungen vorgenommen haben, können Sie den Brief entweder über die HTML5-Vorschau senden oder erneut auf „Vorschau“ tippen, um die reduzierte PDF-Ausgabe zu überprüfen.
 

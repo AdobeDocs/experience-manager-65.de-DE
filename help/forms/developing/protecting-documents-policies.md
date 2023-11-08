@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '15468'
+source-wordcount: '15464'
 ht-degree: 82%
 
 ---
@@ -323,7 +323,7 @@ Code-Beispiele zur Verwendung des Document Security-Services finden Sie in den f
 
 ## Ändern von Richtlinien {#modifying-policies}
 
-Sie können eine bestehende Richtlinie mit der Document Security-Java-API oder der Webservice-API ändern. Um Änderungen an einer bestehenden Richtlinie vorzunehmen, rufen Sie sie ab, ändern Sie sie und aktualisieren Sie dann die Richtlinie auf dem Server. Angenommen, Sie rufen z. B. eine bestehende Richtlinie ab und verlängern ihre Gültigkeitsdauer. Bevor die Änderung wirksam wird, müssen Sie die Richtlinie aktualisieren.
+Sie können eine bestehende Richtlinie mit der Document Security-Java-API oder der Webservice-API ändern. Um eine vorhandene Richtlinie zu ändern, rufen Sie sie ab, ändern Sie sie und aktualisieren Sie dann die Richtlinie auf dem Server. Angenommen, Sie rufen z. B. eine bestehende Richtlinie ab und verlängern ihre Gültigkeitsdauer. Bevor die Änderung wirksam wird, müssen Sie die Richtlinie aktualisieren.
 
 Sie können eine Richtlinie ändern, wenn sich die Geschäftsanforderungen ändern und die Richtlinie diese Anforderungen nicht mehr widerspiegelt. Anstatt eine Richtlinie zu erstellen, können Sie einfach eine vorhandene Richtlinie aktualisieren.
 
@@ -1477,7 +1477,7 @@ Code-Beispiele zur Verwendung des Document Security-Services finden Sie in den f
 
 ## Ändern von Wasserzeichen {#modifying-watermarks}
 
-Sie können ein vorhandenes Wasserzeichen mithilfe der Document Security Java-API oder der Web-Service-API ändern. Sie nehmen Änderungen an einem vorhandenen Wasserzeichen vor, indem Sie es abrufen, seine Attribute ändern und es dann auf dem Server aktualisieren. Angenommen, Sie rufen ein Wasserzeichen ab und ändern dessen Attribut für die Deckkraft. Die Änderung wird erst wirksam, nachdem Sie das Wasserzeichen aktualisiert haben.
+Sie können ein vorhandenes Wasserzeichen mithilfe der Document Security Java-API oder der Web-Service-API ändern. Um ein vorhandenes Wasserzeichen zu ändern, rufen Sie es ab, ändern seine Attribute und aktualisieren Sie es dann auf dem Server. Angenommen, Sie rufen ein Wasserzeichen ab und ändern dessen Attribut für die Deckkraft. Die Änderung wird erst wirksam, nachdem Sie das Wasserzeichen aktualisiert haben.
 
 Wenn Sie ein Wasserzeichen ändern, wirkt sich die Änderung auf zukünftige Dokumente aus, auf die das Wasserzeichen angewendet wird. Vorhandene PDF-Dokumente, die das Wasserzeichen enthalten, sind also nicht betroffen.
 

@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '3498'
-ht-degree: 45%
+source-wordcount: '3493'
+ht-degree: 44%
 
 ---
 
@@ -547,7 +547,7 @@ Wenn das Designpaket ein parsys-Komponenten-Markup enthält, werden nach dem Imp
 Wenn Fehler aufgetreten sind (das importierte Paket beispielsweise ist keine gültige ZIP-Datei), importiert der Design-Import das Paket nicht. Stattdessen wird oben auf der Seite direkt über dem Drag &amp; Drop-Feld eine Fehlermeldung angezeigt. Hier werden Beispiele für Fehlerszenarios aufgeführt. Nachdem Sie den Fehler korrigiert haben, können Sie die aktualisierte ZIP-Datei erneut auf dieselbe leere Landingpage importieren. Folgende Szenarien weisen Fehler auf:
 
 * Das importierte Designpaket ist kein gültiges ZIP-Archiv.
-* Das importierte Designpaket enthält auf der höchsten Ebene keine index.html.
+* Das importierte Designpaket enthält kein index.html auf der obersten Ebene.
 
 ### Nach dem Import werden Warnmeldungen angezeigt {#warnings-displayed-after-import}
 
@@ -598,4 +598,4 @@ Dann `box img` im Design Importer verwendet wird, scheint die resultierende Land
 
 >[!NOTE]
 >
->Außerdem sollten Designer beachten, dass nur Code innerhalb des **id=cqcanvas**-Tags vom Importer erkannt wird. Andernfalls bleibt das Design nicht erhalten.
+>Designer sollten nur Code innerhalb der **id=cqcanvas** -Tag vom Importtool erkannt wird, andernfalls wird das Design nicht beibehalten.

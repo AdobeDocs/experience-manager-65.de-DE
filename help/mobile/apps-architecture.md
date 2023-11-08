@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: 397def36-45b2-47a7-b103-99ca22b6dae1
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '2663'
+source-wordcount: '2658'
 ht-degree: 0%
 
 ---
@@ -160,11 +160,11 @@ Dieses Skript gibt einfach die Angular-Abhängigkeiten des Angular-App-Moduls de
 
 ### header.jsp {#header-jsp}
 
-Ein Skript zum Platzieren von statischen Inhalten am Anfang der App. Dieser Inhalt wird von der obersten Ebene außerhalb des Bereichs der ng-Ansicht einbezogen.
+Ein Skript zum Platzieren von statischen Inhalten am Anfang der App. Dieser Inhalt wird von der Seite der obersten Ebene außerhalb des Bereichs &quot;ng-view&quot;einbezogen.
 
 ### footer.jsp {#footer-jsp}
 
-Ein Skript zum Platzieren von statischen Inhalten am unteren Rand der App. Dieser Inhalt wird von der obersten Ebene außerhalb des Bereichs der ng-Ansicht einbezogen.
+Ein Skript zum Platzieren von statischen Inhalten am unteren Rand der App. Dieser Inhalt wird von der Seite der obersten Ebene außerhalb des Bereichs &quot;ng-view&quot;einbezogen.
 
 ### js_clientlibs.jsp {#js-clientlibs-jsp}
 
@@ -191,7 +191,7 @@ Beachten Sie die GUID &quot;24BA22ED-7D06-4330-B7EB-F6FC73251CA3&quot;im Pfad.
 
 Als PhoneGap-Entwickler befindet sich der Inhalt, mit dem Sie befasst sind, unter dem www-Verzeichnis. Verwenden Sie relative Pfade, um auf die App-Assets zuzugreifen.
 
-Um das Problem zu beheben, verwendet Ihre PhoneGap-Anwendung das Muster der Einzelseiten-App (SPA), sodass sich der Basis-URI (ohne den Hash) nie ändert. Daher werden alle Assets, Vorlagen oder Skripte, auf die Sie verweisen, **muss relativ zu Ihrer Seite der obersten Ebene sein.** Die oberste Seite initialisiert das Angular-Routing und die Controller anhand von `*<name>*.angular-app-module.js` und `*<name>*.angular-app-controllers.js`. Diese Seite sollte die nächstgelegene Seite zum Stammverzeichnis des Repositorys sein, das *keine Erweiterung einer sling:redirect darstellt.
+Um das Problem zu beheben, verwendet Ihre PhoneGap-Anwendung das Muster der Einzelseiten-App (SPA), sodass sich der Basis-URI (ohne den Hash) nie ändert. Daher werden alle Assets, Vorlagen oder Skripte, auf die Sie verweisen, **muss relativ zu Ihrer Seite der obersten Ebene sein.** Die Seite auf oberster Ebene initialisiert das Angular-Routing und die Controller anhand von `*<name>*.angular-app-module.js` und `*<name>*.angular-app-controllers.js`. Diese Seite sollte die nächstgelegene Seite zum Stammverzeichnis des Repositorys sein, das *keine Erweiterung einer sling:redirect darstellt.
 
 Für den Umgang mit relativen Pfaden stehen verschiedene Hilfsmethoden zur Verfügung:
 

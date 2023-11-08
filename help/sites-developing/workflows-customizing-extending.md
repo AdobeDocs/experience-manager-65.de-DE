@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3588'
-ht-degree: 66%
+source-wordcount: '3589'
+ht-degree: 65%
 
 ---
 
@@ -49,7 +49,7 @@ Wie bei [Alle Komponenten](/help/sites-developing/components.md), erben Workflow
 >
 >Die empfohlene Methode für Konfigurations- und sonstige Änderungen sieht wie folgt aus:
 >
->1. Erstellen Sie das erforderliche Element erneut (d. h. wie es in `/libs` unter `/apps` existiert.
+>1. Erstellen Sie das erforderliche Element (d. h., wie es in `/libs` under `/apps`
 >2. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
 Die Komponente `/libs/cq/workflow/components/model/step` ist der nächste gemeinsame Vorgänger von **Prozess-Schritt**, **Teilnehmer-Schritt** und **Dynamischer-Teilnehmer-Schritt**, die alle die folgenden Elemente erben:

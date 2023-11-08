@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 feature: Forms Portal
 exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
-source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '332'
-ht-degree: 28%
+ht-degree: 33%
 
 ---
 
@@ -23,9 +23,9 @@ Standardmäßig speichert AEM Forms die Benutzerdaten, die mit dem Entwurf und d
 
 ## Voraussetzungen  {#prerequisites}
 
-* Aktivieren [Forms Portal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
-* Erstellen Sie eine [Forms Portal-Seite](/help/forms/using/creating-form-portal-page.md)
-* Aktivieren [adaptive Formulare für Forms Portal](/help/forms/using/draft-submission-component.md)
+* Aktivieren von [Formularportal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
+* Erstellen einer [Formularportal-Seite](/help/forms/using/creating-form-portal-page.md)
+* Aktivieren von [adaptiven Formularen für das Formularportal](/help/forms/using/draft-submission-component.md)
 * Erfahren Sie mehr über [Implementierungsdetails für benutzerdefiniertes Speichern](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Entwurfsdatendienst {#draft-data-service}
@@ -40,7 +40,7 @@ Um die Speicherung von Benutzerdaten für Entwürfe anzupassen, müssen Sie alle
 public interface DraftDataService {
 
     /**
-     * To save/modify user data for this userDataID, it will be null in case of creation
+     * To save/modify user data for this userDataID, it will be null if there is creation
      * @param draftDataID: unique identifier associated with the form data
      * @param formName: name of the form whose draft is being saved
      * @param formData: user data associated with this draft

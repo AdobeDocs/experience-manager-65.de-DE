@@ -1,7 +1,7 @@
 ---
 title: Inhaltsfragmentvorlagen
 seo-title: Content Fragment Templates
-description: Vorlagen werden ausgewählt, wenn ein Inhaltsfragment erstellt und das neue Fragment mit der grundlegenden Struktur, dem Element und der Variante versehen wird
+description: Vorlagen werden beim Erstellen eines Inhaltsfragments ausgewählt und geben dem neuen Fragment die grundlegende Struktur, das Element und die Variante
 seo-description: Templates are selected when creating a content fragmen and provide the new fragment with the basic structure, element, and variation
 uuid: d147bac8-b710-40ed-9664-decb5ffcf8e7
 contentOwner: Guillaume Carlino
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: a975ea2e-5e24-4a96-bd62-63bb98836ff2
 docset: aem65
 exl-id: 1b75721c-b223-41f0-88d9-bd855b529f31
-source-git-commit: a2b1bd5462ae1837470e31cfeb87a95af1c69be5
-workflow-type: ht
-source-wordcount: '674'
-ht-degree: 100%
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+workflow-type: tm+mt
+source-wordcount: '675'
+ht-degree: 93%
 
 ---
 
@@ -56,11 +56,10 @@ Die Rangfolge ist (in absteigender Reihenfolge) `/conf`, `/apps`, `/libs`.
 >
 >Die empfohlene Methode für Konfigurations- und sonstige Änderungen sieht wie folgt aus:
 >
->1. Erstellen Sie das erforderliche Element (d. h., wie unter `/libs`) unter `/apps` neu.
+>1. Erstellen Sie das erforderliche Element (d. h., wie es in `/libs`) unter `/apps`
 >
 >1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 >
-
 
 Die grundlegende Struktur einer Vorlage befindet sich unter:
 
@@ -75,7 +74,7 @@ conf
               ...
 ```
 
-Dabei ist die bestimmte Struktur:
+Die spezifische Struktur lautet:
 
 ```xml
 + <template-name>
@@ -108,7 +107,7 @@ Weitere Details zu den Knoten und ihren Eigenschaften sind:
 
 * **Vorlage**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Name</th>
@@ -150,7 +149,7 @@ Weitere Details zu den Knoten und ihren Eigenschaften sind:
 
 * **Elemente**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Name</th>
@@ -158,7 +157,7 @@ Weitere Details zu den Knoten und ihren Eigenschaften sind:
      <th>Wert</th>
     </tr>
     <tr>
-     <td><code>elements</code> </td>
+     <td><code>elements</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>erforderlich</p> </td>
      <td><p>Knoten, der die Definition der Elemente des Inhaltsfragments enthält. Er ist erforderlich und muss mindestens einen untergeordneten Knoten für das <strong>Haupt</strong>-Element enthalten, kann aber [1..n] untergeordnete Knoten enthalten.</p> <p>Wenn die Vorlage verwendet wird, wird die Unterverzweigung der Elemente in die Modellunterverzweigung des Fragments kopiert.</p> <p>Das erste Element (wie in CRXDE Lite angezeigt) wird automatisch als <i>Haupt</i>-Element betrachtet; der Knotenname ist irrelevant und der Knoten selbst hat keine besondere Bedeutung, abgesehen von der Tatsache, dass er durch das Hauptelement repräsentiert wird. Die anderen Elemente werden als Unterelemente behandelt.</p> </td>
     </tr>
@@ -167,7 +166,7 @@ Weitere Details zu den Knoten und ihren Eigenschaften sind:
 
 * **Elementname**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Name</th>
@@ -209,7 +208,7 @@ Weitere Details zu den Knoten und ihren Eigenschaften sind:
 
 * **Varianten**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Name</th>
@@ -217,7 +216,7 @@ Weitere Details zu den Knoten und ihren Eigenschaften sind:
      <th>Wert</th>
     </tr>
     <tr>
-     <td><code>variations</code> </td>
+     <td><code>variations</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>optional</p> </td>
      <td>Dieser optionale Knoten enthält die Definition der anfänglichen Varianten des Inhaltsfragments.</td>
     </tr>
@@ -226,7 +225,7 @@ Weitere Details zu den Knoten und ihren Eigenschaften sind:
 
 * **Variantenname**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Name</th>
@@ -234,7 +233,7 @@ Weitere Details zu den Knoten und ihren Eigenschaften sind:
      <th>Wert</th>
     </tr>
     <tr>
-     <td><code>&lt;<i>variation-name</i>&gt;</code> </td>
+     <td><code>&lt;<i>variation-name</i>&gt;</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>erforderlich, wenn ein Variantenknoten vorhanden ist</p> </td>
      <td><p>Definiert eine anfängliche Variante.<br /> Die Variante wird standardmäßig allen Elementen des Inhaltsfragments hinzugefügt.</p> <p>Die Variante hat denselben anfänglichen Inhalt wie das entsprechende Element (siehe <code class="code">defaultContent/
        initialContentType</code>)</p> </td>

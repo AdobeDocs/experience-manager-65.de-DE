@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab018b6d-0233-4439-bb75-58c5421d769a
 feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '7285'
+source-wordcount: '7282'
 ht-degree: 35%
 
 ---
@@ -226,7 +226,7 @@ Mit diesen Optionen werden Farb-, Graustufen- und Schwarzweißbilder konfigurier
 
 **Kurzberechnung auf**: Wählt ein Pixel in der Mitte des Auswahlbereichs aus und ersetzt den gesamten Bereich durch dieses Pixel mit der angegebenen Auflösung. Die Subsampling-Funktion verkürzt die Konvertierungsdauer im Vergleich zum Downsampling erheblich, führt jedoch zu weniger glatten und kontinuierlichen Bildern.
 
-Die Auflösungseinstellung für Farb- und Graustufen sollte das 1,5- bis 2-fache der Rasterweitenlinierung betragen, mit der die Datei gedruckt wird. (Sofern Sie diese empfohlene Auflösungseinstellung nicht unterschreiten, sind Bilder ohne geraden Rand oder geometrische oder sich wiederholende Muster von einer niedrigeren Auflösung nicht betroffen.) Die Auflösung für Schwarzweißbilder sollte mit der des Ausgabegeräts identisch sein. Beachten Sie jedoch, dass das Speichern eines Schwarzweißbilds mit einer Auflösung von mehr als 1500 dpi die Dateigröße erhöht, ohne die Bildqualität spürbar zu verbessern.
+Die Auflösungseinstellung für Farb- und Graustufen sollte das 1,5- bis 2-fache der Rasterweitenlinierung betragen, mit der die Datei gedruckt wird. (Sofern Sie diese empfohlene Auflösungseinstellung nicht unterschreiten, sind Bilder ohne geraden Rand oder geometrische oder sich wiederholende Muster von einer niedrigeren Auflösung nicht betroffen.) Die Auflösung für Schwarzweißbilder sollte mit der des Ausgabegeräts identisch sein. Das Speichern eines Schwarzweißbilds mit einer höheren Auflösung als 1500 dpi erhöht jedoch die Dateigröße, ohne die Bildqualität spürbar zu verbessern.
 
 Beachten Sie auch, ob Benutzer eine Seite vergrößern müssen. Wenn Sie beispielsweise ein PDF-Dokument einer Karte erstellen, sollten Sie eine höhere Bildauflösung verwenden, damit Benutzer die Karte vergrößern können.
 

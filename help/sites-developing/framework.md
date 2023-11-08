@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1641'
 ht-degree: 60%
 
 ---
@@ -76,7 +76,7 @@ In AEM ist der Basispfad `/content/cq:tags` und der Stammknoten ist vom Typ `cq:
 
 ### Tag-Namespace {#tag-namespace}
 
-Mithilfe von Namespaces können Sie Elemente gruppieren. Der häufigste Anwendungsfall ist ein Namespace pro Site (z. B. öffentlich, intern und Portal) oder pro größerer Anwendung (z. B. WCM, Assets, Communities). Namespaces können jedoch für verschiedene andere Anforderungen verwendet werden. Namespaces werden in der Benutzeroberfläche verwendet, um nur die Untergruppe von Tags (d. h. Tags eines bestimmten Namespace) anzuzeigen, die für den aktuellen Inhalt gültig ist.
+Mithilfe von Namespaces können Sie Elemente gruppieren. Der häufigste Anwendungsfall ist ein Namespace pro Site (z. B. öffentlich, intern und Portal) oder pro größerer Anwendung (z. B. WCM, Assets, Communities). Namespaces können jedoch für verschiedene andere Anforderungen verwendet werden. Namespaces werden in der Benutzeroberfläche verwendet, um nur die Untergruppe von Tags anzuzeigen (d. h. die Tags eines bestimmten Namespace), die für den aktuellen Inhalt gültig ist.
 
 Der Namespace des Tags ist die erste Ebene im Teilbaum der Taxonomie, der den Knoten direkt unterhalb des [Stammknotens der Taxonomie darstellt](#taxonomy-root-node). Ein Namespace ist ein Knoten vom Typ `cq:Tag`, dessen übergeordnetes Element nicht vom Knotentyp `cq:Tag` ist.
 

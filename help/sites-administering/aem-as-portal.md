@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '6092'
+source-wordcount: '6087'
 ht-degree: 26%
 
 ---
@@ -737,7 +737,7 @@ Standardmäßig stellt das Portlet eine Verbindung zur Veröffentlichungsinstanz
 
 >[!NOTE]
 >
->Diese Verfahren verwenden das Websphere-Portal als Beispiel, obwohl sie so allgemein wie möglich sind. Beachten Sie, dass die Verfahren für andere Webportale variieren. Obwohl die Schritte im Wesentlichen für alle Webportale identisch sind, müssen Sie die Schritte für Ihr bestimmtes Webportal erneut verwenden.
+>Diese Verfahren verwenden das Websphere-Portal als Beispiel, obwohl sie so allgemein wie möglich sind; Verfahren variieren für andere Webportale. Obwohl die Schritte im Wesentlichen für alle Webportale identisch sind, müssen Sie die Schritte für Ihr bestimmtes Webportal erneut verwenden.
 
 #### Installieren des Portlets {#installing-the-portlet}
 

@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '855'
-ht-degree: 23%
+ht-degree: 19%
 
 ---
 
@@ -58,7 +58,7 @@ Sie können beliebig viele Suchvorlagen erstellen.
       * (Optional) Damit Benutzer den Operandenwert in Workspace ändern können, aktivieren Sie die Option &quot;Allow The User To Change The Operand&quot;(Benutzer darf den Operand ändern).
       * (Optional) Damit Benutzer den relationalen Operator ändern können, aktivieren Sie die Option &quot;Allow The User to Select Other Relational Operator (Dem Benutzer erlauben, einen anderen relationalen Operator auszuwählen)&quot;. Wählen Sie in der angezeigten Liste die Benutzer aus, die für den Benutzer verfügbar sein sollen.
 
-     **Tipp**: *Wenn Sie den Prozessnamen als Element ausgewählt haben, können Sie auf das Symbol neben dem Operandenfeld klicken, um eine Liste anzuzeigen, in der Sie einen Prozess auswählen können, der auf dem Formular-Server ausgeführt wird. Nachdem Sie einen Vorgang ausgewählt haben, sind alle in diesem Prozess definierten Prozessvariablen im oberen Bereich der Registerkarte „Kriterien“ unter „Prozessvariablen“ verfügbar.*
+     **Tipp**: *Wenn Sie Prozessname als Element ausgewählt haben, können Sie auf das Symbol neben dem Operandenfeld klicken, um eine Liste anzuzeigen, in der Sie einen Prozess auswählen können, der auf dem Forms-Server ausgeführt wird. Nachdem Sie einen Vorgang ausgewählt haben, sind alle in diesem Prozess definierten Prozessvariablen im oberen Bereich der Registerkarte „Kriterien“ unter „Prozessvariablen“ verfügbar.*
 
      **Tipp**: *Ein Element der Suchvorlage kann gelöscht werden, indem Sie auf das Löschen-Symbol neben den Suchkriterien des Elements klicken.*
 

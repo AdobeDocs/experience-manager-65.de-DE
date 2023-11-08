@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2577'
-ht-degree: 96%
+source-wordcount: '2582'
+ht-degree: 94%
 
 ---
 
@@ -195,7 +195,7 @@ Die neue Rollout-Konfiguration steht dann zur Verfügung, wenn Sie die Rollout-K
    >da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
    >Die empfohlene Methode für Konfigurations- und sonstige Änderungen sieht wie folgt aus:
    >
-   >* Erstellen Sie das erforderliche Element (d. h., wie unter `/libs`) unter `/apps` neu.
+   >* Erstellen Sie das erforderliche Element (d. h., wie es in `/libs`) unter `/apps`
    >* Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
 1. **Erstellen** Sie darunter einen Knoten mit den folgenden Eigenschaften:
@@ -655,11 +655,11 @@ Beispiel: Zwei neue Seiteneigenschaften werden hinzugefügt:
 
 * Kontakt-E-Mail:
 
-   * Diese Eigenschaft muss nicht bereitgestellt werden, da sie in jedem Land (oder bei jeder Marke usw.) anders ausfällt.
+   * Diese Eigenschaft muss nicht ausgerollt werden, da sie in den einzelnen Ländern (oder Marken usw.) unterschiedlich ist.
 
 * Wichtigster visueller Stil:
 
-   * Die Projektanforderung gibt das Bereitstellen dieser Eigenschaft vor, da sie (in der Regel) in allen Ländern (oder bei allen Marken usw.) gleich ist.
+   * Die Projektanforderung besteht darin, dass diese Eigenschaft eingeführt wird, da sie (normalerweise) allen Ländern (oder Marken usw.) gemeinsam ist.
 
 Dann müssen Sie Folgendes sicherstellen:
 

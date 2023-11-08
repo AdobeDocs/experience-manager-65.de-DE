@@ -2,10 +2,10 @@
 title: AEM Content and Commerce – Versionshinweise 2020
 description: Versionshinweise zu Adobe Experience Manager Content and Commerce 2020.
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 68%
+source-wordcount: '1352'
+ht-degree: 67%
 
 ---
 
@@ -143,7 +143,7 @@ Dies ist die erste Version der CIF-Kernkomponenten, die von Adobe Experience Man
 
 * Kategoriefilterung wurde als Facette hinzugefügt, damit Käufer nach Kategorie filtern können.
 
-* Eine Zuordnung von Service und Benutzer wurde als Teil der Sicherheitsanforderung hinzugefügt, um den Zugriff auf „/conf“ über Service-Benutzer und nicht durch direkte Bearbeitung von ACLs sicherzustellen. CIF-Kernkomponenten müssen jetzt einen Service-Benutzer verwenden, um auf Konfigurationen zuzugreifen.
+* Eine Zuordnung von Service und Benutzer wurde als Teil der Sicherheitsanforderung hinzugefügt, um den Zugriff auf „/conf“ über Service-Benutzer und nicht durch direkte Bearbeitung von ACLs sicherzustellen. CIF Kernkomponenten müssen einen Dienstbenutzer verwenden, um auf Konfigurationen zuzugreifen.
 
 ### Verbesserte Funktionen {#what-is-improved-june}
 

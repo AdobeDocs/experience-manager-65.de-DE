@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '6818'
-ht-degree: 45%
+source-wordcount: '6816'
+ht-degree: 44%
 
 ---
 
@@ -594,7 +594,7 @@ Weitere Informationen finden Sie in der Tabelle im [Standardkonfiguration seit A
 
 Die Ausnahme der Administratorgruppe kann in der Systemkonsole im Konfigurationsabschnitt **Apache Jackrabbit Oak CUG Exclude List** geändert oder erweitert werden.
 
-Alternativ ist es möglich, eine benutzerdefinierte Bereitstellung der CugExclude-Schnittstelle bereitzustellen, um den Satz ausgenommener Prinzipale im Falle spezieller Anforderungen anzupassen. Weitere Informationen sowie eine Beispielimplementierung finden Sie in der Dokumentation zu [CUG-Austauschbarkeit](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability).
+Alternativ ist es möglich, eine benutzerdefinierte Implementierung der CugExclude-Schnittstelle bereitzustellen und bereitzustellen, um den Satz ausgeschlossener Prinzipale anzupassen, wenn besondere Anforderungen vorliegen. Weitere Informationen sowie eine Beispielimplementierung finden Sie in der Dokumentation zu [CUG-Austauschbarkeit](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability).
 
 ### Authentifizierung: Einrichtung und Konfiguration {#authentication-setup-and-configuration}
 
@@ -710,7 +710,7 @@ Neue Installationen von AEM werden standardmäßig die neuen Implementierungen s
 
 ## Deaktivieren der CUG-Autorisierungs- und Authentifizierungspflicht {#disabling-cug-authorization-and-authentication-requirement}
 
-Die neue Implementierung kann vollständig deaktiviert werden, wenn eine bestimmte Installation keine CUGs nutzt oder andere Authentifizierungs- und Autorisierungsmöglichkeiten verwendet.
+Die neue Implementierung kann vollständig deaktiviert werden, wenn eine bestimmte Installation keine CUGs verwendet oder andere Authentifizierungs- und Autorisierungsmöglichkeiten verwendet.
 
 ### CUG-Autorisierung deaktivieren {#disable-cug-authorization}
 

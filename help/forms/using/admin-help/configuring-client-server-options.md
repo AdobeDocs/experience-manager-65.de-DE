@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '10228'
+source-wordcount: '10221'
 ht-degree: 27%
 
 ---
@@ -51,7 +51,7 @@ Weitere Informationen zur Funktionsweise der Offline-Nutzung und Synchronisation
 
 **Erweiterte Authentifizierung gestatten** Wählen Sie diese Option, um erweiterte Authentifizierung zu aktivieren, und geben Sie dann die Startseiten-URL für die erweiterte Authentifizierung ein.
 
-Wenn Sie diese Option auswählen, können Clientanwendungen erweiterte Authentifizierung verwenden. Die erweiterte Authentifizierung bietet benutzerdefinierte Authentifizierungsprozesse und verschiedene Authentifizierungsoptionen, die auf dem AEM forms-Server konfiguriert sind. Beispielsweise können Benutzer jetzt die SAML-basierte Authentifizierung anstelle von Benutzername/Kennwort für AEM Formulare von Acrobat und Reader Client aus erleben. Standardmäßig enthält die Landingpage-URL *localhost* als Servernamen. Ersetzen Sie den Servernamen durch einen vollständig qualifizierten Hostnamen. Der Hostname in der Landingpage-URL wird automatisch aus der Basis-URL gefüllt, wenn die erweiterte Authentifizierung noch nicht aktiviert ist. Siehe [Erweiterten Authentifizierungsanbieter hinzufügen](configuring-client-server-options.md#add-the-extended-authentication-provider).
+Wenn Sie diese Option auswählen, können Clientanwendungen erweiterte Authentifizierung verwenden. Die erweiterte Authentifizierung bietet benutzerdefinierte Authentifizierungsprozesse und verschiedene Authentifizierungsoptionen, die auf dem AEM Forms-Server konfiguriert sind. Beispielsweise können Benutzer jetzt die SAML-basierte Authentifizierung anstelle von Benutzername/Kennwort für AEM Formulare von Acrobat und Reader Client aus erleben. Standardmäßig enthält die Landingpage-URL *localhost* als Servernamen. Ersetzen Sie den Servernamen durch einen vollständig qualifizierten Hostnamen. Der Hostname in der Landingpage-URL wird automatisch aus der Basis-URL gefüllt, wenn die erweiterte Authentifizierung noch nicht aktiviert ist. Siehe [Erweiterten Authentifizierungsanbieter hinzufügen](configuring-client-server-options.md#add-the-extended-authentication-provider).
 
 ***Hinweis **: Erweiterte Authentifizierung wird auf Apple Mac OS X mit Adobe Acrobat ab Version 11.0.6 unterstützt.*
 
@@ -100,7 +100,7 @@ AEM Forms bietet eine Beispielkonfiguration, die Sie für Ihre Umgebung anpassen
 >Erweiterte Authentifizierung wird unter Apple Mac OS X mit Adobe Acrobat-Version 11.0.6 und höher unterstützt.
 
 1. Rufen Sie die WAR-Beispieldatei ab, um sie bereitzustellen. Weitere Informationen finden Sie im entsprechenden Installationshandbuch für Ihren Anwendungsserver.
-1. Stellen Sie sicher, dass der Formularserver einen vollständig qualifizierten Namen anstelle von IP-Adressen als Basis-URL hat und dass es sich um eine HTTPS-URL handelt. Siehe [Serverkonfigurationseinstellungen](configuring-client-server-options.md#server-configuration-settings).
+1. Stellen Sie sicher, dass der Forms-Server einen vollständig qualifizierten Namen anstelle von IP-Adressen als Basis-URL hat und dass es sich um eine HTTPS-URL handelt. Siehe [Serverkonfigurationseinstellungen](configuring-client-server-options.md#server-configuration-settings).
 1. Aktivieren Sie auf der Seite &quot;Serverkonfiguration&quot;die erweiterte Authentifizierung. Siehe [Serverkonfigurationseinstellungen](configuring-client-server-options.md#server-configuration-settings).
 1. Fügen Sie die erforderlichen SSO-Umleitungs-URLs in die User Management-Konfigurationsdatei ein. Siehe [SSO-Umleitungs-URLs für erweiterte Authentifizierung hinzufügen](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication).
 
@@ -155,7 +155,7 @@ Um ein richtliniengeschütztes Dokument offline zu öffnen, muss der Computer de
 
 Eine Möglichkeit, die Bedrohung für Offline-Dokumente zu verringern, besteht darin, zu verhindern, dass der Offline-Zugriff auf besonders vertrauliche Dokumente ermöglicht wird. Eine andere Methode besteht darin, die Hauptschlüssel regelmäßig zu aktualisieren. Wenn Document Security den Schlüssel umsetzt, können vorhandene Schlüssel nicht mehr auf die richtliniengeschützten Dokumente zugreifen. Wenn beispielsweise ein Täter einen Hauptschlüssel von einem gestohlenen Laptop erhält, kann dieser Schlüssel nicht für den Zugriff auf die Dokumente verwendet werden, die nach dem Rollover geschützt sind. Wenn Sie vermuten, dass ein bestimmter Hauptschlüssel beschädigt wurde, können Sie den Schlüssel manuell aktualisieren.
 
-Beachten Sie jedoch auch, dass ein Schlüsselaktualisierung alle Hauptschlüssel betrifft, nicht nur einen. Außerdem wird die Skalierbarkeit des Systems verringert, da Clients mehr Schlüssel für den Offline-Zugriff speichern müssen. Die standardmäßige Schlüsselaktualisierungshäufigkeit beträgt 20 Tage. Es wird empfohlen, diesen Wert nicht auf weniger als 14 Tage festzulegen, da Personen möglicherweise daran gehindert werden, Offline-Dokumente anzuzeigen, und die Systemleistung möglicherweise beeinträchtigt ist.
+Eine Schlüsselaktualisierung betrifft jedoch alle Hauptschlüssel, nicht nur einen. Außerdem wird die Skalierbarkeit des Systems verringert, da Clients mehr Schlüssel für den Offline-Zugriff speichern müssen. Die standardmäßige Schlüsselaktualisierungshäufigkeit beträgt 20 Tage. Es wird empfohlen, diesen Wert nicht auf weniger als 14 Tage festzulegen, da Personen möglicherweise daran gehindert werden, Offline-Dokumente anzuzeigen, und die Systemleistung möglicherweise beeinträchtigt ist.
 
 Im folgenden Beispiel ist Schlüssel1 der ältere der beiden Hauptschlüssel und Schlüssel2 der neuere. Wenn Sie das erste Mal auf die Schaltfläche &quot;Schlüssel jetzt aktualisieren&quot;klicken, wird Schlüssel1 ungültig und ein neuer, gültiger Hauptschlüssel (Schlüssel3) wird generiert. Benutzer erhalten Schlüssel3, wenn sie mit Document Security synchronisieren, in der Regel durch Öffnen eines geschützten Dokuments online. Benutzer müssen jedoch erst mit Document Security synchronisieren, wenn sie die in einer Richtlinie angegebene maximale Offline-Nutzungsdauer erreicht haben. Nach der ersten Schlüsselaktualisierung können Benutzer, die offline bleiben, weiterhin Offline-Dokumente öffnen, einschließlich der durch Schlüssel3 geschützten Dokumente, bis sie die maximale Offline-Nutzungsdauer erreichen. Wenn Sie ein zweites Mal auf die Schaltfläche &quot;Schlüssel jetzt aktualisieren&quot;klicken, wird Schlüssel2 ungültig und Schlüssel4 wird erstellt. Benutzer, die während der beiden Schlüsselaktualisierungen offline sind, können mit Schlüssel3 oder Schlüssel4 geschützte Dokumente erst öffnen, wenn sie mit Document Security synchronisiert werden.
 
@@ -259,7 +259,7 @@ Sie können Prüfereignisse zu Archivierungszwecken in eine Datei exportieren.
 
    * das Mindestalter der zu exportierenden Prüfereignisse
    * die maximale Anzahl von Prüfereignissen, die in eine Datei aufgenommen werden sollen. Der Server generiert eine oder mehrere Dateien, die auf diesem Wert basieren.
-   * den Ordner, in dem die Datei erstellt wird. Dieser Ordner befindet sich auf dem Formularserver. Wenn der Ordnerpfad relativ ist, ist er relativ zum Stammordner des Anwendungsservers.
+   * den Ordner, in dem die Datei erstellt wird. Dieser Ordner befindet sich auf dem Forms-Server. Wenn der Ordnerpfad relativ ist, ist er relativ zum Stammordner des Anwendungsservers.
    * das Dateipräfix, das für die Prüfereignisdateien verwendet werden soll
    * das Dateiformat, entweder eine CSV-Datei (kommagetrennte Werte), die mit Microsoft Excel kompatibel ist, oder eine XML-Datei.
 

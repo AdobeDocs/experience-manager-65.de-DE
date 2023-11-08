@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 docset: aem65
 exl-id: e50974a7-01ac-4a08-bea2-df9cc975c69e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 62%
+ht-degree: 47%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 62%
 
 In AEM Forms Workspace können Manager jetzt auf die Aufgaben zugreifen, die Benutzern in ihren Hierarchien – direkt oder indirekt unterstellten Mitarbeitern – zugewiesen sind, und dafür verschiedene Aktionen ausführen. Die Aufgaben sind in AEM Forms Workspace auf der Registerkarte „Aufgaben“ verfügbar. Folgende Aktionen werden für die Aufgaben von Direktberichten unterstützt:
 
-**Weiterleiten** Leitet eine Aufgabe von einem direkt unterstellten Mitarbeiter an einen beliebigen Benutzer weiter.
+**Weiterleiten** - Leitet eine Aufgabe aus einem direkten Bericht an einen beliebigen Benutzer weiter.
 
-**Anfordern** Fordert eine Aufgabe von einem unterstellten Mitarbeiter an.
+**Anspruch** - Fordert eine Aufgabe eines direkt unterstellten Mitarbeiters an.
 
-**Anfordern und öffnen** Fordert eine Aufgabe von einem direkt unterstellten Mitarbeiter an und öffnet sie automatisch in der Aufgabenliste des Managers.
+**Anfordern und Öffnen** - Fordert eine Aufgabe eines direkt unterstellten Mitarbeiters an und öffnet sie automatisch in der Aufgabenliste des Managers.
 
-**Ablehnen** Lehnt eine Aufgabe ab, die von einem anderen Benutzer an einen direkt unterstellten Mitarbeiter weitergeleitet wurde. Diese Option ist für die Aufgaben verfügbar, die von anderen Benutzern an einen direkt unterstellten Mitarbeiter weitergeleitet wurden.
+**Ablehnen** - Lehnen Sie eine Aufgabe ab, die von einem anderen Benutzer an einen direkt unterstellten Mitarbeiter weitergeleitet wurde. Diese Option ist für die Aufgaben verfügbar, die von anderen Benutzern an einen direkt unterstellten Mitarbeiter weitergeleitet wurden.
 
 AEM Forms beschränkt den Zugriff eines Benutzers auf die Aufgaben, für die der Benutzer die Zugriffskontrolle (ACL) hat. Mit einer solchen Prüfung wird sichergestellt, dass ein Benutzer nur die Aufgaben abrufen kann, für die er Zugriffsberechtigungen hat. Mit Webdiensten von Drittanbietern und Implementierungen zur Definition der Hierarchie kann ein Unternehmen die Definition von Manager- und Direktberichten an seine Anforderungen anpassen.
 

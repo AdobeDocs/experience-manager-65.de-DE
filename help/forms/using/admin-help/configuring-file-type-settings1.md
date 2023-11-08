@@ -9,9 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 89f4d3cf-eb2e-4d55-8209-16ecbba03792
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '6170'
+source-wordcount: '6167'
 ht-degree: 38%
 
 ---
@@ -218,7 +218,7 @@ Aktivieren Sie diese Optionen, um das Erscheinungsbild des Fensters festzulegen:
 
 ## „Flashvideos in PDF“-Einstellungen {#flash-videos-to-pdf-settings}
 
-PDF Generator unterstützt die Möglichkeit, ein Video zum Adobe-Flash (SWF oder FLV-Datei) zu senden und eine PDF-Datei mit einem darin eingebetteten Adobe-Flash zu erstellen. Für diese Konvertierung muss keine Adobe-Flash Player auf dem Formularserver installiert sein. Anweisungen zum Zugriff auf diese Option finden Sie unter [Dateitypeinstellungen erstellen oder bearbeiten](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+PDF Generator unterstützt die Möglichkeit, ein Video zum Adobe-Flash (SWF oder FLV-Datei) zu senden und eine PDF-Datei mit einem darin eingebetteten Adobe-Flash zu erstellen. Für diese Konvertierung muss keine Adobe-Flash Player auf dem Forms-Server installiert sein. Anweisungen zum Zugriff auf diese Option finden Sie unter [Dateitypeinstellungen erstellen oder bearbeiten](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **Dateinamenerweiterungen:** Durch Kommas getrennte Liste von Dateinamenerweiterungen, die konvertiert werden können.
 
@@ -253,7 +253,7 @@ Anweisungen zum Zugriff auf diese Einstellung finden Sie unter [Dateitypeinstell
 
    * Wählen Sie bei Bedarf einen anderen Schriftartenordner aus dem **Schriftquelle** Dropdown-Menü. In diesem Dropdown-Menü werden die Schriftartenordner aufgelistet, die in **Startseite > Einstellungen > Core-System > Core-Konfigurationen**.
    * Wählen Sie mindestens eine Schriftart aus dem **Verfügbare Schriftarten** Liste und klicken Sie auf **Hinzufügen**. Diese Schriftarten werden der **Einbettung für Schriftarten aufheben** Liste.
-   * Wenn Sie die Einbettung für einige Schriftarten aufheben möchten, die nicht auf dem Formularserver vorhanden sind, geben Sie die Namen dieser Schriftarten in die **Einbettung für Schriftarten aufheben** ankreuzen. Klicken Sie auf **Hinzufügen**.
+   * Wenn Sie die Einbettung für einige Schriftarten aufheben möchten, die nicht auf dem Forms-Server vorhanden sind, geben Sie die Namen dieser Schriftarten in die **Einbettung für Schriftarten aufheben** ankreuzen. Klicken Sie auf **Hinzufügen**.
 
    >[!NOTE]
    >
@@ -315,7 +315,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 Die folgende Tabelle zeigt allgemeine Typen von Druckern und ihre in dpi gemessene Auflösung, ihre standardmäßige Bildschirmausrichtung, gemessen in lpi (Lines per Inch, Zeilen pro Zoll), und eine Neuberechnungsauflösung für Bilder, gemessen in Pixel pro Zoll (ppi). Wenn Sie beispielsweise auf einem 600-dpi-Laserdrucker drucken, geben Sie 170 für die Auflösung ein, mit der Bilder neu berechnet werden sollen.
 
-**Bilder**: Wählen Sie diese Option, um Komprimierungs- und Neuberechnungsoptionen für Farb-, Graustufen- und Schwarzweißbilder festzulegen. Sie können mit diesen Optionen experimentieren, um einen guten Kompromiss zwischen Dateigröße und Bildqualität zu finden. Die Auflösungseinstellung für Farb- und Graustufenbilder sollte dem 1,5- bis 2-fachen der Rasterweitenlinierung entsprechen, mit der die Datei gedruckt wird. Die Auflösung für Schwarzweißbilder sollte mit der des Ausgabegeräts übereinstimmen. Beachten Sie jedoch, dass das Speichern eines Schwarzweißbilds mit einer Auflösung von mehr als 1500 dpi die Dateigröße erhöht, ohne die Bildqualität spürbar zu verbessern. Bilder, die vergrößert werden, wie beispielsweise Karten, erfordern möglicherweise höhere Auflösungen.
+**Bilder**: Wählen Sie diese Option, um Komprimierungs- und Neuberechnungsoptionen für Farb-, Graustufen- und Schwarzweißbilder festzulegen. Sie können mit diesen Optionen experimentieren, um einen guten Kompromiss zwischen Dateigröße und Bildqualität zu finden. Die Auflösungseinstellung für Farb- und Graustufenbilder sollte dem 1,5- bis 2-fachen der Rasterweitenlinierung entsprechen, mit der die Datei gedruckt wird. Die Auflösung für Schwarzweißbilder sollte mit der des Ausgabegeräts übereinstimmen. Durch das Speichern eines Schwarzweißbilds mit einer Auflösung von mehr als 1500 dpi wird die Dateigröße erhöht, ohne dass sich die Bildqualität spürbar verbessert. Bilder, die vergrößert werden, wie beispielsweise Karten, erfordern möglicherweise höhere Auflösungen.
 
 >[!NOTE]
 >

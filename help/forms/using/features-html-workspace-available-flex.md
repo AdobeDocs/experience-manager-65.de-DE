@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 66c3cdc4-0e4c-4597-a107-f457dd0cc166
 exl-id: 4235e0ce-f1c4-432e-b486-2d72c390f320
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 48%
+source-wordcount: '378'
+ht-degree: 46%
 
 ---
 
@@ -41,4 +41,4 @@ Bilder oder Avatare für angemeldete Benutzer können nun rechts oben in AEM For
 
 ## Unterstützung für benutzerdefinierte Aufgabenerstellung basierend auf dem Gerät des Endanwenders {#support-for-custom-task-rendering-based-on-end-user-s-device}
 
-Der Arbeitsbereich von AEM Forms bietet Unterstützung für die HTML-Darstellung von XDP-Formularen. Diese Unterstützung, die in einem Wiedergabeprozess verwendet wird, der basierend auf dem Gerät oder dem Benutzeragenten zu verschiedenen Ausgabeformaten von XDP weiterleitet, ermöglicht es Benutzern, ein XDP-Formular als HTML auf den Mobilgeräten und als PDF auf einem Desktop anzuzeigen. Dies hilft bei der Bereitstellung einer nahtlosen Abdeckung von Process Management für Benutzer, die in verschiedenen Umgebungen auf verschiedenen Geräten arbeiten.
+AEM Forms Workspace unterstützt die HTML-Wiedergabe von XDP-Formularen. Diese Unterstützung, die in einem Wiedergabeprozess verwendet wird, der basierend auf dem Gerät oder dem Benutzeragenten zu verschiedenen Ausgabeformaten von XDP weiterleitet, ermöglicht es Benutzern, ein XDP-Formular als HTML auf den Mobilgeräten und als PDF auf einem Desktop anzuzeigen. Dies hilft bei der Bereitstellung einer nahtlosen Abdeckung von Process Management für Benutzer, die in verschiedenen Umgebungen auf verschiedenen Geräten arbeiten.

@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 85%
@@ -58,7 +58,7 @@ Im folgenden Java-Codebeispiel werden zwei PDF-Quelldokumente mit dem Namen *map
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. activation.jar (required for SOAP mode)
      * 7. axis.jar (required for SOAP mode)
@@ -89,7 +89,7 @@ Im folgenden Java-Codebeispiel werden zwei PDF-Quelldokumente mit dem Namen *map
      * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include these additional JAR files
@@ -202,7 +202,7 @@ Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *AssemblerRes
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. activation.jar (required for SOAP mode)
      * 7. axis.jar (required for SOAP mode)
@@ -233,7 +233,7 @@ Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *AssemblerRes
      * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include these additional JAR files
@@ -341,7 +341,7 @@ Im folgenden Java-Codebeispiel wird ein kennwortverschlüsseltes PDF-Dokument zu
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. activation.jar (required for SOAP mode)
      * 7. axis.jar (required for SOAP mode)
@@ -372,7 +372,7 @@ Im folgenden Java-Codebeispiel wird ein kennwortverschlüsseltes PDF-Dokument zu
      * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include these additional JAR files
@@ -464,7 +464,7 @@ Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit Einzelseitenkennungen (
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. activation.jar (required for SOAP mode)
      * 7. axis.jar (required for SOAP mode)
@@ -495,7 +495,7 @@ Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit Einzelseitenkennungen (
      * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include these additional JAR files
@@ -622,7 +622,7 @@ Im folgenden Java-Codebeispiel wird ein nicht interaktives PDF-Dokument zusammen
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. activation.jar (required for SOAP mode)
      * 7. axis.jar (required for SOAP mode)
@@ -653,7 +653,7 @@ Im folgenden Java-Codebeispiel wird ein nicht interaktives PDF-Dokument zusammen
      * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include these additional JAR files
@@ -746,7 +746,7 @@ Im folgenden Java-Codebeispiel wird ermittelt, ob das PDF-Eingabedokument PDF/A-
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. activation.jar (required for SOAP mode)
      * 7. axis.jar (required for SOAP mode)
@@ -777,7 +777,7 @@ Im folgenden Java-Codebeispiel wird ermittelt, ob das PDF-Eingabedokument PDF/A-
      * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include these additional JAR files
@@ -892,7 +892,7 @@ Im folgenden Java-Code-Beispiel wird ein DDX-Dokument basierend auf einer Datei 
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. activation.jar (required for SOAP mode)
      * 7. axis.jar (required for SOAP mode)
@@ -923,7 +923,7 @@ Im folgenden Java-Code-Beispiel wird ein DDX-Dokument basierend auf einer Datei 
      * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include these additional JAR files
@@ -1023,7 +1023,7 @@ Im folgenden Java-Code-Beispiel wird ein PDF-Dokument zusammengestellt, das Lese
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. activation.jar (required for SOAP mode)
      * 7. axis.jar (required for SOAP mode)
@@ -1054,7 +1054,7 @@ Im folgenden Java-Code-Beispiel wird ein PDF-Dokument zusammengestellt, das Lese
      * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include these additional JAR files
@@ -1199,7 +1199,7 @@ Im folgenden Java-Codebeispiel wird dynamisch ein DDX-Dokument erstellt, das ein
  * 2. adobe-livecycle-client.jar
  * 3. adobe-usermanager-client.jar
  * 4. adobe-utilities.jar
- * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+ * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
  * on JBoss)
  * 6. activation.jar (required for SOAP mode)
  * 7. axis.jar (required for SOAP mode)
@@ -1230,7 +1230,7 @@ Im folgenden Java-Codebeispiel wird dynamisch ein DDX-Dokument erstellt, das ein
  * SOAP required JAR files are in the following path:
  * <install directory>/sdk/client-libs/thirdparty
  *
- * If you want to invoke a remote forms server instance and there is a
+ * If you want to invoke a remote Forms Server instance and there is a
  * firewall between the client application and the server, then it is
  * recommended that you use the SOAP mode. When using the SOAP mode,
  * you have to include these additional JAR files
@@ -1390,7 +1390,7 @@ Im folgenden Java-Code-Beispiel wird ein PDF-Portfolio erstellt. Das PDF-Portfol
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      *
      * These JAR files are in the following path:
@@ -1405,7 +1405,7 @@ Im folgenden Java-Code-Beispiel wird ein PDF-Portfolio erstellt. Das PDF-Portfol
      * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include these additional JAR files
@@ -1541,7 +1541,7 @@ Im folgenden Java-Code-Beispiel werden XDP-Fragmente zusammengestellt, die auf d
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. activation.jar (required for SOAP mode)
      * 7. axis.jar (required for SOAP mode)
@@ -1572,7 +1572,7 @@ Im folgenden Java-Code-Beispiel werden XDP-Fragmente zusammengestellt, die auf d
      * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include these additional JAR files

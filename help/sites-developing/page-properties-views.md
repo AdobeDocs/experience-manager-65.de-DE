@@ -10,16 +10,16 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 63%
+source-wordcount: '484'
+ht-degree: 61%
 
 ---
 
 # Anpassen der Ansichten von Seiteneigenschaften{#customizing-views-of-page-properties}
 
-Jede Seite verfügt über einen Satz von [properties](/help/sites-authoring/editing-page-properties.md) die von Benutzern angezeigt und bearbeitet werden können; Einige sind beim Erstellen der Seite erforderlich (Ansicht erstellen), andere können später angezeigt und bearbeitet (Ansicht bearbeiten) werden. Diese Seiteneigenschaften werden über das Dialogfeld (`cq:dialog`) der entsprechenden Seitenkomponente definiert und bereitgestellt.
+Jede Seite verfügt über einen Satz von [properties](/help/sites-authoring/editing-page-properties.md) die von Benutzern angezeigt und bearbeitet werden können. Einige sind beim Erstellen der Seite erforderlich (Ansicht erstellen), andere können später angezeigt und bearbeitet (Ansicht bearbeiten) werden. Diese Seiteneigenschaften werden über das Dialogfeld (`cq:dialog`) der entsprechenden Seitenkomponente definiert und bereitgestellt.
 
 >[!CAUTION]
 >
@@ -38,7 +38,7 @@ Felder müssen bei Bedarf spezifisch konfiguriert werden. Dies geschieht mithilf
    * Name: `cq:showOnCreate`
    * Typ: `Boolean`
 
-* Seiteneigenschaft, die in der Bearbeitungsansicht verfügbar sein soll (z. B. **Ansicht**/**Bearbeiten**) **Eigenschaften** -Option):
+* Seiteneigenschaft, die in der Bearbeitungsansicht verfügbar sein soll (beispielsweise **Ansicht**/**Bearbeiten**) **Eigenschaften** -Option):
 
    * Name: `cq:hideOnEdit`
    * Typ: `Boolean`
@@ -78,7 +78,7 @@ Beispiel: Der [**Seitenerstellungsassistent**](/help/sites-authoring/managing-pa
    >
    Die empfohlene Methode für Konfigurations- und sonstige Änderungen sieht wie folgt aus:
    >
-   1. Erstellen Sie das erforderliche Element (d. h., wie unter `/libs`) unter `/apps` neu.
+   1. Erstellen Sie das erforderliche Element (d. h., wie es in `/libs`) unter `/apps`
    1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
 1. Legen Sie die Eigenschaft `path` auf `basic` fest, um auf die Überschreibung der Registerkarte „Standard“ zu verweisen (siehe auch den nächsten Schritt). Beispiel:

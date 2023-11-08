@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie ein AEM Content and Commerce-Projekt bereitst
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '714'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -57,7 +57,7 @@ Das Add-on und die [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-c
 
 Diese Konfiguration kann mithilfe der CIF-Cloud Service-Konfiguration wie folgt für das Projekt angepasst werden:
 
-1. Gehen Sie in AEM zu „Tools“ > „Cloud Services“ > „CIF-Konfiguration“
+1. Gehen Sie AEM zu Tools > Cloud Service > CIF Konfiguration
 
 2. Wählen Sie die Commerce-Konfiguration aus, die Sie ändern möchten
 

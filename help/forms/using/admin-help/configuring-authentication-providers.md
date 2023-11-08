@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 31dd8db3-ddac-429e-82f8-8c5dc4ffc186
 exl-id: d72a3977-1423-49e0-899b-234bb76be378
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '1575'
 ht-degree: 54%
@@ -147,7 +147,7 @@ Ohne Just-in-time-Bereitstellung schlägt die Authentifizierung fehl, wenn ein B
 ### Just-in-time-Bereitstellung für eine Domain aktivieren {#enable-just-in-time-provisioning-for-a-domain}
 
 1. Schreiben Sie einen Dienstcontainer, der die IdentityCreator- und AssignmentProvider-Schnittstellen implementiert. (Siehe [Programmieren mit AEM](https://www.adobe.com/go/learn_aemforms_programming_63_de).
-1. Stellen Sie den Dienstcontainer auf dem Formularserver bereit.
+1. Stellen Sie den Dienstcontainer auf dem Forms-Server bereit.
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 
    Wählen Sie eine vorhandene Domain oder klicken Sie auf „Neue Unternehmens-Domain“.

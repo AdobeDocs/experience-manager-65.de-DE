@@ -10,10 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 exl-id: 1eed754e-9a7d-4b65-a929-757fc962614d
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1252'
-ht-degree: 94%
+source-wordcount: '1255'
+ht-degree: 93%
 
 ---
 
@@ -29,7 +29,7 @@ Der Sling Resource Merger bietet Dienste für den Zugriff auf und das Zusammenf�
 
 Mit dem Sling Resource Merger werden die Überlagerungs-/Überschreibungsressourcen bzw. -eigenschaften mit den ursprünglichen Ressourcen/Eigenschaften zusammengeführt:
 
-* Der Inhalt der angepassten Definition hat eine höhere Priorität als der des Originals (d. h. er *überlagert* oder *überschreibt* ihn).
+* Der Inhalt der angepassten Definition hat eine höhere Priorität als der des Originals (d. h. er *überlagert* oder *überschreibt* dieses).
 
 * Wo nötig, geben bei der Anpassung definierte [Eigenschaften](#properties) an, wie aus dem Original zusammengeführte Inhalte zu verwenden sind.
 
@@ -62,7 +62,7 @@ Die Ziele der Verwendung des Sling Resource Merger in AEM lauten wie folgt:
 >
 >Die empfohlene Methode für Konfigurations- und sonstige Änderungen sieht wie folgt aus:
 >
->1. Erstellen Sie das erforderliche Element (d. h., wie unter `/libs`) unter `/apps` neu.
+>1. Erstellen Sie das erforderliche Element (d. h., wie es in `/libs`) unter `/apps`
 >
 >1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 >
@@ -134,7 +134,7 @@ Somit werden im obigen Überlagerungsbeispiel die folgenden Knoten benötigt:
 
 >[!NOTE]
 >
->Bei Verwendung des Sling Resource Merger (d. h. bei Verwendung der standardmäßigen, Touch-optimierten Benutzeroberfläche) ist es nicht empfehlenswert, die gesamte Struktur aus `/libs` zu kopieren, da so zu viele Daten in `/apps` gespeichert würden. Dies führt u. U. zu Problemen, wenn für das System ein Upgrade jedweder Art durchgeführt wird.
+>Bei Verwendung des Sling Resource Merger (d. h. bei Verwendung der standardmäßigen, Touch-optimierten Benutzeroberfläche) ist es nicht empfehlenswert, die gesamte Struktur aus `/libs` zu kopieren, da so zu viele Informationen in `/apps` gespeichert würden. Dies führt u. U. zu Problemen, wenn für das System ein Upgrade jedweder Art durchgeführt wird.
 
 ### Anwendungsfälle {#use-cases}
 

@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1323'
 ht-degree: 13%
@@ -23,7 +23,7 @@ AEM Forms Digital Signatures kann auf einem HSM gespeicherte Berechtigungen verw
 
 >[!NOTE]
 >
->Nachdem Sie die HSM-Konfiguration geändert haben, starten Sie den AEM forms-Server neu.
+>Nachdem Sie die HSM-Konfiguration geändert haben, starten Sie den AEM Forms-Server neu.
 
 ## Alias für eine HSM-Berechtigung erstellen, wenn das HSM-Gerät online ist {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-online}
 
@@ -50,7 +50,7 @@ AEM Forms Digital Signatures kann auf einem HSM gespeicherte Berechtigungen verw
 1. Wählen Sie in der Liste &quot;Steckplatztyp&quot;die Option &quot;Steckplatz-ID&quot;, &quot;Steckplatzindex&quot;oder &quot;Token-Name&quot;aus und geben Sie im Feld &quot;Steckplatzinfo&quot;einen Wert an. AEM Formulare verwenden diese Einstellungen, um zu bestimmen, wo die Anmeldeinformationen auf dem HSM gespeichert werden.
 
    * **Tokenname:** Entspricht einem Partitionsnamen (z. B. HSMPART1).
-   * **Steckplatz-ID:** Die Steckplatz-ID ist eine Ganzzahl, die dem Steckplatz entspricht, der wiederum einer Partition entspricht. Beispielsweise der Client (Formularserver), der zuerst bei der Partition HSMPART1 registriert ist. Dadurch wird Steckplatz 1 der Partition HSMPART1 für diesen Client zugeordnet. Da HSMPART1 die erste registrierte Partition ist, lautet die Steckplatz-ID 1 und Sie würden &quot;Steckplatzinfo&quot;auf 1 setzen.
+   * **Steckplatz-ID:** Die Steckplatz-ID ist eine Ganzzahl, die dem Steckplatz entspricht, der wiederum einer Partition entspricht. Beispielsweise hat sich der Client (Forms Server) zuerst bei der Partition HSMPART1 registriert. Dadurch wird Steckplatz 1 der Partition HSMPART1 für diesen Client zugeordnet. Da HSMPART1 die erste registrierte Partition ist, lautet die Steckplatz-ID 1 und Sie würden &quot;Steckplatzinfo&quot;auf 1 setzen.
 
      Die Steckplatz-ID wird Client für Client festgelegt. Wenn Sie einen zweiten Rechner bei einer anderen Partition registriert haben (z. B. HSMPART2 auf demselben HSM-Gerät), wird Steckplatz 1 für diesen Client mit der Partition HSMPART2 verknüpft.
 
@@ -73,7 +73,7 @@ AEM Forms Digital Signatures kann auf einem HSM gespeicherte Berechtigungen verw
 1. Klicken Sie in Administration Console auf &quot;Einstellungen&quot;> &quot;Trust Store-Verwaltung&quot;> &quot;HSM-Berechtigungen&quot;.
 1. Aktivieren Sie das Kontrollkästchen neben den Berechtigungen, die Sie überprüfen möchten, und klicken Sie auf Status überprüfen .
 
-Die Spalte Status gibt den aktuellen Status der Berechtigung an. Im Falle eines Fehlers wird in der Spalte Status ein rotes X angezeigt. Bewegen Sie den Mauszeiger über das X, um eine QuickInfo mit dem Grund für den Fehler anzuzeigen.
+Die Spalte Status gibt den aktuellen Status der Berechtigung an. Wenn ein Fehler auftritt, wird in der Spalte Status ein rotes X angezeigt. Bewegen Sie den Mauszeiger über das X, um eine QuickInfo mit dem Grund für den Fehler anzuzeigen.
 
 ## Eigenschaften von HSM-Berechtigungsalias aktualisieren {#update-hsm-credential-alias-properties}
 
@@ -83,7 +83,7 @@ Die Spalte Status gibt den aktuellen Status der Berechtigung an. Im Falle eines 
 
 ## Alle HSM-Verbindungen zurücksetzen {#reset-all-hsm-connections}
 
-Setzen Sie die offenen Verbindungen zu einem HSM-Gerät nach einer Unterbrechung der Netzwerksitzung zwischen dem Formularserver und dem HSM-Gerät zurück. Unterbrechungen können beispielsweise auftreten, wenn das Netzwerk ausfällt oder das HSM-Gerät für eine Softwareaktualisierung offline geschaltet wird. Nach einer Unterbrechung sind die vorhandenen Verbindungen veraltet und alle Signieranforderungen für diese Verbindungen schlagen fehl. Mit der Option Alle HSM-Verbindungen zurücksetzen werden die alten Verbindungen gelöscht.
+Setzen Sie die offenen Verbindungen zu einem HSM-Gerät nach einer Unterbrechung der Netzwerksitzung zwischen dem Forms-Server und dem HSM-Gerät zurück. Unterbrechungen können beispielsweise auftreten, wenn das Netzwerk ausfällt oder das HSM-Gerät für eine Softwareaktualisierung offline geschaltet wird. Nach einer Unterbrechung sind die vorhandenen Verbindungen veraltet und alle Signieranforderungen für diese Verbindungen schlagen fehl. Mit der Option Alle HSM-Verbindungen zurücksetzen werden die alten Verbindungen gelöscht.
 
 1. Klicken Sie in Administration Console auf &quot;Einstellungen&quot;> &quot;Trust Store-Verwaltung&quot;> &quot;HSM-Berechtigungen&quot;.
 1. Klicken Sie auf Alle HSM-Verbindungen zurücksetzen .

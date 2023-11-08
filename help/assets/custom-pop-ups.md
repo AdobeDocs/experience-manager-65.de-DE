@@ -9,10 +9,10 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: 05af34f8be6a4e32c3488ec05bc0133154caff7f
-workflow-type: ht
-source-wordcount: '1052'
-ht-degree: 100%
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+workflow-type: tm+mt
+source-wordcount: '1050'
+ht-degree: 96%
 
 ---
 
@@ -50,7 +50,7 @@ Auch wenn die Funktionalität der Viewer unterschiedlich ist, ist der Prozess zu
     </tr>
     <tr>
     <td>Karussellbanner</td>
-    <td><a href="/help/assets/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank">Hinzufügen von Hotspots oder Imagemaps zu einem Bildbanner</a>.<br /> </td>
+    <td><a href="/help/assets/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank">Hinzufügen von Hotspots oder Imagemaps zu einem Banner</a>.<br /> </td>
     </tr>
     </tbody>
    </table>
@@ -78,7 +78,7 @@ Auch wenn die Funktionalität der Viewer unterschiedlich ist, ist der Prozess zu
     </tbody>
    </table>
 
-1. Der Viewer, den Sie verwenden, muss jetzt erfahren, wie die Schnellansicht verwendet werden soll.
+1. Der von Ihnen verwendete Viewer muss wissen, wie die Schnellansicht verwendet werden soll.
 
    Der Viewer verwendet einen Handler mit dem Namen `QuickViewActive`.
 
@@ -109,7 +109,7 @@ Angenommen, Sie verwenden auf Ihrer Web-Seite für ein interaktives Bild den fol
    * Interaktiver Bild-Viewer: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=de](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=de)
    * Interaktiver Video-Viewer: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=de](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=de)
 
-1. Jetzt müssen Sie den `quickViewActivate`-Handler konfigurieren.
+1. Sie müssen die `quickViewActivate` Handler.
 
    Der Handler `quickViewActivate` steuert die Schnellansichten im Viewer. Der Handler enthält die Variablenliste und die Funktionsaufrufe, die mit der Schnellansicht verwendet werden. Der Einbettungs-Code stellt die Zuordnung für das SKU-Variablenset in der Schnellansicht sowie ein Beispiel für einen Aufruf der Funktion `loadQuickView` bereit.
 
@@ -148,9 +148,10 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
    * Ordnen Sie alle weiteren Variablen zu, die in der Schnellansicht enthalten sind.
 
       * Aktualisieren Sie den Aufruf `loadQuickView(sku,*var1*,*var2*)`, wenn Sie weitere Variablen hinzufügen.
+
    * Erstellen Sie auf der Seite eine einfache `loadQuickView` ()-Funktion außerhalb des Viewers.
 
-      Die folgende Funktion schreibt z. B. den SKU-Wert in die Browser-Konsole:
+     Die folgende Funktion schreibt z. B. den SKU-Wert in die Browser-Konsole:
 
    ```xml
    function loadQuickView(sku){
@@ -160,9 +161,7 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
 
    * Laden Sie eine HTML-Testseite auf einen Webserver hoch und öffnen Sie sie.
 
-      Mit den zugeordneten Variablen aus der Schnellansicht und dem Funktionsaufruf schreibt die Browser-Konsole den Variablenwert mithilfe der Beispielfunktion in die Browser-Konsole.
-
-
+     Mit den zugeordneten Variablen aus der Schnellansicht und dem Funktionsaufruf schreibt die Browser-Konsole den Variablenwert mithilfe der Beispielfunktion in die Browser-Konsole.
 
 1. Sie können jetzt eine Funktion verwenden, um ein einfaches Popup in der Schnellansicht aufzurufen. Im folgenden Beispiel wird ein `DIV` für ein Popup-Fenster verwendet.
 1. Gestalten Sie das Popup-`DIV` wie folgt. Fügen Sie gegebenenfalls Ihren eigenen Stil hinzu.
@@ -234,7 +233,7 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
    Im obigen Code wurde Folgendes ausgeführt:
 
    * Das benutzerdefinierte Popup-Fenster erkannt.
-   * Es aus dem DOM entfernt.
+   * Es wurde aus dem DOM entfernt.
    * Den Viewer-Container erkannt.
    * Das Popup-Fenster mit dem Viewer-Container verbunden.
 

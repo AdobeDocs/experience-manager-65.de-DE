@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 8d965e94-c368-481d-b000-6e22456c34db
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ AEM Mobile benötigt ein Adobe Analytics-Konto, um Tracking-Daten in Ihrer App z
 
 Nachdem das Analytics-Konto eingerichtet wurde, erstellen Sie eine Konfiguration zur Inhaltssynchronisierung , um den Inhalt in Ihre Mobile App zu übernehmen.
 
-Weitere Informationen finden Sie unter Konfigurieren des Inhalts der Inhaltssynchronisierung . Die Konfiguration muss die Inhaltssynchronisierung anweisen, um die ADBMobileConfig im Verzeichnis /www abzulegen. In der Geometrixx Outdoors App befindet sich beispielsweise die Konfiguration Inhaltssynchronisierung unter: */content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-config/ams-ADBMobileConfig*. Es gibt auch eine Entwicklungs-Konfiguration. Sie ist jedoch bei Geometrixx Outdoors identisch mit der Nicht-Entwicklungs-Konfiguration.
+Weitere Informationen finden Sie unter Konfigurieren des Inhalts der Inhaltssynchronisierung . Die Konfiguration muss die Inhaltssynchronisierung anweisen, um die ADBMobileConfig im Verzeichnis /www abzulegen. In der Geometrixx Outdoors App befindet sich beispielsweise die Konfiguration Inhaltssynchronisierung unter: */content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-config/ams-ADBMobileConfig*. Es gibt auch eine Konfiguration für die Entwicklung. Es ist jedoch identisch mit der Nicht-Entwicklungs-Konfiguration, wenn Geometrixx Outdoors vorhanden sind.
 
 Weitere Informationen zum Herunterladen der ADBMobileConfig über das Dashboard für Mobile Apps AEM Apps finden Sie unter Analytics - Mobile Services - Adobe Mobile Services SDK-Konfigurationsdatei.
 

@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '445'
 ht-degree: 26%
 
 ---
@@ -81,7 +81,7 @@ Für die Grundkonfiguration:
 
 ## Verwenden des neuen Dienstes auf Seiten {#using-your-new-service-on-pages}
 
-Nachdem Sie die Dienstkonfiguration erstellt haben, müssen Sie jetzt die erforderlichen Seiten konfigurieren, um sie zu verwenden:
+Nachdem Sie die Dienstkonfiguration erstellt haben, müssen Sie die erforderlichen Seiten konfigurieren, um sie zu verwenden:
 
 1. Navigieren Sie zu der Seite.
 1. Öffnen Sie die **Seiteneigenschaften** im Sidekick und wählen Sie dann die Registerkarte **Cloud-Services** aus.

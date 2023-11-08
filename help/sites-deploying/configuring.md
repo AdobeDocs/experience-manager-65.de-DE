@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '2116'
+source-wordcount: '2113'
 ht-degree: 30%
 
 ---
@@ -54,7 +54,7 @@ Abhängig von der spezifischen Konfiguration können diese Änderungen mithilfe 
 
 >[!NOTE]
 >
->Die Konfiguration von AEM ist unkompliziert. Beachten Sie jedoch, dass bestimmte Änderungen erhebliche Auswirkungen auf die Anwendungen haben können. Stellen Sie daher sicher, dass Sie über das erforderliche Erlebnis und Wissen verfügen, bevor Sie mit der Konfiguration von AEM beginnen, und nehmen Sie nur die Änderungen vor, von denen Sie wissen, dass sie erforderlich sind. Alle Änderungen, die über die OSGi-Konsole vorgenommen werden, sind **sofort** auf das laufende System angewendet werden (kein Neustart erforderlich).
+>Die Konfiguration von AEM ist unkompliziert. Einige Änderungen können sich jedoch erheblich auf die Anwendungen auswirken. Stellen Sie daher sicher, dass Sie über das erforderliche Erlebnis und Wissen verfügen, bevor Sie mit der Konfiguration von AEM beginnen, und nehmen Sie nur die Änderungen vor, von denen Sie wissen, dass sie erforderlich sind. Alle Änderungen, die über die OSGi-Konsole vorgenommen werden, sind **sofort** auf das laufende System angewendet werden (kein Neustart erforderlich).
 
 ## Überlegungen zur Primären Konfiguration {#primary-configuration-considerations}
 

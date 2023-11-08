@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '7144'
 ht-degree: 57%
@@ -79,7 +79,7 @@ Sie können die folgenden Eigenschaften für einen überwachten Ordner konfiguri
 
 >[!NOTE]
 >
->Ist auf dem Server, der den überwachten Ordner hostet, keiner der angegebenen Ausführungsmodi verfügbar, wird der überwachte Ordner immer aktiviert, egal, welche Ausführmodi auf dem Server laufen.
+>Wenn der Server, der den überwachten Ordner hostet, keinen der angegebenen Ausführungsmodi aufweist, wird der überwachte Ordner immer aktiviert, unabhängig von den Ausführungsmodi auf dem Server.
 
 * **outputFilePattern (Zeichenfolge)**: Das Muster der Ausgabedatei. Sie können ein Ordner- oder Dateimuster angeben. Wenn Sie ein Ordnermuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben in den Workflows. Wenn Sie ein Dateimuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben im Dateimuster. [In Datei- und Ordnermustern können Sie außerdem eine Ordnerstruktur für die Ausgabedateien angeben. ](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) Dies ist eine obligatorische Eigenschaft.
 
@@ -159,7 +159,7 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](.
 * **throttleOn (Boolescher Wert)**: Wenn diese Option ausgewählt ist, wird die Anzahl der Aufträge für den überwachten Ordner begrenzt, die AEM Forms zu jeder Zeit verarbeiten kann. Die maximale Anzahl von Aufträgen wird durch den Wert von „Stapelgröße“ bestimmt. Der Standardwert ist „true“. (Siehe [Über Einschränkungen](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).
 
 * **overwriteDuplicateFilename (Boolescher Wert)**: Bei Festlegung auf „True“ werden Dateien im Ergebnisordner und im Aufbewahrungsordner überschrieben. Bei Festlegung auf &quot;False&quot;werden Dateien und Ordner mit dem Suffix &quot;Numerischer Index&quot;für den Namen verwendet. Der Standardwert ist False.
-* **preserveOnFailure (Boolescher Wert)**: Bewahrt die Eingabedateien auf, wenn es zu einem Fehler bei der Ausführung des Vorgangs für einen Dienst kommt. Der Standardwert lautet true.
+* **preserveOnFailure (Boolesch)**: Behält die Eingabedateien bei, wenn der Vorgang für einen Dienst nicht ausgeführt werden kann. Der Standardwert lautet true.
 * **inputFilePattern (Zeichenfolge)**: Geben Sie das Muster der Eingabedateien für einen überwachten Ordner an. Erzeugt eine Zulässigkeitsliste der für die Dateien.
 * **asynch (Boolescher Wert)**: Bestimmt, ob ein asynchroner oder ein synchroner Aufruftyp verwendet wird. Der Standardwert ist „true“ (asynchron). Da die Verarbeitung von Dateien sehr ressourcenintensiv ist, sollten Sie den Wert „true“ für das Flag „asynch“ beibehalten, um eine Überlastung des Haupt-Threads des Überprüfungsauftrags zu vermeiden. In einer Clusterumgebung muss der Wert „true“ für das Flag unter allen Umständen beibehalten werden, um den Lastenausgleich für die Dateiverarbeitung zwischen den verfügbaren Servern zu ermöglichen. Wird für das Flag der Wert „false“ festgelegt, versucht der Überprüfungsauftrag, die einzelnen Dateien bzw. Ordner der höchsten Ebene nacheinander innerhalb seines eigenen Threads zu verarbeiten. Setzen Sie das Flag nicht ohne einen bestimmten Grund auf &quot;false&quot;, z. B. für die Workflow-basierte Verarbeitung bei einem Setup mit einem einzelnen Server.
 

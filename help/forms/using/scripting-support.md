@@ -11,9 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3888'
+source-wordcount: '3887'
 ht-degree: 21%
 
 ---
@@ -117,7 +117,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   <tr>
    <td><code>title</code></td>
    <td>Gibt den Titel des Dokuments an. Sie ist nur für Clientanwendungen verfügbar.</td>
-   <td>Es wird der Titel des HTML-Dokuments im Formular zurückgegeben, nicht der Metadatentitel des Formulars, wie im Fall von PDF forms.</td>
+   <td>Es wird der Titel des HTML-Dokuments im Formular und nicht der Metadatentitel des Formulars zurückgegeben, als gäbe es PDF forms.</td>
   </tr>
   <tr>
    <td><code>version</code></td>

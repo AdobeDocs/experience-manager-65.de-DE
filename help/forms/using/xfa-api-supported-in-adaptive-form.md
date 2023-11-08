@@ -10,9 +10,9 @@ discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
 docset: aem65
 feature: Adaptive Forms
 exl-id: 255be73f-3169-457c-aaa7-a2fb59f1f2cd
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '738'
 ht-degree: 60%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 60%
 
 <span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/using/create-an-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
 
-Adaptive Formulare bieten Unterstützung für verschiedene XFA-Ereignisse, Eigenschaften, Skripte und Überprüfungen, die in einer XDP-Datei definiert sind, einschließlich:
+Adaptive Formulare unterstützen verschiedene XFA-Ereignisse, Eigenschaften, Skripte und Überprüfungen, die in einer XDP-Datei definiert sind, darunter:
 
 * Ausführung von Skripten, die für Ereignisse in der XDP-Datei definiert wurden.
 * Erfassen von Standardwerten und Verhaltenseigenschaften für Felder in der XDP-Datei.
@@ -139,7 +139,7 @@ Die folgende Tabelle erfasst, wie sich verschiedene XFA-Skripte, die in den XDP-
    <td><p>Dem benutzerdefinierten barrierefreien Text im adaptiven Formular zugeordnet.</p> </td>
   </tr>
   <tr>
-   <td><p>Barrierefreiheit: toolTip </p> </td>
+   <td><p>Barrierefreiheit: QuickInfo </p> </td>
    <td><p>Der short-description-Eigenschaft im adaptiven Formular zugeordnet.</p> </td>
   </tr>
   <tr>

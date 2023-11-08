@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '17029'
+source-wordcount: '17027'
 ht-degree: 83%
 
 ---
@@ -351,7 +351,7 @@ Sie können Signaturfelder in einem PDF-Dokument ändern, indem Sie die Java-API
 
 Ein *Feldsperre-Wörterbuch* gibt eine Liste von Feldern an, die gesperrt werden, wenn das Signaturfeld signiert wird. Ein gesperrtes Feld verhindert, dass Benutzer Änderungen an dem Feld vornehmen. Ein *Seed-Wert-Wörterbuch* enthält Einschränkungsinformationen, die zum Zeitpunkt der Anwendung der Signatur verwendet werden. Beispiel: Sie können die Berechtigungen ändern, die Aktionen steuern, die auftreten können, ohne dass eine Signatur ungültig wird.
 
-Durch Ändern eines vorhandenen Signaturfelds können Sie das PDF-Dokument so ändern, dass es die sich ändernden Geschäftsanforderungen widerspiegelt. Beispiel: Eine neue Geschäftsanforderung erfordert das Sperren aller Felder eines Dokuments, nachdem es signiert wurde.
+Durch Änderung eines vorhandenen Signaturfelds können Sie das PDF-Dokument ändern, um die sich ändernden Geschäftsanforderungen widerzuspiegeln. Beispiel: Eine neue Geschäftsanforderung erfordert das Sperren aller Felder eines Dokuments, nachdem es signiert wurde.
 
 In diesem Abschnitt wird beschrieben, wie Sie ein Signaturfeld ändern, indem Sie sowohl die Werte des Feldsperre-Wörterbuchs als auch des Seed-Wert-Wörterbuchs ändern. Änderungen am Signaturfeldsperre-Wörterbuch führen dazu, dass alle Felder im PDF-Dokument gesperrt werden, wenn ein Signaturfeld signiert wird. Änderungen am Seed-Wert-Wörterbuch verbieten bestimmte Arten von Änderungen am Dokument.
 

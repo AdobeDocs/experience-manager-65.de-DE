@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '10692'
-ht-degree: 55%
+ht-degree: 54%
 
 ---
 
@@ -35,7 +35,7 @@ Auf der Seite &quot;Dienstverwaltung&quot;können Sie Einstellungen für die ein
 
 ## Einstellungen des Audit Workflow-Dienstes {#audit-workflow-service-settings}
 
-Workbench bietet die Möglichkeit, Prozessinstanzen während der Ausführung zur Laufzeit aufzuzeichnen und sie dann wieder abzuspielen, um das Verhalten des Prozesses zu beobachten. (Siehe [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63_de). Um Speicherplatz im Dateisystem des Formularservers zu sparen, können Sie die Menge der gespeicherten Prozessaufzeichnungsdaten begrenzen. Sie können die folgenden Eigenschaften des Audit Workflow-Dienstes (`AuditWorkflowService`) konfigurieren:
+Workbench bietet die Möglichkeit, Prozessinstanzen während der Ausführung zur Laufzeit aufzuzeichnen und sie dann wieder abzuspielen, um das Verhalten des Prozesses zu beobachten. (Siehe [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63_de). Um Speicherplatz im Dateisystem des Forms-Servers zu sparen, können Sie die Menge der gespeicherten Prozessaufzeichnungsdaten begrenzen. Sie können die folgenden Eigenschaften des Audit Workflow-Dienstes (`AuditWorkflowService`) konfigurieren:
 
 **maxNumberOfRecordingInstances**: Die maximale Anzahl von zu speichernden Aufzeichnungen. Wenn die maximale Anzahl gespeichert wird, wird die älteste Aufzeichnung beim Erstellen einer neuen Aufzeichnung aus dem Dateisystem entfernt. Diese Eigenschaft ist nützlich, wenn Sie dazu neigen, viele Aufzeichnungen zu erstellen, und alte Aufzeichnungen automatisch entfernen möchten. Der Standardwert ist 50.
 
@@ -265,7 +265,7 @@ Folgende Einstellungen sind für den Generate PDF-Dienst verfügbar:
 
 **OCR-Pool-Größe**: Die Pool-Größe des PaperCaptureService, den PDF Generator für optische Zeichenerkennung (OCR) verwendet. Der Standardwert dieser Einstellung (empfohlen für Einzelprozessorsysteme) ist 3, wobei der Wert für Multiprozessorsysteme erhöht werden kann. Diese Einstellung ist nur auf Windows-Systemen gültig.
 
-**Ersatzschriftfamilie für HTML-zu-PDF-Konvertierungen**: Der Name der Schriftfamilie, die in PDF-Dokumenten verwendet werden soll, wenn die im Original-HTML verwendete Schriftart nicht für den AEM Forms-Server verfügbar ist. Geben Sie eine Schriftfamilie an, wenn Sie erwarten, dass Sie HTML-Seiten konvertieren, die nicht verfügbare Schriftarten verwenden. Beispielsweise könnten Seiten, die in regionalen Sprachen verfasst wurden, nicht verfügbare Schriftarten verwenden.
+**Fallback-Schriftfamilie für HTML zu PDF-Konvertierungen:** Der Name der Schriftfamilie, die in PDF-Dokumenten verwendet werden soll, wenn die im Original-HTML verwendete Schriftart für den AEM Forms-Server nicht verfügbar ist. Geben Sie eine Schriftfamilie an, wenn Sie erwarten, dass Sie HTML-Seiten konvertieren, die nicht verfügbare Schriftarten verwenden. Beispielsweise könnten Seiten, die in regionalen Sprachen verfasst wurden, nicht verfügbare Schriftarten verwenden.
 
 **Logik für native Konvertierungen wiederholen**: Steuert Wiederholungsversuche zur PDF-Generierung, wenn der erste Konvertierungsversuch fehlgeschlagen ist
 
@@ -283,7 +283,7 @@ Wiederholen Sie die PDF-Konvertierung, wenn die für den ersten Konvertierungsve
 
 ## Einstellungen des Guides ES4 Utilities-Dienstes {#guides-es4-utilities-service-settings}
 
-Beim Erstellen eines Guides werden einige Ressourcen, wie z. B. die Guide-Definition, in den Guide eingebettet. Ressourcen können auch als Verweise auf Anwendungs-Assets vorhanden sein, die lokal oder auf dem AEM-Formularserver gespeichert sind. Der Guide enthält keine Daten und die Werte für den Sendeort und die Eingaben sind nicht für alle externen Umgebungen geeignet.
+Beim Erstellen eines Guides werden einige Ressourcen, wie z. B. die Guide-Definition, in den Guide eingebettet. Ressourcen können auch als Verweise auf Anwendungs-Assets vorhanden sein, die lokal oder auf dem AEM Forms-Server gespeichert sind. Der Guide enthält keine Daten und die Werte für den Sendeort und die Eingaben sind nicht für alle externen Umgebungen geeignet.
 
 In den meisten Fällen reichen die standardmäßigen Render-Dienste für Guides aus, um einen Guide für die Verwendung in Workspace oder anderen externen Umgebungen vorzubereiten. (In der Ansicht &quot;Services&quot;in Workbench lautet der Standarddienst Guides (system)/Processes/Render Guide - 1.0.) Der Guide Utilities-Dienst ( `GuidesUtility`) ermöglicht bei Bedarf die Erstellung eines benutzerdefinierten Prozesses zum Rendern eines Guides.
 
@@ -340,7 +340,7 @@ Der JDBC-Dienst (`JdbcService`) ermöglicht Prozessen die Interaktion mit Datenb
 
 Folgende Einstellungen sind für den JDBC-Dienst verfügbar:
 
-**datasourceName:** Ein Zeichenfolgenwert, der den JNDI-Namen der Datenquelle darstellt, die zum Herstellen einer Verbindung mit dem Datenbank-Server zu verwenden ist. Die Datenquelle muss auf dem Anwendungsserver definiert sein, der als Host für den Formularserver dient. Der Standardwert ist der JNDI-Name der Datenquelle für die AEM Formulardatenbank.
+**datasourceName:** Ein Zeichenfolgenwert, der den JNDI-Namen der Datenquelle darstellt, die zum Herstellen einer Verbindung mit dem Datenbank-Server zu verwenden ist. Die Datenquelle muss auf dem Anwendungsserver definiert sein, der als Host für den Forms-Server dient. Der Standardwert ist der JNDI-Name der Datenquelle für die AEM Formulardatenbank.
 
 ## JMS-Diensteinstellungen {#jms-service-settings}
 
@@ -482,7 +482,7 @@ Folgende Einstellungen sind für den PDFG Config-Dienst (`PDFGConfigService`) ve
 
 **Konvertierungszeitlimit für Server:** Das maximale Zeitlimit für die Auftragskonvertierung (in Sekunden) für den Generate PDF-Service und den Distiller-Service. Diese Einstellung beschränkt den maximalen Konvertierungstimeout-Wert, der in der Datei „config.xml“ sowie auf den Administration Console-Seiten für PDF Generator angegeben werden kann. Der Standardwert ist 270.
 
-**Globales Zeitlimit für Server**: Bei der Durchführung von PDF-Konvertierungen berücksichtigt ein Formular-Server dieses Zeitlimit. Konfigurieren Sie den Timeoutwert, um das Problem zu lösen.
+**Globales Server-Timeout:** Bei der Durchführung von PDF-Konvertierungen berücksichtigt ein Forms-Server die Timeout-Beschränkung. Konfigurieren Sie den Timeoutwert, um das Problem zu lösen.
 
 **Auftragsoptionenpräfix**: Ein Präfix, das vom Generate PDF-Service verwendet wird, um den Auftragsoptionendateien, die vorübergehend für die Verwendung durch Acrobat Distiller erstellt werden, eine kurze Zeichenfolge voranzustellen. Der Standardwert ist pdfg.
 
@@ -704,7 +704,7 @@ In einer Clusterkonfiguration wird die Stapelgröße für einen Endpunkt des Typ
 
 **Doppelte Dateinamen überschreiben:** Eine Boolean-Zeichenfolge, die angibt, ob der überwachte Ordner doppelte Ergebnisdateinamen überschreibt und ob beibehaltene Dokumente mit demselben Namen überschrieben werden sollen.
 
-**Aufbewahrungsordner:** Der Standardwert für den Aufbewahrungsordner. Dieser Ordner wird verwendet, um die Quelldateien im Falle einer erfolgreichen Verarbeitung der Eingabe in zu kopieren. Dieser Wert kann ein leerer, relativer oder absoluter Pfad mit einem Dateimuster sein (wie für die Einstellung „Ergebnisordner“ beschrieben).
+**Aufbewahrungsordner:** Der Standardwert für den Aufbewahrungsordner. Dieser Ordner wird verwendet, um die Quelldateien in zu kopieren, wenn die Eingabe erfolgreich verarbeitet wurde. Dieser Wert kann ein leerer, relativer oder absoluter Pfad mit einem Dateimuster sein (wie für die Einstellung „Ergebnisordner“ beschrieben).
 
 **Fehlerordner:** Der Name des Ordners, in den die Dateien mit Fehlern kopiert werden. Dieser Wert kann ein leerer, relativer oder absoluter Pfad mit einem Dateimuster sein (wie für die Einstellung „Ergebnisordner“ beschrieben).
 
@@ -751,11 +751,11 @@ Der Webdienst interagiert mit Webdiensten, indem er SOAP-Nachrichten sendet und 
 
 Die folgenden Einstellungen sind für den Web Service-Dienst verfügbar.
 
-**Keystore**: Der vollständige Pfad der Keystore-Datei mit dem privaten Schlüssel, der für die Authentifizierung verwendet werden soll. Der Formularserver muss auf die Datei zugreifen können.
+**Keystore**: Der vollständige Pfad der Keystore-Datei mit dem privaten Schlüssel, der für die Authentifizierung verwendet werden soll. Der Forms-Server muss auf die Datei zugreifen können.
 
 **Keystore-Kennwort**: Das Kennwort für die Keystore-Datei.
 
-**Keystore-Typ**: Der Typ des Keystores. Geben Sie keinen Wert an, um den standardmäßigen Keystore-Typ zu verwenden, der für die JVM konfiguriert ist, auf der der Formularserver ausgeführt wird. Geben Sie andernfalls einen der folgenden Werte an:
+**Keystore-Typ**: Der Typ des Keystores. Geben Sie keinen Wert an, um den standardmäßigen Keystore-Typ zu verwenden, der für die JVM konfiguriert ist, auf der der Forms-Server ausgeführt wird. Geben Sie andernfalls einen der folgenden Werte an:
 
 * jks
 * pkcs12
@@ -766,7 +766,7 @@ Die folgenden Einstellungen sind für den Web Service-Dienst verfügbar.
 
 **Trust Store-Kennwort**: Das Kennwort für die TrustStore-Datei.
 
-**Trust Store-Typ**: Der Typ des TrustStores. Geben Sie keinen Wert an, um den standardmäßigen Keystore-Typ zu verwenden, der für die JVM konfiguriert ist, auf der der Formularserver ausgeführt wird. Geben Sie andernfalls einen der folgenden Werte an:
+**Trust Store-Typ**: Der Typ des TrustStores. Geben Sie keinen Wert an, um den standardmäßigen Keystore-Typ zu verwenden, der für die JVM konfiguriert ist, auf der der Forms-Server ausgeführt wird. Geben Sie andernfalls einen der folgenden Werte an:
 
 * jks
 * pkcs12
@@ -779,11 +779,11 @@ Der XSLT Transformation-Dienst (`XSLTService`) ermöglicht Prozessen das Anwende
 
 Folgende Einstellung ist für den XSLT Transformation-Dienst verfügbar:
 
-**Factory-Name**: Der voll qualifizierte Name der Java-Klasse, die für die Durchführung von XSLT-Transformationen verwendet werden soll. Wenn kein Wert angegeben ist, wird die Standardfactory verwendet, die in der Java Virtual Machine konfiguriert ist, auf der der Formularserver ausgeführt wird.
+**Factory-Name**: Der voll qualifizierte Name der Java-Klasse, die für die Durchführung von XSLT-Transformationen verwendet werden soll. Wenn kein Wert angegeben ist, wird die Standardfactory verwendet, die in der Java Virtual Machine konfiguriert ist, auf der der Forms-Server ausgeführt wird.
 
 ## Ändern von Sicherheitseinstellungen für einen Dienst {#modifying-security-settings-for-a-service}
 
-Mit dem Formularserver können Sie Sicherheitseinstellungen für jeden Dienst konfigurieren, mit denen Sie eine differenzierte Zugriffskontrolle auf Dienstebene konfigurieren können.
+Mit Forms Server können Sie Sicherheitseinstellungen für jeden Dienst konfigurieren, sodass Sie eine differenzierte Zugriffskontrolle für einzelne Dienste konfigurieren können.
 
 Es werden Standard-Sicherheitsprofile installiert, die dann entsprechend Ihren Systemanforderungen konfiguriert werden können. Jedem Sicherheitsprofil ist eine Domain zugeordnet und es wird entweder auf Benutzerebene oder auf Gruppenebene erstellt.
 

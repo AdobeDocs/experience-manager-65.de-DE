@@ -1,20 +1,16 @@
 ---
 title: Konfigurieren der Segmentierung
-seo-title: Configuring Segmentation
 description: Erfahren Sie, wie Sie die Segmentierung für AEM Campaign konfigurieren.
-seo-description: Learn how to configure segmentation for AEM Campaign.
-uuid: 604ca34d-cdb9-49ff-8f75-02a44b60a8a2
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 44%
+source-wordcount: '1129'
+ht-degree: 40%
 
 ---
 
@@ -110,7 +106,7 @@ Die folgenden Segmenteigenschaften sind standardmäßig verfügbar. Sie können 
 
 Sie können diese Eigenschaften mithilfe der booleschen Operatoren „ODER“ und „UND“ kombinieren (siehe [Erstellen eines neuen Segments](#creating-a-new-segment)), um das exakte Szenario zur Auswahl dieses Segments festzulegen.
 
-Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird dieses Segment aufgelöst. Falls mehrere Segmente zutreffen, wird außerdem der Faktor **[Verstärken](/help/sites-administering/campaign-segmentation.md#boost-factor)** verwendet.
+Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird dieses Segment aufgelöst. Wenn mehrere anwendbare Segmente vorhanden sind, wird die **[Verstärken](/help/sites-administering/campaign-segmentation.md#boost-factor)** wird auch verwendet.
 
 >[!CAUTION]
 >
@@ -149,7 +145,7 @@ So legen Sie Ihr neues Segment fest:
 
 Sie können komplexe Segmente in AEM erstellen. Es ist hilfreich, einige grundlegende Punkte zu beachten:
 
-* Die oberste Ebene der Definition ist immer der ursprünglich erstellte UND-Container. Dies kann nicht verändert werden, hat allerdings auch keine Auswirkungen auf den Rest der Segmentdefinition.
+* Die oberste Ebene der Definition ist immer der ursprünglich erstellte UND-Container. Dieser kann nicht geändert werden, hat jedoch keine Auswirkungen auf den Rest Ihrer Segmentdefinition.
 * Stellen Sie sicher, dass die Verschachtelung Ihres Containers sinnvoll ist. Die Container können als die Klammern Ihres booleschen Ausdrucks betrachtet werden.
 
 Das folgende Beispiel wird verwendet, um Besucher auszuwählen, die entweder

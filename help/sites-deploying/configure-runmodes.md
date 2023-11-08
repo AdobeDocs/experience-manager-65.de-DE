@@ -7,10 +7,10 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 90%
+source-wordcount: '745'
+ht-degree: 85%
 
 ---
 
@@ -71,9 +71,9 @@ Benutzerdefinierte Ausführungsmodi können auch bei jedem Start ausgewählt wer
 
 Mit diesen Modi können Sie die Verwendung von Beispielinhalten steuern. Der Beispielinhalt wird vor der Erstellung des Schnellstarts definiert und kann Pakete, Konfigurationen usw. umfassen:
 
-* Mit dem Ausführungsmodus `samplecontent` wird dieser Inhalt installiert (Standardmodus).
+* Die `samplecontent` Ausführungsmodus installiert diesen Inhalt (Standardmodus).
 
-* Mit dem Modus `nosamplecontent` wird der Beispielinhalt nicht installiert.
+* Die `nosamplecontent` installiert den Beispielinhalt nicht.
 
 Der Ausführungsmodus nosamplecontent wurde für Produktionsinstallationen entwickelt.
 

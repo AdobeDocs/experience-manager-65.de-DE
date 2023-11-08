@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3568'
+source-wordcount: '3570'
 ht-degree: 96%
 
 ---
@@ -173,8 +173,8 @@ Beim Erstellen von Filtern können Sie einen Pfad definieren oder einen regulär
 
 | Regeltyp | Beschreibung |
 |---|---|
-| include | Wenn Sie ein Verzeichnis einschließen, werden dieses Verzeichnis und alle Dateien und Ordner in diesem Verzeichnis (d. h. die gesamte Unterstruktur) einbezogen, aber es werden **keine** anderen Dateien oder Ordner unter dem angegebenen Stammpfad einbezogen. |
-| exclude | Wird ein Verzeichnis ausgeschlossen, werden dieses Verzeichnis und alle Dateien und Ordner in diesem Verzeichnis (d. h. die gesamte Unterstruktur) ausgeschlossen. |
+| include | Das Einbeziehen eines Verzeichnisses schließt dieses Verzeichnis und alle Dateien und Ordner in diesem Verzeichnis ein (d. h. die gesamte Unterstruktur), aber es werden **keine** anderen Dateien oder Ordner unter dem angegebenen Stammpfad einbezogen. |
+| exclude | Beim Ausschließen eines Verzeichnisses werden dieses Verzeichnis sowie alle Dateien und Ordner in diesem Verzeichnis (d. h. die gesamte Unterstruktur) ausgeschlossen. |
 
 Paketfilter werden meistens definiert, wenn Sie das Paket zum ersten Mal [erstellen.](#creating-a-new-package) Sie können jedoch auch später bearbeitet werden. Danach sollte das Paket neu aufgebaut werden, um seinen Inhalt basierend auf den neuen Filterdefinitionen zu aktualisieren.
 

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '4600'
-ht-degree: 59%
+source-wordcount: '4598'
+ht-degree: 58%
 
 ---
 
@@ -166,7 +166,7 @@ Im Allgemeinen wird empfohlen, Lucene-Indizes zu verwenden, es sei denn, es best
 
 ### Solr-Indizierung {#solr-indexing}
 
-AEM unterstützt zudem standardmäßig die Solr-Indizierung. Dies wird zur Unterstützung der Volltextsuche verwendet, kann aber auch zur Unterstützung beliebiger JCR-Abfragen verwendet werden. Solr sollte in Betracht gezogen werden, wenn die CPU-Kapazität der AEM-Instanzen nicht für die benötigte Anzahl an Anfragen in suchintensiven Bereitstellungen wie suchgesteuerten Websites mit einer hohen Anzahl gleichzeitiger Benutzerinnen und Benutzer ausreicht. Alternativ kann Solr in einem Crawler-basierten Ansatz implementiert werden, um einige der fortschrittlicheren Funktionen der Plattform zu nutzen.
+AEM unterstützt standardmäßig auch die Solr-Indizierung. Dies wird zur Unterstützung der Volltextsuche verwendet, kann aber auch zur Unterstützung beliebiger JCR-Abfragen verwendet werden. Solr sollte in Betracht gezogen werden, wenn die CPU-Kapazität der AEM-Instanzen nicht für die benötigte Anzahl an Anfragen in suchintensiven Bereitstellungen wie suchgesteuerten Websites mit einer hohen Anzahl gleichzeitiger Benutzerinnen und Benutzer ausreicht. Alternativ kann Solr in einem Crawler-basierten Ansatz implementiert werden, um einige der fortschrittlicheren Funktionen der Plattform zu nutzen.
 
 Solr-Indizes können so konfiguriert werden, dass sie eingebettet auf dem AEM-Server für Entwicklungsumgebungen ausgeführt werden, oder sie können auf eine Remote-Instanz abgeladen werden, um die Suchskalierbarkeit in der Produktions- und Staging-Umgebung zu verbessern. Während die Abladung der Suche die Skalierbarkeit verbessert, führt sie zu Latenzzeiten und wird daher nicht empfohlen, es sei denn, dies ist erforderlich. Weitere Informationen zum Konfigurieren einer Solr-Integration und zum Erstellen von Solr-Indizes finden Sie in der [Dokumentation zu Oak-Abfragen und -Indizierung](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
 

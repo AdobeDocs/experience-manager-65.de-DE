@@ -10,10 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 6af48ef5-75e6-4b66-bc0d-ecf254b1c4ef
 exl-id: 725c81d0-0258-4118-8b01-29fd7bcaf9b3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 84%
+source-wordcount: '181'
+ht-degree: 79%
 
 ---
 
@@ -42,7 +42,7 @@ Derzeit unterstützen alle Implementierungen der Java-Plattform [TrueType](https
    >
    >Die Schriftarten-Dateien im Repository müssen die Dateiendung `*.ttf` oder `*.TTF` aufweisen.
 
-1. Aktualisieren Sie die [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) von [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Fügen Sie den Pfad zum Schriftarten-Ordner hinzu, d. h. `/apps/<your-project>/fonts`.
+1. Aktualisieren Sie die [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) von [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Fügen Sie den Pfad zum Ordner &quot;Schriftarten&quot;hinzu, also `/apps/<your-project>/fonts`.
 
 1. Kehren Sie zu CRXDE Lite zurück. Sie sollten jetzt in Ihrem Ordner einen Knoten namens `.fontlist` sehen, der den Namen der importierten Schriftarten enthält.
 

@@ -5,9 +5,9 @@ feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: '1961'
 ht-degree: 93%
 
 ---
@@ -178,7 +178,7 @@ Die Antwort enthält Paging-Informationen im Bereich `properties` der SIREN-Ausg
 
 >[!NOTE]
 >
->Paging wird normalerweise auf Container-Entitäten (d. h. Ordner oder Assets mit Ausgabedarstellungen) angewendet, da sie auf die untergeordneten Objekte des angeforderten Elements verweisen.
+>Paging wird normalerweise auf Container-Entitäten (also Ordner oder Assets mit Ausgabedarstellungen) angewendet, da es die untergeordneten Objekte des angeforderten Elements betrifft.
 
 #### Beispiel: Paging {#example-paging}
 
@@ -231,7 +231,7 @@ Inhaltsfragmente:
 * stellen keine Binärdaten bereit.
 * sind vollständig in der JSON-Ausgabe enthalten (innerhalb der Eigenschaft `properties`).
 
-* Gelten auch als atomisch, d. h. die Elemente und Varianten werden als Teil der Eigenschaften des Fragments anstatt als Links oder untergeordnete Entitäten bereitgestellt. Dies ermöglicht einen effiziente Zugriff auf die Payload eines Fragments.
+* gelten auch als atomisch, d. h., die Elemente und Varianten werden als Teil der Eigenschaften des Fragments anstatt als Links oder untergeordnete Entitäten bereitgestellt. Dies ermöglicht einen effiziente Zugriff auf die Payload eines Fragments.
 
 #### Inhaltsmodelle und Inhaltsfragmente {#content-models-and-content-fragments}
 

@@ -10,10 +10,10 @@ topic-tags: author, interactive-communications
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 feature: Adaptive Forms
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1162'
-ht-degree: 71%
+ht-degree: 69%
 
 ---
 
@@ -44,7 +44,7 @@ AEM Forms stellt eine Komponente bereit, die Sie Ihren Sites-Seiten hinzufügen 
 
 Wenn Sie ein adaptives Formular oder die interaktive Kommunikation in eine AEM Sites-Seite einbetten möchten, die eine bearbeitbare Vorlage verwendet, stellen Sie sicher, dass die AEM Form-Komponente als zulässige Komponente in der verknüpften Vorlage konfiguriert ist. Weitere Informationen finden Sie im Abschnitt **Richtlinie und Eigenschaften (Layout-Container)** unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md).
 
-Falls eine Sites-Seite eine statische Vorlage verwendet, müssen Sie sie im Absatzsystem der Seite konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren von Komponenten im Designmodus](/help/sites-authoring/default-components-designmode.md).
+Wenn eine Sites-Seite eine statische Vorlage verwendet, müssen Sie sie im Absatzsystem der Site-Seite konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren von Komponenten im Design-Modus](/help/sites-authoring/default-components-designmode.md).
 
 ## Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation {#af-component}
 

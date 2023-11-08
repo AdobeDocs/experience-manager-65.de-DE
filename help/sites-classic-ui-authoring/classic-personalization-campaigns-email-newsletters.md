@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1106'
-ht-degree: 55%
+source-wordcount: '1105'
+ht-degree: 54%
 
 ---
 
@@ -152,7 +152,7 @@ E-Mails/Newsletter können in Ihrem E-Mail-Dienst veröffentlicht werden, indem 
 
    Wenn der Vorgang erfolgreich war, erhalten Sie in AEM eine Meldung, dass Sie die E-Mail in ExactTarget oder Silverpop Engage anzeigen können.
 
-   Bei ExactTarget kann die veröffentlichte E-Mail durch einen Klick auf **Veröffentlichte E-Mail anzeigen** angezeigt werden. Sie werden direkt zum veröffentlichten Newsletter in ExactTarget weitergeleitet ([https://members.exacttarget.com/](https://members.exacttarget.com/)).
+   Wenn ExactTarget vorhanden ist, kann die veröffentlichte E-Mail durch Klicken auf **Veröffentlichte E-Mail anzeigen**. Sie werden direkt zum veröffentlichten Newsletter in ExactTarget weitergeleitet ([https://members.exacttarget.com/](https://members.exacttarget.com/)).
 
 >[!NOTE]
 >

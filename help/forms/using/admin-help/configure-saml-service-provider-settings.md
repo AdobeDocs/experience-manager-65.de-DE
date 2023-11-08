@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1169d0d1-cbfb-486b-acca-9b9de3d410dc
 exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '598'
-ht-degree: 27%
+ht-degree: 25%
 
 ---
 
@@ -25,7 +25,7 @@ Eine Erläuterung von SAML finden Sie unter [Security Assertion Markup Language 
 
 1. Klicken Sie in Administration Console auf &quot;Einstellungen&quot;> &quot;User Management&quot;> &quot;Konfiguration&quot;> &quot;SAML-Dienstanbietereinstellungen&quot;.
 1. Geben Sie in das Feld &quot;Service Provider Entity ID&quot;eine eindeutige ID ein, die als Kennung für die Implementierung des AEM Forms-Dienstanbieters verwendet werden soll. Sie müssen diese eindeutige ID auch beim Konfigurieren Ihres Identitätsanbieters (IDP) (z. B. `um.lc.com` angeben.) Sie können außerdem die URL verwenden, die zum Zugreifen auf AEM Forms verwendet wird (z. B. `https://AEMformsserver`).
-1. Geben Sie in das Feld für die Dienstanbieter-Basis-URL die Basis-URL für Ihren AEM Forms-Server ein (z. B. `https://AEMformsserver:8080`).
+1. Geben Sie in das Feld &quot;Service Provider Base URL&quot;die Basis-URL für Ihren Forms-Server ein (z. B. `https://AEMformsserver:8080`).
 1. (Optional) Führen Sie die folgenden Aufgaben aus, damit AEM Formulare signierte Authentifizierungsanfragen an den IDP senden können:
 
    * Verwenden Sie Trust Manager, um eine Berechtigung im PKCS #12-Format zu importieren, wobei &quot;Document Signing Credential&quot;als Trust Store-Typ ausgewählt ist. (Siehe [Lokale Berechtigungen verwalten](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials).

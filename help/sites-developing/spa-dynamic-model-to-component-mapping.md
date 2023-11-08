@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 72%
+source-wordcount: '344'
+ht-degree: 77%
 
 ---
 
@@ -33,16 +33,16 @@ Weitere Informationen finden Sie im npm-Paket: [https://www.npmjs.com/package/@a
 
 ## Modellgesteuerte Single Page Application {#model-driven-single-page-application}
 
-Einzelseiten-Apps, die das JavaScript SPA SDK für AEM verwenden, sind modellgesteuert:
+Anwendungen mit einzelnen Seiten, die das JavaScript SPA SDK für AEM nutzen, sind modellgesteuert:
 
 1. Frontend-Komponenten registrieren sich im [Komponentenzuordnungs-Store](/help/sites-developing/spa-dynamic-model-to-component-mapping.md#componentmapping-module).
 1. Anschließend durchläuft der [Container](/help/sites-developing/spa-blueprint.md#container), sobald ihm ein Modell vom [Modellanbieter](/help/sites-developing/spa-blueprint.md#the-model-provider) zur Verfügung gestellt wurde, seinen Modellinhalt ( `:items`).
 
-1. Im Fall einer Seite erhalten die untergeordneten Elemente (`:children`) zunächst eine Komponentenklasse aus der [Komponentenzuordnung](/help/sites-developing/spa-blueprint.md#componentmapping) und instanziieren sie dann.
+1. Wenn es eine Seite gibt, erhalten ihre untergeordneten Elemente (`:children`) zuerst eine Komponentenklasse aus der [Komponentenzuordnung](/help/sites-developing/spa-blueprint.md#componentmapping) und instanziieren sie dann.
 
 ## App-Initialisierung {#app-initialization}
 
-Jede Komponente wird um die Funktionen des [`ModelProvider`](/help/sites-developing/spa-blueprint.md#the-model-provider) erweitert. Die Initialisierung hat daher folgende allgemeine Form:
+Jede Komponente wird um die Funktionen des [`ModelProvider`](/help/sites-developing/spa-blueprint.md#the-model-provider) erweitert. Die Initialisierung hat daher die folgende allgemeine Form:
 
 1. Jeder Modellanbieter initialisiert sich selbst und wartet auf Änderungen, die an dem Modell vorgenommen wurden, das seiner inneren Komponente entspricht.
 1. [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) muss gemäß dem [Initialisierungsfluss](/help/sites-developing/spa-blueprint.md) initialisiert werden.

@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 exl-id: 0d36160a-29fa-4cc4-a0ff-fc681d3e040e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 21%
@@ -174,4 +174,4 @@ Die folgenden Strategien können den Datenverlust von Ausgabe- und Eingabeordner
 
 ## Zusammenfassung {#conclusion}
 
-Aufgrund der dynamischen und sich ständig ändernden Natur eines überwachten Ordners sollten überwachte Ordner mit Dateien wiederhergestellt werden, die innerhalb eines Tages gesichert werden. Eine Best Practice wäre, die Ergebnisse zu sichern, den Eingabeordner auf einem Server zu speichern und Eingabedateien zu verfolgen, damit Sie den Auftrag im Falle eines Fehlers erneut übermitteln können.
+Aufgrund der dynamischen und sich ständig ändernden Natur eines überwachten Ordners sollten überwachte Ordner mit Dateien wiederhergestellt werden, die innerhalb eines Tages gesichert werden. Eine Best Practice wäre, die Ergebnisse zu sichern, den Eingabeordner auf einem Server zu speichern und Eingabedateien zu verfolgen, damit Sie den Auftrag bei einem Fehler erneut übermitteln können.

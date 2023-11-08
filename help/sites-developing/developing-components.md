@@ -12,10 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3446'
-ht-degree: 94%
+source-wordcount: '3447'
+ht-degree: 92%
 
 ---
 
@@ -181,7 +181,7 @@ newComponent (cq:Component)
             description
 ```
 
-Das Anpassen eines Dialogfelds ähnelt der Entwicklung einer Komponente, da das Dialogfeld selbst eine Komponente ist (z. B. Markup, das von einem Komponentenskript zusammen mit dem von einer Client-Bibliothek bereitgestellten Verhalten/Stil gerendert wird).
+Das Anpassen eines Dialogfelds ähnelt dem Entwickeln einer Komponente, da das Dialogfeld selbst eine Komponente ist (d. h. Markup, das von einem Komponentenskript zusammen mit dem Verhalten/Stil einer Client-Bibliothek gerendert wird).
 
 Beispiele finden Sie hier:
 
@@ -243,7 +243,7 @@ Ein Beispiel finden Sie unter:
 Je nach Ihren Anforderungen haben Sie folgende Möglichkeiten:
 
 * Ein gegebenes Granite-Benutzeroberflächenfeld um Komponentenvererbung (`sling:resourceSuperType`) erweitern
-* Erweitern Sie ein bestimmtes Widget aus der zugrunde liegenden Widget-Bibliothek (im Fall der Granite-Benutzeroberfläche ist dies die Coral-Benutzeroberfläche), indem Sie der Widget-Bibliotheks-API (JS-/CSS-Vererbung) folgen.
+* Erweitern Sie ein bestimmtes Widget aus der zugrunde liegenden Widget-Bibliothek (wenn es eine Granite-Benutzeroberfläche gibt, ist dies die Coral-Benutzeroberfläche), indem Sie die Widget-Bibliotheks-API (JS-/CSS-Vererbung) befolgen.
 
 #### Zugriff auf Dialogfelder {#access-to-dialog-fields}
 

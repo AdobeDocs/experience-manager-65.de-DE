@@ -12,9 +12,9 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2693'
+source-wordcount: '2694'
 ht-degree: 71%
 
 ---
@@ -320,7 +320,7 @@ In der folgenden Tabelle werden die Eigenschaften beschrieben, die Sie konfiguri
 
 Mehrere Eigenschaften und Knotentypen sind standardmäßig ausgeschlossen. Diese sind in der OSGi-Konfiguration von **CQ MSM Content Update Action** unter **Ausgeschlossene Seiteneigenschaften** definiert.
 
-Standardmäßig werden Eigenschaften, die den folgenden regulären Ausdrücken entsprechen, beim Rollout ausgeschlossen (d. h. nicht aktualisiert):
+Standardmäßig werden Eigenschaften, die den folgenden regulären Ausdrücken entsprechen, beim Rollout ausgeschlossen (d. h. nicht aktualisiert):
 
 ![CQ MSM Content Update Action](assets/chlimage_1.png)
 

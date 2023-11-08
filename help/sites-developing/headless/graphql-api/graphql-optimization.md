@@ -2,10 +2,10 @@
 title: Optimieren von GraphQL-Abfragen
 description: Erfahren Sie, wie Sie Ihre GraphQL-Abfragen beim Filtern, Paging und Sortieren Ihrer Inhaltsfragmente in Adobe Experience Manager as a Cloud Service für die Bereitstellung Headless Content optimieren können.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1966'
-ht-degree: 63%
+source-wordcount: '1964'
+ht-degree: 61%
 
 ---
 
@@ -179,8 +179,8 @@ Die Reaktionszeit komplexer Abfragen mit großen Ergebnismengen kann durch die S
 
 GraphQL in AEM unterstützt zwei Arten der Paginierung:
 
-* [Limit-/Offset-basierte Paginierung](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
-Diese Methode wird für Listenabfragen verwendet; diese enden mit `List`; Beispiel: `articleList`.
+* [begrenzungs-/offset-basierte Paginierung](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
+Dies wird für Listenabfragen verwendet. Diese enden mit `List`; zum Beispiel `articleList`.
 Um sie zu verwenden, müssen Sie die Position des ersten Elements angeben, das zurückgegeben werden soll (`offset`) und die Anzahl der zurückzugebenden Elemente (`limit` oder Seitengröße).
 
 * [Cursor-basierte Paginierung](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after) (dargestellt durch `first` und `after`) 

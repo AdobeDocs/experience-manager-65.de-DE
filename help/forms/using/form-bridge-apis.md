@@ -1,7 +1,7 @@
 ---
 title: Form Bridge APIs für HTML5-Formulare
 seo-title: Form Bridge APIs for HTML5 forms
-description: Externe Anwendungen verwenden die FormBridge-APIs, um eine Verbindung mit dem XFA Mobile Form herzustellen. Die API löst ein FormBridgeInitialized-Ereignis auf dem übergeordneten Fenster aus.
+description: Externe Anwendungen verwenden die FormBridge-API, um eine Verbindung zum XFA Mobile Form herzustellen. Die API sendet ein FormBridgeInitialized-Ereignis im übergeordneten Fenster.
 seo-description: External applications use the FormBridge API to connect to the XFA Mobile Form. The API dispatches a FormBridgeInitialized event on the parent window.
 uuid: 0db22649-522b-4857-9ffd-826c52381d15
 content-type: reference
@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 exl-id: b598ef47-49ff-4806-8cc7-4394aa068eaa
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+workflow-type: tm+mt
 source-wordcount: '940'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -43,7 +43,7 @@ window.addEventListener("FormBridgeInitialized",
 
 **getBridgeVersion()**
 
-Gibt die Versionsnummer der Skriptbibliothek zurück.
+Gibt die Versionsnummer der Skriptbibliothek aus
 
 * **Eingabe**: keine
 * **Ausgabe**: Versionsnummer der Skriptbibliothek
@@ -63,8 +63,8 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
    * **handler:** Funktion, die ausgeführt wird, wenn Form Bridge verbunden ist.
    * **context**: Das Objekt, auf das der Kontext (dieses) der *handler*-Funktion festgelegt wird.
 
-* **Ausgabe:** keine
-* **Fehler:** keine
+* **Ausgabe**: Keine
+* **Fehler**: Keine
 
 **getDataXML(options)** Gibt die Daten des aktuellen Formulars im XML-Format zurück
 
@@ -73,15 +73,15 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
    * **options:** JavaScript-Objekt, das die folgenden Eigenschaften enthält:
 
       * **Error:** Fehlerhandler-Funktion
-      * **success**: Erfolgshandler-Funktion. Diese Funktion wird an ein Objekt übergeben, das XML in der *data*-Eigenschaft enthält.
-      * **context:** Das Objekt, auf das der Kontext (dies) der *success*-Funktion festgelegt wird.
+      * **success**: Erfolgshandler-Funktion. Diese Funktion wird an ein Objekt übergeben, das XML enthält in *data* -Eigenschaft.
+      * **context**: Das Objekt, dem der Kontext (dies) des *success* -Funktion festgelegt ist
       * **validationChecker**: Funktion, um die Validierungsfehler zu prüfen, die vom Server erhalten wurden. Der Überprüfungsfunktion wird ein Array von Fehlerstrings übergeben.
       * **formState**: Der JSON-Status des XFA-Formulars, für das XML-Daten zurückgegeben werden sollen. Wenn nicht anders angegeben, wird Daten-XML für das aktuell gerenderte Formular zurückgegeben.
 
 * **Ausgabe:** keine
 * **Fehler:** keine
 
-**registerConfig(configName, config)** Registriert Benutzer-/Portal-spezifische Konfigurationen mit FormBridge. Diese Konfigurationen überschreiben die Standardkonfigurationen. Die unterstützten Konfigurationen sind im Abschnitt „config“ angegeben.
+**registerConfig(configName, config)** Registriert Benutzer-/Portal-spezifische Konfigurationen mit FormBridge. Diese Konfigurationen überschreiben die Standardkonfigurationen. Die unterstützten Konfigurationen werden im Abschnitt &quot;config&quot;angegeben.
 
 * **Eingabe:**
 
@@ -89,40 +89,38 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 
       * **widgetConfig**: Erlaubt dem Benutzer, die Standard-Widgets im Formular mit benutzerdefinierten Widgets zu überschreiben. Die Konfiguration wird überschrieben wie folgt:
 
-         *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
+        *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
 
       * **pagingConfig**: Erlaubt dem Benutzer, das Standardverhalten zu überschreiben, bei dem nur die erste Seite gerendert wird. Die Konfiguration wird überschrieben wie folgt:
 
-         *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).*
+        *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).*
 
       * **LoggingConfig**: Ermöglicht dem Benutzer, die Protokollierungsebene zu überschreiben, die Protokollierung für eine Kategorie zu deaktivieren oder festzulegen, ob die Protokolle angezeigt oder an den Server gesendet werden sollen. Die Konfiguration kann überschrieben werden wie folgt:
 
-      ```javascript
-      formBridge.registerConfig{
-        "LoggerConfig" : {
-      {
-      "on":`<true *| *false>`,
-      "category":`<array of categories>`,
-      "level":`<level of categories>`, "
-      type":`<"console"/"server"/"both">`
-      }
-        }
-      ```
+     ```javascript
+     formBridge.registerConfig{
+       "LoggerConfig" : {
+     {
+     "on":`<true *| *false>`,
+     "category":`<array of categories>`,
+     "level":`<level of categories>`, "
+     type":`<"console"/"server"/"both">`
+     }
+       }
+     ```
 
       * **SubmitServiceProxyConfig**: Zulassen, dass Benutzer Sende- und Protokoll-Proxy-Services anmelden können.
 
-         ```javascript
-         window.formBridge.registerConfig("submitServiceProxyConfig",
-         {
-         "submitServiceProxy" : "`<submitServiceProxy>`",
-         "logServiceProxy": "`<logServiceProxy>`",
-         "submitUrl" : "`<submitUrl>`"
-         });
-         ```
+        ```javascript
+        window.formBridge.registerConfig("submitServiceProxyConfig",
+        {
+        "submitServiceProxy" : "`<submitServiceProxy>`",
+        "logServiceProxy": "`<logServiceProxy>`",
+        "submitUrl" : "`<submitUrl>`"
+        });
+        ```
 
    * **config:** Wert der Konfiguration
-
-
 
 * **Ausgabe:** Objekt, das den ursprünglichen Wert der Konfiguration in der *data*-Eigenschaft enthält.
 
@@ -149,8 +147,8 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 **hideSubmitButtons()**: Blendet alle Senden-Schaltflächen im Formular aus
 
 * **Eingabe**: keine
-* **Ausgabe:** keine
-* **Fehler:** Gibt einen Ausnahmefehler aus, wenn Formularstatus nicht initialisiert wurde.
+* **Ausgabe**: Keine
+* **Fehler**: Löst eine Ausnahme aus, wenn der Formularstatus nicht initialisiert wurde.
 
 **getFormState()**: Gibt die JSON-Datei zurück, die den Formularstatus darstellt
 
@@ -159,7 +157,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 
 * **Fehler:** keine
 
-**restoreFormState(options)**: Stellt den Formularstatus aus dem bereitgestellten JSON-Status im Optionenobjekt wieder her. Der Status wird angewendet und Erfolgs- oder Fehlerhandler werden aufgerufen, nachdem der Vorgang ist abgeschlossen ist.
+**restoreFormState(options)**: Stellt den Formularstatus aus dem bereitgestellten JSON-Status im Optionenobjekt wieder her. Der Status wird angewendet und Erfolgs- oder Fehler-Handler werden aufgerufen, nachdem der Vorgang abgeschlossen ist.
 
 * **Eingabe:**
 
@@ -177,7 +175,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 
 * **Eingabe**: SOM-Ausdruck des Felds, auf das der Fokus gelegt werden soll.
 * **Ausgabe:** keine
-* **Fehler:** Gibt im Fall eines falschen SOM-Ausdrucks einen Ausnahmefehler aus.
+* **Fehler:** Löst eine Ausnahme aus, wenn ein falscher SOM-Ausdruck vorhanden ist
 
 **setFieldValue (som, value)**: Legt den Wert der Felder für die gegebenen SOM-Ausdrücke fest
 
@@ -187,7 +185,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
    * **value**: Array der Werte, die den SOM-Ausdrücken in einem **SOM**-Array entsprechen. Wenn der Datentyp des Werts nicht mit fieldType übereinstimmt, wird der Wert nicht geändert.
 
 * **Ausgabe:** keine
-* **Fehler**: Löst im Fall eines falschen SOM-Ausdrucks einen Ausnahmefehler aus.
+* **Fehler:** Löst eine Ausnahme aus, wenn ein falscher SOM-Ausdruck vorliegt
 
 **getFieldValue (som)**: Gibt den Wert der Felder für die gegebenen SOM-Ausdrücke zurück
 

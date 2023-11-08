@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '18965'
+source-wordcount: '18956'
 ht-degree: 79%
 
 ---
@@ -257,7 +257,7 @@ Erstellen Sie ein PDF-Dokument mithilfe der Output-API (Java):
 
    >[!NOTE]
    >
-   >Beim Generieren eines PDF-Dokuments durch Aufrufen der `generatePDFOutput`-Methode ist zu beachten, dass Sie keine Daten mit einem XFA-PDF-Formular zusammenführen können, das signiert oder zertifiziert ist. (Siehe [Digitales Signieren und Zertifizieren von Dokumenten ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Beim Generieren eines PDF-Dokuments durch Aufrufen der `generatePDFOutput` -Methode können Sie keine Daten mit einem XFA-PDF-Formular zusammenführen, das signiert oder zertifiziert ist. (Siehe [Digitales Signieren und Zertifizieren von Dokumenten ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
@@ -354,7 +354,7 @@ Erstellen Sie ein PDF-Dokument mithilfe der Output API (Web Service):
 
    >[!NOTE]
    >
-   >Beachten Sie beim Erzeugen eines PDF-Dokuments durch Aufrufen der Methode `generatePDFOutput`, dass Sie keine Daten mit einem XFA-PDF-Formular zusammenführen können, das signiert oder zertifiziert ist. (Siehe [Digitales Signieren und Zertifizieren von Dokumenten ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Beim Generieren eines PDF-Dokuments durch Aufrufen der `generatePDFOutput` -Methode können Sie keine Daten mit einem XFA-PDF-Formular zusammenführen, das signiert oder zertifiziert ist. (Siehe [Digitales Signieren und Zertifizieren von Dokumenten ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
@@ -1505,7 +1505,7 @@ Nachdem Sie ein zu druckendes Dokument abgerufen haben, können Sie den Ausgabes
 
 >[!NOTE]
 >
->Wenn PDFG auf dem Formular-Server installiert ist und auf dem Server Windows Server 2008 ausgeführt wird, können Sie die SharedPrinter-Eigenschaft nicht verwenden. Verwenden Sie in diesem Fall ein anderes Druckerprotokoll.
+>Wenn PDFG auf dem Forms-Server installiert ist und der Server unter Windows Server 2008 ausgeführt wird, können Sie die SharedPrinter-Eigenschaft nicht verwenden. Verwenden Sie in diesem Fall ein anderes Druckerprotokoll.
 
 >[!NOTE]
 >
@@ -2173,7 +2173,7 @@ Erstellen Sie Suchregeln mithilfe der Ausgabe-API (Web-Service):
 
    >[!NOTE]
    >
-   >Beim Generieren eines PDF-Dokuments durch Aufrufen der `generatePDFOutput`-Methode sollten Sie beachten, dass Sie keine Daten in ein XFA-PDF-Formular aufnehmen können, falls dieses signiert/zertifiziert wurde oder Verwendungsrechte enthält. Weitere Informationen zu Verwendungsrechten finden Sie unter [Verwendungsrechte für PDF-Dokumente aktivieren](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
+   >Beim Generieren eines PDF-Dokuments durch Aufrufen der `generatePDFOutput` -Methode können Sie keine Daten mit einem XFA-PDF-Formular zusammenführen, das signiert, zertifiziert oder Verwendungsrechte enthält. Weitere Informationen zu Verwendungsrechten finden Sie unter [Verwendungsrechte für PDF-Dokumente aktivieren](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
 
 1. Ergebnisse des Vorgangs abrufen
 

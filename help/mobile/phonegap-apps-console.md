@@ -1,16 +1,14 @@
 ---
 title: Erstellen und Bearbeiten von Apps mithilfe der Apps-Konsole
 description: Auf dieser Seite erfahren Sie mehr über das Erstellen und Bearbeiten von Apps mithilfe der Apps-Konsole.
-uuid: 4f7db978-ae2b-4ca6-89f1-26e091d9140a
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2687'
+source-wordcount: '2685'
 ht-degree: 1%
 
 ---
@@ -174,7 +172,7 @@ Diese Funktion ist in Apps 6.1 Feature Pack 2 verfügbar und bietet eine einfach
 Was ist eine App-Vorlage? Stellen Sie sich dies als Sammlung von Seitenvorlagen und Komponenten vor, die eine Grundlinie oder Grundlage einer App darstellen.
 Wenn Sie eine App basierend auf der Vorlage einer anderen App erstellen, erhalten Sie eine App mit einem Startpunkt, der für die App steht, aus der sie erstellt wurde.
 
-Sie müssen über eine vorhandene Vorlage für mobile Apps (oder eine installierte App, die über eine App-Vorlage verfügt) verfügen, um diese Funktion nutzen zu können.
+Sie benötigen eine vorhandene Vorlage für mobile Apps (oder eine installierte App, die über eine App-Vorlage verfügt), um diese Funktion verwenden zu können.
 
 Das neueste Beispielpaket für AEM Apps 6.1 enthält eine aktualisierte Version der Geometrixx App mit einer App-Vorlage. Alternativ können Sie das StarterKit installieren, das auch eine Vorlage bereitstellt.
 

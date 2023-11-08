@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2718'
+source-wordcount: '2717'
 ht-degree: 89%
 
 ---
@@ -221,7 +221,7 @@ XMP standardisiert die Art, wie Metadaten definiert, erstellt und verarbeitet we
 Alle veralteten Metadaten aus EXIF, ID3 oder Microsoft Office werden automatisch in XMP übersetzt. Diese können erweitert werden, um kundenspezifische Metadatenschemata wie Produktkataloge zu unterstützen.
 
 Metadaten in XMP bestehen aus einer Reihe von Eigenschaften. Diese Eigenschaften sind stets mit einer
-bestimmten Entität verknüpft, die als Ressource bezeichnet wird. Die Eigenschaften beziehen sich also auf die Ressource. Bei XMP ist die Ressource stets das Asset.
+bestimmten Entität verknüpft, die als Ressource bezeichnet wird. Die Eigenschaften beziehen sich also auf die Ressource. Wenn XMP vorhanden ist, ist die Ressource immer das Asset.
 
 ### XMP-Ökosystem {#xmp-ecosystem}
 

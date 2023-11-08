@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 58%
+source-wordcount: '1426'
+ht-degree: 56%
 
 ---
 
@@ -72,7 +72,7 @@ Die Dialogdefinition für eine Strukturvorlage funktioniert ähnlich wie bei ein
 
 * Komponenten-Dialogfelddefinitionen werden als normale Dialogfelder gerendert (wie z. B. im mittleren Bereich des Dialogfeldeditors angezeigt), während Dialogfelddefinitionen von Strukturvorlagen zwar als normale Dialogfelder im Dialogfeldeditor angezeigt werden, aber auf der Strukturvorlagen-Seite als Strukturvorlagenformular wiedergegeben werden (wie in der **Nachrichten**-Strukturvorlage oben).
 * Komponentendialogfelder enthalten nur Felder für die Werte, die zum Definieren des Inhalts einer einzelnen bestimmten Komponente erforderlich sind. Ein Dialogfeld einer Strukturvorlage muss Felder für jede Eigenschaft in jedem Absatz der zu erstellenden Seite enthalten.
-* Bei Dialogfeldern für Komponenten ist die Komponente, die für das Rendern des angegebenen Inhalts verwendet wird, implizit, und daher wird die Eigenschaft `sling:resourceType` eines Absatzes automatisch bei dessen Erstellung eingefügt. Bei einer Strukturvorlage müssen alle Informationen, die sowohl den Inhalt als auch die zugewiesene Komponente für einen bestimmten Absatz definieren, vom Dialogfeld selbst bereitgestellt werden. In Dialogfeldern von Strukturvorlagen müssen diese Informationen bereitgestellt werden, indem Sie *ausgeblendete* Felder verwenden, um diese Informationen bei der Seitenerstellung zu übermitteln.
+* Wenn Komponentendialogfelder vorhanden sind, ist die Komponente, die zum Rendern des angegebenen Inhalts verwendet wird, implizit und daher die `sling:resourceType` -Eigenschaft des Absatzes wird automatisch ausgefüllt, wenn der Absatz erstellt wird. Bei einer Strukturvorlage müssen alle Informationen, die sowohl den Inhalt als auch die zugewiesene Komponente für einen bestimmten Absatz definieren, vom Dialogfeld selbst bereitgestellt werden. In Dialogfeldern von Strukturvorlagen müssen diese Informationen bereitgestellt werden, indem Sie *ausgeblendete* Felder verwenden, um diese Informationen bei der Seitenerstellung zu übermitteln.
 
 Ein Blick auf die Beispiel-Strukturvorlage **Nachrichten** im Dialog-Editor hilft zu erklären, wie dies funktioniert. Wechseln Sie in den Designmodus auf der Strukturvorlagen-Seite und klicken Sie auf den Link des Dialogfeldeditors.
 

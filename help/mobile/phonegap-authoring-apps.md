@@ -1,16 +1,14 @@
 ---
 title: Erstellen von mobilen Anwendungen
 description: Mit dem AEM Mobile Dashboard können Sie Ihre Mobile App erstellen, erstellen und bereitstellen sowie Metadaten für Anwendungen erstellen, löschen und bearbeiten. Auf dieser Seite erfahren Sie mehr.
-uuid: 293b5d29-df7e-42dd-ae64-8c677317e7a5
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1011'
 ht-degree: 1%
 
 ---
@@ -67,7 +65,7 @@ Inhalte können in AEM Mobile auf die gleiche Weise erstellt, aktualisiert und g
 
 Nachdem Sie Ihren Inhalt über die Kachel Seiteninhalt verwalten hinzugefügt oder geändert haben, können Sie diese Änderungen mit einem Update der Inhaltsfreigabe an Ihre Kunden senden.
 
-Das Inhaltspaket ermöglicht es dem AEM App-Autor, Seiteninhalte in AEM zu verwalten und Ihr Entwicklungsteam dazu zu veranlassen, Änderungen an Ihrer PhoneGap-Shell-Anwendung vorzunehmen (d. h. App-Framework oder -Infrastruktur) und diese Änderungen dann schnell an Ihre Kunden zu übertragen, ohne dass ein Entwickler die Möglichkeit haben muss, sich erneut an die verschiedenen Stores zur Verteilung anzumelden.
+Das Inhaltspaket ermöglicht es dem AEM App-Autor, Seiteninhalte in AEM zu verwalten und Ihr Entwicklerteam zu veranlassen, Ihre PhoneGap Shell-Anwendung zu ändern (d. h. das App-Framework oder die Infrastruktur) und diese Änderungen dann schnell an Ihre Kunden zu senden, ohne dass ein Entwickler dazu aufgefordert werden muss, sich erneut an die verschiedenen Stores zur Verteilung anzumelden.
 
 Das Inhaltspaket erstellt für jedes Update eine ZIP-Datei, die als Inhaltsfreigabepaket gilt. Diese Pakete enthalten HTML-Ressourcen und HTML-Seiten, die beim Rendern der App generiert werden und intelligent genug sind, nur die Dateien zu verpacken, die seit der letzten Aktualisierung geändert wurden.
 

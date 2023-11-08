@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '2623'
 ht-degree: 22%
@@ -27,7 +27,7 @@ Die Seite &quot;Servereinstellungen&quot;bietet Zugriff auf verschiedene Einstel
 
 ## E-Mail-Einstellungen konfigurieren {#configuring-email-settings}
 
-Sie können ein E-Mail-Konto für den Formularserver angeben, über das dieser E-Mail-Nachrichten an AEM Benutzer und Administratoren von Formularen sendet. Diese E-Mail-Nachrichten werden verwendet, um Benutzer auf die Aufgaben aufmerksam zu machen, die sie ausführen müssen, den Benutzer über Aufgaben zu informieren, für die ein Termin erreicht wurde, und den Administrator über eventuelle Prozessfehler zu informieren.
+Sie können ein E-Mail-Konto für den Forms-Server angeben, über das E-Mail-Nachrichten an AEM Benutzer und Administratoren von Formularen gesendet werden. Diese E-Mail-Nachrichten werden verwendet, um Benutzer auf die Aufgaben aufmerksam zu machen, die sie ausführen müssen, den Benutzer über Aufgaben zu informieren, für die ein Termin erreicht wurde, und den Administrator über eventuelle Prozessfehler zu informieren.
 
 Um das Senden von E-Mail-Nachrichten zwischen AEM Formularen und Benutzern zu aktivieren, konfigurieren Sie die Einstellungen für ausgehende E-Mails auf der Seite E-Mail-Einstellungen . Ausgehende E-Mails müssen einen SMTP-Server verwenden.
 
@@ -288,7 +288,7 @@ Auf der Seite &quot;BAM-Konfigurationseinstellungen&quot;legen Sie die Verbindun
 1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;Forms-Workflow&quot;> &quot;Servereinstellungen&quot;> &quot;BAM-Konfigurationseinstellungen&quot;.
 1. Geben Sie in das Feld &quot;BAM Host&quot;den Namen des Servers ein, auf dem BAM ausgeführt wird. Die Standardeinstellung ist localhost.
 1. Geben Sie in das Feld &quot;BAM Port&quot;den Anschluss ein, über den eine Verbindung zu dem Server hergestellt werden soll, auf dem BAM ausgeführt wird. Der standardmäßige BAM-Port für JBoss ist 8080, WebLogic ist 7001 und WebSphere ist 9080.
-1. Geben Sie in das Feld &quot;Server Host&quot;den Namen oder die IP-Adresse des Host-Formularservers ein. Der Standardwert lautet localhost.
-1. Geben Sie in das Feld &quot;Server Port&quot;die vom Formularserver verwendete Anschlussnummer ein.
+1. Geben Sie in das Feld &quot;Server Host&quot;den Namen oder die IP-Adresse des Host-Forms-Servers ein. Der Standardwert lautet localhost.
+1. Geben Sie in das Feld &quot;Server Port&quot;die vom Forms-Server verwendete Anschlussnummer ein.
 1. Geben Sie in die Felder &quot;Benutzername&quot;und &quot;Kennwort&quot;die entsprechende Benutzer-ID und das Kennwort für den Zugriff auf den BAM-Server ein. Der Standardbenutzername lautet CognosNowAdmin und das Standardkennwort lautet manager.
 1. Klicken Sie auf Speichern.

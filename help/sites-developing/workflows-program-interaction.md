@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '2008'
-ht-degree: 67%
+ht-degree: 65%
 
 ---
 
@@ -359,7 +359,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Schließt das Arbeitselement ab, dessen URI als Parameter <code>item</code> gesendet wird und leitet die entsprechende Workflow-Instanz an den/die nächsten Knoten weiter, der/die bei einem Rückschritt durch den Parameter <code>route</code> oder <code>backroute</code> definiert wird/werden.<br /> Wenn der Parameter <code>delegatee</code> gesendet wird, wird das vom Parameter <code>item</code> benannte Element an den angegebenen Teilnehmer delegiert.</td>
+   <td>Schließt das Arbeitselement ab, dessen URI als Parameter gesendet wird <code>item</code> und leitet die entsprechende Workflow-Instanz an den nächsten Knoten weiter, der durch den Parameter definiert wird <code>route</code> oder <code>backroute</code> wenn ein Schritt zurückgeht.<br /> Wenn der Parameter <code>delegatee</code> gesendet wird, wird das vom Parameter <code>item</code> benannte Element an den angegebenen Teilnehmer delegiert.</td>
   </tr>
  </tbody>
 </table>

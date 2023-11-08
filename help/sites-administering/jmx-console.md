@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '4962'
+source-wordcount: '4963'
 ht-degree: 51%
 
 ---
@@ -597,7 +597,7 @@ Schreibgeschützt.
 
 * Zurückgegebener Wert: keiner
 
-**becomeClusterMaster**: Legt diesen Repository-Knoten als Master-Knoten des Clusters fest. Wenn er nicht bereits Master ist, hält dieser Befehl den Listener der aktuellen Master-Instanz an und startet einen Master-Listener auf dem aktuellen Knoten. Dieser Knoten wird dann als Master-Knoten festgelegt und neu gestartet, wodurch alle anderen Knoten im Cluster (d. h. die vom Master-Knoten gesteuerten Knoten) eine Verbindung zu dieser Instanz herstellen.
+**becomeClusterMaster**: Legt diesen Repository-Knoten als Master-Knoten des Clusters fest. Wenn er nicht bereits Master ist, hält dieser Befehl den Listener der aktuellen Master-Instanz an und startet einen Master-Listener auf dem aktuellen Knoten. Dieser Knoten wird dann als Master-Knoten festgelegt und neu gestartet, wodurch alle anderen Knoten im Cluster (d. h. die vom Master gesteuerten Knoten) eine Verbindung zu dieser Instanz herstellen.
 
 * Argumente: keine
 * Zurückgegebener Wert: keiner

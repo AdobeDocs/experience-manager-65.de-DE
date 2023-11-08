@@ -7,10 +7,10 @@ activity: setup
 audience: administrator
 feature: Commerce Integration Framework
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '384'
-ht-degree: 63%
+ht-degree: 57%
 
 ---
 
@@ -36,11 +36,11 @@ Gehen Sie wie folgt vor, um eine AEM-Site und die AEM-CIF-Kernkomponenten zu ein
 
 3. Erstellen Sie eine untergeordnete Konfiguration der CIF-Cloud Service-Konfiguration wie folgt:
 
-   * Wechseln Sie in AEM zu „Tools“ > „Allgemein“ > [Konfigurations-Browser](/help/sites-administering/configurations.md#using-configuration-browser).
+   * Navigieren Sie AEM zu Tools > Allgemein > [Konfigurationsbrowser](/help/sites-administering/configurations.md#using-configuration-browser)
    * Wählen Sie die von Ihnen erstellte Basiskonfiguration aus
    * Erstellen Sie eine Konfiguration anhand der unter Nummer 2 beschriebenen Schritte.
 
-   Diese neue Konfiguration wird als untergeordnete Konfiguration der Basiskonfiguration erstellt. Sie können nun die Konfigurationseinstellungen unter „Tools“ > „Allgemein“ > „Konfigurationsbrowser“ erstellen.
+   Diese neue Konfiguration wird als untergeordnete Konfiguration der Basiskonfiguration erstellt. Sie können jetzt unter Tools > Allgemein > Konfigurationsbrowser die Konfigurationseinstellungen erstellen.
 
    >[!TIP]
    >

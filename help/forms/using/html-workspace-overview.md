@@ -1,19 +1,15 @@
 ---
 title: Arbeiten mit AEM Forms Workspace
-seo-title: Working with AEM Forms workspace
 description: Erste Schritte mit AEM Forms Workspace mit diesem kurzen Überblick über die Prozess-Workflows.
-seo-description: Get started with AEM Forms workspace with this quick overview of the process workflows.
-uuid: 36381e7b-1533-459c-80de-92e806a49cd5
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 866cd9cb-6661-4b0f-a3af-e39453e6e51b
 docset: aem65
 exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 30%
+source-wordcount: '1040'
+ht-degree: 28%
 
 ---
 
@@ -51,7 +47,7 @@ Sie können mehrere Aufgaben desselben Typs genehmigen. Wenn Sie eine Aufgabe zu
 
 Flex Workspace wird für AEM Forms-Kunden nicht unterstützt. Alle Kunden, die Flex Workspace verwenden, sollten zu AEM Forms Workspace wechseln.
 
-In AEM Forms Workspace wurden die standardmäßigen Wiedergabe- und Sendedienste im standardmäßigen Aktionsprofil, die mit XDP-Formularen verknüpft sind, geändert und neue Dienste wurden eingeführt. Weitere Informationen finden Sie unter [Neuer Wiedergabe- und Sendedienst](/help/forms/using/new-render-submit-service.md). Um Ihre vorhandenen Prozesse, die XDP-Formulare nutzen, zu migrieren, sodass Sie diese Dienste nutzen können, führen Sie [diese Schritte](new-render-submit-service.md) aus.
+In AEM Forms Workspace wurden die standardmäßigen Wiedergabe- und Sendedienste im standardmäßigen Aktionsprofil, die mit XDP-Formularen verknüpft sind, geändert und neue Dienste wurden eingeführt. Weitere Informationen finden Sie unter [Neuer Wiedergabe- und Sendedienst](/help/forms/using/new-render-submit-service.md). Um Ihre vorhandenen Prozesse, die mit XDP-Formularen funktionieren, zu migrieren, um diese Dienste zu verwenden, können Sie folgende Schritte ausführen: [diese Schritte](new-render-submit-service.md).
 
 **Zuordnen von Flex Workspace-Anpassungen zu AEM Forms Workspace**
 

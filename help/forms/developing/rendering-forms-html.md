@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '4143'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -67,13 +67,13 @@ Sie müssen sich explizit mit den Methoden `xfa.host.pageUp` und `xfa.host.pageD
 >
 >Wenn Sie das Aussehen der Schaltfläche für die digitale HTML-Signatur in einem HTML-Formular anpassen möchten, müssen Sie die folgenden Eigenschaften in der Datei fscdigsig.css (innerhalb der Datei adobe-forms-ds.ear > adobe-forms-ds.war) ändern:
 
-**.fsc-ds-ssb**: Dieses Stylesheet gilt für Felder mit Leerzeichen.
+**.fsc-ds-ssb**: Dieses Stylesheet kann angewendet werden, wenn ein leeres Zeichenfeld vorhanden ist.
 
-**.fsc-ds-ssv**: Dieses Stylesheet gilt für ein gültiges Zeichenfeld.
+**.fsc-ds-ssv**: Dieses Stylesheet kann angewendet werden, wenn ein Feld für ein gültiges Zeichen vorhanden ist.
 
-**.fsc-ds-ssc**: Dieses Stylesheet gilt für ein gültiges Zeichenfeld, auch wenn die Daten geändert wurden.
+**.fsc-ds-ssc**: Dieses Stylesheet ist verfügbar, wenn ein gültiges Zeichenfeld vorhanden ist, sich die Daten jedoch geändert haben.
 
-**.fsc-ds-ssi**: Dieses Stylesheet gilt für ungültige Zeichenfelder.
+**.fsc-ds-ssi**: Dieses Stylesheet kann angewendet werden, wenn ein ungültiges Zeichenfeld vorhanden ist.
 
 **.fsc-ds-popup-bg**: Diese Stylesheet-Eigenschaft wird nicht verwendet.
 

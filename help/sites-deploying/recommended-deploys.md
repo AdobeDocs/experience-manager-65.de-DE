@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1780'
-ht-degree: 55%
+source-wordcount: '1779'
+ht-degree: 52%
 
 ---
 
@@ -157,7 +157,7 @@ Eine minimale Bereitstellung mit MongoDB umfasst normalerweise die folgende Topo
 
 Darüber hinaus wird dringend empfohlen, den Datenspeicher auf einem freigegebenen Dateisystem oder Amazon S3 so zu konfigurieren, dass die Assets oder Binärdateien nicht in MongoDB gespeichert werden. Dadurch wird eine optimale Leistung innerhalb der Implementierung sichergestellt.
 
-Ein weiterer Vorteil, der sich durch die Bereitstellung einer MongoDB-Replikatgruppe mit einem Cluster von zwei oder mehr Autoreninstanzen ergibt, ist das automatisierte Wiederherstellungsszenario mit minimalen Ausfallzeiten bei einem Ausfall der Autoreninstanzen, MongoDB-Replikatgruppe oder des gesamten Rechenzentrums. Dennoch sollte die Wahl von MongoMK gegenüber TarMK nicht allein von der Wiederherstellungsanforderung bestimmt werden, da TarMK auch eine minimale Ausfallzeitlösung mit einem kontrollierten Failover-Mechanismus bereitstellen kann.
+Einer der zusätzlichen Vorteile der Bereitstellung eines MongoDB-Replikatsatzes mit einem Cluster von zwei oder mehr Autoreninstanzen besteht darin, dass ein automatisiertes Wiederherstellungsszenario mit minimalen Ausfallzeiten vorliegt, wenn Autoreninstanzen, MongoDB-Replikate oder ein kompletter Rechenzentrumsfehler vorliegen. Dennoch sollte die Wahl von MongoMK gegenüber TarMK nicht allein von der Wiederherstellungsanforderung bestimmt werden, da TarMK auch eine minimale Ausfallzeitlösung mit einem kontrollierten Failover-Mechanismus bereitstellen kann.
 
 Wenn die oben genannten Kriterien während der ersten achtzehn Monate der Bereitstellung nicht erfüllt sein sollen, wird empfohlen, zunächst AEM mit TarMK bereitzustellen, dann Ihre Konfiguration zu einem späteren Zeitpunkt, wenn die oben genannten Kriterien zutreffen, neu zu bewerten und schließlich zu bestimmen, ob TarMK weiterhin verwendet oder zu MongoMK migriert werden soll.
 

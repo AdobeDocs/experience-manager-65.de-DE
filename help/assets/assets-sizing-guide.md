@@ -5,10 +5,10 @@ contentOwner: AG
 role: Architect, Admin
 feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1611'
-ht-degree: 55%
+source-wordcount: '1609'
+ht-degree: 54%
 
 ---
 
@@ -80,11 +80,11 @@ Im AWS-Betrieb können, wenn statt eines RAID-Arrays mit EBS-Volumes ein zentral
 
 #### Leistungsprobleme {#performance-concerns}
 
-Bei einem freigegebenen Datenspeicher müssen die Binärdateien auf einem Laufwerk gespeichert werden, das an ein Netzwerk angebunden und für alle Instanzen freigegeben ist. Da der Zugriff auf diese Binärdateien über ein Netzwerk erfolgt, wird die Systemleistung beeinträchtigt. Eine schnelle Netzwerkverbindung zu einem schnellen Festplattenarray kann diesen Effekt teilweise auffangen. Dies ist jedoch eine teure Angelegenheit. Im Falle von AWS-Vorgängen liegen alle Festplatten remote vor, sodass eine Netzwerkanbindung erforderlich ist. Bei temporären Volumes gehen Daten verloren, wenn die Instanz gestartet oder angehalten wird.
+Bei einem freigegebenen Datenspeicher müssen die Binärdateien auf einem Laufwerk gespeichert werden, das an ein Netzwerk angebunden und für alle Instanzen freigegeben ist. Da der Zugriff auf diese Binärdateien über ein Netzwerk erfolgt, wird die Systemleistung beeinträchtigt. Eine schnelle Netzwerkverbindung zu einem schnellen Festplattenarray kann diesen Effekt teilweise auffangen. Dies ist jedoch eine teure Angelegenheit. Wenn AWS-Vorgänge ausgeführt werden, sind alle Festplatten remote und benötigen eine Netzwerkverbindung. Bei temporären Volumes gehen Daten verloren, wenn die Instanz gestartet oder angehalten wird.
 
 #### Latenz {#latency}
 
-Die Latenz in S3-Implementierungen wird durch die Schreibthreads im Hintergrund eingeführt. Bei Sicherungsverfahren muss diese Latenz berücksichtigt werden. Darüber hinaus können Lucene-Indizes beim Erstellen einer Sicherung unvollständig bleiben. Dies gilt für alle zeitkritischen Dateien, die in den S3-Datenspeicher geschrieben und von einer anderen Instanz aus aufgerufen werden.
+Die Latenz in S3-Implementierungen wird durch die Schreibthreads im Hintergrund eingeführt. Sicherungsverfahren müssen diese Latenz berücksichtigen. Darüber hinaus können Lucene-Indizes beim Erstellen einer Sicherung unvollständig bleiben. Dies gilt für alle zeitkritischen Dateien, die in den S3-Datenspeicher geschrieben und von einer anderen Instanz aus aufgerufen werden.
 
 ### Knotenspeicher oder Dokumentspeicher {#node-store-document-store}
 

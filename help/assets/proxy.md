@@ -4,10 +4,10 @@ description: Ein Proxy ist eine [!DNL Experience Manager] -Instanz, die Proxy-Wo
 contentOwner: AG
 role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 88%
+source-wordcount: '842'
+ht-degree: 86%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 88%
 
 [!DNL Adobe Experience Manager Assets] verwendet einen Proxy, um die Verarbeitung bestimmter Aufgaben zu verteilen.
 
-Ein Proxy ist eine bestimmte (und gelegentlich separate) Experience Manager-Instanz, die Proxy-Worker als Prozessoren verwendet, um Aufträge zu bearbeiten und Ergebnisse zu generieren. Ein Proxy-Worker kann für eine Vielzahl von Aufgaben verwendet werden. [!DNL Assets]-Proxys können Assets hochladen, die in Assets gerendert werden sollen. Beispielsweise verarbeitet der [IDS-Proxy-Worker](indesign.md) Dateien, die in Assets verwendet werden sollen, mit einem [!DNL Adobe InDesign]-Server.
+Ein Proxy ist eine bestimmte (und gelegentlich separate) Experience Manager-Instanz, die Proxy-Worker als Prozessoren verwendet, um Aufträge zu bearbeiten und Ergebnisse zu generieren. Ein Proxy-Worker kann für eine Vielzahl von Aufgaben verwendet werden. Wenn eine [!DNL Assets] Proxy, der zum Laden von Assets zum Rendern in Assets verwendet werden kann. Beispielsweise verarbeitet der [IDS-Proxy-Worker](indesign.md) Dateien, die in Assets verwendet werden sollen, mit einem [!DNL Adobe InDesign]-Server.
 
 Wenn der Proxy eine separate [!DNL Experience Manager]-Instanz ist, wird die Last für die [!DNL Experience Manager]-Autorinstanz(en) reduziert. Standardmäßig führt [!DNL Assets] die Aufgaben zur Asset-Verarbeitung in derselben JVM (externalisiert über Proxy) aus, um die Last für die [!DNL Experience Manager]-Autorinstanz zu reduzieren.
 

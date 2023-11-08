@@ -9,10 +9,10 @@ docset: aem65
 feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '6036'
-ht-degree: 100%
+source-wordcount: '6035'
+ht-degree: 99%
 
 ---
 
@@ -533,7 +533,7 @@ Der kopierte Integrations-Code wird für eine responsive Umgebung festgelegt. Da
 >
 An dieser Stelle sind Sie fertig, wenn Sie die Interaktivität mit ausschließlich per Hyperlink verbundener Web-Seiten hinzugefügt haben.
 >
-Wenn Sie jedoch Interaktivität hinzugefügt haben, um eine Schnellansicht auszulösen, dienen die Miniaturen neben dem interaktiven Video nur zu Anzeigezwecken. Sie sind noch nicht in Ihre vorhandenen Schnellansichten integriert. In einem solchen Fall müssen Sie das interaktive Video in die vorhandenen Schnellansichten auf Ihrer Website integrieren.
+Wenn Sie jedoch Interaktivität hinzugefügt haben, um eine Schnellansicht auszulösen, dienen die Miniaturen neben dem interaktiven Video nur zu Anzeigezwecken. Sie sind noch nicht in Ihre vorhandenen Schnellansichten integriert. In diesem Fall müssen Sie das interaktive Video in die Schnellansicht auf Ihrer Website integrieren.
 
 **Beispiel**
 
