@@ -6,19 +6,19 @@ exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
-# Umgang mit DSGVO-Anfragen für die Adobe Experience Manager (AEM Foundation){#handling-gdpr-requests-for-the-aem-foundation}
+# Umgang mit DSGVO-Anfragen für die Adobe Experience Manager (AEM) Foundation{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
->Die DSGVO wird in den folgenden Abschnitten als Beispiel verwendet, die betroffenen Details gelten jedoch für alle Datenschutz- und Datenschutzbestimmungen wie DSGVO, CCPA usw.
+>Die DSGVO dient in den folgenden Abschnitten als Beispiel, die jeweiligen Informationen gelten jedoch für alle Datenschutzvorschriften und -bestimmungen, wie DSGVO, CCPA usw.
 
 ## AEM Foundation – DSGVO-Unterstützung {#aem-foundation-gdpr-support}
 
-Auf AEM Foundation-Ebene werden personenbezogene Daten im Benutzerprofil gespeichert. Daher wird in diesem Artikel hauptsächlich beschrieben, wie Sie auf Benutzerprofile zugreifen und diese löschen, um die DSGVO-Zugriffs- bzw. Löschanfragen zu behandeln.
+Auf AEM Foundation-Ebene werden personenbezogene Daten im Benutzerprofil gespeichert. Dementsprechend wird in diesem Artikel in erster Linie erläutert, wie der Zugriff auf und das Löschen von Benutzerprofilen im Zusammenhang mit DSGVO-bezogenen Anfragen zum Datenzugriff bzw. zur Datenlöschung erfolgt.
 
 ## Zugreifen auf Benutzerprofile {#accessing-a-user-profile}
 
@@ -82,7 +82,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-40-58](assets/image2018-2-6_1-40-58.png)
 
-   Die Benutzeroberfläche zeigt an, dass der Benutzer deaktiviert wird, indem er ausgegraut wird und der Profilkarte eine Sperre hinzufügt:
+   Die Benutzeroberfläche zeigt an, dass die Benutzerin bzw. der Benutzer deaktiviert wurde, indem die Profilkarte ausgegraut und mit einem Schlosssymbol angezeigt wird.
 
    ![disableduser](assets/disableduser.png)
 
@@ -96,7 +96,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
-1. Löschen Sie die Profilknoten und alle untergeordneten Elemente. Die Profilknoten haben je nach AEM zwei Formate:
+1. Löschen Sie die Profilknoten und alle untergeordneten Elemente. Die Profilknoten haben je nach AEM-Version zwei Formate:
 
    1. Das private Standardprofil unter `[!UICONTROL /profile]`
    1. `[!UICONTROL /profiles]` für neue Profile, die mit AEM 6.5 erstellt werden
@@ -105,7 +105,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### HTTP-API {#http-api-1}
 
-Die folgenden Verfahren verwenden die `curl` Befehlszeilen-Tool, um zu veranschaulichen, wie der Benutzer mit der **[!UICONTROL Höhle]** `userId` und Löschen von Profilen `cavery` die am Standardspeicherort verfügbar sind.
+Die folgenden Verfahren verwenden das Befehlszeilen-Tool `curl`, um zu veranschaulichen, wie die Person mit der `userId` **[!UICONTROL cavery]** deaktiviert und die Profile von `cavery` am Standardspeicherort gelöscht werden können.
 
 * *Ermitteln der Benutzerstartseite*
 
@@ -116,7 +116,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 * *Deaktivieren des Benutzers*
 
-Verwenden Sie dazu den Knotenpfad der über den vorangegangenen Befehl ausgegebenen Home-Eigenschaft der JSON-Payload:
+Verwenden Sie dazu den Knotenpfad der über den vorangegangenen Befehl ausgegebenen home-Eigenschaft der JSON-Payload:
 
 ```shell
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (GDPR in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'

@@ -13,7 +13,7 @@ feature: Security
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '5401'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -169,7 +169,7 @@ Aktionen können auf einer Seite (Ressource) ausgeführt werden. Für jede Seite
     <ul>
      <li>vorhandenen Inhalt auf der Seite und auf untergeordneten Seiten ändern.</li>
      <li>Absätze auf der Seite oder auf einer untergeordneten Seite erstellen.</li>
-    </ul> <p>Auf JCR-Ebene können Benutzende eine Ressource bearbeiten, indem sie ihre Eigenschaften, Sperr- und Versionierungsvorgänge sowie nt-Änderungen bearbeiten. Außerdem verfügen sie über volle Schreibrechte für Knoten, die einen untergeordneten jcr:content-Knoten definieren. Beispiel: cq:Page, nt:file, cq:Asset.</p> </td>
+    </ul> <p>Auf JCR-Ebene können Benutzende eine Ressource bearbeiten, indem sie ihre Eigenschaften, Sperr- und Versionierungsvorgänge sowie nt-Änderungen bearbeiten. Außerdem verfügen sie über volle Schreibrechte für Knoten, die einen untergeordneten jcr:content-Knoten definieren. Zum Beispiel: cq:Page, nt:file, cq:Asset.</p> </td>
   </tr>
   <tr>
    <td>Erstellen</td>
