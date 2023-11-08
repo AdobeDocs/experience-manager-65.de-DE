@@ -208,7 +208,7 @@ Unterregeln sind Knoten des Typs `cq:Page` mit Eigenschaften auf `jcr:content`Kn
   <tr>
    <th>Eigenschaft</th>
    <th>Typ</th>
-   <th> Wert Beschreibung</th>
+   <th> Wertbeschreibung</th>
   </tr>
   <tr>
    <td><i><code>VERB</code></i></td>
@@ -331,7 +331,7 @@ Die `scoringRules` -Eigenschaft einer Badging-Regel schränkt einfach ein, welch
   <tr>
    <th>Eigenschaft</th>
    <th>Typ</th>
-   <th>Wert Beschreibung</th>
+   <th>Wertbeschreibung</th>
   </tr>
   <tr>
    <td>Schwellenwerte</td>
