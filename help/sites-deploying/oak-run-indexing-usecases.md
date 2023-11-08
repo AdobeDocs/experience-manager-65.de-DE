@@ -6,9 +6,9 @@ content-type: reference
 topic-tags: deploying
 noindex: true
 exl-id: d25e3070-080a-4594-8fdb-9f09164135fc
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+source-git-commit: 2a97935a81cf9c0a1a832dd27b62d388805863e0
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1385'
 ht-degree: 27%
 
 ---
@@ -70,7 +70,7 @@ Diese Tools können jetzt vom Support und vom Systemadministrator verwendet werd
 
 ## Anwendungsfall 2: Indexstatistiken {#usecase2indexstatistics}
 
-Für die Diagnose einiger Fälle rund um die Adobe der Abfrageleistung waren häufig eine vorhandene Indexdefinition und indexbezogene Statistiken aus der Kundeneinrichtung erforderlich. Bisher wurden diese Informationen über mehrere Ressourcen verteilt. Um die Fehlerbehebung zu vereinfachen, hat Adobe Tools erstellt, die Folgendes ermöglichen:
+Für die Diagnose einiger Fälle rund um die Abfrageleistung benötigte Adobe häufig eine vorhandene Indexdefinition und indexbezogene Statistiken aus der Kundeneinrichtung. Bisher wurden diese Informationen über mehrere Ressourcen verteilt. Um die Fehlerbehebung zu vereinfachen, hat Adobe Tools erstellt, die Folgendes ermöglichen:
 
 1. Dump aller im System vorhandenen Indexdefinitionen in einer einzigen JSON-Datei;
 
@@ -78,7 +78,7 @@ Für die Diagnose einiger Fälle rund um die Adobe der Abfrageleistung waren hä
 
 1. Dump von Indexinhalten für Offline-Analysen. 
 
-1. Kann auch verwendet werden, wenn kein Zugriff auf AEM möglich ist. 
+1. Kann auch verwendet werden, wenn AEM nicht verfügbar ist
 
 Die oben genannten Vorgänge können jetzt über die folgenden Vorgangsindex-Befehle ausgeführt werden:
 
@@ -182,7 +182,7 @@ Der Unterschied zwischen diesem und dem oben erläuterten Ansatz besteht darin, 
 
 In diesem Anwendungsfall können Sie eine Neuindizierung an einem geklonten Setup durchführen, um die Auswirkungen auf die laufende AEM zu minimieren:
 
-1. Erstellen Sie einen Checkpoint über einen JMX-Vorgang. Hierzu können Sie in der [JMX-Konsole](/help/sites-administering/jmx-console.md) nach `CheckpointManager` suchen. Klicken Sie dann auf die **createCheckpoint(long p1)** Vorgang mit einem hohen Ablaufwert in Sekunden (z. B. **2592000**).
+1. Erstellen Sie einen Checkpoint über einen JMX-Vorgang. Hierzu können Sie in der [JMX-Konsole](/help/sites-administering/jmx-console.md) nach `CheckpointManager` suchen. Klicken Sie dann auf die **createCheckpoint(long p1)** Vorgang mit einem hohen Ablaufwert in Sekunden (z. B. **259200**).
 1. Kopieren Sie den Ordner `crx-quickstart` auf einen neuen Computer.
 1. Führen Sie die Neuindizierung über den Oak-run-Indexbefehl durch.
 
@@ -194,7 +194,7 @@ In diesem Anwendungsfall wird davon ausgegangen, dass der Datenspeicher auf eine
 
 ## Anwendungsfall 4 – Aktualisieren der Indexdefinitionen {#usecase4updatingindexdefinitions}
 
-Derzeit können Sie Indexdefinitionsänderungen über [ACS Ensure Index](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) Paket. Dadurch kann der Versand der Indexdefinitionen über das Inhaltspaket erfolgen, für das später eine Neuindizierung durchgeführt werden muss, indem die Variable `reindex` Markierung auf `true`.
+Derzeit können Sie Indexdefinitionsänderungen über [ACS Ensure Index](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) Paket. Dadurch kann der Versand der Indexdefinitionen über das Inhaltspaket erfolgen, was später eine Neuindizierung erfordert, indem die Variable `reindex` Markierung auf `true`.
 
 Dies funktioniert bei kleineren Installationen, bei denen die Neuindizierung nicht lange dauert. Bei großen Repositorys erfolgt die Neuindizierung jedoch über einen wesentlich größeren Zeitraum. Für solche Fälle können wir jetzt das Oak-Run-Index-Tool verwenden.
 

@@ -245,7 +245,7 @@ Wenn Sie Ihr Video und die Miniatur-Assets bereits hochgeladen haben, fahren Sie
 
 >[!NOTE]
 >
->Das MXF-Videoformat wird noch nicht für die Verwendung mit interaktiven Videos in Dynamic Media unterstützt.
+Das MXF-Videoformat wird noch nicht für die Verwendung mit interaktiven Videos in Dynamic Media unterstützt.
 
 Wenn Sie falsche Videos oder Bilder hochgeladen haben oder Sie nicht mehr benötigte hochgeladene Videos oder Bilder löschen möchten, finden Sie weitere Informationen unter [Löschen von Assets](/help/assets/manage-assets.md#deleting-assets).
 
@@ -268,11 +268,11 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-author
 
 >[!NOTE]
 >
->Im interaktiven Video werden die Tools zur Freigabe in Social Media nicht unterstützt, wenn Sie den Viewer in ein Experience Fragment einbetten. Um dies zu vermeiden, können Sie Viewer-Vorgaben verwenden oder erstellen, die keine Tools zur Freigabe in Social Media aufweisen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
+Im interaktiven Video werden die Tools zur Freigabe in Social Media nicht unterstützt, wenn Sie den Viewer in ein Experience Fragment einbetten. Um dies zu vermeiden, können Sie Viewer-Vorgaben verwenden oder erstellen, die keine Tools zur Freigabe in Social Media aufweisen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
 
 >[!NOTE]
 >
->Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
+Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
 
 Die Optionen „Rückgängig“ und „Wiederholen“ in der Nähe der oberen rechten Ecke der Seite werden während der aktuellen Erstellungs-/Bearbeitungssitzung unterstützt.
 
@@ -495,7 +495,7 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
 
    >[!NOTE]
    >
-   >Beim Speichern des interaktiven Videos wird automatisch eine zugehörige `.vtt`-Datei gespeichert. Die `.vtt`-Datei wird im Ordner `_VTT` gespeichert. Dieser befindet sich im Stamm von **[!UICONTROL Assets]**. Die Datei und der Ordner sind erforderlich, damit das interaktive Video auf Ihrer Website richtig wiedergegeben werden kann. Daher sollten Sie weder den Ordner `_VTT` noch dessen Inhalte verschieben, bearbeiten oder löschen.
+   Beim Speichern des interaktiven Videos wird automatisch eine zugehörige `.vtt`-Datei gespeichert. Die `.vtt`-Datei wird im Ordner `_VTT` gespeichert. Dieser befindet sich im Stamm von **[!UICONTROL Assets]**. Die Datei und der Ordner sind erforderlich, damit das interaktive Video auf Ihrer Website richtig wiedergegeben werden kann. Daher sollten Sie weder den Ordner `_VTT` noch dessen Inhalte verschieben, bearbeiten oder löschen.
 
 1. Veröffentlichen des interaktiven Videos Durch das Veröffentlichen wird der Integrations-Code oder die URL erstellt, die Sie schließlich kopieren und auf die Website-Oberfläche einfügen.
 
@@ -505,7 +505,7 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
 
    >[!NOTE]
    >
-   >Um ein Video mit Shopping-Funktion und Schnellansichten zu veröffentlichen, stellen Sie sicher, dass Sie separat auch alle zugehörigen Bild-Assets des Videos aus Ihrem E-Commerce-Bereich veröffentlichen.
+   Um ein Video mit Shopping-Funktion und Schnellansichten zu veröffentlichen, stellen Sie sicher, dass Sie separat auch alle zugehörigen Bild-Assets des Videos aus Ihrem E-Commerce-Bereich veröffentlichen.
 
    Nachdem Sie Zeitleistensegment-Segmente hinzugefügt und das interaktive Video veröffentlicht haben, sind Sie bereit, sie zur Landingpage Ihrer vorhandenen Website hinzuzufügen. Siehe [Integrieren eines interaktiven Videos in eine Website](#integrating-an-interactive-video-with-your-website).
 
@@ -531,7 +531,7 @@ Der kopierte Integrations-Code wird für eine responsive Umgebung festgelegt. Da
 
 >[!NOTE]
 >
->An dieser Stelle sind Sie fertig, wenn Sie die Interaktivität mit ausschließlich per Hyperlink verbundener Web-Seiten hinzugefügt haben.
+An dieser Stelle sind Sie fertig, wenn Sie die Interaktivität mit ausschließlich per Hyperlink verbundener Web-Seiten hinzugefügt haben.
 >
 Wenn Sie jedoch Interaktivität hinzugefügt haben, um eine Schnellansicht auszulösen, dienen die Miniaturen neben dem interaktiven Video nur zu Anzeigezwecken. Sie sind noch nicht in Ihre vorhandenen Schnellansichten integriert. In einem solchen Fall müssen Sie das interaktive Video in die vorhandenen Schnellansichten auf Ihrer Website integrieren.
 
@@ -576,7 +576,7 @@ Zur Integration müssen Sie den Video-Einbettungs-Code nur durch den Einbettungs
 
 >[!NOTE]
 >
->Diese Aufgabe ist nur relevant, wenn Sie ausschließlich Experience Manager Assets verwenden.
+Diese Aufgabe ist nur relevant, wenn Sie ausschließlich Experience Manager Assets verwenden.
 
 Der letzte Schritt in diesem Prozess ist, das interaktive Video in einer vorhandenen Schnellansichtsimplementierung zu integrieren, die auf Ihrer Website verwendet wird. Es gibt keine Lösung für die Integration, die für alle Fälle funktioniert. Jede Schnellansichtsimplementierung ist einzigartig. Daher ist ein spezifischer Ansatz erforderlich, wofür die Unterstützung eines Frontend-IT-Mitarbeiters nötig ist.
 

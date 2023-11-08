@@ -27,7 +27,7 @@ Die Integration von AEM mit Adobe Target über die Target Standard-API erfordert
 
 Bevor Sie mit diesem Verfahren beginnen:
 
-* Der [Adobe-Support](https://experienceleague.adobe.com/?lang=de&amp;support-solution=General&amp;support-tab=home#support) muss Ihr Konto für Folgendes bereitstellen:
+* Der [Adobe-Support](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home?lang=de#support) muss Ihr Konto für Folgendes bereitstellen:
 
    * Adobe Console
    * Adobe-Entwicklerkonsole

@@ -236,7 +236,7 @@ Die Planung der Entwicklung ist entscheidend, um sicherzustellen, dass Ihr Proje
 
   Vor der Entwicklung sollten alle erforderlichen Support-Prozesse für die Bereitstellung, Freigabe, Prüfung und Berichterstellung eingerichtet werden.
 
-  Siehe auch [Adobe Support Portal](https://experienceleague.adobe.com/?lang=de&amp;support-solution=General&amp;support-tab=home#support).
+  Siehe auch [Adobe Support Portal](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home?lang=de#support).
 
 ### Betriebsplanung und -betrieb {#operations-planning-and-operations}
 

@@ -290,7 +290,7 @@ Um das Schlüsselmaterial aus der Autoreninstanz in alle anderen Instanzen zu ko
 
 >[!CAUTION]
 >
->Wenn bereits eine andere Sicherheitsfunktion konfiguriert wurde, die auf den Verschlüsselungsschlüsseln basiert, kann die Replikation der Verschlüsselungsschlüssel die Konfiguration beschädigen. Hilfe: [Kundenunterstützung kontaktieren](https://experienceleague.adobe.com/?lang=de&amp;support-solution=General&amp;support-tab=home#support).
+>Wenn bereits eine andere Sicherheitsfunktion konfiguriert wurde, die auf den Verschlüsselungsschlüsseln basiert, kann die Replikation der Verschlüsselungsschlüssel die Konfiguration beschädigen. Hilfe: [Kundenunterstützung kontaktieren](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home?lang=de#support).
 
 #### Repository-Replikation {#repository-replication}
 
