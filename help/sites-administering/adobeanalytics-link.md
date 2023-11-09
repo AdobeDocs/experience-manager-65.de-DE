@@ -1,19 +1,15 @@
 ---
 title: Konfigurieren des Linktrackings für Adobe Analytics
-seo-title: Configuring Link Tracking for Adobe Analytics
 description: Erfahren Sie mehr über die Konfiguration des Linktrackings für SiteCatalyst.
-seo-description: Learn about configuring link tracking for SiteCatalyst.
-uuid: b6d5bd1c-f91a-4d38-9e9e-dc2bcb271dae
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
-source-git-commit: 5e94a0cdb363e95ce398ea4ed0bce4a6aba9e7ce
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '1612'
-ht-degree: 62%
+source-wordcount: '1615'
+ht-degree: 61%
 
 ---
 
@@ -93,7 +89,7 @@ Definiert Filter zum Abgleichen der URLs interner Links. Wenn der Link auf URLs 
 * **Suchbegriff belassen**
 Schließt URL-Parameter ein, wenn Übereinstimmungen mit internen und externen Filtern bewertet werden.
 
-  Aktivieren Sie diese Eigenschaft, um URL-Parameter beim Bewerten von Link-Ziel-URLs gegenüber externen und internen Filtern einzuschließen.
+  Aktivieren Sie diese Option, wenn Sie URL-Parameter bei der Bewertung von Link-Ziel-URLs mit externen und internen Filtern einbeziehen möchten.
 
 Die Eigenschaften für die Nachverfolgung externer Links werden als Code in der für eine Seite erstellten Datei `analytics.sitecatalyst.js` implementiert. Der folgende Beispiel-Code wird für eine Seite mit einem Framework generiert, für das die Nachverfolgung externer Links aktiviert ist – mit folgender Konfiguration:
 
@@ -179,7 +175,7 @@ Dieses Beispiel zeigt, wie die Zuordnung im Zusammenhang mit der Überwachung un
  </tbody>
 </table>
 
-1. Ziehen Sie die Suchkomponente in den Zuordnungsbereich des Frameworks. Die Suchkomponente gehört zur Komponentengruppe &quot;Allgemein&quot;in Sidekick. Konfigurieren Sie die Zuordnung gemäß der folgenden Tabelle, indem Sie die Analytics-Variable (SiteCatalyst) aus dem linken Seitenbereich ziehen:
+1. Ziehen Sie die Suchkomponente in den Zuordnungsbereich des Frameworks. Die Suchkomponente gehört zur Komponentengruppe &quot;Allgemein&quot;im Sidekick. Konfigurieren Sie die Zuordnung gemäß der folgenden Tabelle, indem Sie die Analytics-Variable (SiteCatalyst) aus dem linken Seitenbereich ziehen:
 
 <table>
  <tbody>
@@ -212,10 +208,10 @@ Dieses Beispiel zeigt, wie die Zuordnung im Zusammenhang mit der Überwachung un
 1. Heben Sie die Auswahl für **Downloads nachverfolgen** auf.
 
 1. Auswählen **Externes Tracking**.
-1. Auswahl aufheben **Abfragezeichenfolge beibehalten**.
+1. Auswahl deaktivieren **Abfragezeichenfolge beibehalten**.
 1. Verwenden Sie den folgenden Wert für die Liste **Externe Filter**, um diesen als externe URL anzugeben:
 
-   `‘yahoo.com’`
+   `'yahoo.com'`
 
 1. Fügen Sie dem Feld **Ereignisse für Hyperlink-Überwachung** den folgenden Wert hinzu:
 
@@ -316,7 +312,7 @@ Konfigurieren Sie das Adobe Analytics-Framework, um die Ad-hoc-Hyperlink-Überwa
 Um die Ad-hoc-Link-Überwachung für **Textkomponenten** konfigurieren zu können, müssen die folgenden Konfigurationen bereits implementiert worden sein:
 
 * Die [Das Adobe Analytics-Framework ist so konfiguriert, dass das Ad-hoc-Linktracking aktiviert wird](#enabling-ad-hoc-link-tracking).
-* Die [Seite, die die **Text** Komponente ist mit dem Framework verknüpft](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework).
+* Die [-Seite, die die **Text** Komponente ist mit dem Framework verknüpft](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework).
 
 Gehen Sie wie folgt vor, um die Link-Überwachung für eine **Textkomponente** zu konfigurieren:
 
@@ -345,12 +341,12 @@ Gehen Sie wie folgt vor, um die Link-Überwachung für eine **Textkomponente** z
 1. (Optional) Zum Nachverfolgen von Variablendaten mit dem Link-Klick fügen Sie dem Feld **Adobe Analytics-Variablen einschließen** Adobe Analytics-Variablen hinzu. Verwenden Sie eines der folgenden Formate:
 
    * *`<Variable-name>`*: *`<Dynamic Value>`*
-   * *`<Variable-name>`*: *`‘CONSTANT'`*
+   * *`<Variable-name>`*: *`'CONSTANT'`*
 
    Beispiele für das jeweilige Format:
 
    * `eVar10:pagedata.title`
-   * `prop1: ‘Aubergine'`
+   * `prop1: 'Aubergine'`
 
    Trennen Sie mehrere Werte durch Kommas.
 

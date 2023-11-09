@@ -7,7 +7,7 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
 source-wordcount: '2773'
 ht-degree: 2%
@@ -326,8 +326,8 @@ Wenn die Bearbeitung in jeder AEM Veröffentlichungsinstanz erforderlich ist:
 
      Speicherort im Repository, an dem Benutzerdaten gespeichert werden. Für eine Community-Site sollte der Pfad der Standardpfad sein, um sicherzustellen, dass Mitglieder das Profil einer anderen Person anzeigen können `/home/users/community`.
 
-   * **[!UICONTROL Parameter aktivieren]** nicht bearbeiten
-   * **[!UICONTROL URL-Parameter]** nicht bearbeiten
+   * **[!UICONTROL Parameter aktivieren]** - nicht bearbeiten
+   * **[!UICONTROL URL-Parameter]** - nicht bearbeiten
    * **[!UICONTROL Benutzer aktualisieren]**
 
      Wenn diese Option aktiviert ist, werden die Benutzerdaten im Repository bei jeder Anmeldung aktualisiert, um Profiländerungen oder zusätzliche angeforderte Daten widerzuspiegeln. Die Standardeinstellung ist deaktiviert.

@@ -1,19 +1,15 @@
 ---
 title: Betten Sie ein adaptives Formular oder eine interaktive Kommunikation in die AEM Sites-Seite ein.
-seo-title: Embed an adaptive form or interactive communication in AEM sites page
 description: Sie können adaptive Formulare in Seiten AEM Sites einbetten. Benutzer können Formulare ausfüllen und senden, ohne die Sites-Seiten zu verlassen.
-seo-description: You can embed adaptive forms in AEM sites pages. Users can fill and submit forms without leaving the site pages.
-uuid: 59b49e2f-6d95-42e5-b31e-fc40936c42d2
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author, interactive-communications
-discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 feature: Adaptive Forms
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 69%
+source-wordcount: '1164'
+ht-degree: 67%
 
 ---
 
@@ -68,7 +64,7 @@ So betten Sie ein adaptives Formular oder eine interaktive Kommunikation mithilf
 
       * **Dankesnachricht**: Verfassen Sie im Rich-Text-Editor eine Nachricht, die beim Absenden des Formulars angezeigt werden soll. Diese Option steht nur zur Verfügung, wenn Sie ausgewählt haben, dass eine Dankesnachricht angezeigt werden soll.
       * **Dankesseite**: Klicken Sie auf „Durchsuchen“ und wählen Sie die Seite aus, die bei Übermittlung eines Formulars angezeigt werden soll. Diese Option steht nur zur Verfügung, wenn Sie ausgewählt haben, dass eine Dankesseite angezeigt werden soll.
-      * **Seite beim Senden aktualisieren**: Aktivieren Sie diese Option, um die Seite mit dem eingebetteten adaptiven Formular zu aktualisieren und die Dankesseite anzuzeigen. Andernfalls ersetzt die Dankesseite das adaptive Formular im AEM Forms-Container, ohne die Seite zu aktualisieren. Diese Option steht nur zur Verfügung, wenn Sie ausgewählt haben, dass eine Dankesseite angezeigt werden soll.
+      * **Seite beim Senden aktualisieren**: Aktivieren Sie diese Option, damit Sie die Seite mit dem eingebetteten adaptiven Formular aktualisieren und die Dankeseite anzeigen können. Andernfalls ersetzt die Dankesseite das adaptive Formular im AEM Forms-Container, ohne die Seite zu aktualisieren. Diese Option steht nur zur Verfügung, wenn Sie ausgewählt haben, dass eine Dankesseite angezeigt werden soll.
 
    * **Thema**: Wählen Sie ein Thema, das die Formatierung der Komponenten in Ihrem adaptiven Formular oder interaktiver Kommunikation definiert. Zur Formatierung gehören Eigenschaften des Erscheinungsbildes, wie Schriftschnitt, Hintergrundfarbe, Abmessungen und Ausrichtung.
    * **Höhe**: Geben Sie die Höhe des Containers an. Lassen Sie es leer, um die Größe des Containers automatisch zu anzupassen.

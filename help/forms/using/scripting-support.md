@@ -1,19 +1,15 @@
 ---
 title: Skriptunterstützung für HTML5-Formulare
-seo-title: Scripting support for HTML5 forms
 description: JavaScript, FormCalc-Eigenschaften und andere Methoden, die in HTML5 Forms unterstützt werden.
-seo-description: JavaScript, FormCalc properties, and other methods that are supported in HTML5 Forms.
-uuid: 697d5ec4-c818-41e4-b813-883c01b7ff3a
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '3887'
+source-wordcount: '3896'
 ht-degree: 21%
 
 ---
@@ -36,7 +32,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
    <td>Gibt den Inhalt des Felds an, bevor er sich aufgrund der Aktionen eines Benutzers ändert. Dieser Wert kann ähnlich wie bei einer Funktion zum Rückgängigmachen zurückgerufen werden.</td>
    <td><p>Funktioniert nicht bei Dropdown-Listen und Listenfeldern. <code>PrevText </code>funktioniert in folgenden Fällen nicht:</p>
     <ul>
-     <li>Beim Eingeben bestimmter Sonderzeichen (z. B. $, (,), &amp;, @ und viele andere) in numerischen Feldern in der iPad und </li>
+     <li>Beim Eingeben bestimmter Sonderzeichen (z. B. $ oder , &amp; oder @ und viele andere) in numerischen Feldern in der iPad und </li>
      <li>Für das Datumsfeld (wenn das Datum über den Kalender eingegeben wird).<br /> </li>
     </ul> <p>Das Festlegen eines Werts mithilfe eines Skripts wird nicht unterstützt.</p> </td>
   </tr>
@@ -52,7 +48,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
     <ul>
      <li>Beim Auswählen und Ersetzen von Texten</li>
      <li>Beim Löschen, Kopieren und Einfügen von Texten.</li>
-     <li>Beim Eingeben bestimmter Sonderzeichen (z. B. $, (, ), &amp;, @ und viele andere) in numerischen Feldern<br /> </li>
+     <li>Beim Eingeben von bestimmten Sonderzeichen (z. B. $ oder , &amp; oder @ und viele andere) in numerischen Feldern<br /> </li>
      <li>Bei Verwendung der Kombination Umschalt+Alphanumerisch. </li>
      <li>Beim Verwenden von Datums- und Uhrzeitfeldern</li>
     </ul>
@@ -67,7 +63,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
     <ul>
      <li>Beim Auswählen und Ersetzen von Texten</li>
      <li>Beim Löschen, Kopieren und Einfügen von Texten.</li>
-     <li>Beim Eingeben bestimmter Sonderzeichen (z. B. $, (,), &amp;, @ und viele andere) in numerischen Feldern<br /> </li>
+     <li>Beim Eingeben von bestimmten Sonderzeichen (z. B. $ oder , &amp; oder @ und viele andere) in numerischen Feldern<br /> </li>
      <li>Bei Verwendung der Kombination Umschalt+Alphanumerisch. </li>
      <li>Beim Verwenden von Datums- und Uhrzeitfeldern</li>
     </ul> <p>Das Festlegen eines Werts mithilfe eines Skripts wird nicht unterstützt.</p> </td>
@@ -318,7 +314,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>x</td>
-   <td>Gibt die X-Koordinate des Verankerungspunkts des Containers in Bezug auf die linke obere Ecke des übergeordneten Containers bei Platzierung mit positioniertem Layout an.</td>
+   <td>Gibt die X-Koordinate des Verankerungspunkts des Containers im Verhältnis zur oberen linken Ecke des übergeordneten Containers bei Platzierung mit positioniertem Layout an.</td>
    <td>Ohne</td>
   </tr>
   <tr>
@@ -446,7 +442,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>x</td>
-   <td>Gibt die X-Koordinate des Verankerungspunkts des Containers in Bezug auf die linke obere Ecke des übergeordneten Containers bei Platzierung mit positioniertem Layout an.</td>
+   <td>Gibt die X-Koordinate des Verankerungspunkts des Containers im Verhältnis zur oberen linken Ecke des übergeordneten Containers bei Platzierung mit positioniertem Layout an.</td>
    <td>Ohne</td>
   </tr>
   <tr>
@@ -939,7 +935,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>x</td>
-   <td>Gibt die X-Koordinate des Verankerungspunkts des Containers in Bezug auf die linke obere Ecke des übergeordneten Containers bei Platzierung mit positioniertem Layout an.</td>
+   <td>Gibt die X-Koordinate des Verankerungspunkts des Containers im Verhältnis zur oberen linken Ecke des übergeordneten Containers bei Platzierung mit positioniertem Layout an.</td>
    <td>Ohne</td>
   </tr>
   <tr>

@@ -5,7 +5,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 exl-id: 9bf090db-2c14-439e-ad78-6832678a309d
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
 source-wordcount: '6419'
 ht-degree: 46%
@@ -4460,7 +4460,7 @@ Der PDF Generator-Dienst stellt APIs zum Konvertieren nativer Dateiformate in PD
 
 ### GeneratePDFService {#generatepdfservice}
 
-GeneratePDFService stellt APIs zum Konvertieren verschiedener Dateiformate wie .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, (veraltet).swf, .jpg, .bmp, .tif, .png, .html und vieler anderer Dateiformate in PDF bereit. Es stellt auch APIs bereit, um PDF in verschiedene Dateiformate zu exportieren und PDF zu optimieren. Der Dienst unterstützt die folgenden APIs:
+GeneratePDFService stellt APIs zum Konvertieren verschiedener Dateiformate wie .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, .swf (veraltet), .jpg, .bmp, .tif, .png, .html und vieler anderer Dateiformate in PDF bereit. Es stellt auch APIs bereit, um PDF in verschiedene Dateiformate zu exportieren und PDF zu optimieren. Der Dienst unterstützt die folgenden APIs:
 
 * **createPDF**: Konvertiert einen unterstützten Dateityp in ein PDF-Dokument. Unterstützt werden Dateiformate wie Microsoft Word, Microsoft PowerPoint, Microsoft Excel und Microsoft Project. Außer diesen Anwendungen können auch von anderen Anbietern bereitgestellte allgemeine Anwendungen zur PDF-Generierung mit der API verbunden werden.
 * **exportPDF**: Konvertiert ein PDF-Dokument in einen unterstützten Dateityp. Die Methode akzeptiert eine PDF als Eingabe und exportiert den Inhalt der PDF im angegebenen Dateitypformat. Sie können ein PDF-Dokument in folgende Formate exportieren: Encapsulated PostScript (eps), HTML 3.2 (htm, html), HTML 4.01 mit CSS 1.0 (htm, html), JPEG (jpg, jpeg, jpe), JPEG2000 (jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word Document (doc, docx), Microsoft Excel Workbook (xlsx), Microsoft PowerPoint-Präsentation (pptx), PNG (png), PostScript (ps), Rich Text Format (rtf), Text (Accessible) (txt), Text (Plain) (txt), TIFF (tif, tiff), XML 1.0 ( xml), PDF/A-1a (sRGB), PDF/A-1b, PDF/A-2a (sRGB), PDF/A-2b (sRGB), PDF/A-3a (sRGB), PDF/A-3b (sRGB). Sie können auch [benutzerdefinierte Preflight-Profile](https://helpx.adobe.com/de/acrobat/using/preflight-profiles-acrobat-pro.html) für die PDF-Ausgabe angeben.

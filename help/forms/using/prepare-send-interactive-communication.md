@@ -1,18 +1,14 @@
 ---
 title: Vorbereiten und Senden der interaktiven Kommunikation mithilfe der Agent-Benutzeroberfläche
-seo-title: Prepare and send Interactive Communication using the Agent UI
 description: Die Benutzeroberfläche für Agenten ermöglicht es den Agenten, interaktive Kommunikation vorzubereiten und an den Nachbearbeitungsprozess zu senden. Der Agent nimmt die erforderlichen Änderungen wie erlaubt vor und sendet die interaktive Kommunikation an einen Nachbearbeitungsprozess, z. B. E-Mail oder Druck.
-seo-description: Prepare and send Interactive Communication using the Agent UI
-uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '2020'
-ht-degree: 81%
+source-wordcount: '2021'
+ht-degree: 80%
 
 ---
 
@@ -69,7 +65,7 @@ Verwalten Sie auf der Registerkarte &quot;Inhalt&quot;den Inhalt wie Dokumentfra
 
    Auf der Registerkarte „Inhalt“ oder „Daten“ können Sie durch Tippen auf „Ausgewählte Module im Inhalt markieren“ (![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) links oben in der Vorschau eine Funktion aktivieren oder deaktivieren, die bewirkt, dass beim Klicken auf den relevanten Text oder Absatz bzw. das Datenfeld in der Vorschau das dazugehörige Inhalts-/Datenmodul aufgerufen wird.
 
-   Die Fragmente, die vom Agenten beim Erstellen der interaktiven Kommunikation bearbeitet werden dürfen, haben das Symbol „Ausgewählten Inhalt bearbeiten“ (![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Tippen Sie auf das Symbol Ausgewählten Inhalt bearbeiten , um das Fragment im Bearbeitungsmodus zu starten und Änderungen daran vorzunehmen. Verwenden Sie die folgenden Optionen zum Formatieren und Verwalten von Text:
+   Die Fragmente, die vom Agenten beim Erstellen der interaktiven Kommunikation bearbeitet werden können, haben die Option Ausgewählten Inhalt bearbeiten ( ![iconeditsselectedContent](assets/iconeditselectedcontent.png)). Tippen Sie auf das Symbol Ausgewählten Inhalt bearbeiten , um das Fragment im Bearbeitungsmodus zu starten und Änderungen daran vorzunehmen. Verwenden Sie die folgenden Optionen zum Formatieren und Verwalten von Text:
 
    * [Formatierungsoptionen](#formattingtext)
 
@@ -83,7 +79,7 @@ Verwalten Sie auf der Registerkarte &quot;Inhalt&quot;den Inhalt wie Dokumentfra
 
 1. Um der Druckausgabe der interaktiven Kommunikation einen Seitenumbruch hinzuzufügen, tippen Sie auf die Stelle, an der Sie den Seitenumbruch einfügen möchten, und wählen Sie „Seitenumbruch vor“ oder „Seitenumbruch nach“ ( ![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
 
-   Ein Platzhalter für einen expliziten Seitenumbruch wird in die interaktive Kommunikation eingefügt. Informationen dazu, wie sich ein expliziter Seitenumbruch auf die interaktive Kommunikation auswirkt, finden Sie in der Druckvorschau.
+   Ein Platzhalter für einen expliziten Seitenumbruch wird in die interaktive Kommunikation eingefügt. Informationen zu den Auswirkungen eines expliziten Seitenumbruchs auf die interaktive Kommunikation finden Sie in der Druckvorschau.
 
    ![explicitpagebreak](assets/explicitpagebreak.png)
 
@@ -110,7 +106,7 @@ Verwalten Sie auf der Registerkarte &quot;Inhalt&quot;den Inhalt wie Dokumentfra
 
 ## Text formatieren {#formattingtext}
 
-Beim Bearbeiten eines Textfragments in der Benutzeroberfläche des Agenten ändert sich die Symbolleiste je nach dem Typ der Änderungen, die Sie vornehmen: Schrift, Absatz oder Liste:
+Beim Bearbeiten eines Textfragments in der Benutzeroberfläche des Agenten ändert sich die Symbolleiste je nach dem Typ der Änderungen, die Sie vornehmen: Schriftart, Absatz oder Liste:
 
 ![typeofformattingtoolbar](assets/typeofformattingtoolbar.png) ![Schrift-Symbolleiste](do-not-localize/fonttoolbar.png)
 
@@ -136,7 +132,7 @@ Um Textteile in einem bearbeitbaren Fragment hervorzuheben bzw. hervorzuheben, w
 
 ### Sonderzeichen in Text einfügen {#specialcharacters}
 
-Die Benutzeroberfläche für Agenten bietet integrierte Unterstützung für 210 Sonderzeichen. Der Administrator kann [Unterstützung für mehr/benutzerdefinierte Sonderzeichen durch Anpassung hinzufügen](/help/forms/using/custom-special-characters.md).
+Die Benutzeroberfläche für Agenten unterstützt jetzt 210 Sonderzeichen. Der Administrator kann [Unterstützung für mehr/benutzerdefinierte Sonderzeichen durch Anpassung hinzufügen](/help/forms/using/custom-special-characters.md).
 
 #### Anlagenübermittlung {#attachmentdelivery}
 
@@ -150,7 +146,7 @@ Die Benutzeroberfläche für Agenten bietet integrierte Unterstützung für 210 
 
 ![ ](do-not-localize/contentoptionsdocfragments.png)
 
-* **Nach-oben-/Nach-unten-Pfeile**: Pfeile zum Verschieben von Dokumentfragmenten in der interaktiven Kommunikation nach oben oder unten.
+* **Pfeile nach oben/unten**: Pfeile zum Verschieben von Dokumentfragmenten nach oben oder unten in der interaktiven Kommunikation.
 * **Löschen**: Wenn zulässig, löschen Sie das Dokumentfragment aus der interaktiven Kommunikation.
 * **Seitenumbruch vor** (anwendbar für untergeordnete Fragmente des Zielbereichs): Fügt Seitenumbruch vor dem Dokumentfragment ein.
 * **Einzug:** Einzug eines Dokumentenfragments vergrößern oder verkleinern.
@@ -169,7 +165,7 @@ Die Benutzeroberfläche für Agenten bietet integrierte Unterstützung für 210 
 
 * Leere Linie einfügen: Fügt eine neue leere Linie ein.
 * Auswahl (Augensymbol): Schließt Dokumentfragmente in die interaktive Kommunikation ein/schließt sie daraus aus.
-* Aufzählungszeichen/Nummerierungen überspringen: Aktivieren Sie „Aufzählungszeichen/Nummerierungen überspringen“ im Listendokumentfragment.
+* Aufzählungszeichen/Nummerierungen überspringen: Aktivieren Sie diese Option, wenn Sie Aufzählungszeichen/Nummerierungen im Listendokumentfragment überspringen möchten.
 * Nicht ausgefüllte Werte (Info): Gibt die Anzahl der nicht ausgefüllten Variablen im Dokumentfragment an.
 
 ## Speichern interaktiver Kommunikation als Entwurf {#save-as-draft}
