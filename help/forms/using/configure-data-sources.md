@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: d39b4b1d921fc93a4871b74469953f2dfc5c470b
 workflow-type: tm+mt
-source-wordcount: '2111'
-ht-degree: 98%
+source-wordcount: '2112'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 98%
 
 Mit der AEM Forms-Datenintegration können Sie unterschiedliche Datenquellen konfigurieren und eine Verbindung zu ihnen herstellen. Die folgenden Datenquellen werden standardmäßig unterstützt. Es ist jedoch möglich, mit nur wenigen Anpassungen auch andere Datenquellen zu integrieren.
 
-* Relationale Datenbanken: MySQL, Microsoft SQL Server, IBM DB2, Oracle RDBMS und Sybase
+* Relationale Datenbanken - MySQL, Microsoft SQL Server, IBM DB2, Oracle RDBMS, postgreSQL und Sybase
 * AEM-Benutzerprofil 
 * RESTful-Webservices
 * SOAP-basierte Webservices
