@@ -11,9 +11,9 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: e4e2e8b58c0283182b2fbd4262a4ef9b607dac26
+source-git-commit: 6f45b0f8dad44e66570f6436a560060cbed56161
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '952'
 ht-degree: 26%
 
 ---
@@ -36,6 +36,10 @@ Mit AEM Forms lassen sich Funktionen zum Erstellen, Verwalten und Veröffentlich
 Bei großen Unternehmen werden Formulare häufig nur einmal erstellt und dann wiederverwendet, indem sie in ein Content-Management-System kopiert werden. Eine große Datenbank von Formularen auf dem neuesten Stand zu halten und sie für ihre Entdeckung zu gewinnen, kann eine erhebliche Herausforderung darstellen. AEM bietet ein anpassbares Formularportal, das Kundinnen und Kunden eine Suchfunktion und den Zugriff auf Formulare über eine Web-Oberfläche oder mobile Kanäle ermöglicht.
 
 AEM Forms bietet Tools zur Formularverwaltung, mit denen sich neben adaptiven Formularen auch XFA-Formulare, PDF-Formulare und zugehörige Elemente verwalten lassen. Weitere Informationen finden Sie unter [Einführung in das Verwalten von Formularen](../../forms/using/introduction-managing-forms.md).
+
+>[!NOTE]
+>
+>Die AEM Forms-Funktion, z. B. Adaptive Forms, verfügbar in [AEM 6.5 QuickStart](/help/sites-deploying/deploy.md), werden nur zu Exploration- und Auswertungszwecken verwendet. Für die Verwendung in der Produktion ist es unerlässlich, eine gültige Lizenz für AEM Forms zu erhalten.
 
 ![AEM Formularfunktionen](do-not-localize/4th-draft.gif)
 
@@ -124,6 +128,3 @@ Personalisierte Dokumente wie Empfangsbestätigungen, Willkommenskits und Anweis
 
 Optimierter Workflow für personalisierte Kommunikation
 
->[!NOTE]
->
->Die in AEM 6.5 QuickStart verfügbare Funktion Adaptive Forms ist nur für Explorations- und Auswertungszwecke konzipiert. Für die Verwendung in der Produktion ist es wichtig, eine gültige Lizenz für AEM Forms zu erhalten, da die Adaptive Forms-Funktion eine ordnungsgemäße Lizenzierung erfordert.
