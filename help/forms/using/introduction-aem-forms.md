@@ -11,10 +11,10 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e4e2e8b58c0283182b2fbd4262a4ef9b607dac26
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 27%
+source-wordcount: '956'
+ht-degree: 26%
 
 ---
 
@@ -123,3 +123,7 @@ Personalisierte Dokumente wie Empfangsbestätigungen, Willkommenskits und Anweis
 ![Layout 2](do-not-localize/layout-02.png)
 
 Optimierter Workflow für personalisierte Kommunikation
+
+>[!NOTE]
+>
+>Die in AEM 6.5 QuickStart verfügbare Funktion Adaptive Forms ist nur für Explorations- und Auswertungszwecke konzipiert. Für die Verwendung in der Produktion ist es wichtig, eine gültige Lizenz für AEM Forms zu erhalten, da die Adaptive Forms-Funktion eine ordnungsgemäße Lizenzierung erfordert.

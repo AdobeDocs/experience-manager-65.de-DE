@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e4e2e8b58c0283182b2fbd4262a4ef9b607dac26
 workflow-type: tm+mt
-source-wordcount: '1765'
-ht-degree: 58%
+source-wordcount: '1803'
+ht-degree: 57%
 
 ---
 
@@ -73,7 +73,7 @@ Auf dieser Grundlage bietet AEM außerdem mehrere Funktionen auf Anwendungsebene
 * **Websites**
 * **Mobile Apps**
 * **Digitalen Veröffentlichungen**
-* **Formulare**
+* **Formulare und Dokumente**
 * **Digitale Assets**
 * **Communities**
 * **Online-Commerce**
@@ -81,6 +81,10 @@ Auf dieser Grundlage bietet AEM außerdem mehrere Funktionen auf Anwendungsebene
 Schließlich können Kundinnen und Kunden diese Bausteine auf Infrastruktur- und Anwendungsebene nutzen, um individuelle Lösungen zu erstellen, indem sie eigene Anwendungen entwickeln.
 
 Der AEM-Server ist **Java-basiert** und kann auf den meisten Betriebssystemen ausgeführt werden, die diese Plattform unterstützen. Die gesamte Client-Interaktion mit AEM erfolgt über einen **Webbrowser**.
+
+>[!NOTE]
+>
+>Die in AEM 6.5 QuickStart verfügbare Funktion Adaptive Forms ist nur für Explorations- und Auswertungszwecke konzipiert. Für die Verwendung in der Produktion ist es wichtig, eine gültige Lizenz für AEM Forms zu erhalten, da die Adaptive Forms-Funktion eine ordnungsgemäße Lizenzierung erfordert.
 
 ### Typische Bereitstellungsszenarien {#typical-deployment-scenarios}
 
