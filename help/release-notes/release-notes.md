@@ -5,7 +5,7 @@ mini-toc-levels: 4
 source-git-commit: 41ef1b05e4082bb50b93ff6511542ed56a77497c
 workflow-type: tm+mt
 source-wordcount: '3433'
-ht-degree: 48%
+ht-degree: 49%
 
 ---
 
@@ -285,7 +285,7 @@ Anweisungen zur Installation des Service Packs für Experience Manager Forms fin
 
 >[!NOTE]
 >
->Die AEM Forms-Funktion, z. B. Adaptive Forms, verfügbar in [AEM 6.5 QuickStart](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), sind nur zu Forschungs- und Evaluierungszwecken bestimmt. Für die Verwendung in der Produktion ist es unerlässlich, eine gültige Lizenz für AEM Forms zu erhalten.
+>Die AEM Forms-Funktion, z. B. Adaptive Forms, verfügbar in [AEM 6.5 QuickStart](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=de), sind nur zu Forschungs- und Evaluierungszwecken bestimmt. Für die Verwendung in der Produktion ist es unerlässlich, eine gültige Lizenz für AEM Forms zu erwerben.
 
 
 
@@ -463,7 +463,7 @@ Um das Problem zu beheben, suchen Sie die Datei `<AEM_Forms_Installation_dir>\jb
 
 #### Interaktive Kommunikationen
 
-* Nach dem Upgrade auf AEM Service Pack 18 ist es nicht möglich, die interaktive Kommunikation mit großen Inline-Bildern im Bearbeitungsmodus zu öffnen. (FORMS-10578)
+* Nach der Aktualisierung auf AEM Service Pack 18 ist es nicht möglich, die interaktive Kommunikation mit großen Inline-Bildern im Bearbeitungsmodus zu öffnen. (FORMS-10578)
 Um das Problem zu beheben, führen Sie die folgenden Schritte aus:
 
    1. Laden Sie [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) vom SD-Link herunter.
