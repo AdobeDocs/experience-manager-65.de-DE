@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 87%
+source-wordcount: '221'
+ht-degree: 82%
 
 ---
 
@@ -27,11 +27,11 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 
 | Standort | Tastaturbefehl | Beschreibung |
 |---|---|---|
-| Beliebiger Fenstermodus „Bearbeiten“ | `Ctrl-Shift-m` | Zwischen **Vorschau** und dem aktuell ausgewählten [Modus](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (z. B. **Bearbeiten**, **Layout** usw.) wechseln* |
+| Beliebiger Fenstermodus „Bearbeiten“ | `Ctrl-Shift-m` | Zwischen wechseln **Vorschau** und der derzeit ausgewählten [mode](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (zum Beispiel: **Bearbeiten**, **Layout** usw.) |
 | Modus **Bearbeiten** | `Ctrl-z` | [Letzte Änderung rückgängig machen](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Letzte Änderung wiederholen](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Mehrere Absätze auswählen |
-|  | `Ctrl-c` | Ausgewählte Absätze kopieren |
+|  | `Ctrl-c` | Kopieren von ausgewählten Absätzen |
 |  | `Ctrl-x` | Ausgewählte Absätze ausschneiden (ausgeschnittene Absätze werden in der Benutzeroberfläche erst nach dem Einfügen ausgeblendet) |
 |  | `Ctrl-v` | Einfügen von Absätzen, die zuvor ausgeschnitten oder kopiert wurden |
 |  | `Ctrl-Backspace` | Ausgewählte Absätze löschen |
