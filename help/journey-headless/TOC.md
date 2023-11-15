@@ -2,13 +2,13 @@
 sub-product: AEM Headless Journeys
 user-guide-title: AEM Headless-Touren
 breadcrumb-title: AEM Headless-Touren
-user-guide-description: Beginnen Sie hier für eine geführte Journey durch die leistungsstarken und flexiblen Headless-Funktionen von AEM, deren Funktionen und deren Verwendung in Ihrem Projekt.
+user-guide-description: Dieser Leitfaden bietet Ihnen eine Einführung zu den effektiven und flexiblen Headless-Features von AEM und deren Funktionen und erläutert, wie Sie sie bei Ihrem ersten Projekt verwenden können.
 feature: Developer Tools
 role: Developer, Architect
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
