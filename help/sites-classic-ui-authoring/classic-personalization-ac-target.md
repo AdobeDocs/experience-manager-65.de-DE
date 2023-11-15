@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: e56986b2-397e-4802-992b-05a9ea7b2e36
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '811'
-ht-degree: 85%
+ht-degree: 82%
 
 ---
 
@@ -104,4 +104,4 @@ So erstellen Sie einen Newsletter mit zielgerichtetem Inhalt:
 
    >[!NOTE]
    >
-   >Sollten Sie die Segmente auch in Adobe Campaign eingerichtet haben, werden Ihnen beim Klick auf **Vorschau** die Erlebnisse der unterschiedlichen Segmente angezeigt.
+   >Wenn Sie die Segmente auch in Adobe Campaign einrichten, klicken Sie auf **Vorschau** zeigt Ihnen die Erlebnisse für jedes Segment an.

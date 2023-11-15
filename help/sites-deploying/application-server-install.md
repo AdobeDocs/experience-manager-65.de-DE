@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1164'
 ht-degree: 44%
 
 ---
@@ -131,7 +131,7 @@ Legen Sie Memory-Argumente in Ihrer conf-Datei fest (z. B. `standalone.conf`)
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-Wenn Sie zum Installieren der AEM Webanwendung den Bereitstellungsscanner verwenden, kann es sinnvoll sein, die `deployment-timeout,` für die `deployment-timeout` -Attribut in der XML-Datei Ihrer Instanz (z. B. `configuration/standalone.xml)`:
+Wenn Sie den Bereitstellungsscanner verwenden, um die AEM Webanwendung zu installieren, kann es sinnvoll sein, die `deployment-timeout,` für die `deployment-timeout` -Attribut in der XML-Datei Ihrer Instanz (z. B. `configuration/standalone.xml)`:
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">

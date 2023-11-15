@@ -2,10 +2,10 @@
 title: Die AEM-Community
 description: Entdecken und erstellen Sie Verbindungen zur Adobe Experience Manager-Community.
 exl-id: 2e73572c-78de-4c20-ada8-d95f7fd16dc9
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 96%
+source-wordcount: '324'
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 96%
 
 Die AEM-Community hat Tausende von Mitgliedern auf der ganzen Welt. Das Spektrum reicht von Neulingen bei Experience Manager bis hin zu erfahrenen Entwicklungsfachleuten und Admins. Die Community ist da, um Ihnen bei allen Fragen weiterzuhelfen, von AEM-Funktionen bis hin zur Entwicklung. Die AEM-Community veranstaltet regelmäßig Expertensitzungen mit internen und externen Fachleuten. Sie kann Ihnen auch helfen, Beispiele, Artikel und Tutorials für Sie zu erstellen.
 
-[Treten Sie noch heute der Community bei, um Zugang zu den besten Inhalten, Personen und Wissen zu erhalten.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?lang=de) Sie ist für jeden offen. Wenn Sie Interesse an AEM haben, sind Sie willkommen. Schauen Sie vorbei!
+[Treten Sie noch heute der Community bei, um Zugang zu den besten Inhalten, Personen und Wissen zu erhalten.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?lang=de) Es steht allen offen. Wenn du dich für AEM interessierst, dann bist du gern gesehen. Schauen Sie vorbei!
 
 ## Welche Veranstaltungen gibt es für Mitglieder der AEM-Community? {#events}
 

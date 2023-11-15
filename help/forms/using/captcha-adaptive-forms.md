@@ -7,10 +7,10 @@ topic-tags: adaptive_forms, author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1993'
-ht-degree: 96%
+source-wordcount: '1992'
+ht-degree: 95%
 
 ---
 
@@ -64,7 +64,7 @@ AEM Forms-Benutzende können den reCAPTCHA-Service von Google verwenden, um CAPT
    1. Tippen Sie auf **[!UICONTROL reCAPTCHA]**. Die Konfigurationsseite öffnet sich. Wählen Sie den im vorherigen Schritt erstellten Konfigurations-Container und tippen Sie auf **[!UICONTROL Erstellen]**.
    1. Wählen Sie die Version „reCAPTCHA Enterprise“ und geben Sie den Namen, die Projekt-ID, den Site-Schlüssel und den API-Schlüssel (erhalten in Schritt 2 und 3) für den reCAPTCHA Enterprise-Dienst an.
    1. Wählen Sie den Schlüsseltyp aus. Der Schlüsseltyp sollte mit dem im Google Cloud-Projekt konfigurierten Site-Schlüssel übereinstimmen, z. B. **Checkbox site key** oder **Score-based site key**.
-   1. Geben Sie einen Schwellenwert im Bereich von 0 bis 1 an ([Klicken Sie hier, um mehr über den Wert zu erfahren](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Werte, die größer oder gleich den Schwellenwerten sind, kennzeichnen menschliche Interaktionen, die ansonsten als Bot-Interaktion betrachtet werden.
+   1. Geben Sie einen Schwellenwert im Bereich 0-1 ([Klicken Sie auf , um mehr über die Punktzahl zu erfahren](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Werte, die größer oder gleich den Schwellenwerten sind, kennzeichnen menschliche Interaktionen, die ansonsten als Bot-Interaktion betrachtet werden.
 
       > Hinweis:
       >

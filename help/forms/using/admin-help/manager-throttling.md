@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '1021'
 ht-degree: 20%
 
 ---
@@ -49,7 +49,7 @@ Sie können die Einschränkungen für Work Manager so konfigurieren, dass Arbeit
  <tbody>
   <tr>
    <td><code> adobe.work-manager.queue-refill-interval</code></td>
-   <td><p>Gibt das Zeitintervall (in Millisekunden) an, das Work Manager beim Suchen nach neuen Elementen in der Warteschlange verwendet.</p><p>Der Wert für diese Option ist eine Ganzzahl. Der Standardwert ist <code>1000</code> Millisekunden (1 Sekunde). </p><p>Wenn das Volumen asynchroner Aufrufe gering ist, können Sie diesen Wert erhöhen. Sie können sie beispielsweise auf einen Wert zwischen 2000 und 5000 (2 bis 5 Sekunden) erhöhen. </p><p>Wenn das Volumen asynchroner Aufrufe hoch ist, sollte der Standardwert ausreichend sein, Sie können jedoch bei Bedarf einen niedrigeren Wert verwenden. Eine zu hohe Abnahme dieses Werts (z. B. unter 50, was zu einer Abrufhäufigkeit von 20-mal pro Sekunde führt) verursacht einen erheblichen Mehraufwand für das System.</p></td>
+   <td><p>Gibt das Zeitintervall (in Millisekunden) an, das Work Manager beim Suchen nach neuen Elementen in der Warteschlange verwendet.</p><p>Der Wert für diese Option ist eine Ganzzahl. Der Standardwert ist <code>1000</code> Millisekunden (1 Sekunde). </p><p>Wenn das Volumen asynchroner Aufrufe gering ist, können Sie diesen Wert erhöhen. Sie können sie beispielsweise auf einen Wert zwischen 2000 und 5000 (2-5 Sekunden) erhöhen. </p><p>Wenn das Volumen asynchroner Aufrufe hoch ist, sollte der Standardwert ausreichend sein, Sie können jedoch bei Bedarf einen niedrigeren Wert verwenden. Eine zu hohe Abnahme dieses Werts (z. B. unter 50, was zu einer Abrufhäufigkeit von 20-mal pro Sekunde führt) verursacht einen erheblichen Mehraufwand für das System.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.debug-mode-enabled</code></td>

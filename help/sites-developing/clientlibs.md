@@ -7,7 +7,7 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '2853'
 ht-degree: 86%
@@ -36,7 +36,7 @@ Client-seitige Bibliotheken (also JS- oder CSS-Dateien) werden meist in den HTML
 
 Dieser Ansatz funktioniert zwar in AEM, kann aber zu Problemen führen, wenn Seiten und ihre Komponenten komplex werden. In solchen Fällen besteht die Gefahr, dass mehrere Kopien derselben JS-Bibliothek in die endgültige HTML-Ausgabe aufgenommen werden. Um dies zu vermeiden und einen logischen Aufbau Client-seitiger Bibliotheken zu ermöglichen, verwendet AEM **Client-seitige Bibliotheksordner**.
 
-Ein Client-seitiger Bibliotheksordner ist ein Repository-Knoten des Typs `cq:ClientLibraryFolder`. Seine Definition in [CND-Notation](https://jackrabbit.apache.org/node-type-notation.html) ist
+Ein Client-seitiger Bibliotheksordner ist ein Repository-Knoten des Typs `cq:ClientLibraryFolder`. Seine Definition in [CND-Notation](https://jackrabbit.apache.org/node-type-notation.html) lautet:
 
 ```shell
 [cq:ClientLibraryFolder] > sling:Folder

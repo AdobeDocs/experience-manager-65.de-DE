@@ -1,19 +1,15 @@
 ---
 title: Verwalten von Projekten
-seo-title: Managing Projects
 description: In „Projekte“ können Sie ein Projekt organisieren, indem Sie Ressourcen zu einer Einheit gruppieren. Der Zugriff und die Verwaltung erfolgen über die Projektekonsole.
-seo-description: Projects lets you organize your project by grouping resources into one entity which can be acessed and managed intheProjects console
-uuid: ac937582-181f-429b-9404-3c71d1241495
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
-discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 91%
+source-wordcount: '981'
+ht-degree: 89%
 
 ---
 
@@ -135,7 +131,7 @@ Sie können jetzt Projekte im Ordner erstellen. Sie können mehrere Ordner erste
 
 ### Inaktivieren von Projekten {#making-projects-inactive-or-active}
 
-Sie können ein Projekt als inaktiv markieren, wenn Sie es abgeschlossen haben, aber die Informationen beibehalten möchten. [Inaktive Projekte werden jetzt](#viewing-active-inactive-projects) standardmäßig in der **Projektekonsole** angezeigt.
+Sie können ein Projekt nach Abschluss als inaktiv markieren, aber dennoch die Informationen zum Projekt beibehalten. [Inaktive Projekte werden jetzt](#viewing-active-inactive-projects) standardmäßig in der **Projektekonsole** angezeigt.
 
 Gehen Sie wie folgt vor, um ein Projekt inaktiv zu machen.
 

@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 2%
+source-wordcount: '1068'
+ht-degree: 1%
 
 ---
 
@@ -79,7 +79,7 @@ Standardmäßig ist das ADD-Verb für QnA- und Forenkomponenten festgelegt.
   Der Standardwert ist 216000 Stunden (~24 Jahre).
 
 * **Scoring-Wachstumsrate**
-Dies gibt den Wert zwischen 0 und dem Scoring-Bereich an, ab dem sich das Wachstum verlangsamt, um die Anzahl der Experten zu begrenzen.
+Dies gibt den Wert zwischen dem 0-Scoring-Bereich an, über den das Wachstum hinausgeht und die Anzahl der Experten begrenzt.
 
   Der Standardwert ist 50.
 
@@ -126,7 +126,7 @@ Anstatt Punkte mit einem Badge-Bild zu verknüpfen, ist es nur erforderlich, die
   <tr>
    <th>Eigenschaft</th>
    <th>Typ</th>
-   <th>Wert Beschreibung</th>
+   <th>Wertbeschreibung</th>
   </tr>
   <tr>
    <td>badgingPath</td>

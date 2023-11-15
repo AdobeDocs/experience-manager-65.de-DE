@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: e4e2e8b58c0283182b2fbd4262a4ef9b607dac26
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1804'
 ht-degree: 57%
 
 ---
@@ -285,7 +285,7 @@ AEM startet und leitet Ihren Webbrowser automatisch zur entsprechenden Seite um.
 
 ![Anmeldebildschirm](assets/screen_shot_2019-04-08at83533am.png)
 
-Nach der Anmeldung haben Sie Zugriff auf AEM. Weitere Informationen finden Sie je nach Ihrer Rolle in den folgenden Abschnitten:
+Nachdem Sie angemeldet sind, haben Sie Zugriff auf AEM. Weitere Informationen zu Ihrer Rolle finden Sie in den folgenden Abschnitten:
 
 * [Authoring –](/help/sites-authoring/home.md)
 * [Verwalten](/help/sites-administering/home.md)

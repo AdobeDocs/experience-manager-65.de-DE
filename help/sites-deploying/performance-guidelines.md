@@ -11,10 +11,10 @@ topic-tags: configuring
 discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
-workflow-type: ht
-source-wordcount: '2913'
-ht-degree: 100%
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+workflow-type: tm+mt
+source-wordcount: '2914'
+ht-degree: 99%
 
 ---
 
@@ -270,7 +270,7 @@ Verwenden Sie die Leistungsrichtlinien in den folgenden Situationen:
 * **Aktualisierung auf eine neue Version**: Bei der Aktualisierung auf eine neue Version müssen Sie sich über die Leistungsunterschiede im Vergleich zur aktuellen Umgebung im Klaren sein. Beispielsweise beim Upgrade von AEM 6.1 auf 6.2 oder von AEM 6.0 CRX2 auf 6.2 OAK.
 * **Langsame Reaktionszeit**: Wenn die ausgewählte Knotenspeicher-Architektur Ihre Anforderungen nicht erfüllt, müssen Sie wissen, welche Leistungsunterschiede im Vergleich zu anderen Topologieoptionen bestehen. Beispielsweise bei der Bereitstellung von TarMK anstelle von MongoMK oder der Verwendung eines Dateidatenspeichers anstelle eines Amazon S3- oder Microsoft® Azure-Datenspeichers.
 * **Hinzufügen weiterer Autoren**: Wenn die empfohlene TarMK-Topologie die Leistungsanforderungen nicht erfüllt und der Author-Knoten auf die maximale verfügbare Kapazität aufgestockt wurde, sollten Sie die Leistungsunterschiede verstehen. Vergleichen Sie die Verwendung von MongoMK mit drei oder mehr Author-Knoten. Beispielsweise bei der Bereitstellung von MongoMK anstelle von TarMK.
-* **Hinzufügen weiterer Inhalte**: Wenn die empfohlene Datenspeicherarchitektur Ihre Anforderungen nicht erfüllt, müssen Sie wissen, welche Leistungsunterschiede im Vergleich zu anderen Datenspeicheroptionen bestehen. Beispielsweise bei Verwendung des Amazon S3- oder Microsoft® Azure-Datenspeichers anstatt eines Dateidatenspeichers.
+* **Hinzufügen von mehr Inhalten**: Wenn die empfohlene Data Store-Architektur Ihre Anforderungen nicht erfüllt, müssen Sie die Leistungsunterschiede im Vergleich zu anderen Datenspeicheroptionen verstehen. Beispielsweise bei Verwendung des Amazon S3- oder Microsoft® Azure-Datenspeichers anstatt eines Dateidatenspeichers.
 
 ## Einführung {#introduction}
 
@@ -321,16 +321,15 @@ Weitere Einzelheiten zu den verfügbaren Konfigurationsoptionen finden Sie unter
 >Adobe empfiehlt, die Option zur Bereitstellung von AEM auf Azure oder Amazon Web Services (AWS) unter Verwendung von Adobe Managed Services zu wählen. Kunden profitieren von einem Team, das über die Erfahrung und die Fähigkeiten verfügt, AEM in diesen Cloud-Computing-Umgebungen bereitzustellen und zu betreiben. Siehe die [zusätzliche Dokumentation zu Adobe Managed Services](https://business.adobe.com/de/products/experience-manager/managed-services.html?aemClk=t).
 >
 >Für die Bereitstellung von AEM auf Azure oder AWS außerhalb von Adobe Managed Services wird von Adobe dringend empfohlen, direkt mit dem Cloud-Anbieter zu arbeiten. Oder arbeiten Sie mit einem der Partner von Adobe zusammen, die bei der Implementierung von AEM in der gewünschten Cloud-Umgebung helfen. Der ausgewählte Cloud-Anbieter oder -Partner ist verantwortlich für die Skalierungsspezifikationen, das Design und die Implementierung der unterstützten Architektur, um Ihre spezifischen Anforderungen an Leistung, Last, Skalierbarkeit und Sicherheit zu erfüllen.
->Weitere Informationen finden Sie auf der Seite [technische Anforderungen](/help/sites-deploying/technical-requirements.md#supported-platforms).
 >
->
->
+>>Weitere Informationen finden Sie auf der Seite [technische Anforderungen](/help/sites-deploying/technical-requirements.md#supported-platforms).
 
 ### Suchen {#search-features}
 
 In diesem Abschnitt sind die in AEM verwendeten benutzerdefinierten Index-Provider aufgeführt. Weitere Informationen zur Indizierung finden Sie unter [Oak-Abfragen und Indizierung](/help/sites-deploying/queries-and-indexing.md).
 
 >[!NOTE]
+>
 >Für den Großteil der Bereitstellungen empfiehlt Adobe den Lucene-Index. Verwenden Sie Solr nur für die Skalierbarkeit in spezialisierten und komplexen Implementierungen.
 
 ![chlimage_1-4](assets/chlimage_1-4a.png)
@@ -369,6 +368,7 @@ Weitere Informationen zur Entwicklung in AEM finden Sie unter [Entwickeln – Gr
 ### Benchmark-Szenarios {#benchmark-scenarios}
 
 >[!NOTE]
+>
 >Alle auf dieser Seite angezeigten Benchmark-Tests wurden in einer Laborumgebung durchgeführt.
 
 Die unten beschriebenen Testszenarien werden für die Abschnitte mit den Benchmark-Tests in den Kapiteln „TarMK“, „MongoMK“ und „TarMK im Vergleich zu MongoMK“ verwendet. Um festzustellen, welches Szenario für einen bestimmten Benchmarktest verwendet wurde, sehen Sie im Feld „Szenario“ der Tabelle [Technische Spezifikationen](/help/sites-deploying/performance-guidelines.md#tarmk-performance-benchmark) nach.
@@ -406,6 +406,7 @@ Weitere Informationen zu TarMK finden Sie unter [Bereitstellungsszenarien](/help
 ### Richtlinien zur Mindestarchitektur von TarMK {#tarmk-minimum-architecture-guidelines}
 
 >[!NOTE]
+>
 >Die unten angegebenen Richtlinien zur Mindestarchitektur gelten für Produktionsumgebungen und Websites mit einem hohen Traffic-Volumen. Bei diesen Richtlinien handelt es sich **nicht** um die [Mindestanforderungen](/help/sites-deploying/technical-requirements.md#prerequisites) für die Ausführung von AEM.
 
 Sie sollten mit der folgenden Architektur beginnen, um bei der Verwendung von TarMK eine gute Leistung zu erzielen:
@@ -417,6 +418,7 @@ Sie sollten mit der folgenden Architektur beginnen, um bei der Verwendung von Ta
 Nachfolgend finden Sie die Architekturrichtlinien für AEM Sites und AEM Assets.
 
 >[!NOTE]
+>
 >Wenn der Dateidatenspeicher freigegeben wird, muss die Binärdatei-lose Replikation **AKTIVIERT** sein.
 
 **TAR-Architekturrichtlinien für AEM Sites**
@@ -490,7 +492,7 @@ Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellung
 
 Die Benchmarktests wurden nach folgenden Spezifikationen durchgeführt:
 
-|  | **Autorenknoten** |
+| | **Autorenknoten** |
 |---|---|
 | Server | Hardware für Bare Metal (HP) |
 | Betriebssystem | Red Hat® Linux® |
@@ -507,6 +509,7 @@ Die Benchmarktests wurden nach folgenden Spezifikationen durchgeführt:
 #### Performance-Benchmark-Ergebnisse {#performance-benchmark-results}
 
 >[!NOTE]
+>
 >Die folgenden Zahlen wurden auf 1 als Baseline normalisiert und sind nicht die tatsächlichen Durchsatzwerte.
 
 ![chlimage_1-7](assets/chlimage_1-7a.png) ![chlimage_1-8](assets/chlimage_1-8a.png)
@@ -527,9 +530,11 @@ Sie sollten mit der folgenden Architektur beginnen, um bei der Verwendung von Mo
 * Zwei Dispatcher
 
 >[!NOTE]
+>
 >In Produktionsumgebungen wird MongoDB immer als Replikatgruppe mit einer primären und zwei sekundären Instanzen verwendet. Die Lese- und Schreibvorgänge gehen an die primäre Instanz und die Lesevorgänge können an die sekundären Instanzen gehen. Wenn die Speicherung nicht verfügbar ist, kann eine der sekundären Instanzen durch einen Arbiter ersetzt werden. MongoDB-Replikatgruppen müssen jedoch immer aus einer ungeraden Anzahl von Instanzen bestehen.
 
 >[!NOTE]
+>
 >Wenn der Dateidatenspeicher freigegeben wird, muss die Binärdatei-lose Replikation **AKTIVIERT** sein.
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
@@ -597,7 +602,7 @@ Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellung
 
 Die Benchmarktests wurden nach folgenden Spezifikationen durchgeführt:
 
-|  | **Autorenknoten** | **MongoDB-Knoten** |
+| | **Autorenknoten** | **MongoDB-Knoten** |
 |---|---|---|
 | Server | Hardware für Bare Metal (HP) | Hardware für Bare Metal (HP) |
 | Betriebssystem | Red Hat® Linux® | Red Hat® Linux® |
@@ -614,6 +619,7 @@ Die Benchmarktests wurden nach folgenden Spezifikationen durchgeführt:
 ### Performance-Benchmark-Ergebnisse {#performance-benchmark-results-1}
 
 >[!NOTE]
+>
 >Die folgenden Zahlen wurden auf 1 als Baseline normalisiert und sind nicht die tatsächlichen Durchsatzwerte.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png) ![chlimage_1-11](assets/chlimage_1-11a.png)
@@ -647,6 +653,7 @@ Weitere Einzelheiten zu TarMK und MongoMK finden Sie unter [Empfohlene Implement
 ### Benchmarks für den Vergleich zwischen TarMK und MongoMK {#tarmk-vs-mongomk-benchmarks}
 
 >[!NOTE]
+>
 >Die folgenden Zahlen wurden auf 1 als Basiswert normiert und sind keine tatsächlichen Durchsatzwerte.
 
 ### Szenario 1 Technische Spezifikationen {#scenario-technical-specifications}
@@ -735,6 +742,7 @@ Weitere Einzelheiten zu TarMK und MongoMK finden Sie unter [Empfohlene Implement
 ### Szenario 2 Technische Spezifikationen {#scenario-technical-specifications-1}
 
 >[!NOTE]
+>
 >Sie benötigen einen Cluster mit zwei AEM-Knoten, um bei Verwendung von MongoDB dieselbe Anzahl von Authoring-Instanzen wie bei einem TarMK-System nutzen zu können. Ein MongoDB-Cluster mit vier Knoten kann die 1,8-fache Anzahl von Autoreninstanzen einer TarMK-Instanz verarbeiten. Ein MongoDB-Cluster mit acht Knoten kann die 2,3-fache Anzahl von Authoring-Instanzen einer TarMK-Instanz verarbeiten.
 
 <table>

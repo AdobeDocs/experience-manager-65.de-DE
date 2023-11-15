@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '790'
 ht-degree: 35%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 35%
 
 Standardmäßig verwendet AEM den Token-Authentifizierungs-Handler, um jede Anfrage zu authentifizieren. Um Authentifizierungsanfragen zu erfüllen, benötigt der Token Authentication Handler jedoch Zugriff auf das Repository für jede Anfrage. Dies geschieht, weil Cookies zur Aufrechterhaltung des Authentifizierungsstatus verwendet werden. Logischerweise muss der Status im Repository beibehalten werden, um nachfolgende Anfragen zu validieren. Das bedeutet, dass der Authentifizierungsmechanismus stateful ist.
 
-Dies ist von besonderer Bedeutung für die horizontale Skalierbarkeit. Bei einer Einrichtung mit mehreren Instanzen wie der unten dargestellten Veröffentlichungsfarm kann der Lastenausgleich nicht optimal erreicht werden. Bei der stateful-Authentifizierung ist der beibehaltene Authentifizierungsstatus nur in der Instanz verfügbar, in der der Benutzer zum ersten Mal authentifiziert wird.
+Dies ist von besonderer Bedeutung für die horizontale Skalierbarkeit. Bei einer Einrichtung mit mehreren Instanzen wie der unten dargestellten Veröffentlichungsfarm kann der Lastenausgleich nicht optimal durchgeführt werden. Bei der stateful-Authentifizierung ist der beibehaltene Authentifizierungsstatus nur in der Instanz verfügbar, in der der Benutzer zum ersten Mal authentifiziert wird.
 
 ![chlimage_1-33](assets/chlimage_1-33a.png)
 

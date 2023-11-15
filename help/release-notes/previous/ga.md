@@ -2,9 +2,9 @@
 title: Allgemeine Versionshinweise zu  [!DNL Adobe Experience Manager]  6.5
 description: Informationen zu [!DNL Adobe Experience Manager] 6.5 mit Versionshinweisen, Angaben zu neuen Funktionen und zur Installation sowie ausführlichen Auflistungen von Änderungen.
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '4675'
+source-wordcount: '4676'
 ht-degree: 99%
 
 ---
@@ -187,7 +187,7 @@ Weitere Informationen zu Änderungen in AEM Screens finden Sie in den Versionsh
 
 * Die Leiste [Referenz](/help/sites-authoring/author-environment-tools.md#references) enthält einen neuen Abschnitt, in dem interne Links aufgelistet werden, die auf die ausgewählte Seite verweisen. Dies ist nützlich, wenn Sie planen, eine Seite offline zu schalten oder zu löschen. So können Sie sehen, welche Seiten angepasst werden müssen, bevor sie offline geschaltet werden.
 * Die [Listenansicht](/help/sites-authoring/basic-handling.md#list-view) enthält eine neue Workflow-Spalte, die den Status anzeigt, wenn sich die Seite in einem Workflow befindet.
-* In den [Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md) können Sie nun nach vorhandenen Assets suchen, wenn Sie der Seite eine Miniaturansicht zuweisen (Registerkarte „Miniatur“).
+* Im [Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md)können Sie jetzt nach vorhandenen Assets suchen, wenn Sie der Seite eine Miniaturansicht zuweisen (Registerkarte &quot;Miniaturansicht&quot;).
 
 #### Seiteneditor {#page-editor}
 

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2668'
-ht-degree: 47%
+source-wordcount: '2669'
+ht-degree: 46%
 
 ---
 
@@ -25,7 +25,7 @@ Wenn Sie zu Komponenten von AEM beitragen, machen Sie sich mit AEM vertraut, wie
 
 Das HyperText Transfer Protocol (HTTP) ist für alles, was wir tun, von zentraler Bedeutung. Bevor Sie zu AEM beitragen, sollten Sie daher über ein tiefes Verständnis von HTTP verfügen, idealerweise in dem Maße, in dem Sie Ihre eigene Java™-Implementierung eines mehrprozessgestützten HTTP-Servers mit Thread-Pooling schreiben können. Sie sollten auch das HTTP/1.1-Keep-Alive-Verhalten verstehen und über eingehende Kenntnisse der Server-/Client-seitigen Interaktionen mit JavaScript verfügen, insbesondere über den asynchronen Interaktionsstil, der von AJAX repräsentiert wird.
 
-Da Seitendynamik und interaktiver Inhalt der Schlüssel zum WM-Erlebnis sind, ist es wichtig, dass Sie das Dokumentobjektmodell und sein Potenzial für programmatische Manipulation als Reaktion auf Ereignisse möglichst gut verstehen. Sie sollten beispielsweise Kenntnisse über die Echtzeit-DOM-Manipulation und das Drag-and-Drop-Verhalten über mehrere Browser-Dokumente haben (z. B. über iframes).
+Da die Seitendynamik und interaktive Inhalte für das WM-Erlebnis entscheidend sind, müssen Sie über ein relativ tiefes Verständnis des Dokumentobjektmodells und dessen Potenzial für programmatische Manipulationen als Reaktion auf Ereignisse verfügen. Sie sollten beispielsweise Kenntnisse über die Echtzeit-DOM-Manipulation und das Drag-and-Drop-Verhalten über mehrere Browser-Dokumente haben (z. B. über iframes).
 
 Auf höchster Ebene sollten Sie über ein solides Verständnis von Folgendem verfügen:
 

@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '17027'
 ht-degree: 83%
@@ -51,7 +51,7 @@ Sie können die folgenden Aufgaben mithilfe des Signature-Services ausführen:
 
 ## Hinzufügen von Signaturfeldern {#adding-signature-fields}
 
-Digitale Signaturen werden in Signaturfeldern angezeigt, bei denen es sich um Formularfelder handelt, die eine grafische Darstellung der Signatur enthalten. Signaturfelder können sichtbar oder unsichtbar sein. Unterzeichnende können ein bereits vorhandenes Signaturfeld verwenden, oder ein Signaturfeld kann programmgesteuert hinzugefügt werden. In beiden Fällen muss das Signaturfeld vorhanden sein, bevor ein PDF-Dokument signiert werden kann.
+Digitale Signaturen werden in Signaturfeldern angezeigt, bei denen es sich um Formularfelder handelt, die eine grafische Darstellung der Signatur enthalten. Signaturfelder können sichtbar oder unsichtbar sein. Unterzeichner können ein bereits vorhandenes Signaturfeld verwenden oder programmgesteuert ein Signaturfeld hinzugefügt werden. In beiden Fällen muss das Signaturfeld vorhanden sein, bevor ein PDF-Dokument signiert werden kann.
 
 Sie können ein Signaturfeld programmgesteuert hinzufügen, indem Sie die Signature-Dienst-Java-API oder die Signature-Webdienst-API verwenden. Sie können mehr als ein Signaturfeld zu einem PDF-Dokument hinzufügen. Jeder Signaturfeldname muss jedoch eindeutig sein.
 

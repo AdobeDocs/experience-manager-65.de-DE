@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '3786'
+source-wordcount: '3787'
 ht-degree: 51%
 
 ---
@@ -170,7 +170,7 @@ Informationen zum Erstellen eines Emulators finden Sie unter [Erstellen eines be
 **Hauptmerkmale von mobilen Emulatoren**
 
 * Eine Gerätegruppe besteht aus einem oder mehreren Emulatoren: Die Gerätegruppenkonfigurationsseite, z. B. /etc/mobile/groups/touch, enthält die `emulators` -Eigenschaft unterhalb der `jcr:content` Knoten.
-Hinweis: Obwohl es möglich ist, dass derselbe Emulator zu mehreren Gerätegruppen gehört, hat das wenig Sinn.
+Hinweis: Obwohl es möglich ist, dass derselbe Emulator zu mehreren Gerätegruppen gehört, ist dies nicht sehr sinnvoll.
 
 * Über das Konfigurationsdialogfeld der Gerätegruppe wird die `emulators` -Eigenschaft mit dem Pfad der gewünschten Emulatoren festgelegt ist. Beispiel: `/libs/wcm/mobile/components/emulators/iPhone4`.
 

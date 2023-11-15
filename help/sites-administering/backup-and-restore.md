@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '2282'
-ht-degree: 41%
+ht-degree: 40%
 
 ---
 
@@ -217,7 +217,7 @@ Für das Online-Backup wird der folgende Algorithmus verwendet:
 
      Es wird eine leere Datei mit dem Namen `backupInProgress.txt` im Zielverzeichnis erstellt, wenn das Backup gestartet wird. Diese Datei wird gelöscht, wenn das Backup abgeschlossen ist.
 
-1. Die Dateien werden beim Erstellen einer ZIP-Datei aus dem Quellverzeichnis in das Zielverzeichnis (oder in das temporäre Verzeichnis) kopiert. Der Segmentspeicher wird vor dem Datenspeicher kopiert, um eine Beschädigung des Repositorys zu vermeiden. Der Index und die Zwischenspeicherdaten werden bei der Erstellung des Backups ausgelassen. Daher werden die Daten aus dem Zwischenspeicher `crx-quickstart/repository/cache` und dem Index `crx-quickstart/repository/index` nicht in das Backup eingeschlossen. Die Fortschrittsbalkenanzeige zeigt 0 % bis 70 % an, wenn eine ZIP-Datei erstellt wird, oder 0 % bis 100 %, wenn keine ZIP-Datei erstellt wird.
+1. Die Dateien werden beim Erstellen einer ZIP-Datei aus dem Quellverzeichnis in das Zielverzeichnis (oder in das temporäre Verzeichnis) kopiert. Der Segmentspeicher wird vor dem Datenspeicher kopiert, um eine Beschädigung des Repositorys zu vermeiden. Der Index und die Zwischenspeicherdaten werden bei der Erstellung des Backups ausgelassen. Daher werden die Daten aus dem Zwischenspeicher `crx-quickstart/repository/cache` und dem Index `crx-quickstart/repository/index` nicht in das Backup eingeschlossen. Der Fortschrittsleistenindikator des Prozesses liegt zwischen 0 %-70 % beim Erstellen einer ZIP-Datei oder 0 %-100 %, wenn keine ZIP-Datei erstellt wird.
 
 1. Wenn die Sicherung in einem bereits vorhandenen Verzeichnis durchgeführt wird, werden &quot;alte&quot;Dateien im Zielverzeichnis gelöscht. Alte Dateien sind Dateien, die nicht im Quellverzeichnis vorhanden sind.
 

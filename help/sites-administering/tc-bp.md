@@ -3,10 +3,10 @@ title: Best Practices für die Übersetzung
 description: Finden Sie Best Practices, die von Adobe-Engineering- und Beratungsteams zusammengestellt werden, um Sie bei der Erstellung und Ausführung von Übersetzungsprojekten zu unterstützen.
 feature: Language Copy
 exl-id: 01a81c4b-cb30-4f7e-b281-7194ebb5fc70
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 96%
+source-wordcount: '837'
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ Das Erstellen bzw. Erweitern einer globalen Web-Präsenz kann ein komplexer Proz
 
 * **Planen Sie die globale Expansion**, bevor Sie Ihre erste Website implementieren. Es ist für gewöhnlich schwieriger, eine vorhandene Website für globale Abdeckung anzupassen, wenn die Website kurzfristig implementiert wurde, als wenn Sie von Anfang an auf eine globale Expansion hin planen:
 
-   * Prüfen Sie den aktuellen Status der Lokalisierungsreife Ihrer Organisation. Stellen Sie fest, ob Sie über die für eine globale Expansion notwendigen **Tools**, **Prozesse** und **Ressourcen** verfügen.
+   * Bewerten Sie den aktuellen Stand der Lokalisierungsreife Ihres Unternehmens. Stellen Sie fest, ob Sie über die für eine globale Expansion notwendigen **Tools**, **Prozesse** und **Ressourcen** verfügen.
    * Beachten Sie **lokal unterschiedliche Rechtsvorschriften** und **regionale sprachliche Präferenzen**. Entwerfen Sie flexible Inhaltsstrukturen und -prozesse, die für eine in ständigem Wandel befindliche globale Geschäftsumgebung geeignet sind.
 
 * Wählen Sie ein **Governance**-Modell, das die globale Geschäftstätigkeit unterstützt, und verwenden Sie AEM-Mechanismen (z. B. MSM und Benutzerberechtigungen), um das gewählte Modell durchzusetzen. Legen Sie beispielsweise fest, ob Inhalte zentral verfasst und an Regionen/Länder verteilt oder von ihnen abgerufen werden. Legen Sie fest, welche Inhalte in Regionen entsperrt und geändert werden können. Legen Sie fest, wer für das Initiieren und Verwalten von Übersetzungen zuständig ist.
@@ -33,7 +33,7 @@ Das Erstellen bzw. Erweitern einer globalen Web-Präsenz kann ein komplexer Proz
 * Legen Sie fest, wie Inhalte nach Regionen und Ländern verteilt werden. Berücksichtigen Sie Länder, in denen dieselbe Sprache gesprochen wird. Es wird empfohlen, Sprachstämme zu erstellen, eine Ebene nicht aktivierter Seiten, auf denen übersetzte Inhalte überprüft und geändert und dann an eine länderspezifische Website mit der jeweiligen Sprache verteilt oder von ihr abgerufen werden können.
 * Zum Erstellen von Sprachstämmen gibt es zwei Ansätze, einen mit Sprachkopien und einen mit MSM-/Live Copies.
 
-   * Der Ansatz mit den Sprachkopien wird vom standardmäßigen Übersetzungsintegrations-Framework von AEM verwendet und stellt daher die einfachste Methode für den Anfang dar. Das Framework bietet eine Benutzeroberfläche, die es zunächst einfach macht, inhaltliche Änderungen vom Stamm der Hauptsprache (z. B. Englisch) an Sprachstämme weiterzugeben und zu übersetzen. Mit dem Wachstum des Projekts wird die Workflow-Automatisierung jedoch immer notwendiger für die Verwaltung der Übersetzung der steigenden Anzahl von Seiten und/oder Sprachen.
+   * Der Sprachkopie-Ansatz wird von AEM nativen Übersetzungsintegrations-Framework verwendet und ist daher der einfachste Einstiegsweg. Das Framework bietet eine Benutzeroberfläche, die es zunächst einfach macht, inhaltliche Änderungen vom Stamm der Hauptsprache (z. B. Englisch) an Sprachstämme weiterzugeben und zu übersetzen. Mit dem Wachstum des Projekts wird die Workflow-Automatisierung jedoch immer notwendiger für die Verwaltung der Übersetzung der steigenden Anzahl von Seiten und/oder Sprachen.
    * Der Ansatz mit MSM/Live Copies ist möglicherweise eine Alternative für fortgeschrittene Anwendungsfälle mit größeren, komplexeren Websites. Zur Verwaltung der komplexen Vererbungsverhältnisse zwischen der Hauptsprache und den Sprachstämmen sowie zur Verringerung des Risikos, bestehende Übersetzungen zu überschreiben, sind starke Governance und effiziente Workflow-Automatisierung erforderlich. Diese Verwaltung ist mithilfe von Übersetzungs-Connectors möglich. In [MSM und mehrsprachige Websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites) finden Sie weitere Informationen.
 
 * Wenn bei der primären Sprache globale Varianten vorliegen, ist eine Option, mit MSM eine Live Copy vom globalen Stamm zur Übersetzung zu erstellen. Wenn beispielsweise in einem Stamm in amerikanischem Englisch eine Bearbeitung durchgeführt wird, erstellen Sie einen Stamm in internationalem Englisch als Live Copy und Grundlage für die Übersetzung in andere Sprachen.

@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: f37f239f-065b-44f8-acb1-93485b713b49
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Die Seiten Ihrer Anwendung sollten sich alle unter /content/mobileapps befinden,
 
 ![chlimage_1-52](assets/chlimage_1-52.png)
 
-Standardmäßig sollte die erste Seite Ihrer App eine Umleitung zu einem der untergeordneten Elemente sein, die als Standardsprache der App dienen (&quot;en&quot;sowohl in Geometrixx- als auch in Starter Kit-Fällen). Die Gebietsschema-Seite der obersten Ebene übernimmt normalerweise die Foundation-Komponente &quot;splash-page&quot;(/libs/mobileapps/components/splash-page), die die erforderliche Initialisierung übernimmt, um die Installation von Aktualisierungen der Inhaltssynchronisierung über die Luft zu unterstützen (der ContentInit-Code finden Sie unter /etc/clientlibs/mobile/content-sync/js/contentInit.js).
+Standardmäßig sollte die erste Seite Ihrer App eine Umleitung zu einem seiner untergeordneten Elemente sein, die als Standardsprache der App dienen (&quot;en&quot;sowohl in Geometrixx- als auch in Starter Kit-Fällen). Die Gebietsschema-Seite der obersten Ebene übernimmt normalerweise die Foundation-Komponente &quot;splash-page&quot;(/libs/mobileapps/components/splash-page), die die erforderliche Initialisierung übernimmt, um die Installation von Aktualisierungen der Inhaltssynchronisierung über die Luft zu unterstützen (der ContentInit-Code finden Sie unter /etc/clientlibs/mobile/content-sync/js/contentInit.js).
 
 ## Vorlagen und Komponenten {#templates-and-components}
 
@@ -45,7 +45,7 @@ In Client-Bibliotheken stehen Entwicklern einige Optionen zur Verfügung, in den
 
 Wenn Ihr clientseitiger Code alleine stehen kann und nicht mit einer bestimmten Komponente Ihrer Anwendung in Verbindung steht (d. h., er kann in anderen Anwendungen wiederverwendet werden), empfiehlt Adobe, ihn in /etc/clientlibs/ zu speichern.&lt;brand name=&quot;&quot;>/&lt;lib name=&quot;&quot;>. Wenn die clientlib dagegen für eine einzelne App spezifisch ist, können Sie sie als untergeordnetes Element des Design-Knotens Ihrer App verschachteln: /etc/designs/phonegap/&lt;brand name=&quot;&quot;>/&lt;app name=&quot;&quot;>/clientlibs. Verwenden Sie nicht die Kategorie dieser clientlib mit anderen Bibliotheken, sondern betten Sie ggf. andere Bibliotheken ein. Dadurch wird verhindert, dass Entwickler bei jedem Hinzufügen einer Client-Bibliothek zur App neue Konfigurationen für die Inhaltssynchronisierung hinzufügen müssen, anstatt einfach die Eigenschaft &quot;embetts&quot;der Design-Client-Bibliothek der App zu aktualisieren. Betrachten Sie beispielsweise den Konfigurationsknoten &quot;Geometrixx clientlibs-all Content Sync&quot;unter /content/phonegap/geometrixx-outdoors/en/jcr:content/page-app/app-config/clientlibs-all.
 
-Wenn Ihr clientseitiger Code eng mit einer bestimmten Komponente verknüpft ist, platzieren Sie diesen Code in einer Client-Bibliothek, die unter dem Speicherort der Komponente in /apps/ verschachtelt ist, und betten Sie ihn in die Client-Bibliothek &quot;Design&quot;Ihrer App ein.
+Wenn Ihr clientseitiger Code eng mit einer bestimmten Komponente verknüpft ist, platzieren Sie diesen Code in einer Client-Bibliothek, die unter dem Speicherort der Komponente in /apps/ verschachtelt ist, und betten Sie die zugehörige Kategorie in die &quot;Design&quot;-Client-Bibliothek Ihrer App ein.
 
 ## PhoneGap-Konfiguration {#phonegap-configuration}
 

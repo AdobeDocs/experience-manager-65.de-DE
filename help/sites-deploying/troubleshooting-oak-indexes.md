@@ -1,18 +1,15 @@
 ---
 title: Fehlerbehebung bei Oak-Indizes
-seo-title: Troubleshooting Oak Indexes
 description: Erfahren Sie, wie Sie feststellen können, ob die Indizierung langsam ist, die Ursache finden und das Problem beheben.
-uuid: 6567ddae-128c-4302-b7e8-8befa66b1f43
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
 exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 98%
+source-wordcount: '1474'
+ht-degree: 96%
 
 ---
 
@@ -22,7 +19,7 @@ ht-degree: 98%
 
 Der interne Neuindizierungsprozess von AEM erfasst Repository-Daten und speichert sie in Oak-Indizes, um eine leistungsfähige Inhaltsabfrage zu unterstützen. Bei außergewöhnlichen Umständen kann der Vorgang langsam werden oder sogar anhalten. Diese Seite dient als Anleitung zur Fehlerbehebung, um festzustellen, ob die Indizierung langsam ist, die Ursache zu finden und das Problem zu beheben.
 
-Es ist wichtig, zwischen Neuindizierungen zu unterscheiden, die unangemessen lange dauern, und Neuindizierungen, die einfach viel Zeit in Anspruch nehmen, weil große Mengen an Inhalten indiziert werden. Die Zeit, die für die Indizierung von Inhalten benötigt wird, hängt beispielsweise von der Menge der Inhalte ab, sodass die Neuindizierung großer Produktions-Repositorys länger dauert als die kleiner Entwicklungs-Repositorys.
+Es ist wichtig, zwischen einer Neuindizierung, die unangemessen lange dauert, und einer Neuindizierung zu unterscheiden, die viel Zeit in Anspruch nimmt, da sie große Mengen von Inhalten indiziert. Die Zeit, die für die Indizierung von Inhalten benötigt wird, hängt beispielsweise von der Menge der Inhalte ab, sodass die Neuindizierung großer Produktions-Repositorys länger dauert als die kleiner Entwicklungs-Repositorys.
 
 In den [Best Practices für Abfragen und Indizierung](/help/sites-deploying/best-practices-for-queries-and-indexing.md) finden Sie weitere Informationen darüber, wann und wie Inhalte neu indiziert werden sollten.
 

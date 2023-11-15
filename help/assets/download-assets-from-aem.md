@@ -6,10 +6,10 @@ role: User
 feature: Asset Management,Asset Distribution
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: ht
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+workflow-type: tm+mt
 source-wordcount: '884'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -66,7 +66,7 @@ Um das Herunterladen von Assets aus Ihrem DAM zu ermöglichen (z. B. bei Verwen
 
 1. Erstellen Sie einen Ordner mit einer Namenskonvention, die den Veröffentlichungs-Ausführungsmodus (`config.publish`) adressiert: `/apps/<your-app-name>/config.publish`. Um Konfigurationseigenschaften für einen Laufmodus zu definieren, siehe [Ausführungsmodi](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode).
 1. Erstellen Sie im Konfigurationsordner eine Datei des Typs `nt:file` mit dem Namen `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
-1. Füllen Sie `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` wie folgt. Legt eine maximale Größe (in Byte) für den Download als Wert von `asset.download.prezip.maxcontentsize` fest. Im folgenden Beispiel wird die maximale Größe des ZIP-Downloads auf maximal 100 KB konfiguriert.
+1. Füllen Sie `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` wie folgt. Legt eine maximale Größe (in Byte) für den Download als Wert von `asset.download.prezip.maxcontentsize` fest. Im folgenden Beispiel wird die maximale Größe des ZIP-Downloads auf maximal 100 KB konfiguriert.
 
    ```conf
    enabled=B"true"

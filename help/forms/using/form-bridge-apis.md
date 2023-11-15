@@ -1,18 +1,14 @@
 ---
 title: Form Bridge APIs für HTML5-Formulare
-seo-title: Form Bridge APIs for HTML5 forms
 description: Externe Anwendungen verwenden die FormBridge-API, um eine Verbindung zum XFA Mobile Form herzustellen. Die API sendet ein FormBridgeInitialized-Ereignis im übergeordneten Fenster.
-seo-description: External applications use the FormBridge API to connect to the XFA Mobile Form. The API dispatches a FormBridgeInitialized event on the parent window.
-uuid: 0db22649-522b-4857-9ffd-826c52381d15
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
-discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 exl-id: b598ef47-49ff-4806-8cc7-4394aa068eaa
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 86%
+source-wordcount: '939'
+ht-degree: 84%
 
 ---
 
@@ -20,7 +16,7 @@ ht-degree: 86%
 
 Sie können die Form Bridge APIs verwenden, um einen Übertragungskanal zwischen XFA-basierten HTML5-Formularen und Ihren Programmen zu öffnen. Die Form Bridge APIs bieten eine **Verbindungs**-API, um die Verbindung zu erstellen.
 
-Die **Verbindungs**-API akzeptiert einen Handler als ein Argument. Nachdem eine Verbindung zwischen XFA-basierten HTML5-Formularen und Form Bridge erstellt wurde, wird der Handler aufgerufen.  
+Die **Verbindungs**-API akzeptiert einen Handler als ein Argument. Nachdem eine erfolgreiche Verbindung zwischen XFA-basiertem HTML5-Formular und Form Bridge erstellt wurde, wird der Handle aufgerufen.
 
 Sie können den folgenden Beispielcode verwenden, um die Verbindung zu erstellen.
 

@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: personalization
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '5383'
-ht-degree: 98%
+source-wordcount: '5374'
+ht-degree: 96%
 
 ---
 
@@ -38,9 +38,9 @@ Die im Targeting-Modus sichtbaren Aktivitäten und Erlebnisse spiegeln die Optio
 
 >[!NOTE]
 >
->Wenn Sie eine Kampagne in Adobe Target erstellen, wird jeder Kampagne eine Eigenschaft mit dem Namen `thirdPartyId` hinzugefügt. Sollten Sie die Kampagne in Adobe Target löschen, wird die Eigenschaft „thirdPartyId“ jedoch nicht gelöscht. Die `thirdPartyId` kann nicht für Kampagnen unterschiedlicher Typen (A/B, XT) wiederverwendet werden und lässt sich nicht manuell löschen. Möchten Sie dieses Problem umgehen, geben Sie jeder Kampagne einen eindeutigen Namen. Kampagnennamen lassen sich somit nicht für verschiedene Kampagnentypen wiederverwenden.
+>Wenn Sie eine Kampagne in Adobe Target erstellen, wird jeder Kampagne eine Eigenschaft mit dem Namen `thirdPartyId` hinzugefügt. Sollten Sie die Kampagne in Adobe Target löschen, wird die Eigenschaft „thirdPartyId“ jedoch nicht gelöscht. Die `thirdPartyId` kann nicht für Kampagnen unterschiedlicher Typen (A/B, XT) wiederverwendet werden und lässt sich nicht manuell löschen. Um dieses Problem zu vermeiden, geben Sie jeder Kampagne einen eindeutigen Namen. Kampagnennamen können nicht in verschiedenen Kampagnentypen wiederverwendet werden.
 >
->Wenn Sie denselben Namen im selben Kampagnentyp verwenden, wird die vorhandene Kampagne überschrieben.
+>Wenn Sie denselben Namen im selben Kampagnentyp verwenden, überschreiben Sie die bestehende Kampagne.
 >
 >Sollte Ihnen beim Synchronisieren die Fehlermeldung „Anforderung fehlgeschlagen. `thirdPartyId` ist bereits vorhanden“ angezeigt werden, ändern Sie den Kampagnennamen und synchronisieren Sie erneut.
 
@@ -79,7 +79,7 @@ So fügen Sie eine Aktivität hinzu:
 
    >[!NOTE]
    >
-   >Es wird empfohlen, [Marken über die Aktivitätskonsole zu erstellen](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
+   >Adobe empfiehlt, dass Sie [Marken über die Aktivitätskonsole erstellen](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
    >
    >
    >Wenn Sie eine Marke auf andere Weise erstellen, stellen Sie sicher, dass der Knoten `/campaigns/<brand>/master` vorhanden ist. Sonst führt der Versuch, eine Aktivität zu erstellen, zu einem Fehler.
@@ -140,7 +140,7 @@ Nach dem [Starten des Targeting-Prozesses](/help/sites-authoring/content-targeti
 
 >[!CAUTION]
 >
->Gehen Sie beim Deaktivieren des Targetings für eine Komponente mit Bedacht vor, wenn für diese bereits in der Autoreninstanz Targeting durchgeführt wurde. Die entsprechende Aktivität wird automatisch auch aus der Veröffentlichungsinstanz gelöscht.
+>Gehen Sie beim Deaktivieren des Targetings für eine Komponente mit Bedacht vor, wenn für diese bereits in der Autoreninstanz Targeting durchgeführt wurde. Die entsprechende Aktivität wird automatisch auch aus der Publishing-Instanz gelöscht.
 
 >[!NOTE]
 >
@@ -406,7 +406,7 @@ Legen Sie mithilfe eines Segments eine Zielgruppe fest. Die Cloud-Konfiguration 
 
 Informationen zu Targeting-Engines finden Sie unter [Targeting-Engine](/help/sites-authoring/personalization.md#targeting-engine).
 
-Eine Zielgruppe darf nicht von mehr als einem Erlebnis verwendet werden. Neben einem Erlebnis wird ein Warnsymbol angezeigt, wenn es einer Zielgruppe zugeordnet ist, die einem anderen Erlebnis zugeordnet ist.
+Verwenden Sie nicht mehr als ein Erlebnis für eine Zielgruppe. Neben einem Erlebnis wird ein Warnsymbol angezeigt, wenn es einer Zielgruppe zugeordnet ist, die einem anderen Erlebnis zugeordnet ist.
 
 ![Warnsymbol bei Zuordnung zu einer Zielgruppe, die einem anderen Erlebnis zugeordnet ist](do-not-localize/chlimage_1-6.png)
 
@@ -517,7 +517,7 @@ Verwenden Sie die erweiterten Einstellungen, um zu bestimmen, was passiert, **na
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Anzahl erhöhen, Benutzer freigeben und an Wiedereintritt hindern</strong></td>
+   <td><strong>Anzahl erhöhen, Benutzer freigeben und Wiedereintritt von Balken verweigern</strong></td>
    <td>Bestimmen Sie, was der Benutzer anstelle des Aktivitätsinhalts sieht:
     <ul>
      <li>Gleiches Erlebnis, ohne Tracking</li>

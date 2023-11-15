@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 37%
+source-wordcount: '1832'
+ht-degree: 36%
 
 ---
 
@@ -436,7 +436,7 @@ Jeder Teil des Bulk Editors kann konfiguriert werden. In der folgenden Tabelle s
      <li>cellCls: CSS-Klasse </li>
      <li>readOnly: Wenn „true“, kann der Wert nicht geändert werden </li>
      <li>Kontrollkästchen: Wenn „true“, werden alle Zellen der Spalte als Kontrollkästchen definiert (true/false-Werte) </li>
-     <li>forcedPosition: Wenn Ganzzahlwert, wird damit angegeben, wo die Spalte im Raster platziert werden soll (zwischen 0 und der Anzahl der Spalten-1)<p><br /> </p> </li>
+     <li>forcedPosition: ganzzahliger Wert, der angibt, wo die Spalte im Raster platziert werden muss (zwischen 0-Anzahl Spalten-1)<p><br /> </p> </li>
     </ul> </td>
   </tr>
  </tbody>

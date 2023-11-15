@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die verfügbaren Optionen beim Installieren
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1616'
-ht-degree: 55%
+source-wordcount: '1617'
+ht-degree: 54%
 
 ---
 
@@ -74,7 +74,7 @@ Wenn Sie eine Instanz ausführen, die von AEM 6.3 aktualisiert wurde, stellen Si
 Standardmäßig wird der Ordner `crx-quickstart/install` auf Dateien überwacht.
 Dieser Ordner existiert nicht, kann jedoch einfach beim Ausführen erstellt werden.
 
-Wenn Bundles, Konfigurationen oder Inhaltspakete in diesem Verzeichnis abgelegt werden, werden diese automatisch registriert und installiert. Wenn sie entfernt werden, erfolgt die Deinstallation.
+Wenn Bundles, Konfigurationen oder Inhaltspakete in diesem Verzeichnis abgelegt werden, werden diese automatisch registriert und installiert. Wenn es entfernt wird, wird es deinstalliert.
 Dies stellt eine andere Möglichkeit dar, Bundles, Inhaltspakete oder Konfigurationen in das Repository aufzunehmen.
 
 Dies ist besonders für verschiedene Anwendungsfälle interessant:

@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Correspondence Management
 exl-id: 9e1b0067-c7dc-4bbb-a209-d674592be858
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2171'
+source-wordcount: '2170'
 ht-degree: 48%
 
 ---
@@ -83,7 +83,7 @@ Führen Sie die folgenden Schritte durch, um das Teilformular in einer XDP-Vorla
    1. Geben Sie einen Namen für das Teilformular im Feld **Name** an.
    1. Wählen Sie **Keine Datenbindung** aus der Dropdown-Liste **Datenbindung**.
 
-   Wiederholen Sie die Schritte 2 bis 5, um weitere Teilformulare zur XDP-Vorlage hinzuzufügen. Fügen Sie [Text, Dokumentfragmente, Bilder und Diagramme](create-interactive-communication.md#step2) nur während des Verfassens der interaktiven Kommunikation zu den Zielbereichen hinzu.
+   Wiederholen Sie die Schritte 2 bis 5, um der XDP-Vorlage weitere Teilformulare hinzuzufügen. Fügen Sie [Text, Dokumentfragmente, Bilder und Diagramme](create-interactive-communication.md#step2) nur während des Verfassens der interaktiven Kommunikation zu den Zielbereichen hinzu.
 
 1. Wählen Sie **Datei** > **Speichern unter**, um die Datei im lokalen Dateisystem zu speichern:
 

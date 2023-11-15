@@ -7,10 +7,10 @@ role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2202'
-ht-degree: 98%
+source-wordcount: '2204'
+ht-degree: 97%
 
 ---
 
@@ -222,7 +222,7 @@ Wenn Sie eine Sammlung herunterladen, wird die gesamte Asset-Hierarchie innerhal
 
 ## Erstellen verschachtelter Sammlungen {#creating-nested-collections}
 
-Sie können eine Sammlung zu einer anderen Sammlung hinzufügen und so eine verschachtelte Sammlung erstellen.
+Sie können eine Sammlung zu einer anderen Sammlung hinzufügen, sodass Sie eine verschachtelte Sammlung erstellen.
 
 1. Wählen Sie in der Konsole „Sammlungen“ die gewünschte Sammlung oder Gruppe von Sammlungen aus und klicken Sie auf der Symbolleiste auf **[!UICONTROL Zu Sammlung]**.
 

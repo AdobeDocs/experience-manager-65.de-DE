@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '3493'
+source-wordcount: '3495'
 ht-degree: 44%
 
 ---
@@ -24,7 +24,7 @@ Im Folgenden finden Sie die logischen Schritte, damit der Design Importer Ihre b
 
 1. Erstellen eines Taghandlers
 
-   * Ein Taghandler ist ein POJO, das HTML-Tags eines bestimmten Typs handelt. Die &quot;Art&quot;von HTML-Tags, die Ihr TagHandler verarbeiten kann, wird über die OSGi-Eigenschaft &quot;tagpattern.name&quot;von TagHandlerFactory definiert. Im Grunde handelt es sich bei der OSGi-Eigenschaft um einen RegEx, der dem Eingabe-HTML-Tag entsprechen sollte, das Sie handeln möchten. Alle verschachtelten Tags würden zum Handling an den Taghandler übergeben werden. Wenn Sie sich beispielsweise für ein div registrieren, das eine verschachtelte &lt;p> -Tag &lt;p> -Tag auch an Ihren TagHandler gesendet werden und es liegt an Ihnen, wie Sie sich darum kümmern möchten.
+   * Ein Taghandler ist ein POJO, das HTML-Tags eines bestimmten Typs handelt. Die &quot;Art&quot;von HTML-Tags, die Ihr TagHandler verarbeiten kann, wird über die OSGi-Eigenschaft &quot;tagpattern.name&quot;von TagHandlerFactory definiert. Im Grunde handelt es sich bei der OSGi-Eigenschaft um einen RegEx, der dem Eingabe-HTML-Tag entsprechen sollte, das Sie handeln möchten. Alle verschachtelten Tags würden zum Handling an den Taghandler übergeben werden. Wenn Sie sich beispielsweise für ein div registrieren, das eine verschachtelte &lt;p> -Tag &lt;p> -Tag auch an Ihren TagHandler gesendet werden und es liegt an Ihnen, wie Sie darauf achten möchten.
    * Die Oberfläche des Taghandlers ähnelt der Oberfläche eines SAX-Inhaltshandlers. Sie erhält für jedes HTML-Tag SAX-Ereignisse. Als Tag-Handler-Anbieter müssen Sie bestimmte Lebenszyklusmethoden implementieren, die automatisch vom Design Importer-Framework aufgerufen werden.
 
 1. Erstellen Sie die entsprechende TagHandlerFactory.
@@ -365,7 +365,7 @@ HTML-Tag mit in der importierten Zip enthaltenem grafischen Link: Hier wird &quo
 
 ### Parsys {#parsys}
 
-Das AEM-parsys ist eine Container-Komponente, die andere AEM-Komponenten enthalten kann. Es ist möglich, in das importierte HTML eine parsys-Komponente einzufügen. Dadurch kann der Benutzer bearbeitbare AEM zur Landingpage hinzufügen/löschen, selbst wenn sie importiert wurde.
+Das AEM-parsys ist eine Container-Komponente, die andere AEM-Komponenten enthalten kann. Es ist möglich, der importierten HTML eine parsys-Komponente hinzuzufügen. Dadurch kann der Benutzer bearbeitbare AEM zur Landingpage hinzufügen/löschen, selbst wenn sie importiert wurde.
 
 Das Absatzsystem bietet Benutzern die Möglichkeit, mithilfe des Sidekicks Komponenten hinzuzufügen.
 

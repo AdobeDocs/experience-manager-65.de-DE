@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2226'
-ht-degree: 59%
+source-wordcount: '2227'
+ht-degree: 58%
 
 ---
 
@@ -174,7 +174,7 @@ Die Inhaltsstruktur befindet sich auf einer Registerkarte im seitlichen Bedienfe
 
 ![Inhaltsstruktur](do-not-localize/screen_shot_2018-03-22at142042.png)
 
-Wenn Sie den Seitenbereich öffnen, wird er von der linken Seite aus eingeblendet. Wählen Sie ggf. die Registerkarte **Inhaltsstruktur**. Mit dieser Strukturansicht Ihrer Seite oder Vorlage können Sie leicht nachvollziehen, wie die darauf verwendeten Komponenten hierarchisch strukturiert sind. Auf einer komplexen Seite ist es außerdem einfacher, zwischen den Komponenten der Seite zu springen.
+Wenn Sie den Seitenbereich öffnen, wird er von der linken Seite aus eingeblendet. Wählen Sie ggf. die Registerkarte **Inhaltsstruktur**. Beim Öffnen können Sie eine Baumstrukturansicht Ihrer Seite oder Vorlage anzeigen, damit Sie leichter nachvollziehen können, wie ihr Inhalt hierarchisch strukturiert ist. Auf einer komplexen Seite ist es außerdem einfacher, zwischen den Komponenten der Seite zu springen.
 
 ![ateat-11](assets/ateat-11.png)
 

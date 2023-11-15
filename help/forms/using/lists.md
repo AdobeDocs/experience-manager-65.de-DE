@@ -8,7 +8,7 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '6911'
 ht-degree: 97%
@@ -271,7 +271,7 @@ Um die Reihenfolge der Assets innerhalb der Liste zu ändern, tippen Sie auf das
    * **Ausgewählt:** Wenn diese Option aktiviert ist, ist der Inhalt der Benutzeroberfläche „Korrespondenz erstellen“ vorab ausgewählt.
    * **Stil überspringen:** Wenn diese Option aktiviert ist, werden Aufzählungszeichen und Nummerierungen in der Benutzeroberfläche „Korrespondenz erstellen“ übersprungen. (Diese Option steht für Bildmodule nicht zur Verfügung. Außerdem kann von den Optionen „Stil überspringen“, „Zusammengesetzte Nummerierung“ und „Listenstil ignorieren“ immer nur eine auf ein Modul angewendet werden. Eine dieser Optionen kann für ein Modul verwendet werden, wenn Sie für ein Modul die Option „Aufzählungszeichen hinzufügen“ auswählen.)
    * **Einzug:** Sie können den Einzug von allen Modulen/Inhalten ändern, die als Teil der Liste ausgewählt wurden. Einzüge werden in Form von Ebenen angegeben (beginnend bei null), wobei jede Einzugsebene einer Auffüllung von 36 pt entspricht.
-   * **Zusammengesetzte Nummerierung:** Wenn diese Option aktiviert ist, wird die zusammengesetzte Nummerierung als eine Kombination des Stils der äußeren (übergeordneten) Liste und des eigenen Stils verwendet. Die zusammengesetzte Nummerierung in dieser verschachtelten Liste beruht auf der Position, an der sich diese verschachtelte Liste in der Reihenfolge der äußeren Liste befindet.
+   * **Zusammengesetzt:** Wenn diese Option aktiviert ist, wird die zusammengesetzte Nummerierung als Kombination aus dem Stil der äußeren (übergeordneten) Liste und ihrem eigenen Stil angewendet. Die zusammengesetzte Nummerierung in dieser verschachtelten Liste beruht auf der Position, an der sich diese verschachtelte Liste in der Reihenfolge der äußeren Liste befindet.
    * **Listenstil ignorieren:** Wenn die Option „Zusammengesetzte Nummerierung“ nicht aktiviert ist, dann ist die Option „Listenstil ignorieren“ aktiviert. Bei dieser Auswahl wird der eigene Stil der verschachtelten Liste ignoriert, und die Nummerierung wird von der äußeren Liste aus fortgesetzt. Daher werden die Module der verschachtelten Liste als Teil der äußeren Liste selbst behandelt, ungeachtet der Stile, die in der verschachtelten Liste angegeben sind. Wenn die Option „Listenstil ignorieren“ für eine verschachtelte Liste deaktiviert ist, haben die Module, die Teil dieser verschachtelten Liste sind, ihren eigenen Nummerierungsstil.
    * **Nächste beibehalten:** Legt den Seitenumbruch für die in einer Liste enthaltenen Assets fest. Wenn Sie die Eigenschaft „Nächste beibehalten“ eines Elements einer Liste auf **Ein** festlegen, werden dieses Element und das nächste auf derselben Seite angezeigt. Dies bedeutet, dass der Inhalt des ausgewählten Assets und des nächsten Assets nicht über zwei Seiten verteilt ist.
 

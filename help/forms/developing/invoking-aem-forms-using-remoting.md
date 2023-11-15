@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '4593'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -311,7 +311,7 @@ Sie aktivieren die benutzerdefinierte Authentifizierung in der Administration-Co
 >
 In der vorherigen Version von AEM Forms haben Sie Anmeldeinformationen an ein Ziel gesendet, indem Sie die `RemoteObject.setCredentials`-Methode aufgerufen haben. Die `setCredentials`-Methode hat die Anmeldeinformationen erst beim ersten Versuch der Komponente, eine Verbindung zum Server herzustellen, an den Server übergeben. Wenn die Komponente ein fehlerhaftes Ereignis ausgegeben hat, konnten Sie daher nicht sicher sein, ob der Fehler aufgrund eines Authentifizierungsfehlers oder aus einem anderen Grund aufgetreten ist. Die `ChannelSet.login`-Methode stellt eine Verbindung zum Server her, wenn Sie sie aufrufen, damit Sie Authentifizierungsprobleme sofort verarbeiten können. Sie können auch weiterhin die `setCredentials`-Methode verwenden, allerdings wird die Verwendung der `ChannelSet.login`-Methode empfohlen.
 
-Da mehrere Ziele dieselben Kanäle und das dazugehörige „ChannelSet“-Objekt verwenden können, wird der Benutzer bei der Anmeldung bei einem Ziel auch bei allen anderen Zielen, die denselben Kanal oder dieselben Kanäle verwenden, angemeldet. Wenn zwei Komponenten unterschiedliche Anmeldeinformationen auf dasselbe „ChannelSet“-Objekt anwenden, werden die zuletzt angewendeten Anmeldeinformationen verwendet. Wenn mehrere Komponenten dasselbe authentifizierte „ChannelSet“-Objekt verwenden, werden bei Aufruf der `logout`-Methode alle Komponenten bei den Zielen abgemeldet.
+Da mehrere Ziele dieselben Kanäle und das zugehörige ChannelSet-Objekt verwenden können, wird bei der Anmeldung bei einem Ziel der Benutzer zu jedem anderen Ziel protokolliert, das denselben Kanal oder dieselben Kanäle verwendet. Wenn zwei Komponenten unterschiedliche Anmeldeinformationen auf dasselbe „ChannelSet“-Objekt anwenden, werden die zuletzt angewendeten Anmeldeinformationen verwendet. Wenn mehrere Komponenten dasselbe authentifizierte „ChannelSet“-Objekt verwenden, werden bei Aufruf der `logout`-Methode alle Komponenten bei den Zielen abgemeldet.
 
 Im folgenden Beispiel werden die Methoden `ChannelSet.login` und `ChannelSet.logout` mit einem „RemoteObject“-Steuerelement verwendet. Diese Anwendung führt die folgenden Aktionen durch:
 

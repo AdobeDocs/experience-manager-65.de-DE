@@ -2,10 +2,10 @@
 title: Konfigurationen und der Konfigurations-Browser
 description: Machen Sie sich mit AEM-Konfigurationen und der Verwaltung der Einstellungen für den Arbeitsbereich in AEM vertraut.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 58%
+source-wordcount: '1483'
+ht-degree: 62%
 
 ---
 
@@ -29,7 +29,7 @@ Unabhängig von Ihrem Blickwinkel dienen Konfigurationen in AEM zwei Hauptzwecke
 
 ## Konfigurationen als Administrator {#configurations-administrator}
 
-Der AEM Administrator und die Autoren können Konfigurationen als Arbeitsbereiche betrachten. Diese Arbeitsbereiche können verwendet werden, um Gruppen von Einstellungen und zugehörigen Inhalten für organisatorische Zwecke zu sammeln, indem Zugriffsberechtigungen für diese Funktionen implementiert werden.
+AEM-Admins und Autorinnen bzw. Autoren können Konfigurationen als Arbeitsbereiche betrachten. Diese Arbeitsbereiche können verwendet werden, um Gruppen von Einstellungen und zugehörigen Inhalten für organisatorische Zwecke zu sammeln, indem Zugriffsberechtigungen für diese Funktionen implementiert werden.
 
 Konfigurationen können für viele verschiedene Funktionen in AEM erstellt werden.
 
@@ -40,7 +40,7 @@ Konfigurationen können für viele verschiedene Funktionen in AEM erstellt werde
 
 ### Beispiel {#administrator-example}
 
-Beispielsweise kann ein Administrator zwei Konfigurationen für bearbeitbare Vorlagen erstellen.
+Admins können beispielsweise zwei Konfigurationen für bearbeitbare Vorlagen erstellen.
 
 * WKND-General
 * WKND-Magazin
@@ -75,8 +75,8 @@ Es ist einfach, eine Konfiguration in AEM mithilfe des Konfigurationsbrowsers zu
    ![Erstellen einer Konfiguration](assets/configuration-create.png)
 
    * Der **Titel** sollte beschreibend sein.
-   * Die **Name** wird zum Knotennamen im Repository.
-      * Sie wird automatisch anhand des Titels generiert und entsprechend angepasst [AEM Benennungskonventionen.](/help/sites-developing/naming-conventions.md)
+   * Der **Name** wird zum Knotennamen im Repository.
+      * Er wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Benennungskonventionen](/help/sites-developing/naming-conventions.md) angepasst.
       * Er kann bei Bedarf angepasst werden.
 1. Überprüfen Sie den Konfigurationstyp, den Sie zulassen möchten.
    * [Cloud-Konfigurationen](/help/sites-administering/configurations.md)
@@ -91,7 +91,7 @@ Es ist einfach, eine Konfiguration in AEM mithilfe des Konfigurationsbrowsers zu
 
 #### Bearbeiten von Konfigurationen und deren Zugriffsrechten {#access-rights}
 
-Wenn Sie sich Konfigurationen als Arbeitsbereiche vorstellen, können Zugriffsberechtigungen für diese Konfigurationen festgelegt werden, um zu erzwingen, wer auf diese Arbeitsbereiche zugreifen darf und wer nicht.
+Wenn Sie Konfigurationen als Workspace betrachten, können Zugriffsrechte für diese Konfigurationen festgelegt werden, um zu erzwingen, wer auf diesen Workspace zugreifen darf und wer nicht.
 
 1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Tools** > **Allgemein** > **Konfigurationsbrowser** aus.
 1. Wählen Sie die zu ändernde Konfiguration aus und tippen oder klicken Sie auf **Eigenschaften** in der Symbolleiste.
@@ -157,7 +157,7 @@ Sehen wir uns nun den entsprechenden JCR-Inhalt an:
 
 In diesem Beispiel können Sie von einem WKND-spezifischen DAM-Ordner hier und einer entsprechenden Konfiguration ausgehen. Beginnt bei diesem Ordner `/content/dam/wknd`, können Sie sehen, dass es eine Zeichenfolgeneigenschaft mit dem Namen `cq:conf` , der auf die Konfiguration verweist, die für die Unterstruktur gelten soll. Die Eigenschaft wird auf die `jcr:content` eines Asset-Ordners oder einer Seite. Diese `conf`-Links sind explizit, sodass es einfach ist, ihnen zu folgen, indem Sie sich den Inhalt in CRXDE ansehen.
 
-Springen hinein `/conf`können Sie der Referenz folgen und sehen, dass eine `/conf/wknd` Knoten. Dies ist eine Konfiguration. Die Suche ist für den Anwendungscode transparent. Der Beispiel-Code hat nie eine dedizierte Referenz darauf, sie ist hinter dem `Conf`-Objekt versteckt. Welche Konfiguration angewendet wird, wird über den JCR-Inhalt gesteuert.
+Springen hinein `/conf`können Sie der Referenz folgen und sehen, dass eine `/conf/wknd` Knoten. Dies ist eine Konfiguration. Die Suche ist für den Anwendungscode transparent. Der Beispielcode hat nie einen dedizierten Verweis darauf. Er wird hinter dem `Conf` -Objekt. Welche Konfiguration angewendet wird, wird über den JCR-Inhalt gesteuert.
 
 Sie können sehen, dass die Konfiguration einen fest benannten `settings` -Knoten, der die tatsächlichen Elemente enthält, einschließlich der `dam/imageserver` die Sie in diesem Fall benötigen. Ein solches Element kann als &quot;Einstellungsdokument&quot;betrachtet werden und wird durch ein `cq:Page` einschließlich `jcr:content` den tatsächlichen Inhalt enthalten.
 

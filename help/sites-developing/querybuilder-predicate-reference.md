@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2347'
-ht-degree: 32%
+source-wordcount: '2348'
+ht-degree: 31%
 
 ---
 
@@ -444,7 +444,7 @@ Unterstützt die Facettenextraktion auf die gleiche Weise wie das Prädikat „d
 
 Stammprädikatgruppe. Unterstützt alle Funktionen einer Gruppe und ermöglicht das Festlegen globaler Abfrageparameter.
 
-Der Name „root“ wird in Abfragen nie verwendet, er ist impliziert.
+Der Name &quot;root&quot;wird in einer Abfrage nie verwendet, er ist implizit.
 
 #### Eigenschaften {#properties-18}
 

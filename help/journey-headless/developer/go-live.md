@@ -2,10 +2,10 @@
 title: Live-Schalten Ihres Headless-Programms
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie eine Headless-Anwendung live bereitstellen.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1873'
-ht-degree: 98%
+source-wordcount: '1874'
+ht-degree: 97%
 
 ---
 
@@ -100,7 +100,7 @@ Weitere Informationen zum Einrichten einer lokalen Entwicklungsumgebung und alle
 
 <!-- Start of CDN Review -->
 
-Jetzt sollten Sie Ihr AEM Headless-Programm für den Launch vorbereiten, indem Sie die nachfolgend beschriebenen Best Practices umsetzen.
+Jetzt ist es an der Zeit, Ihre AEM Headless App für den Start bereitzustellen, indem Sie die unten beschriebenen Best Practices befolgen.
 
 ### Sichern Ihres Headless-Programms vor dem Launch {#secure-and-scale-before-launch}
 

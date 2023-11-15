@@ -5,10 +5,10 @@ contentOwner: AG
 role: Architect, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '992'
-ht-degree: 53%
+ht-degree: 51%
 
 ---
 
@@ -71,9 +71,9 @@ Das Entwerfen der Topologie der [!DNL Experience Manager]-Umgebung erfordert det
 
 Das Beispielszenario umfasst eine Veröffentlichungsfarm mit fünf Servern und einem binären S3-Speicher. Dynamic Media ist ebenfalls konfiguriert.
 
-Der Dispatcher nutzt seine 100 MBit/s schnelle Verbindung gemeinsam mit zwei Entitäten, der Außenwelt und der [!DNL Experience Manager]-Bereitstellung. Bei gleichzeitigen Upload- und Download-Vorgängen sollte diese Zahl durch zwei dividiert werden. Der angehängte externe Speicher verwendet eine separate Verbindung.
+Der Dispatcher teilt seine 100 MBit/s-Verbindung mit zwei Entitäten, der Außenwelt und der [!DNL Experience Manager] Implementierung. Bei gleichzeitigen Upload- und Download-Vorgängen sollte diese Zahl durch zwei dividiert werden. Der angehängte externe Speicher verwendet eine separate Verbindung.
 
-Die [!DNL Experience Manager]-Bereitstellung nutzt ihre 1 GBit/s schnelle Verbindung mit mehreren Diensten gemeinsam. Aus Sicht der Netzwerktopologie entspricht das der Nutzung eines einzelnen Kanals mit verschiedenen Diensten.
+Die [!DNL Experience Manager] -Implementierung teilt seine 1 Gbit/s-Verbindung mit mehreren Diensten. Aus Sicht der Netzwerktopologie entspricht das der Nutzung eines einzelnen Kanals mit verschiedenen Diensten.
 
 Was das Netzwerk zwischen Client-Gerät und [!DNL Experience Manager]-Bereitstellung angeht, so scheint der kleinste Engpass die Beschränkung auf 10 MBit/s durch die Unternehmens-Firewall zu sein. Sie können diese Werte für die in der [Anleitung zur Dimensionierung in Assets](assets-sizing-guide.md) beschriebenen Größenberechnung verwenden, um das Benutzererlebnis zu bestimmen.
 

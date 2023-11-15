@@ -8,9 +8,9 @@ topic-tags: content
 content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '3568'
+source-wordcount: '3574'
 ht-degree: 96%
 
 ---
@@ -358,11 +358,11 @@ Package Manager kann die folgenden Validierungen durchführen:
 
 ##### Validieren von OSGi-Paketimporten {#osgi-package-imports}
 
-**Prüfumfang**
+**Was wird überprüft?**
 
 Diese Validierung prüft das Paket auf JAR-Dateien (OSGi-Bundles), extrahiert deren `manifest.xml`-Datei (die die versionierten Abhängigkeiten enthält, die für das OSGi-Bundle erforderlich sind) und stellt sicher, dass die AEM-Instanz die Abhängigkeiten mit den richtigen Versionen exportiert.
 
-**Reporting**
+**Wie wird der Bericht angezeigt?**
 
 Eventuelle versionierte Abhängigkeiten, die von der AEM-Instanz nicht erfüllt werden können, werden im Aktivitätsprotokoll von Package Manager aufgeführt.
 
@@ -376,13 +376,13 @@ Um Fehler aufgrund nicht erfüllter OSGi-Bundles zu beheben, muss die Abhängigk
 
 ##### Bestätigen von Überlagerungen {#overlays}
 
-**Prüfumfang**
+**Was wird überprüft?**
 
 Diese Validierung ermittelt, ob das zu installierende Paket eine Datei enthält, die bereits in der Ziel-AEM-Instanz überlagert ist.
 
 Beispiel: Bei einer bestehenden Überlagerung unter `/apps/sling/servlet/errorhandler/404.jsp` ändert ein Paket, das `/libs/sling/servlet/errorhandler/404.jsp` enthält, die vorhandene Datei unter `/libs/sling/servlet/errorhandler/404.jsp`.
 
-**Reporting**
+**Berichterstellung**
 
 Solche Überlagerungen werden im Aktivitätsprotokoll von Package Manager beschrieben.
 
@@ -400,11 +400,11 @@ Zur Behebung dieses Problems muss der Verantwortliche für die Überlagerungsdat
 
 ##### Bestätigen von ACLs {#acls}
 
-**Prüfumfang**
+**Was wird überprüft?**
 
 Diese Validierung prüft, welche Berechtigungen hinzugefügt werden, wie sie verarbeitet werden (Zusammenführen/Ersetzen) und ob die aktuellen Berechtigungen betroffen sind.
 
-**Reporting**
+**Wie wird der Bericht angezeigt?**
 
 Die Berechtigungen werden im Aktivitätsprotokoll von Package Manager beschrieben.
 

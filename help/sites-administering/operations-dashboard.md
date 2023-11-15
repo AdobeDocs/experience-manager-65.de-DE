@@ -1,21 +1,17 @@
 ---
 title: Vorgangs-Dashboard
-seo-title: Operations Dashboard
 description: Erfahren Sie, wie Sie das Vorgangs-Dashboard in Adobe Experience Manager verwenden.
-seo-description: Learn how to use the Operations Dashboard.
-uuid: ef24813f-a7a8-4b26-a496-6f2a0d9efef6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '6057'
-ht-degree: 99%
+source-wordcount: '6061'
+ht-degree: 98%
 
 ---
 
@@ -230,9 +226,9 @@ Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle K
      <li>gibt den Status „Kritisch“ zurück, wenn mindestens eine Indizierungsspur fehlschlägt</li>
      <li>prüft <code>lastIndexedTime</code> für alle Indizierungsspuren und:
       <ul>
-       <li>gibt den Status „Kritisch“ zurück, wenn die Zeit mehr als 2 Stunden zurückliegt </li>
-       <li>gibt den Status „Warnung“ zurück, wenn sie zwischen 2 Stunden und 45 Minuten zurückliegt </li>
-       <li>gibt den Status „OK“ zurück, wenn sie weniger als 45 Minuten zurückliegt </li>
+       <li>gibt den Status "Kritisch"zurück, wenn er vor mehr als 2 Stunden liegt </li>
+       <li>gibt den Warnungsstatus zurück, wenn er zwischen 2 Stunden und 45 Minuten zurückliegt </li>
+       <li>gibt den Status "OK"zurück, wenn er vor weniger als 45 Minuten liegt </li>
       </ul> </li>
      <li>Wenn keine dieser Bedingungen erfüllt ist, wird der Status „OK“ zurückgegeben.</li>
     </ul> <p>Die Statusschwellen „Kritisch“ und „Warnung“ sind konfigurierbar. Das MBean für diese Konsistenzprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Hinweis: </strong>Diese Konsistenzprüfung ist in AEM 6.4 und als Backport in AEM 6.3.0.1 verfügbar.</p> </td>
