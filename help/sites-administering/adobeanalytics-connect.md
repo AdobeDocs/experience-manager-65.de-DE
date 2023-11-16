@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: e3a3511a5854432b9c01748f7f5ffaf9182180f8
+source-git-commit: f525c8d159b8312184fc015b1151e93c9d46b3eb
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 93%
+source-wordcount: '1497'
+ht-degree: 97%
 
 ---
 
@@ -193,20 +193,38 @@ Wenn eine Seite mit einem Adobe Analytics-Framework verknüpft ist, kann die Anz
 
 Siehe [Anzeigen von Seitenanalysedaten](/help/sites-authoring/page-analytics-using.md) für weitere Informationen.
 
+<!-- SP19
+### Configuring the Import Interval {#configuring-the-import-interval}
+
+Configure the appropriate instance of the **Adobe AEM Analytics Report Sling Importer** service:
+
+* **Fetch attempts**:
+  Number of attempts to fetch a queued report. 
+  The default is `6`.
+
+* **Fetch delay**:
+  The number of milliseconds between attempts to fetch a queued report. 
+  The default is `10000`. As this is in milliseconds it corresponds to 10 seconds.
+
+* **Fetch frequency**:
+  A `cron` expression to determine the frequency for fetching the Analytics Report. 
+  The default is `0 0 0/12 * * ?`; this corresponds to 12 fetches every hour.
+
+To configure this OSGi service, you can either use the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or an [osgiConfig node in the repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) (the service PID is `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
+-->
+
 ### Konfigurieren des Importintervalls {#configuring-the-import-interval}
 
-Konfigurieren Sie die entsprechende Instanz der **Adobe AEM Analytics Report Sling Importer** -Dienst:
+Konfigurieren Sie die entsprechende Instanz des Dienstes **Adobe AEM Managed Polling Configuration**:
 
-* **Abrufversuche**: Anzahl der Versuche, einen Bericht in der Warteschlange abzurufen.
-Der Standardwert lautet `6`.
+* **Abrufintervall**:
+Das Intervall in Sekunden, mit dem der Service die Seitenansichtsdaten von Adobe Analytics abruft.
+Das Standardintervall beträgt 43.200.000 ms (12 Stunden).
 
-* **Abrufverzögerung**: Die Anzahl der Millisekunden zwischen den Versuchen, einen in die Warteschlange gestellten Bericht abzurufen.
-Der Standardwert lautet `10000`. Da dies in Millisekunden angegeben wird, entspricht es 10 Sekunden.
+* **Aktivieren**:
+Aktivieren oder Deaktivieren des Service. Standardmäßig ist der Service aktiviert.
 
-* **Abrufhäufigkeit**: A `cron` Ausdruck verwenden, um die Häufigkeit für das Abrufen des Analytics-Berichts zu bestimmen.
-Der Standardwert ist `0 0 0/12 * * ?`; dies entspricht 12 Abrufen pro Stunde.
-
-Zum Konfigurieren dieses OSGi-Service können Sie entweder die [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) oder einen [osgiConfig-Knoten im Repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) verwenden (die Service-PID lautet `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
+Zum Konfigurieren dieses OSGi-Service können Sie entweder die [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) oder einen [osgiConfig-Knoten im Repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) verwenden (die Service-PID lautet `com.day.cq.polling.importer.impl.ManagedPollConfigImpl`).
 
 ## Bearbeiten von Konfigurationen und/oder Frameworks von Adobe Analytics {#editing-adobe-analytics-configurations-and-or-frameworks}
 
