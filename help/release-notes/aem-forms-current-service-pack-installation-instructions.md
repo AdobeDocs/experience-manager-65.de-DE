@@ -216,7 +216,7 @@ Es gibt zwei verschiedene Methoden, mit der Sie das Service Pack von [!DNL Exper
 
   >[!NOTE]
   >
-  Das Service Pack von Experience Manager unterstützt keine Bootstrap-installation. <!-- UPDATE FOR EACH NEW RELEASE -->
+  >Das Service Pack von Experience Manager unterstützt keine Bootstrap-installation. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **Validierung der Installation**
 
