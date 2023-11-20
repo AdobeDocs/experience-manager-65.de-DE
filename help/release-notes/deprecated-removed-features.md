@@ -3,7 +3,7 @@ title: Veraltete und entfernte Funktionen in Adobe Experience Manager Version 6.
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1712'
 ht-degree: 100%
 

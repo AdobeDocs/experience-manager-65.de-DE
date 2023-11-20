@@ -7,10 +7,10 @@ breadcrumb-title: Versionshinweise
 user-guide-description: In den Versionshinweisen finden Sie Informationen zu den neuesten Funktionen in AEM 6.5.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: f618dbaafbbcd1511ea2a678db398b4bcbfda366
-workflow-type: ht
-source-wordcount: '71'
-ht-degree: 100%
+source-git-commit: f6069758853181f96376a77da8d46cc5228b9605
+workflow-type: tm+mt
+source-wordcount: '76'
+ht-degree: 93%
 
 ---
 
@@ -41,5 +41,6 @@ ht-degree: 100%
    + [6.5.0](previous/ga.md)
 + [AEM Forms Service Pack-Installationsanweisungen](aem-forms-current-service-pack-installation-instructions.md)
 + [AEM Forms JEE-Patch-Installationsprogramm](jee-patch-installer-65.md)
++ [Hotfix für AEM Forms Service Pack](/help/release-notes/aem-forms-hotfix.md)
 + [Veraltete und entfernte Funktionen](deprecated-removed-features.md)
 + [Status der Funktionen der Touch-optimierten Benutzeroberfläche](touch-ui-features-status.md)

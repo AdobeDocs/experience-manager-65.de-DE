@@ -2,9 +2,9 @@
 title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
-source-git-commit: 31131af52ecb4f9c4caaf8e75e0a9213874b3a1e
+source-git-commit: c78d5f1d94ffb92a1e034b0ccb6131ac811d708f
 workflow-type: tm+mt
-source-wordcount: '3559'
+source-wordcount: '3530'
 ht-degree: 98%
 
 ---
@@ -463,17 +463,14 @@ Um das Problem zu beheben, suchen Sie die Datei `<AEM_Forms_Installation_dir>\jb
 * Wenn ein adaptives Formular veröffentlicht wird, werden alle Abhängigkeiten, einschließlich Richtlinien, erneut veröffentlicht, selbst wenn keine Änderungen an ihnen vorgenommen wurden. (FORMS-10454)
 * Wenn Benutzende ein Feld erstmals in einem adaptiven Formular konfigurieren möchten, wird im Eigenschaften-Browser die Option zum Speichern einer Konfiguration nicht angezeigt. Das Problem lässt sich beheben, indem Sie im selben Editor ein anderes Feld des adaptiven Formulars konfigurieren.
 * Wenn eine Umleitungs-URL im Guide-Container eines adaptiven Formulars festgelegt ist, funktioniert die Inline-Signatur nicht mehr. (FORMS-10493)
+Um das Problem zu beheben, laden Sie die [Hotfix für 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 * Die Veröffentlichung aller Datensatzdokumentvorlagen (DoR) schlägt fehl. Es werden nur englischsprachige, gebietsschemabasierte DoR-Vorlagen und die zugehörigen Forms-basierten DoR-Vorlagen veröffentlicht. (FORMS-10535)
+Um das Problem zu beheben, laden Sie die [Hotfix für 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+
 
 #### Interaktive Kommunikationen
 
-* Nach der Aktualisierung auf AEM Service Pack 18 ist es nicht möglich, die interaktive Kommunikation mit großen Inline-Bildern im Bearbeitungsmodus zu öffnen. (FORMS-10578)
-Um das Problem zu beheben, führen Sie die folgenden Schritte aus:
-
-   1. Laden Sie [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) vom SD-Link herunter.
-   1. Extrahieren Sie die Hotfix-Archivdatei, damit Sie ein Experience Manager-Paket (.zip) und Bundle-Dateien (.jar) abrufen können.
-   1. Laden Sie das Paket (.zip) über den Package Manager hoch und installieren Sie es.
-   1. Öffnen Sie die Bundles des Konfigurations-Managers `https://server:host/system/console/bundles`, laden Sie sie hoch und installieren Sie das Bundle (.jar).
+* Nach der Aktualisierung auf AEM Service Pack 18 ist es nicht möglich, die interaktive Kommunikation mit großen Inline-Bildern im Bearbeitungsmodus zu öffnen. (FORMS-10578) Laden Sie die [Hotfix für 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 
