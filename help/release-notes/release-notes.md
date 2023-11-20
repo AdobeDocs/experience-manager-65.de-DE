@@ -153,7 +153,7 @@ in
 * Bildschirmlesehilfen geben die angezeigte Popup-Meldung nach der Übermittlung der Daten nicht wieder. (ASSETS-25755)
 * Bildschirmlesehilfen erkennen keine Orientierungspunkte auf der Seite (Dynamic Media; Erstellen eines Videocodierungsprofils), wenn mit dem Landmarken-/Regions-Tastaturbefehl `D/R` navigiert wird. (ASSETS-25752)
 * Bildschirmlesehilfen erkennen mehrere Orientierungspunkte auf der Seite nicht (Dynamic Media; Erstellen interaktiver Videos), wenn mit dem Landmarken-/Regions-Tastaturbefehl `D/R` navigiert wird. (ASSETS-25750)
-* Bildschirmlesehilfen (NVDA/JAWS/Narrator) erkennen die Landmarken auf der Seite **Asset bearbeiten** nicht, wenn die Navigation über die Tastaturbefehle `D/R` erfolgt. (ASSETS-25744)
+* Bildschirmlesehilfen (NVDA/JAWS/Narrator) erkennen die Orientierungspunkte auf der Seite **Asset bearbeiten** nicht, wenn die Navigation über die Tastaturbefehle `D/R` erfolgt. (ASSETS-25744)
 * Die Benutzerin bzw. der Benutzer erhält eine leere/falsche asynchrone Auftragsmeldung, aber das verbundene Asset wurde erfolgreich veröffentlicht. (ASSETS-29342)
 
 ### [!DNL Forms]{#forms-6519}
