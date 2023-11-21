@@ -6,10 +6,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
 source-wordcount: '2075'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -154,7 +154,7 @@ Die `Page`-Komponente erweitert die `Container`-Komponente. Ein Container ist ei
 
 ### Responsives Raster {#responsive-grid}
 
-Die Komponente „Responsives Raster“ ist ein Container. Sie enthält eine bestimmte Variante des Modellanbieters, die die entsprechenden Spalten darstellt. Das responsive Raster und seine Spalten sind dafür verantwortlich, das äußere HTML-Element der Projektkomponente mit den spezifischen Klassennamen zu dekorieren, die im Modell enthalten sind.
+Die Komponente „Responsives Raster“ ist ein Container. Sie enthält eine bestimmte Variante des Modellanbieters, die die zugehörigen Spalten darstellt. Das responsive Raster und seine Spalten sind dafür verantwortlich, das äußere HTML-Element der Projektkomponente mit den spezifischen Klassennamen zu dekorieren, die im Modell enthalten sind.
 
 Die Komponente „Responsives Raster“ sollte vorab ihrem AEM-Gegenstück zugeordnet werden, da die Komponente komplex ist und selten angepasst wird.
 

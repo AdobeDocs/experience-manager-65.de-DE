@@ -1,16 +1,12 @@
 ---
 title: Adaptive Formularausdrücke
-seo-title: Adaptive Form Expressions
 description: Verwenden Sie adaptive Formularausdrücke, um eine automatische Validierung und Berechnung hinzuzufügen und die Sichtbarkeit eines Abschnitts zu aktivieren oder zu deaktivieren.
-seo-description: Use adaptive forms expressions to add automatic validation, calculation, and turn visibility of a section on or off.
-uuid: c274dce5-8b87-472f-bff5-53b246fa6584
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 feature: Adaptive Forms
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
 source-wordcount: '2802'
 ht-degree: 88%
@@ -197,7 +193,7 @@ Die Methoden zum Hinzufügen von Überprüfungen zu einem Feld sind:
 
 ### Erforderlich {#required}
 
-Um eine Komponente als obligatorisch festzulegen, können Sie im Dialogfeld **Bearbeiten** der Komponente die Option **Titel und Text > Erforderlich** auswählen. Sie können auch die entsprechenden **erforderliche Nachricht** (optional). .
+Um eine Komponente als obligatorisch festzulegen, können Sie im Dialogfeld **Bearbeiten** der Komponente die Option **Titel und Text > Erforderlich** auswählen. Sie können auch die entsprechenden **erforderliche Nachricht** (optional).
 
 ### Überprüfungsmuster {#validation-patterns}
 

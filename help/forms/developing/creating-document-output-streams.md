@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
 source-wordcount: '18956'
 ht-degree: 79%
@@ -1806,7 +1806,7 @@ Erstellen Sie mehrere PDF-Dateien mithilfe der Ausgabe-API (Java):
 
 1. Einschließen von Projektdateien&quot;
 
-   Schließen Sie Client-JAR-Dateien wie adobe-output-client.jar in den Klassenpfad Ihres Java-Projekts ein. .
+   Schließen Sie Client-JAR-Dateien wie adobe-output-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen eines Client-Objekts für die Ausgabe
 

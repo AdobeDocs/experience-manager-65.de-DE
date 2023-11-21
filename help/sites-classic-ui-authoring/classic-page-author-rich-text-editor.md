@@ -1,16 +1,14 @@
 ---
 title: Rich-Text-Editor
 description: Der Rich-Text-Editor ist ein grundlegender Baustein für die Eingabe von Textinhalten in AEM.
-uuid: 4bcce45a-e14f-41b7-8c6f-89d1e1bb595c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
 source-wordcount: '1835'
-ht-degree: 89%
+ht-degree: 88%
 
 ---
 
@@ -157,7 +155,7 @@ Der Stil der Liste kann einfach dadurch geändert werden, dass Sie den Cursor in
 
 ![Links-Symbolleiste](do-not-localize/cq55_rte_links.png)
 
-Ein Link zu einer URL (entweder innerhalb der Website oder zu einer externen Adresse) wird dadurch erstellt, dass Sie den gewünschten Text markieren und dann auf das Hyperlink-Symbol klicken:
+Ein Link zu einer URL (entweder innerhalb Ihrer Website oder an einer externen Position) wird durch Hervorhebung des erforderlichen Texts und anschließendes Klicken auf das Hyperlink-Symbol generiert:
 
 ![Hyperlink-Symbol](do-not-localize/chlimage_1-9.png)
 
