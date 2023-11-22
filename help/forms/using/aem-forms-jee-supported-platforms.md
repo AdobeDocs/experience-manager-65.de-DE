@@ -7,10 +7,10 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: b886336b5a66f16eb7b076aefc2ae326dedb2f52
+source-git-commit: 7ac81860e127f47aecfd948ddda34241627f457c
 workflow-type: tm+mt
-source-wordcount: '3696'
-ht-degree: 48%
+source-wordcount: '3974'
+ht-degree: 45%
 
 ---
 
@@ -36,6 +36,22 @@ In diesem Dokument werden die unterstützten Client- und Serverplattformen für 
 >
 >- Eine vollständige Liste der Ausnahmen für unterstützte Serverplattformen finden Sie unter [Ausnahmen für unterstützte Serverplattformen](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
 >- AEM Forms on JEE unterstützt nur englische, französische, deutsche und japanische Versionen der unterstützten Betriebssysteme und Anwendungen.
+
+### Upgrade- und Support-Richtlinie
+
+#### Vollständiges Installationsprogramm
+
+- **Upgrade-Unterstützung für vollständige Installationsprogramme**: Ein vollständiges Installationsprogramm wird mit jeder 6. AEM Service Pack-Version veröffentlicht. Beispielsweise wurde ein vollständiges Installationsprogramm mit den Versionen 6.5.12.0 und 6.5.18.0 SP veröffentlicht. AEM Forms ermöglicht direkte Upgrades ausschließlich von den letzten beiden Vollinstallationen aus. Beispielsweise ermöglicht AEM Forms direkte Aktualisierungen auf Version 6.5.18.0 nur von den letzten beiden vollständigen Installationsprogrammen, nämlich 6.5.12.0 und 6.5.6.0. Wenn Sie ein Upgrade von einem früheren Upgrade benötigen, können Sie ein Upgrade mit mehreren Hosts verwenden, um zunächst zu einer unterstützten Vollversion des Installationsprogramms zu wechseln und dann zur neuesten Version zu wechseln.
+
+- **Einstellung und Entfernung**: Die Plattformunterstützung wird mit jeder vollständigen Version des Installationsprogramms aktualisiert. Jede Software, die während einer vollständigen Version des Installationsprogramms in der Plattformmatrix als veraltet gekennzeichnet wurde, kann in einer nachfolgenden vollständigen Version des Installationsprogramms aus der unterstützten Plattformmatrix entfernt werden, um das Ende der Unterstützung für die Software anzugeben.
+
+#### Service Packs
+
+- **Service Pack-Abdeckung**: Adobe bietet technischen Support für AEM Forms-Umgebungen mit den neuesten sechs Service Packs. Wenn Ihre aktuelle Version vor den letzten sechs Service Packs liegt, empfiehlt Adobe dringend ein Upgrade auf die neueste Version, um optimale Leistung, Sicherheit und kontinuierlichen Support zu erzielen.
+
+- **Richtlinien für Patch-Installationsprogramme**: Während die Patch-Installationsprogramme zur Aktualisierung verwendet werden, ist es wichtig zu überprüfen, ob die zugrunde liegende Vollinstallationsversion nicht älter als zwei Versionen ist. Stellen Sie beispielsweise während der Installation des Service Packs 6.5.19.0 sicher, dass die zugrunde liegende Vollinstallationsversion entweder 6.5.18.0 oder 6.5.12.0 ist.
+
+- **Patch Upgrade-Support**: Sie können weiterhin auf das neueste Service Pack aktualisieren, bis Sie auch auf die neuesten unterstützten Plattformen aktualisieren. Beispielsweise ist ein Upgrade von Service Pack 6.5.12.0 auf 6.5.19.0 möglich, vorausgesetzt, Sie wechseln zu einer Plattformkombination, die für 6.5.19.0 unterstützt wird.
 
 ### Empfohlene Konfigurationen {#recommendedconfigurations}
 
