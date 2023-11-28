@@ -8,9 +8,9 @@ user-guide-description: In den Versionshinweisen finden Sie Informationen zu den
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: f6069758853181f96376a77da8d46cc5228b9605
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '76'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 

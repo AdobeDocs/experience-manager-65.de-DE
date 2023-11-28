@@ -4,9 +4,9 @@ description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsan
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
 source-git-commit: 92481a37d3e2b84277d878547aaf174c7127f499
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3530'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -464,14 +464,15 @@ Um das Problem zu beheben, suchen Sie die Datei `<AEM_Forms_Installation_dir>\jb
 * Wenn ein adaptives Formular veröffentlicht wird, werden alle Abhängigkeiten, einschließlich Richtlinien, erneut veröffentlicht, selbst wenn keine Änderungen an ihnen vorgenommen wurden. (FORMS-10454)
 * Wenn Benutzende ein Feld erstmals in einem adaptiven Formular konfigurieren möchten, wird im Eigenschaften-Browser die Option zum Speichern einer Konfiguration nicht angezeigt. Das Problem lässt sich beheben, indem Sie im selben Editor ein anderes Feld des adaptiven Formulars konfigurieren.
 * Wenn eine Umleitungs-URL im Guide-Container eines adaptiven Formulars festgelegt ist, funktioniert die Inline-Signatur nicht mehr. (FORMS-10493)
-Um das Problem zu beheben, laden Sie die [Hotfix für 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+Um das Problem zu beheben, laden Sie das [Hotfix für 6.5.18.0](/help/release-notes/aem-forms-hotfix.md) herunter.
 * Die Veröffentlichung aller Datensatzdokumentvorlagen (DoR) schlägt fehl. Es werden nur englischsprachige, gebietsschemabasierte DoR-Vorlagen und die zugehörigen Forms-basierten DoR-Vorlagen veröffentlicht. (FORMS-10535)
-Um das Problem zu beheben, laden Sie die [Hotfix für 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+Um das Problem zu beheben, laden Sie das [Hotfix für 6.5.18.0](/help/release-notes/aem-forms-hotfix.md) herunter.
 
 
 #### Interaktive Kommunikationen
 
-* Nach der Aktualisierung auf AEM Service Pack 18 ist es nicht möglich, die interaktive Kommunikation mit großen Inline-Bildern im Bearbeitungsmodus zu öffnen. (FORMS-10578) Laden Sie die [Hotfix für 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+* Nach der Aktualisierung auf AEM Service Pack 18 ist es nicht möglich, die interaktive Kommunikation mit großen Inline-Bildern im Bearbeitungsmodus zu öffnen. (FORMS-10578)
+Um das Problem zu beheben, laden Sie das [Hotfix für 6.5.18.0](/help/release-notes/aem-forms-hotfix.md) herunter.
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 
