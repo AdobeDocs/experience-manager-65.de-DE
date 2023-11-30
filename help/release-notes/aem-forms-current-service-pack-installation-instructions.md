@@ -2,8 +2,8 @@
 title: AEM Forms – Patch-Installationsanweisungen für AEM Forms
 description: Installationsanweisungen für AEM Forms Service Packs für OSGi- und JEE-Umgebungen
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 41ef1b05e4082bb50b93ff6511542ed56a77497c
-workflow-type: ht
+source-git-commit: 74b4346c77a884878fb8409a773ef7651fb6348c
+workflow-type: tm+mt
 source-wordcount: '1771'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Das Service Pack für Adobe Experience Manager (AEM) Forms enthält neue und akt
 >
 > * Adobe veröffentlicht mit jedem sechsten Service Pack ein vollständiges Installationsprogramm. AEM 6.5 Forms Service Pack 18 (6.5.18.0) ist das neueste vollständige Installationsprogramm für JEE. Das vollständige Installationsprogramm unterstützt neue Plattformen, während das reguläre Service Pack-Installationsprogramm neue Funktionen, Fehlerbehebungen und allgemeine Verbesserungen enthält. Wenn Sie eine Neuinstallation durchführen oder die Verwendung der neuesten Software für Ihre AEM 6.5 Forms on JEE-Umgebung planen, empfiehlt Adobe die Verwendung des Vollinstallationsprogramms für AEM 6.5.18.0 Forms on JEE vom 31. August 2023 anstelle des AEM 6.5 Forms-Installationsprogramms vom 08. April 2019 oder des AEM 6.5.12 Forms-Installationsprogramms vom 03. März 2022. . Nachdem Sie das vollständige Installationsprogramm verwendet haben, installieren Sie das neueste Service Pack.
 > 
-> * Die im [AEM 6.5-Schnellstart](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=de) verfügbaren AEM Forms-Funktionen, z. B. adaptive Formulare, dienen nur zu Kennenlern- und Evaluierungszwecken. Für die Verwendung in der Produktion ist es unerlässlich, eine gültige Lizenz für AEM Forms zu erwerben.
+> * Die im [AEM 6.5-Schnellstart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=de) verfügbaren AEM Forms-Funktionen, z. B. adaptive Formulare, dienen nur zu Kennenlern- und Evaluierungszwecken. Für die Verwendung in der Produktion ist es unerlässlich, eine gültige Lizenz für AEM Forms zu erwerben.
 
 
 
@@ -156,7 +156,7 @@ Das Paket wird automatisch installiert.
 
   >[!NOTE]
   >
-  >Das Service Pack von Experience Manager unterstützt keine Bootstrap-Installation. <!-- UPDATE FOR EACH NEW RELEASE -->
+  Das Service Pack von Experience Manager unterstützt keine Bootstrap-Installation. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **Validierung der Installation**
 
@@ -188,7 +188,7 @@ Das Paket wird automatisch installiert.
 
 >[!NOTE]
 >
->Wenn Sie das AEM Forms Service Pack für eine relationale Datenbank installieren, müssen Sie unbedingt ein Backup von DB_schema erstellen.
+Wenn Sie das AEM Forms Service Pack für eine relationale Datenbank installieren, müssen Sie unbedingt ein Backup von DB_schema erstellen.
 
 +++
 
@@ -216,7 +216,7 @@ Es gibt zwei verschiedene Methoden, mit der Sie das Service Pack von [!DNL Exper
 
   >[!NOTE]
   >
-  >Das Service Pack von Experience Manager unterstützt keine Bootstrap-installation. <!-- UPDATE FOR EACH NEW RELEASE -->
+  Das Service Pack von Experience Manager unterstützt keine Bootstrap-installation. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **Validierung der Installation**
 
