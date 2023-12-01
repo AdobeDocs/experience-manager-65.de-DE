@@ -5,10 +5,10 @@ contentOwner: AG
 role: Architect, Admin
 feature: Asset Reports
 exl-id: 14d02015-df00-4566-a098-de76eaf42605
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
-workflow-type: ht
-source-wordcount: '176'
-ht-degree: 100%
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 87%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Die Seitenverfolgung ist Teil des JavaScript-Codes, den Sie in Code von Drittanbieter-Websites einbinden, damit Adobe Analytics Nutzungsdaten rund um [!DNL Adobe Experience Manager Assets] auf diesen Websites erfassen kann.
 
-Um Ereignisse wie Klicks usw. zu erfassen, die Asset-spezifisch sind, beziehen Sie auch den Einbettungs-Code in den Code der Websites von Drittanbietern ein.
+Um Ereignisse wie Klicks zu erfassen, die für Assets spezifisch sind, fügen Sie auch den Einbettungscode in den Code von Drittanbieter-Websites ein.
 
 Der folgende Beispiel-Code veranschaulicht, wie eine Web-Seite aussieht, die sowohl den Seitenverfolgungs-Code als auch Einbettungs-Code enthält:
 

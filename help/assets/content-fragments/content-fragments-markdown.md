@@ -4,10 +4,10 @@ description: Machen Sie sich damit vertraut, wie der Inhaltsfragment-Editor die 
 feature: Content Fragments
 role: User
 exl-id: e4340828-fe16-4edf-94c9-b0b145740e74
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '522'
-ht-degree: 74%
+ht-degree: 90%
 
 ---
 
@@ -31,7 +31,7 @@ Sie können Folgendes definieren:
 
 ## Überschriftsnotation {#heading-notation}
 
-Zum Erstellen einer Kopfzeile durch Platzieren eines Rautezeichens (#) vor der Überschrift. Ein Hash-Tag (#) wird für ein H1-Tag, zwei Hash-Tags (##) für ein H2 usw. verwendet. Sie können bis zu 6 Hash-Tags verwenden. Beispiel:
+Zum Erstellen einer Kopfzeile durch Platzieren eines Rautezeichens (#) vor der Überschrift. Ein Hash-Tag (#) wird für ein H1-Tag, zwei Hash-Tags (##) für ein H2 usw. verwendet. Sie können bis zu 6 Hashtags verwenden. Beispiel:
 
     `## This is an H2`
 
@@ -51,7 +51,7 @@ Optional können Sie eine Ü1 erstellen, indem Sie den Text mit Gleichheitszeich
 
 ## Absätze und Zeilenumbrüche {#paragraphs-and-line-breaks}
 
-Ein Absatz ist einfach eine oder mehrere aufeinander folgende Textzeilen, die durch eine oder mehrere leere Zeilen getrennt sind. Eine leere Zeile ist eine Zeile, die nur Leerzeichen oder Tabulatoren enthält. Normale Absätze sollten nicht mit Leerzeichen oder Tabulatoren eingerückt werden.
+Ein Absatz ist einfach eine oder mehrere aufeinanderfolgende Textzeilen, die durch eine oder mehrere Leerzeilen getrennt sind. Eine Leerzeile ist eine Zeile, die nur Leerzeichen oder Tabulatoren enthält. Normale Absätze sollten nicht mit Leerzeichen oder Tabulatoren eingerückt werden.
 
 Ein Zeilenumbruch wird durch Beenden einer Zeile mit zwei oder mehr Leerzeichen und Zeilenschalter erstellt.
 
@@ -105,7 +105,7 @@ Wobei „id“ der Name eines definierten Bildverweises ist. Bildverweise werden
 
 ## Blockzitate {#block-quotes}
 
-Sie können Text zitieren, indem Sie das Symbol > vor dem Text einfügen. Beispiel:
+Sie können Text zitieren, indem Sie das Symbol „>“ vor dem Text einfügen. Beispiel:
 
     `>This is block quotes`
 
@@ -137,7 +137,7 @@ Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „*“ vor den
 
     `* item in list`
 
-Um eine sortierte Liste zu erstellen, fügen Sie vor jedem Element in der Liste die Zahlen und danach einen Punkt hinzu. Beispiel:
+Um eine sortierte Liste zu erstellen, fügen Sie vor jedem Element in der Liste die Nummern und danach jeweils einen Punkt hinzu. Beispiel:
 
     `1. First item in list.`
 
@@ -165,7 +165,7 @@ Sie können Text wie folgt fett formatieren:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Um einen Codebereich anzugeben, schließen Sie ihn in einfache Anführungszeichen (&#39;) ein. Im Gegensatz zu vorformatierten Codeblöcken zeigt ein Codebereich Code innerhalb eines normalen Absatzes an.
+Um einen Codebereich anzugeben, schließen Sie ihn in einfache Anführungszeichen (&#39;) ein. Im Gegensatz zu vorformatierten Code-Blöcken zeigt ein Code-Bereich Code innerhalb eines normalen Absatzes an.
 
 Beispiel:
 

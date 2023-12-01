@@ -2,9 +2,9 @@
 title: Veröffentlichen von Inhaltsseiten
 description: Erfahren Sie, wie Sie Inhaltsseiten in Adobe Experience Manager 6.5 veröffentlichen.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1660'
 ht-degree: 91%
 
 ---
@@ -60,7 +60,7 @@ Wenn Sie eine Seite bearbeiten, kann sie direkt im Editor veröffentlicht werden
    * Die Seite wird direkt veröffentlicht, wenn keine Verweise veröffentlicht werden müssen.
    * Wenn die Seite Verweise enthält, die veröffentlicht werden müssen, werden diese im **Veröffentlichungsassistenten** aufgeführt und Sie können eine der folgenden Aktionen ausführen:
 
-      * Geben Sie an, welche Assets/Tags/usw. Sie mit der Seite veröffentlichen möchten, und verwenden Sie dann **Veröffentlichen** , um den Prozess abzuschließen.
+      * Geben Sie an, welche Assets oder Tags Sie zusammen mit der Seite veröffentlichen möchten, und verwenden Sie dann **Veröffentlichen** , um den Prozess abzuschließen.
 
       * Mit **Abbrechen** können Sie den Vorgang abbrechen.
 

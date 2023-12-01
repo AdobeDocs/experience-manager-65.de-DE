@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '1779'
+source-wordcount: '1778'
 ht-degree: 52%
 
 ---
@@ -159,7 +159,7 @@ Darüber hinaus wird dringend empfohlen, den Datenspeicher auf einem freigegeben
 
 Einer der zusätzlichen Vorteile der Bereitstellung eines MongoDB-Replikatsatzes mit einem Cluster von zwei oder mehr Autoreninstanzen besteht darin, dass ein automatisiertes Wiederherstellungsszenario mit minimalen Ausfallzeiten vorliegt, wenn Autoreninstanzen, MongoDB-Replikate oder ein kompletter Rechenzentrumsfehler vorliegen. Dennoch sollte die Wahl von MongoMK gegenüber TarMK nicht allein von der Wiederherstellungsanforderung bestimmt werden, da TarMK auch eine minimale Ausfallzeitlösung mit einem kontrollierten Failover-Mechanismus bereitstellen kann.
 
-Wenn die oben genannten Kriterien während der ersten achtzehn Monate der Bereitstellung nicht erfüllt sein sollen, wird empfohlen, zunächst AEM mit TarMK bereitzustellen, dann Ihre Konfiguration zu einem späteren Zeitpunkt, wenn die oben genannten Kriterien zutreffen, neu zu bewerten und schließlich zu bestimmen, ob TarMK weiterhin verwendet oder zu MongoMK migriert werden soll.
+Wenn die oben genannten Kriterien in den ersten 18 Monaten der Bereitstellung nicht erfüllt sein sollen, wird empfohlen, zunächst AEM mit TarMK bereitzustellen, dann Ihre Konfiguration später bei Anwendung der oben genannten Kriterien neu zu bewerten und schließlich zu bestimmen, ob auf TarMK verbleiben oder zu MongoMK migriert werden soll.
 
 ### Ausnahmen für die Auswahl AEM MongoMK gegenüber TarMK auf Veröffentlichungsinstanzen {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-publish-instances}
 

@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '6218'
-ht-degree: 82%
+ht-degree: 81%
 
 ---
 
@@ -101,7 +101,7 @@ In der Konfigurations-XML, die von User Management exportiert wird, enthält der
 
 Bei der Verwendung von Active Directory ist es wichtig zu verstehen, dass ein `objectSID`-Wert kein eindeutiges Attribut über mehrere Domains hinweg ist. Dieser Wert speichert die Sicherheitskennung eines Objekts. In einer Umgebung mit mehreren Domains (z. B. einer Baumstruktur von Domains) kann der `objectSID`-Wert anders sein.
 
-Ein `objectSID`-Wert würde sich ändern, wenn ein Objekt von einer Active Directory-Domain in eine andere Domain verschoben wird. Einige Objekte haben überall in der Domain den gleichen `objectSID`-Wert. Beispielsweise hätten Gruppen wie „BUILTIN\Administrators“, „BUILTIN\Power Users“ usw. denselben `objectSID`-Wert, unabhängig von den Domains. Diese `objectSID`-Werte sind bekannt.
+Ein `objectSID`-Wert würde sich ändern, wenn ein Objekt von einer Active Directory-Domain in eine andere Domain verschoben wird. Einige Objekte haben überall in der Domain den gleichen `objectSID`-Wert. Beispielsweise hätten Gruppen wie &quot;BUILTIN\Administrators&quot;, &quot;BUILTIN\Power Users&quot;usw. dieselben `objectSID` -Wert unabhängig von den Domänen. Diese `objectSID`-Werte sind bekannt.
 
 ## Hinzufügen von Benutzern {#adding-users}
 
@@ -576,7 +576,7 @@ Führen Sie die folgenden Aufgaben aus, um Benutzer, Gruppen und Domains mithilf
 
 1. Rufen Sie die entsprechenden Benutzer- oder Gruppenvorgänge auf.
 
-   Um einen Benutzer oder eine Gruppe zu finden, rufen Sie einen der `DirectoryManagerServiceService` -Methoden des -Objekts zum Auffinden von Prinzipalen (da ein Prinzipal ein Benutzer oder eine Gruppe sein kann). Im folgenden Beispiel wird die Methode `findPrincipalsWithFilter` mithilfe eines Suchfilters (ein `PrincipalSearchFilter`-Objekt) aufgerufen. Bei Verwendung eines `PrincipalSearchFilter`-Objekts werden lokale Prinzipale nur dann zurückgegeben, wenn die Eigenschaft `isLocal` auf `true` gesetzt ist. Dieses Verhalten unterscheidet sich von dem, das mit der Java-API auftreten würde.
+   Um einen Benutzer oder eine Gruppe zu finden, rufen Sie einen der `DirectoryManagerServiceService` -Methoden des -Objekts zum Auffinden von Prinzipalen (da ein Prinzipal ein Benutzer oder eine Gruppe sein kann). Im folgenden Beispiel wird die Methode `findPrincipalsWithFilter` mithilfe eines Suchfilters (ein `PrincipalSearchFilter`-Objekt) aufgerufen. Bei Verwendung eines `PrincipalSearchFilter`-Objekts werden lokale Prinzipale nur dann zurückgegeben, wenn die Eigenschaft `isLocal` auf `true` gesetzt ist. Dieses Verhalten unterscheidet sich von dem, was mit der Java-API auftreten würde.
 
    >[!NOTE]
    >

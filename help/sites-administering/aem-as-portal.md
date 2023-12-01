@@ -7,10 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '6087'
-ht-degree: 26%
+ht-degree: 25%
 
 ---
 
@@ -106,7 +106,7 @@ Das Portlet kann mit den folgenden Voreinstellungen konfiguriert werden:
  <tbody>
   <tr>
    <td>startPath</td>
-   <td><p>Dies ist der Startpfad des Portlets: Er definiert den anfänglich angezeigten Inhalt.</p> <p><strong>Wichtig</strong>: Wenn das Portlet für die Verbindung mit AEM Autoren- und Veröffentlichungsinstanzen konfiguriert ist, die auf einem anderen Kontextpfad als<strong> /</strong>, müssen Sie die Kraft aktivieren <strong>CQUrlInfo</strong> in der HTML Library Manager-Konfiguration dieser AEM Instanzen (z. B. über die Felix Webconsole) funktioniert die Bearbeitung nicht und das Dialogfeld "Voreinstellungen"wird nicht angezeigt.</p> </td>
+   <td><p>Dies ist der Startpfad des Portlets: Er definiert den anfänglich angezeigten Inhalt.</p> <p><strong>Wichtig</strong>: Wenn das Portlet so konfiguriert ist, dass eine Verbindung zu AEM Autoren- und Veröffentlichungsinstanzen hergestellt wird, die auf einem anderen Kontextpfad ausgeführt werden als<strong> /</strong>, müssen Sie die Kraft aktivieren <strong>CQUrlInfo</strong> in der HTML Library Manager-Konfiguration dieser AEM Instanzen (z. B. über die Felix Webconsole) funktioniert die Bearbeitung nicht und das Dialogfeld "Voreinstellungen"wird nicht angezeigt.</p> </td>
   </tr>
   <tr>
    <td>htmlSelector</td>
@@ -149,7 +149,7 @@ Vorausgesetzt, dass der Portal-Server auf dem Host „localhost“ (Port ) ausge
 
 Um automatisierte Bereitstellungen und Konfigurationsbereitstellungen zu unterstützen, verfügt das AEM-Inhalts-Portlet über integrierte Konfigurationsunterstützung, die versucht, Konfigurationen aus dem Klassenpfad zu lesen, der der Portlet-Anwendung bereitgestellt wird.
 
-Beim Start wird die Systemeigenschaft **com.day.cq.portet.config** wird gelesen, um die aktuelle Umgebung zu erkennen. Normalerweise lautet der Wert dieser Eigenschaft **dev**, **prod**, **test** usw. Wenn keine Umgebung festgelegt ist, werden keine Konfigurationen gelesen.
+Beim Start wird die Systemeigenschaft **com.day.cq.portet.config** wird gelesen, um die aktuelle Umgebung zu erkennen. Normalerweise ähnelt der Wert dieser Eigenschaft **dev**, **prod**, **test** usw. Wenn keine Umgebung festgelegt ist, werden keine Konfigurationen gelesen.
 
 Ist eine Umgebung festgelegt, wird im Klassenpfad unter **com/day/cq/portlet/{umg}.config** nach einer Konfigurationsdatei gesucht, wobei **umg** durch den tatsächlichen Wert für die Umgebung ersetzt wird. Diese Datei sollte alle Konfigurationsdateien für diese Umgebung auflisten. Diese Dateien werden relativ zum Speicherort der Konfigurationsdatei durchsucht. Wenn die Datei beispielsweise eine Zeile `my.service.xml,` enthält, wird diese Datei aus dem Klassenpfad unter `com/day/cq/portlet/my.service.config.` gelesen. Der Name der Datei besteht aus der Persistenz-ID des Service, gefolgt von **.config**. Im vorherigen Beispiel ist die Persistenz-ID **my.service**. Das Format der Konfigurationsdatei entspricht dem Format, das vom Apache Sling OSGi-Installationsprogramm verwendet wird.
 
@@ -501,7 +501,7 @@ Im HTML können Sie die folgenden Platzhalter verwenden, die beim Rendern durch 
 
 | Platzhalter-Zeichenfolge | Beschreibung |
 |---|---|
-| {name} | Name der Schaltfläche, z. B., **author, back, refresh** usw. |
+| {name} | Name der Schaltfläche, beispielsweise **Autor, Zurück, Aktualisieren** usw. |
 | {id} | CSS-ID der Schaltfläche. |
 | {url} | URL für das Ziel der Schaltfläche. |
 | {text} | Beschriftung der Schaltfläche. |
@@ -762,7 +762,7 @@ So konfigurieren Sie das Portlet:
 
    >[!NOTE]
    >
-   >Wenn das Portlet so konfiguriert ist, dass eine Verbindung zu AEM Autoren- und Veröffentlichungsinstanzen hergestellt wird, die auf einem anderen Kontextpfad ausgeführt werden als &quot;** /**&quot;, müssen Sie die erzwungene **CQUrlInfo** in der HTML Library Manager-Konfiguration dieser AEM Instanzen (z. B. über die Felix Webconsole) funktioniert die Bearbeitung nicht und das Dialogfeld &quot;Voreinstellungen&quot;wird nicht angezeigt.
+   >Wenn das Portlet so konfiguriert ist, dass eine Verbindung zu AEM Autoren- und Veröffentlichungsinstanzen hergestellt wird, die auf einem anderen Kontextpfad als **/**, müssen Sie die Kraft aktivieren **CQUrlInfo** in der HTML Library Manager-Konfiguration dieser AEM Instanzen (z. B. über die Felix Webconsole) funktioniert die Bearbeitung nicht und das Dialogfeld &quot;Voreinstellungen&quot;wird nicht angezeigt.
 
 1. Speichern Sie die geänderte Konfiguration im Anwendungs-Server.
 

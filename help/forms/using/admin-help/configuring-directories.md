@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '3226'
-ht-degree: 50%
+ht-degree: 48%
 
 ---
 
@@ -128,13 +128,13 @@ Obwohl Basis-DN eine obligatorische Einstellung in Administration Console ist, e
 
 **Vollständiger Name:** (Obligatorisch) Das Schemaattribut für den vollständigen Namen des Benutzers.
 
-**Anmelde-ID:** (Obligatorisch) Das Schemaattribut für die Anmelde-ID des Benutzers.
+**Anmelde-ID:** (Obligatorisch) Das Schemaattribut für die Anmelde-ID des Benutzers
 
-**Nachname:** (Obligatorisch) Das Schemaattribut für den Nachnamen des Benutzers.
+**Nachname:** (Obligatorisch) Das Schemaattribut für den Nachnamen des Benutzers
 
-**Vorname:** (Obligatorisch) Das Schemaattribut für den Vornamen des Benutzers.
+**Vorname:** (Obligatorisch) Das Schemaattribut für den Vornamen des Benutzers
 
-**Initialen:** Das Schemaattribut für die Initialen des Benutzers.
+**Initialen:** Schemaattribut für die Initialen des Benutzers
 
 **Geschäftskalender:** Ermöglicht das Zuordnen eines Geschäftskalenders zu einem Benutzer auf Grundlage des Wertes für diese Einstellung (Geschäftskalenderschlüssel). Geschäftskalender definieren Geschäftstage und geschäftsfreie Tage. AEM-Formulare können bei der Berechnung künftiger Daten und Zeiten für Ereignisse wie Erinnerungen, Fristen und Eskalationen Geschäftskalender verwenden. Die Methode zum Zuweisen von Geschäftskalenderschlüsseln zu Benutzern ist davon abhängig, ob eine Unternehmens-, eine lokale oder eine Hybrid-Domain verwendet wird. (Siehe Geschäftskalender konfigurieren.) 
 
@@ -150,9 +150,9 @@ Der Platz, der zur Anzeige des Namens des Geschäftskalenderschlüssels auf den 
 
 **Sekundäre E-Mail**: Das Schemaattribut für die sekundäre E-Mail-Adresse des Benutzers.
 
-**Telefon**: Das Schemaattribut für die Telefonnummer des Benutzers.
+**Telefon:** Das Schemaattribut für die Telefonnummer des Benutzers.
 
-**Postanschrift**: Das Schemaattribut für die Postanschrift des Benutzers.
+**Postanschrift:** Das Schemaattribut für die Postanschrift des Benutzers.
 
 **Gebietsschema**: Das Schemaattribut, das die Informationen des ISO-Gebietsschemas enthält. Das Schemaattribut ist ein aus zwei Buchstaben bestehender Sprachencode oder ein Sprachen- und Ländercode.
 

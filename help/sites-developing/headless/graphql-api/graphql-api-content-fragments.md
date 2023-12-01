@@ -3,10 +3,10 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 5bfd8216c9d3540ac6d795d434dab5afb7bce309
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '4848'
-ht-degree: 91%
+source-wordcount: '4847'
+ht-degree: 90%
 
 ---
 
@@ -554,7 +554,7 @@ Die Sortierkriterien:
    * das erste Feld in der Liste definiert die primäre Sortierreihenfolge
       * das zweite Feld wird verwendet, wenn zwei Werte des primären Sortierkriteriums gleich sind
       * das dritte Feld wird verwendet, wenn die ersten beiden Kriterien gleich sind, usw.
-   * gepunktete Notation, z. B. „field1.subfield.subfield“ usw.
+   * gepunktete Notation, also `field1.subfield.subfield`usw.
 * mit optionaler Sortierrichtung
    * ASC (aufsteigend) oder DESC (absteigend); standardmäßig wird ASC angewendet
    * die Richtung kann pro Feld angegeben werden. Diese Fähigkeit bedeutet, dass Sie ein Feld in aufsteigender Reihenfolge sortieren können, ein anderes in absteigender Reihenfolge (name, firstName DESC)

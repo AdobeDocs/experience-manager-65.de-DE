@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '4143'
-ht-degree: 93%
+ht-degree: 80%
 
 ---
 
@@ -33,11 +33,11 @@ Um ein Formular als HTML wiederzugeben, muss der Formularentwurf als XDP-Datei g
 
 >[!NOTE]
 >
->Wenn ein Formular, das TIFF-Bilder enthält, mit den Methoden `(Deprecated) renderHTMLForm` und `renderHTMLForm2` des `FormServiceClient`-Objekts gerendert wird, sind die TIFF-Bilder in dem gerenderten HTML-Formular, das in den Browsern Internet Explorer oder Mozilla Firefox angezeigt wird, nicht sichtbar. Diese Browser bieten keine native Unterstützung für TIFF-Images.
+>Beim Rendern eines Formulars, das TIFF-Bilder enthält, mithilfe der `FormServiceClient` -Objekt `(Deprecated) renderHTMLForm` und `renderHTMLForm2` -Methoden verwenden, sind die TIFF-Bilder nicht im wiedergegebenen HTML-Formular sichtbar, das in Internet Explorer oder Mozilla Firefox angezeigt wird. Diese Browser bieten keine native Unterstützung für TIFF-Images.
 
 ## HTML-Seiten {#html-pages}
 
-Wenn ein Formularentwurf als HTML-Formular wiedergegeben wird, wird jedes Teilformular der zweiten Ebene als HTML-Seite (Bedienfeld) wiedergegeben. Sie können die Hierarchie eines Teilformulars in Designer anzeigen. Untergeordnete Unterformulare, die zum Stammunterformular gehören (der Standardname eines Stammunterformulars ist form1), sind die Panel-Unterformulare. Das folgende Beispiel zeigt die Unterformulare eines Formularentwurfs.
+Wenn ein Formularentwurf als HTML-Formular wiedergegeben wird, wird jedes Teilformular der zweiten Ebene als HTML-Seite (Bedienfeld) wiedergegeben. Sie können die Hierarchie eines Teilformulars in Designer anzeigen. Untergeordnete Unterformulare, die zum Stammunterformular gehören (der Standardname eines Stammunterformulars ist form1), sind die Panel-Unterformulare. Das folgende Beispiel zeigt die Teilformulare eines Formularentwurfs.
 
 ```java
      form1
@@ -83,9 +83,9 @@ Sie müssen sich explizit mit den Methoden `xfa.host.pageUp` und `xfa.host.pageD
 
 Ein Formularautor gibt an, ob ein Skript auf dem Server oder Client ausgeführt wird. Der Forms-Dienst schafft eine verteilte, ereignisverarbeitende Umgebung für die Ausführung von Formularintelligenz, die mit Hilfe des Attributs `runAt` zwischen dem Client und dem Server verteilt werden kann. Weitere Informationen zu diesem Attribut oder zum Erstellen von Skripten in Formularentwürfen finden Sie unter [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_de)
 
-Der Forms-Dienst kann Skripten ausführen, während das Formular wiedergegeben wird. Daher können Sie ein Formular mit Daten vorab ausfüllen, indem Sie eine Verbindung zu einer Datenbank oder zu Webdiensten herstellen, die auf dem Client möglicherweise nicht verfügbar sind. Sie können auch das `Click`-Ereignis einer Schaltfläche so einstellen, dass es auf dem Server ausgeführt wird, so dass der Client die Daten an den Server weiterleitet. Dadurch kann der Client Skripte ausführen, die möglicherweise Serverressourcen benötigen, wie z. B. eine Unternehmensdatenbank, während ein Benutzer mit einem Formular interagiert. Bei HTML-Formularen können formcalc-Skripte nur auf dem Server ausgeführt werden. Daher müssen Sie diese Skripte für die Ausführung unter `server` oder `both` markieren.
+Der Forms-Dienst kann Skripten ausführen, während das Formular wiedergegeben wird. Daher können Sie ein Formular mit Daten vorab ausfüllen, indem Sie eine Verbindung zu einer Datenbank oder zu Webdiensten herstellen, die auf dem Client möglicherweise nicht verfügbar sind. Sie können auch die `Click` -Ereignis auf dem Server ausgeführt werden, damit der Client die Reisedaten an den Server umrundet. Dadurch kann der Client Skripte ausführen, die möglicherweise Serverressourcen benötigen, wie z. B. eine Unternehmensdatenbank, während ein Benutzer mit einem Formular interagiert. Bei HTML-Formularen können formcalc-Skripte nur auf dem Server ausgeführt werden. Daher müssen Sie diese Skripte für die Ausführung unter `server` oder `both` markieren.
 
-Sie können Formulare entwerfen, die sich zwischen Seiten (Bedienfeldern) bewegen, indem Sie die Methoden `xfa.host.pageUp` und `xfa.host.pageDown` aufrufen. Dieses Skript wird in das `Click`-Ereignis einer Schaltfläche eingefügt und das `runAt`-Attribut wird auf `Both` gesetzt. Der Grund dafür, dass Sie `Both` wählen, ist, dass Adobe Reader oder Acrobat (für Formulare, die als PDF gerendert werden) die Seiten ändern können, ohne zum Server zu gehen, und dass HTML-Formulare die Seiten ändern können, indem sie die Daten zum Server weiterleiten. Das heißt, ein Formular wird an den Forms-Dienst gesendet, und ein Formular wird als HTML zurückgegeben, wobei die neue Seite angezeigt wird.
+Sie können Formulare entwerfen, die sich zwischen Seiten (Bedienfeldern) bewegen, indem Sie die Methoden `xfa.host.pageUp` und `xfa.host.pageDown` aufrufen. Dieses Skript wird im `Click` und `runAt` -Attribut auf `Both`. Der Grund dafür, dass Sie `Both` wählen, ist, dass Adobe Reader oder Acrobat (für Formulare, die als PDF gerendert werden) die Seiten ändern können, ohne zum Server zu gehen, und dass HTML-Formulare die Seiten ändern können, indem sie die Daten zum Server weiterleiten. Das heißt, ein Formular wird an den Forms-Dienst gesendet, und ein Formular wird als HTML zurückgegeben, wobei die neue Seite angezeigt wird.
 
 Es wird empfohlen, Skriptvariablen und Formularfeldern nicht dieselben Namen zu geben, wie z. B. Element. In einigen Webbrowsern wie Internet Explorer wird eine Variable möglicherweise nicht mit demselben Namen wie ein Formularfeld initialisiert, was zu einem Skriptfehler führt. Es empfiehlt sich, Formularfelder und Skriptvariablen unterschiedliche Namen zu geben.
 
@@ -156,7 +156,7 @@ Es wird empfohlen, die Formularlogik in calculate -Ereignissen zu platzieren, di
 
 ## Änderungen in der Präsentation beibehalten {#maintaining-presentation-changes}
 
-Wenn Sie zwischen HTML-Seiten (Bedienfeldern) wechseln, wird nur der Status der Daten beibehalten. Einstellungen wie die Hintergrundfarbe oder die obligatorischen Feldeinstellungen werden nicht beibehalten (wenn sie sich von den ursprünglichen Einstellungen unterscheiden). Um den Präsentationsstatus beizubehalten, müssen Sie Felder (normalerweise ausgeblendet) erstellen, die den Präsentationsstatus von Feldern darstellen. Wenn Sie dem `Calculate`-Ereignis eines Feldes ein Skript hinzufügen, das die Darstellung auf der Grundlage von ausgeblendeten Feldwerten ändert, können Sie den Zustand der Darstellung beibehalten, wenn Sie zwischen HTML-Seiten (Panels) hin- und herwechseln.
+Wenn Sie zwischen HTML-Seiten (Bedienfeldern) wechseln, wird nur der Status der Daten beibehalten. Einstellungen wie die Hintergrundfarbe oder die obligatorischen Feldeinstellungen werden nicht beibehalten (wenn sie sich von den ursprünglichen Einstellungen unterscheiden). Um den Präsentationsstatus beizubehalten, müssen Sie Felder (normalerweise ausgeblendet) erstellen, die den Präsentationsstatus von Feldern darstellen. Wenn Sie ein Skript zum `Calculate` -Ereignis, das die Darstellung basierend auf versteckten Feldwerten ändert, können Sie den Präsentationsstatus beibehalten, wenn Sie zwischen HTML-Seiten (Bedienfeldern) hin- und herwechseln.
 
 Das folgende Skript erhält die `fillColor` eines Feldes auf der Grundlage des Wertes von `hiddenField`. Angenommen, dieses Skript befindet sich im `Calculate` -Ereignis.
 
@@ -268,7 +268,7 @@ So rendern Sie ein HTML-Formular mithilfe der Forms-API (Java):
 
 1. Projektdateien einschließen
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-forms-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-forms-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen eines Forms Client-API-Objekts
 
@@ -278,17 +278,17 @@ So rendern Sie ein HTML-Formular mithilfe der Forms-API (Java):
 1. Festlegen von HTML-Laufzeitoptionen
 
    * Erstellen Sie ein `HTMLRenderSpec`-Objekt, indem Sie seinen Konstruktor verwenden.
-   * Um ein HTML-Formular mit einer Symbolleiste zu rendern, rufen Sie die Methode `setHTMLToolbar` des `HTMLRenderSpec`-Objekts auf und übergeben einen `HTMLToolbar`-Auflistungswert. Um beispielsweise eine vertikale HTML-Symbolleiste anzuzeigen, übergeben Sie `HTMLToolbar.Vertical`.
-   * Um den Gebietsschemawert für das HTML-Formular festzulegen, rufen Sie die Methode `setLocale` des `HTMLRenderSpec`-Objekts auf und übergeben einen Zeichenfolgenwert, der den Wert des Gebietsschemas angibt. (Diese Einstellung ist optional.)
-   * Um das HTML-Formular innerhalb vollständiger HTML-Tags zu rendern, rufen Sie die Methode `setOutputType` des `HTMLRenderSpec`-Objekts auf und übergeben `OutputType.FullHTMLTags`. (Diese Einstellung ist optional.)
+   * Um ein HTML-Formular mit einer Symbolleiste wiederzugeben, rufen Sie die `HTMLRenderSpec` -Objekt `setHTMLToolbar` -Methode und übergeben Sie eine `HTMLToolbar` enum -Wert. Um beispielsweise eine vertikale HTML-Symbolleiste anzuzeigen, übergeben Sie `HTMLToolbar.Vertical`.
+   * Um den Gebietsschemawert für das HTML-Formular festzulegen, rufen Sie die `HTMLRenderSpec` -Objekt `setLocale` -Methode verwenden und einen string -Wert übergeben, der den Gebietsschema-Wert angibt. (Diese Einstellung ist optional.)
+   * Um das HTML-Formular mit vollständigen HTML-Tags wiederzugeben, rufen Sie die `HTMLRenderSpec` -Objekt `setOutputType` -Methode und -übergabe `OutputType.FullHTMLTags`. (Diese Einstellung ist optional.)
 
    >[!NOTE]
    >
-   Formulare werden nicht erfolgreich in HTML gerendert, wenn die Option `StandAlone` `true` ist und `ApplicationWebRoot` auf einen anderen Server als den J2EE-Programm-Server verweist, auf dem AEM Forms gehostet wird (der Wert von `ApplicationWebRoot` wird mithilfe des `URLSpec`-Objekts angegeben, das an die Methode `FormsServiceClient` des `(Deprecated) renderHTMLForm`-Objekts übergeben wird). Wenn die `ApplicationWebRoot` ein anderer Server ist, der als Host für AEM Forms dient, muss der URI-Wert des Web-Stamms in der Administration Console als URI-Wert für das Web-Programm des Formulars festgelegt werden. Dazu können Sie sich bei Administration Console anmelden, auf „Services“ > „Forms“ klicken und den URI des Web-Stamms auf https://server-name:port/FormServer setzen. Speichern Sie dann Ihre Einstellungen.
+   Forms wird beim HTML nicht erfolgreich gerendert, wenn die `StandAlone` Option ist `true` und `ApplicationWebRoot` verweist auf einen anderen Server als den J2EE-Anwendungsserver, der als Host für AEM Forms dient (die `ApplicationWebRoot` -Wert wird mithilfe der Variablen `URLSpec` -Objekt, das an die `FormsServiceClient` -Objekt `(Deprecated) renderHTMLForm` -Methode). Wenn die `ApplicationWebRoot` ein anderer Server ist, der als Host für AEM Forms dient, muss der URI-Wert des Web-Stamms in der Administration Console als URI-Wert für das Web-Programm des Formulars festgelegt werden. Dazu können Sie sich bei Administration Console anmelden, auf „Services“ > „Forms“ klicken und den URI des Web-Stamms auf https://server-name:port/FormServer setzen. Speichern Sie dann Ihre Einstellungen.
 
 1. Rendern Sie ein HTML-Formular
 
-   Rufen Sie die Methode `(Deprecated) renderHTMLForm` des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `FormsServiceClient` -Objekt `(Deprecated) renderHTMLForm` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `TransformTo`-Auflistungswert, der den Präferenztyp für HTML angibt. Um beispielsweise ein HTML-Formular zu rendern, das mit dynamischem HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
@@ -302,13 +302,13 @@ So rendern Sie ein HTML-Formular mithilfe der Forms-API (Java):
 
 1. Schreiben des Formulardaten-Streams in den Client-Webbrowser
 
-   * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie die Methode `getOutputContent` des `FormsResult`-Objekts aufrufen.
+   * Erstellen Sie eine `com.adobe.idp.Document` -Objekt durch Aufrufen der `FormsResult` -Objekt `getOutputContent` -Methode.
    * Ermitteln Sie den Content-Typ des `com.adobe.idp.Document`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
-   * Legen Sie den Content-Typ des `javax.servlet.http.HttpServletResponse`-Objekts fest, indem Sie seine Methode `setContentType` aufrufen und den Content-Typ des `com.adobe.idp.Document`-Objekts übergeben.
-   * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser verwendet wird, indem Sie die Methode `getOutputStream` des `javax.servlet.http.HttpServletResponse`-Objekts aufrufen.
-   * Erstellen Sie ein `java.io.InputStream`-Objekt, indem Sie die Methode `getInputStream` des `com.adobe.idp.Document`-Objekts aufrufen.
-   * Erstellen Sie ein Byte-Array und füllen Sie es mit dem Formulardaten-Stream, indem Sie die Methode `read` des `InputStream`-Objekts aufrufen und das Byte-Array als Argument übergeben.
-   * Rufen Sie die Methode `write` des `javax.servlet.ServletOutputStream`-Objekts auf, um den Formulardaten-Stream an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die Methode `write`.
+   * Legen Sie die `javax.servlet.http.HttpServletResponse` Inhaltstyp des Objekts durch Aufrufen seiner `setContentType` -Methode verwenden und den Inhaltstyp der `com.adobe.idp.Document` -Objekt.
+   * Erstellen Sie eine `javax.servlet.ServletOutputStream` -Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser durch Aufrufen der `javax.servlet.http.HttpServletResponse` -Objekt `getOutputStream` -Methode.
+   * Erstellen Sie eine `java.io.InputStream` -Objekt durch Aufrufen der `com.adobe.idp.Document` -Objekt `getInputStream` -Methode.
+   * Erstellen Sie ein Byte-Array und füllen Sie es mit dem Formulardatenstream, indem Sie die `InputStream` -Objekt `read` -Methode verwenden und das Byte-Array als Argument übergeben.
+   * Rufen Sie die `javax.servlet.ServletOutputStream` -Objekt `write` -Methode zum Senden des Formulardatenstreams an den Client-Webbrowser. Übergeben Sie das Byte-Array an die Methode `write`.
 
 **Siehe auch**
 
@@ -336,17 +336,17 @@ So rendern Sie ein HTML-Formular mithilfe der Forms-API (Webservice):
 1. Festlegen von HTML-Laufzeitoptionen
 
    * Erstellen Sie ein `HTMLRenderSpec`-Objekt, indem Sie seinen Konstruktor verwenden.
-   * Um ein HTML-Formular mit einer Symbolleiste zu rendern, rufen Sie die Methode `setHTMLToolbar` des `HTMLRenderSpec`-Objekts auf und übergeben einen `HTMLToolbar`-Auflistungswert. Um beispielsweise eine vertikale HTML-Symbolleiste anzuzeigen, übergeben Sie `HTMLToolbar.Vertical`.
-   * Um den Gebietsschemawert für das HTML-Formular festzulegen, rufen Sie die Methode `setLocale` des `HTMLRenderSpec`-Objekts auf und übergeben einen Zeichenfolgenwert, der den Wert des Gebietsschemas angibt. Weitere Informationen finden Sie in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
-   * Um das HTML-Formular innerhalb vollständiger HTML-Tags zu rendern, rufen Sie die Methode `setOutputType` des `HTMLRenderSpec`-Objekts auf und übergeben `OutputType.FullHTMLTags`.
+   * Um ein HTML-Formular mit einer Symbolleiste wiederzugeben, rufen Sie die `HTMLRenderSpec` -Objekt `setHTMLToolbar` -Methode und übergeben Sie eine `HTMLToolbar` enum -Wert. Um beispielsweise eine vertikale HTML-Symbolleiste anzuzeigen, übergeben Sie `HTMLToolbar.Vertical`.
+   * Um den Gebietsschemawert für das HTML-Formular festzulegen, rufen Sie die `HTMLRenderSpec` -Objekt `setLocale` -Methode verwenden und einen string -Wert übergeben, der den Gebietsschema-Wert angibt. Weitere Informationen finden Sie in der [AEM Forms-API-Verweis](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Um das HTML-Formular mit vollständigen HTML-Tags wiederzugeben, rufen Sie die `HTMLRenderSpec` -Objekt `setOutputType` -Methode und -übergabe `OutputType.FullHTMLTags`.
 
    >[!NOTE]
    >
-   Formulare werden nicht erfolgreich in HTML gerendert, wenn die Option `StandAlone` `true` ist und `ApplicationWebRoot` auf einen anderen Server als den J2EE-Programm-Server verweist, auf dem AEM Forms gehostet wird (der Wert von `ApplicationWebRoot` wird mithilfe des `URLSpec`-Objekts angegeben, das an die Methode `(Deprecated) renderHTMLForm` des `FormsServiceClient`-Objekts übergeben wird). Wenn die `ApplicationWebRoot` ein anderer Server ist, der als Host für AEM Forms dient, muss der URI-Wert des Web-Stamms in der Administration Console als URI-Wert für das Web-Programm des Formulars festgelegt werden. Dazu können Sie sich bei Administration Console anmelden, auf „Services“ > „Forms“ klicken und den URI des Web-Stamms auf https://server-name:port/FormServer setzen. Speichern Sie dann Ihre Einstellungen.
+   Forms wird beim HTML nicht erfolgreich gerendert, wenn die `StandAlone` Option ist `true` und `ApplicationWebRoot` verweist auf einen anderen Server als den J2EE-Anwendungsserver, der als Host für AEM Forms dient (die `ApplicationWebRoot` -Wert wird mithilfe der Variablen `URLSpec` -Objekt, das an die `FormsServiceClient` -Objekt `(Deprecated) renderHTMLForm` -Methode). Wenn die `ApplicationWebRoot` ein anderer Server ist, der als Host für AEM Forms dient, muss der URI-Wert des Web-Stamms in der Administration Console als URI-Wert für das Web-Programm des Formulars festgelegt werden. Dazu können Sie sich bei Administration Console anmelden, auf „Services“ > „Forms“ klicken und den URI des Web-Stamms auf https://server-name:port/FormServer setzen. Speichern Sie dann Ihre Einstellungen.
 
 1. Rendern Sie ein HTML-Formular
 
-   Rufen Sie die Methode `(Deprecated) renderHTMLForm` des `FormsService`-Objekts auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `FormsService` -Objekt `(Deprecated) renderHTMLForm` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `TransformTo`-Auflistungswert, der den Präferenztyp für HTML angibt. Um beispielsweise ein HTML-Formular zu rendern, das mit dynamischem HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
@@ -366,13 +366,13 @@ So rendern Sie ein HTML-Formular mithilfe der Forms-API (Webservice):
 
 1. Schreiben des Formulardaten-Streams in den Client-Webbrowser
 
-   * Erstellen Sie ein `FormResult`-Objekt, indem Sie den Wert des Datenelements `value` des `com.adobe.idp.services.holders.FormsResultHolder`-Objekts abrufen.
-   * Erstellen Sie ein `BLOB`-Objekt, das Formulardaten enthält, indem Sie die Methode `getOutputContent` des `FormsResult`-Objekts aufrufen.
-   * Ermitteln Sie den Inhaltstyp des `BLOB`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
-   * Legen Sie den Content-Typ des `javax.servlet.http.HttpServletResponse`-Objekts fest, indem Sie seine Methode `setContentType` aufrufen und den Content-Typ des `BLOB`-Objekts übergeben.
-   * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Schreiben des Formulardaten-Stream in den Client-Webbrowser verwendet wird, indem Sie die Methode `getOutputStream` des `javax.servlet.http.HttpServletResponse`-Objekts aufrufen.
-   * Erstellen Sie ein Byte-Array und füllen Sie es auf, indem Sie die Methode `getBinaryData` des `BLOB`-Objekts aufrufen. Mit dieser Aufgabe wird dem Byte-Array der Inhalt des `FormsResult`-Objekts zugewiesen.
-   * Rufen Sie die Methode `write` des `javax.servlet.http.HttpServletResponse`-Objekts auf, um den Formulardaten-Stream an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die Methode `write`.
+   * Erstellen Sie eine `FormResult` -Objekt durch Abrufen des Werts der `com.adobe.idp.services.holders.FormsResultHolder` -Objekt `value` Datenelement.
+   * Erstellen Sie eine `BLOB` -Objekt, das Formulardaten enthält, durch Aufrufen der `FormsResult` -Objekt `getOutputContent` -Methode.
+   * Ermitteln Sie den Content-Typ des `BLOB`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
+   * Legen Sie die `javax.servlet.http.HttpServletResponse` Inhaltstyp des Objekts durch Aufrufen seiner `setContentType` -Methode verwenden und den Inhaltstyp der `BLOB` -Objekt.
+   * Erstellen Sie eine `javax.servlet.ServletOutputStream` -Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser durch Aufrufen der `javax.servlet.http.HttpServletResponse` -Objekt `getOutputStream` -Methode.
+   * Erstellen Sie ein Byte-Array und füllen Sie es durch Aufrufen der `BLOB` -Objekt `getBinaryData` -Methode. Mit dieser Aufgabe wird dem Byte-Array der Inhalt des `FormsResult`-Objekts zugewiesen.
+   * Rufen Sie die `javax.servlet.http.HttpServletResponse` -Objekt `write` -Methode zum Senden des Formulardatenstreams an den Client-Webbrowser. Übergeben Sie das Byte-Array an die Methode `write`.
 
 **Siehe auch**
 

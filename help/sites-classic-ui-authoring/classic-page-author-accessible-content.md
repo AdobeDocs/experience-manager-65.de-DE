@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '9151'
+source-wordcount: '9148'
 ht-degree: 97%
 
 ---
@@ -577,15 +577,15 @@ Stellen Sie z. B. sicher, dass die durch die Farbe vermittelte Information auch
    <td><p><strong>Verfügbarkeit</strong></p> </td>
   </tr>
   <tr>
-   <td><p>Dienstag, 16. März<sup></sup></p> </td>
+   <td><p>Dienstag, 16. März</p> </td>
    <td><p>SITZPLÄTZE VERFÜGBAR</p> </td>
   </tr>
   <tr>
-   <td><p>Mittwoch, 17. März<sup></p> </td>
+   <td><p>Mittwoch, 17. März</p> </td>
    <td><p>SITZPLÄTZE VERFÜGBAR</p> </td>
   </tr>
   <tr>
-   <td><p>Donnerstag, 18. März<sup></sup></p> </td>
+   <td><p>Donnerstag, 18. März</p> </td>
    <td><p>AUSVERKAUFT</p> </td>
   </tr>
  </tbody>

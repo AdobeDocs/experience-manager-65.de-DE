@@ -1,19 +1,16 @@
 ---
 title: Java API-Schnellstart (SOAP) für den Document Management-Dienst (veraltet)
-seo-title: Document Management Service (Deprecated)Java API Quick Start(SOAP)
 description: Java API-Schnellstart (SOAP) für den Document Management-Dienst (veraltet)
-uuid: 967c282a-ccde-4489-a4d5-53c6a1a0cac0
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 role: Developer
 exl-id: 38a90957-bdde-4f38-9edd-c59522e5f525
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 92%
+source-wordcount: '639'
+ht-degree: 89%
 
 ---
 
@@ -23,7 +20,7 @@ Die folgenden Schnellstarts sind für den Document Management-Dienst (nicht mehr
 
 >[!NOTE]
 >
->Ab dem 5. August 2011 migriert Adobe Content Services ES-Kunden auf den Adobe Digital Enterprise Platform Experience Services. Die Produkt-Roadmap für Kunden, die Content Services verwenden, sieht den Wechsel zu den neuen ADEP Experience Services - Core vor, die ein natives Content-Repository umfassen, das auf der modernen, modularen CRX-Architektur basiert, die im Zuge der Übernahme von Day Software durch Adobe erworben wurde.
+>Mit Wirkung vom 5. August 2011 migriert Adobe Kunden von Content Services ES zu Adobe Digital Enterprise Platform Experience Services. Die Produkt-Roadmap für Kunden, die Content Services verwenden, sieht den Wechsel zu den neuen ADEP Experience Services - Core vor, die ein natives Content-Repository umfassen, das auf der modernen, modularen CRX-Architektur basiert, die im Zuge der Übernahme von Day Software durch Adobe erworben wurde.
 
 [Schnellstart (SOAP-Modus): Erstellen von Content Services-Bereichen mit der Java-API](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 

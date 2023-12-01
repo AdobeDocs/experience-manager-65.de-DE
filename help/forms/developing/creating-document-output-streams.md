@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '18956'
-ht-degree: 79%
+ht-degree: 78%
 
 ---
 
@@ -1744,7 +1744,7 @@ Für jedes Formularfeld, das mit Daten gefüllt werden soll, muss ein XML-Elemen
 Legen Sie die folgenden Laufzeitoptionen fest, damit der Output-Dienst erfolgreich mehrere Dateien basierend auf einer XML-Datenquelle erstellt:
 
 * **Viele Dateien**: Gibt an, ob der Ausgabe-Service ein einzelnes Dokument oder mehrere Dokumente erstellt. Sie können „true“ oder „false“ angeben. Um ein separates Dokument für jeden Datensatz in der XML-Datenquelle zu erstellen, geben Sie „true“ an.
-* **Datei-URI**: Gibt den Speicherort der Dateien an, die der Ausgabe-Service erzeugt. Angenommen, Sie geben C:\\Adobe\forms\Loan.pdf an. In diesem Fall erstellt der Ausgabe-Service eine Datei mit dem Namen „Loan.pdf“ und legt diese Datei im Ordner „C:\\Adobe\forms folder“ ab. Wenn mehrere Dateien vorliegen, lauten die Dateinamen „Loan0001.pdf“, „Loan0002.pdf“, „Loan0003.pdf“ usw. Wenn Sie einen Dateispeicherort angeben, werden die Dateien auf dem Server und nicht auf dem Client-Computer abgelegt.
+* **Datei-URI**: Gibt den Speicherort der Dateien an, die der Ausgabe-Service erzeugt. Angenommen, Sie geben C:\\Adobe\forms\Loan.pdf an. In diesem Fall erstellt der Ausgabe-Service eine Datei mit dem Namen „Loan.pdf“ und legt diese Datei im Ordner „C:\\Adobe\forms folder“ ab. Wenn mehrere Dateien vorliegen, lauten die Dateinamen &quot;Loan001.pdf&quot;, &quot;Loan0002.pdf&quot;, &quot;Loan003.pdf&quot;usw. Wenn Sie einen Dateispeicherort angeben, werden die Dateien auf dem Server und nicht auf dem Client-Computer abgelegt.
 * **Datensatzname**: Gibt den Namen des XML-Elements in der Datenquelle an, das die Datensätze trennt. In der Beispiel-XML-Datenquelle, die oben in diesem Abschnitt gezeigt wird, hat beispielsweise das XML-Element, das Datensätze trennt, den Namen `LoanRecord`. (Anstatt als Laufzeitoption den Datensatznamen festzulegen, können Sie auch die Datensatzebene festlegen, indem Sie ihr einen numerischen Wert zuweisen, der die Elementebene angibt, welche Datensätze enthält. Sie können jedoch nur entweder den Datensatznamen oder die Datensatzebene festlegen. Sie können nicht beide Werte festlegen.)
 
 **Festlegen von Laufzeitoptionen für das Rendern**

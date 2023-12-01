@@ -8,10 +8,10 @@ topic-tags: hTML5_forms
 docset: aem65
 feature: Mobile Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '447'
-ht-degree: 38%
+ht-degree: 30%
 
 ---
 
@@ -48,7 +48,7 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5-Formulare und 
   </tr>
   <tr>
    <td>Seitenumbruch<br /> </td>
-   <td><p>Ein HTML5-Formular ist in Bereiche und Felder unterteilt, damit es ähnlich wie PDF forms aussieht. Die Seitengröße wird dynamisch berechnet. Wenn der gesamte Seiteninhalt in einem HTML5-Formular gelöscht oder als ausgeblendet markiert wird, wird die leere Seite ausgeblendet. Zwischen den Seiten über und unter der leeren Seite wird kein leeres Leerzeichen (Leerzeichen) angezeigt.</p> <p>Wenn Datenzusammenführung oder Skripte Inhalte zu einer Seite hinzufügen, wird die Länge der Seite erweitert, um den neu hinzugefügten Inhalt aufzunehmen. Dem Formular werden keine neuen Seiten hinzugefügt, um den neu hinzugefügten Inhalt aufzunehmen. </p> <p><strong>Hinweis:</strong> Wenn der gesamte Inhalt einer Seite in einem HTML5-Formular gelöscht oder als ausgeblendet markiert wird, bleibt die leere Seite zwischen der ersten und zweiten, nicht jedoch zwischen den weiteren Seiten sichtbar.</p> </td>
+   <td><p>Ein HTML5-Formular ist in Bereiche und Felder unterteilt, damit es ähnlich wie PDF forms aussieht. Die Seitengröße wird dynamisch berechnet. Wenn der gesamte Seiteninhalt in einem HTML5-Formular gelöscht oder als ausgeblendet markiert wird, wird die leere Seite ausgeblendet. Zwischen den Seiten über und unter der leeren Seite wird kein leeres Leerzeichen (Leerzeichen) angezeigt.</p> <p>Wenn Datenzusammenführung oder Skripte Inhalte zu einer Seite hinzufügen, wird die Länge der Seite erweitert, um den neu hinzugefügten Inhalt aufzunehmen. Dem Formular werden keine neuen Seiten hinzugefügt, um den neu hinzugefügten Inhalt aufzunehmen. </p> <p><strong>Hinweis:</strong> Wenn der gesamte Seiteninhalt in einem HTML5-Formular gelöscht oder als ausgeblendet markiert wird, bleibt die leere Seite (Leerraum) zwischen der ersten und zweiten Seite sichtbar, jedoch nicht zwischen allen anderen Seiten.</p> </td>
    <td>Paginierung in PDF hängt vom zusammengeführten Dateninhalt oder dem Benutzerinhalt ab. Abhängig davon wird die Seitenanzahl erhöht bzw. verringert.</td>
   </tr>
   <tr>
