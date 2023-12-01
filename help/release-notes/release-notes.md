@@ -6,7 +6,7 @@ exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
 source-git-commit: f8f82ad5805095f331432471b614225f761e645c
 workflow-type: tm+mt
 source-wordcount: '3530'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -88,7 +88,7 @@ in
 #### Core-Backend{#sites-core-backend-6519}
 
 * Verbessert `StyleImpl`. (SITES-15164)
-* Verbessern Sie die Verzweigung &quot;release/650&quot;der WCM-Pipeline, um Integrationstests für ihre Module durchführen zu können. (SITES-12938)
+* Verbessern der Verzweigung „release/650“ der WCM-Pipeline, um Integrationstests für ihre Module durchführen zu können. (SITES-12938)
 
 <!--#### Core Components{#sites-core-components-6519}
 
@@ -118,13 +118,13 @@ in
 #### MSM – Live Copies{#sites-msm-live-copies-6519}
 
 * Die MSM-Rollout-Schaltfläche funktioniert in der grafischen Touch-Benutzeroberfläche nicht. (SITES-16991)
-* Die Link-Referenz wird im Experience Fragment nicht aktualisiert, wenn eine Live Copy erstellt oder ein Experience Fragment eingeführt wird. (SITES-15460)
+* Der Link-Verweis wird in einem Experience Fragment nicht aktualisiert, wenn eine Live Copy erstellt oder ein Rollout eines Experience Fragments durchgeführt wird. (SITES-15460)
 
 #### Seiteneditor{#sites-pageeditor-6519}
 
-* Wenn Sie in Forms > Designs ein Design im Design-Editor geöffnet, einige Änderungen vorgenommen und gespeichert und dann auf Vorschau geklickt haben, wird ein Ladesymbol angezeigt, die tatsächliche Vorschau wird jedoch nicht geladen. (SITES-17164)
+* Wenn Sie in „Formulare“ > „Designs“ ein Design im Design-Editor öffnen, einige Änderungen vornehmen, speichern und dann auf „Vorschau“ klicken, wird zwar ein Ladesymbol angezeigt, die tatsächliche Vorschau wird jedoch nicht geladen. (SITES-17164)
 * Die Auswahl mehrerer Dokumentdateitypen für den Asset-Typ-Filter funktioniert nicht in der Seitenkonsole. Es werden keine Ergebnisse gefunden, selbst wenn die Ergebnisse eines bestimmten Dateityps verfügbar sind. Daher können Autorinnen und Autoren nicht mehrere Dokumente filtern. Sie müssen mehrere Dokumenttypen verwenden und sie einzeln filtern. (SITES-14047)
-* Nach dem Upgrade einer Instanz von AEM 6.5.17 und AEM 6.5.18 aus dem Seiten-Editor, falls Sie ausgewählt haben **[!UICONTROL Seite veröffentlichen]**, werden Sie zu einer URL umgeleitet, die nicht vorhanden ist. Die Benutzerin bzw. der Benutzer sollte zum Veröffentlichungsassistenten umgeleitet werden. (SITES-15856)
+* Wenn Sie nach dem Upgrade einer Instanz von AEM 6.5.17 und AEM 6.5.18 im Seiteneditor **[!UICONTROL Seite veröffentlichen]** auswählen, werden Sie zu einer URL weitergeleitet, die nicht existiert. Die Benutzerin bzw. der Benutzer sollte zum Veröffentlichungsassistenten umgeleitet werden. (SITES-15856)
 * Redundante Kopie aus der AEM-Zwischenablage beim Einfügen aus der Zwischenablage des Betriebssystems. (SITES-15704)
 * Wenn Sie in Assets **[!UICONTROL Dokumente]** und dann unter **[!UICONTROL Filtertyp]** **[!UICONTROL Microsoft® Word]** oder **[!UICONTROL Microsoft® Excel]** auswählen, werden keine Ergebnisse angezeigt, obwohl Dateien beider Typen existieren. (SITES-14837)
 
@@ -136,7 +136,7 @@ in
 
 #### [!DNL Dynamic Media]{#assets-dm-6519}
 
-* Nachdem ein Asset in AEM hochgeladen wurde, wird der Workflow `update_asset` ausgelöst. Der Workflow wird aber nie abgeschlossen. Wenn Sie sich die Workflow-Instanzen ansehen, stellt sich heraus, dass der Workflow bis zum Schritt zum Hochladen des Produkts abgeschlossen wird. Der nächste Schritt ist der Scene7-Batch-Upload. Die Benutzerin bzw. der Benutzer kann sehen, dass sich das Asset in Scene7 in der Dynamic Media Classic-App befindet. (ASSETS-30443)
+* Nachdem ein Asset in AEM hochgeladen wurde, wird der Workflow `update_asset` ausgelöst. Der Workflow wird aber nie abgeschlossen. Wenn Sie sich die Workflow-Instanzen ansehen, stellt sich heraus, dass der Workflow bis zum Schritt zum Hochladen des Produkts abgeschlossen wird. Der nächste Schritt ist der Batch-Upload in Scene7. Die Benutzerin bzw. der Benutzer kann sehen, dass sich das Asset in Scene7 in der Dynamic Media Classic-App befindet. (ASSETS-30443)
 * Ein benutzerdefiniertes Servlet (API-Endpunkt) gibt einen falschen Dynamic Media(Scene7)-Dateinamen zurück. Dies tritt auf, wenn ein Asset gelöscht und durch ein Asset mit demselben Namen ersetzt wird. Das benutzerdefinierte Servlet gibt den alten Dynamic Media(Scene7)-Dateinamen zurück, während ein „jcr“-API-Aufruf den richtigen Dateinamen zurückgibt. (ASSETS-29476)
 * Selbst wenn die Synchronisierung auf Ordnerebene deaktiviert ist, zeigen die Protokolle den Trigger „Scene7 ReplicateOnModifyListener“. `ReplicateOnModifyListener/Worker` sollte die Verarbeitung von Assets und Inhaltsfragmenten aus nicht-dynamischen Medienordnern überspringen. (ASSETS-26705)
 * Menschen mit eingeschränktem Sehvermögen werden beeinträchtigt, wenn der Fokus in den Dropdown-Elementen („Nur Inhalt“, „Ansicht“, „Weitere Optionen“) in kontrastreichen Schwarz-Weiß-Modi nicht sichtbar ist. (ASSETS-25759)
@@ -445,22 +445,22 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 * Nach der Installation des Vollinstallationsprogramms für AEM Service Pack 6.5.19.0 schlägt die EAR-Bereitstellung auf JEE mit der JBoss®-Turnkey-Methode fehl.
 Um das Problem zu beheben, suchen Sie die Datei `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` und aktualisieren Sie alle Vorkommen von `Adobe_Adobe_JAVA_HOME` auf `Adobe_JAVA_HOME`, bevor Sie den Konfigurations-Manager ausführen. (CQDOC-20803)
 
-#### Servlet-Fragment installieren (AEM Service Pack 6.5.14.0 oder früher)
+#### Installation des Servlet-Fragments (AEM Service Pack 6.5.14.0 oder früher)
 
 * Wenn Sie ein Upgrade auf AEM Service Pack 6.5.15.0 oder höher durchführen und Ihre AEM-Instanz auf Tomcat 8.5.88 läuft, müssen Sie das Servlet-Fragment installieren. *before* Sie fahren mit der Installation von Service Pack 6.5.15.0 oder höher fort.
-* Sie müssen das Servlet-Fragment für alle Anwendungsserver installieren, mit Ausnahme der Anwendungsserver, die auf JBoss® EAP 7.4.0 ausgeführt werden.
+* Die Installation des Servlet-Fragments ist obligatorisch für alle Anwendungs-Server, mit Ausnahme derer, die auf JBoss® EAP 7.4.0 laufen.
 
-**Installieren des Servlet-Fragments:**
+**So installieren Sie das Servlet-Fragment:**
 
-1. Herunterladen des Servlet-Fragments aus [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar).
+1. Laden Sie das Servlet-Fragment von der [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) herunter.
 1. Starten Sie den Anwendungs-Server.
-1. Warten Sie, bis sich die Protokolle stabilisieren, und überprüfen Sie den Bundle-Status.
+1. Warten Sie, bis sich die Protokolle stabilisieren, und überprüfen Sie den Status des Bundles.
 1. Öffnen Sie Web-Konsole Bundles. Die Standard-URL ist `http://[Server]:[Port]/system/console/bundles`.
-1. Auswählen **[!UICONTROL Installieren]** oder **[!UICONTROL Aktualisieren]**.
-1. Heruntergeladenes Fragment auswählen
+1. Klicken Sie auf **[!UICONTROL Installieren]** oder **[!UICONTROL Aktualisieren]**.
+1. Wählen Sie das heruntergeladene Fragment aus
    `org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar`
-1. Auswählen **[!UICONTROL Installieren]** oder **[!UICONTROL Aktualisieren]**.
-1. Warten Sie, bis sich der Anwendungsserver stabilisiert hat.
+1. Klicken Sie auf **[!UICONTROL Installieren]** oder **[!UICONTROL Aktualisieren]**.
+1. Warten Sie, bis sich der Anwendungs-Server stabilisiert hat.
 1. Stoppen Sie den Anwendungs-Server.
 
 #### Adaptive Formulare
@@ -468,8 +468,9 @@ Um das Problem zu beheben, suchen Sie die Datei `<AEM_Forms_Installation_dir>\jb
 * Wenn ein adaptives Formular veröffentlicht wird, werden alle Abhängigkeiten, einschließlich Richtlinien, erneut veröffentlicht, selbst wenn keine Änderungen an ihnen vorgenommen wurden. (FORMS-10454)
 * Wenn Benutzende ein Feld erstmals in einem adaptiven Formular konfigurieren möchten, wird im Eigenschaften-Browser die Option zum Speichern einer Konfiguration nicht angezeigt. Das Problem lässt sich beheben, indem Sie im selben Editor ein anderes Feld des adaptiven Formulars konfigurieren.
 * Wenn eine Umleitungs-URL im Guide-Container eines adaptiven Formulars festgelegt ist, funktioniert die Inline-Signatur nicht mehr. (FORMS-10493)
-Um das Problem zu beheben, laden Sie die [Hotfix für 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
-* Die Veröffentlichung aller Datensatzdokumentvorlagen (DoR) schlägt fehl. Es werden nur englischsprachige, gebietsschemabasierte DoR-Vorlagen und die zugehörigen Forms-basierten DoR-Vorlagen veröffentlicht. (FORMS-10535) Um das Problem zu beheben, laden Sie die [Hotfix für 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+Um das Problem zu beheben, laden Sie den [Hotfix für 6.5.18.0](/help/release-notes/aem-forms-hotfix.md) herunter und installieren Sie ihn.
+* Die Veröffentlichung aller Datensatzdokumentvorlagen (DoR) schlägt fehl. Es werden nur englischsprachige, gebietsschemabasierte DoR-Vorlagen und die zugehörigen Forms-basierten DoR-Vorlagen veröffentlicht. (FORMS-10535)
+Um das Problem zu beheben, laden Sie den [Hotfix für 6.5.18.0](/help/release-notes/aem-forms-hotfix.md) herunter und installieren Sie ihn.
 
 
 #### Interaktive Kommunikationen
