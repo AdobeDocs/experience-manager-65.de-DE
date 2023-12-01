@@ -3,10 +3,10 @@ title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 8d06457241919095fd9802f69df426a1cc6851da
+source-git-commit: f8f82ad5805095f331432471b614225f761e645c
 workflow-type: tm+mt
-source-wordcount: '3675'
-ht-degree: 93%
+source-wordcount: '3530'
+ht-degree: 92%
 
 ---
 
@@ -38,23 +38,12 @@ ht-degree: 93%
 
 * _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
+**Wichtige Funktionen und Verbesserungen**
+
 Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enthalten sind:
 
-**Wichtigste Funktionen**
-
-* Assets, Dynamic Media: [-Unterstützung für mehrere Untertitel und mehrere Audiospuren für Videos in Dynamic Media](/help/assets/video.md#about-msma) – Sie können jetzt ganz einfach mehrere Untertitel und mehrere Audiospuren zu einem primären Video hinzufügen.  Diese Funktion bedeutet, dass Ihre Videos für eine globale Zielgruppe zugänglich sind. Sie können ein einzelnes veröffentlichtes primäres Video für eine globale Zielgruppe in mehreren Sprachen anpassen und die Richtlinien zur Barrierefreiheit für verschiedene geografische Regionen einhalten. Autorinnen und Autoren können die Untertitel und Audiospuren auch über eine einzige Registerkarte in der Benutzeroberfläche verwalten.
-
-* Assets – Von den Suchergebnissen aus können Sie jetzt zum Ordnerspeicherort navigieren, der ein Asset enthält, damit Sie verschiedene Asset-Management-Aufgaben ausführen können. (ASSETS-23182)
-
-**Wichtige Verbesserungen**
-
-* Sites Polaris Picker in Inhaltsfragmenten hat eine verbesserte Leistung.  (SITES-14092)
-
 * Ermöglicht den Benutzenden des Seiteneditors bzw. der Bildkomponente die Referenzierung von Assets aus dem Remote Assets Cloud Service.  (SITES-13448, SITES-13433)
-
-* Um in der Listenansicht, in der sich möglicherweise viele Projekte in Ihrem System befinden, schnell ein Projekt zu finden, unterstützt Adobe jetzt die Server-seitige Sortierung. Projektknoten werden nach der von Benutzenden ausgewählten Spalte im Backend sortiert, bevor sie in der Benutzeroberfläche gerendert werden. (NPR-41027)
-
-* AEM 6.5.19.0 unterstützt MongoDB 5.0 bis 6.0.
+* AEM unterstützt jetzt die serverseitige Sortierung für eine schnellere Projektnavigation in der Listenansicht. Projektknoten werden nach der vom Benutzer ausgewählten Spalte sortiert, bevor sie in der Benutzeroberfläche angezeigt werden.
 
 **Veraltete Funktion**
 
@@ -292,7 +281,7 @@ Anweisungen zur Installation des Service Packs für Experience Manager Forms fin
 
 >[!NOTE]
 >
->Die Funktion „Adaptive Formulare“, verfügbar in [AEM 6.5 QuickStart](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=de), dient nur zu Kennenlern- und Evaluierungszwecken. Für die Verwendung in der Produktion muss eine gültige Lizenz für AEM Forms erworben werden, da für die Funktion „Adaptive Formulare“ eine Lizenzierung erforderlich ist.
+>Die Funktion „Adaptive Formulare“, verfügbar in [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=de), dient nur zu Kennenlern- und Evaluierungszwecken. Für die Verwendung in der Produktion muss eine gültige Lizenz für AEM Forms erworben werden, da für die Funktion „Adaptive Formulare“ eine Lizenzierung erforderlich ist.
 
 ### Installieren des GraphQL-Indexpakets für Experience Manager-Inhaltsfragmente{#install-aem-graphql-index-add-on-package}
 
@@ -458,7 +447,7 @@ Um das Problem zu beheben, suchen Sie die Datei `<AEM_Forms_Installation_dir>\jb
 
 #### Servlet-Fragment installieren (AEM Service Pack 6.5.14.0 oder früher)
 
-* Wenn Sie auf AEM Service Pack 6.5.15.0 oder eine höhere Version aktualisieren und Ihre AEM-Instanz auf Tomcat 8.5.88 ausgeführt wird, müssen Sie das Servlet-Fragment installieren. *before* Sie fahren mit der Installation von Service Pack 6.5.15.0 oder höher fort.
+* Wenn Sie ein Upgrade auf AEM Service Pack 6.5.15.0 oder höher durchführen und Ihre AEM-Instanz auf Tomcat 8.5.88 läuft, müssen Sie das Servlet-Fragment installieren. *before* Sie fahren mit der Installation von Service Pack 6.5.15.0 oder höher fort.
 * Sie müssen das Servlet-Fragment für alle Anwendungsserver installieren, mit Ausnahme der Anwendungsserver, die auf JBoss® EAP 7.4.0 ausgeführt werden.
 
 **Installieren des Servlet-Fragments:**
@@ -485,8 +474,7 @@ Um das Problem zu beheben, laden Sie die [Hotfix für 6.5.18.0](/help/release-no
 
 #### Interaktive Kommunikationen
 
-* Nach der Aktualisierung auf AEM Service Pack 18 ist es nicht möglich, die interaktive Kommunikation mit großen Inline-Bildern im Bearbeitungsmodus zu öffnen. (FORMS-10578)
-Um das Problem zu beheben, laden Sie das [Hotfix für 6.5.18.0](/help/release-notes/aem-forms-hotfix.md) herunter.
+* Nach der Aktualisierung auf AEM Service Pack 18 ist es nicht möglich, die interaktive Kommunikation mit großen Inline-Bildern im Bearbeitungsmodus zu öffnen. (FORMS-10578) Um das Problem zu beheben, installieren Sie die [Hotfix für 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 
