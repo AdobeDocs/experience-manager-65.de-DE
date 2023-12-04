@@ -4,10 +4,10 @@ description: Installieren Sie AEM Forms-Dokumentendienste, um PDF-Dokumente zu e
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 03ed3606e89d87bf2f95b56a1eeb6b7dc4bec13a
+source-git-commit: 2ad9cea10bcd152f4d2d874553bdbd3133dbe847
 workflow-type: tm+mt
-source-wordcount: '5521'
-ht-degree: 77%
+source-wordcount: '5499'
+ht-degree: 78%
 
 ---
 
@@ -30,7 +30,7 @@ AEM Forms bietet eine Reihe von OSGi-Diensten für verschiedene Vorgänge auf Do
 
 * **Output-Service:** Er ermöglicht das Erstellen von Dokumenten in verschiedenen Formaten, einschließlich PDF, Laserdruckerformate und Beschriftungsdruckerformate. Laser-Druckerformate sind PostScript und Printer Control Language (PCL). Weitere Informationen finden Sie unter [Output-Service](/help/forms/using/output-service.md).
 
-* **PDF Generator-Dienst:** Der PDF Generator-Dienst stellt APIs zum Konvertieren nativer Dateiformate in PDF bereit. Es kann außerdem PDF-Dokumente in andere Dateiformate konvertieren und die Größe von PDF-Dokumenten optimieren. Weitere Informationen finden Sie unter [PDF Generator-Service](aem-document-services-programmatically.md#pdfgeneratorservice).
+* **PDF Generator-Service** Der PDF Generator-Service stellt APIs zum Konvertieren nativer Dateiformate in PDF bereit. Es kann außerdem PDF-Dokumente in andere Dateiformate konvertieren und die Größe von PDF-Dokumenten optimieren. Weitere Informationen finden Sie unter [PDF Generator-Service](aem-document-services-programmatically.md#pdfgeneratorservice).
 
 * **Reader Extensions-Service:** Ermöglicht Unternehmen die einfache Freigabe interaktiver PDF-Dokumente durch Erweitern der Funktionalität von Adobe Reader durch zusätzliche Verwendungsrechte. Dieser Dienst aktiviert Funktionen, die nicht verfügbar sind, wenn ein PDF-Dokument in Adobe Reader geöffnet wird, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments. Weitere Informationen finden Sie unter [Reader Extension-Service](/help/forms/using/overview-aem-document-services.md#reader-extension-service).
 
@@ -42,7 +42,7 @@ AEM Forms bietet eine Reihe von OSGi-Diensten für verschiedene Vorgänge auf Do
 
   Der Signature-Dienst greift auf Zertifikate und Berechtigungen zu, die im Trust Store gespeichert sind. Weitere Informationen finden Sie unter [Signature-Service](/help/forms/using/aem-document-services-programmatically.md).
 
-AEM Forms ist eine leistungsstarke Plattform der Unternehmensklasse, und Document Services ist nur eine der Funktionen von AEM Forms. Eine vollständige Liste der Funktionen finden Sie unter [Einführung in AEM Forms](/help/forms/using/introduction-aem-forms.md).
+AEM Forms ist eine leistungsfähige Plattform der Enterprise-Klasse und die Document-Services gehören zu den Funktionen von AEM Forms. Eine vollständige Liste der Funktionen finden Sie unter [Einführung in AEM Forms](/help/forms/using/introduction-aem-forms.md).
 
 ## Bereitstellungstopologie {#deployment-topology}
 
@@ -669,10 +669,6 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
 
 +++
 
-+ + + Microsoft Office 2019 wird auf Microsoft Windows Server 2019 nicht ausgeführt
-
-* Stellen Sie sicher, dass Sie keine aktive Remote-Verbindung mit AEM Server haben.
-
  +++ Probleme bei der Konvertierung von HTML in PDF
 
 * Stellen Sie sicher, dass Schriftartenordner in der PDF Generator-Konfigurationsoberfläche hinzugefügt werden.
@@ -792,7 +788,9 @@ Wenn der Benutzer versucht, Word- oder Excel-Dateien unter Microsoft Windows Ser
 *Fehlermeldung des primären Konverters:
 ALC-PDG-015-003-Das System kann die Eingabedatei nicht öffnen. Senden Sie die Datei erneut oder kontaktieren Sie Ihren Systemadministrator.*
 
-Informationen zum Beheben der Probleme finden Sie unter [Konvertieren von Word- oder Excel-Dateien in PDF unter Windows Server nicht möglich](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+Informationen zum Beheben des Problems finden Sie unter [Konvertieren von Word- oder Excel-Dateien in PDF ist unter Windows Server nicht möglich](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+
++++
 
 +++ Excel-Dateien können unter Windows Server 2019 nicht in PDF konvertiert werden
 
@@ -801,14 +799,17 @@ Wenn Sie Microsoft Excel 2019 auf Microsoft Windows Server 2019 in PDF konvertie
 * Bei Verwendung des PDF Generator-Dienstes sollte Ihr Windows-Computer keine aktive Remote-Verbindung mit dem AEM-Server (Windows RDP-Sitzung) haben.
 * Der Standarddrucker muss auf Adobe PDF eingestellt sein.
 
->[!NOTE]
-* Für Apple macOS und Ubuntu OS müssen Sie die oben genannten Einstellungen nicht konfigurieren.
+  >[!NOTE]
+  * Für Apple macOS und Ubuntu OS müssen Sie die oben genannten Einstellungen nicht konfigurieren.
+
++++
 
 +++ XPS-Dateien können nicht in PDF konvertiert werden
 
 Um das Problem zu beheben, [Erstellen eines funktionsspezifischen Registrierungsschlüssels unter Windows](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
 
 +++
+
 
 ## Nächste Schritte {#next-steps}
 
