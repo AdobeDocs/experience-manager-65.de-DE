@@ -4,10 +4,10 @@ description: Der Tough Day-Test simuliert die tägliche Belastung von etwa 1000 
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1822'
-ht-degree: 53%
+source-wordcount: '1824'
+ht-degree: 54%
 
 ---
 
@@ -238,7 +238,7 @@ tests:
   - add : CreatePageTreeTest
 ```
 
-Sie können vorhandene Tests in einer bestimmten Suite mit dem Parameter* *`config` auch neu konfigurieren. Sie müssen auch den Suite-Namen und den tatsächlichen Namen des Tests angeben (nicht den Namen der Testklasse). Den Testnamen finden Sie in der Eigenschaft `name` der Testklasse. Weitere Informationen zum Finden von Testeigenschaften finden Sie im Abschnitt [Ändern von Testeigenschaften](/help/sites-developing/tough-day.md#changing-the-test-properties).
+Sie können vorhandene Tests in einer bestimmten Suite mit dem Parameter* *`config` auch neu konfigurieren. Geben Sie auch den Suite-Namen und den tatsächlichen Namen des Tests an (nicht den Namen der Testklasse). Den Testnamen finden Sie in der Eigenschaft `name` der Testklasse. Weitere Informationen zum Finden von Testeigenschaften finden Sie im Abschnitt [Ändern von Testeigenschaften](/help/sites-developing/tough-day.md#changing-the-test-properties).
 
 Im nachfolgenden Beispiel wird der Standardtitel des Assets für den Test `CreatePageTreeTest` (namens `UploadAsset`) in „NewAsset“ geändert.
 
@@ -260,7 +260,7 @@ tests:
       title : NewAsset
 ```
 
-Sie können Tests auch aus vordefinierten Suites oder Herausgebern aus der Standardkonfiguration entfernen, indem Sie `exclude` -Parameter. Sie müssen auch den Suite-Namen und den tatsächlichen Namen des Tests angeben (nicht den Test C `lass` name). Den Testnamen finden Sie in der Eigenschaft `name` der Testklasse. Im nachfolgenden Beispiel wird der Test `CreatePageTreeTest` (namens `UploadAsset`) von der Tough Day-Suite entfernt.
+Sie können Tests auch aus vordefinierten Suites oder Herausgebern aus der Standardkonfiguration entfernen, indem Sie `exclude` -Parameter. Geben Sie auch den Suite-Namen und den tatsächlichen Namen des Tests an (nicht den Test C `lass` name). Den Testnamen finden Sie in der Eigenschaft `name` der Testklasse. Im nachfolgenden Beispiel wird der Test `CreatePageTreeTest` (namens `UploadAsset`) von der Tough Day-Suite entfernt.
 
 Mithilfe von Befehlszeilenparametern:
 

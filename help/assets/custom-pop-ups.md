@@ -9,9 +9,9 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '930'
 ht-degree: 96%
 
 ---
@@ -109,7 +109,7 @@ Angenommen, Sie verwenden auf Ihrer Web-Seite für ein interaktives Bild den fol
    * Interaktiver Bild-Viewer: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=de](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=de)
    * Interaktiver Video-Viewer: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=de](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=de)
 
-1. Sie müssen die `quickViewActivate` Handler.
+1. Konfigurieren Sie die `quickViewActivate` Handler.
 
    Der Handler `quickViewActivate` steuert die Schnellansichten im Viewer. Der Handler enthält die Variablenliste und die Funktionsaufrufe, die mit der Schnellansicht verwendet werden. Der Einbettungs-Code stellt die Zuordnung für das SKU-Variablenset in der Schnellansicht sowie ein Beispiel für einen Aufruf der Funktion `loadQuickView` bereit.
 

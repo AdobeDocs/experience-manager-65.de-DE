@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: e1de20b0-6d7a-4bda-b62f-c2808fd0af28
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 21%
+source-wordcount: '428'
+ht-degree: 22%
 
 ---
 
@@ -19,7 +19,7 @@ We.Retail wurde mit einer globalisierten Site-Struktur erstellt, die einen Sprac
 
 ## Testen {#trying-it-out}
 
-1. Öffnen Sie die Sites-Konsole über **Globale Navigation -> Sites**.
+1. Öffnen Sie die Sites-Konsole über **Globale Navigation > Sites**.
 1. Wechseln Sie zur Spaltenansicht (falls noch nicht aktiv) und wählen Sie We.Retail aus. Beachten Sie die Beispiellandstruktur mit der Schweiz, den USA, Frankreich usw. neben dem Sprachmaster.
 
    ![chlimage_1-87](assets/chlimage_1-87a.png)
@@ -46,7 +46,7 @@ We.Retail wurde mit einer globalisierten Site-Struktur erstellt, die einen Sprac
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
-1. Für jede Sprachübersetzung wird ein Projekt erstellt. Anzeigen unter **Navigation -> Projekte**.
+1. Für jede Sprachübersetzung wird ein Projekt erstellt. Anzeigen unter **Navigation > Projekte**.
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 

@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 40%
+source-wordcount: '1961'
+ht-degree: 37%
 
 ---
 
@@ -208,7 +208,7 @@ Mittels ClientContext-Bearbeitung können die Werte bestimmter Eigenschaften fes
 
 ### Hinzufügen von Eigenschaftskomponenten {#adding-a-property-component}
 
-Nach dem Öffnen der **ClientContext-Designseite** können Sie auch eine vollkommen neue Eigenschaft mithilfe der verfügbaren Komponenten **hinzufügen**. (Diese Komponenten werden sowohl im Sidekick als auch im Dialogfeld **Neue Komponente einfügen** aufgeführt. Letzteres rufen Sie per Doppelklick im Feld **Komponenten oder Assets hierhin ziehen** auf.)
+Nachdem Sie die **ClientContext-Designseite** können Sie auch **Hinzufügen** eine vollständig neue Eigenschaft mit den verfügbaren Komponenten (die Komponenten werden sowohl im Sidekick als auch aus dem **Neue Komponente einfügen** Dialogfeld, das nach einem Doppelklick auf die **Komponenten oder Assets hierher ziehen** -Feld):
 
 ![Hinzufügen einer Eigenschaft zum ClientContext-Fenster](assets/clientcontext_alisonparker_new.png)
 

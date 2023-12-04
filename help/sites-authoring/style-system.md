@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 86%
+source-wordcount: '1293'
+ht-degree: 83%
 
 ---
 
@@ -80,7 +80,7 @@ Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, gehen 
 
    ![Stilsystem für den Autor](assets/style-system-author.png)
 
-1. Tippen oder klicken Sie auf die Schaltfläche **Stile** in der Symbolleiste der Komponente **Liste**, um das Stilmenü zu öffnen und das Erscheinungsbild der Komponente zu bearbeiten.
+1. Klicken Sie auf **Stile** in der Symbolleiste der **Liste** -Komponente, um das Stilmenü zu öffnen und das Erscheinungsbild der Komponente zu ändern.
 
    ![Auswählen von Stilen](assets/style-system-author2.png)
 
@@ -90,7 +90,7 @@ Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, gehen 
 
 ### Als Vorlagenautor {#as-a-template-author}
 
-1. Bei der Bearbeitung der englischsprachigen Primär-Homepage von WKND unter `http://<host>:<port>/sites.html/content/wknd/language-masters/en` können Sie die Vorlage der Seite über **Seiteninformationen > Vorlage bearbeiten** anpassen.
+1. Beim Bearbeiten der englischsprachigen Master-Homepage von WKND unter `http://<host>:<port>/sites.html/content/wknd/language-masters/en`die Vorlage der Seite über **Seiteninformationen > Vorlage bearbeiten**.
 
    ![Vorlage bearbeiten](assets/style-system-edit-template.png)
 

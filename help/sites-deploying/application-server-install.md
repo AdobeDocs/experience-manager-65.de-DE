@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 44%
+source-wordcount: '1168'
+ht-degree: 43%
 
 ---
 
@@ -175,7 +175,7 @@ Hierbei wird ein einfaches Server-Layout mit nur einem Admin-Server verwendet.
    * Entfernen Sie die Kommentarzeichen für den anfänglichen Parameter „sling.home“ und legen Sie diesen Pfad nach Bedarf fest (siehe „Allgemeine Beschreibung“).
    * Packen Sie die Datei „web.xml“ erneut.
 
-* Bereitstellen der AEM-WAR-Datei als Anwendung (für die anderen Einstellungen verwenden Sie die Standardeinstellungen)
+* Bereitstellen AEM WAR-Datei als Anwendung (für die anderen Einstellungen verwenden Sie die Standardeinstellungen)
 * Die Installation kann einige Zeit dauern...
 * Vergewissern Sie sich, dass die Installation wie oben in der allgemeinen Beschreibung beschrieben abgeschlossen ist (z. B. durch Aufrufen der Datei error.log).
 * Sie können den Kontextstamm auf der Konfigurationsregisterkarte der Webanwendung in der WebLogic-`/console` ändern.

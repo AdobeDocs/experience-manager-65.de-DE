@@ -2,10 +2,10 @@
 title: Häufig gestellte Fragen zu AEM
 description: Verwenden Sie diese häufig gestellten Fragen, um allgemeine Workflows oder Probleme in AEM zu verstehen, zu konfigurieren und zu beheben.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 48%
+source-wordcount: '1011'
+ht-degree: 41%
 
 ---
 
@@ -89,7 +89,7 @@ Wenn der Benutzer beim Hochladen der Filmdateien keine Löschberechtigungen unte
 
 #### Was sind die Standardeinstellungen für OOTB-Konfigurationen beim Erstellen von Sprachkopien? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
-Wenn Sie eine Kopie über die Touch-optimierte Benutzeroberfläche erstellen (**Verweise** -> **Sprachkopie aktualisieren**), wird unter der neuen Sprache ein neuer DAM-Ordner erstellt und von dort aus auf Assets verwiesen.
+Wenn Sie eine Sprachkopie über die Touch-Benutzeroberfläche erstellen (**Verweise** > **Sprachkopie aktualisieren**), wird unter der neuen Sprache ein neuer DAM-Ordner erstellt und von dort aus auf Assets verwiesen.
 
 Dies ist die Standardeinstellung für OOTB-Konfigurationen. Sie können in Übersetzungskonfigurationen für die Option **Seiten-Assets übersetzen** die Einstellung **Nicht übersetzen** festlegen.
 Klicken Sie dazu in AEM 6.4 auf **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services**.

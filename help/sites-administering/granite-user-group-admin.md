@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 89%
+source-wordcount: '951'
+ht-degree: 86%
 
 ---
 
@@ -94,7 +94,7 @@ Entweder **Benutzer** oder **Gruppen** über die Tools-Konsole die entsprechende
    * **Kontoeinstellungen**
 
       * **Status**
-Sie können das Konto als **aktiv** oder **inaktiv** markieren.
+Sie können das Konto als **active** oder **inactive**.
 
    * **Foto**
 
@@ -222,7 +222,7 @@ Sie können das Konto als **aktiv** oder **inaktiv** markieren.
 
 1. Das Formular **Gruppeneinstellungen bearbeiten** wird geöffnet.
 
-   Die Gruppenkennung entspricht der ursprünglichen, vorangestellt ist allerdings der Hinweis `Copy of`. Sie müssen die Kennung bearbeiten, da IDs keine Leerzeichen enthalten dürfen. Alle anderen Angaben bleiben gegenüber dem Original unverändert.
+   Die Gruppenkennung entspricht der ursprünglichen, vorangestellt ist allerdings der Hinweis `Copy of`. Bearbeiten Sie diese ID, da sie keine Leerzeichen enthalten darf. Alle anderen Details sind mit dem Original identisch.
 
    Sie können nun die Details wie unter [Hinzufügen neuer Gruppen](#adding-a-new-group) bearbeiten.
 

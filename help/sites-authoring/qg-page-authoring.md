@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1553'
-ht-degree: 88%
+source-wordcount: '1540'
+ht-degree: 76%
 
 ---
 
@@ -71,7 +71,7 @@ Es gibt verschiedene Möglichkeiten, eine Seite zu finden: Sie können navigiere
 
 1. Öffnen Sie die **Sites** -Konsole (mithilfe der **Sites** in der [Globale Navigation](/help/sites-authoring/basic-handling.md#global-navigation)) - wird ausgelöst (Dropdown), wenn Sie den Adobe Experience Manager-Link (oben links) auswählen.
 
-1. Navigieren Sie durch Tippen/Klicken auf die entsprechende Seite in der Baumstruktur nach unten. Die Darstellung der Seitenressourcen ist von der verwendeten Ansicht abhängig: [Karte, Liste oder Spalte](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
+1. Navigieren Sie in der Struktur nach unten, indem Sie auf die entsprechende Seite tippen/klicken. Wie die Seitenressourcen dargestellt werden, hängt von der verwendeten Ansicht ab - [Karte, Liste oder Spalte](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
@@ -102,11 +102,11 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
 
 1. Spaltenansicht:
 
-   * Tippen/klicken Sie auf die Miniatur für die gewünschte Ressource. Auf der Miniaturansicht wird die ausgewählte Ressource durch ein Häkchen gekennzeichnet
+   * Klicken Sie auf die Miniaturansicht der gewünschten Ressource. Auf der Miniaturansicht wird die ausgewählte Ressource durch ein Häkchen gekennzeichnet.
 
 1. Listenansicht:
 
-   * Tippen/klicken Sie auf die Miniatur für die gewünschte Ressource. Auf der Miniaturansicht wird die ausgewählte Ressource durch ein Häkchen gekennzeichnet
+   * Klicken Sie auf die Miniaturansicht der gewünschten Ressource. Auf der Miniaturansicht wird die ausgewählte Ressource durch ein Häkchen gekennzeichnet.
 
 1. Kartenansicht:
 
@@ -158,7 +158,7 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
 
    * [Den Inhalt einer vorhandenen Komponente](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) auf der Seite bearbeiten:
 
-      * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Öffnen Sie das Dialogfeld über das Symbol **Bearbeiten** (Bleistift).
+      * Öffnen Sie die Komponenten-Symbolleiste mit einem Klick. Öffnen Sie das Dialogfeld über das Symbol **Bearbeiten** (Bleistift).
       * Öffnen Sie den Editor für Bearbeitung in Kontext durch langes Tippen oder langsamen Doppelklick. Die verfügbaren Aktionen werden angezeigt (bei einigen Komponenten ist dies eine begrenzte Auswahl).
       * Um alle verfügbaren Aktionen anzuzeigen, gehen Sie wie folgt in den Vollbildmodus:
 
@@ -166,16 +166,16 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
 
    * [Die Eigenschaften einer vorhandenen Komponente konfigurieren](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
-      * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie das Symbol **Konfigurieren** (Schraubenschlüssel), um den Dialog zu öffnen.
+      * Öffnen Sie die Komponenten-Symbolleiste mit einem Klick. Verwenden Sie das Symbol **Konfigurieren** (Schraubenschlüssel), um den Dialog zu öffnen.
 
    * [Verschieben](/help/sites-authoring/editing-content.md#moving-a-component) Sie eine Komponente mit einem der folgenden Verfahren:
 
       * Ziehen Sie die gewünschte Komponente an die neue Position.
-      * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie die Symbole **Ausschneiden** und **Einfügen** nach Bedarf.
+      * Öffnen Sie die Komponenten-Symbolleiste mit einem Klick. Verwenden Sie die **Ausschneiden** then **Einfügen** Symbole, falls erforderlich.
 
    * Wenden Sie die Aktionen [Kopieren (und Einfügen)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) auf eine Komponente an:
 
-      * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie die Symbole **Kopieren** und **Einfügen** nach Bedarf.
+      * Öffnen Sie die Komponenten-Symbolleiste mit einem Klick. Verwenden Sie die **Kopieren** then **Einfügen** nach Bedarf.
 
    >[!NOTE]
    >
@@ -183,7 +183,7 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
 
    * Eine Komponente [löschen](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste):
 
-      * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie dann das Symbol **Löschen**.
+      * Öffnen Sie die Komponenten-Symbolleiste mit einem Klick und verwenden Sie dann die **Löschen** Symbol.
 
    * Fügen Sie der Seite [Anmerkungen](/help/sites-authoring/annotations.md#annotations) hinzu:
 
@@ -305,7 +305,7 @@ Beispielsweise sieht das Schloss-Symbol folgendermaßen aus:
 
    ![screen-shot_2019-03-05at114412](assets/screen-shot_2019-03-05at114412.png)
 
-1. Tippen/klicken Sie auf den gewünschten Verweistyp, um weitere Details anzuzeigen und (bei Bedarf) weitere Aktionen auszuführen.
+1. Klicken Sie auf den gewünschten Referenztyp, um weitere Details anzuzeigen und (falls zutreffend) weitere Maßnahmen zu ergreifen.
 
 ### Erstellen einer Seitenversion {#creating-a-version-of-your-page}
 
@@ -315,7 +315,7 @@ So erstellen Sie eine [Version](/help/sites-authoring/working-with-page-versions
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
-1. Tippen oder klicken Sie unten rechts in der Spalte „Zeitleiste“ auf den Nach-oben-Pfeil, um weitere Schaltflächen einzublenden, darunter auch **Als Version speichern**.
+1. Klicken Sie unten rechts in der Spalte &quot;Timeline&quot;auf den Nach-oben-Pfeil, um zusätzliche Schaltflächen anzuzeigen, darunter **Als Version speichern**.
 
    ![screen-shot_2019-03-05at114600](assets/screen-shot_2019-03-05at114600.png)
 
@@ -331,7 +331,7 @@ Beim Wiederherstellen und/oder Vergleichen von Seitenversionen wird dasselbe gru
 
    Wenn bereits eine Version der Seite gespeichert wurde, wird diese in der Timeline aufgeführt.
 
-1. Tippen/klicken Sie auf die Version, die Sie wiederherstellen möchten. Dadurch werden zusätzliche Aktionsschaltflächen angezeigt:
+1. Klicken Sie auf die Version, die Sie wiederherstellen möchten. Daraufhin werden zusätzliche Aktionsschaltflächen angezeigt:
 
    * **Auf diese Version zurück**
 

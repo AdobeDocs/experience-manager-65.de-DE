@@ -3,9 +3,9 @@ title: Konfigurieren der Rich-Text-Editor-Plug-ins
 description: Erfahren Sie, wie Sie die Rich-Text-Editor-Plug-ins von Adobe Experience Manager konfigurieren, um einzelne Funktionen zu aktivieren.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4395'
+source-wordcount: '4391'
 ht-degree: 62%
 
 ---
@@ -226,7 +226,7 @@ Dazu aktivieren Sie das Stil-Plug-in.
 
 Geben Sie dann die Speicherorte der Stylesheets an, auf die Sie verweisen möchten:
 
-1. Navigieren Sie zum Stammknoten der Textkomponente, beispielsweise, `/apps/<myProject>/components/text`.
+1. Navigieren Sie zum Stammknoten Ihrer Textkomponente, z. B. `/apps/<myProject>/components/text`.
 1. Fügen Sie dem übergeordneten Knoten des Knotens `<rtePlugins-node>` die Eigenschaft `externalStyleSheets` hinzu:
 
    * **Name** `externalStyleSheets`
@@ -587,7 +587,7 @@ Eine standardmäßige AEM-Installation beinhaltet die Wörterbücher für amerik
 >
 Die RTE-Rechtschreibprüfung ist nur auf Abruf verfügbar. Sie wird nicht automatisch ausgeführt, wenn Sie beginnen, Text einzugeben. Aktivieren Sie die Rechtschreibprüfung, indem Sie in der Symbolleiste auf [!UICONTROL Rechtschreibprüfung] klicken. Der RTE überprüft die Rechtschreibung der Wörter und markiert falsch geschriebene Wörter.
 >
-Wenn Sie eine Änderung annehmen, die die Rechtschreibprüfung vorschlägt, ändert sich der Status des Textes und das falsch geschriebene Wort ist nicht länger markiert. Tippen/klicken Sie erneut auf die Schaltfläche „Rechtschreibprüfung“, um die Rechtschreibprüfung auszuführen.
+Wenn Sie eine Änderung annehmen, die die Rechtschreibprüfung vorschlägt, ändert sich der Status des Textes und das falsch geschriebene Wort ist nicht länger markiert. Um die Rechtschreibprüfung auszuführen, klicken Sie erneut auf die Schaltfläche Rechtschreibprüfung .
 
 ## Konfigurieren der Verlaufsgröße für die Aktionen „Rückgängig“ und „Wiederholen“ {#undohistory}
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1884'
+source-wordcount: '1890'
 ht-degree: 39%
 
 ---
@@ -109,12 +109,12 @@ Wenn Sie die automatische Datenspeicherbereinigung außerhalb dieses Zeitraums a
 
 Bevor Sie die automatische Datenspeicherbereinigung ausführen, sollten Sie überprüfen, ob derzeit keine Sicherungen ausgeführt werden.
 
-1. Öffnen Sie das Vorgangs-Dashboard durch **Navigation** -> **Instrumente** -> **Aktivitäten** -> **Wartung**.
-1. Klicken oder tippen Sie auf **Wöchentliches Wartungsfenster**.
+1. Öffnen Sie das Vorgangs-Dashboard durch **Navigation** > **Instrumente** > **Aktivitäten** > **Wartung**.
+1. Klicken Sie auf **Wöchentliches Wartungsfenster**.
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
-1. Wählen Sie die Aufgabe **Automatische Datenspeicherbereinigung** und klicken oder tippen Sie auf das Symbol **Ausführen**.
+1. Wählen Sie die **Datenspeicherbereinigung** und klicken Sie dann auf **Ausführen** Symbol.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '538'
 ht-degree: 28%
 
 ---
@@ -21,7 +21,7 @@ Die Kernkomponenten sind moderne, flexible Komponenten mit einfacher Erweiterbar
 
 1. Starten Sie Adobe Experience Manager (AEM) mit dem Beispielinhalt &quot;We.Retail&quot;und öffnen Sie die [Komponentenkonsole](/help/sites-authoring/default-components-console.md).
 
-   **Globale Navigation -> Tools -> Komponenten**
+   **Globale Navigation > Tools > Komponenten**
 
 1. Wenn Sie die Leiste in der Komponentenkonsole öffnen, können Sie nach einer bestimmten Komponentengruppe filtern. Die Kernkomponenten finden Sie unter
 

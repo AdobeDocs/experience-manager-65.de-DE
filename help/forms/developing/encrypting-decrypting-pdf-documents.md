@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '8184'
+source-wordcount: '8133'
 ht-degree: 97%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 97%
 
 **Über den Verschlüsselungsdienst**
 
-Mit dem Verschlüsselungsdienst können Sie Dokumente verschlüsseln und entschlüsseln. Wenn ein Dokument verschlüsselt wird, ist sein Inhalt unlesbar. Ein autorisierter Benutzer kann das Dokument entschlüsseln, um Zugriff auf den Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, muss der Benutzer das Kennwort zum Öffnen angeben, damit das Dokument in Adobe Reader oder Adobe Acrobat angezeigt werden kann. Wenn ein PDF-Dokument mit einem Zertifikat verschlüsselt ist, muss der Benutzer das PDF-Dokument mit dem öffentlichen Schlüssel entschlüsseln, der dem Zertifikat (privater Schlüssel) entspricht, das zum Verschlüsseln des PDF-Dokuments verwendet wurde.
+Mit dem Verschlüsselungsdienst können Sie Dokumente verschlüsseln und entschlüsseln. Wird ein Dokument verschlüsselt, ist sein Inhalt nicht mehr lesbar. Eine autorisierte Person kann das Dokument entschlüsseln, um Zugriff auf den Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, muss der Benutzer das Kennwort zum Öffnen angeben, damit das Dokument in Adobe Reader oder Adobe Acrobat angezeigt werden kann. Ähnlich muss die Person, wenn ein PDF-Dokument mit einem Zertifikat verschlüsselt ist, das PDF-Dokument mithilfe des öffentlichen Schlüssels entschlüsseln, der dem Zertifikat (privater Schlüssel) entspricht, das zum Verschlüsseln des PDF-Dokuments verwendet wurde.
 
 Sie können diese Aufgaben mithilfe des Verschlüsselungsdienstes erledigen:
 
@@ -80,7 +80,7 @@ Um programmgesteuert einen Vorgang des Verschlüsselungs-Dienstes durchzuführen
 
 **Abrufen eines zu verschlüsselnden PDF-Dokuments**
 
-Sie müssen ein unverschlüsseltes PDF-Dokument abrufen, um das Dokument mit einem Kennwort zu verschlüsseln. Wenn Sie versuchen, ein bereits verschlüsseltes PDF-Dokument zu schützen, wird eine Ausnahme ausgelöst.
+Rufen Sie ein unverschlüsseltes PDF-Dokument ab, um das Dokument mit einem Kennwort zu verschlüsseln. Wenn Sie versuchen, ein bereits verschlüsseltes PDF-Dokument zu schützen, wird eine Ausnahme ausgelöst.
 
 **Laufzeitoptionen für die Verschlüsselung festlegen**
 
@@ -289,7 +289,7 @@ Um einen Vorgang des Verschlüsselungs-Services programmgesteuert durchführen z
 
 **Abrufen eines zu verschlüsselnden PDF-Dokuments**
 
-Sie müssen zum Verschlüsseln ein unverschlüsseltes PDF-Dokument abrufen. Wenn Sie versuchen, ein bereits verschlüsseltes PDF-Dokument zu verschlüsseln, wird eine Ausnahme ausgelöst.
+Rufen Sie ein unverschlüsseltes PDF-Dokument zum Verschlüsseln ab. Wenn Sie versuchen, ein bereits verschlüsseltes PDF-Dokument zu verschlüsseln, wird eine Ausnahme ausgelöst.
 
 **Referenzieren des Zertifikats**
 
@@ -499,7 +499,7 @@ Um einen Vorgang des Verschlüsselungs-Services programmgesteuert durchführen z
 
 **Abrufen des verschlüsselten PDF-Dokuments**
 
-Sie müssen ein verschlüsseltes PDF-Dokument abrufen, um die zertifikatbasierte Verschlüsselung entfernen zu können. Wenn Sie versuchen, die Verschlüsselung von einem nicht verschlüsselten PDF-Dokument zu entfernen, wird eine Ausnahme ausgelöst. Wenn Sie versuchen, die zertifikatbasierte Verschlüsselung aus einem kennwortverschlüsselten Dokument zu entfernen, wird eine Ausnahme ausgelöst.
+Rufen Sie ein verschlüsseltes PDF-Dokument ab, um die zertifikatbasierte Verschlüsselung zu entfernen. Wenn Sie versuchen, die Verschlüsselung von einem nicht verschlüsselten PDF-Dokument zu entfernen, wird eine Ausnahme ausgelöst. Wenn Sie versuchen, die zertifikatbasierte Verschlüsselung aus einem kennwortverschlüsselten Dokument zu entfernen, wird eine Ausnahme ausgelöst.
 
 **Entfernen der Verschlüsselung**
 
@@ -660,7 +660,7 @@ Um einen Vorgang des Verschlüsselungs-Services programmgesteuert durchführen z
 
 **Abrufen des verschlüsselten PDF-Dokuments**
 
-Sie müssen ein verschlüsseltes PDF-Dokument abrufen, um die kennwortbasierte Verschlüsselung entfernen zu können. Wenn Sie versuchen, die Verschlüsselung aus einem nicht verschlüsselten PDF-Dokument zu entfernen, wird eine Ausnahme ausgelöst.
+Rufen Sie ein verschlüsseltes PDF-Dokument ab, um kennwortbasierte Verschlüsselung zu entfernen. Wenn Sie versuchen, die Verschlüsselung aus einem nicht verschlüsselten PDF-Dokument zu entfernen, wird eine Ausnahme ausgelöst.
 
 **Entfernen des Kennworts**
 
@@ -807,7 +807,7 @@ Um einen Vorgang des Verschlüsselungs-Services programmgesteuert durchführen z
 
 **Abrufen des verschlüsselten PDF-Dokuments**
 
-Sie müssen ein verschlüsseltes PDF-Dokument abrufen, um es zu entsperren. Wenn Sie versuchen, ein nicht verschlüsseltes PDF-Dokument zu entsperren, wird eine Ausnahme ausgelöst.
+Rufen Sie ein verschlüsseltes PDF-Dokument ab, um es zu entsperren. Wenn Sie versuchen, ein nicht verschlüsseltes PDF-Dokument zu entsperren, wird eine Ausnahme ausgelöst.
 
 **Entsperren des Dokuments**
 
@@ -984,7 +984,7 @@ Um einen Vorgang des Verschlüsselungs-Services programmgesteuert durchführen z
 
 **Abrufen des verschlüsselten PDF-Dokuments**
 
-Sie müssen ein PDF-Dokument abrufen, um die Art der Verschlüsselung zu bestimmen, durch die es geschützt wird.
+Rufen Sie ein PDF-Dokument ab, um den Verschlüsselungstyp zu bestimmen, der ihn schützt.
 
 **Ermitteln des Verschlüsselungstyps**
 

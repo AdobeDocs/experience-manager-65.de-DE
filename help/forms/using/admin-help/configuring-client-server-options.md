@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '10221'
+source-wordcount: '10266'
 ht-degree: 27%
 
 ---
@@ -81,7 +81,7 @@ Um bei Suchen anhand von Benutzerrichtlinien Benutzer und Gruppen in ausgewählt
 
 Diese Liste wird dem Richtliniensatzkoordinator angezeigt und dient zum Einschränken der Domains, die der Endbenutzer beim Auswählen von Benutzern oder Gruppen durchsuchen kann, die Richtlinien hinzugefügt werden sollen. Wenn diese Aufgabe nicht ausgeführt wird, findet der Richtliniensatzkoordinator keine Benutzer oder Gruppen, die der Richtlinie hinzugefügt werden sollen. Für jeden Richtliniensatz kann es mehr als einen Richtliniensatzkoordinator geben.
 
-1. Richten Sie nach der Installation und Konfiguration der AEM Forms-Umgebung mit Document Security alle gewünschten Domains in User Management ein. <!-- Fix broken link (See Setting up and managing domains) -->
+1. Nachdem Sie Ihre AEM Forms-Umgebung mit Document Security installiert und konfiguriert haben, richten Sie alle entsprechenden Domänen in User Management ein. <!-- Fix broken link (See Setting up and managing domains) -->
 
    ***Hinweis **: Das Erstellen von Domains muss vor dem Erstellen von Richtlinien erfolgen.*
 
@@ -736,7 +736,7 @@ Sie können die folgenden Änderungen mithilfe der Konfigurationsdatei vornehmen
 
 >[!NOTE]
 >
->Beim Import der Konfigurationsdatei wird Ihr System basierend auf den Informationen in der Datei neu konfiguriert. Ausnahmen sind die Konfiguration dynamischer Wasserzeichen und benutzerdefinierte Ereignisinformationen, die nicht mit der exportierten Konfigurationsdatei gespeichert werden. Sie müssen diese Informationen manuell in Ihrem neuen System konfigurieren. Nur ein Systemadministrator oder ein Professional Services-Berater, der mit Document Security und XML vertraut ist, sollte den Inhalt einer Konfigurationsdatei ändern, z. B. um eine beschädigte Einstellung neu zu konfigurieren oder Parameter für ein bestimmtes Bereitstellungsszenario in einem Unternehmen anzupassen.
+>Beim Import der Konfigurationsdatei wird Ihr System basierend auf den Informationen in der Datei neu konfiguriert. Ausnahmen sind die Konfiguration dynamischer Wasserzeichen und benutzerdefinierte Ereignisinformationen, die nicht mit der exportierten Konfigurationsdatei gespeichert werden. Konfigurieren Sie diese Informationen manuell in Ihrem neuen System. Nur ein Systemadministrator oder ein Professional Services-Berater, der mit Document Security und XML vertraut ist, sollte den Inhalt einer Konfigurationsdatei ändern, z. B. um eine beschädigte Einstellung neu zu konfigurieren oder Parameter für ein bestimmtes Bereitstellungsszenario in einem Unternehmen anzupassen.
 
 **Konfigurationsdatei exportieren**
 
@@ -1006,7 +1006,7 @@ Die folgenden Änderungen an &quot;config.xml&quot;aktivieren die TLS-Unterstüt
 Die folgenden Änderungen an der Datei &quot;config.xml&quot;, um SOAP-Endpunkte für Document Security-Dokumente zu deaktivieren.
 
 1. Exportieren Sie die Document Security-Konfigurationsdatei. (Siehe [Manuelles Bearbeiten der Document Security-Konfigurationsdatei](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).
-1. Öffnen Sie die Konfigurationsdatei in einem Editor und suchen Sie den folgenden Knoten:  `<node name="DRM">`
+1. Öffnen Sie die Konfigurationsdatei in einem Editor und suchen Sie den folgenden Knoten: `<node name="DRM">`
 
    ```xml
    <node name="DRM">

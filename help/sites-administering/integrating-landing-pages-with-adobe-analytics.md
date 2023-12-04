@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 8ae7ccec-489b-4d20-ac56-6101402fb18a
 exl-id: da3f7b7e-87e5-446a-9a77-4b12b850a381
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 64%
+source-wordcount: '369'
+ht-degree: 57%
 
 ---
 
@@ -58,7 +58,7 @@ So ordnen Sie Einstiegsseitenkomponenten Adobe Analytics zu:
   <tr>
    <td><br type="_moz" /> </td>
    <td><i>eventdata.clickthroughLinkTarget</i> <br /> </td>
-   <td>Das Ziel, das aufgerufen wird, wenn Sie auf den Link klicken </td>
+   <td>Das Ziel, an das Sie beim Klicken auf den Link gelangt sind </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
@@ -73,7 +73,7 @@ So ordnen Sie Einstiegsseitenkomponenten Adobe Analytics zu:
   <tr>
    <td><br type="_moz" /> </td>
    <td><i>eventdata.clicktroughImageTarget</i> <br /> </td>
-   <td>Das Ziel, das aufgerufen wird, wenn Sie auf das Bild mit Link klicken</td>
+   <td>Das Ziel, an dem Sie beim Klicken auf das Bild, das einen Link enthält, geleitet werden</td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>

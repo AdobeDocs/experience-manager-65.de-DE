@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 454854f8-6053-406c-888d-f427777bf570
 exl-id: 2b17d8cd-a43c-4d54-b990-a6f0cb1db22b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 74%
+source-wordcount: '567'
+ht-degree: 75%
 
 ---
 
@@ -53,11 +53,11 @@ Führen Sie zur Integration mit Target die folgenden Aufgaben durch:
 
 >[!CAUTION]
 >
->Sie müssen den Aktivitätseinstellungsknoten sichern **cq:ActivitySettings** auf der Veröffentlichungsinstanz, sodass sie für normale Benutzer nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Service zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
+>Sie müssen den Aktivitätseinstellungsknoten **cq:ActivitySettings** auf der Publishing-Instanz sichern, sodass dieser für normale Benutzende nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Service zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
 >
 >Detaillierte Informationen finden Sie unter [Voraussetzungen für die Integration mit Adobe Target](/help/sites-administering/target-requirements.md#securing-the-activity-settings-node).
 
-Wenn die Integration abgeschlossen ist, können Sie [gezielte Inhalte verfassen](/help/sites-authoring/content-targeting-touch.md), die Besucherdaten an Adobe Target senden. Beachten Sie, dass Seitenkomponenten einen spezifischen Code für die Aktivierung von Content-Targeting benötigen. (Siehe [Entwicklung im Hinblick auf gezielte Inhalte](/help/sites-developing/target.md)).)
+Wenn die Integration abgeschlossen ist, können Sie [gezielte Inhalte verfassen](/help/sites-authoring/content-targeting-touch.md), die Besucherdaten an Adobe Target senden. Beachten Sie, dass Seitenkomponenten einen spezifischen Code für die Aktivierung von Content-Targeting benötigen. (Siehe [Entwickeln für zielgerichtete Inhalte](/help/sites-developing/target.md).
 
 >[!NOTE]
 >

@@ -7,10 +7,10 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2359'
-ht-degree: 59%
+source-wordcount: '2316'
+ht-degree: 58%
 
 ---
 
@@ -147,7 +147,7 @@ Verwenden Sie die Web-Konsole oder einen sling:OsgiConfig -Knoten, um die folgen
    <td>Topologie-Connectoren-Zulassungsliste</td>
    <td>topologyConnectorWhitelist</td>
    <td>Die Liste der IP-Adressen oder Hostnamen, die der lokale Topologie-Connector-Dienst in der Topologie zulässt. </td>
-   <td><p>localhost</p> <p>127.0.0.1</p> </td>
+   <td><p>localhost</p> <p>127,0,0,1</p> </td>
   </tr>
   <tr>
    <td>Repository-Deskriptorname</td>
@@ -229,7 +229,7 @@ Verwenden Sie die Web-Konsole oder einen `sling:OsgiConfig`-Knoten, um die folge
 
 ## Erstellen von Replikationsagenten für die Abladung {#creating-replication-agents-for-offloading}
 
-Das Abladungs-Framework überträgt Ressourcen mittels Replikation zwischen Autoren- und Worker-Instanzen. Das Framework erstellt automatisch Replikationsagenten, wenn Instanzen Mitglied der Topologie werden. Die Agenten werden mit Standardwerten erstellt. Sie müssen das Kennwort, das die Agenten für die Authentifizierung verwenden, manuell ändern.
+Das Abladungs-Framework überträgt Ressourcen mittels Replikation zwischen Autoren- und Worker-Instanzen. Das Framework erstellt automatisch Replikationsagenten, wenn Instanzen Mitglied der Topologie werden. Die Agenten werden mit Standardwerten erstellt. Ändern Sie manuell das Kennwort, das die Agenten für die Authentifizierung verwenden.
 
 >[!CAUTION]
 >

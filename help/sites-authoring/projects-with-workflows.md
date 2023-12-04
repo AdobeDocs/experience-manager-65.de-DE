@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 89%
+source-wordcount: '783'
+ht-degree: 75%
 
 ---
 
@@ -35,7 +35,7 @@ Je nachdem, welche Projektvorlage Sie auswählen, stehen Ihnen bestimmte Workflo
 |---|:-:|:-:|:-:|:-:|
 | Kopie anfragen |  | x |  |  |
 | Produkt-Fotoshooting |  | x | x |  |
-| Produkt-Fotoshooting   (Commerce) |  |  | x |  |
+| Produkt-Fotoshooting (Commerce) |  |  | x |  |
 | Projektvalidierung | x |  |  |  |
 | Launch anfragen | x |  |  |  |
 | Einstiegsseite anfragen | x |  |  |  |
@@ -63,7 +63,7 @@ Dieser Abschnitt beschreibt die Workflows, die für Projekte verfügbar sind.
 
 Mit diesem Workflow können Sie ein Manuskript von einem Benutzer anfragen und es dann genehmigen. So starten Sie den Workflow „Kopie anfragen“:
 
-1. Tippen oder klicken Sie in einem Medienprojekt auf den abwärts gerichteten Pfeil oben rechts in der Kachel **Workflows** und wählen Sie **Workflow starten**.
+1. Klicken Sie in einem Medienprojekt oben rechts im **Workflows** Kachel und wählen Sie **Workflow starten**.
 1. Wählen Sie im Workflow-Assistenten die Option **Kopie anfragen** und klicken Sie auf **Weiter**.
 1. Geben Sie einen Manuskripttitel und eine kurze Zusammenfassung dazu ein, was Sie anfragen. Geben Sie gegebenenfalls eine Zielwortanzahl, Aufgabenpriorität und ein Fälligkeitsdatum ein.
 
@@ -81,7 +81,7 @@ Die Workflows **Produkt-Fotoshooting** (mit oder ohne Commerce) werden im Dokume
 
 Im Workflow für **Projektbestätigung** weisen Sie Inhalte einem Benutzer zu, überprüfen diese und genehmigen sie dann.
 
-1. Tippen oder klicken Sie in einem einfachen Projekt auf den abwärts gerichteten Pfeil oben rechts in der Kachel **Workflows** und wählen Sie **Workflow starten**.
+1. Klicken Sie in einem einfachen Projekt oben rechts im **Workflows** Kachel und wählen Sie **Workflow starten**.
 1. Wählen Sie im Workflow-Assistenten die Option **Workflow für Projektbestätigung** und klicken Sie auf **Weiter**.
 1. Geben Sie einen Titel ein und wählen Sie aus, wem Sie ihn zuweisen möchten. Geben Sie bei Bedarf eine Beschreibung, einen Inhaltspfad, eine Aufgabenpriorität und ein Fälligkeitsdatum ein.
 
@@ -95,7 +95,7 @@ Der Workflow startet. Die Aufgabe erscheint auf der Karte **Aufgaben**.
 
 Mit diesem Workflow können Sie einen Launch anfragen.
 
-1. Tippen oder klicken Sie in einem einfachen Projekt auf den abwärts gerichteten Pfeil oben rechts in der Kachel **Workflows** und wählen Sie **Workflow starten**.
+1. Klicken Sie in einem einfachen Projekt oben rechts im **Workflows** Kachel und wählen Sie **Workflow starten**.
 1. Wählen Sie im Workflow-Assistenten die Option **Workflow „Launch anfragen“** und klicken Sie auf **Weiter**.
 1. Geben Sie einen Titel für den Launch ein und geben Sie den Launch-Quellpfad an. Sie können bei Bedarf auch eine Beschreibung und ein Live-Datum hinzufügen. Wählen Sie „Quellseiten-Live-Daten erben“ oder „Unterseiten ausschließen“ aus, je nachdem, wie der Launch sich verhalten soll.
 
@@ -109,7 +109,7 @@ Der Workflow startet. Der Workflow erscheint in der Liste **Workflows**.
 
 Mit diesem Workflow können Sie eine Landingpage anfragen.
 
-1. Tippen oder klicken Sie in einem einfachen Projekt auf den abwärts gerichteten Pfeil oben rechts in der Kachel **Workflows** und wählen Sie **Workflow starten**.
+1. Klicken Sie in einem einfachen Projekt oben rechts im **Workflows** Kachel und wählen Sie **Workflow starten**.
 1. Wählen Sie im Workflow-Assistenten die Option **Landingpage anfragen** und klicken Sie auf **Weiter**.
 1. Geben Sie einen Titel für Ihre Landingpage und den übergeordneten Pfad ein. Geben Sie gegebenenfalls ein Live-Datum ein oder wählen Sie eine Datei für Ihre Landingpage aus.
 
@@ -123,7 +123,7 @@ Der Workflow startet. Die Aufgabe erscheint auf der Karte **Aufgaben**.
 
 Mit diesem Workflow können Sie eine E-Mail anfragen. Es handelt sich um denselben Workflow, der im **E-Mails** Kachel.
 
-1. Tippen oder klicken Sie in einem einfachen Projekt auf den abwärts gerichteten Pfeil oben rechts in der Kachel **Workflows** und wählen Sie **Workflow starten**.
+1. Klicken Sie in einem einfachen Projekt oben rechts im **Workflows** Kachel und wählen Sie **Workflow starten**.
 1. Wählen Sie im Workflow-Assistenten die Option **E-Mail anfragen** und klicken Sie auf **Weiter**.
 1. Geben Sie einen E-Mail-Titel sowie den Kampagnen- und Vorlagenpfad ein. Darüber hinaus können Sie einen Namen, eine Beschreibung und ein Live-Datum angeben.
 

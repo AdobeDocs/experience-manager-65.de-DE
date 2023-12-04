@@ -3,10 +3,10 @@ title: Erstellen und Synchronisieren von Live Copies
 description: Erfahren Sie, wie Sie Live Copies in Adobe Experience Manager erstellen und synchronisieren.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4227'
-ht-degree: 64%
+source-wordcount: '4194'
+ht-degree: 59%
 
 ---
 
@@ -34,7 +34,7 @@ Wenn Sie eine Blueprint-Konfiguration erstellen, wählen Sie eine Vorlage aus, d
 
 Nachdem Sie die Blueprint-Konfiguration erstellt haben, können Sie die folgenden Eigenschaften konfigurieren:
 
-* **Name**: Name der Blueprint-Konfiguration.
+* **Name**: Der Name der Blueprint-Konfiguration.
 * **Quellpfad**: Der Pfad der Stammseite der Site, die Sie als Quelle (Blueprint) verwenden.
 * **Beschreibung**. (Optional) Eine Beschreibung der Blueprint-Konfiguration. Die Beschreibung wird in der Liste der Blueprint-Konfigurationen angezeigt, aus denen Sie beim Erstellen einer Site wählen können.
 
@@ -99,11 +99,11 @@ So erstellen Sie eine Live Copy:
 
    ![Live Copy erstellen](assets/chlimage_1-212.png)
 
-1. Wählen Sie die Quellseite aus und klicken oder tippen Sie auf **Weiter**. Beispiel:
+1. Wählen Sie die Quellseite aus und klicken Sie auf **Nächste**. Beispiel:
 
    ![Quellseite auswählen](assets/chlimage_1-213.png)
 
-1. Geben Sie den Zielpfad der Live Copy an (öffnen Sie den übergeordneten Ordner/die übergeordnete Seite der Live Copy) und klicken oder tippen Sie dann auf **Weiter**.
+1. Geben Sie den Zielpfad der Live Copy an (öffnen Sie den übergeordneten Ordner/die Seite der Live Copy) und klicken Sie dann auf **Nächste**.
 
    ![Ziel angeben](assets/chlimage_1-214.png)
 
@@ -124,7 +124,7 @@ So erstellen Sie eine Live Copy:
    * Bei Deaktivierung wird eine Live Copy mit allen Nachfolgeelementen der ausgewählten Seite erstellt (tiefe Live Copy).
 
 1. (Optional) Um eine oder mehrere Rollout-Konfigurationen für die Live Copy anzugeben, verwenden Sie die **Rollout-Konfigurationen** Dropdown-Liste, um sie auszuwählen. Ausgewählte Konfigurationen werden unter der Dropdown-Auswahl angezeigt.
-1. Klicken oder tippen Sie auf **Erstellen**. Eine Bestätigungsmeldung wird angezeigt. Hier können Sie entweder **Öffnen** oder **Fertig** auswählen.
+1. Klicken Sie auf **Erstellen**. Eine Bestätigungsmeldung wird angezeigt. Hier können Sie entweder **Öffnen** oder **Fertig** auswählen.
 
 ### Erstellen von Live Copies einer Site über eine Blueprint-Konfiguration {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
@@ -156,7 +156,7 @@ So erstellen Sie eine Live Copy einer Site aus einer Blueprint-Konfiguration:
 
 1. Verwenden Sie die **Ausgangssprachen** Auswahl, um die Sprachen der Blueprint-Site anzugeben, die für die Live Copy verwendet werden soll.
 
-   Alle verfügbaren Sprachen sind standardmäßig ausgewählt. Um eine Sprache zu entfernen, klicken oder tippen Sie auf **X** neben der Sprache.
+   Alle verfügbaren Sprachen sind standardmäßig ausgewählt. Um eine Sprache zu entfernen, klicken Sie auf die **X** neben der Sprache angezeigt.
 
    Beispiel:
 
@@ -221,7 +221,7 @@ Führen Sie den Rollout für eine Blueprint-Seite durch, um Inhaltsänderungen a
 1. Öffnen Sie die Registerkarte **Blueprint**.
 1. Wählen Sie **Rollout** aus.
 
-   ![Wählen Sie Rollout](assets/chlimage_1-220.png) aus
+   ![Rollout auswählen](assets/chlimage_1-220.png)
 
 1. Geben Sie die Seiten und etwaigen Unterseiten an und bestätigen Sie den Vorgang durch Setzen eines Häkchens:
 
@@ -231,7 +231,7 @@ Führen Sie den Rollout für eine Blueprint-Seite durch, um Inhaltsänderungen a
 
    ![Rollout einer Blueprint](assets/rollout-blueprint.png)
 
-Rollouts werden als asynchrone Aufträge verarbeitet und können im Dashboard [**Status asynchroner Aufträge**](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) unter **Globale Navigation** > **Tools** > **Vorgänge** > **Aufträge** überprüft werden.
+Rollouts werden als asynchrone Aufträge verarbeitet und können im [**Status asynchroner Aufträge** Dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Globale Navigation** > **Instrumente** > **Aktivitäten** > **Aufträge**
 
 >[!NOTE]
 >
@@ -242,7 +242,7 @@ Rollouts werden als asynchrone Aufträge verarbeitet und können im Dashboard [*
 1. Wählen Sie in der **Sites**-Konsole die Seite in der Live Copy aus und öffnen Sie das Bedienfeld **[Referenzen](/help/sites-authoring/basic-handling.md#references)** (in der Symbolleiste).
 1. Wählen Sie die Option **Blueprint** aus der Liste, um die mit dieser Seite verbundenen Blueprints anzuzeigen.
 1. Wählen Sie die erforderliche Blueprint aus der Liste aus.
-1. Klicken oder tippen Sie auf **Rollout**.
+1. Klicken Sie auf **Rollout**.
 1. Sie werden zum Bestätigen der Rollout-Details aufgefordert:
 
    * **Rollout-Umfang**:
@@ -257,7 +257,7 @@ Rollouts werden als asynchrone Aufträge verarbeitet und können im Dashboard [*
 
 1. Wählen Sie nach Bestätigung dieser Details die Option **Rollout** aus, um die Aktion durchzuführen.
 
-Rollouts werden als asynchrone Aufträge verarbeitet und können im Dashboard [**Status asynchroner Aufträge**](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) unter **Globale Navigation** > **Tools** > **Vorgänge** > **Aufträge** überprüft werden.
+Rollouts werden als asynchrone Aufträge verarbeitet und können im [**Status asynchroner Aufträge** Dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Globale Navigation** > **Instrumente** > **Aktivitäten** > **Aufträge**
 
 >[!NOTE]
 >
@@ -277,7 +277,7 @@ Die [Rollout-Aktion ist auch über die Live Copy-Übersicht verfügbar](/help/s
 
    ![Rollout einer Blueprint](assets/rollout-blueprint.png)
 
-Rollouts werden als asynchrone Aufträge verarbeitet und können im Dashboard [**Status asynchroner Aufträge**](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) unter **Globale Navigation** > **Tools** > **Vorgänge** > **Aufträge** überprüft werden.
+Rollouts werden als asynchrone Aufträge verarbeitet und können im [**Status asynchroner Aufträge** Dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Globale Navigation** > **Instrumente** > **Aktivitäten** > **Aufträge**
 
 >[!NOTE]
 >
@@ -297,7 +297,7 @@ Synchronisieren Sie eine Live-Kopie, um Änderungen aus der Quelle in die Live-K
 
 1. Wählen Sie in der **Sites-Konsole** die Live Copy-Seite aus und öffnen Sie die Eigenschaften.
 1. Öffnen Sie die Registerkarte **Live Copy**.
-1. Klicken oder tippen Sie auf **Synchronisieren**.
+1. Klicks **Synchronisieren**.
 
    ![Synchronisieren](assets/chlimage_1-224.png)
 
@@ -365,7 +365,7 @@ Sie können die Live Copy-Vererbung für eine Live Copy-Seite aussetzen, damit S
 So setzen Sie die Vererbung auf einer Seite aus:
 
 1. Öffnen Sie die Eigenschaften der Live Copy-Seite, indem Sie entweder die **Eigenschaften anzeigen** des **Sites** Konsole oder Verwendung **Seiteninformationen** in der Seitensymbolleiste.
-1. Klicken oder tippen Sie auf die Registerkarte **Live Copy**.
+1. Klicken Sie auf **Live Copy** Registerkarte.
 1. Wählen Sie in der Symbolleiste die Option **Aussetzen** aus. Sie können dann eine der folgenden Optionen auswählen:
 
    * **Aussetzen**: nur die aktuelle Seite
@@ -410,7 +410,7 @@ Wenn Sie die Vererbung erneut aktivieren, wird die Seite nicht automatisch mit d
 
 Nach dem [Aussetzen](#suspending-inheritance-from-page-properties) wird die Aktion **Fortsetzen** in der Symbolleiste der Seiteneigenschaften verfügbar:
 
-![Fortsetzen ](assets/chlimage_1-229.png)
+![Fortsetzen](assets/chlimage_1-229.png)
 
 Wenn diese Option ausgewählt ist, wird das Dialogfeld angezeigt. Sie können bei Bedarf eine Synchronisierung auswählen und die Aktion bestätigen.
 
@@ -446,7 +446,7 @@ Bei einer vorhandenen Live Copy können Sie die Tiefe einer Seite ändern, d. h.
 So geben Sie die Tiefe an oder ändern diese:
 
 1. Öffnen Sie die Eigenschaften der Live Copy-Seite, indem Sie entweder die **Eigenschaften anzeigen** des **Sites** Konsole oder Verwendung **Seiteninformationen** in der Seitensymbolleiste.
-1. Klicken oder tippen Sie auf die Registerkarte **Live Copy**.
+1. Klicken Sie auf **Live Copy** Registerkarte.
 1. Aktivieren oder deaktivieren Sie im Abschnitt **Konfiguration** die Option **Live Copy-Vererbung**, je nachdem, ob untergeordnete Seiten enthalten sind:
 
    * aktiviert - eine Deep-Live Copy (die untergeordneten Seiten sind enthalten)
@@ -458,7 +458,7 @@ So geben Sie die Tiefe an oder ändern diese:
    >
    >Weitere Informationen finden Sie unter [Live Copies – Komposition](/help/sites-administering/msm.md#live-copies-composition).
 
-1. Klicken oder tippen Sie auf **Speichern**, um Ihre Aktualisierungen beizubehalten.
+1. Klicks **Speichern** um Ihre Aktualisierungen beizubehalten.
 
 ### Abbrechen der Vererbung für Komponenten {#cancelling-inheritance-for-a-component}
 
@@ -474,11 +474,11 @@ Brechen Sie die Live Copy-Vererbung für eine Komponente ab, damit die Komponent
 
 Vererbung abbrechen, um den Komponenteninhalt zu ändern oder die Komponente zu löschen:
 
-1. Klicken oder tippen Sie auf die Komponente, für die die Vererbung abgebrochen werden soll.
+1. Klicken Sie auf die Komponente, deren Vererbung Sie abbrechen möchten.
 
    ![Komponente zum Abbrechen der Vererbung auswählen](assets/chlimage_1-230.png)
 
-1. Klicken oder tippen Sie in der Symbolleiste „Komponente“ auf das Symbol **Vererbung abbrechen**.
+1. Klicken Sie in der Komponenten-Symbolleiste auf die **Vererbung abbrechen** Symbol.
 
    ![Vererbung abbrechen](do-not-localize/chlimage_1-8.png)
 
@@ -488,7 +488,7 @@ Vererbung abbrechen, um den Komponenteninhalt zu ändern oder die Komponente zu 
 
 ### Erneutes Aktivieren der Vererbung für eine Komponente {#re-enabling-inheritance-for-a-component}
 
-Um die Vererbung für eine Komponente zu aktivieren, klicken oder tippen Sie in der Symbolleiste „Komponente“ auf das Symbol **Vererbung erneut aktivieren**.
+Um die Vererbung für eine Komponente zu aktivieren, klicken Sie auf die **Vererbung erneut aktivieren** in der Komponenten-Symbolleiste.
 
 ![Vererbung erneut aktivieren](do-not-localize/chlimage_1-9.png)
 
@@ -529,15 +529,15 @@ Sie können die Vererbung für eine Eigenschaft später bei Bedarf erneut aktivi
 >Wenn Sie die Vererbung erneut aktivieren, wird die Eigenschaft der Live Copy-Seite nicht automatisch mit der Quelleigenschaft synchronisiert. Sie können ggf. manuell eine Synchronisierung anfordern.
 
 1. Öffnen Sie die Eigenschaften der Live Copy-Seite entweder über die Option **Eigenschaften anzeigen** der **Sites-Konsole** oder über das Symbol **Seiteninformationen** der Seitensymbolleiste.
-1. Um die Vererbung einer Eigenschaft abzubrechen, klicken oder tippen Sie auf das Verknüpfungssymbol rechts neben der Eigenschaft.
+1. Um die Vererbung einer Eigenschaft abzubrechen, klicken Sie auf das Verknüpfungssymbol rechts neben der Eigenschaft.
 
    ![Vererbung der Eigenschaft abbrechen](do-not-localize/chlimage_1-10.png)
 
-1. Klicken oder tippen Sie im Bestätigungsdialogfeld **Vererbung abbrechen** auf **Ja**.
+1. Im **Vererbung abbrechen** Bestätigungsdialogfeld, klicken Sie auf **Ja**.
 
 ### Wiederherstellen der Eigenschaften einer Live Copy-Seite {#revert-properties-of-a-live-copy-page}
 
-Um die Vererbung für eine Eigenschaft zu aktivieren, klicken oder tippen Sie auf das Symbol **Vererbung zurücksetzen** neben der entsprechenden Eigenschaft.
+Um die Vererbung für eine Eigenschaft zu aktivieren, klicken Sie auf die **Vererbung wiederherstellen** neben der Eigenschaft angezeigt.
 
 ![Vererbung wiederherstellen](do-not-localize/chlimage_1-11.png)
 
@@ -634,7 +634,7 @@ Je nachdem, wo innerhalb der Struktur die Option **Trennen** verwendet wird, ist
 
 So trennen Sie eine Live Copy:
 
-1. Im **Sites** Konsole, wählen Sie die Live Copy-Seite aus und klicken oder tippen Sie auf **Eigenschaften anzeigen**.
+1. Im **Sites** Konsole, wählen Sie die Live Copy-Seite aus und klicken Sie auf **Eigenschaften anzeigen**.
 1. Öffnen Sie die Registerkarte **Live Copy**.
 1. Wählen Sie in der Symbolleiste die Option **Trennen** aus.
 

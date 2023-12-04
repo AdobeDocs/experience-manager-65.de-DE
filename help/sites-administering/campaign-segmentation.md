@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1129'
-ht-degree: 40%
+source-wordcount: '1128'
+ht-degree: 36%
 
 ---
 
@@ -110,7 +110,7 @@ Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird dieses Segment au
 
 >[!CAUTION]
 >
->Der Segmenteditor prüft nicht auf Zirkelbezüge. Ein Beispiel hierfür wäre, wenn Segment A auf ein anderes Segment B verweist, das wiederum auf Segment A verweist. Sie müssen sicherstellen, dass Ihre Segmente keine Zirkelbezüge enthalten.
+>Der Segmenteditor prüft nicht auf Zirkelbezüge. Beispiel: Segment A verweist auf ein anderes Segment B, das wiederum auf Segment A verweist. Stellen Sie sicher, dass Ihre Segmente keine Zirkelbezüge enthalten.
 
 >[!NOTE]
 >

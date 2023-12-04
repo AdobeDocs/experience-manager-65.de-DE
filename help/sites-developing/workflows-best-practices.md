@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1922'
-ht-degree: 27%
+source-wordcount: '1925'
+ht-degree: 26%
 
 ---
 
@@ -297,7 +297,7 @@ Es wird empfohlen, den Handler-Fortschritt zu verwenden, da sich dadurch die Lei
 
 Sie können [Workflow-Phasen](/help/sites-developing/workflows.md#workflow-stages), und weisen Sie dann einer bestimmten Workflow-Phase Aufgaben/Schritte zu.
 
-Diese Information wird zum Anzeigen des Fortschritts eines Workflows verwendet, wenn Sie auf die Registerkarte [**Workflow-Informationen** eines Arbeitselements aus dem **Posteingang**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) klicken. Vorhandene Workflow-Modelle können bearbeitet werden, um Statuswerte hinzuzufügen.
+Diese Informationen werden verwendet, um den Fortschritt eines Workflows anzuzeigen, wenn Sie auf die [**Workflow-Info** Registerkarte eines Arbeitselements aus dem **Posteingang**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). Vorhandene Workflow-Modelle können bearbeitet werden, um Statuswerte hinzuzufügen.
 
 ### Schritt &quot;Seitenprozess aktivieren&quot; {#activate-page-process-step}
 

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2067'
-ht-degree: 93%
+source-wordcount: '2037'
+ht-degree: 89%
 
 ---
 
@@ -287,7 +287,7 @@ Sie können OAuth für mehrere E-Mail-Anbieter konfigurieren, wie unten beschrie
 Konfigurieren Sie zunächst den E-Mail-Dienst:
 
 1. Öffnen Sie die AEM-Web-Konsole, indem Sie zu `http://serveraddress:serverport/system/console/configMgr` gehen.
-1. Suchen Sie nach **Day CQ Mail Service** und klicken Sie darauf.
+1. Suchen Sie nach und klicken Sie auf **Day CQ Mail Service**
 1. Fügen Sie die folgenden Einstellungen hinzu:
    * SMTP-Server-Host-Name: `smtp.gmail.com`
    * SMTP-Server-Port: `25` oder `587`, abhängig von den Anforderungen
@@ -297,7 +297,7 @@ Konfigurieren Sie zunächst den E-Mail-Dienst:
 Konfigurieren Sie anschließend Ihren SMTP OAuth-Provider wie unten beschrieben:
 
 1. Öffnen Sie die AEM-Web-Konsole, indem Sie zu `http://serveraddress:serverport/system/console/configMgr` gehen.
-1. Suchen Sie nach **CQ Mailer SMTP OAuth2 Provider** und klicken Sie darauf.
+1. Suchen Sie nach und klicken Sie auf **CQ Mailer SMTP OAuth2 Provider**
 1. Füllen Sie die erforderlichen Informationen wie folgt aus:
    * Autorisierungs-URL: `https://accounts.google.com/o/oauth2/auth`
    * Token-URL: `https://accounts.google.com/o/oauth2/token`
@@ -336,12 +336,12 @@ Bestätigen Sie abschließend die Konfiguration, indem Sie:
 ### Microsoft Outlook {#microsoft-outlook}
 
 1. Gehen Sie zu [https://portal.azure.com/](https://portal.azure.com/) und melden Sie sich an.
-1. Suchen Sie in der Suchleiste nach **Azure Active Directory** und klicken Sie auf das Ergebnis. Alternativ können Sie direkt zu [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) gehen.
+1. Suchen Sie in der Suchleiste nach **Azure Active Directory** und klicken Sie auf das Ergebnis. Alternativ können Sie direkt zu [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) navigieren
 1. Klicken Sie auf **Registrierung einer Anwendung** – **Neue Registrierung**
 
    ![Die neue Registrierungsschaltfläche beim Konfigurieren von Microsoft Outlook](assets/oauth-outlook1.png)
 
-1. Füllen Sie die Informationen entsprechend Ihren Anforderungen aus und klicken Sie dann auf **Registrieren**
+1. Füllen Sie die Informationen entsprechend Ihren Anforderungen aus und klicken Sie auf **registrieren**
 1. Wechseln Sie zur neu erstellten Anwendung und wählen Sie **API-Berechtigungen** aus.
 1. Gehen Sie zu **Berechtigung hinzufügen** – **Diagrammberechtigungen** – **Zugewiesene Berechtigungen**.
 1. Wählen Sie die folgenden Berechtigungen für Ihre Anwendung aus und klicken Sie dann auf **Berechtigung hinzufügen**:
@@ -354,7 +354,7 @@ Bestätigen Sie abschließend die Konfiguration, indem Sie:
    * `http://localhost:4503/services/mailer/oauth2/token`
 1. Wiederholen Sie die obigen Schritte für jede Veröffentlichungsinstanz
 1. Konfigurieren Sie die Einstellungen entsprechend Ihren Anforderungen.
-1. Gehen Sie dann zu **Zertifikate und Geheimnisse**, klicken Sie auf **Neues Client-Geheimnis** und führen Sie die Schritte auf dem Bildschirm aus, um ein Geheimnis zu erstellen. Notieren Sie sich dieses Geheimnis für die spätere Verwendung.
+1. Navigieren Sie als Nächstes zu **Zertifikate und Geheimnisse** klicken **Neues Client-Geheimnis** und führen Sie die Schritte auf dem Bildschirm aus, um ein Geheimnis zu erstellen. Notieren Sie sich dieses Geheimnis für die spätere Verwendung.
 1. Klicken Sie auf **Überblick** im linken Bereich und kopieren Sie die Werte für **Anwendungs (Client) ID** und **Directory (Mandant) ID** zur späteren Verwendung.
 
 Um eine Neukodierung durchzuführen, müssen Sie über die folgenden Informationen verfügen, um OAuth2 für den Mailer-Dienst auf der AEM zu konfigurieren:
@@ -370,7 +370,7 @@ Um eine Neukodierung durchzuführen, müssen Sie über die folgenden Information
 Integrieren Sie anschließend Ihre OAuth2-Einstellungen mit AEM:
 
 1. Gehen Sie zur Web-Konsole Ihrer lokalen Instanz, indem Sie zu `http://serveraddress:serverport/system/console/configMgr` navigieren.
-1. Suchen Sie nach **Day CQ Mail Service** und klicken Sie darauf.
+1. Suchen Sie nach und klicken Sie **Day CQ Mail Service**
 1. Fügen Sie die folgenden Einstellungen hinzu:
    * SMTP-Server-Host-Name: `smtp.office365.com`
    * SMTP-Benutzer: Ihr Benutzername im E-Mail-Format
@@ -378,7 +378,7 @@ Integrieren Sie anschließend Ihre OAuth2-Einstellungen mit AEM:
    * SMTP-Server-Port: `25` oder `587`, je nach den Anforderungen
    * Markieren Sie die Kontrollkästchen für **SMPT verwendet StarTLS** und **SMTP erfordert StarTLS**.
    * Markieren Sie **OAuth-Fluss** und klicken Sie auf **Speichern**.
-1. Suchen Sie nach **CQ Mailer SMTP OAuth2 Provider** und klicken Sie darauf.
+1. Suchen Sie nach und klicken Sie auf **CQ Mailer SMTP OAuth2 Provider**
 1. Füllen Sie die erforderlichen Informationen wie folgt aus:
    * Füllen Sie die Autorisierungs-URL, Token-URL und Aktualisierungstoken-URL aus, indem Sie sie wie unter [Ende dieses Verfahrens](#microsoft-outlook) beschrieben dekonstruieren.
    * Client-ID und Client-Geheimnis: Konfigurieren Sie diese Felder mit den Werten, die Sie wie oben beschrieben abgerufen haben.

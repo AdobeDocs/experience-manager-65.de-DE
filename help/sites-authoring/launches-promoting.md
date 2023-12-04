@@ -1,19 +1,17 @@
 ---
 title: Hochstufen von Launches
 description: Sie stufen Launch-Seiten hoch, damit der Inhalt vor der Veröffentlichung wieder in die Quelle (Produktion) verschoben wird.
-uuid: 2dc41817-fcfb-4485-a085-7b57b9fe89ec
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 3d4737ef-f758-4540-bc8f-ecd9f05f6bb0
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -62,7 +60,7 @@ Sie können Launches über die Konsolen **Sites** oder **Launches** weiterleiten
 
    * die **Launch**-Konsole:
 
-      1. Wählen Sie den Launch aus, indem Sie auf die Miniaturansicht tippen/klicken.
+      1. Wählen Sie Ihren Launch aus (klicken Sie auf die Miniaturansicht).
       1. Wählen Sie **Bewerben** aus.
 
 1. Im ersten Schritt können Sie folgende Optionen festlegen:

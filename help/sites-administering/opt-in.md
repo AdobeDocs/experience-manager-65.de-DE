@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 3603e929-2aa1-4c25-ad9a-b10ff52a59f4
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 47%
+source-wordcount: '1298'
+ht-degree: 46%
 
 ---
 
@@ -159,7 +159,7 @@ Sie müssen die Cloud-Konfigurationen nicht ändern. Sie können die Frameworks 
 >
 >Die präzise Zielgruppenerfassung ist auf der Autoreninstanz immer aktiviert. Auf der Veröffentlichungsinstanz können Sie die präzise Zielgruppenerfassung aber global deaktivieren, indem Sie in der Cloud Service-Konfiguration das Häkchen neben „Präzise Zielgruppenerfassung“ entfernen (**http://localhost:4502/etc/cloudservices.html**). Sie können die präzise Zielgruppenerfassung auch für einzelne Komponenten aktivieren und deaktivieren, unabhängig von Ihrer Einstellung in der Cloud-Service-Konfiguration.
 >
->Wenn Sie ***bereits*** Zielkomponenten erstellt haben und Sie diese Einstellung ändern, wirken sich Ihre Änderungen nicht auf diese Komponenten aus. Sie müssen alle Änderungen an diesen Komponenten direkt vornehmen.
+>Wenn Sie ***bereits*** Zielkomponenten erstellt haben und Sie diese Einstellung ändern, wirken sich Ihre Änderungen nicht auf diese Komponenten aus. Nehmen Sie Änderungen an diesen Komponenten direkt vor.
 
 >[!CAUTION]
 >

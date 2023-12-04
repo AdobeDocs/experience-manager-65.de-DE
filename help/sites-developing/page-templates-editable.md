@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3219'
-ht-degree: 98%
+source-wordcount: '3186'
+ht-degree: 96%
 
 ---
 
@@ -171,7 +171,7 @@ In einer Standard-AEM-Instanz ist der Ordner **Global** in der Vorlagenkonsole v
 
 Arten von Vorlagen und Richtlinien werden gemäß der folgenden Rangordnung in allen Ordnern übernommen:
 
-1. der aktuelle Ordner.
+1. Der aktuelle Ordner.
 1. dem aktuellen Ordner übergeordnete Elemente
 1. `/conf/global`
 1. `/apps`
@@ -217,7 +217,7 @@ Gehen Sie wie folgt vor, um einen Ordner zu erstellen:
 
 ### Verwenden des Konfigurations-Browsers {#using-the-configuration-browser}
 
-1. Wechseln Sie zu **Globale Navigation** > **Tools** > **Konfigurations-Browser**.
+1. Navigieren Sie zu **Globale Navigation** > **Instrumente** > **Konfigurationsbrowser**.
 
    Die vorhandenen Ordner werden links aufgelistet, einschließlich des Ordners **global**.
 
@@ -265,7 +265,7 @@ In der folgenden Tabelle sind die erforderlichen Berechtigungen für die Bearbei
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/templates</code></td>
    <td>Vorlagenautoren<br /> </td>
    <td>lesen, schreiben, replizieren</td>
-   <td>Vorlagenautoren, die Vorlagen erstellen, lesen, aktualisieren, löschen und replizieren im Site-spezifischen Bereich <code>/conf</code></td>
+   <td>Vorlagenautoren, die Vorlagen in Site-spezifischen Vorlagen erstellen, lesen, aktualisieren, löschen und replizieren <code>/conf</code> space</td>
   </tr>
   <tr>
    <td>Anonymer Web-Anwender</td>
@@ -281,7 +281,7 @@ In der folgenden Tabelle sind die erforderlichen Berechtigungen für die Bearbei
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/policies</code></td>
    <td><code>Template Author</code></td>
    <td>lesen, schreiben, replizieren</td>
-   <td>Vorlagenautoren, die Vorlagen erstellen, lesen, aktualisieren, löschen und replizieren im Site-spezifischen Bereich <code>/conf</code></td>
+   <td>Vorlagenautoren, die Vorlagen in Site-spezifischen Vorlagen erstellen, lesen, aktualisieren, löschen und replizieren <code>/conf</code> space</td>
   </tr>
   <tr>
    <td>Anonymer Web-Anwender</td>
@@ -323,7 +323,7 @@ Speichern Sie keine Vorlagen in `/conf/global`. Bei einigen älteren Installatio
   </tr>
   <tr>
    <td rowspan="3"><code>/conf/global/settings/wcm/templates</code></td>
-   <td>Vorlage   Autoren</td>
+   <td>Vorlagenautoren</td>
    <td>lesen, schreiben, replizieren</td>
    <td>Vorlagenautoren, die Vorlagen erstellen, lesen, aktualisieren, löschen und replizieren <code>/conf/global</code></td>
   </tr>
@@ -593,7 +593,7 @@ Mit Seitenrichtlinien können Sie die [Inhaltsrichtlinie](#content-policies) fü
    * [Definieren Sie die Pfade zugelassener Vorlagen über die **Seiteneigenschaften**](/help/sites-authoring/templates.md#allowing-a-template-author) der entsprechenden Seite oder Stammseite einer Unterverzweigung.
    * Legen Sie die folgende Eigenschaft fest:
      `cq:allowedTemplates`
-Im `jcr:content`-Knoten der erforderlichen Verzweigung.
+Im `jcr:content` -Knoten der erforderlichen Verzweigung.
 
    Beispielsweise mit dem Wert:
 

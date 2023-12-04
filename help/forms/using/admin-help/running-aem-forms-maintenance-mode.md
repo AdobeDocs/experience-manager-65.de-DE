@@ -1,7 +1,7 @@
 ---
 title: Ausführen von AEM Forms im Wartungsmodus
 seo-title: Running AEM forms in maintenance mode
-description: Der Wartungsmodus bietet sich beim Ausführen von Aufgaben wie dem Hinzufügen von Patches zu DSC, dem Aktualisieren von AEM Forms oder dem Anwenden eines Service Packs an. Erfahren Sie mehr über die Ausführung von AEM Forms im Wartungsmodus.
+description: Der Wartungsmodus ist nützlich, wenn Aufgaben wie das Patchen eines DSC, das Aktualisieren AEM Formulare oder das Anwenden eines Service Packs ausgeführt werden. Erfahren Sie mehr über das Ausführen AEM Formulare im Wartungsmodus.
 seo-description: Maintenance mode is useful when performing tasks such as patching a DSC, upgrading AEM forms, or applying a service pack. Learn more about running AEM forms in maintenance mode.
 uuid: 9aa3be20-f17e-4384-b4ce-daaee2898c96
 contentOwner: admin
@@ -10,41 +10,41 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 94047c12-ba3d-457a-954f-e035c7cc3ecd
 exl-id: 6f5ce18b-26b4-4c31-b48a-43ccbb3912f6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '259'
-ht-degree: 100%
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 8%
 
 ---
 
 # Ausführen von AEM Forms im Wartungsmodus {#running-aem-forms-in-maintenance-mode}
 
-Der Wartungsmodus bietet sich beim Ausführen von Aufgaben wie dem Hinzufügen von Patches zu DSC, dem Aktualisieren von AEM Forms oder dem Anwenden eines Service Packs an.
+Der Wartungsmodus ist nützlich, wenn Aufgaben wie das Patchen eines DSC, das Aktualisieren AEM Formulare oder das Anwenden eines Service Packs ausgeführt werden.
 
-Es sollten keine Prozesse aufgerufen werden, während sich der Server im Wartungsmodus befindet. Folgendes erfolgt, wenn ein Prozess aufgerufen wird, während sich der Server im Wartungsmodus befindet:
+Vermeiden Sie das Aufrufen von Prozessen, während sich der Server im Wartungsmodus befindet. Dies geschieht, wenn ein Prozess aufgerufen wird, während sich der Server im Wartungsmodus befindet:
 
-* Bei einem Prozess mit langer Lebensdauer wird dieser der Auftragsdatenbank hinzugefügt, jedoch nicht gestartet. Wenn Sie den Wartungsmodus beenden, verarbeitet AEM Forms die Prozesse mit langer Lebensdauer in der Warteschlange, auch wenn der Server während des Wartungsmodus neu gestartet wurde.
-* Prozesse mit kurzer Lebensdauer werden sofort verarbeitet.
+* Wenn der Prozess langlebig ist, wird er der Auftragsdatenbank hinzugefügt, aber nicht gestartet. Wenn Sie den Wartungsmodus beenden, verarbeitet AEM Forms die Aufträge mit langer Lebensdauer in der Warteschlange, auch wenn der Server im Wartungsmodus neu gestartet wurde.
+* Wenn der Prozess kurzlebig ist, wird er sofort verarbeitet.
 
-**AEM Forms in den Wartungsmodus versetzen**
+**AEM in den Wartungsmodus versetzen**
 
 1. Geben Sie in einem Webbrowser Folgendes ein:
 
    `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=[administrator username]&password=[password]`
 
-   Die Meldung „Jetzt angehalten“ wird im Browserfenster angezeigt.
+   Im Browserfenster wird die Meldung &quot;Jetzt angehalten&quot; angezeigt.
 
    >[!NOTE]
    >
-   >Wenn Sie den Server herunterfahren, während er sich im Wartungsmodus befindet, befindet sich der Server auch nach dem Neustart weiterhin im Wartungsmodus. Wenn Sie Ihre Wartungsaufgaben ausgeführt haben, müssen Sie den Wartungsmodus deaktivieren.
+   >Wenn Sie den Server herunterfahren, während er sich im Wartungsmodus befindet, befindet er sich beim Neustart noch im Wartungsmodus. Deaktivieren Sie den Wartungsmodus, wenn Sie Ihre Wartungsaufgaben abgeschlossen haben.
 
-**Überprüfen, ob AEM Forms im Wartungsmodus ausgeführt wird**
+**Überprüfen, ob AEM Formulare im Wartungsmodus ausgeführt werden**
 
 1. Geben Sie in einem Webbrowser Folgendes ein:
 
    `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=[administrator username]&password=[password]`
 
-   Der Status wird im Browserfenster angezeigt. Der Status „true“ zeigt an, dass der Server im Wartungsmodus ausgeführt wird, und „false“ zeigt an, dass sich der Server nicht im Wartungsmodus befindet.
+   Der Status wird im Browserfenster angezeigt. Der Status &quot;true&quot;zeigt an, dass der Server im Wartungsmodus ausgeführt wird, und &quot;false&quot;zeigt an, dass sich der Server nicht im Wartungsmodus befindet.
 
 **Wartungsmodus deaktivieren**
 

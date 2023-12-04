@@ -2,10 +2,10 @@
 title: Erstellen und Organisieren von Seiten mit AEM
 description: Erfahren Sie, wie Sie mit Adobe Experience Manager Seiten erstellen und verwalten.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2412'
-ht-degree: 88%
+source-wordcount: '2417'
+ht-degree: 82%
 
 ---
 
@@ -145,7 +145,7 @@ Wenn Sie eine Seite bereitstellen **Name** beim Erstellen einer Seite AEM [valid
 
 In AEM gibt eine Vorlage einen speziellen Seitentyp an. Eine Vorlage wird als Grundlage für jede neue Seite verwendet, die erstellt wird.
 
-Die Vorlage definiert die Seitenstruktur, u. a. eine Miniatur und andere Eigenschaften. Beispielsweise könnten Sie unterschiedliche Vorlagen für Produktseiten, Sitemaps und Kontaktangaben verwenden. Vorlagen bestehen aus [Komponenten](#components).
+Die Vorlage definiert die Struktur einer Seite, einschließlich eines Miniaturbilds und anderer Eigenschaften. Sie können beispielsweise separate Vorlagen für Produktseiten, Sitemaps und Kontaktinformationen verwenden. Vorlagen bestehen aus [Komponenten](#components).
 
 Im Lieferumfang von AEM sind diverse Vorlagen enthalten. Welche Vorlagen verfügbar sind, hängt von der jeweiligen Website ab. Die wichtigsten Felder sind:
 
@@ -164,7 +164,7 @@ Eine Liste von Vorlagen, die für das Erstellen neuer Seiten verwendet werden k�
 
 ### Komponenten {#components}
 
-Komponenten sind die Elemente, die von AEM bereitgestellt werden, damit Sie bestimmte Inhaltstypen hinzufügen können. AEM ist mit [einsatzbereiten Komponenten](/help/sites-authoring/default-components-console.md) ausgestattet, die umfangreiche Funktionen bieten. Dazu gehören unter anderem:
+Komponenten sind die Elemente, die von AEM bereitgestellt werden, damit Sie bestimmte Inhaltstypen hinzufügen können. AEM enthält eine Reihe von [vordefinierte Komponenten](/help/sites-authoring/default-components-console.md) , die eine umfassende Funktionalität bieten. Dazu gehören:
 
 * Text
 * Bild
@@ -192,7 +192,7 @@ Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstell
 
 1. Im ersten Schritt des Assistenten haben Sie folgende Möglichkeiten:
 
-   * Wählen Sie die Vorlage, die Sie zum Erstellen der neuen Seite verwenden möchten, und klicken/tippen Sie auf **Weiter**, um fortzufahren.
+   * Wählen Sie die Vorlage aus, die Sie zum Erstellen der neuen Seite verwenden möchten, und klicken Sie auf **Nächste** um fortzufahren.
 
    * Mit **Abbrechen** brechen Sie den Vorgang ab.
 
@@ -200,7 +200,7 @@ Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstell
 
 1. Im letzten Schritt des Assistenten haben Sie folgende Möglichkeiten:
 
-   * Geben Sie auf den drei Registerkarten die [Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md) ein, die Sie der neuen Seite zuweisen möchten, und klicken bzw. tippen Sie dann auf **Erstellen**, um die Seite zu erstellen.
+   * Verwenden Sie die drei Tabs, um die [Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md) Sie der neuen Seite zuweisen möchten, klicken Sie auf **Erstellen** , um die Seite zu erstellen.
 
    * Verwenden Sie die **Rücktaste**, um zur Vorlagenauswahl zurückzukehren.
 
@@ -325,7 +325,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 
 1. Im **Umbenennungs**-Schritt des Assistenten haben Sie folgende Möglichkeiten:
 
-   * Geben Sie den Namen an, den die Seite nach dem Verschieben aufweisen soll, und tippen/klicken Sie dann auf **Weiter**, um den Vorgang fortzusetzen.
+   * Geben Sie den Namen an, den die Seite nach dem Verschieben aufweisen soll, und klicken Sie dann auf **Nächste** um fortzufahren.
 
    * Mit **Abbrechen** brechen Sie den Vorgang ab.
 
@@ -386,7 +386,7 @@ Seitenverschiebungsaktionen werden immer asynchron verarbeitet, sodass der Benut
 
   ![Asynchrone Seitenverschiebung](assets/asynchronous-page-move.png)
 
-Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträge**](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) unter **Globale Navigation** > **Tools** > **Vorgänge** > **Aufträge** überprüft werden.
+Der Status asynchroner Aufträge kann im [**Status asynchroner Aufträge** Dashboard](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Globale Navigation** > **Instrumente** > **Aktivitäten** > **Aufträge**
 
 >[!NOTE]
 >
@@ -413,7 +413,7 @@ Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträ
    * Mit **Löschen** bestätigen Sie die Aktion.
 
       * Wenn die Seite keine Verweise enthält, wird sie gelöscht.
-      * Wenn die Seite Verweise enthält, werden Sie in einem Meldungsfeld darauf hingewiesen, dass **eine oder mehrere Seiten über einen Verweis verfügen**. Sie können **Löschen erzwingen** oder **Abbrechen** auswählen.
+      * Wenn die Seite Verweise enthält, werden Sie in einem Meldungsfeld darüber informiert, dass **Es wird auf eine oder mehrere Seiten verwiesen.** Sie können **Löschen erzwingen** oder **Abbrechen**.
 
 >[!NOTE]
 >

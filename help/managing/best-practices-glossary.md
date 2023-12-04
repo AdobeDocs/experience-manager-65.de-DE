@@ -7,9 +7,9 @@ topic-tags: managing-checklist
 content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '6945'
+source-wordcount: '6922'
 ht-degree: 6%
 
 ---
@@ -554,7 +554,7 @@ Definition der Inhaltsstruktur des alten Systems. Dies dient als Referenz und au
 
 ### Historische Leistungs- und historische Leistungs-KPIs {#historical-performance-and-historical-performance-kpis}
 
-Sie müssen Leistungsstatistiken und Leistungs-KPIs aus dem alten System erfassen und dokumentieren. Diese werden dann als Bezugspunkt und zum Benchmarking der neuen Lösung verwendet.
+Erfassen und dokumentieren Sie Leistungsstatistiken und Leistungs-KPIs aus dem alten System. Diese werden dann als Bezugspunkt und zum Benchmarking der neuen Lösung verwendet.
 
 ### Identifizieren kritischer Schlüssellösungen/Funktionen {#identify-critical-key-solutions-functionalities}
 
@@ -1235,7 +1235,7 @@ Die technische Spezifikation umfasst (unter anderem):
 
 * Schnittstellen
 * Konfigurationen
-* -APIs
+* APIs
 * Dienste, die die Anforderungen der Lösung unterstützen
 
 ### Vorlagenspezifikation {#template-specification}

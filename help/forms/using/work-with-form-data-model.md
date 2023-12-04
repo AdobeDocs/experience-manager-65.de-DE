@@ -10,9 +10,9 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4181'
+source-wordcount: '4159'
 ht-degree: 87%
 
 ---
@@ -242,7 +242,7 @@ Wenn Sie verknüpfte Datenmodellobjekte in einer Datenquelle einem Formulardaten
 
 >[!NOTE]
 >
->Vordefinierte Verknüpfungen in einer JDBC-Datenquelle werden im Formulardatenmodell nicht beibehalten. Sie müssen sie manuell erstellen.
+>Vordefinierte Verknüpfungen in einer JDBC-Datenquelle werden im Formulardatenmodell nicht beibehalten. Erstellen Sie sie manuell.
 
 So fügen Sie eine Verknüpfung hinzu:
 

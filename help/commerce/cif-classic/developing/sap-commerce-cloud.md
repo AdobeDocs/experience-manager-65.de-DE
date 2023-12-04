@@ -1,15 +1,15 @@
 ---
 title: Entwicklung mit SAP Commerce Cloud
-description: Das Integrations-Framework SAP Commerce Cloud enthält eine Integrationsebene mit einer API.
+description: Das SAP Commerce Cloud Integration Framework beinhaltet eine Integrationsschicht mit einer API.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2288'
-ht-degree: 33%
+source-wordcount: '2303'
+ht-degree: 32%
 
 ---
 
@@ -562,7 +562,7 @@ Die Integration zwischen AEM und verschiedenen E-Commerce-Systemen erfolgt. Dies
 
 Ein AEM Frontend kann vor einer vorhandenen Hybris-Implementierung positioniert werden. Auch eine Hybris-Engine kann zu einer bestehenden AEM-Installation hinzugefügt werden. Dazu müssen die Systeme in der Lage sein, bestehende Benutzer in beiden Systemen ordnungsgemäß zu handhaben:
 
-* AEM -> hybris
+* AEM > hybris
 
    * Wenn Sie sich bei Hybris anmelden, wenn der AEM-Benutzer nicht vorhanden ist:
 
@@ -571,7 +571,7 @@ Ein AEM Frontend kann vor einer vorhandenen Hybris-Implementierung positioniert 
 
    * Siehe: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
 
-* Hybris -> AEM
+* hybris > AEM
 
    * Beim Anmelden bei AEM (falls das System einen Benutzer erkennt):
 

@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2227'
-ht-degree: 58%
+source-wordcount: '2246'
+ht-degree: 57%
 
 ---
 
@@ -95,7 +95,7 @@ Das tatsächliche Erscheinungsbild und die Handhabung hängen vom verwendeten Ge
    * Komponenten nach Namen filtern
    * Mittels Dropdown-Auswahl die Anzeige auf eine bestimmte Gruppe begrenzen
 
-  Für eine detailliertere Beschreibung der Komponente können Sie im Browser **Komponenten** auf das Informationssymbol neben der Komponente tippen/klicken (falls verfügbar). Beispiel für den **Layout-Container**:
+  Für eine detailliertere Beschreibung der Komponente können Sie auf das Informationssymbol neben der Komponente im **Komponenten** Browser (sofern verfügbar). Beispiel für den **Layout-Container**:
 
   ![ateat-06](assets/ateat-06.png)
 
@@ -282,7 +282,7 @@ Mit der Schaltfläche „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie e
 
 Zum Beispiel hat **Seiteninformation** gegebenenfalls auch die Optionen:
 
-* [Launch bewerben](/help/sites-authoring/launches-promoting.md), wenn die Seite ein Launch ist
+* [Launch bewerben](/help/sites-authoring/launches-promoting.md) wenn die Seite ein Launch ist
 * [In klassischer Benutzeroberfläche öffnen](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) wenn diese Option [von einem Administrator aktiviert](/help/sites-administering/enable-classic-ui-editor.md)
 
 Darüber hinaus können über die **Seiteninformationen** ggf. auch Analysen und Empfehlungen aufgerufen werden.
@@ -344,7 +344,7 @@ Der Pfad-Browser ist wie die [Spaltenansicht](/help/sites-authoring/basic-handli
 
 ![screen_shot_2018-03-22at154521](assets/screen_shot_2018-03-22at154521.png)
 
-* Sobald eine Ressource ausgewählt wird, wird die Schaltfläche **Auswählen** oben rechts im Dialogfeld aktiviert. Klicken/tippen Sie darauf, um die Auswahl zu bestätigen, oder heben Sie die Auswahl über **Abbrechen** auf.
+* Sobald eine Ressource ausgewählt wird, wird die Schaltfläche **Auswählen** oben rechts im Dialogfeld aktiviert. Klicken Sie auf , um die Auswahl zu bestätigen oder **Abbrechen** abbrechen.
 * Wenn der Kontext die Auswahl mehrerer Ressourcen zulässt, wird bei Auswahl einer Ressource auch die Schaltfläche **Auswählen** aktiviert, aber auch die Anzahl der ausgewählten Ressourcen wird oben rechts im Fenster angezeigt. Klicks **X** neben der Zahl, um die Auswahl für alle aufzuheben.
 * Wenn Sie durch den Baum navigieren, wird Ihre Position in den Breadcrumbs am oberen Rand des Dialogfelds angezeigt. Mithilfe der Breadcrumbs können Sie innerhalb der Ressourcenhierarchie schnell von einem Punkt zu einem anderen wechseln.
 * Sie können das Suchfeld jederzeit oben im Dialogfeld verwenden. Klicken Sie im Suchfeld auf **X**, wenn Sie die Suche löschen möchten.

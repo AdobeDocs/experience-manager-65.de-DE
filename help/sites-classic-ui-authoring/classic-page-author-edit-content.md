@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 91%
+source-wordcount: '1829'
+ht-degree: 89%
 
 ---
 
@@ -181,7 +181,7 @@ Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Abhängig v
 
 1. **Live Copy**
 
-   Wenn eine Komponente Teil einer Live Copy oder eines Launches ist, wird dies durch ein Schlosssymbol angezeigt. Sie können auf das Vorhängeschloss klicken, um die Vererbung abzubrechen.
+   Wenn eine Komponente Teil einer Live Copy oder eines Launches ist, wird sie durch ein Vorhängeschloss-Symbol gekennzeichnet. Sie können auf das Vorhängeschloss klicken, um die Vererbung abzubrechen.
 
    * Das Schlosssymbol wird angezeigt, wenn die Komponente ausgewählt wird. Beispiel:
 

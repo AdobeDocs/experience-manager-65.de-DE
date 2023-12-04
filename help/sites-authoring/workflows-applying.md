@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 94%
+source-wordcount: '647'
+ht-degree: 90%
 
 ---
 
@@ -111,7 +111,7 @@ Details können Sie angeben wie folgt:
 
 1. Im Schritt **Umfang** können Sie Folgendes auswählen:
 
-   * **Inhalt hinzufügen**, um den [Pfad-Browser](/help/sites-authoring/author-environment-tools.md#path-browser) zu öffnen und zusätzliche Ressourcen auszuwählen; im Browser klicken/tippen Sie auf **Auswählen**, um den Inhalt zur Workflow-Instanz hinzuzufügen.
+   * **Inhalt hinzufügen** , um die [Pfad-Browser](/help/sites-authoring/author-environment-tools.md#path-browser) und wählen Sie zusätzliche Ressourcen aus. Klicken Sie im Browser auf **Auswählen** , um den Inhalt zur Workflow-Instanz hinzuzufügen.
 
    * Eine vorhandene Ressource, um weitere Aktionen zu sehen:
 

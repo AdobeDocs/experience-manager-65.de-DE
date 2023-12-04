@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 exl-id: a0719745-8d67-44bc-92ba-9ab07f31f8d2
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 93%
+source-wordcount: '586'
+ht-degree: 87%
 
 ---
 
@@ -52,7 +52,7 @@ Klicken Sie unten rechts in der Aufgabenkachel auf die Schaltfläche mit Auslass
 
 #### Aufgabendetails {#task-details}
 
-Um weitere Informationen zu einer bestimmten Aufgabe zu erhalten, tippen oder klicken Sie im Posteingang auf die Aufgabe, um sie auszuwählen, oder tippen oder klicken Sie auf **Öffnen** in der Symbolleiste.
+Um weitere Informationen zu einer bestimmten Aufgabe zu erhalten, klicken Sie im Posteingang auf die Aufgabe, um sie auszuwählen, und klicken Sie dann auf **Öffnen** in der Symbolleiste.
 
 ![Aufgabendetails](assets/project-task-detail.png)
 
@@ -70,12 +70,12 @@ Sie können neue Aufgaben zu Projekten hinzufügen. Diese Aufgaben werden dann i
 So fügen Sie eine Aufgabe hinzu:
 
 1. Suchen Sie im Projekt die Kachel **Aufgaben**.
-1. Tippen oder klicken Sie auf den nach unten gerichteten Pfeil oben rechts in der Kachel und klicken Sie auf **Aufgabe erstellen**.
+1. Klicken Sie auf den nach unten gerichteten Pfeil oben rechts in der Kachel und wählen Sie **Aufgabe erstellen**.
 1. Geben Sie im Fester **Aufgabe hinzufügen** Aufgabendetails wie Priorität, Beauftragter und Fälligkeitsdatum an.
 
    ![Hinzufügen einer Aufgabe](assets/project-add-task.png)
 
-1. Tippen oder Klicken Sie auf **Absenden**.
+1. Klicken Sie auf **Senden**.
 
 ## Arbeiten mit Aufgaben im Posteingang {#working-with-tasks-in-the-inbox}
 

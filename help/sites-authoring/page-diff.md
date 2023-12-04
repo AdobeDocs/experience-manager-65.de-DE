@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 86%
+source-wordcount: '569'
+ht-degree: 81%
 
 ---
 
@@ -68,7 +68,7 @@ Der Vergleich erkennt Änderungen auf Komponenten- und HTML-Ebene. Geänderte El
 
 ### Vollbild und Beenden {#fullscreen-and-exiting}
 
-Damit Sie sich auf einen bestimmten Inhalt konzentrieren können, haben Sie die Möglichkeit, auf jeder Seite des Seitenvergleichs auf das Vollbildsymbol zu klicken, um die Ansicht auf das ganze Browser-Fenster zu vergrößern.
+Um sich auf bestimmte Inhalte zu konzentrieren, können Sie auf das Vollbildsymbol für eine der beiden Seiten des Seitenvergleichs klicken, um den Vollbildmodus auf das vollständige Browser-Fenster zu vergrößern.
 
 ![Vollbildmodussymbol](do-not-localize/chlimage_1-18.png)
 

@@ -2,10 +2,10 @@
 title: Authoring von Commerce-Erlebnissen
 description: Das CIF-Add-on erweitert das Adobe Experience Manager-Authoring mit Commerce-spezifischen Funktionen.
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 94%
+ht-degree: 89%
 
 ---
 

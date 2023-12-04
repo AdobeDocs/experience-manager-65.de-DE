@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3787'
+source-wordcount: '3720'
 ht-degree: 51%
 
 ---
@@ -146,8 +146,7 @@ Das AEM-Mobile-Framework ermöglicht die Entwicklung von Komponenten, die für d
 
 * Überprüfen Sie, ob die Gerätegruppe Bilder unterstützt.
   `if (deviceGroup.hasCapability(DeviceCapability.CAPABILITY_IMAGES)) {`
-...
-ODER
+... ODER
   `if MobileUtil.hasCapability(request, DeviceCapability.CAPABILITY_IMAGES) {`
 ...
 
@@ -577,7 +576,7 @@ Die **Statistikseite** ist jetzt verfügbar.
 
 ### Unterstützen von Seiten-Caching für „Link an einen Freund senden“ {#supporting-page-caching-for-send-link-to-a-friend-links}
 
-Mobilseiten können im Dispatcher zwischengespeichert werden, da für eine Gerätegruppe gerenderte Seiten in der Seiten-URL durch die Gerätegruppenauswahl unterschieden werden, beispielsweise `/content/mobilepage.touch.html`. Eine Anfrage an eine mobile Seite ohne einen Selektor wird niemals zwischengespeichert, da in diesem Fall die Geräteerkennung arbeitet und schließlich zu der entsprechenden Gerätegruppe (oder „Nomatch“) umgeleitet wird. Eine mit einem Gerätegruppenselektor gerenderte mobile Seite wird vom Link-Rewriter verarbeitet, der alle Links auf der Seite so umschreibt, dass sie auch die Gerätegruppenauswahl enthält. Dadurch wird verhindert, dass bei jedem Klick auf eine bereits qualifizierte Seite die Gerätegruppenerkennung wiederholt wird.
+Mobilseiten können im Dispatcher zwischengespeichert werden, da für eine Gerätegruppe gerenderte Seiten in der Seiten-URL durch die Gerätegruppenauswahl unterschieden werden, beispielsweise `/content/mobilepage.touch.html`. Eine Anfrage an eine mobile Seite ohne einen Selektor wird niemals zwischengespeichert, da in diesem Fall die Geräteerkennung arbeitet und schließlich zu der entsprechenden Gerätegruppe (oder „Nomatch“) umgeleitet wird. Eine mit einem Gerätegruppenselektor gerenderte mobile Seite wird vom Link-Rewriter verarbeitet, der alle Links auf der Seite neu schreibt, um auch die Gerätegruppenauswahl zu enthalten. Dadurch wird verhindert, dass die Gerätesuche bei jedem Klick auf eine bereits qualifizierte Seite erneut ausgeführt wird.
 
 Daher könnte das folgende Szenario eintreten:
 

@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4834'
-ht-degree: 84%
+source-wordcount: '4825'
+ht-degree: 80%
 
 ---
 
@@ -118,7 +118,7 @@ Bei Verwendung einer Vorlage für [Erstellen einer Seite](/help/sites-authoring/
 
 Beim Erstellen einer bearbeitbaren Vorlage haben Sie folgende Möglichkeiten:
 
-* Verwenden Sie die **Vorlagenkonsole**, die im Bereich **Allgemein** der Konsole **Tools** verfügbar ist.
+* Verwenden Sie die **Vorlage** Konsole. Dies ist im Abschnitt **Allgemein** Abschnitt **Instrumente** Konsole.
 
    * Oder direkt unter: [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
@@ -151,7 +151,7 @@ Für Ihr Projekt sollte ein Vorlagenordner für Ihre projektspezifischen Vorlage
 
 ### Erstellen einer neuen Vorlage – Vorlagenautor {#creating-a-new-template-template-author}
 
-1. Öffnen Sie die **Vorlagenkonsole** (über **Tools >** **Allgemein**) und navigieren Sie zum gewünschten Ordner.
+1. Öffnen Sie die **Vorlagenkonsole** (via **Tools >** **Allgemein**) und navigieren Sie dann zum gewünschten Ordner.
 
    >[!NOTE]
    >
@@ -173,7 +173,7 @@ Für Ihr Projekt sollte ein Vorlagenordner für Ihre projektspezifischen Vorlage
    * **Vorlagenname**
    * **Beschreibung**
 
-1. Wählen Sie **Erstellen**. Eine Bestätigung wird angezeigt. Wählen Sie **Öffnen**[](#editingatemplate), um mit der Bearbeitung der Vorlage zu beginnen, oder **Fertig**, um zur Vorlagenkonsole zurückzukehren.
+1. Wählen Sie **Erstellen**. Eine Bestätigung wird angezeigt, wählen Sie **Öffnen** zu starten [Bearbeiten der Vorlage](#editingatemplate) oder **Fertig** , um zur Vorlagenkonsole zurückzukehren.
 
    >[!NOTE]
    >
@@ -221,14 +221,14 @@ So definieren Sie eine Vorlagenminiaturansicht:
 1. Bearbeiten Sie die Vorlageneigenschaften.
 1. Wählen Sie aus, ob Sie eine Miniaturansicht hochladen oder aus dem Vorlageninhalt generieren lassen möchten.
 
-   * Wenn Sie eine Miniaturansicht hochladen möchten, klicken oder tippen Sie auf **Bild hochladen**.
-   * Wenn Sie eine Miniatur erzeugen möchten, klicken oder tippen Sie auf **Vorschau generieren**
+   * Wenn Sie eine Miniaturansicht hochladen möchten, klicken Sie auf **Bild hochladen**
+   * Wenn Sie eine Miniaturansicht generieren möchten, klicken Sie auf **Vorschau generieren**
 
 1. Für beide Methoden wird eine Vorschau der Miniaturansicht angezeigt.
 
-   Wenn Sie mit dem Ergebnis nicht zufrieden sind, klicken oder tippen Sie auf **Löschen**, um ein anderes Bild hochzuladen oder die Miniaturansicht neu zu erzeugen.
+   Wenn sie nicht zufriedenstellend ist, klicken Sie auf **Löschen** , um ein anderes Bild hochzuladen oder die Miniaturansicht neu zu generieren.
 
-1. Wenn Sie mit der Miniaturansicht zufrieden sind, klicken oder tippen Sie auf **Speichern und schließen**.
+1. Wenn Sie mit der Miniaturansicht zufrieden sind, klicken Sie auf **Speichern und schließen**.
 
 ### Aktivieren und Zulassen einer Vorlage – Vorlagenautor {#enabling-and-allowing-a-template-template-author}
 
@@ -292,7 +292,7 @@ Da auf die Vorlage verwiesen wird, wenn eine Seite dargestellt wird, muss die vo
 
 1. Wählen Sie **Veröffentlichen** in der Symbolleiste, um den Vorgang abzuschließen.
 
-## Bearbeiten von Vorlagen   – Vorlagenautoren {#editing-templates-template-authors}
+## Bearbeiten von Vorlagen - Vorlagenautoren {#editing-templates-template-authors}
 
 Beim Erstellen oder Bearbeiten einer Vorlage können verschiedene Aspekte definiert werden. Das Bearbeiten von Vorlagen ähnelt dem Erstellen von Seiten.
 
@@ -463,13 +463,13 @@ In **Struktur** -Modus des Vorlageneditors:
 
   Beispielsweise kann die zulässige Breite für eine Bildkomponente zusammen mit der Aktivierung des „Lazy Loading“ (Langsames Laden) definiert werden.
 
-  Wenn eine Einstellung mehrere Konfigurationen erlaubt, klicken oder tippen Sie auf die Schaltfläche **Hinzufügen**, um eine weitere Konfiguration hinzuzufügen.
+  Wenn eine Einstellung mehrere Konfigurationen zulässt, klicken Sie auf die **Hinzufügen** -Schaltfläche, um eine weitere Konfiguration hinzuzufügen.
 
   ![chlimage_1-141](assets/chlimage_1-141.png)
 
-  Um eine Konfiguration zu entfernen, klicken oder tippen Sie auf die Schaltfläche **Löschen**, die sich rechts neben der Konfiguration befindet.
+  Um eine Konfiguration zu entfernen, klicken Sie auf das **Löschen** -Schaltfläche rechts neben der Konfiguration.
 
-  Um eine Konfiguration zu entfernen, klicken oder tippen Sie auf die Schaltfläche **Löschen**.
+  Um eine Konfiguration zu entfernen, klicken Sie auf die Schaltfläche &quot;Löschen&quot;.
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -487,7 +487,7 @@ In **Struktur** -Modus des Vorlageneditors:
 
   >[!NOTE]
   >
-  >[Inhaltsrichtlinien für Komponenten, die den Rich-Text-Editor implementieren](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638), können nur für Optionen definiert werden, die vom RTE über die UI-Einstellungen bereitgestellt werden.   [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[Inhaltsrichtlinien für Komponenten, die den Rich-Text-Editor implementieren](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) kann nur für Optionen definiert werden, die vom RTE über seine UI-Einstellungen zur Verfügung gestellt werden. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Richtlinien und Eigenschaften (Layout-Container)**
 
@@ -529,9 +529,9 @@ In **Struktur** -Modus des Vorlageneditors:
 
   Auf der Registerkarte **Standardkomponenten** legen Sie fest, welche Komponenten automatisch mit bestimmten Medientypen verknüpft werden, damit AEM beim Ziehen eines Assets aus dem Asset-Browser weiß, mit welcher Komponente es verknüpft werden soll. Beachten Sie, dass für diese Konfiguration nur Komponenten mit Ablageflächen verfügbar sind.
 
-  Klicken oder tippen Sie auf **Zuordnung hinzufügen**, um eine völlig neue Komponente und MIME-Typzuordnung hinzuzufügen.
+  Klicks **Zuordnung hinzufügen** , um eine völlig neue Komponente und MIME-Typzuordnung hinzuzufügen.
 
-  Wählen Sie eine Komponente in der Liste aus und tippen/klicken Sie auf **Typ hinzufügen**, um einer bereits zugeordneten Komponente einen zusätzlichen MIME-Typ hinzuzufügen. Klicken Sie auf das Symbol **Löschen**, um einen MIME-Typ zu entfernen.
+  Wählen Sie eine Komponente in der Liste aus und klicken Sie auf **Typ hinzufügen** , um einer bereits zugeordneten Komponente einen zusätzlichen MIME-Typ hinzuzufügen. Klicken Sie auf das Symbol **Löschen**, um einen MIME-Typ zu entfernen.
 
   ![chlimage_1-145](assets/chlimage_1-145.png)
 

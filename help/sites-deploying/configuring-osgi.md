@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1971'
-ht-degree: 96%
+source-wordcount: '1954'
+ht-degree: 95%
 
 ---
 
@@ -84,7 +84,7 @@ So aktualisieren Sie mit der Web-Konsole eine Konfiguration:
 
 1. Greifen Sie mithilfe einer der folgenden Methoden auf die Registerkarte **Konfiguration** der Web-Konsole zu:
 
-   * Öffnen Sie die Web-Konsole über den Link im Menü **Tool > Vorgänge**. Nach der Anmeldung in der Konsole können Sie dieses Dropdown-Menü verwenden:
+   * Öffnen der Web-Konsole über den Link auf der **Tool > Vorgänge** Menü. Nach der Anmeldung in der Konsole können Sie dieses Dropdown-Menü verwenden:
 
      **OSGi >**
 
@@ -99,7 +99,7 @@ So aktualisieren Sie mit der Web-Konsole eine Konfiguration:
    * Klicken Sie auf das Symbol **Bearbeiten** für dieses Bundle.
    * Klicken Sie auf den **Namen** des Bundles
 
-1. Ein Dialogfeld wird angezeigt. Hier können Sie nach Bedarf Änderungen vornehmen. Beispielsweise können Sie für die **Protokollebene** auf `INFO` festlegen:
+1. Ein Dialogfeld wird angezeigt. Hier können Sie nach Bedarf Änderungen vornehmen. Legen Sie beispielsweise die **Protokollebene** nach `INFO`:
 
    ![chlimage_1-140](assets/chlimage_1-140.png)
 

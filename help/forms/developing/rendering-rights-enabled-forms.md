@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1455'
-ht-degree: 93%
+source-wordcount: '1447'
+ht-degree: 71%
 
 ---
 
@@ -57,7 +57,7 @@ Bevor Sie einen Client-API-Vorgang für den Forms-Service programmgesteuert durc
 
 **Festlegen von Laufzeitoptionen für Nutzungsrechte**
 
-Legen Sie Laufzeitoptionen für Verwendungsrechte fest, um ein Formular mit aktivierten Verwendungsrechten wiederzugeben. Sie müssen auch den Alias der Anmeldeinformationen angeben, die zum Anwenden von Nutzungsrechten auf ein Formular verwendet werden. Nachdem Sie den Alias-Wert angegeben haben, geben Sie jedes Nutzungsrecht an, das auf das Formular angewendet werden soll.
+Legen Sie Laufzeitoptionen für Verwendungsrechte fest, um ein Formular mit aktivierten Verwendungsrechten wiederzugeben. Geben Sie den Alias der Berechtigung an, mit der Verwendungsrechte auf ein Formular angewendet werden. Nachdem Sie den Alias-Wert angegeben haben, geben Sie jedes Nutzungsrecht an, das auf das Formular angewendet werden soll.
 
 **Rendern eines Formulars mit aktivierten Nutzungsrechten**
 
@@ -93,7 +93,7 @@ So rendern Sie ein Formular mit aktivierten Nutzungsrechten mithilfe der Forms-A
 
 1. Projektdateien einschließen
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-forms-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-forms-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen eines Forms Client-API-Objekts
 
@@ -103,16 +103,16 @@ So rendern Sie ein Formular mit aktivierten Nutzungsrechten mithilfe der Forms-A
 1. Optionen für Nutzungsrechte zur Laufzeit festlegen
 
    * Erstellen Sie ein Objekt `ReaderExtensionSpec`, indem Sie den Konstruktor verwenden.
-   * Geben Sie den Alias der Anmeldeinformationen an, indem Sie die `setReCredentialAlias`-Methode des `ReaderExtensionSpec`-Objekts aufrufen und geben Sie einen Zeichenfolgenwert an, der den Alias-Wert darstellt.
-   * Legen Sie die einzelnen Nutzungsrechte fest, indem Sie die entsprechende Methode aufrufen, die zum `ReaderExtensionSpec`-Objekt gehört. Sie können jedoch nur dann ein Verwendungsrecht festlegen, wenn die von Ihnen referenzierte Berechtigung dies zulässt. Das heißt, Sie können kein Verwendungsrecht festlegen, wenn die Berechtigung es nicht erlaubt, es festzulegen. Beispiel. Um die Nutzungsrechte festzulegen, mit denen ein Benutzer Formularfelder ausfüllen und das Formular speichern kann, rufen Sie die `setReFillIn`-Methode des `ReaderExtensionSpec`-Objekt auf und übergeben `true`.
+   * Geben Sie den Alias der Berechtigung an, indem Sie die `ReaderExtensionSpec` -Objekt `setReCredentialAlias` -Methode und geben Sie einen Zeichenfolgenwert an, der den Alias-Wert darstellt.
+   * Legen Sie die einzelnen Nutzungsrechte fest, indem Sie die entsprechende Methode aufrufen, die zum `ReaderExtensionSpec`-Objekt gehört. Sie können jedoch nur dann ein Verwendungsrecht festlegen, wenn die von Ihnen referenzierte Berechtigung dies zulässt. Das heißt, Sie können kein Verwendungsrecht festlegen, wenn die Berechtigung es nicht erlaubt, es festzulegen. Beispiel. Um die Verwendungsrechte festzulegen, mit denen ein Benutzer Formularfelder ausfüllen und das Formular speichern kann, rufen Sie die `ReaderExtensionSpec` -Objekt `setReFillIn` -Methode und -übergabe `true`.
 
    >[!NOTE]
    >
-   >Es ist nicht erforderlich, die `setReCredentialPassword`-Methode des `ReaderExtensionSpec`-Objekt aufzurufen. Diese Methode wird vom Forms-Service nicht verwendet.
+   >Die `ReaderExtensionSpec` -Objekt `setReCredentialPassword` -Methode. Diese Methode wird vom Forms-Service nicht verwendet.
 
 1. Rendern eines Formulars mit aktivierten Nutzungsrechten
 
-   Rufen Sie die `renderPDFFormWithUsageRights`-Methode des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `FormsServiceClient` -Objekt `renderPDFFormWithUsageRights` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document`-Objekt.
@@ -124,13 +124,13 @@ So rendern Sie ein Formular mit aktivierten Nutzungsrechten mithilfe der Forms-A
 
 1. Schreiben des Formulardaten-Streams in den Client-Webbrowser
 
-   * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie die Methode `getOutputContent` des `FormsResult`-Objekts aufrufen.
-   * Ermitteln Sie den Content-Typ des `com.adobe.idp.Document`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
-   * Legen Sie den Content-Typ des `javax.servlet.http.HttpServletResponse`-Objekts fest, indem Sie seine Methode `setContentType` aufrufen und den Content-Typ des `com.adobe.idp.Document`-Objekts übergeben.
-   * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser verwendet wird, indem Sie die Methode `getOutputStream` des `javax.servlet.http.HttpServletResponse`-Objekts aufrufen.
-   * Erstellen Sie ein `java.io.InputStream`-Objekt durch Aufrufen der `getInputStream`-Methode des `com.adobe.idp.Document`-Objekts.
-   * Erstellen Sie ein Byte-Array und füllen Sie es mit dem Formulardaten-Stream, indem Sie die Methode `read` des `InputStream`-Objekts verwenden und das Byte-Array als Argument übergeben.
-   * Rufen Sie die Methode `write` des `javax.servlet.ServletOutputStream`-Objekts zum Senden des Formulardaten-Streams an den Client-Webbrowser auf. Übergeben Sie das Byte-Array an die Methode `write`.
+   * Erstellen Sie eine `com.adobe.idp.Document` -Objekt durch Aufrufen der `FormsResult` -Objekt `getOutputContent` -Methode.
+   * Ermitteln Sie den Inhaltstyp des `com.adobe.idp.Document`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
+   * Legen Sie die `javax.servlet.http.HttpServletResponse` Inhaltstyp des Objekts durch Aufrufen seiner `setContentType` -Methode verwenden und den Inhaltstyp der `com.adobe.idp.Document` -Objekt.
+   * Erstellen Sie eine `javax.servlet.ServletOutputStream` -Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser durch Aufrufen der `javax.servlet.http.HttpServletResponse` -Objekt `getOutputStream` -Methode.
+   * Erstellen Sie eine `java.io.InputStream` -Objekt durch Aufrufen der `com.adobe.idp.Document` -Objekt `getInputStream` -Methode.
+   * Erstellen Sie ein Byte-Array, das mit dem Formulardatenstream gefüllt wird, indem Sie die `InputStream` -Objekt `read` -Methode verwenden und das Byte-Array als Argument übergeben.
+   * Rufen Sie die `javax.servlet.ServletOutputStream` -Objekt `write` -Methode zum Senden des Formulardatenstreams an den Client-Webbrowser. Übergeben Sie das Byte-Array an die Methode `write`.
 
 **Siehe auch**
 
@@ -156,12 +156,12 @@ Rendering eines Formulars mit aktivierten Rechten mithilfe der Forms API (Webser
 1. Optionen für Nutzungsrechte zur Laufzeit festlegen
 
    * Erstellen Sie ein Objekt `ReaderExtensionSpec`, indem Sie den Konstruktor verwenden.
-   * Geben Sie den Alias der Anmeldeinformationen an, indem Sie die `setReCredentialAlias`-Methode des `ReaderExtensionSpec`-Objekts aufrufen und geben Sie einen Zeichenfolgenwert an, der den Alias-Wert darstellt.
-   * Legen Sie die einzelnen Nutzungsrechte fest, indem Sie die entsprechende Methode aufrufen, die zum `ReaderExtensionSpec`-Objekt gehört. Sie können jedoch nur dann ein Verwendungsrecht festlegen, wenn die von Ihnen referenzierte Berechtigung dies zulässt. Das heißt, Sie können kein Verwendungsrecht festlegen, wenn die Berechtigung es nicht erlaubt, es festzulegen. Um die Nutzungsrechte festzulegen, die es einem Benutzer erlauben Formularfelder auszufüllen und das Formular zu speichern, rufen Sie die `setReFillIn`-Methode des `ReaderExtensionSpec`-Objekts auf und übergeben Sie `true`.
+   * Geben Sie den Alias der Berechtigung an, indem Sie die `ReaderExtensionSpec` -Objekt `setReCredentialAlias` -Methode und geben Sie einen Zeichenfolgenwert an, der den Alias-Wert darstellt.
+   * Legen Sie die einzelnen Nutzungsrechte fest, indem Sie die entsprechende Methode aufrufen, die zum `ReaderExtensionSpec`-Objekt gehört. Sie können jedoch nur dann ein Verwendungsrecht festlegen, wenn die von Ihnen referenzierte Berechtigung dies zulässt. Das heißt, Sie können kein Verwendungsrecht festlegen, wenn die Berechtigung es nicht erlaubt, es festzulegen. Rufen Sie die `ReaderExtensionSpec` -Objekt `setReFillIn` -Methode und -übergabe `true`.
 
-1. Rendern eines Formulars mit aktivierten Rechten
+1. Rendern eines Formulars mit aktivierten Nutzungsrechten
 
-   Rufen Sie die `renderPDFFormWithUsageRights`-Methode des `FormsService`-Objekts auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `FormsService` -Objekt `renderPDFFormWithUsageRights` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `BLOB`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten mit dem Formular zusammenführen wollen, müssen Sie ein `BLOB`-Objekt übergeben, das auf einer leeren XML-Datenquelle basiert. Sie können kein `BLOB`-Objekt übergeben, das Null ist; andernfalls wird eine Ausnahme ausgelöst.
@@ -173,12 +173,12 @@ Rendering eines Formulars mit aktivierten Rechten mithilfe der Forms API (Webser
 
 1. Schreiben des Formulardaten-Streams in den Client-Webbrowser
 
-   * Erstellen Sie ein `BLOB`-Objekt, das Formulardaten enthält, indem Sie die `getOutputContent`-Methode des `FormsResult`-Objekts aufrufen.
+   * Erstellen Sie eine `BLOB` -Objekt, das Formulardaten enthält, durch Aufrufen der `FormsResult` -Objekt `getOutputContent` -Methode.
    * Ermitteln Sie den Inhaltstyp des `BLOB`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
-   * Legen Sie den Content-Typ des `javax.servlet.http.HttpServletResponse`-Objekts fest, indem Sie seine Methode `setContentType` aufrufen und den Content-Typ des `BLOB`-Objekts übergeben.
-   * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Schreiben des Formulardaten-Stream in den Client-Webbrowser verwendet wird, indem Sie die Methode `getOutputStream` des `javax.servlet.http.HttpServletResponse`-Objekts aufrufen.
-   * Erstellen Sie ein Byte-Array und füllen Sie es auf, indem Sie die Methode `getBinaryData` des `BLOB`-Objekts aufrufen. Mit dieser Aufgabe wird dem Byte-Array der Inhalt des `FormsResult`-Objekts zugewiesen.
-   * Rufen Sie die Methode `write` des `javax.servlet.http.HttpServletResponse`-Objekts auf, um den Formulardaten-Stream an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die Methode `write`.
+   * Legen Sie die `javax.servlet.http.HttpServletResponse` Inhaltstyp des Objekts durch Aufrufen seiner `setContentType` -Methode verwenden und den Inhaltstyp der `BLOB` -Objekt.
+   * Erstellen Sie eine `javax.servlet.ServletOutputStream` -Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser durch Aufrufen der `javax.servlet.http.HttpServletResponse` -Objekt `getOutputStream` -Methode.
+   * Erstellen Sie ein Byte-Array und füllen Sie es durch Aufrufen der `BLOB` -Objekt `getBinaryData` -Methode. Mit dieser Aufgabe wird dem Byte-Array der Inhalt des `FormsResult`-Objekts zugewiesen.
+   * Rufen Sie die `javax.servlet.http.HttpServletResponse` -Objekt `write` -Methode zum Senden des Formulardatenstreams an den Client-Webbrowser. Übergeben Sie das Byte-Array an die Methode `write`.
 
 **Siehe auch**
 

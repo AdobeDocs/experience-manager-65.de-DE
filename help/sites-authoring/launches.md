@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 93%
+source-wordcount: '831'
+ht-degree: 91%
 
 ---
 
@@ -121,6 +121,6 @@ Die Konsole &quot;Launches&quot;bietet einen Überblick über Ihre Launches und 
 
    ![Registerkarte &quot;Referenz&quot;- Launches](assets/screen-shot_2019-03-05at121901-1.png)
 
-1. Tippen/klicken Sie auf den entsprechenden Launch. Die Liste der möglichen Aktionen wird angezeigt:
+1. Klicken Sie auf den entsprechenden Launch. Die Liste der möglichen Aktionen wird angezeigt:
 
    ![Launch auswählen, um mögliche Aktionen anzuzeigen](assets/screen-shot_2019-03-05at121952-1.png)

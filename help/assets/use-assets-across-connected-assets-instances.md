@@ -7,10 +7,10 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3949'
-ht-degree: 97%
+source-wordcount: '3908'
+ht-degree: 98%
 
 ---
 
@@ -71,7 +71,7 @@ Nachfolgend erfahren Sie mehr über die verschiedenen Rollen, die am Konfigurier
 
 ### Connected Assets-Architektur {#connected-assets-architecture}
 
-Experience Manager ermöglicht die Verbindung einer Remote-DAM-Bereitstellung als Quelle mit mehreren Experience Managern [!DNL Sites] -Implementierungen. Sie können jedoch eine [!DNL Sites]-Bereitstellung nur mit einer Remote-DAM-Bereitstellung verbinden.
+Mit Experience Manager können Sie eine Remote-DAM-Implementierung als Quelle mit mehreren Experience Manager[!DNL Sites]-Implementierungen verbinden. Sie können jedoch eine [!DNL Sites]-Bereitstellung nur mit einer Remote-DAM-Bereitstellung verbinden.
 
 Ermitteln Sie die optimale Anzahl von Sites-Instanzen für das Verbinden mit einer entfernten DAM-Bereitstellung. Adobe empfiehlt, Sites-Instanzen schrittweise in die Bereitstellung einzubinden und zu testen, dass es keine Auswirkungen auf die Leistung des Remote-DAM gibt, da jede verbundene Sites-Instanz zum Datenverkehr auf dem Remote-DAM beiträgt.
 
@@ -140,9 +140,7 @@ Gehen Sie wie folgt vor, um die Verbindung zwischen Connected Assets und lokalen
 Sie können die Verbindung zwischen konfigurierten [!DNL Sites]-Bereitstellungen und der [!DNL Assets]-Bereitstellung überprüfen.
 
 ![Verbindungstest für konfigurierte Connected Assets [!DNL Sites]](assets/connected-assets-multiple-config.png)
-
-
-*Abbildung: Verbindungstest bei für [!DNL Sites] konfigurierte Connected Assets.*
+*Abbildung: Verbindungstest für konfigurierte Connected Assets [!DNL Sites].*
 
 ## Verwenden von Dynamic Media-Assets {#dynamic-media-assets}
 
@@ -234,7 +232,7 @@ Gehen Sie wie folgt vor, um Referenzen auf die [!DNL Assets]-Bereitstellung anzu
    ![Remote-Referenzen in der Seite Asset-Eigenschaften](assets/connected-assets-remote-reference.png)
 
 1. Die Referenzen für [!DNL Sites]-Seiten zeigen die Gesamtzahl der Referenzen für jede lokale [!DNL Sites] an. Es kann einige Zeit dauern, bis alle Referenzen gefunden und die Gesamtzahl der Referenzen angezeigt werden.
-1. Die Liste der Referenzen ist interaktiv und DAM-Benutzer können auf eine Referenz klicken, um die verweisende Seite zu öffnen. Wenn Remote-Referenzen aus irgendeinem Grund nicht abgerufen werden können, wird eine Benachrichtigung angezeigt, die den Benutzer über den Fehler informiert.
+1. Die Liste der Verweise ist interaktiv und DAM-Benutzer können auf einen Verweis klicken, um die verweisende Seite zu öffnen. Wenn Remote-Referenzen aus irgendeinem Grund nicht abgerufen werden können, wird eine Benachrichtigung angezeigt, die den Benutzer über den Fehler informiert.
 1. Benutzer können das Asset verschieben oder löschen. Beim Verschieben oder Löschen eines Assets wird die Gesamtzahl der Referenzen aller ausgewählten Assets/Ordner in einem Warndialogfeld angezeigt. Beim Löschen eines Assets, für das die Referenzen noch nicht abgerufen wurden, wird ein Warndialogfeld angezeigt.
 
    ![Warnung „Löschen erzwingen“](assets/delete-referenced-asset.png)
@@ -317,7 +315,7 @@ Sie können der [!DNL Sites]-Bereitstellung Assets hinzufügen, diese Assets kö
 
 * Um Erkenntnisse zur Asset-Nutzung zu erhalten, konfigurieren Sie die Funktion [Assets Insights](/help/assets/asset-insights.md) in der [!DNL Sites]-Instanz.
 
-* Sie können das Remote-Asset nicht auf die [Dialogfeld &quot;Konfiguration der Bildkomponente&quot;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog). Sie können das Remote-Asset jedoch direkt auf die Bildkomponente auf der Sites-Seite ziehen, ohne auf **[!UICONTROL Konfigurieren]**.
+* Sie können das Remote-Asset nicht in das [Dialogfeld „Konfiguration der Bildkomponente“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=de#configure-dialog) ziehen. Sie können das Remote-Asset jedoch direkt auf die Bildkomponente auf der Sites-Seite ziehen, ohne auf **[!UICONTROL Konfigurieren]** zu klicken.
 
 ### Berechtigungen und Asset-Verwaltung {#permissions-and-managing-assets}
 

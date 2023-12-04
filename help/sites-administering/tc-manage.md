@@ -2,10 +2,10 @@
 title: Verwalten von Übersetzungsprojekten
 description: Erfahren Sie, wie Sie Übersetzungsprojekte in Adobe Experience Manager verwalten.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3578'
-ht-degree: 64%
+source-wordcount: '3504'
+ht-degree: 61%
 
 ---
 
@@ -80,12 +80,12 @@ Nach dem Übersetzen können Sie [die Übersetzung überprüfen](#reviewing-and-
 
    Um beispielsweise die englischen Seiten der Demo-Site zu übersetzen, wählen Sie &quot;Geometrixx Demo Site&quot;> &quot;Englisch&quot;.
 
-1. Klicken oder tippen Sie in der Symbolleiste auf Verweise .
+1. Klicken Sie in der Symbolleiste auf Verweise.
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
 1. Wählen Sie die Option Sprachkopien und dann die Sprachkopien aus, für die Sie die Quellseiten übersetzen.
-1. Klicken oder tippen Sie auf Erstellen und übersetzen und konfigurieren Sie dann den Übersetzungsauftrag:
+1. Klicken Sie auf Erstellen und übersetzen und konfigurieren Sie dann den Übersetzungsauftrag:
 
    * Wählen Sie mithilfe des Dropdown-Menüs Sprache eine Sprachkopie aus, für die Sie eine Übersetzung durchführen möchten. Wählen Sie bei Bedarf weitere Sprachen aus. Die in der Liste angezeigten Sprachen entsprechen den [von Ihnen erstellten Sprachstämmen](/help/sites-administering/tc-prep.md#creating-a-language-root).
    * Wählen Sie zur Übersetzung der von Ihnen ausgewählten Seite und allen untergeordneten Seiten die Option „Alle Unterseiten auswählen“ aus. Um nur die von Ihnen ausgewählten Seiten zu übersetzen, wählen Sie diese Option ab.
@@ -94,7 +94,7 @@ Nach dem Übersetzen können Sie [die Übersetzung überprüfen](#reviewing-and-
 
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
-1. Klicken oder tippen Sie auf Erstellen.
+1. Klicken Sie auf „Erstellen“.
 
 ### Erstellen von Übersetzungsprojekten für vorhandene Sprachkopien {#create-translation-projects-for-an-existing-language-copy}
 
@@ -102,12 +102,12 @@ Nach dem Übersetzen können Sie [die Übersetzung überprüfen](#reviewing-and-
 
    Um beispielsweise die englischen Seiten der Demo-Site zu übersetzen, wählen Sie &quot;Geometrixx Demo Site&quot;> &quot;Englisch&quot;.
 
-1. Klicken oder tippen Sie in der Symbolleiste auf Verweise .
+1. Klicken Sie in der Symbolleiste auf Verweise.
 
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
 1. Wählen Sie die Option Sprachkopien und dann die Sprachkopien aus, für die Sie die Quellseiten übersetzen.
-1. Klicken oder tippen Sie auf Sprachkopien aktualisieren und konfigurieren Sie dann den Übersetzungsauftrag:
+1. Klicken Sie auf Sprachkopien aktualisieren und konfigurieren Sie dann den Übersetzungsauftrag:
 
    * Wählen Sie zur Übersetzung der von Ihnen ausgewählten Seite und allen untergeordneten Seiten die Option „Alle Unterseiten auswählen“ aus. Um nur die von Ihnen ausgewählten Seiten zu übersetzen, wählen Sie diese Option ab.
    * Wählen Sie für Projekt die Option Neues Übersetzungsprojekt erstellen aus.
@@ -115,7 +115,7 @@ Nach dem Übersetzen können Sie [die Übersetzung überprüfen](#reviewing-and-
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
-1. Klicken oder tippen Sie auf „Starten“.
+1. Klicken Sie auf Start.
 
 ## Hinzufügen von Seiten zu einem Übersetzungsprojekt {#adding-pages-to-a-translation-project}
 
@@ -129,7 +129,7 @@ Wie beim Erstellen eines Projekts werden beim Hinzufügen von Seiten bei Bedarf 
 
    Um beispielsweise die englischen Seiten der Demo-Site zu übersetzen, wählen Sie &quot;Geometrixx Demo Site&quot;> &quot;Englisch&quot;.
 
-1. Klicken oder tippen Sie in der Symbolleiste auf Verweise .
+1. Klicken Sie in der Symbolleiste auf Verweise.
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
@@ -137,7 +137,7 @@ Wie beim Erstellen eines Projekts werden beim Hinzufügen von Seiten bei Bedarf 
 
    ![chlimage_1-35](assets/chlimage_1-35.jpeg)
 
-1. Klicken oder tippen Sie auf Sprachkopien aktualisieren und konfigurieren Sie dann die Eigenschaften:
+1. Klicken Sie auf Sprachkopien aktualisieren und konfigurieren Sie dann die Eigenschaften:
 
    * Wählen Sie zur Übersetzung der von Ihnen ausgewählten Seite und allen untergeordneten Seiten die Option „Alle Unterseiten auswählen“ aus. Um nur die von Ihnen ausgewählten Seiten zu übersetzen, wählen Sie diese Option ab.
    * Wählen Sie für Projekt die Option Zu vorhandenem Übersetzungsprojekt hinzufügen aus.
@@ -149,21 +149,21 @@ Wie beim Erstellen eines Projekts werden beim Hinzufügen von Seiten bei Bedarf 
 
    ![chlimage_1-36](assets/chlimage_1-36.jpeg)
 
-1. Klicken oder tippen Sie auf „Starten“.
+1. Klicken Sie auf Start.
 
 ## Hinzufügen von Seiten/Assets zu einem Übersetzungsauftrag {#adding-pages-assets-to-a-translation-job}
 
 Sie können Seiten, Assets, Tags oder i18n-Wörterbücher dem Übersetzungsauftrag Ihres Übersetzungsprojektes hinzufügen. So fügen Sie Seiten oder Assets hinzu:
 
-1. Klicken oder tippen Sie unten auf der Kachel Übersetzungsauftrag des Übersetzungsprojekts auf das Auslassungszeichen.
+1. Klicken Sie unten auf der Kachel Übersetzungsauftrag Ihres Übersetzungsprojekts auf das Auslassungszeichen.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
-1. Klicken oder tippen Sie auf „Hinzufügen“ und anschließend auf „Seiten/Assets“.
+1. Klicken Sie auf Hinzufügen und Seiten/Assets.
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-1. Wählen Sie das oberste Element der Verzweigung aus, die Sie hinzufügen möchten, und klicken oder tippen Sie dann auf das Häkchen-Symbol. Sie können eine Mehrfachauswahl durchführen.
+1. Wählen Sie das oberste Element der Verzweigung aus, die Sie hinzufügen möchten, und klicken Sie dann auf das Häkchen-Symbol. Sie können eine Mehrfachauswahl durchführen.
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
@@ -177,15 +177,15 @@ Ihre Seiten und/oder Assets werden zum Übersetzungsauftrag hinzugefügt.
 
 Sie können Seiten, Assets, Tags oder i18n-Wörterbücher dem Übersetzungsauftrag Ihres Übersetzungsprojektes hinzufügen. Hinzufügen eines i18n-Wörterbuchs:
 
-1. Klicken oder tippen Sie unten auf der Kachel Übersetzungsauftrag des Übersetzungsprojekts auf das Auslassungszeichen.
+1. Klicken Sie unten auf der Kachel Übersetzungsauftrag Ihres Übersetzungsprojekts auf das Auslassungszeichen.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Klicken bzw. tippen Sie auf „I18N-Wörterbuch“.
+1. Klicken Sie auf Hinzufügen und I18N-Wörterbuch.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Wählen Sie das Wörterbuch aus, das Sie hinzufügen möchten, und klicken oder tippen Sie dann auf die Schaltfläche „Hinzufügen“.
+1. Wählen Sie das Wörterbuch aus, das Sie hinzufügen möchten, und klicken Sie dann auf die Schaltfläche Hinzufügen .
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
@@ -201,15 +201,15 @@ Ihr Wörterbuch befindet sich nun in Ihrem Übersetzungsauftrag.
 
 Sie können Seiten, Assets, Tags oder i18n-Wörterbücher dem Übersetzungsauftrag Ihres Übersetzungsprojektes hinzufügen. So fügen Sie Tags hinzu:
 
-1. Klicken oder tippen Sie unten auf der Kachel Übersetzungsauftrag des Übersetzungsprojekts auf das Auslassungszeichen.
+1. Klicken Sie unten auf der Kachel Übersetzungsauftrag Ihres Übersetzungsprojekts auf das Auslassungszeichen.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
-1. Klicken oder tippen Sie auf „Hinzufügen“ und dann auf „Tags“.
+1. Klicken Sie auf Hinzufügen und dann auf Tags.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Wählen Sie die Tags aus, die Sie hinzufügen möchten, und klicken oder tippen Sie dann auf das Häkchen-Symbol. Sie können eine Mehrfachauswahl durchführen.
+1. Wählen Sie die Tags aus, die Sie hinzufügen möchten, und klicken Sie dann auf das Häkchen-Symbol. Sie können eine Mehrfachauswahl durchführen.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
@@ -255,7 +255,7 @@ Die folgende Tabelle beschreibt die einzelnen Status, die ein Auftrag oder ein E
 | Fehler beim Update | Beim Übertragen von Dateien zwischen AEM und dem Übersetzungs-Service ist ein Fehler aufgetreten. |
 | Unbekannter Status | Ein unbekannter Fehler ist aufgetreten. |
 
-Klicken oder tippen Sie auf die Auslassungspunkte am unteren Rand der Kachel, um den Status der einzelnen Dateien im Auftrag anzuzeigen.
+Um den Status jeder Datei im Auftrag anzuzeigen, klicken Sie auf das Auslassungszeichen am unteren Rand der Kachel.
 
 ## Festlegen des Fälligkeitsdatums von Übersetzungsaufträgen {#setting-the-due-date-of-translation-jobs}
 
@@ -268,7 +268,7 @@ Die Festlegung eines Fälligkeitsdatums funktioniert nur dann richtig, wenn der 
 
 Im folgenden Verfahren wird das Fälligkeitsdatum für ein Projekt festgelegt.
 
-1. Klicken oder tippen Sie unten auf der Kachel Übersetzungszusammenfassung auf das Auslassungszeichen.
+1. Klicken Sie unten auf der Kachel Übersetzungszusammenfassung auf das Auslassungszeichen.
 
    ![chlimage_1-260](assets/chlimage_1-260.png)
 
@@ -276,15 +276,15 @@ Im folgenden Verfahren wird das Fälligkeitsdatum für ein Projekt festgelegt.
 
    ![chlimage_1-261](assets/chlimage_1-261.png)
 
-1. Klicken oder tippen Sie auf Fertig .
+1. Klicken Sie auf Fertig.
 
 Im folgenden Verfahren wird das Fälligkeitsdatum für einen Übersetzungsauftrag festgelegt.
 
-1. Klicken oder tippen Sie auf der Kachel Übersetzungsauftrag auf das Befehlsmenü und dann auf Fälligkeitsdatum.
+1. Klicken Sie auf der Kachel Übersetzungsauftrag auf das Menü &quot;Befehle&quot;und klicken Sie dann auf Fälligkeitsdatum.
 
    ![chlimage_1-262](assets/chlimage_1-262.png)
 
-1. Klicken oder tippen Sie im Dialogfeld auf das Kalender-Symbol, wählen Sie dann das Datum und die Uhrzeit für das Fälligkeitsdatum aus und klicken Sie abschließend auf „Speichern“.
+1. Klicken Sie im Dialogfeld auf das Kalendersymbol, wählen Sie dann das Datum und die Uhrzeit aus, die als Fälligkeitsdatum verwendet werden sollen, und klicken Sie dann auf Speichern.
 
    ![chlimage_1-263](assets/chlimage_1-263.png)
 
@@ -303,11 +303,11 @@ Wenn Sie den Umfang eines Übersetzungsauftrags berechnen, lautet der Status des
 Die Umfangsberechnung funktioniert nur dann richtig, wenn der Übersetzungsanbieter diese Funktion unterstützt.
 
 1. Öffnen Sie in der Projektekonsole Ihr Übersetzungsprojekt.
-1. Klicken oder tippen Sie auf der Kachel &quot;Übersetzungsauftrag&quot;auf das Menü &quot;Befehle&quot;und dann auf &quot;Umfang anfordern&quot;.
+1. Klicken Sie auf der Kachel Übersetzungsauftrag auf das Menü &quot;Befehle&quot;und klicken Sie dann auf &quot;Umfang anfordern&quot;.
 
    ![chlimage_1-264](assets/chlimage_1-264.png)
 
-1. Wenn sich der Auftragsstatus in SCOPE_COMPLETED ändert, klicken oder tippen Sie auf der Kachel Übersetzungsauftrag auf das Befehlsmenü und dann auf Umfang anzeigen .
+1. Wenn sich der Auftragsstatus in SCOPE_COMPLETED ändert, klicken Sie auf der Kachel Übersetzungsauftrag auf das Menü Befehle und dann auf Umfang anzeigen .
 
 ## Starten eines Übersetzungsauftrags {#starting-a-translation-job}
 
@@ -318,19 +318,19 @@ Nachdem Sie den Übersetzungsauftrag gestartet haben, wird auf der Kachel Übers
 ![chlimage_1-265](assets/chlimage_1-265.png)
 
 1. Öffnen Sie in der Projektekonsole das Übersetzungsprojekt.
-1. Klicken oder tippen Sie auf der Kachel Übersetzungsauftrag auf das Befehlsmenü und dann auf Start.
+1. Klicken Sie auf der Kachel Übersetzungsauftrag auf das Menü &quot;Befehle&quot;und klicken Sie dann auf Start.
 
    ![chlimage_1-266](assets/chlimage_1-266.png)
 
-1. Klicken oder tippen Sie im Dialogfeld Aktion , das den Start der Übersetzung bestätigt, auf Schließen .
+1. Klicken Sie im Dialogfeld Aktion , das den Start der Übersetzung bestätigt, auf Schließen .
 
 ## Abbrechen von Übersetzungsaufträgen {#canceling-a-translation-job}
 
 Sie können einen Übersetzungsauftrag abbrechen, um den Übersetzungsprozess zu stoppen und den Übersetzungsanbieter daran zu hindern, weitere Übersetzungen durchzuführen. Sie können einen Auftrag abbrechen, wenn der Auftrag den Status `Committed For Translation` oder `Translation In Progress` hat.
 
 1. Öffnen Sie in der Projektekonsole das Übersetzungsprojekt.
-1. Klicken oder tippen Sie auf der Kachel Übersetzungsauftrag auf das Befehlsmenü und dann auf Abbrechen .
-1. Klicken oder tippen Sie im Dialogfeld Aktion , das den Abbruch der Übersetzung bestätigt, auf OK.
+1. Klicken Sie auf der Kachel Übersetzungsauftrag auf das Menü &quot;Befehle&quot;und klicken Sie dann auf Abbrechen .
+1. Klicken Sie im Dialogfeld Aktion , das den Abbruch der Übersetzung bestätigt, auf OK.
 
 ## Workflow akzeptieren/ablehnen {#accept-reject-workflow}
 
@@ -350,18 +350,18 @@ Wenn Inhalte für eine vorhandene Sprachkopie übersetzt werden, überprüfen Si
 
 ![chlimage_1-269](assets/chlimage_1-269.png)
 
-1. Wählen Sie die Seite im Sprachstamm aus, klicken oder tippen Sie auf Verweise und dann auf Sprachkopien.
-1. Klicken bzw. tippen Sie auf die zu überprüfende Sprachkopie.
+1. Wählen Sie die Seite im Sprach-Master aus, klicken Sie auf Verweise und dann auf Sprachkopien .
+1. Klicken Sie auf die zu überprüfende Sprachkopie.
 
    ![chlimage_1-270](assets/chlimage_1-270.png)
 
-1. Klicken oder tippen Sie auf Launch, um die Launch-Befehle anzuzeigen.
+1. Klicken Sie auf Launch , um die Launch-bezogenen Befehle anzuzeigen.
 
    ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. Klicken Sie auf Seite öffnen, um die Launch Copy der zu überprüfenden Seite zu öffnen und die Inhalte zu bearbeiten.
 1. Nachdem Sie die Inhalte überprüft und alle notwendigen Änderungen vorgenommen haben, klicken Sie auf Bewerben, um die Launch Copy zu bewerben.
-1. Legen Sie auf der Seite Launch bewerben fest, welche Seiten beworben werden sollen, und klicken oder tippen Sie dann auf Bewerben.
+1. Geben Sie auf der Seite Launch bewerben an, welche Seiten beworben werden sollen, und klicken Sie dann auf Bewerben .
 
 ## Vergleichen von Sprachkopien {#comparing-language-copies}
 
@@ -393,7 +393,7 @@ Archivieren Sie einen Übersetzungsauftrag, nachdem er abgeschlossen ist und Sie
 Füllen Sie Ihre Sprachkopie so, dass sie Inhalte aus der Stammsprache enthält, die Sie übersetzen. Bevor Sie Ihre Sprachkopie füllen, müssen Sie [den Sprachstamm der Sprachkopie erstellt haben](/help/sites-administering/tc-prep.md#creating-a-language-root).
 
 1. Verwenden Sie die Sites-Konsole, um den Sprachstamm der Master-Sprache auszuwählen, die Sie als Quelle verwenden. Um beispielsweise die englischen Seiten der Demo-Site zu übersetzen, wählen Sie &quot;Content&quot;> &quot;Geometrixx Demo Site&quot;> &quot;English&quot;.
-1. Klicken oder tippen Sie in der Symbolleiste auf Verweise .
+1. Klicken Sie in der Symbolleiste auf Verweise.
 
    ![chlimage_1-273](assets/chlimage_1-273.png)
 
@@ -401,14 +401,14 @@ Füllen Sie Ihre Sprachkopie so, dass sie Inhalte aus der Stammsprache enthält,
 
    ![chlimage_1-38](assets/chlimage_1-38.jpeg)
 
-1. Klicken bzw. tippen Sie auf Sprachkopien aktualisieren, um die Übersetzungs-Tools anzuzeigen, und konfigurieren Sie die Eigenschaften:
+1. Klicken Sie auf Sprachkopien aktualisieren , um die Übersetzungs-Tools anzuzeigen und die Eigenschaften zu konfigurieren:
 
    * Wählen Sie die Option Alle Unterseiten auswählen aus.
    * Wählen Sie für das Projekt die Option Nur Struktur erstellen aus.
 
    ![chlimage_1-39](assets/chlimage_1-39.jpeg)
 
-1. Klicken oder tippen Sie auf „Starten“.
+1. Klicken Sie auf Start.
 
 ## Verschieben oder Umbenennen einer Quellseite {#move-source}
 
@@ -442,24 +442,24 @@ Wenn Sie ein Übersetzungsprojekt manuell erstellen, müssen Sie neben den [grun
 * **Zielsprache:** Die Sprache, in die der Inhalt übersetzt wird.
 * **Übersetzungsmethode:** Wählen Sie Menschliche Übersetzung aus, um anzugeben, dass die Übersetzung manuell durchgeführt werden soll.
 
-1. Klicken oder tippen Sie in der Symbolleiste der Projektekonsole auf Erstellen .
-1. Wählen Sie dann die Vorlage Übersetzungsprojekt aus und klicken oder tippen Sie auf Weiter.
+1. Klicken Sie in der Symbolleiste der Projektekonsole auf Erstellen .
+1. Wählen Sie die Vorlage Übersetzungsprojekt aus und klicken Sie auf Weiter.
 1. Geben Sie Werte für die Eigenschaften Allgemein ein ein.
-1. Klicken oder tippen Sie auf Erweitert und geben Sie Werte für die übersetzungsspezifischen Eigenschaften an.
-1. Klicken oder tippen Sie auf Erstellen. Klicken oder tippen Sie im Bestätigungsfeld auf Fertig , um zur Projektekonsole zurückzukehren, oder klicken oder tippen Sie auf Projekt öffnen , um das Projekt zu öffnen und zu verwalten.
+1. Klicken Sie auf Erweitert und geben Sie Werte für die übersetzungsbezogenen Eigenschaften an.
+1. Klicken Sie auf „Erstellen“. Klicken Sie im Bestätigungsfeld auf Fertig , um zur Projektekonsole zurückzukehren, oder klicken Sie auf Projekt öffnen , um das Projekt zu öffnen und zu verwalten.
 
 ## Exportieren von Übersetzungsaufträgen {#exporting-a-translation-job}
 
 Sie können den Inhalt eines Übersetzungsauftrags herunterladen, um ihn beispielsweise an einen Übersetzungsanbieter zu senden, der nicht über einen Connector mit AEM integriert ist, oder um den Inhalt zu überprüfen.
 
-1. Klicken oder tippen Sie im Dropdown-Menü der Kachel Übersetzungsauftrag auf Exportieren .
-1. Klicken oder tippen Sie im Dialogfeld &quot;Exportieren&quot;auf &quot;Exportierte Datei herunterladen&quot;und speichern Sie die Datei bei Bedarf im Webbrowser-Dialogfeld.
-1. Klicken oder tippen Sie im Dialogfeld &quot;Exportieren&quot;auf Schließen.
+1. Klicken Sie im Dropdown-Menü der Kachel Übersetzungsauftrag auf Exportieren.
+1. Klicken Sie im Dialogfeld &quot;Exportieren&quot;auf &quot;Exportierte Datei herunterladen&quot;und speichern Sie die Datei bei Bedarf im Webbrowser-Dialogfeld.
+1. Klicken Sie im Dialogfeld &quot;Exportieren&quot;auf Schließen.
 
 ## Importieren von Übersetzungsaufträgen {#importing-a-translation-job}
 
 Sie können übersetzte Inhalte beispielsweise in AEM importieren, wenn Ihr Übersetzungsanbieter sie an Sie sendet, da sie nicht über einen Connector mit AEM integriert sind.
 
-1. Klicken oder tippen Sie im Dropdown-Menü der Kachel Übersetzungsauftrag auf Importieren.
+1. Klicken Sie im Dropdown-Menü der Kachel Übersetzungsauftrag auf Importieren.
 1. Wählen Sie im Dialogfeld des Webbrowsers die zu importierende Datei aus.
-1. Klicken oder tippen Sie im Dialogfeld &quot;Importieren&quot;auf Schließen.
+1. Klicken Sie im Dialogfeld &quot;Importieren&quot;auf Schließen.

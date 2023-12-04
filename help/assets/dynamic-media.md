@@ -10,10 +10,10 @@ discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Collaboration,Asset Management
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
-workflow-type: ht
-source-wordcount: '419'
-ht-degree: 100%
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 88%
 
 ---
 
@@ -41,7 +41,7 @@ Funktionen, die nur für Dynamic Media vorgesehen sind:
 * [Panoramabilder](panoramic-images.md)
 
 * [Rotationssets](spin-sets.md)
-* [Video   ](video.md)
+* [Video ](video.md)
 * [Bereitstellen von Dynamic Media-Assets](delivering-dynamic-media-assets.md)
 * [Verwalten von Assets](managing-assets.md)
 * [Erstellen eines benutzerdefinierten Popup-Fensters mithilfe einer Schnellansicht](custom-pop-ups.md)
@@ -76,13 +76,13 @@ Bildsets, Rotationssets und Sets für gemischte Medien sind verfügbar, wenn Dyn
 
 ### PTIFF-Ausgabedarstellungen {#ptiff-renditions}
 
-Zu für Dynamic Media aktivierten Assets gehört `pyramid.tiffs`.
+Für Dynamic Media aktivierte Assets enthalten `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
 ### Änderung der Asset-Ansichten {#asset-views-change}
 
-Wenn Dynamic Media aktiviert ist, können Sie die Ansicht durch Klicken auf die Schaltflächen `+` und `-` vergrößern und verkleinern. Sie können durch Klicken oder Tippen auch einen bestimmten Bereich vergrößern. Außerdem können Sie die Originalansicht wiederherstellen und das Bild durch Klicken auf die diagonalen Pfeile im Vollbildmodus anzeigen. Eine Ansicht mit aktivierter Dynamic Media-Funktion sieht wie folgt aus:
+Wenn Dynamic Media aktiviert ist, können Sie durch Klicken auf die `+` und `-` Schaltflächen. Sie können auch auf klicken, um in einen bestimmten Bereich zu zoomen. Zurück bringt Sie zur Originalversion und Sie können das Bild im Vollbildmodus anzeigen, indem Sie auf die diagonalen Pfeile klicken. Dynamic Media enabled sieht wie folgt aus:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

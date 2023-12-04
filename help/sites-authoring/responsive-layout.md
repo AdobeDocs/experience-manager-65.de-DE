@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 85%
+source-wordcount: '1798'
+ht-degree: 83%
 
 ---
 
@@ -120,7 +120,7 @@ Wenn Sie z. B. das Gerät **iPhone 6 Plus** für die Emulation und das Layout a
 1. Um ein bestimmtes zu emulierendes Gerät auszuwählen, haben Sie folgende Möglichkeiten:
 
    * Verwenden Sie das Symbol „Gerät auswählen“ und wählen Sie aus einer Dropdown-Auswahl aus.
-   * Tippen/klicken Sie auf der Emulator-Symbolleiste auf das Gerätezeichen.
+   * Klicken Sie in der Emulator-Symbolleiste auf die Geräteanzeige.
 
    ![screen_shot_2018-03-23at084818](assets/screen_shot_2018-03-23at084818.png)
 
@@ -216,7 +216,7 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster ausführen:
   >
   >Wenn Sie die Größe von Komponenten wie **Bildern** ändern, bleiben die Proportionen und Seitenverhältnisse erhalten.
 
-* Klicken/tippen Sie auf eine Inhaltskomponente. Über die Symbolleiste können Sie:
+* Klicken Sie auf eine Inhaltskomponente. Über die Symbolleiste können Sie:
 
    * **Übergeordnetes Element**
 
@@ -232,7 +232,7 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster ausführen:
 
   ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
-* Im **Layout**-Modus können Sie auf **Komponenten hierher ziehen** tippen/klicken, um die gesamte Komponente auszuwählen. Dadurch wird die Symbolleiste für diesen Modus angezeigt.
+* In **Layout** -Modus können Sie auf **Komponenten hierher ziehen** , um die gesamte Komponente auszuwählen. Dadurch wird die Symbolleiste für diesen Modus angezeigt.
 
   Die Symbolleiste bietet je nach Status der Layout-Komponente und der zugehörigen Komponenten unterschiedliche Optionen. Beispiel:
 
@@ -244,7 +244,7 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster ausführen:
 
      ![Verborgene Komponenten einblenden](do-not-localize/screen_shot_2018-03-23at091007.png)
 
-   * **Breakpoint-Layout zurücksetzen**: Ermöglicht die Rückkehr zum Standard-Layout. Dies bedeutet, dass kein benutzerdefiniertes Layout vorgegeben wird.
+   * **Breakpoint-Layout zurücksetzen**: Stellt das Standard-Layout wieder her. Dies bedeutet, dass kein benutzerdefiniertes Layout vorgegeben wird.
 
      ![Breakpoint-Layout zurücksetzen](do-not-localize/screen_shot_2018-03-23at091013.png)
 

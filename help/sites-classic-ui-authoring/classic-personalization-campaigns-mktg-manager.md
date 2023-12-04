@@ -1,20 +1,16 @@
 ---
 title: Arbeiten mit dem Marketing Campaign Manager
-seo-title: Working with the Marketing Campaign Manager
 description: Der Marketing Campaign Manager (MCM) ist eine Konsole, mit der Sie Multi-Channel-Kampagnen verwalten können. Mit dieser Software zur Marketing-Automatisierung können Sie alle Ihre Marken, Kampagnen und Erlebnisse zusammen mit den zugehörigen Segmenten, Listen, Leads und Berichten verwalten.
-seo-description: The Marketing Campaign Manager (MCM) is a console that helps you manage multi-channel campaigns. With this marketing automation software you can manage all your brands, campaigns and experiences together with the related segments, lists, leads, and reports.
-uuid: 63b817e4-34b9-42b8-845b-e0b7d9af3a96
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
 exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 91%
+source-wordcount: '1161'
+ht-degree: 87%
 
 ---
 
@@ -115,14 +111,11 @@ Klicken Sie in MCM auf **Kampagnen**, um auf die bestehenden Kampagnen zuzugreif
 
 * **Linker Bereich**:
 Hier finden Sie eine vollständige Aufzählung aller Marken und Kampagnen.
-Wenn Sie auf eine Marke klicken, geschieht Folgendes:
-
-   * Die Liste wird erweitert, um alle zugehörigen Kampagnen im linken Bereich anzuzeigen; diese Liste zeigt auch die Anzahl der Erfahrungen, die für jede Kampagne existieren.
-   * Im rechten Bereich wird die Markenübersicht geöffnet.
+Wenn Sie auf eine Marke klicken, wird die Liste um alle zugehörigen Kampagnen im linken Bereich erweitert. Diese Liste zeigt auch die Anzahl der Erlebnisse, die für jede Kampagne vorhanden sind. Außerdem wird die Markenübersicht im rechten Bereich geöffnet.
 
 * **Rechter Bereich**:
 Hier werden für jede Marke Symbole angezeigt (historische Kampagnen werden nicht aufgeführt).
-Sie können auf diese doppelklicken, um die Markenübersicht zu öffnen.
+Sie können auf diese Elemente doppelklicken, um die Markenübersicht zu öffnen.
 
 #### Markenübersicht {#brand-overview}
 

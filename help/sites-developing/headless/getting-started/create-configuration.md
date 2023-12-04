@@ -2,10 +2,10 @@
 title: 'Schnellstartanleitung für Headless: Erstellen einer Konfiguration'
 description: Erstellen Sie als ersten Schritt eine Konfiguration, um mit Headless in AEM 6.5 zu beginnen.
 exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 97%
+ht-degree: 93%
 
 ---
 
@@ -27,7 +27,7 @@ Stellen Sie sich im Kontext von Headless-Content-Management in AEM eine Konfigur
 
 Ein Administrator muss eine Konfiguration nur einmal oder sehr selten erstellen, wenn für die Organisation Ihrer Inhaltsmodelle ein neuer Arbeitsbereich erforderlich ist. Für die Zwecke dieser ersten Schritte müssen wir nur eine Konfiguration erstellen.
 
-1. Melden Sie sich bei AEM an und wählen Sie im Hauptmenü **Tools > Allgemein > Konfigurationsbrowser** aus.
+1. Melden Sie sich bei AEM an und wählen Sie im Hauptmenü die Option **Tools > Allgemein > Konfigurationsbrowser**.
 1. Geben Sie einen **Titel** für Ihre Konfiguration ein.
    * Der Name wird automatisch auf Grundlage des Titels generiert gemäß den [AEM-Benennungskonventionen](/help/sites-developing/naming-conventions.md). Er wird zum Knotennamen im Repository.
 1. Überprüfen Sie die folgenden Optionen:
@@ -36,7 +36,7 @@ Ein Administrator muss eine Konfiguration nur einmal oder sehr selten erstellen,
 
    ![Konfiguration erstellen](assets/create-configuration.png)
 
-1. Tippen oder klicken Sie auf **Erstellen**
+1. Klicken Sie auf **Erstellen**.
 
 Sie können bei Bedarf mehrere Konfigurationen erstellen. Konfigurationen können auch verschachtelt sein.
 

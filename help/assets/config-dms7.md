@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '6489'
+source-wordcount: '6508'
 ht-degree: 95%
 
 ---
@@ -276,7 +276,7 @@ Wenn Sie diese Funktion verwenden möchten, beachten Sie die folgenden Vorausset
 
    * Kopieren Sie den obigen Pfad und fügen Sie ihn in das Feld Pfad von CRXDE Lite unter der Symbolleiste ein. Drücken Sie dann die Taste `Enter`.
 
-1. Klicken Sie in der linken Leiste mit der rechten Maustaste auf `fileupload` und wählen Sie dann im Popup-Menü **[!UICONTROL Überlagerungsknoten]**.
+1. Klicken Sie in der linken Leiste mit der rechten Maustaste auf `fileupload`und wählen Sie dann im Popup-Menü **[!UICONTROL Überlagerungsknoten]**.
 
    ![Option „Überlagerungsknoten“](/help/assets/assets-dm/uploadassets15gb_a.png)
 

@@ -2,10 +2,10 @@
 title: Konfigurieren von Übersetzungsregeln
 description: Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 76%
+source-wordcount: '847'
+ht-degree: 74%
 
 ---
 
@@ -56,25 +56,25 @@ Sie können mehrere Regeln erstellen, um komplexe Übersetzungsanforderungen zu 
 
 Es gibt eine **Übersetzungskonfigurations**-Konsole, die zum Konfigurieren von Übersetzungsregeln verfügbar ist. So können Sie darauf zugreifen:
 
-1. Gehen Sie zu **Tools** > **Allgemein**.
-1. Tippen oder klicken Sie auf **Übersetzungskonfiguration**.
+1. Navigieren Sie zu **Instrumente** > **Allgemein**.
+1. Klicks **Übersetzungskonfiguration**.
 
 Im **Übersetzungskonfiguration** -Benutzeroberfläche gibt es mehrere Optionen für Ihre Übersetzungsregeln. Hier werden die wichtigsten und typischsten Schritte hervorgehoben, die für eine einfache Headless-Lokalisierungskonfiguration erforderlich sind.
 
-1. Tippen oder klicken **Kontext hinzufügen**, mit dem Sie einen Pfad hinzufügen können. Dies ist der Pfad der Inhalte, die von der Regel betroffen sind.
+1. Klicks **Kontext hinzufügen**, mit dem Sie einen Pfad hinzufügen können. Dies ist der Pfad der Inhalte, die von der Regel betroffen sind.
    ![Kontext hinzufügen](assets/add-translation-context.png)
-1. Verwenden Sie den Pfad-Browser, um den erforderlichen Pfad auszuwählen, und tippen oder klicken Sie zum Speichern auf die Schaltfläche **Bestätigen**. Denken Sie daran, dass Inhaltsfragmente, die Headless-Inhalte enthalten, sich im Allgemeinen unter `/content/dam/<your-project>` befinden.
+1. Verwenden Sie den Pfad-Browser, um den erforderlichen Pfad auszuwählen, und klicken Sie auf das **Bestätigen** Schaltfläche zum Speichern. Denken Sie daran, dass Inhaltsfragmente, die Headless-Inhalte enthalten, sich im Allgemeinen unter `/content/dam/<your-project>` befinden.
    ![Pfad auswählen](assets/select-context.png)
 1. AEM speichert die Konfiguration.
-1. Sie müssen den von Ihnen erstellten Kontext auswählen und dann auf **Bearbeiten**. Dadurch wird der **Editor für Übersetzungsregeln** geöffnet, in dem die Eigenschaften konfiguriert werden können.
+1. Wählen Sie den von Ihnen erstellten Kontext aus und klicken Sie auf **Bearbeiten**. Dadurch wird der **Editor für Übersetzungsregeln** geöffnet, in dem die Eigenschaften konfiguriert werden können.
    ![Editor für Übersetzungsregeln](assets/translation-rules-editor.png)
 1. Standardmäßig werden alle Konfigurationen vom übergeordneten Pfad übernommen, in diesem Fall `/content/dam`. Deaktivieren Sie die Option **Vererben von`/content/dam`** , um der Konfiguration zusätzliche Felder hinzuzufügen.
 1. Ist diese Option deaktiviert, fügen Sie im Abschnitt **Allgemein** der Liste die Eigenschaftsnamen der Inhaltsfragmentmodelle hinzu, die Sie [zuvor als zu übersetzende Felder identifiziert haben.](getting-started.md#content-models)
    1. Geben Sie den Eigenschaftsnamen im Feld **Neue Eigenschaft** ein.
    1. Die Optionen **Übersetzen** und **Übernehmen** werden automatisch aktiviert.
-   1. Tippen oder klicken Sie auf **Hinzufügen**.
+   1. Klicken Sie auf **Hinzufügen**.
    1. Wiederholen Sie diese Schritte für alle Felder, die Sie übersetzen müssen.
-   1. Tippen oder klicken Sie auf **Speichern**.
+   1. Klicken Sie auf **Speichern**.
       ![Eigenschaft hinzufügen](assets/add-property.png)
 
 Sie haben jetzt Ihre Übersetzungsregeln konfiguriert.

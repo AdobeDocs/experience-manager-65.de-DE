@@ -4,10 +4,10 @@ description: Ein Proxy ist eine [!DNL Experience Manager] -Instanz, die Proxy-Wo
 contentOwner: AG
 role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 86%
+source-wordcount: '824'
+ht-degree: 83%
 
 ---
 
@@ -21,7 +21,7 @@ Wenn der Proxy eine separate [!DNL Experience Manager]-Instanz ist, wird die Las
 
 ## Proxy (HTTP-Zugriff) {#proxy-http-access}
 
-Proxys, deren Konfiguration Verarbeitungsaufträge zulässt, sind über das HTTP-Servlet verfügbar:   `/libs/dam/cloud/proxy`. Dieses Servlet erstellt einen Sling-Auftrag aus den veröffentlichten Parametern. Der Auftrag wird dann der Proxy-Auftragswarteschlange hinzugefügt und mit dem entsprechenden Proxy-Worker verbunden.
+Ein Proxy ist über das HTTP-Servlet verfügbar, wenn es für die Annahme von Verarbeitungsvorgängen konfiguriert ist unter: `/libs/dam/cloud/proxy`. Dieses Servlet erstellt einen Sling-Auftrag aus den veröffentlichten Parametern. Der Auftrag wird dann der Proxy-Auftragswarteschlange hinzugefügt und mit dem entsprechenden Proxy-Worker verbunden.
 
 ### Unterstützte Vorgänge {#supported-operations}
 
@@ -164,7 +164,7 @@ Das folgende Diagramm und die folgenden Schritte beschreiben den weiteren Ablauf
 
    Als Beispiel dient `IDSJob.IDS_EXTENDSCRIPT_JOB` für den IDS-Proxy-Worker.
 
-1. Mit dem externen Schritt wird das Ereignis ausgelöst, anschließend wird auf den Abschluss gewartet. Hierfür wird die ID abgerufen. Sie müssen einen eigenen Schritt entwickeln, um eine neue Funktionalität zu implementieren. 
+1. Mit dem externen Schritt wird das Ereignis ausgelöst, anschließend wird auf den Abschluss gewartet. Hierfür wird die ID abgerufen. Entwickeln Sie Ihren eigenen Schritt, um neue Funktionen zu implementieren.
 
    Implementieren Sie einen `WorkflowExternalProcess`. Bereiten Sie dann mit der JobService-API und Ihrem Auftragsthema ein Auftragsereignis vor und senden Sie es an den JobService (einen OSGi-Dienst). 
 

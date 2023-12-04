@@ -2,7 +2,7 @@
 title: Registrieren als Benutzer
 seo-title: Registering as a User
 description: Erfahren Sie, wie Sie richtliniengeschützte Dokumente verwenden können, die Sie von einem Document Security-Benutzer erhalten, auch wenn Sie nicht zur Organisation des Benutzers gehören.
-seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user’s organization.
+seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user's organization.
 uuid: 4648b358-f545-434f-a3b2-2937e961dc64
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
 feature: Document Security
 exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 30%
+source-wordcount: '695'
+ht-degree: 29%
 
 ---
 
@@ -43,11 +43,11 @@ Wenn Sie ein eingeladener Benutzer sind und von Document Security eine E-Mail-Re
 1. Öffnen Sie die Document Security-Registrierungs-E-Mail. Die in der Nachricht enthaltene URL ist ein Link zur Seite &quot;Externe Benutzerregistrierung&quot;in Document Security.
 1. Klicken Sie auf die URL oder kopieren Sie sie und fügen Sie sie in Ihren Browser ein. Die Seite &quot;Externe Benutzerregistrierung&quot;wird angezeigt.
 1. Geben Sie Ihren Namen, Ihre Telefonnummer, Ihre Adresse, Ihre Firma und Ihr Kennwort in die entsprechenden Felder ein. Geben Sie dann Ihr Kennwort erneut in das Feld „Kennwort bestätigen“ ein. Ihr Passwort kann eine beliebige Kombination aus acht Zeichen sein.
-1. Klicken Sie auf Speichern. Es wird eine Dankmeldung angezeigt, die Sie darauf hinweist, dass Sie in Ihrer E-Mail nun eine Nachricht zur Aktivierung des Kontos finden können. Sie müssen jetzt Ihr Konto aktivieren, um den Registrierungsprozess abzuschließen.
+1. Klicken Sie auf Speichern. Es wird eine Dankmeldung angezeigt, die Sie darauf hinweist, dass Sie in Ihrer E-Mail nun eine Nachricht zur Aktivierung des Kontos finden können. Aktivieren Sie nun Ihr Konto, um den Registrierungsprozess abzuschließen.
 
 ## Konto für eingeladene Benutzer aktivieren {#activate-your-invited-user-account}
 
-Nach der Registrierung erhalten Sie eine Aktivierungs-E-Mail von Document Security. Sie müssen Ihr Konto unter Verwendung der in der Nachricht angegebenen URL aktivieren. Sie können sich dann bei Document Security anmelden, um richtliniengeschützte Dokumente zu verwenden, auf die Sie Zugriff haben. Abhängig von den Funktionen, die der Administrator für externe Benutzer aktiviert, können Sie eventuell Richtlinien erstellen, Richtlinien auf Dokumente anwenden und andere externe Benutzer zu Ihren Richtlinien hinzufügen.
+Nach der Registrierung erhalten Sie eine Aktivierungs-E-Mail von Document Security. Aktivieren Sie Ihr Konto mithilfe der URL in der Nachricht. Sie können sich dann bei Document Security anmelden, um richtliniengeschützte Dokumente zu verwenden, auf die Sie Zugriff haben. Abhängig von den Funktionen, die der Administrator für externe Benutzer aktiviert, können Sie eventuell Richtlinien erstellen, Richtlinien auf Dokumente anwenden und andere externe Benutzer zu Ihren Richtlinien hinzufügen.
 
 Ihr Konto bleibt aktiv, bis der Administrator es deaktiviert oder löscht.
 

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3306'
-ht-degree: 74%
+source-wordcount: '3251'
+ht-degree: 72%
 
 ---
 
@@ -53,7 +53,7 @@ Der Experience Server stellt die Experience Services bereit, auf denen AEM basie
 
 ### Einführung in Sling {#introduction-to-sling}
 
-AEM basiert auf [Sling](https://sling.apache.org/index.html), einem auf REST-Prinzipien basierenden Web-Anwendungs-Framework, das eine einfache Entwicklung von inhaltsorientierten Programmen ermöglicht. Sling verwendet ein JCR-Repository, z. B. Apache Jackrabbit oder, falls AEM vorhanden ist, das CRX Content Repository als Datenspeicher. Sling ist Teil der Apache Software Foundation – weitere Informationen finden Sie bei Apache.
+AEM wird mithilfe von [Sling](https://sling.apache.org/index.html), ein Framework für Webanwendungen, das auf REST-Prinzipien basiert und eine einfache Entwicklung inhaltsorientierter Anwendungen ermöglicht. Sling verwendet ein JCR-Repository, z. B. Apache Jackrabbit oder, falls AEM vorhanden ist, das CRX Content Repository als Datenspeicher. Sling ist Teil der Apache Software Foundation – weitere Informationen finden Sie bei Apache.
 
 Bei Verwendung von Sling ist der Typ des zu rendernden Inhalts nicht die erste Verarbeitungsüberlegung. Stattdessen ist die Hauptüberlegung, ob die URL zu einem Inhaltsobjekt aufgelöst wird, für das dann ein Skript gefunden werden kann, um das Rendering durchzuführen. Dies bietet Autorinnen und Autoren von Web-Inhalten eine hervorragende Unterstützung beim Erstellen von Seiten, die einfach an ihre Anforderungen angepasst werden können.
 
@@ -106,7 +106,7 @@ Sie lässt sich in ihre Bestandteile zerlegen:
 
 **host** – Name der Website.
 
-**Inhaltspfad** Pfad, der den zu rendernden Inhalt angibt. Wird mit der -Erweiterung verwendet. In diesem Beispiel übersetzen sie in `tools/spy.html`.
+**content path** – Pfad, der den Inhalt angibt, der gerendert werden soll. Wird mit der -Erweiterung verwendet. In diesem Beispiel übersetzen sie in `tools/spy.html`.
 
 **Selektoren** Wird für alternative Methoden zum Rendern des Inhalts verwendet, in diesem Beispiel eine druckerfreundliche Version im A4-Format.
 
@@ -211,11 +211,9 @@ Unter Verwendung des obigen Beispiels, wenn der `sling:resourceType` `hr/jobs` l
 
 Wenn mehrere Skripte für eine bestimmte Anfrage gelten, wird das Skript mit der besten Übereinstimmung ausgewählt. Je genauer eine Übereinstimmung ist, desto besser ist sie. Mit anderen Worten: Je mehr Selektor-Treffer, desto besser, unabhängig von einer Übereinstimmung bei Anfrageerweiterung oder Methodenname.
 
-Beispiel: Eine Anfrage zum Zugriff auf die Ressource
-
-
+Betrachten Sie beispielsweise eine Anfrage zum Zugriff auf die Ressource
 `/content/corporate/jobs/developer.print.a4.html`
-vom Typ
+des Typs
 `sling:resourceType="hr/jobs"`
 
 Angenommen, Sie haben die folgende Liste von Skripten am richtigen Speicherort:
@@ -300,7 +298,7 @@ Verwenden Sie dazu sling:include(&quot;/&lt;path>/&lt;resource>&quot;). Dies umf
 
 ## OSGI {#osgi}
 
-OSGi definiert eine Architektur für die Entwicklung und Bereitstellung modularer Anwendungen und Bibliotheken (es wird auch als Dynamic Module System für Java bezeichnet™). Mit OSGi-Containern können Sie Ihre Anwendung in einzelne Module unterteilen (JAR-Dateien mit zusätzlichen Metainformationen und so genannten Bundles in der OSGi-Terminologie) und die Querabhängigkeiten zwischen ihnen verwalten mit:
+OSGi definiert eine Architektur für die Entwicklung und Bereitstellung modularer Anwendungen und Bibliotheken (auch Dynamic Module System für Java™ genannt). Mit OSGi-Containern können Sie Ihre Anwendung in einzelne Module unterteilen (JAR-Dateien mit zusätzlichen Metainformationen und so genannten Bundles in der OSGi-Terminologie) und die Querabhängigkeiten zwischen ihnen verwalten mit:
 
 * Services, die innerhalb des Containers implementiert sind
 * ein Vertrag zwischen dem Container und Ihrer Anwendung
@@ -324,7 +322,7 @@ Auf diese Weise können Sie die folgenden Aktionen für beliebige Pakete innerha
 * Stoppen
 * Aktualisieren
 * uninstall
-* Status anzeigen
+* den Status anzeigen
 * Greifen Sie auf detailliertere Informationen (z. B. symbolischen Namen, Version und Speicherort) zu den jeweiligen Bundles zu.
 
 Siehe [die Web-Konsole](/help/sites-deploying/web-console.md), [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md), und [OSGi-Konfigurationseinstellungen](/help/sites-deploying/osgi-configuration-settings.md) für weitere Informationen.

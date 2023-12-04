@@ -13,10 +13,10 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3837'
-ht-degree: 86%
+source-wordcount: '3795'
+ht-degree: 84%
 
 ---
 
@@ -209,7 +209,7 @@ Die Größe der Miniaturansichten wird im folgenden Format definiert: **[!UICONT
 **So konfigurieren Sie die Größe von Miniaturen:**
 
 1. Tippen Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]** > **[!UICONTROL DAM-Update-Asset]** > **[!UICONTROL Bearbeiten]**.
-1. Tippen Sie auf **[!UICONTROL Dynamic Media Process Image Assets]** und tippen oder klicken Sie auf **[!UICONTROL Miniaturen]** Registerkarte. Ändern Sie bei Bedarf die Größe der Miniaturansichten und tippen Sie auf **[!UICONTROL OK]**.
+1. Tippen Sie auf **[!UICONTROL Dynamic Media Process Image Assets]** und klicken Sie auf **[!UICONTROL Miniaturen]** Registerkarte. Ändern Sie bei Bedarf die Größe der Miniaturansichten und tippen Sie auf **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
@@ -330,7 +330,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
       Bei Auswahl von <strong>GIF</strong> oder <strong>GIF mit Alpha</strong> werden die folgenden zusätzlichen Optionen für <strong>GIF-Farbquantisierung</strong> verfügbar:
     </div>
     <ul>
-     <li><strong>Typ</strong>: Wählen Sie <strong>Adaptiv</strong> (Standard), <strong>Web</strong> oder <strong>Macintosh</strong>. Wenn Sie <strong>GIF mit Alpha</strong> auswählen, ist die Option „Macintosh“ nicht verfügbar.</li>
+     <li><strong>Typ </strong>- Auswählen <strong>Adaptiv</strong> (Standardeinstellung), <strong>Web</strong>oder <strong>Macintosh</strong>. Wenn Sie <strong>GIF mit Alpha</strong> auswählen, ist die Option „Macintosh“ nicht verfügbar.</li>
      <li><strong>Dithering</strong>: Wählen Sie <strong>Diffus</strong> oder <strong>Aus</strong>.</li>
      <li><strong>Anzahl Farben</strong>: Geben Sie eine Zahl von 2 bis 256 ein.</li>
      <li><strong>Farbliste</strong>: Geben Sie eine durch Komma getrennte Liste ein. Geben Sie beispielsweise für Weiß, Grau und Schwarz „<code>000000,888888,ffffff</code>“ ein.</li>
@@ -493,7 +493,7 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
-1. Wählen Sie eine Vorgabe aus und klicken Sie dann auf **[!UICONTROL Bearbeiten]**. Das Fenster **[!UICONTROL Bildvorgabe bearbeiten]** wird geöffnet.
+1. Wählen Sie eine Vorgabe aus und klicken Sie auf **[!UICONTROL Bearbeiten]**. Das Fenster **[!UICONTROL Bildvorgabe bearbeiten]** wird geöffnet.
 1. Nehmen Sie Änderungen vor und klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern, oder auf **[!UICONTROL Abbrechen]**, um sie zu verwerfen.
 
 ## Veröffentlichen von Dynamic Media-Bildvorgaben {#publishing-image-presets}
@@ -504,14 +504,14 @@ Wenn Sie den Hybridmodus von Dynamic Media ausführen, müssen Sie Bildvorgaben 
 
 **So veröffentlichen Sie Bildvorgaben im Modus „Dynamic Media –Hybrid“:**
 
-1. Tippen oder klicken Sie in Adobe Experience Manager auf das Adobe Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen. Klicken oder tippen Sie dann auf das Werkzeugsymbol und navigieren Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Bildvorgaben]**.
-1. Wählen Sie in der Liste der Bildvorgaben eine oder mehrere Bildvorgaben aus und klicken oder tippen Sie auf **[!UICONTROL Veröffentlichen]**.
+1. Klicken Sie in Experience Manager auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen. Klicken Sie dann auf das Symbol Tools und navigieren Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Bildvorgaben]**.
+1. Wählen Sie in der Liste der Bildvorgaben eine oder mehrere Bildvorgaben aus und klicken Sie auf **[!UICONTROL Veröffentlichen]**.
 1. Nachdem die Bildvorgabe veröffentlicht wurde, ändert sich der Status von &quot;unveröffentlicht&quot;in &quot;veröffentlicht&quot;.
 
    ![chlimage_1-81](assets/chlimage_1-505.png)
 
 ## Löschen von Dynamic Media-Bildvorgaben {#deleting-image-presets}
 
-1. Tippen oder klicken Sie in Experience Manager auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen.
+1. Klicken Sie in Experience Manager auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen.
 1. Tippen Sie auf das Symbol **[!UICONTROL Tools]** und navigieren Sie dann zu **[!UICONTROL Assets]** > **[!UICONTROL Bildvorgaben]**.
 1. Wählen Sie eine Vorgabe aus und klicken Sie auf **[!UICONTROL Löschen]**. Dynamic Media bestätigt Ihre Löschabsicht. Tippen Sie auf **[!UICONTROL Löschen]**, um den Löschvorgang vorzunehmen, oder auf **[!UICONTROL Abbrechen]**, um den Vorgang abzubrechen.

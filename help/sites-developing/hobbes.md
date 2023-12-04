@@ -9,10 +9,10 @@ topic-tags: components, testing
 discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
-workflow-type: ht
-source-wordcount: '771'
-ht-degree: 100%
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+workflow-type: tm+mt
+source-wordcount: '759'
+ht-degree: 91%
 
 ---
 
@@ -47,7 +47,7 @@ Bei der Verwendung automatisierter Tests in AEM ist es wichtig, die folgenden Be
 
 Öffnen Sie die Testkonsole, um die registrierten Test-Suites anzuzeigen. Das Testfeld enthält eine Liste von Test-Suites und deren Testfälle.
 
-Navigieren Sie zur Tools-Konsole über **Globale Navigation -> Tools > Vorgänge -> Tests**.
+Navigieren Sie zur Tools-Konsole über **Globale Navigation > Tools > Vorgänge > Tests**.
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -69,7 +69,7 @@ Eine X-Symbol zeigt einen fehlgeschlagenen Test an:
 
 So führen Sie eine Test-Suite aus:
 
-1. Klicken oder tippen Sie im Testfeld auf den Namen des Testfalls, den Sie ausführen möchten, um die Details der Aktionen zu erweitern.
+1. Klicken Sie im Bereich Tests auf den Namen des Testfalls, den Sie ausführen möchten, um die Details der Aktionen zu erweitern.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -91,7 +91,7 @@ Test-Suites werden nacheinander in der Reihenfolge ausgeführt, in der sie in de
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-1. Tippen oder klicken Sie im Testfeld auf die Schaltfläche **Alle Tests ausführen** oder auf die Schaltfläche **Tests ausführen** unter dem Titel der Test-Suite, die Sie ausführen möchten.
+1. Klicken Sie im Bereich &quot;Tests&quot;auf die **Alle Tests ausführen** oder **Ausführen von Tests** unter dem Titel der Test-Suite, die Sie ausführen möchten.
 
    ![Ein Bild der Schaltfläche „Alle Tests ausführen“ und der Schaltfläche „Tests ausführen“, gekennzeichnet durch einen nach rechts zeigenden Zeiger in einem Kreis.](do-not-localize/chlimage_1-5.png)
 

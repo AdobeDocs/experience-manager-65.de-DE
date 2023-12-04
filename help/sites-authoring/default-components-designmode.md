@@ -2,10 +2,10 @@
 title: Konfigurieren von Standardkomponenten im Design-Modus
 description: Konfigurieren von Adobe Experience Manager-Komponenten im Designmodus.
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 86%
+source-wordcount: '905'
+ht-degree: 81%
 
 ---
 
@@ -56,11 +56,11 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    ![screen_shot_2018-03-22at103113](assets/screen_shot_2018-03-22at103113.png)
 
-1. Tippen oder klicken Sie auf eine Komponente. Diese Komponente wird mit einem blauen Rahmen versehen, wenn sie ausgewählt wird.
+1. Klicken Sie auf eine Komponente. Die Komponente hat einen blauen Rahmen, wenn sie ausgewählt ist.
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Klicken oder tippen Sie auf das Symbol **Übergeordnetes Element**.
+1. Klicken Sie auf **Übergeordnet** Symbol.
 
    ![Übergeordnetes Element](do-not-localize/screen_shot_2018-03-22at103204.png)
 
@@ -109,7 +109,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    ![screen_shot_2018-03-22at103113-1](assets/screen_shot_2018-03-22at103113-1.png)
 
-1. Tippen oder klicken Sie auf eine Komponente mit einem blauen Rahmen In diesem Beispiel wird eine Hero-Bildkomponente ausgewählt.
+1. Klicken Sie auf eine Komponente mit einem blauen Rahmen. In diesem Beispiel wird eine Hero-Bild-Komponente ausgewählt.
 
    ![screen_shot_2018-03-22at103434](assets/screen_shot_2018-03-22at103434.png)
 
@@ -153,4 +153,4 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    ![Verschieben](do-not-localize/screen_shot_2018-03-22at103816.png)
 
-1. Klicken oder tippen Sie auf das Symbol **Fertig**, um Ihre Änderungen zu speichern und das Dialogfeld zu schließen.
+1. Klicken Sie auf **Fertig** zum Speichern und Schließen des Dialogfelds.

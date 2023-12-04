@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2451'
-ht-degree: 49%
+source-wordcount: '2462'
+ht-degree: 48%
 
 ---
 
@@ -97,7 +97,7 @@ Auswählen **Bearbeiten** wird:
 
 ### Hinzufügen eines Schritts zu einem Modell {#adding-a-step-to-a-model}
 
-Sie müssen Ihrem Modell Schritte hinzufügen, um die auszuführende Aktivität darzustellen. Jeder Schritt führt eine bestimmte Aktivität aus. Eine Auswahl von Schritt-Komponenten ist in einer AEM-Standardinstanz verfügbar.
+Fügen Sie Schritte zu Ihrem Modell hinzu, um die auszuführende Aktivität darzustellen. Jeder Schritt führt eine bestimmte Aktivität aus. Eine Auswahl von Schritt-Komponenten ist in einer AEM-Standardinstanz verfügbar.
 
 Wenn Sie ein Modell bearbeiten, werden die verfügbaren Schritte in den verschiedenen Gruppen der **Schritte-Browser**. Beispiel:
 
@@ -144,7 +144,7 @@ Sie können das **Verhalten** von Workflow-Schritten über das Dialogfeld **Schr
 
 1. So öffnen Sie die **Schritt-Eigenschaften** Dialogfeld für einen Schritt:
 
-   * Klicken/tippen Sie auf den **-Schritt im Workflow-Modell und wählen Sie in der Komponenten-Symbolleiste die Option **Konfigurieren** aus.
+   * Klicken Sie auf den Schritt * im Workflow-Modell und wählen Sie **Konfigurieren** aus der Komponenten-Symbolleiste.
 
    * Doppelklicken Sie auf den Schritt.
 
@@ -324,11 +324,11 @@ Sie können auch AEM für die Anzeige konfigurieren **DEBUG** Meldungen in den P
 
 Um einige der Möglichkeiten zur Erstellung eines Workflows zu veranschaulichen, wird im folgenden Beispiel eine Variante des Workflows `Publish Example` erstellt.
 
-1. [Erstellen Sie ein Workflow-Modell](#creating-a-new-workflow).
+1. [Erstellen eines Workflow-Modells](#creating-a-new-workflow).
 
    Der neue Workflow enthält:
 
-   * **Prozessstart**
+   * **Flussstart**
    * `Step 1`
    * **Prozessende**
 
@@ -340,7 +340,7 @@ Um einige der Möglichkeiten zur Erstellung eines Workflows zu veranschaulichen,
 1. Führen Sie zum Öffnen des Dialogfelds „Eigenschaften“ einen der folgenden Schritte durch:
 
    * Klicken Sie auf den Teilnehmer-Schritt und klicken Sie in der Komponenten-Symbolleiste auf **Konfigurieren**.
-   * Doppelklicken Sie auf den Teilnehmer-Schritt.
+   * Doppelklicken Sie auf den Teilnehmerschritt.
 
 1. Geben Sie auf der Registerkarte **Allgemein** `Validate Content` als **Titel** und **Beschreibung** ein.
 1. Öffnen Sie die **Benutzer/Gruppe** tab:
@@ -392,7 +392,7 @@ Um einige der Möglichkeiten zur Erstellung eines Workflows zu veranschaulichen,
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
-### Beispiel: Definieren einer Regel für eine ODER-Teilung     mit einem ECMA-Skript {#defineruleecmascript}
+### Beispiel: Definieren einer Regel für eine ODER-Teilung mithilfe eines ECMA-Skripts {#defineruleecmascript}
 
 **ODER-Teilung** können Sie bedingte Verarbeitungspfade in Ihren Workflow einführen.
 

@@ -8,10 +8,10 @@ topic-tags: content
 content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3574'
-ht-degree: 96%
+source-wordcount: '3565'
+ht-degree: 91%
 
 ---
 
@@ -53,7 +53,7 @@ Um Pakete erstellen, ändern, hochladen und installieren zu können, müssen Ben
 
 Sie haben drei Möglichkeiten, auf Package Manager zuzugreifen:
 
-1. Vom AEM Hauptmenü > **Tools** > **Bereitstellung** > **Pakete**
+1. Im AEM Hauptmenü > **Instrumente** > **Implementierung** > **Pakete**
 1. Von [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) unter Verwendung der oberen Umschaltleiste
 1. Direkt durch Zugreifen auf `http://<host>:<port>/crx/packmgr/`
 
@@ -106,7 +106,7 @@ Wenn das Paket geändert wurde oder noch nie aufgebaut wurde, wird der Status al
 
 ## Paketeinstellungen {#package-settings}
 
-Ein Paket ist im Wesentlichen ein Satz von Filtern und den Repository-Daten, die auf diesen Filtern basieren. Mithilfe der Package Manager-Benutzeroberfläche können Sie auf ein Paket und dann auf die Schaltfläche **Bearbeiten** klicken, um die Details eines Pakets einschließlich der folgenden Einstellungen anzuzeigen.
+Ein Paket ist im Wesentlichen ein Satz von Filtern und den Repository-Daten, die auf diesen Filtern basieren. Mithilfe der Package Manager-Benutzeroberfläche können Sie auf ein Paket klicken und dann die **Bearbeiten** -Schaltfläche, um die Details eines Pakets mit den folgenden Einstellungen anzuzeigen.
 
 * [Allgemeine Einstellungen](#general-settings)
 * [Paketfilter](#package-filters)
@@ -283,7 +283,7 @@ Sobald ein Paket aufgebaut wurde, kann es neu verpackt werden. Beim erneuten Umb
 
 1. Klicken Sie zum Speichern auf **Speichern**.
 
-1. Wenn Sie auf **Weiter** > **Neu verpacken** klicken, erscheint ein Dialogfeld, das Sie zur Bestätigung auffordert.
+1. Klicks **Mehr** > **Rewrap** und ein Dialogfeld wird zur Bestätigung aufgerufen.
 
 ### Anzeigen anderer Paketversionen {#other-versions}
 
@@ -293,7 +293,7 @@ Da jede Version eines Pakets in der Liste ebenso wie jedes andere Paket angezeig
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
-1. Wenn Sie auf **Mehr** > **Andere Versionen** klicken, öffnet sich ein Dialogfeld mit einer Liste von anderen Versionen desselben Pakets mit Statusinformationen.
+1. Klicks **Mehr** > **Andere Versionen** und ein Dialogfeld mit einer Liste anderer Versionen desselben Pakets mit Statusinformationen geöffnet.
 
 ### Anzeigen von Paketinhalten und Testen der Installation {#viewing-package-contents-and-testing-installation}
 
@@ -303,11 +303,11 @@ Nach dem Aufbau eines Pakets können Sie dessen Inhalt anzeigen.
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
-1. Um den Inhalt anzuzeigen, klicken Sie auf **Mehr** > **Inhalt**, und der Package Manager listet den gesamten Inhalt des Pakets im Aktivitätsprotokoll auf.
+1. Klicken Sie auf die Schaltfläche **Mehr** > **Inhalt**, und der Package Manager listet den gesamten Inhalt des Pakets im Aktivitätsprotokoll auf.
 
    ![Paketinhalt](assets/package-contents.png)
 
-1. Klicken Sie auf **Mehr** > **Installation testen**, um einen Probelauf der Installation durchzuführen. Package Manager berichtet im Aktivitätsprotokoll die Ergebnisse so, als ob die Installation durchgeführt worden wäre.
+1. Klicken Sie auf , um einen Probelauf der Installation durchzuführen **Mehr** > **Testinstallation** und Package Manager-Berichte in der Aktivität protokollieren die Ergebnisse so, als ob die Installation durchgeführt würde.
 
    ![Testen der Installation](assets/test-install.png)
 
@@ -435,7 +435,7 @@ Führen Sie die Validierung stets nach dem Hochladen und vor dem Installieren ei
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
-1. Um das Paket zu validieren, klicken Sie auf **Mehr** > **Überprüfen**.
+1. Um das Paket zu validieren, klicken Sie auf **Mehr** > **Bestätigen**,
 
 1. Aktivieren Sie im angezeigten modalen Dialogfeld das Kontrollkästchen der gewünschten Validierungstypen und starten Sie die Validierung durch Klicken auf **Überprüfen**.
 
@@ -473,13 +473,13 @@ Pakete werden durch ihre Filter definiert. Sie können Package Manager anweisen,
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
-1. Klicken Sie auf **Mehr** > **Abdeckung**.
+1. Klicks **Mehr** > **Reichweite**.
 
 1. Die Details zur Abdeckung sind im Aktivitätsprotokoll aufgeführt.
 
 ### Installieren von Paketen {#installing-packages}
 
-Beim Hochladen eines Pakets wird nur der Paketinhalt zum Repository hinzugefügt, das Paket ist jedoch nicht verfügbar. Sie müssen das hochgeladene Paket installieren, um den Inhalt des Pakets verwenden zu können.
+Beim Hochladen eines Pakets wird nur der Paketinhalt zum Repository hinzugefügt, das Paket ist jedoch nicht verfügbar. Installieren Sie das hochgeladene Paket, um den Inhalt des Pakets zu verwenden.
 
 >[!CAUTION]
 >
@@ -543,7 +543,7 @@ Durch die Deinstallation eines Pakets wird der Inhalt des Repositorys auf den Sc
 
 1. Öffnen Sie die Paketdetails des Pakets, das Sie deinstallieren möchten, indem Sie in der Paketliste auf den Paketnamen klicken.
 
-1. Klicken Sie auf **Mehr** > **Deinstallieren**, um den Inhalt dieses Pakets aus dem Repository zu entfernen.
+1. Klicks **Mehr** > **Deinstallieren**, um den Inhalt dieses Pakets aus dem Repository zu entfernen.
 
 1. Es wird ein Dialogfeld mit einer Liste aller vorgenommenen Änderungen und der Aufforderung zur Bestätigung angezeigt.
 
@@ -569,7 +569,7 @@ Replizieren Sie den Inhalt eines Pakets, um es auf der Veröffentlichungsinstanz
 
 1. Öffnen Sie die Paketdetails des Pakets, das Sie replizieren möchten, in der Paketliste, indem Sie auf den Paketnamen klicken.
 
-1. Klicken Sie auf **Mehr** > **Replizieren**.
+1. Klicks **Mehr** > **Replikation**.
 
 1. Das Paket wird repliziert und Details im Aktivitätsprotokoll aufgeführt.
 

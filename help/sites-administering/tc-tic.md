@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie das Übersetzungsintegrations-Framework in Ad
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1497'
 ht-degree: 78%
 
 ---
@@ -58,7 +58,7 @@ Nach der Konfiguration einer Verbindung können Sie die Framework-Konfiguration 
 
 Erstellen Sie eine Framework-Konfiguration für die Übersetzungsintegration, um festzulegen, wie Ihre Inhalte übersetzt werden sollen. Die Konfiguration enthält die folgenden Informationen:
 
-* welcher Übersetzungsanbieter eingesetzt werden soll.
+* Welcher Übersetzungsanbieter verwendet werden soll.
 * ob eine menschliche oder maschinelle Übersetzung erfolgen soll.
 * ob andere Inhalte, die mit einer Seite oder einem Asset verknüpft sind, z. B. Tags, übersetzt werden sollen.
 
@@ -180,14 +180,14 @@ Asset-Eigenschaften steuern, wie Assets konfiguriert werden. Weitere Information
  </tbody>
 </table>
 
-1. Klicken oder tippen Sie in der Seitenleiste auf Tools > Vorgänge > Cloud > Cloud Service .
+1. Klicken Sie in der Seitenleiste auf Tools > Vorgänge > Cloud > Cloud Service.
 1. Ob im Bereich &quot;Übersetzungsintegration&quot;Konfigurationen erstellt wurden, bestimmt, welcher Link angezeigt wird:
 
-   * Wenn keine Konfigurationen erstellt wurden, klicken oder tippen Sie auf Jetzt konfigurieren .
-   * Wenn bereits Konfigurationen vorhanden sind, klicken oder tippen Sie auf Konfigurationen anzeigen und dann auf den Link + , der neben Verfügbare Konfigurationen angezeigt wird.
+   * Wenn keine Konfigurationen erstellt wurden, klicken Sie auf Jetzt konfigurieren .
+   * Wenn bereits Konfigurationen vorhanden sind, klicken Sie auf Konfigurationen anzeigen und dann auf den Link + neben Verfügbare Konfigurationen.
 
-1. Geben Sie einen Namen für die Konfiguration ein und klicken oder tippen Sie auf Erstellen .
-1. Konfigurieren Sie die Eigenschaften auf der Registerkarte Sites, Communities und Assets und klicken oder tippen Sie auf OK.
+1. Geben Sie einen Namen für die Konfiguration ein und klicken Sie auf Erstellen.
+1. Konfigurieren Sie die Eigenschaften auf der Registerkarte &quot;Sites&quot;, &quot;Communities&quot;und &quot;Assets&quot;und klicken Sie auf &quot;OK&quot;.
 
 ## Konfigurieren von Seiten für Übersetzungen {#configuring-pages-for-translation}
 
@@ -208,16 +208,16 @@ Darüber hinaus steht bei allen [SCF-Komponenten](/help/communities/scf.md) von 
 
 Verknüpfen Sie eine Seite mit Ihrem Übersetzungsdienstleister, um die Seite und ihre untergeordneten Seiten zu übersetzen.
 
-1. Wählen Sie in der Sites-Konsole die zu konfigurierende Seite aus und klicken oder tippen Sie auf Eigenschaften anzeigen .
-1. Klicken oder tippen Sie auf Bearbeiten und dann auf die Registerkarte Cloud Service .
-1. Klicken oder tippen Sie auf Konfiguration hinzufügen > Übersetzungsintegration .
-1. Wählen Sie den zu verwendenden Übersetzungsanbieter aus und klicken oder tippen Sie auf Fertig .
+1. Wählen Sie in der Sites-Konsole die zu konfigurierende Seite aus und klicken Sie auf Eigenschaften anzeigen .
+1. Klicken Sie auf Bearbeiten und dann auf die Registerkarte Cloud Service .
+1. Klicken Sie auf Konfiguration hinzufügen > Übersetzungsintegration.
+1. Wählen Sie den zu verwendenden Übersetzungsanbieter aus und klicken Sie auf Fertig .
 
 ### Verknüpfen von Seiten mit einem Framework für die Übersetzungsintegration {#associating-pages-with-a-translation-integration-framework}
 
 Verknüpfen Sie eine Seite mit dem Framework für die Übersetzungsintegration, das festlegt, wie die Übersetzung der Seite und der untergeordneten Seiten durchgeführt werden soll.
 
-1. Wählen Sie in der Sites-Konsole die zu konfigurierende Seite aus und klicken oder tippen Sie auf Eigenschaften anzeigen .
-1. Klicken oder tippen Sie auf Bearbeiten und dann auf die Registerkarte Cloud Service .
-1. Klicken oder tippen Sie auf Konfiguration hinzufügen > Übersetzungsintegration .
-1. Wählen Sie das zu verwendende Framework für die Übersetzungsintegration aus und klicken oder tippen Sie auf Fertig .
+1. Wählen Sie in der Sites-Konsole die zu konfigurierende Seite aus und klicken Sie auf Eigenschaften anzeigen .
+1. Klicken Sie auf Bearbeiten und dann auf die Registerkarte Cloud Service .
+1. Klicken Sie auf Konfiguration hinzufügen > Übersetzungsintegration.
+1. Wählen Sie das zu verwendende Framework für die Übersetzungsintegration aus und klicken Sie auf Fertig .

@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2675'
 ht-degree: 1%
 
 ---
@@ -107,16 +107,16 @@ Nachdem Sie eine Mobile App erstellt haben, können Sie die Eigenschaften änder
 
 #### Titel, Beschreibung und Symbol ändern {#change-the-title-description-and-icon}
 
-1. Klicken oder tippen Sie in der Leiste auf Apps .
+1. Klicken Sie in der Leiste auf Apps .
 1. Wählen Sie die zu konfigurierende Anwendung aus und klicken Sie auf das Symbol Seiteneigenschaften anzeigen .
 
    ![Das Symbol Seiteneigenschaften anzeigen wird durch den Buchstaben I in einem Kreis angezeigt.](do-not-localize/chlimage_1-8.png)
 
-1. Um Eigenschaftswerte zu ändern, klicken oder tippen Sie auf das Symbol Bearbeiten .
+1. Um Eigenschaftswerte zu ändern, klicken Sie auf das Symbol Bearbeiten .
 
    ![Das durch einen Bleistift angegebene Symbol Bearbeiten .](do-not-localize/chlimage_1-9.png)
 
-1. Konfigurieren Sie die Eigenschaften Allgemein und Erweitert und klicken oder tippen Sie auf das Symbol Fertig .
+1. Konfigurieren Sie die Eigenschaften Allgemein und Erweitert und klicken Sie auf das Symbol Fertig .
 
    ![Das Symbol Fertig , das durch ein Häkchen-Symbol gekennzeichnet ist.](do-not-localize/chlimage_1-10.png)
 
@@ -127,11 +127,11 @@ Nachdem Sie eine Mobile App erstellt haben, können Sie die Eigenschaften änder
 
    ![Das Symbol Anwendungseigenschaften anzeigen wird durch den Buchstaben I in einem Kreis angezeigt.](do-not-localize/chlimage_1-11.png)
 
-1. Um Eigenschaftswerte zu ändern, klicken oder tippen Sie auf das Symbol Bearbeiten .
+1. Um Eigenschaftswerte zu ändern, klicken Sie auf das Symbol Bearbeiten .
 
    ![Das durch einen Bleistift angegebene Symbol Bearbeiten .](do-not-localize/chlimage_1-12.png)
 
-1. Konfigurieren Sie die Eigenschaften auf den Registerkarten Allgemein, Erweitert, Erstellen und Analytics und klicken oder tippen Sie dann auf das Symbol Fertig .
+1. Konfigurieren Sie die Eigenschaften auf den Registerkarten Allgemein, Erweitert, Erstellen und Analytics und klicken Sie dann auf das Symbol Fertig .
 
    ![Das Symbol Fertig , das durch ein Häkchen-Symbol gekennzeichnet ist.](do-not-localize/chlimage_1-13.png)
 
@@ -139,8 +139,8 @@ Nachdem Sie eine Mobile App erstellt haben, können Sie die Eigenschaften änder
 
 Nachdem Sie die Mobile App erstellt haben, fügen Sie Inhalte hinzu, die als Benutzeroberfläche der Anwendung verwendet werden.
 
-1. Klicken oder tippen Sie in der Leiste auf Apps .
-1. Klicken oder tippen Sie auf die Anwendung und dann auf Englisch.
+1. Klicken Sie in der Leiste auf Apps .
+1. Klicken Sie auf die Anwendung und dann auf Englisch.
 1. Bearbeiten Sie die Startseite oder fügen Sie ggf. untergeordnete Seiten hinzu.
 
 ### Verschieben von Inhalten in mobile Anwendungen {#moving-content-to-mobile-applications}
@@ -160,8 +160,8 @@ Bei der Inhaltssynchronisierung wird auch verfolgt, wann die Aktualisierungen er
 
 Führen Sie das folgende Verfahren für die Instanz durch, in der Sie den Cache aktualisieren möchten. Wenn Ihre Anwendung beispielsweise Aktualisierungen von der Veröffentlichungsinstanz anfordert, führen Sie das Verfahren auf der Veröffentlichungsinstanz durch.
 
-1. Klicken oder tippen Sie in der Leiste auf Apps und dann auf Ihre Anwendung.
-1. Wählen Sie die Begrüßungsseite aus und klicken oder tippen Sie auf das Symbol Cache aktualisieren .
+1. Klicken Sie in der Leiste auf Apps und dann auf Ihre Anwendung.
+1. Wählen Sie die Begrüßungsseite aus und klicken Sie dann auf das Symbol Cache aktualisieren .
 
    ![Das Symbol Cache aktualisieren , das durch einen gestreiften Balken mit einem Recyclingsymbol gekennzeichnet ist.](do-not-localize/chlimage_1-14.png)
 

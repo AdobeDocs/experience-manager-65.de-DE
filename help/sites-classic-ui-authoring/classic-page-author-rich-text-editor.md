@@ -5,16 +5,16 @@ contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1835'
-ht-degree: 88%
+source-wordcount: '1764'
+ht-degree: 85%
 
 ---
 
 # Rich-Text-Editor {#rich-text-editor}
 
-Der Rich-Text-Editor ist ein grundlegender Baustein für die Eingabe von Textinhalten in AEM. Sie können verschiedene Komponenten erstellen, einschließlich:
+Der Rich-Text-Editor ist ein grundlegender Baustein für die Eingabe von Textinhalten in AEM. Er bildet die Grundlage für verschiedene Komponenten, darunter:
 
 * Text
 * Textbild
@@ -88,7 +88,7 @@ Ein Format hingegen wird auf einen gesamten Textabsatz angewendet (Formate sind 
 
 Ein bestimmtes Format kann nur geändert werden (die Standardeinstellung ist **[!UICONTROL Absatz]**).
 
-Ein Stil kann entfernt werden. Platzieren Sie den Cursor in dem Text, auf den der Stil angewendet wurde, und klicken Sie auf das Symbol „Entfernen“:
+Ein Stil kann entfernt werden. Platzieren Sie den Cursor in den Text, auf den der Stil angewendet wurde, und klicken Sie auf das Symbol zum Entfernen:
 
 >[!CAUTION]
 >
@@ -183,7 +183,7 @@ Um den Hyperlink zu entfernen, klicken Sie auf eine beliebige Stelle innerhalb d
 
 ![Anker-Symbolleiste](do-not-localize/cq55_rte_anchor.png)
 
-Ein Anker kann an einer beliebigen Stelle innerhalb des Textes erstellt werden, indem Sie entweder den Cursor platzieren oder Text auswählen. Klicken Sie dann auf das Symbol **Anker**, um das Dialogfeld zu öffnen.
+Ein Anker kann an einer beliebigen Stelle innerhalb des Textes erstellt werden, indem Sie entweder den Cursor platzieren oder Text auswählen. Klicken Sie anschließend auf **Anker** -Symbol, um das Dialogfeld zu öffnen.
 
 Geben Sie den Namen des Ankers ein und klicken Sie auf **OK**, um die Änderung zu speichern.
 

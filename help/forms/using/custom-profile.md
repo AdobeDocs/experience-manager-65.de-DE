@@ -10,10 +10,10 @@ topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: Mobile Forms
 exl-id: cf86c810-c466-4894-acc2-d4faf49754cc
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 71%
+source-wordcount: '656'
+ht-degree: 69%
 
 ---
 
@@ -74,7 +74,7 @@ Um ein benutzerdefiniertes Profil zu erstellen, führen Sie die folgenden Schrit
 Nachdem Sie ein benutzerdefiniertes Profil erstellt haben, fügen Sie diesem Profil Renderinformationen hinzu. Nach Erhalt einer Anfrage für das neue Profil überprüft CRX, ob der Ordner /apps vorhanden ist, damit die JSP-Seite gerendert werden kann. Erstellen Sie die JSP-Seite im Ordner /apps .
 
 1. Navigieren Sie im linken Fensterbereich zum Ordner `/apps`.
-1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps` und wählen Sie die Erstellung eines Ordners mit dem Namen **hrform**.
+1. Rechtsklicken Sie auf die `/apps` Ordner erstellen und einen Ordner mit dem Namen erstellen **hrform**.
 1. Erstellen Sie innerhalb des Ordners **hrform** einen Ordner namens **demo**.
 1. Klicken Sie auf die Schaltfläche **Alle speichern**.
 1. Navigieren Sie zu `/libs/xfaforms/profile/html.jsp` und kopieren Sie den Knoten **html.jsp**.

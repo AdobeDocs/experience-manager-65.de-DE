@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: d53ef3e2-14ca-4444-b563-be67be15c040
 exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 95%
+source-wordcount: '1281'
+ht-degree: 93%
 
 ---
 
@@ -96,7 +96,7 @@ In diesem Abschnitt werden nur für Adobe Campaign spezifische Verknüpfungen b
    * **Adobe Campaign: Abmeldung von Diensten**: ermöglicht Ihnen, die Abonnements einer Empfängerin oder eines Empfängers in Adobe Campaign zu stornieren.
 
 1. Sie müssen in jedem Formular eine Komponente **Verschlüsselter Primärschlüssel** haben. Diese Komponente definiert, welcher URL-Parameter zum Akzeptieren des verschlüsselten Primärschlüssels eines Adobe Campaign-Profils verwendet wird. Wählen Sie aus den Komponenten Adobe Campaign aus, sodass nur die entsprechenden Komponenten angezeigt werden.
-1. Ziehen Sie die Komponente **Verschlüsselter Primärschlüssel** an eine beliebige Stelle im Formular und klicken oder tippen Sie auf Sie das Symbol für die **Konfiguration**. Geben Sie auf der Registerkarte **Adobe Campaign** einen beliebigen Namen für den URL-Parameter an. Klicken oder tippen Sie auf das Häkchen, um Ihre Änderungen zu speichern.
+1. Ziehen Sie die Komponente **Verschlüsselter Primärer Schlüssel** zum Formular (an einer beliebigen Stelle) hinzu und klicken Sie auf **Konfiguration** Symbol. Geben Sie auf der Registerkarte **Adobe Campaign** einen beliebigen Namen für den URL-Parameter an. Klicken Sie auf das Häkchen, um Ihre Änderungen zu speichern.
 
    Generierte Links zu diesem Formular müssen diesen URL-Parameter verwenden und ihn dem verschlüsselten Primärschlüssel eines Adobe Campaign-Profils zuweisen. Der verschlüsselte Primärschlüssel muss ordnungsgemäß URL-codiert (Prozent) sein.
 

@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f34058c3-384a-4b73-a386-5bc9125acbf8
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '2167'
 ht-degree: 23%
 
 ---
@@ -42,7 +42,7 @@ Sie können auch weitere Details zu einem bestimmten Dokument auf der Seite &quo
 
 >[!NOTE]
 >
->Sie müssen auf der Seite &quot;Dokumentdetails&quot;den Link Richtlinienname verwenden, um auf Richtlinien zuzugreifen, die in Microsoft Outlook automatisch für Empfänger eines Dokuments generiert werden, das an eine E-Mail-Nachricht angehängt ist. Diese Richtlinien werden nicht auf der Seite &quot;Richtlinien&quot;angezeigt.
+>Verwenden Sie den Link Richtlinienname auf der Seite &quot;Dokumentdetails&quot;, um auf Richtlinien zuzugreifen, die in Microsoft Outlook automatisch für Empfänger eines Dokuments generiert werden, das an eine E-Mail-Nachricht angehängt ist. Diese Richtlinien werden nicht auf der Seite &quot;Richtlinien&quot;angezeigt.
 
 **Dokumentname:** Der Name des ausgewählten Dokuments.
 
@@ -52,7 +52,7 @@ Sie können auch weitere Details zu einem bestimmten Dokument auf der Seite &quo
 
 **Vermarkter:** Name des Benutzers, der die Richtlinie an das Dokument angehängt hat.
 
-**Richtlinienname:** Der Name der Richtlinie, die dem Schutz des Dokuments dient. Sie können auf den Namen klicken, um die Richtlinie zu öffnen. Sie müssen diesen Link verwenden, um auf Richtlinien zuzugreifen, die Acrobat für Empfänger eines Dokuments generiert, das an eine E-Mail-Nachricht in Outlook angehängt ist. Diese Richtlinien werden nicht auf der Seite Richtlinien angezeigt.
+**Richtlinienname:** Der Name der Richtlinie, die dem Schutz des Dokuments dient. Sie können auf den Namen klicken, um die Richtlinie zu öffnen. Verwenden Sie diesen Link, um auf Richtlinien zuzugreifen, die Acrobat für Empfänger eines Dokuments generiert, das an eine E-Mail-Nachricht in Outlook angehängt ist. Diese Richtlinien werden nicht auf der Seite Richtlinien angezeigt.
 
 **Richtlinientyp:** Der Richtlinientyp, der auf das Dokument angewendet wurde.
 

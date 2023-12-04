@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2073'
+source-wordcount: '2072'
 ht-degree: 70%
 
 ---
@@ -146,7 +146,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Datum Bereich </td>
+   <td>Datumsbereich </td>
    <td>Suche nach Assets, die innerhalb eines angegebenen Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie das Start- und das Enddatum angeben.</td>
    <td>
     <ul>
@@ -180,7 +180,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Ausgeblendet Filter</td>
+   <td>Ausgeblendeter Filter</td>
    <td>Ein Filter für Eigenschaft und Wert, der für den Benutzer nicht sichtbar ist.</td>
    <td>
     <ul>
@@ -215,7 +215,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Seite Status </td>
+   <td>Seitenstatus </td>
    <td>Suche nach Seiten basierend auf ihrem Status.</td>
    <td>
     <ul>
@@ -504,7 +504,7 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
 
 1. Öffnen Sie die **Suchformulare-Konsole** und wählen Sie die Konfiguration aus, die Sie aktualisieren möchten. Beispiel: **Sites-Admin-Suchleiste**.
 
-   Klicken/tippen Sie dann auf **Suchformulare bearbeiten** Symbol.
+   Klicken Sie anschließend auf **Suchformulare bearbeiten** Symbol.
 
 1. Fügen Sie je nach Konfiguration eine **Optionen** oder **Options-Eigenschaft** zur Konfiguration hinzu.
 1. Aktualisieren Sie die Felder, insbesondere:

@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '7687'
-ht-degree: 75%
+source-wordcount: '7640'
+ht-degree: 77%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 75%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=de) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html) |
 | AEM 6.5 | Dieser Artikel |
 
 Mit Workflow-Modelle können Sie eine Business-Logik in einen automatisierten, sich wiederholenden Prozess umwandeln. Anhand eines Modells können Sie eine Reihe von Schritten definieren und ausführen. Sie können auch Modelleigenschaften definieren, um beispielsweise festzulegen, ob es sich um einen Übergangs-Workflow oder einen Workflow mit mehreren Ressourcen handelt. Sie können [verschiedene AEM-Workflow-Schritte in ein Modell aufnehmen, um die Business-Logik zu erzielen](/help/sites-developing/workflows-models.md#extending-aem).
@@ -29,7 +29,7 @@ Durch Forms-zentrierte Workflow-Schritte werden AEM Forms-spezifische Vorgänge 
 
 >[!NOTE]
 >
->Wenn das Workflow-Modell für einen externen Speicher markiert ist, können Sie für alle Forms Workflow-Schritte nur die Variablenoption zum Speichern oder Abrufen von Datendateien und Anlagen auswählen.
+>Wenn das Workflow-Modell für einen externen Speicher markiert ist, können Sie für alle Schritte des Forms-Workflows nur die Variablenoption zum Speichern oder Abrufen von Datendateien und Anlagen auswählen.
 
 ## Schritt „Aufgabe zuweisen“ {#assign-task-step}
 
@@ -67,7 +67,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Erstel
 
    * **[!UICONTROL Eingabedatendatei auswählen mit]**: Pfad der Eingabedatendatei (.json, .xml, .doc oder Formulardatenmodell). Sie können die Eingabedatendatei mit einem Pfad abrufen, der relativ zur Payload ist, oder die Datei abrufen, die in einer Variablen des Datentyps Dokument, XML oder JSON gespeichert ist. Beispielsweise enthält die Datei die Daten, die über eine AEM-Posteingangsanwendung für das Formular übermittelt werden. Ein Beispielpfad ist [Payload_Directory]/workflow/data.
 
-   * **Eingabeanlagen auswählen mit:** Anlagen, die am Speicherort verfügbar sind, werden an das Formular angehängt, das mit der Aufgabe verknüpft ist. Der Pfad kann relativ zur Payload sein oder den Anhang abrufen, der in einer Variable des Typs ArrayList eines Dokuments gespeichert ist. Ein Beispielpfad ist [Payload_Directory]/attachments/. Sie können Anlagen angeben, die relativ zur Payload platziert werden, oder eine Dokumenttyp-Variable („Array-Liste“ > „Dokument“) verwenden, um einen Eingabeanhang für das adaptive Formular anzugeben..
+   * **Eingabeanlagen auswählen mit:** Anlagen, die am Speicherort verfügbar sind, werden an das Formular angehängt, das mit der Aufgabe verknüpft ist. Der Pfad kann relativ zur Payload sein oder den Anhang abrufen, der in einer Variable des Typs ArrayList eines Dokuments gespeichert ist. Ein Beispielpfad ist [Payload_Directory]/attachments/. Sie können Anlagen angeben, die relativ zur Payload platziert werden, oder eine Dokumenttyp-Variable (Array list > Document) verwenden, um einen Eingabeanhang für das adaptive Formular anzugeben.
 
       * **Wählen von JSON als Eingabe:** Wählen Sie als Eingabe eine JSON-Datei anhand eines Pfads aus, der relativ zur Payload ist oder in einer Variablen des Datentyps Dokument, JSON oder Formulardatenmodel gespeichert ist. Diese Option ist verfügbar, wenn Sie die Benutzeroberfläche des interaktiven Kommunikationsagenten oder das Dokument der interaktiven Kommunikation für den Web-Kanal aus der Dropdown-Liste „Typ“ auswählen.
       * **Wählen eines benutzerdefinierten Vorbefüllungs-Services:** Wählen Sie den Vorbefüllungs-Service aus, um die Daten abzurufen und das Dokument der interaktiven Kommunikation für den Web-Kanal oder die Benutzeroberfläche des Agenten vorab auszufüllen.
@@ -88,9 +88,9 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Erstel
 * **Beauftragter > Optionen zuweisen:** Geben Sie die Methode an, mit der die Aufgabe einem Benutzer zugewiesen werden soll. Sie können die Aufgabe dynamisch einem Benutzer oder einer Gruppe zuweisen, indem Sie das Skript „Teilnehmerauswahl“ verwenden oder die Aufgabe einem bestimmten AEM-Benutzer oder einer bestimmten Gruppe zuweisen.
 * **Teilnehmerauswahl:** Die Option ist verfügbar, wenn die **Dynamisch für einen Benutzer oder eine Gruppe** im Feld Optionen zuweisen ausgewählt ist. Sie können ein ECMAScript oder einen Service verwenden, um einen Benutzer oder eine Gruppe dynamisch auszuwählen. Weitere Informationen finden Sie unter [Dynamisches Zuweisen eines Workflows zu Benutzenden](https://helpx.adobe.com/de/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) und [Erstellen eines benutzerdefinierten Schritts „Dynamischer Teilnehmer in Adobe Experience Manager“.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&amp;CID=RedirectAEMCommunityKautuk)
 
-* **Teilnehmer:** Das Feld ist verfügbar, wenn die Option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** im Feld **Teilnehmerauswahl** ausgewählt ist. Im Feld können Sie Benutzer oder Gruppen für die Option RandomParticipantChooser auswählen.
+* **Teilnehmer:** Das Feld ist verfügbar, wenn die Option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** im Feld **Teilnehmerauswahl** ausgewählt ist. In diesem Feld können Sie Benutzende oder Gruppen für die Option „RandomParticipantChooser“ auswählen.
 
-* **Beauftragter**: Das Feld ist verfügbar, wenn die Option **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** im Feld **Teilnehmerauswahl** ausgewählt ist. Im Feld können Sie eine Variable des Datentyps String auswählen, um den Verantwortlichen zu definieren.
+* **Beauftragter**: Das Feld ist verfügbar, wenn die Option **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** im Feld **Teilnehmerauswahl** ausgewählt ist. Mit dem Feld können Sie eine Variable des Datentyps „Zeichenfolge“ auswählen, um den Verantwortlichen zu definieren.
 
 * **Argumente:** Das Feld ist verfügbar, wenn ein anderes als das Skript „RandomParticipantChoose“ im Feld „Teilnehmerauswahl“ ausgewählt wurde. Im Feld können Sie eine Liste mit kommagetrennten Argumenten für das im Feld Teilnehmerauswahl ausgewählte Skript angeben.
 
@@ -104,7 +104,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Erstel
 * **HTML-E-Mail-Vorlage**: Wählen Sie die E-Mail-Vorlage für die Benachrichtigungs-E-Mail. Um eine Vorlage zu bearbeiten, ändern Sie die Datei unter /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt im CRX-Repository.
 * **Delegation zulassen an:** AEM Posteingang bietet eine Option für den angemeldeten Benutzer, den zugewiesenen Workflow an einen anderen Benutzer zu delegieren. Sie können innerhalb derselben Gruppe oder an die Benutzerin bzw. den Benutzer des Workflows aus einer anderen Gruppe delegieren. Wenn die Aufgabe einem einzelnen Benutzer zugewiesen ist und die Option **Delegierung an Mitglieder der Gruppe an Verantwortlichen zulassen** aktiviert ist, kann die Aufgabe nicht an einen anderen Benutzer oder eine andere Gruppe übertragen werden.
 * **Freigabeeinstellungen**: Der AEM-Posteingang bietet Optionen zum Freigeben einer einzelnen oder aller Aufgaben im Posteingang für andere Benutzer:
-   * Wenn die Option **Bevollmächtigtem erlauben, explizit im Posteingang freizugeben** ausgewählt ist, kann der Benutzer auf die Aufgabe klicken und sie für einen anderen AEM-Benutzer freigeben.
+   * Wenn die Variable **Bevollmächtigten explizit im Posteingang freigeben** ausgewählt ist, kann der Benutzer auf die Aufgabe klicken und sie für einen anderen AEM Benutzer freigeben.
    * Wenn die Option **Bevollmächtigtem erlauben, explizit im Posteingang freizugeben** ausgewählt ist und ein Benutzer seine Posteingangselemente freigibt oder anderen Benutzern den Zugriff auf seine Posteingangselemente erlaubt, werden nur Aufgaben mit der zuvor erwähnten aktivierten Option für andere Benutzer freigegeben.
 
 * **Aktionen > Standardaktionen**: Standardmäßig sind die Aktionen „Übermitteln“, „Speichern“ und „Zurücksetzen“ verfügbar. Alle Standardaktionen sind standardmäßig aktiviert.
@@ -186,7 +186,7 @@ Wenn Sie den Pfad eines Ordners angeben, z. B. Anhänge, werden alle Dateien, d
 
 **Generiertes Datensatzdokument mithilfe nachstehender Optionen speichern**: Geben Sie den Speicherort für ein Datensatzdokument an. Sie können den Payload-Ordner überschreiben, das Datensatzdokument an einem Speicherort im Payload-Verzeichnis ablegen oder es in einer Variablen des Datentyps „Document“ speichern.
 
-**Gebietsschema**: Geben Sie die Sprache des Datensatzdokuments an. Wählen Sie **Literal** aus, um das Gebietsschema aus einer Dropdown-Liste auszuwählen, oder wählen Sie **Variable**, um das Gebietsschema aus dem Wert abzurufen, der in einer Variablen des Datentyps „Zeichenfolge“ gespeichert ist. Sie müssen den Gebietsschema-Code definieren, während Sie den Wert für das Gebietsschema in einer Variablen speichern. Geben Sie beispielsweise **en_US** für Englisch und **fr_FR** für Französisch an.
+**Gebietsschema**: Geben Sie die Sprache des Datensatzdokuments an. Wählen Sie **Literal** aus, um das Gebietsschema aus einer Dropdown-Liste auszuwählen, oder wählen Sie **Variable**, um das Gebietsschema aus dem Wert abzurufen, der in einer Variablen des Datentyps „Zeichenfolge“ gespeichert ist. Definieren Sie den Gebietsschema-Code und speichern Sie den Wert für das Gebietsschema in einer Variablen. Geben Sie beispielsweise **en_US** für Englisch und **fr_FR** für Französisch an.
 
 ## Schritt „Formulardatenmodell-Service aufrufen“ {#invoke-form-data-model-service-step}
 
@@ -279,7 +279,7 @@ Mit dem Schritt „Dokument signieren“ können Sie Adobe Sign zum Signieren vo
 
 * **Name der Vereinbarung:** Geben Sie den Titel der Vereinbarung an. Der Name der Vereinbarung wird Teil des Betreffs und Haupttextes der an die Empfänger gesendeten E-Mail. Sie können den Namen entweder in einer Variablen des Datentyps „Zeichenfolge“ speichern oder **Literal** auswählen, um den Namen manuell hinzuzufügen.
 
-* **Gebietsschema:** Geben Sie die Sprache für die E-Mail- und Bestätigungsoptionen an. Sie können das Gebietsschema entweder in einer Variablen des Datentyps „Zeichenfolge“ speichern oder **Literal** auswählen, um das Gebietsschema aus der Liste der verfügbaren Optionen auszuwählen. Sie müssen den Gebietsschema-Code definieren, während Sie den Wert für das Gebietsschema in einer Variablen speichern. Geben Sie beispielsweise **en_US** für Englisch und **fr_FR** für Französisch an.
+* **Gebietsschema:** Geben Sie die Sprache für die E-Mail- und Bestätigungsoptionen an. Sie können das Gebietsschema entweder in einer Variablen des Datentyps „Zeichenfolge“ speichern oder **Literal** auswählen, um das Gebietsschema aus der Liste der verfügbaren Optionen auszuwählen. Definieren Sie den Gebietsschema-Code und speichern Sie den Wert für das Gebietsschema in einer Variablen. Geben Sie beispielsweise **en_US** für Englisch und **fr_FR** für Französisch an.
 
 * **Cloud-Konfiguration für Adobe Sign**: Wählen Sie eine Adobe Sign Cloud-Konfiguration. Wenn Sie Adobe Sign für AEM Forms nicht konfiguriert haben, lesen Sie den Abschnitt [Adobe Sign in AEM Forms integrieren](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
@@ -296,22 +296,22 @@ Mit dem Schritt „Dokument signieren“ können Sie Adobe Sign zum Signieren vo
 * **Signaturprozess:** Sie können ein Dokument in einer sequenziellen oder parallelen Reihenfolge signieren. In sequenzieller Reihenfolge erhält ein Empfänger das Dokument zum Signieren. Nachdem der erste Empfänger das Signieren des Dokuments abgeschlossen hat, wird das Dokument an den zweiten Empfänger gesendet usw. Parallel dazu können mehrere Empfänger ein Dokument gleichzeitig signieren.
 * **Umleitungs-URL:** Geben Sie eine Umleitungs-URL an. Nachdem das Dokument signiert wurde, können Sie den Verantwortlichen an eine URL umleiten. Normalerweise enthält diese URL eine Dankesnachricht oder weitere Anweisungen.
 * **Workflow-Phase:** Ein Workflow kann mehrere Phasen enthalten. Diese werden im AEM-Posteingang angezeigt. Sie können diese Schritte in den Eigenschaften des Modells definieren (Sidekick > Seite > Seiteneigenschaften > Schritte).
-* **Empfänger auswählen:** Geben Sie die Methode zur Auswahl des Empfängers für das Dokument an. Sie können den Workflow dynamisch einem Benutzer oder einer Gruppe zuweisen oder Details eines Empfängers manuell hinzufügen. Wenn Sie im Dropdown-Menü Manuell auswählen, fügen Sie Empfängerdetails wie E-Mail, Rolle und Authentifizierungsmethode hinzu.
+* **Empfänger auswählen:** Geben Sie die Methode zur Auswahl des Empfängers für das Dokument an. Sie können den Workflow Benutzenden oder Gruppen dynamisch zuweisen oder manuell Details zu Empfängerinnen oder Empfängern hinzufügen. Wenn Sie im Dropdown-Menü „Manuell“ auswählen, fügen Sie Empfängerdetails wie E-Mail, Rolle und Authentifizierungsmethode hinzu.
 
   >[!NOTE]
   >
-  >* Im Abschnitt Rolle können Sie die Empfängerrolle als Unterzeichner, Genehmiger, Akzeptor, zertifizierter Empfänger, Formularfilter und Delegator festlegen.
+  >* Im Abschnitt „Rolle“ können Sie die Empfängerrolle als Unterzeichnungsperson, genehmigende Person, akzeptierende Person, zertifizierte Empfangsperson, ausfüllende Person des Formulars und delegierende Person festlegen.
   >* Wenn Sie in der Option Rolle die Option Delegator auswählen, kann der Delegator die Unterschriftsaufgabe anderen Empfängern zuweisen.
-  >* Wenn Sie eine Authentifizierungsmethode für [!DNL Adobe Sign], wählen Sie je nach Konfiguration eine Authentifizierungsmethode wie Phone-basierte Authentifizierung, Social Identity-basierte Authentifizierung, Knowledge-based Authentication, Government Identity-basierte Authentifizierung.
+  >* Wenn Sie eine Authentifizierungsmethode für [!DNL Adobe Sign] konfiguriert haben, wählen Sie je nach ausgewählter Konfiguration eine Authentifizierungsmethode wie telefonbasierte Authentifizierung, auf sozialer Identität basierende Authentifizierung, wissensbasierte Authentifizierung oder auf behördlicher Identität basierende Authentifizierung aus.
 
 
 * **Skript oder Dienst zur Auswahl von Empfängern:** Die Option ist nur verfügbar, wenn Sie im Feld Empfänger auswählen die Option Dynamisch auswählen auswählen auswählen. Sie können ein ECMAScript oder einen Dienst angeben, um Empfänger und Überprüfungsoptionen für ein Dokument auszuwählen.
 * **Empfängerdetails:** Die Option ist nur verfügbar, wenn im Feld Empfänger auswählen die Option Manuell ausgewählt wurde. Geben Sie die E-Mail-Adresse an und wählen Sie einen optionalen Verifizierungsmechanismus aus. Bevor Sie einen Zwei-Schritt-Bestätigungsmechanismus auswählen, vergewissern Sie sich, dass die entsprechende Verifizierungsoption für das konfigurierte Adobe Sign-Konto aktiviert ist. Sie können eine Variable vom Datentyp „String“ verwenden, um Werte für die Felder **[!UICONTROL E-Mail]**, **[!UICONTROL Länder-Code]** und **[!UICONTROL Telefonnummer]** zu definieren. Die Felder **[!UICONTROL Länder-Code]** und **[!UICONTROL Telefonnummer]** werden nur angezeigt, wenn Sie **[!UICONTROL Telefonüberprüfung]** aus der Dropdown-Liste **[!UICONTROL Zweistufenüberprüfung]** auswählen.
 * **Statusvariable**: Ein Dokument, für das Adobe Sign aktiviert ist, speichert den Signierstatus des Dokuments in einer Variablen vom Datentyp „String“. Geben Sie den Namen der Statusvariable (adobeSignStatus) an. Eine Statusvariable einer Instanz ist in CRXDE unter /etc/workflow/instances/&lt;Server>/&lt;Datum/Uhrzeit>/&lt;Instanz des Workflow-Modells>/workItems/&lt;Knoten>/metaData verfügbar und enthält den Status einer Variablen.
-* **[!UICONTROL Signiertes Dokument]**: Sie können den Status des signierten Dokuments in Variable speichern. Um Ihrem signierten Dokument ein Audit-Protokoll für elektronische Signaturen hinzuzufügen, um die Sicherheit und Legalität zu erhöhen, können Sie den Audit-Bericht einbeziehen. Sie können das signierte Dokument mit der Variablen oder dem Ordner Payload speichern.
+* **[!UICONTROL Signiertes Dokument]**: Sie können den Status des signierten Dokuments in einer Variablen speichern. Um Ihrem signierten Dokument ein Audit-Protokoll für elektronische Signaturen hinzuzufügen, um die Sicherheit und Legalität zu erhöhen, können Sie den Audit-Bericht einbeziehen. Sie können das signierte Dokument mit der Variablen oder dem Ordner Payload speichern.
   >[!NOTE]
   >
-  > Der Audit-Bericht wird an die letzte Seite des signierten Dokuments angehängt.
+  > Der Audit-Bericht wird der letzten Seite des signierten Dokuments angefügt.
 <!--
 * **Save signed document using below options:** Specify the location to keep signed documents. You can choose to overwrite the payload file, place the signed document at a location within the payload directory, or store the signed document in a variable of Document type.
 -->
@@ -339,7 +339,7 @@ Konvertiert ein PDF-Dokument mithilfe der bereitgestellten Optionen in das PDF/A
 
 ### Schritt &quot;In PS konvertieren&quot; {#convert-to-ps-step}
 
-Konvertieren von PDF-Dokumenten in PostScript – Beim Konvertieren in PostScript können Sie den Konvertierungsvorgang verwenden, um das Quelldokument anzugeben und festzulegen, ob es in PostScript-Ebene 2 oder 3 konvertiert werden soll. Das PDF-Dokument, das Sie in eine PostScript-Datei konvertieren, muss nicht interaktiv sein.
+Konvertieren Sie PDF-Dokumente in PostScript. Beim Konvertieren in PostScript können Sie den Konvertierungsvorgang verwenden, um das Quelldokument anzugeben und festzulegen, ob es in PostScript-Ebene 2 oder 3 konvertiert werden soll. Das PDF-Dokument, das Sie in eine PostScript-Datei konvertieren, muss nicht interaktiv sein.
 
 ### Schritt &quot;PDF erstellen&quot;mit dem angegebenen Typ {#create-pdf-from-specified-type-step}
 

@@ -1,17 +1,15 @@
 ---
 title: Tastaturbefehle beim Bearbeiten von Seiten
 description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für die Bearbeitung von Seiten, andere für die Verwendung von Konsolen.
-uuid: a1753e0b-5701-426c-b974-2e8b8d81a30d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 94%
+source-wordcount: '307'
+ht-degree: 86%
 
 ---
 
@@ -27,8 +25,8 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 >
 >Mehrfachauswahl auf einem Desktop-Gerät:
 >
->* Windows: Strg + Klick auf die gewünschten Komponenten.
->* Mac: Klicken Sie bei gedrückter Befehlstaste auf die erforderlichen Komponenten.
+>* Windows: Strg+Klicken auf erforderliche Komponenten.
+>* Mac: Befehlstaste+Klick auf erforderliche Komponenten
 >
 
 ## Tastaturbefehle für die Bearbeitung {#editing-keyboard-shortcuts}
@@ -73,7 +71,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-V</code></strong></td>
-   <td>Fügen Sie Absätze aus der Zwischenablage ein.</td>
+   <td>Absätze aus der Zwischenablage einfügen</td>
   </tr>
   <tr>
    <td> </td>
@@ -93,8 +91,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
   <tr>
    <td> </td>
    <td><strong><code>Alt-right-click</code></strong></td>
-   <td>Standardkontextmenü des Browsers erzwingen.<br />
-<strong>Hinweis:</strong> AEM-Kontextmenüs werden nur in der klassischen Benutzeroberfläche angezeigt.</td>
+   <td>Standardkontextmenü (Browser) erzwingen.<br /> <strong>Hinweis:</strong> AEM Kontextmenüs werden nur in der klassischen Benutzeroberfläche angezeigt.</td>
   </tr>
   <tr>
    <td> </td>

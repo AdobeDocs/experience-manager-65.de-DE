@@ -2,16 +2,16 @@
 title: Verwenden des Rich-Text-Editors zum Erstellen von Inhalten
 description: Verwenden des Rich-Text-Editors zum Erstellen von Inhalten in Adobe Experience Manager 6.5.
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 87%
+source-wordcount: '264'
+ht-degree: 74%
 
 ---
 
 # Verwenden des Rich-Text-Editors zum Erstellen von Inhalten {#use-rich-text-editor-to-author-content}
 
-Der Rich-Text-Editor (RTE) ist ein grundlegender Baustein für die Eingabe von Textinhalten in AEM. Sie können verschiedene Komponenten erstellen, einschließlich:
+Der Rich-Text-Editor (RTE) ist ein grundlegender Baustein für die Eingabe von Textinhalten in AEM. Er bildet die Grundlage für verschiedene Komponenten, darunter:
 
 * Text
 * Textbild
@@ -19,11 +19,11 @@ Der Rich-Text-Editor (RTE) ist ein grundlegender Baustein für die Eingabe von T
 
 ## Bearbeiten im Kontext {#in-place-editing}
 
-Bei der Auswahl einer textbasierten Komponente durch einfaches Tippen oder Klicken wird die [Komponenten-Symbolleiste](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) wie bei Komponenten üblich geöffnet.
+Wenn Sie eine textbasierte Komponente mit einem einzigen Klick auswählen, wird die [Komponenten-Symbolleiste](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) wie bei jeder beliebigen Komponente.
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-Durch Tippen/Klicken auf die Komponente oder anfängliches Auswählen der Komponente mit einem langsamen Doppeltippen/Klicken wird die Bearbeitung im Kontext geöffnet, die über eine eigene Symbolleiste verfügt. Hier können Sie den Inhalt bearbeiten und grundlegende Formatierungsänderungen vornehmen.
+Durch Tippen/Klicken auf die Komponente oder anfängliches Auswählen der Komponente mit einem langsamen Doppelklick wird die Bearbeitung im Kontext geöffnet, die über eine eigene Symbolleiste verfügt. Hier können Sie den Inhalt bearbeiten und grundlegende Formatierungsänderungen vornehmen.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 

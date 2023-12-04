@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1573'
-ht-degree: 93%
+source-wordcount: '1552'
+ht-degree: 89%
 
 ---
 
@@ -70,11 +70,11 @@ Das Integrationspaket ist jetzt installiert.
 
 ## Erstellen des Benutzers für AEM in Campaign {#create-operator}
 
-Das Integrationspaket erstellt automatisch den `aemserver`-Benutzer, den AEM verwendet, um eine Verbindung mit Adobe Campaign herzustellen. Sie müssen eine Sicherheitszone für diesen Benutzer definieren und sein Kennwort festlegen.
+Das Integrationspaket erstellt automatisch den `aemserver`-Benutzer, den AEM verwendet, um eine Verbindung mit Adobe Campaign herzustellen. Definieren Sie eine Sicherheitszone für diesen Operator und legen Sie sein Kennwort fest.
 
 1. Melden Sie sich mit der Client-Konsole bei Adobe Campaign als Administrator an.
 
-1. Wählen Sie **Tools** -> **Explorer** in der Menüleiste.
+1. Auswählen **Instrumente** > **Explorer** aus der Menüleiste.
 
 1. Navigieren Sie im Explorer zum Knoten **Administration** > **Zugriffsverwaltung** > **Benutzer**.
 
@@ -162,17 +162,17 @@ So konfigurieren Sie die Replikation von Ihrer AEM-Autoreninstanz zur Veröffent
 
 1. Melden Sie sich bei Ihrer AEM-Autoreninstanz als Admin an.
 
-1. Wählen Sie in der globalen Navigationsleiste die Option **Tools** > **Bereitstellung** > **Replikation** > **Agenten für Autor**, und tippen oder klicken Sie dann auf **Standardagent (veröffentlichen)**.
+1. Wählen Sie in der Seitenleiste der globalen Navigation die Option **Instrumente** > **Implementierung** > **Replikation** > **Agenten für Autor** Klicken Sie auf **Standardagent (publish)**.
 
    ![Konfigurieren des Replikationsagenten](assets/acc-replication-config.png)
 
-1. Tippen oder klicken Sie auf **Bearbeiten** und wählen Sie dann die Registerkarte **Transport** aus.
+1. Klicken Sie auf **Bearbeiten** und wählen Sie dann die Registerkarte **Transport** aus.
 
 1. Konfigurieren Sie das Feld **URI**, indem Sie die Standardeinstellung des `localhost`-Werts durch die IP-Adresse der AEM-Veröffentlichungsinstanz ersetzen.
 
    ![Registerkarte „Transport“](assets/acc-transport-tab.png)
 
-1. Tippen oder klicken Sie auf **OK**, um die Änderungen an den Agenteneinstellungen zu speichern.
+1. Klicks **OK** , um die Änderungen an den Agenteneinstellungen zu speichern.
 
 Sie haben die Replikation zur AEM-Veröffentlichungsinstanz konfiguriert, damit Ihre Kampagnenempfängerinnen und -empfänger auf Ihren Inhalt zugreifen können.
 
@@ -184,7 +184,7 @@ Sie haben die Replikation zur AEM-Veröffentlichungsinstanz konfiguriert, damit 
 
 ## Konfigurieren des AEM-Externalizers {#externalizer}
 
-[Der Externalizer](/help/sites-developing/externalizer.md) ist ein OSGi-Service in AEM, der einen Ressourcenpfad in eine externe und absolute URL umwandelt, was erforderlich ist, damit AEM für Campaign geeignete Inhalte bereitstellen kann. Damit die Campaign-Integration funktioniert, müssen Sie ihn konfigurieren.
+[Der Externalizer](/help/sites-developing/externalizer.md) ist ein OSGi-Service in AEM, der einen Ressourcenpfad in eine externe und absolute URL umwandelt, was erforderlich ist, damit AEM für Campaign geeignete Inhalte bereitstellen kann. Konfigurieren Sie sie so, dass die Campaign-Integration funktioniert.
 
 1. Melden Sie sich bei der AEM-Autoreninstanz als Admin an.
 1. Wählen Sie in der globalen Navigationsleiste die Option **Tools** > **Vorgänge** > **Web-Konsole** > **OSGi-Konfiguration** und suchen Sie nach **Day CQ Link Externalizer**.
@@ -192,7 +192,7 @@ Sie haben die Replikation zur AEM-Veröffentlichungsinstanz konfiguriert, damit 
 
    ![Konfigurieren des Externalizers](assets/acc-externalizer-config.png)
 
-1. Tippen oder klicken Sie auf **Speichern**.
+1. Klicken Sie auf **Speichern**.
 
 Sie haben den Externalizer konfiguriert, und Adobe Campaign kann nun auf Ihre Inhalte zugreifen.
 
@@ -205,8 +205,8 @@ Die Veröffentlichungsinstanz muss vom Adobe Campaign-Server aus erreichbar sein
 Damit Campaign mit AEM kommunizieren kann, müssen Sie ein Kennwort für den `campaign-remote`-Benutzer in AEM festlegen.
 
 1. Melden Sie sich in AEM als Admin an.
-1. Klicken Sie in der Hauptnavigationskonsole in der linken Leiste auf **Tools**.
-1. Klicken Sie anschließend auf **Sicherheit** -> **Benutzer**, um die Benutzer-Administration-Console zu öffnen.
+1. Klicken Sie in der Hauptnavigationskonsole auf **Instrumente** in der linken Leiste.
+1. Klicken Sie anschließend auf **Sicherheit** > **Benutzer**, um die Benutzer-Administration-Console zu öffnen. 
 1. Suchen Sie den `campaign-remote`-Benutzer.
 1. Wählen Sie den `campaign-remote`-Benutzer aus und klicken Sie auf **Eigenschaften**, um den Benutzer zu bearbeiten.
 1. Klicken Sie im Fenster **Benutzereinstellungen bearbeiten** auf **Kennwort ändern**.
@@ -220,7 +220,7 @@ Bei der [Installation des **AEM-Integrationspakets** in Campaign](#install-packa
 
 1. Melden Sie sich mit der Client-Konsole bei Adobe Campaign als Administrator an.
 
-1. Wählen Sie **Tools** -> **Explorer** in der Menüleiste aus.
+1. Auswählen **Instrumente** > **Explorer** aus der Menüleiste.
 
 1. Navigieren Sie im Explorer zum Knoten **Administration** > **Platform** > **Externe Konten**.
 

@@ -1,11 +1,11 @@
 ---
 title: Arbeiten mit Inhaltsseitenversionen
-description: Erstellen, Vergleichen und Wiederherstellen von Versionen einer Seite in Adobe Experience Manager.
+description: Erstellen, Vergleichen und Wiederherstellen von Seitenversionen in Adobe Experience Manager.
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1501'
-ht-degree: 71%
+source-wordcount: '1510'
+ht-degree: 68%
 
 ---
 
@@ -16,7 +16,7 @@ Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem besti
 * Erstellen einer Version einer Seite.
 * Wiederherstellen einer früheren Version einer Seite, z. B.:
    * , um eine Änderung rückgängig zu machen, die Sie an der Seite vorgenommen haben.
-* Vergleichen der aktuellen Version einer Seite mit einer früheren Version:
+* Vergleichen Sie die aktuelle Version einer Seite mit einer früheren Version:
    * , um Unterschiede in Text und Bildern hervorzuheben.
 
 ## Erstellen einer neuen Version {#creating-a-new-version}
@@ -31,7 +31,7 @@ Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 1. Navigieren Sie zu der Seite, für die Sie eine Version erstellen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Öffnen Sie die Spalte **Zeitleiste**.
-1. Klicken/tippen Sie auf die Pfeilspitze neben dem Kommentarfeld, um die Optionen anzuzeigen:
+1. Klicken Sie auf den Pfeil neben dem Kommentarfeld, um die Optionen anzuzeigen:
 
    ![Timeline - Als Version speichern](assets/screen-shot_2019-03-05at112335.png)
 
@@ -195,7 +195,7 @@ Timewarp ist eine Funktion, die den *Veröffentlichungsstatus* einer Seite zu ei
 >
 >[Timewarp kann auch mit Launches verwendet werden, um eine Vorschau der Zukunft anzuzeigen](/help/sites-authoring/launches.md), wenn AEM 6.5.10.0 oder höher ausgeführt wird.
 
-Die Inhaltserstellung ist ein fortlaufender und kollaborativer Prozess. Timewarp ermöglicht es Autoren, die veröffentlichte Website im Laufe der Zeit zu verfolgen, damit sie besser verstehen können, wie sich der Inhalt verändert hat. Diese Funktion verwendet die Seitenversionen, um den Zustand der Publishing-Umgebung zu bestimmen:
+Die Inhaltserstellung ist ein fortlaufender und kollaborativer Prozess. Timewarp ermöglicht es Autoren, die veröffentlichte Website im Laufe der Zeit zu verfolgen, damit sie besser verstehen können, wie sich der Inhalt verändert hat. Diese Funktion verwendet die Seitenversionen, um den Status der Veröffentlichungsumgebung zu ermitteln:
 
 * Das System sucht nach der Seitenversion, die zum ausgewählten Zeitpunkt aktiv war.
    * Diese Seitenversion wurde erstellt/aktiviert. *before* den in Timewarp ausgewählten Zeitpunkt.
@@ -210,9 +210,9 @@ Timewarp ist ein [Modus](/help/sites-authoring/author-environment-tools.md#page-
 
    ![Wählen Sie Timewarp in der Modusauswahl](assets/wwpv-01.png)
 
-1. Legen Sie im Dialogfeld ein Zieldatum und eine Zielzeit fest und klicken oder tippen Sie auf **Datum festlegen**. Wenn Sie keine Zeit auswählen, wird die aktuelle Zeit als Standardzeit verwendet.
+1. Legen Sie im Dialogfeld ein Zieldatum und eine Zielzeit fest und klicken Sie auf **Datum festlegen**. Wenn Sie keine Zeit auswählen, wird die aktuelle Zeit als Standardzeit verwendet.
 
-   ![Datum einstellen](assets/wwpv-02.png)
+   ![Datum festlegen](assets/wwpv-02.png)
 
 1. Die Seite wird basierend auf dem festgelegten Datum angezeigt. Der Timewarp-Modus ist durch die blaue Statusleiste am oberen Fensterrand gekennzeichnet. Verwenden Sie die Links in der Statusleiste, um ein neues Zieldatum auszuwählen oder den Timewarp-Modus zu verlassen.
 

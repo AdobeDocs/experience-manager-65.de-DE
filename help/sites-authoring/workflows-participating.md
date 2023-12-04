@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1519'
-ht-degree: 88%
+source-wordcount: '1521'
+ht-degree: 79%
 
 ---
 
@@ -44,7 +44,7 @@ Wenn Ihnen ein Arbeitselement zugewiesen wird (z. B. **Inhalte genehmigen**), w
    * Die Anzahl der Workflows, denen die Seite unterliegt. Sie haben folgende Möglichkeiten:
 
       * Die Pfeiltasten links/rechts verwenden, um durch die Statusinformationen der verschiedenen Workflows zu navigieren.
-      * Auf die tatsächliche Zahl klicken/tippen, um eine Dropdown-Liste aller anwendbaren Workflows zu öffnen, und dann den Workflow auswählen, der in der Statusleiste angezeigt werden soll.
+      * Klicken Sie auf die tatsächliche Zahl, um eine Dropdown-Liste aller anwendbaren Workflows zu öffnen, und wählen Sie dann den Workflow aus, der in der Statusleiste angezeigt werden soll.
 
   ![wf-59](assets/wf-59.png)
 
@@ -55,7 +55,7 @@ Wenn Ihnen ein Arbeitselement zugewiesen wird (z. B. **Inhalte genehmigen**), w
   >
   >Aktionen werden dann angezeigt, wenn der aktuelle Benutzer bzw. die Benutzerin direkt am aktuellen Workflow-Schritt beteiligt sind.
 
-* Wenn die **Timeline** für die Ressource geöffnet ist, wird der Workflow-Schritt angezeigt. Wenn Sie auf das Warnbanner klicken/tippen, werden die verfügbaren Aktionen ebenfalls angezeigt:
+* Wenn die **Timeline** für die Ressource geöffnet ist, wird der Workflow-Schritt angezeigt. Wenn Sie auf das Warnungsbanner klicken, werden auch die verfügbaren Aktionen angezeigt:
 
   ![screen-shot_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
 
@@ -80,7 +80,7 @@ Sie können einen Teilnehmerschritt wie folgt abschließen:
 Führen Sie die folgenden Schritte aus, um das Arbeitselement abzuschließen:
 
 1. Öffnen Sie den **[AEM-Posteingang](/help/sites-authoring/inbox.md)**.
-1. Wählen Sie (durch Tippen/Klicken auf die Miniaturansicht) das Workflow-Element aus, für das Sie eine Aktion durchführen möchten.
+1. Wählen Sie das Workflow-Element aus, mit dem Sie eine Aktion ausführen möchten (klicken Sie auf die Miniaturansicht).
 1. Wählen Sie in der Symbolleiste die Option **Fertig stellen** aus.
 1. Die **Arbeitselement abschließen** wird geöffnet. Wählen Sie die **Nächster Schritt** aus der Dropdown-Auswahl aus und fügen Sie eine **Kommentar** falls erforderlich.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
@@ -102,7 +102,7 @@ Sie können auch die Zeitleiste verwenden, um einen Schritt abzuschließen und z
 
    ![screen-shot_2019-03-05at120744](assets/screen-shot_2019-03-05at120744.png)
 
-1. Klicken/tippen Sie auf das Warnbanner, um die verfügbaren Aktionen anzuzeigen. Wählen Sie **Voranbringen**:
+1. Klicken Sie auf das Warnungsbanner, um die verfügbaren Aktionen anzuzeigen. Wählen Sie **Voranbringen**:
 
    ![screen-shot_2019-03-05at120453-1](assets/screen-shot_2019-03-05at120453-1.png)
 
@@ -139,7 +139,7 @@ Das Delegieren eines Teilnehmerschritts ist möglich:
 Gehen Sie folgendermaßen vor, um ein Arbeitselement zu delegieren:
 
 1. Öffnen Sie den **[AEM-Posteingang](/help/sites-authoring/inbox.md)**.
-1. Wählen Sie (durch Tippen/Klicken auf die Miniaturansicht) das Workflow-Element aus, für das Sie eine Aktion durchführen möchten.
+1. Wählen Sie das Workflow-Element aus, mit dem Sie eine Aktion ausführen möchten (klicken Sie auf die Miniaturansicht).
 1. Wählen Sie in der Symbolleiste die Option **Delegieren** aus.
 1. Das Dialogfeld wird geöffnet. Geben Sie die **Benutzer** aus der Dropdown-Auswahl (dies kann auch eine Gruppe sein) und fügen Sie eine **Kommentar** falls erforderlich.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
@@ -158,7 +158,7 @@ Gehen Sie folgendermaßen vor, um ein Arbeitselement zu delegieren:
 Sie können auch die Zeitleiste verwenden, um einen Schritt zu delegieren und/oder zuzuweisen:
 
 1. Wählen Sie die entsprechende Seite aus und öffnen Sie die **Zeitleiste** (oder öffnen Sie die **Zeitleiste** und wählen Sie die Seite aus).
-1. Klicken/tippen Sie auf das Warnbanner, um die verfügbaren Aktionen anzuzeigen. Wählen Sie **Bevollmächtigten ändern**:
+1. Klicken Sie auf das Warnungsbanner, um die verfügbaren Aktionen anzuzeigen. Wählen Sie **Bevollmächtigten ändern**:
 
    ![screen-shot_2019-03-05at120453-2](assets/screen-shot_2019-03-05at120453-2.png)
 
@@ -189,7 +189,7 @@ Das Wechseln zu einem vorherigen Teilnehmerschritt ist möglich:
 Gehen Sie dazu folgendermaßen vor:
 
 1. Öffnen Sie den **[AEM-Posteingang](/help/sites-authoring/inbox.md)**.
-1. Wählen Sie (durch Tippen/Klicken auf die Miniaturansicht) das Workflow-Element aus, für das Sie eine Aktion durchführen möchten.
+1. Wählen Sie das Workflow-Element aus, mit dem Sie eine Aktion ausführen möchten (klicken Sie auf die Miniaturansicht).
 1. Wählen Sie **Schritt zurück** aus, um das Dialogfeld zu öffnen.
 
 1. Geben Sie die **Vorheriger Schritt** und fügen Sie eine **Kommentar** falls erforderlich.
@@ -209,7 +209,7 @@ Gehen Sie dazu folgendermaßen vor:
 Sie können auch die Zeitleiste verwenden, um zu einem vorherigen Schritt zurückzukehren:
 
 1. Wählen Sie die entsprechende Seite aus und öffnen Sie die **Zeitleiste** (oder öffnen Sie die **Zeitleiste** und wählen Sie die Seite aus).
-1. Klicken/tippen Sie auf das Warnbanner, um die verfügbaren Aktionen anzuzeigen. Wählen Sie **Zurücksetzen**:
+1. Klicken Sie auf das Warnungsbanner, um die verfügbaren Aktionen anzuzeigen. Wählen Sie **Zurücksetzen**:
 
    ![screen-shot_2019-03-05at121131](assets/screen-shot_2019-03-05at121131.png)
 
@@ -251,7 +251,7 @@ Das Öffnen der Details der Arbeitselemente ist möglich:
 Gehen Sie folgendermaßen vor, um ein Workflow-Element zu öffnen und die Details anzusehen:
 
 1. Öffnen Sie den **[AEM-Posteingang](/help/sites-authoring/inbox.md)**.
-1. Wählen Sie (durch Tippen/Klicken auf die Miniaturansicht) das Workflow-Element aus, für das Sie eine Aktion durchführen möchten.
+1. Wählen Sie das Workflow-Element aus, mit dem Sie eine Aktion ausführen möchten (klicken Sie auf die Miniaturansicht).
 1. Wählen Sie **Öffnen** aus, um die Informationsregisterkarten zu öffnen.
 
 1. Wählen Sie bei Bedarf die entsprechende Aktion aus, geben Sie Details an und bestätigen Sie mit **OK** (oder **Abbrechen**).
@@ -274,7 +274,7 @@ Sie können sich Details zur Payload anzeigen lassen, die mit der Workflow-Insta
 Gehen Sie folgendermaßen vor, um die Payload und Ressourcen der Workflow-Instanz anzuzeigen:
 
 1. Öffnen Sie den **[AEM-Posteingang](/help/sites-authoring/inbox.md)**.
-1. Wählen Sie (durch Tippen/Klicken auf die Miniaturansicht) das Workflow-Element aus, für das Sie eine Aktion durchführen möchten.
+1. Wählen Sie das Workflow-Element aus, mit dem Sie eine Aktion ausführen möchten (klicken Sie auf die Miniaturansicht).
 1. Wählen Sie in der Symbolleiste **Nutzdaten anzeigen** aus, um den Dialog zu öffnen.
 
    Da ein Workflow-Paket lediglich eine Sammlung von Referenzen auf Pfade innerhalb des Repositorys ist, können Sie die Einträge hier hinzuzufügen, entfernen oder anpassen, um zu ändern, was vom Workflow-Paket referenziert werden soll. Verwenden Sie die Komponente **Ressourcendefinition**, um neue Einträge hinzuzufügen.

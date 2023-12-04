@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2855'
-ht-degree: 91%
+source-wordcount: '2837'
+ht-degree: 85%
 
 ---
 
@@ -157,18 +157,18 @@ Gebiete können aktivitäten- und angebotsübergreifend gelten. Nach der Erstell
 
 >[!NOTE]
 >
->Der Standardbereich „primäres Gebiet“ wird standardmäßig ausgeblendet, wenn Sie auf den Namen einer Marke tippen/klicken, **bis** Sie einen anderen Bereich erstellen. Wählen Sie entweder in der **Aktivitäts-** oder der **Angebotskonsole** eine Marke aus, wird Ihnen die **Gebietskonsole** angezeigt.
+>Der Standardbereich Master Area wird standardmäßig ausgeblendet, wenn Sie auf den Namen einer Marke klicken **bis** Erstellen Sie einen anderen Bereich. Wählen Sie entweder in der **Aktivitäts-** oder der **Angebotskonsole** eine Marke aus, wird Ihnen die **Gebietskonsole** angezeigt.
 
 So erstellen Sie einen Bereich:
 
 1. Navigieren Sie zu **Personalisierung** > **Aktivitäten** oder **Angebote** und dann zu Ihrer Marke.
-1. Tippen oder klicken Sie auf **Gebiet erstellen**.
+1. Klicks **Bereich erstellen**.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
 1. Klicken Sie auf das Symbol **Gebiet** und dann auf **Weiter**.
 1. Geben Sie im Feld **Titel** einen Namen für das neue Gebiet ein. Wählen Sie, falls gewünscht, Tags aus.
-1. Tippen oder klicken Sie auf **Erstellen**.
+1. Klicken Sie auf **Erstellen**.
 
    AEM leitet Sie zum Markenfenster um, in dem alle erstellten Gebiete aufgelistet werden. Sollten neben dem primären Gebiet noch andere Gebiete angezeigt werden, können Sie Gebiete direkt in der Markenkonsole erstellen.
 
@@ -181,7 +181,7 @@ Gebiete werden als Live Copies erstellt, damit diese über Site-Strukturen hinwe
 So erstellen Sie ein Gebiet als Live Copy:
 
 1. Navigieren Sie zu **Personalisierung** > **Aktivitäten** oder **Angebote** und dann zu Ihrer Marke.
-1. Tippen oder klicken Sie auf **Gebiet als Live Copy erstellen**.
+1. Klicks **Gebiet als Live Copy erstellen**.
 
    ![chlimage_1-279](assets/chlimage_1-279.png)
 
@@ -203,7 +203,7 @@ So erstellen Sie ein Gebiet als Live Copy:
    >
    >Wird der Rollout einer Site für eine Live Copy durchgeführt und ist das für die Blueprint-Seite konfigurierte Gebiet auch Blueprint des Gebiets, das für die Live Copy der Seite konfiguriert wurde, löst die LiveAction **personalizationContentRollout** einen synchronen subRollout aus, der Teil der **Standard-Rollout-Konfigurationen** ist.
 
-1. Tippen oder klicken Sie auf **Erstellen**.
+1. Klicken Sie auf **Erstellen**.
 
    AEM leitet Sie zum Markenfenster um, in dem alle erstellten Gebiete aufgelistet werden. Sollten neben dem primären Gebiet noch andere Gebiete angezeigt werden, können Sie Gebiete direkt im Markenfenster erstellen.
 
@@ -222,13 +222,13 @@ Beim Verknüpfen sind nur die Aktivitäten, Erlebnisse und Angebote aus dem ausg
 So verknüpfen Sie eine Site mit einem Gebiet:
 
 1. Navigieren Sie zu der Site (oder Seite), die Sie mit einem Gebiet verknüpfen möchten.
-1. Wählen Sie die Site oder Seite aus und tippen oder klicken Sie auf **Eigenschaften anzeigen**.
-1. Tippen oder klicken Sie auf die Registerkarte **Personalisierung**.
+1. Wählen Sie die Site oder Seite aus und klicken Sie auf **Eigenschaften anzeigen**.
+1. Klicken Sie auf **Personalisierung** Registerkarte.
 1. Wählen Sie im Menü **Marke** die Marke, mit der Sie Ihr Gebiet verknüpfen möchten. Nachdem Sie die Marke ausgewählt haben, sind die verfügbaren Gebiete im Menü **Gebietsverweis** verfügbar.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
 
-1. Wählen Sie aus dem Dropdown-Menü **Gebiets-Verweis** das gewünschte Gebiet aus und klicken oder tippen Sie auf **Speichern**.
+1. Wählen Sie den Bereich aus dem **Gebiets-Referenz** Dropdown-Menü und klicken Sie auf **Speichern**.
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
 
@@ -252,8 +252,8 @@ Eine Aktivität, die Daten von einer anderen Site erbt, weist neben ihrem Namen 
 
 So setzen Sie die Vererbung zielgerichteter Inhalte in einer Aktivität aus oder trennen sie:
 
-1. Navigieren Sie zu der Seite, auf der Sie die Vererbung aussetzen oder trennen möchten, und tippen oder klicken Sie auf **Targeting** im Modus-Dropdown-Menü.
-1. Ist Ihre Seite mit einem Gebiet verknüpft, das eine Live Copy darstellt, wird der Vererbungsstatus angezeigt. Tippen oder klicken Sie auf **Targeting starten**.
+1. Navigieren Sie zu der Seite, auf der Sie die Vererbung trennen oder aussetzen möchten, und klicken Sie auf **Targeting** im Modus-Dropdown-Menü.
+1. Ist Ihre Seite mit einem Gebiet verknüpft, das eine Live Copy darstellt, wird der Vererbungsstatus angezeigt. Klicken Sie auf **Targeting starten**.
 1. Führen Sie einen der folgenden Schritte aus, um eine Aktivität auszusetzen:
 
    1. Wählen Sie ein Element der Aktivität aus, z. B. die Zielgruppe. AEM zeigt automatisch das Bestätigungsdialogfeld „Live Copy aussetzen“ an. (Sie können die Live Copy aussetzen, indem Sie während des Targeting-Prozesses auf ein beliebiges Element tippen oder klicken.)
@@ -261,7 +261,7 @@ So setzen Sie die Vererbung zielgerichteter Inhalte in einer Aktivität aus oder
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Tippen oder klicken Sie auf **Aussetzen**, um die Aktivität zu unterbrechen. Ausgesetzte Aktivitäten werden rot markiert.
+1. Klicks **Aussetzen** , um die Aktivität auszusetzen. Ausgesetzte Aktivitäten werden rot markiert.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
@@ -269,10 +269,10 @@ So setzen Sie die Vererbung zielgerichteter Inhalte in einer Aktivität aus oder
 
 So unterbrechen Sie die Vererbung zielgerichteter Inhalte in einer Aktivität:
 
-1. Navigieren Sie zu der Seite, deren Live Copy Sie vom primären Gebiet trennen möchten, und klicken oder tippen Sie im Modus-Dropdown-Menü auf **Targeting**.
-1. Ist Ihre Seite mit einem Gebiet verknüpft, das eine Live Copy darstellt, wird der Vererbungsstatus angezeigt. Tippen oder klicken Sie auf **Targeting starten**.
+1. Navigieren Sie zu der Seite, auf der Sie die Live Copy vom Master trennen möchten, und klicken Sie auf **Targeting** im Modus-Dropdown-Menü.
+1. Ist Ihre Seite mit einem Gebiet verknüpft, das eine Live Copy darstellt, wird der Vererbungsstatus angezeigt. Klicken Sie auf **Targeting starten**.
 1. Wählen Sie aus dem Dropdown-Menü in der Symbolleiste die Option **Live Copy trennen**. AEM bestätigt, dass Sie die Live Copy trennen möchten.
-1. Tippen oder klicken Sie auf **Trennen**, um die Live Copy von der Aktivität zu trennen. Nach dem Trennen wird das Dropdown-Menü zur Vererbung nicht mehr angezeigt. Die Aktivität ist jetzt eine lokale Aktivität.
+1. Klicks **Trennen** , um die Live Copy von der Aktivität zu trennen. Nach dem Trennen wird das Dropdown-Menü zur Vererbung nicht mehr angezeigt. Die Aktivität ist jetzt eine lokale Aktivität.
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
 
@@ -282,13 +282,13 @@ Wenn Sie die Vererbung zielgerichteter Inhalte in einer Aktivität ausgesetzt ha
 
 So stellen Sie die Vererbung zielgerichteter Inhalte in einer Aktivität wieder her:
 
-1. Navigieren Sie zu der Seite, auf der die Vererbung wiederhergestellt werden soll, und klicken oder tippen Sie im Modus-Dropdown-Menü auf **Targeting**.
-1. Tippen oder klicken Sie auf **Targeting starten**.
+1. Navigieren Sie zu der Seite, auf der Sie die Vererbung wiederherstellen möchten, und klicken Sie auf **Targeting** im Modus-Dropdown-Menü.
+1. Klicken Sie auf **Targeting starten**.
 1. Wählen Sie im Dropdownmenü in der Symbolleiste die Option **Live Copy fortsetzen**.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
 
-1. Tippen oder klicken Sie auf **Fortsetzen**, um zu bestätigen, dass Sie die Vererbung für die Live Copy wiederherstellen möchten. Alle Änderungen, die an der aktuellen Aktivität vorgenommen wurden, gehen bei Wiederherstellung der Vererbung verloren.
+1. Klicks **Fortsetzen** , um zu bestätigen, dass Sie die Live Copy-Vererbung fortsetzen möchten. Alle Änderungen, die an der aktuellen Aktivität vorgenommen wurden, gehen bei Wiederherstellung der Vererbung verloren.
 
 ## Löschen von Gebieten {#deleting-areas}
 
@@ -297,5 +297,5 @@ Wenn Sie ein Gebiet löschen, werden alle Aktivitäten in diesem Gebiet ebenfall
 So löschen Sie Gebiete:
 
 1. Navigieren Sie zu **Personalisierung** > **Aktivitäten** oder **Angebote** und dann zu Ihrer Marke.
-1. Tippen oder klicken Sie auf das Symbol neben dem Gebiet, das Sie löschen möchten.
-1. Tippen oder klicken Sie auf **Löschen** und bestätigen Sie, dass das Gebiet gelöscht werden soll.
+1. Klicken Sie auf das Symbol neben dem Bereich, den Sie löschen möchten.
+1. Klicks **Löschen** und bestätigen Sie, dass Sie den Bereich löschen möchten.

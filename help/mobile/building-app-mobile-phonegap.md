@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 2%
+source-wordcount: '1028'
+ht-degree: 1%
 
 ---
 
@@ -101,14 +101,14 @@ Verschieben Sie den Inhalt Ihrer Mobile App in Ihr Dateisystem.
    >
    >Der Cache enthält Inhaltsaktualisierungen für installierte Anwendungen. Beim Löschen des Zwischenspeichers werden alle zwischengespeicherten Aktualisierungen ausgeschlossen.
 
-1. Klicken oder tippen Sie in der Symbolleiste auf das Symbol CLI Assets herunterladen .
+1. Klicken Sie in der Symbolleiste auf das Symbol CLI Assets herunterladen .
 
    ![Symbol &quot;CLI Assets herunterladen&quot;, das durch ein überlappendes Tablet-Symbol gekennzeichnet ist.](do-not-localize/chlimage_1-1.png)
 
 1. Nachdem Sie die ZIP-Datei gespeichert haben, klicken Sie im Dialogfeld Erfolg auf Schließen .
 1. Extrahieren Sie den Inhalt der ZIP-Datei.
 
-### PhoneGap-CLI zum Erstellen verwenden {#using-the-phonegap-cli-to-build}
+### Verwenden der PhoneGap-CLI zum Erstellen {#using-the-phonegap-cli-to-build}
 
 Verwenden Sie die PhoneGap-CLI, um die Anwendung zu kompilieren und zu installieren. Informationen zur Verwendung der PhoneGap-CLI finden Sie in der PhoneGap-Befehlszeilenschnittstelle (`https://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html`) Dokumentation.
 
@@ -118,7 +118,7 @@ Verwenden Sie die PhoneGap-CLI, um die Anwendung zu kompilieren und zu installie
    cd ~/Downloads/ng-app-cli.1392137825303
    ```
 
-1. Geben Sie den phonegap-Befehl für die Plattform ein, auf die Sie abzielen. Beispielsweise erstellt der folgende Befehl die App für Android™:
+1. Geben Sie den phonegap-Befehl für die Plattform ein, auf die Sie abzielen. Mit dem folgenden Befehl wird beispielsweise die App für Android™ erstellt:
 
    ```shell
    phonegap build android
@@ -133,7 +133,7 @@ Verwenden Sie den PhoneGap-Cloud-Service, um Ihre App zu erstellen. Dazu müssen
 Erstellen Sie eine PhoneGap Build-Konfiguration, damit Sie die PhoneGap Build-Dienste aus AEM heraus verwenden können. Geben Sie den Benutzernamen und das Kennwort des PhoneGap Build an, das Sie zum Erstellen Ihrer Mobile Apps verwenden werden.
 
 1. Öffnen Sie die Seite Tools . ([http://localhost:4502/tools.html](http://localhost:4502/tools.html)).
-1. Klicken Sie im Bereich &quot;CQ-Vorgänge&quot;auf &quot;Cloud Services&quot;.
+1. Klicken Sie im Bereich &quot;CQ Operations&quot;auf Cloud Service.
 1. Klicken Sie auf den Link Jetzt konfigurieren für PhoneGap Build.
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
@@ -160,7 +160,7 @@ Senden Sie Ihre Anwendungsressourcen zur Kompilierung für die verschiedenen mob
 
    **Hinweis:** Die Beta-Version AEM Beta erstellt keine Inbox-Benachrichtigung, wenn der Build erfolgreich abgeschlossen wurde.
 
-1. Klicken Sie im Dialogfeld &quot;Erfolg&quot;auf PhoneGap Build , um die Adobe PhoneGap Build-Seite unter `https://build.phonegap.com/apps`. Wenn Sie darauf warten, dass Ihre App angezeigt wird, können Sie den PhoneGap Build Status unter `https://status.build.phonegap.com/`.
+1. Klicken Sie im Dialogfeld &quot;Erfolg&quot;auf PhoneGap Build , um die Adobe PhoneGap Build-Seite unter `https://build.phonegap.com/apps`. Wenn Sie darauf warten, dass Ihre App angezeigt wird, können Sie den Status des PhoneGap Build unter `https://status.build.phonegap.com/`.
 
    Weitere Informationen zur Installation des Builds finden Sie unter [Dokumentation zu PhoneGap Build](https://github.com/phonegap/phonegap-docs/tree/master/docs/4-phonegap-build).
 

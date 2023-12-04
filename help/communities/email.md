@@ -8,10 +8,10 @@ content-type: reference
 pagetitle: Configuring Email
 role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 6%
+source-wordcount: '796'
+ht-degree: 3%
 
 ---
 
@@ -170,7 +170,7 @@ Damit die E-Mail in das Repository geladen werden kann, muss ein Abruf-Importtoo
 
   Beispiel: [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
 
-* Klicken Sie auf **[!UICONTROL Hinzufügen]**
+* Auswählen **[!UICONTROL Hinzufügen]**
 
   ![olling-importer](assets/polling-importer.png)
 
@@ -187,11 +187,11 @@ Damit die E-Mail in das Repository geladen werden kann, muss ein Abruf-Importtoo
   *(Erforderlich)* Legen Sie `/content/usergenerated/mailFolder/postEmails`
 durch Navigation zum `postEmails`Ordner und auswählen **OK**.
 
-* **[!UICONTROL Intervall in Sekunden aktualisieren]**
+* **[!UICONTROL Aktualisierungsintervall in Sekunden]**
 
   *(Optional)* Der für den Standard-E-Mail-Dienst konfigurierte Mailserver weist möglicherweise Anforderungen in Bezug auf den Wert des Aktualisierungsintervalls auf. Gmail erfordert beispielsweise möglicherweise ein Intervall von `300`.
 
-* **[!UICONTROL Anmeldung]**
+* **[!UICONTROL Anmelden]**
 
   *(Optional)*
 

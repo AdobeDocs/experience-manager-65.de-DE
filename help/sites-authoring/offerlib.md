@@ -11,10 +11,10 @@ topic-tags: personalization
 discoiquuid: 81102d77-e856-4c85-b932-f22de8ca6462
 docset: aem65
 exl-id: 34293432-cfdc-466b-96bd-2c43b566a420
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 94%
+source-wordcount: '834'
+ht-degree: 75%
 
 ---
 
@@ -33,21 +33,21 @@ Erstellen Sie eine Marke, mit der Angebote verknüpft werden sollen. Öffnen Sie
 
 Wenn Sie eine Marke mithilfe der Angebotskonsole erstellen, wird diese Marke auch in der [Aktivitätskonsole](/help/sites-authoring/activitylib.md) angezeigt, in der Sie Aktivitäten für die Marke hinzufügen und verwalten können.
 
-1. Tippen/klicken Sie in der Navigationskonsole auf **Personalisierung** > **Angebote**.
+1. Klicken Sie in der Navigationskonsole auf **Personalisierung** > **Angebote**.
 
    ![screen-shot_2019-03-05at124139-1](assets/screen-shot_2019-03-05at124139-1.png)
 
-1. Klicken oder tippen Sie auf **Erstellen** und anschließend auf **Marke** **erstellen**.
-1. Wählen Sie die Markenvorlage aus und klicken oder tippen Sie auf **Weiter**.
+1. Klicks **Erstellen** und dann **Erstellen** **Marke**.
+1. Wählen Sie die Markenvorlage aus und klicken Sie auf **Nächste**.
 1. Geben Sie den Namen der Marke an, der in Angebots- und Aktivitätskonsole angezeigt werden soll. Optional können Sie eins oder mehrere Tags eingeben oder auswählen, die mit der Marke verknüpft werden sollen.
-1. Klicken oder tippen Sie auf **Erstellen**.
+1. Klicken Sie auf **Erstellen**.
 
 ## Hinzufügen von Ordnern zu Angebotsbibliotheken {#add-a-folder-to-an-offer-library}
 
 Fügen Sie der Angebotsbibliothek einer Marke einen Ordner hinzu, um Angebote zu ordnen und zu speichern. Sie können einen Ordner unterhalb der Marke oder unter anderen Ordnern erstellen.
 
 1. Navigieren Sie in der Angebotskonsole zu dem Speicherort, an dem der Ordner erstellt werden soll. Öffnen Sie beispielsweise die Marke, um einen Ordner auf der obersten Ebene zu erstellen, oder öffnen Sie einen anderen Ordner in der Bibliothek.
-1. Klicken oder tippen Sie auf **Erstellen** > **Ordner oder Angebot erstellen**.
+1. Klicks **Erstellen** > **Ordner oder Angebot erstellen**.
 
    ![screen-shot_2019-03-05at124557](assets/screen-shot_2019-03-05at124557.png)
 
@@ -56,7 +56,7 @@ Fügen Sie der Angebotsbibliothek einer Marke einen Ordner hinzu, um Angebote zu
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-1. Klicken oder tippen Sie auf **Erstellen**.
+1. Klicken Sie auf **Erstellen**.
 
 ## Hinzufügen von Angeboten zu Angebotsbibliotheken {#add-an-offer-to-an-offer-library}
 
@@ -65,13 +65,13 @@ Fügen Sie ein Angebot in der Angebotsbibliothek einer Marke hinzu, sodass es zu
 Nach Erstellung des Angebots können Sie es öffnen, um Inhalte zu verfassen.
 
 1. Navigieren Sie in der Angebotskonsole zu dem Speicherort, an dem das Angebot erstellt werden soll. Öffnen Sie beispielsweise eine Marke, um ein übergeordnetes Angebot zu erstellen, oder öffnen Sie einen Ordner der Bibliothek.
-1. Klicken oder tippen Sie auf **Erstellen** > **Ordner oder Angebot erstellen**.
+1. Klicks **Erstellen** > **Ordner oder Angebot erstellen**.
 
    ![screen-shot_2019-03-05at124557-1](assets/screen-shot_2019-03-05at124557-1.png)
 
-1. Wählen Sie dann die Vorlage der **Angebotsseite** aus und klicken oder tippen Sie auf **Weiter**.
-1. Geben Sie einen Titel für das Angebot ein. Sie können dann optional Tags eingeben oder auswählen, die mit dem Angebot verknüpft werden. Klicken oder tippen Sie anschließend auf **Erstellen**.
-1. Klicken oder tippen Sie im Bestätigungsdialogfeld auf **Seite öffnen**, um das Angebot zur Bearbeitung zu öffnen.
+1. Wählen Sie die **Angebotsseite** Vorlage und klicken Sie auf **Nächste**.
+1. Geben Sie einen Titel für das Angebot ein und wählen Sie optional ein oder mehrere Tags aus, die mit dem Angebot verknüpft werden sollen, und klicken Sie dann auf **Erstellen**.
+1. Klicken Sie im Bestätigungsdialogfeld auf , um das Angebot zur Bearbeitung zu öffnen. **Seite öffnen**.
 
 ## Bearbeiten von Angeboten {#editing-an-offer}
 
@@ -79,7 +79,7 @@ Nach Erstellung des Angebots können Sie es öffnen, um Inhalte zu verfassen.
 
 Sie können Angebote über den Ordner in der Angebotsbibliothek oder direkt über die Suchergebnisse öffnen. Außerdem können Sie ein Angebot über das Erlebnis öffnen, mit dem es verknüpft ist.
 
-1. Klicken oder tippen Sie in der Angebotskonsole auf das Symbol neben dem Angebot und wählen Sie **Bearbeiten** aus.
+1. Klicken Sie in der Angebotskonsole auf das Symbol neben dem Angebot und klicken Sie auf **Bearbeiten**.
 1. Fügen Sie dem Angebot Komponenten hinzu und bearbeiten Sie den Komponenteninhalt wie üblich.
 
 ## Löschen von Angeboten {#deleting-an-offer}
@@ -88,15 +88,15 @@ Wird ein Angebot nicht länger benötigt, können Sie es löschen. Sollten Sie v
 
 Sie können Angebote löschen, wenn Sie entweder Ordnerinhalte der Angebotsbibliothek oder Suchergebnisse anzeigen.
 
-1. Klicken oder tippen Sie in der Angebotskonsole auf das Symbol neben dem Angebot und wählen Sie **Löschen** aus.
+1. Klicken Sie in der Angebotskonsole auf das Symbol neben dem Angebot und klicken Sie auf **Löschen**.
 
-   Wählen Sie das Angebot aus und klicken oder tippen Sie auf **Löschen**.
+   Wählen Sie das Angebot aus und klicken Sie auf **Löschen**.
 
-1. Klicken oder tippen Sie im daraufhin eingeblendeten Dialogfeld auf **Löschen**, um den Löschvorgang zu bestätigen.
+1. Klicken Sie im angezeigten Dialogfeld auf **Löschen** , um den Löschvorgang zu bestätigen.
 1. Wird das Angebot von einem oder mehreren Erlebnissen verwendet, sehen Sie ein Dialogfeld, das auf die Verknüpfung des Angebots hinweist:
 
-   * Soll das Angebot gelöscht und aus den Erlebnissen entfernt werden, klicken oder tippen Sie auf **Löschen erzwingen**.
-   * Soll das Angebot nicht gelöscht werden, klicken oder tippen Sie auf **Abbrechen**.
+   * Um das Angebot zu löschen und aus den Erlebnissen zu entfernen, klicken Sie auf **Löschen erzwingen**.
+   * Um das Angebot beizubehalten, klicken Sie auf **Abbrechen**.
 
 ## Suchen nach Angeboten {#searching-for-offers}
 
@@ -108,5 +108,5 @@ Die derzeit angewendeten Suchkriterien werden neben den Suchergebnissen eingeble
 
 So durchsuchen Sie Angebote:
 
-1. Klicken oder tippen Sie oben in der Angebotskonsole auf das Lupensymbol. Die Suche wird standardmäßig auf Angebote beschränkt.
+1. Klicken Sie oben in der Angebotskonsole auf das Lupensymbol. Die Suche wird standardmäßig auf Angebote beschränkt.
 1. Geben Sie einen Suchbegriff ein, um nach Angeboten zu suchen. Wählen Sie aus den Ergebnissen das passende aus.

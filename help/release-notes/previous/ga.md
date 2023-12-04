@@ -2,10 +2,10 @@
 title: Allgemeine Versionshinweise zu  [!DNL Adobe Experience Manager]  6.5
 description: Informationen zu [!DNL Adobe Experience Manager] 6.5 mit Versionshinweisen, Angaben zu neuen Funktionen und zur Installation sowie ausführlichen Auflistungen von Änderungen.
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4676'
-ht-degree: 99%
+source-wordcount: '4484'
+ht-degree: 98%
 
 ---
 
@@ -218,7 +218,7 @@ Weitere Informationen zu Änderungen in AEM Screens finden Sie in den Versionsh
 
 #### Multi-Site-Management (MSM) {#multi-site-management-msm}
 
-* Bei Rolloutkonfigurationen mit PushOnModify werden Seitenverschiebevorgänge besser verarbeitet, um einen inkonsistenten Zustand zu vermeiden..
+* Bei Rollout-Konfigurationen, die PushOnModify verwenden, ist die Handhabung des Seitenverschiebungsvorgangs besser, um inkonsistente Zustände zu vermeiden.
 * Durch Erstellen einer Seite in der Live Copy-Struktur wird standardmäßig eine eigenständige Seite generiert.
 * Sie können MSM-Funktionen in Single-Page-Apps nutzen, die das JS-SDK verwenden (auch als SPA-Editor bezeichnet).
 
@@ -427,7 +427,7 @@ AEM 6.5 Forms wurde um mehrere neue Funktionen und Erweiterungen ergänzt. Hier 
 
 Weitere Informationen zu neuen und verbesserten Funktionen sowie Dokumentationsressourcen finden Sie in der [Zusammenfassung der neuen Funktionen und Verbesserungen in AEM 6.5 Forms](/help/forms/using/whats-new.md).
 
-### Verwenden von kundenorientierter Entwicklung {#leverage-customer-focused-development}
+### Verwenden von kundenorientierter Entwicklung {#use-customer-focused-development}
 
 Adobe verwendet ein kundenorientiertes Entwicklungsmodell, das es den Kunden ermöglicht, zu allen Phasen des Entwicklungsprozesses von der Spezifikation über die Entwicklung bis hin zum Test beizutragen. Unser Dank geht an alle beteiligten Kunden und Partner in diesem Prozess.
 
@@ -506,7 +506,7 @@ Die vollständige Matrix der unterstützten Plattformen, einschließlich der Sup
 
 >[!NOTE]
 >
->Für Oracle Java™ SE-Produkte ist Oracle ist auf ein LTS (Long Term Support)-Modell umgestiegen. Java™ 9 und 10 sind Non-LTS-Versionen von Oracle. Weitere Informationen finden Sie in der [Roadmap für den Oracle Java SE-Support](https://www.oracle.com/technetwork/java/eol-135779.html). Adobe unterstützt LTS-Versionen von Java™ nur zum Ausführen von AEM in einer Produktionsumgebung. Java™ 11 ist die empfohlene Version für AEM 6.5.
+>Für Oracle Java™ SE-Produkte ist Oracle ist auf ein LTS (Long Term Support)-Modell umgestiegen. Java™ 9 und 10 sind Nicht-LTS-Versionen von Oracle. Siehe [Support-Roadmap für oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html). Adobe unterstützt LTS-Versionen von Java™ nur zum Ausführen von AEM in einer Produktionsumgebung. Java™ 11 ist die empfohlene Version für AEM 6.5.
 
 ## Veraltete und entfernte Funktionen {#deprecated-and-removed-features}
 

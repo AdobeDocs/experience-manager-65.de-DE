@@ -2,10 +2,10 @@
 title: Komponentenkonsole
 description: Mit der Komponentenkonsole können Sie alle für Ihre Instanz definierten Komponenten durchsuchen und wichtige Informationen zu den einzelnen Komponenten anzeigen.
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 57%
+ht-degree: 55%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 57%
 
 Mit der Komponentenkonsole können Sie alle für Ihre Instanz definierten Komponenten durchsuchen und wichtige Informationen zu den einzelnen Komponenten anzeigen.
 
-Auf sie kann über **Tools** > **Allgemein** > **Komponenten** zugegriffen werden. In der Konsole sind Karten- und Listenansicht verfügbar. Da es keine Baumstruktur für Komponenten gibt, ist die Spaltenansicht nicht verfügbar.
+Der Zugriff erfolgt über **Tools >** **Allgemein >** **Komponenten**. In der Konsole sind Karten- und Listenansicht verfügbar. Da es keine Baumstruktur für Komponenten gibt, ist die Spaltenansicht nicht verfügbar.
 
 ![screen-shot_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
@@ -29,7 +29,7 @@ Mit dem Symbol **Nur Inhalt** (oben links) können Sie den **Suchbereich** öffn
 
 ### Komponentendetails {#component-details}
 
-Um Details zu einer bestimmten Komponente anzuzeigen, tippen/klicken Sie auf die gewünschte Ressource. Drei Registerkarten bieten:
+Um Details zu einer bestimmten Komponente anzuzeigen, klicken Sie auf die gewünschte Ressource. Drei Registerkarten bieten:
 
 * **Eigenschaften**
 

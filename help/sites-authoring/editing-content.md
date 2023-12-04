@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3016'
-ht-degree: 57%
+source-wordcount: '3015'
+ht-degree: 62%
 
 ---
 
@@ -42,9 +42,9 @@ Die Seite-Symbolleiste bietet Zugriff auf die entsprechenden Funktionen, die von
 
 Die Symbolleiste bietet Zugriff auf eine Vielzahl von Optionen. Je nach aktuellem Kontext und Ihrer Konfiguration sind einige Optionen möglicherweise nicht verfügbar.
 
-* **Seitliches Panel ein/aus**
+* **Seitliches Bedienfeld ein/aus**
 
-  Dadurch wird das seitliche Panel geöffnet/geschlossen, das den [Asset-Browser](/help/sites-authoring/author-environment-tools.md#assets-browser), den [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser) und die [Inhaltsstruktur](/help/sites-authoring/author-environment-tools.md#content-tree) enthält.
+  Dadurch wird das seitliche Bedienfeld geöffnet/geschlossen, das den [Asset-Browser](/help/sites-authoring/author-environment-tools.md#assets-browser), den [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser) und die [Inhaltsstruktur](/help/sites-authoring/author-environment-tools.md#content-tree) enthält.
 
   ![Seitliches Panel ein/aus](do-not-localize/screen_shot_2018-03-22at111425.png)
 
@@ -100,9 +100,9 @@ Wird eine Seite bearbeitet, die einem oder mehreren [Workflows](/help/sites-auth
 >
 >Die Statusleiste ist nur für Benutzerkonten mit entsprechenden Berechtigungen sichtbar.
 
-In der Benachrichtigung ist der Workflow aufgeführt, dem die Seite zugeordnet ist. Wenn Benutzende am aktuellen Workflow-Schritt beteiligt sind, sind zusätzlich auch Optionen verfügbar, die sich [auf den Workflow-Status auswirken](/help/sites-authoring/workflows-participating.md) und die weitere Informationen zum Workflow liefern, darunter:
+In der Benachrichtigung ist der Workflow aufgeführt, dem die Seite zugeordnet ist. Wenn Benutzende am aktuellen Workflow-Schritt beteiligt sind, sind zusätzlich auch Optionen verfügbar, die sich [auf den Workflow-Status auswirken](/help/sites-authoring/workflows-participating.md) und die weiteren Informationen zum Workflow liefern, darunter:
 
-* **Fertigstellen**: Öffnet das Dialogfeld **Arbeitselement fertigstellen**. box
+* **Fertig** - Öffnet die **Arbeitselement abschließen** Dialogfeld
 
 * **Delegieren** - Öffnet die **Arbeitselement abschließen** Dialogfeld
 
@@ -116,7 +116,7 @@ Wenn die Seite mehreren Workflows unterliegt, wird die Anzahl der Workflows am r
 
 ## Komponenten-Platzhalter {#component-placeholder}
 
-Der Komponenten-Platzhalter zeigt an, wo eine Komponente platziert wird, wenn Sie sie per Drag-and-Drop ablegen - oberhalb der Komponente, über der Sie gerade den Mauszeiger bewegen.
+Der Komponenten-Platzhalter zeigt an, wo eine Komponente platziert wird, wenn Sie sie per Drag-and-Drop ablegen – oberhalb der Komponente, über der sich der Mauszeiger gerade befindet:
 
 * Beim Hinzufügen einer Komponente zur Seite (Ziehen aus dem Komponenten-Browser):
 
@@ -130,7 +130,7 @@ Der Komponenten-Platzhalter zeigt an, wo eine Komponente platziert wird, wenn Si
 
 ### Einfügen einer Komponente aus dem Komponenten-Browser {#inserting-a-component-from-the-components-browser}
 
-Sie können eine Komponente mit dem [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser). Die [Komponenten-Platzhalter](#component-placeholder) zeigt an, wo die Komponente positioniert ist:
+Sie können eine Komponente mit dem [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser). Der [Komponenten-Platzhalter](#component-placeholder) zeigt an, wo die Komponente platziert wird:
 
 1. Öffnen Sie die Seite im Modus [**Bearbeiten**](/help/sites-authoring/author-environment-tools.md#page-modes).
 1. Öffnen Sie den [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser).
@@ -149,7 +149,7 @@ Sie können eine Komponente mit dem **Komponenten hierher ziehen** Feld des Absa
 1. Öffnen Sie die Seite im Modus [**Bearbeiten**](/help/sites-authoring/author-environment-tools.md#page-modes).
 1. Es gibt zwei Möglichkeiten, eine Komponente aus dem Absatzsystem auszuwählen und hinzuzufügen:
 
-   * Wählen Sie die Option **Komponente einfügen** (+) aus der Symbolleiste einer vorhandenen Komponente oder aus dem Feld **Komponenten hierher ziehen**.
+   * Wählen Sie die Option **Komponente einfügen** (+) aus der Symbolleiste einer vorhandenen Komponente oder aus dem Feld **Komponenten hierherziehen**.
 
    ![Komponentenauswahl einfügen](assets/screen_shot_2018-03-22at112536.png)
 
@@ -159,7 +159,7 @@ Sie können eine Komponente mit dem **Komponenten hierher ziehen** Feld des Absa
 
    ![Neue Komponente einfügen](assets/screen_shot_2018-03-22at112650.png)
 
-1. Die ausgewählte Komponente wird am unteren Rand der Seite hinzugefügt. [Bearbeiten](#editmovecopypastedelete) Sie bei Bedarf die Komponente.
+1. Die ausgewählte Komponente wird unten auf der Seite hinzugefügt. [Bearbeiten](#editmovecopypastedelete) Sie bei Bedarf die Komponente.
 
 ### Einfügen einer Komponente mit dem Assets-Browser {#inserting-a-component-using-the-assets-browser}
 
@@ -222,13 +222,13 @@ Wenn Sie beim Durchsuchen der Assets feststellen, dass Sie an einem Asset eine s
 
 Wenn Sie eine Komponente auswählen, wird die Symbolleiste geöffnet. Dadurch erhalten Sie Zugriff auf verschiedene Aktionen, die für die Komponente ausgeführt werden können.
 
-Die tatsächlichen Aktionen, die dem Benutzer zur Verfügung stehen, werden entsprechend angezeigt und hier können nicht alle Aktionen beschrieben werden.
+Die tatsächlichen für die Benutzenden verfügbaren Aktionen werden abhängig von der jeweiligen Situation angezeigt, sodass hier u. U. nicht alle möglichen Aktionen beschrieben werden.
 
 ![Komponenten-Symbolleistenoptionen](assets/screen_shot_2018-03-22at112909.png)
 
 * **Bearbeiten**
 
-  [Abhängig vom Komponententyp](/help/sites-authoring/default-components.md)ermöglicht, [Inhalt der Komponente bearbeiten](#edit-content). Häufig wird eine Symbolleiste bereitgestellt.
+  [Abhängig vom Komponententyp](/help/sites-authoring/default-components.md) können Sie hierüber den [Inhalt der Komponente bearbeiten](#edit-content). Häufig wird eine Symbolleiste bereitgestellt.
 
   ![Bearbeiten](do-not-localize/screen_shot_2018-03-22at112936.png)
 
@@ -246,7 +246,7 @@ Die tatsächlichen Aktionen, die dem Benutzer zur Verfügung stehen, werden ents
 
 * **Ausschneiden**
 
-  Dadurch wird die Komponente in die Zwischenablage kopiert. Nach der Einfügeaktion wird die ursprüngliche Komponente entfernt.
+  Dadurch wird die Komponente in die Zwischenablage kopiert. Nach dem Einfügen wird die ursprüngliche Komponente entfernt.
 
   ![Ausschneiden](assets/screen_shot_2018-03-22at113007.png)
 
@@ -267,7 +267,7 @@ Die tatsächlichen Aktionen, die dem Benutzer zur Verfügung stehen, werden ents
   Dadurch wird die Komponente aus der Zwischenablage auf der Seite eingefügt. Ob das Original erhalten bleibt, hängt davon ab, ob Sie das Kopieren oder Ausschneiden verwendet haben.
 
    * Sie können Komponenten auf derselben oder einer anderen Seite einfügen.
-   * Das eingefügte Element wird über dem Element eingefügt, in dem Sie die Einfügeaktion auswählen.
+   * Das eingefügte Element wird über dem Element eingefügt, auf dem Sie die Einfügeaktion auswählen.
    * Die Aktion Einfügen wird nur angezeigt, wenn sich Inhalt in der Zwischenablage befindet.
 
   ![Einfügen](assets/screen_shot_2018-03-22at113553.png)
@@ -330,7 +330,7 @@ Die genauen Bearbeitungsoptionen hängen von der Komponente ab. Bei einigen Komp
 
 * Bildkomponente – Vollbild
 
-  [Vollbildmodus aufrufen](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) für die Bildkomponente mehr Platz zum Bearbeiten des Bildes und zum Anzeigen zusätzlicher Bearbeitungsoptionen wie **Startkarte** und **Zoom zurücksetzen**. Außerdem können im Vollbildmodus Zuschnittvoreinstellungen ausgewählt werden.
+  [Der Wechsel in den Vollbildmodus](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) für die Bildkomponente bietet mehr Platz zum Bearbeiten des Bildes und zeigt zusätzliche Bearbeitungsoptionen wie **Karte starten** und **Zoom zurücksetzen**. Außerdem können im Vollbildmodus Zuschnittvoreinstellungen ausgewählt werden.
 
   ![Vollbild der Bildkomponente](assets/screen_shot_2018-03-22at120529.png)
 
@@ -387,7 +387,7 @@ Statt wiederholt von &quot;Bearbeiten&quot;zu wechseln [Layout-Modus](/help/site
 
    ![Bearbeitungsmodus im Formular](assets/screen_shot_2018-03-22at133756.png)
 
-   Klicken oder tippen Sie auf **Layout** -Aktion, damit Sie das Layout der Komponente anpassen können.
+   Klicken Sie auf **Layout** -Aktion, damit Sie das Layout der Komponente anpassen können.
 
    ![Komponenten-Symbolleiste](do-not-localize/chlimage_1-21.png)
 
@@ -457,10 +457,10 @@ Durch Auswählen der Seite in der [Spaltenansicht](/help/sites-authoring/basic-h
 
 Mit dem [Seitenmodus „Live Copy-Status“](/help/sites-authoring/author-environment-tools.md#page-modes) erhalten Sie einen schnellen Überblick über den Live Copy-Status und darüber, welche Komponenten übernommen bzw. nicht übernommen wurden:
 
-* Grüner Rahmen: Übernommen
+* Grüner Rahmen: Vererbt
 * Rosa Rahmen: Vererbung wird abgebrochen
 
-Zum Beispiel:
+Beispiel:
 
 ![Live Copy-Vererbungsstatus](assets/screen_shot_2018-03-22at134820.png)
 
@@ -507,9 +507,9 @@ Die Option **Als veröffentlicht anzeigen** ist über das Menü [Seiteninformati
 
 AEM ermöglicht das Sperren einer Seite, sodass niemand außer Ihnen den Inhalt ändern kann. Dies ist nützlich, wenn Sie zahlreiche Bearbeitungen an einer bestimmten Seite vornehmen oder wenn Sie eine Seite für eine kurze Zeit einfrieren müssen.
 
-Eine Seite kann gesperrt werden durch:
+Eine Seite kann wie folgt gesperrt werden:
 
-* die **Sites**-Konsole
+* **Sites**-Konsole
 
    1. Wählen Sie die Seite mit dem [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) aus.
    1. Wählen Sie das Sperrsymbol aus.

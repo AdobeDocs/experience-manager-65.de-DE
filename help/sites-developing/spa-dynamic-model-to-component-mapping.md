@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 77%
+source-wordcount: '333'
+ht-degree: 71%
 
 ---
 
@@ -38,7 +38,7 @@ Anwendungen mit einzelnen Seiten, die das JavaScript SPA SDK für AEM nutzen, si
 1. Frontend-Komponenten registrieren sich im [Komponentenzuordnungs-Store](/help/sites-developing/spa-dynamic-model-to-component-mapping.md#componentmapping-module).
 1. Anschließend durchläuft der [Container](/help/sites-developing/spa-blueprint.md#container), sobald ihm ein Modell vom [Modellanbieter](/help/sites-developing/spa-blueprint.md#the-model-provider) zur Verfügung gestellt wurde, seinen Modellinhalt ( `:items`).
 
-1. Wenn es eine Seite gibt, erhalten ihre untergeordneten Elemente (`:children`) zuerst eine Komponentenklasse aus der [Komponentenzuordnung](/help/sites-developing/spa-blueprint.md#componentmapping) und instanziieren sie dann.
+1. Wenn eine Seite vorhanden ist, werden die untergeordneten Elemente ( `:children`) erhalten Sie zunächst eine Komponentenklasse aus der [Komponentenzuordnung](/help/sites-developing/spa-blueprint.md#componentmapping) und dann instanziieren.
 
 ## App-Initialisierung {#app-initialization}
 

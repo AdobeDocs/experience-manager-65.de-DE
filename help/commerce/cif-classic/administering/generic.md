@@ -6,10 +6,10 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2929'
-ht-degree: 66%
+source-wordcount: '2907'
+ht-degree: 64%
 
 ---
 
@@ -194,7 +194,7 @@ Für jeden Produkttyp ist eine separate Strukturvorlage erforderlich. Die Strukt
 
    ![Produktkonsole mit geöffneten Verweisen](/help/sites-administering/assets/chlimage_1-88.png)
 
-1. Klicken/tippen Sie auf den Referenztyp (z. B. Produktseiten), um die Liste zu erweitern.
+1. Klicken Sie auf den Referenztyp (z. B. Produktseiten), um die Liste zu erweitern.
 1. Wählen Sie eine spezifische Referenz aus, damit Sie die Optionen anzeigen können:
 
    * Zu Produktseite navigieren
@@ -251,7 +251,7 @@ Sie können mehrere Assets zur Produktkomponente hinzufügen und dann das Asset 
 
    ![Screenshot zum Hinzufügen von Produktdaten](/help/sites-administering/assets/chlimage_1-91.png)
 
-1. Klicken Sie auf **Hinzufügen**. Ein neuer Asset-Platzhalter wird angezeigt.
+1. Auswählen **Hinzufügen**. Ein neuer Asset-Platzhalter wird angezeigt.
 1. Auswählen **Änderung** öffnet ein Dialogfeld, in dem Sie ein Asset auswählen können.
 1. Wählen Sie das Asset aus, das Sie hinzufügen möchten.
 
@@ -297,7 +297,7 @@ Die Auswahl des anzuzeigenden Bildes erfolgt wie folgt:
 1. Navigieren Sie zu Ihrer Produktseite. 
 1. **Bearbeiten** Sie die Produktkomponente.
 1. Geben Sie die **Bildkategorie** die Sie ausgewählt haben ( `cat1` zum Beispiel).
-1. Klicken Sie auf **Fertig**. Die Seite wird aktualisiert und das richtige Asset sollte angezeigt werden.
+1. Auswählen **Fertig**. Die Seite wird aktualisiert und das richtige Asset sollte angezeigt werden.
 
 #### Katalog  {#catalog}
 
@@ -463,13 +463,13 @@ Generieren Sie wie folgt einen Katalog:
    ![Assistent zum Erstellen eines Katalogs](/help/sites-administering/assets/chlimage_1-99.png)
 
 1. Navigieren Sie zum gewünschten Katalog-Blueprint.
-1. Wählen Sie die **Auswählen** und tippen/klicken Sie auf den gewünschten Katalog-Blueprint.
+1. Wählen Sie die **Auswählen** und klicken Sie auf den gewünschten Katalog-Blueprint.
 1. Wählen Sie **Weiter** aus.
 
    ![Assistent für Katalogeigenschaften](/help/sites-administering/assets/chlimage_1-100.png)
 
 1. Geben Sie einen **Titel** und einen **Namen** ein.
-1. Klicken Sie auf die Schaltfläche **Erstellen.** Der Katalog wird erstellt und ein Dialogfeld wird geöffnet.
+1. Wählen Sie die **Erstellen** Schaltfläche. Der Katalog wird erstellt und ein Dialogfeld wird geöffnet.
 
    ![Dialogfeld „Katalog erstellt“](/help/sites-administering/assets/chlimage_1-101.png)
 
@@ -524,7 +524,7 @@ Führen Sie den Rollout für einen Katalog wie folgt durch:
 
    ![Rollout](/help/sites-administering/do-not-localize/chlimage_1-24.png)
 
-1. Legen Sie im Assistenten den Rollout wie gewünscht fest und klicken oder tippen Sie dann auf **Rollout-Änderungen**.
+1. Legen Sie im Assistenten den Rollout nach Bedarf fest und klicken Sie auf **Rollout-Änderungen**.
 1. Ein Dialogfeld wird angezeigt. Auswählen **Fertig** wenn der Prozess abgeschlossen ist.
 
 #### Durchführen des Rollouts für einen Katalog – klassische Benutzeroberfläche {#rolling-out-a-catalog-classic-ui}
@@ -549,7 +549,7 @@ Führen Sie den Rollout für einen Katalog wie folgt durch:
 
    ![Symbol „Blueprints importieren“](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
-1. Wählen Sie im Assistenten die gewünschte Quelle aus und tippen/klicken Sie auf **Weiter**.
+1. Wählen Sie im Assistenten die gewünschte Quelle aus und klicken Sie auf **Nächste**.
 
    ![Blueprint-Assistent](/help/sites-administering/assets/chlimage_1-102.png)
 

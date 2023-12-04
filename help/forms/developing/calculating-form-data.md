@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 81%
+source-wordcount: '1858'
+ht-degree: 79%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 81%
 
 Der Forms-Service kann die Werte berechnen, die ein Benutzer in ein Formular eingibt, und die Ergebnisse anzeigen. Zur Berechnung von Formulardaten müssen Sie zwei Aufgaben ausführen. Erstellen Sie zunächst ein Formularentwurfsskript, das Formulardaten berechnet. Ein Formularentwurf unterstützt drei Arten von Skripten. Ein Skripttyp wird auf dem Client ausgeführt, ein anderer auf dem Server und der dritte sowohl auf dem Server als auch auf dem Client. Der in diesem Thema beschriebene Skripttyp wird auf dem Server ausgeführt. Server-seitige Berechnungen werden für HTML-, PDF- und Formularhandbuchtransformationen (veraltet) unterstützt.
 
-Im Rahmen des Formularentwurfsprozesses können Sie Berechnungen und Skripten verwenden, um ein besseres Benutzererlebnis zu bieten. Berechnungen und Skripte können zu den meisten Formularfeldern und -objekten hinzugefügt werden. Sie müssen ein Formularentwurfsskript erstellen, um Berechnungsvorgänge für Daten durchführen zu können, die ein Benutzer in ein interaktives Formular eingibt.
+Im Rahmen des Formularentwurfsprozesses können Sie Berechnungen und Skripten verwenden, um ein besseres Benutzererlebnis zu bieten. Berechnungen und Skripte können zu den meisten Formularfeldern und -objekten hinzugefügt werden. Erstellen Sie ein Formularentwurfsskript, um Berechnungsvorgänge für Daten durchzuführen, die ein Benutzer in ein interaktives Formular eingibt.
 
 Der Benutzer gibt Werte in das Formular ein und klickt auf die Schaltfläche „Berechnen“, um die Ergebnisse anzuzeigen. Im folgenden Prozess wird ein Beispiel-Programm beschrieben, mit dem ein Benutzer Daten berechnen kann:
 

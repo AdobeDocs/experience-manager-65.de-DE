@@ -8,18 +8,18 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 9554cdb3-b604-4d50-9760-89b9e7a7755f
 exl-id: 9c6c6386-5ffd-4fa6-9aa1-f5b0e31d1046
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+workflow-type: tm+mt
 source-wordcount: '226'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
 # Verfassen einer Seite für Mobilgeräte{#authoring-a-page-for-mobile-devices}
 
-Wenn Sie eine Seite für Mobilgeräte bearbeiten, wird die Seite so angezeigt, dass das Mobilgerät emuliert wird. Beim Bearbeiten der Seite können Sie zwischen mehreren Emulatoren wechseln, um zu sehen, was der Endbenutzer bzw. die Endbenutzerin beim Zugriff auf die Seite sehen.
+Wenn Sie eine Seite für Mobilgeräte bearbeiten, wird die Seite so angezeigt, dass das Mobilgerät emuliert wird. Beim Bearbeiten der Seite können Sie zwischen mehreren Emulatoren wechseln, um zu sehen, was die Endbenutzerinnen und -benutzer beim Zugriff auf die Seite sehen.
 
-Geräte sind entsprechend ihrer Fähigkeit zur Wiedergabe einer Seite in die Kategorien „Feature“, „Smart“ und „Touch“ eingeteilt. Wenn die Endbenutzer bzw. Endbenutzerinnen auf eine mobile Seite zugreifen, erkennt AEM das Gerät und übermittelt die Darstellung, die der Gerätegruppe entspricht.
+Geräte sind entsprechend ihrer Fähigkeit zur Wiedergabe einer Seite in die Kategorien „Feature“, „Smart“ und „Touch“ eingeteilt. Wenn die Endbenutzerinnen und -benutzer auf eine mobile Seite zugreifen, erkennt AEM das Gerät und übermittelt die Darstellung, die der Gerätegruppe entspricht.
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Geräte sind entsprechend ihrer Fähigkeit zur Wiedergabe einer Seite in die Kat
 Gehen Sie wie folgt vor, um eine Seite für Mobilgeräte zu erstellen:
 
 1. Öffnen Sie ausgehend von der globalen Navigation die **Sites-Konsole**.
-1. Öffnen Sie die Seite **We.Retail** > **Vereinigte Staaten** > **Englisch**.
+1. Öffnen Sie die Seite **We.Retail** > **Vereinigte Staaten** > **englisch**.
 
 1. Wechseln Sie in den **Vorschaumodus**.
 1. Wechseln Sie durch Klicken auf das Gerätesymbol am oberen Seitenrand zum gewünschten Emulator.

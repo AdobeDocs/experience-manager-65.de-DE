@@ -9,9 +9,9 @@ docset: aem65
 role: User, Admin
 feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1392'
 ht-degree: 92%
 
 ---
@@ -26,7 +26,7 @@ Diese Regeln können das Hinzufügen von Metadaten, das smarte Zuschneiden von B
 * [Bildprofile](/help/assets/image-profiles.md)
 * [Videoprofile](/help/assets/video-profiles.md)
 
-Sie müssen über Administratorrechte verfügen, um Metadaten-, Bild- oder Videoprofile zu erstellen, zu bearbeiten und zu löschen.
+Sie benötigen Administratorrechte, um Metadaten-, Bild- oder Videoprofile zu erstellen, zu bearbeiten und zu löschen.
 
 Nachdem Sie Ihre Metadaten, Bilder oder Videoprofile erstellt haben, weisen Sie sie einem oder mehreren Ordnern zu, die Sie als Ziel für neu hochgeladene Assets verwenden.
 

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1163'
-ht-degree: 46%
+source-wordcount: '1185'
+ht-degree: 47%
 
 ---
 
@@ -81,7 +81,7 @@ Darüber hinaus müssen Sie möglicherweise auch die Adobe Campaign-Vorlage ausw
 
    >[!NOTE]
    >
-   >Tippen/klicken Sie unbedingt auf **OK** oder **Anwenden** nach dem Hinzufügen des Cloud-Dienstes. Dadurch wird die **Adobe Campaign** -Tab korrekt ausgeführt werden.
+   >Klicken Sie auf **OK** oder **Anwenden** nach dem Hinzufügen des Cloud-Dienstes. Dadurch wird die **Adobe Campaign** -Tab korrekt ausgeführt werden.
 
 1. Möchten Sie anstatt der Standardvorlage **E-Mail** eine bestimmte Bereitstellungsvorlage für E-Mails (aus Adobe Campaign) verwenden, wählen Sie erneut **Seiteneigenschaften** aus. Geben Sie auf der Registerkarte **Adobe Campaign** den internen Namen der E-Mail-Bereitstellungsvorlage in der entsprechenden Adobe Campaign-Instanz ein.
 

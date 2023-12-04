@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2687'
 ht-degree: 81%
 
 ---
@@ -313,7 +313,7 @@ Die folgende Tabelle beschreibt alle verfügbaren VLT-Befehle. Detaillierte Info
 | Befehl | Abgekürzter Befehl | Beschreibung |
 | `export` |  | Exportiert aus einem JCR-Repository (Vault-Dateisystem) in das lokale Dateisystem ohne Kontrolldateien. |
 | `import` |  | Importiert ein lokales Dateisystem in ein JCR-Repository (Vault-Dateisystem). |
-| `checkout` | `co` | Checkt ein Vault-Dateisystem aus. Verwenden Sie dies für ein Anfangs-JCR-Repository für das lokale Dateisystem. (Hinweis:Sie müssen zuerst das Repository in der Unterversion überprüfen.) |
+| `checkout` | `co` | Checkt ein Vault-Dateisystem aus. Verwenden Sie dies für ein Anfangs-JCR-Repository für das lokale Dateisystem. (Hinweis: Sehen Sie sich zunächst das Repository in Subversion an.) |
 | `analyze` |  | Analysiert Pakete. |
 | `status` | `st` | Druckt den Status von Arbeitskopiedateien und Verzeichnissen. |
 | `update` | `up` | Importiert Änderungen aus dem Repository in die Arbeitskopie. |
@@ -506,7 +506,7 @@ info -v|-q|-R <file1> [<file2> ...]
 | `-R (--recursive)` | wird rekursiv ausgeführt |
 | `<file> [<file> ...]` | Datei oder Verzeichnis, für die/das Informationen angezeigt werden sollen |
 
-### Bestätigung {#commit}
+### Bestätigen {#commit}
 
 Sendet Änderungen von Ihrer Arbeitskopie zum Repository.
 

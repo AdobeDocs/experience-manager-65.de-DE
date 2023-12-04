@@ -2,10 +2,10 @@
 title: Asynchrone Aufträge
 description: Adobe Experience Manager optimiert die Leistung durch asynchrone Ausführung einiger ressourcenintensiver Aufgaben.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 94%
+source-wordcount: '791'
+ht-degree: 91%
 
 ---
 
@@ -21,7 +21,7 @@ Zu diesen Vorgängen gehören:
 * Abrufen von Assets, die über dem festgelegten Schwellenwert liegen, aus einer Remote-AEM-Bereitstellung
 * Ausrollen von Live Copies
 
-Sie können den Status asynchroner Aufträge über das Dashboard **[!UICONTROL Status asynchroner Aufträge]** unter **Globale Navigation** > **Tools** > **Vorgänge** > **Aufträge** anzeigen.
+Sie können den Status asynchroner Aufträge im **[!UICONTROL Status asynchroner Aufträge]** Dashboard am **Globale Navigation** > **Instrumente** > **Aktivitäten** > **Aufträge**.
 
 >[!NOTE]
 >

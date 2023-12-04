@@ -8,9 +8,9 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '6911'
+source-wordcount: '6904'
 ht-degree: 97%
 
 ---
@@ -389,7 +389,7 @@ Beachten Sie beim Entwerfen von Tabellen die folgenden Punkte:
    * Kopf- und Fußzeile für zusätzliche Spalte
    * Breitenverhältnis der einzelnen Spalten
 
-Sie können Fragmente in einem Brief verschachteln. Dies bedeutet, dass Sie ein Fragment innerhalb eines Fragments hinzufügen können. Die Correspondence Management-Lösung unterstützt bis zu vier Verschachtelungsebenen innerhalb eines Briefes: **Brief**->**Fragment**->**Fragment**->**Fragment**->**Fragment.**
+Sie können Fragmente in einem Brief verschachteln. Dies bedeutet, dass Sie ein Fragment innerhalb eines Fragments hinzufügen können. Die Correspondence Management-Lösung unterstützt bis zu vier Verschachtelungsebenen in einem Brief: **Brief *>*Fragment *>*Fragment *>*Fragment *>*Fragment.**
 
 Ein detailliertes Beispiel der Verwendung von statischen und dynamischen Tabellen in Layout-Fragmenten finden Sie unter [Beispiel mit Beispieldateien: Verwendung von statischen und dynamischen Tabellen in einem Brief](#examplewithsamplefiles).
 

@@ -2,10 +2,10 @@
 title: Verwenden der GraphiQL-IDE in AEM
 description: Erfahren Sie, wie Sie die GraphiQL IDE in Adobe Experience Manager verwenden.
 exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 92%
+source-wordcount: '783'
+ht-degree: 91%
 
 ---
 
@@ -82,7 +82,7 @@ Sie können eine neue Abfrage sofort ausführen oder eine persistente Abfrage la
 
 In beiden Fällen ist die Abfrage, die im Editor-Bereich angezeigt wird, die Abfrage, die ausgeführt wird, wenn Sie entweder:
 
-* auf das Symbol **Abfrage ausführen** klicken/tippen oder
+* Klicken Sie auf **Ausführen der Abfrage** icon
 * die Tastaturkombination `Control-Enter` verwenden.
 
 ## Abfragevariablen {#query-variables}

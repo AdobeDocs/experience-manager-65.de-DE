@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2065'
-ht-degree: 18%
+source-wordcount: '2017'
+ht-degree: 16%
 
 ---
 
@@ -33,7 +33,7 @@ Der Speicherort des globalen Dokumentenspeichers wird während der AEM Formulari
 
 ### Speicherort des globalen Dokumentenspeichers {#gds-location}
 
-Wenn Sie die Speicherorteinstellung während der Installation leer lassen, wird als Speicherort standardmäßig ein Ordner unter der Installation des Anwendungsservers verwendet. Sie müssen den folgenden Ordner für Ihren Anwendungsserver sichern:
+Wenn Sie die Speicherorteinstellung während der Installation leer lassen, wird als Speicherort standardmäßig ein Ordner unter der Installation des Anwendungsservers verwendet. Sichern Sie den folgenden Ordner für Ihren Anwendungsserver:
 
 * (JBoss) `[appserver root]/server/'server'/svcnative/DocumentStorage`
 * (WebLogic) `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage`
@@ -46,7 +46,7 @@ Wenn Sie den Speicherort des globalen Dokumentenspeichers in einen nicht standar
 
 In einer Clusterumgebung verweist der globale Dokumentenspeicher normalerweise auf einen Ordner, der im Netzwerk freigegeben ist und auf den jeder Clusterknoten Lese-/Schreibzugriff hat.
 
-Der Speicherort des globalen Dokumentenspeichers kann während einer Wiederherstellung geändert werden, wenn der ursprüngliche Speicherort nicht mehr verfügbar ist. (Siehe [Ändern des GDS-Speicherorts während der Wiederherstellung](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).)
+Der Speicherort des globalen Dokumentenspeichers kann während einer Wiederherstellung geändert werden, wenn der ursprüngliche Speicherort nicht mehr verfügbar ist. (Siehe [Speicherort des globalen Dokumentenspeichers während der Wiederherstellung ändern](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).
 
 ### Sicherungsoptionen bei Verwendung der Datenbank für die Dokumentenspeicherung {#backup-options-when-database-is-used-for-document-storage}
 
@@ -132,7 +132,7 @@ Verwenden Sie MySQLAdmin oder ändern Sie die INI-Dateien in Windows, um Ihre My
 
 >[!NOTE]
 >
-Der binäre Standardprotokolliermodus für MySQL ist &quot;Statement&quot;, der nicht mit den von Content Services (nicht mehr unterstützt) verwendeten Tabellen kompatibel ist. Die Verwendung der binären Protokollierung in diesem Standardmodus führt dazu, dass Content Services (nicht mehr unterstützt) fehlschlägt. Wenn Ihr System Content Services (nicht mehr unterstützt) enthält, verwenden Sie den Protokollierungsmodus &quot;Gemischt&quot;. Um die Protokollierung im Modus „Gemischt“ zu aktivieren, fügen Sie der Datei „my.ini“ folgende Argumente hinzu:  `binlog_format=mixed log-bin=logname`
+Der binäre Standardprotokolliermodus für MySQL ist &quot;Statement&quot;, der nicht mit den von Content Services (nicht mehr unterstützt) verwendeten Tabellen kompatibel ist. Die Verwendung der binären Protokollierung in diesem Standardmodus führt dazu, dass Content Services (nicht mehr unterstützt) fehlschlägt. Wenn Ihr System Content Services (nicht mehr unterstützt) enthält, verwenden Sie den Protokollierungsmodus &quot;Gemischt&quot;. Um die Protokollierung &quot;Gemischt&quot;zu aktivieren, fügen Sie das folgende Argument zur Datei &quot;my.ini&quot;hinzu: `binlog_format=mixed log-bin=logname`
 
 Sie können das Dienstprogramm mysqldump verwenden, um die vollständige Datenbanksicherung abzurufen. Vollständige Sicherungen sind erforderlich, aber sie sind nicht immer praktisch. Sie erzeugen große Backup-Dateien und benötigen Zeit zum Generieren. Um eine inkrementelle Sicherung durchzuführen, stellen Sie sicher, dass Sie den Server mit der Option - `log-bin` starten, wie im vorherigen Abschnitt beschrieben. Bei jedem Neustart des MySQL-Servers wird das Schreiben in das aktuelle Binärprotokoll beendet und ein neues erstellt, das ab dann als aktuelles Binärprotokoll gilt. Über den Befehl `FLUSH LOGS SQL` können Sie diesen Wechsel manuell erzwingen. Nach der ersten vollständigen Sicherung erfolgen nachfolgende inkrementelle Sicherungen mithilfe von „mysqladmin“ und dem Befehl `flush-logs`, der die nächste Protokolldatei generiert.
 

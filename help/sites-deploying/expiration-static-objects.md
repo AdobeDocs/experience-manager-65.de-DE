@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '416'
 ht-degree: 23%
 
 ---
@@ -23,7 +23,7 @@ Dies hat folgende Auswirkungen:
 * Lädt Anforderungen aus der Serverinfrastruktur ab.
 * Erhöht die Leistung beim Laden von Seiten, da der Browser Objekte im Browser-Cache zwischenspeichert.
 
-Die Ablaufdaten werden durch den HTTP-Standard bezüglich des &quot;Ablaufs&quot;von Dateien angegeben (siehe beispielsweise Kapitel 14.21 von [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Hypertext Transfer Protocol - HTTP 1.1&quot;). Dieser Standard greift auf den Header zurück, um Clients das Speichern von Objekten im Cache zu erlauben, bis die Objekte als alt eingestuft werden; diese Objekte werden für den angegebenen Zeitraum im Cache gespeichert, ohne dass der Ursprungsserver einer Statusprüfung unterzogen wird.
+Die Ablaufdaten werden durch den HTTP-Standard in Bezug auf den &quot;Ablauf&quot;von Dateien angegeben (siehe beispielsweise Kapitel 14.21 von [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Hypertext Transfer Protocol - HTTP 1.1&quot;). Dieser Standard greift auf den Header zurück, um Clients das Speichern von Objekten im Cache zu erlauben, bis die Objekte als alt eingestuft werden; diese Objekte werden für den angegebenen Zeitraum im Cache gespeichert, ohne dass der Ursprungsserver einer Statusprüfung unterzogen wird.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Alle Dateien, die nicht dynamisch sind und sich im Laufe der Zeit nicht ändern,
 
 >[!CAUTION]
 >
->Achten Sie bei der Definition des Zeitraums, in dem ein Objekt als aktuell gilt. Da gibt es *keine Überprüfung bis zum Ablauf des angegebenen Zeitraums*, kann der Client schließlich alte Inhalte aus dem Cache präsentieren.
+>Seien Sie vorsichtig, wenn Sie den Zeitraum definieren, in dem ein Objekt als aktuell betrachtet wird. Da gibt es *keine Überprüfung bis zum Ablauf des angegebenen Zeitraums*, kann der Client schließlich alte Inhalte aus dem Cache präsentieren.
 
 1. **Für eine Autoreninstanz:**
 

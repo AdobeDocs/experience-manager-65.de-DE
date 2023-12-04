@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 76%
+source-wordcount: '821'
+ht-degree: 73%
 
 ---
 
@@ -135,7 +135,7 @@ SAML-Zusicherungen werden signiert und können optional verschlüsselt werden. D
 Sie können einen Logger einrichten, um Probleme zu beheben, die sich aus der falschen Konfiguration von SAML ergeben könnten. Gehen Sie dazu wie folgt vor:
 
 1. Wechseln Sie zur Web-Konsole unter *http://localhost:4502/system/console/configMgr*.
-1. Suchen Sie nach dem Eintrag **Apache Sling Logging-Logger-Konfiguration** und klicken Sie darauf.
+1. Suchen Sie nach und klicken Sie auf den Eintrag namens **Apache Sling Logging Logger-Konfiguration**
 1. Erstellen Sie einen Logger mit folgender Konfiguration:
 
    * **Protokollebene:** Debuggen

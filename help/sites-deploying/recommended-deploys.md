@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1778'
+source-wordcount: '1759'
 ht-degree: 52%
 
 ---
@@ -177,7 +177,7 @@ Falls Sie eine MongoMK-Bereitstellung für AEM in Betracht ziehen, liegt eine Re
 1. MongoDB-Expertise muss im Partner- oder Kundenteam vorhanden sein, um darauf vertrauen zu können, dass eine vorhandene oder neue MongoDB-Umgebung erhalten und gepflegt werden kann.
 1. Sie können die kommerzielle oder Open-Source-Version von MongoDB bereitstellen (AEM unterstützt beide), müssen jedoch einen MongoDB-Wartungs- und Supportvertrag direkt bei MongoDB Inc erwerben.
 1. AEM- und MongoDB-Architekturen und -Infrastrukturen sollten von einem Adobe-AEM-Architekten klar definiert und validiert werden.
-1. Sie müssen das Supportmodell für AEM Bereitstellungen überprüfen, die MongoDB enthalten.
+1. Überprüfen Sie das Supportmodell für AEM Bereitstellungen, die MongoDB enthalten.
 
 **Dringende Empfehlungen für MongoDB-Bereitstellungen:**
 

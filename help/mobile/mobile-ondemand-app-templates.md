@@ -1,17 +1,13 @@
 ---
 title: Erstellen und Hinzufügen von Vorlagen und Komponenten
-seo-title: Creating and Adding Templates and Components
 description: Auf dieser Seite erfahren Sie mehr über das Erstellen und Hinzufügen von Vorlagen und Komponenten zu Ihrer App. Die Seite verwendet die Geometrixx Unlimited App als App, die eine Beispielanwendungsvorlage und Seitenvorlagen enthält.
-seo-description: Follow this page to learn about creating and adding templates and components to your app. The page uses Geometrixx Unlimited App as the app that contains a sample app template and page templates.
-uuid: 3a93017c-8094-413f-a01c-9b72025a2b20
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1151'
 ht-degree: 1%
 
 ---
@@ -45,7 +41,7 @@ Wenn Sie eine App basierend auf der Vorlage einer anderen App erstellen, erhalte
 Schritte zum Erstellen einer App basierend auf einer App-Vorlage:
 
 1. Navigieren Sie zum AEM Mobile-App-Katalog: *&lt;server-url>/aem/apps.html/content/mobileapps*
-1. Auswählen **Erstellen** —> **App** wie unten gezeigt
+1. Auswählen **Erstellen** -> **App** wie unten gezeigt
 
 Nachdem Sie eine App mit dieser Vorlage erstellt haben, können Sie Ihrer App Artikel, Banner und Sammlungen hinzufügen. Informationen zum erneuten Besuch der Erstellung von Artikeln, Bannern und Sammlungen finden Sie unter [Content Management-Aktionen](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
@@ -90,7 +86,7 @@ Der Artikel &quot;Unlimited&quot;ist eine Beispielvorlage, die ein typisches AEM
 
 Nach der Erstellung kann ein Autor den Inhalt eines Artikels bearbeiten, indem er Komponenten wie Text und Bilder hinzufügt. Artikel sind eine Erweiterung AEM Seitenvorlagen.
 
-Wählen Sie einen Artikel aus, den Sie bearbeiten möchten, und klicken Sie auf **Bearbeiten** , um dem Artikel Komponenten hinzuzufügen.
+Wählen Sie einen zu bearbeitenden Artikel aus und klicken Sie auf **Bearbeiten** , um dem Artikel Komponenten hinzuzufügen.
 
 ![chlimage_1-72](assets/chlimage_1-72.png) ![chlimage_1-73](assets/chlimage_1-73.png)
 

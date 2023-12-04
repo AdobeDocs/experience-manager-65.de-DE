@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 12%
+source-wordcount: '1515'
+ht-degree: 10%
 
 ---
 
@@ -37,7 +37,7 @@ Wenn die Datenbank, wie im vorherigen Abschnitt beschrieben, im Protokollierungs
 
 ## Sichern Sie die Ordner &quot;Datenbank&quot;, &quot;Ordner des globalen Dokumentenspeichers&quot;, &quot;AEM&quot;und &quot;Stammordner für Inhalte&quot;. {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
 
-Sie müssen AEM Forms entweder in den abgesicherten Sicherungsmodus (Snapshot-Modus) oder in den kontinuierlichen Sicherungsmodus (kontinuierliche Sicherung) versetzen. Stellen Sie Folgendes sicher, bevor Sie AEM Forms auf einen der Sicherungsmodi einstellen:
+Versetzen Sie AEM Forms entweder in den abgesicherten Sicherungsmodus (Snapshot-Modus) oder in den kontinuierlichen Sicherungsmodus. Stellen Sie Folgendes sicher, bevor Sie AEM Forms auf einen der Sicherungsmodi einstellen:
 
 * Überprüfen Sie die Systemversion und zeichnen Sie die Patches oder Updates auf, die seit der letzten vollständigen Systemabbildsicherung angewendet wurden.
 * Wenn Sie Sicherungen im Rollierenden oder Snapshot-Modus verwenden, stellen Sie sicher, dass Ihre Datenbank mit den richtigen Protokolleinstellungen für Hot-Backups der Datenbank konfiguriert ist. (Siehe [AEM Forms-Datenbank](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).
@@ -46,7 +46,7 @@ Beachten Sie zusätzlich die folgenden Richtlinien für den Sicherungs-/Wiederhe
 
 * Sichern Sie den Ordner des globalen Dokumentenspeichers mithilfe eines verfügbaren Betriebssystems oder eines Backup-Dienstprogramms eines Drittanbieters. (Siehe [GDS-Speicherort](/help/forms/using/admin-help/files-back-recover.md#gds-location).
 * (Optional) Sichern Sie den Stammordner für Inhalte mithilfe eines verfügbaren Betriebssystems oder eines Sicherungs- und Dienstprogramms eines Drittanbieters. (Siehe [Speicherort des Stammordners für Inhalte (eigenständige Umgebung)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) oder [Speicherort des Stammordners für Inhalte (Clusterumgebung)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)
-* Sichern Sie  Autor- und Veröffentlichungsinstanzen (Sicherungskopie des CRX-Repository).
+* Sichern Sie Autoren- und Veröffentlichungsinstanzen ( crx -repository backup).
 
   Um die Correspondence Management Solution-Umgebung zu sichern, führen Sie die Schritte für die Autoren- und Veröffentlichungsinstanzen aus, wie unter [Sichern und Wiederherstellen](/help/sites-administering/backup-and-restore.md).
 

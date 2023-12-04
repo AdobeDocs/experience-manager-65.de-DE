@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: 5fa385a7-f030-4c0c-8938-0991d02ef361
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1682'
 ht-degree: 82%
 
 ---
@@ -65,7 +65,7 @@ Um ein HTML-Formular zu rendern, das eine benutzerdefinierte CSS-Datei verwendet
 
 **Rendern eines HTML-Formulars**
 
-Um ein HTML-Formular zu rendern, müssen Sie einen Formularentwurf angeben, der in Designer erstellt und als XDP-Datei gespeichert wurde. Sie müssen auch einen HTML-Transformationstyp auswählen. Sie können beispielsweise den HTML-Transformationstyp angeben, der dynamische HTML für Internet Explorer 5.0 oder höher rendert.
+Um ein HTML-Formular zu rendern, geben Sie ein Formular-Design an, das in Designer erstellt und als XDP-Datei gespeichert wurde. Wählen Sie einen HTML-Transformationstyp aus. Sie können beispielsweise den HTML-Transformationstyp angeben, der dynamische HTML für Internet Explorer 5.0 oder höher rendert.
 
 Für das Rendern eines HTML-Formulars sind auch Werte erforderlich, z. B. URI-Werte, die zum Rendern anderer Formulartypen erforderlich sind.
 
@@ -112,7 +112,7 @@ Rendern Sie ein HTML-Formular, das eine benutzerdefinierte CSS-Datei verwendet, 
    Rufen Sie die `FormsServiceClient` -Objekt `(Deprecated) (Deprecated) renderHTMLForm` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Ein `TransformTo`-Auflistungswert, der den Präferenztyp für HTML angibt. Um beispielsweise ein HTML-Formular zu rendern, das mit dynamischem HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
+   * Ein `TransformTo`-Auflistungswert, der den HTML-Voreinstellungstyp angibt. Um beispielsweise ein HTML-Formular zu rendern, das mit Dynamic HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
    * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document`-Objekt.
    * Das `HTMLRenderSpec`-Objekt, das HTML-Laufzeitoptionen speichert.
    * Ein Zeichenfolgenwert, der den `HTTP_USER_AGENT`-Kopfzeilenwert angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
@@ -124,7 +124,7 @@ Rendern Sie ein HTML-Formular, das eine benutzerdefinierte CSS-Datei verwendet, 
 1. Schreiben des Formulardaten-Streams in den Client-Webbrowser
 
    * Erstellen Sie eine `com.adobe.idp.Document` -Objekt durch Aufrufen der `FormsResult` -Objekt `getOutputContent` -Methode.
-   * Ermitteln Sie den Content-Typ des `com.adobe.idp.Document`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
+   * Ermitteln Sie den Inhaltstyp des `com.adobe.idp.Document`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
    * Legen Sie die `javax.servlet.http.HttpServletResponse` Inhaltstyp des Objekts durch Aufrufen seiner `setContentType` -Methode verwenden und den Inhaltstyp der `com.adobe.idp.Document` -Objekt.
    * Erstellen Sie eine `javax.servlet.ServletOutputStream` -Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser durch Aufrufen der `javax.servlet.h\ttp.HttpServletResponse` -Objekt `getOutputStream` -Methode.
    * Erstellen Sie eine `java.io.InputStream` -Objekt durch Aufrufen der `com.adobe.idp.Document` -Objekt `getInputStream` -Methode.
@@ -164,7 +164,7 @@ Rendern Sie ein HTML-Formular, das eine benutzerdefinierte CSS-Datei verwendet, 
    Rufen Sie die `FormsService` -Objekt `(Deprecated) renderHTMLForm` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Ein `TransformTo`-Auflistungswert, der den Präferenztyp für HTML angibt. Um beispielsweise ein HTML-Formular zu rendern, das mit dynamischem HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
+   * Ein `TransformTo`-Auflistungswert, der den HTML-Voreinstellungstyp angibt. Um beispielsweise ein HTML-Formular zu rendern, das mit Dynamic HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
    * Ein `BLOB`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie `null`. (Siehe [Vorausfüllen von Formularen mit fließfähigen Layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
    * Das `HTMLRenderSpec`-Objekt, das HTML-Laufzeitoptionen speichert.
    * Ein Zeichenfolgenwert, der den `HTTP_USER_AGENT`-Kopfzeilenwert angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Wenn Sie diesen Wert nicht festlegen möchten, können Sie eine leere Zeichenfolge übergeben.
@@ -183,7 +183,7 @@ Rendern Sie ein HTML-Formular, das eine benutzerdefinierte CSS-Datei verwendet, 
 
    * Erstellen Sie eine `FormResult` -Objekt durch Abrufen des Werts der `com.adobe.idp.services.holders.FormsResultHolder` -Objekt `value` Datenelement.
    * Erstellen Sie eine `BLOB` -Objekt, das Formulardaten enthält, durch Aufrufen der `FormsResult` -Objekt `getOutputContent` -Methode.
-   * Ermitteln Sie den Content-Typ des `BLOB`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
+   * Ermitteln Sie den Inhaltstyp des `BLOB`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
    * Legen Sie die `javax.servlet.http.HttpServletResponse` Inhaltstyp des Objekts durch Aufrufen seiner `setContentType` -Methode verwenden und den Inhaltstyp der `BLOB` -Objekt.
    * Erstellen Sie eine `javax.servlet.ServletOutputStream` -Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser durch Aufrufen der `javax.servlet.http.HttpServletResponse` -Objekt `getOutputStream` -Methode.
    * Erstellen Sie ein Byte-Array und füllen Sie es durch Aufrufen der `BLOB` -Objekt `getBinaryData` -Methode. Mit dieser Aufgabe wird dem Byte-Array der Inhalt des `FormsResult`-Objekts zugewiesen.

@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 82%
+source-wordcount: '220'
+ht-degree: 71%
 
 ---
 
@@ -41,7 +41,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 
 >[!NOTE]
 >
->&amp;ast; Sobald der Benutzer mit der Seite im Vorschaumodus interagiert, ist der Tastaturbefehl `Ctrl-Shift-m` nicht mehr verfügbar. Der Benutzer muss auf die obere Editor-Leiste klicken oder wieder in den Bearbeitungsmodus wechseln, damit der Tastaturbefehl erneut verfügbar wird.
+>&amp;ast; Sobald der Benutzer mit der Seite im Vorschaumodus interagiert, ist der Tastaturbefehl `Ctrl-Shift-m` nicht mehr verfügbar. Der Benutzer muss auf die obere Editor-Leiste klicken oder in den Bearbeitungsmodus zurückkehren, damit der Tastaturbefehl erneut verfügbar wird.
 
 Desktop-Benutzern stehen bei der Verwendung von [Konsolen](/help/sites-authoring/keyboard-shortcuts.md) ebenfalls verschiedene Tastaturbefehle zur Verfügung.
 

@@ -2,10 +2,10 @@
 title: Ihr Posteingang zum Verwalten von Aufgaben
 description: Verwalten Ihrer Aufgaben mit dem Posteingang in Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 94%
+source-wordcount: '1155'
+ht-degree: 92%
 
 ---
 
@@ -65,7 +65,7 @@ AEM wird mit vier vorkonfigurierten und geladenen Aufgaben ausgeliefert, die sta
 
 So öffnen Sie den Benachrichtigungs-Posteingang in AEM:
 
-1. Klicken/tippen Sie auf die Anzeige in der Symbolleiste.
+1. Klicken Sie auf die Anzeige in der Symbolleiste.
 
 1. Wählen Sie **Alle anzeigen** aus. Die **AEM Posteingang** geöffnet. Im Posteingang werden Elemente aus den Bereichen Workflows, Projekte und Aufgaben angezeigt.
 1. Die Standardansicht ist die [Listenansicht](#inbox-list-view), Sie können aber auch zur [Kalenderansicht ](#inbox-calendar-view)wechseln. Dies erfolgt mit der Ansichtsauswahl (Symbolleiste oben rechts).
@@ -152,7 +152,7 @@ Die Option „Admin-Kontrolle“ ist nur für die Mitglieder der Gruppen `admini
 
 * **Benutzernavigation**
    * **Navigationsoptionen ausblenden:** Wählen Sie diese Option aus, um die Navigationsoptionen in der Kopfzeile auszublenden. Zu den Navigationsoptionen gehören Links zu anderen Lösungen, ein Hilfe-Link und die Bearbeitungsoptionen, die beim Tippen auf das Logo oder den Text „Adobe Experience Manager“ verfügbar sind.
-* **Speichern:** Tippen/klicken Sie auf diese Option, um die Einstellungen zu speichern.
+* **Speichern:** Klicken Sie auf diese Option, um die Einstellungen zu speichern.
 
 ## Anwenden von Aktionen auf ein Element {#taking-action-on-an-item}
 
@@ -167,7 +167,7 @@ Die Option „Admin-Kontrolle“ ist nur für die Mitglieder der Gruppen `admini
 
    Die entsprechend dem ausgewählten Element verfügbaren Aktionen können Folgendes umfassen:
 
-   * **Abschließen** einer Aktion, z. B. einer Aufgabe oder eines Workflow-Elements
+   * **Fertig** -Aktion, z. B. eine Aufgabe oder ein Workflow-Element.
    * **Neu zuweisen**/**Delegieren** eines Elements.
    * **Öffnen** eines Elements. Je nach Elementtyp bewirkt diese Aktion Folgendes:
 

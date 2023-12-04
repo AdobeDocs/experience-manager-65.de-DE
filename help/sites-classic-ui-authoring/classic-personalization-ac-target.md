@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: e56986b2-397e-4802-992b-05a9ea7b2e36
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 82%
+source-wordcount: '805'
+ht-degree: 76%
 
 ---
 
@@ -70,7 +70,7 @@ Sie können den Newsletter mit zielgerichteten Inhalten in der Touch-optimierten
 
 So erstellen Sie einen Newsletter mit zielgerichtetem Inhalt:
 
-1. Erstellen Sie einen Newsletter mit zielgerichtetem Inhalt: Klicken oder tippen Sie unterhalb der E-Mail-Kampagnen von Geometrixx Outdoors auf **Erstellen** > **Seite** und wählen eine der Adobe Campaign-E-Mail-Vorlagen aus.
+1. Erstellen Sie einen Newsletter mit zielgerichteten Inhalten: Klicken Sie unter &quot;E-Mail-Kampagnen in Geometrixx Outdoors&quot;auf **Erstellen** > **Seite** und wählen Sie eine der Adobe Campaign Mail-Vorlagen aus.
 
    >[!NOTE]
    >
@@ -84,7 +84,7 @@ So erstellen Sie einen Newsletter mit zielgerichtetem Inhalt:
 
    >[!NOTE]
    >
-   >Standardmäßig werden die in AEM enthaltenen E-Mail-Beispiele als Zielgruppenbestimmungs-Engine für Adobe Campaign verwendet. Bei benutzerdefinierten Newslettern müssen Sie möglicherweise Adobe Campaign als Zielgruppenbestimmungs-Engine auswählen. Tippen oder klicken Sie bei der Zielgruppenbestimmung in der Symbolleiste auf „+“, geben Sie einen Titel für die neue Aktivität ein und wählen Sie **Adobe Campaign** als Engine für die Zielgruppenbestimmung.
+   >Standardmäßig werden die in AEM enthaltenen E-Mail-Beispiele als Zielgruppenbestimmungs-Engine für Adobe Campaign verwendet. Bei benutzerdefinierten Newslettern müssen Sie möglicherweise Adobe Campaign als Zielgruppenbestimmungs-Engine auswählen. Klicken Sie beim Targeting in der Symbolleiste auf +, geben Sie einen Titel für die neue Aktivität ein und wählen Sie **Adobe Campaign** als Targeting-Engine.
 
 1. Klicken Sie auf **Standard** und dann auf die Komponente „Text und Personalisierung“, die Sie hinzugefügt haben, und Sie sehen eine Zielscheibe mit darin steckendem Pfeil. Klicken Sie auf das Symbol, um diese Komponente als Ziel festzulegen.
 

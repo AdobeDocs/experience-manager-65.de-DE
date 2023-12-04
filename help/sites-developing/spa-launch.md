@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: spa
 docset: aem65
 exl-id: ca4c3161-90a8-4c02-8554-125eac62dff7
-source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 50%
+source-wordcount: '183'
+ht-degree: 56%
 
 ---
 
@@ -24,10 +24,10 @@ Adobe Experience Platform Launch ist die empfohlene Methode zur Implementierung 
 
 ## Tutorial {#tutorial}
 
-Informationen zur Integration Ihrer SPA in Adobe Experience Platform Launch finden Sie unter [diesem Knowledgebase-Artikel und -Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=de), der Sie durch die Launch-Einrichtung führt und das Experience Cloud in implementiert, das mit Angular oder React erstellt wurde.
+Informationen zur Integration Ihrer SPA in Adobe Experience Platform Launch finden Sie unter [diesem Knowledgebase-Artikel und -Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=de), der Sie durch die Einrichtung von Launch führt und die mit Angular oder React erstellte Experience Cloud in implementiert.
 
 >[!NOTE]
 >
->Die referenzierte KB wurde erstellt, um die Adobe Experience Platform Launch-Integration in SPA zu aktivieren, die nicht den Adobe Experience Manager SPA Editor verwenden. Die Methoden sollten eine Adobe Experience Platform Launch-Integration auch mit SPAs ermöglichen, die für die Verwendung des SPA-Editors erstellt wurden.
+>Die referenzierte KB wurde erstellt, um die Adobe Experience Platform Launch-Integration in SPA zu aktivieren, die nicht den Adobe Experience Manager SPA Editor verwenden. Diese Methoden sollten auch eine Adobe Experience Platform Launch-Integration mit SPAs ermöglichen, die für die Verwendung des SPA-Editors erstellt wurden.
 >
->Die Verwendung von Redux zusammen mit den JavaScript-SPA-Bibliotheken wurde noch nicht vollständig untersucht. Unterstützung für Redux ist in einer zukünftigen Version des SPA-Editors geplant.
+>Der Einsatz von Redux zusammen mit den JavaScript-SPA-Bibliotheken wurde noch nicht vollständig untersucht. Die Unterstützung für Redux ist in einer zukünftigen Version des SPA-Editors geplant.

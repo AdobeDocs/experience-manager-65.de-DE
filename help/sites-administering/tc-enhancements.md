@@ -5,10 +5,10 @@ topic-tags: site-features
 content-type: reference
 feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 80%
+source-wordcount: '669'
+ht-degree: 73%
 
 ---
 
@@ -20,7 +20,7 @@ Auf dieser Seite werden schrittweise Verbesserungen und Verbesserungen AEM Über
 
 Es wurden Optionen zur Verbesserung der Produktivität bei der Arbeit mit Übersetzungsprojekten hinzugefügt, z. B. zum automatischen Hervorheben und Löschen von Übersetzungsstarts und zum Planen der wiederholten Ausführung eines Übersetzungsprojekts.
 
-1. Klicken oder tippen Sie in Ihrem Übersetzungsprojekt unten auf der Kachel **Zusammenfassung der Übersetzung** auf die Auslassungspunkte.
+1. Klicken Sie in Ihrem Übersetzungsprojekt auf das Auslassungszeichen am unteren Rand des **Übersetzungszusammenfassung** Kachel.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
@@ -40,7 +40,7 @@ Es wurden Optionen zur Verbesserung der Produktivität bei der Arbeit mit Übers
 
 Es ist möglich, mehrere Zielsprachen in einem Übersetzungsprojekt zu konfigurieren, um die Anzahl der insgesamt erstellten Übersetzungsprojekte zu reduzieren.
 
-1. Klicken oder tippen Sie in Ihrem Übersetzungsprojekt unten auf der Kachel **Zusammenfassung der Übersetzung** auf die Punkte.
+1. Klicken Sie in Ihrem Übersetzungsprojekt auf die Punkte am unteren Rand des **Übersetzungszusammenfassung** Kachel.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
@@ -110,11 +110,11 @@ Eine Eigenschaft kann jetzt in der Sites-Listenansicht ausgewählt werden, die a
 
    ![screen_shot_2018-04-23at130646](assets/screen_shot_2018-04-23at130646.jpg)
 
-1. Klicken oder tippen Sie auf **Anzeigeeinstellungen**.
+1. Klicks **Anzeigeeinstellungen**.
 
    ![screen_shot_2018-04-23at130844](assets/screen_shot_2018-04-23at130844.jpg)
 
-1. Aktivieren Sie unter **Übersetzung** das Kontrollkästchen **Übersetzt** und tippen bzw. klicken Sie auf **Aktualisieren**.
+1. Überprüfen **Übersetzt** Kontrollkästchen unter **Übersetzung** und klicken **Aktualisieren**.
 
    ![screen_shot_2018-04-23at130955](assets/screen_shot_2018-04-23at130955.jpg)
 

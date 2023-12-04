@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 61%
+source-wordcount: '543'
+ht-degree: 67%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 61%
 
 Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwickler möchten Sites mit SPA Frameworks erstellen können und Autoren möchten Inhalte in Adobe Experience Manager (AEM) nahtlos für eine Site bearbeiten, die mit SPA Frameworks erstellt wurde.
 
-Die SPA Authoring-Funktion bietet eine umfassende Lösung zur Unterstützung von SPA in AEM. In diesem Artikel wird ein Beispiel dafür vorgestellt, wie eine einfache, vorhandene React-Komponente für die Verwendung mit dem AEM-SPA-Editor angepasst werden kann.
+Die SPA-Autorenfunktion bietet eine umfassende Lösung zur Unterstützung von SPAs in AEM. In diesem Artikel wird ein Beispiel dafür vorgestellt, wie eine einfache, vorhandene React-Komponente für die Verwendung mit dem AEM-SPA-Editor angepasst werden kann.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Sie sollten mit der [Struktur einer SPA für AEM](/help/sites-developing/spa-get
 >[!CAUTION]
 >In diesem Dokument dient die [We.Retail Journal-App](https://github.com/adobe/aem-sample-we-retail-journal) ausschließlich zu Demonstrationszwecken. Verwenden Sie es nicht für Projektarbeiten.
 >
->Jedes AEM Projekt sollte [AEM Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de), SPA Projekte mit React oder Angular unterstützt und das SPA SDK verwendet.
+>Für jedes AEM-Projekt sollte der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) genutzt werden, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA-SDK verwendet.
 
 ## Die Wetterkomponente {#the-weather-component}
 

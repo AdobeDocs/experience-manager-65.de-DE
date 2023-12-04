@@ -3,10 +3,10 @@ title: Konfigurieren Sie den Rich-Text-Editor, um Inhalte in Adobe Experience Ma
 description: Erfahren Sie, wie Sie den Rich-Text-Editor von Adobe Experience Manager konfigurieren, um Inhalte in Adobe Experience Manager zu erstellen.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2921'
-ht-degree: 98%
+source-wordcount: '2883'
+ht-degree: 97%
 
 ---
 
@@ -56,13 +56,13 @@ Autoren können Textinhalte in Experience Manager mithilfe der verschiedenen Kom
 
 ### Inline-Bearbeitung {#inline-editing}
 
-Wenn er geöffnet wurde (durch langsames Doppelklicken), kann der Inhalt innerhalb der Seite bearbeitet werden. Dazu steht Ihnen eine kompakte Symbolleiste mit sehr grundlegenden Optionen zur Verfügung.
+Beim Öffnen (durch langsames Doppelklicken) kann der Inhalt innerhalb der Seite bearbeitet werden. Dazu steht Ihnen eine kompakte Symbolleiste mit sehr grundlegenden Optionen zur Verfügung.
 
 ![Inline-Bearbeitung mit einfacher Symbolleiste in der Touch-optimierten Benutzeroberfläche](assets/chlimage_1-36.png)
 
 *Abbildung: Inline-Bearbeitung mit einfacher Symbolleiste in der Touch-optimierten Benutzeroberfläche*
 
-In der klassischen Benutzeroberfläche ermöglicht ein langsamer Doppelklick auf die Komponente die Inline-Bearbeitung, und ein orangefarbener Umriss hebt den Inhalt hervor. Wenn die Inhaltssuche geöffnet ist, wird oben im Fenster eine Symbolleiste mit den verfügbaren RTE-Formatierungsoptionen angezeigt. Ist der Content Finder nicht geöffnet, werden die Formatierungsoptionen nicht angezeigt und Sie können nur grundlegende Textbearbeitungen vornehmen.
+In der klassischen Benutzeroberfläche ermöglicht ein langsamer Doppelklick auf die Komponente die Inline-Bearbeitung und ein orangefarbener Entwurf hebt den Inhalt hervor. Wenn die Inhaltssuche geöffnet ist, wird oben im Fenster eine Symbolleiste mit den verfügbaren RTE-Formatierungsoptionen angezeigt. Ist der Content Finder nicht geöffnet, werden die Formatierungsoptionen nicht angezeigt und Sie können nur grundlegende Textbearbeitungen vornehmen.
 
 ### Bearbeitung im Vollbildmodus {#full-screen-editing}
 

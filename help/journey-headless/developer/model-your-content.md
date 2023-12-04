@@ -2,9 +2,9 @@
 title: Erfahren Sie, wie Sie Ihre Inhalte modellieren
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie Ihre Inhalte für die AEM Headless-Bereitstellung mithilfe der Inhaltsmodellierung mit Inhaltsfragmentmodellen und Inhaltsfragmenten modellieren.
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1810'
+source-wordcount: '1795'
 ht-degree: 68%
 
 ---
@@ -158,7 +158,7 @@ Inhaltsfragmentmodelle bieten verschiedene Mechanismen, mit denen Sie die Strukt
 Ein Inhaltsfragmentmodell beschreibt eine Entität.
 
 >[!NOTE]
->Sie müssen die Funktion für Inhaltsfragmente im Konfigurationsbrowser aktivieren, damit Sie Modelle erstellen können.
+>Aktivieren Sie die Funktion &quot;Inhaltsfragment&quot;im Konfigurationsbrowser, damit Sie Modelle erstellen können.
 
 >[!TIP]
 >

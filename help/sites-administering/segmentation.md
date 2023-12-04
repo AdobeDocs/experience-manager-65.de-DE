@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1772'
-ht-degree: 77%
+source-wordcount: '1745'
+ht-degree: 68%
 
 ---
 
@@ -52,7 +52,7 @@ Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufge
 
 >[!CAUTION]
 >
->Der Segmenteditor prüft nicht auf Zirkelbezüge. Beispiel: Segment A verweist auf ein anderes Segment B, das wiederum auf Segment A verweist. Sie müssen sicherstellen, dass Ihre Segmente keine zirkulären Verweise enthalten.
+>Der Segmenteditor prüft nicht auf Zirkelbezüge. Beispiel: Segment A verweist auf ein anderes Segment B, das wiederum auf Segment A verweist. Stellen Sie sicher, dass Ihre Segmente keine zirkulären Verweise enthalten.
 
 ### Container {#containers}
 
@@ -61,7 +61,7 @@ Die folgenden Container sind standardmäßig verfügbar und ermöglichen es Ihne
 <table>
  <tbody>
   <tr>
-   <td>UND-Container<br /> </td>
+   <td>Container UND<br /> </td>
    <td>Der boolesche UND-Operator<br /> </td>
   </tr>
   <tr>
@@ -78,20 +78,20 @@ Die folgenden Segmentvergleiche sind standardmäßig verfügbar, um Segmenteigen
 <table>
  <tbody>
   <tr>
-   <td>Eigenschaft-Wert<br /> </td>
+   <td>property-value<br /> </td>
    <td>Vergleicht eine Eigenschaft eines Geschäfts mit einem definierten Wert<br /> </td>
   </tr>
   <tr>
    <td>Eigenschaft-Eigenschaft</td>
-   <td>Vergleicht eine Eigenschaft eines Geschäfts mit einer anderen Eigenschaft<br /> </td>
+   <td>Vergleicht eine Eigenschaft eines Stores mit einer anderen Eigenschaft<br /> </td>
   </tr>
   <tr>
    <td>Eigenschaft-Segment-Referenz</td>
-   <td>Vergleicht eine Eigenschaft eines Geschäfts mit einem anderen referenzierten Segment<br /> </td>
+   <td>Vergleicht eine Eigenschaft eines Stores mit einem anderen referenzierten Segment<br /> </td>
   </tr>
   <tr>
    <td>Eigenschaft-Skript-Referenz</td>
-   <td>Vergleicht eine Eigenschaft eines Geschäfts mit den Ergebnissen eines Skripts<br /> </td>
+   <td>Vergleicht eine Eigenschaft eines Stores mit den Ergebnissen eines Skripts<br /> </td>
   </tr>
   <tr>
    <td>Segment-Referenz-Skript-Referenz</td>
@@ -133,11 +133,11 @@ Festlegen eines neuen Segments
 
 1. Nachdem Sie [auf die Segmente zugegriffen haben](/help/sites-administering/segmentation.md#accessing-segments), [navigieren Sie zum Ordner](#organizing-segments), in dem Sie das Segment erstellen möchten.
 
-1. Klicken oder tippen Sie auf die Schaltfläche „Erstellen“ und wählen Sie **ContextHub-Segment erstellen** aus.
+1. Klicken Sie auf die Schaltfläche Erstellen und wählen Sie **Erstellen eines ContextHub-Segments**.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. Im **Neues ContextHub-Segment**, geben Sie einen Titel für das Segment und ggf. einen Verstärkungswert ein und tippen oder klicken Sie auf **Erstellen**.
+1. Im **Neues ContextHub-Segment**, geben Sie einen Titel für das Segment und ggf. einen Verstärkungswert ein und klicken Sie auf **Erstellen**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
@@ -147,7 +147,7 @@ Festlegen eines neuen Segments
    * Höchstwert: `1000000`
 
 1. Ziehen Sie einen Vergleich oder Verweis in den Segmenteditor. Der Vergleich oder Verweis wird dann im standardmäßigen UND-Container angezeigt.
-1. Doppelklicken oder tippen Sie auf die Konfigurationsoption des neuen Verweises oder Segments, um die spezifischen Parameter zu bearbeiten. In diesem Beispiel testen wir Menschen in San Jose.
+1. Doppelklicken Sie auf die Konfigurationsoption des neuen Verweises oder Segments, um die spezifischen Parameter zu bearbeiten. In diesem Beispiel testen wir Menschen in San Jose.
 
    ![screen_shot_2012-02-02at103135am](assets/screen_shot_2012-02-02at103135ama.png)
 
@@ -233,7 +233,7 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 
 ### Erstellen eines neuen Ordners {#create-folder}
 
-1. Klicken oder tippen Sie nach dem [Zugriff auf die Segmente](#accessing-segments) auf die Schaltfläche **Erstellen** und wählen Sie **Ordner** aus.
+1. Nachher [Zugriff auf Segmente](#accessing-segments), klicken Sie auf die **Erstellen** Schaltfläche und wählen Sie **Ordner**.
 
    ![Ordner hinzufügen](assets/contexthub-create-segment.png)
 
@@ -245,24 +245,24 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 
    ![Ordner erstellen](assets/contexthub-create-folder.png)
 
-1. Tippen oder klicken Sie auf **Erstellen**.
+1. Klicken Sie auf **Erstellen**.
 
    ![Ordner bestätigen](assets/contexthub-confirm-folder.png)
 
 1. Der Ordner wird in der Liste der Segmente angezeigt.
    * Die Sortierung Ihrer Spalten beeinflusst, wo in der Liste der neue Ordner erscheint.
-   * Sie können auf die Spaltenüberschriften tippen oder klicken, um die Sortierung anzupassen.
+   * Sie können auf die Spaltenüberschriften klicken, um die Sortierung anzupassen.
      ![Der neue Ordner](assets/contexthub-folder.png)
 
 ### Ändern vorhandener Ordner {#modify-folders}
 
-1. Klicken oder tippen Sie mach dem [Zugriff auf die Segmente](#accessing-segments) auf den Ordner, den Sie ändern möchten, um ihn auszuwählen.
+1. Nachher [Zugriff auf Segmente](#accessing-segments)klicken Sie auf den Ordner, den Sie ändern möchten, um ihn auszuwählen.
 
    ![Ordner auswählen](assets/contexthub-select-folder.png)
 
-1. Tippen oder klicken Sie auf **Umbenennen** in der Symbolleiste, um den Ordner umzubenennen.
+1. Klicks **Umbenennen** in der Symbolleiste, um den Ordner umzubenennen.
 
-1. Geben Sie einen neuen **Ordnertitel** and und tippen oder klicken Sie auf **Speichern**.
+1. Bereitstellung eines neuen **Ordnertitel** und klicken **Speichern**.
 
    ![Ordner umbenennen](assets/contexthub-rename-folder.png)
 
@@ -272,25 +272,25 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 
 ### Löschen eines Ordners
 
-1. Klicken oder tippen Sie mach dem [Zugriff auf die Segmente](#accessing-segments) auf den Ordner, den Sie ändern möchten, um ihn auszuwählen.
+1. Nachher [Zugriff auf Segmente](#accessing-segments)klicken Sie auf den Ordner, den Sie ändern möchten, um ihn auszuwählen.
 
    ![Ordner auswählen](assets/contexthub-select-folder.png)
 
-1. Tippen oder klicken Sie auf **Löschen** in der Symbolleiste, um den Ordner zu löschen.
+1. Klicks **Löschen** in der Symbolleiste, um den Ordner zu löschen.
 
 1. In einem Dialogfeld wird eine Liste der zum Löschen ausgewählten Ordner angezeigt.
 
    ![Löschen bestätigen](assets/contexthub-confirm-segment-delete.png)
 
-   * Tippen oder klicken Sie zum Bestätigen auf **Löschen**.
-   * Tippen oder klicken Sie zum Abbrechen auf **Abbrechen**.
+   * Klicks **Löschen** zur Bestätigung.
+   * Klicks **Abbrechen** abbrechen.
 
 1. Wenn einer der ausgewählten Ordner Unterordner oder Segmente enthält, muss deren Löschung bestätigt werden.
 
    ![Löschen von untergeordneten Elementen bestätigen](assets/contexthub-confirm-segment-child-delete.png)
 
-   * Tippen oder klicken Sie zum Bestätigen auf **Löschen erzwingen**.
-   * Tippen oder klicken Sie zum Abbrechen auf **Abbrechen**.
+   * Klicks **Löschen erzwingen** zur Bestätigung.
+   * Klicks **Abbrechen** abbrechen.
 
 >[!NOTE]
 >

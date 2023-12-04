@@ -7,10 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1539'
-ht-degree: 64%
+source-wordcount: '1513'
+ht-degree: 62%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 64%
 >6.5.3.0:
 >
 >* **Externalizer-Domains** können jetzt ausgewählt werden.
->  **Hinweis:** Externalizer-Domains sind nur für den Inhalt des Experience Fragments, das an Target gesendet wird, relevant und nicht Metadaten wie Inhalte zum Anzeigen von Angeboten.
+>  **Hinweis:** Externalizer-Domänen sind nur für den Inhalt des Experience Fragment relevant, das an Target gesendet wird, und nicht für Metadaten wie Angebotsinhalt anzeigen.
 >
 >6.5.2.0:
 >
@@ -152,19 +152,19 @@ So exportieren Sie ein Experience Fragment aus AEM in Target (nach Angabe der Cl
    >
    >Es muss sich um eine Experience Fragment Web-Variante handeln.
 
-1. Tippen oder klicken Sie auf **Nach Adobe Target exportieren**.
+1. Klicks **Exportieren in Adobe Target**.
 
    >[!NOTE]
    >
    >Wenn das Experience Fragment bereits exportiert wurde, wählen Sie **In Adobe Target aktualisieren**.
 
-1. Tippen/klicken Sie auf **Exportieren ohne Veröffentlichung** bzw. auf **Veröffentlichen**.
+1. Klicks **Exportieren ohne Veröffentlichung** oder **Veröffentlichen** nach Bedarf.
 
    >[!NOTE]
    >
    >Auswählen **Veröffentlichen** veröffentlicht das Experience Fragment sofort und sendet es an Target.
 
-1. Tippen/klicken Sie im Bestätigungsdialog auf **OK**.
+1. Klicks **OK** im Bestätigungsdialogfeld.
 
    Ihr Experience Fragment sollte sich jetzt in Target befinden.
 

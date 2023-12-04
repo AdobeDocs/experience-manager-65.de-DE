@@ -7,10 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2987'
-ht-degree: 60%
+source-wordcount: '2963'
+ht-degree: 58%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 60%
 >* Auf dieser Seite erhalten Sie einen Überblick über die grundlegende Handhabung der Adobe Experience Manager (AEM)-Autorenumgebung. Als Grundlage wird die **Sites-Konsole** verwendet.
 >
 >* Einige Funktionen stehen nicht in allen Konsolen zur Verfügung und in einigen Konsolen können zusätzliche Funktionen zur Verfügung stehen. Spezifische Informationen zu den einzelnen Konsolen und den zugehörigen Funktionen werden auf anderen Seiten ausführlicher behandelt.
->* In AEM stehen verschiedene Tastaturbefehle zur Verfügung, insbesondere beim [Verwenden von Konsolen](/help/sites-authoring/keyboard-shortcuts.md) und beim [Bearbeiten von Seiten](/help/sites-authoring/page-authoring-keyboard-shortcuts.md). 
+>* In AEM sind Tastaturbefehle verfügbar. Insbesondere wenn [Verwenden von Konsolen](/help/sites-authoring/keyboard-shortcuts.md) und [Seiten bearbeiten](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
 ## Erste Schritte {#getting-started}
@@ -42,21 +42,21 @@ Unmittelbar nach der Anmeldung gelangen Sie zum [Navigationsfenster](#navigation
 >
 >Damit Sie ein gutes Verständnis der grundlegenden Funktionen in AEM erhalten, wurde für dieses Dokument die **Sites-Konsole** herangezogen.
 >
->Um zu beginnen, klicken oder tippen Sie auf **Sites**.
+>Klicken Sie zunächst auf **Sites**.
 
 ### Produktnavigation {#product-navigation}
 
-Wenn eine Benutzerin oder ein Benutzer zum ersten Mal auf eine Konsole zugreift, wird ein Tutorial zur Produktnavigation gestartet. Klicken oder tippen Sie durch, damit Sie einen guten Überblick über die grundlegende Handhabung von AEM erhalten.
+Wenn eine Benutzerin oder ein Benutzer zum ersten Mal auf eine Konsole zugreift, wird ein Tutorial zur Produktnavigation gestartet. Klicken Sie durch, damit Sie einen guten Überblick über die grundlegende Handhabung von AEM erhalten.
 
 ![Produktnavigation](assets/bh-02.png)
 
-Klicken oder tippen Sie auf **Weiter**, um zur nächsten Seite der Übersicht zu wechseln. Klicken oder tippen Sie **Schließen** oder klicken oder tippen Sie außerhalb des Übersichtsdialogfelds, um das Dialogfeld zu schließen.
+Klicks **Nächste** um zur nächsten Seite der Übersicht zu gelangen. Klicks **Schließen** oder klicken Sie außerhalb des Übersichtsdialogfelds, um das Dialogfeld zu schließen.
 
 Die Übersicht wird beim nächsten Zugriff auf eine Konsole neu gestartet, es sei denn, Sie sehen alle Folien oder aktivieren die Option **Zeigt das nicht noch einmal an**.
 
 ## Globale Navigation {#global-navigation}
 
-Sie können mithilfe des globalen Navigationsfensters zwischen den Konsolen navigieren. Dieses Navigationsfenster wird als Vollbild-Dropdown angezeigt, wenn Sie auf den Adobe Experience Manager-Link in der linken oberen Bildschirmecke klicken oder tippen.
+Sie können mithilfe des globalen Navigationsfensters zwischen den Konsolen navigieren. Diese wird als Vollbild-Dropdown-Liste ausgelöst, wenn Sie links oben im Bildschirm auf den Link Adobe Experience Manager klicken.
 
 Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließen** klicken oder tippen. Sie kehren dann zu Ihrer vorherigen Position zurück.
 
@@ -410,7 +410,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
      ![Spaltenansicht](assets/bh-17.png)
 
    * Die untergeordneten Elemente der angeklickten/angetippten Ressource werden in der Spalte rechts neben der angeklickten/angetippten Ressource angezeigt.
-   * Wenn Sie auf einen Ressourcennamen tippen oder klicken, der keine untergeordneten Elemente enthält, werden dessen Details in der letzten Spalte angezeigt.
+   * Wenn Sie auf einen Ressourcennamen klicken, der keine untergeordneten Elemente enthält, werden dessen Details in der letzten Spalte angezeigt.
 
 * Durch Tippen oder Klicken auf die Miniatur wird die Ressource ausgewählt.
 
@@ -462,12 +462,12 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 
    * Wenn alle Elemente in der Liste ausgewählt sind, wird dieses Kontrollkästchen aktiviert.
 
-      * Um die Auswahl aller aufzuheben, klicken oder tippen Sie auf das Kontrollkästchen.
+      * Um die Auswahl für alle aufzuheben, klicken Sie auf das Kontrollkästchen.
 
    * Wenn nur einige Elemente ausgewählt sind, wird es mit einem Minuszeichen angezeigt.
 
-      * Um alle auszuwählen, klicken oder tippen Sie auf das Kontrollkästchen.
-      * Um die Auswahl aller aufzuheben, klicken oder tippen Sie erneut auf das Kontrollkästchen.
+      * Um alle auszuwählen, klicken Sie auf das Kontrollkästchen.
+      * Um die Auswahl für alle aufzuheben, klicken Sie erneut auf das Kontrollkästchen.
 
 * Wählen Sie die anzuzeigenden Spalten mithilfe der **Anzeigeeinstellungen** -Option unter der Schaltfläche &quot;Ansichten&quot;angezeigt. Die folgenden Spalten stehen zur Anzeige zur Verfügung:
 
@@ -493,7 +493,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 
   ![Reihenfolge ändern](assets/bh-22.png)
 
-  Klicken oder tippen Sie auf die vertikale Auswahlleiste und ziehen Sie das Element an die gewünschte Position in der Liste.
+  Klicken Sie auf die vertikale Auswahlleiste und ziehen Sie das Element an eine neue Position in der Liste.
 
   ![Reihenfolge ändern – Ziehen](assets/bh-23.png)
 

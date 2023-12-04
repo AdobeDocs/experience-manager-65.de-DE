@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 role: Developer
 exl-id: 2b938410-f51b-420b-b5d4-2ed13ec29c5a
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2558'
-ht-degree: 87%
+source-wordcount: '2519'
+ht-degree: 85%
 
 ---
 
@@ -152,7 +152,7 @@ Um eine PDF mit neuen Lesezeichen zusammenzustellen, müssen Sie auf ein XML-Les
 
 **Hinzufügen des PDF-Dokuments und des XML-Lesezeichen-Dokuments zu einer Zuordnungssammlung**
 
-Sie müssen sowohl das PDF-Dokument, dem Lesezeichen hinzugefügt werden, als auch das XML-Lesezeichen-Dokument zur Zuordnungssammlung hinzufügen. Daher enthält das Zuordnungssammlungsobjekt zwei Elemente: ein PDF-Dokument und das XML-Lesezeichen-Dokument.
+Fügen Sie sowohl das PDF-Dokument, dem Lesezeichen hinzugefügt werden, als auch das Lesezeichen-XML-Dokument zur Map-Sammlung hinzu. Daher enthält das Zuordnungssammlungsobjekt zwei Elemente: ein PDF-Dokument und das XML-Lesezeichen-Dokument.
 
 **Festlegen von Laufzeitoptionen**
 
@@ -164,7 +164,7 @@ Verwenden Sie zum Zusammenführen eines PDF-Dokuments, das neue Lesezeichen enth
 
 **Speichern des PDF-Dokuments, das Lesezeichen enthält**
 
-Sie müssen die Ergebnisse aus dem zurückgegebenen Zuordnungssammlungsobjekt extrahieren und das entsprechende PDF-Dokument speichern. (Siehe „Extrahieren der Ergebnisse“ in [Programmgesteuertes Zusammenstellen von PDF-Dokumenten](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+Extrahieren Sie die Ergebnisse aus dem zurückgegebenen map -Objekt und speichern Sie das entsprechende PDF-Dokument. (Siehe „Extrahieren der Ergebnisse“ in [Programmgesteuertes Zusammenstellen von PDF-Dokumenten](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 **Siehe auch**
 

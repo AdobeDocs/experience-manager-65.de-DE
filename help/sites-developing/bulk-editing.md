@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 54%
+source-wordcount: '407'
+ht-degree: 48%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 54%
 
 Aufgrund der Möglichkeit unterschiedlicher Werte sind die Seiteneigenschaften für die Massenbearbeitung nicht standardmäßig aktiviert. Sie müssen explizit zugelassen sein (aktiviert). Beim Definieren der Seiteneigenschaften, die für die Massenbearbeitung verfügbar sein sollen, müssen Sie bestimmte Auswirkungen berücksichtigen, z. B.:
 
-* Bestimmte Felder sind in der Regel eindeutig, z. B. ein Seitentitel. Sie müssen entscheiden, ob es sinnvoll ist, diese Felder für die Massenbearbeitung zu aktivieren, wenn ein Wert angewendet wird.
+* Bestimmte Felder sind in der Regel eindeutig, z. B. ein Seitentitel. Entscheiden Sie, ob es sinnvoll ist, solche Felder für die Massenbearbeitung zu aktivieren, wenn ein Wert angewendet wird.
 * Bestimmte Felder können mehrere Werte haben - dies erfordert eine sinnvolle Darstellung beim Rendern.
 
   Zum Beispiel ein Kontrollkästchen, das „Bereit zur Veröffentlichung“ anzeigt. Dies kann mehrere Werte vor der Massenbearbeitung aufweisen (z. B. &quot;Bereit&quot;, &quot;In Überprüfung&quot;, &quot;In Bearbeitung&quot;).

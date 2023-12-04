@@ -8,10 +8,10 @@ content-type: reference
 feature: Content Fragments
 role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 48%
+source-wordcount: '984'
+ht-degree: 36%
 
 ---
 
@@ -41,7 +41,7 @@ Der Workflow Erstellen und Übersetzen umfasst die folgenden Optionen. Die mit d
 
 ## Workflow &quot;Sprachkopien aktualisieren&quot; {#update-language-copies-workflow}
 
-Der Workflow zum Aktualisieren der Sprachkopien umfasst die folgenden Optionen. Die mit der jeweiligen Option verbundenen Verfahrensschritte ähneln denen, die mit der entsprechenden Option für Assets verbunden sind.
+Der Workflow Sprachkopien aktualisieren umfasst die folgenden Optionen. Die mit der jeweiligen Option verbundenen Verfahrensschritte ähneln denen, die mit der entsprechenden Option für Assets verbunden sind.
 
 * Erstellen Sie ein Übersetzungsprojekt: Verfahrensschritte finden Sie unter [Erstellen eines Übersetzungsprojekts für Assets](translation-projects.md#create-a-new-translation-project) (Workflow aktualisieren).
 * Hinzufügen zu vorhandenem Übersetzungsprojekt: Verfahrensschritte finden Sie unter [Hinzufügen zu einem vorhandenen Übersetzungsprojekt für Assets](translation-projects.md#add-to-existing-translation-project) (Update-) Workflow.
@@ -56,12 +56,12 @@ Wenn das Inhaltsfragment eine Sammlung enthält, werden die Assets in der Sammlu
 
 Um Inhaltsfragmente, die gemischte Medien enthalten, übersetzen zu können, bearbeiten Sie zunächst das standardmäßige Übersetzungs-Framework, um die Übersetzung von Inline-Assets und Sammlungen zu ermöglichen, die mit Inhaltsfragmenten verknüpft sind.
 
-1. Klicken oder tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Bereitstellung > Cloud Services]**.
-1. Klicken oder tippen Sie unter **[!UICONTROL Adobe Marketing Cloud]** in **[!UICONTROL Übersetzungsintegration]** auf **[!UICONTROL Konfigurationen anzeigen]**.
+1. Klicken Sie auf das AEM und navigieren Sie zu **[!UICONTROL Tools > Bereitstellung > Cloud Service]**.
+1. Suchen **[!UICONTROL Übersetzungsintegration]** under **[!UICONTROL Adobe Marketing Cloud]** und klicken Sie auf **[!UICONTROL Konfigurationen anzeigen]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
 
-1. Klicken oder tippen Sie in der Liste der verfügbaren Konfigurationen auf **[!UICONTROL Standardkonfiguration (Konfiguration für Übersetzungsintegration)]**, um die Seite **[!UICONTROL Standardkonfiguration]** zu öffnen.
+1. Klicken Sie in der Liste der verfügbaren Konfigurationen auf **[!UICONTROL Standardkonfiguration (Konfiguration der Übersetzungsintegration)]** , um die **[!UICONTROL Standardkonfiguration]** Seite.
 
    ![chlimage_1-445](assets/chlimage_1-445.png)
 
@@ -69,7 +69,7 @@ Um Inhaltsfragmente, die gemischte Medien enthalten, übersetzen zu können, bea
 
    ![chlimage_1-446](assets/chlimage_1-446.png)
 
-1. Navigieren Sie zum **[!UICONTROL Assets]** und wählen Sie **[!UICONTROL Inline-Medien-Assets und zugehörige Sammlungen]** aus dem **[!UICONTROL Übersetzen von Inhaltsfragment-Assets]** Liste. Klicken/Tippen **[!UICONTROL OK]** , um die Änderungen zu speichern.
+1. Navigieren Sie zum **[!UICONTROL Assets]** und wählen Sie **[!UICONTROL Inline-Medien-Assets und zugehörige Sammlungen]** aus dem **[!UICONTROL Übersetzen von Inhaltsfragment-Assets]** Liste. Klicken Sie auf **[!UICONTROL OK]**, um die Änderungen zu speichern.
 
    ![chlimage_1-447](assets/chlimage_1-447.png)
 
@@ -77,7 +77,7 @@ Um Inhaltsfragmente, die gemischte Medien enthalten, übersetzen zu können, bea
 
    ![chlimage_1-448](assets/chlimage_1-448.png)
 
-1. Klicken oder tippen Sie auf das Symbol **[!UICONTROL Asset einfügen]**.
+1. Klicken Sie auf **[!UICONTROL Asset einfügen]** Symbol.
 
    ![chlimage_1-449](assets/chlimage_1-449.png)
 
@@ -85,28 +85,28 @@ Um Inhaltsfragmente, die gemischte Medien enthalten, übersetzen zu können, bea
 
    ![Einfügen eines Assets in ein Inhaltsfragment](assets/column-view.png)
 
-1. Klicken oder tippen Sie auf das Symbol **[!UICONTROL Inhalt verknüpfen]**.
+1. Klicken Sie auf **[!UICONTROL Inhalt verknüpfen]** Symbol.
 
    ![chlimage_1-451](assets/chlimage_1-451.png)
 
-1. Klicken oder tippen Sie auf **[!UICONTROL Inhalt verknüpfen]**.
+1. Klicks **[!UICONTROL Inhalt verknüpfen]**.
 
    ![chlimage_1-452](assets/chlimage_1-452.png)
 
-1. Wählen Sie eine Sammlung aus und fügen Sie sie in das Inhaltsfragment ein. Klicken/Tippen **[!UICONTROL Speichern]**.
+1. Wählen Sie eine Sammlung aus und fügen Sie sie in das Inhaltsfragment ein. Klicken Sie auf **[!UICONTROL Speichern]**.
 
    ![chlimage_1-453](assets/chlimage_1-453.png)
 
-1. Wählen Sie das Inhaltsfragment aus und klicken/tippen Sie auf das **[!UICONTROL GlobalNav]** Symbol.
+1. Wählen Sie das Inhaltsfragment aus und klicken Sie auf das **[!UICONTROL GlobalNav]** Symbol.
 1. Auswählen **[!UICONTROL Verweise]** aus dem Menü, um die **[!UICONTROL Verweise]** -Bereich.
 
    ![chlimage_1-454](assets/chlimage_1-454.png)
 
-1. Klicken oder tippen Sie unter **[!UICONTROL Kopien]** auf **[!UICONTROL Sprachkopien]**, um die Sprachkopien anzuzeigen.
+1. Klicks **[!UICONTROL Sprachkopien]** under **[!UICONTROL Kopien]** , um die Sprachkopien anzuzeigen.
 
    ![chlimage_1-455](assets/chlimage_1-455.png)
 
-1. Klicken oder tippen Sie im unteren Bereich des Bedienfelds auf **[!UICONTROL Erstellen und übersetzen]**, um das Dialogfeld **[!UICONTROL Erstellen und übersetzen]** anzuzeigen.
+1. Klicks **[!UICONTROL Erstellen und übersetzen]** von unten im Bedienfeld aus, um die **[!UICONTROL Erstellen und übersetzen]** angezeigt.
 
    ![chlimage_1-456](assets/chlimage_1-456.png)
 
@@ -118,7 +118,7 @@ Um Inhaltsfragmente, die gemischte Medien enthalten, übersetzen zu können, bea
 
    ![chlimage_1-458](assets/chlimage_1-458.png)
 
-1. Geben Sie im Feld **[!UICONTROL Projekttitel]** den Titel des Projekts ein und klicken oder tippen Sie auf **Erstellen**.
+1. Geben Sie den Titel des Projekts im **[!UICONTROL Projekttitel]** und klicken Sie anschließend auf **Erstellen**.
 
    ![chlimage_1-459](assets/chlimage_1-459.png)
 
@@ -126,7 +126,7 @@ Um Inhaltsfragmente, die gemischte Medien enthalten, übersetzen zu können, bea
 
    ![chlimage_1-460](assets/chlimage_1-460.png)
 
-1. Klicken oder tippen Sie auf die Projektkachel, um die Projektdetailseite zu öffnen.
+1. Klicken Sie auf die Projektkachel, um die Seite mit den Projektdetails zu öffnen.
 
    ![chlimage_1-461](assets/chlimage_1-461.png)
 
@@ -139,7 +139,7 @@ Um Inhaltsfragmente, die gemischte Medien enthalten, übersetzen zu können, bea
 
    ![chlimage_1-463](assets/chlimage_1-463.png)
 
-1. Klicken oder tippen Sie auf das Inhaltsfragment, um den Pfad der übersetzten zugehörigen Assets zu überprüfen.
+1. Klicken Sie auf das Inhaltsfragment, um den Pfad der übersetzten verknüpften Assets zu überprüfen.
 
    ![chlimage_1-464](assets/chlimage_1-464.png)
 

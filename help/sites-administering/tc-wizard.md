@@ -3,10 +3,10 @@ title: Assistent „Sprachkopie erstellen“
 description: Erfahren Sie mehr über die Verwendung des Sprachkopie-Assistenten in Adobe Experience Manager.
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 52%
+source-wordcount: '219'
+ht-degree: 54%
 
 ---
 
@@ -20,7 +20,7 @@ Der Sprachkopie-Assistent ist ein geführtes Erlebnis zum Erstellen und Verwende
 
 So greifen Sie auf diesen Assistenten zu:
 
-1. Wählen Sie in Sites eine Seite aus und tippen/klicken Sie auf Erstellen .
+1. Wählen Sie in Sites eine Seite aus und klicken Sie auf Erstellen .
 
    ![chlimage_1-9](assets/chlimage_1-9.jpeg)
 

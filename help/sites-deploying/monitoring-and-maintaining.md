@@ -10,10 +10,10 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '5939'
-ht-degree: 99%
+source-wordcount: '5793'
+ht-degree: 98%
 
 ---
 
@@ -125,8 +125,8 @@ Um Versionen einer Website zu löschen, gehen Sie folgendermaßen vor:
 
    ![Konfiguration der Versionsbereinigung](assets/version-purge-configuration.png)
 
-   * **Bereinigungspfade**
-Legen Sie den Startpfad des zu löschenden Inhalts fest, zum Beispiel: `/content/wknd`.
+   * **Pfad bereinigen**
+Legen Sie den Startpfad des zu löschenden Inhalts fest, z. B. `/content/wknd`.
 
      >[!CAUTION]
      >
@@ -237,13 +237,13 @@ Hier werden alle Zugriffsanfragen zusammen mit der Antwort registriert.
    * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=de)
 Dieses Protokoll wird nur verwendet, wenn [!DNL Dynamic Media] aktiviert ist. Das s7access-Protokoll zeichnet alle Anfragen auf, die an [!DNL Dynamic Media] bis `/is/image` und `/is/content` gemacht wurden.
 
-   * `stderr.log` Enthält Fehlermeldungen (ebenfalls mit unterschiedlichem Schweregrad), die beim Starten generiert werden. Standardmäßig wird für die Protokollebene Folgendes festgelegt `Warning` (`WARN`)
+   * `stderr.log` Enthält Fehlermeldungen (ebenfalls mit unterschiedlichem Schweregrad), die beim Starten generiert werden. Standardmäßig ist die Protokollebene auf `Warning` ( `WARN`)
 
    * `stdout.log`
 Enthält Protokollmeldungen, die auf Ereignisse beim Starten verweisen.
 
    * `upgrade.log`
-Bietet ein Protokoll aller Upgrade-Vorgänge, die von den Paketen `com.day.compat.codeupgrade` und `com.adobe.cq.upgradesexecutor` ausgeführt werden.
+Bietet ein Protokoll aller Aktualisierungsvorgänge, die von der `com.day.compat.codeupgrade` und `com.adobe.cq.upgradesexecutor` Packages.
 
 * `<cq-installation-dir>/crx-quickstart/repository/segmentstore`
 
@@ -482,7 +482,7 @@ Diese Einträge enthalten dieselben Informationen, die beim Bearbeiten einer Sei
 
 #### OSGi-Auditdatensätze aus der Web-Konsole {#osgi-audit-records-from-the-web-console}
 
-OSGi-Ereignisse generieren ebenfalls Auditdatensätze, die Sie in der AEM-Web-Konsole auf der Registerkarte **Konfigurationsstatus** unter **Protokolldateien** anzeigen können:
+OSGi-Ereignisse generieren auch Auditdatensätze, die aus den **Konfigurationsstatus** tab > **Protokolldateien** in der AEM Web-Konsole:
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 

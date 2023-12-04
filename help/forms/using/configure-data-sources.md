@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: d39b4b1d921fc93a4871b74469953f2dfc5c470b
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2073'
 ht-degree: 97%
 
 ---
@@ -206,9 +206,9 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Stellen Si
 
    >[!NOTE]
    >
-   >Sie müssen den OAuth 2.0-Authentifizierungstyp auswählen, um eine Verbindung mit Microsoft Dynamics-Diensten herzustellen, die den OData-Endpunkt als Dienststamm nutzen.
+   >Wählen Sie den OAuth 2.0-Authentifizierungstyp aus, um eine Verbindung mit Microsoft Dynamics-Diensten herzustellen, indem Sie den OData-Endpunkt als Dienststamm verwenden.
 
-1. Tippen Sie auf **Erstellen**, um die Cloudkonfiguration für den OData-Dienst zu erstellen.
+1. Tippen Sie auf **Erstellen**, um die Cloud-Konfiguration für den OData-Service zu erstellen.
 
 ## Zertifikatbasierte gegenseitige Authentifizierung für RESTful- und SOAP-Web-Services {#mutual-authentication}
 

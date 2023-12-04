@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3495'
-ht-degree: 44%
+source-wordcount: '3443'
+ht-degree: 42%
 
 ---
 
@@ -58,10 +58,10 @@ Landingpage-Spickzettel
 
 Ein Beispiel für ein Zip-Layout:
 
-* /index.html -> Landingpage-HTML-Datei
-* /css -> zum Hinzufügen zur CSS-clientlib
-* /img -> alle Bilder und Assets
-* /js -> zum Hinzufügen zur JS-clientlib
+* /index.html > Landingpage-HTML-Datei
+* /css > , um es der CSS-clientlib hinzuzufügen
+* /img > alle Bilder und Assets
+* /js > zur Hinzufügung in die JS-clientlib
 
 Das Layout basiert auf dem Boilerplate-Layout für HTML5. Lesen Sie mehr unter [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
@@ -111,7 +111,7 @@ Im folgenden Abschnitt wird beschrieben, wie Sie Ihre HTML-Datei so bearbeiten, 
 
 Beachten Sie vor dem Import die folgenden Einschränkungen:
 
-### Sämtliche Attribute wie „class“ oder „id“, die auf das     &amp;lt;body>-Tag angewendet werden, werden nicht beibehalten. {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
+### Jedes Attribut wie die Klasse oder ID, das auf das Tag &amp;lt;body> angewendet wird, wird nicht beibehalten {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
 Wenn beispielsweise ein beliebiges Attribut wie ID oder Klasse auf das Body-Tag angewendet wird, `<body id="container">` nach dem Import nicht beibehalten. Das importierte Design darf also über keine Abhängigkeiten bei den Attributen verfügen, die auf das `<body>`-Tag angewendet werden.
 
@@ -156,8 +156,8 @@ Durch die Integration des oben genannten Markups in das HTML passiert Folgendes:
 
 So fügen Sie einen Text mit einer Liste hinzu:
 
-* 1st
-* 2nd
+* 1.
+* 2.
 
 die im RTE-Editor bearbeitet werden können:
 
@@ -530,7 +530,7 @@ In der folgenden Tabelle werden die Eigenschaften kurz beschrieben:
 >
 >>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
->Und Sie müssen im Suchmuster `CQ_DESIGN_PATH` durch `VIPURL` ersetzen, dann sollte Ihr Suchmuster wie folgt aussehen:
+>Und Sie müssen `CQ_DESIGN_PATH` mit `VIPURL` im Suchmuster ein, sollte Ihr Suchmuster wie folgt aussehen:
 >
 >`/\* *VIPURL *\*/ *(['"])`
 

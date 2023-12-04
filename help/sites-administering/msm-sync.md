@@ -12,10 +12,10 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2694'
-ht-degree: 70%
+source-wordcount: '2672'
+ht-degree: 69%
 
 ---
 
@@ -118,7 +118,7 @@ In der folgenden Tabelle sind die Rollout-Konfigurationen aufgeführt, die mit A
   </tr>
   <tr>
    <td>Alte (5.6.0) KatalogRollout-Konfiguration</td>
-   <td>Entfernt. Verwenden Sie für Katalog-Rollouts Catalog Generator anstelle von MSM.</td>
+   <td>Veraltet. Verwenden Sie für Katalog-Rollouts Catalog Generator anstelle von MSM.</td>
    <td>Bei Rollout</td>
    <td>editProperties</td>
   </tr>
@@ -394,7 +394,7 @@ Sie können die Rollout-Konfigurationen für eine Live Copy-Seite auch konfiguri
 
    ![Ausgewählte Rollout-Konfigurationen](assets/chlimage_1-2.png)
 
-1. Klicken oder tippen Sie auf **Speichern**.
+1. Klicken Sie auf **Speichern**.
 
 ### Festlegen der Rollout-Konfiguration für eine Blueprint-Seite {#setting-the-rollout-configuration-for-a-blueprint-page}
 
@@ -412,7 +412,8 @@ Die untergeordneten Seiten der Blueprint-Seite übernehmen die Konfiguration. We
 
 Geben Sie eine Rollout-Konfiguration an, die als Systemstandard verwendet werden soll. Um den Standard anzugeben, konfigurieren Sie den OSGi-Dienst:
 
-* **Day CQ WCM Live Relationship Manager** Die Dienst-PID ist `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
+* **Day CQ WCM Live Relationship Manager**
+die Dienst-PID lautet `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
 Konfigurieren Sie den Dienst entweder über die [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) oder einen [Repository-Knoten](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 

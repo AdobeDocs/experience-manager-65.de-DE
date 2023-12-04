@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
 exl-id: 1e0821f5-627f-4262-ba76-62303890e112
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2205'
-ht-degree: 54%
+source-wordcount: '2148'
+ht-degree: 53%
 
 ---
 
@@ -58,7 +58,7 @@ Bei Bedarf kann Ihre Autoreninstanz die Produktionsbibliotheken nutzen. Es sind 
 
 Wenn AEM die Dynamic Tag Management-Bibliotheken hostet, können Sie den Bereitstellungs-Hook-Dienst für Dynamic Tag Management verwenden, um Bibliotheksaktualisierungen automatisch an AEM zu pushen. Das Pushen von Bibliothekaktualisierungen erfolgt, wenn Änderungen an den Bibliotheken vorgenommen werden – so zum Beispiel, wenn die Dynamic Tag Management-Webeigenschaften bearbeitet werden.
 
-Um den Bereitstellungs-Hook zu verwenden, muss Dynamic Tag Management eine Verbindung zur AEM-Instanz herstellen können, die die Bibliotheken hostet. Sie müssen den [Zugriff auf AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) für die Dynamic Tag Management-Server aktivieren.
+Um den Bereitstellungs-Hook zu verwenden, muss Dynamic Tag Management eine Verbindung zur AEM-Instanz herstellen können, die die Bibliotheken hostet. [Zugriff auf AEM aktivieren](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) für die Dynamic Tag Management-Server.
 
 Unter manchen Umständen kann AEM nicht erreichbar sein, so zum Beispiel, wenn AEM sich hinter einer Firewall befindet. In diesen Fällen können Sie die Option Abruf-Import-Tool von AEM verwenden, um die Bibliotheken regelmäßig abzurufen. Ein Cron-Auftragsausdruck bestimmt den Zeitplan für Bibliotheksdownloads.
 

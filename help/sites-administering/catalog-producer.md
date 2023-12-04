@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 90e36522-3af1-4a8a-b044-1c828c52974e
 description: Catalog Producer
 exl-id: 76a46c62-d47d-4970-8a3a-d56015639548
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 76%
+source-wordcount: '847'
+ht-degree: 39%
 
 ---
 
@@ -41,28 +41,28 @@ Als Teil des Integrationsvorgangs konfigurieren Sie den Workflow **DAM-Update-As
 
 Catalog Producer verwendet Produktinformationsverwaltungsdaten (PIM), um Produkteigenschaften den in der Vorlage angezeigten XML-Eigenschaften zuzuordnen. Um einen Katalog zu erstellen, führen Sie die folgenden Schritte durch:
 
-1. Tippen oder klicken Sie in der Assets-Oberfläche auf das **AEM-Logo**. Rufen Sie dann **Assets > Kataloge** auf.
-1. Tippen oder klicken Sie auf der Seite **Kataloge** in der Symbolleiste auf **Erstellen**. Wählen Sie anschließend aus der Liste **Katalog** aus.
+1. Klicken Sie in der Assets-Benutzeroberfläche auf das **AEM** und navigieren Sie zu **Assets > Kataloge**.
+1. Im **Kataloge** Seite, klicken **Erstellen** in der Symbolleiste und wählen Sie **Katalog** aus der Liste.
 1. Geben Sie auf der Seite **Katalog erstellen** einen Namen und eine Beschreibung (optional) für den Katalog ein. Sie können bei Bedarf auch Tags festlegen. Außerdem können Sie ein Miniaturbild für den Katalog hinzufügen.
 
    ![create_catalog](assets/create_catalog.png)
 
-1. Tippen oder klicken Sie auf **Speichern**. Ein Dialogfeld bestätigt, dass der Katalog erstellt wurde. Tippen oder klicken Sie auf **Fertig**, um das Dialogfeld zu schließen.
-1. Um den erstellten Katalog zu öffnen, tippen oder klicken Sie auf der Seite **Kataloge** darauf.
+1. Klicken Sie auf **Speichern**. Ein Dialogfeld bestätigt, dass der Katalog erstellt wurde. Klicks **Fertig** , um das Dialogfeld zu schließen.
+1. Um den von Ihnen erstellten Katalog zu öffnen, klicken Sie in der **Kataloge** Seite.
 
    >[!NOTE]
    >
-   >Alternativ können Sie auch in dem Dialogfeld, das im vorhergehenden Schritt genannt wurde, auf **Öffnen** tippen oder klicken.
+   >Um den Katalog zu öffnen, klicken Sie auf **Öffnen** im Bestätigungsdialogfeld, das im vorherigen Schritt erwähnt wurde.
 
-1. Um Seiten zum Katalog hinzuzufügen, tippen oder klicken Sie in der Symbolleiste auf **Erstellen** und wählen dann die Option **Neue Seite** aus.
-1. Wählen Sie im Assistenten eine InDesign-Vorlage für Ihre Seite aus. Tippen oder klicken Sie anschließend auf **Weiter**.
+1. Um dem Katalog Seiten hinzuzufügen, klicken Sie auf **Erstellen** Wählen Sie in der Symbolleiste die **Neue Seite** -Option.
+1. Wählen Sie im Assistenten eine InDesign-Vorlage für Ihre Seite aus. Klicken Sie dann auf **Weiter**.
 1. Geben Sie einen Namen für die Seite und eine optionale Beschreibung an. Geben Sie gegebenenfalls Tags an.
-1. Tippen oder klicken Sie in der Symbolleiste auf **Erstellen**. Tippen oder klicken Sie dann im Dialogfeld auf **Öffnen**. Die Eigenschaften für das Produkt werden im linken Bereich angezeigt. Die vordefinierten Eigenschaften für die InDesign-Vorlage werden im rechten Bereich angezeigt.
+1. Klicken Sie auf **Erstellen** aus der Symbolleiste. Klicken Sie anschließend auf **Öffnen** aus dem Dialogfeld. Die Eigenschaften für das Produkt werden im linken Bereich angezeigt. Die vordefinierten Eigenschaften für die InDesign-Vorlage werden im rechten Bereich angezeigt.
 1. Ziehen Sie aus dem linken Bereich die Produkteigenschaften in die Eigenschaften der InDesign-Vorlage und erstellen Sie eine Zuordnung zwischen ihnen.
 
-   Um anzuzeigen, wie die Seite in Echtzeit angezeigt wird, tippen oder klicken Sie im rechten Bereich auf die Registerkarte **Vorschau**.
+   Um anzuzeigen, wie die Seite in Echtzeit angezeigt wird, klicken Sie auf das **Vorschau** im rechten Bereich.
 
-1. Wenn Sie weitere Seiten erstellen möchten, wiederholen Sie die Schritte 6–9. Um ähnliche Seiten für andere Produkte zu erstellen, wählen Sie die Seite aus und tippen oder klicken Sie auf das Symbol **Ähnliche Seiten erstellen** in der Symbolleiste.
+1. Wenn Sie weitere Seiten erstellen möchten, wiederholen Sie die Schritte 6–9. Um ähnliche Seiten für andere Produkte zu erstellen, wählen Sie die Seite aus und klicken Sie auf die Schaltfläche **Erstellen ähnlicher Seiten** in der Symbolleiste.
 
    ![create_similar_pages](assets/create_similar_pages.png)
 
@@ -70,30 +70,30 @@ Catalog Producer verwendet Produktinformationsverwaltungsdaten (PIM), um Produkt
    >
    >Sie können nur ähnliche Seiten für Produkte mit ähnlicher Struktur erstellen.
 
-   Tippen oder klicken Sie auf das Symbol zum Hinzufügen, wählen Sie die Produkte aus Produktauswahl aus und tippen oder klicken Sie in der Symbolleiste auf **Auswählen**.
+   Klicken Sie auf das Symbol Hinzufügen , wählen Sie Produkte aus der Produktauswahl aus und klicken Sie dann auf **Auswählen** aus der Symbolleiste.
 
    ![select_product](assets/select_product.png)
 
-1. Klicken oder tippen Sie in der Symbolleiste auf **Erstellen**. Tippen oder klicken Sie auf **Fertig**, um das Dialogfeld zu schließen. Ähnliche Seiten sind in Ihrem Katalog enthalten.
-1. Um eine vorhandene InDesign-Datei zu Ihrem Katalog hinzuzufügen, tippen oder klicken Sie in der Symbolleiste auf **Erstellen** und wählen Sie die Option **Zu vorhandener Seite hinzufügen** aus.
-1. Wählen Sie die InDesign-Datei aus und tippen oder klicken Sie in der Symbolleiste auf **Hinzufügen**. Tippen oder klicken Sie dann auf **OK**, um das Dialogfeld zu schließen.
+1. Klicken Sie in der Symbolleiste auf **Erstellen**. Klicks **Fertig** , um das Dialogfeld zu schließen. Ähnliche Seiten sind in Ihrem Katalog enthalten.
+1. Um eine vorhandene InDesign-Datei zu Ihrem Katalog hinzuzufügen, klicken Sie auf **Erstellen** in der Symbolleiste und wählen Sie die **Hinzufügen zu vorhandener Seite** -Option.
+1. Wählen Sie die InDesign-Datei aus und klicken Sie auf **Hinzufügen** aus der Symbolleiste. Klicken Sie anschließend auf **OK** , um das Dialogfeld zu schließen.
 
    Wenn die Metadaten der Produkte, auf die Sie auf den Katalogseiten verweisen, sich ändern, werden diese Änderungen von den Katalogseiten nicht automatisch übernommen. Dafür wird ein Banner mit der Beschriftung **Veraltet** auf den Produktbildern auf den entsprechenden Katalogseiten angezeigt. Es weist darauf hin, dass die Metadaten für diese Produkte nicht aktuell sind.
 
    ![chlimage_1-117](assets/chlimage_1-117a.png)
 
-   Um sicherzustellen, dass die Produktbilder die neuesten Änderungen der Metadaten widerspiegeln, wählen Sie die Seite in der Katalogkonsole aus und tippen oder klicken Sie in der Symbolleiste auf das Symbol **Seite aktualisieren**.
+   Um sicherzustellen, dass die Produktbilder die neuesten Metadatenänderungen widerspiegeln, wählen Sie die Seite in der Katalogkonsole aus und klicken Sie auf **Seite aktualisieren** in der Symbolleiste.
 
    ![chlimage_1-118](assets/chlimage_1-118a.png)
 
    >[!NOTE]
    >
-   >Um die Metadaten für ein referenziertes Produkt zu ändern, navigieren Sie zur Produktkonsole (**AEM-Logo** > **Commerce** > **Produkte**). Wählen Sie dort das Produkt aus. Tippen oder klicken Sie dann in der Symbolleiste auf das Symbol **Eigenschaften anzeigen** und bearbeiten Sie auf der Seite mit den Eigenschaften des Assets die Metadaten.
+   >Um die Metadaten für ein referenziertes Produkt zu ändern, navigieren Sie zur Produktkonsole (**AEM-Logo** > **Commerce** > **Produkte**). Wählen Sie dort das Produkt aus. Klicken Sie dann auf die **Eigenschaften anzeigen** in der Symbolleiste und bearbeiten Sie die Metadaten auf der Seite Eigenschaften des Assets.
 
-1. Um die Seiten im Katalog neu anzuordnen, tippen oder klicken Sie in der Symbolleiste auf das Symbol **Erstellen**. Wählen Sie dann aus dem Menü **Zusammenführen** aus. Im Assistenten können Sie mit dem Karussell oben die Seiten durch Ziehen neu anordnen. Sie können Seiten auch entfernen.
+1. Um die Seiten im Katalog neu anzuordnen, klicken Sie auf das **Erstellen** Symbol in der Symbolleiste und wählen Sie dann **Zusammenführen** aus dem Menü. Im Assistenten können Sie mit dem Karussell oben die Seiten durch Ziehen neu anordnen. Sie können Seiten auch entfernen.
 
-1. Tippen oder klicken Sie auf **Weiter**. Um eine vorhandene InDesign-Datei als Titelseite zum Katalog hinzuzufügen, tippen oder klicken Sie auf **Durchsuchen** neben dem Feld **Titelseite wählen**. Geben Sie den Pfad der gewünschten Titelseitenvorlage ein.
-1. Tippen oder klicken Sie auf **Speichern** und anschließend auf **Fertig**, um das Dialogfeld zu schließen.
+1. Klicken Sie auf **Weiter**. Um eine vorhandene InDesign-Datei als Titelseite hinzuzufügen, klicken Sie auf **Durchsuchen** neben dem **Titelseite auswählen** und geben Sie den Pfad für die Titelseitenvorlage an.
+1. Klicks **Speichern** und klicken Sie anschließend auf **Fertig** , um das Bestätigungsdialogfeld zu schließen.
 Bei Auswahl der Option **Fertig** wird ein Dialogfeld geöffnet, in dem Sie auswählen können, ob Sie die PDF-Ausgabedarstellung verwenden möchten.
    ![In PDF exportieren](assets/CatalogPDF.png)
 Wenn die Option „Acrobat (PDF)“ ausgewählt ist, wird zusätzlich zur InDesign-Ausgabedarstellung eine PDF-Ausgabedarstellung in **/jcr:content/renditions** erstellt. Sie können alle Ausgabedarstellungen herunterladen, indem Sie das Kontrollkästchen „Ausgabedarstellungen“ im Dialogfeld „Herunterladen“ aktivieren.
@@ -102,4 +102,4 @@ Wenn die Option „Acrobat (PDF)“ ausgewählt ist, wird zusätzlich zur InDesi
 
    ![chlimage_1-119](assets/chlimage_1-119a.png)
 
-   Überprüfen Sie die Seiten in Ihrem Katalog in der Vorschau. Tippen/klicken **Schließen** , um die Vorschau zu schließen.
+   Überprüfen Sie die Seiten in Ihrem Katalog in der Vorschau. Klicks **Schließen** , um die Vorschau zu schließen.

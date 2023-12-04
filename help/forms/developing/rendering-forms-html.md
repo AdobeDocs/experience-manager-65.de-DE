@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4143'
-ht-degree: 80%
+source-wordcount: '4102'
+ht-degree: 79%
 
 ---
 
@@ -99,7 +99,7 @@ In einem mehrseitigen Formular werden Änderungen, die von JavaScript an einer S
 
 Sie können benutzerdefinierte Skripte vor dem Senden eines Formulars aufrufen. Diese Funktion funktioniert in allen verfügbaren Browsern. Sie kann jedoch nur verwendet werden, wenn Benutzer das HTML-Formular wiedergeben, dessen `Output Type`-Eigenschaft auf `Form Body` gesetzt ist. Dies wird nicht funktionieren, wenn `Output Type` `Full HTML` ist. Die Schritte zur Konfiguration dieser Funktion finden Sie unter Konfigurieren von Formularen in der Administrationshilfe.
 
-Sie müssen zunächst eine Callback-Funktion definieren, die vor dem Absenden des Formulars aufgerufen wird, wobei der Name der Funktion `_user_onsubmit` lautet. Es wird davon ausgegangen, dass die Funktion keine Ausnahme auslöst, oder falls doch, wird die Ausnahme ignoriert. Es wird empfohlen, die JavaScript-Funktion im Head-Abschnitt der HTML-Datei zu platzieren. Sie können sie jedoch auch an einer beliebigen Stelle vor dem Ende der Skript-Tags deklarieren, die `xfasubset.js` enthalten.
+Definieren Sie zuerst eine Rückruffunktion, die vor dem Senden des Formulars aufgerufen wird, wobei der Name der Funktion `_user_onsubmit`. Es wird davon ausgegangen, dass die Funktion keine Ausnahme auslöst, oder falls doch, wird die Ausnahme ignoriert. Es wird empfohlen, die JavaScript-Funktion im Head-Abschnitt der HTML-Datei zu platzieren. Sie können sie jedoch auch an einer beliebigen Stelle vor dem Ende der Skript-Tags deklarieren, die `xfasubset.js` enthalten.
 
 Wenn der Formularserver eine XDP-Datei rendert, die eine Dropdown-Liste enthält, werden neben der Erstellung der Dropdown-Liste auch zwei ausgeblendete Textfelder erstellt. Diese Textfelder speichern die Daten der Dropdown-Liste (eines speichert den Anzeigenamen der Optionen, das andere speichert den Wert für die Optionen). Daher werden jedes Mal, wenn ein Benutzer das Formular sendet, die gesamten Daten der Dropdown-Liste gesendet. Wenn Sie nicht jedes Mal so viele Daten senden möchten, können Sie ein benutzerdefiniertes Skript schreiben, um dies zu deaktivieren. Beispiel: Der Name der Dropdown-Liste lautet `drpOrderedByStateProv` und wird in die Kopfzeile des Teilformulars eingeschlossen. Der Name des HTML-Eingabeelements lautet `header[0].drpOrderedByStateProv[0]`. Der Name der ausgeblendeten Felder, die die Daten der Dropdown-Liste speichern und senden, hat die folgenden Namen: `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
 
@@ -127,7 +127,7 @@ Skripte, die auf dem Client oder sowohl auf dem Client als auch auf dem Server a
 
 Beim Ausführen von Skripten auf dem Client kann nur das aktuelle Bedienfeld, das angezeigt wird, das Skript verwenden. Sie können beispielsweise kein Skript für Felder erstellen, die sich im Bedienfeld A befinden, wenn Bedienfeld B angezeigt wird. Beim Ausführen von Skripten auf dem Server können alle Bedienfelder aufgerufen werden.
 
-Außerdem müssen Sie bei der Verwendung von SOM-Ausdrücken (Scripting Object Model) in Skripten, die auf dem Client ausgeführt werden, vorsichtig sein. Nur eine vereinfachte Untergruppe von SOM-Ausdrücken wird von Skripten unterstützt, die auf dem Client ausgeführt werden.
+Seien Sie vorsichtig bei der Verwendung von SOM-Ausdrücken (Scripting Object Model) in Skripten, die auf dem Client ausgeführt werden. Nur eine vereinfachte Untergruppe von SOM-Ausdrücken wird von Skripten unterstützt, die auf dem Client ausgeführt werden.
 
 ## Ereigniszeitpunkt {#event-timing}
 
@@ -236,7 +236,7 @@ Wenn Sie ein AHTML-Formular rendern, wird empfohlen, keine Symbolleiste zum Form
 
 **Rendern eines HTML-Formulars**
 
-Um ein HTML-Formular zu rendern, müssen Sie einen Formularentwurf angeben, der in Designer erstellt und als XDP-Datei gespeichert wurde. Sie müssen auch einen HTML-Transformationstyp auswählen. Sie können beispielsweise den HTML-Transformationstyp angeben, der dynamische HTML für Internet Explorer 5.0 oder höher rendert.
+Um ein HTML-Formular zu rendern, geben Sie ein Formular-Design an, das in Designer erstellt und als XDP-Datei gespeichert wurde. Wählen Sie einen HTML-Transformationstyp aus. Sie können beispielsweise den HTML-Transformationstyp angeben, der dynamische HTML für Internet Explorer 5.0 oder höher rendert.
 
 Für die Wiedergabe eines HTML-Formulars sind auch Werte erforderlich, z. B. URI-Werte, die zum Rendern anderer Formulartypen erforderlich sind.
 
@@ -284,14 +284,14 @@ So rendern Sie ein HTML-Formular mithilfe der Forms-API (Java):
 
    >[!NOTE]
    >
-   Forms wird beim HTML nicht erfolgreich gerendert, wenn die `StandAlone` Option ist `true` und `ApplicationWebRoot` verweist auf einen anderen Server als den J2EE-Anwendungsserver, der als Host für AEM Forms dient (die `ApplicationWebRoot` -Wert wird mithilfe der Variablen `URLSpec` -Objekt, das an die `FormsServiceClient` -Objekt `(Deprecated) renderHTMLForm` -Methode). Wenn die `ApplicationWebRoot` ein anderer Server ist, der als Host für AEM Forms dient, muss der URI-Wert des Web-Stamms in der Administration Console als URI-Wert für das Web-Programm des Formulars festgelegt werden. Dazu können Sie sich bei Administration Console anmelden, auf „Services“ > „Forms“ klicken und den URI des Web-Stamms auf https://server-name:port/FormServer setzen. Speichern Sie dann Ihre Einstellungen.
+   Forms wird beim HTML nicht erfolgreich gerendert, wenn die `StandAlone` Option ist `true` und `ApplicationWebRoot` verweist auf einen anderen Server als den J2EE-Anwendungsserver, der als Host für AEM Forms dient (die `ApplicationWebRoot` -Wert wird mithilfe der Variablen `URLSpec` -Objekt, das an die `FormsServiceClient` -Objekt `(Deprecated) renderHTMLForm` -Methode). Wenn es sich bei `ApplicationWebRoot` um einen anderen Server als den handelt, auf dem AEM Forms gehostet wird, muss der der URI-Wert des Web-Stamms in der Administration Console als URI-Wert für das Web-Programm des Formulars festgelegt werden. Dazu können Sie sich bei Administration Console anmelden, auf „Services“ > „Forms“ klicken und den URI des Web-Stamms auf https://server-name:port/FormServer setzen. Speichern Sie dann Ihre Einstellungen.
 
 1. Rendern Sie ein HTML-Formular
 
    Rufen Sie die `FormsServiceClient` -Objekt `(Deprecated) renderHTMLForm` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Ein `TransformTo`-Auflistungswert, der den Präferenztyp für HTML angibt. Um beispielsweise ein HTML-Formular zu rendern, das mit dynamischem HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
+   * Ein `TransformTo`-Auflistungswert, der den HTML-Voreinstellungstyp angibt. Um beispielsweise ein HTML-Formular zu rendern, das mit Dynamic HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
    * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document`-Objekt.
    * Das `HTMLRenderSpec`-Objekt, das HTML-Laufzeitoptionen speichert.
    * Ein Zeichenfolgenwert, der den Wert der `HTTP_USER_AGENT`-Kopfzeile angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
@@ -303,7 +303,7 @@ So rendern Sie ein HTML-Formular mithilfe der Forms-API (Java):
 1. Schreiben des Formulardaten-Streams in den Client-Webbrowser
 
    * Erstellen Sie eine `com.adobe.idp.Document` -Objekt durch Aufrufen der `FormsResult` -Objekt `getOutputContent` -Methode.
-   * Ermitteln Sie den Content-Typ des `com.adobe.idp.Document`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
+   * Ermitteln Sie den Inhaltstyp des `com.adobe.idp.Document`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
    * Legen Sie die `javax.servlet.http.HttpServletResponse` Inhaltstyp des Objekts durch Aufrufen seiner `setContentType` -Methode verwenden und den Inhaltstyp der `com.adobe.idp.Document` -Objekt.
    * Erstellen Sie eine `javax.servlet.ServletOutputStream` -Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser durch Aufrufen der `javax.servlet.http.HttpServletResponse` -Objekt `getOutputStream` -Methode.
    * Erstellen Sie eine `java.io.InputStream` -Objekt durch Aufrufen der `com.adobe.idp.Document` -Objekt `getInputStream` -Methode.
@@ -342,14 +342,14 @@ So rendern Sie ein HTML-Formular mithilfe der Forms-API (Webservice):
 
    >[!NOTE]
    >
-   Forms wird beim HTML nicht erfolgreich gerendert, wenn die `StandAlone` Option ist `true` und `ApplicationWebRoot` verweist auf einen anderen Server als den J2EE-Anwendungsserver, der als Host für AEM Forms dient (die `ApplicationWebRoot` -Wert wird mithilfe der Variablen `URLSpec` -Objekt, das an die `FormsServiceClient` -Objekt `(Deprecated) renderHTMLForm` -Methode). Wenn die `ApplicationWebRoot` ein anderer Server ist, der als Host für AEM Forms dient, muss der URI-Wert des Web-Stamms in der Administration Console als URI-Wert für das Web-Programm des Formulars festgelegt werden. Dazu können Sie sich bei Administration Console anmelden, auf „Services“ > „Forms“ klicken und den URI des Web-Stamms auf https://server-name:port/FormServer setzen. Speichern Sie dann Ihre Einstellungen.
+   Forms wird beim HTML nicht erfolgreich gerendert, wenn die `StandAlone` Option ist `true` und `ApplicationWebRoot` verweist auf einen anderen Server als den J2EE-Anwendungsserver, der als Host für AEM Forms dient (die `ApplicationWebRoot` -Wert wird mithilfe der Variablen `URLSpec` -Objekt, das an die `FormsServiceClient` -Objekt `(Deprecated) renderHTMLForm` -Methode). Wenn es sich bei `ApplicationWebRoot` um einen anderen Server als den handelt, auf dem AEM Forms gehostet wird, muss der der URI-Wert des Web-Stamms in der Administration Console als URI-Wert für das Web-Programm des Formulars festgelegt werden. Dazu können Sie sich bei Administration Console anmelden, auf „Services“ > „Forms“ klicken und den URI des Web-Stamms auf https://server-name:port/FormServer setzen. Speichern Sie dann Ihre Einstellungen.
 
 1. Rendern Sie ein HTML-Formular
 
    Rufen Sie die `FormsService` -Objekt `(Deprecated) renderHTMLForm` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Ein `TransformTo`-Auflistungswert, der den Präferenztyp für HTML angibt. Um beispielsweise ein HTML-Formular zu rendern, das mit dynamischem HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
+   * Ein `TransformTo`-Auflistungswert, der den HTML-Voreinstellungstyp angibt. Um beispielsweise ein HTML-Formular zu rendern, das mit Dynamic HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
    * Ein `BLOB`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie `null`. (Siehe [Vorausfüllen von Formularen mit fließfähigen Layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts).)
    * Das `HTMLRenderSpec`-Objekt, das HTML-Laufzeitoptionen speichert.
    * Ein Zeichenfolgenwert, der den Wert der `HTTP_USER_AGENT`-Kopfzeile angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Wenn Sie diesen Wert nicht festlegen möchten, können Sie eine leere Zeichenfolge übergeben.
@@ -368,7 +368,7 @@ So rendern Sie ein HTML-Formular mithilfe der Forms-API (Webservice):
 
    * Erstellen Sie eine `FormResult` -Objekt durch Abrufen des Werts der `com.adobe.idp.services.holders.FormsResultHolder` -Objekt `value` Datenelement.
    * Erstellen Sie eine `BLOB` -Objekt, das Formulardaten enthält, durch Aufrufen der `FormsResult` -Objekt `getOutputContent` -Methode.
-   * Ermitteln Sie den Content-Typ des `BLOB`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
+   * Ermitteln Sie den Inhaltstyp des `BLOB`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
    * Legen Sie die `javax.servlet.http.HttpServletResponse` Inhaltstyp des Objekts durch Aufrufen seiner `setContentType` -Methode verwenden und den Inhaltstyp der `BLOB` -Objekt.
    * Erstellen Sie eine `javax.servlet.ServletOutputStream` -Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser durch Aufrufen der `javax.servlet.http.HttpServletResponse` -Objekt `getOutputStream` -Methode.
    * Erstellen Sie ein Byte-Array und füllen Sie es durch Aufrufen der `BLOB` -Objekt `getBinaryData` -Methode. Mit dieser Aufgabe wird dem Byte-Array der Inhalt des `FormsResult`-Objekts zugewiesen.

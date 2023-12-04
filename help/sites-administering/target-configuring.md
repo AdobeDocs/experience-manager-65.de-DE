@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2199'
-ht-degree: 98%
+source-wordcount: '2122'
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ Der [Opt-in-Assistent](/help/sites-administering/opt-in.md), mit dem [AEM mit Ad
 
 Darüber hinaus können Sie Adobe Target auch als Quelle für das Reporting für bestimmte Inhalte konfigurieren, indem Sie die „A4T-Analytics-Cloud-Konfiguration“ konfigurieren.
 
-Navigieren Sie über **Tools** > **Bereitstellung** > **Cloud** zu **Cloud-Services**, um die Cloud-Konfiguration und das Framework zu ermitteln. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)) Klicken oder tippen Sie unterhalb von Adobe Target auf **Konfigurationen anzeigen**.
+Navigieren Sie über **Tools** > **Bereitstellung** > **Cloud** zu **Cloud-Services**, um die Cloud-Konfiguration und das Framework zu ermitteln. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)) Klicken Sie unter Adobe Target auf **Konfigurationen anzeigen**.
 
 ### Eigenschaften der bereitgestellten Target-Konfiguration {#provisioned-target-configuration-properties}
 
@@ -90,7 +90,7 @@ Dazu geben Sie an, mit welcher A4T-Cloud-Konfiguration Sie Ihre Adobe Target-Clo
    >1. Navigieren Sie zu **Tools** > **Allgemein** > **CRXDE Lite**.
    1. Navigieren Sie zum [Dialogfeld „A4T-Analytics-Konfiguration“](#a4t-analytics-config-dialog) (siehe unten)
    1. Legen Sie die Eigenschaft **deaktivieren** auf **false** fest.
-   1. Tippen oder klicken Sie auf **Alle speichern**.
+   1. Klicken Sie auf **Alle speichern**.
 
 #### Dialogfeld „A4T-Analytics-Konfiguration“ {#a4t-analytics-config-dialog}
 
@@ -153,7 +153,7 @@ Gehen Sie wie folgt vor, um eine Target-Cloud-Konfiguration in AEM zu erstellen:
    1. Navigieren Sie zu **Tools** > **Allgemein** > **CRXDE Lite**.
    1. Navigieren Sie zu **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**.
    1. Legen Sie die Eigenschaft **deaktivieren** auf **false** fest.
-   1. Tippen oder klicken Sie auf **Alle speichern**.
+   1. Klicken Sie auf **Alle speichern**.
 
 1. Geben Sie im Dialogfeld Werte für diese Eigenschaften an.
 
@@ -243,8 +243,8 @@ Wenn Sie dem Framework eine Seite zuordnen, erben die untergeordneten Seiten die
 1. Navigieren Sie in der **Sites-Konsole** zu der Website, die Sie konfigurieren möchten.
 1. Wählen Sie über [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions) oder den [Auswahlmodus](/help/sites-authoring/basic-handling.md) die Option **Eigenschaften anzeigen**.
 1. Wählen Sie die Registerkarte **Cloud-Services** aus.
-1. Tippen/klicken Sie auf **Bearbeiten**.
-1. Tippen/Klicken Sie auf **Konfiguration hinzufügen** unter **Cloud-Service-Konfigurationen** und wählen Sie **Adobe Target**.
+1. Klicken Sie auf **Bearbeiten**.
+1. Klicks **Konfiguration hinzufügen** under **Cloud Service-Konfigurationen** und wählen **Adobe Target**.
 
    ![Konfiguration hinzufügen](assets/chlimage_1-165.png)
 
@@ -254,7 +254,7 @@ Wenn Sie dem Framework eine Seite zuordnen, erben die untergeordneten Seiten die
    >
    Stellen Sie sicher, dass Sie das spezifische **Framework** auswählen, das Sie erstellt haben, und nicht die Target-Cloud-Konfiguration, unter der es erstellt wurde.
 
-1. Klicken oder tippen Sie auf **Fertig**.
+1. Klicken Sie auf **Fertig**.
 1. Aktivieren Sie die Stammseite der Website, um sie auf dem Veröffentlichungs-Server zu replizieren. (Siehe [Veröffentlichen von Seiten](/help/sites-authoring/publishing-pages.md).)
 
    >[!NOTE]

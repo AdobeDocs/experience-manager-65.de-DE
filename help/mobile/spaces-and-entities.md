@@ -1,18 +1,14 @@
 ---
 title: Platzierungen und Entitäten
-seo-title: Developing AEM Mobile Content Services
 description: Auf dieser Seite finden Sie eine Landingpage zur Entwicklung von AEM Mobile Content Services.
-seo-description: This page serves a landing page for developing AEM Mobile Content Services.
-uuid: eab5a61b-a9e8-4863-90a3-df1f18510cd8
 contentOwner: Jyotika Syal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: ef568577-c74e-4fc2-b66e-eedac2948310
 exl-id: 44591900-b01b-4a33-9910-839564477e7d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1191'
-ht-degree: 3%
+source-wordcount: '1206'
+ht-degree: 5%
 
 ---
 
@@ -56,7 +52,7 @@ Nachdem Sie die Leerzeichen im Dashboard konfiguriert haben, führen Sie die fol
 
 ## Verwalten eines Speicherplatzes {#managing-a-space}
 
-Klicken Sie nach der Erstellung eines Platzes auf die linke Seite, um den Bereich in der Liste zu verwalten.
+Nachdem Sie ein Leerzeichen erstellt haben, klicken Sie auf die linke Seite, um den Bereich in der Liste zu verwalten.
 
 Sie können die Eigenschaften des Bereichs anzeigen, das Leerzeichen löschen oder den Bereich und dessen Inhalt in einer AEM Veröffentlichungsinstanz veröffentlichen.
 
@@ -111,7 +107,7 @@ Die **Sprachkopie** können Autoren ihre Master-Sprachkopie kopieren und dann ei
 
 ### Hinzufügen von Sprachkopien {#adding-language-copy}
 
-1. Nachdem Sie einen Raum erstellt haben, klicken Sie auf diesen Bereich, um eine Sprachkopie zu erstellen.
+1. Nachdem Sie einen Bereich erstellt haben, klicken Sie auf diesen Bereich, um eine Sprachkopie zu erstellen.
 
    Klicks **Erstellen** und wählen **Sprachkopie**.
 
@@ -142,7 +138,7 @@ Die **Sprachkopie** können Autoren ihre Master-Sprachkopie kopieren und dann ei
 
    >[!NOTE]
    >
-   >Um in einen Ordner zu navigieren und dessen Inhalt anzuzeigen oder einen Unterordner oder eine Entität hinzuzufügen, klicken Sie auf den Titel des Ordners in der Inhaltsliste der Platzierung.
+   >Um in einen Ordner zu navigieren und dessen Inhalt anzuzeigen oder einen Unterordner oder eine Entität hinzuzufügen, klicken Sie in der Inhaltsliste der Platzierung auf den Titel des Ordners.
 
 ## Arbeiten mit Entitäten in einem Raum {#working-with-entities-in-a-space}
 
@@ -158,7 +154,7 @@ Wenn Entitätsuntergeordnete Elemente, die andere Entitäten sind, für die Date
 
 ### Erstellen einer Entität {#creating-an-entity}
 
-1. Öffnen Sie die Space-Konsole und klicken Sie auf den Titel des Platzes.
+1. Öffnen Sie die Space-Konsole und klicken Sie auf den Titel des Bereichs.
 
    Optional können Sie zum Ordner navigieren, indem Sie auf den Titel des Ordners in der Liste klicken.
 

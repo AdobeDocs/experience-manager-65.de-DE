@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 exl-id: 10ea7d2e-6e44-4d5c-a2b2-63c73b18f172
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1563'
-ht-degree: 60%
+source-wordcount: '1482'
+ht-degree: 56%
 
 ---
 
@@ -47,7 +47,7 @@ Gehen Sie wie folgt vor, um mit dem Connector zu beginnen:
 * Laden Sie die Paketverteilungsdatei für den Connector von Software Distribution herunter.
 * Gültige kopieren *license.properties* in den Ordner, der die *cq-quickstart-6.4.0.jar* -Datei.
 
-* Doppelklicken/tippen Sie auf die JAR-Datei, um AEM zu starten, oder starten Sie sie über die Befehlszeile.
+* Doppelklicken Sie auf die JAR-Datei, um AEM zu starten, oder starten Sie sie über die Befehlszeile.
 * Installieren Sie das Connector-Paket aus Package Manager.
 * Konfigurieren Sie die Connector-Optionen.
 
@@ -80,7 +80,7 @@ Der Connector unterstützt Folgendes:
    * Microsoft Office SharePoint Server (MOSS) 2010
    * Microsoft Office SharePoint Server (MOSS) 2013
 
-* Wenn Sie Unterstützung für benutzerdefinierte Bereitstellungen des Connectors benötigen (OEM, besondere Anforderungen, benutzerdefinierte Authentifizierungsmethoden), wenden Sie sich an das Adobe Office für Ihre .
+* Wenn Sie Unterstützung für benutzerdefinierte Bereitstellungen des Connectors (OEM, besondere Anforderungen, benutzerdefinierte Authentifizierungsmethoden) benötigen, wenden Sie sich an das Adobe-Büro für Ihre Region.
 
 >[!NOTE]
 >
@@ -95,14 +95,14 @@ Produktfeatures, Beispiele und Hotfixes werden über Software Distribution verte
 
 Installieren des Inhaltspakets für den Connector.
 
-1. Öffnen Sie ein Support-Ticket für Adoben, um das Connector-Feature Pack anzufordern.
+1. Öffnen Sie ein Adobe Support-Ticket, um das Connector-Feature Pack anzufordern.
 1. Laden Sie das Paket herunter, sobald es verfügbar ist, und öffnen Sie dann Package Manager für Ihre AEM-Instanz.
-1. Tippen/klicken Sie auf der Seite mit der Paketbeschreibung auf **Installieren**.
-1. Tippen/klicken Sie im Dialogfeld **Paket installieren** auf **Installieren**.
+1. Klicks **Installieren** von der Paketbeschreibungsseite aus.
+1. Aus dem **Installationspaket** dialog, klicken Sie **Installieren**.
 
    **Hinweis:** Vergewissern Sie sich, dass Sie als Admin angemeldet sind.
 
-1. Tippen/klicken Sie nach Abschluss der Paketinstallation auf **Schließen**.
+1. Wenn das Paket installiert ist, klicken Sie auf **Schließen**.
 
 ## Konfigurieren des SharePoint-Connectors {#configuring-sharepoint-connector}
 
@@ -118,7 +118,7 @@ Führen Sie die folgenden Schritte aus, um die URL der SharePoint-Server-Instanz
 1. Suchen Sie nach dem Bundle **Day JCR Connector for Microsoft Sharepoint**.
 1. Bearbeiten der Konfigurationswerte.
 1. Legen Sie die SharePoint-Server-URL als Wert von **Arbeitsbereiche**.
-1. Tippen oder klicken Sie auf **Speichern**.
+1. Klicken Sie auf **Speichern**.
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -202,7 +202,7 @@ Der JCR-Connector für Microsoft SharePoint 2010 und Microsoft SharePoint 2013
 
 Navigieren Sie zu: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
 
-1. Klicken Sie auf „OSGi“ > „Konfiguration“.
+1. Klicken Sie auf OSGI > Konfiguration
 1. Suchen Sie nach „Day JCR Connector for Microsoft Sharepoint“
 1. Klicken Sie auf „Konfigurationswerte bearbeiten“
 1. Legen Sie den Wert von „SharePoint-Verbindungs-Factory“ auf „com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory“ fest.
@@ -233,7 +233,7 @@ Erstellen von Benutzenden in AEM
 1. Geben Sie das entsprechende Passwort an.
 1. Klicken Sie auf das grüne Häkchen, um die Benutzerin oder den Benutzer zu erstellen.
 
-Hinzufügen des Benutzers zur Administratorgruppe:
+So fügen Sie den Benutzer zur Administratorgruppe hinzu:
 
 1. Navigieren Sie zur Gruppenverwaltung.
 1. Klicken Sie auf den Knoten „a“.

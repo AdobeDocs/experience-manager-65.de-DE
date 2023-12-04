@@ -7,10 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 0f3aaa0a-ccfb-4162-97a6-ee5485595d28
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1553'
-ht-degree: 29%
+source-wordcount: '1530'
+ht-degree: 28%
 
 ---
 
@@ -107,7 +107,7 @@ So exportieren Sie AEM Benutzer als Salesforce-Leads:
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
-1. Wählen Sie den AEM Benutzer, den Sie als Lead erstellen möchten, als **Nutzlast** für diesen Workflow (Startseite -> Benutzer). Stellen Sie sicher, dass Sie den Profilknoten des Benutzers auswählen, da er Informationen wie **givenName**, und  **familyName**, die Salesforce-Leads zugeordnet sind **FirstName** und **LastName** -Felder.
+1. Wählen Sie den AEM Benutzer, den Sie als Lead erstellen möchten, als **Nutzlast** für diesen Workflow (Startseite > Benutzer). Stellen Sie sicher, dass Sie den Profilknoten des Benutzers auswählen, da er Informationen wie **givenName**, und  **familyName**, die Salesforce-Leads zugeordnet sind **FirstName** und **LastName** -Felder.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 

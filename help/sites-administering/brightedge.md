@@ -1,7 +1,7 @@
 ---
 title: Integrieren mit BrightEdge Content Optimizer
 seo-title: Integrating with BrightEdge Content Optimizer
-description: Informieren Sie sich über die Integration von AEM mit BrightEdge Content Optimizer.
+description: Erfahren Sie mehr über die Integration von AEM mit BrightEdge Content Optimizer.
 seo-description: Learn about integrating AEM with BrightEdge Content Optimizer.
 uuid: 7075dd3c-2fd6-4050-af1c-9b16ad4366ec
 contentOwner: Guillaume Carlino
@@ -10,61 +10,61 @@ topic-tags: integration
 content-type: reference
 discoiquuid: cf25c9a8-0555-4c67-8aa5-55984fd8d301
 exl-id: f14cc5fd-aeab-4619-b926-b6f1df7e50e5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '495'
-ht-degree: 100%
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 9%
 
 ---
 
 # Integrieren mit BrightEdge Content Optimizer{#integrating-with-brightedge-content-optimizer}
 
-Erstellen Sie eine BrightEdge-Cloudkonfiguration, sodass AEM mit den Anmeldedaten Ihres BrightEdge-Kontos eine Verbindung herstellen kann. Sie können mehrere Konfigurationen erstellen, wenn Sie mehrere Konten nutzen.
+Erstellen Sie eine BrightEdge-Cloud-Konfiguration, damit AEM über die Anmeldedaten Ihres BrightEdge-Kontos eine Verbindung herstellen können. Sie können mehrere Konfigurationen erstellen, wenn Sie mehrere Konten verwenden.
 
-Wenn Sie die Konfiguration erstellen, geben Sie einen Titel ein. Der Titel sollte aussagekräftig sein, sodass die Konfiguration mit dem BrightEdge-Konto in Verbindung gebracht werden kann. Wenn ein Seitenautor oder -administrator eine Webseite mit dem BrightEdge-Konto verknüpft, wird dieser Titel in einer Dropdown-Liste angezeigt.
+Wenn Sie die Konfiguration erstellen, geben Sie einen Titel an. Der Titel sollte beschreibend sein, damit Benutzer die Konfiguration mit dem BrightEdge-Konto korrelieren können. Wenn ein Seitenautor oder -administrator eine Webseite mit dem BrightEdge-Konto verknüpft, wird dieser Titel in einer Dropdown-Liste angezeigt.
 
-1. Klicken Sie in der Leiste auf „Tools“ > „Vorgänge“ > „Cloud“ > „Cloud-Services“.
-1. Klicken Sie auf den Link, der im Bereich „BrightEdge Content Optimizer“ angezeigt wird. Der Linktext richtet sich danach, ob eine BrightEdge-Konfiguration erstellt wurde oder nicht:
+1. Klicken Sie auf der Leiste auf Tools > Vorgänge > Cloud > Cloud Service.
+1. Klicken Sie auf den Link, der im Abschnitt BrightEdge Content Optimizer angezeigt wird. Ob eine BrightEdge-Konfiguration erstellt wurde, bestimmt den Link-Text:
 
-   * „Jetzt konfigurieren“: Dieser Link wird angezeigt, wenn keine Konfiguration erstellt wurde.
-   * „Konfigurationen anzeigen“: Dieser Link wird angezeigt, wenn mindestens eine Konfiguration erstellt wurde.
+   * Jetzt konfigurieren: Dieser Link wird angezeigt, wenn keine Konfiguration erstellt wurde.
+   * Konfigurationen anzeigen: Dieser Link wird angezeigt, wenn eine oder mehrere Konfigurationen erstellt wurden.
 
    ![chlimage_1-4](assets/chlimage_1-4a.png)
 
-1. Wenn Sie auf „Konfigurationen anzeigen“ geklickt haben, klicken Sie auf den Link mit dem Pluszeichen (+) neben „Verfügbare Konfigurationen“.
-1. Geben Sie einen Titel für die Konfiguration ein. Optional können Sie einen Namen für den Knoten eingeben, mit dem die Konfiguration im Repository gespeichert wird. Klicken Sie auf „Erstellen“.
-1. Geben Sie im Dialogfeld „BrightEdge Content Optimizer-Konfiguration“ den Benutzernamen und das Kennwort des BrightEdge-Kontos ein und klicken Sie dann auf „OK“.
+1. Wenn Sie auf Konfigurationen anzeigen geklickt haben, klicken Sie auf den Link + neben Verfügbare Konfigurationen.
+1. Geben Sie einen Titel für die Konfiguration ein. Geben Sie optional einen Namen für den Knoten ein, der zum Speichern der Konfiguration im Repository verwendet wird. Klicken Sie auf „Erstellen“.
+1. Geben Sie im Dialogfeld &quot;Konfiguration des BrightEdge Content Optimizer&quot;den Benutzernamen und das Kennwort des BrightEdge-Kontos ein und klicken Sie auf &quot;OK&quot;.
 
 ## Bearbeiten einer BrightEdge-Konfiguration {#editing-a-brightedge-configuration}
 
-Ändern Sie bei Bedarf den Benutzernamen und das Kennwort einer BrightEdge-Konfiguration. Die Änderungen wirken sich auf alle Seiten aus, die die Konfiguration verwenden.
+Ändern Sie bei Bedarf den Benutzernamen und das Kennwort einer BrightEdge-Konfiguration. Die Änderungen betreffen alle Seiten, die die Konfiguration verwenden.
 
-1. Klicken Sie in der Leiste auf „Tools“ > „Vorgänge“ > „Cloud“ > „Cloud-Services“.
-1. Klicken Sie im Bereich „BrightEdge Content Optimizer“ auf „Konfigurationen anzeigen“.
+1. Klicken Sie auf der Leiste auf Tools > Vorgänge > Cloud > Cloud Service.
+1. Klicken Sie im Abschnitt &quot;BrightEdge Content Optimizer&quot;auf Konfigurationen anzeigen .
 
    ![chlimage_1-5](assets/chlimage_1-5a.png)
 
 1. Klicken Sie auf den Namen der Konfiguration, die Sie bearbeiten möchten.
-1. Klicken Sie auf „Bearbeiten“, bearbeiten Sie die Eigenschaftswerte und klicken Sie anschließend auf „OK“.
+1. Klicken Sie auf &quot;Bearbeiten&quot;, ändern Sie die Eigenschaftswerte und klicken Sie auf &quot;OK&quot;.
 
 ## Verknüpfen von Seiten mit einer BrightEdge-Konfiguration {#associating-pages-with-a-brightedge-configuration}
 
-Verknüpfen Sie Seiten mit einer BrightEdge-Konfiguration, um Seitendaten zur Analyse an den BrightEdge-Service zu übermitteln. Wenn Sie eine Seite mit einer Konfiguration verknüpfen, erben die untergeordneten Seiten diese Verknüpfung. In der Regel wird die Startseite einer Website verknüpft, damit die Daten aller Seiten an BrightEdge übermittelt werden.
+Verknüpfen Sie Seiten mit einer BrightEdge-Konfiguration, um Seitendaten zur Analyse an den BrightEdge-Dienst zu senden. Wenn Sie eine Seite mit einer Konfiguration verknüpfen, übernehmen die untergeordneten Seiten die Zuordnung. In der Regel verknüpfen Sie die Startseite Ihrer Site so, dass Daten von allen Seiten an BrightEdge gesendet werden.
 
 1. Öffnen Sie die klassische Websites-Konsole. ([http://localhost:4502/siteadmin#/content](http://localhost:4502/siteadmin#/content))
-1. Wählen Sie im Websitebaum den Ordner oder die Seite aus, der bzw. die die Seite enthält, die Sie mit der BrightEdge-Konfiguration verknüpfen möchten.
-1. Klicken Sie für die Konfiguration in der Liste der Seiten mit der rechten Maustaste auf die Seite und klicken Sie auf „Eigenschaften“.
-1. Klicken Sie auf der Registerkarte „Cloud-Services“ auf die Schaltfläche „Service hinzufügen“. Wählen Sie im Dialogfeld „Cloud-Services“ die Option „BrightEdge Content Optimizer“ aus und klicken Sie anschließend auf „OK“.
-1. Wählen Sie in der BrightEdge Content Optimizer-Liste die BrightEdge-Konfiguration aus, mit der Sie die Seite verknüpfen möchten, und klicken Sie dann auf „OK“.
+1. Wählen Sie in der Website-Struktur den Ordner oder die Seite aus, der/die die Seite enthält, die Sie mit der BrightEdge-Konfiguration verknüpfen möchten.
+1. Klicken Sie in der Liste der Seiten mit der rechten Maustaste auf die zu konfigurierende Seite und klicken Sie auf Eigenschaften.
+1. Klicken Sie auf der Registerkarte &quot;Cloud Service&quot;auf die Schaltfläche &quot;Dienst hinzufügen&quot;, wählen Sie im Dialogfeld &quot;Cloud Service&quot;die Option &quot;BrightEdge Content Optimizer&quot;und klicken Sie dann auf &quot;OK&quot;.
+1. Wählen Sie in der Liste &quot;BrightEdge Content Optimizer&quot;die BrightEdge-Konfiguration aus, die mit der Seite verknüpft werden soll, und klicken Sie dann auf &quot;OK&quot;.
 
    ![chlimage_1-6](assets/chlimage_1-6a.png)
 
 ## Aktivieren einer BrightEdge-Konfiguration {#activating-a-brightedge-configuration}
 
-Aktivieren Sie eine BrightEdge-Konfiguration, um sie auf der Veröffentlichungsinstanz zu replizieren und es veröffentlichten Seiten zu ermöglichen, mit dem BrightEdge-Service zu interagieren.
+Aktivieren Sie eine BrightEdge-Konfiguration, um sie in der Veröffentlichungsinstanz zu replizieren und veröffentlichte Seiten für die Interaktion mit dem BrightEdge-Dienst zu aktivieren.
 
-1. Klicken Sie in der Leiste auf „Sites“ und suchen und wählen Sie dann die Seite aus, die Sie mit der BrightEdge-Konfiguration verknüpft haben.
-1. Klicken oder tippen Sie auf das Symbol „Veröffentlichen“ und anschließend auf „Veröffentlichen“.
+1. Klicken Sie in der Leiste auf Sites , navigieren Sie zu der Seite, die Sie mit der BrightEdge-Konfiguration verknüpft haben, und wählen Sie sie aus.
+1. Klicken Sie auf das Symbol Veröffentlichen und dann auf Veröffentlichen .
 
    ![chlimage_1-7](assets/chlimage_1-7a.png)
 

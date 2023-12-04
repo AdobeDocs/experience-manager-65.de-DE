@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 89%
+source-wordcount: '964'
+ht-degree: 80%
 
 ---
 
@@ -34,7 +34,7 @@ Um dies umzusetzen, erteilen Sie am besten der Gruppe **projects-users** Lesezug
 
 Führen Sie diese Schritte aus, um ein Projekt zu erstellen.
 
-1. Tippen oder klicken Sie in der **Projektekonsole** auf **Erstellen**, um den Assistenten zur **Projekterstellung** zu öffnen.
+1. Im **Projekte** Console, klicken Sie auf **Erstellen** , um die **Projekt erstellen** Assistent.
 1. Wählen Sie eine Vorlage aus und klicken Sie auf **Weiter**. Weitere Informationen zu den standardmäßigen Projektvorlagen finden Sie [hier](/help/sites-authoring/projects.md#project-templates).
 
    ![Assistent zur Projekterstellung](assets/create-project-wizard.png)
@@ -43,7 +43,7 @@ Führen Sie diese Schritte aus, um ein Projekt zu erstellen.
 
    ![Schritt „Eigenschaften“ des Assistenten](assets/create-project-wizard-properties.png)
 
-1. Tippen oder klicken Sie auf **Erstellen**. Daraufhin werden Sie gefragt, ob Sie ein neues Projekt öffnen oder zur Konsole zurückkehren möchten.
+1. Klicken Sie auf **Erstellen**. Daraufhin werden Sie gefragt, ob Sie ein neues Projekt öffnen oder zur Konsole zurückkehren möchten.
 
 Die Vorgehensweise zum Erstellen eines Projekts ist für alle Projektvorlagen identisch. Unterschiede zwischen den Projekttypen gibt es in Bezug auf verfügbare [Benutzerrollen](/help/sites-authoring/projects.md) und [Workflows](/help/sites-authoring/projects-with-workflows.md).
 
@@ -54,11 +54,11 @@ Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit zu gruppieren, um si
 So ordnen Sie Ihrem Projekt Ressourcen zu:
 
 1. Öffnen Sie das Projekt in der **Projektekonsole**.
-1. Tippen/klicken Sie auf **Bereich hinzufügen** und wählen Sie die gewünschte Kachel aus. Sie können mehrere Arten von Kacheln auswählen.
+1. Klicks **Kachel hinzufügen** und wählen Sie die Kachel aus, die Sie mit Ihrem Projekt verknüpfen möchten. Sie können mehrere Arten von Kacheln auswählen.
 
    ![Kachel hinzufügen](assets/project-add-tile.png)
 
-1. Tippen oder klicken Sie auf **Erstellen**. Die Ressource wird mit Ihrem Projekt verknüpft und danach können Sie über Ihr Projekt auf sie zugreifen.
+1. Klicken Sie auf **Erstellen**. Die Ressource wird mit Ihrem Projekt verknüpft und danach können Sie über Ihr Projekt auf sie zugreifen.
 
 ### Hinzufügen von Elementen zu einer Kachel {#adding-items-to-a-tile}
 
@@ -84,7 +84,7 @@ Manchmal kann es nötig sein zu wissen, welche Elemente in einer aktuellen Kache
 
 Dazu öffnen Sie die Kachel, sodass Sie ihre Elemente anzeigen und ändern können:
 
-1. Tippen oder klicken Sie unten rechts in der Kachel auf das Symbol mit den Auslassungspunkten.
+1. Klicken Sie unten rechts in der Kachel auf das Symbol mit den Auslassungspunkten.
 
    ![Aufgabenkachel](assets/project-tile-tasks.png)
 
@@ -96,7 +96,7 @@ Dazu öffnen Sie die Kachel, sodass Sie ihre Elemente anzeigen und ändern könn
 
 Die Projekt-Zeitleiste enthält Informationen dazu, wann Assets des Projekts zuletzt verwendet wurden. Gehen Sie wie folgt vor, um die Projekt-Zeitleiste anzuzeigen.
 
-1. Klicken oder tippen Sie in der **Projektekonsole** auf **Zeitleiste** in der Leistenauswahl oben links in der Konsole.
+1. Im **Projekte** Console, klicken Sie auf **Timeline** in der Schienenauswahl oben links in der Konsole.
    ![Auswahl des Zeitleisten-Modus](assets/projects-timeline-rail.png)
 2. Wählen Sie in der Konsole das Projekt aus, dessen Zeitleiste Sie anzeigen möchten.
    ![Projekt-Zeitleisten-Ansicht](assets/project-timeline-view.png)
@@ -119,7 +119,7 @@ Es stehen mehrere Optionen zur Verfügung, um Ihre Projekte zu organisieren und 
 
 In der **Projektekonsole** können Sie Ordner erstellen, um ähnliche Projekte zu gruppieren und zu organisieren.
 
-1. Klicken oder tippen Sie in der **Projektekonsole** auf **Erstellen** und anschließend auf **Ordner erstellen**.
+1. Im **Projekte** Console click **Erstellen** und dann **Ordner erstellen**.
 
    ![Ordner erstellen](assets/project-create-folder.png)
 
@@ -141,7 +141,7 @@ Gehen Sie wie folgt vor, um ein Projekt inaktiv zu machen.
 
    ![Projektstatusauswahl im Fenster „Eigenschaften“](assets/project-status.png)
 
-1. Tippen oder klicken Sie auf **Speichern und schließen**, um die Änderungen zu speichern.
+1. Klicks **Speichern und schließen** , um Ihre Änderungen zu speichern.
 
 ### Löschen von Projekten {#deleting-a-project}
 
@@ -149,13 +149,13 @@ Gehen Sie wie folgt vor, um ein Projekt zu löschen.
 
 1. Navigieren Sie zur obersten Ebene der **Projekte** Konsole.
 1. Wählen Sie Ihr Projekt in der Konsole aus.
-1. Tippen oder klicken Sie auf **Löschen** in der Symbolleiste.
+1. Klicks **Löschen** in der Symbolleiste.
 1. AEM kann die zugehörigen Projektdaten beim Löschen des Projekts entfernen/ändern. Wählen Sie die gewünschten Optionen im Dialogfenster **Projekt löschen** aus.
    * Projektgruppen und -rollen entfernen
    * Projekt-Asset-Ordner löschen
    * Projekt-Workflows beenden
 
    ![Optionen zum Löschen von Projekten](assets/project-delete-options.png)
-1. Tippen oder klicken Sie auf **Löschen**, um das Projekt mit den ausgewählten Optionen zu löschen.
+1. Klicks **Löschen** , um das Projekt mit den ausgewählten Optionen zu löschen.
 
 Weitere Einzelheiten zu automatisch von Projekten erstellten Gruppen finden Sie unter [Automatische Gruppenerstellung](/help/sites-authoring/projects.md#auto-group-creation).

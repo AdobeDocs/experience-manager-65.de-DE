@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1283'
-ht-degree: 95%
+source-wordcount: '1275'
+ht-degree: 92%
 
 ---
 
@@ -30,7 +30,7 @@ Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination v
 
 * [**Layout-Container-Komponente**](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
 
-  Diese Komponente liefert ein Rasterabsatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können. Sie können sie als Standard-ParSys für Ihre Seite nutzen und/oder sie anderen Autoren im Komponenten-Browser zur Verfügung stellen.
+  Diese Komponente bietet ein Rasterabsatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können. Sie können sie als Standard-ParSys für Ihre Seite nutzen und/oder sie anderen Autoren im Komponenten-Browser zur Verfügung stellen.
 
    * Die standardmäßige **Layout-Container**-Komponente ist definiert unter:
 
@@ -45,7 +45,7 @@ Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination v
         Sie können den Layout-Container als Standard für die Seite festlegen und es den Benutzern gleichzeitig erlauben, weitere Layout-Container darin hinzuzufügen, z. B. für die Spaltensteuerung.
 
 * **[Layout-Modus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
-Sobald der Layout-Container auf Ihrer Seite positioniert ist, können Sie den **Layout**-Modus verwenden, um Inhalte im responsiven Raster zu positionieren.
+Sobald der Layout-Container auf Ihrer Seite positioniert ist, können Sie die **Layout** -Modus, um Inhalte im responsiven Raster zu positionieren.
 
 * [**Emulator**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 Auf diese Weise können Sie responsive Websites erstellen und bearbeiten, die das Layout durch interaktive Größenanpassung der Komponenten an die Geräte-/Fenstergröße anpassen. Die Benutzerin bzw. der Benutzer kann dann mit dem Emulator sehen, wie der Inhalt wiedergegeben wird.
@@ -63,7 +63,7 @@ Mit diesen responsiven Rastermechanismen können Sie:
 
 >[!NOTE]
 >
->Bei einer vorab konfigurierten Installation wurde das responsive Layout für die [We.Retail-Referenzwebsite](/help/sites-developing/we-retail.md) konfiguriert. Sie müssen [die Layout-Container-Komponente für andere Seiten nach wie vor aktivieren](#enable-the-layout-container-component-for-page).
+>Bei einer vorab konfigurierten Installation wurde das responsive Layout für die [We.Retail-Referenzwebsite](/help/sites-developing/we-retail.md) konfiguriert. [Aktivieren der Komponente Layout-Container](#enable-the-layout-container-component-for-page) für andere Seiten.
 
 ## Konfigurieren des responsiven Emulators {#configuring-the-responsive-emulator}
 

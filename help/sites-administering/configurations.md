@@ -2,10 +2,10 @@
 title: Konfigurationen und der Konfigurations-Browser
 description: Machen Sie sich mit AEM-Konfigurationen und der Verwaltung der Einstellungen für den Arbeitsbereich in AEM vertraut.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1483'
-ht-degree: 62%
+source-wordcount: '1472'
+ht-degree: 60%
 
 ---
 
@@ -68,8 +68,8 @@ Mit dem Konfigurations-Browser kann ein Administrator auf einfache Weise Zugriff
 
 Es ist einfach, eine Konfiguration in AEM mithilfe des Konfigurationsbrowsers zu erstellen.
 
-1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Tools** > **Allgemein** > **Konfigurationsbrowser** aus.
-1. Tippen oder klicken Sie auf **Erstellen**.
+1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü die Option **Instrumente** > **Allgemein** > **Konfigurationsbrowser**.
+1. Klicken Sie auf **Erstellen**.
 1. Geben Sie einen **Titel** und einen **Namen** für Ihre Konfiguration an.
 
    ![Erstellen einer Konfiguration](assets/configuration-create.png)
@@ -83,7 +83,7 @@ Es ist einfach, eine Konfiguration in AEM mithilfe des Konfigurationsbrowsers zu
    * [Context-Hub-Segmente](/help/sites-administering/segmentation.md)
    * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
    * [Bearbeitbare Vorlagen](/help/sites-authoring/templates.md)
-1. Tippen oder klicken Sie auf **Erstellen**.
+1. Klicken Sie auf **Erstellen**.
 
 >[!TIP]
 >
@@ -93,8 +93,8 @@ Es ist einfach, eine Konfiguration in AEM mithilfe des Konfigurationsbrowsers zu
 
 Wenn Sie Konfigurationen als Workspace betrachten, können Zugriffsrechte für diese Konfigurationen festgelegt werden, um zu erzwingen, wer auf diesen Workspace zugreifen darf und wer nicht.
 
-1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Tools** > **Allgemein** > **Konfigurationsbrowser** aus.
-1. Wählen Sie die zu ändernde Konfiguration aus und tippen oder klicken Sie auf **Eigenschaften** in der Symbolleiste.
+1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü die Option **Instrumente** > **Allgemein** > **Konfigurationsbrowser**.
+1. Wählen Sie die zu ändernde Konfiguration aus und klicken Sie auf **Eigenschaften** in der Symbolleiste.
 1. Wählen Sie zusätzliche Funktionen aus, die Sie der Konfiguration hinzufügen möchten.
 
    >[!NOTE]

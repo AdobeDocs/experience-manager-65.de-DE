@@ -7,10 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 52%
+source-wordcount: '528'
+ht-degree: 56%
 
 ---
 
@@ -34,10 +34,10 @@ Der Clientcode identifiziert das Adobe Target-Kundenkonto beim Aufrufen des Adob
 
 Auf der Autoreninstanz muss der Test-and-Target-[Replikationsagent](/help/sites-deploying/replication.md) aktiviert werden. Dieser Replikationsagent ist standardmäßig deaktiviert, wenn Sie bei der Installation von AEM den Ausführungsmodus [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) verwendet haben. Weitere Informationen zum Schützen der Produktionsumgebung finden Sie im Abschnitt [Sicherheitscheckliste](/help/sites-administering/security-checklist.md).
 
-1. Klicken oder tippen Sie auf der AEM Homepage auf **Instrumente** > **Implementierung** > **Replikation**.
-1. Klicken oder tippen Sie **Agenten für Autor**.
-1. Klicken oder tippen Sie auf **Test und Target (Test und Ziel)** Replikationsagent und klicken oder tippen Sie dann auf **Bearbeiten**.
-1. Wählen Sie die Option Aktiviert aus und klicken oder tippen Sie auf **OK**.
+1. Klicken Sie auf der AEM Homepage auf **Instrumente** > **Implementierung** > **Replikation**.
+1. Klicks **Agenten für Autor**.
+1. Klicken Sie auf **Test und Target (Test und Ziel)** Replikationsagent und klicken Sie dann auf **Bearbeiten**.
+1. Wählen Sie die Option Aktiviert aus und klicken Sie auf **OK**.
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ Auf der Autoreninstanz muss der Test-and-Target-[Replikationsagent](/help/sites-
 
 ## Sichern des Aktivitätseinstellungsknotens {#securing-the-activity-settings-node}
 
-Sie müssen den Aktivitätseinstellungsknoten sichern **cq:ActivitySettings** auf der Veröffentlichungsinstanz, sodass sie für normale Benutzer nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Service zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
+Sie müssen den Aktivitätseinstellungsknoten **cq:ActivitySettings** auf der Publishing-Instanz sichern, sodass dieser für normale Benutzende nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Service zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
 
 Die **cq:ActivitySettings** -Knoten ist in CRXDE Lite verfügbar unter `/content/campaigns/*nameofbrand*`* *unter dem Aktivitätsknoten jcr:content ;* *Beispiel: `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Dieser Knoten wird nur erstellt, wenn Sie eine Komponente als Ziel angeben.
 

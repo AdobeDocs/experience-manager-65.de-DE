@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für 
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
-source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 62%
+source-wordcount: '2310'
+ht-degree: 71%
 
 ---
 
@@ -18,15 +18,15 @@ Inhaltsfragmentmodelle in AEM definieren die Inhaltsstruktur für Ihre [Inhaltsf
 Um Inhaltsfragmentmodelle zu verwenden, haben Sie folgende Möglichkeiten:
 
 1. [Aktivieren Sie die Funktionalität des Inhaltsfragmentmodells für Ihre Instanz](/help/assets/content-fragments/content-fragments-configuration-browser.md).
-1. [Erstellen](#creating-a-content-fragment-model) und [Konfigurieren](#defining-your-content-fragment-model) Ihrer Inhaltsfragmentmodelle.
-1. [Aktivieren Ihrer Inhaltsfragmentmodelle](#enabling-disabling-a-content-fragment-model) zur Verwendung beim Erstellen von Inhaltsfragmenten.
+1. [Erstellen](#creating-a-content-fragment-model), und [konfigurieren](#defining-your-content-fragment-model), Ihre Inhaltsfragmentmodelle.
+1. [Aktivieren Ihrer Inhaltsfragmentmodelle](#enabling-disabling-a-content-fragment-model) zum Erstellen von Inhaltsfragmenten.
 1. [Lassen Sie Ihre Inhaltsfragmentmodelle in den erforderlichen Asset-Ordnern zu](#allowing-content-fragment-models-assets-folder), indem Sie **Richtlinien** konfigurieren.
 
 ## Erstellen eines Inhaltsfragmentmodells {#creating-a-content-fragment-model}
 
 1. Navigieren Sie zu **Tools** > **Assets** und öffnen Sie dann **Inhaltsfragmentmodelle**.
 1. Navigieren Sie zu dem Ordner, der Ihrer [Konfiguration](/help/assets/content-fragments/content-fragments-configuration-browser.md).
-1. Verwendung **Erstellen** , um den Assistenten zu öffnen.
+1. Verwenden Sie **Erstellen**, um den Assistenten zu öffnen.
 
    >[!CAUTION]
    >
@@ -36,7 +36,7 @@ Um Inhaltsfragmentmodelle zu verwenden, haben Sie folgende Möglichkeiten:
 
    ![Titel und Beschreibung](assets/cfm-models-02.png)
 
-1. Verwendung **Erstellen** , um das leere Modell zu speichern. Eine Meldung weist auf den Erfolg der Aktion hin. Sie können **Öffnen** das Modell sofort bearbeiten oder **Fertig** , um zur Konsole zurückzukehren.
+1. Verwenden Sie **Erstellen**, um das leere Modell zu speichern. Eine Meldung weist auf den Erfolg der Aktion hin. Sie können **Öffnen** das Modell sofort bearbeiten oder **Fertig** , um zur Konsole zurückzukehren.
 
 ## Definieren des Inhaltsfragmentmodells {#defining-your-content-fragment-model}
 
@@ -54,12 +54,12 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 
    Nach dem Öffnen zeigt der Modell-Editor Folgendes an:
 
-   * left: Felder bereits definiert
+   * Links: bereits definierte Felder
    * Rechts: verfügbare **Datentypen** für das Erstellen von Feldern (und **Eigenschaften**, die für erstellte Felder verwendet werden können)
 
    >[!NOTE]
    >
-   >Wenn ein Feld als **Erforderlich**, die **Titel** im linken Bereich mit einem Sternchen (**&#42;**).
+   >Wenn ein Feld ein **Pflichtfeld** ist, wird die **Bezeichnung** im linken Bereich mit einem Stern markiert (**&#42;**).
 
    ![Eigenschaften](assets/cfm-models-03.png)
 
@@ -78,7 +78,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
         >
         >Beim manuellen Aktualisieren der Eigenschaft **Eigenschaftsname** für einen Datentyp dürfen Namen nur A-Z, a-z, 0-9 und den Unterstrich &quot;_&quot;als Sonderzeichen enthalten.
         >
-        >Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder aktualisieren Sie diese Zeichen.
+        >Wenn Modelle, die in früheren Versionen von AEM erstellt wurden, unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
 
      Beispiel:
 
@@ -86,7 +86,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 
 1. **So entfernen Sie ein Feld**
 
-   Wählen Sie das entsprechende Feld aus und klicken/tippen Sie auf das Papierkorb-Symbol. Sie werden aufgefordert, die Aktion zu bestätigen.
+   Wählen Sie das gewünschte Feld aus und klicken Sie dann auf das Papierkorbsymbol. Sie werden aufgefordert, die Aktion zu bestätigen.
 
    ![remove](assets/cfm-models-06.png)
 
@@ -125,11 +125,11 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
 * **JSON-Objekt**
    * Ermöglicht es dem Autor des Inhaltsfragments, JSON-Syntax in die entsprechenden Elemente eines Fragments einzugeben.
       * Damit AEM direkte JSON speichern kann, die Sie kopiert und von einem anderen Dienst eingefügt haben.
-      * Die JSON-Datei wird in GraphQL als JSON-Datei übergeben und ausgegeben.
+      * Das JSON wird weitergegeben und als JSON in GraphQL ausgegeben.
       * Enthält JSON-Syntaxhervorhebung, automatische Vervollständigung und Fehlerhervorhebung im Inhaltsfragment-Editor.
 * **Registerkarten-Platzhalter**
    * Ermöglicht die Einführung von Registerkarten zur Bearbeitung des Inhalts von Inhaltsfragmenten.
-Dies wird als Trennzeichen im Modell-Editor angezeigt, der Abschnitte der Liste der Inhaltsdatentypen trennt. Jede Instanz stellt den Beginn einer neuen Registerkarte dar.
+Dies wird im Modelleditor als Trennlinie dargestellt, welche Abschnitte der Liste der Inhaltsdatentypen voneinander trennt. Jede Instanz stellt den Beginn einer neuen Registerkarte dar.
 Im Fragment-Editor wird jede Instanz als Registerkarte angezeigt.
 
      >[!NOTE]
@@ -147,10 +147,10 @@ Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Infor
 
   >[!CAUTION]
   >
-  >Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder aktualisieren Sie diese Zeichen.
+  >Wenn Modelle, die in früheren Versionen von AEM erstellt wurden, unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
 
 * **Rendern als**
-Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Auf diese Weise können Sie häufig definieren, ob der Autor eine einzelne Instanz des Felds sieht oder ob es möglich ist, mehrere Instanzen zu erstellen.
+Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Oft können Sie damit festlegen, ob der Autorin bzw. dem Autor nur eine einzige Instanz des Feldes angezeigt wird oder erlaubt wird, mehrere Instanzen zu erstellen.
 
 * **Feldbezeichnung**
 Eingabe einer **Feldbezeichnung** automatisch generiert eine **Eigenschaftsname**, die dann bei Bedarf manuell aktualisiert werden kann.
@@ -173,7 +173,7 @@ Content (für das spezifische Feld) muss für alle Inhaltsfragmente, die anhand 
 
   Dadurch wird sichergestellt, dass Inhaltsersteller Content, der bereits einem anderen Fragment desselben Modells hinzugefügt wurde, nicht wiederholen können.
 
-  Beispielsweise kann ein **einzeiliges Textfeld** mit dem Namen `Country` im Inhaltsfragmentmodell nicht den Wert `Japan` in zwei abhängigen Inhaltsfragmenten haben. Wenn die zweite Instanz versucht wird, wird eine Warnung angezeigt.
+  Beispielsweise kann ein **einzeiliges Textfeld** mit dem Namen `Country` im Inhaltsfragmentmodell nicht den Wert `Japan` in zwei abhängigen Inhaltsfragmenten haben. Eine Warnung wird ausgegeben, wenn versucht wird, eine zweite Instanz zu erstellen.
 
   >[!NOTE]
   >
@@ -412,11 +412,11 @@ So veröffentlichen Sie ein Inhaltsfragmentmodell:
 
 1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
 1. Wählen Sie Ihr Modell und anschließen die Option **Veröffentlichen** aus der Symbolleiste aus.
-Der veröffentlichte Status wird in der Konsole angezeigt.
+Der Status „Veröffentlicht“ wird in der Konsole angezeigt.
 
    >[!NOTE]
    >
-   >Wenn Sie ein Inhaltsfragment veröffentlichen, für das das Modell noch nicht veröffentlicht wurde, wird dies in einer Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
+   >Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
 ## Rückgängigmachen der Veröffentlichung eines Inhaltsfragmentmodells {#unpublishing-a-content-fragment-model}
 
@@ -428,7 +428,7 @@ So machen Sie die Veröffentlichung eines Inhaltsfragmentmodells rückgängig:
 
 1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
 1. Wählen Sie Ihr Modell und anschließen die Option **Veröffentlichung aufheben** aus der Symbolleiste aus.
-Der veröffentlichte Status wird in der Konsole angezeigt.
+Der Status „Veröffentlicht“ wird in der Konsole angezeigt.
 
 ## Inhaltsfragmentmodell – Eigenschaften {#content-fragment-model-properties}
 

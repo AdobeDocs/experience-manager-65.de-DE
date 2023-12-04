@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2529'
-ht-degree: 95%
+source-wordcount: '2548'
+ht-degree: 91%
 
 ---
 
@@ -71,7 +71,7 @@ Die Komponente „Bild (Campaign)“ zeigt ein Bild und begleitenden Text gemä�
 
 Sie können ein Bild hochladen und dieses anschließend bearbeiten und anpassen (beispielsweise zuschneiden, drehen oder Links/Titel/Text hinzufügen).
 
-Sie können ein Bild hochladen und dieses anschließend bearbeiten und anpassen (beispielsweise zuschneiden, drehen oder Links/Titel/Text hinzufügen). Sie können ein Bild aus der [Inhaltssuche](/help/sites-authoring/author-environment-tools.md#thecontentfinderclassicui) per Drag-and-Drop direkt auf die Komponente oder ihren Bearbeitungsdialog ziehen. Sie können auch im zentralen Bereich des Bearbeitungsdialogs doppelklicken, um Ihr lokales Dateisystem zu durchsuchen und ein Bild hochzuladen. Die beiden Registerkarten des Bearbeitungsdialogs steuern auch alle Definitionen und Bearbeitungen des Bildes:
+Sie können ein Bild hochladen und es dann bearbeiten (z. B. zuschneiden, drehen, Link/Titel/Text hinzufügen). Sie können ein Bild aus der [Inhaltssuche](/help/sites-authoring/author-environment-tools.md#thecontentfinderclassicui) per Drag-and-Drop direkt auf die Komponente oder ihren Bearbeitungsdialog ziehen. Sie können auch im zentralen Bereich des Bearbeitungsdialogs doppelklicken, um Ihr lokales Dateisystem zu durchsuchen und ein Bild hochzuladen. Die beiden Registerkarten des Bearbeitungsdialogs steuern auch alle Definitionen und Bearbeitungen des Bildes:
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
 
@@ -108,7 +108,7 @@ Legt die Höhe und Breite des Bildes fest.
 
 >[!NOTE]
 >
->Sie müssen im Feld **ALT-Text** der Registerkarte **Erweitert** Informationen eingeben, da das Bild sonst nicht gespeichert werden kann und die folgende Fehlermeldung ausgegeben wird:
+>Geben Sie Informationen in die **Alternativtext** im Feld **Erweitert** oder das Bild kann nicht gespeichert werden. Die folgende Fehlermeldung wird angezeigt:
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -132,14 +132,14 @@ Die Beschriftung des Links. Dies ist der Text, der den Benutzern angezeigt wird.
 Mit dieser Option werden weitere Informationen zur Verwendung des Links hinzugefügt.
 
 * **LinkType**
-Wählen Sie in der Dropdown-Liste zwischen **Benutzerdefinierte URL** und **Adaptives Dokument**. Dieses Feld ist obligatorisch. Wenn Sie „Benutzerdefinierte URL“ auswählen, können Sie die URL des Links angeben. Entscheiden Sie sich für ein adaptives Dokument, können Sie den Dokumentenpfad festlegen.
+Wählen Sie in der Dropdown-Liste zwischen einer **Benutzerspezifische URL** und **Adaptives Dokument**. Dieses Feld ist obligatorisch. Wenn Sie „Benutzerdefinierte URL“ auswählen, können Sie die URL des Links angeben. Entscheiden Sie sich für ein adaptives Dokument, können Sie den Dokumentenpfad festlegen.
 
 * **Zusätzlicher URL-Parameter**
 Fügen Sie weitere URL-Parameter hinzu. Klicken Sie auf „Element hinzufügen“, um mehrere Elemente hinzuzufügen.
 
 >[!NOTE]
 >
->Sie müssen im Feld **Verknüpfungstyp** auf der Registerkarte **URL-Info** Daten eingeben, da die Komponente sonst nicht gespeichert werden kann und folgende Fehlermeldung ausgegeben wird:
+>Geben Sie Informationen in die **Link-Typ** im Feld **URL-Info** oder die Komponente kann nicht gespeichert werden. Die folgende Fehlermeldung wird angezeigt:
 >
 >`Validation failed. Verify the values of the marked fields.`
 >

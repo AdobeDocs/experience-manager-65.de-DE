@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 86%
+source-wordcount: '638'
+ht-degree: 88%
 
 ---
 
@@ -34,9 +34,9 @@ Jede Spalte zeigt einen Wert für den aktuellen Berichtszeitraum an und zeigt da
 >Um den Aktualisierungszeitraum zu ändern, [konfigurieren Sie das Importintervall](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
 1. Öffnen Sie die **Sites** -Konsole, z. B. [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
-1. Klicken oder tippen Sie ganz rechts in der Symbolleiste (obere rechte Ecke) auf das Symbol, um **Listenansicht** (Das angezeigte Symbol hängt von der [aktuelle Ansicht](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
+1. Klicken Sie ganz rechts in der Symbolleiste (obere rechte Ecke) auf das Symbol, um **Listenansicht** (Das angezeigte Symbol hängt von der [aktuelle Ansicht](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. Klicken oder tippen Sie oben rechts in der Symbolleiste auf das Symbol und wählen Sie **Anzeigeeinstellungen**. Die **Spalten konfigurieren** wird geöffnet. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie den Vorgang mit **Aktualisieren**.
+1. Klicken Sie erneut rechts oben in der Symbolleiste auf das Symbol und wählen Sie **Anzeigeeinstellungen**. Die **Spalten konfigurieren** wird geöffnet. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie den Vorgang mit **Aktualisieren**.
 
    ![aa-04](assets/aa-04.png)
 
@@ -44,7 +44,7 @@ Jede Spalte zeigt einen Wert für den aktuellen Berichtszeitraum an und zeigt da
 
 Wählen Sie den Berichtszeitraum aus, für den Analytics-Daten in der Sites-Konsole angezeigt werden:
 
-* Daten der letzten 30   Daten
+* Daten der letzten 30 Tage
 * Daten der letzten 90 Tage
 * Daten aus diesem Jahr
 

@@ -2,10 +2,10 @@
 title: Erste Schritte mit der AEM Headless-Übersetzung
 description: Erfahren Sie, wie Sie Ihre Headless-Inhalte organisieren und wie AEM Übersetzungs-Tools funktionieren.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1489'
-ht-degree: 92%
+source-wordcount: '1472'
+ht-degree: 90%
 
 ---
 
@@ -78,15 +78,15 @@ Der Inhaltsarchitekt wird zu Beginn des Projekts aktiv, um diese Struktur zu def
 
 Da die Inhaltsmodelle die Struktur Ihrer Inhalte definieren, müssen Sie wissen, welche Felder Ihrer Modelle übersetzt werden müssen. Im Allgemeinen arbeiten Sie mit dem Inhaltsarchitekten zusammen, um dies zu definieren. Gehen Sie wie folgt vor, um die Felder Ihrer Inhaltsmodelle durchzugehen.
 
-1. Gehen Sie zu **Tools** > **Assets** > **Inhaltsfragmentmodelle**.
-1. Inhaltsfragmentmodelle werden im Allgemeinen in einer Ordnerstruktur gespeichert. Tippen oder klicken Sie auf den Ordner für Ihr Projekt.
-1. Die Modelle werden aufgelistet. Tippen oder klicken Sie auf das Modell, um die Details anzuzeigen.
+1. Navigieren Sie zu **Instrumente** > **Assets** > **Inhaltsfragmentmodelle**.
+1. Inhaltsfragmentmodelle werden im Allgemeinen in einer Ordnerstruktur gespeichert. Klicken Sie auf den Ordner für Ihr Projekt.
+1. Die Modelle werden aufgelistet. Klicken Sie auf das Modell, um die Details anzuzeigen.
    ![Inhaltsfragmentmodelle](assets/content-fragment-models.png)
 1. Der **Inhaltsfragmentmodell-Editor** wird geöffnet.
    1. Die linke Spalte enthält die Felder des Modells. Diese Spalte interessiert uns.
    1. Die rechte Spalte enthält die Felder, die dem Modell hinzugefügt werden können. Diese Spalte können wir ignorieren.
       ![Inhaltsfragmentmodell-Editor](assets/content-fragment-model-editor.png)
-1. Tippen oder klicken Sie auf eines der Felder des Modells. AEM markiert es und die Details dieses Felds werden in der rechten Spalte angezeigt.
+1. Klicken Sie auf eines der Felder des Modells. AEM markiert es und die Details dieses Felds werden in der rechten Spalte angezeigt.
    ![Details des Inhaltsfragmentmodell-Editors](assets/content-fragment-model-editor-detail.png)
 
 Notieren Sie sich den **Eigenschaftsnamen** des Feldes für alle Felder, die übersetzt werden müssen. Sie werden diese Informationen später in der Tour benötigen. Diese **Eigenschaftsnamen** sind erforderlich, um AEM zu informieren, welche Felder Ihrer Inhalte übersetzt werden müssen.
@@ -192,4 +192,4 @@ Es wird zwar empfohlen, zum nächsten Teil der Headless-Übersetzungs-Tour voran
 * [Verwalten von Übersetzungsprojekten](/help/sites-administering/tc-manage.md): Erfahren Sie, wie Sie sowohl maschinelle als auch menschliche Übersetzungsprojekte in AEM erstellen und verwalten.
 * Ein [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
 * Die [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
-* [Headless-Tutorials für AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)
+* [Tutorials für Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)

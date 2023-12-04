@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
 exl-id: 78673609-8cbc-4b4b-953e-56c31ea1b4ea
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
-workflow-type: ht
-source-wordcount: '369'
-ht-degree: 100%
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+workflow-type: tm+mt
+source-wordcount: '362'
+ht-degree: 84%
 
 ---
 
@@ -23,7 +23,7 @@ In der [ContextHub](/help/sites-developing/contexthub.md)-Symbolleiste werden Da
 
 Die Symbolleiste besteht aus einer Reihe von UI-Modi, die ein oder mehrere UI-Module enthalten.
 
-* UI-Modi sind Symbole, die links in der Symbolleiste angezeigt werden. Wenn Sie auf ein Symbol klicken oder tippen, zeigt die Symbolleiste die darin enthaltenen UI-Module an.
+* UI-Modi sind Symbole, die links in der Symbolleiste angezeigt werden. Wenn Sie auf ein Symbol klicken, zeigt die Symbolleiste die darin enthaltenen Benutzeroberflächenmodule an.
 * UI-Module zeigen Daten aus einem oder mehreren ContextHub-Stores an. Einige UI-Module ermöglichen es Ihnen auch, Store-Daten zu bearbeiten.
 
 Es werden verschiedene Benutzeroberflächenmodi und -module von ContextHub installiert. Möglicherweise hat Ihr Admin [ContextHub so konfiguriert](/help/sites-developing/ch-configuring.md), dass andere Module als die hier gezeigten dargestellt werden.
@@ -36,11 +36,11 @@ Die ContextHub-Symbolleiste ist im Vorschaumodus verfügbar. Die Symbolleiste wi
 
 ![screen_shot_2018-03-23at093730](assets/screen_shot_2018-03-23at093730.png)
 
-1. Klicken oder tippen Sie bei zur Bearbeitung geöffneter Seite auf die Vorschauoption.
+1. Wenn Ihre Seite zur Bearbeitung geöffnet ist, klicken Sie in der Symbolleiste auf Vorschau.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. Klicken oder tippen Sie auf das ContextHub-Symbol, um die Symbolleiste einzublenden.
+1. Um die Symbolleiste anzuzeigen, klicken Sie auf das Symbol ContextHub .
 
    ![Context-Hub](do-not-localize/screen_shot_2018-03-23at093621.png)
 
@@ -66,6 +66,6 @@ In einigen Popup-Overlays der Benutzeroberflächenmodule befinden sich Formulare
 
 ### Vollbildmodus {#fullscreen-mode}
 
-Die Popup-Überlagerung kann ein Symbol enthalten, auf das Sie klicken oder tippen können, um den Popup-Inhalt so zu erweitern, dass er das gesamte Browser-Fenster oder den Bildschirm einnimmt.
+Popup-Überlagerungen können ein Symbol enthalten, auf das Sie klicken, um den Popup-Inhalt so zu erweitern, dass er das gesamte Browser-Fenster oder den gesamten Bildschirm umfasst.
 
 ![Vollbild](do-not-localize/chlimage_1-18.png)

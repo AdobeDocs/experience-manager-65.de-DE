@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2749'
+source-wordcount: '2770'
 ht-degree: 43%
 
 ---
@@ -102,7 +102,7 @@ Möglicherweise können Sie bei der Bearbeitung des Newsletters/der E-Mail aufgr
 
    ![chlimage_1-19](assets/chlimage_1-19a.png)
 
-1. Wählen Sie **Cloud-Services** aus und klicken Sie auf **+**, um eine Konfiguration hinzufügen. Wählen Sie eine sichtbare Konfiguration aus (es spielt keine Rolle welche). Klicken oder tippen Sie auf **+**, um eine weitere Konfiguration hinzuzufügen, und wählen Sie dann **Adobe Campaign** aus.
+1. Wählen Sie **Cloud-Services** aus und klicken Sie auf **+**, um eine Konfiguration hinzufügen. Wählen Sie eine sichtbare Konfiguration aus (es spielt keine Rolle welche). Klicken Sie auf **+** signieren, um eine weitere Konfiguration hinzuzufügen, und wählen Sie dann **Adobe Campaign**.
 
    >[!NOTE]
    >
@@ -201,7 +201,7 @@ Sie können eine Vorschau des Newsletters anzeigen und eine Vorschau der Persona
 
    ![chlimage_1-29](assets/chlimage_1-29a.png)
 
-1. Sie können die Seed-Daten aus Adobe Campaign anzeigen, die mit der aktuell ausgewählten Rolle verknüpft sind. Klicken/tippen Sie dazu in der ContextHub-Leiste auf das Adobe Campaign-Modul. Dadurch wird ein Dialogfeld geöffnet, in dem alle Seed-Daten des aktuellen Profils angezeigt werden. Die Daten ändern sich entsprechend, wenn ein neues Profil gewählt wird.
+1. Sie können die Seed-Daten aus Adobe Campaign anzeigen, die mit der aktuell ausgewählten Rolle verknüpft sind. Klicken Sie dazu auf das Adobe Campaign-Modul in der ContextHub-Leiste. Dadurch wird ein Dialogfeld geöffnet, in dem alle Seed-Daten des aktuellen Profils angezeigt werden. Die Daten ändern sich entsprechend, wenn ein neues Profil gewählt wird.
 
    ![chlimage_1-30](assets/chlimage_1-30a.png)
 

@@ -2,10 +2,10 @@
 title: Erste Schritte mit AEM Headless
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Voraussetzungen für AEM Headless.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3032'
-ht-degree: 92%
+source-wordcount: '2998'
+ht-degree: 91%
 
 ---
 
@@ -78,7 +78,7 @@ Inhaltsfragmente enthalten strukturierten Inhalt und können im JSON-Format bere
 
 Um Inhalte „headless“ zu ändern, bietet AEM zwei robuste APIs.
 
-* Mit der GraphQL-API können Sie Anfragen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellen.
+* Mit der GraphQL-API können Sie Anforderungen für den Zugriff auf Inhaltsfragmente und deren Bereitstellung erstellen.
 * Mit der Assets-REST-API können Sie Inhaltsfragmente (und andere Assets) erstellen und ändern.
 
 In einem späteren Teil der AEM Headless-Tour erfahren Sie mehr über diese APIs und deren Verwendung. Oder sehen Sie die [Zusätzliche Ressourcen](#additional-resources) unten finden Sie weitere Dokumentationen.
@@ -240,7 +240,7 @@ Für eine [typische Headless-Implementierung mit AEM](#level-1) benötigt der En
 
 Damit ein Projekt erfolgreich ist, muss die Leistung berücksichtigt werden, bevor Inhalte erstellt werden.
 
-Sie müssen die Erwartungen Ihrer Benutzer/Besucher verstehen und für diese entwickeln. Legen Sie Service-Level-Ziele (SLOs) fest und messen Sie sie, um zu verstehen, ob Sie die Erwartungen Ihrer Benutzer erfüllen.
+Vergewissern Sie sich, dass Sie die Erwartungen Ihrer Benutzer/Besucher und deren Design verstehen. Legen Sie Service-Level-Ziele (SLOs) fest und messen Sie sie, um zu verstehen, ob Sie die Erwartungen Ihrer Benutzer erfüllen.
 
 #### Traffic-Muster {#traffic-patterns}
 

@@ -11,16 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fa054d30-c7dc-4b64-acf1-cbcbe8827df5
 feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4715'
-ht-degree: 19%
+source-wordcount: '4713'
+ht-degree: 15%
 
 ---
 
 # Erstellen und Verwalten von Richtlinien {#creating-and-managing-policies}
 
-Eine *Richtlinie* definiert einen Satz von Vertraulichkeitseinstellungen sowie die Benutzenden, die auf ein Dokument zugreifen dürfen, für das die Richtlinie gilt. Ein *Richtliniensatz* dient zum Gruppieren verschiedener Richtlinien mit einem gemeinsamen Zweck. Diese Richtliniensätze werden dann einer Untergruppe von Benutzenden im System zur Verfügung gestellt. Weitere Informationen zu Richtlinien finden Sie unter [Richtlinien und richtliniengeschützte Dokumente](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
+Eine *Richtlinie* definiert einen Satz von Vertraulichkeitseinstellungen sowie die Benutzenden, die auf ein Dokument zugreifen dürfen, für das die Richtlinie gilt. Ein *Richtliniensatz* dient zum Gruppieren verschiedener Richtlinien mit einem gemeinsamen Zweck. Diese Richtliniensätze werden dann einer Untergruppe von Benutzern im System zur Verfügung gestellt. Weitere Informationen zu Richtlinien finden Sie unter [Richtlinien und richtliniengeschützte Dokumente](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
 
 ## Arten von Richtlinien {#types-of-policies}
 
@@ -28,7 +28,7 @@ Document Security bietet die folgenden Arten von Richtlinien.
 
 **Persönliche Richtlinien**
 
-Benutzer können eigene Richtlinien erstellen, bearbeiten, kopieren, löschen und mit Einstellungen anwenden, die für eine bestimmte Situation geeignet sind. Nur die Person, die eine Richtlinie erstellt, und die Administratoren können auf diese persönliche Richtlinie zugreifen. Persönliche Richtlinien werden auf der Registerkarte Meine Richtlinien auf der Seite Richtlinien angezeigt.
+Benutzer können eigene Richtlinien erstellen, bearbeiten, kopieren, löschen und mit Einstellungen anwenden, die für eine bestimmte Situation geeignet sind. Nur die Person, die eine Richtlinie erstellt, und der Administrator können auf diese persönliche Richtlinie zugreifen. Persönliche Richtlinien werden auf der Registerkarte Meine Richtlinien auf der Seite Richtlinien angezeigt.
 
 Eingeladene Benutzer können auch persönliche Richtlinien erstellen, bearbeiten, kopieren und löschen, wenn der Administrator diese Funktion aktiviert hat.
 
@@ -36,11 +36,11 @@ Eingeladene Benutzer können auch persönliche Richtlinien erstellen, bearbeiten
 
 Administratoren und Richtliniensatzkoordinatoren erstellen freigegebene Richtlinien basierend auf den Vertraulichkeitsanforderungen, die Ihr Unternehmen für verschiedene Arten von Dokumenten und Benutzern ermittelt. Freigegebene Richtlinien sind in Richtliniensätzen enthalten und stehen allen autorisierten Benutzern (Dokumentherausgebern, Richtliniensatzkoordinatoren und Dokumentempfängern) für einen bestimmten Richtliniensatz zur Verfügung. Administratoren und Richtliniensatzkoordinatoren können freigegebene Richtlinien aktivieren und deaktivieren. Freigegebene Richtlinien werden in Richtliniensätzen auf der Registerkarte &quot;Richtliniensätze&quot;der Seite &quot;Richtlinien&quot;angezeigt.
 
-Wenn Sie Document Security zum ersten Mal installieren, enthält es eine freigegebene Richtlinie mit dem Namen *Auf alle Prinzipale beschränken*. Wenn diese Richtlinie auf ein Dokument angewendet wird, kann jeder Benutzer, der sich bei Document Security anmelden kann, auf das Dokument zugreifen. Diese Richtlinie befindet sich im Richtliniensatz namens *Globaler Richtliniensatz*. Standardmäßig ist diese Richtlinie nicht aktiviert. Sie können sie aktivieren, wenn sie den Anforderungen Ihres Unternehmens entspricht.
+Wenn Sie Document Security zum ersten Mal installieren, enthält es eine freigegebene Richtlinie mit dem Namen *Auf alle Prinzipale beschränken*. Wenn diese Richtlinie auf ein Dokument angewendet wird, kann jeder Benutzer, der sich bei Document Security anmelden kann, auf das Dokument zugreifen. Diese Richtlinie befindet sich im Richtliniensatz namens *Globaler Richtliniensatz*. Standardmäßig ist diese Richtlinie nicht aktiviert. Sie können sie aktivieren, wenn sie den Anforderungen Ihrer Organisation entspricht.
 
-**Automatisch generierte Microsoft Outlook-Richtlinien**
+**Automatisch generierte Microsoft® Outlook-Richtlinien**
 
-Mit Acrobat können Sie Richtlinien auf Dokumente anwenden, die Sie in Microsoft Outlook als E-Mail-Anhänge senden. In Outlook können Sie ein Dokument schützen, indem Sie eine vorhandene Richtlinie verwenden oder eine automatisch generierte Richtlinie verwenden, die von Acrobat mit Standardvertraulichkeitseinstellungen generiert und auf das Dokument angewendet wird, das an eine E-Mail-Nachricht angehängt ist. (Weitere Informationen finden Sie in der *[Acrobat-Hilfe](https://help.adobe.com/de_DE/acrobat/pro/using/index.html)*.)
+Mit Acrobat können Sie Richtlinien auf Dokumente anwenden, die Sie in Microsoft® Outlook als E-Mail-Anhänge senden. In Outlook können Sie ein Dokument mithilfe einer vorhandenen Richtlinie schützen. Alternativ können Sie eine automatisch generierte Richtlinie verwenden, die von Acrobat mit Standardvertraulichkeitseinstellungen generiert und auf das Dokument angewendet wird, das an eine E-Mail-Nachricht angehängt ist. (Weitere Informationen finden Sie in der *[Acrobat-Hilfe](https://help.adobe.com/de_DE/acrobat/pro/using/index.html)*.)
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Wie Sie mit Richtlinien und Richtliniensätzen interagieren, hängt von Ihrer Ro
 
 **Richtliniensatzkoordinatoren:** Richtliniensatzkoordinatoren können freigegebene Richtlinien innerhalb von Richtliniensätzen, für die sie als Koordinator angegeben sind, erstellen und verwalten. Ein Richtliniensatzkoordinator ist in der Regel ein Spezialist im Unternehmen, der die Richtlinien in einem bestimmten Richtliniensatz am besten verwalten kann.
 
-**Administratoren:** Administratoren können die persönlichen Richtlinien jedes Benutzers bearbeiten. Sie können freigegebene Richtlinien erstellen. Sie können auch Richtliniensätze erstellen, bearbeiten und löschen sowie Richtliniensatzkoordinatoren festlegen.
+**Administratoren:** Administratoren können die persönlichen Richtlinien von Benutzern bearbeiten. Sie können freigegebene Richtlinien erstellen. Sie können auch Richtliniensätze erstellen, bearbeiten und löschen sowie Richtliniensatzkoordinatoren festlegen.
 
 Weitere Informationen zu den verschiedenen Document Security-Rollen finden Sie unter [Über Document Security-Benutzer](/help/forms/using/admin-help/document-security.md#about-document-security-users).
 
@@ -64,23 +64,23 @@ Benutzer können persönliche Richtlinien für ihre eigene Verwendung erstellen 
 
 ### Überlegungen zum Bearbeiten von Richtlinien {#considerations-for-editing-policies}
 
-Wenn Sie eine Richtlinie bearbeiten, wirken sich die Änderungen auf Dokumente aus, die derzeit von der Richtlinie geschützt werden, sowie auf Dokumente, die anschließend von der Richtlinie geschützt werden. Wenn Sie beispielsweise Empfänger aus einer Richtlinie entfernen, die derzeit für ein Dokument gilt, können die Empfänger das Dokument nicht mehr öffnen.
+Wenn Sie eine Richtlinie bearbeiten, wirken sich die Änderungen auf Dokumente aus, die derzeit von der Richtlinie geschützt werden, sowie auf Dokumente, die anschließend von der Richtlinie geschützt werden. Wenn Sie beispielsweise Empfänger aus einer Richtlinie entfernen, die auf ein Dokument angewendet wird, können die Empfänger das Dokument nicht mehr öffnen.
 
 Der Status des Dokuments bestimmt, wann die Änderung wirksam wird:
 
 * Wenn das Dokument online ist, werden Änderungen sofort angewendet, es sei denn, der Benutzer hat das Dokument geöffnet. In diesem Fall muss der Benutzer das Dokument schließen, damit die Änderungen wirksam werden.
-* Wenn ein Empfänger das Dokument offline verwendet (z. B. auf einem Laptop), werden die Änderungen wirksam, wenn der Empfänger das Dokument das nächste Mal online stellt und durch Öffnen eines beliebigen richtliniengeschützten Dokuments mit Document Security synchronisiert.
+* Wenn ein Empfänger das Dokument offline verwendet (z. B. auf einem Laptop), werden die Änderungen bei der nächsten Online-Nutzung des Dokuments durch den Empfänger wirksam. Anschließend wird die Synchronisierung mit Document Security durch Öffnen eines beliebigen richtliniengeschützten Dokuments durchgeführt.
 
 >[!NOTE]
 >
->Richtlinien, die Acrobat automatisch für die Empfänger von Dokumenten generiert, die an E-Mail-Nachrichten in Microsoft Outlook angehängt sind, werden nicht in der Richtlinienliste angezeigt. Sie können diese Richtlinien nur anzeigen, indem Sie die Seite &quot;Dokumentdetails&quot;für das zugehörige Dokument öffnen.
+>Richtlinien, die Acrobat automatisch für die Empfänger von Dokumenten generiert, die an E-Mail-Nachrichten in Microsoft® Outlook angehängt sind, werden nicht in der Richtlinienliste angezeigt. Sie können diese Richtlinien nur anzeigen, indem Sie die Seite &quot;Dokumentdetails&quot;für das zugehörige Dokument öffnen.
 
 Wenn Sie Richtlinien bearbeiten, gelten diese Einschränkungen:
 
 * Eingeladene Benutzer können Richtlinien nur bearbeiten, wenn der Administrator diese Funktion aktiviert hat. Wenn Sie Richtlinien nicht bearbeiten können, ist die Option &quot;Bearbeiten&quot;nicht verfügbar.
-* Richtliniensatzkoordinatoren können Richtlinien in Richtliniensätzen nur bearbeiten, wenn sie über die richtigen Berechtigungen verfügen. Der Hauptbenutzer oder Richtliniensatzadministrator legt diese Berechtigungen auf der Benutzeroberfläche des Document Security-Administrators fest.
+* Richtliniensatzkoordinatoren können Richtlinien in Richtliniensätzen nur bearbeiten, wenn sie über die richtigen Berechtigungen verfügen. Der Superuser- oder Richtliniensatzadministrator legt diese Berechtigungen auf der Document Security-Administrator-Benutzeroberfläche fest.
 * Wenn für die Richtlinie ein Wasserzeichen konfiguriert wurde, das der Administrator seit der Erstellung der Richtlinie gelöscht hat, wird dieses Wasserzeichen nicht mehr auf Dokumente angewendet, wenn Sie die Richtlinie bearbeiten und speichern. Gelöschte Wasserzeichen bleiben nur für vorhandene Richtlinien wirksam, solange Sie die Richtlinie nicht bearbeiten. Wenn Sie die Richtlinie bearbeiten, müssen Sie ein anderes Wasserzeichen auswählen, um das gelöschte Wasserzeichen zu ersetzen.
-* Sie können keinen anonymen Zugriff auf ein Dokument gewähren, indem Sie die derzeit angewendete Richtlinie bearbeiten. Wenn Sie die Richtlinie bearbeiten, müssen sich die Benutzer dennoch anmelden, um auf das Dokument zugreifen zu können. Um anonymen Zugriff auf dieses Dokument zu gewähren, entfernen Sie zunächst die Richtlinie in der Clientanwendung und wenden Sie dann eine andere Richtlinie an, die den anonymen Zugriff zulässt.
+* Sie können keinen anonymen Zugriff auf ein Dokument gewähren, indem Sie die angewendete Richtlinie bearbeiten. Wenn Sie die Richtlinie bearbeiten, müssen sich die Benutzer dennoch anmelden, um auf das Dokument zugreifen zu können. Um anonymen Zugriff auf dieses Dokument zu gewähren, entfernen Sie zunächst die Richtlinie in der Clientanwendung und wenden Sie dann eine andere Richtlinie an, die den anonymen Zugriff zulässt.
 * Richtlinien, die Acrobat automatisch für die Empfänger eines Dokuments generiert, das an eine E-Mail-Nachricht in Microsoft Outlook angehängt ist, werden nicht in der Richtlinienliste angezeigt. Um auf diese Richtlinie zuzugreifen, suchen Sie das Dokument auf der Seite &quot;Dokumente&quot;, öffnen Sie die Seite &quot;Dokumentdetails&quot;und klicken Sie auf den Richtliniennamen in der Liste der Dokumentdetails.
 
 **Richtlinie erstellen oder bearbeiten**
@@ -103,14 +103,14 @@ Wenn Sie Richtlinien bearbeiten, gelten diese Einschränkungen:
    * umgekehrter Schrägstrich (\)
    * Schrägstrich (/)
 
-   Wenn Sie im Namen oder in der Beschreibung das folgende Zeichen verwenden, werden diese in Leerzeichen umgewandelt:
+   Wenn Sie im Namen oder in der Beschreibung das folgende Zeichen verwendet haben, werden diese in Leerzeichen umgewandelt:
 
    * Wagenrücklauf (ASCII-Zeichen 13)
    * neue Zeile (ASCII-Zeichen 10).
 
    >[!NOTE]
    >
-   >Sie können einen Richtliniennamen erstellen, der erweiterte Zeichen enthält. Wenn jedoch ein Vergleich zwischen zwei Zeichenfolgen durchgeführt wird, werden Zeichen mit und ohne Akzentzeichen wie &quot;e&quot;und &quot;é&quot;als identisch betrachtet. Wenn jemand eine Richtlinie erstellt, wird ein Vergleich durchgeführt, um zu überprüfen, ob bereits eine Richtlinie mit demselben Namen vorhanden ist. Der Vergleich kann nicht zwischen Namen unterscheiden, die mit Ausnahme von Akzentzeichen identisch sind. Es wird davon ausgegangen, dass die Richtlinie bereits zur Datenbank hinzugefügt und die neue nicht hinzugefügt wurde.
+   Sie können einen Richtliniennamen erstellen, der erweiterte Zeichen enthält. Wenn jedoch ein Vergleich zwischen zwei Zeichenfolgen durchgeführt wird, werden Zeichen mit und ohne Akzentzeichen wie &quot;e&quot;und &quot;é&quot;als identisch betrachtet. Wenn jemand eine Richtlinie erstellt, wird ein Vergleich durchgeführt, um zu überprüfen, ob eine Richtlinie mit demselben Namen vorhanden ist. Der Vergleich kann nicht zwischen Namen unterscheiden, die mit Ausnahme von Akzentzeichen identisch sind. Es wird davon ausgegangen, dass die Richtlinie bereits zur Datenbank hinzugefügt und die neue nicht hinzugefügt wurde.
 
 1. Fügen Sie der Richtlinie Benutzer und Gruppen hinzu und legen Sie die entsprechenden Berechtigungen fest. (Siehe [Benutzer und Gruppen](creating-policies.md#users-and-groups).
 1. Wählen Sie unter &quot;Allgemeine Einstellungen&quot;die entsprechenden Optionen aus. (Siehe [Allgemeine Einstellungen](creating-policies.md#general-settings).
@@ -130,21 +130,21 @@ Geben Sie im Bereich Benutzer und Gruppen die Benutzer an, die Zugriff auf Dokum
 
 >[!NOTE]
 >
->Der Dokumentherausgeber ist der Benutzer, der das Dokument mit der Richtlinie schützt. Dieser Benutzer ist standardmäßig immer in eine Richtlinie mit vollen Zugriffsrechten eingeschlossen, einschließlich Sperren und Wechseln von Richtlinien. Administratoren können jedoch die Zugriffsberechtigungen des Dokumentherausgebers für freigegebene Richtlinien ändern. Beispielsweise kann der Administrator den Dokumentherausgeber daran hindern, den Dokumentzugriff zu sperren oder die Richtlinie zu wechseln.
+Der Dokumentherausgeber ist der Benutzer, der das Dokument mit der Richtlinie schützt. Dieser Benutzer ist standardmäßig immer in eine Richtlinie mit vollen Zugriffsrechten eingeschlossen, einschließlich Sperren und Wechseln von Richtlinien. Administratoren können jedoch die Zugriffsberechtigungen des Dokumentherausgebers für freigegebene Richtlinien ändern. Beispielsweise kann der Administrator den Dokumentherausgeber daran hindern, den Dokumentzugriff zu sperren oder die Richtlinie zu wechseln.
 
-**Benutzer oder Gruppe hinzufügen:** Um einen Benutzer oder eine Gruppe von Benutzern hinzuzufügen, klicken Sie auf „Benutzer oder Gruppe hinzufügen“ und anschließend auf „Erweiterte Suche“, um Benutzer oder Gruppen zu suchen. Zu den Benutzern gehören die internen Benutzer Ihrer Organisation und eingeladene Benutzer, die sich bei Document Security registriert haben. Wenn Sie diese Option auswählen, wird die Seite Benutzer oder Gruppe hinzufügen angezeigt:
+**Benutzer oder Gruppe hinzufügen:** Um einen Benutzer oder eine Benutzergruppe hinzuzufügen, klicken Sie auf Benutzer oder Gruppe hinzufügen und dann auf Erweiterte Suche , um Benutzer oder Gruppen zu finden. Zu den Benutzern gehören die internen Benutzer Ihrer Organisation und eingeladene Benutzer, die sich bei Document Security registriert haben. Wenn Sie diese Option auswählen, wird die Seite Benutzer oder Gruppe hinzufügen angezeigt:
 
 * Geben Sie in das Feld &quot;Suchen&quot;den Benutzer- oder Gruppennamen oder die E-Mail-Adresse ein.
 * Wählen Sie in der Liste &quot;Verwenden&quot;die Option Name oder E-Mail aus.
 * Wählen Sie in der Liste Typ die Option Benutzer oder Gruppe aus.
-* Wählen Sie in der Liste „In“ die zu durchsuchende Domain aus und klicken Sie auf „Suchen“.
+* Wählen Sie in der Liste &quot;In&quot;die Domäne aus, die Sie suchen möchten, und klicken Sie auf &quot;Suchen&quot;.
 * Wenn die Ergebnisse zurückgegeben werden, wählen Sie den hinzuzufügenden Benutzer oder die hinzuzufügende Gruppe aus und klicken Sie auf Hinzufügen.
 
 >[!NOTE]
 >
->Wenn Sie einen korrekten Namen eines eingeladenen Benutzers oder eine E-Mail-Adresse eingeben und kein Ergebnis zurückgegeben wird, hat sich der Benutzer möglicherweise noch nicht registriert oder das Konto kann gelöscht werden. Sie können versuchen, den Benutzer als eingeladenen Benutzer hinzuzufügen, oder sich an Ihren Administrator wenden.
+Wenn Sie einen korrekten Namen eines eingeladenen Benutzers oder eine E-Mail-Adresse eingeben und kein Ergebnis zurückgegeben wird, hat sich der Benutzer möglicherweise noch nicht registriert oder das Konto kann gelöscht werden. Sie können versuchen, den Benutzer als eingeladenen Benutzer hinzuzufügen, oder sich an Ihren Administrator wenden.
 
-**Neuen Benutzer einladen:** Um einen eingeladenen Benutzer hinzuzufügen, klicken Sie auf „Neuen Benutzer einladen“, geben Sie die E-Mail-Adresse des Benutzers in das Feld ein und klicken Sie auf „Einladen“. Diese Option ist nur verfügbar, wenn sie vom Administrator aktiviert wurde. Wenn Sie einer Richtlinie neue eingeladene Benutzer hinzufügen, sendet Document Security eine Einladungs-E-Mail zur Registrierung, wenn die Benutzer noch nicht zur Registrierung eingeladen wurden. Die Benutzer müssen den Link in der E-Mail verwenden, um ein Konto zu erstellen, und dann das Konto aktivieren.
+**Neuen Benutzer einladen:** Um einen eingeladenen Benutzer hinzuzufügen, klicken Sie auf &quot;Neuen Benutzer einladen&quot;, geben Sie die E-Mail-Adresse des Benutzers in das angezeigte Feld ein und klicken Sie auf &quot;Einladen&quot;. Diese Option ist nur verfügbar, wenn sie vom Administrator aktiviert wurde. Wenn Sie einer Richtlinie neue eingeladene Benutzer hinzufügen, sendet Document Security eine Einladungs-E-Mail zur Registrierung, wenn die Benutzer noch nicht zur Registrierung eingeladen wurden. Die Benutzer müssen den Link in der E-Mail verwenden, um ein Konto zu erstellen, und dann das Konto aktivieren.
 
 Nach der Registrierung können eingeladene Benutzer richtliniengeschützte Dokumente verwenden, für die sie autorisiert sind. Abhängig von den Funktionen, die der Administrator aktiviert, sind externe Benutzer möglicherweise berechtigt, Richtlinien auf Dokumente anzuwenden, Richtlinien zu erstellen, zu bearbeiten und zu löschen und andere externe Benutzer zu Richtlinien hinzuzufügen.
 
@@ -152,7 +152,7 @@ Nach der Registrierung können eingeladene Benutzer richtliniengeschützte Dokum
 
 >[!NOTE]
 >
->Um den anonymen Zugriff auf ein richtliniengeschütztes Dokument zuzulassen, für das dieser Zugriff derzeit nicht möglich ist, entfernen Sie die vorhandene Richtlinie und wenden Sie dann eine Richtlinie an, die den anonymen Zugriff zulässt. Wenn Sie die vorhandene Richtlinie wechseln oder ändern, müssen sich die Benutzer dennoch anmelden, um auf das Dokument zuzugreifen.
+Um den anonymen Zugriff auf ein richtliniengeschütztes Dokument zuzulassen, für das dieser Zugriff derzeit nicht möglich ist, entfernen Sie die vorhandene Richtlinie und wenden Sie dann eine Richtlinie an, die den anonymen Zugriff zulässt. Wenn Sie die vorhandene Richtlinie wechseln oder ändern, müssen sich die Benutzer dennoch anmelden, um auf das Dokument zuzugreifen.
 
 #### Dokumentberechtigungen für Benutzer und Gruppen angeben {#specify-the-document-permissions-for-users-and-groups}
 
@@ -192,7 +192,7 @@ Diese Dokumentberechtigungen sind auf der Registerkarte &quot;Optionen&quot;verf
 
 **Offline:** Erlaubt dem Benutzer die Offline-Anzeige eines durch diese Richtlinie geschützten Dokuments.
 
-**Gültigkeit der Berechtigung:** Wählen Sie „Berechtigungen sind immer gültig“ aus oder legen Sie eine Gültigkeitsdauer für Dokumentberechtigungen fest. Wenn Sie einen Gültigkeitszeitraum auswählen, klicken Sie auf die Kalendersymbole, um ein Datum auszuwählen, und geben Sie mithilfe der Pfeile im 24-Stunden-Format die Uhrzeit an.
+**Gültigkeit der Berechtigung:** Wählen Sie Berechtigungen sind immer gültig aus oder legen Sie einen Gültigkeitszeitraum für Dokumentberechtigungen fest. Wenn Sie einen Gültigkeitszeitraum auswählen, klicken Sie auf das Kalendersymbol, um ein Datum auszuwählen, und geben Sie mithilfe der Pfeile im 24-Stunden-Format die Uhrzeit an.
 
 Für freigegebene Richtlinien können Administratoren die folgenden Berechtigungen für den Dokumentherausgeber deaktivieren (den Benutzer, der die Richtlinie auf ein Dokument anwendet):
 
@@ -216,15 +216,15 @@ Der Bereich &quot;Allgemeine Einstellungen&quot;enthält die folgenden Einstellu
 
 >[!NOTE]
 >
->Der Gültigkeitszeitraum basiert auf der Zeitzone des Document Security-Systems und nicht auf der Zeitzone des lokalen Computers.
+Der Gültigkeitszeitraum basiert auf der Zeitzone des Document Security-Systems und nicht auf der Zeitzone des lokalen Computers.
 
 **Prüfung:** Sie können die Prüfung auf Ereignisse im Zusammenhang mit einem richtliniengeschützten Dokument aktivieren oder deaktivieren. Document Security kann beispielsweise Ereignisse wie Versuche, ein Dokument zu öffnen, aufzeichnen. Geprüfte Ereignisse werden in der Liste auf der Seite &quot;Ereignisse&quot;angezeigt. Wenn Sie diese Option nicht auswählen, zeichnet Document Security keine Ereignisse für Dokumente auf, die mit der Richtlinie verknüpft sind.
 
 >[!NOTE]
 >
->Der Administrator muss außerdem die Serverprüfung auf der Konfigurationsseite &quot;Prüfungs- und Datenschutzeinstellungen&quot;aktivieren, damit die Prüffunktion funktioniert.
+Der Administrator muss außerdem die Serverprüfung auf der Konfigurationsseite &quot;Prüfungs- und Datenschutzeinstellungen&quot;aktivieren, damit die Prüffunktion funktioniert.
 
-**Erweiterte Nutzungsverfolgung:** Aktivieren oder deaktivieren Sie die erweiterte Nutzungsverfolgung. Document Security unterstützt die Verfolgung von Benutzerereignissen, die mit verschiedenen Vorgängen verknüpft sind, die auf einer PDF-Datei ausgeführt werden. Auf das Document Security-Objekt kann mithilfe eines JavaScripts zugegriffen werden. Beispiele für Ereignisse, die von einer richtliniengeschützten PDF ausgelöst werden können, sind ein Schaltflächenklick, eine wiedergegebene Multimedia-Datei oder das Speichern einer Datei. Mit dem Document Security-Objekt können Sie auch Benutzerinformationen abrufen. Das Tracking von Ereignissen kann vom Document Security-Server auf globaler Ebene oder auf Richtlinienebene aktiviert werden.
+**Erweiterte Nutzungsverfolgung:** Aktivieren oder deaktivieren Sie die erweiterte Nutzungsverfolgung. Document Security unterstützt die Verfolgung von Benutzerereignissen, die mit verschiedenen Vorgängen verknüpft sind, die auf einer PDF-Datei ausgeführt werden. Auf das Document Security-Objekt kann mithilfe eines JavaScripts zugegriffen werden. Beispiele für Ereignisse, die von einer richtliniengeschützten PDF ausgelöst werden, sind das Klicken auf eine Schaltfläche, die Wiedergabe einer Multimedia-Datei oder das Speichern einer Datei. Mit dem Document Security-Objekt können Sie auch Benutzerinformationen abrufen. Das Tracking von Ereignissen kann vom Document Security-Server auf globaler Ebene oder auf Richtlinienebene aktiviert werden.
 
 **Automatische Offline-Nutzungsdauer:** Die maximale Anzahl von Tagen, die der Empfänger das richtliniengeschützte Dokument offline (ohne aktive Internet- oder Netzwerkverbindung) nutzen darf. Nach Ablauf der Nutzungsdauer muss der Empfänger das Dokument erneut synchronisieren, um es weiter verwenden zu können.
 
@@ -236,25 +236,25 @@ Wählen Sie die externen Authentifizierungsanbieter aus, falls Sie bereits einen
 
 Sie können die Authentifizierungseinstellungen überschreiben, die Sie auf dem Server konfiguriert haben, und die für diese Richtlinie relevanten Authentifizierungsoptionen angeben. Wählen Sie Globale Authentifizierungseinstellungen überschreiben und dann die für diese Richtlinie relevanten Authentifizierungsoptionen. Die folgenden Authentifizierungsoptionen sind verfügbar:
 
-**Benutzername/Kennwort-Authentifizierung zulassen:** Aktivieren Sie diese Option, um zu bestimmen, ob Client-Anwendungen beim Herstellen einer Server-Verbindung die Benutzername/Kennwort-Authentifizierung zulassen.
+**Authentifizierung von Benutzername-Passwörtern zulassen:** Wählen Sie diese Option aus, wenn Sie möchten, dass Clientanwendungen beim Herstellen einer Verbindung zum Server die Authentifizierung mit Benutzername und Kennwort verwenden.
 
-**Kerberos-Authentifizierung gestatten:** Aktivieren Sie diese Option, um zu bestimmen, ob Clientanwendungen beim Herstellen einer Serververbindung die Kerberos-Authentifizierung zulassen.
+**Kerberos-Authentifizierung zulassen:** Wählen Sie diese Option aus, wenn Sie Client-Anwendungen aktivieren möchten, die die Kerberos-Authentifizierung beim Herstellen einer Verbindung zum Server verwenden.
 
-**Zertifikat-Authentifizierung zulassen:** Aktivieren Sie diese Option, um zu bestimmen, ob Client-Anwendungen beim Herstellen einer Server-Verbindung die Zertifikat-Authentifizierung zulassen.
+**Client-Zertifikatauthentifizierung zulassen:** Wählen Sie diese Option aus, wenn Sie möchten, dass Clientanwendungen beim Herstellen einer Verbindung zum Server die Zertifikatauthentifizierung verwenden.
 
 **Erweiterte Authentifizierung zulassen** Wählen Sie diese Option aus, um die erweiterte Authentifizierung zu aktivieren. Wenn Sie diese Option auswählen, können Clientanwendungen erweiterte Authentifizierung verwenden. Die erweiterte Authentifizierung bietet benutzerdefinierte Authentifizierungsprozesse und verschiedene Authentifizierungsoptionen, die auf dem Document Security-Server konfiguriert sind.
 
-Wenn Sie die globalen Authentifizierungseinstellungen überschreiben, können Sie die für diese Richtlinie relevanten Authentifizierungsoptionen auswählen. Wenn Sie beispielsweise drei Authentifizierungsoptionen (Benutzername und Kennwort, Client-Zertifikat und erweiterte Authentifizierung) auf dem Server aktiviert haben, können Sie diese globale Einstellung außer Kraft setzen und für diese Richtlinie nur erweiterte Authentifizierung auswählen. Sie müssen sicherstellen, dass die Authentifizierungsoption, die Sie hier auswählen, bereits auf dem Server konfiguriert ist. In diesem Beispiel können Sie Kerberos nicht als Authentifizierungsoption auswählen, da es nicht auf dem Server konfiguriert ist.
+Wenn Sie die globalen Authentifizierungseinstellungen überschreiben, können Sie die für diese Richtlinie relevanten Authentifizierungsoptionen auswählen. Wenn Sie beispielsweise drei Authentifizierungsoptionen (Benutzername und Kennwort, Client-Zertifikat und erweiterte Authentifizierung) auf dem Server aktiviert haben, können Sie diese globale Einstellung außer Kraft setzen und für diese Richtlinie nur erweiterte Authentifizierung auswählen. Stellen Sie sicher, dass die Authentifizierungsoption, die Sie hier auswählen, bereits auf dem Server konfiguriert ist. In diesem Beispiel können Sie Kerberos nicht als Authentifizierungsoption auswählen, da es nicht auf dem Server konfiguriert ist.
 
 >[!NOTE]
 >
->Erweiterte Authentifizierung wird unter Apple Mac OS X mit Adobe Acrobat-Version 11.0.6 und höher unterstützt.
+Erweiterte Authentifizierung wird unter Apple Mac OS X mit Adobe Acrobat-Version 11.0.6 und höher unterstützt.
 
 ### Erweiterte Einstellungen {#advanced-settings}
 
 Der Bereich Erweiterte Einstellungen enthält die folgenden Einstellungen:
 
-**Dynamisches Wasserzeichen:** Wählen Sie ein Wasserzeichen aus, das dynamisch auf den Seiten eines Dokuments angezeigt werden soll (z. B. wenn ein Empfänger das Dokument druckt). Dynamische Wasserzeichen kennzeichnen ein Dokument eindeutig, wodurch die Vertraulichkeit des Dokuments gewährleistet und Urheberrechtsverletzungen verhindert werden. Beispielsweise kann der Administrator ein dynamisches Wasserzeichen konfigurieren, das das aktuelle Datum, den Benutzernamen oder die Kennung der Person, die das Dokument verwendet, oder den Namen der Richtlinie anzeigt, die zum Schutz des Dokuments verwendet wird. Ein Wasserzeichen kann auch benutzerdefinierten Text oder Grafikelemente anzeigen, sofern konfiguriert. Administratoren konfigurieren die Wasserzeichenoptionen, und Administratoren und Benutzer können sie auf Richtlinien anwenden.
+**Dynamisches Wasserzeichen:** Wählen Sie ein Wasserzeichen aus, das dynamisch auf den Seiten eines Dokuments angezeigt werden soll (z. B. wenn ein Empfänger das Dokument druckt). Dynamische Wasserzeichen kennzeichnen ein Dokument eindeutig, wodurch die Vertraulichkeit des Dokuments gewährleistet und Urheberrechtsverletzungen verhindert werden. Beispielsweise kann der Administrator ein dynamisches Wasserzeichen konfigurieren, das das aktuelle Datum, den Benutzernamen oder die Kennung der Person anzeigt, die das Dokument verwendet. Oder der Name der Richtlinie, die zum Schutz des Dokuments verwendet wird. Ein Wasserzeichen kann auch benutzerdefinierten Text oder Grafikelemente anzeigen, sofern konfiguriert. Administratoren konfigurieren die Wasserzeichenoptionen, und Administratoren und Benutzer können sie auf Richtlinien anwenden.
 
 (Siehe [Dynamische Wasserzeichen konfigurieren](/help/forms/using/admin-help/configuring-client-server-options.md#configure-dynamic-watermarks).
 
@@ -262,7 +262,7 @@ Wenn Sie eine Richtlinie bearbeiten und der Administrator ein konfiguriertes Was
 
 >[!NOTE]
 >
->Bei Richtlinien, die anonymen Benutzerzugriff bieten, werden der Benutzername und die Kennung eines anonymen Benutzers nicht als Wasserzeichen angezeigt, selbst wenn Sie diesen Typ von Wasserzeichen auswählen.
+Bei Richtlinien, die anonymen Benutzerzugriff bieten, werden der Benutzername und die Kennung eines anonymen Benutzers nicht als Wasserzeichen angezeigt, selbst wenn Sie diesen Typ von Wasserzeichen auswählen.
 
 **Nur zertifizierte Acrobat-Plug-Ins für PDF-Datei verwenden:** Bei Auswahl dieser Option für eine Richtlinie wird festgelegt, dass Acrobat 8.0 und höher im zertifizierten Modus ausgeführt werden muss, wenn durch die Richtlinie geschützte Dokumente geöffnet werden. Wenn Acrobat im zertifizierten Modus ausgeführt wird, werden keine Plug-ins von Drittanbietern geladen.
 
@@ -300,7 +300,7 @@ Neben einer deaktivierten Richtlinie wird ein rotes X angezeigt.
 
 >[!NOTE]
 >
->Administratoren können persönliche Richtlinien nicht deaktivieren und Benutzer können ihre eigenen Richtlinien nicht aktivieren und deaktivieren.
+Administratoren können persönliche Richtlinien nicht deaktivieren und Benutzer können ihre eigenen Richtlinien nicht aktivieren und deaktivieren.
 
 1. Klicken Sie auf der Document Security-Seite auf Richtlinien und dann auf die Registerkarte Richtliniensätze .
 1. Klicken Sie auf den Namen des entsprechenden Richtliniensatzes und dann auf die Registerkarte Richtlinien .
@@ -310,9 +310,9 @@ Neben einer deaktivierten Richtlinie wird ein rotes X angezeigt.
 
 Auf der Registerkarte &quot;Meine Richtlinien&quot;können Sie nach persönlichen Richtlinien suchen.
 
-Von Administratoren erstellte Richtliniensätze werden auf der Registerkarte &quot;Richtliniensätze&quot;der Seite &quot;Richtlinien&quot;mit Informationen zum Richtliniensatz aufgelistet, einschließlich dessen Namen, des Erstellungsdatums und der Änderung sowie einer Beschreibung. Klicken Sie auf einen Richtliniensatznamen, um dessen Details anzuzeigen. Richtliniensatzkoordinatoren mit Berechtigung zum Verwalten von Richtlinien können freigegebene Richtlinien in einem bestimmten Richtliniensatz erstellen.
+Von Administratoren erstellte Richtliniensätze werden auf der Registerkarte Richtliniensätze der Seite Richtlinien aufgeführt. Sie enthalten Informationen über den Richtliniensatz, einschließlich seines Namens, des Erstellungsdatums und der Änderung sowie eine Beschreibung. Klicken Sie auf einen Richtliniensatznamen, damit Sie dessen Details anzeigen können. Richtliniensatzkoordinatoren mit Berechtigung zum Verwalten von Richtlinien können freigegebene Richtlinien in einem bestimmten Richtliniensatz erstellen.
 
-Beim Erstellen oder Bearbeiten einer Richtlinie wird eine Seite angezeigt, auf der Sie Details wie Richtlinienname, Berechtigungsebenen, Vertraulichkeitseinstellungen und die in die Richtlinie einzubeziehenden Empfänger konfigurieren können.
+Beim Erstellen oder Bearbeiten einer Richtlinie wird eine Seite angezeigt, auf der Sie den Richtliniennamen, die Berechtigungsebenen, die Vertraulichkeitseinstellungen und die in die Richtlinie einzubeziehenden Empfänger konfigurieren können.
 
 Der Administrator kann die folgenden Vertraulichkeitseinstellungen für eine Richtlinie konfigurieren:
 
@@ -326,10 +326,10 @@ Sie können detailliertere Informationen zu einer Richtlinie anzeigen, die in de
 
 >[!NOTE]
 >
->Richtlinien, die Acrobat automatisch für die Empfänger von Dokumenten generiert, die an E-Mail-Nachrichten in Microsoft Outlook angehängt sind, werden nicht in der Richtlinienliste angezeigt. Sie können diese Richtlinien nur anzeigen, indem Sie die Seite &quot;Dokumentdetails&quot;für das zugehörige Dokument öffnen.
+Richtlinien, die Acrobat automatisch für die Empfänger von Dokumenten generiert, die an E-Mail-Nachrichten in Microsoft Outlook angehängt sind, werden nicht in der Richtlinienliste angezeigt. Sie können diese Richtlinien nur anzeigen, indem Sie die Seite &quot;Dokumentdetails&quot;für das zugehörige Dokument öffnen.
 
 1. Klicken Sie auf der Document Security-Seite auf Richtlinien und dann auf die Registerkarte Meine Richtlinien .
-1. Füllen Sie die Suchinformationen aus, um nach persönlichen Richtlinien zu suchen.
+1. Füllen Sie die Suchinformationen aus, damit Sie nach persönlichen Richtlinien suchen können.
 1. Wählen Sie die entsprechende Richtlinie aus der Liste aus.
 1. Auf der Seite &quot;Richtliniendetails&quot;können Sie Details zur Richtlinie anzeigen, die Richtlinie bearbeiten oder Ereignisse im Zusammenhang mit der Richtlinie anzeigen.
 
@@ -343,9 +343,9 @@ Administratoren können nach freigegebenen Richtlinien und persönlichen Richtli
 
 1. Wählen Sie in der Liste Suchen eine der folgenden Optionen aus:
 
-   **Richtlinien-ID** Die Richtlinienidentifikationsnummer, die generiert wird, wenn ein Benutzer eine Richtlinie erstellt. Sie müssen die genaue Richtlinien-ID eingeben.
+   **Richtlinien-ID** Die Richtlinienidentifikationsnummer, die generiert wird, wenn ein Benutzer eine Richtlinie erstellt. Geben Sie die genaue Richtlinien-ID ein.
 
-   **Richtlinienname:** Der Name der Richtlinie. Sie können nach einem Teil oder dem gesamten Richtliniennamen suchen.
+   **Richtlinienname:** Der Name der Richtlinie. Sie können nach einem Teil des Richtliniennamen oder all diesen suchen.
 
 1. Geben Sie in das Textfeld den entsprechenden Wert ein. Wenn Sie beispielsweise Richtlinienname ausgewählt haben, geben Sie den gesuchten Richtliniennamen ein.
 1. Wählen Sie in der Liste &quot;Anzeigen&quot;die Anzahl der anzuzeigenden Ergebnisse aus und klicken Sie auf &quot;Suchen&quot;. Die Suchergebnisse werden angezeigt.
@@ -353,7 +353,7 @@ Administratoren können nach freigegebenen Richtlinien und persönlichen Richtli
 
 ## Eine Richtlinie kopieren {#copy-a-policy}
 
-Sie können eine vorhandene Richtlinie kopieren und mit einem neuen Namen und einer neuen Beschreibung speichern. Das Kopieren von Richtlinien ist eine effiziente Möglichkeit, neue Richtlinien mithilfe vorhandener Einstellungen zu erstellen.
+Sie können eine vorhandene Richtlinie kopieren und mit einem neuen Namen und einer neuen Beschreibung speichern. Das Kopieren von Richtlinien ist eine effiziente Möglichkeit, Richtlinien mithilfe vorhandener Einstellungen zu erstellen.
 
 Externe Benutzer können Richtlinien nur kopieren, wenn der Administrator diese Funktion aktiviert hat. Wenn Sie keine Richtlinien erstellen können, ist die Option Kopieren nicht verfügbar.
 
@@ -372,14 +372,14 @@ Externe Benutzer können Richtlinien nur kopieren, wenn der Administrator diese 
    * umgekehrter Schrägstrich (\)
    * Schrägstrich (/)
 
-   Wenn Sie im Namen oder in der Beschreibung das folgende Zeichen verwenden, werden diese in Leerzeichen umgewandelt:
+   Wenn Sie im Namen oder in der Beschreibung das folgende Zeichen verwendet haben, werden diese in Leerzeichen umgewandelt:
 
    * Wagenrücklauf (ASCII-Zeichen 13)
    * neue Zeile (ASCII-Zeichen 10).
 
    >[!NOTE]
    >
-   >Sie können einen Richtliniennamen erstellen, der erweiterte Zeichen enthält. Wenn jedoch ein Vergleich zwischen zwei Zeichenfolgen durchgeführt wird, werden Zeichen mit und ohne Akzentzeichen wie &quot;e&quot;und &quot;é&quot;als identisch betrachtet. Wenn jemand eine Richtlinie erstellt, wird ein Vergleich durchgeführt, um zu überprüfen, ob bereits eine Richtlinie mit demselben Namen vorhanden ist. Der Vergleich kann nicht zwischen Namen unterscheiden, die mit Ausnahme von Akzentzeichen identisch sind. Es wird davon ausgegangen, dass die Richtlinie bereits zur Datenbank hinzugefügt und die neue nicht hinzugefügt wurde.
+   Sie können einen Richtliniennamen erstellen, der erweiterte Zeichen enthält. Wenn jedoch ein Vergleich zwischen zwei Zeichenfolgen durchgeführt wird, werden Zeichen mit und ohne Akzentzeichen wie &quot;e&quot;und &quot;é&quot;als identisch betrachtet. Wenn jemand eine Richtlinie erstellt, wird ein Vergleich durchgeführt, um zu überprüfen, ob eine Richtlinie mit demselben Namen vorhanden ist. Der Vergleich kann nicht zwischen Namen unterscheiden, die mit Ausnahme von Akzentzeichen identisch sind. Es wird davon ausgegangen, dass die Richtlinie bereits zur Datenbank hinzugefügt und die neue nicht hinzugefügt wurde.
 
 1. Klicken Sie auf OK.
 
@@ -396,7 +396,7 @@ Eingeladene Benutzer können Richtlinien nur löschen, wenn der Administrator di
 
 >[!NOTE]
 >
->Sie müssen die Clientanwendung verwenden, um Richtlinien aus Dokumenten zu entfernen. (Siehe Acrobat-Hilfe oder die entsprechende Hilfe zu Acrobat Reader DC-Erweiterungen.)
+Verwenden Sie die Clientanwendung, um Richtlinien aus Dokumenten zu entfernen. (Siehe Acrobat-Hilfe oder die entsprechende Hilfe zu Acrobat Reader DC-Erweiterungen.)
 
 ## Richtlinienliste sortieren {#sort-the-policy-list}
 

@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 88%
+source-wordcount: '828'
+ht-degree: 90%
 
 ---
 
@@ -20,7 +20,7 @@ Im Bestreben, die Sicherheit von AEM kontinuierlich weiter zu verbessern, hat Ad
 
 ## Aktivieren von „SSL/TLS By Default“ {#enabling-ssl-tls-by-default}
 
-Sie können mit der Konfiguration von „SSL/TLS By Default“ beginnen, indem Sie in Ihrem AEM-Startbildschirm auf die entsprechende Posteingangsnachricht klicken. Um den Posteingang zu erreichen, klicken Sie auf das Glockensymbol in der oberen rechten Ecke des Bildschirms. Klicken Sie dann auf **Alle anzeigen**. Dadurch wird eine Liste aller bestellten Warnungen in einer Listenansicht angezeigt.
+Sie können mit der Konfiguration von „SSL/TLS By Default“ beginnen, indem Sie in Ihrem AEM-Startbildschirm auf die entsprechende Posteingangsnachricht klicken. Um den Posteingang zu erreichen, klicken Sie auf das Glockensymbol in der oberen rechten Ecke des Bildschirms. Klicken Sie anschließend auf **Alle anzeigen**. Dadurch wird eine Liste aller bestellten Warnungen in einer Listenansicht angezeigt.
 
 Wählen und öffnen Sie in der Liste die Warnung **HTTPS konfigurieren**:
 

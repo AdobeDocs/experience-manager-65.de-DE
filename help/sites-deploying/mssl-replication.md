@@ -11,10 +11,10 @@ topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 feature: Configuring
 exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
-source-git-commit: b8027a8564f2dce408e7cd5b01f3b86c703c9e3a
-workflow-type: ht
-source-wordcount: '1392'
-ht-degree: 100%
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+workflow-type: tm+mt
+source-wordcount: '1319'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ Die Konfiguration von MSSL für die Replikation umfasst die folgenden Schritte:
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-Sie müssen bestimmen, welches Benutzerkonto die Replikation durchführt. Bei der Installation des vertrauenswürdigen Autorenzertifikats auf der Publishing-Instanz wird das Zertifikat mit diesem Benutzerkonto verknüpft.
+Bestimmen Sie, welches Benutzerkonto die Replikation durchführt. Bei der Installation des vertrauenswürdigen Autorenzertifikats auf der Publishing-Instanz wird das Zertifikat mit diesem Benutzerkonto verknüpft.
 
 ## Abrufen oder Erstellen von Anmeldeinformationen für MSSL {#obtaining-or-creating-credentials-for-mssl}
 
@@ -148,7 +148,7 @@ Um das folgende Verfahren durchzuführen, müssen Sie als Admin der Authoring-In
 ### Installieren des privaten Authoring-Schlüssels {#install-the-author-private-key}
 
 1. Öffnen Sie die Benutzerverwaltungs-Seite für die Authoring-Instanz. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
-1. Um die Eigenschaften Ihres Benutzerkontos zu öffnen, klicken oder tippen Sie auf Ihren Benutzernamen.
+1. Um die Eigenschaften Ihres Benutzerkontos zu öffnen, klicken Sie auf Ihren Benutzernamen.
 1. Wenn der Link „KeyStore erstellen“ im Bereich Kontoeinstellungen angezeigt wird, klicken Sie auf ihn. Konfigurieren Sie ein Kennwort und klicken Sie auf „OK“.
 1. Klicken Sie im Bereich „Kontoeinstellungen“ auf „Keystore verwalten“.
 
@@ -167,7 +167,7 @@ Um das folgende Verfahren durchzuführen, müssen Sie als Admin der Authoring-In
 ### Installieren des Veröffentlichungszertifikats {#install-the-publish-certificate}
 
 1. Öffnen Sie die Benutzerverwaltungs-Seite für die Authoring-Instanz. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
-1. Um die Eigenschaften Ihres Benutzerkontos zu öffnen, klicken oder tippen Sie auf Ihren Benutzernamen.
+1. Um die Eigenschaften Ihres Benutzerkontos zu öffnen, klicken Sie auf Ihren Benutzernamen.
 1. Wenn der Link „TrustStore erstellen“ im Bereich „Kontoeinstellungen“ angezeigt wird, klicken Sie auf den Link, erstellen Sie ein Kennwort für den TrustStore und klicken Sie auf „OK“.
 1. Klicken Sie im Bereich „Kontoeinstellungen“ auf „TrustStore verwalten“.
 1. Klicken Sie auf „Zertifikat aus CER-Datei hinzufügen“.
@@ -191,7 +191,7 @@ Um das folgende Verfahren durchzuführen, müssen Sie als Admin der Publishing-I
 ### Installieren des privaten Publishing-Schlüssels {#install-the-publish-private-key}
 
 1. Öffnen Sie die Seite „Benutzerverwaltung“ der Publishing-Instanz. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
-1. Um die Eigenschaften Ihres Benutzerkontos zu öffnen, klicken oder tippen Sie auf Ihren Benutzernamen.
+1. Um die Eigenschaften Ihres Benutzerkontos zu öffnen, klicken Sie auf Ihren Benutzernamen.
 1. Wenn der Link „KeyStore erstellen“ im Bereich Kontoeinstellungen angezeigt wird, klicken Sie auf ihn. Konfigurieren Sie ein Kennwort und klicken Sie auf „OK“.
 1. Klicken Sie im Bereich „Kontoeinstellungen“ auf „Keystore verwalten“.
 1. Klicken Sie auf „Privaten Schlüssel aus Schlüsselspeicherdatei hinzufügen“.

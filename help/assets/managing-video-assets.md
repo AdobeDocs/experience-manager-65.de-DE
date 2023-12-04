@@ -6,10 +6,10 @@ role: User
 feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
 hide: true
-source-git-commit: d6587ef59332d6b4d419c7d7b6e29930f366d171
-workflow-type: ht
-source-wordcount: '5499'
-ht-degree: 100%
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+workflow-type: tm+mt
+source-wordcount: '5468'
+ht-degree: 99%
 
 ---
 
@@ -510,11 +510,11 @@ Wenn Sie ein neues Video in einen Ordner hochladen, auf den Videokodierung angew
 
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
-   Diese Spalte wird standardmäßig nicht angezeigt. Um die Spalte zu aktivieren, wählen Sie aus dem Dropdown-Menü **[!UICONTROL Anzeigeeinstellungen]** und fügen Sie die Spalte **[!UICONTROL Verarbeitungsstatus]** hinzu oder tippen bzw. klicken Sie auf **[!UICONTROL Aktualisieren]**.
+   Diese Spalte wird standardmäßig nicht angezeigt. Um die Spalte zu aktivieren, wählen Sie **[!UICONTROL Anzeigeeinstellungen]** aus dem Dropdown-Menü &quot;Ansichten&quot;aus und fügen Sie die **[!UICONTROL Verarbeitungsstatus]** Spalte und klicken Sie auf **[!UICONTROL Aktualisieren]**.
 
    ![chlimage_1-431](assets/chlimage_1-431.png)
 
-1. Anzeigen des Fortschritts in den Asset-Details. Wenn Sie auf ein Asset tippen oder klicken, öffnen Sie das Dropdown-Menü und wählen Sie die Option **[!UICONTROL Zeitleistensegment]**. Um die Ergebnisse auf Workflow-Aktivitäten wie Kodierung oder YouTube-Veröffentlichung zu begrenzen, wählen Sie **[!UICONTROL Workflows]**.
+1. Anzeigen des Fortschritts in den Asset-Details. Wenn Sie auf ein Asset klicken, öffnen Sie das Dropdown-Menü und wählen Sie **[!UICONTROL Timeline]**. Um die Ergebnisse auf Workflow-Aktivitäten wie Kodierung oder YouTube-Veröffentlichung zu begrenzen, wählen Sie **[!UICONTROL Workflows]**.
 
    ![chlimage_1-432](assets/chlimage_1-432.png)
 

@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
-workflow-type: ht
-source-wordcount: '666'
-ht-degree: 100%
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+workflow-type: tm+mt
+source-wordcount: '661'
+ht-degree: 91%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 Gehen Sie wie folgt vor, um die Analysen und Empfehlungen für eine Seite anzuzeigen:
 
 1. Navigieren Sie zu der Seite, die Sie analysieren möchten.
-1. Klicken oder tippen Sie in der Symbolleiste auf **Analysen und Empfehlungen**.
+1. Klicken Sie in der Symbolleiste auf **Analytics und Recommendations**.
 
    >[!NOTE]
    >
@@ -52,7 +52,7 @@ Die Tools zum Ändern der zeitbezogenen Aspekte der Berichte werden oben auf der
 
 So ändern Sie den Berichtszeitraum einer Inhaltseinblick-Seite:
 
-1. Wenn der Zeitrahmen nicht oben auf der Seite angezeigt wird, klicken oder tippen Sie auf das Symbol „Zeitrahmen umschalten“.
+1. Wenn der Zeitrahmen nicht oben auf der Seite angezeigt wird, klicken Sie auf das Symbol Zeitrahmen umschalten .
 
    ![Zeitrahmen ein/aus](do-not-localize/chlimage_1-22.png)
 
@@ -70,11 +70,11 @@ So ändern Sie den Berichtszeitraum einer Inhaltseinblick-Seite:
 
 Die Granularität wirkt sich auf die Berichte aus, die Daten in Bezug auf die Zeit darstellen, z. B. die Berichte „Ansichten“ und „Durchschnittliche Aufenthaltsdauer auf der Seite in Minuten“. Die Granularität wirkt sich auch auf den Maßstab des Zeitrahmens aus.
 
-1. Wenn das Steuerelement für die Granularität nicht angezeigt wird, klicken oder tippen Sie auf das Symbol „Granularität umschalten“.
+1. Wenn das Granularitätssteuerelement nicht angezeigt wird, klicken Sie auf das Symbol Granularität ein/aus .
 
    ![chlimage_1-128](assets/chlimage_1-128.png)
 
-1. Klicken oder tippen Sie auf die gewünschte Granularität. Nach der Auswahl wird der Bericht automatisch entsprechend der Granularität aktualisiert.
+1. Klicken Sie auf die gewünschte Granularität. Nach der Auswahl wird der Bericht automatisch entsprechend der Granularität aktualisiert.
 
 ### Zuweisen von Aufgaben für SEO-Empfehlungen {#assigning-tasks-for-seo-recommendations}
 
@@ -90,7 +90,7 @@ Wenn sie erstellt wurde, wird die Aufgabe in der Aufgabenliste des Benutzers ang
 
 Gehen Sie wie folgt vor, um eine Aufgabe für eine SEO-Empfehlung zu erstellen.
 
-1. Klicken oder tippen Sie auf das Informationssymbol für die SEO-Empfehlung.
+1. Klicken Sie auf das Informationssymbol für die SEO-Empfehlung.
 
    ![Informationssymbol](do-not-localize/chlimage_1-23.png)
 
@@ -109,4 +109,4 @@ Gehen Sie wie folgt vor, um eine Aufgabe für eine SEO-Empfehlung zu erstellen.
 
    **Hinweis:** Die Aufgabe, die erstellt wird, enthält den Pfad zu der Seite, für die die SEO-Empfehlung gilt.
 
-1. Klicken oder tippen Sie auf „Fertig“, um die Meldung „Aufgabe erstellt“ zu schließen.
+1. Klicken Sie auf Fertig , um die Meldung &quot;Aufgabe erstellt&quot;zu schließen.

@@ -10,10 +10,10 @@ discoiquuid: 87f5f9f5-2d03-4565-830e-eacc3757e542
 docset: aem65
 feature: Form Data Model
 exl-id: 9a73a643-7ad4-49aa-a971-08d52679158d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 47%
+source-wordcount: '1268'
+ht-degree: 48%
 
 ---
 
@@ -57,7 +57,7 @@ Sie können [adaptive Formulare](../../forms/using/creating-adaptive-form.md) un
 
    ![Create-af-2-1](assets/create-af-2-1.png)
 
-1. (**Nur adaptive Formularfragmente**) Sie können ein adaptives Formularfragment erstellen, das auf nur einem Datenmodellobjekt in einem Formulardatenmodell basiert. Erweitern **[!UICONTROL Definitionen des Formulardatenmodells]** angezeigt. Es listet alle Datenmodellobjekte im angegebenen Formulardatenmodell auf. Wählen Sie ein Datenmodellobjekt aus der Liste aus.
+1. (**Nur adaptive Formularfragmente**) Sie können ein adaptives Formularfragment erstellen, das auf nur einem Datenmodellobjekt in einem Formulardatenmodell basiert. Erweitern **[!UICONTROL Definitionen des Formulardatenmodells]** angezeigt. Hier sind sämtliche Datenmodellobjekte im angegebenen Formulardatenmodell aufgelistet. Wählen Sie ein Datenmodellobjekt aus der Liste aus.
 
    ![create-af-3](assets/create-af-3.png)
 
@@ -93,7 +93,7 @@ Weitere Informationen finden Sie unter:
 
 ## Vorschau mit Beispieldaten {#preview-ic}
 
-Mit dem Formulardatenmodell-Editor können Sie Beispieldaten für Datenmodellobjekte im Formulardatenmodell generieren und bearbeiten. Sie können diese Daten verwenden, um interaktive Kommunikation und adaptive Formulare in der Vorschau anzuzeigen und zu testen. Sie müssen die Beispieldaten vor der Vorschau generieren, wie beschrieben unter [Arbeiten mit einem Formulardatenmodell](../../forms/using/work-with-form-data-model.md#sample).
+Mit dem Formulardatenmodell-Editor können Sie Beispieldaten für Datenmodellobjekte im Formulardatenmodell generieren und bearbeiten. Sie können diese Daten verwenden, um interaktive Kommunikation und adaptive Formulare in der Vorschau anzuzeigen und zu testen. Generieren Sie die Beispieldaten vor der Vorschau, wie unter [Arbeiten mit dem Formulardatenmodell](../../forms/using/work-with-form-data-model.md#sample).
 
 So zeigen Sie eine Vorschau einer interaktiven Kommunikation mit Musterformulardaten an:
 

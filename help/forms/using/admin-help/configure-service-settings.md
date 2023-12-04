@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '10692'
+source-wordcount: '10702'
 ht-degree: 54%
 
 ---
@@ -147,7 +147,7 @@ Folgende Einstellungen sind für den Distiller-Dienst verfügbar:
 
 Neue Einstellungen können über die Benutzeroberfläche von PDF Generator erstellt werden.
 
-**Sicherheitseinstellungen**: Vorkonfigurierte Sicherheitseinstellungen, die auf generierte PDF-Dokumente angewendet werden. Der Standardwert ist &quot;No Security&quot;. Sie müssen Sicherheitseinstellungen mithilfe von PDF Generator erstellen und die Einstellung hier eingeben.
+**Sicherheitseinstellungen**: Vorkonfigurierte Sicherheitseinstellungen, die auf generierte PDF-Dokumente angewendet werden. Der Standardwert ist &quot;No Security&quot;. Erstellen Sie Sicherheitseinstellungen mithilfe von PDF Generator und geben Sie die Einstellung hier ein.
 
 **Pool-Größe**: Die Anfangsgröße des Pools. Wenn der Distiller-Dienst bereitgestellt wird, wird mithilfe dieser Zahl die Anzahl der Dienstimplementierungsinstanzen ermittelt, die erstellt und dem freien Pool zugeordnet werden, der auf Aufrufanforderungen wartet. Der Dienstcontainer kann dann sofort auf Aufrufanforderungen reagieren, ohne zuerst eine Dienstinstanz initialisieren zu müssen.
 
@@ -207,7 +207,7 @@ Folgende Einstellungen sind für den E-Mail-Dienst verfügbar:
 
 ## Einstellungen des Encryption-Dienstes {#encryption-service-settings}
 
-Der Encryption-Dienst (`EncryptionService`) ermöglicht das Ver- und Entschlüsseln von Dokumenten. Wenn ein Dokument verschlüsselt wird, ist sein Inhalt unlesbar. Ein autorisierter Benutzer kann das Dokument entschlüsseln, um Zugriff auf den Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, muss der Benutzer das Kennwort zum Öffnen angeben, damit das Dokument in Adobe Reader oder Adobe Acrobat angezeigt werden kann. Wenn ein PDF-Dokument mit einem Zertifikat verschlüsselt ist, muss der Benutzer das PDF-Dokument mit dem öffentlichen Schlüssel entschlüsseln, der dem Zertifikat (privater Schlüssel) entspricht, das zum Verschlüsseln des PDF-Dokuments verwendet wurde.
+Der Encryption-Dienst (`EncryptionService`) ermöglicht das Ver- und Entschlüsseln von Dokumenten. Wird ein Dokument verschlüsselt, ist sein Inhalt nicht mehr lesbar. Eine autorisierte Person kann das Dokument entschlüsseln, um Zugriff auf den Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, muss der Benutzer das Kennwort zum Öffnen angeben, damit das Dokument in Adobe Reader oder Adobe Acrobat angezeigt werden kann. Ähnlich muss die Person, wenn ein PDF-Dokument mit einem Zertifikat verschlüsselt ist, das PDF-Dokument mithilfe des öffentlichen Schlüssels entschlüsseln, der dem Zertifikat (privater Schlüssel) entspricht, das zum Verschlüsseln des PDF-Dokuments verwendet wurde.
 
 Die folgenden Einstellungen sind für den Encryption-Dienst verfügbar.
 
@@ -269,15 +269,15 @@ Folgende Einstellungen sind für den Generate PDF-Dienst verfügbar:
 
 **Logik für native Konvertierungen wiederholen**: Steuert Wiederholungsversuche zur PDF-Generierung, wenn der erste Konvertierungsversuch fehlgeschlagen ist
 
-**Nicht wiederholen**
+**Keine Wiederholung**
 
 Wiederholen Sie die PDF-Konvertierung nicht, wenn der erste Konvertierungsversuch fehlgeschlagen ist.
 
-**Erneut versuchen**
+**Wiederholen**
 
 Wiederholen Sie die PDF-Konvertierung unabhängig davon, ob der Timeout-Schwellenwert erreicht wurde. Die standardmäßige Timeout-Dauer für den ersten Versuch beträgt 270 s.
 
-**Wiederholen, wenn die Zeit ausreicht**
+**Wiederholen, wenn die Zeit dies zulässt**
 
 Wiederholen Sie die PDF-Konvertierung, wenn die für den ersten Konvertierungsversuch benötigte Zeit kürzer als die angegebene Timeout-Dauer war. Wenn die Zeitüberschreitungsdauer beispielsweise 270 Sekunden beträgt und der erste Versuch 200 Sekunden dauerte, versucht der PDF Generator erneut, die Konversion durchzuführen. Wenn der erste Versuch 270 Jahre dauerte, wird die Konvertierung nicht erneut versucht.
 
@@ -332,7 +332,7 @@ Der macKeySeed -Wert ist der Seed-Wert für den Zufallszahlengenerator, der zum 
 
 Ändern Sie den macKeySeed -Wert, wenn Sie die sicheren URLs aktualisieren müssen. Das Aktualisieren der sicheren URLs hängt von Ihrer Sicherheitsrichtlinie ab und ähnelt der Aktualisierungsrichtlinie zum Ändern des Master-Stammkennworts des Servers. Der macSeedValue entspricht dem Master-Kennwort für die sicheren URLs, da er zum Generieren einer neuen eindeutigen Zufallszahl für die sichere URL-Generierung und -Abruf verwendet wird.
 
-Sie müssen den Cluster neu starten, da der macSeedValue beim Systemstart schreibgeschützt ist. Alle Knoten müssen neu gestartet werden, um den Wert zu lesen, da sie ihn unabhängig voneinander verwenden, um ihre internen Zufallszahlen mit dem Seed-Wert zu initialisieren.
+Starten Sie den Cluster neu, da der macSeedValue beim Systemstart schreibgeschützt ist. Alle Knoten müssen neu gestartet werden, um den Wert zu lesen, da sie ihn unabhängig voneinander verwenden, um ihre internen Zufallszahlen mit dem Seed-Wert zu initialisieren.
 
 ## Einstellungen des JDBC-Dienstes {#jdbc-service-settings}
 
