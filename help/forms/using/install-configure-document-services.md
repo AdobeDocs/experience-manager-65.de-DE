@@ -4,10 +4,10 @@ description: Installieren Sie AEM Forms-Dokumentendienste, um PDF-Dokumente zu e
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 03ed3606e89d87bf2f95b56a1eeb6b7dc4bec13a
 workflow-type: tm+mt
-source-wordcount: '5512'
-ht-degree: 81%
+source-wordcount: '5521'
+ht-degree: 77%
 
 ---
 
@@ -24,13 +24,13 @@ AEM Forms bietet eine Reihe von OSGi-Diensten für verschiedene Vorgänge auf Do
 
 * **DocAssurance-Servcice:** Damit können Sie Dokumente ver- und entschlüsseln, Funktionen von Adobe Reader mit zusätzlichen Nutzungsrechten erweitern sowie digitale Signaturen zu Ihren Dokumenten hinzufügen. Der DocAssurance-Dienst umfasst drei Dienste: Signature, Encryption und Reader Extension. Weitere Informationen finden Sie unter [DocAssurance-Service](/help/forms/using/overview-aem-document-services.md).
 
-* **Encryption-Service:** Ermöglicht das Ver- und Entschlüsseln von Dokumenten. Wenn ein Dokument verschlüsselt wird, ist sein Inhalt unlesbar. Ein autorisierter Benutzer kann das Dokument entschlüsseln, um Zugriff auf seinen Inhalt zu erhalten. Weitere Informationen finden Sie unter [Encryption-Service](/help/forms/using/overview-aem-document-services.md#encryption-service).
+* **Encryption-Service:** Ermöglicht das Ver- und Entschlüsseln von Dokumenten. Wird ein Dokument verschlüsselt, ist sein Inhalt nicht mehr lesbar. Ein autorisierter Benutzer kann das Dokument entschlüsseln, um Zugriff auf seinen Inhalt zu erhalten. Weitere Informationen finden Sie unter [Encryption-Service](/help/forms/using/overview-aem-document-services.md#encryption-service).
 
 * **Forms-Service:** Ermöglicht das Erstellen interaktiver Client-Anwendungen zur Datenerfassung, die in Forms Designer erstellte Formulare überprüfen, verarbeiten, transformieren und übermitteln. Mit dem Forms-Service können Sie beliebige von Ihnen entwickelte Formular-Designs als PDF-Dokumente rendern. Weitere Informationen finden Sie unter [Forms-Service](/help/forms/using/forms-service.md).
 
 * **Output-Service:** Er ermöglicht das Erstellen von Dokumenten in verschiedenen Formaten, einschließlich PDF, Laserdruckerformate und Beschriftungsdruckerformate. Laser-Druckerformate sind PostScript und Printer Control Language (PCL). Weitere Informationen finden Sie unter [Output-Service](/help/forms/using/output-service.md).
 
-* **PDF Generator-Service** Der PDF Generator-Service stellt APIs zum Konvertieren nativer Dateiformate in PDF bereit. Es kann außerdem PDF-Dokumente in andere Dateiformate konvertieren und die Größe von PDF-Dokumenten optimieren. Weitere Informationen finden Sie unter [PDF Generator-Service](aem-document-services-programmatically.md#pdfgeneratorservice).
+* **PDF Generator-Dienst:** Der PDF Generator-Dienst stellt APIs zum Konvertieren nativer Dateiformate in PDF bereit. Es kann außerdem PDF-Dokumente in andere Dateiformate konvertieren und die Größe von PDF-Dokumenten optimieren. Weitere Informationen finden Sie unter [PDF Generator-Service](aem-document-services-programmatically.md#pdfgeneratorservice).
 
 * **Reader Extensions-Service:** Ermöglicht Unternehmen die einfache Freigabe interaktiver PDF-Dokumente durch Erweitern der Funktionalität von Adobe Reader durch zusätzliche Verwendungsrechte. Dieser Dienst aktiviert Funktionen, die nicht verfügbar sind, wenn ein PDF-Dokument in Adobe Reader geöffnet wird, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments. Weitere Informationen finden Sie unter [Reader Extension-Service](/help/forms/using/overview-aem-document-services.md#reader-extension-service).
 
@@ -42,7 +42,7 @@ AEM Forms bietet eine Reihe von OSGi-Diensten für verschiedene Vorgänge auf Do
 
   Der Signature-Dienst greift auf Zertifikate und Berechtigungen zu, die im Trust Store gespeichert sind. Weitere Informationen finden Sie unter [Signature-Service](/help/forms/using/aem-document-services-programmatically.md).
 
-AEM Forms ist eine leistungsfähige Plattform der Enterprise-Klasse und die Document-Services gehören zu den Funktionen von AEM Forms. Eine vollständige Liste der Funktionen finden Sie unter [Einführung in AEM Forms](/help/forms/using/introduction-aem-forms.md).
+AEM Forms ist eine leistungsstarke Plattform der Unternehmensklasse, und Document Services ist nur eine der Funktionen von AEM Forms. Eine vollständige Liste der Funktionen finden Sie unter [Einführung in AEM Forms](/help/forms/using/introduction-aem-forms.md).
 
 ## Bereitstellungstopologie {#deployment-topology}
 
@@ -406,7 +406,7 @@ Das AEM Forms Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. 
 
    >[!NOTE]
    >
-   Die Rechte zur Verwendung von Schriftarten anderer Anbieter als Adobe unterliegen dem Lizenzvertrag dieser Anbieter von Schriftarten und werden nicht von der Lizenz für die Adobe-Software abgedeckt. Adobe empfiehlt, dass Sie vor der Verwendung von Drittanbieter-Schriften in Verbindung mit Adobe-Software alle relevanten Lizenzverträge der Drittanbieter lesen und dafür sorgen, dass Sie diese Verträge einhalten. Dies gilt insbesondere für die Verwendung von Schriften in einer Server-Umgebung.
+   Die Rechte zur Verwendung von Schriftarten anderer Anbieter als Adobe unterliegen dem Lizenzvertrag dieser Anbieter von Schriftarten und werden nicht von der Lizenz für die Adobe-Software abgedeckt. Adobe empfiehlt, dass Sie vor der Verwendung von Nicht-Adobe-Schriftarten mit Adobe-Software alle geltenden Lizenzvereinbarungen ohne Adobe einhalten und sicherstellen, dass Sie diese einhalten, insbesondere was die Verwendung von Schriftarten in einer Serverumgebung betrifft.
 Starten Sie die AEM Forms-Instanz neu, wenn Sie neue Zeichensätze im Zeichensatzordner installieren.
    >
 
@@ -579,7 +579,7 @@ Der Assembler-Dienst hängt vom Reader Extension-Dienst, vom Signature-Dienst, v
 
 Die [Systembereitschafts-Tool](#srt-configuration) überprüft, ob der Computer ordnungsgemäß für die Ausführung von PDF Generator-Konvertierungen konfiguriert ist. Das Tool generiert einen Bericht im angegebenen Pfad. So führen Sie das Tool aus:
 
-1. Öffnen Sie eine Eingabeaufforderung und navigieren Sie zum Ordner `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools`. 
+1. Öffnen Sie eine Eingabeaufforderung. Navigieren Sie zum Ordner `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools`.
 
 1. Führen Sie in der Eingabeaufforderung den folgenden Befehl aus:
 
@@ -648,7 +648,7 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
 
 **Microsoft® Windows**
 
-* Stellen Sie sicher, dass die [unterstützte 32-Bit-Version ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) von Microsoft® Office installiert ist und für keine der Anwendungen Dialogfelder offen sind.
+* Stellen Sie sicher, dass 32 Bit [unterstützte Version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) von Microsoft Office installiert ist und das Öffnen von Dialogfeldern für alle Anwendungen abgebrochen wird.
 * Stellen Sie sicher, dass in der PDF-Konfigurationsoberfläche ein Benutzer von PDF Generator hinzugefügt wird.
 * Stellen Sie sicher, dass der PDF Generator-Benutzer Mitglied der Administratorgruppe ist und dass für den Benutzer die Berechtigung zum [Ersetzen eines Tokens auf Prozessebene](#grant-the-replace-a-process-level-token-privilege) besteht.
 * Stellen Sie sicher, dass der Benutzer in der Benutzeroberfläche von PDF Generator konfiguriert ist und die folgenden Aktionen ausführt:
@@ -668,6 +668,10 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
 * Sollten bei der Installation von OpenOffice Probleme auftreten, stellen Sie sicher, dass die für die OpenOffice-Installation erforderlichen [32-Bit-Bibliotheken](#extrarequirements) zur Verfügung stehen.
 
 +++
+
++ + + Microsoft Office 2019 wird auf Microsoft Windows Server 2019 nicht ausgeführt
+
+* Stellen Sie sicher, dass Sie keine aktive Remote-Verbindung mit AEM Server haben.
 
  +++ Probleme bei der Konvertierung von HTML in PDF
 
@@ -788,8 +792,23 @@ Wenn der Benutzer versucht, Word- oder Excel-Dateien unter Microsoft Windows Ser
 *Fehlermeldung des primären Konverters:
 ALC-PDG-015-003-Das System kann die Eingabedatei nicht öffnen. Senden Sie die Datei erneut oder kontaktieren Sie Ihren Systemadministrator.*
 
-Informationen zum Beheben des Problems finden Sie unter [Konvertieren von Word- oder Excel-Dateien in PDF ist unter Windows Server nicht möglich](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+Informationen zum Beheben der Probleme finden Sie unter [Konvertieren von Word- oder Excel-Dateien in PDF unter Windows Server nicht möglich](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
 
++++ Excel-Dateien können unter Windows Server 2019 nicht in PDF konvertiert werden
+
+Wenn Sie Microsoft Excel 2019 auf Microsoft Windows Server 2019 in PDF konvertieren, müssen Sie Folgendes sicherstellen:
+
+* Bei Verwendung des PDF Generator-Dienstes sollte Ihr Windows-Computer keine aktive Remote-Verbindung mit dem AEM-Server (Windows RDP-Sitzung) haben.
+* Der Standarddrucker muss auf Adobe PDF eingestellt sein.
+
+>[!NOTE]
+* Für Apple macOS und Ubuntu OS müssen Sie die oben genannten Einstellungen nicht konfigurieren.
+
++++ XPS-Dateien können nicht in PDF konvertiert werden
+
+Um das Problem zu beheben, [Erstellen eines funktionsspezifischen Registrierungsschlüssels unter Windows](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
+
++++
 
 ## Nächste Schritte {#next-steps}
 
