@@ -7,10 +7,10 @@ topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 72cd0594-8b5e-4d14-bc6f-bca26bae50f2
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '840'
-ht-degree: 97%
+ht-degree: 76%
 
 ---
 
@@ -26,17 +26,17 @@ Der angemeldete Benutzer muss Mitglied der Gruppe `workflow-users` sein. Der Ben
 
 ## Teilen eines einzelnen oder aller Elemente Ihres Posteingangs mit einem anderen Benutzer
 
-Mit AEM Posteingang können Sie ein einzelnes oder alle Elemente in Ihrem Posteingang für einen anderen Benutzer freigeben.
+Mit dem AEM-Posteingang können Sie einzelne oder alle Elemente in Ihrem Posteingang für andere Benutzende freigeben.
 
 ### Alle Posteingangselemente freigeben
 
 Führen Sie folgende Schritte aus, um alle Elemente in einem Posteingang für einen anderen Benutzer freizugeben:
 
-1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an. Tippen Sie auf das Symbol ![Posteingang](assets/bell.svg) und dann auf **[!UICONTROL Alle anzeigen]**. Eine Liste Ihrer Posteingangselemente wird angezeigt.
-1. Tippen Sie auf das Symbol ![Listenansicht](assets/viewlist.svg) oder ![Kalender](assets/calendar.svg) neben der Schaltfläche **[!UICONTROL Erstellen]** und dann auf **[!UICONTROL Einstellungen]**. Das Dialogfeld „Einstellungen“ wird angezeigt.
+1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an. Wählen Sie die ![Posteingang](assets/bell.svg) Symbol und wählen Sie **[!UICONTROL Alle anzeigen]**. Eine Liste Ihrer Posteingangselemente wird angezeigt.
+1. Wählen Sie die ![Ansichtauswahl](assets/viewlist.svg) oder ![Ansichtauswahl](assets/calendar.svg) Symbol neben **[!UICONTROL Erstellen]** Schaltfläche und wählen Sie **[!UICONTROL Einstellungen]**. Das Dialogfeld „Einstellungen“ wird angezeigt.
 1. Öffnen Sie im Dialogfeld „Einstellungen“ die Registerkarte **[!UICONTROL Freigeben]**.
-1. Geben Sie den Namen eines Benutzers in das Textfeld **[!UICONTROL Zugriff auf Ihre Posteingangselemente gewähren]** ein und tippen Sie auf **[!UICONTROL Gewähren]**. Wiederholen Sie den Schritt, um weitere Benutzer hinzuzufügen. Alle Benutzer mit Zugriff auf Ihre Elemente werden im Abschnitt **Benutzername** angezeigt.
-1. Tippen Sie auf **[!UICONTROL Speichern]**.
+1. Geben Sie den Namen eines Benutzers im **[!UICONTROL Zugriff auf Ihre Posteingangselemente gewähren]** Textfeld und wählen Sie **[!UICONTROL Zuschuss]**. Wiederholen Sie den Schritt, um weitere Benutzer hinzuzufügen. Alle Benutzer mit Zugriff auf Ihre Elemente werden im Abschnitt **Benutzername** angezeigt.
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
 >[!NOTE]
 >
@@ -46,10 +46,10 @@ Führen Sie folgende Schritte aus, um alle Elemente in einem Posteingang für ei
 
 Führen Sie folgende Schritte aus, um ein Posteingangselement für einen anderen Benutzer freizugeben:
 
-1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an. Tippen Sie auf das Symbol ![Posteingang](assets/bell.svg) und dann auf **[!UICONTROL Alle anzeigen]**. Eine Liste Ihrer Posteingangselemente wird angezeigt.
-1. Wählen Sie ein Element aus und tippen Sie auf **[!UICONTROL Freigeben]**. Folgendes Dialogfeld wird angezeigt.
-1. Geben Sie den Namen eines Benutzers in das Textfeld „Benutzer hinzufügen, um dieses Element freizugeben“ ein und tippen Sie auf **[!UICONTROL Hinzufügen]**. Wiederholen Sie den Schritt, um weitere Benutzer hinzuzufügen. Alle Benutzer mit Zugriff auf Ihre Elemente werden im Abschnitt **[!UICONTROL Benutzername]** angezeigt.
-1. Tippen Sie auf **[!UICONTROL Speichern]**.
+1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an. Wählen Sie die ![Posteingang](assets/bell.svg) Symbol und wählen Sie **[!UICONTROL Alle anzeigen]**. Eine Liste Ihrer Posteingangselemente wird angezeigt.
+1. Element auswählen und **[!UICONTROL Freigeben]**. Ein Dialogfeld wird angezeigt.
+1. Geben Sie den Namen eines Benutzers in das Textfeld Benutzer hinzufügen, um dieses Element freizugeben ein und wählen Sie **[!UICONTROL Hinzufügen]**. Wiederholen Sie den Schritt, um weitere Benutzer hinzuzufügen. Alle Benutzer mit Zugriff auf Ihre Elemente werden im Abschnitt **[!UICONTROL Benutzername]** angezeigt.
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
 
 >[!NOTE]
@@ -60,20 +60,20 @@ Führen Sie folgende Schritte aus, um ein Posteingangselement für einen anderen
 
 Sie können Zugriff auf die Posteingangselemente eines anderen Benutzers anfordern. Sobald der Zugriff gewährt ist, können Sie freigegebene Elemente anzeigen, beanspruchen und entsprechende Aktionen durchführen. Führen Sie folgende Schritte aus, um den Zugriff auf Posteingangselemente eines anderen Benutzers anzufordern:
 
-1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an. Tippen Sie auf das Symbol ![View Selector](assets/bell.svg) und dann auf **[!UICONTROL Alle anzeigen]**.
-1. Tippen Sie auf das Symbol ![View Selector](assets/viewlist.svg) oder ![View Selector](assets/calendar.svg) neben der Schaltfläche **[!UICONTROL Erstellen]** und dann auf **[!UICONTROL Einstellungen]**. Das Dialogfeld „Einstellungen“ wird angezeigt.
-1. Geben Sie den Namen eines Benutzers in das Textfeld **[!UICONTROL Zugriff auf Posteingangselemente des Benutzers anfordern]** ein und tippen Sie auf **[!UICONTROL Anfordern]**. Der Benutzer erhält eine Anfrage und der Status der Anfrage wird beim Namen des Benutzers angezeigt. Wiederholen Sie den Schritt, um weitere Benutzer hinzuzufügen.
-1. Tippen Sie auf **[!UICONTROL Speichern]**. Die Anfrage wird als Posteingangselement an die Benutzer gesendet. Der Benutzer kann das Element auswählen und auf „Genehmigen“ oder „Ablehnen“ tippen, um den Zugriff zu gewähren oder abzulehnen.
+1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an. Wählen Sie die ![Ansichtauswahl](assets/bell.svg) Symbol und wählen Sie **[!UICONTROL Alle anzeigen]**.
+1. Wählen Sie die ![Ansichtauswahl](assets/viewlist.svg) oder ![Ansichtauswahl](assets/calendar.svg) Symbol neben **[!UICONTROL Erstellen]** Schaltfläche und wählen Sie **[!UICONTROL Einstellungen]**. Das Dialogfeld „Einstellungen“ wird angezeigt.
+1. Geben Sie den Namen eines Benutzers im **[!UICONTROL Anfordern des Zugriffs auf Inbox-Elemente des Benutzers]** Textfeld und wählen Sie **[!UICONTROL Anfrage]**. Der Benutzer erhält eine Anfrage und der Status der Anfrage wird beim Namen des Benutzers angezeigt. Wiederholen Sie den Schritt, um weitere Benutzer hinzuzufügen.
+1. Wählen Sie **[!UICONTROL Speichern]** aus. Die Anfrage wird als Posteingangselement an die Benutzer gesendet. Der Benutzer kann das Element auswählen und die Option Genehmigen oder Ablehnen wählen, um den Zugriff zu gewähren oder abzulehnen.
 
 
 ## Anfordern von Elementen, die von anderen Benutzern freigegeben werden {#claim-items}
 
 Sie können erst mit einem freigegebenen Element arbeiten, nachdem Sie es beansprucht haben. Dadurch wird verhindert, dass mehrere Benutzer an einem einzelnen Element arbeiten. Führen Sie folgende Schritte aus, um ein Element zu beanspruchen:
 
-1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an. Tippen Sie auf das Posteingangssymbol (![Inbox](assets/bell.svg)) und dann auf **[!UICONTROL Alle anzeigen]**.
-1. Tippen Sie auf das Symbol ![Content only](assets/railleft.svg), um die Filterauswahl zu öffnen.
-1. Tippen Sie auf die Dropdown-Liste **[!UICONTROL Verantwortlichen auswählen]**, um Benutzer anzuzeigen und auszuwählen, die ihre Posteingangselemente für Sie freigegeben haben.
-1. Wählen Sie ein Element aus und tippen Sie auf **[!UICONTROL Beanspruchen]**. Das Element wird Ihrem Posteingang hinzugefügt.
+1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an. Auswählen des Posteingangs ![Posteingang](assets/bell.svg) Symbol und wählen Sie **[!UICONTROL Alle anzeigen]**.
+1. Wählen Sie die ![Nur Inhalt](assets/railleft.svg) -Symbol, um die Filterauswahl zu öffnen.
+1. Wählen Sie die **[!UICONTROL Bevollmächtigten auswählen]** in der Dropdown-Liste, um Benutzer anzuzeigen und auszuwählen, die ihre Inbox-Elemente für Sie freigegeben haben.
+1. Element auswählen und **[!UICONTROL Anspruch]**. Das Element wird Ihrem Posteingang hinzugefügt.
 
 ## Freigeben angeforderter Elemente {#release-items}
 
@@ -81,8 +81,8 @@ Sie können erst mit einem freigegebenen Element arbeiten, nachdem Sie es beansp
 
 Führen Sie folgende Schritte aus, um ein Element freizugeben:
 
-1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an. Tippen Sie auf das Posteingangssymbol (![Inbox](assets/bell.svg)) und dann auf **[!UICONTROL Alle anzeigen]**. Eine Liste Ihrer Posteingangselemente wird angezeigt.
-1. Wählen Sie das zu veröffentlichende Element aus und tippen Sie auf **[!UICONTROL Beanspruchung aufheben]**. Das Element wird wieder zum Pool hinzugefügt. Andere können das Element jetzt beanspruchen.
+1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an. Auswählen des Posteingangs ![Posteingang](assets/bell.svg) Symbol und wählen Sie **[!UICONTROL Alle anzeigen]**. Eine Liste Ihrer Posteingangselemente wird angezeigt.
+1. Wählen Sie das zu veröffentlichende Element aus und wählen Sie **[!UICONTROL UnClaim]**. Das Element wird wieder zum Pool hinzugefügt. Andere können das Element jetzt beanspruchen.
 
 ## Beschränkungen {#limitations}
 

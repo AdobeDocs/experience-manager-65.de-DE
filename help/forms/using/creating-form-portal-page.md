@@ -11,10 +11,10 @@ discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
 docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1661'
-ht-degree: 57%
+source-wordcount: '1666'
+ht-degree: 53%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 57%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
 Forms Portal-Komponenten bieten Webentwicklern Komponenten zum Erstellen und Anpassen von Formularportalen auf mit Adobe Experience Manager (AEM) erstellten Websites. Einen kurzen Überblick über Forms Portal finden Sie unter [Einführung in das Veröffentlichen von Formularen in einem Portal](../../forms/using/introduction-publishing-forms.md).
@@ -58,13 +58,13 @@ Komponente &quot;Search &amp; Lister&quot;auf einer Seite mit Rasterlayout
 
 Im Listenbereich werden die Formulare aufgeführt. Die Komponente „Search &amp; Lister“ bietet unterschiedliche Konfigurationsoptionen, mit denen Sie die Anzeige von Formularen im Listenbereich steuern können.
 
-Um den Listenbereich zu konfigurieren, tippen Sie auf die Komponente „Suche und Auflister“ und dann auf das Symbol ![settings_icon](assets/settings_icon.png). Das Dialogfeld **[!UICONTROL Komponente bearbeiten]** wird geöffnet.
+Um den Listenbereich zu konfigurieren, wählen Sie die Komponente &quot;Search and Lister&quot;aus und klicken Sie auf ![settings_icon](assets/settings_icon.png). Das Dialogfeld **[!UICONTROL Komponente bearbeiten]** wird geöffnet.
 
 ![Listenbereich im Bearbeitungsmodus](assets/edit-list.png)
 
 Listenbereich im Bearbeitungsmodus
 
-Das Dialogfeld **Bearbeiten** enthält mehrere Registerkarten mit Konfigurationsoptionen (siehe Tabelle unten). Tippen Sie abschließend auf **OK**, um die Konfiguration zu speichern.
+Das Dialogfeld **Bearbeiten** enthält mehrere Registerkarten mit Konfigurationsoptionen (siehe Tabelle unten). Auswählen **OK** , um die Konfiguration zu speichern.
 
 <table>
  <tbody>
@@ -177,7 +177,7 @@ Die Komponente &quot;Date Predicate&quot;ermöglicht nach dem Hinzufügen die Su
 
 So konfigurieren Sie die Komponente &quot;Date Predicate&quot;:
 
-1. Tippen Sie auf die Komponente und dann auf das Sÿmbol ![settings_icon](assets/settings_icon.png). Das Dialogfeld „Edit “ wird geöffnet.
+1. Wählen Sie die Komponente aus und wählen Sie dann ![settings_icon](assets/settings_icon.png). Das Dialogfeld „Edit “ wird geöffnet.
 1. Geben Sie Folgendes an:
 
    * **Typ:** Die einzige verfügbare Option ist **Last Modified Date** (Letztes Änderungsdatum).
@@ -188,7 +188,7 @@ So konfigurieren Sie die Komponente &quot;Date Predicate&quot;:
    * **End Date Label (Enddatumsbeschriftung):** Beschriftung des Feldes „Enddatum“.
    * **Ausblenden:** Damit wird der Standarddatumsfilter für die Auflistung von Formularen erzwungen. 
 
-1. Tippen Sie auf **OK**
+1. Auswählen **OK**
 
 #### Vollständige Texteigenschaft {#full-text-predicate}
 
@@ -196,9 +196,9 @@ Die Komponente &quot;Full Text Predicate&quot;implementiert die Volltextsuche in
 
 So konfigurieren Sie die Komponente &quot;Volltexteigenschaft&quot;:
 
-1. Tippen Sie auf die Komponente und dann auf ![Einstellungen_Symbol](assets/settings_icon.png). Das Dialogfeld „Edit “ wird geöffnet.
+1. Wählen Sie die Komponente aus und wählen Sie dann ![settings_icon](assets/settings_icon.png). Das Dialogfeld „Edit “ wird geöffnet.
 1. Geben Sie den Titel im Feld **Haupttitel** an.
-1. Tippen **Ok**
+1. Auswählen **Ok**
 
 #### Eigenschaften-Eigenschaft {#properties-predicate}
 
@@ -206,15 +206,15 @@ Die Komponente &quot;Eigenschaftsprädikat&quot;implementiert die Suche nach For
 
 So konfigurieren Sie die Komponente Eigenschaftsprädikat :
 
-1. Tippen Sie auf die Komponente und dann auf ![Einstellungen_Symbol](assets/settings_icon.png). Das Dialogfeld „Edit “ wird geöffnet.
+1. Wählen Sie die Komponente aus und wählen Sie dann ![settings_icon](assets/settings_icon.png). Das Dialogfeld „Edit “ wird geöffnet.
 1. Geben Sie im Tab Allgemein den Suchtitel an. Der Standardwert ist **Eigenschaften**. 
 
-1. Tippen Sie auf der Registerkarte „Optionen“ auf **Element hinzufügen**.
+1. Wählen Sie auf der Registerkarte Optionen die Option **Element hinzufügen.**
 1. Wählen Sie eine Eigenschaft in der Dropdownliste aus und geben Sie für die Eigenschaft eine Suchbeschriftung im Feld unter der Dropdown-Liste an.
 1. Wiederholen Sie Schritt 4, um weitere Eigenschaften hinzuzufügen. Sie können auch einen Standardfilterwert für die Auflistung von Formularen anhand der angegebenen Kriterien festlegen und die Eigenschaft für die Suche durch Endbenutzer ausblenden. Aktivieren Sie das Kontrollkästchen „Ausblenden“ für eine Eigenschaft und legen Sie den Standardfilterwert fest.
  Wenn Sie beispielsweise Formulare anzeigen möchten, die „Reise“ in ihrem Titel enthalten, wählen Sie „Ausblenden“ neben der Eigenschaft „Titel“. Geben Sie außerdem „Reise“ im Textfeld des Standardfilterwerts an.
 
-1. Tippen Sie auf **OK**
+1. Auswählen **OK**
 
 #### Tag-Eigenschaft {#tags-predicate}
 
@@ -222,10 +222,10 @@ Die Komponente &quot;Tag-Eigenschaft&quot;implementiert die Suche nach Formulare
 
 So konfigurieren Sie die Komponente &quot;Tags Predicate&quot;:
 
-1. Tippen Sie auf die Komponente und dann auf ![Einstellungen_Symbol](assets/settings_icon.png). Das Dialogfeld „Edit “ wird geöffnet.
-1. Tippen Sie neben dem Feld „Tags“ auf den Abwärtspfeil.
+1. Wählen Sie die Komponente aus und wählen Sie dann ![settings_icon](assets/settings_icon.png). Das Dialogfeld „Edit “ wird geöffnet.
+1. Wählen Sie die Abwärtspfeilschaltfläche neben dem Feld Tags aus.
 1. Auswählen geeigneter Tags
-1. Tippen Sie auf **OK**
+1. Auswählen **OK**
 
 Die ausgewählten Tags werden im Suchbereich zusammen mit den Kontrollkästchen zur Auswahl angezeigt. Benutzer können ihre Suche nun anhand der Tags eingrenzen.
 

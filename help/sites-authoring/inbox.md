@@ -2,10 +2,10 @@
 title: Ihr Posteingang zum Verwalten von Aufgaben
 description: Verwalten Ihrer Aufgaben mit dem Posteingang in Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '1155'
-ht-degree: 92%
+ht-degree: 89%
 
 ---
 
@@ -138,8 +138,8 @@ Die Option „Admin-Kontrolle“ ist nur für die Mitglieder der Gruppen `admini
 
 * **Spaltenanpassung**: Passen Sie einen AEM-Posteingang an, indem Sie den Standardtitel einer Spalte ändern, eine Spalte neu anordnen und zusätzliche Spalten basierend auf den Daten eines Workflows anzeigen.
    * **Spalte hinzufügen**: Wählen Sie eine Spalte aus, die dem AEM-Posteingang hinzugefügt werden soll.
-   * **Spalte bearbeiten**: Bewegen Sie den Mauszeiger über den Spaltentitel und tippen Sie auf das Symbol ![Bearbeiten](assets/edit.svg), um einen Anzeigenamen für die Spalte einzugeben.
-   * **Spalte löschen**: Tippen Sie auf das Symbol ![Löschen](assets/delete_updated.svg), um die Spalte aus dem AEM-Posteingang zu löschen.
+   * **Spalte bearbeiten**: Bewegen Sie den Mauszeiger über den Spaltentitel und wählen Sie ![edit](assets/edit.svg) -Symbol, um einen Anzeigenamen der Spalte einzugeben.
+   * **Spalte löschen**: Wählen Sie die ![delete](assets/delete_updated.svg) -Symbol, um die Spalte aus AEM Posteingang zu löschen.
    * **Spalte verschieben**: Ziehen Sie das Symbol ![Verschieben](assets/move_updated.svg), um eine Spalte im AEM-Posteingang an eine neue Position zu verschieben.
 
   ![Admin-Kontrolle](assets/admin-control-column-customize.png)

@@ -4,10 +4,10 @@ description: Sehen Sie sich die exemplarische Vorgehensweise der We.Gov-Referenz
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 57b5ce89-6b01-4087-a485-6d9696f06378
-source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 24%
+source-wordcount: '842'
+ht-degree: 22%
 
 ---
 
@@ -39,7 +39,7 @@ Gemäß dem Freedom of Information Act fordert Sarah eine Kopie der Fallprotokol
 
 ### Sehen Sie selbst {#see-it-yourself}
 
-Öffnen Sie in Ihrem Browser `https://<hostname>:<PublishPort>/wegov`. Klicken Sie auf der We.Gov-Website auf „Applications“ > „All Applications“ (Anträge > Alle Anträge). Tippen Sie auf der Seite „All Applications“ unter „Application for FOIA Request“ (Antrag für FOIA-Anfrage) auf „Apply“ (Beantragen).
+Öffnen Sie in Ihrem Browser `https://<hostname>:<PublishPort>/wegov`. Wählen Sie auf der Site &quot;We.Gov&quot;Anwendungen > Alle Anwendungen aus. Wählen Sie auf der Seite Alle Anwendungen unter Anwendung für FOIA-Anfrage die Option Übernehmen aus.
 
 ## Sarah stellt ihren Antrag auf Informationen gemäß FOIA. {#sarah-starts-her-application-for-information-under-foia}
 
@@ -54,7 +54,7 @@ Sarah klickt auf **Apply** (Beantragen) und gibt auf der Seite für das Freedom 
 
 Anfordern einer Kopie der Fallprotokolle von Administration for Children and Families für die Geschäftsjahre 2013 bis 2016
 
-Sarah kann jederzeit auf **Speichern** , um einen Formularentwurf zu speichern, und später erneut darauf zugreifen, um das Formular auszufüllen und zu versenden. Sarah sendet das Formular.
+Sarah kann jederzeit **Speichern** , um einen Formularentwurf zu speichern, und später erneut darauf zugreifen, um das Formular auszufüllen und zu versenden. Sarah sendet das Formular.
 
 >[!NOTE]
 >

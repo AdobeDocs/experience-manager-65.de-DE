@@ -8,10 +8,10 @@ uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 exl-id: 0202ca65-21ef-4477-b704-7b52314a7d7b
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1124'
-ht-degree: 55%
+source-wordcount: '1115'
+ht-degree: 47%
 
 ---
 
@@ -45,12 +45,12 @@ Jedem Kunden wird eine eindeutige Kunden-ID-Nummer zugewiesen, mit der relevante
 
    [http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
 
-1. Tippen Sie auf das Feld **[!UICONTROL Kunden-ID]** und tippen Sie auf das Symbol **[!UICONTROL Regeln bearbeiten]**. Das Fenster „Regeleditor“ wird geöffnet.
-1. Tippen Sie auf **[!UICONTROL + Erstellen]** -Symbol, um eine Regel hinzuzufügen. Dadurch wird der Visual Editor geöffnet.
+1. Wählen Sie die **[!UICONTROL Kunden-ID]** und wählen Sie die **[!UICONTROL Regeln bearbeiten]** Symbol. Das Fenster „Regeleditor“ wird geöffnet.
+1. Wählen Sie die **[!UICONTROL + Erstellen]** -Symbol, um eine Regel hinzuzufügen. Dadurch wird der Visual Editor geöffnet.
 
    Im visuellen Editor ist die Anweisung **[!UICONTROL WHEN]** standardmäßig ausgewählt. Darüber hinaus wird das Formularobjekt (in diesem Fall **[!UICONTROL Kunden-ID]**), von dem aus Sie den Regeleditor gestartet haben, in der **[!UICONTROL WHEN]**-Anweisung angegeben.
 
-1. Tippen Sie auf die Dropdown-Liste **[!UICONTROL Status auswählen]** und wählen Sie **[!UICONTROL wurde geändert]**.
+1. Wählen Sie die **[!UICONTROL Status auswählen]** und wählen Sie **[!UICONTROL geändert wird]**.
 
    ![whencustomeridischanged](assets/whencustomeridischanged.png)
 
@@ -64,7 +64,7 @@ Jedem Kunden wird eine eindeutige Kunden-ID-Nummer zugewiesen, mit der relevante
 
    ![dropobjectstooutputfield-retrieveData](assets/dropobjectstooutputfield-retrievedata.png)
 
-   Tippen Sie auf **[!UICONTROL Fertig]**, um die Regel zu speichern. Tippen Sie im Fenster des Regeleditors auf **[!UICONTROL Schließen]**.
+   Auswählen **[!UICONTROL Fertig]** , um die Regel zu speichern. Wählen Sie im Fenster des Regeleditors **[!UICONTROL Schließen]**.
 
 1. Zeigen Sie das adaptive Formular in der Vorschau an. Geben Sie eine ID in die **[!UICONTROL Kunden-ID]** -Feld. Das Formular kann jetzt Kundendetails aus der Datenbank abrufen.
 
@@ -74,8 +74,8 @@ Jedem Kunden wird eine eindeutige Kunden-ID-Nummer zugewiesen, mit der relevante
 
 Nachdem die Kundendetails aus der Datenbank abgerufen wurden, können Sie die Lieferadresse, den Bundesstaat und die Postleitzahl aktualisieren. Das folgende Verfahren ruft einen Formulardatenmodelldienst auf, um Kundeninformationen in der Datenbank zu aktualisieren:
 
-1. Wählen Sie das Feld **[!UICONTROL Senden]** und tippen Sie auf das Symbol **[!UICONTROL Regeln bearbeiten]**. Das Fenster „Regeleditor“ wird geöffnet.
-1. Wählen Sie die Regel **[!UICONTROL Senden - Klicken]** und tippen Sie auf das Symbol **[!UICONTROL Bearbeiten]**. Die Optionen zum Bearbeiten der Senden-Regel werden angezeigt.
+1. Wählen Sie die **[!UICONTROL Einsenden]** und wählen Sie die **[!UICONTROL Regeln bearbeiten]** Symbol. Das Fenster „Regeleditor“ wird geöffnet.
+1. Wählen Sie die **[!UICONTROL Submit - Click]** und wählen Sie die **[!UICONTROL Bearbeiten]** Symbol. Die Optionen zum Bearbeiten der Senden-Regel werden angezeigt.
 
    ![submit-rule](assets/submit-rule.png)
 
@@ -83,7 +83,7 @@ Nachdem die Kundendetails aus der Datenbank abgerufen wurden, können Sie die Li
 
    ![submit-is-clicked](assets/submit-is-clicked.png)
 
-1. Im **[!UICONTROL THEN]** Tippen Sie auf die **[!UICONTROL + Anweisung hinzufügen]** -Option. Auswählen **[!UICONTROL Aufrufdienst]** aus dem **[!UICONTROL Aktion auswählen]** angezeigt.
+1. Im **[!UICONTROL THEN]** auswählen, wählen Sie die **[!UICONTROL + Anweisung hinzufügen]** -Option. Auswählen **[!UICONTROL Aufrufdienst]** aus dem **[!UICONTROL Aktion auswählen]** angezeigt.
 1. Wählen Sie die **[!UICONTROL Versandadresse aktualisieren]** -Dienst von **[!UICONTROL Auswählen]** angezeigt.
 
    ![update-shipping-address](assets/update-shipping-address.png)
@@ -97,7 +97,7 @@ Nachdem die Kundendetails aus der Datenbank abgerufen wurden, können Sie die Li
    >Ziehen Sie die Felder **[!UICONTROL Name]** und **[!UICONTROL Kunden-ID]** nicht auf die entsprechende tablename.property (z. B. customerdetails.name). Der Name und die ID des Kunden sollten nicht versehentlich aktualisiert werden.
 
 1. Ziehen Sie das Feld **[!UICONTROL Kunden-ID]** per Drag-and-Drop von der Registerkarte [!UICONTROL Formularobjekte] in das Feld „ID“ im Feld **[!UICONTROL INPUT]**. Felder ohne vorangestellten Tabellennamen (in diesem Anwendungsbeispiel das Feld „customerdetails“) dienen als Suchparameter für den Aktualisierungsservice. Das Feld **[!UICONTROL ID]** in diesem Anwendungsfall identifiziert einen Datensatz in der Tabelle **customerdetails**.
-1. Tippen Sie auf **[!UICONTROL Fertig]**, um die Regel zu speichern. Tippen Sie im Fenster des Regeleditors auf **[!UICONTROL Schließen]**.
+1. Auswählen **[!UICONTROL Fertig]** , um die Regel zu speichern. Wählen Sie im Fenster des Regeleditors **[!UICONTROL Schließen]**.
 1. Zeigen Sie das adaptive Formular in der Vorschau an. Rufen Sie Details zu einem Kunden ab, aktualisieren Sie die Lieferadresse und senden Sie das Formular. Wenn Sie die Details desselben Kunden erneut abrufen, wird die aktualisierte Versandadresse angezeigt.
 
 ## Schritt 3: (Abschnitt &quot;Bonus&quot;) Verwenden Sie den Code-Editor, um Überprüfungen auszuführen und Fehlermeldungen anzuzeigen. {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
@@ -108,12 +108,12 @@ Adaptive Formulare bieten mehrere Komponenten mit integrierten Validierungen, z.
 
 Das folgende Verfahren zeigt, wie eine Regel erstellt wird, um eine Fehlermeldung anzuzeigen, wenn die im Formular eingegebene Kunden-ID nicht in der Datenbank vorhanden ist. Die Regel bringt auch den Fokus auf das Feld **[!UICONTROL Kunden-ID]** und setzt es zurück. Die Regel verwendet [die dataIntegrationUtils-API des Formulardatenmodell-Services](/help/forms/using/invoke-form-data-model-services.md), um zu überprüfen, ob die Kunden-ID in der Datenbank vorhanden ist.
 
-1. Tippen Sie auf das Feld **[!UICONTROL Kunden-ID]** und dann auf das Symbol `Edit Rules`. Das Fenster [!UICONTROL Regeleditor] wird geöffnet.
-1. Tippen Sie auf **[!UICONTROL + Erstellen]** -Symbol, um eine Regel hinzuzufügen. Dadurch wird der Visual Editor geöffnet.
+1. Wählen Sie die **[!UICONTROL Kunden-ID]** und wählen Sie die `Edit Rules` Symbol. Das Fenster [!UICONTROL Regeleditor] wird geöffnet.
+1. Wählen Sie die **[!UICONTROL + Erstellen]** -Symbol, um eine Regel hinzuzufügen. Dadurch wird der Visual Editor geöffnet.
 
    Im visuellen Editor ist die Anweisung **[!UICONTROL WHEN]** standardmäßig ausgewählt. Darüber hinaus wird das Formularobjekt (in diesem Fall **[!UICONTROL Kunden-ID]**), von dem aus Sie den Regeleditor gestartet haben, in der **[!UICONTROL WHEN]**-Anweisung angegeben.
 
-1. Tippen Sie auf die Dropdown-Liste **[!UICONTROL Status auswählen]** und wählen Sie **[!UICONTROL wurde geändert]**.
+1. Wählen Sie die **[!UICONTROL Status auswählen]** und wählen Sie **[!UICONTROL geändert wird]**.
 
    ![whencustomeridischanged](assets/whencustomeridischanged.png)
 

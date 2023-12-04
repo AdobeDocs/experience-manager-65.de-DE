@@ -5,10 +5,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 exl-id: 08e267f3-7f90-4e75-aea0-2128e8eb7b30
-source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 10%
+source-wordcount: '282'
+ht-degree: 7%
 
 ---
 
@@ -20,26 +20,26 @@ Andere Formulare werden auf der Registerkarte &quot;Entwürfe&quot;als Entwurf g
 
 **So öffnen Sie eine Aufgabe**
 
-1. Tippen Sie auf die Aufgabe in der Aufgabenliste.
+1. Wählen Sie die Aufgabe in der Aufgabenliste aus.
 
    Wenn Sie eine Aufgabe auswählen, wird die in Workbench festgelegte Beschreibung der Aufgabe unter dem Aufgabennamen angezeigt. Nach der Beschreibung werden die mit der Aufgabe verknüpften Benutzeraktionen angezeigt.
 
    * Wenn einer Aufgabe Aktionen zugeordnet sind, werden durch Tippen auf die horizontalen Auslassungspunkte neben der Aufgabe auf Ihrem Startbildschirm die Aktionen angezeigt.
    * Wenn der Prozessentwickler keine Aktion mit einer Aufgabe verknüpft, lautet die mit der Aufgabe verknüpfte Standardaktion &quot;Complete&quot;.
 
-1. Tippen Sie auf die Aufgabe, um sie zu öffnen.
+1. Wählen Sie die Aufgabe aus, um sie zu öffnen.
 
-   Sie können auf **Zusammenfassung anzeigen** um zusätzliche Anweisungen anzuzeigen, die im Workbench-Prozess angegeben sind.
+   Sie können **Zusammenfassung anzeigen** um zusätzliche Anweisungen anzuzeigen, die im Workbench-Prozess angegeben sind.
 
 **So öffnen Sie eine Anwendung**
 
-1. Tippen Sie auf die **Anwendung** auf der Registerkarte **Forms**.
+1. Wählen Sie die **Applikation** im **Forms** Registerkarte.
 
    Wenn Sie eine Anwendung auswählen, wird die Beschreibung der Anwendung unter dem Anwendungsnamen angezeigt. Nach der Beschreibung werden die mit der Anwendung verknüpften Benutzeraktionen angezeigt.
 
    * Wenn einer Anwendung Aktionen zugeordnet sind, werden durch Tippen auf die horizontalen Auslassungspunkte neben der Anwendung auf Ihrem Startbildschirm die Aktionen angezeigt.
    * Wenn das Workflow-Modell der Anwendung keine Aktion mit der Anwendung verknüpft, wird die mit der Anwendung verknüpfte Standardaktion angezeigt.
 
-1. Tippen Sie auf die Aufgabe, um sie zu öffnen.
+1. Wählen Sie die Aufgabe aus, um sie zu öffnen.
 
-   Sie können auf **Zusammenfassung anzeigen** um zusätzliche Anweisungen anzuzeigen, die für die Anwendung angegeben sind.
+   Sie können **Zusammenfassung anzeigen** um zusätzliche Anweisungen anzuzeigen, die für die Anwendung angegeben sind.

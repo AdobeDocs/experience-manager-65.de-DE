@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: 4d318908-c724-4582-a82b-6e9b1c55705b
 feature: Forms Portal
 exl-id: 572194b7-063b-4c38-af43-aba78e9c51c6
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 77%
+source-wordcount: '332'
+ht-degree: 53%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 77%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
 Standardmäßig sind Forms Portal-Komponenten nicht verfügbar. Führen Sie die folgenden Schritte aus, damit die Komponenten in der Liste der verfügbaren Komponenten in AEM Sidekick angezeigt werden:
@@ -30,15 +30,15 @@ Standardmäßig sind Forms Portal-Komponenten nicht verfügbar. Führen Sie die 
 
 1. Führen Sie für die Seiten, die eine statische Vorlage verwenden, die folgenden Schritte aus:
 
-   1. Tippen Sie in der Kopfzeile der Seite auf ![canvas-drop-down](assets/canvas-drop-down.png) > **Design**, um die Seite im Designmodus zu öffnen.
-   1. Tippen Sie auf eine beliebige Komponente (mit blauem Rahmen) und dann auf ![field-level](assets/field-level.png), um das Absatzsystem auszuwählen, das die aktuelle Komponente enthält.
-   1. Tippen Sie im Absatzsystem auf ![settings_icon](assets/settings_icon.png), um den Bearbeitungsdialog für das Absatzsystem zu öffnen.
-   1. Aktivieren Sie in der Liste **[!UICONTROL Zugelassene Komponenten]** die Kontrollkästchen für die Komponenten **[!UICONTROL Dokumentdienst]** und **[!UICONTROL Dokumentdienst-Eigenschaften]**. Tippen Sie auf **[!UICONTROL OK]**.
+   1. Wählen Sie im Seitenkopf die Option ![Arbeitsfläche-Dropdown](assets/canvas-drop-down.png) > **Design** , um die Seite im Designmodus zu öffnen.
+   1. Wählen Sie eine beliebige Komponente (mit blauem Rahmen) aus und klicken Sie auf ![Feldebene](assets/field-level.png) , um das Absatzsystem auszuwählen, das die aktuelle Komponente enthält.
+   1. Wählen Sie im Absatzsystem die Option ![settings_icon](assets/settings_icon.png) , um das Dialogfeld &quot;Bearbeiten&quot;für das Absatzsystem zu öffnen.
+   1. Aktivieren Sie in der Liste **[!UICONTROL Zugelassene Komponenten]** die Kontrollkästchen für die Komponenten **[!UICONTROL Dokumentdienst]** und **[!UICONTROL Dokumentdienst-Eigenschaften]**. Wählen Sie **[!UICONTROL OK]** aus.
 
 1. Führen Sie für die Seiten, die eine dynamische Vorlage verwenden, die folgenden Schritte aus:
 
-   1. Tippen Sie in der Kopfzeile der Seite auf ![Eigenschaften](assets/properties.png) > **Vorlage bearbeiten**, um die Vorlage der Seite zu öffnen.
-   1. Tippen Sie auf **Layout-Container** und dann auf ![FeedManagement](/help/forms/using/assets/feedmanagement.png). Aktivieren Sie auf der Registerkarte **Zugelassene Komponenten** die Optionen **Dokumentendienste und Dokumentendienste-Eigenschaften** und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. Wählen Sie im Seitenkopf die Option ![properties](assets/properties.png) > **Vorlage bearbeiten** , um die Vorlage der Seite zu öffnen.
+   1. Auswählen **Layout-Container** und wählen ![FeedManagement](/help/forms/using/assets/feedmanagement.png). Im **Zugelassene Komponenten** Registerkarte, aktivieren Sie die **Document Services- und Document Services-Eigenschaften** Optionen und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 >[!NOTE]
 >

@@ -5,10 +5,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1819'
-ht-degree: 43%
+source-wordcount: '1829'
+ht-degree: 42%
 
 ---
 
@@ -33,9 +33,9 @@ Bevor Sie einen überwachten Ordner konfigurieren, stellen Sie Folgendes sicher:
 
 Führen Sie die folgenden Schritte aus, um einen überwachten Ordner zu erstellen:
 
-1. Tippen **Adobe Experience Manager** in der linken oberen Ecke des Bildschirms.
-1. Tippen **Instrumente** > **Forms** > **Überwachten Ordner konfigurieren**. Eine Liste der bereits konfigurierten überwachten Ordner wird angezeigt.
-1. Tippen Sie auf **Neu**. Eine Liste mit den Feldern, die erforderlich sind, um den überwachten Ordner zu erstellen, wird angezeigt:
+1. Auswählen **Adobe Experience Manager** in der linken oberen Ecke des Bildschirms.
+1. Auswählen **Instrumente** > **Forms** > **Überwachten Ordner konfigurieren**. Eine Liste der bereits konfigurierten überwachten Ordner wird angezeigt.
+1. Auswählen **Neu**. Eine Liste mit den Feldern, die erforderlich sind, um den überwachten Ordner zu erstellen, wird angezeigt:
 
    * **Name**: Identifiziert den überwachten Ordner. Verwenden Sie nur alphanumerische Zeichen für den Namen.
    * **Pfad**: Gibt den Speicherort des überwachten Ordners an. In einer Clusterumgebung muss diese Einstellung auf einen freigegebenen Netzwerkordner verweisen, auf den jeder Benutzer zugreifen kann, der auf verschiedenen Knoten eines Clusters AEM.
@@ -59,7 +59,7 @@ Führen Sie die folgenden Schritte aus, um einen überwachten Ordner zu erstelle
 
    * **Muster für Ausgabedatei**: Geben Sie eine durch Semikolon (;) getrennte Liste von Mustern an, die ein überwachter Ordner verwendet, um den Namen und Speicherort von Ausgabedateien und Ordnern zu bestimmen. Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
-1. Tippen **Erweitert**. Die Registerkarte &quot;Erweitert&quot;enthält weitere Felder. Die meisten dieser Felder enthalten einen Standardwert.
+1. Auswählen **Erweitert**. Die Registerkarte &quot;Erweitert&quot;enthält weitere Felder. Die meisten dieser Felder enthalten einen Standardwert.
 
    * **Payload Mapper-Filter:** Wenn Sie einen überwachten Ordner erstellen, wird eine Ordnerstruktur innerhalb des überwachten Ordners erstellt. Die Ordnerstruktur enthält Ordner für Phasen, Ergebnisse, Aufbewahrung, Eingabe und Fehler. Die Ordnerstruktur kann als Eingabe-Payload für den Workflow dienen und die Ausgabe von einem Workflow akzeptieren. Sie kann gegebenenfalls auch Fehlerquellen auflisten. Die Struktur der Nutzdaten unterscheidet sich von der Struktur eines überwachten Ordners anders. Sie können benutzerdefinierte Skripte schreiben, um die Struktur eines überwachten Ordners der Payload zuzuordnen. Ein solches Skript wird als Payload-Mapper-Filter bezeichnet. Es sind zwei vordefinierte Payload-Mapper-Implementierungen verfügbar. Wenn Sie [eine benutzerdefinierte Implementierung](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)verwenden Sie eine der nativen Implementierungen:
 
@@ -113,7 +113,7 @@ Führen Sie die folgenden Schritte aus, um einen überwachten Ordner zu erstelle
 
 Sie können nicht nur den Namen des überwachten Ordners ändern, sondern auch alle Eigenschaften eines vorhandenen überwachten Ordners. Führen Sie die folgenden Schritte aus, um die Eigenschaften eines vorhandenen überwachten Ordners zu ändern:
 
-1. Tippen Sie auf **Adobe Experience Manager** in der oberen linken Ecke des Bildschirms angezeigt.
-1. Tippen **Instrumente** > **Forms** > **Überwachten Ordner konfigurieren**. Eine Liste der bereits konfigurierten überwachten Ordner wird angezeigt.
-1. Wählen Sie auf der linken Seite des Bildschirms des überwachten Ordners den überwachten Ordner aus und tippen Sie auf **Bearbeiten.** Eine Liste mit den Feldern, die erforderlich sind, um den überwachten Ordner zu erstellen, wird angezeigt. Die Felder, die auf der Registerkarte **Grundeinstellungen** aufgeführt sind, sind Pflichtfelder. Die Registerkarte &quot;Erweitert&quot;enthält weitere Felder. Die meisten dieser Felder enthalten einen Standardwert. Sie können diese Eigenschaften entsprechend Ihren Anforderungen ändern.
-1. Tippen Sie nach dem Ändern der Eigenschaften auf **Aktualisieren**. Die geänderten Eigenschaften werden gespeichert.
+1. Wählen Sie die **Adobe Experience Manager** in der oberen linken Ecke des Bildschirms angezeigt.
+1. Auswählen **Instrumente** > **Forms** > **Überwachten Ordner konfigurieren**. Eine Liste der bereits konfigurierten überwachten Ordner wird angezeigt.
+1. Wählen Sie auf der linken Seite des Bildschirms &quot;Überwachter Ordner&quot;den überwachten Ordner aus und wählen Sie **Bearbeiten.** Eine Liste mit den Feldern, die erforderlich sind, um den überwachten Ordner zu erstellen, wird angezeigt. Die Felder, die auf der Registerkarte **Grundeinstellungen** aufgeführt sind, sind Pflichtfelder. Die Registerkarte &quot;Erweitert&quot;enthält weitere Felder. Die meisten dieser Felder enthalten einen Standardwert. Sie können diese Eigenschaften entsprechend Ihren Anforderungen ändern.
+1. Nachdem Sie die Eigenschaften geändert haben, wählen Sie **Aktualisieren**. Die geänderten Eigenschaften werden gespeichert.

@@ -7,7 +7,7 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '3015'
 ht-degree: 62%
@@ -368,7 +368,7 @@ Z. B. die Komponente **Text**:
 
 So verschieben Sie eine Absatzkomponente:
 
-1. Wählen Sie durch Tippen und Halten bzw. Klicken und Halten den Absatz aus, der verschoben werden soll.
+1. Wählen Sie den zu verschiebenden Absatz aus, indem Sie ihn drücken und halten oder klicken und halten.
 1. Ziehen Sie den Absatz an die neue Position. AEM zeigt an, wo der Absatz abgelegt werden kann. Legen Sie ihn an der gewünschten Position ab.
 
    ![Absatzkomponente verschieben](assets/screen_shot_2018-03-22at121821.png)

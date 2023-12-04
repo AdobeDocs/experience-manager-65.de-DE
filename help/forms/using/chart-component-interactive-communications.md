@@ -11,10 +11,10 @@ discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 feature: Interactive Communication
 exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2608'
-ht-degree: 84%
+source-wordcount: '2621'
+ht-degree: 80%
 
 ---
 
@@ -28,13 +28,13 @@ Beim Erstellen einer interaktiven Kommunikation können Sie Diagramme hinzufüge
 
 Führen Sie die folgenden Schritte aus, um ein Diagramm in einer interaktiven Kommunikation hinzuzufügen und zu konfigurieren:
 
-1. Tippen Sie auf **Komponenten** aus dem Sidekick der interaktiven Kommunikation.
+1. Auswählen **Komponenten** aus dem Sidekick der interaktiven Kommunikation.
 1. Ziehen Sie die **Diagrammkomponente** per Drag-and-Drop auf eine der folgenden Komponenten:
 
    * Druckkanal: Zielbereich oder Bildfeld
    * Web-Kanal: Bedienfeld oder Zielbereich
 
-1. Tippen Sie auf die Diagrammkomponente im Editor für interaktive Kommunikation und wählen Sie **[!UICONTROL Konfigurieren (]** ![configure_icon](assets/configure_icon.png)) in der Symbolleiste „Komponenten“.
+1. Wählen Sie die Diagrammkomponente im Editor für interaktive Kommunikation aus und wählen Sie **[!UICONTROL Konfigurieren (]** ![configure_icon](assets/configure_icon.png)) in der Komponenten-Symbolleiste.
 
    Die Diagrammeigenschaften werden im linken Bereich angezeigt.
 
@@ -47,13 +47,13 @@ Führen Sie die folgenden Schritte aus, um ein Diagramm in einer interaktiven Ko
    Grundlegende Eigenschaften eines Zeilentypdiagramms im Webkanal
 
 1. Konfigurieren Sie die [Diagrammeigenschaften](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) basierend auf dem Kanaltyp.
-1. (Nur Druckkanal) Legen Sie in den **[!UICONTROL Agenteneinstellungen]** fest, ob der Agent dieses Diagramm verwenden muss. Wenn die Option **[!UICONTROL Obligatorisch für Agenten, dieses Diagramm zu verwenden]** nicht ausgewählt ist, kann der Agent zum Ein- bzw. Ausblenden des Diagramms auf das Augensymbol für das Diagramm auf der Registerkarte **[!UICONTROL Inhalt]** der Benutzeroberfläche für Agenten tippen.
+1. (Nur Druckkanal) Legen Sie in den **[!UICONTROL Agenteneinstellungen]** fest, ob der Agent dieses Diagramm verwenden muss. Wenn i **[!UICONTROL Der Agent muss dieses Diagramm verwenden]** nicht ausgewählt ist, kann der Agent das Augensymbol für das Diagramm im **[!UICONTROL Inhalt]** Registerkarte der Benutzeroberfläche für Agenten , um das Diagramm ein- oder auszublenden.
 
    ![chart_agentproperties](assets/chart_agentproperties.png)
 
-1. Tippen Sie auf ![done_icon](assets/done_icon.png), um die Tabelleneigenschaften zu speichern.
+1. Auswählen ![done_icon](assets/done_icon.png) , um die Diagrammeigenschaften zu speichern.
 
-   Tippen Sie auf **[!UICONTROL Vorschau]**, um das Erscheinungsbild und die mit der Grafik verknüpften Daten anzuzeigen. Tippen Sie auf **[!UICONTROL Bearbeiten]**, um die Eigenschaften des Diagramms neu zu konfigurieren.
+   Auswählen **[!UICONTROL Vorschau]** um das Erscheinungsbild und die mit der Grafik verknüpften Daten anzuzeigen. Auswählen **[!UICONTROL Bearbeiten]** um die Eigenschaften des Diagramms neu zu konfigurieren.
 
 ## Konfigurieren von Diagrammeigenschaften {#configure-chart-properties}
 

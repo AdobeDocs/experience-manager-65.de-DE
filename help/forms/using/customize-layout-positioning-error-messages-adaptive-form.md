@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 5cb3ee55-f411-4692-84f7-89bf6ade729d
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 27%
+ht-degree: 18%
 
 ---
 
@@ -30,8 +30,8 @@ Gehen Sie wie folgt vor, um ein benutzerdefiniertes Layout auf ein Feld anzuwend
 
 ### Layout eines einzelnen Felds anpassen {#customize-layout-of-a-single-field}
 
-1. Öffnen Sie das Formular im **Stilmodus**. Um das Formular im Stilmodus zu öffnen, tippen Sie in der Seitensymbolleiste auf ![canvas-drop-down](assets/canvas-drop-down.png) > **Stil**.
-1. Wählen Sie in der Randleiste unter **Formularobjekte** das Feld aus und tippen Sie auf die Bearbeiten-Schaltfläche ![edit-button](assets/edit-button.png).
+1. Öffnen Sie das Formular im **Stilmodus**. Um das Formular im Stilmodus zu öffnen, wählen Sie in der Seitensymbolleiste ![Arbeitsfläche-Dropdown](assets/canvas-drop-down.png) > **Stil**.
+1. In der Seitenleiste unter **Formularobjekte**, wählen Sie das Feld aus und klicken Sie auf die Schaltfläche &quot;Bearbeiten&quot; ![edit-button](assets/edit-button.png).
 1. Wählen Sie den Status des Felds aus, das Sie anpassen möchten, und geben Sie den Stil für diesen Status an.
 
    ![Festlegen des Inline-Stils für ein Feld](assets/edit-error-state.png)
@@ -43,7 +43,7 @@ Mit AEM Forms können Sie jetzt ein Design erstellen und es auf Ihr Formular anw
 Erstellen Sie ein Design mit dem Design-Editor, um das Layout aller Felder in Ihrem Formular anzupassen. Nachdem Sie ein Design erstellt haben, führen Sie die folgenden Schritte aus, um es auf ein Formular anzuwenden:
 
 1. Öffnen Sie das Formular im Bearbeitungsmodus.
-1. Wählen Sie im Bearbeitungsmodus eine Komponente aus und tippen Sie anschließend auf ![field-level](assets/field-level.png) > **Container für ein adaptives Formular** und dann auf ![cmppr](assets/cmppr.png).
+1. Wählen Sie im Bearbeitungsmodus eine Komponente aus und wählen Sie dann ![Feldebene](assets/field-level.png) > **Container für adaptive Formulare** und wählen Sie ![cmppr](assets/cmppr.png).
 1. Wählen Sie in der Seitenleiste unter Adaptives Formulardesign das Design aus, das Sie mit dem Design-Editor erstellt haben.
 
 ## Benutzerdefiniertes Feldlayout erstellen {#create-a-custom-field-layout}

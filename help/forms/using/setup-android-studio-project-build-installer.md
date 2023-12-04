@@ -1,14 +1,14 @@
 ---
-title: Einrichten von Android&trade; Studio-Projekt und Aufbau des Android&trade; App
-description: Schritte zum Einrichten von Android&trade; Studio-Projekt erstellen und Installationsprogramm für die Adobe Experience Manager (AEM Forms-App) erstellen
+title: Einrichten des Projekts Android&trade, Studio und Erstellen der App Android&trade
+description: Schritte zum Einrichten des Projekts Android&trade; Studio und Erstellen des Installationsprogramms für die Adobe Experience Manager (AEM Forms App)
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 exl-id: 47d6af00-34d8-4e5d-8117-86fc1b6f58cb
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 62%
+source-wordcount: '584'
+ht-degree: 58%
 
 ---
 
@@ -21,11 +21,11 @@ AEM Forms stellt den vollständigen Quellcode der AEM Forms-App bereit. Die Quel
 Um die AEM Forms App-Quelle zu erhalten, führen Sie die folgenden Schritte aus:
 
 1. Öffnen Sie [Software Distribution](https://experience.adobe.com/downloads). Zum Anmelden bei Software Distribution benötigen Sie eine Adobe ID.
-1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]**.
+1. Auswählen **[!UICONTROL Adobe Experience Manager]** im Kopfzeilenmenü verfügbar.
 1. Im Abschnitt **[!UICONTROL Filter]**:
    1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** aus.
    2. Wählen Sie die Version aus und geben Sie sie für das Paket ein. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
-1. Tippen Sie auf den für Ihr Betriebssystem zutreffenden Paketnamen, wählen Sie **[!UICONTROL EULA-Bedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Herunterladen]**.
+1. Wählen Sie den für Ihr Betriebssystem zutreffenden Paketnamen aus und wählen Sie **[!UICONTROL EULA-Bedingungen akzeptieren]** und wählen Sie **[!UICONTROL Herunterladen]**.
 1. Öffnen Sie [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
@@ -98,7 +98,7 @@ Nachdem Sie das Projekt erstellt haben, haben Sie folgende Möglichkeiten zum In
 
 ### Mit Android™ Debug Bridge {#andriod-debug-bridge}
 
-Sie können die Anwendung auf einem Android™-Gerät über die [Android™ Debug Bridge](https://developer.android.com/tools/adb) mit dem folgenden Befehl:
+Sie können die Anwendung über das [Android™ Debug Bridge](https://developer.android.com/tools/adb) mit dem folgenden Befehl:
 
 **Für Mac-Benutzer**: `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
 

@@ -5,10 +5,10 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2021'
-ht-degree: 80%
+source-wordcount: '2010'
+ht-degree: 69%
 
 ---
 
@@ -29,7 +29,7 @@ Beim Vorbereiten der interaktiven Kommunikation über die Agent-Benutzeroberflä
 ## Vorbereiten der interaktiven Kommunikation mithilfe der Agent-Benutzeroberfläche {#prepare-interactive-communication-using-the-agent-ui}
 
 1. Wählen Sie **[!UICONTROL Formulare]** > **[!UICONTROL Formulare &amp; Dokumente]**.
-1. Wählen Sie die entsprechende interaktive Kommunikation aus und tippen Sie auf **[!UICONTROL Agent-Benutzeroberfläche öffnen]**.
+1. Wählen Sie die entsprechende interaktive Kommunikation aus und wählen Sie **[!UICONTROL Benutzeroberfläche für Agenten öffnen]**.
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ Beim Vorbereiten der interaktiven Kommunikation über die Agent-Benutzeroberflä
 
 1. Geben Sie auf der Registerkarte &quot;Daten&quot;die Daten für Variablen, Formulardatenmodelleigenschaften und XDP-Felder (Druckvorlage) ein. Füllen Sie alle erforderlichen Felder (mit einem Sternchen (*) gekennzeichnet) aus, um die Schaltfläche **Senden** zu aktivieren.
 
-   Tippen Sie auf einen Datenfeldwert in der Vorschau der interaktiven Kommunikation, um das entsprechende Datenfeld auf der Registerkarte Daten oder umgekehrt zu markieren.
+   Wählen Sie in der Vorschau der interaktiven Kommunikation einen Datenfeldwert aus, um das entsprechende Datenfeld auf der Registerkarte Daten hervorzuheben oder umgekehrt.
 
 ### Inhalt verwalten {#manage-content}
 
@@ -57,7 +57,7 @@ Verwalten Sie auf der Registerkarte &quot;Inhalt&quot;den Inhalt wie Dokumentfra
 
    ![agentuicontenttab](assets/agentuicontenttab.png)
 
-1. Bearbeiten Sie auf der Registerkarte „Inhalt“ ggf. die Dokumentfragmente. Um den Fokus auf das relevante Fragment in der Inhaltshierarchie zu verschieben, können Sie entweder auf die betreffende Zeile oder den betreffenden Absatz in der Vorschau der interaktiven Kommunikation tippen oder direkt auf das Fragment in der Inhaltshierarchie tippen.
+1. Bearbeiten Sie auf der Registerkarte „Inhalt“ ggf. die Dokumentfragmente. Um den Fokus auf das relevante Fragment in der Inhaltshierarchie zu lenken, können Sie entweder die entsprechende Zeile oder den betreffenden Absatz in der Vorschau der interaktiven Kommunikation auswählen oder das Fragment direkt in der Inhaltshierarchie auswählen.
 
    Beispielsweise wird das Dokumentfragment mit der Zeile „Jetzt online bezahlen ...“ in der Vorschau in der untenstehenden Grafik ausgewählt und das gleiche Dokumentfragment wurde auf der Registerkarte „Inhalt“ ausgewählt.
 
@@ -65,7 +65,7 @@ Verwalten Sie auf der Registerkarte &quot;Inhalt&quot;den Inhalt wie Dokumentfra
 
    Auf der Registerkarte „Inhalt“ oder „Daten“ können Sie durch Tippen auf „Ausgewählte Module im Inhalt markieren“ (![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) links oben in der Vorschau eine Funktion aktivieren oder deaktivieren, die bewirkt, dass beim Klicken auf den relevanten Text oder Absatz bzw. das Datenfeld in der Vorschau das dazugehörige Inhalts-/Datenmodul aufgerufen wird.
 
-   Die Fragmente, die vom Agenten beim Erstellen der interaktiven Kommunikation bearbeitet werden können, haben die Option Ausgewählten Inhalt bearbeiten ( ![iconeditsselectedContent](assets/iconeditselectedcontent.png)). Tippen Sie auf das Symbol Ausgewählten Inhalt bearbeiten , um das Fragment im Bearbeitungsmodus zu starten und Änderungen daran vorzunehmen. Verwenden Sie die folgenden Optionen zum Formatieren und Verwalten von Text:
+   Die Fragmente, die vom Agenten beim Erstellen der interaktiven Kommunikation bearbeitet werden können, haben die Option Ausgewählten Inhalt bearbeiten ( ![iconeditsselectedContent](assets/iconeditselectedcontent.png)). Wählen Sie das Symbol Ausgewählten Inhalt bearbeiten aus, um das Fragment im Bearbeitungsmodus zu starten und Änderungen daran vorzunehmen. Verwenden Sie die folgenden Optionen zum Formatieren und Verwalten von Text:
 
    * [Formatierungsoptionen](#formattingtext)
 
@@ -89,11 +89,11 @@ Verwalten Sie auf der Registerkarte &quot;Inhalt&quot;den Inhalt wie Dokumentfra
 
 1. Wählen Sie **[!UICONTROL Anlage]**. Die Benutzeroberfläche für Agenten zeigt die verfügbaren Anlagen so an, wie sie beim Erstellen der interaktiven Kommunikation eingerichtet wurden.
 
-   Sie können festlegen, dass keine Anhänge mit der interaktiven Kommunikation versendet werden sollen, indem Sie auf das Symbol „Anzeigen“ tippen, und auf das Kreuz im Anhang tippen, um ihn aus der interaktiven Kommunikation zu entfernen (wenn es zulässig ist, dass der Agent Anhänge löschen oder ausblenden kann). Für die Anhänge, die beim Erstellen der interaktiven Kommunikation als obligatorisch festgelegt wurden, sind die Symbole „Anzeigen“ und „Löschen“ deaktiviert.
+   Sie können festlegen, dass keine Anlage zusammen mit der interaktiven Kommunikation gesendet werden soll, indem Sie auf das Ansichtssymbol tippen. Sie können dann das Kreuz im Anhang auswählen, um ihn aus der interaktiven Kommunikation zu löschen (wenn der Agent die Anlage löschen oder ausblenden darf). Für die Anhänge, die beim Erstellen der interaktiven Kommunikation als obligatorisch festgelegt wurden, sind die Symbole „Anzeigen“ und „Löschen“ deaktiviert.
 
    ![attachmentsagentui](assets/attachmentsagentui.png)
 
-1. Tippen Sie auf das Symbol „Bibliothekszugriff“ (![libraryaccess](assets/libraryaccess.png)), um auf die Inhaltsbibliothek zuzugreifen und DAM-Assets als Anhänge einzufügen.
+1. Wählen Sie den Bibliothekszugriff aus ( ![Bibliothekszugriff](assets/libraryaccess.png)), um auf die Inhaltsbibliothek zuzugreifen und DAM-Assets als Anhänge einzufügen.
 
    >[!NOTE]
    >
@@ -102,7 +102,7 @@ Verwalten Sie auf der Registerkarte &quot;Inhalt&quot;den Inhalt wie Dokumentfra
 1. Wenn die Reihenfolge der Anhänge beim Erstellen der interaktiven Kommunikation nicht gesperrt war, können Sie die Reihenfolge der Anhänge neu anordnen, indem Sie einen Anhang auswählen und auf die Pfeile nach unten oder nach oben tippen.
 1. Verwenden Sie Webvorschau und Druckvorschau, um zu sehen, ob die beiden Ausgaben Ihren Anforderungen entsprechen.
 
-   Wenn die Vorschaubilder zufriedenstellend sind, tippen Sie auf **[!UICONTROL Senden]**, um die interaktive Kommunikation an einen Nachbearbeitungsprozess zu übermitteln / zusenden. Um Änderungen vorzunehmen, beenden Sie die Vorschau, um zu den Änderungen zurückzukehren.
+   Wenn die Vorschau Ihren Vorstellungen entspricht, wählen Sie **[!UICONTROL Einsenden]** , um die interaktive Kommunikation an einen Nachbearbeitungsprozess zu senden. Um Änderungen vorzunehmen, beenden Sie die Vorschau, um zu den Änderungen zurückzukehren.
 
 ## Text formatieren {#formattingtext}
 
@@ -122,7 +122,7 @@ Listen-Symbolleiste
 
 ### Teile von Text hervorheben/hervorheben {#highlightemphasize}
 
-Um Textteile in einem bearbeitbaren Fragment hervorzuheben bzw. hervorzuheben, wählen Sie den Text aus und tippen Sie auf Farbe hervorheben.
+Um Textteile in einem bearbeitbaren Fragment hervorzuheben bzw. hervorzuheben, wählen Sie den Text aus und wählen Sie die Option Hervorhebungsfarbe aus.
 
 ![highlighttextagentui](assets/highlighttextagentui.png)
 
@@ -183,22 +183,22 @@ Die Funktion „Als Entwurf speichern“ ist standardmäßig nicht aktiviert. F�
    Mit dem SPI können Sie die Entwurfsversion der interaktiven Kommunikation mit einer Entwurfs-ID als eindeutiger Kennung in der Datenbank speichern. Bei diesen Anweisungen wird davon ausgegangen, dass Sie über Vorkenntnisse zum Erstellen eines OSGi-Bundles mithilfe eines Maven-Projekts verfügen.
 
    Eine Beispiel-SPI-Implementierung finden Sie unter [Beispielhafte ccrDocumentInstance-SPI-Implementierung](#sample-ccrDocumentInstance-spi).
-1. Öffnen Sie `http://<hostname>:<port>/ system/console/bundles` und tippen Sie auf **[!UICONTROL Installieren/Aktualisieren]**, um das OSGi-Bundle hochzuladen. Stellen Sie sicher, dass der Status des hochgeladenen Pakets als **Aktiv** angezeigt wird. Starten Sie den Server neu, wenn der Status des Pakets nicht als **Aktiv** angezeigt wird.
+1. Öffnen `http://<hostname>:<port>/ system/console/bundles` und wählen **[!UICONTROL Installieren/Aktualisieren]** , um das OSGi-Bundle hochzuladen. Stellen Sie sicher, dass der Status des hochgeladenen Pakets als **Aktiv** angezeigt wird. Starten Sie den Server neu, wenn der Status des Pakets nicht als **Aktiv** angezeigt wird.
 1. Rufen Sie `https://'[server]:[port]'/system/console/configMgr` auf.
-1. Tippen Sie auf **[!UICONTROL Korrespondenzkonfiguration erstellen]**.
-1. Wählen Sie **[!UICONTROL Speichern mit CCRDocumentInstanceService aktivieren]** aus und tippen Sie auf **[!UICONTROL Speichern]**.
+1. Auswählen **[!UICONTROL Korrespondenzkonfiguration erstellen]**.
+1. Auswählen **[!UICONTROL Speichern mit CCRDocumentInstanceService aktivieren]** und wählen **[!UICONTROL Speichern]**.
 
 ### Speichern einer interaktiven Kommunikation als Entwurf {#save-as-draft-agent-ui}
 
 Gehen Sie wie folgt vor, um eine interaktive Kommunikation als Entwurf zu speichern:
 
-1. Wählen Sie eine interaktive Kommunikation in Forms Manager aus und tippen Sie auf **[!UICONTROL Benutzeroberfläche für Agenten öffnen]**.
+1. Wählen Sie eine interaktive Kommunikation in Forms Manager aus und wählen Sie **[!UICONTROL Benutzeroberfläche für Agenten öffnen]**.
 
-1. Nehmen Sie in der Benutzeroberfläche für Agenten die entsprechenden Änderungen vor und tippen Sie auf **[!UICONTROL Als Entwurf speichern]**.
+1. Nehmen Sie die entsprechenden Änderungen in der Benutzeroberfläche für Agenten vor und wählen Sie **[!UICONTROL Als Entwurf speichern]**.
 
-1. Geben Sie den Namen des Entwurfs im Feld **[!UICONTROL Name]** an und tippen Sie auf **[!UICONTROL Fertig]**.
+1. Geben Sie den Namen des Entwurfs im **[!UICONTROL Name]** Feld und wählen Sie **[!UICONTROL Fertig]**.
 
-Nachdem Sie die interaktive Kommunikation als Entwurf gespeichert haben, tippen Sie auf **[!UICONTROL Änderungen speichern]**, um alle weiteren Änderungen am Entwurf zu speichern.
+Nachdem Sie die interaktive Kommunikation als Entwurf gespeichert haben, wählen Sie **[!UICONTROL Änderungen speichern]** , um alle weiteren Änderungen am Entwurf zu speichern.
 
 ### Abrufen des Entwurfs einer interaktiven Kommunikation {#retrieve-draft}
 

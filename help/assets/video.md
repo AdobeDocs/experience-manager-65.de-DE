@@ -10,10 +10,10 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '11310'
-ht-degree: 95%
+ht-degree: 93%
 
 ---
 
@@ -496,7 +496,7 @@ Videoberichte enthalten mehrere aggregierte Metriken für einen angegebenen Zeit
 
 Eine Tabelle mit allen *veröffentlichten* Videos wird ebenfalls angezeigt, damit Sie die am häufigsten angezeigten Videos auf der Website basierend auf insgesamt gestarteten Videos verfolgen können.
 
-Wenn Sie in der Liste auf einen Videonamen tippen, wird der Bericht zur Zielgruppentreue (Abfallrate) in Form eines Liniendiagramms angezeigt. Das Diagramm enthält die Anzahl der Ansichten für jeden Zeitpunkt während der Videowiedergabe. Wenn Sie das Video wiedergeben, bewegt sich die vertikale Leiste synchron zur Zeitanzeige im Player. Abfälle in den Liniendiagrammdaten geben an, wo die Zielgruppe das Video aus Desinteresse abbricht.
+Wenn Sie in der Liste einen Videonamen auswählen, wird der Bericht zur Zielgruppentreue (Abfallrate) in Form eines Liniendiagramms angezeigt. Das Diagramm enthält die Anzahl der Ansichten für jeden einzelnen Moment während der Videowiedergabe. Wenn Sie das Video wiedergeben, bewegt sich die vertikale Leiste synchron mit der Zeitanzeige im Player. Abfälle in den Liniendiagrammdaten geben an, wo die Zielgruppe das Video aus Desinteresse abbricht.
 
 Wenn das Video außerhalb von Adobe Experience Manager Dynamic Media codiert wurde, sind das Diagramm zur Zielgruppentreue (Abbruch) und die Daten zur Wiedergabe in Prozent in der Tabelle nicht verfügbar.
 
@@ -508,22 +508,22 @@ Informationen hierzu finden Sie im Abschnitt zum [Konfigurieren der Dynamic Medi
 
 Wenn Sie die Funktion „Videoberichte“ zum ersten Mal aufrufen, enthält der Bericht standardmäßig Videodaten für den Zeitraum vom ersten Tag des aktuellen Monats bis zum aktuellen Datum. Sie können den standardmäßigen Datumsbereich aber außer Kraft setzen, indem Sie Ihren eigenen Datumsbereich angeben. Wenn Sie „Videoberichte“ das nächste Mal aufrufen, wird der angegebene Datumsbereich verwendet.
 
-Damit Videoberichte ordnungsgemäß funktionieren, wird automatisch eine Report Suite-ID erstellt, wenn Dynamic Media Cloud Services konfiguriert wurde. Gleichzeitig wird die Report Suite-ID an den Veröffentlichungs-Server übergeben, damit sie für die Funktion „URL kopieren“ bei der Asset-Vorschau verfügbar ist. Diese Funktionalität erfordert jedoch, dass der Veröffentlichungs-Server bereits eingerichtet ist. Wenn der Veröffentlichungs-Server nicht eingerichtet ist, können Sie dennoch veröffentlichen, um den Videobericht anzuzeigen. Sie müssen jedoch zur Konfiguration von Dynamic Media Cloud zurückkehren und auf **[!UICONTROL OK]** tippen.
+Damit Videoberichte ordnungsgemäß funktionieren, wird automatisch eine Report Suite-ID erstellt, wenn Dynamic Media Cloud Services konfiguriert wurde. Gleichzeitig wird die Report Suite-ID an den Veröffentlichungs-Server übergeben, damit sie für die Funktion „URL kopieren“ bei der Asset-Vorschau verfügbar ist. Diese Funktionalität erfordert jedoch, dass der Veröffentlichungs-Server bereits eingerichtet ist. Wenn der Veröffentlichungs-Server nicht eingerichtet ist, können Sie dennoch veröffentlichen, um den Videobericht anzuzeigen. Sie müssen jedoch zur Konfiguration von Dynamic Media Cloud zurückkehren und auf **[!UICONTROL OK]** klicken.
 
 **So zeigen Sie Videoberichte an:**
 
-1. Tippen Sie in der linken oberen Ecke von Experience Manager auf das Experience Manager-Logo und tippen Sie dann in der linken Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets]** > **[!UICONTROL Videoberichte]**.
+1. Wählen Sie in der linken oberen Ecke des Experience Managers das Experience Manager-Logo aus und wählen Sie dann in der linken Leiste die Option **[!UICONTROL Instrumente]** (Hammersymbol) > **[!UICONTROL Assets]** > **[!UICONTROL Videoberichte]**.
 1. Führen Sie auf der Seite „Videoberichte“ eine der folgenden Aktionen aus:
 
-   * Tippen Sie in der Nähe der oberen rechten Ecke auf das Symbol **Videobericht aktualisieren**.
+   * Klicken Sie in der Nähe der oberen rechten Ecke auf das Symbol **Videobericht aktualisieren**.
 Aktualisieren Sie nur dann, wenn das Enddatum des Berichts der aktuelle Tag ist. Dadurch wird sichergestellt, dass Sie das Video-Tracking sehen, das seit der letzten Ausführung des Berichts vorgenommen wurde.
 
-   * Tippen Sie in der Nähe der oberen rechten Ecke auf die **Datumsauswahl** Symbol.
-Geben Sie den Anfang und das Ende des Datumsbereichs an, für den Sie Videodaten anzeigen möchten, und tippen Sie dann auf **[!UICONTROL Bericht ausführen]**.
+   * Klicken Sie in der Nähe der oberen rechten Ecke auf das Symbol **Datumsauswahl**.
+Geben Sie den Anfang und das Ende des Datumsbereichs an, für den Sie Videodaten anzeigen möchten, und klicken Sie dann auf **[!UICONTROL Bericht ausführen]**.
 
    Im Gruppenfeld „Top-Metriken“ werden verschiedene aggregierte Messungen für alle *veröffentlichten* Videos auf der Site angegeben.
 
-1. Tippen Sie in der Tabelle mit den am häufigsten veröffentlichten Videos auf einen Videonamen, um das Video abzuspielen und den Bericht zur Zielgruppentreue (Abfallrate) des Videos anzuzeigen.
+1. Wählen Sie in der Tabelle mit den am häufigsten veröffentlichten Videos einen Videonamen aus, um das Video abzuspielen und den Bericht zur Zielgruppentreue (Abfallrate) des Videos anzuzeigen.
 
 ### Anzeigen von Videoberichten basierend auf einem Video-Viewer, den Sie mit dem Dynamic Media HTML5 Viewer-SDK erstellt haben {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
@@ -901,13 +901,13 @@ Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Tippen Sie für ein Popup-Video-Viewer-Erlebnis auf **[!UICONTROL URL]**. Wählen Sie im Dialogfeld „URL“ die URL aus, kopieren Sie sie in die Zwischenablage und fügen Sie sie dann in einen einfachen Texteditor ein. Hängen Sie die kopierte URL des Videos mit der folgenden Syntax an:
+   * Wählen Sie für ein Popup-Video-Viewer-Erlebnis **[!UICONTROL URL]**. Wählen Sie im Dialogfeld „URL“ die URL aus, kopieren Sie sie in die Zwischenablage und fügen Sie sie dann in einen einfachen Texteditor ein. Hängen Sie die kopierte URL des Videos mit der folgenden Syntax an:
 
      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
      Notieren Sie den Wert `,1` am Ende des Untertitelpfads. Unmittelbar im Anschluss an die Dateierweiterung `.vtt` haben Sie bei der Angabe des Pfads die Möglichkeit, die Schaltfläche für Untertitel durch Festlegen von `,1` bzw. `,0` in der Video-Player-Leiste zu aktivieren (einschalten) oder zu deaktivieren (ausschalten).
 
-   * Um das Video in einem eingebetteten Viewer anzuzeigen, tippen Sie auf **[!UICONTROL Einbettungs-Code]**. Wählen Sie im Dialogfeld „Einbettungs-Code“ den Einbettungs-Code aus, kopieren Sie den Code in die Zwischenablage und fügen Sie ihn dann in einen einfachen Texteditor ein. Hängen Sie den kopierten Einbettungs-Code mit der folgenden Syntax an:
+   * Um das Video in einem eingebetteten Viewer anzuzeigen, klicken Sie auf **[!UICONTROL Einbettungs-Code]**. Wählen Sie im Dialogfeld „Einbettungs-Code“ den Einbettungs-Code aus, kopieren Sie den Code in die Zwischenablage und fügen Sie ihn dann in einen einfachen Texteditor ein. Hängen Sie den kopierten Einbettungs-Code mit der folgenden Syntax an:
 
      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
@@ -1021,25 +1021,25 @@ Die folgenden Schritte gelten nur, wenn Dynamic Media im Scene7-Modus ausgeführ
    * [Ihre Videos wurden in den Ordner hochgeladen](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
 1. Navigieren Sie zu einem hochgeladenen Video-Asset, dessen Miniaturbild Sie ändern möchten.
-1. Tippen Sie im Asset-Auswahlmodus entweder in der **[!UICONTROL Listenansicht]** oder in der **[!UICONTROL Kartenansicht]** auf das Video-Asset.
-1. Tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Eigenschaften]** (ein Kreis mit einem darin enthaltenen „i“).
-1. Tippen Sie auf der Seite zu den Eigenschaften des Videos auf **[!UICONTROL Miniaturansicht ändern]**.
+1. Wählen Sie im Asset-Auswahlmodus entweder in der **[!UICONTROL Listenansicht]** oder in der **[!UICONTROL Kartenansicht]** das Video-Asset aus.
+1. Wählen Sie in der Symbolleiste das Symbol **[!UICONTROL Eigenschaften]** (ein Kreis mit einem darin enthaltenen „i“) aus.
+1. Wählen Sie auf der Seite „Eigenschaften“ des Videos **[!UICONTROL Miniaturansicht ändern]** aus.
 1. Befolgen Sie folgende Schritte auf der Seite „Ändern der Miniaturansicht“: 
 
    * So verwenden Sie einen Frame aus dem Video als neue Miniaturansicht:
 
       * Tippen Sie in der Symbolleiste auf **[!UICONTROL Frame aus Video auswählen]**.
-      * Tippen Sie auf die Schaltfläche „Abspielen“ und dann auf die Schaltfläche „Pause“, wenn Sie den Frame gefunden haben, den Sie als neue Miniaturansicht des Videos verwenden möchten.
+      * Wählen Sie die Schaltfläche „Abspielen“ und dann die Schaltfläche „Pause“ aus, wenn Sie den Frame gefunden haben, den Sie als neue Miniaturansicht des Videos verwenden möchten.
 
    * So verwenden Sie ein Bild-Asset als neue Miniaturansicht:
 
-      * Tippen Sie in der Symbolleiste auf **[!UICONTROL Miniaturansicht aus Assets auswählen]**.
-      * Tippen Sie auf **[!UICONTROL Miniaturansicht auswählen]**.
+      * Wählen Sie in der Symbolleiste **[!UICONTROL Miniaturansicht aus Assets auswählen]** aus.
+      * Wählen Sie **[!UICONTROL Miniaturansicht auswählen]** aus.
       * Navigieren Sie zu einem zuvor hochgeladenen und veröffentlichten Bild-Asset, das Sie verwenden möchten. Das Asset wird automatisch skaliert, damit es als Miniaturbild für das Video verwendet werden kann.
       * Wählen Sie das Bild-Asset aus und tippen Sie dann auf **[!UICONTROL Auswählen]**.
 
 1. Tippen Sie auf der Seite „Miniaturansicht ändern“ auf **[!UICONTROL Änderung speichern]**.
-1. Tippen Sie auf der Seite zu den Eigenschaften des Videos oben rechts auf **[!UICONTROL Speichern und schließen]**.
+1. Tippen Sie auf der Seite zu den Video-Eigenschaften oben rechts auf **[!UICONTROL Speichern und schließen]**.
 
 ## Über Videominiaturansichten im Hybrid-Modus von Dynamic Media {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
 
@@ -1060,15 +1060,15 @@ Die folgenden Schritte gelten nur, wenn Dynamic Media im Hybridmodus ausgeführt
 **So fügen Sie eine Videominiatur hinzu:**
 
 1. Navigieren Sie zum hochgeladenen Video-Asset, dem Sie eine Videominiaturansicht hinzufügen möchten.
-1. Tippen Sie im Asset-Auswahlmodus entweder in der Listen- oder in der Kartenansicht auf das Video-Asset.
-1. Tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Eigenschaften anzeigen]** (Kreis mit „i“ darin).
-1. Tippen Sie auf der Seite zu den Eigenschaften des Videos auf **[!UICONTROL Miniaturansicht ändern]**.
-1. Tippen Sie auf der Seite „Miniaturansicht ändern“ in der Symbolleiste auf **[!UICONTROL Frame auswählen]**.
+1. Wählen Sie im Asset-Auswahlmodus in der Listenansicht oder der Kartenansicht das Video-Asset aus.
+1. Wählen Sie in der Symbolleiste die **[!UICONTROL Eigenschaften anzeigen]** -Symbol (ein Kreis mit einem &quot;i&quot; darin).
+1. Wählen Sie auf der Seite „Eigenschaften“ des Videos **[!UICONTROL Miniaturansicht ändern]** aus.
+1. Wählen Sie auf der Seite &quot;Miniatur ändern&quot;in der Symbolleiste die Option **[!UICONTROL Frame auswählen]**.
 
    Dynamic Media generiert eine Serie von Miniaturansichten aus Ihrem Video, die auf dem Standardzeitintervall oder dem angepassten Zeitintervall basiert.
 
 1. Zeigen Sie die generierten Miniaturbilder in der Vorschau an und wählen Sie dann dasjenige aus, das Sie zum Video hinzufügen möchten.
-1. Tippen Sie auf **[!UICONTROL Änderung speichern]**.
+1. Auswählen **[!UICONTROL Änderung speichern]**.
 
    Das Miniaturbild des Videos wird aktualisiert. Es wird nun die ausgewählte Miniaturansicht verwendet. Wenn Sie sich später entscheiden, das Miniaturbild zu ändern, können Sie zur Seite **[!UICONTROL Miniaturansicht ändern]** zurückkehren und ein neues Bild auswählen.
 
@@ -1084,21 +1084,21 @@ Siehe [Hinzufügen von Videominiaturansichten](#adding-a-video-thumbnail).
 
 **So konfigurieren Sie das Standardzeitintervall, in dem Videominiaturansichten generiert werden:**
 
-1. Tippen Sie in Experience Manager auf **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
+1. Wählen Sie in Experience Manager **[!UICONTROL Instrumente]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
 
 1. Navigieren Sie auf der CRXDE Lite-Seite im Verzeichnisbereich links zu `o etc/dam/imageserver/configuration/jcr:content/settings.`.
 
-   Wenn der Verzeichnisbereich nicht angezeigt wird, tippen Sie links neben der Registerkarte „Startseite“ auf das Symbol >>.
+   Wenn das Ordnerbedienfeld nicht sichtbar ist, wählen Sie links neben der Registerkarte Startseite das Symbol >> aus.
 
-1. Tippen Sie im rechten unteren Rand der Registerkarte „Eigenschaften“ zweimal auf `thumbnailtime`.
+1. Wählen Sie im rechten unteren Bereich auf der Registerkarte Eigenschaften die Option `thumbnailtime`.
 1. Geben Sie im Dialogfeld **[!UICONTROL Zeit der Miniaturansicht bearbeiten]** in den Textfeldern Intervalle als Prozentwerte ein.
 
-   * Tippen Sie auf das Pluszeichen (+), um ein oder mehrere Intervallwertfelder hinzuzufügen. Scrollen Sie bei Bedarf zum unteren Rand des Dialogfelds, um das Symbol anzuzeigen.
-   * Tippen Sie rechts neben dem Intervallwertfeld auf das Minuszeichen (-), um es aus der Liste zu löschen.
-   * Tippen Sie auf die Pfeile nach oben und unten, um die Intervallwerte neu anzuordnen.
+   * Wählen Sie das Pluszeichen (+) aus, wenn Sie ein oder mehrere Intervallwertfelder hinzufügen möchten. Scrollen Sie bei Bedarf zum unteren Rand des Dialogfelds, um das Symbol anzuzeigen.
+   * Wählen Sie das Minuszeichen (-) rechts neben einem Intervallwertfeld aus, wenn Sie es aus der Liste löschen möchten.
+   * Wählen Sie das Pfeilsymbol nach oben und das Pfeilsymbol nach unten aus, wenn Sie die Intervallwerte neu anordnen möchten.
 
-1. Tippen Sie auf **[!UICONTROL OK]**, um zur Registerkarte „Eigenschaften“ zurückzukehren.
-1. Tippen Sie in der linken oberen Ecke der Seite „CRXDE Lite“ auf **[!UICONTROL Alle speichern]** und tippen Sie dann auf das Symbol „Zurück zur Startseite“, um zu Experience Manager zurückzukehren.
+1. Auswählen **[!UICONTROL OK]** und kehren zur Registerkarte Eigenschaften zurück.
+1. Wählen Sie links oben auf der CRXDE Lite-Seite die Option **[!UICONTROL Alle speichern]** und wählen Sie dann oben links das Symbol Zurück zur Startseite aus, um zum Experience Manager zurückzukehren.
 
    Siehe [Hinzufügen von Videominiaturansichten](#adding-a-video-thumbnail).
 
@@ -1109,12 +1109,12 @@ Die folgenden Schritte gelten nur, wenn Dynamic Media im Hybridmodus ausgeführt
 **So fügen Sie eine benutzerdefinierte Videominiatur hinzu:**
 
 1. Navigieren Sie zum hochgeladenen Video-Asset, dem Sie eine benutzerdefinierte Videominiatur hinzufügen möchten.
-1. Tippen Sie im Asset-Auswahlmodus entweder in der Listen- oder in der Kartenansicht auf das Video-Asset.
-1. Tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Eigenschaften anzeigen]** (Kreis mit „i“ darin).
-1. Tippen Sie auf der Seite „Eigenschaften“ des Videos auf **[!UICONTROL Miniaturansicht ändern]**.
-1. Tippen Sie auf der Seite „Miniaturansicht ändern“ auf der Symbolleiste auf **[!UICONTROL Neue Miniaturansicht hochladen]**.
-1. Navigieren Sie zu einer Miniaturansicht, die Sie verwenden möchten, wählen Sie sie aus und tippen Sie auf **[!UICONTROL Öffnen]**, um das Hochladen in Experience Manager zu starten. Vergewissern Sie sich nach dem Hochladen, dass Sie das Bild veröffentlichen.
-1. Tippen Sie nach dem Hochladen und Veröffentlichen des Bildes auf der Seite „Miniaturansicht ändern“ auf **[!UICONTROL Änderungen speichern]**.
+1. Wählen Sie im Asset-Auswahlmodus in der Listenansicht oder der Kartenansicht das Video-Asset aus.
+1. Wählen Sie in der Symbolleiste die **[!UICONTROL Eigenschaften anzeigen]** -Symbol (ein Kreis mit einem &quot;i&quot; darin).
+1. Wählen Sie auf der Seite „Eigenschaften“ des Videos **[!UICONTROL Miniaturansicht ändern]** aus.
+1. Wählen Sie auf der Seite &quot;Miniatur ändern&quot;in der Symbolleiste die Option **[!UICONTROL Neue Miniatur hochladen]**.
+1. Navigieren Sie zu einem Miniaturbild, das Sie verwenden möchten, wählen Sie es aus und wählen Sie dann **[!UICONTROL Öffnen]** , um mit dem Hochladen des Bildes in Experience Manager zu beginnen. Vergewissern Sie sich nach dem Hochladen, dass Sie das Bild veröffentlichen.
+1. Nachdem Sie das Bild erfolgreich hochgeladen und veröffentlicht haben, wählen Sie auf der Seite &quot;Miniatur ändern&quot;die Option **[!UICONTROL Änderungen speichern]**.
 
    Die benutzerdefinierte Miniaturansicht wird Ihrem Video hinzugefügt.
 

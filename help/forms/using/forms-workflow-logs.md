@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '292'
-ht-degree: 82%
+ht-degree: 77%
 
 ---
 
@@ -81,12 +81,12 @@ Führen Sie die folgenden Schritte aus, damit Sie die Debug-Protokollierung für
    https://&#39;[server]:[port]&#39;/system/console/configMgr
 
 1. Wählen Sie **[!UICONTROL Sling]** > **[!UICONTROL Protokollunterstützung]**.
-1. Tippen Sie auf **[!UICONTROL Neue Protokollfunktion hinzufügen]**.
+1. Auswählen **[!UICONTROL Fügen Sie neuen Logger hinzu.]**
 1. Wählen Sie **[!UICONTROL Debugging]** als **[!UICONTROL Protokollebene]**.
 1. Geben Sie den Speicherort der Protokolldatei an. Der Standardspeicherort für die Protokolldatei lautet: *logs\error.log*
 1. Geben Sie den Namen des Pakets als **com.adobe.granite.workflow.core** in der Spalte **[!UICONTROL Logger]** an.
 
-   Die Ausführung dieser Schritte ermöglicht die Speicherung der Debug-Protokolle für das Paket **com.adobe.granite.workflow.core**. Tippen Sie auf **[!UICONTROL +]** und fügen Sie die folgenden Paketnamen zur Liste hinzu:
+   Die Ausführung dieser Schritte ermöglicht die Speicherung der Debug-Protokolle für das Paket **com.adobe.granite.workflow.core**. Auswählen **[!UICONTROL +]** und fügen Sie der Liste die folgenden Paketnamen hinzu:
 
    * com.adobe.fd.workflow
    * com.adobe.fd.workspace

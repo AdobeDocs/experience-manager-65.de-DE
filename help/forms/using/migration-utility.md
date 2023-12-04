@@ -9,10 +9,10 @@ content-strategy: max-2018
 docset: aem65
 role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 43%
+source-wordcount: '1736'
+ht-degree: 36%
 
 ---
 
@@ -91,7 +91,7 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
 
 1. Führen Sie die folgenden Schritte aus, um die Migration durchzuführen:
 
-   * Um **Assets** zu migrieren, tippen Sie auf „AEM Forms – Asset-Migration“ und auf dem nächsten Bildschirm auf **Migration beginnen**. Die folgenden Elemente werden migriert:
+   * Migrieren **Assets**, wählen Sie AEM Forms Assets Migration und klicken Sie im nächsten Bildschirm auf **Migration starten**. Die folgenden Elemente werden migriert:
 
       * Adaptive Formulare
       * Dokumentfragmente
@@ -103,18 +103,18 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
    >
    >Während der Asset-Migration treten möglicherweise Warnungen ähnlich der folgenden auf: „Konflikt aufgetreten bei …“. Solche Benachrichtigungen bedeuten, dass Regeln für einige Komponenten in adaptiven Formularen nicht migriert werden konnten. Beispiel: Wenn bei einer Komponente ein Ereignis auftritt, das sowohl Regeln als auch Skripte umfasst und wenn die Regeln nach einem Skript angewendet werden, wird keine der Regeln für die Komponente migriert. Allerdings können Sie [diese Regeln migrieren, indem Sie den Regeleditor für das Authoring von adaptiven Formularen öffnen](#migrate-rules).
 
-   * Um benutzerdefinierte Komponenten für adaptive Formulare zu migrieren, tippen Sie auf **Migration benutzerdefinierter Komponenten für adaptive Formulare** und auf der Seite „Migration von benutzerdefinierten Komponenten“ auf **Migration beginnen**. Die folgenden Elemente werden migriert:
+   * Um benutzerdefinierte Komponenten des adaptiven Formulars zu migrieren, wählen Sie **Migration benutzerdefinierter Forms-Komponenten** und wählen Sie auf der Seite &quot;Migration benutzerdefinierter Komponenten&quot;die Option **Migration starten**. Die folgenden Elemente werden migriert:
 
       * Benutzerdefinierte Komponenten, die für Adaptive Forms geschrieben wurden
       * Komponentenüberlagerungen, falls vorhanden.
 
-   * Um Vorlagen für adaptive Formulare zu migrieren, tippen Sie auf **Migration von Vorlagen für adaptive Formulare** und auf der Seite „Migration von benutzerdefinierten Komponenten“ auf **Migration beginnen**. Die folgenden Elemente werden migriert:
+   * Um adaptive Formularvorlagen zu migrieren, wählen Sie **Adaptive Forms-Vorlagenmigration** und wählen Sie auf der Seite &quot;Migration benutzerdefinierter Komponenten&quot;die Option **Migration starten**. Die folgenden Elemente werden migriert:
 
       * Adaptive Formularvorlagen, die unter `/apps` oder `/conf` mit dem AEM-Vorlageneditor erstellt wurden.
 
    * Migrieren Sie AEM Forms Cloud Configuration Services, um das neue kontextabhängige Cloud Service-Paradigma zu verwenden, das die Touch-optimierte Benutzeroberfläche enthält (unter `/conf`). Wenn Sie Services der Cloud-Konfiguration von AEM Forms migrieren, werden die Cloud-Services in `/etc` nach `/conf` verschoben. Wenn Sie über keine Cloud Services-Anpassungen verfügen, die von den veralteten Pfaden (`/etc`), empfiehlt Adobe, das Migrationsdienstprogramm nach der Aktualisierung auf 6.5 auszuführen. Verwenden Sie die Touch-optimierte Cloud-Konfiguration für alle weiteren Arbeiten. Wenn Sie über Anpassungen für die bereits vorhandenen Cloud-Services verfügen, setzen Sie die Verwendung der klassischen Benutzeroberfläche bei der Aktualisierung fort, bis die Anpassungen für die migrierten Pfade (`/conf`) abgeschlossen sind, und führen Sie erst dann das Migrationsdienstprogramm aus.
 
-   Migrieren **AEM Forms Cloud Services**, die Folgendes enthalten, tippen Sie auf AEM Forms Cloud-Konfigurationsmigration (die Cloud-Konfigurationsmigration ist unabhängig vom AEMFD-Kompatibilitätspaket). Tippen Sie auf die Migration zu AEM Forms Cloud-Konfigurationen und dann auf der Seite &quot;Konfigurationsmigration&quot; **Migration starten**:
+   Migrieren **AEM Forms Cloud Services**, die Folgendes enthalten, wählen Sie AEM Forms Cloud-Konfigurationsmigration (die Cloud-Konfigurationsmigration ist unabhängig vom AEMFD-Kompatibilitätspaket). Wählen Sie die Migration zu AEM Forms Cloud-Konfigurationen und dann auf der Seite &quot;Konfigurationsmigration&quot;die Option **Migration starten**:
 
    * Cloud-Services für das Formulardatenmodell
 
@@ -152,13 +152,13 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
 
 Diese Komponenten können migriert werden, indem sie im Regeleditor im adaptiven Forms-Editor geöffnet werden.
 
-* Um Regeln und Skripte (für die Aktualisierung von 6.3 nicht erforderlich) in benutzerdefinierten Komponenten zu migrieren, tippen Sie auf „Migration von benutzerdefinierten Adaptive Forms-Komponenten“ und auf dem nächsten Bildschirm auf „Migration beginnen“. Die folgenden Elemente werden migriert:
+* Um Regeln und Skripte (die bei einer Aktualisierung von 6.3 nicht erforderlich sind) in benutzerdefinierten Komponenten zu migrieren, wählen Sie Adaptive Forms Custom Components Migration (Adaptive-Komponentenmigration) und klicken Sie im nächsten Bildschirm auf &quot;Migration starten&quot;. Die folgenden Elemente werden migriert:
 
    * Regeln und Skripten, erstellt mithilfe des Regel-Editors (6.1 FP1 und höher)
 
    * Skripte, erstellt mithilfe der Skript-Registerkarte in der Benutzeroberfläche von Version 6.1 oder niedriger
 
-* Um Vorlagen (für die Aktualisierung von 6.3 und 6.4 nicht erforderlich) zu migrieren, tippen Sie auf „Migration von Adaptive Forms-Vorlagen“ und auf dem nächsten Bildschirm auf „Migration beginnen“. Die folgenden Elemente werden migriert:
+* Um Vorlagen zu migrieren (bei einer Aktualisierung von 6.3 und 6.4 nicht erforderlich), wählen Sie Adaptive Forms-Vorlagenmigration und wählen Sie im nächsten Bildschirm die Option Migration starten aus. Die folgenden Elemente werden migriert:
 
    * Alte Vorlagen – Vorlagen für adaptive Formulare, erstellt unter /apps mithilfe von AEM 6.1 Forms oder niedriger. Dazu gehören die Skripten, die in den Vorlagenkomponenten definiert wurden.
 

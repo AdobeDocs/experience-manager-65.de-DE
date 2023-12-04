@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Correspondence Management
 exl-id: 9e1b0067-c7dc-4bbb-a209-d674592be858
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2170'
-ht-degree: 48%
+source-wordcount: '2171'
+ht-degree: 44%
 
 ---
 
@@ -56,7 +56,7 @@ Nachdem Sie das für die Erstellung der interaktiven Kommunikation erforderliche
 
 Führen Sie die folgenden Schritte durch, um das Teilformular in einer XDP-Vorlage zu verwenden:
 
-1. Öffnen Sie den Forms Designer, wählen Sie **Datei** > **Neu** > **Leeres Formular verwenden**, tippen Sie auf **Weiter** und dann auf **Beenden**, um das Formular für die Vorlagenerstellung zu öffnen.
+1. Öffnen Sie den Forms Designer und wählen Sie **Datei** > **Neu** > **Leeres Formular verwenden** auswählen **Nächste** und wählen Sie **Beenden** , um das Formular zur Vorlagenerstellung zu öffnen.
 
    Stellen Sie sicher, dass die **Objektbibliothek** und die Option **Objekt** im Menü **Fenster** ausgewählt werden.
 
@@ -90,7 +90,7 @@ Führen Sie die folgenden Schritte durch, um das Teilformular in einer XDP-Vorla
    1. Navigieren Sie zum Speicherort der Datei und geben Sie einen Namen für die XDP-Vorlage an.
    1. Auswählen **.xdp** aus dem **Dateityp** Dropdown-Liste.
 
-   1. Tippen Sie auf **Speichern**.
+   1. Wählen Sie **Speichern** aus.
 
 ### Verwenden der Bildfeldkomponente in einer XDP-Vorlage {#use-image-field-component-in-an-xdp-template}
 
@@ -124,9 +124,9 @@ Führen Sie die folgenden Schritte aus, um in der XDP-Vorlage die Tabellenkompon
 
    1. Geben Sie die Anzahl der Zeilen und Spalten für die Tabelle an.
    1. Aktivieren Sie das Kontrollkästchen **Kopfzeile in Tabelle einschließen**, um eine Zeile für die Tabellenkopfzeile einzufügen.
-   1. Tippen Sie auf **OK**.
+   1. Wählen Sie **OK** aus.
 
-1. Tippen Sie auf **+** im linken Bereich neben dem Namen der Tabelle, klicken Sie mit der rechten Maustaste auf die Zellennamen in der Kopfzeile und in anderen Zeilen und wählen Sie **Objekt umbenennen**, um die Tabellenzellen umzubenennen.
+1. Auswählen **+** Klicken Sie im linken Bereich neben dem Namen der Tabelle mit der rechten Maustaste auf die Zellennamen in der Kopfzeile und anderen Zeilen und wählen Sie **Objekt umbenennen** , um die Tabellenzellen umzubenennen.
 1. Klicken Sie auf die Textfelder für die Tabellenkopfzeilen in der **Design-Ansicht** und benennen Sie sie um.
 1. Ziehen Sie in der **Design-Ansicht** die **Textfeldkomponente** per Drag-and-Drop aus der **Objektbibliothek** auf jede Tabellenzelle. Führen Sie diesen Schritt aus, um Tabellenzellen bei der Erstellung der interaktiven Kommunikation an die Formulardatenmodellobjekte zu binden.
 
@@ -141,15 +141,15 @@ Führen Sie die folgenden Schritte aus, um in der XDP-Vorlage die Tabellenkompon
    1. Navigieren Sie zum Speicherort der Datei und geben Sie den Namen für die XDP-Vorlage an.
    1. Auswählen **.xdp** aus dem **Dateityp** Dropdown-Liste.
 
-   1. Tippen Sie auf **Speichern**.
+   1. Wählen Sie **Speichern** aus.
 
 ### Hochladen einer XDP-Vorlage auf den AEM Forms-Server {#uploadxdptemplate}
 
 Nachdem Sie eine XDP-Vorlage mit Forms Designer erstellt haben, müssen Sie sie auf den AEM Forms-Server hochladen, damit die Vorlage beim Erstellen der interaktiven Kommunikation verwendet werden kann.
 
 1. Wählen Sie **Formulare** > **Formulare &amp; Dokumente**.
-1. Tippen Sie auf **Erstellen** > **Datei hochladen**.
-1. Navigieren Sie zum Speicherort der XDP-Vorlage im lokalen Dateisystem und tippen Sie auf **Öffnen**, um die XDP-Vorlage auf den AEM Forms-Server zu importieren.
+1. Auswählen **Erstellen** > **Datei-Upload**.
+1. Navigieren Sie zum Speicherort der XDP-Vorlage im lokalen Dateisystem und wählen Sie **Öffnen** , um die XDP-Vorlage auf den AEM Forms-Server zu importieren.
 
 ## Schema verwenden {#using-schema}
 

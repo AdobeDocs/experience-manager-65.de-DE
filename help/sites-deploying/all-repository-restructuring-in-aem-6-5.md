@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2688'
+source-wordcount: '2694'
 ht-degree: 61%
 
 ---
@@ -90,7 +90,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
         </ul> </li>
       </ol> </li>
      <li>Aktivieren Sie den Bearbeitungsmodus im Workflow-Modell-Editor, der die Definition des Workflow-Modells nach /conf/global/workflow/models kopiert.</li>
-     <li>Tippen Sie auf die Schaltfläche Synchronisieren , um die Änderungen mit dem Runtime Workflow-Modell unter /var/workflow/models zu synchronisieren.</li>
+     <li>Wählen Sie die Schaltfläche Synchronisieren , um die Änderungen mit dem Laufzeitarbeitsmodell unter /var/workflow/models zu synchronisieren.</li>
      <li>Exportieren Sie beide Workflow-Modelle (/conf/global/workflow/models/&lt;workflow-model&gt;) und das Laufzeitarbeitsablaufmodell (/var/workflow/models/&lt;workflow-model&gt;) und in das AEM Projekt integrieren.
       <ol>
        <li>Beispiel: export:

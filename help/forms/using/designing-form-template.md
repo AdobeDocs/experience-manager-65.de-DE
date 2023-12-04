@@ -7,10 +7,10 @@ topic-tags: hTML5_forms
 docset: aem65
 feature: Mobile Forms
 exl-id: 7c8d501f-c953-495e-8bac-1f66fd99c783
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 70%
+source-wordcount: '480'
+ht-degree: 66%
 
 ---
 
@@ -40,4 +40,4 @@ Das Hauptziel für HTML5-Formulare sind Touch-Geräte. Daher wird ein neues Scri
 
 #### Rich-Text-Format {#rich-text-format}
 
-Sie können ein Textfeld in ein Rich-Text-Feld konvertieren. Hierdurch wird dem Textfeld eine Liste von Formatierungsoptionen hinzugefügt. Um es zu konvertieren, öffnen Sie Forms Designer und tippen Sie auf das Textfeld in der **[!UICONTROL Design-Ansicht]**. Wählen Sie auf der Registerkarte **[!UICONTROL Feld]** in der Dropdown-Liste **[!UICONTROL Feldformat]** die Option **[!UICONTROL Rich-Text]**. Wenn das XFA-Formular jetzt als HTML5-Formular gerendert wird, wird das Feld als Rich-Text-Feld gerendert. Tippen Sie auf ![Maximieren](assets/maximize_icon.svg), um weitere Formatierungsoptionen anzuzeigen.
+Sie können ein Textfeld in ein Rich-Text-Feld konvertieren. Hierdurch wird dem Textfeld eine Liste von Formatierungsoptionen hinzugefügt. Öffnen Sie zum Konvertieren den Forms Designer und wählen Sie das Textfeld in **[!UICONTROL Designansicht]**. Wählen Sie auf der Registerkarte **[!UICONTROL Feld]** in der Dropdown-Liste **[!UICONTROL Feldformat]** die Option **[!UICONTROL Rich-Text]**. Wenn das XFA-Formular jetzt als HTML5-Formular gerendert wird, wird das Feld als Rich-Text-Feld gerendert. Auswählen ![Maximieren](assets/maximize_icon.svg) , um weitere Formatierungsoptionen anzuzeigen.

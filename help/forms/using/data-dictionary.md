@@ -10,10 +10,10 @@ discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3840'
-ht-degree: 35%
+source-wordcount: '3842'
+ht-degree: 29%
 
 ---
 
@@ -51,7 +51,7 @@ Verwenden Sie den Datenwörterbucheditor zum Erstellen eines Datenwörterbuchs o
 >Für mehrere Briefe, für die ähnliche Elemente erforderlich sind, können Sie ein gemeinsames Datenwörterbuch erstellen. Ein großes Datenwörterbuch mit einer großen Anzahl von Elementen kann jedoch zu Leistungsproblemen bei der Verwendung des Datenwörterbuchs und beim Laden der Elemente führen, z. B. in Briefen und Dokumentfragmenten. Wenn Leistungsprobleme auftreten, versuchen Sie, separate Datenwörterbücher für verschiedene Briefe zu erstellen.
 
 1. Auswählen **Forms** > **Datenwörterbücher**.
-1. Tippen Sie auf **Datenwörterbuch erstellen**.
+1. Auswählen **Datenwörterbuch erstellen**.
 1. Fügen Sie im Bildschirm „Eigenschaften“ Folgendes hinzu:
 
    * **Titel**: (Optional) Geben Sie den Titel für das Datenwörterbuch ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nichtenglische Zeichen enthalten. Briefe und andere Dokumentfragmente werden (sofern verfügbar) mit ihrem Titel referenziert, z. B. in Miniaturansichten und Asset-Eigenschaften. Datenwörterbücher werden mit ihren Namen und nicht mit Titeln referenziert.
@@ -59,11 +59,11 @@ Verwenden Sie den Datenwörterbucheditor zum Erstellen eines Datenwörterbuchs o
 
    * **Beschreibung**: (Optional) Beschreibung des Datenwörterbuchs.
    * **Tags:**(Optional) Um einen benutzerdefinierten Tag zu erstellen, geben Sie einen Wert in das Textfeld ein und drücken Sie die Eingabetaste. Sie können den Tag unterhalb des Textfeldes der Tags sehen. Wenn Sie diesen Text speichern, werden auch die neu hinzugefügten Tags erstellt.
-   * **Erweiterte Eigenschaften**: (Optional) Klicken Sie auf **Feld hinzufügen**, um Metadatenattribute für Ihr Datenwörterbuch anzugeben. Geben Sie in der Spalte Eigenschaftsname einen eindeutigen Eigenschaftsnamen ein. Geben Sie in der Spalte Wert einen Wert ein, der mit der Eigenschaft verknüpft werden soll.
+   * **Erweiterte Eigenschaften**: (Optional) Wählen Sie **Feld hinzufügen** , um Metadatenattribute für Ihr Datenwörterbuch anzugeben. Geben Sie in der Spalte Eigenschaftsname einen eindeutigen Eigenschaftsnamen ein. Geben Sie in der Spalte Wert einen Wert ein, der mit der Eigenschaft verknüpft werden soll.
 
    ![Eigenschaften des Datenwörterbuchs auf Deutsch](do-not-localize/1_ddproperties.png)
 
-1. (Optional) Wenn Sie eine XSD-Schemadefinition für Ihr Datenwörterbuch hochladen möchten, klicken Sie im Bereich „Datenwörterbuchstruktur“ auf **XML-Schema hochladen**. Navigieren Sie zu der gewünschten XSD-Datei, wählen Sie diese aus und klicken Sie auf **Öffnen**. Ein Datenwörterbuch wird basierend auf dem hochgeladenen XML-Schema erstellt. Sie müssen die Anzeigenamen und Beschreibungen der Elemente im Datenwörterbuch anpassen. Dazu müssen Sie die Namen der Elemente wählen, indem Sie darauf tippen und dann ihre Beschreibungen, Anzeigenamen und andere Details in den Feldern im rechten Bereich ändern.
+1. (Optional) Um eine XSD-Schemadefinition für Ihr Datenwörterbuch hochzuladen, wählen Sie im Bereich Datenwörterbuchstruktur die Option **Hochladen des XML-Schemas**. Navigieren Sie zur XSD-Datei, wählen Sie sie aus und wählen Sie **Öffnen**. Ein Datenwörterbuch wird basierend auf dem hochgeladenen XML-Schema erstellt. Sie müssen die Anzeigenamen und Beschreibungen der Elemente im Datenwörterbuch anpassen. Dazu müssen Sie die Namen der Elemente wählen, indem Sie darauf tippen und dann ihre Beschreibungen, Anzeigenamen und andere Details in den Feldern im rechten Bereich ändern.
 
    Weitere Informationen zu berechneten DD-Elementen finden Sie unter [Berechnete Datenwörterbuchelemente](#computedddelements).
 
@@ -71,10 +71,10 @@ Verwenden Sie den Datenwörterbucheditor zum Erstellen eines Datenwörterbuchs o
    >
    >Sie können das Hochladen der Schemadatei überspringen und Ihr Datenwörterbuch von Grund auf mithilfe der Benutzeroberfläche erstellen. Überspringen Sie dazu diesen Schritt und fahren Sie mit den nächsten Schritten fort.
 
-1. Tippen Sie auf **Weiter**.
+1. Wählen Sie **Weiter** aus.
 1. Fügen Sie im Bildschirm Eigenschaften hinzufügen die Elemente zum Datenwörterbuch hinzu. Sie können auch Elemente hinzufügen/löschen und deren Details bearbeiten, wenn Sie ein Schema hochgeladen haben, um eine grundlegende Struktur des Datenwörterbuchs zu erhalten.
 
-   Sie können auf die drei Punkte auf der rechten Seite eines Elements tippen und ein Element zur Datenwörterbuchstruktur hinzufügen.
+   Sie können die drei Punkte auf der rechten Seite eines Elements auswählen und der Datenwörterbuchstruktur ein Element hinzufügen.
 
    ![1_2_createanelement](assets/1_2_createanelement.png)
 
@@ -98,7 +98,7 @@ Verwenden Sie den Datenwörterbucheditor zum Erstellen eines Datenwörterbuchs o
 
    ![2_addddpropertiesbasic](assets/2_addddpropertiesbasic.png)
 
-1. (Optional) Nach der Auswahl eines Elements können Sie auf der Registerkarte „Erweitert“ Eigenschaften (Attribute) hinzufügen. Sie können auch auf **Feld hinzufügen** tippen und die Eigenschaften eines DD-Elements erweitern.
+1. (Optional) Nach der Auswahl eines Elements können Sie auf der Registerkarte „Erweitert“ Eigenschaften (Attribute) hinzufügen. Sie können auch **Feld hinzufügen** und erweitern Sie die Eigenschaften eines DD-Elements.
 
    ![3_addddpropertiesadvanced](assets/3_addddpropertiesadvanced.png)
 
@@ -111,17 +111,17 @@ Verwenden Sie den Datenwörterbucheditor zum Erstellen eines Datenwörterbuchs o
    >Durch das Löschen eines Composite-/Collection-Elements mit untergeordneten Knoten werden auch seine untergeordneten Knoten gelöscht.
 
 1. (Optional) Wählen Sie ein Element im Bereich &quot;Datenwörterbuchstruktur&quot;und im Bereich &quot;Feld- und Variablenliste&quot;aus. Ändern Sie die dem Element zugeordneten erforderlichen Attribute oder fügen Sie sie hinzu.
-1. Tippen Sie auf **Speichern**.
+1. Wählen Sie **Speichern** aus.
 
 ### Erstellen von Kopien eines oder mehrerer Datenwörterbücher {#create-copies-of-one-or-more-data-dictionary}
 
 Um schnell ein oder mehrere Datenwörterbücher mit Eigenschaften und Elementen zu erstellen, die vorhandenen Datenwörterbüchern ähnlich sind, können Sie sie kopieren und einfügen.
 
 1. Wählen Sie in der Liste der Datenwörterbücher die entsprechenden Datenwörterbücher aus. Auf der Benutzeroberfläche wird das Symbol „Kopieren“ angezeigt.
-1. Tippen Sie auf Kopieren. Auf der Benutzeroberfläche wird das Symbol „Einfügen“ angezeigt.
-1. Tippen Sie auf „Einfügen“. Das Dialogfeld „Einfügen“ wird angezeigt. Das System weist den neuen Datenwörterbüchern automatisch Namen und Titel zu.
+1. Wählen Sie Kopieren aus. Auf der Benutzeroberfläche wird das Symbol Einfügen angezeigt.
+1. Wählen Sie Einfügen aus. Das Dialogfeld „Einfügen“ wird angezeigt. Das System weist den neuen Datenwörterbüchern automatisch Namen und Titel zu.
 1. Bearbeiten Sie bei Bedarf den Titel und den Namen, mit denen Sie die Kopie des Datenwörterbuchs speichern möchten.
-1. Tippen Sie auf „Einfügen“. Die Kopie des Datenwörterbuchs wird erstellt. Jetzt können Sie die erforderlichen Änderungen an Ihrem neu erstellten Datenwörterbuch vornehmen.
+1. Wählen Sie Einfügen aus. Die Kopie des Datenwörterbuchs wird erstellt. Jetzt können Sie die erforderlichen Änderungen an Ihrem neu erstellten Datenwörterbuch vornehmen.
 
 ## Anzeigen der Dokumentfragmente oder Dokumente, die auf ein Datenwörterbuchelement verweisen {#see-the-document-fragments-or-documents-that-refer-to-a-data-dictionary-element}
 
@@ -129,32 +129,32 @@ Beim Bearbeiten oder Anzeigen eines Datenwörterbuchs können Sie sehen, welche 
 
 1. Führen Sie einen der folgenden Schritte aus, um das Datenwörterbuch zu bearbeiten:
 
-   * Bewegen Sie den Mauszeiger über ein Datenwörterbuch und tippen Sie auf Bearbeiten.
-   * Wählen Sie ein Datenwörterbuch aus und tippen Sie dann in der Kopfzeile auf Bearbeiten .
-   * Bewegen Sie den Mauszeiger über ein Datenwörterbuch und tippen Sie auf Auswählen . Tippen Sie dann in der Kopfzeile auf Bearbeiten .
+   * Bewegen Sie den Mauszeiger über ein Datenwörterbuch und wählen Sie &quot;Bearbeiten&quot;.
+   * Wählen Sie ein Datenwörterbuch aus und klicken Sie dann in der Kopfzeile auf Bearbeiten .
+   * Bewegen Sie den Mauszeiger über ein Datenwörterbuch und wählen Sie &quot;Auswählen&quot;. Wählen Sie dann in der Kopfzeile Bearbeiten aus.
 
-   Oder tippen Sie auf ein Datenwörterbuch, um es anzuzeigen.
+   Oder wählen Sie in einem Datenwörterbuch aus, um es anzuzeigen.
 
-1. Tippen Sie im Datenwörterbuch auf ein einfaches Element, um es auszuwählen. Composite- und Collection-Elemente haben keine Verweise.
+1. Wählen Sie im Datenwörterbuch ein einfaches Element aus, um es auszuwählen. Composite- und Collection-Elemente haben keine Verweise.
 
    Zusammen mit den grundlegenden und erweiterten Eigenschaften des Elements wird auch geliehener Inhalt angezeigt.
 
-1. Tippen Sie auf „Geliehener Inhalt“.
+1. Wählen Sie Geliehener Inhalt aus.
 
    Die Registerkarte &quot;Geliehener Inhalt&quot;wird mit den folgenden Elementen angezeigt: Texte, Bedingungen, Briefe und interaktive Kommunikation. Jede dieser Überschriften zeigt auch die Anzahl der Verweise auf das ausgewählte Element an.
 
-1. Tippen Sie auf eine Überschrift, um den Namen der Assets anzuzeigen, die auf das Element verweisen.
+1. Wählen Sie eine Überschrift aus, um den Namen der Assets anzuzeigen, die auf das Element verweisen.
 
    ![lentcontent](assets/lentcontent.png)
 
-1. Um geliehenen Inhalt für ein anderes Element anzuzeigen, tippen Sie auf das Element.
-1. Um ein Asset anzuzeigen, das auf ein Element verweist, tippen Sie auf seinen Namen. Der Browser zeigt das Asset, den Brief oder die interaktive Kommunikation an.
+1. Um geliehenen Inhalt für ein anderes Element anzuzeigen, wählen Sie das Element aus.
+1. Um ein Asset anzuzeigen, das auf das Element verweist, wählen Sie unter seinem Namen aus. Der Browser zeigt das Asset, den Brief oder die interaktive Kommunikation an.
 
 ## Arbeiten mit Testdaten {#working-with-test-data}
 
-1. Tippen Sie auf der Seite „Datenwörterbücher“ auf **Auswählen**.
-1. Tippen Sie auf ein Datenwörterbuch, für das Sie Testdaten herunterladen möchten, und tippen Sie dann auf **XML-Beispieldaten herunterladen**.
-1. Tippen Sie bei der Warnmeldung auf **OK**. Eine XML-Datei wird heruntergeladen.
+1. Wählen Sie auf der Seite &quot;Datenwörterbücher&quot;die Option **Auswählen**.
+1. Wählen Sie ein Datenwörterbuch aus, für das Sie Testdaten herunterladen möchten, und wählen Sie dann **XML-Beispieldaten herunterladen**.
+1. Auswählen **OK** in der Warnmeldung. Eine XML-Datei wird heruntergeladen.
 1. Öffnen Sie die XML-Datei mit Notepad oder einem anderen XML-Editor. Die XML-Datei hat dieselbe Struktur wie das Datenwörterbuch und die Platzhalterzeichenfolgen in den Elementen. Ersetzen Sie die Platzhalterzeichenfolgen durch die Daten, mit denen Sie einen Brief testen möchten.
 
    ```xml
@@ -200,7 +200,7 @@ Beim Bearbeiten oder Anzeigen eines Datenwörterbuchs können Sie sehen, welche 
 
 1. Nachdem die Dateneinträge vorgenommen wurden, können Sie diese XML-Datei verwenden, wenn Sie einen Brief mit Testdaten in der Vorschau anzeigen.
 
-   Sie können diese Testdaten mit DD hinzufügen (Wählen Sie DD, tippen Sie auf „Testdaten hochladen“ und laden Sie diese XML-Datei hoch). Wenn Sie danach den Brief normal in der Vorschau anzeigen (nicht benutzerdefiniert), werden diese XML-Daten in dem Brief verwendet. Sie können auch auf Benutzerdefiniert tippen und diese XML hochladen.
+   Sie können diese Testdaten mit DD hinzufügen (Wählen Sie DD und wählen Sie Testdaten hochladen und laden Sie diese XML-Datei hoch). Wenn Sie danach den Brief normal in der Vorschau anzeigen (nicht benutzerdefiniert), werden diese XML-Daten im Brief verwendet. Sie können auch &quot;Benutzerdefiniert&quot;auswählen und diese XML hochladen.
 
 ## Stichproben {#samples}
 
@@ -413,9 +413,9 @@ Das Exportieren einer XSD-Datei erfordert eine bestimmte Datenzuordnung, die in 
 
 Nachdem Sie ein Datenwörterbuch erstellt haben, können Sie es in eine XML-Beispieldatendatei herunterladen, um darin Texteinträge vorzunehmen.
 
-1. Tippen Sie auf der Seite „Datenwörterbücher“ auf **Auswählen** und tippen Sie dann auf ein Datenwörterbuch, um es auszuwählen.
+1. Wählen Sie auf der Seite &quot;Datenwörterbücher&quot;die Option **Auswählen** und wählen Sie dann ein Datenwörterbuch aus, um es auszuwählen.
 1. Wählen Sie **XML-Beispieldaten herunterladen**. 
-1. Tippen Sie bei der Warnmeldung auf **OK**.
+1. Auswählen **OK** in der Warnmeldung.
 
    Correspondence Management erstellt eine XML-Datei basierend auf der ausgewählten Datenwörterbuchstruktur und lädt sie auf Ihren Computer mit dem Namen herunter &lt;data-dictionary-name>-SampleData. Jetzt können Sie diese Datei in einem XML- oder einem Texteditor bearbeiten, um beim [Erstellen eines Briefs](../../forms/using/create-letter.md) Dateneinträge vorzunehmen.
 
@@ -425,9 +425,9 @@ Wenn Sie denselben Brief in verschiedenen Sprachen an Ihre Kunden senden möchte
 
 ### Datenwörterbuch lokalisieren {#localize-data-dictionary}
 
-1. Tippen Sie auf der Seite „Datenwörterbücher“ auf **Auswählen** und tippen Sie dann zum Auswählen auf ein Datenwörterbuch.
-1. Tippen Sie auf **Lokalisierungsdaten herunterladen**.
-1. Tippen Sie bei der Warnmeldung auf **OK**. Correspondence Management lädt eine ZIP-Datei auf Ihrem Computer mit dem Namen DataDictionary-&lt;DDname>.zip herunter.
+1. Wählen Sie auf der Seite &quot;Datenwörterbücher&quot;die Option **Auswählen** und wählen Sie dann ein Datenwörterbuch aus, um es auszuwählen.
+1. Auswählen **Herunterladen von Lokalisierungsdaten**.
+1. Auswählen **OK** in der Warnung angezeigt. Correspondence Management lädt eine ZIP-Datei auf Ihrem Computer mit dem Namen DataDictionary-&lt;DDname>.zip herunter.
 1. Die ZIP-Datei enthält eine Datei des Typs „.properties“. Diese Datei definiert das heruntergeladene Datenwörterbuch. Der Inhalt der Eigenschaftendatei ähnelt dem folgenden:
 
    ```ini
@@ -528,8 +528,8 @@ Das folgende Beispiel zeigt ein einfaches Schema.
 
 | **Datenwörterbuchelement** | **XML-Standardbindung** |
 |---|---|
-| Alter | /Alter |
-| Preis | /Preis |
+| Alter | /age |
+| Preis | /price |
 
 ### Zuordnen von Composite-Elementen {#mapping-composite-elements}
 

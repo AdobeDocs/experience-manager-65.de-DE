@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2206'
-ht-degree: 98%
+source-wordcount: '2136'
+ht-degree: 96%
 
 ---
 
@@ -81,7 +81,7 @@ So erstellen Sie eine interaktive Kommunikation aus Datensätzen, die in einer J
 
 1. Erstellen Sie einen [überwachten Ordner](/help/forms/using/creating-configure-watched-folder.md) und konfigurieren Sie ihn für die Verwendung der Batch-API:
    1. Melden Sie sich bei der AEM Forms-Autoreninstanz an.
-   1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Formulare]** > **[!UICONTROL Überwachten Ordner konfigurieren]**. Tippen Sie auf **[!UICONTROL Neu]**.
+   1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Formulare]** > **[!UICONTROL Überwachten Ordner konfigurieren]**. Wählen Sie **[!UICONTROL Neu]** aus.
    1. Geben Sie die den **[!UICONTROL Namen]** und den physischen **[!UICONTROL Pfad]** des Ordners an. Beispiel: `c:\batchprocessing`.
    1. Wählen Sie die Option **[!UICONTROL Service]** im Feld **[!UICONTROL Datei verarbeiten mit]**.
    1. Wählen Sie den Service **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** im Feld **[!UICONTROL Service-Name]**.
@@ -97,7 +97,7 @@ So erstellen Sie eine interaktive Kommunikation aus Datensätzen, die in einer J
       | batchType | Zeichenfolge | Setzen Sie den Wert auf PRINT, WEB oder WEB_AND_PRINT. Der Standardwert ist WEB_AND_PRINT. |
       | locale | Zeichenfolge | Geben Sie das Gebietsschema für die Ausgabe der interaktiven Kommunikation an. Der vordefinierte Service verwendet nicht die Gebietsschema-Option, Sie können jedoch einen benutzerdefinierten Service erstellen, um lokalisierte interaktive Kommunikationen zu generieren. Der Standardwert ist en_US |
 
-   1. Tippen Sie auf **[!UICONTROL Erstellen]**, und der überwachte Ordner wird erstellt.
+   1. Auswählen **[!UICONTROL Erstellen]** Der überwachte Ordner wird erstellt.
 1. Verwenden Sie den überwachten Ordner, um interaktive Kommunikation zu generieren:
    1. Öffnen Sie den überwachten Ordner. Navigieren Sie zum Eingabeordner. 
    1. Erstellen Sie einen Ordner im Eingabeordner und legen Sie die JSON-Datei im neu erstellten Ordner ab.
@@ -113,9 +113,9 @@ Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Datensätze) m
 
 1. So konfigurieren Sie das Formulardatenmodell der Vorlage:
    1. Öffnen Sie das Formulardatenmodell, das mit der Vorlage für interaktive Kommunikation verknüpft ist.
-   1. Wählen Sie Ihr MODELLOBJEKT DER OBERSTEN EBENE aus und tippen Sie auf „Eigenschaften bearbeiten“.
+   1. Wählen Sie das MODELLOBJEKT AUF DER OBERSTEN EBENE aus und wählen Sie &quot;Eigenschaften bearbeiten&quot;.
    1. Wählen Sie Ihren Service zum Abrufen aus dem Feld „Lese-Service“ im Bereich „Eigenschaften bearbeiten“ aus.
-   1. Tippen Sie auf das Stiftsymbol für das Argument des Lese-Services, um das Argument an ein Anfrageattribut zu binden, und geben Sie den Bindungswert an. Er bindet das Dienstargument an das angegebene Bindungsattribut oder den angegebenen Literalwert, der an den Dienst als Argument übergeben wird, um mit dem angegebenen Wert verknüpfte Details aus der Datenquelle abzurufen.
+   1. Wählen Sie das Stiftsymbol für das Argument des Lesedienstes aus, um das Argument an ein Anforderungsattribut zu binden, und geben Sie den Bindungswert an. Er bindet das Dienstargument an das angegebene Bindungsattribut oder den angegebenen Literalwert, der an den Dienst als Argument übergeben wird, um mit dem angegebenen Wert verknüpfte Details aus der Datenquelle abzurufen.
 
       <br>
         In diesem Beispiel nimmt das Argument ID den Wert des Attributs ID des Benutzerprofils an und übergibt ihn als Argument an den Lese-Service. Dieser liest Werte aus zugeordneten Eigenschaften aus dem Datenmodellobjekt „employee“ für die angegebene ID und gibt sie zurück. Wenn Sie beispielsweise im Feld ID im Formular den Wert „00250“ festlegen, liest der Lese-Service die Informationen zum Mitarbeiter mit der Mitarbeiter-ID „00250“.
@@ -143,7 +143,7 @@ Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Datensätze) m
 
 1. Erstellen Sie einen [überwachten Ordner](/help/forms/using/creating-configure-watched-folder.md) und konfigurieren Sie ihn für die Verwendung des Batch-API-Services:
    1. Melden Sie sich bei der AEM Forms-Autoreninstanz an.
-   1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Formulare]** > **[!UICONTROL Überwachten Ordner konfigurieren]**. Tippen Sie auf **[!UICONTROL Neu]**.
+   1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Formulare]** > **[!UICONTROL Überwachten Ordner konfigurieren]**. Wählen Sie **[!UICONTROL Neu]** aus.
    1. Geben Sie die den **[!UICONTROL Namen]** und den physischen **[!UICONTROL Pfad]** des Ordners an. Beispiel: `c:\batchprocessing`.
    1. Wählen Sie die Option **[!UICONTROL Service]** im Feld **[!UICONTROL Datei verarbeiten mit]**.
    1. Wählen Sie den Service **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** im Feld **[!UICONTROL Service-Name]**.
@@ -159,7 +159,7 @@ Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Datensätze) m
       | batchType | Zeichenfolge | Setzen Sie den Wert auf PRINT, WEB oder WEB_AND_PRINT. Der Standardwert ist WEB_AND_PRINT. |
       | locale | Zeichenfolge | Geben Sie das Gebietsschema für die Ausgabe der interaktiven Kommunikation an. Der vordefinierte Service verwendet nicht die Gebietsschema-Option, Sie können jedoch einen benutzerdefinierten Service erstellen, um lokalisierte interaktive Kommunikationen zu generieren. Der Standardwert ist en_US. |
 
-   1. Tippen Sie auf **[!UICONTROL Erstellen]**, und der überwachte Ordner wird erstellt.
+   1. Auswählen **[!UICONTROL Erstellen]** Der überwachte Ordner wird erstellt.
 1. Verwenden Sie den überwachten Ordner, um interaktive Kommunikation zu generieren:
    1. Öffnen Sie den überwachten Ordner. Navigieren Sie zum Eingabeordner. 
    1. Erstellen Sie einen Ordner im Eingabeordner. Platzieren Sie die in Schritt 2 erstellte JSON-Datei im neu erstellten Ordner.

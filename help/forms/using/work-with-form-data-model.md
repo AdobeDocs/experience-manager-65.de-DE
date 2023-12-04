@@ -10,10 +10,10 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '4159'
-ht-degree: 87%
+ht-degree: 78%
 
 ---
 
@@ -50,7 +50,7 @@ Hinzufügen von Datenmodellobjekten und Services:
 
 1. Melden Sie sich bei der AEM-Autorinstanz an, navigieren Sie zu **[!UICONTROL Formulare > Datenintegrationen]** und öffnen Sie das Formulardatenmodell, in dem Sie Datenmodellobjekte hinzufügen möchten.
 1. Erweitern Sie im Bereich „Data Sources“ die Datenquellen, um verfügbare Datenmodellobjekte und Services anzuzeigen.
-1. Wählen Sie Datenmodellobjekte und Dienste aus, die Sie dem Formulardatenmodell hinzufügen möchten, und tippen Sie auf **[!UICONTROL Ausgewählte hinzufügen]**.
+1. Wählen Sie Datenmodellobjekte und Dienste aus, die Sie zum Formulardatenmodell hinzufügen möchten, und wählen Sie **[!UICONTROL Auswahl hinzufügen]**.
 
    ![selected-objects](assets/selected-objects.png)
 
@@ -80,7 +80,7 @@ Hinzufügen von Datenmodellobjekten und Services:
    >
    >Das OData-Service-Metadatendokument enthält außer den Datenmodellobjekten und Services Navigationseigenschaften, die die Verknüpfung zwischen zwei Datenmodellobjekten definieren. Weitere Informationen finden Sie unter [Arbeiten mit Navigationseigenschaften von OData-Services](#work-with-navigation-properties-of-odata-services).
 
-1. Tippen Sie auf **[!UICONTROL Speichern]**, um das Formularmodellobjekt zu speichern.
+1. Auswählen **[!UICONTROL Speichern]** zum Speichern des Formularmodellobjekts.
 
    >[!NOTE]
    >
@@ -95,8 +95,8 @@ Sie können zwar Datenmodellobjekte aus konfigurierten Datenquellen hinzufügen,
 So erstellen Sie ein Datenmodellobjekt ohne Datenquellen:
 
 1. Melden Sie sich bei der AEM-Autoreninstanz an und navigieren Sie zu **[!UICONTROL Forms > Datenintegrationen]** und öffnen Sie das Formulardatenmodell, in dem Sie ein Datenmodellobjekt oder eine Entität erstellen möchten.
-1. Tippen Sie auf **[!UICONTROL Entität erstellen]**.
-1. Geben Sie im Dialog Datenmodell erstellen einen Namen für das Datenmodell ein und tippen Sie auf **[!UICONTROL Hinzufügen]**. Ein Datenmodellobjekt wird dem Formulardatenmodell hinzugefügt. Das neu hinzugefügte Datenmodellobjekt ist nicht an eine Datenquelle gebunden und weist keine Eigenschaften auf, wie in folgender Abbildung dargestellt.
+1. Auswählen **[!UICONTROL Entität erstellen]**.
+1. Geben Sie im Dialogfeld &quot;Datenmodell erstellen&quot;einen Namen für das Datenmodellobjekt an und wählen Sie **[!UICONTROL Hinzufügen]**. Ein Datenmodellobjekt wird dem Formulardatenmodell hinzugefügt. Das neu hinzugefügte Datenmodellobjekt ist nicht an eine Datenquelle gebunden und weist keine Eigenschaften auf, wie in folgender Abbildung dargestellt.
 
    ![new-entity](assets/new-entity.png)
 
@@ -108,14 +108,14 @@ Mit dem Formulardatenmodell-Editor können Sie untergeordnete Eigenschaften in e
 
 Erstellen einer untergeordneten Eigenschaft:
 
-1. Wählen Sie in einem Formulardatenmodell ein Datenmodellobjekt aus und tippen Sie auf **[!UICONTROL Untergeordnete Eigenschaft erstellen]**.
+1. Wählen Sie in einem Formulardatenmodell ein Datenmodellobjekt aus und wählen Sie **[!UICONTROL Untergeordnete Eigenschaft erstellen]**.
 1. Geben Sie im Dialogfeld **[!UICONTROL Untergeordnete Eigenschaft erstellen]** einen Namen und einen Datentyp für die Eigenschaft in den Feldern **[!UICONTROL Name]** und **[!UICONTROL Typ]** ein. Sie können optional einen Titel und eine Beschreibung für die Eigenschaft angeben.
 1. Aktivieren Sie „Berechnet“, wenn die Eigenschaft eine berechnete Eigenschaft ist. Der Wert einer berechneten Eigenschaft wird basierend auf einer Regel oder einem Ausdruck ausgewertet. Weitere Informationen finden Sie unter [Eigenschaften bearbeiten](#edit-properties).
 1. Wenn das Datenmodellobjekt an eine Datenquelle gebunden ist, wird die hinzugefügte untergeordnete Eigenschaft automatisch an die Eigenschaft des übergeordneten Datenmodellobjekts mit demselben Namen und Datentyp gebunden.
 
-   Um eine untergeordnete Eigenschaft manuell mit einer Datenmodellobjekteigenschaft zu verknüpfen, tippen Sie auf das Symbol zum Durchsuchen neben dem Feld **[!UICONTROL Bindungsverweis]**. Im Dialogfeld **[!UICONTROL Objekt auswählen]** werden alle Eigenschaften des übergeordneten Datenmodellobjekts aufgelistet. Wählen Sie eine Eigenschaft aus, mit der Sie eine Verknüpfung erstellen möchten, und tippen Sie auf das Häkchensymbol. Beachten Sie, dass Sie nur eine Eigenschaft des gleichen Datentyps wie die untergeordnete Eigenschaft auswählen können.
+   Um eine untergeordnete Eigenschaft manuell mit einer Datenmodellobjekteigenschaft zu verknüpfen, wählen Sie das Symbol &quot;Durchsuchen&quot;neben dem **[!UICONTROL Bindungsverweis]** -Feld. Im Dialogfeld **[!UICONTROL Objekt auswählen]** werden alle Eigenschaften des übergeordneten Datenmodellobjekts aufgelistet. Wählen Sie eine Eigenschaft aus, an die gebunden werden soll, und wählen Sie das Häkchensymbol aus. Beachten Sie, dass Sie nur eine Eigenschaft des gleichen Datentyps wie die untergeordnete Eigenschaft auswählen können.
 
-1. Tippen Sie auf **[!UICONTROL Fertig]**, um die untergeordnete Eigenschaft zu speichern, und dann auf **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern. Die untergeordnete Eigenschaft wird jetzt dem Datenmodellobjekt hinzugefügt.
+1. Auswählen **[!UICONTROL Fertig]** , um die untergeordnete Eigenschaft zu speichern, und wählen Sie **[!UICONTROL Speichern]** , um das Formulardatenmodell zu speichern. Die untergeordnete Eigenschaft wird jetzt dem Datenmodellobjekt hinzugefügt.
 
 Nachdem Sie Datenmodellobjekte und -eigenschaften erstellt haben, können Sie weiterhin adaptive Formulare und interaktive Kommunikation basierend auf dem Formulardatenmodell erstellen. Wenn später Datenquellen verfügbar und konfiguriert sind, können Sie das Formulardatenmodell mit Datenquellen verknüpfen. Die Bindung wird automatisch in zugeordneten adaptiven Formularen und interaktiver Kommunikation aktualisiert. Weitere Informationen zum Erstellen adaptiver Formulare und interaktiver Kommunikationen mithilfe des Formulardatenmodells finden Sie unter [Verwenden des Formulardatenmodells](/help/forms/using/using-form-data-model.md).
 
@@ -124,13 +124,13 @@ Nachdem Sie Datenmodellobjekte und -eigenschaften erstellt haben, können Sie we
 Wenn die Datenquellen, die Sie in das Formulardatenmodell integrieren möchten, verfügbar sind, können Sie sie dem Formulardatenmodell hinzufügen, wie in [Aktualisieren von Datenquellen](/help/forms/using/create-form-data-models.md#update) beschrieben. Führen Sie dann die folgenden Schritte aus, um die ungebundenen Datenmodellobjekte und -eigenschaften zu binden:
 
 1. Wählen Sie im Formulardatenmodell die ungebundene Datenquelle aus, die Sie an eine Datenquelle binden möchten.
-1. Tippen Sie auf **[!UICONTROL Eigenschaften bearbeiten]**.
-1. Tippen Sie im Bedienfeld **[!UICONTROL Eigenschaften bearbeiten]** auf das Suchsymbol neben dem Feld **[!UICONTROL Bindung]**. Es öffnet sich das Dialogfeld **[!UICONTROL Objekt auswählen]**, in dem Datenquellen aufgelistet sind, die im Formulardatenmodell hinzugefügt wurden.
+1. Wählen Sie **[!UICONTROL Eigenschaften bearbeiten]** aus.
+1. Im **[!UICONTROL Eigenschaften bearbeiten]** das Symbol &quot;Durchsuchen&quot;neben dem **[!UICONTROL Bindung]** -Feld. Es öffnet sich das Dialogfeld **[!UICONTROL Objekt auswählen]**, in dem Datenquellen aufgelistet sind, die im Formulardatenmodell hinzugefügt wurden.
 
    ![select-object](assets/select-object.png)
 
-1. Erweitern Sie die Datenquellenstruktur, wählen Sie ein Datenmodellobjekt aus, an das Sie eine Bindung herstellen möchten, und tippen Sie auf das Häkchensymbol.
-1. Tippen Sie auf **[!UICONTROL Fertig]**, um die Eigenschaften zu speichern, und dann auf **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern. Das Datenmodellobjekt ist jetzt an eine Datenquelle gebunden. Beachten Sie, dass das Datenmodellobjekt nicht mehr als ungebunden markiert ist.
+1. Erweitern Sie die Datenquellenstruktur, wählen Sie ein Datenmodellobjekt aus, an das Sie eine Bindung vornehmen möchten, und wählen Sie das Häkchen-Symbol aus.
+1. Auswählen **[!UICONTROL Fertig]** , um die Eigenschaften zu speichern, und wählen Sie dann **[!UICONTROL Speichern]** , um das Formulardatenmodell zu speichern. Das Datenmodellobjekt ist jetzt an eine Datenquelle gebunden. Beachten Sie, dass das Datenmodellobjekt nicht mehr als ungebunden markiert ist.
 
    ![bound-model-object](assets/bound-model-object.png)
 
@@ -138,7 +138,7 @@ Wenn die Datenquellen, die Sie in das Formulardatenmodell integrieren möchten, 
 
 Um Daten für ein Datenmodellobjekt zu lesen und zu schreiben, gehen Sie folgendermaßen vor, um Lese- und Schreib-Services zu konfigurieren:
 
-1. Aktivieren Sie das Kontrollkästchen am oberen Rand eines Datenmodellobjekts, um es auszuwählen, und tippen Sie auf **[!UICONTROL Eigenschaften bearbeiten]**.
+1. Aktivieren Sie das Kontrollkästchen oben in einem Datenmodellobjekt, um es auszuwählen, und wählen Sie es aus. **[!UICONTROL Eigenschaften bearbeiten]**.
 
    ![edit-properties](assets/edit-properties.png)
 
@@ -167,8 +167,8 @@ Um Daten für ein Datenmodellobjekt zu lesen und zu schreiben, gehen Sie folgend
 
    Für die Mitarbeiterdatenquelle konfigurierte Lese- und Schreib-Services
 
-1. Tippen Sie auf ![aem_6_3_edit](assets/aem_6_3_edit.png) für das Argument des Lese-Service, um dieses [an ein Benutzerprofilattribut, ein Anforderungsattribut oder einen Literalwert zu binden](#bindargument), und geben Sie den Bindungswert an.
-1. Tippen Sie auf **[!UICONTROL Fertig]**, um das Argument zu speichern, dann auf **[!UICONTROL Fertig]**, um die Eigenschaften zu speichern, und schließlich auf **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern.
+1. Auswählen ![aem_6_3_edit](assets/aem_6_3_edit.png) für das Argument des Lesedienstes auf [das Argument an ein Benutzerprofilattribut, Anfrageattribut oder Literalwert binden](#bindargument) und geben Sie den Bindungswert an.
+1. Auswählen **[!UICONTROL Fertig]** , um das Argument zu speichern, **[!UICONTROL Fertig]** speichern Sie die Eigenschaften und dann **[!UICONTROL Speichern]** , um das Formulardatenmodell zu speichern.
 
 ### Binden von Argumenten des Lese-Service {#bindargument}
 
@@ -246,7 +246,7 @@ Wenn Sie verknüpfte Datenmodellobjekte in einer Datenquelle einem Formulardaten
 
 So fügen Sie eine Verknüpfung hinzu:
 
-1. Markieren Sie das Kontrollkästchen am oberen Rand eines Datenmodellobjekts, um es auszuwählen, und tippen Sie auf **[!UICONTROL Verknüpfung hinzufügen]**. Das Dialogfeld „Verknüpfung hinzufügen“ wird geöffnet.
+1. Aktivieren Sie das Kontrollkästchen oben in einem Datenmodellobjekt, um es auszuwählen, und wählen Sie es aus. **[!UICONTROL Verknüpfung hinzufügen]**. Das Dialogfeld „Verknüpfung hinzufügen“ wird geöffnet.
 
    ![add-associated](assets/add-association.png)
 
@@ -279,16 +279,16 @@ So fügen Sie eine Verknüpfung hinzu:
 
    Aktualisiertes Argument und Bindung
 
-   Tippen Sie auf **[!UICONTROL Fertig]**, um das Argument zu speichern.
+   Auswählen **[!UICONTROL Fertig]** , um das -Argument zu speichern.
 
-1. Tippen Sie auf **[!UICONTROL Fertig]**, um die Verknüpfung zu speichern, und dann auf **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern.
+1. Auswählen **[!UICONTROL Fertig]** zum Speichern der Zuordnung und dann **[!UICONTROL Speichern]** , um das Formulardatenmodell zu speichern.
 1. Wiederholen Sie die Schritte, um nach Bedarf weitere Verknüpfungen zu erstellen.
 
 >[!NOTE]
 >
 >Die hinzugefügte Verknüpfung wird im Objektfeld des Datenmodells mit dem angegebenen Titel und einer Linie angezeigt, die die verknüpften Datenmodellobjekte verbindet.
 >
->Sie können eine Verknüpfung bearbeiten, indem Sie das Kontrollkästchen neben der Verknüpfung auswählen und auf **[!UICONTROL Verknüpfung bearbeiten]** tippen.
+>Sie können eine Zuordnung bearbeiten, indem Sie das entsprechende Kontrollkästchen aktivieren und **[!UICONTROL Verknüpfung bearbeiten]**.
 
 ![added-association](assets/added-association.png)
 
@@ -299,7 +299,7 @@ Sie können Eigenschaften von Datenmodellobjekten, Eigenschaften sowie m Formula
 So bearbeiten Sie Eigenschaften:
 
 1. Aktivieren Sie im Formulardatenmodell das Kontrollkästchen neben einem Datenmodellobjekt, einer Eigenschaft oder einem Service.
-1. Tippen Sie auf **[!UICONTROL Eigenschaften bearbeiten]**. Der Bereich **[!UICONTROL Eigenschaften bearbeiten]** für das Modellobjekt, die Eigenschaft oder den Service in der Auswahl wird geöffnet.
+1. Auswählen **[!UICONTROL Eigenschaften bearbeiten]**. Der Bereich **[!UICONTROL Eigenschaften bearbeiten]** für das Modellobjekt, die Eigenschaft oder den Service in der Auswahl wird geöffnet.
 
    * **Datenmodellobjekt**: Geben Sie die Lese- und Schreib-Services an und bearbeiten Sie Argumente.
    * **Eigenschaft**: Geben Sie den Typ, den Untertyp und das Format für die Eigenschaft an. Sie können auch angeben, ob die ausgewählte Eigenschaft der Primärschlüssel für das Datenmodellobjekt ist.
@@ -309,7 +309,7 @@ So bearbeiten Sie Eigenschaften:
 
    Dialog „Eigenschaften bearbeiten“ für einen Get-Service
 
-1. Tippen Sie auf **[!UICONTROL Fertig]**, um die Eigenschaften zu speichern, und dann auf **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern.
+1. Auswählen **[!UICONTROL Fertig]** zum Speichern von Eigenschaften und dann **[!UICONTROL Speichern]** , um das Formulardatenmodell zu speichern.
 
 ### Erstellen berechneter Eigenschaften {#computed}
 
@@ -318,7 +318,7 @@ Eine berechnete Eigenschaft ist diejenige, deren Wert anhand einer Regel oder ei
 Beispielsweise können Sie eine berechnete Eigenschaft **FullName** erstellen, deren Wert ein Ergebnis der Verkettung der vorhandenen Eigenschaften **FirstName** und **LastName** ist. Gehen Sie dazu wie folgt vor:
 
 1. Erstellen einer Eigenschaft mit dem Namen `FullName` deren Datentyp &quot;String&quot;ist.
-1. Aktivieren Sie **[!UICONTROL Berechnet]** und tippen Sie auf **[!UICONTROL Fertig]**, um die Eigenschaft zu erstellen.
+1. Aktivieren **[!UICONTROL Berechnet]** und wählen **[!UICONTROL Fertig]** , um die Eigenschaft zu erstellen.
 
    ![computed](assets/computed.png)
 
@@ -326,18 +326,18 @@ Beispielsweise können Sie eine berechnete Eigenschaft **FullName** erstellen, d
 
    ![calculate-prop](assets/computed-prop.png)
 
-1. Wählen Sie die FullName-Eigenschaft aus und tippen Sie auf **[!UICONTROL Regel bearbeiten]**. Ein Regeleditor-Fenster wird geöffnet.
-1. Tippen Sie im Fenster des Regeleditors auf **[!UICONTROL Erstellen]**. Ein Regelfenster **[!UICONTROL Wert festlegen]** wird geöffnet.
+1. Wählen Sie die FullName-Eigenschaft aus und wählen Sie **[!UICONTROL Regel bearbeiten]**. Ein Regeleditor-Fenster wird geöffnet.
+1. Wählen Sie im Fenster des Regeleditors die Option **[!UICONTROL Erstellen]**. Ein Regelfenster **[!UICONTROL Wert festlegen]** wird geöffnet.
 
    Wählen Sie in der Dropdownliste **[!UICONTROL Mathematischer Ausdruck]**. Weitere verfügbare Optionen sind **[!UICONTROL Formulardatenmodellobjekt]** und **[!UICONTROL Zeichenfolge]**.
 
 1. Wählen Sie im mathematischen Ausdruck **[!UICONTROL FirstName]** und **[!UICONTROL LastName]** im ersten bzw. zweiten Objekt aus. Wählen Sie **[!UICONTROL plus]** als Operator.
 
-   Tippen Sie auf **[!UICONTROL Fertig]** und dann auf **[!UICONTROL Schließen]**, um das Regeleditorfenster zu schließen. Die Regel sieht ähnlich der Folgenden aus:
+   Auswählen **[!UICONTROL Fertig]** und wählen Sie **[!UICONTROL Schließen]** , um das Fenster des Regeleditors zu schließen. Die Regel sieht ähnlich der Folgenden aus:
 
    ![rule](assets/rule.png)
 
-1. Tippen Sie im Formulardatenmodell auf **[!UICONTROL Speichern]**. Die berechnete Eigenschaft ist konfiguriert.
+1. Wählen Sie im Formulardatenmodell **[!UICONTROL Speichern]**. Die berechnete Eigenschaft ist konfiguriert.
 
 ## Arbeiten mit Navigationseigenschaften von OData-Services {#work-with-navigation-properties-of-odata-services}
 
@@ -399,11 +399,11 @@ Mit dem Formulardatenmodell-Editor können Sie Beispieldaten für alle Datenmode
 
 Führen Sie die folgenden Schritte aus, um Beispieldaten zu generieren, zu bearbeiten und zu speichern:
 
-1. Öffnen Sie ein Formulardatenmodell und tippen Sie auf **[!UICONTROL Beispieldaten bearbeiten]**. Es werden Beispieldaten im Fenster „Beispieldaten bearbeiten“ generiert und angezeigt.
+1. Öffnen Sie ein Formulardatenmodell und wählen Sie **[!UICONTROL Beispieldaten bearbeiten]**. Es werden Beispieldaten im Fenster „Beispieldaten bearbeiten“ generiert und angezeigt.
 
    ![Generieren von Musterdaten](assets/form_data_model_generate_sample_data_new.png)
 
-1. Bearbeiten Sie im Fenster **[!UICONTROL Beispieldaten bearbeiten]** die Daten nach Bedarf und tippen Sie auf **[!UICONTROL Speichern]**.
+1. In **[!UICONTROL Beispieldaten bearbeiten]** , bearbeiten Sie die Daten nach Bedarf und wählen Sie **[!UICONTROL Speichern]**.
 
 Als Nächstes können Sie die Beispieldaten verwenden, um interaktive Kommunikation basierend auf dem Formulardatenmodell vorab auszufüllen und zu testen. Weitere Informationen finden Sie unter [Verwenden eines Formulardatenmodells](/help/forms/using/using-form-data-model.md).
 
@@ -411,7 +411,7 @@ Als Nächstes können Sie die Beispieldaten verwenden, um interaktive Kommunikat
 
 Ihr Formulardatenmodell ist konfiguriert. Bevor Sie es jedoch verwenden, sollten Sie testen, ob die konfigurierten Datenmodellobjekte und Dienste erwartungsgemäß funktionieren. Testen von Datenmodellobjekten und Services
 
-1. Wählen Sie ein Datenmodellobjekt oder einen Dienst im Formulardatenmodell aus und tippen Sie auf **[!UICONTROL Testmodell-Objekt]** oder **[!UICONTROL Testdienst]**, bzw.
+1. Wählen Sie ein Datenmodellobjekt oder einen Dienst im Formulardatenmodell aus und wählen Sie **[!UICONTROL Testmodell-Objekt]** oder **[!UICONTROL Testdienst]**, bzw.
 
    Das Fenster „Formulardatenmodell testen“ wird geöffnet.
 
@@ -419,7 +419,7 @@ Ihr Formulardatenmodell ist konfiguriert. Bevor Sie es jedoch verwenden, sollten
 
 1. Wählen Sie im Fenster Formulardatenmodell testen unter „Eingabe“ das zu testende Datenmodellobjekt bzw. den Service.
 
-1. Geben Sie einen Argumentwert im Testcode an und tippen Sie auf **[!UICONTROL Test]**. Ist der Test erfolgreich, wird die Ausgabe im Bereich „Ausgabe“ angezeigt.
+1. Geben Sie einen Argumentwert im Testcode an und wählen Sie **[!UICONTROL Test]**. Ist der Test erfolgreich, wird die Ausgabe im Bereich „Ausgabe“ angezeigt.
 
    ![Testergebnisse](assets/test_results_form_data_model_new.png)
 

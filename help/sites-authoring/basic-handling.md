@@ -7,7 +7,7 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '2963'
 ht-degree: 58%
@@ -28,7 +28,7 @@ ht-degree: 58%
 
 ### Touch-optimierte Benutzeroberfläche {#a-touch-enabled-ui}
 
-Die Benutzeroberfläche für AEM wurde für Touchscreens optimiert. Eine Touch-optimierte Benutzeroberfläche ermöglicht es Ihnen, mithilfe von Gesten wie Tippen, Berühren und Halten und Wischen mit der Software zu interagieren. Im Gegensatz dazu werden auf herkömmlichen Desktop-Benutzeroberflächen Mausaktionen verwendet, wie z. B. Klicken, Doppelklicken, mit der rechten Maustaste klicken und Bewegen der Maus über ein Objekt.
+Die Benutzeroberfläche für AEM wurde für Touchscreens optimiert. Eine Touch-optimierte Benutzeroberfläche ermöglicht es Ihnen, mithilfe von Gesten wie &quot;Auswählen&quot;, &quot;Berühren und Halten&quot;und &quot;Wischen&quot;mit der Software zu interagieren. Im Gegensatz dazu werden auf herkömmlichen Desktop-Benutzeroberflächen Mausaktionen verwendet, wie z. B. Klicken, Doppelklicken, mit der rechten Maustaste klicken und Bewegen der Maus über ein Objekt.
 
 Da die AEM-Benutzeroberfläche Touch-optimiert ist, können Sie auf Ihren Touch-Geräten (z. B. einem Smartphone oder Tablet) Touch-Gesten und auf einem traditionellen Desktop-Gerät Mausaktionen nutzen.
 
@@ -324,12 +324,12 @@ Die Auswahl einer bestimmten Ressource hängt von einer Kombination aus Ansicht 
    <td>
     <ul>
      <li>Desktop: <br /> Klicken Sie auf die Miniatur</li>
-     <li>Mobilgeräte:<br /> Tippen Sie auf die Miniaturansicht</li>
+     <li>Mobilgeräte:<br /> Auswählen der Miniaturansicht</li>
     </ul> </td>
    <td>
     <ul>
      <li>Desktop: <br /> Klicken Sie auf die Miniatur</li>
-     <li>Mobilgeräte:<br /> Tippen Sie auf die Miniaturansicht</li>
+     <li>Mobilgeräte:<br /> Auswählen der Miniaturansicht</li>
     </ul> </td>
   </tr>
   <tr>
@@ -337,12 +337,12 @@ Die Auswahl einer bestimmten Ressource hängt von einer Kombination aus Ansicht 
    <td>
     <ul>
      <li>Desktop:<br /> Bewegen Sie den Mauszeiger und verwenden Sie dann die Häkchen-Schnellaktion</li>
-     <li>Mobilgeräte:<br /> Tippen und halten Sie die Karte</li>
+     <li>Mobilgeräte:<br /> Auswählen und Halten der Karte</li>
     </ul> </td>
    <td>
     <ul>
      <li>Desktop:<br /> Klicken Sie auf die Karte</li>
-     <li>Mobilgeräte:<br /> Tippen Sie auf die Karte</li>
+     <li>Mobilgeräte:<br /> Auswählen der Karte</li>
     </ul> </td>
   </tr>
   <tr>
@@ -350,12 +350,12 @@ Die Auswahl einer bestimmten Ressource hängt von einer Kombination aus Ansicht 
    <td>
     <ul>
      <li>Desktop: <br /> Klicken Sie auf die Miniatur</li>
-     <li>Mobilgeräte:<br /> Tippen Sie auf die Miniaturansicht</li>
+     <li>Mobilgeräte:<br /> Auswählen der Miniaturansicht</li>
     </ul> </td>
    <td>
     <ul>
      <li>Desktop: <br /> Klicken Sie auf die Miniatur</li>
-     <li>Mobilgeräte:<br /> Tippen Sie auf die Miniaturansicht</li>
+     <li>Mobilgeräte:<br /> Auswählen der Miniaturansicht</li>
     </ul> </td>
   </tr>
  </tbody>

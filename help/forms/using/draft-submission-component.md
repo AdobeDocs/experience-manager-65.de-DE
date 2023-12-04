@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: ad71b423-02e1-4476-9c7c-f832cea6b0a6
 docset: aem65
 exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 77%
+source-wordcount: '744'
+ht-degree: 75%
 
 ---
 
@@ -32,11 +32,11 @@ Die Entwurfsfunktion ist standardmäßig aktiviert. Klickt ein Benutzer auf **Sp
 Führen Sie die folgenden Schritte aus, um eine Komponente &quot;Drafts &amp; Submissions&quot;hinzuzufügen und zu konfigurieren:
 
 1. Ziehen Sie die **Entwürfe und Übermittlungen** -Komponente unter Document Services-Kategorie im Komponenten-Browser auf Ihrer Seite.
-1. Tippen Sie auf die Komponente und dann auf ![settings_icon](assets/settings_icon.png), um das Dialogfeld „Bearbeiten“ für die Komponente zu öffnen.
+1. Wählen Sie die Komponente aus und wählen Sie dann ![settings_icon](assets/settings_icon.png) , um das Dialogfeld Bearbeiten für die Komponente zu öffnen.
 
    ![Komponente „Drafts &amp; Submissions“](assets/drafts-submissions-edit.png)
 
-1. Geben Sie im Dialogfeld &quot;Bearbeiten&quot;die folgenden Details an und tippen Sie auf **Fertig** , um die Einstellungen zu speichern.
+1. Geben Sie im Dialogfeld &quot;Bearbeiten&quot;die folgenden Details an und wählen Sie **Fertig** , um die Einstellungen zu speichern.
 
 <table>
  <tbody>

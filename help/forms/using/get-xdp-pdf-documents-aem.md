@@ -11,7 +11,7 @@ discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 role: Admin
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 35%
@@ -38,7 +38,7 @@ Sie können die unterstützten Assettypen einzeln oder als ZIP-Archiv hochladen.
 
 1. Melden Sie sich bei der Benutzeroberfläche von AEM Forms an, indem Sie auf `https://'[server]:[port]'/aem/forms.html` zugreifen.
 1. Navigieren Sie zu dem Ordner, in den Sie das Formular oder den Ordner mit Formularen hochladen möchten.
-1. Tippen Sie in der Symbolleiste &quot;Aktionen&quot;auf **Erstellen > Datei-Upload**.
+1. Wählen Sie in der Symbolleiste &quot;Aktionen&quot;die Option **Erstellen > Datei-Upload**.
 
    ![Dateien von der Option „Lokaler Speicher“ unter „Erstellen“](assets/step.png)
 

@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 exl-id: 171754a2-1ba5-42dc-b6d2-3d730807cc31
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2448'
-ht-degree: 46%
+source-wordcount: '2410'
+ht-degree: 42%
 
 ---
 
@@ -58,9 +58,9 @@ Formular in der AEM Forms-App synchronisieren
 1. Wählen Sie in der Autoreninstanz ein Formular aus und klicken Sie auf **[!UICONTROL Eigenschaften anzeigen]**.
 
 1. Klicken Sie auf der Eigenschaftenseite auf **[!UICONTROL Erweitert]**.
-1. Aktivieren Sie unter „Erweitert“ die Option **[!UICONTROL Mit AEM Forms-App synchronisieren]** und tippen Sie auf **[!UICONTROL Speichern]**.
+1. Aktivieren Sie unter &quot;Erweitert&quot;die Option: **[!UICONTROL Mit AEM Forms App synchronisieren]** und wählen **[!UICONTROL Speichern]**.
 
-Wenn das Formular veröffentlicht wird, synchronisiert die App mit dem Server und ruft das Formular ab. Um mehrere Formulare zu synchronisieren, wählen Sie in der Autoreninstanz mehrere Formulare in Forms Manager aus und tippen Sie auf **[!UICONTROL Mit AEM Forms-App synchronisieren]**.
+Wenn das Formular veröffentlicht wird, synchronisiert die App mit dem Server und ruft das Formular ab. Um mehrere Formulare zu synchronisieren, wählen Sie in der Autoreninstanz mehrere Formulare im Forms Manager aus und wählen Sie **[!UICONTROL Mit AEM Forms App synchronisieren]**.
 
 ## Mobilgeräteunterstützung {#mobile-device-support}
 
@@ -183,11 +183,11 @@ Der Quell-Code für die Mobile App von AEM Forms kann aus der Datei `adobe-lc-mo
 Um die AEM Forms App-Quelle zu erhalten, führen Sie die folgenden Schritte aus:
 
 1. Öffnen Sie [Software Distribution](https://experience.adobe.com/downloads). Zum Anmelden bei Software Distribution benötigen Sie eine Adobe ID.
-1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]**.
+1. Auswählen **[!UICONTROL Adobe Experience Manager]** im Kopfzeilenmenü verfügbar.
 1. Im Abschnitt **[!UICONTROL Filter]**:
    1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** aus.
    2. Wählen Sie die Version aus und geben Sie sie für das Paket ein. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
-1. Tippen Sie auf den für Ihr Betriebssystem zutreffenden Paketnamen, wählen Sie **[!UICONTROL EULA-Bedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Herunterladen]**.
+1. Wählen Sie den für Ihr Betriebssystem zutreffenden Paketnamen aus und wählen Sie **[!UICONTROL EULA-Bedingungen akzeptieren]** und wählen Sie **[!UICONTROL Herunterladen]**.
 1. Öffnen Sie [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 

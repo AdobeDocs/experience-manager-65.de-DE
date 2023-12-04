@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '2887'
-ht-degree: 53%
+ht-degree: 52%
 
 ---
 
@@ -121,8 +121,8 @@ Diese Aufgabe umfasst die Zuweisung von Workflow-Schritten an Benutzer basierend
 
 So konfigurieren Sie die **Produkt-Fotoshooting** workflow:
 
-1. Navigieren Sie zu **Werkzeuge** > **Workflows** und tippen Sie anschließend auf den Bereich **Modelle**, um die Seite **Workflow-Modelle** zu öffnen.
-1. Wählen Sie den Workflow **Produkt-Fotoshooting** aus und tippen Sie auf der Symbolleiste auf das Symbol **Bearbeiten**, um den Workflow im Bearbeitungsmodus zu öffnen.
+1. Navigieren Sie zu **Instrumente** > **Workflows** und wählen Sie anschließend die **Modelle** -Kachel zum Öffnen der **Workflow-Modelle** Seite.
+1. Wählen Sie die **Produkt-Fotoshooting** und wählen Sie die **Bearbeiten** in der Symbolleiste, um sie im Bearbeitungsmodus zu öffnen.
 
    ![Modell für Produkt-Fotoshooting](assets/chlimage_1-138a.png)
 

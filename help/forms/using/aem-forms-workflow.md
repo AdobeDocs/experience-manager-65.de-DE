@@ -5,10 +5,10 @@ topic-tags: publish, document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3679'
-ht-degree: 57%
+source-wordcount: '3667'
+ht-degree: 73%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 57%
 
 ![hero-image](do-not-localize/header.png)
 
-Unternehmen erfassen Daten aus Hunderten und Tausenden von Formularen, verschiedenen Back-End-Systemen sowie Online- oder Offline-Datenquellen. Sie verfügen außerdem über einen dynamischen Satz von Benutzern, die Entscheidungen über die Daten treffen können, was iterative Prüfungs- und Genehmigungsprozesse erfordert.
+Unternehmen erfassen Daten aus Hunderten und Tausenden von Formularen, verschiedenen Backend-Systemen sowie Online- oder Offline-Datenquellen. Und es ist eine dynamische Gruppe von Benutzenden vorhanden, die Entscheidungen bezüglich der Daten treffen, was iterative Prüfungs- und Genehmigungsprozesse beinhaltet.
 
-Große Unternehmen und Unternehmen haben neben Überprüfungs- und Genehmigungs-Workflows für interne und externe Zielgruppen wiederholte Aufgaben. Konvertieren eines PDF-Dokuments in ein anderes Format. Wenn diese Aufgaben manuell durchgeführt werden, benötigen sie viel Zeit und Ressourcen. Unternehmen müssen außerdem ein Dokument digital signieren und Formulardaten archivieren, um sie später in vordefinierten Formaten verwenden zu können.
+In großen Organisationen und Unternehmen fallen neben Prüfungs- und Genehmigungs-Workflows für interne und externe Zielgruppen wiederholte Aufgaben an. Dazu gehört beispielsweise das Konvertieren von PDF-Dokumenten in andere Formate. Wenn diese Aufgaben manuell durchgeführt werden, benötigen sie viel Zeit und Ressourcen. Unternehmen müssen darüber hinaus entsprechend gesetzlichen Anforderungen Dokumente digital signieren und Formulardaten zur späteren Verwendung in vordefinierten Formaten archivieren.
 
 ## Einführung in den formularzentrierten Workflow in OSGi {#introduction-to-forms-centric-workflow-on-osgi}
 
-Sie können AEM Workflows verwenden, um schnell adaptive formularbasierte Workflows zu erstellen. Diese Workflows können für Überprüfungen und Genehmigungen, Geschäftsprozessabläufe, den Start von Document Services, die Integration in den Adobe Sign-Signatur-Workflow und ähnliche Vorgänge verwendet werden. Beispiel: Verarbeitung von Kreditkartenanträgen, Workflows zur Genehmigung von Arbeitnehmerurlaub, Speichern eines Formulars als PDF-Dokument. Darüber hinaus können diese Workflows innerhalb eines Unternehmens oder über eine Netzwerk-Firewall verwendet werden.
+Sie können AEM Workflows verwenden, um schnell adaptive formularbasierte Workflows zu erstellen. Diese Workflows können für Prüfungen und Genehmigungen, Geschäftsprozessabläufe, zum Starten von Dokumentendiensten, zur Integration in Signatur-Workflows mit Adobe Sign und für ähnliche Vorgänge verwendet werden. Dazu gehören beispielsweise die Verarbeitung von Kreditkartenanträgen, Workflows für die Genehmigung von Urlaub für Mitarbeitende oder das Speichern von Formularen als PDF-Dokument. Darüber hinaus können diese Workflows innerhalb eines Unternehmens verwendet werden oder auch eine Netzwerk-Firewall passieren.
 
-Mit formularzentrierten Workflows in OSGi können Sie schnell Workflows für verschiedene Aufgaben auf dem OSGi-Stapel erstellen und bereitstellen, ohne die komplette Prozessverwaltungsfunktion auf dem JEE-Stapel zu installieren. Die Entwicklung und Verwaltung von Workflows nutzt die bekannten Funktionen AEM Workflows und AEM Posteingang. Workflows bilden die Grundlage für die Automatisierung realer Geschäftsprozesse, an denen mehrere Softwaresysteme, Netzwerke, Abteilungen und sogar Unternehmen beteiligt sind.
+Mit formularzentrierten Workflows in OSGi können Sie schnell Workflows für verschiedene Aufgaben auf dem OSGi-Stapel erstellen und bereitstellen, ohne die komplette Prozessverwaltungsfunktion auf dem JEE-Stapel zu installieren. Die Entwicklung und Verwaltung von Workflows nutzt die bekannten Funktionen von AEM-Workflows und dem AEM-Posteingang. Workflows bilden die Grundlage für die Automatisierung realer Geschäftsprozesse, an denen mehrere Softwaresysteme, Netzwerke, Abteilungen und sogar Unternehmen beteiligt sind.
 
 Nach der Einrichtung können diese Workflows manuell ausgelöst werden, um einen definierten Prozess abzuschließen oder programmgesteuert auszuführen, wenn Benutzer ein Formular senden oder [Correspondence Management](/help/forms/using/cm-overview.md) Schreiben. Mit diesen verbesserten AEM-Workflow-Funktionen bietet AEM Forms zwei unterschiedliche, aber ähnliche Funktionen. Im Rahmen Ihrer Bereitstellungsstrategie müssen Sie entscheiden, welche Lösung für Sie geeignet ist. Hier sehen Sie die formularzentrierten AEM-Workflows unter OSGi und Process Management unter JEE im [Vergleich](capabilities-osgi-jee-workflows.md). Informationen zur Bereitstellungstopologie finden Sie darüber hinaus unter [Architektur und Bereitstellungstopologien für AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
@@ -38,16 +38,16 @@ Das folgende Diagramm zeigt den kompletten Ablauf zum Erstellen, Ausführen und 
 
 ## Bevor Sie beginnen {#before-you-start}
 
-* Ein Workflow ist eine Darstellung eines realen Geschäftsprozesses. Halten Sie Ihren realen Geschäftsprozess und die Liste der Teilnehmer des Geschäftsprozesses bereit. Außerdem sollten Sie die Begleitmaterialien (adaptive Formulare, PDF-Dokumente und mehr) vor der Erstellung eines Workflows aufbewahren.
-* Ein Workflow kann mehrere Phasen aufweisen. Diese Schritte werden im AEM Posteingang angezeigt und helfen, den Fortschritt des Workflows zu melden. Teilen Sie Ihren Geschäftsprozess in logische Phasen auf.
-* Sie können den Schritt &quot;Aufgabe zuweisen&quot;AEM Workflows konfigurieren, um E-Mail-Benachrichtigungen an Benutzer oder Bevollmächtigte zu senden. Also, [E-Mail-Benachrichtigungen aktivieren](#configure-email-service).
-* Ein Workflow kann auch Adobe signieren für digitale Signaturen verwenden. Wenn Sie planen, Adobe Sign in einem Workflow zu verwenden, wird die [Adobe Sign für AEM Forms konfigurieren](../../forms/using/adobe-sign-integration-adaptive-forms.md) vor der Verwendung in einem Workflow.
+* Ein Workflow ist eine Darstellung eines realen Geschäftsprozesses. Halten Sie Ihren realen Geschäftsprozess und eine Liste der Teilnehmerinnen und Teilnehmer des Geschäftsprozesses bereit. Außerdem sollten Sie die Begleitmaterialien (adaptive Formulare, PDF-Dokumente und mehr) vor der Erstellung eines Workflows aufbewahren.
+* Ein Workflow kann mehrere Phasen haben. Diese Phasen werden im AEM-Posteingang angezeigt und informieren über den Fortschritt des Workflows. Teilen Sie Ihren Geschäftsprozess in logische Phasen ein.
+* Sie können den Schritt „Aufgabe zuweisen“ in AEM-Workflows so konfigurieren, dass E-Mail-Benachrichtigungen an die Benutzenden oder Bevollmächtigten gesendet werden. Sie sollten daher [E-Mail-Benachrichtigungen aktivieren](#configure-email-service).
+* Ein Workflow kann darüber hinaus Adobe Sign für digitale Signaturen nutzen. Wenn Sie planen, Adobe Sign in einem Workflow zu verwenden, wird die [Adobe Sign für AEM Forms konfigurieren](../../forms/using/adobe-sign-integration-adaptive-forms.md) vor der Verwendung in einem Workflow.
 
 ## Erstellen Sie ein Workflow-Modell {#create-a-workflow-model}
 
-Ein Workflow-Modell besteht aus Logik und Fluss eines Geschäftsprozesses. Er besteht aus einer Reihe von Schritten. Diese Schritte sind AEM Komponenten. Sie können Workflow-Schritte nach Bedarf mit Parametern und Skripten erweitern, um einen größeren Funktionsumfang und mehr Kontrollmöglichkeiten zu erzielen. AEM Forms bietet einige Schritte zusätzlich zu AEM vordefinierten Schritten. Eine detaillierte Liste der AEM- und AEM Forms-Schritte finden Sie in der [Referenz zu Workflow-Schritten](/help/sites-developing/workflows-step-ref.md) und unter [Formularzentrierte Workflows in OSGi – Schritt-Referenz](../../forms/using/aem-forms-workflow.md).
+Ein Workflow-Modell besteht aus einer Logik und dem Ablauf eines Geschäftsprozesses. Er besteht aus einer Reihe von Schritten. Diese Schritte sind AEM-Komponenten. Sie können Workflow-Schritte nach Bedarf mit Parametern und Skripten erweitern, um einen größeren Funktionsumfang und mehr Kontrollmöglichkeiten zu erzielen. AEM Forms bietet einige Schritte zusätzlich zu AEM vordefinierten Schritten. Eine detaillierte Liste der AEM- und AEM Forms-Schritte finden Sie in der [Referenz zu Workflow-Schritten](/help/sites-developing/workflows-step-ref.md) und unter [Formularzentrierte Workflows in OSGi – Schritt-Referenz](../../forms/using/aem-forms-workflow.md).
 
-AEM bietet eine intuitive Benutzeroberfläche zum Erstellen eines Workflow-Modells mithilfe der bereitgestellten Workflow-Schritte. Eine schrittweise Anleitung zum Erstellen eines Workflow-Modells finden Sie unter [Erstellen von Workflow-Modellen](/help/sites-developing/workflows-models.md). Im folgenden Beispiel finden Sie eine schrittweise Anleitung zum Erstellen eines Workflow-Modells für einen Genehmigungs- und Überprüfungs-Workflow:
+AEM bietet eine intuitive Benutzeroberfläche zum Erstellen eines Workflow-Modells mithilfe der bereitgestellten Workflow-Schritte. Eine schrittweise Anleitung zum Erstellen eines Workflow-Modells finden Sie unter [Erstellen von Workflow-Modellen](/help/sites-developing/workflows-models.md). Im folgenden Beispiel finden Sie eine schrittweise Anleitung zum Erstellen eines Workflow-Modells für einen Genehmigungs- und Prüfungs-Workflow:
 
 >[!NOTE]
 >
@@ -55,20 +55,20 @@ AEM bietet eine intuitive Benutzeroberfläche zum Erstellen eines Workflow-Model
 
 ### Modell für einen Workflow zur Genehmigung und Prüfung erstellen {#create-a-model-for-an-approval-and-review-workflow}
 
-Validierungs- und Überprüfungs-Workflow sind für Aufgaben vorgesehen, die menschliches Eingreifen erfordern, um Entscheidungen zu treffen. Im folgenden Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt, der von einem Front-Office-Bankmitarbeiter ausgefüllt werden soll. Sobald der Antrag ausgefüllt ist, wird er zur Genehmigung gesendet. Der genehmigte Antrag wird später zur elektronischen Unterzeichnung mit Adobe Sign an den Antragsteller gesendet.
+Genehmigungs- und Prüfungs-Workflows sind für Aufgaben vorgesehen, die menschliches Eingreifen erfordern, um Entscheidungen zu treffen. Im folgenden Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt, der von einer oder einem Front-Office-Bankmitarbeitenden ausgefüllt werden soll. Der ausgefüllte Antrag wird zur Genehmigung gesendet. Der genehmigte Antrag wird später zur elektronischen Unterzeichnung mit Adobe Sign an den Antragsteller gesendet.
 
-Das Beispiel ist als nachstehendes Paket verfügbar. Importieren und installieren Sie das Beispiel mit dem Package Manager. Sie können auch die folgenden Schritte ausführen, um das Workflow-Modell für die Anwendung manuell zu erstellen:
+Das Beispiel ist als Paket verfügbar und ist unten angehängt. Importieren und installieren Sie das Beispiel mithilfe von Package Manager. Sie können auch die folgenden Schritte ausführen, um das Workflow-Modell für die Anwendung manuell zu erstellen:
 
-Im Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt, der von einem Front-Office-Bankmitarbeiter ausgefüllt werden soll. Nach dem Ausfüllen wird der Antrag zur Genehmigung gesendet. Später wird der genehmigte Antrag zur elektronischen Signatur mit Adobe Sign an den Kunden gesendet. Sie können das Beispiel mit dem Package Manager importieren und installieren.
+Im Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt, der von einer oder einem Front-Office-Bankmitarbeitenden ausgefüllt werden soll. Der ausgefüllte Antrag wird zur Genehmigung gesendet. Der genehmigte Antrag wird später zur elektronischen Unterzeichnung mit Adobe Sign an die Kundin bzw. den Kunden gesendet. Sie können das Beispiel mit Package Manager importieren und installieren.
 
 [Datei laden](assets/example-mortgage-loan-application.zip)
 
 1. Öffnen Sie die Workflow-Modell-Konsole für Arbeitsablaufmodelle. Die Standardeinstellung ist `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Wählen Sie **Erstellen** und dann **Modell erstellen** aus. Das Dialogfeld „Workflow-Modell hinzufügen“ wird angezeigt.
-1. Geben Sie den **Titel** und den **Namen** ein (optional). Beispiel: Hypothekenantrag. Tippen Sie auf **Fertig**.
-1. Wählen Sie das neu erstellte Workflow-Modell aus und tippen Sie auf **Bearbeiten**. Jetzt können Sie Workflow-Schritte hinzufügen, um Geschäftslogik zu erstellen. Wenn Sie ein Workflow-Modell neu erstellen, enthält es zunächst:
+1. Geben Sie den **Titel** und den **Namen** ein (optional). Beispiel: Hypothekenantrag. Klicken Sie auf **Fertig**.
+1. Wählen Sie das neu erstellte Workflow-Modell aus und wählen Sie **Bearbeiten**. Jetzt können Sie Workflow-Schritte hinzufügen, um Geschäftslogik zu erstellen. Wenn Sie ein Workflow-Modell neu erstellen, enthält es zunächst:
 
-   * Die Schritte: Flussstart und Flussende. Diese Schritte stellen den Anfang und das Ende des Workflows dar. Diese Schritte sind erforderlich und können nicht bearbeitet oder entfernt werden.
+   * Die Schritte Fluss-Start und Fluss-Ende. Diese stellen den Anfang und das Ende des Workflows dar. Diese Schritte sind erforderlich und können nicht bearbeitet oder entfernt werden.
    * Einen Teilnehmer-Beispielschritt mit der Bezeichnung „Schritt 1“. Dieser Schritt ist so konfiguriert, dass er dem Admin-Benutzer ein Arbeitselement zuordnet. Entfernen Sie diesen Schritt.
 
 1. Aktivieren Sie E-Mail-Benachrichtigungen. Sie können einen formularzentrierten Workflow in OSGi so konfigurieren, dass E-Mail-Benachrichtigungen an die Benutzer oder Bevollmächtigten gesendet werden. Führen Sie die folgenden Konfigurationen durch, um E-Mail-Benachrichtigungen zu aktivieren:
@@ -77,23 +77,23 @@ Im Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt, der v
    1. Öffnen Sie die Konfiguration **[!UICONTROL Day CQ Mail Service]**. Geben Sie Werte in die Felder **[!UICONTROL SMTP-Server-Hostname]**, **[!UICONTROL SMTP-Server-Anschluss]** und **[!UICONTROL Absenderadresse]** ein. Klicken Sie auf **[!UICONTROL Speichern]**.
    1. Öffnen Sie die Konfiguration **[!UICONTROL Day CQ Link Externalizer]**. Geben Sie im Feld **[!UICONTROL Domains]** den tatsächlichen Hostnamen/die IP-Adresse und die Portnummer für lokale, Authoring- und Veröffentlichungsinstanzen an. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-1. Erstellen Sie Workflow-Phasen. Ein Workflow kann mehrere Phasen aufweisen. Diese Schritte werden im AEM Posteingang angezeigt und melden den Fortschritt des Workflows.
+1. Erstellen Sie Workflow-Phasen. Ein Workflow kann mehrere Phasen haben. Diese Phasen werden im AEM-Posteingang angezeigt und informieren über den Fortschritt des Workflows.
 
-   Um einen Schritt zu definieren, tippen Sie auf das Symbol ![info-circle](assets/info-circle.png), um die Eigenschaften des Workflow-Modells zu öffnen. Öffnen Sie die Registerkarte **Schritte**, fügen Sie Schritte für das Workflow-Modell hinzu und tippen Sie auf **Speichern und Schließen**. Für einen Hypothekenantrag könnten Sie beispielsweise die folgenden Schritte erstellen: Darlehensantrag, Status des Darlehensantrags, zu signierende Dokumente und signiertes Antragsdokument.
+   Um eine Phase zu definieren, wählen Sie die ![info-circle](assets/info-circle.png) -Symbol, um die Eigenschaften des Workflow-Modells zu öffnen, öffnen Sie die **Phasen** Registerkarte, Hinzufügen von Bühnen für das Workflow-Modell und Auswählen **Speichern und schließen**. Für einen Hypothekenantrag könnten Sie beispielsweise die folgenden Schritte erstellen: Darlehensantrag, Status des Darlehensantrags, zu signierende Dokumente und signiertes Antragsdokument.
 
-1. Ziehen Sie den Workflow **Aufgaben zuweisen** per Drag-and-Drop in das Workflow-Modell. Machen Sie es zum ersten Schritt des Modells.
+1. Ziehen Sie den Workflow **Aufgaben zuweisen** per Drag-and-Drop in das Workflow-Modell. Definieren Sie ihn als ersten Schritt im Modell.
 
-   Die Komponente &quot;Aufgabe zuweisen&quot;weist die durch den Workflow erstellte Aufgabe einem Benutzer oder einer Gruppe zu. Neben der Zuweisung der Aufgabe können Sie die Komponente verwenden, um ein adaptives Formular oder eine nicht interaktive PDF für die Aufgabe anzugeben. Das adaptive Formular ist erforderlich, um Benutzereingaben zu akzeptieren, und nicht interaktive PDF oder ein schreibgeschütztes adaptives Formular wird für schreibgeschützte Workflows verwendet.
+   Die Komponente „Aufgabe zuweisen“ weist die durch den Workflow erstellte Aufgabe einer Benutzerin bzw. einem Benutzer oder einer Gruppe zu. Neben der Zuweisung der Aufgabe können Sie die Komponente verwenden, um ein adaptives Formular oder eine nicht interaktive PDF für die Aufgabe anzugeben. Das adaptive Formular ist erforderlich, um Benutzereingaben zu akzeptieren, und nicht interaktive PDF oder ein schreibgeschütztes adaptives Formular wird für schreibgeschützte Workflows verwendet.
 
    Sie können mithilfe dieses Schritts auch das Verhalten der Aufgabe steuern. Erstellen Sie beispielsweise ein automatisches Datensatzdokument, weisen Sie die Aufgabe einem bestimmten Benutzer oder einer bestimmten Gruppe zu, geben Sie den Pfad der gesendeten Daten, den Pfad der vorab auszufüllenden Daten und Standardaktionen an. Weitere Informationen zu den Optionen des Schritts „Aufgabe zuweisen“ finden Sie unter [Formularzentrierte Workflows in OSGi – Schritt-Referenz](../../forms/using/aem-forms-workflow.md).
 
    ![workflow-editor](assets/workflow-editor.png)
 
-   Konfigurieren Sie im Beispiel für den Hypothekenantrag den Schritt „Aufgabe zuweisen“ so, dass ein schreibgeschütztes adaptives Formular verwendet und das PDF-Dokument angezeigt wird, nachdem die Aufgabe abgeschlossen ist. Wählen Sie auch die Benutzergruppe aus, die zum Genehmigen des Darlehensantrags berechtigt ist. Deaktivieren Sie auf der Registerkarte **Aktionen** die Option **Senden**. Erstellen Sie eine **actionTaken**-Variable vom Datentyp „String“ (Zeichenfolge) und geben Sie die Variable als **Route-Variable** an. Beispiel: actionTaken. Fügen Sie außerdem die Routen Genehmigen und Ablehnen hinzu. Die Routen werden als separate Aktionen (Schaltflächen) im AEM Posteingang angezeigt. Der Workflow wählt eine Verzweigung basierend auf der Aktion (Schaltfläche) aus, auf die ein Benutzer tippt.
+   Konfigurieren Sie im Beispiel für den Hypothekenantrag den Schritt „Aufgabe zuweisen“ so, dass ein schreibgeschütztes adaptives Formular verwendet und das PDF-Dokument angezeigt wird, nachdem die Aufgabe abgeschlossen ist. Wählen Sie auch die Benutzergruppe aus, die zum Genehmigen des Darlehensantrags berechtigt ist. Deaktivieren Sie auf der Registerkarte **Aktionen** die Option **Senden**. Erstellen Sie eine **actionTaken**-Variable vom Datentyp „String“ (Zeichenfolge) und geben Sie die Variable als **Route-Variable** an. Ein Beispiel: actionTaken. Fügen Sie außerdem die Routen zu „Genehmigen“ und „Ablehnen“ hinzu. Die Routen werden als separate Aktionen (Schaltflächen) im AEM-Posteingang angezeigt. Der Workflow wählt eine Verzweigung basierend auf der Aktion (Schaltfläche) aus, auf die Benutzende tippen.
 
    Sie können das Beispielpaket, das zu Beginn des Abschnitts heruntergeladen werden kann, für den vollständigen Wertesatz aller Felder des Schritts &quot;Aufgabe zuweisen&quot;importieren, der beispielsweise für den Hypothekenantrag konfiguriert ist.
 
-1. Ziehen Sie die Komponente ODER-Teilung aus dem Schritt-Browser in das Workflow-Modell. Die ODER-Teilung erstellt eine Verzweigung im Workflow, nach der nur einer der beiden Zweige aktiv bleibt. Mit diesem Schritt können Sie bedingte Verarbeitungspfade in einem Workflow einrichten. Sie fügen jeder Verzweigung nach Bedarf Workflow-Schritte hinzu.
+1. Ziehen Sie die Komponente „ODER-Teilung“ per Drag-and-Drop aus der Seitenleiste in das Workflow-Modell. Die ODER-Teilung erstellt eine Verzweigung im Workflow, nach der nur einer der beiden Zweige aktiv bleibt. Mit diesem Schritt können Sie bedingte Verarbeitungspfade in einem Workflow einrichten. Sie fügen jeder Verzweigung nach Bedarf Workflow-Schritte hinzu.
 
    Sie können Routing-Ausdrücke für eine Verzweigung mithilfe einer Regeldefinition, eines ECMA-Skripts oder eines externen Skripts definieren.
 
@@ -115,11 +115,11 @@ Im Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt, der v
 
 1. Fügen Sie weitere Workflow-Schritte hinzu, um die Geschäftslogik zu erstellen.
 
-   Fügen Sie für das Hypothekenbeispiel ein Datensatzdokument generieren, zwei Aufgabenschritte zuweisen und einen Schritt zum Signieren des Dokuments zu Verzweigung 1 des Modells hinzu, wie in der Abbildung unten dargestellt. Ein Schritt „Aufgabe zuweisen“ dient zum Anzeigen und Senden **zu unterzeichnender Darlehensdokumente an den Antragsteller** und der zweite Schritt „Aufgabe zuweisen“ dient zum **Anzeigen der unterzeichneten Dokumente**. Fügen Sie außerdem Zweig 2 eine Aufgabenkomponente zuweisen hinzu. Diese Verzweigung wird aktiviert, wenn ein Benutzer im AEM-Posteingang auf „Ablehnen“ klickt.
+   Fügen Sie für das Hypothekenbeispiel ein Datensatzdokument generieren, zwei Aufgabenschritte zuweisen und einen Schritt zum Signieren des Dokuments zu Verzweigung 1 des Modells hinzu, wie in der Abbildung unten dargestellt. Ein Schritt „Aufgabe zuweisen“ dient zum Anzeigen und Senden **zu unterzeichnender Darlehensdokumente an den Antragsteller** und der zweite Schritt „Aufgabe zuweisen“ dient zum **Anzeigen der unterzeichneten Dokumente**. Fügen Sie der Verzweigung 2 eine Komponente „Aufgabe zuweisen“ hinzu. Diese Verzweigung wird aktiviert, wenn ein Benutzer im AEM-Posteingang auf „Ablehnen“ klickt.
 
    Für den vollständigen Satz von Werten aller Felder der Schritte &quot;Aufgabe zuweisen&quot;, &quot;Schritt des Datensatzdokuments&quot;und &quot;Schritt des Dokuments signieren&quot;, die wie z. B. Hypothekenanwendung konfiguriert sind, importieren Sie das Beispielpaket, das zu Beginn dieses Abschnitts heruntergeladen werden kann.
 
-   Das Workflow-Modell ist bereit. Sie können den Workflow mit verschiedenen Methoden starten. Weitere Informationen finden Sie unter [Starten eines formularzentrierten Workflows in OSGi](#launch).
+   Das Workflow-Modell ist einsatzbereit. Sie können den Workflow mit verschiedenen Methoden starten. Weitere Informationen finden Sie unter [Starten eines formularzentrierten Workflows in OSGi](#launch).
 
    ![workflow-editor-mortgage](assets/workflow-editor-mortgage.png)
 
@@ -142,7 +142,7 @@ Der Antrag ist das mit dem Workflow verknüpfte adaptive Formular. Wenn eine Anw
   </tr>
   <tr>
    <td>Titel</td>
-   <td>Der Titel wird im Posteingang angezeigt und hilft Benutzern bei der Auswahl einer Anwendung. Behalten Sie es für beschreibend. Beispiel: Antrag auf Eröffnung eines Sparkontos.<br /> </td>
+   <td>Der Titel ist im AEM-Posteingang sichtbar und hilft Benutzenden bei der Auswahl einer Anwendung. Achten Sie darauf, einen beschreibenden Titel anzugeben. Beispiel: Antrag auf Eröffnung eines Sparkontos.<br /> </td>
   </tr>
   <tr>
    <td>Name </td>
@@ -150,7 +150,7 @@ Der Antrag ist das mit dem Workflow verknüpfte adaptive Formular. Wenn eine Anw
   </tr>
   <tr>
    <td>Beschreibung</td>
-   <td>Die Beschreibung ist im Posteingang AEM. Geben Sie detaillierte Informationen zur Anwendung in den Beschreibungsfeldern ein. Beispielsweise Zweck der Anwendung.<br /> </td>
+   <td>Die Beschreibung wird im AEM-Posteingang angezeigt. Geben Sie detaillierte Informationen zur Anwendung in den Beschreibungsfeldern an. Beispielsweise Zweck der Anwendung.<br /> </td>
   </tr>
   <tr>
    <td>Adaptives Formular</td>
@@ -158,7 +158,7 @@ Der Antrag ist das mit dem Workflow verknüpfte adaptive Formular. Wenn eine Anw
   </tr>
   <tr>
    <td>Zugriffsgruppe</td>
-   <td><p>Wählen Sie eine Gruppe aus. Die Anwendung wird nur für die Mitglieder der ausgewählten Gruppe in AEM-Posteingang angezeigt. Die Option „Zugriffsgruppe“ stellt alle Gruppen der Workflow-Benutzergruppe zur Auswahl bereit. </p> <br /> </td>
+   <td><p>Wählen Sie eine Gruppe. Die Anwendung wird nur für die Mitglieder der ausgewählten Gruppe in AEM-Posteingang angezeigt. Die Option „Zugriffsgruppe“ stellt alle Gruppen der Workflow-Benutzergruppe zur Auswahl bereit. </p> <br /> </td>
   </tr>
   <tr>
    <td>Vorbefüllungs-Dienst</td>
@@ -166,7 +166,7 @@ Der Antrag ist das mit dem Workflow verknüpfte adaptive Formular. Wenn eine Anw
   </tr>
   <tr>
    <td>Workflow-Modell</td>
-   <td>Wählen Sie eine <a href="../../forms/using/aem-forms-workflow.md#create-a-workflow-model">Workflow-Modell</a> für die Anwendung. Ein Workflow-Modell besteht aus einer Logik und einem Ablauf des Geschäftsprozesses. </td>
+   <td>Wählen Sie ein <a href="../../forms/using/aem-forms-workflow.md#create-a-workflow-model">Workflow-Modell</a> für die Anwendung aus. Ein Workflow-Modell besteht aus einer Logik und einem Ablauf des Geschäftsprozesses. </td>
   </tr>
   <tr>
    <td>Datendateipfad</td>
@@ -174,11 +174,11 @@ Der Antrag ist das mit dem Workflow verknüpfte adaptive Formular. Wenn eine Anw
   </tr>
   <tr>
    <td>Anlagenpfad</td>
-   <td>Geben Sie den Pfad des Ordners für Anlagen im CRX-Repository an. Der Anlagenpfad ist relativ zum Payload-Speicherort. Beispiel: [Payload]/data.xml. </td>
+   <td>Geben Sie den Pfad des Ordners für Anhänge im CRX-Repository an. Der Pfad für Anhänge wird relativ zum Speicherort der Nutzdaten angegeben. Beispiel: [Payload]/data.xml. </td>
   </tr>
   <tr>
    <td>Pfad für Datensatzdokument</td>
-   <td>Geben Sie den Pfad der Datensatzdokumentdatei im CRX-Repository an. Der Pfad wird relativ zum Speicherort der Nutzdaten für das adaptive Formular angegeben. Geben Sie immer den vollständigen Namen der Datei einschließlich der Dateierweiterung (wo zutreffend) an. Beispiel: [Payload]/DOR/creditcard.pdf.</td>
+   <td>Geben Sie den Pfad der Datei für das Datensatzdokument im CRX-Repository an. Der Pfad wird relativ zum Speicherort der Nutzdaten für das adaptive Formular angegeben. Geben Sie immer den vollständigen Namen der Datei einschließlich der Dateierweiterung (wo zutreffend) an. Beispiel: [Payload]/DOR/creditcard.pdf.</td>
   </tr>
  </tbody>
 </table>
@@ -214,7 +214,7 @@ Sie können ein adaptives Formular so konfigurieren, dass ein Workflow über die
 Ein Administrator (ein Mitglied der Gruppe &quot;fd-administrators&quot;) kann einen Netzwerkordner konfigurieren, um einen vorkonfigurierten Workflow auszuführen, wenn ein Benutzer eine PDF-Datei im Ordner ablegt. Nach Abschluss des Workflows kann die Ergebnisdatei in einem angegebenen Ausgabeordner gespeichert werden. Ein solcher Ordner wird als [Überwachter Ordner](../../forms/using/watched-folder-in-aem-forms.md). Führen Sie das folgende Verfahren aus, um einen überwachten Ordner zum Starten eines Workflows zu konfigurieren:
 
 1. Gehen Sie in Ihrer AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Überwachten Ordner konfigurieren]**. . Eine Liste der bereits konfigurierten überwachten Ordner wird angezeigt.
-1. Tippen Sie auf **[!UICONTROL Neu]**. Eine Liste der Felder wird angezeigt. Geben Sie einen Wert für die folgenden Felder an, um einen überwachten Ordner für einen Workflow zu konfigurieren:
+1. Auswählen **[!UICONTROL Neu]**. Eine Liste der Felder wird angezeigt. Geben Sie einen Wert für die folgenden Felder an, um einen überwachten Ordner für einen Workflow zu konfigurieren:
 
 <table>
  <tbody>
@@ -245,7 +245,7 @@ Ein Administrator (ein Mitglied der Gruppe &quot;fd-administrators&quot;) kann e
  </tbody>
 </table>
 
-1. Tippen **Erweitert**. Geben Sie einen Wert für das folgende Feld ein und tippen Sie auf **Erstellen**. Damit ist der überwachte Ordner so konfiguriert, dass er einen Arbeitsablauf startet. Wenn nun eine Datei im Eingabeverzeichnis des überwachten Ordners abgelegt wird, wird der angegebene Workflow ausgelöst.
+1. Auswählen **Erweitert**. Geben Sie einen Wert für das folgende Feld ein und tippen Sie auf **Erstellen**. Damit ist der überwachte Ordner so konfiguriert, dass er einen Arbeitsablauf startet. Wenn nun eine Datei im Eingabeverzeichnis des überwachten Ordners abgelegt wird, wird der angegebene Workflow ausgelöst.
 
    | Feld | Beschreibung |
    |---|---|
@@ -269,13 +269,13 @@ Sie können die Schritte &quot;Aufgabe zuweisen&quot;und &quot;E-Mail senden&quo
 
 ### Bereinigen von Workflow-Instanzen {#purge-workflow-instances}
 
-Da die Minimierung der Anzahl von Workflow-Instanzen die Leistung der Workflow-Engine steigert, sollten Sie regelmäßig abgeschlossene oder laufende Workflow-Instanzen aus dem Repository löschen. Ausführliche Informationen dazu finden Sie unter [Regelmäßiges Bereinigen von Workflow-Instanzen](/help/sites-administering/workflows-administering.md#regular)..
+Da die Minimierung der Anzahl von Workflow-Instanzen die Leistung der Workflow-Engine steigert, sollten Sie regelmäßig abgeschlossene oder laufende Workflow-Instanzen aus dem Repository löschen. Detaillierte Informationen finden Sie unter [Regelmäßiges Bereinigen von Workflow-Instanzen](/help/sites-administering/workflows-administering.md#regular) Bereinigen von Workflow-Instanzen.
 
 ## Parametrisieren Sie vertrauliche Daten entsprechend den Workflow-Variablen und speichern Sie sie in externen Datenspeichern. {#externalize-wf-variables}
 
 Alle Daten, die von adaptiven Formularen an [!DNL Experience Manager]-Workflows übermittelt werden, können personenbezogene Daten (PII) oder vertrauliche personenbezogene Daten (SPD) der Endbenutzer Ihres Unternehmens enthalten. Es ist jedoch nicht erforderlich, Ihre Daten im [!DNL Adobe Experience Manager] [JCR-Repository](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html?lang=de) aufzubewahren. Sie können die Speicherung von Endbenutzerdaten in Ihren verwalteten Datenspeicher (z. B. Azure Blob Storage) externalisieren, indem Sie die Informationen in parametrisieren. [Workflow-Variablen](/help/forms/using/variable-in-aem-workflows.md).
 
-In einem [!DNL Adobe Experience Manager]-Formular-Workflow werden Daten durch eine Reihe von Workflow-Schritten mithilfe von Workflow-Variablen verarbeitet und weitergeleitet. Diese Variablen sind benannte Eigenschaften oder Schlüssel-Wert-Paare, die im Metadatenknoten der Workflow-Instanzen gespeichert sind, zum Beispiel, `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Diese Workflow-Variablen können in ein anderes Repository als JCR externalisiert und dann durch [!DNL Adobe Experience Manager]-Workflows verarbeitet werden. [!DNL Adobe Experience Manager] stellt die API `[!UICONTROL UserMetaDataPersistenceProvider]` bereit, um die Workflow-Variablen in Ihrem verwalteten externen Speicher zu hinterlegen. Weitere Informationen zur Verwendung von Workflow-Variablen für kundeneigene Datenspeicher in [!DNL Adobe Experience Manager] finden Sie unter [Verwalten von Workflow-Variablen für externe Datenspeicher](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+In einem [!DNL Adobe Experience Manager]-Formular-Workflow werden Daten durch eine Reihe von Workflow-Schritten mithilfe von Workflow-Variablen verarbeitet und weitergeleitet. Diese Variablen werden als Eigenschaften oder Schlüssel/Wert-Paare bezeichnet, die im Metadatenknoten der Workflow-Instanzen gespeichert sind, beispielsweise `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Diese Workflow-Variablen können in ein anderes Repository als JCR externalisiert und dann durch [!DNL Adobe Experience Manager]-Workflows verarbeitet werden. [!DNL Adobe Experience Manager] stellt die API `[!UICONTROL UserMetaDataPersistenceProvider]` bereit, um die Workflow-Variablen in Ihrem verwalteten externen Speicher zu hinterlegen. Weitere Informationen zur Verwendung von Workflow-Variablen für kundeneigene Datenspeicher in [!DNL Adobe Experience Manager] finden Sie unter [Verwalten von Workflow-Variablen für externe Datenspeicher](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
 [!DNL Adobe] stellt folgendes [Muster](https://github.com/adobe/workflow-variable-externalizer) bereit, um Variablen aus der Workflow-Metadatenzuordnung mithilfe der API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md) im Azure Blob-Speicher zu hinterlegen. Ähnlich können Sie das Beispiel als Anleitung zur Verwendung der API [UserMetaDataPersistenceProvider] nutzen, um die Workflow-Variablen in jeden anderen Datenspeicher außerhalb von [!DNL Adobe Experience Manager] zu externalisieren und ähnlich zu verwalten.
 
 >[!NOTE]
@@ -309,7 +309,7 @@ Im Folgenden finden Sie die Zwecke (und Beispiele) dieser Eigenschaften:
 
 * **accountName** ist das Azure-Konto, in dem Daten gespeichert werden müssen.
 
-* **endpointSuffix**, beispielsweise, `core.windows.net`.
+* **endpointSuffix**, beispielsweise `core.windows.net`.
 
 * **containerName** ist der Container im Konto, in dem die Daten gespeichert werden müssen. Im Beispiel wird davon ausgegangen, dass der Container bereits vorhanden ist.
 

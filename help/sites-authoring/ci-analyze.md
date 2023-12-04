@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 91%
+ht-degree: 90%
 
 ---
 
@@ -98,7 +98,7 @@ Gehen Sie wie folgt vor, um eine Aufgabe für eine SEO-Empfehlung zu erstellen.
 
    ![chlimage_1-131](assets/chlimage_1-131.png)
 
-1. Füllen Sie die angezeigten Formularfelder aus und tippen Sie auf „Erstellen“:
+1. Füllen Sie die angezeigten Formularfelder aus und wählen Sie dann Erstellen:
 
    * Projekt: Wählen Sie das Projekt aus, in dem die Aufgabe erstellt werden soll.
    * Name: Der Name, der die Aufgabe identifiziert. Der Standardname ist der Titel der SEO-Empfehlung.

@@ -5,7 +5,7 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 1%
@@ -141,7 +141,7 @@ Nachdem die Komponente bereits in eine AEM Seite eingefügt wurde, können Sie d
 **So bearbeiten Sie eine vorhandene Komponente:**
 
 1. Wählen Sie diese Seite aus und stellen Sie sicher, dass Sie sich in **Bearbeiten** -Modus und wählen Sie die Komponente aus
-1. Tippen Sie auf das Schraubenschlüsselsymbol, um die Komponente zu konfigurieren.
+1. Wählen Sie das Schraubenschlüsselsymbol aus, um die Komponente zu konfigurieren
 
 >[!NOTE]
 >

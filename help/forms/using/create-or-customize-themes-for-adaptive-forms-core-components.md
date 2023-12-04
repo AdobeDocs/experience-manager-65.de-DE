@@ -7,10 +7,10 @@ topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1971'
-ht-degree: 11%
+source-wordcount: '1933'
+ht-degree: 9%
 
 ---
 
@@ -69,7 +69,7 @@ Das Anpassen eines Designs bezieht sich auf den Prozess der Änderung und Person
 
 ### Voraussetzungen für die Anpassung eines Designs {#prerequisites}
 
-* [Aktivieren der Kernkomponenten adaptiver Formulare für Ihre Umgebung.](/help/forms/using/enable-adaptive-forms-core-components.md)
+* [Aktivieren der adaptiven Forms-Kernkomponenten](/help/forms/using/enable-adaptive-forms-core-components.md) für Ihre Umgebung.
 
 * Installieren Sie die neueste Version von [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven ist ein Werkzeug zur Automatisierung von Builds, das häufig für Java™-Projekte verwendet wird. Durch die Installation der neuesten Version stellen Sie sicher, dass Sie über die erforderlichen Abhängigkeiten für die Designanpassung verfügen.
 
@@ -145,7 +145,7 @@ Sie haben die Flexibilität, einzelne Komponenten anzupassen oder Änderungen au
 
 Die `variable.scss` -Datei enthält die globalen Variablen des Designs. Durch Aktualisierung dieser Variablen können Sie stilistisch relevante Änderungen auf der Designebene vornehmen. Gehen Sie wie folgt vor, um Stile auf Designebene anzuwenden:
 
-1. Öffnen Sie die Datei `<your-theme-sources>/src/site/_variables.scss`, um sie zu bearbeiten.
+1. Öffnen Sie die `<your-theme-sources>/src/site/_variables.scss` Datei zur Bearbeitung.
 1. Ändern Sie den Wert einer beliebigen Eigenschaft. Beispielsweise ist die Standardfehlerfarbe Rot. Um die Fehlerfarbe von Rot in Blau zu ändern, ändern Sie den Farb-Hex-Code der `$error`-Variable. Zum Beispiel: `$error: #196ee5`.
 
    ![Beispiel: Fehlerfarbe auf blau eingestellt](/help/forms/using/assets/theme-level-changes.png)
@@ -233,7 +233,7 @@ To apply and test the customized theme with an Adaptive Form:
 
 1. Log in to your AEM Forms author instance. 
 
-1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
+1. Select **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
 1. Click **Create** > **Adaptive Forms**. The wizard for creating Adaptive Form opens.
 
@@ -247,7 +247,7 @@ An Adaptive Form with the selected theme is created.
 
 1. Log in to your AEM Forms author instance. 
 
-1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
+1. Select **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
 1. Select an Adaptive Form and click Properties. 
 
@@ -271,7 +271,7 @@ Nachdem Sie das Design in Ihrer lokalen Entwicklungsumgebung erfolgreich geteste
 
 Nachdem das Paket installiert wurde, ist das Design zur Auswahl verfügbar.
 
-![Themen-Clientbibliothek](/help/forms/using/assets/themeclientlibrary.png)
+![Design-Client-Bibliothek](/help/forms/using/assets/themeclientlibrary.png)
 
 >[!NOTE]
 >
@@ -283,8 +283,8 @@ Nachdem das Paket installiert wurde, ist das Design zur Auswahl verfügbar.
 Schritte zum Anwenden eines Designs auf ein adaptives Formular:
 
 1. Melden Sie sich bei Ihrer lokalen AEM-Autoreninstanz an.
-1. Geben Sie Ihre Anmeldedaten auf der Experience Manager-Anmeldeseite ein. Tippen Sie auf **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente**. 
-1. Klicken Sie auf **Erstellen** > **Adaptive Formulare**.
+1. Geben Sie Ihre Anmeldedaten auf der Experience Manager-Anmeldeseite ein. Auswählen **Adobe Experience Manager** > **Forms** > **Forms und Dokumente**.
+1. Klicks **Erstellen** > **Adaptives Forms**.
 1. Wählen Sie eine Vorlage für adaptive Forms-Kernkomponenten aus und klicken Sie auf **Nächste**. Die **Eigenschaften hinzufügen** erscheint
 1. Geben Sie die **Name** für Ihr adaptives Formular.
 
@@ -336,4 +336,4 @@ So entfernen Sie nicht verwendete oder unerwünschte Designs:
 * [Erstellen oder Anpassen von Designs für auf Kernkomponenten basierende adaptive Forms](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Erstellen einer Vorlage für auf Kernkomponenten basierende adaptive Forms](template-editor.md)
 * [Erstellen oder Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Vorlagen für Musterdesigns und Formulardatenmodelle](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+* [Beispielthemenvorlagen und Formulardatenmodelle](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de)

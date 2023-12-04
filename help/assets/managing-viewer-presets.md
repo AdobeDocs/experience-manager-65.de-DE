@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4520'
+source-wordcount: '4422'
 ht-degree: 99%
 
 ---
@@ -354,7 +354,7 @@ In der folgenden Tabelle werden die Mobile Viewer-Gesten aufgeführt, die auf i
    <td><p>Blendet die Benutzeroberfläche ein oder aus</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Doppeltippen</strong></p> </td>
+   <td><p><strong>Doppelklicken</strong></p> </td>
    <td><p>Trifft nicht zu</p> </td>
    <td><p>Zoomt ein oder setzt zurück</p> </td>
    <td><p>Zoomt ein oder setzt zurück</p> </td>

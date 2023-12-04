@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 docset: aem65
 exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 54%
+ht-degree: 34%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 54%
 
 ## Hinzufügen von Anhängen in Formularen, die mit AEM Forms Workflow-Server (AEM Forms on JEE) synchronisiert werden {#adding-annotations}
 
-Mit der AEM Forms-App können Sie Bilder, Notizen und Textanmerkungen an das mit dem AEM Forms JEE-Server synchronisierte Formular anhängen. Wenn Ihr Formular von einem AEM Forms Workflow-Server geladen wird, werden Ihre Anhänge zum Formular hinzugefügt. Sie können auf die Schaltfläche für Anhänge ![attachments-app](assets/attachments-app.png) tippen, um alle Anhänge in einem Formular gemeinsam anzuzeigen. Die rote Benachrichtigung gibt die Anzahl von Anhänge im Formular an. Wenn keine Anhänge im Formular vorhanden sind, wird die rote Benachrichtigungsschaltfläche nicht angezeigt. Falls keine Anhänge im Formular vorhanden sind, erhalten Sie Optionen zum Anhängen von Fotos oder Notizen, wenn Sie auf die Schaltfläche für Anhänge ![attch](assets/attch.png) tippen.
+Mit der AEM Forms-App können Sie Bilder, Notizen und Textanmerkungen an das mit dem AEM Forms JEE-Server synchronisierte Formular anhängen. Wenn Ihr Formular von einem AEM Forms Workflow-Server geladen wird, werden Ihre Anhänge zum Formular hinzugefügt. Sie können die Schaltfläche für Anlagen auswählen ![attachments-app](assets/attachments-app.png) , um alle Anlagen in einem Formular zusammen anzuzeigen. Die rote Benachrichtigung gibt die Anzahl von Anhänge im Formular an. Wenn keine Anhänge im Formular vorhanden sind, wird die rote Benachrichtigungsschaltfläche nicht angezeigt. Wenn keine Anlagen im Formular vorhanden sind, wenn Sie die Schaltfläche &quot;Anlagen&quot;auswählen ![attch](assets/attch.png), erhalten Sie Optionen zum Anhängen von Fotos oder Scribbles.
 
 Ihre Optionen sind:
 
@@ -34,7 +34,7 @@ Ihre Optionen sind:
 
 ### Der Bildschirm „Anhänge“ {#the-attachments-screen}
 
-Um alle Anhänge zusammen an einem Ort zu sehen, tippen Sie auf ![attachments-app](assets/attachments-app.png). Hier können Sie Anhänge hinzufügen, umbenennen und löschen.
+Um alle Anlagen an einer Stelle anzuzeigen, wählen Sie ![attachments-app](assets/attachments-app.png). Hier können Sie Anhänge hinzufügen, umbenennen und löschen.
 
 ![Alle Anhänge an einem Ort](assets/attachments-screen.png)
 
@@ -44,26 +44,26 @@ Verwenden Sie die Schaltfläche mit dem **Pluszeichen** (+) im Bildschirm „Anh
 
 Sie können die Kamera Ihres Mobilgeräts oder gespeicherte Bilder auf Ihrem Gerät verwenden, um ein Bild im Formular anzuhängen.
 
-1. Tippen Sie am unteren Fensterrand auf die Schaltfläche für Anhänge ![attch](assets/attch.png).
-1. Tippen Sie im Popup-Menü, das angezeigt wird, auf **Galerie** oder **Kamera**.
+1. Schaltfläche &quot;Anlage auswählen&quot; ![attch](assets/attch.png) unten im Fenster.
+1. Auswählen **Galerie** oder **Kamera** im angezeigten Popup-Fenster.
 1. Führen Sie je nach ausgewählter Option Folgendes aus:
 
    1. Wenn Sie **Kamera**.
 
-      Machen Sie ein Foto. Tippen Sie anschließend auf die Schaltfläche **Verwenden** ![use-pic](assets/use-pic.png).
+      Machen Sie ein Foto. Wählen Sie dann die **Verwendung** ![use-pic](assets/use-pic.png) Schaltfläche.
 
-      Tippen Sie alternativ auf die Schaltfläche **Erneut aufnehmen** ![retake](assets/retake.png), um erneut ein Foto aufzunehmen.
+      Oder wählen Sie die **Wiederholen** ![retake](assets/retake.png) -Schaltfläche, um das Foto erneut aufzunehmen.
 
    1. Wenn Sie **Galerie**.
 
-      Der Bildbrowser des Geräts wird angezeigt. Tippen Sie in der Bildauswahl Ihres Geräts auf das Bild, das Sie anhängen möchten.
+      Der Bildbrowser des Geräts wird angezeigt. Wählen Sie im Bildbrowser Ihres Geräts das Bild aus, das Sie anhängen möchten.
 
 ### Hinzufügen einer Notiz {#adding-a-note}
 
 Mit der Option **Notizen** können Sie dem Formular Freihandskizzen oder Textanhänge hinzufügen.
 
-1. Tippen Sie am unteren Fensterrand auf die Schaltfläche für Anhänge ![attch](assets/attch.png).
-1. Tippen **Hinweise** im angezeigten Popup-Fenster.
+1. Schaltfläche &quot;Anlage auswählen&quot; ![attch](assets/attch.png) unten im Fenster.
+1. Auswählen **Hinweise** im angezeigten Popup-Fenster.
 1. Erfassen Sie in der Benutzeroberfläche &quot;Notizen&quot;, die gestartet wird, ein Freihand-Scribble.
 
    ![Freihand-Benutzeroberfläche](assets/scribble-ui.png)

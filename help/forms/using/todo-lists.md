@@ -11,10 +11,10 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4031'
-ht-degree: 36%
+source-wordcount: '4024'
+ht-degree: 35%
 
 ---
 
@@ -186,7 +186,7 @@ Sie können beliebige Anlagen lokal hinzufügen, aktualisieren, löschen oder sp
 
 ### Speichern Sie Ihre Arbeit, ohne die Aufgabe abzuschließen {#save-your-work-without-completing-the-task}
 
-1. Klicken Sie auf einer beliebigen Registerkarte auf **Speichern**.
+1. Wählen Sie auf jeder Registerkarte **Speichern**.
 
    Das Dialogfeld Als Entwurf speichern wird angezeigt. Der Standardname des Entwurfs ist der Aufgabenname aus der Aufgabenvorlage.
 
@@ -199,7 +199,7 @@ Sie können beliebige Anlagen lokal hinzufügen, aktualisieren, löschen oder sp
    >
    >Weitere Informationen finden Sie unter „Entwurf regelmäßig speichern“ unter [Verwalten von Voreinstellungen](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
-1. Geben Sie im Dialogfeld „Als Entwurf speichern“ einen eindeutigen Namen für die Aufgabe ein und tippen Sie **OK**.
+1. Geben Sie im Dialogfeld &quot;Als Entwurf speichern&quot;einen eindeutigen Namen für die Aufgabe an und wählen Sie **OK**.
 
    ![saveasdraftdialog_name](assets/saveasdraftdialog_name.png)
 

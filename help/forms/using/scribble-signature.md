@@ -12,7 +12,7 @@ discoiquuid: ecd7f538-9c24-48e7-8450-596851e99cff
 docset: aem65
 feature: Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 25%
@@ -103,5 +103,5 @@ Klicken Sie auf das Symbol **Pinsel**, um eine Liste der verfügbaren Stiftgrö�
 
 So löschen Sie die Signaturen aus dem Formular:
 
-* (Mobilgeräte) Drücken Sie lange auf das Signaturfeld und tippen Sie im Bestätigungsdialogfeld auf **Ja**.
+* (Mobilgeräte) Drücken Sie lange auf das Signaturfeld und wählen Sie im Bestätigungsdialogfeld die Option **Ja**.
 * (Desktop) Bewegen Sie den Mauszeiger über das Signaturfeld und klicken Sie auf das **Abbrechen** und im Bestätigungsdialogfeld auf **Ja**.

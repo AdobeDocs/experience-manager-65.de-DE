@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: 81429735-cd52-4621-8dc2-10dd89df3052
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1674'
-ht-degree: 56%
+source-wordcount: '1653'
+ht-degree: 53%
 
 ---
 
@@ -68,16 +68,16 @@ Gehen Sie wie folgt vor, um Variablen für Felder mit der Benutzeroberfläche f�
 
    1. Auswählen **Formulardatenmodell** aus dem **Datenmodell** Abschnitt.
 
-   1. Auswählen **FDM_Create_First_IC** als Formulardatenmodell und tippen Sie auf **Auswählen**.
+   1. Auswählen **FDM_Create_First_IC** als Formulardatenmodell und wählen Sie **Auswählen**.
 
-   1. Tippen Sie auf **Weiter**.
+   1. Wählen Sie **Weiter** aus.
 
-1. Wählen Sie die **Variablen** Registerkarte im linken Bereich und tippen Sie auf **Erstellen**.
+1. Wählen Sie die **Variablen** Registerkarte im linken Bereich und wählen Sie **Erstellen**.
 1. Im **Variable erstellen** Abschnitt:
 
    1. Eingabe **Rechnungsnummer** als Namen der Variablen.
    1. Auswählen **Zeichenfolge** als Typ.
-   1. Tippen Sie auf **Erstellen**.
+   1. Wählen Sie **Erstellen** aus.
 
    ![Variable vom Typ String erstellen](assets/variable_create_string_new.png)
 
@@ -132,16 +132,16 @@ Gehen Sie wie folgt vor, um Variablen für Felder mit der Benutzeroberfläche f�
 
    1. Auswählen **Formulardatenmodell** aus dem **Datenmodell** Abschnitt.
 
-   1. Auswählen **FDM_Create_First_IC** als Formulardatenmodell und tippen Sie auf **Auswählen**.
+   1. Auswählen **FDM_Create_First_IC** als Formulardatenmodell und wählen Sie **Auswählen**.
 
-   1. Tippen Sie auf **Weiter**.
+   1. Wählen Sie **Weiter** aus.
 
-1. Wählen Sie die **Variablen** Registerkarte im linken Bereich und tippen Sie auf **Erstellen**.
+1. Wählen Sie die **Variablen** Registerkarte im linken Bereich und wählen Sie **Erstellen**.
 1. Im **Variable erstellen** Abschnitt:
 
    1. Geben Sie als Name der Variablen **Placesupply** ein.
    1. Auswählen **Zeichenfolge** als Typ.
-   1. Tippen Sie auf **Erstellen**.
+   1. Wählen Sie **Erstellen** aus.
 
    Wiederholen Sie die Schritte 4 und 5, um die folgenden Variablen zu erstellen:
 
@@ -195,16 +195,16 @@ Gehen Sie wie folgt vor, um Variablen für Felder mit der Benutzeroberfläche f�
 
    1. Auswählen **Formulardatenmodell** aus dem **Datenmodell** Abschnitt.
 
-   1. Auswählen **FDM_Create_First_IC** als Formulardatenmodell und tippen Sie auf **Auswählen**.
+   1. Auswählen **FDM_Create_First_IC** als Formulardatenmodell und wählen Sie **Auswählen**.
 
-   1. Tippen Sie auf **Weiter**.
+   1. Wählen Sie **Weiter** aus.
 
-1. Wählen Sie die **Variablen** Registerkarte im linken Bereich und tippen Sie auf **Erstellen**.
+1. Wählen Sie die **Variablen** Registerkarte im linken Bereich und wählen Sie **Erstellen**.
 1. Im **Variable erstellen** Abschnitt:
 
    1. Geben Sie als Name der Variablen **Previousbalance** ein.
    1. Wählen Sie als Typ **Zahl**.
-   1. Tippen Sie auf **Erstellen**.
+   1. Wählen Sie **Erstellen** aus.
 
    Wiederholen Sie die Schritte 4 und 5, um die folgenden Variablen zu erstellen:
 
@@ -262,9 +262,9 @@ Gehen Sie wie folgt vor, um statischen Text zu erstellen und Formulardatenmodell
 
    1. Auswählen **Formulardatenmodell** aus dem **Datenmodell** Abschnitt.
 
-   1. Auswählen **FDM_Create_First_IC** als Formulardatenmodell und tippen Sie auf **Auswählen**.
+   1. Auswählen **FDM_Create_First_IC** als Formulardatenmodell und wählen Sie **Auswählen**.
 
-   1. Tippen Sie auf **Weiter**.
+   1. Wählen Sie **Weiter** aus.
 
 1. Erstellen Sie statischen Text für die folgenden Felder mithilfe des rechten Bereichs:
 
@@ -293,7 +293,7 @@ Gehen Sie wie folgt vor, um statischen Text zu erstellen und Formulardatenmodell
 
    ![Zusammenfassung der Gebühren](assets/summary_charges_static_fdm_new.png)
 
-1. Wählen Sie den Text in der Zeile **Mehrwert - Service-Gebühren** aus und tippen Sie auf **Regel erstellen**, um eine Bedingung zu erstellen, auf deren Grundlage die Zeile in der interaktiven Kommunikation angezeigt wird:
+1. Wählen Sie den Text im **Mehrwert - Service-Gebühren** und wählen Sie **Regel erstellen** , um eine Bedingung zu erstellen, anhand derer die Zeile in der interaktiven Kommunikation angezeigt wird:
 1. Im **Regel erstellen** Popup-Fenster:
 
    1. Auswählen **Datenmodelle und -variablen** und dann **Rechnungen** > **callcharges**.

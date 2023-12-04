@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: bef1f05e-aea2-433e-b3d5-0b7ad8163fa7
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1819'
-ht-degree: 40%
+source-wordcount: '1790'
+ht-degree: 30%
 
 ---
 
@@ -57,7 +57,7 @@ Diese Teilformulare werden nach dem Hochladen der XDP-Datei auf den Forms-Server
 
 Gehen Sie wie folgt vor, um eine XDP-Vorlage für den Druckkanal zu erstellen:
 
-1. Öffnen Sie den Forms Designer, wählen Sie **Datei** > **Neu** > **Verwenden Sie ein leeres Formular**,  tippen Sie auf **Weiter** und anschließend auf **Fertig stellen**, um das Formular für die Vorlagenerstellung zu öffnen.
+1. Öffnen Sie den Forms Designer und wählen Sie **Datei** > **Neu** > **Leeres Formular verwenden,** select **Nächste** und wählen Sie **Beenden** , um das Formular zur Vorlagenerstellung zu öffnen.
 
    Stellen Sie sicher, dass die **Objektbibliothek** und die Option **Objekt** im Menü **Fenster** ausgewählt werden.
 
@@ -108,22 +108,22 @@ Gehen Sie wie folgt vor, um eine XDP-Vorlage für den Druckkanal zu erstellen:
    1. Navigieren Sie zu dem Speicherort, an dem Sie die Datei speichern können, und geben Sie den Namen als **create_first_ic_print_template**.
    1. Auswählen **.xdp** aus dem **Dateityp** Dropdown-Liste.
 
-   1. Tippen Sie auf **Speichern**.
+   1. Wählen Sie **Speichern** aus.
 
 ### Hochladen einer XDP-Vorlage auf den AEM Forms-Server {#upload-xdp-template-to-the-aem-forms-server}
 
 Nachdem Sie eine XDP-Vorlage mit Forms Designer erstellt haben, müssen Sie sie auf den AEM Forms-Server hochladen, damit die Vorlage beim Erstellen der interaktiven Kommunikation verwendet werden kann.
 
 1. Wählen Sie **[!UICONTROL Formulare]** > **[!UICONTROL Formulare &amp; Dokumente]**.
-1. Tippen Sie auf **Erstellen** > **Datei hochladen**.
+1. Auswählen **Erstellen** > **Datei-Upload**.
 
-   Navigieren Sie zu und wählen Sie die **create_first_ic_print_template** Vorlage (XDP) und tippen Sie auf **Öffnen** , um die XDP-Vorlage in den AEM Forms-Server zu importieren.
+   Navigieren Sie zu und wählen Sie die **create_first_ic_print_template** Vorlage (XDP) und wählen Sie **Öffnen** , um die XDP-Vorlage in den AEM Forms-Server zu importieren.
 
 ### Erstellen einer XDP-Vorlage für Layout-Fragmente {#create-xdp-template-for-layout-fragments}
 
 Um ein Layout-Fragment für den Druckkanal der interaktiven Kommunikation zu erstellen, erstellen Sie eine XDP mit Forms Designer und laden Sie sie auf den AEM Forms-Server hoch.
 
-1. Öffnen Sie den Forms Designer, wählen Sie **Datei** > **Neu** > **Verwenden Sie ein leeres Formular**,  tippen Sie auf **Weiter** und anschließend auf **Fertig stellen**, um das Formular für die Vorlagenerstellung zu öffnen.
+1. Öffnen Sie den Forms Designer und wählen Sie **Datei** > **Neu** > **Leeres Formular verwenden,** select **Nächste** und wählen Sie **Beenden** , um das Formular zur Vorlagenerstellung zu öffnen.
 
    Stellen Sie sicher, dass die **Objektbibliothek** und die Option **Objekt** im Menü **Fenster** ausgewählt werden.
 
@@ -135,7 +135,7 @@ Um ein Layout-Fragment für den Druckkanal der interaktiven Kommunikation zu ers
    1. Wählen Sie die **Kopfzeile in Tabelle einschließen** aktivieren.
    1. Registerkarte **OK**.
 
-1. Tippen **+** im linken Bereich neben **Verzeichnis** 1 und Rechtsklick **Cell1** und wählen **Objekt umbenennen** nach **Datum**.
+1. Auswählen **+** im linken Bereich neben **Verzeichnis** 1 und Rechtsklick **Cell1** und wählen **Objekt umbenennen** nach **Datum**.
 
    Benennen Sie **Zelle2**, **Zelle3**, **Zelle4** und **Zelle5** in **Zeit**, **Anzahl**, **Dauer** und **Kosten** um.
 
@@ -158,7 +158,7 @@ Um ein Layout-Fragment für den Druckkanal der interaktiven Kommunikation zu ers
    1. Navigieren Sie zu dem Speicherort, an dem Sie die Datei speichern können, und geben Sie den Namen als **table_lf**.
    1. Auswählen **.xdp** aus dem **Dateityp** Dropdown-Liste.
 
-   1. Tippen Sie auf **Speichern**.
+   1. Wählen Sie **Speichern** aus.
 
    Nachdem Sie mit Forms Designer eine XDP-Vorlage für Layoutfragmente erstellt haben, müssen Sie [hochladen](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) Sie wird auf den AEM Forms-Server geladen, damit die Vorlage beim Erstellen von Layout-Fragmenten verwendet werden kann.
 
@@ -177,10 +177,10 @@ Um eine Webkanalvorlage zu erstellen, definieren Sie einen Ordner, in dem Sie di
 
 Gehen Sie wie folgt vor, um einen Ordner für die bearbeitbaren Vorlagen zu erstellen:
 
-1. Tippen Sie auf **Tools** ![Hammersymbol](assets/hammer-icon.svg) > **Konfigurationsbrowser**.
+1. Auswählen **Instrumente** ![Hammersymbol](assets/hammer-icon.svg) > **Konfigurationsbrowser**.
    * Weitere Informationen finden Sie in der Dokumentation zum [Konfigurationsbrowser](/help/sites-administering/configurations.md).
-1. Tippen Sie auf der Seite „Konfigurationsbrowser“ auf **Erstellen**.
-1. Legen Sie im Dialogfeld **Konfiguration erstellen** **Create_First_IC_templates** als den Titel für den Ordner fest, aktivieren Sie **Bearbeitbare Vorlagen** und tippen Sie auf **Erstellen**.
+1. Wählen Sie auf der Seite &quot;Konfigurationsbrowser&quot;die Option **Erstellen**.
+1. Im **Konfiguration erstellen** Dialogfeld, geben Sie **Create_First_IC_templates** als Titel für den Ordner festlegen, überprüfen Sie **Bearbeitbare Vorlagen** und wählen Sie **Erstellen**.
 
    ![Konfigurieren von Webvorlagen](assets/create_first_ic_web_template_new.png)
 
@@ -205,31 +205,31 @@ Alle Entitäten wie Dokumentfragmente, Diagramme, Tabellen, Bilder und Schaltfl�
 So erstellen Sie eine Vorlage für den Webkanal im **Create_First_IC_templates** Gehen Sie wie folgt vor:
 
 1. Navigieren Sie zum entsprechenden Vorlagenordner, indem Sie **Instrumente** > **Vorlagen** > **Create_First_IC_templates** Ordner.
-1. Tippen Sie auf **Erstellen**.
-1. Wählen Sie im Konfigurationsassistenten **Vorlagentyp wählen** den Typ **Interaktive Kommunikation - Webkanal** und tippen Sie auf **Weiter**.
-1. Geben Sie im Konfigurationsassistenten **Vorlagendetails** **Create_First_IC_Web_Template** als Vorlagentitel ein. Geben Sie eine optionale Beschreibung ein und tippen Sie auf **Erstellen**.
+1. Wählen Sie **Erstellen** aus.
+1. Im **Auswählen eines Vorlagentyps** Konfigurationsassistent auswählen **Interaktive Kommunikation - Webkanal** und wählen **Nächste**.
+1. Geben Sie im Konfigurationsassistenten **Vorlagendetails** **Create_First_IC_Web_Template** als Vorlagentitel ein. Geben Sie eine optionale Beschreibung an und wählen Sie **Erstellen**.
 
    Eine Bestätigungsmeldung, dass **Create_First_IC_Web_Template** angezeigt wird.
 
-1. Tippen **Öffnen** , um die Vorlage im Vorlageneditor zu öffnen.
+1. Auswählen **Öffnen** , um die Vorlage im Vorlageneditor zu öffnen.
 1. Auswählen **Anfänglicher Inhalt** aus der Dropdown-Liste neben dem **Vorschau** -Option.
 
    ![Vorlagen-Editor](assets/template_editor_initial_content_new.png)
 
-1. Tippen Sie auf **Stammbereich** und dann auf **+**, um die Liste der Komponenten anzuzeigen, die Sie der Vorlage hinzufügen können.
+1. Auswählen **Stammbereich** und wählen Sie **+** um die Liste der Komponenten anzuzeigen, die Sie der Vorlage hinzufügen können.
 1. So fügen Sie ein Bedienfeld über dem **Stammbereich** auswählen **Bedienfeld** aus der Liste.
 1. Wählen Sie die **Inhalt** im linken Bereich. Das neue Bedienfeld, das in Schritt 8 hinzugefügt wurde, wird unter dem **Stammbereich** in der Inhaltsstruktur.
 
    ![Inhaltsstruktur](assets/content_tree_root_panel_new.png)
 
-1. Wählen Sie die Tabelle aus und tippen Sie auf ![configure_icon](assets/configure_icon.png) (Konfigurieren).
+1. Wählen Sie das Bedienfeld aus und wählen Sie ![configure_icon](assets/configure_icon.png) (Konfigurieren).
 1. Im Bereich Eigenschaften :
 
    1. Angeben **billdetails** im Feld &quot;Name&quot;ein.
    1. Angeben **Rechnungsdetails** im Feld Titel .
    1. Auswählen **1** aus dem **Spaltenanzahl** Dropdown-Liste.
 
-   1. Tippen Sie zum Speichern der Eigenschaften auf ![Speichern](/help/forms/using/assets/done_icon.png).
+   1. Wählen Sie zum Speichern der Eigenschaften ![Speichern](/help/forms/using/assets/done_icon.png).
 
    Der Name des Bedienfelds wird aktualisiert auf **Rechnungsdetails** in der Inhaltsstruktur.
 
@@ -254,9 +254,9 @@ Nachdem Sie die Webvorlage erstellt haben, müssen Sie sie aktivieren, um die Vo
 
 Gehen Sie wie folgt vor, um die Webvorlage zu aktivieren:
 
-1. Tippen Sie auf **Tools** ![Hammersymbol](assets/hammer-icon.svg) > **Vorlagen**.
-1. Navigieren Sie zur Vorlage **Create_First_IC_Web_Template**, wählen Sie sie aus und tippen Sie auf **Aktivieren**.
-1. Tippen **Aktivieren** erneut zu bestätigen.
+1. Auswählen **Instrumente** ![Hammersymbol](assets/hammer-icon.svg) > **Vorlagen**.
+1. Navigieren Sie zum **Create_First_IC_Web_Template** Vorlage, wählen Sie sie aus und wählen Sie **Aktivieren**.
+1. Auswählen **Aktivieren** erneut zu bestätigen.
 
    Die Vorlage ist aktiviert und ihr Status wird als Aktiviert angezeigt. Sie können diese Vorlage beim Erstellen der interaktiven Kommunikation für den Webkanal verwenden.
 
@@ -265,7 +265,7 @@ Gehen Sie wie folgt vor, um die Webvorlage zu aktivieren:
 Je nach Anwendungsfall müssen Sie die Variable **Jetzt bezahlen** und **Abonnieren** Schaltflächen (adaptive Formularkomponenten) in der interaktiven Kommunikation. Gehen Sie wie folgt vor, um die Verwendung dieser Schaltflächen in der interaktiven Kommunikation zu aktivieren:
 
 1. Wählen Sie **Struktur** aus der Dropdown-Liste neben der Option **Vorschau**.
-1. Wählen Sie im Stammbereich **Dokument-Container** mit der Inhaltsstruktur und tippen Sie auf **Richtlinie**, um die Komponenten auszuwählen, die für die Verwendung in der interaktiven Kommunikation erlaubt sind.
+1. Wählen Sie die **Dokumentcontainer** Stammbereich mit der Inhaltsstruktur und wählen Sie **Politik** , um die Komponenten auszuwählen, die in der interaktiven Kommunikation verwendet werden dürfen.
 
    ![Richtlinie konfigurieren](assets/structure_configure_policy_new.png)
 
@@ -273,4 +273,4 @@ Je nach Anwendungsfall müssen Sie die Variable **Jetzt bezahlen** und **Abonnie
 
    ![Zugelassene Komponenten](assets/allowed_components_af_new.png)
 
-1. Tippen Sie zum Speichern der Eigenschaften auf ![save](assets/done_icon.png).
+1. Wählen Sie zum Speichern der Eigenschaften ![save](assets/done_icon.png).

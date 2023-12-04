@@ -10,16 +10,16 @@ discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
 feature: Adaptive Forms
 exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 36%
+source-wordcount: '592'
+ht-degree: 38%
 
 ---
 
 # Inline-Stile für Komponenten adaptiver Formulare {#inline-styling-of-adaptive-form-components}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/using/create-an-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/using/create-an-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -30,10 +30,10 @@ Sie können das Erscheinungsbild und den Stil eines adaptiven Formulars definier
 
 ## Verwenden von Inline-CSS-Eigenschaften {#apply-inline-css-properties}
 
-So fügen Sie einer Komponente Inline-Stile hinzu:
+Hinzufügen von Inline-Stilen zu einer Komponente:
 
-1. Öffnen Sie das Formular im Formular-Editor und ändern Sie den Modus in den Formatierungsmodus. Um den Stilmodus zu aktivieren, tippen Sie in der Symbolleiste der Seite auf ](assets/canvas-drop-down.png)Arbeitsfläche-Dropdown![ > **Stil**.
-1. Wählen Sie eine Komponente auf der Seite aus und tippen Sie auf die Schaltfläche „Bearbeiten“ ![Bearbeiten-Schaltfläche](assets/edit-button.png). Die Stileigenschaften werden in der Seitenleiste geöffnet.
+1. Öffnen Sie das Formular im Formular-Editor und ändern Sie den Modus in den Formatierungsmodus. Um den Stilmodus zu ändern, wählen Sie in der Seitensymbolleiste die Option ![Arbeitsfläche-Dropdown](assets/canvas-drop-down.png) > **Stil**.
+1. Wählen Sie eine Komponente auf der Seite aus und klicken Sie auf die Schaltfläche &quot;Bearbeiten&quot; ![edit-button](assets/edit-button.png). Die Stileigenschaften werden in der Seitenleiste geöffnet.
 
    Sie können auch Komponenten aus der Formularhierarchie in der Seitenleiste auswählen. Die Hierarchie des Formulars ist als Formularobjekte in der Seitenleiste verfügbar.
 
@@ -41,7 +41,7 @@ So fügen Sie einer Komponente Inline-Stile hinzu:
 
    Wenn Sie eine Komponente aus der Seitenleiste auswählen, werden alle aufgelisteten Unterkomponenten und die Eigenschaften der ausgewählten Komponente angezeigt. Sie können eine bestimmte Unterkomponente auswählen und formatieren.
 
-1. Klicken Sie auf eine Registerkarte in der Seitenleiste, um CSS-Eigenschaften anzugeben. Sie können Eigenschaften angeben, z. B.:
+1. Klicken Sie auf eine Registerkarte in der Seitenleiste, um CSS-Eigenschaften anzugeben. Sie können Eigenschaften wie die folgenden angeben:
 
    * Abmessungen und Position (Anzeigeeinstellung, Auffüllung, Höhe, Breite, Ränder, Position, Z-Index, „Float“, „Clear“, Überlauf)
    * Text (Schriftfamilie, Stärke, Farbe, Größe, Zeilenhöhe und Ausrichtung)
@@ -51,7 +51,7 @@ So fügen Sie einer Komponente Inline-Stile hinzu:
    * Erweitert (Ermöglicht das Schreiben benutzerdefinierten CSS für die Komponente)
 
 1. Ebenso können Sie Stile auf andere Teile einer Komponente wie Widget, Beschriftung und Hilfe anwenden.
-1. Tippen Sie auf **Fertig**, um die Änderungen zu bestätigen, oder auf **Abbrechen**, um die Änderungen zu verwerfen.
+1. Auswählen **Fertig** zur Bestätigung der Änderungen oder **Abbrechen** , um die Änderungen zu verwerfen.
 
 ## Beispiel: Inline-Formatvorlagen für eine Feldkomponente {#example-inline-styles-for-a-field-component}
 
@@ -93,7 +93,7 @@ Beachten Sie die Änderung des Textfeldstils, die in der folgenden Abbildung gez
    <td>Feld Hilfe Symbol</td>
    <td>Text &gt; Schriftfarbe</td>
    <td>#2ECC40</td>
-   <td>Ändert die Farbe des Gesichts des Hilfesymbols.</td>
+   <td>Ändert die Farbe des Hilfesymbol-Gesichts.</td>
   </tr>
   <tr>
    <td><p>Lange Beschreibung</p> </td>

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 docset: aem65
 exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 61%
+source-wordcount: '1558'
+ht-degree: 56%
 
 ---
 
@@ -84,11 +84,11 @@ Zusätzlich zum JBoss®-Server können Sie das Argument -Dabtesting.enabled=true
 
 AEM ermöglicht die Erstellung einer Zielgruppe und ihre Verwendung für A/B-Tests. Die in AEM erstellte Zielgruppe ist in AEM Forms verfügbar. Gehen Sie wie folgt vor, um Zielgruppen in AEM zu erstellen:
 
-1. Tippen Sie in der Instanz im Autorenmodus auf **Adobe Experience Manager** > **Personalization** > **Audiences**.
+1. Wählen Sie in der Authoring-Instanz **Adobe Experience Manager** > **Personalisierung** > **Zielgruppen**.
 
-1. Tippen Sie auf der Seite „Zielgruppen“ auf **„Zielgruppe erstellen“ > „Target-Zielgruppe erstellen“**.
+1. Wählen Sie auf der Seite Zielgruppen die Option **Zielgruppe erstellen > Target-Zielgruppe erstellen**.
 1. Wählen Sie im Dialogfeld „Adobe Target-Konfiguration“ eine Target-Konfiguration und klicken Sie auf **OK**.
-1. Erstellen Sie Regeln auf der Seite „Neue Zielgruppe erstellen“. Mit Regeln können Sie die Zielgruppe kategorisieren. Beispielsweise können Sie Zielgruppen basierend auf dem Betriebssystem kategorisieren. Ihre Zielgruppe A kommt von Windows und Audience B von Linux®.
+1. Erstellen Sie Regeln auf der Seite „Neue Zielgruppe erstellen“. Mit Regeln können Sie die Zielgruppe kategorisieren. Beispielsweise können Sie Zielgruppen basierend auf dem Betriebssystem kategorisieren. Ihre Audience A stammt aus Windows und Audience B aus Linux®.
 
    1. Um eine Zielgruppe basierend auf Windows zu kategorisieren, wählen Sie in Regel 1 die **BS** Attributtyp. Aus der Dropdownliste „Wann“ wählen Sie **Windows**.
 
@@ -98,7 +98,7 @@ AEM ermöglicht die Erstellung einer Zielgruppe und ihre Verwendung für A/B-Tes
 
 Sie können die Zielgruppe auswählen, wenn Sie A/B-Tests für ein Formular konfigurieren, wie unten dargestellt.
 
-## Erstellen von A/B-Tests für ein adaptives Formular {#create-a-b-test}
+## Erstellen eines A/B-Tests für ein adaptives Formular {#create-a-b-test}
 
 1. Wechseln Sie zu **Formulare und Dokumente** unter „https://&lt;*hostname*>:&lt;*port*>/aem/forms.html/content/dam/formsanddocuments“.
 
@@ -131,7 +131,7 @@ Ihr A/B-Test wird jetzt ausgeführt und die angegebene Zielgruppe wird zufällig
 
 ## A/B-Test aktualisieren {#update-a-b-test}
 
-Sie können die Zielgruppe und die Verteilung der Erlebnisse eines laufenden A/B-Tests aktualisieren.
+Sie können die Zielgruppen- und Erlebnisverteilung eines laufenden A/B-Tests aktualisieren.
 
 So aktualisieren Sie den A/B-Test:
 
@@ -144,7 +144,7 @@ So aktualisieren Sie den A/B-Test:
 
 ## Anzeigen und Analysieren des A/B-Testberichts {#view-and-analyze-a-b-test-report}
 
-Nachdem der A/B-Test für den gewünschten Zeitraum durchgeführt wurde, können Sie einen Bericht erstellen und prüfen, mit welchem Erlebnis bessere Konvertierungsraten erzielt wurden. Sie können dann das Erlebnis mit den besseren Ergebnissen zum Gewinner erklären oder einen weitere A/B-Test durchführen.
+Nachdem der A/B-Test für den gewünschten Zeitraum durchgeführt wurde, können Sie einen Bericht erstellen und prüfen, mit welchem Erlebnis bessere Konvertierungsraten erzielt wurden. Sie können das Erlebnis mit der besseren Leistung zum Gewinner erklären oder einen weiteren A/B-Test durchführen.
 
 Anzeigen und Analysieren des A/B-Testberichts:
 

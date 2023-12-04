@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die Dienste Microsoft&reg; Dynamics 365 über
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: develop, Configuration
 exl-id: 2ac37dc5-d88d-4f98-8576-cd2ca6f0ea3a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 47%
+source-wordcount: '410'
+ht-degree: 35%
 
 ---
 
@@ -37,17 +37,17 @@ Bevor Sie Dynamics 365 einrichten und konfigurieren, stellen Sie Folgendes siche
    `https://[server]:[port]/editor.html/content/we-finance/global/en/loan-landing-page.html`
 
 1. Scrollen Sie nach unten zum Hypothekrechner.
-1. Markieren Sie das Bedienfeld der rechten Spalte (Taschenrechner) und tippen Sie auf , um das Popup-Menü anzuzeigen. Tippen Sie im Popup-Menü auf Konfigurieren. Das Dialogfeld &quot;AEM Forms-Container bearbeiten&quot;wird angezeigt.
+1. Markieren Sie das Bedienfeld der rechten Spalte (Rechner) und wählen Sie aus, um das Popup-Menü anzuzeigen. Wählen Sie im Popup-Menü die Option &quot;Konfigurieren&quot;. Das Dialogfeld &quot;AEM Forms-Container bearbeiten&quot;wird angezeigt.
 
    ![calculatorconfigurePanel](assets/calculatorconfigurepanel.png)
 
-1. Navigieren Sie im Dialogfeld „AEM Forms-Container bearbeiten“ zum Asset-Pfad, wählen Sie den Hypothekrechner unter dem folgenden Pfad aus und tippen Sie auf **Bestätigen**:
+1. Durchsuchen Sie im Dialogfeld &quot;AEM Forms-Container bearbeiten&quot;den Asset-Pfad, wählen Sie Hypothekenrechner aus dem folgenden Pfad und wählen Sie **Bestätigen**:
 
    formsanddocuments/We.Finance/MS Dynamics/
 
    ![selectassetpath](assets/selectassetpath.png)
 
-1. Tippen Sie auf **Fertig**.
+1. Klicken Sie auf **Fertig**.
 1. Veröffentlichen Sie die bearbeitete Seite.
 
    >[!NOTE]
@@ -60,7 +60,7 @@ Bevor Sie Dynamics 365 einrichten und konfigurieren, stellen Sie Folgendes siche
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
 
-   1. Importieren Sie das Lösungspaket in Ihre Microsoft® Dynamics-Instanz. Navigieren Sie in Ihrer Microsoft® Dynamics-Instanz zu **Einstellungen** > **Lösungen** und tippen Sie auf **Importieren**.
+   1. Importieren Sie das Lösungspaket in Ihre Microsoft® Dynamics-Instanz. Wechseln Sie in Ihrer Microsoft® Dynamics-Instanz zu **Einstellungen** > **Lösungen** und wählen Sie **Import**.
 
 1. Um die auf der refsite verwendeten Benutzerkontaktdetails einzurichten, importieren Sie das Paket Sarah Rose Contact.CSV in Ihre Microsoft® Dynamics-Instanz:
 
@@ -68,4 +68,4 @@ Bevor Sie Dynamics 365 einrichten und konfigurieren, stellen Sie Folgendes siche
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
-   1. Importieren Sie das Paket in Ihre Microsoft® Dynamics-Instanz. Wechseln Sie in Ihrer Microsoft® Dynamics-Instanz zu **Verkauf** > **Kontakte** und tippen Sie dann auf **Daten importieren**.
+   1. Importieren Sie das Paket in Ihre Microsoft® Dynamics-Instanz. Wechseln Sie in Ihrer Microsoft® Dynamics-Instanz zu **Vertrieb** > **Kontakte** und wählen Sie **Daten importieren**.

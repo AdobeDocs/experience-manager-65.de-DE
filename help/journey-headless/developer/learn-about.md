@@ -2,10 +2,10 @@
 title: Grundlegendes zur CMS-Headless-Entwicklung
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Headless-Technologie und darüber, warum Sie sie verwenden sollten.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1611'
-ht-degree: 92%
+source-wordcount: '1601'
+ht-degree: 90%
 
 ---
 
@@ -68,7 +68,7 @@ Das Auslassen des Kopfes vereinfacht das CMS, indem es die Komplexität beseitig
 
 ## Entkopplung {#decoupling}
 
-Die Headless-Bereitstellung wird möglich, indem eine Reihe robuster und flexibler Anwendungs-Programmierschnittstellen (APIs) zur Verfügung gestellt wird, auf die alle Ihre Erlebnisse zugreifen können. Die API dient als gemeinsame Sprache für die Services, bindet sie auf Inhaltsebene durch standardisierte Inhaltsbereitstellung zusammen, ermöglicht ihnen jedoch die Flexibilität, eigene Lösungen zu implementieren.
+Eine Headless-Bereitstellung ist möglich, indem eine Reihe robuster und flexibler Anwendungsprogrammierschnittstellen (APIs) verfügbar gemacht werden, in denen all Ihre Erlebnisse ausgewählt werden können. Die API dient als gemeinsame Sprache für die Services, bindet sie auf Inhaltsebene durch standardisierte Inhaltsbereitstellung zusammen, ermöglicht ihnen jedoch die Flexibilität, eigene Lösungen zu implementieren.
 
 Headless ist ein Beispiel für die Entkopplung Ihrer Inhalte von ihrer Präsentation. Oder in einem allgemeineren Sinne, die Entkopplung des Frontend vom Backend Ihres Service-Stacks. Bei einem Headless-Setup wird das Präsentationssystem (der Kopf) vom Content-Management (dem Schwanz) entkoppelt. Die beiden interagieren nur über API-Aufrufe.
 

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Form Data Model
 exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 61%
+source-wordcount: '1207'
+ht-degree: 59%
 
 ---
 
@@ -117,8 +117,8 @@ Führen Sie die folgenden Schritte aus, um einen OAuth-Client auf einem AD FS (
 
 Die Konfiguration **MS Dynamics OData Cloud Service (OData Service)** wird mit der Standard-OData-Konfiguration geliefert. Gehen Sie wie folgt vor, um ihn für die Verbindung mit Ihrem Microsoft Dynamics -Dienst zu konfigurieren.
 
-1. Navigieren Sie zu **[!UICONTROL Tools > Cloud-Services > Datenquellen]** und tippen Sie auf den Konfigurationsordner `global`.
-1. Auswählen **MS Dynamics OData-Cloud Service (OData-Dienst)** Konfiguration und tippen Sie auf **[!UICONTROL Eigenschaften]**. Das Dialogfeld &quot;Cloud Service-Konfigurationseigenschaft&quot;wird geöffnet.
+1. Navigieren Sie zu **[!UICONTROL Tools > Cloud Service > Data Sources]** und wählen Sie die `global` Konfigurationsordner.
+1. Auswählen **MS Dynamics OData-Cloud Service (OData-Dienst)** Konfiguration und wählen Sie **[!UICONTROL Eigenschaften]**. Das Dialogfeld &quot;Cloud Service-Konfigurationseigenschaft&quot;wird geöffnet.
 
    Auf der Registerkarte **Authentifizierungseinstellungen**:
 

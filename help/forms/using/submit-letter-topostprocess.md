@@ -11,10 +11,10 @@ discoiquuid: 9b06c394-8e26-429c-b78f-22afa271aeb3
 docset: aem65
 feature: Correspondence Management
 exl-id: 91ee4422-99c1-4907-a507-5968c6984f28
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## Nachbearbeitung {#post-processing}
 
-Agenten können Arbeitsabläufe für Nachbearbeitungsprozesse in Briefen und interaktiver Kommunikation verknüpfen und ausführen. Zur Ausführung anstehende Nachbearbeitungsprozesse können in der Eigenschaftenansicht der Briefvorlage ausgewählt werden. Sie können Nachbearbeitungsprozesse einrichten, um Ihre finalen Briefe per E-Mail zu senden, zu drucken oder zu archivieren.
+Agenten können Arbeitsabläufe für Nachbearbeitungsprozesse in Briefen und interaktiver Kommunikation verknüpfen und ausführen. Der auszuführende Nachbearbeitungsprozess kann in der Ansicht &quot;Eigenschaften&quot;der Briefvorlage ausgewählt werden. Sie können Nachbearbeitungsprozesse einrichten, um Ihre endgültigen Briefe per E-Mail zu versenden, zu drucken, zu faxen oder zu archivieren.
 
 ![Nachbearbeitung](assets/ppoverview.png)
 
@@ -71,16 +71,16 @@ Sie müssen die Nachbearbeitungsprozesse zuerst einrichten, bevor Sie sie mit Br
 ## Einstellungen für die Veröffentlichungsinstanz {#settings-on-the-publish-instance}
 
 1. Anmelden bei `https://localhost:publishport/aem/forms`.
-1. Navigieren Sie zu **[!UICONTROL Briefe]**, um den in der Veröffentlichungsinstanz verfügbaren veröffentlichten Brief anzuzeigen.
-1. Konfigurieren Sie die Einstellungen für AEM DS. Weitere Informationen finden Sie unter [Konfigurieren von Einstellungen für AEM DS](../../forms/using/configuring-the-processing-server-url-.md).
+1. Navigieren Sie zu **[!UICONTROL Briefe]** um den veröffentlichten Brief anzuzeigen, der in der Veröffentlichungsinstanz verfügbar ist.
+1. Konfigurieren Sie die AEM DS-Einstellungen. Siehe [AEM DS-Einstellungen konfigurieren](../../forms/using/configuring-the-processing-server-url-.md).
 
 >[!NOTE]
 >
->Wenn Sie Forms oder AEM-Workflows verwenden, müssen Sie den DS-Einstellungsdienst konfigurieren, bevor Sie Übermittlungen vom Veröffentlichungsserver durchführen. Andernfalls schlägt die Übermittlung in Forms fehl.
+>Bei Verwendung von Forms- oder AEM-Workflows ist es vor der Übermittlung durch den Veröffentlichungsserver erforderlich, den DS-Einstellungsdienst zu konfigurieren. Andernfalls schlägt die Übermittlung des Formulars fehl.
 
 ## Abrufen von Briefinstanzen {#letter-instances-retrieval}
 
-Gespeicherte Briefinstanzen können weiter bearbeitet werden, beispielsweise durch Abrufen und Löschen von Briefinstanzen, indem die folgenden, in LetterInstanceService definierten APIs verwendet werden.
+Gespeicherte Briefinstanzen können weiter bearbeitet werden, z. B. das Abrufen von Briefinstanzen und Löschen von Briefinstanzen, indem die folgenden in LetterInstanceService definierten APIs verwendet werden.
 
 <table>
  <tbody>
@@ -112,24 +112,24 @@ Gespeicherte Briefinstanzen können weiter bearbeitet werden, beispielsweise dur
  </tbody>
 </table>
 
-## Verknüpfen eines Nachbearbeitungsprozesses mit einem Brief {#associating-a-post-process-with-a-letter}
+## Zuordnen eines Nachbearbeitungsprozesses zu einem Brief {#associating-a-post-process-with-a-letter}
 
-Führen Sie auf der CCR-Benutzeroberfläche die folgenden Schritte durch, um einen Nachbearbeitungsprozess mit einem Brief zu verknüpfen:
+Führen Sie in der CCR-Benutzeroberfläche die folgenden Schritte aus, um einen Nachbearbeitungsprozess mit einem Brief zu verknüpfen:
 
-1. Bewegen Sie die Maus über einen Brief und tippen Sie auf **Eigenschaften anzeigen**.
+1. Bewegen Sie den Mauszeiger über einen Brief und wählen Sie **Eigenschaften anzeigen**.
 1. Wählen Sie **Bearbeiten** aus.
-1. Wählen Sie in den „Allgemeine Eigenschaften“ über die Dropdown-Liste „Nachbearbeitung“ den mit Brief zu verknüpfenden Nachbearbeitungsprozess aus. Sowohl die AEM- als auch die Forms-bezogenen Nachbearbeitungsprozesse werden in der Dropdown-Liste aufgelistet.
-1. Tippen Sie auf **Speichern**.
+1. Wählen Sie in den grundlegenden Eigenschaften mithilfe der Dropdown-Liste Nachbearbeitung den Nachbearbeitungsprozess aus, der mit dem Brief verknüpft werden soll. Sowohl die AEM- als auch die Forms-bezogenen Nachbearbeitungsprozesse werden in der Dropdown-Liste aufgelistet.
+1. Wählen Sie **Speichern** aus.
 1. Nachdem Sie den Brief mit dem Nachbearbeitungsprozess konfiguriert haben, veröffentlichen Sie ihn und geben Sie optional in der Veröffentlichungsinstanz die Verarbeitungs-URL im AEM DS-Einstellungsdienst an. Dadurch wird sichergestellt, dass der Nachbearbeitungsprozess in der Verarbeitungsinstanz ausgeführt wird. 
 
-## Neu Laden einer Entwurfsbriefinstanz  {#reloaddraft}
+## Neu laden einer Entwurfsbriefinstanz  {#reloaddraft}
 
-Über die folgende URL kann eine Entwurfsbriefinstanz neu geladen werden:
+Eine Entwurfsbriefinstanz kann in der Benutzeroberfläche mithilfe der folgenden URL neu geladen werden:
 
 `https://<server>:<port>/aem/forms/`
 
 `createcorrespondence.html?/random=$&cmLetterInstanceId=$<LetterInstanceId>`
 
-LetterInstaceID: Die eindeutige ID der gesendeten Briefinstanz.
+LetterInstanceID: Die eindeutige ID der gesendeten Briefinstanz.
 
-Weitere Informationen zum Speichern eines Entwurfbriefs finden Sie unter[ Speichern von Entwürfen und Senden von Briefinstanzen](../../forms/using/create-correspondence.md#savingdrafts).
+Weitere Informationen zum Speichern eines Briefentwurfs finden Sie unter [Speichern von Entwürfen und Senden von Briefinstanzen](../../forms/using/create-correspondence.md#savingdrafts).

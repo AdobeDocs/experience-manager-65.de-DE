@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
 docset: aem65
 exl-id: bca4044a-18a9-4b97-92de-eff1e9a840f9
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 74%
+ht-degree: 71%
 
 ---
 
@@ -43,7 +43,7 @@ Mit der Aktion „E-Mail senden“ kann ein Autor automatisch eine E-Mail an ein
 
 1. Öffnen Sie ein adaptives Formular im **[!UICONTROL Bearbeitungsmodus]**.
 
-1. Tippen Sie auf der Registerkarte **[!UICONTROL Inhalt]** auf **[!UICONTROL Formular-Container]** und dann auf ![Konfigurieren](assets/configure-icon.svg), um die Eigenschaften des adaptiven Formulars anzuzeigen.
+1. Im **[!UICONTROL Inhalt]** Registerkarte auswählen **[!UICONTROL Formular-Container]** und wählen ![konfigurieren](assets/configure-icon.svg) , um die Eigenschaften des adaptiven Formulars anzuzeigen.
 
 1. Wählen Sie im Abschnitt **[!UICONTROL Übermittlung]** die Option **[!UICONTROL E-Mail senden]** aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]**.
 

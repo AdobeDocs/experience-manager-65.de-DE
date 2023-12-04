@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '1798'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -164,7 +164,7 @@ Einen Layout-Container können Sie wie andere Komponenten im **Bearbeitungsmodus
 >
 >Da ein Layout-Container ein Absatzsystem ist, werden beim Löschen der Komponente sowohl das Layout-Raster als auch alle Komponenten (und deren Inhalt) gelöscht, die sich im Container befinden.
 
-1. Wenn Sie den Mauszeiger über den Rasterplatzhalter bewegen oder darauf tippen, wird das Aktionsmenü angezeigt.
+1. Wenn Sie den Mauszeiger über den Rasterplatzhalter bewegen oder diesen auswählen, wird das Aktionsmenü angezeigt.
 
    ![screen_shot_2018-03-23at085357](assets/screen_shot_2018-03-23at085357.png)
 
