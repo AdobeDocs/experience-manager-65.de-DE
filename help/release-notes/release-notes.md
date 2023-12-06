@@ -4,9 +4,9 @@ description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsan
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
 source-git-commit: f8f82ad5805095f331432471b614225f761e645c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3530'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 97%
 Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enthalten sind:
 
 * Ermöglicht den Benutzenden des Seiteneditors bzw. der Bildkomponente die Referenzierung von Assets aus dem Remote Assets Cloud Service.  (SITES-13448, SITES-13433)
-* AEM unterstützt jetzt die serverseitige Sortierung für eine schnellere Projektnavigation in der Listenansicht. Projektknoten werden nach der vom Benutzer ausgewählten Spalte sortiert, bevor sie in der Benutzeroberfläche angezeigt werden.
+* AEM unterstützt jetzt die Server-seitige Sortierung für eine schnellere Projektnavigation in der Listenansicht. Projektknoten werden nach der von der Benutzerin bzw. dem Benutzer ausgewählten Spalte sortiert, bevor sie in der Benutzeroberfläche angezeigt werden.
 
 **Veraltete Funktion**
 
@@ -447,7 +447,7 @@ Um das Problem zu beheben, suchen Sie die Datei `<AEM_Forms_Installation_dir>\jb
 
 #### Installation des Servlet-Fragments (AEM Service Pack 6.5.14.0 oder früher)
 
-* Wenn Sie ein Upgrade auf AEM Service Pack 6.5.15.0 oder höher durchführen und Ihre AEM-Instanz auf Tomcat 8.5.88 läuft, müssen Sie das Servlet-Fragment installieren. *before* Sie fahren mit der Installation von Service Pack 6.5.15.0 oder höher fort.
+* Wenn Sie auf AEM Service Pack 6.5.15.0 oder höher aktualisieren und Ihre AEM-Instanz auf Tomcat 8.5.88 ausgeführt wird, müssen Sie das Servlet-Fragment installieren, *bevor* Sie mit der Installation von Service Pack 6.5.15.0 oder höher fortfahren.
 * Die Installation des Servlet-Fragments ist obligatorisch für alle Anwendungs-Server, mit Ausnahme derer, die auf JBoss® EAP 7.4.0 laufen.
 
 **So installieren Sie das Servlet-Fragment:**
@@ -475,7 +475,8 @@ Um das Problem zu beheben, laden Sie den [Hotfix für 6.5.18.0](/help/release-no
 
 #### Interaktive Kommunikationen
 
-* Nach der Aktualisierung auf AEM Service Pack 18 ist es nicht möglich, die interaktive Kommunikation mit großen Inline-Bildern im Bearbeitungsmodus zu öffnen. (FORMS-10578) Um das Problem zu beheben, installieren Sie die [Hotfix für 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+* Nach der Aktualisierung auf AEM Service Pack 18 ist es nicht möglich, die interaktive Kommunikation mit großen Inline-Bildern im Bearbeitungsmodus zu öffnen. (FORMS-10578)
+Um das Problem zu beheben, laden Sie das [Hotfix für 6.5.18.0](/help/release-notes/aem-forms-hotfix.md) herunter.
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 
