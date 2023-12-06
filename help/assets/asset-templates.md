@@ -5,10 +5,10 @@ contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 82%
+source-wordcount: '1552'
+ht-degree: 81%
 
 ---
 
@@ -105,7 +105,7 @@ Sie können Marketingmaterial sofort nach dem Erstellen bearbeiten. Alternativ h
 
    ![chlimage_1-114](assets/chlimage_1-319.png)
 
-   Sie können auch nach Bildern suchen, indem Sie Schlüsselwörter, Tags und den Veröffentlichungsstatus angeben. Sie können das [!DNL Experience Manager Assets]-Repository durchsuchen und zum Speicherort des gewünschten Bildes navigieren.
+   Sie können auch mithilfe von Keywords, Tags und basierend auf ihrem Veröffentlichungsstatus nach Bildern suchen. Sie können das [!DNL Experience Manager Assets]-Repository durchsuchen und zum Speicherort des gewünschten Bildes navigieren.
 
    ![chlimage_1-115](assets/chlimage_1-320.png)
 

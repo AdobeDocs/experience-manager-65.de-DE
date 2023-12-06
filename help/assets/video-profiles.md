@@ -1,20 +1,18 @@
 ---
 title: Videoprofile
 description: Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. Sie können für Ihre Videos auch smartes Zuschneiden nutzen.
-uuid: 26a20984-db63-41e9-b16c-6e164b7596a0
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 feature: Video Profiles
 role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '3732'
+source-wordcount: '3770'
 ht-degree: 98%
 
 ---
@@ -63,7 +61,7 @@ In der folgenden Tabelle werden die Best Practice Codierungsprofile für das ada
    <td><strong>Video-Bitrate (kBit/s)</strong></td>
    <td><strong>Video-Framerate (FPS)</strong></td>
    <td><strong>Audio-Codec</strong></td>
-   <td><strong>Audiobitrate   (Kbit/s)</strong></td>
+   <td><strong>Audio-Bitrate (kBit/s)</strong></td>
   </tr>
   <tr>
    <td><p>MP4 H.264 (mp4)</p> </td>

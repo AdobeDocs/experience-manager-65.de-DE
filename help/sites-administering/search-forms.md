@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '2072'
-ht-degree: 70%
+ht-degree: 69%
 
 ---
 
@@ -242,7 +242,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr>
   <tr>
    <td>Veröffentlichungsstatus </td>
-   <td>Suche nach Assets basierend auf ihrem Veröffentlichungsstatus</td>
+   <td>Suchen nach Assets basierend auf ihrem Veröffentlichungsstatus</td>
    <td>
     <ul>
      <li>Feldbezeichnung</li>

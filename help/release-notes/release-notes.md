@@ -3,10 +3,10 @@ title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: f8f82ad5805095f331432471b614225f761e645c
-workflow-type: ht
-source-wordcount: '3530'
-ht-degree: 100%
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+workflow-type: tm+mt
+source-wordcount: '3552'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 | Version | 6.5.19.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Typ | Service Pack-Version |
 | Datum | Donnerstag, 30. November 2023 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| Download-URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.19.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Download-URL | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.19.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
 ## Was in [!DNL Experience Manager] 6.5.19.0 enthalten ist {#what-is-included-in-aem-6519}
 
@@ -109,7 +109,7 @@ in
 #### GraphQL-Abfrage-Editor{#sites-graphql-query-editor-6519}
 
 * In der Benutzeroberfläche des GraphQL-Editors können Sie nicht durch alle gespeicherten Abfragen scrollen, wenn eine große Anzahl von Abfragen vorliegt (z. B. mehr als 25). (SITES-16008)
-* Der GraphQL-Editor speichert den Veröffentlichungsstatus von persistierten Abfragen nicht. Die Schaltfläche zum Rückgängigmachen der Veröffentlichung erscheint im GraphQL-Editor, aber das Symbol, das anzeigt, dass die persistierte Abfrage veröffentlicht ist, erscheint nicht. Beim Aktualisieren der Seite zeigt sich, dass die persistierte Abfrage nicht einmal veröffentlicht ist. (SITES-15858)
+* Der GraphQL-Editor speichert den Veröffentlichungsstatus persistenter Abfragen nicht. Die Schaltfläche zum Rückgängigmachen der Veröffentlichung erscheint im GraphQL-Editor, aber das Symbol, das anzeigt, dass die persistierte Abfrage veröffentlicht ist, erscheint nicht. Beim Aktualisieren der Seite zeigt sich, dass die persistierte Abfrage nicht einmal veröffentlicht ist. (SITES-15858)
 
 #### Launches{#sites-launches-6519}
 
@@ -242,7 +242,7 @@ Die Fehlerbehebungen in [!DNL Experience Manager] Forms werden eine Woche nach d
 
 1. Erstellen Sie vor der Installation eine Momentaufnahme oder ein neues Backup Ihrer [!DNL Experience Manager]-Instanz.
 
-1. Laden Sie das Service Pack von [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.19.0.zip) herunter. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Laden Sie das Service Pack herunter von [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.19.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Öffnen Sie Package Manager und wählen Sie dann **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen. Weitere Informationen finden Sie unter [Package Manager](/help/sites-administering/package-manager.md).
 
@@ -269,7 +269,7 @@ Es gibt zwei verschiedene Methoden, mit denen Sie [!DNL Experience Manager] 6.5.
 
 Informationen zu den Plattformen, die für diese Version zertifiziert sind, finden Sie in den [technischen Anforderungen](/help/sites-deploying/technical-requirements.md).
 
-1. Die Seite mit den Produktinformationen (`/system/console/productinfo`) zeigt die aktualisierte Versionszeichenfolge `Adobe Experience Manager (6.5.19.0)` unter [!UICONTROL Installierte Produkte] an. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Die Seite mit den Produktinformationen (`/system/console/productinfo`) zeigt die aktualisierte Versionszeichenfolge an. `Adobe Experience Manager (6.5.19.0)` under [!UICONTROL Installierte Produkte]. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Alle OSGi-Bundles sind in der OSGi-Konsole entweder **[!UICONTROL AKTIV]** oder **[!UICONTROL FRAGMENT]** (zu verwendende Web-Konsole: `/system/console/bundles`).
 

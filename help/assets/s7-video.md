@@ -1,20 +1,18 @@
 ---
 title: Video
 description: Erfahren Sie mehr über das zentrale Video-Asset-Management in Adobe Experience Manager Assets, wo Sie Videos zur automatischen Kodierung in Dynamic Media Classic hochladen und direkt über Experience Manager Assets auf Dynamic Media Classic-Videos zugreifen können. Die Dynamic Media Classic-Videointegration erweitert die Reichweite optimierter Videos auf alle Bildschirme.
-uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
-discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: User, Admin
 mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1559'
-ht-degree: 89%
+source-wordcount: '1551'
+ht-degree: 88%
 
 ---
 
@@ -151,7 +149,7 @@ Die verschiedenen Videokodierungsmethoden werden anhand der S7-Kodierungsvorgabe
 
 1. Wählen Sie in Experience Manager **[!UICONTROL Tools]** > **[!UICONTROL Konfigurationskonsole]** aus.
 1. Navigieren Sie in der **[!UICONTROL Konfigurationskonsole]** in der Navigationsstruktur zu **[!UICONTROL Tools]** > **[!UICONTROL DAM]** > **[!UICONTROL Videoprofile]**.
-1. Erstellen Sie ein S7-Videoprofil. Wählen Sie im Menü **[!UICONTROL Neu]** die Option **[!UICONTROL Seite erstellen]** und anschließend die Scene7-Videoprofilvorlage aus. Geben Sie der neuen Videoprofilseite einen Namen und wählen Sie **[!UICONTROL Erstellen]** aus.
+1. Erstellen Sie ein S7-Videoprofil. Im **[!UICONTROL Neu]**. Menü auswählen **[!UICONTROL Seite erstellen]** und wählen Sie dann die Vorlage Scene7-Videoprofil aus. Geben Sie der neuen Videoprofilseite einen Namen und wählen Sie **[!UICONTROL Erstellen]** aus.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 

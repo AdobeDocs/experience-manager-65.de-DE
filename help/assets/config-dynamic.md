@@ -2,21 +2,19 @@
 title: Konfigurieren des Dynamic Media-Hybridmodus
 description: Erfahren Sie mehr über die Konfiguration des Dynamic Media-Hybridmodus.
 mini-toc-levels: 3
-uuid: 39ad7d83-d310-4baf-9d85-5532c2f201f3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '7791'
-ht-degree: 88%
+source-wordcount: '7684'
+ht-degree: 87%
 
 ---
 
@@ -80,7 +78,7 @@ Sie können Dynamic Media nur für Bilder, nur für Video oder sowohl für Bilde
   </tr>
   <tr>
    <td>NUR Bilder in der Produktion bereitstellen</td>
-   <td>Bilder werden über Server in den weltweiten Rechenzentren von Adobe bereitgestellt und dann von einem CDN zwischengespeichert, um eine skalierbare Leistung und globale Reichweite zu erzielen.</td>
+   <td>Bilder werden über Server in Adobes Rechenzentren bereitgestellt und dann von einem CDN zwischengespeichert, um eine skalierbare Leistung und globale Reichweite zu erzielen.</td>
    <td>
     <ol>
      <li>Markieren Sie auf dem Experience Manager-<strong>Autor</strong>-Knoten die Option <a href="#enabling-dynamic-media">Dynamic Media aktivieren</a>.</li>
@@ -95,7 +93,7 @@ Sie können Dynamic Media nur für Bilder, nur für Video oder sowohl für Bilde
   </tr>
   <tr>
    <td>NUR Bilder vor der Produktion bereitstellen (Entwicklung, QE, Staging usw.)</td>
-   <td>Bilder werden über den Experience Manager-Veröffentlichungsknoten bereitgestellt. Da bei diesem Szenario nur minimaler Traffic anfällt, müssen keine Bilder für das Rechenzentrum von Adobe bereitgestellt werden. Und es ermöglicht eine sichere Vorschau von Inhalten vor dem Start der Produktion.</td>
+   <td>Bilder werden über den Experience Manager-Veröffentlichungsknoten bereitgestellt. In diesem Fall ist der Traffic minimal, da keine Bilder an das Adobe Data Center übermittelt werden müssen. Und es ermöglicht eine sichere Vorschau von Inhalten vor dem Start der Produktion.</td>
    <td>
     <ol>
      <li>Markieren Sie auf dem Experience Manager-<strong>Autor</strong>-Knoten die Option <a href="#enabling-dynamic-media">Dynamic Media aktivieren</a>.</li>
@@ -121,7 +119,7 @@ Sie können Dynamic Media nur für Bilder, nur für Video oder sowohl für Bilde
   </tr>
   <tr>
    <td>Bereitstellen VON SOWOHL Bildern als auch Videos in der Produktion</td>
-   <td><p>Videos werden vom CDN für skalierbare Leistung und eine globale Reichweite bereitgestellt und zwischengespeichert. Bilder und Videobilder werden über Server in den weltweiten Rechenzentren von Adobe bereitgestellt und dann von einem CDN zwischengespeichert, um eine skalierbare Leistung und globale Reichweite zu erzielen.</p> <p>Informationen zur Einrichtung für Bilder oder Videos in der Phase vor der Produktion finden Sie in den obigen Abschnitten. </p> </td>
+   <td><p>Videos werden vom CDN für skalierbare Leistung und eine globale Reichweite bereitgestellt und zwischengespeichert. Bilder und Videobilder werden über Server in weltweiten Rechenzentren bereitgestellt und dann von einem CDN zwischengespeichert, um eine skalierbare Performance und globale Reichweite zu erzielen.</p> <p>Informationen zur Einrichtung für Bilder oder Videos in der Phase vor der Produktion finden Sie in den obigen Abschnitten. </p> </td>
    <td>
     <ol>
      <li>Markieren Sie auf dem Experience Manager-<strong>Autor</strong>-Knoten die Option <a href="#enabling-dynamic-media">Dynamic Media aktivieren</a>.</li>
@@ -301,7 +299,7 @@ Richten Sie die Replikationsauthentifizierung auf der Autoreninstanz ein, damit 
    * Wählen Sie die **[!UICONTROL KeyStore-Datei]** aus. Gehen Sie zu der KeyStore-Datei, die Sie von Adobe erhalten haben, wählen Sie sie aus und klicken Sie dann auf **[!UICONTROL Öffnen]**.
    * Geben Sie im Feld **[!UICONTROL Kennwort für KeyStore-Datei]** das Kennwort für die KeyStore-Datei ein. Dies ist **nicht** das KeyStore-Kennwort, das Sie in Schritt 5 erstellt haben, sondern das Kennwort für die KeyStore-Datei, das Sie in der Begrüßungs-E-Mail von Adobe während der Bereitstellung erhalten haben. Wenden Sie sich an dien Kunden-Support von Adobe, um Ihr Kennwort zu erhalten (falls noch nicht vorhanden).
    * Geben Sie im Feld **[!UICONTROL Kennwort für privaten Schlüssel]** das Kennwort für den privaten Schlüssel ein (dies kann dasselbe Kennwort für den privaten Schlüssel wie im vorherigen Schritt sein). Das Kennwort für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Nehmen Sie Kontakt mit dem Kunden-Support von Adobe auf, falls Sie kein Kennwort für den privaten Schlüssel erhalten haben.
-   * Geben Sie im Feld **[!UICONTROL Alias für privaten Schlüssel]** den Alias für den privaten Schlüssel ein, z. B. `*companyname*-alias`. Der Alias für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Nehmen Sie Kontakt mit dem Kunden-Support von Adobe auf, falls Sie keinen Alias für den privaten Schlüssel erhalten haben.
+   * Im **[!UICONTROL Alias für privaten Schlüssel]** Geben Sie den Alias für den privaten Schlüssel ein. Beispiel: `*companyname*-alias`. Der Alias für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Nehmen Sie Kontakt mit dem Kunden-Support von Adobe auf, falls Sie keinen Alias für den privaten Schlüssel erhalten haben.
 
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
@@ -625,7 +623,7 @@ Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Vi
 
 Die Vorgabe für die Videoanalyse - manchmal auch als Analysevorgabe bezeichnet - wird in Dynamic Media neben den Viewer-Vorgaben gespeichert. Sie entspricht im Wesentlichen einer Viewer-Vorgabe, enthält jedoch Informationen zum Konfigurieren von AppMeasurement- und Video Heartbeat-Berichten.
 
-Die Eigenschaften der Vorgabe sind:
+Die Eigenschaften der Vorgabe lauten wie folgt:
 
 * `reportSuite`
 * `trackingServer`

@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1912'
-ht-degree: 1%
+source-wordcount: '1910'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +52,7 @@ Wenn eine neue Community-Site erstellt wird, werden neue Benutzergruppen dynamis
 
 Die Namen der Gruppen werden aus dem Namen generiert, der der Site während der [Community-Site-Erstellung](sites-console.md#step13asitetemplate). Die eindeutigen IDs vermeiden Namenskonflikte für ähnlich benannte Community-Sites und Community-Gruppen auf demselben Server.
 
-Wenn der Site-Name beispielsweise &quot;*interagieren*&quot;für eine Site mit dem Namen &quot;We.Retail Engage&quot;eine der erstellten Benutzergruppen lautet:
+Wenn der Site-Name beispielsweise &quot;*interagieren*&quot;für eine Site mit dem Namen &quot;Interagieren&quot;eine der erstellten Benutzergruppen lautet:
 
 * Community *Engage* Mitglieder
 
@@ -213,7 +213,7 @@ Im Folgenden finden Sie einige Konfigurationsdetails für Community-Mitglieder u
 
    * Legen Sie die folgenden Eigenschaften fest:
 
-      * **[!UICONTROL User auto membership]**: `community-<site name>-<uid>-members`
+      * **[!UICONTROL Automatische Benutzermitgliedschaft]**: `community-<site name>-<uid>-members`
       * **[!UICONTROL Benutzerpfadpräfix]**: `/community`
       * **[!UICONTROL Group Path Prefix]**: `/community`
 

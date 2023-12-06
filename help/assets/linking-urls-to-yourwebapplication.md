@@ -1,19 +1,17 @@
 ---
 title: Verknüpfen von URLs mit einer Web-Anwendung
 description: Verknüpfen von URLs mit einer Web-Anwendung in Dynamic Media
-uuid: cf599e66-b1f9-40c0-b572-cea19f2e6793
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: User, Admin
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: Configuration
-source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
-workflow-type: ht
-source-wordcount: '1279'
-ht-degree: 100%
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+workflow-type: tm+mt
+source-wordcount: '1284'
+ht-degree: 98%
 
 ---
 
@@ -69,19 +67,19 @@ Es gibt mehrere Möglichkeiten, eine URL-Zeichenfolge zu erhalten. Die folgenden
 
    * Wenn Sie ein Bild im Dropdown-Menü ausgewählt haben, klicken Sie auf **[!UICONTROL Ausgabedarstellungen]**.
 
-      Klicken Sie unter der Überschrift **[!UICONTROL Dynamisch]** auf einen Vorgabennamen, um die zugehörige Ausgabedarstellung im rechten Rahmen anzuzeigen. Führen Sie bei Bedarf einen Bildlauf in der Liste „Ausgabedarstellungen“ durch, um die Überschrift „Dynamisch“ anzuzeigen.
+     Klicken Sie unter der Überschrift **[!UICONTROL Dynamisch]** auf einen Vorgabennamen, um die zugehörige Ausgabedarstellung im rechten Rahmen anzuzeigen. Führen Sie bei Bedarf einen Bildlauf in der Liste „Ausgabedarstellungen“ durch, um die Überschrift „Dynamisch“ anzuzeigen.
 
-      Klicken Sie unten in der linken Seitenleiste auf **[!UICONTROL URL]**.
+     Klicken Sie unten in der linken Seitenleiste auf **[!UICONTROL URL]**.
 
-      ![chlimage_1-270](assets/chlimage_1-270.png)
+     ![chlimage_1-270](assets/chlimage_1-270.png)
 
    * Wenn Sie ein Rotationsset, Bildset, Karussellset oder Video ausgewählt haben, wählen Sie im Dropdown-Menü **[!UICONTROL Viewer]** aus.
 
-      Wählen Sie in der linken Leiste den Namen einer Viewer-Vorgabe aus. Eine Vorschau des Sets oder Videos wird auf einer separaten Seite geöffnet.
+     Wählen Sie in der linken Leiste den Namen einer Viewer-Vorgabe aus. Eine Vorschau des Sets oder Videos wird auf einer separaten Seite geöffnet.
 
-      Klicken Sie auf der linken Leiste unten auf **[!UICONTROL URL]**.
+     Klicken Sie auf der linken Leiste unten auf **[!UICONTROL URL]**.
 
-      ![chlimage_1-271](assets/chlimage_1-271.png)
+     ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. Markieren Sie den Text und kopieren Sie ihn in den Webbrowser, um eine Vorschau des Assets anzuzeigen oder es der Web-Inhaltsseite hinzuzufügen.
 
@@ -115,15 +113,15 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
-         Beispiel: `https://aem.com/is/content/adobe/image.gif`.
+        Beispiel: `https://aem.com/is/content/adobe/image.gif`.
+
    * Klicken Sie auf **[!UICONTROL Asset]** > **[!UICONTROL Dynamische Ausgabedarstellungen]** und klicken Sie dann auf eine dynamische Ausgabedarstellung des statischen Assets und kopieren Sie die URL.
 
-      Ändern Sie die kopierte URL, um `is/content` anstelle von `is/image/` im Pfad zu verwenden.
-
+     Ändern Sie die kopierte URL, um `is/content` anstelle von `is/image/` im Pfad zu verwenden.
 
 ## Abrufen einer Video-URL für eine veröffentlichte Videoausgabedarstellung {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. Gehen Sie in Adobe Experience Manager zu **[!UICONTROL Tools]** > **[!UICONTROL Implementierung]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
+1. Gehen Sie in Adobe Experience Manager zu **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
 1. Scrollen Sie auf der Seite **[!UICONTROL Cloud Services]** nach unten zur Überschrift **[!UICONTROL Dynamic Media Cloud Services]** und klicken Sie dann auf **[!UICONTROL Konfigurationen anzeigen]**.
 1. Wählen Sie unter **[!UICONTROL Verfügbare Konfigurationen]** den Namen der gewünschten Konfiguration.
 
@@ -160,7 +158,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
 ## Abrufen einer Video-URL für Streaming mit adaptiver Bit-Rate (DASH oder HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. Gehen Sie in Adobe Experience Manager zu **[!UICONTROL Tools]** > **[!UICONTROL Implementierung]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
+1. Gehen Sie in Adobe Experience Manager zu **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
 1. Scrollen Sie auf der Seite **[!UICONTROL Cloud Services]** nach unten zur Überschrift **[!UICONTROL Dynamic Media Cloud Services]** und klicken Sie dann auf **[!UICONTROL Konfigurationen anzeigen]**.
 1. Wählen Sie unter **[!UICONTROL Verfügbare Konfigurationen]** den Namen der gewünschten Konfiguration.
 1. Gehen Sie auf der Seite **[!UICONTROL Cloud Services-Einstellungen für Dynamic Media]** wie folgt vor:
@@ -173,14 +171,13 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    * Kopieren Sie unter **[!UICONTROL Registrierungs-ID]** den Kundennamen im letzten Teil der ID. Sie benötigen den kopierten Kundennamen später bei diesen Schritten.
 
-      Beispiel: Für die Registrierungs-ID `87654321|demoCo` lautet der Name des Kunden, den Sie kopieren, `demoCo`.
-
+     Beispiel: Für die Registrierungs-ID `87654321|demoCo` lautet der Name des Kunden, den Sie kopieren, `demoCo`.
 
 1. Je nachdem, welches Videobereitstellungsprotokoll Sie verwenden möchten, kopieren Sie den entsprechenden Protokollselektor. Der kopierte Protokollselektor wird in den nachfolgenden Schritten benötigt.
 
    | Von Ihnen verwendetes Videobereitstellungsprotokoll | Zu verwendender Protokollselektor |
    |---|---|
-   | HTTP   <br> Wenn Sie HTTP (unsichere Videobereitstellung) verwenden, müssen Sie in der Videodienst-URL, die Sie zuvor kopiert haben, „https“ in „http“ ändern. | `public/` |
+   | HTTP <br> Wenn Sie HTTP (nicht sichere Videobereitstellung) verwenden, stellen Sie sicher, dass Sie in der Videodienst-URL, die Sie zuvor kopiert haben, HTTPS in HTTP ändern. | `public/` |
    | HTTPS | `public-ssl/` |
 
 1. Kopieren Sie den vollständigen Video-Asset-Pfad in Adobe Experience Manager, wie mit Dynamic Media verarbeitet. Der kopierte Video-Asset-Pfad wird in den nachfolgenden Schritten benötigt.

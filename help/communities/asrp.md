@@ -1,20 +1,16 @@
 ---
 title: ASRP - Adobe Storage Resource Provider
-seo-title: ASRP - Adobe Storage Resource Provider
 description: Einrichten von AEM Communities zur Verwendung einer relationalen Datenbank als gemeinsamen Speicher
-seo-description: Set up AEM Communities to use a relational database as its common store
-uuid: abe47ad9-9f72-4dad-a5e9-6d621a9722d4
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 role: Admin
 exl-id: 6430ed96-5d96-41b6-866f-90b34ff84f7a
-source-git-commit: 42feafa381c129117dae5345255702f0b0951a17
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '792'
 ht-degree: 1%
 
 ---
@@ -46,15 +42,15 @@ Der Verbraucher- und der geheime Schlüssel werden für alle Report Suites eines
 
 Die [Speicherkonfigurationskonsole](/help/communities/srp-config.md) ermöglicht die Auswahl der standardmäßigen Speicherkonfiguration, die angibt, welche SRP-Implementierung verwendet werden soll.
 
-**In der AEM-Autoreninstanz:**
+**In AEM Autoreninstanz:**
 
-* Navigieren Sie von der globalen Navigation zu **[!UICONTROL Tools > Communities > Speicherkonfiguration]** und wählen Sie **[!UICONTROL Adobe Storage Resource Provider (ASRP)]**.
+* Navigieren Sie von der globalen Navigation zu **[!UICONTROL Tools > Communities > Speicherkonfiguration]** und wählen **[!UICONTROL Adobe Storage Resource Provider (ASRP)]**.
 
 ![asrp-default](assets/asrp-default.png)
 
 Die folgenden Informationen stammen aus dem Bereitstellungsprozess:
 
-* **Data Center URL**: Pulldown zur Auswahl des Produktionsdatencenters, das von Ihrem Kundenbetreuer identifiziert wird.
+* **Data Center URL**: Pulldown, um das Produktionsdatencenter auszuwählen, das von Ihrem Kundenbetreuer identifiziert wurde.
 * **Standard-Report Suite**: Geben Sie den Namen der Standard-Report Suite ein.
 * **Consumer Key**: Geben Sie den Consumer-Schlüssel ein.
 * **Geheimnis**: Geben Sie das Geheimnis ein.
@@ -69,7 +65,7 @@ Testen Sie nach dem Senden der Konfiguration die Verbindung:
 
 * Auswählen **Testkonfiguration**.
 
-   Testen Sie für jede Autoren- und Veröffentlichungsinstanz die Verbindung zum Rechenzentrum über die Konsole Speicherkonfiguration .
+  Testen Sie für jede Autoren- und Veröffentlichungsinstanz die Verbindung zum Rechenzentrum über die Konsole Speicherkonfiguration .
 
 * Stellen Sie sicher, dass die Site-URLs für Profildaten vom Rechenzentrum routbar sind durch [Externalisieren von Links](#externalize-links).
 
@@ -95,12 +91,12 @@ ASRP muss in allen Autoren- und Veröffentlichungsinstanzen als gemeinsamer Spei
 
 So stellen Sie die identische Konfiguration in der Veröffentlichungsumgebung zur Verfügung:
 
-In der AEM-Autoreninstanz:
+In AEM Autoreninstanz:
 
 * Navigieren Sie vom Hauptmenü zu **[!UICONTROL Instrumente]** > **[!UICONTROL Implementierung]** > **[!UICONTROL Replikation]**
 * Auswählen **Baum aktivieren**
-* **Startpfad**: Durchsuchen nach `/conf/global/settings/communities/srpc/`
-* Auswahl aufheben **Nur geändert**
+* **Startpfad**: Navigieren Sie zu `/conf/global/settings/communities/srpc/`
+* Auswahl deaktivieren **Nur geändert**
 * Auswählen **Aktivieren**
 
 ## Upgrade von AEM 6.0 {#upgrading-from-aem}
@@ -130,11 +126,11 @@ Wenn Sie ein Upgrade von einer bestehenden Social Community-Site AEM 6.0 durchf�
 
 Wenn Authentifizierungsfehler für die Data Center-URL empfangen und die AEM error.log Meldungen zu veralteten Zeitstempeln enthält, überprüfen Sie, ob eine Zeitsynchronisierung stattfindet.
 
-Verwenden Sie ein Tool wie das [Network Time Protocol (NTP)](https://www.ntp.org/) , um alle AEM Autoren- und Veröffentlichungsserver zu synchronisieren.
+Verwenden Sie ein Tool wie das [Network Time Protocol (NTP)](https://www.ntp.org/) , um alle AEM Autoren- und Veröffentlichungs-Server zu synchronisieren.
 
 ### Neue Inhalte werden nicht in Suchvorgängen angezeigt {#new-content-does-not-appear-in-searches}
 
-Die Cloud-Speicher-Infrastruktur der Adobe verwendet *Konsistenz* , um die Skalierungs- und Leistungsziele zu erreichen. Aus diesem Grund sind neue Inhalte nicht sofort verfügbar und es dauert mehrere Sekunden, bis sie in den Suchergebnissen angezeigt werden.
+Die Adobe Cloud-Speicherinfrastruktur verwendet *Konsistenz* , um die Skalierungs- und Leistungsziele zu erreichen. Aus diesem Grund sind neue Inhalte nicht sofort verfügbar und es dauert mehrere Sekunden, bis sie in den Suchergebnissen angezeigt werden.
 
 Während das Intervall, das sich auf die Konsistenz auswirkt, überwacht wird, wenden Sie sich an Ihren Kundenbetreuer, wenn es länger als einige Sekunden dauert, bis neue Inhalte bei Suchvorgängen angezeigt werden.
 

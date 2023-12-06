@@ -1,22 +1,18 @@
 ---
 title: Veröffentlichen von Sammlungen in Brand Portal
-seo-title: Publish collections to Brand Portal
-description: Erfahren Sie, wie Sie Sammlungen in Brand Portal veröffentlichen und Veröffentlichungen rückgängig machen können.
-seo-description: Learn how to publish and unpublish collections to Brand Portal.
-uuid: 7de58548-4cfa-4a94-bac7-9e914dee9042
+description: Erfahren Sie, wie Sie Sammlungen in Brand Portal veröffentlichen und deren Veröffentlichung rückgängig machen können.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: brand-portal
 content-type: reference
-discoiquuid: 90e3fd0e-9bc3-4aff-8c7b-7408f5b940e8
 docset: aem65
 feature: Brand Portal
 role: User
 exl-id: 8f426012-d9ec-418e-8ab6-78e4aeff7538
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: ht
-source-wordcount: '322'
-ht-degree: 100%
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 87%
 
 ---
 
@@ -30,7 +26,7 @@ Spätere Änderungen an der ursprünglichen Sammlung in AEM Assets spiegeln sich
 >
 >Inhaltsfragmente können nicht in Brand Portal veröffentlicht werden. Wenn Sie daher in der AEM-Autoreninstanz Inhaltsfragmente auswählen, ist die Aktion **In Brand Portal veröffentlichen** nicht verfügbar.
 >
->Wenn Sammlungen, die Inhaltsfragmente enthalten, über die AEM-Autoreninstanz in Brand Portal veröffentlicht werden, wird der gesamte Inhalt des Ordners mit Ausnahme der Inhaltsfragmente auf der Brand Portal-Oberfläche repliziert.
+>Wenn Sammlungen, die Inhaltsfragmente enthalten, aus AEM Autoreninstanz in Brand Portal veröffentlicht werden, werden alle Inhalte des Ordners mit Ausnahme der Inhaltsfragmente auf die Brand Portal-Benutzeroberfläche repliziert.
 
 ## Veröffentlichen einer Sammlung in Brand Portal {#publish-a-collection-to-brand-portal}
 

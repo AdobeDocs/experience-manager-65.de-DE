@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '6130'
 ht-degree: 76%
@@ -84,7 +84,7 @@ Weitere Informationen zur Authoring-Oberfläche zum Erstellen der interaktiven K
 
    | **Komponente** | **Funktionalität** |
    |---|---|
-   | Diagramm | Fügt ein Diagramm hinzu, das Sie in interaktiver Kommunikation zur visuellen Darstellung von zweidimensionalen Daten verwenden können, die aus einer Formulardatenmodellsammlung abgerufen werden. Weitere Informationen finden Sie unter [Verwenden von Diagrammen mit interaktiver Kommunikation](/help/forms/using/chart-component-interactive-communications.md). |
+   | Diagramm | Fügt ein Diagramm hinzu, das Sie in der interaktiver Kommunikation zur visuellen Darstellung von zweidimensionalen Daten verwenden können, die aus einer Formulardatenmodellsammlung abgerufen werden. Weitere Informationen finden Sie unter [Verwenden von Diagrammen mit interaktiver Kommunikation](/help/forms/using/chart-component-interactive-communications.md). |
    | Dokumentfragment | Ermöglicht das Hinzufügen einer wiederverwendbaren Komponente wie Text, Liste oder Bedingung zu einer interaktiven Kommunikation. Die hinzugefügte Komponente kann entweder auf einem Formulardatenmodell oder ohne Formulardatenmodell basieren. |
    | Bild | Ermöglicht das Einfügen eines Bildes. |
 

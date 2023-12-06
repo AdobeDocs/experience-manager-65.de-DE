@@ -1,20 +1,18 @@
 ---
 title: 360-Grad-/VR-Video
-description: Erfahren Sie mehr über die Verwendung von 360-Grad- und Virtual Reality (VR)-Videos in Dynamic Media.
-uuid: c21bf2c0-7acc-401f-857e-0186de86e7a1
+description: Erfahren Sie, wie Sie mit 360- und VR-Videos (Virtual Reality) in Dynamic Media arbeiten.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
 feature: 360 VR Video
 role: User, Admin
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: c0a60ec39e35fa8113ce9e1795561709b9c7e289
-workflow-type: ht
-source-wordcount: '1109'
-ht-degree: 100%
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+workflow-type: tm+mt
+source-wordcount: '1143'
+ht-degree: 89%
 
 ---
 
@@ -22,9 +20,9 @@ ht-degree: 100%
 
 360-Grad-Videos zeichnen ein Motiv aus allen Richtungen gleichzeitig auf. Sie werden mit einer omnidirektionalen Kamera oder mit mehreren Kameras aufgenommen. Während der Wiedergabe auf einer flachen Anzeige können Benutzende den Anzeigewinkel bestimmen; bei der Wiedergabe auf Mobilgeräten werden in der Regel die integrierten gyroskopischen Funktionen verwendet.
 
-Der Dynamic Media – Scene7-Modus bietet native Unterstützung für die Bereitstellung von 360-Grad-Video-Assets. Standardmäßig ist keine weitere Konfiguration für die Anzeige oder die Wiedergabe erforderlich. 360-Grad-Videos werden mit Standardvideoerweiterungen wie .mp4, .mkv und .mov bereitgestellt. Der am häufigsten verwendete Codec ist H.264.
+Der Dynamic Media – Scene7-Modus bietet native Unterstützung für die Bereitstellung von 360-Grad-Video-Assets. Standardmäßig ist keine weitere Konfiguration für die Anzeige oder die Wiedergabe erforderlich. 360-Grad-Videos werden mit Standardvideoerweiterungen wie .mp4, .mkv und .mov bereitgestellt. Der häufigste Codec ist H.264.
 
-In diesem Abschnitt erfahren Sie, wie Sie mit dem 360-Grad-/VR-Video-Viewer ein Panoramavideo für eine interaktive Anzeige eines Raums, einer Eigenschaft, eines Standorts, einer Landschaft oder eines medizinischen Verfahrens rendern.
+In diesem Abschnitt wird beschrieben, wie Sie mit dem 360/VR-Video-Viewer ein Panoramavideo für ein interaktives Betrachtungserlebnis eines Raums, einer Eigenschaft, eines Standorts, einer Landschaft, eines medizinischen Verfahrens usw. rendern können.
 
 Räumliches Audio wird derzeit nicht unterstützt. Falls Audio in Stereo gemischt wird, ändert sich die Balance (L/R) nicht, wenn der Kunde den Anzeigewinkel der Kamera ändert.
 
@@ -39,7 +37,7 @@ Wählen Sie [Space Station 360](https://s7d1.scene7.com/s7viewers/html5/Video360
 
 ## 360-Grad-/VR-Video und Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
-Sie können 360-Grad-/VR-Videos mit Adobe Premiere Pro anzeigen und bearbeiten. Beispielsweise können Sie Logos und Text in einer Szene platzieren sowie speziell für Panoramavideos entwickelte Effekte und Überblendungen anwenden.
+Sie können Adobe Premier Pro verwenden, um 360/VR-Aufnahmen anzuzeigen und zu bearbeiten. Sie können beispielsweise Logos und Text richtig in einer Szene platzieren und speziell für Panoramedien entwickelte Effekte und Übergänge anwenden.
 
 Weitere Informationen finden Sie unter [Bearbeiten von 360-Grad-/VR-Videos](https://helpx.adobe.com/de/premiere-pro/how-to/edit-360-vr-video.html).
 
@@ -63,11 +61,13 @@ Beim Hochladen in Adobe Experience Manager werden 360-Grad-Video-Assets wie norm
 
       * 1080p – 1920 x 1080 (Full HD- oder FHD-Auflösung) oder
       * 2160p – 3840 x 2160 (4K-, UHD- oder Ultra HD-Auflösung). Diese hohe Auflösung ist häufig auf Premium-Fernsehgeräten und Computer-Monitoren verfügbar. Die 2160p-Auflösung wird häufig als „4K“ bezeichnet, da die Breite fast 4000 Pixel beträgt. Das heißt, sie bietet viermal so viele Pixel wie 1080p.
+
    * [Erstellen Sie ein benutzerdefiniertes adaptives Videoprofil](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) mit hochwertigeren Ausgabedarstellungen. Ein Beispiel: Sie möchten ein adaptives Videoprofil erstellen, das diese drei Einstellungen enthält:
 
       * width=auto; height=720; bitrate=2500 kbps
       * width=auto; height=1080; bitrate=5000 kbps
       * width=auto; height=1440; bitrate=6600 kbps
+
    * Verarbeiten Sie 360-Grad-Videoinhalte in einem Ordner, der ausschließlich 360-Grad-Video-Assets enthält.
 
    Dieser Ansatz stellt höhere Anforderungen an das Netzwerk und die CPU des Endbenutzers.
@@ -85,9 +85,9 @@ Standardmäßig erkennt Experience Manager Videos als „360“, wenn ihr Seiten
    * **Eigenschaftstyp**: Doppelt
    * **Wert**: Gleitkomma-Seitenverhältnis, standardmäßig 2.0.
 
-Wenn Sie diese Eigenschaft festlegen, wird sie umgehend auf vorhandene und neu hochgeladene Videos angewendet.
+Nachdem Sie diese Eigenschaft festgelegt haben, wird sie sowohl für vorhandene als auch für neu hochgeladene Videos sofort wirksam.
 
-Das Seitenverhältnis gilt für 360-Grad-Video-Assets für die Asset-Detailseite und die [WCM-Komponente für 360-Grad-Videos](/help/assets/adding-dynamic-media-assets-to-pages.md#dynamic-media-components).
+Das Seitenverhältnis gilt für 360-Grad-Video-Assets für die Asset-Detailseite und die [Video 360 Media WCM-Komponente](/help/assets/adding-dynamic-media-assets-to-pages.md#dynamic-media-components).
 
 Laden Sie zunächst 360-Grad-Videos hoch.
 
@@ -124,7 +124,8 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynam
 
    * Wählen Sie in der Viewer-Liste **[!UICONTROL Video360VR]** aus.
 
-      Virtual Reality (VR)-Videos sind interaktive Videoinhalte, die über Virtual-Reality-Headsets angezeigt werden. Wie bei herkömmlichen Videos erstellen Sie VR-Videos zu Beginn, wenn ein Video mit 360-Grad-Videokameras aufgezeichnet oder erfasst wird.
+     Virtual Reality (VR)-Videos sind interaktive Videoinhalte, die über Virtual-Reality-Headsets angezeigt werden. Wie bei herkömmlichen Videos erstellen Sie VR-Videos zu Beginn, wenn ein Video mit 360-Grad-Videokameras aufgezeichnet oder erfasst wird.
+
    ![Screenshot einer Nahaufnahme der im Weltraum schwebenden internationalen Weltraumstation, wobei Erde und Sonne teilweise im Hintergrund sichtbar sind](assets/6_5_360video-preview-video360vr.png)
    *Screenshot eines 360-Grad-VR-Videos.*
 

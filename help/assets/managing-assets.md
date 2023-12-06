@@ -1,19 +1,17 @@
 ---
 title: Verwalten von Dynamic Media-Assets
-description: Informationen zum Arbeiten mit Dynamic Media-Assets, wie Videos und Bilder, nachdem sie hochgeladen wurden. Sie können Assets in der Vorschau anzeigen, herunterladen oder veröffentlichen.
-uuid: 9c7f9d4e-caab-434f-a1ae-eca16c883461
+description: Erfahren Sie, wie Sie nach dem Hochladen mit Dynamic Media-Assets wie Videos und Bildern arbeiten. Sie können Assets in der Vorschau anzeigen, herunterladen oder veröffentlichen.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 feature: Asset Management
 role: User, Admin
 exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
-source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '128'
-ht-degree: 81%
+ht-degree: 75%
 
 ---
 
