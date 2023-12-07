@@ -1,17 +1,15 @@
 ---
 title: Erste Schritte mit dem Prozess-Reporting
 description: Auszuführende Schritte, um mit AEM Forms on JEE-Prozess-Reporting zu beginnen
-uuid: 685cad39-da2c-411d-a0b0-201917438bcf
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: process-reporting
-discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1673'
-ht-degree: 100%
+source-wordcount: '1676'
+ht-degree: 98%
 
 ---
 
@@ -68,7 +66,7 @@ Führen Sie die folgenden Schritte aus, um den Veröffentlichungszeitplan zu än
 1. Starten Sie den AEM Forms-Server neu.
 
 1. Beenden Sie die AEM Forms-Server-Instanz.
-1. Melden Sie sich bei der WebSphere® Administrative Console an. Klicken Sie in der Navigationsstruktur auf **Servers** > **Application Servers** und klicken Sie anschließend im rechten Bereich auf den Server-Namen.
+1. Melden Sie sich bei WebSphere® Administrative Console an. Klicken Sie in der Navigationsstruktur auf **Server** > **Anwendungsserver** und klicken Sie dann im rechten Bereich auf den Servernamen.
 
 1. Klicken Sie unter „Server Infrastructure“ auf **Java™ and Process Management** > **Process Definition**.
 

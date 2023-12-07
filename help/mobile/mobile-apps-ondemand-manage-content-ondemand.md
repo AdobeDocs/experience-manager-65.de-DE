@@ -1,18 +1,14 @@
 ---
 title: Verwalten von Inhalten
-seo-title: Managing Content
 description: Inhaltsverwaltungsaktionen sind die Bausteine, mit denen Inhalte in einer Anwendung erstellt und verwaltet werden können. Auf dieser Seite erfahren Sie mehr.
-seo-description: Content Management actions are the building blocks that help to create and manage content within an application. Follow this page to learn more.
-uuid: ab680836-133b-45b9-913c-e721b7e9fc04
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: 89fc3701-0472-4629-95d3-da577581a0f0
 exl-id: 4e37e814-ceb6-4dfa-a4d3-754f15ca4edf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '276'
 ht-degree: 3%
 
 ---
@@ -31,7 +27,7 @@ Wenn Sie an eine Online-Zeitschrift denken, enthält der Hauptinhalt Artikel, An
 
 * **Artikel**: Text basiert zusammen mit Kunst zum Vermitteln von Informationen
 * **Banner:** normalerweise grafische Werbe-Links
-* **Sammlungen:** eine genau definierte *Behälter* mit Inhalten wie Artikeln oder Bannern gefüllt, die dem Titelthema entsprechen
+* **Sammlungen:** eine genau definierte *Bucket* mit Inhalten wie Artikeln oder Bannern gefüllt, die dem Titelthema entsprechen
 
 * **Freigegebene Ressourcen:** ermöglicht die Wiederverwendung oder Freigabe von gemeinsamen Artikeln
 
@@ -44,7 +40,7 @@ Wenn Sie an eine Online-Zeitschrift denken, enthält der Hauptinhalt Artikel, An
 In den folgenden Themen wird die Erstellung und Verwaltung von Inhalten beschrieben, d. h. von Artikeln, Bannern und Sammlungen. Sobald Sie wissen, wie Sie den Inhalt erstellen und verwalten können, werden Ihnen weitere Themen angezeigt, wie das Hochladen freigegebener Ressourcen, das Veröffentlichen/Rückgängigmachen der Veröffentlichung von Inhalten und die Vorschau mit Preflight.
 
 * [Verwalten von Artikeln](/help/mobile/mobile-on-demand-managing-articles.md)
-* [Verwalten von Bannern](/help/mobile/mobile-on-demand-managing-banners.md)
+* [Banner verwalten](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Verwalten von Sammlungen](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Hochladen freigegebener Ressourcen](/help/mobile/mobile-on-demand-shared-resources.md)
 * [Veröffentlichung von Inhalt rückgängig machen](/help/mobile/mobile-on-demand-publishing-unpublishing.md)

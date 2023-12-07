@@ -1,20 +1,16 @@
 ---
 title: MySQL-Konfiguration für DSRP
-seo-title: MySQL Configuration for DSRP
 description: Herstellen einer Verbindung zum MySQL-Server und Einrichten der UGC-Datenbank
-seo-description: How to connect to the MySQL server and establish the UGC database
-uuid: c058cc88-7ca2-4aed-9a36-b080e603f886
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 role: Admin
 exl-id: eafb60be-2963-4ac9-8618-50fd9bc6fe6c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 3%
+source-wordcount: '705'
+ht-degree: 1%
 
 ---
 
@@ -98,7 +94,7 @@ Wenn die MySQL Workbench zum ersten Mal gestartet wird, sofern sie nicht bereits
 
 1. Auswählen `Test Connection` Überprüfen der Verbindung zum ausgeführten MySQL-Dienst
 
-**Anmerkungen**:
+**Hinweise**:
 
 * Der Standardanschluss ist `3306`
 * Der ausgewählte Verbindungsname wird als Datenquellenname unter [JDBC OSGi-Konfiguration](#configurejdbcconnections)
@@ -122,7 +118,7 @@ Das SQL-Skript wird aus dem AEM Repository abgerufen:
    * Beispiel: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
 1. Wählen Sie den Ordner /libs/social/config/datastore/dsrp/schema aus.
-1. Download `init-schema.sql`
+1. Herunterladen `init-schema.sql`
 
    ![database-schema-crxde](assets/database-schema-crxde.png)
 
@@ -192,7 +188,7 @@ Wenn MySQL auf einem Server ausgeführt wird, der sich von AEM unterscheidet, mu
 
      Oder geben Sie den konfigurierten Benutzernamen für den MySQL-Server ein, falls nicht &quot;root&quot;.
 
-   * **[!UICONTROL Kennwort]**:
+   * **[!UICONTROL Passwort]**:
 
      Löschen Sie dieses Feld, wenn kein Kennwort für MySQL festgelegt wurde.
 

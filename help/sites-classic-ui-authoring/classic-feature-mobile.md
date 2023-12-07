@@ -1,15 +1,13 @@
 ---
 title: Verfassen einer Seite für Mobilgeräte
 description: Wenn Sie eine Seite für Mobilgeräte bearbeiten, wird die Seite so angezeigt, dass das Mobilgerät emuliert wird. Beim Bearbeiten der Seite können Sie zwischen mehreren Emulatoren wechseln, um zu sehen, was der Endbenutzer bzw. die Endbenutzerin beim Zugriff auf die Seite sehen.
-uuid: ca16979d-6e5f-444d-b959-ae92542039b2
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 430a27b5-f344-404f-8bf8-0d91b49b605e
 exl-id: d5372474-d8aa-4e64-919d-0bd29ba99d99
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 100%
 
@@ -17,9 +15,9 @@ ht-degree: 100%
 
 # Verfassen einer Seite für Mobilgeräte{#authoring-a-page-for-mobile-devices}
 
-Wenn Sie eine Seite für Mobilgeräte bearbeiten, wird die Seite so angezeigt, dass das Mobilgerät emuliert wird. Beim Bearbeiten der Seite können Sie zwischen mehreren Emulatoren wechseln, um zu sehen, was der Endbenutzer bzw. die Endbenutzerin beim Zugriff auf die Seite sehen.
+Wenn Sie eine Seite für Mobilgeräte bearbeiten, wird die Seite so angezeigt, dass das Mobilgerät emuliert wird. Beim Bearbeiten der Seite können Sie zwischen mehreren Emulatoren wechseln, um zu sehen, was die Endbenutzerinnen und -benutzer beim Zugriff auf die Seite sehen.
 
-Geräte sind entsprechend ihrer Fähigkeit zur Wiedergabe einer Seite in die Kategorien „Feature“, „Smart“ und „Touch“ eingeteilt. Wenn die Endbenutzer bzw. Endbenutzerinnen auf eine mobile Seite zugreifen, erkennt AEM das Gerät und übermittelt die Darstellung, die der Gerätegruppe entspricht.
+Geräte sind entsprechend ihrer Fähigkeit zur Wiedergabe einer Seite in die Kategorien „Feature“, „Smart“ und „Touch“ eingeteilt. Wenn die Endbenutzerinnen und -benutzer auf eine mobile Seite zugreifen, erkennt AEM das Gerät und übermittelt die Darstellung, die der Gerätegruppe entspricht.
 
 >[!NOTE]
 >

@@ -1,18 +1,16 @@
 ---
 title: Umfassende Suche
 description: Rasches Auffinden Ihrer Inhalte dank umfassender Suchfunktionen
-uuid: 21605b96-b467-4d01-9a64-9d0648d539f1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 82%
+source-wordcount: '517'
+ht-degree: 79%
 
 ---
 
@@ -34,7 +32,7 @@ Die Suchleiste bietet Ihnen folgende Möglichkeiten:
 
 * Suchen Sie nach einem bestimmten Keyword, Pfad oder Tag.
 * Filtern nach ressourcenspezifischen Kriterien, wie Änderungsdatum, Seitenstatus, Dateigröße usw.
-* Definieren und Verwenden einer [gespeicherten Suche](#saved-searches), die auf den oben genannten Kriterien basiert.
+* Definieren und Verwenden eines [gespeicherte Suche](#saved-searches) - auf der Grundlage der oben genannten Kriterien.
 
 >[!NOTE]
 >

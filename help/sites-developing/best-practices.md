@@ -1,17 +1,15 @@
 ---
-title: Best Practices für AEM-Entwicklerinnen und -Entwickler
+title: Best Practices für AEM Entwickler
 description: Die Entwicklungs- und Beratungs-Teams von Adobe haben einen umfassenden Satz an Best Practices für AEM-Entwicklerinnen und -Entwickler zusammengestellt.
-uuid: f962c31f-8140-482f-b189-16376e23bfed
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: ht
-source-wordcount: '466'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 98%
 
 ---
 

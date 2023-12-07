@@ -1,18 +1,14 @@
 ---
 title: Referenzthemen
-seo-title: Reference Themes
 description: AEM Forms bietet anpassungsfähige Formulardesigns, die Sie von Software Distribution beziehen und zur Gestaltung eines Formulars verwenden können.
-seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
-uuid: 3c6bd309-aa5a-4953-91ed-25ed5ba5671a
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: a69d3787-8149-4bca-835d-aeecfb11702b
 docset: aem65
 exl-id: f6c24894-c322-4c44-b001-8978954d6e53
-source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
-workflow-type: ht
-source-wordcount: '533'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '525'
+ht-degree: 72%
 
 ---
 
@@ -29,7 +25,7 @@ ht-degree: 100%
 * U.S. Web Design Standards
 * Tranquil
 
-Jedes Design enthält einen eindeutigen und eleganten Stil, den Sie verwenden können, um fantastische adaptive Formulare für Benutzer zu erstellen. Es enthält die eindeutige Formatierung für Selektoren wie Bereich, Textfeld, numerisches Feld, Optionsfeld, Tabelle und Schalter. Formatierungen in diesen Designs basieren auf Anforderungen. Beispiel: In bestimmten Fällen benötigen Sie ein minimalistisches Design mit klaren Schriftarten. Mit dem Freiheitsdesign können Sie diesen Look erzielen.
+Jedes Design enthält einen einzigartigen und eleganten Stil, den Sie verwenden können, um ansprechende adaptive Formulare für Ihre Benutzerinnen und Benutzer zu erstellen. Es enthält einen eindeutigen Stil für Selektoren wie Bedienfeld, Textfeld, numerisches Feld, Optionsfeld, Tabelle und Umschalter. Die Stile in diesen Designs basieren auf Anforderungen. Beispielsweise benötigen Sie in einem bestimmten Szenario ein minimalistisches Design mit sauberen Schriftarten. Mit dem Freiheits-Design können Sie diesen Look erzielen.
 
 ![Referenzthemen](assets/ref-themes.png)
 
@@ -49,7 +45,7 @@ Das Beryl-Design wird vom adaptiven We.Gov-Formular verwendet, und hebt die Verw
 
 ## Exec {#exec}
 
-Exec-Design vermeidet einfarbige Hintergrundfüllungen, um die Formularkomponenten hervorzuheben. Das Auswählen vonund Klicken auf Komponenten ändert die Schriftfarben. Im Vergleich zum standardmäßigen Arbeitsflächendesign ändert sich die Schriftfarbe des Texts in der ausgewählten Registerkarte Dunkelblau. Beachten Sie, wie sich die Navigations- und Senden-Schaltflächen vom Beryl-Design unterscheiden.
+Exec theme vermeidet durchgehende Hintergrundfüllungen, um Formularkomponenten hervorzuheben. Durch Auswählen und Klicken auf Komponenten werden die Schriftfarben geändert. Im Vergleich zum standardmäßigen Canvas-Design ändert sich die Schriftfarbe des Texts auf der ausgewählten Registerkarte in dunkelblau. Beachten Sie, dass sich die Navigations- und Senden-Schaltflächen vom Beryl-Design unterscheiden.
 
 ![Exec-Design](assets/exec.png)
 
@@ -59,7 +55,7 @@ Exec-Design vermeidet einfarbige Hintergrundfüllungen, um die Formularkomponent
 
 ## Exec Light {#exec-light}
 
-Exec Light-Design verwendet Leerräume, um ein nahtloses Benutzererlebnis zu erstellen. Die Schaltflächen „Weiter“ und „Senden“ erhalten eine durchgehende Füllung und einen 3D-Schatten. Ausgewählte Registerkarten links erhalten einen Pfeil statt Doppelhäkchen.
+Exec Light-Design verwendet Leerzeichen, um ein nahtloses Erlebnis zu erstellen. Die Schaltflächen Weiter und Senden erhalten eine durchgehende Füllung und einen 3D-Schatten. Ausgewählte Registerkarten auf der linken Seite erhalten einen Pfeil anstelle von doppelten Häkchen.
 
 ![Exec light-Design](assets/exec-light.png)
 
@@ -69,7 +65,7 @@ Exec Light-Design verwendet Leerräume, um ein nahtloses Benutzererlebnis zu ers
 
 ## Liberty {#liberty}
 
-Das Liberty-Design verwendet eine minimalistische Herangehensweise, um das Wichtige hervorzuheben. Beispielsweise die Schriftfarbe der besuchten Registerkarte ändert sich in Grün. Sie können nur die untere Kontur des Textfelds sehen, was den Look eines papierbasierten Formulars mit Linien simuliert. Das aktive Textfeld hat eine schwarze untere Kontur, während andere eine hellgraue untere Kontur haben.
+Das Thema &quot;Freiheit&quot;verwendet einen minimalistischen Ansatz, um das Wichtige hervorzuheben. Die Schriftfarbe der besuchten Registerkarte ändert sich beispielsweise in Grün. Sie können nur den unteren Umriss des Textfelds sehen, das das Erscheinungsbild eines papierbasierten Formulars mit Linien emuliert. Das aktive Textfeld hat einen schwarzen unteren Umriss, während andere einen hellgrauen unteren Umriss erhalten.
 
 ![Liberty-Design](assets/liberty.png)
 
@@ -79,7 +75,7 @@ Das Liberty-Design verwendet eine minimalistische Herangehensweise, um das Wicht
 
 ## Tranquil {#tranquil}
 
-Das Tranquil-Design bietet helle und dunkle Schatten des Tranquil-Farbschemas, um verschiedene Komponenten eines Formulars hervorzuheben. Beispielsweise erhalten Optionsfelder, Bereiche und Registerkarten einen anderen Grünton.
+Das Tranquil-Design bietet helle und dunkle Schattierungen des Tranquil-Farbschemas, um verschiedene Komponenten eines Formulars hervorzuheben. Beispielsweise erhalten Optionsfelder, Bereiche und Registerkarten jeweils einen anderen Grünton.
 
 ![Tranquil-Design](assets/tranquil.png)
 

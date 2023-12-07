@@ -1,24 +1,20 @@
 ---
 title: Aktivieren der Online-Kommentierung für das Adobe Reader-Plug-in für Webbrowser
-seo-title: Enabling online commenting for Adobe Reader web browser plug-in
-description: Erfahren Sie, wie Sie Online-Kommentare für Adobe Reader-Webbrowser-Plug-In aktivieren.
-seo-description: Learn how to enable online commenting for Adobe Reader web browser plug-in.
-uuid: 3ac5270f-2b8a-47b1-b0ca-a5607476923f
+description: Erfahren Sie, wie Sie die Online-Kommentierung für das Adobe Reader-Webbrowser-Plug-in aktivieren.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9c4f8e1e-c2f7-4648-9a2a-104bd540a47a
 exl-id: 6db1e998-f810-4715-b0b7-981e8d807cf8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '113'
-ht-degree: 100%
+ht-degree: 15%
 
 ---
 
 # Aktivieren der Online-Kommentierung für das Adobe Reader-Plug-in für Webbrowser {#enabling-online-commenting-for-adobe-reader-web-browser-plug-in}
 
-Zum Aktivieren der „Kommentieren und markieren“-Werkzeugleiste in einer PDF-Datei, die mithilfe des Adobe Reader-Webbrowser-Plug-Ins angezeigt wird, muss ein Back-End für die Zusammenarbeit vorhanden sein, wie z. B. ein Überarbeitungsserver. Steht kein Back-End für die Zusammenarbeit zur Verfügung, müssen Sie die PDF-Datei auf Ihrem Computer speichern, sie dort in Adobe Reader überarbeiten und markieren und sie anschließend an den Absender zurücksenden.
+Um die Symbolleiste &quot;Kommentar&quot;und &quot;Markup&quot;in einer PDF-Datei zu aktivieren, die mithilfe des Adobe Reader-Webbrowser-Plug-ins angezeigt wird, muss ein Back-End für die Zusammenarbeit vorhanden sein, z. B. ein Überprüfungsserver. Wenn kein Back-End für die Zusammenarbeit verfügbar ist, müssen Sie die PDF-Datei auf Ihrem Computer speichern, die Datei in Adobe Reader überprüfen und markieren und sie an den Urheber zurücksenden.
 
-Wenn Onlinekommentierung in einer Umgebung ohne Zusammenarbeitsfunktionalität erforderlich ist, wenden Sie sich wegen weiterer Informationen an den Adobe-Support.
+Wenn Onlinekommentierung in einer nicht kollaborativen Umgebung erforderlich ist, wenden Sie sich für weitere Informationen an den Adobe Support.

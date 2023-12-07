@@ -1,25 +1,21 @@
 ---
 title: Erweiterte Systemattribute konfigurieren
-seo-title: Configure advanced system attributes
-description: Sie können bestimmte Einstellungen in der Konfigurationsdatei auf der Seite „Erweiterte Systemattribute konfigurieren“ ändern, ohne die Datei exportieren, bearbeiten und importieren zu müssen.
-seo-description: Use the Configure Advanced System Attributes page to modify certain settings in the configuration file without the need to export, edit, and import the file.
-uuid: 6bcfbaa9-f492-46aa-97d2-00fc3e67d0d7
+description: Auf der Seite "Erweiterte Systemattribute konfigurieren"können Sie bestimmte Einstellungen in der Konfigurationsdatei ändern, ohne die Datei exportieren, bearbeiten und importieren zu müssen.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 533ad3f7-3905-420d-8bb9-8ae8f14fb28e
 exl-id: 809af2c0-6f5c-4dd4-af48-dbf476c9ea45
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '475'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '480'
+ht-degree: 88%
 
 ---
 
 # Erweiterte Systemattribute konfigurieren {#configure-advanced-system-attributes}
 
-Sie können bestimmte Einstellungen in der Konfigurationsdatei auf der Seite „Erweiterte Systemattribute konfigurieren“ ändern, ohne die Datei exportieren, bearbeiten und importieren zu müssen. (Siehe [Konfigurationsdatei importieren und exportieren](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
+Auf der Seite &quot;Erweiterte Systemattribute konfigurieren&quot;können Sie bestimmte Einstellungen in der Konfigurationsdatei ändern, ohne die Datei exportieren, bearbeiten und importieren zu müssen. (Siehe [Konfigurationsdatei importieren und exportieren](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).
 
 1. Klicken Sie in der Administration-Console auf **[!UICONTROL „Einstellungen“ > „User Management“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“]**.
 1. (Optional) Ändern Sie folgende Sitzungsattribute:

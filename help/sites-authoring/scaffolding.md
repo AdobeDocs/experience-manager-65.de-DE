@@ -1,14 +1,12 @@
 ---
 title: Strukturvorlage für Seitenerstellung in Adobe Experience Manager
 description: Eine Strukturvorlage dient zur Erstellung eines Formulars mit Feldern, die die gewünschte Seitenstruktur bilden. Anhand dieses Formulars können Sie ganz einfach auf dieser Struktur basierende Seiten erstellen.
-uuid: f2542fe2-598f-4631-ae64-a6ee14cd7748
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: f5025f64-d3ce-43e8-9666-5c7c162536c7
 exl-id: e3488c9d-035f-4165-ad32-21103ec7e581
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 83%

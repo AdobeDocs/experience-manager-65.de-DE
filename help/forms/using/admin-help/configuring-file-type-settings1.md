@@ -1,17 +1,13 @@
 ---
 title: Konfigurieren von Dateitypeinstellungen
-seo-title: Configuring file type settings
 description: Erfahren Sie, wie Sie Dateitypeinstellungen konfigurieren.
-seo-description: Learn how to configure file type settings.
-uuid: 58a05500-ffbb-4fa2-8ae1-8ac80ab2d099
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 89f4d3cf-eb2e-4d55-8209-16ecbba03792
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '6167'
+source-wordcount: '6161'
 ht-degree: 38%
 
 ---
@@ -618,7 +614,7 @@ Sie können auch angeben, wie Formulare gesendet werden. Die Optionen sind XML, 
 
 Sie können die Einstellungen für andere Anwendungen nicht über Administration Console ändern. Sie zeigen die Dateinamenerweiterungen für die unterstützten Dateitypen an. Anweisungen zum Zugriff auf diese Einstellungen finden Sie unter [Dateitypeinstellungen erstellen oder bearbeiten](https://help.adobe.com/de_DE/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
 
-* Corel WordPerfect:  `wpd`
+* Corel WordPerfect: `wpd`
 * Adobe PageMaker: `pmd, pm6, p65, pm`
 * Adobe FrameMaker: `fm`
 * Adobe Photoshop: `psd`

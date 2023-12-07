@@ -1,25 +1,21 @@
 ---
 title: Ändern der Reihenfolge der Auswertung für die Authentifizierung
-seo-title: Change the order of evaluation for authentication
-description: Sie können die Reihenfolge ändern, in der AEM Forms mehrere Anbieter zur Authentifizierung auswertet.
-seo-description: You can change the order in which AEM forms evaluates multiple authentication providers.
-uuid: c2693e5b-cf09-4bb8-815a-2b20ebf6eea0
+description: Sie können die Reihenfolge ändern, in der AEM Formulare mehrere Authentifizierungsanbieter auswertet.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 5434df9c-ecf6-450a-aa7e-d9ab69b66fe6
 exl-id: 7e29c9d4-fb82-4308-aac7-0f5cb1f4aef2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '147'
-ht-degree: 100%
+ht-degree: 59%
 
 ---
 
 # Ändern der Reihenfolge der Auswertung für die Authentifizierung {#change-the-order-of-evaluation-for-authentication}
 
-Wenn Sie mehrere Authentifizierungsanbieter konfiguriert haben, können Sie die Reihenfolge ändern, in der AEM Forms diese Anbieter zur Authentifizierung auswertet. Die Reihenfolge, in der die Authentifizierungsanbieter in der Datei „config.xml“ aufgelistet werden, bestimmt die Reihenfolge der Auswertung für die Authentifizierung.
+Wenn Sie mehrere Authentifizierungsanbieter konfiguriert haben, können Sie die Reihenfolge ändern, in der AEM Formulare sie zur Authentifizierung auswertet. Die Reihenfolge der Authentifizierungsanbieter, die in der Datei config.xml aufgeführt sind, bestimmt die Reihenfolge der Auswertung für die Authentifizierung.
 
 1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Benutzerverwaltung“ > „Konfiguration“ > „Konfigurationsdateien importieren und exportieren“.
 1. Um die aktuellen Konfigurationseinstellungen in eine Datei zu exportieren, klicken Sie auf „Exportieren“ und speichern Sie die Konfigurationsdatei an einem anderen Speicherort.
@@ -46,4 +42,4 @@ Wenn Sie mehrere Authentifizierungsanbieter konfiguriert haben, können Sie die 
    Bearbeiten Sie unter `<entry key="order" value="3" />` den Wert für jeden Knoten, um die Reihenfolge der Authentifizierungsbewertung festzulegen.
 
 1. Um die aktualisierte Datei zu importieren, klicken Sie in „Benutzerverwaltung“ auf „Konfiguration“ > „Konfigurationsdateien importieren und exportieren“.
-1. Klicken Sie auf „Durchsuchen“, um die Datei zu suchen, klicken Sie dann auf „Importieren“ und anschließend auf „OK“.
+1. Klicken Sie auf „Durchsuchen“, um die Datei zu suchen, dann auf „Importieren“ und anschließend auf „OK“.

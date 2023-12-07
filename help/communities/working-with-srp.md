@@ -1,33 +1,29 @@
 ---
 title: SRP - Community-Inhaltsspeicherung
-seo-title: SRP - Community Content Storage
 description: Ab AEM Communities 6.1 werden benutzergenerierte Inhalte in einem einzigen, gemeinsamen Speicher gespeichert, der von einem Speicherressourcenanbieter (SRP) bereitgestellt wird
-seo-description: As of AEM Communities 6.1, user generated content (UGC) is stored in a single, common store provided by a storage resource provider (SRP)
-uuid: d45e03c4-378b-4510-a6a0-d48c8cb879d9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 6f13b21a-f4ef-4889-9b8e-4da3f846fa35
 docset: aem65
 role: Admin
 exl-id: e29aae44-67be-43d2-8004-c986412d9e63
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
 
 # SRP - Community-Inhaltsspeicherung {#srp-community-content-storage}
 
-## Einführung    {#introduction}
+## Einführung {#introduction}
 
 Ab AEM Communities 6.1 werden benutzergenerierte Inhalte (UGC) in einem einzigen, gemeinsamen Speicher gespeichert, der von einem Speicherressourcenanbieter (SRP) bereitgestellt wird. Es gibt verschiedene SRP-Optionen, aus denen Sie wählen können, z. B. ASRP, MSRP und JSRP.
 
 Im Gegensatz zu früheren Versionen gibt es keine Reverse/Forward-Replikation von UGC über AEM Instanzen hinweg. Stattdessen ermöglicht das SRP die direkte Zugänglichkeit von UGC für CRUD-Vorgänge (Create, Read, Update, Delete, Erstellen, Aktualisieren und Löschen) in allen Autoren- und Veröffentlichungsinstanzen, mit Ausnahme von JSRP.
 
-Im Folgenden finden Sie die [Merkmale der einzelnen SRP-Optionen](#characteristics-of-srp-options), die für den Entscheidungsprozess bei der Auswahl des geeigneten SRP von entscheidender Bedeutung ist, und [zugrunde liegende Implementierung](/help/communities/topologies.md).
+Im Folgenden finden Sie die [Merkmale der einzelnen SRP-Optionen](#characteristics-of-srp-options), die bei der Auswahl des geeigneten SRP für das Entscheidungsverfahren von entscheidender Bedeutung ist, und [zugrunde liegende Implementierung](/help/communities/topologies.md).
 
 Weitere Informationen zur Verwendung von SRP für UGC finden Sie unter [Übersicht über den Speicheranbieter](/help/communities/srp.md).
 
@@ -45,7 +41,7 @@ Weitere Informationen zur Verwendung von SRP für UGC finden Sie unter [Übersic
 
 [ASRP - Adobe Storage Resource Provider](/help/communities/asrp.md)
 
-Mit dieser Option wird der benutzergenerierte Inhalt remote in einem von Adobe gehosteten und verwalteten Cloud-Service persistiert. Es erfordert eine zusätzliche Lizenz und die Zusammenarbeit mit einem Kundenbetreuer, um das Konto für diese spezifische Lizenz bereitzustellen. ASRP erfordert:
+Mit dieser Option wird der benutzergenerierte Inhalt remote in einem Cloud-Service persistiert, der von Adobe gehostet und verwaltet wird. Es erfordert eine zusätzliche Lizenz und die Zusammenarbeit mit einem Kundenbetreuer, um das Konto für diese spezifische Lizenz bereitzustellen. ASRP erfordert:
 
 * Ein verknüpfter Cloud-Service, der von Adobe bereitgestellt und unterstützt wird, um Community-Inhalte zu speichern.
 * Auswahl eines Rechenzentrums in einer bestimmten geografischen Region (USA, EMEA, APAC).
@@ -132,12 +128,12 @@ Während Site-Inhalte repliziert werden, werden benutzergenerierte Inhalte nie r
 
 ### Verwalten von Benutzerdaten {#managing-user-data}
 
-Auch für CommunitIes von Interesse sind [*Benutzer*, *Benutzergruppen* und *Benutzerprofile*](/help/communities/users.md). Diese benutzerbezogenen Daten, die in der Veröffentlichungsumgebung erstellt und aktualisiert werden, müssen anderen Veröffentlichungsinstanzen zur Verfügung gestellt werden, wenn die Topologie eine [Veröffentlichungsfarm](/help/sites-deploying/recommended-deploys.md#tarmk-farm).
+Auch für CommunitIes von Interesse sind [*Benutzer*, *Benutzergruppen*, und *Benutzerprofile*](/help/communities/users.md). Diese benutzerbezogenen Daten, die in der Veröffentlichungsumgebung erstellt und aktualisiert werden, müssen anderen Veröffentlichungsinstanzen zur Verfügung gestellt werden, wenn die Topologie [Veröffentlichungsfarm](/help/sites-deploying/recommended-deploys.md#tarmk-farm).
 
-Ab AEM Communities 6.1 werden benutzerbezogene Daten mithilfe der Sling-Verteilung anstatt der Replikation synchronisiert. Weitere Informationen finden Sie unter [Benutzersynchronisierung](/help/communities/sync.md).
+Ab AEM Communities 6.1 werden benutzerbezogene Daten mithilfe der Sling-Verteilung anstatt der Replikation synchronisiert. Weitere Informationen unter [Benutzersynchronisierung](/help/communities/sync.md).
 
 ### Upgrade auf AEM Communities 6.5 {#upgrading-to-aem-communities}
 
-Wenn bei der Aktualisierung auf AEM 6.5 Communities bereits vorhandene benutzergenerierte Inhalte beibehalten werden müssen, sollten Schritte unternommen werden, je nachdem, ob die Community von AEM 5.6.1 oder AEM 6.0 die On-Demand-Adobe oder die On-Premise-Speicherung von benutzergenerierten Inhalten verwendet hat.
+Wenn bei der Aktualisierung auf AEM 6.5 Communities bereits vorhandene benutzergenerierte Inhalte beibehalten werden müssen, sollten Schritte unternommen werden, je nachdem, ob die Community von AEM 5.6.1 oder AEM 6.0 Adobe On-Demand-Speicher oder On-Premise-Speicher von benutzergenerierten Inhalten verwendet hat.
 
 Weitere Informationen finden Sie unter [Upgrade auf AEM Communities 6.5](/help/communities/upgrade.md).

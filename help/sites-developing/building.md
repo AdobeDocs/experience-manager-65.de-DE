@@ -1,26 +1,22 @@
 ---
 title: Einbinden von Tagging in eine AEM-Anwendung
-seo-title: Building Tagging into an AEM Application
 description: Programmgesteuert mit Tags oder erweiterten Tags innerhalb einer benutzerdefinierten AEM-Anwendung arbeiten
-seo-description: Programmatically work with tags or extending tags within a custom AEM application
-uuid: 0549552e-0d51-4162-b418-babf4ceee046
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
-source-git-commit: 325af649564d93beedfc762a8f5beacec47b1641
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 67%
+source-wordcount: '849'
+ht-degree: 75%
 
 ---
 
 # Einbinden von Tagging in eine AEM-Anwendung{#building-tagging-into-an-aem-application}
 
-Auf dieser Seite wird die Verwendung der Funktion
+Für das programmgesteuerte Arbeiten mit Tags oder das Erweitern von Tags in einem benutzerdefinierten AEM-Programm beschreibt diese Seite die Verwendung des
 
 * [Tagging-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/tagging/package-summary.html),
 
@@ -30,7 +26,7 @@ Das interagiert mit dem
 
 Weitere Informationen zum Tagging finden Sie unter:
 
-* [Verwalten von Tags](/help/sites-administering/tags.md) Informationen zum Erstellen und Verwalten von Tags und darüber, auf welche Inhalts-Tags angewendet wurden.
+* [Verwalten von Tags](/help/sites-administering/tags.md) für Informationen zum Erstellen und Verwalten von Tags und darüber, auf welche Inhalts-Tags angewendet wurden.
 * [Verwenden von Tags](/help/sites-authoring/tags.md) für Informationen zum Tagging von Inhalten.
 
 ## Übersicht über die Tagging-API {#overview-of-the-tagging-api}
@@ -52,7 +48,7 @@ JcrTagManagerFactory jcrTagManagerFactory;
 TagManager tagManager = jcrTagManagerFactory.getTagManager(session);
 ```
 
-Im typischen Sling-Kontext können Sie sich auch an einen `TagManager` von `ResourceResolver`:
+Im typischen Sling-Kontext können Sie sich auch an einen `TagManager` aus dem `ResourceResolver`:
 
 ```java
 TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
@@ -134,7 +130,7 @@ Das Formular-Widget `CQ.tagging.TagInputField` dient zur Eingabe von Tags. Es be
 
 ## Der Tag Garbage Collector {#the-tag-garbage-collector}
 
-Der Tag Garbage Collector ist ein Hintergrund-Service, der die ausgeblendeten und nicht verwendeten Tags bereinigt. Ausgeblendete und nicht verwendete Tags sind Tags unter `/content/cq:tags`, die eine Eigenschaft `cq:movedTo` haben und nicht auf einem Inhaltsknoten verwendet werden, d. h. ihre Anzahl beträgt null. Durch Verwendung dieses verzögerten Löschvorgangs wird der Inhaltsknoten (d. h. der `cq:tags` -Eigenschaft) im Rahmen des Verschiebevorgangs oder des Zusammenführungsvorgangs nicht aktualisiert werden müssen. Die Verweise in der Eigenschaft `cq:tags` werden automatisch aktualisiert, wenn die Eigenschaft `cq:tags` aktualisiert wird, z. B. durch das Seiteneigenschaften-Dialogfeld.
+Der Tag Garbage Collector ist ein Hintergrund-Service, der die ausgeblendeten und nicht verwendeten Tags bereinigt. Ausgeblendete und nicht verwendete Tags sind Tags unter `/content/cq:tags`, die eine Eigenschaft `cq:movedTo` haben und nicht auf einem Inhaltsknoten verwendet werden, d. h. ihre Anzahl beträgt null. Durch Verwenden dieses Lazy-Deletion-Prozesses muss der Inhaltsknoten (d. h. die Eigenschaft `cq:tags`) nicht als Teil des Verschiebungs- oder des Zusammenführungsvorgangs aktualisiert werden. Die Verweise in der Eigenschaft `cq:tags` werden automatisch aktualisiert, wenn die Eigenschaft `cq:tags` aktualisiert wird, z. B. durch das Seiteneigenschaften-Dialogfeld.
 
 Das Garbage Collector Tag wird standardmäßig einmal am Tag ausgeführt. Sie können sie wie folgt konfigurieren:
 
@@ -152,7 +148,7 @@ Die Tag-Suche und die Tag-Auflistung funktionieren folgendermaßen:
 
 ## Tags in verschiedenen Sprachen {#tags-in-different-languages}
 
-Wie in der Dokumentation zur Verwaltung von Tags im Abschnitt [Verwalten von Tags in verschiedenen Sprachen](/help/sites-administering/tags.md#managing-tags-in-different-languages) beschrieben, kann ein Tag-`title` in verschiedenen Sprachen definiert werden. Eine sprachempfindliche Eigenschaft wird dann dem Tag-Knoten hinzugefügt. Diese Eigenschaft weist das Format `jcr:title.<locale>` auf, beispielsweise `jcr:title.fr` für die französische Übersetzung. Die `<locale>` muss eine ISO-Gebietsschema-Zeichenfolge in Kleinbuchstaben sein und &quot;_&quot;anstelle von &quot;-&quot;verwenden, z. B.: `de_ch`.
+Wie in der Dokumentation zur Verwaltung von Tags im Abschnitt [Verwalten von Tags in verschiedenen Sprachen](/help/sites-administering/tags.md#managing-tags-in-different-languages) beschrieben, kann ein Tag-`title` in verschiedenen Sprachen definiert werden. Eine sprachempfindliche Eigenschaft wird dann dem Tag-Knoten hinzugefügt. Diese Eigenschaft weist das Format `jcr:title.<locale>` auf, beispielsweise `jcr:title.fr` für die französische Übersetzung. Die `<locale>` muss eine ISO-Gebietsschema-Zeichenfolge in Kleinbuchstaben sein und &quot;_&quot;anstelle von &quot;-&quot;verwenden. Beispiel: `de_ch`.
 
 Wenn das Tag **Animals** zur **Produktseite** hinzugefügt wird, wird der Wert `stockphotography:animals` zur Eigenschaft `cq:tags` des Knotens „/content/geometrixx/de/products/jcr:content“ hinzugefügt. Die Übersetzung wird vom Tag-Knoten referenziert.
 

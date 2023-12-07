@@ -1,21 +1,17 @@
 ---
 title: Zusammenstellen von verschlüsselten PDF-Dokumenten
-seo-title: Assembling Encrypted PDF Documents
 description: Stellen Sie mithilfe der Java-API und der Webservice-API verschlüsselte PDF-Dokumente zusammen.
-seo-description: Assemble encrypted PDF documents using the Java API and Web Service API.
-uuid: d0948ec9-ab67-4fe4-9062-1c4938460b43
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 6d75c7b1-9c0e-47f3-bdb1-61acf16b97f9
 role: Developer
 exl-id: 2caaca74-640a-4257-a81b-3e8b295cd182
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1659'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '1641'
+ht-degree: 83%
 
 ---
 
@@ -23,7 +19,7 @@ ht-degree: 100%
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
 
-Sie können ein PDF-Dokument mit einem Kennwort verschlüsseln, indem Sie den Assembler-Service verwenden. Nachdem ein PDF-Dokument mit einem Kennwort verschlüsselt wurde, muss ein Benutzer das Kennwort angeben, damit das Dokument in Adobe Reader oder Acrobat angezeigt werden kann. Zum Verschlüsseln eines PDF-Dokuments mit einem Kennwort muss das DDX-Dokument encryption-Elementwerte enthalten, die für die Verschlüsselung eines PDF-Dokuments erforderlich sind.
+Sie können ein PDF-Dokument mit einem Kennwort verschlüsseln, indem Sie den Assembler-Service verwenden. Nachdem ein PDF-Dokument mit einem Kennwort verschlüsselt wurde, muss ein Benutzer das Kennwort angeben, um das PDF-Dokument in Adobe Reader oder Acrobat anzuzeigen. Um ein PDF-Dokument mit einem Kennwort zu verschlüsseln, muss das DDX-Dokument Verschlüsselungselementwerte enthalten, die zum Verschlüsseln eines PDF-Dokuments erforderlich sind.
 
 Nehmen Sie für dieses Thema bitte an, dass das folgende DDX-Dokument verwendet wird.
 
@@ -77,7 +73,7 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 
-Wenn AEM Forms auf einem unterstützten J2EE-Anwendungsserver implementiert ist, der von JBoss verschieden ist, müssen Sie die Dateien „adobe-utilities.jar“ und „jbossall-client.jar“ durch JAR-Dateien ersetzen, die für den J2EE-Anwendungsserver spezifisch sind, auf dem AEM Forms implementiert ist. Weitere Informationen über den Speicherort aller JAR-Dateien von AEM Forms finden Sie unter [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Wenn AEM Forms auf einem unterstützten J2EE-Anwendungs-Server bereitgestellt ist, der von JBoss verschieden ist, müssen Sie die Dateien „adobe-utilities.jar“ und „jbossall-client.jar“ durch JAR-Dateien ersetzen, die für den J2EE-Anwendungs-Server spezifisch sind, auf dem AEM Forms bereitgestellt ist. Weitere Informationen über den Speicherort aller JAR-Dateien von AEM Forms finden Sie unter [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Erstellen eines Assembler-Clients**
 
@@ -115,7 +111,7 @@ Wenn nur ein einzelnes PDF-Dokument an den Assembler-Service übergeben wird, gi
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-assembler-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-assembler-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie einen Assembler-Client.
 
@@ -135,11 +131,11 @@ Wenn nur ein einzelnes PDF-Dokument an den Assembler-Service übergeben wird, gi
 1. Legen Sie Laufzeitoptionen fest.
 
    * Erstellen Sie ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen speichert, indem Sie seinen Konstruktor verwenden.
-   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec`-Objekt gehört. Um beispielsweise den Assembler-Service anzuweisen, die Verarbeitung eines Auftrags fortzusetzen, wenn ein Fehler auftritt, rufen Sie die Methode `setFailOnError` des `AssemblerOptionSpec`-Objekts auf und übergeben `false`.
+   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec`-Objekt gehört. Um beispielsweise den Assembler-Dienst anzuweisen, die Verarbeitung eines Auftrags fortzusetzen, wenn ein Fehler auftritt, rufen Sie die `AssemblerOptionSpec` -Objekt `setFailOnError` -Methode und -übergabe `false`.
 
 1. Verschlüsseln Sie das Dokument.
 
-   Rufen Sie die Methode `invokeOneDocument` des `AssemblerServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `AssemblerServiceClient` -Objekt `invokeOneDocument` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein `com.adobe.idp.Document`-Objekt, das das DDX-Dokument darstellt. Stellen Sie sicher, dass dieses DDX-Dokument den Wert `inDoc` für das PDF-Quellelement enthält.
    * Ein `com.adobe.idp.Document`-Objekt, das das ungesicherte PDF-Dokument enthält.
@@ -150,7 +146,7 @@ Wenn nur ein einzelnes PDF-Dokument an den Assembler-Service übergeben wird, gi
 1. Speichern Sie das verschlüsselte PDF-Dokument.
 
    * Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateinamenerweiterung .pdf lautet.
-   * Rufen Sie die Methode `copyToFile` des `Document`-Objekts auf, um den Inhalt des `Document`-Objekts in die Datei zu kopieren. Stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der Methode `invokeOneDocument` zurückgegeben wurde.
+   * Rufen Sie die `Document` -Objekt `copyToFile` -Methode zum Kopieren des Inhalts der `Document` -Objekt in die Datei ein. Stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das die `invokeOneDocument`-Methode zurückgegeben hat.
 
 **Siehe auch**
 
@@ -171,7 +167,7 @@ Wenn nur ein einzelnes PDF-Dokument an den Assembler-Service übergeben wird, gi
    * Erstellen Sie ein `AssemblerServiceClient`-Objekt unter Verwendung seines Standardkonstruktors.
    * Erstellen Sie ein `AssemblerServiceClient.Endpoint.Address` -Objekt mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors. Übergeben Sie einen Zeichenfolgenwert mit der WSDL an den AEM Forms-Service (z. B. `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekr, indem Sie den Wert des Felds `AssemblerServiceClient.Endpoint.Binding` abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `AssemblerServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -183,26 +179,26 @@ Wenn nur ein einzelnes PDF-Dokument an den Assembler-Service übergeben wird, gi
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des DDX-Dokuments verwendet.
    * Erstellen Sie ein Objekt `System.IO.FileStream`, indem Sie den Konstruktor aufrufen und einen String-Wert übergeben, der den Dateispeicherort des DDX-Dokuments und den Modus, in dem die Datei geöffnet werden soll, repräsentiert.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
-   * Füllen Sie das Byte-Array mit Datenstromdaten, indem Sie die `Read`-Methode des `System.IO.FileStream`-Objekts aufrufen und ihr das Byte-Array, die Startposition und die zu lesende Datenstromlänge übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
+   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
 1. Referenzieren Sie ein unsicheres PDF-Dokument.
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des PDF-Eingabedokuments verwendet. Dieses `BLOB`-Objekt wird dem `invokeOneDocument` als Argument übergeben.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Eingabedokuments und den Modus zum Öffnen der Datei angibt.
-   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
-   * Füllen Sie das Byte-Array mit Datenstromdaten, indem Sie die `Read`-Methode des `System.IO.FileStream`-Objekts aufrufen und ihr das Byte-Array, die Startposition und die zu lesende Datenstromlänge übergeben.
-   * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
+   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
+   * Füllen Sie das `BLOB`-Objekt, indem Sie dessen Feld `MTOM` mit dem Inhalt des Byte-Arrays belegen.
 
 1. Legen Sie Laufzeitoptionen fest.
 
    * Erstellen Sie ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen speichert, indem Sie seinen Konstruktor verwenden.
-   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie einem Datenelement, das zum `AssemblerOptionSpec`-Objekt gehört, einen Wert zuweisen. Um beispielsweise den Assembler-Service anzuweisen, die Verarbeitung eines Auftrags fortzusetzen, wenn ein Fehler auftritt, weisen Sie `false` dem Datenelement `failOnError` des `AssemblerOptionSpec`-Objekts zu.
+   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie einem Datenelement, das zum `AssemblerOptionSpec`-Objekt gehört, einen Wert zuweisen. Um beispielsweise den Assembler-Dienst anzuweisen, die Verarbeitung eines Auftrags fortzusetzen, wenn ein Fehler auftritt, weisen Sie `false` der `AssemblerOptionSpec` -Objekt `failOnError` Datenelement.
 
 1. Verschlüsseln Sie das Dokument.
 
-   Rufen Sie die Methode `invokeOneDocument` des `AssemblerServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `AssemblerServiceClient` -Objekt `invokeOneDocument` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein `BLOB`-Objekt, das das DDX-Dokument darstellt
    * Ein `BLOB`-Objekt, das das ungesicherte PDF-Dokument darstellt
@@ -213,9 +209,9 @@ Wenn nur ein einzelnes PDF-Dokument an den Assembler-Service übergeben wird, gi
 1. Speichern Sie das verschlüsselte PDF-Dokument.
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des verschlüsselten PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB`-Objekts speichert, das die Methode `invokeOneDocument` zurückgegeben hat. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `BLOB` des `MTOM`-Objekts abrufen.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB`-Objekts speichert, das die Methode `invokeOneDocument` zurückgegeben hat. Füllen Sie das Byte-Array, indem Sie den Wert der `BLOB` -Objekt `MTOM` Datenelement.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter` -Objekt `Write` -Methode verwenden und das Byte-Array übergeben.
 
 **Siehe auch**
 

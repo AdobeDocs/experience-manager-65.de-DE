@@ -1,28 +1,25 @@
 ---
 title: Konfigurieren der Sendeaktion
-seo-title: Configuring the Submit action
 description: Mit Forms können Sie eine Sendeaktion konfigurieren, um festzulegen, wie ein adaptives Formular nach der Übermittlung verarbeitet wird. Sie können integrierte Übermittlungsaktionen verwenden oder eigene von Grund auf neu schreiben.
-uuid: 4368d648-88ea-4f84-a051-46296a1a084e
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: e19a7e617bdabb678bd804cab3fea228ce19acfa
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2154'
-ht-degree: 81%
+source-wordcount: '2134'
+ht-degree: 86%
 
 ---
 
 # Konfigurieren der Sendeaktion {#configuring-the-submit-action}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/using/create-an-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/using/create-an-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=de) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html) |
 | AEM 6.5 | Dieser Artikel |
 
 
@@ -45,7 +42,7 @@ Die standardmäßigen Sendeaktionen, die für adaptive Formulare verfügbar sind
 * Senden mit Formulardatenmodell
 * Übermittlungsaktion für Forms Portal
 * Aufrufen eines AEM-Workflows
-* An Power Automate übermitteln
+* An Power Automate senden
 
 >[!NOTE]
 >
@@ -157,7 +154,7 @@ Variablen können unabhängig davon verwendet werden, ob das Workflow-Modell fü
 
 * **Datensatzdokument**: Es enthält das Datensatzdokument, das für das adaptive Formular generiert wurde. Mit der Option **[!UICONTROL Pfad des Datensatzdokuments]** können Sie den Dateinamen des Datensatzdokuments sowie den Dateipfad relativ zur Payload angeben. Beispiel: Der Pfad `/addresschange/DoR.pdf` erstellt einen Ordner mit dem Namen `addresschange` relativ zur Payload und platziert `DoR.pdf` relativ zur Payload. Um nur das Datensatzdokument zu speichern, ohne eine Ordnerhierarchie zu erstellen, reicht die Angabe `DoR.pdf`. Wenn der Workflow für die externe Datenspeicherung markiert ist, verwenden Sie die Variablenoption und wählen Sie die Variable aus der Liste der Variablen aus, die für das Workflow-Modell verfügbar sind.
 
-## An Power Automate übermitteln {#microsoft-power-automate}
+## An Power Automate senden {#microsoft-power-automate}
 
 Sie können ein adaptives Formular so konfigurieren, dass bei der Übermittlung ein Cloud-Fluss bei Microsoft® Power Automate ausgeführt wird. Das konfigurierte adaptive Formular sendet erfasste Daten, Anhänge und das Datensatzdokument zur Verarbeitung an den Cloud-Fluss von Power Automate. Dies hilft Ihnen beim Erstellen benutzerdefinierter Datenerfassungsprozesse und nutzt gleichzeitig die Leistungsfähigkeit von Microsoft® Power Automate, um Geschäftslogiken zu erfassten Daten zu erstellen und Kunden-Workflows zu automatisieren. Im Folgenden finden Sie einige Beispiele dafür, was Sie nach der Integration eines adaptiven Formulars in Microsoft® Power Automate tun können:
 
@@ -166,9 +163,9 @@ Sie können ein adaptives Formular so konfigurieren, dass bei der Übermittlung 
 * Führen Sie komplexe Berechnungen für erfasste Daten durch
 * Speichern Sie die Daten von adaptiven Formularen in Speichersystemen nach einem vordefinierten Zeitplan
 
-Der adaptive Forms-Editor stellt die **Microsoft® Power Automate Flow aufrufen** Übermittlungsaktion zum Senden von Daten, Anlagen und Datensatzdokumenten für adaptive Formulare an Power Automate Cloud Flow. So senden Sie mit der Sendeaktion erfasste Daten an Microsoft® Power Automate: [Verbinden Ihrer AEM Forms-Instanz mit Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md)
+Der Editor für adaptive Formulare verfügt über die Übermittlungsaktion **Aufrufen eines Microsoft® Power Automate-Flusses** zum Senden von Daten, Anhängen und Datensatzdokumenten für adaptive Formulare an den Cloud-Fluss von Power Automate. So senden Sie mit der Sendeaktion erfasste Daten an Microsoft® Power Automate: [Verbinden Ihrer AEM Forms-Instanz mit Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md)
 
-Verwenden Sie nach erfolgreicher Konfiguration die [Microsoft® Power Automate Flow aufrufen](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) Übermittlungsaktion zum Senden von Daten an einen Power Automate Flow.
+Verwenden Sie nach erfolgreicher Konfiguration die Übermittlungsaktion [Microsoft® Power Automate-Fluss aufrufen](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action), um Daten an einen Power Automate-Fluss zu senden.
 
 ## Server-seitige Überprüfung im adaptiven Formular {#server-side-revalidation-in-adaptive-form}
 

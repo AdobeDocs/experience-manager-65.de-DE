@@ -1,20 +1,16 @@
 ---
 title: Grundlagen zum Aktivitäts-Stream
-seo-title: Activity Stream Essentials
-description: Liste der letzten Aktivitäten, die von einem Mitglied durchgeführt wurden, oder Liste der letzten Aktivitäten in einem einzelnen Inhaltsthread
-seo-description: List of recent activites performed by a member or a list of recent activities on a single thread of content
-uuid: 30c5ac08-0af0-4670-9d81-0beb5c93e00a
+description: Liste der letzten Aktivitäten, die von einem Mitglied oder einer Liste der letzten Aktivitäten in einem einzigen Inhaltsthread durchgeführt wurden
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 8714b456-527a-457b-82c4-21bd445dfd9c
 docset: aem65
 exl-id: d98bcbe4-3f80-49ec-b40c-417be0d97350
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 3%
+source-wordcount: '267'
+ht-degree: 2%
 
 ---
 

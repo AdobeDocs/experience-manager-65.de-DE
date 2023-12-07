@@ -1,18 +1,14 @@
 ---
 title: Konfigurieren von Speicherdiensten für Entwürfe und Übermittlungen
-seo-title: Configuring storage services for drafts and submissions
-description: Hier wird beschrieben, wie Sie Speicher für Entwürfe und Übermittlungen konfigurieren
-seo-description: Learn how to configure storage for drafts and submissions
-uuid: 2f4efc07-312c-4908-8c91-84f4e6c5ad25
+description: Erfahren Sie, wie Sie Speicher für Entwürfe und Übermittlungen konfigurieren
 topic-tags: publish
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 6ebb6420-68b6-4abc-b298-c252db038416
 exl-id: 51ca2844-91f0-453a-9b39-b876399ebecb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '531'
-ht-degree: 100%
+ht-degree: 34%
 
 ---
 
@@ -20,17 +16,17 @@ ht-degree: 100%
 
 ## Übersicht {#overview}
 
-Mit AEM Forms können Sie speichern:
+Mit AEM Forms können Sie Folgendes speichern:
 
 * **Entwürfe**: Ein Formular, an dem sie gerade arbeiten, das Endbenutzer ausfüllen, zur späteren Verwendung speichern und schließlich übermitteln.
 
 * **Übermittlungen**: Die übermittelten Formulare mit den von den Benutzern angegebenen Daten.
 
-Die AEM Forms Portal-Daten- und -Metadatendienste bieten Unterstützung für Entwürfe und Übermittlungen. Standardmäßig werden die Daten in der Veröffentlichungsinstanz gespeichert, die anschließend in die konfigurierte Autoreninstanz zurückrepliziert wird und damit zur Weiterleitung an andere Veröffentlichungsinstanzen zur Verfügung steht.
+Die Daten- und Metadatendienste von AEM Forms Portal unterstützen Entwürfe und Übermittlungen. Standardmäßig werden die Daten in der Veröffentlichungsinstanz gespeichert, die dann in die konfigurierte Autoreninstanz zurückrepliziert wird, um für die Perkolation mit anderen Veröffentlichungsinstanzen verfügbar zu sein.
 
-Das bestehende vordefinierte Verfahren ist insofern problematisch, als sämtliche Daten dabei in der Veröffentlichungsinstanz gespeichert werden, einschließlich solcher Daten, die eventuell personenbezogene Informationen (PII) sind.
+Das Problem mit dem vorhandenen vordefinierten Ansatz besteht darin, dass alle Daten in der Veröffentlichungsinstanz gespeichert werden, einschließlich der Daten, bei denen es sich um personenbezogene Daten (PII) handeln kann.
 
-Neben dem oben erwähnten Standardverfahren steht als Alternative eine Implementierung zur Verfügung, bei der die Formulardaten nicht lokal gespeichert, sondern direkt zur Verarbeitung weitergeleitet werden. Kunden, die Bedenken bei der Speicherung potenziell vertraulicher Daten in der Veröffentlichungsinstanz haben, können diese alternative Implementierung wählen, bei der die Daten an einen Verarbeitungsserver gesendet werden. Da die Verarbeitung in der Autoreninstanz erfolgt, läuft sie normalerweise in einer sichereren Zone ab.
+Zusätzlich zum oben genannten Standardansatz ist auch eine alternative Implementierung verfügbar, mit der die Formulardaten direkt zur Verarbeitung übertragen werden, anstatt sie lokal zu speichern. Kunden, die Bedenken bei der Speicherung potenziell vertraulicher Daten in der Veröffentlichungsinstanz haben, können die alternative Implementierung wählen, in der die Daten an einen Verarbeitungsserver gesendet werden. Da die Verarbeitung in der Autoreninstanz erfolgt, verbleibt sie normalerweise in einer sicheren Zone.
 
 >[!NOTE]
 >
@@ -38,15 +34,15 @@ Neben dem oben erwähnten Standardverfahren steht als Alternative eine Implement
 >
 >Weitere Informationen finden Sie im [Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank](/help/forms/using/integrate-draft-submission-database.md).
 
-## Konfigurieren von Forms Portal-Diensten für Entwürfe und Übermittlungen {#configuring-forms-portal-drafts-and-submissions-services}
+## Konfigurieren von Forms Portal-Diensten für Entwurf und Übermittlung {#configuring-forms-portal-drafts-and-submissions-services}
 
 Klicken Sie in der AEM-Web-Konsolenkonfiguration (`https://[host]:'port'/system/console/configMgr`), um die **Konfiguration des Formularportals für Entwurf und Übermittlung** im Bearbeitungsmodus zu öffnen.
 
-Geben Sie wie unten beschrieben die Werte für die Eigenschaften an wie für Ihre Zwecke benötigt:
+Geben Sie die Werte für die Eigenschaften entsprechend Ihren Anforderungen an, wie unten beschrieben:
 
-### Standardmäßige Dienste zum Speichern der Daten in der Veröffentlichungsinstanz {#out-of-the-box-services-to-store-data-on-publish-instance}
+### Vorkonfigurierte Dienste zum Speichern von Daten in der Veröffentlichungsinstanz {#out-of-the-box-services-to-store-data-on-publish-instance}
 
-Daten werden auf die konfigurierte Autoreninstanz zurückrepliziert.
+Die Daten werden auf die konfigurierte Autoreninstanz zurückrepliziert.
 
 <table>
  <tbody>
@@ -55,11 +51,11 @@ Daten werden auf die konfigurierte Autoreninstanz zurückrepliziert.
    <th>Wert</th>
   </tr>
   <tr>
-   <td>Forms Portal-Datendienst für Entwürfe (Bezeichner für den Datendienst für Entwürfe (<strong>draft.data.service</strong>))</td>
+   <td>Forms Portal Draft Data Service (Bezeichner für den Entwurfsdatendienst (<strong>draft.data.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.DraftDataServiceImpl<br /> </td>
   </tr>
   <tr>
-   <td>Forms Portal-Metadatendienst für Entwürfe (Bezeichner für den Metadatendienst für Entwürfe (<strong>draft.metadata.service</strong>))</td>
+   <td>Forms Portal-Metadatendienst für Entwurf (Bezeichner für den Metadatendienst für Entwurf (<strong>draft.metadata.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceImpl<br /> </td>
   </tr>
   <tr>
@@ -73,9 +69,9 @@ Daten werden auf die konfigurierte Autoreninstanz zurückrepliziert.
  </tbody>
 </table>
 
-### Standardmäßige Dienste zum Speichern der Daten in der Fernverarbeitungsinstanz {#out-of-the-box-services-to-store-data-on-remote-processing-instance}
+### Vorkonfigurierte Dienste zum Speichern von Daten auf der Remote-Verarbeitungsinstanz {#out-of-the-box-services-to-store-data-on-remote-processing-instance}
 
-Daten werden direkt an die konfigurierte Ferninstanz weitergeleitet.
+Daten werden direkt an die konfigurierte Remote-Instanz gesendet
 
 <table>
  <tbody>
@@ -84,11 +80,11 @@ Daten werden direkt an die konfigurierte Ferninstanz weitergeleitet.
    <th>Wert</th>
   </tr>
   <tr>
-   <td>Forms Portal-Datendienst für Entwürfe (Bezeichner für den Datendienst für Entwürfe (<strong>draft.data.service</strong>))</td>
+   <td>Forms Portal Draft Data Service (Bezeichner für den Entwurfsdatendienst (<strong>draft.data.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.DraftDataServiceRemoteImpl<br /> </td>
   </tr>
   <tr>
-   <td>Forms Portal-Metadatendienst für Entwürfe (Bezeichner für den Metadatendienst für Entwürfe (<strong>draft.metadata.service</strong>))</td>
+   <td>Forms Portal-Metadatendienst für Entwurf (Bezeichner für den Metadatendienst für Entwurf (<strong>draft.metadata.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceRemoteImpl<br /> </td>
   </tr>
   <tr>
@@ -102,10 +98,10 @@ Daten werden direkt an die konfigurierte Ferninstanz weitergeleitet.
  </tbody>
 </table>
 
-Geben Sie außer der oben angegebenen Konfiguration Informationen über die konfigurierte Fernverarbeitungsinstanz an.
+Geben Sie neben der oben angegebenen Konfiguration Informationen zur konfigurierten Remote-Verarbeitungsinstanz an.
 
-Klicken Sie in der AEM-Web-Konsolenkonfiguration (`https://[host]:'port'/system/console/configMgr`), um den **AEM DS-Einstellungen-Service** im Bearbeitungsmodus zu öffnen. Geben Sie im Dialogfeld des AEM DS-Einstellungsdienstes Informationen zu URL, Benutzername und Kennwort des Verarbeitungsservers an.
+Klicken Sie in der AEM-Web-Konsolenkonfiguration (`https://[host]:'port'/system/console/configMgr`), um den **AEM DS-Einstellungen-Service** im Bearbeitungsmodus zu öffnen. Geben Sie im Dialogfeld AEM DS Settings Service Informationen zu URL des Verarbeitungsservers, Benutzername des Verarbeitungsservers und Kennwort ein.
 
 >[!NOTE]
 >
->Eine Beispielimplementierung für die Speichern von Benutzerdaten in einer Datenbank wird ebenfalls bereitgestellt. Um zu verstehen, wie Sie Daten- und Metadaten-Services konfigurieren, um Benutzerdaten in einer externen Datenbank zu speichern, siehe [Beispiel für die Integration der Komponente „Entwürfe und Übermittlungen“ mit der Datenbank](/help/forms/using/integrate-draft-submission-database.md).
+>Außerdem wird eine Beispielimplementierung zum Speichern von Benutzerdaten in einer Datenbank bereitgestellt. Um zu verstehen, wie Sie Daten- und Metadaten-Services konfigurieren, um Benutzerdaten in einer externen Datenbank zu speichern, siehe [Beispiel für die Integration der Komponente „Entwürfe und Übermittlungen“ mit der Datenbank](/help/forms/using/integrate-draft-submission-database.md).

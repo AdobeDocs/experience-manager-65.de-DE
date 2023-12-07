@@ -1,31 +1,27 @@
 ---
 title: Erstellen und Verarbeiten von Aufträgen für die Auslagerung
-seo-title: Creating and Consuming Jobs for Offloading
-description: Die Apache Sling Discovery-Funktion stellt eine Java-API bereit, die das Erstellen von JobManager-Aufträgen und JobConsumer-Diensten ermöglicht, die sie verarbeiten.
-seo-description: The Apache Sling Discovery feature provides a Java API that enables you to create JobManager jobs and JobConsumer services that consume them
-uuid: d6a5beb0-0618-4b61-9b52-570862eac920
+description: Die Apache Sling Discovery-Funktion bietet eine Java-API, mit der Sie JobManager-Aufträge und JobConsumer-Dienste erstellen können, die sie nutzen
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
 exl-id: 4e6f452d-0251-46f3-ba29-1bd85cda73a6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '392'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 59%
 
 ---
 
 # Erstellen und Verarbeiten von Aufträgen für die Auslagerung{#creating-and-consuming-jobs-for-offloading}
 
-Die Apache Sling Discovery-Funktion stellt eine Java-API bereit, die das Erstellen von JobManager-Aufträgen und JobConsumer-Diensten ermöglicht, die sie verarbeiten.
+Die Apache Sling Discovery-Funktion bietet eine Java-API, mit der Sie JobManager-Aufträge und JobConsumer-Dienste erstellen können, die sie nutzen.
 
-Weitere Informationen zum Erstellen von Abladetopologien und zum Konfigurieren der Themenverarbeitung finden Sie unter [Abladen von Aufträgen](/help/sites-deploying/offloading.md).
+Informationen zum Erstellen von Abladetopologien und Konfigurieren des Themenverbrauchs finden Sie unter [Abladen von Aufträgen](/help/sites-deploying/offloading.md).
 
 ## Verarbeiten von Auftrags-Payloads {#handling-job-payloads}
 
-Das Abladungs-Framework definiert zwei Auftragseigenschaften zum Identifizieren der Auftrags-Payload. Die Replikationsagenten zur Abladung ziehen diese Eigenschaften heran, um die Ressourcen für die Replikation der Instanzen in der Topologie zu identifizieren:
+Das Abladungs-Framework definiert zwei Auftragseigenschaften zum Identifizieren der Auftrags-Payload. Die Abladungs-Replikationsagenten verwenden diese Eigenschaften, um die Ressourcen zu identifizieren, die auf die Instanzen in der Topologie repliziert werden sollen:
 
 * `offloading.job.input.payload`: Eine kommagetrennte Liste von Inhaltspfaden. Der Inhalt wird auf der Instanz repliziert, die den Auftrag ausführt.
 * `offloading.job.output.payload`: Eine kommagetrennte Liste von Inhaltspfaden. Wenn die Auftragsausführung abgeschlossen ist, wird die Auftrags-Payload unter diesen Pfaden auf der Instanz repliziert, die den Auftrag erstellt hat.
@@ -39,7 +35,7 @@ Für Aufträge sind keine Payloads erforderlich. Eine Payload ist jedoch dann no
 
 ## Erstellen von Aufträgen für die Abladung {#creating-jobs-for-offloading}
 
-Erstellen Sie einen Client, der die Methode „JobManager.addJob“ aufruft, um einen Auftrag zu erstellen, den von einem automatisch ausgewählten JobConsumer-Dienst ausgeführt wird. Geben Sie die folgenden Informationen an, um den Auftrag zu erstellen:
+Erstellen Sie einen Client, der die Methode JobManager.addJob aufruft, um einen Auftrag zu erstellen, den ein automatisch ausgewählter JobConsumer-Dienst ausführt. Geben Sie die folgenden Informationen an, um den Auftrag zu erstellen:
 
 * Thema: Das Auftragsthema.
 * Name: (Optional)
@@ -176,13 +172,13 @@ Die MyJobConsumer-Klasse generiert die folgenden Protokollmeldungen für die Ein
 10.06.2013 16:02:40.884 *INFO* [pool-7-thread-17-<main queue>(com/adobe/example/offloading)] com.adobe.example.offloading.MyJobConsumer Job OK for payload /content/geometrixx/de/services
 ```
 
-Die Eigenschaft „Consumed“ kann mithilfe von CRXDE Lite überprüft werden:
+Die Eigenschaft &quot;Consumed&quot;kann mithilfe von CRXDE Lite beobachtet werden:
 
 ![chlimage_1-25](assets/chlimage_1-25a.png)
 
 ## Maven-Abhängigkeiten {#maven-dependencies}
 
-Fügen Sie die folgenden Abhängigkeitsdefinitionen zur Datei pom.xml hinzu, damit Maven abladungsbezogene Klassen auflösen kann.
+Fügen Sie die folgenden Abhängigkeitsdefinitionen zu Ihrer Datei &quot;pom.xml&quot;hinzu, damit Maven die Klassen auflösen kann, die sich auf die Abladung beziehen.
 
 ```xml
 <dependency>
@@ -199,7 +195,7 @@ Fügen Sie die folgenden Abhängigkeitsdefinitionen zur Datei pom.xml hinzu, dam
 </dependency>
 ```
 
-Für die vorherigen Beispiele sind auch die folgenden Abhängigkeitsdefinitionen erforderlich:
+Für die vorherigen Beispiele waren auch die folgenden Abhängigkeitsdefinitionen erforderlich:
 
 ```xml
 <dependency>

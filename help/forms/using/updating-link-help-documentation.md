@@ -1,27 +1,23 @@
 ---
 title: Aktualisieren des Links zur Dokumentation
-seo-title: Updating the link to the documentation
-description: Gehen Sie wie folgt vor, um durch Aktualisieren des Link-Ziels für Workspace-Hilfe in AEM Forms auf Ihren benutzerdefinierten Link zur Dokumentation zu verweisen.
-seo-description: How-to update the destination of Workspace Help link in AEM Forms workspace to point to your custom documentation link.
-uuid: 64056d10-1451-44ed-8f25-81a21037dc75
+description: Aktualisieren Sie das Ziel des Workspace-Hilfe-Links in AEM Forms Workspace, um auf Ihren benutzerspezifischen Dokumentationslink zu verweisen.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 788c427f-190f-4580-9efd-6a4c4a008837
 exl-id: ca637bea-05c1-4920-9283-e782f07607de
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '141'
-ht-degree: 100%
+ht-degree: 43%
 
 ---
 
 # Aktualisieren des Links zur Dokumentation {#updating-the-link-to-the-documentation}
 
-Sie können auf den Standardhilfeinhalt für HTML Workspace zugreifen, indem Sie **Hilfe > Workspace-Hilfe** auswählen. Dies verweist auf die Onlinedokumentation auf der Website von Adobe. Sie können den Verweis jedoch in jede andere URL ändern.
+Sie können auf den standardmäßigen Hilfeinhalt für AEM Forms Workspace zugreifen, indem Sie **Hilfe > Workspace-Hilfe**. Sie verweist auf die Online-Dokumentation auf der Adobe-Website. Sie können es jedoch aktualisieren, um auf eine andere URL zu verweisen.
 
-Berücksichtigen Sie die folgenden Anwendungsfälle, wenn Sie die Standardhilfe-URL ändern:
+Beachten Sie die folgenden Anwendungsfälle, in denen Sie die standardmäßige Hilfe-URL ändern können:
 
 * Für lokalisierte Hilfe in einer Sprache Ihrer Wahl.
 * Zur Bereitstellung angepasster Hilfeinhalte für Ihre Angepassungen von Workspace.

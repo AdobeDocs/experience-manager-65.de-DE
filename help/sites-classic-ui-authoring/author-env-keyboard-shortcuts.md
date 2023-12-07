@@ -1,17 +1,15 @@
 ---
 title: Tastaturbefehle für Konsolen
 description: In Adobe Experience Manager stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich einige auf die Verwendung von Konsolen und andere auf die Seitenbearbeitung.
-uuid: 3be775f4-ea44-4843-9041-dbcf0c41eec4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: b6e42b9d-9e27-4f22-8543-442d03af48f3
 exl-id: 8cc9200e-981d-468f-b2bd-cd44e9a02bb5
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '114'
-ht-degree: 100%
+ht-degree: 76%
 
 ---
 
@@ -28,7 +26,6 @@ In Adobe Experience Manager stehen verschiedene Tastaturbefehle zur Verfügung. 
 >* Mac: **Klicken** Sie bei gedrückter **Befehlstaste** auf die erforderlichen Komponenten.
 >
 
-
 ## Tastaturbefehle {#keyboard-shortcuts}
 
 <table>
@@ -41,8 +38,7 @@ In Adobe Experience Manager stehen verschiedene Tastaturbefehle zur Verfügung. 
   <tr>
    <td>Konsole</td>
    <td><strong><code>Shift-Double-Click</code></strong><br /> (auf der erforderlichen Seite)</td>
-   <td>Seite in neuem Fenster öffnen.<br />
-<strong>Hinweis:</strong> Dieser Befehl ist verfügbar, wenn die <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Benutzereigenschaften</a> auf „Einfaches Fenster“ gesetzt sind. Bei „Mehrere Fenster“ ist dies das Standardverhalten.</td>
+   <td>Öffnen Sie die Seite in einem neuen Fenster.<br /> <strong>Hinweis:</strong> Dies ist operationell, wenn die <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Benutzereigenschaften</a> auf "Einzelfenster"eingestellt sind; bei "Mehrere Fenster"ist dies das Standardverhalten.</td>
   </tr>
  </tbody>
 </table>

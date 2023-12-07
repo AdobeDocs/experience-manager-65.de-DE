@@ -1,24 +1,20 @@
 ---
 title: Anzeigen und Verstehen von Transaktionsberichten
-seo-title: Viewing and Understanding Transaction Reports
 description: Verwenden Sie Transaktionsberichte, um eine fundierte Entscheidung über die Produktnutzung zu treffen und Investitionen in Hardware und Software neu auszurichten.
-seo-description: Use transaction reports to make an informed decision about the product usage and rebalancing investments in hardware and software.
-uuid: 56d9f01d-4778-47c9-bbb2-6650a73a3f59
 topic-tags: forms-manager
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: c04c488b-73f3-49ba-9e89-f97497965757
 docset: aem65
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '858'
-ht-degree: 98%
+source-wordcount: '861'
+ht-degree: 100%
 
 ---
 
 # Anzeigen und Verstehen von Transaktionsberichten{#viewing-and-understanding-transaction-reports}
 
-Mit Transaktionsberichten können Sie die Anzahl der gesendeten Formulare, verarbeiteten Dokumente und gerenderten Dokumente erfassen und verfolgen. Das Ziel bei der Verfolgung dieser Transaktionen ist es, eine fundierte Entscheidung über die Produktnutzung und die Neugewichtung der Investitionen in Hardware und Software treffen zu können. Weitere Informationen finden Sie unter [Übersicht über AEM Forms-Transaktionsberichte](../../forms/using/transaction-reports-overview.md).
+Mit Transaktionsberichten können Sie die Anzahl der übermittelten Formulare, verarbeiteten Dokumente und gerenderten Dokumente erfassen und nachverfolgen. Das Ziel bei der Verfolgung dieser Transaktionen ist es, eine fundierte Entscheidung über die Produktnutzung und die Neugewichtung der Investitionen in Hardware und Software treffen zu können. Weitere Informationen finden Sie unter [Übersicht über AEM Forms-Transaktionsberichte](../../forms/using/transaction-reports-overview.md).
 
 ## Transaktionsberichte einrichten  {#setting-up-transaction-reports}
 

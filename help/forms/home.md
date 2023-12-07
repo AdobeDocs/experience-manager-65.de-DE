@@ -1,12 +1,10 @@
 ---
 title: Handbuch zu Adobe Experience Manager 6.5 Forms
-seo-title: AEM 6.5 Forms Guide
 description: Verwenden Sie dieses AEM 6.5-Handbuch, um digitale Formulare zu erstellen, zu verwalten, zu veröffentlichen und zu aktualisieren. Hier finden Sie Hilfe zur Installation, Aktualisierung und Konfiguration und erfahren, wie Sie adaptive Formulare erstellen können.
-seo-description: Covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
-source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '318'
 ht-degree: 100%
 
 ---

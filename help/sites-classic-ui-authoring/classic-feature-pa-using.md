@@ -1,33 +1,29 @@
 ---
 title: Anzeigen von Seitenanalysedaten
-seo-title: Seeing Page Analytics Data
-description: Verwenden Sie Seitenanalysedaten, um die Wirkung des Seiteninhalts zu messen.
-seo-description: Use page analytics data to gauge the effectiveness of their page content.
-uuid: a3d1e4d6-56af-44a5-832f-63167ea8af52
+description: Verwenden Sie Seitenanalysedaten, um die Effektivität des Seiteninhalts zu messen.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 28529cae-6fbd-4879-a5b8-3ec8e1bcd586
 docset: aem65
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
-workflow-type: ht
-source-wordcount: '90'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '91'
+ht-degree: 48%
 
 ---
 
 
 # Anzeigen von Seitenanalysedaten{#seeing-page-analytics-data}
 
-Verwenden Sie Seitenanalysedaten, um die Wirkung des Seiteninhalts zu messen.
+Verwenden Sie Seitenanalysedaten, um die Effektivität des Seiteninhalts zu messen.
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
-Seitenanalysedaten werden in der Sites-Konsole angezeigt. Wenn Websites im Listenformat angezeigt werden, sind die folgenden Spalten standardmäßig verfügbar:
+Seitenanalysedaten werden in der Sites-Konsole angezeigt. Wenn Sites im Listenformat angezeigt werden, sind die folgenden Spalten standardmäßig verfügbar:
 
 * Seitenansichten
-* Individuelle Besucher
+* Unique Visitors
 * Zeit auf Seite
 
 >[!NOTE]

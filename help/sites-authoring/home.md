@@ -1,13 +1,11 @@
 ---
 title: AEM 6.5 Authoring-Benutzeranleitung
-seo-title: AEM 6.5 Authoring User Guide
 description: Erfahren Sie mehr über die wichtigsten Konzepte zur Inhaltserstellung und zum Authoring in AEM 6.5. Außerdem finden Sie hier Informationen zur Verwendung von Tags, Vorlagen und anderen Seitenfunktionen.
-seo-description: Explains the concepts of authoring in AEM.
 exl-id: 38f229b4-10b2-4a67-9821-a03718b82215
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
-workflow-type: ht
-source-wordcount: '343'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '298'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +24,7 @@ Erfahren Sie mehr über die wichtigsten Konzepte zu Inhalten und Authoring in AE
 
 | Benutzerhandbuch | Beschreibung |
 |--- |---|
-| [Versionshinweise](/help/release-notes/home.md) | Enthält wichtige Informationen zur neuesten Version von AEM, einschließlich neuer Funktionen, unterstützter Plattformen, veralteter und entfernter Funktionen und bekannter Probleme. |
+| [Versionshinweise](/help/release-notes/home.md) | Enthält wichtige Informationen zur neuesten Version von AEM, einschließlich neuer, unterstützter Plattformen, veralteter und entfernter Funktionen und bekannter Probleme. |
 | [Benutzerhandbuch für Assets](/help/assets/home.md) | Erfahren Sie, wie Sie digitale Assets erstellen, verwalten, bereitstellen und optimieren können. |
 | [Forms Benutzerhandbuch](/help/forms/home.md) | In diesem Handbuch wird beschrieben, wie Sie digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren. |
 | [Communities-Benutzeranleitung](/help/communities/home.md) | Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Community-Funktionen. |

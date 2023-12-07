@@ -1,38 +1,34 @@
 ---
 title: Von Acrobat Reader DC Extensions verwendete Zertifikatstypen
-seo-title: Certificate types used by Acrobat Reader DC extensions
-description: Erfahren Sie mehr über die Zertifikatstypen, die in Acrobat Reader DC-Erweiterungen verwendet werden.
-seo-description: Learn about the certificate types used by Acrobat Reader DC extensions.
-uuid: 93c02abc-2d5a-44ed-b93c-981afbd0553d
+description: Erfahren Sie mehr über die Zertifikatstypen, die von Acrobat Reader DC-Erweiterungen verwendet werden.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 331b9317-87b5-4a96-a1bc-429675ff90c5
 exl-id: 800bffd5-0cdc-4251-bba4-e350f226f019
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
-source-wordcount: '936'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '944'
+ht-degree: 23%
 
 ---
 
 # Von Acrobat Reader DC Extensions verwendete Zertifikatstypen {#certificate-types-used-by-acrobat-reader-dc-extensions}
 
-Die Zertifikatsanzeige enthält die folgenden Informationen zum Zertifikat:
+Die Zertifikatanzeige stellt die folgenden Informationen zum Zertifikat bereit:
 
-* Anzeigenamen des Zertifikats
+* Anzeigename des Zertifikats
 * Zertifikatprofile
 * Gültigkeitsdauer
-* Acrobat Reader DC Extensions-Verwendungsrechte
+* Verwendungsrechte für Acrobat Reader DC Extensions
 
 ## Anzeigename des Zertifikats {#certificate-friendly-name}
 
-Der Anzeigename eines Acrobat Reader DC Extensions-Zertifikats ist eine Zeichenfolge mit den Eigenschaften des Zertifikats (siehe folgendes Beispiel):
+Der Anzeigename eines Acrobat Reader DC Extensions-Zertifikats ist eine Zeichenfolge, die die Eigenschaften des Zertifikats beschreibt, wie im folgenden Beispiel gezeigt:
 
 ARE 2D Barcode Full Production V6.1 P8 0002054
 
-Die Zeichenfolge enthält folgende Elemente:
+Die Zeichenfolge enthält die folgenden Elemente:
 
 **Zertifikatstyp:** Beschreibt die AEM Forms-Module, die das Zertifikat aktiviert, sowie den Grad der Aktivierung (beispielsweise ARE 2D Barcode Full). Eine Liste der verfügbaren Zertifikatstypen finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Typ“.
 
@@ -42,11 +38,11 @@ Die Zeichenfolge enthält folgende Elemente:
 
 **Profilcode:** Der Profilcode ist eine Kurzbeschreibung der vollständigen Zertifikateigenschaften (beispielsweise P8). Eine Liste der Profilcodes für jeden Dateityp finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Profilcode“.
 
-**Seriennummer:** Jedem von Adobe ausgestellten Zertifikat wird eine Seriennummer zugewiesen (z. B. 0002054). Der Support von Adobe Enterprise oder ein Adobe Enterprise-Kundenbetreuer kann anhand dieser Seriennummer das Zertifikat einer bestimmten Produktbestellung oder einem OEM-Vertrag zuordnen.
+**Seriennummer:** Jedem von Adobe ausgestellten Zertifikat wird eine Seriennummer zugewiesen (z. B. 0002054). Adobe Enterprise Support oder ein Adobe Enterprise-Kundenbetreuer können diese Seriennummer verwenden, um das Zertifikat auf eine bestimmte Produktbestellung oder auf eine OEM-Beziehung zu verfolgen.
 
 ## Zertifikatprofile {#certificate-profiles}
 
-Die folgende Tabelle enthält die Zertifikatprofile, die Sie beim Analysieren von Acrobat Reader DC Extensions-Zertifikaten vorfinden können.
+In der folgenden Tabelle sind die Zertifikatprofile aufgeführt, auf die Sie bei der Analyse von Acrobat Reader DC Extensions-Zertifikaten stoßen können.
 
 <table>
  <thead>
@@ -66,31 +62,31 @@ Die folgende Tabelle enthält die Zertifikatprofile, die Sie beim Analysieren vo
   </tr>
   <tr>
    <td><p>P2</p></td>
-   <td><p>SAP- Interner Test</p></td>
+   <td><p>SAP Interner Test</p></td>
    <td><p>2 Jahre</p></td>
-   <td><p>Testversion</p></td>
+   <td><p>Auswertung und Test</p></td>
   </tr>
   <tr>
    <td><p>P3</p></td>
-   <td><p>Acrobat Reader DC Extensions, Produktion</p></td>
+   <td><p>Acrobat Reader DC-Erweiterungen, Produktion</p></td>
    <td><p>Maximal</p></td>
    <td><p>Produktion</p></td>
   </tr>
   <tr>
    <td><p>P4</p></td>
-   <td><p>Acrobat Reader DC Extensions, Interne Verwendung durch Adobe</p></td>
+   <td><p>Acrobat Reader DC-Erweiterungen, interne Adobe-Verwendung</p></td>
    <td><p>2 Jahre</p></td>
    <td><p>Produktion</p></td>
   </tr>
   <tr>
    <td><p>P5</p></td>
-   <td><p>Acrobat Reader DC Extensions, Partnerintegration</p></td>
+   <td><p>Acrobat Reader DC-Erweiterungen, Partnerintegration</p></td>
    <td><p>2 Jahre</p></td>
-   <td><p>Testversion</p></td>
+   <td><p>Auswertung und Test</p></td>
   </tr>
   <tr>
    <td><p>P6</p></td>
-   <td><p>Acrobat Reader DC Extensions, Text</p></td>
+   <td><p>Acrobat Reader DC-Erweiterungen, Auswertung</p></td>
    <td><p>60 Tage</p></td>
    <td><p>Test</p></td>
   </tr>
@@ -110,118 +106,118 @@ Die folgende Tabelle enthält die Zertifikatprofile, die Sie beim Analysieren vo
    <td><p>I10</p></td>
    <td><p>Forms; kann von OEMs verwendet werden</p></td>
    <td><p>Maximal</p></td>
-   <td><p>Produktion und Test</p></td>
+   <td><p>Produktion und Auswertung</p></td>
   </tr>
   <tr>
    <td><p>I11</p></td>
    <td><p>Forms; kann von OEMs verwendet werden</p></td>
    <td><p>Maximal</p></td>
-   <td><p>Produktion und Test</p></td>
+   <td><p>Produktion und Auswertung</p></td>
   </tr>
   <tr>
    <td><p>I12</p></td>
-   <td><p>Nur Signatur. Kann von OEMs verwendet werden</p></td>
+   <td><p>Nur Signatur; kann von OEMs verwendet werden</p></td>
    <td><p>Maximal</p></td>
-   <td><p>Produktion und Test</p></td>
+   <td><p>Produktion und Auswertung</p></td>
   </tr>
   <tr>
    <td><p>I13</p></td>
-   <td><p>Nur Offline-Kommentierung. Kann von OEMs verwendet werden</p></td>
+   <td><p>Nur Offline-Kommentierung; kann von OEMs verwendet werden</p></td>
    <td><p>Maximal</p></td>
-   <td><p>Produktion und Test</p></td>
+   <td><p>Produktion und Auswertung</p></td>
   </tr>
   <tr>
    <td><p>I14</p></td>
-   <td><p>Nur Kommentierung. Kann von OEMs verwendet werden</p></td>
+   <td><p>Nur Kommentierung; kann von OEMs verwendet werden</p></td>
    <td><p>Maximal</p></td>
-   <td><p>Produktion und Test</p></td>
+   <td><p>Produktion und Auswertung</p></td>
   </tr>
   <tr>
    <td><p>I15</p></td>
-   <td><p>Vollständige Berechtigungen. Kann von OEMs verwendet werden</p></td>
+   <td><p>Vollständige Berechtigungen; kann von OEMs verwendet werden</p></td>
    <td><p>Maximal</p></td>
-   <td><p>Produktion und Test</p></td>
+   <td><p>Produktion und Auswertung</p></td>
   </tr>
  </tbody>
 </table>
 
 ## Gültigkeitsdauer {#validity-period}
 
-Testzertifikate werden Kunden und Entwicklern ausgestellt, damit diese Beispielanwendungen für Produkte entwickeln und testen können. Die Gültigkeitsdauer dieser Zertifikate ist 60 bis 90 Tage. Der Ablauf erfolgt am Ende des zweiten Monats nach dem Datum der Ausstellung.
+Testzertifikate werden Kunden und Entwicklern ausgestellt, damit sie Beispielanwendungen für Produkte auswerten und entwickeln können. Die Gültigkeitsdauer dieser Zertifikate beträgt 60 bis 90 Tage. Sie laufen am Ende des zweiten Monats ab, der auf die Ausgabedaten folgt.
 
-Zertifikate für die Partnerintegration werden Adobe-Geschäftspartnern ausgestellt, um die Softwareentwicklung, Integration, Erstellung von Prototypen und Demos zu unterstützen. Diese Zertifikate gelten zwei Jahre ab dem Ausstellungsdatum.
+Partnerintegrationszertifikate werden an Adobe-Geschäftspartner ausgestellt, um die Softwareentwicklung, -integration, -prototypisierung und -demonstration zu unterstützen. Diese Zertifikate sind ab dem Ausstellungsdatum zwei Jahre lang gültig.
 
-Zertifikate für die interne Verwendung bei Adobe werden innerhalb des Unternehmens Adobe verwendet, um die Softwareentwicklung, Integration, Erstellung von Prototypen und Demos zu unterstützen. Diese Zertifikate gelten zwei Jahre ab dem Ausstellungsdatum.
+Adobe Internal Use-Zertifikate werden innerhalb von Adobe verwendet, um Softwareentwicklung, -integration, -prototypisierung und -demonstration zu unterstützen. Diese Zertifikate sind ab dem Ausstellungsdatum zwei Jahre lang gültig.
 
-Produktionszertifikate werden an Kunden, die Acrobat Reader DC Extensions erworben haben, ausgegeben. Diese Zertifikate sind für den von der Zertifizierungsstelle maximal zugelassenen Zeitraum gültig (siehe die Spalte „*Maximal*“ in der Tabelle „Zertifikatprofile“).
+Produktionszertifikate werden Kunden ausgestellt, die Acrobat Reader DC-Erweiterungen erworben haben. Diese Zertifikate gelten für den von der Zertifizierungsstelle (CA) maximal zulässigen Zeitraum, wie hier angegeben: *Max* in der Tabelle &quot;Zertifikatprofile&quot;ein.
 
-## Acrobat Reader DC Extensions-Verwendungsrechte {#acrobat-reader-dc-extensions-usage-rights}
+## Verwendungsrechte für Acrobat Reader DC Extensions {#acrobat-reader-dc-extensions-usage-rights}
 
-Wenn Sie das Acrobat Reader DC Extensions-Zertifikat in der Zertifikatanzeige untersuchen, können Sie das Element „Verwendungsrechte“ auf der Registerkarte „Details“ auswählen (falls konfiguriert), um eine in Elemente untergliederte Liste der Adobe Reader-Verwendungsrechte anzuzeigen, die vom Zertifikat aktiviert werden können. Die für ein bestimmtes Dokument aktivierten Verwendungsrechte stellen eine Teilmenge der vom Zertifikat aktivierten Rechte dar.
+Wenn Sie das Acrobat Reader DC Extensions-Zertifikat in der Zertifikatanzeige untersuchen, können Sie das Element Verwendungsrechte auf der Registerkarte Details auswählen (sofern konfiguriert), um eine Auflistung der Adobe Reader-Verwendungsrechte anzuzeigen, die das Zertifikat aktivieren kann. Die für ein bestimmtes Dokument aktivierten Verwendungsrechte können eine Teilmenge der vom Zertifikat aktivierten Rechte sein.
 
-Wenn Onlinekommentierung in einer Umgebung ohne Zusammenarbeitsfunktionalität erforderlich ist, wenden Sie sich wegen weiterer Informationen an den Adobe-Support. Die Mode-Eigenschaft entspricht dem Bereitstellungstyp und lautet entweder *production* (Produktion) oder *evaluation* (Test).
+Wenn Onlinekommentierung in einer nicht kollaborativen Umgebung erforderlich ist, wenden Sie sich für weitere Informationen an den Adobe Support. Die Mode-Eigenschaft stimmt mit dem Bereitstellungstyp überein und entspricht entweder *production* oder *Evaluierung*.
 
-Die zulässigen Acrobat Reader DC Extensions-Verwendungsrechte umfassen mindestens ein spezifisches Element. Diese Elemente werden in verschiedenen Kombinationen verwendet, um Variationen lizenzierter Produktfunktionen zu ermöglichen.
+Die zulässigen Acrobat Reader DC Extensions-Verwendungsrechte bestehen aus einem oder mehreren bestimmten Elementen. Diese Elemente werden in verschiedenen Kombinationen verwendet, um verschiedene lizenzierte Produktfunktionen zu erzielen.
 
 <table>
  <thead>
   <tr>
-   <th><p>Verwendungsrechte – Element</p></th>
-   <th><p>In Adobe Reader aktivierte Funktion bei der Anzeige eines PDF-Dokuments mit aktivierten Verwendungsrechten</p></th>
+   <th><p>Element "Verwendungsrechte"</p></th>
+   <th><p>Funktion in Adobe Reader aktiviert, wenn ein PDF-Dokument mit aktivierten Benutzerrechten angezeigt wird</p></th>
   </tr>
  </thead>
  <tbody>
   <tr>
    <td><p>FormFillInAndSave</p></td>
-   <td><p>Formularfelder auszufüllen und Dateien lokal speichern</p></td>
+   <td><p>Füllen Sie die Formularfelder aus und speichern Sie die Dateien lokal.</p></td>
   </tr>
   <tr>
    <td><p>FormImportExport</p></td>
-   <td><p>Formulardaten als FDF-, XFDF-, XML- und XDP-Dateien importieren und exportieren</p></td>
+   <td><p>Importieren und exportieren Sie Formulardaten als FDF-, XFDF-, XML- und XDP-Dateien.</p></td>
   </tr>
   <tr>
    <td><p>FormAddDelete</p></td>
-   <td><p>Felder und Feldeigenschaften im PDF-Formular hinzufügen, ändern oder löschen</p></td>
+   <td><p>Hinzufügen, Ändern oder Löschen von Feldern und Feldeigenschaften auf dem PDF-Formular.</p></td>
   </tr>
   <tr>
    <td><p>SubmitStandalone</p></td>
-   <td><p>Daten per E-Mail oder offline an einen Server senden, der nicht in einer Browsersitzung ausgeführt wird</p></td>
+   <td><p>Senden Sie Daten per E-Mail oder offline an einen Server, wenn dieser nicht in einer Browsersitzung ausgeführt wird.</p></td>
   </tr>
   <tr>
    <td><p>SpawnTemplate</p></td>
-   <td><p>Seiten aus Vorlagenseiten innerhalb desselben Formulars erstellen</p></td>
+   <td><p>Erstellen Sie Seiten aus Vorlagenseiten innerhalb desselben PDF-Formulars.</p></td>
   </tr>
   <tr>
    <td><p>Signing</p></td>
-   <td><p>PDF-Dokumente digital signieren und speichern und digitale Signaturen löschen</p></td>
+   <td><p>Digitales Signieren und Speichern von PDF-Dokumenten und Löschen digitaler Signaturen.</p></td>
   </tr>
   <tr>
    <td><p>AnnotModify</p></td>
-   <td><p>Dokumentanmerkungen (z. B. Kommentare) erstellen und ändern</p></td>
+   <td><p>Dokumentanmerkungen wie Kommentare erstellen und ändern.</p></td>
   </tr>
   <tr>
    <td><p>AnnotImportExport</p></td>
-   <td><p>Anmerkungen (z. B. Kommentare) in einer getrennten Datei speichern und Kommentare aus einer Datei laden</p></td>
+   <td><p>Speichern Sie Anmerkungen wie Kommentare in einer separaten Datendatei und laden Sie Kommentare aus einer Datei.</p></td>
   </tr>
   <tr>
    <td><p>BarcodePlaintext</p></td>
-   <td><p>Ein Dokument mit Formulardaten in einem unverschlüsselten Strichcodeformat drucken, für das zum Dekodieren keine lizenzierte Serversoftware erforderlich ist</p></td>
+   <td><p>Drucken Sie ein Dokument mit Formulardaten, die in unverschlüsselter Form mit Strichcode versehen sind und für die keine lizenzierte Serversoftware zum Dekodieren erforderlich ist.</p></td>
   </tr>
   <tr>
    <td><p>AnnotOnline</p></td>
-   <td><p>Anmerkungen (z. B. Kommentare) auf einen Server für die Online-Überprüfung und -Kommentierung hochladen und von diesem herunterladen</p></td>
+   <td><p>Laden Sie Anmerkungen wie Kommentare von und auf einen Online-Dokumentüberprüfungs- und -Kommentar-Server hoch und laden Sie sie herunter.</p></td>
   </tr>
   <tr>
    <td><p>FormOnline</p></td>
-   <td><p>Mit Webdiensten oder Datenbanken verbinden, die in einem PDF-Formular definiert sind</p></td>
+   <td><p>Stellen Sie eine Verbindung zu Webdiensten oder Datenbanken her, die in einem PDF-Formular definiert sind.</p></td>
   </tr>
   <tr>
    <td><p>EFModif</p></td>
-   <td><p>Eingebettete Dateiobjekte ändern, die mit dem PDF-Dokument verknüpft sind</p></td>
+   <td><p>Ändern Sie die eingebetteten Dateiobjekte, die mit dem PDF-Dokument verknüpft sind.</p></td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->Acrobat Reader DC Extensions-Verwendungsrechte können von Adobe nur in bestimmten Kombinationen lizenziert werden, die zusammen funktionieren. Es ist nicht möglich, diese Funktionen einzeln zu lizenzieren. Informationen zu den möglichen Kombinationen von Verwendungsrechten erhalten Sie von Ihrem AEM Forms-Kundenbetreuer.
+>Acrobat Reader DC Extensions-Verwendungsrechte können nur in bestimmten Kombinationen, die zusammenarbeiten, von Adobe lizenziert werden. Es ist nicht möglich, diese Funktionen unabhängig zu lizenzieren. Informationen zu den verfügbaren Kombinationen von Verwendungsrechten erhalten Sie von einem AEM Forms-Kundenbetreuer.

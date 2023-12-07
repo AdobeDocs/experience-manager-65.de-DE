@@ -1,18 +1,16 @@
 ---
 title: Konvertieren von Dateien mit PDF Generator
 description: Der PDF Generator-Dienst konvertiert native Dateiformate in PDF. Er kann außerdem PDF-Dokumente in andere Dateiformate konvertieren und die Größe von PDF-Dokumenten optimieren.
-uuid: 295afb8f-130a-44f5-b0ab-e4c93c0c9e52
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 feature: PDF Generator
 exl-id: 0e2c12b5-24c8-4aca-8826-cb661051ce4f
-source-git-commit: 22d9b22a0fc0bc5f753f2e11ca66e2627e1a8405
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 13%
+source-wordcount: '1173'
+ht-degree: 11%
 
 ---
 
@@ -116,7 +114,7 @@ Sie können PDF-Dateien in verschiedene Dateiformate exportieren, wie im Kapitel
 1. Klicken Sie auf Exportieren. Wenn die Konvertierung abgeschlossen ist, wird ein Link zur exportierten Datei angezeigt.
 1. Klicken Sie auf den Link, um die konvertierte Datei anzuzeigen.
 
-## PDF-Datei optimieren  (Nur Windows) {#optimize-a-pdf}
+## PDF optimieren (nur Windows) {#optimize-a-pdf}
 
 PDF Generator unterstützt die Reduzierung der Größe von PDF-Dateien.
 

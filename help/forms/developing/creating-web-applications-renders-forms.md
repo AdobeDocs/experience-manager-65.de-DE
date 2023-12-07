@@ -1,20 +1,16 @@
 ---
 title: Erstellen von Web-Programmen, die Formulare wiedergeben
-seo-title: Creating Web Applications thatRenders Forms
 description: Erstellen Sie ein Web-basiertes Programm, das Java-Servlets verwendet, um den Forms-Service aufzurufen und Formulare wiederzugeben. Das Java-Servlet dient als Bindeglied zwischen dem Forms-Service, der ein Formular zurückgibt, und einem Client-Webbrowser.
-seo-description: Create a web-based application that uses Java servlets to invoke the Forms service and render forms. The Java servlet serves as the link between the Forms service that returns a form and a client web browser.
-uuid: 00de10c5-79bd-4d8a-ae18-32f1fd2623bf
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 role: Developer
 exl-id: 85e00003-8c8b-463a-b728-66af174be295
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1865'
+source-wordcount: '1832'
 ht-degree: 93%
 
 ---
@@ -71,7 +67,7 @@ Die vom Web-Programm verwendeten XML-Datendateien wurden vom Ordner „Data“ n
 
 Führen Sie die folgenden Schritte aus, um ein Web-basiertes Programm zu erstellen, das Formulare wiedergibt, die auf Fragmenten basieren:
 
-1. Erstellen eines Web-Projekts.
+1. Erstellen Sie ein Webprojekt.
 1. Erstellen Sie die Java-Anwendungslogik, die das Java-Servlet darstellt.
 1. Erstellen Sie die Web-Seite für das Web-Programm.
 1. Verpacken Sie das Web-Programm in eine WAR-Datei.
@@ -152,7 +148,7 @@ Führen Sie die folgenden Aufgaben aus, um ein auf Fragmenten basierendes Formul
 1. Rufen Sie die Methode `setApplicationWebRoot` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Web-Stamm des Programms darstellt.
 1. Rufen Sie die Methode `setContentRootURI` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den URI-Wert des Inhaltsstamms angibt. Stellen Sie sicher, dass sich der Formularentwurf und die Fragmente im Inhaltsstamm-URI befinden. Andernfalls löst der Forms-Service eine Ausnahme aus. Um auf das AEM Forms-Repository zu verweisen, geben Sie `repository://` an.
 1. Rufen Sie die Methode `setTargetURL` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Wert der Ziel-URL angibt, an die die Formulardaten gesendet werden. Wenn Sie die Ziel-URL im Formularentwurf definieren, können Sie auch eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular zur Durchführung von Berechnungen gesendet wird.
-1. Rufen Sie die Methode `renderPDFForm` des `FormsServiceClient`-Objekts auf und übergeben Sie ihr folgende Werte:
+1. Rufen Sie die Methode `renderPDFForm` des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs angibt, einschließlich der Dateinamenerweiterung.
    * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen (erstellt in Schritt 2).

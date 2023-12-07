@@ -1,36 +1,32 @@
 ---
 title: Aktivieren und Deaktivieren des abgesicherten Sicherungsmodus
-seo-title: Enabling and disabling safe backup mode
-description: Auf der Seite „Sicherungseinstellungen“ können Sie AEM Forms im abgesicherten Sicherungsmodus ausführen, sodass die Datenbank und der Ordner des globalen Dokumentenspeichers zuverlässig gesichert werden können. Erfahren Sie mehr über die Aktivierung und Deaktivierung des Sicherungsmodus.
-seo-description: On the Backup Settings page, you can operate AEM forms in safe backup mode so that you can reliably back up your database and Global Document Storage (GDS) (GDS) directory. Learn how to enable and disable safe backup mode.
-uuid: 2fdeaeaf-e969-40a4-8aee-1f2b627d3942
+description: Auf der Seite "Sicherungseinstellungen"können Sie AEM Formulare im abgesicherten Sicherungsmodus ausführen, damit Sie die Datenbank und den Ordner des globalen Dokumentenspeichers (GDS) zuverlässig sichern können. Erfahren Sie, wie Sie den abgesicherten Sicherungsmodus aktivieren und deaktivieren.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9fda71e4-78a1-4581-9d02-bf06a75c3bcb
 exl-id: f0ab712f-ecd9-4be8-a7a5-fd1a7a8c9a0b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '196'
-ht-degree: 100%
+ht-degree: 6%
 
 ---
 
 # Aktivieren und Deaktivieren des abgesicherten Sicherungsmodus {#enabling-and-disabling-safe-backup-mode}
 
-Auf der Seite „Sicherungseinstellungen“ können Sie AEM Forms im abgesicherten Sicherungsmodus ausführen, sodass die Datenbank und der Ordner des globalen Dokumentenspeichers zuverlässig gesichert werden können.
+Auf der Seite &quot;Sicherungseinstellungen&quot;können Sie AEM Formulare im abgesicherten Sicherungsmodus ausführen, damit Sie die Datenbank und den Ordner des globalen Dokumentenspeichers (GDS) zuverlässig sichern können.
 
-Im abgesicherten Sicherungsmodus wird AEM Forms normal ausgeführt mit der Ausnahme, dass keine Dateien aktiv aus dem Ordner des globalen Dokumentenspeichers entfernt werden.
+Während AEM Formulare im abgesicherten Sicherungsmodus ausgeführt werden, funktioniert sie normal, mit der Ausnahme, dass sie keine Dateien aktiv aus dem Ordner des globalen Dokumentenspeichers entfernen.
 
 >[!NOTE]
 >
->Durch das Festlegen dieser Option wird keine Sicherung Ihres Systems ausgeführt. Ihr System wird für die Sicherung vorbereitet.
+>Durch das Festlegen dieser Option wird Ihr System nicht gesichert, sondern das System auf die Sicherung vorbereitet.
 
-## Abgesicherten Sicherungsmodus aktivieren {#enable-safe-backup-mode}
+## Aktivieren des abgesicherten Sicherungsmodus {#enable-safe-backup-mode}
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „Core-Systemeinstellungen“ > „Sicherungseinstellungen“.
-1. Aktivieren Sie auf der Seite „Sicherungseinstellungen“ die Option „Im abgesicherten Sicherungsmodus arbeiten“ und klicken Sie auf „OK“.
+1. Klicken Sie in Administration Console auf &quot;Einstellungen&quot;> &quot;Core-Systemeinstellungen&quot;> &quot;Sicherungseinstellungen&quot;.
+1. Wählen Sie auf der Seite &quot;Sicherungseinstellungen&quot;die Option &quot;Im abgesicherten Sicherungsmodus arbeiten&quot;und klicken Sie auf &quot;OK&quot;.
 
 >[!NOTE]
 >
@@ -38,5 +34,5 @@ Im abgesicherten Sicherungsmodus wird AEM Forms normal ausgeführt mit der Ausna
 
 ## Abgesicherten Sicherungsmodus deaktivieren {#disable-safe-backup-mode}
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „Core-Systemeinstellungen“ > „Sicherungseinstellungen“.
-1. Deaktivieren Sie auf der Seite „Sicherungseinstellungen“ die Option „Im abgesicherten Sicherungsmodus arbeiten“ und klicken Sie auf „OK“.
+1. Klicken Sie in Administration Console auf &quot;Einstellungen&quot;> &quot;Core-Systemeinstellungen&quot;> &quot;Sicherungseinstellungen&quot;.
+1. Deaktivieren Sie auf der Seite &quot;Sicherungseinstellungen&quot;die Option Im abgesicherten Sicherungsmodus arbeiten und klicken Sie auf OK.

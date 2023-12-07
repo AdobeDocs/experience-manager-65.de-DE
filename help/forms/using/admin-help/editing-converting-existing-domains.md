@@ -1,16 +1,12 @@
 ---
 title: Bestehende Domains bearbeiten und konvertieren
-seo-title: Editing and converting existing domains
 description: Erfahren Sie, wie Sie auf der Seite „Domain-Verwaltung“ die Einstellungen für bestehende Domains ändern. Konvertieren einer vorhandenen Unternehmensdomäne in eine Hybriddomäne oder umgekehrt.
-seo-description: Learn how to change the settings for existing domains from the Domain Management page. Convert an existing enterprise domain to a hybrid domain or conversely.
-uuid: 4cc9547e-b4ec-4588-b1cf-18720f06149a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 44dec184-3ef7-4ba6-a87f-ad171d3cb188
 exl-id: 34ac5f8b-f209-4f99-ad71-4df6f2c88c1e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 69%
@@ -28,7 +24,7 @@ Sie können auf der Seite „Domain-Verwaltung“ die Einstellungen für bestehe
 1. Um den Domain-Namen zu ändern, bearbeiten Sie den Text im Feld „Name“.
 1. Um die Authentifizierungsinformationen für eine Unternehmens- oder Hybrid-Domain zu ändern, klicken Sie auf den entsprechenden Authentifizierungsnamen am unteren Rand der Seite. Ändern Sie auf der Seite Authentifizierung bearbeiten die Einstellungen nach Bedarf. (Siehe [Authentifizierungseinstellungen](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).
 1. Um die Ordnerinformationen für eine Unternehmens-Domain zu ändern, klicken Sie auf den entsprechenden Ordnernamen am unteren Rand der Seite. Ändern Sie auf der Seite &quot;Verzeichnis bearbeiten&quot;die Einstellungen nach Bedarf. (Siehe [Ordner oder benutzerdefinierte SPIs hinzufügen](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).
-1. Klicken Sie nach Abschluss der Änderungen auf OK.
+1. Wenn Sie Ihre Änderungen abgeschlossen haben, klicken Sie auf OK.
 
 ## Konvertieren einer Unternehmens-Domain in eine Hybrid-Domain {#convert-an-enterprise-domain-to-a-hybrid-domain}
 

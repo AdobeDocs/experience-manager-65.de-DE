@@ -1,28 +1,24 @@
 ---
 title: Aktivieren von AEM, um durch Document Security geschützte PDF-Dokumente zu durchsuchen
-seo-title: Enable AEM to search document security protected PDF and Microsoft Office documents
 description: Erfahren Sie, wie Sie die native AEM-Suche aktivieren, um eine Volltextsuche in DRM-geschützten PDF-Dokumenten durchzuführen.
-seo-description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.
-uuid: dba882f8-bad4-4122-a0df-03cf087afb23
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 7eebef08-83b9-4b56-90ec-35ab3b0c27e8
 noindex: true
 feature: Document Security
 exl-id: 91cbd1f1-d53d-455b-8d2c-6918b521db81
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '643'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '639'
+ht-degree: 63%
 
 ---
 
 # AEM aktivieren, um durch Document Security geschützte PDF-Dokumente zu durchsuchen{#enable-aem-to-search-document-security-protected-pdf-and-microsoft-office-documents}
 
-Adobe Experience Manager bietet eine Benutzeroberfläche zum Suchen und Auffinden verschiedener Assets, die in AEM gespeichert werden. Die programmeigene Suchfunktion kann AEM-Assets durchsuchen und nach   Textsuche in Dokumenten verschiedener gängiger Formate, wie z. B. Textdateien, Microsoft Office-Dokumenten und PDF-Dokumenten. Sie können dies auch erweitern und die native Suche aktivieren, um eine Volltextsuche in DRM-geschützten PDF- und Microsoft-Office-Dokumenten durchzuführen.
+Adobe Experience Manager bietet eine Benutzeroberfläche zum Suchen und Auffinden verschiedener Assets, die in AEM gespeichert werden. Die native Suche ermöglicht die Suche nach AEM Assets und die Durchführung der Textsuche in verschiedenen häufig verwendeten Dokumentformaten wie Textdateien, Microsoft Office-Dokumenten und PDF-Dokumenten. Sie können dies auch erweitern und die native Suche aktivieren, um eine Volltextsuche in DRM-geschützten PDF- und Microsoft-Office-Dokumenten durchzuführen.
 
-Führen Sie die folgenden Schritte aus, um AEM die Suche in sicherheitsgeschützten PDF- und Microsoft Office Dokumenten zu ermöglichen:
+Führen Sie die folgenden Schritte aus, um die AEM zum Durchsuchen von durch Document Security geschützten PDF- und Microsoft Office-Dokumenten zu aktivieren:
 
 ## Bevor Sie beginnen {#before-you-start}
 
@@ -30,30 +26,30 @@ Führen Sie die folgenden Schritte aus, um AEM die Suche in sicherheitsgeschütz
 * Fügen Sie das Paket „sun.util.calendar“ zur Zulassungsliste der **Deserialisierungs-Firewall-Konfiguration hinzu.** Die Konfiguration ist unter `https://'[server]:[port]'/system/console/configMgr` aufgeführt.
 * Stellen Sie sicher, dass alle AEM-Pakete aktiv sind. Die Bundles sind unter `https://'[server]:[port]'/system/console/bundles` aufgeführt. Wenn alle Bundles nicht aktiv, warten Sie einige Minuten und überprüfen Sie den Status der Bundles.
 
-## Erstellen Sie eine sichere Verbindung AEM Forms Workflow (AEM Forms on JEE) {#establish-a-secure-connection-within-aem-forms-workflow-aem-forms-on-jee}
+## Herstellen einer sicheren Verbindung innerhalb des AEM Forms-Workflows (AEM Forms on JEE) {#establish-a-secure-connection-within-aem-forms-workflow-aem-forms-on-jee}
 
-Eine sichere Verbindung ermöglicht einen  nahtlosen Informationsfluss zwischen AEM Forms auf JEE und den OSGi-Services, die auf demselben Server ausgeführt werden. Verwenden Sie eine der folgenden Methoden, um eine sichere Verbindung herzustellen:
+Eine sichere Verbindung ermöglicht einen nahtlosen Informationsfluss zwischen AEM Forms on JEE und den auf demselben Server ausgeführten OSGi-Diensten. Verwenden Sie eine der folgenden Methoden, um eine sichere Verbindung herzustellen:
 
 * Konfigurieren des AEM Forms Client SDK Bundle mit AEM Forms on JEE-Administratorberechtigungen
 * Konfigurieren von AEM Forms Client SDK Bundle mit gegenseitiger Authentifizierung 
 
 ### Konfigurieren des AEM Forms Client SDK Bundle mit Administratorberechtigungen für AEM Forms on JEE {#configure-aem-forms-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
 
-1. Öffnen Sie AEM Configuration Manager und melden Sie sich als Administrator an. Die Standard-URL lautet https://&lt;serverName>:&lt;port>/lc/system/console/configMgr.
-1. Öffnen Sie das AEM Forms Client SDK Bundle. Geben Sie Werte für die folgenden Eigenschaften an:
+1. Öffnen Sie AEM Konfigurationsmanager und melden Sie sich als Administrator an. Die Standard-URL lautet https://&lt;serverName>:&lt;port>/lc/system/console/configMgr.
+1. Suchen und öffnen Sie das AEM Forms Client SDK Bundle. Geben Sie einen Wert für die folgenden Eigenschaften an:
 
    * **Server-URL:** Geben Sie die HTTP-URL des AEM Forms on JEE-Servers an. Um die Kommunikation über HTTPS zu aktivieren, starten Sie AEM Forms auf JEE-Server mit dem Parameter -Djavax.net.ssl.trustStore=&lt;Pfad der Keystore-Datei von AEM Forms auf JEE> neu.
    * **Dienstname**: Fügen Sie den RightsManagementService zur Liste der angegebenen Dienste hinzu.
-   * **Benutzername:** Geben Sie den Benutzernamen des AEM Forms on JEE-Kontos an, um Aufrufe vom AEM Forms on JEE-Server zu initiieren. Das angegebene Konto benötigt Berechtigungen zum Aufrufen der Document Services auf dem AEM Forms on JEE-Server.
-   * **Kennwort:** Geben Sie das Kennwort für das AEM Forms on JEE-Konto an, das im Feld „Benutzername“ erwähnt ist.
+   * **Benutzername:** Geben Sie den Benutzernamen des AEM Forms on JEE-Kontos an, um Aufrufe vom AEM Forms on JEE-Server zu initiieren. Das angegebene Konto muss über Berechtigungen zum Aufrufen von Document Services auf dem AEM Forms on JEE-Server verfügen.
+   * **Passwort**: Geben Sie das Kennwort des im Feld Benutzername erwähnten AEM Forms on JEE-Kontos an.
 
-   Klicken Sie auf **Speichern**. AEM ist aktiviert, um PDF- und Microsoft Office-Dokumente, die durch Document Security geschützt sind zu durchsuchen.
+   Klicken Sie auf **Speichern**. AEM ist aktiviert, um durch Document Security geschützte PDF- und Microsoft Office-Dokumente zu durchsuchen.
 
 ### Konfigurieren von AEM Forms Client SDK Bundle mit gegenseitiger Authentifizierung  {#configure-aem-forms-client-sdk-bundle-using-mutual-authentication}
 
-1. Aktivieren Sie die gegenseitige Authentifizierung für AEM Forms on JEE. Weitere Informationen finden Sie unter [CAC und gegenseitige Authentifizierung](https://helpx.adobe.com/de/livecycle/kb/cac-mutual-authentication.html).
-1. Öffnen Sie AEM Configuration Manager und melden Sie sich als Administrator an. Die Standard-URL lautet https://&lt;serverName>:&lt;port>/lc/system/console/configMgr.
-1. Öffnen Sie das AEM Forms Client SDK Bundle. Geben Sie Werte für die folgenden Eigenschaften an:
+1. Aktivieren Sie die gegenseitige Authentifizierung für AEM Forms on JEE. Detaillierte Informationen finden Sie unter [CAC und gegenseitige Authentifizierung](https://helpx.adobe.com/de/livecycle/kb/cac-mutual-authentication.html).
+1. Öffnen Sie AEM Konfigurationsmanager und melden Sie sich als Administrator an. Die Standard-URL lautet https://&lt;serverName>:&lt;port>/lc/system/console/configMgr.
+1. Suchen und öffnen Sie das AEM Forms Client SDK Bundle. Geben Sie einen Wert für die folgenden Eigenschaften an:
 
    * **Server-URL:** Geben Sie die HTTPS-URL des AEM Forms on JEE-Servers an. Um die Kommunikation über HTTPS zu aktivieren, starten Sie AEM Forms auf JEE-Server mit dem Parameter -Djavax.net.ssl.trustStore=&lt;Pfad der Keystore-Datei von AEM Forms auf JEE> neu.
    * **2-Weg-SSL aktivieren**: Aktivieren Sie die Option für 2-Weg-SSL.
@@ -63,9 +59,9 @@ Eine sichere Verbindung ermöglicht einen  nahtlosen Informationsfluss zwischen 
    * **TrustStorePassword**: Geben Sie das Kennwort für die TrustStore-Datei an.
    * **Service-Name**: Fügen Sie den RightsManagementService zur Liste der angegebenen Services hinzu.
 
-   Klicken Sie auf **Speichern**. AEM ist aktiviert, um PDF- und Microsoft Office-Dokumente, die durch Document Security geschützt sind zu durchsuchen.
+   Klicken Sie auf **Speichern**. AEM ist aktiviert, um durch Document Security geschützte PDF- und Microsoft Office-Dokumente zu durchsuchen
 
-## Indexieren Sie ein Beispiel für ein richtliniengeschütztes PDF- oder Microsoft Office-Dokument. {#index-a-sample-policy-protected-pdf-or-microsoft-office-document}
+## Indexieren eines richtliniengeschützten Beispieldokuments für PDF oder Microsoft Office {#index-a-sample-policy-protected-pdf-or-microsoft-office-document}
 
 1. Melden Sie sich bei AEM Assets als Administrator an.
 1. Erstellen Sie einen Ordner in AEM Digital Asset Manager und laden Sie die durch Richtlinien geschützten PDF oder Microsoft Office-Dokumente in den neu erstellten Ordner hoch. Durchsuchen Sie nun die Inhalte der richtliniengeschützten Dokumente mit der AEM-Suche. Das Dokument muss zurückzugeben werden, das den gesuchten Text enthält, das Text enthält.

@@ -1,19 +1,15 @@
 ---
 title: Verbindung mit SQL-Datenbanken
-seo-title: Connecting to SQL Databases
 description: Greifen Sie auf eine externe SQL-Datenbank zu, damit Ihre AEM-Programme mit den Daten interagieren können.
-seo-description: Access an external SQL database to so that your AEM applications can interact with the data
-uuid: 0af0ed08-9487-4c37-87ce-049c9b4c1ea2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 92%
+source-wordcount: '895'
+ht-degree: 91%
 
 ---
 
@@ -100,7 +96,7 @@ Wenn Sie mit CQ arbeiten, gibt es mehrere Methoden, um die Konfigurationseinstel
 
 Die folgenden Eigenschaften sind bei der Konfiguration eines Pool-Verbindungsdienstes verfügbar. Die Eigenschaftsnamen werden so aufgelistet, wie sie in der Web-Konsole angezeigt werden. Der entsprechende Name für einen `sling:OsgiConfig`-Knoten wird in Klammern aufgeführt. Die angegebenen Beispielwerte gelten für einen HSQLDB-Server und eine Datenbank mit dem Alias `mydb`:
 
-* JDBC-Treiberklasse (`jdbc.driver.class`): Die zu verwendende Java™-Klasse, die die Schnittstelle java.sql.Driver implementiert, zum Beispiel, `org.hsqldb.jdbc.JDBCDriver`. Der Datentyp ist `String`.
+* JDBC-Treiberklasse ( `jdbc.driver.class`): Die zu verwendende Java™-Klasse, die die Schnittstelle java.sql.Driver implementiert, zum Beispiel `org.hsqldb.jdbc.JDBCDriver`. Der Datentyp ist `String`.
 
 * JDBC-Verbindungs-URI ( `jdbc.connection.uri`): Die URL der Datenbank, die zum Erstellen der Verbindung verwendet werden soll, beispielsweise `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. Das Format der URL muss mit der getConnection-Methode der java.sql.DriverManager-Klasse verwendbar sein. Der Datentyp ist `String`.
 

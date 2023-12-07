@@ -1,29 +1,25 @@
 ---
 title: Erstellen eines adaptiven Formulars mithilfe eines Satzes adaptiver Formulare
-seo-title: Create an adaptive form using a set of adaptive forms
 description: Mit AEM Forms können Sie adaptive Formulare zusammenführen, um ein einzelnes großes adaptives Formular zu erstellen und dessen Funktionen zu verstehen.
-seo-description: With AEM Forms, bring adaptive forms together to author a single large adaptive form, and understand its features.
-uuid: e52e4f90-8821-49ec-89ff-fbf07db69bd2
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 264aa8c0-ba64-4768-b3d1-1b9baa6b4d72
 docset: aem65
 feature: Adaptive Forms
 exl-id: 4254c2cb-66cc-4a46-b447-bc5e32def7a0
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 46%
+source-wordcount: '620'
+ht-degree: 50%
 
 ---
 
 # Erstellen eines adaptiven Formulars mit einem Satz adaptiver Formulare{#create-an-adaptive-form-using-a-set-of-adaptive-forms}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/using/create-an-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/using/create-an-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
 
 ## Übersicht {#overview}
 
-In einem Workflow, z. B. einer Anwendung zum Öffnen eines Bankkontos, füllen Ihre Benutzer mehrere Formulare aus. Anstatt sie aufzufordern, einen Formularsatz auszufüllen, können Sie die Formulare stapeln und ein großes Formular (übergeordnetes Formular) erstellen. Wenn Sie ein adaptives Formular zum größeren Formular hinzufügen, wird es als Bedienfeld (untergeordnetes Formular) hinzugefügt. Sie fügen einen Satz untergeordneter Formulare hinzu, um ein übergeordnetes Formular zu erstellen. Sie können Bedienfelder je nach Benutzereingabe ein- oder ausblenden. Schaltflächen des übergeordneten Formulars, z. B. Senden und Zurücksetzen, überschreiben die Schaltflächen des untergeordneten Formulars. Um ein adaptives Formular zum übergeordneten Formular hinzuzufügen, können Sie das adaptive Formular per Drag-and-Drop aus dem Asset-Browser ziehen (wie adaptive Formularfragmente).
+In einem Workflow, z. B. einer Anwendung zum Öffnen eines Bankkontos, füllen Ihre Benutzer mehrere Formulare aus. Anstatt sie aufzufordern, einen Formularsatz auszufüllen, können Sie die Formulare stapeln und ein großes Formular (übergeordnetes Formular) erstellen. Wenn Sie ein adaptives Formular zum größeren Formular hinzufügen, wird es als Bedienfeld (untergeordnetes Formular) hinzugefügt. Sie fügen einen Satz untergeordneter Formulare hinzu, um ein übergeordnetes Formular zu erstellen. Sie können Bedienfelder je nach Benutzereingabe ein- oder ausblenden. Schaltflächen des übergeordneten Formulars, wie Senden und Zurücksetzen, überschreiben die Schaltflächen des untergeordneten Formulars. Um ein adaptives Formular zum übergeordneten Formular hinzuzufügen, können Sie das adaptive Formular per Drag-and-Drop aus dem Asset-Browser ziehen (wie adaptive Formularfragmente).
 
 Die verfügbaren Funktionen lauten:
 
@@ -143,7 +139,7 @@ Führen Sie die folgenden Schritte aus, um ein adaptives Formular mithilfe des A
 
 1. Öffnen Sie das übergeordnete Formular im Bearbeitungsmodus.
 1. Klicken Sie in der Seitenleiste auf **Assets** ![assets-browser](assets/assets-browser.png). Wählen Sie **Adaptives Formular** aus der Dropdown-Liste.
-   [![Auswählen des adaptiven Formulars unter „Assets“](assets/asset.png)](assets/asset-1.png)
+   [![Auswählen des adaptiven Formulars unter Assets](assets/asset.png)](assets/asset-1.png)
 
 1. Ziehen Sie das adaptive Formular, das Sie als untergeordnetes Formular hinzufügen möchten.
    [![Ziehen Sie das adaptive Formular in Ihre Site.](assets/drag-drop.png)](assets/drag-drop-1.png)Das adaptive Formular, das Sie ablegen, wird als untergeordnetes Formular hinzugefügt.

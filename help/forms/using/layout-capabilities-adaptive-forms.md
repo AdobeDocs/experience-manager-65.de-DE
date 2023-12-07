@@ -1,25 +1,21 @@
 ---
 title: Layout-Möglichkeiten für adaptive Formulare
-seo-title: Layout capabilities of adaptive forms
 description: Layout und Erscheinungsbild adaptiver Formulare auf verschiedenen Geräten werden durch die Layouteinstellungen gesteuert. Machen Sie sich mit den verschiedenen Layouts und ihrer Anwendung vertraut.
-seo-description: Layout and appearances of adaptive forms on various devices are governed by the layout settings. Understand the various layouts and how to apply them.
-uuid: 79022ac2-1aa3-47c5-b094-cbe83334ea62
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 9459c414-eac9-4bd9-a773-cceaeb736c56
 docset: aem65
 feature: Adaptive Forms
 exl-id: 3db623a4-f1ad-4b7f-97e8-0be138aa8b26
-source-git-commit: 498fb5f6f923710a907e1cf525f56f49850e16b2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1209'
-ht-degree: 64%
+source-wordcount: '1193'
+ht-degree: 68%
 
 ---
 
 # Layout-Möglichkeiten für adaptive Formulare{#layout-capabilities-of-adaptive-forms}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/using/create-an-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/using/create-an-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |

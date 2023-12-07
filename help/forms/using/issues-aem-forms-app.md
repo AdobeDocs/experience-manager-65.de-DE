@@ -1,26 +1,22 @@
 ---
 title: Fehlerbehebung der AEM Forms-App
-seo-title: Troubleshoot AEM Forms app
-description: Erfahren Sie mehr über die häufigsten Probleme mit AEM Forms-App und wie die Fehlerbehebung für diese Probleme durchgeführt wird.
-seo-description: Learn about common issues with AEM Forms app and how to troubleshoot them.
-uuid: a5cc3065-0ebf-48c0-a8fe-f1061632ca90
+description: Erfahren Sie mehr über häufige Probleme mit der AEM Forms-App und wie Sie diese beheben können.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: 2f45a965-590b-43b1-95c6-df4b74ad15b9
 exl-id: caec5fc3-db52-4bf5-8eb2-17e5189ab819
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '680'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '675'
+ht-degree: 72%
 
 ---
 
 # Fehlerbehebung der AEM Forms-App {#troubleshoot-aem-forms-app}
 
-In diesem Artikel werden die Fehlermeldungen, die beim Erstellen von AEM Forms App möglicherweise angezeigt werden und die Schritte zur Problembehebung.
+In diesem Artikel werden die Fehlermeldungen beschrieben, die beim Erstellen der AEM Forms-App möglicherweise angezeigt werden, sowie die Schritte zu ihrer Behebung.
 
-Die Abschnitte in diesem Artikel behandeln Folgendes:
+Die Abschnitte in diesem Artikel beinhalten:
 
 * [Verlust von Anhängen für iOS-Benutzer](/help/forms/using/issues-aem-forms-app.md#attachment-loss-for-ios-users)
 * [Entwürfe von HTML5 -Formularen, die von Workspace-Benutzern eingesendet wurden, werden nicht auf dem Portal angezeigt](/help/forms/using/issues-aem-forms-app.md#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal)
@@ -31,7 +27,7 @@ Die Abschnitte in diesem Artikel behandeln Folgendes:
 
 ## Verlust von Anhängen für iOS-Benutzer {#attachment-loss-for-ios-users}
 
-AEM Forms-App für iOS, die zur Synchronisierung mit AEM Forms unter OSGi konfiguriert ist, unterstützt nur Anlagen auf Feldebene. Alle Anlagen müssen eindeutige Namen haben. Wenn mehrere Anlagen denselben Namen haben, wird nur eine Anlage beibehalten und alle anderen mit identischem Namen gehen verloren. Führen Sie die folgenden Schritte aus, um Benutzer auf iOS-Geräten vor Datenverlust zu bewahren:
+Das AEM Forms-Programm für iOS, das für die Synchronisierung mit AEM Forms unter OSGi konfiguriert ist, unterstützt nur Anlagen auf Feldebene. Alle Anlagen müssen eindeutige Namen haben. Wenn mehrere Anlagen denselben Namen haben, wird nur eine Anlage beibehalten und alle anderen mit identischem Namen gehen verloren. Führen Sie die folgenden Schritte aus, um Benutzer auf iOS-Geräten vor Datenverlust zu bewahren:
 
 1. Auf dem verbundenen Server navigieren Sie zu: **Adobe Experience Manager > Werkzeuge > Vorgänge > Webkonsole**.
 1. Suchen Sie nach **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** und klicken Sie darauf.
@@ -50,7 +46,7 @@ Bei HTML5-Formularen, die in der AEM Forms-Anwendung mit dem HTML-Renderprofil *
    URL: `https://<server>:<port>/lc/crx/de/index.jsp`
 
 1. Im Stammpfad von CRXDE, in der Zugriffssteuerungsliste unter Zugriffssteuerung klicken Sie auf **+**.
-1. Klicken Sie im Dialogfeld **Neuen Eintrag hinzufügen** auf die Gruppensuche-Schaltfläche im Feld „Prinzipal“.
+1. Im **Neuen Eintrag hinzufügen** auf die Schaltfläche &quot;Gruppensuche&quot;im Feld &quot;Prinzipal&quot;.
 1. Geben Sie im Feld „Name“ des Dialogfelds „Prinzipal auswählen“ `PERM_WORKSPACE_USER` ein und klicken Sie auf **„Suchen“**. 
 1. Wählen Sie `PERM_WORKSPACE_USER`-Gruppe im Dialogfeld „Prinzipal wählen“ und klicken Sie auf **OK**.
 1. Im Dialogfeld „Neuen Eintrag hinzufügen“ wird `PERM_WORKSPACE_USER`-Gruppe im Feld „Prinzipal“ ausgewählt.
@@ -61,7 +57,7 @@ Bei HTML5-Formularen, die in der AEM Forms-Anwendung mit dem HTML-Renderprofil *
 
 ## HTML5-Formulare (nicht zwischengespeichert) werden in der AEM Forms-App nicht geladen {#html-forms-not-cached-fail-to-load-in-aem-forms-app}
 
-Wenn AEM Forms App mit einer älteren Version von AEM Forms-Server verbunden ist, können nicht zwischengespeicherte HTML5-Formulare nicht in AEM Forms App hochgeladen werden.
+Wenn die AEM Forms-App mit einer älteren Version des AEM Forms-Servers verbunden ist, können nicht zwischengespeicherte HTML5-Formulare nicht in der AEM Forms-App geladen werden.
 
 Führen Sie zur Behebung dieses Problems folgende Schritte durch:
 
@@ -76,9 +72,9 @@ Führen Sie zur Behebung dieses Problems folgende Schritte durch:
 
 ## AEM Forms werden unter Windows nicht synchronisiert {#aem-forms-do-not-sync-on-windows}
 
-Ein Formular wird unter Windows nicht in der AEM Forms-App mit dem verbundenen Server synchronisiert, wenn der Pfad des Formulars oder seine Ressourcen länger als 256 Zeichen lang sind.
+In der AEM Forms App unter Windows wird ein Formular nicht mit dem verbundenen Server synchronisiert, wenn der Pfad des Formulars oder seiner Ressourcen mehr als 256 Zeichen oder mehr enthält.
 
-Modifizieren Sie den Pfad des Formulars und seine Ressourcen, um die Anzahl der Zeichen im Pfad auf 256 zu reduzieren.
+Ändern Sie den Pfad des Formulars und seiner Ressourcen, um die Anzahl der Zeichen auf weniger als 256 Zeichen zu reduzieren.
 
 ## Nicht unterstützte Version von Gradle {#unsupported-version-of-gradle}
 

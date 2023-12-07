@@ -1,19 +1,15 @@
 ---
 title: ClientContext-JavaScript-API
-seo-title: Client Context JavaScript API
 description: Erfahren Sie mehr über die JavaScript-API für ClientContext in Adobe Experience Manager.
-seo-description: The JavaScript API for Client Context
-uuid: be58998c-f23e-4768-8394-1f1ad3994c4c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
 feature: Context Hub
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3157'
+source-wordcount: '3106'
 ht-degree: 27%
 
 ---
@@ -204,7 +200,7 @@ Der Name des Speichers. Mit der Methode `getInstance` können Sie diesen Wert ab
 
 Weitere Informationen zu geerbten Methoden finden Sie unter CQ_Analytics.SessionStore .
 
-#### löschen() {#clear}
+#### clear() {#clear}
 
 Entfernt die Sitzungsspeicherdaten und entfernt alle Initialisierungseigenschaften.
 
@@ -613,7 +609,7 @@ Verwenden Sie loadInitProperties , um die Sitzungsspeicherdaten mit den Initiali
 
 Kein zurückgegebener Wert.
 
-#### löschen() {#clear-1}
+#### clear() {#clear-1}
 
 Entfernt alle Dateneigenschaften aus dem Store.
 

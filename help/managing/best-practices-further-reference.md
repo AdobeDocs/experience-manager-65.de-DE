@@ -1,17 +1,13 @@
 ---
 title: Die Checkliste – Weitere Referenzen
-seo-title: The Checklist - Further Reference
 description: Erfahren Sie mehr über weitere Details, die die Dokumente und Grundsätze der Checkliste „Verwalten von Projekten – Best Practices“ erläutern und/oder ergänzen.
-seo-description: Learn about further details that elaborate on and/or augment the documents and principles covered by the Managing Projects - Best Practices Checklist.
-uuid: 58a8b4ab-e447-4a12-b9e9-4cd3db11e06a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
-discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '3699'
 ht-degree: 100%
 
@@ -71,7 +67,7 @@ Wie bei jedem Projekt ist es von entscheidender Bedeutung, so bald wie möglich 
 
 * **Rollen**
 
-   Rollen sollten klar definiert und allen am Projekt beteiligten Personen bekannt gemacht werden. Außerdem ist es ratsam, Folgendes hervorzuheben:
+  Rollen sollten klar definiert und allen am Projekt beteiligten Personen bekannt gemacht werden. Außerdem ist es ratsam, Folgendes hervorzuheben:
 
    * Entscheidungsträger
    * Kontaktstellen
@@ -82,7 +78,7 @@ Wie bei jedem Projekt ist es von entscheidender Bedeutung, so bald wie möglich 
 
 * **Beteiligung**
 
-   Wenn Sie alle Beteiligten so bald wie möglich einbinden, können Sie sie ermutigen, *Stakeholder* des Projekts zu werden. Dadurch sind sie stärker am Erfolg des Projekts interessiert.
+  Wenn Sie alle Beteiligten so bald wie möglich einbinden, können Sie sie ermutigen, *Stakeholder* des Projekts zu werden. Dadurch sind sie stärker am Erfolg des Projekts interessiert.
 
    * Auf Kundenseite umfasst diese Rolle die Autorinnen und Autoren, die täglich mit dem System arbeiten
    * In Ihrem eigenen Projektteam gehören dazu auch die Verantwortlichen für die Qualitätssicherung. Je besser sie die Anforderungen des Kunden bzw. der Kundin verstehen, desto besser können sie die Tests planen.
@@ -93,20 +89,20 @@ Wie bei jedem Projekt ist es von entscheidender Bedeutung, so bald wie möglich 
 
 * **Prozesse**
 
-   Die definierten Prozesse hängen von Ihrem jeweiligen Projekt ab. Denken Sie daran, diese Prozesse einfach zu halten, wobei Sie Folgendes berücksichtigen sollten:
+  Die definierten Prozesse hängen von Ihrem jeweiligen Projekt ab. Denken Sie daran, diese Prozesse einfach zu halten, wobei Sie Folgendes berücksichtigen sollten:
 
    * Die Definition von Prozessen (und Kommunikationswegen) für die Interaktion mit Dritten, z. B. Design-Agenturen und Software-Drittanbietern.
    * Kundinnen und Kunden verfügen häufig über ein eigenes Projekt-Management sowie eigene Verfahren und Werkzeuge für die Berichterstellung.
 
 * **Tracking-Tools**
 
-   Es gibt viele Tools zur Nachverfolgung von Informationen zu Fehlern, Aufgaben und anderen Aspekten Ihres Projekts – siehe [Übersicht der möglichen Tools](#overview-of-potential-tools), um weitere Details zu erhalten.
+  Es gibt viele Tools zur Nachverfolgung von Informationen zu Fehlern, Aufgaben und anderen Aspekten Ihres Projekts – siehe [Übersicht der möglichen Tools](#overview-of-potential-tools), um weitere Details zu erhalten.
 
    * Dabei ist es wichtig, nur eine Kopie der Informationen aufzubewahren und die Informationen (und damit den Zugriff auf das verwendete Tool) zu teilen. Dieser Workflow vereinfacht die Wartung und hilft, Unstimmigkeiten zu vermeiden.
 
 * **Umfang**
 
-   Definieren Sie klar, was das Projekt auf verschiedenen Ebenen abdecken soll:
+  Definieren Sie klar, was das Projekt auf verschiedenen Ebenen abdecken soll:
 
    * die einzelnen Versionen (wenn ein iterativer Freigabeprozess verwendet wird und unabhängig davon, ob sie an Kundinnen und Kunden oder Ihr internes Test-Team ausgeliefert werden).
    * das AEM-Projekt.
@@ -115,7 +111,7 @@ Wie bei jedem Projekt ist es von entscheidender Bedeutung, so bald wie möglich 
 
 * **Reporting**
 
-   Definieren Sie klar, welche Informationen berichtet werden sollen, in welcher Form, wie oft und an wen.
+  Definieren Sie klar, welche Informationen berichtet werden sollen, in welcher Form, wie oft und an wen.
 
 * **Terminologie**
 
@@ -242,14 +238,14 @@ Die Antwortzeiten, die Sie anstreben, unterscheiden sich in der Authoring- und d
 
 * **Autorenumgebung**
 
-   Diese Umgebung wird von Autorinnen und Autoren verwendet, die Inhalte eingeben und aktualisieren. Daher muss sie:
+  Diese Umgebung wird von Autorinnen und Autoren verwendet, die Inhalte eingeben und aktualisieren. Daher muss sie:
 
    * einige wenige Benutzerinnen und Benutzer bedienen können, die beim Aktualisieren von Inhaltsseiten und einzelnen Elementen auf diesen Seiten eine hohe Anzahl von Anforderungen generieren
    * so schnell wie möglich sein, um die Produktivität bei der Bereitstellung Ihrer Inhalte auf der Website zu maximieren
 
 * **Veröffentlichungsumgebung**
 
-   Diese Umgebung enthält Inhalte, die Sie Ihren Benutzerinnen und Benutzern zur Verfügung stellen:
+  Diese Umgebung enthält Inhalte, die Sie Ihren Benutzerinnen und Benutzern zur Verfügung stellen:
 
    * Die Geschwindigkeit ist auch hier wichtig, darf aber gewöhnlich langsamer sein als in der Authoring-Umgebung
    * Häufig werden zusätzliche leistungssteigernde Mechanismen angewendet:
@@ -285,13 +281,13 @@ Es gibt verschiedene Mechanismen, mit denen Sie die Antwortzeiten überwachen k�
 
 * **Überwachen der Antwortzeiten mit „request.log“ von AEM**
 
-   Ein guter Ausgangspunkt für Leistungsanalysen ist das Anforderungsprotokoll. Neben anderen Informationen können Sie die Antwortzeiten einzelner Anfragen einsehen. Siehe [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) für weitere Informationen.
+  Ein guter Ausgangspunkt für Leistungsanalysen ist das Anforderungsprotokoll. Neben anderen Informationen können Sie die Antwortzeiten einzelner Anfragen einsehen. Siehe [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) für weitere Informationen.
 
 * **Überwachen von Antwortzeiten mit HTML-Kommentaren**
 
-   HTML-Kommentare können verwendet werden, um Informationen zur Antwortzeit in die Quelle jeder Seite einzufügen:
+  HTML-Kommentare können verwendet werden, um Informationen zur Antwortzeit in die Quelle jeder Seite einzufügen:
 
-   `</body> </html>v <-- Page took 58 milliseconds to be rendered by the server --> Response times for search requests`
+  `</body> </html>v <-- Page took 58 milliseconds to be rendered by the server --> Response times for search requests`
 
 #### Suchanfragen {#search-requests}
 
@@ -317,11 +313,11 @@ Diese Suchanfragen sollten von Anfang an in Ihr Projekt integriert und eingeplan
 
 * **Überwachen der Suchantwortzeiten mit „request.log“ von AEM**
 
-   Auch hier kann „request.log“ verwendet werden, um die Antwortzeiten für Suchanfragen zu überwachen; siehe [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) für weitere Details.
+  Auch hier kann „request.log“ verwendet werden, um die Antwortzeiten für Suchanfragen zu überwachen; siehe [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) für weitere Details.
 
 * **Programmierte Mechanismen zur Messung der Suchantwortzeiten**
 
-   Um die von Ihnen erfassten Informationen zu Suchanfragen und deren Leistung anzupassen, wird empfohlen, die Informationserfassung in Ihren Projekt-Quell-Code aufzunehmen; siehe [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) für weitere Details.
+  Um die von Ihnen erfassten Informationen zu Suchanfragen und deren Leistung anzupassen, wird empfohlen, die Informationserfassung in Ihren Projekt-Quell-Code aufzunehmen; siehe [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) für weitere Details.
 
 ### Parallelität {#concurrency}
 
@@ -353,15 +349,15 @@ Bevor wir die entsprechenden Metriken besprechen, eine schnelle Definition der B
 
 * **Kapazität und Volumen**
 
-   | Was/Wo | Kapazität | Volumen |
-   |---|---|---|
-   | Client | Rechenleistung des Computers des Benutzers bzw. der Benutzerin. | Komplexität des Seiten-Layouts. |
-   | Netzwerk | Netzwerkbandbreite. | Größe der Seite (Code, Bilder usw.). |
-   | Dispatcher-Cache | Server-Speicher des Webservers (Hauptspeicher und Festplatte). | Webserver (Hauptspeicher und Festplatte). Anzahl und Größe der zwischengespeicherten Seiten. |
-   | Ausgabe-Cache | Server-Speicher des AEM-Servers (Hauptspeicher und Festplatte). | Anzahl und Größe der Seiten im Ausgabe-Cache, die Anzahl der Abhängigkeiten pro Seite. Der Dispatcher-Cache verringert dieses Volumen. |
-   | Webserver | Rechenleistung des Webservers. | Anzahl der Anfragen. Der Cache verringert dieses Volumen. |
-   | Vorlage | Rechenleistung des Webservers. | Komplexität der Vorlagen. |
-   | Repository | Leistung des Repositorys. | Anzahl der aus dem Repository geladenen Seiten. |
+  | Was/Wo | Kapazität | Volumen |
+  |---|---|---|
+  | Client | Rechenleistung des Computers des Benutzers bzw. der Benutzerin. | Komplexität des Seiten-Layouts. |
+  | Netzwerk | Netzwerkbandbreite. | Größe der Seite (Code, Bilder usw.). |
+  | Dispatcher-Cache | Server-Speicher des Webservers (Hauptspeicher und Festplatte). | Webserver (Hauptspeicher und Festplatte). Anzahl und Größe der zwischengespeicherten Seiten. |
+  | Ausgabe-Cache | Server-Speicher des AEM-Servers (Hauptspeicher und Festplatte). | Anzahl und Größe der Seiten im Ausgabe-Cache, die Anzahl der Abhängigkeiten pro Seite. Der Dispatcher-Cache verringert dieses Volumen. |
+  | Webserver | Rechenleistung des Webservers. | Anzahl der Anfragen. Der Cache verringert dieses Volumen. |
+  | Vorlage | Rechenleistung des Webservers. | Komplexität der Vorlagen. |
+  | Repository | Leistung des Repositorys. | Anzahl der aus dem Repository geladenen Seiten. |
 
 ### Andere Metriken {#other-metrics}
 
@@ -387,7 +383,6 @@ Die [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md) be
 >* Ist als abstrakte Übersicht gedacht. Siehe die [Projekt-Checkliste](/help/managing/best-practices.md) für bestimmte Phasen/Milestones/Aufgaben.
 >* Jede Zeitskala ist theoretisch.
 >
-
 
 Für eine neue Implementierung eines standardmäßigen AEM-Projekts sollten Sie folgende Aufgaben berücksichtigen:
 
@@ -423,12 +418,12 @@ Einige Punkte, die für jede Kategorie zu beachten sind:
       * Der erste Sprint führt zur ersten Bereitstellung in Ihrer Testumgebung.
       * Jeder Sprint hat ein lauffähiges Ergebnis.
       * Für jeden Sprint erfolgt eine Kundenabnahme (mindestens ein strukturierter Test mit Feedback).
+
    * Planen Sie den Fall eines Updates der verfügbaren AEM-Version während des Projekts mit ein.
    * Planen Sie Tests und Optimierungen während des Sprints ein.
    * Planen Sie Stabilisierungs- und Optimierungsphasen ein.
    * Erstellen Sie ein Protokoll mit Elementen, die für weitere Versionen geplant werden sollten.
    * Planen Sie die Partnerbeteiligung und -übergabe. ein
-
 
 * **Infrastruktur**
 
@@ -438,12 +433,14 @@ Einige Punkte, die für jede Kategorie zu beachten sind:
       * Definieren Sie Leistungsziele (d. h. Erwartungen klar definieren).
       * Definieren Sie die Architektur von Hardware und Infrastruktur, einschließlich der Größenbestimmung.
       * Definieren Sie die Bereitstellung
+
    * Verwenden Sie mehrere Durchgänge. Bereiten Sie für den ersten Sprint und die erste Konfiguration Folgendes vor:
 
       * Entwicklungsumgebung.
       * Entwicklungsprozess.
       * Testumgebung.
       * Bereitstellungsprozess (einschließlich Konfigurationsverwaltung).
+
    * Planen Sie mehrere Belastungstests.
    * Planen Sie Tests und Optimierungen während des Sprints ein.
    * Planen Sie eine Stabilisierungs- und Optimierungsphase.
@@ -451,8 +448,6 @@ Einige Punkte, die für jede Kategorie zu beachten sind:
    * Verwenden Sie so früh wie möglich benannte Benutzende und definierte Rollen.
    * Planen Sie Schulungen (z. B. Admin-Schulungen).
    * Planen Sie die Übergabe an den Betrieb.
-
-
 
 * **Inhalt**
 

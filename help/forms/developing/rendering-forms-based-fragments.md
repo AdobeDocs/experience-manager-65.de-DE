@@ -1,21 +1,17 @@
 ---
 title: Wiedergeben von Formularen, die auf Fragmenten basieren
-seo-title: Rendering Forms Based on Fragments
 description: Verwenden Sie den Forms-Service zum Wiedergeben von Formularen, die auf mit Designer erstellten Fragmenten basieren.
-seo-description: Use the Forms service to render forms that are based on fragments created using Designer.
-uuid: 9c9a730d-f970-41f8-afed-4e6b6d3d393d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 role: Developer
 exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2199'
-ht-degree: 91%
+source-wordcount: '2189'
+ht-degree: 90%
 
 ---
 
@@ -27,7 +23,7 @@ ht-degree: 91%
 
 Der Forms-Service kann Formulare wiedergeben, die auf mit Designer erstellten Fragmenten basieren. Ein *Fragment* ist ein wiederverwendbarer Teil eines Formulars und wird als separate XDP-Datei gespeichert, die in mehrere Formularentwürfe eingefügt werden kann. Beispielsweise kann ein Fragment einen Adressblock oder Copyright-Informationen enthalten.
 
-Die Verwendung von Fragmenten vereinfacht und beschleunigt die Erstellung und Pflege großer Formularbestände. Beim Erstellen eines neuen Formulars fügen Sie einen Verweis auf das gewünschte Fragment ein. Das Fragment wird dann im Formular angezeigt. Der Fragmentverweis enthält ein Teilformular, das auf die eigentliche XDP-Datei verweist. Weitere Informationen zum Erstellen von Formularentwürfen, die auf Fragmenten basieren, finden Sie unter [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_de)
+Die Verwendung von Fragmenten vereinfacht und beschleunigt die Erstellung und Pflege großer Formularbestände. Beim Erstellen eines Formulars fügen Sie einen Verweis auf das gewünschte Fragment ein und das Fragment wird im Formular angezeigt. Der Fragmentverweis enthält ein Teilformular, das auf die eigentliche XDP-Datei verweist. Weitere Informationen zum Erstellen von Formularentwürfen, die auf Fragmenten basieren, finden Sie unter [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_de)
 
 Ein Fragment kann mehrere Teilformulare enthalten, die in einen Auswahl-Teilformularsatz eingeschlossen sind. Auswahl-Teilformularsätze steuern die Anzeige von Teilformularen basierend auf dem Datenfluss einer Datenverbindung. Verwenden Sie bedingte Anweisungen, um festzulegen, welches Teilformular aus dem Satz im bereitgestellten Formular angezeigt wird. Beispielsweise kann jedes Teilformular in einem Satz Informationen für einen bestimmten geografischen Standort enthalten, und auf der Grundlage des Standorts des Benutzers kann bestimmt werden, welches Teilformular angezeigt wird.
 

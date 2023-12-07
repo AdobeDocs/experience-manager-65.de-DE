@@ -1,20 +1,16 @@
 ---
 title: Was ist Document Security?
-seo-title: About document security
 description: Erfahren Sie, wie Sie mit Document Security vordefinierte Vertraulichkeitseinstellungen mühelos erstellen, speichern und auf Dokumente anwenden.
-seo-description: Learn how you can create, store, and apply predefined confidentiality settings, and distribute your information safely using document security.
-uuid: e4fba2a4-f3c1-4b20-8e05-8e241b40ebd0
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 feature: Document Security
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
-source-git-commit: 18cfefb794382b5314b18a62645f1fba28d314a2
-workflow-type: ht
-source-wordcount: '3268'
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '3219'
 ht-degree: 100%
 
 ---
@@ -67,15 +63,15 @@ Verschiedene Typen von Benutzenden arbeiten mit Document Security, um verschiede
 
 * Systemadmins oder andere IT-Personen installieren und konfigurieren Document Security. Diese Person kann auch für die Konfiguration globaler Einstellungen für den Server, die Web-Seiten sowie Richtlinien und Dokumente verantwortlich sein.
 
-   Zu diesen Einstellungen können beispielsweise eine Document Security-URL, Auditing- und Datenschutzbenachrichtigungen, Registrierungshinweise für eingeladene Benutzende und die standardmäßige Offline-Nutzungsdauer gehören.
+  Zu diesen Einstellungen können beispielsweise eine Document Security-URL, Auditing- und Datenschutzbenachrichtigungen, Registrierungshinweise für eingeladene Benutzende und die standardmäßige Offline-Nutzungsdauer gehören.
 
 * Document Security-Admins erstellen Richtlinien und Richtliniensätze, und sie verwalten nach Bedarf richtliniengeschützte Dokumente für Benutzende. Sie erstellen auch Konten eingeladener Benutzender und überwachen System-, Dokument-, Benutzer-, Richtlinien-, Richtliniensatz- und benutzerdefinierte Ereignisse. Möglicherweise sind sie auch zusammen mit Systemadmins für die Konfiguration des globalen Servers sowie der Web-Seiten- und Richtlinieneinstellungen zuständig.
 
-   Im Bereich „Benutzerverwaltung“ von Administration-Console können Admins Benutzenden die folgenden Rollen zuweisen. Benutzende, denen diese Rollen zugewiesen sind, führen ihre Aufgaben im Bereich der Document Security-Benutzeroberfläche von Administration-Console aus.
+  Im Bereich „Benutzerverwaltung“ von Administration-Console können Admins Benutzenden die folgenden Rollen zuweisen. Benutzende, denen diese Rollen zugewiesen sind, führen ihre Aufgaben im Bereich der Document Security-Benutzeroberfläche von Administration-Console aus.
 
-   **Document Security-Superadmin**
+  **Document Security-Superadmin**
 
-   Benutzende mit dieser Rolle haben Zugriff auf alle Document Security-Einstellungen in Administration-Console. Die folgenden Berechtigungen sind mit der Rolle verknüpft:
+  Benutzende mit dieser Rolle haben Zugriff auf alle Document Security-Einstellungen in Administration-Console. Die folgenden Berechtigungen sind mit der Rolle verknüpft:
 
    * Konfiguration verwalten
    * Richtlinie verwalten
@@ -87,17 +83,17 @@ Verschiedene Typen von Benutzenden arbeiten mit Document Security, um verschiede
    * Delegieren
    * Externe Benutzende einladen
 
-   **Document Security-Admin**
+  **Document Security-Admin**
 
-   Benutzende mit dieser Rolle können den Document Security-Server mithilfe der Seite „Konfiguration“ im Abschnitt „Document Security“ von Administration-Console konfigurieren. Diese Berechtigung ist mit der Rolle „Konfiguration verwalten“ verknüpft.
+  Benutzende mit dieser Rolle können den Document Security-Server mithilfe der Seite „Konfiguration“ im Abschnitt „Document Security“ von Administration-Console konfigurieren. Diese Berechtigung ist mit der Rolle „Konfiguration verwalten“ verknüpft.
 
-   >[!NOTE]
-   >
-   >Benutzende mit dieser Rolle müssen auch über die Rolle „Administration-Console-Benutzer“ verfügen, um sich bei Administration-Console anzumelden und Konfigurationseinstellungen zu bearbeiten.
+  >[!NOTE]
+  >
+  >Benutzende mit dieser Rolle müssen auch über die Rolle „Administration-Console-Benutzer“ verfügen, um sich bei Administration-Console anzumelden und Konfigurationseinstellungen zu bearbeiten.
 
-   **Document Security-Richtliniensatz-Admin**
+  **Document Security-Richtliniensatz-Admin**
 
-   Benutzende mit dieser Rolle können den Abschnitt „Document Security“ von Administration-Console verwenden, um die Richtlinien anderer Benutzender zu bearbeiten und Richtliniensätze zu erstellen, zu bearbeiten und zu löschen. Wenn Richtliniensatz-Admins einen Richtliniensatz erstellen, können sie diesem Richtliniensatz eine Richtliniensatz-Koordinatorin bzw. einen -Koordinator zuweisen. Die folgenden Berechtigungen sind mit der Rolle verknüpft:
+  Benutzende mit dieser Rolle können den Abschnitt „Document Security“ von Administration-Console verwenden, um die Richtlinien anderer Benutzender zu bearbeiten und Richtliniensätze zu erstellen, zu bearbeiten und zu löschen. Wenn Richtliniensatz-Admins einen Richtliniensatz erstellen, können sie diesem Richtliniensatz eine Richtliniensatz-Koordinatorin bzw. einen -Koordinator zuweisen. Die folgenden Berechtigungen sind mit der Rolle verknüpft:
 
    * Richtlinie verwalten
    * Richtliniensätze verwalten
@@ -106,32 +102,32 @@ Verschiedene Typen von Benutzenden arbeiten mit Document Security, um verschiede
    * Ereignisse anzeigen
    * Delegieren
 
-   >[!NOTE]
-   >
-   >Benutzende mit dieser Rolle müssen auch über die Rolle „Administration-Console-Benutzer“ verfügen, um sich bei Administration-Console anzumelden und Konfigurationseinstellungen zu bearbeiten.
+  >[!NOTE]
+  >
+  >Benutzende mit dieser Rolle müssen auch über die Rolle „Administration-Console-Benutzer“ verfügen, um sich bei Administration-Console anzumelden und Konfigurationseinstellungen zu bearbeiten.
 
-   **Document Security verwaltet eingeladene und lokale Benutzer**
+  **Document Security verwaltet eingeladene und lokale Benutzer**
 
-   Benutzende mit dieser Rolle können Aufgaben ausführen, die zur Verwaltung aller eingeladenen und lokalen Benutzenden auf den entsprechenden Document Security-Web-Seiten erforderlich sind. Die folgenden Berechtigungen sind mit der Rolle verknüpft:
+  Benutzende mit dieser Rolle können Aufgaben ausführen, die zur Verwaltung aller eingeladenen und lokalen Benutzenden auf den entsprechenden Document Security-Web-Seiten erforderlich sind. Die folgenden Berechtigungen sind mit der Rolle verknüpft:
 
    * Eingeladene und lokale Benutzende verwalten
    * Externe Benutzende einladen
    * Zugriff auf Web-Seiten für Endbenutzende
 
-   >[!NOTE]
-   >
-   >Benutzende mit dieser Rolle müssen auch über die Rolle „Administration-Console-Benutzer“ verfügen, um sich bei Administration-Console anzumelden und Konfigurationseinstellungen zu bearbeiten.
+  >[!NOTE]
+  >
+  >Benutzende mit dieser Rolle müssen auch über die Rolle „Administration-Console-Benutzer“ verfügen, um sich bei Administration-Console anzumelden und Konfigurationseinstellungen zu bearbeiten.
 
-   **Document Security – Benutzende einladen**
+  **Document Security – Benutzende einladen**
 
-   Benutzende mit dieser Rolle können Benutzende einladen. Die folgenden Berechtigungen sind mit der Rolle verknüpft:
+  Benutzende mit dieser Rolle können Benutzende einladen. Die folgenden Berechtigungen sind mit der Rolle verknüpft:
 
    * Externe Benutzende einladen
    * Zugriff auf Web-Seiten für Endbenutzende
 
-   **Document Security-Endbenutzer**
+  **Document Security-Endbenutzer**
 
-   Benutzende mit dieser Rolle können auf Document Security-Web-Seiten für Endbenutzende zugreifen. Diese Rolle kann auch Admins zugewiesen werden, damit diese unter Verwendung der Endbenutzerseiten Richtlinien erstellen können. Diese Berechtigung ist mit der Rolle „Zugriff auf Web-Seiten für Endbenutzende“ verknüpft.
+  Benutzende mit dieser Rolle können auf Document Security-Web-Seiten für Endbenutzende zugreifen. Diese Rolle kann auch Admins zugewiesen werden, damit diese unter Verwendung der Endbenutzerseiten Richtlinien erstellen können. Diese Berechtigung ist mit der Rolle „Zugriff auf Web-Seiten für Endbenutzende“ verknüpft.
 
 * Benutzende innerhalb der Organisation, die über gültige Document Security-Konten verfügen, erstellen ihre eigenen Richtlinien, verwenden Richtlinien zum Schutz von Dokumenten, verfolgen und verwalten ihre richtliniengeschützten Dokumente und überwachen Ereignisse, die mit ihren Dokumenten zusammenhängen.
 * Richtliniensatz-Koordinatorinnen und -Koordinatoren verwalten Dokumente, zeigen Ereignisse an und verwalten andere Richtliniensatz-Koordinatorinnen und -Koordinatoren (basierend auf ihren Berechtigungen). Admins bestimmen Benutzende als Richtliniensatz-Koordinatorinnen oder -Koordinatoren für bestimmte Richtliniensätze.
@@ -251,7 +247,7 @@ Fügen Sie zu Richtlinien Benutzergruppen anstelle einzelner Benutzer hinzu. Die
 
 * **Benutzerdefinierte Richtliniensätze erstellen**: Ein Richtliniensatz kombiniert mehrere Richtlinien zu einer verwaltbaren Entität. Erstellen Sie benutzerdefinierte Richtliniensätze für Ihre Organisation oder Abteilung, verwenden Sie sie zur Gruppierung verwandter Richtlinien und stellen Sie sie einer Untergruppe von Benutzern im System zur Verfügung.
 
-   Die Verwendung von Richtliniensätzen erleichtert die Zuweisung und Verwaltung von verwandten Richtlinien zu bestimmten Benutzern in einer Organisation oder Abteilung. So können beispielsweise separate Richtliniensätze für die Finanz- und Personalabteilung dazu beitragen, die damit verbundenen Richtlinien einfach zu verwalten und auf Dokumente anzuwenden, die für die jeweiligen Abteilungen bestimmt sind.
+  Die Verwendung von Richtliniensätzen erleichtert die Zuweisung und Verwaltung von verwandten Richtlinien zu bestimmten Benutzern in einer Organisation oder Abteilung. So können beispielsweise separate Richtliniensätze für die Finanz- und Personalabteilung dazu beitragen, die damit verbundenen Richtlinien einfach zu verwalten und auf Dokumente anzuwenden, die für die jeweiligen Abteilungen bestimmt sind.
 
 * **Verwenden Sie einen externen Autorisierer, um Berechtigungen dynamisch anzuwenden**: Sie können [externe Autorisierer](https://help.adobe.com/de_DE/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) verwenden, um Berechtigungen basierend auf externen Bedingungen zu bewerten und dynamisch anzuwenden. Wenn die Berechtigungen dynamisch anhand externer Bedingungen ausgewertet werden, können Sie:
 
@@ -260,20 +256,21 @@ Fügen Sie zu Richtlinien Benutzergruppen anstelle einzelner Benutzer hinzu. Die
    * Den Zugriff auf richtliniengeschützte Dokumente kontrollieren, indem dynamisch bestimmt wird, ob ein Benutzer auf ein richtliniengeschütztes Dokument zugreifen kann. Zum Beispiel kann dynamisch entschieden werden, ob ein Benutzer ein richtliniengeschütztes Dokument drucken darf.
 
    * Verwenden Sie zusätzlich zum standardmäßigen Prozess zur Richtlinienbewertung einen Zugriffskontrollmechanismus, den Ihr Content-Management-System verwendet. Wenn der Dienst beispielsweise bestimmt, ob eine Person ein richtliniengeschütztes Dokument drucken kann, kann er den standardmäßigen Prozess zur Richtlinienbewertung verwenden. Außerdem kann er den Zugriffskontrollmechanismus verwenden, den Ihr Content-Management-System verwendet.
-   Obwohl es möglich ist, den Richtlinienbewertungsprozess von Document Security vollständig durch einen externen Autorisierungs-Handler zu ersetzen, wird empfohlen, dass Sie einen externen Autorisierungs-Handler in Verbindung mit dem Richtlinienbewertungsprozess verwenden. Dann kann der Dokumentzugriff über denselben Kontrollmechanismus gesteuert werden, den Ihr Content Management-System verwendet. Wenn beispielsweise der Document Security-Dienst bestimmt, ob eine Person ein richtliniengeschütztes Dokument drucken kann, wird der standardmäßige Prozess zur Richtlinienbewertung verwendet. Außerdem wird der Zugriffssteuerungsmechanismus verwendet, den Ihr Content-Management-System verwendet. Weitere Informationen finden Sie unter [Erstellen externer Autorisierungs-Handler](https://help.adobe.com/de_DE/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
+
+  Obwohl es möglich ist, den Richtlinienbewertungsprozess von Document Security vollständig durch einen externen Autorisierungs-Handler zu ersetzen, wird empfohlen, dass Sie einen externen Autorisierungs-Handler in Verbindung mit dem Richtlinienbewertungsprozess verwenden. Dann kann der Dokumentzugriff über denselben Kontrollmechanismus gesteuert werden, den Ihr Content Management-System verwendet. Wenn beispielsweise der Document Security-Dienst bestimmt, ob eine Person ein richtliniengeschütztes Dokument drucken kann, wird der standardmäßige Prozess zur Richtlinienbewertung verwendet. Außerdem wird der Zugriffssteuerungsmechanismus verwendet, den Ihr Content-Management-System verwendet. Weitere Informationen finden Sie unter [Erstellen externer Autorisierungs-Handler](https://help.adobe.com/de_DE/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
 * **Beschränken Sie die Anzahl der Richtliniensätze auf ein Minimum**: Es gibt mehrere Faktoren, die zu einer ständigen Zunahme von Richtlinien und Richtliniensätzen führen. Einige häufige Faktoren sind:
 
    * Zunahme der Benutzerrollen, Abteilungen und Dokumente innerhalb einer Organisation über einen bestimmten Zeitraum.
    * Die Abteilungen einer Organisation arbeiten isoliert und halten die abteilungsspezifischen Richtlinien streng unter Kontrolle. Dies führt zu identischen Richtlinien innerhalb einer Organisation.
 
-   Adobe empfiehlt, die Anzahl der Richtlinien und Richtliniensätze auf ein Minimum zu beschränken. Dies erleichtert die einfache Verwaltung von Richtlinien und Richtliniensätzen und sorgt für eine bessere Leistung. So halten Sie die Anzahl auf ein Minimum beschränkt:
+  Adobe empfiehlt, die Anzahl der Richtlinien und Richtliniensätze auf ein Minimum zu beschränken. Dies erleichtert die einfache Verwaltung von Richtlinien und Richtliniensätzen und sorgt für eine bessere Leistung. So halten Sie die Anzahl auf ein Minimum beschränkt:
 
    * Erstellen Sie wiederverwendbare Richtlinien. Diese Richtlinien können über mehrere Abteilungen hinweg gemeinsam genutzt werden.
    * Erwägen Sie die Erstellung von unternehmensweiten Richtliniensätzen, wenn einige Richtlinien für mehrere Abteilungen gelten, und nicht für jeden Bereich einen individuellen Richtliniensatz.
    * Gruppieren Sie zusammengehörige Richtlinien in einem Richtliniensatz. Erstellen Sie nicht für jede Richtlinie einen separaten Richtliniensatz.
    * Verwenden Sie einen externen Autorisierer, um Benutzerberechtigungen dynamisch zu steuern.
 
-   >[!NOTE]
-   >
-   >Sie können die API [getAllPolicysetnames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) verwenden, um bis zu 1000 Richtliniensatznamen abzurufen. Intern ruft die API maximal 1.000 Richtlinien ab, für die der API-Aufrufer über die Berechtigung des Dokumentherausgebers verfügt, erstellt dann eine Liste eindeutiger Richtliniensatznamen, die mit abgerufenen Richtlinien verknüpft sind, und gibt diese an Sie zurück. Wenn die API beispielsweise 1.000 Richtlinien abruft und die abgerufenen Richtlinien insgesamt 200 Richtliniensätzen zugeordnet sind, gibt die API nur 200 Richtliniensatznamen zurück.
+  >[!NOTE]
+  >
+  >Sie können die API [getAllPolicysetnames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) verwenden, um bis zu 1000 Richtliniensatznamen abzurufen. Intern ruft die API maximal 1.000 Richtlinien ab, für die der API-Aufrufer über die Berechtigung des Dokumentherausgebers verfügt, erstellt dann eine Liste eindeutiger Richtliniensatznamen, die mit abgerufenen Richtlinien verknüpft sind, und gibt diese an Sie zurück. Wenn die API beispielsweise 1.000 Richtlinien abruft und die abgerufenen Richtlinien insgesamt 200 Richtliniensätzen zugeordnet sind, gibt die API nur 200 Richtliniensatznamen zurück.

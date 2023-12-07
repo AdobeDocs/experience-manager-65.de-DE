@@ -1,20 +1,16 @@
 ---
 title: Erstellen von PDF-Dokumenten mit SubmittedXML-Daten
-seo-title: Creating PDF Documents with SubmittedXML Data
 description: Verwenden Sie den Forms-Service, um die Formulardaten abzurufen, die der Benutzer in ein interaktives Formular eingegeben hat. Übergeben Sie die Formulardaten an einen anderen Service-Vorgang von AEM Forms und erstellen Sie mithilfe der Daten ein PDF-Dokument.
-seo-description: Use the Forms service to retrieve the form data that the user entered into an interactive form. Pass the form data to another AEM Forms service operation and create a PDF document using the data.
-uuid: 2676c614-8988-451b-ac7c-bd07731a3f5f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 62490230-a24e-419d-95bb-c0bb04a03f96
 role: Developer
 exl-id: d9d5b94a-9d10-4d90-9e10-5142f30ba4a3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1320'
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '1312'
 ht-degree: 100%
 
 ---
@@ -108,7 +104,7 @@ So erstellen Sie mithilfe der Forms-, Ausgabe- und Document Management-API (Java
       * Ein Zeichenfolgenwert, der den Wert der `HTTP_USER_AGENT`-Kopfzeile angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * A `RenderOptionsSpec` -Objekt, das Laufzeitoptionen speichert.
 
-      Die `processFormSubmission`-Methode gibt ein `FormsResult`-Objekt aus, das die Ergebnisse der Formularübermittlung enthält.
+     Die `processFormSubmission`-Methode gibt ein `FormsResult`-Objekt aus, das die Ergebnisse der Formularübermittlung enthält.
 
    * Stellen Sie fest, ob der Forms-Dienst die Verarbeitung der Formulardaten abgeschlossen hat, indem Sie die `getAction`-Methode des `FormsResult`-Objekts aufrufen. Wenn diese Methode den Wert `0` zurückgibt, können die Daten verarbeitet werden.
    * Abrufen von Formulardaten durch Erstellen eines `com.adobe.idp.Document`-Objekts durch Aufrufen der `getOutputContent`-Methode des `FormsResult`-Objekts. (Dieses Objekt enthält Formulardaten, die an den Output-Dienst gesendet werden können.)
@@ -117,7 +113,6 @@ So erstellen Sie mithilfe der Forms-, Ausgabe- und Document Management-API (Java
    * Erstellen Sie ein `org.w3c.dom.DocumentBuilder`-Objekt, indem Sie die `newDocumentBuilder`-Methode des `org.w3c.dom.DocumentBuilderFactory`-Objekts aufrufen.
    * Erstellen Sie ein `org.w3c.dom.Document`-Objekt, indem Sie die `parse`-Methode des `org.w3c.dom.DocumentBuilder`-Objekts aufrufen und das `java.io.InputStream`-Objekt übergeben.
    * Rufen Sie den Wert jedes Knotens im XML-Dokument ab. Eine Möglichkeit, diese Aufgabe durchzuführen, besteht darin, eine benutzerdefinierte Methode zu erstellen, die zwei Parameter akzeptiert: das `org.w3c.dom.Document`-Objekt und den Namen des Knotens, dessen Wert Sie abrufen möchten. Diese Methode gibt einen Zeichenfolgewert aus, der den Wert des Knotens darstellt. Im folgenden Code-Beispiel wird diese benutzerdefinierte Methode `getNodeText` genannt. Der Hauptteil dieser Methode wird angezeigt.
-
 
 1. Erstellen Sie ein nicht interaktives PDF-Dokument mit dem Output-Dienst.
 

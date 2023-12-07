@@ -1,27 +1,23 @@
 ---
 title: API-Handbücher
-seo-title: API Guides
-description: Dokumentation zu den APIs, die AEM zum Entwickeln von Applikationen bereitstellt
-seo-description: Documentation for the APIs that AEM provides for developing applications
-uuid: d998b23c-5b0a-462f-a733-02cf979de2d0
+description: Dokumentation für die APIs, die AEM für die Entwicklung von Anwendungen bereitstellt
 contentOwner: Guillaume Carlino
 topic-tags: introduction
 audience: developing
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: d8c9c2db-6709-409a-93d0-11b802763ada
 docset: aem65
 exl-id: 8d8a7237-8e87-4730-be90-2a18144fc65a
-source-git-commit: d6c875e85d553b8ef557b811c9fa43f46824f297
-workflow-type: ht
-source-wordcount: '263'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '192'
+ht-degree: 51%
 
 ---
 
 # API-Handbücher {#api-guides}
 
-Adobe Experience Manager (AEM) stellt mehrere APIs zum Entwickeln von Applikationen und Erweitern von AEM bereit. Die folgende Liste enthält die Dokumentation für APIs, die von AEM unterstützt werden:
+Adobe Experience Manager (AEM) bietet mehrere APIs für die Entwicklung von Anwendungen und die Erweiterung von AEM. Die folgende Liste enthält die Dokumentation für von AEM unterstützte APIs:
 
 * [Adobe AEM 6.5.0-API](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/index.html)
 * [API für die (Touch-optimierte) Granite-Benutzeroberfläche – Dokumentation](https://www.adobe.io/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
@@ -37,7 +33,7 @@ AEM Single-Page Application (SPA) Editor – SDK-Framework-JavaScript-API-Refer
 * [Bearbeitbare React-Komponenten](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 * [Bearbeitbare Angular-Komponenten](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
-APIs für AEM-Bereitstellung und Content Management:
+AEM Bereitstellungs- und Content Management-APIs:
 
 * Kernkomponenten (JSON)
 
@@ -45,11 +41,11 @@ APIs für AEM-Bereitstellung und Content Management:
    * [Aktivieren eines JSON-Exports für eine Komponente](/help/sites-developing/json-exporter-components.md)
    * Weitere Informationen finden Sie im [Abschnitt „Komponenten“ des Benutzerhandbuchs für Entwickler](/help/sites-developing/home.md).
 
-* **Assets**: Die Asset-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für Assets, einschließlich Binärdateien, Metadaten, Ausgabeformaten und Kommentaren. Siehe [AEM Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* **Assets**: Die Assets-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für Assets, einschließlich Binärdateien, Metadaten, Ausgabedarstellungen und Kommentaren. Siehe [AEM Assets HTTP-API](/help/assets/mac-api-assets.md)
 
-* **Inhaltsfragmente**: [Inhaltsfragmente werden in Assets-HTTP-API](/help/assets/assets-api-content-fragments.md) und [AEM Assets-API – Inhaltsfragmente](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html) unterstützt.
+* **Inhaltsfragmente** (KF): [CF-Unterstützung in der Assets-HTTP-API](/help/assets/assets-api-content-fragments.md) und [AEM Assets API - Inhaltsfragmente](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 
-Die folgenden externen Ressourcen werden nur zu Referenzzwecken bereitgestellt:
+Die folgenden externen Ressourcen dienen nur als Referenz:
 
 * [Apache Sling 11-API](https://sling.apache.org/apidocs/sling11/)
 * [Jackrabbit Oak-API](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)

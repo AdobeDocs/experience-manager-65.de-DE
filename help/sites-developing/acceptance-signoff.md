@@ -1,33 +1,29 @@
 ---
 title: Akzeptanz und Abnahme
-seo-title: Acceptance and Sign-off
-description: Akzeptanztests sind eine spezielle Testkategorie, anhand derer überprüft werden soll, dass das Projekt die Anforderungen des Kunden erfüllt und der Kunde das Projekt annimmt.
-seo-description: Acceptance Tests are a special category of test used to verify that the project fulfils the customer's requirements and that the customer accepts the project
-uuid: 6bdd2a99-d141-43ef-9102-99e65aba02d3
+description: Akzeptanztests sind eine spezielle Testkategorie, mit der überprüft wird, ob das Projekt die Anforderungen des Kunden erfüllt und ob der Kunde das Projekt akzeptiert.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: d8da194f-f161-4ba7-b8cc-c2c282dc9c83
 exl-id: 30ac9a63-f9e6-4075-b67e-4524d11a0e29
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '107'
-ht-degree: 100%
+ht-degree: 19%
 
 ---
 
 # Akzeptanz und Abnahme{#acceptance-and-sign-off}
 
-Wie bereits erwähnt, sind [Akzeptanztests](/help/sites-developing/planning.md) eine spezielle Testkategorie, um zu prüfen:
+Wie bereits erwähnt [Akzeptanztests](/help/sites-developing/planning.md) sind eine besondere Testkategorie, mit der überprüft wird, ob
 
 * Das Projekt erfüllt die Anforderungen des Kunden.
-* ob der Kunde das Projekt annimmt.
+* Der Kunde akzeptiert das Projekt.
 
-Sie müssen vom Kunden und dem Projekt-Manager definiert werden. Sie haben eine besondere Bedeutung, da sie oft mit der endgültigen Rechnungsstellung zusammenhängen.
+Sie müssen vom Kunden und dem Projekt-Manager definiert werden. Sie haben eine besondere Bedeutung, da sie häufig mit der endgültigen Rechnungsstellung zusammenhängen.
 
 Aus diesem Grund müssen sie:
 
-* so früh wie möglich definiert werden.
-* aktualisiert werden, wann immer es notwendig ist.
-* Jegliche Änderungen müssen von beiden Parteien (Partner und Kunde) formal akzeptiert und schriftlich bestätigt werden.
+* Wurde so früh wie möglich definiert.
+* Wann immer nötig aktualisiert.
+* Alle Änderungen müssen von beiden Parteien (Partner und Kunde) förmlich akzeptiert und unterzeichnet werden.

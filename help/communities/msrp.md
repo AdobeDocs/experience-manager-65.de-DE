@@ -1,20 +1,16 @@
 ---
 title: MSRP - MongoDB Storage Resource Provider
-seo-title: MSRP - MongoDB Storage Resource Provider
 description: Einrichten von AEM Communities zur Verwendung einer relationalen Datenbank als gemeinsamen Speicher
-seo-description: Set up AEM Communities to use a relational database as its common store
-uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 role: Admin
 exl-id: 799d5ae1-caac-4c92-8835-696ad25de553
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1190'
-ht-degree: 4%
+source-wordcount: '1142'
+ht-degree: 1%
 
 ---
 
@@ -62,7 +58,7 @@ Auf der Autoreninstanz, um auf die Konsole Speicherkonfiguration zuzugreifen:
 * Auswählen **[!UICONTROL MongoDB Storage Resource Provider (MSRP)]**
 * **[!UICONTROL mongoDB-Konfiguration]**
 
-   * **[!UICONTROL mongoDB-URI]**
+   * **[!UICONTROL mongoDB URI]**
 
      *default*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
 
@@ -70,21 +66,21 @@ Auf der Autoreninstanz, um auf die Konsole Speicherkonfiguration zuzugreifen:
 
      *default*: communities
 
-   * **[!UICONTROL mongoDB-UGC-Sammlung]**
+   * **[!UICONTROL mongoDB UGC Collection]**
 
      *default*: content
 
-   * **[!UICONTROL mongoDB-Anlagensammlung]**
+   * **[!UICONTROL mongoDB Attachment Collection]**
 
      *default*: Anlagen
 
 * **[!UICONTROL SolrConfiguration]**
 
-   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Zookeeper-Host**
+   * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host**
 
-     Bei Ausführung in [SolrCloud-Modus](solr.md#solrcloud-mode) mit einem externen ZooKeeper festlegen, setzen Sie diesen Wert auf `HOST:PORT` für den ZooKeeper, z. B. *my.server.com:2181*
+     Bei Ausführung in [SolrCloud-Modus](solr.md#solrcloud-mode) mit einem externen ZooKeeper festlegen, setzen Sie diesen Wert auf `HOST:PORT` für den ZooKeeper, beispielsweise *my.server.com:2181*
 
-     Für ein ZooKeeper-Ensemble müssen Sie durch Kommas getrennt sein. `HOST:PORT` -Werte, z. B. *Host1:2181,Host2:2181*
+     Für ein ZooKeeper-Ensemble geben Sie durch Kommas getrennt ein. `HOST:PORT` -Werte, z. B. *Host1:2181,Host2:2181*
 
      Lassen Sie bei Ausführung von Solr im eigenständigen Modus mit dem internen ZooKeeper leer.
      *Standard*: *&lt;blank>*
@@ -108,7 +104,7 @@ Der Solr-Sammlungsname.
 
 Für die Produktionsumgebung wird dringend empfohlen, einen Replikatsatz einzurichten, einen Cluster von MongoDB-Servern, der die primäre sekundäre Replikation und automatisiertes Failover implementiert.
 
-Weitere Informationen zu Replikationssets finden Sie unter MongoDB [Replikation](https://docs.mongodb.org/manual/replication/) Dokumentation.
+Weitere Informationen zu Replikationssets finden Sie in den [Replikation](https://docs.mongodb.org/manual/replication/) Dokumentation.
 
 Um mit Replikatsätzen zu arbeiten und zu erfahren, wie Sie Verbindungen zwischen Anwendungen und MongoDB-Instanzen definieren, besuchen Sie MongoDB&#39;s [Verbindungszeichenfolge-URI-Format](https://docs.mongodb.org/manual/reference/connection-string/) Dokumentation.
 
@@ -140,7 +136,7 @@ Wenn Sie von einer früheren Version aktualisieren, die mit MSRP konfiguriert wu
 1. Installieren neuer Solr-Konfigurationsdateien
    * Für [Standard-MLS](solr.md#installing-standard-mls)
    * Für [erweiterte MLS](solr.md#installing-advanced-mls)
-1. Neuindizieren von MSRP Siehe Abschnitt [MSRP-Reindex-Tool](#msrp-reindex-tool)
+1. Neuindizieren von MSRP Siehe Abschnitt [MSRP-Neuindizierungs-Tool](#msrp-reindex-tool)
 
 ## Veröffentlichen der Konfiguration {#publishing-the-configuration}
 
@@ -161,7 +157,7 @@ Informationen über *Benutzer*, *Benutzerprofile* und *Benutzergruppen*, häufig
 * [Benutzersynchronisierung](sync.md)
 * [Verwalten von Benutzern und Benutzergruppen](users.md)
 
-## MSRP-Reindex-Tool {#msrp-reindex-tool}
+## MSRP-Neuindizierungs-Tool {#msrp-reindex-tool}
 
 Es gibt einen HTTP-Endpunkt für die Neuindizierung von Solr für MSRP bei der Installation neuer Konfigurationsdateien oder der Reparatur eines beschädigten Solr-Index.
 
@@ -184,9 +180,9 @@ Der folgende cURL-Befehl zeigt, was erforderlich ist, damit eine HTTP-Anforderun
 
 Das Standardformat lautet:
 
-cURL -u *Anmeldung* -d *data* *reindex-url*
+cURL -u *Anmelden* -d *data* *reindex-url*
 
-*Anmeldung* = administrator-id:password Beispiel: admin:admin
+*Anmelden* = administrator-id:password Beispiel: admin:admin
 
 *data* = &quot;batchSize=*size*&amp;path=*path&quot;*
 
@@ -222,7 +218,7 @@ Informationen zum Einrichten von MSRP für eine Demonstrations- oder Entwicklung
 
 Stellen Sie sicher, dass MSRP als Standardanbieter konfiguriert wurde, indem Sie die Konfiguration der Speicheroption aktivieren. Standardmäßig ist der Speicher-Ressourcenanbieter JSRP.
 
-Rufen Sie auf allen Autoren- und Veröffentlichungsinstanzen AEM erneut die [Speicherkonfigurationskonsole](srp-config.md) oder überprüfen Sie das AEM Repository:
+Rufen Sie auf allen Autoren- und Veröffentlichungsinstanzen AEM erneut die [Speicherkonfigurationskonsole](srp-config.md) oder überprüfen Sie das AEM-Repository:
 
 * Wenn in JCR [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 

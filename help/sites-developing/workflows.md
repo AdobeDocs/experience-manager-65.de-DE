@@ -1,18 +1,14 @@
 ---
 title: Entwickeln und Erweitern von Workflows
-seo-title: Developing and Extending Workflows
 description: AEM stellt mehrere Tools und Ressourcen zum Erstellen von Workflow-Modellen, Entwickeln von Workflow-Schritten und programmgesteuerten Interagieren mit Workflows bereit.
-seo-description: AEM provides several tools and resources for creating workflow models, developing workflow steps, and for programmatically interacting with workflows
-uuid: 5a857589-3b13-4519-bda2-b1dab6005550
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 8954e3df-3afa-4d53-a7e1-255f3b8f499f
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
-workflow-type: ht
-source-wordcount: '1473'
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '1460'
 ht-degree: 100%
 
 ---
@@ -45,7 +41,6 @@ Die wichtigsten Aspekte werden unten beschrieben, wobei die folgenden Seiten wei
 >* Sehen Sie sich das [AEM-Experten-Webinar zum Thema Workflows](https://communities.adobeconnect.com/p5s33iburd54/) an.
 >* Informationen zu Änderungen der Datenspeicherorte finden Sie unter [Neustrukturierung von Repositorys in AEM 6.5](/help/sites-deploying/repository-restructuring.md) und [Best Practices für Workflows – Speicherorte](/help/sites-developing/workflows-best-practices.md#locations).
 >
-
 
 ## Modell {#model}
 
@@ -126,15 +121,15 @@ Es gibt diverse Workflow-Typen, wie aus der Konsole für Workflow-Modelle ersich
 
 * **Standard**
 
-   Dies sind vorkonfigurierte Workflows, die in einer Standard-AEM-Instanz enthalten sind.
+  Dies sind vorkonfigurierte Workflows, die in einer Standard-AEM-Instanz enthalten sind.
 
 * Benutzerdefinierte Workflows (kein Indikator in der Konsole)
 
-   Hierbei handelt es sich um Workflows, die neu oder aus vorkonfigurierten Workflows erstellt wurden, die mit Anpassungen überlagert wurden.
+  Hierbei handelt es sich um Workflows, die neu oder aus vorkonfigurierten Workflows erstellt wurden, die mit Anpassungen überlagert wurden.
 
 * **Veraltet**
 
-   Mit einer älteren Version von AEM erstellte Workflows. Diese Workflows können während einer Aktualisierung beibehalten oder als Workflow-Paket aus der vorherigen Version exportiert und dann in die neue Version importiert werden.
+  Mit einer älteren Version von AEM erstellte Workflows. Diese Workflows können während einer Aktualisierung beibehalten oder als Workflow-Paket aus der vorherigen Version exportiert und dann in die neue Version importiert werden.
 
 ### Übergangs-Workflows {#transient-workflows}
 
@@ -159,7 +154,6 @@ Standard-Workflows speichern während ihrer Ausführung Laufzeit- bzw. Verlaufsd
 >* Der Workflow gelangt zu einer **UND-Teilung**. In solchen Fällen ist der Laufzeitverlauf für die Statusbestätigung erforderlich.
 >* Wenn der Übergangs-Workflow in einen Teilnehmerschritt eintritt, ändert sich der Modus zur Laufzeit in einen Nicht-Übergangs-Workflow. Da die Aufgabe an eine Person übergeben wird, muss der Verlauf persistiert werden.
 >
-
 
 >[!CAUTION]
 >

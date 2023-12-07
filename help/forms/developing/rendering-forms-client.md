@@ -1,20 +1,16 @@
 ---
 title: Rendern von Formularen auf dem Client
-seo-title: Rendering Forms at the Client
 description: Optimieren Sie die Bereitstellung von PDF-Inhalten und verbessern Sie die Fähigkeit des Forms-Services, die Netzwerklast mithilfe der Client-seitigen Rendering-Funktion von Acrobat oder Adobe Reader zu bewältigen.
-seo-description: Optimize the delivery of PDF content and improve the Forms service’s ability to handle network load by using the client-side rendering capability of Acrobat or Adobe Reader
-uuid: 09bcc23d-28b0-473a-87f1-bc17e87620f4
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 08d36e9f-cafc-478e-9781-8fc29ac6262e
 role: Developer
 exl-id: e485980d-f200-46b7-9284-c9996003aa47
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1694'
+source-wordcount: '1690'
 ht-degree: 98%
 
 ---
@@ -165,7 +161,7 @@ Rendern eines Formulars auf dem Client mithilfe der Forms-API (Webservice):
    * Ein `BLOB`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie `null`. (Siehe [Vorausfüllen von Formularen mit flexiblen Layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
    * Ein `PDFFormRenderSpec`-Objekt, das Laufzeitoptionen speichert, die zum Rendern eines Formulars auf dem Client erforderlich sind.
    * Ein `URLSpec`-Objekt, das URI-Werte enthält, die für den Forms-Service erforderlich sind.
-   * Ein `java.util.HashMap`-Objekt, in dem Dateianlagen gespeichert werden. Dies ist ein optionaler Parameter. Sie können `null` festlegen, wenn Sie keine Dateien an das Formular anhängen möchten.
+   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter. Sie können `null` festlegen, wenn Sie keine Dateien an das Formular anhängen möchten.
    * Ein leeres `com.adobe.idp.services.holders.BLOBHolder`-Objekt, das von der Methode aufgefüllt wird. Dieser Parameter wird zum Speichern des wiedergegebenen PDF-Formulars verwendet.
    * Ein leeres `javax.xml.rpc.holders.LongHolder`-Objekt, das von der Methode aufgefüllt wird. (Dieses Argument speichert die Anzahl der Seiten im Formular).
    * Ein leeres `javax.xml.rpc.holders.StringHolder`-Objekt, das von der Methode gefüllt wird. (Dieses Argument speichert den Gebietsschemawert).

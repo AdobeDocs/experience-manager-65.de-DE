@@ -1,36 +1,32 @@
 ---
 title: Verwalten von Zertifikaten
-seo-title: Managing certificates
-description: Erfahren Sie, wie Sie ein Zertifikat exportieren und importieren und seine Vertrauenseinstellungen bearbeiten.
-seo-description: Learn how to import and export a certificate and edit its trust settings.
-uuid: 46b1dbe5-517c-4294-bb52-cc6700a768e8
+description: Erfahren Sie, wie Sie ein Zertifikat importieren und exportieren und seine Vertrauenseinstellungen bearbeiten.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9fd531c0-5206-4be0-a450-13e0dc806068
 exl-id: 1fe0e7b4-6109-4f7a-8858-8237a1c5c93b
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
-source-wordcount: '641'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '634'
+ht-degree: 57%
 
 ---
 
 # Verwalten von Zertifikaten {#managing-certificates}
 
-Mithilfe der Trust Store-Verwaltung können Sie Zertifikate importieren, bearbeiten und löschen, die Sie auf dem Server zur Überprüfung digitaler Signaturen und zur Zertifikatauthentifizierung als vertrauenswürdig einstufen. Sie können eine beliebige Anzahl von Zertifikaten im- und exportieren. Nachdem ein Zertifikat importiert wurde, können die Vertrauenseinstellungen und der Trust Store-Typ bearbeitet werden. Verwenden Sie beim Kombinieren von Trust Store-Typen die folgenden Optionen:
+Mithilfe der Trust Store-Verwaltung können Sie Zertifikate importieren, bearbeiten und löschen, die Sie auf dem Server für die Validierung digitaler Signaturen und die Zertifikatauthentifizierung als vertrauenswürdig betrachten. Sie können eine beliebige Anzahl von Zertifikaten importieren und exportieren. Nachdem ein Zertifikat importiert wurde, können Sie die Vertrauenseinstellungen und den Trust Store-Typ bearbeiten. Beachten Sie beim Kombinieren von Trust Store-Typen die folgenden Optionen:
 
 * **Trust für Zertifikatauthentifizierung mit CA:** Wählen Sie für die Prüfung der Zertifikatsperrliste auch die Option „Trust für Identität“.
-* **Trust für Zertifikatauthentifizierung mit ICA:** Wählen Sie nur die Option „Trust für Identität“. Eine ICA sollte für die Zertifikatauthentifizierung nicht als vertrauenswürdig eingestuft werden. Stufen Sie die ICA für die Zertifikatauthentifizierung als vertrauenswürdig ein, wird die ICA eine Zertifizierungsstelle für die Pfaderzeugung. Stufen Sie die ICA sowohl für die Zertifikatauthentifizierung als auch für die Identität als vertrauenswürdig ein, wird das Herstellerzertifikat der Zertifizierungsstelle ignoriert, da die ICA zur Zertifizierungsstelle wird.
+* **Trust für Zertifikatauthentifizierung mit ICA:** Wählen Sie nur die Option „Trust für Identität“. Eine ICA sollte für die Zertifikatauthentifizierung nicht als vertrauenswürdig eingestuft werden. Wenn Sie der ICA für die Zertifikatauthentifizierung vertrauen, wird die ICA zur Zertifizierungsstelle für die Pfaderstellung. Wenn die ICA sowohl für die Zertifikatauthentifizierung als auch für die Identität als vertrauenswürdig eingestuft wird, wird das Zertifizierungsstellenzertifikat ignoriert, da die ICA zur Zertifizierungsstelle wird.
 * **Trust für Online-Zertifikatstatusprotokoll-Server (OCSP) mit HTTPs:** Wenn sich der beim OCSP-Responder anfragende Server an einem HTTPs-Speicherort befindet, müssen Sie auch „Trust für SSL-Verbindungen“ auswählen. Ist für die bei OCSP anfragende Partei die Prüfung der Zertifikatsperrliste erforderlich, muss darüber hinaus „Trust für Identität“ ausgewählt werden.
-* **Adobe-Stammzertifikat:** Wählen Sie nicht die Trust Store-Typen für SSL-Verbindungen und OCSP-Server. Adobe-Stammzertifikaten wird für SSL-Verbindungen und OCSP-Server nicht vertraut. Adobe stellt keine OCSP- und SSL-Zertifikate aus. Einem Adobe-Stammzertifikat wird implizit mit einem Aliasnamen=„ADOBEROOT“ vertraut.
+* **Adobe-Stammzertifikat:** Wählen Sie nicht die Trust Store-Typen für SSL-Verbindungen und OCSP-Server. Adobe Root wird für SSL-Verbindungen und OCSP-Server nicht als vertrauenswürdig eingestuft. Adobe gibt keine OCSP- und SSL-Zertifikate aus. Adobe Root wird implizit mit einem Aliasnamen=&quot;ADOBEROOT&quot; als vertrauenswürdig eingestuft.
 
-Nur X509v3-Zertifikate werden unterstützt. Dieser Zertifikattyp kann in einer binären DER-kodierten Datei (.cer-Datei) oder Textdatei bereitgestellt werden, die eine Base64-kodierte Version desselben DER-kodierten Zertifikats (einschließlich X509-Zertifikaten im PEM-Format) enthält.
+Es werden nur X509v3-Zertifikate unterstützt. Dieser Zertifikatstyp kann in einer binären DER-kodierten Datei (.cer-Datei) oder einer Textdatei bereitgestellt werden, die eine Base64-kodierte Version desselben DER-kodierten Zertifikats enthält (einschließlich X509-Zertifikaten im PEM-Format (Privacy Enhanced Mail)).
 
-Bei Zertifikaten, die zum Abschließen der Signaturüberprüfung erforderlich sind, müssen sich diese Dateien im selben Speicher (HSM oder Datenbank) befinden.
+Zertifikate, die zum Durchführen einer Signaturüberprüfung erforderlich sind, müssen sich im selben Speicher (HSM oder Datenbank) befinden.
 
-Sie können Zertifikate mit der Trust Manager-API auch importieren und löschen. Einzelheiten finden Sie unter „Importieren von Zertifikaten mit der Trust Manager-API“ und „Löschen von Zertifikaten mit der Trust Manager-API“ in [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).
+Sie können Zertifikate auch mithilfe der Trust Manager-API importieren und löschen. Einzelheiten finden Sie unter „Importieren von Zertifikaten mit der Trust Manager-API“ und „Löschen von Zertifikaten mit der Trust Manager-API“ in [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).
 
 ## Importieren eines Zertifikats {#import-a-certificate}
 
@@ -46,9 +42,9 @@ Sie können Zertifikate mit der Trust Manager-API auch importieren und löschen.
 
    >[!NOTE]
    >
-   >Der Trust Store vertraut implizit einen Adobe-Stammzertifikat bei der Zertifikatauthentifizierung, der Signatur, dem Prüfen der Signatur und der Identität.
+   >Der Trust Store vertraut implizit einem Adobe-Stammzertifikat für die Zertifikatauthentifizierung, -signatur, -zertifizierung und -identität.
 
-1. Geben Sie in das Feld „Alias“ den Bezeichner für das Zertifikat ein.
+1. Geben Sie in das Feld &quot;Alias&quot;die Kennung für das Zertifikat ein.
 1. Klicken Sie auf **[!UICONTROL Durchsuchen]**, um das Zertifikat zu finden, und anschließend auf **[!UICONTROL OK]**.
 
 ## Zertifikat exportieren {#export-a-certificate}
@@ -62,8 +58,8 @@ Sie können Zertifikate mit der Trust Manager-API auch importieren und löschen.
 1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > Trust Store-Verwaltung > Zertifikate]**.
 1. Klicken Sie auf den Aliasnamen des Zertifikats, das bearbeitet werden soll.
 1. Klicken Sie auf **[!UICONTROL Zertifikat aktualisieren]**.
-1. Geben Sie einen neuen Namen in das Feld „Alias“ ein, um den Aliasnamen des Zertifikats zu ändern.
-1. Um den Trust Store-Typ für das Zertifikat zu aktualisieren, wählen Sie den geeigneten Trust Store-Typ aus.
+1. Um den Alias-Namen des Zertifikats zu ändern, geben Sie einen neuen Namen in das Feld &quot;Alias&quot;ein.
+1. Um den Trust Store-Typ für das Zertifikat zu aktualisieren, wählen Sie den entsprechenden Trust Store-Typ aus.
 1. Um die Richtlinienbeschränkungen zu aktualisieren, geben Sie die Richtlinieninformationen in das Feld „Zertifikatrichtlinien“ ein und klicken Sie auf **[!UICONTROL OK]**.
 
 ## Zertifikat löschen {#delete-a-certificate}

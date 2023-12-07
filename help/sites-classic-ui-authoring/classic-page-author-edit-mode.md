@@ -1,20 +1,16 @@
 ---
 title: Komponenten für die Seitenbearbeitung
-seo-title: Components for Page Authoring
 description: Die Komponenten stehen beim Bearbeiten einer Seite über die Registerkarte „Komponenten“ des Sidekicks und die Auswahl „Neue Komponente einfügen“ zur Verfügung (wenn Sie im Bereich „Komponenten oder Assets hierhin ziehen“ doppelklicken).
-seo-description: The components are available when editing a page from the Components tab of the sidekick and the Insert New Component selector (when you double-click in the Drag components or assets here area).
-uuid: c353073d-d4d1-4529-b8bd-d0ca302cc9a0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '6026'
-ht-degree: 97%
+source-wordcount: '5991'
+ht-degree: 96%
 
 ---
 
@@ -183,11 +179,11 @@ Sie können eine Textsuchabfrage eingeben.
       * **Optionen für die erweiterte Suche**
 
          * **Querybuilder-Eigenschafts-Notation**
-Geben Sie mit der Querybuilder-Eigenschafts-Notation eine Suchabfrage ein. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.
-Unter [QueryBuilder API](/help/sites-developing/querybuilder-api.md) finden Sie eine umfassende Übersicht über Abfrageausdrücke sowie weitere Beispiele.
+Sie können eine Suchabfrage mit der Querybuilder-Eigenschafts-Notation eingeben. Sie können beispielsweise &quot;fulltext=Marketing&quot;eingeben, damit alle Seiten mit &quot;Marketing&quot;in ihrem Inhalt im Karussell angezeigt werden.
+Unter [„QueryBuilder API“](/help/sites-developing/querybuilder-api.md) finden Sie eine umfassende Übersicht über Abfrageausdrücke sowie weitere Beispiele.
 
    * **Sortierreihenfolge**
-Wählen Sie `jcr:title`, `jcr:created`, `cq:lastModified` oder `cq:template` aus dem Dropdown-Menü aus.
+Auswählen `jcr:title`, `jcr:created`, `cq:lastModified`oder `cq:template` aus dem Dropdown-Menü aus.
 
    * **Limit**
 Optional. Die maximale Anzahl von Elementen, die Sie im Karussell verwenden möchten.
@@ -1045,8 +1041,7 @@ Die Seite, die beim Erstellen eines Kontos verwendet wird.
 
       * **Inhalt erstellen**
 
-         * Inhaltspfad
-Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Geben Sie einen Pfad ein, der mit einem Schrägstrich endet: `/`. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird; Beispiel:
+         * Inhaltspfad Der Inhaltspfad für alle Inhalte, die im Formular ausgegeben werden. Geben Sie einen Pfad ein, der mit einem Schrägstrich (`/`) endet. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
            `/forms/feedback/`
 
          * **Typ**

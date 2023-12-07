@@ -1,19 +1,15 @@
 ---
 title: Bearbeiten von App-Metadaten
-seo-title: Editing App Metadata
 description: App-Metadaten sind erforderliche Details, um eine Anwendung für den Store eines Anbieters freizugeben. Auf dieser Seite erfahren Sie mehr über das Bearbeiten von App-Daten.
-seo-description: App metadata is required details for releasing an application to a vendor's store. Follow this page to learn about editing app data.
-uuid: c140be0f-8403-416e-af0f-29072a2ab942
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-discoiquuid: 07b38da6-2efa-4a43-9afa-7151a241a5ad
 exl-id: 897a04b9-e357-4f1c-8aa0-2c2528f8556d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 4%
+source-wordcount: '377'
+ht-degree: 6%
 
 ---
 
@@ -33,7 +29,7 @@ So bearbeiten Sie die Metadaten der App:
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-1. Um Details anzuzeigen oder zu bearbeiten, klicken Sie auf &quot;...&quot; in der rechten unteren Ecke der **App verwalten** Kachel.
+1. Um Details anzuzeigen oder zu bearbeiten, klicken Sie auf das Symbol &quot;...&quot; in der rechten unteren Ecke der **App verwalten** Kachel.
 
 1. Geben Sie die Details in einen der fünf verfügbaren Registerkarten ein oder zeigen Sie sie an, wie in der folgenden Abbildung dargestellt.
 
@@ -56,7 +52,7 @@ Sie können App-Screenshots in die Metadaten-Datenaggregation aufnehmen. Einige 
 
 ### Hinzufügen von Screenshots {#add-screenshots}
 
-So fügen Sie ein Asset als Screenshot hinzu:
+Hinzufügen eines Assets als Screenshot:
 
 1. Im Bearbeitungsmodus der **App verwalten** auf &quot;Hinzufügen&quot;klicken (Pluszeichen).
 1. Wählen Sie das Asset aus und klicken Sie auf **Auswählen** , um das Asset hinzuzufügen.
@@ -71,7 +67,7 @@ So fügen Sie ein Asset als Screenshot hinzu:
 
 ### Löschen von Screenshots {#delete-screenshots}
 
-So entfernen Sie einen Screenshot:
+Entfernen eines Screenshots:
 
 Klicken Sie auf den Löschvorgang für das Asset.
 

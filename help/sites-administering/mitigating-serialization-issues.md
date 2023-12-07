@@ -1,18 +1,14 @@
 ---
 title: Beheben von Serialisierungsproblemen in AEM
-seo-title: Mitigating serialization issues in AEM
 description: Erfahren Sie, wie Sie Serialisierungsprobleme in AEM beheben können.
-seo-description: Learn how to mitigate serialization issues in AEM.
-uuid: c3989dc6-c728-40fd-bc47-f8427ed71a49
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: f3781d9a-421a-446e-8b49-40744b9ef58e
 exl-id: 01e9ab67-15e2-4bc4-9b8f-0c84bcd56862
-source-git-commit: 614c4c88f3f09feb5a400ade9f45f634ac4fbcd5
-workflow-type: ht
-source-wordcount: '910'
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '904'
 ht-degree: 100%
 
 ---
@@ -76,9 +72,10 @@ Die Firewall-Konfiguration ist dynamisch und kann jederzeit wie folgt geändert 
 1. Suchen Sie nach **Deserialisierungs-Firewall-Konfiguration** und klicken Sie darauf.
 
    >[!NOTE]
-   >Sie können die Konfigurationsseite auch direkt erreichen, indem Sie auf die URL zugreifen:
-   >* `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
-
+   >
+   Sie können die Konfigurationsseite auch direkt erreichen, indem Sie auf die URL zugreifen:
+   >
+   * `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 
 Diese Konfiguration enthält die Zulassungsliste, die Blockierungsliste und die Deserialisierungs-Protokollierung.
 
@@ -109,7 +106,8 @@ Nachdem Sie auf die URL zugegriffen haben, wird eine Liste mit Integritätsprüf
 Weitere Informationen zum Behandeln von Problemen mit dem Agenten finden Sie weiter unten unter [Behandeln von Fehlern beim dynamischen Laden des Agenten](#handling-errors-with-dynamic-agent-loading).
 
 >[!NOTE]
->Wenn Sie `org.apache.commons.collections.functors` auf die Zulassungsliste setzen, schlägt die Konsistenzprüfung immer fehl.
+>
+Wenn Sie `org.apache.commons.collections.functors` auf die Zulassungsliste setzen, schlägt die Konsistenzprüfung immer fehl.
 
 ## Behandeln von Fehlern beim dynamischen Laden des Agenten {#handling-errors-with-dynamic-agent-loading}
 
@@ -124,10 +122,12 @@ Gehen Sie wie folgt vor, um den Agenten manuell zu laden:
    ```
 
    >[!NOTE]
-   >Erfordert, dass Sie auch die Option -nofork CQ/AEM zusammen mit den entsprechenden JVM-Speichereinstellungen verwenden, da der Agent auf einer abgespalteten JVM nicht aktiviert ist.
+   >
+   Erfordert, dass Sie auch die Option -nofork CQ/AEM zusammen mit den entsprechenden JVM-Speichereinstellungen verwenden, da der Agent auf einer abgespalteten JVM nicht aktiviert ist.
 
    >[!NOTE]
-   >Die Adobe-Distribution der JAR-Datei des NotSoSerial-Agenten finden Sie im Ordner `crx-quickstart/opt/notsoserial/` Ihrer AEM-Installation.
+   >
+   Die Adobe-Distribution der JAR-Datei des NotSoSerial-Agenten finden Sie im Ordner `crx-quickstart/opt/notsoserial/` Ihrer AEM-Installation.
 
 1. Beenden Sie die JVM-Instanz und starten Sie sie neu.
 

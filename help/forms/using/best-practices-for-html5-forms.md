@@ -1,21 +1,17 @@
 ---
 title: Empfohlene Vorgehensweisen für HTML5-Formulare
-seo-title: Best practices for HTML5 forms
 description: Stimmen Sie Ihre XFA-basierten HTML5-Formulare für optimale Leistung ab.
-seo-description: Learn how to tune your XFA-based HTML5 Forms for best performance.
-uuid: 3804effd-f1f2-4d7a-8e52-717b5c1c62cf
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 content-type: reference
-discoiquuid: db22f775-fab1-4a78-b334-a9c4fa613e43
 docset: aem65
 feature: Mobile Forms
 exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 25%
+source-wordcount: '1402'
+ht-degree: 22%
 
 ---
 
@@ -82,6 +78,5 @@ Mit Adobe Experience Manager(AEM)-Formularen können Sie komplexe Transaktionen 
 
 ## Schnellnachweiskarte {#quick-reference-card}
 
-Sie können die folgende Karte (Klicken Sie auf „Karte“, um eine Version mit hoher Auflösung herunterzuladen) drucken, und auf Ihrem Schreibtisch als Referenz behalten.
-
-[![ Bewährte Verfahren für HTML5-Formular-Schnellnachweiskarte](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+Sie können folgende Karte drucken (klicken Sie auf eine Karte, um eine hochauflösende Version herunterzuladen) und auf Ihrem Schreibtisch behalten, um eine kurze Referenz zu erhalten:
+[![HTML5 Forms Best Practices - Schnellverweiskarte](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)

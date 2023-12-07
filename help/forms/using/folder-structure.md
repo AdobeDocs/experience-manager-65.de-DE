@@ -1,31 +1,27 @@
 ---
 title: Grundlagen der Ordnerstruktur
-seo-title: Understanding the folder structure
-description: Grundlegendes zur Ordnerstruktur von AEM Forms Workspace-Quellcode zur Anpassung.
-seo-description: How to understand the folder structure of AEM Forms workspace source code to customize.
-uuid: ee844f89-887e-4f07-9db3-389859baa374
+description: Grundlegendes zur Ordnerstruktur des AEM Forms Workspace-Quellcodes zur Anpassung.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 7427858d-8eec-423d-a0a9-444140420620
 exl-id: a4c1d3d8-477e-4edf-9dde-4ef9c766be5a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 100%
+ht-degree: 53%
 
 ---
 
 # Grundlagen der Ordnerstruktur {#understanding-the-folder-structure}
 
-AEM Forms Workspace-Komponenten basieren auf einer MVC-Architektur mit Backbone. Jede Komponente verfügt über eine Datei für:
+AEM Forms Workspace-Komponenten basieren auf der MVC-Architektur mit Backbone. Jede Komponente verfügt über eine Datei für:
 
-* Das Modell, das die Geschäftslogik enthält.
-* Die Vorlage als HTML-Datei mit Steuerelementen der Benutzeroberfläche.
-* Die Ansicht, die als Steuerungklasse für die Vorlage fungiert.
+* Modell, das Geschäftslogik enthält.
+* Vorlage: Dies ist eine HTML-Datei, die Steuerelemente für die Benutzeroberfläche enthält.
+* Ansicht, die als Controller-Klasse für Vorlage fungiert.
 
-Die Elemente für alle Komponenten werden in der unten beschriebenen Ordnerstruktur gespeichert. Um auf die Elemente zuzugreifen, melden Sie sich bei CRXDE Lite an und navigieren Sie zu `/libs/ws/js/runtime/`.
+Die Assets für alle Komponenten werden in der unten beschriebenen Ordnerstruktur platziert. Um auf die Elemente zuzugreifen, melden Sie sich bei CRXDE Lite an und navigieren Sie zu `/libs/ws/js/runtime/`.
 
 **models** Enthält Backbone-Modelle.
 

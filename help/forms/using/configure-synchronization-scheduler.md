@@ -1,30 +1,26 @@
 ---
 title: Konfigurieren der Synchronisierungsplanung
-seo-title: Configuring the synchronization scheduler
-description: Erfahren Sie mehr dazu, wie Sie Elemente migrieren und synchronisieren, Synchronisierungs-Scheduler konfigurieren und Ordner zum Anordnen von Elementen verwenden können.
-seo-description: Learn how to migrate and sync assets, configure sync scheduler, and use folders to arrange assets.
-uuid: b2c89feb-2947-418a-b343-4c01e453602b
+description: Erfahren Sie, wie Sie Assets migrieren und synchronisieren, den Synchronisierungs-Scheduler konfigurieren und Ordner zum Anordnen von Assets verwenden.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: 8c8b1998-eab4-4230-b24f-5e96883ba599
 docset: aem65
 role: Admin
 exl-id: 34db1f76-ee40-4612-85da-22041e7560fb
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: ht
-source-wordcount: '286'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 57%
 
 ---
 
 # Konfigurieren der Synchronisierungsplanung {#configuring-the-synchronization-scheduler}
 
-Standardmäßig wird der Synchronisierungs-Scheduler alle 3 Minuten ausgeführt, um alle geänderten und aktualisierten Elemente im Repository über LiveCycle Workbench 11 zu synchronisieren. Anwendungen, die Formulare und Ressourcen enthalten, sind in der AEM Forms-Benutzeroberfläche sichtbar, sobald der Synchronisierungsprozess abgeschlossen ist.
+Standardmäßig wird der Synchronisierungs-Scheduler alle 3 Minuten ausgeführt, um alle im Repository geänderten und aktualisierten Assets über LiveCycle Workbench 11 zu synchronisieren. Anwendungen, die Formulare und Ressourcen enthalten, sind in der AEM Forms-Benutzeroberfläche sichtbar, sobald der Synchronisierungsprozess abgeschlossen ist.
 
 ## Ändern des Intervalls für den Synchronisierungs-Scheduler {#change-interval-of-the-synchronization-scheduler}
 
-Führen Sie die folgenden Schritte durch, um das Intervall für den Synchronisierungs-Scheduler zu ändern:
+Führen Sie die folgenden Schritte aus, um das Intervall des Synchronisierungs-Scheduler zu ändern:
 
 1. Melden Sie sich bei AEM Configuration Manager an. Die URL des Configuration Managers lautet `https://'[server]:[port]'/lc/system/console/configMgr`
 
@@ -32,13 +28,13 @@ Führen Sie die folgenden Schritte durch, um das Intervall für den Synchronisie
 
 1. Geben Sie für die Option **Häufigkeit für Synchronisierungs-Scheduler** einen neuen Wert an.
 
-   Die Einheit für die Frequenz ist Minuten. Um den Scheduler beispielsweise so zu konfigurieren, dass er alle 60 Minuten ausgeführt wird, geben Sie „60“ ein.
+   Die Einheit für die Frequenz ist Minuten. Wenn Sie beispielsweise die Planung so konfigurieren möchten, dass sie alle 60 Minuten ausgeführt wird, geben Sie &quot;60&quot;an.
 
-## Synchronisieren von Elementen {#synchronizing-assets}
+## Synchronisieren von Assets {#synchronizing-assets}
 
-Sie können die Option **Assets aus Repository synchronisieren** verwenden, um die Elemente manuell zu synchronisieren. Führen Sie die folgenden Schritte durch, um die Elemente manuell zu synchronisieren:
+Sie können die Option **Assets aus Repository synchronisieren** verwenden, um die Elemente manuell zu synchronisieren. Führen Sie die folgenden Schritte aus, um die Assets manuell zu synchronisieren:
 
-1. Melden Sie sich bei AEM Forms an. Die Standardeinstellung ist `https://'[server]:[port]'/lc/aem/forms/`.
+1. Melden Sie sich bei AEM Forms an. Die Standardeinstellung ist `https://'[server]:[port]'/lc/aem/forms/`.
 
    ![AEM Forms-Benutzeroberfläche](assets/aem_forms_ui.png)
 
@@ -50,9 +46,9 @@ Sie können die Option **Assets aus Repository synchronisieren** verwenden, um d
 
    **Abbildung:** *Dialogfeld „Synchronisierung“*
 
-## Fehlerbehebung von Snchronisierungsfehler {#troubleshooting-synchronization-error}
+## Fehlerbehebung bei Synchronisierungsfehlern {#troubleshooting-synchronization-error}
 
-Sie können neue Anwendungen im Workflow Designer (LiveCycle Workbench) erstellen. 
+Sie können neue Anwendungen im Workflow-Designer (LiveCycle Workbench) erstellen.
 
 Wenn eine neu erstellte Anwendung und ein Ordner unter /content/dam/formsanddocuments identische Namen haben, wird der Fehler „*Ein Element mit demselben Namen wie diese Anwendung ist bereits auf der Stammebene vorhanden.*“ protokolliert. 
 

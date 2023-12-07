@@ -1,25 +1,21 @@
 ---
 title: Aktivieren von Anlagen für ein HTML5-Formular
-seo-title: Enabling attachments for an HTML5 form
-description: Standardmäßig ist die Unterstützung der Anlage für HTML5-Formulare deaktiviert.
-seo-description: By default, the attachment support for HTML5 forms is disabled.
-uuid: 2c62ac3e-4b27-46c7-a61d-a805fb5d26fb
+description: Standardmäßig ist die Anlagenunterstützung für HTML5-Formulare deaktiviert.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 feature: Mobile Forms
 exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
-source-git-commit: 6e2a0f053a1f6989524e9ae2b1dcb001b0397ac6
-workflow-type: ht
-source-wordcount: '335'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '339'
+ht-degree: 72%
 
 ---
 
 # Aktivieren von Anlagen für ein HTML5-Formular {#enabling-attachments-for-an-html-form}
 
-Sie können Anlagen mit HTML5-Formularen hochladen, anzeigen und senden. Standardmäßig ist die Unterstützung der Anlage deaktiviert. Gehen Sie wie folgt vor, um die Unterstützung der Anlage zu aktivieren:
+Sie können Anhänge mit HTML5-Formularen hochladen, in der Vorschau anzeigen und senden. Standardmäßig ist die Unterstützung für Anlagen deaktiviert. Gehen Sie wie folgt vor, um die Unterstützung der Anlage zu aktivieren:
 
 1. Erstellen Sie ein [benutzerdefiniertes Profil](/help/forms/using/custom-profile.md) mit einer `mfAttachmentOptions` Mehrfachauswahl-Zeichenfolgeneigenschaft. Jede Zeichenfolge in der `mfAttachmentOptions`-Eigenschaft muss über ein `property=value`-Format verfügen, um Optionen des Dateianhang-Widgets zu konfigurieren. `property` und `value` können einen der folgenden Werte haben:
 
@@ -38,14 +34,14 @@ Sie können Anlagen mit HTML5-Formularen hochladen, anzeigen und senden. Standar
 
    >[!NOTE]
    >
-   >In Microsoft Internet Explorer 9 können Benutzer Dateien anfügen, die größer sind, als der angegebene Grenzwert. Hierbei handelt es sich um ein bekanntes Problem.
+   >In Microsoft Internet Explorer 9 können Benutzer Dateien anhängen, die größer als die angegebene Grenze sind. Es handelt sich um ein bekanntes Problem.
 
 1. Verwenden Sie den [Metadaten-Editor](/help/forms/using/manage-form-metadata.md), um das benutzerdefinierte Profil auszuwählen, das Sie oben für HTML-5-Formulare erstellt haben.
-1. Sie können die Formularvorlage mit dem benutzerdefinierten Profil wiedergeben und das Anlagensymbol würde in der Symbolleiste „Formulare“ angezeigt.
+1. Rendern Sie die Formularvorlage mit dem benutzerdefinierten Profil und das Anlagensymbol wird in der Symbolleiste &quot;Formulare&quot;angezeigt.
 
    >[!NOTE]
    >
-   >Standardmäßig bietet das Forms Portal ein benutzerdefiniertes Profil mit einer aktivierten Entwurfs- und Anlagenfunktion. Weitere Informationen zum Profil **Als Entwurf speichern** finden Sie unter [HTML5 Forms als Entwurf speichern](/help/forms/using/saving-html5-form-draft.md).
+   >Standardmäßig bietet das Forms Portal ein benutzerdefiniertes Profil mit aktivierter Funktion für Entwürfe und Anlagen. Weitere Informationen zum Profil **Als Entwurf speichern** finden Sie unter [HTML5 Forms als Entwurf speichern](/help/forms/using/saving-html5-form-draft.md).
 
 1. Klicken Sie auf das Anlagensymbol. Es wird ein Dialogfeld zur Anlagenauswahl angezeigt. Suchen Sie nach der Anlage, wählen Sie sie aus und klicken Sie auf **Anhängen**.
 
@@ -57,7 +53,7 @@ Sie können Anlagen mit HTML5-Formularen hochladen, anzeigen und senden. Standar
    >
    >Die Option „Dateivorschau“ ist nicht für anonyme Benutzer verfügbar.
 
-## Format der Anlage bei Einsendung {#attachment-submission-format}
+## Format der Anlagenübermittlung {#attachment-submission-format}
 
 Wenn Anlagen aktiviert sind, sendet das HTML5-Formular mehrteilige Daten. Die mehrteiligen Übermittlungsdaten bestehen aus zwei Teilen **dataXml** und **Anhängen**.
 

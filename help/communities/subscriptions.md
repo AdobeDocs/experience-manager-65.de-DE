@@ -1,17 +1,13 @@
 ---
 title: Communities-Abonnements
-seo-title: Communities Subscriptions
 description: Community-Mitglieder interagieren per E-Mail mit anderen Mitgliedern
-seo-description: Community members interact with other members through email
-uuid: a4b98769-c219-4e18-8e80-9a806ab979ff
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
 role: Admin
 exl-id: 338be220-659a-459c-8e90-55e3a11ddeb0
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 1%
@@ -29,7 +25,7 @@ Abonnements ähneln [Benachrichtigungen](notifications.md) wie Mitglieder abonni
 Unterscheidet Anmeldungen von Benachrichtigungen:
 
 * Die Mitglieder dürfen sich nicht an anderen Mitgliedern beteiligen.
-* Die einzige Aktion, die Mitglieder ergreifen müssen, ist die Auswahl `Email Subscriptions` wenn sie folgt.
+* Die einzige Aktion, die Mitglieder ergreifen müssen, ist die Auswahl von `Email Subscriptions` wenn sie folgt.
 * Wenn die E-Mail-Antwort konfiguriert ist, können Mitglieder Inhalte effektiv posten, indem sie einfach auf die erhaltene E-Mail antworten.
 
 ### Voraussetzungen {#requirements}
@@ -42,7 +38,7 @@ Anweisungen zum Einrichten von E-Mails finden Sie unter [E-Mail konfigurieren](e
 
 **Aktivieren von Abonnements und Folgen**
 
-Komponenten müssen zur Aktivierung von Abonnements konfiguriert werden *und* folgt. Funktionen, die Abonnements zulassen [blog](blog-feature.md), [Forum](forum.md) und [Fragen und Antworten](working-with-qna.md).
+Komponenten müssen zur Aktivierung von Abonnements konfiguriert werden *und* folgt. Funktionen, die Abonnements zulassen [Blog](blog-feature.md), [Forum](forum.md) und [Fragen und Antworten](working-with-qna.md).
 
 ## Abonnements aus folgenden {#subscriptions-from-following}
 

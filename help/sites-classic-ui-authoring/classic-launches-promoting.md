@@ -1,27 +1,25 @@
 ---
 title: Weiterleiten von Launches
 description: Sie müssen Launch-Seiten weiterleiten, damit der Inhalt vor der Veröffentlichung wieder in die Quelle (Produktion) verschoben wird. Beim Weiterleiten einer Launch-Seite wird die entsprechende Seite der Quellseiten mit dem Inhalt der weitergeleiteten Seite aktualisiert.
-uuid: 91f1c6ac-8c4e-4459-aaab-feaa32befc45
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 8d38c6f7-8fea-4d27-992d-03b604b9541f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 3013adc3-bec6-4ecc-aefd-f8df2b86dfef
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: ht
-source-wordcount: '314'
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '315'
 ht-degree: 100%
 
 ---
 
 # Weiterleiten von Launches{#promoting-launches}
 
-Sie müssen Launch-Seiten weiterleiten, damit der Inhalt vor der Veröffentlichung wieder in die Quelle (Produktion) verschoben wird. Beim Weiterleiten einer Launch-Seite wird die entsprechende Seite der Quellseiten mit dem Inhalt der weitergeleiteten Seite aktualisiert. Beim Hochstufen einer Launch-Seite stehen die folgenden Optionen zur Verfügung:
+Sie müssen Launch-Seiten weiterleiten, damit der Inhalt vor der Veröffentlichung wieder in die Quelle (Produktion) verschoben wird. Beim Weiterleiten einer Launch-Seite wird die entsprechende Seite der Quellseiten mit dem Inhalt der weitergeleiteten Seite aktualisiert. Beim Weiterleiten einer Launch-Seite stehen die folgenden Optionen zur Verfügung:
 
-* Gibt an, ob nur die aktuelle Seite oder der gesamte Launch hochgestuft werden soll.
-* Gibt an, ob die untergeordneten Seiten der aktuellen Seite hochgestuft werden sollen.
+* Ob nur die aktuelle Seite oder der gesamte Launch weitergeleitet werden soll.
+* Ob die untergeordneten Seiten der aktuellen Seite weitergeleitet werden sollen.
 * Ob der vollständige Launch hochgestuft werden soll oder nur Seiten, die geändert wurden.
 
 ## Weiterleiten von Launch-Seiten {#promoting-launch-pages}
@@ -40,10 +38,10 @@ Um Seiten hochzustufen, führen Sie beim Bearbeiten der Launch-Seite, die Sie ho
 
 ## Bearbeiten weitergeleiteter Seiten mit einem AEM-Workflow {#processing-promoted-pages-using-aem-workflow}
 
-Verwenden Sie Workflow-Modelle, um Seiten von hochgestuften Launches massenweise zu verarbeiten:
+Verwenden Sie Workflow-Modelle, um Seiten von weitergeleiteten Launches massenweise zu verarbeiten:
 
-1. Erstellen Sie ein Workflow-Modell.
-1. Wenn Autorinnen und Autoren Launch-Seiten hochstufen, speichern sie sie im Workflow-Paket.
+1. Erstellen Sie ein Workflow-Paket.
+1. Wenn Autorinnen und Autoren Launch-Seiten weiterleiten, speichern sie sie im Workflow-Paket.
 1. Starten Sie ein Workflow-Modell mit dem Paket als Payload.
 
 Um einen Workflow automatisch zu starten, wenn Seiten hochgestuft werden, [konfigurieren Sie einen Workflow-Launcher](/help/sites-administering/workflows-starting.md#workflows-launchers) für den Paketknoten.

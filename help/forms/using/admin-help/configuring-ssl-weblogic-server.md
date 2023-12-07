@@ -1,18 +1,14 @@
 ---
 title: Konfigurieren von SSL für WebLogic Server
-seo-title: Configuring SSL for WebLogic Server
 description: Erfahren Sie, wie Sie eine SSL-Berechtigung für die Verwendung auf WebLogic-Server erstellen und SSL für WebLogic Server konfigurieren.
-seo-description: Learn how to create an SSL credential for use on WebLogic server and how to configure SSL for WebLogic Server.
-uuid: 8ee979fd-2615-451b-a607-4f73ecfed4f9
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 35%
+source-wordcount: '1052'
+ht-degree: 33%
 
 ---
 
@@ -183,7 +179,7 @@ Konfigurieren Sie WebLogic so, dass es den von Ihnen erstellten benutzerdefinier
 
    **Art des benutzerdefinierten Identitäts-Keystores**: JKS
 
-   **Custom Identity Keystore Passphrase**: *mypassword*  (Custom Identity Keystore Password)
+   **Custom Identity Keystore Passphrase**: *mypassword* (benutzerdefiniertes Identitäts-Keystore-Kennwort)
 
 1. Geben Sie unter &quot;Trust&quot;die folgenden Werte an:
 
@@ -191,7 +187,7 @@ Konfigurieren Sie WebLogic so, dass es den von Ihnen erstellten benutzerdefinier
 
    **Art des benutzerdefinierten Trust-Keystores**: JKS
 
-   **Custom Trust Keystore Pass Phrase**: *mypassword*  (Custom Trust Key Password)
+   **Custom Trust Keystore Pass Phrase**: *mypassword* (benutzerdefiniertes Kennwort für Vertrauensschlüssel)
 
 1. Wählen Sie unter &quot;Allgemein&quot;unter &quot;Konfiguration&quot;die Option **SSL**.
 1. Standardmäßig ist Keystore für Identity and Trust Locations ausgewählt. Wenn nicht, ändern Sie es in Keystore.

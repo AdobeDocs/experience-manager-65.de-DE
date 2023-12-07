@@ -1,20 +1,16 @@
 ---
 title: Benutzerdefiniertes Wasserzeichen in der PDF-Briefvorschau
-seo-title: Custom watermark in letter PDF preview
-description: Erfahren Sie, wie Sie benutzerdefinierte Wasserzeichen in der PDF-Briefvorschau erstellen.
-seo-description: Learn how to create custom watermark in letter PDF preview.
-uuid: 5adfede3-9b38-4a12-bf14-6d80cfb0a05a
+description: Erfahren Sie, wie Sie in der Briefvorschau ein benutzerdefiniertes Wasserzeichen erstellen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: adc7ec13-0675-4071-9c4c-e238202d9d85
 docset: aem65
 feature: Correspondence Management
 exl-id: 7d90fade-1ca4-41d8-bbf9-45490465784a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '341'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '336'
+ht-degree: 60%
 
 ---
 
@@ -22,17 +18,17 @@ ht-degree: 100%
 
 ## Übersicht {#overview}
 
-Agent-Benutzer zeigen in der Benutzeroberfläche „Korrespondenz erstellen“ die Korrespondenz in der endgültigen Form an, in der sie zur Nachbearbeitung gesendet wird, z. B. für E-Mails oder zum Drucken.
+Agent-Benutzer zeigen in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;die Korrespondenz in der endgültigen Form an, in der sie zur Nachbearbeitung gesendet wird, z. B. zum E-Mail-Versand oder zum Drucken.
 
-Um die nicht autorisierte Verwendung dieser Daten zu verhindern, können Unternehmen der PDF-Vorschau ein Wasserzeichen hinzufügen. Das standardmäßige Wasserzeichen ist „VORSCHAU“ und wird über die gesamte PDF hinweg angezeigt.
+Um die unbefugte Verwendung dieser Daten zu verhindern, können Unternehmen ein Wasserzeichen auf der Vorschau-PDF festlegen. Das standardmäßige Wasserzeichen ist „VORSCHAU“ und wird über die gesamte PDF hinweg angezeigt.
 
 Um das Wasserzeichen in der PDF-Vorschau zu aktivieren, wählen Sie die Option **[!UICONTROL Wasserzeichen während der Vorschau anwenden]** in **[!UICONTROL Korrespondenzverwaltungskonfigurationen]** unter https://[server]:[port]/system/console/configMgr.
 
 ![default-watermark](assets/default-watermark.png)
 
-Sie können folgende Schritte verwenden, um den Text und das Erscheinungsbild des Wasserzeichens anzupassen:
+Sie können die folgenden Schritte verwenden, um den Text und das Erscheinungsbild des Wasserzeichens anzupassen:
 
-## Passen Sie die Benutzeroberfläche „Korrespondenz erstellen“ an {#customizewatermark-}
+## Anpassen des Wasserzeichens in der PDF-Vorschau in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot; {#customizewatermark-}
 
 1. Wechseln Sie zu `https://'[server]:[port]'/[ContextPath]/crx/de` und melden Sie sich als „Administrator“ an.
 1. Erstellen Sie im Anwendungsordner einen Ordner mit dem Namen **[!UICONTROL previewwatermark]**, dessen Pfad/Struktur der des Ordners „previewwatermark“ im Ordner „libs“ entspricht:
@@ -51,14 +47,15 @@ Sie können folgende Schritte verwenden, um den Text und das Erscheinungsbild de
 
       >[!NOTE]
       >
-      >Ändern Sie die /libs-Verzweigung nicht. Alle Änderungen, die Sie vornehmen, gehen möglicherweise verloren, da diese Verzweigung sich ändern kann, wenn Sie:
+      >Ändern Sie die /libs-Verzweigung nicht. Alle Änderungen, die Sie vornehmen, können verloren gehen, da sich diese Verzweigung ändern kann, wenn Sie:
       >
       >    
       >    
-      >    * Ihre Instanz aktualisieren
-      >    * Ein Hotfix anwenden
-      >    * Ein Feature Pack installieren
-
+      >    * Aktualisierung Ihrer Instanz
+      >    * Hotfix anwenden
+      >    * Feature Pack installieren
+      >    
+      >
 
    1. Klicken Sie auf **OK** und dann auf **Alle speichern**. Der Ordner **[!UICONTROL previewwatermark]** wird unter dem angegebenen Pfad erstellt.
 
@@ -84,6 +81,6 @@ Sie können folgende Schritte verwenden, um den Text und das Erscheinungsbild de
 
    >[!NOTE]
    >
-   >In der ddx-Datei sollten die Verweise auf das Ergebnis und die Quelle für output.pdf und input.pdf unverändert bleiben. Der Name der ddx-Datei darf nicht geändert werden.
+   >In der ddx-Datei sollten die Verweise auf &quot;result&quot;und &quot;source&quot;in output.pdf und input.pdf unverändert bleiben. Der Name der Datei ddx sollte ebenfalls nicht geändert werden.
 
 1. Klicken Sie auf **Alle speichern**.

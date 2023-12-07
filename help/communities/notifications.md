@@ -1,21 +1,17 @@
 ---
 title: Communities-Benachrichtigungen
-seo-title: Communities Notifications
-description: AEM Communities verfügt über Benachrichtigungen, die Ereignisse anzeigen, die für das angemeldete Community-Mitglied von Interesse sind
-seo-description: AEM Communities has notifications that display events of interest to the signed-in community member
-uuid: 2f5ea4b5-7308-414e-a3f8-2e8aa76b1ef4
+description: AEM Communities verfügt über Benachrichtigungen, die für das angemeldete Community-Mitglied interessante Ereignisse anzeigen
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: ab9088b7-a691-4153-ac82-1e8c0a19ed5d
 docset: aem65
 role: Admin
 exl-id: cadb62c9-210d-4204-8abc-d0cf70960392
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '609'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -36,7 +32,7 @@ Unterscheidet Benachrichtigungen von Aktivitäten und Abonnements:
 
 * Ein Link zum Benachrichtigungsabschnitt ist immer in der Kopfzeile einer Community-Site vorhanden:
 
-   * Die Aktivitäten erfordern [Aktivitäts-Stream-Funktion](/help/communities/functions.md#activity-stream-function) in die Struktur der Community-Site aufgenommen werden.
+   * Die Aktivitäten erfordern die [Aktivitäts-Stream-Funktion](/help/communities/functions.md#activity-stream-function) in die Struktur der Community-Site aufgenommen werden.
    * Abonnements erforderlich [E-Mail-Konfiguration](/help/communities/email.md).
 
 * Die Implementierung von Benachrichtigungen erfolgt über skalierbare und Pluggable Kanäle:
@@ -46,7 +42,7 @@ Unterscheidet Benachrichtigungen von Aktivitäten und Abonnements:
 
 Als Communitys [FP1](/help/communities/deploy-communities.md#latestfeaturepack), stehen folgende Benachrichtigungskanäle zur Verfügung:
 
-* Der Webkanal, auf den mithilfe der `Notifications` Link.
+* Der Webkanal, auf den mithilfe der `Notifications` -Link.
 * Der E-Mail-Kanal, der verfügbar ist, wenn die E-Mail richtig konfiguriert ist.
 
 Zukünftige Kanäle sind Mobilgeräte und Desktop.
@@ -61,7 +57,7 @@ Anweisungen zum Einrichten von E-Mails finden Sie unter [E-Mail konfigurieren](/
 
 **Aktivieren Sie die Folgen**
 
-Komponenten müssen konfiguriert werden, um Folgendes zu aktivieren. Funktionen, die Folgendes ermöglichen [blog](/help/communities/blog-feature.md), [Forum](/help/communities/forum.md), [Fragen und Antworten](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [fileLibrary](/help/communities/file-library.md)und [Kommentare](/help/communities/comments.md).
+Komponenten müssen konfiguriert werden, um Folgendes zu aktivieren. Funktionen, die Folgendes ermöglichen [Blog](/help/communities/blog-feature.md), [Forum](/help/communities/forum.md), [Fragen und Antworten](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [filelibraryLibrary](/help/communities/file-library.md), und [Kommentare](/help/communities/comments.md).
 
 **Hinweis**:
 
@@ -96,7 +92,7 @@ Der Webkanal ist immer aktiviert.
 
 ![notifications14](assets/notifications1.png)
 
-Der E-Mail-Kanal, der auf die ordnungsgemäße [E-Mail-Konfiguration](/help/communities/email.md), stellt dieselben Einstellungen wie für den Webkanal bereit.
+Der E-Mail-Kanal, der ordnungsgemäß ausgeführt werden muss [E-Mail-Konfiguration](/help/communities/email.md), stellt dieselben Einstellungen wie für den Webkanal bereit.
 
 Der E-Mail-Kanal ist standardmäßig deaktiviert.
 
@@ -112,13 +108,13 @@ Es kann von einem Mitglied aktiviert werden, hängt aber dennoch von der E-Mail-
 
 A [Assistent erstellte Community-Site](/help/communities/sites-console.md) enthält jetzt einen Link zum `Notifications` in der Kopfzeilenleiste der Site oberhalb des Banners. Im Gegensatz zu Nachrichten werden Benachrichtigungen für jede Community-Site erstellt, während Nachrichten während des Site-Erstellungsprozesses aktiviert werden müssen.
 
-Wählen Sie beim Besuch der veröffentlichten Site die `Notifications` -Link zeigt alle Benachrichtigungen für das Mitglied an.
+Wählen Sie beim Besuch der veröffentlichten Site die `Notifications` zeigt alle Benachrichtigungen für das Mitglied an.
 
 ![notifications4](assets/notifications4.png)
 
 ### E-Mail-Benachrichtigungen {#email-notifications}
 
-Wenn der E-Mail-Kanal aktiviert ist, erhält das Mitglied eine E-Mail mit einem Link zum Inhalt im Web.
+Wenn der E-Mail-Kanal aktiviert ist, erhält das Mitglied eine E-Mail, die einen Link zum Inhalt im Web enthält.
 
 ![notifications5](assets/notifications5.png)
 

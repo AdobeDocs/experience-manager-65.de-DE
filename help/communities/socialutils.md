@@ -1,18 +1,14 @@
 ---
 title: SocialUtils-Refaktorierung
-seo-title: SocialUtils Refactoring
-description: Das Paket com.adobe.cq.social.ugcbase.SocialUtils wurde in AEM 6.1 nicht mehr unterstützt.
-seo-description: The package com.adobe.cq.social.ugcbase.SocialUtils was deprecated in AEM 6.1
-uuid: 54a0d98e-5ead-4c12-850f-8252ea9b3263
+description: Das Paket com.adobe.cq.social.ugcbase.SocialUtils wurde in AEM 6.1 eingestellt
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
 exl-id: 0f731ec6-a12e-4098-a1ec-ee4cd4dc1432
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '295'
 ht-degree: 1%
 
 ---
@@ -33,15 +29,15 @@ In den folgenden Tabellen sind die Methoden aufgeführt, die anstelle von `Socia
 | SocialResourceProvider getSocialResourceProvider(Resource resource) |  |
 | SocialResourceConfiguration getStorageConfig(Resource resource) |  |
 | Resource getUGCResource(Resource userResource) |  |
-| Resource getUGCResource(Resource userResource, ResourceResolverFactory rrf) | new |
-| Resource getUGCResource(Resource userResource, ResourceResolverFactory rrf, String resourceTypeHint) | new |
+| Resource getUGCResource(Resource userResource, ResourceResolverFactory rrf) | Neu |
+| Resource getUGCResource(Resource userResource, ResourceResolverFactory rrf, String resourceTypeHint) | Neu |
 | Resource getUGCResource(Resource userResource, String resourceTypeHint) |  |
 | boolean hasModeratePermissions(Resource resource) |  |
 | String resourceToACLPath(Resource resource) |  |
 | String resourceToUGCStoragePath(Resource resource) | ersetzt String resourceToUGCPath(Resource resource) |
 | String UGCToResourcePath(Resource resource) |  |
 | String UGCToResourcePath(String ugcPath) | Methodenunterschrift geändert |
-| String UGCToResourcePath(String ugcPath, ResourceResolver resolver) | new |
+| String UGCToResourcePath(String ugcPath, ResourceResolver resolver) | Neu |
 
 | Methoden in `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities |
 |---|
@@ -78,7 +74,7 @@ In den folgenden Tabellen sind die Methoden aufgeführt, die anstelle von `Socia
 | boolean mayPost(ResourceResolver resolver, Resource resource) |
 | String prepareUserGeneratedContent(ResourceResolver resolver, String path) |
 
-## Methoden nicht mehr verfügbar {#methods-no-longer-available}
+## Methoden sind nicht mehr verfügbar {#methods-no-longer-available}
 
 | Node createNode(ResourceResolver resolver, String path, String nodeType) |
 |---|

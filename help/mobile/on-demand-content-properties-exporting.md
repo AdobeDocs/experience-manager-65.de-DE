@@ -1,19 +1,15 @@
 ---
 title: Verwenden von Inhaltseigenschaften zum Exportieren von Inhalten
-seo-title: Using Content Properties to Export Content
 description: Auf der folgenden Seite finden Sie App-Eigenschaften und -Knoten.
-seo-description: The following page shows App Properties and Nodes.
-uuid: 73f1832f-e457-47d0-a0e1-80af90897d31
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: a3006835-b1d2-47d6-959a-cdb692e34e1e
 exl-id: db1c33c9-8539-436d-b4d0-3d5e6fd688ed
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 4%
+source-wordcount: '332'
+ht-degree: 3%
 
 ---
 
@@ -29,7 +25,7 @@ Sie verwenden dieselben allgemeinen Eigenschaften, die in allen *cq:Page* zusät
 
 ## App-Eigenschaften {#app-properties}
 
-Die folgende Tabelle zeigt **Eigenschaften und Knoten der App**.
+Die folgende Tabelle zeigt **App-Eigenschaften und -Knoten**.
 
 <table>
  <tbody>
@@ -46,7 +42,7 @@ Die folgende Tabelle zeigt **Eigenschaften und Knoten der App**.
   <tr>
    <td>dps-exportTemplate</td>
    <td>Zeichenfolge:Pfad</td>
-   <td><p>Pfad zu den Exportkonfigurationen der App. Die Exportkonfiguration ist ein Ordner mit zwei untergeordneten ContentSync-Exportkonfigurationsvorlagen.</p> <p><i>dps-article</i>: Exportkonfiguration für ContentSync zum Exportieren von Artikelinhalten</p> <p><i>dps-HTMLResources</i>: Exportkonfiguration für ContentSync zum Exportieren von freigegebenen Ressourcen für Apps/Artikel</p> </td>
+   <td><p>Pfad zu den Exportkonfigurationen der App. Die Exportkonfiguration ist ein Ordner mit zwei untergeordneten ContentSync-Exportkonfigurationsvorlagen.</p> <p><i>dps-article</i>: ContentSync-Exportkonfiguration für den Export von Artikelinhalten</p> <p><i>dps-HTMLResources</i>: Exportkonfiguration für ContentSync zum Exportieren von freigegebenen Ressourcen für Apps/Artikel</p> </td>
   </tr>
   <tr>
    <td>dps-projectId</td>
@@ -61,7 +57,7 @@ Die folgende Tabelle zeigt **Eigenschaften und Knoten der App**.
   <tr>
    <td>dps-resourceType</td>
    <td>Zeichenfolge</td>
-   <td>Inhaltstyp.</td>
+   <td>Inhaltstyp</td>
   </tr>
   <tr>
    <td>dps-sharedHTMLResources-lastUploaded</td>
@@ -86,7 +82,7 @@ Die folgende Tabelle zeigt **Eigenschaften und Knoten der App**.
  </tbody>
 </table>
 
-Sie können ***Inhaltseigenschaften*** , um Inhalte zu erstellen. Siehe die folgenden Ressourcen zum Erstellen und Exportieren von Artikeln und freigegebenen Ressourcen:
+Sie können ***Inhaltseigenschaften*** , um Inhalte zu erstellen. Weitere Informationen finden Sie in den folgenden Ressourcen zum Erstellen und Exportieren von Artikeln und freigegebenen Ressourcen:
 
 * [Inhaltseigenschaften](/help/mobile/content-properties.md)
 * [Erstellen der Konfiguration von Artikelexporten](/help/mobile/creating-article-export-configuration.md)

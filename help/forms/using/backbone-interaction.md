@@ -1,25 +1,21 @@
 ---
 title: Interaktion mit Backbone
-seo-title: Backbone interaction
 description: Grundlegende Informationen zur Verwendung von Backbone JavaScript-Modellen in AEM Forms Workspace.
-seo-description: Conceptual information about use of Backbone JavaScript models in AEM Forms workspace.
-uuid: 040f42cb-3b76-4657-ba05-9e52647efb12
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 538591fe-29e4-40c4-a045-06095cc0c6b8
 docset: aem65
 exl-id: 8fd9770b-6ec4-4b09-b6b2-47a5e5d40f79
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '436'
 ht-degree: 34%
 
 ---
 
 # Interaktion mit Backbone{#backbone-interaction}
 
-Backbone ist eine Bibliothek, die beim Erstellen und Befolgen der MVC-Architektur in Webanwendungen hilft. Die Grundidee von Backbone besteht darin, Ihre Oberfläche in logischen Ansichten zu organisieren, die von Modellen gestützt werden, von denen jedes unabhängig aktualisiert werden kann, wenn sich das Modell ändert, ohne dass die Seite neu gezeichnet werden muss. Weitere Informationen zu Backbone finden Sie unter [https://backbonejs.org](https://backbonejs.org/).
+Backbone ist eine Bibliothek, die beim Erstellen und Befolgen der MVC-Architektur in Webanwendungen hilft. Die Grundidee von Backbone besteht darin, Ihre Oberfläche in logischen Ansichten zu organisieren, die von Modellen gestützt werden, die bei Änderungen des Modells unabhängig aktualisiert werden können, ohne dass die Seite neu gezeichnet werden muss. Weitere Informationen zu Backbone finden Sie unter [https://backbonejs.org](https://backbonejs.org/).
 
 Einige Hauptkonzepte sind die folgenden:
 

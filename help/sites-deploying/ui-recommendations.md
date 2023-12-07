@@ -1,20 +1,16 @@
 ---
 title: Empfehlungen für Kunden zur Benutzeroberfläche
-seo-title: User Interface Recommendations for Customers
 description: Eine Liste von Empfehlungen zu den klassischen und Touch-optimierten Benutzeroberflächen.
-seo-description: A list of recommendations related to the classic and touch-optimized user interfaces.
-uuid: 9ec2c9de-a79e-4f2c-a90f-b38ba9553e07
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 46%
+source-wordcount: '788'
+ht-degree: 44%
 
 ---
 

@@ -1,17 +1,15 @@
 ---
 title: Angeben der einzubettenden Schriftarten
 description: Erfahren Sie, wie Sie Schriftarten angeben, die in ein adaptives Formular eingebettet werden sollen. Sie können angeben, welche Schriftarten in Formulare eingebettet werden oder nie in Formulare eingebettet werden, die der Forms-Dienst generiert.
-uuid: 02da5c00-0467-4633-a076-c36725cbfbad
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 180f0448-d507-4b6d-bb8a-d12a434e1250
 exl-id: 02c28b2c-0cab-4431-9fab-fa332c96e092
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 24%
+ht-degree: 22%
 
 ---
 
@@ -21,7 +19,7 @@ Sie können angeben, welche Schriftarten immer oder nie in die von Output verwen
 
 >[!NOTE]
 >
->Wenn Sie eine benutzerdefinierte XCI-Datei für die Ausgabe angegeben haben, setzt die Option &quot;Schrift einbetten&quot;in der XCI-Datei diese Einstellungen außer Kraft. (Siehe [Dateispeicherorte für Output angeben](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).)
+>Wenn Sie eine benutzerdefinierte XCI-Datei für die Ausgabe angegeben haben, setzt die Option &quot;Schrift einbetten&quot;in der XCI-Datei diese Einstellungen außer Kraft. (Siehe [Dateispeicherorte für Output angeben](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).
 
 1. Klicken Sie in der Administration-Console auf „Dienste“ > „Ausgabe“.
 1. Geben Sie unter „Schrifteinbettungseinstellungen“ in das Feld „Schriftarten immer einbetten“ die Namen der Schriftarten (durch Kommas getrennt) ein, die in Formulare eingebettet werden sollen. Die von Ihnen angegebenen Schriftarten werden nur dann in das generierte Formular eingebettet, wenn sie im Formular verwendet werden. Diese Einstellung wird ignoriert, wenn die Option &quot;Schrift einbetten&quot;in der XCI-Datei aktiviert wurde, die an den Dienst übergeben wird. In diesem Fall werden alle im PDF verwendeten Schriftarten immer eingebettet.

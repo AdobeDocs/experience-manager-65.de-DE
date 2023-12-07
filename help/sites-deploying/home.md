@@ -1,12 +1,11 @@
 ---
 title: AEM 6.5-Bereitstellungshandbuch für Benutzer
-seo-title: AEM 6.5 Deploying User Guide
 description: Erfahren Sie mehr über die Installation und Bereitstellung von Adobe Experience Manager 6.5 und über die zugehörige Architektur sowie die Cloud-Implementierung mit Adobe Managed Services.
 exl-id: 4a82008c-af69-414e-bd98-c7f683a74905
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
-workflow-type: ht
-source-wordcount: '361'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 92%
 
 ---
 
@@ -25,7 +24,7 @@ Dieses Handbuch behandelt alle Aufgaben rund um die Bereitstellung von AEM, z. 
 
 | Benutzerhandbuch | Beschreibung |
 |--- |---|
-| [Versionshinweise](/help/release-notes/home.md) | Enthält wichtige Informationen zur neuesten Version von AEM, einschließlich neuer Funktionen, unterstützter Plattformen, veralteter und entfernter Funktionen und bekannter Probleme. |
+| [Versionshinweise](/help/release-notes/home.md) | Enthält wichtige Informationen zur neuesten Version von AEM, einschließlich neuer, unterstützter Plattformen, veralteter und entfernter Funktionen und bekannter Probleme. |
 | [Benutzerhandbuch für Assets](/help/assets/home.md) | Erfahren Sie, wie Sie digitale Assets erstellen, verwalten, bereitstellen und optimieren können. |
 | [Forms Benutzerhandbuch](/help/forms/home.md) | In diesem Handbuch wird beschrieben, wie Sie digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren. |
 | [Communities-Benutzeranleitung](/help/communities/home.md) | Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Community-Funktionen. |

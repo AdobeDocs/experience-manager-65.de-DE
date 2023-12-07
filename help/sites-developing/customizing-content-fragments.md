@@ -1,16 +1,14 @@
 ---
 title: Anpassen und Erweitern von Inhaltsfragmenten
-seo-title: Customizing and Extending Content Fragments
 description: Ein Inhaltsfragment erweitert ein Standard-Asset. Erfahren Sie, wie Sie sie anpassen können.
-seo-description: A content fragment extends a standard asset. Learn how you can customize them.
 topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2794'
-ht-degree: 66%
+source-wordcount: '2728'
+ht-degree: 64%
 
 ---
 
@@ -163,7 +161,7 @@ Die Backend-Implementierung von Inhaltsfragmenten ist beispielsweise dafür vera
 Die erforderlichen Parameter können in der [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) für das OSGi-Bundle **Konfiguration der Inhaltsfragmentkomponente** konfiguriert werden.
 
 * **Ressourcentypen**
-Eine Liste von `sling:resourceTypes` kann angegeben werden, um zu definieren, welche Komponenten zum Rendern der Inhaltsfragmente verwendet werden sollen und worauf die Hintergrundverarbeitung angewendet werden soll.
+Eine Liste von `sling:resourceTypes` kann bereitgestellt werden, um Komponenten zu definieren, die für die Wiedergabe von Inhaltsfragmenten verwendet werden und auf die die Hintergrundverarbeitung angewendet werden soll.
 
 * **Verweiseigenschaften** Eine Liste der konfigurierbaren Eigenschaften, die angeben, wo der Verweis auf das Fragment für die entsprechende Komponente gespeichert werden soll.
 
@@ -324,7 +322,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
       * Hinzufügen von Sammlungen
       * Entfernen von Sammlungen
 
-   * Zugreifen auf das Fragmentmodell   oder Vorlage
+   * Zugriff auf das Modell oder die Vorlage des Fragments
 
   Folgende Schnittstellen stehen für die Hauptelemente eines Fragments:
 

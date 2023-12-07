@@ -1,17 +1,15 @@
 ---
 title: Konfigurieren von Komponenten im Design-Modus
 description: Wenn die AEM-Instanz vorkonfiguriert installiert wird, steht im Sidekick sofort eine Auswahl von Komponenten zur Verfügung. Darüber hinaus stehen auch verschiedene weitere Komponenten zur Verfügung. Sie können den Design-Modus verwenden, um diese Komponenten zu aktivieren/deaktivieren.
-uuid: 2cd5dad0-2f9c-4f34-aae8-1638d1445eb3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
 exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
-workflow-type: ht
-source-wordcount: '509'
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '508'
 ht-degree: 100%
 
 ---

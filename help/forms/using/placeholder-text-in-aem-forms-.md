@@ -1,25 +1,21 @@
 ---
 title: Platzhaltertext in AEM Forms
-seo-title: Placeholder text in AEM Forms
 description: Platzhaltertext soll Benutzern bei der Dateneingabe helfen, wenn das Steuerelement keinen Wert hat. Es kann sich um einen Beispielwert oder eine kurze Beschreibung des erwarteten Formats handeln.
-seo-description: Placeholder text is intended to aid the user with data entry when the control has no value. It could be a sample value or a brief description of the expected format.
-uuid: 69f80722-93db-4932-9016-4b530e183d4e
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: f9ff2cc5-3f0a-4b2f-a206-2fe0985646ea
 docset: aem65
 feature: Adaptive Forms
 exl-id: 6b6e27b5-8b4e-489c-9e72-4d256692c1ca
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 51%
+source-wordcount: '267'
+ht-degree: 69%
 
 ---
 
 # Platzhaltertext in AEM Forms {#placeholder-text-in-aem-forms}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/using/create-an-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/using/create-an-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
 
 Der Platzhaltertext stellt ein Wort oder einen kurzen Satz dar. Sie soll den Benutzer bei der Dateneingabe unterstützen, wenn das Steuerelement keinen Wert hat. Ein Platzhaltertext kann ein Beispielwert oder eine kurze Beschreibung des erwarteten Formats sein. Der Platzhaltertext wird gezeigt, bevor der Benutzer einen Text eingibt, und entfernt, wenn der Benutzer einen Wert eingibt oder auswählt.
 

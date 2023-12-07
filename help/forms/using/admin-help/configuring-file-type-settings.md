@@ -1,16 +1,14 @@
 ---
 title: Konfigurieren von Dateitypeinstellungen
 description: Erfahren Sie, wie Sie Dateitypeinstellungen konfigurieren. In PDF Generator können Sie die Anwendungseinstellung für unterstützte Dateitypen einrichten, um Dateitypeinstellungen zu konfigurieren.
-uuid: ab037659-c6ff-4de9-9417-f5a6fc8122cb
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
-discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '6173'
+source-wordcount: '6186'
 ht-degree: 38%
 
 ---
@@ -618,7 +616,7 @@ Sie können auch angeben, wie Formulare gesendet werden. Die Optionen sind XML, 
 
 Sie können die Einstellungen für andere Anwendungen nicht über Administration Console ändern. Sie zeigen die Dateinamenerweiterungen für die unterstützten Dateitypen an. Anweisungen zum Zugriff auf diese Einstellungen finden Sie unter [Dateitypeinstellungen erstellen oder bearbeiten](https://help.adobe.com/de_DE/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
 
-* Corel WordPerfect:  `wpd`
+* Corel WordPerfect: `wpd`
 * Adobe PageMaker: `pmd, pm6, p65, pm`
 * Adobe FrameMaker: `fm`
 * Adobe Photoshop: `psd`

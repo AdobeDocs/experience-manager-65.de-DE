@@ -1,19 +1,15 @@
 ---
 title: OSGi-Ereignisse für Communities-Komponenten
-seo-title: OSGi Events for Communities Components
 description: OSGi-Ereignisse werden gesendet, die asynchrone Listener als Trigger verwenden können
-seo-description: OSGi events are sent that can trigger asynchronous listeners
-uuid: 317e2add-689d-4c99-ae38-0703b6649cb7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 exl-id: 8049d797-e758-44c2-a89b-51d2b2fca8dc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 5%
+source-wordcount: '592'
+ht-degree: 6%
 
 ---
 
@@ -25,7 +21,7 @@ Wenn Mitglieder mit Communities-Funktionen interagieren, werden OSGi-Ereignisse 
 
 Die [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) -Instanz zeichnet die Ereignisse als `actions` die für `topic`. Das SocialEvent enthält eine Methode zum Zurückgeben einer `verb` mit der Aktion verknüpft ist. Es gibt eine *n-1* Beziehung `actions` und `verbs`.
 
-Die folgenden Tabellen beschreiben für die in der Version bereitgestellten Communities-Komponenten die `verbs` für jeden `topic` verfügbar.
+Die folgenden Tabellen beschreiben für die in der Version bereitgestellten Communities-Komponenten die `verbs` für jeden `topic` zur Verwendung verfügbar.
 
 ## Themen und Verben {#topics-and-verbs}
 
@@ -36,8 +32,8 @@ SocialEvent `topic`= com/adobe/cq/social/calendar
 |---|---|
 | POST | Mitglied erstellt ein Kalenderereignis |
 | HINZUFÜGEN | Bemerkungen von Mitgliedern zu Kalenderereignissen |
-| UPDATE | Kalenderereignis oder -kommentar eines Mitglieds wird bearbeitet |
-| DELETE | Kalenderereignis oder Kommentar eines Mitglieds wird gelöscht |
+| AKTUALISIEREN | Kalenderereignis oder -kommentar eines Mitglieds wird bearbeitet |
+| LÖSCHEN | Kalenderereignis oder -kommentar eines Mitglieds wird gelöscht |
 
 [Kommentarkomponente](essentials-comments.md)
 SocialEvent `topic`= com/adobe/cq/social/comment
@@ -47,7 +43,7 @@ SocialEvent `topic`= com/adobe/cq/social/comment
 | POST | Mitglied erstellt Kommentar |
 | HINZUFÜGEN | Antwort des Mitglieds auf Stellungnahme |
 | AKTUALISIEREN | Kommentar des Mitglieds wird bearbeitet |
-| DELETE | Anmerkung des Mitglieds wird gestrichen |
+| LÖSCHEN | Anmerkung des Mitglieds wird gestrichen |
 
 [Dateibibliothekskomponente](essentials-file-library.md)
 SocialEvent `topic`= com/adobe/cq/social/fileLibrary
@@ -57,7 +53,7 @@ SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 | POST | Mitglied erstellt Ordner |
 | ANHÄNGEN | Mitglied lädt eine Datei hoch |
 | AKTUALISIEREN | Mitglied aktualisiert Ordner oder Dateien |
-| DELETE | Mitglied löscht Ordner oder Dateien |
+| LÖSCHEN | Mitglied löscht Ordner oder Dateien |
 
 [Forumkomponente](essentials-forum.md)
 SocialEvent `topic`= com/adobe/cq/social/forum
@@ -67,7 +63,7 @@ SocialEvent `topic`= com/adobe/cq/social/forum
 | POST | Mitglieder erstellen Forumthema |
 | HINZUFÜGEN | Antworten von Mitgliedern auf Forumthema |
 | AKTUALISIEREN | Forenthema oder Antwort eines Mitglieds wird bearbeitet |
-| DELETE | Forenthema oder Antwort eines Mitglieds wird gelöscht |
+| LÖSCHEN | Forenthema oder Antwort eines Mitglieds wird gelöscht |
 
 [Journalkomponente](blog-developer-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/journal
@@ -77,7 +73,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 | POST | Mitglied erstellt einen Blog-Artikel |
 | HINZUFÜGEN | Kommentare von Mitgliedern zu Blogartikeln |
 | AKTUALISIEREN | Blogartikel oder Kommentar eines Mitglieds wird bearbeitet |
-| DELETE | Blogartikel oder Kommentar eines Mitglieds wird gelöscht |
+| LÖSCHEN | Blogartikel oder Kommentar eines Mitglieds wird gelöscht |
 
 [QnA-Komponente](qna-essentials.md)
 SocialEvent `topic` = com/adobe/cq/social/qna
@@ -89,7 +85,7 @@ SocialEvent `topic` = com/adobe/cq/social/qna
 | AKTUALISIEREN | Frage oder Antwort des Mitglieds wird bearbeitet |
 | SELECT | Antwort des Mitglieds wird ausgewählt |
 | UNSELECT | Die Antwort des Mitglieds ist deaktiviert. |
-| DELETE | Frage oder Antwort des Mitglieds wird gestrichen |
+| LÖSCHEN | Frage oder Antwort des Mitglieds wird gestrichen |
 
 [Überprüfungskomponente](reviews-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/review
@@ -98,14 +94,14 @@ SocialEvent `topic`= com/adobe/cq/social/review
 |---|---|
 | POST | Mitglied erstellt Überprüfung |
 | AKTUALISIEREN | Überprüfung durch Mitglieder wird bearbeitet |
-| DELETE | Überprüfung durch das Mitglied wird gestrichen |
+| LÖSCHEN | Überprüfung durch das Mitglied wird gestrichen |
 
 [Bewertungskomponente](rating-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verb** | **Beschreibung** |
 |---|---|
-| RATE HINZUFÜGEN | Der Inhalt des Mitglieds wurde bewertet |
+| RATE HINZUFÜGEN | Der Inhalt des Mitglieds wurde bewertet. |
 | RATE ENTFERNEN | Der Inhalt des Mitglieds wurde mit einer |
 
 [Abstimmungskomponente](essentials-voting.md)
@@ -121,7 +117,7 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 
 | **Verb** | **Beschreibung** |
 |---|---|
-| DENY | Inhalt des Mitglieds wird abgelehnt |
+| ABLEHNEN | Inhalt des Mitglieds wird abgelehnt |
 | FLAG-AS-INAPPROPRIATE | Inhalt des Mitglieds ist gekennzeichnet |
 | UNFLAG-AS-INAPPROPRIATE | Inhalt des Mitglieds ist unmarkiert |
 | AKZEPT | Inhalt des Mitglieds wird vom Moderator genehmigt |
@@ -130,7 +126,7 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 
 ## Ereignisse für benutzerdefinierte Komponenten {#events-for-custom-components}
 
-Bei einer benutzerdefinierten Komponente muss die [Abstrakte SocialEvent-Klasse](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) muss erweitert werden, um die Ereignisse der Komponente als `actions`die für `topic`.
+Bei einer benutzerdefinierten Komponente muss die Variable [Abstrakte SocialEvent-Klasse](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) muss erweitert werden, um die Ereignisse der Komponente als `actions`die für `topic`.
 
 Das benutzerspezifische Ereignis überschreibt die -Methode `getVerb()` , damit `verb`wird für jeden `action`. Die `verb` für eine Aktion zurückgegeben wird, kann eine häufig verwendete Aktion sein (z. B. `POST`) oder einer für die Komponente spezialisierten Komponente (z. B. `ADD RATING`). Es gibt eine *n-1* Beziehung `actions`und `verbs`.
 

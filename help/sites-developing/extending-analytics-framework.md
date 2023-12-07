@@ -5,12 +5,11 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1619'
-ht-degree: 44%
+source-wordcount: '1609'
+ht-degree: 43%
 
 ---
 
@@ -92,9 +91,9 @@ Mit dem folgenden Verfahren können Sie Variablen zur Liste hinzufügen:
 
 1. Erweitern Sie auf der Adobe Analytics-Framework-Seite den Bereich **Allgemeine Analytics-Einstellungen**.
 1. Klicken Sie unter der Liste der Variablen auf „Element hinzufügen“, um eine neue Variable zur Liste hinzuzufügen.
-1. Geben Sie in der linken Zelle einen Namenfür die Variable ein, zum Beispiel, `prop10`.
+1. Geben Sie in der linken Zelle einen Namen für die Variable ein, beispielsweise: `prop10`.
 
-1. Geben Sie in der rechten Spalte einen Wertfür die Variable ein, zum Beispiel, `CONSTANT`.
+1. Geben Sie in der rechten Spalte einen Wert für die Variable ein, beispielsweise: `CONSTANT`.
 
 1. Um eine Variable zu entfernen, klicken Sie auf die Schaltfläche (-) neben der Variablen.
 

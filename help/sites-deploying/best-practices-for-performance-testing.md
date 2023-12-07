@@ -1,17 +1,15 @@
 ---
 title: Best Practices für Leistungstests
 description: Erfahren Sie mehr über die allgemeinen Strategien und Methoden, die für Leistungstests verwendet werden, sowie über einige der Tools, die zur Unterstützung des Prozesses verfügbar sind.
-uuid: ab8720d6-b864-4d00-9e07-2e1699cfe7db
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: 18f843ed3ffb719d168b67826baaffd926ffd2dd
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 99%
+source-wordcount: '1790'
+ht-degree: 98%
 
 ---
 
@@ -151,7 +149,7 @@ Nach dem Ausführen von Leistungstests auf der Authoring-Instanz müssen alle fe
 
 * Wenn beim Bearbeiten bestimmter Seiten oder Komponenten in Authoring-Instanzen Probleme auftreten, sehen Sie sich die fragliche Seite mithilfe des Entwicklermodus der Touch-optimierten Benutzeroberfläche an. Dadurch erhalten Sie eine Aufschlüsselung der einzelnen Inhaltsbereiche auf der Seite und ihrer Ladezeiten.
 * Minimieren Sie alle JS- und CSS-Dateien auf der Site. Siehe diesen [Blogpost](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
-* Entfernen Sie eingebettete CSS- und JS-Elemente aus den Komponenten. Diese sollten in den Client-seitigen Bibliotheken enthalten und minimiert sein, um die Anzahl der zum Rendern der Seite benötigten Anforderungen zu minimieren..
+* Entfernen Sie eingebettete CSS- und JS-Elemente aus den Komponenten. Sie sollten mit den clientseitigen Bibliotheken eingeschlossen und minimiert werden, um die Anzahl der Anforderungen zu minimieren, die zum Rendern der Seite erforderlich sind.
 * Verwenden Sie Browser-Tools wie den Chrome-Tab „Netzwerk“, um die Server-Anfragen zu überprüfen und festzustellen, welche am längsten dauern.
 
 Nach Identifizierung von Problembereichen kann der Anwendungs-Code im Hinblick auf Leistungsoptimierungen untersucht werden. Sollten AEM-Standardfunktionen nicht ordnungsgemäß verwendet werden können, wenden Sie sich an den Adobe-Support, um Unterstützung zu erhalten.

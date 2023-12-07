@@ -1,19 +1,15 @@
 ---
 title: Zuweisen von Verwendungsrechten
-seo-title: Assigning Usage Rights
 description: Verwenden Sie die Java Client-API und die Webservice-API der Acrobat Reader DC-Erweiterungen, um Verwendungsrechte auf PDF-Dokumente anzuwenden oder sie daraus zu entfernen.
-seo-description: Use the Acrobat Reader DC extensions Java Client API and Web Service API to apply and remove usage rights from PDF documents.
-uuid: 8c2020df-ea3c-49fa-916f-38a458f40d2b
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 role: Developer
 exl-id: 6af148eb-427a-4b54-9c5f-8750736882d8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3914'
+source-wordcount: '3897'
 ht-degree: 97%
 
 ---
@@ -246,9 +242,9 @@ Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn S
 
 **Erstellen eines Client-Objekts für Acrobat Reader DC-Erweiterungen**
 
-Bevor Sie einen Service-Vorgang für Acrobat Reader DC-Erweiterungen programmgesteuert ausführen können, müssen Sie ein Service-Client-Objekt für Acrobat Reader DC-Erweiterungen erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `ReaderExtensionsServiceClient`-Objekt. Wenn Sie die Web-Service-API für Acrobat Reader DC-Erweiterungen verwenden, erstellen Sie ein `ReaderExtensionsServiceService`-Objekt.
+Bevor Sie einen Service-Vorgang für Acrobat Reader DC-Erweiterungen programmgesteuert ausführen können, müssen Sie ein Service-Client-Objekt für Acrobat Reader DC-Erweiterungen erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `ReaderExtensionsServiceClient`-Objekt. Wenn Sie die Webservice-API für Acrobat Reader DC-Erweiterungen verwenden, erstellen Sie ein `ReaderExtensionsServiceService`-Objekt.
 
-**Abrufen eines PDF-Dokuments mit aktivierten Verwendungsrechten**
+**Abrufen eines berechtigungsaktivierten PDF-Dokuments**
 
 Rufen Sie ein PDF-Dokument mit aktivierten Benutzerrechten ab, um Verwendungsrechte zu entfernen.
 
@@ -384,9 +380,9 @@ Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn S
 
 **Erstellen eines Client-Objekts für Acrobat Reader DC-Erweiterungen**
 
-Bevor Sie einen Service-Vorgang für Acrobat Reader DC-Erweiterungen programmgesteuert ausführen können, müssen Sie ein Service-Client-Objekt für Acrobat Reader DC-Erweiterungen erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `ReaderExtensionsServiceClient`-Objekt. Wenn Sie die Web-Service-API für Acrobat Reader DC-Erweiterungen verwenden, erstellen Sie ein `ReaderExtensionsServiceService`-Objekt.
+Bevor Sie einen Service-Vorgang für Acrobat Reader DC-Erweiterungen programmgesteuert ausführen können, müssen Sie ein Service-Client-Objekt für Acrobat Reader DC-Erweiterungen erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `ReaderExtensionsServiceClient`-Objekt. Wenn Sie die Webservice-API für Acrobat Reader DC-Erweiterungen verwenden, erstellen Sie ein `ReaderExtensionsServiceService`-Objekt.
 
-**Abrufen eines PDF-Dokuments mit aktivierten Verwendungsrechten**
+**Abrufen eines berechtigungsaktivierten PDF-Dokuments**
 
 Rufen Sie ein PDF-Dokument mit aktivierten Benutzerrechten ab, um Informationen über die Berechtigung abzurufen. Sie können auch Informationen zu einer Berechtigung abrufen, indem Sie deren Alias angeben. Wenn Sie jedoch Informationen zu einer Berechtigung abrufen möchten, die zum Anwenden von Verwendungsrechten auf ein bestimmtes PDF-Dokument mit aktivierten Rechten verwendet wurde, müssen Sie das Dokument abrufen.
 

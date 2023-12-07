@@ -1,21 +1,17 @@
 ---
 title: User- und UGC-Verwaltungsdienst in AEM Communities
-seo-title: User and UGC Management Service in AEM Communities
 description: Verwenden Sie APIs, um benutzergenerierte Inhalte stapelweise zu löschen und zu exportieren und das Benutzerkonto zu deaktivieren.
-seo-description: Use APIs to bulk delete and bulk export user generated content, and disable user account.
-uuid: 91180659-617d-4f6c-9a07-e680770d0d8f
 contentOwner: mgulati
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
-discoiquuid: d305821d-1371-4e4a-8b28-8eee8fafa43b
 docset: aem65
 role: Admin
 exl-id: 526ef0fa-3f20-4de4-8bc5-f435c60df0d0
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 5%
+source-wordcount: '558'
+ht-degree: 2%
 
 ---
 
@@ -58,7 +54,7 @@ Um beispielsweise die benutzergenerierte Inhalte eines Benutzers mit dem Namen W
 
 Um beispielsweise die benutzergenerierte Inhalte eines Benutzers mit autorisierbarer ID weston.mccall@dodgit.com über eine HTTP-POST-Anfrage zu löschen, verwenden Sie die folgenden Parameter:
 
-* Benutzer = `weston.mccall@dodgit.com`
+* user = `weston.mccall@dodgit.com`
 * operation = `deleteUgc`
 
 ### UGC aus Adobe Analytics löschen {#delete-ugc-from-adobe-analytics}
@@ -81,7 +77,7 @@ Informationen zu von AEM Communities verwendeten Adobe Analytics-Variablenzuordn
 
 So löschen Sie beispielsweise das Profil eines Benutzers mit autorisierbarer ID `weston.mccall@dodgit.com` Verwenden Sie die folgenden POST über die HTTP-Anforderung:
 
-* Benutzer = `weston.mccall@dodgit.com`
+* user = `weston.mccall@dodgit.com`
 * operation = `deleteUser`
 
 >[!NOTE]

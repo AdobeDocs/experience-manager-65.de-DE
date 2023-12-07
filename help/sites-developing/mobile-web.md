@@ -1,17 +1,13 @@
 ---
 title: Mobiles Web
-seo-title: Mobile Web
 description: AEM bietet mehrere Tools, mit denen Sie Sites für Mobilgeräte entwickeln und Ihre Inhalte in mobile Anwendungen integrieren können
-seo-description: AEM provides several tools that enable you to develop sites for mobile devices and to integrate your content into mobile applications
-uuid: 283667fa-1891-4a93-b074-792a8e15efc1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: mobile-web
 content-type: reference
-discoiquuid: 20a0b2a8-7347-4875-a202-9cedd8e187ff
 legacypath: /content/docs/en/aem/6-0/develop/mobile
 exl-id: 309d256b-c67c-4df9-8851-b1ee3faa55ed
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 18%
@@ -30,7 +26,7 @@ Diese Seite sollte zusammen mit der [Mobilseite für Autoren](/help/sites-author
 
 ## Entwickeln von Websites für Mobilgeräte {#developing-web-sites-for-mobile}
 
-Entwickeln Sie Seitenvorlagen und Komponenten, die für die Anzeige auf Mobilgeräten optimiert sind. Entwickeln Sie Seiten, die ein responsives Layout verwenden, das sich an mehrere Bildschirmgrößen anpasst, oder entwickeln Sie Seiten, die für eine bestimmte Bildschirmgröße optimiert sind. Verwenden Sie die von AEM bereitgestellten Geräteemulatoren oder erstellen Sie Ihre eigenen Emulatoren für WSYWIG-Bearbeitung und -Vorschauanzeige:
+Entwickeln Sie Seitenvorlagen und -komponenten, die für die Anzeige auf Mobilgeräten optimiert sind. Entwickeln Sie Seiten, die ein responsives Layout verwenden, das sich an mehrere Bildschirmgrößen anpasst, oder entwickeln Sie Seiten, die für eine bestimmte Bildschirmgröße optimiert sind. Verwenden Sie die von AEM bereitgestellten Geräteemulatoren oder erstellen Sie Ihre eigenen Emulatoren für WSYWIG-Bearbeitung und -Vorschauanzeige:
 
 * [Erstellen von Gerätegruppenfiltern](/help/sites-developing/groupfilters.md)
 * [Responsives Design für Webseiten](/help/sites-developing/responsive.md)

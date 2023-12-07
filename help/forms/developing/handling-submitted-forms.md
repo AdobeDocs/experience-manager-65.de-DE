@@ -1,20 +1,16 @@
 ---
 title: Verarbeiten von übermittelten Formularen
-seo-title: Handling Submitted Forms
 description: Verwenden Sie den Forms-Service, um die übermittelten Daten abzurufen, die in ein interaktives Formular eingegeben wurden. Der Benutzer kann die Formulardaten in den Formaten XML, PDF und URL UTF-16 übermitteln.
-seo-description: Use the Forms service to retrieve the submitted data entered in an interactive form. The user can submit the form data in XML, PDF, and URL UTF-16 formats.
-uuid: 673b28f1-f023-4da8-a6a0-c5ff921c5f5d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 role: Developer
 exl-id: 419335b2-2aae-4e83-98ff-18e61b7efa9c
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2902'
+source-wordcount: '2894'
 ht-degree: 99%
 
 ---
@@ -237,7 +233,7 @@ Verarbeiten eines übermittelten Formulars mithilfe der Forms-API (Java):
 
 1. Verarbeiten der gesendeten Daten
 
-   * Wenn der Daten-Content-Typ `application/vnd.adobe.xdp+xml` oder `text/xml` ist, erstellen Sie eine Anwendungslogik zum Abrufen von XML-Datenwerten.
+   * Wenn der Dateninhalt vom Typ `application/vnd.adobe.xdp+xml` oder `text/xml` ist, erstellen Sie eine Anwendungslogik, um XML-Datenwerte abzurufen.
 
       * Erstellen Sie ein `com.adobe.idp.Document`-Objekt durch Aufrufen der `getOutputContent`-Methode des `FormsResult`-Objekts.
       * Erstellen Sie ein `java.io.InputStream`-Objekt, indem Sie den `java.io.DataInputStream`-Konstruktor aufrufen und das `com.adobe.idp.Document`-Objekt übergeben.
@@ -310,7 +306,7 @@ Verarbeiten Sie ein gesendetes Formular mit der Forms-API (Web-Dienst):
 
 1. Verarbeiten der gesendeten Daten
 
-   * Wenn der Daten-Content-Typ `application/vnd.adobe.xdp+xml` oder `text/xml` ist, erstellen Sie eine Anwendungslogik zum Abrufen von XML-Datenwerten.
+   * Wenn der Dateninhalt vom Typ `application/vnd.adobe.xdp+xml` oder `text/xml` ist, erstellen Sie eine Anwendungslogik, um XML-Datenwerte abzurufen.
 
       * Erstellen Sie ein `BLOB`-Objekt, indem Sie die `getOutputContent`-Methode des `FormsResult`-Objekts aufrufen.
       * Erstellen Sie ein Byte-Array, indem Sie die `getBinaryData`-Methode des `BLOB`-Objekts aufrufen.

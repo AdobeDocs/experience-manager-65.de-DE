@@ -1,27 +1,23 @@
 ---
 title: Optimieren von HTML5-Formularen
-seo-title: Optimizing HTML5 forms
-description: Sie können die Ausgabegröße von HTML5-Formularen optimieren.
-seo-description: You can optimize the output size of the HTML5 forms.
-uuid: 959f0b6a-9e4d-478a-afa8-4c39011fdf7a
+description: Sie können die Ausgabegröße der HTML5-Formulare optimieren.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 feature: Mobile Forms
 exl-id: 14309ebd-8d00-4ca5-b4ab-44d80d97d066
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '283'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 29%
 
 ---
 
 # Optimieren von HTML5-Formularen {#optimizing-html-forms}
 
-HTML5 forms gibt Formulare im HTML5-Format aus. Die Ausgabe hängt möglicherweise stark von Faktoren wie der Formulargröße und den Bildern im Formular ab. Die empfohlene Vorgehensweise zum Optimieren der Datenübertragung ist eine Komprimierung der HTML-Antwort auf dem Webserver, von dem die Anforderung stammt. Auf diese Weise können die Antwortgröße, der Netzwerkverkehr und die für das Streaming der Daten zwischen dem Server und den Clientgeräten erforderliche Zeit erheblich verringert werden.
+HTML5 forms rendert Formulare im HTML5-Format. Die resultierende Ausgabe kann abhängig von Faktoren wie der Formulargröße und den Bildern im Formular groß sein. Um die Datenübertragung zu optimieren, wird empfohlen, die HTML-Antwort mit dem Webserver zu komprimieren, von dem aus die Anforderung bereitgestellt wird. Dieser Ansatz reduziert die Antwortgröße, den Netzwerk-Traffic und die zum Streamen von Daten zwischen dem Server und den Clientgeräten erforderliche Zeit.
 
-In diesem Artikel werden die Schritte beschrieben, die erforderlich sind, um die Komprimierung für den 32-Bit-Apache-Webserver 2.0 mit JBoss zu aktivieren.
+In diesem Artikel werden die Schritte beschrieben, die zum Aktivieren der Komprimierung für den 32-Bit-Apache-Webserver 2.0 mit JBoss erforderlich sind.
 
 >[!NOTE]
 >
@@ -29,11 +25,11 @@ In diesem Artikel werden die Schritte beschrieben, die erforderlich sind, um die
 
 Installieren Sie die Apache-Webserver-Software für Ihr Betriebssystem:
 
-* (Windows) Laden Sie den Apache-Webserver von der Apache HTTP Server Project-Site herunter.
-* (Solaris 64-Bit) Laden Sie den Apache-Webserver von der Sunfreeware for Solaris-Website herunter.
-* (Linux) Auf Linux-Systemen ist der Apache-Webserver vorinstalliert.
+* Für Windows laden Sie den Apache-Webserver von der Apache HTTP Server Project-Site herunter.
+* Für Solaris 64 Bit laden Sie den Apache-Webserver von der Sunfreeware for Solaris-Website herunter.
+* Für Linux ist der Apache-Webserver auf einem Linux-System vorinstalliert.
 
-Apache kann mit JBoss mithilfe des HTTP- oder AJP-Protokolls kommunizieren.
+Apache kann mit JBoss über HTTP oder das AJP-Protokoll kommunizieren.
 
 1. Entfernen Sie den Kommentar für folgende Modulkonfigurationen in der Datei *APACHE_HOME/conf/httpd.conf*.
 
@@ -45,9 +41,9 @@ Apache kann mit JBoss mithilfe des HTTP- oder AJP-Protokolls kommunizieren.
 
    >[!NOTE]
    >
-   >Unter Linux ist das Standardverzeichnis für APACHE_HOME /etc/httpd/.
+   >Für Linux ist der Standardordner APACHE_HOME /etc/httpd/.
 
-1. Konfigurieren des Proxys auf Port 8080 von JBoss.
+1. Konfigurieren Sie den Proxy auf Port 8080 von JBoss.
 
    Fügen Sie in die Datei *APACHE_HOME/conf/httpd.conf* folgende Konfiguration ein.
 
@@ -61,9 +57,8 @@ Apache kann mit JBoss mithilfe des HTTP- oder AJP-Protokolls kommunizieren.
    >Wenn Sie einen Proxy verwenden, sind die folgenden Konfigurationsänderungen erforderlich:
    >
    >* Zugriff: *https://&lt;server>:&lt;port>/system/console/configMgr*
-   * Bearbeiten Sie die Konfiguration für Apache Sling Referrer Filter
-   * Fügen Sie unter „Hosts zulassen“ den Eintrag für den Proxyserver hinzuf.
-
+   * Bearbeiten Sie die Konfiguration für den Apache Sling Referrer Filter .
+   * Fügen Sie unter &quot;Hosts zulassen&quot;den Eintrag für den Proxyserver hinzu.
 
 1. Aktivieren Sie die Komprimierung.
 

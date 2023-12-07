@@ -1,21 +1,17 @@
 ---
 title: OSGi-Konfigurationseinstellungen
-seo-title: OSGi Configuration Settings
 description: In diesem Artikel werden die OSGi-Konfigurationseinstellungen beschrieben (aufgeführt nach Bundle), die für die Projektimplementierung relevant sind. Die Liste dient als Leitlinie und ist nicht vollständig.
-seo-description: This article details the OSGi configuration settings (listed according to bundle) that are relevant to project implementation. The list acts as a guideline and it is not exhaustive.
-uuid: 192d3287-ec99-403b-bab0-45721e4e3abd
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3429'
-ht-degree: 99%
+source-wordcount: '3360'
+ht-degree: 98%
 
 ---
 
@@ -212,7 +208,7 @@ Siehe [AEM-Protokollierung](/help/sites-deploying/configure-logging.md) und [Sli
 
 * **Virtuelle URLs** zum Definieren der Vanity-URL-Zuweisungen.
 
-* **URL-Zuordnungen** zum Definieren von Aliassen. Zum Beispiel von `/content` zu `/`.
+* **URL-Zuordnungen** , um Aliase zu definieren. Beispiel: von `/content` nach `/`.
 
 * **Mapping Location**, die Zuordnungskonfiguration, die in `/etc/map` externalisiert ist.
 
@@ -339,7 +335,7 @@ Verschiedene Eigenschaften können konfiguriert werden:
 * **Pfad**
 Der Pfad, für den dieser Authentifizierungs-Handler aktiv ist. Wenn dieser Parameter nicht angegeben wird, ist der Authentifizierungs-Handler deaktiviert. Beispielsweise wird beim Pfad / der Authentifizierungs-Handler für das gesamte Repository verwendet.
 
-* **Service Ranking** Der Rangfolge-Wert für den OSGi-Framework-Dienst gibt die Reihenfolge an, in der dieser Dienst aufgerufen wird. Dieser Wert ist ein `int`-Wert, wobei höhere Werte eine höhere Priorität angeben.
+* **Service Ranking** Der Rangfolge-Wert für den OSGi-Framework-Dienst gibt die Reihenfolge an, in der dieser Dienst aufgerufen wird. Dieser Wert ist ein `int` -Wert, bei dem höhere Werte eine höhere Priorität angeben.
 Der Standardwert ist `0`.
 
 * **Kopfzeilen-Namen**

@@ -5,13 +5,12 @@ contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 1%
+source-wordcount: '726'
+ht-degree: 0%
 
 ---
 
@@ -169,8 +168,8 @@ Um den gemeinsamen MongoDB-Speicher zu testen und zu überprüfen, posten Sie ei
 
    * Navigieren Sie zum Solr-Dashboard: [http://localhost:8983/solr/](http://localhost:8983/solr/).
    * Benutzer `core selector` auswählen `collection1`.
-   * Klicken Sie auf `Query`.
-   * Klicken Sie auf `Execute Query`.
+   * Auswählen `Query`.
+   * Auswählen `Execute Query`.
 
    ![ugc-solr](assets/ugc-solr.png)
 

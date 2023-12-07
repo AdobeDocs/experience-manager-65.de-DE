@@ -1,19 +1,15 @@
 ---
 title: Hinzufügen von benutzerdefinierten Eigenschaften zu Correspondence Management-Assets
-seo-title: Add custom properties to Correspondence Management assets
 description: Erfahren Sie, wie Sie benutzerdefinierte Eigenschaften zu Correspondence Management-Assets hinzufügen.
-seo-description: Learn how to add custom properties to Correspondence Management assets.
-uuid: 4716e181-d3ea-424b-9544-376cc649bce7
 content-type: reference
 topic-tags: correspondence-management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 79437b96-7b57-4581-b7e7-fcaedc3d05de
 docset: aem65
 feature: Correspondence Management
 exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '4428'
+source-wordcount: '4431'
 ht-degree: 54%
 
 ---

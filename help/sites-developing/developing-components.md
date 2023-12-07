@@ -1,21 +1,17 @@
 ---
 title: Entwickeln von AEM-Komponenten
-seo-title: Developing AEM Components
 description: AEM-Komponenten werden verwendet, um den Inhalt, den Sie auf Ihren Web-Seiten bereitstellen, zu speichern, zu formatieren und zu rendern.
-seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
-uuid: 1f39daa6-7277-45a2-adcc-74b58c93b8e4
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3447'
-ht-degree: 91%
+source-wordcount: '3246'
+ht-degree: 90%
 
 ---
 
@@ -398,7 +394,7 @@ Dieses Verhalten und die erforderliche Beziehung zwischen Asset und Komponente k
    * `assetMimetype`:
 
       * Typ: `String`
-      * Wert: der mime-Typ des zugehörigen Assets; zum Beispiel, `image/*`
+      * Wert: der MIME-Typ des zugehörigen Assets, z. B. `image/*`
 
    * `droptarget`:
 
@@ -455,7 +451,7 @@ Wenn Sie eine Komponente, die für die Verwendung mit der klassischen Benutzerob
 
 * Komponenten
 
-   * Migrieren Sie [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code)-Code, der klassische benutzeroberflächespezifische Funktionen verwendet
+   * Migrieren [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) Code, der für die klassische Benutzeroberfläche spezifische Funktionen verwendet
    * RTE-Plug-in, für weitere Informationen siehe [Konfigurieren des Rich-Text-Editors](/help/sites-administering/rich-text-editor.md).
    * [Migrieren Sie `cq:listener`-Code](#migrating-cq-listener-code), der Funktionen verwendet, die für die klassische Benutzeroberfläche spezifisch sind
 

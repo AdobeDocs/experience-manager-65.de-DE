@@ -1,13 +1,11 @@
 ---
 title: AEM 6.5-Mobilbenutzeranleitung
-seo-title: AEM 6.5 Mobile User Guide
 description: Profitieren Sie von AEM Unterstützung zum Erstellen und Verwalten von Inhalten für mobile Apps. Hier erhalten Sie eine Einführung in und erfahren, wie Sie die On-Demand Services App und Adobe PhoneGap Enterprise erstellen, entwickeln und verwalten.
-seo-description: Describes how to create and manage content for mobile applications.
 exl-id: 3531d8ea-614d-465a-8b4a-e3e3f3461e94
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 81%
+source-wordcount: '314'
+ht-degree: 78%
 
 ---
 

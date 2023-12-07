@@ -1,21 +1,17 @@
 ---
 title: Aktivieren der Protokollierung für HTML5-Formulare
-seo-title: Enable logging for HTML5 forms
-description: Das Dienstprogramm der Protokollfunktion aktiviert die Protokollierung von Formularen und hilft beim Debugging von Problemen mit Formularen.
-seo-description: The logger utility enables logging for a form and helps you debug form-related issues.
-uuid: 322306ba-8ad7-463d-8a9d-4cea5a0c4b55
+description: Das Protokollfunktionen-Dienstprogramm ermöglicht die Protokollierung für ein Formular und hilft Ihnen beim Debuggen von formularbezogenen Problemen.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 feature: Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
-workflow-type: ht
-source-wordcount: '626'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '629'
+ht-degree: 69%
 
 ---
 
@@ -43,12 +39,12 @@ Führen Sie die folgenden Schritte aus, um serverseitige Protokolle zu konfiguri
 
 1. Ändern Sie **Logger** in **HTMLFormsPerfLogger**. Klicken Sie auf **Speichern**.
 
-## Konfigurieren der Client-Protokollierung {#configuring-client-logging}
+## Client-Protokollierung konfigurieren {#configuring-client-logging}
 
-Um die clientseitige Protokollierung in HTML5-Formularen zu aktivieren, können Sie die folgenden Verfahren verwenden:
+Sie können die folgenden Methoden verwenden, um die clientseitige Protokollierung in HTML5-Formularen zu aktivieren:
 
 * Mithilfe des Anforderungsparameters `log`
-* Mithilfe des CQ Configuration Managers
+* Verwenden von CQ Configuration Manager
 
 ### Aktivieren der Protokollierung mithilfe des Anforderungsparameters {#enabling-logging-using-request-parameter}
 
@@ -68,7 +64,7 @@ Die Protokollkonfiguration besteht aus der Protokollebene und der Protokollfunkt
   </tr>
   <tr>
    <td>1</td>
-   <td>Protokolle werden an den Browser <strong>Console</strong> weitergeleitet</td>
+   <td>Protokolle werden an den Browser weitergeleitet <strong>Konsole</strong></td>
   </tr>
   <tr>
    <td>2</td>
@@ -149,7 +145,7 @@ Die Protokollkonfiguration besteht aus der Protokollebene und der Protokollfunkt
 
 #### Protokollkonfiguration {#log-configuration}
 
-In der Protokoll-URL wird der Abfragezeichenfolgen-Parameter zur Protokollkonfiguration wie folgt definiert:
+In der Protokoll-URL wird der Abfragezeichenfolgenparameter für die Protokollkonfiguration wie folgt definiert:
 
 `{destination}-{a level}-{b level}-{c level}`
 
@@ -170,7 +166,7 @@ Beispiel:
 
 >[!NOTE]
 >
->Die Standardprotokollebene für jede Protokollkategorie – a (xfa), b (xfaView) und c (xfaPerf) – ist 2 (ERROR). Entsprechend lauten bei der Protokollkonfiguration 2-b6 die Protokollebenen für die verschiedenen Kategorien:
+>Die standardmäßige Protokollebene für jede Protokollkategorie a (xfa), b (xfaView) und c (xfaPerf) ist 2 (ERROR). Entsprechend lauten für die Protokollkonfiguration 2-b6 die Protokollebenen für verschiedene Kategorien:
 >a (xfa): 2 (FEHLER der Standardebene)
 >b (xfaView): 6 (vom Benutzer angegebenes TRACE)
 >a (xfaPerf): 2 (FEHLER der Standardebene)
@@ -180,7 +176,7 @@ Beispiel:
 Wenn Sie Configuration Manager zur Aktivierung der Protokollierung verwenden, werden für jede Render-Anforderung so lange Protokolle generiert, bis die Protokollierung wieder deaktiviert wird.
 
 1. Melden Sie sich bei CQ Configuration Manager unter `https://'[server]:[port]'/system/console/configMgr` an und melden Sie sich mit Administratorberechtigungen an.
-1. Suchen Sie nach **Mobile Forms Configurations** und klicken Sie darauf.
+1. Suchen Sie nach und klicken Sie auf **Mobile Forms-Konfigurationen**.
 1. Geben Sie im Textfeld „Debug Options“ die Protokollkonfigurationen ein, wie sie im letzten Abschnitt beschrieben sind, z. B. **2a4-b5-c6**
 
    ![Formularkonfiguration](assets/forms_configuration.png)
@@ -189,14 +185,14 @@ Wenn Sie Configuration Manager zur Aktivierung der Protokollierung verwenden, we
 
 ## Hochladen von Protokollen {#uploading-logs}
 
-Wenn als Ziel 1 eingestellt ist, werden alle clientseitigen Skriptprotokollmeldungen an die Konsole geleitet. Wenn ein Administrator diese Protokolle zusammen mit dem Server-Protokollen benötigt, setzen Sie die Zielebene auf 2. Auf dieser Ebene werden alle Protokolle in einem JS-Objekt auf Client-Seite erfasst. Wenn ein Formular mit einem Standardprofil gerendert wird, wird in der Symbolleiste links neben der Schaltfläche **Vorhandene Felder hervorheben** eine Schaltfläche **Protokolle senden** angezeigt. Wenn der Benutzer auf den Link klickt, werden alle erfassten Protokolle an den Server geleitet und in der konfigurierten Fehlerprotokolldatei auf dem Server protokolliert.
+Wenn das Ziel auf 1 gesetzt ist, werden alle Protokollmeldungen des Client-Skripts an die Konsole weitergeleitet. Wenn ein Administrator diese Protokolle zusammen mit dem Server-Protokollen benötigt, setzen Sie die Zielebene auf 2. Auf dieser Ebene werden alle Protokolle in einem JS-Objekt auf Client-Seite erfasst. Wenn ein Formular mit einem Standardprofil gerendert wird, wird in der Symbolleiste links neben der Schaltfläche **Vorhandene Felder hervorheben** eine Schaltfläche **Protokolle senden** angezeigt. Wenn der Benutzer auf den Link klickt, werden alle erfassten Protokolle an den Server geleitet und in der konfigurierten Fehlerprotokolldatei auf dem Server protokolliert.
 
 Standardmäßig werden alle Daten der Datei „error.log“ im Ordner „/crx-repository/logs/“ hinzugefügt.
 
-Speicherort und Namen der Protokolldatei ändern:
+So ändern Sie Speicherort und Namen der Protokolldatei:
 
 1. Melden Sie sich bei Configuration Manager als Admin an. Die Standard-URL von Configuration Manager lautet `https://'[server]:[port]'/system/console/configMgr`.
-1. Klicken Sie auf **Apache Sling Logging Logger-Konfiguration**. Folgendes Dialogfeld wird angezeigt.
+1. Klicks **Apache Sling Logging Logger-Konfiguration**. Folgendes Dialogfeld wird angezeigt.
 
    ![logconfig-1](assets/logconfig-1.png)
 

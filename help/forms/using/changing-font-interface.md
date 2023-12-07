@@ -1,31 +1,27 @@
 ---
 title: Ändern der Schriftart auf der Benutzeroberfläche
-seo-title: Changing the font on the interface
-description: Die Schriftarten auf der Benutzeroberfläche selektiv ändern
-seo-description: How to change the fonts on the user interface selectively.
-uuid: 421fdd24-441a-4092-8c52-f3ed3d5d5671
+description: So ändern Sie die Schriftarten in der Benutzeroberfläche selektiv.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 9fcb80b4-cbc2-48a5-afd1-4f3bc50bc503
 docset: aem65
 exl-id: 226f70f0-8eb4-4724-b496-5801dc6b436f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '276'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 47%
 
 ---
 
 # Ändern der Schriftart auf der Benutzeroberfläche{#changing-the-font-on-the-interface}
 
-Sie können die Schriftart ändern, die in AEM Forms Workspace angezeigt wird. Schriftarten, die in einem bestimmten Bereich der Benutzeroberfläche verwendet werden, werden im entsprechenden Abschnitt des Stylesheets definiert. Sie können die Schriftarten auf der Benutzeroberfläche selektiv ändern.
+Sie können die in AEM Forms Workspace angezeigte Schriftart ändern. Schriftarten, die in einem bestimmten Bereich der Benutzeroberfläche verwendet werden, werden im entsprechenden Abschnitt des Stylesheets definiert. Sie können die Schriftarten in der Benutzeroberfläche selektiv ändern.
 
 Führen Sie die Anweisungen unter [Generische Schritte zur Anpassung von AEM Forms Workspace](../../forms/using/generic-steps-html-workspace-customization.md) aus. Befolgen Sie bei Bedarf außerdem die Schritte zum Anpassen von CSS, HTML oder beidem.
 
 1. Ändern Sie die Schriftfamilie in einem vorhandenen Stil oder fügen Sie sie hinzu.
-1. Ändern Sie die Schriftfamilie inline für das HTML-Element oder fügen Sie sie hinzu.
+1. Ändern oder fügen Sie die Schriftfamilie inline für das HTML-Element hinzu.
 1. Fügen Sie einen Stil hinzu und verwenden Sie ihn für das HTML-Element.
 
 Um beispielsweise die Schriftart für den Anker-Text in der Navigationsleiste oben in Courier New zu ändern, führen Sie die folgenden Schritte aus:
@@ -33,7 +29,7 @@ Um beispielsweise die Schriftart für den Anker-Text in der Navigationsleiste ob
 1. Melden Sie sich bei CRXDE Lite an, indem Sie auf `https://'[server]:[port]'/lc/crx/de/index.jsp` zugreifen.
 1. Führen Sie einen der folgenden Schritte aus:
 
-   1. Um die Schriftfamilie in einem vorhandenen Stil zu ändern, fügen Sie Folgendes in der Datei „newStyle.css“ bei „/apps/ws/css“ hinzu.
+   1. Um die Schriftfamilie in einem vorhandenen Stil zu ändern, fügen Sie Folgendes in der Datei newStyle.css unter /apps/ws/css hinzu.
 
       ```css
       #topnav a {
@@ -54,7 +50,7 @@ Um beispielsweise die Schriftart für den Anker-Text in der Navigationsleiste ob
 
       Öffnen Sie die Datei „/apps/ws/js/registry.js“ zur Bearbeitung und ersetzen Sie `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` durch `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
 
-   1. Um einen Stil hinzuzufügen, der die Schriftfamilie definiert, fügen Sie Folgendes in der Datei „newStyle.css“ bei „/apps/ws/css“ hinzu.
+   1. Um einen Stil hinzuzufügen, der die Schriftfamilie definiert, fügen Sie Folgendes in der Datei newStyle.css unter /apps/ws/css hinzu.
 
       ```css
       .myNewFontStyle a {
@@ -62,7 +58,7 @@ Um beispielsweise die Schriftart für den Anker-Text in der Navigationsleiste ob
       }
       ```
 
-      Um die Schriftfamilie für das HTML-Element inline hinzuzufügen, fügen Sie Folgendes in der Datei „appnavigation.html“ bei „/apps/ws/js/runtime/templates“ hinzu.
+      Um die Schriftfamilie für das HTML-Element inline hinzuzufügen, fügen Sie Folgendes in der Datei &quot;appnavigation.html&quot;unter /apps/ws/js/runtime/templates hinzu.
 
       ```jsp
       <div id="topnav" class="myNewFontStyle">
@@ -75,7 +71,7 @@ Um beispielsweise die Schriftart für den Anker-Text in der Navigationsleiste ob
       </div>
       ```
 
-1. Starten Sie Workspace neu und löschen Sie den Browser-Cache, damit die Änderungen sichtbar werden.
+1. Starten Sie den Arbeitsbereich neu und löschen Sie den Browsercache, damit die Änderungen sichtbar sind.
 
 ![change_font_before](assets/change_font_before.png)
 

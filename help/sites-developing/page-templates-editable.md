@@ -1,15 +1,13 @@
 ---
 title: Bearbeitbare Seitenvorlagen
 description: Es wurden bearbeitbare Vorlagen eingeführt, die es auch Nicht-Entwickelnden ermöglichen, Vorlagen zu erstellen und zu bearbeiten, Vorlagen bereitzustellen, die eine dynamische Verbindung zu allen daraus erstellten Seiten beibehalten, und die Seitenkomponente allgemeiner zu gestalten.
-uuid: 61791960-fdef-4e49-878a-11fdf1d4f0ab
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '3186'
 ht-degree: 96%

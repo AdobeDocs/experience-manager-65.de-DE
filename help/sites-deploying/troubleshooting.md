@@ -1,16 +1,14 @@
 ---
-title: Fehlerbehebung Installationsprobleme mit AEM
+title: Fehlerbehebung bei Installationsproblemen mit AEM
 description: In diesem Artikel werden einige der Installationsprobleme behandelt, auf die Sie möglicherweise bei AEM stoßen.
-uuid: 2ca898c3-b074-4ccd-a383-b92f226e6c14
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: ht
-source-wordcount: '1171'
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '1160'
 ht-degree: 100%
 
 ---
@@ -57,7 +55,7 @@ Gehen Sie zur Fehlerbehebung wie folgt vor:
 * Probieren Sie ein Kontextmenü (in der Regel Rechtsklick) für den AEM WCM-Schnellstart aus und wählen Sie „Öffnen mit…“
 * Überprüfen Sie, ob Java™ oder Sun Java™ aufgelistet ist, und versuchen Sie, AEM WCM damit auszuführen. Wenn mehrere Java™-Versionen installiert sind, wählen Sie die unterstützte Version aus.
 
-   Wenn dieser Schritt erfolgreich ist und Ihr Betriebssystem eine Option anbietet, das ausgewählte Programm immer zum Ausführen der .jar-Dateien zu verwenden, aktivieren Sie sie. Doppelklicken sollte von nun an funktionieren.
+  Wenn dieser Schritt erfolgreich ist und Ihr Betriebssystem eine Option anbietet, das ausgewählte Programm immer zum Ausführen der .jar-Dateien zu verwenden, aktivieren Sie sie. Doppelklicken sollte von nun an funktionieren.
 
 * Manchmal hilft eine Neuinstallation der unterstützten Java™-Version dabei, die korrekte Zuordnung wiederherzustellen.
 * Sie können CRX immer mit der Befehlszeile oder Start-/Stopp-Skripten ausführen, wie zuvor in diesem Dokument beschrieben.

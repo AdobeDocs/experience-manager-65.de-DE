@@ -1,13 +1,11 @@
 ---
 title: AEM 6.5-Entwickleranleitung
-seo-title: AEM 6.5 Developing User Guide
 description: Erfahren Sie, wie Sie Ihre AEM-Instanz aufbauen. Erfahren Sie mehr über die Plattform und die Komponenten und finden Sie Informationen zu Entwicklungs-Tools und Personalisierung.
-seo-description: Covers how to build out your AEM instance.
 exl-id: 4413f5e8-7e52-4ea7-8be3-5717b780a6e2
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
-workflow-type: ht
-source-wordcount: '341'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +24,7 @@ Erfahren Sie, wie Sie Ihre AEM-Instanz aufbauen. Erfahren Sie mehr über die Pla
 
 | Benutzerhandbuch | Beschreibung |
 |--- |---|
-| [Versionshinweise](/help/release-notes/home.md) | Enthält wichtige Informationen zur neuesten Version von AEM, einschließlich neuer Funktionen, unterstützter Plattformen, veralteter und entfernter Funktionen und bekannter Probleme. |
+| [Versionshinweise](/help/release-notes/home.md) | Enthält wichtige Informationen zur neuesten Version von AEM, einschließlich neuer, unterstützter Plattformen, veralteter und entfernter Funktionen und bekannter Probleme. |
 | [Benutzerhandbuch für Assets](/help/assets/home.md) | Erfahren Sie, wie Sie digitale Assets erstellen, verwalten, bereitstellen und optimieren können. |
 | [Forms Benutzerhandbuch](/help/forms/home.md) | In diesem Handbuch wird beschrieben, wie Sie digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren. |
 | [Communities-Benutzeranleitung](/help/communities/home.md) | Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Community-Funktionen. |

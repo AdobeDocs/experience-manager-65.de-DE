@@ -1,20 +1,16 @@
 ---
 title: Liste der nach dem Upgrade deinstallierten veralteten Bundles
-seo-title: List of Obsolete Bundles Uninstalled After the Upgrade
-description: Eine Liste der Bundles, die beim Upgrade auf AEM 6.3 automatisch deinstalliert werden.
-seo-description: A list detailing the bundles that are automatically uninstalled when upgrading to AEM 6.3.
-uuid: b015e857-31c1-4982-b71c-f3201b49ec8e
+description: Eine Liste mit den Bundles, die bei der Aktualisierung auf AEM 6.3 automatisch deinstalliert werden.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
-discoiquuid: 797a6f3b-d2a8-4835-81ab-a1602677417f
 feature: Upgrading
 exl-id: 0defbdc7-d414-4662-a31f-88c8d63d68eb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '167'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 27%
 
 ---
 
@@ -29,8 +25,7 @@ Beim Upgrade auf AEM 6.3 werden folgende Bundles automatisch deinstalliert, je n
 **AEM 6.1:**
 
 * org.eclipse.equinox.region, Version 1.1.0.v20120522-1841, aktiv
-* org.apache.sling.installer.factory.subsystems, 
-Version 1.0.0, aktiv
+* org.apache.sling.installer.factory.subsystems, Version 1.0.0, aktiv
 * org.apache.aries.subsystem.core, Version 1.2.0, aktiv
 * org.apache.aries.subsystem.api, Version 1.1.0, aktiv
 * org.apache.felix.resolver, Version 1.0.0, aktiv
@@ -49,8 +44,8 @@ Version 1.0.0, aktiv
 * com.adobe.granite.installer.patch, Version 0.4.0, aktiv
 * biz.aQute.bndlib, Version 1.43.0, aktiv
 * com.day.cq.cq-jobs-core, Version 5.4.0, aktiv
-* com.day.cq.cq- opensocial, Version 5.7.2, aktiv
-* com.day.cq.cq- pinauthhandler, Version 1.1.2, aktiv
+* com.day.cq.cq-opensocial, Version 5.7.2, aktiv
+* com.day.cq.cq-pinauthhandler, Version 1.1.2, aktiv
 * com.day.cq.dam.commons.nekohtml, Version 0.9.5, aktiv
 * com.day.cq.mcm.cq-mcm-silverpop-integration, Version 1.1.6, aktiv
 * com.day.cq.wcm.cq-wcm-mobile-phonegap-build-integration, Version 5.7.18, aktiv
@@ -58,13 +53,13 @@ Version 1.0.0, aktiv
 **CQ 5.6.1:**
 
 * biz.aQute.bndlib, Version 1.43.0, aktiv
-* com.day.cq.cq- pinauthhandler, Version 1.0.0, aktiv
+* com.day.cq.cq-pinauthhandler, Version 1.0.0, aktiv
 * com.day.cq.dam.commons.nekohtml, Version 0.9.5, aktiv
 * com.day.crx.crxde-support, Version 2.3.14, installiert
 * com.day.cq.mcm.cq-mcm-silverpop-integration, Version 1.0.2, aktiv
 
 **CQ 5.6.0:**
 
-* com.day.cq.cq- pinauthhandler, Version 1.0.0, aktiv
+* com.day.cq.cq-pinauthhandler, Version 1.0.0, aktiv
 * com.day.cq.dam.commons.nekohtml, Version 0.9.5, aktiv
 * com.day.crx.crxde-support, Version 2.3.14, installiert

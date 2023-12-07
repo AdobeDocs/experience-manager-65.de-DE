@@ -1,25 +1,21 @@
 ---
 title: Konfigurieren des LDAP-Bindungskennworts
-seo-title: Configure the LDAP bind password
 description: Erfahren Sie, wie Sie das Feld für das Bindungskennwort konfigurieren, bevor Sie die Konfigurationsdatei in ein anderes System importieren.
-seo-description: Learn how to configure the bind password field before you import the configuration file into another system.
-uuid: 1ab1907c-8b55-4b6f-bd5b-49f22d78b8a8
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 165b3950-b03f-4848-8361-ffb0a26d2658
 exl-id: c72794f5-8767-409e-a1df-91a8fdc54d18
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 100%
+ht-degree: 60%
 
 ---
 
 # Konfigurieren des LDAP-Bindungskennworts{#configure-the-ldap-bind-password}
 
-Um Sicherheitsrisiken zu vermeiden, ist das Feld für das Bindungskennwort in der exportierten Konfigurationsdatei („config.xml“) nicht konfiguriert. Konfigurieren Sie dieses Kennwort unbedingt, bevor Sie die Konfigurationsdatei in ein anderes System importieren. Dieses Kennwort setzt ein bestehendes, in der Datenbank gespeichertes Kennwort außer Kraft. Ein Null-Kennwort setzt einen vorhandenen Nicht-Null-Kennwortwert nicht außer Kraft.
+Um Sicherheitsrisiken zu vermeiden, ist das Feld für das Bindungskennwort in der exportierten Konfigurationsdatei (config.xml) nicht konfiguriert. Bevor Sie die Konfigurationsdatei in ein anderes System importieren, müssen Sie dieses Kennwort konfigurieren. Dieses Kennwort setzt ein vorhandenes Kennwort außer Kraft, das in der Datenbank gespeichert ist. Ein Null-Kennwort überschreibt keinen vorhandenen Kennwortwert, der nicht null ist.
 
 1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Benutzerverwaltung“ > „Konfiguration“ > „Konfigurationsdateien importieren und exportieren“.
 1. Um die aktuellen Konfigurationseinstellungen in eine Datei zu exportieren, klicken Sie auf „Exportieren“ und speichern die Konfigurationsdatei an einem anderen Speicherort.

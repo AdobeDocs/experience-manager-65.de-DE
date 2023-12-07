@@ -1,20 +1,16 @@
 ---
 title: Optimieren der Leistung des Forms-Service
-seo-title: Optimizing the Performance of theForms Service
 description: Legen Sie Laufzeitoptionen beim Rendern eines Formulars fest und speichern Sie XDP-Dateien im Repository, um die Leistung des Forms-Service zu optimieren.
-seo-description: Set run-time options when rendering a form and store XDP files in the repository to optimize the performance of the Forms service.
-uuid: 9040c09a-e5d0-432b-b1c5-ad46ab57c4fc
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 9f883483-b81e-42c6-a4a1-eb499dd112e7
 role: Developer
 exl-id: 5a746c6c-bf6e-4b25-ba7c-a35edb1f55f3
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1424'
 ht-degree: 96%
 
 ---
@@ -110,7 +106,7 @@ Rendern eines Formulars mit optimierter Leistung mithilfe der Forms API (Java):
    * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document`-Objekt.
    * Ein Objekt vom Typ `PDFFormRenderSpec`, das Laufzeitoptionen speichert, um die Leistung zu verbessern.
    * Ein Objekt vom Typ `URLSpec`, das URI-Werte enthält, die für den Forms-Service erforderlich sind.
-   * Ein `java.util.HashMap`-Objekt, in dem Dateianlagen gespeichert werden. Dies ist ein optionaler Parameter, für den Sie `null` angeben können, wenn Sie keine Dateien an das Formular anhängen möchten.
+   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, für den Sie `null` angeben können, wenn Sie keine Dateien an das Formular anhängen möchten.
 
    Die Methode `renderPDFForm` gibt ein `FormsResult`-Objekt zurück, das einen Formulardaten-Stream enthält, der in den Client-Webbrowser geschrieben werden muss.
 
@@ -158,7 +154,7 @@ Wiedergeben eines Formulars mit optimierter Leistung mithilfe der Forms-API (Web
    * Ein `BLOB`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie `null`.
    * Ein `PDFFormRenderSpecc`-Objekt, das Laufzeitoptionen speichert.
    * Ein `URLSpec`-Objekt, das URI-Werte enthält, die für den Forms-Service erforderlich sind.
-   * Ein `java.util.HashMap`-Objekt, in dem Dateianlagen gespeichert werden. Dies ist ein optionaler Parameter. Sie können `null` festlegen, wenn Sie keine Dateien an das Formular anhängen möchten.
+   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter. Sie können `null` festlegen, wenn Sie keine Dateien an das Formular anhängen möchten.
    * Ein leeres `com.adobe.idp.services.holders.BLOBHolder`-Objekt, das von der Methode gefüllt wird. Damit wird das wiedergegebene PDF-Formular gespeichert.
    * Ein leeres `javax.xml.rpc.holders.LongHolder`-Objekt, das von der Methode gefüllt wird. (Dieses Argument speichert die Anzahl der Seiten im Formular).
    * Ein leeres `javax.xml.rpc.holders.StringHolder`-Objekt, das von der Methode gefüllt wird. (Dieses Argument speichert den Gebietsschemawert).

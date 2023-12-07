@@ -1,19 +1,15 @@
 ---
 title: FFmpeg für Communities
-seo-title: FFmpeg for Communities
 description: Installieren und Konfigurieren von FFmpeg für Communities
-seo-description: How to install and configure FFmpeg for Communities
-uuid: ef2f821c-70e9-4889-a8d7-a93b10a1d428
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 role: Admin
 exl-id: dbe28334-3b38-4362-b4f8-e0630e634503
-source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '251'
 ht-degree: 1%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 1%
 
 ## Übersicht {#overview}
 
-FFmpeg ist eine Lösung für das Konvertieren und Streaming von Audio und Video und wird, falls installiert, für die ordnungsgemäße Transkodierung von [Video-Assets](../../help/sites-authoring/default-components-foundation.md#video).
+FFmpeg ist eine Lösung für das Konvertieren und Streaming von Audio und Video und wird, falls installiert, für die ordnungsgemäße Transkodierung von [Videoassets](../../help/sites-authoring/default-components-foundation.md#video).
 
 ## Installieren von FFmpeg {#installing-ffmpeg}
 
@@ -39,7 +35,7 @@ FFmpeg sollte auf den Servern installiert sein, auf denen das AEM gehostet wird 
 
    Sie sollten in der Lage sein, FFmpeg aus einem beliebigen Verzeichnis in Ihrem System auszuführen.
 
-   * Beispiel: `ffmpeg -version`.
+   * Zum Beispiel: `ffmpeg -version`.
 
 ## FFmpeg Transcoding Service konfigurieren {#configure-ffmpeg-transcoding-service}
 
@@ -54,15 +50,15 @@ So ändern Sie die [!UICONTROL DAM-Update-Asset] -Workflow und in diesem Beispie
 * Suchen **[!UICONTROL DAM-Update-Asset]**.
 * Doppelklicken Sie auf , um den Workflow zur Bearbeitung in der klassischen Benutzeroberfläche zu öffnen.
 
-   Ergebnisort: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
+  Ergebnisort: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
 * Doppelklicken Sie auf die **[!UICONTROL FFmpeg-Transkodierung]** Schritt , um auf das Dialogfeld Schritt-Eigenschaften zuzugreifen.
 * Unter dem **[!UICONTROL Prozess]** tab:
 
    * **[!UICONTROL Werbemittel]**: Löschen Sie alle Einträge, um die Transkodierung von Standardwerten zu deaktivieren: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
-   ![configure-ffmpeg](assets/configure-ffmpeg.png)
+  ![configure-ffmpeg](assets/configure-ffmpeg.png)
 
 * Auswählen **[!UICONTROL OK]** zum Schließen der `Step Properties` angezeigt.
 
-* Auswählen **[!UICONTROL Speichern]** , um `DAM Update Asset` Arbeitsablauf.
+* Auswählen **[!UICONTROL Speichern]** , um die `DAM Update Asset` Arbeitsablauf.

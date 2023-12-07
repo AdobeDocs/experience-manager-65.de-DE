@@ -1,32 +1,28 @@
 ---
 title: Die nächste Version …
-seo-title: The next release...
-description: Es sind fast immer nachfolgende Versionen vorgesehen, deren Einführung ggf. sogar bereits während der Schlussphase der laufenden Implementierung beginnt.
-seo-description: A subsequent release is nearly always foreseen, and can even start during the final stages of the current implementation
-uuid: 6ae213fb-1bd3-464c-bfd0-14ddceaee11e
+description: Eine nachfolgende Version ist fast immer vorgesehen und kann sogar in den letzten Phasen der aktuellen Implementierung beginnen
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: a7be7d33-9d06-4d07-b7a0-e23251e26cb8
 exl-id: d38b77ae-93be-4258-8827-6178097395d5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 100%
+ht-degree: 3%
 
 ---
 
 # Die nächste Version …{#the-next-release}
 
-Die Umsetzung eines Projekts ist meist nicht das Ende des Prozesses. Es sind fast immer nachfolgende Versionen vorgesehen, deren Einführung ggf. sogar bereits während der Schlussphase der laufenden Implementierung beginnt.
+Die Implementierung eines Projekts ist selten das Ende des Prozesses. Eine nachfolgende Version ist (fast) immer vorgesehen und kann sogar in den letzten Phasen der aktuellen Implementierung beginnen.
 
-In jedem Fall ist es ratsam, sich wie folgt auf die nächste Version vorzubereiten:
+Auf jeden Fall kann es nützlich sein, die nächste Version zu planen, indem Sie:
 
-* Dokumentieren und speichern Sie Ihre Testfälle sorgfältig, damit sie referenziert oder im besten Fall wiederverwendet werden können.
-* Entwickeln Sie Tests, die als Regressionstests für die nächste Version verwendet werden können.
-* Sammeln Sie jegliche Informationen zu den Erfahrungen, die Sie oder der Kunde durch den Testprozesses gewonnen haben.
+* Führen Sie eine sorgfältige Dokumentation durch und speichern Sie Ihre Testfälle, damit sie referenziert oder hoffentlich wiederverwendet werden können.
+* Entwicklung von Tests, die als Regressionstests für die nächste Version verwendet werden können.
+* Erfassen aller Informationen, die Sie oder der Kunde durch die Erfahrung des Testprozesses gewonnen haben.
 
-   Dies kann dabei helfen, Anforderungen für die nächste Version zu formulieren, beispielsweise weil die Erfahrung des Kunden im Umgang mit dem Produkt während des Tests zugenommen hat.
+  Dies kann zu Formulareigenschaften für die nächste Version beitragen, z. B. da das Kundenerlebnis des Produkts während des Tests zugenommen hat.
 
-Da es sich bei der nächsten Version um eine Migration handeln könnte, sind alle damit zusammenhängenden Informationen nützlich.
+Da es sich bei der nächsten Version um eine Migration handeln kann, sind alle damit verbundenen Informationen nützlich.

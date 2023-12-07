@@ -1,16 +1,14 @@
 ---
 title: Anwenden von Workflows auf Seiten
 description: Workflows können entweder über die Websites-Konsole oder beim Bearbeiten einer Seite über den Sidekick gestartet werden.
-uuid: 55f6f1d7-da54-4732-b9ff-b7479622db51
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 22712b73-90f2-4329-b32f-dbb7ce802d1d
 exl-id: d8b604c5-a6da-47c4-9422-b519e224c7ca
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: ht
-source-wordcount: '253'
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '249'
 ht-degree: 100%
 
 ---
@@ -21,7 +19,7 @@ Wenn Sie den Workflow anwenden, geben Sie die folgenden Informationen an:
 
 * Der anzuwendende Workflow.
 
-   Sie können jeden beliebigen Workflow anwenden (auf den Sie Zugriff haben, wie von Ihrem AEM-Administrator zugewiesen).
+  Sie können jeden beliebigen Workflow anwenden (auf den Sie Zugriff haben, wie von Ihrem AEM-Administrator zugewiesen).
 * Optional:
 
    * Ein Kommentar, der Auskunft darüber gibt, warum Sie den Workflow gestartet haben.

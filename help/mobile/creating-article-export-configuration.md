@@ -1,18 +1,14 @@
 ---
 title: Erstellen der Konfiguration von Artikelexporten
-seo-title: Creating Article Export Configuration
 description: Auf dieser Seite erfahren Sie mehr über den Export von Inhalten aus Adobe Experience Manager (AEM) zum Hochladen in AEM Mobile.
-seo-description: Follow this page to learn about exporting content from Adobe Experience Manager (AEM) for upload to AEM Mobile.
-uuid: 089bc15b-669e-4623-bdbb-fd9abf46e098
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: bc681589-5d46-44cd-888d-b0722a2fd006
 exl-id: 5295f383-3b46-4456-9177-65de68e39a85
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '292'
 ht-degree: 1%
 
 ---
@@ -52,7 +48,7 @@ Die Konfiguration von ContentSync unter **&lt;dps-exporttemplate>/dps-article>**
 
 Informationen zum Anzeigen einer gemeinsam genutzten Beispielressource finden Sie in den folgenden Schritten:
 
-1. Öffnen Sie die CRXDE Lite auf Ihrem AEM.
+1. Öffnen Sie CRXDE Lite auf Ihrem AEM.
 1. Navigieren Sie zu diesem Pfad [/etc/contentsync/templates/dps-we-unlimited-app/dps-article](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-article), um die gemeinsamen Beispielressourcen anzuzeigen.
 
    Sie können alle Eigenschaften anzeigen, die für die Erstellung Ihrer freigegebenen Ressourcen erforderlich sind, wie in der folgenden Abbildung dargestellt:

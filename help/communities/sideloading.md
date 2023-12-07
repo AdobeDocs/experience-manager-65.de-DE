@@ -1,16 +1,12 @@
 ---
 title: Komponenten-Sideloading
-seo-title: Component Sideloading
 description: Das Sideloading von Communities-Komponenten ist nützlich, wenn eine Webseite als einfache Einzelseitenanwendung konzipiert ist, die die Anzeige dynamisch ändert, je nachdem, was der Besucher der Site auswählt.
-seo-description: Communities component sideloading is useful when a web page is designed as a simple, single page app that dynamically alters what is displayed depending on what is selected by the site visitor
-uuid: 8c9a5fde-26a3-4610-bc14-f8b665059015
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: a9cb5294-e5ab-445b-b7c2-ffeecda91c50
 exl-id: 960e132c-b370-43d1-bd8f-e7d0ded7c0b3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
@@ -27,7 +23,7 @@ Dies wird erreicht, wenn Communities-Komponenten nicht in der Seitenvorlage vorh
 
 Da das Social-Komponenten-Framework (SCF) über eine leichte Präsenz verfügt, werden nur SCF-Komponenten registriert, die zum Zeitpunkt des ersten Seitenladevorgangs vorhanden sind. Damit eine dynamisch hinzugefügte SCF-Komponente nach dem Laden der Seite registriert werden kann, muss SCF aufgerufen werden, um die Komponente zu &quot;sideload&quot;zu laden.
 
-Wenn eine Seite für das Sideloaden von Communities-Komponenten entwickelt wurde, ist es möglich, die gesamte Seite zwischenzuspeichern.
+Wenn eine Seite zum Sideloaden von Communities-Komponenten entwickelt wurde, kann die gesamte Seite zwischengespeichert werden.
 
 Die Schritte zum dynamischen Hinzufügen von SCF-Komponenten sind:
 
@@ -54,11 +50,11 @@ Welches Tag verwendet wird, mindestens muss das Element dem normalen SCF-Stammel
 
 * **data-component-id**
 
-   Der effektive Pfad zur hinzugefügten Komponente.
+  Der effektive Pfad zur hinzugefügten Komponente.
 
 * **data-scf-component**
 
-   Der resourceType der Komponente.
+  Der resourceType der Komponente.
 
 Im Folgenden finden Sie ein Beispiel einer hinzugefügten Kommentarkomponente:
 

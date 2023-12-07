@@ -1,13 +1,11 @@
 ---
 title: Salesforce-Integration mit AEM Forms mithilfe des OAuth 2.0-Client-Anmeldedatenflusses
-seo-title: Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
 description: Schritte zur Integration von Salesforce-Integration mit AEM Forms mithilfe des OAuth 2.0-Client-Anmeldedatenflusses
-seo-description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
-exl-id: 31f2ccf8-1f4f-4d88-8c5f-ef1b7d1bfb4f
-source-git-commit: f11bb43d914a43431cab408ca77690b6ba528a06
+exl-id: 4c356aa6-ebd4-40b9-89e3-bc4519e4a7c5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 52%
+source-wordcount: '402'
+ht-degree: 50%
 
 ---
 
@@ -15,7 +13,7 @@ ht-degree: 52%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
 Sie können OAuth 2.0-Client-Anmeldeinformationen verwenden, um AEM Forms in die Salesforce-Anwendung zu integrieren. OAuth 2.0-Client-Anmeldeinformationen sind eine standardmäßige und sichere Methode für die direkte Kommunikation ohne Benutzerbeteiligung.

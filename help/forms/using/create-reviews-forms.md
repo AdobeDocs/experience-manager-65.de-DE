@@ -1,24 +1,22 @@
 ---
-title: Erstellen und Verwalten von Überprüfung in Formularen
-seo-title: Creating and managing reviews in forms
+title: Erstellen und Verwalten von Überprüfungen in Formularen
 description: Bei einer Überprüfung handelt es sich um einen Mechanismus, mit dem ein oder mehrere Überprüfungspersonen zu einem Formular Kommentare abgeben können.
-seo-description: A Review is a mechanism that allows one or more reviewers to comment on a form.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 93%
+source-wordcount: '701'
+ht-degree: 100%
 
 ---
 
-# Erstellen und Verwalten von Überprüfung von Formularen{#creating-and-managing-reviews-to-forms}
+# Erstellen und Verwalten von Überprüfungen in Formularen{#creating-and-managing-reviews-to-forms}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/using/create-an-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/using/create-an-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -65,7 +63,7 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 >[!NOTE]
 >
 >* Nur laufende Überprüfungen können geändert werden.
->* Abgeschlossene Überprüfungen können nicht mehr geändert werden.
+>* Abgeschlossene Überprüfungen können nicht geändert werden.
 
 1. Gehen Sie zur Registerkarte „Formulare“ und wählen Sie ein Formular aus.
 
@@ -73,7 +71,7 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 
    Klicken Sie auf das Symbol **Überprüfung verwalten** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 
-   Für Benutzende, die sie nicht initiiert haben, ist das Symbol zum Verwalten von Überprüfungen deaktiviert.
+   Für Benutzende, die die Überprüfung nicht initiiert haben, ist das Symbol zum Verwalten von Überprüfungen deaktiviert.
 
 1. Es wird nun ein Bildschirm mit den folgenden Informationen angezeigt:
 
@@ -89,10 +87,10 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 
 ### Aktionen beim Ändern einer Überprüfung {#actions-that-occur-when-a-review-is-modified}
 
-Dieser Abschnitt beschreibt, was bei **Aktualisierung/Beendigung einer Überprüfung** geschieht:
+Dieser Abschnitt beschreibt, was beim **Aktualisieren/Beenden einer Überprüfung** geschieht:
 
-1. Wenn die Überprüfungsbeschreibung geändert wird, wird die entsprechende Aufgabe der Überprüfenden und der initiierenden Person aktualisiert.
-1. Wenn der Überprüfungstermin geändert wird, wird die entsprechende Aufgabe der Überprüfenden mit dem neuen Datum aktualisiert.
+1. Wenn die Überprüfungsbeschreibung geändert wird, wird die entsprechende Aufgabe der Überprüfungspersonen und der initiierenden Person aktualisiert.
+1. Wenn der Überprüfungstermin geändert wird, wird die entsprechende Aufgabe der Überprüfungspersonen mit dem neuen Datum aktualisiert.
 
 1. Wenn ein Reviewer entfernt wird:
 

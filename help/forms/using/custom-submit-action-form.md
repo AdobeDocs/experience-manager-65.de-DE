@@ -1,18 +1,14 @@
 ---
 title: Schreiben benutzerdefinierter Übermittlungsaktionen für adaptive Formulare
-seo-title: Writing custom Submit action for adaptive forms
 description: Mit AEM forms können Sie benutzerdefinierte Übermittlungsaktionen für adaptive Formulare erstellen. In diesem Artikel wird das Verfahren zum Hinzufügen einer benutzerdefinierten Übermittlungsaktion für adaptive Formulare beschrieben.
-seo-description: AEM Forms lets you create custom Submit action for Adaptive forms. This article describes the procedure to add custom Submit action for Adaptive forms.
-uuid: fd8e1dac-b997-4e86-aaf6-3507edcb3070
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 2a2e1156-4a54-4b0a-981c-d527fe22a27e
 docset: aem65
 exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1540'
 ht-degree: 99%
 
 ---
@@ -96,7 +92,7 @@ Wenn die Aktion keinen Weiterleitungspfad bereitstellt, leitet das Übermittlung
 
 Bei einer Übermittlungsaktion handelt es sich um ein sling:Folder, das Folgendes enthält:
 
-* **addfields.jsp**: Dieses Skript stellt die Aktionsfelder bereit, die der HTML-Datei während der Ausgabe hinzugefügt werden. Verwenden Sie dieses Skript, um verborgene Eingabeparameter im Skript „post.POST.jsp“ hinzuzufügen, die während der Übermittlung benötigt werden.
+* **addfields.jsp**: Dieses Skript stellt die Aktionsfelder bereit, die der HTML-Datei während der Ausgabe hinzugefügt werden. Verwenden Sie dieses Skript, um im Skript „post.POST.jsp“ verborgene Eingabeparameter hinzuzufügen, die während der Übermittlung benötigt werden.
 * **dialog.xml**: Dieses Skript ähnelt dem Dialogfeld für die CQ-Komponente. Es enthält Konfigurationsinformationen, die der Autor anpasst. Die Felder werden im Dialogfeld für die Bearbeitung des adaptiven Formulars auf der Registerkarte „Aktionen übermitteln“ angezeigt, wenn Sie die Sende-Aktion auswählen.
 * **post.POST.jsp**: Das Submit-Servlet ruft dieses Skript mit den Daten, die Sie übermitteln, und den zusätzlichen Daten aus den vorherigen Bereichen auf. Jede Erwähnung einer Aktionsausführung auf dieser Seite impliziert die Ausführung des Skripts „post.POST.jsp“. Um die Sende-Aktion mit dem adaptiven Formular zu registrieren, sodass sie im Dialogfeld für die Bearbeitung des adaptiven Formulars angezeigt wird, fügen Sie diese Eigenschaften zum sling:Folder: hinzu:
 
@@ -107,7 +103,7 @@ Bei einer Übermittlungsaktion handelt es sich um ein sling:Folder, das Folgende
 
 ## Erstellen einer benutzerdefinierten Übermittlungsaktion {#creating-a-custom-submit-action}
 
-Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Übermittlungsaktion zu erstellen, die die Daten im CRX-Repository speichert und anschließend eine E-Mail an Sie sendet. Das adaptive Formular enthält die OOTB-Übermittlungsaktion „Inhalt speichern“ (veraltet), die die Daten im CRX-Repository speichert. Zudem stellt CQ eine [Mail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de)-API zum Senden von E-Mails bereit. Vor der Verwendung der Mail-API müssen Sie den Service „Day CQ Mail“ über die Systemkonsole [konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de&amp;wcmmode=disabled). Sie können die Aktion „Inhalt speichern“ (veraltet) erneut verwenden, um Daten im Repository zu speichern. Die Aktion „Inhalt speichern“ (veraltet) ist im Ordner /libs/fd/af/components/guidesubmittype/store im CRX-Repository verfügbar.
+Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Übermittlungsaktion zu erstellen, die die Daten im CRX-Repository speichert und anschließend eine E-Mail an Sie sendet. Das adaptive Formular enthält die OOTB-Übermittlungsaktion „Inhalt speichern“ (veraltet), die die Daten im CRX-Repository speichert. Zudem stellt CQ eine [Mail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de)-API zum Senden von E-Mails bereit. Vor der Verwendung der Mail-API müssen Sie den Service „Day CQ Mail“ über die Systemkonsole [konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&amp;wcmmode=disabled). Sie können die Aktion „Inhalt speichern“ (veraltet) erneut verwenden, um Daten im Repository zu speichern. Die Aktion „Inhalt speichern“ (veraltet) ist im Ordner /libs/fd/af/components/guidesubmittype/store im CRX-Repository verfügbar.
 
 1. Melden Sie sich unter der URL https://&lt;server>:&lt;port>/crx/de/index.jsp bei CRXDE Lite an. Erstellen Sie einen Knoten mit der Eigenschaft „sling:Folder“ und dem Namen „store_and_mail“ im Ordner /apps/custom_submit_action. Erstellen Sie den Ordner „custom_submit_action“, falls er noch nicht vorhanden ist.
 

@@ -1,16 +1,12 @@
 ---
 title: Best Practices
-seo-title: Best Practices
-description: Best Practices für die Bearbeitung beschreiben, wie Sie AEM am effizientesten und effektivsten verwenden. Diese laufend erweiterte Liste von Themen enthält eine Vielzahl von Bereichen in AEM.
-seo-description: Authoring best practices describe how to use AEM in the most efficient and most effective way possible. This growing list of topics includes a variety of areas in AEM.
-uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
+description: Best Practices für die Bearbeitung beschreiben, wie Sie AEM am effizientesten und effektivsten verwenden. Diese wachsende Themenliste umfasst verschiedene Bereiche in AEM.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
-source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 100%
 
@@ -19,9 +15,9 @@ ht-degree: 100%
 
 # Best Practices{#best-practices}
 
-Best Practices für die Bearbeitung beschreiben, wie Sie AEM am effizientesten und effektivsten verwenden. Diese laufend erweiterte Liste von Themen enthält eine Vielzahl von Bereichen in AEM.
+Best Practices für die Bearbeitung beschreiben, wie Sie AEM am effizientesten und effektivsten verwenden. Diese wachsende Themenliste umfasst verschiedene Bereiche in AEM.
 
-Die folgenden Bereiche enthalten Hinweise zu bewährten Vorgehensweisen:
+In den folgenden Bereichen finden Sie Dokumentationen zu Best Practices:
 
 * [Assets](#assets)
 * [Sites](#sites)
@@ -33,7 +29,7 @@ Best Practices für die Verwaltung, Bereitstellung, Pflege und Entwicklung finde
 * [Best Practices für die Entwicklung](/help/sites-developing/best-practices.md)
 * [Best Practices für die Bereitstellung](/help/sites-deploying/best-practices.md)
 
-Spezielle Dokumente werden in den folgenden Tabellen beschrieben und verknüpft.
+Spezifische Dokumente werden in den folgenden Tabellen beschrieben und verlinkt.
 
 ## Assets {#assets}
 
@@ -49,7 +45,7 @@ Best Practices rund um Assets, einschließlich der Dynamic Media-Funktionen und 
   <tr>
    <td>Videokodierung</td>
    <td><a href="/help/assets/video.md#best-practices-for-encoding-videos">Best Practices für die Kodierung</a></td>
-   <td>Beschreibt Best Practices rund um die Kodierung von Quellvideodateien.</td>
+   <td>Beschreibt Best Practices für die Codierung von Quellvideodateien.</td>
   </tr>
   <tr>
    <td>Dynamic Imaging</td>
@@ -66,7 +62,7 @@ Best Practices rund um Assets, einschließlich der Dynamic Media-Funktionen und 
 
 ## Sites {#sites}
 
-Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practices wie folgt beschrieben:
+Für die Verwaltung und Bearbeitung von Website-Inhalten gelten folgende Best Practices:
 
 Authoring: [Autorenumgebung und Tools](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md): Bietet einen Überblick über das Erstellen von Seiten.
 

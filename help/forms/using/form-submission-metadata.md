@@ -1,16 +1,12 @@
 ---
 title: Hinzufügen von Informationen aus Benutzerdaten zu Formularübermittlungsmetadaten
-seo-title: Adding information from user data to form submission metadata
 description: Erfahren Sie, wie Sie den Metadaten eines übermittelten Formulars mit vom Benutzer bereitgestellten Daten Informationen hinzufügen.
-seo-description: Learn how to add information to metadata of a submitted form with user provided data.
-uuid: c3eea3c0-31f8-4bf8-b5cf-34f907bdbdba
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 2c971da0-5bd5-40d1-820d-4efc2a44b49d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 47%

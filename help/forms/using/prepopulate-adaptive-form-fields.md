@@ -1,29 +1,25 @@
 ---
 title: Vorbefüllen von Feldern in adaptiven Formularen
-seo-title: Prefill adaptive form fields
 description: Verwenden Sie bestehende Daten, um die Felder eines adaptiven Formulars zu befüllen.
-seo-description: With adaptive forms, you users can prefill basic information in a form by logging in with their social profiles. This article describes how you can accomplish this.
-uuid: 574de83a-7b5b-4a1f-ad37-b9717e5c14f1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 feature: Adaptive Forms
 exl-id: 29cbc330-7b3d-457e-ba4a-7ce6091f3836
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2248'
-ht-degree: 76%
+source-wordcount: '2203'
+ht-degree: 84%
 
 ---
 
 # Vorbefüllen von Feldern in adaptiven Formularen{#prefill-adaptive-form-fields}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/using/create-an-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/using/create-an-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html?lang=de) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html) |
 | AEM 6.5 | Dieser Artikel |
 
 ## Einführung {#introduction}
@@ -36,7 +32,7 @@ Ein adaptives Formular kann eine Mischung aus gebundenen und ungebundenen Felder
 
 Sie können sowohl gebundene als auch ungebundene Felder eines adaptiven Formulars im Voraus ausfüllen. Die Vorbefüllungsdaten enthalten die Abschnitte afBoundData und afUnBoundData , um sowohl gebundene als auch ungebundene Felder eines adaptiven Formulars vorab auszufüllen. Der Abschnitt `afBoundData` enthält die Daten zum Vorbefüllen für gebundene Felder und Bereiche. Diese Daten müssen mit dem verknüpften Formularmodellschema konform sein:
 
-* Für adaptive Formulare mit der [XFA-Formularvorlage](../../forms/using/prepopulate-adaptive-form-fields.md)verwenden Sie die XML zum Vorbefüllen, die mit dem Datenschema der XFA-Vorlage konform ist.
+* Für adaptive Formulare, die die [XFA-Formularvorlage](../../forms/using/prepopulate-adaptive-form-fields.md)verwenden Sie die XML zum Vorbefüllen, die mit dem Datenschema der XFA-Vorlage konform ist.
 * Für adaptive Formulare mit [XML-Schema](#xml-schema-af)verwenden Sie die XML zum Vorbefüllen, die mit der XML-Schemastruktur konform ist.
 * Für adaptive Formulare mit [JSON-Schema](#json-schema-based-adaptive-forms)verwenden Sie die JSON-Vorbefüllungs-JSON, die mit dem JSON-Schema konform ist.
 * Verwenden Sie für adaptive Formulare mit dem FDM-Schema die JSON-Datei zum Vorbefüllen, die mit dem FDM-Schema konform ist.
@@ -204,7 +200,7 @@ Im Folgenden finden Sie ein Beispiel ohne `afData/afBoundData`-Wrapper:
 
 >[!NOTE]
 >
->Die Verwendung ungebundener Felder in gebundenen Bereichen (Bereiche mit nicht leerem bindRef-Wert, die durch Ziehen von Komponenten aus dem Sidekick oder der Data Sources-Registerkarte erstellt wurden) ist **not** empfohlen, da dies zu Datenverlust der ungebundenen Felder führen kann. Es wird empfohlen, eindeutige Feldnamen im gesamten Formular zu verwenden, insbesondere für ungebundene Felder.
+>Die Verwendung von ungebundenen Feldern in gebundenen Bedienfeldern (Bedienfelder mit nicht leerer bindRef, die durch Ziehen von Komponenten aus der Registerkarte „Sidekick“ oder „Datenquellen“ erstellt wurden) wird **nicht** empfohlen, da dies zum Verlust von Daten der ungebundenen Felder führen kann. Es wird empfohlen, eindeutige Feldnamen im gesamten Formular zu verwenden, insbesondere für ungebundene Felder.
 
 ### Adaptives Formular ohne Formularmodell {#adaptive-form-with-no-form-model}
 
@@ -267,7 +263,7 @@ Um den Vorbefüllungs-Service zu aktivieren, müssen Sie die standardmäßige Vo
 Im Allgemeinen werden gebundene (Formularschema) und ungebundene Felder im selben adaptiven Formular erstellt. Im Folgenden finden Sie jedoch einige Ausnahmen, falls die gebundenen Felder wiederholbar sind:
 
 * Ungebundene wiederholbare Bereiche werden für adaptive Formulare mit der XFA-Formularvorlage, XSD, JSON-Schema oder dem FDM-Schema nicht unterstützt.
-* Verwenden Sie keine ungebundenen Felder in gebundenen wiederholbaren Bereichen.
+* Verwenden Sie keine ungebundenen Felder in gebundenen, wiederholbaren Bedienfeldern.
 
 >[!NOTE]
 >
@@ -306,7 +302,7 @@ https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=servic
 ```
 
 * SERVICE_NAME verweist auf den Namen des OSGI-Vorbefüllungs-Service. Lesen Sie [Erstellen und Ausführen eines Vorbefüllungs-Service](../../forms/using/prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
-* IDENTIFIER bezieht sich auf alle Metadaten, die vom OSGI-Vorbefüllungs-Service erforderlich sind, um die Daten zum Vorbefüllen aufzurufen. Eine Kennung für den angemeldeten Benutzer ist ein Beispiel für Metadaten, die verwendet werden können.
+* IDENTIFIER bezieht sich auf alle Metadaten, die vom OSGI-Vorbefüllungs-Service erforderlich sind, um die Daten zum Vorbefüllen aufzurufen. Eine Kennung für die angemeldete Benutzerin bzw. den angemeldeten Benutzer ist ein Beispiel für Metadaten, die verwendet werden können.
 
 >[!NOTE]
 >
@@ -362,8 +358,8 @@ Der Vorbefüllungsdienst ist ein OSGi-Dienst und wird über das OSGi-Paket berei
 
 Das Textbausteinpaket (Vorbefüllungsdienst-Beispielpaket) enthält folgende Beispielimplementierung des AEM Forms-Vorbefüllungsdiensts. Öffnen Sie das Textbausteinpaket in einem Codeeditor. Öffnen Sie beispielsweise das Textbausteinprojekt zur Bearbeitung in Eclipse. Nachdem Sie das Textbausteinpaket in einem Code-Editor geöffnet haben, führen Sie folgende Schritte aus, um den Service zu erstellen.
 
-1. Öffnen Sie die Datei src\main\java\com\adobe\test\Prefill.java zur Bearbeitung.
-1. Legen Sie im Code den Wert fest:
+1. Öffnen Sie die Datei „src\main\java\com\adobe\test\Prefill.java“ zur Bearbeitung.
+1. Legen Sie im Code folgenden Wert fest:
 
    * `nodePath:` Die Knotenpfadvariable, die auf den CRX-Repository-Speicherort verweist, enthält den Pfad der Daten-(Vorbefüllungs)-Datei. Beispiel: /content/prefilldata.xml
    * `label:` Der Parameter „label“ gibt den Anzeigenamen des Service an. Beispiel: Standardvorbefüllungs-Service

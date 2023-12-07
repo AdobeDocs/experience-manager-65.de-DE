@@ -1,19 +1,15 @@
 ---
 title: Benennungskonventionen für das Testen von Assets
-seo-title: Naming conventions for assets
 description: Knoten im Repository unterliegen den Benennungskonventionen des Java Content Repository. Adobe Experience Manager schreibt jedoch weitere Konventionen für den Namen von Asset-Knoten vor.
-seo-description: Nodes in the repository are subject to naming conventions of the Java Content Repository. However, Adobe Experience Manager imposes further conventions for the name of asset nodes.
-uuid: 6b622a60-90e8-461e-9b67-42c11c7038f9
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
-discoiquuid: 55e66c66-0120-4ed4-94c5-d65a434bb59b
 exl-id: bb6a5913-0871-47c7-8641-936e98920ec0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '128'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '131'
+ht-degree: 69%
 
 ---
 
@@ -23,11 +19,11 @@ Knoten im Repository unterliegen den Benennungskonventionen des [Java Content Re
 
 ## Klassische Benutzeroberfläche {#classic-ui}
 
-Die klassische Benutzeroberfläche gibt strengere Einschränkungen vor:
+Die klassische Benutzeroberfläche weist stärkere Einschränkungen auf:
 
-* Prüft den Asset-Namen bei expliziten Knotennamen, wenn:
+* Validiert den Asset-Namen, wenn entweder:
 
-   * ein Asset-Titel für die Konvertierung in den Knotennamen bereitgestellt wird
+   * Ein Asset-Titel wird zur Konvertierung in den Knotennamen bereitgestellt
    * ein expliziter Knotenname angegeben ist
 
 * Gültige Zeichen (nur diese Zeichen sind tatsächlich gültig, wenn ein Asset in der klassischen Benutzeroberfläche erstellt wird):

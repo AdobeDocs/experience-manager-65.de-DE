@@ -1,19 +1,15 @@
 ---
 title: Importieren und Exportieren von globalen Einstellungen
-seo-title: Importing and exporting global settings
 description: Sie können Suchvorlagendefinitionen und globale Einstellungen für Workspace importieren und exportieren.
-seo-description: You can import and export search template definitions and global settings for Workspace.
-uuid: 8f1f210d-e850-4b2c-bb5a-942fa8299791
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
 exl-id: cdb7ff54-7891-45b1-a921-10b01ef5188d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1240'
-ht-degree: 43%
+source-wordcount: '1196'
+ht-degree: 38%
 
 ---
 
@@ -75,15 +71,13 @@ Die Datei mit den globalen Einstellungen für Workspace enthält die folgenden E
 
 Die Einstellungen unter *specialRoutes* geben die Eigenschaften der Sonderrouten („Genehmigen“ und „Ablehnen“) in Workspace an. Unter bestimmten Umständen werden die Schaltflächen für diese Routen auf den Aufgabenkarten in Workspace angezeigt und der Benutzer kann sie auswählen, ohne das Formular zu öffnen. Sie können die Einstellungen für specialRoutes in der Datei mit den globalen Einstellungen ändern, um benutzerdefinierte Namen für die Genehmigung und Ablehnung hinzuzufügen oder zusätzliche Routen zu erstellen.
 
-**client_specialRoutes_routes_approve_style:** Der Name des Stils, der sich im Workspace-Design befindet und die Symbole der Schaltfläche &quot;Genehmigen&quot;angibt. Der Stil muss Werte für ein aktiviertes und ein deaktiviertes Symbol enthalten. Zum Definieren eines Stils für eine benutzerdefinierte Schaltfläche müssen Sie die folgende Vorlage verwenden:
-
+**client_specialRoutes_routes_approve_style:** Der Name des Stils, der sich im Workspace-Design befindet und die Symbole der Schaltfläche &quot;Genehmigen&quot;angibt. Der Stil muss Werte für ein aktiviertes und ein deaktiviertes Symbol enthalten. Um einen Stil für eine benutzerdefinierte Schaltfläche zu definieren, müssen Sie die folgende Vorlage verwenden:
 ` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` Die CSS-Datei von Workspace ist in die Datei &quot;workspace-theme.swf&quot;eingebettet, die sich in der Datei &quot;adobe-workspace-client.ear > adobe-workspace-client.war&quot;befindet. Um das Erscheinungsbild von Workspace zu ändern, müssen Sie die Datei „workspace-theme.swf“ erneut kompilieren.
 
 **client_specialRoutes_routes_deny_names:** Die verschiedenen Zeichenfolgen, die ein Workbench-Benutzer verwenden kann, um als „Ablehnen“ interpretiert zu werden. Bei den Zeichenfolgen muss die Groß-/Kleinschreibung beachtet werden. Der Standardwert lautet beispielsweise Ablehnen. Wenn der Workspace-Benutzer das Wort Ablehnen in einem Prozess verwendet, wird es nicht erkannt. Der Begriff Ablehnen muss dieser Einstellung hinzugefügt werden, damit die Routenschaltfläche angepasst und mit dem Stil versehen wird.
 
-**client_specialRoutes_routes_deny_style:** Der Name des Stils, der sich in der Workspace-Designdatei befindet und die Symbole für die Schaltfläche &quot;Ablehnen&quot;angibt. Der Stil muss Werte für ein aktiviertes und ein deaktiviertes Symbol enthalten. Zum Definieren eines Stils für eine benutzerdefinierte Schaltfläche müssen Sie die folgende Vorlage verwenden:
-
-`  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_routes_approve_names:** Die verschiedenen Zeichenfolgen, die ein Workbench-Benutzer verwenden kann und die als „Genehmigen“ interpretiert werden. Bei den Zeichenfolgen muss die Groß-/Kleinschreibung beachtet werden. Der Standardwert lautet beispielsweise „genehmigen“. Wenn der Workspace-Benutzer das Wort „Genehmigen“ in einem Prozess verwendet, wird es nicht erkannt. Der Begriff „Genehmigen“ muss dieser Einstellung hinzugefügt werden, damit die Routenschaltfläche angepasst und mit dem Stil versehen wird.
+**client_specialRoutes_routes_deny_style:** Der Name des Stils, der sich in der Workspace-Designdatei befindet und die Symbole für die Schaltfläche &quot;Ablehnen&quot;angibt. Der Stil muss Werte für ein aktiviertes und ein deaktiviertes Symbol enthalten. Um einen Stil für eine benutzerdefinierte Schaltfläche zu definieren, müssen Sie die folgende Vorlage verwenden:
+`  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_routes_approve_names:** Die verschiedenen Zeichenfolgen, die ein Workbench-Benutzer als &quot;Genehmigen&quot;interpretieren kann. Bei den Zeichenfolgen muss die Groß-/Kleinschreibung beachtet werden. Der Standardwert lautet beispielsweise „genehmigen“. Wenn der Workspace-Benutzer das Wort „Genehmigen“ in einem Prozess verwendet, wird es nicht erkannt. Der Begriff „Genehmigen“ muss dieser Einstellung hinzugefügt werden, damit die Routenschaltfläche angepasst und mit dem Stil versehen wird.
 
 **client_specialRoutes_names:** Die Schlüssel zum Lokalisieren des benutzerdefinierten Zeichenfolgenwerts aus den Ressourcendateien. Jeder Eintrag in dieser Einstellung muss die Werte für Namen und Stil enthalten.
 

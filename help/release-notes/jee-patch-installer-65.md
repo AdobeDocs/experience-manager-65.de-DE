@@ -1,14 +1,12 @@
 ---
 title: AEM Forms JEE-Patch-Installationsprogramm
 description: Erfahren Sie, wie Sie mit dem AEM Forms JEE Patch-Installationsprogramm Probleme in AEM 6.5 Forms-Komponenten beheben können.
-uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
-discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: f0b59ff25f49f5ca12bc6966882f68b5231a9511
-workflow-type: ht
-source-wordcount: '535'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '509'
+ht-degree: 94%
 
 ---
 
@@ -33,7 +31,8 @@ Das AEM 6.5 Forms JEE Patch-Installationsprogramm enthält alle behobenen Proble
 1. Extrahieren Sie die Archivdatei des Patch-Installationsprogramms auf Ihrer Festplatte.
 1. Im Ordner mit dem Namen entsprechend des von Ihnen verwendeten Betriebssystems:
 
-   * **Windows** Wechseln Sie zu dem Ordner auf dem Installationsdatenträger oder auf der Festplatte, in den Sie das Installationsprogramm kopiert haben, und doppelklicken Sie auf die Datei aemforms65_cfp_install.exe.
+   * **Windows**
+Navigieren Sie zum entsprechenden Ordner auf dem Installationsdatenträger oder dem Ordner auf der Festplatte, in den Sie das Installationsprogramm kopiert haben, und doppelklicken Sie auf die Datei aemforms65_cfp_install.exe.
 
       * (Windows 32-Bit) `Windows\Disk1\InstData\VM`
       * (Windows 64-Bit) `Windows_64Bit`\ `Disk1\InstData\VM`

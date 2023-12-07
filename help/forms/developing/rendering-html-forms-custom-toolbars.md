@@ -1,20 +1,16 @@
 ---
 title: Rendern von HTML Forms mit CustomToolbars
-seo-title: Rendering HTML Forms with CustomToolbars
 description: Verwenden Sie den Forms-Service, um eine Symbolleiste anzupassen, die mit einem HTML-Formular gerendert wird. Sie können ein HTML-Formular mit einer benutzerdefinierten Symbolleiste mithilfe der Java-API und einer Web Service-API rendern.
-seo-description: Use the Forms service to customize a toolbar that is rendered with an HTML form. You can render an HTML Form with a custom toolbar using the Java API and a Web Service API.
-uuid: b9c9464e-ff19-4051-a39b-4ec71c512d10
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 role: Developer
 exl-id: 0b992b1c-3878-447a-bccc-7034aa3e98bc
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2340'
+source-wordcount: '2328'
 ht-degree: 97%
 
 ---
@@ -238,7 +234,7 @@ Rendern eines HTML-Formular mit einer benutzerdefinierten Symbolleiste mithilfe 
    Rufen Sie die Methode `renderHTMLForm` des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Ein `TransformTo`-Auflistungswert, der den Präferenztyp für HTML angibt. Um beispielsweise ein HTML-Formular zu rendern, das mit dynamischem HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
+   * Ein `TransformTo`-Auflistungswert, der den HTML-Voreinstellungstyp angibt. Um beispielsweise ein HTML-Formular zu rendern, das mit Dynamic HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
    * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document`-Objekt.
    * Das `HTMLRenderSpec`-Objekt, das HTML-Laufzeitoptionen speichert.
    * Ein Zeichenfolgenwert, der den Kopfzeilenwert `HTTP_USER_AGENT` angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
@@ -294,7 +290,7 @@ Rendern Sie ein HTML-Formular mit einer benutzerdefinierten Symbolleiste mithilf
    Rufen Sie die Methode `renderHTMLForm` des `FormsService`-Objekts auf und übergeben Sie die folgenden Werte:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Ein `TransformTo`-Auflistungswert, der den Präferenztyp für HTML angibt. Um beispielsweise ein HTML-Formular zu rendern, das mit dynamischem HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
+   * Ein `TransformTo`-Auflistungswert, der den HTML-Voreinstellungstyp angibt. Um beispielsweise ein HTML-Formular zu rendern, das mit Dynamic HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
    * Ein `BLOB`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie `null`.
    * Das `HTMLRenderSpec`-Objekt, das HTML-Laufzeitoptionen speichert.
    * Ein Zeichenfolgenwert, der den `HTTP_USER_AGENT`-Kopfzeilenwert angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322`). Wenn Sie diesen Wert nicht festlegen möchten, können Sie eine leere Zeichenfolge übergeben.

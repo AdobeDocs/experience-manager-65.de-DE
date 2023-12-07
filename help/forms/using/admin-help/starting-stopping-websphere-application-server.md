@@ -1,27 +1,23 @@
 ---
 title: Starten und Anhalten des WebSphere-Anwendungs-Servers
-seo-title: Starting and stopping WebSphere Application Server
-description: In mehreren Verfahren müssen Sie die Instanz von WebSphere, auf der Sie AEM Forms-Produkte bereitstellen möchten, starten oder beenden. In diesem Dokument wird beschrieben, wie Sie WebSphere Application Server starten und anhalten.
-seo-description: Several procedures require you to stop or start the instance of WebSphere where you want to deploy AEM forms products. This document describes how to start and stop the WebSphere Application Server.
-uuid: e0373197-aa57-4087-933d-92a86840a11a
+description: In mehreren Verfahren müssen Sie die Instanz von WebSphere, in der Sie AEM Forms-Produkte bereitstellen möchten, stoppen oder starten. In diesem Dokument wird beschrieben, wie Sie WebSphere Application Server starten und beenden.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: bcd16691-67ab-4694-9e6b-c9d3e0c7bf0b
 exl-id: 1a4e8f20-0644-4c96-9f52-f7a59521eac9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '189'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 56%
 
 ---
 
 # Starten und Anhalten des WebSphere-Anwendungs-Servers {#starting-and-stopping-websphere-application-server}
 
-In mehreren Verfahren müssen Sie die Instanz von WebSphere, auf der Sie AEM Forms-Produkte bereitstellen möchten, starten oder beenden. Wenn Sie nicht sicher sind, ob der Anwendungsserver gestartet wurde, können Sie zunächst den Status von WebSphere Application Server anzeigen.
+In mehreren Verfahren müssen Sie die Instanz von WebSphere, in der Sie AEM Forms-Produkte bereitstellen möchten, stoppen oder starten. Wenn Sie nicht sicher sind, ob der Anwendungsserver gestartet wurde, können Sie zunächst den Status von WebSphere Application Server anzeigen.
 
-## Status des WebSphere Application Server anzeigen {#view-the-status-of-websphere-application-server}
+## Status von WebSphere Application Server anzeigen {#view-the-status-of-websphere-application-server}
 
 1. Wechseln Sie ausgehend von einer Eingabeaufforderung in das Verzeichnis `[appserver root]/bin`.
 1. Geben Sie den folgenden Befehl ein. Ersetzen Sie dabei *Servername* durch den Namen Ihres WebSphere Application Servers:

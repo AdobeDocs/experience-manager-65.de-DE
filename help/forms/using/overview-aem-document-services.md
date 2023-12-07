@@ -1,19 +1,15 @@
 ---
 title: Übersicht über AEM-Dokumentendienste
-seo-title: Overview of AEM Document Services
 description: AEM Document Services sind eine Reihe von OSGi-Diensten zum Erstellen, Zusammenstellen und Sichern von PDF-Dokumenten.
-seo-description: AEM Document Services are a set of OSGi Services for creating, assembling, and securing PDF Documents.
-uuid: 439144b7-f805-4819-9ed9-a6e9e374b5ed
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: 10d406db-ac10-479b-b08b-d0735116a12b
 docset: aem65
 exl-id: 4c8a3877-1a3c-410d-ad1f-69c73ba4fcc1
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 29%
+source-wordcount: '1413'
+ht-degree: 31%
 
 ---
 
@@ -44,7 +40,7 @@ Ein Dokument kann an einen Netzwerkdrucker, einen lokalen Drucker oder eine Date
 
 Bei Verwendung des Output-Dienstes zum Zusammenführen von XML-Daten mit einem Formularentwurf ist das Ergebnis ein nicht interaktives PDF-Dokument. Bei einem nicht interaktiven PDF-Dokument können Benutzer keine Daten in die Felder eingeben. Im Gegensatz dazu können Sie mit dem Forms-Dienst ein interaktives PDF-Formular erstellen, mit dem Benutzer Daten in die Felder eingeben können.
 
-Die folgenden vier Output-Dienstvorgänge können verwendet werden:
+Die folgenden vier Output-Dienstvorgänge stehen zur Verwendung zur Verfügung:
 
 * **generatePDFOuput**: Führt einen Formularentwurf mit Daten zusammen, um ein PDF-Dokument zu generieren
 * **generatePrintedOutput**: Führt einen Formularentwurf mit Formulardaten zusammen, um ein Dokument zu erstellen, das entweder an einer Laserdrucker oder einen Beschriftungsnetzwerkdrucker gesendet werden soll.
@@ -65,7 +61,7 @@ Neben den oben genannten Funktionen gilt für den Assembler-Dienst Folgendes:
 
 ### Über DDX {#about-ddx}
 
-Verwenden Sie bei Verwendung des Assembler-Dienstes eine XML-basierte Sprache namens Document Description XML (DDX), um die gewünschte Ausgabe zu beschreiben. DDX ist eine deklarative Markup-Sprache, deren Elemente Bausteine von Dokumenten darstellen. Diese Bausteine umfassen PDF-Dokumente, XDP-Dokumente, XDP-Formularfragmente und andere Elemente wie Kommentare, Lesezeichen und formatierten Text.
+Verwenden Sie bei Verwendung des Assembler-Dienstes eine XML-basierte Sprache namens Document Description XML (DDX), um die gewünschte Ausgabe zu definieren. DDX ist eine deklarative Markup-Sprache, deren Elemente Bausteine von Dokumenten darstellen. Diese Bausteine umfassen PDF-Dokumente, XDP-Dokumente, XDP-Formularfragmente und andere Elemente wie Kommentare, Lesezeichen und formatierten Text.
 
 DDX-Dokument kann Zieldokumente mit folgenden Eigenschaften angeben:
 
@@ -81,8 +77,8 @@ Sie können DDX verwenden, um PDF-Dokumente im Rahmen der Dokumentzusammenführu
 
 * Hinzufügen von Wasserzeichen oder Hintergründen zu ausgewählten Seiten (oder deren Entfernung)
 * Hinzufügen von Kopf- und Fußzeilen zu ausgewählten Seiten (oder deren Entfernung)
-* Entfernt die Struktur und Navigationsfunktionen eines PDF-Packages oder PDF-Portfolios. Das Ergebnis ist eine PDF-Datei.
-* Seitenbeschriftungen werden umnummeriert. Seitenbeschriftungen werden normalerweise für die Seitennummerierung verwendet.
+* Entfernt die Struktur und Navigationsfunktionen eines PDF-Packages oder PDF-Portfolios. Das Ergebnis ist eine einzelne PDF-Datei.
+* Seitentitel neu nummerieren. Seitenbeschriftungen werden normalerweise für die Seitennummerierung verwendet.
 * Importieren von Metadaten aus einem anderen Quelldokument
 * Hinzufügen oder Entfernen von Dateianlagen, Lesezeichen, Hyperlinks, Kommentaren und JavaScript.
 * Festlegen der Ansicht beim Öffnen und Optimierung der Anzeige im Internet
@@ -115,11 +111,11 @@ Der Signature-Dienst greift auf Zertifikate und Berechtigungen zu, die im Trust 
 
 ### Encryption-Service {#encryption-service}
 
-Mit dem Encryption-Dienst können Sie Dokumente verschlüsseln und entschlüsseln. Wenn ein Dokument verschlüsselt wird, ist sein Inhalt unlesbar. Sie können das gesamte PDF-Dokument (einschließlich Inhalt, Metadaten und Anlagen), alles außer den Metadaten oder nur die Anlagen verschlüsseln. Ein autorisierter Benutzer kann das Dokument entschlüsseln, um Zugriff auf seinen Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, müssen die Benutzenden das Kennwort zum Öffnen angeben, damit das Dokument in Reader oder Adobe Acrobat angezeigt werden kann. Wenn ein PDF-Dokument mit einem Zertifikat verschlüsselt ist, muss der Benutzer das PDF-Dokument mit einem privaten Schlüssel (Zertifikat) entschlüsseln. Der zum Entschlüsseln des PDF-Dokuments verwendete private Schlüssel muss dem öffentlichen Schlüssel entsprechen, der zum Verschlüsseln verwendet wird.
+Mit dem Encryption-Dienst können Sie Dokumente verschlüsseln und entschlüsseln. Wird ein Dokument verschlüsselt, ist sein Inhalt nicht mehr lesbar. Sie können das gesamte PDF-Dokument (einschließlich Inhalt, Metadaten und Anlagen), alles außer den Metadaten oder nur die Anlagen verschlüsseln. Ein autorisierter Benutzer kann das Dokument entschlüsseln, um Zugriff auf seinen Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, müssen die Benutzenden das Kennwort zum Öffnen angeben, damit das Dokument in Reader oder Adobe Acrobat angezeigt werden kann. Wenn ein PDF-Dokument mit einem Zertifikat verschlüsselt ist, muss der Benutzer das PDF-Dokument mit einem privaten Schlüssel (Zertifikat) entschlüsseln. Der zum Entschlüsseln des PDF-Dokuments verwendete private Schlüssel muss dem öffentlichen Schlüssel entsprechen, der zum Verschlüsseln verwendet wird.
 
 ### Reader Extension-Dienst {#reader-extension-service}
 
-Der Reader Extensions-Dienst ermöglicht Ihrem Unternehmen die einfache Freigabe interaktiver PDF-Dokumente durch Erweiterung der Funktionalität von Adobe Reader um zusätzliche Verwendungsrechte. Der Reader Extensions-Dienst funktioniert mit Adobe Reader 7.0 oder höher. Der Dienst fügt einem PDF-Dokument Verwendungsrechte hinzu. Diese Aktion aktiviert Funktionen, die normalerweise nicht verfügbar sind, wenn ein PDF-Dokument mit Adobe Reader geöffnet wird, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments. Externe Benutzende benötigen keine zusätzliche Software oder Plug-ins für das Verwenden von Dokumenten mit aktivierten Benutzerrechten.
+Der Reader Extensions-Dienst ermöglicht Ihrem Unternehmen die einfache Freigabe interaktiver PDF-Dokumente, indem die Funktionalität von Adobe Reader um zusätzliche Verwendungsrechte erweitert wird. Der Reader Extensions-Dienst funktioniert mit Adobe Reader 7.0 oder höher. Der Dienst fügt einem PDF-Dokument Verwendungsrechte hinzu. Diese Aktion aktiviert Funktionen, die normalerweise nicht verfügbar sind, wenn ein PDF-Dokument mit Adobe Reader geöffnet wird, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments. Externe Benutzende benötigen keine zusätzliche Software oder Plug-ins für das Verwenden von Dokumenten mit aktivierten Benutzerrechten.
 
 Wenn PDF-Dokumente über die entsprechenden Verwendungsrechte verfügen, können Empfänger die folgenden Aktivitäten in Adobe Reader durchführen:
 

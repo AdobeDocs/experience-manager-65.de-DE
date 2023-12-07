@@ -1,27 +1,23 @@
 ---
 title: Ermitteln der PDF/A-Kompatibilität von Dokumenten
-seo-title: Determining Whether Documents Are PDF/A-Compliant
 description: Verwenden Sie den Assembler-Service, um mithilfe der Java-API und der Web Service-API zu ermitteln, ob ein PDF-Dokument PDF/A-kompatibel ist.
-seo-description: Use the Assembler service to determine if a PDF document is PDF/A-compliant using the Java API and Web Service API.
-uuid: 4e9d8c8f-2153-411b-9c4b-2d14b3c8f4bb
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: c429d6e1-7847-43c8-bf75-cb0078dbb9d5
 role: Developer
 exl-id: 096fd2ac-616f-484a-b093-9d98b2f87093
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2081'
-ht-degree: 98%
+source-wordcount: '2065'
+ht-degree: 99%
 
 ---
 
 # Ermitteln der PDF/A-Kompatibilität von Dokumenten {#determining-whether-documents-are-pdf-a-compliant}
 
-Mithilfe des Assembler-Services können Sie feststellen, ob ein PDF-Dokument PDF/A-kompatibel ist. Ein PDF/A-Dokument liegt als ein Archivierungsformat vor, das für die langfristige Speicherung von Dokumentinhalten vorgesehen ist. Die Schriftarten werden in das Dokument eingebettet und die Datei ist unkomprimiert. PDF/A-Dokumente sind daher in der Regel größer als normale PDF-Dokumente. Außerdem enthalten PDF/A-Dokumente keine Audio- und Videoinhalte.
+Mithilfe des Assembler-Services können Sie feststellen, ob ein PDF-Dokument PDF/A-kompatibel ist. Ein PDF/A-Dokument liegt als ein Archivierungsformat vor, das für die langfristige Speicherung von Dokumentinhalten vorgesehen ist. Die Schriftarten werden im Dokument eingebettet und die Datei bleibt unkomprimiert. PDF/A-Dokumente sind daher in der Regel größer als normale PDF-Dokumente. Außerdem enthalten PDF/A-Dokumente keine Audio- und Videoinhalte.
 
 Die PDF/A-1-Spezifikation umfasst zwei Konformitätsstufen (Level), nämlich A und B. Der Hauptunterschied zwischen den beiden Stufen ist die Unterstützung der logischen Struktur (Barrierefreiheit), die für die Konformitätsstufe B nicht erforderlich ist. Unabhängig von der Konformitätsstufe schreibt PDF/A-1 vor, dass alle Schriftarten in das generierte PDF/A-Dokument eingebettet sind. Derzeit wird bei der Gültigkeitsprüfung (und Konvertierung) nur PDF/A-1b unterstützt.
 

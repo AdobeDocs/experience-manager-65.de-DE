@@ -1,21 +1,17 @@
 ---
 title: Community-Funktionen
-seo-title: Community Functions
 description: Erfahren Sie, wie Sie auf die Konsole "Community-Funktionen"zugreifen
-seo-description: Learn how to access the Community Functions console
-uuid: d3d70134-f318-4709-a673-b01a3467d980
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 role: Admin
 exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2220'
-ht-degree: 6%
+source-wordcount: '2215'
+ht-degree: 2%
 
 ---
 
@@ -84,15 +80,15 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 * [Titel und URL-Einstellungen](#title-and-url-settings)
 
-* **Ansicht „Meine Aktivitäten“ anzeigen**
+* **Ansicht &quot;Meine Aktivitäten&quot;**
 
   Wenn diese Option aktiviert ist, enthält die Seite Aktivitäten eine Registerkarte, auf der Aktivitäten basierend auf denen gefiltert werden, die innerhalb der Community vom aktuellen Mitglied generiert wurden. Die Option Standard ist ausgewählt.
 
-* **Ansicht „Alle Aktivitäten“ anzeigen**
+* **Ansicht &quot;Alle Aktivitäten&quot;anzeigen**
 
   Wenn diese Option aktiviert ist, enthält die Seite Aktivitäten einen Tab, der alle in der Community generierten Aktivitäten enthält, auf die das aktuelle Mitglied Zugriff hat. Die Option Standard ist ausgewählt.
 
-* **Ansicht „News-Feed“ anzeigen**
+* **Ansicht &quot;News Feed&quot;anzeigen**
 
   Wenn diese Option aktiviert ist, enthalten die Aktivitätsseiten eine Registerkarte, auf der Aktivitäten nach denen gefiltert werden, denen das aktuelle Mitglied folgt. Die Option Standard ist ausgewählt.
 
@@ -106,7 +102,7 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 * [Titel und URL-Einstellungen](#title-and-url-settings)
 
-* **Privilegierte Mitglieder zulassen**
+* **Zulassen von privilegierten Mitgliedern**
 
   Wenn diese Option aktiviert ist, dürfen nur privilegierte Mitglieder Artikel erstellen, indem sie die Auswahl einer [Gruppe privilegierter Mitglieder](/help/communities/users.md#privileged-members-group). Wenn diese Option nicht ausgewählt ist, dürfen alle Community-Mitglieder erstellen. Die Option Standard ist deaktiviert.
 
@@ -114,11 +110,11 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
   Wenn diese Option aktiviert ist, können Mitglieder Dateien im Blog hochladen. Die Option Standard ist ausgewählt.
 
-* **Antworten mit Diskussionsfaden zulassen**
+* **Threaded-Antworten zulassen**
 
   Wenn diese Option nicht ausgewählt ist, erlaubt der Blog Antworten (Kommentare) auf einen Artikel, aber Antworten auf Kommentare sind nicht zulässig. Die Option Standard ist ausgewählt.
 
-* **Feature-Inhalt zulassen**
+* **Zulassen von speziellen Inhalten**
 
   Wenn ausgewählt, wird der Blog als [präsentierte Inhalte](/help/communities/featured.md). Die Option Standard ist ausgewählt.
 
@@ -132,11 +128,11 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 * [Titel und URL-Einstellungen](#title-and-url-settings)
 
-* **Fixierung zulassen**
+* **Zulassen von Pinnwänden**
 
   Wenn diese Option aktiviert ist, können Themenantworten an den Anfang der Liste der Kommentare eingefügt werden. Die Option Standard ist ausgewählt.
 
-* **Privilegierte Mitglieder zulassen**
+* **Zulassen von privilegierten Mitgliedern**
 
   Wenn diese Option aktiviert ist, dürfen nur privilegierte Mitglieder Artikel erstellen, indem sie die Auswahl einer [Gruppe privilegierter Mitglieder](/help/communities/users.md#privileged-members-group). Wenn diese Option nicht ausgewählt ist, dürfen alle Community-Mitglieder erstellen. Die Option Standard ist deaktiviert.
 
@@ -144,11 +140,11 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
   Wenn diese Option aktiviert ist, können Mitglieder Dateien im Blog hochladen. Die Option Standard ist ausgewählt.
 
-* **Antworten mit Diskussionsfaden zulassen**
+* **Threaded-Antworten zulassen**
 
   Wenn diese Option nicht ausgewählt ist, erlaubt der Blog Antworten (Kommentare) auf einen Artikel, aber Antworten auf Kommentare sind nicht zulässig. Die Option Standard ist ausgewählt.
 
-* **Feature-Inhalt zulassen**
+* **Zulassen von speziellen Inhalten**
 
   Bei Auswahl dieser Option wird der Inhalt als [präsentierte Inhalte](/help/communities/featured.md). Die Option Standard ist ausgewählt.
 
@@ -178,11 +174,11 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 * [Titel und URL-Einstellungen](#title-and-url-settings)
 
-* **Fixierung zulassen**
+* **Zulassen von Pinnwänden**
 
   Wenn diese Option aktiviert ist, können Themenantworten an den Anfang der Liste der Kommentare eingefügt werden. Die Option Standard ist ausgewählt.
 
-* **Privilegierte Mitglieder zulassen**
+* **Zulassen von privilegierten Mitgliedern**
 
   Wenn diese Option aktiviert ist, können nur privilegierte Mitglieder Themen posten, indem sie die Auswahl einer [Gruppe privilegierter Mitglieder](/help/communities/users.md#privileged-members-group). Wenn diese Option nicht ausgewählt ist, dürfen alle Community-Mitglieder Beiträge posten. Die Option Standard ist deaktiviert.
 
@@ -190,11 +186,11 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
   Wenn diese Option aktiviert ist, können Mitglieder Dateien hochladen. Die Option Standard ist ausgewählt.
 
-* **Antworten mit Diskussionsfaden zulassen**
+* **Threaded-Antworten zulassen**
 
   Wenn diese Option nicht ausgewählt ist, sind im Forum Kommentare zu einem Thema zulässig, Antworten auf diese Kommentare sind jedoch nicht zulässig. Die Option Standard ist ausgewählt.
 
-* **Feature-Inhalt zulassen**
+* **Zulassen von speziellen Inhalten**
 
   Wenn diese Option aktiviert ist, wird der Inhalt der Komponente als [präsentierte Inhalte](/help/communities/featured.md). Die Option Standard ist ausgewählt.
 
@@ -224,11 +220,11 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
   Eine Dropdown-Liste, die die Auswahl einer oder mehrerer aktivierter Gruppenvorlagen ermöglicht, aus denen der künftige Ersteller einer neuen Community-Gruppe (in der Veröffentlichungsumgebung) wählen kann.
 
-* **Privilegierte Mitglieder zulassen**
+* **Zulassen von privilegierten Mitgliedern**
 
   Wenn diese Option aktiviert ist, können nur privilegierte Mitglieder Themen posten, indem sie die Auswahl einer [Sicherheitsgruppe privilegierter Mitglieder](/help/communities/users.md#privileged-members-group). Wenn diese Option nicht ausgewählt ist, dürfen alle Community-Mitglieder Beiträge posten. Die Option Standard ist deaktiviert.
 
-* **Veröffentlichung der Kreation erlauben**
+* **Erstellung von Veröffentlichungen zulassen**
 
   Sofern ausgewählt, können autorisierte Community-Mitglieder eine Gruppe in der Veröffentlichungsumgebung erstellen. Wenn diese Option deaktiviert ist, können neue Gruppen (Untergruppen) nur in der Autorenumgebung über die Gruppenkonsole der Communities-Sites erstellt werden.
 Die Option Standard ist ausgewählt.
@@ -243,7 +239,7 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet, in 
 
 * [Titel und URL-Einstellungen](#title-and-url-settings)
 
-* **Privilegierte Mitglieder zulassen**
+* **Zulassen von privilegierten Mitgliedern**
 
   Wenn diese Option aktiviert ist, können nur privilegierte Mitglieder Themen posten, indem sie die Auswahl einer [Sicherheitsgruppe privilegierter Mitglieder](/help/communities/users.md#privileged-members-group). Wenn diese Option nicht ausgewählt ist, dürfen alle Community-Mitglieder Beiträge posten. Die Option Standard ist deaktiviert.
 
@@ -251,11 +247,11 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet, in 
 
   Wenn diese Option aktiviert ist, können Mitglieder Dateien hochladen. Die Option Standard ist ausgewählt.
 
-* **Antworten mit Diskussionsfaden zulassen**
+* **Threaded-Antworten zulassen**
 
   Wenn diese Option nicht ausgewählt ist, sind Antworten (Kommentare) auf ein Thema zulässig, Antworten auf Kommentare sind jedoch nicht zulässig. Die Option Standard ist ausgewählt.
 
-* **Feature-Inhalt zulassen**
+* **Zulassen von speziellen Inhalten**
 
   Bei Auswahl dieser Option wird der Inhalt als [präsentierte Inhalte](/help/communities/featured.md). Die Option Standard ist ausgewählt.
 
@@ -271,12 +267,12 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet, in 
 
 * [Titel und URL-Einstellungen](#title-and-url-settings)
 
-* **Abzeichen anzeigen**
+* **Anzeigemarke**
 
   Wenn diese Option aktiviert ist, wird eine Spalte für Badge-Symbole in die Leaderboard eingefügt.
 Die Option Standard ist deaktiviert.
 
-* **Abzeichennamen anzeigen**
+* **Name der Anzeigemarke**
 
   Wenn diese Option aktiviert ist, wird eine Spalte für den Badge-Namen in die Leaderboard eingefügt.
 Die Option Standard ist deaktiviert.
@@ -302,11 +298,11 @@ Wenn sie einer Vorlage hinzugefügt wird, ermöglicht die Konfiguration die Besc
 
 * [Titel und URL-Einstellungen](#title-and-url-settings)
 
-* **Fixierung zulassen**
+* **Zulassen von Pinnwänden**
 
   Wenn diese Option aktiviert ist, können Themenantworten an den Anfang der Liste der Kommentare eingefügt werden. Die Option Standard ist ausgewählt.
 
-* **Privilegierte Mitglieder zulassen**
+* **Zulassen von privilegierten Mitgliedern**
 
   Wenn diese Option aktiviert ist, dürfen nur privilegierte Mitglieder Fragen posten, indem sie die Auswahl eines [Gruppe privilegierter Mitglieder](/help/communities/users.md#privileged-members-group). Wenn diese Option nicht ausgewählt ist, dürfen alle Community-Mitglieder Beiträge posten. Die Option Standard ist deaktiviert.
 
@@ -314,11 +310,11 @@ Wenn sie einer Vorlage hinzugefügt wird, ermöglicht die Konfiguration die Besc
 
   Wenn diese Option aktiviert ist, können Mitglieder Dateien hochladen. Die Option Standard ist ausgewählt.
 
-* **Antworten mit Diskussionsfaden zulassen**
+* **Threaded-Antworten zulassen**
 
   Wenn diese Option nicht ausgewählt ist, können im Forum Kommentare (Antworten) zu einer geposteten Frage eingesehen werden. Antworten auf Antworten sind jedoch nicht zulässig. Die Option Standard ist ausgewählt.
 
-* **Feature-Inhalt zulassen**
+* **Zulassen von speziellen Inhalten**
 
   Bei Auswahl dieser Option wird der Inhalt als [präsentierte Inhalte](/help/communities/featured.md). Die Option Standard ist ausgewählt.
 
@@ -334,7 +330,7 @@ Die Möglichkeit, eine Community-Funktion zu erstellen, wird durch Auswahl der `
 
 Im Bereich &quot;Community Function Name&quot;werden ein Name, eine Beschreibung und ob die Funktion aktiviert oder deaktiviert ist konfiguriert:
 
-* **Name der Community-Funktion**
+* **Community-Funktionsname**
 
   Der Funktionsname, der für die Anzeige und Speicherung verwendet wird.
 
