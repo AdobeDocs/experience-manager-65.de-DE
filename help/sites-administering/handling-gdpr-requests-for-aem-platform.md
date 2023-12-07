@@ -4,9 +4,9 @@ description: Umgang mit DSGVO-Anfragen für die Adobe Experience Manager Foundat
 contentOwner: sarchiz
 exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
 source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
-workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 93%
+workflow-type: ht
+source-wordcount: '458'
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 93%
 
 >[!IMPORTANT]
 >
->Die DSGVO wird in den folgenden Abschnitten als Beispiel verwendet, die betroffenen Details gelten jedoch für alle Datenschutz- und Datenschutzbestimmungen wie DSGVO, CCPA usw.
+>Die DSGVO wird in den folgenden Abschnitten als Beispiel benutzt, aber die genannten Details lassen sich auf alle Regulierungen zum Datenschutz anwenden; zum Beispiel GDPR, CCPA usw.
 
 ## AEM Foundation – DSGVO-Unterstützung {#aem-foundation-gdpr-support}
 
@@ -105,7 +105,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### HTTP-API {#http-api-1}
 
-Die folgenden Verfahren verwenden das Befehlszeilen-Tool `curl`, um zu veranschaulichen, wie die Person mit der `userId` **[!UICONTROL cavery]** deaktiviert und die Profile von `cavery` am Standardspeicherort gelöscht werden können.
+Die folgenden Verfahren verwenden das Befehlszeilen-Tool `curl`, um zu veranschaulichen, wie die Person mit der ]****[!UICONTROL  cavery`userId` deaktiviert und die Profile von `cavery` am Standardspeicherort gelöscht werden können.
 
 * *Ermitteln der Benutzerstartseite*
 

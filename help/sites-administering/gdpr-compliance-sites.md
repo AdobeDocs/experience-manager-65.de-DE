@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: best-practices
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
-workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 96%
+workflow-type: ht
+source-wordcount: '824'
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 >[!IMPORTANT]
 >
->Die DSGVO wird in den folgenden Abschnitten als Beispiel verwendet, die betroffenen Details gelten jedoch für alle Datenschutz- und Datenschutzbestimmungen wie DSGVO, CCPA usw.
+>Die DSGVO wird in den folgenden Abschnitten als Beispiel benutzt, aber die genannten Details lassen sich auf alle Regulierungen zum Datenschutz anwenden; zum Beispiel GDPR, CCPA usw.
 
 Die Datenschutz-Grundverordnung der Europäischen Union ist seit Mai 2018 in Kraft.
 
