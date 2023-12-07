@@ -5,10 +5,10 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 4158315c28412bb9498c7d49d21b3f4d72681fc6
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 73%
+source-wordcount: '1533'
+ht-degree: 71%
 
 ---
 
@@ -163,7 +163,7 @@ Gehen Sie wie folgt vor, um das Formulardatenmodell zu konfigurieren:
 
       ![id-arg](assets/id-arg.png)
 
-   1. Auswählen **[!UICONTROL Fertig]** , um die Eigenschaften des Datenmodellobjekts zu speichern. Wählen Sie **[!UICONTROL dann Speichern aus, um]** das Formulardatenmodell zu speichern.
+   1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Eigenschaften des Datenmodellobjekts zu speichern. Wählen Sie **[!UICONTROL dann Speichern aus, um]** das Formulardatenmodell zu speichern.
 
       Die Dienste **[!UICONTROL get]** und **[!UICONTROL update]** werden als Standarddienste für das Datenmodellobjekt hinzugefügt.
 
@@ -221,7 +221,7 @@ Führen Sie folgende Schritte aus, um den Test durchzuführen:
 
 1. Navigieren Sie zu **[!UICONTROL Modell]** auswählen, wählen Sie die **customerdetails** Datenmodellobjekt auswählen **[!UICONTROL Testmodell-Objekt]**.
 1. Wählen Sie im Fenster [!UICONTROL Modell/Dienst testen] **[!UICONTROL Modellobjekt lesen]** aus der Dropdown-Liste **[!UICONTROL Modell/Dienst auswählen]** auswählen.
-1. Im **customerdetails** einen Wert für **id** -Argument, das in der konfigurierten [!DNL MySQL] Datenbank und wählen Sie **[!UICONTROL Test]**.
+1. Geben Sie im **Abschnitt customerdetails** einen Wert für das ID-Argument **an, das** in der konfigurierten [!DNL MySQL] Datenbank vorhanden ist, und wählen Sie Test ]**aus**[!UICONTROL .
 
    Die Kundendetails, die der angegebenen ID zugeordnet sind, werden abgerufen und im Abschnitt **[!UICONTROL Ausgabe]** angezeigt, wie unten gezeigt.
 
@@ -236,3 +236,8 @@ Führen Sie folgende Schritte aus, um den Test durchzuführen:
    Wenn Sie den Lesemodell-Dienst jetzt erneut für die ID 7107215 testen, ruft er die aktualisierten Kundendetails ab und zeigt sie an, wie unten dargestellt.
 
    ![read-updated](assets/read-updated.png)
+
+
+>[!NOTE]
+>
+> Sie können die SharePoint-Listenkonfiguration mithilfe des Formulardatenmodells in einem adaptiven Formular erstellen und verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einer SharePoint-Liste zu speichern. Siehe Abschnitt [Verbinden eines adaptiven Formulars mit der Microsoft® SharePoint-Liste](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration), um detaillierte Schritte zu erhalten.
