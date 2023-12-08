@@ -9,9 +9,9 @@ breadcrumb-title: Forms-Anleitung
 user-guide-description: Erstellen, Verwalten, Veröffentlichen und Aktualisieren von digitalen Formularen.
 role: User
 feature: Forms Service
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: cf5da092fabbc7834108dc54d65eb97e160984ce
 workflow-type: tm+mt
-source-wordcount: '3911'
+source-wordcount: '3752'
 ht-degree: 98%
 
 ---
@@ -128,7 +128,7 @@ ht-degree: 98%
    + [Einführung in die AEM Forms-Datenintegration](using/data-integration.md)
    + [Konfigurieren von Datenquellen](using/configure-data-sources.md)
    + [Microsoft Dynamics-OData-Konfiguration](using/ms-dynamics-odata-configuration.md)
-   + [Salesforce-Integration mithilfe des OAuth 2.0-Client-Anmeldedatenflusses Autorisierung](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+   + [Salesforce-Integration mit OAuth 2.0-Client-Anmeldeinformationen Fluss-Autorisierung](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
    + [Erstellen des Formulardatenmodells](using/create-form-data-models.md)
    + [Arbeiten mit einem Formulardatenmodell](using/work-with-form-data-model.md)
    + [Verwenden eines Formulardatenmodells](using/using-form-data-model.md)
@@ -579,7 +579,7 @@ ht-degree: 98%
    + Systeminformationsdienst {#system-information-service}
       + [Systeminformationsdienst einrichten](/help/forms/using/admin-help/set-system-information-service.md)
       + [Systeminformationsdienst-APIs](/help/forms/using/admin-help/system-information-service-apis.md)
-+ Prozessberichterstellung  {#process-reporting}
++ Prozessberichterstellung {#process-reporting}
    + [Einführung in das Prozess-Reporting](/help/forms/using/process-reporting/introduction-process-reporting.md)
    + [Erste Schritte mit dem Prozess-Reporting](/help/forms/using/process-reporting/install-start-process-reporting.md)
    + [Funktionsweise von Prozess-Reporting](/help/forms/using/process-reporting/process-reporting-architecture.md)
@@ -705,4 +705,5 @@ ht-degree: 98%
    + [Konfigurieren von und Fehlerbehebung für AEM Forms auf einem JEE-Server-Cluster](developing/configure-server-cluster.md)
    + [Erzeugen und Verwenden von Hashes in dynamischen PDF-Formularen](developing/hashing-forms.md)
    + [Übergeben von Anmeldeinformationen mithilfe von WS-Security-Kopfzeilen](developing/passing-credentials.md)
+   + [Output-Dienst, Forms-Dienst oder DoR-Dienst (Document of Record) können nicht verwendet werden](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
 
