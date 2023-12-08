@@ -2,7 +2,7 @@
 title: AEM Forms – Patch-Installationsanweisungen für AEM Forms
 description: Installationsanweisungen für das AEM Forms Service Pack für die OSGi- und JEE-Umgebung
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: cf5da092fabbc7834108dc54d65eb97e160984ce
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
 source-wordcount: '1711'
 ht-degree: 81%
@@ -17,7 +17,7 @@ ht-degree: 81%
 |---|---|
 | Version | 6.5.19.0 |
 | Typ | Service Pack-Version |
-| Datum | 7. Dezember 2023 |
+| Datum | 8. Dezember 2023 |
 | Download-URL | [Neueste AEM Forms-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) |
 
 >[!NOTE]

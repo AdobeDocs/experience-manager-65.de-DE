@@ -7,10 +7,10 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 1630805be43ce9bb52a8fe1bbe50b2b934d4922c
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3984'
+ht-degree: 39%
 
 ---
 
@@ -197,7 +197,7 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die von d
 - IBM® DB2® wird bei Neuinstallationen nicht unterstützt. Es wird nur für Bestandskunden unterstützt, die auf AEM 6.5 Forms aktualisieren.
 - MongoDB ist eine Drittanbietersoftware und nicht im AEM-Lizenzierungspaket enthalten. Weitere Informationen finden Sie unter [MongoDB-Lizenzierungsrichtlinie](https://www.mongodb.org/about/licensing/).
 - Um Ihre AEM optimal nutzen zu können, empfiehlt Adobe die Lizenzierung der MongoDB Enterprise-Version, um professionellen Support zu erhalten.
-- Die Adobe-Kundenunterstützung hilft beim Qualifizieren von Problemen, die mit der Verwendung von MongoDB mit AEM in Zusammenhang stehen. Weitere Informationen finden Sie auf der Seite für [MongoDB für Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
+- Die Adobe-Kundenunterstützung unterstützt Sie bei der Qualifizierung von Problemen im Zusammenhang mit der Verwendung von MongoDB mit AEM. Weitere Informationen finden Sie auf der Seite für [MongoDB für Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 - „Dateisystem“ umfasst den POSIX-konformen Blockspeicher. Dazu gehört auch die Netzwerkspeichertechnologie. Beachten Sie, dass die Leistung des Dateisystems variieren und die Gesamtleistung beeinflussen kann. Es wird empfohlen, AEM mit dem Netzwerk-/Remote-Dateisystem zu laden.
 - Nur MongoDB Storage Engine WiredTiger wird unterstützt.
 - MongoDB Sharding wird in AEM nicht unterstützt.
@@ -242,12 +242,12 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die von d
    <td><p><strong>Unterstützte Patch-Definitionen</strong></p> </td>
   </tr>
   <tr>
-   <td>Oracle WebLogic Server 12.2.1 (12c R2) (Veraltet)</td>
+   <td>Oracle WebLogic Server 12.2.1 (12c R2) (veraltet) <sup>[9]</sup></td>
    <td>A: Unterstützt</td>
    <td>Service Pack und wichtige Updates</td>
   </tr>
   <tr>
-   <td>Oracle WebLogic Server 14c </td>
+   <td>Oracle WebLogic Server 14c <sup>[9]</sup></td>
    <td>A: Unterstützt</td>
    <td>Service Pack und wichtige Updates</td>
   </tr>
@@ -259,7 +259,7 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die von d
   <tr>
    <td><p>JBoss® Enterprise Application-Plattform (EAP) 7.4 <sup>[2] [3] [7]</sup> </p> </td>
    <td><p>A: Unterstützt</p> </td>
-   <td><p>Patches und kumulative Patches  für die unterstützte EAP-Version</p> </td>
+   <td><p>Patches und kumulative Patches für die unterstützte EAP-Version</p> </td>
   </tr>
  </tbody>
 </table>
@@ -310,7 +310,7 @@ IBM® WebSphere®-Cluster werden nur in Network Deployment-Editionen unterstütz
    <td><p>Service Packs, kumulative Patches und wichtige Sicherheitsupdates</p> </td>
   </tr>
   <tr>
-   <td>Oracle Linux® 7 Update 3  (64-Bit)</td>
+   <td>Oracle Linux® 7 Update 3 (64 Bit)</td>
    <td>A: Unterstützt</td>
    <td>Service Packs, kumulative Patches und wichtige Sicherheitsupdates</td>
   </tr>
@@ -355,6 +355,9 @@ Beachten Sie beim Auswählen einer Plattform für die Einrichtung Ihres AEM Form
 1. AEM Forms on JEE unterstützt WebSphere®-Anwendungsserver unter CentOS nicht.
 1. AEM Forms on JEE unterstützt keine rollenbasierte JBoss®-Zugriffskontrolle (RBAC).
 1. AEM Forms on JEE unterstützt nur Oracle Java™ SE 11 (64 Bit) SDK für Anwendungsserver JBoss® EAP 7.4.
+1. JDK-Versionen, die höher als 1.8.0_281 sind, werden für WebLogic-Server nicht unterstützt. (FORMS-8498)
+1. [!DNL Microsoft® Windows Server 2019] unterstützt nicht [!DNL MySQL 5.7] und [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] unterstützt keine Turnkey-Installationen für [!DNL Experience Manager Forms 6.5.10.0 and later]. (CQDOC-18312)
+
 
 Beachten Sie außerdem die folgenden Punkte bei der Auswahl der Software für Adobe AEM Forms on JEE-Bereitstellungen:
 
@@ -471,19 +474,19 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
 >
 PDF Generator unterstützt nur englische, französische, deutsche und japanische Versionen der unterstützten Betriebssysteme und Anwendungen.
 >
-Zusätzlich gilt Folgendes::
+Außerdem:
 >
 - PDF Generator erfordert 32-Bit-Version von [Acrobat 2020 Klassische Track-Version 20.004.30006](https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html) , um die Konvertierung durchzuführen.
 - PDF Generator unterstützt nur die 32-Bit-Einzelhandelsversion von Microsoft® Office Professional Plus und andere für die Konvertierung erforderliche Software.
 - PDF Generator unterstützt nicht Microsoft® Office 365.
 - PDF Generator-Konvertierungen für OpenOffice werden nur unter Windows und Linux unterstützt®.
 - Die Funktionen von OCR PDF, PDF optimieren und PDF erstellen werden nur unter Windows unterstützt.
-- Eine Version von Acrobat ist im Lieferumfang von AEM Forms enthalten, um die PDF Generator-Funktionalität zu aktivieren. Die gebündelte Version sollte während der Laufzeit der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur programmatisch mit AEM Forms zugänglich sein. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung für Ihre Bereitstellung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
-- Der PDF Generator-Service unterstützt nicht Microsoft® Windows 10.
--PDF Generator kann keine Dateien mit Microsoft® Visio 2019 konvertieren. Sie können weiterhin Microsoft® Visio 2016 verwenden, um .VSD- und .VSDX-Dateien zu konvertieren.
+- Eine Version von Acrobat ist im Lieferumfang von AEM Forms enthalten, um die PDF Generator-Funktionalität zu aktivieren. Die gebündelte Version sollte während der Laufzeit der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur programmatisch mit AEM Forms zugänglich sein. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung entsprechend Ihrer Implementierung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+- Der PDF Generator-Dienst unterstützt Microsoft® Windows 10 nicht.
+-PDF Generator kann Dateien mit Microsoft® Visio 2019 nicht konvertieren. Sie können weiterhin Microsoft® Visio 2016 verwenden, um .VSD- und .VSDX-Dateien zu konvertieren.
 - PDF Generator kann keine Dateien mit Microsoft® Project 2019 konvertieren. Sie können Microsoft® Project 2016 weiterhin verwenden, um .MPP-Dateien zu konvertieren.
-- PDF Generator kann keine Dateien mit Microsoft® Visio 2019 konvertieren.
-- PDF Generator kann keine Dateien mit Microsoft® Project 2019 konvertieren.
+- PDF Generator kann Dateien mit Microsoft® Visio 2019 nicht konvertieren.
+- PDF Generator kann Dateien mit Microsoft® Project 2019 nicht konvertieren.
 >
 
 ### Ausnahmen der Barrierefreiheit {#exceptions-to-accessibility-support}
@@ -873,7 +876,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Hinzugefügte Unterstützung | Support entfernt | Veraltete Unterstützung |
 | -------------- | --------------- | ------------------- |
-| Oracle Java™ SE 11 (64 Bit) SDK für Anwendungsserver JBoss® EAP 7.4. | | [Adobe Acrobat 2017 – Die grundlegende Unterstützung für Adobe Acrobat 2017 endet am 6. Juni 2022.](https://helpx.adobe.com/de/support/programs/eol-matrix.html) |
+| Oracle Java™ SE 11 (64 Bit) SDK für Anwendungsserver JBoss® EAP 7.4. | | [Adobe Acrobat 2017 - Die Kernunterstützung für Adobe Acrobat 2017 endet am 6. Juni 2022.](https://helpx.adobe.com/de/support/programs/eol-matrix.html) |
 |  | | Red Hat® Enterprise Linux® 7 (Kernel 3.x) (64 Bit) |
 |  | | Microsoft® Windows Server 2016 (64 Bit) |
 |  | | Microsoft® Office 2016 |

@@ -6,10 +6,10 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
-source-git-commit: ab40115c373cc06a7600494288b2670deb914e1a
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '2291'
-ht-degree: 52%
+source-wordcount: '2359'
+ht-degree: 50%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 52%
 
 Zwar wird jedes Formular für einen bestimmten Zweck entwickelt, doch enthalten die meisten Formularen einige gängige Elemente (z. B. für persönliche Angaben wie Name und Anschrift, Angaben zu Familienstand, Einkommen usw.). Formularentwicklerinnen und -entwickler müssen diese gängigen Segmente jedes Mal erstellen, wenn ein neues Formular erstellt wird.
 
-Adaptive Formulare bieten einen bequemen Mechanismus, um Formularsegmente wie ein Bedienfeld oder eine Gruppe von Feldern nur einmal zu erstellen und sie in adaptiven Formularen wiederzuverwenden. Diese wiederverwendbaren und eigenständigen Segmente werden als adaptive Formularfragmente bezeichnet.
+Adaptive Formulare bieten einen bequemen Mechanismus, um Formularsegmente wie ein Bedienfeld oder eine Gruppe von Feldern nur einmal zu erstellen und sie in allen adaptiven Formularen wiederzuverwenden. Diese wiederverwendbaren und eigenständigen Segmente werden als adaptive Formularfragmente bezeichnet.
 
 ## Erstellen eines Fragments {#create-a-fragment}
 
@@ -164,6 +164,10 @@ Sie können verschachtelte adaptive Formularfragmente erstellen, d. h. Sie könn
 ### Ändern von Fragmenten {#change-fragments}
 
 Sie können ein adaptives Formularfragment durch ein anderes ersetzen oder ändern, indem Sie **Fragment-Asset auswählen** -Eigenschaft im Dialogfeld &quot;Komponente bearbeiten&quot;für ein adaptives Formularfragment-Bedienfeld.
+
+### Generieren des Datensatzdokuments für adaptives Formularfragment {#generate-DOR-for-fragments}
+
+Mit dem Datensatzdokument (Document of Record, DOR) können Sie Informationen zu Ihren Formularen im Druck- oder Dokumentformat speichern. Dadurch können Sie jederzeit Informationen über Ihre Kunden nachverfolgen und mithilfe des Datensatzdokuments Formulare und Inhalte im PDF-Format archivieren. [Erfahren Sie, wie Sie ein Datensatzdokument für adaptive Formularfragmente generieren](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
 ### Verwenden eines Formularfragments mehrmals in einem adaptiven Formular {#using-form-fragment-mutiple-times-in-af}
 

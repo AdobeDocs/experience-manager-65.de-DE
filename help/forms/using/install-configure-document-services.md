@@ -4,10 +4,10 @@ description: Installieren Sie AEM Forms-Dokumentendienste, um PDF-Dokumente zu e
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '5499'
-ht-degree: 78%
+source-wordcount: '5599'
+ht-degree: 76%
 
 ---
 
@@ -556,6 +556,16 @@ Der Assembler-Dienst hängt vom Reader Extension-Dienst, vom Signature-Dienst, v
   </tr>
  </tbody>
 </table>
+
+### (Nur Windows) Registrierungseintrag für Microsoft® Project konfigurieren {#configure-registry-entry-for-microsoft-project}
+
+Nachdem Sie das AEM Forms-Add-on und Microsoft® Project auf Ihrem Computer installiert haben, registrieren Sie einen Eintrag für Microsoft® Project an der 64-Bit-Stelle. Dies erleichtert die Ausführung von Konversionstests von Projekt zu PDFG. Im Folgenden werden die Schritte beschrieben, die den Registrierungsprozess beschreiben:
+
+1. Öffnen Sie den Microsoft® Windows Registry-Editor (regedit), gehen Sie zum Öffnen des Registrierungs-Editors zu Start > Ausführen, geben Sie regedit ein und klicken Sie auf OK.
+1. Navigieren Sie zu `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat PDFMaker\<version>\Office\SupportedApp`und erstellen Sie eine neue **Binärer Wert** registrieren und umbenennen in **Projekt**.
+1. Ändern Sie den Datenwert der erstellten Binärregistrierung auf 01 und klicken Sie auf OK.
+1. Schließen Sie den Registrierungseintrag.
+
 
 ## Bekannte Probleme und Fehlerbehebung {#known-issues-and-troubleshooting}
 

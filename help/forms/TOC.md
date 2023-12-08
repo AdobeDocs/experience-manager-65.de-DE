@@ -9,10 +9,10 @@ breadcrumb-title: Forms-Anleitung
 user-guide-description: Erstellen, Verwalten, Veröffentlichen und Aktualisieren von digitalen Formularen.
 role: User
 feature: Forms Service
-source-git-commit: cf5da092fabbc7834108dc54d65eb97e160984ce
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '3752'
-ht-degree: 98%
+source-wordcount: '3762'
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 98%
 + [AEM 6.5 Forms-Handbuch](home.md)
 + Versionshinweise {#release-notes-new-features}
    + [Versionshinweise](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=de)
-   + [Übersicht über die neuen Funktionen](using/whats-new.md)
+   + [Neuerungen](/help/forms/using/whats-new.md)
    + [Häufig gestellte Fragen](/help/forms/using/frequently-asked-questions-faq.md)
    + [Veraltete Funktionen](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html?lang=de)
 + Erste Schritte {#getting-started}
@@ -699,11 +699,13 @@ ht-degree: 98%
    + [CRX-Repository kann nicht wiederhergestellt werden](/help/forms/using/restore-crx-repository.md)
    + [Fehler „Dienst nicht verfügbar“ nach der Installation von AEM 6.5.15.0 Service Pack](/help/forms/using/aem-service-pack-installation-solution.md)
    + [Installationsproblem mit dem Service Pack von AEM Forms JEE 6.5.15.0 in der JBoss Linux-Umgebung](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
+   + [Ausführen mehrerer Dienste, auch wenn AEM Forms noch nicht vollständig gestartet wurde](/help/forms/using/executing-multiple-services-even-aem-forms-has-not-started.md)
+   + [Output-Dienst, Forms-Dienst oder DoR-Dienst (Document of Record) können nicht verwendet werden](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
 + Alte Dokumentation {#legacy-documentation}
    + [Verwenden des Service „execute script“ in AEM Forms on JEE Workbench zum Erstellen von XML-Daten](developing/building-xml.md)
    + [Komprimieren und Dekomprimieren von Dateien mithilfe eines benutzerdefinierten DSC von AEM Forms auf JEE](developing/compressing-decompressing-custom-dsc.md)
    + [Konfigurieren von und Fehlerbehebung für AEM Forms auf einem JEE-Server-Cluster](developing/configure-server-cluster.md)
    + [Erzeugen und Verwenden von Hashes in dynamischen PDF-Formularen](developing/hashing-forms.md)
    + [Übergeben von Anmeldeinformationen mithilfe von WS-Security-Kopfzeilen](developing/passing-credentials.md)
-   + [Output-Dienst, Forms-Dienst oder DoR-Dienst (Document of Record) können nicht verwendet werden](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
+
 

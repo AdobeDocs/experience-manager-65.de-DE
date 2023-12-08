@@ -1,146 +1,194 @@
 ---
 title: Übersicht über die neuen Funktionen | AEM 6.5 Forms
-description: Neueste Funktionen und Verbesserungen der Formulare und Dokumente der weltweit fortschrittlichsten Lösung für das Management digitaler Erlebnisse.
+description: Neueste Funktionen und Verbesserungen für AEM Formulare und Dokumente, die weltweit fortschrittlichste Lösung für das digitale Erlebnismanagement.
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '1241'
-ht-degree: 100%
+source-wordcount: '546'
+ht-degree: 4%
 
 ---
 
 # Übersicht über die neuen Funktionen | AEM 6.5 Forms{#new-features-summary-aem-forms}
 
-## Transaktionsberichte {#transaction-reports}
-
-| Version | Artikel-Link |
+| Produkt | Adobe Experience Manager 6.5 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/latest-innovations.html?lang=de) |
-| AEM 6.5 | Dieser Artikel |
+| Version | 6.5.19.0 |
+| Typ | Service Pack-Version |
+| Datum | Samstag, 8. Dezember 2023 |
+
+## Was ist in Adobe Experience Manager 6.5 Forms Service Pack 19 (6.5.19.0) enthalten?
+
+Experience Manager 6.5.19.0 enthält neue Funktionen, wichtige von Kunden angeforderte Verbesserungen, Fehlerbehebungen sowie Leistungs-, Stabilitäts- und Sicherheitsverbesserungen, die seit der ersten Verfügbarkeit von 6.5 im April 2019 veröffentlicht wurden. [Dieses Service Pack installieren](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=de) Experience Manager 6.5.
+
+### Neue Funktionen
+
+#### Neue Kernkomponenten für adaptive Formulare
+
+Vertikale Registerkarten, Geschäftsbedingungen und Kontrollkästchen werden hinzugefügt, um die Skalierbarkeit von Formularen zu verbessern.
+
+* **[Kontrollkästchenkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: Adaptive Forms, die auf Kernkomponenten basiert, kann jetzt eine Kontrollkästchenkomponente enthalten. Sie ermöglicht Benutzern, binäre Entscheidungen zu treffen, eine bestimmte Option auszuwählen oder zu deaktivieren. Es wird normalerweise als kleines Feld angezeigt, auf das geklickt oder getippt werden kann, um zwischen zwei Status zu wechseln: &quot;aktiviert&quot;und &quot;deaktiviert&quot;. Das Kontrollkästchen ist ein gängiges Formularelement, das verwendet wird, um eine Ja/Nein- oder true/false-Auswahl zu geben.
+
+* **[Komponente &quot;Allgemeine Geschäftsbedingungen&quot;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: Adaptive Forms, die auf Kernkomponenten basiert, kann jetzt eine Komponente für Geschäftsbedingungen enthalten. Sie ermöglicht es Formularautoren, einen bestimmten Abschnitt innerhalb des Formulars einzuführen, in dem den Benutzern die Bedingungen oder rechtlichen Vereinbarungen im Zusammenhang mit der Verwendung eines Dienstes, Produkts oder einer Plattform präsentiert werden. Diese Komponente soll Benutzer über die Regeln, Vorschriften und Verpflichtungen informieren, denen sie zustimmen, indem sie das Formular übermitteln.
+
+  ![Vertikale Registerkarten, Geschäftsbedingungen und Kontrollkästchen-Komponenten](/help/forms/using/assets/forms-components.png)
+
+* **[Komponente mit vertikalen Registerkarten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: Der auf Kernkomponenten basierende adaptive Forms kann jetzt Formularinhalte in einer vertikalen Liste von Registerkarten organisieren und so ein strukturiertes und navigierbares Layout bereitstellen. Die Verwendung von vertikalen Registerkarten in einem Formular kann das gesamte Benutzererlebnis verbessern, indem die Navigation vereinfacht und die Organisation des Formularinhalts verbessert wird, insbesondere in Situationen, in denen ein Formular mehrere Abschnitte oder komplexe Informationen enthält.
+
+#### 64-Bit-Version von AEM Forms Designer
+
+Die [64-Bit-Version von AEM Forms Designer](/help/forms/using/installing-configuring-designer.md) bietet verbesserte Leistung, Skalierbarkeit und Speicherverwaltung, um die Erstellung von Formularen zu optimieren. Mit der 64-Bit-Architektur können Sie noch größere und komplexere Projekte einfach angehen, um nahtlose Design-Workflows und eine optimierte Effizienz zu gewährleisten. Verbessern Sie Ihre Formularentwurfskompetenzen und nutzen Sie die Zukunft von AEM Forms Designer mit dieser innovativen Version.
+
+#### Verbinden einer adaptiven Forms-Liste mit Microsoft® SharePoint-Liste
+
+AEM Forms bietet eine OOTB-Integration für [Formulardaten direkt an SharePoint List senden](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)), sodass Sie die Listenfunktionen von SharePoint verwenden können. Sie können die Microsoft® SharePoint-Liste als Datenquelle für ein Formulardatenmodell konfigurieren und die Übermittlungsaktion &quot;Senden mit Formulardatenmodell&quot;verwenden, um ein adaptives Formular mit der SharePoint-Liste zu verbinden.
+
+#### Unterstützung zum Konfigurieren der Eigenschaften des Datensatzdokuments für adaptive Formularfragmente
+
+Sie können jetzt einfach [Anpassen der adaptiven Formularfragmente und ihrer Felder im Editor für adaptive Formulare](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
 
-Mit Transaktionsberichten können Sie die Anzahl der übermittelten Formulare, verarbeiteten Dokumente und gerenderten Dokumente erfassen und nachverfolgen. Das Ziel bei der Verfolgung dieser Transaktionen ist es, eine fundierte Entscheidung über die Produktnutzung und die Neugewichtung der Investitionen in Hardware und Software treffen zu können. Beispiele für Transaktionen:
+## Fehlerbehebungen
 
-* Übermittlung eines adaptiven Formulars, eines HTML5-Formulars oder eines Formularsatzes
-* Ausgabe einer Druck- oder Web-Version einer interaktiven Kommunikation
-* Konvertieren eines Dokuments aus einem Dateiformat in ein anderes
+Die Version enthält auch Fehlerbehebungen für mehr als 20 von Kunden gemeldete Probleme. Eine detaillierte Liste der im Service Pack enthaltenen Fehlerbehebungen finden Sie unter [Versionshinweise](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=en#forms-6519)
 
-Informationen zur Konfiguration und Verwendung von Transaktionsberichten finden Sie in der [Übersicht über Transaktionsberichte](../../forms/using/transaction-reports-overview.md).
 
-![Beispiel für einen Transaktionsbericht](assets/surface_transaction_reporting.png)
+## Service Pack installieren
 
-## Interaktive Kommunikation {#interactive-communications}
+Das Service Pack enthält neue Funktionen und Fehlerkorrekturen für AEM Forms on JEE und AEM Forms unter OSGi. Die Installationsanweisungen haben Änderungen gegenüber vorherigen Service Packs. Installationsanweisungen finden Sie unter [Installationsanweisungen für das AEM Forms Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en).
 
-**Definieren von Anzeigemustern für Daten**
 
-Autoren von interaktiven Kommunikationen können jetzt [Datenanzeigemuster](create-interactive-communication.md#datadisplaypatterns) für Felder, Variablen und Formulardatenmodellelemente definieren. Zum Beispiel Formate für Datum, Währung oder Telefonnummer.
 
-**Verwenden neuer Diagrammtypen**
 
-Sie können jetzt [Quadrantendiagramme und Diagramme mit mehreren Serien](../../forms/using/chart-component-interactive-communications.md) zu interaktiven Kommunikationen hinzufügen.
 
-**Sortieren von Spalten in einer Tabelle**
 
-Sie können in einer interaktiven Kommunikation jetzt [die Spalten einer Tabelle sortieren](../../forms/using/create-interactive-communication.md#sortcolumns). Sie können Tabellenspalten mit statischen Text- oder Datenmodellobjekten binden und sortieren.
+<!-- 
+## Transaction Reports {#transaction-reports}
 
-**Verwenden neuer Komponenten in einem Web-Kanal**
 
-Sie können jetzt Schaltflächen- und Trennzeichenkomponenten zum Web-Kanal hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen einer Schaltflächenkomponente zum Web-Kanal](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel) und [Trennzeichenkomponente im Web-Kanal](../../forms/using/create-interactive-communication.md#separatorcomponent).
 
-**Verwenden des Layout-Modus, um die Größe von Komponenten zu ändern**
+Transaction reports lets you capture and track the number of submitted forms, processed documents, and rendered documents. The objective behind tracking these transactions is to make an informed decision about the product usage and rebalancing investments in hardware and software. Some examples of transactions include:
 
-Sie können jetzt in den [Layout-Modus](../../forms/using/resize-using-layout-mode.md) wechseln, um die Größe von Komponenten im Web-Kanal mithilfe einer WYSIWYG-Oberfläche zu ändern.
+* Submission of an Adaptive Form, an HTML5 Form, or a Form Set
+* Rendition of a print or a web version of an interactive communication
+* Conversion of a document from one file format to another
 
-**Verbesserungen der Benutzerfreundlichkeit**
+For information about configuring and using transaction reports, see [Transaction Reports Overview](../../forms/using/transaction-reports-overview.md).
 
-Autoren von interaktiven Kommunikationen können jetzt verschiedene benutzerfreundliche Vorgänge beim Erstellen von Korrespondenzen verwenden. Die Liste der Vorgänge umfasst:
+![A sample transaction report](assets/surface_transaction_reporting.png)
 
-* [Rückgängig machen und Wiederholen von Aktionen in Druck- und Web-Kanälen](../../forms/using/create-interactive-communication.md#undoredoactions)
-* [Hinzufügen von Variablen in einem Dokumentfragment mithilfe des Symbols @](../../forms/using/texts-interactive-communications.md#searchvariables)
-* [Hinzufügen von Datenmodellelementen in einem Dokumentfragment mithilfe des Symbols @](../../forms/using/texts-interactive-communications.md#searchdatamodelproperties)
-* [Löschen oder Hinzufügen eines Web-Kanals zu einer vorhandenen interaktiven Kommunikation](../../forms/using/create-interactive-communication.md#edit-interactive-communication-properties)
-* [Binden von Datenquellenelementen mit Feldern und Variablen mithilfe von Drag-and-Drop-Aktionen](../../forms/using/create-interactive-communication.md#binddatasourceelements)
-* [Hervorheben von ungebundenen Feldern und Variablen beim Verfassen einer interaktiven Kommunikation](../../forms/using/create-interactive-communication.md#distinguishunboundfields)
-* [Durchführen zusätzlicher Aktionen wie Kopieren, Gruppieren und mehr für vererbte Komponenten in einem Web-Kanal](../../forms/using/create-interactive-communication.md#componenttoolbar)
+## Interactive Communications {#interactive-communications}
 
-**Verbesserungen beim Synchronisierungsprozess**
+**Define data display patterns**
 
-Das Layout des Web-Kanals, das mithilfe des Druckkanals automatisch generiert wird, weist mehrere Verbesserungen auf.
+Interactive Communication authors can now define [data display patterns](create-interactive-communication.md#datadisplaypatterns) for fields, variables, and form data model elements. For example, date, currency, or phone formats.
 
-![Diagramme für interaktive Kommunikationen](assets/interactive-communication-charts.png)
+**Use new types of charts**
 
-## Adaptive Formulare {#adaptive-forms}
+You can now add [Quadrant charts and charts with multiple series](../../forms/using/chart-component-interactive-communications.md) to Interactive Communications.
 
-### Verwendung der Cloud-basierten digitalen Signaturen von Adobe Sign in adaptiven Formularen {#use-adobe-sign-s-cloud-based-digital-signatures-in-adaptive-forms}
+**Sort columns in a table**
 
-[Cloud-basierte digitale Signaturen oder Remote-Signaturen sind eine neue Generation digitaler Signaturen, die über Desktop, Mobilgeräte und das Web funktionieren – sowie höchste Compliance und Sicherheit für die Authentifizierung der Unterzeichner erfüllen. ](https://helpx.adobe.com/de/sign/kb/digital-certificate-providers.html) Sie können jetzt [ein adaptives Formular mit Cloud-basierten digitalen Signaturen signieren](../../forms/using/working-with-adobe-sign.md).
+You can now [sort columns of a table](../../forms/using/create-interactive-communication.md#sortcolumns) in the Interactive Communication. You can bind and sort table columns with static text or data model objects.
 
-#### Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation in Einzelseiten-Programme von AEM Sites {#embed-an-adaptive-form-or-interactive-communcation-in-aem-sites-single-page-applications}
+**Use new components in a web channel**
 
-Mit AEM Forms können Sie ein adaptives Formular oder eine interaktive Kommunikation [nahtlos in ein Einzelseiten-Programm (SPA) von AEM Sites einbetten](../../forms/using/embed-adaptive-form-aem-sites-spa.md). Das eingebettete adaptive Formular ist voll funktionsfähig, und Benutzer können es ausfüllen und absenden, ohne die Seite zu verlassen. Es hilft Benutzern, im Kontext anderer Elemente auf der Web-Seite zu bleiben und gleichzeitig mit dem Formular oder der interaktiven Kommunkation zu interagieren.
+You can now add Button and Separator components to the web channel. For more information, see [Add Button component to the web channel](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel) and [Separator component in web channel](../../forms/using/create-interactive-communication.md#separatorcomponent).
 
-#### Sortieren von Tabellenspalten in adaptiven Formularen {#sort-columns-of-adaptive-form-tables}
+**Layout mode to resize components**
 
-Sie können [jede Spalte einer Tabelle eines adaptiven Formulars](../../forms/using/adaptive-forms-tables.md#sortcolumnstable) in aufsteigender oder absteigender Reihenfolge sortieren. Sie können die Sortierung auf Tabellenspalten mit statischem Text anwenden, aber auch auf welche mit Datenmodellobjekteigenschaften oder einer Kombination aus beiden.
+You can now switch to [Layout mode](../../forms/using/resize-using-layout-mode.md) to resize components in the Web channel using a WYSIWYG interface.
 
-#### Einschränkung der Verfügbarkeit von adaptiven Formular-Vorlagen auf bestimmte Pfade {#restrict-the-availability-of-adaptive-forms-templates-to-specific-paths}
+**Usability improvements**
 
-Adaptive Formulare unterstützen jetzt die Eigenschaft „cq:allowedPaths“. Die Eigenschaft [beschränkt die Verfügbarkeit von adaptiven Formular-Vorlagen auf bestimmte Pfade](creating-adaptive-form.md#adaptive-form-templates).
+Interactive Communication authors can now utilize various easy-to-use operations while creating correspondences. The list of operations includes:
 
-#### Dynamisches Hinzufügen von Kontrollkästchen zum adaptiven Formular {#add-check-boxes-to-the-adaptive-form-dynamically}
+* [Perform undo-redo actions in print and web channels](../../forms/using/create-interactive-communication.md#undoredoactions)
+* [Add variables in a document fragment using @ symbol](../../forms/using/texts-interactive-communications.md#searchvariables)
+* [Add data model elements in a document fragment using @ symbol](../../forms/using/texts-interactive-communications.md#searchdatamodelproperties)
+* [Delete or add a web channel to an existing Interactive Communication](../../forms/using/create-interactive-communication.md#edit-interactive-communication-properties)
+* [Bind data source elements with fields and variables using drag-and-drop actions](../../forms/using/create-interactive-communication.md#binddatasourceelements)
+* [Highlight unbound fields and variables while authoring Interactive Communication](../../forms/using/create-interactive-communication.md#distinguishunboundfields)
+* [Perform additional actions such as copy, group, or more on inherited components in a web channel](../../forms/using/create-interactive-communication.md#componenttoolbar)
 
-Sie können jetzt Regeln definieren, um [dem adaptiven Formular dynamisch Kontrollkästchen hinzuzufügen](../../forms/using/rule-editor.md#setpropertyrule), die auf einer benutzerdefinierten Funktion, einem Formularobjekt oder einer Objekteigenschaft basieren.
+**Improvements in sync process**
 
-## AEM-Workflows {#aem-workflows}
+There are several improvements in the Web channel layout auto-generated using the Print channel.
 
-### Verwenden von Variablen in AEM-Workflows {#use-variables-in-aem-workflows}
+![Interactive Communications Charts](assets/interactive-communication-charts.png)
 
-Variablen ermöglichen es Workflow-Schritten, zur Laufzeit Metadaten zu speichern und an andere Workflow-Schritte zu übergeben. Sie können verschiedene Typen von Variablen zum Speichern unterschiedlicher Datentypen erstellen. Zum Beispiel: Ganzzahlen, Zeichenketten, Dokumente oder Formulardatenmodellinstanzen. In der Regel verwenden Sie eine Variable oder eine Sammlung von Variablen, wenn eine Entscheidung basierend auf dem Wert der Variablen getroffen werden soll oder wenn Informationen gespeichert werden sollen, die Sie später in einem Prozess benötigen.
+## Adaptive Forms {#adaptive-forms}
 
-Variablen sind eine Erweiterung der [MetaDataMap](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)-Schnittstelle, die bereits in der vorherigen Version verfügbar war. Dies spart Zeit bei der Entwicklung von benutzerdefiniertem ECMAScript-Code, der zum Abrufen und Aktualisieren von Metadatenwerten verwendet wird. Sie verwenden weiterhin die MetaDataMap-Schnittstelle und den ECMAScript-Code, um Metadaten zu verändern. Einige Vorteile der Verwendung von Variablen gegenüber MetaDataMap und ECMAScript sind:
+### Use Adobe Sign's cloud-based digital signatures in Adaptive Forms {#use-adobe-sign-s-cloud-based-digital-signatures-in-adaptive-forms}
 
-* Dynamische Speicherung, Aktualisierung und Verwendung von Werten, die in einer Variablen gespeichert sind, im gesamten Workflow, ohne auf benutzerdefinierten Code angewiesen zu sein
-* Abruf und Aktualisierung von Werten direkt in ein Formulardatenmodell und eine Datendatei (XML/JSON) eines übermittelten Formulars
-* Speichern vollständiger Dokumente in einer Variable, um die Dokumentenverarbeitung durchzuführen
+[Cloud-based digital signatures](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) or remote signatures are a new generation of digital signatures that work across desktop, mobile, and the web — and meet the highest levels of compliance and assurance for signer authentication. You can now [sign an Adaptive Form](../../forms/using/working-with-adobe-sign.md) with Cloud-based digital signatures.
 
-Die Schritte „Wechseln zu“ und „ODER Aufteilen“ sowie alle AEM Forms-Workflow-Schritte unterstützen Variablen. Sie können die MetaDataMap-Schnittstelle verwenden, um auf Variablen in Workflow-Schritten zuzugreifen, die über keine native Unterstützung für Variablen verfügen. Weitere Informationen finden Sie unter [Variablen in AEM-Workflows](../../forms/using/variable-in-aem-workflows.md).
+#### Embed an Adaptive Form or Interactive Communication in AEM Sites Single Page Applications {#embed-an-adaptive-form-or-interactive-communcation-in-aem-sites-single-page-applications}
 
-![Festlegen einer Variablen für in einem Workflow](assets/variable.png)
+AEM Forms lets you [seamlessly embed an Adaptive Form](../../forms/using/embed-adaptive-form-aem-sites-spa.md) or Interactive Communication in an AEM Sites single page application (SPA). The embedded Adaptive Form and Interactive Communication is fully functional and users can fill and submit the form without leaving the page. It helps user remain in context of other elements on the web page and simultaneously interact with the adaptive form or Interactive Communication.
 
-#### Verwenden eines Workflows mit verschiedenen adaptiven Formularen  {#use-a-workflow-with-different-adaptive-forms}
+#### Sort columns of Adaptive Form tables {#sort-columns-of-adaptive-form-tables}
 
-Sie können [ein adaptives Formular für den Schritt „Aufgabe zuweisen“](../../forms/using/aem-forms-workflow-step-reference.md#assign-task-step) und „Dokument des Datensatzes“ des formularbasierten Workflows zur Laufzeit angeben. Dies ermöglicht es einem Workflow, mit verschiedenen adaptiven Formularen zu arbeiten. Sie können die Methode zur Auswahl eines adaptiven Formulars beim Entwerfen des Workflows festlegen. Das adaptive Formular kann sich in einem absoluten Pfad befinden, als Payload an den Workflow übermittelt werden oder unter einem über eine Variable berechneten Pfad verfügbar sein.
+You can [sort any column of an Adaptive Form table](../../forms/using/adaptive-forms-tables.md#sortcolumnstable) in an ascending or descending order. You can apply sorting to table columns with static text, data model object properties, or a combination of static text and data model object properties.
 
-#### Nutzung der erweiterten Protokollierungsfunktionen von formularzentrierten Workflow-Schritten {#use-enhanced-logging-capabilities-of-forms-centric-workflow-steps}
+#### Restrict the availability of Adaptive Forms templates to specific paths {#restrict-the-availability-of-adaptive-forms-templates-to-specific-paths}
 
-Die Protokollierungsfunktionen von formularzentrierten Workflow-Schritten sind standardisiert. Jetzt erzeugen alle formularzentrierten Workflow-Schritte ähnlich standardisierte Protokolle. Dies trägt zu einer verbesserten Debugging-Geschwindigkeit bei.
+Adaptive forms has added support for the cq:allowedPaths property. The property [restricts availability of Adaptive Forms templates to specific paths](creating-adaptive-form.md#adaptive-form-templates).
 
-## -Datenintegration {#data-integration}
+#### Add check boxes to the Adaptive Form dynamically {#add-check-boxes-to-the-adaptive-form-dynamically}
 
-Sie haben nun die folgenden Möglichkeiten:
+You can now define rules to [add checkboxes to the Adaptive Form dynamically](../../forms/using/rule-editor.md#setpropertyrule) based on custom function, a form object, or an object property.
 
-* [Eingabedaten überprüfen](../../forms/using/work-with-form-data-model.md#automated-validation-of-input-data) auf der Grundlage einer Liste von Einschränkungen. Dadurch wird sichergestellt, dass nur gültige Daten an die Datenquelle übermittelt werden.
-* [Überschreiben des Standard-Endpunkts](../../forms/using/configure-data-sources.md#configure-soap-web-services), welcher in einer WSDL-Datei (Web Services Description Language) definiert ist.
+## AEM Workflows {#aem-workflows}
 
-* [Überschreiben des Standard](../../forms/using/configure-data-sources.md#configure-restful-web-services) [-Schemas, -Hosts und -Basispfads](../../forms/using/configure-data-sources.md#configure-restful-web-services), die in der Swagger-Definitionsdatei festgelegt sind.
+### Use variables in AEM Workflows {#use-variables-in-aem-workflows}
 
-## Plattform- und Sicherheitsupdates {#platform-and-security-updates}
+Variables enable workflow steps to hold and pass metadata across workflow steps at runtime. You can create different types of variables for storing different types of data. For example, integers, strings, documents, or form data model instances. Typically, you use a variable or a collection of variables when you need to make a decision based on the value that it holds or to store information that you need later in a process.
 
-### Wichtige Plattform-Updates {#major-platform-updates}
+Variables are an extension of [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) interface available in the previous version. It helps save time spent in developing custom ECMAScript code used to retrieve and update metadata values. You continue using MetaDataMap interface and ECMAScript code to manipulate metadata. Some benefits of using variables over MetaDataMap and ECMAScript are:
 
-AEM Forms kann mit einer beliebigen Kombination von unterstützten Betriebssystemen, Anwendungsservern, Datenbanken, Datenbanktreibern, JDK-, LDAP-Servern und E-Mail-Servern eingerichtet werden. Im Folgenden sind die wichtigsten Änderungen bei den [unterstützten Plattformen](../../forms/using/aem-forms-jee-supported-platforms.md) aufgeführt:
+* Dynamically store, update, and use values stored in a variable across the workflow without relying on custom code
+* Retrieve and update values directly to a form data model and data file (XML/JSON ) of a submitted form
+* Store complete documents in a variable to perform document processing
+
+The Go To step, OR Split step, and all AEM Forms workflow steps support variables. You can use MetaDataMap interface to access variables in workflow steps that do not have a native support for variables. For more information, see [Variables in AEM Workflows](../../forms/using/variable-in-aem-workflows.md).
+
+![Setting a variable for in a workflow](assets/variable.png)
+
+#### Use a workflow with different Adaptive Forms  {#use-a-workflow-with-different-adaptive-forms}
+
+You can [specify an Adaptive Form for the assign task](../../forms/using/aem-forms-workflow-step-reference.md#assign-task-step) and document of record step of form-centric workflows on the runtime. It allows a workflow to work with different Adaptive Forms. You can decide the method to select an Adaptive Form while designing the workflow. The Adaptive Form can be located at an absolute path, submitted as payload to the workflow, or available at a path calculated using a variable.
+
+#### Use enhanced logging capabilities of forms-centric workflow steps {#use-enhanced-logging-capabilities-of-forms-centric-workflow-steps}
+
+Logging capabilities of forms-centric workflow steps are standardized. Now, all form-centric workflow steps produce similarly standardized logs. It helps improve debugging speed.
+
+## Data Integration {#data-integration}
+
+You can now:
+
+* [Validate input data](../../forms/using/work-with-form-data-model.md#automated-validation-of-input-data) based on a list of constraints. It helps ensure that only valid data is submitted to data source.
+* [Override default endpoint](../../forms/using/configure-data-sources.md#configure-soap-web-services) defined in a WSDL (Web Services Description Language) file.
+
+* [Override default](../../forms/using/configure-data-sources.md#configure-restful-web-services) [scheme, host, and base path](../../forms/using/configure-data-sources.md#configure-restful-web-services) defined in Swagger definition file.
+
+## Platform and Security updates {#platform-and-security-updates}
+
+### Major platform updates {#major-platform-updates}
+
+AEM Forms can be set up using any combination of supported operating systems, application servers, databases, database drivers, JDK, LDAP servers, and email servers. The following are the major changes in [supported platforms](../../forms/using/aem-forms-jee-supported-platforms.md):
 
 <table>
  <tbody>
   <tr>
-   <td>Komponente</td>
-   <td>Unterstützung entfernt</td>
+   <td>Component</td>
+   <td>Support Removed</td>
   </tr>
   <tr>
-   <td>Betriebssysteme</td>
+   <td>Operating systems</td>
    <td>
     <ul>
      <li>Microsoft Windows Server 2012 R2</li>
@@ -149,15 +197,15 @@ AEM Forms kann mit einer beliebigen Kombination von unterstützten Betriebssyste
     </ul> </td>
   </tr>
   <tr>
-   <td>Anwendungsserver<br /> </td>
+   <td>Application servers<br /> </td>
    <td>
     <ul>
-    <li>WebSphere Liberty Profile</li>
-    <li>Oracle WebLogic </li>
+    <li>WebSphere Liberty profile</li>
+    <li>Oracle WebLogic</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Datenbanken</td>
+   <td>Databases</td>
    <td>
     <ul>
      <li>IBM DB2 <br /> </li>
@@ -165,7 +213,7 @@ AEM Forms kann mit einer beliebigen Kombination von unterstützten Betriebssyste
     </ul> </td>
   </tr>
   <tr>
-   <td>LDAP-Server</td>
+   <td>LDAP servers</td>
    <td>
     <ul>
      <li>Microsoft Active Directory 2012</li>
@@ -174,25 +222,25 @@ AEM Forms kann mit einer beliebigen Kombination von unterstützten Betriebssyste
     </ul> </td>
   </tr>
   <tr>
-   <td>E-Mail-Server</td>
+   <td>Email servers</td>
    <td>
     <ul>
      <li>IBM Lotus Domino 8.5.0 </li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Connectoren</td>
+   <td>Connectors</td>
    <td>
     <ul>
-     <li>Connector für Microsoft Sharepoint 2013</li>
-     <li>Connector für EMC Documentum 7.0</li>
+     <li>Connector for Microsoft Sharepoint 2013</li>
+     <li>Connector for EMC Documentum 7.0</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>AEM Forms-App<br /> </td>
+   <td>AEM Forms app<br /> </td>
    <td>
     <ul>
-     <li>Unterstützung für Windows 8.1</li>
+     <li>Windows 8.1 support</li>
     </ul> </td>
   </tr>
   <tr>
@@ -205,17 +253,19 @@ AEM Forms kann mit einer beliebigen Kombination von unterstützten Betriebssyste
  </tbody>
 </table>
 
-&#42; Wenden Sie sich an den Adobe-Support, um Informationen zur Migration auf eine andere Plattform zu erhalten.
+&#42; Contact Adobe Support for information on migrating to a different platform
 
-#### Neue HTML5-basierte Benutzeroberflächen {#new-html-based-uis}
+#### New HTML5-based UIs {#new-html-based-uis}
 
-Im Einklang mit der geplanten Abschaffung des Adobe Flash Players und der allgemeinen Richtung der Migration von Flash-basierten Inhalten zu Open Standards hat AEM 6.5 Forms die Flash-basierten Benutzeroberflächen von Health Monitor, Process Management, Reader Extension und die Category Management-Benutzeroberfläche der Administration-Console von AEM Forms auf JEE durch HTML5-basierte Benutzeroberflächen ersetzt.
+In line with planned EOL of Adobe Flash Player and overall direction of migrating Flash-based content to open standards, AEM 6.5 Forms has replaced Flash-based UI of Health Monitor, Process Management, Reader Extension, and Category Management UI of AEM Forms on JEE Administration Console with HTML5-based UI.
 
-#### Sicherheitsverbesserungen {#security-improvements}
+#### Security improvements {#security-improvements}
 
-* Die Benutzeroberfläche der Administration-Console von AEM 6.5 Forms auf JEE basiert jetzt auf Apache Struts 2.5.
-* AEM 6.5 Forms verwendet jetzt jQuery zu 3.2.1 und jQuery UI 1.12.1. Siehe die [Upgrade-Dokumentation](/help/forms/home.md) für die Auswirkungen der Änderung.
+* AEM 6.5 Forms on JEE administration console UI is now based on Apache Struts 2.5.
+* AEM 6.5 Forms now uses jQuery to 3.2.1 and jQuery UI 1.12.1. See, [upgrade documentation](/help/forms/home.md) for the impact of the change.
 
-#### Verbesserungen der Barrierefreiheit {#accessibility-improvements}
+#### Accessibility improvements {#accessibility-improvements}
 
-In AEM 6.5 Forms wurde die Barrierefreiheit von AEM Forms Workspace verbessert.
+AEM 6.5 Forms has improved accessibility of AEM Forms Workspace. 
+!-->
+

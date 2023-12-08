@@ -7,14 +7,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '3533'
-ht-degree: 72%
+source-wordcount: '3583'
+ht-degree: 71%
 
 ---
 
-# Generierung eines Datensatzdokuments für adaptive Formulare{#generate-document-of-record-for-adaptive-forms}
+# Generieren von Datensatzdokumenten für adaptive Formulare oder adaptive Formularfragmente {#generate-document-of-record-for-adaptive-forms}
 
 <span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/using/create-an-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
 
@@ -28,7 +28,7 @@ ht-degree: 72%
 
 Nachdem Ihre Kunden ein Formular gesendet haben, möchten sie im Allgemeinen einen Beleg (in gedruckter Form oder im Dokumentformat) über die eingegebenen Informationen behalten, um später darauf Bezug nehmen zu können. Dies wird als Datensatzdokument bezeichnet.
 
-In diesem Artikel wird erläutert, wie Sie ein Datensatzdokument für adaptive Formulare generieren können.
+In diesem Artikel wird erläutert, wie Sie ein Datensatzdokument für adaptive Forms- oder adaptive Formularfragmente generieren können.
 
 >[!NOTE]
 >
@@ -66,6 +66,8 @@ Mit einem Datensatzdokument können Ihre Kunden eine Kopie des übermittelten Fo
 Sie benötigen die folgenden Komponenten, um ein Datensatzdokument für adaptive Formulare zu generieren:
 
 **Adaptives Formular** Das adaptive Formular, für das Sie ein Datensatzdokument generieren möchten.
+
+**Adaptives Formularfragment** Adaptives Formularfragment, für das Sie ein Datensatzdokument generieren möchten.
 
 **Basisvorlage (empfohlen)** Das ist eine in AEM Designer erstellte XFA-Vorlage (XDP-Datei). Eine Basisvorlage wird verwendet, um die Stile und Branding-Informationen für die Datensatzdokument-Vorlage festzulegen.
 
@@ -271,7 +273,7 @@ Sie können ein Formularmodell auch bei der Erstellung eines Formulars auswähle
    >
    >Achten Sie auf der Registerkarte „Formularmodell“ darauf, dass Sie **Schema** oder **Ohne** aus dem Dropdown-Menü **Auswählen** auswählen. **[!UICONTROL Das Datensatzdokument wird nicht für XFA-basierte oder adaptive Formulare mit einer Formularvorlage als Formularmodell unterstützt.]**
 
-1. Wählen Sie auf der Registerkarte „Formularmodell“ im Abschnitt „Konfiguration der Datensatzdokument-Vorlage“ eine der folgenden Optionen aus.
+1. Wählen Sie auf der Registerkarte &quot;Formularmodell&quot;im Abschnitt Konfiguration der Datensatzvorlagenkonfiguration eine der folgenden Optionen aus:
 
    **Keine** Wählen Sie diese Option aus, wenn Sie kein Datensatzdokument für das Formular konfigurieren möchten.
 
@@ -394,6 +396,10 @@ Die Datensatzdokument-Einstellungen einer Komponente sind unter den Eigenschafte
    * **[!UICONTROL Überlauf]** > **[!UICONTROL Wechseln zum Inhaltsbereich]** > Name des Inhaltsbereichs: Startet das Füllen des angegebenen Inhaltsbereichs.
    * **[!UICONTROL Überlauf]** > **[!UICONTROL Wechseln zu Seite]** > Name der Seite: Startet das Füllen der angegebenen Seite.
 
+  >[!NOTE]
+  >
+  > Die Eigenschaft &quot;Paginierung&quot;ist nicht für adaptive Formularfragmente verfügbar.
+
 Informationen zum Anwenden von Seitenumbrüchen und zum Anwenden mehrerer Master-Seiten in einem Datensatzdokument finden Sie unter [Anwenden eines Seitenumbruchs in einem Datensatzdokument](#apply-page-breaks-in-dor) und [Anwenden mehrerer Master-Seiten auf ein Datensatzdokument](#apply-multiple-master-pages-dor).
 
 **Einstellungen auf Formularebene**
@@ -436,6 +442,9 @@ AEM Forms wendet die zweite Master-Seite auf das Bedienfeld und alle nachfolgend
 1. Auswählen ![Speichern](/help/forms/using/assets/save_icon.png) , um die Eigenschaften zu speichern.
 AEM Forms wendet die dritte Master-Seite auf das Bedienfeld und alle nachfolgenden Bedienfelder im adaptiven Formular an.
 
+>[!NOTE]
+>
+> Sie können nicht mehrere Masterseiten auf ein Datensatzdokument für ein adaptives Formularfragment anwenden.
 
 ## Wichtige Aspekte beim Arbeiten mit einem Datensatzdokument {#key-considerations-when-working-with-document-of-record}
 

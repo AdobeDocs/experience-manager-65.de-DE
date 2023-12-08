@@ -3,10 +3,10 @@ title: Technische Anforderungen
 description: In diesem Dokument werden die unterstützten Client- und Server-Plattformen für Adobe Experience Manager aufgeführt.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '3597'
-ht-degree: 89%
+source-wordcount: '3625'
+ht-degree: 86%
 
 ---
 
@@ -202,6 +202,15 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
 1. Linux® Kernel 2.6, 3. x, 4. x und 5. x umfasst Derivate der Red Hat-Verteilung, einschließlich Red Hat® Enterprise Linux®, CentOS, Oracle Linux und Amazon Linux®. Die Add-on-Funktionen von AEM Forms werden nur unter CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 und Red Hat® Enterprise Linux® 9 unterstützt.
 1. AEM Forms wird auf Ubuntu 20.04 LTS unterstützt.
 1. Die Linux®-Verteilung wird von Adobe Managed Services unterstützt.
+
+   >[HINWEIS!]
+Für Linux-basierte Server (OSGI- und JEE-Stack) erfordert das AEM Forms-Add-on Laufzeitabhängigkeiten wie:
+   * glibc.x86_64 (2.17-196)
+   * libX11.x86_64 (1.6.7-4)
+   * zlib.x86-64 (1.2.7-17)
+   * libxcb.x86_64 (1.13-1.el7)
+   * libXau.x86_64 (1.0.8-2.1.el7)
+
 1. Produktionsimplementierungen von Microsoft® Windows werden für Kundinnen und Kunden unterstützt, die ein Upgrade auf 6.5 durchführen, sowie für die Nutzung außerhalb der Produktion. Neue Bereitstellungen erfolgen auf Anfrage für AEM Sites und Assets.
 1. AEM Forms wird auf Microsoft Windows® Server ohne die Einschränkungen von Support-Level R unterstützt.
 1. AEM Forms unterstützt Microsoft® Windows Server 2016 nicht mehr.
@@ -215,7 +224,6 @@ Wenn Sie AEM Forms 6.5 installieren, stellen Sie sicher, dass Sie die folgenden 
 * Microsoft® Visual C++ 2012 Redistributable
 * Microsoft® Visual C++ 2013 Redistributable
 * Microsoft® Visual C++ 2019 (VC14.28 oder höher) Redistributable
-
 
 
 ### Virtuelle und Cloud-Computing-Umgebungen {#virtual-cloud-computing-environments}
@@ -349,11 +357,11 @@ Der Betrieb ist nahtlos, da keine spezielle Konfiguration erforderlich ist. Sie 
 
 Wenn eine IP-Adresse angegeben werden muss, können Sie (nach Bedarf) aus folgenden Optionen auswählen:
 
-* Eine IPv6-Adresse. Zum Beispiel `https://[ab12::34c5:6d7:8e90:1234]:4502`
+* Eine IPv6-Adresse. Beispiel: `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
-* Eine IPv4-Adresse. Zum Beispiel `https://123.1.1.4:4502`
+* Eine IPv4-Adresse. Beispiel: `https://123.1.1.4:4502`
 
-* Ein Server-Name. Zum Beispiel `https://www.yourserver.com:4502`
+* Ein Servername. Beispiel: `https://www.yourserver.com:4502`
 
 * Der Standardfall `localhost` wird für IPv4- und IPv6-Netzwerkinstallationen angenommen. Beispiel: `https://localhost:4502`
 
@@ -520,7 +528,8 @@ Zusätzlich gilt Folgendes:
 * Beschleuniger für Video-Hardware (optional)
 * Acrobat Pro DC, Acrobat Standard DC oder Adobe Acrobat Reader DC
 * Administratorrechte für die Installation von Designer
-* Microsoft Visual C++ 2019 (VC 14.28 oder höher) 32-Bit-Runtime
+* Microsoft Visual C++ 2019 (VC 14.28 oder höher) 32-Bit-Laufzeit für 32-Bit-AEM Forms Designer
+* Microsoft Visual C++ 2019 (VC 14.28 oder höher) 64-Bit-Laufzeitumgebung für AEM Forms Designer 64-Bit (sowohl für OSGI- als auch JEE-Stack)
 
 ### Anforderungen für das Zurückschreiben von XMP-Metadaten der AEM Assets {#requirements-for-aem-assets-xmp-metadata-write-back}
 
@@ -535,6 +544,6 @@ Das Zurückschreiben von XMP-Daten wird für die folgenden Plattformen und Datei
 
 * **Dateiformate**: JPEG, PNG, TIFF, PDF, INDD, AI und EPS.
 
-### Anforderungen für die Verarbeitung von Metadaten-lastigen Assets durch AEM Assets unter Linux® {#assetsonlinux}
+### Anforderungen an AEM Assets zur Verarbeitung von Metadaten-lastigen Assets unter Linux® {#assetsonlinux}
 
 Für den XMPFilesProcessor-Prozess muss die Bibliothek GLIBC_2.14 funktionieren. Verwenden Sie einen Linux®-Kernel, der GLIBC_2.14 enthält, z. B. Linux® Kernel Version 3.1.x. Sie verbessert die Leistung bei der Verarbeitung von Assets, die eine große Menge an Metadaten enthalten, z. B. PSD-Dateien. Die Verwendung einer früheren Version von GLIBC führt zu Fehlern in Protokollen, die mit `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP` beginnen.

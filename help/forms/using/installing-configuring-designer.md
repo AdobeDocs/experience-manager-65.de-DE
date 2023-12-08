@@ -1,6 +1,7 @@
 ---
 title: Installieren und Konfiguration von Designer
 description: Designer ist als eigenständiges Installationsprogramm sowie als Teil von WorkBench verfügbar. Erfahren Sie, wie Sie Designer als eigenständige Anwendung installieren.
+uuid: c5b779d1-cb6a-48f4-87d6-48464753e516
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
@@ -8,10 +9,10 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 96%
+source-wordcount: '578'
+ht-degree: 80%
 
 ---
 
@@ -19,22 +20,41 @@ ht-degree: 96%
 
 ## Voraussetzungen {#pre-requisites}
 
-* Installieren Sie die 32-Bit-Version von [Visual C++ 2019 Redistributable (x86)](https://learn.microsoft.com/de-de/cpp/windows/latest-supported-vc-redist?view=msvc-170). Stellen Sie vor Installationsbeginn sicher, dass die oben genannten Redistributable Runtime Packages installiert sind.
++++ Für 64-Bit-AEM Forms Designer (empfohlen)
+
+* 64-Bit-Version von installieren  [Visual C++ 2019 Redistributable (x64)](https://learn.microsoft.com/de-de/cpp/windows/latest-supported-vc-redist?view=msvc-170). Stellen Sie vor Installationsbeginn sicher, dass die oben genannten Redistributable Runtime Packages installiert sind.
 * Eine Benutzerin bzw. ein Benutzer mit Administratorrechten zum Installieren oder Deinstallieren von AEM Forms Designer.
+
++++
+
++++ Für 32-Bit-AEM Forms Designer
+
+* 32-Bit-Version von installieren  [Visual C++ 2019 Redistributable (x64)](https://learn.microsoft.com/de-de/cpp/windows/latest-supported-vc-redist?view=msvc-170). Stellen Sie vor Installationsbeginn sicher, dass die oben genannten Redistributable Runtime Packages installiert sind.
+* Eine Benutzerin bzw. ein Benutzer mit Administratorrechten zum Installieren oder Deinstallieren von AEM Forms Designer.
+
++++
+
 
 ## Installieren von AEM Forms Designer {#install-designer}
 
 Designer ist als eigenständiges Installationsprogramm sowie als Teil von WorkBench verfügbar. Wenn Sie ein eigenständiges Installationsprogramm für AEM Forms Designer verwenden, führen Sie die folgenden Schritte aus:
 
 1. Deinstallieren Sie die vorherige Version von AEM Forms Designer, falls sie installiert ist.
-1. Laden Sie Designer von der [Lizenzierungs-Webseite von Adobe](https://licensing.adobe.com/) herunter.
+1. Laden Sie den 64-Bit-AEM Forms Designer (empfohlen) oder den 32-Bit-AEM Forms-Designer entsprechend Ihren Anforderungen herunter.
 
    >[!NOTE]
-   >
-   > * Ab Adobe Experience Manager 6.5 Forms Service Pack 15 (6.5.15.0) umfasst die Version von Forms Designer auch die Version des Service Packs. Beispielsweise ist 6.5.15.20221112.1.0 die Versionsnummer für Service Pack 15. Hier ist 6.5.15 die Version des Service Packs.
+   > 
+   >* Forms Designer mit 32-Bit-Version wird ab AEM Version 6.5 Forms Service Packs 20 (6.5.20.0) nicht mehr unterstützt. Adobe empfiehlt ein Upgrade auf Forms Designer 64-Bit.
+   >* Forms Designer mit 64 Bit ist nur für AEM 6.5 Forms Service Packs 19 (6.5.19.0) oder neuere Versionen verfügbar.
+   >* Ab Adobe Experience Manager 6.5 Forms Service Pack 15 (6.5.15.0) umfasst die Version von Forms Designer auch die Version des Service Packs. Beispielsweise ist 6.5.15.20221112.1.0 die Versionsnummer für Service Pack 15. Hier ist 6.5.15 die Version des Service Packs.
 
 1. Starten Sie das Installationsprogramm für AEM Forms Designer, indem Sie auf die Datei „setup.exe“ doppelklicken.
 1. Fahren Sie fort und geben Sie Ihre Details und die Seriennummer auf dem Bildschirm „Personalisierung“ an.
+
+   >[!NOTE]
+   >
+   >* Forms Designer-Lizenzschlüssel abrufen von [Adobe Licensing-Website](https://licensing.adobe.com/).
+
 1. Wenn Sie die Lizenzvereinbarung akzeptieren, klicken Sie auf Weiter, um fortzufahren.
 1. (Optional) Ändern Sie den standardmäßigen Installationspfad, wenn Sie Designer an einem anderen Speicherort installieren möchten. Klicken Sie auf Weiter.
 1. Klicken Sie auf Zurück, um gegebenenfalls die Voreinstellungen zu ändern. Um Designer zu installieren, klicken Sie auf Installieren.

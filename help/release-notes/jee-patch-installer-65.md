@@ -3,10 +3,10 @@ title: AEM Forms JEE-Patch-Installationsprogramm
 description: Erfahren Sie, wie Sie mit dem AEM Forms JEE Patch-Installationsprogramm Probleme in AEM 6.5 Forms-Komponenten beheben können.
 content-type: reference
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 94%
+source-wordcount: '528'
+ht-degree: 88%
 
 ---
 
@@ -53,7 +53,7 @@ Wechseln Sie in den entsprechenden Ordner und geben Sie an einer Eingabeaufforde
 1. **[Nur für Windows]:** Gehen Sie wie folgt vor:
    * Sie können entweder die Option **Configuration Manager starten** deaktivieren, bevor Sie auf **[!UICONTROL Fertig]** klicken. Führen Sie **Configuration Manager** durch Verwendung der Datei **ConfigurationManager.bat** in `[aem-forms root]\configurationManager\bin` aus.
 
-   * Oder deaktivieren Sie die Option **Configuration Manager starten**, bevor Sie auf **[!UICONTROL Fertig]** klicken. Navigieren Sie vor der Ausführung von **Configuration Manager** mit **ConfigurationManager.exe** oder **ConfigurationManager_IPv6.exe** zum Verzeichnis *`<AEMForms_Install_Dir>\configurationManager\bin`* und ersetzen Sie die Dateien [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) und [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax).
+   * Oder deaktivieren Sie die Option **Configuration Manager starten**, bevor Sie auf **[!UICONTROL Fertig]** klicken. Vor der Ausführung **Configuration Manager** using **ConfigurationManager.exe** oder **ConfigurationManager_IPv6.exe**, navigieren Sie zu *`<AEMForms_Install_Dir>\configurationManager\bin`* und ersetzen Sie **ConfigurationManager.lax** und **ConfigurationManager_IPV6.lax** mit der neuesten [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) und [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) Dateien, Suchen und Ersetzen **axis-1.4.1.1.jar** mit **axis-1.4.1.2.jar** in diesen beiden Dateien.
 
    >[!NOTE]
    >
