@@ -1,16 +1,16 @@
 ---
 title: Unterstützte Plattformen für AEM Forms on JEE
-description: Liste der für die Installation von AEM Forms on JEE erforderlichen und unterstützten Infrastrukturkomponenten
+description: Liste der Infrastrukturkomponenten, die für die Installation von AEM Forms on JEE erforderlich sind und unterstützt werden
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
 workflow-type: tm+mt
-source-wordcount: '3984'
-ht-degree: 39%
+source-wordcount: '3976'
+ht-degree: 88%
 
 ---
 
@@ -22,19 +22,19 @@ ht-degree: 39%
 <div class="preview">
 
 Adobe hat ein [Vollinstallationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) mit AEM 6.5 Forms Service Pack 18 (6.5.18.0) on JEE zusammen mit den Patch-Installationsprogrammen veröffentlicht. Das vollständige Installationsprogramm unterstützt neue Plattformen, während das Patch-Installationsprogramm nur Fehlerkorrekturen enthält.
-Wenn Sie eine Neuinstallation durchführen oder die neueste Software für Ihre AEM 6.5 Forms on JEE-Umgebung verwenden möchten, empfiehlt Adobe die Verwendung von [AEM 6.5.18.0 Forms on JEE-Installationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) veröffentlicht am 31. August 2023 anstelle AEM am 8. April 2019 veröffentlichten Forms-Installationsprogramms für 6.5.12 oder AEM am 03. März 2022 veröffentlichte Forms-Installationsprogramm für 6.5.12.
+Wenn Sie eine Neuinstallation durchführen oder die Verwendung der neuesten Software für Ihre AEM 6.5 Forms on JEE-Umgebung planen, empfiehlt Adobe die Verwendung des [Vollinstallationsprogramms für AEM 6.5.18.0 Forms on JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) vom 31. August 2023 anstelle des AEM 6.5 Forms-Installationsprogramms vom 08. April 2019 oder des AEM 6.5.12 Forms-Installationsprogramms vom 03. März 2022.
 
 </div>
 
 ### Unterstützungsebenen {#support-levels}
 
-AEM Forms on JEE-Server kann mit einer beliebigen Kombination von unterstützten Betriebssystemen, Anwendungsservern, Datenbanken, Datenbanktreibern, JDK-, LDAP-Servern und E-Mail-Servern eingerichtet werden.
+AEM Forms on JEE-Server kann mit einer beliebigen Kombination von unterstützten Betriebssystemen, Anwendungs-Servern, Datenbanken, Datenbanktreibern, JDK-, LDAP-Servern und E-Mail-Servern eingerichtet werden.
 
-In diesem Dokument werden die unterstützten Client- und Serverplattformen für AEM Forms on JEE aufgeführt. Adobe bietet mehrere Unterstützungsebenen, sowohl für Adobe empfohlene Konfigurationen als auch für andere Konfigurationen. Das Dokument listet auch andere unterstützte Software und deren Versionen, Ausnahmen, Patch-Definitionen und Richtlinien zur Unterstützung von Software-Patches von Drittanbietern auf.
+In diesem Dokument werden die unterstützten Client- und Server-Plattformen für AEM Forms on JEE aufgeführt. Adobe bietet verschiedene Unterstützungsebenen an, die für von Adobe empfohlene und andere Konfigurationen gelten. In diesem Dokument werden auch andere unterstützte Software und deren Versionen, Ausnahmen, Patch-Definitionen sowie die Richtlinien zur Unterstützung für Software-Patches von Drittanbietern aufgeführt.
 
 >[!NOTE]
 >
->- Eine vollständige Liste der Ausnahmen für unterstützte Serverplattformen finden Sie unter [Ausnahmen für unterstützte Serverplattformen](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
+>- Eine vollständige Liste der Ausnahmen für unterstütze Server-Plattformen finden Sie unter [Ausnahmen für unterstützte Server-Plattformen](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
 >- AEM Forms on JEE unterstützt nur englische, französische, deutsche und japanische Versionen der unterstützten Betriebssysteme und Anwendungen.
 
 ### Upgrade- und Support-Richtlinie
@@ -55,7 +55,7 @@ In diesem Dokument werden die unterstützten Client- und Serverplattformen für 
 
 ### Empfohlene Konfigurationen {#recommendedconfigurations}
 
-Adobe empfiehlt diese Konfigurationen und bietet vollständige oder eingeschränkte Unterstützung im Rahmen des Standard-Software-Wartungsvertrags:
+Adobe empfiehlt die folgenden Konfigurationen und bietet vollständige oder eingeschränkte Unterstützung im Rahmen des Standard-Software-Wartungsvertrags:
 
 <table>
  <tbody>
@@ -69,11 +69,11 @@ Adobe empfiehlt diese Konfigurationen und bietet vollständige oder eingeschrän
   </tr>
   <tr>
    <td>R: Eingeschränkte Unterstützung </td>
-   <td>Adobe unterstützt diese Konfiguration vollständig, wenn bestimmte Voraussetzungen erfüllt sind. Wenden Sie sich an den Support von Adobe Enterprise, um mehr über die Voraussetzungen zu erfahren und eine Supportanfrage zu stellen.</td>
+   <td>Adobe bietet vollständige Unterstützung für diese Konfiguration, sofern bestimmte Voraussetzungen erfüllt sind. Kontaktieren Sie den Unternehmens-Support von Adobe, um mehr über die Voraussetzungen zu erfahren und stellen Sie eine Supportanfrage.</td>
   </tr>
   <tr>
-   <td>L: Eingeschränkte Unterstützung</td>
-   <td>Adobe bietet vollständige Unterstützung und Wartung für diese Konfiguration, wenn bestimmte Voraussetzungen erfüllt sind. Nicht alle Funktionen sind in der Konfiguration verfügbar. Wenden Sie sich an den Support von Adobe Enterprise, um mehr über die Voraussetzungen zu erfahren und eine Supportanfrage zu stellen.<br /> </td>
+   <td>L: Begrenzte Unterstützung</td>
+   <td>Adobe bietet vollständige Unterstützung und Wartung für diese Konfiguration, sofern bestimmte Voraussetzungen erfüllt sind. In der Konfiguration sind nicht alle Funktionen verfügbar. Kontaktieren Sie den Unternehmens-Support von Adobe, um mehr über die Voraussetzungen zu erfahren, und stellen Sie eine Supportanfrage.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -87,20 +87,20 @@ Adobe empfiehlt diese Konfigurationen und bietet vollständige oder eingeschrän
 
 >[!NOTE]
 >
->Um Kunden von AEM Forms dabei zu helfen, die Nutzungskosten zu reduzieren, die Bereitstellungsarchitektur zu vereinfachen und den Entwicklungs-Stack zu modernisieren, wird die Enterprise-Plattform Adobe Experience Manager von Anwendungsserver-basierten Bereitstellungen auf eigenständige OSGi-basierte Bereitstellungen umgestellt. Adobe unterstützt weiterhin den JEE-Stack von AEM Forms mit einer reduzierten Matrix von Infrastrukturkomponenten.
+>Um Kunden und Kundinnen von AEM Forms dabei zu helfen, die Nutzungskosten zu reduzieren, die Bereitstellungsarchitektur zu vereinfachen und den Entwicklungs-Stack zu modernisieren, wird die Enterprise-Plattform Adobe Experience Manager von Anwendungsserver-basierten Bereitstellungen auf eigenständige OSGi-basierte Bereitstellungen umgestellt. Adobe unterstützt weiterhin den JEE-Stack von AEM Forms mit einer reduzierten Matrix von Infrastrukturkomponenten.
 >
->Mit Version 6.5 werden Infrastrukturkomponenten, die von Adobe-Kunden am wenigsten genutzt werden, nicht mehr wie folgt unterstützt:
+>Mit der Veröffentlichung von 6.5 werden die folgenden Infrastrukturkomponenten, die von Adobe-Kundinnen und -Kunden am wenigsten genutzt werden, nicht mehr unterstützt:
 >
 >- IBM® DB2®-Datenbank
-- IBM® AIX® und Sun Solaris™ Betriebssysteme
+- IBM® AIX®- und Sun Solaris™-Betriebssysteme
 >
-Bei neuen Installationen wird empfohlen, AEM Forms auf dem modernen OSGi-Stack bereitzustellen, um die neuesten Innovationen rund um das responsive adaptive Forms für mobile, interaktive mehrkanalige Kommunikation und Backend-Datenintegrationen mithilfe des Formulardatenmodells zu verwenden.
+Bei neuen Installationen wird empfohlen, AEM Forms möglichst auf dem modernen OSGi-Stack bereitzustellen, um die neuesten Innovationen für responsive Adaptive Forms für mobile, interaktive mehrkanalige Kommunikation und Backend-Datenintegrationen mithilfe des Formulardatenmodells optimal zu nutzen.
 >
-Adobe erkennt, dass bestehende Benutzer AEM Forms on JEE Stack weiterhin bereitstellen müssen. In solchen Fällen erfordert Adobe die Bereitstellung von AEM Forms JEE auf unterstützter Infrastruktur, wie in dieser Dokumentation beschrieben. Wenn Sie ein Upgrade auf AEM 6.5 Forms durchführen und eine nicht unterstützte Plattform aus der vorherigen Version von AEM Forms verwenden, können Sie sich an den Adobe Support wenden, um Hilfe beim Upgrade auf eine unterstützte Plattform zu erhalten.
+Adobe erkennt an, dass bestehende Benutzerinnen und Benutzer AEM Forms on JEE Stack weiterhin bereitstellen müssen. In solchen Fällen erfordert Adobe die Bereitstellung von AEM Forms JEE auf unterstützter Infrastruktur, wie in dieser Dokumentation beschrieben. Wenn Sie ein Upgrade auf AEM 6.5 Forms durchführen und eine nicht unterstützte Plattform aus der vorherigen Version von AEM Forms verwenden, können Sie sich an den Adobe Support wenden, um Hilfe beim Upgrade auf eine unterstützte Plattform zu erhalten.
 
 ### Java™ Virtual Machines (JVM) {#java-virtual-machines-jvm}
 
-Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die von der Java™ Development Kit-Distribution (JDK) bereitgestellt wird. Adobe Experience Manager funktioniert mit den folgenden Versionen der Java™ Virtual Machine:
+Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die durch die Java™ Development Kit(JDK)-Verteilung bereitgestellt wird. Adobe Experience Manager funktioniert mit den folgenden Versionen der Java™ Virtual Machine:
 
 <table>
  <tbody>
@@ -115,12 +115,12 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die von d
    <td><p>Nebenversionen und Updates </p> </td>
   </tr>
   <tr>
-   <td>Azul Zulu OpenJDK 11 - 64 Bit</td>
+   <td>Azul Zulu OpenJDK 11 – 64 Bit</td>
    <td>Z: Nicht unterstützt</td>
    <td><p> </p> </td>
   </tr>
   <tr>
-   <td>Azul Zulu OpenJDK 8 - 64 Bit</td>
+   <td>Azul Zulu OpenJDK 8 – 64 Bit</td>
    <td>Z: Nicht unterstützt</td>
    <td><p> </p> </td>
   </tr>
@@ -144,8 +144,8 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die von d
 
 >[!NOTE]
 >
-- Verfolgen Sie die Sicherheitsbulletins des Java™-Anbieters, um die Sicherheit der Produktionsumgebungen sicherzustellen und die neuesten Java™-Aktualisierungen zu installieren.
-- AEM Forms on JEE unterstützt nur 64-Bit-JVMs in Produktionsumgebungen.
+- Verfolgen Sie die Sicherheitsbulletins vom Java™-Anbieter, um den Schutz und die Sicherheit von Produktionsumgebungen sicherzustellen und die neuesten Java™-Aktualisierungen zu installieren.
+- AEM Forms on JEE unterstützt nur 64-Bit-JVMs für Produktionsumgebungen.
 
 ### Datenbanken und CRX-Persistenz {#databases-and-crx-persistence}
 
@@ -181,7 +181,7 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die von d
    <td><p>Unterstützt</p> </td>
   </tr>
   <tr>
-   <td>IBM® DB2® 11.1 (überholt)</td>
+   <td>IBM® DB2® 11.1 (veraltet)</td>
    <td>Repository-Mikro-Kernel</td>
    <td>R: Eingeschränkte Unterstützung </td>
   </tr>
@@ -194,16 +194,16 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die von d
  </tbody>
 </table>
 
-- IBM® DB2® wird bei Neuinstallationen nicht unterstützt. Es wird nur für Bestandskunden unterstützt, die auf AEM 6.5 Forms aktualisieren.
-- MongoDB ist eine Drittanbietersoftware und nicht im AEM-Lizenzierungspaket enthalten. Weitere Informationen finden Sie unter [MongoDB-Lizenzierungsrichtlinie](https://www.mongodb.org/about/licensing/).
-- Um Ihre AEM optimal nutzen zu können, empfiehlt Adobe die Lizenzierung der MongoDB Enterprise-Version, um professionellen Support zu erhalten.
-- Die Adobe-Kundenunterstützung unterstützt Sie bei der Qualifizierung von Problemen im Zusammenhang mit der Verwendung von MongoDB mit AEM. Weitere Informationen finden Sie auf der Seite für [MongoDB für Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
-- „Dateisystem“ umfasst den POSIX-konformen Blockspeicher. Dazu gehört auch die Netzwerkspeichertechnologie. Beachten Sie, dass die Leistung des Dateisystems variieren und die Gesamtleistung beeinflussen kann. Es wird empfohlen, AEM mit dem Netzwerk-/Remote-Dateisystem zu laden.
+- IBM® DB2® wird bei Neuinstallationen nicht unterstützt. Es wird nur für bestehende Kundinnen und Kunden unterstützt, die auf AEM 6.5 Forms aktualisieren.
+- MongoDB ist eine Drittanbieter-Software und nicht im AEM-Lizenzierungspaket enthalten. Weitere Informationen finden Sie in der [MongoDB-Lizenzierungsrichtlinie](https://www.mongodb.org/about/licensing/).
+- Adobe empfiehlt die Lizenzierung der MongoDB Enterprise-Version, damit Sie von professioneller Unterstützung profitieren und die AEM-Bereitstellung optimal nutzen können.
+- Die Adobe-Kundenunterstützung hilft beim Qualifizieren von Problemen, die mit der Verwendung von MongoDB mit AEM in Zusammenhang stehen. Weitere Informationen finden Sie auf der Seite von [MongoDB für Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
+- „Dateisystem“ umfasst den POSIX-konformen Blockspeicher. Dazu gehört auch die Netzwerkspeichertechnologie. Beachten Sie, dass die Leistung des Dateisystems variieren und die Gesamtleistung beeinflussen kann. Es wird empfohlen, AEM mit dem Netzwerk-/Remote-Dateisystem zu laden und zu testen.
 - Nur MongoDB Storage Engine WiredTiger wird unterstützt.
 - MongoDB Sharding wird in AEM nicht unterstützt.
-- AEM Forms on JEE unterstützt keine MySQL für RDBMK-Persistenz.
-- Das Document Security-Modul verwendet kein Content Repository. Dies bedeutet, dass Sie, wenn Sie nur Document Security verwenden und nicht HTML Workspace, HTML5-Formulare oder adaptive Formulare verwenden möchten, Content Repository nicht installieren.
-- AEM Forms on JEE unterstützt nicht die Verwendung von MySQL für die Persistenz AEM Repositorys (CRX-Repository).
+- AEM Forms on JEE unterstützt MySQL für RDBMK-Persistenz nicht.
+- Das Document Security-Modul verwendet nicht das Content-Repository. Das bedeutet, wenn Sie nur Document Security und nicht HTML Workspace, HTML5 Forms und adaptive Formulare verwenden möchten, müssen Sie das Content-Repository nicht installieren.
+- AEM Forms auf JEE unterstützt nicht die Verwendung von MySQL für das persistente AEM Repository (CRX-Repository).
 
 ### Datenbanktreiber {#database-drivers}
 
@@ -222,7 +222,7 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die von d
   <tr>
    <td>Microsoft® SQL Server<br /> </td>
    <td><p>Microsoft® SQL Server JDBC-Treiber 8.2.2<br /> </p> <p>sqljdbc8.jar</p> </td>
-   <td><p>Laden Sie von der Microsoft®-Website herunter.</p> </td>
+   <td><p>Laden Sie dies von der Microsoft®-Website herunter.</p> </td>
   </tr>
   <tr>
    <td>Oracle</td>
@@ -268,7 +268,7 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die von d
 >
 IBM® WebSphere®-Cluster werden nur in Network Deployment-Editionen unterstützt.
 
-### Serverbetriebssysteme {#server-operating-systems}
+### Server-Betriebssysteme {#server-operating-systems}
 
 #### Produktionsumgebungen {#production-environments}
 
@@ -324,7 +324,7 @@ IBM® WebSphere®-Cluster werden nur in Network Deployment-Editionen unterstütz
 
 #### Virtualisierte Umgebung {#virtualized-environment}
 
-Sie können AEM Forms on JEE auf einem physischen Computer oder in einer virtuellen Umgebung ausführen. Wenn Sie jedoch auf ein Problem mit AEM Forms in einer virtuellen Umgebung stoßen, versuchen Sie, das Problem auf einem physischen Computer zu replizieren. Wenn das Problem auf dem physischen Computer weiterhin besteht, wenden Sie sich in Hinblick auf Unterstützung an den Adobe-Support. Bei Problemen, die Sie auf einem physischen Computer nicht replizieren können, wenden Sie sich an den Verkäufer Ihrer virtuellen Umgebung.
+Sie können AEM Forms on JEE auf einem physischen Computer oder in einer virtuellen Umgebung ausführen. Wenn Sie mit AEM Forms in einer virtuellen Umgebung auf Probleme stoßen, versuchen Sie, das Problem auf einer physischen Maschine zu reproduzieren. Wenn das Problem auf dem physischen Computer weiterhin besteht, wenden Sie sich in Hinblick auf Unterstützung an den Adobe-Support. Bei Problemen, die Sie auf einem physischen Computer nicht replizieren können, wenden Sie sich an den Verkäufer Ihrer virtuellen Umgebung.
 
 #### Entwicklungsumgebungen {#development-environments}
 
@@ -343,31 +343,33 @@ Sie können AEM Forms on JEE auf einem physischen Computer oder in einer virtuel
  </tbody>
 </table>
 
-### Ausnahmen für unterstützte Serverplattformen {#exceptions-to-supported-server-platforms}
+### Ausnahmen für unterstützte Server-Plattformen {#exceptions-to-supported-server-platforms}
 
-Beachten Sie beim Auswählen einer Plattform für die Einrichtung Ihres AEM Forms on JEE-Servers die folgenden Ausnahmen.
+Beachten Sie die folgenden Ausnahmen, wenn Sie eine Plattform auswählen, auf der Sie AEM Forms on JEE-Server einrichten.
 
 1. AEM Forms on JEE unterstützt IBM® WebSphere® mit MySQL nicht.
-1. AEM Forms on JEE unterstützt und JBoss® nicht unter SUSE® Linux® Enterprise Server 12. Nur IBM® WebSphere® wird auf SUSE® Linux® Enterprise Server 12 unterstützt.
-1. AEM Forms on JEE unterstützt kein anderes JDK mit JBoss® als Oracle Java™ SE.
-1. AEM Forms on JEE unterstützt kein anderes JDK mit IBM® WebSphere® als IBM® JDK.
+1. AEM Forms on JEE unterstützt JBoss® unter SUSE® Linux® Enterprise Server 12 nicht. Nur IBM® WebSphere® wird auf SUSE® Linux® Enterprise Server 12 unterstützt.
+1. AEM Forms on JEE unterstützt mit JBoss® kein anderes JDK als Oracle Java™ SE.
+1. AEM Forms on JEE unterstützt mit IBM® WebSphere® kein anderes JDK als IBM® JDK.
 1. CRX-Repository unterstützt Persistenz des Typs TarMK, MongoDB und relationale Datenbanken (RDBMK). Sie dürfen nicht zwei verschiedene Datenbanksysteme zwischen dem Anwendungsserver und dem CRX-Repository haben. In einer AEM Forms on JEE-Umgebung können Sie MongoMK jedoch mit dem CRX-Repository und einer unterstützten relationalen Datenbank mit Anwendungsserver verwenden.
-1. AEM Forms on JEE unterstützt WebSphere®-Anwendungsserver unter CentOS nicht.
-1. AEM Forms on JEE unterstützt keine rollenbasierte JBoss®-Zugriffskontrolle (RBAC).
-1. AEM Forms on JEE unterstützt nur Oracle Java™ SE 11 (64 Bit) SDK für Anwendungsserver JBoss® EAP 7.4.
+1. AEM Forms on JEE unterstützt keinen WebSphere®-Anwendungs-Server unter CentOS.
+1. AEM Forms on JEE unterstützt keine rollenbasierte Zugriffssteuerung (RBAC) für JBoss®.
+1. AEM Forms on JEE unterstützt Oracle Java™ SE 11 (64 Bit) SDK nur für Anwendungs-Server® JBoss EAP 7.4.
 1. JDK-Versionen, die höher als 1.8.0_281 sind, werden für WebLogic-Server nicht unterstützt. (FORMS-8498)
-1. [!DNL Microsoft® Windows Server 2019] unterstützt nicht [!DNL MySQL 5.7] und [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] unterstützt keine Turnkey-Installationen für [!DNL Experience Manager Forms 6.5.10.0 and later]. (CQDOC-18312)
 
+<!-- 
+1. [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312) 
+-->
 
-Beachten Sie außerdem die folgenden Punkte bei der Auswahl der Software für Adobe AEM Forms on JEE-Bereitstellungen:
+Außerdem sollten Sie die folgenden Punkte beachten, wenn Sie die Software für Implementierungen von Adobe AEM Forms on JEE auswählen:
 
-- AEM Forms on JEE unterstützt Updates, Patches und Fix Packs zusätzlich zur angegebenen Haupt- und Nebenversion der unterstützten Software. Die Aktualisierung auf die nächste Haupt- oder Nebenversion wird jedoch nicht unterstützt, sofern nichts anderes angegeben ist.
-- Clusterbasierte Installationen unterstützen keine TarMK-Persistenz. Informationen zur unterstützten Persistenz finden Sie unter [Persistenztyp für eine AEM Forms-Installation auswählen](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
-- AEM Forms on JEE unterstützt verschiedene Software von Drittanbietern gemäß Adobe [Richtlinie zur Unterstützung von Software von Drittanbietern](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p).
-- AEM Forms on JEE-Unterstützungsplattformen gemäß der Unterstützung durch Drittanbieter. Einige Kombinationen sind möglicherweise von Drittanbietern nicht zulässig. Zum Beispiel haben viele Anbieter ihre Anwendungsserver nicht mit Oracle zertifiziert. Daher unterstützt AEM Forms on JEE diese Kombinationen auch nicht. Um sicherzugehen, dass Sie die unterstützten Softwareversionen auswählen, sollten Sie auch die Supportmatrix dieser Drittanbieter überprüfen.
-- AEM Forms on JEE unterstützt keine TarMK Cold Standby.
-- AEM Forms on JEE unterstützt kein vertikales Clustering.
-- AEM Forms on JEE unterstützt keine MySQL-Datenbank in einer Clusterumgebung.
+- AEM Forms on JEE unterstützt Updates, Patches und Fix Packs zusätzlich zu der angegebenen Haupt- oder Nebenversion der unterstützten Software. Das Update auf die nächste Haupt- oder Nebenversion wird jedoch nur unterstützt wenn entsprechend angegeben.
+- Cluster-basierte Installationen unterstützen keine TarMK-Persistenz.  Weitere Informationen zur unterstützten Persistenz finden Sie unter [Auswählen eines Persistenztyps für eine AEM Forms-Installation](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
+- AEM Forms on JEE unterstützt die Software verschiedener Drittanbieter gemäß der [Richtlinie zur Unterstützung der Software von Drittanbietern](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p) von Adobe.
+- AEM Forms on JEE unterstützt Plattformen in Abhängigkeit der Unterstützung durch Drittanbieter.  Einige Kombinationen werden von Drittanbietern möglicherweise nicht zugelassen. Zum Beispiel haben viele Anbieter ihre Anwendungsserver nicht mit Oracle zertifiziert. Daher unterstützt auch AEM Forms on JEE diese Kombinationen nicht.  Um sicherzugehen, dass Sie die unterstützten Softwareversionen auswählen, sollten Sie auch die Support-Matrix dieser Drittanbieter überprüfen.
+- AEM Forms auf JEE unterstützt keine TarMK Cold Standby.
+- AEM Forms auf JEE unterstützt kein vertikales Clustering.
+- AEM Forms on JEE unterstützt die MySQL-Datenbank in einer Cluster-Umgebung nicht.
 - Eine Liste der entfernten bzw. der aktualisierten Plattformen finden Sie in dem Dokument [AEM 6.5 Forms - Übersicht über die neuen Funktionen](../../forms/using/whats-new.md).
 
 ### LDAP-Server (optional) {#ldap-servers-optional}
@@ -379,16 +381,16 @@ Beachten Sie außerdem die folgenden Punkte bei der Auswahl der Software für Ad
    <th><p><strong>Unterstützte Patch-Definitionen</strong></p> </th>
   </tr>
   <tr>
-   <td>Microsoft® Active Directory 2016 (überholt)</td>
-   <td>Maintenance Release und Fix Packs</td>
+   <td>Microsoft® Active Directory 2016 (veraltet)</td>
+   <td>Wartungsversion und Fixpacks</td>
   </tr>
   <tr>
    <td>Microsoft® Active Directory 2022</td>
-   <td>Maintenance Release und Fix Packs</td>
+   <td>Wartungsversion und Fixpacks</td>
   </tr>
   <tr>
    <td><p>IBM® Tivoli Directory Server 6.4</p> </td>
-   <td><p>Feature Packs und Interim Fixes</p> </td>
+   <td><p>Feature Packs und Zwischenkorrekturen</p> </td>
   </tr>
  </tbody>
 </table>
@@ -400,7 +402,7 @@ Beachten Sie außerdem die folgenden Punkte bei der Auswahl der Software für Ad
 | Microsoft® Exchange 2013 |
 | Microsoft® Office 365 |
 
-### Content Manager und entsprechende Connectoren {#content-managers-and-corresponding-connectors}
+### Content-Manager und entsprechende Connectoren {#content-managers-and-corresponding-connectors}
 
 <table>
  <tbody>
@@ -417,11 +419,11 @@ Beachten Sie außerdem die folgenden Punkte bei der Auswahl der Software für Ad
    <td>5.5.2</td>
   </tr>
   <tr>
-   <td>IBM® Content Manager Server (nicht mehr unterstützt) </td>
+   <td>IBM® Content Manager Server (veraltet) </td>
    <td>8.5 Fixpack 2</td>
   </tr>
   <tr>
-   <td> IBM® Content Manager Client (nicht mehr unterstützt)</td>
+   <td> IBM® Content Manager Client (veraltet)</td>
    <td>8.5 </td>
   </tr>
    <td>Microsoft® Sharepoint </td>
@@ -476,24 +478,24 @@ PDF Generator unterstützt nur englische, französische, deutsche und japanische
 >
 Außerdem:
 >
-- PDF Generator erfordert 32-Bit-Version von [Acrobat 2020 Klassische Track-Version 20.004.30006](https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html) , um die Konvertierung durchzuführen.
-- PDF Generator unterstützt nur die 32-Bit-Einzelhandelsversion von Microsoft® Office Professional Plus und andere für die Konvertierung erforderliche Software.
+- Für PDF Generator ist die 32-Bit-Version der [klassischen Acrobat 2020-Version 20.004.30006](https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html) für die Konvertierung erforderlich.
+- PDF Generator unterstützt nur die 32-Bit-Einzelhandelsversion von Microsoft® Office Professional Plus und andere für die Konvertierung erforderliche Software.
 - PDF Generator unterstützt nicht Microsoft® Office 365.
 - PDF Generator-Konvertierungen für OpenOffice werden nur unter Windows und Linux unterstützt®.
 - Die Funktionen von OCR PDF, PDF optimieren und PDF erstellen werden nur unter Windows unterstützt.
 - Eine Version von Acrobat ist im Lieferumfang von AEM Forms enthalten, um die PDF Generator-Funktionalität zu aktivieren. Die gebündelte Version sollte während der Laufzeit der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur programmatisch mit AEM Forms zugänglich sein. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung entsprechend Ihrer Implementierung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
-- Der PDF Generator-Dienst unterstützt Microsoft® Windows 10 nicht.
--PDF Generator kann Dateien mit Microsoft® Visio 2019 nicht konvertieren. Sie können weiterhin Microsoft® Visio 2016 verwenden, um .VSD- und .VSDX-Dateien zu konvertieren.
-- PDF Generator kann keine Dateien mit Microsoft® Project 2019 konvertieren. Sie können Microsoft® Project 2016 weiterhin verwenden, um .MPP-Dateien zu konvertieren.
-- PDF Generator kann Dateien mit Microsoft® Visio 2019 nicht konvertieren.
-- PDF Generator kann Dateien mit Microsoft® Project 2019 nicht konvertieren.
+- Der PDF Generator-Service unterstützt nicht Microsoft® Windows 10.
+-PDF Generator kann keine Dateien mit Microsoft® Visio 2019 konvertieren. Sie können Microsoft® Visio 2016 weiterhin verwenden, um VSD- und VSDX-Dateien zu konvertieren.
+- PDF Generator kann keine Dateien mit Microsoft® Project 2019 konvertieren. Sie können weiterhin Microsoft® Project 2016 verwenden, um MPP-Dateien zu konvertieren.
+- PDF Generator kann keine Dateien mit Microsoft® Visio 2019 konvertieren.
+- PDF Generator kann keine Dateien mit Microsoft® Project 2019 konvertieren.
 >
 
 ### Ausnahmen der Barrierefreiheit {#exceptions-to-accessibility-support}
 
-Die folgenden Teilsysteme von AEM Forms sind nicht [508](https://www.section508.gov/) kompatibel:
+Die folgenden Untersysteme von AEM Forms sind nicht mit [508](https://www.section508.gov/) kompatibel:
 
-- Adaptive Forms Authoring-Benutzeroberfläche
+- Benutzeroberfläche für das Authoring adaptiver Formulare
 - Forms Manager Authoring-Benutzeroberfläche
 - Benutzeroberfläche für Correspondence Management Authoring
 - Administrator-Benutzeroberfläche (Benutzeroberfläche der Administration Console)
@@ -510,21 +512,21 @@ Die folgenden Teilsysteme von AEM Forms sind nicht [508](https://www.section508.
   </tr>
   <tr>
    <td>Microsoft® Windows Server</td>
-   <td>Intel Xeon® E5-2680, 2,4-GHz-Prozessor oder gleichwertiger Prozessor<br /> VMWare ESX 5.1 oder höher<br /> RAM: 6 GB (64-Bit-Betriebssystem mit 64-Bit-JVM)<br /> Freier Speicherplatz: 15 GB temporärer Speicherplatz plus 22 GB<br /> für AEM Forms on JEE</td>
+   <td>Intel Xeon® E5-2680, 2,4-GHz-Prozessor oder ähnlich<br /> VMWare ESX 5.1 oder höher<br /> RAM: 6 GB (64-Bit-Betriebssystem mit 64-Bit-JVM)<br /> Freier Speicherplatz: 15 GB temporärer Speicherplatz plus 22 GB<br /> für AEM Forms on JEE</td>
   </tr>
   <tr>
    <td>SUSE® Linux® Enterprise Server</td>
-   <td>Intel Xeon® E5-2670v2, 1 vCPU, 2,5-GHz-Prozessor<br /> AWS m3.medium (3 ECU)<br /> RAM: 6 GB (64-Bit-Betriebssystem mit 64-Bit-JVM)<br /> Freier Speicherplatz: 6 GB temporärer Speicherplatz plus 22 GB<br /> für AEM Forms on JEE</td>
+   <td>Intel Xeon® E5-2670v2, 1 vCPU, 2,5 GHz-Prozessor <br /> AWS m3.medium (3 ECUs)<br /> RAM: 6 GB (64 Bit OS mit 64 Bit JVM)<br /> Freier Speicherplatz: 6 GB temporärer Speicherplatz plus 22 GB<br /> für AEM Forms on JEE</td>
   </tr>
   <tr>
    <td>Red Hat® Enterprise Linux®</td>
-   <td>Intel Xeon® E5-2670v2, 1 vCPU, 2,5-GHz-Prozessor<br /> AWS m3.medium (3 ECU)<br /> RAM: 6 GB (64-Bit-Betriebssystem mit 64-Bit-JVM)<br /> Freier Speicherplatz: 6 GB temporärer Speicherplatz plus 22 GB<br /> für AEM Forms on JEE<br /> </td>
+   <td>Intel Xeon® E5-2670v2, 1 vCPU, 2,5 GHz-Prozessor <br /> AWS m3.medium (3 ECUs)<br /> RAM: 6 GB (64 Bit OS mit 64 Bit JVM)<br /> Freier Speicherplatz: 6 GB temporärer Speicherplatz plus 22 GB<br /> für AEM Forms on JEE<br /> </td>
   </tr>
   <tr>
-   <td>Hardwareanforderungen für eine kleine Produktionsumgebung</td>
+   <td>Hardware-Anforderungen für kleine Produktionsumgebungen</td>
    <td>
     <ul>
-     <li><strong>Intel® Umgebungen</strong>: Intel Xeon® E5-2680, 2,4 GHz oder höher. Durch die Verwendung eines Dualcore-Prozessors wird die Leistung weiter verbessert</li>
+     <li><strong>Intel®-gestützte Umgebung</strong>: Intel Xeon® E5-2680, 2,4 GHz oder höher. Durch die Verwendung eines Dual-Core-Prozessors wird die Leistung weiter verbessert</li>
      <li><strong>Speicher: </strong>4 GB <br /> </li>
     </ul> </td>
   </tr>
@@ -551,7 +553,7 @@ Für zusätzliche Anforderungen siehe:
    <td>Service Packs und wichtige Updates</td>
   </tr>
   <tr>
-   <td>Microsoft® Windows® 2019-Server (nicht mehr unterstützt)</td>
+   <td>Microsoft® Windows® 2019 Server (veraltet)</td>
    <td>Service Packs und wichtige Updates</td>
   </tr>
   <tr>
@@ -561,13 +563,13 @@ Für zusätzliche Anforderungen siehe:
  </tbody>
 </table>
 
-- Erforderlicher Speicherplatz auf der Festplatte: 1,7 GB nur für Workbench, 2,7 GB auf einem einzelnen Laufwerk für eine vollständige Installation von Workbench, Designer und der Assembly mit den Beispielen, 400 MB für temporäre Installationsordner: 200 MB im Ordner „temp“ des Benutzers und 200 MB im temporären Ordner von Windows. Wenn sich alle diese Speicherorte auf einem einzigen Laufwerk befinden, muss während der Installation 1,5 GB Speicherplatz verfügbar sein. Die Dateien, die in die temporären Ordner kopiert werden, werden nach Abschluss der Installation gelöscht.
+- Erforderlicher Speicherplatz auf der Festplatte: 1,7 GB nur für Workbench, 2,7 GB auf einem einzelnen Laufwerk für eine vollständige Installation von Workbench, Designer und der Assembly mit den Beispielen, 400 MB für temporäre Installationsordner: 200 MB im Ordner „temp“ des Benutzers und 200 MB im temporären Ordner von Windows. Wenn sich diese Speicherorte alle auf einem einzigen Laufwerk befinden, müssen während der Installation 1,5 GB Speicherplatz zur Verfügung stehen. Die Dateien, die in die temporären Ordner kopiert werden, werden nach Abschluss der Installation gelöscht.
 
 - Speicher für Ausführung von Workbench: 2 GB RAM
-- Hardwareanforderungen: Intel® Pentium® 4 oder gleichwertiger AMD® Prozessor, 1 GHz
+- Hardware-Anforderung: Intel® Pentium® 4 oder gleichwertiger AMD®-Prozessor, 1 GHz-Prozessor
 - Minimale Bildschirmauflösung 1024 x 768 Pixel oder höher mit 16-Bit-Farbtiefe oder höher
 - TCP/IPv4- oder TCP/IPv6-Netzwerkverbindung zum AEM Forms on JEE-Server
-- Sie müssen über Administratorrechte verfügen, um Workbench unter Windows installieren zu können. Wenn Sie die Installation mit einem Konto ohne Adminrechte durchführen, werden Sie vom Installationsprogramm zur Eingabe der Anmeldeinformationen für ein entsprechendes Konto aufgefordert.
+- Unter Windows müssen Sie über Administratorrechte verfügen, um Workbench installieren zu können. Wenn Sie die Installation mit einem Konto ohne Administratorrechte durchführen, werden Sie vom Installationsprogramm zur Eingabe der Anmeldeinformationen für ein entsprechendes Konto aufgefordert.
 
 ### Designer {#designer}
 
@@ -581,7 +583,7 @@ Für zusätzliche Anforderungen siehe:
 - Beschleuniger für Video-Hardware (optional)
 - Acrobat Pro DC, Acrobat Standard DC oder Adobe Acrobat Reader DC
 - Administratorrechte für die Installation von Designer
-- Microsoft® Visual C++ 2019 (VC 14.28 oder höher) 32-Bit-Laufzeit
+- Microsoft® Visual C++ 2019 (VC 14.28 oder höher) 32-Bit-Runtime
 
 ### Adobe Acrobat und Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -601,7 +603,7 @@ Für zusätzliche Anforderungen siehe:
 
 >[!NOTE]
 >
-Die Acrobat DC-Produktfamilie führt zwei Tracks für Acrobat und Reader ein, die unterschiedliche Produkte sind: &quot;Classic&quot;und &quot;Continuous&quot;. Weitere Informationen und einen Vergleich der beiden Tracks finden Sie unter [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
+Die Acrobat DC-Produktfamilie führt zwei Linien für Acrobat und Reader ein, wobei es sich um zwei verschiedene Produkte handelt: „Klassik“ und „Fortlaufend“. Weitere Informationen und einen Vergleich der beiden Linien finden Sie unter [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
 
 ### Browser {#browsers}
 
@@ -644,13 +646,13 @@ Die Acrobat DC-Produktfamilie führt zwei Tracks für Acrobat und Reader ein, di
 
 >[!NOTE]
 >
-Einige browserbezogene Ausnahmen für Desktops lauten wie folgt:
+Für Desktops gelten die folgenden Browser-bedingten Ausnahmen:
 >
 - Safari wird nur unter Mac OS X unterstützt.
 - Workspace unterstützt Safari 5.1 unter Macintosh OS X 10.6 und 10.7 mit Acrobat DC oder höheren Versionen. Weitere Informationen zur Kompatibilität von Safari 5.1 mit Adobe Acrobat Reader finden Sie unter [https://helpx.adobe.com/de/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/de/x-productkb/multi/safari-5-1-incompatible-reader.html).
 - Administration Console wird in Safari nicht unterstützt.
 - Correspondence Management unterstützt nicht Windows® Internet Explorer 9.0 für AEM 6.1-Formulare.
-- Forms Portal unterstützt die Barrierefreiheit von JAWS 14.0-Bildschirmlesehilfen in Internet Explorer 11.
+- Das Formularportal unterstützt die JAWS 14.0-Bildschirmlesehilfe-Software in Internet Explorer 11 für einen leichteren Zugriff.
 
 #### Mobile Clients {#mobile-clients}
 
@@ -661,7 +663,7 @@ Einige browserbezogene Ausnahmen für Desktops lauten wie folgt:
    <th><p><strong>Unterstützte Patch-Definitionen</strong></p> </th>
   </tr>
   <tr>
-   <td><p>Chrome unter Android™ 4.1.2 und höher</p> </td>
+   <td><p>Chrome für Android™ 4.1.2 und höher</p> </td>
    <td><p>Alle Updates</p> </td>
   </tr>
   <tr>
@@ -673,7 +675,7 @@ Einige browserbezogene Ausnahmen für Desktops lauten wie folgt:
    <td>Alle Updates<br /> </td>
   </tr>
   <tr>
-   <td>Nativer Android™-Browser unter Android™ 4.4 und höher</td>
+   <td>Nativer Android™-Browser für Android™ 4.4 und höher</td>
    <td>Alle Updates</td>
   </tr>
  </tbody>
@@ -685,39 +687,39 @@ Einige browserbezogene Ausnahmen für Desktops lauten wie folgt:
 
 ### AEM Forms-App {#aem-forms-workspace-app}
 
-#### Mobilgeräteunterstützung {#mobile-device-support}
+#### Unterstützung für Mobilgeräte {#mobile-device-support}
 
-Das AEM Forms-Programm ist auf den folgenden Plattformen verfügbar:
+Die AEM Forms-Mobile App ist für die folgenden Plattformen verfügbar:
 
 | **Plattform** | **Unterstützte Geräte** |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------- |
 | Apple iOS | Apple iPhone, iPad, iPad Air und iPad mini mit iOS 15.1 und höher. |
-| Google Android™ | Android™ 5.1 und höher. Die AEM Forms-App ist für Samsung Galaxy-Tablets (7-Zoll- und 10-Zoll-Tablets) und beliebte Smartphones zertifiziert. |
-| Microsoft® Windows | Microsoft® Surface-Geräte, Tablets, Laptops und Desktops mit dem Betriebssystem Microsoft® Windows 10. |
+| Google Android™ | Android™ 5.1 und höher. Die AEM Forms-Mobile App ist für Samsung Galaxy-Tablets (7 und 10 Zoll) und beliebte Smartphone-Modelle zertifiziert. |
+| Microsoft® Windows | Microsoft® Surface-Geräte, Tablets, Laptops und Desktops mit Microsoft® Windows 10. |
 
-### Adobe Document Security Extension for Microsoft® Office {#adobe-rights-management-extension-for-microsoft-office}
+### Adobe Document Security Extension für Microsoft® Office {#adobe-rights-management-extension-for-microsoft-office}
 
 Klicken Sie [hier](https://www.adobe.com/de/products/livecycle/rightsmanagement/extension/downloads.html), um die Systemanforderungen für Adobe Document Security Extension for Microsoft® Office anzuzeigen.
 
 ### Ausnahmen der Clientunterstützung {#exceptions-to-client-support}
 
-AEM Forms on JEE unterstützt Updates, Patches und Fix Packs zusätzlich zur angegebenen Haupt- und Nebenversion der unterstützten Software. Die Aktualisierung auf die nächste Haupt- oder Nebenversion wird jedoch nicht unterstützt, sofern nichts anderes angegeben ist.
+AEM Forms on JEE unterstützt Updates, Patches und Fix Packs zusätzlich zu der angegebenen Haupt- oder Nebenversion der unterstützten Software. Das Update auf die nächste Haupt- oder Nebenversion wird jedoch nur unterstützt wenn entsprechend angegeben.
 
-## Richtlinie zur Unterstützung von Patches von Drittanbietern {#third-party-patch-support-policy}
+## Richtlinie zur Unterstützung für Patches von Drittanbietern {#third-party-patch-support-policy}
 
-Die Anforderungen an Drittpartei-Software für AEM Forms on JEE werden im Abschnitt „Systemanforderungen“ der jeweiligen Produktdokumente erläutert. Auf alle Dokumentationen zugreifen über [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65_de) .
+Die Anforderungen an Drittpartei-Software für AEM Forms on JEE werden im Abschnitt „Systemanforderungen“ der jeweiligen Produktdokumente erläutert. Die gesamte Dokumentation ist unter [https://adobe.com/go/learn_aemforms_documentation_65_de](https://adobe.com/go/learn_aemforms_documentation_65_de) verfügbar.
 
 Die Referenzplattformen von AEM Forms on JEE von Drittanbietern geben den spezifischen Patch-Level der Infrastruktur von Drittanbietern an, der während der Entwicklung und Veröffentlichung von AEM Forms on JEE aktuell war, sowie den minimalen Patch-/Service Pack-Level der Infrastruktur, die von dieser Version von AEM Forms on JEE unterstützt wird.
 
-Adobe unterstützt dringende oder empfohlene Patches von Drittanbietern bei deren Veröffentlichung, vorausgesetzt, dass Drittanbieter die Abwärtskompatibilität mit den Versionen gewährleisten, die AEM Forms on JEE unterstützt. Adobe unterstützt nur Patches, die nach dem in der AEM Forms on JEE-Dokumentation angegebenen Mindest-Patch-Level veröffentlicht wurden.
+Adobe unterstützt dringende oder empfohlene Patches von Drittanbietern und geht bei deren Veröffentlichung davon aus, dass Drittanbieter die Abwärtskompatibilität mit den Versionen gewährleisten, die AEM Forms on JEE unterstützt. Adobe unterstützt nur Patches, die nach dem in der Dokumentation von AEM Forms on JEE angegebenen Mindest-Patchlevel veröffentlicht wurden.
 
-Manchmal unterstützt Adobe keine Updates von Drittanbietern, die wichtige Funktionen ändern und daher keine vollständige Abwärtskompatibilität unterstützen. Einzelheiten zu den unterstützten Updates finden Sie unter [Unterstützte Patch-Definitionen](https://helpx.adobe.com/de/aem-forms/aem-forms-third-party-software-patch.html) für bestimmte Herstellerprodukte und die von Adobe unterstützten Arten von Patches.
+In einigen Fällen unterstützt Adobe keine Updates von Drittanbietern, die Hauptfunktionen verändern und dadurch keine vollständige Abwärtskompatibilität gewährleisten. Einzelheiten zu den unterstützten Updates finden Sie unter [Unterstützte Patch-Definitionen](https://helpx.adobe.com/de/aem-forms/aem-forms-third-party-software-patch.html) für bestimmte Herstellerprodukte und die von Adobe unterstützten Arten von Patches.
 
-Unter Umständen, die außerhalb der Kontrolle von Adobe liegen, können Patches von Drittanbietern, die Abwärtskompatibilität beanspruchen, negative Auswirkungen auf die Produkte von Adobe oder die Kundenumgebung haben. In solchen Fällen empfiehlt Adobe, dass Kunden die Auswirkungen eines dringenden Patches von einem Dritten bewerten, bevor sie es auf kritische Systeme anwenden. Adobe arbeitet mit Dritten zusammen, indem sie vernünftige geschäftliche Anstrengungen unternehmen, um solche Probleme zu lösen, entweder durch normale Adobe-Unterstützungsprogramme oder durch Dritte, die das Problem in ihrem Patch beheben. Dies garantiert nicht, dass ein neu veröffentlichtes Drittanbieter-Patch, das von Adobe unterstützt wird, wie vom Anbieter dokumentiert oder mit AEM Forms on JEE funktioniert.
+Unter Umständen, die außerhalb der Kontrolle von Adobe liegen, können Patches von Drittanbietern, die Abwärtskompatibilität beanspruchen, negative Auswirkungen auf die Produkte von Adobe oder die Kundenumgebung haben. Für diese Fällen empfiehlt Adobe der Kundschaft, die Auswirkungen dringender Drittanbieter-Patches vor ihrer Anwendung in kritischen Systemen zunächst zu prüfen. Adobe wird mit Drittanbietern zusammen die entsprechenden geschäftlichen Anstrengungen unternehmen, um solche Probleme zu beheben, entweder durch die üblichen Adobe-Support-Programme oder, indem Drittanbieter das Problem in ihrem Patch beheben. Dies ist keine Garantie dafür, dass ein neu veröffentlichtes Drittanbieter-Patch, das von Adobe unterstützt wird, wie in der Dokumentation des Anbieters funktioniert oder mit AEM Forms on JEE kompatibel ist.
 
-Adobe behält sich das Recht vor, die von einer AEM Forms on JEE-Version unterstützten Referenzplattformen von Drittanbietern und deren unterstützte Patch-Definitionen jederzeit zu ändern.
+Adobe behält sich das Recht vor, die von einer Version von AEM Forms on JEE unterstützten Referenzplattformen von Drittanbietern und deren unterstützte Patch-Definitionen jederzeit zu ändern.
 
-Weitere Informationen zu Patches von Drittanbietern finden Sie auch auf der Adobe Enterprise Support-Website in Knowledgebase-Artikeln zu Ihrem Produkt.
+Weitere Informationen über Patches von Drittanbietern erhalten Sie auch auf der Adobe Enterprise-Support-Seite, indem Sie nach Knowledgebase-Artikeln für Ihr jeweiliges Produkt suchen.
 
 <!--
 
@@ -834,7 +836,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | My SQL JDBC Connector 8 | Oracle-Datenbank 12c Version 2 (12.2.0.1.0) |  |
 | Active Directory 2022 | MySQL 5.7.35 |  |
 | Microsoft® Windows Server 2022 (64 Bit) | Microsoft® SQL Server 2016 |  |
-|  | JBoss® EAP 7.1.4 |  |
+|  | JBoss® EAP 7.1.4 |  |
 |  | My SQL JDBC Connector 5.1.44 |  |
 |  | Microsoft® SQL Server JDBC-Treiber 6.2.1.0 |  |
 |  | Microsoft® SQL Server JDBC-Treiber 6.2.2.0 |  |
@@ -847,7 +849,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 |  | Microsoft® Publisher 2016 |  |
 |  | Microsoft® Project 2016 |  |
 |  | OpenOffice 4.1.2 |  |
-|  | Acrobat 2017 (klassische Schiene) Version 17.011.30078 oder höher |  |
+|  | Acrobat 2017 (klassische Version) Version 17.011.30078 oder höher |  |
 
 
 ### Version 6.5.13.0 (2. Juni 2022)
@@ -871,6 +873,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 |  | | IBM® Content Manager Server 8.5 Fix Pack 2 |
 |  | | IBM® Content Manager Client 8.5 |
 |  | | Microsoft® SQL Server 2016 |
+|  | | Microsoft® Windows Server 2016 |
 
 ### Version 6.5.10.0 (01. September 2022)
 

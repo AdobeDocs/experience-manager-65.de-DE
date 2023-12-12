@@ -3,10 +3,10 @@ title: Versionshinweise für [!DNL Adobe Experience Manager] 6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 1c3df6ea88f1dfbab5d9df2dcd4907e72829287a
+source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
 workflow-type: tm+mt
 source-wordcount: '4232'
-ht-degree: 77%
+ht-degree: 97%
 
 ---
 
@@ -47,23 +47,22 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 
 ### [!DNL Forms]
 
-* **Neue Kernkomponenten für adaptive Formulare**: Vertikale Registerkarten, Geschäftsbedingungen und Kontrollkästchen werden hinzugefügt, um die Skalierbarkeit von Formularen zu verbessern.
-   * **[Kontrollkästchenkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: Adaptive Forms, die auf Kernkomponenten basiert, kann jetzt eine Kontrollkästchenkomponente enthalten. Sie ermöglicht Benutzern, binäre Entscheidungen zu treffen, eine bestimmte Option auszuwählen oder zu deaktivieren. Es wird normalerweise als kleines Feld angezeigt, auf das geklickt oder getippt werden kann, um zwischen zwei Status zu wechseln: &quot;aktiviert&quot;und &quot;deaktiviert&quot;. Das Kontrollkästchen ist ein gängiges Formularelement, das verwendet wird, um eine Ja/Nein- oder true/false-Auswahl zu geben.
+* **Neue Kernkomponenten für adaptive Formulare**: Es werden vertikale Registerkarten, Geschäftsbedingungen und Kontrollkästchen hinzugefügt, um die Skalierbarkeit von Formularen zu verbessern.
+   * **[Kontrollkästchen-Komponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html?lang=de)**: Adaptive Formulare, die auf Kernkomponenten basieren, können jetzt eine Kontrollkästchen-Komponente enthalten. Sie ermöglicht Benutzenden, binäre Entscheidungen zu treffen, indem sie eine bestimmte Option auswählen oder eine Auswahl aufheben. Sie wird normalerweise als kleines Feld angezeigt, auf das geklickt oder getippt werden kann, um zwischen zwei Status zu wechseln: „aktiviert“ und „deaktiviert“. Das Kontrollkästchen ist ein gängiges Formularelement, das verwendet wird, um eine Ja/Nein- oder „true/false“-Auswahl zu treffen.
 
-   * **[Komponente &quot;Allgemeine Geschäftsbedingungen&quot;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: Adaptive Forms, die auf Kernkomponenten basiert, kann jetzt eine Komponente für Geschäftsbedingungen enthalten. Sie ermöglicht es Formularautoren, einen bestimmten Abschnitt innerhalb des Formulars einzuführen, in dem den Benutzern die Bedingungen oder rechtlichen Vereinbarungen im Zusammenhang mit der Verwendung eines Dienstes, Produkts oder einer Plattform präsentiert werden. Diese Komponente soll Benutzer über die Regeln, Vorschriften und Verpflichtungen informieren, denen sie zustimmen, indem sie das Formular übermitteln.
+   * **[Komponente „Geschäftsbedingungen“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=de)**: Adaptive Formulare, die auf Kernkomponenten basieren, können jetzt eine Komponente für Geschäftsbedingungen enthalten. Sie ermöglicht es Formularautorinnen und -autoren, einen bestimmten Abschnitt innerhalb des Formulars einzuführen, in dem den Benutzenden die Nutzungsbedingungen im Zusammenhang mit der Verwendung eines Dienstes, Produkts oder einer Plattform präsentiert werden. Diese Komponente hat das Ziel, Benutzende über die Regeln, Vorschriften und Verpflichtungen zu informieren, denen sie zustimmen, wenn sie das Formular übermitteln.
 
-     ![Vertikale Registerkarten, Geschäftsbedingungen und Kontrollkästchen-Komponenten](/help/forms/using/assets/forms-components.png)
+     ![Die Komponenten „Vertikale Registerkarten“, „Geschäftsbedingungen“ und „Kontrollkästchen“](/help/forms/using/assets/forms-components.png)
 
-   * **[Komponente mit vertikalen Registerkarten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: Der auf Kernkomponenten basierende adaptive Forms kann jetzt Formularinhalte in einer vertikalen Liste von Registerkarten organisieren und so ein strukturiertes und navigierbares Layout bereitstellen. Die Verwendung von vertikalen Registerkarten in einem Formular kann das gesamte Benutzererlebnis verbessern, indem die Navigation vereinfacht und die Organisation des Formularinhalts verbessert wird, insbesondere in Situationen, in denen ein Formular mehrere Abschnitte oder komplexe Informationen enthält.
+   * **[Komponente „Vertikale Registerkarten“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html?lang=de)**: Adaptive Formulare, die auf Kernkomponenten basieren, können jetzt Formularinhalte in einer vertikalen Liste von Registerkarten organisieren und so ein strukturiertes und navigierbares Layout bieten. Die Verwendung von vertikalen Registerkarten in einem Formular kann das gesamte Benutzererlebnis verbessern, indem die Navigation vereinfacht und die Organisation des Formularinhalts verbessert wird, insbesondere in Situationen, in denen ein Formular mehrere Abschnitte oder komplexe Informationen enthält.
 
-* **[64-Bit-Version von AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)**: Die 64-Bit-Version von AEM Forms Designer bietet verbesserte Leistung, Skalierbarkeit und Speicherverwaltung, um die Erstellung von Formularen zu optimieren. Mit der 64-Bit-Architektur können Sie noch größere und komplexere Projekte einfach angehen, um nahtlose Design-Workflows und eine optimierte Effizienz zu gewährleisten. Verbessern Sie Ihre Formularentwurfskompetenzen und nutzen Sie die Zukunft von AEM Forms Designer mit dieser innovativen Version.
+* **[64-Bit-Version von AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)**: Die 64-Bit-Version von AEM Forms Designer bietet eine verbesserte Leistung, Skalierbarkeit und Speicherverwaltung, um die Erstellung von Formularen zu optimieren. Mit der 64-Bit-Architektur können Sie noch größere und komplexere Projekte einfach angehen, um nahtlose Design-Workflows und eine optimierte Effizienz zu gewährleisten. Verbessern Sie Ihre Formularentwurfsfähigkeiten und nutzen Sie die Zukunft von AEM Forms Designer mit dieser innovativen Version.
 
-* **[Verbinden einer adaptiven Forms-Liste mit Microsoft® SharePoint-Liste](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms bietet eine OOTB-Integration zum Senden von Formulardaten direkt an die SharePoint-Liste, sodass Sie die SharePoint-Funktionen &quot;Listen&quot;verwenden können. Sie können die Microsoft SharePoint-Liste als Datenquelle für ein Formulardatenmodell konfigurieren und die Übermittlungsaktion &quot;Senden mit Formulardatenmodell&quot;verwenden, um ein adaptives Formular mit der SharePoint-Liste zu verbinden.
+* **[Verbinden eines adaptiven Formulars mit einer Microsoft® SharePoint-Liste](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms bietet eine vorkonfigurierte Integration zum Senden von Formulardaten direkt an eine SharePoint-Liste, sodass Sie die Listenfunktionen von SharePoint verwenden können. Sie können eine Microsoft SharePoint-Liste als Datenquelle für ein Formulardatenmodell konfigurieren und die Übermittlungsaktion „Senden mit Formulardatenmodell“ verwenden, um ein adaptives Formular mit der SharePoint-Liste zu verbinden.
 
 * **[Unterstützung zum Konfigurieren der Eigenschaften des Datensatzdokuments für adaptive Formularfragmente](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)**: Sie können jetzt Ihre adaptiven Formularfragmente und deren Felder im Editor für adaptive Formulare einfach anpassen.
 
 * **64-Bit-XMLFM**: Die 64-Bit-Iteration von XMLFM führt zu einer verbesserten Leistung, Skalierbarkeit und verbesserter Speicherverwaltung. Dies ist der erste native 64-Bit-Dienst, der serverseitig bereitgestellt wird. Durch die Nutzung seiner inhärenten Fähigkeit, auf deutlich größere Speicherressourcen im Vergleich zu seinem 32-Bit-Gegenstück zuzugreifen, ermöglicht XMLFM 64-Bit die nahtlose Handhabung größerer Rendering-Workloads. Dieser Meilenstein stellt nicht nur einen Leistungssprung dar, sondern führt auch wichtige Verbesserungen am nativen Service-Framework innerhalb des AEM Forms-Servers ein. Mit diesem Update wird der AEM Forms-Server für die nahtlose Unterstützung nativer 64-Bit-Dienste ausgestattet.
-
 
 **Veraltete Funktion**
 
@@ -189,31 +188,31 @@ in
 
 * A -->
 
-* Wenn ein Benutzer eine Symbolleiste zum adaptiven Formular hinzufügt, zeigt die Beschriftung des Formularcontainers ein unzulässiges Verhalten, da sie sich nicht in die bevorzugte Sprache ändert, die der Autor für Forms ausgewählt hat. (FORMS-11371)
-* In AEM Forms Workspace wird im Dropdown-Feld standardmäßig die erste Option auf der Benutzeroberfläche ausgewählt. (FORMS-11346)
+* Wenn Benutzende eine Symbolleiste zum adaptiven Formular hinzufügen, zeigt die Beschriftung des Formular-Containers ein unregelmäßiges Verhalten, da sie nicht in die bevorzugte Sprache geändert wird, die die Autorin bzw. der Autor für Formulare ausgewählt hat. (FORMS-11371)
+* In AEM Forms Workspace ist im Dropdown-Feld standardmäßig die erste Option auf der Benutzeroberfläche ausgewählt. (FORMS-11346)
 * Die Sprachkonfiguration in AEM zeigt keine Auswirkungen, wenn Sie Gebietsschemata mit fünf Zeichen verwenden und das Dezimaltrennzeichen im Brief nicht korrekt wiedergegeben wird. (FORMS-11344)
-* Wenn ein Benutzer die XML-Ausgabe mithilfe des Workbench-Prozesses generiert, schlägt sie bei einigen der Dateien fehl. (FORMS-11314)
-* Wenn ein Benutzer eine Vorschau für das Datensatzdokument (DOR) in anderen Sprachen als Englisch generiert, funktioniert dies nicht. (FORMS-11106)
-* Wenn ein Benutzer einige Bilddateien mit PDFG auf einer OSGi-Instanz konvertiert, die auf Linux mit JDK11 basiert, wird dies nicht konvertiert. (FORMS-11105)
-* Wenn Benutzer das AEM Forms-Add-on installieren, wird der Inhaltsbaum-Bereich in AEM Sites unterbrochen. (FORMS-10912)
-* Wenn ein Benutzer Daten mithilfe der NVDA-Bildschirmlesehilfe aus der Datumsauswahlkomponente kopiert, wird er nicht richtig gelesen. (FORMS-10805) 
-* Im Forms-Regeleditor kann der Benutzer den Wert der Optionsfeld-/Kontrollkästchen-Schaltfläche nicht festlegen, wenn der Datenwerttyp Boolesch ist. (FORMS-10713)
-* Wenn ein Benutzer einem adaptiven Formular hinzugefügte Elemente hinzufügt, wird sie in umgekehrter Reihenfolge zu einer Dropdown-Liste hinzugefügt. (FORMS-10456)
-* Wenn eine Dropdown-Liste mit dem Regeleditor gelöscht wird, wird der erste bereitgestellte Wert weiterhin angezeigt, auch wenn der Wert gelöscht wurde. (FORMS-9963) 
-* Benutzer können nicht mit Sprachausgabeprogrammen wie NVDA auf den Formulartitel zugreifen. (FORMS-8815) 
-* Benutzer können nicht mit Sprachausgabeprogrammen wie NVDA auf den Untertitel in einem Formular zugreifen. (FORMS-8814) 
-* In der Seitenquelle des HTML-Formulars ist das Attribut access key leer und funktioniert nicht. (FORMS-5753) 
-* Im Dialogfeld Info zu Workspace wird der Text &quot;Adobe Experience Manager - Forms&quot;als Text angezeigt. (FORMS-5748)
+* Wenn Benutzende die XML-Ausgabe mithilfe des Workbench-Prozesses generieren, schlägt sie bei einigen der Dateien fehl. (FORMS-11314)
+* Wenn Benutzende eine Vorschau für das Datensatzdokument (DOR) in anderen Sprachen als Englisch generieren, funktioniert die Vorschau nicht. (FORMS-11106)
+* Wenn Benutzende einige Bilddateien mit PDFG auf einer OSGi-Instanz konvertieren, die auf Linux mit JDK11 basiert, funktioniert die Konvertierung nicht. (FORMS-11105)
+* Wenn Benutzende das AEM Forms-Add-on installieren, funktioniert das Bedienfeld „Inhaltsstruktur“ in AEM Sites nicht mehr. (FORMS-10912)
+* Wenn Benutzende Daten mithilfe der NVDA-Bildschirmlesehilfe aus der Datumsauswahl-Komponente kopieren, werden sie nicht richtig gelesen. (FORMS-10805) 
+* Im Formular-Regeleditor lässt sich der Wert des Optionsfelds bzw. des Kontrollkästchens nicht festlegen, wenn der Datenwert Typ „Boolesch“ ist. (FORMS-10713)
+* Wenn Benutzende einem adaptiven Formular weitere Elemente hinzufügen, werden diese in einer Dropdown-Liste in umgekehrter Reihenfolge hinzugefügt. (FORMS-10456)
+* Wenn eine Dropdown-Liste mit dem Regeleditor gelöscht wird, wird der erste angegebene Wert weiterhin angezeigt, auch wenn der Wert gelöscht wurde. (FORMS-9963) 
+* Benutzende können nicht mit Bildschirmlesehilfen wie NVDA auf den Formulartitel zugreifen. (FORMS-8815) 
+* Benutzende können nicht mit Bildschirmlesehilfen wie NVDA auf den Untertitel in einem Formular zugreifen. (FORMS-8814) 
+* In der Seitenquelle des HTML-Formulars ist das Zugriffsschlüssel-Attribut leer und funktioniert nicht. (FORMS-5753) 
+* Im Dialogfeld „Informationen zu Workspace“ wird der Text „Adobe Experience Manager – Formulare“ als Text angezeigt. (FORMS-5748)
 
 #### [!DNL Forms Designer]{#forms-designer-6519}
 
-* Wenn ein Benutzer versucht, nicht interaktive PDF forms über Bildschirmlesehilfen zu lesen, werden einige Listenelemente nicht gelesen oder übersprungen. (LC-3921645) 
-* Wenn ein Benutzer die bearbeitbaren Felder durchsucht, werden nicht alle PDF-Formularfelder durchlaufen. (LC-3921631) 
+* Wenn Benutzende versuchen, nicht-interaktive PDF-Formulare über Bildschirmlesehilfen zu lesen, werden einige Listenelemente nicht vorgelesen oder übersprungen. (LC-3921645) 
+* Wenn Benutzende mit der Tabulatortaste durch die bearbeitbaren Felder blättern, werden nicht alle PDF-Formularfelder konsistent durchlaufen. (LC-3921631) 
 * Die Reihenfolge der Tags wird im PDF nach dem Zufallsprinzip geändert, selbst wenn das Tagging in Forms Designer korrekt ist. (LC-3921313) 
 * Eine Liste wird in den Tags in Adobe Acrobat Reader oder Adobe Acrobat DC nicht korrekt angezeigt. (LC-3921306)
-* Überschriftenebenen, die in Forms Designer korrekt zugewiesen wurden, werden nach dem Zufallsprinzip in eine `<P>` -Tag in Adobe Acrobat. (LC-3921305) 
+* Überschriftenebenen, die in Forms Designer korrekt zugewiesen wurden, werden in Adobe Acrobat nach dem Zufallsprinzip in ein `<P>`-Tag geändert. (LC-3921305) 
 * In einer Tabelle kann die ID eines Objekts nach der Zuweisung nicht mehr geändert werden. (LC-3921134) 
-* Wenn die zusammengeführten Zellen in der Tabelle enthalten sind, steht keine grafische Benutzeroberfläche zum Festlegen des Bereichs (Zeile und Spalte) in einer komplexen Tabelle in AEM Forms Designer zur Verfügung. (LC-3919532) 
+* Wenn zusammengeführte Zellen in der Tabelle enthalten sind, steht in AEM Forms Designer keine grafische Benutzeroberfläche zum Festlegen des Bereichs (Zeile und Spalte) in einer komplexen Tabelle zur Verfügung. (LC-3919532) 
 
 ### Foundation{#foundation-6519}
 
@@ -517,9 +516,9 @@ Um das Problem zu beheben, suchen Sie die Datei `<AEM_Forms_Installation_dir>\jb
 
 * Wenn ein adaptives Formular veröffentlicht wird, werden alle Abhängigkeiten, einschließlich Richtlinien, erneut veröffentlicht, selbst wenn keine Änderungen an ihnen vorgenommen wurden. (FORMS-10454)
 * Wenn Benutzende ein Feld erstmals in einem adaptiven Formular konfigurieren möchten, wird im Eigenschaften-Browser die Option zum Speichern einer Konfiguration nicht angezeigt. Das Problem lässt sich beheben, indem Sie im selben Editor ein anderes Feld des adaptiven Formulars konfigurieren.
-* Wenn Benutzer die Sendeaktion durchführen, schlägt die Übermittlung mit einem Fehler fehl:
+* Wenn Benutzende die Sendeaktion durchführen, schlägt die Übermittlung mit einer Fehlermeldung fehl:
   ` javax.servlet.ServletException: java.lang.NoSuchMethodError`
-Um das Problem zu beheben, [Kompilieren Sie die Sling-Skripte wie JSP, Java und Sightly neu](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+Um das Problem zu beheben, [kompilieren Sie die Sling-Skripte wie JSP, Java und Sightly neu](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=de#resolution). (FORMS-8542)
 
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}

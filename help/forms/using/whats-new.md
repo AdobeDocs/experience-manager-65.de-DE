@@ -1,14 +1,14 @@
 ---
 title: Übersicht über die neuen Funktionen | AEM 6.5 Forms
-description: Neueste Funktionen und Verbesserungen für AEM Formulare und Dokumente, die weltweit fortschrittlichste Lösung für das digitale Erlebnismanagement.
+description: Neueste Funktionen und Verbesserungen der AEM-Formulare und -Dokumente, der weltweit fortschrittlichsten Lösung für das Management digitaler Erlebnisse.
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 4%
+source-wordcount: '637'
+ht-degree: 85%
 
 ---
 
@@ -18,47 +18,52 @@ ht-degree: 4%
 | -------- | ---------------------------- |
 | Version | 6.5.19.0 |
 | Typ | Service Pack-Version |
-| Datum | Samstag, 8. Dezember 2023 |
+| Datum | Freitag, 8. Dezember 2023 |
 
-## Was ist in Adobe Experience Manager 6.5 Forms Service Pack 19 (6.5.19.0) enthalten?
+## Was ist im Adobe Experience Manager 6.5 Forms Service Pack 19 (6.5.19.0) enthalten?
 
-Experience Manager 6.5.19.0 enthält neue Funktionen, wichtige von Kunden angeforderte Verbesserungen, Fehlerbehebungen sowie Leistungs-, Stabilitäts- und Sicherheitsverbesserungen, die seit der ersten Verfügbarkeit von 6.5 im April 2019 veröffentlicht wurden. [Dieses Service Pack installieren](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=de) Experience Manager 6.5.
+Experience Manager 6.5.19.0 enthält neue Funktionen, wichtige von Kundinnen und Kunden angeregte Verbesserungen, Fehlerkorrekturen sowie Leistungs-, Stabilitäts- und Sicherheitsverbesserungen, die seit der ersten Verfügbarkeit von 6.5 im April 2019 veröffentlicht wurden. [Installieren Sie dieses Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=de) auf Experience Manager 6.5.
 
 ### Neue Funktionen
 
 #### Neue Kernkomponenten für adaptive Formulare
 
-Vertikale Registerkarten, Geschäftsbedingungen und Kontrollkästchen werden hinzugefügt, um die Skalierbarkeit von Formularen zu verbessern.
+Es werden vertikale Registerkarten, Geschäftsbedingungen und Kontrollkästchen hinzugefügt, um die Skalierbarkeit von Formularen zu verbessern.
 
-* **[Kontrollkästchenkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: Adaptive Forms, die auf Kernkomponenten basiert, kann jetzt eine Kontrollkästchenkomponente enthalten. Sie ermöglicht Benutzern, binäre Entscheidungen zu treffen, eine bestimmte Option auszuwählen oder zu deaktivieren. Es wird normalerweise als kleines Feld angezeigt, auf das geklickt oder getippt werden kann, um zwischen zwei Status zu wechseln: &quot;aktiviert&quot;und &quot;deaktiviert&quot;. Das Kontrollkästchen ist ein gängiges Formularelement, das verwendet wird, um eine Ja/Nein- oder true/false-Auswahl zu geben.
+* **[Kontrollkästchen-Komponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html?lang=de)**: Adaptive Formulare, die auf Kernkomponenten basieren, können jetzt eine Kontrollkästchen-Komponente enthalten. Sie ermöglicht Benutzenden, binäre Entscheidungen zu treffen, indem sie eine bestimmte Option auswählen oder eine Auswahl aufheben. Sie wird normalerweise als kleines Feld angezeigt, auf das geklickt oder getippt werden kann, um zwischen zwei Status zu wechseln: „aktiviert“ und „deaktiviert“. Das Kontrollkästchen ist ein gängiges Formularelement, das verwendet wird, um eine Ja/Nein- oder „true/false“-Auswahl zu treffen.
 
-* **[Komponente &quot;Allgemeine Geschäftsbedingungen&quot;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: Adaptive Forms, die auf Kernkomponenten basiert, kann jetzt eine Komponente für Geschäftsbedingungen enthalten. Sie ermöglicht es Formularautoren, einen bestimmten Abschnitt innerhalb des Formulars einzuführen, in dem den Benutzern die Bedingungen oder rechtlichen Vereinbarungen im Zusammenhang mit der Verwendung eines Dienstes, Produkts oder einer Plattform präsentiert werden. Diese Komponente soll Benutzer über die Regeln, Vorschriften und Verpflichtungen informieren, denen sie zustimmen, indem sie das Formular übermitteln.
+* **[Komponente „Geschäftsbedingungen“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=de)**: Adaptive Formulare, die auf Kernkomponenten basieren, können jetzt eine Komponente für Geschäftsbedingungen enthalten. Sie ermöglicht es Formularautorinnen und -autoren, einen bestimmten Abschnitt innerhalb des Formulars einzuführen, in dem den Benutzenden die Nutzungsbedingungen im Zusammenhang mit der Verwendung eines Dienstes, Produkts oder einer Plattform präsentiert werden. Diese Komponente hat das Ziel, Benutzende über die Regeln, Vorschriften und Verpflichtungen zu informieren, denen sie zustimmen, wenn sie das Formular übermitteln.
 
-  ![Vertikale Registerkarten, Geschäftsbedingungen und Kontrollkästchen-Komponenten](/help/forms/using/assets/forms-components.png)
+  ![Die Komponenten „Vertikale Registerkarten“, „Geschäftsbedingungen“ und „Kontrollkästchen“](/help/forms/using/assets/forms-components.png)
 
-* **[Komponente mit vertikalen Registerkarten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: Der auf Kernkomponenten basierende adaptive Forms kann jetzt Formularinhalte in einer vertikalen Liste von Registerkarten organisieren und so ein strukturiertes und navigierbares Layout bereitstellen. Die Verwendung von vertikalen Registerkarten in einem Formular kann das gesamte Benutzererlebnis verbessern, indem die Navigation vereinfacht und die Organisation des Formularinhalts verbessert wird, insbesondere in Situationen, in denen ein Formular mehrere Abschnitte oder komplexe Informationen enthält.
+* **[Komponente „Vertikale Registerkarten“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html?lang=de)**: Adaptive Formulare, die auf Kernkomponenten basieren, können jetzt Formularinhalte in einer vertikalen Liste von Registerkarten organisieren und so ein strukturiertes und navigierbares Layout bieten. Die Verwendung von vertikalen Registerkarten in einem Formular kann das gesamte Benutzererlebnis verbessern, indem die Navigation vereinfacht und die Organisation des Formularinhalts verbessert wird, insbesondere in Situationen, in denen ein Formular mehrere Abschnitte oder komplexe Informationen enthält.
 
 #### 64-Bit-Version von AEM Forms Designer
 
-Die [64-Bit-Version von AEM Forms Designer](/help/forms/using/installing-configuring-designer.md) bietet verbesserte Leistung, Skalierbarkeit und Speicherverwaltung, um die Erstellung von Formularen zu optimieren. Mit der 64-Bit-Architektur können Sie noch größere und komplexere Projekte einfach angehen, um nahtlose Design-Workflows und eine optimierte Effizienz zu gewährleisten. Verbessern Sie Ihre Formularentwurfskompetenzen und nutzen Sie die Zukunft von AEM Forms Designer mit dieser innovativen Version.
+Die [64-Bit-Version von AEM Forms Designer](/help/forms/using/installing-configuring-designer.md) bietet eine verbesserte Leistung, Skalierbarkeit und Speicherverwaltung, um die Erstellung von Formularen zu optimieren. Mit der 64-Bit-Architektur können Sie noch größere und komplexere Projekte einfach angehen, um nahtlose Design-Workflows und eine optimierte Effizienz zu gewährleisten. Verbessern Sie Ihre Formularentwurfsfähigkeiten und nutzen Sie die Zukunft von AEM Forms Designer mit dieser innovativen Version.
 
-#### Verbinden einer adaptiven Forms-Liste mit Microsoft® SharePoint-Liste
+#### Verbinden eines adaptiven Formulars mit der Microsoft® SharePoint-Liste
 
-AEM Forms bietet eine OOTB-Integration für [Formulardaten direkt an SharePoint List senden](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)), sodass Sie die Listenfunktionen von SharePoint verwenden können. Sie können die Microsoft® SharePoint-Liste als Datenquelle für ein Formulardatenmodell konfigurieren und die Übermittlungsaktion &quot;Senden mit Formulardatenmodell&quot;verwenden, um ein adaptives Formular mit der SharePoint-Liste zu verbinden.
+AEM Forms bietet eine vorkonfigurierte Integration, um [Formulardaten direkt an eine SharePoint-Liste zu senden](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list), sodass Sie die Listenfunktionen von SharePoint verwenden können. Sie können die Microsoft® SharePoint-Liste als Datenquelle für ein Formulardatenmodell konfigurieren und die Übermittlungsaktion „Senden mit Formulardatenmodell“ verwenden, um ein adaptives Formular mit der SharePoint-Liste zu verbinden.
 
 #### Unterstützung zum Konfigurieren der Eigenschaften des Datensatzdokuments für adaptive Formularfragmente
 
-Sie können jetzt einfach [Anpassen der adaptiven Formularfragmente und ihrer Felder im Editor für adaptive Formulare](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+Sie können [adaptive Formularfragmente und ihre Felder im Editor für adaptive Formulare einfach anpassen](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+
+#### Enthält 64-Bit-Version von XMLFM
+
+Die 64-Bit-Iteration von XMLFM führt zu einer verbesserten Leistung, Skalierbarkeit und verbesserter Speicherverwaltung. Dies ist der erste native 64-Bit-Dienst, der serverseitig bereitgestellt wird. Durch die Nutzung seiner inhärenten Fähigkeit, auf deutlich größere Speicherressourcen im Vergleich zu seinem 32-Bit-Gegenstück zuzugreifen, ermöglicht XMLFM 64-Bit die nahtlose Handhabung größerer Rendering-Workloads. Dieser Meilenstein stellt nicht nur einen Leistungssprung dar, sondern führt auch wichtige Verbesserungen am nativen Service-Framework innerhalb des AEM Forms-Servers ein. Mit diesem Update wird der AEM Forms-Server für die nahtlose Unterstützung nativer 64-Bit-Dienste ausgestattet.
+
 
 
 ## Fehlerbehebungen
 
-Die Version enthält auch Fehlerbehebungen für mehr als 20 von Kunden gemeldete Probleme. Eine detaillierte Liste der im Service Pack enthaltenen Fehlerbehebungen finden Sie unter [Versionshinweise](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=en#forms-6519)
+Die Version enthält außerdem Fehlerbehebungen für mehr als 20 Probleme, die von Kundinnen und Kunden gemeldet wurden. Eine detaillierte Liste der im Service Pack enthaltenen Fehlerbehebungen finden Sie in den [Versionshinweisen](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=de#forms-6519)
 
 
-## Service Pack installieren
+## Installieren des Service Packs
 
-Das Service Pack enthält neue Funktionen und Fehlerkorrekturen für AEM Forms on JEE und AEM Forms unter OSGi. Die Installationsanweisungen haben Änderungen gegenüber vorherigen Service Packs. Installationsanweisungen finden Sie unter [Installationsanweisungen für das AEM Forms Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en).
+Das Service Pack enthält neue Funktionen und Fehlerkorrekturen für AEM Forms on JEE und AEM Forms on OSGi. Die Installationsanweisungen haben sich gegenüber vorherigen Service Packs geändert. Installationsanweisungen finden Sie unter [Installationsanweisungen für das AEM Forms Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=de).
 
 
 
