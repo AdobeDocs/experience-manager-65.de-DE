@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 exl-id: 06ca4e6d-9ab7-4c5b-905c-07c448632f2b
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 25c444e2093d118259925034e0d630ab0effc473
 workflow-type: tm+mt
-source-wordcount: '6381'
-ht-degree: 88%
+source-wordcount: '3865'
+ht-degree: 78%
 
 ---
 
@@ -79,7 +79,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
   Eine allgemeine Klasse für eine beliebige [Komponente](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Component), die anhand von Breite und Höhe als Feld formatiert werden soll.
 
-  BoxComponent passt das Feldmodell automatisch an die Größen- und Platzierungsdefinition an und funktioniert auch im Rendering-Modell der Komponente ordnungsgemäß.
+  BoxComponent bietet automatische Box-Modellanpassungen für Größenanpassung und Positionierung und funktioniert im Komponenten-Rendering-Modell ordnungsgemäß.
 
 * browsedialog
 
@@ -123,7 +123,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
   [CQ.Ext.chart.Chart](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart)
 
-  Das CQ.Ext.chart-Paket stellt die Funktion zum Visualisieren von Daten anhand von Flash-basierten Diagrammen bereit. Jedes Diagramm wird direkt an einen CQ.Ext.data.Store gebunden, was automatische Aktualisierungen des Diagramms ermöglicht. Sie können das Erscheinungsbild eines Diagramms anhand der Konfigurationsoptionen [chartStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) und [extraStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) ändern.
+  Das CQ.Ext.chart-Paket bietet die Möglichkeit, Daten mit Flash-basierter Grafik zu visualisieren. Jedes Diagramm wird direkt an einen CQ.Ext.data.Store gebunden, was automatische Aktualisierungen des Diagramms ermöglicht. Sie können das Erscheinungsbild eines Diagramms anhand der Konfigurationsoptionen [chartStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) und [extraStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) ändern.
 
 * checkbox
 
@@ -251,7 +251,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
   [CQ.CustomContentPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.CustomContentPanel)
 
-  CustomContentPanel ist ein spezielles Feld für die Verwendung in [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog): Die darin enthaltenen Inhalte werden von einer anderen URL abgerufen bzw. zu einer anderen URL gesendet als die anderen Felder im Dialogfeld.
+  Das CustomContentPanel ist ein spezielles Bedienfeld zur Verwendung in [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog): Der Inhalt wird aus den anderen Feldern des Dialogfelds abgerufen und an eine andere URL gesendet.
 
 * cycle
 
@@ -293,7 +293,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
   [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)
 
-   Ein spezielles Fenster mit einem Formular im Hauptteil und einer Schaltflächengruppe in der Fußzeile. Sie wird normalerweise zur Bearbeitung von Inhalten verwendet, kann aber auch nur Informationen anzeigen.
+  Das Dialogfeld ist ein spezielles Fenster mit einem Formular im Hauptteil und einer Schaltflächengruppe in der Fußzeile. Sie wird normalerweise zur Bearbeitung von Inhalten verwendet, kann aber auch nur Informationen anzeigen.
 
 * dialogfieldset
 
@@ -355,7 +355,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
   [CQ.Ext.form.FieldSet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FieldSet)
 
-  Ein Standardcontainer zum Gruppieren von Elementen in einem [Formular](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FormPanel).
+  Standardcontainer zum Gruppieren von Elementen in einem [Formular](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FormPanel).
 
 * fileuploaddialogbutton
 
@@ -413,7 +413,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
   [CQ.Ext.form.HtmlEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor)
 
-  Stellt eine einfache HTML-Editor-Komponente bereit. Einige Symbolleistenfunktionen werden von Safari nicht unterstützt und bei Bedarf automatisch ausgeblendet. Diese werden gegebenenfalls in den Konfigurationsoptionen angegeben.
+  Stellt eine einfache HTML-Editor-Komponente bereit. Einige Symbolleistenfunktionen werden von Safari nicht unterstützt und werden bei Bedarf automatisch ausgeblendet. Diese werden gegebenenfalls in den Konfigurationsoptionen angegeben.
 
   Für die Schaltflächen in der Editor-Symbolleiste sind in der [buttonTips](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor)-Eigenschaft QuickInfos definiert.
 
@@ -463,7 +463,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
   [CQ.Ext.list.ListView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.ListView)
 
-  CQ.Ext.list.ListView ist eine schnelle, einfache Implementierung einer [Raster](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)-ähnlichen Ansicht.
+  CQ.Ext.list.ListView ist eine schnelle und einfache Implementierung einer [Grid-like](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) anzeigen.
 
 * livecopyproperties
 
@@ -793,7 +793,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
   [CQ.wcm.Statistics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.Statistics)
 
-   „Statistics“ zeigt die Seitenimpressionen als Diagramm an. Das Widget ermöglicht die Auswahl eines Zeitraums, für den die Statistiken angezeigt werden sollen.
+   „Statistics“ zeigt die Seitenimpressionen als Diagramm an. Über das Widget können Sie einen Zeitraum auswählen, für den die Statistiken angezeigt werden sollen.
 
 * store
 
