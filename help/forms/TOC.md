@@ -4,15 +4,15 @@ product: adobe experience manager
 sub-product: forms
 solution: Experience Manager, Experience Manager Forms
 audience: end-user
-user-guide-title: Adobe Experience Manager 6.5, Forms-Anleitung
+user-guide-title: Handbuch zu Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Forms-Anleitung
 user-guide-description: Erstellen, Verwalten, Veröffentlichen und Aktualisieren von digitalen Formularen.
 role: User
 feature: Forms Service
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: 6f2b16a51d4ad0f5c199ff41e8abe150c27ecc01
 workflow-type: tm+mt
-source-wordcount: '3762'
-ht-degree: 97%
+source-wordcount: '3765'
+ht-degree: 98%
 
 ---
 
@@ -116,7 +116,7 @@ ht-degree: 97%
       + [User Management in Forms](using/user-management-handling-user-data.md)
       + [Forms-JEE-Workflows](using/forms-workflow-jee-handling-user-data.md)
       + [Formularportal](using/forms-portal-handling-user-data.md)
-      + [Korrespondenzverwaltung](using/correspondence-management-handling-user-data.md)
+      + [Correspondence Management](using/correspondence-management-handling-user-data.md)
       + [Integration mit Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
       + [Document Security](/help/forms/using/document-security-handling-user-data.md)
    + Härten der AEM Forms-Umgebung {#hardening-aem-forms-environment}
@@ -132,11 +132,11 @@ ht-degree: 97%
    + [Erstellen des Formulardatenmodells](using/create-form-data-models.md)
    + [Arbeiten mit einem Formulardatenmodell](using/work-with-form-data-model.md)
    + [Verwenden eines Formulardatenmodells](using/using-form-data-model.md)
-+ Adaptive Forms - Kernkomponenten {#adaptive-forms-core-components}
-   + [Aktivieren von Kernkomponenten für Ihre Umgebung](/help/forms/using/enable-adaptive-forms-core-components.md)
++ Adaptive Formulare – Kernkomponenten {#adaptive-forms-core-components}
+   + [Aktivieren der Kernkomponenten für Ihre Umgebung](/help/forms/using/enable-adaptive-forms-core-components.md)
    + [Erstellen eines auf Kernkomponenten basierenden adaptiven Formulars](/help/forms/using/create-an-adaptive-form-core-components.md)
-   + [Erstellen von Designs für auf Kernkomponenten basierende adaptive Forms](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
-   + [Benutzerdefinierten Fehler-Handler für auf Kernkomponenten basierende adaptive Forms erstellen und verwenden](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
+   + [Erstellen von Designs für auf Kernkomponenten basierende adaptive Formulare](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
+   + [Erstellen und Verwenden von benutzerdefinierten Fehler-Handlern für auf Kernkomponenten basierende adaptive Formulare](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
 + Adaptiv Forms- einfaches Authoring {#adaptive-forms-basic-authoring}
    + [Best Practices für die Arbeit mit adaptiven Formularen](using/adaptive-forms-best-practices.md)
    + [Erstellen eines adaptiven Formulars](using/creating-adaptive-form.md)
@@ -164,7 +164,7 @@ ht-degree: 97%
    + [Verknüpfen von Übermittlungs-Reviewern mit einem Formular](using/adding-reviewers-form.md)
    + [Verfassen von kontextsensitiver Hilfe für Formularfelder](using/authoring-in-field-help.md)
    + [Verwenden des Layout-Modus zum Ändern der Größe von Komponenten](/help/forms/using/resize-using-layout-mode.md)
-   + [Verbinden und Senden von adaptiven Formulardaten an Microsoft](/help/forms/using/forms-microsoft-power-automate-integration.md)
+   + [Verbinden und Übermitteln von adaptiven Formulardaten an Microsoft](/help/forms/using/forms-microsoft-power-automate-integration.md)
 + Adaptive Formulare - Erweitertes Authoring {#adaptive-forms-advanced-authoring}
    + [Erstellen adaptiver Formulare mithilfe des JSON-Schemas](using/adaptive-form-json-schema-form-model.md)
    + [Adaptive Formulare mithilfe des XML-Schemas erstellen](using/adaptive-form-xml-schema-form-model.md)
@@ -189,7 +189,7 @@ ht-degree: 97%
    + [Integrieren von Adobe Sign mit AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
    + [Erstellen und Verwalten von Assetüberprüfungen in Formularen](using/create-reviews-forms.md)
    + [Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation in ein Einzelseiten-Programm von AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
-   + [Benutzerdefinierten Fehler-Handler für adaptive Forms erstellen und verwenden](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
+   + [Erstellen und Verwenden von benutzerdefinierten Fehler-Handlern für adaptive Formulare](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
 + Interaktive Kommunikation {#interactive-communications}
    + [Einführung in die Benutzeroberfläche für interaktive Kommunikationserstellung](using/introduction-interactive-communication-authoring.md)
    + [Erstellen einer interaktiven Kommunikation](using/create-interactive-communication.md)
@@ -699,7 +699,7 @@ ht-degree: 97%
    + [CRX-Repository kann nicht wiederhergestellt werden](/help/forms/using/restore-crx-repository.md)
    + [Fehler „Dienst nicht verfügbar“ nach der Installation von AEM 6.5.15.0 Service Pack](/help/forms/using/aem-service-pack-installation-solution.md)
    + [Installationsproblem mit dem Service Pack von AEM Forms JEE 6.5.15.0 in der JBoss Linux-Umgebung](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
-   + [Ausführen mehrerer Dienste, auch wenn AEM Forms noch nicht vollständig gestartet wurde](/help/forms/using/executing-multiple-services-even-aem-forms-has-not-started.md)
+   + [Verarbeitung von Dokumenten, auch wenn der AEM Forms-Server nicht vollständig betriebsbereit ist](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
    + [Output-Dienst, Forms-Dienst oder DoR-Dienst (Document of Record) können nicht verwendet werden](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
 + Alte Dokumentation {#legacy-documentation}
    + [Verwenden des Service „execute script“ in AEM Forms on JEE Workbench zum Erstellen von XML-Daten](developing/building-xml.md)

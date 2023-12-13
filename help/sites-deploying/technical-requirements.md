@@ -3,10 +3,10 @@ title: Technische Anforderungen
 description: In diesem Dokument werden die unterstützten Client- und Server-Plattformen für Adobe Experience Manager aufgeführt.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: 6f2b16a51d4ad0f5c199ff41e8abe150c27ecc01
 workflow-type: tm+mt
-source-wordcount: '3625'
-ht-degree: 86%
+source-wordcount: '3624'
+ht-degree: 94%
 
 ---
 
@@ -97,7 +97,7 @@ Adobe Experience Manager funktioniert mit den folgenden Versionen der Java™ Vi
 | Azul Zulu OpenJDK 11 − 64 Bit | A: Unterstützt `[3]` | |
 | Azul Zulu OpenJDK 8 − 64 Bit | A: Unterstützt `[3]` | |
 
-1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java™ SE-Produkte umgestiegen. Java™ 9, Java™ 10 und Java™ 12 sind Nicht-LTS-Versionen von Oracle (weitere Informationen finden Sie in der [Roadmap für Oracle Java™ SE-Support](https://www.oracle.com/technetwork/java/eol-135779.html)). Um AEM in einer Produktionsumgebung bereitzustellen, unterstützt Adobe nur die LTS-Versionen von Java™. Der Support und die Bereitstellung des Oracle Java™ SE JDK, einschließlich aller Wartungsupdates von LTS-Versionen, werden von Adobe direkt für alle AEM-Kundinnen und -Kunden unterstützt, die die Oracle Java™ SE-Technologie nutzen. Weitere Informationen finden Sie in der [Richtlinie zur Java™-Unterstützung für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
+1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java™ SE-Produkte umgestiegen. Java™ 9, Java™ 10 und Java™ 12 sind Nicht-LTS-Versionen von Oracle (weitere Informationen finden Sie in der [Roadmap für Oracle Java™ SE-Support](https://www.oracle.com/technetwork/java/eol-135779.html)). Um AEM in einer Produktionsumgebung bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java™. Der Support und die Bereitstellung des Oracle Java™ SE JDK, einschließlich aller Wartungsupdates von LTS-Versionen, werden von Adobe direkt für alle AEM-Kundinnen und -Kunden unterstützt, die die Oracle Java™ SE-Technologie nutzen. Weitere Informationen finden Sie in der [Richtlinie zur Java™-Unterstützung für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
    **Wichtig: Oracle Java™ 11 wird noch mindestens bis September 2026 unterstützt. Unterstützung für Oracle Java™ 17 wird derzeit vorbereitet.**
 
 1. Die IBM® JRE wird nur zusammen mit WebSphere Application Server unterstützt.
@@ -128,7 +128,7 @@ Es gibt verschiedene Optionen zum Bereitstellen des Repositorys von Adobe Experi
 | Apache Solr | Suchdienst | A: Unterstützt |
 
 1. „Dateisystem“ umfasst den POSIX-konformen Blockspeicher. Dazu gehört auch die Netzwerkspeichertechnologie. Beachten Sie, dass die Leistung des Dateisystems variieren und die Gesamtleistung beeinflussen kann. Führen Sie Lasttests für AEM mit dem Netzwerk-/Remote-Dateisystem durch.
-1. Für MongoDB Enterprise-Versionen 4.2 und 4.4 ist mindestens AEM 6.5 SP9 erforderlich.
+1. Für die MongoDB Enterprise-Versionen 4.2 und 4.4 ist mindestens AEM 6.5 SP9 erforderlich.
 1. MongoDB Sharding wird in AEM nicht unterstützt.
 1. Nur MongoDB Storage Engine WiredTiger wird unterstützt.
 1. Wird für Kundinnen und Kunden von AEM Forms-Upgrades unterstützt. Wird für neue Installationen nicht unterstützt.
@@ -142,7 +142,7 @@ Weitere Informationen zur Funktion von AEM Communities finden Sie unter [Bereits
 
 >[!NOTE]
 >
-MongoDB ist ein Software-Programm von Drittanbietern und ist nicht im AEM Lizenzierungspaket enthalten. Weitere Informationen finden Sie auf der Seite zur [MongoDB-Lizenzierungsrichtlinie](https://www.mongodb.com/licensing/server-side-public-license/faq).
+MongoDB ist ein Drittanbieter-Software-Programm und nicht im AEM-Lizenzierungspaket enthalten. Weitere Informationen finden Sie auf der Seite zur [MongoDB-Lizenzierungsrichtlinie](https://www.mongodb.com/licensing/server-side-public-license/faq).
 >
 Um Ihre AEM-Implementierung mit MongoDB optimal nutzen zu können, empfiehlt Adobe die Lizenzierung der MongoDB Enterprise-Version, um professionellen Support zu erhalten. Weitere Informationen finden Sie unter [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk).
 >
@@ -164,9 +164,9 @@ Um AEM 6.5 mit einer unterstützten relationalen Datenbank ausführen zu können
 
 ### Servlet-Engines/Anwendungs-Server {#servlet-engines-application-servers}
 
-Adobe Experience Manager kann entweder als eigenständiger Server (die Schnellstart-JAR-Datei) oder als Webanwendung auf einem Drittanbieter-Anwendungsserver (die WAR-Datei) ausgeführt werden.
+Adobe Experience Manager kann als eigenständiger Server (quickstart-JAR-Datei) oder als Web-Anwendung auf einem Drittanbieter-Anwendungs-Server (WAR-Datei) ausgeführt werden.
 
-Die erforderliche Mindestversion der Servlet-API ist Servlet 3.1
+Als Servlet-API-Version ist mindestens Servlet 3.1 erforderlich.
 
 | Plattform | Unterstützungsebene |
 |---|---|
@@ -190,7 +190,7 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
 
 | **Plattform** | **Unterstützungsebene** |
 |---|---|
-| **Linux® basierend auf der Red Hat®-Distribution** | A: Unterstützt `[1]` `[3]` |
+| **Linux®, basierend auf der Red Hat®-Verteilung** | A: Unterstützt `[1]` `[3]` |
 | Linux®, auf Basis der Debian-Verteilung einschl. Ubuntu | A: Unterstützt `[1]` `[2]` |
 | Linux®, auf Basis der SUSE®-Verteilung | A: Unterstützt `[1]` |
 | Microsoft® Windows Server 2019 `[4]` | R: Eingeschränkte Unterstützung für neue Verträge `[5]` |
@@ -203,8 +203,9 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
 1. AEM Forms wird auf Ubuntu 20.04 LTS unterstützt.
 1. Die Linux®-Verteilung wird von Adobe Managed Services unterstützt.
 
-   >[HINWEIS!]
-Für Linux-basierte Server (OSGI- und JEE-Stack) erfordert das AEM Forms-Add-on Laufzeitabhängigkeiten wie:
+   >[!NOTE]
+   >
+   Für Linux-basierte Server (OSGI- und JEE-Stack) erfordert das AEM Forms-Add-on Laufzeitabhängigkeiten wie:
    * glibc.x86_64 (2.17-196)
    * libX11.x86_64 (1.6.7-4)
    * zlib.x86-64 (1.2.7-17)
@@ -217,7 +218,7 @@ Für Linux-basierte Server (OSGI- und JEE-Stack) erfordert das AEM Forms-Add-on 
 
 >[!NOTE]
 >
-Wenn Sie AEM Forms 6.5 installieren, stellen Sie sicher, dass Sie die folgenden 32-Bit-Versionen von Microsoft Visual C++ Redistributable installiert haben.
+Wenn Sie AEM Forms 6.5 installieren, stellen Sie sicher, dass Sie die folgenden 32-Bit-Versionen von Microsoft® Visual C++ Redistributable installiert haben.
 >
 * Microsoft® Visual C++ 2008 Redistributable
 * Microsoft® Visual C++ 2010 Redistributable
@@ -250,7 +251,7 @@ Die folgenden Web-Server werden für die Verwendung mit der Dispatcher-Version 4
 | Microsoft IIS® 10 (Internet Information Server) | A: Unterstützt |
 | Microsoft® IIS 8.5 (Internet Information Server) | Z: Nicht unterstützt |
 
-1. Webserver, die auf dem Apache httpd-Quellcode basieren, unterstützen genauso viel wie die HTTPD-Version, auf der sie basieren. Wenden Sie sich bei Zweifeln hinsichtlich der Unterstützungsebene des jeweiligen Serverprodukts zur Bestätigung an Adobe. Die folgenden Fälle:
+1. Auf Apache HTTPD-Quell-Code basierende Webserver werden im gleichen Umfang unterstützt wie die HTTPD-Version, auf der sie basieren. Wenden Sie sich bei Zweifeln hinsichtlich der Unterstützungsebene des jeweiligen Serverprodukts zur Bestätigung an Adobe. Die folgenden Fälle:
 
    1. Der HTTP-Server wurde nur mit offiziellen Apache-Quellverteilungen erstellt, oder
    1. Der HTTP-Server wurde als Teil des Betriebssystems bereitgestellt, auf dem er ausgeführt wird. Beispiele: IBM® HTTP Server, Oracle HTTP Server
@@ -263,7 +264,7 @@ Die folgenden Web-Server werden für die Verwendung mit der Dispatcher-Version 4
 
 Die Adobe Experience Manager-Benutzeroberfläche funktioniert mit den folgenden Client-Plattformen. Alle Browser werden mit dem Standardsatz von Plug-ins und Add-ons getestet.
 
-Die AEM-Benutzeroberfläche ist für größere Bildschirme (normalerweise Notebooks und Desktop-Computer) und den Tablet-Formfaktor (z. B. Apple iPad oder Microsoft Surface) optimiert. Der Telefon-Formfaktor wird nicht unterstützt.
+Die AEM-Benutzeroberfläche ist für größere Bildschirme (normalerweise Notebooks und Desktop-Computer) und den Tablet-Formfaktor (z. B. Apple iPad oder Microsoft® Surface) optimiert. Der Telefon-Formfaktor wird nicht unterstützt.
 
 >[!NOTE]
 >
@@ -331,13 +332,13 @@ Die Versionen von Mozilla Firefox, Google Chrome und Microsoft® Edge werden all
 
 ### Unterstützte Browser für Websites {#supported-browsers-for-websites}
 
-Im Allgemeinen hängt die Browserunterstützung für von AEM Sites gerenderte Websites von der Implementierung AEM Seitenvorlagen, Designs und Komponentenausgabe ab und liegt daher in der Verantwortung des Anbieters, der diese Teile implementiert.
+Im Allgemeinen hängt die Browser-Unterstützung für mit AEM Sites gerenderte Websites von der Implementierung der AEM-Seitenvorlagen, dem Design und der Komponentenausgabe ab und wird daher von der Partei kontrolliert, die diese Teile implementiert.
 
 ### WebDAV-Clients {#webdav-clients}
 
 **Microsoft® Windows 7+**
 
-Bei der Verbindung mit Microsoft® Windows 7+ mit einer AEM Instanz, die nicht mit SSL gesichert ist, muss unter Windows die grundlegende Authentifizierung über ein ungesichertes Netzwerk aktiviert werden. Dies erfordert eine Änderung in der Windows-Registrierung des WebClient:
+Um eine erfolgreiche Verbindung mit Microsoft® Windows 7+ zu einer AEM-Instanz herzustellen, die nicht mit SSL gesichert ist, muss unter Windows die Standardauthentifizierung über ein ungesichertes Netzwerk aktiviert sein. Dies erfordert eine Änderung in der Windows-Registrierung des WebClient:
 
 1. Suchen Sie den Registrierungsunterschlüssel:
 
@@ -357,11 +358,11 @@ Der Betrieb ist nahtlos, da keine spezielle Konfiguration erforderlich ist. Sie 
 
 Wenn eine IP-Adresse angegeben werden muss, können Sie (nach Bedarf) aus folgenden Optionen auswählen:
 
-* Eine IPv6-Adresse. Beispiel: `https://[ab12::34c5:6d7:8e90:1234]:4502`
+* Eine IPv6-Adresse. Zum Beispiel: `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
-* Eine IPv4-Adresse. Beispiel: `https://123.1.1.4:4502`
+* Eine IPv4-Adresse. Zum Beispiel: `https://123.1.1.4:4502`
 
-* Ein Servername. Beispiel: `https://www.yourserver.com:4502`
+* Ein Servername. Zum Beispiel: `https://www.yourserver.com:4502`
 
 * Der Standardfall `localhost` wird für IPv4- und IPv6-Netzwerkinstallationen angenommen. Beispiel: `https://localhost:4502`
 
@@ -395,7 +396,7 @@ Wenn Sie Dynamic Media auf Linux® verwenden, müssen die folgenden Voraussetzun
 
 >[!NOTE]
 >
-Falls das Gebietsschema so festgelegt ist, dass LC_CTYPE nicht `en_US.UTF-8` entspricht, funktioniert Dynamic Media nicht. Geben Sie bei der Eingabeaufforderung den Wert „locale“ ein, um den Wert zu ermitteln. Wenn sie nicht richtig festgelegt ist, legen Sie die Umgebungsvariable LC_CTYPE auf die leere Zeichenfolge fest, indem Sie &quot;export LC_CTYPE=&quot;eingeben, bevor Sie AEM ausführen.
+Falls das Gebietsschema so festgelegt ist, dass LC_CTYPE nicht `en_US.UTF-8` entspricht, funktioniert Dynamic Media nicht. Geben Sie bei der Eingabeaufforderung den Wert „locale“ ein, um den Wert zu ermitteln. Wenn er nicht richtig eingestellt ist, legen Sie die Umgebungsvariable LC_CTYPE auf die leere Zeichenfolge fest, indem Sie „export LC_CTYPE=“ eingeben, bevor Sie AEM ausführen.
 
 >[!NOTE]
 >
@@ -422,7 +423,7 @@ Daher empfiehlt Adobe, dass Sie NUMA bei der Ausführung eines solchen Systems m
 * Microsoft® Windows Server 2016
 * Swap-Speicherplatz, der mindestens der doppelten Menge des physischen Speichers (RAM) entspricht
 
-Um Dynamic Media auf Windows zu verwenden, installieren Sie Microsoft Visual Studio 2010, 2013 und 2015 Redistributable für x64 und x86.
+Um Dynamic Media auf Windows zu verwenden, installieren Sie Microsoft® Visual Studio 2010, 2013 und 2015 Redistributable für x64 und x86.
 
 Für Windows x64:
 
@@ -504,10 +505,10 @@ PDF Generator unterstützt nur englische, französische, deutsche und japanische
 >
 Zusätzlich gilt Folgendes:
 >
-* PDF Generator erfordert eine 32-Bit-Version von [Acrobat 2020 Klassische Track-Version 20.004.30006](https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html) oder Acrobat 2017, Version 17.011.30078, um die Konvertierung durchzuführen.
+* PDF Generator erfordert die 32-Bit-Version der [klassischen Acrobat 2020-Version 20.004.30006](https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html) oder der Acrobat 2017-Version 17.011.30078, um die Konvertierung durchzuführen.
 * PDF Generator-Konvertierungen für OpenOffice werden nur unter Windows und Linux unterstützt®.
-* PDF Generator unterstützt nur die 32-Bit-Einzelhandelsversion von Microsoft® Office Professional Plus und andere für die Konvertierung auf dem Windows-Betriebssystem erforderliche Software.
-* PDF Generator unterstützt die 32-Bit- und 64-Bit-Versionen von OpenOffice unter Linux®.
+* PDF Generator unterstützt nur die 32-Bit-Einzelhandelsversion von Microsoft® Office Professional Plus und andere für die Konvertierung unter einem Windows-Betriebssystem erforderliche Software.
+* PDF Generator unterstützt 32-Bit- und 64-Bit-Versionen von OpenOffice unter dem Linux®-Betriebssystem.
 * PDF Generator unterstützt nicht Microsoft® Office 365.
 * Die Funktionen von OCR PDF, PDF optimieren und PDF erstellen werden nur unter Windows unterstützt.
 * Eine Version von Acrobat ist im Lieferumfang von AEM Forms enthalten, um die PDF Generator-Funktionalität zu aktivieren. Die gebündelte Version sollte während der Laufzeit der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur programmatisch mit AEM Forms zugänglich sein. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung für Ihre Bereitstellung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html))
@@ -546,4 +547,4 @@ Das Zurückschreiben von XMP-Daten wird für die folgenden Plattformen und Datei
 
 ### Anforderungen an AEM Assets zur Verarbeitung von Metadaten-lastigen Assets unter Linux® {#assetsonlinux}
 
-Für den XMPFilesProcessor-Prozess muss die Bibliothek GLIBC_2.14 funktionieren. Verwenden Sie einen Linux®-Kernel, der GLIBC_2.14 enthält, z. B. Linux® Kernel Version 3.1.x. Sie verbessert die Leistung bei der Verarbeitung von Assets, die eine große Menge an Metadaten enthalten, z. B. PSD-Dateien. Die Verwendung einer früheren Version von GLIBC führt zu Fehlern in Protokollen, die mit `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP` beginnen.
+Für den XMPFilesProcessor-Prozess ist die Bibliothek GLIBC_2.14 erforderlich. Verwenden Sie einen Linux®-Kernel, der GLIBC_2.14 enthält, z. B. Linux® Kernel Version 3.1.x. Sie verbessert die Leistung bei der Verarbeitung von Assets, die eine große Menge an Metadaten enthalten, z. B. PSD-Dateien. Die Verwendung einer früheren Version von GLIBC führt zu Fehlern in Protokollen, die mit `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP` beginnen.
