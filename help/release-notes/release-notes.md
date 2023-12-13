@@ -3,10 +3,10 @@ title: Versionshinweise für [!DNL Adobe Experience Manager] 6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
+source-git-commit: d3f18320ca8a9a100e1aa6344a1c9424d0ff03ca
 workflow-type: tm+mt
-source-wordcount: '4232'
-ht-degree: 97%
+source-wordcount: '4225'
+ht-degree: 94%
 
 ---
 
@@ -50,7 +50,7 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 * **Neue Kernkomponenten für adaptive Formulare**: Es werden vertikale Registerkarten, Geschäftsbedingungen und Kontrollkästchen hinzugefügt, um die Skalierbarkeit von Formularen zu verbessern.
    * **[Kontrollkästchen-Komponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html?lang=de)**: Adaptive Formulare, die auf Kernkomponenten basieren, können jetzt eine Kontrollkästchen-Komponente enthalten. Sie ermöglicht Benutzenden, binäre Entscheidungen zu treffen, indem sie eine bestimmte Option auswählen oder eine Auswahl aufheben. Sie wird normalerweise als kleines Feld angezeigt, auf das geklickt oder getippt werden kann, um zwischen zwei Status zu wechseln: „aktiviert“ und „deaktiviert“. Das Kontrollkästchen ist ein gängiges Formularelement, das verwendet wird, um eine Ja/Nein- oder „true/false“-Auswahl zu treffen.
 
-   * **[Komponente „Geschäftsbedingungen“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=de)**: Adaptive Formulare, die auf Kernkomponenten basieren, können jetzt eine Komponente für Geschäftsbedingungen enthalten. Sie ermöglicht es Formularautorinnen und -autoren, einen bestimmten Abschnitt innerhalb des Formulars einzuführen, in dem den Benutzenden die Nutzungsbedingungen im Zusammenhang mit der Verwendung eines Dienstes, Produkts oder einer Plattform präsentiert werden. Diese Komponente hat das Ziel, Benutzende über die Regeln, Vorschriften und Verpflichtungen zu informieren, denen sie zustimmen, wenn sie das Formular übermitteln.
+   * **[Komponente „Geschäftsbedingungen“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=de)**: Adaptive Formulare, die auf Kernkomponenten basieren, können jetzt eine Komponente für Geschäftsbedingungen enthalten. Sie ermöglicht es Autoren von Forms, einen bestimmten Abschnitt innerhalb des Formulars einzuführen, in dem den Benutzern die Bedingungen oder rechtlichen Vereinbarungen im Zusammenhang mit der Verwendung eines Dienstes, Produkts oder einer Plattform präsentiert werden. Diese Komponente hat das Ziel, Benutzende über die Regeln, Vorschriften und Verpflichtungen zu informieren, denen sie zustimmen, wenn sie das Formular übermitteln.
 
      ![Die Komponenten „Vertikale Registerkarten“, „Geschäftsbedingungen“ und „Kontrollkästchen“](/help/forms/using/assets/forms-components.png)
 
@@ -58,11 +58,11 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 
 * **[64-Bit-Version von AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)**: Die 64-Bit-Version von AEM Forms Designer bietet eine verbesserte Leistung, Skalierbarkeit und Speicherverwaltung, um die Erstellung von Formularen zu optimieren. Mit der 64-Bit-Architektur können Sie noch größere und komplexere Projekte einfach angehen, um nahtlose Design-Workflows und eine optimierte Effizienz zu gewährleisten. Verbessern Sie Ihre Formularentwurfsfähigkeiten und nutzen Sie die Zukunft von AEM Forms Designer mit dieser innovativen Version.
 
-* **[Verbinden eines adaptiven Formulars mit einer Microsoft® SharePoint-Liste](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms bietet eine vorkonfigurierte Integration zum Senden von Formulardaten direkt an eine SharePoint-Liste, sodass Sie die Listenfunktionen von SharePoint verwenden können. Sie können eine Microsoft SharePoint-Liste als Datenquelle für ein Formulardatenmodell konfigurieren und die Übermittlungsaktion „Senden mit Formulardatenmodell“ verwenden, um ein adaptives Formular mit der SharePoint-Liste zu verbinden.
+* **[Verbinden einer adaptiven Forms-Liste mit Microsoft® SharePoint-Liste](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms bietet eine OOTB-Integration zum Senden von Formulardaten direkt an die SharePoint-Liste, sodass Sie die SharePoint-Funktionen &quot;Listen&quot;verwenden können. Sie können die Microsoft® SharePoint-Liste als Datenquelle für ein Formulardatenmodell konfigurieren und die Übermittlungsaktion „Senden mit Formulardatenmodell“ verwenden, um ein adaptives Formular mit der SharePoint-Liste zu verbinden.
 
 * **[Unterstützung zum Konfigurieren der Eigenschaften des Datensatzdokuments für adaptive Formularfragmente](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)**: Sie können jetzt Ihre adaptiven Formularfragmente und deren Felder im Editor für adaptive Formulare einfach anpassen.
 
-* **64-Bit-XMLFM**: Die 64-Bit-Iteration von XMLFM führt zu einer verbesserten Leistung, Skalierbarkeit und verbesserter Speicherverwaltung. Dies ist der erste native 64-Bit-Dienst, der serverseitig bereitgestellt wird. Durch die Nutzung seiner inhärenten Fähigkeit, auf deutlich größere Speicherressourcen im Vergleich zu seinem 32-Bit-Gegenstück zuzugreifen, ermöglicht XMLFM 64-Bit die nahtlose Handhabung größerer Rendering-Workloads. Dieser Meilenstein stellt nicht nur einen Leistungssprung dar, sondern führt auch wichtige Verbesserungen am nativen Service-Framework innerhalb des AEM Forms-Servers ein. Mit diesem Update wird der AEM Forms-Server für die nahtlose Unterstützung nativer 64-Bit-Dienste ausgestattet.
+* **64-Bit-XMLFM**: Die 64-Bit-Iteration von XMLFM führt zu einer verbesserten Leistung, Skalierbarkeit und verbesserter Speicherverwaltung. Dies ist der erste native 64-Bit-Dienst, der serverseitig bereitgestellt wird. Durch die Nutzung seiner inhärenten Fähigkeit, auf größere Speicherressourcen im Vergleich zu seinem 32-Bit-Gegenstück zuzugreifen, ermöglicht XMLFM 64-Bit die nahtlose Handhabung größerer Rendering-Workloads. Dieser Meilenstein stellt nicht nur einen Leistungssprung dar, sondern führt auch wichtige Verbesserungen am nativen Service-Framework innerhalb des AEM Forms-Servers ein. Mit dieser Aktualisierung kann AEM Forms Server nahtlos alle 64-Bit-nativen Dienste unterstützen.
 
 **Veraltete Funktion**
 
@@ -190,17 +190,17 @@ in
 
 * Wenn Benutzende eine Symbolleiste zum adaptiven Formular hinzufügen, zeigt die Beschriftung des Formular-Containers ein unregelmäßiges Verhalten, da sie nicht in die bevorzugte Sprache geändert wird, die die Autorin bzw. der Autor für Formulare ausgewählt hat. (FORMS-11371)
 * In AEM Forms Workspace ist im Dropdown-Feld standardmäßig die erste Option auf der Benutzeroberfläche ausgewählt. (FORMS-11346)
-* Die Sprachkonfiguration in AEM zeigt keine Auswirkungen, wenn Sie Gebietsschemata mit fünf Zeichen verwenden und das Dezimaltrennzeichen im Brief nicht korrekt wiedergegeben wird. (FORMS-11344)
+* Die Sprachkonfiguration in AEM ist nicht betroffen, wenn Sie Gebietsschemata mit fünf Zeichen verwenden und das Dezimaltrennzeichen im Brief nicht korrekt wiedergegeben wird. (FORMS-11344)
 * Wenn Benutzende die XML-Ausgabe mithilfe des Workbench-Prozesses generieren, schlägt sie bei einigen der Dateien fehl. (FORMS-11314)
 * Wenn Benutzende eine Vorschau für das Datensatzdokument (DOR) in anderen Sprachen als Englisch generieren, funktioniert die Vorschau nicht. (FORMS-11106)
-* Wenn Benutzende einige Bilddateien mit PDFG auf einer OSGi-Instanz konvertieren, die auf Linux mit JDK11 basiert, funktioniert die Konvertierung nicht. (FORMS-11105)
+* Wenn ein Benutzer einige Bilddateien mit PDFG auf einer OSGi-Instanz konvertiert, die auf Linux® mit JDK11 basiert, wird dies nicht konvertiert. (FORMS-11105)
 * Wenn Benutzende das AEM Forms-Add-on installieren, funktioniert das Bedienfeld „Inhaltsstruktur“ in AEM Sites nicht mehr. (FORMS-10912)
 * Wenn Benutzende Daten mithilfe der NVDA-Bildschirmlesehilfe aus der Datumsauswahl-Komponente kopieren, werden sie nicht richtig gelesen. (FORMS-10805) 
 * Im Formular-Regeleditor lässt sich der Wert des Optionsfelds bzw. des Kontrollkästchens nicht festlegen, wenn der Datenwert Typ „Boolesch“ ist. (FORMS-10713)
 * Wenn Benutzende einem adaptiven Formular weitere Elemente hinzufügen, werden diese in einer Dropdown-Liste in umgekehrter Reihenfolge hinzugefügt. (FORMS-10456)
 * Wenn eine Dropdown-Liste mit dem Regeleditor gelöscht wird, wird der erste angegebene Wert weiterhin angezeigt, auch wenn der Wert gelöscht wurde. (FORMS-9963) 
 * Benutzende können nicht mit Bildschirmlesehilfen wie NVDA auf den Formulartitel zugreifen. (FORMS-8815) 
-* Benutzende können nicht mit Bildschirmlesehilfen wie NVDA auf den Untertitel in einem Formular zugreifen. (FORMS-8814) 
+* Benutzer können nicht auf `Sub Title` in einem Formular mit Bildschirmlesehilfen wie NVDA verwenden. (FORMS-8814) 
 * In der Seitenquelle des HTML-Formulars ist das Zugriffsschlüssel-Attribut leer und funktioniert nicht. (FORMS-5753) 
 * Im Dialogfeld „Informationen zu Workspace“ wird der Text „Adobe Experience Manager – Formulare“ als Text angezeigt. (FORMS-5748)
 
@@ -518,7 +518,7 @@ Um das Problem zu beheben, suchen Sie die Datei `<AEM_Forms_Installation_dir>\jb
 * Wenn Benutzende ein Feld erstmals in einem adaptiven Formular konfigurieren möchten, wird im Eigenschaften-Browser die Option zum Speichern einer Konfiguration nicht angezeigt. Das Problem lässt sich beheben, indem Sie im selben Editor ein anderes Feld des adaptiven Formulars konfigurieren.
 * Wenn Benutzende die Sendeaktion durchführen, schlägt die Übermittlung mit einer Fehlermeldung fehl:
   ` javax.servlet.ServletException: java.lang.NoSuchMethodError`
-Um das Problem zu beheben, [kompilieren Sie die Sling-Skripte wie JSP, Java und Sightly neu](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=de#resolution). (FORMS-8542)
+Um das Problem zu beheben, [Kompilieren Sie die Sling-Skripte wie JSP, Java™ und Sightly neu](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=de#resolution). (FORMS-8542)
 
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}
