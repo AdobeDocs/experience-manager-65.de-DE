@@ -3,9 +3,9 @@ title: Versionshinweise für [!DNL Adobe Experience Manager] 6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: d3f18320ca8a9a100e1aa6344a1c9424d0ff03ca
+source-git-commit: 2118cecd8e66e41a1ce1c859cf62b1f18f7cb891
 workflow-type: tm+mt
-source-wordcount: '4225'
+source-wordcount: '4270'
 ht-degree: 94%
 
 ---
@@ -212,7 +212,8 @@ in
 * Eine Liste wird in den Tags in Adobe Acrobat Reader oder Adobe Acrobat DC nicht korrekt angezeigt. (LC-3921306)
 * Überschriftenebenen, die in Forms Designer korrekt zugewiesen wurden, werden in Adobe Acrobat nach dem Zufallsprinzip in ein `<P>`-Tag geändert. (LC-3921305) 
 * In einer Tabelle kann die ID eines Objekts nach der Zuweisung nicht mehr geändert werden. (LC-3921134) 
-* Wenn zusammengeführte Zellen in der Tabelle enthalten sind, steht in AEM Forms Designer keine grafische Benutzeroberfläche zum Festlegen des Bereichs (Zeile und Spalte) in einer komplexen Tabelle zur Verfügung. (LC-3919532) 
+* Wenn zusammengeführte Zellen in der Tabelle enthalten sind, steht in AEM Forms Designer keine grafische Benutzeroberfläche zum Festlegen des Bereichs (Zeile und Spalte) in einer komplexen Tabelle zur Verfügung. (LC-3919532)
+  <!--* After applying AEM Service Pack 6.5.15.0 patch installer, notice generation fails intermittently  . (LC-3921530)-->
 
 ### Foundation{#foundation-6519}
 
@@ -517,8 +518,9 @@ Um das Problem zu beheben, suchen Sie die Datei `<AEM_Forms_Installation_dir>\jb
 * Wenn ein adaptives Formular veröffentlicht wird, werden alle Abhängigkeiten, einschließlich Richtlinien, erneut veröffentlicht, selbst wenn keine Änderungen an ihnen vorgenommen wurden. (FORMS-10454)
 * Wenn Benutzende ein Feld erstmals in einem adaptiven Formular konfigurieren möchten, wird im Eigenschaften-Browser die Option zum Speichern einer Konfiguration nicht angezeigt. Das Problem lässt sich beheben, indem Sie im selben Editor ein anderes Feld des adaptiven Formulars konfigurieren.
 * Wenn Benutzende die Sendeaktion durchführen, schlägt die Übermittlung mit einer Fehlermeldung fehl:
-  ` javax.servlet.ServletException: java.lang.NoSuchMethodError`
-Um das Problem zu beheben, [Kompilieren Sie die Sling-Skripte wie JSP, Java™ und Sightly neu](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=de#resolution). (FORMS-8542)
+  `javax.servlet.ServletException: java.lang.NoSuchMethodError`
+Um das Problem zu beheben, [kompilieren Sie die Sling-Skripte wie JSP, Java und Sightly neu](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=de#resolution). (FORMS-8542)
+* Wenn ein Benutzer versucht, eine Schriftart für seine PDF-Dokumente in Adminui unter dem Pfad Startseite > Dienste > PDF Generator > Adobe PDF-Einstellungen auszuwählen, wird die Schriftartenliste leer angezeigt. Der Benutzer kann Schriftarten nicht zu Listen &quot;Immer einbetten&quot;und &quot;Niemals einbetten&quot;hinzufügen. (FORMS-12095)
 
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}
