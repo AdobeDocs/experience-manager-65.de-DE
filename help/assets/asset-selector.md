@@ -5,10 +5,11 @@ contentOwner: Adobe
 feature: Asset Management,Metadata,Search
 role: User
 exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+hide: true
+source-git-commit: 477c62b857ab98d8617c7bd8ba226019d42d330d
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 92%
+source-wordcount: '498'
+ht-degree: 88%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 92%
 
 >[!NOTE]
 >
->Der Asset-Wähler wurde in früheren [!DNL Experience Manager]-Versionen als [Asset-Auswahl](https://helpx.adobe.com/de/experience-manager/6-2/assets/using/asset-picker.html) bezeichnet.
+>Die [Asset-Wähler](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en) hieß [Asset-Auswahl](https://helpx.adobe.com/de/experience-manager/6-2/assets/using/asset-picker.html) in früheren Versionen von [!DNL Experience Manager].
 
 Mit dem Asset-Wähler können Sie Assets in [!DNL Adobe Experience Manager]-Assets durchsuchen, suchen und filtern. Sie können auch die Metadaten von Assets abrufen, die Sie mit dem Asset-Wähler auswählen. Um die Oberfläche des Asset-Wählers anzupassen, können Sie ihn mit unterstützten Anfrageparametern starten. Diese Parameter legen den Kontext des Asset-Wählers für ein bestimmtes Szenario fest.
 
@@ -58,3 +59,7 @@ Sie können die folgenden Anfrageparameter in einer URL übergeben, um den Asset
    ![chlimage_1-443](assets/chlimage_1-443.png)
 
 1. Klicks **[!UICONTROL Auswählen]** aus der Symbolleiste.
+
+>[!MORELIKETHIS]
+>
+>* [Micro-Frontend-Asset-Auswahl in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en)
