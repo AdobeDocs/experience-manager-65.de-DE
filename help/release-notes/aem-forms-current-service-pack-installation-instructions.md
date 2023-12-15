@@ -2,10 +2,10 @@
 title: AEM Forms – Patch-Installationsanweisungen für AEM Forms
 description: Installationsanweisungen für AEM Forms Service Pack für OSGi- und JEE-Umgebungen
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
-workflow-type: ht
-source-wordcount: '1711'
-ht-degree: 100%
+source-git-commit: 287717e39ff58396de6d63a89e2b3d8fef4e6888
+workflow-type: tm+mt
+source-wordcount: '1755'
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 | Produkt | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| Version | 6.5.19.0 |
+| Version | 6.5.19.0 (OSGi) 6.5.19.0 (JEE) |
 | Typ | Service Pack-Version |
 | Datum | 8. Dezember 2023 |
 | Download-URL | [Neueste AEM Forms-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) |
@@ -65,6 +65,9 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 +++2. Laden Sie die erforderliche Software herunter
 
 * [AEM Forms on JEE Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de)
+
+Für Struts 2 RCE, ein beliebtes und Open-Source-Webanwendungs-Framework für die Entwicklung von Java EE-Webanwendungen, wurden kritische Sicherheitslücken gemeldet. Adobe hat AEM 6.5 Service Pack 19.1 (6.5.19.1) veröffentlicht, um die Sicherheitslücke in AEM Forms on JEE zu beheben.
+
 * [AEM Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=de)
 * [Forms-Add-on-Paket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de)
 * [Fragment-Servlet](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
@@ -173,7 +176,7 @@ Das Paket wird automatisch installiert.
 
   >[!NOTE]
   >
-  >Das Service Pack von Experience Manager unterstützt keine Bootstrap-Installation. <!-- UPDATE FOR EACH NEW RELEASE -->
+  Das Service Pack von Experience Manager unterstützt keine Bootstrap-Installation. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **Validierung der Installation**
 
@@ -205,7 +208,7 @@ Das Paket wird automatisch installiert.
 
 >[!NOTE]
 >
->Wenn Sie das AEM Forms Service Pack für eine relationale Datenbank installieren, müssen Sie unbedingt ein Backup von DB_schema erstellen.
+Wenn Sie das AEM Forms Service Pack für eine relationale Datenbank installieren, müssen Sie unbedingt ein Backup von DB_schema erstellen.
 
 +++
 
@@ -218,12 +221,12 @@ Das Paket wird automatisch installiert.
 
 +++ 3. Installieren Sie Microsoft Visual C++ Redistributable Packages
 
-* Laden Sie die [64-Bit-Version der Microsoft Visual C++ Redistributable Packages für Visual Studio 2015, 2017, 2019 und 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) auf den Computer herunter, auf dem AEM 6.5 Forms installiert ist, und installieren Sie sie.
+* Laden Sie die [64-Bit-Version der Microsoft Visual C++ Redistributable Packages for Visual Studio 2015, 2017, 2019 und 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) auf den Computer herunter, auf dem AEM 6.5 Forms installiert ist, und installieren Sie sie.
 
 >[!NOTE]
 >
 >
->Stellen Sie sicher, dass Sie das Redistributable installieren, auch wenn eine frühere Version bereits installiert ist, um die Verfügbarkeit der neuesten Version zu gewährleisten.
+Stellen Sie sicher, dass Sie das Redistributable installieren, auch wenn eine frühere Version bereits installiert ist, um die Verfügbarkeit der neuesten Version zu gewährleisten.
 
 +++
 
@@ -244,7 +247,7 @@ Es gibt zwei verschiedene Methoden, mit der Sie das Service Pack von [!DNL Exper
 
   >[!NOTE]
   >
-  >Das Service Pack von Experience Manager unterstützt keine Bootstrap-installation. <!-- UPDATE FOR EACH NEW RELEASE -->
+  Das Service Pack von Experience Manager unterstützt keine Bootstrap-installation. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **Validierung der Installation**
 
