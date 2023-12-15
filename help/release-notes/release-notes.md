@@ -3,9 +3,9 @@ title: Versionshinweise für [!DNL Adobe Experience Manager] 6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 2118cecd8e66e41a1ce1c859cf62b1f18f7cb891
+source-git-commit: b5ecac71b07bfceb2708f20fe50965dec25e2194
 workflow-type: tm+mt
-source-wordcount: '4270'
+source-wordcount: '4259'
 ht-degree: 94%
 
 ---
@@ -62,7 +62,7 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 
 * **[Unterstützung zum Konfigurieren der Eigenschaften des Datensatzdokuments für adaptive Formularfragmente](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)**: Sie können jetzt Ihre adaptiven Formularfragmente und deren Felder im Editor für adaptive Formulare einfach anpassen.
 
-* **64-Bit-XMLFM**: Die 64-Bit-Iteration von XMLFM führt zu einer verbesserten Leistung, Skalierbarkeit und verbesserter Speicherverwaltung. Dies ist der erste native 64-Bit-Dienst, der serverseitig bereitgestellt wird. Durch die Nutzung seiner inhärenten Fähigkeit, auf größere Speicherressourcen im Vergleich zu seinem 32-Bit-Gegenstück zuzugreifen, ermöglicht XMLFM 64-Bit die nahtlose Handhabung größerer Rendering-Workloads. Dieser Meilenstein stellt nicht nur einen Leistungssprung dar, sondern führt auch wichtige Verbesserungen am nativen Service-Framework innerhalb des AEM Forms-Servers ein. Mit dieser Aktualisierung kann AEM Forms Server nahtlos alle 64-Bit-nativen Dienste unterstützen.
+* **64-Bit XMLFM**: Die 64-Bit-Iteration von XMLFM führt zu verbesserter Performance, Skalierbarkeit und Speicherverwaltung. Dies ist der erste native 64-Bit-Dienst, der Server-seitig bereitgestellt wird. Durch die Nutzung seiner inhärenten Fähigkeit, auf größere Speicherressourcen im Vergleich zu seinem 32-Bit-Gegenstück zuzugreifen, ermöglicht XMLFM 64-Bit die nahtlose Handhabung größerer Rendering-Workloads. Dieser Meilenstein stellt nicht nur einen Leistungssprung dar, sondern führt auch wichtige Verbesserungen am nativen Service-Framework innerhalb des AEM Forms-Servers ein. Mit dieser Aktualisierung kann AEM Forms Server nahtlos alle 64-Bit-nativen Dienste unterstützen.
 
 **Veraltete Funktion**
 
@@ -145,7 +145,7 @@ in
 * Die Auswahl mehrerer Dokumentdateitypen für den Asset-Typ-Filter funktioniert nicht in der Seitenkonsole. Es werden keine Ergebnisse gefunden, selbst wenn die Ergebnisse eines bestimmten Dateityps verfügbar sind. Daher können Autorinnen und Autoren nicht mehrere Dokumente filtern. Sie müssen mehrere Dokumenttypen verwenden und sie einzeln filtern. (SITES-14047)
 * Wenn Sie nach dem Upgrade einer Instanz von AEM 6.5.17 und AEM 6.5.18 im Seiteneditor **[!UICONTROL Seite veröffentlichen]** auswählen, werden Sie zu einer URL weitergeleitet, die nicht existiert. Die Benutzerin bzw. der Benutzer sollte zum Veröffentlichungsassistenten umgeleitet werden. (SITES-15856)
 * Redundante Kopie aus der AEM-Zwischenablage beim Einfügen aus der Zwischenablage des Betriebssystems. (SITES-15704)
-* Wenn Sie in Assets **[!UICONTROL Dokumente]** und dann unter **[!UICONTROL Filtertyp]** **[!UICONTROL Microsoft® Word]** oder **[!UICONTROL Microsoft® Excel]** auswählen, werden keine Ergebnisse angezeigt, obwohl Dateien beider Typen existieren. (SITES-14837)
+* In Assets wählen Sie **[!UICONTROL Dokumente]**, dann unter **[!UICONTROL Filtertyp]** auswählen **[!UICONTROL Microsoft® Word]** oder **[!UICONTROL Microsoft® Excel]** zeigt keine Ergebnisse an, obwohl Dateien beider Typen vorhanden sind. (SITES-14837)
 
 ### [!DNL Assets]{#assets-6519}
 
@@ -519,9 +519,9 @@ Um das Problem zu beheben, suchen Sie die Datei `<AEM_Forms_Installation_dir>\jb
 * Wenn Benutzende ein Feld erstmals in einem adaptiven Formular konfigurieren möchten, wird im Eigenschaften-Browser die Option zum Speichern einer Konfiguration nicht angezeigt. Das Problem lässt sich beheben, indem Sie im selben Editor ein anderes Feld des adaptiven Formulars konfigurieren.
 * Wenn Benutzende die Sendeaktion durchführen, schlägt die Übermittlung mit einer Fehlermeldung fehl:
   `javax.servlet.ServletException: java.lang.NoSuchMethodError`
-Um das Problem zu beheben, [kompilieren Sie die Sling-Skripte wie JSP, Java und Sightly neu](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=de#resolution). (FORMS-8542)
-* Wenn ein Benutzer versucht, eine Schriftart für seine PDF-Dokumente in Adminui unter dem Pfad Startseite > Dienste > PDF Generator > Adobe PDF-Einstellungen auszuwählen, wird die Schriftartenliste leer angezeigt. Der Benutzer kann Schriftarten nicht zu Listen &quot;Immer einbetten&quot;und &quot;Niemals einbetten&quot;hinzufügen. (FORMS-12095)
-
+Um das Problem zu beheben, [Kompilieren Sie die Sling-Skripte wie JSP, Java™ und Sightly neu](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=de#resolution). (FORMS-8542)
+* Nach der Installation von AEM Service Pack 6.5.14.0 und höher können Benutzer beim Navigieren zu `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, da die Schriftartenliste leer angezeigt wird. (FORMS-12095)
+  <!--The font enumeration fails due to the missing Ps2Pdf service file.-->
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 
