@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
-source-git-commit: 287717e39ff58396de6d63a89e2b3d8fef4e6888
+source-git-commit: 762da8c5e1d82b179f64d14f966397c8c3b90e9d
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '555'
 ht-degree: 1%
 
 ---
@@ -53,56 +53,49 @@ Sie können die manuellen Schadensminderungsschritte verwenden, um das Problem a
 
 >[!TAB Windows]
 
-1. Führen Sie den folgenden Befehl aus, um alle struts2 jar-Dateien aufzulisten:
+1. Führen Sie den folgenden Befehl aus, um alle struts2 jar-Dateien aufzulisten. Ersetzen Sie vor Ausführung des Befehls den Pfad im obigen Befehl durch den Pfad Ihres AEM-Formularservers:
 
+       &quot;javascript
+       
+       patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\..\export -pattern=.*struts2-core-2.5.30.jar$
+       
        &quot;
-       
-       patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\. .\export -pattern=.*struts2-core-2.5.   30.jar$
-       
-       &quot;
-       
-       Ersetzen Sie den Pfad im obigen Befehl durch den Pfad Ihres AEM-Formularservers.
    
-1. Führen Sie die folgenden Befehle in der angegebenen Reihenfolge aus, um rekursiv ersetzende Ersetzungen durchzuführen:
+1. Führen Sie die folgenden Befehle in der angegebenen Reihenfolge aus, um rekursiv ersetzende Ersetzungen durchzuführen. Ersetzen Sie vor Ausführung des Befehls den Pfad im obigen Befehl durch den Pfad Ihres AEM-Formularservers und die `struts2-core-2.5.33.jar` -Datei.
 
+
+       &quot;javascript
+       
+       patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\..\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace C:\temp\struts2-core-2.5.33.jar
+       
+       
+       patch-archive.bat -root=C:\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace C:\Users\labuser\Desktop\struts2-core.jar -action=replace C:\Users\labuser\Desktop\struts2-core.jar
+       
        &quot;
-       
-       patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\. .\export -pattern=.*struts2-core-2.5.   30.jar$ -action=replace C:\temp\struts2-core-2.5.33.jar
-       
-       
-       patch-archive.bat -root=C:\Users\labuser\Desktop\check -pattern=.         *struts2-core.jar$ -action=replace C:\Users\labuser\Desktop\struts2-core.   jar -action=replace C:\Users\labuser\Desktop\struts2-core.jar
-       
-       &quot;
-       
-       Ersetzen Sie den Pfad im obigen Befehl durch den Pfad Ihres AEM-Formularservers und die Datei &quot;struts2-core-2.5.33.jar&quot;.
    
 1. Starten Sie Ihren AEM Forms-Server.
 
 
 >[!TAB Linux]
 
-1. Führen Sie den folgenden Befehl aus, um alle struts2 jar-Dateien aufzulisten:
+1. Führen Sie den folgenden Befehl aus, um alle struts2 jar-Dateien aufzulisten. Ersetzen Sie vor Ausführung des Befehls den Pfad im obigen Befehl durch den Pfad Ihres AEM-Formularservers:
 
+       &quot;javascript
+       
+       patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\..\export -pattern=.*struts2-core-2.5.30.jar$
+       
        &quot;
-       
-       patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Man ager_Forms\...\export -pattern=.         *struts2-core-2.5.30.jar$
-       
-       &quot;
-       
-       Ersetzen Sie den Pfad im obigen Befehl durch den Pfad Ihres AEM-Formularservers.
    
-1. Führen Sie die folgenden Befehle zum rekursiven Ersetzen an Ort und Stelle aus:
+1. Führen Sie die folgenden Befehle in der angegebenen Reihenfolge aus, um rekursiv ersetzende Ersetzungen durchzuführen. Ersetzen Sie vor Ausführung des Befehls den Pfad im obigen Befehl durch den Pfad Ihres AEM-Formularservers und die `struts2-core-2.5.33.jar` -Datei.
 
+       &quot;javascript
+       
+       patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\..\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace \temp\struts2-core-2.5.33.jar
+       
+       
+       patch-archive.sh -root=\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace \Users\labuser\Desktop\struts2-core.jar -action=replace \Users\labuser\Desktop\struts2-core.jar
+       
        &quot;
-       
-       patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Man ager_Forms\...\export -pattern=.         *struts2-core-2.5.30.jar$ -action=replace \temp\struts2-core-2.5.   33.jar
-       
-       
-       patch-archive.sh -root=\Users\labuser\Desktop\check -pattern=.   *struts2-core.jar$ -action=replace \Users\labuser\Desktop\struts2-core.   jar -action=replace \Users\labuser\Desktop\struts2-core.jar
-       
-       &quot;
-       
-       Ersetzen Sie den Pfad im obigen Befehl durch den Pfad Ihres AEM-Formularservers und die Datei &quot;struts2-core-2.5.33.jar&quot;.
    
 1. Starten Sie Ihren AEM Forms-Server.
 
