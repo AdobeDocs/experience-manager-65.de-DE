@@ -1,20 +1,20 @@
 ---
-title: Abmildern von Struts 2 RCE-Sicherheitslücken für Experience Manager Forms on JEE
-description: Abmildern von Struts 2 RCE-Sicherheitslücken für Experience Manager Forms on JEE
+title: Abmildern von Struts 2-Schwachstellen für Experience Manager Forms on JEE
+description: Abmildern von Struts 2-Schwachstellen für Experience Manager Forms on JEE
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
-source-git-commit: 531eed9bb6d7792a6da0104b533a505738a64786
+source-git-commit: 5f5fcc10927d62cdfaeb0770c34052ceda02b2e8
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '479'
 ht-degree: 2%
 
 ---
 
 
-# Abmildern von Struts 2 RCE-Schwachstellen für Experience Manager Forms {#mitigatin-struts2-rce-vulnerabilities-for-aem-forms}
+# Abmildern von Struts 2-Schwachstellen für Experience Manager Forms {#mitigatin-struts2-rce-vulnerabilities-for-aem-forms}
 
 ## Problem
 
@@ -46,20 +46,22 @@ Sie können die manuellen Schadensminderungsschritte verwenden, um das Problem a
    * patch-archive.bat
    * patch-archive.sh
 1. Öffnen Sie das Terminal-Fenster und navigieren Sie zum Ordner mit den extrahierten Dateien.
-1. Verwenden Sie das manuelle Patching-Tool, um alle struts2-JAR-Dateien zu suchen, aufzulisten und zu ersetzen. So suchen und ersetzen Sie die JAR-Datei &quot;struts2-core-2.5.30&quot;und &quot;struts2-core.jar&quot;:
+1. Verwenden Sie das manuelle Patching-Tool, um alle struts2-JAR-Dateien zu suchen, aufzulisten und zu ersetzen. Das Tool benötigt eine Internetverbindung, da es Abhängigkeiten zur Laufzeit herunterlädt. Stellen Sie also vor dem Ausführen des Tools sicher, dass Sie mit dem Internet verbunden sind.
+
+So suchen und ersetzen Sie die JAR-Datei &quot;struts2-core-2.5.30&quot;und &quot;struts2-core.jar&quot;:
 
 
 >[!BEGINTABS]
 
 >[!TAB Windows]
 
-1. Führen Sie den folgenden Befehl aus, um alle struts2 jar-Dateien aufzulisten. Ersetzen Sie vor Ausführung des Befehls den Pfad im obigen Befehl durch den Pfad Ihres AEM-Formularservers:
+1. Führen Sie den folgenden Befehl aus, um alle struts2 jar-Dateien aufzulisten. Ersetzen Sie vor Ausführung des Befehls den Pfad im Befehl durch den Pfad Ihres AEM Forms-Servers:
 
    ```
    patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
    ```
 
-1. Führen Sie die folgenden Befehle in der angegebenen Reihenfolge aus, um rekursiv ersetzende Ersetzungen durchzuführen. Vor dem Ausführen des Befehls. Ersetzen Sie den Pfad im obigen Befehl durch den Pfad Ihres AEM-Formularservers und die `struts2-core-2.5.33.jar` -Datei.
+1. Führen Sie die folgenden Befehle in der angegebenen Reihenfolge aus, um rekursiv ersetzende Ersetzungen durchzuführen. Vor dem Ausführen des Befehls. Ersetzen Sie den Pfad im Befehl durch den Pfad Ihres AEM Forms-Servers und die `struts2-core-2.5.33.jar` -Datei.
 
 
    ```
@@ -74,13 +76,13 @@ Sie können die manuellen Schadensminderungsschritte verwenden, um das Problem a
 
 >[!TAB Linux]
 
-1. Führen Sie den folgenden Befehl aus, um alle struts2 jar-Dateien aufzulisten. Ersetzen Sie vor Ausführung des Befehls den Pfad im obigen Befehl durch den Pfad Ihres AEM-Formularservers:
+1. Führen Sie den folgenden Befehl aus, um alle struts2 jar-Dateien aufzulisten. Ersetzen Sie vor Ausführung des Befehls den Pfad im Befehl durch den Pfad Ihres AEM Forms-Servers:
 
    ```
    patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
    ```
 
-1. Führen Sie die folgenden Befehle in der angegebenen Reihenfolge aus, um rekursiv ersetzende Ersetzungen durchzuführen. Ersetzen Sie vor Ausführung des Befehls den Pfad im obigen Befehl durch den Pfad Ihres AEM-Formularservers und die `struts2-core-2.5.33.jar` -Datei.
+1. Führen Sie die folgenden Befehle in der angegebenen Reihenfolge aus, um rekursiv ersetzende Ersetzungen durchzuführen. Ersetzen Sie vor Ausführung des Befehls den Pfad im Befehl durch den Pfad Ihres AEM Forms-Servers und die `struts2-core-2.5.33.jar` -Datei.
 
    ```
    patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace \temp\struts2-core-2.5.33.jar
