@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
 source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1132'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 62%
 
 Inhaltsfragmente für Adobe Experience Manager (AEM) werden [als seitenunabhängige Assets erstellt und verwaltet](/help/assets/content-fragments/content-fragments.md).
 
-Damit können Sie kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten erstellen. Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden.
+Sie ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden.
 
 In Verbindung mit dem aktualisierten JSON Exporter können strukturierte Inhaltsfragmente auch verwendet werden, um AEM-Inhalte über Content Services anderen Kanälen als AEM-Seiten bereitzustellen.
 
@@ -33,7 +33,7 @@ In Verbindung mit dem aktualisierten JSON Exporter können strukturierte Inhalts
 
 >[!CAUTION]
 >
->Diese Seite muss gelesen werden mit [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md) (und zugehörige Seiten), da damit grundlegende Terminologie und Konzepte sowie die Erstellung und Verwaltung von Fragmenten eingeführt werden.
+>Lesen Sie diese Seiten zusammen mit [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md) (und den zugehörigen Seiten), da dort grundlegende Termini und Konzepte sowie die Erstellung und Verwaltung von Fragmenten erklärt werden.
 
 Die Inhaltsfragmente ermöglichen Folgendes:
 
@@ -71,19 +71,19 @@ Die Inhaltsfragmente ermöglichen Folgendes:
 
    * Öffnen Sie den **Assets**-Browser und filtern Sie nach der Option **Inhaltsfragmente** (die Standardeinstellung ist „Bilder“). Ziehen Sie dann das gewünschte Fragment auf die entsprechende Komponente.
 
-   * Wählen Sie die Inhaltsfragmentkomponente und dann **Konfigurieren** aus der Symbolleiste. Im Dialogfeld können Sie das Auswahldialogfeld öffnen, um die erforderlichen **Inhaltsfragment**.
+   * Wählen Sie die Inhaltsfragmentkomponente und dann **Konfigurieren** aus der Symbolleiste. Im daraufhin angezeigten Dialogfeld können Sie das Auswahldialogfeld zum Durchsuchen und Auswählen des gewünschten **Inhaltsfragments** öffnen.
 
    >[!NOTE]
    >
-   >Eine alternative Methode besteht darin, ein bestimmtes Inhaltsfragment direkt auf die Seite zu ziehen. Dadurch wird automatisch die zugehörige Komponente (Inhaltsfragment) erstellt.
+   >Eine alternative Methode besteht darin, ein bestimmtes Inhaltsfragment direkt auf die Seite zu ziehen. Dabei wird automatisch die zugehörige Komponente (Inhaltsfragment) erstellt.
 
-1. Zunächst der Inhalt aus der **Main** Element und **Master** (Variante) angezeigt. Sie können nach Bedarf aber [auch andere Elemente und/oder Varianten auswählen](#selecting-the-element-or-variation).
+1. Anfangs wird der Inhalt aus den Elementen **Allgemein** und **Primär** (Variante) angezeigt. Sie können nach Bedarf aber auch [andere Elemente und/oder Varianten auswählen](#selecting-the-element-or-variation).
 
    ![cfm-6420-01](assets/cfm-6420-01.png)
 
    >[!NOTE]
    >
-   >Weitere Informationen zu weiteren Bearbeitungsfunktionen finden Sie unter folgenden Themen:
+   >Weitere Informationen zur Bearbeitungsfunktion finden Sie unter:
    >
    >
    >
@@ -94,7 +94,7 @@ Die Inhaltsfragmente ermöglichen Folgendes:
 
 ### Auswählen des Elements oder der Variante {#selecting-the-element-or-variation}
 
-Öffnen Sie die **Konfiguration** Dialogfeld, damit Sie das Fragment für die Verwendung auf der aktuellen Seite konfigurieren können. Das Dialogfeld kann von der verwendeten Komponente abhängen.
+Öffnen Sie das Dialogfeld **Konfiguration** des Fragments, um das Fragment für die Verwendung auf der aktuellen Seite zu konfigurieren. Das Dialogfeld kann von der verwendeten Komponente abhängen.
 
 Im entsprechenden Konfigurationsdialogfeld können Sie die verfügbaren Parameter auswählen, darunter:
 
@@ -110,7 +110,7 @@ Im entsprechenden Konfigurationsdialogfeld können Sie die verfügbaren Paramete
 
 * **Element**
 
-   * Die Standardeinstellung **Main** ist immer verfügbar.
+   * Die Standardeinstellung **Allgemein** ist immer verfügbar.
    * Eine Auswahl ist verfügbar, wenn das Fragment mit einer entsprechenden Vorlage erstellt wurde.
 
   >[!NOTE]
@@ -119,10 +119,10 @@ Im entsprechenden Konfigurationsdialogfeld können Sie die verfügbaren Paramete
 
 * **Variante**
 
-   * Die Standardeinstellung **Master** ist immer verfügbar.
+   * Die Standardeinstellung **Primär** ist immer verfügbar.
    * Eine Auswahl ist verfügbar, wenn Varianten für das Fragment erstellt wurden.
 
-* **Absätze**: Geben Sie den Bereich der Absätze an, die einbezogen werden sollen:
+* **Absätze**: Geben Sie den Bereich der aufzunehmenden Absätze an:
 
    * **Alle**
    * **Bereich**: Zum Beispiel `1`, `3-5`, `9-*`
@@ -133,17 +133,17 @@ Im entsprechenden Konfigurationsdialogfeld können Sie die verfügbaren Paramete
 
 ### Schnelle Verbindung zum Fragmenteditor     {#quick-connection-to-fragment-editor}
 
-Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols **Bearbeiten** in der Komponenten-Symbolleiste öffnen. Damit können Sie [Inhaltsfragment bearbeiten und verwalten](/help/assets/content-fragments/content-fragments.md).
+Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols **Bearbeiten** in der Komponenten-Symbolleiste öffnen. Damit können Sie [das Inhaltsfragment bearbeiten und verwalten](/help/assets/content-fragments/content-fragments.md).
 
 >[!CAUTION]
 >
->Wie immer kann sich die Bearbeitung der Fragmentquelle auf alle Seiten auswirken, die auf dieses Inhaltsfragment verweisen.
+>Wie immer hat die Bearbeitung der Fragmentquelle Auswirkungen auf alle Seiten, die auf dieses Inhaltsfragment verweisen.
 
 ### Hinzufügen von Zwischeninhalten {#adding-in-between-content}
 
 Wenn ein bestimmtes Inhaltsfragment zur Seite hinzugefügt wird, gibt es einen Platzhalter **Komponenten hierher ziehen** zwischen jedem HTML-Absatz (und am oberen/unteren Rand) des Fragments.
 
-Damit können Sie zusätzlichen Inhalt hinzufügen [dazwischen (d. h. Zwischeninhalt)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) den Fragmentinhalt (an einem der verfügbaren Punkte), ohne das Stammfragment ändern zu müssen.
+Damit können Sie zusätzliche Inhalte [zwischen (d. h. Zwischeninhalte)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) dem Fragmentinhalt (an einer der verfügbaren Stellen) hinzufügen, ohne das Stammfragment ändern zu müssen.
 
 Für Zwischeninhalte haben Sie folgende Möglichkeiten:
 
@@ -165,9 +165,9 @@ Für Zwischeninhalte haben Sie folgende Möglichkeiten:
 
 >[!CAUTION]
 >
->Nachdem Sie Übergangsinhalte zu einem Inhaltsfragment auf Ihrer Seite hinzugefügt haben, kann das Ändern der Struktur des zugrunde liegenden Inhaltsfragments (d. h. im Inhaltsfragmente-Editor) zu fehlerhaften/unerwarteten Ergebnissen führen.
+>Wenn Sie Zwischeninhalte zu einem Inhaltsfragment auf Ihrer Seite hinzugefügt haben, kann das Ändern der Struktur des zugrunde liegenden Inhaltsfragments (im Fragmenteditor) zu fehlerhaften/unerwarteten Ergebnissen führen.
 >
->In diesem Fall wird der Zwischeninhalt unverändert beibehalten:
+>Wenn dies eintritt, wird der Zwischeninhalt unverändert beibehalten:
 >
 >* Zwischenkomponenten haben eine absolute Position innerhalb der Komponentensequenz im Fragmentfluss. Diese Position ändert sich nicht, auch wenn sich der Inhalt der Absätze im Fragment ändert.
 >
@@ -177,29 +177,29 @@ Für Zwischeninhalte haben Sie folgende Möglichkeiten:
 
 ### Verwenden von zugehörigen Inhalten {#using-associated-content}
 
-Wenn Sie [verknüpfter Inhalt](/help/assets/content-fragments/content-fragments-assoc-content.md) mit dem [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md), sind diese Assets im Seitenbereich verfügbar (nachdem Sie das Fragment auf der Inhaltsseite platziert haben). Verknüpfte Inhalte sind im Grunde eine besondere Inhaltsquelle für [dazwischen liegende Inhalte](#adding-in-between-content).
+Wenn Sie [verknüpfte Inhalte](/help/assets/content-fragments/content-fragments-assoc-content.md) für das [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) haben, stehen diese Elemente im seitlichen Bedienfeld zur Verfügung (nachdem Sie das Fragment auf der Inhaltsseite platziert haben). Verknüpfte Inhalte sind im Grunde eine besondere Inhaltsquelle für [Zwischeninhalte](#adding-in-between-content).
 
 >[!NOTE]
 >
->Es gibt verschiedene Methoden zum Hinzufügen von [visuellen Assets (z. B. Bildern)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder zu einer Seite.
+>Es gibt verschiedene Methoden zum Hinzufügen von [visuellen Assets (z. B. Bildern)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite.
 
 >[!NOTE]
 >
->Wenn sich auf einer Seite mehrere Inhaltsfragmente befinden, wird die **Zugehörige Inhalte** -Registerkarte zeigt Assets an, die für alle Fragmente geeignet sind.
+>Wenn Sie mehrere Inhaltsfragmente auf einer Seite haben, werden auf der Registerkarte **Zugehörige Inhalte** die zu allen Fragmenten gehörenden Assets angezeigt.
 
-Nachdem Sie ein Fragment mit verknüpftem Inhalt zu Ihrer Seite hinzugefügt haben, wird eine neue Registerkarte (**Zugehörige Inhalte**) im Seitenbereich geöffnet.
+Nachdem Sie ein Fragment mit verknüpftem Inhalt zu Ihrer Seite hinzugefügt haben, wird eine neue Registerkarte (**Verknüpfte Inhalte**) im seitlichen Bedienfeld geöffnet.
 
-Von hier können Sie die Assets an die gewünschte Position ziehen (entweder an eine vorhandene Komponente oder an die gewünschte Position, an der die entsprechende Komponente erstellt wird):
+Von hier aus können Sie die Assets an die gewünschte Position ziehen (entweder zu einer vorhandenen Komponente oder an die gewünschte Position, an der die entsprechende Komponente dann erstellt wird):
 
 ![cfm-6420-03](assets/cfm-6420-03.png)
 
 ### In das Fragment eingefügte Assets {#assets-inserted-into-the-fragment}
 
-Wenn Assets (z. B. Bilder) in das Fragment eingefügt wurden, sind die Optionen zum Bearbeiten dieser Assets im Seiteneditor eingeschränkt. <!-- Removed link as it was a 404 on helpx -->
+Wenn Assets (z. B. Bilder) in das Fragment eingefügt wurden, sind die Optionen zur Bearbeitung dieser Assets im Seiteneditor eingeschränkt. <!-- Removed link as it was a 404 on helpx -->
 
 Beispielsweise haben Sie zur Bearbeitung eines Bildes folgende Möglichkeiten:
 
-* Beschneiden, Drehen oder Spiegeln des Bildes.
+* Zuschneiden, Drehen oder Spiegeln des Bildes.
 * Fügen Sie einen Titel oder alternativen Text hinzu.
 * Geben Sie eine Größe an.
 * Sie können auch das Layout konfigurieren.
@@ -208,7 +208,7 @@ Andere Änderungen wie Verschieben, Kopieren und Löschen müssen im Fragmentedi
 
 ### Veröffentlichung {#publishing}
 
-Fragmente müssen veröffentlicht werden, damit sie auf Ihren veröffentlichten Webseiten verwendet werden können:
+Fragmente müssen veröffentlicht werden, damit sie auf Ihren veröffentlichten Web-Seiten verwendet werden können:
 
 * Ein Fragment kann veröffentlicht werden, nachdem es [in der Asset-Konsole erstellt wurde](/help/assets/content-fragments/content-fragments.md#publishingandreferencingafragment).
-* Wenn eine *unveröffentlichtes Fragment* auf einer Seite verwendet wird, die veröffentlicht wird, kann das Fragment jetzt auch veröffentlicht werden.
+* Wenn ein *unveröffentlichtes Fragment* auf einer Seite verwendet wird, die veröffentlicht wird, kann das Fragment nun ebenfalls veröffentlicht werden.

@@ -6,9 +6,9 @@ role: Admin
 feature: Asset Management
 exl-id: e632dcdb-b2b9-45bc-89e7-337b44b6fc61
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '415'
-ht-degree: 41%
+ht-degree: 100%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 41%
 
 [!DNL Adobe Experience Manager Assets] unterstützt mehrsprachige Workflows, um Binärdateien, Metadaten und Tags für digitale Assets in verschiedene Gebietsschemata zu übertragen und die übersetzten Assets zu verwalten. Details finden Sie unter [Mehrsprachige Assets](multilingual-assets.md).
 
-Erstellen Sie für eine effiziente Verwaltung von Assets, um sicherzustellen, dass verschiedene übersetzte Versionen synchronisiert bleiben. [Sprachkopien](preparing-assets-for-translation.md) Assets vor dem Ausführen von Übersetzungs-Workflows.
+Um die Assets effizient zu verwalten und sicherzustellen, dass verschiedene übersetzte Versionen synchronisiert bleiben, erstellen Sie [Sprachkopien](preparing-assets-for-translation.md) der Assets, bevor Sie die Übersetzungs-Workflows ausführen.
 
-Eine Sprachkopie eines Assets oder einer Gruppe von Assets ist eine Sprachsynchronisation (oder eine Version der Assets in einer Fremdsprache) mit einer ähnlichen Inhaltshierarchie.
+Bei einer Sprachkopie eines Assets oder einer Gruppe von Assets handelt es sich um Sprachgeschwister (oder eine Version der Assets in einer verwandten Sprache) mit einer ähnlichen Inhaltshierarchie.
 
-Jede Sprachkopie ist ein unabhängiges Asset. Daher kann durch das Übertragen von Assets in mehrere Gebietsschemata die Größe des CRX-Repository deutlich zunehmen. Wenn Sie beispielsweise Assets mit einer kombinierten Größe von 10 GB in zwei Sprachen übersetzen, kann die Repository-Größe um etwa 20 GB (10 GB für jede Sprache) erhöht werden.
+Jede Sprachkopie ist ein unabhängiges Asset. Daher kann durch das Übertragen von Assets in mehrere Gebietsschemata die Größe des CRX-Repository deutlich zunehmen. Wenn Sie beispielsweise Assets mit einer kombinierten Größe von 10 GB in zwei Sprachen übersetzen, kann dadurch die Repository-Größe auf etwa 20 GB (10 GB für jede Sprache) ansteigen.
 
-Asset-Binärdateien belegen im Vergleich zu Metadaten und Tags deutlich mehr Speicherplatz. Wenn die Übersetzung von Metadaten und Tags nur Ihrem Zweck dient, lassen Sie die Übersetzung der Binärdateien weg. Sie können die Originalkopie der Binärdateien im Repository zur Verknüpfung mit in verschiedene Gebietsschemata übertragenen Metadaten und Tags aufbewahren. Durch die Pflege einer einzigen Kopie von Binärdateien anstelle mehrerer übersetzter Versionen werden die Auswirkungen auf die Repository-Größe minimiert.
+Asset-Binärdateien belegen im Vergleich zu Metadaten und Tags deutlich mehr Speicherplatz. Wenn die Übersetzung von Metadaten und Tags daher nur Ihrem Zweck dient, lassen Sie die Übersetzung der Binärdateien weg. Sie können die Originalkopie der Binärdateien im Repository zur Verknüpfung mit in verschiedene Gebietsschemata übertragenen Metadaten und Tags aufbewahren. Durch das Verwalten einer einzigen Kopie von Binärdateien anstelle mehrerer übersetzter Versionen werden die Auswirkungen auf die Repository-Größe minimiert.
 
-Dateidatenspeicher und Amazon S3-Datenspeicher bieten eine Speicherinfrastruktur, die für diese Szenarien am besten geeignet ist. Diese Speicherrepositorys speichern eine Einzelkopie der Asset-Binärdateien (einschließlich Wiedergaben), die gemeinsam von Metadaten und Tags in mehreren Gebietsschemata genutzt werden kann. Daher wirkt sich das Erstellen von Asset-Sprachkopien und das Übersetzen von Metadaten und Tags nicht auf die Repository-Größe aus.
+Dateidatenspeicher und Amazon S3-Datenspeicher bieten eine Speicherinfrastruktur, die für diese Szenarien am besten geeignet ist. Diese Speicherrepositorys speichern eine Einzelkopie der Asset-Binärdateien (einschließlich Wiedergaben), die gemeinsam von Metadaten und Tags in mehreren Gebietsschemata genutzt werden kann. Daher wirkt sich das Erstellen von Asset-Sprachkopien und das Übersetzen von Metadaten und Tags nicht auf die Größe der Repositorys aus.
 
 Sie können auch einige Konfigurationsänderungen an einigen Workflows und dem Framework für die Übersetzungsintegration vornehmen, um den Prozess weiter zu optimieren.
 
@@ -43,9 +43,9 @@ Sie können auch einige Konfigurationsänderungen an einigen Workflows und dem F
    >Disabling the [!UICONTROL DAM MetaData Writeback] workflow turns off XMP metadata write-back on asset binaries. Consequently, future metadata changes are no longer be saved within the assets. Evaluate the consequences before disabling this workflow.
 -->
 
-1. Aktivieren Sie die [!UICONTROL Datum der letzten Änderung festlegen] Arbeitsablauf.
+1. Aktivieren Sie den Workflow [!UICONTROL Datum der letzten Änderung festlegen].
 
-   Die [!UICONTROL DAM MetaData Writeback] Der Workflow konfiguriert das Datum der letzten Änderung für ein Asset. Da dieser Workflow in Schritt 2 deaktiviert wird, kann [!DNL Assets] das Datum der letzten Asset-Änderung nicht länger auf dem neuesten Stand halten. Aktivieren Sie daher die *Datum der letzten Änderung festlegen* Arbeitsablauf, um sicherzustellen, dass die letzten geänderten Daten der Assets aktuell sind. Assets mit veralteten Datumsangaben der letzten Änderung können Fehler verursachen.
+   Mit dem Workflow [!UICONTROL DAM-Metadaten-Writeback] können Sie das Datum der letzten Änderung für ein Asset konfigurieren. Da dieser Workflow in Schritt 2 deaktiviert wird, kann [!DNL Assets] das Datum der letzten Asset-Änderung nicht länger auf dem neuesten Stand halten. Aktivieren Sie daher den Workflow *Datum der letzten Änderung festlegen*, um sicherzustellen, dass das Datum der letzten Änderung der Assets aktuell sind. Assets mit veralteten Daten der letzten Änderung können Fehler verursachen.
 
-1. [Konfigurieren des Framework für die Übersetzungsintegration](/help/sites-administering/tc-tic.md) , um die Übersetzung von Asset-Binärdateien zu beenden. Deaktivieren Sie auf der Registerkarte **[!UICONTROL Assets]** die Option [!UICONTROL Assets übersetzen], um eine Übersetzung von Asset-Binärdateien auszuschließen. 
+1. [Konfigurieren Sie das Framework für die Übersetzungsintegration](/help/sites-administering/tc-tic.md) so, dass die Übersetzung von Asset-Binärdateien gestoppt wird. Deaktivieren Sie auf der Registerkarte **[!UICONTROL Assets]** die Option [!UICONTROL Assets übersetzen], um eine Übersetzung von Asset-Binärdateien auszuschließen. 
 1. Übersetzen Sie Asset-Metadaten/-Tags mithilfe von [mehrsprachigen Asset-Workflows](multilingual-assets.md).

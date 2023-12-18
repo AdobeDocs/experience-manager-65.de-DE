@@ -3,9 +3,9 @@ title: Authoring für Headless mit Adobe Experience Manager
 description: Eine Einführung in die leistungsstarken und flexiblen, Headless-Funktionen von Adobe Experience Manager und die Erstellung von Inhalten für Ihr Projekt.
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
 source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '659'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -84,6 +84,6 @@ Jetzt, da Sie die Konzepte und Terminologie gelernt haben, lautet der nächste S
 
 * [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
 
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
+* [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
 
 * [Headless-Tutorials für AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)

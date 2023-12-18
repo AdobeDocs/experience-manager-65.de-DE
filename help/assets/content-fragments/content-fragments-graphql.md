@@ -5,15 +5,15 @@ feature: Content Fragments
 role: User
 exl-id: 2debd678-2d73-41f2-b33c-c29d661f6a6b
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '684'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Headless-Bereitstellung von Inhalten mithilfe von Inhaltsfragmenten mit GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-Mit Adobe Experience Manager (AEM) können Sie Inhaltsfragmente zusammen mit der AEM-GraphQL-API (eine auf GraphQL basierende benutzerdefinierte Implementierung) verwenden, um strukturierte Inhalte für Ihre Programme „headless“ bereitzustellen. Durch die Möglichkeit, eine einzelne API-Abfrage anzupassen, können Sie bestimmte Inhalte abrufen und bereitstellen, die gerendert werden sollen/müssen (als Antwort auf die einzelne API-Abfrage).
+Mit Adobe Experience Manager (AEM) können Sie Inhaltsfragmente zusammen mit der AEM-GraphQL-API (eine auf GraphQL basierende benutzerdefinierte Implementierung) verwenden, um strukturierte Inhalte für Ihre Programme „headless“ bereitzustellen. Durch die Möglichkeit, eine einzelne API-Abfrage anzupassen, können Sie den spezifischen Inhalt, den Sie rendern möchten/müssen (als Antwort auf die einzelne API-Abfrage), abrufen und bereitstellen.
 
 <!--
 >[!NOTE]
@@ -50,7 +50,7 @@ GraphQL ist:
 
   Weitere Informationen finden Sie unter [GraphQL.org](https://graphql.org)
 
-Die [GraphQL-API AEM](#aem-graphql-api) ermöglicht Ihnen, (komplexe) Abfragen an Ihre [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md); wobei jede Abfrage einem bestimmten Modelltyp entspricht. Die zurückgegebenen Inhalte können dann von Ihren Programmen verwendet werden.
+Mit der [AEM GraphQL-API](#aem-graphql-api) können Sie (komplexe) Abfragen für Ihre [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) durchführen, wobei jede Abfrage einem bestimmten Modelltyp entspricht. Die zurückgegebenen Inhalte können dann von Ihren Programmen verwendet werden.
 
 ## AEM-GraphQL-API {#aem-graphql-api}
 

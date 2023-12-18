@@ -8,15 +8,15 @@ content-type: reference
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
 source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '594'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 # Die Tools-Konsolen {#tools-consoles}
 
-Die **Instrumente** Konsolen bieten Zugriff auf verschiedene spezialisierte Tools, mit denen Sie Websites, digitale Assets und andere Bereiche Ihres Inhalts-Repositorys verwalten können. Derzeit gibt es zwei Varianten der **Tools**, je nach verwendeter Benutzeroberfläche:
+Die **Tools-Konsolen** bieten Zugriff auf verschiedene spezialisierte Tools, mit denen Sie Ihre Websites, digitalen Assets und andere Aspekte Ihres Content-Repositorys verwalten können. Derzeit gibt es zwei Varianten der **Tools**, je nach verwendeter Benutzeroberfläche:
 
 * [Tools – Touch-optimierte Benutzeroberfläche](#tools-touch-optimized-ui)
 * [Tools – klassische Benutzeroberfläche](#tools-classic-ui)
@@ -370,7 +370,7 @@ Die **Instrumente** Konsolen bieten Zugriff auf verschiedene spezialisierte Tool
   </tr>
   <tr>
    <td>ClientContext-Konfigurationen<br /> </td>
-   <td>ClientContext stellt eine dynamisch zusammengestellte Sammlung von Benutzerdaten dar. Die standardmäßigen und Experience Cloud-Konfigurationen befinden sich hier.<br /> </td>
+   <td>ClientContext stellt eine dynamisch zusammengestellte Sammlung von Benutzerdaten dar. Die Standard- und Experience Cloud-Konfigurationen finden Sie hier.<br /> </td>
   </tr>
   <tr>
    <td>Cloud Services-Konfigurationen<br /> </td>
@@ -386,11 +386,11 @@ Die **Instrumente** Konsolen bieten Zugriff auf verschiedene spezialisierte Tool
   </tr>
   <tr>
    <td>DAM </td>
-   <td>Zugriff auf verschiedene Optionen.</td>
+   <td>Bietet Zugriff auf verschiedene Optionen.</td>
   </tr>
   <tr>
    <td>Dashboards</td>
-   <td>Erstellen Sie Berichterstellungs-Dashboards. Diese bieten eine anpassbare Möglichkeit, Seiten zu definieren, die konsolidierte Daten anzeigen.</td>
+   <td>Ermöglicht die Erstellung von Reporting-Dashboards. Diese bieten eine anpassbare Möglichkeit zur Festlegung von Seiten, die konsolidierte Daten anzeigen.</td>
   </tr>
   <tr>
    <td>Benutzerdefinierte Dokumentation</td>
@@ -406,7 +406,7 @@ Die **Instrumente** Konsolen bieten Zugriff auf verschiedene spezialisierte Tool
   </tr>
   <tr>
    <td>Import-Tools </td>
-   <td>Zugriff auf verschiedene Optionen.</td>
+   <td>Bietet Zugriff auf verschiedene Optionen.</td>
   </tr>
   <tr>
    <td>Prüfer für externe Links</td>
@@ -422,19 +422,19 @@ Die **Instrumente** Konsolen bieten Zugriff auf verschiedene spezialisierte Tool
   </tr>
   <tr>
    <td>Replikation – Replikationsagenten</td>
-   <td>Wird verwendet, um beim Veröffentlichen von Seiten Daten aus der -Autoreninstanz in die Veröffentlichungsinstanz zu replizieren, oder mit umgekehrter Replikation, um Benutzerkommentare aus der Veröffentlichungsumgebung an den -Autor zurückzugeben.</td>
+   <td>Wird verwendet, um bei der Veröffentlichung von Seiten Daten aus der Autorenumgebung in die Veröffentlichungsumgebung zu replizieren, oder im Falle einer umgekehrten Replikation, um Benutzerkommentare aus der Veröffentlichungsumgebung an die Autorenumgebung zurückzugeben.</td>
   </tr>
   <tr>
    <td>Berichte</td>
-   <td>AEM bietet eine Reihe benutzerdefinierter Berichte, mit denen Sie benutzerdefinierte Berichte erstellen oder eigene Berichte entwickeln können.</td>
+   <td>AEM bietet eine Reihe benutzerdefinierter Berichte, mit denen Sie benutzerspezifische Berichte erstellen oder eigene Berichte entwickeln können.</td>
   </tr>
   <tr>
    <td>Strukturvorlage für Standardseite</td>
-   <td>Mit Strukturvorlage können Sie ein Formular (eine Grundlage) mit Feldern erstellen, die die gewünschte Struktur für Ihre Seiten widerspiegeln. Mithilfe dieses Formulars können Sie dann einfach Seiten erstellen, die auf dieser Struktur basieren.</td>
+   <td>Eine Strukturvorlage dient zur Erstellung eines Formulars (einer Struktur), dessen Felder die gewünschte Seitenstruktur widerspiegeln. Anhand dieses Formulars können Sie ganz einfach auf dieser Struktur basierende Seiten erstellen.</td>
   </tr>
   <tr>
    <td>Sicherheit – Self-Service-Konfiguration </td>
-   <td>Konfigurieren Sie die E-Mails, die Benutzer automatisch erhalten, wenn sie ein Konto erstellen oder ein Kennwort zurücksetzen, und bestätigen Sie, dass ein zurückgesetztes Kennwort zurückgesetzt wurde.</td>
+   <td>Ermöglicht die Konfiguration von E-Mails, die Benutzende automatisch erhalten, wenn sie ein Konto erstellen oder ein Kennwort zurücksetzen und ein zurückgesetztes Kennwort bestätigen sollen.</td>
   </tr>
   <tr>
    <td>Segmentierung</td>
@@ -450,7 +450,7 @@ Die **Instrumente** Konsolen bieten Zugriff auf verschiedene spezialisierte Tool
   </tr>
   <tr>
    <td>Versionierung – Versionen bereinigen</td>
-   <td>Bereinigen Sie die Seitenversionen nach Bedarf.</td>
+   <td>Bereinigen Sie Seitenversionen nach Bedarf.</td>
   </tr>
   <tr>
    <td>Workflow</td>

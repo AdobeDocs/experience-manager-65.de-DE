@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 exl-id: 375cfa95-ac6f-44c4-a736-f5dd55d24195
 source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '243'
-ht-degree: 15%
+ht-degree: 100%
 
 ---
 
@@ -29,16 +29,16 @@ Mobile Device Management (MDM) ermöglicht die Bereitstellung von Apps auf Mobil
 
 Mit einer MDM-Lösung sowie Mobile Application Management können Sie interne, öffentliche und erworbene Apps auf allen Mobilgeräten in Ihrem Unternehmen verwalten.
 
-Der MDM-Administrator kann sowohl IPA- als auch APK-Dateien auf den MDM-Server hochladen und die Benutzer steuern, die auf die IPA- oder APK-Dateien zugreifen können. Der Administrator kann auch die Profileinstellungen für die einzelnen Anwendungen steuern.
+MDM-Admins können sowohl IPA- als auch APK-Dateien auf den MDM-Server hochladen und die Benutzenden steuern, die auf die IPA- oder APK-Dateien zugreifen können. Die Admins können auch die Profileinstellungen für die einzelnen Anwendungen steuern.
 
 ## Profileinstellungen mit Auswirkung auf die AEM Forms-App {#profile-settings-affecting-the-aem-forms-app-br}
 
-Die folgenden Profileinstellungen auf Ihrem Gerät wirken sich auf die Funktion der AEM Forms-App auf Ihrem Gerät aus:
+Die folgenden Profileinstellungen auf Ihrem Gerät haben Auswirkungen auf die Funktion der AEM Forms-App auf Ihrem Gerät:
 
-* **Verwendung der Kamera zulassen** im **Gerätefunktionalität** Abschnitt
+* **Nutzung der Kamera erlauben** im Abschnitt **Gerätefunktionalität**
 
-Wenn Sie **Verwendung der Kamera zulassen**, die Kamerafunktion der [Fotoannotation](/help/forms/using/add-attachments.md) funktioniert nicht. Aktivieren Sie diese Option, um die Kamera in der App zu verwenden.
+Wenn Sie **Verwendung der Kamera erlauben** deaktivieren, funktioniert die Kamerafunktion der [Fotokommentare](/help/forms/using/add-attachments.md) nicht. Aktivieren Sie diese Option, um die Kamera in der App zu verwenden.
 
-* **Require passcode on device** im Abschnitt &quot;Passcode-Richtlinien&quot;
+* **Passcode auf dem Gerät verlangen** im Abschnitt „Passcode-Richtlinien“
 
-Aktivieren **Verschlüsselung von Anwendungsdaten** wird empfohlen, die **passcode** auf Ihrem Gerät. Wenn der Passcode nicht auf dem Gerät festgelegt ist, werden die auf dem Gerät gespeicherten Anwendungsdaten nicht verschlüsselt.
+Um die **Verschlüsselung von Anwendungsdaten** zu aktivieren, wird empfohlen, den **Passcode** auf Ihrem Gerät zu aktivieren. Wenn der Passcode auf dem Gerät nicht festgelegt ist, werden die auf dem Gerät gespeicherten Anwendungsdaten nicht verschlüsselt.

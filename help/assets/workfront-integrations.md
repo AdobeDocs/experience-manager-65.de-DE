@@ -6,9 +6,9 @@ feature: Integrations
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 hide: true
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1154'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ Im Folgenden finden Sie Details zu den Funktionen, die durch verschiedene Integr
 | Echtzeit-Push von aktualisierten Workfront-Metadaten an AEM | Aktualisieren Sie die zugeordneten Workfront-Metadaten automatisch in AEM, ohne ein Asset oder eine neue Version eines Assets erneut zu pushen. | ✓ | Nein | ✓ |
 | Zuordnen von Workfront-Metadaten zu AEM Assets-Ordnern | Synchronisieren Sie Metadaten von Workfront-Projekten mit verknüpften AEM-Ordnern. | Nein | ✓ | ✓ |
 | Aktualisierungen der AEM-Metadaten mit neuen Versionen | Es kann eine Konfiguration in AEM vorgenommen werden, um zu bestimmen, ob ein neu versioniertes Asset in Workfront auch mit allen an den Metadaten vorgenommenen Änderungen gepusht wird. | Nein | ✓ | Nein |
-| Automatische Aktualisierung von AEM-Metadaten bei Änderungen an benutzerdefinierten Formularen in Workfront | Mit AEM können Sie Aktualisierungen der Dokumentformulare in Workfront abonnieren. Infolgedessen werden bei jeder Aktualisierung der benutzerdefinierten Formularmetadaten des Workfront-Dokuments die Werte für die zugeordneten AEM-Metadatenfelder geändert. | Nein | ✓ | Nein |
+| Automatische Aktualisierung von AEM-Metadaten bei Änderungen an benutzerdefinierten Formularen in Workfront | Sie können in AEM Aktualisierungen an Dokumentformularen in Workfront abonnieren. Infolgedessen werden bei jeder Aktualisierung der benutzerdefinierten Formularmetadaten des Workfront-Dokuments die Werte für die zugeordneten AEM-Metadatenfelder geändert. | Nein | ✓ | Nein |
 | **Workflows (vorkonfiguriert)** |
 | Erstellen einer neuen Testversion für verknüpfte Assets | Beim Verknüpfen eines Assets in Workfront kann automatisch ein Testversand generiert werden. | Nein | Benutzerdefiniert | Nein |
 | Festlegen des Status von Workfront-Objekten | Festlegen des Status von Workfront-Objekten anhand konfigurierbarer Bedingungen mithilfe von AEM-Workflows | Nein | ✓ | In Kürze |

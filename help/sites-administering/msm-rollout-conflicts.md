@@ -8,9 +8,9 @@ content-type: reference
 feature: Multi Site Manager
 exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
 source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '905'
+ht-degree: 100%
 
 ---
 
@@ -18,33 +18,33 @@ ht-degree: 0%
 
 Konflikte sind möglich, wenn neue Seiten mit demselben Seitennamen im Blueprint-Zweig und in einer abhängigen Live Copy-Verzweigung erstellt werden.
 
-Solche Konflikte müssen beim Rollout gehandhabt und gelöst werden.
+Solche Konflikte müssen nach dem Rollout gehandhabt und aufgelöst werden.
 
 ## Konfliktbehandlung {#conflict-handling}
 
-Wenn in Konflikt stehende Seiten vorhanden sind (in den Blueprint- und Live Copy-Verzweigungen), können Sie mit MSM definieren, wie diese verarbeitet werden sollen (oder auch wenn dies der Fall ist).
+Wenn Konfliktseiten (in den Blueprint- und Live Copy-Zweigen) vorhanden sind, gestattet Ihnen MSM die Definition, wie (oder überhaupt ob) dieser Konflikt behoben werden soll.
 
 Um sicherzustellen, dass der Rollout nicht gesperrt ist, können mögliche Definitionen Folgendes umfassen:
 
-* welche Seite (Blueprint oder Live Copy) beim Rollout Priorität hat,
+* Welche Seite (Blueprint oder Live Copy) während des Rollouts Vorrang hat,
 * welche Seiten umbenannt werden (und wie),
 * wie sich dies auf veröffentlichte Inhalte auswirkt.
 
-  Das Standardverhalten von Adobe Experience Manager (AEM) (vorkonfiguriert) besteht darin, dass veröffentlichte Inhalte nicht betroffen sind. Wenn also eine Seite veröffentlicht wurde, die manuell im Live Copy-Zweig erstellt wurde, wird dieser Inhalt nach der Konfliktbehandlung und dem Rollout weiterhin veröffentlicht.
+  Das Standardverhalten von Adobe Experience Manager (AEM) (vorkonfiguriert) sieht vor, dass veröffentlichte Inhalte nicht beeinträchtigt werden. Wenn also eine Seite, die im Live Copy-Zweig manuell erstellt wurde, veröffentlicht wurde, wird dieser Inhalt nach der Konfliktbehandlung und dem Rollout auch weiterhin veröffentlicht.
 
-Neben der Standardfunktion können auch benutzerdefinierte Konflikt-Handler hinzugefügt werden, um verschiedene Regeln zu implementieren. Diese können auch Veröffentlichungsaktionen als einzelner Prozess zulassen.
+Neben der Standardfunktion können auch benutzerdefinierte Konflikt-Handler hinzugefügt werden, um verschiedene Regeln zu implementieren. Diese können auch die Veröffentlichung von Aktionen als individuellen Prozess ermöglichen.
 
 ### Beispiel-Szenario {#example-scenario}
 
-In den folgenden Abschnitten müssen Sie das Beispiel einer neuen Seite verwenden `b`, die sowohl im Blueprint- als auch im Live Copy-Zweig (manuell erstellt) erstellt wurde, um die verschiedenen Methoden zur Konfliktbehebung zu veranschaulichen:
+In den folgenden Abschnitten müssen Sie das Beispiel einer neuen Seite `b` verwenden, die sowohl im Blueprint als auch in dem (manuell erstellten) Live Copy-Zweig erstellt wurde, um die verschiedenen Methoden der Konfliktlösung zu veranschaulichen:
 
 * Blueprint: `/b`
 
-  Eine Masterseite mit einer untergeordneten Seite, bp-level-1.
+  Eine Musterseite; mit einer untergeordneten Seite, bp-level-1.
 
 * Live Copy: `/b`
 
-  Eine manuell im Live Copy-Zweig erstellte Seite mit einer untergeordneten Seite, `lc-level-1`.
+  Eine im Live Copy-Zweig manuell erstellte Seite; mit einer untergeordneten Seite, `lc-level-1`.
 
    * Bei Veröffentlichung als `/b` aktiviert, zusammen mit der untergeordneten Seite.
 
@@ -72,11 +72,11 @@ In den folgenden Abschnitten müssen Sie das Beispiel einer neuen Seite verwende
 
 ## Rollout-Manager und Konfliktbehandlung {#rollout-manager-and-conflict-handling}
 
-Mit dem Rollout-Manager können Sie das Konfliktmanagement aktivieren oder deaktivieren.
+Mit dem Rollout-Manager können Sie das Konflikt-Management aktivieren oder deaktivieren.
 
-Dies geschieht mithilfe der [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) von **Day CQ WCM Rollout Manager**:
+Dies erfolgt mithilfe der [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) von **Day CQ WCM Rollout Manager**:
 
-* **Umgang mit Konflikten mit manuell erstellten Seiten**:
+* **So können Sie einen Konflikt mit manuell erstellten Seiten beheben**:
 
   (`rolloutmgr.conflicthandling.enabled`)
 
@@ -86,16 +86,16 @@ AEM verfügt über ein [vordefiniertes Verhalten, wenn das Konflikt-Management d
 
 ## Konflikt-Handler {#conflict-handlers}
 
-AEM nutzt Konflikt-Handler zum Lösen von Seitenkonflikten, die beim Rollout von Inhalten von einer Blueprint zu einer Live Copy vorliegen. Das Umbenennen von Seiten ist eine (übliche) Methode zur Lösung solcher Konflikte. Es können mehrere Konflikt-Handler verwendet werden, um eine Auswahl verschiedener Verhaltensweisen zu ermöglichen.
+AEM nutzt Konflikt-Handler zum Lösen von Seitenkonflikten, die beim Rollout von Inhalten von einer Blueprint zu einer Live Copy vorliegen. Das Umbenennen von Seiten ist eine (die übliche) Methode zur Lösung solcher Konflikte. Es können mehrere Konflikt-Handler verwendet werden, um eine Auswahl verschiedener Verhaltensweisen zu ermöglichen.
 
 AEM bietet:
 
-* Die [Standard-Konflikt-Handler](#default-conflict-handler):
+* Den [standardmäßigen Konflikt-Handler](#default-conflict-handler):
 
    * `ResourceNameRolloutConflictHandler`
 
 * Die Möglichkeit, einen [benutzerdefinierten Handler](#customized-handlers) zu implementieren.
-* Der Service-Ranking-Mechanismus, mit dem Sie die Priorität jedes einzelnen Handlers festlegen können. Der Service mit dem höchsten Ranking wird verwendet.
+* Den Service-Ranking-Mechanismus, mit dem Sie die Priorität jedes einzelnen Handlers festlegen können. Der Service mit dem höchsten Ranking wird verwendet.
 
 ### Standard-Konflikt-Handler {#default-conflict-handler}
 
@@ -103,8 +103,8 @@ Der standardmäßige Konflikt-Handler:
 
 * Heißt `ResourceNameRolloutConflictHandler`
 
-* Bei diesem Handler hat die Blueprint-Seite Vorrang.
-* Die Dienstrangfolge für diesen Handler ist niedrig (d. h. unter dem Standardwert für die `service.ranking` -Eigenschaft), da davon ausgegangen wird, dass benutzerdefinierte Handler einen höheren Rang benötigen. Das Ranking ist jedoch nicht das absolute Minimum, um bei Bedarf Flexibilität zu gewährleisten.
+* Mit diesem Handler hat die Blueprint-Seite Vorrang.
+* Das Service-Ranking für diesen Handler wurde als niedrig festgelegt, d. h. unterhalb des Standardwerts für die `service.ranking`-Eigenschaft, da davon ausgegangen wird, dass benutzerdefinierte Handler ein höheres Ranking benötigen. Allerdings ist das Ranking nicht das absolute Minimum, um bei Bedarf Flexibilität zu gewährleisten.
 
 Dieser Konflikt-Handler hat Vorrang vor dem Blueprint. Die Live Copy-Seite `/b` wird (innerhalb der Live Copy-Verzweigung) nach `/b_msm_moved` verschoben.
 
@@ -118,7 +118,7 @@ Dieser Konflikt-Handler hat Vorrang vor dem Blueprint. Die Live Copy-Seite `/b` 
 
   Wird beim Rollout auf die Live Copy-Seite `/b` verschoben.
 
-   * `bp-level-1` wird für die Live Copy bereitgestellt.
+   * `bp-level-1` wird beim Rollout zur Live Copy verschoben.
 
 **Nach dem Rollout**
 
@@ -152,11 +152,11 @@ Dieser Konflikt-Handler hat Vorrang vor dem Blueprint. Die Live Copy-Seite `/b` 
 
 Mit benutzerdefinierten Konflikt-Handlern können Sie Ihre eigenen Regeln implementieren. Mit dem Service-Ranking-Mechanismus können Sie auch definieren, wie sie mit anderen Handlern interagieren.
 
-Benutzerdefinierte Konflikt-Handler können Folgendes aufweisen:
+Benutzerdefinierte Konflikt-Handler können:
 
-* Benennung nach Ihren Anforderungen.
-* Entwickelt/konfiguriert gemäß Ihren Anforderungen. Sie können beispielsweise einen Handler entwickeln, der der Live Copy-Seite Vorrang einräumt.
-* Für die Konfiguration mit dem [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md); insbesondere
+* Gemäß Ihren Anforderungen benannt werden.
+* Gemäß Ihren Anforderungen entwickelt/konfiguriert werden. Beispiel: Sie können einen Handler so entwickeln, dass die Live Copy-Seite Vorrang erhält.
+* So konzipiert sein, dass die Konfiguration unter Verwendung der [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) erfolgt. Insbesondere gilt:
 
    * **Dienstpriorität**:
 
@@ -164,9 +164,9 @@ Benutzerdefinierte Konflikt-Handler können Folgendes aufweisen:
 
      Der Standardwert ist 0.
 
-### Verhalten bei deaktivierter Konfliktbehandlung {#behavior-when-conflict-handling-deactivated}
+### Verhalten, wenn die Konflikt-Behandlung deaktiviert ist {#behavior-when-conflict-handling-deactivated}
 
-Wenn Sie manuell [Deaktivieren der Konfliktbehandlung](#rollout-manager-and-conflict-handling)AEM keine Maßnahmen auf Konfliktseiten ergreifen (nicht widersprüchliche Seiten werden erwartungsgemäß bereitgestellt).
+Wenn Sie die [Konfliktbehandlung manuell deaktivieren](#rollout-manager-and-conflict-handling), ergreift AEM keine Maßnahmen bei konfliktbehafteten Seiten (das Rollout von nicht im Konflikt befindlichen Seiten erfolgt erwartungsgemäß).
 
 >[!CAUTION]
 >
@@ -176,11 +176,11 @@ In diesem Fall hat die Live Copy effektiv Vorrang. Die Blueprint-Seite `/b` wird
 
 * Blueprint: `/b`
 
-  Es wurde überhaupt nicht kopiert, wird jedoch ignoriert.
+  Wird überhaupt nicht kopiert, sondern ignoriert.
 
 * Live Copy: `/b`
 
-  Dasselbe.
+  Hier gilt dasselbe.
 
 <table>
  <caption>

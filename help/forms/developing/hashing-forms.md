@@ -3,9 +3,9 @@ title: Wie lassen sich Hashes in dynamischen PDF-Formularen erzeugen und verwend
 description: Erzeugen und Verwenden von Hashes in dynamischen PDF-Formularen.
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1246'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -19,27 +19,27 @@ Einige Erfahrung mit AEM Forms on JEE Designer ist erforderlich, ebenso wie die 
 
 Anfang
 
-Wenn Sie ein Kennwort in Ihrem PDF-Formular ausblenden möchten und es nicht im Quellcode oder an einer anderen Stelle im PDF-Dokument als Klartext enthalten sein soll, ist es wichtig zu wissen, wie MD4-, MD5-, SHA-1- und SHA-256-Hashes generiert und funktioniert.
+Wenn Sie ein Kennwort in Ihrem PDF-Formular verstecken möchten und es nicht im Quell-Code oder an einer anderen Stelle im PDF-Dokument als Klartext enthalten sein soll, ist es wichtig zu wissen, wie MD4-, MD5-, SHA-1- und SHA-256-Hashes erzeugt werden können und funktionieren.
 
-Ziel ist es, das Kennwort zu verschleiern, indem ein eindeutiger Hash erzeugt und dieser Hash im PDF-Dokument gespeichert wird. Dieser einzigartige Hash kann von verschiedenen Hash-Funktionen erzeugt werden, und in diesem Artikel wird Ihnen gezeigt, wie man ihn im PDF-Formular generiert und wie man mit ihnen arbeitet.
+Ziel ist es, das Kennwort zu verschleiern, indem ein eindeutiger Hash erzeugt und dieser Hash im PDF-Dokument gespeichert wird. Dieser eindeutige Hash kann von verschiedenen Hash-Funktionen erzeugt werden, und in diesem Artikel wird Ihnen gezeigt, wie man sie innerhalb des PDF-Formulars erzeugt und wie man mit ihnen arbeitet.
 
-Eine Hash-Funktion akzeptiert eine lange Zeichenfolge (oder Nachricht) beliebiger Länge als Eingabe und erzeugt eine Zeichenfolge mit fester Länge als Ausgabe, manchmal auch als &quot;Message Digest&quot;oder &quot;digitaler Fingerabdruck&quot;bezeichnet.
+Eine Hash-Funktion akzeptiert eine lange Zeichenfolge (oder Nachricht) beliebiger Länge als Eingabe und erzeugt eine Zeichenfolge mit fester Länge als Ausgabe, manchmal auch als Nachrichten-Digest oder digitaler Fingerabdruck bezeichnet.
 
-Mit AEM Forms on JEE Designer können Sie die verschiedenen Hash-Funktionen in Skriptobjekte als JavaScript implementieren und in einem dynamischen PDF-Dokument ausführen. Die Beispiel-PDFs, die in den Beispieldateien für diesen Artikel enthalten sind, verwenden Open-Source-Implementierungen der folgenden Hash-Funktionen:
+Mit AEM Forms on JEE Designer können Sie die verschiedenen Hash-Funktionen als JavaScript in Skriptobjekte implementieren und innerhalb eines dynamischen PDF-Dokuments ausführen. Die Beispiel-PDFs, die in den Beispieldateien für diesen Artikel enthalten sind, verwenden Open-Source-Implementierungen der folgenden Hash-Funktionen:
 
 * MD4 und MD5 – von Ronald Rivest entworfen
 
 * SHA-1 und SHA-256 – wie von NIST definiert
 
-Der größte Vorteil der Verwendung von Hashes besteht darin, dass Sie Kennwörter nicht direkt durch Vergleich klarer Textzeichenfolgen vergleichen müssen. Stattdessen können Sie die beiden Hashes der beiden Passwörter vergleichen. Da es unwahrscheinlich ist, dass zwei verschiedene Zeichenfolgen denselben Hash aufweisen, können Sie bei beiden Hashes davon ausgehen, dass auch die verglichenen Zeichenfolgen (in diesem Fall die Passwörter) identisch sind.
+Der größte Vorteil der Verwendung von Hashes besteht darin, dass Sie Kennwörter nicht direkt durch Vergleich klarer Textzeichenfolgen vergleichen müssen. Sie können stattdessen die beiden Hashes der beiden Kennwörter vergleichen. Da es unwahrscheinlich ist, dass zwei verschiedene Zeichenfolgen denselben Hash aufweisen, können Sie bei zwei identischen Hashes davon ausgehen, dass auch die verglichenen Zeichenfolgen (in diesem Fall die Kennwörter) identisch sind.
 
 >[!NOTE]
 >
->Es gibt einige bekannte Sicherheitsprobleme (so genannte Hash-Kollisionen) mit MD4 oder MD5. Aufgrund dieser Hash-Kollisionen und anderer SHA-1-Hacks (einschließlich Regenbogentabellen) beschloss ich, mich auf die SHA-256-Hash-Funktion im zweiten Beispiel zu konzentrieren. Weitere Informationen finden Sie auf den Wikipedia-Seiten [Kollision](https://de.wikipedia.org/wiki/Hashkollision) und [Regenbogentabelle](https://de.wikipedia.org/wiki/Rainbow_Table).
+>Es gibt einige bekannte Sicherheitsprobleme (so genannte Hash-Kollisionen) mit MD4 oder MD5. Aufgrund dieser Hash-Kollisionen und anderer SHA-1-Hacks (einschließlich Regenbogentabellen) habe ich beschlossen, mich auf die SHA-256-Hash-Funktion im zweiten Beispiel zu konzentrieren. Weitere Informationen finden Sie auf den Wikipedia-Seiten [Kollision](https://de.wikipedia.org/wiki/Hashkollision) und [Regenbogentabelle](https://de.wikipedia.org/wiki/Rainbow_Table).
 
 ## Überprüfen der Skriptobjekte {#examining-script-objects}
 
-Wenn Sie eines der beiden angegebenen Beispiele in AEM Forms on JEE Designer öffnen, finden Sie die vier Skriptobjekte in der Palette &quot;Hierarchie&quot;(siehe Abbildung unten).
+Wenn Sie eines der beiden angegebenen Beispiele in AEM Forms on JEE Designer öffnen, finden Sie die vier Skriptobjekte in der Palette „Hierarchie“ (siehe Abbildung unten).
 
 ![Variablen](assets/variables.jpg)
 
@@ -60,7 +60,7 @@ Um die JavaScript-Implementierung der Hash-Funktionen in diesen Skriptobjekten a
 
 Wie Sie aus dieser Liste sehen können, gibt es verschiedene Funktionen für die verschiedenen Ausgabetypen des Hash. Sie können zwischen `hex_` für Hexadezimalziffern, `b64_` für Base64-codierte Ausgabe und `str_` für einfache Zeichenfolgen-Codierung wählen.
 
-Abhängig von der ausgewählten Hash-Funktion variiert die Länge des Hashs:
+Je nach ausgewählter Hash-Funktion variiert die Länge des Hash:
 
 * MD4: 128 Bits
 * MD5: 128 Bits
@@ -69,17 +69,17 @@ Abhängig von der ausgewählten Hash-Funktion variiert die Länge des Hashs:
 
 ## Ausprobieren der PDF-Beispielformulare {#try-sample-pdf-forms}
 
-Die Beispieldateien für diesen Artikel enthalten zwei PDF-Formulare. Im ersten Beispiel können Sie eine Zeichenfolge eingeben und dann MD4, MD5, SHA-1 und SHA-256 Hash-Werte für die Zeichenfolge generieren. Das zweite Beispiel ist ein einfaches Formular, auf dem Textfelder entsperrt werden, wenn das korrekte Kennwort eingegeben wird.
+Die Beispieldateien für diesen Artikel enthalten zwei PDF-Formulare. Im ersten Beispiel können Sie eine Zeichenfolge eingeben und dann MD4-, MD5-, SHA-1- und SHA-256-Hash-Werte für die Zeichenfolge generieren. Das zweite Beispiel ist ein einfaches Formular, auf dem Textfelder entsperrt werden, wenn das korrekte Kennwort eingegeben wird.
 
 ### Beispiel 1: Generieren von Hash-Werten {#generating-dashes}
 
 Gehen Sie wie folgt vor, um das erste Beispiel auszuprobieren:
 
-1. Öffnen Sie nach dem Herunterladen und Entpacken der Beispieldateien die Datei „hashing_forms_sample1.pdf“ mit AEM Forms on JEE Designer. Alternativ können Sie Adobe Reader oder Adobe Acrobat Professional verwenden, um das Beispiel zu öffnen und anzuzeigen. Sie können den Quellcode jedoch nicht sehen.
+1. Öffnen Sie nach dem Herunterladen und Entpacken der Beispieldateien die Datei „hashing_forms_sample1.pdf“ mit AEM Forms on JEE Designer. Stattdessen können Sie auch Adobe Reader oder Adobe Acrobat Professional verwenden, um das Beispiel zu öffnen und anzuzeigen. Allerdings können Sie dann den Quell-Code nicht sehen.
 1. Geben Sie im Textfeld mit der Beschriftung [!UICONTROL Klartext] ein Passwort oder eine andere Nachricht ein, für die Sie einen Hash-Wert generieren möchten.
 1. Klicken Sie auf eine der vier Schaltflächen, um den MD4-, MD5-, SHA-1- oder SHA-256-Hash-Wert zu generieren. Je nachdem, auf welche Schaltfläche Sie geklickt haben, wird eine der vier Hash-Funktionen aufgerufen, die eine hexadezimale Ausgabe erzeugen, und Ihre Zeichenfolge oder Nachricht wird in einen Hash-Wert umgewandelt.
 
-Das Ergebnis des Hash-Vorgangs wird im Feld mit der Bezeichnung [!UICONTROL Hash] angezeigt. Die Länge des Hashs variiert je nach ausgewählter Hash-Funktion.
+Das Ergebnis des Hash-Vorgangs wird im Feld mit der Bezeichnung [!UICONTROL Hash] angezeigt. Die Länge des Hash-Werts hängt von der gewählten Hash-Funktion ab.
 
 In allen Beispielen werden Hexadezimalziffern als Ausgabetyp verwendet. Mit dem Skript-Editor können Sie die Beispiele ändern und den Ausgabetyp in Base64 oder eine einfache Zeichenfolge ändern.
 
@@ -89,11 +89,11 @@ Das zweite Beispiel zeigt, wie Hash-Werte im Hintergrund verglichen werden, ohne
 
 Gehen Sie wie folgt vor, um das zweite Beispiel auszuprobieren:
 
-1. Öffnen Sie `hashing_forms_sample2.pdf` mit AEM Forms on JEE Designer. Alternativ können Sie Adobe Reader oder Adobe Acrobat Professional verwenden, um das Beispiel zu öffnen und anzuzeigen. Sie können den Quellcode jedoch nicht sehen.
+1. Öffnen Sie `hashing_forms_sample2.pdf` mit AEM Forms on JEE Designer. Stattdessen können Sie auch Adobe Reader oder Adobe Acrobat Professional verwenden, um das Beispiel zu öffnen und anzuzeigen. Allerdings können Sie dann den Quell-Code nicht sehen.
 1. Wählen Sie eines der beiden Kennwortfelder mit der Beschriftung [!UICONTROL Password MAN] oder [!UICONTROL Password FRAU] und geben Sie die Kennwörter ein:
    1. Das Kennwort für den Mann lautet `bob`
    1. Das Kennwort für die Frau lautet `alice`
-1. Wenn Sie den Fokus aus den Kennwortfeldern verschieben oder die Eingabetaste drücken, wird automatisch der Hash-Wert des eingegebenen Kennworts generiert und im Hintergrund mit dem gespeicherten Hash-Wert des richtigen Kennworts verglichen. Die richtigen, in Hash-Werte umgewandelten Kennwörter werden in unsichtbaren Textfeldern mit der Beschriftung `passwd_man_hashed` und `passwd_woman_hashed` gespeichert. Wenn Sie das richtige Kennwort für den Mann eingeben, dann werden die Textfelder mit der Beschriftung `Man 1` und `Man 2` verfügbar, sodass Sie Text eingeben können. Dasselbe Verhalten gilt für die Felder der Frau.
+1. Wenn Sie den Fokus aus den Kennwortfeldern verschieben oder die Eingabetaste drücken, wird automatisch der Hash-Wert des eingegebenen Kennworts generiert und im Hintergrund mit dem gespeicherten Hash-Wert des richtigen Kennworts verglichen. Die richtigen, in Hash-Werte umgewandelten Kennwörter werden in unsichtbaren Textfeldern mit der Beschriftung `passwd_man_hashed` und `passwd_woman_hashed` gespeichert. Wenn Sie das richtige Kennwort für den Mann eingeben, dann werden die Textfelder mit der Beschriftung `Man 1` und `Man 2` verfügbar, sodass Sie Text eingeben können. Dasselbe gilt für die Felder der Frau.
 1. Optional können Sie auf die Schaltfläche mit der Bezeichnung „Kennwörter löschen“ klicken, um die Textfelder zu deaktivieren und ihren Rahmen zu ändern.
 
 Der Code zum Vergleichen der beiden Hash-Werte und zum Aktivieren der Textfelder ist einfach:
@@ -109,7 +109,7 @@ if (soHASHING_SHA256.hex_sha256(this.rawValue) == passwd_man_hashed.rawValue){
 
 ## Wie geht es jetzt weiter? {#next-steps}
 
-Wo brauchen Sie so etwas? Stellen Sie sich ein PDF-Formular vor, das Felder enthält, die nur von autorisierten Personen ausgefüllt werden sollten. Durch das Schützen dieser Felder mit einem Kennwort, das nirgends im Dokument wie in Sample_2.pdf im Klartext zu sehen ist, können Sie sicherstellen, dass diese Felder nur für Benutzer zugänglich sind, die das Kennwort kennen.
+Wo brauchen Sie so etwas? Stellen Sie sich ein PDF-Formular vor, das Felder enthält, die nur von autorisierten Personen ausgefüllt werden sollten. Da diese Felder durch ein Passwort geschützt sind, das nirgendwo im Klartext des Dokuments zu sehen ist, wie in Sample_2.pdf gezeigt, können sie nur von Benutzenden geöffnet werden, die dieses Passwort kennen.
 
 Ich empfehle Ihnen, die beiden PDF-Beispieldateien weiter zu studieren.  Sie können mit der Beispieldatei „Sample_1.pdf“ neue Hash-Werte generieren und die generierten Werte verwenden, um entweder das Kennwort oder die Hash-Funktion zu ändern, die in „Sample_2.pdf“ verwendet wird.  Die im Abschnitt „Zuschreibungen“ aufgelisteten Ressourcen enthalten auch zusätzliche Informationen zum Hashing und zu den spezifischen JavaScript-Implementierungen, die in diesem Artikel verwendet werden.
 

@@ -1,18 +1,18 @@
 ---
-title: Handelsintegration von AEM und Drittanbietern mithilfe des Commerce Integration Framework
-description: Unternehmen benötigen möglicherweise zusätzliche Commerce-Lösungen von Drittanbietern, um ihre Storefront zu betreiben. Das Commerce Integration Framework (CIF) kann in solchen Integrationsszenarios verwendet werden, um mithilfe von I/O Runtime eine Commerce-Lösung von Drittanbietern mit Adobe Experience Manager zu verbinden.
+title: Integration von AEM und Drittanbieter-Commerce-Lösungen mithilfe des Commerce Integration Framework
+description: Unternehmen benötigen möglicherweise zusätzliche Drittanbieterlösungen für den Handel, um ihre Storefront zu betreiben. Das Commerce Integration Framework (CIF) kann in solchen Integrationsszenarien verwendet werden, um eine Drittanbieterlösung für den Handel mit Adobe Experience Manager über I/O Runtime zu verbinden.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: e99899a4-df86-4108-991a-8b30d303a279
 source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '507'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
-# Handelsintegration von AEM und Drittanbietern mithilfe des Commerce Integration Framework {#aem-third-party}
+# Integration von AEM und Drittanbieter-Commerce-Lösungen mithilfe des Commerce Integration Framework {#aem-third-party}
 
-Die Integration von Lösungen außerhalb von Adobe Commerce ist ein häufiges Szenario für CIF. Drittanbieterlösungen mit verschiedenen APIs und Schemas werden über eine Integrationsschicht verbunden.
+Die Integration von Lösungen außerhalb von Adobe Commerce ist ein häufiges Szenario für CIF. Drittanbieterlösungen mit verschiedenen APIs und Schemas werden über eine Integrationsebene verbunden.
 
 ## Architektur {#architecture}
 
@@ -20,7 +20,7 @@ Die Gesamtarchitektur sieht wie folgt aus:
 
 ![Überblick über die AEM-Nicht-Magento-/-Drittanbieter-Architektur](../assets//AEM_nonMagento_Architecture.png)
 
-Der Zweck dieser Integrationsebene ist es, APIs und Schemata von Drittanbietern den unterstützten Adobe Commerce-GraphQL-APIs und -Schemata außerhalb von Experience Manager zuzuordnen. Dank dieser Kapselung können die Integrationslogik und die Systeme aktualisiert werden, ohne den Code im Experience Manager zu ändern.
+Der Zweck dieser Integrationsebene ist es, APIs und Schemata von Drittanbietern den unterstützten Adobe Commerce-GraphQL-APIs und -Schemata außerhalb von Experience Manager zuzuordnen. Dank dieser Kapselung können die Integrationslogik und -systeme aktualisiert werden, ohne dass Code in Experience Manager geändert werden muss.
 
 ## Lösungsanforderungen für eine Integration
 
@@ -40,21 +40,21 @@ Die Integration von Produktkatalog-APIs ist erforderlich, um diese Anwendungsfä
 
 ## Front-End-Anwendungsfälle
 
-[AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) rufen Daten über die CIF-unterstützten Adobe Commerce-APIs ab und tauschen sie aus. Um Komponenten wiederzuverwenden, müssen die entsprechenden APIs implementiert sein.
+[AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) rufen Daten über die CIF-unterstützten Adobe Commerce-APIs ab und tauschen sie aus. Um Komponenten wiederzuverwenden, müssen die entsprechenden APIs implementiert werden.
 
-Die Empfehlung für leistungskritische clientseitige Komponenten besteht darin, direkt mit der Drittanbieterlösung zu kommunizieren, um Latenzzeiten zu vermeiden.
+Die Empfehlung für leistungskritische Client-seitige Komponenten besteht darin, direkt mit der Drittanbieterlösung zu kommunizieren, um Latenz zu vermeiden.
 
 ## Entwickeln einer Integration {#develop-integration}
 
-Adobe empfiehlt die Verwendung von [Adobe I/O Runtime](https://developer.adobe.com/apis/experienceplatform/runtime.html) für die Integrationsschicht. Es ist im CIF-Add-on für Drittanbieter enthalten. Da sie mit einem Microservice-artigen Ansatz arbeitet, ist sie gut geeignet, einfach mehrere Lösungen zu integrieren.
+Adobe empfiehlt, [Adobe I/O Runtime](https://developer.adobe.com/apis/experienceplatform/runtime.html) für die Integrationsebene zu verwenden. Es ist im CIF-Add-on für Drittanbieter enthalten. Da sie mit einem Microservice-artigen Ansatz arbeitet, ist sie gut geeignet, einfach mehrere Lösungen zu integrieren.
 
 Die [Referenzimplementierung](https://github.com/adobe/commerce-cif-graphql-integration-reference) ist ein guter Ausgangspunkt für die Erstellung der Integration in Ihre Commerce-Lösung. Sie unterstützt zwar GraphQL, kann aber auch mit jeder anderen Art von API wie REST integriert werden.
 
-Diese Integrationsschicht ist nicht erforderlich, wenn eine Drittanbieterschicht verfügbar ist (z. B. Mulesoft) oder die Integration auf der Drittanbieterlösung aufbaut.
+Diese Integrationsebene ist nicht erforderlich, wenn eine Drittanbieterebene verfügbar ist (z. B. Mulesoft) oder die Integration auf der Drittanbieterlösung aufgebaut wird.
 
 ## Vorkonfigurierte Connectoren {#connectors}
 
-Connectoren bieten einen guten Ausgangspunkt für Projekte. Sie enthalten eine Commerce-lösungsspezifische Verbindung und Standard-API-Zuordnung. Diese Connectoren werden von Dritten erstellt und nicht von Adobe gepflegt. Kontaktieren Sie den jeweiligen Partner für Informationen.
+Connectoren bieten einen guten Ausgangspunkt für Projekte. Sie enthalten eine spezifische Verbindung für Commerce-Lösungen und eine standardmäßige API-Zuordnung. Diese Connectoren werden von Drittanbietern erstellt und nicht von Adobe gepflegt. Fragen Sie den jeweiligen Partner nach Informationen.
 
 * [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris), erstellt von Diconium
 * [Commercetools](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), erstellt von Diconium

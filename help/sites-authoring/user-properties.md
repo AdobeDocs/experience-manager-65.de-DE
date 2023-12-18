@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
 source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '514'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
@@ -24,11 +24,11 @@ Beginnen Sie, indem Sie in der Kopfzeile die Option [Benutzer](/help/sites-autho
 
 ## Benutzereinstellungen {#user-settings}
 
-Die **Benutzer** Über das Dialogfeld &quot;Einstellungen&quot;haben Sie Zugriff auf:
+Im Dialogfeld **Benutzereinstellungen** können Sie auf Folgendes zugreifen:
 
 * Identität annehmen als
 
-   * Mit dem [Identität annehmen als](/help/sites-administering/security.md#impersonating-another-user) -Funktion kann ein Benutzer im Namen eines anderen Benutzers arbeiten.
+   * Mit der Funktion [Identität annehmen als](/help/sites-administering/security.md#impersonating-another-user) können Benutzende im Namen anderer Benutzender arbeiten.
 
 * Profil
 
@@ -44,13 +44,13 @@ Die **Benutzer** Über das Dialogfeld &quot;Einstellungen&quot;haben Sie Zugriff
 
 Auf das Dialogfeld **Benutzereinstellungen** kann über die Option [Benutzer](/help/sites-authoring/user-properties.md#user-settings) in der Kopfzeile zugegriffen werden.
 
-Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
+Jede Benutzerin und jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
 ![screen-shot_2019-03-05at100322](assets/screen-shot_2019-03-05at100322.png)
 
 * **Sprache**
 
-  Dadurch wird die Sprache definiert, die für die Benutzeroberfläche der Authoring-Umgebung verwendet werden soll. Wählen Sie in der Liste die gewünschte Sprache aus.
+  Dadurch wird die Sprache definiert, die für die Benutzeroberfläche der Autorenumgebung verwendet werden soll. Wählen Sie die gewünschte Sprache aus der Liste der verfügbaren Sprachen aus.
 
   Diese Konfiguration wird auch für die klassische Benutzeroberfläche verwendet.
 
@@ -68,7 +68,7 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
 * **Desktop-Aktionen für Assets anzeigen**
 
-  Für diese Option ist ein AEM Desktop-Programm erforderlich.
+  Für diese Option ist die AEM-Desktop-Anwendung erforderlich.
 
 * **Anmerkungsfarbe**
 
@@ -79,7 +79,7 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
 * **Darstellung des relativen Datums**
 
-  Um die Lesbarkeit zu verbessern, rendert AEM Datumsangaben innerhalb der letzten sieben Tage als relative Daten (z. B. vor drei Tagen) und ältere Daten als exakte Datumswerte (z. B. 20. März 2017).
+  Zur besseren Lesbarkeit rendert AEM Daten der letzten sieben Tage als relative Datumsangaben (z. B. „Vor drei Tagen“) und ältere Daten als genaue Datumsangaben (z. B. 20. März 2017).
 
   Diese Option definiert, wie Daten im System angezeigt werden. Die folgenden Optionen sind verfügbar:
 
@@ -96,12 +96,12 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
 * **Tastaturbefehle aktivieren**
 
-  AEM unterstützt mehrere Tastaturbefehle, die die Bearbeitung effizienter machen.
+  AEM unterstützt verschiedene Tastaturbefehle, die eine noch effizientere Bearbeitung ermöglichen.
 
    * [Tastaturbefehle für die Seitenbearbeitung](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Tastaturbefehle für Konsolen](/help/sites-authoring/keyboard-shortcuts.md)
 
-  Diese Option aktiviert Tastaturbefehle. Sie sind standardmäßig aktiviert, können jedoch deaktiviert werden, z. B. wenn ein Benutzer bestimmte Barrierefreiheitsanforderungen hat.
+  Diese Option aktiviert Tastaturbefehle. Sie sind standardmäßig aktiviert, können aber deaktiviert werden, wenn z. B. Benutzende bestimmte Barrierefreiheitsanforderungen haben.
 
 * **Klassisches Authoring-Erlebnis verwenden**
 
@@ -109,8 +109,8 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
 * **Asset-Homepage aktivieren**
 
-  Diese Option ist nur verfügbar, wenn Ihr Systemadministrator das Asset-Homepage-Erlebnis für die gesamte Organisation aktiviert hat.
+  Diese Option ist nur verfügbar, wenn Systemadmins die Asset-Homepage-Nutzung für das gesamte Unternehmen aktiviert haben.
 
 * **Stock-Konfiguration**
 
-  Mit dieser Option können Sie die bevorzugte Adobe Stock-Konfiguration angeben. Sie ist nur verfügbar, wenn Ihr Systemadministrator die Option [Adobe Stock-Integration](/help/assets/aem-assets-adobe-stock.md).
+  Mit dieser Option können Sie die bevorzugte Adobe Stock-Konfiguration angeben. Sie ist nur verfügbar, wenn Ihre Systemadmins die [Adobe Stock-Integration](/help/assets/aem-assets-adobe-stock.md) aktiviert haben.

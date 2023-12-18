@@ -6,9 +6,9 @@ content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '749'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
   </tr>
   <tr>
    <td>Wann ist sie einzusetzen?</td>
-   <td>Eingeschränkte Anwendungsfälle: z. B. Szenarien, in denen kleine, statische Kataloge importiert werden müssen</td>
+   <td>Eingeschränkte Anwendungsfälle: Zum Beispiel für Szenarien, in denen kleine, statische Kataloge importiert werden müssen.</td>
    <td>Bevorzugte Lösung in den meisten Anwendungsfällen</td>
   </tr>
  </tbody>
@@ -105,7 +105,7 @@ eCommerce übernimmt zusammen mit dem Produktinformations-Management (PIM) die A
 * Live- und zentralisierte Speicherdatensätze
 * Web-Schnittstellen
 
-AEM eCommerce hilft Marketing-Fachleuten bei der Bereitstellung von markenspezifischen, personalisierten Einkaufserlebnissen über Web-, mobile und soziale Touchpoints hinweg. In der AEM-Authoring-Umgebung können Sie Seiten und Komponenten basierend auf dem Zielgruppen-Besucherkontext und Merchandising-Strategien anpassen, beispielsweise:
+AEM eCommerce hilft Marketing-Fachleuten bei der Bereitstellung von markenspezifischen, personalisierten Einkaufserlebnissen über Web-, mobile und soziale Touchpoints hinweg. In der Authoring-Umgebung von AEM können Sie die Seiten und Komponenten an den Kontext der Zielbesucherinnen und -besucher und Ihre Merchandising-Strategien anpassen, zum Beispiel:
 
 * Produktseiten
 * Warenkorbkomponenten
@@ -141,7 +141,7 @@ AEM eCommerce bietet:
 
   >[!NOTE]
   >
-  >Mit dem von AEM bereitgestellten Integrations-Framework können Sie auch zusätzliche AEM für Commerce-Funktionen erstellen, unabhängig von Ihrer spezifischen eCommerce-Engine.
+  >Mit dem Integrationsframework von AEM können Sie unabhängig von Ihrer E-Commerce-Engine zusätzliche AEM-Komponenten für E-Commerce-Funktionen entwickeln.
 
 * **Suche** – mit entweder:
 
@@ -163,7 +163,7 @@ AEM eCommerce bietet:
 * Die Möglichkeit der Entwicklung eines **erlebnisgesteuerten Handels, der auf Kundendaten und Aktivitäten basiert**. Auf diese Weise können Sie viele Szenarien umsetzen:
 
    * Beispielsweise können Sie einen Nachlass auf die Versandkosten anbieten, wenn der Gesamtbetrag der Bestellung einen bestimmten Wert überschreitet.
-   * Mit einem anderen können Sie Saisonangebote bereitstellen, die Profildaten verwenden (z. B. Ort). Diese können dann bei Bedarf hervorgehoben werden, auch hier abhängig von anderen Faktoren.
+   * Eine andere Möglichkeit besteht darin, saisonale Angebote anzubieten, die auf Profildaten (z. B. dem Standort) basieren. Diese können dann bei Bedarf hervorgehoben werden, auch hier abhängig von anderen Faktoren.
 
   Im folgenden Beispiel wird ein Teaser angezeigt, da der Inhalt des Warenkorbs weniger als 75 USD beträgt:
 

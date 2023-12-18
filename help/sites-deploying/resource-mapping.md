@@ -9,9 +9,9 @@ docset: aem65
 feature: Configuring
 exl-id: 3eebdd38-da5b-4c38-868a-22c3c7a97b66
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '521'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -28,11 +28,11 @@ Bei einer möglichen HTTP-Zuordnung wird allen Anfragen an `localhost:4503` das 
 
 `localhost:4503/content/we-retail/en/products.html`
 
-Der Zugriff erfolgt über:
+über:
 
 `localhost:4503/we-retail/en/products.html`
 
-Da die Zuordnung automatisch das Präfix hinzufügt `/content` nach `/we-retail/en/products.html`.
+erlaubt, da bei der Zuordnung automatisch das Präfix `/content` zu `/we-retail/en/products.html` hinzufügt wird.
 
 >[!CAUTION]
 >
@@ -44,14 +44,15 @@ Da die Zuordnung automatisch das Präfix hinzufügt `/content` nach `/we-retail/
 
 ## Anzeigen von Zuordnungsdefinitionen {#viewing-mapping-definitions}
 
-Die Zuordnungen bilden zwei Listen, die der JCR Resource Resolver auswertet (von oben nach unten), um eine Übereinstimmung zu finden.
+Die Zuordnungen bilden zwei Listen, die der JCR-Ressourcen-Resolver auswertet (von oben nach unten), um eine Übereinstimmung zu finden.
 
 Diese Listen können (zusammen mit Konfigurationsinformationen) unter der Option **JCR ResourceResolver** der Felix-Konsole angezeigt werden. Beispiel: `https://<*host*>:<*port*>/system/console/jcrresolver`:
 
 * Configuration
 Zeigt die aktuelle Konfiguration (wie für den [Apache Sling-Ressourcen-Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) definiert) an.
 
-* Konfigurationstest Hier können Sie eine URL oder einen Ressourcenpfad eingeben. Klicken Sie auf **Resolve** oder **Map**, um festzulegen, wie das System den Eintrag transformiert.
+* Konfigurationstest
+Hiermit können Sie eine URL oder einen Ressourcenpfad eingeben. Klicken Sie auf **Resolve** oder **Map**, um festzulegen, wie das System den Eintrag transformiert.
 
 * **Resolver Map Entries**
 Die Liste der Einträge, die von den ResourceResolver.resolve-Methoden für die Zuordnung von URLs zu Ressourcen verwendet wird.
@@ -59,23 +60,23 @@ Die Liste der Einträge, die von den ResourceResolver.resolve-Methoden für die 
 * **Mapping Map Entries**
 Die Liste der Einträge, die von den ResourceResolver.map-Methoden für die Zuordnung von Ressourcenpfaden zu URLs verwendet wird.
 
-Die beiden Listen zeigen verschiedene Einträge an, einschließlich der von den Anwendungen als Standard definierten. Diese zielen häufig darauf ab, URLs für den Benutzer zu vereinfachen.
+Die beiden Listen enthalten verschiedene Einträge, darunter die Einträge, die von den Anwendungen als Standardwerte definiert sind. Diese zielen häufig darauf ab, URLs für Benutzende zu vereinfachen.
 
-Die Listen paaren eine **Muster**, einen regulären Ausdruck, der mit der Anfrage übereinstimmt, mit einer **Ersatz** die die Umleitung definiert, die durchgesetzt werden soll.
+Das Listen paaren ein **Muster**, d. h. einen regulären Ausdruck, der mit der Anfrage übereinstimmt, mit einem **Ersatz**, der die Umleitung definiert, die durchgesetzt werden soll.
 
-Beispiel:
+Zum Beispiel löst das
 
 **Muster** `^[^/]+/[^/]+/welcome$`
 
-Trigger Folgendes:
+den
 
 **Ersatz** `/libs/cq/core/content/welcome.html`.
 
-So leiten Sie eine Anforderung um:
+aus, zur Umleitung der Anfrage
 
 `https://localhost:4503/welcome` ``
 
-An:
+an:
 
 `https://localhost:4503/libs/cq/core/content/welcome.html`
 
@@ -83,7 +84,7 @@ Neue Zuordnungsdefinitionen werden im Repository erstellt.
 
 >[!NOTE]
 >
->Es stehen viele Ressourcen zur Verfügung, die die Definition regulärer Ausdrücke erläutern. Beispiel: [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>Es steht eine Vielzahl von Ressourcen zur Verfügung, die das Definieren regulärer Ausdrücke erläutern, z. B. [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ### Erstellen von Zuordnungsdefinitionen in AEM {#creating-mapping-definitions-in-aem}
 
@@ -123,16 +124,16 @@ Der Knotentyp ist für diese Zuordnungen bestimmt, seine Verwendung ist jedoch n
 
 1. Klicken Sie auf **Alle speichern**.
 
-Dies verarbeitet eine Anfrage wie:
+Damit wird eine Anfrage wie 
 `localhost:4503/geometrixx/en/products.html`
-wie wenn:
+so behandelt, als ob
 `localhost:4503/content/geometrixx/en/products.html`
-wurden beantragt.
+angefragt worden wäre.
 
 >[!NOTE]
 >
->Weitere Informationen zu den verfügbaren Sling-Eigenschaften und wie diese konfiguriert werden können, finden Sie in der Sling-Dokumentation unter [Ressourcen](https://sling.apache.org/documentation/the-sling-engine/resources.html)
+>Weitere Informationen zu den verfügbaren Sling-Eigenschaften und dazu, wie diese konfiguriert werden können, finden Sie in der Sling-Dokumentation unter [Ressourcen](https://sling.apache.org/documentation/the-sling-engine/resources.html)
 
 >[!NOTE]
 >
->Die Konfigurationen für die Veröffentlichungsumgebung können unter `/etc/map.publish` gespeichert werden. Diese müssen repliziert werden und der neue Speicherort ( `/etc/map.publish`) für die **Zuordnungsort** des [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) der Veröffentlichungsumgebung.
+>Die Konfigurationen für die Veröffentlichungsumgebung können unter `/etc/map.publish` gespeichert werden. Diese müssen repliziert und der neue Speicherort (`/etc/map.publish`) muss für den **Zuordnungs-Speicherort** des [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) der Veröffentlichungsumgebung konfiguriert werden.

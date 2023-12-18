@@ -3,9 +3,9 @@ title: Komprimieren und Dekomprimieren von Dateien mithilfe eines benutzerdefini
 description: Erfahren Sie, wie Sie Dateien mit einem benutzerdefinierten DSC von AEM Forms on JEE komprimieren und entpacken können.
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
 source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '484'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -13,23 +13,23 @@ ht-degree: 64%
 
 ## Vorausgesetztes Wissen {#prerequisites}
 
-Erfahren Sie mehr über AEM Forms on JEE Process Management, grundlegende Java™-Programmierung und die Erstellung benutzerdefinierter Komponenten.
+Erfahrung mit dem Prozess-Management in AEM Forms on JEE, grundlegender Java™-Programmierung und dem Erstellen benutzerdefinierter Komponenten.
 
 **Weitere erforderliche Produkte**
 
-Java™-Editor, z. B. [Eclipse](https://www.eclipse.org/) oder [Netbeans IDE](https://netbeans.apache.org/)
+Java™-Editor, z. B. [Eclipse](https://www.eclipse.org/) oder [Netbeans IDE](https://netbeans.apache.org/)
 
 ## Benutzerebene {#user-level}
 
 Fortgeschrittene Einsteiger
 
-Mit AEM Forms on JEE können Entwickler benutzerdefinierte ASC-Elemente (Acrobat Services Container) erstellen, um native, angereicherte Funktionen zu erstellen. Die Erstellung solcher Komponenten kann mit der Laufzeitumgebung von AEM Forms auf JEE verbunden werden und erfüllt den vorgesehenen Zweck. In diesem Artikel wird erläutert, wie Sie einen benutzerdefinierten ZIP-Service erstellen, mit dem Sie eine Liste von Dateien in eine ZIP-Datei komprimieren und eine ZIP-Datei in eine Liste von Dokumenten entpacken können.
+Mit AEM Forms on JEE können Entwickelnde benutzerdefinierte ASC (Acrobat Service Container) erstellen, um umfangreiche, vorkonfigurierte Funktionen zu entwickeln. Die Erstellung solcher Komponenten kann mit der Laufzeitumgebung von AEM Forms auf JEE verbunden werden und erfüllt den vorgesehenen Zweck. In diesem Artikel wird erläutert, wie Sie einen benutzerdefinierten ZIP-Service erstellen, mit dem Sie eine Liste von Dateien in eine ZIP-Datei komprimieren und eine ZIP-Datei in eine Liste von Dokumenten entpacken können.
 
 ## Erstellen einer benutzerdefinierten ASC-Komponente {#create-custom-dsc-component}
 
-Erstellen Sie eine benutzerdefinierte ASC-Komponente mit zwei Dienstvorgängen, damit Sie eine Liste von Dokumenten komprimieren und entpacken können. Diese Komponente verwendet das Paket java.util.zip für Komprimierung und Dekomprimierung.
+Erstellen Sie eine benutzerdefinierte ASC-Komponente mit zwei Dienstvorgängen, damit Sie eine Liste von Dokumenten komprimieren und entpacken können. Diese Komponente verwendet das Paket java.util.zip für die Komprimierung und Dekomprimierung.
 
-So erstellen Sie eine benutzerdefinierte ASC-Komponente:
+Erstellen einer benutzerdefinierten ASC-Komponente:
 
 1. Fügen Sie die Datei adobe-livecycle-client.jar zur Bibliothek hinzu
 1. Fügen Sie die erforderlichen Symbole hinzu
@@ -215,10 +215,10 @@ Sie können diesen ZIP-Service für die folgenden Anwendungsfälle verwenden:
 
 * Suchen Sie alle Dateien in einem bestimmten Ordner und geben Sie die Dateien als komprimiertes Dokument zurück.
 
-* Geben Sie eine ZIP-Datei mit mehreren PDF-Dokumenten an, die nach der Dekomprimierung der-Dokumente durch einen Leser erweitert werden können. Dies erfordert das Modul Reader Extensions für AEM Forms auf JEE.
+* Stellen Sie eine ZIP-Datei mit einer Reihe von PDF-Dokumenten bereit, die nach der Dekomprimierung der Dokumente durch Lesende erweitert werden können. Dafür ist das Modul „Reader Extensions“ für AEM Forms on JEE erforderlich.
 
-* Geben Sie eine ZIP-Datei mit einem heterogenen Dokumenttyp an, der mithilfe des Generate PDF-Dienstes dekomprimiert und als PDF-Dokument konvertiert werden kann.
+* Stellen Sie eine ZIP-Datei mit heterogenem Dokumenttyp bereit, die mithilfe des Generate PDF-Dienstes dekomprimiert und zu einem PDF-Dokument konvertiert werden kann.
 
-* Richtlinien schützen eine Liste von Dokumenten und geben sie als ZIP-Datei zurück.
+* Schützen Sie eine Liste von Dokumenten durch Richtlinien und geben Sie sie als ZIP-Datei zurück.
 
-* Ermöglicht Benutzern das Herunterladen aller Anlagen einer Prozessinstanz als einzelne ZIP-Datei.
+* Lassen Sie Benutzende alle Anlagen einer Prozessinstanz in einer einzigen ZIP-Datei herunterladen.

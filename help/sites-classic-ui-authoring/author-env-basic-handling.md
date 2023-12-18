@@ -1,15 +1,15 @@
 ---
 title: Grundlegende Handhabung
-description: Eine Übersicht über die grundlegende Handhabung der Adobe Experience Manager-Autorenumgebung. Als Grundlage wird die Sites-Konsole verwendet.
+description: Ein Überblick über die grundlegende Handhabung der Adobe Experience Manager-Autorenumgebung. Als Grundlage wird die Sites-Konsole verwendet.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1166'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 55%
 
 >[!NOTE]
 >
->* Auf dieser Seite erhalten Sie einen Überblick über die grundlegende Handhabung der Adobe Experience Manager (AEM)-Autorenumgebung. Als Grundlage wird die **Sites-Konsole** verwendet.
+>* Diese Seite soll einen Überblick über die grundlegende Handhabung der Adobe Experience Manager(AEM)-Autorenumgebung geben. Als Grundlage wird die **Sites-Konsole** verwendet.
 >
->* Einige Funktionen sind nicht in allen Konsolen verfügbar und in einigen Konsolen sind zusätzliche Funktionen verfügbar. Spezifische Informationen zu den einzelnen Konsolen und den zugehörigen Funktionen werden auf anderen Seiten ausführlicher behandelt.
+>* Einige Funktionen sind nicht in allen Konsolen verfügbar, bzw. zusätzliche Funktionen sind in bestimmten Konsolen verfügbar. Ausführlichere Informationen zu den einzelnen Konsolen und ihren jeweiligen Funktionen finden Sie auf anderen Seiten.
 >* In AEM stehen verschiedene Tastaturbefehle zur Verfügung, insbesondere bei [der Verwendung von Konsolen](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) und [der Bearbeitung von Seiten](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
 
@@ -27,7 +27,7 @@ ht-degree: 55%
 
 Die klassische Benutzeroberfläche bietet eine Auswahl an Konsolen, die bekannte Mechanismen zum Navigieren und Initiieren von Aktionen verwenden, einschließlich Klicken, Doppelklicken und [Kontextmenüs](#context-menus).
 
-Nach der Anmeldung wird der Begrüßungsbildschirm angezeigt. Es enthält eine Liste von Links zu Konsolen und Diensten:
+Nach der Anmeldung wird der Begrüßungsbildschirm angezeigt. Er enthält eine Liste von Links zu Konsolen und Diensten:
 
 ![screen_shot_2012-01-30at61745pm](assets/screen_shot_2012-01-30at61745pm.png)
 
@@ -47,15 +47,15 @@ Die Hauptkonsolen sind:
   </tr>
   <tr>
    <td><strong>Digitale Assets</strong><br /> </td>
-   <td>Mit diesen Konsolen können Sie Folgendes importieren: <a href="/help/sites-classic-ui-authoring/classicui-assets.md">Verwalten digitaler Assets</a> wie Bilder, Videos, Dokumente und Audiodateien. Diese Assets können dann von jeder Website verwendet werden, die auf derselben AEM-Instanz ausgeführt wird. </td>
+   <td>In diesen Konsolen können Sie digitale Assets wie Bilder, Videos, Dokumente und Audiodateien importieren und <a href="/help/sites-classic-ui-authoring/classicui-assets.md">verwalten</a>. Diese Assets können dann von jeder Website verwendet werden, die auf derselben AEM-Instanz ausgeführt wird. </td>
   </tr>
   <tr>
    <td><strong>Launches</strong></td>
-   <td>Hier können Sie Ihre <a href="/help/sites-classic-ui-authoring/classic-launches.md">Launches</a> verwalten. Damit können Sie Inhalte für eine künftige Version einer oder mehrerer aktivierter Webseiten entwickeln.<br /> <i>Hinweis: In der Touch-optimierten Benutzeroberfläche sind die meisten der Funktionen in der Sites-Konsole verfügbar ebenso wie die Leiste „Verweise“.</i> <i>Bei Bedarf ist diese Konsole über die Konsole Tools verfügbar. Wählen Sie Vorgänge und dann Starts aus.</i></td>
+   <td>Hier können Sie Ihre <a href="/help/sites-classic-ui-authoring/classic-launches.md">Launches</a> verwalten. Damit können Sie Inhalte für eine künftige Version einer oder mehrerer aktivierter Webseiten entwickeln.<br /> <i>Hinweis: In der Touch-optimierten Benutzeroberfläche sind die meisten der Funktionen in der Sites-Konsole verfügbar ebenso wie die Leiste „Verweise“.</i> <i>Bei Bedarf ist diese Konsole über die Tools-Konsole verfügbar. Wählen Sie dazu „Vorgänge“ und dann „Launches“ aus.</i></td>
   </tr>
   <tr>
    <td><strong>Posteingang </strong></td>
-   <td>Häufig sind verschiedene Personen an den Unteraufgaben eines Workflows beteiligt und jede Person muss ihren Schritt abschließen, bevor die Arbeit an die nächste Person übergeben wird. Im Posteingang werden Benachrichtigungen zu diesen Aufgaben angezeigt. Siehe <a href="/help/sites-administering/workflows.md">Arbeiten mit Workflows</a>. <br /> </td>
+   <td>Häufig sind mehrere Personen an den Unteraufgaben eines Workflows beteiligt. Jede Person muss dabei ihren Schritt abschließen, bevor die Arbeit an die nächste Person weitergegeben wird. Im Posteingang werden Benachrichtigungen zu diesen Aufgaben angezeigt. Siehe <a href="/help/sites-administering/workflows.md">Arbeiten mit Workflows</a>. <br /> </td>
   </tr>
   <tr>
    <td><strong>Tagging</strong></td>
@@ -71,11 +71,11 @@ Die Hauptkonsolen sind:
   </tr>
   <tr>
    <td><strong>Websites</strong></td>
-   <td>Mit der Konsole "Sites/Websites"können Sie <a href="/help/sites-classic-ui-authoring/classic-page-author.md">Websites erstellen, anzeigen und verwalten</a> auf Ihrer AEM Instanz ausgeführt werden. In diesen Konsolen können Sie Website-Seiten erstellen, kopieren und verschieben, Workflows starten und Seiten aktivieren (veröffentlichen). Sie können eine Seite auch zur Bearbeitung öffnen.<br /> </td>
+   <td>Mit den Sites/Websites-Konsolen können Sie <a href="/help/sites-classic-ui-authoring/classic-page-author.md">Websites erstellen, anzeigen und verwalten</a>, die in Ihrer AEM-Instanz betrieben werden. In diesen Konsolen können Sie Website-Seiten erstellen, kopieren und verschieben, Workflows starten und Seiten aktivieren (veröffentlichen). Sie können eine Seite auch zur Bearbeitung öffnen.<br /> </td>
   </tr>
   <tr>
    <td><strong>Workflows</strong></td>
-   <td>Bei einem Workflow handelt es sich um eine definierte Abfolge von Schritten, die zum Ausführen einer bestimmten Aufgabe erforderlich sind. Häufig sind mehrere Personen an einer Aufgabe beteiligt und jede Person muss ihren Schritt abschließen, bevor sie die Arbeit an die nächste Person übergibt. In der Konsole „Workflow“ können Sie Workflow-Modelle erstellen und Workflow-Instanzen verwalten, die ausgeführt werden. Siehe <a href="/help/sites-administering/workflows.md">Arbeiten mit Workflows</a>.<br /> </td>
+   <td>Bei einem Workflow handelt es sich um eine definierte Abfolge von Schritten, die zum Ausführen einer bestimmten Aufgabe erforderlich sind. Häufig sind mehrere Personen an einer Aufgabe beteiligt. Jede Person muss dabei ihren Schritt abschließen, bevor die Arbeit an die nächste Person weitergegeben wird. In der Konsole „Workflow“ können Sie Workflow-Modelle erstellen und Workflow-Instanzen verwalten, die ausgeführt werden. Siehe <a href="/help/sites-administering/workflows.md">Arbeiten mit Workflows</a>.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -86,11 +86,11 @@ Die Konsole **Websites** bietet zwei Bereiche zum Navigieren und Verwalten Ihrer
 
   Zeigt die Baumstruktur Ihrer Websites und die darin enthaltenen Seiten.
 
-  Es werden auch Informationen zu anderen Aspekten oder AEM, einschließlich Projekten, Blueprints und Assets, angezeigt.
+  Er enthält außerdem Informationen zu anderen Optionen in AEM, einschließlich Projekten, Blueprints und Assets.
 
 * Rechter Bereich
 
-  Zeigt die Seiten (an der im linken Bereich ausgewählten Stelle) an und kann verwendet werden, um Maßnahmen zu ergreifen.
+  Zeigt die Seiten (an der im linken Bereich gewählten Position) und kann für die Durchführung von Aktionen genutzt werden.
 
 Von hier aus können Sie [Ihre Seiten verwalten](/help/sites-authoring/managing-pages.md), entweder über die Symbolleiste, ein Kontextmenü oder indem Sie eine Seite für weitere Aktionen öffnen.
 
@@ -102,28 +102,28 @@ Von hier aus können Sie [Ihre Seiten verwalten](/help/sites-authoring/managing-
 
 ## Zugreifen auf die Hilfe {#accessing-help}
 
-In verschiedenen Konsolen (z. B. Websites) wird eine **Hilfe** -Schaltfläche verfügbar ist. Klicken **Hilfe** öffnet entweder Package Share oder die Dokumentations-Site.
+In verschiedenen Konsolen (z. B. Websites) ist eine **Hilfe**-Schaltfläche verfügbar. Durch Klicken auf **Hilfe** wird entweder Package Share oder die Dokumentations-Site geöffnet.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png)
 
-Wenn Sie eine Seite bearbeiten, wird die [Sidekick verfügt auch über eine Schaltfläche für den Zugriff auf die Hilfe](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
+Beim Bearbeiten einer Seite [verfügt auch der Sidekick über eine Schaltfläche für den Zugriff auf die Hilfe](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
 
 ## Navigieren mit der Konsole „Websites“ {#navigating-with-the-websites-console}
 
-Die **Websites** Die Konsole listet Ihre Inhaltsseiten in einer Baumstruktur auf (linker Bereich). Um die Navigation zu vereinfachen, können Abschnitte der Baumstruktur nach Bedarf eingeblendet (+) oder ausgeblendet (-) werden:
+Die Konsole **Websites** listet Ihre Inhaltsseiten in einer Baumstruktur auf (linker Bereich). Um die Navigation zu vereinfachen, können Abschnitte der Baumstruktur nach Bedarf eingeblendet (+) oder ausgeblendet (-) werden:
 
 * Durch Klicken auf den Seitennamen im linken Bereich wird Folgendes ausgeführt:
 
-   * Listet die untergeordneten Seiten im rechten Bereich auf
-   * Erweitert die Struktur im linken Bereich.
+   * Die untergeordneten Seiten werden im rechten Bereich angezeigt.
+   * Die Struktur wird im linken Bereich erweitert.
 
-     Aus Leistungsgründen hängt diese Aktion von der Anzahl der untergeordneten Knoten ab. Bei einer Standardinstallation funktioniert diese Erweiterungsmethode, wenn `30` oder weniger untergeordnete Knoten.
+     Aus Leistungsgründen hängt diese Aktion von der Anzahl der untergeordneten Knoten ab. Bei einer Standardinstallation wird die Baumstruktur eingeblendet, wenn höchstens `30` untergeordnete Knoten vorhanden sind.
 
-* Durch Doppelklicken auf den Seitennamen (linker Bereich) wird der Baum erweitert, auch wenn die Seite gleichzeitig geöffnet wird. Dieser Effekt ist jedoch nicht so offensichtlich.
+* Durch Doppelklicken auf den Seitennamen (linker Bereich) wird die Baumstruktur eingeblendet, wobei dieser Effekt durch das gleichzeitige Öffnen der Seite nicht so offensichtlich ist.
 
 >[!NOTE]
 >
->Dieser Standardwert ( `30`) kann in den anwendungsspezifischen Konfigurationen des SiteAdmin-Widgets pro Konsole geändert werden:
+>Der Standardwert ( `30`) kann konsolenweise in den anwendungsspezifischen Konfigurationen des SiteAdmin-Widgets geändert werden:
 >
 >Führen Sie im SiteAdmin-Knoten folgende Aktionen durch:
 >
@@ -172,7 +172,7 @@ Die folgenden sind verfügbar, ein Teil dieser Felder wird standardmäßig angez
   </tr>
   <tr>
    <td>Geändert</td>
-   <td>Gibt an, ob die Seite geändert wurde, und gibt Datum und Uhrzeit der Änderung an. Um Änderungen zu speichern, müssen Sie die Seite aktivieren.</td>
+   <td>Gibt an, ob die Seite geändert wurde, und gibt Datum und Uhrzeit der Änderung an. Zum Speichern von Änderungen müssen Sie die Seite aktivieren.</td>
   </tr>
   <tr>
    <td>Scene7 Publish</td>
@@ -180,7 +180,7 @@ Die folgenden sind verfügbar, ein Teil dieser Felder wird standardmäßig angez
   </tr>
   <tr>
    <td>Status</td>
-   <td>Gibt den Status der Seite an, z. B. ob die Seite Teil eines Workflows oder einer Live Copy ist oder ob eine Seite gesperrt ist.</td>
+   <td>Gibt den Status der Seite an, z. B. ob die Seite Teil eines Workflows oder einer Live Copy ist oder ob eine Seite derzeit gesperrt ist.</td>
   </tr>
   <tr>
    <td>Impressionen</td>
@@ -207,7 +207,7 @@ Die folgenden sind verfügbar, ein Teil dieser Felder wird standardmäßig angez
 
 >[!NOTE]
 >
->Um die sichtbaren Spalten auszuwählen, bewegen Sie den Mauszeiger über einen Spaltentitel. Ein Dropdown-Menü wird angezeigt und von hier aus können Sie die **Spalten** -Option.
+>Um die sichtbaren Spalten auszuwählen, bewegen Sie den Mauszeiger über einen Spaltentitel. Ein Dropdown-Menü wird angezeigt, über das Sie die Option **Spalten** verwenden können.
 
 Die Farben neben den Seiten in den Spalten **Veröffentlicht** und **Geändert** geben den Veröffentlichungsstatus an:
 
@@ -222,6 +222,6 @@ Die Farben neben den Seiten in den Spalten **Veröffentlicht** und **Geändert**
 
 ## Kontextmenüs {#context-menus}
 
-Die klassische Benutzeroberfläche nutzt für die Navigation und für das Starten von Aktionen vertraute Mechanismen wie Klicks oder Doppelklicks. Abhängig von der aktuellen Situation stehen auch verschiedene Kontextmenüs zur Verfügung (geöffnet mit der rechten Maustaste):
+Die klassische Benutzeroberfläche nutzt für die Navigation und für das Starten von Aktionen vertraute Mechanismen wie Klicks oder Doppelklicks. Abhängig von der aktuellen Situation stehen auch verschiedene Kontextmenüs zur Verfügung (die sich mit der rechten Maustaste öffnen lassen):
 
 ![chlimage_1-11](assets/chlimage_1-11a.png)

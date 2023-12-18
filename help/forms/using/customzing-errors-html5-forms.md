@@ -1,49 +1,49 @@
 ---
 title: Anpassen von Fehlermeldungen für HTML5-Formulare
-description: Erfahren Sie, wie Sie die Anzeige von Fehlermeldungen für HTML5-Formulare anpassen können, einschließlich der Änderung ihrer Position und ihres Erscheinungsbilds.
+description: Erfahren Sie, wie Sie die Anzeige von Fehlermeldungen für HTML5-Formulare anpassen, auch wie Sie deren Position und Erscheinungsbild ändern.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 feature: Mobile Forms
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
 source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '499'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
 # Anpassen von Fehlermeldungen für HTML5-Formulare {#customizing-error-messages-for-html-forms}
 
-In HTML5-Formularen haben die Fehlermeldungen und Warnungen standardmäßig eine feste Position und ein festgelegtes Erscheinungsbild (Schriftart und Farbe). Der Fehler wird nur für ein ausgewähltes Feld angezeigt, und es wird nur ein Fehler angezeigt.
+In den HTML5-Formularen haben Fehlermeldungen und Warnungen standardmäßig eine feste Position und ein festgelegtes Erscheinungsbild (Schrift und Farbe). Der jeweilige Fehler wird nur für ein ausgewähltes Feld ausgegeben und es wird nur ein Fehler angezeigt.
 
-Der Artikel enthält die Schritte zum Anpassen von HTML5 forms-Fehlermeldungen, sodass Sie Folgendes tun können:
+Dieser Artikel enthält die Schritte zum Anpassen von Fehlermeldungen für HTML5-Formulare, sodass Sie folgende Möglichkeiten haben:
 
 * dass das Erscheinungsbild und die Position der Fehlermeldungen geändert werden. Die Fehlermeldung können oberhalb, unterhalb oder an der rechten Seite eines Felds angezeigt werden.
 * Anzeigen von Fehlermeldungen für mehrere Felder jederzeit.
-* den Fehler unabhängig davon anzeigen, ob ein Feld ausgewählt ist oder nicht.
+* Anzeigen des Fehlers unabhängig davon, ob ein Feld ausgewählt ist oder nicht.
 
 ## Anpassen von Fehlermeldungen  {#customizing-error-messages-nbsp}
 
 Laden Sie vor dem Anpassen der Fehlermeldungen das angehängte Paket herunter und extrahieren Sie es (CustomErrorManager-1.0-SNAPSHOT.zip).
 
-Öffnen Sie nach dem Extrahieren des Pakets den Ordner CustomErrorManager-1.0-SNAPSHOT . Sie enthält die Ordner jcr_root und META-INF. Diese Ordner enthalten die CSS- und JS-Dateien, die zum Anpassen der Fehlermeldung erforderlich sind.
+Öffnen Sie den Ordner „CustomErrorManager-1.0-SNAPSHOT“, nachdem Sie das Paket extrahiert haben. Er enthält die Ordner „jcr_root“ und „META-INF“. Diese Ordner enthalten die CSS- und JS-Dateien, die zum Anpassen der Fehlermeldung erforderlich sind.
 
 [Datei laden](assets/customerrormanager-1.0-snapshot.zip)
 
 ### Anpassen der Position der Fehlermeldungen  {#customizing-the-position-of-error-messages-nbsp}
 
-Um die Position der Fehlermeldung anzupassen, fügen Sie eine &lt;div> Tag für jedes Fehler- und Warnfeld, positionieren Sie die &lt;div> -Tag auf der linken oder rechten Seite platzieren und CSS-Stile auf die &lt;div> -Tag. Ausführliche Anweisungen finden Sie im unten aufgeführten Verfahren:
+Fügen Sie zum Anpassen der Fehlermeldungsposition für jedes Fehler- und Warnfeld das Tag &lt;div> hinzu. Positionieren Sie das Tag &lt;div> auf der linken oder rechten Seite und wenden Sie CSS-Stile auf das Tag &lt;div> an. Ausführliche schrittweise Anweisungen finden Sie im unten aufgeführten Verfahren:
 
 1. Navigieren Sie zum Ordner `CustomErrorManager-1.0-SNAPSHOT` und öffnen Sie den Ordner `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript`.
 1. Öffnen Sie die Datei `customErrorManager.js` zum Bearbeiten. Die `markError`-Funktion in der Datei akzeptiert folgende Parameter:
 
    |   |  |
    |---|---|
-   | jqWidget | jqWidget ist das Handle für ein Widget. |
+   | jqWidget | jqWidget ist der Handle für ein Widget. |
    | msg | enthält die Fehlermeldung |
-   | Typ | gibt an, ob es sich um einen Fehler oder eine Warnung handelt |
+   | Typ | Gibt an, ob es sich um einen Fehler oder eine Warnung handelt. |
 
-1. Bei der vordefinierten Implementierung werden rechts im Feld Fehlermeldungen angezeigt. Verwenden Sie folgenden Code, um Fehlermeldungen oben anzuzeigen.
+1. Bei der vorkonfigurierten Implementierung werden Fehlermeldungen auf der rechten Seite des Felds angezeigt. Verwenden Sie folgenden Code, um Fehlermeldungen oben anzuzeigen.
 
    ```javascript
    markError: function (jqWidget, msg, type) {
@@ -74,19 +74,19 @@ Um die Position der Fehlermeldung anzupassen, fügen Sie eine &lt;div> Tag für 
 
 1. Speichern und schließen Sie die Datei.
 1. Navigieren Sie zum Ordner `CustomErrorManager-1.0-SNAPSHOT` und erstellen Sie ein Archiv der Ordner jcr_root und META-INF. Benennen Sie das Archiv in CustomErrorManager-1.0-SNAPSHOT.zip um.
-1. Verwenden Sie Package Manager, um das Paket hochzuladen und zu installieren.
+1. Verwenden Sie Package Manager, um das Paket herunterzuladen und zu installieren.
 
 ## Anzeigen von Fehlermeldungen für mehrere Felder  {#display-error-messages-for-multiple-fields-nbsp}
 
-Verwenden Sie das angehängte Paket, um Fehlermeldungen für alle Felder gleichzeitig anzuzeigen. Verwenden Sie zum Anzeigen einer einzelnen Fehlermeldung das Standardprofil.
+Verwenden Sie das beigefügte Paket, um Fehlermeldungen für alle Felder gleichzeitig anzuzeigen. Verwenden Sie das Standardprofil, um eine einzelne Fehlermeldung anzuzeigen.
 
-### Anpassen der Darstellung von Fehlermeldungen  {#customizing-the-appearance-of-error-messages-nbsp}
+### Anpassen des Erscheinungsbilds von Fehlermeldungen  {#customizing-the-appearance-of-error-messages-nbsp}
 
 1. Navigieren Sie zum Ordner etc\clientlibs\mf-custom-error-manager\CustomErrorManager\css.
 
-1. Öffnen Sie die Datei sample.css zur Bearbeitung. Die CSS-Datei enthält 2 IDs: #customError, #customWarning. Sie können diese IDs verwenden, um verschiedene Eigenschaften wie Farbe und Schriftgröße zu ändern.
+1. Öffnen Sie die Datei „sample.css“ zum Bearbeiten. Die CSS-Datei enthält zwei IDs: „#customError“ und „#customWarning“. Sie können diese IDs verwenden, um andere Eigenschaften zu ändern, z. B. Farbe und Schriftgrad.
 
-   Verwenden Sie den folgenden Code, um die Schriftgröße und Farbe der Fehler-/Warnmeldungen zu ändern.
+   Verwenden Sie den folgenden Code, um Schriftgrad und Farbe der Fehler-/Warnmeldungen zu ändern.
 
    ```css
    #customError {
@@ -111,14 +111,14 @@ Verwenden Sie das angehängte Paket, um Fehlermeldungen für alle Felder gleichz
    ```
 
 1. Speichern und schließen Sie die Datei.
-1. Navigieren Sie zum Ordner CustomErrorManager-1.0-SNAPSHOT und erstellen Sie ein Archiv der Ordner jcr_root und META-INF. Benennen Sie das Archiv in CustomErrorManager-1.0-SNAPSHOT.zip um.
-1. Verwenden Sie Package Manager, um das Paket hochzuladen und zu installieren.
+1. Navigieren Sie zum Ordner „CustomErrorManager-1.0-SNAPSHOT“ und erstellen Sie ein Archiv der Ordner „jcr_root“ und „META-INF“. Benennen Sie das Archiv in CustomErrorManager-1.0-SNAPSHOT.zip um.
+1. Verwenden Sie Package Manager, um das Paket herunterzuladen und zu installieren.
 
 ## Rendern Sie das Formular mit dem neuen Profil.  {#render-the-form-with-the-new-profile-nbsp}
 
 Standardmäßig verwenden HTML5-Formulare ein Standardprofil: `https://&lt;server&gt;/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
 
-Um ein Formular mit den benutzerdefinierten Fehlermeldungen anzuzeigen, rendern Sie das Formular mit dem Fehlerprofil: `https://&lt;server&gt;/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
+Um ein Formular mit den benutzerdefinierten Fehlermeldungen anzuzeigen, rendern Sie das Formular mit dem folgenden Fehlerprofil: `https://&lt;server&gt;/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
 
 >[!NOTE]
 >

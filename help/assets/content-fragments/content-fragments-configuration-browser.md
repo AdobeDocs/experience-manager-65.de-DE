@@ -1,23 +1,23 @@
 ---
-title: Inhaltsfragmente – Konfigurations-Browser
-description: Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurationsbrowser aktivieren, um die leistungsstarken Funktionen der Headless-Bereitstellung von Adobe Experience Manager zu verwenden.
+title: Inhaltsfragmente – Konfigurationsbrowser
+description: Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurationsbrowser aktivieren, um die leistungsstarken Funktionen von Adobe Experience Manager für die Headless-Bereitstellung zu nutzen.
 feature: Content Fragments
 role: User
 exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
 source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '272'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
-# Inhaltsfragmente – Konfigurations-Browser{#content-fragments-configuration-browser}
+# Inhaltsfragmente – Konfigurationsbrowser{#content-fragments-configuration-browser}
 
-Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurationsbrowser aktivieren, um die leistungsstarken Funktionen der Adobe Experience Manager (AEM) Headless-Bereitstellung zu verwenden.
+Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurationsbrowser aktivieren, um die leistungsstarken Funktionen von Adobe Experience Manager (AEM) für die Headless-Bereitstellung zu nutzen.
 
 ## Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz {#enable-content-fragment-functionality-instance}
 
-Bevor Sie Inhaltsfragmente verwenden, verwenden Sie die **Konfigurationsbrowser** um Folgendes zu aktivieren:
+Bevor Sie Inhaltsfragmente verwenden können, müssen Sie den **Konfigurationsbrowser** verwenden, um Folgendes zu aktivieren:
 
 * **Inhaltsfragmentmodelle** – obligatorisch
 * **Persistente GraphQL-Abfragen** – optional
@@ -26,21 +26,21 @@ Bevor Sie Inhaltsfragmente verwenden, verwenden Sie die **Konfigurationsbrowser*
 >
 >Wenn Sie **Inhaltsfragmentmodelle** nicht aktivieren:
 >
->* die **Erstellen** nicht zum Erstellen von Modellen verfügbar.
->* kann [Wählen Sie die Sites-Konfiguration aus, um den zugehörigen Endpunkt zu erstellen.](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint).
+>* ist die Option **Erstellen** für das Erstellen von Modellen nicht verfügbar.
+>* können Sie nicht [die Sites-Konfiguration auswählen, um den entsprechenden Endpunkt zu erstellen](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint).
 
 Um die Funktion für Inhaltsfragmente zu aktivieren, müssen Sie die folgenden Schritte ausführen:
 
-* Aktivieren der Verwendung der Inhaltsfragmentfunktionalität über den Konfigurationsbrowser
+* Aktivieren Sie die Verwendung der Inhaltsfragmentfunktionen im Konfigurationsbrowser.
 * Wenden Sie die Konfiguration auf Ihren Assets-Ordner an.
 
 ### Aktivieren der Funktionen für Inhaltsfragmente im Konfigurations-Browser {#enable-content-fragment-functionality-in-configuration-browser}
 
-nach [Verwenden bestimmter Inhaltsfragmentfunktionen](#creating-a-content-fragment-model), **must** sie zunächst über die **Konfigurationsbrowser**:
+Um [bestimmte Inhaltsfragmentfunktionen](#creating-a-content-fragment-model) zu nutzen, **müssen** Sie diese zunächst über den **Konfigurationsbrowser** aktivieren:
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [Konfigurationsbrowser:](/help/sites-administering/configurations.md#using-configuration-browser).
+>Weitere Informationen finden Sie unter [Konfigurationsbrowser](/help/sites-administering/configurations.md#using-configuration-browser).
 
 1. Navigieren Sie zu **Tools** > **Allgemein** und öffnen Sie dann den **Konfigurations-Browser**.
 
@@ -61,6 +61,6 @@ nach [Verwenden bestimmter Inhaltsfragmentfunktionen](#creating-a-content-fragme
 
 Wenn die Konfiguration **Global** für die Inhaltsfragmentfunktionalität aktiviert ist, gilt sie für jeden Assets-Ordner.
 
-Um andere Konfigurationen (d. h. ohne globale Konfigurationen) mit einem vergleichbaren Asset-Ordner zu verwenden, müssen Sie die Verbindung definieren. Wählen Sie dazu die entsprechende **Konfiguration** in der Registerkarte **Cloud-Services** der **Ordnereigenschaften** des entsprechenden Ordners aus.
+Um andere Konfigurationen (d. h. nicht global) mit einem vergleichbaren Assets-Ordner zu verwenden, müssen Sie die Verbindung definieren. Wählen Sie dazu die entsprechende **Konfiguration** in der Registerkarte **Cloud-Services** der **Ordnereigenschaften** des entsprechenden Ordners aus.
 
 ![Konfiguration anwenden](assets/cfm-conf-02.png)

@@ -6,9 +6,9 @@ role: Admin
 feature: Asset Management
 exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3148'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -260,7 +260,7 @@ Experience Manager enthält Indizes, die für Abfragen verwendet werden. Erstell
 
 ## Konfigurieren der visuellen oder Ähnlichkeitssuche {#configure-visual-similarity-search}
 
-Mit der Funktion für die visuelle Suche können Sie im AEM Assets-Repository mithilfe des Bereichs Adobe-Asset-Link nach visuell ähnlichen Assets suchen. Diese Funktion ist ab Version 6.5.0 verfügbar, und es werden nur die indizierten Assets durchsucht. Weitere Informationen finden Sie unter [Konfigurieren der visuellen Suche](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=de#configvisualsearch).
+Mit der Funktion „Visuelle Suche“ können Sie über das Bedienfeld „Adobe Asset Link“ im AEM Assets-Repository nach visuell ähnlichen Assets suchen. Diese Funktion ist ab Version 6.5.0 verfügbar, und es werden nur die indizierten Assets durchsucht. Weitere Informationen finden Sie unter [Konfigurieren der visuellen Suche](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=de#configvisualsearch).
 
 ## Erzeugen von FPO (For Placement Only)-Ausgabedarstellungen (also nur für die Platzierung) für Adobe InDesign {#fpo-renditions}
 

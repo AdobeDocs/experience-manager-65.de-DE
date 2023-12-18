@@ -3,9 +3,9 @@ title: Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für
 description: Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für Inhaltsfragmente
 exl-id: b4cc1311-1ef7-409a-bd41-0456519b3436
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '257'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -32,11 +32,11 @@ Es gibt drei Methoden, mit denen Sie Metadaten und Tags hinzufügen können:
 
   ![Inhaltsfragment erstellen – Name angeben](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* Die **Varianten** im Tab Inhaltsfragment-Editor können Sie vordefinierte **Tags** aus Ihrem Projekt:
+* Mit der Registerkarte **Varianten** des Inhaltsfragmenteditors können Sie vordefinierte **Tags** aus Ihrem Projekt hinzufügen:
 
-  ![Inhaltsfragmente-Editor – Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+  ![Inhaltsfragmenteditor – Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
-* Die **Metadaten** auf der Registerkarte &quot;Inhaltsfragment-Editor&quot;können Sie beide Metadatenfelder und vordefinierte **Tags** aus Ihrem Projekt:
+* Mit der Registerkarte **Metadaten** des Inhaltsfragmenteditors können Sie sowohl verschiedene Felder mit Metadaten als auch vordefinierte **Tags** aus Ihrem Projekt hinzufügen:
 
   ![Inhaltsfragmente-Editor – Metadaten](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 

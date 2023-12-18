@@ -1,13 +1,13 @@
 ---
 title: Hinzufügen und Konfigurieren von Benutzenden
-description: Mit den Benutzerverwaltungseinstellungen in der Administration Console können Sie Benutzer erstellen oder löschen und andere Benutzereinstellungen konfigurieren.
+description: Mit den Benutzerverwaltungs-Einstellungen in der Administration Console können Sie Benutzende erstellen oder löschen sowie weitere Benutzereinstellungen konfigurieren.
 contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1733'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Vermeiden Sie den Unterstrich (_) in kanonischen Namen z. B. `sample_user`. Wen
 
 Wenn Sie eine lokale oder Hybrid-Domain verwenden, werden Informationen zu Benutzern nur in der User Management-Datenbank gespeichert. Legen Sie für diese Benutzer bzw. Benutzerinnen den Geschäftskalenderschlüssel auf eine Zeichenfolge fest. Ordnen Sie dann den Geschäftskalenderschlüssel (die Zeichenfolge) einem Geschäftskalender im Arbeitsablauf für Formulare zu.
 
-Wenn Sie eine Unternehmens-Domain verwenden, befinden sich Informationen zu Benutzern in einem Speichersystem von Drittanbietern (z. B. einem LDAP-Ordner). User Management synchronisiert Benutzerinformationen aus dem Verzeichnis mit der User Management-Datenbank. Mit dieser Funktion können Sie einen Geschäftskalenderschlüssel einem Feld im LDAP-Ordner zuordnen. Angenommen, jeder Benutzerdatensatz in Ihrem Verzeichnis enthält das Feld „Land“, und Sie möchten Geschäftskalender auf Grundlage des Landes zuweisen, in dem sich die Benutzerin bzw. der Benutzer befindet. In diesem Fall geben Sie den Feldnamen „Land“ als Wert für die Einstellung „Geschäftskalenderschlüssel“ an. Anschließend können Sie die Geschäftskalenderschlüssel (die für das Feld „Land“ im LDAP-Verzeichnis definierten Werte) Geschäftskalendern im Arbeitsablauf für Formulare zuordnen.
+Wenn Sie eine Unternehmens-Domain verwenden, befinden sich Informationen zu Benutzern in einem Speichersystem von Drittanbietern (z. B. einem LDAP-Ordner). User Management synchronisiert Benutzerinformationen aus dem Verzeichnis mit der User Management-Datenbank. Mit dieser Funktion können Sie einen Geschäftskalenderschlüssel einem Feld im LDAP-Verzeichnis zuordnen. Angenommen, jeder Benutzerdatensatz in Ihrem Verzeichnis enthält das Feld „Land“, und Sie möchten Geschäftskalender auf Grundlage des Landes zuweisen, in dem sich die Benutzerin bzw. der Benutzer befindet. In diesem Fall geben Sie den Feldnamen „Land“ als Wert für die Einstellung „Geschäftskalenderschlüssel“ an. Anschließend können Sie die Geschäftskalenderschlüssel (die für das Feld „Land“ im LDAP-Verzeichnis definierten Werte) Geschäftskalendern im Arbeitsablauf für Formulare zuordnen.
 
 Weitere Informationen zu Geschäftskalendern, einschließlich der Zuordnung von Geschäftskalenderschlüsseln zu Geschäftskalendern, finden Sie unter [Konfigurieren von Geschäftskalendern](/help/forms/using/admin-help/configuring-business-calendars.md#configuring-business-calendars).
 
@@ -152,7 +152,7 @@ Vermeiden Sie das Erstellen von Benutzernamen, die mit einem Nummernzeichen (#) 
 
 >[!NOTE]
 >
->Mit AEM Forms on JEE können Benutzerinnen und Benutzer des AEM Forms-Add-ons, das auf einem OSGi ausgeführt wird, auch als AEM-Benutzerin bzw. -Benutzer erkannt werden. Dies ist in Fällen erforderlich, in denen Single Sign-on zwischen AEM Forms on JEE und dem AEM Forms-Add-On auf einem OSGi erforderlich ist (z. B. HTML Workspace). Der oben genannte Löschvorgang entfernt eine Benutzerin bzw. einen Benutzer nur aus AEM Forms on JEE. DIe Person wird nicht aus dem AEM Forms-Add-on gelöscht, das in der OSGi-Umgebung ausgeführt wird. Jeder Anmeldeversuch, der nach dem Löschen der Person unternommen wurde (Anmeldeversuch beim AEM Forms-Add-on JEE-Server oder AEM Forms-Add-On in der OSGi-Umgebung), wird jedoch verweigert.
+>Mit AEM Forms on JEE können Benutzerinnen und Benutzer des AEM Forms-Add-ons, das auf einem OSGi ausgeführt wird, auch als AEM-Benutzerin bzw. -Benutzer erkannt werden. Dies ist in Fällen erforderlich, in denen Single Sign-on zwischen AEM Forms on JEE und dem AEM Forms-Add-On auf einem OSGi erforderlich ist (z. B. HTML Workspace). Der oben genannte Löschvorgang entfernt eine Benutzerin bzw. einen Benutzer nur aus AEM Forms on JEE. Die Person wird nicht aus dem AEM Forms-Add-on gelöscht, das in der OSGi-Umgebung ausgeführt wird. Jeder Anmeldeversuch, der nach dem Löschen der Person unternommen wurde (Anmeldeversuch beim AEM Forms-Add-on JEE-Server oder AEM Forms-Add-On in der OSGi-Umgebung), wird jedoch verweigert.
 
 ## Erstellen eines benutzerdefinierten Anmeldungsfehler-Handlers {#create-custom-login-error-handler}
 

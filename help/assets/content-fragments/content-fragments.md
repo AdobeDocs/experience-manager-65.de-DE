@@ -1,19 +1,19 @@
 ---
 title: Arbeiten mit Inhaltsfragmenten
-description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Headless-Bereitstellung eignen.
+description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können – ideal für die Headless-Bereitstellung.
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
 source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1972'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 # Arbeiten mit Inhaltsfragmenten {#working-with-content-fragments}
 
-Mit Adobe Experience Manager (AEM) können Sie Inhaltsfragmente entwerfen, erstellen, kuratieren und [seitenunabhängige Inhalte veröffentlichen](/help/sites-authoring/content-fragments.md). Sie ermöglichen die Vorbereitung von Inhalten, die an mehreren Orten/über mehrere Kanäle hinweg verwendet werden können und ideal für die Headless-Bereitstellung sind.
+Mit Adobe Experience Manager (AEM) können Sie mithilfe von Inhaltsfragmenten seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und [veröffentlichen](/help/sites-authoring/content-fragments.md). Sie ermöglichen Ihnen die Vorbereitung von Inhalten für die Verwendung an mehreren Orten/über mehrere Kanäle, was ideal für die Headless-Bereitstellung ist.
 
 Inhaltsfragmente enthalten strukturierten Inhalt:
 
@@ -21,12 +21,12 @@ Inhaltsfragmente enthalten strukturierten Inhalt:
 * Die Struktur kann variieren:
    * Einfach
       * Beispiel: ein einzelnes, mehrzeiliges Textfeld.
-      * Wird zur Vorbereitung einfacher Inhalte für die Verwendung bei der Seitenbearbeitung verwendet.
+      * Dient der Vorbereitung einfacher Inhalte für die Verwendung beim Verfassen von Seiten.
    * Komplex
-      * Eine Kombination aus vielen Feldern unterschiedlicher Datentypen, darunter Text, Zahl, boolescher Wert, Daten und Uhrzeit.
-      * Wird entweder zur Vorbereitung strukturierterer Inhalte für die Seitenbearbeitung oder zur Bereitstellung an Ihre Anwendung verwendet.
+      * Eine Kombination aus vielen Feldern unterschiedlicher Datentypen, darunter Text, Zahl, boolesche Werte, Datum und Uhrzeit.
+      * Wird entweder für die Vorbereitung von stärker strukturierten Inhalten für die Erstellung von Seiten oder für die Bereitstellung an Ihre Anwendung verwendet.
    * Verschachtelt
-      * Mit den verfügbaren Referenzdatentypen können Sie Ihren Inhalt verschachteln.
+      * Mit den verfügbaren Referenzdatentypen können Sie Ihre Inhalte verschachteln.
       * Wird in der Regel für die Bereitstellung an Ihr Programm verwendet.
 
 Mit der Sling Model (JSON)-Exportfunktion der AEM-Kernkomponenten können Inhaltsfragmente auch im JSON-Format bereitgestellt werden. Diese Form der Bereitstellung:
@@ -34,11 +34,11 @@ Mit der Sling Model (JSON)-Exportfunktion der AEM-Kernkomponenten können Inha
 * bietet Ihnen die Möglichkeit, mithilfe der Komponente zu bestimmen, welche Fragmentelemente bereitgestellt werden sollen
 * ermöglicht durch das Hinzufügen mehrerer Inhaltsfragment-Kernkomponenten auf der für die API-Bereitstellung verwendeten Seite eine Bereitstellung in größerem Umfang
 
-Diese und die folgenden Seiten behandeln die Aufgaben zum Erstellen, Konfigurieren, Verwalten und Verwenden Ihrer Inhaltsfragmente:
+Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurieren, Verwalten und Verwenden von Inhaltsfragmenten beschrieben:
 
 * [Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz](/help/assets/content-fragments/content-fragments-configuration-browser.md)
-* [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md) - Aktivieren, Erstellen und Definieren Ihrer Modelle
-* [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md) - Erstellen Sie Ihre Inhaltsfragmente und bearbeiten, veröffentlichen und verweisen Sie dann auf
+* [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md): Aktivieren, Erstellen und Definieren Ihrer Modelle
+* [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md): Erstellen Sie Inhaltsfragmente und bearbeiten, veröffentlichen und referenzieren Sie sie danach.
 * [Varianten – Erstellen von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-variations.md) – Erstellen Sie das Inhaltsfragment und erstellen Sie Varianten der Vorlage
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) – Verwendung der Markdown-Syntax für Ihr Fragment
 * [Verwenden verknüpfter Inhalte](/help/assets/content-fragments/content-fragments-assoc-content.md) – Hinzufügen verknüpfter Inhalte
@@ -47,7 +47,7 @@ Diese und die folgenden Seiten behandeln die Aufgaben zum Erstellen, Konfigurier
 
 >[!NOTE]
 >
->Diese Seiten können wie folgt gelesen werden:
+>Diese Seiten können mit Folgendem gelesen werden:
 >
 >* [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md).
 >* [Anpassen und Erweitern von Inhaltsfragmenten](/help/sites-developing/customizing-content-fragments.md)
@@ -60,7 +60,7 @@ Die Anzahl der Kommunikationskanäle nimmt jährlich zu. Typischerweise beziehen
 * Physischer Kanal; z. B. Desktop, Mobilgerät.
 * Form der Bereitstellung in einem physischen Kanal; z. B. die Produktdetailseite, die Produktkategorieseite für Desktops oder „mobiles Web“, „Mobile App“ für Mobilgeräte.
 
-Sie möchten jedoch (wahrscheinlich) nicht denselben Inhalt für alle Kanäle verwenden - Sie müssen Ihren Inhalt entsprechend dem jeweiligen Kanal optimieren.
+Wahrscheinlich möchten Sie jedoch nicht dieselben Inhalte für alle Kanäle verwenden, daher müssen Sie Ihre Inhalte je nach Kanal optimieren.
 
 Inhaltsfragmente ermöglichen Ihnen Folgendes:
 
@@ -69,7 +69,7 @@ Inhaltsfragmente ermöglichen Ihnen Folgendes:
 * Inhaltspools für mehrere Kanäle erstellen
 * Inhaltsvarianten für bestimmte Kanäle entwerfen
 * Bilder durch Einfügen von Assets (Fragmente mit gemischten Medien) zu Texten hinzufügen
-* Erstellen Sie verschachtelte Inhalte, die die Komplexität Ihrer Daten widerspiegeln.
+* Erstellen Sie verschachtelte Inhalte, um die Komplexität Ihrer Daten widerzuspiegeln.
 
 Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über verschiedene Kanäle bereitzustellen.
 
@@ -77,17 +77,17 @@ Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über
 >
 >**Inhaltsfragmente** und **[Experience Fragments](/help/sites-authoring/experience-fragments.md)** sind unterschiedliche Funktionen in AEM:
 >
->* **Inhaltsfragmente** sind redaktionelle Inhalte, mit denen u. a. auf strukturierte Daten wie Texte, Zahlen und Daten zugegriffen werden kann. Es handelt sich um reine Inhalte mit Definition und Struktur, aber ohne zusätzliches visuelles Design und/oder Layout.
+>* **Inhaltsfragmente** sind redaktionelle Inhalte, mit denen u. a. auf strukturierte Daten wie Texte, Zahlen und Datumsangaben zugegriffen werden kann. Es handelt sich um reine Inhalte mit Definition und Struktur, aber ohne zusätzliches visuelles Design und/oder Layout.
 >
 >* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
 >
 >Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 >
->Weitere Informationen finden Sie unter [Grundlagen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
+>Weitere Details finden Sie in den [Informationen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
 
 >[!NOTE]
 >
->Vor AEM 6.3 wurden Inhaltsfragmente mit Vorlagen anstelle von Modellen erstellt. Vorlagen sind nicht mehr zum Erstellen von Fragmenten verfügbar, aber alle mit einer solchen Vorlage erstellten Fragmente werden weiterhin unterstützt.
+>Vor AEM 6.3 wurden Inhaltsfragmente mithilfe von Vorlagen anstelle von Modellen erstellt. Vorlagen sind nicht mehr für das Erstellen von Fragmenten verfügbar, aber Fragmente, die mit einer solchen Vorlage erstellt wurden, werden weiterhin unterstützt.
 
 ## Inhaltsfragmente und Content Services {#content-fragments-and-content-services}
 
@@ -101,9 +101,9 @@ Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditio
 
 Der Versand erfolgt im JSON-Format mit dem JSON-Exporter.
 
-AEM-Inhaltsfragmente können zur Beschreibung und Verwaltung strukturierter Inhalte verwendet werden. Strukturierte Inhalte werden in Modellen definiert, die verschiedene Inhaltstypen enthalten können, darunter Text, numerische Daten, boolesche Werte, Datum und Uhrzeit und mehr.
+AEM-Inhaltsfragmente können zur Beschreibung und Verwaltung strukturierter Inhalte verwendet werden. Strukturierte Inhalte werden in Modellen definiert, die eine Vielzahl von Inhaltstypen enthalten können, darunter Text, numerische Daten, boolesche Werte, Datum und Uhrzeit.
 
-Zusammen mit der JSON-Exportfunktion der AEM-Kernkomponenten kann dieser strukturierte Inhalt dann zur Bereitstellung von AEM-Inhalten auf anderen Kanälen als AEM-Seiten verwendet werden.
+Zusammen mit der JSON-Exportfunktion der AEM-Kernkomponenten können diese strukturierten Inhalte dann zur Bereitstellung von AEM-Inhalten auf anderen Kanälen als AEM-Seiten verwendet werden.
 
 <!--
 >[!NOTE]
@@ -130,7 +130,7 @@ Inhaltsfragmente werden:
    * Inhaltsfragmente (und deren Varianten) können in der Konsole **Assets** erstellt und verwaltet werden.
    * Im Inhaltsfragment-Editor erstellt und bearbeitet.
 
-* Wird im [Seiten-Editor mit der Inhaltsfragment-Komponente](/help/sites-authoring/content-fragments.md) (Verweiskomponente):
+* Im [Seiteneditor anhand der Inhaltsfragmentkomponente](/help/sites-authoring/content-fragments.md) (Verweiskomponente) verwendet:
 
    * Die Komponente **Inhaltsfragment** steht für Seitenautoren zur Verfügung. Sie ermöglicht das Erstellen von Verweisen für sowie das Bereitstellen des erforderlichen Inhaltsfragments im HTML- oder JSON-Format.
 
@@ -138,27 +138,27 @@ Inhaltsfragmente werden:
 
 Inhaltsfragmente sind eine Inhaltsstruktur mit folgenden Eigenschaften:
 
-* Sie haben kein Layout oder Design (im Rich-Text-Modus ist eine Textformatierung möglich).
-* Sie haben eine oder mehrere [Bestandteile](#constituent-parts-of-a-content-fragment).
+* Sie weisen kein Layout oder Design auf (eine gewisse Textformatierung ist im Rich-Text-Modus möglich).
+* Sie haben einen oder mehrere [Bestandteile](#constituent-parts-of-a-content-fragment).
 * Kann Bilder [enthalten oder mit Bildern verbunden sein](#fragments-with-visual-assets).
 * Bei Referenzierung auf einer Seite können [Übergangsinhalte](#in-between-content-when-page-authoring-with-content-fragments) verwendet werden.
-* Sie sind unabhängig vom Bereitstellungsmechanismus (d. h. Seite, Kanal).
+* Sie sind unabhängig vom Bereitstellungsmechanismus (d. h. Seite, Kanal).
 
 ### Fragmente mit visuellen Assets {#fragments-with-visual-assets}
 
 Um Autoren eine bessere Kontrolle über eigene Inhalte zu ermöglichen, können Bilder zu einem Inhaltsfragment hinzugefügt und/oder darin integriert werden.
 
-Assets können auf verschiedene Weise mit einem Inhaltsfragment verwendet werden. Jede davon hat eigene Vorteile:
+Assets können auf verschiedene Weise mit einem Inhaltsfragment verwendet werden, mit jeweiligen Vorteilen:
 
 * In ein Fragment **eingefügte Assets** (Fragmente mit gemischten Medien)
 
-   * gehören zum Fragment (siehe [Bestandteile von Inhaltsfragmenten](#constituent-parts-of-a-content-fragment)).
+   * Sind ein Bestandteil des Fragments (weitere Informationen finden Sie unter [Bestandteile eines Inhaltsfragments](#constituent-parts-of-a-content-fragment)).
    * definieren die Position des Assets;
    * Weitere Informationen finden Sie unter [Einfügen von Assets in Fragmente](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) im Fragment-Editor.
 
   >[!NOTE]
   >
-  >Die in das Inhaltsfragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz verbunden. Wenn das Fragment zu einer Seite hinzugefügt wird, werden diese Assets in Bezug auf diesen Absatz verschoben, wenn Übergangsinhalte hinzugefügt werden.
+  >Die in das Inhaltsfragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz verbunden. Beim Hinzufügen des Fragments zu einer Seite werden diese Assets in Beziehung zu diesem Absatz verschoben, wenn Übergangsinhalte hinzugefügt werden.
 
 * **Zugehörige Inhalte**
 
@@ -184,11 +184,11 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 * **Fragmentelementen**
 
    * Elemente korrelieren mit den Datenfeldern, die Inhalte enthalten.
-   * Sie verwenden ein Inhaltsmodell, um das Inhaltsfragment zu erstellen. Die im Modell angegebenen Elemente (Felder) definieren die Struktur des Fragments. Diese Elemente (Felder) können verschiedene Datentypen aufweisen.
+   * Sie verwenden ein Inhaltsmodell, um das Inhaltsfragment zu erstellen. Die im Modell angegebenen Elemente (Felder) definieren die Struktur des Fragments. Diese Elemente (Felder) können von verschiedenen Datentypen sein.
 
 * **Fragmentabsätze**
 
-   * Textblöcke, die häufig mehrzeilig sind und als einzelne Entitäten getrennt sind.
+   * Textblöcke, häufig mehrzeilig, die als einzelne Entitäten getrennt sind.
 
    * In den Modi [Rich-Text](/help/assets/content-fragments/content-fragments-variations.md#rich-text) und [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown) kann ein Absatz als Kopfzeile formatiert werden. In diesem Fall gehören dieser und der folgende Absatz als eine Einheit zusammen.
 
@@ -200,7 +200,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
    * sind in das Absatzsystem des Fragments eingebettet;
    * können formatiert werden, wenn das [Fragment auf einer Seite verwendet/referenziert wird](/help/sites-authoring/content-fragments.md);
    * können nur über den Fragment-Editor einem Fragment hinzugefügt, daraus gelöscht oder darin verschoben werden; diese Aktionen können nicht im Seiten-Editor durchgeführt werden;
-   * Kann nur zu einem Fragment hinzugefügt, daraus gelöscht oder darin verschoben werden, indem die Variable [Rich-Text-Format im Fragment-Editor](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+   * können nur durch das [Rich-Text-Format im Fragmenteditor](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) zu einem Fragment hinzugefügt, daraus gelöscht oder darin verschoben werden;
    * können nur zu mehrzeiligen Textelementen hinzugefügt werden (beliebiger Fragmenttyp);
    * werden mit dem vorangehenden Text (Absatz) verbunden;
 
@@ -214,7 +214,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 
 * **Zugehörige Inhalte**
 
-   * Hierbei handelt es sich um externen Inhalt für das Fragment, der jedoch von redaktioneller Relevanz ist. Normalerweise Bilder, Videos oder andere Fragmente.
+   * Hierbei handelt es sich um externen Inhalt für das Fragment, der jedoch von redaktioneller Relevanz ist. In der Regel sind dies Bilder, Videos oder andere Fragmente.
    * Die einzelnen Assets innerhalb der Sammlung können mit dem Fragment im Seiten-Editor verwendet werden, wenn es einer Seite hinzugefügt wird. Zugehörige Inhalte sind also optional, abhängig von den Anforderungen des jeweiligen Kanals.
    * Die Assets sind [mit Fragmenten über Sammlungen verknüpft](/help/assets/content-fragments/content-fragments-assoc-content.md). Mithilfe verknüpfter Sammlungen kann der Autor entscheiden, welche Assets beim Bearbeiten einer Seite verwendet werden sollen.
 
@@ -239,7 +239,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 
 * **Vorlage**
 
-   * Ein Teil des Fragments
+   * Ein Bestandteil des Fragments
 
       * Jedes Inhaltsfragment hat eine Vorlageninstanz.
       * Die Vorlage kann gelöscht werden.
@@ -249,8 +249,8 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 
 * **Varianten**
 
-   * Ausgabeformate von Fragmenttext, die für einen redaktionellen Zweck spezifisch sind. Sie können mit einem Kanal verbunden sein, sind jedoch nicht obligatorisch. Sie können auch für lokale Ad-hoc-Änderungen verwendet werden.
-   * werden als Kopien von **Master**, können dann aber nach Bedarf bearbeitet werden. Es gibt Inhaltsüberschneidungen zwischen den Varianten selbst.
+   * Ausgabedarstellungen von Fragmenttext, die für einen bestimmten redaktionellen Zweck bestimmt sind; können sich auf einen Kanal beziehen, sind aber nicht obligatorisch; können auch für lokale Ad-hoc-Änderungen verwendet werden.
+   * Werden als Kopien einer **primären Version** erstellt, können dann aber nach Bedarf bearbeitet werden; zwischen den Varianten selbst gibt es inhaltliche Überschneidungen.
    * können beim Erstellen von Fragmenten definiert werden;
    * werden im Fragment gespeichert, um die Streuung von Inhaltskopien zu vermeiden;
    * können mit der Vorlage [synchronisiert](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) werden, wenn der Vorlageninhalt aktualisiert wurde;
@@ -262,7 +262,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 Übergangsinhalte:
 
 * Sind für die Verwendung im Seiteneditor bei der Arbeit mit Inhaltsfragmenten verfügbar.
-* Is [zusätzlicher Inhalt, der im Fluss eines Fragments hinzugefügt wird](/help/sites-authoring/content-fragments.md#adding-in-between-content) nachdem sie auf einer Seite verwendet oder referenziert wurde.
+* Hierbei handelt es sich um [zusätzlichen Inhalt, der im Fluss eines Fragments hinzugefügt wird](/help/sites-authoring/content-fragments.md#adding-in-between-content), sobald dieses auf einer Seite verwendet/referenziert wird.
 * Sind für die Verwendung im [Seiteneditor bei der Arbeit mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md) verfügbar.
 * Übergangsinhalte können zu jedem beliebigen Fragment hinzugefügt werden, in dem nur ein Element sichtbar ist.
 * Zugehörige Inhalte sowie Assets und/oder Komponenten des entsprechenden Browsers können eingesetzt werden.
@@ -273,7 +273,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 
 ### Voraussetzungen für Fragmente {#required-by-fragments}
 
-Beachten Sie beim Erstellen von Inhaltsfragmenten Folgendes:
+Bei der Erstellung von Inhaltsfragmenten sollten Sie Folgendes beachten:
 
 * **Inhaltsmodelle**
 
@@ -286,16 +286,16 @@ Beachten Sie beim Erstellen von Inhaltsfragmenten Folgendes:
    * Autoren können die definierte Struktur nicht ändern, wenn sie den Fragmentinhalt erstellen.
    * Änderungen, die nach dem Erstellen von abhängigen Inhaltsfragmenten an einem Modell vorgenommen wurden, können sich auf diese Inhaltsfragmente auswirken.
 
-Um Ihre Inhaltsfragmente für die Seitenbearbeitung zu verwenden, benötigen Sie außerdem:
+Um Ihre Inhaltsfragmente zum Erstellen von Seiten zu verwenden, benötigen Sie außerdem Folgendes:
 
-* **Inhaltsfragment-Komponente**
+* **Inhaltsfragmentkomponente**
 
-   * Instrumentell bei der Bereitstellung des Fragments im HTML- und/oder JSON-Format.
+   * Wichtig für die Übermittlung des Fragments im HTML- und/oder JSON-Format.
    * Erforderlich zum [Referenzieren des Fragments auf einer Seite](/help/sites-authoring/content-fragments.md).
-   * Zuständig für Layout und Bereitstellung eines Fragments, d. h. Kanäle.
-   * Fragmente benötigen eine oder mehrere dedizierte Komponenten, um das Layout zu definieren und einige oder alle Elemente/Varianten und zugehörigen Inhalte bereitzustellen.
-   * Wenn Sie ein Fragment bei der Bearbeitung auf eine Seite ziehen, wird die erforderliche Komponente automatisch zugewiesen.
+   * Zuständig für das Layout und die Bereitstellung eines Fragments, d. h. Kanäle.
+   * Fragmente benötigen eine oder mehrere dedizierte Komponenten zur Definition des Layouts sowie zur Bereitstellung einiger oder aller Elemente/Varianten und zugehörigen Inhalte.
+   * Durch Ziehen eines Fragments auf eine Seite während der Bearbeitung wird die erforderliche Komponente automatisch zugewiesen.
 
 ## Anwendungsbeispiel {#example-usage}
 
-Ein Fragment samt seinen Elementen und Varianten kann zur Erstellung von kohärentem Inhalt für verschiedene Kanäle verwendet werden. Beim Entwerfen Ihres Fragments müssen Sie überlegen, was verwendet wird und wo es verwendet wird.
+Ein Fragment samt seinen Elementen und Varianten kann zur Erstellung von kohärentem Inhalt für verschiedene Kanäle verwendet werden. Bei der Gestaltung Ihres Fragments müssen Sie berücksichtigen, was verwendet wird und wo es verwendet wird.

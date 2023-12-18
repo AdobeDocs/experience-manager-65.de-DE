@@ -1,36 +1,36 @@
 ---
 title: "Microsoft SQL Server-Datenbank: Konfiguration optimieren"
-description: Erfahren Sie, wie Sie die Konfiguration Ihrer Microsoft SQL Server-Datenbank anpassen können.
+description: Erfahren Sie, wie Sie die Konfiguration Ihrer Microsoft SQL Server-Datenbank optimieren können.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS, SG_AEMFORMS
 exl-id: 9c570827-86e2-47d5-b8ae-66c0767bff2e
 source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '293'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 # Microsoft SQL Server-Datenbank: Konfiguration optimieren {#microsoft-sql-server-database-fine-tuning-the-configuration}
 
-Bei Verwendung von Microsoft SQL Server sollten Sie die Standardkonfigurationseinstellungen ändern. Klicken Sie mit der rechten Maustaste auf den lokalen Server in Oracle Enterprise Manager, um auf das Dialogfeld &quot;Eigenschaften&quot;zuzugreifen.
+Bei Verwendung von Microsoft SQL Server sollten Sie die Standardkonfigurationseinstellungen ändern. Klicken Sie in Oracle Enterprise Manager mit der rechten Maustaste auf den lokalen Server, um auf das Eigenschaftendialogfeld zuzugreifen.
 
 ## Speichereinstellungen {#memory-settings}
 
-Ändern Sie die minimale Speicherzuordnung in eine möglichst große Zahl. Wenn die Datenbank auf einem separaten Computer ausgeführt wird, verwenden Sie den gesamten Speicher. Die Standardeinstellungen weisen nicht aggressiv Speicher zu, was die Leistung in fast allen Datenbanken behindert. Sie sollten am aggressivsten sein, wenn es darum geht, Speicher auf Produktionsmaschinen zuzuweisen.
+Ändern Sie die minimale Arbeitsspeicherzuweisung in einen möglichst großen Wert. Wenn die Datenbank auf einem separaten Computer ausgeführt wird, weisen Sie den gesamten Arbeitsspeicher zu. Die Standardeinstellungen weisen Arbeitsspeicher nicht offensiv zu, wodurch die Leistung nahezu aller Datenbanken beeinträchtigt wird. Auf Computern in Produktionsumgebungen muss Arbeitsspeicher im höchstmöglichen Maß zugeordnet werden.
 
 ## Prozessoreinstellungen {#processor-settings}
 
-Ändern Sie die Prozessoreinstellungen und aktivieren Sie vor allem das Kontrollkästchen SQL Server Priority On Windows aktivieren , damit der Server so viele Zyklen wie möglich verwendet. Die Einstellung &quot;NT Fibers verwenden&quot;ist weniger wichtig, Sie können sie jedoch auch auswählen.
+Ändern Sie die Prozessoreinstellungen und aktivieren Sie unbedingt das Kontrollkästchen „SQL Server-Priorität unter Windows höher stufen“, damit der Server möglichst viele Zyklen nutzen kann. Die Einstellung „Windows NT-Fibers verwenden“ ist weniger wichtig, sollte aber dennoch aktiviert werden.
 
 ## Datenbankeinstellungen {#database-settings}
 
-Ändern Sie die Datenbankeinstellungen. Die wichtigste Einstellung ist das Wiederherstellungsintervall , das die maximale Wartezeit auf die Wiederherstellung nach einem Absturz angibt. Die Standardeinstellung ist eine Minute. Die Verwendung eines größeren Werts von 5 bis 15 Minuten verbessert die Leistung, da der Server mehr Zeit hat, Änderungen aus dem Datenbankprotokoll wieder in die Datenbankdateien zu schreiben.
+Ändern Sie die Datenbankeinstellungen. Die wichtigste Einstellung ist „Wiederherstellungsintervall“. Damit wird die maximale Wartezeit bis zur Wiederherstellung nach einem Datenbankabsturz angegeben. Die Standardeinstellung ist eine Minute. Ein höherer Wert (von 5 bis 15 Minuten) verbessert die Leistung, da dadurch der Server mehr Zeit hat, Änderungen aus dem Datenbankprotokoll zurück in die Datenbankdateien zu schreiben.
 
 >[!NOTE]
 >
->Diese Einstellung beeinträchtigt das Transaktionsverhalten nicht, da nur die Länge der Wiederholung der Protokolldatei geändert wird, die beim Start durchgeführt werden muss.
+>Diese Einstellung hat keinen negativen Einfluss auf das Transaktionsverhalten, da dadurch nur die Dauer des Zurückspielens der Protokolldatei geändert wird, das beim Systemstart erfolgen muss.
 
-Legen Sie die Größe von &quot;Zugewiesener Speicherplatz&quot;sowohl für das Protokoll als auch für die Datendatei auf einen viel größeren Wert fest als die Anfangsdatenbank. Überlegen Sie, wie stark die Datenbank im Laufe eines Jahres wachsen kann. Idealerweise werden die Protokoll- und Datendateien zusammenhängend zugeordnet, sodass die Daten nicht auf der gesamten Festplatte fragmentiert werden.
+Legen Sie die Größe von „Reservierter Speicherplatz“ sowohl für die Protokoll- als auch für die Datendatei auf einen wesentlich höheren Wert fest als in der Ausgangsdatenbank. Berücksichtigen Sie, wie stark die Datenbank im Verlauf eines Jahres anwachsen kann. Im Idealfall werden die Protokoll- und Datenbankdateien einem zusammenhängenden Block zugeordnet, damit die Daten nicht fragmentiert auf dem gesamten Datenträger verteilt werden.

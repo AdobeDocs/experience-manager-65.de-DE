@@ -1,21 +1,21 @@
 ---
 title: Minimierung der JavaScript-Dateien
-description: Anleitung zum Generieren von minimiertem Code nach AEM Forms Workspace-Anpassungen zur Optimierung der JS-Dateien für das Web.
+description: Anweisungen zum Generieren von minimiertem Code nach AEM Forms Workspace-Anpassungen zur Optimierung der JS-Dateien für das Web.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: d88c6831-8ae9-426d-acb5-2a7e066ad158
 source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '188'
-ht-degree: 29%
+ht-degree: 100%
 
 ---
 
 # Minimierung der JavaScript-Dateien {#minification-of-the-javascript-files}
 
-Durch die Minimierung werden die redundanten Zeichen, wie Leerzeichen, neue Zeilen und Kommentare, aus dem Quellcode entfernt. Dies verbessert die Leistung, indem die Größe des Codes verringert wird. Die Minimierung wirkt sich zwar nicht auf die Funktionalität aus, verringert jedoch die Lesbarkeit des Codes.
+Durch die Minimierung werden die redundanten Zeichen, wie Leerzeichen, neue Zeilen und Kommentare, aus dem Quell-code entfernt. Dies verbessert die Leistung, indem die Größe des Codes verringert wird. Die Minimierung wirkt sich zwar nicht auf die Funktionalität aus, verringert jedoch die Lesbarkeit des Codes.
 
 Gehen Sie wie folgt vor, um minimierten Code für semantische Änderungen zu generieren.
 
@@ -27,7 +27,7 @@ Gehen Sie wie folgt vor, um minimierten Code für semantische Änderungen zu gen
 
 1. Aktualisieren Sie die Pfade in `main.js`, die sich unter client-html/src/main/webapp/js befinden, für hinzugefügte bzw. aktualisierte Modelle oder Ansichten.
 
-   Wenn beispielsweise ein neues Sharequeue-Modell hinzugefügt wird, z. B. mySharequeue, ändern Sie:
+   Ändern Sie zum Beispiel nach Hinzufügen eines neuen Sharequeue-Modells wie mySharequeue das Folgende:
 
    ```javascript
    sharequeuemodel : pathprefix + 'runtime/models/sharequeue',
@@ -41,7 +41,7 @@ Gehen Sie wie folgt vor, um minimierten Code für semantische Änderungen zu gen
 
 1. Aktualisieren Sie `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,`, falls es eine Änderung/Hinzufügung des Alias in `main.js` gibt.
 
-   Wenn beispielsweise ein neues Sharequeue-Modell hinzugefügt wird, z. B. mySharequeue, ändern Sie:
+   Ändern Sie zum Beispiel nach Hinzufügen eines neuen Sharequeue-Modells wie mySharequeue das Folgende:
 
    ```xml
    <sharequeue
@@ -59,13 +59,13 @@ Gehen Sie wie folgt vor, um minimierten Code für semantische Änderungen zu gen
                service="service"/>
    ```
 
-1. Führen Sie unter client-html/src/main/webapp/js/minifier den Befehl aus:
+1. Führen Sie unter client-html/src/main/webapp/js/minifier folgenden Befehl aus:
 
    ```shell
    mvn clean install
    ```
 
-   Es wird ein Ordner mit minimierten Dateien unter client-html/src/main/webapp/js mit minimierten Dateien main.js und registry.js generiert.
+   Unter client-html/src/main/webapp/js wird ein minimierter Dateiordner mit minimierten main.js und registry.js erstellt.
 
 >[!NOTE]
 >
@@ -73,4 +73,4 @@ Gehen Sie wie folgt vor, um minimierten Code für semantische Änderungen zu gen
 
 >[!NOTE]
 >
->Wenn Sie verkleinern, wirkt sich dies auf Ihr Upgrade aus.
+>Eine MInimierung wirkt sich auf Ihr Upgrade aus.
