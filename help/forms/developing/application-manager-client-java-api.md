@@ -248,7 +248,7 @@ Im folgenden Java™-Code-Beispiel wird eine Anwendung mithilfe der Java™-API 
 
 >[!NOTE]
 >
-Die Java™-API „importApplication()“ ersetzt bestehende Anwendungen mit demselben Namen durch eine neuere Anwendung. Um eine vorhandene Anwendung zu aktualisieren, verwenden Sie API „importApplication()“ anstelle der API „updateApplication()“.
+>Die Java™-API „importApplication()“ ersetzt bestehende Anwendungen mit demselben Namen durch eine neuere Anwendung. Um eine vorhandene Anwendung zu aktualisieren, verwenden Sie API „importApplication()“ anstelle der API „updateApplication()“.
 
 ```java
 /*

@@ -281,7 +281,7 @@ Im vorherigen Beispiel ist `/content/we-retail/language-masters/en` die globale 
 
 >[!NOTE]
 >
-Die Diagramme und Beschreibungen in diesem Abschnitt stellen Momentaufnahmen der potenziellen Live Copies dar. Sie erheben keinen Anspruch auf Vollständigkeit, stellen jedoch einen Überblick bereit, um bestimmte Merkmale hervorzuheben.
+>Die Diagramme und Beschreibungen in diesem Abschnitt stellen Momentaufnahmen der potenziellen Live Copies dar. Sie erheben keinen Anspruch auf Vollständigkeit, stellen jedoch einen Überblick bereit, um bestimmte Merkmale hervorzuheben.
 
 Beim erstmaligen Erstellen einer Live Copy werden die ausgewählten Quellseiten 1:1 in der Live Copy wiedergegeben. Danach können neue Ressourcen (Seiten und/oder Absätze) auch direkt innerhalb der Live Copy erstellt werden. Daher ist es hilfreich, sich dieser Varianten und ihrer Auswirkungen auf die Synchronisierung bewusst zu sein. Mögliche Kompositionen umfassen:
 
@@ -323,7 +323,7 @@ Wenn Sie (oder ein Prozess) eine [neue Seite innerhalb einer vorhandenen Live C
 
 >[!NOTE]
 >
-Wenn Sie eine Seite innerhalb der Live Copy-Verzweigung verschieben/umbenennen, wird dies (intern) als verschachtelte Live Copy behandelt, um AEM die Rückverfolgung der Beziehungen zu ermöglichen.
+>Wenn Sie eine Seite innerhalb der Live Copy-Verzweigung verschieben/umbenennen, wird dies (intern) als verschachtelte Live Copy behandelt, um AEM die Rückverfolgung der Beziehungen zu ermöglichen.
 
 #### Gestapelte Live Copies {#stacked-live-copies}
 
@@ -384,7 +384,7 @@ Eine Rollout-Konfiguration definiert, wann und wie eine Live Copy mit dem Quell
 
   >[!NOTE]
   >
-  Mithilfe der Java™-API können Sie benutzerdefinierte Aktionen für Ihre Instanz erstellen.
+  >Mithilfe der Java™-API können Sie benutzerdefinierte Aktionen für Ihre Instanz erstellen.
 
 Rollout-Konfigurationen können wiederverwendet werden, sodass mehr als eine Live Copy dieselbe Rollout-Konfiguration verwendet. Mehrere [Rollout-Konfigurationen](/help/sites-administering/msm-sync.md#installed-rollout-configurations) sind in einer Standardinstallation enthalten.
 
@@ -406,13 +406,13 @@ Sie können auch [eine Live Copy von ihrer Blueprint trennen](/help/sites-admin
 
 >[!CAUTION]
 >
-Die Trennung ist dauerhaft und kann nicht rückgängig gemacht werden.
+>Die Trennung ist dauerhaft und kann nicht rückgängig gemacht werden.
 
 Trennen entfernt die Live-Beziehung zwischen einer Live Copy und der zugehörigen Blueprint-Seite dauerhaft. Alle MSM-bezogenen Eigenschaften werden aus der Live Copy entfernt, und die Live Copy-Seiten werden zu einer eigenständigen Kopie.
 
 >[!NOTE]
 >
-Die vollständigen Details, einschließlich der damit verbundenen Auswirkungen auf Unterseiten und übergeordnete Seiten, finden Sie unter [Trennen von Live Copies](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy).
+>Die vollständigen Details, einschließlich der damit verbundenen Auswirkungen auf Unterseiten und übergeordnete Seiten, finden Sie unter [Trennen von Live Copies](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy).
 
 ## Standardschritte zur Verwendung von MSM {#standard-steps-for-using-msm}
 
