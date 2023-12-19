@@ -5,10 +5,10 @@ role: Admin
 feature: Integrations
 exl-id: 087bc811-e8f8-4db5-b066-627a9b082f57
 hide: true
-source-git-commit: 6f01f5725ed2b0533756830c1a5e55b7464708f6
-workflow-type: ht
-source-wordcount: '489'
-ht-degree: 100%
+source-git-commit: 80cb3f696fb9050bb2135d2cd0c8f0be47272fa7
+workflow-type: tm+mt
+source-wordcount: '428'
+ht-degree: 92%
 
 ---
 
@@ -46,6 +46,10 @@ Gehen Sie wie folgt vor, um den Connector zu installieren:
 
 1. Installieren Sie das Paket mit dem [!UICONTROL Package Manager]. Informationen zum Installieren von Paketen finden Sie unter [Dokumentation zum Package Manager](/help/sites-administering/package-manager.md).
 1. Erstellen Sie `wf-workfront-users` in den [!DNL Experience Manager]-Benutzergruppen und weisen Sie `/content/dam` die Berechtigung `jcr:all` zu.
+1. Fügen Sie der standardmäßigen Indexdefinition eine benutzerdefinierte Eigenschaft für hinzu. **`ntFolderDamLucene(/oak:index/ntFolderDamLucene)`**. Führen Sie die folgenden Schritte aus:
+   * Hinzufügen einer **`nt:unstructured`** Eigenschaft namens **`wfReferenceNumber`** an:
+     `/oak:index/ntFolderDamLucene/indexRules/nt:folder/properties/wfReferenceNumber`.
+   * Neuindizieren Sie die `index /oak:index/ntFolderDamLucene` , indem Sie das reindex-Flag in `true`.
 
 Ein `workfront-tools`-Systembenutzer wird automatisch erstellt und die erforderlichen Berechtigungen werden automatisch verwaltet. Alle Benutzer von [!DNL Workfront], die den Connector verwenden, werden automatisch als Teil dieser Gruppe hinzugefügt.
 
