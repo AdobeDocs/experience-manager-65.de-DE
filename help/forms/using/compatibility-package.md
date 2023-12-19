@@ -1,6 +1,6 @@
 ---
 title: Kompatibilitätspaket
-description: Durch die Installation des Kompatibilitätspakets auf AEM Forms 6.5 können Sie die Correspondence Management-Assets aus AEM Forms 6.4 und früheren Versionen sowie veraltete Vorlagen und Seiten für adaptive Formulare verwenden
+description: Die Installation des Kompatibilitätspakets auf AEM Forms 6.5 ermöglicht es Ihnen, die Correspondence Management-Assets aus AEM Forms 6.4 und früheren Versionen sowie veraltete Vorlagen und Seiten für adaptive Formulare zu verwenden.
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management, installing
@@ -11,7 +11,7 @@ exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 57%
 
 Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz zum Erstellen von Kundenkommunikation in AEM Forms 6.5. Um Briefe in AEM Forms 6.5 weiterhin verwenden zu können, müssen Sie das neueste [AEMFD-Kompatibilitätspaket](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) installieren.
 
-Mit dem AEMFD-Kompatibilitätspaket können Sie auch [Verwenden Sie die folgenden Assets aus AEM Forms 6.4, 6.3 und 6.2 auf AEM Forms 6.5:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
+Das AEMFD-Kompatibilitätspaket ermöglicht Ihnen auch die [Verwendung der folgenden Assets aus AEM Forms 6.4, 6.3 und 6.2 in AEM Forms 6.5:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
 * Dokumentfragmente
 * Briefe
@@ -40,7 +40,7 @@ Stellen Sie sicher, dass das [AEM-Kompatibilitätspaket](https://helpx.adobe.com
 
    Weitere Informationen zum Hochladen und Installieren des Pakets finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
 
-1. Nachdem die Protokolle stabilisiert wurden, starten Sie den Server neu.
+1. Nachdem die Protokolle stabilisiert sind, starten Sie den Server neu.
 1. Verwenden Sie das Migrationsdienstprogramm, um Ihre Assets mit Version 6.5 kompatibel zu machen.
 
    Weitere Informationen finden Sie unter [Migrationsdienstprogramm](../../forms/using/migration-utility.md).

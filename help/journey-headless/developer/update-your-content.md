@@ -4,8 +4,8 @@ description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie S
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
 source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 92%
+source-wordcount: '1029'
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ Im vorherigen Teil der Headless-Tour haben Sie erfahren, wie Sie mit der AEM-Gra
 
 Warum ist also eine weitere API erforderlich?
 
-Mit der Assets-HTTP-API können Sie **Lesen** Ihren Inhalt, aber auch **Erstellen**, **Aktualisieren** und **Löschen** content - Aktionen, die mit der GraphQL-API nicht möglich sind.
+Die Assets-HTTP-API ermöglicht das **Lesen** Ihres Inhalts, aber auch das **Erstellen**, **Aktualisieren** und **Löschen** von Inhalten – alles Aktionen, die mit der GraphQL-API nicht möglich sind.
 
 Die Assets-REST-API ist in jeder vorkonfigurierten Installation einer aktuellen Adobe Experience Manager-Version verfügbar.
 
@@ -54,7 +54,7 @@ Die Assets-HTTP-API umfasst die:
 
 Die aktuelle Implementierung der Assets-HTTP-API basiert auf dem Architekturstil **REST** und ermöglicht den Zugriff auf (in AEM gespeicherte) Inhalte über **CRUD**-Vorgänge (Create, Read, Update, Delete, also Erstellen, Lesen, Aktualisieren, Löschen).
 
-Mit diesem Vorgang ermöglicht Ihnen die API den Betrieb von Adobe Experience Manager als Headless-CMS (Content Management System) durch Bereitstellung von Content Services für eine JavaScript-Frontend-Anwendung. Oder jedem anderen Programm, das HTTP-Anfragen ausführen und JSON-Antworten verarbeiten kann. Beispielsweise benötigen Framework-basierte oder benutzerdefinierte Single Page Applications (SPAs) die über die API bereitgestellten Inhalte häufig im JSON-Format.
+Mit diesen Vorgängen ermöglicht Ihnen die API, Adobe Experience Manager als Headless-CMS (Content-Management-System) auszuführen, indem einer JavaScript-Frontend-Anwendung Content-Services zur Verfügung gestellt werden. Oder jedem anderen Programm, das HTTP-Anfragen ausführen und JSON-Antworten verarbeiten kann. Beispielsweise benötigen Framework-basierte oder benutzerdefinierte Single Page Applications (SPAs) die über die API bereitgestellten Inhalte häufig im JSON-Format.
 
 <!--
 >[!NOTE]
@@ -329,6 +329,6 @@ Sie sollten Ihre AEM Headless-Tour fortsetzen, indem Sie sich das Dokument [So g
 * [AEM-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
 * [Erklärung: CORS/AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [Video: Entwicklung für CORS mit AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
-* Ein [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
-* Die [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
+* Eine [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
+* Das [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
 * [Headless-Tutorials für AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)

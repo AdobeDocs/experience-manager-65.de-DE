@@ -9,7 +9,7 @@ exl-id: 76a46c62-d47d-4970-8a3a-d56015639548
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '847'
-ht-degree: 39%
+ht-degree: 63%
 
 ---
 
@@ -27,11 +27,11 @@ Als Teil des Integrationsvorgangs konfigurieren Sie den Workflow **DAM-Update-As
 >
 >Sie können InDesign-Vorlagen aus InDesign-Dateien generieren, bevor Sie sie in AEM Assets importieren. Weitere Informationen finden Sie unter [Arbeiten mit Dateien und Vorlagen](https://helpx.adobe.com/de/indesign/using/files-templates.html).
 >
->Sie können die Elemente in Ihren InDesign-Vorlagen XML-Tags zuordnen. Die zugeordneten Tags werden als Eigenschaften angezeigt, wenn Sie die Produkteigenschaften den Vorlageneigenschaften in Catalog Producer zuordnen. Informationen zu XML-Tags in InDesign-Dateien finden Sie unter [Taggen von Inhalten für XML](https://helpx.adobe.com/de/indesign/using/tagging-content-xml.html).
+>Sie können den Elementen in Ihren InDesign-Vorlagen XML-Tags zuordnen. Die zugeordneten Tags werden als Eigenschaften angezeigt, wenn Sie die Produkteigenschaften den Vorlageneigenschaften in Catalog Producer zuordnen. Informationen zu XML-Tags in InDesign-Dateien finden Sie unter [Taggen von Inhalten für XML](https://helpx.adobe.com/de/indesign/using/tagging-content-xml.html).
 
 >[!NOTE]
 >
->Als Vorlagen werden nur InDesign-Dateien (.indd) verwendet. Dateien mit der Erweiterung .indt werden nicht unterstützt.
+>Als Vorlagen werden nur InDesign-Dateien (INDD) verwendet. Dateien mit der Erweiterung INDT werden nicht unterstützt.
 
 ## Erstellen eines Katalogs {#creating-a-catalog}
 
@@ -52,7 +52,7 @@ Catalog Producer verwendet Produktinformationsverwaltungsdaten (PIM), um Produkt
 
 1. Um dem Katalog Seiten hinzuzufügen, klicken Sie auf **Erstellen** Wählen Sie in der Symbolleiste die **Neue Seite** -Option.
 1. Wählen Sie im Assistenten eine InDesign-Vorlage für Ihre Seite aus. Klicken Sie dann auf **Weiter**.
-1. Geben Sie einen Namen für die Seite und eine optionale Beschreibung an. Geben Sie gegebenenfalls Tags an.
+1. Geben Sie einen Namen für die Seite und optional eine Beschreibung an. Geben Sie gegebenenfalls Tags an.
 1. Klicken Sie auf **Erstellen** aus der Symbolleiste. Klicken Sie anschließend auf **Öffnen** aus dem Dialogfeld. Die Eigenschaften für das Produkt werden im linken Bereich angezeigt. Die vordefinierten Eigenschaften für die InDesign-Vorlage werden im rechten Bereich angezeigt.
 1. Ziehen Sie aus dem linken Bereich die Produkteigenschaften in die Eigenschaften der InDesign-Vorlage und erstellen Sie eine Zuordnung zwischen ihnen.
 
@@ -86,7 +86,7 @@ Catalog Producer verwendet Produktinformationsverwaltungsdaten (PIM), um Produkt
    >
    >Um die Metadaten für ein referenziertes Produkt zu ändern, navigieren Sie zur Produktkonsole (**AEM-Logo** > **Commerce** > **Produkte**). Wählen Sie dort das Produkt aus. Klicken Sie dann auf die **Eigenschaften anzeigen** in der Symbolleiste und bearbeiten Sie die Metadaten auf der Seite Eigenschaften des Assets.
 
-1. Um die Seiten im Katalog neu anzuordnen, klicken Sie auf das **Erstellen** Symbol in der Symbolleiste und wählen Sie dann **Zusammenführen** aus dem Menü. Im Assistenten können Sie mit dem Karussell oben die Seiten durch Ziehen neu anordnen. Sie können Seiten auch entfernen.
+1. Um die Seiten im Katalog neu anzuordnen, klicken Sie auf das **Erstellen** Symbol in der Symbolleiste und wählen Sie dann **Zusammenführen** aus dem Menü. Im Assistenten können Sie über das Karussell am oberen Bildschirmrand die Seiten durch Ziehen neu anordnen. Sie können Seiten auch entfernen.
 
 1. Klicken Sie auf **Weiter**. Um eine vorhandene InDesign-Datei als Titelseite hinzuzufügen, klicken Sie auf **Durchsuchen** neben dem **Titelseite auswählen** und geben Sie den Pfad für die Titelseitenvorlage an.
 1. Klicks **Speichern** und klicken Sie anschließend auf **Fertig** , um das Bestätigungsdialogfeld zu schließen.

@@ -9,7 +9,7 @@ exl-id: e64a66cb-d56a-4504-8883-609143d0daf8
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '172'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 89%
 
 Launches helfen Ihnen, Inhalte für eine künftige Version effizient zu entwickeln.
 
-Ein Launch wird erstellt, damit Sie Änderungen für die zukünftige Veröffentlichung vornehmen können (unter Beibehaltung der aktuellen Seiten). Wenn Sie die Launch-Seiten bearbeitet und aktualisiert haben, leiten Sie diese wieder zurück in die Quelle und aktivieren dann die Quellseiten (auf der obersten Ebene). Durch die Weiterleitung wird der Launch-Inhalt wieder auf die Quellseiten kopiert und kann entweder manuell oder automatisch ausgeführt werden (abhängig von den Feldern, die beim Erstellen und Bearbeiten des Launches festgelegt wurden).
+Ein Launch wird erstellt, damit Sie (unter Beibehaltung der aktuellen Seiten) Änderungen für eine spätere Veröffentlichung vornehmen können. Wenn Sie die Launch-Seiten bearbeitet und aktualisiert haben, leiten Sie diese wieder zurück in die Quelle und aktivieren dann die Quellseiten (auf der obersten Ebene). Durch die Weiterleitung wird der Launch-Inhalt wieder auf die Quellseiten kopiert und kann entweder manuell oder automatisch ausgeführt werden (abhängig von den Feldern, die beim Erstellen und Bearbeiten des Launches festgelegt wurden).
 
 >[!NOTE]
 >

@@ -8,8 +8,8 @@ content-type: reference
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
 source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1892'
-ht-degree: 87%
+source-wordcount: '1895'
+ht-degree: 86%
 
 ---
 
@@ -124,7 +124,7 @@ In der klassischen Benutzeroberfläche ist **die Eingabe von ungültigen Zeichen
 
 In AEM gibt eine Vorlage einen speziellen Seitentyp an. Eine Vorlage wird als Grundlage für jede neue Seite verwendet, die erstellt wird.
 
-Die Vorlage definiert die Seitenstruktur, u. a. eine Miniaturansicht und andere Eigenschaften. Beispielsweise könnten Sie unterschiedliche Vorlagen für Produktseiten, Sitemaps und Kontaktangaben verwenden. Vorlagen bestehen aus [Komponenten](#components).
+Die Vorlage definiert die Struktur einer Seite, einschließlich eines Miniaturbilds und anderer Eigenschaften. Sie können beispielsweise separate Vorlagen für Produktseiten, Sitemaps und Kontaktinformationen verwenden. Vorlagen bestehen aus [Komponenten](#components).
 
 Im Lieferumfang von AEM sind diverse Vorlagen enthalten. Die angebotenen Vorlagen hängen von der einzelnen Website ab. Welche Informationen (beim Erstellen der neuen Seite) angegeben werden müssen, hängt von der verwendeten Benutzeroberfläche ab. Die wichtigsten Felder sind:
 
@@ -165,7 +165,7 @@ Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstell
 
    Wenn Sie einfach auf **Neu…** klicken, wird ebenfalls die Option **Neue Seite…** ausgewählt.
 
-1. Die **Seite erstellen** -Dialogfeld können Sie:
+1. Das Dialogfeld **Seite erstellen** ermöglicht Ihnen Folgendes:
 
    * Angabe eines **Titels**, der für die Benutzenden angezeigt wird.
    * Angabe eines **Namens**, der für die Erzeugung des URI verwendet wird. Wenn kein Name angegeben wird, wird der Name aus dem Titel abgeleitet.

@@ -5,7 +5,7 @@ exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
 source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '1691'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -47,7 +47,7 @@ Wie bei den meisten Systemen müssen Sie sich anmelden. Als Autor erhalten Sie F
 * Passwort
 * Link zum Zugriff auf den Anmeldebildschirm
 
-Ihr Konto wurde mit den erforderlichen Berechtigungen konfiguriert. Wenn Sie Probleme haben, empfiehlt Adobe, sich an Ihr internes Projektunterstützungsteam zu wenden.
+Ihr Konto wurde mit den erforderlichen Berechtigungen konfiguriert. Sollten Sie Probleme haben, empfiehlt Adobe Ihnen, sich an Ihr internes Projektunterstützungs-Team zu wenden.
 
 ### Navigation {#navigation}
 
@@ -168,7 +168,7 @@ Beispiele:
 
   ![Inhaltsfragmente-Editor – Mein Fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
-* Ein Fragment, mit dem Sie einen langen Abschnitt mit Text schreiben können. Hier finden Sie zusätzliche Optionen zum Verwalten und Formatieren des Textes. Sie können die einzelnen Textfelder auch in einem Vollbild-Editor öffnen (mithilfe des kleinen bildschirmähnlichen Symbols auf der rechten Seite).
+* Ein Fragment, mit dem Sie einen langen Textabschnitt schreiben können. Hier finden Sie zusätzliche Optionen zum Verwalten und Formatieren des Textes. Sie können die einzelnen Textfelder auch in einem Vollbild-Editor öffnen (mithilfe des kleinen bildschirmähnlichen Symbols auf der rechten Seite).
 
   ![Inhaltsfragmente-Editor – Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 

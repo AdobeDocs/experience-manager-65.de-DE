@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
 source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 75%
+source-wordcount: '1010'
+ht-degree: 79%
 
 ---
 
@@ -90,10 +90,10 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
 
 ## Beheben von Workflow-Instanzfehlern {#fixing-workflow-instance-failures}
 
-Wenn ein Workflow fehlschlägt, stellt AEM die **Fehler** -Konsole, damit Sie nach dem Umgang mit der ursprünglichen Ursache untersuchen und entsprechende Maßnahmen ergreifen können:
+Schlägt ein Workflow fehl, ermöglicht Ihnen AEM mit der **Fehler-Konsole** die Untersuchung und das Ergreifen entsprechender Maßnahmen, sobald die ursprüngliche Ursache behoben wurde:
 
 * **Fehlerdetails**
-Öffnet ein Fenster zum Anzeigen der **Fehlermeldung**, **Schritt**, und **Fehlerstapel**.
+Öffnet ein Fenster zum Anzeigen von **Fehlermeldung**, **Schritt**, und **Fehlerstapel**.
 
 * **Offener Verlauf** Die Details des Workflow-Verlaufs werden angezeigt.
 

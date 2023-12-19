@@ -9,7 +9,7 @@ exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '6186'
-ht-degree: 38%
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 38%
 
 In PDF Generator können Sie die Anwendungseinstellungen für unterstützte Dateitypen einrichten. Unter Windows können Sie die Anwendungseinstellungen für jeden unterstützten Dateityp einrichten. Unter UNIX und Linux können Sie die Anwendungseinstellungen für HTML-to-PDF und OpenOffice einrichten.
 
-Auf der Seite &quot;Dateitypeinstellungen&quot;können Sie die folgenden Aufgaben ausführen:
+Auf der Seite „Dateitypeinstellungen“ können Sie die folgenden Aufgaben ausführen:
 
 * [Erstellen oder Bearbeiten einer Dateitypeinstellung](#create-or-edit-file-type-settings)
 * Geben Sie an, welche Dateitypeinstellungen standardmäßig verwendet werden sollen (siehe [PDF Generator-Konfigurationsdateien importieren und exportieren](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md))
@@ -27,22 +27,22 @@ Auf der Seite &quot;Dateitypeinstellungen&quot;können Sie die folgenden Aufgabe
 
 >[!NOTE]
 >
->Die Dateitypeinstellungen sind nicht für die Fallback-Konvertierer wie Acrobat zum HTML auf PDF-Konvertierung, Microsoft PowerPoint, Microsoft Word und Microsoft Excel verfügbar.
+>Die Einstellungen für den Dateityp sind für die Fallback-Konverter wie Acrobat nicht für die Konvertierung von HTML in PDF, Microsoft PowerPoint, Microsoft Word und Microsoft Excel verfügbar.
 
-## Dateitypeinstellungen erstellen oder bearbeiten {#create-or-edit-file-type-settings}
+## Erstellen oder Bearbeiten von Dateitypeinstellungen {#create-or-edit-file-type-settings}
 
 Erstellen oder bearbeiten Sie eine Dateitypeinstellung, um anzugeben, wie das Programm die Konvertierung unterstützter Dateitypen handhabt. Unter Windows können Sie die Anwendungseinstellungen für jeden unterstützten Dateityp einrichten. Unter UNIX und Linux können Sie die Anwendungseinstellungen für HTML-to-PDF und OpenOffice einrichten.
 
 1. Klicken Sie in Administration Console auf **[!UICONTROL Dienste]** > **[!UICONTROL PDF Generator]** > **[!UICONTROL Dateitypeinstellungen]**.
-1. Klicken Sie auf Neu oder auf den Namen einer Einstellung.
-1. Geben Sie im Feld &quot;Dateinamenerweiterungen&quot;die Dateinamenerweiterungen (durch Kommas getrennt) für Dateitypen ein, die für diese Anwendung akzeptiert werden. Schließen Sie den Punkt vor oder einen Leerzeichen zwischen den Erweiterungen nicht ein. Der Standardwert lautet `bmp,gif,jpeg,jpg,tif,tiff,png`.
+1. Klicken Sie auf „Neu“ oder auf den Namen einer Einstellung.
+1. Geben Sie in das Feld „Dateinamenerweiterungen“ die durch Kommas getrennten Dateinamenerweiterungen für Dateitypen ein, die für diese Anwendung akzeptiert werden. Fügen Sie keinen Punkt vor oder ein Leerzeichen zwischen den Endungen ein. Der Standardwert lautet `bmp,gif,jpeg,jpg,tif,tiff,png`.
 1. (Optional) Um die optische Zeichenerkennung (OCR) von Text in Grafiken oder Bildern zu aktivieren, wählen Sie „OCR verwenden“ aus und legen Sie die folgenden Optionen fest:
 
 **Primäre OCR-Sprache:** Die Sprache, die die OCR-Engine zum Erkennen der Zeichen verwenden soll. Die Standardeinstellung ist Englisch (US).
 
-**PDF Output Style:** Wählen Sie Durchsuchbares Bild aus, um ein Bitmap-Bild der Seiten im Vordergrund und den gescannten Text auf einer unsichtbaren Ebene darunter zu haben. Das Erscheinungsbild der Seite ändert sich nicht, aber der Text kann ausgewählt und gelesen werden. Wählen Sie Formatierter Text und Grafiken aus, um die Originalseite mithilfe von erkanntem Text, Schriftarten, Bildern und anderen grafischen Elementen zu rekonstruieren. Die Standardeinstellung ist Durchsuchbares Bild (exakt).
+**PDF-Ausgabestil:** Wählen Sie „Durchsuchbares Bild“ aus, um ein Bitmap-Bild der Seiten im Vordergrund und den gescannten Text auf einer unsichtbaren Ebene darunter zu haben. Die Darstellung der Seite wird nicht geändert, doch der Text wird auswählbar und lesbar. Wählen Sie „Formatierter Text und Grafiken“, um die Originalseite mithilfe von erkanntem Text, Schriftarten, Bildern und anderen grafischen Elementen zu rekonstruieren. Die Standardeinstellung ist „Durchsuchbares Bild (exakt)“.
 
-**Bilder neu berechnen:** Verringert die Anzahl der Pixel in Farb-, Graustufen- und Schwarzweißbildern. Die Neuberechnung gescannter Bilder erfolgt nach Abschluss des OCR. Die Standardeinstellung ist Niedrigste (600 dpi). Diese Option ist nicht verfügbar, wenn Sie den Ausgabestil der PDF auf &quot;Durchsuchbares Bild (exakt)&quot;festlegen.
+**Bilder neu berechnen:** Verringert die Anzahl der Pixel in Farb-, Graustufen- und Schwarzweißbildern. Die Neuberechnung gescannter Bilder erfolgt nach Abschluss der OCR-Erkennung. Der Standardwert ist „Niedrigste (600 dpi)“. Diese Option ist nicht verfügbar, wenn der PDF-Ausgabestil auf „Durchsuchbares Bild (exakt)“ festgelegt ist.
 
 1. Füllen Sie die erforderlichen Informationen in diesen Abschnitten aus:
 
@@ -84,11 +84,11 @@ Die Unterstützung verschiedener Dateitypen kann angepasst werden. (Siehe [Hinzu
 
 ## Ändern der Standardeinstellungen {#change-the-default-settings}
 
-Sie können den Standardwert für die Adobe PDF-Einstellungen, Sicherheitseinstellungen und Dateitypeinstellungen ändern, die für neu erstellte Quellen gelten. Eine Änderung der Standardeinstellungen hat keine Auswirkungen auf die Einstellungen vorhandener Quellen.
+Sie können den Standardwert für die Adobe PDF-, Sicherheits- und Dateityp-Einstellungen ändern, die für neu erstellte Quellen gültig sind. Das Ändern der Standardwerte hat keine Auswirkungen auf die Einstellungen vorhandener Quellen.
 
-1. Klicken Sie in Administration Console auf **[!UICONTROL Dienste > PDF Generator]**.
+1. Klicken Sie in der Administrationskonsole auf **[!UICONTROL Dienste > PDF Generator]**.
 1. Klicken Sie auf der Seite **[!UICONTROL Adobe PDF-Einstellungen]**, **[!UICONTROL Dateitypeinstellungen]** oder **[!UICONTROL Sicherheitseinstellungen]** auf **[!UICONTROL Standardeinstellungen festlegen]**.
-1. Wählen Sie die gewünschten Standardeinstellungen aus. Eine oder mehrere der folgenden Einstellungen sind auf der Seite Standardeinstellungen festlegen verfügbar:
+1. Wählen Sie die gewünschten Standardeinstellungen aus. Mindestens eine der folgenden Einstellungen ist auf der Seite „Standardeinstellungen festlegen“ verfügbar:
 
    **[!UICONTROL Adobe PDF Einstellung]**: Der ursprüngliche Standard ist „Standard“ (Acrobat 6).
 
@@ -103,20 +103,20 @@ Sie können den Standardwert für die Adobe PDF-Einstellungen, Sicherheitseinste
 Sie können eine nicht mehr verwendete Dateitypeinstellung löschen.
 
 1. Klicken Sie in der Administration-Console auf **[!UICONTROL Dienste > PDF Generator > Dateitypeinstellungen]**.
-1. Aktivieren Sie das Kontrollkästchen neben der zu löschenden Einstellung. Sie können mehrere Quellen auswählen. Einstellungen, für die kein Kontrollkästchen neben ihnen aktiviert ist, sind immer in PDF Generator enthalten und können nicht gelöscht werden.
+1. Aktivieren Sie das Kontrollkästchen neben der zu löschenden Einstellung. Sie können mehrere Quellen auswählen. Einstellungen ohne Kontrollkästchen werden in PDF Generator immer berücksichtigt und können nicht gelöscht werden.
 1. Klicken Sie auf der Seite „Löschbestätigung“ auf **[!UICONTROL Löschen]** und dann nochmals auf **[!UICONTROL Löschen]**.
 
-## PDF-Einstellungen für Bild {#image-to-pdf-settings}
+## „Bild in PDF“-Einstellungen {#image-to-pdf-settings}
 
-Die folgenden Optionen bestimmen, wie Bilddateien in PDF konvertiert werden. Anweisungen zum Zugriff auf diese Einstellungen finden Sie unter [Dateitypeinstellungen erstellen oder bearbeiten](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+Die folgenden Optionen bestimmen, wie Bilddateien in PDF konvertiert werden. Anweisungen zum Zugriff auf diese Einstellungen finden Sie unter [Erstellen oder Bearbeiten von Dateitypeinstellungen](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **Dateinamenerweiterungen:** Eine durch Kommas getrennte Liste von Dateinamenerweiterungen, die konvertiert werden können.
 
-**Ersatzkonverter versuchen:** PDF Generator kann entweder Java™ oder Acrobat verwenden, um Bilddateien in PDF-Dateien zu konvertieren. Wenn diese Option aktiviert ist und eine Konvertierung fehlschlägt oder das angegebene Zeitlimit erreicht, versucht der PDF Generator die Konvertierung mithilfe der alternativen Methode. Wenn die alternative Methode fehlschlägt oder das angegebene Zeitlimit erreicht, wird eine Ausnahme in die Protokolldatei geschrieben.
+**Ersatzkonverter versuchen:** PDF Generator kann entweder Java™ oder Acrobat verwenden, um Bilddateien in PDF-Dateien zu konvertieren. Wenn diese Option aktiviert ist und eine Konvertierung fehlschlägt oder das angegebene Zeitlimit erreicht, versucht PDF Generator die Konvertierung mithilfe der alternativen Methode. Wenn die alternative Methode fehlschlägt oder das angegebene Zeitlimit erreicht, wird eine Ausnahme in die Protokolldatei geschrieben.
 
 >[!NOTE]
 >
->JPEG 2000 Dateien können nur mit Acrobat konvertiert werden.
+>JPEG 2000-Dateien können nur mit Acrobat konvertiert werden.
 
 **OCR verwenden:** Gibt an, ob die optische Zeichenerkennung (Optical Character Recognition, OCR) auf die PDF-Datei angewendet werden soll. Mit OCR-Software können Sie den Text in einer PDF-Datei durchsuchen, korrigieren und kopieren.
 
@@ -126,33 +126,33 @@ Die folgenden Optionen bestimmen, wie Bilddateien in PDF konvertiert werden. Anw
 
 **Stil der PDF-Ausgabe:** Bestimmt den Typ des zu erstellenden PDF. Alle Formate wenden OCR und Schriftart- und Seitenerkennung auf die Bilder im Text an und konvertieren sie in normalen Text.
 
-**Durchsuchbares Bild:** Stellt sicher, dass der Text durchsuchbar und auswählbar ist. Mit dieser Option wird das Originalbild beibehalten, nach Bedarf desketiert und eine unsichtbare Textebene darüber platziert. Die Option Bilder neu berechnen bestimmt, ob und in welchem Umfang das Bild neu berechnet wird.
+**Durchsuchbares Bild:** Stellt sicher, dass der Text durchsuchbar und auswählbar ist. Mit dieser Option wird das Originalbild beibehalten und ggf. geradegerückt, und es wird eine unsichtbare Textebene über das Bild platziert. Mit der Option „Bilder neu berechnen“ wird bestimmt, ob und in welchem Umfang das Bild neu berechnet wird.
 
-**Durchsuchbares Bild (exakt):** Stellt sicher, dass der Text durchsuchbar und auswählbar ist. Diese Option behält das Originalbild bei und platziert eine unsichtbare Textebene darüber. Empfohlen für Fälle, in denen eine maximale Treue zum Originalbild erforderlich ist.
+**Durchsuchbares Bild (exakt):** Stellt sicher, dass der Text durchsuchbar und auswählbar ist. Mit dieser Option wird das Originalbild beibehalten und eine unsichtbare Textebene darüber platziert. Empfohlen für Fälle, in denen eine maximale Übereinstimmung mit dem Originalbild erforderlich ist.
 
 **ClearScan**: Synthetisiert eine neue Type-3-Schriftart, die dem Original sehr nahe kommt, und behält den Seitenhintergrund bei, indem eine Kopie mit niedriger Auflösung verwendet wird.
 
-**Bilder neu berechnen**: Verringert die Anzahl der Pixel in Farb-, Graustufen- und Schwarzweißbildern nach Abschluss der optischen Zeichenerkennung (OCR). Wählen Sie den anzuwendenden Grad der Neuberechnung aus. Höhere Optionen führen zu weniger Neuberechnung, wodurch PDF mit höherer Auflösung generiert werden.
+**Bilder neu berechnen**: Verringert die Anzahl der Pixel in Farb-, Graustufen- und Schwarzweißbildern nach Abschluss der optischen Zeichenerkennung (OCR). Wählen Sie den Grad des Neuberechnens, der angewendet werden soll. Optionen mit höheren Nummern führen zu weniger Neuberechnung, wodurch PDFs mit höherer Auflösung generiert werden.
 
 ## Adobe PDF-Exporteinstellungen (nur Windows) {#adobe-pdf-export-settings-windows-only}
 
-Die Einstellung &quot;Dateityp exportieren&quot;im Abschnitt mit den Exporteinstellungen für Adobe PDF wird zum Konvertieren einer PDF-Datei in ein anderes Format verwendet. Die Standardeinstellung ist HTML 4.01 mit Cascading Style Sheets (CSS) 1.0(*.htm, *.html).
+Die Einstellung „Dateityp exportieren“ im Abschnitt mit den Exporteinstellungen für Adobe PDF wird für die Konvertierung einer PDF-Datei in ein anderes Format verwendet. Die Standardeinstellung ist HTML 4.01 mit Cascading Style Sheets (CSS) 1.0(*.htm, *.html).
 
-Anweisungen zum Zugriff auf diese Einstellung finden Sie unter [Dateitypeinstellungen erstellen oder bearbeiten](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+Anweisungen zum Zugriff auf diese Einstellung finden Sie unter [Erstellen oder Bearbeiten von Dateitypeinstellungen](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 ## „HTML in PDF“-Einstellungen {#html-to-pdf-settings}
 
-Die folgenden Optionen bestimmen, wie HTML-Dateien in PDF konvertiert werden. Anweisungen zum Zugriff auf diese Optionen finden Sie unter [Dateitypeinstellungen erstellen oder bearbeiten](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+Die folgenden Optionen bestimmen, wie HTML-Dateien in PDF konvertiert werden. Anweisungen zum Zugriff auf diese Optionen finden Sie unter [Erstellen oder Bearbeiten von Dateitypeinstellungen](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
-**Ersatzkonverter versuchen**: PDF Generator kann entweder Java™ oder Acrobat verwenden, um HTML-Dateien in PDF zu konvertieren. Wenn diese Option aktiviert ist und eine Konvertierung fehlschlägt oder das angegebene Zeitlimit erreicht, versucht der PDF Generator die Konvertierung mithilfe der alternativen Methode. Wenn die alternative Methode fehlschlägt oder das angegebene Zeitlimit erreicht, wird eine Ausnahme in die Protokolldatei geschrieben.
+**Ersatzkonverter versuchen**: PDF Generator kann entweder Java™ oder Acrobat verwenden, um HTML-Dateien in PDF zu konvertieren. Wenn diese Option aktiviert ist und eine Konvertierung fehlschlägt oder das angegebene Zeitlimit erreicht, versucht PDF Generator die Konvertierung mithilfe der alternativen Methode. Wenn die alternative Methode fehlschlägt oder das angegebene Zeitlimit erreicht, wird eine Ausnahme in die Protokolldatei geschrieben.
 
 **Standardcodierung**: Legt die Eingabecodierung des Dateitexts über ein Menü mit Betriebssystemen und Alphabeten fest. Verwendet die Auswahl, die in der Option „Standardkodierung“ angezeigt wird, nur dann an, wenn die HTML-Quelldatei keinen Kodierungstyp angibt.
 
 **Vom System ausgewählte Codierung**: Ignoriert jegliche Codierung, die in der HTML-Quelldatei angegeben ist, und verwendet die in der Option „Standardcodierung“ angezeigte Auswahl.
 
-### Spidern-Einstellungen {#spidering-settings}
+### Spider-Einstellungen {#spidering-settings}
 
-*Spidern* scannt Webseiten auf Links zu anderen Webseiten. Wenn ein Link zu einer anderen Webseite auftritt, wird die Zielseite abgerufen und in das generierte PDF-Dokument aufgenommen. Aktivieren Sie diese Optionen, um die Anzahl der Ebenen festzulegen, die abgerufen und in PDF konvertiert werden sollen:
+Beim *Spidern* werden Web-Seiten auf Links zu anderen Web-Seiten untersucht. Wird ein Link zu einer anderen Web-Seite gefunden, wird die Zielseite abgerufen und in das generierte PDF-Dokument eingefügt. Aktivieren Sie diese Optionen, um die Anzahl der Ebenen festzulegen, die abgerufen und in PDF konvertiert werden sollen:
 
 **Nur x Niveaus abrufen**: Durchsucht und konvertiert Seiten bis zu einer Tiefe der angegebenen Niveaus der Basisseiten-URL. Beim Wert 1 wird nur der angegebene URL konvertiert.
 
@@ -180,7 +180,7 @@ Aktivieren Sie diese Optionen, um festzulegen, wie die HTML-Seiten konvertiert w
 
 ### Dokumentoptionen {#document-options}
 
-Aktivieren Sie diese Optionen, um festzulegen, wie Inhalte angezeigt werden, wie Seiten im PDF-Dokument angezeigt werden und wie die Vergrößerungsstufe festgelegt wird:
+Aktivieren Sie diese Optionen, um festzulegen, wie Inhalte angezeigt werden, wie Seiten im PDF-Dokument angezeigt werden und wie der Vergrößerungsgrad festgelegt wird:
 
 **Anzeigen**: Wählen Sie die Bereiche aus, die in Acrobat geöffnet werden sollen, wenn das PDF-Dokument geöffnet wird.
 
@@ -192,7 +192,7 @@ Aktivieren Sie diese Optionen, um festzulegen, wie Inhalte angezeigt werden, wie
 
 ### Fensteroptionen {#window-options}
 
-Aktivieren Sie diese Optionen, um festzulegen, wie die Fenstergröße und -anzeige dargestellt werden.
+Aktivieren Sie diese Optionen, um die Fenstergröße und -anzeige festzulegen.
 
 **Größe des Fensters auf Anfangsseite ändern**: Passt die Größe des Acrobat-Fensters an die Anfangsseite an.
 
@@ -214,31 +214,31 @@ Aktivieren Sie diese Optionen, um das Erscheinungsbild des Fensters festzulegen:
 
 ## „Flashvideos in PDF“-Einstellungen {#flash-videos-to-pdf-settings}
 
-PDF Generator unterstützt die Möglichkeit, ein Video zum Adobe-Flash (SWF oder FLV-Datei) zu senden und eine PDF-Datei mit einem darin eingebetteten Adobe-Flash zu erstellen. Für diese Konvertierung muss keine Adobe-Flash Player auf dem Forms-Server installiert sein. Anweisungen zum Zugriff auf diese Option finden Sie unter [Dateitypeinstellungen erstellen oder bearbeiten](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+PDF Generator unterstützt die Funktion zum Senden von Videos für Adobe Flash (SWF- oder FLV-Datei) und zum Erstellen einer PDF-Datei mit eingebettetem Video für Adobe Flash. Für diese Konvertierung muss keine Adobe-Flash Player auf dem Forms-Server installiert sein. Anweisungen zum Zugriff auf diese Option finden Sie unter [Erstellen oder Bearbeiten von Dateitypeinstellungen](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **Dateinamenerweiterungen:** Durch Kommas getrennte Liste von Dateinamenerweiterungen, die konvertiert werden können.
 
 ## „XPS in PDF“-Einstellungen {#xps-to-pdf-settings}
 
-XML Paper Specification (XPS) wird in Windows Printing Machine verwendet. Dies ist ein Microsoft-Format und kann über eine beliebige Microsoft Office-Anwendung erstellt werden. AEM Formulare bieten die Möglichkeit, XPS-Dateien zu konvertieren PDF.
+XML Paper Specification (XPS) wird in Windows Printing Machine verwendet. Dies ist ein Microsoft-Format, das von jeder Microsoft Office-Anwendung erstellt werden kann. AEM Forms ermöglicht die Konvertierung von XPS-Dateien in PDF.
 
 **Dateinamenerweiterungen:** Durch Kommas getrennte Liste aller XPS-Dateinamenerweiterungen, die konvertiert werden können. Derzeit ist nur ein Format verfügbar: .xps.
 
 ## PDF-Optimierungseinstellungen {#pdf-optimizer-settings}
 
-PDF Generator unterstützt die Möglichkeit, die Größe von PDF-Dateien zu reduzieren. Ob Sie alle diese Einstellungen oder nur einige wenige verwenden, hängt davon ab, wie Sie die Dateien verwenden möchten, sowie von den wesentlichen Eigenschaften, die eine Datei aufweisen muss. In den meisten Fällen sind die Standardeinstellungen für maximale Effizienz geeignet. So sparen Sie Speicherplatz, indem Sie eingebettete Schriftarten entfernen, Bilder komprimieren und Elemente aus den nicht mehr benötigten Dateien entfernen.
+PDF Generator unterstützt die Funktion zum Reduzieren der Größe von PDF-Dateien. Ob Sie alle diese Einstellungen oder nur einige wenige verwenden, hängt davon ab, wie Sie die Dateien verwenden möchten, sowie von den wesentlichen Eigenschaften, die eine Datei aufweisen muss. In den meisten Fällen sind die Standardeinstellungen für maximale Effizienz ausgelegt – es wird Speicherplatz eingespart, indem eingebettete Schriftarten entfernt, Bilder komprimiert und nicht mehr benötigte Elemente aus den Dateien entfernt werden.
 
 >[!NOTE]
 >
->Durch die Optimierung eines digital signierten Dokuments werden die digitalen Signaturen entfernt und ungültig gemacht.
+>Durch die Optimierung eines digital signierten Dokuments werden die digitalen Signaturen entfernt und ungültig.
 
-Anweisungen zum Zugriff auf diese Einstellung finden Sie unter [Dateitypeinstellungen erstellen oder bearbeiten](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+Anweisungen zum Zugriff auf diese Einstellung finden Sie unter [Erstellen oder Bearbeiten von Dateitypeinstellungen](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **PDF-Zielversion:** Gibt die Acrobat-Version an, mit der die PDF-Datei kompatibel ist.
 
 ### Schriften {#fonts}
 
-1. Auswählen **Schriftarten.**
+1. Wählen Sie **Schriftarten**.
 1. Wählen Sie eine der folgenden Optionen aus:
 
    **Einbettung für Zeichenformate aufheben:** Hebt die Einbettung für alle Schriftarten auf.
@@ -247,8 +247,8 @@ Anweisungen zum Zugriff auf diese Einstellung finden Sie unter [Dateitypeinstell
 
    **Einbettung einiger Schriftarten aufheben:** Hebt die Einbettung nur für bestimmte Schriftarten auf. Führen Sie die folgenden Schritte aus, um die Schriftarten anzugeben, deren Einbettung Sie aufheben möchten:
 
-   * Wählen Sie bei Bedarf einen anderen Schriftartenordner aus dem **Schriftquelle** Dropdown-Menü. In diesem Dropdown-Menü werden die Schriftartenordner aufgelistet, die in **Startseite > Einstellungen > Core-System > Core-Konfigurationen**.
-   * Wählen Sie mindestens eine Schriftart aus dem **Verfügbare Schriftarten** Liste und klicken Sie auf **Hinzufügen**. Diese Schriftarten werden der **Einbettung für Schriftarten aufheben** Liste.
+   * Wählen Sie bei Bedarf einen anderen Schriftartenordner aus dem Dropdown-Menü **Schriftquelle**. In diesem Dropdown-Menü werden die Schriftartenordner aufgelistet, die in **Startseite > Einstellungen > Core-System > Core-Konfigurationen** angegeben wurden.
+   * Wählen Sie eine oder mehrere Schriftarten aus der Liste **Verfügbare Schriftarten** und klicken Sie auf **Hinzufügen**. Diese Schriftarten werden der Liste **Einbettung für folgende Schriftarten aufheben** hinzugefügt.
    * Wenn Sie die Einbettung für einige Schriftarten aufheben möchten, die nicht auf dem Forms-Server vorhanden sind, geben Sie die Namen dieser Schriftarten in die **Einbettung für Schriftarten aufheben** ankreuzen. Klicken Sie auf **Hinzufügen**.
 
    >[!NOTE]
@@ -259,27 +259,27 @@ Anweisungen zum Zugriff auf diese Einstellung finden Sie unter [Dateitypeinstell
 
    >[!NOTE]
    >
-   >*Wenn Sie diese Option in Kombination mit **Einbettung für einige Schriftarten aufheben**, Schriftarten in der **Einbettung für Schriftarten aufheben**Die Einbettung von Listen ist noch vollständig aufgehoben.*
+   >*Wenn Sie diese Option in Kombination mit **Einbettung für einige Schriftarten aufheben**verwenden, ist die Einbettung für die Schriftarten in der Liste **Schriftarten für die Aufhebung der Einbettung hinzufügen**weiterhin vollständig aufgehoben.*
 
    >[!NOTE]
    >
-   >*Schrifteinbettung in Untergruppen ist die Vorgehensweise, nur einen Teil einer Schriftart einzubetten. Eine Schriftartuntergruppe enthält nur die im Dokument verwendeten Zeichen.*
+   >*Die Schrifteinbettung in Untergruppen ist eine Vorgehensweise für die Einbettung eines Teils einer Schriftart. Eine Schriftartuntergruppe enthält nur die im Dokument verwendeten Zeichen.*
 
 ### Transparenz {#transparency}
 
-Wenn Ihr PDF-Dokument Grafiken enthält, die Transparenz enthalten, können Sie die PDF Optimizer-Einstellungen verwenden, um die Transparenz zu reduzieren und die Dateigröße zu verringern.
+Wenn das PDF-Dokument Grafiken mit Transparenz enthält, können Sie die PDF-Optimierungseinstellungen verwenden, um die Transparenz und die Dateigröße zu reduzieren.
 
 >[!NOTE]
 >
->Wenn Acrobat 4.0 und höher als Target-PDF-Version ausgewählt ist, werden alle transparenten Objekte reduziert. Bei anderen Target-PDF-Versionen wird Transparenz unterstützt und Sie können die Transparenzeinstellungen konfigurieren.
+>Wenn Acrobat 4.0 und höher als Ziel-PDF-Version ausgewählt ist, werden alle transparenten Objekte reduziert. Bei anderen Ziel-PDF-Versionen wird Transparenz unterstützt und Sie können die Transparenzeinstellungen konfigurieren.
 
-Auswählen **Transparenz** , um die Transparenzeinstellungen bei der Optimierung von PDF-Dokumenten zu konfigurieren.
+Wählen Sie **Transparenz**, um die Transparenzeinstellungen beim Optimieren von PDF-Dokumenten zu konfigurieren.
 
-**Transparenzstufe** Legt die Menge an Vektorinformationen fest, die beibehalten wird. Bei höheren Einstellungen werden mehr Vektorobjekte beibehalten, bei niedrigeren Einstellungen werden mehr Vektorobjekte gerastert. Bei Zwischeneinstellungen werden einfache Bereiche in Vektorform beibehalten und komplexe Bereiche werden gerastert. Wählen Sie die niedrigste Einstellung aus, um alle Grafiken zu rastern.
+**Transparenzstufe** Legt die Menge an Vektorinformationen fest, die beibehalten wird. Bei höheren Einstellungen werden mehr Vektorobjekte beibehalten, bei niedrigeren Einstellungen werden mehr Vektorobjekte gerastert. Bei mittleren Einstellungen werden einfache Bereiche in Vektorform beibehalten und komplexe Bereiche werden gerastert. Wählen Sie die niedrigste Einstellung aus, um alle Grafiken zu rastern.
 
 >[!NOTE]
 >
->Der Umfang der Rastern hängt von der Komplexität der Seite und den Typen der überlappenden Objekte ab.
+>Der Umfang der Rasterung hängt von der Komplexität der Seite und den Arten der überlappenden Objekte ab.
 
 **Strichgrafiken und Text**: Auflösung, in der alle Objekte, einschließlich Bilder, Vektorgrafiken, Text und Verläufe, gerastert werden. Die unterstützten Werte sind 1 Pixel pro Zoll (ppi) bis 9600 ppi.
 
@@ -293,9 +293,9 @@ Auswählen **Transparenz** , um die Transparenzeinstellungen bei der Optimierung
 >
 >Die Auflösung für Verlauf und Gitter sollte im Allgemeinen auf 150 bis 300 ppi eingestellt werden, da sich die Qualität von Verläufen, Schlagschatten und weichen Kanten mit höheren Auflösungen nicht verbessert. Hingegen wird durch höhere Auflösungen die Druckzeit verlängert und die Datei unnötig vergrößert.
 
-**Text in Pfade konvertieren**: Wandelt alle Textobjekte (Punkttext, Flächentext und Pfadtext) in Pfade um und ignoriert alle Textglyphen-Informationen auf Seiten mit Transparenz. Mit dieser Option wird sichergestellt, dass die Breite des Textes während der Reduzierung konsistent bleibt. Beachten Sie, dass die Aktivierung dieser Option dazu führt, dass kleine Schriften bei der Anzeige in Acrobat oder beim Drucken auf Desktop-Druckern mit niedriger Auflösung etwas dicker erscheinen. Sie wirkt sich nicht auf die Qualität des auf Druckern oder Bildträgern mit hoher Auflösung gedruckten Typs aus.
+**Text in Pfade konvertieren**: Wandelt alle Textobjekte (Punkttext, Flächentext und Pfadtext) in Pfade um und ignoriert alle Textglyphen-Informationen auf Seiten mit Transparenz. Mit dieser Option wird sichergestellt, dass die Breite des Textes während der Reduzierung konsistent bleibt. Beachten Sie, dass die Aktivierung dieser Option dazu führt, dass kleine Schriften etwas dicker erscheinen, wenn sie in Acrobat angezeigt oder auf Desktop-Druckern mit niedriger Auflösung gedruckt werden. Sie wirkt sich nicht auf die Qualität des auf Druckern oder Bildträgern mit hoher Auflösung gedruckten Typs aus.
 
-**Konturen in Pfade konvertieren** Wandelt auf Seiten mit Transparenz alle Konturen in einfache ausgefüllte Pfade um. Mit dieser Option wird sichergestellt, dass die Breite der Striche während der Reduzierung konsistent bleibt. Beachten Sie, dass die Aktivierung dieser Option dazu führt, dass dünne Striche etwas dicker erscheinen und die Leistung beim Reduzieren beeinträchtigen können.
+**Konturen in Pfade konvertieren** Wandelt auf Seiten mit Transparenz alle Konturen in einfache ausgefüllte Pfade um. Mit dieser Option wird sichergestellt, dass die Breite von Konturen beim Reduzieren unverändert bleibt. Beachten Sie, dass dünne Konturen geringfügig dicker angezeigt werden und die Leistung des Reduzierens beeinträchtigen werden könnte, wenn Sie diese Option aktivieren.
 
 **Komplexe Bereiche beschneiden**: Stellt sicher, dass die Grenzen zwischen Vektorgrafiken und gerasterten Grafiken entlang von Objektpfaden verlaufen. Mit dieser Option werden sichtbare Übergänge bei Grafiken vermieden, wenn ein Teil eines og
 
@@ -305,23 +305,23 @@ NOTE to WRITER: Unfinished sentence above.
 
 >[!NOTE]
 >
->Einige Drucktreiber verarbeiten Raster- und Vektorgrafiken unterschiedlich, was manchmal zu Farbzuordnungen führt. Sie können Stitching-Probleme minimieren, indem Sie einige druckertreiberspezifische Farbmanagementeinstellungen deaktivieren. Diese Einstellungen variieren je nach Drucker. Weitere Informationen finden Sie in der Dokumentation zu Ihrem Drucker.
+>Einige Druckertreiber verarbeiten Raster- und Vektorgrafiken unterschiedlich, was manchmal zu Farbabweichungen führt. Sie können dieses Problem minimieren, indem Sie einige für den jeweiligen Druckertreiber spezifische Farbmanagement-Einstellungen deaktivieren. Diese Einstellungen variieren je nach Drucker. Weitere Informationen finden Sie in der Dokumentation zu Ihrem Drucker.
 
 Überdruck beibehalten: Lässt die Farbe von transparentem Bildmaterial mit der Hintergrundfarbe verschmelzen, um einen Überdruckeffekt zu erzielen.
 
-Die folgende Tabelle zeigt allgemeine Typen von Druckern und ihre in dpi gemessene Auflösung, ihre standardmäßige Bildschirmausrichtung, gemessen in lpi (Lines per Inch, Zeilen pro Zoll), und eine Neuberechnungsauflösung für Bilder, gemessen in Pixel pro Zoll (ppi). Wenn Sie beispielsweise auf einem 600-dpi-Laserdrucker drucken, geben Sie 170 für die Auflösung ein, mit der Bilder neu berechnet werden sollen.
+Die folgende Tabelle zeigt gängige Druckertypen und ihre Auflösung in dpi, ihre Standard-Rasterweite in Zeilen pro Zoll (lpi) und eine Resampling-Auflösung für Bilder in Pixel pro Zoll (ppi). Wenn Sie beispielsweise auf einem 600-dpi-Laserdrucker drucken, geben Sie 170 für die Auflösung ein, mit der Bilder neu berechnet werden sollen.
 
 **Bilder**: Wählen Sie diese Option, um Komprimierungs- und Neuberechnungsoptionen für Farb-, Graustufen- und Schwarzweißbilder festzulegen. Sie können mit diesen Optionen experimentieren, um einen guten Kompromiss zwischen Dateigröße und Bildqualität zu finden. Die Auflösungseinstellung für Farb- und Graustufenbilder sollte dem 1,5- bis 2-fachen der Rasterweitenlinierung entsprechen, mit der die Datei gedruckt wird. Die Auflösung für Schwarzweißbilder sollte mit der des Ausgabegeräts übereinstimmen. Durch das Speichern eines Schwarzweißbilds mit einer Auflösung von mehr als 1500 dpi wird die Dateigröße erhöht, ohne dass sich die Bildqualität spürbar verbessert. Bilder, die vergrößert werden, wie beispielsweise Karten, erfordern möglicherweise höhere Auflösungen.
 
 >[!NOTE]
 >
->Das Neuberechnen von Schwarzweißbildern kann zu unerwarteten Anzeigeergebnissen führen, z. B. zu keiner Bildanzeige. In diesem Fall deaktivieren Sie die Neuberechnung und konvertieren die Datei erneut. Dieses Problem tritt am wahrscheinlichsten bei der Teilberechnung und am wenigsten bei der bikubischen Neuberechnung auf.
+>Das Neuberechnen von Schwarzweißbildern kann zu unerwarteten Anzeigeergebnissen führen, z. B. zu keiner Bildanzeige. In diesem Fall deaktivieren Sie die Neuberechnung und konvertieren die Datei erneut. Dieses Problem tritt am wahrscheinlichsten beim Subsampling und am wenigsten bei der bikubischen Neuberechnung auf.
 
 <table>
  <tbody>
   <tr>
    <th><p><strong>Druckerauflösung</strong></p> </th>
-   <th><p><strong>Standardzeilenbildschirm</strong></p> </th>
+   <th><p><strong>Standardrasterweite</strong></p> </th>
    <th><p><strong>Bildauflösung</strong></p> </th>
   </tr>
   <tr>
@@ -347,68 +347,68 @@ Die folgende Tabelle zeigt allgemeine Typen von Druckern und ihre in dpi gemesse
  </tbody>
 </table>
 
-#### Objekte verwerfen {#discard-objects}
+#### Verwerfen von Objekten {#discard-objects}
 
-* Auswählen **Objekte verwerfen** um Objekte anzugeben, die aus dem PDF entfernt werden sollen, und um gekrümmte Linien in CAD-Zeichnungen zu optimieren.
-* **Alle Formulareinsendungen verwerfen, Aktionen importieren und zurücksetzen**: Deaktiviert alle Aktionen im Zusammenhang mit dem Senden oder Importieren von Formulardaten und setzt Formularfelder zurück. Diese Option behält Formularobjekte bei, mit denen Aktionen verknüpft sind.
-* **Alle JavaScript-Aktionen verwerfen**: Entfernt alle Aktionen aus dem PDF, die JavaScript verwenden.
-* **Eingebettete Seitenminiaturen verwerfen**: Entfernt eingebettete Miniaturansichten von Seiten. Diese Option ist für große Dokumente nützlich, bei denen es lange dauern kann, bis Seitenminiaturansichten gezeichnet werden, nachdem Sie auf die Schaltfläche &quot;Seiten&quot;geklickt haben.
-* **Glatte Linien in Kurven konvertieren**: Reduziert die Anzahl der Steuerpunkte, die zum Erstellen von Kurven in CAD-Zeichnungen verwendet werden, was zu kleineren PDF-Dateien und einer schnelleren Bildschirmwiedergabe führt.
-* **Eingebettete Druckeinstellungen verwerfen**: Entfernt eingebettete Druckeinstellungen, z. B. Seitenskalierung und Duplexmodus, aus dem Dokument.
+* Wählen Sie **Objekte verwerfen**, um die Objekte anzugeben, die aus der PDF-Datei entfernt werden sollen, und um gekrümmte Linien in CAD-Zeichnungen zu optimieren.
+* **Alle Sende-, Import- und Zurücksetzungsaktionen für Formulare verwerfen**: Deaktiviert alle Aktionen im Zusammenhang mit dem Senden oder Importieren von Formulardaten und setzt Formularfelder zurück. Mit dieser Option werden Formularobjekte, mit denen Aktionen verknüpft sind, beibehalten.
+* **Alle JavaScript-Aktionen verwerfen**: Entfernt alle Aktionen aus der PDF-Datei, die JavaScript verwenden.
+* **Eingebettete Seitenminiaturansichten verwerfen**: Entfernt eingebettete Miniaturansichten von Seiten. Diese Option ist für große Dokumente nützlich, bei denen es lange dauern kann, bis Seitenminiaturansichten gezeichnet worden sind, nachdem Sie auf die Schaltfläche „Seiten“ geklickt haben.
+* **Geglättete Linien in Kurven konvertieren**: Verringert die Anzahl von Steuerpunkten zum Erstellen von Kurven in CAD-Zeichnungen, was zu kleineren PDF-Dateien und einer schnelleren Bildschirmwiedergabe führt.
+* **Eingebettete Druckeinstellungen verwerfen**: Entfernt eingebettete Druckeinstellungen aus dem Dokument, z. B. Seitenskalierung und Duplexmodus.
 * **Lesezeichen verwerfen**: Entfernt alle Lesezeichen aus dem Dokument.
-* **Formularfelder reduzieren**: Macht Formularfelder unbrauchbar, ohne ihr Aussehen zu ändern. Formulardaten werden mit der Seite zusammengeführt, um Seiteninhalt zu werden.
-* **Alle alternativen Bilder verwerfen**: Entfernt alle Versionen eines Bildes mit Ausnahme der Version, die für die Anzeige auf dem Bildschirm vorgesehen ist. Einige PDF enthalten mehrere Versionen desselben Bildes für verschiedene Zwecke, z. B. niedrige Bildschirmauflösung und Druck mit hoher Auflösung.
-* **Dokument-Tags verwerfen**: Entfernt Tags aus dem Dokument, wodurch auch die Barrierefreiheits- und Umfließen-Funktionen für den Text entfernt werden.
-* **Bildfragmente erkennen und zusammenführen**: Sucht nach Bildern oder Masken, die in dünne Scheiben fragmentiert sind, und versucht, die Scheiben in einem Bild oder einer Maske zusammenzuführen.
+* **Formularfelder reduzieren**: Macht Formularfelder unbrauchbar, ohne ihr Aussehen zu ändern. Formulardaten werden mit der Seite zusammengeführt und werden zu Seiteninhalt.
+* **Alle alternativen Bilder verwerfen**: Entfernt alle Versionen eines Bildes mit Ausnahme der Version, die für die Anzeige auf dem Bildschirm vorgesehen ist. Einige PDF-Dateien enthalten mehrere Versionen desselben Bildes für verschiedene Zwecke, z. B. niedrige Bildschirmauflösung und Druck mit hoher Auflösung.
+* **Dokument-Tags verwerfen**: Entfernt Tags aus dem Dokument, wodurch auch die Barrierefreiheits- und Reflow-Funktionen für den Text entfernt werden.
+* **Bildfragmente erkennen und zusammenführen**: Sucht nach Bildern oder Masken, die in kleine Ausschnitte fragmentiert sind, um diese Ausschnitte in einem einzigen Bild oder einer einzigen Maske zusammenzuführen.
 * **Eingebetteten Suchindex verwerfen**: Entfernt eingebettete Suchindizes, wodurch die Dateigröße verringert wird.
 
 #### Benutzerdaten verwerfen {#discard-user-data}
 
-Auswählen **Benutzerdaten verwerfen** um alle persönlichen Informationen zu entfernen, die Sie nicht an andere Benutzer weitergeben oder für diese freigeben möchten.
+Wählen Sie **Benutzerdaten verwerfen** aus, um alle persönlichen Informationen zu entfernen, die Sie nicht an andere Benutzende weitergeben oder für diese freigeben möchten.
 
-* **Alle Kommentare, Forms und Multimedia verwerfen**: Entfernt alle Kommentare, Formulare, Formularfelder und Multimedia-Dateien aus der PDF.
-* **Alle Objektdaten verwerfen**: Entfernt alle Objekte aus dem PDF.
-* **Externe Querverweise verwerfen**: Entfernt Links zu anderen Dokumenten. Links, die zu anderen Stellen innerhalb der PDF springen, werden nicht entfernt.
-* **Ausgeblendeten Ebeneninhalt verwerfen und sichtbare Ebenen reduzieren**: Verringert die Dateigröße. Das optimierte Dokument sieht wie das ursprüngliche PDF aus, enthält jedoch keine Ebeneninformationen.
-* **Dokumentinformationen und Metadaten verwerfen**: Entfernt Informationen im Dokumentinformationswörterbuch und alle Metadaten-Streams. (Verwenden Sie den Befehl &quot;Speichern unter&quot;, um Metadaten-Streams in eine Kopie der PDF wiederherzustellen.)
+* **Alle Kommentare, Formulare und Multimedia-Dateien verwerfen**: Entfernt alle Kommentare, Formulare, Formularfelder und Multimedia-Dateien aus der PDF-Datei.
+* **Alle Objektdaten verwerfen**: Entfernt alle Objekte aus der PDF-Datei.
+* **Externe Querverweise verwerfen**: Entfernt Links zu anderen Dokumenten. Links, die auf andere Stellen innerhalb der PDF-Datei verweisen, werden nicht entfernt.
+* **Ausgeblendete Ebeneninhalte verwerfen und sichtbare Ebenen reduzieren**: Verringert die Dateigröße. Das optimierte Dokument sieht wie die ursprüngliche PDF-Datei aus, enthält jedoch keine Ebeneninformationen.
+* **Dokumentinformationen und Metadaten verwerfen**: Entfernt Informationen im Dokumentinformationswörterbuch und alle Metadaten-Streams. (Verwenden Sie den Befehl „Speichern unter“, um Metadaten-Datenströme in einer Kopie der PDF-Datei wiederherzustellen.)
 * **Dateianlagen verwerfen**: Entfernt alle Dateianlagen, einschließlich der Anlagen, die als Kommentare der PDF-Datei hinzugefügt wurden. (PDF Optimizer optimiert keine angehängten Dateien.)
-* **Private Daten anderer Anwendungen verwerfen**: Entfernt Informationen aus einem PDF-Dokument, das nur für die Anwendung nützlich ist, die das Dokument erstellt hat. Diese Einstellung wirkt sich nicht auf die Funktionalität des PDF aus, verringert jedoch die Dateigröße.
+* **Private Daten anderer Anwendungen verwerfen**: Entfernt Informationen aus einem PDF-Dokument, die nur für die Anwendung hilfreich sind, mit der das Dokument erstellt wurde. Diese Einstellung wirkt sich nicht auf die Funktionalität des PDF-Dokuments aus, verringert jedoch die Dateigröße.
 
 ### Bereinigen {#clean-up}
 
 Wählen Sie **Bereinigung**, um nicht erforderliche Elemente aus dem Dokument zu entfernen.
-Diese Elemente umfassen Elemente, die veraltet sind oder für die beabsichtigte Verwendung des Dokuments nicht mehr erforderlich sind. Das Entfernen bestimmter Elemente kann die Funktionalität der PDF ernsthaft beeinträchtigen. Standardmäßig werden nur Elemente ausgewählt, die keine Auswirkungen auf die Funktionalität haben. Wenn Sie sich nicht sicher sind, welche Auswirkungen das Entfernen anderer Optionen hat, verwenden Sie die Standardauswahl.
+Zu diesen Elementen gehören veraltete oder für den vorgesehenen Zweck des Dokuments unnötige Elemente. Wenn Sie bestimmte Elemente entfernen, kann dies schwerwiegende Auswirkungen auf die Funktionalität der PDF-Datei haben. Standardmäßig werden nur Elemente, die keinen Einfluss auf die Funktionalität haben, ausgewählt. Wenn Sie nicht sicher sind, welche Auswirkungen das Entfernen anderer Optionen hat, verwenden Sie die Standardauswahl.
 
 **Komprimierung**
 
-Wählen Sie eine der folgenden Flate-Komprimierungsoptionen aus dem Dropdown-Menü aus:
+Wählen Sie eine der folgenden Flate-Komprimierungsoptionen aus dem Dropdown-Menü:
 
 * Gesamte Datei komprimieren
 * Dokumentstruktur komprimieren
 * Komprimierung entfernen
 * Komprimierung unverändert lassen
 
-**Verwenden Sie Flate , um nicht kodierte Streams zu kodieren**: Wendet Flate-Komprimierung auf alle nicht kodierten Streams an.
+**Nicht kodierte Datenströme mit Flate kodieren**: Wendet Flate-Komprimierung auf alle nicht kodierten Datenströme an.
 
-**Ungültige Lesezeichen verwerfen**: Entfernt Lesezeichen, die auf gelöschte Seiten im Dokument verweisen.
+**Ungültige Lesezeichen verwerfen**: Entfernt alle Lesezeichen, die auf gelöschte Seiten im Dokument verweisen.
 
-**Nicht referenzierte benannte Ziele verwerfen**: Entfernt benannte Ziele, auf die nicht intern innerhalb des PDF-Dokuments verwiesen wird. Diese Option überprüft nicht auf Links von anderen PDF-Dateien oder Websites.
+**Nicht referenzierte benannte Ziele verwerfen**: Entfernt benannte Ziele, auf die nicht intern innerhalb des PDF-Dokuments verwiesen wird. Diese Option überprüft keine Verknüpfungen von anderen PDF-Dateien oder Websites.
 
-**PDF für schnelle Webanzeige optimieren**: Strukturiert ein PDF-Dokument für das seitenweise Herunterladen (Byte-Serving) von Webservern um.
+**PDF für schnelle Webanzeige optimieren**: Strukturiert ein PDF-Dokument für das seitenweise Herunterladen (Byte-Serving) von Webservern neu.
 
-**Verwenden Sie stattdessen Flate in Streams, die LZW-Kodierung verwenden**: Wendet Flate-Komprimierung auf alle Inhalts-Streams und Bilder an, die LZW-Kodierung verwenden.
+**In Datenströmen, die LZW-Kodierung verwenden, stattdessen Flate verwenden:**: Wendet Flate-Komprimierung auf alle Inhalts-Streams und Bilder an, die LZW-Kodierung verwenden.
 
 **Ungültige Links verwerfen**: Entfernt Links, die zu ungültigen Zielen springen.
 
-**Seiteninhalt optimieren**: Konvertiert alle Zeichen am Zeilenende in Leerzeichen, wodurch die Flate-Komprimierung verbessert wird.
+**Seiteninhalt optimieren**: Konvertiert alle Zeilenendezeichen in Leerzeichen, wodurch die Flate-Komprimierung verbessert wird.
 
 ## Microsoft Excel-Einstellungen (nur Windows) {#microsoft-excel-settings-windows-only}
 
-Diese Optionen bestimmen, wie Microsoft Excel-Dateien konvertiert werden. Anweisungen zum Zugriff auf diese Optionen finden Sie unter [Dateitypeinstellungen erstellen oder bearbeiten](#create-or-edit-file-type-settings).
+Diese Optionen bestimmen, wie Microsoft Excel-Dateien konvertiert werden. Anweisungen zum Zugriff auf diese Optionen finden Sie unter [Erstellen oder Bearbeiten von Dateitypeinstellungen](#create-or-edit-file-type-settings).
 
 **OpenOffice als Ersatzkonverter versuchen**: Wenn diese Option aktiviert ist und eine Konvertierung mit Microsoft Excel fehlschlägt oder das angegebene Zeitlimit erreicht, versucht PDF Generator, die Konvertierung mithilfe von OpenOffice auszuführen. Wenn die Konvertierung mit OpenOffice fehlschlägt oder das angegebene Zeitlimit erreicht, wird eine Ausnahme in die Protokolldatei geschrieben.
 
-**Dateinamenerweiterungen**: Gibt die Dateinamenerweiterungen für Dateitypen an, die durch Kommas getrennt sind und für diese Anwendung akzeptiert werden. Der Standardwert lautet `xls,xlsx`. Setzen Sie keinen Punkt vor und kein Leerzeichen zwischen die Erweiterungen.
+**Dateinamenerweiterungen**: Legt die Dateinamenerweiterungen für Dateitypen fest (durch Kommas getrennt), die für diese Anwendung akzeptiert werden. Der Standardwert lautet `xls,xlsx`. Setzen Sie keinen Punkt vor und kein Leerzeichen zwischen die Erweiterungen.
 
 **PDF/A-1a-kompatible Datei erstellen**: Erzwingt die Verwendung der Adobe PDF-Einstellung „PDF/A-1b:2005(RGB)“.
 
@@ -434,29 +434,29 @@ Diese Optionen bestimmen, wie Microsoft Excel-Dateien konvertiert werden. Anweis
 
 ## Microsoft PowerPoint-Einstellungen (nur Windows) {#microsoft-powerpoint-settings-windows-only}
 
-Diese Optionen bestimmen, wie Microsoft PowerPoint-Dateien konvertiert werden. Anweisungen zum Zugriff auf diese Optionen finden Sie unter [Dateitypeinstellungen erstellen oder bearbeiten](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings).
+Diese Optionen bestimmen, wie Microsoft PowerPoint-Dateien konvertiert werden. Anweisungen zum Zugriff auf diese Optionen finden Sie unter [Erstellen oder Bearbeiten von Dateitypeinstellungen](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **[!UICONTROL OpenOffice als Ersatzkonverter versuchen]**: Wenn diese Option aktiviert ist und eine Konvertierung mit Microsoft PowerPoint fehlschlägt oder das angegebene Zeitlimit erreicht, versucht PDF Generator, die Konvertierung mithilfe von OpenOffice auszuführen. Wenn die Konvertierung mit OpenOffice fehlschlägt oder das angegebene Zeitlimit erreicht, wird eine Ausnahme in die Protokolldatei geschrieben.
 
-**[!UICONTROL Dateinamenerweiterungen]**: Gibt die Dateinamenerweiterungen für Dateitypen an, die durch Kommas getrennt sind und für diese Anwendung akzeptiert werden. Die Standardeinstellung ist ppt,pptx. Setzen Sie keinen Punkt vor und kein Leerzeichen zwischen die Erweiterungen.
+**[!UICONTROL Dateinamenerweiterungen]**: Legt die Dateinamenerweiterungen für Dateitypen fest (durch Kommas getrennt), die für diese Anwendung akzeptiert werden. Die Standardeinstellung ist ppt,pptx. Setzen Sie keinen Punkt vor und kein Leerzeichen zwischen die Erweiterungen.
 
 **[!UICONTROL Dokumentinformationen konvertieren]**: Fügt Dokumentinformationen aus dem Dialogfeld „Eigenschaften“ der Quelldatei hinzu, einschließlich Titel, Thema, Autor, Schlüsselwörtern, Manager, Unternehmen, Kategorie und Kommentaren. Standardmäßig ist diese Option aktiviert.
 
 **[!UICONTROL Lesezeichen zu Adobe PDF hinzufügen:]** Konvertiert PowerPoint-Arbeitsblattnamen in Lesezeichen. Standardmäßig ist diese Option aktiviert.
 
-**[!UICONTROL Quelldatei an Adobe PDF anhängen]**: Fügt die Quelldatei der PDF-Datei als Anlage hinzu. Diese Option ist standardmäßig deaktiviert.
+**[!UICONTROL Quelldatei an Adobe PDF anfügen]**: Fügt die Quelldatei der PDF-Datei als Anlage hinzu. Standardmäßig ist diese Option deaktiviert.
 
-**[!UICONTROL Barrierefreiheit und Reflow mit getaggten Adobe PDF aktivieren]**: Bettet Tags in die PDF-Datei ein. Diese Option ist standardmäßig deaktiviert.
+**[!UICONTROL Eingabehilfe und Umfließen mit Adobe PDF mit Tags aktivieren]**: Bettet Tags in die PDF-Datei ein. Standardmäßig ist diese Option deaktiviert.
 
-**[!UICONTROL Multimedia in PDF Multimedia konvertieren]**: Konvertiert nach Möglichkeit Multimedia in PDF Multimedia. Standardmäßig ist diese Option aktiviert.
+**[!UICONTROL Multimedia in PDF-Multimedia konvertieren]**: Konvertiert, falls möglich, Multimedia in Multimedia-PDF. Standardmäßig ist diese Option aktiviert.
 
-**[!UICONTROL Konvertieren von Lautsprecherhinweisen]**: Konvertiert Lautsprechernotizen in PDF.
+**[!UICONTROL Vortragsnotizen konvertieren]**: Konvertiert Vortragsnotizen in PDF.
 
-**[!UICONTROL Makros automatisch ausführen]**: Führt vor dem Konvertieren des Dokuments alle Makros im PowerPoint-Dokument aus (z. B. ein Makro, das die aktuelle Uhrzeit einfügt).
+**[!UICONTROL Makros automatisch ausführen]**: Führt vor dem Konvertieren des Dokuments alle Makros im PowerPoint-Dokument aus (z. B. ein Makro, das die aktuelle Uhrzeit einfügt).
 
-**[!UICONTROL PDF-Layout basierend auf PowerPoint-Druckereinstellungen]**: Verwendet PowerPoint-Druckereinstellungen zum Layout des PDF-Dokuments.
+**[!UICONTROL PDF-Layout basierend auf PowerPoint-Druckereinstellungen]**: Verwendet PowerPoint-Druckereinstellungen für das Layout des PDF-Dokuments.
 
-**[!UICONTROL Links zu Adobe PDF hinzufügen]**: Behält vorhandene Links bei, wenn die Datei konvertiert wird. Das Erscheinungsbild von Links bleibt im Allgemeinen unverändert. Links können nur erstellt werden, wenn die Option Barrierefreiheit aktivieren ebenfalls ausgewählt ist. Diese Option ist standardmäßig deaktiviert.
+**[!UICONTROL Links zu Adobe PDF hinzufügen]**: Behält vorhandene Links bei, wenn die Datei konvertiert wird. Die Darstellung von Links bleibt grundsätzlich unverändert. Links können nur erstellt werden, wenn die Option „Barrierefreiheit aktivieren“ ebenfalls aktiviert ist. Standardmäßig ist diese Option deaktiviert.
 
 **[!UICONTROL Folienübergänge in Adobe PDF speichern]**: Konvertiert Folienübergänge. Standardmäßig ist diese Option aktiviert.
 
@@ -468,44 +468,44 @@ Diese Optionen bestimmen, wie Microsoft PowerPoint-Dateien konvertiert werden. A
 
 ## Microsoft Project-Einstellungen (nur Windows) {#microsoft-project-settings-windows-only}
 
-Diese Optionen bestimmen, wie Microsoft-Projektdateien konvertiert werden. Anweisungen zum Zugriff auf diese Optionen finden Sie unter [Dateitypeinstellungen erstellen oder bearbeiten](#create-or-edit-file-type-settings).
+Diese Optionen bestimmen, wie Microsoft-Projektdateien konvertiert werden. Anweisungen zum Zugriff auf diese Optionen finden Sie unter [Erstellen oder Bearbeiten von Dateitypeinstellungen](#create-or-edit-file-type-settings).
 
 1. **[!UICONTROL Dateinamenerweiterungen]**: Legt die Dateinamenerweiterungen für Dateitypen fest (durch Kommas getrennt), die für dieses Programm akzeptiert werden. Der Standardwert lautet `mpp`. Setzen Sie keinen Punkt vor und kein Leerzeichen zwischen die Erweiterungen.
 
 1. **[!UICONTROL Dokumentinformationen konvertieren]**: Fügt Dokumentinformationen aus dem Dialogfeld „Eigenschaften“ der Quelldatei hinzu, einschließlich Titel, Thema, Autor, Schlüsselwörtern, Manager, Unternehmen, Kategorie und Kommentaren. Standardmäßig ist diese Option aktiviert.
-1. **[!UICONTROL Quelldatei an Adobe PDF anhängen]**: Fügt die Quelldatei der PDF-Datei als Anlage hinzu.
+1. **[!UICONTROL Quelldatei an Adobe PDF anfügen]**: Fügt die Quelldatei der PDF-Datei als Anlage hinzu.
 1. **[!UICONTROL PDF/A-1a-kompatible Datei erstellen]**: Erzwingt die Verwendung der Adobe PDF-Einstellung „PDF/A-1b:2005(RGB)“.
 1. **[!UICONTROL Makros automatisch ausführen]**: Führt vor dem Konvertieren des Dokuments alle Makros im Microsoft Project-Dokument aus (z. B. ein Makro, das die aktuelle Uhrzeit einfügt).
 
 ## Microsoft Word-Einstellungen (nur Windows) {#microsoft-word-settings-windows-only}
 
-Diese Optionen bestimmen, wie Microsoft Word-Dateien konvertiert werden. Anweisungen zum Zugriff auf diese Optionen finden Sie unter [Dateitypeinstellungen erstellen oder bearbeiten](#create-or-edit-file-type-settings).
+Diese Optionen bestimmen, wie Microsoft Word-Dateien konvertiert werden. Anweisungen zum Zugriff auf diese Optionen finden Sie unter [Erstellen oder Bearbeiten von Dateitypeinstellungen](#create-or-edit-file-type-settings).
 
 **[!UICONTROL OpenOffice als Ersatzkonverter versuchen]**: Wenn diese Option aktiviert ist und eine Konvertierung mit Microsoft Word fehlschlägt oder das angegebene Zeitlimit erreicht, versucht PDF Generator, die Konvertierung mithilfe von OpenOffice auszuführen. Wenn die Konvertierung mit OpenOffice fehlschlägt oder das angegebene Zeitlimit erreicht, wird eine Ausnahme in die Protokolldatei geschrieben.
 
-**[!UICONTROL Dateinamenerweiterungen]**: Gibt die Dateinamenerweiterungen für Dateitypen an, die durch Kommas getrennt sind und für diese Anwendung akzeptiert werden. Der Standardwert lautet `doc,docx,rtf,txt`. Setzen Sie keinen Punkt vor und kein Leerzeichen zwischen die Erweiterungen.
+**[!UICONTROL Dateinamenerweiterungen]**: Legt die Dateinamenerweiterungen für Dateitypen fest (durch Kommas getrennt), die für diese Anwendung akzeptiert werden. Der Standardwert lautet `doc,docx,rtf,txt`. Setzen Sie keinen Punkt vor und kein Leerzeichen zwischen die Erweiterungen.
 
 **[!UICONTROL Dokumentinformationen konvertieren]**: Fügt Dokumentinformationen aus dem Dialogfeld „Eigenschaften“ der Quelldatei hinzu, einschließlich Titel, Thema, Autor, Schlüsselwörtern, Manager, Unternehmen, Kategorie und Kommentaren. Standardmäßig ist diese Option aktiviert.
 
 **[!UICONTROL Lesezeichen zu Adobe PDF hinzufügen]**: Konvertiert Überschriften in Lesezeichen. Standardmäßig ist diese Option aktiviert.
 
-**[!UICONTROL Quelldatei an Adobe PDF anhängen]**: Fügt die Quelldatei der PDF-Datei als Anlage hinzu.
+**[!UICONTROL Quelldatei an Adobe PDF anfügen]**: Fügt die Quelldatei der PDF-Datei als Anlage hinzu.
 
 **[!UICONTROL Querverweise und Inhaltsverzeichnisse in Links konvertieren]**: Konvertiert alle Querverweise und Inhaltsverzeichniseinträge in Links. Standardmäßig ist diese Option aktiviert.
 
-**[!UICONTROL Barrierefreiheit und Reflow mit getaggten Adobe PDF aktivieren]**: Bettet Tags in die PDF-Datei ein. Standardmäßig ist diese Option aktiviert.
+**[!UICONTROL Eingabehilfe und Umfließen mit Adobe PDF mit Tags aktivieren]**: Bettet Tags in die PDF-Datei ein. Standardmäßig ist diese Option aktiviert.
 
-**[!UICONTROL PDF/A-1a-kompatible Datei erstellen]**: Erzwingt bei Auswahl die Verwendung der Einstellung PDF/A-1b:2005 RGB Adobe PDF .
+**[!UICONTROL PDF/A-1a-kompatible Datei erstellen]**: Erzwingt, falls ausgewählt, die Verwendung der Adobe PDF-Einstellung „PDF/A-1b:2005(RGB)“.
 
-**[!UICONTROL Makros automatisch ausführen]**: Führt vor dem Konvertieren des Dokuments alle Makros im Word-Dokument aus (z. B. ein Makro, das die aktuelle Uhrzeit einfügt).
+**[!UICONTROL Makros automatisch ausführen]**: Führt vor dem Konvertieren des Dokuments alle Makros im Word-Dokument aus (z. B. als ein Makro, das die aktuelle Uhrzeit einfügt).
 
 **[!UICONTROL Dokumentmarkierung in Adobe PDF beibehalten]**: Konvertiert das Markup im Word-Dokument in Anmerkungen in der PDF-Datei.
 
 **[!UICONTROL Verknüpfungen zu Adobe PDF hinzufügen:]** Konvertiert Hyperlinks in der Quelldatei in Hyperlinks im PDF-Dokument.
 
-**[!UICONTROL Fußnoten- und Endnotenlinks konvertieren]**: Erstellt Links aus den Zitaten der Fußnoten und Endnoten zu Anmerkungen im PDF-Dokument.
+**[!UICONTROL Fußnoten- und Endnoten-Links konvertieren]**: Erstellt Links aus den Zitaten der Fußnoten und Endnoten zu Anmerkungen im PDF-Dokument.
 
-**[!UICONTROL Angezeigte Kommentare in Anmerkungen in Adobe PDF konvertieren]**: Konvertiert Kommentare im Word-Dokument in Textanmerkungen im PDF-Dokument.
+**[!UICONTROL Angezeigte Kommentare in Anmerkungen in Adobe PDF konvertieren]**: Konvertiert Kommentare im Word-Dokument zu Textanmerkungen im PDF-Dokument.
 
 **[!UICONTROL Erweitertes Tagging aktivieren]**: Fügt erweiterte Tags für verbesserte Barrierefreiheit hinzu.
 
@@ -513,7 +513,7 @@ Diese Optionen bestimmen, wie Microsoft Word-Dateien konvertiert werden. Anweisu
 
 **[!UICONTROL Spezifische Stile in Lesezeichen konvertieren]**: Konvertiert die Stile, die Sie im Feld **[!UICONTROL Stile mit Ebenen]** definieren, zu Lesezeichen im PDF-Dokument.
 
-**[!UICONTROL Stile mit Ebenen With Levels]** Gibt an, welche Stile im Word-Dokument zu Lesezeichen in der PDF-Datei konvertiert werden. Gibt auch die Ebene der Lesezeichen an. Um diese Funktion zu verwenden, deaktivieren Sie die Option **[!UICONTROL Alle Stile in Lesezeichen konvertieren]** und geben Sie die Stilnamen im folgenden Format an:
+**[!UICONTROL Stile mit Ebenen With Levels]** Gibt an, welche Stile im Word-Dokument zu Lesezeichen in der PDF-Datei konvertiert werden. Gibt auch die Ebene der Lesezeichen an. Um diese Funktion zu nutzen, deaktivieren Sie die Option **[!UICONTROL Alle Stile in Lesezeichen konvertieren]** und geben Sie die Namen der Stile im folgenden Format an:
 
 **styleName1=level1[,styleName2=level2...]**
 
@@ -529,13 +529,13 @@ Wenn ein Microsoft Word-Formatvorlagenname ein Komma (,) oder ein Gleichheitszei
 
 **Lesezeichen zu Adobe PDF hinzufügen**: Konvertiert Überschriften in Lesezeichen. Standardmäßig ist diese Option aktiviert.
 
-**Quelldatei an Adobe PDF anhängen**: Fügt die Quelldatei der PDF-Datei als Anlage hinzu.
+**Quelldatei an Adobe PDF anfügen**: Fügt die Quelldatei der PDF-Datei als Anlage hinzu.
 
 **Ebenen in Adobe PDF immer reduzieren**: Reduziert alle Visio-Ebenen.
 
 **Alle Seiten konvertieren**: Konvertiert alle Seiten der Visio-Datei.
 
-**Ebenenbereich bei Anzeige in Adobe Acrobat öffnen**: Wenn Visio-Ebenen nicht reduziert werden, öffnet sich ein Fenster, in dem Sie die Ebenen angeben können, die in der PDF-Datei erhalten bleiben, wenn sie mit Acrobat geöffnet werden. Standardmäßig ist diese Option aktiviert.
+**Ebenenbedienfeld öffnen, wenn es in Adobe Acrobat angezeigt wird**: Öffnet, falls Visio-Ebenen nicht reduziert werden, ein Fenster, in dem Sie die Ebenen angeben können, die in der PDF-Dateien beibehalten werden, wenn sie mithilfe von Acrobat geöffnet werden. Standardmäßig ist diese Option aktiviert.
 
 **PDF/A-1b-kompatible Datei erstellen**: Erzwingt die Verwendung der Adobe PDF-Einstellung „PDF/A-1b:2005 (RGB)“.
 
@@ -543,78 +543,78 @@ Wenn ein Microsoft Word-Formatvorlagenname ein Komma (,) oder ein Gleichheitszei
 
 ## Microsoft Publisher-Einstellungen (nur Windows) {#microsoft-publisher-settings-windows-only}
 
-Diese Optionen bestimmen, wie Microsoft Publisher-Dateien konvertiert werden. Anweisungen zum Zugriff auf diese Optionen finden Sie unter [Dateitypeinstellungen erstellen oder bearbeiten](#create-or-edit-file-type-settings).
+Diese Optionen bestimmen, wie Microsoft Publisher-Dateien konvertiert werden. Anweisungen zum Zugriff auf diese Optionen finden Sie unter [Erstellen oder Bearbeiten von Dateitypeinstellungen](#create-or-edit-file-type-settings).
 
-**[!UICONTROL Dateinamenerweiterungen]**: Gibt die Dateinamenerweiterungen für Dateitypen an, die durch Kommas getrennt sind und für diese Anwendung akzeptiert werden. Der Standardwert lautet `pub`. Setzen Sie keinen Punkt vor und kein Leerzeichen zwischen die Erweiterungen.
+**[!UICONTROL Dateinamenerweiterungen]**: Legt die Dateinamenerweiterungen für Dateitypen fest (durch Kommas getrennt), die für diese Anwendung akzeptiert werden. Der Standardwert lautet `pub`. Setzen Sie keinen Punkt vor und kein Leerzeichen zwischen die Erweiterungen.
 
 ## AutoCAD-Einstellungen (nur Windows) {#autocad-settings-windows-only}
 
-Diese Optionen bestimmen, wie AutoCAD-Dateien konvertiert werden. Anweisungen zum Zugriff auf diese Optionen finden Sie unter [Dateitypeinstellungen erstellen oder bearbeiten](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings).
+Diese Optionen bestimmen, wie AutoCAD-Dateien konvertiert werden. Anweisungen zum Zugriff auf diese Optionen finden Sie unter [Erstellen oder Bearbeiten von Dateitypeinstellungen](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
-**[!UICONTROL Dateinamenerweiterungen]**: Gibt die Dateinamenerweiterungen für Dateitypen an, die durch Kommas getrennt sind und für diese Anwendung akzeptiert werden. Der Standardwert lautet `dwg`. Setzen Sie keinen Punkt vor und kein Leerzeichen zwischen die Erweiterungen.
+**[!UICONTROL Dateinamenerweiterungen]**: Legt die Dateinamenerweiterungen für Dateitypen fest (durch Kommas getrennt), die für diese Anwendung akzeptiert werden. Der Standardwert lautet `dwg`. Setzen Sie keinen Punkt vor und kein Leerzeichen zwischen die Erweiterungen.
 
 **[!UICONTROL Dokumentinformationen konvertieren]**: Fügt Dokumentinformationen aus dem Dialogfeld „Eigenschaften“ der Quelldatei hinzu, einschließlich Titel, Thema, Autor, Schlüsselwörtern, Manager, Unternehmen, Kategorie und Kommentaren. Standardmäßig ist diese Option aktiviert.
 
 **[!UICONTROL Lesezeichen zu Adobe PDF hinzufügen]**: Konvertiert Überschriften in Lesezeichen.
 
-**[!UICONTROL Ebenen in Adobe PDF immer reduzieren]**: Reduziert alle AutoCAD-Ebenen.
+**[!UICONTROL Ebenen in Adobe PDF immer reduzieren]**: Reduziert alle AutoCAD-Ebenen.
 
-**[!UICONTROL Ebenenfenster bei Anzeige in Adobe Acrobat öffnen]**: Zeigt die Ebenenstruktur an, wenn das PDF in Acrobat geöffnet wird.
+**[!UICONTROL Ebenenfenster bei Anzeige in Adobe Acrobat öffnen]**: Zeigt die Ebenenstruktur an, wenn die PDF in Acrobat geöffnet wird.
 
-**[!UICONTROL Alle Layouts konvertieren]**: Umfasst alle Layouts im PDF.
+**[!UICONTROL Alle Layouts konvertieren]**: Nimmt alle Layouts in die PDF auf.
 
-**[!UICONTROL Modellbereich in 3D konvertieren]**: Wenn diese Option aktiviert ist, wird das Layout des Modellraums in eine 3D-Anmerkung auf der PDF konvertiert.
+**[!UICONTROL Modellbereich in 3D konvertieren:]** Wenn diese Option aktiviert ist, wird das Modellbereich-Layout in eine 3D-Anmerkung in der PDF-Datei konvertiert.
 
-**[!UICONTROL Links zu Adobe PDF hinzufügen]**: Behält, falls ausgewählt, alle Links bei.
+**[!UICONTROL Verknüpfungen zu Adobe PDF hinzufügen]**: Behält alle Links bei, wenn ausgewählt.
 
-**[!UICONTROL Quelldatei an Adobe PDF anhängen]**: Fügt die Quelldatei der PDF-Datei als Anlage hinzu.
+**[!UICONTROL Quelldatei an Adobe PDF anfügen]**: Fügt die Quelldatei der PDF-Datei als Anlage hinzu.
 
-**[!UICONTROL PDF/A-1b-kompatible Datei erstellen]**: Erzwingt die Verwendung der Adobe PDF-Einstellung PDF/A-1b.
+**[!UICONTROL PDF/A-1b-kompatible Datei erstellen]**: Erzwingt die Verwendung der Adobe PDF-Einstellung „PDF/A-1b“.
 
-**[!UICONTROL Alle Ebenen konvertieren]**: Standardmäßig konvertiert PDF Generator nur die Standardebene von AutoCAD-Dateien in PDF und nicht alle Ebenen in der Datei. Wählen Sie diese Option, um alle Ebenen der Datei zu konvertieren.
+**[!UICONTROL Alle Ebenen konvertieren]**: Standardmäßig konvertiert PDF Generator nicht alle in AutoCAD-Dateien enthaltenen Ebenen, sondern nur die Standardebene der Datei in PDF. Wählen Sie diese Option, um alle Ebenen der Datei zu konvertieren.
 
-**[!UICONTROL Skalierungsinformationen einbetten]**: Behält Informationen zur Zeichenskala bei.
+**[!UICONTROL Skalierungsinformationen einbetten]**: Behält Skalierungsinformationen von Zeichnungen bei.
 
 **[!UICONTROL Aktuelles Layout konvertieren]**: Nimmt nur das aktuelle Layout in die PDF auf.
 
-**[!UICONTROL Liste der zu konvertierenden AutoCAD-Layouts]**: Eine AutoCAD-Zeichnung kann mehrere Layouts haben. Wenn dieses Feld leer ist, sind alle Layouts in der AutoCAD-Zeichnung im generierten PDF-Dokument enthalten. Um eine Teilmenge der Layouts selektiv zu konvertieren, geben Sie eine kommagetrennte Liste mit Layoutnamen an.
+**[!UICONTROL Liste der zu konvertierenden AutoCAD-Layouts]**: Eine AutoCAD-Zeichnung kann über mehrere Layouts verfügen. Wenn dieses Feld leer ist, sind alle Layouts in der AutoCAD-Zeichnung im generierten PDF-Dokument enthalten. Um eine Teilmenge der Layouts selektiv zu konvertieren, geben Sie eine kommagetrennte Liste mit Layout-Namen an.
 
 ## OpenOffice-Einstellungen {#openoffice-settings}
 
-Diese Optionen bestimmen, wie OpenOffice-Dateien konvertiert werden. Anweisungen zum Zugriff auf diese Optionen finden Sie unter [Dateitypeinstellungen erstellen oder bearbeiten](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings).
+Diese Optionen bestimmen, wie OpenOffice-Dateien konvertiert werden. Anweisungen zum Zugriff auf diese Optionen finden Sie unter [Erstellen oder Bearbeiten von Dateitypeinstellungen](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
-**PDFMaker als Ersatzkonverter testen**: Wenn diese Option aktiviert ist und eine Konvertierung mit OpenOffice fehlschlägt oder das angegebene Zeitlimit erreicht, versucht PDF Generator die Konvertierung mithilfe von PDFMaker auszuführen. Wenn die Konvertierung mit PDFMaker fehlschlägt oder das angegebene Zeitlimit erreicht, wird eine Ausnahme in die Protokolldatei geschrieben.
+**PDFMaker als Ersatzkonvertierer versuchen**: Wenn diese Option aktiviert ist und eine Konvertierung mit OpenOffice fehlschlägt oder das angegebene Zeitlimit erreicht, versucht PDF Generator, die Konvertierung mithilfe von PDFMaker auszuführen. Wenn die Konvertierung mit PDFMaker fehlschlägt oder das angegebene Zeitlimit erreicht, wird ein Ausnahmefehler in die Protokolldatei aufgenommen.
 
-**Dateinamenerweiterungen**: Geben Sie die Dateinamenerweiterungen für Dateitypen an, getrennt durch Kommas, die für diese Anwendung akzeptiert werden. Der Standardwert lautet `odt,odp,ods,odg,odf,sxw,sxi,sxd`. Setzen Sie keinen Punkt vor und kein Leerzeichen zwischen die Erweiterungen.
+**Dateinamenerweiterungen**: Legt die Dateinamenerweiterungen für Dateitypen fest (durch Kommas getrennt), die für diese Anwendung akzeptiert werden. Der Standardwert lautet `odt,odp,ods,odg,odf,sxw,sxi,sxd`. Setzen Sie keinen Punkt vor und kein Leerzeichen zwischen die Erweiterungen.
 
-**Bereich:** Konvertieren Sie alle Seiten oder geben Sie bestimmte Seiten oder einen Seitenbereich an. Wenn kein Seitenbereich definiert ist, werden alle Seiten konvertiert. Um einen Seitenbereich zu exportieren, verwenden Sie das Format 3-6. Um einzelne Seiten zu exportieren, verwenden Sie das Format 7;9;11. Sie können eine Kombination aus Seitenbereichen und einzelnen Seiten mit einem Format wie 3-6;8;10;12 exportieren.
+**Bereich:** Konvertieren Sie alle Seiten oder geben Sie bestimmte Seiten oder einen Seitenbereich an. Wenn kein Seitenbereich definiert ist, werden alle Seiten konvertiert. Um einen Seitenbereich zu exportieren, verwenden Sie das Format 3-6. Zum Exportieren einzelner Seiten verwenden Sie das Format 7;9;11. Sie können eine Kombination aus Seitenbereichen und einzelnen Seiten exportieren, indem Sie ein Format wie 3-6;8;10;12 verwenden.
 
-**Seitenausrichtung**: Wählen Sie nur für Textdateien für das konvertierte PDF-Dokument entweder Hochformat oder Querformat aus.
+**Seitenausrichtung**: Wählen Sie nur bei reinen Textdateien entweder Hoch- oder Querformat für das konvertierte PDF-Dokument aus.
 
-**Bilder**: Konfigurieren Sie, wie Bilder konvertiert werden. EPS-Bilder mit eingebetteter Vorschau werden nur als Vorschau exportiert. EPS-Bilder ohne integrierte Vorschau werden als leere Platzhalter exportiert. Bei verlustfreier Komprimierung von Bildern bleiben alle Pixel erhalten. Bei JPEG-Komprimierung von Bildern und einem hohen Qualitätsniveau bleiben fast alle Pixel erhalten. Bei einer niedrigen Qualität gehen einige Pixel verloren und Artefakte werden eingeführt, die Dateigröße wird jedoch reduziert.
+**Bilder**: Konfigurieren Sie, wie Bilder konvertiert werden sollen. EPS-Bilder mit eingebetteter Vorschau werden nur als Vorschau exportiert. EPS-Bilder ohne eingebettete Vorschau werden als leere Platzhalter exportiert. Bei der verlustfreien Komprimierung von Bildern bleiben alle Pixel erhalten. Bei der JPEG-Komprimierung von Bildern und einer hohen Qualitätsstufe bleiben fast alle Pixel erhalten. Bei einer niedrigen Qualitätsstufe gehen einige Pixel verloren und Artefakte werden hinzugefügt. Die Dateigröße wird allerdings verringert.
 
-**Allgemein**: Aktivieren Sie die Optionen, um eine PDF-Datei mit Tags zu konvertieren oder Writer- und FormCalc-Dokumentnotizen, Impress-Folienübergangseffekte oder leere Seiten in die PDF-Datei zu exportieren. Wenn Tags exportiert werden, kann die Dateigröße stark zunehmen. Einige Tags, die exportiert werden, sind Inhaltsverzeichnisse, Hyperlinks und Steuerelemente.
+**Allgemein**: Aktivieren Sie die Optionen, um eine PDF-Datei mit Tags zu konvertieren oder Writer- und FormCalc-Dokumentnotizen, Impress-Folienübergangseffekte oder leere Seiten in die PDF-Datei zu exportieren. Beim Export von Tags kann die Dateigröße drastisch zunehmen. Einige Tags, die exportiert werden, sind Inhaltsverzeichnisse, Hyperlinks und Steuerelemente.
 
-Sie können auch angeben, wie Formulare gesendet werden. Die Optionen sind XML, FDF, PDF oder HTML. Diese Einstellung setzt die URL-Eigenschaft des Steuerelements außer Kraft, die Sie im Dokument festgelegt haben. Für das PDF-Dokument kann nur eine gemeinsame Einstellung ausgewählt werden:
+Sie können auch angeben, wie Formulare gesendet werden. Verfügbar sind die Optionen XML, FDF, PDF oder HTML. Diese Einstellung setzt die URL-Eigenschaft des Steuerelements außer Kraft, die Sie im Dokument festgelegt haben. Nur eine allgemeine Einstellung kann für das PDF-Dokument ausgewählt werden:
 
 * PDF (sendet das gesamte Dokument)
-* FDF (sendet den Kontrollinhalt)
+* FDF (sendet den Inhalt von Steuerelementen)
 * HTML
 * XML
 
-**Tagging-PDF**: Ermöglicht die Erstellung von getaggtem PDF aus OpenOffice-Dokumenten. Mit Tags versehene PDF enthält Informationen über die Struktur des Dokumentinhalts. Dies kann bei der Anzeige des Dokuments auf Geräten mit verschiedenen Bildschirmen und bei der Verwendung von Bildschirmlesehilfen-Software hilfreich sein. Es hilft auch Barrierefreiheitssoftware, verschiedene nützliche Vorgänge mit dem PDF-Dokument auszuführen, z. B. das Vorlesen des Inhalts des PDF-Dokuments.
+**PDF mit Tags**: Aktiviert das Erstellen von PDF-Dateien mit Tags aus OpenOffice-Dokumenten. PDF-Dateien mit Tags enthalten Informationen über die Struktur der Dokumentinhalte. Dies kann beim Anzeigen des Dokuments auf Geräten mit verschiedenen Bildschirmen und beim Verwenden von Bildschirmlesehilfe-Software behilflich sein. PDF-Dateien mit Tags können auch Bildschirmlesehilfe-Software helfen, verschiedene nützliche Vorgänge mit dem PDF-Dokument auszuführen, z. B. lautes Vorlesen der Inhalte des PDF-Dokuments.
 
-**Exportieren von Anmerkungen**: Konvertiert die Notizen in OpenOffice-Dokumenten in Notizen im generierten PDF-Dokument.
+**Notizen exportieren**: Konvertiert die Notizen in OpenOffice-Dokumenten zu Anmerkungen im generierten PDF-Dokument.
 
 **Übergangseffekte verwenden**: Konvertiert die Folienübergangseffekte in OpenOffice-Präsentationen in entsprechende PDF-Übergangseffekte.
 
-**Forms im Format übermitteln**: Erstellt ein PDF-Formular, das vom PDF ausgefüllt und gedruckt werden kann.
+**Formulare in Format senden**: Erstellt ein PDF-Formular, das vom Benutzenden des PDF-Dokuments ausgefüllt und gedruckt werden kann.
 
-**Automatisch eingefügte leere Seiten exportieren**: Wenn diese Option aktiviert ist, werden automatisch eingefügte leere Seiten in das generierte PDF-Dokument aufgenommen. Dies ist nützlich, wenn Sie ein PDF-Dokument zweiseitig drucken. Beispielsweise kann ein Buch so konfiguriert werden, dass die erste Seite eines Kapitels immer auf einer ungeraden Seite beginnt. Wenn das vorherige Kapitel auf einer ungeraden Seite endet, fügt OpenOffice eine leere Seite mit gerader Seitenzahl ein. Diese Option steuert, ob diese geraden Seiten in die generierte PDF aufgenommen werden sollen.
+**Automatisch eingefügte leere Seiten exportieren**: Wenn diese Option aktiviert ist, sind alle automatisch eingefügten leeren Seiten im generierten PDF-Dokument enthalten. Dies ist nützlich, wenn Sie ein PDF-Dokument doppelseitig drucken möchten. Ein Buch kann beispielsweise so konfiguriert sein, dass die erste Seite eines Kapitels immer auf einer Seite mit ungerader Seitenzahl beginnt. Wenn das vorherige Kapitel auf einer Seite mit ungerader Seitenzahl endet, fügt OpenOffice eine leere Seite mit gerader Seitenzahl ein. Diese Option steuert, ob diese Seite mit gerader Seitenzahl in der generierten PDF-Datei enthalten ist.
 
 ## Andere Programmeinstellungen (nur Windows) {#other-applications-settings-windows-only}
 
-Sie können die Einstellungen für andere Anwendungen nicht über Administration Console ändern. Sie zeigen die Dateinamenerweiterungen für die unterstützten Dateitypen an. Anweisungen zum Zugriff auf diese Einstellungen finden Sie unter [Dateitypeinstellungen erstellen oder bearbeiten](https://help.adobe.com/de_DE/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
+Sie können die Einstellungen für andere Anwendungen nicht mithilfe der Administrationskonsole ändern. Sie zeigen die Dateinamenerweiterungen für die unterstützten Dateitypen an. Anweisungen zum Zugriff auf diese Einstellungen finden Sie unter [Erstellen oder Bearbeiten von Dateitypeinstellungen](https://help.adobe.com/de_DE/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
 
 * Corel WordPerfect: `wpd`
 * Adobe PageMaker: `pmd, pm6, p65, pm`

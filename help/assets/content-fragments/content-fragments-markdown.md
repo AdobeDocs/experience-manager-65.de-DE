@@ -1,19 +1,19 @@
 ---
 title: Markdown
-description: Machen Sie sich damit vertraut, wie der Inhaltsfragment-Editor die Markdown-Syntax verwendet, damit Sie problemlos Headless-Inhalte erstellen können.
+description: Erfahren Sie, wie der Inhaltsfragment-Editor Markdown-Syntax verwendet, um Ihnen die einfache Erstellung von Headless-Inhalten zu ermöglichen.
 feature: Content Fragments
 role: User
 exl-id: e4340828-fe16-4edf-94c9-b0b145740e74
 source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 90%
+source-wordcount: '524'
+ht-degree: 96%
 
 ---
 
 # Markdown {#markdown}
 
-Wann Sie [Authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)verwendet der Inhaltsfragment-Editor *Markdown* -Syntax verwenden, damit Sie problemlos Headless-Inhalte schreiben können:
+Wenn Sie [Inhalte erstellen oder bearbeiten](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), verwendet der Inhaltsfragmenteditor die *Markdown*-Syntax, um Ihnen die Erstellung von Headless-Inhalten zu erleichtern:
 
 ![Markdown-Editor](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
@@ -51,7 +51,7 @@ Optional können Sie eine Ü1 erstellen, indem Sie den Text mit Gleichheitszeich
 
 ## Absätze und Zeilenumbrüche {#paragraphs-and-line-breaks}
 
-Ein Absatz ist einfach eine oder mehrere aufeinanderfolgende Textzeilen, die durch eine oder mehrere Leerzeilen getrennt sind. Eine Leerzeile ist eine Zeile, die nur Leerzeichen oder Tabulatoren enthält. Normale Absätze sollten nicht mit Leerzeichen oder Tabulatoren eingerückt werden.
+Ein Absatz ist einfach eine oder mehrere aufeinander folgende Textzeilen, die durch eine oder mehrere leere Zeilen getrennt sind. Eine leere Zeile ist eine Zeile, die höchstens Leerzeichen oder Tabulatoren enthält. Normale Absätze sollten nicht mit Leerzeichen oder Tabulatoren eingerückt werden.
 
 Ein Zeilenumbruch wird durch Beenden einer Zeile mit zwei oder mehr Leerzeichen und Zeilenschalter erstellt.
 
@@ -105,7 +105,7 @@ Wobei „id“ der Name eines definierten Bildverweises ist. Bildverweise werden
 
 ## Blockzitate {#block-quotes}
 
-Sie können Text zitieren, indem Sie das Symbol „>“ vor dem Text einfügen. Beispiel:
+Sie können Text zitieren, indem Sie das Symbol > vor dem Text einfügen. Beispiel:
 
     `>This is block quotes`
 
@@ -137,7 +137,7 @@ Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „*“ vor den
 
     `* item in list`
 
-Um eine sortierte Liste zu erstellen, fügen Sie vor jedem Element in der Liste die Nummern und danach jeweils einen Punkt hinzu. Beispiel:
+Um eine sortierte Liste zu erstellen, fügen Sie vor jedem Element in der Liste die Nummer und danach einen Punkt hinzu. Beispiel:
 
     `1. First item in list.`
 

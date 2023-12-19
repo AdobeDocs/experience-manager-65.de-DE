@@ -10,7 +10,7 @@ exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '9036'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -474,10 +474,10 @@ Sie können Ressourcen von einem bestimmten Speicherort im Repository abrufen, u
 
 Das Repository verfügt über die folgenden vier Berechtigungstypen:
 
-* **traverse**: dient der Auflistung von Ressourcen, d. h. dem Lesen von Metadaten der Ressource, jedoch nicht des Ressourceninhalts
-* **lesen**: dient dem Lesen des Ressourceninhalts.
-* **schreiben**: ermöglicht das Schreiben von Ressourceninhalten
-* **Verwalten von Zugriffssteuerungslisten (ACLs)**: dient der Bearbeitung von ACLs für Ressourcen.
+* **traverse**: ermöglicht es, Ressourcen aufzulisten, genauer, Ressourcenmetadaten zu lesen, jedoch keine Ressourceninhalte
+* **read**: ermöglicht das Lesen des Ressourceninhalts.
+* **write**: ermöglicht das Schreiben von Ressourceninhalten.
+* **Verwalten von Zugriffssteuerungslisten (ACLs)**: ermöglicht die Bearbeitung von ACLs für Ressourcen.
 
 Benutzer können Prozesse nur ausführen, wenn sie über die Berechtigung zum Ausführen des Prozesses verfügen. IDE-Benutzer benötigen Berechtigungen zum Durchlaufen und Lesen, damit mit dem Repository synchronisiert werden kann. ACLs gelten nur zur Entwurfszeit, da die Laufzeit im Systemkontext erfolgt.
 

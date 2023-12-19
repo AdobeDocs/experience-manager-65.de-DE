@@ -9,8 +9,8 @@ role: Admin
 exl-id: 722e75a0-bcb3-465e-bb74-ea94a3b99fd3
 source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 80%
+source-wordcount: '347'
+ht-degree: 95%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 80%
 
 AEM 6.5.18.0 Forms on JEE bietet zwei Arten von Installationsprogrammen: Vollständiges Installationsprogramm und Patch-Installationsprogramm.
 
-**Vollständiges Installationsprogramm**: Sie können die [AEM 6.5.18.0 auf dem JEE-Vollinstallationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) , um neue AEM Forms-Instanzen einzurichten oder Upgrades von AEM 6.5.x.x Forms on JEE auf AEM 6.5.18.0 Forms on JEE durchzuführen.
+**Vollinstallationsprogramm**: Sie können das [Vollinstallationsprogramm für AEM 6.5.18.0 on JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) verwenden, um neue AEM Forms-Instanzen einzurichten oder Upgrades von AEM 6.5.x.x Forms on JEE auf AEM 6.5.18.0 Forms on JEE durchzuführen.
 
 **Patch-Installationsprogramm**: Das [Patch-Installationsprogramm für AEM 6.5.18.0 on JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) ist für Kundinnen und Kunden bestimmt, die bereits eine Version AEM 6.5.x.x verwenden. Mit dem Patch-Installationsprogramm können Sie eine Aktualisierung auf die neueste Version von AEM Forms durchführen.
 
 Die folgende Tabelle zeigt Szenarien für die Verwendung des Installationsprogramms für vollständige Installationen und Patches.
 
-![Vollständiges Installationsszenario und Patch-Installationsprogramm](assets/full-and-patch-installer.png)
+![Szenario für das Vollinstallations- und Patch-Installationsprogramm](assets/full-and-patch-installer.png)
 
-Führen Sie das folgende Verfahren aus, um das vollständige Installationsprogramm für die Aktualisierung von AEM Forms 6.5.x.x auf JEE auf AEM 6.5.18.0 Forms on JEE zu verwenden:
+Gehen Sie wie folgt vor, um mit dem Vollinstallationsprogramm ein Upgrade von AEM Forms 6.5.x.x on JEE auf AEM 6.5.18.0 Forms on JEE durchzuführen:
 
 1. Laden Sie das Installationsprogramm für AEM 6.5 Forms on JEE von der [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) herunter. Sie benötigen einen gültigen Wartungs- und Supportvertrag, um das Installationsprogramm zu verwenden.
 1. Lesen Sie das Dokument [Checkliste für die Aktualisierung und Planung](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65_de), um sich über die Überprüfungen zu informieren, die für eine erfolgreiche Aktualisierung ausgeführt werden müssen.

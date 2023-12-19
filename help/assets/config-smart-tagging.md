@@ -7,8 +7,8 @@ feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2244'
-ht-degree: 98%
+source-wordcount: '2227'
+ht-degree: 99%
 
 ---
 
@@ -47,7 +47,7 @@ Gehen Sie wie folgt vor, um den Smart Content Service zu konfigurieren:
 
 ### Abrufen eines öffentlichen Zertifikats durch Erstellen der Konfiguration des Smart Content Service {#obtain-public-certificate}
 
-Mit einem öffentlichen Zertifikat können Sie Ihr Profil in der Adobe Developer Console authentifizieren.
+Ein öffentliches Zertifikat ermöglicht Ihnen die Authentifizierung Ihres Profils in der Adobe Developer Console.
 
 1. Greifen Sie in der [!DNL Experience Manager]-Benutzeroberfläche auf **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Ältere Cloud Services]** zu.
 

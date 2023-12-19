@@ -7,8 +7,8 @@ feature: Developer Tools
 exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 85%
+source-wordcount: '653'
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Das Beispiel lädt diese JavaScript-Quelle in `head.jsp` (`/apps/geometrixx/comp
 
 ### Zusätzliche Stylesheets {#additional-style-sheets}
 
-Einige der Komponenten von [!DNL Assets] verwenden die Widget-Bibliothek. Damit sie im Inhaltskontext ordnungsgemäß gerendert werden, muss ein zusätzliches Stylesheet geladen werden. Für die Tag-Aktionskomponente ist eine weitere erforderlich.
+Einige der Komponenten von [!DNL Assets] verwenden die Widget-Bibliothek. Damit sie im Inhaltskontext ordnungsgemäß gerendert werden, muss ein zusätzliches Stylesheet geladen werden. Für die Komponente „Tag-Aktion“ ist ein weiteres erforderlich.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
@@ -64,7 +64,7 @@ Die Komponenten der Beispielseite erfordern, dass alle Selektoren mit `.assetedi
 
 ### FormChooser: Anpassungen für eventuell geladene Ressourcen {#formchooser-adjustments-for-eventually-loaded-resources}
 
-Der Asset-Editor verwendet die Formularauswahl, mit der Sie Ressourcen - in diesem Fall Assets - auf derselben Formularseite bearbeiten können, indem Sie einfach eine Formularauswahl und den Pfad des Formulars zur URL des Assets hinzufügen.
+Der Asset-Editor verwendet die Formularauswahl, mit der Sie Ressourcen, in diesem Fall Assets, auf derselben Formularseite bearbeiten können, indem Sie einfach eine Formularauswahl und den Pfad des Formulars zur URL des Assets hinzufügen.
 
 Beispiel:
 
@@ -208,8 +208,8 @@ Sie können die im [Metadatenformular](assets-finder-editor.md#metadata-form-and
 
 Aktuell verfügbare Metadaten sind in `/libs/dam/options/metadata` definiert:
 
-* Die erste Ebene in diesem Ordner enthält die Namespaces.
-* Die Elemente in jedem Namespace stellen Metadaten dar, z. B. Ergebnisse in einem lokalen Teil-Element.
+* Die erste Ebene in diesem Verzeichnis enthält die Namespaces.
+* Die Elemente in jedem Namespace stellen Metadaten dar, z. B. Ergebnisse in einem lokalen Teil-Element.
 * Der Metadateninhalt enthält die Informationen für den Typ und die Optionen mit mehreren Werten.
 
 Die Optionen können in `/apps/dam/options/metadata` überschrieben werden:

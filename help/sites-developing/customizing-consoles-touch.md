@@ -1,6 +1,6 @@
 ---
 title: Anpassen der Konsolen
-description: AEM bietet verschiedene Mechanismen, mit denen Sie die Konsolen Ihrer Authoring-Instanz anpassen können
+description: AEM bietet verschiedene Methoden zum Anpassen der Konsolen Ihrer Autoreninstanz
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -10,7 +10,7 @@ exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '646'
-ht-degree: 43%
+ht-degree: 90%
 
 ---
 
@@ -20,20 +20,22 @@ ht-degree: 43%
 >
 >In diesem Dokument wird beschrieben, wie Sie Konsolen in der modernen, Touch-optimierten Benutzeroberfläche anpassen. Es gilt nicht für die klassische Benutzeroberfläche.
 
-AEM bietet verschiedene Mechanismen, mit denen Sie die Konsolen (und die [Seitenbearbeitungsfunktionen](/help/sites-developing/customizing-page-authoring-touch.md)) Ihrer Authoring-Instanz.
+AEM bietet verschiedene Methoden zum Anpassen von Konsolen (und der [Seitenbearbeitungsfunktionen](/help/sites-developing/customizing-page-authoring-touch.md)) Ihrer Autoreninstanz.
 
-* Mit Clientlibs Clientlibs können Sie die Standardimplementierung erweitern, um neue Funktionen zu realisieren und gleichzeitig die Standardfunktionen, -objekte und -methoden wiederzuverwenden. Bei der Anpassung können Sie Ihre eigene clientlib unter erstellen. `/apps.` Beispielsweise kann er den Code enthalten, der für Ihre benutzerdefinierte Komponente erforderlich ist.
+* Client-Bibliotheken 
+Mit Client-Bibliotheken können Sie die Standardimplementierung um neue Funktionen erweitern und gleichzeitig Standardfunktionen, -objekte und -methoden wiederverwenden. Bei der Anpassung können Sie Ihre eigene clientlib unter erstellen. `/apps.` Beispielsweise kann er den Code enthalten, der für Ihre benutzerdefinierte Komponente erforderlich ist.
 
-* Überlagerungen Überlagerungen basieren auf Knotendefinitionen und ermöglichen das Überlagern der Standardfunktionen (in `/libs`) mit Ihrer eigenen benutzerdefinierten Funktionalität (in `/apps`). Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da die Sling-Ressourcenzusammenführung das Vererben zulässt.
+* Überlagerungen
+Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, die Standardfunktionen (in `/libs`) mit Ihren eigenen benutzerdefinierten Funktionen (in `/apps`) zu überlagern. Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da die Sling-Ressourcenzusammenführung das Vererben zulässt.
 
-Diese können auf viele Arten verwendet werden, um Ihre AEM Konsolen zu erweitern. Einige davon sind nachstehend (allgemein) beschrieben.
+Überlagerungen können auf viele Arten zum Erweitern Ihrer AEM-Konsolen verwendet werden. Einige davon sind nachstehend (allgemein) beschrieben.
 
 >[!NOTE]
 >
 >Weitere Informationen finden Sie unter:
 >
->* Verwenden und Erstellen [clientlibs](/help/sites-developing/clientlibs.md).
->* Verwenden und Erstellen [Overlays](/help/sites-developing/overlays.md).
+>* Verwenden und Erstellen von [Client-Bibliotheken](/help/sites-developing/clientlibs.md).
+>* Verwenden und Erstellen von [Überlagerungen](/help/sites-developing/overlays.md).
 >* [Granite](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 >
 
@@ -44,9 +46,9 @@ Diese können auf viele Arten verwendet werden, um Ihre AEM Konsolen zu erweiter
 >
 >da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
 >
->Die empfohlene Methode für Konfigurations- und sonstige Änderungen sieht wie folgt aus:
+>Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
 >
->1. Erstellen Sie das erforderliche Element (d. h., wie es in `/libs`) unter `/apps`
+>1. Erstellen Sie das erforderliche Element unter `/apps` neu (d. h. wie es in `/libs` existiert).
 >
 >1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 >
@@ -65,7 +67,7 @@ Beispielsweise können die folgenden Speicherorte innerhalb der `/libs`-Struktur
 
 Sie können die Standardansicht (Spalte, Karte, Liste) für eine Konsole anpassen:
 
-1. Sie können die Ansichten neu anordnen, indem Sie den erforderlichen Eintrag unter überschreiben:
+1. Sie können die Ansichten durch Überlagern des erforderlichen Eintrags wie folgt neu anordnen:
 
    `/libs/wcm/core/content/sites/jcr:content/views`
 
@@ -89,7 +91,7 @@ Sie können die Standardansicht (Spalte, Karte, Liste) für eine Konsole anpasse
 
 ### Hinzufügen neuer Aktionen zur Symbolleiste {#add-new-action-to-the-toolbar}
 
-1. Sie können eigene Komponenten erstellen und die entsprechenden Client-Bibliotheken für benutzerdefinierte Aktionen einschließen. Beispiel: eine **Weiterleiten an Twitter** Aktion unter:
+1. Sie können eigene Komponenten erstellen und die entsprechenden Client-Bibliotheken für benutzerdefinierte Aktionen einschließen. Beispiel: eine Aktion **Auf Twitter bewerben** unter:
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 
@@ -103,9 +105,9 @@ Sie können die Standardansicht (Spalte, Karte, Liste) für eine Konsole anpasse
 
 ### Beschränken einer Symbolleistenaktion auf eine bestimmte Gruppe {#restrict-a-toolbar-action-to-a-specific-group}
 
-1. Sie können eine benutzerdefinierte Rendering-Bedingung verwenden, um die Standardaktion zu überlagern und bestimmte Bedingungen vorzuschreiben, die erfüllt sein müssen, bevor sie gerendert wird.
+1. Sie können die Standardaktion mit einer benutzerdefinierten Render-Bedingung überlagern und bestimmte Bedingungen festlegen, die vor dem Rendern erfüllt sein müssen.
 
-   Erstellen Sie beispielsweise eine Komponente, um die Renderbedingungen entsprechend der Gruppe zu steuern:
+   Erstellen Sie beispielsweise eine Komponente zum Steuern der Render-Bedingungen je nach Gruppe:
 
    `/apps/myapp/components/renderconditions/group`
 
@@ -129,9 +131,9 @@ Sie können die Standardansicht (Spalte, Karte, Liste) für eine Konsole anpasse
 >
 >Diese Funktion ist für Spalten mit Textfeldern optimiert. Für andere Datentypen können Sie `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps` überlagern.
 
-So passen Sie die Spalten in der Listenansicht an:
+Anpassen von Spalten in der Listenansicht:
 
-1. Liste der verfügbaren Spalten überlagern
+1. Überlagern Sie die Liste der verfügbaren Spalten.
 
    * Auf dem Knoten:
 
@@ -148,12 +150,12 @@ So passen Sie die Spalten in der Listenansicht an:
    * Falls Sie zusätzliche Daten hinzufügen möchten, müssen Sie einen [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) mit einer
      `pageInfoProviderType`-Eigenschaft schreiben.
 
-   Siehe beispielsweise die angehängte Klasse/das angehängte Bundle (von GitHub) unten.
+   Ein Beispiel sehen Sie im unten (aus GitHub) angehängten Class-Bundle.
 
-1. Jetzt können Sie die Spalte im Spaltenkonfigurator der Listenansicht auswählen.
+1. Sie können jetzt die Spalte im Spaltenkonfigurator der Listenansicht auswählen.
 
-### Ressourcen filtern {#filtering-resources}
+### Filtern von Ressourcen {#filtering-resources}
 
 Bei Verwendung einer Konsole ist es häufig der Fall, dass der Benutzer aus Ressourcen auswählen muss (z. B. Seiten, Komponenten, Assets usw.). Dies kann beispielsweise in Form einer Liste erfolgen, aus der der Autor ein Element auswählen muss.
 
-Um die Liste in einer angemessenen Größe und auch für den Anwendungsfall relevant zu halten, kann ein Filter in Form eines benutzerdefinierten Prädikats implementiert werden. Siehe [diesem Artikel](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) für Details.
+Um die Liste in einer angemessenen Größe und auch für den Anwendungsfall relevant zu halten, kann ein Filter in Form eines benutzerdefinierten Prädikats implementiert werden. Weitere Informationen finden Sie in [diesem Artikel](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources).

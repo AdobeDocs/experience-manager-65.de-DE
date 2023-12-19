@@ -1,20 +1,20 @@
 ---
 title: APIs in AEM Forms Workspace
-description: Public Java&trade sowie JavaScript-APIs und Methoden von LiveCycle AEM Forms Workspace, die zur Anpassung und Automatisierung verfügbar gemacht werden.
+description: Öffentliche Java®- und JavaScript-APIs und Methoden von LiveCycle AEM Forms Workspace zur Anpassung und Automatisierung.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: 9034f73a-83f3-498e-b6a6-ad6577aa1a3a
 source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 3%
+source-wordcount: '1059'
+ht-degree: 99%
 
 ---
 
 # APIs in AEM Forms Workspace {#apis-used-in-aem-forms-workspace}
 
-Die folgenden APIs werden im AEM Forms-Arbeitsbereich verwendet.
+Die folgenden APIs werden in AEM Forms Workspace verwendet.
 
 <table>
  <tbody>
@@ -28,25 +28,25 @@ Die folgenden APIs werden im AEM Forms-Arbeitsbereich verwendet.
    <td>getGroups</td>
    <td>ProcessManagementUserProxyService</td>
    <td>getGroups</td>
-   <td>Suchgruppen. Gibt eine Liste aller Gruppen zurück, wenn nichts angegeben ist. Andernfalls werden Gruppen mit dem angegebenen Namen zurückgegeben.</td>
+   <td>Sucht nach Gruppen. Gibt eine Liste aller Gruppen zurück, wenn kein Name angegeben ist. Andernfalls werden Gruppen mit dem angegebenen Namen zurückgegeben.</td>
   </tr>
   <tr>
    <td>getUsersAndGroups</td>
    <td>ProcessManagementUserProxyService</td>
    <td>getUsersAndGroups</td>
-   <td>Sucht Benutzer und Gruppen. Wenn nichts angegeben ist, wird eine Liste aller Benutzer und Gruppen zurückgegeben. Andernfalls werden Benutzer und Gruppen mit dem angegebenen Namen zurückgegeben.</td>
+   <td>Sucht nach Benutzenden und Gruppen. Gibt eine Liste aller Benutzenden und Gruppen zurück, wenn kein Name angegeben ist. Andernfalls werden Benutzende und Gruppen mit dem angegebenen Namen zurückgegeben.</td>
   </tr>
   <tr>
    <td>prepareForSubmit</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>prepareForSubmit</td>
-   <td>Sie wird aufgerufen, bevor ein Formular über DocumentSubmitServlet gesendet wird. Legt die Aufgaben-ID in einer Sitzungsvariablen fest (zusammen mit der Ablaufzeit), die während der tatsächlichen Übermittlung abgerufen wird.</td>
+   <td>Wird aufgerufen, bevor das Formular über DocumentSubmitServlet gesendet wird. Legt die Aufgaben-ID in einer Sitzungsvariablen fest (zusammen mit der Ablaufzeit), die beim tatsächlichen Senden abgerufen wird.</td>
   </tr>
   <tr>
    <td>submitTask</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>absenden</td>
-   <td>Sendet das Dokumentobjekt, das mit einer Aufgabe verknüpft ist (und der Sendeprozess wiederum).</td>
+   <td>Sendet das Dokumentobjekt, das einer Aufgabe zugeordnet ist (und damit einem Absendeprozess).</td>
   </tr>
   <tr>
    <td>getRootEndpointCategories</td>
@@ -58,25 +58,25 @@ Die folgenden APIs werden im AEM Forms-Arbeitsbereich verwendet.
    <td>getDirectChildCategories</td>
    <td>ProcessManagementStartpointService</td>
    <td>getDirectChildCategories2</td>
-   <td>Ruft alle direkten untergeordneten Elemente für eine Kategorie ab.</td>
+   <td>Ruft alle direkt untergeordneten Elemente für eine Kategorie ab.</td>
   </tr>
   <tr>
    <td>getAllStartpoints</td>
    <td>ProcessManagementStartpointService</td>
    <td>getAllStartpoints</td>
-   <td>Ruft alle Startpunkte ab, die auf dem Server unter allen Kategorien vorhanden sind.</td>
+   <td>Ruft alle Startpunkte ab, die auf dem Server in allen Kategorien vorhanden sind.</td>
   </tr>
   <tr>
    <td>invokeStartpoint</td>
    <td>ProcessManagementStartpointService</td>
    <td>invokeStartpoint</td>
-   <td>Dadurch wird ein Startpunkt aufgerufen und eine Aufgabe erstellt, die einem Startpunkt entspricht.</td>
+   <td>Dies ruft einen Startpunkt auf und erstellt eine Aufgabe, die einem Startpunkt zugeordnet ist.</td>
   </tr>
   <tr>
    <td>getAllTasks</td>
    <td>ProcessManagementTaskService</td>
    <td>getAllActionableTasks</td>
-   <td>Ruft alle Aufgaben ab, die für den angemeldeten Benutzer erstellt, weitergeleitet oder konsultiert, gespeichert, zugewiesen, zugewiesen und gespeichert werden.</td>
+   <td>Ruft alle Aufgaben auf, die für die angemeldete Person erstellt, weitergeleitet, verwendet, zugewiesen oder gespeichert werden.</td>
   </tr>
   <tr>
    <td>getTask</td>
@@ -88,19 +88,19 @@ Die folgenden APIs werden im AEM Forms-Arbeitsbereich verwendet.
    <td>renderTask</td>
    <td>ProcessManagementTaskService</td>
    <td>render</td>
-   <td>Gibt eine Aufgabe wieder und gibt bei Bedarf Informationen zurück, die erforderlich sind, um das Formular wie Formular-URL, Formulartyp und Daten-URL wiederzugeben.</td>
+   <td>Gibt eine Aufgabe wieder und gibt bei Bedarf Informationen zurück, die erforderlich sind, um das Formular zu rendern, wie Formular-URL, Formulartyp und Daten-URL.</td>
   </tr>
   <tr>
    <td>submitWithPriorData</td>
    <td>ProcessManagementTaskService</td>
    <td>submitWithPriorData</td>
-   <td>Es wird das Ergebnis der Senden-API von TaskManager mithilfe des Ergebnisschlüssels zurückgegeben.</td>
+   <td>Gibt das Ergebnis der Submit-API von TaskManager mithilfe des Ergebnisschlüssels zurück.</td>
   </tr>
   <tr>
    <td>submitWithData</td>
    <td>ProcessManagementTaskService</td>
    <td>submitWithData</td>
-   <td>Sendet die mit der Aufgabe verknüpften Formulardaten (übergeben als Zeichenfolge) mithilfe der Senden-API von TaskManager. Sie wird für Flex-Formulare verwendet, die nicht die Senden-API von TaskManager aufrufen.</td>
+   <td>Sendet die mit der Aufgabe verknüpften Formulardaten (übergeben als Zeichenfolge) mithilfe der Submit-API von TaskManager. Wird für Flex-Formulare verwendet, die nicht die Submit-API von TaskManager aufrufen.</td>
   </tr>
   <tr>
    <td>Speichern</td>
@@ -112,61 +112,61 @@ Die folgenden APIs werden im AEM Forms-Arbeitsbereich verwendet.
    <td>complete</td>
    <td>ProcessManagementTaskService</td>
    <td>complete</td>
-   <td>Er schließt eine Aufgabe ab und die Aufgabe wird gemäß dem Prozessentwurf an den nächsten Schritt übergeben.</td>
+   <td>Schließt eine Aufgabe ab, die dann gemäß dem Prozess-Design an den nächsten Schritt übergeben wird.</td>
   </tr>
   <tr>
    <td>getAttachment</td>
    <td>ProcessManagementTaskService</td>
    <td>getAttachment</td>
-   <td>Es wird eine URL eines Anhangs zurückgegeben, in dem der Anhang verfügbar ist.</td>
+   <td>Gibt eine URL eines Anhangs zurück, unter der der Anhang verfügbar ist.</td>
   </tr>
   <tr>
    <td>getAllAttachments</td>
    <td>ProcessManagementTaskService</td>
    <td>getAllActionableAttachments</td>
-   <td>Ruft alle Anlagen und Notizen für eine Aufgabe ab.</td>
+   <td>Ruft alle Anhänge und Hinweise für eine Aufgabe ab.</td>
   </tr>
   <tr>
    <td>Netzwerkfreigabe,</td>
    <td>ProcessManagementTaskService</td>
    <td>Netzwerkfreigabe,</td>
-   <td>Teilt eine Aufgabe mit einem anderen Benutzer. Ein anderer Benutzer kann die Aufgabe anfordern und wird Eigentümer der Aufgabe.</td>
+   <td>Gibt eine Aufgabe für eine andere Person frei. Eine andere Person kann die Aufgabe anfordern und wird Eigentümerin bzw. Eigentümer der Aufgabe.</td>
   </tr>
   <tr>
-   <td>Vorwärts</td>
+   <td>forward</td>
    <td>ProcessManagementTaskService</td>
-   <td>Vorwärts</td>
-   <td>Leitet eine Aufgabe an einen anderen Benutzer weiter.</td>
+   <td>forward</td>
+   <td>Leitet eine Aufgabe an eine andere Person weiter.</td>
   </tr>
   <tr>
-   <td>konsultieren</td>
+   <td>consult</td>
    <td>ProcessManagementTaskService</td>
-   <td>konsultieren</td>
-   <td>Er prüft eine Aufgabe mit einem anderen Benutzer.</td>
+   <td>consult</td>
+   <td>Stimmt eine Aufgabe mit einer anderen Person ab.</td>
   </tr>
   <tr>
    <td>claim</td>
    <td>ProcessManagementTaskService</td>
    <td>claim</td>
-   <td>Er beansprucht eine Aufgabe, die in einer freigegebenen Warteschlange verfügbar ist.</td>
+   <td>Fordert eine Aufgabe an, die in einer freigegebenen Warteschlange verfügbar ist.</td>
   </tr>
   <tr>
-   <td>entsperren</td>
+   <td>unlock</td>
    <td>ProcessManagementTaskService</td>
-   <td>entsperren</td>
+   <td>unlock</td>
    <td>Entsperrt eine Aufgabe.</td>
   </tr>
   <tr>
    <td>lock</td>
    <td>ProcessManagementTaskService</td>
    <td>lock</td>
-   <td>Sperrt eine Aufgabe und die Aufgabe kann von einem anderen Benutzer nicht angefordert werden, wenn sie freigegeben wurde.</td>
+   <td>Sperrt eine Aufgabe, die dadurch von anderen Benutzenden nicht angefordert werden kann, wenn sie freigegeben wird.</td>
   </tr>
   <tr>
    <td>Ablehnen der Bedingungen</td>
    <td>ProcessManagementTaskService</td>
    <td>Ablehnen der Bedingungen</td>
-   <td>Gibt eine Aufgabe an den vorherigen Eigentümer der Aufgabe zurück.</td>
+   <td>Gibt eine Aufgabe an die Person zurück, die zuvor deren Eigentümerin bzw. Eigentümer war.</td>
   </tr>
   <tr>
    <td>abandon</td>
@@ -178,85 +178,85 @@ Die folgenden APIs werden im AEM Forms-Arbeitsbereich verwendet.
    <td>setVisibility</td>
    <td>ProcessManagementTaskService</td>
    <td>setVisibility</td>
-   <td>Er legt die Sichtbarkeit einer Aufgabe fest. Wenn Sichtbarkeit auf "false"gesetzt ist, ist die Aufgabe für den Benutzer danach nicht mehr sichtbar.</td>
+   <td>Legt die Sichtbarkeit einer Aufgabe fest. Wenn die Sichtbarkeit auf „false“ gesetzt ist, ist die Aufgabe für die Person danach nicht mehr sichtbar.</td>
   </tr>
   <tr>
    <td>getUsers</td>
    <td>ProcessManagementUserProxyService</td>
    <td>getUsers</td>
-   <td>Sie wird für die Suche nach Benutzern verwendet. Gibt alle Benutzer zurück, wenn kein Name angegeben ist, sonst werden Benutzer mit einem angegebenen Namen zurückgegeben.</td>
+   <td>Wird für die Suche nach Benutzenden verwendet. Gibt alle Benutzenden zurück, wenn kein Name angegeben ist, sonst werden die Benutzenden mit dem angegebenen Namen zurückgegeben.</td>
   </tr>
   <tr>
    <td>getUsersInGroup</td>
    <td>ProcessManagementUserProxyService</td>
    <td>getUsersInGroupByName</td>
-   <td>Es werden alle Benutzer einer Gruppe zurückgegeben.</td>
+   <td>Gibt alle Benutzenden in einer Gruppe zurück.</td>
   </tr>
   <tr>
    <td>grantQueueAccess</td>
    <td>ProcessManagementQueueService</td>
    <td>grantQueueAccess</td>
-   <td>Gewährt einem angegebenen Benutzer Zugriff auf die Warteschlange des angemeldeten Benutzers. Im Grunde wird Ihre eigene Warteschlange für einen anderen Benutzer freigegeben.</td>
+   <td>Gewährt einer angegebenen Person Zugriff auf die Warteschlange der angemeldeten Person. Im Grunde wird dadurch Ihre eigene Warteschlange für eine andere Person freigegeben.</td>
   </tr>
   <tr>
    <td>requestQueueAccess</td>
    <td>ProcessManagementQueueService</td>
    <td>requestQueueAccess</td>
-   <td>Stellt die Zugriffsanfrage einer Warteschlange eines bestimmten Benutzers für den angemeldeten Benutzer. Wenn der Benutzer die Anforderung genehmigt, wird die Warteschlange des Benutzers für den angemeldeten Benutzer freigegeben.</td>
+   <td>Stellt für die angemeldete Person die Zugriffsanfrage für die Warteschlange einer bestimmten Person. Wenn die Person die Anfrage genehmigt, wird ihre Warteschlange für die angemeldete Person freigegeben.</td>
   </tr>
   <tr>
    <td>getGrantedUsers</td>
    <td>ProcessManagementQueueService</td>
    <td>getGrantedUsers</td>
-   <td>Es werden alle Benutzer zurückgegeben, die Zugriff auf die Warteschlange des angemeldeten Benutzers haben.</td>
+   <td>Gibt alle Benutzenden zurück, die Zugriff auf die Warteschlange der angemeldeten Person haben.</td>
   </tr>
   <tr>
    <td>getUsersForAccessibleQueues</td>
    <td>ProcessManagementQueueService</td>
    <td>getUsersForAccessibleQueues</td>
-   <td>Gibt alle Benutzer zurück, deren Warteschlange für einen Benutzer zugänglich ist.</td>
+   <td>Gibt alle Benutzenden zurück, deren Warteschlange für eine Person zugänglich ist.</td>
   </tr>
   <tr>
    <td>cancelQueueAccess</td>
    <td>ProcessManagementQueueService</td>
    <td>cancelQueueAccess</td>
-   <td>Entfernt einen Benutzer aus der Liste der Benutzer, die Zugriff auf die Warteschlange des angemeldeten Benutzers haben.</td>
+   <td>Entfernt eine Person aus der Liste der Benutzenden, die Zugriff auf die Warteschlange der angemeldeten Person haben.</td>
   </tr>
   <tr>
    <td>removeQueueAccess</td>
    <td>ProcessManagementQueueService</td>
    <td>removeQueueAccess</td>
-   <td>Entfernt einen Benutzer aus der Liste der Benutzer, deren Warteschlange für den angemeldeten Benutzer zugänglich ist.</td>
+   <td>Entfernt eine Person aus der Liste der Benutzenden, deren Warteschlange für die angemeldete Person zugänglich ist.</td>
   </tr>
   <tr>
    <td>getAllQueues<br /> </td>
    <td>ProcessManagementQueueService<br /> </td>
    <td>getAllQueues<br /> </td>
-   <td>Ruft alle Warteschlangen (eigene, freigegebene und Gruppenwarteschlangen) ab, auf die der angemeldete Benutzer zugreifen kann.<br /> </td>
+   <td>Ruft alle Warteschlangen (eigene, freigegebene und Gruppenwarteschlangen) ab, die für die angemeldete Person zugänglich sind.<br /> </td>
   </tr>
   <tr>
    <td>getOutOfOfficeSettings</td>
    <td>ProcessManagementOutOfOfficeService</td>
    <td>getOutOfOfficeSettings</td>
-   <td>Ruft die Abwesenheitseinstellungen eines Benutzers ab.</td>
+   <td>Ruft Abwesenheitseinstellungen einer Benutzerin oder eines Benutzers ab.</td>
   </tr>
   <tr>
    <td>saveOutOfOfficeSettingsJson</td>
    <td>ProcessManagementOutOfOfficeService</td>
    <td>saveOutOfOfficeSettingsJson</td>
-   <td>Speichert die Abwesenheitseinstellungen eines Benutzers.</td>
+   <td>Speichert die Abwesenheitseinstellungen einer Benutzerin oder eines Benutzers.</td>
   </tr>
   <tr>
    <td>getAllProcesses</td>
    <td>ProcessManagementProcessService</td>
    <td>getAllProcesses</td>
-   <td>Es wird eine Liste aller Prozesse zurückgegeben.</td>
+   <td>Gibt eine Liste aller Prozesse zurück.</td>
   </tr>
   <tr>
    <td>getParticipatedProcesses</td>
    <td>ProcessManagementProcessService</td>
    <td>getParticipatedProcesses</td>
-   <td>Es wird eine Liste aller Prozessnamen zurückgegeben, die vom angemeldeten Benutzer verwendet wurden.</td>
+   <td>Gibt eine Liste aller Prozessnamen zurück, an denen die angemeldete Person beteiligt ist.</td>
   </tr>
   <tr>
    <td>getProcessInstance<br /> </td>
@@ -286,112 +286,112 @@ Die folgenden APIs werden im AEM Forms-Arbeitsbereich verwendet.
    <td>getAllSearchTemplates</td>
    <td>ProcessManagementQueryService</td>
    <td>getAllSearchTemplates</td>
-   <td>Es wird eine Liste aller Suchvorlagen zurückgegeben.</td>
+   <td>Gibt eine Liste aller Suchvorlagen zurück.</td>
   </tr>
   <tr>
    <td>getTemplate</td>
    <td>ProcessManagementQueryService</td>
    <td>getTemplate</td>
-   <td>Es werden Inhalte für eine Suchvorlage zurückgegeben.</td>
+   <td>Gibt den Inhalt für eine Suchvorlage zurück.</td>
   </tr>
   <tr>
    <td>findTasksJson<br /> </td>
    <td>ProcessManagementQueryService</td>
    <td>findTasksJson</td>
-   <td>Es werden alle Aufgaben gesucht und zurückgegeben, die alle Bedingungen einer Suchvorlage erfüllen.</td>
+   <td>Sucht und gibt alle Aufgaben zurück, die alle Bedingungen einer Suchvorlage erfüllen.</td>
   </tr>
   <tr>
    <td>getAssignmentsForTask</td>
    <td>ProcessManagementTaskService</td>
    <td>getAssignmentsForTask</td>
-   <td>Ruft alle Zuweisungen für eine Aufgabe ab. Wenn ein Benutzer beispielsweise eine Aufgabe an einen anderen Benutzer weiterleitet oder sie mit ihm bespricht, ist dies eine Zuweisung für eine Aufgabe.</td>
+   <td>Ruft alle Zuweisung für eine Aufgabe ab. Beispiel: Wenn eine Benutzerin oder ein Benutzer eine Aufgabe an eine andere Person weiterleitet oder sich mit ihr darüber abstimmt, dann handelt es sich dabei um eine Aufgabenzuweisung.</td>
   </tr>
   <tr>
    <td>deleteAttachment </td>
    <td>TaskManagerService</td>
    <td>deleteAttachment</td>
-   <td>Löscht eine Anlage.</td>
+   <td>Löscht einen Anhang.</td>
   </tr>
   <tr>
    <td>initialize</td>
    <td>ProcessManagementClientSessionService</td>
    <td>initialize</td>
-   <td>Bei Bedarf wird die Bestätigung erneuert. Authentifiziert den Benutzer. Legt Sitzungsparameter für Server-/Client-Informationen fest. Gibt Benutzerinformationen und Abrufintervall zurück.</td>
+   <td>Erneuert die Assertion, falls erforderlich. Authentifiziert die Benutzerin bzw. den Benutzer. Legt Sitzungsparameter für Server-/Client-Informationen fest. Gibt Benutzerinformation und Abrufintervall zurück.</td>
   </tr>
   <tr>
    <td>getTasksForDirectReports</td>
    <td>ProcessManagementTeamTasksService</td>
    <td>getTasksForDirectReports</td>
-   <td>Es werden alle Aufgaben der direkten Berichte des angemeldeten Managers zurückgegeben.</td>
+   <td>Gibt alle Aufgaben der Personen zurück, die dem angemeldeten Manager direkt unterstellt sind.</td>
   </tr>
   <tr>
    <td>getTaskOfDirectReport<br /> </td>
    <td>ProcessManagementTeamTasksService</td>
    <td>getDirectReportTask</td>
-   <td>Es wird eine Aufgabe eines bestimmten Direktberichts des angemeldeten Managers zurückgegeben.</td>
+   <td>Gibt eine Aufgabe der angegebenen Person zurück, die dem angemeldeten Manager direkt unterstellt ist.</td>
   </tr>
   <tr>
    <td>forwardTaskOfDirectReport</td>
    <td>ProcessManagementTeamTasksService</td>
    <td>forwardTaskOfDirectReport</td>
-   <td>Leitet eine Aufgabe eines direkt unterstellten Mitarbeiters an einen anderen Benutzer weiter.</td>
+   <td>Leitet eine Aufgabe einer direkt unterstellten Person an eine andere Person weiter.</td>
   </tr>
   <tr>
    <td>rejectTaskOfDirectReport</td>
    <td>ProcessManagementTeamTasksService</td>
    <td>rejectTaskOfDirectReport</td>
-   <td>Es wird eine Aufgabe eines direkt unterstellten Mitarbeiters an den vorherigen Benutzer zurückgegeben.</td>
+   <td>Gibt eine Aufgabe einer direkt unterstellten Person an die vorherige Person zurück.</td>
   </tr>
   <tr>
    <td>getProperty</td>
    <td>WorkspacePropertyService</td>
    <td>getProperty</td>
-   <td>Ruft eine Workspace-Eigenschaft für einen Benutzer ab.</td>
+   <td>Ruft eine Workspace-Eigenschaft für eine Person ab.</td>
   </tr>
   <tr>
    <td>removeProperty</td>
    <td>WorkspacePropertyService</td>
    <td>Löschen Sie</td>
-   <td>Entfernt eine Workspace-Eigenschaft für einen Benutzer.</td>
+   <td>Löscht eine Workspace-Eigenschaft für eine Benutzerin bzw. einen Benutzer.</td>
   </tr>
   <tr>
    <td>getProperties</td>
    <td>WorkspacePropertyService</td>
    <td>getPropertiesAsMap</td>
-   <td>Es werden alle Workspace-Eigenschaften für einen Benutzer zurückgegeben.</td>
+   <td>Gibt alle Workspace-Eigenschaften für eine Benutzerin bzw. einen Benutzer zurück.</td>
   </tr>
   <tr>
    <td>setProperty</td>
    <td>WorkspacePropertyService</td>
    <td>setProperty</td>
-   <td>Legt eine Workspace-Eigenschaft für einen Benutzer fest.</td>
+   <td>Legt eine Workspace-Eigenschaft für eine Benutzerin bzw. einen Benutzer fest.</td>
   </tr>
   <tr>
    <td>getCurrentUserImageUrl</td>
    <td>ProcessManagementClientSessionService</td>
    <td>getCurrentUserImageUrl</td>
-   <td>Ruft die Bild-URL des Benutzers für den angemeldeten Benutzer ab.</td>
+   <td>Ruft die Bild-URL der Person für die angemeldete Person ab.</td>
   </tr>
   <tr>
    <td>getUserImageUrl</td>
    <td>ProcessManagementClientSessionService</td>
    <td>getUserImageUrl</td>
-   <td>Ruft die Bild-URL des Benutzers für den angegebenen Benutzer ab.</td>
+   <td>Ruft die Bild-URL der Person für die angegebene Person ab.</td>
   </tr>
   <tr>
    <td>uploadNote</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>uploadNote</td>
-   <td>Er lädt eine Notiz für eine Aufgabe auf den Server hoch.</td>
+   <td>Lädt eine Notiz für eine Aufgabe auf den Server hoch.</td>
   </tr>
   <tr>
    <td>uploadRMAToServer (es wird auch direkt von der HTML-Vorlage aufgerufen)<br /> </td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>uploadAttachment</td>
-   <td>Er lädt eine Anlage für eine Aufgabe auf den Server hoch.</td>
+   <td>Lädt einen Anhang für eine Aufgabe auf den Server hoch.</td>
   </tr>
   <tr>
-   <td>getImageURL (auch direkt über die HTML-Vorlage aufgerufen)</td>
+   <td>getImageURL (wird auch direkt über die HTML-Vorlage aufgerufen)</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>getImage</td>
    <td>Ruft das Bild für einen Prozess ab.</td>

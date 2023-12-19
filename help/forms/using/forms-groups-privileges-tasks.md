@@ -10,8 +10,8 @@ role: Admin
 exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
 source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 32%
+source-wordcount: '289'
+ht-degree: 56%
 
 ---
 
@@ -36,8 +36,8 @@ Nach der Installation [AEM Forms Add-On-Paket](../../forms/using/installing-conf
    <td>forms-users <sup>[1]</sup></td> 
    <td>
     <ul> 
-     <li>Erstellen, Anzeigen einer Vorschau, Veröffentlichen und Senden adaptiver Formulare</li> 
-     <li>Interaktive Kommunikation und Dokumentfragmente erstellen, in der Vorschau anzeigen und veröffentlichen</li> 
+     <li>Erstellen, Vorschau, Veröffentlichen und Senden adaptiver Formulare</li> 
+     <li>Erstellen, Anzeigen (in der Vorschau) und Veröffentlichen von interaktiven Kommunikationen und Dokumentfragmenten</li> 
      <li>Hochladen von Assets in eine AEM-Instanz</li> 
      <li>Erstellen von Designs</li> 
     </ul> </td> 
@@ -46,8 +46,8 @@ Nach der Installation [AEM Forms Add-On-Paket](../../forms/using/installing-conf
    <td>forms-power-users</td> 
    <td>
     <ul> 
-     <li>Erstellen, Anzeigen einer Vorschau, Veröffentlichen und Senden adaptiver Formulare</li> 
-     <li>Interaktive Kommunikation und Dokumentfragmente erstellen, in der Vorschau anzeigen und veröffentlichen</li> 
+     <li>Erstellen, Vorschau, Veröffentlichen und Senden adaptiver Formulare</li> 
+     <li>Erstellen, Anzeigen (in der Vorschau) und Veröffentlichen von interaktiven Kommunikationen und Dokumentfragmenten</li> 
      <li>Erstellen von Skripten für adaptive Formulare mithilfe eines Code-Editors</li> 
      <li>Hochladen von Assets einschließlich Skripten</li> 
      <li>Erstellen von Designs</li> 
@@ -58,8 +58,8 @@ Nach der Installation [AEM Forms Add-On-Paket](../../forms/using/installing-conf
    <td>forms-submission-reviewers</td> 
    <td>
     <ul> 
-     <li>Übermittlungen überprüfen</li> 
-     <li>Übermittlungen genehmigen oder ablehnen</li> 
+     <li>Überprüfen von Übermittlungen</li> 
+     <li>Genehmigen oder Ablehnen von Übermittlungen</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -80,14 +80,14 @@ Nach der Installation [AEM Forms Add-On-Paket](../../forms/using/installing-conf
    <td>cm-agent-users</td> 
    <td>
     <ul> 
-     <li>Zugriff auf Correspondence Management-Briefe oder interaktive Kommunikation über die Benutzeroberfläche für Agenten</li> 
+     <li>Zugriff auf Correspondence Management-Briefe oder interaktive Kommunikationen über die Agent-Benutzeroberfläche</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td><p>workflow-editors</p> </td> 
    <td>
     <ul> 
-     <li>Posteingangsanwendung erstellen</li> 
+     <li>Erstellen einer Posteingangs-Anwendung</li> 
      <li>Erstellen Sie ein Workflow-Modell</li> 
     </ul> </td> 
   </tr>
@@ -103,7 +103,7 @@ Nach der Installation [AEM Forms Add-On-Paket](../../forms/using/installing-conf
    <td>fd-administrators</td> 
    <td>
     <ul> 
-     <li>PDF Generator konfigurieren</li> 
+     <li>Konfigurieren von PDF Generator</li> 
      <li>Überwachten Ordner konfigurieren</li> 
      <li>Verwalten von Workflow-Programmen</li> 
     </ul> </td> 

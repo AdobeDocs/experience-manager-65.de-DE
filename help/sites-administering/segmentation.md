@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren der Segmentierung mit ContextHub
-description: Erfahren Sie, wie Sie die Segmentierung mit ContextHub konfigurieren.
+description: Erfahren Sie, wie Sie die Segmentierungsfunktion mit ContextHub konfigurieren.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -9,7 +9,7 @@ exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '1745'
-ht-degree: 68%
+ht-degree: 79%
 
 ---
 
@@ -17,16 +17,16 @@ ht-degree: 68%
 
 >[!NOTE]
 >
->In diesem Abschnitt wird die Konfiguration der Segmentierung bei Verwendung von ContextHub beschrieben. Wenn Sie die ClientContext-Funktion verwenden, lesen Sie die entsprechende Dokumentation für [Konfigurieren der Segmentierung für ClientContext](/help/sites-administering/campaign-segmentation.md).
+>In diesem Abschnitt wird beschrieben, wie Sie die Segmentierungsfunktion mit ContextHub konfigurieren. Wenn Sie die ClientContext-Funktion verwenden, lesen Sie die entsprechende Dokumentation für [Konfigurieren der Segmentierung für ClientContext](/help/sites-administering/campaign-segmentation.md).
 >
 
-Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. Siehe [Verwalten von Zielgruppen](/help/sites-authoring/managing-audiences.md) für Informationen zur Funktionsweise der Segmentierung und zu Schlüsselbegriffen.
+Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. Unter [Verwalten von Zielgruppen](/help/sites-authoring/managing-audiences.md) finden Sie Informationen zur Funktionsweise der Segmentierung sowie zu Schlüsselbegriffen.
 
 Je nachdem, welche Informationen Sie bereits über Ihre Site-Besucher gesammelt haben und welche Ziele Sie erreichen möchten, müssen Sie die für Ihre zielgerichteten Inhalte erforderlichen Segmente und Strategien definieren.
 
 Diese Segmente werden dann verwendet, um einem Besucher gezielt bestimmte Inhalte anzuzeigen. Dieser Inhalt wird im Abschnitt [Personalisierung](/help/sites-authoring/personalization.md) der Website verwaltet. Hier festgelegte [Aktivitäten](/help/sites-authoring/activitylib.md) können auf jeder Seite einbezogen werden – und sie können bestimmen, auf welches Besuchersegment die spezialisierten Inhalte angewendet werden sollen.
 
-AEM ermöglicht Ihnen die einfache Personalisierung des Benutzererlebnisses. Außerdem können Sie damit die Ergebnisse Ihrer Segmentdefinitionen überprüfen.
+AEM ermöglicht Ihnen eine einfache Personalisierung des Anwendererlebnisses. Außerdem können Sie die Ergebnisse Ihrer Segmentdefinitionen überprüfen.
 
 ## Zugriff auf Segmente {#accessing-segments}
 
@@ -42,7 +42,7 @@ Wählen Sie Ihre Konfiguration aus, um die Segmente anzuzeigen, z. B. WKND Site:
 
 ## Segmenteditor {#segment-editor}
 
-Die **Segment-Editor** ermöglicht Ihnen die einfache Änderung eines Segments. Wählen Sie zur Bearbeitung eines Segments ein Segment aus der [Liste von Segmenten](/help/sites-administering/segmentation.md#accessing-segments) aus und klicken Sie auf die Schaltfläche **Bearbeiten**.
+Mit dem **Segmenteditor** können Sie ein Segment einfach ändern. Wählen Sie zur Bearbeitung eines Segments ein Segment aus der [Liste von Segmenten](/help/sites-administering/segmentation.md#accessing-segments) aus und klicken Sie auf die Schaltfläche **Bearbeiten**.
 
 ![segmenteditor](assets/segmenteditor.png)
 
@@ -56,7 +56,7 @@ Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufge
 
 ### Container {#containers}
 
-Die folgenden Container sind standardmäßig verfügbar und ermöglichen es Ihnen, Vergleiche und Verweise für die boolesche Auswertung zusammenzufassen. Sie können vom Komponenten-Browser in den Editor gezogen werden. Im folgenden Abschnitt [Verwenden von UND- und ODER-Containern](/help/sites-administering/segmentation.md#using-and-and-or-containers) erhalten Sie weitere Informationen.
+Die folgenden Container sind standardmäßig verfügbar und ermöglichen es Ihnen, Gruppenvergleiche und Verweise zur booleschen Auswertung zusammenzufassen. Sie können vom Komponenten-Browser in den Editor gezogen werden. Im folgenden Abschnitt [Verwenden von UND- und ODER-Containern](/help/sites-administering/segmentation.md#using-and-and-or-containers) erhalten Sie weitere Informationen.
 
 <table>
  <tbody>
@@ -73,7 +73,7 @@ Die folgenden Container sind standardmäßig verfügbar und ermöglichen es Ihne
 
 ### Vergleiche {#comparisons}
 
-Die folgenden Segmentvergleiche sind standardmäßig verfügbar, um Segmenteigenschaften zu bewerten. Sie können vom Komponenten-Browser in den Editor gezogen werden.
+Die folgenden Segmentvergleiche sind standardmäßig verfügbar, um Segmenteigenschaften auszuwerten. Sie können vom Komponenten-Browser in den Editor gezogen werden.
 
 <table>
  <tbody>
@@ -147,29 +147,29 @@ Festlegen eines neuen Segments
    * Höchstwert: `1000000`
 
 1. Ziehen Sie einen Vergleich oder Verweis in den Segmenteditor. Der Vergleich oder Verweis wird dann im standardmäßigen UND-Container angezeigt.
-1. Doppelklicken Sie auf die Konfigurationsoption des neuen Verweises oder Segments, um die spezifischen Parameter zu bearbeiten. In diesem Beispiel testen wir Menschen in San Jose.
+1. Doppelklicken Sie auf die Konfigurationsoption des neuen Verweises oder Segments, um die spezifischen Parameter zu bearbeiten. In diesem Beispiel prüfen wir auf Personen in San José.
 
    ![screen_shot_2012-02-02at103135am](assets/screen_shot_2012-02-02at103135ama.png)
 
-   Legen Sie, wenn möglich immer einen **Datentyp** fest, um sicherzustellen, dass Ihre Vergleiche richtig bewertet werden. Siehe [Vergleiche](/help/sites-administering/segmentation.md#comparisons) für weitere Informationen.
+   Legen Sie möglichst immer einen **Datentyp** fest, um sicherzustellen, dass Ihre Vergleiche richtig ausgewertet werden. Weitere Informationen finden Sie unter [Vergleiche](/help/sites-administering/segmentation.md#comparisons).
 
-1. Klicks **OK** , um Ihre Definition zu speichern:
+1. Klicken Sie auf **OK**, um die Definition zu speichern:
 1. Fügen Sie bei Bedarf weitere Komponenten hinzu. Sie können boolesche Ausdrücke mithilfe der Container-Komponenten für UND- und ODER-Vergleiche formulieren (siehe [Verwenden von UND- und ODER-Containern](/help/sites-administering/segmentation.md#using-and-and-or-containers) unten). Mit dem Segmenteditor können Sie nicht mehr benötigte Komponenten löschen oder diese an neue Positionen innerhalb der Anweisung ziehen.
 
 ### Verwenden von UND- und ODER-Containern {#using-and-and-or-containers}
 
-Mithilfe der UND- und ODER-Container-Komponenten können Sie komplexe Segmente in AEM erstellen. Dabei ist es hilfreich, einige grundlegende Punkte zu beachten:
+Mithilfe der UND- und ODER-Container-Komponenten können Sie komplexe Segmente in AEM erstellen. Hierbei ist es hilfreich, sich einige grundlegende Punkte bewusst zu machen:
 
 * Die oberste Ebene der Definition ist immer der ursprünglich erstellte UND-Container. Dies kann nicht geändert werden, hat jedoch keine Auswirkungen auf den Rest Ihrer Segmentdefinition.
 * Stellen Sie sicher, dass die Verschachtelung Ihres Containers sinnvoll ist. Die Container können als die Klammern Ihres booleschen Ausdrucks betrachtet werden.
 
-Das folgende Beispiel wird verwendet, um Besucher auszuwählen, die in unserer Hauptaltersgruppe berücksichtigt werden:
+Das folgende Beispiel wird zur Auswahl von Besucherinnen und Besuchern verwendet, die zu unserer wichtigsten Alterszielgruppe gehören:
 
 Männlich und zwischen 30 und 59 Jahren
 
 ODER
 
-Frauen und zwischen 30 und 59 Jahren
+Weiblich und zwischen 30 und 59 Jahren
 
 Beginnen Sie damit, eine ODER-Container-Komponente innerhalb des standardmäßigen UND-Containers zu platzieren. Fügen Sie innerhalb des ODER-Containers zwei UND-Container hinzu und in diesen wiederum die Eigenschafts- oder Verweiskomponenten.
 
@@ -177,7 +177,7 @@ Beginnen Sie damit, eine ODER-Container-Komponente innerhalb des standardmäßig
 
 ### Verwenden von Skript-Referenzen {#using-script-references}
 
-Mithilfe der Komponente „Skript-Referenz“ kann die Auswertung einer Segmenteigenschaft an ein externes Skript delegiert werden. Sobald das Skript ordnungsgemäß konfiguriert ist, kann es als jede andere Komponente einer Segmentbedingung verwendet werden.
+Mithilfe der Komponente „Skript-Referenz“ kann die Auswertung einer Segmenteigenschaft an ein externes Skript delegiert werden. Sobald das Skript ordnungsgemäß konfiguriert ist, kann es wie jede andere beliebige Komponente einer Segmentbedingung verwendet werden.
 
 #### Definieren eines Skripts für einen Verweis {#defining-a-script-to-reference}
 
@@ -224,8 +224,8 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 #### Verweisen auf ein Skript {#referencing-a-script}
 
 1. Erstellen Sie ein ContextHub-Segment.
-1. Fügen Sie die Komponente **Skript-Referenz** an der gewünschten Stelle des Segments.
-1. Öffnen Sie das Dialogfeld „Bearbeiten“ der Komponente **Skript-Referenz**. Wenn [ordnungsgemäß konfiguriert](/help/sites-administering/segmentation.md#defining-a-script-to-reference), sollte das Skript in der Dropdown-Liste **Skriptname** verfügbar sein.
+1. Fügen Sie die Komponente **Skript-Referenz** an der gewünschten Stelle des Segments hinzu.
+1. Öffnen Sie das Dialogfeld „Bearbeiten“ der Komponente **Skript-Referenz**. Sofern [ordnungsgemäß konfiguriert](/help/sites-administering/segmentation.md#defining-a-script-to-reference), sollte das Skript in der Dropdown-Liste **Skriptname** verfügbar sein.
 
 ## Organisieren von Segmenten {#organizing-segments}
 
@@ -300,12 +300,12 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 
 Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe von **[ContextHub](/help/sites-authoring/ch-previewing.md) getestet werden.**
 
-1. Vorschau einer Seite
+1. Zeigen Sie eine Seite in einer Vorschau an.
 1. Klicken Sie auf das ContextHub-Symbol, um die ContextHub-Symbolleiste anzuzeigen.
-1. Wählen Sie eine Rolle aus, die mit dem von Ihnen erstellten Segment übereinstimmt.
-1. Der ContextHub löst die entsprechenden Segmente für die ausgewählte Rolle auf.
+1. Wählen Sie eine Persona aus, die mit dem von Ihnen erstellten Segment übereinstimmt.
+1. ContextHub löst die entsprechenden Elemente für die ausgewählte Persona auf.
 
-Beispielsweise ist unsere einfache Segmentdefinition zur Identifizierung von Benutzern in unserer Hauptaltersgruppe eine einfache Segmentdefinition, die auf dem Alter und Geschlecht des Benutzers basiert. Das Laden einer spezifischen Rolle, die mit diesen Kriterien übereinstimmt, zeigt, ob das Segment erfolgreich aufgelöst wurde:
+Unsere einfache Segmentdefinition zur Identifikation von Benutzenden in unserer wichtigsten Altersgruppe ist beispielsweise eine, die einfach auf dem Alter und Geschlecht der Person basiert. Das Laden einer spezifischen Rolle, die mit diesen Kriterien übereinstimmt, zeigt, ob das Segment erfolgreich aufgelöst wurde:
 
 ![screen_shot_2012-02-02at105926am](assets/screen_shot_2012-02-02at105926am.png)
 
@@ -315,11 +315,11 @@ Oder ob es nicht aufgelöst wurde:
 
 >[!NOTE]
 >
->Alle Eigenschaften werden sofort aufgelöst, obwohl sich die meisten beim Neuladen der Seite ändern.
+>Alle Merkmale werden sofort aufgelöst, obwohl die meisten sich nur beim erneuten Laden der Seite ändern.
 
 Solche Tests können auch auf Inhaltsseiten und in Kombination mit gezielten Inhalten und damit verbundenen **Aktivitäten** und **Erlebnissen** durchgeführt werden.
 
-Wenn Sie eine Aktivität und ein Erlebnis mithilfe des obigen Segmentbeispiels für die Hauptseitengruppe eingerichtet haben, können Sie Ihr Segment einfach mit der Aktivität testen. Weitere Informationen zum Einrichten einer Aktivität finden Sie in der entsprechenden [Dokumentation zum Verfassen zielgerichteter Inhalte](/help/sites-authoring/content-targeting-touch.md).
+Wenn Sie mithilfe des obigen Beispiels zum Segment der wichtigsten Altersgruppe eine Aktivität und ein Erlebnis eingerichtet haben, können Sie Ihr Segment ganz einfach mit der Aktivität testen. Weitere Informationen zum Einrichten einer Aktivität finden Sie in der entsprechenden [Dokumentation zum Verfassen zielgerichteter Inhalte](/help/sites-authoring/content-targeting-touch.md).
 
 1. Im Bearbeitungsmodus einer Seite, auf der Sie gezielte Inhalte eingerichtet haben, können Sie anhand des Pfeilsymbols auf dem Inhalt erkennen, dass es sich um gezielten Inhalt handelt.
 
@@ -335,4 +335,4 @@ Wenn Sie eine Aktivität und ein Erlebnis mithilfe des obigen Segmentbeispiels f
 
 ## Verwenden Ihres Segments {#using-your-segment}
 
-Segmente werden verwendet, um den tatsächlichen Inhalt zu steuern, der für bestimmte Zielgruppen sichtbar ist. Unter [Verwalten von Zielgruppen](/help/sites-authoring/managing-audiences.md) finden Sie weitere Informationen zu Zielgruppen und Segmenten; unter [Bearbeiten gezielter Inhalte](/help/sites-authoring/content-targeting-touch.md) finden Sie weitere Informationen zur Nutzung von Zielgruppen und Segmenten zur gezielten Platzierung von Inhalten.
+Segmente werden zur Steuerung des tatsächlichen Inhalts verwendet, der bestimmen Zielgruppen angezeigt wird. Unter [Verwalten von Zielgruppen](/help/sites-authoring/managing-audiences.md) finden Sie weitere Informationen zu Zielgruppen und Segmenten; unter [Bearbeiten gezielter Inhalte](/help/sites-authoring/content-targeting-touch.md) finden Sie weitere Informationen zur Nutzung von Zielgruppen und Segmenten zur gezielten Platzierung von Inhalten.

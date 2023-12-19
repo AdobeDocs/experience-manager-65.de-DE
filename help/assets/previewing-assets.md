@@ -1,6 +1,6 @@
 ---
 title: Vorschau von Assets
-description: Erfahren Sie, wie Sie in Dynamic Media eine Vorschau von Assets wie Videos und Bildern anzeigen können, indem Sie Bildvorgaben und Viewer-Vorgaben anwenden.
+description: Erfahren Sie, wie Sie in Dynamic Media eine Vorschau von Assets wie Videos und Bildern anzeigen können, indem Sie Bild- und Anzeigevorgaben anwenden.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -12,7 +12,7 @@ exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
 source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '1381'
-ht-degree: 85%
+ht-degree: 89%
 
 ---
 
@@ -38,8 +38,8 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
 1. Klicken Sie in **[!UICONTROL Adobe Experience Manager]** auf der Seite **[!UICONTROL Navigation]** auf **[!UICONTROL Assets]** und dann auf **[!UICONTROL Dateien]**, um auf Assets zuzugreifen.
 1. Wählen Sie rechts oben auf der Seite in der Dropdown-Liste **[!UICONTROL Ansicht]** die Option **[!UICONTROL Listenansicht]** aus.
 1. (Optional) Sortieren Sie in der Spalte **[!UICONTROL Typ]** die Assets nach dem Typ, den Sie in einer Vorschau anzeigen möchten.
-1. Unter dem **[!UICONTROL Titel]** klicken Sie auf den Titel (nicht das Miniaturbild) des Assets, das Sie in der Vorschau anzeigen möchten.
-1. Führen Sie je nach angeklicktem Asset-Typ einen der folgenden Schritte aus:
+1. Klicken Sie in der Spalte **[!UICONTROL Titel]** auf den Namen des Titels (nicht auf das Miniaturbild) des Assets, das Sie in der Vorschau anzeigen möchten.
+1. Gehen Sie je nach ausgewähltem Asset wie folgt vor:
 
 
    <table>
@@ -63,7 +63,7 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
       <p><strong>Navigieren in der 3D-Szene</strong></p>
       <ul>
       <li><p><strong>3D-Kamera drehen</strong>: Drehen Sie Ihre Ansicht in der 3D-Szene um die Objekte herum.</p> Maus: Klicken und ziehen Sie mit der linken Maustaste </p> Touchscreen: Drücken und ziehen Sie</p></li>
-      <li><p><strong>Kamera schwenken</strong>: Schwenken Sie die Ansicht nach links, rechts, oben und unten.</p> Maus: Rechtsklick + Ziehen </p> Touchscreen: Drücken und ziehen Sie mit zwei Fingern</p></li>
+      <li><p><strong>Kamera schwenken</strong>: Schwenken Sie die Ansicht nach links, rechts, oben und unten.</p> Maus: Klicken und ziehen Sie mit der rechten Maustaste </p> Touchscreen: Drücken und ziehen Sie mit zwei Fingern</p></li>
       <li><p><strong>Kamera zoomen</strong>: Zoomen Sie Ihre Kamera, um sich in Bereiche in der 3D-Szene hinein- und herauszubewegen.</p> Maus: Scrollen Sie mit dem Mausrad </p> Touchscreen: Führen Sie mit den Fingern Pinch-Gesten aus</p></li>
       <li><p><strong>Kamera neu zentrieren</strong>: Drehen Sie Ihre Ansicht in der 3D-Szene um die Objekte herum.</p> Maus: Doppelklick </p> Touchscreen: Doppelklicken Sie</li></ul></td>
       </tr>
@@ -76,8 +76,8 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
       <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Klicken Sie in der Liste auf <strong>Ausgabedarstellungen</strong> und wählen Sie dann die Ausgabedarstellung, die Sie in einer Vorschau anzeigen möchten.</li>
       </ul> <p><strong>Asset-Vorschau in bestimmtem Viewer</strong></p>
       <ul>
-      <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Wählen Sie in der Liste <strong>Viewer</strong> aus. Wählen Sie dann einen Viewer aus, den Sie auf das Asset anwenden möchten.</li>
-      </ul> <p>Mit den Symbolen <strong>+</strong> und <strong>–</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Klicken Sie auf <strong>Zurücksetzen</strong>, wenn Sie das Bild zum ursprünglichen Zoom zurückführen möchten.<br /> Wenn Sie sich auf einem Touchscreen befinden, wählen Sie das Bild schrittweise aus, um es einzuzoomen. Wenn Sie den maximalen Zoom erreichen, doppelklicken Sie erneut auf das Bild, um den Zoomstatus zurückzusetzen. Streichen Sie mit dem Finger über das Bild, um es zu schwenken.</p> </td>
+      <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Wählen Sie in der Liste <strong>Viewers</strong> den Viewer aus, den Sie auf das Asset anwenden möchten.</li>
+      </ul> <p>Mit den Symbolen <strong>+</strong> und <strong>–</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Klicken Sie auf <strong>Zurücksetzen</strong>, wenn Sie das Bild zum ursprünglichen Zoom zurückführen möchten.<br /> Wenn Sie sich auf einem Touchscreen befinden, wählen Sie das Bild schrittweise aus, um es einzuzoomen. Wenn Sie den maximalen Zoom erreichen, doppelklicken Sie erneut auf das Bild, um den Zoomstatus zurückzusetzen. Ziehen Sie den Cursor über das Bild, um es zu schwenken.</p> </td>
       </tr>
       <tr>
       <td>Multimedia</td>
@@ -88,7 +88,7 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
       <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Klicken Sie in der Liste auf <strong>Ausgabedarstellungen</strong> und wählen Sie dann die Ausgabedarstellung, die Sie in einer Vorschau anzeigen möchten.</li>
       </ul> <p>Wenn Sie eine Videoausgabedarstellung mit einer höheren Auflösung für die Vorschau auswählen, kann das Video abgeschnitten werden. Dies liegt daran, dass in der Vorschau der Ausgabedarstellung die genaue Auflösung angezeigt wird, die auch die Kunden sehen, und zwar im Kontext des eingebetteten Viewers, über den die Vorschau erfolgt.</p> <p>Wenn Sie die Vorschau eines adaptiven Videosets auf Asset-Ebene anzeigen, werden die Ausgabedarstellungen in ein Wiedergabeerlebnis zusammengefasst. Das heißt, das adaptive Video wird entsprechend für die Anzeige skaliert und mit der optimalen Auflösung im Kontext des Anzeigegeräts und der Verbindungsgeschwindigkeit wiedergegeben.<br /> </p> <p><strong>Vorschau eines Assets in einem bestimmten Viewer anzeigen</strong></p>
       <ul>
-      <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Wählen Sie in der Liste <strong>Viewer</strong> aus. Wählen Sie dann einen Viewer aus, den Sie auf das Asset anwenden möchten.</li>
+      <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Wählen Sie in der Liste <strong>Viewers</strong> den Viewer aus, den Sie auf das Asset anwenden möchten.</li>
       </ul> </td>
       </tr>
       <tr>
@@ -98,7 +98,7 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
       <td><p><strong>Vorschau eines Assets in einem bestimmten Viewer anzeigen</strong></p>
       <ul>
       <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Wählen Sie in der Liste <strong>Viewer</strong> aus. Wählen Sie dann einen Viewer aus, den Sie auf das Asset anwenden möchten.</li>
-      </ul> <p>Mit den Symbolen <strong>+</strong> und <strong>–</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Klicken Sie auf <strong>Zurücksetzen</strong>, wenn Sie das Bild zum ursprünglichen Zoom zurückführen möchten.<br /> Wenn Sie sich auf einem Touchscreen befinden, wählen Sie das Bild schrittweise aus, um es einzuzoomen. Wenn Sie den maximalen Zoom erreichen, doppelklicken Sie erneut auf das Bild, um den Zoomstatus zurückzusetzen. Streichen Sie mit dem Finger über das Bild, um es zu schwenken.</p> </td>
+      </ul> <p>Mit den Symbolen <strong>+</strong> und <strong>–</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Klicken Sie auf <strong>Zurücksetzen</strong>, wenn Sie das Bild zum ursprünglichen Zoom zurückführen möchten.<br /> Wenn Sie sich auf einem Touchscreen befinden, wählen Sie das Bild schrittweise aus, um es einzuzoomen. Wenn Sie den maximalen Zoom erreichen, doppelklicken Sie erneut auf das Bild, um den Zoomstatus zurückzusetzen. Ziehen Sie den Cursor über das Bild, um es zu schwenken.</p> </td>
       </tr>
       <tr>
       <td>Rotationsset</td>
@@ -106,25 +106,25 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
       <td>Ja</td>
       <td><p><strong>Vorschau eines Assets in einem bestimmten Viewer anzeigen</strong></p>
       <ul>
-      <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Wählen Sie in der Liste <strong>Viewer</strong> aus. Wählen Sie dann einen Viewer aus, den Sie auf das Asset anwenden möchten.</li>
-      </ul> <p>Mit den Symbolen <strong>+</strong> und <strong>–</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Klicken Sie auf <strong>Zurücksetzen</strong>, wenn Sie das Bild zum ursprünglichen Zoom zurückführen möchten.<br /> Wenn Sie sich auf einem Touchscreen befinden, wählen Sie das Bild schrittweise aus, um es einzuzoomen. Wenn Sie den maximalen Zoom erreichen, doppelklicken Sie erneut auf das Bild, um den Zoomstatus zurückzusetzen. Streichen Sie mit dem Finger über das Bild, um es zu schwenken.</p> </td>
+      <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Wählen Sie in der Liste <strong>Viewers</strong> den Viewer aus, den Sie auf das Asset anwenden möchten.</li>
+      </ul> <p>Mit den Symbolen <strong>+</strong> und <strong>–</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Klicken Sie auf <strong>Zurücksetzen</strong>, wenn Sie das Bild zum ursprünglichen Zoom zurückführen möchten.<br /> Wenn Sie sich auf einem Touchscreen befinden, wählen Sie das Bild schrittweise aus, um es einzuzoomen. Wenn Sie den maximalen Zoom erreichen, doppelklicken Sie erneut auf das Bild, um den Zoomstatus zurückzusetzen. Ziehen Sie den Cursor über das Bild, um es zu schwenken.</p> </td>
       </tr>
       <tr>
-      <td>Gemischtes Medien-Set</td>
+      <td>Gemischter Mediensatz</td>
       <td>Nein</td>
       <td>Ja</td>
       <td><p><strong>Vorschau eines Assets in einem bestimmten Viewer anzeigen</strong></p>
       <ul>
-      <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Wählen Sie in der Liste <strong>Viewer</strong> aus. Wählen Sie dann einen Viewer aus, den Sie auf das Asset anwenden möchten.</li>
-      </ul> <p>Mit den Symbolen <strong>+</strong> und <strong>–</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Klicken Sie auf <strong>Zurücksetzen</strong>, wenn Sie das Bild zum ursprünglichen Zoom zurückführen möchten.<br /> Wenn Sie sich auf einem Touchscreen befinden, wählen Sie das Bild schrittweise aus, um es einzuzoomen. Wenn Sie den maximalen Zoom erreichen, doppelklicken Sie erneut auf das Bild, um den Zoomstatus zurückzusetzen. Streichen Sie mit dem Finger über das Bild, um es zu schwenken.</p> </td>
+      <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Wählen Sie in der Liste <strong>Viewers</strong> den Viewer aus, den Sie auf das Asset anwenden möchten.</li>
+      </ul> <p>Mit den Symbolen <strong>+</strong> und <strong>–</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Klicken Sie auf <strong>Zurücksetzen</strong>, wenn Sie das Bild zum ursprünglichen Zoom zurückführen möchten.<br /> Wenn Sie sich auf einem Touchscreen befinden, wählen Sie das Bild schrittweise aus, um es einzuzoomen. Wenn Sie den maximalen Zoom erreichen, doppelklicken Sie erneut auf das Bild, um den Zoomstatus zurückzusetzen. Ziehen Sie den Cursor über das Bild, um es zu schwenken.</p> </td>
       </tr>
       <tr>
-      <td>Karussellset</td>
+      <td>Karussellsatz</td>
       <td>Nein</td>
       <td>Ja</td>
       <td><strong>Vorschau eines Assets in einem bestimmten Viewer anzeigen</strong>
       <ul>
-      <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Wählen Sie einen Viewer, den Sie auf das Asset anwenden möchten.</li>
+      <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Wählen Sie einen Viewer aus, den Sie auf das Asset anwenden möchten.</li>
       </ul> </td>
       </tr>
       <tr>
@@ -137,7 +137,7 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
       </ul> <p><strong>Asset-Vorschau in bestimmtem Viewer</strong></p>
       <ul>
       <li>Klicken Sie oben links auf der Seite auf das Symbol, sodass die Dropdown-Liste angezeigt wird. Wählen Sie <strong>Viewer</strong> und dann einen Viewer aus, den Sie auf das Asset anwenden möchten.</li>
-      </ul> <p>Mit den Symbolen <strong>+</strong> und <strong>–</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Klicken Sie auf <strong>Zurücksetzen</strong>, wenn Sie das Bild zum ursprünglichen Zoom zurückführen möchten.<br /> Wenn Sie sich auf einem Touchscreen befinden, wählen Sie das Bild schrittweise aus, um es einzuzoomen. Wenn Sie den maximalen Zoom erreichen, doppelklicken Sie erneut auf das Bild, um den Zoomstatus zurückzusetzen. Streichen Sie mit dem Finger über das Bild, um es zu schwenken.</p> </td>
+      </ul> <p>Mit den Symbolen <strong>+</strong> und <strong>–</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Klicken Sie auf <strong>Zurücksetzen</strong>, wenn Sie das Bild zum ursprünglichen Zoom zurückführen möchten.<br /> Wenn Sie sich auf einem Touchscreen befinden, wählen Sie das Bild schrittweise aus, um es einzuzoomen. Wenn Sie den maximalen Zoom erreichen, doppelklicken Sie erneut auf das Bild, um den Zoomstatus zurückzusetzen. Ziehen Sie den Cursor über das Bild, um es zu schwenken.</p> </td>
       </tr>
     </tbody>
     </table>

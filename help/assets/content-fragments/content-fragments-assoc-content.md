@@ -6,8 +6,8 @@ role: User
 exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
 source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 90%
+source-wordcount: '246'
+ht-degree: 93%
 
 ---
 
@@ -30,7 +30,7 @@ Um die Verknüpfung herzustellen, müssen Sie zunächst [Hinzufügen von Medien-
 1. Je nachdem, ob bereits Sammlungen zugeordnet wurden oder nicht, wählen Sie eine der folgenden Optionen aus:
 
    * **Inhalt verknüpfen**: dies wird die erste zugehörige Sammlung
-   * **Sammlung verknüpfen** - verknüpfte Sammlungen, die bereits konfiguriert sind
+   * **Sammlung verknüpfen**: zugehörige Sammlungen, die bereits konfiguriert sind
 
 1. Wählen Sie die erforderliche Sammlung aus.
 
@@ -46,7 +46,7 @@ Um die Verknüpfung herzustellen, müssen Sie zunächst [Hinzufügen von Medien-
 
 Nachdem Sie eine Sammlung zugewiesen haben, können Sie Folgendes tun:
 
-* Die Zuordnung **entfernen**.
-* Assets zu einer Sammlung **hinzufügen**.
+* Die Verknüpfung **aufheben**.
+* **Assets zur Sammlung hinzufügen**.
 * Ein Asset für weitere Aktionen auswählen.
 * Das ausgewählte Asset bearbeiten.

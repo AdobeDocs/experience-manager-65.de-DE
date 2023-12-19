@@ -1,6 +1,6 @@
 ---
 title: Bereitstellung von Inhalten per HTTP/2
-description: Erfahren Sie, wie HTTP/2 die Kommunikation zwischen Browsern und Servern verbessert, wodurch eine schnellere Übertragung von Informationen ermöglicht und gleichzeitig die benötigte Verarbeitungsleistung reduziert wird.
+description: Erfahren Sie, wie HTTP/2 die Kommunikation zwischen Browsern und Servern verbessert, eine schnellere Übertragung von Informationen ermöglicht und die benötigte Verarbeitungsleistung verringert.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -11,7 +11,7 @@ feature: Publishing,Configuration
 source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '749'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Die folgende Demonstration zeigt den Unterschied zwischen Laden mit HTTP/1 und L
 Um HTTP/2 verwenden zu können, müssen Sie die folgenden Voraussetzungen erfüllen:
 
 * Sie verwenden sicheres HTTPS für Ihre Rich Media-Anforderungen.
-* Verwenden Sie das Adobe-gebündelte CDN (Content Delivery Network) als Teil Ihrer Dynamic Media-Lizenz.
+* Sie verwenden das von Adobe gebündelte CDN (Content Delivery Network) als Teil Ihrer Dynamic Media-Lizenz.
 * Sie verwenden eine dedizierte (non- company-h.assetsadobe#.com) Domain.
 
   Wenn Sie bereits über eine dedizierte Domain verfügen, können Sie sich über den Kunden-Support von Adobe anmelden.

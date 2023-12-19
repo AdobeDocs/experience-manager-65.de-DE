@@ -1,6 +1,6 @@
 ---
 title: SharePoint Connector-Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse
-description: Erfahren Sie mehr über SharePoint Connector-Lizenzen, Copyright-Hinweise und Haftungsausschlüsse.
+description: Erfahren Sie mehr über SharePoint Connector-Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -9,18 +9,18 @@ docset: aem65
 exl-id: b9342330-31f6-49cb-965e-4bab61f98d4c
 source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 62%
+source-wordcount: '333'
+ht-degree: 100%
 
 ---
 
 # SharePoint Connector-Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-In diesem Abschnitt werden alle Lizenzen, Copyright-Hinweise und Haftungsausschlüsse aufgelistet, die explizit mit Day JCR Connector für MS® SharePoint angegeben werden müssen.
+Dieser Abschnitt umfasst alle Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse, die mit dem Day JCR Connector für MS® SharePoint explizit aufgeführt sein müssen.
 
-## Übersicht über Connector-Drittanbieter-Bibliotheken {#overview-of-connector-rd-party-libraries}
+## Überblick über die Bibliotheken von Connector-Drittanbietern {#overview-of-connector-rd-party-libraries}
 
-In der folgenden Tabelle sind die Bibliotheken von Drittanbietern aufgeführt, die in den SharePoint Connector-Kernbibliotheken verwendet werden, sowie die Lizenzen, Urheberrechtshinweise oder Haftungsausschlüsse, unter die diese Bibliotheken fallen:
+In der folgenden Tabelle sind die Drittanbieter-Bibliotheken, die in den SharePoint Connector-Core-Bibliotheken genutzt werden, zusammen mit den Lizenzen, Urheberrechtsvermerken oder Haftungsausschlüssen, denen sie unterliegen, aufgeführt:
 
 | Bibliothek | Lizenztyp |
 |---|---|
@@ -59,9 +59,9 @@ In der folgenden Tabelle sind die Bibliotheken von Drittanbietern aufgeführt, d
 | xml-apis | [Apache](#apache) (enthält Teile, die von öffentlich zugänglichen und W3C-Software-Lizenzen abgedeckt sind) |
 | XmlSchema | [Apache](#apache) |
 
-## Überblick über CRX-Drittanbieter-Bibliotheken {#overview-of-crx-rd-party-libraries}
+## Überblick über die Bibliotheken von CRX-Drittanbietern {#overview-of-crx-rd-party-libraries}
 
-In der folgenden Tabelle sind die in CRX verwendeten Drittanbieterbibliotheken zusammen mit den Lizenzen, Urheberrechtshinweisen oder Haftungsausschlüssen aufgeführt, unter die sie fallen:
+In der folgenden Tabelle sind die in CRX verwendeten Drittanbieter-Bibliotheken aufgeführt, zusammen mit den Lizenzen, Urheberschutzvermerken und Haftungsausschlüssen, unter die sie fallen:
 
 <table>
  <colgroup>
@@ -151,9 +151,9 @@ In der folgenden Tabelle sind die in CRX verwendeten Drittanbieterbibliotheken z
  </tbody>
 </table>
 
-## Überblick über CQSE-Drittanbieter-Bibliotheken {#overview-of-cqse-rd-party-libraries}
+## Überblick über die Drittanbieter-Bibliotheken von CQSE. {#overview-of-cqse-rd-party-libraries}
 
-In der folgenden Tabelle sind die Bibliotheken von Drittanbietern aufgeführt, die in der Communiqué Servlet Engine verwendet werden, sowie die Lizenzen, Urheberrechtshinweise oder Haftungsausschlüsse, unter die sie fallen:
+In der folgenden Tabelle sind die in der Communiqué Servlet Engine verwendeten Drittanbieter-Bibliotheken, zusammen mit den Lizenzen, Urheberrechtsvermerken oder Haftungsausschlüssen, denen sie unterliegen, aufgeführt:
 
 <table>
  <colgroup>

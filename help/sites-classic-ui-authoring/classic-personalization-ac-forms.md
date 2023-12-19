@@ -9,7 +9,7 @@ exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1227'
-ht-degree: 90%
+ht-degree: 95%
 
 ---
 
@@ -85,9 +85,9 @@ In diesem Abschnitt werden nur für Adobe Campaign spezifische Verknüpfungen b
    >
    >Entsperren Sie (falls nötig) die Konfiguration, indem Sie auf das Schloss klicken. Der Adobe Campaign-Service kann nun hinzugefügt werden.
 
-1. Greifen Sie auf die allgemeinen Parameter des Formulars zu, indem Sie auf die Schaltfläche **Bearbeiten** klicken, die sich am Anfang des Formulars befindet. Die **Formular** können Sie eine Dankeseite auswählen, zu der der Benutzer nach der Validierung des Formulars weitergeleitet wird.
+1. Greifen Sie auf die allgemeinen Parameter des Formulars zu, indem Sie auf die Schaltfläche **Bearbeiten** klicken, die sich am Anfang des Formulars befindet. Auf der Registerkarte **Formular** können Sie eine Dankeseite auswählen, zu der die Benutzenden nach der Überprüfung des Formulars weitergeleitet werden.
 
-   Die **Erweitert** Formular können Sie den Formulartyp auswählen. Das Feld **Post-Optionen** ermöglicht Ihnen die Wahl zwischen drei Typen von Adobe Campaign-Formularen:
+   Im Formular **Erweitert** können Sie den Formulartyp auswählen. Das Feld **Post-Optionen** ermöglicht Ihnen die Wahl zwischen drei Typen von Adobe Campaign-Formularen:
 
    * **Adobe Campaign: Profil speichern**: ermöglicht das Erstellen oder Aktualisieren einer Empfängerin oder eines Empfängers in Adobe Campaign (Standardwert).
    * **Adobe Campaign: Abonnieren von Diensten**: ermöglicht das Verwalten der Abonnements einer Empfängerin oder eines Empfängers in Adobe Campaign.
@@ -99,7 +99,7 @@ In diesem Abschnitt werden nur für Adobe Campaign spezifische Verknüpfungen b
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 
-1. Konfigurieren Sie die hinzugefügten Felder durch Doppelklick. Auf der Registerkarte **Adobe Campaign** können Sie das Feld mit einem Feld in der Empfängertabelle von Adobe Campaign verknüpfen. Sie können zudem ebenfalls festlegen, ob das Feld Teil des Abstimmschlüssels ist, mit dessen Hilfe bereits in der Adobe Campaign-Datenbank erfasste Empfänger identifiziert werden können.
+1. Konfigurieren Sie die hinzugefügten Felder, indem Sie doppelt darauf klicken. Auf der Registerkarte **Adobe Campaign** können Sie das Feld mit einem Feld in der Empfängertabelle von Adobe Campaign verknüpfen. Sie können zudem ebenfalls festlegen, ob das Feld Teil des Abstimmschlüssels ist, mit dessen Hilfe bereits in der Adobe Campaign-Datenbank erfasste Empfänger identifiziert werden können.
 
    >[!CAUTION]
    >

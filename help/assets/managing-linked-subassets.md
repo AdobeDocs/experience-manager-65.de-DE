@@ -7,8 +7,8 @@ feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 96%
+source-wordcount: '1382'
+ht-degree: 97%
 
 ---
 
@@ -71,7 +71,7 @@ Dieses Verfahren weist Ähnlichkeiten mit dem [Hinzufügen digitaler Assets als 
 
 ## [!DNL Adobe Photoshop]: Hinzufügen digitaler Assets als Referenzen {#refps}
 
-1. Verwenden Sie das [!DNL Experience Manager]-Desktop-Programm, um auf [!DNL Experience Manager Assets] zuzugreifen. Laden Sie die Assets herunter und zeigen Sie sie im lokalen Dateisystem an. Verwenden Sie die [!UICONTROL Platzieren von Links] Funktionalität in [!DNL Adobe Photoshop]. Siehe [Platzieren von Assets im Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#place-assets-in-native-documents).
+1. Verwenden Sie das [!DNL Experience Manager]-Desktop-Programm, um auf [!DNL Experience Manager Assets] zuzugreifen. Laden Sie die Assets herunter und zeigen Sie sie im lokalen Dateisystem an. Verwenden Sie die Funktion [!UICONTROL Platzieren von Links] in [!DNL Adobe Photoshop]. Siehe [Platzieren von Assets im Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#place-assets-in-native-documents).
 
 1. Speichern Sie die [!DNL Photoshop]-Datei auf dem bereitgestellten Laufwerk oder [laden](/help/assets/manage-assets.md#uploading-assets) Sie sie in das [!DNL Experience Manager]-Repository hoch.
 1. Nach Abschluss des Workflows werden die Verweise auf vorhandene [!DNL Experience Manager]-Assets auf der Asset-Detailseite aufgeführt.
@@ -128,7 +128,7 @@ Die folgenden Optionen sind auf der Symbolleiste, in der linken Leiste und in de
 
 * Die Option **[!UICONTROL Eigenschaften]** öffnet die Seite [!UICONTROL Eigenschaften] des Unter-Assets.
 
-* **[!UICONTROL Anmerken]** -Option können Sie das spezifische Unter-Asset kommentieren. Die Anmerkungen, die Sie für separate Unter-Assets verwenden, werden erfasst und zusammen angezeigt, wenn das übergeordnete Asset zur Anzeige geöffnet wird.
+* Mit der Option **[!UICONTROL Anmerken]** können Sie das spezifische Unterelement kommentieren. Die Anmerkungen, die Sie für separate Unter-Assets verwenden, werden erfasst und zusammen angezeigt, wenn das übergeordnete Asset zur Anzeige geöffnet wird.
 
 * Die Option **[!UICONTROL Seitenübersicht]** zeigt alle Unter-Assets gleichzeitig an.
 
@@ -136,7 +136,7 @@ Die folgenden Optionen sind auf der Symbolleiste, in der linken Leiste und in de
 
 ## Best Practices und Einschränkungen {#best-practice-limitation-tips}
 
-* Die Erstellung von Unter-Assets kann bei jeder [!DNL Experience Manager]-Bereitstellung äußerst ressourcenintensiv sein. Wenn Sie Unter-Assets generieren, während komplexe Assets hochgeladen werden, fügen Sie den Schritt im Workflow „DAM-Update-Asset“ hinzu. Wenn Sie Unter-Assets On-Demand generieren, erstellen Sie einen separaten Workflow, um Unter-Assets zu generieren. Mit einem dedizierten Workflow können Sie die anderen Schritte im Workflow DAM-Update-Asset überspringen und Rechenressourcen speichern.
+* Die Erstellung von Unter-Assets kann bei jeder [!DNL Experience Manager]-Bereitstellung äußerst ressourcenintensiv sein. Wenn Sie Unter-Assets generieren, während komplexe Assets hochgeladen werden, fügen Sie den Schritt im Workflow „DAM-Update-Asset“ hinzu. Wenn Sie Unter-Assets On-Demand generieren, erstellen Sie einen separaten Workflow, um Unter-Assets zu generieren. Mit einem speziellen Workflow können Sie die anderen Schritte im Workflow „DAM-Update-Asset“ überspringen und dadurch Rechenressourcen sparen.
 
 >[!MORELIKETHIS]
 >

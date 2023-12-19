@@ -8,8 +8,8 @@ feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
 source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 41%
+source-wordcount: '591'
+ht-degree: 85%
 
 ---
 
@@ -17,27 +17,28 @@ ht-degree: 41%
 
 ## Übersicht {#overview}
 
-Mithilfe der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;von Correspondence Management können Sie Entwürfe von Briefinstanzen unter &quot;Fortschritt&quot;speichern und es gibt gesendete Briefinstanzen.
+Durch Verwenden der Correspondence Management-Benutzeroberfläche „Korrespondenzen erstellen“ können Sie Entwürfe laufender Briefinstanzen speichern. Außerdem sind gesendete Briefinstanzen vorhanden.
 
-Correspondence Management bietet APIs, mit denen Sie die Listenschnittstelle für die Arbeit mit gesendeten Briefinstanzen oder Entwürfen erstellen können. Die APIs listen und öffnen gesendete und Entwurfsbriefinstanzen eines Agenten, damit der Agent weiterhin am Entwurf oder an der gesendeten Briefinstanz arbeiten kann.
+Correspondence Management bietet APIs, über die Sie eine Listenschnittstelle erstellen können, um mit gesendeten Briefinstanzen oder Entwürfen zu arbeiten. Die APIs listen und öffnen gesendete und Entwurfsbriefinstanzen eines Agenten, damit der Agent weiterhin am Entwurf oder an der gesendeten Briefinstanz arbeiten kann.
 
 ## Abrufen von Briefinstanzen {#fetching-letter-instances}
 
-Correspondence Management stellt APIs bereit, um  Briefinstanzen mithilfe von LetterInstanceService abzurufen.
+Correspondence Management stellt APIs zum Abrufen von Briefinstanzen über den LetterInstanceService-Dienst bereit.
 
 | Methode | Beschreibung |
 |--- |--- |
-| getAllLetterInstances | Ruft Briefinstanzen anhand des Eingabeabfrageparameters ab. Um alle Briefinstanzen abzurufen, übergeben Sie den Abfrageparameter als null. |
-| getLetterInstance | Ruft die angegebene Briefinstanz basierend auf der Briefinstanz-ID ab. |
-| letterInstanceExists | Überprüft anhand des angegebenen Namens, ob eine Briefinstanz vorhanden ist. |
+| getAllLetterInstances | Ruft Briefinstanzen anhand des Eingabeabfrageparameters ab. Um alle Briefinstanzen aufzurufen, übergeben Sie den Abfrageparameter als null. |
+| getLetterInstance | Ruft die angegebene Briefinstanz basierend auf der Briefinstanz-ID auf. |
+| letterInstanceExists | Prüft anhand des angegebenen Namens, ob eine Briefinstanz vorhanden ist. |
 
 >[!NOTE]
 >
->LetterInstanceService ist ein OSGI-Dienst und seine Instanz kann mithilfe von @Reference in Java™ Class oder sling.getService(LetterInstanceService abgerufen werden. Class) in JSP.
+>„LetterInstanceService“ ist ein OSGi-Dienst und seine Instanz kann wie folgt abgerufen werden:
+über@Reference in der Java™-Klasse oder sling.getService(LetterInstanceService. Class) in JSP.
 
 ### Verwendung von getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-Die folgende API findet die Briefinstanzen basierend auf dem Abfrageobjekt (Gesendet und Entwurf). Wenn das Abfrageobjekt null ist, werden alle Briefinstanzen zurückgegeben. Diese API gibt eine Liste von [LetterInstanceVO](https://helpx.adobe.com/de/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) -Objekte, die zum Extrahieren zusätzlicher Informationen der Briefinstanz verwendet werden können.
+Die folgende API findet die Briefinstanzen basierend auf dem Abfrageobjekt (Gesendet und Entwurf). Wenn das Abfrageobjekt null ist, werden alle Briefinstanzen zurückgegeben. Diese API gibt eine Liste von [LetterInstanceVO](https://helpx.adobe.com/de/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html)-Objekten zurück, die zum Extrahieren von zusätzlichen Informationen aus der Briefinstanz verwendet werden können.
 
 **Syntax**: `List getAllLetterInstances(Query query) throws ICCException;`
 
@@ -48,13 +49,13 @@ Die folgende API findet die Briefinstanzen basierend auf dem Abfrageobjekt (Gese
    <td><strong>Beschreibung</strong></td>
   </tr>
   <tr>
-   <td>Abfrage</td>
-   <td>Der Abfrageparameter wird zum Suchen/Filtern der Briefinstanz verwendet. Hier unterstützt die Abfrage nur Attribute/Eigenschaften der obersten Ebene des Objekts. Abfrage besteht aus Anweisungen und der im Statement-Objekt verwendete "attributeName"sollte der Name der Eigenschaft im Briefinstanzobjekt sein.<br /> </td>
+   <td>query</td>
+   <td>Der Parameter „query“ wird zum Suchen/Filtern der Briefinstanz verwendet. Hier unterstützt „query“ nur Attribute/Eigenschaften der obersten Ebene des Objekts. „query“ besteht aus Anweisungen und „attributeName“ im Anweisungsobjekt sollte dem Namen der Eigenschaft im Briefinstanzobjekt entsprechen.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-#### Beispiel 1: Rufen Sie alle Briefinstanzen des Typs &quot;SUBMITTED&quot;ab {#example-fetch-all-the-letter-instances-of-type-submitted}
+#### Beispiel 1: Abrufen aller Briefinstanzen vom Typ GESENDET {#example-fetch-all-the-letter-instances-of-type-submitted}
 
 Der folgende Code gibt die Liste der gesendeten Briefinstanzen zurück. Um nur Entwürfe zu erhalten, ändern Sie `LetterInstanceType.COMPLETE.name()` in `LetterInstanceType.DRAFT.name().`
 
@@ -121,7 +122,7 @@ Prüfen Sie anhand des angegebenen Namens, ob eine Briefinstanz vorhanden ist
 
 | **Parameter** | **Beschreibung** |
 |---|---|
-| letterInstanceName | Name der Briefinstanz, deren Existenz Sie überprüfen möchten. |
+| letterInstanceName | Der Name der Briefinstanz, bei der Sie überprüfen möchten, ob sie vorhanden ist. |
 
 ```java
 @Reference
@@ -132,23 +133,23 @@ Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName )
 
 ## Öffnen von Briefinstanzen {#opening-letter-instances}
 
-Die Briefinstanz kann vom Typ &quot;Gesendet&quot;oder &quot;Entwurf&quot;sein. Das Öffnen beider Briefinstanztypen zeigt unterschiedliche Verhaltensweisen:
+Die Briefinstanz kann vom Typ „Gesendet“ oder „Entwurf“ sein. Beim Öffnen der beiden Briefinstanztypen zeigen sich unterschiedliche Verhaltensweisen:
 
-* Wenn eine Instanz für gesendete Briefe vorhanden ist, wird eine PDF geöffnet, die die Briefinstanz darstellt. Die gesendete Briefinstanz, die auf dem Server persistiert wird, enthält auch die dataXML und verarbeitete XDP, die verwendet werden können, um einen Anwendungsfall wie das Erstellen einer PDF/A auszuführen und weiter anzupassen.
+* Wenn eine Instanz für gesendete Briefe vorhanden ist, wird eine PDF geöffnet, die die Briefinstanz darstellt. Die Briefinstanz vom Typ „Gesendet“, die auf dem Server vorhanden ist, enthält auch die dataXML und verarbeitete XDP, die verwendet werden können, um Anwendungsfälle wie das Erstellen einer PDF/A durchzuführen und weiter anzupassen.
 * Wenn eine Briefinstanz vom Typ Entwurf vorhanden ist, wird die Benutzeroberfläche &quot;Korrespondenz erstellen&quot;in den exakten vorherigen Status wie zum Zeitpunkt der Erstellung des Entwurfs neu geladen
 
 ### Öffnen der Briefinstanz „Entwurf“  {#opening-draft-letter-instance-nbsp}
 
-CCR Benutzeroberfläche  unterstützt den Parameter cmLetterInstanceId , der zum Neuladen des Briefs verwendet werden kann.
+Die CCR-Benutzeroberfläche unterstützt den Parameter cmLetterInstanceId , der zum Neuladen des Briefs verwendet werden kann.
 
 `https://[hostName]:[portNo]/[contextPath]//aem/forms/createcorrespondence.html?random=[randomNo]&cmLetterInstanceId=[letterInstanceId]`
 
 >[!NOTE]
 >
-Sie müssen beim Neuladen einer Korrespondenz weder cmLetterId noch cmLetterName/State/Version angeben, da die gesendeten Daten bereits alle Details zu dieser Korrespondenz enthalten. RandomNo wird verwendet, um Browsercache-Probleme zu vermeiden. Sie können einen Zeitstempel als zufällige Nummer verwenden.
+Sie müssen beim Neuladen einer Korrespondenz weder cmLetterId noch cmLetterName/State/Version angeben, da die gesendeten Daten bereits alle Details zu dieser Korrespondenz enthalten. „RandomNo“ wird verwendet, um Probleme mit dem Browsercache zu vermeiden. Sie können einen Zeitstempel als Zufallszahl verwenden.
 
-### Öffnen der gesendeten Briefinstanz {#opening-submitted-letter-instance}
+### Öffnen der Briefinstanz „Gesendet“ {#opening-submitted-letter-instance}
 
-Gesendete PDF kann direkt mit der Briefinstanz-ID geöffnet werden:
+Ein gesendetes PDF-Dokument kann mit der Briefinstanz-ID direkt geöffnet werden:
 
 `https://[hostName]:[portNo]/[contextPath]/[letterInstanceId]`

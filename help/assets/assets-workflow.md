@@ -7,14 +7,14 @@ role: User, Admin
 exl-id: e7c84385-efb3-4997-83ff-7a7f31582469
 source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 91%
+source-wordcount: '962'
+ht-degree: 97%
 
 ---
 
 # Verarbeiten digitaler Assets {#process-assets}
 
-[!DNL Adobe Experience Manager Assets] ermöglicht Ihnen, auf vielerlei Weise an Ihren digitalen Assets zu arbeiten, um eine robuste Asset-Verarbeitung zu ermöglichen. Sie können die standardmäßigen oder benutzerdefinierten Verarbeitungsmethoden verwenden, um den vollständigen Abschluss von Geschäftsprozessen, Audits und Compliance, Erkennung und Verteilung sowie grundlegende Sicherheit Ihrer digitalen Assets sicherzustellen. Sie können die Asset-Management-Aufgaben ausführen und dabei die erforderliche Skalierung und Anpassung erreichen.
+[!DNL Adobe Experience Manager Assets] ermöglicht Ihnen die Bearbeitung Ihrer digitalen Assets auf vielfältige Weise, um eine zuverlässige Asset-Verarbeitung zu ermöglichen. Sie können die standardmäßigen oder benutzerdefinierten Verarbeitungsmethoden verwenden, um den vollständigen Abschluss von Geschäftsprozessen, Audits und Compliance, Erkennung und Verteilung sowie grundlegende Sicherheit Ihrer digitalen Assets sicherzustellen. Sie können die Asset-Management-Aufgaben ausführen und dabei die erforderliche Skalierung und Anpassung erreichen.
 
 ## Grundlegendes zu Workflows {#understand-workflows}
 
@@ -34,7 +34,7 @@ Die standardmäßig verfügbaren Workflow-Modelle finden Sie unter **[!UICONTROL
 
 Das Anwenden von Workflows auf digitale Assets entspricht dem Vorgehen bei den Seiten einer Website. Eine vollständige Anleitung zum Erstellen und Verwenden von Workflows finden Sie unter [Starten von Workflows](/help/sites-authoring/workflows-participating.md).
 
-Verwenden Sie Workflows in digitalen Assets, um das Asset zu aktivieren oder Wasserzeichen zu erstellen. Viele Workflows für Assets werden automatisch aktiviert. Beispielsweise wird der Workflow, der automatisch eine Ausgabedarstellung erstellt, nachdem ein Bild bearbeitet wurde, automatisch aktiviert.
+Verwenden Sie Workflows in digitalen Assets, um das Asset zu aktivieren oder Wasserzeichen zu erstellen. Viele der Workflows für Assets werden automatisch aktiviert. Beispielsweise wird der Workflow, der automatisch eine Ausgabedarstellung erstellt, nachdem ein Bild bearbeitet wurde, automatisch aktiviert.
 
 >[!NOTE]
 >

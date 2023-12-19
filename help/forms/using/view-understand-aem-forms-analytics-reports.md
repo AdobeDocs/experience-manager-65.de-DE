@@ -1,6 +1,6 @@
 ---
 title: Anzeigen und Verstehen der Analytics-Berichte in AEM Forms
-description: AEM Forms ist mit Adobe Analytics integriert und bietet Ihnen eine Zusammenfassung und detaillierte Analysen zu Ihren veröffentlichten adaptiven Formularen.
+description: AEM Forms kann mit Adobe Analytics integriert werden und bietet Ihnen eine Zusammenfassung und detaillierte Analysen zu Ihren veröffentlichten adaptiven Formularen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
@@ -8,14 +8,14 @@ docset: aem65
 exl-id: c5a4e6f6-f331-41e9-a0a9-51a30df6e2cd
 source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 44%
+source-wordcount: '1056'
+ht-degree: 98%
 
 ---
 
 # Anzeigen und Verstehen der Analytics-Berichte in AEM Forms {#view-and-understand-aem-forms-analytics-reports}
 
-Adobe Experience Manager Forms ist mit Adobe Analytics integriert, sodass Sie Leistungsmetriken für Ihre veröffentlichten Formulare und Dokumente erfassen und verfolgen können. Ziel dieser Analyse ist es, informierte, auf Daten basierende Entscheidungen zu erforderlichen Formularänderungen treffen zu können, durch die Formulare oder Dokumente benutzerfreundlicher werden.
+Adobe Experience Manager Forms ermöglicht die Integration in Adobe Analytics, sodass Sie Leistungsmetriken für Ihre veröffentlichten Formulare und Dokumente erfassen und verfolgen können. Ziel dieser Analyse ist es, informierte, auf Daten basierende Entscheidungen zu erforderlichen Formularänderungen treffen zu können, durch die Formulare oder Dokumente benutzerfreundlicher werden.
 
 ## Einrichten von Analysen {#setting-up-analytics}
 
@@ -23,17 +23,17 @@ Die Analysefunktion in AEM Forms ist als Teil des AEM Forms-Add-On-Pakets verfü
 
 Zusätzlich zum Add-On-Paket benötigen Sie ein Adobe Analytics-Konto. Informationen zur Lösung finden Sie unter [Adobe Analytics](https://www.adobe.com/de/solutions/digital-analytics.html).
 
-Nachdem Sie über das Add-On-Paket für AEM Forms und ein Adobe Analytics-Konto verfügen, integrieren Sie das Adobe Analytics-Konto in AEM Forms und aktivieren Sie das Tracking in Ihren Formularen oder Dokumenten, wie unter [Konfigurieren von Analysen und Berichten](../../forms/using/configure-analytics-forms-documents.md).
+Wenn Sie über das Add-On-Paket für AEM Forms und ein Adobe Analytics-Konto verfügen, integrieren Sie das Adobe Analytics-Konto in AEM Forms und aktivieren Sie das Tracking in Ihren Formularen oder Dokumenten, wie unter [Konfigurieren von Analysen und Berichten](../../forms/using/configure-analytics-forms-documents.md) beschrieben.
 
-### Aufzeichnung von Benutzerinteraktionsinformationen {#how-user-interaction-information-is-recorded}
+### Aufzeichnung von Informationen zu Benutzerinteraktionen {#how-user-interaction-information-is-recorded}
 
-Wenn ein Benutzer mit dem Formular interagiert, werden die Interaktionen aufgezeichnet und an den Analytics-Server gesendet. Die folgende Liste zeigt Server-Aufrufe für verschiedene Benutzeraktivitäten:
+Wenn eine Benutzerin bzw. ein Benutzer mit dem Formular interagiert, werden die Interaktionen aufgezeichnet und an den Analytics-Server gesendet. Die folgende Liste zeigt Server-Aufrufe für verschiedene Benutzeraktivitäten:
 
 * 2 Aufrufe pro Feld pro Besuch
 * 1 für Bereichsbesuch
-* 1 zum Speichern
-* 2 für Übermittlung
-* 2 zum Speichern
+* 1 für Speichern
+* 2 für Übermitteln
+* 2 für Speichern
 * 1 für Hilfe
 * 1 für jeden Validierungsfehler
 * 1 für Formularwiedergabe + 1 für standardmäßigen Bereichsbesuch + 1 für standardmäßigen ersten Feldbesuch
@@ -66,7 +66,7 @@ Standardmäßig wird der Analysebericht für die letzten sieben Tage angezeigt. 
 
 >[!NOTE]
 >
->Die Optionen wie Letzte 7 Tage und Letzte 15 Tage enthalten keine Daten für den Tag, an dem Sie den Analysebericht generieren. Um die Daten des aktuellen Tages einzubeziehen, müssen Sie den Datumsbereich einschließlich des aktuellen Tages angeben und dann den Bericht ausführen.
+>Die Optionen wie „Letzte 7 Tage“ und „Letzte 15 Tage“ enthalten keine Daten für den Tag, an dem Sie den Analysebericht generieren. Um die Daten des aktuellen Tages einzubeziehen, müssen Sie den Datumsbereich einschließlich des aktuellen Tages angeben und dann den Bericht ausführen.
 
 ![date-range](assets/date-range.png)
 
@@ -74,9 +74,9 @@ Standardmäßig wird der Analysebericht für die letzten sieben Tage angezeigt. 
 
 Das Konversionsdiagramm auf Formularebene bietet Ihnen einen Einblick in die Leistung des Formulars in Bezug auf die folgenden wichtigen Leistungsindikatoren (KPIs):
 
-* **Ausgabeformate**: Die Anzahl der Öffnungen eines Formulars
-* **Besucher**: Die Anzahl der Besucher des Formulars
-* **Einsendungen**: Gibt an, wie oft das Formular gesendet wurde
+* **Ausgabedarstellungen**: Gibt an, wie oft ein Formular geöffnet wurde
+* **Besuchende**: Die Anzahl der Besuchenden des Formulars
+* **Übermittlungen**: Angabe, wie oft ein Formular übermittelt wird
 
 ![conversion-graph](assets/conversion-graph.png)
 
@@ -84,11 +84,11 @@ Das Konversionsdiagramm auf Formularebene bietet Ihnen einen Einblick in die Lei
 
 Im Zusammenfassungsabschnitt auf Formularebene erhalten Sie einen Einblick in die Leistung des Formulars in Bezug auf die folgenden wichtigen Leistungsindikatoren (KPIs):
 
-* **Durchschnittliche Füllzeit**: Durchschnittliche Zeit für das Ausfüllen des Formulars. Wenn Benutzer Zeit aufwenden, um das Formular auszufüllen, es aber nicht abschicken, dann wird diese Zeit in dieser Berechnung nicht berücksichtigt.
+* **Durchschnittliche Füllzeit**: Durchschnittliche Zeit, die für das Ausfüllen des Formulars verwendet wird. Wenn Benutzer Zeit aufwenden, um das Formular auszufüllen, es aber nicht abschicken, dann wird diese Zeit in dieser Berechnung nicht berücksichtigt.
 * **Ausgabeformate**: Gibt an, wie oft das Formular wiedergegeben oder geöffnet wurde
-* **Entwürfe**: Gibt an, wie oft das Formular als Entwurf gespeichert wurde
-* **Einsendungen**: Gibt an, wie oft das Formular gesendet wurde
-* **Abbruch**: Gibt an, wie oft Benutzer das Ausfüllen des Formulars begonnen und dann abgebrochen haben
+* **Entwürfe**: Gibt an, wie oft das Formular als Entwurf gespeichert wurde.
+* **Übermittlungen**: Gibt an, wie oft das Formular übermittelt wurde.
+* **Abbruch**: Gibt an, wie oft Benutzende das Ausfüllen des Formulars begonnen und dann abgebrochen haben
 * **Unique Visitors**: Gibt an, wie oft das Formular von einzelnen Besuchern erstellt wird. Weitere Informationen über individuelle Besucher finden Sie unter [Individuelle Besicher, Besuche und Kundenverhalten](https://helpx.adobe.com/de/analytics/kb/unique-visitors-visitor-behavior.html). 
 
 ![Erweiterter zusammenfassender Analysebericht auf Formularebene](assets/analytics-report.png)
@@ -103,13 +103,13 @@ Die Zusammenfassung auf Bereichsebene enthält die folgenden Informationen zu de
 
 #### Detaillierter Bedienfeldbericht {#detailed-panel-report}
 
-Sie können auch Details für jedes Bedienfeld anzeigen, indem Sie auf den Namen eines Bedienfelds im Bereichsbericht klicken.
+Sie können auch Details für jedes Bedienfeld anzeigen, indem Sie auf den Namen eines Bedienfelds im Bedienfeldbericht klicken.
 
 ![Detaillierter Bereichsbericht](assets/panel-report-detailed.png)
 
-Der detaillierte Bericht zeigt Werte für alle Felder im Bereich an.
+Der detaillierte Bericht zeigt Werte für alle Felder im Bedienfeld an.
 
-Der Bereichsbericht verfügt über drei Registerkarten:
+Der Bedienfeldbericht hat drei Registerkarten:
 
 * **Zeitbericht** (Standard): Zeigt die Zeit in Sekunden an, die damit verbracht wurde, jedes Feld im Bereich auszufüllen
 * **Fehlerbericht**: Zeigt die Anzahl der Fehler, die von den Benutzern beim Ausfüllen der Felder gefunden wurden
@@ -119,9 +119,9 @@ Sie können zwischen den Bereichen navigieren, wenn mehrere Bereiche verfügbar 
 
 ### Filter: Browser, Betriebssystem und Sprache {#filters-browser-os-and-language}
 
-Die Tabellen &quot;Browserverteilung&quot;, &quot;Betriebssystemverteilung&quot;und &quot;Sprachverteilung&quot;zeigen die Ausgabedarstellungen, Besucher und Übermittlungen gemäß Browser, Betriebssystem und Sprache der Formularbenutzer an. Diese Tabellen zeigen standardmäßig maximal fünf Einträge an. Sie können auf Mehr anzeigen klicken, um weitere Einträge anzuzeigen, und auf Weniger anzeigen klicken, um zu den fünf oder weniger regulären Einträgen zurückzukehren.
+Die Tabellen „Browser-Verteilung“, „Betriebssystemverteilung“ und „Sprachverteilung“ zeigen die Ausgabedarstellungen, Besuchenden und Übermittlungen gemäß Browser, Betriebssystem und Sprache der Benutzerinnen und Benutzer des Formulars an. Diese Tabellen zeigen standardmäßig maximal fünf Einträge an. Sie können auf „Mehr anzeigen“ klicken, um weitere Einträge anzuzeigen, und auf „Weniger anzeigen“, um zu den fünf oder weniger regulären Einträgen zurückzukehren.
 
-Um die Analysedaten weiter zu filtern, können Sie auf einen Eintrag in einer der Tabellen klicken. Wenn Sie beispielsweise in der Browser-Verteilungstabelle auf Google Chrome klicken, wird der Bericht erneut mit den für den Google Chrome-Browser relevanten Daten wie folgt gerendert:
+Um die Analysedaten weiter zu filtern, können Sie auf einen Eintrag in einer der Tabellen klicken. Wenn Sie beispielsweise in der Tabelle „Browser-Verteilung“ auf Google Chrome klicken, wird der Bericht erneut mit den für den Google Chrome-Browser relevanten Daten wie folgt gerendert:
 
 ![Filter angewendet auf Analytics-Bericht - Google Chrome ](assets/filter-1.png)
 
@@ -131,7 +131,7 @@ Wenn Sie den Bereichsbericht anzeigen, nachdem Sie einen Filter angewendet haben
 
 * Die Verteilungstabellen sind schreibgeschützt, da jeweils nur ein Filter angewendet werden kann.
 * Die Tabelle des angewendeten Filters wird nicht mehr angezeigt.
-* Sie können auf die Schaltfläche Schließen klicken (unten hervorgehoben), um den angewendeten Filter zu entfernen.
+* Sie können auf die Schaltfläche „Schließen“ klicken (unten hervorgehoben), um den angewendeten Filter zu entfernen.
 
 ![Schließen-Schaltfläche zum Entfernen des angewendeten Filters](assets/close-filter.png)
 

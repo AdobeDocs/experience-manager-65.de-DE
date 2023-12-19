@@ -5,7 +5,7 @@ exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '1673'
-ht-degree: 87%
+ht-degree: 89%
 
 ---
 
@@ -28,7 +28,7 @@ Sie können eine Seite auch sofort oder zu einem vordefinierten Datum/Zeitpunkt 
 >  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
 >
 >* **Replizieren/Replikation**
->  Dies sind die technischen Begriffe, die die Verschiebung von Daten (z. B. Seiteninhalt, Dateien, Code, Benutzerkommentare) von einer Umgebung in eine andere beschreiben, z. B. bei der Veröffentlichung oder umgekehrten Replizierung von Benutzerkommentaren.
+>  Dies sind technische Begriffe, die für die Verschiebung von Daten (z. B. Seiteninhalten, Dateien, Code, Benutzerkommentaren) zwischen Umgebungen verwendet werden, etwa beim Veröffentlichen oder Zurückreplizieren von Benutzerkommentaren.
 >
 
 >[!NOTE]
@@ -119,7 +119,7 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
 
    ![pp-02-1](assets/pp-02-1.png)
 
-1. Der Assistent **Veröffentlichung verwalten** wird geöffnet. Der erste Schritt, **Optionen** ermöglicht Folgendes:
+1. Der Assistent **Veröffentlichung verwalten** wird geöffnet. Im ersten Schritt, **Optionen**, haben Sie folgende Möglichkeiten:
 
    * Veröffentlichen Sie die ausgewählte Seite oder machen Sie die Veröffentlichung rückgängig.
    * Entscheiden Sie, ob Sie diese Aktion jetzt oder zu einem späteren Zeitpunkt durchführen möchten.

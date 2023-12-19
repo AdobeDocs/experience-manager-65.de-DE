@@ -9,13 +9,13 @@ exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 65%
+ht-degree: 77%
 
 ---
 
 # Anmerkungen beim Bearbeiten einer Seite{#annotations-when-editing-a-page}
 
-Oft muss das Hinzufügen von Inhalten zu den Seiten Ihrer Website vor der tatsächlichen Veröffentlichung besprochen werden. Um dies zu unterstützen, können Sie mit vielen Komponenten, die sich direkt auf Inhalte beziehen (im Gegensatz zum Layout), Anmerkungen hinzufügen.
+Oft muss das Hinzufügen von Inhalten zu den Seiten Ihrer Website vor der tatsächlichen Veröffentlichung besprochen werden. Um diesen Vorgang zu erleichtern, können Sie in vielen Komponenten, die direkt mit Inhalt (und nicht mit dem Layout) in Verbindung stehen, Anmerkungen hinzufügen.
 
 Bei einer Anmerkung wird eine farbige Markierung/Haftnotiz auf der Seite platziert. Mit einer Anmerkung können Sie (oder andere Benutzer) Kommentare und/oder Fragen für andere Autoren/Prüfer hinterlassen.
 
@@ -29,7 +29,7 @@ Bei einer Anmerkung wird eine farbige Markierung/Haftnotiz auf der Seite platzie
 
 >[!CAUTION]
 >
->Beim Löschen einer Ressource (z. B. eines Absatzes) werden alle Anmerkungen und Zeichnungen gelöscht, die mit dieser Ressource verbunden sind, unabhängig von ihrer Position auf der Seite als Ganzes.
+>Durch Löschen einer Ressource (z. B. eines Absatzes) werden alle Anmerkungen und Zeichnungen gelöscht, die mit dieser Ressource verbunden sind (unabhängig von ihrer Position auf der Seite als Ganzes).
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Zum Erstellen und Ansehen von Anmerkungen wird ein spezieller [Modus](/help/site
 
 ### Hinzufügen von Anmerkungen zu Komponenten {#annotating-a-component}
 
-Im Anmerkungsmodus können Sie Anmerkungen zu Ihrem Inhalt erstellen, bearbeiten, verschieben oder löschen:
+Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeiten, verschieben oder löschen:
 
 1. Sie können den Anmerkungsmodus über das Symbol in der Symbolleiste (rechts oben) aufrufen, wenn Sie eine Seite bearbeiten:
 
@@ -112,10 +112,10 @@ Im Anmerkungsmodus können Sie Anmerkungen zu Ihrem Inhalt erstellen, bearbeiten
 
 >[!NOTE]
 >
->Anmerkungen können nicht zu einer Seite hinzugefügt werden, die von einem anderen Benutzer gesperrt wurde.
+>Anmerkungen können nicht zu einer Seite hinzugefügt werden, die von einer anderen Benutzerin oder einem anderen Benutzer gesperrt wurde.
 
 ### Kennzeichnung von Anmerkungen {#annotation-indicator}
 
 Anmerkungen werden nicht im Bearbeitungsmodus angezeigt, doch die Kennzeichnung oben rechts in der Symbolleiste gibt an, wie viele Anmerkungen auf der aktuellen Seite vorhanden sind. Die Kennzeichnung ersetzt das standardmäßige Anmerkungssymbol, dient jedoch ebenfalls als schneller Link, mit dem Sie den Anmerkungsmodus aktivieren/deaktivieren können:
 
-![Kennzeichnung von Anmerkungen](assets/chlimage_1-242.png)
+![Anmerkungsanzeige](assets/chlimage_1-242.png)

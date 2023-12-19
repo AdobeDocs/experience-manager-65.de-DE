@@ -9,7 +9,7 @@ exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '3251'
-ht-degree: 72%
+ht-degree: 73%
 
 ---
 
@@ -133,8 +133,8 @@ Mit Sling geben Sie an, welches Skript eine bestimmte Entität rendert (indem Si
 
 Die Anfrage wird zerlegt und die notwendigen Informationen werden extrahiert. Das Repository wird nach der angeforderten Ressource (Inhaltsknoten) durchsucht:
 
-* Das erste Sling überprüft, ob ein Knoten an dem in der Anfrage angegebenen Speicherort vorhanden ist, z. B. `../content/corporate/jobs/developer.html`
-* Wenn kein Knoten gefunden wird, wird die Erweiterung verworfen und die Suche wiederholt. Beispiel: `../content/corporate/jobs/developer`
+* Zunächst prüft Sling, ob ein Knoten an der in der Anfrage angegebenen Position existiert; z. B. `../content/corporate/jobs/developer.html`
+* Wird kein Knoten gefunden, dann wird die Erweiterung entfernt und die Suche wiederholt; z. B., `../content/corporate/jobs/developer`
 * Wenn kein Knoten gefunden wird, gibt Sling den HTTP-Code 404 (Nicht gefunden) zurück.
 
 Sling erlaubt auch anderen Elementen als JCR-Knoten, als Ressourcen zu fungieren, dies ist jedoch eine erweiterte Funktion.

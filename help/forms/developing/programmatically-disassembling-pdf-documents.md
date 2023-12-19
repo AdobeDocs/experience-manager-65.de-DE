@@ -10,7 +10,7 @@ exl-id: c5e712e0-5c3f-48cd-91cf-fd347222a6b2
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1749'
-ht-degree: 85%
+ht-degree: 99%
 
 ---
 
@@ -39,7 +39,7 @@ Für die Zwecke dieser Erörterung nehmen wir an, dass das folgende DDX-Dokument
 
 >[!NOTE]
 >
->Bevor Sie diesen Abschnitt lesen, sollten Sie mit dem Zusammenstellen von PDF-Dokumenten mithilfe des Assembler-Dienstes vertraut sein. (Siehe [Programmgesteuertes Zusammenstellen von PDF-Dokumenten](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+>Bevor Sie diesen Abschnitt lesen, sollten Sie sich mit dem Zusammenstellen von PDF-Dokumenten mithilfe des Assembler-Dienstes vertraut machen. (Siehe [Programmgesteuertes Zusammenstellen von PDF-Dokumenten](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 >[!NOTE]
 >
@@ -117,7 +117,7 @@ So teilen Sie ein PDF-Dokument mithilfe der Assembler Service-API (Java) auf:
 
 1. Schließen Sie Projektdateien ein.
 
-   Schließen Sie Client-JAR-Dateien wie adobe-assembler-client.jar in den Klassenpfad Ihres Java-Projekts ein.
+   Fügen Sie Client-JAR-Dateien wie „adobe-assembler-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie einen PDF Assembler-Client.
 
@@ -142,11 +142,11 @@ So teilen Sie ein PDF-Dokument mithilfe der Assembler Service-API (Java) auf:
 1. Legen Sie Laufzeitoptionen fest.
 
    * Erstellen Sie ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen speichert, indem Sie seinen Konstruktor verwenden.
-   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec`-Objekt gehört. Um beispielsweise den Assembler-Dienst anzuweisen, die Verarbeitung eines Auftrags fortzusetzen, wenn ein Fehler auftritt, rufen Sie die `AssemblerOptionSpec` -Objekt `setFailOnError` -Methode und -übergabe `false`.
+   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec`-Objekt gehört. Um beispielsweise den Assembler-Dienst anzuweisen, die Verarbeitung eines Vorgangs im Falle eines Fehlers fortzusetzen, rufen Sie die Methode `setFailOnError` des Objekts `AssemblerOptionSpec` auf und geben Sie `false` weiter.
 
 1. Zerlegen Sie das PDF-Dokument.
 
-   Rufen Sie die `AssemblerServiceClient` -Objekt `invokeDDX` -Methode verwenden und die folgenden erforderlichen Werte übergeben:
+   Rufen Sie die Methode `invokeDDX` des Objekts `AssemblerServiceClient` auf und geben Sie die folgenden erforderlichen Werte weiter:
 
    * Ein `com.adobe.idp.Document`-Objekt, das das zu verwendende DDX-Dokument darstellt
    * Ein `java.util.Map`-Objekt, das das aufzuteilende PDF-Dokument enthält
@@ -158,9 +158,9 @@ So teilen Sie ein PDF-Dokument mithilfe der Assembler Service-API (Java) auf:
 
    Führen Sie die folgenden Schritte aus, um die zerlegten PDF-Dokumente abzurufen:
 
-   * Rufen Sie die `AssemblerResult` -Objekt `getDocuments` -Methode. Dadurch wird ein `java.util.Map`-Objekt zurückgegeben.
+   * Rufen Sie die Methode `getDocuments` des Objekts `AssemblerResult` auf. Dadurch wird ein `java.util.Map`-Objekt zurückgegeben.
    * Gehen Sie schrittweise durch das `java.util.Map`-Objekt, bis Sie das resultierende `com.adobe.idp.Document`-Objekt finden.
-   * Rufen Sie die `com.adobe.idp.Document` -Objekt `copyToFile` -Methode, um das PDF-Dokument zu extrahieren.
+   * Rufen Sie die Methode `copyToFile` des Objekts `com.adobe.idp.Document` auf, um das PDF-Dokument zu extrahieren.
 
 **Siehe auch**
 
@@ -189,7 +189,7 @@ Aufteilen eines PDF-Dokuments mithilfe der Assembler-Service-API (Webservice):
    * Erstellen Sie ein `AssemblerServiceClient`-Objekt, indem Sie seinen standardmäßigen Konstruktor verwenden.
    * Erstellen Sie ein `AssemblerServiceClient.Endpoint.Address` -Objekt mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors. Übergeben Sie einen Zeichenfolgenwert mit der WSDL an den AEM Forms-Service (z. B. `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekr, indem Sie den Wert des Felds `AssemblerServiceClient.Endpoint.Binding` abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `AssemblerServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -201,16 +201,16 @@ Aufteilen eines PDF-Dokuments mithilfe der Assembler-Service-API (Webservice):
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des DDX-Dokuments verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert für den Dateispeicherort des DDX-Dokuments und den Modus, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des Objekts `System.IO.FileStream` verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge weitergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seiner `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
 
 1. Referenzieren Sie ein zu zerlegendes PDF-Dokument.
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des PDF-Eingabedokuments verwendet. Dieses `BLOB`-Objekt wird an `invokeOneDocument` als Argument weitergegeben.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgewert übergeben, der den Dateispeicherort des PDF-Eingabedokuments und den Modus, in dem die Datei geöffnet werden soll, darstellt.
-   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des Objekts `System.IO.FileStream` verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge weitergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seinem `MTOM`-Feld die Inhalte des Byte-Arrays zuweisen.
    * Erstellen eines `MyMapOf_xsd_string_To_xsd_anyType`-Objekts. Dieses Sammlungsobjekt wird verwendet, um das aufzuteilende PDF-Dokument zu speichern.
    * Erstellen Sie ein Objekt `MyMapOf_xsd_string_To_xsd_anyType_Item`.
@@ -221,11 +221,11 @@ Aufteilen eines PDF-Dokuments mithilfe der Assembler-Service-API (Webservice):
 1. Legen Sie Laufzeitoptionen fest.
 
    * Erstellen Sie ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen speichert, indem Sie seinen Konstruktor verwenden.
-   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie einem Datenelement, das zum `AssemblerOptionSpec`-Objekt gehört, einen Wert zuweisen. Um beispielsweise den Assembler-Dienst anzuweisen, die Verarbeitung eines Auftrags fortzusetzen, wenn ein Fehler auftritt, weisen Sie `false` der `AssemblerOptionSpec` -Objekt `failOnError` -Feld.
+   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie einem Datenelement, das zum `AssemblerOptionSpec`-Objekt gehört, einen Wert zuweisen. Um beispielsweise den Assembler-Dienst anzuweisen, die Verarbeitung eines Vorgangs im Falle eines Fehlers fortzusetzen, weisen Sie `false` dem Feld `failOnError` des Objekts `AssemblerOptionSpec` zu. 
 
 1. Zerlegen Sie das PDF-Dokument.
 
-   Rufen Sie die `AssemblerServiceClient` -Objekt `invokeDDX` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `invokeDDX` des Objekts `AssemblerServiceClient` auf und geben Sie die folgenden Werte weiter:
 
    * Ein `BLOB`-Objekt, welches das DDX-Dokument darstellt, das das PDF-Dokument zerlegt
    * Das `MyMapOf_xsd_string_To_xsd_anyType`-Objekt, welches das zu zerlegende PDF-Dokument enthält
@@ -237,9 +237,9 @@ Aufteilen eines PDF-Dokuments mithilfe der Assembler-Service-API (Webservice):
 
    Führen Sie die folgenden Schritte aus, um die neu erstellten PDF-Dokumente abzurufen:
 
-   * Zugriff auf `AssemblerResult` -Objekt `documents` -Feld, das ein `Map` -Objekt, das die zerlegten PDF-Dokumente enthält.
-   * Iterieren Sie durch das `Map`-Objekt, um alle Zieldokumente abzurufen. Dann das Array-Element `value` zu `BLOB`.
-   * Extrahieren Sie die Binärdaten, die das PDF-Dokument darstellen, indem Sie auf dessen `BLOB` -Objekt `MTOM` -Eigenschaft. Dadurch wird ein Array von Bytes zurückgegeben, die Sie in eine PDF-Datei schreiben können.
+   * Greifen Sie auf das Feld `documents` des Objekts `AssemblerResult` zu. Hierbei handelt es sich um ein `Map`-Objekt, das die aufgeteilten PDF-Dokumente enthält.
+   * Iterieren Sie durch das `Map`-Objekt, um alle Zieldokumente abzurufen. Wandeln Sie dann das Element `value` dieses Array-Elements in `BLOB` um.
+   * Extrahieren Sie die Binärdaten, die das PDF-Dokument darstellen, indem Sie auf die Eigenschaft `MTOM` des Objekts `BLOB` zugreifen. Dadurch wird ein Array von Bytes zurückgegeben, die Sie in eine PDF-Datei schreiben können.
 
 **Siehe auch**
 

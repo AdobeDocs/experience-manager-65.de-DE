@@ -7,8 +7,8 @@ exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
 source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1961'
-ht-degree: 93%
+source-wordcount: '1902'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-H
 
 Die [Assets-REST-API](/help/assets/mac-api-assets.md) ermöglicht Entwicklern von Adobe Experience Manager den direkten Zugriff auf (in AEM gespeicherte) Inhalte über die HTTP-API über CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren, Löschen).
 
-Mit der API können Sie Adobe Experience Manager als Headless-CMS (Content Management System) betreiben, indem Sie einer JavaScript-Frontend-Anwendung Content Services bereitstellen. Oder jedem anderen Programm, das HTTP-Anfragen ausführen und JSON-Antworten verarbeiten kann.
+Die API ermöglicht es Ihnen, Adobe Experience Manager als Headless-CMS (Content-Management-System) auszuführen, indem einer JavaScript-Frontend-Anwendung Content-Services zur Verfügung gestellt werden. Oder jedem anderen Programm, das HTTP-Anfragen ausführen und JSON-Antworten verarbeiten kann.
 
 Beispielsweise benötigen Framework-basierte oder benutzerdefinierte Single Page Applications (SPA), die über die HTTP-API bereitgestellten Inhalte häufig im JSON-Format.
 
@@ -220,7 +220,7 @@ Assets können mehrere Ausgabedarstellungen aufweisen. Diese werden in der Regel
 
 ### Inhaltsfragmente {#content-fragments}
 
-Ein [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) ist ein spezieller Asset-Typ. Sie können für den Zugriff auf strukturierte Daten wie Texte, Zahlen und Daten verwendet werden.
+Ein [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) ist ein spezieller Asset-Typ. Es kann für den Zugriff auf strukturierte Daten wie Texte, Zahlen und Daten verwendet werden.
 
 Da es einige Unterschiede zu *Standard*-Assets (z. B. Bildern oder Audio) aufweist, gelten einige zusätzliche Regeln für die Verarbeitung.
 
@@ -237,7 +237,7 @@ Inhaltsfragmente:
 
 Derzeit werden die Modelle, die die Struktur eines Inhaltsfragments definieren, nicht über eine HTTP-API bereitgestellt. Daher *Verbraucher* muss über das Modell eines Fragments wissen (mindestens) - obwohl die meisten Informationen aus der Payload abgeleitet werden können, wie Datentypen usw. Teil der Definition.
 
-Um ein Inhaltsfragment zu erstellen, muss der Pfad (internes Repository) des Modells angegeben werden.
+Zum Erstellen eines Inhaltsfragments muss der Pfad (des internen Repositorys) für das Modell angegeben werden.
 
 #### Zugehörige Inhalte {#associated-content}
 
@@ -326,10 +326,7 @@ Wird zurückgegeben, wenn:
 
    * ein Inhaltsfragment per `POST` erstellt wurde
 
-* **404** (Nicht gefunden)
-
-
-Wird zurückgegeben, wenn:
+* **404** (Nicht gefunden) Wird zurückgegeben, wenn:
 
    * das angeforderte Inhaltsfragment nicht vorhanden ist
 

@@ -9,7 +9,7 @@ exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '2684'
-ht-degree: 82%
+ht-degree: 84%
 
 ---
 
@@ -21,7 +21,7 @@ Dieses Tutorial ist ein Schritt in der Reihe [Erstellen Sie Ihre erste interakti
 
 ## Über das Tutorial {#about-the-tutorial}
 
-Mit dem AEM Forms-Datenintegrationsmodul können Sie ein Formulardatenmodell aus unterschiedlichen Backend-Datenquellen wie AEM Benutzerprofil, RESTful-Webservices, SOAP-basierten Webdiensten, OData-Diensten und relationalen Datenbanken erstellen. Sie können Datenmodellobjekte und -dienste in einem Formulardatenmodell konfigurieren und einem adaptiven Formular zuordnen. Adaptive Formularfelder sind an Datenmodellobjekt-Eigenschaften gebunden. Mit den Diensten können Sie das adaptive Formular vorab befüllen und gesendete Formulardaten zurück an das Datenmodellobjekt schreiben.
+Mit dem AEM Forms-Datenintegrationsmodul können Sie ein Formulardatenmodell aus verschiedenen Backend-Datenquellen wie AEM-Benutzerprofil, RESTful-Web-Diensten, SOAP-basierten Web-Diensten, OData-Diensten und relationalen Datenbanken erstellen. Sie können Datenmodellobjekte und -dienste in einem Formulardatenmodell konfigurieren und einem adaptiven Formular zuordnen. Adaptive Formularfelder sind an Datenmodellobjekt-Eigenschaften gebunden. Mit den Diensten können Sie das adaptive Formular vorab befüllen und gesendete Formulardaten zurück an das Datenmodellobjekt schreiben.
 
 Weitere Informationen zum Formulardatenmodell und zur Formulardatenintegration finden Sie unter [Datenintegration für AEM Forms](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/data-integration.html).
 
@@ -238,7 +238,7 @@ Führen Sie die folgenden Schritte durch, um untergeordnete berechnete Eigenscha
 
    ![Nutzungskostenregel](assets/usage_charges_rule_all_new.png)
 
-1. Auswählen **Fertig**. Die Regel wird im Regel-Editor erstellt.
+1. Klicken Sie auf **Fertig**. Die Regel wird im Regel-Editor erstellt.
 1. Auswählen **Schließen** , um das Fenster des Regeleditors zu schließen.
 
 ### Hinzufügen von Verknüpfungen zwischen Datenmodellobjekten {#add-associations-between-data-model-objects}
@@ -341,7 +341,7 @@ Nachdem Sie Verknüpfungen zwischen dem Kunden- und anderen Datenmodellobjekten 
 
 1. Aktivieren Sie das Kontrollkästchen oben im **Aufrufe** Datenmodellobjekt auswählen und auswählen **Eigenschaften bearbeiten**. Der Bereich **Eigenschaften bearbeiten** wird geöffnet.
 1. Deaktivieren Sie das **Modellobjekt der obersten Ebene** für das Datenmodellobjekt **calls**.
-1. Klicken Sie auf **Fertig**.
+1. Wählen Sie **Fertig**.
 
    Wiederholen Sie die Schritte 8 bis 10, um die Eigenschaften für das Datenmodellobjekt **Rechnung** zu konfigurieren.
 
@@ -364,7 +364,7 @@ Nachdem Sie Verknüpfungen zwischen dem Kunden- und anderen Datenmodellobjekten 
    * Geben Sie einen optionalen Titel und eine optionale Beschreibung ein.
    * Wählen Sie **customer** aus der Dropdown-Liste **Eingabemodellobjekt** aus.
 
-   * Klicken Sie auf **Fertig**.
+   * Wählen Sie **Fertig**.
    * Auswählen **Speichern** , um das Formulardatenmodell zu speichern.
 
    ![Service-Eigenschaften aktualisieren](assets/update_service_properties_new.png)

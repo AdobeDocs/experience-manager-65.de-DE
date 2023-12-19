@@ -4,8 +4,8 @@ description: Eine Einführung in die leistungsstarken und flexiblen Headless-Fun
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
 source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 89%
+source-wordcount: '720'
+ht-degree: 90%
 
 ---
 
@@ -82,5 +82,5 @@ Jetzt, da Sie die Konzepte und Terminologie gelernt haben, lautet der nächste S
    * [Grundlegendes zur CMS-Headless-Entwicklung](/help/journey-headless/developer/learn-about.md)
    * [Hier erfahren Sie, wie Sie Ihre Inhalte modellieren](/help/journey-headless/developer/model-your-content.md)
 * [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
+* [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
 * [Headless-Tutorials für AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)

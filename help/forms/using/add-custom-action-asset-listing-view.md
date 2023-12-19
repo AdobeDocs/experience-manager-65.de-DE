@@ -9,8 +9,8 @@ feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 93%
+source-wordcount: '1333'
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 93%
 
 ## Übersicht {#overview}
 
-Mit der Correspondence Management-Lösung können Sie benutzerdefinierte Aktionen zur Benutzeroberfläche &quot;Assets verwalten&quot;hinzufügen.
+Mit der Lösung „Correspondence Management“ können Sie benutzerdefinierte Aktionen zur Benutzeroberfläche „Assets verwalten“ hinzufügen.
 
 Sie können der Ansicht „Asset-Auflistung“ eine benutzerdefinierte Aktion hinzufügen für:
 
@@ -246,7 +246,7 @@ Führen Sie die folgenden Schritte aus, um Correspondence Management so anzupass
 
 1. Fügen Sie unter dem neu erstellten Ordner „items“ einen Knoten für die benutzerdefinierte Schaltfläche/Aktion in einem bestimmten Asset hinzu (Beispiel: letterpdfdownloader), indem Sie folgende Schritte durchführen:
 
-   1. Klicken Sie mit der rechten Maustaste auf den Ordner items und wählen Sie **Erstellen > Knoten erstellen**.
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner „items“ und wählen Sie **Erstellen > Knoten erstellen**.
 
    1. Stellen Sie sicher, dass das Dialogfeld „Knoten erstellen“ folgende Werte aufweist und klicken Sie auf **OK**:
 

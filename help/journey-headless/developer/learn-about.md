@@ -5,7 +5,7 @@ exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
 source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '1601'
-ht-degree: 90%
+ht-degree: 92%
 
 ---
 
@@ -76,7 +76,7 @@ Diese Entkopplung bedeutet, dass jeder konsumierende Service (das Frontend) sein
 
 ## Technologische Untermauerung {#technology}
 
-Mit einem Headless-Ansatz können Sie einen Technologie-Stack erstellen, der sich einfach und schnell an künftige Anforderungen an digitale Erlebnisse anpassen kann.
+Mit einem Headless-Ansatz können Sie einen Technologie-Stack aufbauen, der sich einfach und schnell an zukünftige Anforderungen an das digitale Erlebnis anpassen lässt.
 
 Früher waren APIs für CMS normalerweise REST-basiert. Representational State Transfer (REST) stellt Ressourcen als Text ohne Status bereit. Dadurch können die Ressourcen mit einem vordefinierten Satz von Vorgängen gelesen und geändert werden. REST ermöglichte eine große Interoperabilität zwischen Services im Internet, indem es eine statuslose Darstellung der Inhalte sicherstellte.
 
@@ -126,6 +126,6 @@ Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Headless-Tour fort, inde
 
 Es wird zwar empfohlen, mit dem nächsten Teil der Headless-Entwickler-Tour fortzufahren, indem Sie das Dokument [Erste Schritte mit AEM Headless](getting-started.md) lesen. Im Folgenden finden Sie jedoch einige zusätzliche, optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, die aber nicht erforderlich sind, um mit der Headless-Entwickler-Tour fortzufahren.
 
-* Ein [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
-* Die [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
+* [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
+* [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
 * [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de): Nutzen Sie diese praxisnahen Tutorials, um herauszufinden, wie Sie die verschiedenen Optionen für die Bereitstellung von Inhalten an Headless-Endpunkte mit AEM verwenden können, und wählen Sie aus, was für Sie am besten geeignet ist.

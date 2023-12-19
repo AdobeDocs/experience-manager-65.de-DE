@@ -1,6 +1,6 @@
 ---
 title: Adaptive Formulare – Suchbegriffe
-description: Sie können diese reservierten Wörter nicht als Kennungen in Ihren adaptiven Formularen verwenden.
+description: Sie können diese reservierten Wörter nicht als Bezeichner in Ihren adaptiven Formularen verwenden.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms
@@ -8,15 +8,15 @@ exl-id: 6ef5bd8c-7e7b-4501-a1be-d34fc0dbde84
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 # Adaptive Formulare – Suchbegriffe {#adaptive-forms-keywords}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/using/create-an-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
-Adaptive Formulare Schlüsselwörter sind vordefinierte, reservierte Bezeichner, die eine besondere Bedeutung für adaptive Formulare haben. Sie können diese Schlüsselwörter nicht als Bezeichner in Ihren adaptiven Formularen verwenden. In der folgenden Tabelle sind alle Suchbegriffe aufgeführt, die reservierte Kennungen für adaptive Formulare sind.
+Schlüsselwörter für adaptive Formulare sind vordefinierte, reservierte Bezeichner, die eine besondere Bedeutung für adaptive Formulare haben. Diese Schlüsselwörter können Sie in Ihren adaptiven Formularen nicht als Bezeichner verwenden. In der folgenden Tabelle sind alle Schlüsselwörter aufgeführt, die reservierte Bezeichnungen für adaptive Formulare sind.
 
 <table>
  <tbody>
@@ -201,7 +201,7 @@ Adaptive Formulare Schlüsselwörter sind vordefinierte, reservierte Bezeichner,
    <td><p>isLastPart</p> </td>
   </tr>
   <tr>
-   <td><p>instanceManager</p> </td>
+   <td><p>InstanceManager</p> </td>
    <td><p>completionAfterMessage</p> </td>
    <td><p>isFirstPart</p> </td>
   </tr>

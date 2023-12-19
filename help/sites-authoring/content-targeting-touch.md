@@ -10,7 +10,7 @@ exl-id: edde225d-0be7-4306-8dda-d18d46fae977
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '5284'
-ht-degree: 84%
+ht-degree: 86%
 
 ---
 
@@ -394,9 +394,9 @@ Konvertieren Sie ein Bibliotheksangebot in ein benutzerdefiniertes Angebot, um d
 
 ## Target: Konfigurieren der Zielgruppen {#target-configuring-the-audiences}
 
-Im Target-Schritt des [Targeting-Verfahrens](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) werden Zielgruppen mit den Erlebnissen verknüpft, die Sie während des Erstellungsschritts bearbeitet haben. Auf der Target-Seite werden die Zielgruppen angezeigt, die von den einzelnen Erlebnissen angesprochen werden. Sie können die Zielgruppe für jedes Erlebnis festlegen oder ändern. Wenn Sie Adobe Target verwenden, können Sie auch A/B-Tests erstellen, mit denen Sie einen bestimmten Prozentsatz des Traffics für eine Zielgruppe auf ein bestimmtes Erlebnis ausrichten können.
+Im Target-Schritt des [Targeting-Verfahrens](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) werden Zielgruppen mit den Erlebnissen verknüpft, die Sie während des Erstellungsschritts bearbeitet haben. Auf der Target-Seite werden die Zielgruppen angezeigt, die von den einzelnen Erlebnissen angesprochen werden. Sie können die Zielgruppe für jedes Erlebnis festlegen oder ändern. Sollten Sie mit Adobe Target arbeiten, können Sie zudem A/B-Tests erstellen, die es Ihnen ermöglichen, einen bestimmten Anteil des Traffics einer Zielgruppe auf ein bestimmtes Erlebnis umzuleiten.
 
-### Wenn Sie AEM-Targeting oder Adobe Target (Erlebnis-Targeting) verwenden …    {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
+### Wenn Sie AEM-Targeting oder Adobe Target (Erlebnis-Targeting) verwenden … {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
 werden Zielgruppen auf der linken Seite des Zuordnungsdiagramms angezeigt, Erlebnisse auf der rechten Seite.
 
@@ -688,7 +688,7 @@ Wenn Sie Adobe Target als Engine auswählen:
   </tr>
   <tr>
    <td><strong>Einschließen gelöster Segmente</strong></td>
-   <td><p>Aktivieren Sie dieses Kontrollkästchen, werden alle gelösten Segmente im Mbox-Aufruf sowie in beliebigen auf der Seite konfigurierten Parametern und im Framework erfasst.</p> <p>Dies funktioniert nur in Situationen mit der XML-API, in denen Sie AEM-Segmente synchronisieren. Wenn Sie Segmente in AEM haben, die nicht von Adobe Target verarbeitet werden (wie Skriptsegmente), können Sie mit dieser Option das Segment in AEM auflösen und Informationen an Adobe Target senden, dass das Segment aktiv ist.</p> </td>
+   <td><p>Aktivieren Sie dieses Kontrollkästchen, werden alle gelösten Segmente im Mbox-Aufruf sowie in beliebigen auf der Seite konfigurierten Parametern und im Framework erfasst.</p> <p>Dies funktioniert nur in Situationen mit der XML-API, in denen Sie AEM-Segmente synchronisieren. Wenn Sie über Segmente in AEM verfügen, die nicht von Adobe Target verwaltet werden (beispielsweise Skriptsegmente), ermöglicht es Ihnen diese Option, das Segment in AEM auszuwählen und Adobe Target darüber zu informieren, dass das Segment aktiv ist.</p> </td>
   </tr>
   <tr>
    <td><strong>Übernommene Kontextparameter</strong></td>

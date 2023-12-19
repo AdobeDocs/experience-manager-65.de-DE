@@ -1,7 +1,7 @@
 ---
-title: Wie aktivieren Sie die adaptiven Forms-Kernkomponenten in AEM 6.5 Forms?
-description: Schrittweise Anleitung zur Aktivierung der adaptiven Forms-Kernkomponenten in einer AEM 6.5 Forms-Umgebung.
-keywords: Kernkomponenten aktivieren, Kernkomponenten Adaptive Forms, Kernkomponenten in 6.5, adaptive Forms-Kernkomponenten in AEM 6.5, AF-Kernkomponenten in AEM 6.5, AEM 6.5 Forms-Kernkomponenten
+title: Aktivieren der Kernkomponenten für adaptive Formulare in AEM 6.5 Forms
+description: Schrittweise Anleitung zur Aktivierung der Kernkomponenten für adaptive Formulare in einer AEM 6.5 Forms-Umgebung
+keywords: Kernkomponenten aktivieren, Kernkomponenten für adaptive Formulare, Kernkomponenten in 6.5, Kernkomponenten für adaptive Formulare in AEM 6.5, AF-Kernkomponenten in AEM 6.5, AEM 6.5 Forms-Kernkomponenten
 contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
@@ -9,21 +9,21 @@ role: Admin, Developer
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
 source-git-commit: 1da3abac8a7f09d41127818a5abacf29524f1365
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 52%
+source-wordcount: '965'
+ht-degree: 84%
 
 ---
 
-# Aktivieren der adaptiven Forms-Kernkomponenten in AEM 6.5 Forms {#enable-adaptive-forms-core-components}
+# Aktivieren der Kernkomponenten für adaptive Formulare in AEM 6.5 Forms {#enable-adaptive-forms-core-components}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
-**Gilt für:** ✅ Kernkomponenten für adaptive Formulare ❎ Foundation-Komponenten für adaptive Formulare.
+**Gilt für:** ✅ Kernkomponenten für adaptive Formulare ❎ Foundation-Komponenten für adaptive Formulare
 
-Durch die Aktivierung der Kernkomponenten der adaptiven Forms können Sie mit der Erstellung, Veröffentlichung und Bereitstellung von [Auf Kernkomponenten basierende adaptive Forms](create-an-adaptive-form-core-components.md) und [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=de) aus Ihrer AEM 6.5 Forms-Umgebung.
+Durch Aktivierung der Kernkomponenten für adaptive Formulare können Sie mit der Erstellung, Veröffentlichung und Bereitstellung von [auf Kernkomponenten basierenden adaptiven Formularen](create-an-adaptive-form-core-components.md) und [adaptiven Headless-Formularen](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=de) aus Ihrer AEM 6.5 Forms-Umgebung beginnen.
 
 Um die adaptiven Forms-Kernkomponenten in Ihrer AEM 6.5 Forms-Umgebung zu aktivieren, richten Sie ein [AEM Archetyp 41 oder höher](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) Basiertes Projekt (mit aktivierten Formularoptionen) auf allen Autoren- und Veröffentlichungsinstanzen.
 
@@ -31,7 +31,7 @@ Dieser Artikel enthält detaillierte Anweisungen zum Einrichten und Bereitstelle
 
 ## Voraussetzungen {#prerequisites}
 
-Vor der Aktivierung der adaptiven Forms-Kernkomponenten in einer AEM 6.5 Forms-Umgebung:
+Vor der Aktivierung von Kernkomponenten für adaptive Formulare in der AEM 6.5 Forms-Umgebung:
 
 * [Nehmen Sie ein Upgrade auf AEM 6.5 Forms Service Pack 16 (6.5.16.0) oder höher vor](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=de).
 
@@ -44,7 +44,7 @@ Vor der Aktivierung der adaptiven Forms-Kernkomponenten in einer AEM 6.5 Forms-U
 So erstellen Sie ein auf AEM Archetyp 41 oder [höher](https://github.com/adobe/aem-project-archetype) basierendes Projekt und stellen es für alle Authoring- und Publishing-Instanzen bereit:
 
 1. Melden Sie sich bei Ihrem Computer an, hosten Sie Ihre AEM 6.5 Forms-Instanz und führen Sie sie als Administrator aus.
-1. Öffnen Sie die Eingabeaufforderung oder das Terminal und führen Sie den folgenden Befehl aus, um AEM Archetyp-Projekt zu erstellen (mit aktivierten Formularoptionen):
+1. Öffnen Sie die Eingabeaufforderung oder das Terminal und führen Sie den folgenden Befehl aus, um ein AEM Archetyp-Projekt zu erstellen (mit aktivierten Formularoptionen):
 
    * Microsoft Windows
 
@@ -76,11 +76,11 @@ So erstellen Sie ein auf AEM Archetyp 41 oder [höher](https://github.com/adobe/
 
    Beachten Sie beim Ausführen des oben genannten Befehls die folgenden Punkte:
 
-   * Ändern Sie den Wert der `aemVersion` Eigenschaft aus `6.5.15.0` auf alles andere.
+   * Ändern Sie nicht den Wert der Eigenschaft `aemVersion` von `6.5.15.0` auf einen anderen Wert.
 
-   * Legen Sie die `archetypeVersion` Eigenschaft auf `41` oder höher. Die neueste Version finden Sie im Abschnitt zu den Systemanforderungen unter [AEM Projektarchetyp](https://github.com/adobe/aem-project-archetype) Dokumentation.
+   * Legen Sie die Eigenschaft `archetypeVersion` auf `41` oder höher fest. Die neueste Version finden Sie im Abschnitt „Systemanforderungen“ in der Dokumentation zum [AEM Projektarchetyp](https://github.com/adobe/aem-project-archetype).
 
-   * Aktualisieren Sie den Befehl, um die spezifischen Werte für Ihre Umgebung widerzuspiegeln, einschließlich der `appTitle`, `appId`, und `groupId`. Legen Sie außerdem den Wert der  `includeFormsenrollment` Eigenschaft auf `y`. Wenn Sie Forms Portal verwenden, legen Sie die Option `includeExamples=y` fest, um die Kernkomponenten von Forms Portal in Ihr Projekt aufzunehmen.
+   * Aktualisieren Sie den Befehl, um die spezifischen Werte für Ihre Umgebung widerzuspiegeln, einschließlich `appTitle`, `appId` und `groupId`. Legen Sie außerdem den Wert der Eigenschaft `includeFormsenrollment` auf `y` fest. Wenn Sie Forms Portal verwenden, legen Sie die Option `includeExamples=y` fest, um die Kernkomponenten von Forms Portal in Ihr Projekt aufzunehmen.
 
 
 1. (Nur für Projekte, die auf dem Archetyp Version 41 basieren) Nachdem das AEM-Archetyp-Projekt erstellt wurde, aktivieren Sie Designs für auf Kernkomponenten basierende adaptive Formulare. So aktivieren Sie Designs:
@@ -113,7 +113,7 @@ So erstellen Sie ein auf AEM Archetyp 41 oder [höher](https://github.com/adobe/
 
       >[!NOTE]
       >
-      >* Wenn Sie eine andere Topologie einrichten, stellen Sie sicher, dass Sie die URLs zum Senden, Vorbefüllen und andere URLs zur Zulassungsliste auf der Dispatcher-Ebene hinzufügen.
+      >* Wenn Sie eine andere Topologie einrichten, stellen Sie sicher, dass Sie die URLs für Übermitteln, Vorausfüllen und andere Funktionen auf der Dispatcher-Ebene in die Zulassungsliste eintragen.
 
    1. Speichern und schließen Sie die Datei.
 
@@ -139,8 +139,8 @@ So erstellen Sie ein auf AEM Archetyp 41 oder [höher](https://github.com/adobe/
 >
 >
 >
-> * Falls Sie auf Schwierigkeiten beim Zugriff auf das Anmeldedialogfeld auf einer Veröffentlichungsinstanz stoßen, versuchen Sie, das Paket über Package Manager zu installieren, indem Sie die URL verwenden: `http://[Publish Server URL]:[PORT]/system/console` , um sich anzumelden. Auf diese Weise können Sie auf die Anmeldeseite in einer Veröffentlichungsinstanz zugreifen und mit dem Installationsprozess fortfahren.
-> * Löschen oder verwerfen Sie das Archetyp-Projekt nicht, nachdem Sie es in Ihrer Umgebung bereitgestellt haben. Das Archetyp-Projekt ist erforderlich, um Ihrer Umgebung benutzerdefinierte und neue Kernkomponenten-Designs für adaptive Forms hinzuzufügen.
+> * Falls Sie Schwierigkeiten haben, den Anmeldedialog auf einer Veröffentlichungsinstanz aufzurufen, um das Paket über den Package Manager zu installieren, versuchen Sie, sich über die URL `http://[Publish Server URL]:[PORT]/system/console` anzumelden. Auf diese Weise können Sie auf die Anmeldeseite bei der Veröffentlichungsinstanz zugreifen, sodass Sie mit dem Installationsprozess fortfahren können.
+> * Löschen oder verwerfen Sie das Archetyp-Projekt nicht, nachdem Sie es in Ihrer Umgebung bereitgestellt haben. Das Archetyp-Projekt ist erforderlich, um Ihrer Umgebung benutzerdefinierte und neue Kernkomponenten-Designs für adaptive Formulare hinzuzufügen.
 
 Die Kernkomponenten sind für Ihre Umgebung aktiviert. Eine leere, auf Kernkomponenten basierende Vorlage für ein adaptives Formular und ein Canvas 3.0-Design werden in Ihrer Umgebung bereitgestellt, sodass Sie [auf Kernkomponenten basierende adaptive Formulare erstellen können](create-an-adaptive-form-core-components.md).
 
@@ -164,5 +164,5 @@ Wenn die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert si
 
 * [Erstellen eines auf Kernkomponenten basierenden adaptiven Formulars](/help/forms/using/create-an-adaptive-form-core-components.md)
 * [Erstellen oder Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Erstellen von Designs für auf Kernkomponenten basierende adaptive Forms](create-or-customize-themes-for-adaptive-forms-core-components.md)
-* [Erstellen einer Vorlage für auf Kernkomponenten basierende adaptive Forms](template-editor.md)
+* [Erstellen von Designs für auf Kernkomponenten basierende adaptive Formulare](create-or-customize-themes-for-adaptive-forms-core-components.md)
+* [Erstellen einer Vorlage für auf Kernkomponenten basierende adaptive Formulare](template-editor.md)

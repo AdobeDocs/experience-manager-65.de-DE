@@ -9,7 +9,7 @@ exl-id: 791524a4-a8bb-4632-a68d-e96864e139a9
 source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
 source-wordcount: '867'
-ht-degree: 42%
+ht-degree: 73%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 42%
 
 [!DNL AEM Forms] Portal stellt Komponenten bereit, mit denen Sie adaptive Formulare, HTML5-Formulare und andere Forms-Assets auf der [!DNL AEM Sites] Seite. Darüber hinaus können Sie es so konfigurieren, dass Entwürfe und übermittelte adaptive Formulare und HTML5-Formulare für einen angemeldeten Benutzer angezeigt werden. Weitere Informationen zu Forms Portal finden Sie unter [Einführung in das Veröffentlichen von Formularen in einem Portal](/help/forms/using/introduction-publishing-forms.md).
 
-Wenn ein angemeldeter Benutzer ein adaptives Formular als Entwurf speichert oder sendet, wird es auf den Registerkarten Entwürfe und Übermittlungen im Forms Portal angezeigt. Die Daten für entworfene oder gesendete Formulare werden im Datenspeicher gespeichert, der für AEM Bereitstellung konfiguriert ist. Die Entwürfe und Übermittlungen anonymer Benutzer werden nicht auf der Forms Portal-Seite angezeigt. Die Daten werden jedoch im konfigurierten Datenspeicher gespeichert. Siehe [Konfigurieren von Speicherdiensten für Entwürfe und Übermittlungen](/help/forms/using/configuring-draft-submission-storage.md).
+Wenn ein angemeldeter Benutzer ein adaptives Formular als Entwurf speichert oder sendet, wird es auf den Registerkarten Entwürfe und Übermittlungen im Forms Portal angezeigt. Die Daten für entworfene oder übermittelte Formulare werden in dem für die AEM-Bereitstellung konfigurierten Datenspeicher gespeichert. Die Entwürfe und Übermittlungen anonymer Benutzer werden nicht auf der Forms Portal-Seite angezeigt. Die Daten werden jedoch im konfigurierten Datenspeicher gespeichert. Siehe [Konfigurieren von Speicherdiensten für Entwürfe und Übermittlungen](/help/forms/using/configuring-draft-submission-storage.md).
 
 ## Benutzerdaten und Datenspeicher {#user-data-and-data-stores}
 
@@ -28,11 +28,11 @@ Forms Portal speichert Daten für Entwurfs- und gesendete Formulare in den folge
 
 Für jeden Entwurf und jedes gesendete Formular für angemeldete und anonyme Benutzer speichert das Forms-Portal die folgenden Daten:
 
-* Formularmetadaten wie Name des Formulars, Formularpfad, Entwurfs- oder Sende-ID, Anlagenpfad und Benutzerdaten-ID
-* Formularanhang als Datenbytes
-* Formulardaten als Datenbyte
+* Formularmetadaten wie Formularname, Formularpfad, Entwurfs- oder Übermittlungs-ID, Anhangspfad und Benutzerdaten-ID
+* Formularanhang als Daten-Bytes
+* Formulardaten als Daten-Bytes
 
-Abhängig von der konfigurierten Datenspeicherpersistenz werden Entwürfe und gesendete Formulardaten an den folgenden Speicherorten gespeichert.
+Abhängig von der konfigurierten Datenspeicherpersistenz werden Entwürfe und übermittelte Formulardaten an den folgenden Speicherorten gespeichert.
 
 <table>
  <tbody>
@@ -61,11 +61,11 @@ Abhängig von der konfigurierten Datenspeicherpersistenz werden Entwürfe und ge
 
 ## Zugreifen auf und Löschen von Benutzerdaten {#access-and-delete-user-data}
 
-Sie können in den konfigurierten Datenspeichern auf Entwurfs- und übermittelte Formulardaten für angemeldete und anonyme Benutzer zugreifen und diese bei Bedarf löschen.
+Sie können in den konfigurierten Datenspeichern auf Entwürfe und übermittelte Formulardaten für angemeldete und anonyme Benutzende zugreifen und diese bei Bedarf löschen.
 
-### AEM {#aem-instances}
+### AEM-Instanzen {#aem-instances}
 
-Alle Entwürfe und eingereichten Formulardaten in AEM-Instanzen (Autoren-, Veröffentlichungs- oder Remote-Instanzen) für angemeldete und nicht angemeldete Benutzer werden im Knoten `/content/forms/fp/` des entsprechenden AEM-Repositorys gespeichert. Jedes Mal, wenn ein angemeldeter oder anonymer Benutzer einen Entwurf speichert oder ein Formular sendet, wird ein `draft ID` oder `submission ID`, a `user data ID`und eine zufällige `ID` für jede Anlage generiert wird (falls zutreffend). Sie ist mit dem entsprechenden Entwurf oder der Übermittlung verknüpft.
+Alle Entwürfe und eingereichten Formulardaten in AEM-Instanzen (Autoren-, Veröffentlichungs- oder Remote-Instanzen) für angemeldete und nicht angemeldete Benutzer werden im Knoten `/content/forms/fp/` des entsprechenden AEM-Repositorys gespeichert. Jedes Mal, wenn angemeldete oder anonyme Benutzende einen Entwurf speichern oder ein Formular übermitteln, wird eine `draft ID` oder `submission ID`, eine `user data ID` und eine zufällige `ID` für jeden Anhang (falls vorhanden) generiert. Diese ist mit dem entsprechenden Entwurf oder der Übermittlung verknüpft.
 
 #### Zugreifen auf Benutzerdaten {#access-user-data}
 
@@ -91,9 +91,9 @@ In der folgenden Tabelle wird erläutert, wie die Daten für alle Entwürfe von 
 
 #### Löschen von Benutzerdaten {#delete-user-data}
 
-Um Benutzerdaten aus Entwürfen und Sendungen für einen angemeldeten Benutzer vollständig von AEM-Systemen zu löschen, müssen Sie den Knoten `user ID` für einen bestimmten Benutzer aus dem Autorenknoten löschen. Löschen Sie Daten manuell aus allen zutreffenden AEM.
+Um Benutzerdaten aus Entwürfen und Sendungen für einen angemeldeten Benutzer vollständig von AEM-Systemen zu löschen, müssen Sie den Knoten `user ID` für einen bestimmten Benutzer aus dem Autorenknoten löschen. Löschen Sie Daten manuell aus allen anwendbaren AEM-Instanzen.
 
-Entwurfs- und Sendedaten für alle anonymen Benutzer werden in den allgemeinen Knoten `drafts` und `submit` unter `/content/forms/fp/anonymous` gespeichert. Es gibt keine Methode, um Daten für einen bestimmten anonymen Benutzer zu finden, es sei denn, es sind einige identifizierbare Informationen bekannt. In diesem Fall können Sie nach Informationen suchen, die den anonymen Benutzer im AEM-Repository identifizieren, und den Knoten, der ihn enthält, manuell aus allen anwendbaren AEM-Instanzen löschen, um Daten aus dem AEM zu entfernen. Wenn Sie jedoch die Daten für alle anonymen Anwender löschen möchten, können Sie den Koten `anonymous` löschen, um Entwürfe und Sendedaten für alle anonymen Anwender zu entfernen.
+Entwurfs- und Sendedaten für alle anonymen Benutzer werden in den allgemeinen Knoten `drafts` und `submit` unter `/content/forms/fp/anonymous` gespeichert. Es gibt keine Methode, um Daten für einen bestimmten anonymen Benutzer zu finden, es sei denn, es sind einige identifizierbare Informationen bekannt. In diesem Fall können Sie im AEM-Repository nach den Informationen suchen, die die anonyme Person identifizieren, und den Knoten, der sie enthält, manuell aus allen entsprechenden AEM-Instanzen löschen, um die Daten aus dem AEM-System zu entfernen. Wenn Sie jedoch die Daten für alle anonymen Anwender löschen möchten, können Sie den Koten `anonymous` löschen, um Entwürfe und Sendedaten für alle anonymen Anwender zu entfernen.
 
 ### Datenbank {#database}
 
@@ -105,7 +105,7 @@ Wenn AEM zum Speichern von Daten in einer Datenbank konfiguriert ist, werden die
 
 #### Zugreifen auf Benutzerdaten {#access-user-data-1}
 
-Um auf Entwürfe und Sendedaten für einen angemeldeten und anonymen Benutzer in den Datenbanktabellen zuzugreifen, führen Sie den folgenden Datenbankbefehl aus. Ersetzen Sie in der Abfrage `logged-in user` durch die Benutzer-ID, auf deren Daten Sie zugreifen möchten, oder durch `anonymous` für anonyme Benutzer.
+Um auf Entwürfe und Sendedaten für eine angemeldete und anonyme Person in den Datenbanktabellen zuzugreifen, führen Sie den folgenden Datenbankbefehl aus. Ersetzen Sie in der Abfrage `logged-in user` durch die Benutzer-ID, auf deren Daten Sie zugreifen möchten, oder durch `anonymous` für anonyme Benutzer.
 
 ```sql
 select * from metadata, data, additionalmetadatatable where metadata.owner = 'logged-in user' and metadata.id = additionalmetadatatable.id and metadata.userdataID = data.id
@@ -113,7 +113,7 @@ select * from metadata, data, additionalmetadatatable where metadata.owner = 'lo
 
 #### Löschen von Benutzerdaten {#delete-user-data-1}
 
-Um Entwürfe und Sendedaten für einen angemeldeten Benutzer aus den Datenbanktabellen zu löschen, führen Sie den folgenden Datenbankbefehl aus. Ersetzen Sie in der Abfrage `logged-in user` durch die Benutzer-ID, deren Daten Sie löschen möchten, oder durch `anonymous` für anonyme Benutzer. Um Daten für einen bestimmten anonymen Benutzer aus der Datenbank zu löschen, müssen Sie sie mithilfe identifizierbarer Informationen finden und aus Datenbanktabellen löschen, die die Informationen enthalten.
+Um Entwürfe und Sendedaten für eine angemeldete Person aus den Datenbanktabellen zu löschen, führen Sie den folgenden Datenbankbefehl aus. Ersetzen Sie in der Abfrage `logged-in user` durch die Benutzer-ID, deren Daten Sie löschen möchten, oder durch `anonymous` für anonyme Benutzer. Um Daten für eine bestimmte anonyme Person aus der Datenbank zu löschen, müssen Sie die Daten mit einigen identifizierbaren Informationen suchen und sie aus den Datenbanktabellen löschen, die diese Informationen enthalten.
 
 ```sql
 DELETE FROM metadata, data, additionalmetadatatable USING metadata INNER JOIN data ON metadata.userdataID = data.id INNER JOIN additionalmetadatatable ON metadata.id = additionalmetadatatable.id WHERE metadata.owner = 'logged-in user'

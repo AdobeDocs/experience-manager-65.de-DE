@@ -12,7 +12,7 @@ role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6618'
+source-wordcount: '6664'
 ht-degree: 99%
 
 ---
@@ -29,7 +29,7 @@ Diese Integration ermöglicht es Ihnen, die Nutzung von Dynamic Media Viewers au
 
 Weitere Informationen zu Erweiterungen von Adobe oder Drittanbieterern finden Sie unter [Adobe-Erweiterungen](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html?lang=de) im Benutzerhandbuch zu Experience Platform Tags.
 
-**Dieses Thema richtet sich an:** Site-Admins, Entwicklerinnen und Entwickler für die Experience Plattform und Anwendende.
+**Dieses Thema richtet sich an:** Site-Admins, Entwicklerinnen und Entwickler für die Experience Platform und Anwendende.
 
 ### Einschränkungen der Integration {#limitations-of-the-integration}
 
@@ -213,7 +213,7 @@ Gleichermaßen werden die Werte von Datenelementen automatisch aktualisiert, wen
 
 Jeder Dynamic Media-Viewer verfügt auf der Website über eine eindeutige Kennung. Das Datenelement verfolgt den Wert selbst und auch den Viewer, der den Wert ausgefüllt hat. Angenommen, es gibt mehrere Viewer auf derselben Seite und ein **[!UICONTROL AssetName]**-Datenelement, das auf das **[!UICONTROL LOAD]**-Ereignis und das zugehörige „asset“-Argument verweist. Das Datenelement **[!UICONTROL AssetName]** verwaltet eine Sammlung von Asset-Namen, die mit jedem auf der Seite geladenen Viewer verknüpft sind.
 
-Der jeweilige vom Datenelement zurückgegebene Wert hängt vom Kontext ab. Wenn das Datenelement in einer Regel angefordert wird, die durch ein Dynamic Media-Viewer-Ereignis ausgelöst wurde, wird der Datenelementwert für den Viewer zurückgegeben, der die Regel initiiert hat. Und das Datenelement wird in einer Regel angefordert, die durch ein Ereignis einer anderen Platform Tags-Erweiterung ausgelöst wurde. In diesem Fall kommt der Wert des Datenelements von dem Viewer, der dieses Datenelement zuletzt aktualisiert hat.
+Der jeweilige vom Datenelement zurückgegebene Wert hängt vom Kontext ab. Wenn das Datenelement in einer Regel angefordert wird, die durch ein Dynamic Media-Viewer-Ereignis ausgelöst wurde, wird der Datenelementwert für den Viewer zurückgegeben, der die Regel initiiert hat. Und das Datenelement wird in einer Regel angefordert, die durch ein Ereignis einer anderen Experience Platform Tags-Erweiterung ausgelöst wurde. In diesem Fall kommt der Wert des Datenelements von dem Viewer, der dieses Datenelement zuletzt aktualisiert hat.
 
 **Betrachten Sie das folgende Beispiel:**
 
@@ -536,7 +536,7 @@ Um eine Erweiterung zu installieren, klicken Sie auf **[!UICONTROL Installieren]
 
 Wenn erforderlich, müssen die folgenden Erweiterungen installiert und konfiguriert werden:
 
-* (Erforderlich) *Experience Cloud ID Service*-Erweiterung.
+* (Erforderlich) *Experience Cloud ID-Dienst* -Erweiterung.
 
 Es ist keine zusätzliche Konfiguration erforderlich; akzeptieren Sie die vorgeschlagenen Werte. Wenn Sie fertig sind, klicken Sie unbedingt auf **[!UICONTROL Speichern]**.
 
@@ -596,7 +596,7 @@ Detaillierte Informationen zu den Funktionen der Erweiterung finden Sie unter [K
 
 Um Änderungen an der Experience Platform Tags-Konfiguration vorzunehmen (einschließlich eingerichteter Eigenschaften, Erweiterungen, Regeln und Datenelemente), müssen Sie diese Änderungen *veröffentlichen*. Die Veröffentlichung in Experience Platform Tags erfolgt über die Registerkarte „Publishing“ unter der Eigenschaftskonfiguration.
 
-Platform Tags kann über mehrere Entwicklungsumgebungen, eine Staging-Umgebung und eine Produktionsumgebung verfügen. Standardmäßig verweist die Experience Platform Tags Cloud-Konfiguration in Experience Manager den Experience Manager-Autorenknoten auf die Staging-Umgebung von Experience Platform Tags. Der Experience Manager-Veröffentlichungsknoten verweist auf die Produktionsumgebung von Experience Platform Tags. Deshalb muss mit den Standardeinstellungen für Experience Manager die Experience Platform Tags-Bibliothek in der Staging-Umgebung veröffentlicht werden. Auf diese Weise kann die Bibliothek im Experience Manager-Autorenknoten verwendet werden. Sie können sie dann in der Produktionsumgebung veröffentlichen, damit sie im Veröffentlichungsknoten von Experience Manager verwendet werden kann.
+Experience Platform Tags kann über mehrere Entwicklungsumgebungen, eine Staging-Umgebung und eine Produktionsumgebung verfügen. Standardmäßig verweist die Experience Platform Tags Cloud-Konfiguration in Experience Manager den Experience Manager-Autorenknoten auf die Staging-Umgebung von Experience Platform Tags. Der Experience Manager-Veröffentlichungsknoten verweist auf die Produktionsumgebung von Experience Platform Tags. Deshalb muss mit den Standardeinstellungen für Experience Manager die Experience Platform Tags-Bibliothek in der Staging-Umgebung veröffentlicht werden. Auf diese Weise kann die Bibliothek im Experience Manager-Autorenknoten verwendet werden. Sie können sie dann in der Produktionsumgebung veröffentlichen, damit sie im Veröffentlichungsknoten von Experience Manager verwendet werden kann.
 
 Weitere Informationen zu Experience Platform Tags-Umgebungen finden Sie unter [Umgebungen](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=de).
 

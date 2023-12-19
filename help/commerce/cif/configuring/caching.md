@@ -4,8 +4,8 @@ description: Erfahren Sie mehr über die verschiedenen verfügbaren Konfiguratio
 exl-id: ecce64bf-5960-4ddb-b6e3-dad401038c11
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 87%
+source-wordcount: '818'
+ht-degree: 89%
 
 ---
 
@@ -27,7 +27,7 @@ Bevor der Client eine GraphQL-Anfrage sendet, prüft er, ob **exakt** diese Grap
 
 ### Beispiele
 
-Es wird empfohlen, zum Konfigurieren des Cachings für den Such-Service alle verfügbaren Aggregations-/Facettenwerte abzurufen, die auf den Produktsuchen- und Kategorieseiten angezeigt werden. Diese Werte ändern sich normalerweise nur, wenn beispielsweise ein neues Attribut zu Produkten hinzugefügt wird. Daher kann die Dauer für diesen Cache-Eintrag &quot;groß&quot;sein, wenn sich der Satz von Produktattributen nicht häufig ändert. Obwohl dies projektspezifisch ist, empfiehlt Adobe Werte von einigen Minuten in Projektentwicklungsphasen und einige Stunden in stabilen Produktionssystemen.
+Es wird empfohlen, zum Konfigurieren des Cachings für den Such-Service alle verfügbaren Aggregations-/Facettenwerte abzurufen, die auf den Produktsuchen- und Kategorieseiten angezeigt werden. Diese Werte ändern sich normalerweise nur, wenn beispielsweise ein neues Attribut zu Produkten hinzugefügt wird. Daher kann die Dauer für diesen Cache-Eintrag &quot;groß&quot;sein, wenn sich der Satz von Produktattributen nicht häufig ändert. Obwohl dies projektspezifisch ist, empfiehlt Adobe Werte von einigen Minuten in der Projektentwicklungsphase und einigen Stunden auf stabilen Produktionssystemen.
 
 Dies wird in der Regel mit dem folgenden Cache-Eintrag konfiguriert:
 

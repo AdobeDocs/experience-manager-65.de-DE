@@ -7,8 +7,8 @@ role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2242'
-ht-degree: 88%
+source-wordcount: '2184'
+ht-degree: 87%
 
 ---
 
@@ -87,7 +87,7 @@ Speicherplatz für die Installation:
 
 * Hardwareanforderungen: Intel® Pentium® 4 oder gleichwertiger AMD® 1-GHz-Prozessor.
 * Java™ Runtime Environment (JRE) 7.0 Update 51 oder höhere Updates zu 7.0.
-* Minimale Bildschirmauflösung 1024 x 768 Pixel oder höher mit 16-Bit-Farbtiefe oder höher.
+* Minimale Bildschirmauflösung 1024 x 768 Pixel oder höher mit 16-Bit-Farbe oder höher.
 * TCP/IPv4- oder TCP/IPv6-Netzwerkverbindung zum AEM Forms-Server.
 * Installieren Sie Visual C++ Redistributable Runtime Packages 2012 32-Bit.
 * Installieren Sie Visual C++ Redistributable Runtime Packages 2013 32-Bit.

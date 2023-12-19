@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie den Fehler beheben können, wenn Sie keine E-
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
 source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 64%
+source-wordcount: '236'
+ht-degree: 82%
 
 ---
 
@@ -23,11 +23,11 @@ Benutzenden sind nicht in der Lage, Vorgänge wie „PDF per E-Mail versenden“
 
 1. Laden Sie JAR als [java.mail-1.0.jar](/help/forms/using/java.mail-1.0.jar) herunter und entpacken Sie die heruntergeladene JAR-Datei, um die Manifestdatei zu erhalten.
 
-1. Die Manifestdatei von `java.mail-1.0.jar` wird aus Schritt 1 abgerufen, um eine benutzerdefinierte JAR-Datei zu erstellen, beispielsweise `java.mail-1.5.jar`.
+1. Verwenden Sie die in Schritt 1 erhaltene Manifestdatei `java.mail-1.0.jar`, um eine benutzerdefinierte JAR-Datei mit einer Bezeichnung wie etwa `java.mail-1.5.jar` zu erstellen.
 
 1. Öffnen Sie die Manifestdatei und ersetzen Sie alle Vorkommen von `1.5.0` durch `1.5.6` und `Bundle-Version: 1.0` durch `Bundle-Version:1.5`
 
-1. Erstellen Sie eine benutzerdefinierte JAR (`java.mail-1.5.jar`) mithilfe des folgenden Befehls in `C:\Adobe\Adobe_Experience_Manager_Forms\java\jdk\bin` Ordner als:
+1. Erstellen Sie eine benutzerdefinierte JAR-Datei (`java.mail-1.5.jar`) im Ordner `C:\Adobe\Adobe_Experience_Manager_Forms\java\jdk\bin` mit folgendem Befehl:
    `jar -cfm java.mail-1.5.jar manifest.mf`
 
    Im obigen Befehl ist *manifest.mf* der Name der Manifestdatei und *java.mail-1.5.jar* ist der Name der Datei, die nach der Ausführung des obigen Befehls erstellt wird.
@@ -43,8 +43,8 @@ Benutzenden sind nicht in der Lage, Vorgänge wie „PDF per E-Mail versenden“
 
 1. Installieren Sie die Datei `javax.mail-1.5.6.redhat-1.jar`, die Sie in Schritt 5 heruntergeladen haben.
 
-1. Anhalten **JBoss®** aus dem **Dienstkonsole** und hängen Sie die folgenden Eigenschaften an **Sling.properties** Datei:
+1. Stoppen Sie **JBoss®** über die **Services-Konsole** und fügen Sie die folgenden Eigenschaften an die Datei **Sling.properties** an:
    * `org.osgi.framework.system.packages.extra=javax.activation; version\=1.2.0`
    * `sling.bootdelegation.activation=javax.activation.*`
 
-1. Neu starten **JBoss®**.
+1. Starten Sie **JBoss®** neu.

@@ -10,7 +10,7 @@ exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 86%
+ht-degree: 96%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 86%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
 
-Durch die Integration von Adobe Analytics und AEM können Sie die Aktivität Ihrer Webseite verfolgen:
+Die Integration von Adobe Analytics und AEM ermöglicht es Ihnen, Web-Seiten-Aktivität nachzuverfolgen:
 
 * Eine Adobe Analytics-Konfiguration ermöglicht AEM die Authentifizierung mit Adobe Analytics.
 * Ein Framework identifiziert die Daten, die an die Adobe Analytics-Report Suite übermittelt werden.
@@ -46,7 +46,7 @@ Der [Opt-in-Assistent](/help/sites-administering/opt-in.md) erleichtert die Durc
 
 >[!NOTE]
 >
->Siehe auch den Artikel: [Integrieren von AEM mit Adobe Target und Adobe Analytics mithilfe von DTM](https://helpx.adobe.com/de/experience-manager/using/integrate-digital-marketing-solutions.html).
+>Siehe auch [Integrieren von AEM in Adobe Target und Adobe Analytics mithilfe von DTM](https://helpx.adobe.com/de/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 ## Weiterführende Informationen {#further-information}
 

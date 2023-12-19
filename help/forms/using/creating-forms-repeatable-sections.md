@@ -8,17 +8,17 @@ exl-id: f2abae0a-f7fd-4a39-bd8c-03492ce06fe9
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1139'
-ht-degree: 87%
+ht-degree: 92%
 
 ---
 
 # Erstellen von Formularen mit wiederholbaren Abschnitten {#creating-forms-with-repeatable-sections}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/using/create-an-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 Wiederholbare Abschnitte sind Bereiche, die dynamisch zu einem Formular hinzugefügt oder daraus entfernt werden können.
 
-Bei der Bewerbung um einen Arbeitsplatz geben die Arbeitssuchenden beispielsweise frühere Beschäftigungsdetails wie Firmenname, Rolle, Projekt und andere Informationen an. Informationen aller Arbeitgeberinnen bzw. Arbeitgeber erfordern unterschiedliche, aber ähnlich aussehende Abschnitte. In einem solchen Szenario stellt das Beschäftigungsformular einen Arbeitgeberabschnitt bereit und bietet außerdem die Möglichkeit, weitere solche Abschnitte dynamisch hinzuzufügen. Diese Abschnitte, die dynamisch hinzugefügt werden, werden als wiederholbare Abschnitte bezeichnet.
+Bei der Bewerbung auf eine Stelle gibt die oder der Arbeitssuchende beispielsweise Details zur vorherigen Beschäftigung an, wie Firmenname, Rolle, Projekt und andere Informationen. Die Informationen aller Arbeitgebenden erfordern unterschiedliche, aber ähnlich aussehende Abschnitte. In einem solchen Fall bietet das Beschäftigungsformular einen Arbeitgeberabschnitt sowie eine Option, um weitere dieser Abschnitte dynamisch hinzuzufügen. Diese Abschnitte, die dynamisch hinzugefügt werden, werden als wiederholbare Abschnitte bezeichnet.
 
 Sie können wiederholbare Bereiche mit einer der folgenden Methoden erstellen:
 
@@ -26,15 +26,15 @@ Sie können wiederholbare Bereiche mit einer der folgenden Methoden erstellen:
 
 1. Wählen Sie im Bearbeitungsmodus einen Bereich aus und wählen Sie dann ![cmppr](assets/cmppr.png). Aktivieren Sie in der Randleiste unter „Eigenschaften“ **Bereich wiederholbar machen**. Geben Sie Werte für die Felder **[!UICONTROL Maximum]** und **[!UICONTROL Minimum]** an.
 
-   Das Feld „Maximum“ gibt an, wie oft ein Panel maximal auf der Seite angezeigt werden kann. Sie können -1 im Feld &quot;Maximum Count&quot;(Höchstanzahl) angeben, damit der Bereich unbegrenzt oft angezeigt werden kann.
+   Das Feld „Maximum“ gibt an, wie oft ein Panel maximal auf der Seite angezeigt werden kann. Geben Sie im Feld für die maximale Anzahl den Wert „-1“ an, damit das Panel beliebig oft angezeigt werden kann.
 
-   Das Feld Minimum gibt an, wie oft ein Bedienfeld mindestens auf dem Formular angezeigt wird. Wenn Sie die Mindestanzahl auf null setzen, können Sie später alle Instanzen über Skripte entfernen, nachdem die Ausgabedarstellung abgeschlossen ist.
+   Das Feld „Minimum“ gibt an, wie oft ein Panel mindestens auf dem Formular angezeigt wird. Wenn Sie die Mindestanzahl auf null setzen, können Sie später über Skripte alle Instanzen entfernen, nachdem die Ausgabedarstellung abgeschlossen ist.
 
    >[!NOTE]
    >
-   >Um einen nicht wiederholbaren Bereich zu erstellen, setzen Sie die Werte der Felder „Maximum“ (Höchstanzahl) und „Minimum“ (Mindestanzahl) auf jeweils 1. Beim Akkordeon-Layout wird der Wert „-1“ im Feld „Maximale Anzahl“ nicht unterstützt. Sie können eine hohe Zahl angeben, um den Eindruck eines unendlichen Wertes zu vermitteln.
+   >Um einen nicht wiederholbaren Bereich zu erstellen, setzen Sie die Werte der Felder „Maximum“ (Höchstanzahl) und „Minimum“ (Mindestanzahl) auf jeweils 1. Beim Akkordeon-Layout wird der Wert „-1“ im Feld für die maximale Anzahl nicht unterstützt. Sie können eine hohe Zahl angeben, um einen fast unbegrenzten Wert zu erreichen.
 
-1. Der übergeordnete Bereich, der wiederholt werden soll, sollte Schaltflächen zum Hinzufügen und Löschen enthalten, um Instanzen der wiederholbaren Bereiche zu verwalten. Führen Sie die folgenden Schritte aus, um Schaltflächen in das übergeordnete Element einzufügen und Skripte auf den Schaltflächen zu aktivieren:
+1. Das übergeordnete Element des Panels, das wiederholt werden soll, muss Schaltflächen zum Hinzufügen und Löschen enthalten, um Instanzen der wiederholbaren Panels zu verwalten. Führen Sie die folgenden Schritte aus, um Schaltflächen in das übergeordnete Element einzufügen und Skripte auf den Schaltflächen zu aktivieren:
 
    1. Ziehen Sie eine Schaltflächenkomponente per Drag-and-Drop aus der Randleiste in das übergeordnete Element des Bereichs. Wählen Sie die Komponente aus und wählen Sie ![edit-rules](assets/edit-rules.png). Die Regeln der Schaltfläche werden im Regeleditor geöffnet.
    1. Klicken Sie im Fenster des Regeleditors auf **Erstellen**.
@@ -47,7 +47,7 @@ Sie können wiederholbare Bereiche mit einer der folgenden Methoden erstellen:
          * Um eine Schaltfläche zum Hinzufügen eines Bereichs zu erstellen, wählen Sie **Instanz hinzufügen** und ziehen Sie den Bereich per Drag-and-Drop mit ![toggle-side-panel](assets/toggle-side-panel.png) oder wählen Sie ihn mithilfe von **Objekt ablegen oder hier auswählen** aus.
          * Um eine Schaltfläche zum Löschen eines Bereichs zu erstellen, wählen Sie **Instanz entfernen** und ziehen Sie den Bereich per Drag-and-Drop mit ![toggle-side-panel](assets/toggle-side-panel.png) oder wählen Sie ihn mithilfe von **Objekt ablegen oder hier auswählen** aus.
 
-      Wählen Sie in der Zeile „Formularobjekte und Funktionen“ **Code-Editor** aus. Klicken Sie auf **Regeln bearbeiten** und in den Code-Bereich:
+      Wählen Sie in der Zeile „Formularobjekte und Funktionen“ die Option **Code-Editor** aus. Klicken Sie auf **Regeln bearbeiten** und in den Code-Bereich:
 
       * Um eine Schaltfläche zum Hinzufügen eines Bereichs zu erstellen, geben Sie `this.panel.instanceManager.addInstance()` an.
       * Um eine Schaltfläche zum Löschen eines Bereichs zu erstellen, geben Sie `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)` an.
@@ -62,7 +62,7 @@ Sie können wiederholbare Bereiche mit einer der folgenden Methoden erstellen:
       >`<panelName>.instanceManager.instances[<instanceNumber>].<fieldname>`
       >
       >
-      >Sie erstellen beispielsweise ein adaptives Formular mit einem wiederholbaren Panel, das ein Textfeld enthält. Wenn Sie das Formular mit drei wiederholbaren Textfeldern vorausfüllen, benötigen Sie die nachfolgende xml:
+      >Angenommen, Sie erstellen ein adaptives Formular mit einem wiederholbaren Bereich, der ein Textfeld enthält. Wenn Sie das Formular mit drei wiederholbaren Textfeldern vorausfüllen, benötigen Sie die nachfolgende xml:
       >
       >
       >`<panel1><textbox1>AA1</panel1></textbox1>`
@@ -94,9 +94,9 @@ Sie können wiederholbare Bereiche mit einer der folgenden Methoden erstellen:
 
 ## Verwenden des Akkordeon-Layouts für den übergeordneten Bereich   {#using-the-accordion-layout-for-the-parent-panel-nbsp}
 
-Ein Bedienfeld verfügt über verschiedene Layoutoptionen. Die Option &quot;Layout für Akkordeon-Design&quot;verfügt standardmäßig über Unterstützung für wiederholbare Bereiche. Führen Sie die folgenden Schritte aus, um einen wiederholbaren Bereich mit der Option zum Layout für das Akkordeon-Design zu erstellen:
+Ein Bereich weist verschiedene Layout-Optionen auf. Die Option zum Layout für das Akkordeon-Design bietet standardmäßig Unterstützung für wiederholbare Bereiche. Führen Sie die folgenden Schritte aus, um einen wiederholbaren Bereich mit der Option zum Layout für das Akkordeon-Design zu erstellen:
 
-1. Wählen Sie im übergeordneten Element des zu wiederholenden Bereichs die Option ![cmppr](assets/cmppr.png). Sie können die Eigenschaften in der Randleiste einsehen. Wählen Sie in der Dropdown-Liste **Layout** die Option **Akkordeon**.
+1. Wählen Sie im übergeordneten Element des zu wiederholenden Bereichs die Option ![cmppr](assets/cmppr.png). Sie können die zugehörigen Eigenschaften in der Randleiste anzeigen. Wählen Sie in der Dropdown-Liste **Layout** die Option **Akkordeon**.
 1. Wählen Sie in einem Bereich, der wiederholt werden soll, ![cmppr](assets/cmppr.png). Sie können die Eigenschaften des Bereichs in der Randleiste anzeigen. Aktivieren Sie die Registerkarte **Bereich wiederholbar machen** und geben Sie den Wert für die Felder **Maximum** und **Minimum** ein.
 
    Jetzt können Sie die Schaltflächen Plus (+) und Löschen (![delete-panel](assets/delete-panel.png)) verwenden, um Bereiche hinzuzufügen und zu entfernen.
@@ -109,12 +109,12 @@ Wiederholbare Teilformulare ähneln den wiederholbaren Bedienfeldern in adaptive
 1. Klicken Sie in der Palette „Objekt“ auf die Registerkarte „Teilformular“ und wählen Sie in der Liste „Inhalt“ die Option „Textfluss“ aus.
 1. Wählen Sie das zu wiederholende Teilformular aus.
 1. Klicken Sie in der Palette „Objekt“ auf die Registerkarte „Teilformular“ und wählen Sie in der Liste „Inhalt“ die Option „Position“ oder „Textfluss“ aus.
-1. Klicken Sie auf die Registerkarte „Bindung“ und wählen Sie die Option „Teilformular wiederh. f. jedes Datenelement“ aus.
-1. Um die Mindestanzahl von Wiederholungen festzulegen, wählen Sie „Min-Zähler“ aus und geben Sie im entsprechenden Feld eine Zahl ein. Wenn diese Option auf 0 gesetzt ist und zum Zeitpunkt der Datenzusammenführung keine Daten für die Objekte im Teilformular angegeben sind, wird das Teilformular nicht platziert, wenn das Formular gerendert wird.
-1. Um die maximale Anzahl von Teilformularwiederholungen festzulegen, wählen Sie „Max“ aus und geben Sie im entsprechenden Kästchen eine Zahl ein. Wenn Sie im Kästchen „Max“ keinen Wert angeben, ist die Anzahl der Teilformularwiederholungen unbegrenzt.
-1. Wenn Sie unabhängig von der Datenmenge eine bestimmte Anzahl an Teilformularwiederholungen festlegen möchten, wählen Sie „Anfangszahl“ aus und geben Sie im entsprechenden Kästchen eine Zahl ein. Wenn Sie diese Option auswählen und entweder keine Daten verfügbar sind oder weniger Dateneinträge als der angegebene Wert für „Anfangszahl“ vorhanden sind, werden leere Instanzen des Teilformulars weiterhin im Formular platziert.
+1. Klicken Sie auf die Registerkarte „Bindung“ und wählen Sie die Option „Teilformular für jedes Datenelement wiederholen“ aus.
+1. Um die Mindestanzahl von Wiederholungen festzulegen, wählen Sie die Option für die Mindestanzahl aus und geben Sie im entsprechenden Feld eine Zahl ein. Wenn diese Option auf den Wert „0“ gesetzt ist und zum Zeitpunkt der Datenzusammenführung keine Daten für die Objekte im Teilformular zur Verfügung stehen, wird das Teilformular beim Rendern des Formulars nicht platziert.
+1. Um die maximale Anzahl von Teilformularwiederholungen festzulegen, wählen Sie „Max.“ aus und geben Sie im entsprechenden Feld eine Zahl ein. Wenn Sie im Feld „Max.“ keinen Wert eingeben, ist die Anzahl von Teilformularwiederholungen unbeschränkt.
+1. Wenn Sie unabhängig von der Datenmenge eine bestimmte Anzahl an Teilformularwiederholungen festlegen möchten, wählen Sie „Anfangszahl“ aus und geben Sie im entsprechenden Feld eine Zahl ein. Wenn Sie diese Option aktivieren und keine oder weniger Daten zur Verfügung stehen als unter „Anfangszahl“ angegeben, werden leere Instanzen des Teilformulars in das Formular eingefügt.
 1. Fügen Sie im übergeordneten Teilformular zwei Schaltflächen hinzu: eine zum Hinzufügen der Instanz und eine andere zum Löschen der Instanz des wiederholbaren Teilformulars. Ausführliche Anweisungen finden Sie unter [Erstellen einer Aktion](https://help.adobe.com/de_DE/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
-1. Verknüpfen Sie jetzt die Formularvorlage mit dem adaptiven Formular. Ausführliche Anweisungen finden Sie unter [Erstellen eines adaptiven Formulars basierend auf einer Vorlage](/help/forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template).
+1. Verknüpfen Sie nun die Formularvorlage mit dem adaptiven Formular. Ausführliche Anweisungen finden Sie unter [Erstellen eines adaptiven Formulars basierend auf einer Vorlage](/help/forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template).
 1. Verwenden Sie die in Schritt 9 erstellten Schaltflächen, um Teilformulare hinzuzufügen und zu entfernen.
 
 Die angehängte ZIP-Datei enthält ein Beispiel für ein wiederholbares Teilformular.
@@ -123,7 +123,7 @@ Die angehängte ZIP-Datei enthält ein Beispiel für ein wiederholbares Teilform
 
 ## Verwenden der Wiederholungseinstellungen eines XML-Schemas (XSD) {#using-repeat-settings-of-an-xml-schema-xsd-br}
 
-Sie können wiederholbare Bereiche aus einem XML-Schema mit den Eigenschaften „minOccurs“ und „maxOccurs“ eines beliebigen Elements eines komplexen Typs erstellen. Ausführliche Informationen zum XML-Schema finden Sie unter [Erstellen adaptiver Formulare mit XML-Schema als Formularmodell](/help/forms/using/adaptive-form-xml-schema-form-model.md).
+Sie können wiederholbare Bereiche aus einem XML-Schema mit den Eigenschaften „minOccurs“ und „maxOccurs“ eines beliebigen Elements eines komplexen Typs erstellen. Ausführliche Informationen zum XML-Schema finden Sie unter [Erstellen adaptiver Formulare mithilfe eines XML-Schemas als Formularmodell](/help/forms/using/adaptive-form-xml-schema-form-model.md).
 
 Im folgenden Code verwendet der `SampleType`Bereich die Eigenschaften „minOccurs“ und „maxOccurs“.
 

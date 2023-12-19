@@ -10,7 +10,7 @@ exl-id: 59f01bb1-4ff1-42b6-afc9-56d448b1f803
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '924'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,7 @@ Die Vorteile bearbeitbarer Vorlagen:
 
 * Können von den Autoren oder Autorinnen [erstellt](/help/sites-authoring/templates.md#creating-a-new-template-template-author) und [bearbeitet](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) werden.
 
-* wurden eingeführt, damit Sie Folgendes für alle Seiten definieren können, die mit der Vorlage erstellt wurden:
+* Wurden eingeführt, damit Sie Folgendes für alle Seiten definieren können, die mit der Vorlage erstellt werden:
 
    * Die Struktur
    * Den anfänglichen Inhalt

@@ -8,8 +8,8 @@ content-type: reference
 exl-id: ba518290-dd82-44dc-ae7c-c8152df89179
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 93%
+source-wordcount: '825'
+ht-degree: 94%
 
 ---
 

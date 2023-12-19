@@ -4,8 +4,8 @@ description: AEM Headless-CMS-Dokumentation. Beginnen Sie hier für eine geführ
 exl-id: f24fb308-daa7-426f-ba45-37a236b5a500
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 89%
+source-wordcount: '1204'
+ht-degree: 91%
 
 ---
 
@@ -54,7 +54,7 @@ Informationen in dieser Journey können für alle Personen nützlich sein, einig
 
 Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folgenden Artikel vermitteln Ihnen Grundkenntnisse über Headless-Funktionen in AEM und bieten Links zu detaillierten technischen Dokumentationen.
 
-Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Daher empfiehlt Adobe, dass Sie, wenn Sie neu bei AEM sind, am Anfang beginnen und sequenziell fortfahren.
+Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Wenn für Sie Headless in AEM also neu ist, empfehlen wir Ihnen, am Anfang zu beginnen und nach und nach weiterzugehen.
 
 | Nummer | Artikel | Beschreibung |
 |---|---|---|
@@ -92,6 +92,6 @@ Daher sind die Journey so konzipiert, dass sie auf sich allein gestellt stehen. 
 * [Headless-Architekten-Tour](/help/journey-headless/architect/overview.md) – Beginnen Sie hier mit einer Einführung in die leistungsstarken, flexiblen Headless-Funktionen von Adobe Experience Manager und erfahren Sie, wie Sie Inhalte für Ihr Projekt modellieren können.
 * [Technische Dokumentation zu AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=de) – Wenn Sie bereits über ein solides Verständnis von AEM und Headless-Technologien verfügen, können Sie direkt unsere ausführlichen technischen Dokumente hinzuziehen.
 
-   * Ein [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
+   * Eine [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
 
-* Die [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
+* Das [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)

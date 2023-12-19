@@ -4,8 +4,8 @@ description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie S
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
 source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1874'
-ht-degree: 97%
+source-wordcount: '1803'
+ht-degree: 98%
 
 ---
 
@@ -227,5 +227,5 @@ Wenn Sie diese Flexibilität für Ihr Projekt benötigen, fahren Sie mit dem opt
    * Konfigurieren des [CDN Rewriters](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=de) (*suchen Sie nach CDN Rewriter*)
 
 * [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
+* [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
 * [Headless-Tutorials für AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)

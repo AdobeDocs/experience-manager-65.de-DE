@@ -7,22 +7,22 @@ role: Admin
 exl-id: 00c01a12-1180-4f35-9179-461bf177c787
 source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 44%
+source-wordcount: '923'
+ht-degree: 70%
 
 ---
 
 # Dokumentensicherheit | Umgang mit Benutzerdaten {#document-security-handling-user-data}
 
-Mit AEM Forms Document Security können Sie vordefinierte Sicherheitseinstellungen erstellen, speichern und auf Ihre Dokumente anwenden. Dadurch wird sichergestellt, dass nur autorisierte Benutzer die Dokumente verwenden können. Sie können Dokumente mithilfe von Richtlinien schützen. Eine Richtlinie ist eine Sammlung von Informationen, die Sicherheitseinstellungen und eine Liste autorisierter Benutzer enthalten. Sie können eine Richtlinie auf ein oder mehrere Dokumente anwenden und Benutzer autorisieren, die in der AEM Forms JEE-Benutzerverwaltung hinzugefügt werden.
+Mit der AEM Forms-Dokumentsicherheit können Sie vordefinierte Sicherheitseinstellungen für Ihre Dokumente erstellen, speichern und anwenden. Dadurch wird sichergestellt, dass nur autorisierte Benutzende die Dokumente verwenden können. Sie können Dokumente mithilfe von Richtlinien schützen. Eine Richtlinie ist eine Zusammenstellung von Informationen, die unter anderem Sicherheitseinstellungen und eine Liste der berechtigten Benutzenden umfasst. Sie können eine Richtlinie auf ein oder mehrere Dokumente anwenden und Benutzende autorisieren, die in der AEM Forms JEE-Benutzerverwaltung hinzugefügt wurden.
 
 <!-- Fix broken link For more information about how document security works, see AEM Forms JEE administration help. -->
 
 ## Benutzerdaten und Datenspeicher {#user-data-and-data-stores}
 
-Document Security speichert Richtlinien und Daten zu geschützten Dokumenten, einschließlich Benutzerdaten, in einer Datenbank wie My Sql, Oracle, MS® SQL Server und IBM® DB2®. Darüber hinaus werden die Daten für autorisierte Benutzer in einer Richtlinie in der Benutzerverwaltung gespeichert. Informationen zu den in der Benutzerverwaltung gespeicherten Daten finden Sie unter [Benutzerverwaltung für Formulare: Umgang mit Benutzerdaten](/help/forms/using/user-management-handling-user-data.md).
+Document Security speichert Richtlinien und Daten zu geschützten Dokumenten, einschließlich Benutzerdaten, in einer Datenbank wie My Sql, Oracle, MS® SQL Server und IBM® DB2®. Darüber hinaus werden die Daten für autorisierte Benutzende in einer Richtlinie in der Benutzerverwaltung gespeichert. Informationen zu den in der Benutzerverwaltung gespeicherten Daten finden Sie unter [Benutzerverwaltung für Formulare: Umgang mit Benutzerdaten](/help/forms/using/user-management-handling-user-data.md).
 
-Die folgende Tabelle zeigt, wie Document Security Daten in Datenbanktabellen organisiert.
+Die folgende Tabelle zeigt, wie im Rahmen der Dokumentsicherheit Daten in Datenbanktabellen organisiert werden.
 
 <table>
  <tbody>
@@ -32,7 +32,7 @@ Die folgende Tabelle zeigt, wie Document Security Daten in Datenbanktabellen org
   </tr>
   <tr>
    <td><code>EdcPrincipalKeyEntity</code></td>
-   <td>Speichert Informationen über Hauptschlüssel für die Benutzer. Die Schlüssel werden in Offline-Document Security-Workflows verwendet.</td>
+   <td>Speichert Informationen über Prinzipalschlüssel für die Benutzenden. Die Schlüssel werden in Offline-Workflows für die Dokumentsicherheit verwendet.</td>
   </tr>
   <tr>
    <td><code>EdcAuditEntity</code></td>
@@ -40,7 +40,7 @@ Die folgende Tabelle zeigt, wie Document Security Daten in Datenbanktabellen org
   </tr>
   <tr>
    <td><p><code>EdcLicenseEntity</code></p> </td>
-   <td>Speichert den Datensatz eines geschützten Dokuments. Es speichert Lizenzdetails für jedes geschützte Dokument.</td>
+   <td>Speichert den Datensatz eines geschützten Dokuments. Es werden Lizenzdetails für jedes geschützte Dokument gespeichert.</td>
   </tr>
   <tr>
    <td><p><code>EdcDocumentEntity</code></p> </td>
@@ -72,7 +72,7 @@ Die folgende Tabelle zeigt, wie Document Security Daten in Datenbanktabellen org
   </tr>
   <tr>
    <td><code>EdcInvitedUserEntity</code></td>
-   <td>Speichert Informationen zu eingeladenen Benutzern.</td>
+   <td>Speichert Informationen zu eingeladenen Benutzenden.</td>
   </tr>
  </tbody>
 </table>
@@ -89,9 +89,9 @@ Ersetzen Sie im Befehl `select` die `<user_login_id>` durch die Anmelde-ID des B
 select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_id>
 ```
 
-Sobald Sie die Prinzipal-ID kennen, können Sie die Benutzerdaten exportieren oder löschen.
+Wenn Sie die Prinzipal-ID kennen, können Sie die Benutzerdaten exportieren oder löschen.
 
-### Benutzerdaten exportieren {#export-user-data}
+### Exportieren von Benutzerdaten {#export-user-data}
 
 Führen Sie die folgenden Datenbankbefehle aus, damit Sie Benutzerdaten für eine Prinzipal-ID aus Datenbanktabellen exportieren können. Ersetzen Sie `<principal_id>` im Befehl `select` durch die Haupt-ID des Benutzers, dessen Daten Sie exportieren möchten.
 
@@ -129,7 +129,7 @@ Um vollständige Daten über einen Benutzer im System zu erhalten, müssen Sie a
 
 ### Benutzerdaten löschen {#delete-user-data}
 
-Führen Sie die folgenden Schritte aus, um Document Security-Daten für eine Prinzipal-ID aus Datenbanktabellen zu löschen.
+Führen Sie folgende Schritte aus, um Dokumentsicherheitsdaten für eine Prinzipal-ID aus Datenbanktabellen zu löschen.
 
 1. Fahren Sie den AEM Forms-Server herunter.
 1. Führen Sie die folgenden Datenbankbefehle aus, damit Sie Daten für die Prinzipal-ID aus Datenbanktabellen für Document Security löschen können. Ersetzen Sie im Befehl `Delete` den Wert `<principal_id>` durch die Haupt-ID des Benutzers, dessen Daten Sie löschen möchten.
@@ -193,11 +193,11 @@ Führen Sie die folgenden Schritte aus, um Document Security-Daten für eine Pri
 
    1. Melden Sie sich als Administrator bei der Forms JEE Administration Console unter https:// an.[*server*]:[*port*]/adminui.
    1. Navigieren Sie zu **[!UICONTROL Dienste > Dokumentensicherheit > Richtliniensätze]**.
-   1. Öffnen Sie einen Richtliniensatz und löschen Sie den Benutzer aus der Richtlinie.
+   1. Öffnen Sie einen Richtliniensatz und löschen Sie die Benutzerin oder den Benutzer aus der Richtlinie.
 
-   **Verwenden der Document Security-Webseite**
+   **Verwenden der Web-Seite „Dokumentsicherheit“**
 
-   Document Security-Benutzer mit Berechtigungen zum Erstellen persönlicher Richtlinien können Benutzerdaten aus ihren Richtlinien löschen. Gehen Sie dazu wie folgt vor:
+   Benutzende der Funktion „Dokumentsicherheit“ mit der Berechtigung zum Erstellen persönlicher Richtlinien können Benutzerdaten aus ihren Richtlinien löschen. Gehen Sie dazu wie folgt vor:
 
    1. Benutzer mit persönlichen Richtlinien melden sich auf ihrer Document Security-Webseite unter https:// an.[*server*]:[*port*]/edc.
    1. Navigieren Sie zu **[!UICONTROL Dienste > Dokumentensicherheit > Meine Richtlinien]**.

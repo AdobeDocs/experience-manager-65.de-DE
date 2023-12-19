@@ -9,8 +9,8 @@ role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
 source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 81%
+source-wordcount: '364'
+ht-degree: 90%
 
 ---
 
@@ -28,7 +28,7 @@ Sie können Ihre vorhandene LiveCycle- oder AEM Forms-Installation aktualisieren
 
 Das folgende Diagramm zeigt die verfügbaren Aktualisierungspfade für AEM Forms on OSGi:
 
-![OSGi-Aktualisierungsfluss](do-not-localize/osgi-upgrade-path.png)
+![OSGi-Aktualisierungsablauf](do-not-localize/osgi-upgrade-path.png)
 
 Sie können von hier aus eine direkte Aktualisierung durchführen:
 
@@ -43,7 +43,7 @@ Eine Multihop-Aktualisierung ist möglich von:
 
 Das folgende Diagramm zeigt die verfügbaren Aktualisierungspfade für AEM Forms on JEE:
 
-![JEE-Upgrade 6.5](do-not-localize/jee-upgrade-6-5.png)
+![JEE-Aktualisierung 6.5](do-not-localize/jee-upgrade-6-5.png)
 
 
 Sie können von hier aus eine direkte Aktualisierung durchführen:
@@ -61,7 +61,7 @@ Eine Multihop-Aktualisierung ist möglich von:
 
 AEM 6.5.18.0 Forms on JEE bietet zwei Arten von Installationsprogrammen: [Vollständiges Installationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) und [Patch-Installationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de).
 
-**Vollständiges Installationsprogramm**: Sie können das vollständige Installationsprogramm verwenden, um neue AEM Forms-Instanzen einzurichten oder Upgrades von AEM 6.5.x.x Forms on JEE auf AEM 6.5.18.0 Forms on JEE durchzuführen.
+**Vollinstallationsprogramm**: Sie können das Vollinstallationsprogramm verwenden, um neue AEM Forms-Instanzen einzurichten oder Upgrades von AEM 6.5.x.x Forms on JEE auf AEM 6.5.18.0 Forms on JEE durchzuführen.
 
 **Patch-Installationsprogramm**: Das Patch-Installationsprogramm ist für Kundinnen und Kunden vorgesehen, die bereits AEM 6.5.x.x verwenden. Mit dem Patch-Installationsprogramm können Sie eine Aktualisierung auf die neueste Version von AEM Forms durchführen.
 

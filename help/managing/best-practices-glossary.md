@@ -1,6 +1,6 @@
 ---
 title: Glossar
-description: In diesem Glossar werden (alphabetisch) Details aller lieferbaren Dokumente aus der Projektcheckliste aufgelistet.
+description: Dieses Glossar listet (alphabetisch) alle zu liefernden Dokumente aus der Projekt-Checkliste auf.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
@@ -10,99 +10,99 @@ exl-id: 9672f7a4-82b7-4175-874d-181846115442
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '6922'
-ht-degree: 6%
+ht-degree: 99%
 
 ---
 
 # Glossar{#glossary}
 
-In diesem Glossar werden (alphabetisch) Details aller lieferbaren Dokumente aus dem [Projektprüfliste](/help/managing/best-practices-checklist.md).
+Dieses Glossar listet (alphabetisch) alle zu liefernden Dokumente aus der [Projekt-Checkliste](/help/managing/best-practices-checklist.md) auf.
 
-## Akzeptanz durch die Interessenträger der Wirtschaft {#acceptance-from-business-stakeholders}
+## Akzeptanz der Projektbeteiligten aus den Geschäftsbereichen {#acceptance-from-business-stakeholders}
 
-Die Akzeptanz durch die Interessenträger aus der Wirtschaft bestätigt, dass sie als wichtige Interessenträger mit der Lösung in Einklang stehen und ihre Zustimmung dazu gegeben haben, wie die Geschäftsanforderungen dem Geschäftsfall entsprechen.
+Die Akzeptanz der Projektbeteiligten aus den Geschäftsbereichen bestätigt, dass sie als Hauptbeteiligte mit der Lösung einverstanden sind und zustimmen, dass die Geschäftsanforderungen dem Business-Case entsprechen.
 
 ### Akzeptanztests {#acceptance-tests}
 
-Akzeptanztests werden durchgeführt, wenn eine Anwendung produktionsbereit ist. Die Tests werden von einer Gruppe durchgeführt, die die verschiedenen Arten von Endbenutzern darstellt, wobei Echtzeit-Szenarien verwendet werden.
+Akzeptanztests erfolgen, wenn eine Anwendung produktionsreif ist. Die Tests werden von einer Gruppe durchgeführt, die die verschiedenen Typen von Endbenutzenden auf Basis realer Szenarien repräsentiert.
 
-Mithilfe von Akzeptanztests wird Folgendes bestätigt:
+Mit Akzeptanztests wird Folgendes bestätigt:
 
 * Das Projekt erfüllt die Anforderungen des Kunden.
-* Die Lösung ist bedarfsgerecht.
-* Benutzer akzeptieren die Lösung und können sich vorstellen, mit ihr zu arbeiten.
-* Der Kunde akzeptiert das Projekt.
+* Die Lösung ist für den Zweck geeignet.
+* Die Benutzenden akzeptieren die Lösung und können sich vorstellen, mit ihr zu arbeiten.
+* Die Kundin oder der Kunde akzeptiert das Projekt.
 
-Je früher Sie Ihre Akzeptanztests planen und entwerfen, desto einfacher ist die endgültige Implementierung. Sie sollten gemeinsam mit dem Kunden und Ihrem Qualitätssicherungsteam definiert werden.
+Je früher Sie Ihre Akzeptanztests planen und konzipieren, desto einfacher wird die endgültige Bereitstellung. Sie sollten zusammen mit der Kundin bzw. dem Kunden und Ihrem Qualitätssicherungs-Team definiert werden.
 
-Auch wenn Sie möglicherweise nicht in der Lage sind, alle Details zu Beginn des Projekts zu definieren, sollten Sie die ersten Definitionen diskutieren und vereinbaren. Die Akzeptanztests basieren wahrscheinlich auf den grundlegenden Anforderungen (funktionale und leistungsbezogene Anforderungen).
+Auch wenn Sie vielleicht nicht alle Details gleich zu Beginn des Projekts definieren können, sollten erste Definitionen besprochen und vereinbart werden. Die Akzeptanztests orientieren sich wahrscheinlich an den grundlegenden Anforderungen (an Funktionen und Leistung).
 
-### Zugriff auf das Testsystem koordiniert {#access-to-test-system-coordinated}
+### Koordinierung des Zugriffs auf das Testsystem {#access-to-test-system-coordinated}
 
-Stellen Sie sicher, dass alle Rollen die erforderlichen Systemzugriffsstufen erhalten haben.
+Vergewissern Sie sich, dass allen Rollen die erforderlichen Systemzugriffsrechte gewährt wurden.
 
-### Adobe-Sicherheitscheckliste {#adobe-security-checklist}
+### Sicherheits-Checkliste von Adobe {#adobe-security-checklist}
 
-Die [Adobe-Sicherheitscheckliste](/help/sites-administering/security-checklist.md) ist die offizielle Checkliste, die bereitgestellt wird, um sicherzustellen, dass Adobe Experience Manager (AEM) bei der Installation sicher ist. Es enthält die Sicherheitsmaßnahmen und Überprüfungsschritte, die Sie durchführen müssen, um die Integrität Ihrer Instanz sicherzustellen.
+Die [Sicherheits-Checkliste von Adobe](/help/sites-administering/security-checklist.md) ist die offizielle Checkliste, um sicherzustellen, dass Adobe Experience Manager (AEM) bei der Installation sicher ist. Sie enthält die Sicherheitsmaßnahmen und Überprüfungsschritte, die Sie durchführen müssen, um die Integrität Ihrer Instanz zu gewährleisten.
 
-### Einrichten von Adobe Support-Portal-Projekten {#adobe-support-portal-project-set-up}
+### Einrichtung eines Projekts im Adobe-Support-Portal {#adobe-support-portal-project-set-up}
 
-Das Adobe Support-Portal ermöglicht es Implementierungspartnern und Kunden, die AEM-Implementierung als Projekt im Support-Portal einzurichten.
+Das Adobe-Support-Portal ermöglicht es Implementierungspartnern und Kundinnen bzw. Kunden, die AEM-Implementierung im Support-Portal als Projekt einzurichten.
 
-Details können registriert werden, z. B. über die implementierten Technologien und Versionen. Diese sorgen für Transparenz zwischen dem Kunden und der Adobe.
+Details können registriert werden, z. B. über die implementierten Technologien und Versionen. Diese sorgen für Transparenz zwischen der Kundenseite und Adobe.
 
-### AEM Administratorschulung {#aem-administrator-training}
+### AEM-Administratorschulung {#aem-administrator-training}
 
-Schulung für Verwaltungsmitarbeiter der Lösung. Siehe [Adobe-Schulungsdienste](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) für weitere Informationen.
+Hierbei handelt es sich um Schulungen für die Mitarbeitenden, die die Lösung verwalten. Weitere Informationen finden Sie unter [Adobe-Schulungen](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager).
 
-### AEM Authoring-Schulung {#aem-author-training}
+### AEM-Autorenschulung {#aem-author-training}
 
-Schulung für Mitarbeiter, die Inhalte für die Lösung erstellen (Authoring). Siehe [Adobe-Schulungsdienste](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) für weitere Informationen.
+Hierbei handelt es sich um Schulungen für die Mitarbeitenden, die Inhalte für die Lösung erstellen (Authoring). Weitere Informationen finden Sie unter [Adobe-Schulungen](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager).
 
-### AEM Zertifizierungsprüfung {#aem-certification-exam}
+### AEM-Zertifizierungsprüfung {#aem-certification-exam}
 
-Stellen Sie sicher, dass die entsprechenden Personen registriert sind, um die relevanten [Zertifizierungsprüfungen](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+Stellen Sie sicher, dass die entsprechenden Rollen für die jeweiligen [Zertifizierungsprüfungen](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) angemeldet sind.
 
-### AEM zertifiziert {#aem-certified}
+### AEM-zertifiziert {#aem-certified}
 
-Stellen Sie sicher, dass die entsprechende Person die entsprechenden [Zertifizierungsprüfungen](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+Stellen Sie sicher, dass die entsprechenden Rollen die jeweiligen [Zertifizierungsprüfungen](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) bestanden haben.
 
-### AEM technische Schulung {#aem-technical-training}
+### Technische Schulungen zu AEM {#aem-technical-training}
 
-Bereitstellung technischer Schulungen für die entsprechende Person, z. B. Entwickler, Architekten, Ingenieure und Geschäftsleute.
+Bieten Sie technische Schulungen für die entsprechenden Rollen an, z. B. für Entwickelnde, Architektinnen und Architekten, Ingenieurinnen und Ingenieure sowie kaufmännische Fachleute.
 
-### Vereinbarung über KPIs, die als Ziele für das Projekt definiert wurden {#agreement-on-kpis-defined-as-goals-for-the-project}
+### Vereinbarung zu den KPIs, die als Projektziele definiert sind {#agreement-on-kpis-defined-as-goals-for-the-project}
 
-Key Performance Indicators (KPIs) helfen einer Organisation, den Fortschritt in Bezug auf organisatorische Ziele zu definieren und zu messen. Sobald eine Organisation ihren Auftrag analysiert und ihre Ziele definiert hat, muss sie den Fortschritt in Richtung dieser Ziele messen. KPIs bieten einen Messmechanismus.
+Key Performance Indicators (KPIs) helfen einer Organisation, Fortschritte beim Erreichen von Organisationszielen zu definieren und zu messen. Sobald eine Organisation ihre Aufgabenstellung analysiert und Ziele definiert hat, muss sie den Fortschritt mit Blick auf diese Ziele messen. KPIs dienen dabei als Messmechanismus.
 
-### Business- und Performance-KPIs ausrichten {#align-business-and-performance-kpis}
+### Abstimmung von Geschäfts- und Leistungs-KPIs {#align-business-and-performance-kpis}
 
-Die Abstimmung Ihrer Geschäfts- und Leistungs-Key Performance Indicators (KPIs) trägt dazu bei, alle beteiligten Personen und Prozesse innerhalb des Unternehmens zusammenzuführen. Dies wiederum trägt dazu bei, die Zeit und den Aufwand zu reduzieren, die zum Erreichen der Geschäftsziele und zur Erfüllung des vorgeschlagenen Zwecks erforderlich sind.
+Die Abstimmung Ihrer Geschäfts- und Leistungs-KPIs hilft, alle beteiligten Personen und Prozesse innerhalb der Organisation zusammenzubringen. Dies wiederum trägt dazu bei, den Zeit- und Arbeitsaufwand zum Erreichen der Geschäftsziele und Erfüllen des angestrebten Zwecks zu verringern.
 
 ### Abstimmung der Inhaltsarchitektur mit KPIs {#alignment-of-content-architecture-with-kpis}
 
-Stellen Sie sicher, dass die vorgeschlagene Inhaltsarchitektur mit den relevanten KPIs (Key Performance Indicators) abgestimmt ist.
+Stellen Sie sicher, dass die vorgeschlagene Inhaltsarchitektur mit den relevanten Key Performance Indicators (KPIs) abgestimmt ist.
 
-### Ausrichtung der Kunden-Roadmap an der Projekt-Timeline {#alignment-of-the-customer-roadmap-with-project-timeline}
+### Abstimmung der Kunden-Roadmap mit der Projekt-Timeline {#alignment-of-the-customer-roadmap-with-project-timeline}
 
-Die Customer Roadmap besteht aus übergeordneten Meilensteinen und Geschäftszielen. Die Timeline des Projekts muss dieser Strategie entsprechen und sie mit ihr in Einklang bringen, sodass alle potenziellen Risiken und/oder Abweichungen hervorgehoben und verfolgt werden müssen.
+Die Kunden-Roadmap besteht aus allgemeinen Meilensteinen und Geschäftszielen. Die Projekt-Timeline muss sich an diese Strategie halten und mit ihr in Einklang stehen, sodass mögliche Risiken und/oder Abweichungen aufgezeigt und nachverfolgt werden müssen.
 
 ### Definition der Anwendungsarchitektur {#application-architecture-definition}
 
 Die [Anwendungsarchitektur](/help/managing/best-practices.md#development-preparation) muss das Verhalten der geplanten Anwendungen klar definieren.
 
-Der Schwerpunkt liegt auf Folgendem:
+Ihr Fokus liegt auf Folgendem:
 
-* Interaktion der Benutzer untereinander und mit den Benutzern.
-* Die Daten, die von Anwendungen genutzt und erzeugt werden sollen, anstatt ihrer internen Struktur.
+* Interaktion der Anwendungen miteinander und mit Benutzenden
+* Daten, die von den Anwendungen genutzt und produziert werden sollen, nicht ihre interne Struktur
 
-### Anwendungsspezifische Wartungsaufgaben definiert {#application-specific-maintenance-tasks-defined}
+### Definition anwendungsspezifischer Wartungsaufgaben {#application-specific-maintenance-tasks-defined}
 
-Zusätzlich zu den standardmäßigen Adobe Experience Manager (AEM)-Wartungsaufgaben müssen Sie weitere Betriebsaufgaben definieren, die für die fortlaufende Wartung der Lösung ausgeführt werden müssen.
+Neben den standardmäßigen Wartungsaufgaben für Adobe Experience Manager (AEM) müssen Sie weitere Betriebsaufgaben definieren, die für die laufende Wartung der Lösung ausgeführt werden müssen.
 
-### Angemessenes Schulungspersonal {#appropriately-trained-staff}
+### Entsprechend geschultes Personal {#appropriately-trained-staff}
 
-Stellen Sie sicher, dass Ihr Team aus Mitarbeitern mit entsprechender Schulung besteht. Für Projektteams wird empfohlen, über Folgendes zu verfügen:
+Stellen Sie sicher, dass Ihr Team aus Mitarbeitenden mit entsprechender Qualifikation besteht. Für Projektteams wird empfohlen, über Folgendes zu verfügen:
 
 * Mindestens ein AEM-zertifizierter Entwicklungsleiter
 * Mindestens ein AEM-zertifizierter Architekt
@@ -110,7 +110,7 @@ Stellen Sie sicher, dass Ihr Team aus Mitarbeitern mit entsprechender Schulung b
 
 ### Architekturdiagramm {#architecture-diagram}
 
-Das Architekturdiagramm ist eine grafische Darstellung der Architektur. Er umfasst die Darstellung von:
+Das Architekturdiagramm ist eine grafische Darstellung der Architektur. Es zeigt Folgendes:
 
 * die Konzepte
 * ihre Grundsätze
@@ -118,163 +118,163 @@ Das Architekturdiagramm ist eine grafische Darstellung der Architektur. Er umfas
 
 ### Architekturentwurf {#architecture-draft}
 
-Dies bietet einen allgemeinen Überblick über die System- und Lösungsarchitektur. In dieser Phase wird der Entwurf zu einem späteren Zeitpunkt überarbeitet und verfeinert.
+Hierbei handelt es sich um einen allgemeinen Überblick über die System- und Lösungsarchitektur. In dieser Phase ist dies ein Entwurf, der zu einem späteren Zeitpunkt überprüft und präzisiert wird.
 
-### Abnahme des Architekturüberprüfungsgremiums {#architecture-review-board-sign-off}
+### Genehmigung durch die Architekturüberprüfungskommission {#architecture-review-board-sign-off}
 
-Der Architekturüberprüfungsausschuss ist ein organisationsübergreifendes Gremium, das:
+Die Architekturüberprüfungskommission ist ein abteilungsübergreifendes Gremium mit folgenden Aufgaben:
 
 * Überwachung der Umsetzung einer abgestimmten Strategie
-* die Einhaltung von Systemen
+* Sicherstellen der Kompatibilität in Systemen
 
-Die Überprüfungskommission muss für alle Mitwirkenden an der Architektur repräsentativ sein. In der Regel bestehen sie aus einer Gruppe von Führungskräften, die für die Überprüfung und Wartung der Gesamtarchitektur verantwortlich sind.
+Die Überprüfungskommission muss für alle Mitwirkenden an der Architektur repräsentativ sein. Sie besteht in der Regel aus einer Gruppe von Führungskräften, die für die Überprüfung und Pflege der Gesamtarchitektur verantwortlich sind.
 
-### Automatisierte Test-Suite, die für reale Inhalte und Ergebnisse im Vergleich zu KPIs angepasst ist {#automated-test-suite-adapted-for-real-content-and-results-compared-to-kpis}
+### Automatisierte Testsuite, die an reale Inhalte und Ergebnisse im Vergleich zu KPIs angepasst ist {#automated-test-suite-adapted-for-real-content-and-results-compared-to-kpis}
 
-Automatisierungsskripte und grundlegende automatisierte Anwendungsfälle:
+Automatisierungsskripte und einfache automatisierte Anwendungsfälle:
 
-* für Produktionsinhalte angepasst
-* anhand der KPIs geprüft
+* sind an Produktionsinhalte angepasst
+* werden mit KPIs verglichen
 
-### Automatisierte Teststrategie {#automated-testing-strategy}
+### Strategie für automatisierte Tests {#automated-testing-strategy}
 
-Diese Strategie definiert ein Framework für wiederverwendbare automatisierte Skripte zusammen mit dem vom Qualitätssicherungsteam (QA) geplanten Ansatz. Darin wird der Gesamtplan für Automatisierungstests erläutert, um Folgendes sicherzustellen:
+Diese Strategie definiert ein Framework für wiederverwendbare automatisierte Skripte im Zusammenspiel mit dem vom Qualitätssicherungs-Team geplanten Ansatz. Sie skizziert den allgemeinen Plan für Automatisierungstests, um Folgendes sicherzustellen:
 
-* höhere Kapitalrendite (ROI)
-* Mehr Testabdeckung
-* erhöhte Testzuverlässigkeit mit Qualitätswiederholungen
+* einen höheren ROI
+* größere Testabdeckung
+* höhere Testzuverlässigkeit mit Qualitätswiederholbarkeit
 
-### Automatisierte Teststrategie, die mit realistischer und erwarteter Auslastung validiert wurde {#automated-testing-strategy-validated-against-realistic-and-expected-load}
+### Strategie für automatisierte Tests, die mit realistischer und erwarteter Last validiert wurde {#automated-testing-strategy-validated-against-realistic-and-expected-load}
 
-Die automatisierte Teststrategie muss entsprechend dem Inhalt und der erwarteten Belastung der Lösung validiert und angepasst werden.
+Die Strategie für automatisierte Tests muss validiert und an den Inhalt und die zu erwartende Last der Lösung angepasst werden.
 
 ### Automatisierungsstrategie {#automation-strategy}
 
-Die Automatisierung von Bereitstellungen sorgt für eine schnellere und konsistente Bereitstellung. In der Automatisierungsstrategie wird die Konfiguration solcher Automatisierungsmechanismen beschrieben, einschließlich:
+Die Automatisierung von Bereitstellungen sorgt für Beschleunigung und Konsistenz. Die Automatisierungsstrategie beschreibt die Konfiguration von Automatisierungsmechanismen und umfasst u. a. Folgendes:
 
 * Häufigkeit
-* Zu verwendende Tools
-* Umgebungen, die für bereitgestellt werden sollen
+* zu verwendende Tools
+* Umgebungen, in denen die Bereitstellung erfolgen soll
 
 ### Kenntnis des Kommunikationsplans {#aware-of-communication-plan}
 
-Das gesamte Projektteam und alle Interessengruppen müssen bestätigen, dass sie über Folgendes informiert sind:
+Das gesamte Projekt-Team und alle Projektbeteiligten müssen bestätigen, dass ihnen Folgendes bekannt ist:
 
 * Berichtsstruktur
-* Meldefrist
+* Berichtsrhythmus
 * Kommunikationskanäle
 
-### Kenntnis der Erfolgsdefinitionen und -kriterien {#aware-of-success-definitions-and-criteria}
+### Kenntnis der Definitionen und Kriterien für Erfolg {#aware-of-success-definitions-and-criteria}
 
-Das gesamte Projektteam und alle Interessengruppen müssen bestätigen, dass sie über Folgendes informiert sind:
+Das gesamte Projekt-Team und alle Projektbeteiligten müssen bestätigen, dass ihnen Folgendes bekannt ist:
 
 * Definitionen von Erfolg
-* Erfolgskriterien
+* Kriterien für Erfolg
 
 ### Sicherungs- und Wiederherstellungskonzept {#backup-and-restore-concept}
 
-Das Sicherungs- und Wiederherstellungskonzept beschreibt die technischen Funktionen, die in der Lösung implementiert werden. Es wird von den Sicherungs- und Wiederherstellungsrichtlinien des Unternehmens verlangt.
+Das Sicherungs- und Wiederherstellungskonzept beschreibt die technische Funktionalität, die in der Lösung implementiert wird. Es wird von den Sicherungs- und Wiederherstellungsrichtlinien des Unternehmens verlangt.
 
-### Testen von Sicherung und Wiederherstellung {#backup-and-restore-tested}
+### Erfolgreicher Test von Sicherung und Wiederherstellung {#backup-and-restore-tested}
 
-Ein vollständiger End-to-End-Test basierend auf dem Sicherungs- und Wiederherstellungskonzept.
+Hierbei handelt es sich um einen vollständigen, durchgängigen Test des Sicherungs- und Wiederherstellungskonzepts.
 
-### Geschäftsszenarios {#business-case-s}
+### Business-Cases {#business-case-s}
 
-In einem Geschäftsfalldokument werden die Argumente vorgestellt, die im Zusammenhang mit dem Ergreifen der Aktion, dem Ergreifen alternativer Maßnahmen (falls verfügbar) oder dem Nichtergreifen von Maßnahmen stehen. Die Argumente sollten ausgewogen sein, auf konkreten Fakten (wo immer möglich/relevant) beruhen und sowohl Nutzen als auch Risiken für alle Fälle hervorheben.
+Ein Business-Case-Dokument enthält die Argumente für das Ergreifen der Maßnahme, das Ergreifen alternativer Maßnahmen (falls vorhanden) oder das Nichtergreifen von Maßnahmen. Die Argumente sollten ausgewogen sein, sich auf konkrete Fakten stützen (wo immer möglich/relevant) und für alle Fälle sowohl den Nutzen als auch die Risiken aufzeigen.
 
-Ein Falldokument sollte eine klare Definition aller Optionen enthalten und mit einem überzeugenden Argument für die Umsetzung der vorgeschlagenen Lösung schließen.
+Ein Business-Case-Dokument sollte eine klare Definition aller Optionen enthalten und mit einem überzeugenden Argument für die Umsetzung der vorgeschlagenen Lösung schließen.
 
-### Business Analyst versteht Projektumfang und Erwartungen {#business-analyst-understands-scope-of-project-and-expectations}
+### Vertrautheit der Geschäftsanalystin bzw. des Geschäftsanalysten mit dem Projektumfang und den Erwartungen {#business-analyst-understands-scope-of-project-and-expectations}
 
-Der Business Analyst sollte bestätigen, dass er Folgendes vollständig versteht:
+Geschäftsanalystinnen und Geschäftsanalysten müssen bestätigen, dass sie Folgendes vollständig verstehen:
 
 * Umfang des Projekts
 * alle Kundenerwartungen
-* dass dies die Grundlage für alle Entscheidungen ist, die pro Person und pro Projektphase getroffen werden
+* dass dies die Grundlage aller Entscheidungen ist, die pro Rolle und Phase im Projekt getroffen werden
 
 ### Geschäfts-KPIs {#business-kpis}
 
 Unternehmen verwenden Key Performance Indicators (KPIs), um ihren Erfolg bei der Erreichung von Zielen zu bewerten.
 
-Geschäfts-KPIs definieren messbare Werte, die zeigen, wie effektiv ein Unternehmen wichtige Geschäftsziele erreicht. Es ist wichtig, KPIs auszuwählen, die für Ihr Unternehmen/Szenario geeignet sind, wobei klar definiert sein sollte, um was für KPIs es sich handelt, wie sie verwendet werden und von wem.
+Geschäfts-KPIs definieren messbare Werte, die aufzeigen, wie effektiv ein Unternehmen wichtige Geschäftsziele erreicht. Es ist wichtig, KPIs auszuwählen, die für Ihr Unternehmen/Szenario geeignet sind, wobei klar definiert sein sollte, um was für KPIs es sich handelt, wie sie verwendet werden und von wem.
 
-### Dokumentation zu Geschäftsanforderungen {#business-requirements-documentation}
+### Dokumentation der Geschäftsanforderungen {#business-requirements-documentation}
 
-In einem Dokument zu Geschäftsanforderungen (Business Requirements Document, BRD) wird die Geschäftslösung für ein Projekt beschrieben, das die Geschäftsanforderungen und Erwartungen des Kunden klar beschreibt. Die BRD unterscheidet auch zwischen der Geschäftslösung und der technischen Lösung.
+Ein Geschäftsanforderungsdokument (Business Requirements Document, BRD) beschreibt die Geschäftslösung für ein Projekt und liefert eine klare Präzisierung der Geschäftsanforderungen und -erwartungen auf Kundenseite. Es unterscheidet auch zwischen der geschäftlichen und der technischen Lösung.
 
 Bei der Prüfung der Unternehmenslösung sollte das Geschäftsanforderungsdokument (BRD) die Frage beantworten:
 „Was will das Unternehmen erreichen?“
 
-### Abnahme der Geschäftsabschlüsse bei allen erforderlichen Anpassungen der identifizierten und an den ROI- und KPI-Erwartungen angepassten Lösung oder Architektur {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
+### Genehmigung durch die Geschäftsführung bei allen erforderlichen Anpassungen der Lösung oder Architektur entsprechend den ermittelten ROI- und KPI-Erwartungen {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
-Die Prozesse der Risikobewertung und Penetrationstests können Probleme und Ergebnisse hervorbringen, die in der Architektur oder Entwicklung der Lösung angesprochen werden müssen.
+Die Prozesse der Risikobewertung und Penetrationstests können zu Problemen und Ergebnissen führen, die in der Architektur oder Entwicklung der Lösung aufgegriffen werden müssen.
 
-Alle aus diesen Prozessen resultierenden Anpassungen müssen vom Unternehmen überprüft und genehmigt und mit den Gesamtzielen abgeglichen werden.
+Die aus diesen Prozessen resultierenden Anpassungen müssen vom Unternehmen überprüft und genehmigt und an den Gesamtzielen gemessen werden.
 
 ### Caching-Strategie {#caching-strategy}
 
-In der Cachestrategie wird beschrieben, was für den Endbenutzer zwischengespeichert wird. Sie muss mit den Leistungs-KPIs konform sein.
+Die Caching-Strategie beschreibt, was für Endbenutzende zwischengespeichert wird. Sie muss mit den Leistung-KPIs konform sein.
 
-Beispielsweise können Elemente wie Bilder, JavaScript und andere Serverdateien zwischengespeichert werden, um die Leistung einer Lösung zu verbessern.
+Beispielsweise können Elemente wie Bilder, JavaScript und andere Server-Dateien zwischengespeichert werden, um die Leistung einer Lösung zu verbessern.
 
 ### Codierungsrichtlinien  {#coding-guidelines}
 
-Die Kodierungsrichtlinien definieren grundlegende Prinzipien, die die Entwickler bei der Entwicklung der Lösung beachten sollten. Dazu gehören unter anderem:
+Die Kodierungsrichtlinien definieren Grundprinzipien, an die sich die Entwickelnden bei der Entwicklung der Lösung halten müssen. Dazu zählen u. a.:
 
-* Benennungskonventionen
-* Dienstnutzung
-* Bibliotheksverwendung
+* Namenskonventionen
+* Nutzung von Diensten
+* Nutzung von Bibliotheken
 
-### Betriebshandbuch für Kommunikation {#communicate-operations-manual}
+### Verteilen des Betriebshandbuchs {#communicate-operations-manual}
 
-Stellen Sie sicher, dass alle entsprechenden Rollen das Betriebshandbuch erhalten haben.
+Stellen Sie sicher, dass alle relevanten Rollen das Betriebshandbuch erhalten.
 
-### Bericht zu Leistungstests für Kommunikation {#communicate-performance-test-report}
+### Verteilen des Leistungstestberichts {#communicate-performance-test-report}
 
-Stellen Sie sicher, dass alle entsprechenden Rollen den Leistungstestbericht erhalten haben.
+Stellen Sie sicher, dass alle relevanten Rollen den Leistungstestbericht erhalten.
 
-### Versionshinweise kommunizieren {#communicate-release-notes}
+### Verteilen der Versionshinweise {#communicate-release-notes}
 
 Stellen Sie sicher, dass alle relevanten Rollen die Versionshinweise erhalten haben.
 
-### Dem Team Umfang und Erwartungen kommunizieren {#communicate-scope-and-expectations-to-team}
+### Informieren des Teams über den Projektumfang und Erwartungen {#communicate-scope-and-expectations-to-team}
 
-Stellen Sie sicher, dass das Projekt-Team den Projektumfang und die Bereitstellungsanforderungen vollständig kennt und mit ihnen im Einklang steht.
+Stellen Sie sicher, dass das Projekt-Team den Projektumfang und die Liefererwartungen genau kennt und sich darauf einstellt.
 
-### Kommunikation von Schulungsmaterial und Benutzerhandbüchern {#communicate-training-materials-and-user-guides}
+### Informieren über Schulungsmaterialien und Benutzerhandbücher {#communicate-training-materials-and-user-guides}
 
-Stellen Sie sicher, dass alle entsprechenden Rollen die Schulungsmaterialien und Benutzerhandbücher erhalten.
+Stellen Sie sicher, dass alle relevanten Rollen die Schulungsmaterialien und Benutzerhandbücher erhalten.
 
 ### Einhaltung der Kundensicherheitsanforderungen {#compliance-with-customer-security-requirements}
 
-Stellen Sie sicher, dass alle Sicherheitsanforderungen des Kunden erfüllt sind.
+Stellen Sie sicher, dass alle Sicherheitsanforderungen auf Kundenseite erfüllt sind.
 
 ### Einhaltung des Sicherheitskonzepts {#compliance-with-security-concept}
 
-Stellen Sie sicher, dass das Sicherheitskonzept vorhanden ist.
+Stellen Sie sicher, dass das Sicherheitskonzept eingehalten wird.
 
-### Beziehungskonzept für Komponenten und Vorlagen {#components-and-templates-relationship-concept}
+### Konzept der Beziehungen zwischen Komponenten und Vorlagen {#components-and-templates-relationship-concept}
 
-Der Entwurf der Vorlagen und Komponenten, die in der neuen Anwendung verwendet werden. Umfasst unter anderem Details wie Vererbungsregeln, Berechtigungen und Beziehungen.
+Die Übersicht über die Vorlagen und Komponenten, die in der neuen Anwendung verwendet werden. Enthält u. a. Details zu Vererbungsregeln, Berechtigungen und Beziehungen.
 
-### Spezifizierung der Beziehungen zwischen Komponenten und Vorlagen {#components-and-templates-relationship-specification}
+### Angabe der Beziehungen zwischen Komponenten und Vorlagen {#components-and-templates-relationship-specification}
 
-Details zum Beziehungskonzept für Komponenten und Vorlagen.
+Details zum Konzept der Beziehungen zwischen Komponenten und Vorlagen.
 
-### Komponentenspezifikation {#components-specification}
+### Spezifikationen von Komponenten {#components-specification}
 
-Spezifikationsdetails für jede der zu implementierenden Komponenten.
+Spezifikationsdetails zu allen Komponenten, die implementiert werden sollen.
 
-### Konzept für die Nachahmung externer Schnittstellen {#concept-for-mock-ups-of-external-interfaces}
+### Konzept für Modelle externer Schnittstellen {#concept-for-mock-ups-of-external-interfaces}
 
-Das Konzept der Entwicklung mit und des Testens externer Schnittstellen, die für Entwicklungs- oder Testumgebungen möglicherweise nicht offen/verfügbar sind.
+Das Konzept für Entwicklung und Testen von externen Schnittstellen, die für die Entwicklungs- oder Testumgebungen möglicherweise nicht zugänglich bzw. verfügbar sind.
 
-Planen/implementieren Sie Modelle dieser Schnittstellen, um sicherzustellen, dass Tests dem produktionsähnlichen Verhalten möglichst nahe kommen.
+Planen und implementieren Sie Modelle dieser Schnittstellen, um sicherzustellen, dass die Tests so nah wie möglich am produktionsgemäßen Verhalten sind.
 
 ### Dokument zur Inhaltsarchitektur {#content-architecture-document}
 
-Dokumentation der vorgeschlagenen Architektur des Inhalts. Die Einzelheiten sollten unter anderem Folgendes umfassen:
+Dokumentation der geplanten Architektur des Inhalts. Die Details sollten u. a. Folgendes umfassen:
 
 * Inhaltsstruktur
 * Tagging-Konzepte
@@ -282,77 +282,77 @@ Dokumentation der vorgeschlagenen Architektur des Inhalts. Die Einzelheiten soll
 
 ### Für die Migration validierte Inhalte {#content-validated-for-migration}
 
-Der alte Systeminhalt wird geprüft und der ausgewählte Inhalt wird für die Migration zur neuen Lösung validiert.
+Die veralteten Systeminhalte werden überprüft und die ausgewählten Inhalte für die Migration in die neue Lösung validiert.
 
 ### Vertragsentwurf {#contract-draft}
 
-Ein erster Entwurf des Rechtsvertrags.
+Ein erster Entwurf des rechtsgültigen Vertrags.
 
 ### Aktuelle Inhaltsstruktur und -format {#current-content-structure-and-format}
 
-Dokumentation der aktuellen Inhaltsarchitektur und -format. Damit wird die zukünftige Inhaltsarchitektur generiert. Es wird auch für das Migrationskonzept verwendet.
+Dokumentation der aktuellen Inhaltsarchitektur und -format. Damit wird die zukünftige Inhaltsarchitektur generiert. Sie wird auch für das Migrationskonzept verwendet.
 
-### Richtlinie zur Kundensicherung und Wiederherstellung {#customer-backup-and-restore-policy}
+### Sicherungs- und Wiederherstellungsrichtlinien der Kundin bzw. des Kunden {#customer-backup-and-restore-policy}
 
-Richtlinien des Kunden bezüglich:
+Richtlinien der Kundin bzw. des Kunden bezüglich:
 
-* Sichern von Prozessen für sowohl Daten als auch Lösung
+* Sicherungsprozesse für sowohl Daten als auch die Lösung
 * Speicherung der Sicherung
-* Bestätigung, dass das Backup erwartungsgemäß funktioniert
-* Wiederherstellung, wenn ein Fehler vorliegt
+* Bestätigung, dass die Sicherung wie erwartet funktioniert
+* Wiederherstellung nach einem Ausfall
 
-### Richtlinien für die Kundenkodierung {#customer-coding-guidelines}
+### Kodierungsrichtlinien der Kundin bzw. des Kunden {#customer-coding-guidelines}
 
-Alle Richtlinien/Anforderungen des Kunden, wie die Entwicklung erfolgen soll.
+Richtlinien/Anforderungen der Kundin bzw. des Kunden, wie die Entwicklung erfolgen soll.
 
-### Bereitstellungs-/Veröffentlichungsrichtlinien des Kunden {#customer-deployment-release-policies}
+### Bereitstellungs-/Freigaberichtlinien der Kundin bzw. des Kunden {#customer-deployment-release-policies}
 
-Richtlinien des Kunden, die definieren, wie und wann Bereitstellungen/Veröffentlichungen vorgenommen werden können.
+Richtlinien der Kundin bzw. des Kunden, die festlegen, wie und wann Bereitstellungen/Freigaben erfolgen können.
 
-Dazu gehören häufig Zeitpläne, Zeitplan und Abmeldeanforderungen.
+Dazu gehören oft Zeitpläne und Termin- und Abnahmeanforderungen.
 
-### Richtlinien oder Anforderungen für die Kundenüberwachung {#customer-monitoring-policies-or-requirements}
+### Überwachungsrichtlinien oder -anforderungen der Kundin bzw. des Kunden {#customer-monitoring-policies-or-requirements}
 
-Kundenrichtlinien und -anforderungen zu dem, was überwacht werden soll. Diese Empfehlungen ergänzen alle Empfehlungen, die im Überwachungskonzept festgelegt sind.
+Richtlinien und Anforderungen der Kundin bzw. des Kunden, was überwacht werden soll. Diese ergänzen die im Überwachungskonzept genannten Empfehlungen.
 
-### Versionsplanung für die Kundenproduktion {#customer-production-release-schedule}
+### Zeitplan für die Produktionsfreigabe der Kundin bzw. des Kunden {#customer-production-release-schedule}
 
-Der Zeitplan, der vom Kunden für Versionen in den Produktionsumgebungen definiert wird.
+Der Zeitplan, der von der Kundin bzw. vom Kunden für die Freigabe an die Produktionsumgebung definiert wird.
 
-### Richtlinien und Anforderungen für Kundenberichte {#customer-reporting-policies-and-requirements}
+### Richtlinien der Anforderungen der Kundin bzw. des Kunden für die Berichterstellung {#customer-reporting-policies-and-requirements}
 
-Alle Richtlinien, Anforderungen oder beides, die der Kunde in Bezug auf die Berichterstellung hat. Dazu können gehören:
+Richtlinien und/oder Anforderungen, die die Kundin bzw. der Kunde in Bezug auf die Berichterstellung hat. Diese können Folgendes umfassen:
 
-* wie oft bestimmte Berichte bereitgestellt werden sollten
-* Format für bestimmte Berichte
-* Besondere Anforderungen
+* Häufigkeit der Übermittlung bestimmter Berichte
+* Format bestimmter Berichte
+* spezielle Anforderungen
 
 ### Kunden-Roadmap {#customer-roadmap}
 
-Erstellung eines Fahrplans für die wichtigsten technologischen und geschäftlichen Meilensteine. Diese Roadmap wird dann dem Kunden mitgeteilt.
+Formulieren Sie eine Roadmap der wichtigsten Meilensteine, die umgesetzt werden müssen, sowohl in technologischer als auch geschäftlicher Hinsicht. Diese Roadmap wird dann der Kundin bzw. dem Kunden übergeben.
 
-### Kundensicherheitsrichtlinien {#customer-security-policies}
+### Kundenseitige Sicherheitsrichtlinien {#customer-security-policies}
 
-Der Kunde (Business und IT) verfügt über Richtlinien, die die erforderlichen Sicherheitsstufen für die Lösung definieren. Dazu können gehören:
+Auf Kundenseite (kaufmännischer und IT-Bereich) sind Richtlinien vorhanden, die die erforderlichen Sicherheitsstufen für die Lösung definieren. Diese können Folgendes umfassen:
 
-* Anforderungen an die Übergabe einer Risikobewertung.
-* Anforderungen an Durchdringungstests.
-* Alle spezifischen Sicherheitsanforderungen, wie z. B. die Maskierung aller Eingabefelder, die Verschlüsselungsnutzung (SSL), Zertifikate sowie Authentifizierung und Sitzungserstellung.
+* Anforderungen für das Bestehen einer Risikobewertung
+* Anforderungen für das Bestehen von Penetrationstests
+* alle spezifischen Sicherheitsanforderungen, wie z. B. das Maskieren aller Eingabefelder, die Verwendung von Verschlüsselung (SSL), Zertifikate, Authentifizierung und Sitzungsaufbau
 
-### Richtlinien für Kundenspezifikationen {#customer-specification-guidelines}
+### Kundenseitige Spezifikationsrichtlinien {#customer-specification-guidelines}
 
-Alle Richtlinien des Kunden, die sich auf Format, Bereitstellung und Abnahme von Spezifikationen beziehen.
+Hierbei handelt es sich um alle kundenseitig vorgegebenen Richtlinien in Bezug auf Format, Lieferung und Abnahme der Spezifikationen.
 
-### Kundentestberichte {#customer-test-reports}
+### Kundenseitige Testberichte {#customer-test-reports}
 
-Berichte des Kunden an den Qualitätsleiter während des Zeitraums des Benutzerakzeptanztests (UAT).
+Hierbei handelt es sich um kundenseitige Berichte an die Leitung der Qualitätssicherung im Verlauf der Benutzerakzeptanztests.
 
-### Dokumentierte Anpassungen und Hotfixes für Upgrades {#customizations-and-hotfixes-that-affect-upgrades-documented}
+### Dokumentation von Anpassungen und Hotfixes mit Auswirkungen auf Upgrades {#customizations-and-hotfixes-that-affect-upgrades-documented}
 
-Alle angewendeten Anpassungen und/oder angewendeten Hotfixes müssen dokumentiert werden, da sie sich auf zukünftige Upgrades auswirken können:
+Anpassungen und/oder angewendete Hotfixes müssen dokumentiert werden, da sie sich auf künftige Upgrades auswirken können:
 
-* AEM können stark an geschäftliche Anforderungen angepasst werden. Alle Anpassungen, die sich auf Upgrades auswirken können, müssen vollständig dokumentiert werden. Zum Beispiel alle wichtigen Änderungen an der Benutzeroberfläche (UI) von AEM.
-* Alle für die aktuelle Lösung erforderlichen Aktualisierungen müssen vollständig dokumentiert sein. Dazu können gehören:
+* AEM kann weitgehend an die jeweiligen Geschäftsanforderungen angepasst werden. Alle Anpassungen, die sich auf Upgrades auswirken können, müssen vollständig dokumentiert werden. Zum Beispiel alle wichtigen Änderungen an der Benutzeroberfläche (UI) von AEM.
+* Alle Aktualisierungen, die für die aktuelle Lösung erforderlich sind, müssen vollständig dokumentiert werden. Dazu zählen:
 
    * Cumulative Fix Packs (CFP)
    * Service Packs (SP)
@@ -361,99 +361,99 @@ Alle angewendeten Anpassungen und/oder angewendeten Hotfixes müssen dokumentier
 
 ### Täglicher Bericht zum Benutzerakzeptanztest {#daily-user-acceptance-test-report}
 
-Berichte oder Sitzungen, die aus dem Benutzerakzeptanztest (UAT) resultieren. Sie sollten detailliert sein:
+Dies umfasst Berichte oder Besprechungen als Folge von Benutzerakzeptanztests (UAT). Sie sollten Details zu Folgendem enthalten:
 
-* die gemeldeten Probleme
-* Prioritätensetzung bei diesen Fragen
+* gemeldeten Problemen
+* Priorisierung dieser Probleme
 
-### Standardsicherheit aktiviert {#default-security-enabled}
+### Aktivierung der Standardsicherheit {#default-security-enabled}
 
-Stellen Sie sicher, dass die standardmäßigen Sicherheitseinstellungen für AEM aktiviert/implementiert wurden.
+Vergewissern Sie sich, dass die Standardsicherheitseinstellungen für AEM aktiviert bzw. implementiert wurden.
 
-### Bereitstellungs-/Veröffentlichungsrichtlinien und -prozesse {#deployment-release-policies-and-processes}
+### Bereitstellungs-/Freigaberichtlinien und -prozesse {#deployment-release-policies-and-processes}
 
-Formalisierte Richtlinien, die sowohl die Bereitstellung als auch die Versionen Ihres Projekts abdecken. Dazu können gehören:
+Hierbei handelt es sich um festgelegte Richtlinien, die sowohl die Bereitstellung als auch die Freigaben Ihres Projekts abdecken. Diese können Folgendes umfassen:
 
-* Zeit für Versionen
+* Zeitpunkte für Freigaben
 * Urlaubsplanung
 * Häufigkeit
-* und kann von der betreffenden Umgebung abhängen
+* bei möglicher Abhängigkeit von der jeweiligen Umgebung
 
-### Bereitstellungsintervall festgelegt {#deployment-cadence-established}
+### Festlegung des Bereitstellungsrhythmus {#deployment-cadence-established}
 
-Definieren Sie die erforderliche Häufigkeit von Bereitstellungen in allen Umgebungen.
+Definieren Sie die erforderliche Häufigkeit von Bereitstellungen in den Umgebungen.
 
-### Entwicklungsmethode {#development-methodology}
+### Entwicklungsmethodik {#development-methodology}
 
-Eine Software-Entwicklungsmethodik besteht darin, den gesamten Prozess der Softwareentwicklung in verschiedene Phasen (oder Phasen) zu unterteilen, die jeweils unterschiedliche Aktivitäten aufweisen. Ziel ist es, die Planung und das Management zu verbessern.
+Eine Software-Entwicklungsmethodik sieht vor, den gesamten Prozess der Software-Entwicklungsarbeit in verschiedene Phasen (oder Stufen) mit jeweils unterschiedlichen Aktivitäten aufzuteilen. Ziel ist es, Planung und Verwaltung zu verbessern.
 
-Bei der Definition der Methodik sollten Sie bestimmte Lieferziele und Artefakte vordefinieren, die vom Projektteam erstellt und ergänzt werden, um Ihre Anwendung zu entwickeln oder zu pflegen.
+Bei der Definition der Methodik sollten Sie spezifische zu erbringenden Leistungen und Artefakte vordefinieren, die vom Projekt-Team erstellt und ergänzt werden, um Ihre Anwendung zu entwickeln oder zu pflegen.
 
-### Definition der Entwicklungsrolle {#development-role-definition}
+### Definition der Rollen bei der Entwicklung {#development-role-definition}
 
-Definieren Sie, welcher Entwickler und/oder welche Rolle IT- (Leistungs- oder andere) und/oder Komponententests innerhalb der Lösung ausführt.
+Definieren Sie, welche Entwicklerin bzw. welcher Entwickler und/oder welche Rolle IT-Tests (leistungsbezogene oder andere) und/oder Unit-Tests innerhalb der Lösung ausführt.
 
-### Bereit für Entwicklungsumgebung {#development-environment-ready}
+### Bereitschaft der Entwicklungsumgebung {#development-environment-ready}
 
 Stellen Sie sicher, dass die Entwicklungsumgebung mit den für die Automatisierung von Bereitstellungen erforderlichen integrierten Tools konfiguriert ist.
 
-### Entwicklungsteam versteht Projektumfang und Erwartungen {#development-team-understands-scope-of-project-and-expectations}
+### Entwicklungs-Team versteht Projektumfang und Erwartungen {#development-team-understands-scope-of-project-and-expectations}
 
-Das Entwicklungsteam sollte bestätigen, dass es Folgendes vollständig versteht:
+Das Entwicklungs-Team sollte bestätigen, dass es Folgendes vollständig versteht:
 
 * Umfang des Projekts
 * alle Kundenerwartungen
-* Grundlage für alle Entscheidungen, die pro Person und pro Projektphase getroffen werden
+* die Grundlage für alle Entscheidungen, die pro Person und pro Phase im Projekt getroffen werden
 
-### Dialogfeldspezifikation {#dialogs-specification}
+### Spezifikation von Dialogfeldern {#dialogs-specification}
 
 Details zu den für die Lösung erforderlichen Dialogfeldern.
 
-### Einrichten der Dokumententwicklungsumgebung {#document-development-environment-setup}
+### Dokumentation der Einrichtung der Entwicklungsumgebung {#document-development-environment-setup}
 
 Dokumentation der Entwicklungsumgebung.
 
-### Einrichten der Dokumentproduktionsumgebung {#document-production-environment-setup}
+### Dokumentation der Einrichtung der Produktionsumgebung {#document-production-environment-setup}
 
 Dokumentation der Produktionsumgebung.
 
-### Einrichtung der Dokumenttest-Umgebung {#document-test-environment-setup}
+### Dokumentation der Einrichtung der Testumgebung {#document-test-environment-setup}
 
 Dokumentation der Testumgebung.
 
 ### Stabilitätstest {#durability-test}
 
-Der Stabilitätstest zeigt die Leistung der Lösung unter einer bestimmten Belastung an. Anhand der Tests wird gemessen, wie lange die Lösung überlebt, wenn sie der Schwelle ausgesetzt wird, und wie hoch die Leistung ist.
+Der Stabilitätstest zeigt die Leistung der Lösung bei einer bestimmten Last. Diese Tests messen, wie lange die Lösung bei einer Last am Schwellenwert mit welchen Leistungsebenen stabil bleibt.
 
-### Ausgeführter Stabilitätstest {#durability-test-executed}
+### Ausführung des Stabilitätstests {#durability-test-executed}
 
-Durchführung der Dauerhaltbarkeitsprüfungen.
+Ausführung der Stabilitätstests.
 
-### Umgang mit Fehlern {#error-handling-concept}
+### Fehlerbehebungskonzept {#error-handling-concept}
 
-Die Fehlerbehebung bezieht sich auf die Antizipierung, Erkennung und Behebung von Programmierungs-, Anwendungs- und Kommunikationsfehlern.
+Die Fehlerbehebung bezieht sich auf die Antizipierung, Erkennung und Behebung von Programmier-, Anwendungs- und Kommunikationsfehlern.
 
-### Dokumentation zur Fehlerbehandlung {#error-handling-documentation}
+### Dokumentation der Fehlerbehebung {#error-handling-documentation}
 
-Detaillierte Dokumentation der vorgeschlagenen Fehlerbehandlung basierend auf dem Fehlerbehandlungskonzept.
+Detaillierte Dokumentation der vorgeschlagenen Fehlerbehebung basierend auf dem Fehlerbehebungskonzept.
 
 ### Eskalationsprozesse {#escalation-processes}
 
 Definition aller Eskalationsprozesse. Für jede Projektebene gibt es separate Prozesse:
 
-* Projektteam
+* Projekt-Team
 * Kunde
 * Adobe
 
-### Regelmäßige Qualitätsüberprüfungssitzungen einrichten {#establish-regular-quality-review-sessions}
+### Festlegen regelmäßiger Qualitätsüberprüfungssitzungen {#establish-regular-quality-review-sessions}
 
-regelmäßige Treffen zur Qualitätsüberprüfung mit den entsprechenden Teammitgliedern.
+Legen Sie regelmäßige Qualitätsüberprüfungssitzungen mit den entsprechenden Team-Mitgliedern fest.
 
-### Struktur vorhandener Berechtigungen {#existing-permissions-structure}
+### Vorhandene Berechtigungsstruktur {#existing-permissions-structure}
 
-Dokumentation der vorhandenen Berechtigungssätze und Gruppen, die für die Legacy-Lösung oder innerhalb der Organisation definiert sind.
+Dokumentation der vorhandenen Berechtigungen und Gruppen, die für die Vorgängerlösung oder innerhalb des Unternehmens definiert wurden.
 
-### Vorhandene Systemzuordnung {#existing-systems-map}
+### Übersicht vorhandener Systeme {#existing-systems-map}
 
 Ein Diagramm (oder eine Reihe von Diagrammen) der vorhandenen Systeme und Abhängigkeiten.
 
@@ -463,158 +463,158 @@ Der Projektsponsor ermittelt die geschäftlichen Erwartungen in Bezug auf den Pr
 
 Die Erwartungen können Folgendes umfassen:
 
-* bestimmte KPIs, z. B. prozentuale Zunahme der bereitgestellten Seiten
-* Weniger Zeit für die Veröffentlichung von Inhalten
-* übergeordneten Zielen, z. B. einer benutzerfreundlichen Oberfläche
+* bestimmte KPIs, wie z. B. prozentualer Anstieg bereitgestellter Seiten
+* Beschleunigung der Veröffentlichung von Inhalten
+* allgemeine Ziele wie eine anwenderfreundliche Oberfläche
 
-### Anforderungen für Experience Designs {#experience-designs-requirements}
+### Anforderungen an die Gestaltung von Erlebnissen {#experience-designs-requirements}
 
-Anforderungen für das gesamte Erlebnis der Lösung. Dabei werden u. a. Faktoren wie Personalisierung, geräteübergreifende Persistenz und Benutzererlebnis berücksichtigt.
+Anforderungen an das Gesamterlebnis der Lösung. Dabei werden u. a. Faktoren wie Personalisierung, geräteübergreifende Persistenz und Anwendererlebnis berücksichtigt.
 
 ### Erlebnisspezifikationen {#experience-specifications}
 
-Details zu den Anforderungen an das Experience Design.
+Details zu den Anforderungen an die Gestaltung von Erlebnissen.
 
 ### Externe System- und Benutzerabhängigkeiten/Systemkontext {#external-system-and-user-dependencies-system-context}
 
-Ein Diagramm (oder eine Reihe von Diagrammen), in dem das gesamte Ökosystem der Lösung beschrieben wird. Dies sollte Elemente wie die externen Integrationen, Schnittstellen, Abhängigkeiten und Netzwerke umfassen.
+Ein Diagramm (oder eine Reihe von Diagrammen), in dem das gesamte Ökosystem der Lösung beschrieben wird. Dazu gehören Elemente wie die externen Integrationen, Schnittstellen, Abhängigkeiten und Netzwerke.
 
 ### Ausweichsystem und -verfahren {#fallback-system-and-procedure}
 
 Die Definition des Ausweichsystems:
 
-* die geschäftskritischen Funktionen, die bei einem kritischen Fehler weiterhin verwendet werden müssen
-* die Prozesse, die erforderlich sind, wenn ein Fallback vorliegt
+* Die geschäftskritischen Funktionen, die bei einem kritischen Ausfall aufrechterhalten werden müssen
+* Die im Falle eines Ausweichvorgangs erforderlichen Prozesse
 
-### Ausweichsystem und getestetes Verfahren {#fallback-system-and-procedure-tested}
+### Testen des Ausweichsystems und -verfahrens {#fallback-system-and-procedure-tested}
 
-End-to-End-Test des Ausweichsystems.
+Vollständiger Test des Ausweichsystems.
 
-### Abnahme des Ausweichsystems von den Geschäftspartnern {#fallback-system-sign-off-from-business-stakeholders}
+### Abnahme des Ausweichsystems von Beteiligten aus den Geschäftsbereichen {#fallback-system-sign-off-from-business-stakeholders}
 
-Abonnieren Sie von den Interessenträgern aus der Wirtschaft, dass das Ausweichsystem und die damit verbundenen Verfahren die geschäftskritischen Funktionen gewährleisten.
+Abnahme von den Beteiligten aus den Geschäftsbereichen, dass das Ausweichsystem und zugehörige Verfahren geschäftskritische Funktionen sicherstellen.
 
-### Machbarkeitsbestätigung für KPIs {#feasibility-confirmation-on-kpis}
+### Machbarkeitsnachweis gemäß KPIs {#feasibility-confirmation-on-kpis}
 
-Ergebnisse einer Machbarkeitsstudie sowohl für AEM als auch für die allgemeine Lösungskonzeption. Diese sollten anhand der KPIs gemessen werden, um sicherzustellen, dass sie erfüllt werden können.
+Ergebnisse einer Machbarkeitsstudie sowohl für AEM als auch für den allgemeinen Lösungsentwurf. Diese sollten an den KPIs gemessen werden, um sicherzustellen, dass diese eingehalten werden können.
 
 ### Fertiggestellter Vertrag {#finalized-contract}
 
-Vor der Fortführung des Projekts ist ein abgeschlossener und unterzeichneter Vertrag erforderlich. Dies basiert auf der [Vertragsentwurf](#contract-draft).
+Ein fertiggestellter und unterschriebener Vertrag ist erforderlich, bevor das Projekt fortgesetzt werden kann. Dieser basiert auf dem [Vertragsentwurf](#contract-draft).
 
-### Funktionalität der von den Interessengruppen akzeptierten Lösung {#functionality-of-the-solution-accepted-by-stakeholders}
+### Projektbeteiligte akzeptieren Funktionalität der Lösung {#functionality-of-the-solution-accepted-by-stakeholders}
 
-Bestätigung, dass die Interessenträger Folgendes vollständig akzeptieren:
+Bestätigung, dass die Projektbeteiligten Folgendes vollständig akzeptieren:
 
 * Lösungsfunktionalität
-* bekannte Probleme in der Lösung
+* Bekannte Probleme in der Lösung
 
-### Live-Zeitplan {#go-live-schedule}
+### Zeitplan für die Live-Schaltung {#go-live-schedule}
 
-Zeitlicher Ablauf und Zeitplan für die erforderlichen Aktivitäten für:
+Zeitplan für die Aktivitäten, die für Folgendes erforderlich sind:
 
-* Vorbereitung auf Live-Schaltung
-* die tatsächliche Live-Schaltung
+* Vorbereitung der Live-Schaltung
+* Die tatsächliche Live-Schaltung
 
-### Definierte glückliche Pfade {#happy-paths-defined}
+### Definition von Happy Paths {#happy-paths-defined}
 
-Ein Happy Path ist ein Standardszenario ohne außergewöhnliche oder fehlerhafte Bedingungen. Er besteht aus der Folge von Aktivitäten, die ausgeführt werden, wenn alles erwartungsgemäß funktioniert.
+Ein Happy Path ist ein Standardszenario ohne Ausnahme- oder Fehlerbedingungen. Es besteht aus der Reihenfolge der Aktivitäten, die erfolgen, wenn alles wie erwartet abläuft.
 
-### Hardwareschätzungen {#hardware-estimates}
+### Hardware-Schätzungen {#hardware-estimates}
 
-Anfängliche Schätzungen von:
+Anfangsschätzungen der folgenden Elemente:
 
-* die Hardware, die für die AEM Basisinstallation benötigt wird
-* alle zusätzlichen Anforderungen, basierend auf dem allgemeinen Lösungsentwurf
+* Die für die Basisinstallation von AEM benötigte Hardware
+* Zusätzliche Anforderungen basierend auf dem allgemeinen Lösungsentwurf
 
-### Die Hardware steht zur Erfüllung der Anforderungen zur Verfügung {#hardware-will-be-available-to-fulfill-requirements}
+### Verfügbarkeit der Hardware zum Erfüllen der Anforderungen {#hardware-will-be-available-to-fulfill-requirements}
 
 Bestätigung, dass alle Umgebungen über die erforderliche Mindest-Hardware verfügen.
 
-### Anforderungen auf hoher Ebene {#high-level-requirements}
+### Allgemeine Anforderungen {#high-level-requirements}
 
-Die Definition der allgemeinen Anforderungen bietet eine allgemeine Aufschlüsselung der Anforderungen an das System, die Aspekte wie:
+Die Definition der allgemeinen Anforderungen bietet eine Aufschlüsselung der Anforderungen an das System und umfasst Aspekte wie:
 
 * Geschäftsprozesse
 * Wichtige Systemfunktionen
 
-Grundlegende Details zu diesen Funktionen sind in der Regel bekannt, daher sollte dieses Dokument keine Schätzung sein.
+Grundlegende Details zu diesen Funktionen sind in der Regel bekannt. Daher sollte dieses Dokument keine Schätzung sein.
 
-### High-Level-Lösungsdesign {#high-level-solution-design}
+### Allgemeiner Lösungsentwurf {#high-level-solution-design}
 
-Das Lösungsdesign auf hoher Ebene erklärt die Architektur, die für die Entwicklung der Lösung verwendet wird. Das Architekturdiagramm bietet einen Überblick über das gesamte System und zeigt die wichtigsten Komponenten, die für das Produkt entwickelt wurden, sowie deren Schnittstellen an.
+Der allgemeine Lösungsentwurf erklärt die Architektur, die für die Entwicklung der Lösung verwendet wird. Das Architekturdiagramm bietet einen Überblick über das gesamte System und die Hauptkomponenten, die für das Produkt und seine Schnittstellen entwickelt werden.
 
-### Hochrangige Systemkarte {#high-level-system-map}
+### Allgemeine Systemübersicht {#high-level-system-map}
 
-Diese Systemkarte sollte ein allgemeines Diagramm des Systems enthalten. Sie unterscheidet sich vom Lösungskontext insofern, als es sich um eine allgemeine Karte aller beteiligten Systeme handelt. Auf diesem Diagramm gibt es keine Schnittstellen.
+Diese Systemübersicht sollte ein allgemeines Diagramm des Systems bieten. Sie unterscheidet sich vom Lösungskontext dadurch, dass sie eine verallgemeinerte Übersicht über alle beteiligten Systeme darstellt, da dieses Diagramm keine Schnittstellen enthält.
 
-### Historische Inhaltsstruktur {#historical-content-structure}
+### Bisherige Inhaltsstruktur {#historical-content-structure}
 
-Definition der Inhaltsstruktur des alten Systems. Dies dient als Referenz und auch bei der Vorbereitung der Migrationsstrategie.
+Definition der Inhaltsstruktur des Vorgängersystems. Diese dient als Referenz und auch zur Vorbereitung der Migrationsstrategie.
 
-### Historische Leistungs- und historische Leistungs-KPIs {#historical-performance-and-historical-performance-kpis}
+### Leistung und Leistungs-KPIs des Vorgängersystems {#historical-performance-and-historical-performance-kpis}
 
-Erfassen und dokumentieren Sie Leistungsstatistiken und Leistungs-KPIs aus dem alten System. Diese werden dann als Bezugspunkt und zum Benchmarking der neuen Lösung verwendet.
+Erfassen und dokumentieren Sie Leistungsstatistiken und Leistungs-KPIs aus dem alten System. Diese werden dann als Bezugspunkt und Vergleichsmaßstab für die neue Lösung verwendet.
 
-### Identifizieren kritischer Schlüssellösungen/Funktionen {#identify-critical-key-solutions-functionalities}
+### Ermitteln wichtiger Lösungen und Funktionen {#identify-critical-key-solutions-functionalities}
 
-Eine Liste geschäftskritischer Funktionen.
+Hierbei handelt es sich um eine Liste der geschäftskritischen Funktionen.
 
-### Implementierung - Änderungen basierend auf den Ergebnissen von Penetrationstests {#implementation-changes-based-on-penetration-test-results}
+### Implementierung von Änderungen basierend auf Ergebnissen von Penetrationstests {#implementation-changes-based-on-penetration-test-results}
 
-Implementierung aller erforderlichen Änderungen (die signiert wurden) an der Lösung basierend auf den Ergebnissen der Penetrationstests.
+Hierbei geht es um die Implementierung aller erforderlichen (genehmigten) Änderungen an der Lösung basierend auf den Ergebnissen der Penetrationstests.
 
-### Implementierung - Automatisierte Teststrategie {#implementation-automated-testing-strategy}
+### Implementierung einer Strategie für automatisierte Tests {#implementation-automated-testing-strategy}
 
-Einrichtung der Tools und Prozesse, die zur Unterstützung automatisierter Tests erforderlich sind.
+Hierbei geht es um die Einrichtung der Tools und Prozesse zur Unterstützung automatisierter Tests.
 
-### Implementierung - Automatisierungsstrategie {#implementation-automation-strategy}
+### Implementierung der Strategie für automatisierte Tests {#implementation-automation-strategy}
 
-Einrichtung des Werkzeugsatzes und der Prozesse, die zur Unterstützung der Automatisierung erforderlich sind.
+Hierbei geht es um die Einrichtung der Tools und Prozesse zur Unterstützung der Automatisierung.
 
-### Implementierung - Inhaltsarchitektur {#implementation-content-architecture}
+### Implementierung der Inhaltsarchitektur {#implementation-content-architecture}
 
-Implementierung der Inhaltsarchitektur, Tagging von Konzepten und Wiederverwendung von Inhalten.
+Hierbei geht es um die Implementierung der Inhaltsarchitektur, Tagging-Konzepte und Wiederverwendung von Inhalten.
 
-### Implementierung - Experience Design {#implementation-experience-design}
+### Implementierung der Gestaltung des Anwendererlebnisses {#implementation-experience-design}
 
-Implementierung der Anforderungen zur Unterstützung von Experience Design.
+Hierbei geht es um die Implementierung der Anforderungen zur Unterstützung der Gestaltung des Anwendererlebnisses.
 
-### Implementierung - Ausweichsystem und -verfahren {#implementation-fallback-system-and-procedures}
+### Implementierung von Ausweichsystem und Verfahren {#implementation-fallback-system-and-procedures}
 
-Implementierung des Ausweichsystems und der zugehörigen Verfahren.
+Hierbei geht es um die Implementierung des Ausweichsystems und der zugehörigen Verfahren.
 
-### Implementierung - Integration {#implementation-integration}
+### Implementierung von Integrationen {#implementation-integration}
 
-Implementierung von Integrationen in alle erforderlichen externen Systeme.
+Hierbei geht es um die Implementierung von Integrationen mit allen erforderlichen externen Systemen.
 
-### Umsetzung der Migrationsstrategie {#implementation-migration-strategy}
+### Implementierung der Migrationsstrategie {#implementation-migration-strategy}
 
-Migration zusammen mit der Validierung von Inhalten und anderen Artefakten für die neue Lösung.
+Hierbei geht es um die Migration zusammen mit der Validierung von Inhalten und anderen Artefakten für die neue Lösung.
 
-### Implementierung - Rollen und Rechte {#implementation-roles-and-rights}
+### Implementierung von Rollen und Berechtigungen {#implementation-roles-and-rights}
 
-Implementierung von Rollen und Berechtigungen, Benutzern und Gruppen.
+Hierbei geht es um die Implementierung von Rollen und Berechtigungen, Benutzenden und Gruppen.
 
-### Implementierung - Sicherheitskonzept {#implementation-security-concept}
+### Implementierung des Sicherheitskonzepts {#implementation-security-concept}
 
-Umsetzung aller Sicherheitsmaßnahmen, einschließlich der AEM.
+Hierbei geht es um die Implementierung aller Sicherheitsmaßnahmen, einschließlich der AEM-Standardeinstellungen.
 
-### Implementierung der Sicherheitssoftware {#implementation-security-software}
+### Implementierung von Sicherheits-Software {#implementation-security-software}
 
-Implementierung der Sicherheit der Software-Anwendung.
+Hierbei geht es um die Implementierung der Software-Anwendungssicherheit.
 
-### Implementierung - Sicherheitskonzept für die Systemarchitektur {#implementation-system-architecture-security-concept}
+### Implementierung des Sicherheitskonzepts für die Systemarchitektur {#implementation-system-architecture-security-concept}
 
-Implementierung der Systemsicherheit.
+Hierbei geht es um die Implementierung der Systemsicherheit.
 
-### Implementierung - URL-Verarbeitung {#implementation-url-handling}
+### Implementierung der URL-Behandlung {#implementation-url-handling}
 
-Implementierung des URL-Handling-Konzepts.
+Hierbei geht es um die Implementierung des URL-Behandlungskonzepts.
 
 ### Implementierung von Workflows {#implementation-workflows}
 
-Implementierung der entworfenen Workflows.
+Hierbei geht es um die Implementierung der entworfenen Workflows.
 
 ### Implementierungskonzept {#implementation-concept}
 
@@ -627,567 +627,567 @@ Das Implementierungskonzept bietet die Leitlinien für die gesamte Implementieru
 * Sicherheit
 * Skalierbarkeit
 
-Dieses Konzept beschreibt auch die in der Lösung verwendeten Frameworks, Bibliotheken und anderen Artefakte.
+Dieses Konzept beschreibt zudem die in der Lösung verwendeten Frameworks, Bibliotheken und andere Artefakte.
 
-### Informieren der Adobe-Unterstützung über den Zeitplan für die Live-Schaltung {#inform-adobe-support-about-the-go-live-schedule}
+### Informieren des Adobe-Supports über den Zeitplan für die Live-Schaltung {#inform-adobe-support-about-the-go-live-schedule}
 
-Wenden Sie sich an den Adobe-Support , um sicherzustellen, dass jeder erforderliche Support während der Live-Schaltung aktiviert werden kann.
+Wenden Sie sich an den Adobe-Support, um sicherzustellen, dass der benötigte Support während der Live-Schaltung geboten werden kann.
 
-### Erste Erlebnisdesigns {#initial-experience-designs}
+### Anfänglicher Entwurf des Anwendererlebnisses {#initial-experience-designs}
 
-Vorläufige Konzepte für die Entwürfe der Erlebnisse.
+Hierbei geht es um vorläufige Konzepte für Entwürfe der Anwendererlebnisse.
 
 ### Integrationstests {#integration-testing}
 
-Testen und die sich daraus ergebende Bestätigung aller internen und externen Integrationen.
+Hierbei handelt es sich um Tests aller internen und externen Integrationen sowie die Bestätigung der Ergebnisse.
 
-Dies sollte automatisiert und häufig ausgeführt werden, um die Systemstabilität sicherzustellen.
+Dieser Prozess sollte automatisiert und häufig ausgeführt werden, um die Systemstabilität sicherzustellen.
 
-### Problem-Tracking-Prozess {#issue-tracking-process}
+### Prozess der Problemverfolgung {#issue-tracking-process}
 
-Klare Prozesse zeichnen alle aufgetretenen Probleme auf und verfolgen laufende Aktivitäten, um sicherzustellen, dass alle Probleme gelöst werden.
+In übersichtlichen Prozessen werden alle aufgetretenen Probleme aufgezeichnet und die laufenden Aktivitäten verfolgt, um sicherzustellen, dass alle Probleme gelöst werden.
 
-### Problem-Tracking-System und -Prozesse {#issue-tracking-system-and-processes}
+### System und Prozesse zur Problemverfolgung {#issue-tracking-system-and-processes}
 
-Ein Tracking-System, das zusammen mit den erforderlichen Prozessen alle aufgetretenen Probleme aufzeichnet und laufende Aktivitäten verfolgt, um sicherzustellen, dass alle Probleme gelöst werden.
+Es geht um ein Tracking-System, das zusammen mit den erforderlichen Prozessen alle aufgetretenen Probleme aufzeichnet und die laufenden Aktivitäten verfolgt, um sicherzustellen, dass alle Probleme gelöst werden.
 
-Alle Projektbeteiligten sollten Zugang haben, um die Transparenz des Projektstatus zu erleichtern.
+Alle Projektbeteiligten sollten Zugang haben, damit die Transparenz des Projektstatus gewährleistet ist.
 
 Beispiele sind Atlassian JIRA und HP Quality Center.
 
-### Problemverfolgungssystemprozess ist eingerichtet und integriert {#issue-tracking-system-process-is-set-up-and-integrated}
+### Der Systemprozess für die Problemverfolgung ist eingerichtet und integriert {#issue-tracking-system-process-is-set-up-and-integrated}
 
-Die ausgewählten Tools sind vollständig integriert und bieten allen erforderlichen Rollen Zugriff.
+Die ausgewählten Tools sind vollständig integriert und für alle Rollen zugänglich, die Zugriff benötigen.
 
 ### Veraltetes System {#legacy-system}
 
-Für Ihr Projekt ist das veraltete System die bestehende Technologie, das Computersystem oder das Anwendungsprogramm, die durch die neue Lösung ersetzt werden.
+Für Ihr Projekt ist das veraltete System die bestehende Technologie, das Computersystem bzw. das Anwendungsprogramm, was durch die neue Lösung ersetzt wird.
 
-Details zum alten System sollten erfasst werden, damit Sie wissen, was zurückgezogen werden kann, wann und welche Auswirkungen dies auf andere Systeme hat.
+Details zum alten System sollten gesammelt werden, damit Sie wissen, was stillgelegt werden kann und wann, und welche Auswirkungen dies auf andere Systeme hat.
 
-### Liste der zu verwendenden Entwicklungstools {#list-of-development-tools-to-be-used}
+### Liste der zu verwendenden Entwicklungs-Tools {#list-of-development-tools-to-be-used}
 
 Eine Übersicht über die bei der Implementierung verwendeten Tools. Die Tools sollten Folgendes umfassen:
 
-* Dokumentationstools
-* Problemverfolgungswerkzeuge
-* Bereitstellungswerkzeuge
+* Dokumentations-Tools
+* Tools zur Problemverfolgung
+* Bereitstellungs-Tools
 * Build-Tools
 
-### Liste der Benutzer, die Zugriff auf das Adobe Support-Portal benötigen {#list-of-users-that-require-access-to-adobe-support-portal}
+### Liste der Benutzenden, die Zugriff auf das Adobe Support-Portal benötigen {#list-of-users-that-require-access-to-adobe-support-portal}
 
-Eine Liste aller Benutzer und Rollen, die Zugriff auf das Adobe Support-Portal benötigen.
+Eine Liste aller Benutzenden und Rollen, die Zugriff auf das Adobe Support-Portal benötigen.
 
-Die Liste besteht normalerweise aus dem Lösungsarchitekten und/oder IT-Personal des Kunden.
+Die Liste besteht normalerweise aus der Lösungsarchitektin bzw. dem Lösungsarchitekten und/oder IT-Personal auf Kundenseite.
 
-### Protokolldateianalyse {#log-file-analysis}
+### Protokolldatei-Analyse {#log-file-analysis}
 
 Eine Analyse sowie die daraus resultierenden Empfehlungen, die definieren, was protokolliert werden muss, um die Lösung zu überwachen:
 
-* Zu protokollierende Aktivitäten
+* zu protokollierende Aktivitäten
 * Granularitätsstufe
 * für jede Aktivität protokollierte Informationen
 
-### getestete und aktivierte Wartungsaufgaben (AEM spezifisch) {#maintenance-tasks-aem-specific-tested-and-enabled}
+### getestete und aktivierte (AEM-spezifische) Wartungsaufgaben {#maintenance-tasks-aem-specific-tested-and-enabled}
 
-Testen und aktivieren Sie AEM Wartungsaufgaben wie:
+Testen und aktivieren Sie AEM-Wartungsaufgaben wie:
 
-* compaction
-* Systemreinigung
+* Komprimierung
+* Systembereinigung
 * Workflow-Bereinigung
 
 ### Migrationsplan {#migration-plan}
 
 Dokumentieren Sie die Migration, einschließlich
 
-* Zeitleiste für die Migration
-* Content-Wartungsplan gemäß der Migrationsstrategie
+* Timeline für die Migration
+* Inhaltswartungsplan gemäß der Migrationsstrategie
 
 ### Migrationsstrategie {#migration-strategy}
 
-Eine vollständige Beschreibung des vorhandenen Inhalts, der Inhaltsarchitektur und der der neuen Lösung zugeordneten Formate. Sie sollte Folgendes umfassen:
+Eine vollständige Beschreibung des vorhandenen Inhalts, der Inhaltsarchitektur und der Formate, die der neuen Lösung zugeordnet sind. Sie sollte Folgendes umfassen:
 
 * technische Details der automatisierten Migration, sofern möglich
-* Nach der Migration durchzuführende Rauchtests zur Validierung des migrierten Inhalts
+* nach der Migration durchzuführende Feuerproben zur Validierung des migrierten Inhalts
 
-Außerdem sollte empfohlen werden, den Inhalt während des Zeitraums zwischen der Migration und der tatsächlichen Live-Schaltung des neuen Systems auf dem neuesten Stand zu halten (oder so aktuell wie möglich). Dies kann zum Einfrieren von Inhalten, zur doppelten Veröffentlichung oder zur Wartung eines Alpha-Systems führen.
+Außerdem ist zu empfehlen, den Inhalt während des Zeitraums zwischen der Migration und der tatsächlichen Live-Schaltung des neuen Systems auf dem neuesten Stand zu halten (oder so aktuell wie möglich). Dies kann zum Einfrieren von Inhalten, zu einer doppelten Veröffentlichung oder zur Wartung eines Alpha-Systems führen.
 
-### Überwachung - CPU {#monitoring-cpu}
+### Überwachung – CPU {#monitoring-cpu}
 
-Überwachen der Nutzung der System-CPU durch die Lösung:
-
-* Durchschnitt
-* Spitzen
-
-### Überwachung - Datenträger-E/A {#monitoring-disk-i-o}
-
-Überwachen der Festplatten-Eingabe- und -Ausgaberaten der Lösung:
+Überwachung der Nutzung der System-CPU durch die Lösung:
 
 * Durchschnitt
 * Spitzen
 
-### Überwachung des Festplattenspeichers {#monitoring-disk-space}
+### Überwachung – Datenträger-E/A {#monitoring-disk-i-o}
 
-Überwachen der Nutzung von Festplattenspeicher durch die Lösung:
+Überwachung der Ein- und Ausgaberate des Datenträgers durch die Lösung:
+
+* Durchschnitt
+* Spitzen
+
+### Überwachung – Festplattenspeicher {#monitoring-disk-space}
+
+Überwachung der Nutzung von Festplattenspeicher durch die Lösung:
 
 * Durchschnitt
 * Wachstum im Zeitverlauf
 
-Sie sollten die Verwendung überwachen, indem Sie:
+Sie sollten die Nutzung überwachen, indem Sie:
 
-* Repository
+* das Repository
 * Protokolldateien
 
-### Überwachung - Externe Systeme {#monitoring-external-system-s}
+### Überwachen der externen Systeme {#monitoring-external-system-s}
 
-Überwachen Sie alle Verbindungen zwischen der Lösung und externen Systemen:
+Überwachen Sie sämtliche Verbindungen zwischen der Lösung und externen Systemen:
 
-* Verkehrsrate
+* Traffic-Frequenz
 * Spitzen
 * Stabilität
 
-### Überwachung der Netzwerkbandbreite {#monitoring-network-bandwidth}
+### Überwachen der Netzwerkbandbreite {#monitoring-network-bandwidth}
 
 Überwachen Sie die Nutzung der Netzwerkbandbreite durch die Lösung:
 
-* durchschnittliche Traffic-Rate
+* Durchschnittliche Traffic-Frequenz
 * Spitzen
 * Stabilität
 
-### Überwachung - Anforderungen {#monitoring-requests}
+### Überwachung von Anfragen {#monitoring-requests}
 
-Überwachen Sie die Anforderungen an die Lösung.
+Überwachen Sie die Anfragen, die an die Lösung gerichtet werden.
 
-### Überwachung - Sicherheitspunkte {#monitoring-security-points}
+### Überwachen der Sicherheitspunkte {#monitoring-security-points}
 
 Überwachen Sie die definierten Sicherheitspunkte.
 
-### Überwachung - System {#monitoring-system}
+### Überwachen des Systems {#monitoring-system}
 
-Überwachen Sie das gesamte System, z. B.:
+Überwachen Sie das gesamte System. Beispiel:
 
 * Verfügbarkeit
-* durchschnittliche Leistung
+* Durchschnittliche Leistung
 * Leistungsspitzen
-* Warnungen
+* Warnhinweise
 
-### Überwachung - Schwelle und Intervention {#monitoring-threshold-and-intervention}
+### Überwachen von Schwellenwerten und Eingriff {#monitoring-threshold-and-intervention}
 
-Überwachung der definierten Schwelle der Lösung und Implementierung von Interventionsmaßnahmen zur Verringerung der Auslastung.
+Überwachen des definierten Schwellenwerts der Lösung und Durchführen von Eingriffsmaßnahmen zur Lastreduzierung.
 
 ### Überwachungskonzept {#monitoring-concept}
 
-Die Überwachungskonzepte, die auf Ihre Lösung angewendet werden sollen, einschließlich:
+Die Überwachungskonzepte, die für Ihre Lösung gelten sollen:
 
-* AEM Standardüberwachung
+* AEM-Standardüberwachung
 * Systemüberwachung
-* kundenspezifische Überwachungsanforderungen
+* Kundenspezifische Überwachungsanforderungen
 
-### Überwachen potenzieller Schwachpunkte {#monitoring-potential-weak-points}
+### Überwachen möglicher Schwachpunkte {#monitoring-potential-weak-points}
 
-Bestimmte Punkte, die für einen Fehler anfällig sein könnten, sollten identifiziert und definiert werden. Die damit verbundenen Überwachungsaufgaben sollten ebenfalls festgelegt werden.
+Bestimmte Punkte, die ausfallgefährdet sein könnten, müssen identifiziert und definiert werden. Die damit verbundenen Überwachungsaufgaben müssen ebenfalls definiert werden.
 
 Beispiele sind (unter anderem):
 
-* wichtige Workflows
+* Wichtige Workflows
 * Transaktionsverarbeitung
 * Integrationspunkte
 
-### Überwachungspolitik an Systemtechniker weitergeleitet {#monitoring-policy-communicated-to-system-engineer}
+### Informieren der Systemtechnikerinnen und -techniker über die Überwachungsrichtlinie {#monitoring-policy-communicated-to-system-engineer}
 
-Stellen Sie sicher, dass die Systemtechniker und Betriebspersonal alle Überwachungsrichtlinien kennen und verstehen.
+Stellen Sie sicher, dass die Systemtechnikerinnen und -techniker und das Betriebspersonal alle Überwachungsrichtlinien kennen und verstehen.
 
-### Überwachungsberichte - Struktur vorhanden {#monitoring-reports-structure-in-place}
+### Einrichten der Struktur für Überwachungsberichte {#monitoring-reports-structure-in-place}
 
 Definieren Sie:
 
 * Wann sollen Überwachungsberichte erstellt werden?
-* an wen sie geliefert werden sollen
+* An wen sollen sie übermittelt werden?
 
-### Dokumentation zu operativen Aufgaben {#operational-tasks-documentation}
+### Dokumentation der Betriebsaufgaben {#operational-tasks-documentation}
 
-Alle dokumentierten operativen Aufgaben mit festgelegter Häufigkeit.
+Alle Betriebsaufgaben wurden dokumentiert und ihre Häufigkeit wurde festgelegt.
 
-### Betriebshandbuch {#operations-manual}
+### Benutzerhandbuch {#operations-manual}
 
-Handbuch mit allen für den erfolgreichen Betrieb und die Wartung der Lösung erforderlichen Informationen:
+Handbuch mit allen Informationen, die für den erfolgreichen Betrieb und die Wartung der Lösung erforderlich sind:
 
-* alle operativen Aufgaben
-* wichtige Kontakte
+* Alle Betriebsaufgaben
+* Wichtige Kontakte
 * Bereitstellungspläne
-* Checklisten vor/nach der Bereitstellung
-* alle anderen kritischen Aufgaben
+* Checklisten vor und nach der Bereitstellung
+* alle anderen wichtigen Aufgaben
 
-Sollte auch die Implementierungskonzepte für Folgendes detailliert beschreiben:
+Außerdem sollten Implementierungskonzepte für Folgendes detailliert beschrieben werden:
 
 * Erfüllen der Leistungs-KPIs
-* Skalierung der Lösung, um diese KPIs weiterhin zu erfüllen
+* Skalieren der Lösung, um diese KPIs weiter zu erfüllen
 
-### Vorbereitung des Pakets {#package-prepared}
+### Vorbereitung des Software-Pakets {#package-prepared}
 
-Softwarepaket, das erstellt und bereitgestellt wurde und einsatzbereit ist.
+Das Software-Paket wurde erstellt und einsatzbereit bereitgestellt.
 
 ### Penetrationstests {#penetration-tests}
 
-Ein Penetrationstest (auch bekannt als Pen-Test) ist ein Angriff auf ein Computersystem, das nach Sicherheitsmängeln sucht und möglicherweise Zugriff auf die Funktionen und Daten des Computers erhält.
+Ein Penetrationstest (auch als Pentest bezeichnet) ist ein Angriff auf ein Computer-System zur Suche nach Sicherheitslücken, die den Zugriff auf die Funktionen und Daten des Computers ermöglichen.
 
-### Penetrationstests - bestanden {#penetration-tests-passed}
+### Penetrationstests bestanden {#penetration-tests-passed}
 
-Alle erforderlichen Kriterien werden übergeben.
+Alle erforderlichen Kriterien wurden übergeben.
 
-### Penetrationstests - Ergebnisse {#penetration-tests-results}
+### Penetrationstestergebnisse {#penetration-tests-results}
 
-Für das Unternehmen erstellte Berichte, die die Ergebnisse des Penetrationstests erläutern.
+Hierbei handelt es ich um für das Unternehmen erstellte Berichte, die die Ergebnisse der Penetrationstests erläutern.
 
 ### Leistungs- und Skalierbarkeitskonzept {#performance-and-scalability-concept}
 
-Konzeptdokument, wie Sie sicherstellen können, dass Ihre Implementierung die Leistungs-KPIs erfüllt, und wie Sie die Lösung skalieren, damit sie diese KPIs weiterhin erfüllt.
+Dieses Konzeptdokument beschreibt, wie Sie sicherstellen können, dass Ihre Implementierung die Leistungs-KPIs erfüllt, und wie Sie die Lösung so skalieren können, dass sie diese KPIs weiterhin erfüllt.
 
 ### Leistungs-Benchmark {#performance-benchmark}
 
-Der Leistungsvergleich wird zur Definition von Leistungstests, Dauerhaltbarkeitstests und Überwachung verwendet. Dies erfolgt durch die Bewertung der Leistungsmerkmale der Lösung und System-Hardware.
+Die Leistungs-Benchmark dient zur Definition von Leistungstests, Stabilitätstests und Monitoring. Dies erfolgt durch die Bewertung der Leistungsmerkmale der Lösung und System-Hardware.
 
 ### Leistungs-KPIs {#performance-kpis}
 
-Diese definieren die Key Performance Indicators (KPIs), die zum Messen der Systemleistung erforderlich sind. Einige Beispiele sind die Seitenladezeit, die Antwortzeit des Servers und die Leistung der Datenbankabfrage.
+Diese definieren die Key Performance Indicators (KPIs), die benötigt werden, um die Leistung des Systems zu messen. Einige Beispiele sind die Seitenladezeit, die Antwortzeit des Servers und die Leistung der Datenbankabfrage.
 
-### Leistungstests - Bericht {#performance-tests-report}
+### Leistungstestberichte {#performance-tests-report}
 
-Für das Unternehmen erstellte Berichte, in denen die Ergebnisse der Leistungstests detailliert beschrieben werden.
+Hierbei handelt es sich um für das Unternehmen erstellte Berichte, in denen die Ergebnisse der Leistungstests detailliert beschrieben werden.
 
-### Leistungstests - Ergebnisse stimmen mit Leistungs-KPIs überein {#performance-tests-results-match-performance-kpis}
+### Leistungstestergebnisse entsprechen Leistungs-KPIs {#performance-tests-results-match-performance-kpis}
 
-Die Ergebnisse müssen mit den definierten KPIs und Leistungserwartungen übereinstimmen.
+Die Ergebnisse müssen den definierten KPIs und Leistungserwartungen entsprechen.
 
-### Persona-basiertes Testkonzept {#persona-based-testing-concept}
+### Rollenbasiertes Testkonzept {#persona-based-testing-concept}
 
-Persona-basierte Tests sind eine Methode, die auf den verschiedenen in den Experience Designs beschriebenen Rollen basiert. Außerdem werden die Konten und die zugehörigen Berechtigungsstufen getestet.
+Rollenbasierte Tests sind eine Methode, die auf den verschiedenen Rollentypen basiert, die in den Entwürfen des Anwendererlebnisses beschrieben sind. Außerdem werden die Konten und die damit verbundenen Berechtigungsstufen getestet.
 
-Dies wird häufig beim Benutzerakzeptanztest (UAT) verwendet.
+Dieses Konzept wird häufig bei Benutzerakzeptanztests (UAT) verwendet.
 
-### POC getestet und anhand der Anforderungsdokumentation überprüft {#poc-tested-and-verified-against-requirement-documentation}
+### Prüfung und Verifizierung des Machbarkeitsnachweises im Abgleich mit der Anforderungsdokumentation {#poc-tested-and-verified-against-requirement-documentation}
 
-Der Machbarkeitsnachweis (POC) wird anhand der Anforderungen gemessen, um sicherzustellen, dass beide aufeinander abgestimmt sind.
+Die Machbarkeit (Proof of Concept, POC) wird an den Anforderungen gemessen, um sicherzustellen, dass eine Übereinstimmung vorliegt.
 
-### Checkliste nach der Bereitstellung {#post-deployment-checklist}
+### Checkliste für Aufgaben nach der Bereitstellung {#post-deployment-checklist}
 
-Eine Checkliste zur Definition der Prüfungen und Aufgaben, die nach jeder Bereitstellung durchgeführt werden sollen.
+Hierbei handelt es sich um eine Checkliste, um die Prüfungen und Aufgaben zu definieren, die nach jeder Bereitstellung durchzuführen sind.
 
-### Checkliste für die Vorbereitung {#pre-deployment-checklist}
+### Checkliste für Aufgaben vor der Bereitstellung {#pre-deployment-checklist}
 
-Eine Checkliste zur Definition der Prüfungen und Aufgaben, die vor jeder Bereitstellung durchgeführt werden sollen.
+Hierbei handelt es sich um eine Checkliste, um die Prüfungen und Aufgaben zu definieren, die vor jeder Bereitstellung durchzuführen sind.
 
-### Grundlegende Leistungstests für die Produktionsumgebung {#production-environment-baseline-performance-tests}
+### Basisleistungstests für die Produktionsumgebung {#production-environment-baseline-performance-tests}
 
-Es ist üblich, einen Basistest für eine Standardinstallation von AEM durchzuführen. Dies wird dann als Benchmark zum Testen der Implementierung und Hardware verwendet.
+Bei einer Standardinstallation von AEM ist es üblich, einen Basisleistungstest durchzuführen. Dieser wird dann als Benchmark verwendet, gemäß der Implementierung und Hardware getestet werden.
 
-### Produktionsumgebungsbereit {#production-environment-ready}
+### Bereitschaft der Produktionsumgebung {#production-environment-ready}
 
-Vergewissern Sie sich, dass die Produktionsumgebung mit automatisierten Bereitstellungen bereit ist.
+Vergewissern Sie sich, dass die Produktionsumgebung bereit ist und automatisierte Bereitstellungen erfolgt sind.
 
-### Abnahme der Produktion von den Geschäftspartnern {#production-sign-off-from-business-stakeholders}
+### Abnahme für die Produktion durch die Projektbeteiligten aus den Geschäftsbereichen {#production-sign-off-from-business-stakeholders}
 
-Vor der Live-Schaltung in die Produktionsumgebung muss die Produktionsabnahme (PSO) gewährt werden. Dies ist das Ergebnis einer Überprüfung der Version, die in die Produktion geht, zusammen mit allen bekannten Problemen. Die Abmeldung erfolgt im Rahmen des Zeitplans Go Live .
+Vor der Live-Schaltung für die Produktionsumgebung muss die entsprechende Abnahme erfolgen. Dies ist das Ergebnis einer Überprüfung der Version, die in der Produktionsumgebung eingesetzt wird, zusammen mit allen bekannten Problemen. Die Abnahme ist Teil des Zeitplans für die Live-Schaltung.
 
-### Prozess zur Abnahme der Produktion und Richtlinie {#production-sign-off-process-and-policy}
+### Prozess und Richtlinien bei der Abnahme für die Produktion {#production-sign-off-process-and-policy}
 
-Die Richtlinie und der Prozess, die erforderlich sind, um die Produktionsabnahme zu erhalten, bevor das Paket in die Produktionsumgebung verschoben wird.
+Hierbei geht es um die Richtlinien und den Prozess, die erforderlich sind, um die Abnahme für die Produktion zu erhalten, bevor das Paket in die Produktionsumgebung überführt wird.
 
 ### Projektkommunikationsplan {#project-communication-plan}
 
-Definieren Sie den Kommunikationsplan sowohl für geschäftliche Stakeholder als auch für das Projektteam.
+Definieren Sie den Kommunikationsplan für die Projektbeteiligten aus den Geschäftsbereichen und das Projekt-Team.
 
-### Projektaufwand - Schlussschätzungen {#project-efforts-final-estimates}
+### Projektaufwand: Endgültige Schätzungen {#project-efforts-final-estimates}
 
-Die [Anfangsschätzungen](#project-efforts-initial-estimates) Sie wurden auf hoher Ebene erstellt und entsprechen den allgemeinen Anforderungen für die Implementierung.
+Die [ersten Schätzungen](#project-efforts-initial-estimates) waren allgemein und erfolgten gemäß den allgemeinen Anforderungen für die Implementierung.
 
-Diese werden nun überprüft, verfeinert und erweitert, um die endgültigen Schätzungen zu liefern. Die Schätzungen sollten von jeder geeigneten Projektleitung, einschließlich Projektmanagement, Beratung, Architektur, Tests und Entwicklung, vorgelegt werden.
+Diese werden nun überprüft, verfeinert und erweitert, um die endgültigen Schätzungen zu erhalten. Die Schätzungen sollten von jeder zuständigen Projektleitung vorgelegt werden, einschließlich Projekt-Management, Beratung, Architektur, Tests und Entwicklung.
 
 Diese Schätzungen werden für die Finanzierung und Budgetierung verwendet.
 
-### Projektaufwand - Anfangsschätzungen {#project-efforts-initial-estimates}
+### Projektaufwand: Erste Schätzungen {#project-efforts-initial-estimates}
 
-Die ersten Schätzungen sind hoch und werden entsprechend den allgemeinen Anforderungen für die Implementierung vorgenommen. Dies wird zu einem späteren Zeitpunkt überprüft und präzisiert.
+Die ersten Schätzungen sind allgemein und erfolgen gemäß den allgemeinen Anforderungen für die Implementierung. Sie werden zu späteren Zeitpunkten überprüft und verfeinert.
 
 ### Projektorganisation {#project-organization}
 
 Die erforderliche Dokumentation zur Beschreibung der Organisation und Berichtsstruktur des Projekts und Teams.
 
-Oft nimmt die Form oder enthält eine Grafik, um einen visuellen Überblick über Zeitpläne und Zuständigkeiten zu geben. Es stehen viele Tools zur Verfügung, die Ihnen dabei helfen.
+Oftmals in Form eines Diagramms, um einen anschaulichen Überblick über Zeitpläne und Zuständigkeiten zu geben. Es stehen viele Tools zur Verfügung, die Ihnen dabei helfen.
 
 ### Dokument zum Projektumfang {#project-scope-document}
 
-Im Dokument zum Projektumfang müssen Sie eine Liste der folgenden Elemente identifizieren und dokumentieren:
+Im Dokument zum Projektumfang müssen Sie eine Liste der folgenden Elemente angeben und dokumentieren:
 
 * Spezifische Projektziele
-* Lieferziele
+* Zu erbringende Leistungen
 * Funktionen
 * Funktionen
 * Aufgaben
-* Fristen
+* Stichtage
 * Geplanter Aufwand
 
-Es umfasst das, was erreicht werden muss, zusammen mit der notwendigen Arbeit, um das Projekt durchzuführen
+Umfasst, was erreicht werden muss, zusammen mit der notwendigen Arbeit, um das Projekt durchzuführen
 
-### Projektstatusberichte in einer definierten Zielgruppe {#project-status-reports-within-a-defined-cadence}
+### Projektstatusberichte in definiertem Rhythmus {#project-status-reports-within-a-defined-cadence}
 
 Projektstatusberichte werden gemäß dem vereinbarten Zeitplan und im erforderlichen Format bereitgestellt.
 
 ### Machbarkeitsstudie (POC) {#proof-of-concept-poc}
 
-Der Machbarkeitsnachweis (POC) implementiert eine begrenzte Anzahl von Funktionen für die Lösung.
+Für die Machbarkeitsstudie (Proof of Concept, POC) wird ein begrenzter Funktionsumfang der Lösung implementiert.
 
-Es sollte darauf abzielen, die Machbarkeit der Lösung nachzuweisen, zu überprüfen, ob sie den erforderlichen Zweck erfüllen kann, und nachzuweisen, dass das Potenzial der Lösung besteht.
+Ziel ist es, die Machbarkeit der Lösung nachzuweisen, zu überprüfen, ob sie den geforderten Zweck erfüllen kann, und zu belegen, dass das Potenzial ihrer Nutzung vorhanden ist.
 
-### Regeln bereinigen {#purge-rules}
+### Bereinigungsregeln {#purge-rules}
 
-AEM verwaltet mehrere Versionen von Assets und Inhalten. Bereinigungsregeln sind so konzipiert und konfiguriert, dass ältere Versionen regelmäßig entfernt werden, um den Zustand und die Größe des Repositorys zu gewährleisten.
+AEM verwaltet mehrere Versionen von Objekten und Inhalten. Bereinigungsregeln sind so konzipiert und konfiguriert, dass ältere Versionen regelmäßig entfernt werden, um Integrität und Größe des Repositorys im Griff zu behalten.
 
-### Format und Zielgruppe von Qualitätsberichten {#quality-report-format-and-cadence}
+### Format und Rhythmus von Qualitätsberichten {#quality-report-format-and-cadence}
 
 Definieren Sie den erforderlichen Inhalt und das Format des Qualitätsberichts sowie die Häufigkeit der Bereitstellung.
 
-### Release Coordinated {#release-coordinated}
+### Freigabekoordination {#release-coordinated}
 
-Der Projektmanager koordiniert alle Rollen, die für die Veröffentlichung in der Produktionsumgebung erforderlich sind.
+Die Projektleitung koordiniert alle Rollen, die für die Freigabe in der Produktionsumgebung erforderlich sind.
 
 ### Versionshinweise {#release-notes}
 
-Versionshinweise sind Teil der Dokumentation für die Version. Die Versionshinweise sollten Folgendes umfassen:
+Versionshinweise sind Teil der Dokumentation für die Freigabe. Die Versionshinweise sollten Folgendes abdecken:
 
 * Voraussetzungen
-* einschließlich
-* gelöste Probleme
-* bekannte Probleme in der Version
+* Enthaltene Anforderungen
+* Gelöste Probleme
+* Bekannte Probleme in der Version
 
-Es wird mit dem Runbook verwendet, um die Schritte und Prüfungen vor und nach der Installation auszuführen.
+Dieses Dokument wird zusammen mit dem Runbook verwendet, um vor und nach der Installation Arbeitsschritte und Prüfungen durchzuführen.
 
 >[!NOTE]
 >
 >Ein Beispiel finden Sie in den [AEM-Versionshinweisen](/help/release-notes/release-notes.md).
 
-### Release in der Produktionsumgebung {#release-running-on-production-environment}
+### In der Produktionsumgebung ausgeführte Version {#release-running-on-production-environment}
 
-Die endgültige Version wird ausgeführt und ist in der Produktion aktiv.
+Die endgültige Version, die in der Produktion ausgeführt wird.
 
 ### Relevante Vertragsbedingungen {#relevant-contract-terms}
 
-Spezifische Vertragsbedingungen hervorheben, die für die Durchführung des Projekts relevant sind, z. B. vertragliche Meilensteine, Rechnungszeiträume oder Personalanforderungen.
+Heben Sie bestimmte Vertragsbedingungen hervor, die für die Umsetzung des Projekts relevant sind, wie z. B. vertragliche Meilensteine, Abrechnungszeiträume oder Personalbedarf.
 
-### Berichtsfrequenz {#reporting-cadence}
+### Berichterstellungsrhythmus {#reporting-cadence}
 
-Definieren Sie gemeinsam mit dem Kunden die Häufigkeit der ihm übermittelten Berichte.
+Definieren Sie gemeinsam mit der Kundschaft die Häufigkeit der ihnen übermittelten Berichte.
 
 ### Repository-Optimierung {#repository-optimization}
 
-Daten werden nie in einer Tar-Datei überschrieben. Die Festplattenauslastung steigt auch dann, wenn nur vorhandene Daten aktualisiert werden.
+Daten in einer TAR-Datei werden nie überschrieben, sodass die Festplattenauslastung steigt, auch wenn nur vorhandene Daten aktualisiert werden.
 
-Um der immer größer werdenden Größe des Repositorys entgegenzuwirken, wird eine Optimierungsstrategie eingeführt, um veraltete Daten zu entfernen.
+Um der immer weiter zunehmenden Größe des Repositorys entgegenzuwirken, wird eine Optimierungsstrategie zur Entfernung veralteter Daten verfolgt.
 
-### Anfrage zum Einrichten des Projektabschnitts im Adobe Support-Portal {#request-for-setting-up-project-section-in-adobe-support-portal}
+### Anfrage für das Einrichten eines Projektabschnitts im Adobe Support-Portal {#request-for-setting-up-project-section-in-adobe-support-portal}
 
-Die offizielle Anfrage zum Einrichten Ihres Projekts im Adobe Support-Portal.
+Die offizielle Anfrage im Adobe Support-Portal, Ihr Projekt einzurichten.
 
-### Anforderungsdokumentation {#requirements-documentation}
+### Dokumentation der Anforderungen {#requirements-documentation}
 
-Diese Dokumentation behandelt die funktionalen und nicht funktionalen Anforderungen sowie die geschätzten Anstrengungen.
+Diese Dokumentation deckt die funktionalen und nicht funktionalen Anforderungen sowie den geschätzten Aufwand ab.
 
-### Verfügbare Ressourcen zur Unterstützung von Go Live {#resources-available-to-support-go-live}
+### Für die Live-Schaltung verfügbare Ressourcen {#resources-available-to-support-go-live}
 
-Stellen Sie sicher, dass alle für die Live-Schaltung erforderlichen Rollen besetzt und verfügbar sind.
+Stellen Sie sicher, dass alle für die Live-Schaltung erforderlichen Rollen besetzt und präsent sind.
 
 ### Risikobewertung {#risk-assessment}
 
-Die Risikobewertung wird von der IT-Abteilung des Kunden, der Sicherheitsabteilung oder beidem durchgeführt.
+Die Risikobewertung wird auf Kundenseite von der IT-Abteilung, der Sicherheitsabteilung oder beidem durchgeführt.
 
-In ihr werden die technischen und geschäftlichen Risiken des Projekts bewertet. Die Bewertung ist erforderlich, damit die Lösung die Einhaltung der Sicherheitsrichtlinien sicherstellt.
+In ihr werden die technischen und geschäftlichen Risiken des Projekts bewertet. Die Bewertung ist für die Lösung erforderlich, um die Einhaltung von Sicherheitsrichtlinien zu gewährleisten.
 
 ### Risikominimierungsplan {#risk-mitigation-plan}
 
-Der Risikominimierungsplan umfasst die Risikobewertung. Gemeinsam decken sie Folgendes ab:
+Der Risikominimierungsplan umfasst die Risikobewertung.  Gemeinsam decken sie Folgendes ab:
 
 * Ausgemachte Risiken
-* mögliche Lösungen für diese Risiken, falls sie bei der Umsetzung auftreten
+* Mögliche Lösungen für diese Risiken, falls sie bei der Implementierung auftreten sollten
 
 ### ROI-Erwartungen {#roi-expectations}
 
-Definieren Sie die mit der Lösung verbundenen ROI-Erwartungen.
+Definieren Sie die Erwartungen an die Rentabilität (Return on Investment, ROI) der Lösung.
 
-Sie sollen die wirtschaftliche Effizienz der Lösung durch Definition des erwarteten Nutzens/Gewinns in Bezug auf die voraussichtliche Investition aufzeigen.
+Ziel ist es, die Effizienz der Lösung in wirtschaftlicher Hinsicht aufzuzeigen, indem der erwartete Nutzen/Gewinn im Verhältnis zur geschätzten Investition definiert wird.
 
 ### Rollen- und Rechtekonzept {#roles-and-rights-concept}
 
-Detaillierte Beschreibung der für die neue Anwendung erforderlichen Rollen und Zugriffsrechte, einschließlich einer allgemeinen Übersicht über:
+Detaillierte Spezifizierung der Konzepte in Bezug auf Rollen und Zugriffsrechte, die für die neue Anwendung erforderlich sind, einschließlich einer allgemeinen Übersicht der folgenden Elemente:
 
 * Rollen
 * Gruppen
 * Benutzende
 * Berechtigungen
-* und Benutzerverwaltung und -bereitstellung
+* und Benutzerverwaltung und Bereitstellung
 
-### Rollen- und Rechtekonzept erfüllt Sicherheitsrichtlinien {#roles-and-rights-concept-meets-security-guidelines}
+### Erfüllung der Sicherheitsrichtlinien durch das Rollen- und Rechtekonzept {#roles-and-rights-concept-meets-security-guidelines}
 
-Überprüfung des Konzepts der Rollen und Rechte, um sicherzustellen, dass es den Sicherheitsrichtlinien entspricht.
+Überprüfung des Rollen- und Rechtekonzepts, um sicherzustellen, dass es den Sicherheitsrichtlinien entspricht.
 
-### Rollen und Berechtigungen - Spezifikation {#roles-and-rights-specification}
+### Spezifikation von Rollen und Rechten {#roles-and-rights-specification}
 
-Eine detaillierte Spezifikation, die auf dem Rollen- und Rechtekonzept basiert.
+Eine detaillierte Spezifikation basierend auf dem Rollen- und Rechtekonzept.
 
-### Sicherheitsarchitektur Recommendations {#security-architecture-recommendations}
+### Empfehlungen für die Sicherheitsarchitektur {#security-architecture-recommendations}
 
-Recommendations bezieht sich auf die Sicherheit der Software- und Hardwarearchitektur.
+Empfehlungen für die Sicherheit der Software- und Hardware-Architektur.
 
 ### Sicherheitsbasierte Kodierungsrichtlinien {#security-based-coding-guidelines}
 
-In diesen Richtlinien wird definiert, wie die Entwicklungskodierung auf der Grundlage von Sicherheitsanforderungen durchgeführt werden soll, wie z. B.:
+Diese Richtlinien legen fest, wie die Entwicklungskodierung basierend auf den folgenden Sicherheitsanforderungen erfolgen soll:
 
-* Benennungskonventionen
+* Namenskonventionen
 * Bibliotheken
 * Richtlinien für Frameworks
 * API-Nutzung
 
 ### Sicherheitscheckliste {#security-checklist}
 
-Projektspezifische Checkliste der Elemente, basierend auf dem Sicherheitskonzept, zusammen mit zusätzlichen Richtlinien, die zur Gewährleistung der Kompatibilität der Lösung erforderlich sind.
+Projektspezifische Checkliste der Elemente, die auf dem Sicherheitskonzept sowie zusätzlichen Richtlinien zur Sicherstellung der Konformität der Lösung basiert.
 
-Häufig ist dies auch als Teil der Schritte nach der Bereitstellung im Runbook enthalten.
+Diese Liste wird oft auch als Teil der Schritte nach der Bereitstellung in das Runbook aufgenommen.
 
 ### Sicherheitskonzept {#security-concept}
 
-Definieren und dokumentieren Sie Details der für die Anwendung, Architektur und Infrastruktur erforderlichen Sicherheitskonfiguration.
+Definieren und dokumentieren Sie Details der Sicherheitskonfiguration, die für die Anwendung, Architektur und Infrastruktur erforderlich ist.
 
-### Sicherheitskonzept - Entwurf {#security-concept-draft}
+### Sicherheitskonzeptentwurf {#security-concept-draft}
 
-Eine allgemeine Übersicht über die Sicherheitseinstellungen der folgenden Komponenten:
+Allgemeine Übersicht über die Sicherheitseinstellungen der folgenden Elemente:
 
 * Anwendung
 * Architektur
 * Infrastruktur
 
-### Aufgeführte und bewertete Sicherheitsprobleme {#security-issues-listed-and-assessed}
+### Erfasste und eingestufte Sicherheitsprobleme {#security-issues-listed-and-assessed}
 
-Alle Sicherheitsprobleme der Lösung aufgelistet und bewertet, einschließlich Aufwandsschätzungen.
+Alle erfassten und eingestuften Sicherheitsprobleme der Lösung einschließlich Aufwandschätzungen.
 
-### Sicherheitsabnahme von Geschäftspartnern {#security-sign-off-from-business-stakeholders}
+### Sicherheitsabnahme der Verantwortlichen aus den Geschäftsbereichen {#security-sign-off-from-business-stakeholders}
 
-Melden Sie sich von den Stakeholdern ab, um sicherzustellen, dass die Sicherheitsimplementierung mit den Richtlinien und Erwartungen übereinstimmt.
+Abnahme durch diese Verantwortlichen, um sicherzustellen, dass die Sicherheitsmaßnahmen mit den Richtlinien und Erwartungen übereinstimmen.
 
-### Einrichten von Supportprozessen {#set-up-support-processes}
+### Einrichten von Support-Prozessen {#set-up-support-processes}
 
-Legen Sie die erforderlichen Support-Prozesse fest.
+Richten Sie die erforderlichen Support-Prozesse ein.
 
 ### SLAs für Drittanbietersysteme {#slas-for-third-party-systems}
 
-Stellen Sie sicher, dass Service Level Agreements (SLAs) verfügbar sind und sowohl den Entwicklungs- als auch den Betriebsteams zur Verwendung während der Implementierung und beim Support übermittelt werden.
+Stellen Sie sicher, dass Service Level Agreements (SLAs) verfügbar sind und sowohl den Entwicklungs- als auch den Betriebs-Teams kommuniziert werden, um während der Implementierung und beim Support verwendet werden zu können.
 
-### Rauchtestkonzept {#smoke-test-concept}
+### Feuerprobenkonzept {#smoke-test-concept}
 
-Rauchtests bestehen aus einer Reihe definierter Schritte, mit denen die Schlüsselfunktionen der Lösung getestet werden, um grundlegende Vorgänge und Funktionen der Lösung sicherzustellen.
+Feuerproben bestehen aus einer Reihe definierter Schritte, mit denen die Schlüsselfunktionen der Lösung getestet werden, um grundlegende Vorgänge und Funktionen der Lösung sicherzustellen.
 
-Sie werden nach der Installation oder Bereitstellung in jeder Umgebung ausgeführt.
+Sie werden in jeder Umgebung nach der Installation oder Bereitstellung ausgeführt.
 
-### Für die Systemvalidierung ausgeführte Rauchtests {#smoke-tests-executed-for-system-validation}
+### Für die Systemvalidierung ausgeführte Feuerproben {#smoke-tests-executed-for-system-validation}
 
-Rauchtests sollten auf allen Systemen durchgeführt werden, um sicherzustellen, dass die grundlegenden Funktionen der Lösung bei der Installation oder Bereitstellung in jeder Umgebung ordnungsgemäß funktionieren.
+Feuerproben sollten auf allen Systemen durchgeführt werden, um sicherzustellen, dass die grundlegenden Funktionen der Lösung bei der Installation oder Bereitstellung in jeder Umgebung ordnungsgemäß funktionieren.
 
-### Strategie zur Softwarearchitektur {#software-architecture-strategy}
+### Strategie für die Software-Architektur {#software-architecture-strategy}
 
-Die allgemeine Strategie für die Softwarearchitektur, einschließlich Services, Servlets, Frameworks und anderen Implementierungsentscheidungen.
+Die allgemeine Strategie für die Software-Architektur, einschließlich Services, Servlets, Frameworks und anderen Implementierungsentscheidungen.
 
-### Lösungsüberprüfungsgremium eingerichtet und Sitzungskatalog festgelegt {#solution-review-board-established-and-meeting-cadence-set}
+### Bildung einer Lösungsüberprüfungskommission und Festlegen eines Besprechungszeitplans {#solution-review-board-established-and-meeting-cadence-set}
 
-Das Lösungsüberprüfungsgremium besteht aus Kunden-Interessengruppen.
+Die Lösungsüberprüfungskommission besteht aus Projektbeteiligten auf Kundenseite.
 
 Die Kommission hält regelmäßig Sitzungen ab, um die aktuellen Anforderungen und relevanten Spezifikationen laufend zu überprüfen. Ziel ist es, die Abstimmung mit der Erfolgsdefinition und den Erfolgskriterien sicherzustellen und auch einen Beitrag zur Entwicklung der Anforderungen zu leisten.
 
-### Solution Runbook {#solution-runbook}
+### Runbook der Lösung {#solution-runbook}
 
 Installationsanweisungen für die Lösung sowie grundlegende Betriebsaufgaben, die bei der Installation ausgeführt werden.
 
-### Lösungsanmeldung und Akzeptanzvorgang {#solution-sign-off-and-acceptance-process}
+### Lösungsabnahme und zugehöriger Prozess {#solution-sign-off-and-acceptance-process}
 
-Der Abnahme- und Akzeptanzprozess beschreibt die Kriterien, die erfüllt sein müssen, bevor die Lösung in eine produktive Umgebung freigegeben werden kann.
+Der Abnahmeprozess beschreibt die Kriterien, die erfüllt sein müssen, bevor die Lösung in einer Produktionsumgebung freigegeben werden kann.
 
 Sie kann auch als vertraglicher Meilenstein dienen.
 
-### Spezielles Funktionskonzept {#special-functionality-concept}
+### Konzept für Spezialfunktionalität {#special-functionality-concept}
 
-Das anfängliche Konzept für alle speziellen Funktionen, die außerhalb des normalen Entwicklungsumfangs auf der AEM Plattform betrachtet werden.
+Das anfängliche Konzept für Spezialfunktionalität, die außerhalb des normalen Entwicklungsumfangs auf der AEM-Plattform liegt.
 
-### Spezifische Funktionsspezifikation {#special-functionality-specification}
+### Spezifikation für Spezialfunktionalität {#special-functionality-specification}
 
-Details zu speziellen Funktionen, die außerhalb des normalen Entwicklungsbereichs der AEM Plattform betrachtet werden.
+Details zu jeder Spezialfunktionalität, die außerhalb des normalen Entwicklungsumfangs auf der AEM-Plattform liegt.
 
 ### Spezifikationsrichtlinien {#specification-guidelines}
 
-Alle Richtlinien des Kunden, wie die Spezifikation durchgeführt werden soll.
+Alle Richtlinien auf Kundenseite, wie die Spezifikation durchgeführt werden soll.
 
-### Definierter und kommunizierter Prozess zur Überprüfung und Genehmigung von Spezifikationen {#specification-review-and-approval-process-defined-and-communicated}
+### Definierter und kommunizierter Überprüfungs- und Genehmigungsprozess für die Spezifikation {#specification-review-and-approval-process-defined-and-communicated}
 
-Es sollte ein eindeutiges Verfahren für die Abnahme von Spezifikationen durch den Kunden eingeführt werden. Dieser Prozess gewährleistet Klarheit und Festigkeit des Umfangs für die Anforderungen.
+Es sollte ein eindeutiges Verfahren für die Abnahme von Spezifikationen auf Kundenseite vorhanden sein. Dieser Prozess gewährleistet Klarheit und Festigkeit des Umfangs für die Anforderungen.
 
-### Auswahl der Mitarbeiter für AEM Administratorschulung {#staff-selected-for-aem-administrator-training}
+### Auswahl der Mitarbeitenden für die AEM-Admin-Schulung {#staff-selected-for-aem-administrator-training}
 
-Interne Mitarbeiter, die für die Verwaltung der Lösung geschult werden müssen.
+Interne Mitarbeitende, die für die Verwaltung der Lösung geschult werden müssen.
 
-### Für die Autoren- und Endanwenderschulung ausgewählte Mitarbeiter {#staff-selected-for-author-and-end-user-training}
+### Für die Autoren- und Endanwenderschulung ausgewählte Mitarbeitende {#staff-selected-for-author-and-end-user-training}
 
-Interne Mitarbeiter, die für die Bearbeitung der Lösung geschult werden müssen.
+Interne Mitarbeiterinnen und Mitarbeiter, die für Authoring in der Lösung geschult werden müssen.
 
-### Interessenträger {#stakeholders}
+### Projektbeteiligte {#stakeholders}
 
-Interessenträger sind die wichtigsten Personen und/oder Rollen, die ein erhebliches Interesse an dem Projekt haben. Einige werden zum Projektbudget beitragen.
+Projektbeteiligte sind die wichtigsten Personen und/oder Rollen, die ein erhebliches Interesse an dem Projekt haben. Einige tragen zum Projektbudget bei.
 
 Die Projektbeteiligten können intern und/oder extern sein.
 
-### Die Interessengruppen kennen Erfolgsdefinitionen und -kriterien {#stakeholders-are-aware-of-success-definitions-and-criteria}
+### Die Projektbeteiligten kennen die Erfolgsdefinitionen und -kriterien {#stakeholders-are-aware-of-success-definitions-and-criteria}
 
-Bestätigung, dass alle Interessengruppen außerhalb des eigentlichen Implementierungsteams über Folgendes informiert sind:
+Bestätigung, dass alle Projektbeteiligten außerhalb des eigentlichen Implementierungsteams über Folgendes informiert sind:
 
 * Definitionen von Erfolg
-* Erfolgskriterien
+* Kriterien für Erfolg
 
-### Interessenträger - Projekt und Erwartungen {#stakeholders-understand-project-and-expectations}
+### Die Projektbeteiligten verstehen das Projekt und die Erwartungen {#stakeholders-understand-project-and-expectations}
 
-Bestätigung, dass alle Interessengruppen außerhalb des eigentlichen Implementierungsteams mit dem Gesamtprojekt und den Erwartungen übereinstimmen, sowohl intern für das Projektteam als auch für den Kunden.
+Bestätigung, dass alle Projektbeteiligten außerhalb des eigentlichen Implementierungs-Teams mit dem Gesamtprojekt und den Erwartungen übereinstimmen, sowohl intern gegenüber dem Projekt-Team als auch gegenüber der Kundschaft.
 
-### Definition des Status Report Formats {#status-report-format-definition}
+### Definition des Statusberichtformats {#status-report-format-definition}
 
-Statusberichte sind ein wichtiges Kommunikationsmittel. Das Format sollte mit allen Berichterstellungsanforderungen des Kunden abgestimmt werden.
+Statusberichte sind ein wichtiges Kommunikationsmittel. Das Format sollte mit allen Anforderungen der Kundschaft an die Berichterstellung abgestimmt sein.
 
-### Erfolgskriterien und Definition {#success-criteria-and-definition}
+### Erfolgskriterien und -definition {#success-criteria-and-definition}
 
-Der Kunde, der Projektsponsor und der Projektmanager oder Berater sollten Folgendes angeben:
+Die Kundin bzw. der Kunde sowie die Sponsorin bzw. der Sponsor, die Managerin bzw. der Manager oder die Beraterin bzw. der Berater des Projekts sollten Folgendes spezifizieren:
 
 * Was definiert ein erfolgreiches Ergebnis für das Projekt?
 * Die spezifischen Kriterien, die erforderlich sind, um diese Definition des Erfolgs zu erfüllen.
 
-Diese werden verwendet, um sicherzustellen, dass die Erfolgskriterien erfüllt sind:
+Die Informationen werden verwendet, um sicherzustellen, dass die Erfolgskriterien erfüllt werden, und zwar:
 
-* Als Grundlage für KPIs.
-* Bei Entscheidungen während der gesamten Implementierung.
+* als Grundlage für KPIs
+* bei der Entscheidungsfindung während der Implementierung
 
-### Unterstützung bei der Validierung gemeldeter Probleme {#support-in-validation-of-reported-issues}
+### Unterstützung bei der Überprüfung gemeldeter Probleme {#support-in-validation-of-reported-issues}
 
-Ein Teil der Verantwortung des Qualitätsleiters besteht darin, sicherzustellen, dass Ressourcen zur Verfügung stehen, um Benutzer beim Testen zu unterstützen. So können Sie beispielsweise den Benutzer beim Testen, beim Reporting von Problemen und bei der Überprüfung der Probleme in der Testumgebung unterstützen.
+Zu den Aufgaben der Leitung der Qualitätssicherung gehört es sicherzustellen, dass Ressourcen zur Verfügung stehen, um beim Testen alle Benutzenden zu unterstützen, z. B. beim Testen, Melden von Problemen und Überprüfen der Probleme in der Testumgebung.
 
 ### Support-Prozesse und Zugriff auf das Adobe-Support-Portal {#support-processes-and-access-to-adobe-support-portal}
 
-Der Zugriff auf das Adobe Support-Portal ist für die Übermittlung von Tickets zu produktbasierten Problemen, die während der Implementierung auftreten können, von entscheidender Bedeutung.
+Der Zugriff auf das Adobe-Support-Portal ist für die Übermittlung von Tickets zu allen produktbezogenen Problemen unerlässlich, die während der Implementierung auftreten können.
 
-Der Zugriff sollte wichtigen Mitgliedern des Teams gewährt werden.
+Der Zugriff sollte den wichtigsten Team-Mitgliedern gewährt werden.
 
 ### Definition der Systemarchitektur {#system-architecture-definition}
 
-Ein erster Vorschlag und eine Definition der Architektur für alle Umgebungen der Lösung.
+Hierbei handelt es sich um einen ersten Vorschlag und eine erste Definition der Architektur für alle Umgebungen der Lösung.
 
-### Dokumentation zur Systemarchitektur {#system-architecture-documentation}
+### Dokumentation der Systemarchitektur {#system-architecture-documentation}
 
-Ein Dokument, das die Systemarchitektur detailliert beschreibt, einschließlich Schnittstellen, Netzwerkstandort und Integrationen für alle Umgebungen, unter anderem Informationen.
+Hierbei handelt es sich um ein Dokument, das die Systemarchitektur detailliert beschreibt, einschließlich Schnittstellen, Netzwerkadressen und Integrationen für alle Umgebungen sowie anderer Informationen.
 
 ### Sicherheitskonzept der Systemarchitektur {#system-architecture-security-concept}
 
-Eine allgemeine Übersicht darüber, wie Sie die Systemarchitektur mit allen Sicherheitsrichtlinien konform machen. Dies kann Folgendes umfassen:
+Hierbei handelt es sich um einen allgemeinen Überblick darüber, wie sich die Systemarchitektur mit Sicherheitsrichtlinien in Einklang bringen lässt. Dies kann Folgendes umfassen:
 
 * Firewalls und Firewall-Regeln
 * Sicherheitszonen
@@ -1195,43 +1195,43 @@ Eine allgemeine Übersicht darüber, wie Sie die Systemarchitektur mit allen Sic
 * Webserver
 * Proxys und Reverse-Proxys
 
-### Identifizierte und überprüfte Systemrisikofaktoren {#system-risk-factors-identified-and-verified}
+### Identifizierte und bestätigte Systemrisikofaktoren {#system-risk-factors-identified-and-verified}
 
-Jegliche in der Risikobewertung (oder anderen Prüfungen) festgestellten Risikofaktoren werden ermittelt und bewertet:
+Alle bei der Risikobewertung (oder anderen Überprüfungen) gefundenen Risikofaktoren werden identifiziert und bewertet:
 
 * Der Grad des Risikos jedes einzelnen
-* zusammen mit dem geschätzten Aufwand für alle Änderungen an der Implementierung, die erforderlich sind, um sie zu beheben.
+* dazu der geschätzte Aufwand für Änderungen an der Implementierung, die zur Behebung von Risikofaktoren erforderlich sind
 
-### Das Team ist sich der Erfolgsdefinitionen und -kriterien bewusst {#team-is-aware-of-success-definitions-and-criteria}
+### Vertrautheit des Teams mit den Erfolgsdefinitionen und -kriterien {#team-is-aware-of-success-definitions-and-criteria}
 
-Bestätigung, dass dem gesamten Team die Erfolgsdefinitionen und -kriterien bekannt sind.
+Hierbei geht es um die Bestätigung, dass das gesamte Team mit den Erfolgsdefinitionen und -kriterien vertraut ist.
 
-### Das Team ist sich des Kommunikationsplans bewusst {#team-is-aware-of-the-communication-plan}
+### Vertrautheit des Teams mit dem Kommunikationsplan {#team-is-aware-of-the-communication-plan}
 
-Bestätigung, dass alle Mitglieder des Teams wissen, wer mit dem Kunden kommunizieren soll, zusammen mit Details zu Wie und Wann.
+Hierbei geht es um die Bestätigung, dass alle Mitglieder des Teams wissen, wer mit der Kundin bzw. dem Kunden kommunizieren soll, einschließlich Details zum Wie und Wann.
 
-### Team versteht Projekt und Erwartungen {#team-understands-project-and-expectations}
+### Vertrautheit des Teams mit dem Projekt und den Erwartungen {#team-understands-project-and-expectations}
 
-Abstimmung mit dem Gesamtprojekt und den Erwartungen, sowohl intern mit dem Projektteam als auch mit dem Kunden.
+Dies bezieht sich auf den Einklang mit dem Gesamtprojekt und den Erwartungen, sowohl intern für das Projekt-Team als auch für die Kundin bzw. den Kunden.
 
 ### Technische Anforderungen {#technical-requirements}
 
-Diese Anforderungen beziehen sich speziell auf die technische Implementierung von Diensten, die die Lösung unterstützen.
+Diese Anforderungen sind spezifisch für die technische Implementierung von Diensten, die die Lösung unterstützen.
 
-### Verifizierte technische Risikofaktoren {#technical-risk-factors-verified}
+### Überprüfen technischer Risikofaktoren {#technical-risk-factors-verified}
 
-potenzielle technische Risiken ermitteln und überprüfen. Technische Risiken können Folgendes umfassen:
+Identifizieren und überprüfen Sie potenzielle technische Risiken. Technische Risiken können Folgendes umfassen:
 
 * Cross-Site-Scripting
-* Eingabefelder für Endbenutzer
+* Eingabefelder für Endbenutzende
 * Infrastruktur
-* Technologiealterage
+* Alter der Technologie
 * Anzahl der Integrationen
 * und Abhängigkeiten
 
 ### Technische Spezifikation {#technical-specification}
 
-Die technische Spezifikation umfasst (unter anderem):
+Die technische Spezifikation deckt (u. a.) Folgendes ab:
 
 * Schnittstellen
 * Konfigurationen
@@ -1240,175 +1240,175 @@ Die technische Spezifikation umfasst (unter anderem):
 
 ### Vorlagenspezifikation {#template-specification}
 
-Die Spezifikationen für die erforderlichen Vorlagen. Diese sollten u. a. Details wie Parsys, Blueprint und Vererbungs-Mapping umfassen.
+Hierbei handelt es sich um die Spezifikationen für die erforderlichen Vorlagen. Diese sollten Details wie z. B. zum Absatzsystem, Blueprint und Vererbungszuordnung bieten.
 
 Die Spezifikationen basieren auf den Geschäftsanforderungen und den Anforderungen an das Anwendererlebnis.
 
 ### Testfälle {#test-cases}
 
-In Testfällen werden die detaillierten Schritte beschrieben, die zum Ausführen von Funktionstests der Lösung erforderlich sind.
+Testfälle spezifizieren die detaillierten Schritte, die zur Durchführung von Funktionstests der Lösung erforderlich sind.
 
-### Inhalt testen {#test-content}
+### Testinhalte {#test-content}
 
 Testinhalte sollten Produktionsinhalten so ähnlich wie möglich sein. Die Auswahl muss groß genug sein, um alle Szenarien testen zu können.
 
-### Testumgebung bereit {#test-environment-ready}
+### Bereitschaft der Testumgebung {#test-environment-ready}
 
-Stellen Sie sicher, dass die Testumgebung bereit ist und automatisierte Bereitstellungen vorhanden sind, um sicherzustellen, dass der gesamte Release-Kandidatencode für Tests auf dem neuesten Stand ist.
+Sorgen Sie dafür, dass die Testumgebung bereit ist und automatisierte Bereitstellungen vorhanden sind, um sicherzustellen, dass der gesamte Freigabekandidaten-Code für Tests aktuell ist.
 
 ### Testberichte {#test-reports}
 
-Berichte mit detaillierten Angaben zu den Testergebnissen, darunter:
+Berichte mit den Testergebnissen, einschließlich:
 
-* aufgetretene Mängel
+* Aufgetretene Fehler
 * Status der ausgeführten Testfälle
-* andere qualitätsbezogene Themen
+* Andere qualitätsbezogene Aspekte
 
 Beachten Sie Folgendes:
 
-* Jedes Testteam sollte die Möglichkeit haben, neutral zu bleiben und die Testergebnisse zu liefern.
-* Es liegt in der Verantwortung des Projektmanagers, die Auswirkungen der Ergebnisse zu bewerten und geeignete Maßnahmen zu treffen.
+* Jedes testende Team sollte die Möglichkeit haben, beim Liefern der Testergebnisse neutral zu bleiben.
+* Es obliegt der Projektleitung, die Auswirkungen der Ergebnisse zu bewerten und über geeignete Maßnahmen zu entscheiden.
 
 ### Testsuite {#test-suite}
 
-Auswahl der Automatisierungs-Suite und -Tools. Diese werden zur Automatisierung von Tests verwendet, auch für Anwendungsfälle.
+Auswahl der Automatisierungssuite und -tools.  Diese werden zur Automatisierung von Tests, einschließlich für Anwendungsfälle, verwendet.
 
-### Test Toolsuite ausgewählt {#test-tooling-suite-selected}
+### Auswahl einer Suite mit Test-Tools {#test-tooling-suite-selected}
 
-Automatisierungs-Suite und -Tools für die Anwendungsfallautomatisierung und andere Aufgaben zur Testausführung ausgewählt.
+Automatisierungssuite und -tools für die Automatisierung von Anwendungsfällen und anderen Testausführungsaufgaben.
 
 ### Testkonzept {#testing-concept}
 
-Das Testkonzept ist die allgemeine Übersicht über Tests für das Projekt, einschließlich QA, UAT, Leistung, Sicherheit und Integrationstests.
+Das Testkonzept stellt eine allgemeine Übersicht über die Tests für das Projekt dar, einschließlich Tests der Qualitätssicherung, Benutzerakzeptanz, Leistung, Sicherheit und Integration.
 
 ### Testpläne {#testing-plans}
 
-In diesen Plänen wird die Durchführung von Tests für jede Entwicklungsphase detaillierter beschrieben; sie basieren auf der [Teststrategie](#testing-strategy).
+Diese Pläne beschreiben im Detail die Ausführung von Tests für jede Entwicklungsphase und basieren auf der [Teststrategie](#testing-strategy).
 
 ### Testumfang {#testing-scope}
 
-Diese Anforderungen beziehen sich speziell auf die technische Implementierung von Diensten, die die Lösung unterstützen.
+Diese Anforderungen sind spezifisch für die technische Implementierung von Diensten, die die Lösung unterstützen.
 
 ### Teststrategie {#testing-strategy}
 
-In der Teststrategie wird die allgemeine Strategie für Qualitätssicherung und Benutzerakzeptanztests erläutert. Dazu gehören Zeitpläne, Reporting-Kadenz und Ausführung.
+Die Teststrategie skizziert die allgemeine Strategie für Qualitätssicherung und Benutzerakzeptanztests.  Dazu gehören Zeitpläne, Berichterstellungsrhythmus und Ausführung.
 
-### Integrationskonzept für Drittanbieter {#third-party-integration-concept}
+### Konzept für die Integration von Systemen von Drittanbietern {#third-party-integration-concept}
 
-Architektur- und Systemkonzept für die Integration mit Drittanbietersystemen.
+Konzept auf Architektur- und Systemebene für die Integration mit Systemen von Drittanbietern.
 
-### Spezifikation für Drittanbieterintegration {#third-party-integration-specification}
+### Spezifikation der Integrationen von Systemen von Drittanbietern {#third-party-integration-specification}
 
-Details der (funktionalen und nicht funktionalen) Anforderungen an die unterstützte Funktionalität und Integration der Drittanbietersysteme.
+Details zu den (sowohl funktionalen als auch nicht funktionalen) Anforderungen an die unterstützte Funktionalität und Integration der Systeme von Drittanbietern.
 
-### Sicherheitskonzept von Drittanbietern {#third-party-security-concept}
+### Sicherheitskonzept für Integrationen von Drittanbietern {#third-party-security-concept}
 
-Konzept zur Gewährleistung der Sicherheit von Drittanbieterintegrationen. Muss den entsprechenden Sicherheitsrichtlinien entsprechen.
+Konzept zur Gewährleistung der Sicherheit von Integrationen von Drittanbietern.  Muss mit den entsprechenden Sicherheitsrichtlinien konform sein.
 
-### Drittanbietersystem für Integration {#third-party-system-for-integration}
+### Systeme von Drittanbietern für die Integration {#third-party-system-for-integration}
 
-Stellen Sie sicher, dass alle Drittanbietersysteme mit entsprechender Dokumentation für die Integrationsimplementierung verfügbar sind.
+Stellen Sie sicher, dass alle Systeme von Drittanbietern mit der entsprechenden Dokumentation für die Implementierung der Integration zur Verfügung stehen.
 
-### Zugriff auf Systeme von Drittanbietern aktiviert {#third-party-systems-access-enabled}
+### Aktivieren des Zugriffs auf Systeme von Drittanbietern {#third-party-systems-access-enabled}
 
-Erforderliche Zugriffsrechte, die den jeweiligen Rollen gewährt werden, die mit Drittanbietersystemen verwendet werden.
+Die erforderlichen Zugriffsrechte müssen den jeweiligen Rollen gewährt werden, die in Verbindung mit Systemen von Drittanbietern verwendet werden.
 
-### Drittanbieter-Testkonzept {#third-party-testing-concept}
+### Testkonzept für Drittanbieter {#third-party-testing-concept}
 
-Definiert:
+Definiert Folgendes:
 
 * Anwendungsfälle für das Testen der Integrationen
-* Funktionen für Anwendungen von Drittanbietern
+* Funktionalität im Zusammenhang mit Anwendungen von Drittanbietern
 
-### Schwellendefinition {#threshold-definition}
+### Festlegung von Schwellenwerten {#threshold-definition}
 
 Definiert die Schlüsselwerte für Überwachungspunkte im System.
 
 Beispiel:
 
-* wie viele Kilobytes (KB) nicht gesendeter Protokolle eine Warnung auf der Hauptserverinstanz generieren
-* die Anzahl der Millisekunden der durchschnittlichen Verzögerung pro Transaktion, die toleriert wird, bevor eine Warnung auf dem Hauptserver erzeugt wird
+* Anzahl der Kilobytes (KB) nicht gesendeter Protokolle, die eine Warnung für die Haupt-Server-Instanz erzeugt
+* die Anzahl der Millisekunden der durchschnittlichen Verzögerung pro Transaktion, die toleriert wird, bevor eine Warnung auf dem Haupt-Server generiert wird
 
-### Zeitleiste und Meilensteine {#timeline-and-milestones}
+### Timeline und Meilensteine {#timeline-and-milestones}
 
-Dies sollte die Projektzeitpläne und vertraglichen Meilensteine definieren, die für Folgendes verwendet werden sollen:
+Hierin sollten die zu verwendenden Projektzeitpläne und vertraglichen Meilensteine für Folgendes festgelegt werden:
 
-* Rechnungsstellung.
-* Abstimmung anhand der Erfolgsdefinitionen, Erfolgskriterien und KPIs.
+* Fakturierung
+* Abstimmung mit den Erfolgsdefinitionen, Erfolgskriterien und KPIs.
 
 ### Gesamtprojektaufwand {#total-project-efforts}
 
-Sämtliche Aufwandsschätzungen, die aus jedem der Leads im Projekt stammen, sollten konsolidiert werden, einschließlich Aufwand, Entwicklung, System-Engineering, Architektur- und Testbemühungen.
+Alle Aufwandsschätzungen der einzelnen Projektbeteiligten müssen zusammengeführt werden, einschließlich Gemeinkosten, Entwicklung, Systemtechnik, Architektur und Testaufwand.
 
-Ist in der Vereinbarung ein Unterstützungsniveau enthalten, sollten auch Unterstützungs- und Einsatzbemühungen einbezogen werden.
+Wenn der Vertrag eine Support-Ebene enthält, müssen auch der Support- und Betriebsaufwand einbezogen werden.
 
-### Schulungsmaterial {#training-materials}
+### Schulungsmaterialien {#training-materials}
 
-Materialien für Schulungssitzungen. Die Materialien sollten speziell für die Lösung erstellt und für die Verwendung mit den Benutzerhandbüchern entwickelt werden.
+In Schulungssitzungen zu verwendende Materialien. Die Materialien müssen speziell für die Lösung erstellt und mit den Benutzerhandbüchern verwendet werden.
 
-### Versteht den Umfang des Projekts und Erwartungen {#understands-scope-of-project-and-expectations}
+### Vertrautheit mit dem Projektumfang und Erwartungen {#understands-scope-of-project-and-expectations}
 
-Die entsprechende Person sollte bestätigen, dass sie Folgendes vollständig versteht:
+Die entsprechenden Personen müssen bestätigen, dass sie Folgendes vollständig verstehen:
 
 * Umfang des Projekts
 * alle Kundenerwartungen
-* dass dies die Grundlage für alle Entscheidungen ist, die pro Person und pro Projektphase getroffen werden
+* dass dies die Grundlage aller Entscheidungen ist, die pro Rolle und Phase im Projekt getroffen werden
 
-### URL-Handling-Konzept {#url-handling-concept}
+### URL-Behandlungskonzept {#url-handling-concept}
 
-Ihr URL-Behandlungskonzept sollte AEM-spezifische URL-Funktionen abdecken, darunter:
+Ihr URL-Behandlungskonzept muss die folgenden AEM-spezifischen URL-Funktionen abdecken:
 
 * Vanity-URLs
-* Linkexternalisierung
+* Externalizer für Links
 * Fehlerseiten
-* Mapping
+* Zuordnung
 
-Das Konzept sollte auch Folgendes umfassen:
+Das Konzept muss auch Folgendes abdecken:
 
-* alle Neuschreibungsregeln
+* eventuelle Neuschreibungsregeln
 * virtuelle Hosts auf dem Webserver
-* SEO-Überlegungen, z. B. robots.txt
-* Sitemap
+* Aspekte der Suchmaschinenoptimierung, z. B. robots.txt
+* eine Sitemap
 
 ### Anwendungsfälle {#use-cases}
 
-Ein Anwendungsfall ist die Liste der Aktionen oder Ereignisschritte, die zum Erreichen eines Ziels erforderlich sind. Normalerweise definieren sie die Interaktionen zwischen einer Rolle und der Lösung. Die Rolle kann ein Benutzer oder ein externes System sein.
+Ein Anwendungsfall ist die Liste der Aktionen oder Ereignisschritte, die zur Erreichung eines Ziels ausgeführt werden müssen. In der Regel dienen sie zur Definition der Interaktionen zwischen einer Rolle und der Lösung. Die Rolle kann eine Benutzerin bzw. ein Benutzer oder ein externes System sein.
 
-### In Testszenarien konvertierte Anwendungsfälle {#use-cases-converted-into-test-scenarios}
+### In Testszenarien umgewandelte Anwendungsfälle {#use-cases-converted-into-test-scenarios}
 
-Testszenarien basieren auf den technischen und geschäftlichen Anwendungsfällen. Sie werden verwendet, um zu testen, ob das Lösungsverhalten erwartungsgemäß ist.
+Testszenarien basieren auf den technischen und geschäftlichen Anwendungsfällen. Mit ihnen wird geprüft, ob das Lösungsverhalten den Erwartungen entspricht.
 
 ### Benutzerhandbücher {#user-guides}
 
-Benutzerhandbücher bieten Informationen und Unterstützung für die Benutzer der Lösung:
+Benutzerhandbücher bieten den Benutzenden der Lösung Informationen und Unterstützung:
 
-* Autoren
-* Strombenutzer
-* Administrierende
+* Autorinnen und Autoren
+* Power Users
+* Admins
 
 ### Validierter Budgetplan {#validated-budget-plan}
 
-Der Haushaltsplan muss von allen Beteiligten überprüft und validiert werden. Sie müssen Details wie Rechnungsstellung, Beträge und Methoden/Timing der Budgetberichterstellung überprüfen.
+Der Budgetplan muss von allen Projektbeteiligten überprüft und bestätigt werden. Dabei müssen Details wie Fakturierung, Beträge und Methoden/Termine der Budgetberichterstellung überprüft werden.
 
-### White Box-Testergebnisse {#white-box-test-results}
+### White-Box-Testergebnisse {#white-box-test-results}
 
-White Box-Tests sind eine Methode, die die internen Strukturen oder das Betriebsverhalten einer Anwendung im Gegensatz zu ihrer Funktionalität testet. Whitbox-Tests können auf Ebene der Einheiten, der Integration und des Systems des Softwaretestprozesses angewendet werden.
+White Box-Tests sind eine Methode, die die internen Strukturen oder das Betriebsverhalten einer Anwendung im Gegensatz zu ihrer Funktionalität testet. White-Box-Tests können auf Einheits-, Integrations- und Systemebene des Software-Testprozesses erfolgen.
 
 ### Workflow-Spezifikationen {#workflow-specifications}
 
-Basierend auf dem Workflow-Konzept sollten diese Spezifikationen die Schritte zur Erstellung des vollständigen Workflows detailliert definieren.
+Basierend auf dem Konzept von Workflows müssen diese Spezifikationen im Detail die Schritte definieren, mit denen der gesamte Workflow erstellt wird.
 
-Die Spezifikationen der einzelnen Workflows sollten (mindestens) Folgendes umfassen:
+Die Spezifikation jedes Workflows sollte (mindestens) Folgendes enthalten:
 
-* Anwendungsfall
+* Nutzungsszenario
 * Rollen
 * Schritte
 * Ergebnisse
-* Umgang mit Fehlern
+* Fehlerbehandlung
 
-### Workflow-Konzept {#workflows-concept}
+### Konzept von Workflows {#workflows-concept}
 
-Mit Workflows können Sie AEM Aktivitäten automatisieren. Das Workflow-Konzept beschreibt Folgendes:
+Workflows ermöglichen es Ihnen, AEM-Aktivitäten zu automatisieren. Das Workflow-Konzept beschreibt Folgendes:
 
-* die Prozesse, die automatisiert werden müssen
-* die Dienste und Rollen in AEM, die betroffen sein werden
+* die Prozesse, die eine Automatisierung benötigen
+* die Dienste und Rollen in AEM, die betroffen sind

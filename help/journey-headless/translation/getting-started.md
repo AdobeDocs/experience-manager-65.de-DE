@@ -5,7 +5,7 @@ exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '1472'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -190,6 +190,6 @@ Es wird zwar empfohlen, zum nächsten Teil der Headless-Übersetzungs-Tour voran
 * [Ermitteln von zu übersetzenden Inhalten](/help/sites-administering/tc-rules.md): Erfahren Sie, wie Übersetzungsregeln Inhalte ermitteln, die übersetzt werden müssen.
 * [Konfigurieren des Frameworks für die Übersetzungsintegration](/help/sites-administering/tc-tic.md): Erfahren Sie, wie Sie das Translation Integration Framework (TIF) für die Integration mit Übersetzungs-Services von Drittanbietern konfigurieren.
 * [Verwalten von Übersetzungsprojekten](/help/sites-administering/tc-manage.md): Erfahren Sie, wie Sie sowohl maschinelle als auch menschliche Übersetzungsprojekte in AEM erstellen und verwalten.
-* Ein [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
-* Die [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
-* [Tutorials für Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)
+* Eine [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
+* Das [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
+* [Headless-Tutorials für AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)

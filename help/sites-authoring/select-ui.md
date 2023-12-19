@@ -4,14 +4,14 @@ description: Konfigurieren Sie die Benutzeroberfläche, die Sie für Adobe Exper
 exl-id: 01cab3c3-4c0d-44d9-b47c-034de9a08cb1
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 42%
+source-wordcount: '738'
+ht-degree: 98%
 
 ---
 
 # Auswahl der Benutzeroberfläche{#selecting-your-ui}
 
-Die Touch-optimierte Benutzeroberfläche von Adobe Experience Manager (AEM) ist jetzt die Standardbenutzeroberfläche und die Funktionsparität bei der Verwaltung und Bearbeitung von Sites wurde nahezu erreicht. Es kann jedoch vorkommen, dass der Benutzer zum [klassische Benutzeroberfläche](/help/sites-classic-ui-authoring/classicui.md). Dazu gibt es mehrere Möglichkeiten.
+Die Touch-optimierte Benutzeroberfläche von Adobe Experience Manager (AEM) ist jetzt die Standardbenutzeroberfläche, und die Funktionsparität bei der Administration und Bearbeitung von Sites wurde nahezu erreicht. Es kann jedoch vorkommen, dass Benutzende zur [klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/classicui.md) wechseln möchten. Dazu gibt es mehrere Möglichkeiten.
 
 >[!NOTE]
 >
@@ -19,16 +19,16 @@ Die Touch-optimierte Benutzeroberfläche von Adobe Experience Manager (AEM) ist 
 
 Es gibt verschiedene Stellen, an denen Sie definieren können, welche Benutzeroberfläche verwendet werden soll:
 
-* [Konfigurieren der Standard-Benutzeroberfläche für Ihre Instanz](#configuring-the-default-ui-for-your-instance)
-Dadurch wird die Standardbenutzeroberfläche festgelegt, die bei der Benutzeranmeldung angezeigt wird. Der Benutzer kann dies überschreiben und eine andere Benutzeroberfläche für sein Konto oder die aktuelle Sitzung auswählen.
+* [Konfigurieren der Standardbenutzeroberfläche für Ihre Instanz](#configuring-the-default-ui-for-your-instance)
+Damit wird festgelegt, dass die Standardbenutzeroberfläche bei der Benutzeranmeldung angezeigt wird. Benutzende können diese Einstellung außer Kraft setzen und eine andere Benutzeroberfläche für das eigene Konto oder die aktuelle Sitzung auswählen.
 
-* [Einrichten der klassischen Benutzeroberflächen-Bearbeitung für Ihr Konto](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account)
-Dadurch wird die Benutzeroberfläche beim Bearbeiten von Seiten als Standard festgelegt, obwohl der Benutzer dies überschreiben und eine andere Benutzeroberfläche für sein Konto oder die aktuelle Sitzung auswählen kann.
+* [Festlegen der klassischen Autorenbenutzeroberfläche für Ihr Konto](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account)
+Damit wird die Benutzeroberfläche festgelegt, die bei der Seitenbearbeitung als Standard verwendet wird. Benutzende können diese Einstellung außer Kraft setzen und eine andere Benutzeroberfläche für das eigene Konto oder die aktuelle Sitzung auswählen.
 
 * [Wechseln zur klassischen Benutzeroberfläche für die aktuelle Sitzung](#switching-to-classic-ui-for-the-current-session)
-Wechselt zur klassischen Benutzeroberfläche für die aktuelle Sitzung.
+Damit wird für die aktuelle Sitzung zur klassischen Benutzeroberfläche gewechselt.
 
-* Im Falle von [Seitenbearbeitung, überschreibt das System bestimmte Aspekte in Bezug auf die Benutzeroberfläche](#ui-overrides-for-the-editor).
+* Im Falle der [Seitenbearbeitung überschreibt das System bestimmte Aspekte in Bezug auf die Benutzeroberfläche](#ui-overrides-for-the-editor).
 
 >[!CAUTION]
 >
@@ -38,9 +38,9 @@ Wechselt zur klassischen Benutzeroberfläche für die aktuelle Sitzung.
 
 >[!NOTE]
 >
->Von einer früheren Version aktualisierte Instanzen behalten die klassische Benutzeroberfläche für die Seitenbearbeitung bei.
+>Instanzen, bei denen ein Upgrade von einer früheren Version durchgeführt wurde, behalten die klassische Benutzeroberfläche für die Seitenbearbeitung bei.
 >
->Nach der Aktualisierung wird die Seitenbearbeitung nicht automatisch auf die Touch-optimierte Benutzeroberfläche umgestellt. Sie können dies jedoch mit dem [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) des **WCM Authoring UI Mode Service** ( `AuthoringUIMode` -Dienst). Weitere Informationen dazu finden Sie unter [Benutzeroberflächenüberschreibung für den Editor](#ui-overrides-for-the-editor).
+>Nach dem Upgrade wechselt die Seitenbearbeitung nicht automatisch zur Touch-optimierten Benutzeroberfläche. Sie können dies aber mit der [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) des **WCM-Authoring-UI-Modusdienstes** (`AuthoringUIMode`-Dienst) konfigurieren. Weitere Informationen dazu finden Sie unter [Benutzeroberflächenüberschreibung für den Editor](#ui-overrides-for-the-editor).
 
 ## Konfigurieren der Standard-Benutzeroberfläche für Ihre Instanz {#configuring-the-default-ui-for-your-instance}
 
@@ -50,13 +50,13 @@ Dies kann durch Benutzerstandardeinstellungen oder Sitzungseinstellungen übersc
 
 ## Einrichten der Seitenerstellung in der klassischen Benutzeroberfläche für Ihr Konto {#setting-classic-ui-authoring-for-your-account}
 
-Jeder Benutzer kann auf seine eigenen [Benutzereinstellungen](/help/sites-authoring/user-properties.md#userpreferences) , um zu definieren, ob sie die klassische Benutzeroberfläche für die Seitenbearbeitung anstelle der standardmäßigen Benutzeroberfläche verwenden möchten.
+Benutzende können auf ihre [Benutzereinstellungen](/help/sites-authoring/user-properties.md#userpreferences) zugreifen, um zu definieren, ob sie die klassische Benutzeroberfläche anstelle der Standardbenutzeroberfläche für die Seitenbearbeitung verwenden möchten.
 
 Dies kann durch Sitzungseinstellungen überschrieben werden.
 
 ## Wechseln zur klassischen Benutzeroberfläche für die aktuelle Sitzung {#switching-to-classic-ui-for-the-current-session}
 
-Bei Verwendung der Touch-optimierten Benutzeroberfläche möchten Desktop-Benutzer möglicherweise zur klassischen Benutzeroberfläche (nur Desktop) zurückkehren. Es gibt mehrere Methoden, um für die aktuelle Sitzung zur klassischen Benutzeroberfläche zu wechseln:
+Bei Verwendung der Touch-optimierten Benutzeroberfläche möchten Desktop-Benutzende vielleicht zur klassischen Benutzeroberfläche (nur für Desktops) zurückzukehren. Es gibt mehrere Methoden, um für die aktuelle Sitzung zur klassischen Benutzeroberfläche zu wechseln:
 
 * **Navigations-Links**
 
@@ -67,9 +67,9 @@ Bei Verwendung der Touch-optimierten Benutzeroberfläche möchten Desktop-Benutz
   >
   >Weitere Informationen finden Sie unter [Aktivieren des Zugriffs auf die klassische Benutzeroberfläche](/help/sites-administering/enable-classic-ui.md).
 
-  Wenn diese Option aktiviert ist, wird jedes Mal, wenn Sie den Mauszeiger über eine entsprechende Konsole bewegen, ein Symbol (ein Monitorsymbol) angezeigt. Wenn Sie darauf tippen/klicken, wird der entsprechende Speicherort in der klassischen Benutzeroberfläche geöffnet.
+  Wenn diese Option aktiviert ist, wird jedes Mal, wenn Sie den Mauszeiger über eine entsprechende Konsole bewegen, ein Symbol (ein Monitorsymbol) angezeigt. Wenn Sie darauf tippen/klicken, wird der entsprechende Bereich in der klassischen Benutzeroberfläche geöffnet.
 
-  Beispielsweise die Links von **Sites** nach **siteadmin**:
+  Zum Beispiel die Verknüpfungen von **Sites** zu **siteadmin**: 
 
   ![syui-01](assets/syui-01.png)
 
@@ -100,7 +100,7 @@ Sofern aktiviert, ist die Option **Klassische Benutzeroberfläche öffnen** im D
 
 ### Benutzeroberflächenüberschreibungen für den Editor {#ui-overrides-for-the-editor}
 
-Die von einem Benutzer oder Systemadministrator festgelegten Einstellungen können vom System überschrieben werden, wenn Seiten bearbeitet werden.
+Die von Benutzenden oder Systemadmins festgelegten Einstellungen können bei der Seitenbearbeitung vom System außer Kraft gesetzt werden.
 
 * Beim Bearbeiten von Seiten:
 
@@ -112,17 +112,17 @@ Die von einem Benutzer oder Systemadministrator festgelegten Einstellungen könn
 
 * Jede erzwungene Einstellung ist temporär und nur für die aktuelle Browser-Sitzung gültig.
 
-   * Ein festgelegtes Cookie hängt davon ab, ob die Touch-Funktion ( `editor.html`) oder klassisch ( `cf#`) verwendet wird.
+   * Ein Cookie wird abhängig davon gesetzt, ob die Touch-optimierte (`editor.html`) oder die klassische (`cf#`) Variante verwendet wird.
 
-* Beim Öffnen von Seiten durch `siteadmin`, werden folgende Fälle geprüft:
+* Beim Öffnen von Seiten durch `siteadmin` wird überprüft, ob Folgendes vorhanden ist:
 
    * dem Cookie
    * einer Benutzervoreinstellung
-   * Wenn keines von beiden vorhanden ist, wird standardmäßig die im [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) des **WCM Authoring UI Mode Service** ( `AuthoringUIMode` -Dienst).
+   * Wenn keines von beiden vorhanden ist, werden standardmäßig die Definitionen verwendet, die in der [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) des **WCM Authoring UI Mode Service** (`AuthoringUIMode`-Service) festgelegt sind.
 
 >[!NOTE]
 >
->Wenn [ein Benutzer bereits eine Voreinstellung für die Seitenbearbeitung definiert hat](#settingthedefaultauthoringuiforyouraccount), das nicht durch Ändern der OSGi-Eigenschaft überschrieben wird.
+>Wenn [eine Benutzerin oder ein Benutzer bereits eine Voreinstellung für die Seitenbearbeitung definiert hat](#settingthedefaultauthoringuiforyouraccount), wird diese nicht durch Ändern der OSGi-Eigenschaft überschrieben.
 
 >[!CAUTION]
 >

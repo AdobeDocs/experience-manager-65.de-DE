@@ -4,8 +4,8 @@ description: Informationen zu Foundation-Komponenten in Adobe Experience Manager
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7204'
-ht-degree: 97%
+source-wordcount: '6872'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 97%
 
 Die Foundation-Komponenten wurden für die Verwendung beim Bearbeiten von Inhalten für eine Standardwebseite entworfen. Sie bilden eine Teilmenge der Komponenten, die vorkonfiguriert für eine Standardinstallation von AEM verfügbar sind.
 
-Einige sind direkt im Komponenten-Browser verfügbar, viele andere stehen außerdem im [Design-Modus](/help/sites-authoring/default-components-designmode.md) (wenn die Seite auf einer statischen Vorlage basiert) bzw. beim [Bearbeiten der Vorlage](/help/sites-authoring/templates.md) (wenn die Seite auf einer bearbeitbaren Vorlage basiert) zur Verfügung.
+Einige sind sofort über den Komponenten-Browser verfügbar. Verschiedene weitere sind auch verfügbar, indem Sie [Designmodus](/help/sites-authoring/default-components-designmode.md) (wenn die Seite auf einer statischen Vorlage basiert) oder von [Bearbeiten der Vorlage](/help/sites-authoring/templates.md) (wenn die Seite auf einer bearbeitbaren Vorlage basiert).
 
 Die Verwendung von Foundation-Komponenten wird unterstützt, sie wurden jedoch größtenteils eingestellt und durch Kernkomponenten ersetzt, die eine größere Erweiterbarkeit und Flexibilität bieten.
 
@@ -109,7 +109,7 @@ Wenn es sich bei dem Bild um ein JPEG-Bild handelt, kann die Anzeigegröße sich
 
 #### Eigenschaften {#properties}
 
-Über das Dialogfeld können Sie Eigenschaften für Ihre Instanz der Komponente Adaptives Bild bearbeiten, von denen viele mit der Bildkomponente übereinstimmen, auf der sie basiert. Die Eigenschaften sind auf zwei Registerkarten verfügbar:
+Das Dialogfeld erlaubt das Bearbeiten der Eigenschaften Ihrer Instanz der adaptiven Bildkomponente, von denen viele mit denen der Bildkomponente übereinstimmen, auf der sie basieren. Diese Eigenschaften sind auf zwei Registerkarten verfügbar:
 
 * **Bild**
 
@@ -202,11 +202,11 @@ Sie können eine Textsuchabfrage eingeben.
       * **Optionen für die erweiterte Suche**
 
          * **Querybuilder-Eigenschafts-Notation**
-Geben Sie mit der Querybuilder-Eigenschafts-Notation eine Suchabfrage ein. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.
-Unter [QueryBuilder API](/help/sites-developing/querybuilder-api.md) finden Sie eine umfassende Übersicht über Abfrageausdrücke sowie weitere Beispiele.
+Sie können eine Suchabfrage mit der Querybuilder-Eigenschafts-Notation eingeben. Sie können beispielsweise &quot;fulltext=Marketing&quot;eingeben, damit alle Seiten mit &quot;Marketing&quot;in ihrem Inhalt im Karussell angezeigt werden.
+Unter [„QueryBuilder API“](/help/sites-developing/querybuilder-api.md) finden Sie eine umfassende Übersicht über Abfrageausdrücke sowie weitere Beispiele.
 
    * **Sortierreihenfolge**
-Wählen Sie `jcr:title`, `jcr:created`, `cq:lastModified` oder `cq:template` aus dem Dropdown-Menü aus.
+Auswählen `jcr:title`, `jcr:created`, `cq:lastModified`oder `cq:template` aus dem Dropdown-Menü aus.
 
    * **Limit**
 Optional. Die maximale Anzahl von Elementen, die Sie im Karussell verwenden möchten.
@@ -463,7 +463,7 @@ Diese Komponente liefert ein Rasterabsatzsystem, mit dem Sie Komponenten in eine
 >
 >Diese Foundation-Komponente ist veraltet. Adobe empfiehlt, stattdessen die [ Kernkomponente „Liste“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=de) zu verwenden.
 
-Mit der Komponente Liste können Sie Suchkriterien für die Anzeige einer Liste konfigurieren:
+Mit der Listenkomponente können Sie Suchkriterien zur Anzeige einer Liste konfigurieren:
 
 * **Liste**
 
@@ -812,7 +812,7 @@ Weitere Informationen zum Anwenden von Tags finden Sie unter [Verwenden von Tags
 >
 >Die Foundation-Komponente **Text** basiert ebenso wie die Foundation-Komponente **Tabelle** auf dem [Rich-Text-Editor](/help/sites-authoring/rich-text-editor.md).
 
-Mit der Textkomponente können Sie einen Textblock unter Verwendung eines WYSIWYG-Editors eingeben, dessen Funktionalität vom [Rich-Text-Editor](/help/sites-authoring/rich-text-editor.md) bereitgestellt wird. Über eine Auswahl von Symbolen können Sie Ihren Text formatieren, einschließlich Schriftmerkmale, Ausrichtung, Links, Listen und Einzügen.
+Mit der Textkomponente können Sie einen Textblock unter Verwendung eines WYSIWYG-Editors eingeben, dessen Funktionalität vom [Rich-Text-Editor](/help/sites-authoring/rich-text-editor.md) bereitgestellt wird. Mit einer Reihe von Symbolen können Sie Ihren Text formatieren, einschließlich Schriftart, Ausrichtung, Links, Listen und Einzug.
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -849,7 +849,7 @@ Sie können Folgendes konfigurieren:
 
 * **Bildeigenschaften** (**Erweiterte Bildeigenschaften**)
 
-  Hier können Sie Folgendes angeben:
+  Hiermit können Sie Folgendes festlegen:
 
    * **Bild-Asset**
 
@@ -1010,7 +1010,7 @@ Beim Konfigurieren einer jeden Formularkomponente sind die folgenden Registerkar
 
 * **Titel und Text**
 
-  Hier müssen Sie grundlegende Informationen angeben, wie den Titel des Formulars und begleitenden Text. Gegebenenfalls können Sie auch andere Schlüsselinformationen definieren, z. B. ob das Feld mehrmals ausgewählt werden kann und welche Elemente ausgewählt werden können.
+  Hier müssen Sie grundlegende Informationen angeben, wie den Titel des Formulars und begleitenden Text. Gegebenenfalls können Sie hier auch andere wichtige Informationen definieren, z. B. ob das Feld mehrfach auswählbar ist und welche Elemente zur Auswahl stehen.
 
 * **Anfangswerte**
 
@@ -1360,7 +1360,7 @@ Sie können verschiedene Parameter für diese Komponente konfigurieren, einschli
 >
 >Diese Foundation-Komponente ist veraltet. Adobe empfiehlt, stattdessen die [Kernkomponente „Formularoptionen“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html?lang=de) zu verwenden.
 
-Mit einem Kontrollkästchen können Sie eine Liste mehrerer Kontrollkästchen erstellen, von denen mehrere gleichzeitig ausgewählt werden können.
+Mit einem Kontrollkästchen können Sie eine Liste aus einem oder mehreren Kontrollkästchen erstellen, von denen mehrere gleichzeitig aktiviert werden können.
 
 ![dc_form_checkboxgroupuse](assets/dc_form_checkboxgroupuse.png)
 
@@ -1511,7 +1511,7 @@ Sie können den Elementnamen zusammen mit einem Titel und einer Beschreibung ang
 >
 >Diese Foundation-Komponente ist veraltet. Adobe empfiehlt, stattdessen die [Kernkomponente „Formularschaltfläche“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html?lang=de) zu verwenden.
 
-Mit dieser Komponente können Sie eine Senden-Schaltfläche mit dem Standardtext erstellen:
+Mit dieser Komponente können Sie eine Senden-Schaltfläche mit Standardtext erstellen:
 
 ![dc_form_submitbutton](assets/dc_form_submitbutton.png)
 

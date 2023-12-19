@@ -11,7 +11,7 @@ exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1447'
-ht-degree: 71%
+ht-degree: 77%
 
 ---
 
@@ -100,7 +100,7 @@ So rendern Sie ein Formular mit aktivierten Nutzungsrechten mithilfe der Forms-A
 
    * Erstellen Sie ein Objekt `ReaderExtensionSpec`, indem Sie den Konstruktor verwenden.
    * Geben Sie den Alias der Berechtigung an, indem Sie die `ReaderExtensionSpec` -Objekt `setReCredentialAlias` -Methode und geben Sie einen Zeichenfolgenwert an, der den Alias-Wert darstellt.
-   * Legen Sie die einzelnen Nutzungsrechte fest, indem Sie die entsprechende Methode aufrufen, die zum `ReaderExtensionSpec`-Objekt gehört. Sie können jedoch nur dann ein Verwendungsrecht festlegen, wenn die von Ihnen referenzierte Berechtigung dies zulässt. Das heißt, Sie können kein Verwendungsrecht festlegen, wenn die Berechtigung es nicht erlaubt, es festzulegen. Beispiel. Um die Verwendungsrechte festzulegen, mit denen ein Benutzer Formularfelder ausfüllen und das Formular speichern kann, rufen Sie die `ReaderExtensionSpec` -Objekt `setReFillIn` -Methode und -übergabe `true`.
+   * Legen Sie die einzelnen Nutzungsrechte fest, indem Sie die entsprechende Methode aufrufen, die zum `ReaderExtensionSpec`-Objekt gehört. Sie können jedoch nur dann ein Nutzungsrecht festlegen, wenn die von Ihnen referenzierte Berechtigung dies zulässt. Das heißt, Sie können keine Nutzungsrechte festlegen, wenn die Berechtigung Ihnen dies nicht erlaubt. Beispiel. Um die Verwendungsrechte festzulegen, mit denen ein Benutzer Formularfelder ausfüllen und das Formular speichern kann, rufen Sie die `ReaderExtensionSpec` -Objekt `setReFillIn` -Methode und -übergabe `true`.
 
    >[!NOTE]
    >
@@ -108,7 +108,7 @@ So rendern Sie ein Formular mit aktivierten Nutzungsrechten mithilfe der Forms-A
 
 1. Rendern eines Formulars mit aktivierten Nutzungsrechten
 
-   Rufen Sie die `FormsServiceClient` -Objekt `renderPDFFormWithUsageRights` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `renderPDFFormWithUsageRights` des Objekts `FormsServiceClient` auf und geben Sie die folgenden Werte weiter:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document`-Objekt.
@@ -124,7 +124,7 @@ So rendern Sie ein Formular mit aktivierten Nutzungsrechten mithilfe der Forms-A
    * Ermitteln Sie den Inhaltstyp des `com.adobe.idp.Document`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
    * Legen Sie die `javax.servlet.http.HttpServletResponse` Inhaltstyp des Objekts durch Aufrufen seiner `setContentType` -Methode verwenden und den Inhaltstyp der `com.adobe.idp.Document` -Objekt.
    * Erstellen Sie eine `javax.servlet.ServletOutputStream` -Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser durch Aufrufen der `javax.servlet.http.HttpServletResponse` -Objekt `getOutputStream` -Methode.
-   * Erstellen Sie eine `java.io.InputStream` -Objekt durch Aufrufen der `com.adobe.idp.Document` -Objekt `getInputStream` -Methode.
+   * Erstellen Sie ein Objekt vom Typ `java.io.InputStream`, indem Sie die Methode `getInputStream` des Objekts `com.adobe.idp.Document` aufrufen.
    * Erstellen Sie ein Byte-Array, das mit dem Formulardatenstream gefüllt wird, indem Sie die `InputStream` -Objekt `read` -Methode verwenden und das Byte-Array als Argument übergeben.
    * Rufen Sie die `javax.servlet.ServletOutputStream` -Objekt `write` -Methode zum Senden des Formulardatenstreams an den Client-Webbrowser. Übergeben Sie das Byte-Array an die Methode `write`.
 
@@ -153,11 +153,11 @@ Rendering eines Formulars mit aktivierten Rechten mithilfe der Forms API (Webser
 
    * Erstellen Sie ein Objekt `ReaderExtensionSpec`, indem Sie den Konstruktor verwenden.
    * Geben Sie den Alias der Berechtigung an, indem Sie die `ReaderExtensionSpec` -Objekt `setReCredentialAlias` -Methode und geben Sie einen Zeichenfolgenwert an, der den Alias-Wert darstellt.
-   * Legen Sie die einzelnen Nutzungsrechte fest, indem Sie die entsprechende Methode aufrufen, die zum `ReaderExtensionSpec`-Objekt gehört. Sie können jedoch nur dann ein Verwendungsrecht festlegen, wenn die von Ihnen referenzierte Berechtigung dies zulässt. Das heißt, Sie können kein Verwendungsrecht festlegen, wenn die Berechtigung es nicht erlaubt, es festzulegen. Rufen Sie die `ReaderExtensionSpec` -Objekt `setReFillIn` -Methode und -übergabe `true`.
+   * Legen Sie die einzelnen Nutzungsrechte fest, indem Sie die entsprechende Methode aufrufen, die zum `ReaderExtensionSpec`-Objekt gehört. Sie können jedoch nur dann ein Nutzungsrecht festlegen, wenn die von Ihnen referenzierte Berechtigung dies zulässt. Das heißt, Sie können keine Nutzungsrechte festlegen, wenn die Berechtigung Ihnen dies nicht erlaubt. Rufen Sie die `ReaderExtensionSpec` -Objekt `setReFillIn` -Methode und -übergabe `true`.
 
 1. Rendern eines Formulars mit aktivierten Nutzungsrechten
 
-   Rufen Sie die `FormsService` -Objekt `renderPDFFormWithUsageRights` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `renderPDFFormWithUsageRights` des Objekts `FormsService` auf und geben Sie die folgenden Werte weiter:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `BLOB`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten mit dem Formular zusammenführen wollen, müssen Sie ein `BLOB`-Objekt übergeben, das auf einer leeren XML-Datenquelle basiert. Sie können kein `BLOB`-Objekt übergeben, das Null ist; andernfalls wird eine Ausnahme ausgelöst.

@@ -9,14 +9,14 @@ legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2384'
-ht-degree: 77%
+source-wordcount: '2340'
+ht-degree: 98%
 
 ---
 
-# Entwickeln von Adobe Experience Manager-Komponenten (AEM) (klassische Benutzeroberfläche){#developing-aem-components-classic-ui}
+# Entwickeln von Adobe Experience Manager(AEM)-Komponenten (klassische Benutzeroberfläche){#developing-aem-components-classic-ui}
 
-Die klassische Benutzeroberfläche nutzt ExtJS, um Widgets zu erstellen, die das Erscheinungsbild der Komponenten angeben. Aufgrund der Eigenschaften dieser Widgets gibt es einige Unterschiede zwischen der Interaktion von Komponenten mit der klassischen Benutzeroberfläche und der [Touch-optimierte Benutzeroberfläche](/help/sites-developing/developing-components.md).
+Die klassische Benutzeroberfläche nutzt ExtJS, um Widgets zu erstellen, die das Erscheinungsbild der Komponenten angeben. Aufgrund der Eigenschaften dieser Widgets gibt es einige Unterschiede zwischen der Interaktion von Komponenten mit der klassischen Benutzeroberfläche und der [Touch-optimierten Benutzeroberfläche](/help/sites-developing/developing-components.md).
 
 >[!NOTE]
 >
@@ -30,17 +30,17 @@ Die klassische Benutzeroberfläche nutzt ExtJS, um Widgets zu erstellen, die das
 
 ## Struktur {#structure}
 
-Die grundlegende Struktur einer Komponente wird auf der Seite [AEM-Komponenten – die Grundlagen](/help/sites-developing/components-basics.md#structure) behandelt, die für Touch-optimierte und klassische Benutzeroberflächen gelten. Selbst wenn Sie die Einstellungen für die Touch-optimierte Benutzeroberfläche in Ihrer neuen Komponente nicht verwenden müssen, kann es hilfreich sein, sie beim Erben von vorhandenen Komponenten zu beachten.
+Die grundlegende Struktur einer Komponente wird auf der Seite [AEM-Komponenten – die Grundlagen](/help/sites-developing/components-basics.md#structure) behandelt, die für Touch-optimierte und klassische Benutzeroberflächen gelten. Auch wenn Sie die Einstellungen für die Touch-optimierte Benutzeroberfläche in Ihrer neuen Komponente nicht verwenden müssen, ist es möglicherweise hilfreich, diese beim Vererben aus vorhandenen Komponenten zu beachten.
 
 ## JSP-Skripte {#jsp-scripts}
 
-JSP-Skripte oder -Servlets können verwendet werden, um Komponenten zu rendern. Gemäß den Anforderungsverarbeitungsregeln von Sling lautet der Name des Standardskripts:
+JSP-Skripte oder -Servlets können verwendet werden, um Komponenten zu rendern. Gemäß den Verarbeitungsregeln für Anfragen von Sling lautet der Name für das Standardskript:
 
 `<*componentname*>.jsp`
 
 ## global.jsp {#global-jsp}
 
-Die JSP-Skriptdatei `global.jsp` wird verwendet, um schnellen Zugriff auf bestimmte Objekte (d. h. den Zugriff auf Inhalte) zu jeder JSP-Skriptdatei zu ermöglichen, die zum Rendern einer Komponente verwendet wird.
+Die JSP-Skriptdatei `global.jsp` wird verwendet, um allen JSP-Skriptdateien, die zum Rendern einer Komponente verwendet werden, einen schnellen Zugriff auf bestimmte Objekte (d. h. Zugriff auf Inhalte) bereitzustellen.
 
 Daher muss `global.jsp` in jedem JSP-Skript enthalten sein, das Komponenten rendert, bei dem mindestens ein in `global.jsp` bereitgestelltes Objekt verwendet wird.
 
@@ -70,8 +70,8 @@ Zusammenfassung:
    * `properties` – die Eigenschaften der betreffenden Ressource (`resource.adaptTo(ValueMap.class);`).
    * `pageProperties` – die Eigenschaften der Seite der betreffenden Ressource.
    * `pageManager` – der Seitenmanager für den Zugriff auf AEM-Inhalts-Seiten (`resourceResolver.adaptTo(PageManager.class);`).
-   * `component` - Das Komponentenobjekt der aktuellen AEM-Komponente.
-   * `designer` - Das Designer-Objekt zum Abrufen von Designinformationen ( `resourceResolver.adaptTo(Designer.class);`).
+   * `component` – das Komponentenobjekt der aktuellen AEM-Komponente.
+   * `designer` – das Designer-Objekt zum Abrufen von Design-Informationen (`resourceResolver.adaptTo(Designer.class);`).
    * `currentDesign` – das Design der betreffenden Ressource.
    * `currentStyle` – der Stil der betreffenden Ressource.
 
@@ -109,13 +109,13 @@ Weitere Informationen finden Sie im Dokument [Tag-Bibliotheken](/help/sites-dev
 
 Moderne Websites beruhen in hohem Maße auf der Client-seitigen Verarbeitung durch einen komplexen JavaScript- und CSS-Code. Die Organisation und Optimierung der Bereitstellung dieses Codes kann äußerst kompliziert sein.
 
-Um dieses Problem zu beheben, bietet AEM **Clientseitige Bibliotheksordner**, mit dem Sie Ihren clientseitigen Code im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie jede Codekategorie dem Client bereitgestellt werden soll. Das Client-seitige Bibliotheksystem übernimmt dann das Herstellen der richtigen Links auf der endgültigen Webseite, um den korrekten Code zu laden.
+Um Abhilfe zu schaffen, stellt AEM **Client-seitige Bibliotheksordner** zur Verfügung, mit denen Sie Ihren Client-seitigen Code im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie jede Code-Kategorie dem Client bereitgestellt werden soll. Das Client-seitige Bibliotheksystem übernimmt dann das Herstellen der richtigen Links auf der endgültigen Webseite, um den korrekten Code zu laden.
 
 Weitere Informationen finden Sie im Dokument [Verwendung Client-seitiger HTML-Bibliotheken](/help/sites-developing/clientlibs.md).
 
 ## Dialogfeld {#dialog}
 
-Ihre Komponente benötigt ein Dialogfeld, in dem Autoren den Inhalt hinzufügen und konfigurieren können.
+Ihre Komponente benötigt ein Dialogfeld, in dem Autorinnen und Autoren den Inhalt hinzufügen und konfigurieren können.
 
 Weitere Details finden Sie unter [AEM-Komponenten – die Grundlagen](/help/sites-developing/components-basics.md#dialogs).
 
@@ -143,9 +143,9 @@ Ein Beispiel für die Entwicklung einer Komponente wird in [Erweitern der Text- 
 
 ### Entwickeln einer neuen Komponente (Anpassen einer vorhandenen Komponente) {#develop-a-new-component-adapt-existing-component}
 
-Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwickeln, können Sie die Komponente kopieren, eine JavaScript-Datei für die neue Komponente erstellen und sie an einem Speicherort speichern, auf den AEM zugreifen können (siehe auch [Anpassen von Komponenten und anderen Elementen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)):
+Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwickeln, können Sie die Komponente kopieren, eine JavaScript-Datei für die neue Komponente erstellen und sie an einem Speicherort speichern, der für AEM zugänglich ist (siehe auch [Anpassen von Komponenten und anderen Elementen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)):
 
-1. Erstellen Sie mithilfe von CRXDE Lite einen Komponentenordner in:
+1. Verwenden Sie CRXDE Lite und erstellen Sie einen neuen Komponentenordner unter:
 
    / `apps/<myProject>/components/<myComponent>`
 
@@ -167,7 +167,7 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
    * Ersetzen der `.jsp`-Datei (Benennen Sie sie nach Ihrer neuen Komponente)
    * oder vollständiges Überarbeiten der gesamten Komponente, falls gewünscht
 
-   Wenn Sie beispielsweise eine Kopie der standardmäßigen Textkomponente erstellen, können Sie dem Dialogfeld ein zusätzliches Feld hinzufügen und dann die `.jsp` , um die dort vorgenommenen Eingaben zu verarbeiten.
+   Beispiel: Wenn Sie eine Kopie der standardmäßigen Textkomponente erstellen, können Sie dem Dialogfeld ein zusätzliches Feld hinzufügen und dann die `.jsp`-Datei aktualisieren, damit die hier vorgenommenen Eingaben verarbeitet werden.
 
    >[!NOTE]
    >
@@ -178,17 +178,17 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
 
    >[!NOTE]
    >
-   >Ein für die klassische Benutzeroberfläche definiertes Dialogfeld wird in der Touch-optimierten Benutzeroberfläche verwendet.
+   >Ein Dialogfeld, das für die klassische Benutzeroberfläche definiert ist, funktioniert in der Touch-optimierten Benutzeroberfläche.
    >
    >Ein Dialogfeld, das für die Touch-optimierte Benutzeroberfläche definiert ist, funktioniert nicht in der klassischen Benutzeroberfläche.
    >
-   >Je nach Instanz und Autorenumgebung können Sie beide Dialogtypen für Ihre Komponente definieren.
+   >Abhängig von Ihrer Instanz und der Autorenumgebung können Sie beide Dialogfeldtypen für Ihre Komponente definieren.
 
 1. Einer der folgenden Knoten muss vorhanden und ordnungsgemäß initialisiert sein, damit die neue Komponente angezeigt wird:
 
    * `cq:dialog` – Dialogfeld für die Touch-optimierte Benutzeroberfläche
    * `dialog` – Dialogfeld für die klassische Benutzeroberfläche
-   * `cq:editConfig` - Verhalten von Komponenten in der Bearbeitungsumgebung (z. B. per Drag &amp; Drop)
+   * `cq:editConfig` – Verhalten von Komponenten in der Bearbeitungsumgebung (z. B. Drag-and-Drop)
    * `design_dialog` – Dialogfeld für den Design-Modus (nur klassische Benutzeroberfläche)
 
 1. Aktivieren Sie die neue Komponente in Ihrem Absatzsystem anhand folgender Optionen:
@@ -206,7 +206,7 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
 
 Nachdem die Komponente entwickelt wurde, fügen Sie sie zum Absatzsystem hinzu, wodurch Autorinnen und Autoren die Komponente auswählen und beim Bearbeiten einer Seite verwenden können.
 
-1. Rufen Sie eine Seite in Ihrer Autorenumgebung auf, die das Absatzsystem verwendet, zum Beispiel, `<contentPath>/Test.html`.
+1. Greifen Sie auf eine Seite in Ihrer Authoring-Umgebung zu, die beispielsweise das Absatzsystem verwendet `<contentPath>/Test.html`.
 1. Wechseln Sie auf eine der folgenden Arten zum Design-Modus:
 
    * Hinzufügen von `?wcmmode=design` zum Ende der URL und erneuter Zugriff, z. B.:
@@ -227,12 +227,12 @@ Nachdem die Komponente entwickelt wurde, fügen Sie sie zum Absatzsystem hinzu, 
 
 ### Erweitern der Text- und Bildkomponente – ein Beispiel {#extending-the-text-and-image-component-an-example}
 
-In diesem Abschnitt finden Sie ein Beispiel dafür, wie die häufig verwendete Text- und Bildstandard-Komponente mit einer konfigurierbaren Bildplatzierungsfunktion erweitert werden kann.
+Dieser Abschnitt bietet ein Beispiel dazu, wie die weithin verwendete, standardmäßige Text- und Bildkomponente um eine konfigurierbare Bildplatzierungsfunktion erweitert wird.
 
 Die Erweiterung der Text- und Bildkomponente ermöglicht es Editorinnen bzw. Editoren, alle vorhandenen Funktionen der Komponente zu verwenden. Außerdem bietet sie eine zusätzliche Option, um die Platzierung des Bildes anzugeben:
 
 * Auf der linken Seite des Texts (aktuelles Verhalten und der neue Standard)
-* Und rechts
+* und auf der rechten Seite
 
 Nachdem Sie diese Komponente erweitert haben, können Sie die Bildplatzierung über das Dialogfeld der Komponente konfigurieren.
 
@@ -252,7 +252,7 @@ In dieser Übung werden die folgenden Techniken beschrieben:
 
 #### Erweitern der vorhandenen textimage-Komponente {#extending-the-existing-textimage-component}
 
-Um die Komponente zu erstellen, verwenden Sie die standardmäßige textimage-Komponente als Grundlage und ändern Sie sie. Sie speichern die neue Komponente in der Geometrixx AEM WCM-Beispielanwendung.
+Zum Erstellen der Komponente verwenden Sie die standardmäßige textimage-Komponente als Grundlage und bearbeiten Sie sie. Speichern Sie die neue Komponente in der Geometrixx-AEM WCM-Beispielanwendung.
 
 1. Kopieren Sie die standardmäßige textimage-Komponente aus `/libs/foundation/components/textimage` in den Geometrixx-Komponentenordner `/apps/geometrixx/components` und verwenden Sie textimage als Namen des Zielknotens. (Kopieren Sie die Komponente, indem Sie zur Komponente navigieren, mit der rechten Maustaste klicken, „Kopieren“ auswählen und zum Zielverzeichnis navigieren.)
 
@@ -294,7 +294,7 @@ Um die Komponente zu erstellen, verwenden Sie die standardmäßige textimage-Kom
 
    Auf diese Weise wird beim Ablegen eines Bilds in der Komponente auf der Seite die `sling:resourceType`-Eigenschaft der erweiterten textimage-Komponente auf `geometrixx/components/textimage.` festgelegt.
 
-1. Ändern Sie das Dialogfeld der Komponente, um die neue Option einzubinden. Die neue Komponente erbt die Teile des Dialogfelds, die dem Original entsprechen. Der einzige Zusatz, den Sie machen, besteht darin, die **Erweitert** Registerkarte, um eine **Bildposition** Dropdown-Liste mit Optionen **Left** und **Right**:
+1. Ändern Sie das Dialogfeld der Komponente, um die neue Option einzubinden. Die neue Komponente erbt die Teile des Dialogfelds, die dem Original entsprechen. Die einzige Ergänzung, die Sie vornehmen, ist die Erweiterung der Registerkarte **Erweitert** um eine Dropdown-Liste **Bildposition** mit den Optionen **Links** und **Rechts**:
 
    * Lassen Sie die `textimage/dialog`-Eigenschaften unverändert.
 
@@ -309,7 +309,7 @@ Um die Komponente zu erstellen, verwenden Sie die standardmäßige textimage-Kom
    * Für tab3:
 
       * Lassen Sie die Eigenschaften und Unterknoten unverändert.
-      * Hinzufügen einer Felddefinition zu `tab3/items`, Knotenposition des Typs `cq:Widget`
+      * Fügen Sie zu `tab3/items`, der Knotenposition von Typ `cq:Widget`, eine Felddefinition hinzu.
       * Legen Sie die folgenden Eigenschaften (vom Typ „String“) für den neuen Knoten `tab3/items/position` fest:
 
          * `name`: `./imagePosition`
@@ -336,7 +336,7 @@ Um die Komponente zu erstellen, verwenden Sie die standardmäßige textimage-Kom
         image.loadStyleData(currentStyle);
    ```
 
-   Sie werden das hervorgehobene Codefragment ersetzen *%>&lt;div class=&quot;image&quot;>&lt;%* mit neuem Code, der einen benutzerdefinierten Stil für dieses Tag generiert.
+   Wir ersetzen das hervorgehobene Code-Fragment *%>&lt;div class=&quot;image&quot;>&lt;%* durch einen neuen Code, der einen benutzerdefinierten Stil für dieses Tag generiert.
 
    ```xml
    // todo: add new CSS class for the 'right image' instead of using
@@ -367,7 +367,7 @@ Die Komponente speichert ihren Inhalt in einem Absatz auf der Unternehmensseite.
 
 ### Deaktivieren der Upload-Fähigkeit der Bildkomponente {#disable-upload-capability-of-the-image-component}
 
-Um diese Funktion zu deaktivieren, verwenden Sie die standardmäßige Bildkomponente als Grundlage und ändern Sie sie. Sie speichern die neue Komponente in der Geometrixx-Beispielanwendung.
+Um diese Funktion zu deaktivieren, verwenden Sie die standardmäßige Bildkomponente als Grundlage und bearbeiten sie. Speichern Sie die neue Komponente in der Geometrixx-Beispielanwendung.
 
 1. Kopieren Sie die standardmäßige image-Komponente aus `/libs/foundation/components/image` in den Geometrixx-Komponentenordner `/apps/geometrixx/components` und verwenden Sie image als Namen des Zielknotens.
 
@@ -389,7 +389,7 @@ Um diese Funktion zu deaktivieren, verwenden Sie die standardmäßige Bildkompon
 1. Klicken Sie auf **Alle speichern**. Die Komponente kann jetzt getestet werden.
 1. Öffnen Sie eine Seite in Geometrixx, wie etwa „English / Company“.
 1. Wechseln Sie in den Design-Modus und aktivieren Sie „Bild (erweitert)“.
-1. Wechseln Sie zurück in den Bearbeitungsmodus und fügen Sie ihn zum Absatzsystem hinzu. Auf den nächsten Bildern sehen Sie die Unterschiede zwischen der ursprünglichen Bildkomponente und der von Ihnen erstellten.
+1. Wechseln Sie zurück in den Bearbeitungsmodus und fügen Sie ihn zum Absatzsystem hinzu. Auf den nächsten Bildern sehen Sie die Unterschiede zwischen der ursprünglichen Bildkomponente und der soeben erstellten.
 
    Ursprüngliche Bildkomponente:
 

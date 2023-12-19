@@ -8,7 +8,7 @@ exl-id: 1bc99f3b-3f28-4e74-b259-6ebddc11ffc5
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1719'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
 
 * **Übermittelte Formulare**: Wenn Daten von einem mit AEM Forms erstellten Formular beliebigen Typs gesendet werden und die Daten an ein Datenspeicher-Repository oder an eine Datenbank gesendet werden, gilt dies als Formularübermittlung. Beispielsweise werden das Übermitteln eines adaptiven Formulars, eines HTML5-Formulars, von PDF-Formularen und eines Formularsatzes als Übermittlungen von Formularen verbucht. Jedes Formular in einem Formularsatz gilt als Übermittlung. Wenn ein Formularsatz beispielsweise 5 Formulare umfasst, zählt der Transaktionsberichts-Service die Übermittlung des Formularsatzes als 5 Übermittlungen.
 
-* **Gerenderte Dokumente:** Das Generieren eines Dokuments durch Kombinieren einer Vorlage und von Daten, das digitale Signieren oder Zertifizieren eines Dokuments, die Verwendung einer abrechnungsfähigen Document Services-API für Document Services oder das Konvertieren eines Dokuments von einem Format in ein anderes werden als gerenderte Dokumente berücksichtigt.
+* **Gerenderte Dokumente**: Das Generieren eines Dokuments durch Kombinieren einer Vorlage mit Daten, das digitale Signieren oder Zertifizieren eines Dokuments, die Verwendung kostenpflichtiger Document Services-APIs für Dokumenten-Services oder das Konvertieren eines Dokuments von einem Format in ein anderes werden als gerenderte Dokumente verbucht.
 
 >[!NOTE]
 >
@@ -324,7 +324,7 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
 Die Verwendung der invoke-API wird als Transaktion gezählt, wenn Sie einen oder mehrere der folgenden Vorgänge ausführen:
 1. Konvertierung von Nicht-PDF-Formaten in PDF-Formate. Beispielsweise die Konvertierung vom XDP-Format in das PDF-Format, die sowohl interaktive als auch nicht interaktive Kommunikationsformen ermöglicht, und die Konvertierung von Word in PDF.
 1. Konvertierung vom PDF-Format in das PDF/A-Format.
-1. Konvertierung vom PDF-Format in Nicht-PDF-Formate. Beispiele sind die Umwandlung vom PDF in das Bildformat oder die Konvertierung vom PDF in das Textformat.
+1. Konvertierung vom PDF-Format in Nicht-PDF-Formate. Beispiele sind die Umwandlung von PDF in das Bildformat oder die Konvertierung von PDF in das Textformat.
 
 >[!NOTE]
 >

@@ -1,6 +1,6 @@
 ---
 title: Suchfacetten zum Filtern von Suchergebnissen
-description: Erfahren Sie, wie Sie Suchfacetten in  [!DNL Adobe Experience Manager] erstellen, bearbeiten und verwenden können.
+description: Erfahren Sie, wie Sie Suchfacetten in [!DNL Adobe Experience Manager] erstellen, bearbeiten und verwenden können.
 contentOwner: AG
 role: Admin, Developer
 feature: Search

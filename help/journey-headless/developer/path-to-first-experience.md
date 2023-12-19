@@ -4,7 +4,7 @@ description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie S
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
 source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1990'
+source-wordcount: '1950'
 ht-degree: 93%
 
 ---
@@ -151,4 +151,4 @@ Sie können wie empfohlen mit dem nächsten Teil der AEM Headless-Entwickler-Tou
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md) – technische Dokumentation zu Inhaltsfragmentmodellen
 * [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md) – technische Dokumentation zu Inhaltsfragmenten
 * [AEM-GraphQL-API zur Verwendung mit Inhaltsfragmenten](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) – technische Dokumentation zur GraphQL-API
-* Die [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
+* Das [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)

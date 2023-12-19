@@ -4,8 +4,8 @@ description: Verwenden Sie AEM, um Web-Inhalte für Personen mit Behinderungen z
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
 source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '13806'
-ht-degree: 98%
+source-wordcount: '13636'
+ht-degree: 97%
 
 ---
 
@@ -65,7 +65,7 @@ Ein nützlicher weiterer Vorteil besteht darin, dass Textalternativen es ermögl
 
 #### Erfüllen: Nichttextlicher Inhalt (1.1.1) {#how-to-meet-non-text-content}
 
-Bei statischen Grafiken besteht die Grundanforderung darin, eine gleichwertige Textalternative für die Grafik bereitzustellen. Dies kann im Feld **Alternativtext** geschehen. Siehe z.B. die Kernkomponente **[Bild](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=de)**.
+Bei statischen Grafiken besteht die Grundanforderung darin, eine gleichwertige Textalternative für die Grafik bereitzustellen. Dies kann im Abschnitt **Alternativtext** -Feld. Siehe beispielsweise die Kernkomponente . **[Bild](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=de)**.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Bestimmte Arten von nichttextlichem Inhalt, für den Textalternativen erforderli
 
 * Veranschaulichende Fotos: Hierbei handelt es sich um Bilder von Menschen, Objekten oder Orten. Es ist wichtig, sich über die Rolle des Fotos auf der Seite Gedanken zu machen und den Bildinhalt zu beschreiben, da die unterstützende Technologie den Elementtyp anzeigt (z. B. `graphic` oder `image`). Die Verwendung von `screenshot` oder `illustration` in den Beschreibungen im Alternativtext kann die Klarheit erhöhen, dies hängt jedoch vom Kontext ab. Konsistenz ist ein wichtiger Faktor. Eine Entscheidung sollte für ein gesamtes Authoring-Team getroffen werden und für das gesamte Anwendererlebnis gelten.
 * Symbole: Hierbei handelt es sich um kleine Piktogramme (Grafiken), die bestimmte Informationen vermitteln. Sie müssen durchgängig auf einer Seite und Site verwendet werden. Alle Instanzen des Symbols auf einer Seite oder Site sollten dieselbe kurze und knappe Textalternative haben, es sei denn, dies führt zu einer unnötigen Duplizierung von angrenzendem Text.
-* Diagramme und Graphen: Diese stellen in der Regel numerische Daten dar. Eine Möglichkeit, eine Textalternative anzubieten, könnte daher darin bestehen, eine kurze Zusammenfassung der wichtigsten Trends in dem Diagramm oder dem Graph zu geben. Falls erforderlich, können Sie auch eine detailliertere Beschreibung in Textform über das Feld **Beschreibung** auf der Registerkarte **Erweitert** der Bildeigenschaften angeben. Außerdem könnten Sie die Quelldaten an anderer Stelle auf der Seite oder Site als Tabelle zur Verfügung stellen.
+* Diagramme: Normalerweise werden numerische Daten dargestellt. Eine Möglichkeit, eine Textalternative bereitzustellen, könnte also darin bestehen, eine kurze Zusammenfassung der wichtigsten Trends, die in der Grafik oder Grafik angezeigt werden, aufzunehmen. Fall nötig, können Sie eine detailliertere Beschreibung im Text im Feld **Beschreibung** auf der Registerkarte **Erweiterte Bildeigenschaften** einfügen. Außerdem könnten Sie die Quelldaten an anderer Stelle auf der Seite oder Site als Tabelle zur Verfügung stellen.
 * Karten, Diagramme, Flussdiagramme: Stellen Sie bei Grafiken mit räumlichen Daten (z. B. zur Unterstützung der Beschreibung von Beziehungen zwischen Objekten oder einem Prozess) sicher, dass die Schlüsselbotschaft im Textformat bereitgestellt wird und dass diese Textinformationen in der Nähe jedes zugeordneten Datenpunkts positioniert sind. Bei Karten ist die Bereitstellung eines Volltextäquivalents wahrscheinlich nicht sinnvoll. Wenn aber eine Karte den Weg zu einem bestimmten Ort zeigen soll, kann der Alternativtext des Kartenbildes kurz *Karte von X* einblenden und dann an einer anderen Stelle auf der Seite oder im Feld **Beschreibung** auf der Registerkarte **Erweitert** der Komponente **Bild** eine Wegbeschreibung zu dem Ort bereitstellen.
 * CAPTCHAs: Ein CAPTCHA ist ein *vollständig automatisierter öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen*. Es handelt sich dabei um eine Sicherheitsprüfung, die auf Web-Seiten verwendet wird, um Menschen von böswilliger Software zu unterscheiden. Dies kann jedoch die Barrierefreiheit einschränken. Hierbei handelt es sich um Bilder, bei denen Benutzende beschreiben müssen, was sie sehen, um einen Sicherheitstest bestehen zu können. Es ist nicht möglich, eine Textalternative für so ein Bild bereitzustellen. Daher müssen Sie stattdessen alternative, nichtgrafische Lösungen in Betracht ziehen. Das W3C bietet einige Vorschläge, z. B.:
    * Logische Rätsel
@@ -558,7 +558,7 @@ Achten Sie darauf, dass der Text einen ausreichenden Kontrast zu seinem Hintergr
 >* Siehe „Schriftgrößenkonvertierung: pixel-point-em-rem-percent“ unter `https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/`
 >* Siehe PMtoEM.com: PX-zu-EM-Umrechnung leicht gemacht `http://pxtoem.com/`
 
-Verwenden Sie ein Farbkontrast-Tool, um das Kontrastverhältnis zu prüfen, z. B. den [Farbkontrast-Analysator der Paciello Group](https://www.paciellogroup.com/resources/contrast-analyser.html) oder den [Farbkontrast-Checker von WebAIM](https://webaim.org/resources/contrastchecker/). Mit diesen Tools können Sie Farbpaare überprüfen und über Kontrastprobleme berichten.
+Verwenden Sie ein Farbkontrast-Tool, um das Kontrastverhältnis zu prüfen, z. B. den [Farbkontrast-Analysator der Paciello Group](https://www.paciellogroup.com/resources/contrast-analyser.html) oder den [Farbkontrast-Checker von WebAIM](https://webaim.org/resources/contrastchecker/). Mit diesen Tools können Sie Farbpaare prüfen und mögliche Kontrastprobleme erkennen.
 
 Wenn Sie weniger daran interessiert sind, das Erscheinungsbild Ihrer Seite festzulegen, können Sie auch wählen, dass keine Farben für Hintergrund- und Vordergrundtext festgelegt werden. Es ist keine Kontrastprüfung erforderlich, da es der Browser der Benutzerin bzw. des Benutzers ist, der die Farben für den Text und den Hintergrund bestimmt.
 
@@ -838,7 +838,7 @@ Stellen Sie vor allem sicher, dass der Link-Text den Zweck eines Links eindeutig
    * Text: Abendkurse im Herbst 2010 – Details.
    * Grund: Durch eine kleine Anpassung des Textes und der Position des Linkelements lässt sich der Link-Text verbessern:
 
-Links sollten auf den Seiten eine konsistente Bezeichnung erhalten. Dies gilt insbesondere für Navigationsleisten. Wenn ein Link zu einer bestimmten Seite z. B. auf einer Seite **Publikationen** heißt, dann sollte er auch auf allen anderen Seiten denselben Namen erhalten.
+Links sollten auf allen Seiten konsistent formuliert sein, insbesondere für Navigationsleisten. Wenn beispielsweise ein Link zu einer bestimmten Seite **Veröffentlichungen** auf einer Seite verwenden Sie diesen Text auf anderen Seiten, um Konsistenz zu gewährleisten.
 
 Zum Zeitpunkt des Verfassens dieses Artikels gibt es einige Probleme im Zusammenhang mit der Verwendung von Titelattributen, um sicherzustellen, dass ähnliche Links, die auf einer Seite präsentiert werden, eindeutige Informationen über das Ziel liefern (z. B. verweist „Weitere Information“ oft auf eine Reihe verschiedener Ziele):
 
@@ -848,7 +848,7 @@ Zum Zeitpunkt des Verfassens dieses Artikels gibt es einige Probleme im Zusammen
 
 Das Title-Attribut kann also genutzt werden, um zusätzlichen Kontext zu einem Link bereitzustellen, Sie sollten aber diese Einschränkungen bedenken und es daher nicht als Alternative für einen geeigneten Link-Text nutzen.
 
-Wenn ein Link aus einem Bild besteht, müssen Sie sicherstellen, dass der Alternativtext für das Bild tatsächlich das Ziel des Links beschreibt. Wenn z. B. ein Bild eines Bücherregals als Link zu den Publikationen einer Person festgelegt wird, sollte der Alternativtext **Publikationen von John Smith** lauten und nicht **Bücherregal**.
+Wenn der Link aus einem Bild besteht, stellen Sie sicher, dass der alternative Text für das Bild das Ziel des Links beschreibt. Wenn beispielsweise ein Bild einer virtuellen Bibliothek als Link zu den Publikationen einer Person festgelegt wird, sollte der alternative Text wie folgt lauten: **Publikationen von John Smith** und nicht **Bücherregal**.
 
 Wenn der Link-Anker alternativ Text enthält, der den Zweck des Links zusätzlich zum Bildelement beschreibt (und der Text daher neben dem Bild angezeigt wird), verwenden Sie ein leeres Alternativattribut für das Bild:
 
@@ -1025,7 +1025,7 @@ Auf ähnliche Weise kann der Browser ein wenig geläufiges Lehnwort oder eine Re
 
 >[!NOTE]
 >
->Es ist nicht notwendig, dieses Erfolgskriterium zu befolgen, wenn Namen oder Städte in verschiedenen Sprachen enthalten sind. Oder bei der Verwendung von Lehnwörtern oder Redewendungen, die in der Standardsprache alltäglich geworden sind, wie *Schadenfreude* im Englischen.
+>Es ist nicht erforderlich, dieses Erfolgskriterium zu befolgen, wenn Namen oder Städte in verschiedenen Sprachen aufgenommen werden. Oder bei der Verwendung von Lehnwörtern oder Ausdrücken, die in der Standardsprache gängig geworden sind, z. B. *Schadenfreude* auf Englisch.
 
 Um ein span-Element mit der entsprechenden Sprache hinzuzufügen, können Sie Ihren HTML-Code im Bearbeitungsmodus für den Quelltext im RTE manuell bearbeiten, damit er wie oben aussieht. Alternativ kann ein Systemadministrator das `lang`-Attribut im RTE einfügen (siehe [Unterstützung für zusätzliche HTML-Elemente und -Attribute hinzufügen](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 

@@ -5,7 +5,7 @@ exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '264'
-ht-degree: 74%
+ht-degree: 78%
 
 ---
 
@@ -29,7 +29,7 @@ Durch Tippen/Klicken auf die Komponente oder anfängliches Auswählen der Kompon
 
 Diese Symbolleiste beinhaltet die folgenden Optionen:
 
-* **Format**: Hiermit können Sie &quot;Fett&quot;, &quot;Kursiv&quot;und &quot;Unterstrichen&quot;festlegen.
+* **Format**: Wählen Sie die Optionen „Fett“, „Kursiv“ und „Unterstrichen“ aus.
 * **Listen**: Erstellen Sie Stichpunkt- oder Aufzählungslisten oder legen Sie einen Einzug fest.
 * **Hyperlink**
 * **Verknüpfung aufheben**

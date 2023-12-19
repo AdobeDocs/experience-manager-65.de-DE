@@ -13,7 +13,7 @@ feature: Configuration,Scene7 Mode
 source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '6508'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,7 @@ Wenn Sie Adobe Experience Manager für verschiedene Umgebungen wie Entwicklung, 
 
 ## Architekturgrafik des Dynamic Media-Scene7-Modus {#architecture-diagram-of-dynamic-media-scene-mode}
 
-Im folgenden Architekturdiagramm wird beschrieben, wie der Dynamic Media - Scene7 -Modus funktioniert.
+Das folgende Architekturdiagramm beschreibt die Funktionsweise von Dynamic Media – Scene7-Modus.
 
 Mit der neuen Architektur ist Experience Manager für Assets aus Primärquellen und Synchronisierungen mit Dynamic Media für die Verarbeitung und Veröffentlichung von Assets zuständig:
 
@@ -71,7 +71,7 @@ Bei allen Upgrades – mit oder ohne Kompatibilitätspaket – können Sie die
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets/viewer.pushviewerpresets.json`
 
-Führen Sie zum Migrieren der von Ihren erstellten benutzerdefinierten Vorgaben und Konfigurationen von `/etc` nach `/conf` unter Linux den folgenden curl-Befehl aus:
+Führen Sie zum Migrieren der von Ihren erstellten benutzerdefinierten Vorgaben und Konfigurationen von `/etc` nach `/conf` unter Linux® den folgenden curl-Befehl aus:
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
@@ -236,7 +236,7 @@ Wenn Sie den Scene7-Modus von Dynamic Media auf AEM ausführen, leitet er derzei
 
 1. Aktivieren Sie auf der Seite **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** das Kontrollkästchen für die beiden folgenden Einstellungen:
 
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - Wenn diese Einstellung aktiviert ist, werden die Berechtigungsergebnisse für 120 Sekunden (zwei Minuten) (Standard) zum Speichern zwischengespeichert.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` – Wenn diese Einstellung aktiviert ist, werden die Berechtigungsergebnisse für 120 Sekunden (zwei Minuten) zwischengespeichert (Standard).
    * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name`: Wenn diese Einstellung aktiviert ist, wird der Zugriff eines Benutzers validiert, während Assets über den Bild-Server von Dynamic Media in der Vorschau angezeigt werden.
 
    ![Aktivieren der Einstellungen der Zugriffskontrollliste in Dynamic Media – Scene7-Modus](/help/assets/assets-dm/acl.png)
@@ -245,7 +245,7 @@ Wenn Sie den Scene7-Modus von Dynamic Media auf AEM ausführen, leitet er derzei
 
 ### (Optional) Konfigurieren des Dynamic Media-Scene7-Modus für das Hochladen von Assets mit mehr als 2 GB {#optional-config-dms7-assets-larger-than-2gb}
 
-Im Dynamic Media-Scene7-Modus beträgt die standardmäßige Maximalgröße für das Hochladen von Asset-Dateien 2 GB. Sie können jedoch optional das Hochladen von Assets konfigurieren, die größer als 2 GB und bis zu 15 GB groß sind.
+Im Modus „Dynamic Media – Scene7“ beträgt die Standardgröße der Asset-Upload-Datei höchstens 2 GB. Sie können jedoch optional das Hochladen von Assets konfigurieren, die größer als 2 GB und bis zu 15 GB groß sind.
 
 Wenn Sie diese Funktion verwenden möchten, beachten Sie die folgenden Voraussetzungen und Punkte:
 
@@ -312,7 +312,7 @@ Sie können einen Wert von bis zu 15 GB (`2013265920` Byte) eingeben. In diesem 
 
    * Kopieren Sie den obigen Pfad und fügen Sie ihn in das URL-Feld Ihres Browsers ein. Ersetzen Sie unbedingt `localhost:4502` durch Ihre eigene Experience Manager-Instanz.
 
-1. Im **[!UICONTROL Adobe Granite Workflow External Process Job Handler]** im Dialogfeld **[!UICONTROL Max. Timeout]** -Feld, setzen Sie den Wert auf `18000` Sekunden (fünf Stunden). Der Standardwert beträgt 10800 Sekunden (drei Stunden).
+1. Setzen Sie im Dialogfeld **[!UICONTROL Handler für externe Prozessaufträge im Adobe Granite-Workflow]** im Feld **[!UICONTROL Maximale Wartezeit]** den Wert auf `18000` Sekunden (fünf Stunden). Der Standardwert ist 10.800 Sekunden (drei Stunden).
 
    ![Wert für „Maximale Wartezeit“](/help/assets/assets-dm/uploadassets15gb_d.png)
 
@@ -325,7 +325,7 @@ Sie können einen Wert von bis zu 15 GB (`2013265920` Byte) eingeben. In diesem 
 1. Wählen Sie auf der Seite „Workflow-Modelle“ die Option **[!UICONTROL Dynamic Media-Videokodierung]** aus.
 1. Wählen Sie in der Symbolleiste die Option **[!UICONTROL Bearbeiten]** aus.
 1. Doppelklicken Sie auf der Workflow-Seite auf den Prozessschritt **[!UICONTROL Scene7 Direct Binary Upload]**.
-1. Im **[!UICONTROL Schritt-Eigenschaften]** Dialogfeld unter dem **[!UICONTROL Häufig]** Registerkarte unter **[!UICONTROL Erweiterte Einstellungen]** -Überschrift im **[!UICONTROL Zeitüberschreitung]** ein, geben Sie einen Wert von `18000` Sekunden (fünf Stunden). Der Standardwert ist `3600` Sekunden (eine Stunde).
+1. Geben Sie im Dialogfeld **[!UICONTROL Schritt-Eigenschaften]** auf der Registerkarte **[!UICONTROL Allgemein]** unter der Überschrift **[!UICONTROL Erweiterte Einstellungen]** im Feld **[!UICONTROL Maximale Wartezeit]** einen Wert von `18000` Sekunden (fünf Stunden) ein. Der Standardwert ist `3600` Sekunden (eine Stunde).
 1. Klicken Sie auf **[!UICONTROL OK]**.
 1. Klicken Sie auf **[!UICONTROL Synchronisieren]**.
 1. Wiederholen Sie die Schritte 14 bis 21 für das Workflow-Modell **[!UICONTROL DAM Update Asset]** und das Workflow-Modell **[!UICONTROL Dynamic Media Reprocess]**.
@@ -459,13 +459,13 @@ Wenn Sie Dateien hochladen, erstellt Dynamic Media automatisch einen Satz mit a
 
 ##### Konfiguration der Standardbenennung
 
-Erstellen Sie eine Standardbenennungskonvention zur Verwendung in einem beliebigen Stapelsatzvorgaben-Rezept. Die in der Definition der Stapelsatzvorgabe ausgewählte Standardnamenskonvention ist wahrscheinlich alles, was Ihr Unternehmen zum Generieren von Sätzen im Batch benötigt. Eine Stapelsatzvorgabe wird erstellt, damit die von Ihnen definierte Standardbenennungskonvention verwendet wird. Sie können so viele Stapelsatzvorgaben mit alternativen, benutzerdefinierten Benennungskonventionen erstellen, die für einen bestimmten Inhaltssatz erforderlich sind, wenn eine Ausnahme von der unternehmensdefinierten Standardbenennung vorliegt.
+Erstellen Sie eine Standardbenennungskonvention zur Verwendung in einem beliebigen Stapelsatzvorgaben-Rezept. Die in der Definition der Stapelsatzvorgabe ausgewählte Standardnamenskonvention ist wahrscheinlich alles, was Ihr Unternehmen zum Generieren von Sätzen im Batch benötigt. Eine Stapelsatzvorgabe wird erstellt, damit die von Ihnen definierte Standardbenennungskonvention verwendet wird. Sie können so viele Stapelsatzvorgaben mit alternativen, benutzerdefinierten Namenskonventionen erstellen, wie für einen bestimmten Inhaltssatz erforderlich sind, wenn eine Ausnahme von der unternehmensdefinierten Standardbenennung vorliegt.
 
 Obwohl die Einrichtung einer Namenskonvention nicht erforderlich ist, um die Funktionalität der Stapelsatzvorgaben zu verwenden, wird als Best Practice empfohlen, die Standardnamenskonvention zu verwenden. Auf diese Weise können Sie beliebig viele Elemente Ihrer Namenskonvention festlegen, die in einem Satz gruppiert werden sollen, um die Erstellung von Stapelsätzen zu optimieren.
 
 Als Alternative können Sie **[!UICONTROL Code anzeigen]** ohne verfügbare Formularfelder verwenden. In dieser Ansicht erstellen Sie die Definitionen Ihrer Namenskonvention vollständig unter Verwendung von regulären Ausdrücken.
 
-Zwei Elemente sind zur Definition verfügbar: Übereinstimmung und Basisname. Mit diesen Feldern können Sie alle Elemente einer Benennungskonvention definieren und den Teil der Konvention identifizieren, der zum Benennen des Satzes verwendet wird, der diese Elemente enthält. Die individuelle Namenskonvention eines Unternehmens verwendet oft eine oder mehrere Definitionszeilen für jedes dieser Elemente. Sie können für Ihre eindeutige Definition so viele Zeilen wie erforderlich verwenden und sie zu eindeutigen Elementen gruppieren, beispielsweise Elementen für Hauptbild, Farbe, alternative Ansicht und Muster.
+Zwei Elemente sind zur Definition verfügbar: Übereinstimmung und Basisname. Mit diesen Feldern können Sie alle Elemente einer Benennungskonvention definieren und den Teil der Konvention identifizieren, der zum Benennen des Satzes verwendet wird, der diese Elemente enthält. Für eine individuelle Namenskonvention eines Unternehmens werden oft eine oder mehrere Zeilen der Definition für jedes dieser Elemente verwendet. Sie können für Ihre eindeutige Definition so viele Zeilen wie erforderlich verwenden und sie zu eindeutigen Elementen gruppieren, beispielsweise Elementen für Hauptbild, Farbe, alternative Ansicht und Muster.
 
 **So konfigurieren Sie die Standardbenennung:**
 
@@ -482,7 +482,7 @@ Zwei Elemente sind zur Definition verfügbar: Übereinstimmung und Basisname. Mi
    >
    Bei deaktivierten Formularfeldern erfolgt keine Überprüfung, ob Ihre regelmäßigen Ausdrücke korrekt sind. Ergebnisse des regelmäßigen Ausdrucks, den Sie für jedes Element erstellen, werden nach der Zeile „Ergebnis“ angezeigt. Der vollständige reguläre Ausdruck wird unten auf der Seite angezeigt.
 
-1. Erweitern Sie jedes Element nach Bedarf und geben Sie die gewünschten Benennungskonventionen ein.
+1. Erweitern Sie jedes Element nach Bedarf und geben Sie die gewünschten Namenskonventionen ein.
 1. Führen Sie bei Bedarf einen der folgenden Schritte aus:
 
    * Klicken Sie auf **[!UICONTROL Hinzufügen]**, um eine weitere Namenskonvention für ein Element hinzuzufügen.
@@ -499,7 +499,7 @@ Dynamic Media verwendet Stapelsatzvorgaben, um Assets für die Anzeige in Viewe
 
 Sie können Ihre Stapelsatzvorgaben erstellen, bearbeiten und verwalten. Es gibt zwei Formen von Definitionen für Stapelsatzvorgaben, eine für eine von Ihnen eingerichtete Standardnamenskonvention und eine für benutzerdefinierte Standardnamenskonventionen, die Sie spontan erstellen.
 
-Sie können zum Definieren einer Stapelsatzvorgabe entweder die Formularfeldmethode oder die Codemethode verwenden, die Ihnen die Verwendung regelmäßiger Ausdrücke ermöglicht. Ebenso wie bei der Standardbenennung können Sie gleichzeitig „Code anzeigen“ wählen und Definitionen in der Formularansicht vornehmen und mithilfe von regelmäßigen Ausdrücken Ihre Definitionen erstellen Alternativ können Sie die Auswahl einer Ansicht aufheben, um die eine oder die andere ausschließlich zu verwenden.
+Sie können zum Definieren einer Stapelsatzvorgabe entweder die Formularfeldmethode oder die Codemethode verwenden, die Ihnen die Verwendung regelmäßiger Ausdrücke ermöglicht. Ebenso wie bei der Standardbenennung können Sie gleichzeitig „Code anzeigen“ wählen und Definitionen in der Formularansicht vornehmen und mithilfe von regelmäßigen Ausdrücken Ihre Definitionen erstellen Sie können auch die Auswahl einer der Ansichten aufheben, um die eine oder die andere ausschließlich zu verwenden.
 
 **So erstellen Sie eine Stapelsatzvorgabe:**
 
@@ -513,7 +513,7 @@ Sie können zum Definieren einer Stapelsatzvorgabe entweder die Formularfeldmeth
 
 1. Klicken Sie im Bedienfeld „Vorgabenliste“ auf **[!UICONTROL Hinzufügen]**, um die Definitionsfelder im Detailbereich auf der rechten Seite des Bildschirms zu aktivieren.
 1. Geben Sie im Bereich „Details“ im Feld „Vorgabenname“ einen Namen für die Vorgabe ein.
-1. Wählen Sie im Dropdown-Menü &quot;Stapelsatztyp&quot;einen Vorgabetyp aus.
+1. Wählen Sie im Dropdown-Menü „Stapelsatztyp“ einen Vorgabentyp aus.
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Wenn Sie eine Standardnamenskonvention verwenden, die Sie zuvor unter **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Stapelsatzvorgaben]** > **[!UICONTROL Standardbenennung]** eingerichtet haben, erweitern Sie **[!UICONTROL Asset-Namenskonventionen]** und klicken anschließend in der Dropdown-Liste „Dateibenennung“ auf **[!UICONTROL Standard]**.
@@ -580,7 +580,7 @@ Wenn das Rotationsset hochgeladen und veröffentlicht wird, aktivieren Sie den N
 
 1. Erweitern Sie **[!UICONTROL Zeilen-/Spaltenposition]** und definieren Sie anschließend den Namen des Formats für die Position des Bild-Assets innerhalb des 2D-Rotationsset-Arrays.
 
-   Verwenden Sie die Klammer, um die Zeilen- oder Spaltenposition im Dateinamen einzufügen.
+   Verwenden Sie Klammern, um die Zeilen- oder Spaltenposition in den Dateinamen aufzunehmen.
 
    Ein regulärer Ausdruck für die Zeile könnte z. B. wie folgt aussehen:
 
@@ -703,7 +703,7 @@ Die Einstellung der Upload-Verbindung (Scene7) synchronisiert Experience Manager
 
    Mit der Einstellung **[!UICONTROL Anzahl der Verbindungen]** wird die maximale Anzahl von HTTP-Verbindungen gesteuert, die für den Upload von Experience Manager zu Dynamic Media zulässig ist; in der Regel ist der vordefinierte Wert von zehn Verbindungen ausreichend.
 
-   Die Einstellung **[!UICONTROL Zeitüberschreitung bei aktiven Aufträgen]** legt die Wartezeit für hochgeladene Dynamic Media-Assets bis zur Veröffentlichung auf dem Übermittlungs-Server fest. Dieser Wert beträgt standardmäßig 2100 Sekunden (35 Minuten).
+   Die Einstellung **[!UICONTROL Zeitüberschreitung bei aktiven Aufträgen]** legt die Wartezeit für hochgeladene Dynamic Media-Assets bis zur Veröffentlichung auf dem Übermittlungs-Server fest. Dieser Wert beträgt standardmäßig 2.100 Sekunden (35 Minuten).
 
    In den meisten Fällen ist die Einstellung „2100“ausreichend.
 

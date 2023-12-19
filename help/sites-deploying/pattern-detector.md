@@ -10,8 +10,8 @@ feature: Upgrading
 exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 47%
+source-wordcount: '498'
+ht-degree: 97%
 
 ---
 
@@ -19,16 +19,16 @@ ht-degree: 47%
 
 ## Überblick {#overview}
 
-Mit dieser Funktion können Sie bestehende AEM auf ihre Aktualisierbarkeit überprüfen, indem Sie Muster erkennen, die verwendet werden und Folgendes tun:
+Mit dieser Funktion können Sie vorhandene AEM-Instanzen auf ihre Aktualisierbarkeit überprüfen, indem Sie Muster in der Nutzung erkennen, die:
 
 1. gegen bestimmte Regeln verstoßen und Bereiche betreffen, die durch das Upgrade überschrieben werden
-1. Verwenden Sie eine AEM 6.x-Funktion oder eine API, die in AEM 6.5 nicht abwärtskompatibel ist und nach der Aktualisierung möglicherweise beschädigt werden kann.
+1. eine Funktion von AEM 6.x oder eine API verwenden, die unter AEM 6.5 nicht abwärtskompatibel ist und nach dem Upgrade möglicherweise nicht mehr funktioniert.
 
-Dies könnte als Bewertung der Entwicklungsbemühungen dienen, die mit der Aktualisierung auf AEM 6.5 verbunden sind.
+Dies kann als Bewertungsgrundlage für den erforderlichen Entwicklungsaufwand bei der Aktualisierung auf AEM 6.5 dienen.
 
 ## Einrichtung {#how-to-set-up}
 
-Der Musterdetektor wird als separates [Paket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/de/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) veröffentlicht, das mit allen Quell-AEM-Versionen von 6.1 bis 6.5 funktioniert, die auf AEM 6.5 aktualisiert werden sollen. Sie kann mithilfe der [Package Manager](/help/sites-administering/package-manager.md).
+Der Musterdetektor wird als separates [Paket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/de/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) veröffentlicht, das mit allen Quell-AEM-Versionen von 6.1 bis 6.5 funktioniert, die auf AEM 6.5 aktualisiert werden sollen. Er kann mit dem [Package Manager](/help/sites-administering/package-manager.md) installiert werden.
 
 ## Verwendung {#how-to-use}
 
@@ -36,7 +36,7 @@ Der Musterdetektor wird als separates [Paket](https://experience.adobe.com/#/dow
 >
 >Der Musterdetektor kann in jeder beliebigen Umgebung, einschließlich lokaler Entwicklungsinstanzen, ausgeführt werden. Sie haben jedoch folgende Möglichkeiten:
 >
->* die Erkennungsrate erhöhen
+>* die Erkennungsrate zu erhöhen,
 >* vermeiden Sie jede Verlangsamung bei geschäftskritischen Instanzen.
 >
 >Gleichzeitig wird die Ausführung in **Staging-Umgebungen** empfohlen, die hinsichtlich Benutzerapplikationen, Inhalt und Konfigurationen den Produktionsumgebungen möglichst stark ähneln.
@@ -57,16 +57,16 @@ Beide Methoden werden im Folgenden beschrieben:
 
 ## Reaktive Schnittstelle {#reactive-interface}
 
-Die reaktive Oberfläche ermöglicht die Verarbeitung des Verstoßberichts, sobald ein Verdacht festgestellt wird.
+Die reaktive Schnittstelle ermöglicht die Verarbeitung des Verstoßberichts, sobald ein Verdacht festgestellt wird.
 
 Die Ausgabe ist derzeit unter 2 URLs verfügbar:
 
 1. Nur-Text-Schnittstelle 
-1. JSON-Benutzeroberfläche
+1. JSON-Schnittstelle
 
-## Umgang mit der Textschnittstelle {#handling-the-plain-text-interface}
+## Handhabung der Nur-Text-Schnittstelle {#handling-the-plain-text-interface}
 
-Die Informationen in der Ausgabe werden als eine Reihe von Ereigniseinträgen formatiert. Es gibt zwei Kanäle - einen für Veröffentlichungsverletzungen und einen für die Veröffentlichung des aktuellen Fortschritts.
+Die Informationen in der Ausgabe werden als eine Reihe von Ereigniseinträgen formatiert. Es gibt zwei Kanäle – einen für Veröffentlichungsverstöße und einen für die Veröffentlichung des aktuellen Fortschritts.
 
 Sie können mithilfe der folgenden Befehle abgerufen werden:
 
@@ -94,9 +94,9 @@ Dies führt zur folgenden Ausgabe:
 2018-02-13T14:19:35.685+01:00 [PROGRESS] Finished in period=PT13.782
 ```
 
-## Umgang mit der JSON-Oberfläche {#handling-the-json-interface}
+## Handhabung der JSON-Schnittstelle {#handling-the-json-interface}
 
-Auf ähnliche Weise kann JSON mit der [jq-Tool](https://stedolan.github.io/jq/) sobald sie veröffentlicht wurde.
+Auf ähnliche Weise kann JSON mit dem [JQ-Tool](https://stedolan.github.io/jq/) verarbeitet werden, sobald es veröffentlicht wurde.
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'
@@ -121,7 +121,7 @@ Mit der Ausgabe:
 }
 ```
 
-Der Fortschritt wird alle 5 Sekunden gemeldet und kann abgerufen werden, indem andere Nachrichten ausgeschlossen werden, die nicht als verdächtig markiert sind:
+Der Fortschritt wird alle 5 Sekunden gemeldet und kann abgerufen werden, indem andere Nachrichten als die als verdächtig markierten ausgeschlossen werden:
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == false)'
@@ -212,11 +212,11 @@ Mit der Ausgabe:
 
 Der Musterdetektor ermöglicht derzeit die Überprüfung von:
 
-* Die Exporte und Importe von OSGi-Bundles stimmen nicht überein
+* Nichtübereinstimmung der Exporte und Importe von OSGi-Bundles
 * Überschreibungen von Sling-Ressourcentypen und -Supertypen (mit Inhaltsüberlagerungen für Suchpfade)
 * Definitionen von Oak-Indizes (Kompatibilität)
 * VLT-Pakete (Überverwendung)
-* rep:User nodes-Kompatibilität (im Kontext der OAuth-Konfiguration)
+* Kompatibilität mit rep:User-Knoten (im Kontext der OAuth-Konfiguration)
 
 >[!NOTE]
 >

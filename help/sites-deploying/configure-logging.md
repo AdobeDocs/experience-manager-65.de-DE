@@ -10,13 +10,13 @@ exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '650'
-ht-degree: 56%
+ht-degree: 91%
 
 ---
 
 # Protokollierung{#logging}
 
-AEM bietet Ihnen die Möglichkeit, Folgendes zu konfigurieren:
+Mit AEM können Sie Folgendes konfigurieren:
 
 * globale Parameter für den zentralen Protokollierungsdienst
 * Anfragedatenprotokollierung; eine spezielle Protokollierungskonfiguration für Anfrageinformationen
@@ -30,11 +30,11 @@ Hierbei handelt es sich jeweils um [OSGi-Konfigurationen](/help/sites-deploying/
 
 ## Globale Protokollierung {#global-logging}
 
-[Apache Sling Logging Configuration](/help/sites-deploying/osgi-configuration-settings.md) wird zum Konfigurieren der Root-Protokollfunktion verwendet. Dies definiert die globalen Einstellungen für die Anmeldung AEM:
+Die Konfiguration [Apache Sling Logging Configuration](/help/sites-deploying/osgi-configuration-settings.md) dient zum Konfigurieren des Rootloggers. Dabei werden die globalen Einstellungen für die Protokollierung in AEM definiert:
 
-* Protokollierungsstufe
+* Protokollierungsebene
 * Speicherort der zentralen Protokolldatei
-* Anzahl der beizubehaltenden Versionen
+* Anzahl der aufzubewahrenden Versionen
 * Versionsrotation; entweder maximale Größe oder Zeitintervall
 * Format zum Schreiben der Protokollmeldungen
 
@@ -44,22 +44,22 @@ Hierbei handelt es sich jeweils um [OSGi-Konfigurationen](/help/sites-deploying/
 
 ## Logger und Writer für einzelne Dienste {#loggers-and-writers-for-individual-services}
 
-Zusätzlich zu den globalen Protokollierungseinstellungen können AEM bestimmte Einstellungen für einen einzelnen Dienst konfigurieren:
+Neben den globalen Protokollierungseinstellungen können Sie in AEM bestimmte Einstellungen für einzelne Dienste konfigurieren:
 
 * Bestimmte Protokollierungsstufe
-* Speicherort der einzelnen Protokolldatei
-* Anzahl der beizubehaltenden Versionen
+* Speicherort der jeweiligen Protokolldatei
+* Anzahl der aufzubewahrenden Versionen
 * Versionsrotation; entweder maximale Größe oder Zeitintervall
 * Format zum Schreiben der Protokollmeldungen
 * Logger (OSGi-Dienst, der die Protokollmeldungen bereitstellt)
 
-Auf diese Weise können Sie Protokollmeldungen für einen einzelnen Dienst in eine separate Datei übertragen. Dies kann insbesondere beim Entwickeln oder Testen nützlich sein, etwa wenn Sie für einen bestimmten Dienst auf eine höhere Protokollierungsstufe angewiesen sind.
+So können Sie die Protokollmeldungen für einen einzelnen Dienst in einer separaten Datei kanalisieren. Dies kann insbesondere beim Entwickeln oder Testen nützlich sein, etwa wenn Sie für einen bestimmten Dienst auf eine höhere Protokollierungsstufe angewiesen sind.
 
-AEM verwendet Folgendes, um Protokollmeldungen in die Datei zu schreiben:
+AEM geht wie folgt vor, um Protokollmeldungen in eine Datei zu schreiben:
 
-1. Ein **OSGi-Dienst** (logger) schreibt eine Protokollmeldung.
-1. A **Logging Logger** nimmt diese Nachricht und formatiert sie entsprechend Ihrer Spezifikation.
-1. A **Protokollierungs-Writer** schreibt alle diese Nachrichten in die von Ihnen definierte physische Datei.
+1. Ein **OSGi-Dienst** (Logger) schreibt eine Protokollmeldung.
+1. Ein **Logging Logger** (Protokollierungs-Logger) formatiert diese Meldung gemäß Ihren Angaben.
+1. Ein **Logging Writer** (Protokollierungs-Writer) schreibt all diese Meldungen in die von Ihnen definierte physische Datei.
 
 Diese Elemente sind über die folgenden Parameter mit den entsprechenden Elementen verknüpft:
 
@@ -77,11 +77,11 @@ Diese Elemente sind über die folgenden Parameter mit den entsprechenden Element
 
   Definieren Sie die physische Datei, in die die Protokollmeldungen geschrieben werden.
 
-  Der Wert muss mit den Parametern in der Logging-Writer-Konfiguration übereinstimmen. Andernfalls erfolgt kein Abgleich. Wenn keine Übereinstimmung vorliegt, wird ein impliziter Writer mit Standardkonfiguration erstellt (tägliche Protokollrotation).
+  Der Wert muss mit den Parametern in der Logging-Writer-Konfiguration übereinstimmen. Andernfalls erfolgt kein Abgleich. Liegt keine Übereinstimmung vor, wird ein impliziter Writer mit der Standardkonfiguration (tägliche Protokollrotation) erstellt.
 
 ### Standard-Logger und -Writer {#standard-loggers-and-writers}
 
-Bestimmte Logger und Writer sind in einer standardmäßigen AEM-Installation enthalten.
+Bestimmte Logger und Writer sind in einer standardmäßigen AEM-Installation bereits enthalten.
 
 Das erste Paar ist ein Sonderfall, da sowohl `request.log`- als auch `access.log`-Dateien gesteuert werden:
 
@@ -129,7 +129,7 @@ Die anderen Paare folgen der Standardkonfiguration:
 
 ### Erstellen eigener Logger und Writer {#creating-your-own-loggers-and-writers}
 
-Sie können Ihr eigenes Logger-/Writer-Paar definieren:
+Sie können ein eigenes Logger-/Writer-Paar definieren:
 
 1. Erstellen einer Instanz der Factory-Konfiguration [Apache Sling Logging Logger-Konfiguration](/help/sites-deploying/osgi-configuration-settings.md).
 
@@ -139,9 +139,9 @@ Sie können Ihr eigenes Logger-/Writer-Paar definieren:
 
 1. Erstellen einer Instanz der Factory-Konfiguration [Apache Sling Logging Writer-Konfiguration](/help/sites-deploying/osgi-configuration-settings.md).
 
-   1. Geben Sie die Protokolldatei an - diese muss mit der für den Logger angegebenen übereinstimmen.
+   1. Geben Sie die Protokolldatei an – diese muss mit der Angabe für den Logger übereinstimmen.
    1. Konfigurieren Sie ggf. die anderen Parameter.
 
 >[!NOTE]
 >
->Unter bestimmten Umständen können Sie eine [benutzerdefinierte Protokolldatei](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
+>Unter bestimmten Bedingungen empfiehlt sich die Erstellung einer [benutzerdefinierten Protokolldatei](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).

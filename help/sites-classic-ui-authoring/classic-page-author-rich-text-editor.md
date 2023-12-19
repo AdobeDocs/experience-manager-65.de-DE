@@ -8,7 +8,7 @@ exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '1764'
-ht-degree: 85%
+ht-degree: 89%
 
 ---
 
@@ -159,7 +159,7 @@ Ein Link zu einer URL (entweder innerhalb Ihrer Website oder an einer externen P
 
 ![Hyperlink-Symbol](do-not-localize/chlimage_1-9.png)
 
-In einem Dialogfeld können Sie die Ziel-URL angeben sowie festlegen, ob sie in einem neuen Fenster geöffnet werden soll.
+Daraufhin wird ein Dialogfeld angezeigt, in dem Sie die Ziel-URL angeben können und ob sie in einem neuen Fenster geöffnet werden soll.
 
 ![cq55_rte_link_use](assets/cq55_rte_link_use.png)
 
@@ -167,7 +167,7 @@ Sie haben folgende Möglichkeiten:
 
 * Direkte Eingabe eines URI
 * Verwendung der Sitemap zur Auswahl einer Seite innerhalb der Website
-* Geben Sie den URI ein und hängen Sie dann den Ziel-Anker an, z. B. `www.TargetUri.org#AnchorName`
+* Geben Sie den URI ein und fügen Sie einen Zielanker hinzu, z. B. `www.TargetUri.org#AnchorName`
 * Eingabe eines reinen Ankers (zum Verweis auf die aktuelle Seite), z. B. `#anchor`
 * Suche nach einer Seite im Content Finder, deren Seitensymbol dann per Drag-and-Drop in das Dialogfeld „Hyperlink“ gezogen wird
 
@@ -205,7 +205,7 @@ Die Suche beginnt immer an der aktuellen Cursor-Position im Text. Wenn das Ende 
 
 ![cq55_rte_find_use](assets/cq55_rte_find_use.png)
 
-Die **Ersetzen** -Option **Suchen**, dann **Ersetzen** einer einzelnen Instanz mit dem angegebenen Text oder **Alle ersetzen** Instanzen in der aktuellen Komponente.
+Mit der Option **Ersetzen** können Sie eine individuelle Instanz mit dem angegebenen Text **Suchen** und dann **Ersetzen** oder mit **Alle ersetzen** alle Instanzen in der aktuellen Komponente ersetzen.
 
 ![cq55_rte_findreplace_use](assets/cq55_rte_findreplace_use.png)
 
@@ -330,7 +330,7 @@ Die aktuelle Spalte kann außerdem gelöscht werden.
 
 ![chlimage_1-106](assets/chlimage_1-106.png)
 
-Dadurch wird die gesamte Zeile bzw. Spalte ausgewählt. Anschließend sind bestimmte Aktionen verfügbar (z. B. Zusammenführen).
+Dadurch wird die gesamte Zeile bzw. Spalte ausgewählt. Anschließend sind bestimmte Aktionen verfügbar (z. B. Zusammenführen).
 
 #### Zusammenführen von Zellen {#merge-cells}
 
@@ -381,7 +381,7 @@ Verwenden Sie den Mauszeiger, um eine vergrößerte Version des Zeichens anzuzei
 
 ![Symbolleiste des Quellbearbeitungsmodus](do-not-localize/cq55_rte_sourceedit.png)
 
-Im Quellbearbeitungsmodus können Sie die zugrunde liegende HTML der Komponente anzeigen und bearbeiten.
+Im Quellbearbeitungsmodus können Sie den HTML-Code, der der aktuellen Komponente zugrunde liegt, anzeigen und bearbeiten.
 
 Der Text:
 

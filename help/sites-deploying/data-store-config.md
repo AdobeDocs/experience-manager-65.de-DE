@@ -8,8 +8,8 @@ feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3549'
-ht-degree: 99%
+source-wordcount: '3476'
+ht-degree: 100%
 
 ---
 
@@ -141,7 +141,7 @@ AEM kann so konfiguriert werden, dass Daten im Simple Storage Service (S3) von A
 
 >[!NOTE]
 >
->AEM 6.5 unterstützt das Speichern von Daten in Amazon S3. Die Unterstützung wird jedoch nicht auf das Speichern von Daten auf anderen Plattformen erweitert, deren Anbieter möglicherweise eigene Implementierungen der Amazon S3-APIs haben.
+>AEM 6.5 unterstützt das Speichern von Daten in Amazon S3. Die Unterstützung wird jedoch nicht auf das Speichern von Daten auf anderen Plattformen ausgeweitet, deren Anbieter möglicherweise eigene Implementierungen der Amazon S3-APIs haben.
 
 Zur Aktivierung der S3-Datenspeicherfunktionalität muss ein Feature Pack mit dem S3-Datenspeicher-Connector heruntergeladen und installiert werden. Gehen Sie zum [Adobe-Repository](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) und laden Sie die neueste Version der 1.10.x-Versionen des Feature Packs herunter (z. B. com.adobe.granite.oak.s3connector-1.10.0.zip). Darüber hinaus müssen Sie auch das neueste AEM Service Pack herunterladen und installieren, das auf der Seite [Versionshinweise zu AEM 6.5](/help/release-notes/release-notes.md) aufgeführt ist.
 

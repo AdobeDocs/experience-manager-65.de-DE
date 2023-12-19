@@ -8,22 +8,22 @@ topic-tags: best-practices
 exl-id: 6df5fb10-a7f1-4d5d-ac00-b4be3d5d3d18
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 50%
+source-wordcount: '247'
+ht-degree: 85%
 
 ---
 
 # Testen von responsivem Layout in We.Retail{#trying-out-responsive-layout-in-we-retail}
 
-Alle We.Retail-Seiten verwenden die Layout-Container-Komponente, um responsives Design zu implementieren. Der Layout-Container bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können. Dieses Raster kann das Layout entsprechend der Geräte-/Fenstergröße und dem Format neu anordnen. Die Komponente wird zusammen mit der **Layout** -Modus im Seiteneditor verwenden, mit dem Sie Ihr responsives Layout geräteabhängig erstellen und bearbeiten können.
+Alle We.Retail-Seiten verwenden die Layout-Container-Komponente, um responsives Design zu implementieren. Der Layout-Container bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können. Dieses Raster kann das Layout entsprechend der Geräte-/Fenstergröße und dem Format neu anordnen. Die Komponente wird zusammen mit dem **Layout**-Modus im Seiteneditor verwendet, mit dem Sie Ihr responsives Layout je nach Gerät erstellen und bearbeiten können.
 
-## Testen {#trying-it-out}
+## Probieren Sie es aus {#trying-it-out}
 
-1. Bearbeiten Sie die Seite Arktisches Surfen im Abschnitt Erlebnisse des Sprach-Master-Zweigs.
+1. Bearbeiten Sie die Seite „Arctic Surfing“ im Abschnitt „Erlebnisse“ des Sprachprimärzweigs.
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html
 
-1. Wechseln Sie zu **Vorschau**, um die Seite so anzuzeigen, wie sie für einen Besucher der Website gerendert würde. Blättern Sie nach unten zum Inhalt des Artikels *Aloha-Spirituosen in Nordnorwegen*.
+1. Wechseln Sie zu **Vorschau**, um die Seite so anzuzeigen, wie sie für einen Besucher der Website gerendert würde. Scrollen Sie nach unten zum Inhalt des Artikels *Aloha spirits in Northern Norway*.
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 

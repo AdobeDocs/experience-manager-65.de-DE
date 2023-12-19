@@ -1,6 +1,6 @@
 ---
 title: Arbeiten mit Projekt-Workflows
-description: Eine Vielzahl von Projekt-Workflows ist bereits vorkonfiguriert.
+description: Standardmäßig sind zahlreiche vorkonfigurierte Projekt-Workflows verfügbar.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
@@ -9,21 +9,21 @@ exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '783'
-ht-degree: 75%
+ht-degree: 86%
 
 ---
 
 
 # Arbeiten mit Projekt-Workflows {#working-with-project-workflows}
 
-Folgende Projekt-Workflows sind im Lieferumfang enthalten:
+Folgende vorkonfigurierte Projekt-Workflows sind im Lieferumfang enthalten:
 
-* **Workflow für Projektbestätigung** - Mit diesem Workflow können Sie einem Benutzer Inhalte zuweisen, diese überprüfen und dann genehmigen.
+* **Projektgenehmigungs-Workflow** – Mit diesem Workflow können Sie Inhalte einer Benutzerin bzw. einem Benutzer zuzuweisen, prüfen und bestätigen.
 * **Launch anfragen** - Ein Workflow, der einen Launch anfordert.
 * **Einstiegsseite anfragen** - Dieser Workflow fragt eine Landingpage an.
 * **E-Mail anfragen** - Workflow zum Anfragen einer E-Mail.
 * **Produkt-Fotoshooting und Produkt-Fotoshooting (Commerce)** - Ordnet Assets Produkten zu
-* **DAM-Kopie erstellen und übersetzen und DAM-Sprachkopie erstellen**: Erstellt übersetzte Binärdateien, Metadaten und Tags für Assets und Ordner.
+* **DAM-Kopie erstellen und übersetzen und DAM-Sprachkopie erstellen** – Erstellt übersetzte Binärdateien, Metadaten und Tags für Assets und Ordner.
 
 Je nachdem, welche Projektvorlage Sie auswählen, stehen Ihnen bestimmte Workflows zur Verfügung:
 
@@ -32,7 +32,7 @@ Je nachdem, welche Projektvorlage Sie auswählen, stehen Ihnen bestimmte Workflo
 | Kopie anfragen |  | x |  |  |
 | Produkt-Fotoshooting |  | x | x |  |
 | Produkt-Fotoshooting (Commerce) |  |  | x |  |
-| Projektvalidierung | x |  |  |  |
+| Projektgenehmigung | x |  |  |  |
 | Launch anfragen | x |  |  |  |
 | Einstiegsseite anfragen | x |  |  |  |
 | E-Mail anfragen | x |  |  |  |
@@ -45,7 +45,7 @@ Je nachdem, welche Projektvorlage Sie auswählen, stehen Ihnen bestimmte Workflo
 
 Das Starten und Abschließen eines Workflows ist unabhängig vom gewählten Workflow immer gleich. Nur die Schritte ändern sich.
 
-Sie starten einen Workflow direkt in Projekten (mit Ausnahme von „DAM-Sprachkopie erstellen“ bzw. „DAM-Sprachkopie erstellen und übersetzen“). Informationen über alle ausstehenden Aufgaben in einem Projekt werden in der Kachel **Aufgaben** aufgelistet. Benachrichtigungen für Aufgaben, die ausgeführt werden müssen, werden neben dem Benutzersymbol angezeigt.
+Sie starten einen Workflow direkt in Projekten (mit Ausnahme von „DAM-Kopie erstellen und übersetzen“ und „DAM-Sprachkopie erstellen“). Informationen zu ausstehenden Aufgaben in einem Projekt finden Sie in der Kachel **Aufgaben**. Benachrichtigungen zu auszuführenden Aufgaben werden neben dem Benutzersymbol angezeigt.
 
 Weitere Informationen zur Arbeit mit Workflows in AEM finden Sie in den folgenden Dokumenten:
 
@@ -61,7 +61,7 @@ Mit diesem Workflow können Sie ein Manuskript von einem Benutzer anfragen und e
 
 1. Klicken Sie in einem Medienprojekt oben rechts im **Workflows** Kachel und wählen Sie **Workflow starten**.
 1. Wählen Sie im Workflow-Assistenten die Option **Kopie anfragen** und klicken Sie auf **Weiter**.
-1. Geben Sie einen Manuskripttitel und eine kurze Zusammenfassung dazu ein, was Sie anfragen. Geben Sie gegebenenfalls eine Zielwortanzahl, Aufgabenpriorität und ein Fälligkeitsdatum ein.
+1. Geben Sie einen Manuskripttitel und eine kurze Zusammenfassung der Anfrage ein. Geben Sie bei Bedarf eine Zielwortanzahl, eine Aufgabenpriorität und ein Fälligkeitsdatum ein.
 
    ![Workflow „Kopie anfragen“](assets/project-request-copy-workflow.png)
 
@@ -93,7 +93,7 @@ Mit diesem Workflow können Sie einen Launch anfragen.
 
 1. Klicken Sie in einem einfachen Projekt oben rechts im **Workflows** Kachel und wählen Sie **Workflow starten**.
 1. Wählen Sie im Workflow-Assistenten die Option **Workflow „Launch anfragen“** und klicken Sie auf **Weiter**.
-1. Geben Sie einen Titel für den Launch ein und geben Sie den Launch-Quellpfad an. Sie können bei Bedarf auch eine Beschreibung und ein Live-Datum hinzufügen. Wählen Sie „Quellseiten-Live-Daten erben“ oder „Unterseiten ausschließen“ aus, je nachdem, wie der Launch sich verhalten soll.
+1. Geben Sie einen Titel für den Launch und den Launch-Quellpfad an. Sie können bei Bedarf auch eine Beschreibung und ein Live-Datum hinzufügen. Wählen Sie „Quellseiten-Live-Daten übernehmen“ oder „Unterseiten ausschließen“, je nachdem, wie sich der Start verhalten soll.
 
    ![Workflow „Launch anfragen“](assets/project-request-launch-workflow.png)
 
@@ -117,7 +117,7 @@ Der Workflow startet. Die Aufgabe erscheint auf der Karte **Aufgaben**.
 
 ## Workflow „E-Mail anfragen“ {#request-email-workflow}
 
-Mit diesem Workflow können Sie eine E-Mail anfragen. Es handelt sich um denselben Workflow, der im **E-Mails** Kachel.
+Mit diesem Workflow können Sie eine E-Mail anfragen. Es ist derselbe Workflow wie in der Kachel **E-Mails**.
 
 1. Klicken Sie in einem einfachen Projekt oben rechts im **Workflows** Kachel und wählen Sie **Workflow starten**.
 1. Wählen Sie im Workflow-Assistenten die Option **E-Mail anfragen** und klicken Sie auf **Weiter**.

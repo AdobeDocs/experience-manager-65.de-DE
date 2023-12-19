@@ -9,25 +9,25 @@ exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1225'
-ht-degree: 71%
+ht-degree: 97%
 
 ---
 
 # Synchronisieren von adaptiven Formularen mit XFA-Formularvorlagen{#synchronizing-adaptive-forms-with-xfa-form-templates}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/using/create-an-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 ## Einführung {#introduction}
 
-Sie können adaptive Formulare basierend auf einer XFA-Formularvorlage (`*.XDP`-Datei) erstellen. Durch diese Wiederverwendung können Sie Ihre Investition in vorhandene XFA-Formulare beibehalten. Informationen dazu, wie Sie eine XFA-Formularvorlage zum Erstellen eines adaptiven Formulars verwenden, finden Sie unter [Erstellen eines adaptiven Formulars basierend auf einer Vorlage](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
+Sie können adaptive Formulare basierend auf einer XFA-Formularvorlage (`*.XDP`-Datei) erstellen. Diese Wiederverwendung ermöglicht es Ihnen, das, was Sie in bestehende XFA-Formulare investiert haben, zu erhalten. Informationen dazu, wie Sie eine XFA-Formularvorlage zum Erstellen eines adaptiven Formulars verwenden, finden Sie unter [Erstellen eines adaptiven Formulars basierend auf einer Vorlage](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
 
-Sie können Felder aus der XDP-Datei in Ihrem adaptiven Formular wiederverwenden. Diese Felder werden als gebundene Felder bezeichnet. Die Eigenschaften der gebundenen Felder (z. B. Skripte, Beschriftungen und Anzeigeformat) werden aus der XDP-Datei kopiert. Sie können sich auch dafür entscheiden, die Werte einiger dieser Eigenschaften zu überschreiben.
+Sie können Felder aus der XDP-Datei in Ihrem adaptiven Formular wiederverwenden. Diese Felder werden als gebundene Felder bezeichnet. Die Eigenschaften der gebundenen Felder (wie Skripte, Beschriftungen und Anzeigeformat) werden aus der XDP-Datei kopiert. Sie können sich auch dafür entscheiden, die Werte einiger dieser Eigenschaften zu überschreiben.
 
-AEM Forms bietet eine Möglichkeit, die Felder der adaptiven Formulare mit allen Änderungen zu synchronisieren, die später an den entsprechenden Feldern in der XDP-Datei vorgenommen werden. In diesem Artikel wird beschrieben, wie Sie diese Synchronisierung aktivieren können.
+AEM Forms bietet die Möglichkeit, die Felder der adaptiven Formulare mit allen Änderungen synchronisiert zu halten, die später an den entsprechenden Feldern in der XDP-Datei vorgenommen werden. In diesem Artikel wird beschrieben, wie Sie diese Synchronisierung aktivieren können.
 
 ![Sie können Felder aus einem XFA-Formular in ein adaptives Formular ziehen.](assets/drag-drop-xfa.gif.gif)
 
-In der AEM Forms-Authoring-Umgebung können Sie Felder aus einem XFA-Formular (links) in ein adaptives Formular (rechts) ziehen.
+In der Authoring-Umgebung von AEM Forms können Sie Felder aus einem XFA-Formular (links) in ein adaptives Formular (rechts) ziehen.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -41,9 +41,9 @@ Um die Assets für das Beispiel im Artikel zu verwenden, laden Sie das Beispielp
 
 ## Beispielpaket {#sample-package}
 
-In diesem Artikel wird anhand eines Beispiels gezeigt, wie das adaptive Formular mit einer aktualisierten XFA-Formularvorlage synchronisiert wird. Die im Beispiel verwendeten Assets sind in einem Paket verfügbar, das aus dem Abschnitt [Downloads](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-downloads-p) in diesem Artikel heruntergeladen werden kann.
+Der Artikel verwendet ein Beispiel, um zu veranschaulichen, wie Sie das adaptive Formular mit einer aktualisierten XFA-Formularvorlage synchronisieren. Die im Beispiel verwendeten Assets sind in einem Paket verfügbar, das aus dem Abschnitt [Downloads](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-downloads-p) in diesem Artikel heruntergeladen werden kann.
 
-Nach dem Hochladen des Pakets können Sie diese Assets in der Benutzeroberfläche von AEM Forms anzeigen.
+Nachdem Sie das Paket hochgeladen haben, können Sie diese Assets in der Benutzeroberfläche von AEM Forms anzeigen.
 
 Installieren Sie das Paket mit dem Package Manager: `https://<server>:<port>/crx/packmgr/index.jsp`
 
@@ -55,9 +55,9 @@ Das Paket enthält die folgenden Assets:
 
 ### Hinzufügen von Inhalt zu einem adaptiven Formular {#add-content-to-adaptive-form-br}
 
-1. Navigieren Sie zu https://&lt;server>:&lt;port>/aem/forms.html. Geben Sie auf Anfrage Ihre Anmeldeinformationen ein.
+1. Navigieren Sie zu https://&lt;server>:&lt;port>/aem/forms.html. Geben Sie Ihre Anmeldeinformationen ein, wenn Sie danach gefragt werden.
 1. Öffnen Sie sample-af-xfa zur Bearbeitung im Autorenmodus.
-1. Wählen Sie im Inhalt-Browser in der Seitenleiste die Registerkarte „Datenmodellobjekte“. Ziehen Sie „NumericField1“ und „TextField1“ auf das adaptive Formular.
+1. Wählen Sie im Inhalts-Browser in der Seitenleiste die Registerkarte „Datenmodellobjekte“. Ziehen Sie „NumericField1“ und „TextField1“ auf das adaptive Formular.
 1. Ändern Sie den Titel von „NumericField1“ von **Numerisches Feld** zu **Numerisches AF-Feld**.
 
 >[!NOTE]
@@ -66,7 +66,7 @@ Das Paket enthält die folgenden Assets:
 
 ## Erkennen von Änderungen in der XDP-Datei {#detecting-changes-in-xdp-file}
 
-Bei jeder Änderung in einer XDP-Datei oder einem Fragment kennzeichnet die AEM Forms-Benutzeroberfläche alle adaptiven Formulare, die auf der XDP-Datei oder dem Fragment basieren.
+Sobald es Änderungen in einer XDP-Datei oder einem Fragment gibt, kennzeichnet die AEM Forms-Benutzeroberfläche alle adaptiven Formulare, die auf der XDP-Datei oder dem Fragment basieren.
 
 Nachdem Sie eine XDP-Datei aktualisiert haben, müssen Sie sie erneut in die AEM Forms-Benutzeroberfläche hochladen, damit die Änderungen gekennzeichnet werden.
 
@@ -80,7 +80,7 @@ Als Beispiel aktualisieren wir die Datei `sample-form.xdp` mithilfe der folgende
 
 1. Laden Sie die Datei `sample-form.xdp` wieder in die AEM Forms-Benutzeroberfläche hoch.
 
-Wenn eine XDP-Datei aktualisiert wird, wird ein Symbol im Editor angezeigt, wenn Sie die adaptiven Formulare bearbeiten, die auf der XDP-Datei basieren. Dieses Symbol zeigt an, dass das adaptive Formular nicht mit der XDP-Datei synchronisiert ist. In der folgenden Abbildung sehen Sie das Symbol links in der Randleiste angezeigt.
+Wenn eine XDP-Datei aktualisiert wird, wird ein Symbol im Editor angezeigt, wenn Sie die adaptiven Formulare, die auf der XDP-Datei basieren, bearbeiten. Dieses Symbol zeigt an, dass das adaptive Formular nicht mehr mit der XDP-Datei synchron ist. In der folgenden Abbildung sehen Sie das Symbol links in der Randleiste angezeigt.
 
 ![Symbol, das angibt, dass das adaptive Formular nicht mehr mit der XDP-Datei synchron ist](assets/sync-af-xfa.png)
 
@@ -96,7 +96,7 @@ Durch Klicken auf die Meldung werden die Felder im adaptiven Formular mit den en
 
 ### Aktualisieren der Eigenschaften {#updating-the-properties}
 
-Alle Eigenschaften, die aus der XDP-Datei in das adaptive Formular kopiert wurden, werden aktualisiert, mit Ausnahme der Eigenschaften, die explizit vom Autor im adaptiven Formular (aus dem Komponentendialogfeld) überschrieben wurden. Die Liste der Eigenschaften, die aktualisiert wurden, ist in den Serverprotokollen verfügbar.
+Alle Eigenschaften, die aus der XDP-Datei in das adaptive Formular kopiert wurden, werden aktualisiert, mit Ausnahme der Eigenschaften, die explizit im adaptiven Formular (aus dem Komponentendialogfeld) von der Autorin oder dem Autor überschrieben wurden. Die Liste der Eigenschaften, die aktualisiert wurden, ist in den Serverprotokollen verfügbar.
 
 Um die Eigenschaften im adaptiven Formular des Beispiels zu aktualisieren, klicken Sie auf den Link (mit `"Click Here"` gekennzeichnet) in der Nachricht. Der Titel von „TextField1“ ändert sich von **Textfeld** zu **Mein Textfeld**.
 
@@ -106,15 +106,15 @@ Um die Eigenschaften im adaptiven Formular des Beispiels zu aktualisieren, klick
 >
 >Die Beschriftung „AF Numeric Field“ wurde nicht geändert, da Sie diese Eigenschaft im Dialogfeld für die Komponenteneigenschaften überschrieben haben, wie in [Hinzufügen von Inhalten zu adaptiven Formularen](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-add-content-to-adaptive-form-br-p) beschrieben.
 
-### Hinzufügen neuer Felder aus der XDP-Datei zum adaptiven Formular   {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
+### Hinzufügen neuer Felder aus einer XDP-Datei in ein adaptives Formular {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 
-Alle Felder, die später zur ursprünglichen XDP-Datei hinzugefügt werden, werden auf der Registerkarte &quot;Formularhierarchie&quot;angezeigt und Sie können diese neuen Felder in das adaptive Formular ziehen.
+Felder, die später zur Original-XDP-Datei hinzugefügt werden, werden in der Registerkarte „Formularhierarchie“ angezeigt. Sie können diese neuen Felder in das adaptive Formular ziehen.
 
 Sie müssen nicht auf den Link in der Fehlermeldung klicken, um die Felder in der Registerkarte „Formularhierarchie“ zu aktualisieren.
 
 ### Gelöschte Felder in der XDP-Datei {#deleted-fields-in-xdp-file}
 
-Wenn ein Feld, das zuvor in ein adaptives Formular kopiert wurde, aus einer XDP-Datei gelöscht wird, wird im Authoring-Modus eine Fehlermeldung angezeigt, die besagt, dass das Feld nicht in der XDP-Datei vorhanden ist. In diesem Fall müssen Sie das Feld manuell aus dem adaptiven Formular löschen oder die Eigenschaft `bindRef` im Komponentendialogfeld löschen.
+Wenn ein zuvor in ein adaptives Formular kopiertes Feld in einer XDP-Datei gelöscht wird, wird eine Fehlermeldung im Autorenmodus angezeigt, die angibt, dass das Feld in der XDP-Datei nicht vorhanden ist. In diesem Fall müssen Sie das Feld manuell aus dem adaptiven Formular löschen oder die Eigenschaft `bindRef` im Komponentendialogfeld löschen.
 
 Die folgenden Schritte veranschaulichen diesen Vorgang für die Assets, die in dem Beispiel in diesem Artikel verwendet wurden:
 
@@ -132,7 +132,7 @@ Das gelöschte Feld wird außerdem mit einem Symbol gekennzeichnet, um einen Feh
 
 >[!NOTE]
 >
->Die Felder im adaptiven Formular, die eine inkorrekte Bindung aufweisen (einen ungültigen `bindRef`-Wert im Bearbeitungsdialogfeld) werden ebenfalls als gelöschte Felder betrachtet. Wenn der Autor diese Fehler nicht behebt und das adaptive Formular veröffentlicht, wird das Feld als normales ungebundenes adaptives Formularfeld behandelt und in den unbinded-Abschnitt der Ausgabe-XML-Datei aufgenommen.
+>Die Felder im adaptiven Formular, die eine inkorrekte Bindung aufweisen (einen ungültigen `bindRef`-Wert im Bearbeitungsdialogfeld) werden ebenfalls als gelöschte Felder betrachtet. Wenn die Autorin bzw. der Autor diese Fehler nicht behebt und das adaptive Formular veröffentlicht, wird das Feld als normales ungebundenes adaptives Formularfeld behandelt und in den unbinded-Abschnitt der Ausgabe-XML-Datei aufgenommen.
 
 ## Downloads {#downloads}
 

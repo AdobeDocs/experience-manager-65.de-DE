@@ -1,6 +1,6 @@
 ---
 title: Senden einer Formularsendebestätigung per E-Mail
-description: Mit AEM Forms können Sie die E-Mail-Sendeaktion konfigurieren, die eine Bestätigung an einen Benutzer beim Senden des Formulars sendet.
+description: Mit AEM Forms können Sie die E-Mail-Übermittlungsaktion konfigurieren, die einer Person beim Senden des Formulars eine Bestätigung sendet.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
@@ -9,19 +9,19 @@ exl-id: bca4044a-18a9-4b97-92de-eff1e9a840f9
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 71%
+ht-degree: 97%
 
 ---
 
 # Senden einer Formularsendebestätigung per E-Mail {#sending-a-form-submission-acknowledgement-via-email}
 
-## Datenübermittlung für adaptive Formulare {#adaptive-form-data-submission}
+## Übermitteln der Daten adaptiver Formulare {#adaptive-form-data-submission}
 
-Adaptive Formulare bieten mehrere vordefinierte [Sendeaktionen](../../forms/using/configuring-submit-actions.md) Workflows zum Senden der Formulardaten an verschiedene Endpunkte.
+Adaptive Formulare bieten mehrere standardmäßige Workflows für [Übermittlungsaktionen](../../forms/using/configuring-submit-actions.md), um die Formulardaten an verschiedene Endpunkte zu senden.
 
 Zum Beispiel wird bei der Übermittlungsaktion **[!UICONTROL E-Mail senden]** eine E-Mail bei erfolgreicher Übermittlung eines adaptiven Formulars gesendet. Sie kann auch so konfiguriert werden, dass die Formulardaten und die PDF-Datei in die E-Mail eingefügt werden.
 
-In diesem Artikel werden die Schritte zum Aktivieren der E-Mail-Aktion für ein adaptives Formular und die verschiedenen bereitgestellten Konfigurationen beschrieben.
+In diesem Artikel werden die Schritte erläutert, mit denen die E-Mail-Aktion für ein adaptives Formular aktiviert wird, sowie die verschiedenen Konfigurationen, die sie bietet.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Mit der Aktion „E-Mail senden“ kann ein Autor automatisch eine E-Mail an ein
 
    Geben Sie den Betreff und den Text der E-Mail in den Feldern **[!UICONTROL Betreff]** bzw. **[!UICONTROL E-Mail-Vorlage]** an.
 
-   Sie können auch variable Platzhalter in den Feldern angeben. In diesem Fall werden die Werte der Felder verarbeitet, wenn das Formular erfolgreich von einem Endbenutzer gesendet wurde. Weitere Informationen finden Sie unter [Verwenden der Feldnamen in adaptiven Formularen, um E-Mail-Inhalte dynamisch zu erstellen](../../forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p).
+   Sie können auch variable Platzhalter in den Feldern angeben. In diesem Fall werden die Feldwerte verarbeitet, wenn das Formular erfolgreich von Endbenutzenden gesendet wurde.  Weitere Informationen finden Sie unter [Verwenden der Feldnamen in adaptiven Formularen, um E-Mail-Inhalte dynamisch zu erstellen](../../forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p).
 
    Aktivieren Sie **[!UICONTROL Anhänge einschließen]**, wenn das Formular Dateianhänge enthält und Sie diese Dateien in der E-Mail anhängen möchten.
 
@@ -61,7 +61,7 @@ Mit der Aktion „E-Mail senden“ kann ein Autor automatisch eine E-Mail an ein
 
 ### Verwenden der Feldnamen in adaptiven Formularen, um E-Mail-Inhalte dynamisch zu erstellen {#using-adaptive-form-field-names-to-dynamically-create-email-content}
 
-Die Feldnamen in einem adaptiven Formular werden als Platzhalter bezeichnet, die durch den Wert dieses Felds ersetzt werden, nachdem ein Benutzer das Formular gesendet hat.
+Die Feldnamen in einem adaptiven Formular werden als Platzhalter bezeichnet, die durch den Wert dieses Felds ersetzt werden, wenn jemand das Formular sendet.
 
 In der Aktion **[!UICONTROL E-Mail senden]** können Sie Platzhalter verwenden, die verarbeitet werden, wenn die Aktion ausgeführt wird. Das bedeutet, dass die Header der E-Mail (**[!UICONTROL An]**, **[!UICONTROL CC]**, **[!UICONTROL BCC]**, **[!UICONTROL Betreff]**) dann erstellt werden, wenn der Benutzer das Formular sendet.
 

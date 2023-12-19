@@ -679,7 +679,7 @@ Einige dieser Tools hängen von Ihrem Betriebssystem ab.
 
 In dieser Datei werden grundlegende Informationen zu allen Anforderungen an AEM registriert. Sie können wertvolle Schlüsse daraus ziehen.
 
-`request.log` ist eine integrierte Möglichkeit, um herauszufinden, wie lange Anforderungen brauchen. Zu Entwicklungszwecken ist es hilfreich, `tail -f` auf den `request.log` anzuwenden und nach langsamen Systemreaktionen zu suchen. So analysieren Sie eine größere `request.log`, empfiehlt Adobe die [Verwendung von `rlog.jar` die die Sortierung und Filterung der Antwortzeiten ermöglicht](#using-rlog-jar-to-find-requests-with-long-duration-times).
+`request.log` ist eine integrierte Möglichkeit, um herauszufinden, wie lange Anforderungen brauchen. Zu Entwicklungszwecken ist es hilfreich, `tail -f` auf den `request.log` anzuwenden und nach langsamen Systemreaktionen zu suchen. Für die Analyse eines größeren `request.log` empfiehlt Adobe die [Verwendung von `rlog.jar`, damit Sie nach Systemreaktionszeiten filtern und diese sortieren können](#using-rlog-jar-to-find-requests-with-long-duration-times).
 
 Es wird empfohlen, „langsame“ Seiten aus dem `request.log` zu isolieren und einzeln für eine bessere Leistung zu optimieren. Schließen Sie Leistungsmetriken pro Komponente ein oder verwenden Sie ein Leistungs-Profilierungs-Tool, z. B. ` [yourkit](https://www.yourkit.com/)`.
 

@@ -5,7 +5,7 @@ exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 87%
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ Die zurückgegebenen Inhalte können dann von Ihren Programmen verwendet werden.
 
 ## Erstellen der Struktur mit Inhaltsfragmentmodellen {#create-structure-content-fragment-models}
 
-Inhaltsfragmentmodelle bieten verschiedene Mechanismen, mit denen Sie die Struktur Ihres Inhalts definieren können.
+Inhaltsfragmentmodelle bieten verschiedene Mechanismen, mit denen Sie die Struktur Ihrer Inhalte definieren können.
 
 Ein Inhaltsfragmentmodell beschreibt eine Entität.
 
@@ -64,10 +64,10 @@ Ein Inhaltsfragmentmodell beschreibt eine Entität.
 
 Innerhalb eines Modells:
 
-1. **Datentypen** können Sie die einzelnen Attribute definieren.
-Definieren Sie beispielsweise das Feld mit dem Namen eines Lehrers als **Text** und dessen Dienstjahre als **Zahl**.
-1. Die Datentypen **Inhaltsreferenz** und **Fragmentverweis** können Sie Beziehungen zu anderen Inhalten in AEM erstellen.
-1. Die **Fragmentverweis** -Datentyp können Sie mehrere Ebenen der Struktur realisieren, indem Sie Ihre Inhaltsfragmente verschachteln (je nach Modelltyp). Dies ist für Ihre Inhaltsmodellierung von entscheidender Bedeutung.
+1. Mit **Datentypen** können Sie die einzelnen Attribute definieren.
+Definieren Sie beispielsweise das Feld mit dem Namen einer Lehrkraft als **Text** und ihre Dienstjahre als **Zahl**.
+1. Mit den Datentypen **Inhaltsreferenz** und **Fragmentreferenz** können Sie Beziehungen zu anderen Inhalten in AEM erstellen.
+1. Mit dem Datentyp **Fragmentreferenz** können Sie mehrere Strukturebenen realisieren, indem Sie Ihre Inhaltsfragmente verschachteln (je nach Modelltyp). Dies ist für Ihre Inhaltsmodellierung von entscheidender Bedeutung.
 
 Beispiel:
 
@@ -105,7 +105,7 @@ Dies bietet Verweise auf andere Inhaltsfragmente.
 Dieser Referenztyp wird verwendet, um verschachtelte Inhalte zu erstellen und die Beziehungen einzuführen, die zum Modellieren Ihres Inhalts erforderlich sind.
 Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglichkeiten haben:
    * Direktes Bearbeiten des referenzierten Fragments
-   * Erstellen eines Inhaltsfragments basierend auf dem entsprechenden Modell
+   * Erstellen eines neuen Inhaltsfragments basierend auf dem entsprechenden Modell
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglich
 
 ## Strukturebenen (verschachtelte Fragmente) {#levels-of-structure-nested-fragments}
 
-Für die Inhaltsmodellierung **Fragmentverweis** Datentyp können Sie mehrere Ebenen von Struktur und Beziehungen erstellen.
+Bei der Inhaltsmodellierung ermöglicht der Datentyp **Fragmentverweis** die Erstellung mehrerer Strukturebenen und Beziehungen.
 
 Mit diesem Verweis können Sie verschiedene Inhaltsfragmentmodelle *verbinden*, um Zusammenhänge darzustellen. Dadurch kann die Headless-Anwendung den Verbindungen folgen und bei Bedarf auf die Inhalte zugreifen.
 
@@ -121,7 +121,7 @@ Mit diesem Verweis können Sie verschiedene Inhaltsfragmentmodelle *verbinden*, 
 >
 >Dies sollte mit Vorsicht angewendet werden und als Best Practice kann definiert werden, *so viel wie nötig, aber so wenig wie möglich zu verschachteln*.
 
-Fragmentverweise tun genau das - sie ermöglichen Ihnen, auf ein anderes Fragment zu verweisen.
+Fragmentverweise tun genau das – sie ermöglichen es Ihnen, auf ein anderes Fragment zu verweisen.
 
 Bei Ihnen sind möglicherweise die folgenden Inhaltsfragmentmodelle definiert:
 

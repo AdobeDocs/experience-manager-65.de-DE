@@ -1,14 +1,14 @@
 ---
 title: Erstellen benutzerdefinierter Themen für adaptive Formulare
-description: Ein Thema für adaptive Formulare ist eine Adobe Experience Manager-Client-Bibliothek, mit der Sie die Stile (Erscheinungsbild) für ein adaptives Formular definieren. Erfahren Sie, wie Sie benutzerdefinierte Designs für adaptive Formulare erstellen können.
+description: Ein Design für ein adaptives Formular ist eine Adobe Experience Manager-Client-Bibliothek, mit der Sie die Stile (das Look-and-Feel) für ein adaptives Formular definieren. Erfahren Sie, wie Sie benutzerdefinierte Designs für adaptive Formulare erstellen können.
 content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
 source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 37%
+source-wordcount: '790'
+ht-degree: 91%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 37%
 
 >[!CAUTION]
 >
->Adobe Experience Manager (AEM) Forms stellt die [Design-Editor](/help/forms/using/themes.md) Funktion zum Erstellen und Ändern adaptiver Formulare [themes](/help/forms/using/themes.md). Führen Sie die in diesem Artikel aufgeführten Schritte nur aus, wenn Sie ein Upgrade von einer Version durchgeführt haben, die nicht über [Design-Editor](/help/forms/using/themes.md) und Sie bereits in Designs investiert haben, die mit Less-/CSS-Dateien erstellt wurden (Pre-Theme-Editor-Methode).
+>Adobe Experience Manager (AEM) Forms bietet die Funktion [Design-Editor](/help/forms/using/themes.md) zum Erstellen und Ändern der [Designs](/help/forms/using/themes.md) von adaptiven Formularen. Führen Sie die in diesem Artikel aufgeführten Schritte nur aus, wenn Sie von einer Version ohne [Design-Editor](/help/forms/using/themes.md) aus aktualisiert haben und bereits Designs angelegt haben, die mithilfe von LESS/CSS-Dateien (Methode vor dem Design-Editor) erstellt wurden.
 
 ## Voraussetzungen {#prerequisites}
 
 * Kenntnisse des LESS (Leaner CSS)-Frameworks
-* Erstellen einer Client-Bibliothek in Adobe Experience Manager
-* [Erstellen einer Vorlage für ein adaptives Formular](/help/forms/using/custom-adaptive-forms-templates.md) für die Verwendung des Designs, das Sie erstellen
+* Wie eine Client-Bibliothek in Adobe Experience Manager erstellt wird
+* [Erstellen einer Vorlage für ein adaptives Formular](/help/forms/using/custom-adaptive-forms-templates.md) für die Verwendung eines von Ihnen erstellten Designs
 
-## Adaptives Formulardesign {#adaptive-form-theme}
+## Design für ein adaptives Formular {#adaptive-form-theme}
 
-Ein **Thema für adaptives Formular** ist eine AEM Client-Bibliothek, mit der Sie die Stile (Erscheinungsbild) für ein adaptives Formular definieren.
+Ein **Design für ein adaptives Formular** ist eine AEM Client-Bibliothek, mit der Sie die Stile (das Look-and-Feel) für ein adaptives Formular definieren.
 
-Sie erstellen eine **adaptive Vorlage** und wenden Sie das Design auf die Vorlage an. Anschließend können Sie diese benutzerdefinierte Vorlage verwenden, um eine **adaptives Formular**.
+Sie erstellen eine **adaptive Vorlage** und wenden das Design auf die Vorlage an. Anschließend können Sie diese benutzerdefinierte Vorlage verwenden, um eine **adaptives Formular** zu erstellen.
 
 ![Adaptives Formular und Clientbibliothek](assets/hierarchy.png)
 
@@ -36,7 +36,7 @@ Sie erstellen eine **adaptive Vorlage** und wenden Sie das Design auf die Vorlag
 
 >[!NOTE]
 >
->Das folgende Verfahren wird anhand von Beispielnamen für AEM Objekte wie Knoten, Eigenschaften und Ordner beschrieben.
+>Das folgende Verfahren wird anhand von Beispielnamen für AEM-Objekte wie Knoten, Eigenschaften und Ordner beschrieben.
 >
 >Wenn Sie diesen Schritten mithilfe der Namen folgen, sollte die resultierende Vorlage in etwa dem folgenden Snapshot ähneln:
 
@@ -59,11 +59,11 @@ Sie erstellen eine **adaptive Vorlage** und wenden Sie das Design auf die Vorlag
 
    * Ordner `less`: Enthält die Variablendateien `less`, in denen Sie die Variablen `less` und `less mixins` definieren, die für die Verwaltung der .css-Stile verwendet werden.
 
-     Dieser Ordner besteht aus `less` Variablendateien, `less` Mixin-Dateien, `less` -Dateien, die Stile mit Mixins und Variablen definieren. Und all diese `less` -Dateien werden dann in styles.less importiert.
+     Dieser Ordner besteht aus `less`-Variablendateien, `less`-Mixin-Dateien, `less`-Dateien, die Stile unter Verwendung von Mixins definieren, und Variablen. Und all diese `less` -Dateien werden dann in styles.less importiert.
 
    * Ordner `css`: Enthält die .css-Dateien, in denen Sie die im Thema zu verwendenden statischen Stile definieren.
 
-   **Weniger Variablendateien**: Dies sind die Dateien, in denen Sie die Variablen definieren oder überschreiben, die beim Definieren von CSS-Stilen verwendet werden.
+   **LESS-Variablendateien**: Dies sind die Dateien, in denen Sie die Variablen definieren oder überschreiben, die beim Definieren von CSS-Stilen verwendet werden.
 
    Adaptive Formulare stellen OOTB-Variablen bereit, die in den folgenden `.less` -Dateien:
 
@@ -78,9 +78,9 @@ Sie erstellen eine **adaptive Vorlage** und wenden Sie das Design auf die Vorlag
 
    >[!NOTE]
    >
-   >Geben Sie beim Import der Dateien des niedrigeren Präprozessors in der Importanweisung den relativen Pfad der Dateien an.
+   >Geben Sie beim Import der Dateien des LESS-Präprozessors in der Importanweisung den relativen Pfad der Dateien an.
 
-   Variablen zum Überschreiben von Beispielen:
+   Beispiele zum Überschreiben von Variablen:
 
    ```css
    @button-background-color: rgb(19, 102, 44);
@@ -96,18 +96,18 @@ Sie erstellen eine **adaptive Vorlage** und wenden Sie das Design auf die Vorlag
 
       `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
 
-   1. Importieren Sie dann die Datei less , die überschriebene Variablen enthält.
+   1. Importieren Sie dann die LESS-Datei, die überschriebene Variablen enthält.
 
-   Beispiele für neue Variablendefinitionen:
+   Beispieldefinitionen für neue Variablen:
 
    ```css
    @button-focus-bg-color: rgb(40, 208, 90);
    @button-hover-bg-color: rgb(30, 156, 67);
    ```
 
-   **Less mixin-Dateien:** Sie können die Funktionen definieren, die Variablen als Argumente akzeptieren. Die Ausgabe dieser Funktionen sind die resultierenden Stile. Verwenden Sie diese Mixins in verschiedenen Stilen, um sich wiederholende CSS-Stile zu vermeiden.
+   **Less mixin-Dateien:** Sie können die Funktionen definieren, die Variablen als Argumente akzeptieren. Die Ausgabe dieser Funktionen sind die resultierenden Stile. Verwenden Sie diese Mixins in verschiedenen Stilen, um Wiederholungen von CSS-Stilen zu vermeiden.
 
-   Adaptive Formulare stellen OOTB-Mixins bereit, die definiert sind in:
+   Adaptive Formulare stellen auch vorkonfigurierte Mixins bereit, die definiert wurden in:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/adaptiveforms-mixins.less`
 
@@ -190,9 +190,9 @@ Sie erstellen eine **adaptive Vorlage** und wenden Sie das Design auf die Vorlag
 
    >[!NOTE]
    >
-   >Die Datei styles.less ist nicht obligatorisch. Dies bedeutet, dass Sie diese Datei nicht erstellen müssen, wenn Sie keine benutzerdefinierten Stile, Variablen oder Mixins definiert haben.
+   >Die Datei „Styles.less“ ist nicht obligatorisch. Dies bedeutet, dass Sie diese Datei nicht erstellen müssen, wenn Sie keine benutzerdefinierten Stile, Variablen oder Mixins definiert haben.
    >
-   >Wenn Sie jedoch keine style.less-Datei erstellen, müssen Sie den Kommentar für die folgende Zeile in der Datei css.txt aufheben:
+   >Wenn Sie jedoch keine Datei „Styles.less“ erstellen, müssen Sie den Kommentar für die folgende Zeile in der Datei „css.txt“ aufheben:
    >
    >**`#base=less`**
    >
@@ -212,9 +212,9 @@ Nachdem Sie das Thema für adaptives Formular erstellt haben, führen Sie die fo
 
       ![Snapshot zum CRX-Repository](assets/1-2.png)
 
-   1. Um ein Design auf der Seite zu verwenden, müssen Sie dem Knoten eine überschreibende Datei library.jsp hinzufügen.
+   1. Um ein Design auf der Seite zu verwenden, müssen Sie dem Knoten eine überschreibende Datei „library.jsp“ hinzufügen.
 
-      Sie können dann das Design importieren, das Sie im Abschnitt Erstellen eines Designs für ein adaptives Formular dieses Artikels erstellt haben.
+      Sie können dann das Design importieren, das Sie im Abschnitt „So erstellen Sie ein Design für ein adaptives Formular“ dieses Artikels erstellt haben.
 
       Das folgende Muster-Codefragment importiert das Thema `af.theme.forest`.
 
@@ -225,8 +225,8 @@ Nachdem Sie das Thema für adaptives Formular erstellt haben, führen Sie die fo
 
    1. **Optional:** Überschreiben Sie die benutzerdefinierte Seite, überschreiben Sie je nach Bedarf „header.hsp“, „footer.jsp“ und „body.jsp“.
 
-1. Erstellen Sie eine benutzerdefinierte Vorlage (beispielsweise: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`), deren jcr:content auf eine benutzerdefinierte Seite verweist, die im vorherigen Schritt erstellt wurde (z. B.: `myAfCustomizations/myAfPages/forestPage)`.
+1. Erstellen Sie eine benutzerdefinierte Vorlage (zum Beispiel: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) deren „jcr:content“ auf die benutzerdefinierte Seite zeigt, die im vorangehenden Schritt erstellt wurde (zum Beispiel: `myAfCustomizations/myAfPages/forestPage)`.
 
    ![Snapshot zum CRX-Repository](assets/2-1.png)
 
-1. Erstellen Sie ein adaptives Formular anhand der im vorherigen Schritt erstellten Vorlage. Das Erscheinungsbild des adaptiven Formulars wird durch das Thema definiert, das im Abschnitt &quot;So erstellen Sie ein Thema für ein adaptives Formular&quot;dieses Artikels erstellt wurde.
+1. Erstellen Sie ein adaptives Formular anhand der im vorherigen Schritt erstellten Vorlage. Das Erscheinungsbild des adaptiven Formulars wird durch das Design definiert, das im Abschnitt „So erstellen Sie ein Design für ein adaptives Formular“ dieses Artikels erstellt wurde.

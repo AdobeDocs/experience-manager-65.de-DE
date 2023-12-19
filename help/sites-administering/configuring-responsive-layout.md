@@ -10,7 +10,7 @@ exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1275'
-ht-degree: 92%
+ht-degree: 95%
 
 ---
 
@@ -26,7 +26,7 @@ Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination v
 
 * [**Layout-Container-Komponente**](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
 
-  Diese Komponente bietet ein Rasterabsatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können. Sie können sie als Standard-ParSys für Ihre Seite nutzen und/oder sie anderen Autoren im Komponenten-Browser zur Verfügung stellen.
+  Diese Komponente stellt ein Rasterabsatzsystem zur Verfügung, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können. Sie können sie als Standard-ParSys für Ihre Seite nutzen und/oder sie anderen Autoren im Komponenten-Browser zur Verfügung stellen.
 
    * Die standardmäßige **Layout-Container**-Komponente ist definiert unter:
 
@@ -44,7 +44,7 @@ Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination v
 Sobald der Layout-Container auf Ihrer Seite positioniert ist, können Sie die **Layout** -Modus, um Inhalte im responsiven Raster zu positionieren.
 
 * [**Emulator**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
-Auf diese Weise können Sie responsive Websites erstellen und bearbeiten, die das Layout durch interaktive Größenanpassung der Komponenten an die Geräte-/Fenstergröße anpassen. Die Benutzerin bzw. der Benutzer kann dann mit dem Emulator sehen, wie der Inhalt wiedergegeben wird.
+Auf diese Weise können Sie responsive Websites erstellen und bearbeiten, deren Layout sich durch interaktive Größenanpassung der Komponenten an die Geräte-/Fenstergröße anpasst. Die Benutzerin bzw. der Benutzer kann dann mit dem Emulator sehen, wie der Inhalt wiedergegeben wird.
 
 >[!CAUTION]
 >
@@ -63,7 +63,7 @@ Mit diesen responsiven Rastermechanismen können Sie:
 
 ## Konfigurieren des responsiven Emulators {#configuring-the-responsive-emulator}
 
-Diese Aufgabe ermöglicht es Ihnen, die responsive **Emulator** auf Ihrer Site.
+Mit dieser Aufgabe können Sie den responsiven **Emulator** auf Ihrer Site anzeigen.
 
 ### Registrieren von Seitenkomponenten für die Emulation {#register-your-page-components-for-emulation}
 

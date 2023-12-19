@@ -10,8 +10,8 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
 source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 91%
+source-wordcount: '523'
+ht-degree: 95%
 
 ---
 
@@ -41,7 +41,7 @@ Eine Live Copy wird verwendet, um Inhalte *von* der Quellverzweigung *mit* Ihrer
 
 Sie können Änderungen auf dieselbe Weise vornehmen wie für eine standardmäßige Live Copy. Zum Beispiel:
 
-* Wenn Sie auf ein geschlossenes Vorhängeschloss klicken, wird die Synchronisation unterbrochen und Sie können neue Aktualisierungen am Inhalt in Ihrem Launch vornehmen. Nach dem Entsperren (offenes Vorhängeschloss) werden Ihre Änderungen nicht durch Änderungen überschrieben, die an derselben Stelle innerhalb des Quellzweigs vorgenommen werden.
+* Durch Klicken auf ein geschlossenes Schloss wird diese Synchronisierung unterbrochen und Sie haben die Möglichkeit, neue Aktualisierungen am Inhalt Ihres Launches vorzunehmen.  Nach dem Entsperren (offenes Vorhängeschloss) werden Ihre Änderungen nicht durch Änderungen überschrieben, die an derselben Stelle innerhalb des Quellzweigs vorgenommen werden.
 * Sie können die Vererbung für eine bestimmte Seite **aussetzen** (und **fortsetzen**).
 
 Siehe [Ändern des Live-Copy-Inhalts](/help/sites-administering/msm-livecopy.md#changing-live-copy-content).

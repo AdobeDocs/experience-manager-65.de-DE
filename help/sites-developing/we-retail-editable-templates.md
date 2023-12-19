@@ -9,63 +9,63 @@ exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '467'
-ht-degree: 26%
+ht-degree: 82%
 
 ---
 
 # Testen bearbeitbarer Vorlagen in We.Retail{#trying-out-editable-templates-in-we-retail}
 
-Mit den bearbeitbaren Vorlagen ist das Erstellen und Verwalten von Vorlagen nicht mehr nur eine Aufgabe für Entwickler. Ein erfahrener Benutzer, ein so genannter Vorlagenautor, kann nun Vorlagen erstellen. Entwickler müssen weiterhin die Umgebung einrichten, Clientbibliotheken erstellen und die zu verwendenden Komponenten erstellen. Sobald diese Grundlagen vorhanden sind, hat der Vorlagenautor jedoch die Flexibilität, Vorlagen ohne Entwicklungsprojekt zu erstellen und zu konfigurieren.
+Dank der bearbeitbaren Vorlagen ist das Erstellen und Verwalten von Vorlagen nicht mehr nur eine Aufgabe für Entwickelnde. Ein erfahrener Benutzer, ein so genannter Vorlagenautor, kann nun Vorlagen erstellen. Entwickler müssen weiterhin die Umgebung einrichten, Clientbibliotheken erstellen und die zu verwendenden Komponenten erstellen. Sobald diese Grundlagen vorhanden sind, hat der Vorlagenautor jedoch die Flexibilität, Vorlagen ohne Entwicklungsprojekt zu erstellen und zu konfigurieren.
 
-Alle Seiten in We.Retail basieren auf bearbeitbaren Vorlagen, sodass Nicht-Entwickler die Vorlagen anpassen und anpassen können.
+Alle Seiten in We.Retail basieren auf bearbeitbaren Vorlagen, sodass auch Menschen ohne Entwicklungserfahrung die Vorlagen anpassen und personalisieren können.
 
-## Testen {#trying-it-out}
+## Probieren Sie es aus {#trying-it-out}
 
-1. Bearbeiten Sie die Seite &quot;Ausrüstung&quot;der Sprach-Master-Verzweigung.
+1. Bearbeiten Sie die Seite „Ausrüstung“ der Sprach-Primär-Verzweigung.
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
-1. Die Modusauswahl bietet keinen Designmodus mehr. Alle Seiten für We.Retail basieren auf bearbeitbaren Vorlagen. Um das Design bearbeitbarer Vorlagen zu ändern, müssen sie im Vorlageneditor bearbeitet werden.
+1. Die Modusauswahl bietet keinen Designmodus mehr. Alle Seiten für We.Retail basieren auf bearbeitbaren Vorlagen. Um das Design von bearbeitbaren Vorlagen zu ändern, müssen sie im Vorlageneditor bearbeitet werden.
 1. Wählen Sie aus dem Menü **Seiteninformationen** die Option **Vorlage bearbeiten** aus.
-1. Sie bearbeiten jetzt die Vorlage Hero Page .
+1. Sie bearbeiten jetzt die Hero-Seitenvorlage.
 
    Im Strukturmodus der Seite können Sie die Struktur der Vorlage ändern. Dazu gehören beispielsweise die Komponenten, die im Layout-Container zulässig sind.
 
    ![chlimage_1-138](assets/chlimage_1-138.png)
 
-1. Konfigurieren Sie die Richtlinien für den Layout-Container, um zu definieren, welche Komponenten im Container zulässig sind.
+1. Konfigurieren Sie die Richtlinien für den Layout-Container, um festzulegen, welche Komponenten im Container zulässig sind.
 
-   Richtlinien entsprechen Designkonfigurationen.
+   Richtlinien entsprechen Design-Konfigurationen.
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
 
-1. Im Dialogfeld &quot;Design&quot;des Layout-Containers können Sie
+1. Im Dialogfeld „Design“ des Layout-Containers können Sie
 
    * Wählen Sie eine vorhandene Richtlinie aus oder erstellen Sie eine Richtlinie für den Container
-   * Auswählen, welche Komponenten im Container zulässig sind
-   * Definieren Sie die Standardkomponenten, die platziert werden sollen, wenn ein Asset in den Container gezogen wird
+   * auswählen, welche Komponenten im Container zulässig sind
+   * die Standardkomponenten festlegen, die platziert werden sollen, wenn ein Asset in den Container gezogen wird
 
    ![chlimage_1-140](assets/chlimage_1-140.png)
 
-1. Im Vorlageneditor können Sie die Richtlinie der Textkomponente im Layout-Container bearbeiten.
+1. Im Vorlageneditor können Sie die Richtlinie für die Textkomponente im Layout-Container bearbeiten.
 
    Damit können Sie:
 
    * Wählen Sie eine vorhandene Richtlinie aus oder erstellen Sie eine Richtlinie für den Container
-   * Definieren Sie die Funktionen, die dem Seitenautor bei Verwendung dieser Komponente zur Verfügung stehen, z. B.
+   * festlegen, welche Funktionen den Seitenautorinnen und -autoren bei Verwendung dieser Komponente zur Verfügung stehen, z. B.
 
-      * Zulässige Einfügequellen
+      * zulässige Einfügequellen
       * Formatierungsoptionen
-      * Zulässige Absatzstile
-      * Zulässige Sonderzeichen
+      * zulässige Absatzstile
+      * zulässige Sonderzeichen
 
-   Viele Komponenten, die auf den Kernkomponenten basieren, ermöglichen die Konfiguration von Optionen auf Komponentenebene über die bearbeitbaren Vorlagen, sodass Entwickler keine Anpassungen mehr vornehmen müssen.
+   Viele Komponenten, die auf den Kernkomponenten basieren, ermöglichen die Konfiguration von Optionen auf Komponentenebene über die bearbeitbaren Vorlagen, sodass Entwickelnde keine Anpassungen mehr vornehmen müssen.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. Im Vorlageneditor können Sie mit der Modusauswahl zu **Anfänglicher Inhalt** -Modus, um festzulegen, welcher Inhalt auf der Seite erforderlich ist.
+1. Im Vorlageneditor können Sie mit der Modusauswahl zum Modus **Anfänglicher Inhalt** wechseln, um festzulegen, welcher Inhalt auf der Seite erforderlich ist.
 
-   **Layout** -Modus verwendet werden, da er sich auf einer normalen Seite befindet, um das Layout für die Vorlage zu definieren.
+   Der **Layout**-Modus kann auf einer normalen Seite unverändert verwendet werden, um das Layout für die Vorlage zu definieren.
 
 ## Weitere Informationen {#more-information}
 

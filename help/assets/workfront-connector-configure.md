@@ -7,8 +7,8 @@ exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1723'
-ht-degree: 92%
+source-wordcount: '1691'
+ht-degree: 94%
 
 ---
 
@@ -73,7 +73,7 @@ Gehen Sie wie folgt vor, um die Ereignisse zu abonnieren:
 
 ### Konfigurieren der Ordner-Metadatenzuordnung {#folder-metadata-mapping}
 
-Die Metadaten-Zuordnung zwischen Workfront-Projekten und AEM-Ordnern wird in AEM-Ordner-Metadatenschemata definiert. Ordner-Metadatenschemata sollten wie gewohnt in AEM erstellt und konfiguriert werden. Workfront Tools fügt für jedes Metadatenschema-Formularfeld ein Dropdown-Menü mit automatischer Vervollständigung zu dessen Registerkarte „Einstellungen“ hinzu. In diesem Dropdown-Menü für die automatische Vervollständigung können Sie angeben, welchem Workfront-Feld jede AEM Ordnereigenschaft zugeordnet werden soll.
+Die Metadaten-Zuordnung zwischen Workfront-Projekten und AEM-Ordnern wird in AEM-Ordner-Metadatenschemata definiert. Ordner-Metadatenschemata sollten wie gewohnt in AEM erstellt und konfiguriert werden. Workfront Tools fügt für jedes Metadatenschema-Formularfeld ein Dropdown-Menü mit automatischer Vervollständigung zu dessen Registerkarte „Einstellungen“ hinzu. In diesem Dropdown-Menü mit automatischer Vervollständigung können Sie angeben, welchem Workfront-Feld jede AEM-Ordnereigenschaft zugeordnet werden soll.
 
 Gehen Sie wie folgt vor, um die Zuordnungen zu konfigurieren:
 
@@ -90,7 +90,7 @@ Gehen Sie wie folgt vor, um die Zuordnungen zu konfigurieren:
 
 ### Konfigurieren der Asset-Metadatenzuordnung {#asset-metadata-mapping}
 
-Die Zuordnung von Metadaten zwischen Adobe Workfront-Dokumenten und Assets wird in AEM-Metadatenschemata definiert. Metadatenschemata sollten wie gewohnt in AEM erstellt und konfiguriert werden. Workfront Tools fügt für jedes Metadatenschema-Formularfeld Konfigurationsoptionen zu dessen Registerkarte „Einstellungen“ hinzu. Mit diesen Optionen können Sie angeben, welchem Workfront-Feld jede AEM Eigenschaft zugeordnet werden soll.
+Die Zuordnung von Metadaten zwischen Adobe Workfront-Dokumenten und Assets wird in AEM-Metadatenschemata definiert. Metadatenschemata sollten wie gewohnt in AEM erstellt und konfiguriert werden. Workfront Tools fügt für jedes Metadatenschema-Formularfeld Konfigurationsoptionen zu dessen Registerkarte „Einstellungen“ hinzu. Mit diesen Optionen können Sie angeben, welchen Workfront-Feldern die einzelnen AEM-Eigenschaften zugeordnet werden sollen.
 
 Gehen Sie wie folgt vor, um die Zuordnungen zu konfigurieren:
 

@@ -9,8 +9,8 @@ content-type: reference
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
 source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '9148'
-ht-degree: 97%
+source-wordcount: '9100'
+ht-degree: 95%
 
 ---
 
@@ -102,7 +102,7 @@ Ein Bild wird aus dem digitalen Asset-Repository hinzugefügt. Wenn Sie ein Bild
 
 >[!NOTE]
 >
->In beiden oben genannten Szenarien ist der Wert **ALT-Text** nicht auf der Registerkarte **Erweiterte Bildeigenschaften** sichtbar. Geben Sie zur Änderung des Standardwerts im Feld **ALT-Text** einfach einen neuen Wert ein.
+>In beiden oben genannten Szenarien wird die Standardeinstellung **Alternativtext** -Wert nicht im **Erweiterte Bildeigenschaften** Registerkarte. Um den Standardwert zu ändern, geben Sie einfach einen neuen Wert in die **Alternativtext** -Feld.
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ Kleine Piktogramme (Grafiken), die bestimmte Informationen vermitteln. Sie müss
 
 Diese stellen normalerweise numerische Daten dar. So könnte als eine Möglichkeit zur Bereitstellung von Alternativtext eine kurze Zusammenfassung der im Diagramm gezeigten Haupttrends eingefügt werden. Fall nötig, können Sie eine detailliertere Beschreibung im Text im Feld **Beschreibung** auf der Registerkarte **Erweiterte Bildeigenschaften** einfügen. Außerdem könnten Sie die Quelldaten an anderer Stelle auf der Seite oder Site als Tabelle zur Verfügung stellen.
 
-![Beispiel eines Diagramms. Nachfolgend sehen Sie einen bewährten Ansatz zur Bereitstellung einer Alternative.](assets/chlimage_1-2a.jpeg)
+![Beispiel eines Diagramms. Nachstehend finden Sie den besten Ansatz zur Bereitstellung einer Alternative.](assets/chlimage_1-2a.jpeg)
 
 Zur Bereitstellung einer Alternative für dieses Beispieldiagramm können Sie dem Bild selbst einen knappen `alt`-Text hinzufügen und dann dem Bild eine vollständige Textalternative folgen lassen.
 
@@ -628,7 +628,7 @@ Achten Sie darauf, dass der Text einen ausreichenden Kontrast zu seinem Hintergr
 * Bei Text mit einer Größe von mindestens 18 Punkten (oder 14 Punkten und fett) sollte das Kontrastverhältnis mindestens 3:1 betragen.
 * Wenn ein Hintergrund gemustert ist, sollte der Hintergrund um jeden Text schattiert werden, sodass das Verhältnis von 4,5:1 bzw. 3:1 beibehalten wird.
 
-Verwenden Sie ein Farbkontrast-Tool, um das Kontrastverhältnis zu prüfen, z. B. den [Farbkontrast-Analysator der Paciello Group](https://www.paciellogroup.com/resources/contrast-analyser.html) oder den [Farbkontrast-Checker von WebAIM](https://webaim.org/resources/contrastchecker/). Mit diesen Tools können Sie Farbpaare überprüfen und über Kontrastprobleme berichten.
+Verwenden Sie ein Farbkontrast-Tool, um das Kontrastverhältnis zu prüfen, z. B. den [Farbkontrast-Analysator der Paciello Group](https://www.paciellogroup.com/resources/contrast-analyser.html) oder den [Farbkontrast-Checker von WebAIM](https://webaim.org/resources/contrastchecker/). Mit diesen Tools können Sie Farbpaare prüfen und mögliche Kontrastprobleme erkennen.
 
 Wenn Sie weniger daran interessiert sind, das Erscheinungsbild Ihrer Seite festzulegen, können Sie auch wählen, dass keine Farben für Hintergrund- und Vordergrundtext festgelegt werden. Es ist keine Kontrastprüfung erforderlich, da es der Browser der Benutzerin bzw. des Benutzers ist, der die Farben für den Text und den Hintergrund bestimmt.
 
@@ -779,7 +779,7 @@ Stellen Sie vor allem sicher, dass der Link-Text den Zweck eines Links eindeutig
    * Text: Abendkurse im Herbst 2010 – Details.
    * Grund: Durch eine kleine Anpassung des Textes und der Position des Linkelements lässt sich der Link-Text verbessern:
 
-Links sollten auf den Seiten eine konsistente Bezeichnung erhalten. Dies gilt insbesondere für Navigationsleisten. Wenn ein Link zu einer bestimmten Seite z. B. auf einer Seite **Publikationen** heißt, dann sollte er auch auf allen anderen Seiten denselben Namen erhalten.
+Links sollten auf allen Seiten konsistent formuliert sein, insbesondere für Navigationsleisten. Wenn beispielsweise ein Link zu einer bestimmten Seite **Veröffentlichungen** auf einer Seite verwenden Sie diesen Text auf anderen Seiten, um Konsistenz zu gewährleisten.
 
 Zum Zeitpunkt des Schreibens gibt es jedoch einige Probleme im Zusammenhang mit der Verwendung von Titeln:
 
@@ -789,7 +789,7 @@ Zum Zeitpunkt des Schreibens gibt es jedoch einige Probleme im Zusammenhang mit 
 
 Das Title-Attribut kann also genutzt werden, um zusätzlichen Kontext zu einem Link bereitzustellen, Sie sollten aber diese Einschränkungen bedenken und es daher nicht als Alternative für einen geeigneten Link-Text nutzen.
 
-Wenn ein Link aus einem Bild besteht, müssen Sie sicherstellen, dass der Alternativtext für das Bild tatsächlich das Ziel des Links beschreibt. Wenn z. B. ein Bild eines Bücherregals als Link zu den Publikationen einer Person festgelegt wird, sollte der Alternativtext **Publikationen von John Smith** lauten und nicht **Bücherregal**.
+Wenn der Link aus einem Bild besteht, stellen Sie sicher, dass der alternative Text für das Bild das Ziel des Links beschreibt. Wenn beispielsweise ein Bild einer virtuellen Bibliothek als Link zu den Publikationen einer Person festgelegt wird, sollte der alternative Text wie folgt lauten: **Publikationen von John Smith** und nicht **Bücherregal**.
 
 Wenn der Link-Anker alternativ Text enthält, der den Zweck des Links zusätzlich zum Bildelement beschreibt (und der Text daher neben dem Bild angezeigt wird), verwenden Sie ein leeres Alternativattribut für das Bild:
 
@@ -814,7 +814,7 @@ Auch wenn es angeraten ist, einen Link-Text bereitzustellen, der den Zweck des L
 
 In einigen Fällen, in denen sich mehrere Links auf einer Seite befinden (von denen jeder das Ziel des Links durch komplexe, aber erforderliche Details angibt), kann es sinnvoll sein, eine alternative Version der Web-Seite anzubieten, die denselben Inhalt anzeigt, auf der der Link-Text jedoch weniger ausführlich ist.
 
-Alternativ können Skripte verwendet werden. Dabei wird im Link selbst ein minimaler Text bereitgestellt. Bei der Aktivierung des entsprechenden Steuerelements im oberen Bereich der Seite wird der Link-Text jedoch *erweitert* und es werden mehr Details angezeigt. Einen ähnlichen Ansatz bietet die Verwendung von CSS, um den vollständigen Link für sehende Benutzerinnen und Benutzer *auszublenden*, ihn jedoch für Menschen, die die Sprachausgabe nutzen, auszugeben. Dies überschreitet den Rahmen dieses Dokuments, doch finden Sie weitere Informationen hierzu unter [Weitere Informationen: Link-Zweck (im Kontext) (2.4.4)](#more-information-link-purpose-in-context).
+Alternativ können Skripte verwendet werden, sodass eine minimale Textmenge innerhalb des Links selbst bereitgestellt wird. Beim Aktivieren eines entsprechenden Steuerelements, das sich oben auf der Seite befindet, lautet der Link-Text jedoch *erweitert* detailliert beschrieben. Einen ähnlichen Ansatz bietet die Verwendung von CSS, um den vollständigen Link für sehende Menschen *auszublenden*, ihn aber für Menschen, die eine Bildschirmlesehilfe nutzen, auszugeben. Dies überschreitet den Rahmen dieses Dokuments, weitere Informationen hierzu finden Sie jedoch unter [Weitere Informationen: Link-Zweck (Im Kontext) (2.4.4)](#more-information-link-purpose-in-context).
 
 #### Weitere Informationen – Link-Zweck (im Kontext) (2.4.4) {#more-information-link-purpose-in-context}
 
@@ -939,7 +939,7 @@ Wenn Bild-Schaltflächen verwendet werden (z. B. die Komponente **Bild-Schaltfl�
 
 Bei einer Gruppe zusammengehöriger Steuerelemente, z. B. **Optionsfeldgruppe**, kann sowohl ein Titel für die Gruppe als auch für einzelne Steuerelemente erforderlich sein. Wenn Sie einen Satz Optionsfelder in AEM hinzufügen, gibt das Feld **Titel** diesen Gruppentitel an, während die einzelnen Titel beim Erstellen der Optionsfelder (**Elemente**) angegeben werden.
 
-![Hinzufügen von Elementen zur Optionsfeldgruppe. Der Gruppentitel lautet „Contact me by“ - im Titel-Feld definiert.](assets/chlimage_1-24a.png)
+![Hinzufügen von Elementen zur Optionsfeldgruppe. Der Gruppentitel lautet &quot;Contact me by&quot;- definiert im Feld Titel .](assets/chlimage_1-24a.png)
 
 Es gibt jedoch keine programmgesteuerte Zuordnung zwischen dem Gruppentitel und den Optionsschaltflächen. Der Titel muss beim Bearbeiten der Vorlage in die erforderlichen Tags `fieldset` und `legend` gesetzt werden, um diese Zuordnung herzustellen. Dies kann ausschließlich über die Bearbeitung des Quell-Codes der Seite erfolgen. Alternativ können Systemadmins die Unterstützung für diese Elemente hinzufügen, damit sie im Dialogfeld **Feldeigenschaften** angezeigt werden (siehe [Hinzufügen von Unterstützung für zusätzliche HTML-Elemente und -Attribute](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 

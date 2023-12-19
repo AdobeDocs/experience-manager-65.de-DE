@@ -10,8 +10,8 @@ role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
 source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '3033'
-ht-degree: 99%
+source-wordcount: '3048'
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ In **[!UICONTROL Unschärfemaske]** sind die folgenden Filteroptionen verfügbar
 | --- | --- |
 | Stärke | Steuert die Stärke des Kontrasts, der auf Kanten-Pixel angewendet wird. Der Standardwert ist 1,75. Bei hochauflösenden Bildern können Sie ihn auf bis zu 5 erhöhen. Stellen Sie sich die Stärke als ein Maß für die Filterintensität vor. Bereich: 0-5. |
 | Radius | Bestimmt die Anzahl der Pixel um die Kanten-Pixel, auf die sich die Scharfzeichnung auswirkt. Bei hochauflösenden Bildern geben Sie einen Wert zwischen 1 und 2 ein. Bei einem niedrigen Wert werden lediglich die Kanten-Pixel scharf gezeichnet, bei einem hohen Wert werden mehr Pixel scharf gezeichnet. Der korrekte Wert hängt von der Bildgröße ab. Der Standardwert ist 0,2. Der Bereich ist 0–250. |
-| Schwellenwert | Bestimmt den Kontrastbereich, der bei der Anwendung des Filters „Unscharf maskieren“ ignoriert werden soll. In anderen Worten: Die Option bestimmt, wie stark sich die scharf gezeichneten Pixel vom Umgebungsbereich unterscheiden müssen, damit sie als Kanten-Pixel eingestuft und scharf gezeichnet werden. Um Rauschen zu vermeiden, experimentieren Sie mit Werten zwischen 0 und 255. |
+| Schwellenwert | Bestimmt den Kontrastbereich, der bei der Anwendung des Filters „Unscharf maskieren“ ignoriert werden soll. In anderen Worten: Die Option bestimmt, wie stark sich die scharf gezeichneten Pixel vom Umgebungsbereich unterscheiden müssen, damit sie als Kanten-Pixel eingestuft und scharf gezeichnet werden. Um Rauschen zu vermeiden, experimentieren Sie mit Ganzzahlwerten zwischen 0 und 255. |
 
 Das Scharfzeichnen wird unter [Scharfzeichnen von Bildern](/help/assets/assets/sharpening_images.pdf) beschrieben.
 

@@ -9,7 +9,7 @@ exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '6904'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -43,7 +43,7 @@ Die Lösung „Correspondence Management“ unterstützt zwei Arten von dynamisc
 1. Auswählen **Erstellen** > **Text** Oder wählen Sie ein Textelement und wählen Sie **Bearbeiten**.
 1. Geben Sie folgende Informationen für den Text an:
 
-   * **Titel: (Optional)**: Geben Sie den Titel für das Textelement ein. Titel müssen nicht eindeutig sein und können Sonderzeichen und nichtenglische Zeichen enthalten. Texte werden durch ihren Titel (falls verfügbar) wie etwa in Miniaturen und Asset-Eigenschaften referenziert.
+   * **Titel: (Optional)**: Geben Sie den Titel für das Textelement ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nicht-englische Zeichen enthalten. Texte werden durch ihren Titel (falls verfügbar) wie etwa in Miniaturen und Asset-Eigenschaften referenziert.
    * **Name**: Der eindeutige Name für das Textelement. Es können nicht zwei Assets (Text, Bedingung oder Liste) in beliebigen Status mit demselben Namen vorhanden sein. Im Feld „Name“ können Sie nur englische Zeichen, Zahlen und Bindestriche eingeben. Das Feld „Name“ wird automatisch auf der Grundlage des Titelfelds vorausgefüllt. Die Sonderzeichen, Leerzeichen, Zahlen und die nichtenglischen Zeichen im Feld „Titel“ werden im Feld „Name“ durch Bindestriche ersetzt. Obwohl der Wert im Feld „Titel“ automatisch in das Feld „Name“ kopiert wird, können Sie den Wert bearbeiten.
    * **Beschreibung**: Geben Sie eine Beschreibung des Assets ein.
    * **Datenwörterbuch**: Wählen Sie optional das Datenwörterbuch aus, dem das Element zugeordnet werden soll. Mit diesem Attribut können Sie Verweise auf Datenwörterbuchelemente im Text-Asset hinzufügen.
@@ -150,7 +150,7 @@ Führen Sie die folgenden Schritte aus, um einen Hyperlink in einem Textelement 
 
 Bei der Arbeit mit Textelementen, die einen großen Textkörper enthalten, müssen Sie nach einer bestimmten Textzeichenfolge suchen. Möglicherweise müssen Sie auch eine bestimmte Textfolge durch eine alternative Zeichenfolge ersetzen.
 
-Mit der Funktion &quot;Suchen und Ersetzen&quot;können Sie nach einer beliebigen Zeichenfolge in einem Textelement suchen (und diese ersetzen). Die Funktion umfasst außerdem eine leistungsstarke Suche nach regulären Ausdrücken.
+Mithilfe der Funktion „Suchen und Ersetzen“ können Sie nach einer beliebigen Zeichenfolge in einem Textelement suchen (und diese ersetzen). Die Funktion umfasst außerdem eine leistungsstarke Suche nach regulären Ausdrücken.
 
 #### Suchen nach Text in einem Textmodul {#to-search-text-in-a-text-module}
 
@@ -235,7 +235,7 @@ Eine Liste ist eine Gruppe von zusammenhängenden Inhalten, die in einer Briefvo
 
 1. Geben Sie folgende Informationen für die Liste an:
 
-   * **Titel (Optional):** Geben Sie den Titel für die Liste ein. Der Titel muss nicht eindeutig sein und kann Sonderzeichen und nichtenglische Zeichen enthalten. Listen werden durch ihre Titel (falls verfügbar) referenziert, wie beispielsweise in Miniaturansichten und Asset-Eigenschaften.
+   * **Titel (Optional):** Geben Sie den Titel für die Liste ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nicht-englische Zeichen enthalten. Listen werden durch ihre Titel (falls verfügbar) referenziert, wie beispielsweise in Miniaturansichten und Asset-Eigenschaften.
    * **Name:** Der eindeutige Name der Liste. Es können nicht zwei Assets (Text, Bedingung oder Liste) in beliebigen Status mit demselben Namen vorhanden sein. Im Feld „Name“ können Sie nur englische Zeichen, Zahlen und Bindestriche eingeben. Das Feld „Name“ wird automatisch mit dem Wert im Feld „Titel“ ausgefüllt. Die Sonderzeichen, Leerzeichen, Zahlen und die nichtenglischen Zeichen im Feld „Titel“ werden im Feld „Name“ durch Bindestriche ersetzt. Obwohl der Wert im Feld „Titel“ automatisch in das Feld „Name“ kopiert wird, können Sie den Wert bearbeiten.
    * **Beschreibung (Optional)**: Geben Sie eine Beschreibung des Assets ein.
    * **Datenelement (Optional)**: Wählen Sie optional das Datenelement aus, mit dem das Element verknüpft werden soll. Es können nur Elemente der Liste hinzugefügt werden, die das gleiche Datenwörterbuch verwenden wie die Liste oder denen kein Datenwörterbuch zugewiesen ist. Das Zuweisen eines Datenwörterbuchs zu einer Liste erleichtert es der Erstellerin bzw. dem Ersteller einer Briefvorlage, die entsprechende Liste zu finden.
@@ -308,7 +308,7 @@ Mit dem Bedingungseditor können Sie eine Standardbedingung festlegen. Wenn der 
 1. Wählen Sie **Erstellen > Bedingung**.
 1. Geben Sie folgende Informationen für die Liste an:
 
-   * **Titel (Optional):** Geben Sie den Titel für die Bedingung ein. Der Titel muss nicht eindeutig sein und kann Sonderzeichen und nichtenglische Zeichen enthalten. Bedingungen werden durch ihren Titel (falls verfügbar) wie etwa in Miniaturen und Asset-Eigenschaften referenziert.
+   * **Titel (Optional):** Geben Sie den Titel für die Bedingung ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nicht-englische Zeichen enthalten. Bedingungen werden durch ihren Titel (falls verfügbar) wie etwa in Miniaturen und Asset-Eigenschaften referenziert.
    * **Name:** Der eindeutige Name der Bedingung. Es können nicht zwei Assets (Text, Bedingung oder Liste) in beliebigen Status mit demselben Namen vorhanden sein. Im Feld „Name“ können Sie nur englische Zeichen, Zahlen und Bindestriche eingeben. Das Feld „Name“ wird automatisch auf der Grundlage des Titelfelds vorausgefüllt. Die Sonderzeichen, Leerzeichen, Zahlen und die nichtenglischen Zeichen im Feld „Titel“ werden im Feld „Name“ durch Bindestriche ersetzt. Obwohl der Wert im Feld „Titel“ automatisch in das Feld „Name“ kopiert wird, können Sie den Wert bearbeiten.
    * **Beschreibung (Optional)**: Geben Sie eine Beschreibung der Bedingung ein.
    * **Datenelement (Optional)**: Wählen Sie optional das Datenelement aus, mit dem das Element verknüpft werden soll. Es können nur Elemente der Liste hinzugefügt werden, die das gleiche Datenwörterbuch verwenden wie die Bedingung oder denen kein Datenwörterbuch zugewiesen ist. Das Zuweisen eines Datenwörterbuchs zu einer Liste erleichtert es der Person, die eine Briefvorlage erstellt, die passende Bedingung zu finden.
@@ -348,13 +348,13 @@ Mit dem Bedingungseditor können Sie eine Standardbedingung festlegen. Wenn der 
 
 Ein Layout-Fragment basiert auf in Designer erstellten XDPs. Zum Erstellen von Layout-Fragmenten müssen Sie die XDPs erstellen und sie [auf AEM Forms hochladen](/help/forms/using/import-export-forms-templates.md).
 
-Ein oder mehrere Layout-Fragmente können Teile eines Briefs bilden und das grafische Layout dieser Teile definieren. Ein Layout-Fragment kann typische Formularfelder wie „Adresse“ und „Referenz“ sowie leere Unterformulare, die Zielbereiche kennzeichnen, enthalten. Darüber hinaus können Sie mit Layout-Fragmenten Tabellen erstellen und sie in Briefe einfügen.
+Ein oder mehrere Layout-Fragmente können Teile eines Briefs bilden und das grafische Layout dieser Teile definieren. Ein Layout-Fragment kann typische Formularfelder wie „Adresse“ und „Referenz“ sowie leere Unterformulare, die Zielbereiche kennzeichnen, enthalten. Darüber hinaus können Sie mit Layout-Fragmenten Tabellen erstellen und in Briefe einfügen.
 
 Ein gängiger Anwendungsfall besteht darin, wiederverwendbare Layout-Muster in Briefen zu suchen und Layout-Fragmente dafür zu erstellen. Beispiel: Anrede, Adresse und Betreff eines Briefs kommen in derselben Reihenfolge in mehreren Briefen vor. Ein weiteres Beispiel könnte eine Tabelle mit immer ähnlicher Anzahl von Zeilen und Spalten sein, die in mehreren Briefen verwendet wird.
 
 Sie können ein Layout-Fragment basierend auf einer vorhandenen XDP erstellen. Ein Layout-Fragment kann entweder aus Feldern und Zielbereichen oder aus mindestens einer Tabelle bestehen. Die Tabellen in einem Layout können statisch oder dynamisch sein. Eine XDP wird in Designer erstellt und in [AEM Forms hochgeladen](/help/forms/using/import-export-forms-templates.md). Eine XDP kann die Struktur eines Layout-Fragments oder die Struktur eines Briefs bilden. Weitere Informationen finden Sie unter [Erstellung von Layouts](/help/forms/using/layout-design-details.md).
 
-Wenn Sie Fragmente verwenden, die mit Zielbereichen verbunden sind, kann der Brief zum Zeitpunkt des Verfassens geändert werden. Es können Layout-Fragmente mit verschiedenen Abmessungen erstellt werden, und das geeignete Fragment kann mit dem Zielbereich verbunden werden. Mit Layout-Fragmenten können Sie auch einige Tabelleneigenschaften anpassen:
+Wenn Sie Fragmente verwenden, die mit Zielbereichen verbunden sind, kann der Brief zum Zeitpunkt des Verfassens geändert werden. Es können Layout-Fragmente mit verschiedenen Abmessungen erstellt werden, und das geeignete Fragment kann mit dem Zielbereich verbunden werden. Layout-Fragmente ermöglichen Ihnen außerdem, einige Tabelleneigenschaften anzupassen:
 
 1. Sie können die Zeilen- und Spaltenanzahl erhöhen.
 1. Sie können den Kopf- und Fußzeilentext für weitere Zeilen und Spalten angeben.
@@ -397,7 +397,7 @@ Ein detailliertes Beispiel der Verwendung von statischen und dynamischen Tabelle
 1. Correspondence Management zeigt die verfügbaren XDP-Dateien an. Wählen Sie die XDP aus, auf der Sie Ihr Layout-Fragment basieren möchten, und wählen Sie **Nächste**.
 1. Geben Sie folgende Informationen für das Layout an:
 
-   * **Titel (Optional):** Geben Sie den Titel für das Layout-Fragment ein. Der Titel muss nicht eindeutig sein und kann Sonderzeichen und nichtenglische Zeichen enthalten. Layout-Fragmente werden durch ihre Titel (falls verfügbar), wie etwa in Miniaturansichten und Asset-Eigenschaften, referenziert.
+   * **Titel (Optional):** Geben Sie den Titel für das Layout-Fragment ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nicht-englische Zeichen enthalten. Layout-Fragmente werden durch ihre Titel (falls verfügbar), wie etwa in Miniaturansichten und Asset-Eigenschaften, referenziert.
    * **Name**: Der eindeutige Name des Layout-Fragments. Es können nicht zwei Assets (Text, Bedingung oder Liste) in beliebigen Status mit demselben Namen vorhanden sein. Im Feld „Name“ können Sie nur englische Zeichen, Zahlen und Bindestriche eingeben. Das Feld „Name“ wird automatisch auf der Grundlage des Titelfelds vorausgefüllt. Die Sonderzeichen, Leerzeichen, Zahlen und die nichtenglischen Zeichen im Feld „Titel“ werden im Feld „Name“ durch Bindestriche ersetzt. Obwohl der Wert im Feld „Titel“ automatisch in das Feld „Name“ kopiert wird, können Sie den Wert bearbeiten. Dieser Name wird auf der Benutzeroberfläche „Elemente verwalten“ in der Liste angezeigt.
    * **Beschreibung (Optional)**: Beschreibung, die auf der Benutzeroberfläche „Elemente verwalten“ in der Liste angezeigt wird.
    * **Tags (Optional)**: Wählen Sie optional die Tags aus, die auf die Bedingung angewendet werden sollen. Sie können auch den Namen eines neuen Tags eingeben und es erstellen.

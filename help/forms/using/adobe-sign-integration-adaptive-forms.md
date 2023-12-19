@@ -10,17 +10,17 @@ exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
 source-git-commit: ab40115c373cc06a7600494288b2670deb914e1a
 workflow-type: tm+mt
 source-wordcount: '2071'
-ht-degree: 78%
+ht-degree: 81%
 
 ---
 
 # Integrieren von [!DNL Adobe Sign] in AEM [!DNL Forms]{#integrate-adobe-sign-with-aem-forms}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/using/create-an-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=en#adobe-acrobat-sign-for-government) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=de#adobe-acrobat-sign-for-government) |
 | AEM 6.5 | Dieser Artikel |
 
 [!DNL Adobe Sign] aktiviert für adaptive Formulare Arbeitsabläufe für E-Signaturen. E-Signaturen verbessern die Workflows bei der Verarbeitung von Dokumenten in den Bereichen Recht, Vertrieb, Gehaltsabrechnung, Personalverwaltung u. v. a..
@@ -193,7 +193,7 @@ Bevor Sie mit der Verbindung von AEM Forms mit Adobe Acrobat Sign Solutions begi
 
 #### Freigeben der Umleitungs-URL und der Bereiche für das Adobe Sign-Team und Empfangen von Anmeldeinformationen
 
-Das Adobe Acrobat Sign for Government Solutions-Team benötigt `re-direct URL` und die bestimmten Bereiche, die für Ihre Adobe Acrobat Sign-Anwendung aktiviert werden sollen (siehe unten), um Anmeldeinformationen (Client-ID und Client-Geheimnis) zu generieren, über die Sie AEM Forms mit Adobe Acrobat Sign Solutions für Behörden verbinden können.
+Das Team von Adobe Acrobat Sign Solutions für Behörden benötigt die `re-direct URL` und bestimmte Bereiche, die für Ihre Adobe Acrobat Sign-Anwendung aktiviert sein müssen (siehe unten), um Anmeldeinformationen (Client-ID und Client-Geheimnis) zu generieren, die es Ihnen ermöglichen, AEM Forms mit Adobe Acrobat Sign Solutions für Behörden zu verbinden.
 
 Geben Sie die `scopes` (unten aufgelistet) und die `re-direct URL`, die Sie im letzten Schritt des vorherigen Abschnitts erstellt und notiert haben, an Ihre [Ansprechperson im Adobe Professional Services-Team](https://opensource.adobe.com/acrobat-sign/signgov/gstarted.html#password) für Adobe Acrobat Sign Solutions für Behörden weiter.
 

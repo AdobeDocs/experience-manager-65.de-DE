@@ -9,7 +9,7 @@ exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 50%
+ht-degree: 86%
 
 ---
 
@@ -21,33 +21,33 @@ Die folgenden Administrations-Tools sind für die Verwaltung von Websites und Se
 
    * [Wiederverwenden von Inhalten: Multi Site Manager und Live Copy](/help/sites-administering/msm.md)
 
-* Mit der Übersetzung können Sie die Übersetzung von Seiteninhalten, Assets und benutzergenerierten Inhalten automatisieren, um mehrsprachige Websites zu erstellen und zu verwalten:
+* Die Übersetzungsfunktion ermöglicht Ihnen die Automatisierung der Übersetzung von Seiteninhalten, Assets und nutzergenerierten Inhalten, um mehrsprachige Websites zu erstellen und zu pflegen:
 
    * [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md)
 
-* Diese beiden Funktionen können kombiniert werden, um Websites zu unterstützen, die beide [Mehrsprachige und mehrsprachige Inhalte](#multinational-and-multilingual-sites).
+* Diese beiden Funktionen können kombiniert und für [internationale, mehrsprachige](#multinational-and-multilingual-sites) Websites eingesetzt werden.
 
 ## Internationale, mehrsprachige Websites {#multinational-and-multilingual-sites}
 
-Sie können durch den kombinierten Einsatz von Multi Site Manager und Übersetzungs-Workflow auf effiziente Weise Inhalte für internationale, mehrsprachige Websites erstellen. Erstellen Sie eine Master-Site in einer Sprache für ein bestimmtes Land und verwenden Sie diesen Inhalt dann als Grundlage für die anderen Sites, wobei Sie bei Bedarf eine Übersetzung verwenden:
+Sie können durch den kombinierten Einsatz von Multi Site Manager und Übersetzungs-Workflow auf effiziente Weise Inhalte für internationale, mehrsprachige Websites erstellen. Erstellen Sie eine Primär-Site in einer Sprache und für ein bestimmtes Land und verwenden Sie diese Inhalte als Grundlage für die anderen Sites, wobei Sie diese bei Bedarf übersetzen lassen:
 
 * [Übersetzen](/help/sites-administering/translation.md) Sie die primäre Website in verschiedene Sprachen.
 
 * Verwenden Sie [Multi Site Manager](/help/sites-administering/msm.md) für Folgendes:
 
-   * Verwenden Sie Inhalte von der Master-Site und die Übersetzungen erneut, um Sites für andere Länder und Kulturen zu erstellen.
+   * Sie können die Inhalte der Primär-Site sowie die zugehörigen Übersetzungen wiederverwenden, um Sites für andere Länder und Kulturen zu erstellen.
    * Stellen Sie sicher, dass Sie die Verwendung von Multi Site Manager auf Inhalte in einer Sprache beschränken, z. B. auf englische Master > englische Sprachzweige auf Länderseiten, französische Master > französische Sprachzweige auf Länderseiten.
-   * Trennen Sie bei Bedarf die Elemente der Live Copies, um Lokalisierungsdetails hinzuzufügen.
+   * Trennen Sie bei Bedarf Elemente von den Live Copies, um Lokalisierungsdetails hinzuzufügen.
 
 Das folgende Diagramm veranschaulicht, wie sich die Hauptkonzepte überschneiden (es sind jedoch nicht alle beteiligten Ebenen/Elemente dargestellt):
 
-![Abbildung der wichtigsten Konzepte von MSM und Übersetzung](assets/chlimage_1-71a.png)
+![Abbildung der Hauptkonzepte der MSM- und Übersetzungsfunktion](assets/chlimage_1-71a.png)
 
 >[!NOTE]
 >
 >Bei diesem und vergleichbaren Szenarien verwaltet MSM nicht die verschiedenen Sprachversionen als solche.
 >
->* [MSM](/help/sites-administering/msm.md) verwaltet die Bereitstellung übersetzter Inhalte von einem Blueprint (z. B. einem globalen Master) zu den Live Copies (z. B. den lokalen Sites) innerhalb der Grenzen einer Sprache.
+>* [MSM](/help/sites-administering/msm.md) verwaltet die Bereitstellung der übersetzten Inhalte von einem Blueprint (z. B. einem globalen Stamm) für die Live Copies (z. B. die lokalen Sites) innerhalb einer Sprache.
 >* Die AEM-Integrationsfunktionen zur [Übersetzung](/help/sites-administering/translation.md) verwalten kombiniert mit Übersetzungs-Management-Services von Drittanbietern die Sprachen und die Übersetzung der Inhalte in diese verschiedenen Sprachen.
 >
 >Bei noch komplexeren Nutzungsszenarien kann MSM auch über Sprachstämme hinweg eingesetzt werden.

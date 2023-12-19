@@ -9,18 +9,18 @@ exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
 source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '2072'
-ht-degree: 69%
+ht-degree: 77%
 
 ---
 
 
 # Konfigurieren von Suchformularen{#configuring-search-forms}
 
-Verwendung **Forms durchsuchen** um die Auswahl der Sucheigenschaften anzupassen, die in den Suchbereichen verwendet werden, die in verschiedenen AEM Konsolen und/oder Bedienfeldern der Autorenumgebung verfügbar sind. Durch das Anpassen dieser Bedienfelder ist die Suchfunktion entsprechend Ihren spezifischen Anforderungen vielseitiger.
+Mit **Suchformularen** können Sie die Auswahl der Suchprädikate anpassen, die in den Suchbereichen der verschiedenen AEM-Konsolen und/oder in den Suchbereichen der Autorenumgebung verwendet werden. Auf diese Weise können Sie die Suchfunktion genau auf Ihre speziellen Anforderungen ausrichten.
 
-A [Bereich der Eigenschaft](#predicates-and-their-settings)s sind standardmäßig verfügbar. Sie können mehrere Eigenschaften hinzufügen, darunter (unter anderem) das Eigenschaftsprädikat, um nach Assets zu suchen, die mit einer von Ihnen angegebenen Eigenschaft übereinstimmen. Oder die Options-Eigenschaft zum Suchen von Assets, die mit einem oder mehreren Werten übereinstimmen, die Sie für eine bestimmte Eigenschaft angeben.
+Eine [Reihe an Prädikaten](#predicates-and-their-settings) ist vorkonfiguriert verfügbar. Sie können mehrere Eigenschaften hinzufügen, darunter (unter anderem) das Eigenschaftsprädikat, um nach Assets zu suchen, die mit einer von Ihnen angegebenen Eigenschaft übereinstimmen. Oder die Options-Eigenschaft zum Suchen von Assets, die mit einem oder mehreren Werten übereinstimmen, die Sie für eine bestimmte Eigenschaft angeben.
 
-Sie können [Suchformulare konfigurieren](#configuring-your-search-forms) wird in verschiedenen Konsolen und im Asset-Browser verwendet (beim Bearbeiten von Seiten). Die [Dialogfelder für die Konfiguration dieser Formulare](#configuring-your-search-forms) finden Sie unter:
+Sie können [die in verschiedenen Konsolen und im Asset-Browser (beim Bearbeiten von Seiten) verwendeten Suchformulare](#configuring-your-search-forms) konfigurieren. Die [Dialogfelder für die Konfiguration dieser Formulare](#configuring-your-search-forms) finden Sie unter:
 
 * **Tools**
 
@@ -28,9 +28,9 @@ Sie können [Suchformulare konfigurieren](#configuring-your-search-forms) wird i
 
       * **Suchformulare**
 
-Wenn Sie zum ersten Mal auf diese Konsole zugreifen, sehen Sie, dass alle Konfigurationen über ein Vorhängeschlosssymbol verfügen. Dies bedeutet, dass die entsprechende Konfiguration die Standardkonfiguration (vorkonfiguriert) ist und nicht gelöscht werden kann. Nachdem Sie die Konfiguration angepasst haben, wird die Sperre ausgeblendet, es sei denn, Sie [Ihre benutzerdefinierte Konfiguration löschen](#deleting-a-configuration-to-reinstate-the-default). In diesem Fall wird die Standardeinstellung (und die Sperranzeige) wieder aktiviert.
+Wenn Sie zum ersten Mal auf diese Konsole zugreifen, sehen Sie, dass alle Konfigurationen über ein Vorhängeschlosssymbol verfügen. Dieses Symbol bedeutet, dass die richtige Konfiguration die (vorkonfigurierte) Standardkonfiguration ist und nicht gelöscht werden kann. Nachdem Sie die Konfiguration angepasst haben, wird die Sperre ausgeblendet, es sei denn, Sie [Ihre benutzerdefinierte Konfiguration löschen](#deleting-a-configuration-to-reinstate-the-default). In diesem Fall wird die Standardeinstellung (und die Sperranzeige) wieder aktiviert.
 
-![Fenster &quot;Suchformulare&quot;](assets/chlimage_1-374.png)
+![Suchformulare-Fenster](assets/chlimage_1-374.png)
 
 ## Konfigurationen {#configurations}
 
@@ -395,10 +395,10 @@ Die Beschriftungen für die Kontrollkästchen &quot;Veröffentlichen&quot;und &q
 
 ### Erstellen/Öffnen einer benutzerdefinierten Konfiguration {#creating-opening-a-customized-configuration}
 
-1. Navigieren Sie zu **Instrumente** >>  **Allgemein** >> **Forms durchsuchen**.
+1. Navigieren Sie zu **Tools** > **Allgemein** > **Suchformulare**.
 
 1. Wählen Sie die Konfiguration aus, die Sie anpassen möchten.
-1. Verwenden Sie das Symbol **Bearbeiten**, um die Konfiguration für das Aktualisieren zu öffnen.
+1. Verwenden Sie das Symbol **Bearbeiten**, um die Konfiguration für die Aktualisierung zu öffnen.
 1. Bei einer neuen Anpassung möchten Sie wahrscheinlich [neue Prädikatsfelder hinzufügen und Einstellungen definieren](#add-edit-a-predicate-field-and-define-field-settings) nach Bedarf. Bei einer vorhandenen Anpassung können Sie ein vorhandenes Feld auswählen und [Einstellungen aktualisieren](#add-edit-a-predicate-field-and-define-field-settings).
 1. Wählen Sie **Fertig** aus, um die Konfiguration zu speichern.
 
@@ -413,10 +413,10 @@ Die Beschriftungen für die Kontrollkästchen &quot;Veröffentlichen&quot;und &q
 
 Sie können Felder hinzufügen oder bearbeiten und deren Einstellungen definieren/aktualisieren:
 
-1. [Öffnen Sie die benutzerdefinierte Konfiguration](#creating-opening-a-customized-configuration) für das Aktualisieren.
+1. [Öffnen Sie die benutzerdefinierte Konfiguration](#creating-opening-a-customized-configuration) für die Aktualisierung.
 1. Wenn Sie ein Feld hinzufügen möchten, öffnen Sie die **Eigenschaft auswählen** und ziehen Sie das gewünschte Prädikat an die gewünschte Position. Beispiel: die **Datumsbereich-Eigenschaft**:
 
-   ![Suchformular bearbeiten](assets/chlimage_1-375.png)
+   ![Bearbeiten eines Suchformulars](assets/chlimage_1-375.png)
 
 1. Der nächste Schritt hängt davon ab, was Sie tun möchten:
 
@@ -430,7 +430,7 @@ Sie können Felder hinzufügen oder bearbeiten und deren Einstellungen definiere
 
    Beispiel: die Einstellungen für die **Datumsbereich-Eigenschaft**:
 
-   ![Eigenschaften für Datumsbereichsprädikat](assets/chlimage_1-376.png)
+   ![Eigenschaften für Datumsbereichsprädikate](assets/chlimage_1-376.png)
 
 1. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie sie mit **Fertig**.
 
@@ -438,17 +438,17 @@ Sie können Felder hinzufügen oder bearbeiten und deren Einstellungen definiere
 
 1. Wählen Sie das Vorschausymbol aus:
 
-   ![Vorschau von Suchformularen anzeigen](do-not-localize/chlimage_1-31.png)
+   ![Suchformular-Vorschau](do-not-localize/chlimage_1-31.png)
 
 1. Dadurch werden die Suchformulare so angezeigt, wie sie in der Suchspalte der entsprechenden Konsole angezeigt (vollständig erweitert) werden.
 
-   ![Suchformular-Vorschau anzeigen](assets/chlimage_1-377.png)
+   ![Anzeigen der Suchformular-Vorschau](assets/chlimage_1-377.png)
 
 1. **Schließen** die Vorschau anzeigen, damit Sie die Konfiguration wiederherstellen und abschließen können.
 
 ### Löschen eines Prädikatfelds {#deleting-a-predicate-field}
 
-1. [Öffnen Sie die benutzerdefinierte Konfiguration](#creating-opening-a-customized-configuration) für das Aktualisieren.
+1. [Öffnen Sie die benutzerdefinierte Konfiguration](#creating-opening-a-customized-configuration) für die Aktualisierung.
 1. Wählen Sie das Prädikatsfeld (rechts) aus, öffnen Sie die Registerkarte **Einstellungen** und wählen Sie dann das Symbol **Löschen** (unten links) aus.
 
    ![Löschsymbol](do-not-localize/chlimage_1-32.png)
@@ -463,19 +463,19 @@ Nachdem Sie eine Konfiguration angepasst haben, werden die Standardwerte übersc
 
 >[!NOTE]
 >
->Sie können keine der Standardkonfigurationen löschen.
+>Sie können keine der beiden Standardkonfigurationen löschen.
 
 Das Löschen einer angepassten Konfiguration erfolgt über die Konsole:
 
 1. Wählen Sie die benötigte Konfiguration (z. B. **Seiten-Editor (Absatzsuche)**) und anschließend das Symbol **Löschen** in der Symbolleiste aus:
 
-   ![Formular löschen](assets/chlimage_1-378.png)
+   ![Ein Formular löschen](assets/chlimage_1-378.png)
 
 1. Die angepasste Konfiguration wird gelöscht und die Standardkonfiguration wiederhergestellt (erkennbar am Vorhängeschlosssymbol, das wieder in der Konsole angezeigt wird).
 
 ### Hinzufügen von Optionsprädikaten {#adding-options-predicates}
 
-Mit Optionsprädikaten (Optionen, Optionseigenschaft) können Sie ein zu suchendes Element konfigurieren. Sie werden verwendet, um direkt unter der Seite nach etwas zu suchen, z. B. nach einer Eigenschaft auf dem Seitenknoten.
+Mit Optionsprädikaten (Optionen, Optionseigenschaft) können Sie ein Element konfigurieren, nach dem gesucht werden soll. Sie werden verwendet, um direkt unter der Seite nach etwas zu suchen, z. B. nach einer Eigenschaft auf dem Seitenknoten.
 
 Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstellt wird) verdeutlicht die einzelnen Schritte:
 
@@ -488,7 +488,7 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
    * `jcr:title` – die Feldbezeichnung, die in der Suchschiene angezeigt werden soll
    * `value` – der Eigenschaftswert, nach dem gesucht werden soll
 
-   ![Hinzufügen von Optionen in CRXDE](assets/chlimage_1-379.png)
+   ![ Hinzufügen von Optionen in CRXDE](assets/chlimage_1-379.png)
 
    >[!NOTE]
    >
@@ -524,7 +524,7 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
    ![Eigenschaftspfad hinzufügen](assets/chlimage_1-380.png)
 
 1. Wählen Sie **Fertig** aus, um die Konfiguration zu speichern.
-1. Navigieren Sie zur entsprechenden Konsole (in diesem Beispiel: **Sites**) und öffnen Sie die **Suche** Leiste. Die neu definierten Suchformulare werden zusammen mit den verschiedenen Optionen angezeigt. Wählen Sie die gewünschte Option aus, damit Sie die Suchergebnisse sehen können:
+1. Navigieren Sie zu der entsprechenden Konsole (in diesem Beispiel **Sites**) und öffnen Sie die **Suchleiste**. Die neu definierten Suchformulare werden zusammen mit den verschiedenen Optionen angezeigt. Wählen Sie die gewünschte Option aus, damit Sie die Suchergebnisse sehen können:
 
    ![Die Endergebnisse](assets/chlimage_1-381.png)
 

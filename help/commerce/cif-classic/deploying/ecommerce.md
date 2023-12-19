@@ -1,12 +1,12 @@
 ---
 title: E-Commerce-Übersicht
-description: AEM generische eCommerce ist als Teil der Standardinstallation verfügbar und bietet Ihnen die volle Funktionalität des eCommerce-Frameworks.
+description: Der generische AEM-E-Commerce ist als Teil der Standardinstallation verfügbar und bietet Ihnen alle Funktionen des E-Commerce-Frameworks.
 feature: Commerce Integration Framework
 exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 79%
+source-wordcount: '270'
+ht-degree: 94%
 
 ---
 
@@ -19,16 +19,16 @@ Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
 |                         | CIF On-Premise | CIF Cloud |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Unterstützte AEM-Versionen | AEM On-Premise oder AMS 6.x | AEM AMS 6.4 und 6.5 |
-| Back-End | - AEM, Java <br>- Monolithische Integration, voreingestellte Zuordnung (Vorlage)<br>- JCR-Repository | - ADOBE COMMERCE <br>- Java und JavaScript <br>- Keine Commerce-Daten im JCR-Repository gespeichert |
+| Back-End | - AEM, Java <br>- Monolithische Integration, voreingestellte Zuordnung (Vorlage)<br>- JCR-Repository | - Adobe Commerce <br>- Java und JavaScript <br>- Keine Commerce-Daten im JCR-Repository gespeichert |
 | Frontend | In AEM Server-seitig gerenderte Seiten | Gemischte Seitenanwendung (Hybrid-Rendering) |
 | Produktkatalog | - Produktimport-Tool, Editor, Zwischenspeicherung in AEM <br>- Standardkataloge mit AEM- oder Proxy-Seiten | - Kein Produktimport <br>- Generische Vorlagen <br>- On-Demand-Daten über Connector |
 | Skalierbarkeit | - Unterstützt bis zu mehrere Millionen Produkte (je nach Anwendungsfall) <br>- Zwischenspeicherung im Dispatcher | - Keine Volumenbegrenzung <br>- Zwischenspeicherung im Dispatcher oder im CDN |
 | Standardisiertes Datenmodell | Nein | Ja, das Adobe Commerce GraphQL-Schema |
 | Verfügbarkeit | Ja:<br>- SAP-Commerce Cloud (Erweiterung aktualisiert, um AEM 6.4 und Hybris 5 zu unterstützen (Standard) und Kompatibilität mit Hybris 4 zu gewährleisten) <br>- Salesforce-Commerce Cloud (Open-Source-Connector zur Unterstützung von AEM 6.4) | Ja, über Open Source von GitHub. <br> Adobe Commerce (unterstützt 2.3.2 (standardmäßig) und ist mit 2.3.1 kompatibel). |
-| Verwendungsbereiche | Eingeschränkte Anwendungsfälle: wenn kleine, statische Kataloge importiert werden müssen | Bevorzugte Lösung in den meisten Anwendungsfällen |
+| Wann ist sie einzusetzen? | Eingeschränkte Anwendungsfälle: wenn kleine, statische Kataloge importiert werden müssen | Bevorzugte Lösung in den meisten Anwendungsfällen |
 
 
-## Bereitstellen anderer Implementierungen {#deploying-other-implementations}
+## Bereitstellen weiterer Implementierungen {#deploying-other-implementations}
 
 Informationen zu AEM und Adobe Commerce finden Sie unter [Integration von AEM und Adobe Commerce](/help/commerce/cif/integrating/magento.md) mithilfe der [Commerce integration framework](/help/commerce/cif/introduction.md).
 

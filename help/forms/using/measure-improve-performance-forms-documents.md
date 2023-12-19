@@ -1,6 +1,6 @@
 ---
 title: Messen und Verbessern der Effektivität und Konvertierung von Formularen
-description: AEM Forms ist mit Adobe Target- und Adobe Analytics-Lösungen integriert, mit denen Sie die Leistung und Konvertierungsrate Ihrer Formulare messen und verbessern können.
+description: AEM Forms lässt sich in Adobe Target und Adobe Analytics integrieren, sodass Sie die Leistung und Konversionsrate Ihrer Formulare messen und verbessern können.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
@@ -9,7 +9,7 @@ exl-id: 4f45ad22-611b-4b4f-8e89-cb64a122b70a
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1273'
-ht-degree: 34%
+ht-degree: 99%
 
 ---
 
@@ -17,15 +17,15 @@ ht-degree: 34%
 
 ## Die Herausforderung {#the-challenge-br}
 
-Unternehmen geben ihren Kunden zunehmend die Möglichkeit, ihre Transaktionen mithilfe digitaler Self Services über mehrere Kanäle auszuführen. Da jedoch kein 1:1-Feedback-Mechanismus zur Verfügung steht, wird es schwierig, den Erfolg zu messen und mit digitalen Formularen zu experimentieren, um das Kundenerlebnis zu verbessern und Konversionen zu steigern.
+Unternehmen geben ihren Kunden zunehmend die Möglichkeit, ihre Transaktionen mithilfe digitaler Self Services über mehrere Kanäle auszuführen. In Ermangelung eines unmittelbaren Feedbacks stellt es jedoch eine Herausforderung dar, den Erfolg zu messen und mit digitalen Formularen zu experimentieren, um das Kundenerlebnis zu verbessern und Konversionen zu erhöhen.
 
-Um den ROI zu maximieren, müssen Unternehmen überwachen, wie ihre Kunden mit Diensten interagieren, und mit ihren digitalen Artefakten (Formularen) experimentieren, um die Kundenerlebnisse zu verbessern. Um den Erfolg zu messen und eine Strategie für Verbesserungen zu definieren, müssen Unternehmen Antworten auf Fragen wie folgende finden:
+Um den ROI zu maximieren, müssen Unternehmen überwachen, wie ihre Kundinnen und Kunden mit Diensten interagieren, und mit ihren digitalen Artefakten (Formularen) experimentieren, um die Kundenerlebnisse zu verbessern. Um den Erfolg zu messen und eine Strategie zur Verbesserung zu definieren, müssen Unternehmen Antworten auf Fragen finden wie:
 
-* Wie viele Kunden haben versucht, auf meine Formulare zuzugreifen oder mit ihnen zu handeln?
+* Wie viele Kundinnen und Kunden haben versucht, auf meine Formulare zuzugreifen oder damit Transaktionen durchzuführen?
 * Wie viele davon haben die Transaktion erfolgreich abgeschlossen?
-* Wie viele von ihnen haben das Formular verlassen?
-* Welche Problembereiche bestehen für Kunden?
-* Welche Änderungen bringe ich ein und wie teste ich, was zu einer besseren Konversion führt?
+* Wie viele davon haben das Formular verlassen?
+* Mit welchen Problemen werden die Kundinnen und Kunden konfrontiert?
+* Welche Änderungen kann ich einführen und wie teste ich, was zu einer höheren Konversion führt?
 
 ## Die Lösung {#the-solution}
 
@@ -33,23 +33,23 @@ AEM Forms ermöglicht die Integration in [Adobe Marketing Cloud](https://www.ado
 
 ## Der Workflow {#the-workflow}
 
-Kommen wir zu den Details, wie Sie die Leistung messen und Konversionsraten für Formulare verbessern können.
+Kommen wir zur genauen Vorgehensweise, wie Sie die Leistung messen und Konversionsraten für Formulare erhöhen können.
 
 ### Zielgruppe {#target-audience}
 
-* Geschäftsbenutzer und -analysten, die für Marketingstrategien und Erfolg verantwortlich sind
-* IT-Mitarbeiter, die sich um die Einrichtung und Wartung von Infrastruktur und Lösungen kümmern
+* Business-Anwenderinnen und -Anwender sowie Analystinnen und Analysten, die für Marketing-Strategien und Erfolge verantwortlich sind
+* IT-Teams, die für Einrichtung und Wartung der Infrastruktur und Lösungen verantwortlich sind
 
 ### Beteiligte AEM Forms-Komponenten und -Funktionen {#aem-forms-components-and-features-involved}
 
 * Adaptive Formulare
 * Integration in Adobe Analytics zum Erfassen, Organisieren und Berichten von Kundeninteraktionen mit Ihren adaptiven Formularen
-* Integration mit Adobe Target zum Ausführen von A/B-Tests für adaptive Formulare
+* Integration in Adobe Target, um A/B-Tests für adaptive Formulare durchzuführen
 
 ### Annahmen {#assumptions}
 
 * Sie haben bereits ein Adobe Marketing Cloud-Konto und sich für Analytics- und Target-Lösungen registriert.
-* Sie verfügen über ein veröffentlichtes adaptives Formular, auf das Kunden zugreifen können.
+* Sie verfügen über ein veröffentlichtes adaptives Formular, auf das die Kundinnen und Kunden zugreifen können.
 
 ### Arbeitsablaufschritte {#workflow-steps}
 
@@ -57,7 +57,7 @@ Kommen wir zu den Details, wie Sie die Leistung messen und Konversionsraten für
 
 **Konfigurieren Sie Analytics**
 
-Um tiefe Einblicke in die Interaktionen Ihrer Kunden mit Ihren Formularen zu erhalten, müssen Sie zunächst Analytics in AEM Forms konfigurieren. Führen Sie die folgenden Schritte durch:
+Um umfassende Erkenntnisse zu den Interaktionen der Kundinnen und Kunden mit Ihren Formularen zu erhalten, müssen Sie zunächst Analytics in AEM Forms konfigurieren. Führen Sie die folgenden Schritte durch:
 
 1. Erstellen einer Report Suite in Adobe Analytics
 1. Cloud Service-Konfiguration in AEM erstellen
@@ -73,31 +73,31 @@ Um A/B-Tests für Ihre adaptiven Formulare zu erstellen und durchzuführen, konf
 
 #### Schritt 2: Anzeigen des Analyseberichts {#step-view-analytics-report-br}
 
-Wenn Ihre Kunden auf Formulare zugreifen und mit ihnen interagieren, für die Sie Analytics aktiviert haben, werden ihre Interaktionen in hochgesicherten Analytics-Datenbanken erfasst. Die Datenbanken werden von Clients segmentiert und sind über sichere Verbindungen zugänglich.
+Wenn Ihre Kundinnen und Kunden auf Formulare zugreifen und mit Formularen interagieren, für die Sie Analytics aktiviert haben, werden ihre Interaktionen in streng geschützten Analytics-Datenbanken erfasst. Die Datenbanken werden nach Clients segmentiert, und der Zugriff erfolgt über sichere Verbindungen.
 
-Sie können einen Bericht aus AEM für Formulare mit aktivierter Analyse-Funktion anzeigen und Daten analysieren. Anzeigen des Berichts:
+Sie können einen Bericht aus AEM für Formulare mit aktivierter Analyse-Funktion anzeigen und Daten analysieren. So zeigen Sie den Bericht an:
 
-1. Navigieren Sie auf AEM Server zu **Forms > Forms und Dokumente**.
-1. Wählen Sie das Formular aus, für das Sie den Analysebericht erstellen möchten.
-1. Klicken Sie auf das Symbol Analytics-Berichte . Der Bericht wird angezeigt.
+1. Navigieren Sie auf dem AEM-Server zu **Formulare > Formulare und Dokumente**.
+1. Wählen Sie das Formular aus, für das der Analysebericht erstellt werden soll.
+1. Klicken Sie auf das Symbol für den Analysebericht. Der Bericht wird angezeigt.
 
-Sehen wir uns die Datenpunkte an, die von Analytics für Formulare erfasst und berichtet werden.
+Werfen wir einen Blick auf die Datenpunkte, die von Analytics für Formulare erfasst und gemeldet werden.
 
-**Forms-Analysebericht**
+**Formularanalysebericht**
 
-Der Analysebericht für adaptive Formulare erfasst die folgenden wichtigen Leistungsindikatoren (KPIs) auf Formularebene:
+Der Analysebericht für adaptive Formulare erfasst die folgenden wichtigen Leistungsindikatoren (Key Performance Indicators, KPIs) auf Formularebene:
 
-* **Durchschnittliche Füllzeit**: Durchschnittliche Zeit für das Ausfüllen des Formulars
+* **Durchschnittliche Füllzeit**: Gibt die durchschnittliche Zeit für das Ausfüllen des Formulars an.
 * **Impressionen**: Gibt an, wie oft das Formular in den Suchergebnissen angezeigt wurde
 
 * **Ausgabeformate**: Gibt an, wie oft das Formular wiedergegeben oder geöffnet wurde
-* **Entwürfe**: Gibt an, wie oft das Formular als Entwurf gespeichert wurde
+* **Entwürfe**: Gibt an, wie oft das Formular als Entwurf gespeichert wurde.
 
-* **Einsendungen**: Gibt an, wie oft das Formular gesendet wurde
-* **Abbruch**: Gibt an, wie oft Benutzer das Formular verlassen haben, ohne es auszufüllen
-* **Besuche/Übermittlungen**: Verhältnis der Besuche pro Übermittlung
+* **Übermittlungen**: Gibt an, wie oft das Formular übermittelt wurde.
+* **Abbrechen**: Gibt an, wie oft Benutzende das Formular verlassen haben, ohne es auszufüllen.
+* **Besuche/Übermittlungen**: Gibt das Verhältnis der Besuche pro Übermittlung an.
 
-Darüber hinaus erhalten Sie die folgenden Details zu jedem Bedienfeld im Formular:
+Darüber hinaus erhalten Sie die folgenden Details zu jedem Panel in folgender Form:
 
 * **Uhrzeit**: Durchschnittliche Zeit (Sekunden), die im Bereich und den zugehörigen Feldern verbracht wurde
 
@@ -115,21 +115,21 @@ Weitere Informationen zu Formularanalyseberichten finden Sie unter [Anzeigen und
 
 #### Schritt 3: Analysieren der Datenpunkte {#step-analyze-data-points}
 
-In diesem Schritt analysieren Sie Datenpunkte im Analysebericht und erkennen die Leistung des Formulars. Wenn es Ihre Erfolgs-KPIs nicht erfüllt, erstellen Sie Hypothesen basierend auf Daten und finden mögliche Lösungen, um die Probleme zu beheben. Beispiel:
+In diesem Schritt analysieren Sie Datenpunkte im Analysebericht und schließen auf die Leistung des Formulars. Wenn es Ihre Erfolgs-KPIs nicht erfüllt, erstellen Sie auf Daten basierende Hypothesen und finden mögliche Lösungen, um die Probleme zu beheben. Beispiel:
 
-* Wenn die durchschnittliche Füllzeit für das Formular höher als erwartet ist, könnte Ihr Formular für die Kunden zu schwer verständlich sein, keine Standardterminologie enthalten, zu lang sein und so weiter. In diesem Fall sollten Sie die Formularstruktur und -felder vereinfachen, den Formularentwurf überarbeiten, die Länge des Formulars verkürzen oder Hilfebeschreibungen und Beispiele für nicht standardmäßige Formularfelder hinzufügen.
-* Wenn Daten darauf hindeuten, dass die meisten Kunden auf die Hilfe für ein Formularbedienfeld zugreifen, ist es offensichtlich, dass Kunden verwirrt sind, welche Informationen ausgefüllt werden sollen. Möglicherweise möchten Sie eine alternative Terminologie verwenden oder Beispieleingaben und Hilfebeschreibung für dieses Bedienfeld hinzufügen.
-* Wenn die Abbruch- oder Abbruchrate für ein Formular höher ist als erwartet, kann dies daran liegen, dass die Wiedergabe des Formulars lange dauert, Kunden versehentlich das Formular ankommen oder es zu kompliziert ist. In diesem Fall sollten Sie die in den Suchergebnissen angezeigte Formularbeschreibung optimieren, das Formular vereinfachen, das Formular für schnelleres Laden optimieren usw.
+* Wenn die durchschnittliche Füllzeit für das Formular höher als erwartet ist, könnte Ihr Formular für die Kunden zu schwer verständlich sein, keine Standardterminologie enthalten, zu lang sein und so weiter. In diesem Fall sollten Sie die Formularstruktur und -felder vereinfachen, das Formular-Design überarbeiten, das Formular kürzen oder Hilfebeschreibungen und Beispiele für nicht standardmäßige Formularfelder hinzufügen.
+* Wenn die Daten zeigen, dass die meisten Kundinnen und Kunden auf die Hilfe für ein bestimmtes Formular-Panel zugreifen, ist es offensichtlich, dass ihnen nicht klar ist, welche Informationen sie eingeben sollen. Sie sollten dann eine alternative Terminologie verwenden oder einige Beispieleingaben und Hilfebeschreibung für dieses Panel hinzufügen.
+* Wenn die Abbruchrate für ein Formular höher als erwartet ist, kann es daran liegen, dass die Wiedergabe des Formulars zu lange dauert, Kundinnen und Kunden es versehentlich aufrufen oder es zu schwierig ist. In diesem Fall sollten Sie die Formularbeschreibung optimieren, die in den Suchergebnissen angezeigt wird, das Formular vereinfachen, es für eine schnellere Ladezeit optimieren usw.
 
-Nachdem Sie diese Datenpunkte analysiert und zu einer Hypothese gelangt sind, nehmen Sie die erforderlichen Änderungen im Formular vor.
+Nachdem Sie diese Datenpunkte analysiert und eine Hypothese entwickelt haben, nehmen Sie die erforderlichen Änderungen im Formular vor.
 
-#### Schritt 4: Analyse validieren und Fehlerbehebungen {#step-validate-your-analysis-and-fixes}
+#### Schritt 4: Validieren Ihrer Analyse und Korrekturen {#step-validate-your-analysis-and-fixes}
 
-In diesem Schritt validieren Sie die Änderungen, die Sie im Formular vorgenommen haben, und überprüfen, ob sich dies auf die Konversionsrate auswirkt.
+In diesem Schritt validieren Sie die Änderungen, die Sie im Formular vorgenommen haben, und überprüfen, ob sie Auswirkungen auf die Konversionsrate haben.
 
 **Durchführen eines A/B-Tests**
 
-Die Integration von AEM Forms mit Target ermöglicht die Erstellung von A/B-Tests für adaptive Formulare. In A/B-Tests können Sie Ihren Kunden nach dem Zufallsprinzip verschiedene Erlebnisse eines Formulars in Echtzeit präsentieren, um zu erfahren, welches Erlebnis besser funktioniert oder mehr Konversionen verursacht. Sobald Ihnen wichtige Daten vorliegen, die darauf hinweisen, dass ein Erlebnis bessere Konversionen liefert als das andere, können Sie dieses Erlebnis als Gewinner erklären und in Zukunft wird es zum Standarderlebnis, das für alle Kunden sichtbar ist.
+Die Integration von AEM Forms in Target ermöglicht das Erstellen von A/B-Tests für adaptive Formulare. In A/B-Tests präsentieren Sie Ihren Kundinnen und Kunden nach dem Zufallsprinzip verschiedene Versionen eines Formulars in Echtzeit, um zu erfahren, was besser funktioniert oder zu mehr Konversionen führt. Sobald Ihnen aussagekräftige Daten vorliegen, dass eine bestimmte Version mit einer höheren Konversionsrate verbunden ist als eine andere, ist diese Version der „Gewinner“ und Sie können sie als Standarderlebnis für alle Kundinnen und Kunden festlegen.
 
 Weitere Informationen zum Erstellen eines A/B-Tests für ein adaptives Formular finden Sie unter [A/B-Tests für adaptive Formulare](../../forms/using/ab-testing-adaptive-forms.md).
 
@@ -137,21 +137,21 @@ Weitere Informationen zum Erstellen eines A/B-Tests für ein adaptives Formular 
 
 ## Best Practices {#best-practices}
 
-Die echten Best Practices sind diejenigen, die Sie sich bei der Durchführung dieses Workflows identifizieren. Sie sind für Ihre Umgebung und Ihre Anforderungen einzigartig. Erfassen Sie Ihre Lernergebnisse im Laufe des Workflows und dokumentieren Sie sie als Best Practices.
+Wirklich gut sind die Best Practices, mit denen Sie sich bei der Ausführung dieses Workflows selbst identifizieren. Sie beziehen sich speziell auf Ihre Umgebung und Anforderungen. Erfassen Sie Ihre Lernfortschritte im Laufe des Workflows und dokumentieren Sie sie als Best Practices.
 
-Einige Empfehlungen zum Entwerfen von Formularen und zum Durchführen von A/B-Tests:
+Nachfolgend finden Sie einige Empfehlungen zum Entwerfen von Formularen und zum Durchführen von A/B-Tests:
 
-**Forms-Design**
+**Formular-Design**
 
 * Gestalten Sie das Formular einfach, kurz und mit benutzerfreundlicher Navigation. Verwenden Sie Richtungshinweise zur Navigation.
 * Verwenden Sie Standard- oder allgemeine Terminologie für Formularfelder.
 * Erklären Sie das Feld und die erforderliche Eingabe mit Beispielen oder Hilfe in Fällen, in denen der Benutzer durcheinanderkommen könnte.
-* Validieren Sie Benutzereingaben bei der Eingabe, wann immer möglich, um Fehler bei der Formularübermittlung zu vermeiden.
+* Validieren Sie Benutzereingaben nach Möglichkeit gleich während des Tippens, um Fehler bei der Formularübermittlung zu vermeiden.
 * Optimieren Sie Layouts für Desktop- und Mobilgeräte.
-* Informationen für bekannte Benutzer automatisch ausfüllen.
+* Lassen Sie Informationen für schon bekannte Benutzerinnen und Benutzer automatisch ausfüllen.
 
 **A/B-Tests**
 
-* Erstellen Sie eine Hypothese und identifizieren Sie Erfolgsmetriken, bevor Sie den A/B-Test durchführen.
-* Führen Sie geringfügige Abweichungen (idealerweise eine nach der anderen) in Ihrem alternativen Erlebnis aus, um zu erfahren, welche Auswirkungen die Konversionsrate hatte.
-* Testen Sie regelmäßig, um Ineffizienzen zu vermeiden.
+* Erstellen Sie vor dem Durchführen des A/B-Tests eine Hypothese und identifizieren Sie Erfolgsmetriken.
+* Führen Sie geringfügige Abweichungen (idealerweise nur eine zu einem gegebenen Zeitpunkt) in die alternative Version ein, um zu ermitteln, wodurch die Konvertierungsrate beeinflusst wurde.
+* Testen Sie regelmäßig, um Ineffizienz zu vermeiden.

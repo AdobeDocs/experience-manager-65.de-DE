@@ -71,7 +71,7 @@ Nachfolgend erfahren Sie mehr über die verschiedenen Rollen, die am Konfigurier
 
 ### Connected Assets-Architektur {#connected-assets-architecture}
 
-Mit Experience Manager können Sie eine Remote-DAM-Implementierung als Quelle mit mehreren Experience Manager[!DNL Sites]-Implementierungen verbinden. Sie können jedoch eine [!DNL Sites]-Bereitstellung nur mit einer Remote-DAM-Bereitstellung verbinden.
+Mit Experience Manager können Sie eine Remote-DAM-Bereitstellung als Quelle mit mehreren Experience Manager [!DNL Sites]-Bereitstellungen verbinden. Sie können jedoch eine [!DNL Sites]-Bereitstellung nur mit einer Remote-DAM-Bereitstellung verbinden.
 
 Ermitteln Sie die optimale Anzahl von Sites-Instanzen für das Verbinden mit einer entfernten DAM-Bereitstellung. Adobe empfiehlt, Sites-Instanzen schrittweise in die Bereitstellung einzubinden und zu testen, dass es keine Auswirkungen auf die Leistung des Remote-DAM gibt, da jede verbundene Sites-Instanz zum Datenverkehr auf dem Remote-DAM beiträgt.
 
@@ -315,9 +315,9 @@ Sie können der [!DNL Sites]-Bereitstellung Assets hinzufügen, diese Assets kö
 
 * Um Erkenntnisse zur Asset-Nutzung zu erhalten, konfigurieren Sie die Funktion [Assets Insights](/help/assets/asset-insights.md) in der [!DNL Sites]-Instanz.
 
-* Sie können das Remote-Asset nicht in das [Dialogfeld „Konfiguration der Bildkomponente“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=de#configure-dialog) ziehen. Sie können das Remote-Asset jedoch direkt auf die Bildkomponente auf der Sites-Seite ziehen, ohne auf **[!UICONTROL Konfigurieren]** zu klicken.
+* Sie können das Remote-Asset nicht auf das Dialogfeld [Bildkomponente konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=de#configure-dialog) ziehen. Sie können jedoch das Remote-Asset direkt auf die Bildkomponente auf der Sites-Seite ziehen, ohne auf **[!UICONTROL Konfigurieren]** zu klicken.
 
-### Berechtigungen und Asset-Verwaltung {#permissions-and-managing-assets}
+### Berechtigungen und Asset-Management {#permissions-and-managing-assets}
 
 * Lokale Assets sind schreibgeschützte Kopien. [!DNL Experience Manager]-Komponenten nehmen zerstörungsfreie Änderungen an Assets vor. Sonstige Änderungen sind nicht zulässig.
 * Lokal abgerufene Assets sind nur für Autoren verfügbar. Asset-Update-Workflows können nicht angewendet werden und Metadaten können nicht bearbeitet werden.

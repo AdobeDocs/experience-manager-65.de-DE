@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
 source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 53%
+source-wordcount: '1697'
+ht-degree: 92%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 53%
 
 ## Was ist Personalisierung? {#what-is-personalization}
 
-Heute stehen immer mehr Inhalte zur Verfügung, sei es im Internet, im Extranet oder im Intranet.
+Heutzutage stehen immer mehr Inhalte zur Verfügung – auf Websites im Internet, im Extranet oder im Intranet.
 
-Personalisierung konzentriert sich darauf, Benutzern eine maßgeschneiderte Umgebung mit dynamischen Inhalten bereitzustellen, die entsprechend ihren spezifischen Anforderungen ausgewählt werden. Dies kann anhand von vordefinierten Profilen, der Benutzerauswahl oder dem interaktiven Benutzerverhalten geschehen.
+Personalisierung konzentriert sich darauf, Benutzenden eine maßgeschneiderte Umgebung mit dynamischen Inhalten bereitzustellen, die entsprechend ihren spezifischen Anforderungen ausgewählt werden. Dies kann anhand von vordefinierten Profilen, der Benutzerauswahl oder dem interaktiven Benutzerverhalten geschehen.
 
-Die Personalisierung umfasst drei Hauptelemente:
+Personalisierung umfasst drei Hauptelemente:
 
 ### Benutzer {#users}
 
@@ -48,9 +48,9 @@ Es gibt zwei Arten von Personalisierung:
 
 #### Implizit {#implicit}
 
-* Regelbasiert: Geschäftsführer definieren spezifische Regeln für Aktionen, die auf bestimmten Profilen und/oder Verhaltensweisen basieren.
+* Regelbasiert: Geschäftsführerinnen und Geschäftsführer definieren spezifische Regeln für Aktionen, die auf bestimmten Profilen und/oder Verhaltensweisen basieren.
 * Einfache Filterung: Die Auswahl erfolgt auf Basis vordefinierter Profile auf Benutzer- und/oder Gruppenebene.
-* Kollaboratives Filtern/Empfehlungsfiltern: Das Benutzerverhalten wird unter Einhaltung vordefinierter Regeln registriert. Diese Regeln basieren auf dem Verhalten gleich gesinnter Personen. Die gesammelten Informationen werden verwendet, um die dem Benutzer angezeigten Informationen anzupassen, insbesondere in Form von Empfehlungen.
+* Kollaboratives Filtern/Empfehlungsfiltern: Das Benutzerverhalten wird unter Einhaltung vordefinierter Regeln registriert. Diese Regeln basieren auf dem Verhalten, das bei Personen mit ähnlichen Interessen beobachtet wurde. Die erfassten Informationen werden verwendet, um die den Benutzenden angezeigten Informationen anzupassen, insbesondere in Form von Empfehlungen.
 
 ## Wie und wann kann die Personalisierung verwendet werden? {#how-and-when-can-personalization-be-used}
 
@@ -64,8 +64,8 @@ Die Personalisierung kann in vielen Fällen verwendet werden, wie zum Beispiel:
 ### Spezifische begrenzte Zielbenutzergruppen – Extranets {#extranets}
 
 * Benutzer benötigen zur Autorisierung einen Login. Dieser wird mit einem Profil verknüpft, das für die Personalisierung erforderliche Informationen bereitstellt, möglicherweise Details wie Standort, Beziehung zum Produkt, Nutzungsverlauf, Budgetierungsverpflichtungen usw.
-* Solche Instanzen können sich auf Websites erstrecken, z. B.:
-* Unternehmen, die Websites für einen hochspezialisierten Bereich ihres Marktes bereitstellen, z. B. ein Pharmaunternehmen, das eine spezialisierte Website für Ärzte bereitstellt.
+* Solche Instanzen können sich über Sites erstrecken wie etwa:
+* Unternehmen, die Websites für einen hoch spezialisierten Bereich ihres Marktes anbieten, z. B. ein Pharmaunternehmen, das eine spezielle Website für Ärztinnen und Ärzte bereitstellt.
 * Unternehmen, die Websites bereitstellen, die es ihren Kunden ermöglichen, aktuelle Konto- und Rechnungsinformationen anzuzeigen, wie beispielsweise Telefonanbieter.
 
 ### Verkaufs- und Vertriebs-Website {#sales-site}
@@ -80,19 +80,19 @@ Die Personalisierung kann in vielen Fällen verwendet werden, wie zum Beispiel:
 
 Personalisierung sollte aus folgenden Gründen eingesetzt werden:
 
-* Ein Benutzer kann eine bequeme, fokussierte Website erleben.
-* Mit der Personalisierung kann der Zugriff automatisch auf die neueste Version des Inhalts erweitert werden.
-* Benutzer können über Social Collaboration-Funktionen miteinander kommunizieren, da sie anhand ihrer Profile identifiziert werden können.
-* Ein Benutzer kann den Inhalt erhalten, den er zur Erfüllung einer bestimmten Aufgabe benötigt. Innerhalb des Intranets eines Unternehmens kann dies ein unschätzbares Instrument zur Verbreitung von Informationen sein.
-* Ein Benutzer kann mit den benötigten/gewünschten Inhalten versorgt werden, wodurch die Zeit für die Durchführung von Suchvorgängen verkürzt wird.
-* Der Inhaltsanbieter kann den Inhalt steuern, der für bestimmte Benutzergruppen angezeigt werden soll.
-* Regeln können definiert werden, um Inhalte basierend auf Kombinationen aus Benutzermerkmalen und -verhalten bereitzustellen. Dies bietet einen ausgereiften Mechanismus zur Personalisierung ihres Web-Erlebnisses.
+* Benutzende profitieren von einer bequemen, fokussierten Website.
+* Personalisierung kann für die automatische Übertragung des Zugriffs auf die neueste Version der Inhalte genutzt werden.
+* Benutzende können über Social-Collaboration-Funktionen miteinander kommunizieren, da sie anhand ihrer Profile identifiziert werden können.
+* Einer Benutzerin oder einem Benutzer können die benötigten Inhalte für die Ausführung einer bestimmten Aufgabe bereitgestellt werden. Innerhalb des Intranets eines Unternehmens kann dies ein wertvolles Instrument zur Verbreitung von Informationen sein.
+* Benutzende können mit den benötigten/gewünschten Inhalten versorgt werden, sodass der Zeitaufwand für Suchvorgänge verringert wird.
+* Menschen, die Inhalte anbieten, können den Inhalt steuern, der für bestimmte Gruppen von Benutzenden angezeigt werden soll.
+* Es können Regeln definiert werden, um Inhalte anhand von Kombinationen aus Merkmalen und Verhalten von Benutzenden bereitzustellen. Dies stellt einen ausgeklügelten Mechanismus für die Personalisierung ihres Web-Erlebnisses bereit.
 
 Berücksichtigen Sie beim Einsetzen von Personalisierung Folgendes:
 
 #### Leistung {#performance}
 
-* Natürlich hat die zusätzliche Analyse und Auswertung Auswirkungen auf die Leistung. Die verwendeten Methoden sind jedoch hoch entwickelt und können optimiert werden, um die Auswirkungen zu minimieren.
+* Natürlich hat die zusätzliche Analyse und Auswertung Auswirkungen auf die Leistung. Die eingesetzten Methoden sind äußerst anspruchsvoll, können jedoch optimiert werden, um negative Auswirkungen zu minimieren.
 
 #### Autorisierung {#authorization}
 
@@ -109,30 +109,30 @@ Berücksichtigen Sie beim Einsetzen von Personalisierung Folgendes:
 
 #### Genauigkeit der Regeln {#accuracy}
 
-* Die Personalisierung, die durch die Verfolgung des Benutzerverhaltens oder durch die Festlegung von Regeln auf der Grundlage des Benutzerprofils durchgeführt wird, muss akkurat und logisch sein.
-* Es gibt nichts Frustrierenderes für den Benutzer, als dass ihm Inhalte aufgrund der ungenauen Logik einer Regel aufgezwungen oder verweigert werden.
+* Die Personalisierung, die durch Tracking des Benutzerverhaltens oder durch Festlegung von Regeln auf Grundlage des Benutzerprofils durchgeführt wird, muss akkurat und logisch sein.
+* Es gibt nichts Frustrierenderes für Benutzende, als dass ihnen aufgrund der ungenauen Logik einer Regel Inhalte aufgezwungen oder verweigert werden.
 * Daher müssen die Regeln gut durchdacht sein. Die Anforderungen des Benutzers müssen dabei immer im Vordergrund stehen. Dies kann viel Aufwand erfordern und ist nicht zu unterschätzen. Die Definition der Geschäftsregeln übersteigt oft den technischen Aufwand bei der Implementierung der Personalisierung.
 
 #### Wann ist sie einzusetzen? {#when-to-use}
 
-* Wie bei vielen Funktionen im Internet sollte die Personalisierung mit Vorsicht verwendet werden. Wird die Nutzung wirklich dem Benutzer zugute kommen? sollte immer die erste Überlegung sein - oder ob das gewünschte Ziel mit weniger Aufwand durch eine andere Methode erreicht werden kann. Mit der Personalisierung ist das Risiko verbunden, dass die Benutzer die Funktion nur ein einziges Mal konfigurieren (um zu sehen, wie sie funktioniert), da sie ihnen keine echten Vorteile verschafft.
+* Wie bei vielen Funktionen im Internet sollte die Personalisierung mit Vorsicht verwendet werden. Ist ihr Einsatz wirklich von Vorteil für die Benutzenden? Dies sollte immer die erste Überlegung sein. Darüber hinaus sollte ergründet werden, ob das gewünschte Ziel vielleicht mit weniger Aufwand durch eine andere Methode erreicht werden kann. Mit der Personalisierung ist das Risiko verbunden, dass die Benutzer die Funktion nur ein einziges Mal konfigurieren (um zu sehen, wie sie funktioniert), da sie ihnen keine echten Vorteile verschafft.
 * Personalisierung ist nur von Bedeutung, wenn der Inhalt dynamisch und gewissermaßen vom Benutzer abhängig ist. Werden allen Benutzern dieselben Inhalte angezeigt, ist die Personalisierung redundant.
 
 #### Vertraulichkeit {#confidentiality}
 
-* Viele Benutzer machen sich Sorgen um Datenschutz und Sicherheit. Insbesondere bezüglich der Daten, die beim Tracking ihres Verhaltens beim Surfen im Internet abgerufen werden.
+* Viele Benutzende machen sich Sorgen um Datenschutz und -sicherheit. Insbesondere gilt dies für Daten, die beim Tracking ihres Verhaltens beim Surfen im Internet abgerufen werden.
 
 ## Personalisierung und Zugriff {#personalization-and-access}
 
-Personalisierung sollte getrennt von der Zugriffskontrolle betrachtet werden, sie stehen jedoch in Wechselbeziehung zueinander.
+Personalisierung sollte separat von der Zugriffssteuerung betrachtet werden, allerdings gibt es einen Zusammenhang zwischen beidem.
 
-Die Personalisierung selbst erzeugt keine Form der Zugriffssteuerung. Es handelt sich lediglich um eine Methode zur Steuerung dessen, was der Benutzer sieht. Es schränkt den Benutzer nicht vom Zugriff auf andere Inhalte ein, und wie bei allen Inhalten müssen ihm bereits die richtigen Zugriffssteuerungen zugewiesen sein.
+Die Personalisierung selbst sorgt für keinerlei Form von Zugriffssteuerung. Es handelt sich lediglich um eine Methode zur Steuerung dessen, was Benutzende sehen, und hält sie nicht vom Zugriff auf andere Inhalte ab. Wie bei allen Inhalten müssen die richtigen Zugriffssteuerungen bereits zugewiesen sein.
 
-Die Zugriffskontrolle kann jedoch verwendet werden, um eine Form der Personalisierung zu erstellen. Wenn Sie einem Benutzer den Zugriff auf Inhalte erlauben oder verweigern, wirkt sich dies unweigerlich auf die Auswahl der verfügbaren Inhalte aus - und personalisiert so sein Web-Erlebnis.
+Allerdings kann die Zugangssteuerung verwendet werden, um eine Art von Personalisierung herzustellen. Wenn Sie Benutzenden den Zugriff auf Inhalte erlauben bzw. verweigern, wirkt sich dies unweigerlich auf die Auswahl der verfügbaren Inhalte aus – und personalisiert so das Web-Erlebnis für sie.
 
-## Für die Personalisierung verfügbare Komponenten {#components-available-for-personalization}
+## Verfügbare Komponenten für die Personalisierung {#components-available-for-personalization}
 
-Zur Personalisierung stehen verschiedene Komponenten mit AEM zur Verfügung. Einige ermöglichen es Benutzern, sich anzumelden und ihre Profile zu bearbeiten, andere (wie My Gadgets) ermöglichen es Benutzern, eine bestimmte Seite zu konfigurieren:
+Mit AEM werden verschiedene Komponenten für die Personalisierung bereitgestellt. Einige ermöglichen es Benutzenden, sich anzumelden und ihre Profile zu bearbeiten; durch andere (wie „Meine Gadgets“) können Benutzende eine bestimmte Seite konfigurieren:
 
 | Titel im Sidekick | Zweck |
 |---|---|
@@ -140,18 +140,18 @@ Zur Personalisierung stehen verschiedene Komponenten mit AEM zur Verfügung. Ein
 | Kombinierte Anmeldung und Registrierung | Ermöglicht dem Benutzer, sich entweder bei einem vorhandenen Konto anzumelden oder sich für ein neues Konto zu registrieren. |
 | Formular-Adressfeld | Ein komplexes Feld, das die Eingabe einer internationalen Adresse ermöglicht. |
 | Formular-Beginn | Startet eine Formulardefinition |
-| Formular-Captcha | Ein Feld, das aus einem automatisch aktualisierten alphanumerischen Wort besteht. Die Captcha-Komponente schützt Websites vor Bots. |
-| Formular-Kontrollkästchengruppe | Mehrere Elemente, die als Liste angeordnet sind und denen Kontrollkästchen vorangestellt sind. Benutzer können mehrere Kontrollkästchen auswählen. |
+| Formular-Captcha | Ein Feld, das aus einem automatisch aktualisierten, alphanumerischen Wort besteht.  Die Captcha-Komponente schützt Websites vor Bots. |
+| Formular-Kontrollkästchengruppe | Mehrere Elemente, die als Liste angeordnet sind und denen Kontrollkästchen vorangestellt sind. Benutzende können mehrere Kontrollkästchen auswählen. |
 | Formular-Dropdownliste | Mehrere Elemente, die als Dropdown-Liste angeordnet sind. Der Schalter für die Mehrfachauswahl gibt an, ob mehrere Elemente aus der Liste ausgewählt werden können. |
 | Formular-Ende | Beendet die Formulardefinition |
 | Formular-Datei-Upload | Ein Upload-Element, mit dem der Benutzer eine Datei zum Server hochladen kann. |
-| Ausgeblendetes Formular-Feld | Dieses Feld wird dem Benutzer nicht angezeigt. Sie kann verwendet werden, um einen Wert an den Client und zurück an den Server zu übertragen. Dieses Feld sollte keine Einschränkungen aufweisen. |
+| Ausgeblendetes Formular-Feld | Dieses Feld wird der Benutzerin bzw. dem Benutzer nicht angezeigt. Es wird verwendet, um einen Wert an den Client und zurück zum Server zu übermitteln.  Für dieses Feld gelten keine Beschränkungen. |
 | Formular-Bildschaltfläche | Eine zusätzliche Senden-Schaltfläche für das Formular, die als Bild dargestellt wird. |
 | Formular-Kennwortfeld | Identisch mit einem Textfeld, doch nur eine Zeile ist zulässig und die Texteingabe des Benutzers ist im Feld nicht sichtbar. |
-| Formular-Optionsfeldgruppe | Mehrere Elemente, die als Liste angeordnet sind und denen Optionsschalter vorangestellt sind. Benutzer dürfen nur ein Optionsfeld auswählen. |
+| Formular-Optionsfeldgruppe | Mehrere Elemente, die als Liste angeordnet sind und denen Optionsschalter vorangestellt sind. Benutzende dürfen nur ein einziges Optionsfeld auswählen. |
 | Formular-Senden-Schaltfläche | Eine zusätzliche Senden-Schaltfläche für das Formular, wobei der Titel als Text auf der Schaltfläche dargestellt wird. |
 | Formular-Textfeld | Ein Textfeld, in das Benutzer Informationen eingeben können. |
-| Meine Gadgets | Hier können Sie eine Auswahl an verfügbaren Gadgets einbeziehen. |
+| Meine Gadgets | Ermöglicht die Auswahl eines der verfügbaren Gadgets. |
 | Profil – Avatar-Foto | Ermöglicht die Eingabe eines Avatar-Fotos. |
 | Profil – Genauer Name | Eingabe von Namensdetails, einschließlich Elementen wie Titel, Vorname und Suffix, falls erforderlich. |
 | Profil – Anzeigename | Anzuzeigender Name. |
@@ -167,7 +167,7 @@ Zur Personalisierung stehen verschiedene Komponenten mit AEM zur Verfügung. Ein
 
 ## Personalisierung und Community-Inhalte {#personalization-and-community-content}
 
-Community-Funktionen wie Blogs, Foren und Kalender führen zur Erstellung von Community-Inhalten, die häufig als benutzergenerierte Inhalte (UGC) bezeichnet werden. Wurden benutzergenerierte Inhalte in eine aus mehreren AEM-Instanzen bestehende Veröffentlichungsumgebung eingegeben (eine [Veröffentlichungsfarm](/help/communities/topologies.md)), war hierbei eines der größten Probleme die instanzenübergreifende Synchronisierung der benutzergenerierten Inhalte.
+Mit Community-Funktionen wie Blogs, Foren und Kalendern werden Community-Inhalte erstellt, die häufig als benutzergenerierte Inhalte (UGC) bezeichnet werden. Wurden benutzergenerierte Inhalte in eine aus mehreren AEM-Instanzen bestehende Veröffentlichungsumgebung eingegeben (eine [Veröffentlichungsfarm](/help/communities/topologies.md)), war hierbei eines der größten Probleme die instanzenübergreifende Synchronisierung der benutzergenerierten Inhalte.
 
 Mit der Erweiterung [AEM Communities 6.1](/help/communities/overview.md) wird dieses Problem durch einen [gemeinsamen Speicher für benutzergenerierten Inhalt (UGC, User Generated Content)](/help/communities/working-with-srp.md) gelöst. Im Hinblick auf die Personalisierung umfasst Communities die [Anmeldung bei sozialen Netzwerken](/help/communities/social-login.md) – die Möglichkeit, den Besuchern der Seite die Anmeldung über Facebook und Twitter zu ermöglichen.
 

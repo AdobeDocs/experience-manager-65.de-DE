@@ -10,7 +10,7 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '2963'
-ht-degree: 58%
+ht-degree: 61%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 58%
 >
 >* Auf dieser Seite erhalten Sie einen Überblick über die grundlegende Handhabung der Adobe Experience Manager (AEM)-Autorenumgebung. Als Grundlage wird die **Sites-Konsole** verwendet.
 >
->* Einige Funktionen stehen nicht in allen Konsolen zur Verfügung und in einigen Konsolen können zusätzliche Funktionen zur Verfügung stehen. Spezifische Informationen zu den einzelnen Konsolen und den zugehörigen Funktionen werden auf anderen Seiten ausführlicher behandelt.
+>* Einige Funktionen stehen nicht in allen Konsolen zur Verfügung und in einigen Konsolen können zusätzliche Funktionen zur Verfügung stehen. Ausführlichere Informationen zu den einzelnen Konsolen und ihren jeweiligen Funktionen finden Sie auf anderen Seiten.
 >* In AEM sind Tastaturbefehle verfügbar. Insbesondere wenn [Verwenden von Konsolen](/help/sites-authoring/keyboard-shortcuts.md) und [Seiten bearbeiten](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
@@ -91,14 +91,14 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
   </tr>
   <tr>
    <td>Assets<br /> </td>
-   <td>Mit diesen Konsolen können Sie Folgendes importieren: <a href="/help/assets/home.md">Verwalten digitaler Assets</a> wie Bilder, Videos, Dokumente und Audiodateien. Diese Assets können dann von jeder Website verwendet werden, die auf derselben AEM-Instanz ausgeführt wird. </td>
+   <td>In diesen Konsolen können Sie digitale Assets wie Bilder, Videos, Dokumente und Audiodateien importieren und <a href="/help/assets/home.md">verwalten</a>. Diese Assets können dann von jeder Website verwendet werden, die auf derselben AEM-Instanz ausgeführt wird. </td>
   </tr>
   <tr>
    <td>Communities</td>
-   <td>In dieser Konsole können Sie <a href="/help/communities/sites-console.md">Community-Sites</a> für <a href="/help/communities/overview.md#engagement-community">Interaktion</a> und <a href="/help/communities/overview.md#enablement-community">Aktivierung</a>.</td>
+   <td>In dieser Konsole können Sie <a href="/help/communities/sites-console.md">Community-Sites</a> für die <a href="/help/communities/overview.md#engagement-community">Interaktion</a> und die <a href="/help/communities/overview.md#enablement-community">Aktivierung</a> erstellen und verwalten.</td>
   </tr>
   <tr>
-   <td>Commerce</td>
+   <td>Commerce </td>
    <td>Damit können Sie Produkte, Produktkataloge und Bestellungen verwalten, die mit Ihren <a href="/help/commerce/cif-classic/administering/ecommerce.md">Handel</a> Sites.</td>
   </tr>
   <tr>
@@ -107,7 +107,7 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
   </tr>
   <tr>
    <td>Formulare</td>
-   <td>Mit dieser Konsole können Sie Ihre <a href="/help/forms/home.md">Formulare und Dokumente</a>.</td>
+   <td>In dieser Konsole können Sie Ihre <a href="/help/forms/home.md">Formulare und Dokumente</a> erstellen und verwalten.</td>
   </tr>
   <tr>
    <td>Personalisierung</td>
@@ -174,9 +174,9 @@ Die Kopfzeile befindet sich immer am oberen Rand des Bildschirms. Die meisten Op
 
   ![Benutzereigenschaften](do-not-localize/screen_shot_2018-03-23at103603.png)
 
-* [Schienenauswahl](/help/sites-authoring/basic-handling.md#rail-selector)
+* [Leistenauswahl](/help/sites-authoring/basic-handling.md#rail-selector)
 
-  ![Liste der Schienenauswahl wird auf der linken Seite des Adobe Experience Manager-Bildschirms angezeigt.](do-not-localize/screen_shot_2018-03-23at103943.png)
+  ![Liste der Leistenauswahl, die auf der linken Seite des Adobe Experience Manager-Bildschirms angezeigt wird.](do-not-localize/screen_shot_2018-03-23at103943.png)
 
   Die angezeigten Optionen hängen von der jeweiligen Konsole ab. So können Sie z. B. in **Sites** nur Inhalt (Standard), die Zeitleiste, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
 
@@ -535,7 +535,7 @@ Die Inhaltsstruktur kann verwendet werden, um schnell in der Site-Hierarchie im 
 
 Die Zeitleiste kann zur Anzeige und/oder Einleitung von Ereignissen in Verbindung mit der ausgewählten Ressource verwendet werden. Öffnen Sie die Timeline-Spalte über die Schienenauswahl:
 
-In der Timeline-Spalte können Sie:
+In der Timeline-Spalte haben Sie folgende Möglichkeiten:
 
 * [Anzeigen verschiedener Ereignisse im Zusammenhang mit einem ausgewählten Element](#timelineviewevents)
 

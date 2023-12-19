@@ -82,7 +82,7 @@ Entscheiden Sie anhand Ihrer Kenntnis des Quellcodes, welche Lösung geeignet is
 
 Die folgenden Links öffnen die Download-Seiten für einige beliebte Datenbankprodukte:
 
-* [Microsoft® SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+* [Microsoft® SQL Server](https://www.microsoft.com/de-de/sql-server/sql-server-downloads)
 * [Oracle](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)
 * [IBM® DB2®](https://www.ibm.com/support/pages/download-db2-fix-packs-version-db2-linux-unix-and-windows)
 

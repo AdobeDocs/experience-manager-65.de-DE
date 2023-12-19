@@ -7,8 +7,8 @@ feature: Asset Insights,Asset Reports
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
 source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 91%
+source-wordcount: '631'
+ht-degree: 95%
 
 ---
 
@@ -110,7 +110,7 @@ Führen Sie diese Schritte durch, um Asset Insights über DTM zu aktivieren.
    * Der Code ruft `assetAnalytics.dispatcher.init()` auf, nachdem sichergestellt wurde, dass `_satellite.getToolsByType('sc')[0].getS()` initialisiert und `assetAnalytics,dispatcher.init` verfügbar ist. Daher müssen Sie sie in Schritt 11 nicht notwendigerweise hinzufügen.
    * Wie in den Kommentaren innerhalb des Insights-Seitenverfolgungs-Codes (**[!UICONTROL Tools > Assets > Insights-Seitenverfolgung]**) angegeben, sind, wenn die Seitenverfolgung kein `AppMeasurement`-Objekt erstellt, die ersten drei Argumente (RSID, Tracking-Server und Besucher-Namespace) irrelevant. Leere Zeichenfolgen werden stattdessen übergeben, um dies hervorzuheben.\
      Die restlichen Argumente entsprechen dem, was in der Statistiken-Konfigurationsseite konfiguriert ist (**[!UICONTROL Tools > Assets > Statistiken-Konfiguration]**).
-   * Das AppMeasurement-Objekt wird abgerufen, indem `satelliteLib` für alle verfügbaren SiteCatalyst-Engines abgefragt wird. Wenn mehrere Tags konfiguriert sind, ändern Sie den Index des Array-Selektors entsprechend. Einträge im Array werden gemäß den SiteCatalyst-Tools sortiert, die in der DTM-Oberfläche verfügbar sind.
+   * Das AppMeasurement-Objekt wird abgerufen, indem `satelliteLib` für alle verfügbaren SiteCatalyst-Engines abgefragt wird. Wenn mehrere Tags konfiguriert sind, ändern Sie den Index des Array-Selektors entsprechend. Einträge im Array werden gemäß den SiteCatalyst-Tools sortiert, die in der DTM-Schnittstelle verfügbar sind.
 
 1. Speichern und schließen Sie das Code-Editor-Fenster und speichern Sie dann die Änderungen in der Tool-Konfiguration.
 1. Genehmigen Sie auf der Registerkarte **[!UICONTROL Genehmigungen]** die beiden ausstehenden Genehmigungen. Das DTM-Tag ist für das Einfügen auf Ihrer Webseite bereit.

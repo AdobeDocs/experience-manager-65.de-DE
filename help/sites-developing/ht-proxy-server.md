@@ -1,6 +1,6 @@
 ---
 title: Verwendung des Proxy-Server-Tools
-description: Der Proxyserver fungiert als Zwischenserver, der Anforderungen zwischen einem Client und einem Server weiterleitet
+description: Der Proxy-Server fungiert als Zwischen-Server, der Anfragen zwischen einem Client und einem Server weiterleitet.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
@@ -8,31 +8,31 @@ content-type: reference
 exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 26%
+source-wordcount: '943'
+ht-degree: 96%
 
 ---
 
 # Verwendung des Proxy-Server-Tools{#how-to-use-the-proxy-server-tool}
 
-Der Proxyserver fungiert als Zwischenserver, der Anforderungen zwischen einem Client und einem Server weiterleitet. Der Proxyserver verfolgt alle Interaktionen zwischen Client und Server und gibt ein Protokoll der gesamten TCP-Kommunikation aus. Auf diese Weise können Sie genau überwachen, was passiert, ohne auf den Hauptserver zugreifen zu müssen.
+Der Proxy-Server fungiert als Zwischen-Server, der Anforderungen zwischen einem Client und einem Server weiterleitet. Der Proxy-Server verfolgt alle Interaktionen zwischen Client und Server und gibt ein Protokoll der gesamten TCP-Kommunikation aus. Auf diese Weise können Sie die Vorgänge genau überwachen, ohne auf den Haupt-Server zugreifen zu müssen.
 
 Den Proxyserver in Ihrer AEM-Installation finden Sie hier:
 
 `crx-quickstart/opt/helpers/proxy-2.1.jar`
 
-Sie können den Proxy-Server verwenden, um alle Interaktionen zwischen Client und Server unabhängig vom zugrunde liegenden Kommunikationsprotokoll zu überwachen. Sie können beispielsweise die folgenden Protokolle überwachen:
+Sie können den Proxy-Server verwenden, um alle Interaktionen zwischen Client und Server unabhängig vom zugrunde liegenden Kommunikationsprotokoll zu überwachen. Sie können beispielsweise folgende Protokolle überwachen:
 
-* HTTP für Webseiten
-* HTTPS für sichere Webseiten
+* HTTP für Web-Seiten
+* HTTPS für sichere Web-Seiten
 * SMTP für E-Mail-Nachrichten
 * LDAP für die Benutzerverwaltung
 
-Sie können beispielsweise den Proxyserver zwischen zwei Anwendungen positionieren, die über ein TCP/IP-Netzwerk kommunizieren, z. B. einem Webbrowser und AEM. Auf diese Weise können Sie genau überwachen, was passiert, wenn Sie eine CQ-Seite anfordern.
+Sie können den Proxy-Server zum Beispiel zwischen zwei Anwendungen schalten, die über ein TCP/IP-Netzwerk kommunizieren, etwa einem Webbrowser und AEM. So können Sie genau überprüfen, was passiert, wenn Sie eine CQ-Seite anfordern.
 
-## Starten des Proxyserver-Tools {#starting-the-proxy-server-tool}
+## Starten des Proxy-Server-Tools {#starting-the-proxy-server-tool}
 
-Starten Sie den Server über die Befehlszeile:
+Starten Sie den Server über eine Befehlszeile:
 
 `java -jar proxy-2.1.jar <host> <remoteport> <localport> [options]`
 
@@ -40,7 +40,7 @@ Starten Sie den Server über die Befehlszeile:
 
 `<host>`
 
-Hierbei handelt es sich um die Hostadresse der CRX-Instanz, zu der Sie eine Verbindung aufbauen möchten. Wenn sich die Instanz auf Ihrem lokalen Computer befindet, ist dies `localhost`.
+Hierbei handelt es sich um die Hostadresse der CRX-Instanz, zu der Sie eine Verbindung aufbauen möchten. Wenn sich die Instanz auf Ihrem lokalen Computer befindet, lautet sie `localhost`.
 
 `<remoteport>`
 
@@ -48,29 +48,29 @@ Hierbei handelt es sich um den Port der CRX-Zielinstanz. Der Standardport für e
 
 `<localport>`
 
-Dies ist der Anschluss auf Ihrem lokalen Computer, über den Sie eine Verbindung zum Zugriff auf die CRX-Instanz herstellen möchten.
+Dies ist der Port auf Ihrem lokalen Computer, zu dem eine Verbindung hergestellt werden soll, um über den Proxy auf die CRX-Instanz zuzugreifen.
 
 **Optionen**
 
 `-q` (leiser Modus)
 
-Die Ausgabe wird nicht in das Konsolenfenster geschrieben. Verwenden Sie dies, wenn Sie die Verbindung nicht verlangsamen möchten oder die Ausgabe in einer Datei protokollieren (siehe Option -logfile ).
+Die Ausgabe wird nicht in das Konsolenfenster geschrieben. Verwenden Sie dies, wenn Sie die Verbindung nicht verlangsamen oder die Ausgabe in einer Datei protokollieren möchten (siehe Option -logfile).
 
 `-b`(binärer Modus)
 
-Wenn Sie nach bestimmten Byte-Kombinationen im Traffic suchen, aktivieren Sie den Binärmodus. Die Ausgabe enthält dann die Hexadezimal- und die Zeichenausgabe.
+Aktivieren Sie den binären Modus, wenn Sie nach bestimmten Byte-Kombinationen im Traffic suchen. Die Ausgabe enthält anschließend die Hexadezimal- und Zeichenausgabe.
 
 `-t` (Zeitstempel für Protokolleinträge)
 
-Fügt jeder Protokollausgabe einen Zeitstempel hinzu. Der Zeitstempel wird in Sekunden angegeben, sodass er möglicherweise nicht für die Überprüfung einzelner Anforderungen geeignet ist. Verwenden Sie sie, um Ereignisse zu suchen, die zu einem bestimmten Zeitpunkt aufgetreten sind, wenn Sie den Proxyserver über einen längeren Zeitraum verwenden.
+Jeder Protokollausgabe wird ein Zeitstempel hinzugefügt. Der Zeitstempel wird in Sekunden angegeben, sodass er möglicherweise nicht zur Überprüfung einzelner Anforderungen geeignet ist. Verwenden Sie ihn, um Ereignisse zu suchen, die zu einem bestimmten Zeitpunkt aufgetreten sind, wenn Sie den Proxy-Server über einen längeren Zeitraum verwenden.
 
 `-logfile <filename>` (Schreiben in Protokolldatei)
 
-Schreibt die Konversation zwischen Client und Server in eine Protokolldatei. Dieser Parameter funktioniert auch im stillen Modus.
+Die Konversation zwischen Client und Server wird in eine Protokolldatei geschrieben. Dieser Parameter funktioniert auch im stillen Modus.
 
 **`-i <numIndentions>`** (Einzug hinzufügen)
 
-Jede aktive Verbindung wird für eine bessere Lesbarkeit eingerückt. Der Standardwert ist 16 Ebenen. Diese Funktion wurde mit `proxy.jar version 1.16` eingeführt.
+Jede aktive Verbindung wird zwecks besserer Lesbarkeit eingerückt. Der Standardwert beträgt 16 Stufen. Diese Funktion wurde mit `proxy.jar version 1.16` eingeführt.
 
 ### Protokollformat {#log-format}
 
@@ -83,7 +83,7 @@ So kann eine Web-Seitenanfrage zum Beispiel wie folgt aussehen:
 `C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]`
 
 * „C“ gibt an, dass dieser Eintrag vom Client stammt (es handelt sich dabei um die Anfrage einer Web-Seite).
-* 0 ist die Verbindungsnummer (der Verbindungszähler beginnt bei 0)
+* „0“ ist die Verbindungsnummer (der Verbindungszähler startet bei 0).
 * #00000 ist der Versatz im Bytestream. Hierbei handelt es sich um den ersten Eintrag, weshalb der Versatz bei 0 ist.
 * `[GET <?>]` ist der Inhalt der Anfrage, im Beispiel eine der HTTP-Kopfzeilen (URL).
 
@@ -94,7 +94,7 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-Zeigt die Anzahl der Bytes an, die zwischen dem Client ( `C`) und dem Server ( `S`) bei der sechsten Verbindung und bei der durchschnittlichen Geschwindigkeit.
+Hier werden die Anzahl der Bytes, die zwischen Client (`C`) und Server (`S`) bei der sechsten Verbindung übertragen wurden, und die durchschnittliche Geschwindigkeit angegeben.
 
 **Beispiel für eine Protokollausgabe**
 
@@ -102,11 +102,11 @@ Stellen Sie sich als Beispiel eine Seite vor, die bei einer Anfrage den folgende
 
 ### Beispiel {#example}
 
-Betrachten Sie beispielsweise ein einfaches HTML-Dokument im Repository unter
+Stellen Sie sich als Beispiel ein sehr einfaches HTML-Dokument vor, das sich im Repository unter
 
 `/content/test.html`
 
-Neben einer Bilddatei unter
+befindet, zusammen mit einer Bilddatei unter
 
 `/content/test.jpg`
 
@@ -124,13 +124,13 @@ Der Inhalt von `test.html` ist:
 </html>
 ```
 
-Angenommen, die AEM-Instanz läuft auf `localhost:4502`, wird der Proxy wie folgt gestartet:
+Angenommen, die AEM-Instanz wird auf `localhost:4502` ausgeführt, dann wird der Proxy wie folgt gestartet:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-Die CQ-/CRX-Instanz kann jetzt über den Proxy unter `localhost:4444` und die gesamte Kommunikation über diesen Port protokolliert wird an `test.log`.
+Auf die CQ-/CRX-Instanz kann nun über den Proxy unter `localhost:4444` zugegriffen werden, und die gesamte Kommunikation über diesen Port wird im Protokoll `test.log` erfasst.
 
-Wenn Sie nun die Ausgabe des Proxys sehen, sehen Sie die Interaktion zwischen dem Browser und der AEM Instanz.
+Wenn Sie sich nun die Ausgabe des Proxys ansehen, können Sie die Interaktion zwischen Browser und AEM-Instanz beobachten.
 
 Beim Start gibt der Proxy Folgendes aus:
 
@@ -139,11 +139,11 @@ starting proxy for localhost:4502 on port 4444
 using logfile: <some-dir>/crx-quickstart/opt/helpers/test.log
 ```
 
-Öffnen Sie jetzt einen Browser und greifen Sie auf die Testseite zu:
+Öffnen Sie nun einen Browser und greifen Sie auf die folgende Testseite zu:
 
 `http://localhost:4444/content/test.html`
 
-Und Sie sehen, dass der Browser eine `GET` -Anfrage für die Seite:
+Sie sehen daraufhin, dass der Browser eine `GET`-Anfrage für die Seite stellt:
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
@@ -182,19 +182,19 @@ S-0-#000311 -> [</body>]
 S-0-#000319 -> [</html>]
 ```
 
-### Verwendung des Proxy-Servers {#uses-of-the-proxy-server}
+### Verwendungsmöglichkeiten des Proxy-Servers {#uses-of-the-proxy-server}
 
-Die folgenden Szenarien veranschaulichen einige der Zwecke, für die der Proxy-Server verwendet werden kann:
+In den folgenden Szenarien werden verschiedene Verwendungszwecke für den Proxy-Server dargelegt:
 
-**Suchen nach Cookies und ihren Werten**
+**Überprüfen auf Cookies und ihre Werte**
 
-Das folgende Beispiel für einen Protokolleintrag zeigt alle Cookies und deren Werte, die vom Client bei der sechsten seit dem Start des Proxys geöffneten Verbindung gesendet werden:
+Der folgende beispielhafte Protokolleintrag zeigt alle Cookies samt Werten, die vom Client bei der sechsten Verbindung seit Proxy-Start gesendet wurden:
 
 `C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]`
 
-**Überprüfen von Kopfzeilen und ihren Werten**
+**Überprüfen auf Header und ihre Werte**
 
-Das folgende Beispiel für einen Protokolleintrag zeigt, dass der Server eine Keep-Alive-Verbindung herstellen kann und der Header für die Inhaltslänge ordnungsgemäß festgelegt wurde:
+Das folgende Beispiel eines Protokolleintrags zeigt, dass der Server eine Keep-Alive-Verbindung herstellen kann und der Inhaltslängen-Header ordnungsgemäß festgelegt wurde:
 
 ```
 S-7-#000017 -> [Connection: Keep-Alive ]
@@ -204,11 +204,11 @@ S-7-#000017 -> [Connection: Keep-Alive ]
 
 **Überprüfen der Funktionsfähigkeit von Keep-Alive**
 
-Keep-Alive ist eine Funktion von HTTP, mit der ein Client die TCP-Verbindung zum Server wiederverwenden kann, um mehrere Anfragen zu stellen (für Seiten-Code, Bilder, Stylesheets usw.). Ohne Keep-Alive muss der Client für jede Anfrage eine neue Verbindung aufbauen.
+„Keep-Alive“ ist eine HTTP-Funktion, die es einem Client ermöglicht, eine TCP-Verbindung zum Server wiederzuverwenden, um mehrere Anfragen zu stellen (für Seiten-Code, Bilder, Stylesheets usw.). Ohne Keep-Alive muss der Client für jede Anfrage eine neue Verbindung aufbauen.
 
 So überprüfen Sie, ob Keep-Alive funktioniert:
 
-* Starten Sie den Proxyserver.
+* Starten Sie den Proxy-Server.
 * Fragen Sie eine Seite an.
 * Wenn Keep-Alive funktioniert, sollte der Verbindungszähler nie über 5 bis 10 Verbindungen hinausgehen.
 * Wenn Keep-Alive nicht funktioniert, steigt der Verbindungszähler schnell.
@@ -217,8 +217,8 @@ So überprüfen Sie, ob Keep-Alive funktioniert:
 
 Wenn Sie Anforderungen in einer komplexen Servereinstellung verlieren, z. B. mit einer Firewall und einem Dispatcher, können Sie den Proxy-Server verwenden, um herauszufinden, wo die Anforderung verloren ging. Wenn eine Firewall vorhanden ist:
 
-* Proxy vor einer Firewall starten
-* Starten Sie einen weiteren Proxy nach einer Firewall.
+* Starten Sie einen Proxy vor der Firewall.
+* Starten Sie einen weiteren Proxy hinter der Firewall.
 * Verwenden Sie die Proxys, um herauszufinden, wie weit die Anfragen kommen.
 
 **Hängende Anfragen**
@@ -226,5 +226,5 @@ Wenn Sie Anforderungen in einer komplexen Servereinstellung verlieren, z. B. mit
 Gehen Sie wie folgt vor, wenn gelegentlich hängende Anfragen auftreten:
 
 * Starten Sie den Proxy.
-* Warten oder schreiben Sie das Zugriffsprotokoll in eine Datei mit jedem Eintrag mit einem Zeitstempel.
-* Wenn die Anfrage hängt, können Sie sehen, wie viele Verbindungen geöffnet waren und welche Anfrage Probleme verursacht.
+* Warten Sie oder schreiben Sie das Zugriffsprotokoll in eine Datei, in der jeder Eintrag einen Zeitstempel aufweist.
+* Wenn die Anfrage hängt, können Sie sehen, wie viele Verbindungen offen waren und welche Anfrage dafür verantwortlich ist.

@@ -9,8 +9,8 @@ feature: Configuring
 exl-id: 9acbf61f-73a8-4998-9421-dd933f30ac8a
 source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 65%
+source-wordcount: '706'
+ht-degree: 69%
 
 ---
 
@@ -61,13 +61,13 @@ Eine Liste der Konfigurationen wird angezeigt:
 In den Dropdown-Listen auf diesem Bildschirm stehen zwei Arten von Konfigurationen zur Verfügung:
 
 * **Konfigurationen**
-Ermöglicht die Aktualisierung der vorhandenen Konfigurationen. Diese weisen eine persistente Identität (PID) auf und können Folgendes sein:
+Hier können Sie die vorhandenen Konfigurationen aktualisieren. Diese weisen eine persistente Identität (PID) auf und können Folgendes sein:
 
    * Standard und integraler Bestandteil von AEM – diese sind erforderlich. Durch Löschen werden die Werte auf die Standardeinstellungen zurückgesetzt.
    * Instanzen, die von Werkskonfigurationen erstellt wurden – diese Instanzen werden von Benutzenden erstellt. Durch Löschen wird die Instanz entfernt.
 
-* **Factory-Konfigurationen**
-Ermöglicht die Erstellung einer Instanz des erforderlichen Funktionsobjekts.
+* **Werkskonfigurationen**
+Hier können Sie eine Instanz des erforderlichen Funktionsobjekts erstellen.
 
   Diese wird einer persistenten Identität zugewiesen und dann in der Dropdown-Liste Konfigurationen aufgeführt.
 
@@ -101,7 +101,7 @@ Die Parameter können dann ggf. aktualisiert werden und Sie können unter folgen
 
 ## Bundles {#bundles}
 
-Die Registerkarte **Pakete** stellt den Mechanismus zum Installieren der für AEM erforderlichen OSGi-Pakete dar. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
+Die Registerkarte **Bundles** stellt den Mechanismus zum Installieren der für AEM erforderlichen OSGi-Pakete dar. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
 
 * über das Dropdown-Menü:
 
@@ -153,7 +153,7 @@ Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
 
 ## Komponenten {#components}
 
-Die **Komponenten** können Sie die verschiedenen Komponenten aktivieren bzw. deaktivieren. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
+Auf der Registerkarte **Komponenten** können Sie die verschiedenen Komponenten aktivieren und/oder deaktivieren. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
 
 * über das Dropdown-Menü:
 

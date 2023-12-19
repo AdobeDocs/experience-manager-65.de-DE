@@ -1,6 +1,6 @@
 ---
 title: Verwalten von Formularanwendungen und Aufgaben im AEM-Posteingang
-description: Mit AEM Posteingang können Sie Forms-orientierte Workflows starten, indem Sie Anwendungen senden und Aufgaben verwalten.
+description: Mit dem AEM-Posteingang können Sie formularzentrierte Workflows starten, indem Sie Anwendungen senden und Aufgaben verwalten.
 contentOwner: vishgupt
 topic-tags: document_services, publish
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,7 +9,7 @@ exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1067'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 

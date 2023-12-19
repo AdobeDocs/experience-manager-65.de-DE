@@ -8,16 +8,16 @@ topic-tags: best-practices
 exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
 source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 67%
+source-wordcount: '400'
+ht-degree: 96%
 
 ---
 
 # Testen von Inhaltsfragmenten in We.Retail{#trying-out-content-fragments-in-we-retail}
 
-Mit Inhaltsfragmenten können Sie kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten erstellen. **We.Retail** (wie in einer vordefinierten Instanz von Adobe Experience Manager verfügbar) stellt das Fragment bereit **Arktisches Surfen in Lofoten** als Grundmuster. Dies zeigt Folgendes:
+Inhaltsfragmente ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. **We.Retail** (in einer vorkonfigurierten Instanz von Adobe Experience Manager) stellt das Fragment **Surfen in der Arktis auf den Lofoten** als einfaches Beispiel bereit. Dies zeigt Folgendes:
 
-* Inhaltsfragmente für Adobe Experience Manager (AEM) werden [als seitenunabhängige Assets erstellt und verwaltet](/help/assets/content-fragments/content-fragments.md). Damit können Sie kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten erstellen.
+* Inhaltsfragmente für Adobe Experience Manager (AEM) werden [als seitenunabhängige Assets erstellt und verwaltet](/help/assets/content-fragments/content-fragments.md). Sie ermöglichen Ihnen das Erstellen kanalneutraler Inhalte zusammen mit (möglicherweise kanalspezifischen) Variationen.
 
    * Siehe [Suche nach Inhaltsfragment-Assets in We.Retail](#where-to-find-content-fragments-in-we-retail).
 
@@ -25,7 +25,7 @@ Mit Inhaltsfragmenten können Sie kanalneutrale Inhalte zusammen mit (möglicher
 
    * Siehe [Verwendung von Inhaltsfragmenten in We.Retail](#where-content-fragments-are-used-in-we-retail).
 
-Die vollständige Dokumentation zum Erstellen, Verwalten, Verwenden und Entwickeln von Inhaltsfragmenten finden Sie unter:
+Die vollständige Dokumentation zum Erstellen, Verwalten, Nutzen und Entwickeln von Inhaltsfragmenten:
 
 * Siehe [Weitere Informationen](#further-information).
 
@@ -44,7 +44,7 @@ Es gibt mehrere Beispielinhaltsfragmente in We.Retail. Navigieren Sie zu **Asset
 
 Diese enthalten **Surfen in der Arktis auf den Lofoten**, ein Fragment mit den zugehörigen visuellen Assets:
 
-* Navigieren über **Assets**, **Dateien**, **We.Retail**, **englisch**, **Erlebnisse**, **Arktisches Surfen in Lofoten**:
+* Navigieren Sie über **Assets**, **Dateien**, **We.Retail**, **English**, **Experiences**, **Arctic Surfing in Lofoten**:
 
    * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten ) 
 
@@ -54,7 +54,7 @@ Sie können das Fragment **Surfen in der Arktis auf den Lofoten** auswählen und
 
 * [http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten](http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten)
 
-Hier können Sie [Bearbeiten und Verwalten](/help/assets/content-fragments/content-fragments.md) Ihr Fragment mithilfe der Registerkarten (linker Seitenbereich):
+Hier können Sie Ihr Fragment mithilfe der Registerkarten (linkes Bedienfeld) [bearbeiten und verwalten](/help/assets/content-fragments/content-fragments.md):
 
 <!--![cf-45-aa](do-not-localize/cf-45-aa.png) ![cf-45-a](do-not-localize/cf-45-a.png) ASSET does not exist-->
 
@@ -64,9 +64,9 @@ Hier können Sie [Bearbeiten und Verwalten](/help/assets/content-fragments/conte
 
 ![cf-46](assets/cf-46.png)
 
-## wo Inhaltsfragmente in We.Retail verwendet werden {#where-content-fragments-are-used-in-we-retail}
+## Verwendung von Inhaltsfragmenten in We.Retail {#where-content-fragments-are-used-in-we-retail}
 
-Beispiel [Seitenbearbeitung mit einem Inhaltsfragment](/help/sites-authoring/content-fragments.md) Es werden mehrere Beispielseiten bereitgestellt, z. B.:
+Um die [Seitenerstellung mit einem Inhaltsfragment](/help/sites-authoring/content-fragments.md) zu illustrieren, werden mehrere Beispielseiten bereitgestellt, z. B.:
 
 * [http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience](http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience)
 
@@ -84,7 +84,7 @@ Weitere Informationen finden Sie unter:
 
 * [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)
 
-   * Erfahren Sie, wie Sie Ihre Inhaltsfragment-Assets erstellen, bearbeiten und verwalten.
+   * Hier erfahren Sie, wie Sie Ihre Inhaltsfragment-Assets erstellen, bearbeiten und verwalten.
 
 * [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md)
 

@@ -5,7 +5,7 @@ exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '2115'
-ht-degree: 69%
+ht-degree: 81%
 
 ---
 
@@ -24,10 +24,10 @@ Nachdem Sie nun Ihren Connector und Ihre Übersetzungsregeln eingerichtet haben,
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie AEM-Übersetzungsprojekte zusammen mit dem Connector und Ihren Übersetzungsregeln verwenden können, um Inhalte zu übersetzen. Nach dem Lesen dieses Dokuments sollten Sie Folgendes tun:
+In diesem Dokument erfahren Sie, wie Sie AEM-Übersetzungsprojekte zusammen mit dem Connector und Ihren Übersetzungsregeln verwenden können, um Inhalte zu übersetzen. Nach dem Lesen dieses Dokuments sollten Sie zu Folgendem in der Lage sein:
 
 * Verstehen, was ein Übersetzungsprojekt ist.
-* Erstellen Sie Übersetzungsprojekte.
+* Erstellen von Übersetzungsprojekten.
 * Übersetzungsprojekte verwenden können, um Ihre Headless-Inhalte zu übersetzen.
 
 ## Erstellen eines Übersetzungsprojekts {#creating-translation-project}
@@ -41,7 +41,7 @@ Wenn einem Übersetzungsprojekt Inhalte hinzugefügt werden, wird ein Übersetzu
 1. Wählen Sie den Sprachstamm des Inhalts aus und lassen Sie AEM das Übersetzungsprojekt automatisch basierend auf dem Inhaltspfad erstellen.
 1. Erstellen Sie ein leeres Projekt und wählen Sie manuell die Inhalte aus, die zum Übersetzungsprojekt hinzugefügt werden sollen.
 
-Beide Ansätze unterscheiden sich nur je nach der Person, die die Übersetzung durchführt:
+Beide Ansätze sind zulässig und unterscheiden sich nur abhängig von der Rolle, die die Übersetzung durchführt:
 
 * Der Übersetzungsprojekt-Manager (TPM) benötigt häufig die Flexibilität, die Inhalte manuell für das Übersetzungsprojekt auszuwählen.
 * Wenn der Inhaltsverantwortliche auch für die Übersetzung verantwortlich ist, ist es oft einfacher, das Projekt anhand des ausgewählten Inhaltspfads automatisch von AEM erstellen zu lassen.
@@ -53,7 +53,7 @@ Auf beide Ansätze wird in den folgenden Abschnitten eingegangen.
 Für Inhaltsverantwortliche, die auch für die Übersetzung verantwortlich ist, ist es oft einfacher, das Projekt anhand des ausgewählten Inhaltspfads automatisch von AEM erstellen zu lassen. Gehen Sie wie folgt vor, um von AEM automatisch ein Übersetzungsprojekt auf der Grundlage Ihres Inhaltspfads erstellen zu lassen:
 
 1. Navigieren Sie zu **Navigation** > **Assets** > **Dateien**. Beachten Sie, dass Headless-Inhalte in AEM als Assets gespeichert werden. Diese werden auch als Inhaltsfragmente bezeichnet.
-1. Wählen Sie den Sprachstamm Ihres Projekts aus. In diesem Fall `/content/dam/wknd/en` ausgewählt ist.
+1. Wählen Sie den Sprachstamm Ihres Projekts aus. In diesem Fall wird `/content/dam/wknd/en` ausgewählt.
 1. Klicken Sie auf die Schienenauswahl und zeigen Sie die **Verweise** Bedienfeld.
 1. Klicks **Sprachkopien**.
 1. Aktivieren Sie das Kontrollkästchen **Sprachkopien**.
@@ -93,7 +93,7 @@ Für Übersetzungsprojekt-Manager ist es oft erforderlich, bestimmte Inhalte, di
 
    ![Registerkarte „Allgemein“ des Projekts](assets/project-basic-tab.png)
 
-1. Im **Erweitert** Registerkarte, verwenden Sie die **Zielsprache** die Sprachen auswählen, in die der Inhalt übersetzt werden soll. Klicken Sie auf **Erstellen**.
+1. Verwenden Sie auf der Registerkarte **Erweitert** die Dropdown-Liste **Zielsprache**, um die Sprachen auszuwählen, in die der Inhalt übersetzt werden soll. Klicken Sie auf **Erstellen**.
 
    ![Registerkarte „Erweitert“ des Projekts](assets/project-advanced-tab.png)
 
@@ -117,7 +117,7 @@ So zeigen Sie das Übersetzungsprojekt an:
 Das Projekt ist in mehrere Karten unterteilt.
 
 * **Zusammenfassung**: Diese Karte zeigt die grundlegenden Kopfzeileninformationen des Projekts, einschließlich des Verantwortlichen, der Sprache und des Übersetzungsdienstleisters.
-* **Übersetzungsauftrag** - Diese Karte bzw. diese Karten bieten einen Überblick über den tatsächlichen Übersetzungsauftrag, einschließlich Status, Anzahl der Assets usw. Im Allgemeinen gibt es pro Sprache einen Auftrag, wobei der ISO-2-Sprach-Code an den Auftragsnamen angehängt wird.
+* **Übersetzungsauftrag**: Diese Karte bzw. diese Karten bieten einen Überblick über den tatsächlichen Übersetzungsauftrag, einschließlich Status, Anzahl der Assets usw. Im Allgemeinen gibt es pro Sprache einen Auftrag, wobei der ISO-2-Sprach-Code an den Auftragsnamen angehängt wird.
 * **Team**: Auf dieser Karte werden die Benutzer angezeigt, die an diesem Übersetzungsprojekt mitarbeiten. Diese Tour behandelt dieses Thema nicht.
 * **Aufgaben**: Zusätzliche Aufgaben im Zusammenhang mit der Übersetzung der Inhalte, z. B. zum Erstellen von Elementen oder Workflow-Elementen. Diese Tour behandelt dieses Thema nicht.
 
@@ -150,7 +150,7 @@ Maschinelle Übersetzungen werden automatisch mit dem Status **Genehmigt** zurü
 
 ### Verwenden eines manuell erstellten Übersetzungsprojekts {#using-manual-project}
 
-Beim manuellen Erstellen eines Übersetzungsprojekts erstellt AEM die erforderlichen Aufträge, wählt jedoch nicht automatisch die einzuschließenden Inhalte aus. Dadurch kann der Übersetzungsprojektmanager flexibel entscheiden, welche Inhalte übersetzt werden sollen.
+Beim manuellen Erstellen eines Übersetzungsprojekts erstellt AEM die erforderlichen Aufträge, wählt jedoch nicht automatisch die einzuschließenden Inhalte aus. Dadurch kann der Übersetzungsprojekt-Manager flexibel entscheiden, welche Inhalte übersetzt werden sollen.
 
 So fügen Sie einem Übersetzungsauftrag Inhalte hinzu:
 
@@ -183,7 +183,7 @@ So fügen Sie einem Übersetzungsauftrag Inhalte hinzu:
 >
 >Weitere Informationen zum Pfad-Browser finden Sie im [Abschnitt mit zusätzlichen Ressourcen](#additional-resources).
 
-Sie können die vorherigen Schritte verwenden, um den erforderlichen Inhalt zu allen Sprachen (Aufträgen) für das Projekt hinzuzufügen. Nachdem Sie alle Inhalte ausgewählt haben, können Sie mit der Übersetzung beginnen.
+Sie können die vorherigen Schritte verwenden, um die erforderlichen Inhalte zu allen Sprachen (Aufträgen) für das Projekt hinzuzufügen. Nachdem Sie alle Inhalte ausgewählt haben, können Sie mit der Übersetzung beginnen.
 
 Normalerweise beginnt der Inhalt des Übersetzungsauftrags im Status **Entwurf**, wie in der Spalte **Status** im Fenster **Übersetzungsauftrag** angegeben.
 
@@ -199,7 +199,7 @@ Maschinelle Übersetzungen werden automatisch mit dem Status **Genehmigt** zurü
 
 ## Überprüfen übersetzter Inhalte {#reviewing}
 
-[Wie bereits erwähnt,](#using-translation-project) maschinell übersetzte Inhalte fließen zurück in AEM mit dem Status **Genehmigt** Da die Annahme ist, dass aufgrund der Verwendung von maschineller Übersetzung kein menschliches Eingreifen erforderlich ist. Es ist jedoch weiterhin möglich, den übersetzten Inhalt zu überprüfen.
+[Wie bereits erwähnt,](#using-translation-project) fließen maschinell übersetzte Inhalte mit dem Status **Genehmigt** zurück nach AEM, da davon ausgegangen wird, dass aufgrund der maschinellen Übersetzung kein menschliches Eingreifen erforderlich ist. Aber es ist noch möglich, die übersetzten Inhalte zu überprüfen.
 
 Wechseln Sie einfach zum abgeschlossenen Übersetzungsauftrag und wählen Sie ein Zeilenelement aus, indem Sie auf das Kontrollkästchen tippen oder klicken. Das Symbol **In Inhaltsfragment anzeigen** wird in der Symbolleiste angezeigt.
 
@@ -223,7 +223,7 @@ Wenn Sie über zu diesem Ordner navigieren **Navigation** > **Assets** > **Datei
 
 Das Übersetzungs-Framework von AEM erhält die Übersetzungen vom Übersetzungs-Connector und erstellt dann automatisch die Inhaltsstruktur, basierend auf dem Sprachstamm und unter Verwendung der vom Connector bereitgestellten Übersetzungen.
 
-Es ist wichtig zu verstehen, dass diese Inhalte nicht veröffentlicht werden und daher nicht für Ihre Headless-Services verfügbar sind. Sie erfahren mehr über diese Autoren- und Veröffentlichungsstruktur und erfahren, wie Sie die übersetzten Inhalte im nächsten Schritt der Journey veröffentlichen.
+Es ist wichtig zu verstehen, dass diese Inhalte nicht veröffentlicht werden und daher nicht für Ihre Headless-Services verfügbar sind. Im nächsten Schritt der Übersetzungs-Tour lernen Sie diese Autoren- und Veröffentlichungstruktur kennen und erfahren, wie übersetzte Inhalte veröffentlicht werden.
 
 ## Menschliche Übersetzung {#human-translation}
 
@@ -233,13 +233,13 @@ Die menschliche Übersetzung sprengt den Rahmen dieser Tour zur Lokalisierung. W
 
 ## Wie geht es weiter {#what-is-next}
 
-Nachdem Sie nun diesen Teil der Headless-Übersetzungs-Journey abgeschlossen haben, sollten Sie Folgendes tun können:
+Nachdem Sie nun diesen Teil der Headless-Übersetzungs-Tour abgeschlossen haben, sollten Sie zu Folgendem in der Lage sein:
 
 * Verstehen, was ein Übersetzungsprojekt ist.
-* Erstellen Sie Übersetzungsprojekte.
+* Erstellen von Übersetzungsprojekten.
 * Übersetzungsprojekte verwenden können, um Ihre Headless-Inhalte zu übersetzen.
 
-Auf diesen Erkenntnissen aufbauen und Ihre Journey-zur Headless-AEM-Übersetzung fortsetzen, indem Sie das Dokument erneut überprüfen. [Übersetzten Inhalt veröffentlichen](publish-content.md) Hier erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und diese Übersetzungen aktualisieren können, wenn sich Ihr Sprachstamm ändert.
+Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM-Headless-Übersetzungs-Tour fort, indem Sie als Nächstes das Dokument [Veröffentlichen übersetzter Inhalte](publish-content.md) lesen. Dort lernen Sie, wie Sie übersetzte Inhalte veröffentlichen und wie Sie diese Übersetzungen aktualisieren, wenn sich die Inhalte Ihres Sprachstamms ändern.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

@@ -4,7 +4,7 @@ feature: Adaptive Forms
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 92%
 Viele neuere Browserversionen bieten eine eigene, begrenzte Unterstützung für XFA-basierte PDF-Formulare. Auch wenn diese Browser XFA-basierte PDF-Formulare öffnen können, sind die zur Verfügung stehenden Möglichkeiten begrenzt. Wenn Sie ein XFA-basiertes PDF-Formular nicht in einem modernen Browser öffnen oder senden können, verwenden Sie eine der folgenden Methoden:
 
 * Verwenden Sie [Adobe® Acrobat®](https://www.adobe.com/acrobat.html) oder [Adobe® Adobe® Reader®](https://get.adobe.com/de/reader/), Version 8 oder höher, um XFA-basierte PDF-Formulare zu öffnen und zu senden.
-* Mit Acrobat und Reader unter Microsoft® Windows® können Sie konfigurieren, dass PDF im geschützten Ansichtsmodus geöffnet werden, was das Öffnen von XFA-basierten PDF forms verhindert. Stellen Sie sicher, dass der geschützte Anzeigemodus in Ihrem Acrobat oder Reader deaktiviert ist. Weitere Informationen finden Sie unter [Geschützte Ansicht (nur Windows)](https://helpx.adobe.com/de/reader/using/protected-mode-windows.html).
+* Unter Microsoft® Windows® können Sie Acrobat und Reader so konfigurieren, dass PDFs im geschützten Ansichtsmodus geöffnet werden, was das Öffnen von XFA-basierten PDF-Formularen verhindert. Stellen Sie sicher, dass der geschützte Anzeigemodus in Ihrem Acrobat oder Reader deaktiviert ist. Weitere Informationen finden Sie unter [Geschützte Ansicht (nur Windows)](https://helpx.adobe.com/de/reader/using/protected-mode-windows.html).
 * (Für Formularentwickler) Adobe Experience Manager Forms bietet außerdem Unterstützung für:
 
    * [Rendern von XFA-basierten Formularen in HTML5-Formularen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/introduction.html?lang=de#key-capabilities-of-html-forms-br), sodass die Formulare in Browsern mit HTML5-Unterstützung geöffnet werden können, einschließlich Browsern, die auf Mobilgeräten wie dem iPad laufen. Die HTML5-Ausgabedarstellung der Formulare behält das Layout des Formularentwurfs bei und unterstützt die meisten in die XFA-Formularvorlage eingebetteten Formularlogiken (z. B. JavaScript, Formularberechnungen und Formularvalidierungen).

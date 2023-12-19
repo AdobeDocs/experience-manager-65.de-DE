@@ -7,7 +7,7 @@ exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '824'
-ht-degree: 83%
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ Wenn der Proxy eine separate [!DNL Experience Manager]-Instanz ist, wird die Las
 
 ## Proxy (HTTP-Zugriff) {#proxy-http-access}
 
-Ein Proxy ist über das HTTP-Servlet verfügbar, wenn es für die Annahme von Verarbeitungsvorgängen konfiguriert ist unter: `/libs/dam/cloud/proxy`. Dieses Servlet erstellt einen Sling-Auftrag aus den veröffentlichten Parametern. Der Auftrag wird dann der Proxy-Auftragswarteschlange hinzugefügt und mit dem entsprechenden Proxy-Worker verbunden.
+Ein Proxy ist über das HTTP-Servlet verfügbar, wenn es für die Annahme von Verarbeitungsvorgängen konfiguriert ist unter: `/libs/dam/cloud/proxy`. Dieses Servlet erstellt einen Sling-Auftrag aus den geposteten Parametern. Der Auftrag wird dann der Proxy-Auftragswarteschlange hinzugefügt und mit dem entsprechenden Proxy-Worker verbunden.
 
 ### Unterstützte Vorgänge {#supported-operations}
 
@@ -142,15 +142,15 @@ Für die Einrichtung eines eigenen benutzerdefinierten Proxy-Workers müssen Sie
 
 * Einrichten und Implementieren (mit Sling Eventing): 
 
-   * ein benutzerdefiniertes Auftragsthema
-   * einen benutzerdefinierten Auftragsereignishandler
+   * ein Thema für den benutzerdefinierten Auftrag
+   * einen Ereignis-Handler für benutzerdefinierte Aufträge
 
 * Verwenden Sie dann die JobService-API, um:
 
    * benutzerdefinierten Auftrag an Proxy senden
-   * Auftrag verwalten
+   * Ihren Auftrag zu verwalten
 
-* Wenn Sie den Proxy aus einem Workflow verwenden möchten, müssen Sie einen benutzerdefinierten externen Schritt mithilfe der WorkflowExternalProcess-API und der JobService-API implementieren.
+* Wenn Sie den Proxy aus einem Workflow verwenden möchten, müssen Sie einen benutzerdefinierten, externen Schritt mithilfe der WorkflowExternalProcess-API und der JobService-API implementieren.
 
 Das folgende Diagramm und die folgenden Schritte beschreiben den weiteren Ablauf:
 
@@ -174,7 +174,7 @@ Das folgende Diagramm und die folgenden Schritte beschreiben den weiteren Ablauf
 
    Als Beispiel dient `IDSJobProcessor.java` für den IDS-Proxy-Worker.
 
-1. Verwenden Sie `ProxyUtil.java` in dam-commons. Auf diese Weise können Sie Aufträge mithilfe des dam-Proxys an Worker senden.
+1. Verwenden Sie `ProxyUtil.java` in dam-commons. Damit können Sie Aufträge mit dem dam-Proxy an Worker senden.
 
 >[!NOTE]
 >

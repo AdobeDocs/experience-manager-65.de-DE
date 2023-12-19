@@ -9,7 +9,7 @@ exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
 source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '5736'
+source-wordcount: '5649'
 ht-degree: 98%
 
 ---
@@ -194,7 +194,7 @@ Das Keyword für eine von einem Benutzer erstellte Eigenschaft ist ihre Feldbesc
 
 Im Folgenden finden Sie einige Beispiele für Suchformate für komplexe Abfragen:
 
-* So zeigen Sie alle Assets mit mehreren Facettenfeldern an (wie: title=John Doe und creator tool = Adobe Photoshop):   `title:"John Doe" creatortool:Adobe*`
+* So zeigen Sie alle Assets mit mehreren Facettenfeldern an (z. B.: title=John Doe und creator tool = Adobe Photoshop): `title:"John Doe" creatortool:Adobe*`
 * So zeigen Sie alle Assets an, wenn der Facettenwert nicht ein einzelnes Wort, sondern ein Satz ist (wie: title=Scott Reynolds): `title:"Scott Reynolds"`
 * So zeigen Sie alle Assets mit mehreren Werten für eine einzelne Eigenschaft an (wie: title=Scott Reynolds oder John Doe): `title:"Scott Reynolds" OR "John Doe"`
 * So zeigen Sie Assets an, deren Eigenschaftswerte mit einer bestimmten Zeichenfolge beginnen (wie: title ist Scott Reynolds): `title:Scott*`
@@ -248,7 +248,7 @@ Sie können die folgenden Anfrageparameter in einer URL übergeben, um den Asset
 
 | Name | Werte | Beispiel | Zweck |
 |---|---|---|---|
-| resource suffix (B) | Ordnerpfad als Ressourcensuffix in der URL:   [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | So starten Sie die Asset-Auswahl mit einem bestimmten Ordner, beispielsweise mit dem Ordner `/content/dam/we-retail/en/activities` ausgewählt ist, sollte die URL wie folgt aussehen: `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Wenn beim Starten des Asset-Wählers ein bestimmter Ordner ausgewählt sein soll, können Sie ihn als Ressourcensuffix übergeben. |
+| resource suffix (B) | Ordnerpfad als Ressourcensuffix in der URL: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | So starten Sie die Asset-Auswahl mit einem bestimmten Ordner, beispielsweise mit dem Ordner `/content/dam/we-retail/en/activities` ausgewählt ist, sollte die URL wie folgt aussehen: `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Wenn beim Starten des Asset-Wählers ein bestimmter Ordner ausgewählt sein soll, können Sie ihn als Ressourcensuffix übergeben. |
 | `mode` | single, multiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | Im Modus „multiple“ können Sie mit dem Asset-Wähler mehrere Assets gleichzeitig auswählen. |
 | `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Verwenden Sie diese Parameter, um den Asset-Wähler als Granite-Dialogfeld zu öffnen. Diese Option ist nur relevant, wenn Sie den Asset-Wähler per Granite-Pfadfeld starten und als pickerSrc-URL konfigurieren. |
 | `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Verwenden Sie diese Option, um den Stammordner für den Asset-Wähler anzugeben. In diesem Fall können Sie mit dem Asset-Wähler nur untergeordnete Assets (direkt/indirekt) unter dem Stammordner auswählen. |
@@ -469,11 +469,11 @@ Erstellen Sie eine Version für die Assets, die in den Suchergebnissen angezeigt
 
 ### Workflow erstellen {#create-workflow}
 
-Ähnlich wie bei der Funktion „Version erstellen“ können Sie auch einen Workflow für die Assets erstellen, die in den Suchergebnissen angezeigt werden. Auswählen der Assets und Klicken auf **[!UICONTROL Erstellen]** > **[!UICONTROL Workflow]**. Wählen Sie das Workflow-Modell aus, geben Sie einen Titel für den Workflow an und klicken Sie auf **[!UICONTROL Starten]**.
+Ähnlich wie bei der Funktion „Version erstellen“ können Sie auch einen Workflow für die Assets erstellen, die in den Suchergebnissen angezeigt werden. Wählen Sie die Assets aus und klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Workflow]**. Wählen Sie das Workflow-Modell aus, geben Sie einen Titel für den Workflow an und klicken Sie auf **[!UICONTROL Starten]**.
 
 ### Zuordnung für Assets herstellen und aufheben {#relate-unrelate-assets}
 
-Ordnen Sie Assets zu, die in den Suchergebnissen angezeigt werden, und heben Sie deren Zuordnung auf. Auswählen der Assets und Klicken auf **[!UICONTROL Relation]** oder **[!UICONTROL Nicht zuordnen]**.
+Ordnen Sie Assets zu, die in den Suchergebnissen angezeigt werden, und heben Sie deren Zuordnung auf. Wählen Sie die Assets aus und klicken Sie auf **[!UICONTROL Zuordnen]** oder **[!UICONTROL Zuordnung aufheben]**.
 
 ## Unerwartete Suchergebnisse und Probleme {#unexpected-results}
 

@@ -1,6 +1,6 @@
 ---
 title: Projekte
-description: Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Projektverwaltung erleichtert..
+description: Mithilfe von Projekten können Sie Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Verwaltung Ihrer Projekte erleichtert.
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
@@ -48,7 +48,7 @@ Sie können die Leistenauswahl verwenden, um zwischen den Konsolenmodi zu wechse
 
 #### Zeitleiste {#timeline}
 
-In der Timeline-Ansicht können Sie ein einzelnes Projekt auswählen und die Aktivität darauf anzeigen. Verwenden Sie die Leistenauswahl oder den Hotkey `alt+1`, um zu dieser Ansicht zu wechseln.
+In der Timeline-Ansicht können Sie ein einzelnes Projekt auswählen und die Aktivitäten in diesem Projekt anzeigen. Verwenden Sie die Leistenauswahl oder den Hotkey `alt+1`, um zu dieser Ansicht zu wechseln.
 
 ![Zeitleistenmodus](assets/project-timeline.png)
 
@@ -167,7 +167,7 @@ In der Kachel **E-Mails** können Sie E-Mail-Anfragen verwalten. Hierüber läss
 
 ![E-Mail-Kachel](assets/project-tile-email.png)
 
-Weitere Informationen finden Sie im Abschnitt [Workflow &quot;E-Mail anfordern&quot;.](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)
+Weitere Informationen finden Sie im [Workflow „E-Mail anfordern“](/help/sites-authoring/projects-with-workflows.md#request-email-workflow).
 
 ### Workflows {#workflows}
 

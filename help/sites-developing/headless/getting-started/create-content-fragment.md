@@ -5,7 +5,7 @@ exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 78%
+ht-degree: 85%
 
 ---
 
@@ -17,9 +17,9 @@ Erfahren Sie, wie Sie mit den Inhaltsfragmenten von AEM seitenunabhängige Inhal
 
 [Nachdem Sie einen Asset-Ordner erstellt haben](create-assets-folder.md), in dem Ihre Inhaltsfragmente gespeichert werden sollen, können Sie nun Fragmente erstellten.
 
-Mit Inhaltsfragmenten können Sie seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen. Sie ermöglichen die Vorbereitung von Inhalten, die an mehreren Orten und über mehrere Kanäle hinweg verwendet werden können.
+Mit Inhaltsfragmenten können Sie seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen. Außerdem können Sie Inhalte zur Verwendung an mehreren Orten und über mehrere Kanäle hinweg vorbereiten.
 
-Inhaltsfragmente enthalten strukturierten Inhalt und können im JSON-Format bereitgestellt werden.
+Inhaltsfragmente enthalten strukturierte Inhalte und können im JSON-Format bereitgestellt werden.
 
 ## Erstellen eines Inhaltsfragments {#how-to-create-a-content-fragment}
 

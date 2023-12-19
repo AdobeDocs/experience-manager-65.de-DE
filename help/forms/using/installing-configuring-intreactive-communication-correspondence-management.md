@@ -8,7 +8,7 @@ exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1349'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -44,7 +44,7 @@ Bevor Sie mit der Installation und Konfiguration interaktiver Kommunikations- un
    * **Autor**: Eine zum Erstellen, Hochladen und Bearbeiten von Inhalten sowie zum Verwalten der Website verwendete AEM-Instanz. Sobald der Inhalt für die Veröffentlichung bereit ist, wird er an die Veröffentlichungsinstanz repliziert.
    * **Verarbeitung:** Eine Verarbeitungsinstanz ist eine [extrasichere AEM-Authoring-Instanz](/help/forms/using/hardening-securing-aem-forms-environment.md). Nach der Installation können Sie eine Autoreninstanz festlegen und absichern.
 
-   * **Publish**: Eine AEM-Instanz, die die veröffentlichten Inhalte über das Internet oder ein internes Netzwerk öffentlich zugänglich macht.
+   * **Veröffentlichung**: Eine AEM-Instanz, die die veröffentlichten Inhalte über das Internet oder ein internes Netzwerk öffentlich zugänglich macht.
 
 * Es gibt gewisse Arbeitsspeicheranforderungen. Für das Add-on-Paket für AEM Forms ist Folgendes erforderlich:
 
@@ -139,7 +139,7 @@ Führen Sie auf allen Autoren- und Veröffentlichungsinstanzen folgende Schritte
 
 Interaktive Kommunikation ist der Standard und empfohlene Ansatz, um Kundenkommunikation in AEM 6.5 Forms zu erstellen. Wenn Sie ein Upgrade oder eine Migration von einer früheren Version durchgeführt haben und weiterhin Briefe (Correspondence Management) verwenden möchten, installieren Sie das [AEMFD-Kompatibilitätspaket](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=de).
 
-Mit dem AEMFD-Kompatibilitätspaket können Sie die folgenden Assets aus AEM 6.4 Forms, AEM 6.3 Forms und AEM 6.2 Forms auf AEM 6.5 Forms verwenden:
+Mit dem AEMFD-Kompatibilitätspaket können Sie die folgenden Assets aus AEM 6.4 Forms, AEM 6.3 Forms und AEM 6.2 Forms in AEM 6.5 Forms verwenden:
 
 * Dokumentfragmente
 * Briefe

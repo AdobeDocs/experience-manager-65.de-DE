@@ -1,6 +1,6 @@
 ---
 title: Aktivieren von Formularportal-Komponenten
-description: Standardmäßig sind Forms Portal-Komponenten deaktiviert. Aktivieren Sie die Gruppen Document Services und Document Services Predicates , um Forms Portal-Komponenten zu aktivieren.
+description: Standardmäßig sind Formularportal-Komponenten deaktiviert. Aktivieren Sie die Gruppen „Dokumentendienste“ und „Dokumentendienste-Prädikate“, um Formularportal-Komponenten zu aktivieren.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
@@ -9,7 +9,7 @@ exl-id: 572194b7-063b-4c38-af43-aba78e9c51c6
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '332'
-ht-degree: 53%
+ht-degree: 73%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 53%
 | AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
-Standardmäßig sind Forms Portal-Komponenten nicht verfügbar. Führen Sie die folgenden Schritte aus, damit die Komponenten in der Liste der verfügbaren Komponenten in AEM Sidekick angezeigt werden:
+Standardmäßig sind Formularportal-Komponenten nicht verfügbar. Führen Sie die folgenden Schritte aus, damit die Komponenten in der Liste der verfügbaren Komponenten in AEM Sidekick angezeigt werden:
 
 1. Melden Sie sich bei der Autoreninstanz Ihrer Website an und öffnen Sie eine AEM Sites-Seite.
 
@@ -38,7 +38,7 @@ Standardmäßig sind Forms Portal-Komponenten nicht verfügbar. Führen Sie die 
 
 >[!NOTE]
 >
->Sie können auch bestimmte Komponenten aus diesen Kategorien aktivieren, indem Sie die Komponenten auswählen. Weitere Informationen zu den Komponenten und ihrer Verwendung finden Sie unter [Erstellen einer Formularportalseite](/help/forms/using/creating-form-portal-page.md) und [Einbetten der Verknüpfungskomponente in eine Seite](/help/forms/using/embedding-link-component-page.md).
+>Sie können auch bestimmte Komponenten aus diesen Kategorien aktivieren, indem Sie die Komponenten auswählen. Weitere Informationen zu den Komponenten und ihrer Verwendung finden Sie unter [Erstellen einer Formularportalseite](/help/forms/using/creating-form-portal-page.md) und [Einbetten einer Verknüpfungskomponente in eine Seite](/help/forms/using/embedding-link-component-page.md).
 
 Jetzt sind die Komponentenkategorien „Document Services“ und „Document Services Predicates“ im Komponenten-Browser verfügbar. Die Komponenten sind für alle Seiten aktiviert, die dieselbe Vorlage verwenden.
 

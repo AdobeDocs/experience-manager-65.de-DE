@@ -1,11 +1,11 @@
 ---
 title: Integration mit Adobe Target mithilfe von IMS
-description: Erfahren Sie mehr über die Integration von AEM mit Adobe Target mithilfe von IMS..
+description: Erfahren Sie mehr über die Integration von AEM mit Adobe Target mithilfe von IMS.
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1556'
-ht-degree: 70%
+source-wordcount: '1533'
+ht-degree: 99%
 
 ---
 
@@ -27,7 +27,7 @@ Die Integration von AEM mit Adobe Target über die Target Standard-API erfordert
 
 Bevor Sie mit diesem Verfahren beginnen:
 
-* Der [Adobe-Support](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home?lang=de#support) muss Ihr Konto für Folgendes bereitstellen:
+* Der [Adobe-Support](https://experienceleague.adobe.com/?lang=de&amp;support-solution=General&amp;support-tab=home#support) muss Ihr Konto für Folgendes bereitstellen:
 
    * Adobe Console
    * Adobe-Entwicklerkonsole
@@ -37,7 +37,7 @@ Bevor Sie mit diesem Verfahren beginnen:
 * Der Systemadministrator Ihres Unternehmens sollte die Admin Console verwenden, um die erforderlichen Entwickler in Ihrem Unternehmen den relevanten Produktprofilen hinzuzufügen.
 
    * Dadurch erhalten diese Entwicklerinnen und Entwickler die Berechtigung, Integrationen in der Adobe-Entwicklerkonsole zu aktivieren.
-   * Siehe [Verwalten von Entwicklern](https://helpx.adobe.com/de/enterprise/using/manage-developers.html).
+   * Siehe [Verwalten von Entwickelnden](https://helpx.adobe.com/de/enterprise/using/manage-developers.html).
 
 
 ## Konfigurieren einer IMS-Konfiguration – Generieren eines öffentlichen Schlüssels {#configuring-an-ims-configuration-generating-a-public-key}
@@ -45,51 +45,51 @@ Bevor Sie mit diesem Verfahren beginnen:
 Der erste Schritt der Konfiguration besteht darin, in AEM eine IMS-Konfiguration zu erstellen und den öffentlichen Schlüssel zu generieren.
 
 1. Öffnen Sie in AEM das Menü **Tools**.
-1. Im **Sicherheit** Bereich, wählen Sie **Adobe IMS-Konfigurationen**.
+1. Wählen Sie im Abschnitt **Sicherheit** die Option **Adobe IMS-Konfigurationen** aus.
 1. Wählen Sie **Erstellen** aus, um **Technische Kontokonfiguration für Adobe IMS** zu öffnen.
 1. Wählen Sie in der Dropdown-Liste unter **Cloud-Konfiguration** die Option **Adobe Target** aus.
 1. Aktivieren Sie **Neues Zertifikat erstellen** und geben Sie einen neuen Alias ein.
 1. Bestätigen Sie mit **Zertifikat erstellen**.
 
-   ![Konfigurationsassistent für technische Konten von Adobe IMS](assets/integrate-target-io-01.png)
+   ![Konfigurationsassistent für technische Adobe IMS-Konten](assets/integrate-target-io-01.png)
 
 1. Wählen Sie **Herunterladen** (oder **Öffentlichen Schlüssel herunterladen**) aus, um die Datei auf Ihr lokales Laufwerk herunterzuladen, damit sie einsatzbereit ist, wenn Sie [IMS für die Adobe Target-Integration mit AEM konfigurieren](#configuring-ims-for-adobe-target-integration-with-aem).
 
    >[!CAUTION]
    >
-   >Lassen Sie diese Konfiguration geöffnet. Sie wird erneut benötigt, wenn [Abschließen der IMS-Konfiguration in AEM](#completing-the-ims-configuration-in-aem).
+   >Lassen Sie diese Konfiguration geöffnet, denn sie wird beim [Abschließen der IMS-Konfiguration in AEM](#completing-the-ims-configuration-in-aem) wieder benötigt.
 
-   ![Informationsmeldung zum Hinzufügen eines Zertifikats auf dem Adobe I/O](assets/integrate-target-io-02.png)
+   ![Informationsmeldung zum Hinzufügen eines Zertifikats in Adobe I/O](assets/integrate-target-io-02.png)
 
 ## Konfigurieren von IMS für die Adobe Target-Integration mit AEM {#configuring-ims-for-adobe-target-integration-with-aem}
 
-Erstellen Sie mithilfe der Adobe Developer-Konsole ein Projekt (Integration) mit Adobe Target, das AEM verwenden können, und weisen Sie dann die erforderlichen Berechtigungen zu.
+Erstellen Sie mithilfe der Adobe Developer Console ein Projekt (Integration) mit Adobe Target, das AEM verwenden kann, und weisen Sie dann die erforderlichen Berechtigungen zu.
 
 ### Erstellen des Projekts {#creating-the-project}
 
-Um ein Projekt mit Adobe Target zu erstellen, das AEM verwenden können, öffnen Sie die Adobe Developer-Konsole:
+Um ein Projekt mit Adobe Target zu erstellen, das AEM verwenden kann, öffnen Sie die Adobe Developer Console:
 
 >[!CAUTION]
 >
->Derzeit unterstützt Adobe nur das **Dienstkonto (JWT)** Berechtigungstyp.
+>Derzeit unterstützt Adobe nur den Anmeldedatentyp **Service-Konto (JWT)** der Adobe Developer Console.
 >
->Verwenden Sie nicht das **OAuth Server-zu-Server** Berechtigungstyp, der in Zukunft unterstützt wird.
+>Verwenden Sie nicht den Anmeldedatentyp **OAuth-Server-zu-Server**, der in Zukunft unterstützt wird.
 
 1. Öffnen Sie die Adobe-Entwicklerkonsole für Projekte:
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. Alle vorhandenen Projekte werden angezeigt. Auswählen **Neues Projekt erstellen** - Ort und Nutzung hängen von Folgendem ab:
+1. Alle Ihre vorhandenen Projekte werden angezeigt. Wählen Sie **Neues Projekt erstellen** aus. Position und Verwendung hängen von Folgendem ab:
 
    * Wenn Sie noch kein Projekt haben, befindet sich **Neues Projekt erstellen** unten in der Mitte.
      ![Neues Projekt erstellen – Erstes Projekt](assets/integration-target-io-02.png)
-   * Wenn Sie bereits über vorhandene Projekte verfügen, werden diese aufgelistet und **Neues Projekt erstellen** oben rechts.
+   * Wenn Sie bereits über vorhandene Projekte verfügen, werden diese aufgelistet und **Neues Projekt erstellen** wird oben rechts angezeigt.
      ![Neues Projekt erstellen – Mehrere Projekte](assets/integration-target-io-03.png)
 
 
 1. Wählen Sie **Zum Projekt hinzufügen** und dann **API** aus:
 
-   ![Adobe Developer Console](assets/integration-target-io-10.png)
+   ![Adobe-Entwicklerkonsole](assets/integration-target-io-10.png)
 
 1. Wählen Sie **Adobe Target** aus und klicken Sie dann auf **Weiter**:
 
@@ -97,11 +97,11 @@ Um ein Projekt mit Adobe Target zu erstellen, das AEM verwenden können, öffnen
    >
    >Wenn Sie Adobe Target abonniert haben, es jedoch nicht aufgeführt sehen, sollten Sie die [Voraussetzungen](#prerequisites) überprüfen.
 
-   ![Klicken auf Weiter](assets/integration-target-io-12.png)
+   ![Klicken auf „Weiter“](assets/integration-target-io-12.png)
 
 1. **Laden Sie Ihren öffentlichen Schlüssel hoch** und setzen Sie den Vorgang anschließend mit **Weiter** fort:
 
-   ![Integrationen mithilfe der Developer Console hinzufügen](assets/integration-target-io-13.png)
+   ![Hinzufügen von Integrationen mithilfe der Developer Console](assets/integration-target-io-13.png)
 
 1. Überprüfen Sie die Anmeldeinformationen und setzen Sie den Vorgang mit **Weiter** fort:
 
@@ -116,9 +116,9 @@ Um ein Projekt mit Adobe Target zu erstellen, das AEM verwenden können, öffnen
    >* Adobe Target Standard – nur **Standardarbeitsbereich** ist verfügbar
    >* Adobe Target Premium – alle verfügbaren Arbeitsbereiche werden aufgelistet, wie unten dargestellt
 
-   ![API zum Hinzufügen auswählen](assets/integration-target-io-16.png)
+   ![Auswählen einer API zum Hinzufügen](assets/integration-target-io-16.png)
 
-1. Die Erstellung wird bestätigt.
+1. Die Erstellung wurde bestätigt.
 
 <!--
 1. The creation is confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
@@ -145,7 +145,7 @@ In der Adobe-Entwicklerkonsole wird eine Liste aller Integrationsprojekte angeze
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-Um weitere Details zur Konfiguration anzuzeigen, wählen Sie **Ansicht** (rechts neben einem bestimmten Projekteintrag). Dazu gehören:
+Um weitere Details zur Konfiguration anzuzeigen, wählen Sie **Anzeigen** (rechts neben einem bestimmten Projekteintrag). Dazu gehören:
 
 * Projektübersicht
 * Insights
@@ -156,11 +156,11 @@ Um weitere Details zur Konfiguration anzuzeigen, wählen Sie **Ansicht** (rechts
 * APIs
    * Beispiel: Adobe Target
 
-Einige davon müssen Sie die Integration von Adobe Target in AEM auf der Basis von IMS abschließen.
+Einige davon benötigen Sie, um die Integration von Adobe Target in AEM mithilfe von IMS abzuschließen.
 
 ## Abschließen der IMS-Konfiguration in AEM {#completing-the-ims-configuration-in-aem}
 
-Um zur AEM zurückzukehren, können Sie die IMS-Konfiguration abschließen, indem Sie die erforderlichen Werte aus der Adobe Developer Console-Integration für Target hinzufügen:
+Zurück in AEM können Sie die IMS-Konfiguration abschließen, indem Sie die erforderlichen Werte aus der Adobe Developer Console für Target hinzufügen:
 
 1. Kehren Sie zur [in AEM geöffneten IMS-Konfiguration](#configuring-an-ims-configuration-generating-a-public-key) zurück.
 1. Wählen Sie **Weiter** aus.
@@ -198,9 +198,9 @@ So überprüfen Sie, ob die Konfiguration erwartungsgemäß funktioniert:
 
    ![Adobe IMS-Konfigurationen](assets/integrate-target-io-12.png)
 
-1. Bei erfolgreicher Ausführung wird die Meldung angezeigt:
+1. Bei erfolgreicher Ausführung wird eine Bestätigungsmeldung angezeigt:
 
-   ![Konfiguration überprüfen](assets/integrate-target-io-13.png)
+   ![Überprüfen einer Konfiguration](assets/integrate-target-io-13.png)
 
 ## Konfigurieren des Adobe Target Cloud-Dienstes {#configuring-the-adobe-target-cloud-service}
 
@@ -209,15 +209,15 @@ Die Konfiguration kann nun referenziert werden, damit ein Cloud Service die Targ
 1. Öffnen Sie das Menü **Tools**. Wählen Sie dann im Abschnitt **Cloud Services** den Eintrag **Ältere Cloud Services** aus.
 1. Scrollen Sie nach unten zu **Adobe Target** und wählen Sie **Jetzt konfigurieren** aus.
 
-   Die **Konfiguration erstellen** wird geöffnet.
+   Das Dialogfeld **Konfiguration erstellen** wird geöffnet.
 
-1. Geben Sie einen **Titel** und, falls gewünscht, ein **Name** (Wenn das Feld leer gelassen wird, wird es aus dem Titel generiert.)
+1. Geben Sie einen **Titel** und, falls gewünscht, einen **Namen** ein (wenn Sie das Feld leer lassen, wird der Name aus dem Titel generiert).
 
    Sie können auch die gewünschte Vorlage auswählen (wenn mehrere Vorlagen verfügbar sind).
 
 1. Bestätigen Sie mit **Erstellen**.
 
-   Die **Komponente bearbeiten** wird geöffnet.
+   Das Dialogfeld **Komponente bearbeiten** wird geöffnet.
 
 1. Geben Sie die Details auf der Registerkarte **Adobe Target-Einstellungen** ein:
 
@@ -241,15 +241,15 @@ Die Konfiguration kann nun referenziert werden, damit ein Cloud Service die Targ
 
    * **API-Typ:** REST
 
-   * **A4T-Analytics-Cloud-Konfiguration**: Wählen Sie die Analytics Cloud-Konfiguration aus, die für Target-Aktivitätsziele und -metriken verwendet wird. Sie benötigen sie, wenn Sie Adobe Analytics als Quelle für das Reporting für bestimmte Inhalte verwenden. Wenn Ihre Cloud-Konfiguration nicht angezeigt wird, lesen Sie den Hinweis unter [Konfigurieren der A4T-Analytics Cloud-Konfiguration](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
+   * **A4T-Analytics-Cloud-Konfiguration**: Wählen Sie die Analytics Cloud-Konfiguration aus, die für Target-Aktivitätsziele und -metriken verwendet wird. Sie benötigen sie, wenn Sie Adobe Analytics als Quelle für das Reporting für bestimmte Inhalte verwenden. Falls Ihre Cloud-Konfiguration nicht angezeigt wird, hilft Ihnen der Hinweis unter [Konfigurieren der A4T-Analytics Cloud-Konfiguration](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration) weiter.
 
    * **Präzises Targeting verwenden**: Dieses Kontrollkästchen ist standardmäßig aktiviert. Wenn diese Option aktiviert ist, wartet die Cloud-Service-Konfiguration auf das Laden des Kontexts, bevor der Inhalt geladen wird. Siehe folgenden Hinweis.
 
-   * **Segmente aus Adobe Target synchronisieren**: Wählen Sie diese Option aus, damit Sie in Target definierte Segmente herunterladen und in AEM verwenden können. Wählen Sie diese Option aus, wenn die Eigenschaft &quot;API-Typ&quot;REST ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen. (Der AEM-Begriff „Segment“ ist gleichbedeutend mit dem Target-Begriff „Zielgruppe“.)
+   * **Segmente aus Adobe Target synchronisieren**: Wählen Sie diese Option, um in Target definierte Segmente herunterzuladen und in AEM zu verwenden. Wählen Sie diese Option, wenn die Eigenschaft „API-Typ“ auf „REST“ festgelegt ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen.  (Der AEM-Begriff „Segment“ ist gleichbedeutend mit dem Target-Begriff „Zielgruppe“.)
 
-   * **Client-Bibliothek**: Wählen Sie aus, ob die AT.js-Client-Bibliothek oder mbox.js (veraltet) verwendet werden soll.
+   * **Client-Bibliothek**: Wählen Sie aus, ob die Client-Bibliothek AT.js oder mbox.js (veraltet) verwendet werden soll.
 
-   * **Tag Management System zum Bereitstellen der Client-Bibliothek verwenden**: Verwenden Sie DTM (nicht mehr unterstützt), Adobe Launch oder ein anderes Tag-Management-System.
+   * **Verwenden des Tag-Management-Systems zum Bereitstellen der Client-Bibliothek**: Verwenden Sie DTM (nicht mehr unterstützt), Adobe Launch oder ein anderes Tag-Management-System.
 
    * **Benutzerdefinierte AT.js**: Lassen Sie dieses Feld leer, wenn Sie das Feld „Tag Management“ aktiviert haben oder die standardmäßige Datei „AT.js“ verwenden möchten. Alternativ hierzu können Sie Ihre benutzerdefinierte Datei „AT.js“ hochladen. Es wird nur angezeigt, wenn Sie „AT.js“ ausgewählt haben.
 
@@ -261,15 +261,15 @@ Die Konfiguration kann nun referenziert werden, damit ein Cloud Service die Targ
 
    Wenn die Verbindungsherstellung erfolgreich war, wird die Meldung **Die Verbindung wurde hergestellt** angezeigt.
 
-1. Auswählen **OK** auf die Nachricht, gefolgt von **OK** im Dialogfeld, damit Sie die Konfiguration bestätigen können.
+1. Wählen Sie in der Meldung **OK** und anschließend im Dialogfeld ebenfalls **OK** aus, um die Konfiguration zu bestätigen.
 
-1. Sie können jetzt fortfahren [Hinzufügen eines Target-Frameworks](/help/sites-administering/target-configuring.md#adding-a-target-framework) zum Konfigurieren von ContextHub- oder ClientContext-Parametern, die an Target gesendet werden. Beachten Sie, dass dies möglicherweise nicht für den Export von AEM Experience Fragments nach Target erforderlich ist.
+1. Sie können jetzt [ein Target-Framework hinzufügen](/help/sites-administering/target-configuring.md#adding-a-target-framework), um ContextHub- oder ClientContext-Parameter zu konfigurieren, die an Target gesendet werden. Beachten Sie, dass dies möglicherweise nicht für den Export von AEM Experience Fragments nach Target erforderlich ist.
 
 ### Mandanten-ID und Client-Code {#tenant-client}
 
 Mit [Adobe Experience Manager 6.5.8.0](/help/release-notes/release-notes.md) wurde das Feld „Client-Code“ zum Target-Konfigurationsfenster hinzugefügt.
 
-Beachten Sie beim Konfigurieren der Felder Mandanten-ID und Client-Code Folgendes:
+Beachten Sie beim Konfigurieren der Felder für die Mandanten-ID und den Clientcode Folgendes:
 
 1. Für die meisten Kunden sind die Mandanten-ID und der Clientcode identisch. Das bedeutet, dass beide Felder die gleichen Werte enthalten. Achten Sie darauf, dass Sie die Mandanten-ID in beide Felder eingeben.
 2. Sollten Sie über ältere Werte verfügen, können Sie auch verschiedene Werte in die Felder „Mandanten-ID“ und „Clientcode“ eingeben.
@@ -278,9 +278,9 @@ Beachten Sie in beiden Fällen Folgendes:
 
 * Standardmäßig wird der Clientcode (wenn er zuerst eingegeben wird) automatisch in das Feld „Mandanten-ID“ kopiert.
 * Sie können optional den standardmäßigen Mandanten-ID-Satz ändern.
-* Daher basieren die Backend-Aufrufe an Target auf der Mandanten-ID und die clientseitigen Aufrufe an Target auf dem Client-Code.
+* Dementsprechend basieren die Backend-Aufrufe an Target auf der Mandanten-ID und die Client-seitigen Aufrufe an Target auf dem Clientcode.
 
-Wie bereits erwähnt, ist der erste Fall der häufigste AEM 6.5. Stellen Sie in beiden Fällen sicher, dass **both** -Felder enthalten die richtigen Informationen entsprechend Ihren Anforderungen.
+Wie bereits erwähnt, ist der erste Fall der geläufigste für AEM 6.5. Achten Sie so oder so darauf, dass **beide** Felder die richtigen Informationen entsprechend Ihren Anforderungen enthalten.
 
 >[!NOTE]
 >

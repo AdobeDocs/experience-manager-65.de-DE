@@ -9,8 +9,8 @@ role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
 source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '4593'
-ht-degree: 96%
+source-wordcount: '4570'
+ht-degree: 97%
 
 ---
 
@@ -615,11 +615,11 @@ Mit Administration-Console können Sie, wenn Sie ein Dokument von einer Flex-Cli
 1. Klicken Sie auf **Einstellungen**.
 1. Klicken Sie auf **Zentrale Systemeinstellungen.**
 1. Klicken Sie auf Konfigurationen.
-1. Stellen Sie sicher, dass die Option Nicht gesichertes Hochladen von Dokumenten aus Flex-Anwendungen zulassen deaktiviert ist.
+1. Vergewissern Sie sich, dass die Option „Unsicheren Dokumenten-Upload von Flex-Anwendungen zulassen“ nicht aktiviert ist.
 
 >[!NOTE]
 >
-Um AEM Forms so zu konfigurieren, dass nicht sichere Dokumente akzeptiert werden, wählen Sie die Option Nicht gesicherten Dokumenten-Upload von Flex-Anwendungen zulassen aus. Starten Sie dann eine Anwendung oder einen Service neu, um sicherzustellen, dass die Einstellung wirksam wird.
+Um AEM Forms so zu konfigurieren, dass unsichere Dokumente akzeptiert werden, wählen Sie die Option „Unsicheren Dokumenten-Upload von Flex-Anwendungen zulassen“ aus. Starten Sie dann eine Anwendung oder einen Service neu, um sicherzustellen, dass die Einstellung wirksam wird.
 
 ### Schnellstart: Aufrufen eines kurzlebigen Prozesses durch Übergeben eines sicheren Dokuments mithilfe von Remoting {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
 

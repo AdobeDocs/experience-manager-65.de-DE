@@ -9,17 +9,17 @@ exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
 source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '2459'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
 # Tabellen in adaptiven Formularen{#tables-in-adaptive-forms}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/using/create-an-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/adaptive-forms-tables.html) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/adaptive-forms-tables.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
 
@@ -59,11 +59,11 @@ Sie können zwei oder mehr Textzellen zusammenführen, indem Sie die zusammenzuf
 
 Sie können eine Zeile oder Spalte hinzufügen und löschen sowie eine Zeile in einer Tabelle nach oben und unten verschieben.
 
-Um eine Zeile oder Spalte hinzuzufügen oder zu löschen oder eine Zeile zu verschieben, klicken Sie auf eine beliebige Zelle in der Zeile oder Spalte. Eine Dropdown-Liste wird jeweils am oberen Rand der Spalte und links neben der Zeile angezeigt. Das Menü oben bietet Optionen zum Hinzufügen oder Löschen der Spalte, während das Menü auf der linken Seite das Hinzufügen, Löschen oder Verschieben der Zeile ermöglicht.
+Um eine Zeile bzw. Spalte hinzuzufügen oder zu löschen oder eine Zeile zu verschieben, klicken Sie auf eine beliebige Zelle in der Zeile bzw. Spalte.  Eine Dropdown-Liste wird jeweils am oberen Rand der Spalte und links neben der Zeile angezeigt. Das obere Menü enthält Optionen zum Hinzufügen bzw. Löschen der Spalte und das Menü links enthält Optionen zum Hinzufügen, Löschen oder Verschieben der Zeile.
 
-* Der Vorgang &quot;Hinzufügen&quot;fügt eine Zeile darunter oder eine Spalte rechts neben der ausgewählten Zeile bzw. Spalte hinzu.
-* Der Löschvorgang löscht die ausgewählte Zeile oder Spalte.
-* Durch die Vorgänge &quot;Nach oben&quot;und &quot;Nach unten&quot;wird die ausgewählte Zeile nach oben und unten verschoben.
+* Der Vorgang „Hinzufügen“ fügt eine Zeile unterhalb der ausgewählten Zeile bzw. eine Spalte rechts von der ausgewählten Spalte hinzu.
+* Der Vorgang „Löschen“ löscht die ausgewählte Zeile bzw. Spalte.
+* Der Vorgang „Nach oben“ bzw. „Nach unten“ verschiebt die ausgewählte Zeile nach oben bzw. nach unten.
 
 Die Dropdown-Liste für die Zeile enthält auch die Option „Bearbeiten“ zum Bearbeiten von Zeileneigenschaften, Einstellungen und Stiloptionen.
 
@@ -153,7 +153,7 @@ Zur Laufzeit werden die Schaltflächen **+** und *-* für das Hinzufügen bzw. L
 
 ## Ausdrücke in einer Tabelle {#expressions-in-a-table}
 
-Mit Tabellen in adaptiven Formularen können Sie Ausdrücke in JavaScript schreiben, um Verhaltensweisen wie das Anzeigen oder Ausblenden einer Tabelle oder Zeile, das Addieren aller Zahlen und das Anzeigen der Summe in einer Zelle, das Aktivieren oder Deaktivieren einer Zelle, das Validieren der Benutzereingabe usw. zu erzeugen. Diese Ausdrücke nutzen Skriptmodell-APIs für adaptive Formulare.
+Mithilfe von Tabellen in adaptiven Formularen können Sie Ausdrücke in JavaScript schreiben, um Verhaltensweisen auszulösen (z. B. das Ein- bzw. Ausblenden einer Tabelle oder Zeile, das Addieren aller Zahlen und das Anzeigen der Summe in einer Zelle, das Aktivieren bzw. Deaktivieren einer Zelle und das Überprüfen der Benutzereingabe).  Diese Ausdrücke nutzen Skriptmodell-APIs für adaptive Formulare.
 
 Während Tabellen und Zeilen nur Sichtbarkeitsausdrücke zur Steuerung ihrer Sichtbarkeit basierend auf dem von einem Ausdruck zurückgegebenen Wert unterstützen, unterstützen Zellen die folgenden Ausdrücke:
 
@@ -211,7 +211,7 @@ Erweiterte Spalte einer Tabelle auf einem Mobilgerät
 
 ## Zusammenführen von Daten in einer Tabelle {#merge-data-in-a-table}
 
-Mit Tabellen in adaptiven Formularen können Sie die Tabelle zur Laufzeit mithilfe von Daten aus einer XML-Datei füllen. Die XML-Datendatei kann sich im lokalen Dateisystem des Computers befinden, auf dem der AEM Forms-Server ausgeführt wird, oder im CRX-Repository.
+Tabellen in adaptiven Formularen ermöglichen es Ihnen, die Tabelle zur Laufzeit mit Daten aus einer XML-Datei aufzufüllen.  Die XML-Datendatei kann sich im lokalen Dateisystem des Computers befinden, auf dem der AEM Forms-Server ausgeführt wird, oder im CRX-Repository.
 
 Zum Beispiel soll folgende Zusammenfassungstabelle für Banktransaktionen mit Daten aus einer XML-Datei gefüllt werden.
 

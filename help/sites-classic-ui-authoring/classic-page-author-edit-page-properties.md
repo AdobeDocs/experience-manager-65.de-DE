@@ -9,7 +9,7 @@ exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '760'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
 * **Vanity-URL**
 
-  Ermöglicht die Eingabe einer Vanity-URL für diese Seite. Damit können Sie eine kürzere und ausdrucksstärkere URL verwenden.
+  Ermöglicht die Eingabe einer Vanity-URL für diese Seite. Dadurch können Sie eine kürzere, ausdrucksstärkere URL verwenden.
 
   Beispiel: Wenn die Vanity-URL w`elcome` für die Seite mit dem Pfad /`v1.0/startpage` auf der Website h`ttp://example.com,` verwendet wird, wäre h`ttp://example.com/welcome` die Vanity-URL von h`ttp://example.com/content/v1.0/startpage`.
 
@@ -166,15 +166,15 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
   Legen Sie Eigenschaften für eine Blueprint-Seite fest, die für die [Verwaltung mehrerer Websites](/help/sites-administering/msm.md) verwendet wird. Steuert die Umstände, unter denen Änderungen an die Live Copy propagiert werden.
 
-### Live Copy  {#live-copy}
+### Live Copy {#live-copy}
 
 * **Live Copy**
 
   Legen Sie Eigenschaften für eine Live Copy-Seite fest, die für die [Verwaltung mehrerer Websites](/help/sites-administering/msm.md) verwendet wird. Steuert die Umstände, unter denen Änderungen von der Blueprint-Seite propagiert werden.
 
-### Site-Struktur  {#site-structure}
+### Site-Struktur {#site-structure}
 
-* Stellen Sie Links zu Seiten bereit, die Site-weite Funktionen bieten, wie z. B. **Anmeldeseite**, **Offline-Seite**, unter anderem.
+* Bieten Sie Links zu Seiten an, die eine Funktionalität für die ganze Site bieten, wie **Anmeldeseite**, **Offline-Seite** und andere.
 
 ## Bearbeiten der Seiteneigenschaften {#editing-page-properties-2}
 

@@ -5,7 +5,7 @@ exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 71%
+ht-degree: 76%
 
 ---
 
@@ -44,7 +44,7 @@ Auf der linken Seite einer bearbeitbaren Seite kann ein Browser eingeblendet wer
 Sowohl ein einfacher als auch ein langsamer Doppelklick zeigt die entsprechende Symbolleiste an (einfach für die Symbolleiste der Bearbeitung im Kontext, dann langsam doppelt für die volle Symbolleiste).
 
 * **[Responsives Layout](/help/sites-authoring/responsive-layout.md)**
-Dies bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können.
+Damit steht Ihnen ein Absatzsystem zur Verfügung, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können.
 
 * **Suche während der Eingabe**
 In bestimmten Szenarios (z. B. bei der Pfadauswahl in Dialogfeldern für die Bearbeitung) liefert die Inhaltssuche in der AEM-Oberfläche bereits während der Eingabe dynamische Suchergebnisse.

@@ -10,13 +10,13 @@ exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '3015'
-ht-degree: 62%
+ht-degree: 98%
 
 ---
 
 # Bearbeiten des Seiteninhalts{#editing-page-content}
 
-Nachdem die Seite erstellt wurde (entweder neu oder als Teil eines Launches oder einer Live Copy), können Sie den Inhalt bearbeiten, um die erforderlichen Aktualisierungen vorzunehmen.
+Sobald Ihre Seite erstellt ist (neu oder im Rahmen eines Launches oder einer Live Copy), können Sie den Inhalt bearbeiten und die erforderlichen Aktualisierungen vornehmen.
 
 Inhalte werden mithilfe von [Komponenten](/help/sites-authoring/default-components-console.md) hinzugefügt (entsprechend dem Inhaltstyp), die per Drag-and-Drop auf die Seite gezogen werden können. Dort können sie dann bearbeitet, verschoben oder gelöscht werden.
 
@@ -24,11 +24,11 @@ Inhalte werden mithilfe von [Komponenten](/help/sites-authoring/default-componen
 >
 >Ihr Konto benötigt die [entsprechenden Zugriffsrechte](/help/sites-administering/security.md) und [Berechtigungen](/help/sites-administering/security.md#permissions), um Seiten zu bearbeiten.
 >
->Sollten Probleme auftreten, empfiehlt Adobe, sich an Ihren Systemadministrator zu wenden.
+>Wenn Sie auf Probleme stoßen, empfiehlt Adobe Ihnen, sich an Ihre Systemadmins zu wenden.
 
 >[!NOTE]
 >
->Wenn Ihre Seite, Vorlage oder beide entsprechend eingerichtet sind, können Sie eine [responsives Layout](/help/sites-authoring/responsive-layout.md) bei der Bearbeitung.
+>Wenn Ihre Seite und/oder Vorlage entsprechend eingerichtet sind, können Sie das [responsive Layout](/help/sites-authoring/responsive-layout.md) für die Bearbeitung verwenden.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Die Symbolleiste bietet Zugriff auf eine Vielzahl von Optionen. Je nach aktuelle
 
 * **Seiteninformationen**
 
-  Sie bietet Zugriff auf die [Seiteninformationen](/help/sites-authoring/author-environment-tools.md#page-information) -Menü mit Seitendetails und Aktionen, die auf der Seite ausgeführt werden können, einschließlich Anzeigen und Bearbeiten von Seiteninformationen, Anzeigen von Seiteneigenschaften und Veröffentlichen/Rückgängigmachen der Veröffentlichung der Seite.
+  Ermöglicht den Zugriff auf das Menü [Seiteninformationen](/help/sites-authoring/author-environment-tools.md#page-information) mit Seitendetails und Aktionen, die auf der Seite durchgeführt werden können, einschließlich Anzeigen und Bearbeiten von Seiteninformationen, Anzeigen von Seiteneigenschaften und Veröffentlichen/Entfernen der Seite.
 
   ![Seiteninformationen](do-not-localize/screen_shot_2018-03-22at111437.png)
 
@@ -74,19 +74,19 @@ Die Symbolleiste bietet Zugriff auf eine Vielzahl von Optionen. Je nach aktuelle
 
 * **Modusauswahl**
 
-  Sie zeigt die aktuelle [mode](/help/sites-authoring/author-environment-tools.md#page-modes) und ermöglicht die Auswahl eines anderen Modus wie Bearbeiten, Layout, Timewarp oder Targeting.
+  Zeigt den aktuellen [Modus](/help/sites-authoring/author-environment-tools.md#page-modes) an und ermöglicht die Auswahl eines anderen Modus, z. B. Bearbeiten, Layout, Timewarp oder Targeting.
 
   ![Modusauswahl](assets/chlimage_1-120.png)
 
 * **Vorschau**
 
-  Aktiviert den [Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode). Dadurch wird die Seite so angezeigt, wie sie bei der Veröffentlichung erscheint.
+  Aktiviert den [Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode). Mit diesem wird die Seite so angezeigt, wie sie bei der Veröffentlichung dargestellt wird.
 
   ![Vorschaumodus](assets/chlimage_1-121.png)
 
 * **Anmerken**
 
-  Damit können Sie [Anmerkungen](/help/sites-authoring/annotations.md) auf der Seite, wenn Sie eine Seite überprüfen. Nach der ersten Anmerkung wechselt das Symbol zu einer Zahl, die die Anzahl der Anmerkungen auf der Seite angibt.
+  Hierüber können Sie die Seite mit [Anmerkungen](/help/sites-authoring/annotations.md) versehen (z. B. zu Prüfungszwecken). Nach der ersten Anmerkung wird anstelle des Symbols eine Zahl für die Anzahl der Anmerkungen auf der Seite angezeigt.
 
   ![Anmerken](do-not-localize/screen_shot_2018-03-22at111638.png)
 
@@ -94,7 +94,7 @@ Die Symbolleiste bietet Zugriff auf eine Vielzahl von Optionen. Je nach aktuelle
 
 Wird eine Seite bearbeitet, die einem oder mehreren [Workflows](/help/sites-authoring/workflows.md) unterliegt, wird oben im Bildschirm eine Benachrichtigungsleiste mit einem entsprechenden Hinweis angezeigt.
 
-![Workflow-Benachrichtigung](assets/screen_shot_2018-03-22at111739.png)
+![Benachrichtigung für Workflows](assets/screen_shot_2018-03-22at111739.png)
 
 >[!NOTE]
 >
@@ -104,21 +104,21 @@ In der Benachrichtigung ist der Workflow aufgeführt, dem die Seite zugeordnet i
 
 * **Fertig** - Öffnet die **Arbeitselement abschließen** Dialogfeld
 
-* **Delegieren** - Öffnet die **Arbeitselement abschließen** Dialogfeld
+* **Delegieren**: Öffnet das Dialogfeld **Arbeitselement fertigstellen**.
 
 * **Details anzeigen**: Öffnet das Fenster **Details** des entsprechenden Workflows.
 
-Das Abschließen und Delegieren von Workflow-Schritten über die Benachrichtigungsleiste funktioniert wie bei einem [Teilnehmen an Workflows](/help/sites-authoring/workflows-participating.md) aus dem Benachrichtigungs-Posteingang.
+Das Fertigstellen und Delegieren von Workflow-Schritten über die Benachrichtigungsleiste erfolgt auf die gleiche Art und Weise wie beim [Teilnehmen an Workflows](/help/sites-authoring/workflows-participating.md) über den Benachrichtigungs-Posteingang.
 
-Wenn die Seite mehreren Workflows unterliegt, wird die Anzahl der Workflows am rechten Ende der Benachrichtigung zusammen mit Pfeiltasten angezeigt, sodass Sie durch die Workflows scrollen können.
+Wenn die Seite mehreren Workflows unterliegt, werden ganz rechts in der Benachrichtigung die Anzahl der Workflows sowie Pfeilschaltflächen angezeigt, über die Sie durch die einzelnen Workflows scrollen können.
 
 ![Benachrichtigung bezüglich der Anzahl an Workflows](assets/chlimage_1-122.png)
 
 ## Komponenten-Platzhalter {#component-placeholder}
 
-Der Komponenten-Platzhalter zeigt an, wo eine Komponente platziert wird, wenn Sie sie per Drag-and-Drop ablegen – oberhalb der Komponente, über der sich der Mauszeiger gerade befindet:
+Der Komponenten-Platzhalter zeigt an, wo eine Komponente platziert wird, wenn Sie sie ablegen – oberhalb der Komponente, über der sich der Mauszeiger gerade befindet:
 
-* Beim Hinzufügen einer Komponente zur Seite (Ziehen aus dem Komponenten-Browser):
+* Wenn Sie eine Komponente (durch Ziehen aus dem Komponenten-Browser) zur Seite hinzufügen:
 
   ![Hinzufügen einer neuen Komponente](assets/screen_shot_2018-03-22at111928.png)
 
@@ -130,7 +130,7 @@ Der Komponenten-Platzhalter zeigt an, wo eine Komponente platziert wird, wenn Si
 
 ### Einfügen einer Komponente aus dem Komponenten-Browser {#inserting-a-component-from-the-components-browser}
 
-Sie können eine Komponente mit dem [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser). Der [Komponenten-Platzhalter](#component-placeholder) zeigt an, wo die Komponente platziert wird:
+Sie können eine Komponente mit dem [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser) hinzufügen. Der [Komponenten-Platzhalter](#component-placeholder) zeigt an, wo die Komponente platziert wird:
 
 1. Öffnen Sie die Seite im Modus [**Bearbeiten**](/help/sites-authoring/author-environment-tools.md#page-modes).
 1. Öffnen Sie den [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser).
@@ -140,22 +140,22 @@ Sie können eine Komponente mit dem [Komponenten-Browser](/help/sites-authoring/
 
 >[!NOTE]
 >
->Auf einem Mobilgerät füllt der Komponenten-Browser den gesamten Bildschirm aus. Sobald Sie mit dem Ziehen einer Komponente beginnen, wird der Browser geschlossen, um die Seite erneut anzuzeigen, damit Sie die Komponente platzieren können.
+>Auf Mobilgeräten nimmt der Komponenten-Browser den gesamten Bildschirm ein. Sobald Sie eine Komponente per Drag-and-Drop auswählen, wird der Browser geschlossen, sodass Sie die Komponente auf der Seite ablegen können.
 
 ### Einfügen einer Komponente aus dem Absatzsystem {#inserting-a-component-from-the-paragraph-system}
 
-Sie können eine Komponente mit dem **Komponenten hierher ziehen** Feld des Absatzsystems:
+Sie können eine Komponente durch das Feld **Komponenten hierher ziehen** des Absatzsystems hinzufügen.
 
 1. Öffnen Sie die Seite im Modus [**Bearbeiten**](/help/sites-authoring/author-environment-tools.md#page-modes).
-1. Es gibt zwei Möglichkeiten, eine Komponente aus dem Absatzsystem auszuwählen und hinzuzufügen:
+1. Komponenten können auf zwei Arten aus dem Absatzsystem ausgewählt und hinzugefügt werden:
 
-   * Wählen Sie die Option **Komponente einfügen** (+) aus der Symbolleiste einer vorhandenen Komponente oder aus dem Feld **Komponenten hierherziehen**.
+   * Wählen Sie die Option **Komponente einfügen** (+) aus der Symbolleiste einer vorhandenen Komponente oder das Feld **Komponenten hierher ziehen**.
 
-   ![Komponentenauswahl einfügen](assets/screen_shot_2018-03-22at112536.png)
+   ![Einfügen der Komponentenauswahl](assets/screen_shot_2018-03-22at112536.png)
 
-   * Wenn Sie sich auf einem Desktop-Gerät befinden, können Sie auf das **Komponenten hierher ziehen** ankreuzen.
+   * Wenn Sie ein Desktop-Gerät verwenden, können Sie die Aktion per Doppelklick auf das Feld **Komponenten hierher ziehen** durchführen.
 
-   Die **Neue Komponente einfügen** wird geöffnet, in dem Sie die gewünschte Komponente auswählen können:
+   Das Dialogfeld **Neue Komponente einfügen** wird geöffnet, in dem Sie die erforderliche Komponente auswählen können:
 
    ![Neue Komponente einfügen](assets/screen_shot_2018-03-22at112650.png)
 
@@ -163,9 +163,9 @@ Sie können eine Komponente mit dem **Komponenten hierher ziehen** Feld des Absa
 
 ### Einfügen einer Komponente mit dem Assets-Browser {#inserting-a-component-using-the-assets-browser}
 
-Sie können auch eine Komponente zur Seite hinzufügen, indem Sie ein Asset aus dem [Asset-Browser](/help/sites-authoring/author-environment-tools.md#assets-browser). Dadurch wird automatisch eine Komponente des entsprechenden Typs erstellt (und das Asset enthält).
+Sie können auch eine Komponente zur Seite hinzufügen, indem Sie ein Asset aus dem [Asset-Browser](/help/sites-authoring/author-environment-tools.md#assets-browser) ziehen. Dadurch wird automatisch eine Komponente des entsprechenden Typs erstellt, die das Asset enthält.
 
-Dies gilt für die folgenden Asset-Typen (einige hängen vom Seiten-/Absatzsystem ab):
+Dies gilt für folgende Asset-Typen (einige sind von der Seite/dem Absatzsystem abhängig):
 
 <table>
  <tbody>
@@ -204,71 +204,71 @@ So erstellen Sie eine Komponente, indem Sie einen der obigen Asset-Typen ziehen:
 
 1. Öffnen Sie die Seite im Modus [**Bearbeiten**](/help/sites-authoring/author-environment-tools.md#page-modes).
 1. Öffnen Sie den [Asset-Browser](/help/sites-authoring/author-environment-tools.md#assets-browser).
-1. Ziehen Sie die benötigte Komponente an die passende Position. Die [Komponenten-Platzhalter](#component-placeholder) zeigt an, wo die Komponente positioniert ist.
+1. Ziehen Sie die benötigte Komponente an die passende Position. Der [Komponenten-Platzhalter](#component-placeholder) zeigt an, wo die Komponente platziert wird.
 
    Eine für den Asset-Typ geeignete Komponente wird am erforderlichen Speicherort erstellt und enthält das ausgewählte Asset.
 
-1. [Bearbeiten](#editmovecopypastedelete) die Komponente, falls erforderlich.
+1. [Bearbeiten](#editmovecopypastedelete) Sie bei Bedarf die Komponente.
 
 >[!NOTE]
 >
->Auf einem Mobilgerät füllt der Asset-Browser den gesamten Bildschirm aus. Wenn Sie mit dem Ziehen eines Assets beginnen, wird der Browser geschlossen, um die Seite erneut anzuzeigen, damit Sie das Asset platzieren können.
+>Auf Mobilgeräten nimmt der Asset-Browser den gesamten Bildschirm ein. Sobald Sie ein Asset per Drag-and-Drop auswählen, wird der Browser geschlossen, sodass Sie das Asset auf der Seite ablegen können.
 
-Wenn Sie beim Durchsuchen der Assets feststellen, dass Sie an einem Asset eine schnelle Änderung vornehmen müssen, klicken Sie auf das Bearbeitungssymbol neben dem Namen des Assets, um den [Asset-Editor](/help/assets/manage-assets.md).
+Wenn Sie beim Durchsuchen der Assets feststellen, dass Sie an einem Asset eine schnelle Änderung vornehmen müssen, klicken Sie auf das Bearbeitungssymbol neben dem Namen des Assets, um den [Asset-Editor](/help/assets/manage-assets.md) zu starten.
 
 ![Bearbeitungssymbol](assets/screen_shot_2018-03-22at112735.png)
 
 ## Bearbeiten/Konfigurieren/Kopieren/Ausschneiden/Löschen/Einfügen {#edit-configure-copy-cut-delete-paste}
 
-Wenn Sie eine Komponente auswählen, wird die Symbolleiste geöffnet. Dadurch erhalten Sie Zugriff auf verschiedene Aktionen, die für die Komponente ausgeführt werden können.
+Wenn Sie eine Komponente auswählen, wird die Symbolleiste geöffnet. Damit können Sie verschiedene Aktionen für die Komponente auswählen.
 
-Die tatsächlichen für die Benutzenden verfügbaren Aktionen werden abhängig von der jeweiligen Situation angezeigt, sodass hier u. U. nicht alle möglichen Aktionen beschrieben werden.
+Die tatsächlich für die Benutzenden verfügbaren Aktionen werden abhängig von der jeweiligen Situation angezeigt, sodass hier u. U. nicht alle möglichen Aktionen beschrieben werden.
 
-![Komponenten-Symbolleistenoptionen](assets/screen_shot_2018-03-22at112909.png)
+![Optionen der Komponenten-Symbolleiste](assets/screen_shot_2018-03-22at112909.png)
 
 * **Bearbeiten**
 
-  [Abhängig vom Komponententyp](/help/sites-authoring/default-components.md) können Sie hierüber den [Inhalt der Komponente bearbeiten](#edit-content). Häufig wird eine Symbolleiste bereitgestellt.
+  [Abhängig vom Komponententyp](/help/sites-authoring/default-components.md) können Sie hiermit den [Inhalt der Komponente bearbeiten](#edit-content). Häufig wird eine Symbolleiste bereitgestellt.
 
   ![Bearbeiten](do-not-localize/screen_shot_2018-03-22at112936.png)
 
 * **Konfigurieren**
 
-  [Abhängig vom Komponententyp](/help/sites-authoring/default-components.md) Auf diese Weise können Sie die Eigenschaften der Komponente bearbeiten und konfigurieren. Häufig wird ein Dialogfeld geöffnet.
+  [Abhängig vom Komponententyp](/help/sites-authoring/default-components.md) können Sie hiermit die Eigenschaften der Komponente bearbeiten und konfigurieren. Häufig wird ein Dialogfeld geöffnet.
 
   ![Konfigurieren](do-not-localize/screen_shot_2018-03-22at112955.png)
 
 * **Kopieren**
 
-  Dadurch wird die Komponente in die Zwischenablage kopiert. Die ursprüngliche Komponente bleibt nach dem Einfügen erhalten.
+  Kopiert die Komponente in die Zwischenablage. Die ursprüngliche Komponente bleibt nach dem Einfügen erhalten.
 
   ![Kopieren](do-not-localize/screen_shot_2018-03-22at113000.png)
 
 * **Ausschneiden**
 
-  Dadurch wird die Komponente in die Zwischenablage kopiert. Nach dem Einfügen wird die ursprüngliche Komponente entfernt.
+  Kopiert die Komponente in die Zwischenablage. Nach dem Einfügen wird die ursprüngliche Komponente entfernt.
 
   ![Ausschneiden](assets/screen_shot_2018-03-22at113007.png)
 
 * **Löschen**
 
-  Dadurch wird die Komponente mit Ihrer Bestätigung aus der Seite gelöscht.
+  Löscht die Komponente von der Seite. Sie werden dazu aufgefordert, die Aktion zu bestätigen.
 
   ![Löschen](do-not-localize/screen_shot_2018-03-22at113012.png)
 
 * **Komponente einfügen**
 
-  Dadurch wird das Dialogfeld geöffnet zu [Komponente hinzufügen](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
+  Dadurch wird das Dialogfeld für das [Hinzufügen einer neuen Komponente](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system) geöffnet.
 
   ![Komponente einfügen](do-not-localize/screen_shot_2018-03-22at113017.png)
 
 * **Einfügen**
 
-  Dadurch wird die Komponente aus der Zwischenablage auf der Seite eingefügt. Ob das Original erhalten bleibt, hängt davon ab, ob Sie das Kopieren oder Ausschneiden verwendet haben.
+  Fügt die Komponente aus der Zwischenablage in die Seite ein. Ob das Original erhalten bleibt, hängt davon ab, ob Sie „Kopieren“ oder „Ausschneiden“ verwendet haben.
 
    * Sie können Komponenten auf derselben oder einer anderen Seite einfügen.
-   * Das eingefügte Element wird über dem Element eingefügt, auf dem Sie die Einfügeaktion auswählen.
-   * Die Aktion Einfügen wird nur angezeigt, wenn sich Inhalt in der Zwischenablage befindet.
+   * Das eingefügte Element wird über dem Element eingefügt, das bei der Einfügeaktion aktiv ist.
+   * Die Option zum Einfügen wird nur angezeigt, wenn sich ein Inhalt in der Zwischenablage befindet.
 
   ![Einfügen](assets/screen_shot_2018-03-22at113553.png)
 
@@ -278,31 +278,31 @@ Die tatsächlichen für die Benutzenden verfügbaren Aktionen werden abhängig v
 
 * **Gruppe**
 
-  Damit können Sie mehrere Komponenten gleichzeitig auswählen. Dasselbe kann auf einem Desktop-Gerät durch **Strg+Klicken** bzw. **Befehl+Klicken** erreicht werden.
+  Mit dieser Aktion können Sie mehrere Komponenten gleichzeitig auswählen. Dasselbe kann auf einem Desktop-Gerät durch **Strg+Klicken** bzw. **Befehl+Klicken** erreicht werden.
 
   ![Gruppe](do-not-localize/screen_shot_2018-03-22at113240.png)
 
 * **Übergeordnetes Element**
 
-  Damit können Sie die übergeordnete Komponente der ausgewählten Komponente auswählen.
+  Hierüber können Sie die Komponente auswählen, die der ausgewählten Komponente übergeordnet ist.
 
   ![Übergeordnetes Element](assets/screen_shot_2018-03-22at113028.png)
 
 * **Layout**
 
-  Auf diese Weise können Sie die [layout](/help/sites-authoring/editing-content.md#edit-component-layout) der ausgewählten Komponente. Dies gilt nur für die ausgewählte Komponente und aktiviert nicht den [Layout-Modus](/help/sites-authoring/author-environment-tools.md#page-modes) für die gesamte Seite.
+  Hierüber können Sie das [Layout](/help/sites-authoring/editing-content.md#edit-component-layout) der ausgewählten Komponente ändern. Dies gilt nur für die ausgewählte Komponente und aktiviert nicht den [Layout-Modus](/help/sites-authoring/author-environment-tools.md#page-modes) für die gesamte Seite.
 
   ![Layout](do-not-localize/screen_shot_2018-03-22at113044.png)
 
-* **In Experience Fragment-Variante konvertieren**
+* **Umwandeln in eine Experience Fragment-Variante**
 
-  Auf diese Weise können Sie eine [Experience Fragment](/help/sites-authoring/experience-fragments.md) aus der ausgewählten Komponente oder fügen Sie sie einem vorhandenen Experience Fragment hinzu.
+  Hierüber können Sie ein [Experience Fragment](/help/sites-authoring/experience-fragments.md) über die ausgewählte Komponente erstellen oder zu einem bestehenden Experience Fragment hinzufügen.
 
   ![In Experience-Fragment-Variante umwandeln](do-not-localize/screen_shot_2018-03-22at113033.png)
 
 ## Bearbeiten (Inhalt) {#edit-content}
 
-Es gibt zwei Methoden zum Hinzufügen oder Bearbeiten von Inhalten in Komponenten:
+Für das Hinzufügen oder Bearbeiten von Inhalten in Komponenten sind zwei Verfahren verfügbar:
 
 * Öffnen Sie das [Komponentendialogfeld für die Bearbeitung](#component-edit-dialog).
 * [Ziehen Sie ein Asset](#draganddropintocomponent) aus dem Asset-Browser, um Inhalt direkt hinzuzufügen.
@@ -311,7 +311,7 @@ Es gibt zwei Methoden zum Hinzufügen oder Bearbeiten von Inhalten in Komponente
 
 Sie können eine Komponente öffnen, um den Inhalt zu bearbeiten, indem Sie das Symbol [„Bearbeiten“ (Stiftsymbol) in der Komponenten-Symbolleiste](#edit-configure-copy-cut-delete-paste) verwenden.
 
-Die genauen Bearbeitungsoptionen hängen von der Komponente ab. Bei einigen Komponenten: [Alle Aktionen sind nur im Vollbildmodus verfügbar.](#edit-content-full-screen-mode). Beispiel:
+Die exakten Bearbeitungsoptionen hängen von der jeweiligen Komponente ab. Für einige Komponenten sind [alle Aktionen nur im Vollbildmodus verfügbar](#edit-content-full-screen-mode). Beispiel:
 
 * [Textkomponente](/help/sites-authoring/rich-text-editor.md#main-pars-title-24)
 
@@ -326,15 +326,15 @@ Die genauen Bearbeitungsoptionen hängen von der Komponente ab. Bei einigen Komp
   >Die Bearbeitung funktioniert nicht bei leeren Bildkomponenten.
   >
   >
-  >[Ziehen oder Hochladen eines Bildes (mithilfe der Konfiguration)](/help/sites-authoring/default-components-foundation.md#image) vor der Bearbeitung.
+  >[Ziehen Sie ein Bild per Drag-and-Drop oder laden Sie es hoch (mithilfe von „Konfigurieren“)](/help/sites-authoring/default-components-foundation.md#image), bevor Sie es bearbeiten können.
 
 * Bildkomponente – Vollbild
 
-  [Der Wechsel in den Vollbildmodus](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) für die Bildkomponente bietet mehr Platz zum Bearbeiten des Bildes und zeigt zusätzliche Bearbeitungsoptionen wie **Karte starten** und **Zoom zurücksetzen**. Außerdem können im Vollbildmodus Zuschnittvoreinstellungen ausgewählt werden.
+  [Der Wechsel in den Vollbildmodus](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) für die Bildkomponente bietet mehr Platz zum Bearbeiten des Bildes und zeigt zusätzliche Bearbeitungsoptionen wie **Map starten** und **Zoom zurücksetzen**. Außerdem können im Vollbildmodus Zuschnittvoreinstellungen ausgewählt werden.
 
-  ![Vollbild der Bildkomponente](assets/screen_shot_2018-03-22at120529.png)
+  ![Bildkomponente – Vollbild](assets/screen_shot_2018-03-22at120529.png)
 
-* Bei Komponenten, die aus mehr als einer grundlegenden Komponente bestehen, etwa die [Basiskomponente für Text und Bild](/help/sites-authoring/default-components-foundation.md#text-image), werden Sie zunächst dazu aufgefordert, die gewünschten Bearbeitungsoptionen zu bestätigen:
+* Bei Komponenten, die aus mehr als einer grundlegenden Komponente bestehen, etwa der [Foundation-Komponente für Text und Bild](/help/sites-authoring/default-components-foundation.md#text-image), werden Sie zunächst dazu aufgefordert, die gewünschten Bearbeitungsoptionen zu bestätigen:
 
   ![Bearbeitungsoptionen für Komponenten](assets/chlimage_1-123.png)
 
@@ -356,13 +356,13 @@ Für alle Komponenten kann der Vollbildmodus über das folgende Symbol gestartet
 
 ![Vollbildmodus bearbeiten](do-not-localize/chlimage_1-20.png)
 
-Z. B. die Komponente **Text**:
+Z. B. die **Textkomponente**:
 
 ![Texteditor](assets/screen_shot_2018-03-22at121616.png)
 
 >[!NOTE]
 >
->Für einige Komponenten stehen im Vollbildmodus mehr Optionen zur Verfügung als im integrierten Editor.
+>Für einige Komponenten sind im Vollbildmodus mehr Optionen verfügbar als im integrierten Editor.
 
 ## Verschieben einer Komponente {#moving-a-component}
 
@@ -371,7 +371,7 @@ So verschieben Sie eine Absatzkomponente:
 1. Wählen Sie den zu verschiebenden Absatz aus, indem Sie ihn drücken und halten oder klicken und halten.
 1. Ziehen Sie den Absatz an die neue Position. AEM zeigt an, wo der Absatz abgelegt werden kann. Legen Sie ihn an der gewünschten Position ab.
 
-   ![Absatzkomponente verschieben](assets/screen_shot_2018-03-22at121821.png)
+   ![Verschieben einer Absatzkomponente](assets/screen_shot_2018-03-22at121821.png)
 
 1. Der Absatz wird verschoben.
 
@@ -381,9 +381,9 @@ So verschieben Sie eine Absatzkomponente:
 
 ## Bearbeiten des Komponenten-Layouts {#edit-component-layout}
 
-Statt wiederholt von &quot;Bearbeiten&quot;zu wechseln [Layout-Modus](/help/sites-authoring/responsive-layout.md) Um eine Komponente anzupassen, können Sie die **Layout** -Aktion für eine Komponente verwenden, um das Layout dieser Komponente zu ändern. Dadurch sparen Sie Zeit, da Sie den Bearbeitungsmodus nicht verlassen müssen.
+Wenn Sie eine Komponente anpassen möchten, müssen Sie nicht ständig zwischen dem Bearbeitungs- und dem [Layout-Modus](/help/sites-authoring/responsive-layout.md) hin- und herwechseln, sondern mithilfe der **Layout**-Aktion können Sie das Layout einer Komponente ebenfalls ändern. Dadurch sparen Sie Zeit, da Sie den Bearbeitungsmodus nicht verlassen müssen.
 
-1. Wenn in **Bearbeiten** -Modus der Sites-Konsole wird bei Auswahl einer Komponente die Symbolleiste der Komponente angezeigt.
+1. In der Sites-Konsole wird im **Bearbeitungsmodus** durch Auswählen einer Komponente die zugehörige Symbolleiste für die Komponente angezeigt.
 
    ![Bearbeitungsmodus im Formular](assets/screen_shot_2018-03-22at133756.png)
 
@@ -399,23 +399,23 @@ Statt wiederholt von &quot;Bearbeiten&quot;zu wechseln [Layout-Modus](/help/site
 
    ![Formularvorschau auf mehreren Geräten](assets/screen_shot_2018-03-22at133843.png)
 
-   Jetzt können Sie Änderungen am Layout der Komponente auf die gleiche Art und Weise vornehmen wie im [Layout-Modus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
+   Sie können jetzt Änderungen am Layout der Komponente auf die gleiche Art und Weise vornehmen wie im [Layout-Modus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
 
-1. Nachdem Sie die erforderlichen Layoutänderungen vorgenommen haben, klicken Sie auf **Schließen** im Aktionsmenü der Komponente, um die Änderung des Layouts der Komponente zu beenden. In der Komponenten-Symbolleiste stehen nun wieder die Standard-Bearbeitungsfunktionen zur Verfügung.
+1. Wenn Sie alle notwendigen Layout-Änderungen vorgenommen haben, klicken Sie im Aktionsmenü der Komponente auf die Schaltfläche **Schließen**, um die Layout-Änderung zu beenden. In der Komponenten-Symbolleiste stehen nun wieder die Standard-Bearbeitungsfunktionen zur Verfügung.
 
    ![Schließen](do-not-localize/screen_shot_2018-03-22at133920.png)
 
 >[!NOTE]
 >
->Die Layout-Aktion ist immer auf die jeweils ausgewählte Komponente beschränkt. Wenn Sie beispielsweise das Layout einer Komponente bearbeiten und dann eine andere Komponente auswählen, wird für die neu ausgewählte Komponente die standardmäßige Bearbeitungssymbolleiste (nicht die Layout-Symbolleiste) angezeigt. Die Größenänderungsgriffe und die Emulator-Symbolleiste werden nicht mehr angezeigt.
+>Die Layout-Aktion ist immer auf die jeweils ausgewählte Komponente beschränkt. Wenn Sie z. B. das Layout einer Komponente bearbeiten und dann eine andere Komponente auswählen, wird für die neu ausgewählte Komponente die standardmäßige Bearbeitungssymbolleiste und nicht die Layout-Symbolleiste angezeigt. Die Ziehpunkte zur Größenanpassung und die Emulator-Symbolleiste werden nicht mehr angezeigt.
 >
->Wenn Sie das Gesamtlayout der Seite mit Auswirkungen auf mehrere Komponenten bearbeiten müssen, wechseln Sie zur [Layout-Modus](/help/sites-authoring/responsive-layout.md).
+>Um das allgemeine Layout für die Seite zu bearbeiten, d. h. über mehrere Komponenten hinweg, wechseln Sie in den [Layout-Modus](/help/sites-authoring/responsive-layout.md).
 
 ## Vererbte Komponenten {#inherited-components}
 
 Vererbte Komponenten können sich aus diversen Szenarien ergeben, wie:
 
-* [Multi-Site-Management](/help/sites-administering/msm.md)
+* [Verwaltung mehrerer Sites](/help/sites-administering/msm.md)
 * [Launch](/help/sites-authoring/launches.md) (wenn auf einer Live Copy basierend).
 * Spezifische Komponenten, z. B. das vererbte Absatzsystem in Geometrixx.
 
@@ -431,7 +431,7 @@ Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Abhängig v
 
   ![Vererbung abbrechen](do-not-localize/screen_shot_2018-03-22at134406.png)
 
-  Oder aktivieren Sie die Vererbung erneut, wenn sie bereits abgebrochen wurde:
+  Alternativ können Sie die ggf. bereits abgebrochene Vererbung erneut aktivieren:
 
   ![Vererbung erneut aktivieren](do-not-localize/screen_shot_2018-03-22at134417.png)
 
@@ -441,7 +441,7 @@ Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Abhängig v
 
 * **Ein vererbtes Absatzsystem**
 
-  Das Konfigurationsdialogfeld. Beispielsweise wie beim vererbten Absatzsystem:
+  Das Dialogfeld „Konfiguration“. Beispielsweise wie beim vererbten Absatzsystem:
 
   ![Vererbtes Absatzsystem](assets/chlimage_1-124.png)
 
@@ -458,9 +458,9 @@ Durch Auswählen der Seite in der [Spaltenansicht](/help/sites-authoring/basic-h
 Mit dem [Seitenmodus „Live Copy-Status“](/help/sites-authoring/author-environment-tools.md#page-modes) erhalten Sie einen schnellen Überblick über den Live Copy-Status und darüber, welche Komponenten übernommen bzw. nicht übernommen wurden:
 
 * Grüner Rahmen: Vererbt
-* Rosa Rahmen: Vererbung wird abgebrochen
+* Pinkfarbener Rahmen: Vererbung wurde abgebrochen
 
-Beispiel:
+Zum Beispiel:
 
 ![Live Copy-Vererbungsstatus](assets/screen_shot_2018-03-22at134820.png)
 
@@ -489,11 +489,11 @@ Für die Anzeige einer Seitenvorschau stehen zwei Optionen zur Verfügung:
 
 ### Vorschaumodus {#preview-mode}
 
-Beim Bearbeiten von Inhalten können Sie mithilfe der Vorschau eine Vorschau der Seite anzeigen [mode](/help/sites-authoring/author-environment-tools.md#page-modes). In diesem Modus haben Sie folgende Möglichkeiten:
+Beim Bearbeiten von Inhalt können Sie mithilfe des [Vorschaumodus](/help/sites-authoring/author-environment-tools.md#page-modes) eine Vorschau der Seite anzeigen. In diesem Modus haben Sie folgende Möglichkeiten:
 
-* Verbergen Sie verschiedene Bearbeitungsmechanismen, damit Sie eine Schnellansicht dazu erhalten, wie die Seite beim Veröffentlichen angezeigt wird.
+* Blenden Sie verschiedene Bearbeitungsmechanismen aus, damit Sie eine Schnellansicht darüber erhalten, wie die Seite veröffentlicht aussehen wird.
 * Verwenden Sie Links zur Navigation.
-* Sie **not** den Seiteninhalt aktualisieren.
+* Der Seiteninhalt wird **nicht** aktualisiert.
 
 Bei der Bearbeitung einer Seite können Sie den Vorschaumodus über das Symbol rechts oben im Seiteneditor aufrufen:
 
@@ -501,11 +501,11 @@ Bei der Bearbeitung einer Seite können Sie den Vorschaumodus über das Symbol r
 
 ### Als veröffentlicht anzeigen {#view-as-published}
 
-Die Option **Als veröffentlicht anzeigen** ist über das Menü [Seiteninformationen](/help/sites-authoring/author-environment-tools.md#page-information) verfügbar. Dadurch wird die Seite in einer neuen Registerkarte geöffnet, der Inhalt aktualisiert und die Seite wird genau so angezeigt, wie sie bei der Veröffentlichung erscheint.
+Die Option **Als veröffentlicht anzeigen** ist über das Menü [Seiteninformationen](/help/sites-authoring/author-environment-tools.md#page-information) verfügbar. Mit dieser Option wird die Seite in einer neuen Registerkarte geöffnet, ihr Inhalt aktualisiert und die Seite so angezeigt, wie sie später nach der Veröffentlichung aussieht.
 
 ## Sperren einer Seite {#locking-a-page}
 
-AEM ermöglicht das Sperren einer Seite, sodass niemand außer Ihnen den Inhalt ändern kann. Dies ist nützlich, wenn Sie zahlreiche Bearbeitungen an einer bestimmten Seite vornehmen oder wenn Sie eine Seite für eine kurze Zeit einfrieren müssen.
+AEM bietet Ihnen die Möglichkeit, eine Seite zu sperren, sodass niemand außer Ihnen den Inhalt bearbeiten kann. Dies ist nützlich, wenn Sie zahlreiche Änderungen an einer bestimmten Seite vornehmen oder eine Seite für kurze Zeit einfrieren möchten.
 
 Eine Seite kann wie folgt gesperrt werden:
 
@@ -518,12 +518,12 @@ Eine Seite kann wie folgt gesperrt werden:
 
 * **Seiteneditor**
 
-   1. Um das Menü zu öffnen, wählen Sie die **Seiteninformationen** Symbol.
+   1. Wählen Sie das Symbol für die **Seiteninformationen** aus, um das Menü zu öffnen.
    1. Wählen Sie die Option **Seite sperren** aus.
 
 Nach der Sperrung werden die Informationen der Konsolenansicht aktualisiert und beim Bearbeiten wird in der Symbolleiste ein Vorhängeschlosssymbol angezeigt.
 
-![Sperrsymbol](assets/screen_shot_2018-03-22at135010.png)
+![Vorhängeschlosssymbol](assets/screen_shot_2018-03-22at135010.png)
 
 >[!CAUTION]
 >
@@ -533,7 +533,7 @@ Nach der Sperrung werden die Informationen der Konsolenansicht aktualisiert und 
 
 ## Entsperren einer Seite {#unlocking-a-page}
 
-Das Entsperren einer Seite ähnelt dem [Sperren der Seite](#locking-a-page). Wenn die Seite gesperrt ist, werden die Sperroptionen durch Aktionen zum Entsperren ersetzt.
+Das Entsperren einer Seite läuft ähnlich ab wie das [Sperren der Seite](#locking-a-page). Wenn die Seite gesperrt ist, werden die Sperroptionen durch Aktionen zum Entsperren ersetzt.
 
 Im Menü „Seiteninformationen“ steht dann die Option **Entsperren** zur Verfügung und das Vorhängeschlosssymbol in der Sites-Konsole wird durch ein **Entsperren-Symbol** ersetzt.
 
@@ -567,11 +567,11 @@ Mit den folgenden Symbolen können Sie eine Aktion rückgängig machen oder wied
 >
 >Ihre bzw. Ihr Systemadmin kann [verschiedene Aspekte der Funktionen zum Rückgängigmachen/Wiederholen](/help/sites-administering/config-undo.md) den Anforderungen Ihrer Instanz entsprechend konfigurieren.
 
-AEM speichert einen Verlauf der Aktionen, die Sie ausführen, sowie die Reihenfolge der Ausführung. Diese Funktion bedeutet, dass Sie mehrere Aktionen in der Reihenfolge, in der Sie sie ausgeführt haben, rückgängig machen und sie wiederholen können, um bei Bedarf eine oder mehrere Aktionen erneut anzuwenden.
+AEM speichert einen Verlauf der Aktionen, die Sie ausführen, sowie die Reihenfolge der Ausführung. Diese Funktion bedeutet, dass Sie mehrere Aktionen in der (umgekehrten) Reihenfolge ihrer Ausführung rückgängig machen und bei Bedarf die Aktionen wiederholen können, wenn Sie eine oder mehrere davon erneut anwenden möchten.
 
 Wenn ein Element auf der Inhaltsseite ausgewählt wird, gelten die Befehle „Rückgängig“ und „Wiederholen“ für das ausgewählte Element, also z. B. für eine Textkomponente.
 
-Das Verhalten der Befehle „Rückgängig“ und „Wiederherstellen“ ist ähnlich wie in anderen Software-Programmen. Verwenden Sie die Befehle, um den aktuellen Status Ihrer Web-Seite wiederherzustellen, während Sie über Inhalte entscheiden. Wenn Sie beispielsweise einen Textabsatz an eine Stelle auf der Seite verschoben haben, können Sie ihn mithilfe des Befehls zum Rückgängigmachen wieder zurück an die ursprüngliche Stelle verschieben. Falls Sie dann entscheiden, dass die vorherige Position besser war, verwenden Sie den Befehl „Wiederherstellen“, um „das Rückgängigmachen rückgängig zu machen“.
+Das Verhalten der Befehle „Rückgängig“ und „Wiederherstellen“ ist ähnlich wie in anderen Software-Programmen. Verwenden Sie die Befehle, um den letzten Zustand Ihrer Web-Seite wiederherzustellen, während Sie Entscheidungen über den Inhalt treffen. Wenn Sie beispielsweise einen Textabsatz an eine Stelle auf der Seite verschoben haben, können Sie ihn mithilfe des Befehls zum Rückgängigmachen wieder zurück an die ursprüngliche Stelle verschieben. Falls Sie dann entscheiden, dass die vorherige Position besser war, verwenden Sie den Befehl „Wiederherstellen“, um „das Rückgängigmachen rückgängig zu machen“.
 
 >[!NOTE]
 >
@@ -582,7 +582,7 @@ Das Verhalten der Befehle „Rückgängig“ und „Wiederherstellen“ ist ähn
 >* Sie können zum Rückgängigmachen und Wiederholen auch [Tastaturbefehle](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) verwenden.
 >
 
-Sie können die Optionen Rückgängig und Wiederherstellen für die folgenden Arten von Seitenänderungen verwenden:
+Sie können die folgenden Arten von Seitenänderungen rückgängig machen und wiederherstellen:
 
 * Hinzufügen, Bearbeiten, Entfernen und Verschieben von Absätzen
 * Bearbeitung von Absatzinhalten im Kontext
@@ -596,4 +596,4 @@ Für Formularfelder, die durch Formular-Komponenten erzeugt werden, dürfen beim
 
 >[!NOTE]
 >
->Änderungen an Dateien und Bildern können für einen Verlauf von mindestens zehn Stunden rückgängig gemacht werden. Über diese Zeit hinaus ist die Umkehrung der Veränderungen jedoch nicht garantiert. Ihre Admins können die Standardzeit von zehn Stunden ändern.
+>Änderungen an Dateien und Bildern können für einen Verlauf von mindestens zehn Stunden rückgängig gemacht werden. Bei länger zurückliegenden Änderungen ist dies unter Umständen nicht mehr möglich. Ihre Admins können die Standardzeit von zehn Stunden ändern.

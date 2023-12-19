@@ -10,7 +10,7 @@ exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '1829'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
@@ -81,7 +81,7 @@ So fügen Sie eine neue Komponente ein:
 
    Abhängig von Ihrer Produktionsumgebung können diese Optionen unterschiedlich sein. Ausführliche Informationen zu Komponenten finden Sie unter [Standardkomponenten](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
 
-1. Fügen Sie die gewünschte Komponente auf der Seite ein. Doppelklicken Sie dann auf den Absatz. Daraufhin wird ein Fenster geöffnet, in dem Sie Ihren Absatz konfigurieren und Inhalt hinzufügen können.
+1. Fügen Sie die gewünschte Komponente auf der Seite ein. Wenn Sie dann auf den Absatz doppelklicken, öffnet sich ein Fenster, in dem Sie Ihren Absatz konfigurieren und Inhalte hinzufügen können.
 
 ### Einfügen einer Komponente mit der Inhaltssuche {#inserting-a-component-using-the-content-finder}
 
@@ -211,7 +211,7 @@ Es gibt zwei Symbole im unteren Rand des Sidekicks, die für die Vorschau von Se
 
   ![Symbol „Bearbeiten“, dargestellt durch ein Bleistiftsymbol.](do-not-localize/chlimage_1-6.png)
 
-* Mit dem Lupensymbol können Sie den Vorschaumodus auswählen, in dem die Seite so angezeigt wird, wie sie in der Veröffentlichungsumgebung angezeigt wird (manchmal ist auch eine Seitenaktualisierung erforderlich):
+* Mit dem Lupensymbol können Sie den Vorschaumodus auswählen, in dem die Seite so angezeigt wird, wie sie in der Veröffentlichungsumgebung zu sehen sein wird (manchmal ist auch eine Aktualisierung der Seite erforderlich):
 
   ![Symbol „Vorschaumodus“, dargestellt durch ein Lupensymbol.](do-not-localize/chlimage_1-7.png)
 
@@ -221,7 +221,7 @@ Es gibt zwei Symbole im unteren Rand des Sidekicks, die für die Vorschau von Se
 
 ## Suchen und Ersetzen {#find-replace}
 
-Bei umfangreicheren Bearbeitungen desselben Satzes wird ein **[Suchen und Ersetzen](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** -Menüoption können Sie innerhalb eines Bereichs der Website nach mehreren Instanzen einer Zeichenfolge suchen und diese ersetzen.
+Für umfangreichere Bearbeitungen desselben Satzes können Sie mit der Menüoption **[Suchen und Ersetzen](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** nach mehreren Instanzen einer Zeichenfolge innerhalb eines Abschnitts der Website suchen und diese ersetzen.
 
 ## Sperren einer Seite {#locking-a-page}
 

@@ -6,19 +6,19 @@ exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 54%
+ht-degree: 73%
 
 ---
 
 # Assistent „Sprachkopie erstellen“{#language-copy-wizard}
 
-Der Sprachkopie-Assistent ist ein geführtes Erlebnis zum Erstellen und Verwenden einer mehrsprachigen Inhaltsstruktur. Es ist jetzt viel einfacher und schneller, eine Sprachkopie zu erstellen.
+Der Assistent „Sprachkopie erstellen“ führt Sie durch die Erstellung und Verwendung einer mehrsprachigen Inhaltsstruktur. Damit können Sie jetzt Sprachkopien viel schneller und einfacher erstellen.
 
 >[!NOTE]
 >
 >Der Benutzer muss Mitglied der Gruppe projects-administrators sein, um die Sprachkopie einer Site zu erstellen.
 
-So greifen Sie auf diesen Assistenten zu:
+Sie können wie folgt auf diesen Assistenten zugreifen:
 
 1. Wählen Sie in Sites eine Seite aus und klicken Sie auf Erstellen .
 
@@ -28,7 +28,7 @@ So greifen Sie auf diesen Assistenten zu:
 
    ![chlimage_1-10](assets/chlimage_1-10.jpeg)
 
-1. Die **Quelle auswählen** im Schritt des Assistenten können Sie Seiten hinzufügen/entfernen. Sie haben außerdem die Option, die Unterseiten ein- oder auszuschließen.
+1. Im Schritt **Quelle auswählen** des Assistenten können Sie Seiten hinzufügen/entfernen. Sie haben außerdem die Option, die Unterseiten ein- oder auszuschließen.
 
    ![chlimage_1-11](assets/chlimage_1-11.jpeg)
 

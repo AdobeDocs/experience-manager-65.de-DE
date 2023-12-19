@@ -10,7 +10,7 @@ exl-id: 108eb249-879b-4e4f-b431-8118b8656e62
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '244'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -38,4 +38,4 @@ Bevor Sie einen PreferencesManagerService-Vorgang für das User Management progr
 
 **Aufrufen der entsprechenden Rollen- oder Berechtigungsvorgänge**
 
-Nachdem Sie den Service-Client erstellt haben, können Sie dann die Voreinstellungs-Manager-Vorgänge aufrufen. Mit dem Dienstclient können Sie Berechtigungen lesen und festlegen.
+Nachdem Sie den Service-Client erstellt haben, können Sie dann die Voreinstellungs-Manager-Vorgänge aufrufen. Mit dem Service-Client können Sie Berechtigungen lesen und festlegen.

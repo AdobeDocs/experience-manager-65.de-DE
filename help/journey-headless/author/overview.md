@@ -4,8 +4,8 @@ description: Beginnen Sie hier mit einer geführten Tour durch die leistungsstar
 exl-id: b8cdbd0f-c034-4c9f-976f-5e39b1bd33bf
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 89%
+source-wordcount: '847'
+ht-degree: 95%
 
 ---
 
@@ -49,14 +49,14 @@ Informationen in dieser Journey können für andere Personen nützlich sein, ein
 
 Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folgenden Artikel vermitteln Ihnen Grundkenntnisse über Headless-Funktionen in AEM und bieten Links zu detaillierten technischen Dokumentationen.
 
-Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Daher empfiehlt Adobe, dass Sie, wenn Sie neu bei AEM sind, am Anfang beginnen und sequenziell fortfahren.
+Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Wenn für Sie Headless in AEM also neu ist, empfehlen wir Ihnen, am Anfang zu beginnen und nach und nach weiterzugehen.
 
 | Nummer | Artikel | Beschreibung |
 |---|---|---|
 | 0 | AEM Headless-Inhaltsautoren-Tour | Dieses Dokument |
 | 1 | [Authoring für AEM Headless – Einführung](introduction.md) | Eine Einführung in die Headless-Funktionen von Adobe Experience Manager und die Erstellung und Bearbeitung von Inhalten für Ihr Projekt. |
 | 2 | [Authoring-Grundlagen für Headless mit AEM](basics.md) | Erfahren Sie mehr über die Konzepte und Methoden des Authoring mit Inhaltsfragmenten für Ihr Headless-CMS. |
-| 3 | [Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten](references.md) | Erfahren Sie, wie Sie Verweise in Inhaltsfragmenten verwenden. Mit diesen können Sie auch mehrere Ebenen der Struktur für Ihr Headless-CMS mit verschachtelten Fragmenten erstellen und verwalten. |
+| 3 | [Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten](references.md) | Erfahren Sie, wie Sie Verweise in Inhaltsfragmenten verwenden. Mit diesen können Sie auch mithilfe von verschachtelten Fragmenten mehrere Strukturebenen für Ihr Headless-CMS erstellen und verwalten. |
 | 4 | [Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für Inhaltsfragmente](metadata-tagging.md) | Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für Inhaltsfragmente. |
 
 ## Wie geht es weiter {#what-is-next}
@@ -82,6 +82,6 @@ Daher sind die Journey so konzipiert, dass sie auf sich allein gestellt stehen. 
 * [AEM Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) – Diese angeleitete Tour bietet Ihnen eine Einführung zu den leistungsstarken und flexiblen Headless-Funktionen von AEM und deren Möglichkeiten. Sie veranschaulicht, wie Sie sie bei Ihrem ersten Headless-Entwicklungsprojekt nutzen können.
 * [Headless-Architekten-Tour](/help/journey-headless/architect/overview.md) – Beginnen Sie hier mit einer Einführung in die leistungsstarken, flexiblen Headless-Funktionen von Adobe Experience Manager und erfahren Sie, wie Sie Inhalte für Ihr Projekt modellieren können.
 * [Technische Dokumentation zu AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=de) – Wenn Sie bereits über ein solides Verständnis von AEM und Headless-Technologien verfügen, können Sie direkt unsere ausführlichen technischen Dokumente hinzuziehen.
-   * Ein [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
-* [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de) – Wenn Sie es vorziehen, durch praktisches Arbeiten zu lernen, und technisch versiert sind, können Sie unsere nach API und Framework geordneten praktischen Tutorials nutzen, in denen die Erstellung und Verwendung von Programmen auf der Grundlage von AEM Headless behandelt wird.
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
+   * Eine [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
+* [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de) – Wenn Sie es vorziehen, durch praktisches Arbeiten zu lernen, und technisch versiert sind, können Sie unsere nach API und Framework geordneten praktischen Tutorials nutzen, in denen die Erstellung und Verwendung von Anwendungen auf der Grundlage von AEM Headless behandelt wird.
+* [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)

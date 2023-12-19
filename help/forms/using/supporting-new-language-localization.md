@@ -1,6 +1,6 @@
 ---
 title: Unterstützung neuer Gebietsschemata zum Lokalisieren von adaptiven Formularen
-description: Mit AEM Forms können Sie neue Gebietsschemata zum Lokalisieren adaptiver Formulare hinzufügen. Die unterstützten Gebietsschemas sind standardmäßig Englisch, Französisch, Deutsch und Japanisch.
+description: Mit AEM Forms können Sie neue Gebietsschemata zum Lokalisieren von adaptiven Formularen hinzufügen. Die unterstützten Gebietsschemas sind standardmäßig Englisch, Französisch, Deutsch und Japanisch.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
@@ -10,8 +10,8 @@ role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
 source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 90%
+source-wordcount: '796'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 90%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
 ## Informationen zu Gebietsschema-Wörterbüchern {#about-locale-dictionaries}
@@ -28,7 +28,7 @@ Die Lokalisierung von adaptiven Formularen beruht auf zwei Arten von Gebietssche
 
 **Formularspezifisches Wörterbuch** Enthält Zeichenfolgen, die in adaptiven Formularen verwendet werden. Zum Beispiel Beschriftungen, Feldnamen, Fehlermeldungen, Hilfebeschreibungen usw. Wird für jedes Gebietsschema in Form eines Satzes von XLIFF-Dateien für die einzelnen Gebietsschemas verwaltet und ist unter `https://<host>:<port>/libs/cq/i18n/translator.html` verfügbar.
 
-**Globale Wörterbücher** In der AEM-Client-Bibliothek gibt es zwei globale Wörterbücher, die als JSON-Objekte verwaltet werden. Diese Wörterbücher enthalten Standardfehlermeldungen, Monatsnamen, Währungssymbole, Datums- und Uhrzeitmuster usw. Diese Wörterbücher finden Sie in CRXDe Lite unter /libs/fd/xfaforms/clientlibs/I18N. Diese Speicherorte enthalten für jedes Gebietsschema separate Ordner. Da globale Wörterbücher in der Regel nicht häufig aktualisiert werden, können Browser separate JavaScript-Dateien für jedes Gebietsschema zwischenspeichern und die Nutzung der Netzwerkbandbreite reduzieren, wenn auf demselben Server auf verschiedene adaptive Formulare zugegriffen wird.
+**Globale Wörterbücher** In der AEM-Client-Bibliothek gibt es zwei globale Wörterbücher, die als JSON-Objekte verwaltet werden. Diese Wörterbücher enthalten Standardfehlermeldungen, Monatsnamen, Währungssymbole, Datums- und Uhrzeitmuster usw. Diese Wörterbücher finden Sie in CRXDe Lite unter /libs/fd/xfaforms/clientlibs/I18N. Diese Speicherorte enthalten für jedes Gebietsschema separate Ordner. Da globale Wörterbücher in der Regel nicht oft aktualisiert werden, können Browser so separate JavaScript-Dateien für jedes Gebietsschema im Cache zwischenspeichern, was die Beanspruchung der Netzwerkbandbreite reduziert, wenn auf verschiedene adaptive Formulare auf demselben Server zugegriffen wird.
 
 ### Funktionsweise der Lokalisierung von adaptiven Formularen {#how-localization-of-adaptive-form-works}
 
@@ -38,8 +38,8 @@ Es gibt zwei Methoden, das Gebietsschema eines adaptiven Formulars zu identifizi
 
 * Überprüfung der folgenden Parameter in der angegebenen Reihenfolge:
 
-   * Abfrageparameter `afAcceptLang`
-Um das Browser-Gebietsschema von Benutzern zu überschreiben, können Sie den `afAcceptLang`-Abfrageparameter übergeben, um das Gebietsschema zu erzwingen. Beispielsweise die folgende URL, die zum Rendern des Formulars in japanischem Gebietsschema gezwungen ist:
+   * Anforderungsparameter `afAcceptLang`
+Um das Browser-Gebietsschema der Benutzenden zu überschreiben, können Sie den Anfrageparameter `afAcceptLang` übergeben, um das Gebietsschema zu erzwingen. Beispielsweise die folgende URL, die zum Rendern des Formulars in japanischem Gebietsschema gezwungen ist:
      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
    * Das für den Benutzer festgelegte Browser-Gebietsschema, das in der Abfrage mit dem `Accept-Language`-Header angegeben ist.
@@ -95,7 +95,7 @@ I18N.js
 
 ### Clientbibliothek für adaptive Formulare für ein Gebietsschema hinzufügen {#add-adaptive-form-client-library-for-a-locale-br}
 
-Erstellen Sie einen Knoten des Typs `cq:ClientLibraryFolder` under `etc/<folderHierarchy>`, wobei Kategorie `guides.I18N.<locale>` und Abhängigkeiten als `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` und `guide.common`. &quot;
+Erstellen Sie einen Knoten vom Typ `cq:ClientLibraryFolder` unter `etc/<folderHierarchy>` mit der Kategorie `guides.I18N.<locale>` und den Abhängigkeiten `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` und `guide.common`. 
 
 Fügen Sie die folgenden Dateien der Client-Bibliothek hinzu:
 

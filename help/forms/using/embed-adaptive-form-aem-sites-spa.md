@@ -9,13 +9,13 @@ exl-id: b549f176-409a-4d81-8c2b-73d0dd0c6649
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1107'
-ht-degree: 90%
+ht-degree: 94%
 
 ---
 
 # Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation in ein Einzelseiten-Programm von AEM Sites{#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-single-page-application}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/using/create-an-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 ## Übersicht {#overview}
 
@@ -98,7 +98,7 @@ Um eine Konfiguration oder Eigenschaft des eingebetteten adaptiven Formulars zu 
 Beachten Sie die folgenden Punkte, wenn Sie adaptive Formulare in AEM Sites-Seiten einbetten:
 
 * Die Kopf- und Fußzeile im Originalformular sind nicht im eingebetteten Formular enthalten.
-* Benutzerentwürfe und Übermittlungen von eingebetteten Formularen werden unterstützt und sind auf den Registerkarten &quot;Entwürfe&quot;und &quot;Gesendete Forms&quot;im Formularportal sichtbar.
+* Benutzerentwürfe und Übermittlungen von eingebetteten Formularen werden unterstützt und sind auf den entsprechenden Registerkarten im Formularportal sichtbar.
 * Die im Originalformular konfigurierte Übermittlungsaktion wird im eingebetteten Formular beibehalten.
-* Erlebnis-Targeting und im Originalformular konfigurierte A/B-Tests funktionieren im eingebetteten Formular nicht. Sie können jedoch auf der Sites-Seite das Erfahrungs-Targeting verwenden, um verschiedene Formulare auf der Grundlage von Benutzerprofilen anzuzeigen.
+* Die Experience Targeting- und A/B-Test-Konfigurationen im Originalformular funktionieren nicht im eingebetteten Formular. Sie können jedoch auf der Sites-Seite das Erfahrungs-Targeting verwenden, um verschiedene Formulare auf der Grundlage von Benutzerprofilen anzuzeigen.
 * Wenn Sie für das Originalformular Adobe Analytics konfiguriert haben, werden die Analysedaten des eingebetteten Formulars in Adobe Analytics erfasst. Sie sind jedoch nicht im Formularanalysebericht verfügbar.

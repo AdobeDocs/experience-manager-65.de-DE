@@ -1,11 +1,11 @@
 ---
 title: Produkt-Cockpit
-description: Arbeiten mit dem Produkt-Cockpit bietet einen einheitlichen Überblick über verknüpfte Produktkataloge und zugehörige Inhalte.
+description: Arbeiten mit dem Produkt-Cockpit , das einen einheitlichen Überblick über verknüpfte Produktkataloge und zugehörige Inhalte bietet.
 exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -33,7 +33,7 @@ Das Aktivieren von gestaffelten Katalogfunktionen erfordert eine Authentifizieru
 
 ## Öffnen des Produkt-Cockpits {#opening-product-cockpit}
 
-Der einfachste Weg, um auf das Produkt-Cockpit zuzugreifen, ist über das &#39;Commerce&#39;-Menü in AEM Hauptmenü. Es ist auch möglich, Omnisearch (Suche nach „Commerce“) zu verwenden oder `https://<yourAEMInstance>/commerce.html` zu öffnen.
+Der einfachste Weg, auf das Produkt-Cockpit zuzugreifen, ist über das Menü „Commerce“ im AEM-Hauptmenü. Es ist auch möglich, Omnisearch (Suche nach „Commerce“) zu verwenden oder `https://<yourAEMInstance>/commerce.html` zu öffnen.
 
 ![AEM-Menü](/help/commerce/cif/assets/aem-menu.png)
 

@@ -5,7 +5,7 @@ exl-id: 4c356aa6-ebd4-40b9-89e3-bc4519e4a7c5
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '402'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
@@ -16,24 +16,24 @@ ht-degree: 50%
 | AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
-Sie können OAuth 2.0-Client-Anmeldeinformationen verwenden, um AEM Forms in die Salesforce-Anwendung zu integrieren. OAuth 2.0-Client-Anmeldeinformationen sind eine standardmäßige und sichere Methode für die direkte Kommunikation ohne Benutzerbeteiligung.
+Sie können OAuth 2.0-Client-Anmeldeinformationen verwenden, um AEM Forms in die Salesforce-Anwendung zu integrieren. OAuth 2.0-Client-Anmeldeinformationen sind eine standardmäßige und sichere Methode für die direkte Kommunikation ohne Benutzerbeteiligung.
 
-![Workflow beim Festlegen der Kommunikation zwischen AEM Forms und Salesforce](/help/forms/using/assets/salesforce-workflow.png)
+![Workflow beim Festlegen der Kommunikation zwischen AEM Forms und Salesforce-Anwendung](/help/forms/using/assets/salesforce-workflow.png)
 
-AEM Forms tauscht die in der Salesforce Connect-Anwendung definierten Client-Anmeldeinformationen (Consumer Key und Consumer Secret) aus, um ein Zugriffstoken zu erhalten.
+AEM Forms tauscht die Client-Anmeldeinformationen (Consumer Key und Consumer Secret) aus, die in der mit Salesforce verbundenen Anwendung definiert sind, um ein Zugriffs-Token zu erhalten.
 
-Die Verwendung von OAuth 2.0-Client-Anmeldeinformationen für die Authentifizierung über die Authentifizierung für die Flussauthentifizierung des Autorisierungscodes bietet mehrere Vorteile:
+Die Verwendung von OAuth 2.0-Client-Anmeldeinformationen für die Authentifizierung hat gegenüber Authorization Code Flow mehrere Vorteile:
 
-* Die Authentifizierung mit OAuth 2.0-Client-Anmeldeinformationen ermöglicht mehr als fünf Verbindungen pro Benutzer.
-* AEM Datenquellenkonfiguration arbeitet weiterhin an der Deaktivierung, Zugriffsänderungen und Kennwortaktualisierung für einen AEM Benutzer.
+* Die Authentifizierung mit OAuth 2.0-Client-Anmeldeinformationen ermöglicht mehr als fünf Verbindungen pro Person.
+* Die AEM-Datenquellenkonfiguration arbeitet weiterhin an der Deaktivierung, Zugriffsänderungen und Kennwortaktualisierung für AEM-Benutzende.
 
 ## Voraussetzungen {#prerequisites}
 
-Bevor Sie die Kommunikation zwischen einer Salesforce-Anwendung und einer AEM Umgebung einrichten:
+Gehen Sie wie folgt vor, bevor Sie die Kommunikation zwischen einer Salesforce-Anwendung und einer AEM-Umgebung einrichten:
 
-* Erstellen Sie eine [Salesforce-verbundene App mit OAuth 2.0-Client-Anmeldefluss](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&amp;type=5) und einen reinen API-Benutzer für Ihr Unternehmen erstellen und das Consumer-Schlüssel- und das Consumer-Geheimnis für die App abrufen.
+* Erstellen Sie eine [mit Salesforce verbundene App mit OAuth 2.0 Client Credential Flow](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&amp;type=5) sowie eine reine API-Benutzerin bzw. einen reinen API-Benutzer für Ihre Organisation und rufen Sie Consumer Key und Consumer Secret für die App ab.
 
-* Stellen Sie sicher, dass Ihre Swagger-Datei entsprechend den APIs Ihres Unternehmens konfiguriert ist. Alternativ können Sie auch [Swagger-Datei erstellen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html?lang=de) von Grund auf neu, auf die Nutzung in Ihrer AEM-Umgebung zugeschnitten.
+* Stellen Sie sicher, dass Ihre Swagger-Datei entsprechend den APIs Ihrer Organisation konfiguriert ist. Sie können auch eine [Swagger-Datei komplett neu erstellen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html?lang=de), die auf die Nutzung in Ihrer AEM-Umgebung zugeschnitten ist.
 >[!NOTE]
 >
 > AEM 6.5 unterstützt nur Swagger 2.0-Dateispezifikationen.
@@ -67,4 +67,4 @@ Bevor Sie die Kommunikation zwischen einer Salesforce-Anwendung und einer AEM Um
 1. Klicken Sie auf **[!UICONTROL Verbindung testen]**.
 1. Wenn die Verbindung erfolgreich hergestellt wurde, klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]**.
 
-Jetzt können Sie [Formulardatenmodell erstellen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=de) , um die konfigurierte Datenquelle in Ihre adaptive Forms zu integrieren.
+Nun können Sie das [Formulardatenmodell erstellen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=de), um die konfigurierte Datenquelle in Ihre adaptiven Formulare zu integrieren.

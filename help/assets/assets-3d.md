@@ -125,7 +125,7 @@ Siehe auch [Vorschau von Assets über die Software-Schnittstelle](/help/assets/p
    | Anzeigen | Beschreibung | Mausaktion | Touchscreen-Aktion |
    | --- | --- | --- | --- |
    | **Kamera drehen** | Drehen Sie die Ansicht um die 3D-Szene und Objekte. | Klicken und ziehen Sie mit der linken Maustaste. | Drücken und ziehen Sie mit einem Finger. |
-   | **Kamera schwenken** | Schwenken Sie nach links, rechts, oben oder unten. | Klicken Sie mit der rechten Maustaste und ziehen Sie. | Drücken und ziehen Sie mit zwei Fingern. |
+   | **Kamera schwenken** | Schwenken Sie nach links, rechts, oben oder unten. | Rechtsklicken+Ziehen | Drücken und ziehen Sie mit zwei Fingern. |
    | **Kamera zoomen** | Zoomen Sie mit der Kamera in Bereiche der 3D-Szene bzw. aus diesen Bereichen heraus. | Scrollen Sie mit dem Mausrad. | Ziehen Sie per Pinch mit zwei Fingern. |
    | **Kamera neu zentrieren** | Zentrieren Sie die Kamera neu auf einen Punkt an einem Objekt in der 3D-Szene. | Doppelklicken. | Doppelklicken Sie. |
    | **Zurücksetzen** | Wählen Sie in der unteren rechten Ecke der Seite das Symbol „Zurücksetzen“, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen. |   |   |
@@ -158,7 +158,7 @@ Ein vollständig interaktives 3D-Asset, wie im **[!UICONTROL Vorschaumodus]** an
    | Anzeigen | Beschreibung | Mausaktion | Touchscreen-Aktion |
    | --- | --- | --- | --- |
    | **Kamera drehen** | Drehen Sie die Ansicht um die 3D-Szene und Objekte. | Klicken und ziehen Sie mit der linken Maustaste. | Drücken und ziehen Sie mit einem Finger. |
-   | **Kamera schwenken** | Schwenken Sie nach links, rechts, oben oder unten. | Klicken Sie mit der rechten Maustaste und ziehen Sie. | Drücken und ziehen Sie mit zwei Fingern. |
+   | **Kamera schwenken** | Schwenken Sie nach links, rechts, oben oder unten. | Rechtsklicken+Ziehen | Drücken und ziehen Sie mit zwei Fingern. |
    | **Kamera zoomen** | Zoomen Sie mit der Kamera in Bereiche der 3D-Szene bzw. aus diesen Bereichen heraus. | Scrollen Sie mit dem Mausrad. | Ziehen Sie per Pinch mit zwei Fingern. |
    | **Kamera neu zentrieren** | Zentrieren Sie die Kamera neu auf einen Punkt an einem Objekt in der 3D-Szene. | Doppelklicken. | Doppelklicken Sie. |
    | **Zurücksetzen** | Wählen Sie in der unteren rechten Ecke der Seite das Symbol „Zurücksetzen“, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen. |   |   |

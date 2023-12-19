@@ -1,6 +1,6 @@
 ---
 title: Installieren und Konfigurieren von Datenerfassungsfunktionen
-description: Installieren und konfigurieren Sie adaptive Formulare, PDF forms und HTML5 Forms. Konfigurieren Sie Adobe Analytics und Adobe Target für adaptive Formulare, um die Nutzung von Formularen zu analysieren und Benutzer auf der Basis ihres Profils anzusprechen.
+description: Installieren und konfigurieren Sie adaptive Formulare, PDF-Formulare und HTML5-Formulare. Konfigurieren Sie Adobe Analytics und Adobe Target für adaptive Formulare, um die Nutzung von Formularen zu analysieren und Benutzende auf der Basis ihres Profils anzusprechen.
 topic-tags: installing
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
@@ -9,7 +9,7 @@ exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1848'
-ht-degree: 66%
+ht-degree: 98%
 
 ---
 
@@ -17,19 +17,19 @@ ht-degree: 66%
 
 ## Einführung {#introduction}
 
-AEM Forms bietet eine Reihe von Formularen zum Abrufen von Daten vom Endbenutzer: adaptive Formulare, HTML5 Forms und PDF forms. Es bietet außerdem Tools, mit denen Sie alle verfügbaren Formulare auf einer Webseite auflisten, die Nutzung von Formularen analysieren und Benutzer anhand ihres Profils ansprechen können. Diese Funktionen sind im AEM Forms Add-On-Paket enthalten. Das Add-On-Paket wird auf einer Authoring- oder Publishing-Instanz von AEM bereitgestellt.
+AEM Forms bietet eine Reihe von Formularen zum Abrufen von Daten von Endbenutzenden: adaptive Formulare, HTML5-Formulare und PDF-Formulare. Es bietet außerdem Tools, mit denen Sie alle verfügbaren Formulare auf einer Web-Seite auflisten, die Nutzung von Formularen analysieren und Benutzende anhand ihres Profils ansprechen können. Diese Funktionen sind im Add-On-Paket von AEM Forms enthalten. Das Add-On-Paket wird auf einer Autoren- oder Veröffentlichungsinstanz von AEM bereitgestellt.
 
-**Adaptive Formulare:** Diese Formulare ändern das Erscheinungsbild je nach Bildschirmgröße des Geräts, sind ansprechend und interaktiv. Adaptive Forms kann auch in Adobe Analytics, Adobe Sign und Adobe Target integriert werden. Sie ermöglicht die Bereitstellung personalisierter Formulare und prozessorientierter Erlebnisse für Benutzer, die auf ihrer Demografie und anderen Funktionen basieren. Sie können auch adaptive Formulare in Adobe Sign integrieren.
+**Adaptive Formulare:** Diese Formulare ändern das Erscheinungsbild je nach Bildschirmgröße des Geräts, sind ansprechend und interaktiv. Adaptive Formulare können auch in Adobe Analytics, Adobe Sign und Adobe Target integriert werden. Sie ermöglichen die Bereitstellung personalisierter Formulare und prozessorientierter Erlebnisse für Benutzende, die auf ihrer Demografie und anderen Merkmalen basieren. Sie können adaptive Formulare auch in Adobe Sign integrieren.
 
-**PDF forms** sind für pixelgenaues Drucken und digitale Informationserfassung in einem PDF-Dokument geeignet. Im digitalen Avatar können Sie diese Formulare mit Adobe Acrobat oder Acrobat Reader ausfüllen. Sie können diese Formulare auf Ihrer Website hosten oder das Formularportal verwenden, um diese Formulare auf einer AEM Website aufzulisten. Sie können diese Formulare auch als Anhänge an andere senden. Diese Formulare eignen sich am besten für Desktop-Umgebungen.
+**PDF-Formulare** sind für pixelgenaues Drucken und digitale Informationserfassung in einem PDF-Dokument geeignet. Im digitalen Avatar können Sie diese Formulare mit Adobe Acrobat oder Acrobat Reader ausfüllen. Sie können diese Formulare auf Ihrer Website hosten oder das Formularportal verwenden, um diese Formulare auf einer AEM-Site aufzulisten. Sie können diese Formulare auch als Anhänge an andere senden. Diese Formulare eignen sich am besten für Desktop-Umgebungen.
 
-**HTML5 Forms** sind die browserfreundliche Version von PDF forms. HTML5 Forms eignet sich für Umgebungen, die keine PDF-Plug-ins unterstützen. HTML5 Forms ermöglicht die Wiedergabe von XFA-basierten Formularen auf Mobilgeräten und Desktopbrowsern, auf denen XFA-basierte PDF nicht unterstützt werden. Diese Formulare eignen sich am besten für Tablets und Desktop-Umgebungen.
+**HTML5-Formulare** sind die Browser-freundliche Version von PDF-Formularen. HTML5-Formulare eignen sich für Umgebungen, die keine PDF-Plug-ins unterstützen. HTML5-Formulare ermöglichen die Wiedergabe von XFA-basierten Formularen auf Mobilgeräten und Desktop-Browsern, auf denen XFA-basierte PDFs nicht unterstützt werden. Diese Formulare eignen sich am besten für Tablets und Desktop-Umgebungen.
 
-AEM Forms ist eine leistungsstarke Plattform der Unternehmensklasse und die Datenerfassung (adaptive Formulare, PDF forms und HTML5 Forms) ist nur eine der Funktionen von AEM Forms. Eine vollständige Liste der Funktionen finden Sie in der [Einführung in AEM Forms](/help/forms/using/introduction-aem-forms.md).
+AEM Forms ist eine leistungsstarke Plattform für Unternehmen, und die Datenerfassung (adaptive Formulare, PDF-Formulare und HTML5-Formulare) ist nur eine der Funktionen von AEM Forms. Eine vollständige Liste der Funktionen finden Sie in der [Einführung in AEM Forms](/help/forms/using/introduction-aem-forms.md).
 
 ## Bereitstellungstopologie {#deployment-topology}
 
-Das AEM Forms Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Sie benötigen nur mindestens eine AEM Autoren- und AEM Veröffentlichungsinstanz, um AEM Forms-Datenerfassungsfunktionen auszuführen. Die folgende Topologie wird empfohlen, um die AEM Forms AEM Forms-Datenerfassungsfunktionen auszuführen. Detaillierte Informationen zu Topologien finden Sie unter [Architektur und Bereitstellungstopologien für AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+Das AEM Forms Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Sie benötigen nur mindestens eine Autoren- und eine Veröffentlichungsinstanz von AEM, um die Datenerfassungsfunktionen von AEM Forms ausführen zu können. Die folgende Topologie wird empfohlen, um die Datenerfassungsfunktionen von AEM Forms auszuführen. Detaillierte Informationen zu Topologien finden Sie unter [Architektur und Bereitstellungstopologien für AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![empfohlene-Topologie](assets/recommended-topology.png)
 
@@ -40,17 +40,17 @@ Bevor Sie mit der Installation und Konfiguration der Datenerfassungsfunktion von
 * Hardware- und Software-Infrastruktur ist eingerichtet. Eine detaillierte Liste der unterstützten Hardware und Software finden Sie unter [Technische Anforderungen](/help/sites-deploying/technical-requirements.md).
 
 * Der Installationspfad der AEM-Instanz enthält keine Leerzeichen.
-* Eine AEM Instanz läuft. Installieren Sie für Windows-Benutzer die AEM-Instanz im erweiterten Modus. In der AEM-Terminologie entspricht eine „Instanz“ einer Kopie von AEM, die auf einem Server im Autor- oder Veröffentlichungsmodus ausgeführt wird. Sie benötigen mindestens zwei [AEM Instanzen (ein Autor und eine Veröffentlichung)](/help/sites-deploying/deploy.md) zum Ausführen der AEM Forms-Datenerfassungsfunktionen:
+* Eine AEM Instanz läuft. Installieren Sie für Windows-Benutzer die AEM-Instanz im erweiterten Modus. In der AEM-Terminologie entspricht eine „Instanz“ einer Kopie von AEM, die auf einem Server im Autor- oder Veröffentlichungsmodus ausgeführt wird. Sie benötigen mindestens zwei [AEM-Instanzen (Autor und Veröffentlichung)](/help/sites-deploying/deploy.md), um die Datenerfassungsfunktionen von AEM Forms auszuführen:
 
    * **Autor**: Eine zum Erstellen, Hochladen und Bearbeiten von Inhalten sowie zum Verwalten der Website verwendete AEM-Instanz. Sobald der Inhalt für die Veröffentlichung bereit ist, wird er an die Veröffentlichungsinstanz repliziert.
-   * **Veröffentlichen**: Eine AEM Instanz, die die veröffentlichten Inhalte über das Internet oder ein internes Netzwerk veröffentlicht.
+   * **Veröffentlichung**: Eine AEM-Instanz, die die veröffentlichten Inhalte über das Internet oder ein internes Netzwerk öffentlich zugänglich macht.
 
 * Es gibt gewisse Arbeitsspeicheranforderungen. Für das Add-on-Paket für AEM Forms ist Folgendes erforderlich:
 
-   * 15 GB temporärer Speicherplatz für Windows-basierte Installationen von Microsoft.
+   * 15 GB temporärer Speicherplatz für Microsoft Windows-basierte Installationen.
    * 6 GB temporärer Speicherplatz für UNIX-basierte Installationen.
 
-* Die Replikation und Rückwärtsreplikation für die Autoren- und Veröffentlichungsinstanzen ist festgelegt. Weitere Informationen finden Sie unter [Replikation](/help/sites-deploying/replication.md).
+* Die Replikation und Rückwärtsreplikation für die Autoren- und die Veröffentlichungsinstanz ist festgelegt. Weitere Informationen finden Sie unter [Replikation](/help/sites-deploying/replication.md).
 * Für UNIX-basierte Systeme:
 
    * Installieren Sie die folgenden 32-Bit-Pakete vom Installationsmedium:
@@ -189,11 +189,11 @@ Der Dispatcher ist das Werkzeug für das Caching und/oder den Lastenausgleich vo
 
    Melden Sie sich beim Apache Felix Configuration Manager als Admin an. Die Standard-URL für den Configuration Manager lautet `https://[server]:[port_number]/system/console/configMgr`. Wählen Sie im Menü **Configurations** die Option **Apache Sling Referrer Filter.** Geben Sie im Feld „Hosts zulassen“ den Hostnamen des Dispatchers ein, um ihn als Referrer zuzulassen, und klicken Sie auf **Speichern**. Das Format des Eintrags ist `https://[server]:[port]`.
 
-#### Cache konfigurieren {#configure-cache}
+#### Konfigurieren des Cache {#configure-cache}
 
-Das Caching ist ein Mechanismus, um Datenzugriffszeiten zu verkürzen, Latenzzeiten zu reduzieren und die Ein-/Ausgabegeschwindigkeit (I/O) zu verbessern. Der Cache für adaptive Formulare speichert nur HTML-Inhalte und JSON-Strukturen eines adaptiven Formulars, ohne dass vorausgefüllte Daten gespeichert werden. Dies trägt dazu bei, die zum Rendern eines adaptiven Formulars erforderliche Zeit zu verkürzen.
+Caching ist ein Mechanismus zur Verkürzung von Datenzugriffszeiten, zur Verringerung von Latenzzeiten und zur Verbesserung der Ein-/Ausgabegeschwindigkeit (I/O). Der Cache für adaptive Formulare speichert nur HTML-Inhalte und JSON-Strukturen eines adaptiven Formulars, ohne die vorausgefüllten Daten zu speichern. Er trägt dazu bei, die für die Darstellung eines adaptiven Formulars erforderliche Zeit zu verkürzen.
 
-* Verwenden Sie bei Verwendung des Cache für adaptive Formulare den [AEM Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html) zum Zwischenspeichern von Client-Bibliotheken (CSS und JavaScript) eines adaptiven Formulars.
+* Wenn Sie den Cache für adaptive Formulare verwenden, verwenden Sie den [AEM Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html), um Client-Bibliotheken (CSS und JavaScript) eines adaptiven Formulars zwischenzuspeichern.
 * Halten Sie beim Entwickeln benutzerdefinierter Komponenten den Cache für adaptive Formulare auf dem für die Entwicklung verwendeten Server deaktiviert.
 
 Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu konfigurieren:
@@ -215,13 +215,13 @@ Sie können für das Formulardatenmodell die SSL-Kommunikation aktivieren. Um di
 
 Adobe Sign ermöglicht Workflows für die elektronische Signatur für adaptive Formulare. E-Signaturen verbessern die Workflows bei der Verarbeitung von Dokumenten in den Bereichen Recht, Vertrieb, Gehaltsabrechnung, Personalverwaltung u. v. a..
 
-In einem typischen Szenario mit Adobe Sign und adaptiven Formularen füllt der Benutzer ein adaptives Formular aus, um eine **Dienstleistung zu beantragen**. Dies könnte beispielsweise ein Antrag für eine Kreditkarte oder ein Formular für Dienstleistungen für Bürger sein. Wenn ein Benutzer das Antragsformular ausfüllt und signiert, wird dieses zur Bearbeitung an den Dienstleister gesendet. Der Dienstanbieter überprüft die Anwendung und verwendet Adobe Sign, um die Anwendung zu kennzeichnen. Sie können ähnliche Workflows für elektronische Signaturen ermöglichen, indem Sie Adobe Sign in AEM Forms integrieren.
+In einem typischen Szenario mit Adobe Sign und adaptiven Formularen füllt der Benutzer ein adaptives Formular aus, um eine **Dienstleistung zu beantragen**. Dies könnte beispielsweise ein Antrag für eine Kreditkarte oder ein Formular für Dienstleistungen für Bürger sein. Wenn ein Benutzer das Antragsformular ausfüllt und signiert, wird dieses zur Bearbeitung an den Dienstleister gesendet. Der Dienstanbieter prüft den Antrag und markiert ihn mit Adobe Sign als genehmigt. Sie können ähnliche Workflows für elektronische Signaturen ermöglichen, indem Sie Adobe Sign in AEM Forms integrieren.
 
-So verwenden Sie Adobe Sign mit AEM Forms [Integrieren von Adobe Sign mit AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
+Um Adobe Sign mit AEM Forms zu verwenden, [integrieren Sie Adobe Sign mit AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
 #### Konfigurieren von Adobe Analytics {#configure-adobe-analytics}
 
-AEM Forms ist mit Adobe Analytics integriert, sodass Sie Leistungsmetriken für Ihre veröffentlichten Formulare und Dokumente erfassen und verfolgen können. Ziel dieser Analyse ist es, informierte, auf Daten basierende Entscheidungen zu erforderlichen Formularänderungen treffen zu können, durch die Formulare oder Dokumente benutzerfreundlicher werden.
+AEM Forms ermöglicht die Integration mit Adobe Analytics, sodass Sie Leistungsmetriken für Ihre veröffentlichten Formulare und Dokumente erfassen und verfolgen können. Ziel dieser Analyse ist es, informierte, auf Daten basierende Entscheidungen zu erforderlichen Formularänderungen treffen zu können, durch die Formulare oder Dokumente benutzerfreundlicher werden.
 
 Adobe Analytics mit AEM Forms finden Sie unter [Konfigurieren von Analytics und Berichte](/help/forms/using/configure-analytics-forms-documents.md).
 
@@ -233,7 +233,7 @@ AEM forms kann mit der Adobe Marketing Cloud-Lösung Adobe Target integriert wer
 
 ## Nächste Schritte {#next-steps}
 
-Sie haben eine Umgebung für die Verwendung der AEM Forms-Datenerfassungsfunktionen konfiguriert. Die nächsten Schritte zur Nutzung der Funktion sind:
+Sie haben eine Umgebung für die Verwendung der AEM Forms-Datenerfassungsfunktionen konfiguriert. Die nächsten Schritte zur Verwendung der Funktionen, sind Folgende:
 
 * [Erstellen Sie Ihr erstes adaptives Formular](/help/forms/using/create-your-first-adaptive-form.md)
 * [Erstellen Sie Ihr erstes PDF Formular](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_de)

@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
 source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '1348'
-ht-degree: 54%
+source-wordcount: '1351'
+ht-degree: 70%
 
 ---
 
@@ -33,7 +33,8 @@ So erstellen Sie eine Seitenversion:
 
 1. Geben Sie einen **Kommentar** ein (optional).
 1. Um eine Bezeichnung für die Version anzugeben (optional), klicken Sie auf die Schaltfläche **Mehr >>** und geben Sie unter **Bezeichnung** einen Namen für die Version ein. Wird keine Bezeichnung festgelegt, wird die Version automatisch nummeriert.
-1. Klicken Sie auf **Version erstellen**. Auf der Seite wird eine grau unterlegte Meldung angezeigt, z. B.: Version 1.2 erstellt für: Hemden.
+1. Klicken Sie auf **Version erstellen**. Auf der Seite wird eine grau hinterlegte Nachricht eingeblendet, z. B.:
+Version 1.2 erstellt für: Hemden.
 
 >[!NOTE]
 >
@@ -44,11 +45,11 @@ So erstellen Sie eine Seitenversion:
 So können Sie die Seite in einer früheren Version wiederherstellen:
 
 1. Öffnen Sie die Seite, für die Sie eine frühere Version wiederherstellen möchten.
-1. Wählen Sie im Sidekick die **Versionierung** Registerkarte, dann die **Version wiederherstellen** unterregistrieren.
+1. Wählen Sie im Sidekick die Registerkarte **Versionierung** und dann die Unterregisterkarte **Version wiederherstellen** aus.
 
    ![screen_shot_2012-02-14at42949pm](assets/screen_shot_2012-02-14at42949pm.png)
 
-1. Wählen Sie die Version aus, die Sie wiederherstellen möchten, und wählen Sie **Wiederherstellen**.
+1. Wählen Sie die Version aus, die Sie wiederherstellen möchten, und wählen Sie **Wiederherstellen** aus.
 
 ## Wiederherstellen einer Seitenversion über die Konsole {#restoring-a-page-version-from-the-console}
 
@@ -59,11 +60,11 @@ Sie können diese Methode verwenden, um eine Seitenversion wiederherzustellen. S
 
    ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
-1. Wenn Sie **Version wiederherstellen...** auswählen, werden die Versionen der Dokumente im aktuellen Ordner aufgelistet. Selbst wenn eine Seite gelöscht wurde, wird die letzte Version aufgelistet:
+1. Wenn Sie **Version wiederherstellen...** auswählen, werden die Versionen der Dokumente im aktuellen Ordner aufgelistet. Auch wenn eine Seite gelöscht wurde, wird ihre letzte Version aufgeführt:
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
-1. Wählen Sie die wiederherzustellende Version aus und klicken Sie auf **Wiederherstellen**. AEM stellt die ausgewählten Versionen (bzw. Bäume) wieder her.
+1. Wählen Sie die Version aus, die Sie wiederherstellen möchten, und klicken Sie auf **Wiederherstellen**. AEM stellt die Versionen bzw. die Baumstrukturen wieder her, die Sie ausgewählt haben.
 
 ### Wiederherstellen einer Baumstruktur über die Konsole {#restoring-a-tree-from-the-console}
 
@@ -75,7 +76,7 @@ Sie können diese Methode verwenden, um eine Seitenversion wiederherzustellen. S
 
    ![screen_shot_2012-02-08at45743pm-1](assets/screen_shot_2012-02-08at45743pm-1.png)
 
-1. Klicken Sie auf **Wiederherstellen**. AEM stellt den ausgewählten Baum wieder her.
+1. Klicken Sie auf **Wiederherstellen**. AEM stellt die ausgewählte Baumstruktur wieder her.
 
 ## Vergleich mit einer früheren Version {#comparing-with-a-previous-version}
 
@@ -86,7 +87,7 @@ So vergleichen Sie die aktuelle Version einer Seite mit einer früheren Version:
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
-1. Wählen Sie die Version aus, die Sie vergleichen möchten, und klicken Sie auf die **Diff** Schaltfläche.
+1. Markieren Sie die Version, die Sie vergleichen möchten, und klicken Sie auf die Schaltfläche **Differenz**.
 1. Die Unterschiede zwischen der aktuellen Version und der ausgewählten Version werden wie folgt dargestellt:
 
    * Gelöschter Text wird rot und durchgestrichen angezeigt.
@@ -101,7 +102,7 @@ So vergleichen Sie die aktuelle Version einer Seite mit einer früheren Version:
 
 Timewarp ist eine Funktion, die den ***Veröffentlichungsstatus*** einer Seite zu einer bestimmten Zeit in der Vergangenheit simuliert.
 
-Damit können Sie die veröffentlichte Website zum ausgewählten Zeitpunkt verfolgen. Hierbei werden die Seitenaktivierungen verwendet, um den Status der Publishing-Umgebung zu ermitteln.
+Ziel ist es, Ihnen die Nachverfolgung der veröffentlichten Website zu einem bestimmten Zeitpunkt zu ermöglichen. Hierbei werden die Seitenaktivierungen verwendet, um den Status der Publishing-Umgebung zu ermitteln.
 
 Gehen Sie hierfür wie folgt vor:
 
@@ -112,7 +113,7 @@ Gehen Sie hierfür wie folgt vor:
 
 >[!NOTE]
 >
->Wenn Versionen aus dem Repository entfernt werden, kann Timewarp die richtige Ansicht nicht anzeigen. Wenn sich Elemente (wie Code, CSS und Bilder) zum Rendern der Website geändert haben, unterscheidet sich die Ansicht von der ursprünglichen Ansicht, da diese Elemente nicht im Repository versioniert werden.
+>Wenn Versionen aus dem Repository entfernt wurden, kann Timewarp die korrekte Ansicht nicht anzeigen. Außerdem unterscheidet sich die Ansicht von der ursprünglichen Ansicht, wenn Elemente (Code, CSS und Bilder) für die Anzeige der Website geändert wurden, da diese Elemente nicht im Repository versioniert werden.
 
 ### Verwenden des Timewarp-Kalenders {#using-the-timewarp-calendar}
 
@@ -155,11 +156,11 @@ Wenn Sie die Zeitleiste im Dokument anzeigen möchten:
 
 1. Führen Sie einen der folgenden Schritte aus, um die Timeline anzuzeigen:
 
-   1. Öffnen Sie die **Versionierung** und klicken Sie auf **Timewarp** (unten im Sidekick).
+   1. Öffnen Sie die Registerkarte **Versionierung** und klicken Sie auf **Timewarp** (unten im Sidekick).
 
-   1. Verwenden Sie das Sidekick-Dialogfeld, das nach [Verwenden des Timewarp-Kalenders](#using-the-timewarp-calendar).
+   1. Verwenden Sie das Sidekick-Dialogfeld, das nach der [Verwendung des Timewarp-Kalenders](#using-the-timewarp-calendar) angezeigt wird.
 
-1. Klicks **Timeline anzeigen** - Die Timeline des Dokuments wird angezeigt, z. B.:
+1. Wenn Sie auf **Timeline anzeigen** klicken, wird die Timeline des Dokuments angezeigt. Beispiel:
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
@@ -173,7 +174,7 @@ Im folgenden Beispiel zeigt die rote Linie an, dass die Seite während des Zeitr
 
 1. Klicken Sie auf:
 
-   1. **Los** , um den Inhalt der veröffentlichten Seite zum ausgewählten Zeitpunkt anzuzeigen.
+   1. Klicken Sie auf **Los**, um den Inhalt der veröffentlichten Seite zum ausgewählten Zeitpunkt anzuzeigen.
    1. Verwenden Sie bei der Anzeige dieses Inhalts **Timewarp beenden** , um zur aktuellen Autorenseite zurückzukehren.
 
 ### Timewarp-Beschränkungen {#timewarp-limitations}
@@ -190,4 +191,4 @@ Timewarp bemüht sich nach Kräften, eine Seite zu einem bestimmten Zeitpunkt zu
 
 >[!CAUTION]
 >
->Timewarp unterstützt Autoren beim Verständnis und Erstellen ihrer Inhalte. Es ist nicht als Prüfprotokoll oder zu rechtlichen Zwecken gedacht.
+>Timewarp wurde entwickelt, um Autorinnen und Autoren beim Verstehen und Erstellen ihrer Inhalte zu unterstützen. Es ist nicht als Prüfprotokoll oder zu rechtlichen Zwecken gedacht.

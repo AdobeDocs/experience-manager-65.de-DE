@@ -5,7 +5,7 @@ exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 81%
+ht-degree: 86%
 
 ---
 
@@ -129,21 +129,21 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    **Eigenschaften**
 
-   Die **Eigenschaften** -Tab können Sie die wichtigen Design-Parameter der Komponente konfigurieren. Beispielsweise können Sie für eine Bildkomponente die maximal zulässige und minimale Größe des Bildes definieren.
+   Auf der Registerkarte **Eigenschaften** können Sie die wichtigsten Design-Parameter der Komponente konfigurieren. Beispielsweise können Sie für eine Bildkomponente die maximal zulässige und minimale Größe des Bildes definieren.
 
    **Funktionen**
 
-   Die **Funktionen** -Tab können Sie zusätzliche Funktionen der Komponente aktivieren oder deaktivieren. Beispielsweise können Sie für eine Bildkomponente die Ausrichtung des Bildes und die verfügbaren Zuschneideoptionen definieren und festlegen, ob ein Bild hochgeladen werden kann.
+   Auf der Registerkarte **Funktionen** können Sie zusätzliche Funktionen der Komponente aktivieren oder deaktivieren. Beispielsweise können Sie für eine Bildkomponente die Ausrichtung des Bildes und die verfügbaren Zuschneideoptionen definieren und festlegen, ob ein Bild hochgeladen werden kann.
 
    **Stile**
 
-   Die **Stile** -Tab können Sie die CSS-Klassen und -Stile definieren, die mit der Komponente verwendet werden sollen.
+   Auf der Registerkarte **Stile** können Sie die CSS-Klassen und -Stile definieren, die mit der Komponente verwendet werden sollen.
 
    ![screen_shot_2018-03-22at103741](assets/screen_shot_2018-03-22at103741.png)
 
    Mit der Schaltfläche **Hinzufügen** können Sie zusätzliche Einträge zu einer Dialogfeldliste mit mehreren Einträgen hinzufügen.
 
-   ![Zusätzlichen Eintrag hinzufügen](assets/chlimage_1-94.png)
+   ![Hinzufügen eines zusätzlichen Eintrags](assets/chlimage_1-94.png)
 
    Verwenden Sie das Symbol **Löschen**, um einen Eintrag aus einer Dialogfeldliste mit mehreren Einträgen zu entfernen.
 

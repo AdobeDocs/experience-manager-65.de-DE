@@ -7,24 +7,24 @@ exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '2309'
-ht-degree: 79%
+ht-degree: 98%
 
 ---
 
 # Varianten – Erstellen von Fragmentinhalten{#variations-authoring-fragment-content}
 
-[Varianten](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sind eine wichtige Funktion AEM Inhaltsfragmente, da sie es Ihnen ermöglichen, Kopien des Master-Inhalts für die Verwendung in bestimmten Kanälen und/oder Szenarien zu erstellen und zu bearbeiten, wodurch die Bereitstellung Headless Content noch flexibler wird.
+[Varianten](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sind eine wichtige Funktion für Inhaltsfragmente in AEM, da sie Ihnen die Möglichkeit bieten, Kopien des primären Inhalts für die Verwendung in bestimmten Kanälen und/oder Szenarien zu erstellen und zu bearbeiten, was die Bereitstellung von Headless-Inhalten noch flexibler macht.
 
-Auf der Registerkarte **Varianten** haben Sie folgende Optionen:
+Auf der Registerkarte **Varianten** können Sie Folgendes tun:
 
-* [Eingeben von Inhalt](#authoring-your-content) für Ihr Fragment,
+* [Eingeben des Inhalts](#authoring-your-content) für Ihr Fragment,
 * [Erstellen und Verwalten von Varianten](#managing-variations) des **primären** Inhalts,
 
 Führen Sie eine Vielzahl weiterer Aktionen abhängig vom bearbeiteten Datentyp aus, z. B.:
 
 * [Einfügen von visuellen Assets in Ihr Fragment](#inserting-assets-into-your-fragment) (Bilder)
 
-* Auswählen zwischen [Rich-Text](#rich-text), [Nur Text](#plain-text) und [Markdown](#markdown) zur Bearbeitung
+* Wählen zwischen [Rich-Text](#rich-text), [Nur Text](#plain-text) und [Markdown](#markdown) für die Bearbeitung
 
 * [Inhalt hochladen](#uploading-content)
 
@@ -36,11 +36,11 @@ Führen Sie eine Vielzahl weiterer Aktionen abhängig vom bearbeiteten Datentyp 
 
 >[!CAUTION]
 >
->Nachdem ein Fragment veröffentlicht und/oder referenziert wurde, zeigt AEM eine Warnmeldung an, wenn eine Autorin oder ein Autor das Fragment erneut zur Bearbeitung öffnet. Dies dient als Hinweis darauf, dass am Fragment vorgenommene Änderungen sich auch auf die referenzierten Seiten auswirken.
+>Nachdem ein Fragment veröffentlicht und/oder referenziert wurde, zeigt AEM eine Warnmeldung an, wenn eine Autorin bzw. ein Autor das Fragment erneut zur Bearbeitung öffnet. Dies dient als Hinweis darauf, dass am Fragment vorgenommene Änderungen sich auch auf die referenzierten Seiten auswirken.
 
 ## Verfassen Ihres Inhalts {#authoring-your-content}
 
-Wenn Sie das Inhaltsfragment zur Bearbeitung öffnen, wird die Registerkarte **Varianten** standardmäßig geöffnet. Hier können Sie den Inhalt bearbeiten, und zwar den der primären Version sowie sämtlicher Varianten. Das strukturierte Fragment enthält verschiedene Felder verschiedener Datentypen, die im Inhaltsmodell definiert wurden.
+Wenn Sie das Inhaltsfragment zur Bearbeitung öffnen, wird die Registerkarte **Varianten** standardmäßig geöffnet. Hier können Sie den Inhalt bearbeiten, und zwar den der primären Version sowie sämtlicher Varianten. Das strukturierte Fragment enthält verschiedene Felder mit verschiedenen Datentypen, die im Inhaltsmodell definiert wurden.
 
 Beispiel:
 
@@ -52,7 +52,7 @@ Sie haben folgende Möglichkeiten:
 
 * Bearbeiten Sie Ihre Inhalte direkt auf der Registerkarte **Varianten**. Jeder Datentyp bietet verschiedene Bearbeitungsoptionen, z. B.:
 
-   * für **Mehrzeiliger Text** -Felder, können Sie auch die [Vollbild-Editor](#full-screen-editor) an:
+   * Für **mehrzeilige Textfelder** können Sie auch den [Vollbild-Editor](#full-screen-editor) öffnen, um:
 
       * das [Format](#formats) auszuwählen
       * weitere Bearbeitungsoptionen anzuzeigen ([Rich-Text](#rich-text)-Format)
@@ -60,11 +60,11 @@ Sie haben folgende Möglichkeiten:
 
    * Für die Felder **Fragmentreferenz** kann je nach Modelldefinition die Option [Inhaltsfragment bearbeiten](#fragment-references-edit-content-fragment) verfügbar sein.
 
-* Zuweisen **Tags** zur aktuellen Variante hinzugefügt, aktualisiert und entfernt werden können.
+* Weisen Sie der aktuellen Variante **Tags** zu. Die Tags können hinzugefügt, aktualisiert und entfernt werden
 
    * [Tags](/help/sites-authoring/tags.md) sind leistungsstark bei der Organisation Ihrer Fragmente, da sie für die Inhaltsklassifizierung und -taxonomie verwendet werden können. Tags können zum Suchen von Inhalten (nach Tags) und zum Anwenden von Massenvorgängen verwendet werden.
 
-      * Bei der Suche nach einem Tag wird das Fragment zurückgegeben, wobei die Tag-Variante hervorgehoben ist.
+      * Bei der Suche nach einem Tag wird das Fragment zurückgegeben, wobei die getaggte Variante hervorgehoben ist.
       * Varianten-Tags können auch verwendet werden, um Varianten für ein bestimmtes CDN-Profil (Content Delivery Network) (für CDN-Caching) zu gruppieren, anstatt den Variantennamen zu verwenden.
 
      Beispielsweise können Sie relevante Fragmente als „Weihnachts-Launch“ taggen, um nur diese als Teilmenge zu durchsuchen oder sie für einen anderen zukünftigen Launch in einen neuen Ordner zu kopieren.
@@ -88,7 +88,7 @@ Dadurch wird der Vollbild-Texteditor geöffnet:
 Der Vollbild-Texteditor bietet Folgendes:
 
 * Zugriff auf verschiedene [Aktionen](#actions)
-* Zusätzliche Formatierungsoptionen ([Rich-Text](#rich-text)), je nach [Format](#formats)
+* Je nach [Format](#formats) zusätzliche Formatierungsoptionen ([Rich-Text](#rich-text))
 
 ### Aktionen {#actions}
 
@@ -122,12 +122,12 @@ Die Rich-Text-Bearbeitung ermöglicht folgende Formatierungen:
 * Kursiv
 * Unterstrichen
 * Ausrichtung: links, zentriert, rechts
-* Stichpunktliste
+* Aufzählungsliste
 * Nummerierte Liste
-* Einzug: vergrößern, verringern
-* Erstellen/Aufheben von Hyperlinks
-* Einfügen von Text aus Word
-* Einfügen einer Tabelle
+* Einzug: erhöhen, verringern
+* Hyperlinks erstellen/unterbrechen
+* Text aus Word einfügen
+* Tabelle einfügen
 * Absatzformat: Absatz, Überschrift 1/2/3
 * [Asset einfügen](#inserting-assets-into-your-fragment)
 * Öffnen Sie den Vollbild-Editor, in dem die folgenden Formatierungsoptionen zur Verfügung stehen:
@@ -145,7 +145,7 @@ Nur Text ermöglicht die schnelle Eingabe von Inhalt ohne Formatierungs- oder Ma
 
 >[!CAUTION]
 >
->Wenn Sie **Nur Text**, gehen möglicherweise alle Formatierungen, Markierungen und/oder Assets verloren, die Sie in **Rich-Text** oder **Markdown**.
+>Wenn Sie **Nur Text** auswählen, gehen möglicherweise alle Formatierungen, Markierungen und/oder Assets verloren, die Sie in **Rich-Text** oder **Markdown** eingefügt haben.
 
 ### Markdown {#markdown}
 
@@ -153,7 +153,7 @@ Nur Text ermöglicht die schnelle Eingabe von Inhalt ohne Formatierungs- oder Ma
 >
 >Umfassende Informationen finden Sie in der [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)-Dokumentation.
 
-Auf diese Weise können Sie Ihren Text mithilfe von Markdowns formatieren. Sie können Folgendes definieren:
+Auf diese Weise können Sie Ihren Text mithilfe von Markdown formatieren. Sie können Folgendes definieren:
 
 * Überschriften
 * Absätze und Zeilenumbrüche
@@ -196,14 +196,14 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 Mit der Option **Neues Inhaltsfragment** können Sie ein Fragment erstellen. Dazu öffnet sich im Editor eine Variante des Assistenten zum Erstellen von Inhaltsfragmenten.
 
-Anschließend können Sie ein Fragment erstellen, indem Sie:
+Anschließend können Sie folgendermaßen ein Fragment erstellen:
 
 1. Navigieren Sie zum gewünschten Ordner und wählen Sie ihn aus.
 1. Wählen Sie **Weiter** aus.
-1. Legen Sie Eigenschaften fest. Beispiel: **Titel**.
+1. Legen Sie Eigenschaften fest, z. B. **Titel**.
 1. Wählen Sie **Erstellen** aus.
 1. Abschließend:
-   1. **Fertig** gibt (zum ursprünglichen Fragment) zurück und verweist auf das neue Fragment.
+   1. Mit **Fertig** kehren Sie (zum ursprünglichen Fragment) zurück und verweisen auf das neue Fragment.
    1. **Öffnen** referenziert das neue Fragment und öffnet das neue Fragment zur Bearbeitung in einer neuen Browser-Registerkarte.
 
 ### Anzeigen von wichtigen Statistiken {#viewing-key-statistics}
@@ -220,7 +220,7 @@ Um die Erstellung von Inhaltsfragmenten zu vereinfachen, können Sie Text hochla
 
 ### Zusammenfassung von Text {#summarizing-text}
 
-Mithilfe der Zusammenfassung von Text können Benutzende die Länge des Textes auf eine vordefinierte Anzahl von Wörtern verringern, während die wichtigen Punkte und die allgemeine Bedeutung beibehalten werden.
+Mithilfe der Zusammenfassung von Text können Benutzende die Länge des Textes auf eine vordefinierte Anzahl von Wörtern verringern, während die wichtigsten Punkte und die allgemeine Bedeutung beibehalten werden.
 
 >[!NOTE]
 >
@@ -254,18 +254,18 @@ Andere Sprachen sind als Sprachmodellpakete von Package Share verfügbar:
    ![Zusammenfassung](assets/cfm-variations-05.png)
 
 1. Geben Sie den Zielwert der Wörter an und wählen Sie **Starten**:
-1. Der ursprüngliche Text wird nebeneinander mit der vorgeschlagenen Zusammenfassung angezeigt:
+1. Der ursprüngliche Text wird neben der vorgeschlagenen Zusammenfassung angezeigt:
 
    * Alle zu löschenden Sätze sind rot hervorgehoben und durchgestrichen.
-   * Klicken Sie auf einen beliebigen hervorgehobenen Satz, wenn Sie ihn im zusammengefassten Inhalt behalten möchten.
+   * Klicken Sie auf einen beliebigen hervorgehobenen Satz, wenn Sie ihn im zusammengefassten Inhalt beibehalten möchten.
    * Klicken Sie auf einen beliebigen nicht hervorgehobenen Satz, wenn Sie ihn beseitigen möchten.
 
 1. Wählen Sie **Zusammenfassen** aus, um die Änderungen zu bestätigen.
 
-1. Der ursprüngliche Text wird nebeneinander mit der vorgeschlagenen Zusammenfassung angezeigt:
+1. Der ursprüngliche Text wird neben der vorgeschlagenen Zusammenfassung angezeigt:
 
    * Alle zu löschenden Sätze sind rot hervorgehoben und durchgestrichen.
-   * Klicken Sie auf einen beliebigen hervorgehobenen Satz, wenn Sie ihn im zusammengefassten Inhalt behalten möchten.
+   * Klicken Sie auf einen beliebigen hervorgehobenen Satz, wenn Sie ihn im zusammengefassten Inhalt beibehalten möchten.
    * Klicken Sie auf einen beliebigen nicht hervorgehobenen Satz, wenn Sie ihn beseitigen möchten.
    * Die Zusammenfassungsstatistiken werden gezeigt: **Actual** und **Target**.
    * Sie können die Änderungen in der **Vorschau** sehen.
@@ -274,7 +274,7 @@ Andere Sprachen sind als Sprachmodellpakete von Package Share verfügbar:
 
 ### Anmerkungen zu Inhaltsfragmenten {#annotating-a-content-fragment}
 
-So fügen Sie Anmerkungen zu Fragmenten hinzu:
+So fügen Sie eine Anmerkung zu einem Fragment hinzu:
 
 1. Wählen Sie **Primäre Version** oder die erforderliche Variante aus.
 
@@ -288,7 +288,7 @@ So fügen Sie Anmerkungen zu Fragmenten hinzu:
 
    ![Anmerken](assets/cfm-variations-07a.png)
 
-1. Auswählen **Anwenden** im Dialogfeld.
+1. Wählen Sie **Anwenden** im Dialogfeld aus.
 
    ![Anmerken](assets/cfm-variations-annotations-apply-icon.png)
 
@@ -296,11 +296,11 @@ So fügen Sie Anmerkungen zu Fragmenten hinzu:
 
    ![Anmerken](assets/cfm-variations-07b.png)
 
-1. Schließen Sie den Editor für den Vollbildmodus. Die Anmerkungen sind weiterhin hervorgehoben. Wenn diese Option aktiviert ist, wird ein Dialogfeld geöffnet, in dem Sie die Anmerkung weiter bearbeiten können.
+1. Schließen Sie den Vollbild-Editor. Die Anmerkungen sind weiterhin hervorgehoben. Wenn diese Option aktiviert ist, wird ein Dialogfeld geöffnet, in dem Sie die Anmerkung weiter bearbeiten können.
 
 1. Klicken Sie auf **Speichern**.
 
-1. Schließen Sie den Editor für den Vollbildmodus. Die Anmerkungen sind weiterhin hervorgehoben. Wenn diese Option aktiviert ist, wird ein Dialogfeld geöffnet, in dem Sie die Anmerkung weiter bearbeiten können.
+1. Schließen Sie den Vollbild-Editor. Die Anmerkungen sind weiterhin hervorgehoben. Wenn diese Option aktiviert ist, wird ein Dialogfeld geöffnet, in dem Sie die Anmerkung weiter bearbeiten können.
 
    ![Anmerken](assets/cfm-variations-07c.png)
 
@@ -308,7 +308,7 @@ So fügen Sie Anmerkungen zu Fragmenten hinzu:
 
 Anmerkungen:
 
-* Werden sowohl im Vollbildmodus als auch im Normalmodus des Editors als hervorgehobener Text angezeigt. Die vollständigen Details einer Anmerkung können dann angezeigt, bearbeitet und/oder gelöscht werden, indem Sie auf den hervorgehobenen Text klicken. Dadurch wird das Dialogfeld erneut geöffnet.
+* Sie werden durch die Markierung auf dem Text sowohl im Vollbildmodus als auch im normalen Modus des Editors angezeigt. Vollständige Details einer Anmerkung können angezeigt, bearbeitet und/oder gelöscht werden, indem Sie auf den markierten Text klicken, wodurch das Dialogfeld erneut geöffnet wird.
 
   >[!NOTE]
   >
@@ -320,13 +320,13 @@ Anmerkungen:
 
   ![Anmerkungen](assets/cfm-variations-08.png)
 
-* Kann im [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) für das ausgewählte Fragment.
+* Können in der [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) für das ausgewählte Fragment angezeigt und gelöscht werden.
 
 ### Einfügen von Assets in das Fragment {#inserting-assets-into-your-fragment}
 
 Um die Erstellung von Inhaltsfragmenten zu vereinfachen, können Sie [Assets](/help/assets/manage-assets.md) (Bilder) direkt zum Fragment hinzufügen.
 
-Sie werden der Absatzsequenz des Fragments ohne Formatierung hinzugefügt. Die Formatierung kann vorgenommen werden, wenn das [Fragment auf einer Seite verwendet/referenziert wird](/help/sites-authoring/content-fragments.md).
+Sie werden der Absatzsequenz des Fragments ohne Formatierung hinzugefügt. Formatierungen können vorgenommen werden, wenn das [Fragment auf einer Seite verwendet/referenziert wird](/help/sites-authoring/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -343,27 +343,27 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
 
    ![Symbol „Asset einfügen“](assets/cfm-variations-09.png)
 
-1. Im Dialogfeld haben Sie folgende Möglichkeiten:
+1. In diesem Dialogfeld haben Sie folgende Möglichkeiten:
 
    * Navigieren zum erforderlichen Asset im DAM
-   * Suchen nach dem Asset in DAM
+   * Suchen nach dem Asset im DAM
 
-   Nachdem Sie das gewünschte Asset gefunden haben, wählen Sie es aus, indem Sie auf die Miniaturansicht klicken.
+   Nachdem Sie das gewünschte Asset gefunden haben, wählen Sie es aus, indem Sie auf die Miniatur klicken.
 
 1. Verwenden Sie **Auswählen**, um das Asset dem Absatzsystem Ihres Inhaltsfragments am aktuellen Speicherort hinzuzufügen.
 
    >[!CAUTION]
    >
-   Wenn Sie das Format ändern, nachdem Sie ein Asset hinzugefügt haben, um:
+   Folgendes geschieht, wenn Sie das Format nach dem Hinzufügen eines Assets wie folgt ändern:
    >
-   * **Nur Text**: Das Asset geht im Fragment vollständig verloren.
-   * **Markdown**: Das Asset ist nicht sichtbar, befindet sich jedoch immer noch hier, wenn Sie zu **Rich-Text**.
+   * **Nur Text**: Das Asset geht im Fragment verloren.
+   * **Markdown**: Das Asset wird nicht angezeigt, ist aber immer noch vorhanden, wenn Sie zu **Rich-Text** zurückkehren.
 
 ### Einfügen eines Inhaltsfragments in ein Fragment {#inserting-content-fragment-into-your-fragment}
 
 Um die Erstellung von Inhaltsfragmenten zu vereinfachen, können Sie Ihrem Fragment auch ein anderes Inhaltsfragment hinzufügen.
 
-Es wird an der aktuellen Position in Ihrem Fragment als Referenz hinzugefügt.
+Es wird an der aktuellen Position in Ihrem Fragment als Verweis hinzugefügt.
 
 >[!NOTE]
 >
@@ -379,26 +379,26 @@ Das Formatieren von Assets (z. B. Größe) muss im [Seiten-Editor](/help/sites-a
 >
 Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.
 
-1. Positionieren Sie den Cursor an der Position, an der Sie das Fragment hinzufügen möchten.
+1. Positionieren Sie den Cursor an der Stelle, an der Sie das Fragment hinzufügen möchten.
 1. Öffnen Sie das Suchdialogfeld mithilfe der Schaltfläche **Inhaltsfragment einfügen**.
 
    ![Symbol „Inhaltsfragment einfügen“](assets/cfm-variations-13.png)
 
-1. Im Dialogfeld haben Sie folgende Möglichkeiten:
+1. In diesem Dialogfeld haben Sie folgende Möglichkeiten:
 
    * Navigieren zum gewünschten Fragment im Assets-Ordner,
    * Suchen nach dem Fragment,
 
-   Nachdem Sie das gewünschte Fragment gefunden haben, wählen Sie es aus, indem Sie auf die Miniaturansicht klicken.
+   Nachdem Sie das gewünschte Fragment gefunden haben, klicken Sie auf die Miniaturansicht, um das Fragment auszuwählen.
 
 1. Verwenden Sie **Auswählen**, um dem aktuellen Inhaltsfragment (an der aktuellen Position) eine Referenz zum ausgewählten Inhaltsfragment hinzuzufügen.
 
    >[!CAUTION]
    >
-   Wenn Sie das Format ändern, nachdem Sie einen Verweis zu einem anderen Fragment hinzugefügt haben, gehen Sie folgendermaßen vor:
+   Folgendes geschieht, wenn Sie das Format nach dem Hinzufügen eines Verweises zu einem anderen Fragment wie folgt ändern:
    >
-   * **Nur Text**: Die Referenz geht im Fragment vollständig verloren.
-   * **Markdown**: Die Referenz bleibt erhalten.
+   * **Nur Text**: Der Verweis geht im Fragment verloren.
+   * **Markdown**: Der Verweis bleibt erhalten.
 
 ## Verwalten von Varianten {#managing-variations}
 
@@ -411,12 +411,12 @@ So erstellen Sie eine Variante:
 1. Öffnen Sie Ihr Fragment und stellen Sie sicher, dass das seitliche Bedienfeld sichtbar ist.
 1. Wählen Sie im seitlichen Bedienfeld in der Symbolleiste die Option **Varianten** aus.
 1. Wählen Sie **Variante erstellen** aus.
-1. Ein Dialogfeld wird geöffnet. Geben Sie die **Titel** und **Beschreibung** für die neue Variante.
+1. Geben Sie im daraufhin geöffneten Dialogfeld einen **Titel** und eine **Beschreibung** für die neue Variante an.
 1. Wählen Sie **Hinzufügen** aus. Das Fragment **Primäre Version** wird in die neue Variante kopiert, die nun zur [Bearbeitung](#editing-a-variation) geöffnet ist.
 
    >[!NOTE]
    >
-   Bei der Erstellung einer Variante ist immer die **Master** kopiert wird, nicht die geöffnete Variante.
+   Wenn eine Variante erstellt wird, wird immer die **primäre Version** kopiert, nicht die geöffnete Variante.
 
    >[!NOTE]
    >
@@ -424,10 +424,10 @@ So erstellen Sie eine Variante:
 
 ### Bearbeiten einer Variante {#editing-a-variation}
 
-Ändern Sie den Varianteninhalt nach einem der folgenden Schritte:
+Nehmen Sie nach einer der folgenden Aktionen Änderungen am Inhalt der Variante vor:
 
-* [Erstellen einer Variante](#creating-a-variation).
-* Öffnen eines vorhandenen Fragments und Auswahl der gewünschten Variante aus dem seitlichen Bedienfeld.
+* [Erstellen einer Variante](#creating-a-variation)
+* Öffnen eines vorhandenen Fragments und Auswahl der gewünschten Variante über das seitliche Bedienfeld
 
 ![Bearbeiten einer Variante](assets/cfm-variations-10.png)
 
@@ -441,7 +441,7 @@ So benennen Sie eine vorhandene Variante um:
 
 1. Geben Sie im Dialogfeld den neuen **Titel** und/oder die **Beschreibung** ein.
 
-1. Bestätigen Sie das **Umbenennen**.
+1. Bestätigen Sie die Aktion **Umbenennen**.
 
 >[!NOTE]
 >
@@ -463,15 +463,15 @@ So löschen Sie eine vorhandene Variante:
 
 ### Mit primärer Version synchronisieren {#synchronizing-with-master}
 
-**Master** ist Teil eines Inhaltsfragments und enthält definitionsgemäß die Masterkopie des Inhalts, während die Varianten die einzelnen aktualisierten und maßgeschneiderten Versionen dieses Inhalts enthalten. Wenn die primäre Version aktualisiert wird, sind diese Änderungen möglicherweise auch für die Varianten relevant sein und müssen dementsprechend auf diese übertragen werden.
+Die **primäre Version** ist ein Teil eines Inhaltsfragments und enthält per Definition die primäre Kopie des Inhalts, während die Varianten einzelne aktualisierte und angepasste Versionen des Inhalts enthalten. Wenn die primäre Version aktualisiert wird, können diese Änderungen auch für die Varianten relevant sein und müssen daher auf diese übertragen werden.
 
-Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisierung des aktuellen Elements der Variante mit der primären Version. Dadurch können Sie an der primären Version vorgenommene Änderungen automatisch in die entsprechende Variante kopieren.
+Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisierung des aktuellen Elements der Variante mit der primären Version. Dadurch können Sie die an der primären Version vorgenommenen Änderungen automatisch in die entsprechende Variante kopieren.
 
 >[!CAUTION]
 >
 Die Synchronisierung ist nur verfügbar, um Änderungen *von der **primären Version**in die Variante* zu kopieren.
 >
-Es wird nur das aktuelle Element der Variante synchronisiert.
+Nur das aktuelle Element der Variante wird synchronisiert.
 >
 Die Synchronisierung funktioniert nur mit dem Datentyp **Mehrzeiliger Text**.
 >
@@ -493,10 +493,10 @@ Es ist nicht möglich, Änderungen *von einer Variante auf die **primäre Versio
 
 1. Primäre Version und Variante werden nebeneinander angezeigt:
 
-   * grün zeigt an, dass der Inhalt hinzugefügt wurde (zur Variante)
+   * Grün zeigt an, dass der Inhalt (zur Variante) hinzugefügt wurde
    * Rot zeigt an, dass Inhalt entfernt wurde (aus der Variante)
    * Blau zeigt an, dass Text ersetzt wurde
 
    ![Mit primärer Version synchronisieren](assets/cfm-variations-11c.png)
 
-1. Wählen Sie **Synchronisieren** aus. Die Variante wird dann aktualisiert und angezeigt.
+1. Wählen Sie **Synchronisieren**. Die Variante wird dann aktualisiert und angezeigt.

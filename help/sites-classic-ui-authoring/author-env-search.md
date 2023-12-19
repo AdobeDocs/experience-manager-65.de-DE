@@ -10,7 +10,7 @@ exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 88%
+ht-degree: 95%
 
 ---
 
@@ -57,7 +57,7 @@ An verschiedenen Stellen kann ein Filter festgelegt (und gelöscht) werden, um I
 
 ## Suchen und Ersetzen {#find-and-replace}
 
-Im **Websites** Konsole **Suchen und Ersetzen** -Menüoption können Sie innerhalb eines Bereichs der Website nach mehreren Instanzen einer Zeichenfolge suchen und diese ersetzen.
+In der Konsole **Websites** ermöglicht Ihnen die Menüoption **Suchen und Ersetzen**, innerhalb eines Bereichs der Website nach mehreren Vorkommen einer Zeichenfolge zu suchen und diese zu ersetzen.
 
 1. Wählen Sie die Stammseite bzw. den Stammordner aus, in dem die Aktion „Suchen und Ersetzen“ stattfinden soll.
 1. Wählen Sie **Tools** und dann **Suchen und Ersetzen**:

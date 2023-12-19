@@ -1,6 +1,6 @@
 ---
 title: Einführung in die Benutzeroberfläche für Erstellung von interaktiven Kommunikationen
-description: Eine Einführung in die verschiedenen Elemente der Benutzeroberfläche, die Sie zum Erstellen der interaktiven Kommunikation verwenden können
+description: Eine Einführung in die verschiedenen Elemente der Benutzeroberfläche, mit denen Sie interaktive Kommunikation erstellen können
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communications
@@ -10,7 +10,7 @@ exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
 source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '1318'
-ht-degree: 68%
+ht-degree: 84%
 
 ---
 
@@ -23,7 +23,7 @@ Die Benutzeroberfläche für das Erstellen von [interaktiver Kommunikation](/hel
 
 Wenn Sie [Erstellen oder Bearbeiten einer vorhandenen interaktiven Kommunikation](../../forms/using/create-interactive-communication.md)verwenden Sie die folgenden Elemente der Benutzeroberfläche:
 
-* [Randleiste](#sidebar)
+* [Seitenleiste](#sidebar)
 * [Seitensymbolleiste](#page-toolbar)
 * [Komponenten-Symbolleiste](#component-toolbar)
 * Inhaltsbereich
@@ -32,9 +32,9 @@ Wenn Sie [Erstellen oder Bearbeiten einer vorhandenen interaktiven Kommunikation
 
 **A.** Seitenleiste **B.** Seitensymbolleiste **C.** Inhaltsbereich
 
-## Randleiste {#sidebar}
+## Seitenleiste {#sidebar}
 
-![Randleiste](assets/sidebar-comps-2.png)
+![Seitenleiste](assets/sidebar-comps-2.png)
 
 **A.** Kanal-Browser **B.** Inhalts-Browser **C.** Eigenschaften-Browser **D.** Asset-Browser **E.** Komponenten-Browser **F.** Datenquellen-Browser – Datenmodell **G.** Datenquellen-Browser – Übergeordnete Inhalte
 
@@ -46,9 +46,9 @@ Die Seitenleiste beinhaltet Folgendes:
 
 * **Kanalbrowser**
 
-Mit dem Kanal-Browser können Sie zwischen den Druck- und Webkanälen der interaktiven Kommunikation wechseln. Je nach Kanal, den Sie im Kanalbrowser ausgewählt haben, werden in den Browsern wie Inhalt und Komponenten die Optionen angezeigt.
+Mit dem Kanal-Browser können Sie zwischen Druck- und Internet-Kanal der interaktiven Kommunikation wechseln. Je nach dem Kanal, den Sie im Kanal-Browser ausgewählt haben, zeigen die Browser, z. B. Inhalts- und Komponenten-Browser, die Optionen an.
 
-* **Inhalts-Browser**: Im Inhalts-Browser können Sie die Objekthierarchie des Dokuments für den ausgewählten Kanal sehen. Der Autor kann zu einer bestimmten Komponente navigieren, indem er in der Dokumentobjektstruktur auf dieses Element tippt. Der Autor kann Objekte im Webkanal suchen und von dieser Struktur aus neu anordnen.
+* **Inhalts-Browser**: Im Inhalts-Browser können Sie die Objekthierarchie des Dokuments für den ausgewählten Kanal sehen. Autorinnen und Autoren können zu bestimmten Formularkomponenten navigieren, indem sie auf das entsprechende Element in der Dokumentobjektstruktur tippen. Autorinnen und Autoren können Objekte im Web-Kanal suchen und in dieser Struktur neu anordnen.
 
 * **Eigenschaften-Browser**
 
@@ -61,12 +61,12 @@ Mit dem Kanal-Browser können Sie zwischen den Druck- und Webkanälen der intera
 | **Komponente** | **Druckkanal** | **Web-Kanal** | **Funktionalität** |
 |---|---|---|---|
 | Diagramm | ✓ | ✓ | Fügt ein Diagramm hinzu, das Sie in einer interaktiven Kommunikation für die visuelle Darstellung zweidimensionaler Daten verwenden können, die aus einem Formulardatenmodellsammlungselement abgerufen werden. |
-| Dokumentfragment | ✓ | ✓ | Ermöglicht das Hinzufügen einer wiederverwendbaren Komponente, eines Textes, einer Liste oder einer Bedingung zu einer interaktiven Kommunikation. Die wiederverwendbare Komponente, die Sie einer interaktiven Kommunikation hinzufügen, kann entweder formulardatenmodellbasiert sein oder ohne ein Formulardatenmodell sein. |
+| Dokumentfragment | ✓ | ✓ | Ermöglicht Ihnen das Hinzufügen einer wiederverwendbaren Komponente, eines Textes, einer Liste oder einer Bedingung zu einer interaktiven Kommunikation. Die wiederverwendbare Komponente, die Sie einer interaktiven Kommunikation hinzufügen, kann entweder formulardatenmodellbasiert sein oder ohne ein Formulardatenmodell sein. |
 | Bild | ✓ | ✓ | Ermöglicht das Einfügen eines Bildes. |
-| Bereich | - | ✓ | Die Bedienfeldkomponente ist ein Platzhalter zum Gruppieren anderer Komponenten und steuert, wie eine Gruppe von Komponenten in einer interaktiven Kommunikation angeordnet wird. Mit einer Bedienfeldkomponente können Sie auch eine Gruppe von Komponenten für den Endbenutzer wiederholbar machen, z. B. in mehreren Einträgen, die zum Ausfüllen von Unterrichtsberechtigungen erforderlich sind. Es ist sinnvoll, einen Bereich jeweils für eine Registerkarte einer interaktiven Kommunikation mit mehreren Registerkarten zu verwenden. |
+| Bedienfeld | - | ✓ | Die Bedienfeldkomponente ist ein Platzhalter zum Gruppieren anderer Komponenten und steuert, wie eine Gruppe von Komponenten in einer interaktiven Kommunikation angeordnet wird. Mit einer Bedienfeldkomponente können Sie auch eine Gruppe von Komponenten für die Endbenutzenden wiederholbar machen, z. B. in mehreren Einträgen, die zum Ausfüllen von Bildungsnachweisen erforderlich sind. Es ist sinnvoll, einen Bereich jeweils für eine Registerkarte einer interaktiven Kommunikation mit mehreren Registerkarten zu verwenden. |
 | Tabelle | &#42; | ✓ | Fügt eine Tabelle hinzu, mit der Sie Daten in Zeilen und Spalten organisieren können. |
-| Zielbereich | &#42;&#42; | ✓ | Fügt einen Zielbereich in einen Webkanal ein, um die webkanalspezifischen Komponenten zu organisieren. |
-| Text | - | ✓ | Fügt Text zum Webkanal einer interaktiven Kommunikation hinzu. Text kann Formulardatenmodellobjekte verwenden, um den Inhalt dynamisch zu gestalten. |
+| Zielbereich | &#42;&#42; | ✓ | Fügt einen Zielbereich in einen Web-Kanal ein, um die Web-kanalspezifischen Komponenten zu organisieren. |
+| Text | - | ✓ | Fügt Text zum Web-Kanal einer interaktiven Kommunikation hinzu. Text kann Formulardatenmodellobjekte verwenden, um den Inhalt dynamisch zu gestalten. |
 
 &#42; Verwenden Sie Layout-Fragmente im Druckkanal, um Tabellen hinzuzufügen.
 
@@ -79,7 +79,7 @@ Mit dem Kanal-Browser können Sie zwischen den Druck- und Webkanälen der intera
 Die wichtigsten Punkte beim Arbeiten mit interaktiven Kommunikationskomponenten sind:
 
 * Jede Komponente verfügt über zugehörige Eigenschaften, die ihre Darstellung und Funktion steuern. Um die Eigenschaften einer Komponente zu konfigurieren, wählen Sie die Komponente aus und wählen Sie ![cmppr](assets/cmppr.png) , um die Komponenteneigenschaften im Eigenschaftenbrowser zu öffnen.
-* Eine Komponente wird mit ihrem Elementnamen gekennzeichnet. Wenn Sie ![cmppr](assets/cmppr.png)können Sie den Namen der Komponente ändern, indem Sie den Wert des Felds Elementname im Eigenschaftenbrowser ändern. Das Feld „Elementname“ akzeptiert nur Buchstaben, Zahlen, Bindestriche (-) und Unterstriche (_).  Andere Sonderzeichen sind nicht zulässig, und der Elementname sollte mit einem Buchstaben beginnen.
+* Eine Komponente wird mit ihrem Elementnamen gekennzeichnet. Wenn Sie ![cmppr](assets/cmppr.png)können Sie den Namen der Komponente ändern, indem Sie den Wert des Felds Elementname im Eigenschaftenbrowser ändern. Das Feld „Elementname“ akzeptiert nur Buchstaben, Zahlen, Bindestriche (-) und Unterstriche (_). Andere Sonderzeichen sind nicht zulässig, und der Elementname sollte mit einem Buchstaben beginnen.
 * Sie können die Titel-Eigenschaft einer Komponente einer interaktiven Kommunikation inline im Editor ändern, ohne den Eigenschaften-Browser zu öffnen, solange der Titel in der interaktiven Kommunikation sichtbar ist. Gehen Sie dazu wie folgt vor:
 
    1. Wählen Sie diese Option, um eine Komponente auszuwählen, die über eine Eigenschaft &quot;Title&quot;verfügt und deren Eigenschaft &quot;Hide title&quot;deaktiviert ist.
@@ -91,7 +91,7 @@ Die wichtigsten Punkte beim Arbeiten mit interaktiven Kommunikationskomponenten 
 
 ![Komponenten-Symbolleistenbeschriftungen](do-not-localize/component_toolbar_labels_new.png)
 
-Wenn Sie eine Komponente auswählen, wird eine Symbolleiste angezeigt, über die Sie mit ihr arbeiten können. Sie erhalten Optionen zum Ausschneiden, Einfügen, Verschieben und Festlegen von Eigenschaften der Komponenten. Ihre Optionen sind:
+Wenn Sie eine Komponente auswählen, wird eine Symbolleiste angezeigt, über die Sie mit ihr arbeiten können. Sie erhalten Optionen zum Ausschneiden, Einfügen, Verschieben und Angeben von Eigenschaften der Komponenten. Ihre Optionen sind:
 
 A.**Konfigurieren**: Wenn Sie **Konfigurieren**, sind die Komponenteneigenschaften in der Seitenleiste sichtbar.
 

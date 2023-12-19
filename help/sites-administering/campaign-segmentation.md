@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren der Segmentierung
-description: Erfahren Sie, wie Sie die Segmentierung für AEM Campaign konfigurieren.
+title: Segmentierung konfigurieren
+description: Erfahren Sie, wie Sie die Segmentierungen für AEM-Kampagnen konfigurieren.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -10,7 +10,7 @@ exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 36%
+ht-degree: 87%
 
 ---
 
@@ -19,21 +19,21 @@ ht-degree: 36%
 
 >[!NOTE]
 >
->Dieses Dokument behandelt die Konfiguration der Segmentierung, wie sie mit ClientContext verwendet wird. Informationen zum Konfigurieren von Segmenten mit ContextHub mithilfe der Touch-Benutzeroberfläche finden Sie unter [Konfigurieren der Segmentierung mit ContextHub](/help/sites-administering/segmentation.md).
+>Dieses Dokument behandelt die Konfiguration der Segmentierung zur Verwendung mit ClientContext. Informationen zum Konfigurieren von Segmenten mit ContextHub mithilfe der Touch-Benutzeroberfläche finden Sie unter [Konfigurieren der Segmentierung mit ContextHub](/help/sites-administering/segmentation.md).
 
-Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. Siehe [Segmentierungsglossar](/help/sites-authoring/segmentation-overview.md) für Informationen zur Funktionsweise der Segmentierung und zu Schlüsselbegriffen.
+Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. Im [Segmentierungs-Glossar](/help/sites-authoring/segmentation-overview.md) finden Sie Informationen zur Funktionsweise der Segmentierung sowie zu Schlüsselbegriffen.
 
 Je nachdem, welche Informationen Sie bereits über Ihre Site-Besucher gesammelt haben und welche Ziele Sie erreichen möchten, müssen Sie die für Ihre zielgerichteten Inhalte erforderlichen Segmente und Strategien definieren.
 
-Diese Segmente werden dann verwendet, um einem Besucher gezielt bestimmte Inhalte anzuzeigen. Dieser Inhalt wird im Abschnitt [Kampagnen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) der Website verwaltet. Hier definierte Teaser-Seiten können als Teaser-Absätze auf jeder Seite eingefügt werden und definieren, für welches Besuchersegment die spezialisierten Inhalte gelten.
+Diese Segmente werden dann verwendet, um einem Besucher gezielt bestimmte Inhalte anzuzeigen. Dieser Inhalt wird im Abschnitt [Kampagnen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) der Website verwaltet. Die hier definierten Teaser-Seiten können als Teaser-Abschnitte in jede beliebige Seite eingefügt werden, und es kann festgelegt werden, für welches Besuchersegment der jeweilige Inhalt gilt.
 
-Mit AEM können Sie einfach Segmente, Teaser und Kampagnen erstellen und aktualisieren. Außerdem können Sie damit die Ergebnisse Ihrer Definitionen überprüfen.
+Mit AEM können Sie einfach Segmente, Teaser und Kampagnen erstellen und aktualisieren. Außerdem können Sie damit die Ergebnisse Ihrer Segmentdefinitionen überprüfen.
 
-Die **Segment-Editor** ermöglicht die einfache Definition eines Segments:
+Mit dem **Segment-Editor** können Sie bequem Segmente festlegen:
 
-![Fenster &quot;Segment-Editor&quot;](assets/segmenteditor.png)
+![Fenster „Segment-Editor“](assets/segmenteditor.png)
 
-Sie können **Bearbeiten** jedes Segment, um eine **Titel**, **Beschreibung** und **Verstärken** Faktor. Mithilfe des Sidekicks können Sie **UND** und **ODER** Container zum Definieren der **Segmentlogik** und fügen Sie dann die erforderlichen hinzu **Segmenteigenschaften** , um die Auswahlkriterien zu definieren.
+Mit **Bearbeiten** können Sie jedes Segment bearbeiten, um einen **Titel**, eine **Beschreibung** und einen **Verstärkungsfaktor** festzulegen. Mithilfe des Sidekicks können Sie **UND**- und **ODER**-Container zum Definieren der **Segmentlogik** und dann die erforderlichen **Segmenteigenschaften** hinzufügen, um die Auswahlkriterien festzulegen.
 
 ## Verstärkungsfaktor {#boost-factor}
 
@@ -44,7 +44,7 @@ Jedes Segment verfügt über einen Parameter zum **Verstärken**, der als Gewich
 
 ## Segmentlogik {#segment-logic}
 
-Die folgenden logischen Container sind standardmäßig verfügbar und ermöglichen Ihnen das Erstellen der Logik Ihrer Segmentauswahl. Sie können aus dem Sidekick in den Editor gezogen werden:
+Die folgenden Logik-Container sind standardmäßig verfügbar und ermöglichen es Ihnen, die Logik Ihrer Segmentauswahl zu erstellen. Sie können vom Sidekick in den Editor gezogen werden:
 
 <table>
  <tbody>
@@ -59,9 +59,9 @@ Die folgenden logischen Container sind standardmäßig verfügbar und ermöglich
  </tbody>
 </table>
 
-## Segmenteigenschaften {#segment-traits}
+## Segmentmerkmale {#segment-traits}
 
-Die folgenden Segmenteigenschaften sind standardmäßig verfügbar. Sie können aus dem Sidekick in den Editor gezogen werden:
+Die folgenden Segmenteigenschaften sind standardmäßig verfügbar und können vom Sidekick in den Editor gezogen werden:
 
 <table>
  <tbody>
@@ -82,8 +82,8 @@ Die folgenden Segmenteigenschaften sind standardmäßig verfügbar. Sie können 
    <td>Schlüsselwörter, die mit Informationen aus der verweisenden Website abgeglichen werden. <br /> </td>
   </tr>
   <tr>
-   <td> Skript</td>
-   <td>Zu bewertender JavaScript-Ausdruck.<br /> </td>
+   <td> Script</td>
+   <td>Auszuwertender JavaScript-Ausdruck.<br /> </td>
   </tr>
   <tr>
    <td> Segment-Referenz <br /> </td>
@@ -123,70 +123,70 @@ Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird dieses Segment au
 So legen Sie Ihr neues Segment fest:
 
 1. Wählen Sie in der Leiste **Tools > Vorgänge > Konfiguration** aus.
-1. Klicken Sie auf **Segmentierung** im linken Bereich und navigieren Sie zur gewünschten Position.
-1. Erstellen Sie eine [neue Seite](/help/sites-authoring/editing-content.md#creatinganewpage) mithilfe der **Segment** Vorlage.
+1. Klicken Sie links auf die Seite **Segmentierung** und navigieren Sie zum gewünschten Speicherort.
+1. Erstellen Sie mit der **Segment**-Vorlage eine [neue Seite](/help/sites-authoring/editing-content.md#creatinganewpage).
 1. Öffnen Sie die neue Seite, um den Segment-Editor anzuzeigen:
 
    ![Der erste Schritt zum Erstellen eines Segments im Segment-Editor](assets/screen_shot_2012-02-02at101726am.png)
 
-1. Verwenden Sie entweder den Sidekick oder das Kontextmenü (in der Regel klicken Sie mit der rechten Maustaste auf die Schaltfläche und wählen Sie dann **Neu...** , um das Fenster Neue Komponente einfügen zu öffnen), um die benötigte Segmenteigenschaft zu finden. Ziehen Sie es dann auf die **Segment-Editor** wird er in der Standardeinstellung angezeigt **UND** Container.
+1. Verwenden Sie entweder den Sidekick oder das Kontextmenü (in der Regel wird das Fenster „Neue Komponente einfügen“ mit einem Rechtsklick auf die Schaltfläche und dann auf der Option **Neu…** geöffnet), um nach dem gewünschten Segmentmerkmal zu suchen. Ziehen Sie es dann in den **Segment-Editor**, wo es im **UND**-Standardcontainer angezeigt wird.
 1. Doppelklicken Sie auf die neue Eigenschaft, um die spezifischen Parameter zu bearbeiten, z. B. die Mausposition:
 
    ![Bearbeiten einer Komponente im Segment-Editor](assets/screen_shot_2012-02-02at103135am.png)
 
-1. Klicks **OK** , um Ihre Definition zu speichern:
-1. Sie können **Bearbeiten** die Segmentdefinition, um ihr eine **Titel**, **Beschreibung** und **[Verstärken](#boost-factor)** Faktor:
+1. Klicken Sie auf **OK**, um die Definition zu speichern:
+1. Mit **Bearbeiten** können Sie die Segmentdefinition bearbeiten, um ihr einen **Titel**, eine **Beschreibung** und einen **[Verstärkungsfaktor](#boost-factor)** zuzuweisen:
 
    ![Bearbeiten der Segmenteinstellungen im Segment-Editor](assets/screen_shot_2012-02-02at103547am.png)
 
-1. Fügen Sie bei Bedarf weitere Eigenschaften hinzu. Sie können boolesche Ausdrücke mit der **UND-Container** und **ODER-Container** Komponenten gefunden unter **Segmentlogik**. Mit dem Segmenteditor können Sie nicht mehr benötigte Eigenschaften oder Container löschen oder sie an neue Positionen innerhalb der Anweisung ziehen.
+1. Fügen Sie bei Bedarf weitere Eigenschaften hinzu. Mit den unter **Segmentlogik** gefundenen Segmenten aus dem **UND-Container** und dem **ODER-Container** können Sie boolesche Ausdrücke formulieren. Mit dem Segment-Editor können Sie nicht mehr benötigte Komponenten löschen oder diese an neue Positionen innerhalb der Anweisung ziehen.
 
 ### Verwenden von UND- und ODER-Containern {#using-and-and-or-containers}
 
-Sie können komplexe Segmente in AEM erstellen. Es ist hilfreich, einige grundlegende Punkte zu beachten:
+Sie können in AEM komplexe Segmente erstellen. Dabei ist es hilfreich, sich einige grundlegende Punkte bewusst zu machen:
 
 * Die oberste Ebene der Definition ist immer der ursprünglich erstellte UND-Container. Dieser kann nicht geändert werden, hat jedoch keine Auswirkungen auf den Rest Ihrer Segmentdefinition.
 * Stellen Sie sicher, dass die Verschachtelung Ihres Containers sinnvoll ist. Die Container können als die Klammern Ihres booleschen Ausdrucks betrachtet werden.
 
-Das folgende Beispiel wird verwendet, um Besucher auszuwählen, die entweder
+In folgendem Beispiel werden Besucherinnen bzw. Besucher ausgewählt, die entweder
 
-Männlich und zwischen 16 und 65 Jahren
+männlich und zwischen 16 und 65 Jahre alt sind
 
 ODER
 
-Frauen und zwischen 16 und 62 Jahren
+weiblich und zwischen 16 und 62 Jahre alt sind
 
-Da der Hauptoperator ODER ist, müssen Sie mit einem **ODER-Container**. Innerhalb dieses Abschnitts verfügen Sie über 2 UND-Anweisungen, für jede dieser müssen Sie eine **UND-Container**, zu dem Sie die einzelnen Eigenschaften hinzufügen können.
+Da der Hauptoperator ODER ist, müssen Sie mit einem **ODER-Container** beginnen. In diesem verfügen Sie über 2 UND-Anweisungen, für die Sie also jeweils einen **UND-Container** benötigen, zu dem Sie die einzelnen Merkmale hinzufügen können.
 
 ![Beispiel für die UND- und ODER-Operatoren im Segment-Editor](assets/screen_shot_2012-02-02at105145am.png)
 
 ## Testen der Anwendung eines Segments {#testing-the-application-of-a-segment}
 
-Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe der **[ClientContext](/help/sites-administering/client-context.md)**:
+Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe von **[ContextHub](/help/sites-administering/client-context.md)** getestet werden:
 
 1. Wählen Sie das zu testende Segment aus.
-1. Presse **[Strg+Alt+C](/help/sites-authoring/page-authoring.md#keyboardshortcuts)** , um die **[ClientContext](/help/sites-administering/client-context.md)**, der die erfassten Daten anzeigt. Zu Testzwecken können Sie bestimmte Werte **bearbeiten** oder ein anderes Profil **laden**, um dort die Auswirkungen zu sehen.
+1. Drücken Sie **[Strg+Alt+C](/help/sites-authoring/page-authoring.md#keyboardshortcuts)**, um den **[ClientContext](/help/sites-administering/client-context.md)** mit den erfassten Daten zu öffnen. Zu Testzwecken können Sie bestimmte Werte **bearbeiten** oder ein anderes Profil **laden**, um dort die Auswirkungen zu sehen.
 
 1. Je nach den definierten Eigenschaften können die zur aktuellen Seite verfügbaren Daten mit der Segmentdefinition übereinstimmen oder nicht. Der Status der Übereinstimmung wird unter der Definition angezeigt.
 
 Eine einfache Segmentdefinition kann auf dem Alter und Geschlecht des Benutzers basieren. Das Laden eines spezifischen Profils zeigt, dass das Segment erfolgreich aufgelöst wurde:
 
-![Verwenden des ClientContext-Fensters zum Testen eines AND-Segmentierungsvorgangs](assets/screen_shot_2012-02-02at105926am.png)
+![Testen einer UND-Segmentierung im ClientContext-Fenster](assets/screen_shot_2012-02-02at105926am.png)
 
 Oder nicht:
 
-![Verwenden des ClientContext-Fensters zum Testen eines NICHT-Segmentierungsvorgangs](assets/screen_shot_2012-02-02at110019am.png)
+![Testen einer NICHT-Segmentierung im ClientContext-Fenster](assets/screen_shot_2012-02-02at110019am.png)
 
 >[!NOTE]
 >
->Alle Eigenschaften werden sofort aufgelöst, obwohl sich die meisten beim Neuladen der Seite ändern. Änderungen an der Mausposition sind sofort sichtbar, sodass sie für Testzwecke nützlich sind.
+>Alle Merkmale werden sofort aufgelöst, obwohl die meisten sich nur beim erneuten Laden der Seite ändern. Änderungen der Mausposition sind sofort sichtbar, was für Testzwecke nützlich ist.
 
 Solche Tests können auch auf Inhaltsseiten und in Kombination mit **Teaser**-Komponenten durchgeführt werden.
 
-Wenn Sie den Mauszeiger über einen Teaser-Absatz bewegen, werden die angewendeten Segmente angezeigt, unabhängig davon, ob sie derzeit aufgelöst werden und warum daher die aktuelle Teaser-Instanz ausgewählt wurde:
+Wenn Sie den Mauszeiger über einen Teaser-Absatz bewegen, werden die angewendeten Segmente angezeigt, unabhängig davon, ob sie derzeit aufgelöst werden und warum die aktuelle Teaser-Instanz ausgewählt wurde:
 
-![Beispiel: Mauszeiger über ein Segment](assets/chlimage_1-47.png)
+![Beispiel: Mauszeiger über einem Segment](assets/chlimage_1-47.png)
 
-### Verwenden Ihres Segments {#using-your-segment}
+### Ihr Segment verwenden {#using-your-segment}
 
-Segmente werden derzeit in [Kampagnen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md). Sie werden verwendet, um den tatsächlichen Inhalt zu steuern, der für bestimmte Zielgruppen sichtbar ist. Siehe [Segmente](/help/sites-authoring/segmentation-overview.md) für weitere Informationen.
+Segmente werden derzeit in [Kampagnen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) verwendet. Mit ihnen wird festgelegt, welche Inhalte bestimmte Zielgruppen tatsächlich sehen können. Weitere Informationen finden Sie unter [Verstehen von Segmenten](/help/sites-authoring/segmentation-overview.md).

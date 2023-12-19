@@ -9,8 +9,8 @@ thumbnail: 39476.jpg
 exl-id: 48479725-8b52-4ff2-a599-d20958b26ee6
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 95%
+source-wordcount: '797'
+ht-degree: 97%
 
 ---
 
@@ -57,7 +57,7 @@ Das CIF-Add-on kann über [Software Distribution](https://experience.adobe.com/#
 
 Für die lokale CIF-Projektentwicklung mit dem AEM und dem CIF-Add-on gehen Sie wie folgt vor:
 
-1. Laden Sie AEM Version 6.5 herunter und installieren Sie das AEM 6.5 Service Pack. AEM 6.5 Service Pack 7 ist erforderlich, Adobe empfiehlt jedoch, das letzte verfügbare Service Pack zu installieren.
+1. Laden Sie AEM Version 6.5 herunter und installieren Sie das AEM 6.5 Service Pack. Das AEM 6.5 Service Pack 7 ist erforderlich. Adobe empfiehlt jedoch, das letzte verfügbare Service Pack zu installieren.
 
 1. Entpacken Sie die AEM.jar, um den `crx-quickstart`-Ordner zu erstellen, und führen Sie Folgendes aus:
 

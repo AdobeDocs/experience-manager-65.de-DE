@@ -9,7 +9,7 @@ exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ Sie können die folgenden Aktionen ausführen, um ein Arbeitselement zu bearbeit
 
 * **Schritt zurück**
 
-  Wenn Sie erkennen, dass ein Schritt oder eine Reihe von Schritten wiederholt werden muss, können Sie zu einem vorherigen Schritt zurückkehren. Auf diese Weise können Sie einen Schritt zur erneuten Verarbeitung auswählen, der zuvor im Workflow aufgetreten ist. Der Workflow kehrt zu dem von Ihnen angegebenen Schritt zurück und fährt dann von dort fort.
+  Wenn Sie erkennen, dass ein Schritt oder eine Reihe von Schritten wiederholt werden muss, können Sie zu einem vorherigen Schritt zurückkehren. Auf diese Weise können Sie einen früheren Schritt im Workflow zur erneuten Verarbeitung auswählen. Der Workflow kehrt zu dem von Ihnen angegebenen Schritt zurück und fährt dann von dort fort.
 
 ## Teilnehmen an einem Workflow {#participating-in-a-workflow}
 

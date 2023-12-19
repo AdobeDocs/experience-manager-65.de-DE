@@ -10,15 +10,15 @@ exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '2621'
-ht-degree: 80%
+ht-degree: 96%
 
 ---
 
 # Verwenden von Diagrammen mit interaktiver Kommunikation{#using-charts-in-interactive-communications}
 
-Ein Diagramm oder Diagramm ist eine visuelle Darstellung von Daten. Sie fasst große Mengen von Informationen in ein leicht verständliches visuelles Format zusammen, sodass die Empfänger der interaktiven Kommunikation komplexe Daten besser visualisieren, interpretieren und analysieren können.
+Ein Diagramm oder Graph ist eine visuelle Darstellung von Daten. Sie fasst große Mengen von Informationen in ein leicht verständliches visuelles Format zusammen, sodass die Empfängerinnen und Empfänger der interaktiven Kommunikation komplexe Daten besser visualisieren, interpretieren und analysieren können.
 
-Beim Erstellen einer interaktiven Kommunikation können Sie Diagramme hinzufügen, um zweidimensionale Daten vom Formulardatenmodell der Vorlage für die interaktive Kommunikation visuell darzustellen. Mit der Diagrammkomponente können Sie die folgenden Diagrammtypen hinzufügen und konfigurieren: Kreis, Spalte, Ring, Balken, Linie, Linie und Punkt, Punkt, Bereich und Quadrant.
+Beim Erstellen einer interaktiven Kommunikation können Sie Diagramme hinzufügen, um zweidimensionale Daten vom Formulardatenmodell der Vorlage für die interaktive Kommunikation visuell darzustellen. Mit der Diagrammkomponente können Sie die folgenden Arten von Diagrammen hinzufügen und konfigurieren: Torten-, Spalten-, Ring-, Balken-, Linien-, Linien- und Punkt-, Punkt-, Flächen- und Quadrantendiagramm.
 
 ## Hinzufügen und Konfigurieren eines Diagramms in einer interaktiven Kommunikation {#add-and-configure-chart-in-an-interactive-communication}
 
@@ -149,7 +149,7 @@ Konfigurieren Sie beim Erstellen von Diagrammen für Druck- und Web-Kanäle die 
   </tr>
   <tr>
    <td>QuickInfo</td>
-   <td><p>Format, in dem die QuickInfo beim Mouseover auf einem Datenpunkt im Diagramm in Webkanal angezeigt wird. Der Standardwert ist ${x}(${y}). Je nach Diagrammtyp werden die Variablen ${x} und ${y} dynamisch durch die entsprechenden Werte für die X-Achse und Y-Achse ersetzt und in der QuickInfo angezeigt, wenn Sie die Maus über einen Punkt, ein Segment oder einen Balken in der Quickinfo bewegen.</p> <p>Um die QuickInfo zu deaktivieren, lassen Sie die <span class="uicontrol">QuickInfo</code> Feld leer. Diese Option ist nicht auf Linien- und Bereichsdiagramme anwendbar. Beispiel: <a href="#chartoutputprintweb">Beispiel 1: Diagrammausgabe in Druck und Web</a>.</p> </td>
+   <td><p>Format, in dem die QuickInfo beim Mouseover auf einem Datenpunkt im Diagramm in Webkanal angezeigt wird. Der Standardwert ist ${x}(${y}). Je nach Diagrammtyp werden die Variablen ${x} und ${y} dynamisch durch die entsprechenden Werte für die X-Achse und Y-Achse ersetzt und in der QuickInfo angezeigt, wenn Sie die Maus über einen Punkt, ein Segment oder einen Balken in der Quickinfo bewegen.</p> <p>Wenn Sie QuickInfo deaktivieren möchten, lassen Sie das Feld <span class="uicontrol">QuickInfo</code> leer. Diese Option ist nicht auf Linien- und Bereichsdiagramme anwendbar. Beispiel: <a href="#chartoutputprintweb">Beispiel 1: Diagrammausgabe in Druck und Web</a>.</p> </td>
    <td>Web</td>
   </tr>
   <tr>
@@ -163,12 +163,12 @@ Konfigurieren Sie beim Erstellen von Diagrammen für Druck- und Web-Kanäle die 
      <li><strong>Punktfarbe</strong>: Verfügbar für Punktdiagramme sowie Linien- und Punktdiagramme, um den hexadezimalen Farbwert für den Punkt im Diagramm anzugeben.<br /> </li>
      <li><strong>Linienfarbe</strong>: Verfügbar für Bereichsdiagramme, um den hexadezimalen Farbwert für den Bereich unter der Linie im Diagramm anzugeben.</li>
      <li><strong>Referenzpunkt und Bindungstyp: </strong>Verfügbar für Quadrantendiagramme, um<strong> </strong>den Bindungstyp für den Referenzpunkt angeben. Verwenden Sie die statische Text- oder Datenmodellobjekteigenschaft, um den Wert für den Referenzpunkt zu definieren.</li>
-     <li><strong>Bezugspunkt &gt; X-Achse: </strong>Verfügbar für Quadrantendiagramme, wenn Sie <span class="uicontrol">Statisch</code> aus der Dropdownliste Bindungstyp , um den X-Achsenwert für den Referenzpunkt anzugeben.</li>
-     <li><strong>Bezugspunkt &gt; Y-Achse: </strong>Verfügbar für Quadrantendiagramme, wenn Sie <span class="uicontrol">Statisch</code> aus der Dropdownliste Bindungstyp , um den Wert der Y-Achse für den Referenzpunkt anzugeben.</li>
-     <li><strong>Referenzpunkt &gt; Datenmodellobjekt für Serie: </strong>Verfügbar für mehrere Serien-Quadranten-Diagramme, wenn Sie <span class="uicontrol">Datenmodellobjekt</code> aus der Dropdownliste Bindungstyp aus. Definieren Sie die Formulareigenschaft des Formdatenmodells, um die Serie für den Referenzpunkt zu identifizieren. </li>
-     <li><strong>Referenzpunkt &gt; Datenmodellobjektwert für Serie: </strong>Verfügbar für mehrere Serien-Quadranten-Diagramme, wenn Sie <span class="uicontrol">Datenmodellobjekt</code> aus der Dropdownliste Bindungstyp aus. Die Eigenschaft des Formulardatenmodellobjekts für Serien und der in diesem Feld angegebene Wert werden verwendet, um die Serie für den Referenzpunkt zu identifizieren.</li>
-     <li><strong>Referenz-Punkt &gt; Datenmodellobjekt für Referenzpunkt: </strong>Verfügbar für Quadrantendiagramme, wenn Sie <span class="uicontrol">Datenmodellobjekt</code> aus der Dropdownliste Bindungstyp aus. Definieren Sie eine Objekteigenschaft des Formulardatenmodells, die eine Geschwister-Entität der auf der X-Achse und der Y-Achse dargestellten Eigenschaften darstellt. Definieren Sie für mehrere Serien außerdem eine Datenmodellobjekteigenschaft, die eine untergeordnete Entität der für die Serie definierten Datenmodellobjekteigenschaft ist.</li>
-     <li><strong>Reference Point &gt; Data Model Object Value for Reference Point: </strong>Verfügbar für Quadrantendiagramme, wenn Sie <span class="uicontrol">Datenmodellobjekt</code> aus der Dropdownliste Bindungstyp aus. Verwenden Sie die Objekteigenschaft des Formulardatenmodells für den Referenzpunkt und den in diesem Feld definierten Wert, um den Referenzpunkt für das Diagramm zu identifizieren.<br /> <strong>Quadrantenbeschriftungen &gt; Oben links</strong>: Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten oben links anzugeben.</li>
+     <li><strong>Bezugspunkt &gt; X-Achse: </strong>Verfügbar für Quadrantendiagramme, wenn Sie <span class="uicontrol">Statisch</code> aus der Dropdownliste „Bindungstyp“ wählen, um den X-Achsenwert für den Referenzpunkt anzugeben.</li>
+     <li><strong>Bezugspunkt &gt; Y-Achse: </strong>Verfügbar für Quadrantendiagramme, wenn Sie <span class="uicontrol">Statisch</code> aus der Dropdownliste „Bindungstyp“ wählen, um den Y-Achsenwert für den Referenzpunkt anzugeben.</li>
+     <li><strong>Referenzpunkt &gt; Datenmodellobjekt für Serien: </strong>Verfügbar für Quadrantendiagramme mit mehreren Serien, wenn Sie <span class="uicontrol">Datenmodellobjekt</code> aus der Dropdown-Liste „Bindungstyp“ wählen. Definieren Sie die Formulareigenschaft des Formulardatenmodells, um die Serie für den Referenzpunkt zu identifizieren. </li>
+     <li><strong>Referenzpunkt &gt; Datenmodellobjektwert für Serien: </strong>Verfügbar für Quadrantendiagramme mit mehreren Serien, wenn Sie <span class="uicontrol">Datenmodellobjekt</code> aus der Dropdown-Liste „Bindungstyp“ wählen. Die Eigenschaft des Formulardatenmodellobjekts für Serien und der in diesem Feld angegebene Wert werden verwendet, um die Serie für den Referenzpunkt zu identifizieren.</li>
+     <li><strong>Referenzpunkt &gt; Datenmodellobjekt für Referenzpunkt: </strong>Verfügbar für Quadrantendiagramme, wenn Sie <span class="uicontrol">Datenmodellobjekt</code> aus der Dropdown-Liste „Bindungstyp“ wählen. Definieren Sie eine Objekteigenschaft des Formulardatenmodells, die eine Geschwister-Entität der auf der X-Achse und der Y-Achse dargestellten Eigenschaften darstellt. Definieren Sie für mehrere Serien außerdem eine Datenmodellobjekteigenschaft, die eine untergeordnete Entität der für die Serie definierten Datenmodellobjekteigenschaft ist.</li>
+     <li><strong>Referenzpunkt &gt; Datenmodellobjektwert für Referenzpunkt: </strong>Verfügbar für Quadrantendiagramme, wenn Sie <span class="uicontrol">Datenmodellobjekt</code> aus der Dropdown-Liste „Bindungstyp“ wählen. Verwenden Sie die Objekteigenschaft des Formulardatenmodells für den Referenzpunkt und den in diesem Feld definierten Wert, um den Referenzpunkt für das Diagramm zu identifizieren.<br /> <strong>Quadrantenbeschriftungen &gt; Oben links</strong>: Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten oben links anzugeben.</li>
      <li><strong>Quadrantenbeschriftungen &gt; Oben rechts</strong>: Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten oben rechts anzugeben.</li>
      <li><strong>Quadranten Beschriftungen &gt; Unten rechts: </strong>Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten unten rechts anzugeben.</li>
      <li><strong>Quadranten Beschriftungen &gt; Unten links: </strong>Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten unten links anzugeben.</li>
@@ -178,7 +178,7 @@ Konfigurieren Sie beim Erstellen von Diagrammen für Druck- und Web-Kanäle die 
  </tbody>
 </table>
 
-## Funktionen im Diagramm verwenden {#use-functions-in-chart}
+## Verwenden von Funktionen im Diagrammen {#use-functions-in-chart}
 
 Sie können ein Diagramm so konfigurieren, dass es mithilfe statistischer Funktionen Werte aus den Quelldaten für die Darstellung im Diagramm berechnet. Durch Anwenden von Funktionen in einem Diagramm können Sie Daten grafisch darstellen, die nicht direkt vom Formulardatenmodell bereitgestellt werden.
 
@@ -208,9 +208,9 @@ Weitere Informationen finden Sie in [Beispiel 2: Anwendung von Summen- und Häuf
 
 ### Benutzerdefinierte Funktionen im Web-Kanal {#customfunctionsweb}
 
-Neben den Standardfunktionen in Diagrammen können Sie auch benutzerdefinierte Funktionen in JavaScript™ schreiben und in der Funktionsliste der Diagrammkomponente für den Webkanal verfügbar machen.
+Neben der Verwendung der Standardfunktionen in Diagrammen können Sie auch benutzerdefinierte Funktionen in JavaScript™ schreiben und in der Funktionsliste der Diagrammkomponente für den Web-Kanal verfügbar machen.
 
-Eine Funktion akzeptiert ein Array oder Werte und einen Kategorienamen als Eingaben und gibt einen Wert zurück. Beispiel:
+Eine Funktion akzeptiert ein Array oder Werte sowie einen Kategorienamen als Eingaben und gibt einen Wert zurück. Beispiel:
 
 ```javascript
 Multiply(valueArray, category) {
@@ -224,7 +224,7 @@ Multiply(valueArray, category) {
 
 Nachdem Sie eine benutzerdefinierte Funktion geschrieben haben, führen Sie die folgenden Schritte aus, um sie für die Verwendung in der Diagrammkonfiguration verfügbar zu machen:
 
-1. Fügen Sie die benutzerdefinierte Funktion in der Client-Bibliothek hinzu, die mit der relevanten interaktiven Kommunikation verknüpft ist. Weitere Informationen finden Sie unter [Konfigurieren der Sendeaktion](/help/forms/using/configuring-submit-actions.md) und [Verwenden von Client-seitigen Bibliotheken](/help/sites-developing/clientlibs.md).
+1. Fügen Sie die benutzerdefinierte Funktion in der Client-Bibliothek hinzu, die mit der entsprechenden interaktiven Kommunikation verknüpft ist. Weitere Informationen finden Sie unter [Konfigurieren der Sendeaktion](/help/forms/using/configuring-submit-actions.md) und [Verwenden von Client-seitigen Bibliotheken](/help/sites-developing/clientlibs.md).
 
 1. Um die benutzerdefinierte Funktion in der Dropdownliste „Funktion“ anzuzeigen, erstellen Sie in CRXDe Lite einen `nt:unstructured`-Knoten im Apps-Ordener mit den folgenden Eigenschaften:
 
@@ -235,7 +235,7 @@ Nachdem Sie eine benutzerdefinierte Funktion geschrieben haben, führen Sie die 
 
    * Fügen Sie die Eigenschaft `qtip` mit einem Wert hinzu, der eine kurze Beschreibung der benutzerdefinierten Funktion darstellt. Es wird als QuickInfo angezeigt, wenn der Mauszeiger über den Funktionsnamen in der Dropdown-Liste **Funktion** bewegt wird.
 
-1. Klicks **Alle speichern** , um die Konfiguration zu speichern.
+1. Klicken Sie auf **Alles Speichern**, um die Konfiguration zu speichern.
 
 Die Funktion ist jetzt für die Verwendung im Diagramm verfügbar.
 
@@ -243,7 +243,7 @@ Die Funktion ist jetzt für die Verwendung im Diagramm verfügbar.
 
 Auf der Registerkarte „Grundeinstellungen“ definieren Sie die Art des Diagramms, die Quellformulardatenmodelleigenschaften, die Daten enthalten, sowie die Beschriftungen, die auf der X-Achse und Y-Achse des Diagramms dargestellt werden können. Optional definieren Sie hier auch die statistische Funktion, um die Werte für die grafische Darstellung auf dem Diagramm zu berechnen.
 
-Im Folgenden wird das Minimum der erfoderlichen Informationen in den Grundeinstellungen anhand des Beispiels einer Kreditkartenabrechnung, die mit einer interaktiven Kommunikation erstellt wurde, detailliert erläutert. Angenommen, Sie möchten ein Diagramm erstellen, in dem die Höhe der verschiedenen Ausgaben in der Anweisung dargestellt wird. Sie möchten verschiedene Arten von Diagrammen für die Druck- und Webausgabe der interaktiven Kommunikation verwenden.
+Im Folgenden wird das Minimum der erfoderlichen Informationen in den Grundeinstellungen anhand des Beispiels einer Kreditkartenabrechnung, die mit einer interaktiven Kommunikation erstellt wurde, detailliert erläutert. Angenommen, Sie möchten ein Diagramm erstellen, in dem die Höhe der verschiedenen Ausgaben in der Anweisung dargestellt wird. Sie möchten verschiedene Arten von Diagrammen für die Druck- und Web-Ausgabe der interaktiven Kommunikation verwenden.
 
 ### Säulendiagramm zum Ausdrucken {#columnchartprint}
 
@@ -280,9 +280,9 @@ Durch Anwenden von Funktionen in einem Diagramm können Sie Daten darstellen, di
 
 Liniendiagramm ohne Funktion mit zwei „Debit für AirBnB“-Transaktionen
 
-### Sum-Funktion {#sum-function}
+### Summenfunktion {#sum-function}
 
-Sie können die Funktion sum anwenden, um Werte mehrerer Instanzen derselben Dateneigenschaft hinzuzufügen und sie nur einmal anzuzeigen. Im folgenden Diagramm wird zum Beispiel die Summenfunktion auf die Y-Achse angewendet, um die Summe der drei „Debit für AirBnB“-Transaktionen (2050 und 1050) zu addieren und nur eine Transaktion (3100) anzuzeigen.
+Sie können die Summenfunktion anwenden, um Werte mehrerer Instanzen derselben Dateneigenschaft zu addieren und sie nur einmal anzuzeigen. Im folgenden Diagramm wird zum Beispiel die Summenfunktion auf die Y-Achse angewendet, um die Summe der drei „Debit für AirBnB“-Transaktionen (2050 und 1050) zu addieren und nur eine Transaktion (3100) anzuzeigen.
 
 Die Summenfunktion kann Diagramme nützlicher machen, wenn Sie die Summe für viele Instanzen derselben Dateneigenschaft sortieren und anzeigen möchten.
 

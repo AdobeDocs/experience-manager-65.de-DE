@@ -1,13 +1,13 @@
 ---
 title: Anreichern von Produktdaten mit zugehörigen AEM-Inhalten
-description: Erfahren Sie, wie Marketingexperten Produktdaten mit zugehörigen Inhalten aus Adobe Experience Manager anreichern können, indem sie Marketinginhalte dynamisch zu Produktseiten hinzufügen. Dadurch eröffnen sich für Marketing-Experten zahlreiche Möglichkeiten, bestimmte Produktseiten mit zusätzlichen Inhalten wie Bildern und Videos anzusprechen.
+description: Erfahren Sie, wie Marketing-Fachleute Produktdaten mit zugehörigen Inhalten aus Adobe Experience Manager anreichern können, indem sie Marketing-Inhalte dynamisch zu Produktseiten hinzufügen. Dadurch eröffnen sich für Marketing-Fachleute zahlreiche Möglichkeiten, auf bestimmten Produktseiten zusätzliche Inhalte wie Bilder und Videos bereitzustellen.
 sub-product: Commerce
 feature: Commerce Integration Framework
 exl-id: 1a069fbc-c036-419a-b585-6aa43e15de16
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 

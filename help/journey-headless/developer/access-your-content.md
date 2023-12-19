@@ -4,8 +4,8 @@ description: In diesem Teil der AEM Headless-Entwickler-Tour lernen Sie, wie Sie
 exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
 source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1332'
-ht-degree: 95%
+source-wordcount: '1301'
+ht-degree: 98%
 
 ---
 
@@ -79,7 +79,7 @@ GraphQL is used in various locations in AEM; for example:
 
 ## AEM-GraphQL-API {#aem-graphql-api}
 
-Die AEM GraphQL-API ist eine angepasste Version, die auf der standardmäßigen GraphQL-API-Spezifikation basiert und speziell konfiguriert wurde, um (komplexe) Abfragen Ihrer Inhaltsfragmente durchzuführen.
+Die AEM-GraphQL-API ist eine angepasste Version, die auf der standardmäßigen GraphQL-API-Spezifikation basiert und speziell so konfiguriert wurde, dass Sie (komplexe) Abfragen Ihrer Inhaltsfragmente durchführen können.
 
 Inhaltsfragmente werden verwendet, da der Inhalt nach Inhaltsfragmentmodellen strukturiert ist. Dies erfüllt eine Grundanforderung von GraphQL.
 
@@ -133,7 +133,7 @@ Die **Fragmentreferenz**:
 
 * ist ein bestimmter Datentyp, der beim Definieren eines Inhaltsfragmentmodells verfügbar ist,
 * verweist auf ein anderes Fragment, abhängig von einem bestimmten Inhaltsfragmentmodell,
-* Ermöglicht das Erstellen und anschließende Abrufen strukturierter Daten.
+* Ermöglicht es Ihnen, strukturierte Daten zu erstellen und dann abzurufen.
 
    * Wenn als **multifeed** definiert, können mehrere Unterfragmente vom primären Fragment referenziert (abgerufen) werden.
 

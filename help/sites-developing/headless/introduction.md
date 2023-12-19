@@ -4,8 +4,8 @@ description: Erfahren Sie, wie die leistungsstarken Headless-Funktionen von AEM�
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 91%
+source-wordcount: '507'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ Die Headless-Implementierung verzichtet auf das Seiten- und Komponenten-Manageme
 
 ## Vergleich von Headful und Headless {#headful-headless}
 
-Dieses Dokument konzentriert sich auf das vollständige Headless-Implementierungsmodell von AEM. Headful und Headless müssen jedoch keine binäre Wahl in AEM sein. Headless-Funktionen können verwendet werden, um Content zu verwalten und für verschiedene Endpunkte bereitzustellen sowie um Inhaltserstellern gleichzeitig die Bearbeitung von Single Page Applications zu ermöglichen. Alles in AEM.
+Dieses Dokument konzentriert sich auf das vollständige Headless-Implementierungsmodell von AEM. In AEM muss die Entscheidung zwischen Headful und Headless aber keine Entweder-oder-Entscheidung sein. Headless-Funktionen können verwendet werden, um Content zu verwalten und für verschiedene Endpunkte bereitzustellen sowie um Inhaltserstellern gleichzeitig die Bearbeitung von Single Page Applications zu ermöglichen. Alles in AEM.
 
 >[!TIP]
 >
@@ -55,4 +55,4 @@ Es stehen mehrere Ressourcen zur Verfügung, mit denen Sie mit AEM Headless-Funk
 | [Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) | **Benutzer, die noch nicht mit AEM- und Headless**-Technologien vertraut sind, erhalten hier eine umfassende Einführung in AEM und seine Headless-Funktionen, von der Theorie des Headless-Systems bis zum Go-Live Ihres ersten Headless-Projekts. | -Anleitung | Entwickler, die noch **nicht mit AEM und Headless vertraut** sind | 1 Stunde |
 | [Erste Schritte mit Headless](/help/sites-developing/headless/getting-started/introduction.md) | **Erfahrene AEM-Anwender**, die eine kurze Zusammenfassung der wichtigsten AEM-Headless-Funktionen benötigen, sollten sich diesen Schnellstart-Überblick ansehen. | Schnellstart | Entwickler, Administratoren **mit AEM-Erfahrung** | 20 Minuten |
 | [Praktisches Tutorial für die ersten Schritte mit AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=de) | **Wenn Sie einen praxisnahen Ansatz bevorzugen und mit AEM vertraut sind**: dieses Tutorial steigt direkt in die Erstellung eines einfachen Headless-Projekts ein. | Tutorial | Entwickler | 2 Stunden |
-| [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de) | Diese Sammlung von Ressourcen wird für beide **new** und **erfahrenen** Entwickler. | Sammlung von Ressourcen | Entwicklerinnen und Entwickler  | |
+| [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de) | Diese Ressourcensammlung wird für **neue** sowie für **erfahrene** Entwickelnde bereitgestellt. | Ressourcensammlung | Entwickelnde | |

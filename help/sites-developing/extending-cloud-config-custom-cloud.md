@@ -1,6 +1,6 @@
 ---
 title: Erstellen eines individuellen Cloud-Services
-description: Der Standardsatz von Cloud Services kann mit benutzerdefinierten Cloud Service-Typen erweitert werden
+description: Die standardmäßigen Cloud-Services können durch benutzerdefinierte Cloud-Service-Typen erweitert werden
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -9,19 +9,19 @@ exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 49%
+ht-degree: 93%
 
 ---
 
 # Erstellen eines individuellen Cloud-Services{#creating-a-custom-cloud-service}
 
-Der Standardsatz von Cloud Services kann mit benutzerdefinierten Cloud Service-Typen erweitert werden. Auf diese Weise können Sie benutzerdefiniertes Markup strukturiert in die Seite einfügen. Dies ist vor allem für Analytics-Anbieter von Drittanbietern wie Google Analytics, CharterBeat usw. nützlich. Cloud-Services werden von übergeordneten Seiten auf untergeordnete Seiten übernommen. Dabei kann die Übernahme auf jeder Ebene unterbrochen werden.
+Die standardmäßigen Cloud-Services können durch benutzerdefinierte Cloud-Service-Typen erweitert werden. So können Sie auf strukturierte Weise benutzerdefiniertes Markup in die Seite einfügen. Dies ist vor allem für Analytics-Anbieter von Drittanbietern wie Google Analytics, CharterBeat usw. nützlich. Cloud-Services werden von übergeordneten Seiten auf untergeordnete Seiten übernommen. Dabei kann die Übernahme auf einer beliebigen Ebene unterbrochen werden.
 
 >[!NOTE]
 >
->Diese schrittweise Anleitung zum Erstellen eines Cloud Service ist ein Beispiel für die Verwendung von Google Analytics. Alles trifft möglicherweise nicht auf Ihren Anwendungsfall zu.
+>In dieser Schritt-für-Schritt-Anleitung zum Erstellen eines Cloud-Service wird Google Analytics als Beispiel verwendet. Einiges trifft auf Ihren Anwendungsfall möglicherweise nicht zu.
 
-1. Erstellen Sie unter CRXDE Lite einen Knoten unter `/apps`:
+1. Erstellen Sie in CRXDE Lite einen Knoten unter `/apps`:
 
    * **Name**: `acs`
    * **Typ**: `nt:folder`
@@ -41,7 +41,7 @@ Der Standardsatz von Cloud Services kann mit benutzerdefinierten Cloud Service-T
    * **Name**: templates
    * **Typ**: `sling:Folder`
 
-1. Rechtsklick `/apps/acs/analytics/components`. Auswählen **Erstellen...** gefolgt von **Komponente erstellen...** Im sich öffnenden Dialogfeld können Sie Folgendes angeben:
+1. Rechtsklick `/apps/acs/analytics/components`. Wählen Sie **Erstellen…** und dann **Komponente erstellen…** aus. Im Dialogfeld, das sich öffnet, können Sie Folgendes angeben:
 
    * **Bezeichnung**: `googleanalyticspage`
    * **Titel**: `Google Analytics Page`
@@ -59,7 +59,7 @@ Der Standardsatz von Cloud Services kann mit benutzerdefinierten Cloud Service-T
    * **Name:** `cq:defaultView`
    * **Wert:** `html`
 
-1. Erstellen Sie eine Datei mit dem Namen `content.jsp` under `/apps/acs/analytics/components/googleanalyticspage`mit folgendem Inhalt:
+1. Erstellen Sie unter `/apps/acs/analytics/components/googleanalyticspage` eine Datei mit dem Namen `content.jsp` und dem folgenden Inhalt:
 
    ```xml
    <%@page contentType="text/html"
@@ -119,7 +119,7 @@ Der Standardsatz von Cloud Services kann mit benutzerdefinierten Cloud Service-T
    * **Eigenschaften**:
 
       * **Name**: `fieldLabel`
-      * **Typ**: String
+      * **Typ**: Zeichenfolge
       * **Wert**: Konto-ID
 
       * **Name**: `fieldDescription`
@@ -147,7 +147,7 @@ Der Standardsatz von Cloud Services kann mit benutzerdefinierten Cloud Service-T
    * **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (im Vorlagenknoten, nicht im jcr:content-Knoten)
    * **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (in jcr:content)
 
-1. Erstellen einer Komponente: `/apps/acs/analytics/components/googleanalytics`.
+1. Erstellen Sie eine Komponente: `/apps/acs/analytics/components/googleanalytics`.
 
    Fügen Sie den folgenden Inhalt zu `googleanalytics.jsp` hinzu:
 
@@ -201,7 +201,7 @@ Der Standardsatz von Cloud Services kann mit benutzerdefinierten Cloud Service-T
    * **Typ**: `String`
    * **Wert**: `acs/analytics/components/googleanalytics`
 
-1. Navigieren Sie zur neu erstellten Dienstseite ( `http://localhost:4502/etc/cloudservices/googleanalytics.html`) und klicken Sie auf die **+** , um eine Konfiguration zu erstellen:
+1. Navigieren Sie zu der neu erstellten Service-Seite (`http://localhost:4502/etc/cloudservices/googleanalytics.html`) und klicken Sie auf **+**, um eine Konfiguration zu erstellen:
 
    * **Übergeordnete Konfiguration**: `/etc/cloudservices/googleanalytics`
    * **Titel:**  `My First GA Config`
@@ -209,5 +209,5 @@ Der Standardsatz von Cloud Services kann mit benutzerdefinierten Cloud Service-T
    Wählen Sie **Google Analytics Configuration** und klicken Sie auf **Erstellen**.
 
 1. Geben Sie eine **Konto-ID**, beispielsweise `AA-11111111-1`. Klicken Sie auf **OK**.
-1. Navigieren Sie zu einer Seite und fügen Sie die neu erstellte Konfiguration in den Seiteneigenschaften unter dem **Cloud Service** Registerkarte.
-1. Der Seite wird das benutzerdefinierte Markup hinzugefügt.
+1. Navigieren Sie zu einer Seite und fügen Sie die neu erstellte Konfiguration in den Seiteneigenschaften unter der Registerkarte **Cloud-Services** hinzu.
+1. Das benutzerdefinierte Markup wird der Seite hinzugefügt.

@@ -9,7 +9,7 @@ exl-id: 6debb1a7-7889-4fdd-87c7-ecb87cc0b1f5
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 77%
+ht-degree: 88%
 
 ---
 
@@ -43,7 +43,7 @@ In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ei
 
    `"EventName Selector": "Function"`
 
-   Wenn Sie ein JavaScript-Ereignis mit dem Namen `EventName`auf einem HTML-Element, das von `Selector`, die `Function`aufgerufen wird.
+   Wenn Sie ein JavaScript-Ereignis mit dem Namen `EventName` auf einem durch `Selector` angegebenen HTML-Element auslösen, wird die `Function` aufgerufen.
 
 1. Suchen
 
@@ -66,6 +66,6 @@ In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ei
      „swipe .last_empty_div“ : „onTaskClick“,
 
 1. Speichern und schließen Sie die Datei `task.js`.
-1. Erstellen Sie die AEM Forms-App und führen Sie sie aus. Jetzt können Sie eine mithilfe mit einem Wischen nach links und rechts öffnen.
+1. Erstellen Sie die AEM Forms-App und führen Sie sie aus. Jetzt können Sie eine Aufgabe mit einem Wischen nach links und rechts öffnen.
 
 Auf ähnliche Weise können Sie Änderungen in anderen Ansichten für verschiedene Kombinationen von Gesten, HTML-Elementen und Funktionen vornehmen.

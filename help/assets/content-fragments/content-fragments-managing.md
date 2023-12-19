@@ -6,8 +6,8 @@ role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
 source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 94%
+source-wordcount: '1712'
+ht-degree: 96%
 
 ---
 
@@ -106,11 +106,11 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
 * **Checkout**
 * **Eigenschaften**
 
-   * Hiermit können Sie die Metadaten des Fragments anzeigen und/oder bearbeiten.
+   * Ermöglicht es Ihnen, die Metadaten eines Fragments anzuzeigen und/oder zu bearbeiten.
 
 * **Bearbeiten**
 
-   * Ermöglicht Ihnen Folgendes [Öffnen Sie das Fragment zur Bearbeitung des Inhalts.](/help/assets/content-fragments/content-fragments-variations.md) zusammen mit den zugehörigen Elementen, Varianten, verknüpften Inhalten und Metadaten.
+   * Ermöglicht es Ihnen, das [Fragment zum Bearbeiten von Inhalten](/help/assets/content-fragments/content-fragments-variations.md), einschließlich seiner Elemente, Varianten, dazugehörigen Inhalte sowie Metadaten, zu öffnen.
 
 * **Tags verwalten**
 * **Zu Sammlung**
@@ -333,7 +333,7 @@ Sie werden nebeneinander angezeigt, wobei:
    * Eingefügter Text: Grün
    * Ersetzter Text: Blau
 
-* Über das Symbol für den Vollbildmodus können Sie jede Version einzeln öffnen und dann wieder zur parallelen Ansicht wechseln
+* Über das Vollbildsymbol können Sie jede Version separat öffnen und dann wieder zur parallelen Ansicht wechseln.
 * Sie die jeweilige Version **wiederherstellen** können.
 * Sie über **Fertig** zur Konsole zurückkehren.
 

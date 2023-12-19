@@ -10,7 +10,7 @@ exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 81%
+ht-degree: 84%
 
 ---
 
@@ -48,7 +48,7 @@ Wenn Sie beispielsweise Versionen vergleichen, wird die aktuelle Version auf der
 
 Die Quelle beider Seiten wird deutlich in der Kopfzeile am oberen Rand des Browser-Fensters angezeigt.
 
-![In der Kopfzeile angezeigte Quelle](assets/chlimage_1-109.png)
+![Im Header angezeigte Quelle](assets/chlimage_1-109.png)
 
 Der Vergleich erkennt Änderungen auf Komponenten- und HTML-Ebene. Geänderte Elemente werden mit unterschiedlichen Farben hervorgehoben.
 
@@ -72,9 +72,9 @@ Um sich auf bestimmte Inhalte zu konzentrieren, können Sie auf das Vollbildsymb
 
 ![Vollbildmodussymbol](do-not-localize/chlimage_1-18.png)
 
-Die gewählte Seite füllt dann das gesamte Fenster aus, aber die Leiste am oberen Rand bleibt weiterhin angezeigt und bietet Ihnen die Möglichkeit, zwischen den zwei Seiten zu wechseln.
+Die gewählte Seite füllt dann das gesamte Fenster aus, aber die Leiste am oberen Rand bleibt weiterhin sichtbar und bietet Ihnen die Möglichkeit, zwischen den zwei Seiten zu wechseln.
 
-![Mit der oberen Leiste können Sie zwischen Seiten wechseln](assets/chlimage_1-110.png)
+![Mit der oberen Leiste können Sie zwischen Seiten wechseln.](assets/chlimage_1-110.png)
 
 Sie können die Vollbildansicht auch schließen, indem Sie auf das Symbol „Vollbildmodus beenden“ klicken.
 

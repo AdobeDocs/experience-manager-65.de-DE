@@ -1,10 +1,10 @@
 ---
 title: Experience Fragments
-description: Experience Fragments  in der Adobe Experience Manager Sites-Bearbeitung.
+description: Experience Fragments in Adobe Experience Manager Sites Authoring
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1440'
+source-wordcount: '1441'
 ht-degree: 95%
 
 ---
@@ -69,7 +69,7 @@ Folgendes wird empfohlen:
 
 * [Konfigurieren der zulässigen Vorlagen für diese Ordner](#configure-allowed-templates-folder).
 
-Wenn Sie Ordner erstellen, können Sie:
+Beim Erstellen von Ordnern können Sie:
 
 * eine aussagekräftige Struktur für Ihre Experience Fragments erstellen; zum Beispiel nach Klassifizierung
 
@@ -219,7 +219,7 @@ Je nach Ihren Anforderungen können Sie Varianten eines Experience Fragments ers
 
    ![xf-authoring-06](assets/xf-authoring-06.png)
 
-1. **Erstellen** ermöglicht die Erstellung:
+1. Mit **Erstellen** können Sie Folgendes erstellen:
 
    * **Variante**
    * **Variante als [Live Copy](/help/sites-administering/msm.md#live-copies)**

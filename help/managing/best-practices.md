@@ -9,77 +9,77 @@ docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3238'
-ht-degree: 17%
+source-wordcount: '3214'
+ht-degree: 94%
 
 ---
 
-# Verwalten von Projekten – Checkliste mit Best Practices{#managing-projects-best-practices-checklist}
+# Verwalten von Projekten – Checkliste für Best Practices{#managing-projects-best-practices-checklist}
 
 Die Verwaltung eines Projekts zur Implementierung von Adobe Experience Manager (AEM) erfordert Planung und Verständnis, damit Sie sich der Probleme und (damit zusammenhängenden) Entscheidungen bewusst sind, die Sie vor und während der Implementierung des Projekts treffen müssen.
 
-Die Best Practices beinhalten Folgendes:
+Als Hilfestellung für Sie umfassen die Best Practices Folgendes:
 
-* Ein [interaktive Checkliste](/help/managing/best-practices-checklist.md) mit dem Sie den Fortschritt bei diesen Best Practices verfolgen und überwachen können.
+* eine [interaktive Checkliste](/help/managing/best-practices-checklist.md), die es ermöglicht den Fortschritt mit diesen Best Practices nachzuverfolgen und zu überwachen:
 
-   * Definiert Eingaben und Lieferziele nach Phase, Meilenstein und Persona.
-   * Bietet automatisierte Übersichten (Qualität, Zustand und Vollständigkeit) zur Angabe des Fortschritts und des Projektstatus.
+   * Sie definiert Inputs und die zu erbringenden Leistungen nach Phase, Meilenstein und Rolle.
+   * Sie stellt automatische Übersichten (Qualität, Konsistenz und Vollständigkeit) bereit, um den Fortschritt und die Konsistenz des Projekts anzuzeigen.
 
 * Die Dokumentation basiert auf der [Checkliste](/help/managing/best-practices-checklist.md) , die Folgendes beschreibt:
 
    * [Projekt-Heartbeat](#projectheartbeat)-Analyse
    * Überblick über den [Status nach Rolle](#status-by-role)
-   * [Phasen und Meilensteine](#phases-and-milestones).
-   * [Schlüsselrolle](#persona) und ihre Beteiligung an allen (relevanten) Phasen.
+   * [Phasen und Meilensteine](#phases-and-milestones);
+   * [Schlüsselrolle](#persona) und deren Beteiligung in jeder (relevanten) Phase.
    * [Glossar](/help/managing/best-practices-glossary.md) der [erforderlichen Dokumente und Ergebnisse](#required-documents-and-deliverables)
 
-* [Weitere Informationen](/help/managing/best-practices-further-reference.md) Material, um weitere Details zu bestimmten Bereichen bereitzustellen.
+* [weiterführendes Referenzmaterial](/help/managing/best-practices-further-reference.md) für zusätzliche Informationen zu bestimmten Bereichen.
 
-## Projekt-Heartbeat-Dashboard {#project-heartbeat-dashboard}
+## Dashboard zum Projekt-Heartbeat {#project-heartbeat-dashboard}
 
-Die **Projekt-Heartbeat** Das Arbeitsblatt bietet einen grafischen Überblick über kritische Metriken für Ihr Projekt:
+Das Arbeitsblatt zum **Projekt-Heartbeat** liefert einen grafischen Überblick über die wichtigsten Metriken des Projekts:
 
 * **Phasenqualität**
 
-   * Gibt die Qualität der [Erforderliche Dokumente und Ergebnisse](#required-documents-and-deliverables) über das Projekt hinweg.
+   * Zeigt die Qualität der [erforderlichen Dokumente und zu erbringenden Leistungen](#required-documents-and-deliverables) für das gesamte Projekt an.
 
 * **Phasenkonsistenz**
 
-   * Ein allgemeiner Statusindikator für Ihr Projekt, der nützlich ist, um gefährdete Bereiche hervorzuheben.
+   * Eine detaillierte Statusanzeige für das Projekt; nützlich, um Bereiche herauszustellen, die gefährdet sein könnten.
 
 * **Phasenvollständigkeit**
 
-   * Dies gibt zu jedem Zeitpunkt während des Projekts an, wie viel bereits für jede Phase Ihres Projekts abgeschlossen wurde.
+   * Zeigt zu jedem Zeitpunkt des Projekts an, wie viel bereits in den jeweiligen Phasen des Projekts abgeschlossen wurde.
 
 ## Status nach Rolle {#status-by-role}
 
-Die **Status nach Rolle** Das Arbeitsblatt zeigt eine detaillierte Aufschlüsselung der [**Gesundheit**, **Qualität und **Vollständigkeit**](#projectheartbeat) von **[Phase](#phases-and-milestones)** und **[Persona](#persona)**.
+Das Arbeitsblatt **Status nach Rolle** zeigt eine detaillierte Aufstellung der [**Konsistenz**, Qualität und **Vollständigkeit**](#projectheartbeat), sortiert nach **[Phase](#phases-and-milestones)** und **[Rolle](#persona)**.
 
 ## Phasen und Meilensteine {#phases-and-milestones}
 
-Der Projektplan ist in verschiedene (allgemeine) Phasen unterteilt.
+Der Projektplan wird in einzelne (grobe) Phasen unterteilt.
 
 Jede Phase enthält ihre eigenen Milestones. Für jede [Rolle](#persona) werden die zutreffenden Milestones gemeinsam mit den Dokumenten aufgelistet, die zur Erreichung bestimmter Ergebnisse notwendig sind.
 
 >[!NOTE]
 >
->Es besteht keine direkte 1:1-Beziehung zwischen den einzelnen erforderlichen Dokumenten und den Lieferzielen.
+>Es gibt keine direkte 1:1-Beziehung zwischen den einzelnen erforderlichen Dokumenten und zu erbringenden Leistungen.
 
 ### Vorbereitung {#preparation}
 
-Die Vorbereitung des Projekts bildet die Grundlage für das gesamte Projekt. Definieren Sie Schlüsselanforderungen zusammen mit klaren Zielen und Erwartungen für:
+Die Vorbereitung des Projekts bildet die Grundlage für das gesamte Projekt. Definieren Sie Schlüsselanforderungen gemeinsam mit klaren Zielen und Erwartungen für die folgenden Bereiche:
 
 * **Geschäftsgrundsatz**
 
-   * Die wesentlichen Gründe und die Begründung für die Durchführung des Projekts.
+   * Die wesentlichen Gründe und Rechtfertigungen für die Umsetzung des Projekts.
 
 * **Umfang und Zeitplan**
 
-   * Es sollten ein grundlegender Umfang und ein grober Zeitplan zur Verfügung gestellt werden, um festzulegen, was erforderlich ist und in welchem Zeitrahmen. Wenn dies zur Klärung der Situation beiträgt, können Sie auch festlegen, was außerhalb des Anwendungsbereichs liegt.
+   * Ein grundlegender Umfang und grober Zeitplan sollten zur Verfügung gestellt werden, um zu definieren, was notwendig ist und in welchem Zeitrahmen. Wenn es zur Klärung der Situation beiträgt, können Sie auch definieren, was außerhalb dieses Umfangs liegt.
 
-Die Art und Weise, wie Sie Ihr Projekt vorbereiten, planen und ausführen und Ihre Lösung implementieren, ist von den Einschränkungen betroffen, unter denen Sie arbeiten. Beispielsweise festes Budget, feste Zeitleiste, Inhaltsmenge, erforderliche Qualität.
+Wie Sie Ihr Projekt planen, ausführen und Ihre Lösung implementieren, ist abhängig von den Einschränkungen, denen Sie unterliegen, z. B. festes Budget, fester Zeitplan, Menge des Inhalts, erforderliche Qualität.
 
-Wie immer wirkt sich die Anpassung eines der Faktoren auf die anderen aus. Wenn Sie beispielsweise die Zeit verkürzen, aber dasselbe Qualitätsniveau erfordern, wird der Preis wahrscheinlich steigen, während gleichzeitig die Menge der Inhalte, die Sie berücksichtigen können, reduziert wird. Haushalt ist oft ein Schlüsselfaktor, sodass solche Beziehungen nicht vergessen werden können.
+Wie immer hat die Anpassung eines dieser Faktoren Auswirkungen auf die anderen. Eine Verkürzung der Zeit bei gleichbleibender Qualität beispielsweise führt wahrscheinlich zu einem Preisanstieg bei gleichzeitiger Reduktion der Menge an Inhalten, die bearbeitet werden können. Das Budget ist häufig ein Schlüsselfaktor und ein solcher Aspekt darf nicht vergessen werden.
 
 Die vier Faktoren:
 
@@ -93,27 +93,27 @@ Die vier Faktoren:
 
    * Was möchten Sie erreichen/bereitstellen?
    * Wer profitiert davon?
-   * Wie sieht der Anwendungsbereich aus?
+   * Was ist der Umfang?
 
-      * Wenn dies zur Klärung der Situation beiträgt, können Sie auch festlegen, was außerhalb des Anwendungsbereichs liegt.
+      * Wenn es zur Klärung der Situation beiträgt, können Sie auch definieren, was außerhalb dieses Umfangs liegt.
 
    * Wie definieren Sie Erfolg?
-   * Wie misst du Erfolg?
+   * Wie messen Sie Erfolg?
    * Welche technischen und geschäftlichen Anforderungen gibt es?
-   * Gibt es veraltete Systeme, die ersetzt werden müssen, und wenn ja, müssen Daten migriert werden?
-   * Wer ist involviert?
-   * Wie misst man den Fortschritt?
-   * Wie oft überprüfen Sie den Fortschritt während der Projektlaufzeit?
+   * Gibt es bestehende alte Systeme, die ersetzt werden müssen, und wenn ja, müssen Daten verschoben werden?
+   * Wer ist beteiligt?
+   * Wie messen Sie den Fortschritt?
+   * Wie oft überprüfen Sie den Fortschritt während der Dauer des Projekts?
 
 * **Budget**
 
-  Bevor Sie mit einem Projekt beginnen, benötigen Sie eine zuverlässige, realistische Schätzung der Kosten für die Implementierung:
+  Bevor Sie ein Projekt beginnen, benötigen Sie eine zuverlässige, realistische Schätzung der Kosten für dessen Implementierung:
 
-   * Verwenden Sie Informationen aus dem Validierungs-Meilenstein als Grundlage für die Schätzungen.
-   * Seien Sie realistisch in Ihren Schätzungen.
-   * Beachten und beachten Sie alle Client-Richtlinien, Prozesse oder Einschränkungen, denen der Client unterliegt.
-   * Berücksichtigen Sie Verfahren für unvorhergesehene Ausgaben und Überprüfungen, wenn zu einem späteren Zeitpunkt eine Überprüfung oder Verfeinerung des Haushalts erforderlich ist.
-   * Denken Sie daran, dass die Kosten in vielen Formen entstehen, wie zum Beispiel Käufe, Nutzung von Ressourcen und Gebühren.
+   * Verwenden Sie die Informationen aus den Validierungs-Meilensteinen als Grundlage für die Berechnung.
+   * Seien Sie bei den Schätzungen realistisch.
+   * Berücksichtigen Sie Richtlinien, Verfahren oder Einschränkungen, denen die Kundin oder der Kunde möglicherweise unterliegt.
+   * Berücksichtigen Sie Notfallpläne und Überprüfungsverfahren für den Fall, dass eine Überprüfung oder Verfeinerung des Budgets zu einem späteren Zeitpunkt notwendig sein sollte.
+   * Bedenken Sie, dass Kosten auf viele Arten entstehen, z. B. durch Einkäufe, Verwendung von Ressourcen und Gebühren.
 
 ### Planung {#planning}
 
@@ -125,43 +125,43 @@ Die Planung des Projekts vertieft die Vorbereitung. Hier sollten Sie damit begin
 
   Durch eine saubere Übergabe wird sichergestellt, dass die entsprechenden Personen/Gruppen sich ihrer Verantwortung im Rahmen des Projekts bewusst sind.
 
-  Umfassende Informationen sollten bereitgestellt/generiert werden, um sicherzustellen, dass sie alle relevanten Aspekte einschließlich Roadmap, Umfang, Ziele, Anforderungen und KPIs vollständig verstehen.
+  Vollständige Details sollten zur Verfügung gestellt bzw. erstellt werden, um zu gewährleisten, dass alle relevanten Aspekte vollständig klar sind, einschließlich Roadmap, Umfang, Anforderungen und KPIs.
 
 * **Risikobewertung**
 
-  Um unangenehme Überraschungen zu vermeiden, verwenden Sie die Risikobewertung, um potenzielle Risiken zusammen mit ihren Auswirkungen und Wahrscheinlichkeiten zu ermitteln und zu quantifizieren.
+  Nutzen Sie die Risikobewertung, um unangenehme Überraschungen zu vermeiden und potenzielle Risiken gemeinsam mit deren Auswirkungen und Wahrscheinlichkeit zu erkennen und zu quantifizieren.
 
-  Dies sollte frühzeitig im Projektlebenszyklus erfolgen, um sicherzustellen, dass etwaige Schwachstellen erkannt und bewertet werden. Auf der Grundlage der Ergebnisse können Sie Ihren Interessengruppen mitteilen, ob die vollständigen Anforderungen erfüllt werden können und ob es gegebenenfalls möglich ist, geeignete Maßnahmen zu planen und zu verfolgen.
+  Dies sollte früh im Projektlebenszyklus erfolgen, um sicherzustellen, dass jegliche Schwächen identifiziert und bewertet werden. Basierend auf den Ergebnissen können Sie die Projektbeteiligten darüber informieren, ob die Anforderungen vollständig umgesetzt werden können und, falls notwendig, ob es möglich ist, die Umsetzung und Nachverfolgung entsprechender Maßnahmen zu planen.
 
 * **Kommunikation**
 
   Kommunikation ist immer der Schlüssel zum Erfolg eines jeden Projekts. Vermitteln Sie klar und effizient, um sicherzustellen, dass alle:
 
-   * Auf dieselben grundlegenden Ziele hinarbeiten
-   * Aus derselben Informationsbasis
-   * Mit denselben Kanälen
+   * an denselben grundlegenden Zielen arbeiten;
+   * dieselbe Informationsgrundlage nutzen;
+   * dieselben Kanäle verwenden.
 
-* **Kick Off**
+* **Projektstart**
 
-  Das Meeting zum Projektstart dient dazu, auf den Start des Projekts hinzuweisen. Es bietet eine gute Gelegenheit,
+  Das Meeting zum Projektstart dient dazu, auf den Start des Projekts hinzuweisen. Bietet eine gute Gelegenheit für Folgendes:
 
-   * Laden Sie alle interessierten Parteien (oder zumindest Gruppenvertreter) ein.
-   * Präsentieren Sie wichtige Fakten zum Projekt.
-   * Beantworte Fragen.
-   * Stellen Sie sicher, dass alle über dieselbe Wissensgrundlage verfügen.
-   * Beziehen Sie sich von allen, die beteiligt sein werden - dies muss verdient werden.
+   * Einladung aller interessierten Parteien (oder zumindest repräsentativer Personen aller Gruppen);
+   * Präsentation von wichtigen Fakten zum Projekt;
+   * Beantwortung von Fragen.
+   * Stellen Sie sicher, dass alle Beteiligten über die gleiche Wissensgrundlage verfügen.
+   * Sichern Sie sich das Engagement aller Beteiligten – es muss verdient werden.
 
-      * Durch die Einbeziehung von Hauptakteuren (einschließlich potenzieller Autoren) zu Beginn des Projekts erhöhen Sie Ihre Chancen, ihr Engagement für das Projekt zu erreichen.
+      * Durch Einbeziehung der Hauptbeteiligten (einschließlich voraussichtlicher Autorinnen und Autoren) zu Beginn des Projekts erhöhen Sie Ihre Chancen, deren Engagement für das Projekt zu sichern.
 
 ### Entwicklungsvorbereitung {#development-preparation}
 
-Die Planung der Entwicklung ist entscheidend, um sicherzustellen, dass Ihr Projekt auf einem soliden Design eines Teams basiert, das über die erforderlichen Kenntnisse verfügt.
+Die Entwicklungsplanung ist der Schlüssel, um zu gewährleisten, dass das Projekt auf einer soliden Grundlage und einem Team, das über die notwendigen Kenntnisse verfügt, aufbaut.
 
 #### Milestones {#milestones-2}
 
-* **Entwicklungsteam - Fortbildung**
+* **Entwicklungs-Team – Besetzt und geschult**
 
-  Bevor Sie mit einem Projekt beginnen, sollten Sie sicherstellen, dass Ihr Entwicklungsteam angemessen besetzt ist und dass alle Teammitglieder für die vorliegende Aufgabe geschult sind.
+  Bevor Sie mit einem Projekt beginnen, sollten Sie sicherstellen, dass Ihr Entwicklungs-Team angemessen besetzt ist und dass alle Team-Mitglieder für die vorliegende Aufgabe geschult sind.
 
 * **Inhaltsarchitektur**
 
@@ -170,87 +170,87 @@ Die Planung der Entwicklung ist entscheidend, um sicherzustellen, dass Ihr Proje
    * Inhaltsstruktur, einschließlich Assets
    * Grundstrukturen, einschließlich Kampagnen usw.
    * Multisite- und mehrsprachige Strukturen (MSM, Übersetzung usw.)
-   * Unterstützende Inhalte (einschließlich Tags und Tagging-Konzepten)
-   * Caching und Strategien zur Wiederverwendung von Inhalten
+   * Unterstützende Inhalte (einschließlich Tags und Tagging-Konzepte)
+   * Strategien für das Caching und die Wiederverwendung von Inhalten
 
 * **Systemarchitektur**
 
   Die Systemarchitektur definiert die konzeptionelle Ansicht Ihres Systems, einschließlich (unter anderem):
 
    * [Systemstruktur](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) für alle erforderlichen Umgebungen
-   * Subsysteme
+   * Untersysteme
    * Drittanbietersysteme
    * Schnittstellen, Hardware, Software und menschliche Interaktionen
    * Server für jede Umgebung; siehe [Technische Anforderungen](/help/sites-deploying/technical-requirements.md) und [Hardware-Skalierungsrichtlinien](/help/managing/hardware-sizing-guidelines.md);
 
-   * Prozesse für jede Umgebung, z. B. Bereitstellungs- und Wartungsanforderungen
+   * Prozesse für jede Umgebung, z. B. Bereitstellungs- und Wartungsanforderungen
    * Wartungsaktivitäten (Datastore GC, TarPM-Optimierung usw.)
    * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de)-Caching
    * [Clustering](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) beim Veröffentlichen/automatischen Teilen;
-   * Leistung für die Client-Seite (JS minify, concat, css sprites, Gesamtanzahl der HTTP-Anforderungen und andere)
+   * Leistung für die Client-Seite (JS minify, concat, CSS-Sprites, Gesamtanzahl der HTTP-Anfragen und Sonstiges)
 
 * **Anwendungsarchitektur**
 
   Die Anwendungsarchitektur definiert und beschreibt das Verhalten der vorgeschlagenen Anwendungen.
 
-  Der Schwerpunkt liegt auf Folgendem:
+  Ihr Fokus liegt auf Folgendem:
 
-   * Interaktion der Benutzer untereinander und mit den Benutzern.
-   * Die Daten, die von Anwendungen genutzt und erzeugt werden sollen, anstatt ihrer internen Struktur.
+   * Interaktion der Anwendungen miteinander und mit Benutzenden
+   * Daten, die von den Anwendungen genutzt und produziert werden sollen, nicht ihre interne Struktur
 
-  Die Begriffsbestimmungen sollten Folgendes umfassen:
+  Die Definitionen sollten Folgendes umfassen:
 
    * Grundlegende Code-Struktur für das Projekt
-   * Code-Artefakte (Pakete, Pakete usw.)
+   * Code-Artefakte (Bundles, Pakete usw.)
    * Aufschlüsselung der Vorlagen/Komponenten und ihrer Beziehungen
    * Allgemeine Details der erforderlichen Anpassungen (spezifische Überlagerungen folgen später)
-   * Entwurf der für die Lösung erforderlichen Workflows (z. B. Inhaltserstellung, Genehmigung, Veröffentlichung, Transformationen, Importe und Exporte)
+   * Entwurf der für die Lösung erforderlichen Workflows (z. B. Inhaltserstellung, Genehmigung, Veröffentlichung, Transformationen, Importe und Exporte)
    * Besondere Berücksichtigung komplexer Module wie MSM, Commerce, Drittanbieterintegration
 
 * **Systemintegration**
 
-  Für die Systemintegration müssen Sie Folgendes planen (und dann implementieren):
+  Die Systemintegration erfordert Ihre Planung (die Implementierung erfolgt danach):
 
    * Wie alle Teilsysteme und [Lösungsintegrationen](/help/sites-administering/integration.md) zusammengeführt werden, um als einheitliches System zu fungieren
    * Integration von Drittanbietersystemen zusammen mit besonderen Überlegungen wie Offline-/Online-, Client-/Browser-seitig oder Fallover-Handhabung bei Ausfall eines Drittanbietersystems
 
 * **Testkonzept**
 
-  Bevor Sie mit der Entwicklung beginnen, sollten Sie ein tiefgehendes und umfassendes Konzept aller [testing](/help/sites-developing/planning.md) Anforderungen für Ihr Projekt.
+  Bevor Sie mit der Entwicklung beginnen, sollten Sie ein tiefgehendes und umfassendes Konzept für alle [Testanforderungen](/help/sites-developing/planning.md) des Projekts erstellen.
 
   Dies sollte (unter anderem) Folgendes umfassen:
 
    * Details aller durchzuführenden Tests
    * Vorbereitung des für diese Tests erforderlichen Inhalts
-   * Angaben zu den zu verwendenden Testwerkzeugen
-   * Allgemeine Angabe, wer an Tests beteiligt sein wird, insbesondere Gruppen außerhalb des Qualitätssicherungsteams
-   * Details zur Testautomatisierung, z. B. mit Selenium oder AEM Entwicklermodus
+   * Informationen zu den zu verwendenden Testwerkzeugen
+   * Detaillierte Angaben dazu, wer an Tests beteiligt sein wird, insbesondere Gruppen außerhalb des Qualitätssicherungs-Teams
+   * Details zur Testautomatisierung, z. B. mit Selenium oder dem AEM-Entwicklungsmodus
 
 * **Experience Design**
 
   Experience Design (XD) umfasst das Entwerfen des Benutzererlebnisses für Ihre Lösung.
 
-  Das Benutzererlebnis sollte sowohl für Ihre Autoren als auch für die Endbenutzer Ihrer Website analysiert und entwickelt werden.
+  Das Benutzererlebnis sollte sowohl für Ihre Autorinnen und Autoren als auch für die Endbenutzenden Ihrer Website analysiert und entwickelt werden.
 
 * **Support-Setup**
 
-  Vor der Entwicklung sollten alle erforderlichen Support-Prozesse für die Bereitstellung, Freigabe, Prüfung und Berichterstellung eingerichtet werden.
+  Vor der Entwicklung sollten alle Unterstützungsprozesse erstellt werden, die zur Bereitstellung, zur Veröffentlichung, zum Testen und zur Meldung von Problemen notwendig sind.
 
-  Siehe auch [Adobe Support Portal](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home?lang=de#support).
+  Informationen finden Sie auch im [Adobe Support-Portal](https://experienceleague.adobe.com/?lang=de&amp;support-solution=General&amp;support-tab=home#support).
 
-### Betriebsplanung und -betrieb {#operations-planning-and-operations}
+### Betriebsplanung und Betrieb {#operations-planning-and-operations}
 
-Auf ähnlicher Grundlage müssen die Vorgänge entsprechend geplant werden, um sicherzustellen, dass Sie über die erforderlichen Umgebungen verfügen - für alle Phasen des Projektlebenszyklus. Sie benötigen auch die entsprechenden Prozesse, um sie zu verwalten.
+Auch die Abläufe müssen angemessen geplant werden, damit Sie über die notwendigen Umgebungen verfügen – in sämtlichen Phasen des Projektzyklus. Sie benötigen auch die entsprechenden Prozesse, um sie zu verwalten.
 
 #### Milestones {#milestones-3}
 
 * **Berechtigungen**
 
-  Sie müssen ein Rollen- und Berechtigungskonzept für alle Benutzer/Gruppen planen und implementieren, die die Lösung verwenden.
+  Sie müssen ein Rollen- und Rechtekonzept für alle Benutzenden/Gruppen planen und implementieren, die die Lösung verwenden.
 
   Beispiel:
 
-   * Eine Liste der Rollen (d. h. Gruppen) mit `read`/ `write` Zugriffsdefinitionen für jede
+   * Eine Liste von Rollen (d. h. Gruppen) mit jeweils festgelegten `read`/`write`-Zugriffsdefinitionen
 
    * Festlegung der Verwendung von Berechtigungen, die einen Einfluss auf die Veröffentlichungsumgebung haben, z. B. `replicate`
    * Für Benutzer mit minimalen Berechtigungen sollten Workflows definiert werden
@@ -260,12 +260,12 @@ Auf ähnlicher Grundlage müssen die Vorgänge entsprechend geplant werden, um s
 
 * **Überwachung und Wartung**
 
-  Überwachung und Wartung sind Schlüsselaspekte, um den reibungslosen Ablauf der Lösung nach der Einführung zu gewährleisten. Dazu müssen Sie Folgendes definieren:
+  Überwachung und Wartung sind Schlüsselaspekte, um den reibungslosen Ablauf der Lösung nach der Einführung zu gewährleisten. Hierzu ist Folgendes zu definieren:
 
-   * Was muss überwacht werden?
+   * Was muss überwacht werden
    * Wartungsaufgaben, sowohl für reguläre als auch für Sonderfälle
 
-  Siehe auch [Überwachung und Wartung](/help/sites-deploying/monitoring-and-maintaining.md) für weitere Informationen.
+  Weitere Informationen finden Sie unter [Überwachung und Wartung](/help/sites-deploying/monitoring-and-maintaining.md).
 
 * **Migration**
 
@@ -273,7 +273,7 @@ Auf ähnlicher Grundlage müssen die Vorgänge entsprechend geplant werden, um s
 
 * **Wiederherstellungsplan**
 
-  Stellen Sie sicher, dass Sie einen Wiederherstellungsplan haben. In einer Notsituation muss dies verfügbar sein, um die Verwendung von AEM sicherzustellen. Dies sollte Situationen wie Sicherung, Wiederherstellung, Fallover und andere abdecken.
+  Stellen Sie sicher, dass Sie einen Wiederherstellungsplan haben. Dieser muss in Notfällen verfügbar sein, damit die Verwendung von AEM für die Produktion sichergestellt ist. Dies sollte u. a. Situationen wie Backup, Wiederherstellung und Ausfallsicherung abdecken.
 
 ### Entwicklung {#development}
 
@@ -281,7 +281,7 @@ Entwicklung ist eine entscheidende Phase, die mehr erfordert als nur Programmier
 
 #### Milestones {#milestones-4}
 
-* **Entwicklungsumgebung**
+* **Bereitstellungsumgebung**
 
   Planen und dokumentieren Sie Ihre Entwicklungsumgebung, einschließlich:
 
@@ -290,45 +290,45 @@ Entwicklung ist eine entscheidende Phase, die mehr erfordert als nur Programmier
 
       * Eine typische Umgebung besteht aus:
 
-         * ein System zur Problemverfolgung, z. B. Jira
-         * eine IDE, z. B. Eclipse
-         * ein Build-Management-Tool, wie Maven
+         * einem Nachverfolgungssystem für Probleme, z. B. Jira
+         * einer IDE, z. B. Eclipse
+         * einem Build-Management-Tool, z. B. Maven
          * einem Werkzeug für die fortwährende Integration, wie etwa Jenkins;
-         * ein Tool zur Versionskontrolle, wie GIT/SVN
-         * einen Repository-Manager für Build-Artefakte, z. B. Archiva/Nexus
+         * einem Tool für die Versionskontrolle, z. B. GIT/SVN
+         * einem Repository-Manager für Build-Artefakte, z. B. Archiva/Nexus
 
    * Integration/Abhängigkeiten von Software von Drittanbietern
    * [Integration/Abhängigkeiten von der Lösung;](/help/sites-administering/integration.md)
-   * Bereitstellungskapazität
+   * Bereitstellungsintervall
 
 * **Testsystem**
 
   Planen und dokumentieren Sie Ihre Testumgebung, einschließlich:
 
    * Architektur
-   * Abhängigkeiten von Entwicklungs-Builds, einschließlich nächtlicher Builds
-   * Möglichkeiten oder Einschränkungen zum Testen der Softwareintegration/Abhängigkeiten von Drittanbietern
-   * Testwerkzeuge
-   * Automatisierte Teststrategie
+   * Abhängigkeiten von Entwicklungs-Builds, z. B. nächtliche Builds
+   * Möglichkeiten oder Einschränkungen beim Testen der Integration/Abhängigkeiten von Software von Drittanbietern
+   * Test-Tools
+   * Strategie für automatisierte Tests
 
 * **Produktionssystem**
 
   Planen und dokumentieren Sie Ihre Produktionsumgebung, einschließlich:
 
    * Architektur
-   * Bereitstellungskapazität
+   * Bereitstellungsintervall
    * Integration/Abhängigkeiten von Software von Drittanbietern
-   * Sicherheitseinstellungen
+   * Sicherheitskonfiguration
    * Bestätigung der Grundleistung durch Ausführen eines [Tough Day](/help/sites-developing/tough-day.md)-Tests bei der Produktionskonfiguration;
-   * Anforderungen an Leistungstests, siehe [Best Practices für Qualitätssicherung](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
+   * Anforderungen an Leistungstests; siehe [Best Practices für Qualitätssicherung](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
 
 * **Integration**
 
-  Planen, dokumentieren und testen Sie alle Aspekte des Systems und [Lösungsintegration](/help/sites-administering/integration.md), einschließlich:
+  Planen, dokumentieren und testen Sie alle Aspekte des Systems und der [Lösungsintegration](/help/sites-administering/integration.md), einschließlich:
 
-   * Eine automatisierte Teststrategie
-   * Automatisierte Prozesse in [Anwendungen von der Entwicklung in den Test verschieben, dann Produktion](/help/managing/enterprise-devops.md#code-movement)
-   * Automatisierte Prozesse in [Verschieben von Inhalten aus der Produktion in die Test- und Entwicklungsumgebung](/help/managing/enterprise-devops.md#content-movement)
+   * eine Strategie für automatisierte Tests
+   * automatisierte Prozesse zum [Verschieben von Anwendungen von der Entwicklung zum Test, anschließend in die Produktion](/help/managing/enterprise-devops.md#code-movement)
+   * automatisierte Prozesse zum [Verschieben von Inhalten von der Produktion zu Test und Entwicklung](/help/managing/enterprise-devops.md#content-movement)
 
 * **Migration**
 
@@ -339,14 +339,14 @@ Entwicklung ist eine entscheidende Phase, die mehr erfordert als nur Programmier
 
 * **Kommunikation**
 
-  Stellen Sie sicher, dass alle Team-Mitglieder und Projektmitarbeiter bei Bedarf auf dem neuesten Stand gehalten werden.
+  Stellen Sie sicher, dass alle Team-Mitglieder und Projektbeteiligten bei Bedarf auf dem neuesten Stand gehalten werden.
 
 * **Dokumentation**
 
   Dokumentieren Sie die Lösung vollständig, einschließlich:
 
-   * Betriebshandbuch
-   * Alle Anpassungen, die sich auf Aktualisierungen auswirken können
+   * Benutzerhandbuch
+   * alle Anpassungen, die sich auf Upgrades auswirken können
    * Versionshinweise
 
 ### Leistung und Tests {#performance-and-testing}
@@ -355,24 +355,24 @@ Sobald die neue Anwendung verfügbar ist, muss sie strengen Tests unterzogen wer
 
 >[!NOTE]
 >
->Jedes Testteam sollte die Möglichkeit haben, neutral zu bleiben und die Testergebnisse zu liefern.
+>Jedes testende Team sollte die Möglichkeit haben, beim Liefern der Testergebnisse neutral zu bleiben.
 >
->Es liegt in der Verantwortung des Projektmanagers, die Auswirkungen der Ergebnisse zu bewerten und geeignete Maßnahmen zu treffen.
+>Es obliegt der Projektleitung, die Auswirkungen der Ergebnisse zu bewerten und über geeignete Maßnahmen zu entscheiden.
 
 #### Milestones {#milestones-5}
 
-* **Endbenutzerakzeptanztest**
+* **Test zur Endbenutzerakzeptanz**
 
-  [Anwenderakzeptanztests](/help/sites-developing/acceptance-signoff.md) (UAT) ist entscheidend, um sicherzustellen, dass
+  [Tests zur Benutzerakzeptanz](/help/sites-developing/acceptance-signoff.md) sind essenziell, um zu gewährleisten, dass:
 
-   * Die Lösung erfüllt die Benutzer-/Kundenanforderungen
-   * Der Kunde/die Benutzer akzeptieren die Lösung (Funktion, Design und Leistung)
+   * die Lösung die Anforderungen der Kundschaft/Benutzenden erfüllt
+   * Kundschaft/Benutzende die Lösung akzeptieren (Funktion, Design und Leistung)
 
   eine formelle Checkliste sollte für die Kundenübergabe erstellt werden, die idealerweise automatisiert ist und nächtlich gegenüber einer Momentaufnahme durchgeführt wird. Die Ergebnisse sollten an den Projekt-Manager oder das Entwickler-Tam weitergeleitet werden.
 
 * **Leistungs- und Belastungstests**
 
-  Leistungs- und Belastungstests werden verwendet, um sicherzustellen, dass die Lösung die erforderlichen Leistungsniveaus bei durchschnittlicher Belastung und Spitzenlast erfüllt.
+  Leistungs- und Belastungstests werden verwendet, um sicherzustellen, dass die Lösung die erforderlichen Leistungsniveaus bei durchschnittlicher und bei höchster Belastung erfüllt.
 
   Weitere Informationen zu Leistungstests finden Sie unter:
 
@@ -383,216 +383,216 @@ Sobald die neue Anwendung verfügbar ist, muss sie strengen Tests unterzogen wer
 
   >[!NOTE]
   >
-  >Dieser Prozess muss während der normalen Nutzung von AEM fortgesetzt werden, aber diese ersten Schritte sind die wichtigsten.
+  >Dieser Prozess muss auch während der normalen Verwendung von AEM fortgeführt werden; die ersten Phasen sind jedoch am wichtigsten.
 
 ### Rollout {#rollout}
 
-Der Rollout einer neuen Anwendung bedarf sorgfältiger Planung, um einen reibungslosen Ablauf der Live-Schaltung zu gewährleisten. Dazu gehört die Bestätigung eines hohen Sicherheitsniveaus, die Schulung aller potenziellen Benutzer und die Durchführung mehrerer Testläufe, um zu bestätigen, dass alle Probleme gelöst wurden.
+Der Rollout einer neuen Anwendung bedarf sorgfältiger Planung, um einen reibungslosen Ablauf der Live-Schaltung zu gewährleisten. Dazu gehört die Bestätigung eines hohen Sicherheitsniveaus, die Schulung aller potenziellen Benutzenden und die Durchführung mehrerer Testläufe, um zu bestätigen, dass alle Probleme behoben wurden.
 
 #### Milestones {#milestones-6}
 
 * **Vorbereitung**
 
-  Die Vorbereitung und Planung tragen zu einem reibungslosen Rollout bei.
+  Vorbereitung und Planung tragen zu einem reibungslosen Rollout bei.
 
 * **Schulung**
 
-  Stellen Sie sicher, dass alle beteiligten Mitarbeiter geschult wurden.
+  Stellen Sie sicher, dass alle beteiligten Mitarbeitenden geschult wurden.
 
   Siehe [Adobe Experience Manager](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) im Kurskatalog.
 
-* **Trainierte Administratoren**
+* **Administratorschulung**
 
-  Stellen Sie sicher, dass Ihre Lösungsadministratoren über Folgendes verfügen:
+  Stellen Sie sicher, dass die Admins:
 
-   * entsprechend geschult wurden
-   * Das entsprechende Lehrmaterial erhalten
-   * Die entsprechende Dokumentation erhalten
+   * geschult wurden;
+   * das entsprechende Schulungsmaterial erhalten haben;
+   * die entsprechende Dokumentation erhalten haben.
 
-* **Schulte Benutzer**
+* **Benutzerschulung**
 
-  Stellen Sie sicher, dass Ihre Autoren über Folgendes verfügen:
+  Stellen Sie sicher, dass die Autorinnen und Autoren:
 
-   * entsprechend geschult wurden
-   * Das entsprechende Lehrmaterial erhalten
-   * die entsprechende Dokumentation erhalten haben, z. B. das Benutzerhandbuch
+   * geschult wurden;
+   * das entsprechende Schulungsmaterial erhalten haben;
+   * die entsprechende Dokumentation erhalten haben, z. B. das Benutzerhandbuch.
 
 * **Penetrationstests**
 
-  Penetrationstests simulieren einen Angriff auf ein Computersystem, um potenzielle Sicherheitsmängel zu identifizieren.
+  Penetrationstests simulieren einen Angriff auf ein Computer-System, um potenzielle Sicherheitslücken aufzudecken.
 
-* **Penetration/Sicherheitstests**
+* **Penetrations-/Sicherheitstests**
 
-  Um die Sicherheit Ihrer Lösung zu gewährleisten, führen Sie spezifische Penetrationstests zusammen mit einer größeren Auswahl an Sicherheitstests durch.
+  Führen Sie bestimmte Penetrationstests gemeinsam mit einem breiten Spektrum an Sicherheitstests durch, um die Sicherheit der Lösung zu gewährleisten.
 
   Weitere Informationen finden Sie in der [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md).
 
 ### Live-Schaltung {#go-live}
 
-Die Live-Schaltung sollte so reibungslos wie möglich verlaufen. Auch hier müssen die letzten Schritte für eine saubere Ausführung geplant werden.
+Die Live-Schaltung sollte so reibungslos wie möglich verlaufen. Abermals sei daran erinnert, dass die letzten Schritte der Planung bedürfen, um eine saubere Ausführung zu erreichen.
 
 #### Milestones {#milestones-7}
 
 * **Vorbereitung**
 
-  Die Vorbereitung und Planung tragen dazu bei, dass ein reibungsloses Leben gewährleistet ist.
+  Vorbereitung und Planung helfen dabei, eine reibungslose Live-Schaltung sicherzustellen.
 
 * **Sicherheit**
 
-  Bestätigen Sie die Sicherheit Ihrer Lösung für interne und externe Benutzer und deren Inhalt.
+  Bestätigen Sie die Sicherheit der Lösung sowohl für interne als auch externe Benutzende und deren Inhalte.
 
 * **Notfallversorgung**
 
-  Stellen Sie sicher, dass alle Systeme, Verfahren und Mechanismen, die für Ausweichmanöver erforderlich sind, vorhanden sind, bevor Sie live geschaltet werden.
+  Stellen Sie sicher, dass alle Systeme, Verfahren und Mechanismen, die für die Notfallversorgung notwendig sind, vor der Live-Schaltung der Lösung vorhanden sind.
 
 * **Support**
 
-  Stellen Sie sicher, dass die Support-Services vorhanden und bereit sind.
+  Stellen Sie sicher, dass Support-Dienste vorhanden sind und bereitstehen.
 
 * **Übergang**
 
-  Planen und führen Sie die Umstellung auf Ihre Produktionsumgebung und -benutzer aus.
+  Planen Sie den Übergang in die Produktionsumgebung sowie zu den Benutzenden und führen Sie diesen aus.
 
 * **Rollout**
 
-  Bereiten Sie Ihre Rauchtests vor und führen Sie sie aus.
+  Bereiten Sie Feuerproben vor und führen Sie diese durch.
 
 ## Rolle {#persona}
 
-Die Checklisten werden rollenabhängig entworfen. Dies sind die Rollen, die erheblich am Projektlebenszyklus beteiligt sind.
+Die Checklisten werden rollenabhängig entworfen. Diese Rollen sind wesentlich in den Projektzyklus involviert.
 
-Es gibt auch einige [andere Person](#other-persona) die an bestimmten Aufgaben beteiligt sind.
+Es gibt auch [andere Rollen](#other-persona), die an bestimmten Aufgaben beteiligt sind.
 
-### Projektsponsor {#project-sponsor}
+### Projekt-Sponsorin oder Projekt-Sponsor {#project-sponsor}
 
-Der Projektsponsor ist:
+Die Projekt-Sponsorin bzw. der Projekt-Sponsor ist:
 
-* Zuständig für die Bereitstellung/Präsentation des Geschäftsszenarios für das Projekt.
-* Schlüssel zur Gestaltung und Definition des Projektumfangs, einschließlich:
+* zuständig für die Bereitstellung/Präsentation des Business-Cases für das Projekt
+* die Schlüsselfigur bei der Definition und Erstellung des Projektumfangs, einschließlich:
 
-   * Definition und Kriterien für den Erfolg
-   * die wichtigsten KPIs
+   * der Definition von Erfolg und den Kriterien hierfür;
+   * der grundlegenden KPIs;
 
-* Geben Sie die wichtigsten Meilensteine basierend auf der Client-Roadmap an.
+* erstellt Meilensteine basierend auf der Roadmap der Kundin oder des Kunden.
 
 ### Projekt-Manager {#project-manager}
 
 Der Projekt-Manager ist:
 
-* Zuständig für die Gesamtbereitstellung des Projekts basierend auf den Anforderungen (z. B. Umfang, KPIs, Erfolgskriterien und Definition), die vom Projektsponsor bereitgestellt werden.
-* Zuständig für die Festlegung des Budgets und die Bereitstellung der Ressourcen für das Projekt auf der Grundlage dieses Budgets.
-* Der zentrale Punkt der Kommunikation für alle am Projekt beteiligten Personen.
+* zuständig für die allgemeine Projektabwicklung, basierend auf den Vorgaben (z. B. Umfang, KPIs, Erfolgskriterien und -definition), die von der Projekt-Sponsorin bzw. dem Projekt-Sponsor aufgestellt werden;
+* zuständig für die Festlegung des Budgets und, basierend auf diesem Budget, der für das Projekt zur Verfügung stehenden Ressourcen;
+* der Hauptkontakt für sämtliche in das Projekt involvierte Rollen.
 
-### Architekt {#architect}
+### Architektin oder Architekt {#architect}
 
-Der Lösungsarchitekte:
+Die Lösungsarchitektin oder der Lösungsarchitekt:
 
-* ist für das allgemeine Design der Lösung und des Systems verantwortlich.
-* hilft dabei, die Implementierungsstrategie für AEM festzulegen; Zum Beispiel, ob eine Clusterinstallation oder ein Cold-Standby implementiert werden soll oder wenn ein Content Delivery Network (CDN) benötigt wird.
-* definiert außerdem die Architektur der AEM-Lösung basierend auf den Anforderungen des Kunden, Dies kann das Konzept für Benutzerrollen (mit verwandten Rechten), die Beziehung zwischen Vorlagen und Komponenten oder die Verwendung der Verwaltung mehrerer Sites umfassen.
+* ist für den allgemeinen Entwurf der Lösung und des Systems zuständig;
+* hilft dabei, die Implementierungsstrategie für AEM festzulegen; beispielsweise bei der Frage, ob eine Cluster-Installation oder ein Cold-Standby implementiert werden soll oder wann ein Content Delivery Network (CDN) notwendig ist;
+* definiert außerdem die Architektur der AEM-Lösung basierend auf den Anforderungen des Kunden, dies kann das Konzept für Benutzerrollen (mit den damit in Verbindung stehenden Rechten), das Verhältnis zwischen Vorlagen und Komponenten oder Informationen dazu einschließen, wann Multi-Site-Management verwendet werden sollte.
 
 ### Geschäftsanalyst {#business-analyst}
 
-Geschäftsanalyst:
+Die Geschäftsanalystin oder der Geschäftsanalyst:
 
-* ist in erster Linie für die Erfassung und Analyse der allgemeinen Anforderungen verantwortlich und wandelt diese dann in Spezifikationen um:
+* ist hauptsächlich dafür zuständig, die allgemeinen Anforderungen zu ermitteln und zu analysieren und diese dann in Spezifikationen umzuwandeln:
 
    * zur Verwendung durch den Projekt-Manager bei der Projektplanung;
-   * , damit das Entwicklungsteam während der Entwicklung und Entwicklung von dort aus arbeiten kann.
+   * als Vorlage für das Entwicklungs-Team während der Design- und Entwicklungsphasen;
 
-* Arbeiten Sie eng mit dem Kunden zusammen, um die Anforderungen zu analysieren. Diese stimmen mit Folgendem überein:
+* arbeitet eng mit der Kundin bzw. dem Kunden zusammen, um die Anforderungen zu analysieren. Diese werden verglichen mit:
 
-   * Die Definition von Erfolg.
-   * Die Erfolgskriterien.
-   * KPIs (geschäftlich und leistungsbasiert).
+   * der Erfolgsdefinition;
+   * den Erfolgskriterien;
+   * den KPIs (für Geschäft und Leistung).
 
-### Entwicklungsleiter {#development-lead}
+### Entwicklungsleitung {#development-lead}
 
-Der Entwicklungsvorsprung:
+Die Entwicklungsleitung:
 
-* ist für die technische Durchführung des Projekts verantwortlich.
-* ist für die Auswahl einer Entwicklungsmethodik verantwortlich, die den Kundenanforderungen entspricht.
-* Erstellung der Entwicklungsstrategie:
+* ist zuständig für die technische Abwicklung des Projekts;
+* ist zuständig für die Auswahl einer Entwicklungsmethode, die im Einklang mit den Kundenvorgaben steht;
+* erstellt die Entwicklungsstrategie:
 
-   * Sicherstellen, dass sie mit den Geschäfts- und Leistungs-KPIs abgestimmt ist
-   * unter Berücksichtigung der Erfolgskriterien und der Definition
+   * zur Sicherstellung, dass diese im Einklang mit den Geschäfts- und Leistungs-KPIs steht;
+   * unter Berücksichtigung der Erfolgskriterien und -definition;
 
-* arbeitet eng mit dem Architekten zusammen (insbesondere bei der Erstellung der Entwicklungsstrategie für AEM), um Aspekte wie die Beziehung zwischen Vorlagen und Komponenten, die Integrationsstrategie für Anwendungen von Drittanbietern und spezielle Funktionen zu definieren.
+* arbeitet eng mit der Architektin bzw. dem Architekten zusammen (besonders bei der Erstellung der Entwicklungsstrategie für AEM), um Aspekte, wie etwa die Beziehung zwischen Vorlage und Komponenten, eine Strategie zur Integration von Drittanwendungen und spezielle Funktionen zu definieren.
 
-### Qualitätsleiter {#quality-lead}
+### Leitung der Qualitätssicherung {#quality-lead}
 
-Qualitätsvorsprung:
+Die Leitung der Qualitätssicherung:
 
-* ist für die Qualität des Versands verantwortlich; stellt sicher, dass er die Erfolgskriterien und alle vom Kunden definierten KPIs erfüllt.
-* Definiert die Qualitätsmetriken, passt sie an alle Interessengruppen an, erstellt die Testpläne und stellt sicher, dass sie ausgeführt werden.
-* Erstellt Berichte und stellt sie an Projektbeteiligte bereit.
+* ist zuständig für die Lieferqualität und stellt sicher, dass diese die Erfolgskriterien und sämtliche von der Kundin bzw. dem Kunden vorgegebenen KPIs einhält;
+* definiert die Qualitätsparameter, richtet diese an allen Projektbeteiligten aus, erstellt Testpläne und stellt sicher, dass diese auch ausgeführt werden;
+* erstellt Berichte über das Projekt und liefert diese an die Projektbeteiligten.
 
-### Systemtechniker {#system-engineer}
+### Systemtechnikerin oder Systemtechniker {#system-engineer}
 
-Der Systemtechniker:
+Die Systemtechnikerin oder der Systemtechniker:
 
-* ist für die Überwachung der Projektinfrastruktur verantwortlich.
+* ist zuständig für die Beaufsichtigung der Projektinfrastruktur;
 * ist verantwortlich für:
 
-   * Einrichtung interner Entwicklungs- und Testumgebungen
-   * für die Anpassung dieser Systeme an die Client-Systeme
+   * die Einrichtung der internen Entwicklungs- und Testumgebungen;
+   * die Anpassung dieser Systeme an die Kundensysteme;
 
-* Bietet Hardware-Empfehlungen, überwacht die verschiedenen Implementierungen und bietet Betriebsunterstützung sowohl vor als auch nach der Live-Schaltung.
+* gibt Hardware-Empfehlungen, überprüft die diversen Implementierungen und bietet Hilfe beim Betrieb, sowohl vor als auch nach der Live-Schaltung.
 
-### Sicherheitsleitfaden {#security-lead}
+### Leitung der Sicherheit {#security-lead}
 
-Der Sicherheitsleiter:
+Die Leitung der Sicherheit:
 
-* ist für das Gesamtsicherheitskonzept der Lösung verantwortlich und stellt sicher, dass sie mit allen Anforderungen und Richtlinien des Kunden übereinstimmt.
-* Bietet ein Sicherheitskonzept, Sicherheitsoperationen und Empfehlungen für hardwarebasierte Sicherheitskonzepte wie Zonen und Firewalls.
+* ist zuständig für das allgemeine Sicherheitskonzept der Lösung und stellt sicher, dass dieses im Einklang mit sämtlichen Vorgaben und Richtlinien der Kundin bzw. des Kunden steht;
+* liefert ein Sicherheitskonzept, Sicherheitsprozesse und Empfehlungen für Hardware-basierte Sicherheitskonzepte wie Zonen und Firewalls.
 
-### Sonstige Persona {#other-persona}
+### Weitere Rollen {#other-persona}
 
-* Interessenträger
+* Projektbeteiligte
 
-   * Personen (häufig aus dem Unternehmen), die ein Interesse am Erfolg des Projekts haben (Anteil). Sie tragen oft zum Budget bei.
+   * Personen (oftmals aus dem Unternehmen), die ein Interesse am Erfolg des Projekts haben. Sie tragen oft zum Budget bei.
 
-* Legal
+* Rechtliches
 
-   * Bei Vertragsverhandlungen ist rechtliche Beratung erforderlich.
+   * Die Beteiligung der Rechtsabteilung ist bei der Aushandlung von Verträgen vorgeschrieben.
 
-* Ausbilder
+* Ausbilderinnen und Ausbilder
 
-   * Je nach Umfang und Art des Projekts können spezialisierte Trainer eingesetzt werden, um Schulungen für die jeweiligen Gruppen zu entwickeln und vorzustellen.
+   * Je nach Größe und der Typ des Projekts können spezialisierte Ausbilderinnen und Ausbilder eingesetzt werden, um Schulungen für die betreffenden Gruppen zu entwickeln und diesen zu präsentieren.
 
-* Technische Schriftsteller
+* Technische Redakteurinnen und Redakteure
 
-   * Je nach Umfang und Art des Projekts können spezialisierte technische Autoren zum Schreiben von Richtlinien und Handbüchern für bestimmte Gruppen verwendet werden. Beispielsweise ein Wartungshandbuch für Systemadministratoren oder ein Benutzerhandbuch für Autoren.
+   * Je nach Größe und der Typ des Projekts können spezialisierte technische Redakteurinnen und Redakteure eingesetzt werden, um Richtlinien und Handbücher für bestimmte Gruppen zu schreiben, z. B. Wartungshandbücher für Systemadmins oder Benutzerhandbücher für Autorinnen und Autoren.
 
-* Systemadministratoren
+* Systemadministrierende
 
-   * Zuständig für den laufenden Betrieb des Systems.
+   * Sind zuständig für den laufenden Betrieb des Systems.
 
-* Autoren und Endbenutzer
+* Autorinnen und Autoren sowie Endbenutzende
 
    * Die Personen, die das System zur Erstellung und Pflege Ihrer Website-Inhalte verwenden.
 
-## Erforderliche Dokumente und Ergebnisse {#required-documents-and-deliverables}
+## Erforderliche Dokumente und zu erbringende Leistungen {#required-documents-and-deliverables}
 
 Die Checklisten enthalten die **erforderlichen Dokumente** und **Ergebnisse** für jeden Milestone.
 
-* Es besteht keine 1:1-Beziehung zwischen diesen Dokumenten. Beispielsweise kann eine Gruppe erforderlicher Dokumente zu einem einzelnen Versand führen.
-* Ein von einer Person bereitstellbares Dokument kann während desselben Meilensteins für eine andere Person erforderlich sein.
+* Es besteht keine 1:1-Beziehung zwischen diesen beiden Aspekten. So kann beispielsweise eine Gruppe erforderlicher Dokumente in nur einer zu erbringenden Leistung münden.
+* Die zu erbringende Leistung einer Rolle kann ein erforderliches Dokument für eine andere Rolle während desselben Meilensteins sein.
 
 ### Erforderliche Dokumente {#required-documents}
 
-Die **Erforderliche Dokumente** werden von der entsprechenden Person bei der Produktion ihrer Ergebnisse benötigt.
+Die **erforderlichen Dokumente** werden von der entsprechenden Rolle beim Bereitstellen der zu erbringenden Leistungen benötigt.
 
-Für jeden **Erforderliches Dokument**, sollte die Persona Folgendes angeben:
+Bei jedem **erforderlichen Dokument** sollte die Person in der Rolle Folgendes angeben:
 
-* **Y/N**: ob sie empfangen wurde.
-* **1-3**: ein Hinweis auf die Qualität des empfangenen Dokuments.
+* **J/N:** ob es abgeschlossen wurde.
+* **1–3**: ein Hinweis auf die Qualität des empfangenen Dokuments.
 
-### Lieferziele {#deliverables}
+### Zu erbringende Leistungen {#deliverables}
 
-Für jeden Meilenstein ist die entsprechende Person für die Bereitstellung bestimmter Dokumente verantwortlich und erfüllt daher ihre Verantwortung für einen bestimmten Meilenstein.
+Die entsprechende Rolle ist bei jedem Meilenstein für die Lieferung bestimmter Dokumente zuständig und erfüllt damit ihre Pflicht in Bezug auf diesen bestimmten Meilenstein.
 
-Für jeden **Zustellbar** muss die Persona Folgendes angeben:
+Für jede **zu erbringende Leistung** muss die Person in der Rolle Folgendes angeben:
 
 * **J/N:** ob es abgeschlossen wurde.
 
@@ -600,7 +600,7 @@ Ergebnisse werden oft als **erforderliche Dokumente** entweder für den derzeiti
 
 ## Verwandte Best Practices {#related-best-practices}
 
-Best Practices für die Bereitstellung, Verwaltung, Entwicklung oder Bearbeitung finden Sie unter folgenden Themen:
+Weitere Informationen zu Best Practices zur Bereitstellung, Administration, Entwicklung oder Erstellung finden Sie in den folgenden Dokumenten:
 
 * Andere Best Practices und Richtlinien in Bezug auf die Verwaltung eines AEM-Projektes:
    * [Hardware-Skalierungsrichtlinien](/help/managing/hardware-sizing-guidelines.md)
@@ -629,4 +629,4 @@ Zusätzlich sind die folgenden Abschnitte der AEM-Dokumentation von besonderem I
 
 * Verwandte Dokumentation
 
-   * Adobe Experience Cloud - [Planen für Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)
+   * Adobe Experience Cloud - [Planen für Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html?lang=de)

@@ -1,6 +1,6 @@
 ---
 title: Hinzufügen benutzerdefinierter Aktionen zu Elementen im Formularauflister
-description: Formularentwickler können der Liste der Formulare auf der Forms Portal-Seite weitere Aktionen hinzufügen. Standardmäßig können Sie über die Formularauflistung auf das Formular zugreifen, es ausfüllen und es senden.
+description: Formularentwicklerinnen und -entwickler können der Liste der Formulare auf der Formularportalseite weitere Aktionen hinzufügen. Standardmäßig können Sie über die Formularliste auf das Formular zugreifen, es ausfüllen und abschicken.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
@@ -9,19 +9,19 @@ exl-id: 7c2a91c8-9b68-4491-88e2-f7ea68f5a79f
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '264'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
 # Hinzufügen benutzerdefinierter Aktionen zu Elementen im Formularauflister{#adding-custom-action-on-form-lister-items}
 
-In AEM Forms können Sie eine Portalseite erstellen, in der die verfügbaren Formulare aufgelistet werden. Standardmäßig können Sie Formulare auf einer Portalseite suchen und auflisten. Sie können Formulare zum Ausfüllen und Senden Ihrer Informationen öffnen. Bei Formularen, die auf einer Portalseite gelistet sind, stehen für den sofortigen Einsatz nur Render-Aktionen zur Verfügung. Weitere Informationen über die verfügbaren Aktionen auf einer Portalseite finden Sie unter [Erstellen einer Forms Portal-Seite](../../forms/using/creating-form-portal-page.md).
+In AEM Forms können Sie eine Portalseite erstellen, in der die verfügbaren Formulare aufgelistet werden. Standardmäßig können Sie Formulare auf einer Portalseite suchen und auflisten. Sie können Formulare zum Ausfüllen öffnen und Ihre Angaben übermitteln. Bei Formularen, die auf einer Portalseite gelistet sind, stehen für den sofortigen Einsatz nur Render-Aktionen zur Verfügung. Weitere Informationen über die verfügbaren Aktionen auf einer Portalseite finden Sie unter [Erstellen einer Forms Portal-Seite](../../forms/using/creating-form-portal-page.md).
 
-Sie können der Portalseite weitere Optionen hinzufügen. Diese Optionen oder Aktionen können durch Anpassen der Formularportalvorlage angepasst werden.
+Sie können der Portalseite weitere Optionen hinzufügen. Diese Optionen bzw. Aktionen können angepasst werden, indem die Formularportal-Vorlage angepasst wird.
 
-In diesem Artikel wird beschrieben, wie Sie eine Schaltfläche erstellen, um den Link eines Formulars direkt von einer Forms Portal-Seite zu senden. Für diese Anpassung muss die Vorlage für die Komponente &quot;Search &amp; Lister&quot;aktualisiert werden.
+In diesem Artikel wird beschrieben, wie Sie eine Schaltfläche erstellen, um den Link eines Formulars direkt von einer Formularportalseite zu senden. Diese Anpassung erfordert eine Aktualisierung der Vorlage für die Komponente „Suche und Auflister“.
 
-Der erforderliche Code zum Hinzufügen der Aktion zur Vorlage ist unten verfügbar. Das `onclick`-Attribut im Codebeispiel enthält ein Skript, um die Verknüpfung eines Formulars per E-Mail zu senden.
+Der erforderliche Code zum Hinzufügen der Aktion zur Vorlage ist unten zu finden. Das `onclick`-Attribut im Codebeispiel enthält ein Skript, um die Verknüpfung eines Formulars per E-Mail zu senden.
 
 ```html
 <div class="__FP_boxes-container __FP_single-color">

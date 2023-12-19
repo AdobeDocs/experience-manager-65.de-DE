@@ -1,6 +1,6 @@
 ---
-title: Anpassen von Fehlerdialogfeldern
-description: Gehen Sie wie folgt vor, um die Fehlerdialoge von LiveCycle AEM Forms Workspace anzupassen und verschiedene Fehlerbeschreibungen hinzuzufügen.
+title: Anpassen von Fehlerdialogen
+description: Gehen Sie wie folgt vor, um durch Anpassen der Fehlerdialoge von LiveCycle AEM Forms verschiedene Fehlerbeschreibungen hinzuzufügen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -8,13 +8,13 @@ exl-id: 8d2b07f5-5c4e-4111-8f78-eb1b156221bc
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
-# Anpassen von Fehlerdialogfeldern {#customizing-error-dialogs}
+# Anpassen von Fehlerdialogen {#customizing-error-dialogs}
 
-Mit AEM Forms Workspace können Sie Fehlerdialogfelder anpassen. Führen Sie [Generische Schritte zur Anpassung von AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) durch und anschließend die unten aufgeführten Schritte zum Anpassen von Fehlerdialogen.
+AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Führen Sie [Generische Schritte zur Anpassung von AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) durch und anschließend die unten aufgeführten Schritte zum Anpassen von Fehlerdialogen.
 
 ## Text anpassen {#customizing-text}
 
@@ -46,7 +46,7 @@ Mit AEM Forms Workspace können Sie Fehlerdialogfelder anpassen. Führen Sie [Ge
    >
    >Fügen Sie entsprechende Schlüssel-Wert-Paare für alle unterstützten Sprachen hinzu.
 
-## CSS anpassen {#customizing-css}
+## Anpassen des CSS {#customizing-css}
 
 1. Sie können Dialogfeld, Kopfzeile, Inhaltsbereich, Fußleiste, Fußleisten-Buttons und andere Zusätze ändern, indem Sie das folgende Snippet in der Datei `/apps/ws/css/newStyle.css` hinzufügen:
 
@@ -224,7 +224,7 @@ Mit AEM Forms Workspace können Sie Fehlerdialogfelder anpassen. Führen Sie [Ge
 
 ## Beispiele {#examples}
 
-* **Um das Fehlerdialogfeld anzupassen, ändern Sie:**
+* **Um den Fehlerdialog anzupassen, ändern Sie:**
 
 ```css
 .error-dialog{

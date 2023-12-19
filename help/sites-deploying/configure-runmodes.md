@@ -9,8 +9,8 @@ feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
 source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 85%
+source-wordcount: '746'
+ht-degree: 90%
 
 ---
 
@@ -81,7 +81,7 @@ Der Ausführungsmodus nosamplecontent wurde für Produktionsinstallationen entwi
 
 Eine Sammlung von Werten für Konfigurationseigenschaften, die für einen bestimmten Ausführungsmodus verwendet werden, kann im Repository gespeichert werden.
 
-Der Ausführungsmodus wird durch ein Suffix nach dem Ordnernamen angegeben. Auf diese Weise können Sie alle Konfigurationen in einem Repository speichern, als. Beispiel:
+Der Ausführungsmodus wird durch ein Suffix nach dem Ordnernamen angegeben. Auf diese Weise können Sie alle Konfigurationen in einem Repository speichern. Beispiel:
 
 * `config`
 
@@ -103,7 +103,7 @@ Siehe [OSGi-Konfiguration im Repository](/help/sites-deploying/configuring-osgi.
 
 >[!NOTE]
 >
->Für [Ausführungsmodi der Installation](#installation-run-modes) (z. B. author) Der Ausführungsmodus kann nach der Installation nicht mehr geändert werden. Änderungen an den einzelnen Konfigurationseigenschaften werden jedoch bei einem Neustart wirksam.
+>Für [Ausführungsmodi der Installation](#installation-run-modes) (beispielsweise author) kann der Ausführungsmodus nach der Installation nicht mehr geändert werden. Änderungen an den einzelnen Konfigurationseigenschaften werden jedoch bei einem Neustart wirksam.
 
 ## Definieren von zusätzlichen Bundles, die für einen Ausführungsmodus installiert werden sollen {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 

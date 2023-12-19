@@ -10,7 +10,7 @@ exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '5991'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -91,7 +91,7 @@ Wenn es sich bei dem Bild um ein JPEG-Bild handelt, kann die Anzeigegröße sich
 
 #### Eigenschaften {#properties}
 
-Über das Dialogfeld können Sie Eigenschaften für Ihre Instanz der Komponente Adaptives Bild bearbeiten, von denen viele mit der Bildkomponente übereinstimmen, auf der sie basiert. Die Eigenschaften sind auf zwei Registerkarten verfügbar:
+Das Dialogfeld erlaubt das Bearbeiten der Eigenschaften Ihrer Instanz der adaptiven Bildkomponente, von denen viele mit denen der Bildkomponente übereinstimmen, auf der sie basieren. Diese Eigenschaften sind auf zwei Registerkarten verfügbar:
 
 * **Bild**
 
@@ -393,7 +393,7 @@ Das endgültige Bild (mit **Titel** und **Beschreibung**) sieht beispielsweise w
 
 ### Liste {#list}
 
-Mit der Komponente Liste können Sie Suchkriterien für die Anzeige einer Liste konfigurieren:
+Mit der Listenkomponente können Sie Suchkriterien zur Anzeige einer Liste konfigurieren:
 
 * **Liste**
 
@@ -693,7 +693,7 @@ Weitere Informationen zum Anwenden von Tags finden Sie unter [Verwenden von Tags
 >
 >Adobe empfiehlt, für Tabellen die **Tabellenkomponente** zu verwenden. Sie können jedoch auch mit der **Textkomponente** erstellt werden.
 
-Mit der Textkomponente können Sie einen Textblock unter Verwendung eines WYSIWYG-Editors eingeben, dessen Funktionalität vom [Rich-Text-Editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md) bereitgestellt wird. Über eine Auswahl von Symbolen können Sie Ihren Text formatieren, einschließlich Schriftmerkmale, Ausrichtung, Links, Listen und Einzügen.
+Mit der Textkomponente können Sie einen Textblock unter Verwendung eines WYSIWYG-Editors eingeben, dessen Funktionalität vom [Rich-Text-Editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md) bereitgestellt wird. Mit einer Reihe von Symbolen können Sie Ihren Text formatieren, einschließlich Schriftart, Ausrichtung, Links, Listen und Einzug.
 
 ![dc_text](assets/dc_text.png)
 
@@ -726,7 +726,7 @@ Sie können Folgendes konfigurieren:
 
 * **Bildeigenschaften** (**Erweiterte Bildeigenschaften**)
 
-  Hier können Sie Folgendes angeben:
+  Hiermit können Sie Folgendes festlegen:
 
    * **Bild-Asset**
 
@@ -872,7 +872,7 @@ Beim Konfigurieren einer jeden Formularkomponente sind die folgenden Registerkar
 
 * **Titel und Text**
 
-  Hier müssen Sie grundlegende Informationen angeben, wie den Titel des Formulars und begleitenden Text. Gegebenenfalls können Sie auch andere Schlüsselinformationen definieren, z. B. ob das Feld mehrmals ausgewählt werden kann und welche Elemente ausgewählt werden können.
+  Hier müssen Sie grundlegende Informationen angeben, wie den Titel des Formulars und begleitenden Text. Gegebenenfalls können Sie hier auch andere wichtige Informationen definieren, z. B. ob das Feld mehrfach auswählbar ist und welche Elemente zur Auswahl stehen.
 
 * **Anfangswerte**
 
@@ -1188,7 +1188,7 @@ Sie können verschiedene Parameter für diese Komponente konfigurieren, einschli
 
 ### Kontrollkästchen-Gruppe {#checkbox-group}
 
-Mit einem Kontrollkästchen können Sie eine Liste mehrerer Kontrollkästchen erstellen, von denen mehrere gleichzeitig ausgewählt werden können.
+Mit einem Kontrollkästchen können Sie eine Liste aus einem oder mehreren Kontrollkästchen erstellen, von denen mehrere gleichzeitig aktiviert werden können.
 
 ![dc_form_checkboxgroupuse](assets/dc_form_checkboxgroupuse.png)
 
@@ -1293,7 +1293,7 @@ Sie können den Elementnamen zusammen mit einem Titel und einer Beschreibung ang
 
 ### Senden-Schaltfläche {#submit-button}
 
-Mit dieser Komponente können Sie eine Senden-Schaltfläche mit dem Standardtext erstellen:
+Mit dieser Komponente können Sie eine Senden-Schaltfläche mit Standardtext erstellen:
 
 ![dc_form_submitbutton](assets/dc_form_submitbutton.png)
 

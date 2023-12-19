@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 6465e2c4-28e5-4fc8-8cca-7b632f10ba5a
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2150'
-ht-degree: 78%
+source-wordcount: '1317'
+ht-degree: 100%
 
 ---
 
@@ -43,14 +43,14 @@ Es gibt die folgenden Nutzungsszenarien:
 
 `adaptTo()` gibt null zurück.
 
-Hierfür gibt es verschiedene Gründe:
+Dafür gibt es verschiedene Gründe, unter anderem:
 
 * die Implementierung unterstützt den Zieltyp nicht
-* eine Adapter-Factory, die diesen Fall verarbeitet, ist nicht aktiv (z. B. aufgrund fehlender Dienstverweise).
+* eine Adapterfabrik, die diesen Fall verarbeitet, ist nicht aktiv (z. B. aufgrund fehlender Dienstverweise).
 * interne Bedingung fehlgeschlagen
 * Service ist nicht verfügbar
 
-Es ist wichtig, dass Sie den Null-Fall angemessen behandeln. Für JSP-Renderings kann es akzeptabel sein, dass die JSP fehlschlägt, wenn dies zu einem leeren Inhaltselement führt.
+Es ist wichtig, dass Sie den Null-Fall angemessen behandeln. Für das JSP-Rendering kann es zulässig sein, dass für JSP ein Fehler auftritt, wenn es zu einem leeren Inhaltselement führt.
 
 ### Caching {#caching}
 
@@ -73,7 +73,7 @@ Es gibt verschiedene Möglichkeiten, `Adaptable.adaptTo()` zu implementieren:
 
 * Eine Kombination beider Vorgehensweisen.
 
-Im ersten Fall kann über Java™ Docs angegeben werden, welche `adaptTo-targets` möglich sind. Für bestimmte Unterklassen, z. B. die JCR-basierte Resource-Klasse, ist dies häufig nicht möglich. Da Implementierungen von `AdapterFactory` im letzteren Fall normalerweise Teil der privaten Klassen eines Pakets sind, werden sie nicht per Client-API verfügbar gemacht und auch nicht in Java™ Docs aufgeführt. Theoretisch wäre es möglich, auf alle `AdapterFactory`-Implementierungen über die [OSGi](/help/sites-deploying/configuring-osgi.md)-Service-Laufzeit zuzugreifen und sich die Konfigurationen der „adaptierbaren Elemente“ (Quellen und Ziele) anzusehen, diese aber nicht einander zuzuordnen. Letztlich hängt dies von der internen Logik ab, die dokumentiert werden muss. Daher dieser Verweis.
+Im ersten Fall kann über Java™ Docs angegeben werden, welche `adaptTo-targets` möglich sind. Für bestimmte Unterklassen, z. B. die JCR-basierte Resource-Klasse, ist dies häufig nicht möglich. Da Implementierungen von `AdapterFactory` im letzteren Fall normalerweise Teil der privaten Klassen eines Bundles sind, werden sie nicht per Client-API verfügbar gemacht und auch nicht in Java™ Docs aufgeführt. Theoretisch wäre es möglich, auf alle `AdapterFactory`-Implementierungen über die [OSGi](/help/sites-deploying/configuring-osgi.md)-Service-Laufzeit zuzugreifen und sich die Konfigurationen der „adaptierbaren Elemente“ (Quellen und Ziele) anzusehen, diese aber nicht einander zuzuordnen. Letztlich hängt dies von der internen Logik ab, die dokumentiert werden muss. Daher dieser Verweis.
 
 ## Verweis {#reference}
 
@@ -88,20 +88,20 @@ Adaption von [**Resource**](https://developer.adobe.com/experience-manager/refer
    <td>Wenn dies eine auf einem JCR-Knoten basierende Ressource oder eine JCR-Eigenschaft mit Verweis auf einen Knoten ist.</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Property.html">Eigenschaft</a></td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Property.html">Property</a></td>
    <td>Wenn dies eine auf einer JCR-Eigenschaft basierende Ressource ist</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Item.html">Element</a></td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Item.html">Item</a></td>
    <td>Wenn dies eine JCR-basierte Ressource ist (Knoten oder Eigenschaft)</td>
   </tr>
   <tr>
-   <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html">Zuordnung</a></td>
+   <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html">Map</a></td>
    <td>Gibt eine Zuordnung der Eigenschaften zurück, wenn dies eine auf einem JCR-Knoten basierende Ressource ist (oder eine andere Ressource, die Wertzuordnungen unterstützt)</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a></td>
-   <td>Gibt eine benutzerfreundliche Zuordnung der Eigenschaften zurück, wenn dies eine auf einem JCR-Knoten basierende Ressource ist (oder eine andere Ressource, die Wertzuordnungen unterstützt). Dies kann (auf einfachere Weise) auch mithilfe von <br /> <code><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ResourceUtil.html">ResourceUtil.getValueMap(Resource)</a></code> (zur Verarbeitung von Null-Fällen usw.) erreicht werden.</td>
+   <td>Gibt eine benutzerfreundliche Zuordnung der Eigenschaften zurück, wenn dies eine auf einem JCR-Knoten basierende Ressource ist (oder eine andere Ressource, die Wertzuordnungen unterstützt). Dies kann (auf einfachere Weise) auch per <br /> <code><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ResourceUtil.html">ResourceUtil.getValueMap(Resource)</a></code> (zur Verarbeitung von NULL-Fällen usw.) erreicht werden</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/inherit/InheritanceValueMap.html">InheritanceValueMap</a></td>
@@ -109,7 +109,7 @@ Adaption von [**Resource**](https://developer.adobe.com/experience-manager/refer
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">ModifiableValueMap</a></td>
-   <td>Eine Erweiterung der <a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>, mit dem die Eigenschaften dieses Knotens geändert werden können</td>
+   <td>Eine Erweiterung von <a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>, mit der Sie Eigenschaften auf diesem Knoten ändern können</td>
   </tr>
   <tr>
    <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td>
@@ -132,7 +132,7 @@ Adaption von [**Resource**](https://developer.adobe.com/experience-manager/refer
    <td>Wenn diese Ressource ein Skript ist (z. B. eine JSP-Datei), für das eine Scripting-Engine bei Sling registriert ist, oder wenn es eine Servlet-Ressource ist.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html">String</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html">Boolean</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html">Long</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Double.html">Double</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html">Calendar</a><br /> <a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">Value</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html">String[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html">Boolean[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html">Long[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html">Calendar[]</a><br /> <a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">Value[]</a></td>
+   <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html">String</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html">Boolean</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html">Long</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Double.html">Doub</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html">Calendar</a><br /> <a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">Value</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html">String[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html">Boolean[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html">Long[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html">Calendar[]</a><br /> <a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">Value[]</a></td>
    <td>Gibt die Werte zurück, wenn es eine auf einer JCR-Eigenschaft basierende Ressource ist (und der Wert passt).</td>
   </tr>
   <tr>
@@ -140,11 +140,11 @@ Adaption von [**Resource**](https://developer.adobe.com/experience-manager/refer
    <td>Wenn es eine auf einem JCR-Knoten basierende Ressource ist</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html">Seite </a></td>
-   <td>Wenn es eine auf einem JCR-Knoten basierende Ressource ist und der Knoten eine <code>cq:Page</code> (oder <code>cq:PseudoPage</code>)</td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html">Page</a></td>
+   <td>Wenn es eine auf einem JCR-Knoten basierende Ressource ist und der Knoten den Typ <code>cq:Page</code> (oder <code>cq:PseudoPage</code>) hat</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/components/Component.html">Komponente</a></td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/components/Component.html">Component</a></td>
    <td>Wenn es eine <code>cq:Component</code>-Knotenressource ist</td>
   </tr>  
   <tr>
@@ -152,7 +152,7 @@ Adaption von [**Resource**](https://developer.adobe.com/experience-manager/refer
    <td>Wenn es ein Design-Knoten ist (<code>cq:Page</code>)</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Template.html">Vorlage  </a></td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Template.html">Template</a></td>
    <td>Wenn es eine <code>cq:Template</code>-Knotenressource ist</td>
   </tr>  
   <tr>
@@ -173,11 +173,11 @@ Adaption von [**Resource**](https://developer.adobe.com/experience-manager/refer
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
-   <td>Basiert auf der JCR-Sitzung, wenn es eine JCR-basierte Ressource ist und der Benutzer über Berechtigungen zum Zugreifen auf den UserManager verfügt</td>
+   <td>Basiert auf der JCR-Sitzung, wenn es eine JCR-basierte Ressource ist und die Person über Berechtigungen zum Zugreifen auf den UserManager verfügt</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">Authorizable</a></td>
-   <td>Die Authorizable-Funktion ist die allgemeine Basisschnittstelle für Benutzende und Gruppen</td>
+   <td>Die Authorizable-Funktion ist die allgemeine Basisschnittstelle für Benutzerin bzw. Benutzer und Gruppe</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/jackrabbit/api/security/user/User.html">User</a></td>
@@ -240,7 +240,7 @@ Adaption von [**ResourceResolver**](https://developer.adobe.com/experience-manag
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/jackrabbit/api/security/user/UserManager.html">UserManager</a></td>
-   <td>Der UserManager bietet Zugriff auf autorisierbare Objekte, d. h. Benutzer und Gruppen, und ermöglicht deren Pflege. Der UserManager ist an eine bestimmte Sitzung gebunden
+   <td>UserManager ermöglicht Zugriff auf autorisierbare Objekte und deren Verwaltung, d. h. Benutzende und Gruppen. Der UserManager ist an eine bestimmte Sitzung gebunden
    </td>
   </tr>
   <tr>
@@ -248,7 +248,7 @@ Adaption von [**ResourceResolver**](https://developer.adobe.com/experience-manag
    <td>Die aktuelle Benutzerin bzw. der aktuelle Benutzer</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/jackrabbit/api/security/user/User.html">Benutzer</a><br /> </td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/jackrabbit/api/security/user/User.html">User</a><br /> </td>
    <td>Die aktuelle Benutzerin bzw. der aktuelle Benutzer</td>
   </tr>
   <tr>
@@ -257,7 +257,7 @@ Adaption von [**ResourceResolver**](https://developer.adobe.com/experience-manag
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html">Externalizer</a></td>
-   <td>Für das Externalisieren von absoluten URLs, auch ohne das Anforderungsobjekt<br /> </td>
+   <td>Für das Externalisieren absoluter URLs, auch ohne das Anforderungsobjekt<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -335,7 +335,7 @@ Adaption von **[Template](https://developer.adobe.com/experience-manager/referen
 
 #### Sicherheit {#security}
 
-**Authorizable**, **Benutzer und **Gruppe** angepasst an:
+Adaption von **Authorizable**, **User und **Group** für:
 
 | [Node](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Gibt den Stammknoten des Benutzers/der Gruppe zurück. |
 |---|---|

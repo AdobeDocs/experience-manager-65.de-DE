@@ -1,6 +1,6 @@
 ---
 title: Inhalt auf Seite Null in Designer ändern
-description: Wissen Sie, wie Sie die auf Seite Null einer XFA-PDF angezeigte Nachricht ändern können, wenn Sie sie in einem Nicht-Adobe PDF-Viewer anzeigen?
+description: Wissen Sie, wie Sie die Meldung ändern können, die auf der Seite Null einer XFA-PDF-Datei angezeigt wird, wenn diese in einem PDF-Viewer angezeigt wird, der nicht von Adobe stammt?
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 docset: aem65
@@ -9,7 +9,7 @@ exl-id: 466b7e85-a2f8-4e1e-8afc-1566b0ccb84c
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '230'
-ht-degree: 80%
+ht-degree: 91%
 
 ---
 
@@ -43,4 +43,4 @@ Mit der Version [!DNL AEM Forms] von Designer können Sie die auf Seite Null ang
 
 >[!NOTE]
 >
->Die von Ihnen erstellte benutzerdefinierte Eigenschaft wird möglicherweise nicht ordnungsgemäß im Dialogfeld &quot;Formulareigenschaften&quot;angezeigt, wenn Sie das Formular erneut öffnen. Sie funktioniert jedoch einwandfrei und das Formular zeigt die aktualisierte Meldung auf Seite Null an.
+>Die von Ihnen erstellte benutzerdefinierte Eigenschaft wird möglicherweise nicht ordnungsgemäß im Dialogfeld &quot;Formulareigenschaften&quot;angezeigt, wenn Sie das Formular erneut öffnen. Sie funktioniert jedoch problemlos und das Formular zeigt die aktualisierte Meldung auf Seite Null an.

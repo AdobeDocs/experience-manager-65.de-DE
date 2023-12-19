@@ -1,6 +1,6 @@
 ---
 title: Arbeiten mit der Autorenumgebung
-description: Mit der Autorenumgebung können Sie Aufgaben im Zusammenhang mit der Bearbeitung (einschließlich der Seitenbearbeitung und -verwaltung) und Verwaltung von Assets ausführen, die Sie beim Generieren und Verwalten des Inhalts auf Ihrer Website benötigen.
+description: In der Autorenumgebung können Sie Bearbeitungsaufgaben (einschließlich Seitenbearbeitung und Asset-Verwaltung) ausführen und Aufgaben verwalten, die für die Erstellung und Aktualisierung des Website-Inhalts erforderlich sind.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -9,7 +9,7 @@ exl-id: 4486c503-21e6-493a-8994-b0f8cd34c85a
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '252'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 61%
 >
 >Die folgende Dokumentation bezieht sich auf die klassische Benutzeroberfläche. Informationen zu Bearbeitungsmöglichkeiten in der neuen Touch-optimierten Benutzeroberfläche finden Sie in der [Standarddokumentation zur Bearbeitung](/help/assets/assets.md).
 
-Die Autorenumgebung ermöglicht die Durchführung von Aufgaben im Zusammenhang mit:
+In der Autorenumgebung können Sie folgende Aufgaben ausführen:
 
 * [Bearbeiten](/help/sites-authoring/author.md) (einschließlich [Seitenbearbeitung](/help/sites-authoring/qg-page-authoring.md) und [Verwaltung von Assets](/help/assets/assets.md))
 
@@ -29,18 +29,18 @@ Zu diesem Zweck werden zwei grafische Benutzeroberflächen bereitgestellt. Diese
 
 1. Klassische Benutzeroberfläche
 
-   * Diese Benutzeroberfläche ist in AEM seit vielen Jahren immer verfügbar.
-   * Es ist überwiegend grün.
-   * Sie wurde für die Verwendung auf Desktop-Geräten entwickelt.
-   * Es wird nicht mehr gepflegt.
-   * Die folgende Dokumentation bezieht sich auf die klassische Benutzeroberfläche. Informationen zum Authoring in der modernen, Touch-basierten Benutzeroberfläche finden Sie in der [Standarddokumentation zur Bearbeitung](/help/sites-authoring/author.md).
+   * Diese Benutzeroberfläche wird schon seit vielen Jahren in AEM verwendet.
+   * Sie ist vorwiegend in Grün gehalten.
+   * Sie wurde für die Nutzung auf Desktop-Geräten entwickelt.
+   * Sie wird nicht mehr weiterentwickelt.
+   * Die folgende Dokumentation bezieht sich auf die klassische Benutzeroberfläche. Informationen zu Bearbeitungsmöglichkeiten in der neueren, Touch-optimierten Benutzeroberfläche finden Sie in der [Standarddokumentation zur Bearbeitung](/help/sites-authoring/author.md).
 
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
 1. Touch-optimierte Benutzeroberfläche
 
-   * Dies ist die moderne, standardmäßige AEM Benutzeroberfläche.
-   * Es ist vorwiegend grau, mit einer sauberen, flachen Oberfläche.
+   * Dies ist die neue Standard-Benutzeroberfläche von AEM.
+   * Sie ist vorwiegend in Grau gehalten und besitzt einen einfachen Aufbau.
    * Sie wurde sowohl für Touch- als auch für Desktop-Geräte entwickelt (für Touch optimiert). Das Erscheinungsbild ist auf allen Geräten identisch, obwohl das [Anzeigen und Auswählen Ihrer Ressourcen](/help/sites-authoring/basic-handling.md) etwas unterschiedlich aussehen kann (Tippen bzw. Klicken).  
    * Weitere Informationen zur Verwendung der Touch-optimierten Benutzeroberfläche finden Sie in der [Standarddokumentation zur Bearbeitung](/help/sites-authoring/author.md). Die folgende Dokumentation bezieht sich auf die klassische Benutzeroberfläche.
 

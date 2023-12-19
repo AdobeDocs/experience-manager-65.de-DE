@@ -9,7 +9,7 @@ exl-id: 05f7a513-5ee7-4870-a691-4a0602e0cbb2
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '169'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ Beim Definieren der Konfigurationen für Tests sollten Sie Folgendes beachten:
 
 **Entwicklung**: Für Komponententests und bestimmte Integrationstests.
 
-**Test** - Für die meisten Tests.
+**Testen**: Für die meisten Tests.
 
 **Live**: Für abschließende Leistungs- und Belastungstests. Auch für Akzeptanztests mit dem Kunden.
 
-Legen Sie fest, welche Instanzen Sie benötigen und wo (normalerweise mindestens eine für alle Testebenen):
+Legen Sie fest, welche Instanzen Sie benötigen und wo (normalerweise mindestens jeweils eine für alle Testebenen):
 
 **Author**: In dieser Instanz können Autoren Inhalte eingeben und veröffentlichen.
 
@@ -31,8 +31,8 @@ Legen Sie fest, welche Instanzen Sie benötigen und wo (normalerweise mindestens
 
 Mit dem Dispatcher getestet.
 
-Schließlich muss die tatsächliche Hardware berücksichtigt werden - alle Leistungstests sollten auf einem System durchgeführt werden, das der Konfiguration der endgültigen Live-Umgebung so ähnlich wie möglich ist. Aus diesem Grund wird auch empfohlen, den Projekt-Launch in einen aufzuteilen:
+Schließlich muss die tatsächliche Hardware berücksichtigt werden – alle Leistungstests sollten auf einem System durchgeführt werden, das der Konfiguration der endgültigen Live-Umgebung so ähnlich wie möglich ist. Aus diesem Grund wird auch empfohlen, den Projekt-Launch wie folgt aufzuteilen:
 
-**Soft Launch** - Geringere Verfügbarkeit, die Zeit für Leistungstests, Optimierung und Optimierung unter realistischen Bedingungen in der Produktionsumgebung lässt.
+**Soft Launch**: Reduzierte Verfügbarkeit, sodass Zeit für Leistungstests, Anpassungen und Optimierungen unter realistischen Bedingungen in der Produktionsumgebung bleibt.
 
 **Hard Launch**: Vollständige Verfügbarkeit.

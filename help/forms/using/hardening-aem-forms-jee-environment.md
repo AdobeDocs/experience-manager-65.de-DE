@@ -8,8 +8,8 @@ role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '7662'
-ht-degree: 92%
+source-wordcount: '7574'
+ht-degree: 93%
 
 ---
 
@@ -679,7 +679,7 @@ AEM Forms auf JEE verwendet die Referrer-Filter-Funktion, um CSRF-Angriffe abzuw
 
 Der Referrer-Filter funktioniert wie folgt:
 
-1. Der Forms-Server überprüft die für den Aufruf verwendete HTTP-Methode:
+1. Der Formular-Server prüft die für den Aufruf verwendete HTTP-Methode:
 
    1. Wenn es sich um eine POST handelt, führt der Forms-Server die Header-Prüfung des Referrers durch.
    1. Wenn es sich um eine GET handelt, umgeht der Forms-Server die Referrer-Prüfung, es sei denn, *CSRF_CHECK_GETS* auf &quot;true&quot;gesetzt ist. In diesem Fall wird die Kopfzeilenprüfung des Referrers durchgeführt. *CSRF_CHECK_GETS* ist in der Datei *web.xml* für Ihre Anwendung festgelegt.
@@ -701,7 +701,7 @@ Der Referrer-Filter funktioniert wie folgt:
 
 ### Verwalten des Referrer-Filters {#managing-referer-filtering}
 
-AEM Forms auf JEE bietet einen Referrer-Filter, um Referrer anzugeben, denen der Zugriff auf Server-Ressourcen erlaubt wird. Standardmäßig filtert der Filter &quot;Referrer&quot;keine Anforderungen, die eine sichere HTTP-Methode verwenden, z. B. GET, es sei denn, *CSRF_CHECK_GETS* auf &quot;true&quot;gesetzt ist. Wenn die Port-Nummer für den Eintrag eines zulässigen Referrers auf 0 festgelegt ist, lässt AEM Forms auf JEE alle Anfragen mit Referrern von diesem Host unabhängig von der Port-Nummer zu. Wenn keine Anschlussnummer angegeben wird, werden nur Anforderungen vom Standardanschluss 80 (HTTP) oder von Anschluss 443(HTTPS) zugelassen. Der Referrer-Filter wird deaktiviert, wenn alle Einträge in der Liste der zulässigen Referrer gelöscht werden.
+AEM Forms auf JEE bietet einen Referrer-Filter, um Referrer anzugeben, denen der Zugriff auf Server-Ressourcen erlaubt wird. Der Referrer-Filter filtert standardmäßig keine Anfragen, die eine sichere HTTP-Methode, z. B. GET, verwenden, es sei denn, *CSRF_CHECK_GETS* ist auf „true“ festgelegt. Wenn die Port-Nummer für den Eintrag eines zulässigen Referrers auf 0 festgelegt ist, lässt AEM Forms auf JEE alle Anfragen mit Referrern von diesem Host unabhängig von der Port-Nummer zu. Wenn keine Anschlussnummer angegeben wird, werden nur Anforderungen vom Standardanschluss 80 (HTTP) oder von Anschluss 443(HTTPS) zugelassen. Der Referrer-Filter wird deaktiviert, wenn alle Einträge in der Liste der zulässigen Referrer gelöscht werden.
 
 Wenn Sie Document Services zum ersten Mal installieren, wird die Liste für zulässige Referrer mit der Adresse des Servers aktualisiert, auf dem Document Services installiert wird. Die Einträge für den Server enthalten den vollständig Servernamen, die IPv4-Adresse, die IPv6-Adresse, wenn IPv6 aktiviert ist, die Loopback-Adresse und einen „localhost“-Eintrag. Die Namen, die zur Liste der zulässigen verweisenden Stellen (auch als Liste „Zulässige Referrer“ bezeichnet)“ hinzugefügt wurden, werden vom Betriebssystem des Hosts zurückgegeben. Beispielsweise enthält ein Server mit einer IP-Adresse von 10.40.54.187 die folgenden Einträge: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Für nicht qualifizierten Namen, die vom Host-Betriebssystem zurückgegeben wurden (Namen, die keine IPv4-Adresse, IPv6-Adresse oder qualifizierte Domain-Namen haben), erfolgt keine Aktualisierung der Zulassungsliste. Ändern Sie die Liste der zulässigen verweisenden Stellen entsprechend Ihrer Geschäftsumgebung. Stellen Sie den Forms-Server nicht in der Produktionsumgebung mit der standardmäßigen Liste für zulässige Referrer bereit. Nachdem Sie die zulässigen Referrer, Referrer-Ausnahmen oder URIs geändert haben, müssen Sie den Server neu starten, damit die Änderungen wirksam werden.
 
@@ -724,7 +724,7 @@ AEM Forms on JEE stellt APIs zum Verwalten der Listen „Zulässige Referrer –
 
 Weitere Informationen zu den APIs finden Sie in der AEM Forms on JEE API-Referenz.
 
-Verwenden Sie die ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** Liste zulässiger Referrer - Ausnahmen auf globaler Ebene, d. h. zur Definition von Ausnahmen, die für alle Anwendungen gelten. Diese Liste enthält nur URIs mit einem absoluten Pfad (zum Beispiel `/index.html`) oder einen relativen Pfad (z. B. `/sample/`). Sie können auch einen regulären Ausdruck an das Ende eines relativen URI anhängen, beispielsweise: `/sample/(.)*`.
+Verwenden Sie die ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** Liste zulässiger Referrer - Ausnahmen auf globaler Ebene, d. h. zur Definition von Ausnahmen, die für alle Anwendungen gelten. Diese Liste enthält nur URIs mit entweder einem absoluten Pfad (z. B. `/index.html`) oder einem relativen Pfad (z. B., `/sample/`). Sie können auch einen regulären Ausdruck am Ende eines relativen URI anhängen, z. B., `/sample/(.)*`.
 
 Die Listen-ID ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** wird als Konstante in der Klasse `UMConstants` des Namespace `com.adobe.idp.um.api` definiert, der in `adobe-usermanager-client.jar` zu finden ist. Sie können die AEM Forms-APIs zum Erstellen, Ändern oder Bearbeiten dieser Liste verwenden. Um beispielsweise die Liste für globale zulässigen Referrer - Ausnahmen zu verwenden, gehen Sie folgendermaßen vor:
 

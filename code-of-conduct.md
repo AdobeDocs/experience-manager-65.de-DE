@@ -1,15 +1,15 @@
 ---
 source-git-commit: 2a97935a81cf9c0a1a832dd27b62d388805863e0
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 78%
+source-wordcount: '422'
+ht-degree: 95%
 
 ---
 # Adobe-Verhaltenskodex
 
-## Zusage
+## Versprechen
 
-Um eine offene und einladende Umgebung zu fördern, verpflichtet sich das Dokumentationsteam als Mitwirkende und Betreuer, die Teilnahme an einem Projekt und unserer Community zu einer belästigungsfreien Erfahrung für alle zu machen, unabhängig von Alter, Körpergröße, Behinderung, ethnischer Zugehörigkeit, Geschlechtsidentität und -ausdruck, Erfahrungsniveau, Nationalität, persönlichem Erscheinungsbild, Rasse, Religion oder sexueller Identität und Orientierung.
+Um eine offene und einladende Umgebung zu fördern, verspricht das Dokumentations-Team als Mitwirkende und Verantwortliche, die Teilnahme an unserem Projekt und unserer Community zu einem belästigungsfreien Erlebnis für alle zu machen, unabhängig von Alter, Körpermaßen, Behinderung, ethnischer Herkunft, Geschlechtsidentität und -ausdruck, Erfahrungsstand, Nationalität, persönlichem Erscheinungsbild, Rasse, Religion oder sexueller Identität und Orientierung.
 
 ## Standards
 
@@ -41,7 +41,7 @@ Dieser Verhaltenskodex gilt sowohl innerhalb der Projektbereiche als auch in öf
 
 ## Durchsetzung
 
-Fälle von beleidigenden, belästigenden oder anderweitig inakzeptablen Verhaltensweisen können unter grp-opensourceoffice@adobe.com an das Projektteam gemeldet werden. Alle Beschwerden werden geprüft und untersucht und führen zu einer Antwort, die für notwendig und den Umständen angemessen erachtet wird. Das Projektteam ist verpflichtet, die Vertraulichkeit in Bezug auf die Meldung eines Vorfalls zu wahren. Weitere Details zu spezifischen Durchsetzungsrichtlinien können separat veröffentlicht werden.
+Fälle von beleidigenden, belästigenden oder anderweitig inakzeptablen Verhaltensweisen können unter grp-opensourceoffice@adobe.com an das Projektteam gemeldet werden. Alle Beschwerden werden geprüft und untersucht und führen zu einer Antwort, die für notwendig und den Umständen angemessen erachtet wird. Das Projekt-Team ist verpflichtet, die Vertraulichkeit gegenüber der Person, die einen Vorfall meldet, zu wahren. Weitere Details zu spezifischen Durchsetzungsrichtlinien können separat veröffentlicht werden.
 
 Projektverantwortliche, die dem Verhaltenskodex nicht in gutem Glauben folgen oder diesen durchsetzen, müssen mit vorübergehenden oder dauerhaften Konsequenzen rechnen, die von anderen Mitgliedern der Projektleitung festgelegt werden.
 

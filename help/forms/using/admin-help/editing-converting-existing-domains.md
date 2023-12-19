@@ -1,6 +1,6 @@
 ---
 title: Bestehende Domains bearbeiten und konvertieren
-description: Erfahren Sie, wie Sie auf der Seite „Domain-Verwaltung“ die Einstellungen für bestehende Domains ändern. Konvertieren einer vorhandenen Unternehmensdomäne in eine Hybriddomäne oder umgekehrt.
+description: Erfahren Sie, wie Sie auf der Seite „Domain-Verwaltung“ die Einstellungen für bestehende Domains ändern. Konvertieren Sie eine bestehende Unternehmens-Domain in eine Hybrid-Domain oder umgekehrt.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
@@ -9,7 +9,7 @@ exl-id: 34ac5f8b-f209-4f99-ad71-4df6f2c88c1e
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -22,16 +22,16 @@ Sie können auf der Seite „Domain-Verwaltung“ die Einstellungen für bestehe
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Klicken Sie auf den Namen der Domain, die bearbeitet werden soll.
 1. Um den Domain-Namen zu ändern, bearbeiten Sie den Text im Feld „Name“.
-1. Um die Authentifizierungsinformationen für eine Unternehmens- oder Hybrid-Domain zu ändern, klicken Sie auf den entsprechenden Authentifizierungsnamen am unteren Rand der Seite. Ändern Sie auf der Seite Authentifizierung bearbeiten die Einstellungen nach Bedarf. (Siehe [Authentifizierungseinstellungen](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).
-1. Um die Ordnerinformationen für eine Unternehmens-Domain zu ändern, klicken Sie auf den entsprechenden Ordnernamen am unteren Rand der Seite. Ändern Sie auf der Seite &quot;Verzeichnis bearbeiten&quot;die Einstellungen nach Bedarf. (Siehe [Ordner oder benutzerdefinierte SPIs hinzufügen](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).
-1. Wenn Sie Ihre Änderungen abgeschlossen haben, klicken Sie auf OK.
+1. Um die Authentifizierungsinformationen für eine Unternehmens- oder Hybrid-Domain zu ändern, klicken Sie auf den entsprechenden Authentifizierungsnamen am unteren Rand der Seite. Auf der Seite „Authentifizierung bearbeiten“ können Sie die Einstellungen nach Bedarf ändern. (Siehe [Authentifizierungseinstellungen](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings)).
+1. Um die Ordnerinformationen für eine Unternehmens-Domain zu ändern, klicken Sie auf den entsprechenden Ordnernamen am unteren Rand der Seite. Auf der Seite „Verzeichnis bearbeiten“ können Sie die Einstellungen nach Bedarf ändern. (Siehe [Hinzufügen von Verzeichnissen oder benutzerdefinierten SPIs](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis)).
+1. Wenn Sie Ihre Änderungen abgeschlossen haben, klicken Sie auf „OK“.
 
 ## Konvertieren einer Unternehmens-Domain in eine Hybrid-Domain {#convert-an-enterprise-domain-to-a-hybrid-domain}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Klicken Sie auf den Namen der Unternehmens-Domain, die umgewandelt werden soll.
 1. Klicken Sie auf „In Hybrid-Domain konvertieren“.
-1. Überprüfen Sie die angezeigten Informationen zu Benutzer- und Gruppendaten sowie zur Authentifizierung von Benutzern und klicken Sie auf &quot;OK&quot;.
+1. Überprüfen Sie die angezeigten Informationen zu Benutzer- und Gruppendaten sowie zur Authentifizierung von Benutzenden und klicken Sie auf „OK“.
 1. Bearbeiten Sie die Einstellungen der Hybrid-Domain und klicken Sie auf „OK“.
 
 >[!NOTE]
@@ -43,5 +43,5 @@ Sie können auf der Seite „Domain-Verwaltung“ die Einstellungen für bestehe
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Klicken Sie auf den Namen der Hybrid-Domain, die umgewandelt werden soll.
 1. Klicken Sie auf „In Unternehmens-Domain konvertieren“.
-1. Überprüfen Sie die angezeigten Informationen zu Benutzer- und Gruppendaten sowie zur Authentifizierung von Benutzern und klicken Sie auf &quot;OK&quot;.
-1. Klicken Sie auf Verzeichnis hinzufügen und konfigurieren Sie die erforderlichen Ordnerinformationen. (Siehe [Ordner oder benutzerdefinierte SPIs hinzufügen](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).
+1. Überprüfen Sie die angezeigten Informationen zu Benutzer- und Gruppendaten sowie zur Authentifizierung von Benutzenden und klicken Sie auf „OK“.
+1. Klicken Sie auf „Verzeichnis hinzufügen“ und konfigurieren Sie die erforderlichen Verzeichnisdaten. (Siehe [Hinzufügen von Verzeichnissen oder benutzerdefinierten SPIs](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis))

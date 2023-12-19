@@ -5,8 +5,8 @@ contentOwner: Guillaume Carlino
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1846'
-ht-degree: 39%
+source-wordcount: '1853'
+ht-degree: 98%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 39%
 >
 >[API-Dokumentation](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) ist ebenfalls verfügbar.
 
-Das Integrations-Framework enthält eine Integrationsebene mit einer API. Auf diese Weise können Sie AEM Komponenten für eCommerce-Funktionen erstellen (unabhängig von Ihrer spezifischen eCommerce-Engine). Außerdem können Sie die interne CRX-Datenbank verwenden oder ein eCommerce-System einbinden und Produktdaten in AEM abrufen.
+Das Integrations-Framework enthält eine Integrationsebene mit einer API. So können Sie AEM-Komponenten für E-Commerce-Funktionen erstellen (unabhängig von Ihrer spezifischen E-Commerce-Engine). Außerdem können Sie die interne CRX-Datenbank verwenden oder ein eCommerce-System einbinden und Produktdaten in AEM abrufen.
 
-Für die Verwendung der Integrationsschicht stehen verschiedene vordefinierte AEM zur Verfügung. Derzeit sind dies:
+Für die Verwendung der Integrationsschicht werden mehrere sofort einsatzbereite AEM-Komponenten bereitgestellt. Derzeit sind dies:
 
 * Eine Komponente „Produktanzeige“
-* Warenkorb
+* Ein Warenkorb
 * Promotions und Gutscheine
 * Katalog- und Abschnitts-Blueprints
 * Checkout
@@ -29,9 +29,9 @@ Für die Verwendung der Integrationsschicht stehen verschiedene vordefinierte AE
 
 Für die Suche wird ein Integrations-Hook bereitgestellt, mit dem Sie die Adobe Experience Manager-Suche (AEM), eine Drittanbietersuche oder eine Kombination daraus verwenden können.
 
-## Auswahl der eCommerce-Engine {#ecommerce-engine-selection}
+## Auswahl der E-Commerce-Engine {#ecommerce-engine-selection}
 
-Das eCommerce-Framework kann mit jeder eCommerce-Lösung verwendet werden. Die verwendete Engine muss durch AEM identifiziert werden - auch bei Verwendung der generischen AEM-Engine:
+Das eCommerce-Framework kann mit jeder eCommerce-Lösung verwendet werden. Die verwendete Engine muss von AEM identifiziert werden – auch bei Verwendung der generischen AEM-Engine:
 
 * eCommerce-Engines sind OSGi-Services, die die `CommerceService`-Schnittstelle unterstützen.
 
@@ -41,14 +41,14 @@ Das eCommerce-Framework kann mit jeder eCommerce-Lösung verwendet werden. Die v
 
    * Die `adaptTo`-Implementierung sucht nach einer `cq:commerceProvider`-Eigenschaft in der Hierarchie der Ressource:
 
-      * Wenn der Wert gefunden wird, wird er zum Filtern der Commerce-Service-Suche verwendet.
-      * Wenn nicht gefunden, wird der Commerce-Dienst mit dem höchsten Rang verwendet.
+      * Wenn der Wert gefunden wird, wird er zum Filtern der Suche nach einem Commerce-Service verwendet.
+      * Wenn nicht gefunden, wird der Commerce-Service mit dem höchsten Rang verwendet.
 
    * Ein `cq:Commerce`-Mixin wird verwendet, um `cq:commerceProvider` zu stark typisierten Ressourcen hinzuzufügen.
 
 * Die `cq:commerceProvider`-Eigenschaft wird auch als Verweis auf die geeignete Commerce-Factory-Definition verwendet.
 
-   * Beispiel: eine `cq:commerceProvider` -Eigenschaft mit dem Wert, der mit der OSGi-Konfiguration für **Day CQ Commerce Factory für Geometrixx-Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`) - wobei der Parameter `commerceProvider` hat auch den Wert `geometrixx`.
+   * Eine `cq:commerceProvider`-Eigenschaft mit dem Wert „Geometrixx“ korreliert beispielsweise mit der OSGi-Konfiguration für **Day CQ Commerce Factory for Geometrixx-Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`) – wobei der Parameter `commerceProvider` ebenfalls den Wert `geometrixx` hat.
    * Hier können weitere Eigenschaften konfiguriert werden (falls zutreffend und verfügbar).
 
 In einer Standard-AEM-Installation wird eine spezifische Implementierung benötigt, zum Beispiel:
@@ -76,7 +76,7 @@ In einer Standard-AEM-Installation wird eine spezifische Implementierung benöti
 
 >[!NOTE]
 >
->Mithilfe von CRXDE Lite können Sie sehen, wie dies in der Produktkomponente für die AEM allgemeine Implementierung gehandhabt wird:
+>Mit CRXDE Lite können Sie sehen, wie dies in der Produktkomponente für die generische AEM-Implementierung gehandhabt wird:
 >
 >`/apps/geometrixx-outdoors/components/product`
 
@@ -98,26 +98,26 @@ Die **CommerceSession**:
   `CommerceSession.getUserContext()`
 
 * Kann Versanddetails über `updateOrder(Map<String, Object> delta)` abrufen oder aktualisieren.
-* Besitzt die **payment** Verarbeitungsverbindung
-* Besitzt die **Erfüllung** connection
+* Sie steuert die Verbindung für die **Zahlungsverarbeitung**
+* Sie steuert die Verbindung für die **Erfüllung**
 
 ### Architektur {#architecture}
 
 #### Architektur von Produkt und Varianten {#architecture-of-product-and-variants}
 
-Ein einzelnes Produkt kann mehrere Variationen aufweisen, z. B. kann es je nach Farbe und/oder Größe variieren. Ein Produkt muss definieren, welche Eigenschaften die Variante beeinflussen; Adobe bezeichnet diese Eigenschaften *Variantenachsen*.
+Ein einzelnes Produkt kann mehrere Variationen aufweisen, z. B. kann es je nach Farbe und/oder Größe variieren. Ein Produkt muss definieren, welche Eigenschaften die Variation bestimmen. Bei Adobe heißt dies *Variantenachsen*.
 
-Es sind jedoch nicht alle Eigenschaften Variantenachsen. Varianten können sich auch auf andere Eigenschaften auswirken, z. B. kann der Preis von der Größe abhängen. Diese Eigenschaften können nicht vom Käufer ausgewählt werden und werden daher nicht als Variantenachsen betrachtet.
+Es sind jedoch nicht alle Eigenschaften Variantenachsen. Varianten können sich auch auf andere Eigenschaften auswirken, z. B. kann der Preis von der Größe abhängen. Diese Eigenschaften können nicht von den Käuferinnen und Käufern ausgewählt werden und werden daher nicht als Variantenachsen betrachtet.
 
 Jedes Produkt bzw. jede Variante steht für eine Ressource und ist daher im Verhältnis 1:1 einem Repository-Knoten zugeordnet. Eine Folge ist, dass ein bestimmtes Produkt und/oder eine bestimmte Variante durch ihren Pfad eindeutig identifiziert werden kann.
 
-Jede Produktressource kann durch eine `Product API` dargestellt werden. Die meisten Aufrufe in der Produkt-API sind variationsspezifisch (obwohl Varianten möglicherweise gemeinsame Werte von einem Vorgänger erben), es gibt aber auch Aufrufe, in denen der Variantensatz aufgelistet wird ( `getVariantAxes()`, `getVariants()`usw.).
+Jede Produktressource kann durch eine `Product API` dargestellt werden. Die meisten Aufrufe in der Produkt-API beziehen sich auf spezifische Varianten (obwohl Varianten gemeinsame Werte von einem Vorgänger erben können). Bei manchen Aufrufen wird jedoch ein Variantensatz (`getVariantAxes()`, `getVariants()` usw.) aufgelistet.
 
 >[!NOTE]
 >
->Eine Variantenachse wird von der Art der `Product.getVariantAxes()` gibt zurück:
+>Eine Variantenachse wird letztendlich von dem bestimmt, was der Aufruf `Product.getVariantAxes()` zurückgibt:
 >
->* für die generische Implementierung liest AEM sie aus einer Eigenschaft in den Produktdaten ( `cq:productVariantAxes`)
+>* für die generische Implementierung liest AEM es aus einer Eigenschaft in den Produktdaten (`cq:productVariantAxes`)
 >
 >Zwar können Produkte (im Allgemeinen) viele Variantenachsen haben, vorkonfigurierte Produktkomponenten jedoch nur zwei:
 >
@@ -237,7 +237,7 @@ public class AxisFilter implements VariantFilter {
    * Produktknoten sind nt:unstructured.
    * Ein Produktknoten kann Folgendes sein:
 
-      * Referenz mit den an anderer Stelle gespeicherten Produktdaten:
+      * Eine Referenz, wobei die Produktdaten an anderer Stelle gespeichert werden:
 
          * Produktverweise enthalten eine `productData`-Eigenschaft, die auf die Produktdaten verweist (in der Regel unter `/etc/commerce/products`).
          * Die Produktdaten sind hierarchisch. Produktattribute werden von den Vorgängern eines Produktdatenknotens übernommen.
@@ -246,12 +246,12 @@ public class AxisFilter implements VariantFilter {
       * Ein Produkt selbst:
 
          * Ohne eine `productData`-Eigenschaft.
-         * Ein Produktknoten, der alle Eigenschaften lokal enthält (und keine productData -Eigenschaft enthält), erbt Produktattribute direkt von seinen eigenen Vorgängern.
+         * Ein Produktknoten, der alle Eigenschaften lokal enthält (und keine productData-Eigenschaft enthält), erbt Produktattribute direkt von seinen eigenen Vorgängern.
 
 * **AEM-generische Produktstruktur**
 
    * Jede Variante muss über einen eigenen Blattknoten verfügen.
-   * Die Produktoberfläche stellt sowohl Produkte als auch Varianten dar, aber der zugehörige Repository-Knoten ist spezifisch für den es ist.
+   * Die Produktoberfläche stellt sowohl Produkte als auch Varianten dar, aber der zugehörige Repository-Knoten gibt an, um was es sich handelt.
    * Der Produktknoten beschreibt die Produktattribute und Variantenachsen.
 
 #### Beispiel {#example-1}
@@ -303,19 +303,19 @@ public class AxisFilter implements VariantFilter {
 
 * Der Warenkorb wird von `CommerceSession:` gesteuert:
 
-   * Die `CommerceSession` führt Hinzufügen, Entfernen usw. durch.
+   * Die `CommerceSession` führt das Hinzufügen, Entfernen usw. durch.
    * Die `CommerceSession` nimmt auch die diversen Berechnungen des Warenkorbs vor.
    * Die `CommerceSession` wendet auch Gutscheine und Aktionen an, die auf den Warenkorb ausgeführt werden.
 
 * Obwohl dies nicht direkt mit dem Warenkorb zusammenhängt, muss die `CommerceSession` auch Kataloginformationen angeben (da sie die Preise steuert).
 
-   * Die Preise können mehrere Modifikatoren aufweisen:
+   * Für die Preisgestaltung können mehrere Modifikatoren gelten:
 
       * Mengenrabatte.
       * Verschiedene Währungen.
       * Mehrwertsteuerpflichtig und mehrwertsteuerfrei.
 
-   * Die Modifikatoren sind offen mit der folgenden Benutzeroberfläche:
+   * Die Modifikatoren sind offen und haben die folgende Schnittstelle:
 
       * `int CommerceSession.getQuantityBreakpoints(Product product)`
       * `String CommerceSession.getProductPrice(Product product)`
@@ -324,11 +324,11 @@ public class AxisFilter implements VariantFilter {
 
 * Speicher
 
-   * Im AEM wird der Warenkorb im [ClientContext](/help/sites-administering/client-context.md)
+   * Im AEM-generischen Fall werden Warenkörbe im [ClientContext](/help/sites-administering/client-context.md) gespeichert
 
 **Personalisierung**
 
-* Führen Sie die Personalisierung immer durch [ClientContext](/help/sites-administering/client-context.md).
+* Die Personalisierung erfolgt immer über den [ClientContext](/help/sites-administering/client-context.md).
 * In allen Fällen wird eine ClientContext-Version (`/version/`) des Warenkorbs erstellt:
 
    * Produkte sollten mithilfe der `CommerceSession.addCartEntry()`-Methode hinzugefügt werden.
@@ -353,7 +353,7 @@ Die `CommerceSession` steuert die drei folgenden Elemente:
        public void deleteCartEntry(int entryNumber);
    ```
 
-1. **Preise**
+1. **Preisgestaltung**
 
    Das Preisschema wird ebenfalls von der API festgelegt:
 
@@ -376,7 +376,7 @@ Die `CommerceSession` steuert die drei folgenden Elemente:
        public void submitOrder();
    ```
 
-**Versandberechnungen**
+**Versandkostenberechnungen**
 
 * Bestellformulare müssen oft mehrere Versandoptionen (und Preise) enthalten.
 * Die Preise können auf Artikeln und Details der Bestellung basieren, wie Gewicht und/oder Lieferadresse.
@@ -387,15 +387,15 @@ Die `CommerceSession` steuert die drei folgenden Elemente:
 
 ### Suchdefinition {#search-definition}
 
-Gemäß dem Standard-Service-API-Modell stellt das eCommerce-Projekt eine Reihe suchbezogener APIs bereit, die von einzelnen Commerce-Engines implementiert werden können.
+Gemäß dem standardmäßigen Dienst-API-Modell stellt das eCommerce-Projekt einen Satz suchbezogener APIs bereit, die von einzelnen Commerce-Engines implementiert werden können.
 
 >[!NOTE]
 >
->Derzeit implementiert nur die hybris-Engine die Such-API standardmäßig.
+>Derzeit wird die vorkonfigurierte Such-API nur von der Hybris-Engine implementiert.
 >
 >Die Such-API ist jedoch generisch und kann von jedem CommerceService einzeln implementiert werden.
 >
->Obwohl die standardmäßig bereitgestellte generische Implementierung diese API nicht implementiert, können Sie sie erweitern und die Suchfunktion hinzufügen.
+>Obwohl die standardmäßig bereitgestellte generische Implementierung diese API nicht implementiert, können Sie sie erweitern und die Suchfunktionalität hinzufügen.
 
 Das eCommerce-Projekt enthält eine Standardsuchkomponente in:
 
@@ -403,19 +403,19 @@ Das eCommerce-Projekt enthält eine Standardsuchkomponente in:
 
 ![chlimage_1-34](/help/sites-developing/assets/chlimage_1-34a.png)
 
-Verwenden Sie die Such-API, um die ausgewählte Commerce-Engine abzufragen (siehe [Auswahl der eCommerce-Engine](#ecommerce-engine-selection)):
+Verwenden Sie die Such-API, um die ausgewählte Commerce-Engine abzufragen (siehe [Auswahl der E-Commerce-Engine](#ecommerce-engine-selection)):
 
 #### Such-API {#search-api}
 
-Es gibt mehrere generische / Helper-Klassen, die vom Kernprojekt bereitgestellt werden:
+Es gibt mehrere generische bzw. Hilfsklassen, die vom Kernprojekt bereitgestellt werden:
 
 1. `CommerceQuery`
 
-   Wird zur Beschreibung einer Suchabfrage verwendet (enthält Informationen zum Abfragetext, zur aktuellen Seite, zur Seitengröße, zur Sortierung und zu ausgewählten Facetten). Alle eCommerce-Dienste, die die Such-API implementieren, erhalten Instanzen dieser Klasse, um ihre Suche durchzuführen. Es kann eine `CommerceQuery`-Instanz anhand eines Anfrageobjekts (`HttpServletRequest`) erstellt werden.
+   Dient der Beschreibung einer Suchabfrage (enthält Informationen über den Abfragetext, die aktuelle Seite, die Seitengröße, die Sortierung und die ausgewählten Facetten). Alle eCommerce-Dienste, die die Such-API implementieren, erhalten Instanzen dieser Klasse, um die Suche durchführen zu können. Es kann eine `CommerceQuery`-Instanz anhand eines Anfrageobjekts (`HttpServletRequest`) erstellt werden.
 
 1. `FacetParamHelper`
 
-   Eine Hilfsprogramm-Klasse, die eine statische Methode (`toParams`) zum Erzeugen von `GET`-Parameterzeichenfolgen aus einer Facettenliste und einen umgeschalteten Wert bereitstellt. Dies ist auf der UI-Seite nützlich, wo Sie einen Hyperlink für jeden Wert jeder Facette anzeigen müssen, sodass der entsprechende Wert umgeschaltet wird, wenn der Benutzer auf den Hyperlink klickt. Das heißt, wenn sie ausgewählt wurde, wird sie aus der Abfrage entfernt, andernfalls wird sie hinzugefügt. Dies übernimmt die gesamte Logik der Verarbeitung von Facetten mit mehreren/einzelnen Werten, der Außerkraftsetzung von Werten usw.
+   Eine Hilfsprogramm-Klasse, die eine statische Methode (`toParams`) zum Erzeugen von `GET`-Parameterzeichenfolgen aus einer Facettenliste und einen umgeschalteten Wert bereitstellt. Dies ist in der Benutzeroberfläche nützlich, wo Sie einen Hyperlink für jeden Wert jeder Facette anzeigen müssen, sodass der entsprechende Wert umgeschaltet wird, wenn die Benutzenden auf den Hyperlink klicken. Das heißt, wenn er ausgewählt wurde, wird er aus der Abfrage entfernt, andernfalls wird er hinzugefügt. Damit wird die gesamte Logik der Handhabung von Facetten mit mehreren oder einzelnen Werten, das Überschreiben von Werten usw. übernommen.
 
 Einstiegspunkt für die Such-API ist die `CommerceService#search`-Methode, die ein `CommerceResult`-Objekt zurückgibt. Weitere Informationen zu diesem Thema finden Sie in der API-Dokumentation.
 
@@ -427,23 +427,23 @@ Einstiegspunkt für die Such-API ist die `CommerceService#search`-Methode, die e
 
      `/content/campaigns`
 
-   * Gutscheine:
+   * Zu Gutscheinen gehört:
 
-      * Ein Gutscheincode (der vom Käufer in den Warenkorb eingegeben wird).
-      * Eine Gutscheinbeschriftung (die angezeigt wird, nachdem der Käufer sie in den Warenkorb eingegeben hat).
-      * Ein Promotionpfad (der die Aktion definiert, die der Gutschein anwendet).
+      * Ein Gutschein-Code (der von der kaufenden Person in den Warenkorb eingegeben wird).
+      * Eine Gutscheinbeschriftung (die angezeigt wird, nachdem die Person sie im Warenkorb eingegeben hat).
+      * Ein Promotionspfad (der die Aktion definiert, die der Gutschein anwendet).
 
-   * Gutscheine verfügen nicht über eigene Ein- und Ausschaltzeiten, sondern über die ihrer übergeordneten Kampagnen.
-   * Externe Commerce-Engines können auch Gutscheine bereitstellen. Diese erfordern mindestens Folgendes:
+   * Gutscheine haben keine eigenen Datums-/Zeitangaben für Aktivierung und Deaktivierung, sondern nutzen die der übergeordneten Kampagnen.
+   * Externe Commerce-Engines können ebenfalls Gutscheine bereitstellen. Diese erfordern mindestens Folgendes:
 
-      * Ein Gutscheincode
+      * Ein Gutschein-Code
       * eine `isValid()`-Methode
 
    * Die **Gutschein**-Komponente (`/libs/commerce/components/voucher`) bietet:
 
       * einen Renderer für die Gutscheinadministration; er zeigt alle Gutscheine an, die sich aktuell im Warenkorb befinden
-      * Die Dialogfelder zum Bearbeiten (Formular) zum Verwalten (Hinzufügen/Entfernen) der Gutscheine.
-      * Die zum Hinzufügen/Entfernen von Gutscheinen zum/vom Warenkorb erforderlichen Aktionen.
+      *  Die Bearbeitungsdialogfelder (Formular) zum Verwalten (Hinzufügen/Entfernen) der Gutscheine.
+      * Die für das Hinzufügen/Entfernen von Gutscheinen zum/vom Warenkorb erforderlichen Aktionen.
 
 * Promotions:
 
@@ -451,12 +451,12 @@ Einstiegspunkt für die Such-API ist die `CommerceService#search`-Methode, die e
 
      `/content/campaigns`
 
-   * Angebote für Werbeaktionen:
+   * Zu Promotions gehört:
 
       * Eine Priorität
       * Ein Promotion-Handler-Pfad
 
-   * Sie können Promotions mit einer Kampagne verknüpfen, um deren Aktivierungs-/Ausschaltzeiten zu definieren.
+   * Sie können Promotions mit einer Kampagne verknüpfen, um deren Aktivierungs-/Ablaufzeiten zu definieren.
    * Sie können Promotions mit einem Erlebnis verbinden, um deren Segmente zu definieren.
    * Promotions, die nicht mit einem Erlebnis verbunden sind, werden nicht allein ausgelöst, können aber dennoch von einem Gutschein ausgelöst werden.
    * Die Promotion-Komponente (`/libs/commerce/components/promotion`) umfasst:
@@ -464,7 +464,7 @@ Einstiegspunkt für die Such-API ist die `CommerceService#search`-Methode, die e
       * Renderer und Dialogfelder für die Promotions-Administration
       * Unterkomponenten zum Rendern und Bearbeiten von Konfigurationsparametern, die spezifisch für die Promotion-Handler sind
 
-   * Zwei Promotion-Handler werden standardmäßig bereitgestellt:
+   * Zwei Promotion-Handler stehen standardmäßig zur Verfügung:
 
       * `DiscountPromotionHandler`, der einen absoluten oder prozentualen Rabatt auf den gesamten Warenkorb anwendet
       * `PerfectPartnerPromotionHandler`, der einen absoluten oder prozentualen Rabatt auf ein Produkt anwendet, wenn das Partnerprodukt ebenfalls im Warenkorb ist
@@ -501,23 +501,23 @@ public void removeVoucher(String code) throws CommerceException;
 public List<Voucher> getVouchers() throws CommerceException;
 ```
 
-Auf diese Weise ist `CommerceSession` für die Überprüfung verantwortlich, ob ein Gutschein existiert und ob er angewendet werden kann oder nicht. Dies kann für Gutscheine gelten, die nur angewendet werden können, wenn eine bestimmte Bedingung erfüllt ist. Wenn beispielsweise der Gesamtpreis des Warenkorbs größer als 100 USD ist. Wenn ein Gutschein aus keinem Grund angewendet werden kann, wird die `addVoucher` -Methode gibt eine Ausnahme aus. Außerdem wird die `CommerceSession` ist für die Aktualisierung der Preise des Warenkorbs verantwortlich, nachdem ein Gutschein hinzugefügt/entfernt wurde.
+Auf diese Weise ist `CommerceSession` für die Überprüfung verantwortlich, ob ein Gutschein existiert und ob er angewendet werden kann oder nicht. Dies könnte Gutscheine betreffen, die nur angewendet werden können, wenn eine bestimmte Bedingung erfüllt ist; zum Beispiel, wenn der gesamte Warenkorbpreis größer als 100 € ist.  Wenn ein Gutschein aus irgendeinem Grund nicht angewendet werden kann, löst die Methode `addVoucher` eine Ausnahme aus. Außerdem ist die `CommerceSession` für die Aktualisierung der Preise des Warenkorbs verantwortlich, nachdem ein Gutschein hinzugefügt/entfernt wurde.
 
 Der `Voucher` ist eine Bean-ähnliche Klasse, die Felder enthält für:
 
-* Gutscheincode
-* Eine kurze Beschreibung
-* Verweis auf die zugehörige Promotion, die den Rabatttyp und den Wert angibt
+* Gutschein-Code
+* Eine Kurzbeschreibung
+* Ein Verweis auf die zugehörige Promotion, die den Rabatttyp und den Wert angibt
 
-Die bereitgestellte `AbstractJcrCommerceSession` kann Gutscheine beantragen. Die von der Klasse zurückgegebenen Gutscheine `getVouchers()` sind Instanzen von `cq:Page` enthält einen jcr:content -Knoten mit den folgenden Eigenschaften (unter anderem):
+Die bereitgestellte `AbstractJcrCommerceSession` kann Gutscheine beantragen. Die von der Klasse `getVouchers()` zurückgegebenen Gutscheine sind Instanzen von `cq:Page`, die einen jcr:content-Knoten mit (unter anderem) den folgenden Eigenschaften enthalten:
 
 * `sling:resourceType` (String) - dieser muss `commerce/components/voucher` sein
 
 * `jcr:title` (String) - für die Beschreibung des Gutscheins
 * `code` (String) - der Code, den der Benutzer eingeben muss, um den Gutschein anwenden
-* `promotion` (String) - die anzuwendende Promotion, beispielsweise `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
+* `promotion` (String) – die anzuwendende Promotion; zum Beispiel `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
-Promotion-Handler sind OSGi-Dienste, die den Warenkorb ändern. Der Warenkorb unterstützt mehrere Hooks, die im `PromotionHandler` -Schnittstelle.
+Promotion-Handler sind OSGi-Dienste, die den Warenkorb verändern. Der Warenkorb unterstützt mehrere Hooks, die in der `PromotionHandler`-Schnittstelle definiert sind.
 
 ```java
 /**

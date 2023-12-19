@@ -4,8 +4,8 @@ description: Versionshinweise zu Adobe Experience Manager Content and Commerce 2
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 89%
+source-wordcount: '1088'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 89%
 | CIF-Kernkomponenten | [Systemanforderungen](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM-Projektarchetyp | [Systemanforderungen](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
-## Releasedatum: November 2021
+## Veröffentlichungsdatum: November 2021
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -51,7 +51,7 @@ ht-degree: 89%
 
 * Das CIF-Add-on unterstützt die neueste Commerce-Version 2.4.3 mit neuen GraphQL-APIs und -Schemata
 
-* Autoren können mithilfe des Rich-Text-Editors (RTE) Links zu Produkt- und Katalogseiten in Textfeldern hinzufügen. Der RTE-Symbolleiste wurde ein CIF-Symbol hinzugefügt, über das die Auswahl geöffnet wird, um das Produkt oder die Kategorie schnell zu suchen und auszuwählen, ohne den Kontext zu verlassen.
+* Autoren können mithilfe des Rich-Text-Editors (RTE) Links zu Produkt- und Katalogseiten in Textfeldern hinzufügen. Es wurde ein CIF-Symbol zur RTE-Symbolleiste hinzugefügt, mit dem sich die Auswahlwerkzeuge öffnen lassen, um das Produkt oder die Kategorie schnell zu suchen und auszuwählen, ohne den Kontext zu verlassen.
 
 * Bestehende Popups für Warenkorb- und Kassenvorgänge wurden durch spezielle AEM-Seiten für Warenkorb und Checkout ersetzt. Die Komponenten auf diesen Seiten werden mithilfe der erweiterbaren Peregrine-Komponenten von Adobe Commerce erstellt
 
@@ -73,7 +73,7 @@ ht-degree: 89%
 
   ![Zugehörige Commerce-Inhalte](/help/assets/CIF/associated-commerce-content.png)
 
-* Verbesserte Benutzeroberfläche für die Produktauswahl für bessere Benutzererfahrung, höhere Effizienz und Unterstützung für komplexen Produktkatalog
+* Verbesserte Benutzeroberfläche zur Produktauswahl für ein besseres Benutzererlebnis, höhere Effizienz und Unterstützung bei einem komplexen Produktkatalog
 
   ![Neue Produktauswahl](/help/assets/CIF/product-picker.png)
 
@@ -83,11 +83,11 @@ ht-degree: 89%
 
 * Das Leeren des Menücache funktioniert jetzt erwartungsgemäß
 
-* JS-Fehler während AEM CS-Bereitstellungsschritts und bei Nichtverwendung clientseitiger Komponenten
+* Während der AEM CS-Bereitstellung und bei Nichtverwendung Client-seitiger Komponenten treten keine JS-Fehler mehr auf
 
-* CIF-Cloud-Konfiguration kann jetzt auch in Ordnern erstellt werden, die einen sling:configs-Knoten haben
+* Eine CIF-Cloud-Konfiguration kann nicht in Ordnern erstellt werden, die einen sling:configs-Knoten haben
 
-## Releasedatum: August 2021
+## Veröffentlichungsdatum: August 2021
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -97,7 +97,7 @@ ht-degree: 89%
 
 ### Neue Funktionen {#what-is-new-august}
 
-* Neue Kategorieauswahl-Benutzeroberfläche für verbesserte Benutzererfahrung, höhere Effizienz und bessere Unterstützung für komplexen Produktkatalog
+* Neue Benutzeroberfläche zur Kategorieauswahl für ein verbessertes Benutzererlebnis, höhere Effizienz und bessere Unterstützung bei komplexen Produktkatalogen
 
   ![Neue Kategorieauswahl](/help/assets/CIF/category-picker.png)
 
@@ -175,7 +175,7 @@ ht-degree: 89%
 
 ### Neue Funktionen {#what-is-new-april}
 
-* Unterstützung für Kategorie-UID - Dadurch werden Commerce-Integrationen von Drittanbietern für Systeme freigeschaltet, die Zeichenfolgen für Kategorie-IDs verwenden
+* Unterstützung der Kategorie-UID – Dadurch werden Commerce-Integrationen von Drittanbietern für Systeme freigeschaltet, die Zeichenfolgen als Kategorie-IDs verwenden
 
 * AEM-Erweiterung für PWA Studio inkl. Beispielintegration
 

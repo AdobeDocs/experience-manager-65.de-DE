@@ -24,7 +24,7 @@ Der angemeldete Benutzer muss Mitglied der Gruppe `workflow-users` sein. Der Ben
 
 ## Teilen eines einzelnen oder aller Elemente Ihres Posteingangs mit einem anderen Benutzer
 
-Mit dem AEM-Posteingang können Sie einzelne oder alle Elemente in Ihrem Posteingang für andere Benutzende freigeben.
+Beim AEM-Posteingang können Sie einzelne oder alle Elemente in Ihrem Posteingang für andere Benutzende freigeben.
 
 ### Alle Posteingangselemente freigeben
 

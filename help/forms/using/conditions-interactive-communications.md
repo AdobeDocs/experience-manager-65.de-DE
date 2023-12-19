@@ -1,6 +1,6 @@
 ---
 title: Bedingungen in interaktiven Kommunikationen
-description: Erstellen und Bearbeiten von Bedingungsfragmenten, die in interaktiver Kommunikation verwendet werden sollen - Bedingung ist einer der vier Arten von Dokumentfragmenten, die zum Erstellen interaktiver Kommunikation verwendet werden. Die anderen drei sind Texte, Listen und Layout-Fragmente.
+description: Erstellen und Bearbeiten von Bedingungsfragmenten für die Verwendung in interaktiven Kommunikationen – „Bedingung“ ist dabei eine der vier Arten von Dokumentfragmenten, die zum Aufbau interaktiver Kommunikationen verwendet werden. Die anderen drei sind Texte, Listen und Layout-Fragmente.
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
@@ -9,22 +9,22 @@ exl-id: 0c0dc6a2-b889-4516-8e08-1e9d31be2cce
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1494'
-ht-degree: 49%
+ht-degree: 79%
 
 ---
 
 # Bedingungen in interaktiven Kommunikationen{#conditions-in-interactive-communications}
 
-Erstellen und Bearbeiten von Bedingungsfragmenten, die in interaktiver Kommunikation verwendet werden sollen - Bedingung ist einer der vier Arten von Dokumentfragmenten, die zum Erstellen interaktiver Kommunikation verwendet werden. Die anderen drei sind Texte, Listen und Layout-Fragmente.
+Erstellen und Bearbeiten von Bedingungsfragmenten für die Verwendung in interaktiven Kommunikationen – „Bedingung“ ist dabei eine der vier Arten von Dokumentfragmenten, die zum Aufbau interaktiver Kommunikationen verwendet werden. Die anderen drei sind Texte, Listen und Layout-Fragmente.
 
 ## Übersicht {#overview}
 
-Bedingung ist ein Dokumentfragment, das Sie in eine interaktive Kommunikation aufnehmen können. Die anderen Dokumentfragmente sind [text](../../forms/using/texts-interactive-communications.md), Liste und Layout-Fragment. Mit Bedingungen können Sie ein oder mehrere kontextabhängige Elemente definieren, die basierend auf den bereitgestellten Daten und Regeln in eine interaktive Kommunikation einbezogen werden.
+Bedingung ist ein Dokumentfragment, das Sie in eine interaktive Kommunikation einschließen können. Die anderen Dokumentfragmente sind [Text](../../forms/using/texts-interactive-communications.md), Liste und Layout-Fragment. Mit Bedingungen können Sie ein oder mehrere kontextabhängige Elemente definieren, die basierend auf den bereitgestellten Daten und Regeln in eine interaktive Kommunikation einbezogen werden.
 
 Beispiele:
 
-* Zeigen Sie in einem Kreditkartenauszug die jährliche Kreditkartengebühr und das Kreditkartenbild basierend auf der Art der Kreditkarte des Kunden an.
-* Zeigen Sie in einer fälligen Versicherungsprämie die Steuerberechnungen anhand der Steuern des Kunden an.
+* Zeigen Sie auf einer Kreditkartenabrechnung die Jahresgebühr für die Kreditkarte und das Kreditkartenbild an, je nach Art der Kreditkarte der Kundin bzw. des Kunden.
+* Zeigen Sie in einer fälligen Versicherungsprämie die Steuerberechnungen anhand der Steuern der Kundin bzw. des Kunden an.
 
 Die Assets in den Bedingungen, die basierend auf den angewendeten Regeln und den an die Regel übergebenen Werten gerendert werden. Die Regeln in den Bedingungen können Werte in den folgenden Datentypen überprüfen:
 
@@ -33,19 +33,19 @@ Die Assets in den Bedingungen, die basierend auf den angewendeten Regeln und den
 * Zeichenfolgen
 * Zahlen
 * Mathematische Ausdrücke
-* Datumsangaben
+* Datumswerten
 
-## Bedingung erstellen {#createcondition}
+## Erstellen einer Bedingung {#createcondition}
 
 1. Wählen Sie **[!UICONTROL Formulare]** > **[!UICONTROL Dokumentfragmente]**.
 1. Wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Bedingung]**.
 1. Geben Sie die folgenden Daten an:
 
-   * **[!UICONTROL Titel]**: (Optional) Geben Sie den Titel für die Bedingung ein. Titel müssen nicht eindeutig sein und können Sonderzeichen und nichtenglische Zeichen enthalten. Bedingungen werden durch ihren Titel (falls verfügbar) wie etwa in Miniaturen und Eigenschaften referenziert.
+   * **[!UICONTROL Titel]**: (Optional) Geben Sie den Titel für die Bedingung ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nicht-englische Zeichen enthalten. Bedingungen werden durch ihren Titel (falls verfügbar) wie etwa in Miniaturen und Eigenschaften referenziert.
    * **[!UICONTROL Name]**: Der Name der Bedingung, innerhalb eines Ordners eindeutig. Es ist nicht möglich, dass zwei Dokumentfragmente (Text, Bedingung oder Liste) mit demselben Namen vorhanden sind, ungeachtet ihres jeweiligen Status. Im Feld „Name“ können Sie nur englische Zeichen, Zahlen und Bindestriche eingeben. Das Feld „Name“ wird automatisch auf der Grundlage des Titelfelds vorausgefüllt. Die Sonderzeichen, Leerzeichen, Zahlen und die nichtenglischen Zeichen im Feld „Titel“ werden im Feld „Name“ durch Bindestriche ersetzt. Obwohl der Wert im Feld „Titel“ automatisch in das Feld „Name“ kopiert wird, können Sie den Wert bearbeiten.
 
-   * **[!UICONTROL Beschreibung]**: Geben Sie eine Beschreibung des Dokumentfragments ein.
-   * **[!UICONTROL Formulardatenmodell]**: Wählen Sie optional das Optionsfeld Formulardatenmodell aus, um die Bedingung basierend auf einem Formulardatenmodell zu erstellen. Wenn Sie das Optionsfeld „Formulardatenmodell“ auswählen, wird das Feld **[!UICONTROL Formulardatenmodell]** angezeigt. Suchen Sie nach einem Formulardatenmodell und wählen Sie es aus. Stellen Sie beim Erstellen der Bedingung für eine interaktive Kommunikation sicher, dass Sie dasselbe Datenmodell verwenden, das Sie in der interaktiven Kommunikation verwenden möchten. Weitere Informationen zum Formulardatenmodell finden Sie unter [Datenintegration](../../forms/using/data-integration.md).
+   * **[!UICONTROL Beschreibung]**: Geben Sie eine Beschreibung der Dokumentfragmente ein.
+   * **[!UICONTROL Formulardatenmodell]**: Wählen Sie optional das Optionsfeld „Formulardatenmodell“, um die Bedingung auf der Grundlage eines Formulardatenmodells zu erstellen. Wenn Sie das Optionsfeld „Formulardatenmodell“ auswählen, wird das Feld **[!UICONTROL Formulardatenmodell]** angezeigt. Suchen Sie nach einem Formulardatenmodell und wählen Sie es aus. Achten Sie bei der Erstellung der Bedingung für eine interaktive Kommunikation darauf, dass Sie das gleiche Datenmodell verwenden, das Sie auch in der interaktiven Kommunikation verwenden wollen. Weitere Informationen zum Formulardatenmodell finden Sie unter [Datenintegration](../../forms/using/data-integration.md).
 
    * **[!UICONTROL Tags]**: Um optional ein benutzerdefiniertes Tag zu erstellen, geben Sie einen Wert in das Textfeld ein und wählen Sie die Option &quot;Eingabetaste&quot;aus. Wenn Sie diese Bedingung speichern, werden die neu hinzugefügten Tags erstellt.
 
@@ -65,7 +65,7 @@ Die Assets in den Bedingungen, die basierend auf den angewendeten Regeln und den
 
 1. Wählen Sie die entsprechenden Assets aus, die Sie in die Bedingung aufnehmen möchten, und wählen Sie dann **[!UICONTROL Fertig]**.
 
-   Die Seite Bedingung erstellen wird angezeigt und listet die hinzugefügten Assets auf.
+   Die Seite „Bedingung erstellen“ wird angezeigt und listet die hinzugefügten Assets auf.
 
    ![createconditionassetsadd](assets/createconditionassetsadd.png)
 
@@ -103,7 +103,7 @@ Die Assets in den Bedingungen, die basierend auf den angewendeten Regeln und den
    >
    >Um eine neue oder bearbeitete Bedingung zu speichern, muss mindestens eine Regel für jedes der in der Bedingung hinzugefügten Assets vorhanden sein.
 
-## Bedingung bearbeiten {#edit-a-condition}
+## Bearbeiten einer Bedingung {#edit-a-condition}
 
 Sie können eine Bedingung mit den folgenden Schritten bearbeiten. Sie können eine Bedingung auch in einer interaktiven Kommunikation bearbeiten, indem Sie im Popup-Menü „Fragment bearbeiten“ wählen.
 
@@ -113,25 +113,25 @@ Sie können eine Bedingung mit den folgenden Schritten bearbeiten. Sie können e
 1. Nehmen Sie die erforderlichen Änderungen an der Bedingung vor. Weitere Informationen zu den Informationen, die Sie in einer Bedingung ändern können, finden Sie unter [Bedingung erstellen](#createcondition).
 1. Auswählen **[!UICONTROL Speichern]** und wählen Sie **[!UICONTROL Schließen]**.
 
-## Erstellen von Regeln in Bedingung {#ruleeditor}
+## Erstellen von Regeln in einer Bedingung {#ruleeditor}
 
-Mit dem Regeleditor in einer Bedingung können Sie Regeln erstellen, um Assets basierend auf **voreingestellte Bedingungen**. Diese Bedingungen können wie folgt konfiguriert werden:
+Mit dem Regeleditor in einer Bedingung können Sie Regeln erstellen, um Assets basierend auf **voreingestellten Bedingungen** ein- oder auszublenden. Diese Bedingungen können basierend auf Folgendem erstellt werden:
 
 * Zeichenfolgen
 * Zahlen
 * Mathematische Ausdrücke
-* Datumsangaben
-* Eigenschaften des zugehörigen Formulardatenmodells
-* Alle [variables](#variables) möglicherweise von Ihnen erstellte
+* Datumswerten
+* Eigenschaften des zugeordneten Formulardatenmodells
+* [Variablen](#variables), die Sie ggf. erstellt haben
 
-### Regel in Bedingung erstellen {#create-rule-in-condition}
+### Erstellen einer Regel in einer Bedingung {#create-rule-in-condition}
 
 1. Wählen Sie beim Erstellen oder Bearbeiten einer Bedingung ![ruleeditoricon](assets/ruleeditoricon.png) (Regeleditor) für das relevante Asset.
 
-   Das Dialogfeld „Regel erstellen“ wird angezeigt. Zusätzlich zu Zeichenfolge, Zahl, mathematischem Ausdruck und Datum stehen im Regeleditor auch folgende Elemente zum Erstellen von Anweisungen der Regeln zur Verfügung:
+   Das Dialogfeld „Regel erstellen“ wird angezeigt. Zusätzlich zu Zeichenfolge, Zahl, mathematischem Ausdruck und Datum steht im Regeleditor Folgendes zum Erstellen der Regelanweisungen zur Verfügung:
 
-   * Eigenschaften des zugehörigen Formulardatenmodells
-   * Alle [variables](#variables) die Sie erstellt haben.
+   * Eigenschaften des zugeordneten Formulardatenmodells
+   * [Variablen](#variables), die Sie ggf. erstellt haben.
 
    ![createruledialog](assets/createruledialog.png)
 
@@ -148,11 +148,11 @@ Mit dem Regeleditor in einer Bedingung können Sie Regeln erstellen, um Assets b
 
    Regel, um ein Asset anzuzeigen, wenn der Richtlinientyp „Standard“ ist
 
-   * Beim Erstellen oder Bearbeiten einer Regel können Sie auch ![icon_resize](assets/icon_resize.png) (Größe ändern), um das Dialogfeld Regel erstellen/Regel bearbeiten zu erweitern. Über das erweiterte Vollbilddialogfeld können Sie [variables](#variables) , um Regeln zu erstellen. Wählen Sie erneut Größe ändern aus, um zum normalen Dialogfeld Regel erstellen zurückzukehren.
+   * Beim Erstellen oder Bearbeiten einer Regel können Sie auch ![icon_resize](assets/icon_resize.png) (Größe ändern), um das Dialogfeld Regel erstellen/Regel bearbeiten zu erweitern. Der erweiterte Vollbildansichtsdialog ermöglicht das Erstellen von [Variablen](#variables) zum Erstellen von Regeln. Wählen Sie erneut Größe ändern aus, um zum normalen Dialogfeld Regel erstellen zurückzukehren.
 
    * Sie können auch mehrere Bedingungen in einer Regel erstellen.
 
-1. Klicken Sie auf **[!UICONTROL Fertig]**.
+1. Wählen Sie **[!UICONTROL Fertig]**.
 
    Die Regel wird auf das Asset angewendet.
 
@@ -181,7 +181,7 @@ Wählen Sie erneut Größe ändern aus, um zum Dialogfeld Regel erstellen/Regel 
 
 1. Wählen Sie **[!UICONTROL Erstellen]** aus.
 
-   Der Bereich Variablen erstellen wird angezeigt.
+   Der Bereich „Variablen erstellen“ wird angezeigt.
 
 1. Geben Sie die folgenden Informationen ein und wählen Sie **[!UICONTROL Erstellen]**:
 

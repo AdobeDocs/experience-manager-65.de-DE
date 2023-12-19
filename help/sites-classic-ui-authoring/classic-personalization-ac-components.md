@@ -10,7 +10,7 @@ exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '2548'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
@@ -170,7 +170,8 @@ Geben Sie einen Text ein. Verwenden Sie die Symbolleiste, um die Formatierung zu
 * **Bild**
 Ziehen Sie ein Bild aus dem Content Finder oder klicken Sie, um zu einem Bild zu navigieren. Schneiden Sie es gegebenenfalls zu oder drehen Sie es.
 
-* **Bildeigenschaften** (**Erweiterte Bildeigenschaften**) Hier können Sie Folgendes angeben:
+* **Bildeigenschaften** (**Erweiterte Bildeigenschaften**)
+Damit können Sie Folgendes festlegen:
 
    * **Titel**
 Der Titel des Blocks, der durch Bewegen der Maus angezeigt wird.
@@ -202,7 +203,7 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Text und Bild (Kampagne)�
 
 Mit der Komponente „Text-und-Personalisierung (Kampagne)“ können Sie über einen WYSIWYG-Editor, dessen Funktionen der [Rich-Text-Editor](/help/sites-authoring/rich-text-editor.md) bereitstellt, einen Textblock eingeben. Darüber hinaus können Sie mit dieser Komponente die Kontextfelder und Personalisierungsblöcke verwenden, die in Adobe Campaign verfügbar sind. Siehe auch [Einfügen von Personalisierung](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization).
 
-Mithilfe der Symbole können Sie Ihren Text formatieren, einschließlich Schriftmerkmale, Ausrichtung, Links, Listen und Einzügen.
+Über mehrere Symbole können Sie den Text formatieren. Zu den Optionen zählen Schriftmerkmale, Ausrichtung, Links, Listen und Einzüge.
 
 Fügen Sie Text wie gewohnt im Rich-Text-Editor hinzu. Fügen Sie Personalisierungen hinzu, indem Sie aus dem Dropdown-Menü von Adobe Campaign die gewünschten Optionen auswählen.
 
@@ -323,7 +324,7 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Kontrollkästchen (Campai
 
 ![chlimage_1-91](assets/chlimage_1-91.png)
 
-### „Datumsfeld (Kampagne)“ und „Datumsfeld/HTML 5 (Kampagne)“ {#date-field-campaign-and-date-field-html-campaign}
+### „Datumsfeld (Campaign)“ und „Datumsfeld/HTML 5 (Campaign)“ {#date-field-campaign-and-date-field-html-campaign}
 
 Verwenden Sie das Datumsfeld, um Empfängern ein Datum zu geben. Beispielsweise können Sie von den Empfängern verlangen, ihr Geburtsdatum anzugeben. Das Datumsformat entspricht dem Format, das in Ihrer Adobe Campaign-Instanz verwendet wird.
 
@@ -363,7 +364,7 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Fehleranzeige (Campaign)�
 
 ### Ausgeblendeter Abstimmschlüssel (Kampagne) {#hidden-reconciliation-key-campaign}
 
-Mit der Komponente Ausgeblendeter Abstimmschlüssel (Kampagne) können Sie einem Formular ausgeblendete Felder als Teil des Abstimmschlüssels hinzufügen.
+Mit der Komponente „Ausgeblendeter Abstimmschlüssel (Kampagne)“ können Sie Formularen ausgeblendete Felder als Teil des Abstimmschlüssels hinzufügen.
 
 In der Komponente „Ausgeblendeter Abstimmschlüssel (Kampagne)“ können Sie Folgendes konfigurieren:
 

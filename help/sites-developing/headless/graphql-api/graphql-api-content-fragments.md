@@ -5,8 +5,8 @@ feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '4847'
-ht-degree: 90%
+source-wordcount: '4781'
+ht-degree: 95%
 
 ---
 
@@ -104,7 +104,7 @@ AEM bietet Funktionen zum Konvertieren von Abfragen (beide Typen) in [persistier
 
 ### Best Practices für GraphQL-Abfragen (Dispatcher und CDN) {#graphql-query-best-practices}
 
-[Beständige Abfragen](/help/sites-developing/headless/graphql-api/persisted-queries.md) sind die empfohlene Methode für Veröffentlichungsinstanzen, da:
+[Persistierte Abfragen](/help/sites-developing/headless/graphql-api/persisted-queries.md) sind die empfohlene Methode für Veröffentlichungsinstanzen, da:
 
 * sie zwischengespeichert werden
 * sie zentral von AEM verwaltet werden
@@ -118,7 +118,7 @@ GraphQL-Abfragen über POST werden nicht empfohlen, da sie nicht zwischengespeic
 
 GraphQL unterstützt zwar auch GET-Anfragen, aber diese Anfragen können Einschränkungen (z. B. die Länge der URL) erreichen, die durch persistente Abfragen vermieden werden können.
 
-Siehe [Zwischenspeichern persistenter Abfragen aktivieren](#enable-caching-persisted-queries) für weitere Informationen.
+Weitere Informationen finden Sie unter [Aktivieren der Caching-Funktion für persistierte Abfragen](#enable-caching-persisted-queries).
 
 >[!NOTE]
 >
@@ -195,7 +195,7 @@ Wenn Benutzende beispielsweise ein Inhaltsfragmentmodell mit dem Namen `Article`
 
    * Drei von ihnen wurden auf Benutzerseite kontrolliert: `author`, `main`, und `referencearticle`.
 
-   * Die anderen Felder wurden automatisch von AEM hinzugefügt und helfen, Informationen zu einem bestimmten Inhaltsfragment bereitzustellen. In diesem Beispiel sind es (die [Hilfsfelder](#helper-fields)) `_path`, `_metadata` und `_variations`.
+   * Die anderen Felder wurden von AEM automatisch hinzugefügt und stellen hilfreiche Methoden zur Bereitstellung von Informationen zu einem bestimmten Inhaltsfragment dar. In diesem Beispiel (die Variable [Helper-Felder](#helper-fields)) `_path`, `_metadata`, `_variations`.
 
 1. Nachdem ein Benutzer ein Inhaltsfragment basierend auf dem Modell „Article“ erstellt hat, kann es über GraphQL abgefragt werden. Beispiele finden Sie in den [Beispielabfragen](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#graphql-sample-queries) (basierend auf einer [Beispielstruktur für Inhaltsfragmente zur Verwendung mit GraphQL](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)).
 
@@ -259,7 +259,7 @@ GraphQL für AEM unterstützt eine Liste von Typen. Alle unterstützten Datentyp
 | Aufzählung |  `String` |  Wird verwendet, um eine Option aus einer Liste von Optionen anzuzeigen, die bei der Modellerstellung definiert wurde |
 |  Tags |  `[String]` |  Wird verwendet, um eine Liste von Zeichenfolgen anzuzeigen, die in AEM verwendete Tags darstellen |
 | Inhaltsreferenz |  `String` |  Wird verwendet, um den Pfad zu einem anderen Asset in AEM anzuzeigen |
-| Fragmentreferenz |  *Ein Modelltyp* <br><br>Einzelnes Feld: `Model`: Modelltyp, direkt referenziert <br><br>Multifeld, mit einem referenzierten Typ: `[Model]`: Array vom Typ `Model`, direkt referenziert von Array <br><br>Multifeld, mit mehreren referenzierten Typen: `[AllFragmentModels]`: Array aller Modelltypen, referenziert von Array mit Vereinigungstyp  |  Wird verwendet, um auf ein oder mehrere Inhaltsfragmente bestimmter Modelltypen zu verweisen, die beim Erstellen des Modells definiert wurden |
+| Fragmentreferenz |  *Ein Modelltyp* <br><br>Einzelnes Feld: `Model` - Modelltyp, direkt referenziert <br><br>Multifield mit einem referenzierten Typ: `[Model]` - Array des Typs `Model`, die direkt aus dem Array referenziert wird <br><br>Multifield mit mehreren referenzierten Typen: `[AllFragmentModels]` - Array aller Modelltypen, referenziert aus Array mit Vereinigungstyp |  Wird verwendet, um auf ein oder mehrere Inhaltsfragmente bestimmter Modelltypen zu verweisen, die beim Erstellen des Modells definiert wurden |
 
 {style="table-layout:auto"}
 
@@ -546,7 +546,7 @@ Weitere Beispiele finden Sie unter:
 >
 >Für optimale Leistung sollten Sie [Ihre Inhaltsfragmente für Paging und Sortierung in der GraphQL-Filterung](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md) aktualisieren.
 
-Mit dieser Funktion können Sie die Abfrageergebnisse nach einem bestimmten Feld sortieren.
+Mit dieser Funktion können Sie die Abfrageergebnisse entsprechend einem bestimmten Feld sortieren.
 
 Die Sortierkriterien:
 
@@ -615,7 +615,7 @@ query {
 >
 >Für optimale Leistung sollten Sie [Ihre Inhaltsfragmente für Paging und Sortierung in der GraphQL-Filterung](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md) aktualisieren.
 
-Mit dieser Funktion können Sie Paging für Abfragetypen durchführen, die eine Liste zurückgeben. Es werden zwei Methoden bereitgestellt:
+Mit dieser Funktion können Sie Paging für Abfragetypen durchführen, was eine Liste zurückgibt. Es werden zwei Methoden bereitgestellt:
 
 * `offset` und `limit` in einer `List`-Abfrage
 * `first` und `after` in einer `Paginated`-Abfrage
@@ -689,25 +689,25 @@ query {
 >
 >* Aufgrund interner technischer Einschränkungen wird die Leistung beeinträchtigt, wenn die Sortierung und Filterung auf verschachtelte Felder angewendet wird. Verwenden Sie daher Filter-/Sortierfelder, die auf der Stammebene gespeichert sind. Diese Technik ist auch die empfohlene Methode, um große paginierte Ergebnismengen abzufragen.
 
-## Persistente GraphQL-Abfragen - Aktivierung der Zwischenspeicherung im Dispatcher {#graphql-persisted-queries-enabling-caching-dispatcher}
+## Persistierte GraphQL-Abfragen – Aktivieren der Caching-Funktion im Dispatcher {#graphql-persisted-queries-enabling-caching-dispatcher}
 
 >[!CAUTION]
 >
->Wenn die Zwischenspeicherung im Dispatcher aktiviert ist, wird die [CORS-Filter](#cors-filter) ist nicht erforderlich, sodass dieser Abschnitt ignoriert werden kann.
+>Wenn die Caching-Funktion im Dispatcher aktiviert ist, wird der [CORS-Filter](#cors-filter) nicht benötigt, sodass dieser Abschnitt ignoriert werden kann.
 
-Die Zwischenspeicherung persistenter Abfragen ist im Dispatcher standardmäßig nicht aktiviert. Die Standardumaktivierung ist nicht möglich, da Kunden, die CORS (Cross-Origin Resource Sharing) mit mehreren Ursprüngen verwenden, ihre Dispatcher-Konfiguration überprüfen und möglicherweise aktualisieren müssen.
+Das Caching persistierter Abfragen ist im Dispatcher standardmäßig nicht aktiviert. Eine Standardaktivierung ist nicht möglich, da Kundinnen und Kunden, die CORS (Cross-Origin Resource Sharing) mit mehreren Ursprüngen verwenden, ihre Dispatcher-Konfiguration überprüfen und möglicherweise aktualisieren müssen.
 
 >[!NOTE]
 >
->Der Dispatcher speichert die `Vary` -Kopfzeile.
+>Der Dispatcher speichert den `Vary`-Header nicht zwischen.
 >
 >Das Caching anderer CORS-bezogener Header kann im Dispatcher aktiviert werden, reicht jedoch möglicherweise nicht aus, wenn mehrere CORS-Quellen vorhanden sind.
 
-### Zwischenspeichern persistenter Abfragen aktivieren {#enable-caching-persisted-queries}
+### Aktivieren der Caching-Funktion für persistierte Abfragen {#enable-caching-persisted-queries}
 
-Um das Zwischenspeichern persistenter Abfragen zu aktivieren, definieren Sie die Dispatcher-Variable `CACHE_GRAPHQL_PERSISTED_QUERIES`:
+Um das Caching persistierter Abfragen zu aktivieren, definieren Sie die Dispatcher-Variable `CACHE_GRAPHQL_PERSISTED_QUERIES`:
 
-1. Variable zur Dispatcher-Datei hinzufügen `global.vars`:
+1. Fügen Sie die Variable zur Dispatcher-Datei `global.vars` hinzu:
 
    ```xml
    Define CACHE_GRAPHQL_PERSISTED_QUERIES
@@ -736,18 +736,18 @@ Um das Zwischenspeichern persistenter Abfragen zu aktivieren, definieren Sie die
 
 >[!NOTE]
 >
->Übereinstimmung mit dem [Anforderungen des Dispatchers für Dokumente, die zwischengespeichert werden können](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), fügt der Dispatcher das Suffix hinzu. `.json` an alle gespeicherten Abfrage-URLs, damit das Ergebnis zwischengespeichert werden kann.
+>Übereinstimmung mit dem [Anforderungen des Dispatchers für Dokumente, die zwischengespeichert werden können](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=de#how-does-the-dispatcher-return-documents%3F), fügt der Dispatcher das Suffix hinzu. `.json` an alle gespeicherten Abfrage-URLs, damit das Ergebnis zwischengespeichert werden kann.
 >
->Dieses Suffix wird durch eine Neuschreibungsregel hinzugefügt, sobald die beibehaltene Abfrage-Zwischenspeicherung aktiviert ist.
+>Dieses Suffix wird durch eine Neuschreibungsregel hinzugefügt, sobald die Caching-Funktion für persistierte Abfragen aktiviert ist.
 
 ### CORS-Konfiguration im Dispatcher {#cors-configuration-in-dispatcher}
 
-Kunden, die CORS-Anforderungen verwenden, müssen möglicherweise ihre CORS-Konfiguration im Dispatcher überprüfen und aktualisieren.
+Kundinnen und Kunden, die CORS-Anfragen verwenden, müssen möglicherweise ihre CORS-Konfiguration im Dispatcher überprüfen und aktualisieren.
 
-* Die `Origin` -Kopfzeile darf nicht an AEM Veröffentlichungsinstanz über den Dispatcher übergeben werden:
-   * Überprüfen Sie die `clientheaders.any` -Datei.
-* Stattdessen müssen CORS-Anforderungen auf Dispatcher-Ebene auf zulässige Ursprünge hin bewertet werden. Dieser Ansatz stellt außerdem sicher, dass CORS-bezogene Kopfzeilen in allen Fällen korrekt an einem Ort festgelegt werden.
-   * Eine solche Konfiguration sollte der `vhost` -Datei. Nachfolgend finden Sie eine Beispielkonfiguration. Zur Vereinfachung wurde nur der CORS-bezogene Teil bereitgestellt. Sie können sie für Ihre spezifischen Anwendungsfälle anpassen.
+* Der `Origin`-Header darf nicht über den Dispatcher an die AEM-Veröffentlichungsinstanz weitergeben werden:
+   * Überprüfen Sie die Datei `clientheaders.any`.
+* Stattdessen müssen CORS-Anfragen auf Dispatcher-Ebene im Hinblick auf zulässige Ursprünge ausgewertet werden. Dieser Ansatz stellt außerdem sicher, dass CORS-bezogene Header in allen Fällen korrekt an einem Ort festgelegt werden.
+   * Eine solche Konfiguration sollte der `vhost`-Datei hinzugefügt werden. Nachfolgend finden Sie eine Beispielkonfiguration. Zur Vereinfachung ist nur der CORS-bezogene Teil angegeben. Sie können sie an Ihre spezifischen Anwendungsfälle anpassen.
 
   ```xml
   <VirtualHost *:80>
@@ -894,7 +894,7 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 
    * Und Operationen:
 
-      * `_operator`: bestimmte Operatoren anwenden; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
+      * `_operator` : Anwendung spezifischer Operatoren; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
          * Siehe [Beispielabfrage – Alle Personen, die nicht den Namen „Jobs“ haben](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-persons-not-jobs)
          * Siehe [Beispielabfrage – Alle Abenteuer, bei denen `_path` mit einem bestimmten Präfix beginnt](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-all-adventures-cycling-path-filter)
 
@@ -917,7 +917,7 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 
 >[!CAUTION]
 >
->Wenn [Die Zwischenspeicherung im Dispatcher wurde aktiviert](#graphql-persisted-queries-enabling-caching-dispatcher) dann ist der CORS-Filter nicht erforderlich. Daher kann dieser Abschnitt ignoriert werden.
+>Wenn [die Zwischenspeicherung im Dispatcher aktiviert wurde](#graphql-persisted-queries-enabling-caching-dispatcher), ist der CORS-Filter nicht erforderlich und dieser Abschnitt kann ignoriert werden.
 
 >[!NOTE]
 >

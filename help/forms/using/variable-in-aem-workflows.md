@@ -9,7 +9,7 @@ exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '2080'
-ht-degree: 88%
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 88%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
 Eine Variable in einem Workflow-Modell bietet die Möglichkeit, einen Wert basierend auf seinem Datentyp zu speichern. Sie können den Namen der Variablen in jedem Workflow-Schritt verwenden, um den in der Variablen gespeicherten Wert abzurufen. Sie können auch Variablennamen verwenden, um Ausdrücke für Routing-Entscheidungen zu definieren.
@@ -51,7 +51,7 @@ Sie benötigen das [AEM Forms Add-On-Paket](https://helpx.adobe.com/de/aem-forms
 
 Führen Sie die folgenden Schritte aus, um eine Variable zu erstellen:
 
-1. Navigieren Sie in einer AEM zu Tools . ![Instrumente](/help/forms/using/assets/hammer.png) > Workflow > Modelle.
+1. Navigieren Sie in einer AEM-Instanz zu „Tools“ ![Tools](/help/forms/using/assets/hammer.png) > „Workflow“ > „Modelle“.
 1. Auswählen **[!UICONTROL Erstellen]** und geben Sie den Titel und einen optionalen Namen für das Workflow-Modell an. Wählen Sie das Modell aus und wählen Sie **[!UICONTROL Bearbeiten]**.
 1. Wählen Sie das Variablensymbol im Sidekick des Workflow-Modells aus und wählen Sie **[!UICONTROL Variable hinzufügen]**.
 
@@ -177,7 +177,7 @@ Weitere Beispiele finden Sie unter [Erstellen eines Workflow-Modells](../../form
 
 #### GOTO-Schritt (Wechseln zu Schritt)  {#go-to-step}
 
-Die **Zum Schritt wechseln** können Sie den nächsten auszuführenden Schritt im Workflow-Modell abhängig vom Ergebnis eines Routing-Ausdrucks angeben.
+Mit **Zum Schritt wechseln** können Sie den nächsten Schritt im Workflow-Modell angeben, der je nach dem Ergebnis eines Routing-Ausdrucks ausgeführt werden soll.
 
 Ähnlich wie beim ODER-Teilungs-Schritt können Sie Routing-Ausdrücke für einen GOTO-Schritt (Wechseln zu Schritt) mithilfe einer Regeldefinition, eines ECMA-Skripts oder eines externen Skripts definieren.
 

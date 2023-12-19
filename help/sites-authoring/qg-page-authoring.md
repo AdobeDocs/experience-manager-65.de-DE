@@ -10,7 +10,7 @@ exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1540'
-ht-degree: 75%
+ht-degree: 84%
 
 ---
 
@@ -36,17 +36,17 @@ Bevor Sie sich einen Überblick über die Besonderheiten verschaffen, hier eine 
 
 * **Erstellen**
 
-   * Diese Schaltfläche ist in vielen Konsolen verfügbar - die angezeigten Optionen sind kontextsensitiv und können je nach Szenario variieren.
+   * Diese Schaltfläche steht in vielen Konsolen zur Verfügung. Die angezeigten Optionen sind kontextabhängig und können je nach Szenario variieren.
 
 * Neuanordnen von Seiten in einem Ordner
 
-   * Dies kann in der [Listenansicht](/help/sites-authoring/basic-handling.md#list-view) durchgeführt werden. Die Änderungen werden angewendet und in anderen Ansichten angezeigt.
+   * Dies kann in der [Listenansicht](/help/sites-authoring/basic-handling.md#list-view) durchgeführt werden. Die Änderungen werden angewendet und sind in anderen Ansichten sichtbar.
 
 #### Bearbeiten von Seiten {#page-authoring}
 
 * Navigieren per Links
 
-   * ***Links sind für die Navigation nicht verfügbar***, wenn Sie sich im Modus **Bearbeiten** befinden. Um mit Links zu navigieren, müssen Sie [Seitenvorschau](/help/sites-authoring/editing-content.md#previewing-pages) entweder:
+   * ***Links sind für die Navigation nicht verfügbar***, wenn Sie sich im Modus **Bearbeiten** befinden. Für die Navigation mithilfe von Links müssen Sie [die Seite in einer Vorschau anzeigen](/help/sites-authoring/editing-content.md#previewing-pages), indem Sie eine der folgenden Optionen verwenden:
 
       * [Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode)
       * [Als veröffentlicht anzeigen](/help/sites-authoring/editing-content.md#view-as-published)
@@ -55,7 +55,7 @@ Bevor Sie sich einen Überblick über die Besonderheiten verschaffen, hier eine 
 
 >[!NOTE]
 >
->Es gibt mehrere Tastaturbefehle, die die Bearbeitung vereinfachen können.
+>Es gibt eine Reihe von Tastaturbefehlen, die die Bearbeitung vereinfachen.
 >
 >* [Tastaturbefehle bei der Seitenbearbeitung](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
 >* [Tastaturbefehle für Konsolen](/help/sites-authoring/keyboard-shortcuts.md)
@@ -71,7 +71,7 @@ Es gibt verschiedene Möglichkeiten, eine Seite zu finden: Sie können navigiere
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
-1. Navigieren Sie in der Baumstruktur nach oben mithilfe von [Breadcrumb in der Kopfzeile](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs), mit dem Sie zur ausgewählten Position zurückkehren können:
+1. Navigieren Sie über [den Breadcrumb in der Kopfzeile](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs) in der Baumstruktur nach oben, um zum ausgewählten Pfad zurückzukehren:
 
    ![qgtap-01](assets/qgtap-01.png)
 
@@ -81,9 +81,9 @@ Es gibt verschiedene Möglichkeiten, eine Seite zu finden: Sie können navigiere
 
 ### Erstellen einer neuen Seite {#creating-a-new-page}
 
-nach [Erstellen einer Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page):
+So [erstellen Sie eine Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page):
 
-1. [Navigieren zum Speicherort](#finding-your-page) wo Sie die Seite erstellen möchten.
+1. [Navigieren Sie dorthin](#finding-your-page), wo die neue Seite erstellt werden soll.
 1. Verwenden Sie das Symbol **Erstellen** und wählen Sie dann **Seite** aus der Liste:
 
    ![qgtap-02](assets/qgtap-02.png)
@@ -140,7 +140,7 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
    * [Schnellzugriffe (nur Kartenansicht/Desktop)](#quick-actions-card-view-desktop-only) für die jeweilige Ressource
    * Symbolleiste, wenn die [Seite ausgewählt wurde](#selectiingyourpageforfurtheraction)
 
-1. Wenn der Editor geöffnet wird, haben Sie folgende Möglichkeiten:
+1. Beim Öffnen des Editors haben Sie folgende Möglichkeiten:
 
    * [Fügen Sie der Seite eine neue Komponente hinzu](/help/sites-authoring/editing-content.md#inserting-a-component), indem Sie:
 
@@ -155,7 +155,7 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
    * [Den Inhalt einer vorhandenen Komponente](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) auf der Seite bearbeiten:
 
       * Öffnen Sie die Komponenten-Symbolleiste mit einem Klick. Öffnen Sie das Dialogfeld über das Symbol **Bearbeiten** (Bleistift).
-      * Öffnen Sie den Editor für die Bearbeitung an Ort und Stelle für die Komponente durch Auswählen und Halten oder durch einen doppelten langsamen Klick. Die verfügbaren Aktionen werden angezeigt (bei einigen Komponenten ist dies eine begrenzte Auswahl).
+      * Öffnen Sie den Editor für die Bearbeitung an Ort und Stelle für die Komponente durch Auswählen und Halten oder durch einen doppelten langsamen Klick. Die verfügbaren Aktionen werden angezeigt (bei einigen Komponenten ist dies eine eingeschränkte Auswahl).
       * Um alle verfügbaren Aktionen anzuzeigen, gehen Sie wie folgt in den Vollbildmodus:
 
      ![Vollbildmodus](do-not-localize/screen_shot_2018-03-21at160706.png)
@@ -195,7 +195,7 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
 
    >[!NOTE]
    >
-   >Um mithilfe von Links im Inhalt zu navigieren, müssen Sie [Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode).
+   >Verwenden Sie den [Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode), wenn Sie mithilfe von Links im Inhalt navigieren möchten.
 
 ### Bearbeiten der Seiteneigenschaften {#editing-the-page-properties}
 
@@ -263,7 +263,7 @@ Diese Aktionen können alle wie folgt ausgelöst werden:
 
    * Kopieren:
 
-      * Navigieren Sie zum neuen Speicherort und fügen Sie ihn ein.
+      * Zum neuen Speicherort navigieren und dort einfügen.
 
    * Verschieben:
 
@@ -282,7 +282,7 @@ Diese Aktionen können alle wie folgt ausgelöst werden:
 [Sperren einer Seite](/help/sites-authoring/editing-content.md#locking-a-page): Verhindert, dass andere Autoren daran arbeiten, während Sie dies tun. Das Symbol bzw. die Schaltfläche „Sperren“ (und „Entsperren“) ist verfügbar:
 
 * Symbolleiste, wenn die [Seite ausgewählt wurde](#selecting-your-page-for-further-action)
-* Das Dropdown-Menü [Seiteninformationen](#editing-the-page-properties) beim Bearbeiten einer Seite.
+* Dropdown-Menü [Seiteninformationen](#editing-the-page-properties) beim Bearbeiten einer Seite
 * Seitensymbolleiste beim Bearbeiten einer Seite (wenn die Seite gesperrt ist)
 
 Beispielsweise sieht das Schloss-Symbol folgendermaßen aus:
@@ -291,7 +291,7 @@ Beispielsweise sieht das Schloss-Symbol folgendermaßen aus:
 
 ### Zugreifen auf Seitenverweise {#accessing-page-references}
 
-[Schnellzugriff auf Verweise](/help/sites-authoring/author-environment-tools.md#references) zu einer Seite oder von einer Seite aus in der Verweisleiste verfügbar.
+[Schnellzugriff auf Verweise](/help/sites-authoring/author-environment-tools.md#references) von oder zu einer Seite ist in der Verweisleiste verfügbar.
 
 1. Wählen Sie die Option **Verweise** mithilfe des Symbolleistensymbols (vor oder nach dem [Auswählen Ihrer Seite](#selecting-your-page-for-further-action)):
 

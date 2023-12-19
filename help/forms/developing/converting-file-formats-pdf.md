@@ -10,7 +10,7 @@ exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '7812'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 89%
 
 Der Generate PDF-Dienst konvertiert native Dateiformate in PDF. Er kann außerdem PDF-Dokumente in andere Dateiformate konvertieren und die Größe von PDF-Dokumenten optimieren.
 
-Der Generate PDF-Dienst verwendet native Programme, um die folgenden Dateiformate in PDF zu konvertieren. Sofern nicht anders angegeben, werden nur die deutsche, französische, englische und japanische Version dieser Anwendungen unterstützt. *Nur Windows* bedeutet, dass nur Windows Server® 2003 und Windows Server 2008 unterstützt werden.
+Der Generate PDF-Dienst verwendet native Anwendungen, um die folgenden Dateiformate in PDF zu konvertieren.  Sofern nicht anders aufgeführt, werden nur die deutschen, französischen, englischen und japanischen Versionen dieser Anwendungen unterstützt.  *Nur Windows* bedeutet, dass nur Windows Server® 2003 und Windows Server 2008 unterstützt werden.
 
 * Microsoft Office 2003 und 2007 zum Konvertieren von DOC, DOCX, RTF, TXT, XLS, XLSX, PPT, PPTX, VSD, MPP, MPPX, XPS und PUB (nur Windows)
 
@@ -56,7 +56,7 @@ Der Generate PDF-Dienst konvertiert die folgenden standardbasierten Dateiformate
 
 Der Generate PDF-Dienst konvertiert PDF in die folgenden Dateiformate (nur Windows):
 
-* Encapsulated PostScript (EPS)
+* Encapsulated Postscript (EPS)
 * HTML 3.2
 * HTML 4.01 mit CSS 1.0
 * DOC (Microsoft Word-Format)
@@ -68,7 +68,7 @@ Der Generate PDF-Dienst konvertiert PDF in die folgenden Dateiformate (nur Windo
 
 Für den Generate PDF-Dienst müssen Sie die folgenden Verwaltungsaufgaben ausführen:
 
-* Installieren Sie die erforderlichen nativen Anwendungen auf dem Computer, auf dem AEM Forms gehostet wird.
+* Installieren Sie die erforderlichen nativen Anwendungen auf dem Computer, der als Host für AEM Forms dient
 * Installieren Sie Adobe Acrobat Professional oder Acrobat Pro Extended 9.2 auf dem Computer, der als Host für AEM Forms dient
 * Ausführen von Einrichtungsaufgaben nach der Installation
 
@@ -144,7 +144,7 @@ Konvertieren Sie ein Microsoft Word-Dokument mithilfe der Generate PDF- API (Jav
 
 1. Schließen Sie Projektdateien ein.
 
-   Schließen Sie Client-JAR-Dateien wie adobe-generatepdf-client.jar in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie „adobe-generatepdf-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie einen Generate PDF-Client.
 
@@ -158,7 +158,7 @@ Konvertieren Sie ein Microsoft Word-Dokument mithilfe der Generate PDF- API (Jav
 
 1. Konvertieren Sie die Datei in ein PDF-Dokument.
 
-   Konvertieren Sie die Datei in ein PDF-Dokument, indem Sie die `GeneratePdfServiceClient` -Objekt `createPDF2` -Methode verwenden und die folgenden Werte übergeben:
+   Konvertieren Sie die Datei in ein PDF-Dokument, indem Sie die Methode `createPDF2` des `GeneratePdfServiceClient`-Objekts aufrufen und die folgenden Werte übergeben:
 
    * Ein `com.adobe.idp.Document`-Objekt, das die zu konvertierende Datei darstellt.
    * Ein `java.lang.String`-Objekt, das die Dateierweiterung enthält.
@@ -174,13 +174,13 @@ Konvertieren Sie ein Microsoft Word-Dokument mithilfe der Generate PDF- API (Jav
 
    So erhalten Sie das PDF-Dokument:
 
-   * Rufen Sie die `CreatePDFResult` -Objekt `getCreatedDocument` -Methode, die eine `com.adobe.idp.Document` -Objekt.
-   * Rufen Sie die `com.adobe.idp.Document` -Objekt `copyToFile` -Methode, um das PDF-Dokument aus dem im vorherigen Schritt erstellten Objekt zu extrahieren.
+   * Rufen Sie die Methode `getCreatedDocument` des `CreatePDFResult`-Objekts auf, was ein `com.adobe.idp.Document`-Objekt zurückgibt.
+   * Rufen Sie die Methode `copyToFile` des `com.adobe.idp.Document`-Objekts auf, um das PDF-Dokument aus dem im vorherigen Schritt erstellten Objekt zu extrahieren.
 
-   Wenn Sie die `createPDF2`-Methode zum Abrufen des Protokolldokuments (nicht anwendbar auf HTML-Konvertierungen), führen Sie die folgenden Schritte aus:
+   Wenn Sie die Methode `createPDF2` verwendet haben, um das Protokolldokument zu erhalten (gilt nicht für HTML-Konversionen), führen Sie die folgenden Aktionen durch:
 
-   * Rufen Sie die `CreatePDFResult` -Objekt `getLogDocument` -Methode. Dadurch wird ein `com.adobe.idp.Document`-Objekt zurückgegeben.
-   * Rufen Sie die `com.adobe.idp.Document` -Objekt `copyToFile` -Methode, um das Protokolldokument zu extrahieren.
+   * Rufen Sie die Methode `getLogDocument` des `CreatePDFResult`-Objekts auf. Dadurch wird ein `com.adobe.idp.Document`-Objekt zurückgegeben.
+   * Rufen Sie die Methode `copyToFile` des `com.adobe.idp.Document`-Objekts auf, um das Protokolldokument zu extrahieren.
 
 **Siehe auch**
 
@@ -209,7 +209,7 @@ So konvertieren Sie ein Microsoft Word-Dokument mithilfe der Generate PDF-API (W
    * Erstellen Sie ein `GeneratePDFServiceClient`-Objekt unter Verwendung seines standardmäßigen Konstruktors.
    * Erstellen Sie ein `GeneratePDFServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). Sie brauchen das Attribut `lc_version` nicht zu verwenden. Geben Sie jedoch `?blob=mtom` an.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des Feldes `GeneratePDFServiceClient.Endpoint.Binding` abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -221,13 +221,13 @@ So konvertieren Sie ein Microsoft Word-Dokument mithilfe der Generate PDF-API (W
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird verwendet, um die Datei zu speichern, die Sie in ein PDF-Dokument konvertieren möchten.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort der zu konvertierenden Datei und den Modus zum Öffnen der Datei darstellt.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
    * Befüllen Sie das `BLOB`-Objekt, indem Sie seiner `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
 
 1. Konvertieren Sie die Datei in ein PDF-Dokument.
 
-   Konvertieren Sie die Datei in ein PDF-Dokument, indem Sie die `GeneratePDFServiceService` -Objekt `CreatePDF2` -Methode verwenden und die folgenden Werte übergeben:
+   Konvertieren Sie die Datei in ein PDF-Dokument, indem Sie die Methode `CreatePDF2` des `GeneratePDFServiceService`-Objekts aufrufen und die folgenden Werte übergeben:
 
    * Ein `BLOB`-Objekt, das die zu konvertierende Datei darstellt.
    * Eine Zeichenfolge, die die Dateierweiterung enthält.
@@ -241,10 +241,10 @@ So konvertieren Sie ein Microsoft Word-Dokument mithilfe der Generate PDF-API (W
 
 1. Rufen Sie die Ergebnisse ab.
 
-   * Abrufen des konvertierten PDF-Dokuments durch Zuweisen der `BLOB` -Objekt `MTOM` in ein Byte-Array. Das Byte-Array stellt das konvertierte PDF-Dokument dar. Stellen Sie sicher, dass Sie das `BLOB`-Objekt verwenden, das als Ausgabeparameter für die `createPDF2`-Methode dient.
+   * Rufen Sie das konvertierte PDF-Dokument ab, indem Sie das Feld `MTOM` des `BLOB`-Objekts einem Byte-Array zuweisen. Das Byte-Array stellt das konvertierte PDF-Dokument dar. Stellen Sie sicher, dass Sie das `BLOB`-Objekt verwenden, das als Ausgabeparameter für die `createPDF2`-Methode dient.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt durch Aufrufen des Konstruktors und Übergeben eines Zeichenfolgenwerts, der den Dateispeicherort des konvertierten PDF-Dokuments darstellt.
-   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor abrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter` -Objekt `Write` -Methode verwenden und das Byte-Array übergeben.
+   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
 
@@ -310,7 +310,7 @@ Konvertieren Sie ein HTML-Dokument mithilfe der Generate PDF-API (Java) in ein P
 
 1. Schließen Sie Projektdateien ein.
 
-   Schließen Sie Client-JAR-Dateien wie adobe-generatepdf-client.jar in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie „adobe-generatepdf-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie einen Generate PDF-Client.
 
@@ -322,7 +322,7 @@ Konvertieren Sie ein HTML-Dokument mithilfe der Generate PDF-API (Java) in ein P
 
 1. Konvertieren Sie den HTML-Inhalt in ein PDF-Dokument.
 
-   Rufen Sie die `GeneratePdfServiceClient` -Objekt `htmlToPDF2` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `htmlToPDF2` des `GeneratePdfServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
    * Ein `java.lang.String`-Objekt, das die URL der zu konvertierenden HTML-Datei enthält.
    * Ein `java.lang.String`-Objekt, das die Dateitypeinstellungen enthält, die bei der Konvertierung verwendet werden sollen. Dateitypeinstellungen können Spider-Level enthalten.
@@ -334,8 +334,8 @@ Konvertieren Sie ein HTML-Dokument mithilfe der Generate PDF-API (Java) in ein P
 
    Die `htmlToPDF2`-Methode gibt ein `HtmlToPdfResult`-Objekt zurück, das das neue generierte PDF-Dokument enthält. Führen Sie die folgenden Schritte aus, um das neu erstellte PDF-Dokument abzurufen:
 
-   * Rufen Sie die `HtmlToPdfResult` -Objekt `getCreatedDocument` -Methode. Dadurch wird ein `com.adobe.idp.Document`-Objekt zurückgegeben.
-   * Rufen Sie die `com.adobe.idp.Document` -Objekt `copyToFile` -Methode, um das PDF-Dokument aus dem im vorherigen Schritt erstellten Objekt zu extrahieren.
+   * Rufen Sie die Methode `getCreatedDocument` des `HtmlToPdfResult`-Objekts auf. Dadurch wird ein `com.adobe.idp.Document`-Objekt zurückgegeben.
+   * Rufen Sie die Methode `copyToFile` des `com.adobe.idp.Document`-Objekts auf, um das PDF-Dokument aus dem im vorherigen Schritt erstellten Objekt zu extrahieren.
 
 **Siehe auch**
 
@@ -366,7 +366,7 @@ So konvertieren Sie HTML-Inhalte mithilfe der Generate PDF-API (Webservice) in e
    * Erstellen Sie ein `GeneratePDFServiceClient`-Objekt unter Verwendung seines standardmäßigen Konstruktors.
    * Erstellen Sie ein `GeneratePDFServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). Sie brauchen das Attribut `lc_version` nicht zu verwenden. Geben Sie jedoch `?blob=mtom` an.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des Feldes `GeneratePDFServiceClient.Endpoint.Binding` abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -380,7 +380,7 @@ So konvertieren Sie HTML-Inhalte mithilfe der Generate PDF-API (Webservice) in e
 
 1. Konvertieren Sie den HTML-Inhalt in ein PDF-Dokument.
 
-   Konvertieren Sie den HTML-Inhalt in ein PDF-Dokument, indem Sie die `GeneratePDFServiceService` -Objekt `HtmlToPDF2` -Methode verwenden und die folgenden Werte übergeben:
+   Konvertieren Sie den HTML-Inhalt in ein PDF-Dokument, indem Sie die Methode `HtmlToPDF2` des `GeneratePDFServiceService`-Objekts aufrufen und die folgenden Werte übergeben:
 
    * Eine Zeichenfolge, die den zu konvertierenden HTML-Inhalt enthält.
    * Ein `java.lang.String`-Objekt, das die Dateitypeinstellungen enthält, die bei der Konvertierung verwendet werden sollen.
@@ -391,10 +391,10 @@ So konvertieren Sie HTML-Inhalte mithilfe der Generate PDF-API (Webservice) in e
 
 1. Rufen Sie die Ergebnisse ab.
 
-   * Abrufen des konvertierten PDF-Dokuments durch Zuweisen der `BLOB` -Objekt `MTOM` in ein Byte-Array. Das Byte-Array stellt das konvertierte PDF-Dokument dar. Stellen Sie sicher, dass Sie das `BLOB`-Objekt verwenden, das als Ausgabeparameter für die `HtmlToPDF2`-Methode dient.
+   * Rufen Sie das konvertierte PDF-Dokument ab, indem Sie das Feld `MTOM` des `BLOB`-Objekts einem Byte-Array zuweisen. Das Byte-Array stellt das konvertierte PDF-Dokument dar. Stellen Sie sicher, dass Sie das `BLOB`-Objekt verwenden, das als Ausgabeparameter für die `HtmlToPDF2`-Methode dient.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt durch Aufrufen des Konstruktors und Übergeben eines Zeichenfolgenwerts, der den Dateispeicherort des konvertierten PDF-Dokuments darstellt.
-   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor abrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter` -Objekt `Write` -Methode verwenden und das Byte-Array übergeben.
+   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
 
@@ -460,7 +460,7 @@ So konvertieren Sie ein PDF-Dokument mithilfe der Generate PDF-API (Java) in ein
 
 1. Schließen Sie Projektdateien ein.
 
-   Schließen Sie Client-JAR-Dateien wie adobe-generatepdf-client.jar in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie „adobe-generatepdf-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie einen Generate PDF-Client.
 
@@ -473,7 +473,7 @@ So konvertieren Sie ein PDF-Dokument mithilfe der Generate PDF-API (Java) in ein
 
 1. Konvertieren Sie das PDF-Dokument.
 
-   Rufen Sie die `GeneratePdfServiceClient` -Objekt `exportPDF2` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `exportPDF2` des `GeneratePdfServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
    * Ein `com.adobe.idp.Document`-Objekt, das die zu konvertierende PDF-Datei darstellt.
    * Ein `java.lang.String`-Objekt, das den Namen der zu konvertierenden Datei enthält.
@@ -487,8 +487,8 @@ So konvertieren Sie ein PDF-Dokument mithilfe der Generate PDF-API (Java) in ein
 
    Um die neu erstellte Datei abzurufen, führen Sie die folgenden Schritte aus:
 
-   * Rufen Sie die `ExportPDFResult` -Objekt `getConvertedDocument` -Methode. Dadurch wird ein `com.adobe.idp.Document`-Objekt zurückgegeben.
-   * Rufen Sie die `com.adobe.idp.Document` -Objekt `copyToFile` -Methode, um das neue Dokument zu extrahieren.
+   * Rufen Sie die Methode `getConvertedDocument` des `ExportPDFResult`-Objekts auf. Dadurch wird ein `com.adobe.idp.Document`-Objekt zurückgegeben.
+   * Rufen Sie die Methode `copyToFile` des `com.adobe.idp.Document`-Objekts auf, um das PDF-Dokument zu extrahieren.
 
 **Siehe auch**
 
@@ -517,7 +517,7 @@ Konvertieren Sie ein PDF-Dokument mithilfe der Generate PDF API (Webservice) in 
    * Erstellen Sie ein `GeneratePDFServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `GeneratePDFServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). Sie brauchen das Attribut `lc_version` nicht zu verwenden. Geben Sie jedoch `?blob=mtom` an.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des Feldes `GeneratePDFServiceClient.Endpoint.Binding` abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -529,13 +529,13 @@ Konvertieren Sie ein PDF-Dokument mithilfe der Generate PDF API (Webservice) in 
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines konvertierten PDF-Dokuments verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
    * Füllen Sie das Objekt `BLOB`, indem Sie seiner `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
 
 1. Konvertieren Sie das PDF-Dokument.
 
-   Rufen Sie die `GeneratePDFServiceServiceWse` -Objekt `ExportPDF2` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `ExportPDF2` des `GeneratePDFServiceServiceWse`-Objekts auf und übergeben Sie die folgenden Werte:
 
    * Ein `BLOB`-Objekt, das die zu konvertierende PDF-Datei repräsentiert.
    * Eine Zeichenfolge, die den Pfadnamen der zu konvertierenden Datei enthält.
@@ -546,10 +546,10 @@ Konvertieren Sie ein PDF-Dokument mithilfe der Generate PDF API (Webservice) in 
 
 1. Speichern Sie die konvertierte Datei.
 
-   * Rufen Sie das konvertierte RTF-Dokument ab, indem Sie die `BLOB` -Objekt `MTOM` in ein Byte-Array. Das Byte-Array repräsentiert das konvertierte RTF-Dokument. Stellen Sie sicher, dass Sie das `BLOB`-Objekt verwenden, das bei der `ExportPDF2`-Methode als Ausgabeparameter dient.
+   * Rufen Sie das konvertierte PDF-Dokument ab, indem Sie das Feld `MTOM` des `BLOB`-Objekts einem Byte-Array zuweisen. Das Byte-Array repräsentiert das konvertierte RTF-Dokument. Stellen Sie sicher, dass Sie das `BLOB`-Objekt verwenden, das bei der `ExportPDF2`-Methode als Ausgabeparameter dient.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgewert, der den Speicherort der RTF-Datei repräsentiert.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine RTF-Datei, indem Sie die `System.IO.BinaryWriter` -Objekt `Write` -Methode verwenden und das Byte-Array übergeben.
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine RTF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
 
@@ -649,7 +649,7 @@ Dort, wo dieser und der nächste Abschnitt Dialogfelder und ihre Komponenten aus
 
 Dort, wo dieser und der nächste Abschnitt Dialogfelder und ihre Komponenten aus der Perspektive ihrer internen Darstellung beschreiben, wird der Begriff *Fensterelement* verwendet. Die interne Darstellung von Fensterelementen ist eine Hierarchie, in der jede Fensterelementinstanz durch Beschriftungen identifiziert wird. Die Fensterelementinstanz beschreibt auch ihre physischen Merkmale und ihr Verhalten.
 
-Aus Sicht eines Benutzers zeigen die Dialogfelder und ihre Komponenten unterschiedliche Verhaltensweisen an, bei denen einige Dialogfeldelemente ausgeblendet werden, bis sie aktiviert werden. Aus der Sicht der internen Darstellung gibt es kein solches Verhaltensproblem. Beispielsweise sieht die interne Darstellung eines Dialogfelds ähnlich aus wie die der darin enthaltenen Komponenten, abgesehen davon, dass die Komponenten innerhalb des Dialogfelds verschachtelt sind.
+Aus Sicht der Benutzenden weisen die Dialogfelder und ihre Komponenten unterschiedliche Verhaltensweisen auf, wobei einige Dialogfeldelemente ausgeblendet sind, bis sie aktiviert werden. Aus der Sicht der internen Darstellung gibt es kein solches Verhaltensproblem. Beispielsweise sieht die interne Darstellung eines Dialogfelds ähnlich aus wie die der darin enthaltenen Komponenten, abgesehen davon, dass die Komponenten innerhalb des Dialogfelds verschachtelt sind.
 
 In diesem Abschnitt werden XML-Elemente beschrieben, die AppMon Anweisungen geben. Diese Elemente haben Namen wie das `dialog`-Element und das `window`-Element. In diesem Dokument wird zur Unterscheidung von XML-Elementen eine Schriftart mit fester Zeichenbreite verwendet. Das `dialog`-Element identifiziert ein Dialogfeld, das durch eine XML-Skriptdatei absichtlich oder unabsichtlich angezeigt werden kann. Das `window`-Element bezeichnet ein Fensterelement (Dialogfeld oder die Komponenten eines Dialogfelds).
 
@@ -665,13 +665,13 @@ Hierarchie des Skripts und Dialogfeld-XML
 
 Eine *XML-Skriptdatei* gibt eine Reihe von Schritten an, die das native Programm anweisen, zu bestimmten Fensterelementen zu navigieren und dann Reaktionen auf diese Elemente bereitzustellen. Bei den meisten Reaktionen handelt es sich um Text oder Tastenanschläge, die den Eingaben entsprechen, die ein Benutzer in ein Feld, ein Kombinationsfeld oder eine Schaltfläche im entsprechenden Dialogfeld eingeben würde.
 
-Der Generate PDF-Dienst unterstützt Skript-XML-Dateien, indem er eine native Anwendung anweist, eine native zu drucken. Skript-XML-Dateien können jedoch verwendet werden, um alle Aufgaben auszuführen, die ein Benutzer bei der Interaktion mit den Dialogfeldern der nativen Anwendung ausführen kann.
+Die Unterstützung des Services „Generate PDF“ für XML-Skriptdateien soll dazu dienen, eine native Anwendung anzuweisen, eine native Datei zu drucken. XML-Skriptdateien können jedoch für alle Aufgaben verwendet werden, die Benutzende bei der Interaktion mit den Dialogfeldern der nativen Anwendung ausführen können.
 
 Die Schritte in einer XML-Skriptdatei werden der Reihe nach ausgeführt, ohne die Möglichkeit einer Verzweigung. Der einzige unterstützte bedingte Test ist die Zeitüberschreitung/Wiederholung, wodurch ein Skript beendet wird, wenn ein Schritt nicht innerhalb eines bestimmten Zeitraums und nach einer bestimmten Anzahl weiterer Versuche erfolgreich abgeschlossen wird.
 
 Die Anweisungen in einem Schritt sind nicht nur sequenziell, sondern werden auch der Reihe nach ausgeführt. Stellen Sie sicher, dass die Schritte und Anweisungen die Reihenfolge widerspiegeln, in der ein Benutzer die gleichen Schritte durchführt.
 
-Jeder Schritt in einer XML-Skript-Datei identifiziert das Fensterelement, das angezeigt werden soll, wenn die Anweisungen des Schritts erfolgreich ausgeführt wurden. Wird während der Ausführung eines Skriptschritts ein unerwartetes Dialogfeld angezeigt, durchsucht der Service „Generate PDF“ die XML-Dialogfelddateien, wie im nächsten Abschnitt beschrieben.
+Jeder Schritt in einer XML-Skriptdatei identifiziert das Fensterelement, das angezeigt werden soll, wenn die Anweisungen des Schritts erfolgreich ausgeführt wurden. Wird während der Ausführung eines Skriptschritts ein unerwartetes Dialogfeld angezeigt, durchsucht der Service „Generate PDF“ die XML-Dialogfelddateien, wie im nächsten Abschnitt beschrieben.
 
 #### XML-Dialogfelddateien {#dialog-xml-files}
 
@@ -687,7 +687,7 @@ Wenn das System oder das native Programm ein Dialogfeld anzeigt, das nicht von d
 
 Wenn der Service „Generate PDF“ eine Übereinstimmung für das Dialogfeld findet, schließt er es, indem er ihm die für das Dialogfeld angegebene Tastenanschlag oder eine andere Aktion sendet. Wenn in den Anweisungen für das Dialogfeld eine Abbruchmeldung angegeben wird, beendet der Service „Generate PDF“ den derzeit ausgeführten Auftrag und erzeugt eine Fehlermeldung. Eine solche Abbruchmeldung würde im `abortMessage`-Element in der XML-Skriptgrammatik angegeben.
 
-Wenn der Generate PDF-Dienst auf ein Dialogfeld stößt, das in keiner der oben aufgeführten Dateien beschrieben wird, fügt der Generate PDF-Dienst die Beschriftung des Dialogfelds in den Protokolldateieintrag ein. Der derzeit ausgeführte Auftrag wird schließlich mit einer Zeitüberschreitung beendet. Sie können dann die Informationen in der Protokolldatei verwenden, um neue Anweisungen in der zusätzlichen XML-Dialogfelddatei (additional) für das native Programm zu erstellen.
+Wenn der Generate PDF-Dienst auf ein Dialogfeld stößt, das in keiner der oben aufgeführten Dateien beschrieben wird, fügt er die Beschriftung des Dialogfelds in den Protokolldateieintrag ein. Der derzeit ausgeführte Auftrag wird schließlich mit einer Zeitüberschreitung beendet. Sie können dann die Informationen in der Protokolldatei verwenden, um neue Anweisungen in der zusätzlichen XML-Dialogfelddatei (additional) für das native Programm zu erstellen.
 
 ### Hinzufügen oder Ändern der Unterstützung für ein natives Dateiformat {#adding-or-modifying-support-for-a-native-file-format}
 
@@ -750,7 +750,7 @@ Nachdem Sie diese XML-Dateien zur Datei „adobe-appmondata.jar“ hinzugefügt 
 
 Wenn Sie Dateien an ein neues natives Programm weiterleiten möchten, müssen Sie eine XML-Skript-Datei für dieses Programm erstellen. Wenn Sie ändern möchten, wie der Generate PDF-Service mit einem bereits unterstützten nativen Programm interagiert, müssen Sie das Skript für dieses Programm ändern.
 
-Das Skript enthält Anweisungen, die durch die Fensterelemente der nativen Anwendung navigieren und spezifische Antworten auf diese Elemente bereitstellen. Die Datei, die diese Informationen enthält, lautet `appmon.`[appname]`` `.script.`[locale]`.xml`. Ein Beispiel ist „appmon.notepad.script.de_DE.xml“.
+Das Skript enthält Anweisungen, die durch die Fensterelemente des nativen Programms navigieren und jeweils spezifische Antworten für diese Elemente bereitstellen. Die Datei, die diese Informationen enthält, lautet `appmon.`[appname]`` `.script.`[locale]`.xml`. Ein Beispiel ist „appmon.notepad.script.de_DE.xml“.
 
 #### Identifizieren der Schritte, die das Skript ausführen muss {#identifying-steps-the-script-must-execute}
 
@@ -878,7 +878,7 @@ In diesem Verfahren wird beschrieben, wie Sie die Konfigurationsdatei des Genera
 
 >[!NOTE]
 >
-Der Name der Anwendung wird als Wert der Variablen `GenericApp` -Element `name` -Attribut. Dieser Wert muss exakt mit dem entsprechenden Namen übereinstimmen, der im Skript angegeben ist, das Sie für dieses Programm entwickeln. Genauso wird die `GenericApp` -Element `displayName` sollte genau mit dem entsprechenden Skript übereinstimmen `expectedWindow` Fensterbeschriftung. Diese Gleichwertigkeit wird nach der Auflösung von regulären Ausdrücken, die in den `displayName`- oder `caption`-Attributen erscheinen, bewertet.
+Der Name der Anwendung wird als Wert des `name`-Attributs des `GenericApp`-Elements angegeben. Dieser Wert muss exakt mit dem entsprechenden Namen übereinstimmen, der im Skript angegeben ist, das Sie für dieses Programm entwickeln. Ebenso sollte das `displayName`-Attribut des `GenericApp`-Elements genau mit der `expectedWindow`-Fensterbeschriftung des entsprechenden Skripts übereinstimmen. Diese Gleichwertigkeit wird nach der Auflösung von regulären Ausdrücken, die in den `displayName`- oder `caption`-Attributen erscheinen, bewertet.
 
 In diesem Beispiel wurden die mit dem Generate PDF-Service bereitgestellten Standardkonfigurationsdaten geändert, um anzugeben, dass nicht Microsoft Word, sondern Notepad zur Verarbeitung von Dateien mit der Dateierweiterung .txt verwendet werden soll. Vor dieser Änderung wurde Microsoft Word als das native Programm angegeben, das solche Dateien verarbeiten soll.
 

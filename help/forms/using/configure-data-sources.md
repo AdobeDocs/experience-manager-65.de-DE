@@ -9,7 +9,7 @@ exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
 source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
 source-wordcount: '2073'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 80%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
 
 ![Datenintegration](do-not-localize/data-integeration.png)
 
-Mit der AEM Forms-Datenintegration können Sie unterschiedliche Datenquellen konfigurieren und eine Verbindung zu ihnen herstellen. Die folgenden Datenquellen werden standardmäßig unterstützt. Es ist jedoch möglich, mit nur wenigen Anpassungen auch andere Datenquellen zu integrieren.
+Mit der AEM Forms-Datenintegration können Sie unterschiedliche Datenquellen konfigurieren und Verbindungen zu ihnen herzustellen. Die folgenden Datenquellen werden standardmäßig unterstützt. Es ist jedoch möglich, mit nur wenigen Anpassungen auch andere Datenquellen zu integrieren.
 
 * Relationale Datenbanken - MySQL, Microsoft SQL Server, IBM DB2, Oracle RDBMS, postgreSQL und Sybase
 * AEM-Benutzerprofil 

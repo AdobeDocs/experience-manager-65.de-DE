@@ -10,7 +10,7 @@ exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '3229'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ Workflow-Modelle beinhalten eine Reihe von Schritten unterschiedlichen Typs. Je 
 
 ## Schritt-Eigenschaften {#step-properties}
 
-Jede Schritt-Komponente verfügt über eine **Schritt-Eigenschaften** -Dialogfeld, in dem Sie die erforderlichen Eigenschaften definieren und bearbeiten können.
+Jede Schrittkomponente beinhaltet ein Dialogfeld **Schritt-Eigenschaften**, in dem Sie die erforderlichen Eigenschaften definieren und bearbeiten können.
 
 ### Schritteigenschaften – Registerkarte „Allgemein“ {#step-properties-common-tab}
 
@@ -97,7 +97,7 @@ So konfigurieren Sie die Aufspaltung:
 
 Ein Container-Schritt startet ein anderes Workflow-Modell, das als untergeordneter Workflow ausgeführt wird.
 
-Mit diesem Container können Sie Workflow-Modelle wiederverwenden, um häufige Schrittfolgen zu implementieren. Beispielsweise kann ein Übersetzung-Workflow-Modell in mehreren Bearbeitung-Workflows verwendet werden.
+Mit diesem Container können Sie Workflow-Modelle wiederverwenden, um häufig verwendete Schrittfolgen zu implementieren. Beispielsweise kann ein Übersetzung-Workflow-Modell in mehreren Bearbeitung-Workflows verwendet werden.
 
 ![wf-28](assets/wf-28.png)
 
@@ -112,7 +112,7 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 
 ## Zum Schritt wechseln {#goto-step}
 
-Die **Zum Schritt wechseln** können Sie den nächsten Schritt angeben, der im Workflow-Modell ausgeführt werden soll. Sie können eine Regeldefinition, ein externes Skript oder ein ECMA-Skript als Routing-Ausdruck angeben, um den nächsten Schritt für das Workflow-Modell zu bewerten.
+Die Option **Zum Schritt wechseln** ermöglicht Ihnen, den nächsten Schritt anzugeben, der im Workflow-Modell ausgeführt werden soll. Sie können eine Regeldefinition, ein externes Skript oder ein ECMA-Skript als Routing-Ausdruck angeben, um den nächsten Schritt für das Workflow-Modell zu bewerten.
 
 * Wenn die von Ihnen angegebene Bedingung erfüllt ist, wird **Zum Schritt wechseln** abgeschlossen und die Workflow-Engine führt den angegebenen Schritt aus.
 * Wenn die von Ihnen angegebene Bedingung nicht zutrifft, wird **Zum Schritt wechseln** abgeschlossen und die normale Routing-Logik bestimmt den nächsten auszuführenden Schritt.
@@ -585,7 +585,7 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 
 ## Variable festlegen {#set-variable}
 
-Im Schritt Variable festlegen können Sie den Wert einer Variablen festlegen und die Reihenfolge definieren, in der die Werte festgelegt werden. Die Variable wird in der Reihenfolge festgelegt, in der die Variablenzuordnungen im Schritt „Variable festlegen“ aufgeführt sind.
+Mit dem Schritt „Variable festlegen“ können Sie den Wert einer Variablen festlegen und die Reihenfolge definieren, in der die Werte festgelegt werden. Die Variable wird in der Reihenfolge festgelegt, in der die Variablenzuordnungen im Schritt „Variable festlegen“ aufgeführt sind.
 
 ![Hinzufügen einer Zuordnung zum Festlegen einer Variablen](assets/set_variable_addmappingnew.png)
 

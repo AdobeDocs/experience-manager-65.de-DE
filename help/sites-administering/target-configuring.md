@@ -9,7 +9,7 @@ exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '2122'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -255,7 +255,7 @@ Wenn Sie dem Framework eine Seite zuordnen, erben die untergeordneten Seiten die
 
    >[!NOTE]
    >
-   Wenn das Framework, das Sie an die Seite angehängt haben, noch nicht aktiviert wurde, wird ein Assistent geöffnet, mit dem Sie es auch veröffentlichen können.
+   Wenn das Framework, das Sie an die Seite angehängt haben, noch nicht aktiviert wurde, öffnet sich ein Assistent, mit dem Sie es ebenfalls veröffentlichen können.
 
 ## Durchführen der Fehlerbehebung für Target-Verbindungsprobleme {#troubleshooting-target-connection-problems}
 

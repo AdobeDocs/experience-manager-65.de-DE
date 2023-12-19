@@ -6,13 +6,13 @@ exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
 source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '1762'
-ht-degree: 77%
+ht-degree: 78%
 
 ---
 
 # Analytics mit [!DNL Adobe Launch] {#analyticsusingadobelaunch}
 
-AEM Forms ist mit [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=de) , damit Sie Leistungsmetriken für Ihre veröffentlichten Formulare erfassen und verfolgen können. Ziel der Analyse dieser Metriken ist es, Geschäftsanwendern Einblicke in das Verhalten der Endbenutzer zu geben und das Erlebnis der Datenerfassung zu optimieren. Sie können das Verhalten sowohl angemeldeter als auch nicht angemeldeter (anonymer) Benutzer über Adobe Analytics für adaptive Formulare erfassen und verfolgen.
+AEM Forms lässt sich mit [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=de) integrieren, damit Sie Leistungsmetriken für Ihre veröffentlichten Formulare erfassen und nachverfolgen können. Ziel der Analyse dieser Metriken ist es, Geschäftsanwendern Einblicke in das Verhalten der Endbenutzer zu geben und das Erlebnis der Datenerfassung zu optimieren. Sie können das Verhalten sowohl angemeldeter als auch nicht angemeldeter (anonymer) Benutzer über Adobe Analytics für adaptive Formulare erfassen und verfolgen.
 
 Sie können auch Analysen mithilfe des Cloud Service-Frameworks durchführen. Weitere Informationen über die Integration von AEM Forms mit Cloud Service Framework finden Sie unter [Analytics mit Cloud Service-Framework](/help/forms/using/configure-analytics-forms-documents.md). Der Hauptvorteil von Adobe Launch gegenüber Analytics mit dem Cloud Service-Framework ist, dass Sie zusätzlich zu den Standardereignissen auch vorkonfigurierte Ereignisse definieren können. Die benutzerdefinierten Ereignisse werden mit dem Regeleditor oder den Kunden-Clientlibs definiert und den Ereignissen in [!DNL Adobe Analytics] zugeordnet.
 

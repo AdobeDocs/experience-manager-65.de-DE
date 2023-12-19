@@ -4,8 +4,8 @@ description: Kurzanleitung zu Web Content Accessibility Guidelines (WCAG) Versio
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1777'
-ht-degree: 93%
+source-wordcount: '1734'
+ht-degree: 94%
 
 ---
 
@@ -40,7 +40,7 @@ Absicht von WCAG 2.1 ist es, Richtlinien mit folgenden Merkmalen bereitzustellen
 * **Testfähig:** Jede Richtlinie ist so formuliert, dass sie objektiv getestet werden kann, um sicherzustellen, dass eine Gruppe von Fachleuten für Barrierefreiheit generell zustimmt, dass die Richtlinie eingehalten wird. Eine der Herausforderungen bei Richtlinien zur Barrierefreiheit besteht darin, dass einige zwar technisch prüfbar sind, andere jedoch menschliches Urteilsvermögen erfordern, um festzustellen, ob die Richtlinie erfolgreich umgesetzt wurde oder nicht.
 
 * Unterstützung einer **priorisierten und kontextbezogenen Implementierung:**
-Den WCAG 2.1-Richtlinien werden Prioritäten zugewiesen, die sich auf die wahrscheinlichen Auswirkungen der Nichtbeachtung einer Richtlinie auf eine bestimmte Gruppe von Anwendern mit Behinderungen beziehen. Dies ermöglicht es Autoren, eine fundierte Entscheidung zu den wichtigsten Richtlinien für ihre jeweilige Situation zu treffen. Darüber hinaus wird das Konzept der *unterstützten Barrierefreiheit* eingeführt. Auf diese Weise können Autoren Entscheidungen darüber treffen, wie Webtechnologien am besten verwendet werden können, die möglicherweise nicht vollständig barrierefrei sind, oder Benutzer müssen möglicherweise über bestimmte Hilfstechnologien und/oder Browser verfügen, um von den Funktionen für Barrierefreiheit zu profitieren.
+Den WCAG 2.1-Richtlinien werden Prioritäten zugewiesen, die sich auf die wahrscheinlichen Auswirkungen der Nichtbeachtung einer Richtlinie auf eine bestimmte Gruppe von Anwendern mit Behinderungen beziehen. Dies ermöglicht es Autoren, eine fundierte Entscheidung zu den wichtigsten Richtlinien für ihre jeweilige Situation zu treffen. Darüber hinaus wird der Begriff *Barrierefreiheit unterstützt* eingeführt. Auf diese Weise können Autoren Entscheidungen darüber treffen, wie Webtechnologien am besten verwendet werden können, die möglicherweise nicht vollständig barrierefrei sind, oder Benutzer müssen möglicherweise über bestimmte Hilfstechnologien und/oder Browser verfügen, um von den Funktionen für Barrierefreiheit zu profitieren.
 
 Diese Ziele haben die Struktur von WCAG 2.1 wesentlich beeinflusst.
 
@@ -66,7 +66,7 @@ Zur Erklärung:
 * Die Richtlinien sind von 1.1 bis 4.1 nummeriert, wobei die erste Zahl dem übergeordneten Prinzip entspricht.
 * Jede Richtlinie besteht aus einem oder mehreren **Erfolgskriterien**.
 * Erfolgskriterien werden als Aussagen geschrieben, die für eine bestimmte Web-Seite entweder `True` oder `False` sind.
-* Erfolgskriterien können entweder/oder Auswahlmöglichkeiten oder Ausnahmen enthalten; Situationen, in denen die Erfolgskriterien nicht erfüllt werden müssen.
+* Erfolgskriterien können Entweder/Oder-Entscheidungen oder Ausnahmen vorsehen, d. h. Situationen, in denen die Erfolgskriterien nicht erfüllt sein müssen.
 * Erfolgskriterien sind gemäß der übergeordneten Richtlinie und dem Prinzip von 1.1.1 bis 4.1.1 nummeriert. Sie haben auch einen Kurznamen, der zur besseren Orientierung die Absicht des Kriteriums zusammenfasst. Beispielsweise heißt das Erfolgskriterium [1.1.1 Nichttextlicher Inhalt](https://www.w3.org/TR/WCAG/#non-text-content).
 * Zu den Erfolgskriterien gehört eine Liste zugehöriger **Techniken** (siehe unten).
 

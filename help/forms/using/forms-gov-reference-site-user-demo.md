@@ -6,8 +6,8 @@ docset: aem65
 exl-id: 288d5459-bc69-4328-b6c9-4b4960bf4977
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2475'
-ht-degree: 58%
+source-wordcount: '2477'
+ht-degree: 99%
 
 ---
 
@@ -74,11 +74,11 @@ Die folgenden Gruppen sind ebenfalls enthalten:
 
 1. **Stellvertretend agieren**: Definierte Benutzer und Gruppen in AEM Demo.
 1. **Schaltfläche**: Farbige Rechtecke oder umkreiste Pfeile für die Navigation.
-1. **Klicks**: Um eine Aktion im Benutzerverlauf auszuführen.
-1. **Links**: Oben im Hauptmenü auf der Site &quot;We.Gov&quot;.
+1. **Klicken**: Um eine Aktion in der Benutzergeschichte auszuführen.
+1. **Links**: Befinden sich oben im Hauptmenü auf der Site We.Gov.
 1. **Benutzeranweisungen**: Eine Reihe numerischer Schritte, die beim Navigieren durch die Benutzergeschichte ausgeführt werden müssen.
 1. **Forms Portal**: *https://&lt;aemserver>:&lt;port>/content/we-gov/formsportal.html*
-1. **Mobilansicht**:We.Gov-Benutzer , um eine Mobile-Ansicht mit einem Größenangepassten Browser zu replizieren.
+1. **Mobilansicht**: We.Gov-Benutzerin bzw. -Benutzer, um eine Mobilansicht mit einem Browser mit angepasster Größe zu replizieren.
 1. **Desktop-Ansicht**: We.gov-Benutzer, um Demo auf einem Laptop oder Desktop anzuzeigen.
 1. **Formular für Vorbildschirme**: Formular auf der Startseite der Seite We.Gov.
 1. **Adaptives Formular**: Antragsformular für die Anmeldung für die Demo We.gov.
@@ -106,7 +106,7 @@ Die folgenden Gruppen sind ebenfalls enthalten:
 1. Anmelden mit:
    * **Benutzer**: camila.santos
    * **Kennwort:** password
-1. Wählen Sie auf der Hauptseite Forms > Forms &amp; Documents > AEM Forms We.gov Forms > AFC.
+1. Wählen Sie auf der Hauptseite „Formulare“ > „Formulare und Dokumente“ > „AEM Forms We.gov Forms“ > „AFC“.
 1. Camila lädt das PDF auf AEM Forms hoch.
 
    ![Formular hochladen](assets/aftia-upload-form.jpg)
@@ -115,9 +115,9 @@ Die folgenden Gruppen sind ebenfalls enthalten:
 
    >[!NOTE]
    >
-   >Die Einstellungen in AFC sind für den Endbenutzer vorkonfiguriert, was bedeutet, dass sie nicht geändert werden sollten.
+   >Die Einstellungen in AFC sind für Endbenutzerinnen und Endbenutzer vorkonfiguriert, was bedeutet, dass sie nicht geändert werden sollten.
 
-   * **Optional**: Wenn Sie das Thema Accessible Ultramarine verwenden möchten, klicken Sie einfach auf das Thema Adaptives Formular angeben und wählen Sie das Thema Accessible-Ultramarine aus, das in der Liste der Optionen angezeigt wird.
+   * **Optional**: Wenn Sie das Thema „Accessible Ultramarine“ verwenden möchten, klicken Sie einfach auf „Adaptives Formularthema angeben“ und wählen Sie das Thema „Accessible-Ultramarine“ aus, das in der Liste der Optionen angezeigt wird.
 
    ![Konvertierung starten](assets/aftia-start-conversion.jpg)
 
@@ -129,7 +129,7 @@ Die folgenden Gruppen sind ebenfalls enthalten:
 
    ![Konvertierung prüfen](assets/aftia-review-conversion.jpg)
 
-1. Anschließend beginnt Campaign mit der Bearbeitung des Formulars und wählt im Dropdown-Menü Bedienfeldlayout die Option Stammbereich > Bearbeiten (Schraubenschlüssel) > Registerkarten oben aus und markiert das Kontrollkästchen.
+1. Anschließend beginnt Camilla mit der Bearbeitung des Formulars und wählt Stammbedienfeld > Bearbeiten (Schraubenschlüssel) > wählt dann Registerkarten aus dem Dropdown-Menü des Bedienfeld-Layouts > wählt dann das Kontrollkästchen.
 
    ![Eigenschaften überprüfen](assets/aftia-review-properties.jpg)
 
@@ -139,28 +139,28 @@ Die folgenden Gruppen sind ebenfalls enthalten:
 
 ### Formulardatenmodell und Datenquellen (Camila) {#data-sources}
 
-**Dieser Abschnitt**: Nachdem das Dokument konvertiert wurde und ein adaptives Formular erzeugt, muss Camila das adaptive Formular mit einer Datenquelle verbinden.
+**Dieser Abschnitt**: Nachdem das Dokument konvertiert und ein adaptives Formular erzeugt wurde, muss Camila das adaptive Formular mit einer Datenquelle verbinden.
 
 1. Camila öffnet die Eigenschaften für das Formular, das in [automatische Formular-Konvertierung - We.Gov](#automated-forms-conversion-wegov) konvertiert wurde.
 
 1. Camila wählt dann Formularmodell > Wählt das Formulardatenmodell aus dem Dropdown-Menü > Wählt We.gov Enrollment FDM aus der Liste der Optionen aus.
 
-1. Klicken Sie auf Speichern und schließen.
+1. Klicken Sie auf „Speichern und schließen“.
 
    ![FDM-Auswahl](assets/aftia-select-fdm.jpg)
 
-1. Camila klickt auf die **output** Ordner, wählt das adaptive Formular aus und klickt auf **Bearbeiten** , um das ausgefüllte We.Gov-Formular zu öffnen.
-1. Camila wählt ein Feld im adaptiven Formular aus und klickt auf ![Symbol &quot;Konfigurieren&quot;](assets/configure-icon.svg) und erstellt die Bindung mit den Entitäten des Formulardatenmodells mithilfe der **Bindungsverweis** -Feld. Camila wiederholt diesen Schritt für alle Felder im adaptiven Formular.
+1. Camila klickt auf den **Ausgabeordner**, wählt das adaptive Formular aus und klickt auf **Bearbeiten**, um das ausgefüllte We.Gov-Formular zu öffnen.
+1. Camila wählt ein Feld im adaptiven Formular aus, klickt auf das ![Symbol zum Konfigurieren](assets/configure-icon.svg) und erstellt die Bindung mit den Entitäten des Formulardatenmodells über das Feld **Bindungsverweis**. Camila wiederholt diesen Schritt für alle Felder im adaptiven Formular.
 
 ### Prüfung der Barrierefreiheit von Formularen (Camila) {#form-accessibility-testing}
 
 Camila überprüft auch, ob die erstellten Inhalte korrekt erstellt wurden und gemäß den Unternehmensstandards vollständig zugänglich sind.
 
-1. Camila klickt auf die **output** Ordner, wählt das adaptive Formular aus und klickt auf **Vorschau** , um das ausgefüllte We.Gov-Formular zu öffnen.
+1. Camila klickt auf den **Ausgabeordner**, wählt das adaptive Formular aus und klickt auf **Vorschau**, um das ausgefüllte We.Gov-Formular zu öffnen.
 
 1. Sie öffnet die Registerkarte Audit im Chrome Developer Tool.
 
-1. Führt eine Barrierefreiheitsprüfung durch, um das adaptive Formular zu überprüfen.
+1. Sie führt eine Barrierefreiheitsprüfung durch, um das adaptive Formular zu validieren.
 
    ![Prüfung der Zugänglichkeit](assets/aftia-accessibility.jpg)
 
@@ -176,13 +176,13 @@ Camila überprüft auch, ob die erstellten Inhalte korrekt erstellt wurden und g
    1. **Benutzer**: aya.tan
    1. **Kennwort:** password
 
-1. Ändern Sie die Größe des Browser-Fensters oder verwenden Sie den Emulator des Browsers, um die Größe eines Mobilgeräts zu replizieren.
+1. Ändern Sie die Größe des Browser-Fensters oder verwenden Sie den Emulator des Browsers, um eine Mobilgerätegröße zu replizieren.
 
 ### We.Gov-Website (Aya) {#aya-user-story-we-gov-website}
 
 ![Fiktiver Benutzer](/help/forms/using/assets/aya_tan_new-1.png)
 
-**Dieser Abschnitt**: Aya ist ein Staatsbürger und hört von einem Freund, dass sie berechtigt sein kann, einen Dienst von einer Regierungsstelle zu erhalten. Aya navigiert von ihrem Mobiltelefon zur We.Gov-Website, um mehr über Dienste zu erfahren, für die sie berechtigt ist.
+**Dieser Abschnitt**: Aya ist eine Staatsbürgerin und hört von einer Freundin, dass sie möglicherweise berechtigt ist, eine Dienstleistung von einer Regierungsstelle zu erhalten. Aya navigiert von ihrem Mobiltelefon zur We.Gov-Website, um mehr über Dienste zu erfahren, für die sie berechtigt ist.
 
 ### We.Gov Pre-Screener (Aya) {#aya-user-story-we-gov-pre-screener}
 
@@ -194,10 +194,10 @@ Aya beantwortet einige Fragen, um ihre Eignung zu bestätigen, indem sie ein kur
 
    >[!NOTE]
    >
-   >Wenn der Benutzer mehr als 200.000 USD pro Jahr verdient, sind diese nicht berechtigt.
+   >Wenn die Person mehr als 200.000 USD pro Jahr verdient, ist sie nicht berechtigt.
 
-1. Klicks **Bin ich berechtigt?**.
-1. Klicks **Jetzt anwenden** um fortzufahren.
+1. Klicken Sie auf **Bin ich berechtigt?**.
+1. Klicken Sie auf **Jetzt anwenden**, um fortzufahren.
 
    ![Jetzt anwenden](/help/forms/using/assets/apply_now_link.png)
 
@@ -205,7 +205,7 @@ Aya beantwortet einige Fragen, um ihre Eignung zu bestätigen, indem sie ein kur
 
 Aya stellt fest, dass sie berechtigt ist, und beginnt mit dem Ausfüllen ihres Antrags auf ihrem Mobilgerät, um einen Service anzufordern.
 
-Aya muss einige Dokumente zu Hause überprüfen, bevor sie den Antrag auf Dienstanfrage abschließen kann. Sie speichert und beendet das Programm auf ihrem mobilen Gerät.
+Aya muss einige Dokumente zu Hause überprüfen, bevor sie den Antrag für die Service-Anfrage ausführen kann. Sie speichert und beendet das Programm auf ihrem mobilen Gerät.
 
 **Benutzeranweisungen:**
 
@@ -235,14 +235,14 @@ Aya muss einige Dokumente zu Hause überprüfen, bevor sie den Antrag auf Dienst
 
 ## Desktop-Demo {#desktop-demo}
 
-**Dieser Abschnitt**: Zurück zu Hause hat Aya die benötigten Informationen gefunden und setzt das Programm von ihrem Desktop aus fort. Aya navigiert zum Online-Forms-Portal, um ihre Anwendung wiederaufzunehmen. Mit einer einfachen Anpassung können Agenturen auch automatisch einen Link generieren und per E-Mail versenden, um das Programm wiederaufzunehmen.
+**Dieser Abschnitt**: Zurück zu Hause hat Aya die benötigten Informationen gefunden und setzt das Programm von ihrem Desktop aus fort. Aya navigiert zum Online-Formularportal, um ihren Antrag wiederaufzunehmen. Mit einer einfachen Anpassung können Agenturen auch automatisch einen Link generieren und per E-Mail versenden, um das Programm wiederaufzunehmen.
 
 ### Fortsetzung des adaptiven Formulars (Aya) {#aya-user-story-continued-adaptive-form}
 
 **Benutzeranweisungen:**
 
 1. Navigieren Sie zu *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html*
-1. Wählen Sie in der Navigationsleiste **Online-Dienste**.
+1. Klicken Sie in der Navigationsleiste auf **Online-Services**.
 1. Wählen Sie im Bedienfeld „Formularentwürfe“ den vorhandenen „Registrierungsantrag für Gesundheitsleistungen“ aus.
 
    ![Registrierungsantrag für Gesundheitsleistungen](/help/forms/using/assets/enrollment_application.png)
@@ -251,19 +251,19 @@ Aya muss einige Dokumente zu Hause überprüfen, bevor sie den Antrag auf Dienst
 
    **Benutzeranweisungen:**
 
-1. Klicken Sie mit der rechten Maustaste auf Kreis-CTA , um zum nächsten Abschnitt zu wechseln.
+1. Klicken Sie mit rechts auf den CTA im Kreis, um zum nächsten Abschnitt zu wechseln.
 
    ![CTA im rechten Kreis](/help/forms/using/assets/right_circle_cta_new.png)
 
-   Das Formular wird bis zum letzten Eintrag von Aya ausgefüllt. Aya hat alle ihre Informationen eingegeben und ist bereit zum Senden.
+   Das Formular wird bis zum letzten Eintrag von Aya vorausgefüllt. Aya hat alle ihre Informationen eingegeben und ist bereit zum Senden.
 
    ![Senden des adaptiven Formulars](/help/forms/using/assets/submit_adaptive_form.png)
 
    >[!NOTE]
    >
-   >Wenn Aya das Telefonnummernfeld ausfüllt, muss sie es als fortlaufende 11-stellige Zahl ohne Bindestriche, Leerzeichen oder Bindestriche ausfüllen.
+   >Wenn Aya das Telefonnummernfeld ausfüllt, muss sie die Nummer als fortlaufende 11-stellige Zahl ohne Leerzeichen oder Bindestriche angeben.
 
-   Nach dem Senden erhält Aya eine Dankeseite. Optional erhält Aya auch eine E-Mail, die sie öffnen kann, um das Datensatzdokument elektronisch mit Adobe Sign zu unterzeichnen.
+   Nach dem Absenden erhält Aya eine Dankeseite. Optional erhält sie auch eine E-Mail, die sie zum elektronischen Unterzeichnen des Datensatzdokuments mit Adobe Sign öffnen kann.
 
 ### Optional: Adobe Sign (Aya) {#adobe-sign}
 
@@ -276,9 +276,9 @@ Aya muss einige Dokumente zu Hause überprüfen, bevor sie den Antrag auf Dienst
 
 **Benutzeranweisungen:**
 
-1. Überprüfen **Ich stimme zu**.
-1. Klicks **Accept**.
-1. Blättern Sie bis zum Ende des überprüften Dokuments.
+1. Markieren Sie **Ich stimme zu**.
+1. Klicken Sie auf **Akzeptieren**.
+1. Scrollen Sie bis zum Ende des überprüften Dokuments.
 1. Klicken Sie auf die hervorgehobene gelbe Registerkarte, damit Sie das Dokument signieren können.
 
    ![Dokument unterschreiben](/help/forms/using/assets/sign_document_new.png) ![Testdokument unterschreiben](/help/forms/using/assets/sign_test_document.png)
@@ -294,7 +294,7 @@ Aya muss einige Dokumente zu Hause überprüfen, bevor sie den Antrag auf Dienst
 **Benutzeranweisungen:**
 
 1. Navigieren Sie zu *https://&lt;aemserver>:&lt;port>/aem/start.html*
-1. Klicken Sie auf das Benutzersymbol (obere rechte Ecke) und verwenden Sie die **Abmelden** oder die **Identität annehmen als** Menüoption, wenn Sie derzeit mit einem Administrator angemeldet sind.
+1. Klicken Sie auf das Benutzersymbol (oben rechts) und verwenden Sie die Menüoption **Abmelden** oder **Stellvertretend agieren**, wenn Sie derzeit mit einer administrativen Benutzerin oder einem administrativen Benutzer angemeldet sind.
 
    1. Anmelden mit:
 
@@ -303,24 +303,24 @@ Aya muss einige Dokumente zu Hause überprüfen, bevor sie den Antrag auf Dienst
 
    1. Oder stellvertretend agieren:
 
-      1. Typ `George` im **Identität annehmen als** -Feld.
+      1. Geben Sie `George` in das Feld **Stellvertretend agieren** ein.
 
       1. Klicken Sie auf „OK“, um stellvertretend zu agieren.
 
-1. Klicken Sie oben rechts auf das Symbol Benachrichtigung (Glocke).
-1. Klicks **Alle anzeigen** , um zum Posteingang zu navigieren.
-1. Öffnen Sie im Posteingang die neueste **Antragsüberprüfung für gesundheitliche Vorteile** Aufgabe.
+1. Klicken Sie oben rechts auf das Symbol „Benachrichtigung“ (Glocke).
+1. Klicken Sie auf **Alle anzeigen**, um zum Posteingang zu navigieren.
+1. Öffnen Sie im Posteingang die neueste Aufgabe **Überprüfung des Antrags auf Gesundheitsleistungen**.
 
    ![Überprüfung des Antrags auf Gesundheitsleistungen](/help/forms/using/assets/health_benefits.png)
 
-### Optional: AEM Inbox &amp; MS® Dynamics (George) {#george-user-story-aem-inbox-and-ms-dynamics}
+### Optional: AEM-Posteingang und MS® Dynamics (George) {#george-user-story-aem-inbox-and-ms-dynamics}
 
-Dank Datenintegrationen und automatisierten Workflows wird die Aya-Anwendung zusammen mit einem CRM-Datensatz angezeigt, der beim Senden der Daten automatisch generiert wurde.
+Dank der Datenintegration und der automatisierten Workflows wird der Antrag von Aya zusammen mit einem CRM-Eintrag angezeigt, der bei der Übermittlung der Daten automatisch erstellt wurde.
 
 **Benutzeranweisungen:**
 
 1. Öffnen Sie das schreibgeschützte adaptive Formular und prüfen Sie es.
-1. Klicks **Open MS® Dynamics** um den MS® Dynamics Datensatz in einem neuen Fenster zu öffnen.
+1. Klicken Sie auf die Schaltfläche **MS® Dynamics öffnen**, um den MS® Dynamics-Eintrag in einem neuen Fenster zu öffnen.
 1. Im CRM sehen Sie alle Informationen, die aktualisiert werden können.
 
    1. Optional können Sie einige Prüfungsnotizen direkt in Dynamics hinzufügen.
@@ -331,11 +331,11 @@ Dank Datenintegrationen und automatisierten Workflows wird die Aya-Anwendung zus
 
 ### Zurück zum AEM-Posteingang (George) {#george-user-story-back-to-aem-inbox}
 
-George genehmigt die Anwendung von Aya und dank eines vorhandenen automatisierten Workflows wird auch eine Bestätigungs-E-Mail an Aya gesendet.
+George genehmigt Ayas Antrag, und dank eines bestehenden automatisierten Workflows wird auch eine Bestätigungs-E-Mail an Aya gesendet.
 
 **Benutzeranweisungen:**
 
-1. Navigieren Sie zur oberen linken Ecke und klicken Sie auf **Genehmigen** um den Antrag zu genehmigen.
+1. Navigieren Sie zur linken oberen Ecke und klicken Sie auf **Genehmigen**, um den Antrag zu genehmigen.
 1. In dem Modal können Sie eine Nachricht für den CX-Lead hinterlassen.
 1. Klicken Sie auf Fertig.
 1. (Bürgerrolle) Öffnen Sie Ihren E-Mail-Client, um die an Aya gesendete E-Mail anzuzeigen.
@@ -346,14 +346,14 @@ George genehmigt die Anwendung von Aya und dank eines vorhandenen automatisierte
 
 ![Camila (CX-Lead)](/help/forms/using/assets/camila_santos-1.png)
 
-**Dieser Abschnitt:** Camila the CX Lead richtet mit Aya einen Willkommens-Telefonanruf ein, um zu erklären, wie sie Regierungsdienste nutzen kann, für die sie zugelassen ist.
+**Dieser Abschnitt:** Camila, der CX-Lead, führt ein Begrüßungstelefonat mit Aya, um ihr zu erklären, wie sie die staatlichen Dienstleistungen nutzen kann, die ihr genehmigt wurden.
 
-### (Optional) AEM Posteingang und MS® Dynamics {#camila-user-story-aem-inbox-ms-dynamics}
+### (Optional) AEM-Posteingang und MS® Dynamics {#camila-user-story-aem-inbox-ms-dynamics}
 
 **Benutzeranweisungen:**
 
 1. Navigieren Sie zu *https://&lt;aemserver>:&lt;port>/aem/start.html*
-1. Klicken Sie auf das Benutzersymbol (obere rechte Ecke) und verwenden Sie die **Abmelden** oder die **Identität annehmen als** Menüoption, wenn Sie derzeit mit einem Administrator angemeldet sind.
+1. Klicken Sie auf das Benutzersymbol (oben rechts) und verwenden Sie die Menüoption **Abmelden** oder **Stellvertretend agieren**, wenn Sie derzeit mit einer administrativen Benutzerin oder einem administrativen Benutzer angemeldet sind.
 
    1. Anmelden mit:
 
@@ -362,29 +362,29 @@ George genehmigt die Anwendung von Aya und dank eines vorhandenen automatisierte
 
    1. Oder stellvertretend agieren:
 
-      1. Typ `Camila` im **Identität annehmen als** -Feld.
+      1. Geben Sie `Camila` in das Feld **Stellvertretend agieren** ein.
 
       1. Klicken Sie auf „OK“, um stellvertretend zu agieren.
 
-1. Klicken Sie oben rechts auf das Symbol Benachrichtigung (Glocke).
-1. Klicks **Alle anzeigen** , um zum Posteingang zu navigieren.
-1. Öffnen Sie im Posteingang die neueste **Neue Kontaktgenehmigung** Aufgabe.
+1. Klicken Sie oben rechts auf das Symbol „Benachrichtigung“ (Glocke).
+1. Klicken Sie auf **Alle anzeigen**, um zum Posteingang zu navigieren.
+1. Öffnen Sie im Posteingang die letzte Aufgabe **Neue Kontaktgenehmigung**.
 
 ![Neue Kontaktgenehmigung](/help/forms/using/assets/new_contact_approval.png)
 
 **(Optional) Benutzeranweisungen:**
 
 1. Öffnen Sie das schreibgeschützte adaptive Formular und prüfen Sie es.
-1. Klicks **Open MS® Dynamics** um den MS® Dynamics Datensatz in einem neuen Fenster zu öffnen.
-1. Im CRM sehen Sie alle Informationen, die aktualisiert werden können.
+1. Klicken Sie auf die Schaltfläche **MS® Dynamics öffnen**, um den MS Dynamics-Eintrag in einem neuen Fenster zu öffnen.
+1. Im CRM können Sie alle Informationen sehen, die aktualisiert werden können.
 
-   1. Fügen Sie optional eine Aufruffaktivität direkt in Dynamics hinzu.
-   1. Öffnen Sie die **Tätigkeiten** Abschnitt.
-   1. Klicks **Neuer Telefonaufruf**.
+   1. Fügen Sie optional eine Aufrufaktivität direkt in Dynamics hinzu.
+   1. Öffnen Sie den Abschnitt **Aktivitäten**.
+   1. Klicken Sie auf **Neuer Telefonanruf**.
    1. Fügen Sie Telefonanrufdetails hinzu.
    1. Speichern und schließen Sie das Fenster.
 
-1. Navigieren Sie in AEM oberen linken Ecke und klicken Sie auf **Einsenden** , um den Antrag zu übermitteln.
+1. Wenn Sie wieder in AEM sind, navigieren Sie zur linken oberen Ecke und klicken Sie auf **Absenden**, um den Antrag einzureichen.
 1. Im Modal können Sie eine Nachricht hinterlassen.
 1. Klicken Sie auf Fertig.
 
@@ -401,9 +401,9 @@ George genehmigt die Anwendung von Aya und dank eines vorhandenen automatisierte
 1. Suchen und öffnen Sie die E-Mail mit dem Willkommenspaket.
 1. Scrollen Sie zur PDF-Anlage am Seitenende.
 1. Klicken Sie darauf, um die PDF-Anlage zu öffnen.
-1. Scrollen Sie in Ihrem E-Mail-Client nach oben und klicken Sie auf **Willkommenskit online anzeigen**.
+1. Scrollen Sie in Ihrem E-Mail-Client zurück nach oben und klicken Sie auf **Willkommenspaket online anzeigen**.
 
-   1. Dadurch wird die Webkanalversion desselben Dokuments geöffnet.
+   1. Dadurch wird die Web-Kanalversion desselben Dokuments geöffnet.
 
 1. Für einen Kurzverweis direkt auf das PDF:
 
@@ -425,7 +425,7 @@ George genehmigt die Anwendung von Aya und dank eines vorhandenen automatisierte
 
 1. Navigieren Sie zu Ihrem E-Mail-Client.
 1. Suchen und öffnen Sie die E-Mail mit der Verlängerungserinnerung.
-1. Klicks **Neue Anwendung einreichen** , damit Sie das adaptive Formular öffnen können.
+1. Klicken Sie auf **Neuen Antrag einreichen**, damit Sie das adaptive Formular öffnen können.
 
    1. Dieser Abschnitt ist absichtlich leer gelassen, um die Datenvorerfassung in Phase 2 zu unterstützen.
 
@@ -439,15 +439,15 @@ George genehmigt die Anwendung von Aya und dank eines vorhandenen automatisierte
 
 **Dieser Abschnitt**: Camila navigiert zur Seite „Datenquellen“, um die Daten zu überprüfen, die der Server in der Derby-Datenbank repliziert hat.
 
-1. Nachdem das Benutzererlebnis abgeschlossen und die Benutzereingabe abgeschlossen ist, navigiert Camila in AEM Forms zur Registerkarte Data Sources (**Forms** > **Datenintegrationen**)
+1. Sobald das Benutzererlebnis abgeschlossen ist und der Absendeprozess abgeschlossen wurde, navigiert Camila zur Registerkarte „Datenquellen“ in AEM Forms (**Formulare** > **Datenintegrationen**)
 
-1. Camila wählt dann AEM Forms We.gov FDM aus und bearbeitet dann die **We.gov Anmelde-FDM**.
+1. Camila wählt dann AEM Forms We.gov FDM aus und bearbeitet die **We.gov-Registrierungs-FDM**.
 
 1. Camila wählt dann den zu testenden **Kontakt** > **Dienst auslesen** aus.
 
    ![Kontakt Lesedienst](assets/aftia-contact-read-service.jpg)
 
-1. Camila stellt dann den Testdienst mit einer Kontakt-ID zur Verfügung und klickt dann auf **Test**. Zum Beispiel 1 oder 2, wenn Sie das Formular abgeschickt haben. Wenn Sie das Formular nicht gesendet haben, werden keine Daten zurückgegeben.
+1. Camila gibt dem Testdienst eine Kontakt-ID und klickt dann auf die Schaltfläche **Test**. Zum Beispiel 1 oder 2, wenn Sie das Formular abgeschickt haben. Wenn Sie das Formular nicht gesendet haben, werden keine Daten zurückgegeben.
 
    ![Kontaktieren des Lese-Services](assets/aftia-test-service.jpg)
 
@@ -477,30 +477,30 @@ George genehmigt die Anwendung von Aya und dank eines vorhandenen automatisierte
 
 ## (Optional) Analytics (Camila) {#analytics-cx-lead-camila}
 
-**Dieser Abschnitt:** Camila navigiert zu einem Dashboard, in dem sie die KPIs der Agentur sehen kann, z. B. die Prozentzahl der Bürger, die mit dem Ausfüllen eines Serviceanfrageformulars beginnen und den Vorgang abgebrochen haben, die durchschnittliche Zeitdauer von der Antragseinsendung bis zur Antwort auf eine Genehmigung/Ablehnung sowie Interaktionsstatistiken für die Nutzenhandbücher, die sie an Bürger gesendet hat.
+**Dieser Abschnitt:** Camila navigiert zu einem Dashboard, in dem sie die KPIs der Agentur sehen kann, z. B. die Prozentzahl der Bürgerinnen und Bürger, die mit dem Ausfüllen eines Antragsformulars für den Service begonnen und den Vorgang abgebrochen haben, die durchschnittliche Zeitdauer von der Antragseinsendung bis zur Genehmigung/Ablehnung und Interaktionsstatistiken für die Nutzenhandbücher, die sie an Bürgerinnen und Bürger gesendet hat.
 
 ### Sites-Reporting mit Adobe Analytics (Camila) {#camila-reviews-sites-reporting-we-gov-adobe-analytics}
 
 1. Navigieren Sie zu *https://&lt;aemserver>:&lt;port>/sites.html/content*
-1. Auswählen **AEM Forms We.Gov-Site** , um die Seiten der Site anzuzeigen.
-1. Wählen Sie eine der Seiten der Site aus (z. B. Startseite) und wählen Sie **Analytics und Recommendations**.
+1. Wählen Sie **AEM Forms We.Gov-Site** aus, um die Seiten der Site anzuzeigen.
+1. Wählen Sie eine der Seiten der Site aus (z. B. die Startseite) und wählen Sie **Analysen und Empfehlungen**.
 
    ![Analysen und Empfehlungen](/help/forms/using/assets/analytics_recommendation.jpg)
 
-1. Auf dieser Seite werden abgerufene Informationen aus Adobe Analytics angezeigt, die sich auf die AEM Sites-Seite beziehen (HINWEIS: Diese Informationen werden standardmäßig regelmäßig von Adobe Analytics aktualisiert und nicht in Echtzeit angezeigt).
+1. Auf dieser Seite werden abgerufene Informationen aus Adobe Analytics angezeigt, die sich auf die AEM Sites-Seite beziehen (HINWEIS: Diese Informationen werden regelmäßig von Adobe Analytics aktualisiert und nicht in Echtzeit angezeigt).
 
    ![Schlüsselmetriken von Adobe Analytics](/help/forms/using/assets/analytics_key_metrics.jpg)
 
-1. Zurück auf der Seitenansichtsseite (Zugriff in Schritt 3) können Sie die Seitenansichtsinformationen auch anzeigen, indem Sie die Anzeigeeinstellung ändern, um Elemente in anzuzeigen. **Listenansicht**.
-1. Suchen Sie die **Ansicht** Dropdown-Menü und wählen Sie **Listenansicht**.
+1. Zurück auf der Seite „Seitenansicht“ (die Sie in Schritt 3 aufgerufen haben) können Sie die Informationen der Seitenansicht auch anzeigen, indem Sie die Anzeigeeinstellung so ändern, dass Elemente in der **Listenansicht** angezeigt werden.
+1. Suchen Sie das Dropdown-Menü **Ansicht** und wählen Sie **Listenansicht** aus.
 
    ![Listenansicht im Dropdown-Menü „Ansicht“](/help/forms/using/assets/list_view_view_dropdown.jpg)
 
-1. Wählen Sie im selben Menü die Option **Anzeigeeinstellung** und wählen Sie die anzuzeigenden Spalten aus der **Analytics** Abschnitt.
+1. Wählen Sie im gleichen Menü die Option **Ansichtseinstellung** und anschließend im Abschnitt **Analysen** die Spalten aus, die angezeigt werden sollen.
 
    ![Konfigurieren der Spaltenanzeige](/help/forms/using/assets/view_setting_analytics.jpg)
 
-1. Klicks **Aktualisieren** , um die neuen Spalten verfügbar zu machen.
+1. Klicken Sie auf **Aktualisieren**, um die neuen Spalten verfügbar zu machen.
 
    ![Verfügbar machen neuer Spalten](/help/forms/using/assets/new_columns_available.jpg)
 
@@ -510,7 +510,7 @@ George genehmigt die Anwendung von Aya und dank eines vorhandenen automatisierte
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 
-1. Wählen Sie die **Registrierungsantrag für gesundheitliche Vorteile** adaptives Formular und wählen Sie die **Analysebericht** -Option.
+1. Wählen Sie das adaptive Formular **Registrierungsantrag für Gesundheitsleistungen** aus und klicken Sie auf die Option **Analytics-Bericht**.
 
    ![Registrierungsantrag für Gesundheitsleistungen](/help/forms/using/assets/analytics_report_benefits.jpg)
 

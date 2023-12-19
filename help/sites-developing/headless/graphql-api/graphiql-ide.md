@@ -5,7 +5,7 @@ exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '783'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -22,12 +22,12 @@ Eine Implementierung der standardmäßigen [GraphQL](https://graphql.org/learn/s
 >[!NOTE]
 >Sie müssen [Ihre Endpunkte](/help/sites-developing/headless/graphql-api/graphql-endpoint.md) im [Konfigurationsbrowser konfiguriert](/help/assets/content-fragments/content-fragments-configuration-browser.md) haben, bevor Sie die GraphiQL-IDE verwenden.
 
-Die **GraphiQL** Mit diesem Tool können Sie Ihre GraphQL-Abfragen testen und debuggen, indem Sie:
+Das **GraphiQL**-Tool erlaubt es Ihnen, Ihre GraphQL-Abfragen zu testen und zu debuggen, indem es Ihnen Folgendes ermöglicht:
 
 * Auswahl des **Endpunkts**, der der Sites-Konfiguration entspricht, die Sie für Ihre Abfragen verwenden möchten
 * Direkte Eingabe neuer Abfragen
 * Erstellen und Zugreifen auf **[Persistente Abfragen](/help/sites-developing/headless/graphql-api/persisted-queries.md)**
-* Führen Sie Ihre Abfragen aus, um die Ergebnisse sofort anzuzeigen
+* Ausführen von Abfragen mit sofortiger Anzeige der Ergebnisse
 * Verwalten von **Abfragevariablen**
 * Speichern und Verwalten von **Persistenten Abfragen**
 * Veröffentlichen oder Aufheben der Veröffentlichung von **Persistenten Abfragen** (z. B. nach/von `dev-publish`)
@@ -89,7 +89,7 @@ In beiden Fällen ist die Abfrage, die im Editor-Bereich angezeigt wird, die Abf
 
 <!-- more details needed here? -->
 
-Mit der GraphiQL-IDE können Sie auch Ihre [Abfragevariablen](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-variables).
+Mit der GraphiQL-IDE können Sie auch Ihre [Abfragevariablen](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-variables) verwalten.
 
 Beispiel:
 
@@ -140,7 +140,7 @@ Wenn Sie Ihre [persistierte Abfrage](/help/sites-developing/headless/graphql-api
 
 ## Kopieren der URL, um direkt auf die Abfrage zuzugreifen {#copy-url}
 
-Die **URL kopieren** -Option können Sie eine Abfrage simulieren, indem Sie die URL kopieren, die zum direkten Zugriff auf die beibehaltene Abfrage verwendet wird, und die Ergebnisse anzeigen. Diese kann dann zu Testzwecken verwendet werden, z. B. durch Zugriff in einem Browser:
+Mit der Option **URL kopieren** können Sie eine Abfrage simulieren, indem Sie die URL kopieren, mit der Sie direkt auf die persistente Abfrage zugreifen und die Ergebnisse sehen. Diese kann dann zu Testzwecken verwendet werden, z. B. durch Zugriff in einem Browser:
 
 <!--
   >[!NOTE]

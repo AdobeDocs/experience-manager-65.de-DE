@@ -5,7 +5,7 @@ exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '722'
-ht-degree: 88%
+ht-degree: 95%
 
 ---
 
@@ -39,7 +39,7 @@ Einige Verweise verfügen über dedizierte Datentypen (z. B. Inhaltsverweise und
 
 ## Inhaltsreferenzen {#content-references}
 
-Inhaltsreferenzen tun genau das - sie ermöglichen es Ihnen, auf beliebige andere Inhalte zu verweisen. Dadurch wird ein Browser geöffnet, in dem Sie das Inhaltselement auswählen können.
+Inhaltsverweise tun genau das – sie ermöglichen es Ihnen, auf beliebige andere Inhalte zu verweisen. Dadurch wird ein Browser geöffnet, in dem Sie das Inhaltselement auswählen können.
 
 ## Asset-/Medienverweise {#assets-media-references}
 
@@ -49,7 +49,7 @@ Mithilfe der Option **Asset einfügen** können Sie innerhalb eines Textblocks a
 
 ## Fragmentreferenzen {#fragment-references}
 
-Auch Fragmentverweise tun dies genau. Sie ermöglichen es Ihnen, auf ein anderes Fragment zu verweisen. Warum dies von Bedeutung ist, bedarf einer näheren Erläuterung.
+Fragmentverweise tun genau das – sie ermöglichen es Ihnen, auf ein anderes Fragment zu verweisen. Warum dies von Bedeutung ist, bedarf einer näheren Erläuterung.
 
 Bei Ihnen sind möglicherweise die folgenden Inhaltsfragmentmodelle definiert:
 
@@ -75,7 +75,7 @@ Als Autor sind Sie nicht für die Definition dieser Beziehungen verantwortlich (
 
 ### Bearbeiten verschachtelter Fragmente {#author-nested-fragment}
 
-Die Bearbeitung von Fragmentverweisen ist relativ einfach (obwohl das Feld normalerweise nicht als **Fragmentverweis** bezeichnet wird). Sie können den Verweis entweder direkt eingeben oder (wahrscheinlicher) das Ordnersymbol auswählen, um einen Browser zu öffnen, in dem Sie navigieren und das gewünschte Fragment auswählen können.
+Die Bearbeitung von Fragmentverweisen ist relativ einfach (obwohl das Feld normalerweise nicht als **Fragmentverweis** bezeichnet wird). Sie können den Verweis entweder direkt eingeben oder (wahrscheinlicher) auf das Ordnersymbol klicken, um einen Browser zu öffnen, in dem Sie navigieren und das gewünschte Fragment auswählen können.
 
 ![Inhaltsfragmente – Verweise](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 

@@ -5,7 +5,7 @@ exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '1336'
-ht-degree: 79%
+ht-degree: 88%
 
 ---
 
@@ -18,7 +18,7 @@ Erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und die Überse
 Im vorherigen Dokument der AEM Headless-Übersetzung-Tour, [Übersetzen von Inhalten](configure-connector.md), haben Sie gelernt, wie Sie mithilfe von AEM Übersetzungsprojekten Headless-Inhalte übersetzen können. Sie sollten jetzt:
 
 * Verstehen, was ein Übersetzungsprojekt ist.
-* Sie können Übersetzungsprojekte erstellen.
+* neue Übersetzungsprojekte erstellen können,
 * Übersetzungsprojekte verwenden können, um Ihre Headless-Inhalte zu übersetzen.
 
 Nun, da Ihre erste Übersetzung abgeschlossen ist, führt Sie dieser Artikel durch den nächsten Schritt zur Veröffentlichung dieser Inhalte und dazu, wie Sie Ihre Übersetzungen aktualisieren können, wenn sich die zugrunde liegenden Inhalte im Sprachstamm ändern.
@@ -47,7 +47,7 @@ Sobald Inhalte in der Autoreninstanz erstellt wurden, müssen sie in die Veröff
 
 ## Veröffentlichen der übersetzten Inhalte {#publishing}
 
-Sobald Sie mit dem Status Ihrer übersetzten Inhalte zufrieden sind, müssen diese veröffentlicht werden, damit Headless-Services sie nutzen können. Diese Aufgabe liegt nicht in der Verantwortung des Übersetzungsspezialisten, sondern wird hier dokumentiert, um den gesamten Workflow zu veranschaulichen.
+Sobald Sie mit dem Status Ihrer übersetzten Inhalte zufrieden sind, müssen diese veröffentlicht werden, damit Headless-Services sie nutzen können. Diese Aufgabe fällt normalerweise nicht in die Zuständigkeit der Übersetzungsspezialistin und des Übersetzungsspezialisten, sondern wird hier nur dokumentiert, um den gesamten Workflow zu veranschaulichen.
 
 >[!NOTE]
 >
@@ -80,20 +80,20 @@ Ihre übersetzten Headless-Inhalte sind jetzt veröffentlicht! Sie können jetzt
 >
 >Sie können bei der Veröffentlichung mehrere Elemente (d. h. mehrere Sprachordner) auswählen, um mehrere Übersetzungen gleichzeitig zu veröffentlichen.
 
-Es gibt zusätzliche Optionen bei der Veröffentlichung Ihrer Inhalte, z. B. die Planung einer Veröffentlichungszeit, was aber den Rahmen dieser Tour sprengen würde. Weitere Informationen finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) am Ende des Dokuments.
+Es gibt zusätzliche Optionen bei der Veröffentlichung Ihrer Inhalte, z. B. die Planung einer Veröffentlichungszeit, was aber den Rahmen dieser Tour sprengt. Weitere Informationen finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) am Ende des Dokuments.
 
 ## Aktualisieren Ihrer übersetzten Inhalte {#updating-translations}
 
 Übersetzen ist selten eine einmalige Angelegenheit. In der Regel fügen Ihre Inhaltsautoren regelmäßig Inhalte im Sprachstamm hinzu und ändern sie, nachdem die Erstübersetzung abgeschlossen ist. Dies bedeutet, dass Sie auch Ihre übersetzten Inhalte aktualisieren müssen.
 
-Spezifische Projektanforderungen definieren, wie oft Sie Ihre Übersetzungen aktualisieren müssen und welcher Entscheidungsprozess befolgt wird, bevor Sie eine Aktualisierung durchführen. Sobald Sie sich entschieden haben, Ihre Übersetzungen zu aktualisieren, ist der Prozess in AEM einfach. Da die ursprüngliche Übersetzung auf einem Übersetzungsprojekt basierte, gilt dies auch für alle Aktualisierungen.
+Spezifische Projektanforderungen definieren, wie oft Sie Ihre Übersetzungen aktualisieren müssen und welcher Entscheidungsprozess vor einer Aktualisierung befolgt wird. Sobald Sie sich entschieden haben, Ihre Übersetzungen zu aktualisieren, ist der Prozess selbst in AEM einfach. Da die ursprüngliche Übersetzung auf einem Übersetzungsprojekt basierte, gilt dies auch für alle Aktualisierungen.
 
 Der Prozess unterscheidet sich jedoch geringfügig, je nachdem, ob Sie sich für die automatische oder die manuelle Erstellung Ihres Übersetzungsprojekts entschieden haben.
 
 ### Aktualisieren eines automatisch erstellten Übersetzungsprojekts {#updating-automatic-project}
 
 1. Navigieren Sie zu **Navigation** > **Assets** > **Dateien**. Beachten Sie, dass Headless-Inhalte in AEM als Assets gespeichert werden. Diese werden auch als Inhaltsfragmente bezeichnet.
-1. Wählen Sie den Sprachstamm Ihres Projekts aus. In diesem Fall `/content/dam/wknd/en` ausgewählt ist.
+1. Wählen Sie den Sprachstamm Ihres Projekts aus. In diesem Fall wird `/content/dam/wknd/en` ausgewählt.
 1. Klicken Sie auf die Schienenauswahl und zeigen Sie die **Verweise** Bedienfeld.
 1. Klicks **Sprachkopien**.
 1. Aktivieren Sie das Kontrollkästchen **Sprachkopien**.
@@ -118,7 +118,7 @@ You see that a new job card was added to the project. In this example, another S
 ![Additional translation job added](assets/additional-translation-job.png)
 -->
 
-Sie werden feststellen, dass die auf der neuen Karte aufgelisteten Statistiken (Anzahl der Assets und Inhaltsfragmente) unterschiedlich sind. Dies liegt daran, dass AEM erkennt, was sich seit der letzten Übersetzung geändert hat, und nur den Inhalt enthält, der übersetzt werden muss. Dazu gehören die erneute Übersetzung aktualisierter Inhalte sowie die Erstübersetzung neuer Inhalte.
+Sie werden feststellen, dass die auf der neuen Karte aufgelisteten Statistiken (Anzahl der Assets und Inhaltsfragmente) unterschiedlich sind. Dies liegt daran, dass AEM erkennt, was sich seit der letzten Übersetzung geändert hat, und nur die Inhalte einschließt, die übersetzt werden müssen. Dazu gehören die erneute Übersetzung aktualisierter Inhalte sowie die Erstübersetzung neuer Inhalte.
 
 Von diesem Punkt an [beginnen und verwalten Sie Ihren Übersetzungsauftrag genauso wie den ursprünglichen Auftrag](translate-content.md#using-translation-project).
 

@@ -4,14 +4,14 @@ description: Versionshinweise zu Adobe Experience Manager Content and Commerce 2
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
 source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 67%
+source-wordcount: '1257'
+ht-degree: 97%
 
 ---
 
 # Übersicht über die GitHub-Version von Commerce Integration Framework
 
-## Releasedatum: November 2020
+## Veröffentlichungsdatum: November 2020
 
 | GitHub | Version | Detaillierte Versionshinweise |
 |:-------|:-----:|---------------------:|
@@ -21,13 +21,13 @@ ht-degree: 67%
 
 ### Neue Funktionen {#what-is-new-november}
 
-* Vorlagenvererbung, die einer bestimmten Kategorieseite hinzugefügt wurde. Diese Funktion verbessert die Effizienz der Unternehmensbenutzer, da sie es allen Unterkategorien ermöglicht, die Vorlage zu übernehmen, die für eine bestimmte oberste Kategorie erstellt wurde.
+* Vorlagenvererbung wurde zu einer bestimmten Kategorieseite hinzugefügt. Diese Funktion verbessert die Effizienz der Business-Anwenderinnen und -Anwender, da sie es ermöglicht, dass alle Unterkategorien die Vorlage übernehmen können, die für eine bestimmte übergeordnete Kategorie erstellt wurde.
 
-* Venia-Referenz-Storefront wurde aktualisiert, um Experience Fragment für die Fußzeile zu verwenden. Geschäftsbenutzer können die Fußzeile mit AEM Authoring-Tools bearbeiten.
+* Die Venia-Referenz-Storefront wurde aktualisiert, um ein Experience Fragment für die Fußzeile zu verwenden. Business-Anwenderinnen und -Anwender können die Fußzeile mit AEM-Erstellungs-Tools bearbeiten.
 
 ### Verbesserte Funktionen {#what-is-improved-november}
 
-* Die Checkout-Komponente wurde verbessert, um Käufern die Möglichkeit zu geben, in das Zielland zu gelangen, um Abrechnungs-/Versandadressen außerhalb der USA zuzulassen.
+* Die Checkout-Komponente wurde verbessert, um Käuferinnen und Käufern die Möglichkeit zu geben, das Zielland einzugeben, um Abrechnungs-/Versandadressen außerhalb der USA zuzulassen.
 
 * Die Navigationskomponente wurde erweitert, sodass sie die Adobe-Client-Datenschicht abzudeckt.
 
@@ -43,9 +43,9 @@ ht-degree: 67%
 
 ### Neue Funktionen {#what-is-new-october}
 
-* Eine neue Karussellkomponente für Kategorie wurde hinzugefügt, damit geschäftliche Benutzer diese Komponente per Drag-and-Drop auf AEM Inhaltsseiten einfügen können, um Inhaltsseiten mit Commerce-Daten anzureichern.
+* Eine neue Karussellkomponente für Kategorien wurde hinzugefügt, damit Business-Anwenderinnen und -Anwender diese Komponente per Drag-and-Drop auf AEM-Inhaltsseiten ziehen können, um Inhaltsseiten mit Commerce-Daten anzureichern.
 
-* CIF-Kernkomponenten wurden erweitert, sodass sie die Adobe-Client-Datenschicht durch Senden von Commerce-Daten einbinden. Die Adobe Client-Datenschicht ist eine standardisierte Methode zur Erfassung von Daten und zur Kommunikation der Daten mit Digital Analytics- und Reporting-Servern. Weitere Informationen finden Sie unter [Adobe Client-Datenschicht](https://github.com/adobe/adobe-client-data-layer/wiki).
+* Die CIF-Kernkomponenten wurden erweitert, sodass sie nun die Adobe-Client-Datenschicht durch Senden von Commerce-Daten einbinden. Die Adobe Client-Datenschicht ist eine standardisierte Methode zur Erfassung von Daten und zur Weitergabe der Daten für digitale Analysen und Reporting-Server. Weitere Informationen finden Sie unter [Adobe Client-Datenschicht](https://github.com/adobe/adobe-client-data-layer/wiki).
 
 * Produktdetailseiten und Produktlistenseiten wurden erweitert, um SEO-Metadaten (wie Titel, Meta-Beschreibung, Meta-Schlüsselwörter) automatisch auszufüllen, die über die Adobe Commerce-Benutzeroberfläche für Admins konfiguriert wurden.
 
@@ -65,9 +65,9 @@ ht-degree: 67%
 
 * Funktionen für Kontoinformationen wurden hinzugefügt, damit Käufer personenbezogene Daten aktualisieren können.
 
-* Für die Seiten Produktliste und Suchergebnisse wird ein Stil für verzögertes Laden der Seitenumbrüche implementiert, damit Entwickler diese Komponenten so konfigurieren können, dass die Schaltfläche &quot;Mehr laden&quot;als Paginierungsstil angezeigt wird.
+* Ein Seitenumbruchstil mit verzögertem Laden wurde für die Produktlisten- und Suchergebnisseiten implementiert, damit Entwickelnde diese Komponenten so konfigurieren können, dass die Schaltfläche „Mehr laden“ als Seitenumbruchstil angezeigt wird.
 
-* Die Seite zum Zurücksetzen des Kennworts wurde implementiert, damit Käufer ihr Kontokennwort aktualisieren/zurücksetzen können.
+* Die Seite zum Zurücksetzen des Kennworts wurde implementiert, damit Käuferinnen und Käufer ihr Kontokennwort aktualisieren/zurücksetzen können.
 
 * Unterstützung für gebündelte Produktarten ist verfügbar.
 
@@ -77,7 +77,7 @@ ht-degree: 67%
 
 * Mehrere Fehlerbehebungen.
 
-## Releasedatum: August 2020
+## Veröffentlichungsdatum: August 2020
 
 | GitHub | Version | Detaillierte Versionshinweise |
 |:-------|:-----:|---------------------:|
@@ -91,13 +91,13 @@ ht-degree: 67%
 
 * Die Registerkarte „Commerce“ wurde in den Seiteneigenschaften hinzugefügt, um CIF-Eigenschaften für Landingpages und Experience Fragments anzuzeigen.
 
-* Die Searchbar-Komponente wurde verbessert, um die Option zur Anzeige von Platzhaltertext zu unterstützen.
+* Die Suchleistenkomponente wurde verbessert, indem sie jetzt die Option zur Anzeige von Platzhaltertext unterstützt
 
 * Zusätzliche Flexibilität bei Produkt- und Produkt-Teaser-Komponenten zur Unterstützung einfacher Anpassungen.
 
-* Flexibilität wurde hinzugefügt, um die standardmäßige CTA-Schaltflächenbeschriftung für die Produkt-Teaser-Komponente zu überschreiben und zu konfigurieren.
+* Mehr Flexibilität, um die standardmäßige CTA-Schaltflächenbeschriftung für die Produkt-Teaser-Komponente zu überschreiben und zu konfigurieren.
 
-* Die Komponente Adressbuch wurde verbessert, damit registrierte Käufer beim Checkout die im Adressbuch gespeicherten Versand- und Rechnungsadressen auswählen können.
+* Die Adressbuchkomponente wurde verbessert, um registrierten Käuferinnen und Käufern die Möglichkeit zu geben, beim Checkout im Adressbuch gespeicherte Versand- und Rechnungsadressen auszuwählen.
 
 * Mehrere Fehlerbehebungen.
 
@@ -115,7 +115,7 @@ ht-degree: 67%
 
 * Der CIF-Archetyp wurde mit dem AEM-Projektarchetyp zusammengeführt. Verwenden Sie für neue Projekte den [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype) als Ausgangspunkt.
 
-* Die Verwaltung des Adressbuchs wurde hinzugefügt, damit angemeldete Benutzer ihre Adressen verwalten können.
+* Die Adressbuchverwaltung wurde hinzugefügt, damit angemeldete Benutzende ihre Adressen verwalten können.
 
 * Die Benutzeroberfläche der CIF-Cloud-Konfiguration unterstützt das Veröffentlichen/Rückgängigmachen der Veröffentlichung von Aktionen.
 
@@ -139,7 +139,7 @@ ht-degree: 67%
 
 Dies ist die erste Version der CIF-Kernkomponenten, die von Adobe Experience Manager unterstützt wird.
 
-* Auf der Seite Produktliste und Suchergebnisse wurde eine Produktsortierung hinzugefügt, damit Käufer anhand von Relevanz, Preis und Produktname sortieren können.
+* Die Produktsortierung wurde auf den Produktlisten- und Suchergebnisseiten hinzugefügt, damit Käuferinnen und Käufer nach Relevanz, Preis und Produktname sortieren können.
 
 * Kategoriefilterung wurde als Facette hinzugefügt, damit Käufer nach Kategorie filtern können.
 
@@ -147,9 +147,9 @@ Dies ist die erste Version der CIF-Kernkomponenten, die von Adobe Experience Man
 
 ### Verbesserte Funktionen {#what-is-improved-june}
 
-* Auf den Seiten Produktliste und Suchergebnis wird die Gesamtanzahl der Elemente angezeigt. Die Anzahl der Elemente wird aktualisiert, wenn der Käufer Filter anwendet.
+* Die Produktlistenseite und die Suchergebnisseite zeigen die Gesamtanzahl der Elemente an. Die Anzahl der Elemente wird aktualisiert, wenn Käuferinnen und Käufer Filter anwenden.
 
-* Die facettierte Suche wird durch die Kombination einer Kategorieabfrage mit einer Produktsuchabfrage optimiert.
+* Die Facettensuche wurde durch die Kombination von Kategorieabfrage und Produktsuchabfrage optimiert.
 
 * Die Kategorie-/Produktauswahl für die Seitenvorschau berücksichtigt „cq:catalogPath“.
 
@@ -169,13 +169,13 @@ Dies ist die erste Version der CIF-Kernkomponenten, die von Adobe Experience Man
 
 * Die Unterstützung für die Facettensuche wurde der Suchseite und der Produktlistenseite hinzugefügt, damit Käufer Suchergebnisse anhand von Produktfacetten filtern können.
 
-* Neuer OSGi-Dienst wurde hinzugefügt, um PDP/PLP-URLs für SEO-Zwecke anzupassen. Weitere Informationen finden Sie unter [Dokumentation](https://github.com/adobe/aem-core-cif-components).
+* Ein neuer OSGi-Service wurde hinzugefügt, um PDP/PLP-URLs für SEO-Zwecke anzupassen. Weitere Informationen finden Sie in der [Dokumentation](https://github.com/adobe/aem-core-cif-components).
 
 * Die Produktbindung wird automatisch erstellt, wenn eine Cloud-Konfiguration erstellt wird.
 
 ### Verbesserte Funktionen
 
-* Die Cloud-Konfiguration wurde erweitert, um die Aktion &quot;Ordner erstellen&quot;anzuzeigen.
+* Die Cloud-Konfiguration wurde erweitert, um die Aktion „Ordner erstellen“ anzuzeigen.
 
 * Es wurden mehrere Fehlerbehebungen vorgenommen.
 
@@ -189,7 +189,7 @@ Dies ist die erste Version der CIF-Kernkomponenten, die von Adobe Experience Man
 
 ### Neue Funktionen {#what-is-new-april}
 
-* Die Konfigurationseinstellungen für CIF Connector sind vereinheitlicht und vereinfacht. Weitere Details finden Sie unter [Erste Schritte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=de) oder [Neue AEM-CIF-Projekteinrichtung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=de).
+* Konfigurationseinstellungen für den CIF-Connector wurden vereinheitlicht und vereinfacht. Weitere Details finden Sie unter [Erste Schritte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=de) oder [Neue AEM-CIF-Projekteinrichtung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=de).
 
 ### Verbesserte Funktionen {#what-is-improved-april}
 
@@ -217,13 +217,13 @@ Dies ist die erste Version der CIF-Kernkomponenten, die von Adobe Experience Man
 
 * Suchunterstützung wurde in der Kategorieauswahl hinzugefügt.
 
-* Paginierung in der Komponente &quot;Kategorieliste&quot;, um große Katalogsätze zu unterstützen.
+* Seitenumbruch in der Kategorielistenkomponente, um große Katalogsätze zu unterstützen.
 
 ### Verbesserte Funktionen {#what-is-improved-february}
 
 * Der Warenkorb wurde um die Anzeige von Rabatten erweitert.
 
-* Produktdetails, Produkt-Teaser und Produktlisten-Komponenten unterstützen die Anzeige erweiterter Preisinformationen.
+* Komponenten für Produktdetails, Produkt-Teaser und Produktlisten unterstützen die Anzeige erweiterter Preisinformationen.
 
 * Die Produktsuche in der Produktkonsole und in der Produktauswahl wurde verbessert.
 
@@ -241,11 +241,11 @@ Dies ist die erste Version der CIF-Kernkomponenten, die von Adobe Experience Man
 
 * Experience-Fragment-Komponente (XF) wurde hinzugefügt, damit Kunden XF in ihrem Commerce-Projekt erstellen können.
 
-* Ändern Sie die in meinem Konto verfügbare Passwortfunktion.
+* Die Kennwortfunktionalität wurde geändert, die in „Mein Konto“ verfügbar ist.
 
 * i18n-Unterstützung für Server-seitige AEM-CIF-Kernkomponenten.
 
-* Eine generisch verwandte Produktkomponente ist verfügbar.
+* Generische Komponente für verwandte Produkte ist verfügbar.
 
 ### Verbesserte Funktionen {#what-is-improved-january}
 
@@ -255,6 +255,6 @@ Dies ist die erste Version der CIF-Kernkomponenten, die von Adobe Experience Man
 
 * Option zum Ausblenden/Anzeigen von Titel/Banner in der Produktlistenkomponente.
 
-* Ziehen Sie die Funktion per Drag-and-Drop auf die Komponente &quot;Produktkarussell&quot;.
+* Die Drag-and-Drop-Funktion wurde auf die Produktkarussellkomponente angewendet.
 
 * Es wurden mehrere Fehlerbehebungen vorgenommen.

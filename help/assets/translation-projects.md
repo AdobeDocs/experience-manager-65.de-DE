@@ -7,8 +7,8 @@ feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
 source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1867'
-ht-degree: 94%
+source-wordcount: '1889'
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ Lösen Sie zum Erstellen einer Sprachkopie einen der folgenden Sprachkopie-Workf
 Den Workflow für das Erstellen und Übersetzen verwenden Sie, um erstmals Sprachkopien für eine bestimmte Sprache zu erstellen. Der Workflow bietet die folgenden Optionen:
 
 * Nur Struktur erstellen.
-* Erstellen eines Übersetzungsprojekts.
+* Erstellen Sie ein Übersetzungsprojekt.
 * Hinzufügen zu einem vorhandenen Übersetzungsprojekt.
 
 ### Nur Struktur erstellen {#create-structure-only}
@@ -55,7 +55,7 @@ Verwenden Sie die Option **[!UICONTROL Nur Struktur erstellen]**, um eine Zielor
 
    ![Einblenden von Assets](assets/reveal-in-assets.png)
 
-### Erstellen eines Übersetzungsprojekts {#create-a-new-translation-project}
+### Erstelle ein Übersetzungsprojekt {#create-a-new-translation-project}
 
 Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Sprachstamm der Sprache kopiert, in die übersetzt werden soll. Je nach den von Ihnen gewählten Optionen wird ein Übersetzungsprojekt für die Assets in der Projektkonsole erstellt. Abhängig von den Einstellungen kann das Übersetzungsprojekt manuell gestartet oder automatisch ausgeführt werden, sobald das Übersetzungsprojekt erstellt wurde.
 
@@ -66,7 +66,7 @@ Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Spra
 
 1. Klicken Sie unten auf **[!UICONTROL Erstellen und Übersetzen]**.
 
-1. Aus dem **[!UICONTROL Zielsprachen]** wählen Sie die Sprachen aus, für die Sie eine Ordnerstruktur erstellen möchten.
+1. Wählen Sie in der Liste **[!UICONTROL Zielsprachen]** die Sprache, für die Sie eine Ordnerstruktur erstellen möchten.
 
 1. Wählen Sie aus der Liste **[!UICONTROL Projekt]** die Option **[!UICONTROL Neues Übersetzungsprojekt erstellen]**.
 
@@ -117,7 +117,7 @@ Wenn Sie diese Option verwenden, wird der Übersetzungs-Workflow für Assets aus
 1. Klicken Sie unter **[!UICONTROL Kopien]** auf **[!UICONTROL Sprachkopien]**. Eine Liste der verfügbaren Übersetzungskopien wird angezeigt.
 1. Klicken Sie unten auf **[!UICONTROL Erstellen und Übersetzen]**.
 
-1. Aus dem **[!UICONTROL Zielsprachen]** wählen Sie die Sprachen aus, für die Sie eine Ordnerstruktur erstellen möchten.
+1. Wählen Sie in der Liste **[!UICONTROL Zielsprachen]** die Sprache, für die Sie eine Ordnerstruktur erstellen möchten.
 
 1. Wählen Sie aus der Liste **[!UICONTROL Projekt]** die Option **[!UICONTROL Zu vorhandenem Übersetzungsprojekt hinzufügen]**, um den Übersetzungs-Workflow für den Ordner auszuführen.
 
@@ -164,10 +164,10 @@ Wenn Sie diese Option verwenden, wird der Übersetzungs-Workflow für Assets aus
 
 Führen Sie diesen Workflow aus, um eine weitere Gruppe von Assets zu übersetzen und in eine Sprachkopie für ein bestimmtes Gebietsschema aufzunehmen. In diesem Fall werden die übersetzten Assets zu dem Zielordner hinzugefügt, der bereits zuvor übersetzte Assets enthält. Je nach Auswahl der Optionen wird ein Übersetzungsprojekt erstellt oder ein vorhandenes Übersetzungsprojekt für die neuen Assets aktualisiert. Der Workflow zum Aktualisieren der Sprachkopien umfasst die folgenden Optionen:
 
-* Erstellen eines Übersetzungsprojekts
+* Erstelle ein Übersetzungsprojekt
 * Hinzufügen zu einem vorhandenen Übersetzungsprojekt
 
-### Erstellen eines Übersetzungsprojekts {#create-a-new-translation-project-1}
+### Erstelle ein Übersetzungsprojekt {#create-a-new-translation-project-1}
 
 Wenn Sie diese Option verwenden, wird ein Übersetzungsprojekt für die Gruppe von Assets erstellt, für die Sie eine Sprachkopie aktualisieren möchten.
 

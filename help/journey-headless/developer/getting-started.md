@@ -5,7 +5,7 @@ exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '2998'
-ht-degree: 91%
+ht-degree: 96%
 
 ---
 
@@ -70,15 +70,15 @@ Inhaltsfragmentmodelle definieren die Struktur der Daten und Inhalte, die Sie in
 
 ### Inhaltsfragmente {#content-fragments}
 
-Mit Inhaltsfragmenten können Sie seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen. Sie ermöglichen die Vorbereitung von Inhalten, die an mehreren Orten und über mehrere Kanäle hinweg verwendet werden können.
+Mit Inhaltsfragmenten können Sie seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen. Außerdem können Sie Inhalte zur Verwendung an mehreren Orten und über mehrere Kanäle hinweg vorbereiten.
 
-Inhaltsfragmente enthalten strukturierten Inhalt und können im JSON-Format bereitgestellt werden.
+Inhaltsfragmente enthalten strukturierte Inhalte und können im JSON-Format bereitgestellt werden.
 
 ### GraphQL- und REST-APIs {#apis}
 
 Um Inhalte „headless“ zu ändern, bietet AEM zwei robuste APIs.
 
-* Mit der GraphQL-API können Sie Anforderungen für den Zugriff auf Inhaltsfragmente und deren Bereitstellung erstellen.
+* Mit der GraphQL-API können Sie Anfragen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellen.
 * Mit der Assets-REST-API können Sie Inhaltsfragmente (und andere Assets) erstellen und ändern.
 
 In einem späteren Teil der AEM Headless-Tour erfahren Sie mehr über diese APIs und deren Verwendung. Oder sehen Sie die [Zusätzliche Ressourcen](#additional-resources) unten finden Sie weitere Dokumentationen.
@@ -139,9 +139,9 @@ Für ein erfolgreiches Projekt ist es wichtig, nicht nur die Anforderungen des P
 
 ### Umfang {#scope}
 
-Es ist sehr wichtig, einen klar definierten Umfang für das Projekt zu haben. Der Umfang informiert über die Akzeptanzkriterien und ermöglicht die Festlegung einer Definition des Erfüllten.
+Es ist sehr wichtig, einen klar definierten Umfang für das Projekt zu haben. Der Umfang gibt Auskunft über die Akzeptanzkriterien und ermöglicht es Ihnen, eine Definition von „Fertig“ festzulegen.
 
-Die erste Frage, die Sie sich stellen müssen, lautet: „Was versuche ich mit AEM Headless zu erreichen?“ Die Antwort sollte im Allgemeinen sein, dass Sie eine Erlebnisanwendung haben oder in Zukunft haben werden, die Sie mit Ihren eigenen Entwicklungs-Tools erstellt haben, nicht mit AEM. Bei dieser Erlebnisanwendung kann es sich um eine mobile App, eine Website oder eine andere Erlebnisanwendung für Endverbraucher handeln. Das Ziel der Verwendung von AEM Headless besteht darin, Ihre Erlebnisanwendung mit Inhalten zu versorgen, die in AEM erstellt, gespeichert und verwaltet werden, mit hochmodernen APIs, die AEM Headless aufrufen, um Inhalte oder sogar vollständige CRUD-Inhalte direkt aus Ihrer Erlebnisanwendung abzurufen. Wenn dies nicht das ist, was Sie tun möchten, sollten Sie [zurück zur AEM-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=de) gehen und den Abschnitt finden, der besser zu dem passt, was Sie erreichen möchten.
+Die erste Frage, die Sie sich stellen müssen, lautet: „Was versuche ich mit AEM Headless zu erreichen?“ Die Antwort sollte im Allgemeinen sein, dass Sie eine Erlebnis-Anwendung haben oder in Zukunft haben werden, die Sie mit Ihren eigenen Entwicklungs-Tools erstellt haben, nicht in Verbindung mit AEM. Bei dieser Erlebnisanwendung kann es sich um eine mobile App, eine Website oder eine andere Erlebnisanwendung für Endverbraucher handeln. Das Ziel der Verwendung von AEM Headless besteht darin, Ihre Erlebnisanwendung mit Inhalten zu versorgen, die in AEM erstellt, gespeichert und verwaltet werden, mit hochmodernen APIs, die AEM Headless aufrufen, um Inhalte oder sogar vollständige CRUD-Inhalte direkt aus Ihrer Erlebnisanwendung abzurufen. Wenn dies nicht das ist, was Sie tun möchten, sollten Sie [zurück zur AEM-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=de) gehen und den Abschnitt finden, der besser zu dem passt, was Sie erreichen möchten.
 
 ### Rollen und Zuständigkeiten {#roles-responsibilities}
 
@@ -156,7 +156,7 @@ Die Rollen für jedes einzelne Projekt werden variieren, aber wichtige Rollen, d
 
 Der Administrator ist für die grundlegende Einrichtung und Konfiguration Ihres Systems verantwortlich. Beispielsweise richtet der Administrator Ihre Organisation im User Management-System von Adobe ein, das auch Identity Management System (IMS) genannt wird. Der Administrator ist der erste Benutzer des Unternehmens, der per E-Mail eine Einladung von Adobe erhält, sobald Ihre Organisation von Adobe im IMS erstellt wurde. Der Administrator kann sich dann beim IMS anmelden und Benutzer oder andere Rollen hinzufügen.
 
-Sobald die Benutzer vom Administrator konfiguriert wurden, erhalten sie die Berechtigung zum Zugriff auf alle AEM Ressourcen, um ihre Arbeit als Beitragende für die Bereitstellung der Erlebnisanwendung mit AEM Headless durchzuführen.
+Sobald die Benutzenden von Admins konfiguriert wurden, erhalten sie die Berechtigungen für den Zugriff auf alle AEM-Ressourcen, um ihre Arbeit als Mitwirkende für die Bereitstellung der Erlebnis-Anwendung mit AEM Headless zu erledigen.
 
 Der Administrator sollte der Benutzer sein, der AEM einrichtet und die Laufzeitumgebung vorbereitet, damit [Inhaltsautoren](#content-author) Inhalte erstellen und aktualisieren können und [Entwickler](#developer) APIs verwenden können, die Inhalte für ihre Erlebnisanwendungen abrufen oder ändern.
 
@@ -255,7 +255,7 @@ Um Traffic und Traffic-Muster zu verstehen, beginnen Sie mit dem Sammeln dessen,
 
 #### Aktualisierungshäufigkeit {#update-frequency}
 
-Oft haben verschiedene Bereiche von Erlebnissen unterschiedliche Häufigkeiten von Inhaltsaktualisierungen. Um CDN- und Cache-Konfigurationen anpassen zu können, ist es wichtig, dies zu verstehen. Dies ist auch ein wichtiger Input für die [Inhaltsarchitekten](#content-architects), da sie Modelle zur Darstellung Ihrer Inhalte entwerfen. Ziehen Sie dies in Betracht:
+Oft haben verschiedene Bereiche von Erlebnissen unterschiedliche Häufigkeiten von Inhaltsaktualisierungen. Es ist wichtig, dass Sie hierüber informiert sind, damit Sie CDN- und Cache-Konfigurationen optimieren können. Dies ist auch ein wichtiger Input für die [Inhaltsarchitekten](#content-architects), da sie Modelle zur Darstellung Ihrer Inhalte entwerfen. Ziehen Sie dies in Betracht:
 
 * Müssen bestimmte Inhaltstypen nach einem bestimmten Zeitraum ablaufen?
 * Gibt es Elemente, die benutzerspezifisch sind und daher nicht zwischengespeichert werden können?
@@ -277,9 +277,9 @@ Es wird zwar empfohlen, zum nächsten Teil der Headless-Development-Tour voranzu
 
 * [Headful und Headless in AEM](/help/sites-developing/headful-headless.md): Eine vollständige Diskussion der Headless-Integrationsebenen, die in AEM verfügbar sind.
 
-* Ein [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
+* [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
 
-* [AEM Headless Übersetzungs-Tour](/help/journey-headless/translation/overview.md) – Diese Dokumentations-Tour vermittelt Ihnen ein umfassendes Verständnis der Headless-Technologie sowie davon, wie AEM Headless Inhalte bereitstellt und wie Sie sie übersetzen können.
+* [AEM Headless-Übersetzungs-Tour](/help/journey-headless/translation/overview.md) – Diese Dokumentations-Tour vermittelt Ihnen ein umfassendes Verständnis der Headless-Technologie sowie davon, wie AEM Headless Inhalte bereitstellt und wie Sie sie übersetzen können.
 
 * [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de): Nutzen Sie diese praxisnahen Tutorials, um herauszufinden, wie Sie die verschiedenen Optionen für die Bereitstellung von Inhalten an Headless-Endpunkte mit AEM verwenden können, und wählen Sie aus, was für Sie am besten geeignet ist.
 * [Headless Content Management mit GraphQL-APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses): In diesem Kurs erhalten Sie einen Überblick über die in AEM implementierte GraphQL-API. Eine Authentifizierung über Adobe ID ist erforderlich.
@@ -295,4 +295,4 @@ Es wird zwar empfohlen, zum nächsten Teil der Headless-Development-Tour voranzu
 * [GraphQL-API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md): Technische Dokumentation, in der erläutert wird, wie Anfragen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellt werden.
 * [Assets-REST-API](/help/assets/assets-api-content-fragments.md): Technische Dokumentation, in der erläutert wird, wie Inhaltsfragmente (und andere Assets) erstellt und geändert werden.
 * [Persistente Abfragen](/help/sites-developing/headless/graphql-api/persisted-queries.md): Technische Dokumentation zu persistenten Abfragen in AEM.
-* Die [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
+* Das [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)

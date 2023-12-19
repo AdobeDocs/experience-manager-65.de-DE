@@ -1,6 +1,6 @@
 ---
 title: In Flex Workspace nicht verfügbare Funktionen von AEM Forms Workspace
-description: AEM Forms Workspace ist eine Innovation, die über den Flex-basierten Arbeitsbereich hinausgeht. Erfahren Sie mehr über die Unterschiede bei Funktionen.
+description: Der Arbeitsbereich von AEM Forms ist eine Innovation, die über den Flex-basierten Arbeitsbereich hinausgeht. Erfahren Sie mehr über die Unterschiede bei Merkmalen und Funktionen.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,7 +9,7 @@ exl-id: 4235e0ce-f1c4-432e-b486-2d72c390f320
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 46%
+ht-degree: 97%
 
 ---
 
@@ -21,15 +21,15 @@ Im Folgenden erhalten Sie einen kurzen Überblick über diese Funktionen. Weiter
 
 ## Unterstützung eines Übersichtsbereichs für Aufgaben {#support-for-a-summary-pane-for-tasks}
 
-Wenn Sie eine Aufgabe öffnen, können Sie vor dem Öffnen des Formulars in einem Bereich mithilfe einer externen URL Informationen über die Aufgabe anzeigen. Mithilfe dieser Aufgabenzusammenfassung können zusätzliche und wichtige Informationen zu einer Aufgabe angezeigt werden, die für den Endbenutzer von AEM Forms Workspace nützlich sind. Siehe [Zusammenfassungsseite anzeigen](/help/forms/using/displaying-information-task-summary-pane.md) für die Implementierungsdetails.
+Wenn Sie eine Aufgabe öffnen, können Sie vor dem Öffnen des Formulars in einem Bereich mithilfe einer externen URL Informationen über die Aufgabe anzeigen. Mithilfe dieser Aufgabenzusammenfassung können zusätzliche und wichtige Informationen zu einer Aufgabe angezeigt werden, die für den Endbenutzer von AEM Forms Workspace nützlich sind. Implementierungsdetails finden Sie unter [Anzeigen der Zusammenfassungsseite](/help/forms/using/displaying-information-task-summary-pane.md).
 
-## Unterstützung für Manager View {#support-for-manager-view}
+## Unterstützung für die Manager-Ansicht {#support-for-manager-view}
 
-Diese Funktion ermöglicht es Managern, auf Aufgaben ihrer Berichte zuzugreifen oder diese zu bearbeiten. Manager können in der Organisationshierarchie auch die Aufgaben ihrer indirekten Berichte detaillierter anzeigen. Siehe [Verwalten von Aufgaben in einer hierarchischen Struktur mithilfe der Manageransicht](/help/forms/using/tasks-organizational-hierarchy-using-manager.md) für weitere Details.
+Diese Funktion ermöglicht es Managerinnen und Managern, auf Aufgaben ihrer Berichte zuzugreifen oder diese zu bearbeiten. Managerinnen und Manager können in der Organisationshierarchie auch die Aufgaben ihrer indirekt unterstellten Mitarbeitenden detaillierter anzeigen. Weitere Details finden Sie unter [Verwalten von Aufgaben in einer hierarchischen Struktur mithilfe der Manager-Ansicht](/help/forms/using/tasks-organizational-hierarchy-using-manager.md).
 
 ## Unterstützung für Benutzeravatare {#support-for-user-avatars}
 
-Bilder oder Avatare für angemeldete Benutzer können nun rechts oben in AEM Forms Workspace angezeigt werden. In der Manageransicht können auch Benutzeravatare von Managern und deren Mitarbeitern angezeigt werden. Siehe [Anzeigen des Benutzeravatars](/help/forms/using/displaying-user-avatar.md) für weitere Details.
+Bilder oder Avatare für angemeldete Benutzer können nun rechts oben in AEM Forms Workspace angezeigt werden. In der Manageransicht können auch Benutzeravatare von Managern und deren Mitarbeitern angezeigt werden. Weitere Details finden Sie unter [Anzeigen des Benutzeravatars](/help/forms/using/displaying-user-avatar.md).
 
 ## Unterstützung für die Integration von Drittanbieteranwendungen {#support-for-integrating-third-party-applications}
 
@@ -37,4 +37,4 @@ Bilder oder Avatare für angemeldete Benutzer können nun rechts oben in AEM For
 
 ## Unterstützung für benutzerdefinierte Aufgabenerstellung basierend auf dem Gerät des Endanwenders {#support-for-custom-task-rendering-based-on-end-user-s-device}
 
-AEM Forms Workspace unterstützt die HTML-Wiedergabe von XDP-Formularen. Diese Unterstützung, die in einem Wiedergabeprozess verwendet wird, der basierend auf dem Gerät oder dem Benutzeragenten zu verschiedenen Ausgabeformaten von XDP weiterleitet, ermöglicht es Benutzern, ein XDP-Formular als HTML auf den Mobilgeräten und als PDF auf einem Desktop anzuzeigen. Dies hilft bei der Bereitstellung einer nahtlosen Abdeckung von Process Management für Benutzer, die in verschiedenen Umgebungen auf verschiedenen Geräten arbeiten.
+AEM Forms Workspace unterstützt die HTML-Wiedergabe von XDP-Formularen. Die Verwendung dieser Unterstützung in einem Rendering-Prozess, der basierend auf dem Gerät oder dem User-Agent zu verschiedenen Ausgabeformaten von XDP weiterleitet, ermöglicht es Benutzenden, ein XDP-Formular als HTML auf den Mobilgeräten und als PDF auf einem Desktop anzuzeigen. Dies hilft bei der Bereitstellung einer nahtlosen Abdeckung für das Prozess-Management für Benutzende, die in verschiedenen Umgebungen auf verschiedenen Geräten arbeiten.

@@ -1,6 +1,6 @@
 ---
 title: Verfassen von kontextsensitiver Hilfe für Formularfelder
-description: Mit AEM Forms können Sie kontextbezogene Hilfe zu Feldern und Bereichen in adaptiven Formularen als Text oder Rich Media, einschließlich Videos, hinzufügen.
+description: Mit AEM Forms können Sie kontextbezogene Hilfe zu Feldern und Panels in adaptiven Formularen als Text oder Rich Media, einschließlich Videos, hinzufügen.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
@@ -9,23 +9,23 @@ exl-id: 6569bfba-9af5-4060-8640-e51d7af46614
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Verfassen von kontextsensitiver Hilfe für Formularfelder{#authoring-in-context-help-for-form-fields}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/using/create-an-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 ## Einführung {#introduction}
 
-Es gibt Situationen, in denen sich Endbenutzer, die ein Formular ausfüllen, nicht sicher sind, wie Informationen in ein bestimmtes Formularfeld einzugeben sind. Um solche Probleme zu beheben, unterstützen adaptive Formulare das Hinzufügen von Text oder kontextbezogener Rich-Hilfe zu einem Formularfeld. Dies erleichtert das Ausfüllen des Formulars und vermeidet potenzielle Uneindeutigkeiten für Endbenutzende.
+Es gibt Situationen, in denen sich Endbenutzer, die ein Formular ausfüllen, nicht sicher sind, wie Informationen in ein bestimmtes Formularfeld einzugeben sind. Für solche Fälle bieten adaptive Formulare die Möglichkeit, Text oder dynamische kontextbezogene Hilfe zu einem Formularfeld hinzuzufügen. Dadurch werden das Ausfüllen des Formulars erleichtert und potenzielle Uneindeutigkeiten für Endbenutzende vermieden.
 
-Dieser Artikel erläutert, wie Autorinnen und Autoren von Formularen kontextbezogene Hilfe beim Authoring adaptiver Formulare hinzufügen können.
+Dieser Artikel erläutert, wie Autorinnen und Autoren von Formularen kontextbezogene Hilfe beim Erstellen adaptiver Formulare hinzufügen können.
 
 ## Hinzufügen kontextbezogener Hilfe {#add-in-context-help}
 
-Sie können kontextbezogene Hilfe mit den folgenden Optionen im Abschnitt „Hilfe-Inhalt“ der Registerkarte „Eigenschaften“ in der Seitenleiste angeben.
+Sie können kontextbezogene Hilfe mit den folgenden Optionen im Abschnitt „Hilfeinhalt“ der Registerkarte „Eigenschaften“ in der Seitenleiste angeben.
 
 * [Kurzbeschreibung](../../forms/using/authoring-in-field-help.md#p-short-description-p)
 * [Lange Beschreibung](../../forms/using/authoring-in-field-help.md#p-long-description-p)
@@ -38,7 +38,7 @@ Sie können kontextbezogene Hilfe mit den folgenden Optionen im Abschnitt „Hil
 
 ### Kurzbeschreibung {#short-description}
 
-Das Feld „Kurzbeschreibung“ ermöglicht die Angabe schneller und kurzer Hinweise zum Ausfüllen eines Formularfelds. Der im Feld „Kurzbeschreibung“ eingegebene Text wird als QuickInfo beim Bewegen der Maus über das Feld angezeigt.
+Das Feld „Kurzbeschreibung“ ermöglicht die Angabe schneller und kurzer Hinweise zum Ausfüllen eines Formularfelds. Der im Feld „Kurzbeschreibung“ eingegebene Text wird beim Bewegen des Mauszeigers über das Feld als QuickInfo angezeigt.
 
 ![Kurzbeschreibung zum Hinzufügen von kontextbezogener Hilfe für Formularfelder](assets/tooltip.png)
 
@@ -54,7 +54,7 @@ Sie können das Feld „Lange Beschreibung“ verwenden, um langen Text anzugebe
 
 ![Hinzufügen von Rich-Media als kontextbezogene Hilfe für Formularfelder](assets/long-descriptions.png)
 
-Wenn Sie eine lange Beschreibung hinzufügen, wird das Symbol **„?“** neben dem Feld angezeigt. Durch Klicken auf das Symbol wird der Inhalt angezeigt, der im Abschnitt „Lange Beschreibung“ hinzugefügt wurde.
+Wenn Sie eine lange Beschreibung hinzufügen, wird das Symbol **?** neben dem Feld angezeigt. Durch Klicken auf dieses Symbol wird der Inhalt angezeigt, der im Abschnitt „Lange Beschreibung“ hinzugefügt wurde.
 
 ![Beispiel für kontextbezogene Rich-Media-Hilfe](assets/photoshop.png)
 
@@ -64,6 +64,6 @@ Zusätzlich zur kontextbezogenen Hilfe für Formularfelder können Sie auf der R
 
 ![Hinzufügen von kontextbezogener Hilfe für einen Formularbereich](assets/panel-level-help.png)
 
-Wenn Sie Hilfe für ein Panel hinzufügen, wird das Symbol **„?“** neben der Beschreibung des Panels angezeigt. Durch Klicken auf das Symbol wird der Inhalt angezeigt, der im Abschnitt „Hilfe-Inhalt“ des Dialogfelds zum Bearbeiten des Bereichs hinzugefügt wurde.
+Wenn Sie Hilfe für ein Panel hinzufügen, wird das Symbol **?** neben der Beschreibung des Panels angezeigt. Durch Klicken auf das Symbol wird der Inhalt angezeigt, der im Abschnitt „Hilfeinhalt“ des Dialogfelds zur Bearbeitung des Panels hinzugefügt wurde.
 
 ![Beispiel für kontextbezogene Hilfe auf Formularbereichsebene](assets/photoshop-1.png)

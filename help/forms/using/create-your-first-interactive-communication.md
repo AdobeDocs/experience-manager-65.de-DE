@@ -9,7 +9,7 @@ exl-id: b20bb719-5686-466e-8dde-279b8471bfe3
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '976'
-ht-degree: 27%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ Erfahren Sie, wie Sie Ihre erste interaktive Kommunikation erstellen.
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
 
-Interaktive Kommunikation zentralisiert und verwaltet die Erstellung, Zusammenstellung und Bereitstellung sicherer, personalisierter und interaktiver Schriftstücke wie Geschäftskorrespondenz, Dokumente, Mitteilungen, Marketing-E-Mails, Rechnungen und Willkommenskits. Interaktive Kommunikation kann über zwei Kanäle bereitgestellt werden: Druck und Web. Der Druckkanal wird verwendet, um PDF- und Papiernachrichten zu erstellen, während der Webkanal zur Bereitstellung von Online-Erlebnissen verwendet wird.
+Durch interaktive Kommunikation lassen sich die Erstellung, Zusammenstellung und Bereitstellung von sicheren, personalisierten und interaktiven Korrespondenzen wie Geschäftskorrespondenz, Dokumenten, Aufstellungen, Marketing-Mails, Rechnungen und Willkommens-Sets zentralisieren und verwalten. Die interaktive Kommunikation kann über zwei Kanäle bereitgestellt werden: den Druckkanal und den Web-Kanal. Der Druckkanal wird zum Erstellen von PDF-Dokumenten und papierbasierter Kommunikation verwendet, der Web-Kanal hingegen zum Bereitstellen von Online-Erlebnissen.
 
-Dieses Tutorial bietet ein End-to-End-Framework zum Erstellen einer interaktiven Kommunikation. Das Tutorial ist in einen Anwendungsfall und mehrere Handbücher unterteilt. Jedes Handbuch hilft Ihnen beim Erstellen von Funktionen, die als Bausteine für die Erstellung einer interaktiven Kommunikation verwendet werden.
+Dieses Tutorial bietet ein End-to-End-Framework zum Erstellen einer interaktiven Kommunikation. Das Tutorial ist in einen Anwendungsfall und mehrere Handbücher unterteilt. Jedes Handbuch enthält dabei Informationen zum Erstellen von Funktionen, die als Bausteine für eine interaktive Kommunikation dienen.
 
 Die folgende Abbildung zeigt die Bausteine, die zum Erstellen einer interaktiven Kommunikation erforderlich sind.
 
@@ -31,17 +31,17 @@ Am Ende dieses Tutorials können Sie Folgendes:
 
 * Erstellen von Bausteinen (Formulardatenmodell, Dokumentfragmente und Vorlagen)
 * Erstellen einer interaktiven Kommunikation
-* Interaktive Kommunikation testen und veröffentlichen
+* Testen und Veröffentlichen einer interaktiven Kommunikation
 
 ## Nutzungsszenario {#use-case}
 
-Die Journey beginnt mit dem Erlernen des Anwendungsfalls:
+Das Ganze beginnt mit dem Kennenlernen des Anwendungsfalls:
 
-Ein Telekommunikationsbetreiber sendet monatliche Rechnungen an die Kunden über die E-Mail. Die Rechnung ist eine interaktive Kommunikation. Die E-Mail enthält:
+Ein Telekommunikationsanbieter sendet monatliche Rechnungen per E-Mail an seine Kundinnen und Kunden. Bei diesen Rechnungen handelt es sich um eine interaktive Kommunikation. Die entsprechenden E-Mails enthalten Folgendes:
 
-* Eine kennwortgeschützte PDF, in diesem Tutorial als Druckkanal bezeichnet. Es enthält Kundendetails, Rechnungsdetails, Zusammenfassung der Gebühren, bequeme Zahlungsmodi der Rechnung und Nutzungsdetails.
-* Ein Link zur Webversion der Rechnung, in diesem Tutorial als Webkanal bezeichnet. Die Webversion der Rechnung bietet zusätzlich zu den Details in der PDF-Version eine grafische Darstellung der Nutzungsdetails und personalisierter Angebote auf Basis von Adobe Target. Die Web-Version enthält auch ein Online-Zahlungsformular. Es hilft, Online-Zahlungen zu tätigen, ohne die IC zu verlassen.
-* Ein Link zu Mehrwertdiensten wie Online-Speicher, Musikabonnements und On-Demand-Videoabonnements.
+* eine kennwortgeschützte PDF, in diesem Tutorial als Druckkanal bezeichnet. Diese enthält Kundendetails, Rechnungsdetails, eine Übersicht der Gebühren, bequeme Zahlungsmodi für die Rechnung und Nutzungsdetails.
+* einen Link zur Web-Version der Rechnung, in diesem Tutorial als Web-Kanal bezeichnet. Die Webversion der Rechnung bietet zusätzlich zu den Details in der PDF-Version eine grafische Darstellung der Nutzungsdetails und personalisierter Angebote auf Basis von Adobe Target. Die Web-Version enthält auch ein Online-Zahlungsformular. So können Online-Zahlungen getätigt werden, ohne die interaktive Kommunikation zu verlassen.
+* einen Link zu Mehrwert-Services wie Online-Speicher, Musikabonnements und Videoabonnements auf Abruf.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -54,7 +54,7 @@ Ein Telekommunikationsbetreiber sendet monatliche Rechnungen an die Kunden über
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-Der erste Schritt bei der Planung einer interaktiven Kommunikation besteht darin, den Inhalt der interaktiven Kommunikation fertigzustellen. Nach Abschluss des Inhalts müssen Sie ihn analysieren, um die verschiedenen Asset-Typen zu identifizieren, die zum Erstellen der interaktiven Kommunikation erforderlich sind.
+Der erste Schritt bei der Planung einer interaktiven Kommunikation besteht darin, den Inhalt der interaktiven Kommunikation fertigzustellen. Anschließend müssen Sie den Inhalt analysieren, um die verschiedenen Asset-Typen zu ermitteln, die zum Erstellen der interaktiven Kommunikation erforderlich sind.
 
 **Ziele:**
 
@@ -72,16 +72,16 @@ So erstellen Sie eine Anatomie für die interaktive Kommunikation mit den folgen
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Mit einem Formulardatenmodell können Sie eine interaktive Kommunikation mit unterschiedlichen Datenquellen verbinden. Zum Beispiel AEM Benutzerprofil, RESTful-Webdienste, SOAP-basierte Webdienste, OData-Dienste und relationale Datenbanken. Ein Formulardatenmodell ist ein einheitliches Datendarstellungsschema von Geschäftsentitäten und Diensten, die in verbundenen Datenquellen verfügbar sind. Sie können das Formulardatenmodell mit einer interaktiven Kommunikation verwenden, um Daten aus verbundenen Datenquellen abzurufen. Weitere Informationen zum Formulardatenmodell finden Sie unter [AEM Forms-Datenintegration](/help/forms/using/data-integration.md).
+Mit einem Formulardatenmodell können Sie eine interaktive Kommunikation mit unterschiedlichen Datenquellen verbinden, z. B. mit AEM-Benutzerprofilen, RESTful-Web-Diensten, SOAP-basierten Web-Diensten, OData-Diensten und relationalen Datenbanken. Ein Formulardatenmodell ist ein einheitliches Datenrepräsentationsschema von Geschäftseinheiten und Diensten, die in verbundenen Datenquellen verfügbar sind. Sie können das Formulardatenmodell mit einer interaktiven Kommunikation verwenden, um Daten aus verbundenen Datenquellen abzurufen. Weitere Informationen zum Formulardatenmodell finden Sie unter [AEM Forms-Datenintegration](/help/forms/using/data-integration.md).
 
 **Ziele:**
 
 * Konfigurieren der Datenbankinstanz (MySQL-Datenbank) als eine Datenquelle
-* Formulardatenmodell mit MySQL-Datenbank als Datenquelle erstellen
+* Erstellen des Formulardatenmodells mithilfe der MySQL-Datenbank als Datenquelle
 * Hinzufügen von Datenmodellobjekten zum Datenmodell
 * Konfigurieren der Lese- und Schreibdienste für Datenmodellobjekte
-* Erstellen von Verknüpfungen zwischen Datenmodellobjekten
-* Automatisch generierte Beispieldaten anzeigen
+* Erstellen von Verknüpfungen zwischen den Datenmodellobjekten
+* Anzeigen automatisch generierter Beispieldaten
 * Beispieldaten bearbeiten
 * Testen des Formulardatenmodells und der konfigurierten Dienste mit Testdaten
 
@@ -91,13 +91,13 @@ Mit einem Formulardatenmodell können Sie eine interaktive Kommunikation mit unt
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-Dokumentfragmente sind wiederverwendbare Komponenten einer Korrespondenz, die zum Erstellen einer interaktiven Kommunikation verwendet werden. Die Dokumentfragmente weisen die folgenden Typen auf: Text, Liste und Bedingung.
+Dokumentfragmente sind wiederverwendbare Komponenten einer Korrespondenz, die zum Erstellen einer interaktiven Kommunikation verwendet werden. Dokumentfragmente sind vom Typ „Text“, „Liste“ und „Bedingung“.
 
 **Ziele:**
 
-* Dokumentfragmente erstellen
+* Erstellen von Dokumentfragmenten
 * Erstellen von Variablen
-* Regeln erstellen und anwenden
+* Erstellen und Anwenden von Regeln
 
 [](/help/forms/using/create-document-fragments.md)
 
@@ -105,17 +105,17 @@ Dokumentfragmente sind wiederverwendbare Komponenten einer Korrespondenz, die zu
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-Um eine interaktive Kommunikation zu erstellen, müssen auf dem AEM-Server Vorlagen für Druck- und Webkanäle verfügbar sein.
+Für eine interaktive Kommunikation müssen auf dem AEM-Server Vorlagen für Druck- und Web-Kanäle verfügbar sein.
 
-Die Vorlagen für den Druckkanal werden in Adobe Forms Designer erstellt und auf den AEM hochgeladen. Diese Vorlagen können dann beim Erstellen einer interaktiven Kommunikation verwendet werden.
+Die Vorlagen für den Druckkanal werden in Adobe Forms Designer erstellt und auf den AEM-Server hochgeladen. Diese Vorlagen stehen dann zur Verfügung, wenn Sie eine interaktive Kommunikation erstellen.
 
-Die Vorlagen für den Webkanal werden in AEM erstellt. Vorlagenautoren und -administratoren können Webvorlagen erstellen, bearbeiten und aktivieren. Nach der Erstellung und Aktivierung sind diese Vorlagen zur Verwendung beim Erstellen einer interaktiven Kommunikation verfügbar.
+Die Vorlagen für den Web-Kanal werden in AEM erstellt. Autorinnen und Autoren sowie Administratorinnen und Administratoren von Vorlagen können Web-Vorlagen erstellen, bearbeiten und aktivieren. Nach ihrer Erstellung und Aktivierung stehen diese Vorlagen zur Verfügung, wenn Sie eine interaktive Kommunikation erstellen.
 
 **Ziele:**
 
 * Erstellen von XDP-Vorlagen für den Druckkanal mit Adobe Forms Designer
 * Hochladen der XDP-Vorlagen auf den AEM Forms-Server
-* Erstellen und Aktivieren von Vorlagen für den Webkanal
+* Erstellen und Aktivieren von Vorlagen für den Web-Kanal
 
 [](/help/forms/using/create-templates-print-web.md)
 
@@ -123,17 +123,17 @@ Die Vorlagen für den Webkanal werden in AEM erstellt. Vorlagenautoren und -admi
 
 ![09-style-your-adaptive-form-small](assets/09-style-your-adaptive-form-small.png)
 
-Nachdem Sie alle Bausteine wie Formulardatenmodell, Dokumentfragmente und Vorlagen für die Webversion erstellt haben, können Sie mit der Erstellung einer interaktiven Kommunikation beginnen.
+Nachdem Sie alle Bausteine wie Formulardatenmodell, Dokumentfragmente und Vorlagen für die Web-Version erstellt haben, können Sie mit der Erstellung einer interaktiven Kommunikation beginnen.
 
-Interaktive Kommunikation kann über zwei Kanäle bereitgestellt werden: Druck und Web. Sie können auch eine interaktive Kommunikation mit dem Druckkanal als Master erstellen. Die Option &quot;Als Master drucken&quot;für den Webkanal stellt sicher, dass der Inhalt, die Vererbung und die Datenbindung des Webkanals vom Druckkanal abgeleitet werden.
+Eine interaktive Kommunikation kann über zwei Kanäle bereitgestellt werden: den Druckkanal und den Web-Kanal. Sie können auch eine interaktive Kommunikation mit dem Druckkanal als Primär erstellen. Die Option zum Drucken als Primär für den Web-Kanal stellt sicher, dass Inhalt, Vererbung und Datenbindung des Web-Kanals vom Druckkanal abgeleitet werden.
 
 **Ziele:**
 
-* Erstellen der interaktiven Kommunikation für den Druckkanal
-* Erstellen der interaktiven Kommunikation für den Webkanal
-* Erstellen Sie Print- und Web-interaktive Kommunikation mit Print als Master.
-* Erstellen einer dynamischen Tabelle in der Webversion der interaktiven Kommunikation
-* Erstellen eines Diagramms in der Webversion der interaktiven Kommunikation
+* Erstellen einer interaktiven Kommunikation für den Druckkanal
+* Erstellen einer interaktiven Kommunikation für den Web-Kanal
+* Erstellen einer interaktiven Kommunikation für den Druck- und Web-Kanal mit der Option zum Drucken als Primär
+* Erstellen einer dynamischen Tabelle in der Web-Version der interaktiven Kommunikation
+* Erstellen eines Diagramms in der Web-Version der interaktiven Kommunikation
 * Erstellen von Hyperlinks in der Web-Version von interaktiver Kommunikation
 
 [](/help/forms/using/create-interactive-communication0.md)
@@ -142,10 +142,10 @@ Interaktive Kommunikation kann über zwei Kanäle bereitgestellt werden: Druck u
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-Nachdem Sie interaktive Kommunikation mit Druck- und Webkanälen erstellt und getestet haben, können Sie diese Assets veröffentlichen. Der in diesem Tutorial beschriebene Anwendungsfall konzentriert sich auf die Integration dieser Assets in einen E-Mail-Client. Der E-Mail-Client dient als Brücke zum Senden der interaktiven Kommunikation an mehrere E-Mail-Adressen.
+Wenn Sie eine interaktive Kommunikation mit Druck- und Web-Kanälen erstellt und getestet haben, können Sie diese Assets veröffentlichen. Der in diesem Tutorial beschriebene Anwendungsfall konzentriert sich auf die Integration dieser Assets in einen E-Mail-Client. Der E-Mail-Client dient als Brücke, um die interaktive Kommunikation an mehrere E-Mail-Adressen zu senden.
 
 **Ziele:**
 
-* Integrieren Sie interaktive Kommunikation mit einem E-Mail-Client, um eine Kommunikation an die Kunden senden zu können.
-* Ein PDF-Dokument als Anhang einschließen (interaktive Kommunikation, die im Druckkanal erstellt wurde)
-* Einen Link zur Webversion der interaktiven Kommunikation einschließen
+* Integrieren der interaktiven Kommunikation in einem E-Mail-Client zum Kommunikationsversand an Kundinnen und Kunden
+* Anfügen eines PDF-Dokuments als Anhang (interaktive Kommunikation, die im Druckkanal erstellt wurde)
+* Einschließen eines Links zur Web-Version der interaktiven Kommunikation

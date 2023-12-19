@@ -10,7 +10,7 @@ exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '831'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 91%
 
 Launches helfen Ihnen, Inhalte für eine künftige Version effizient zu entwickeln.
 
-Ein Launch wird erstellt, damit Sie Änderungen für die zukünftige Veröffentlichung vornehmen können (unter Beibehaltung der aktuellen Seiten). Wenn Sie die Launch-Seiten bearbeitet und aktualisiert haben, leiten Sie diese wieder zurück in die Quelle und aktivieren dann die Quellseiten (auf der obersten Ebene). Durch die Weiterleitung wird der Launch-Inhalt wieder auf die Quellseiten kopiert und kann entweder manuell oder automatisch ausgeführt werden (abhängig von den Feldern, die beim Erstellen und Bearbeiten des Launches festgelegt wurden).
+Ein Launch wird erstellt, damit Sie (unter Beibehaltung der aktuellen Seiten) Änderungen für eine spätere Veröffentlichung vornehmen können. Wenn Sie die Launch-Seiten bearbeitet und aktualisiert haben, leiten Sie diese wieder zurück in die Quelle und aktivieren dann die Quellseiten (auf der obersten Ebene). Durch die Weiterleitung wird der Launch-Inhalt wieder auf die Quellseiten kopiert und kann entweder manuell oder automatisch ausgeführt werden (abhängig von den Feldern, die beim Erstellen und Bearbeiten des Launches festgelegt wurden).
 
 Beispiel: Die saisonalen Produktseiten in Ihrem Online-Shop werden einmal pro Quartal aktualisiert, damit die präsentierten Produkte der aktuellen Saison entsprechen. Zur Vorbereitung auf die nächste Quartals-Aktualisierung können Sie einen Launch der relevanten Web-Seiten erstellen. Während des Quartals werden die folgenden Änderungen in der Launch-Kopie gesammelt:
 
@@ -42,7 +42,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Launch-Seiten innerhalb der Sites-
 
 Mit Launches können Sie effizient den Inhalt für eine zukünftige Veröffentlichung einer oder mehrerer aktivierter Web-Seiten entwickeln.
 
-Mit Launches können Sie:
+Launches ermöglichen Folgendes:
 
 * Erstellen Sie eine Kopie Ihrer Quellseiten:
 
@@ -51,7 +51,7 @@ Mit Launches können Sie:
 
       * Die Quellseiten können aus mehreren (verschiedenen) Verzweigungen stammen.
 
-  ![Übersicht über Launch-Aktionen](assets/chlimage_1-111.png)
+  ![Überblick über Launch-Aktionen](assets/chlimage_1-111.png)
 
 * Bearbeiten Sie die Launch-Konfiguration:
 
@@ -79,14 +79,14 @@ Mit Launches können Sie:
    * Änderungen an den Quellseiten werden automatisch in der Launch-Kopie implementiert (wenn sie mit Vererbung eingerichtet wurden, d. h. in Form einer Live Copy).
    * Änderungen an der Launch-Kopie können ohne Störung dieser automatischen Aktualisierungen oder der Quellseiten vorgenommen werden.
 
-  ![Überblick über Updates](assets/chlimage_1-112.png)
+  ![Überblick über Aktualisierungen](assets/chlimage_1-112.png)
 
 * [Erstellen eines verschachtelten Launches](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) – ein Launch innerhalb eines Launches:
 
    * Die Quelle ist ein schon vorhandener Launch.
    * Sie können [einen verschachtelten Launch zu einem beliebigen Ziel weiterleiten](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch). Dies kann ein übergeordneter Launch oder die Quellseiten der obersten Ebene (Produktion) sein.
 
-  ![Übersicht über verschachtelten Launch](assets/chlimage_1-113.png)
+  ![Überblick über einen verschachtelten Launch](assets/chlimage_1-113.png)
 
   >[!CAUTION]
   >
@@ -107,7 +107,7 @@ Mit Launches können Sie:
 
 ### Die Konsole „Launches“  {#the-launches-console}
 
-Die Konsole &quot;Launches&quot;bietet einen Überblick über Ihre Launches und ermöglicht es Ihnen, Aktionen für die aufgelisteten Launches durchzuführen. Auf die Konsole kann wie folgt zugegriffen werden:
+Die Konsole „Launches“ bietet eine Zusammenfassung Ihrer Launches und ermöglicht es Ihnen, Aktionen für diese durchzuführen. Auf die Konsole kann wie folgt zugegriffen werden:
 
 * über die Konsole **Tools**: **Tools** > **Sites** > **Launches**.
 
@@ -119,8 +119,8 @@ Die Konsole &quot;Launches&quot;bietet einen Überblick über Ihre Launches und 
 1. Öffnen Sie die Leiste **Referenzen** und wählen Sie die Quellseite aus.
 1. Wählen Sie **Launches**, die vorhandenen Launches werden aufgelistet:
 
-   ![Registerkarte &quot;Referenz&quot;- Launches](assets/screen-shot_2019-03-05at121901-1.png)
+   ![Registerkarte „Verweise“ – Launches](assets/screen-shot_2019-03-05at121901-1.png)
 
 1. Klicken Sie auf den entsprechenden Launch. Die Liste der möglichen Aktionen wird angezeigt:
 
-   ![Launch auswählen, um mögliche Aktionen anzuzeigen](assets/screen-shot_2019-03-05at121952-1.png)
+   ![Anzeigen möglicher Aktionen durch Launch-Auswahl](assets/screen-shot_2019-03-05at121952-1.png)

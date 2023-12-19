@@ -1,17 +1,17 @@
 ---
 title: Komponentenkonsole
-description: Mit der Komponentenkonsole können Sie alle für Ihre Instanz definierten Komponenten durchsuchen und wichtige Informationen zu den einzelnen Komponenten anzeigen.
+description: Die Komponentenkonsole ermöglicht es Ihnen, alle Komponenten zu durchsuchen, die für Ihre Instanz definiert sind, und wichtige Informationen für jede Komponente anzuzeigen.
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 55%
+ht-degree: 93%
 
 ---
 
 # Komponentenkonsole{#components-console}
 
-Mit der Komponentenkonsole können Sie alle für Ihre Instanz definierten Komponenten durchsuchen und wichtige Informationen zu den einzelnen Komponenten anzeigen.
+Die Komponentenkonsole ermöglicht es Ihnen, alle Komponenten zu durchsuchen, die für Ihre Instanz definiert sind, und wichtige Informationen für jede Komponente anzuzeigen.
 
 Der Zugriff erfolgt über **Tools >** **Allgemein >** **Komponenten**. In der Konsole sind Karten- und Listenansicht verfügbar. Da es keine Baumstruktur für Komponenten gibt, ist die Spaltenansicht nicht verfügbar.
 
@@ -29,7 +29,7 @@ Mit dem Symbol **Nur Inhalt** (oben links) können Sie den **Suchbereich** öffn
 
 ### Komponentendetails {#component-details}
 
-Um Details zu einer bestimmten Komponente anzuzeigen, klicken Sie auf die gewünschte Ressource. Drei Registerkarten bieten:
+Um Details zu einer bestimmten Komponente anzuzeigen, klicken Sie auf die gewünschte Ressource. Drei Registerkarten bieten Folgendes:
 
 * **Eigenschaften**
 
@@ -38,13 +38,13 @@ Um Details zu einer bestimmten Komponente anzuzeigen, klicken Sie auf die gewün
   In der Registerkarte „Eigenschaften“ haben Sie folgende Möglichkeiten:
 
    * Ansehen der allgemeinen Eigenschaften der Komponente
-   * Anzeigen der [Symbol oder Abkürzung wurde definiert](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) für die Komponente.
+   * Anzeigen, wie das [Symbol oder die Abkürzung für die Komponente definiert wurde](/help/sites-developing/components-basics.md#component-icon-in-touch-ui).
 
       * Wenn Sie auf die Quelle des Symbols klicken, gelangen Sie zu dieser Komponente.
 
-   * Anzeigen der **Ressourcentyp** und **Resource Super Type** (sofern definiert) für die Komponente.
+   * Anzeigen des **Ressourcentyps** und **Ressourcen-Supertyps** (sofern definiert) für die Komponente.
 
-      * Wenn Sie auf den Ressourcen-Supertyp klicken, gelangen Sie zu dieser Komponente.
+      * Durch Klicken auf den Ressourcen-Supertyp gelangen Sie zu dieser Komponente.
 
   >[!NOTE]
   >
@@ -64,6 +64,6 @@ Um Details zu einer bestimmten Komponente anzuzeigen, klicken Sie auf die gewün
 
 * **Dokumentation**
 
-  Wenn der Entwickler [Dokumentation für die Komponente](/help/sites-developing/developing-components.md#documenting-your-component), wird sie im **Dokumentation** Registerkarte. Ist keine Dokumentation verfügbar, wird die Registerkarte **Dokumentation** nicht angezeigt.
+  Etwaige von Entwickelnden [für eine Komponente bereitgestellte Dokumentationen](/help/sites-developing/developing-components.md#documenting-your-component) werden auf der Registerkarte **Dokumentation** angezeigt. Ist keine Dokumentation verfügbar, wird die Registerkarte **Dokumentation** nicht angezeigt.
 
   ![Dokumentation](assets/chlimage_1-171.png)

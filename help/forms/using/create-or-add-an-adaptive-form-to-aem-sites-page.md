@@ -6,14 +6,14 @@ feature: Adaptive Forms
 exl-id: dcf023a1-8735-48cb-b3ea-d17357eeedaf
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2901'
-ht-degree: 87%
+source-wordcount: '2881'
+ht-degree: 97%
 
 ---
 
 # Erstellen oder Hinzufügen eines adaptiven Formulars zur AEM Sites-Seite {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/using/create-an-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -22,22 +22,22 @@ ht-degree: 87%
 
 Mit AEM Forms können Sie adaptive Formulare nahtlos in Ihre Web-Seiten integrieren. Dadurch können Ihre Besuchenden bequem Formulare ausfüllen und senden, ohne jemals die Seite verlassen zu müssen, auf der sie sich befinden. Sie können mühelos mit anderen Elementen der Website interagieren und gleichzeitig aktiv mit dem Formular interagieren.
 
-Mit dem AEM-Seiteneditor können Sie schnell mehrere Formulare erstellen und zu Ihren AEM Sites-Seiten hinzufügen. Die Verwendung des AEM-Seiteneditors ermöglicht es Inhaltsautorinnen und -autoren, nahtlose Erlebnisse zur Datenerfassung auf einer Sites-Seite erstellen, indem sie die Leistung adaptiver Formularkomponenten nutzen, einschließlich dynamischem Verhalten, Überprüfungen, Datenintegration, Generierung von Datensatzdokumenten und Automatisierung von Geschäftsprozessen. Außerdem können Sie damit verschiedene Funktionen von AEM Sites-Seiten verwenden, z. B. Versionierung, Targeting, Übersetzung und Multi-Site-Manager.
+Mit dem AEM-Seiteneditor können Sie schnell mehrere Formulare erstellen und zu Ihren AEM Sites-Seiten hinzufügen. Die Verwendung des AEM-Seiteneditors ermöglicht es Inhaltsautorinnen und -autoren, nahtlose Erlebnisse zur Datenerfassung auf einer Sites-Seite erstellen, indem sie die Leistung adaptiver Formularkomponenten nutzen, einschließlich dynamischem Verhalten, Überprüfungen, Datenintegration, Generierung von Datensatzdokumenten und Automatisierung von Geschäftsprozessen. Außerdem können Sie verschiedene Funktionen von AEM Sites-Seiten verwenden, z. B. Versionierung, Targeting, Übersetzung und Multi-Site-Manager.
 
-AEM Forms bietet Container- und Einbettungskomponenten für adaptive Formulare. Sie können den Container für adaptive Formulare verwenden, um ein Formular auf einer Experience Fragment- oder AEM Sites-Seite zu erstellen, während Sie mit der Komponente Adaptive Forms - Embed ein vorhandenes adaptives Formular hinzufügen oder ein Formular mit dem Adaptive Forms Editor erstellen können.
+AEM Forms bietet Container für adaptive Formulare und die „Adaptive Formulare – Einbettungskomponente“. Sie können den Container für adaptive Formulare verwenden, um ein Formular auf einer Experience Fragment- oder AEM Sites-Seite zu erstellen, während Sie mit der Komponente Adaptive Forms - Embed ein vorhandenes adaptives Formular hinzufügen oder ein Formular mit dem Adaptive Forms Editor erstellen können.
 
-![Adaptives Formular auf der Siteseite](/help/forms/using/assets/adaptive-form-in-sites-page.png)
+![Adaptives Formular auf der Sites-Seite](/help/forms/using/assets/adaptive-form-in-sites-page.png)
 
-## Vorteile der Verwendung der Container-Komponente für adaptive Formulare im AEM Seiten-Editor oder im Experience Fragment
+## Vorteile der Verwendung der Container-Komponente für adaptive Formulare im AEM-Seiteneditor oder im Experience Fragment
 
-Mit dem Container für adaptive Formulare im Seiteneditor können Sie nahtlose Erlebnisse zur Datenerfassung in einer Sites-Seite erstellen, indem Sie adaptive Forms-Komponenten nutzen, einschließlich dynamischer Verhaltensweisen, Überprüfungen, Datenintegration, Generierung von Datensatzdokumenten und Automatisierung von Geschäftsprozessen. Darüber hinaus können Sie verschiedene Funktionen von AEM Sites-Seiten verwenden, wie z. B. Versionierung, Targeting, Übersetzung und Multi-Site-Manager, wodurch die Erstellung und Verwaltung von Formularen insgesamt verbessert wird. Sehen wir uns einige dieser Funktionen an:
+Mit dem Container für adaptive Formulare im AEM-Seiteneditor können Sie nahtlose Erlebnisse zur Datenerfassung auf einer Sites-Seite erstellen, indem Sie die Möglichkeiten der Komponenten für adaptive Formulare nutzen, darunter dynamisches Verhalten, Validierungen, Datenintegration, Generierung von Datensatzdokumenten und Automatisierung von Geschäftsprozessen. Darüber hinaus können Sie verschiedene Funktionen von AEM Sites-Seiten verwenden, wie z. B. Versionierung, Targeting, Übersetzung und Multi-Site-Manager, wodurch die Erstellung und Verwaltung von Formularen insgesamt verbessert wird. Sehen wir uns einige dieser Funktionen an:
 
 * **Versionierung:** AEM Sites-Seiten bieten eine [robuste Versionierungfähigkeiten](/help/sites-authoring/working-with-page-versions.md), mit der Sie verschiedene Versionen Ihrer Formulare verfolgen und verwalten können. Dadurch können Sie Änderungen und Verbesserungen an Formularen vornehmen und gleichzeitig bei Bedarf frühere Versionen wiederherstellen. Versionierung stellt einen kontrollierten und organisierten Ansatz für die Formularentwicklung und -weiterentwicklung sicher.
 * **Targeting (Integration mit Adobe Target):** Mit den Targeting-Funktionen von AEM Sites-Seiten können Sie auch [das Formularerlebnis für verschiedene Zielgruppen personalisieren](/help/sites-administering/target.md). Mithilfe von Benutzersegmenten und Targeting-Kriterien können Sie den Inhalt, das Design oder das Verhalten des Formulars an bestimmte Benutzergruppen anpassen. Auf diese Weise können Sie ein personalisiertes und relevantes Formularerlebnis bereitstellen und die Interaktions- und Konversionsraten steigern.
 * **Übersetzung:** AEM Sites kann [nahtlos mit Übersetzungsdiensten integriert werden](/help/sites-administering/translation.md), sodass Sie Formulare einfach in mehrere Sprachen übersetzen können. Diese Funktion vereinfacht den Lokalisierungsprozess und stellt sicher, dass Ihre Formulare für eine globale Zielgruppe zugänglich ist. Sie können Übersetzungen effizient in AEM-Übersetzungsprojekten verwalten und so Zeit und Aufwand für die Unterstützung mehrsprachiger Formulare reduzieren. Weitere Informationen zur Übersetzung finden Sie im Abschnitt „Überlegungen“.
-* **Multi-Site-Management und Live Copy:** AEM Sites bietet robuste [Multi-Site-Management- und Live Copy-Funktionen](/help/sites-administering/msm.md), mit denen Sie mehrere Websites in einer einzigen Umgebung erstellen und verwalten können. Mit dieser Funktion können Sie jetzt Formulare über verschiedene Sites hinweg wiederverwenden, um Konsistenz zu gewährleisten und doppelte Arbeit zu vermeiden. Mit zentralisierter Kontrolle und Verwaltung können Sie Formulare effizient über mehrere Websites hinweg verwalten und aktualisieren.
+* **Multi-Site-Management und Live Copy:** AEM Sites bietet robuste [Multi-Site-Management- und Live Copy-Funktionen](/help/sites-administering/msm.md), mit denen Sie mehrere Websites in einer einzigen Umgebung erstellen und verwalten können. Mit dieser Funktion können Sie nun Formulare über verschiedene Sites hinweg wiederverwenden, was Konsistenz gewährleistet und doppelte Arbeit vermeidet. Mit zentralisierter Kontrolle und Verwaltung können Sie Formulare effizient über mehrere Websites hinweg verwalten und aktualisieren.
 * **Themen:** AEM Sites-Seiten bieten ein Framework für das Entwerfen und Verwalten konsistenter visueller Stile auf mehreren Web-Seiten. Diese definieren Farben, Schriftarten, Stylesheets und andere visuelle Elemente, die zum allgemeinen Look-and-Feel der Website beitragen. [Sie können die Designs verwenden, die für ein adaptives Formular einer AEM Sites-Seite entwickelt wurden, was Zeit und Mühe spart.](/help/sites-authoring/style-system.md).
-* **Tagging:** Mit AEM Sites-Seiten können Sie [Zuweisen von Tags oder Beschriftungen zu einer Seite, einem Asset oder anderen Inhalten](/help/sites-authoring/tags.md). Tags sind Keywords oder Metadatenbeschriftungen, die eine Möglichkeit bieten, Inhalte basierend auf bestimmten Kriterien zu kategorisieren und zu organisieren. Sie können Seiten, Assets oder anderen Inhaltselementen in AEM ein oder mehrere Tags zuweisen, um die Suche zu verbessern und die Assets zu kategorisieren.
+* **Tagging:** Mit AEM Sites-Seiten können Sie [Tags oder Beschriftungen zu einer Seite, einem Asset oder anderen Inhalten zuweisen](/help/sites-authoring/tags.md). Tags sind Keywords oder Metadatenbeschriftungen, die eine Möglichkeit bieten, Inhalte basierend auf bestimmten Kriterien zu kategorisieren und zu organisieren. Sie können Seiten, Assets oder anderen Inhaltselementen in AEM ein oder mehrere Tags zuweisen, um die Suche zu verbessern und die Assets zu kategorisieren.
 * **Sperren und Entsperren von Inhalten:** Mit AEM Sites können Benutzerinnen und Benutzer in der AEM Sites-Umgebung [Zugriff und Änderungen auf Seiten steuern](/help/sites-authoring/editing-content.md#locking-a-page-locking-a-page). Wenn eine Seite gesperrt ist, bedeutet dies, dass sie von anderen Benutzenden vor unbefugten Änderungen oder Bearbeitungen geschützt ist. Nur Benutzende, die den Inhalt gesperrt haben, oder Admins können ihn entsperren, um Änderungen zuzulassen.
 
 
@@ -59,7 +59,7 @@ Sie können diese Funktion voll nutzen, indem Sie die folgenden Optionen verwend
 
 ## Überlegungen {#consideration}
 
-* Wenn Sie den Container für adaptive Formulare verwenden, um ein Formular zu erstellen oder hinzuzufügen, werden die Formulare über den AEM Sites-Übersetzungsfluss übersetzt und lokalisiert. Für jede Sprache wird eine separate Kopie (Sprachkopie) der Sites-Seite und der entsprechenden Formulare generiert. Wenn Inhaltsautorinnen oder -autoren eine Regel in einem Formular auf der übergeordneten Seite ändern, müssen dieselben Änderungen in allen Sprachkopien des Formulars vorgenommen werden. Mit dem Container für adaptive Formulare können Sie außerdem verschiedene Funktionen von AEM Sites-Seiten verwenden, z. B. Versionierung, Targeting, Übersetzung und Multi-Site-Manager.
+* Wenn Sie den Container für adaptive Formulare verwenden, um ein Formular zu erstellen oder hinzuzufügen, werden die Formulare über den AEM Sites-Übersetzungsfluss übersetzt und lokalisiert. Für jede Sprache wird eine separate Kopie (Sprachkopie) der Sites-Seite und der entsprechenden Formulare generiert. Wenn Inhaltsautorinnen oder -autoren eine Regel in einem Formular auf der übergeordneten Seite ändern, müssen dieselben Änderungen in allen Sprachkopien des Formulars vorgenommen werden. Mit dem Container für adaptive Formulare können Sie auch verschiedene Funktionen von AEM Sites-Seiten verwenden, z. B. Versionierung, Targeting, Übersetzung und Multi-Site-Manager.
 
 * Wenn Sie ein Formular mithilfe der Einbettungskomponente für adaptive Formulare erstellen oder hinzufügen, werden die Formulare mithilfe des Übersetzungsflusses von AEM Forms übersetzt und lokalisiert. In diesem Fall wird ein einzelnes Formular beibehalten und in allen Sprachkopien der Sites-Seiten referenziert. Die Einbettungskomponente für adaptive Formulare bietet keinen Zugriff auf verschiedene Funktionen von AEM Sites-Seiten wie Versionierung, Targeting, Übersetzung und Multi-Site-Manager.
 
@@ -141,7 +141,7 @@ Sie können ein brandneues Formular direkt auf einer AEM Sites-Seite oder im Exp
 
 ### Erstellen eines Formulars auf einer AEM Sites-Seite {#create-an-adaptive-form-in-sites-editor}
 
-Sie können die Container-Komponente für adaptive Formulare im AEM-Seiteneditor verwenden, um ein benutzerdefiniertes Formular zu erstellen. Mit der Komponente können Sie ein Formular durch Ziehen und Ablegen der Formularkomponenten erstellen. Die Formularkomponenten basieren auf Kernkomponenten. Sie können diese einfach entsprechend den Anforderungen Ihrer Organisation anpassen.
+Sie können die Container-Komponente für adaptive Formulare im AEM-Seiteneditor verwenden, um ein benutzerdefiniertes Formular zu erstellen. Mit der Komponente können Sie ein Formular erstellen, indem Sie die Formularkomponenten per Drag-and-Drop verschieben. Die Formularkomponenten basieren auf Kernkomponenten. Sie können diese einfach entsprechend den Anforderungen Ihrer Organisation anpassen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
@@ -156,7 +156,7 @@ Legen Sie als Nächstes die [Aktion „Senden“](#configure-submit-action-for-f
 
 ### Erstellen eines Formulars in einem Experience Fragment {#create-an-adaptive-form-in-experience-fragment}
 
-Sie können die Reichweite Ihrer Formulare erweitern, indem Sie sie zu AEM Experience Fragments hinzufügen, wodurch eine nahtlose Wiederverwendung über mehrere Seiten oder Sites hinweg ermöglicht wird. Sie können beispielsweise ein Newsletter-Anmeldeformular in ein Experience Fragment einfügen. Auf diese Weise können Sie das Fragment bequem über mehrere Seiten Ihrer Website hinweg wiederverwenden, sodass das Formular nicht wiederholt neu erstellt werden muss. Alle Aktualisierungen oder Änderungen, die im Experience Fragment am Newsletter-Anmeldeformular vorgenommen werden, werden automatisch auf alle Seiten übertragen, auf denen es verwendet wird. Dadurch wird der Prozess optimiert und ein nahtloses Benutzererlebnis bei gleichzeitiger Vereinfachung der Verwaltung von Formularen auf Ihrer Website sichergestellt.
+Sie können die Reichweite Ihrer Formulare erweitern, indem Sie sie zu AEM Experience Fragments hinzufügen, wodurch eine nahtlose Wiederverwendung über mehrere Seiten oder Sites hinweg ermöglicht wird. Sie können beispielsweise ein Newsletter-Anmeldeformular in ein Experience Fragment einfügen. Dadurch können Sie das Fragment bequem über mehrere Seiten Ihrer Website hinweg wiederverwenden, sodass das Formular nicht wiederholt neu erstellt werden muss. Alle Aktualisierungen oder Änderungen, die im Experience Fragment am Newsletter-Anmeldeformular vorgenommen werden, werden automatisch auf alle Seiten übertragen, auf denen es verwendet wird. Dadurch wird der Prozess optimiert und ein nahtloses Benutzererlebnis bei gleichzeitiger Vereinfachung der Verwaltung von Formularen auf Ihrer Website sichergestellt.
 
 So erstellen Sie ein adaptives Formular in einem Experience Fragment:
 
@@ -176,7 +176,7 @@ So konvertieren Sie ein adaptives Formular auf einer AEM Sites-Seite in ein Expe
 1. Öffnen Sie die AEM Sites-Seite mit dem adaptiven Formular (in der Komponente „Container für adaptive Formulare“) im Bearbeitungsmodus.
 1. Öffnen Sie die Inhaltsstruktur und wählen Sie den **[!UICONTROL Container für adaptive Formulare]**, der Ihr adaptives Formular enthält. Eine AEM Sites-Seite kann mehrere adaptive Formulare hosten. Wählen Sie daher sorgfältig den richtigen Container für adaptive Formulare aus.
 1. Wählen Sie in der Menüleiste das Symbol ![In Experience Fragment-Variante konvertieren](/help/forms/using/assets/Smock_FilingCabinet_18_N.svg).
-   ![Konvertieren von Formularen in Siteseiten in Experience Fragment](/help/forms/using/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
+   ![Konvertieren eines adaptiven Formulars in einer Sites-Seite in ein Experience Fragment](/help/forms/using/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
 
    Es wird ein Dialogfeld zum Konvertieren des Containers für adaptive Formulare in ein neues Experience Fragment oder zu dessen Hinzufügen zu einem vorhandenen Experience Fragment angezeigt.
 1. Legen Sie im Dialogfeld „In Experience Fragment-Variante konvertieren“ Werte für die folgenden Optionen fest:
@@ -212,7 +212,7 @@ So konfigurieren Sie ein JSON-Schema oder ein Formulardatenmodell für Ihr Formu
 1. Öffnen Sie den AEM Seiten-Editor oder das Experience Fragment, das das adaptive Formular enthält.
 1. Öffnen Sie die Inhaltsstruktur und wählen Sie den **[!UICONTROL Container für adaptive Formulare]**, der Ihr adaptives Formular enthält. Eine AEM Sites-Seite kann mehrere adaptive Formulare hosten. Wählen Sie daher sorgfältig den richtigen Container für adaptive Formulare aus.
 1. Klicken Sie auf das Symbol für die Eigenschaften des Containers für adaptive Formulare ![Eigenschaften des Containers für adaptive Formulare](/help/forms/using/assets/configure-icon.svg). Das Dialogfeld der Container für adaptive Formulare zum Konfigurieren von Datenmodellen wird geöffnet.
-   ![Formulardatenmodell Container für adaptive Formulare](/help/forms/using/assets/form-data-model-adaptive-forms-container.png)
+   ![Formulardatenmodell – Container für adaptive Formulare](/help/forms/using/assets/form-data-model-adaptive-forms-container.png)
 1. Wählen Sie ein JSON-Schema oder ein Formulardatenmodell aus und konfigurieren Sie es entsprechend Ihren Anforderungen. Detaillierte Informationen zu Sendeaktionen finden Sie unter [Sendeaktion für adaptive Formulare](configuring-submit-actions.md).
 
    * Wenn Sie die Option **[!UICONTROL Formularmodell]** wählen, können Sie mit der Option **[!UICONTROL Formulardatenmodell auswählen]** ein vorkonfiguriertes Formulardatenmodell auswählen.
@@ -234,7 +234,7 @@ Sie können den Vorbefüllungsdienst für Formulardatenmodelle verwenden, um Fel
 1. Öffnen Sie den AEM Seiten-Editor oder das Experience Fragment, das das adaptive Formular enthält.
 1. Öffnen Sie die Inhaltsstruktur und wählen Sie den **[!UICONTROL Container für adaptive Formulare]**, der Ihr adaptives Formular enthält. Eine AEM Sites-Seite kann mehrere adaptive Formulare hosten. Wählen Sie daher sorgfältig den richtigen Container für adaptive Formulare aus.
 1. Klicken Sie auf das Symbol für die Eigenschaften des Containers für adaptive Formulare ![Eigenschaften des Containers für adaptive Formulare](/help/forms/using/assets/configure-icon.svg). Das Dialogfeld der Container für adaptive Formulare zum Konfigurieren von Datenmodellen wird geöffnet.
-   ![Vorabausfüllen des Dienstformulars für den Seiteneditor der AEM Sites](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
+   ![Vorbefüllungsdienst für Formulardatenmodelle – Seiteneditor von AEM Sites](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
 1. Wählen Sie ein Formulardatenmodell aus. Öffnen Sie die Registerkarte **[!UICONTROL Allgemein]**. Wählen Sie im Vorbefüllungsdienst die Option **[!UICONTROL Formularportal-Entwurf des Vorbefüllungsdienstes]**.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
