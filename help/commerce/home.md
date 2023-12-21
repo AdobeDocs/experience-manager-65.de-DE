@@ -2,10 +2,10 @@
 title: AEM Content and Commerce
 description: Erfahren Sie in unseren hilfreichen Artikeln zu Integrationen und zu den ersten Schritten mit AEM Storefront, wie Sie AEM Content and Commerce verwenden und verwalten.
 exl-id: b5b074e7-6da7-49ed-9cdb-f7c37d08e08c
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
-workflow-type: ht
-source-wordcount: '336'
-ht-degree: 100%
+source-git-commit: 7c691e275208287250f3540158a5e9948097b277
+workflow-type: tm+mt
+source-wordcount: '259'
+ht-degree: 91%
 
 ---
 
@@ -16,6 +16,7 @@ Erfahren Sie in unseren hilfreichen Artikeln zu Integrationen und zu den ersten 
 >[!NOTE]
 >
 >Informationen zu AEM Content and Commerce mit AEM as a Cloud Service finden Sie unter [AEM Content and Commerce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=de).
+>
 
 ## Wichtige Commerce-Artikel {#key-articles}
 
@@ -26,10 +27,9 @@ Erfahren Sie in unseren hilfreichen Artikeln zu Integrationen und zu den ersten 
 
 | Benutzerhandbuch | Beschreibung |
 |--- |---|
-| [Versionshinweise](/help/release-notes/home.md) | Enthält wichtige Informationen zur neuesten Version von AEM, einschließlich neuer Funktionen, unterstützter Plattformen, veralteter und entfernter Funktionen und bekannter Probleme. |
+| [Versionshinweise](/help/release-notes/home.md) | Enthält wichtige Informationen zur neuesten Version von AEM, einschließlich neuer, unterstützter Plattformen, veralteter und entfernter Funktionen und bekannter Probleme. |
 | [Benutzerhandbuch für Assets](/help/assets/home.md) | Erfahren Sie, wie Sie digitale Assets erstellen, verwalten, bereitstellen und optimieren können. |
 | [Forms Benutzerhandbuch](/help/forms/home.md) | In diesem Handbuch wird beschrieben, wie Sie digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren. |
-| [Communities-Benutzeranleitung](/help/communities/home.md) | Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Community-Funktionen. |
 | [Administratorenanleitung](/help/sites-administering/home.md) | Wissenswertes zur Verwaltung von AEM |
 | [Benutzerhandbuch zur Inhaltserstellung](/help/sites-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in AEM erläutert. |
 | [Benutzerhandbuch zur Inhaltserstellung für die klassische Benutzeroberfläche](/help/sites-classic-ui-authoring/home.md) | In diesem Handbuch werden die Authoring-Konzepte in AEM in der klassischen Benutzeroberfläche erläutert. |
@@ -37,7 +37,6 @@ Erfahren Sie in unseren hilfreichen Artikeln zu Integrationen und zu den ersten 
 | [Bereitstellungshandbuch für Benutzer](/help/sites-deploying/home.md) | In diesem Handbuch werden die Grundlagen von AEM erläutert. |
 | [Benutzerhandbuch für Entwickler](/help/sites-developing/home.md) | Erfahren Sie, wie Sie Ihre AEM-Instanz aufbauen. |
 | [Benutzerhandbuch Verwaltung](/help/managing/home.md) | In diesem Handbuch wird beschrieben, wie Sie ein AEM-Projekt erfolgreich verwalten. |
-| [Mobilbenutzeranleitung](/help/mobile/home.md) | In diesem Handbuch wird beschrieben, wie Sie Inhalte für mobile Anwendungen erstellen und verwalten. |
 
 ## Wichtige AEM-Ressourcen
 

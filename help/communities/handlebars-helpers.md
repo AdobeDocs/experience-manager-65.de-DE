@@ -1,12 +1,10 @@
 ---
 title: SCF Handlebars Helpers
 description: Handlebars Helper-Methoden zur Erleichterung der Arbeit mit SCF
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 787e5a87f13498006e2ce897e85ee12704b58f09
 workflow-type: tm+mt
 source-wordcount: '1453'
 ht-degree: 3%
@@ -172,7 +170,7 @@ Hilfsmittel zum Zurückgeben von Inhalten in Abhängigkeit von einer Gleichheits
 ```
 {{#equals  value "some-value"}}
   <div>They are EQUAL!</div>
-{{else}}
+`{{else}}`
   <div>They are NOT equal!</div>
 {{/equals}}
 ```
@@ -196,9 +194,9 @@ Ein Block-Helfer, der den aktuellen Wert von [WCM-Modus](https://developer.adobe
 ```xml
 {{#if-wcm-mode mode="DESIGN, EDIT"}}
  ...
-{{else}}
+{else}}
  ...
-{{/if-wcm-mode}}
+`{{/if-wcm-mode}}`
 ```
 
 ## i18n {#i-n}
@@ -340,7 +338,7 @@ Dieser Helfer, der nur serverseitig geeignet ist, bietet Funktionen, die dem [ui
 
 Ein Hilfsmittel, mit dem angezeigt wird, wie viel Zeit bis zu einem Cutoff-Punkt vergangen ist, nach dem ein reguläres Datumsformat angezeigt wird.
 
-Beispiel:
+Zum Beispiel:
 
 * Vor 12 Stunden
 * Vor 7 Tagen
@@ -477,7 +475,7 @@ var context = {posts: [
   ] };
 
 // when link_to is called, posts is the current context
-var source = '<ul>{{#posts}}<li>{{{link_to "Post"}}}</li>{{/posts}}</ul>'
+var source = '<ul>`{{#posts}}`<li>{{{link_to "Post"}}}</li>`{{/posts}}`</ul>'
 
 var template = Handlebars.compile(source);
 
@@ -503,7 +501,7 @@ var data = { "people": [
 ]};
 
 // when link is called, people is the current context
-var source = "<ul>{{#people}}<li>{{#link}}{{name}}{{/link}}</li>{{/people}}</ul>";
+var source = "<ul>`{{#people}}`<li>`{{#link}}``{{name}}``{{/link}}`</li>`{{/people}}`</ul>";
 
 var template = Handlebars.compile(source);
 
@@ -524,7 +522,7 @@ Benutzerdefinierte Helfer müssen auf Server- und Client-Seite implementiert wer
 
 Um einen benutzerdefinierten SCF-Helfer serverseitig zu implementieren und zu registrieren, implementieren Sie einfach die Java™-Oberfläche [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), machen Sie es zu einem [OSGi-Dienst](../../help/sites-developing/the-basics.md#osgi) und installieren Sie es als Teil eines OSGi-Bundles.
 
-Beispiel:
+Zum Beispiel:
 
 ### FooTextHelper.java {#footexthelper-java}
 
@@ -571,7 +569,7 @@ public class FooTextHelper implements TemplateHelper<String>{
 ### Clientseitige benutzerdefinierte Helfer {#client-side-custom-helpers}
 
 Die clientseitigen Helfer sind Handlebars-Skripte, die durch Aufrufen von `Handlebars.registerHelper()`.
-Beispiel:
+Zum Beispiel:
 
 ### custom-helpers.js {#custom-helpers-js}
 

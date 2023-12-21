@@ -2,9 +2,9 @@
 title: AEM 6.5-Bereitstellungshandbuch für Benutzer
 description: Erfahren Sie mehr über die Installation und Bereitstellung von Adobe Experience Manager 6.5 und über die zugehörige Architektur sowie die Cloud-Implementierung mit Adobe Managed Services.
 exl-id: 4a82008c-af69-414e-bd98-c7f683a74905
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '265'
 ht-degree: 92%
 
 ---
@@ -27,7 +27,6 @@ Dieses Handbuch behandelt alle Aufgaben rund um die Bereitstellung von AEM, z. 
 | [Versionshinweise](/help/release-notes/home.md) | Enthält wichtige Informationen zur neuesten Version von AEM, einschließlich neuer, unterstützter Plattformen, veralteter und entfernter Funktionen und bekannter Probleme. |
 | [Benutzerhandbuch für Assets](/help/assets/home.md) | Erfahren Sie, wie Sie digitale Assets erstellen, verwalten, bereitstellen und optimieren können. |
 | [Forms Benutzerhandbuch](/help/forms/home.md) | In diesem Handbuch wird beschrieben, wie Sie digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren. |
-| [Communities-Benutzeranleitung](/help/communities/home.md) | Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Community-Funktionen. |
 | [Administratorenanleitung](/help/sites-administering/home.md) | Wissenswertes zur Verwaltung von AEM |
 | [Benutzerhandbuch zur Inhaltserstellung](/help/sites-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in AEM erläutert. |
 | [Benutzerhandbuch zur Inhaltserstellung für die klassische Benutzeroberfläche](/help/sites-classic-ui-authoring/home.md) | In diesem Handbuch werden die Authoring-Konzepte in AEM in der klassischen Benutzeroberfläche erläutert. |
@@ -36,7 +35,6 @@ Dieses Handbuch behandelt alle Aufgaben rund um die Bereitstellung von AEM, z. 
 | [Benutzerhandbuch für Entwickler](/help/sites-developing/home.md) | Erfahren Sie, wie Sie Ihre AEM-Instanz aufbauen. |
 | [Benutzerhandbuch Verwaltung](/help/managing/home.md) | In diesem Handbuch wird beschrieben, wie Sie ein AEM-Projekt erfolgreich verwalten. |
 | [Benutzerhandbuch für Commerce](/help/commerce/home.md) | Erfahren Sie mehr über Commerce Integration Framework in AEM. |
-| [Mobilbenutzeranleitung](/help/mobile/home.md) | In diesem Handbuch wird beschrieben, wie Sie Inhalte für mobile Anwendungen erstellen und verwalten. |
 
 ## Wichtige AEM-Ressourcen
 

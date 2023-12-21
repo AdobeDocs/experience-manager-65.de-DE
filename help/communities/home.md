@@ -1,17 +1,17 @@
 ---
 title: Adobe Experience Manager 6.5 Communities-Anleitung
-description: Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Community-Funktionen. In diesem Handbuch erfahren Sie, wie Sie Communities bereitstellen, verwalten, entwickeln und erstellen.
+description: Erstellen Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere soziale Funktionen. In diesem Handbuch erfahren Sie, wie Sie Communities bereitstellen, verwalten, entwickeln und erstellen.
 exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 88%
+source-wordcount: '273'
+ht-degree: 75%
 
 ---
 
 # Adobe Experience Manager (AEM) 6.5 Communities-Anleitung
 
-Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Community-Funktionen. In diesem Handbuch erfahren Sie, wie Sie Communities bereitstellen, verwalten, entwickeln und erstellen.
+Erstellen Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere soziale Funktionen. In diesem Handbuch erfahren Sie, wie Sie Communities bereitstellen, verwalten, entwickeln und erstellen.
 
 ## Wichtige AEM-Artikel
 
@@ -27,7 +27,6 @@ Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und a
 | [Versionshinweise](/help/release-notes/home.md) | Enthält wichtige Informationen zur neuesten Version von AEM, einschließlich neuer Funktionen, unterstützter Plattformen, veralteter und entfernter Funktionen und bekannter Probleme |
 | [Benutzerhandbuch für Assets](/help/assets/home.md) | Erfahren Sie, wie Sie digitale Assets erstellen, verwalten, bereitstellen und optimieren können. |
 | [Forms Benutzerhandbuch](/help/forms/home.md) | In diesem Handbuch wird beschrieben, wie Sie digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren. |
-| [Communities-Benutzeranleitung](/help/communities/home.md) | Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Community-Funktionen. |
 | [Administratorenanleitung](/help/sites-administering/home.md) | Wissenswertes zur Verwaltung von AEM |
 | [Benutzerhandbuch zur Inhaltserstellung](/help/sites-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in AEM erläutert. |
 | [Benutzerhandbuch zur Inhaltserstellung für die klassische Benutzeroberfläche](/help/sites-classic-ui-authoring/home.md) | In diesem Handbuch werden die Authoring-Konzepte in AEM in der klassischen Benutzeroberfläche erläutert. |
@@ -36,7 +35,6 @@ Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und a
 | [Benutzerhandbuch für Entwickler](/help/sites-developing/home.md) | Erfahren Sie, wie Sie Ihre AEM-Instanz aufbauen. |
 | [Benutzerhandbuch Verwaltung](/help/managing/home.md) | In diesem Handbuch wird beschrieben, wie Sie ein AEM-Projekt erfolgreich verwalten. |
 | [Benutzerhandbuch für Commerce](/help/commerce/home.md) | Erfahren Sie mehr über Commerce Integration Framework in AEM. |
-| [Mobilbenutzeranleitung](/help/mobile/home.md) | In diesem Handbuch wird beschrieben, wie Sie Inhalte für mobile Anwendungen erstellen und verwalten. |
 
 ## Wichtige AEM-Ressourcen
 
@@ -44,7 +42,7 @@ Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und a
 * [Dispatcher-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de)
 * [HTL-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de)
 * [Benutzerhandbuch zu Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=de?lang=de)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=de)
 * [Einhaltung der DSGVO](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/#home)
 * [AEM-Community-Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?lang=de)

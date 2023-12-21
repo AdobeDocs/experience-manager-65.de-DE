@@ -2,10 +2,10 @@
 title: Erste Schritte mit Headless
 description: In dieser Kurzanleitung erfahren Sie mehr über die leistungsstarken Headless-Funktionen von Adobe Experience Manager (AEM) 6.5 wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API.
 exl-id: 55ebd893-b3cc-47c5-ad84-46df984197fb
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 487136be68e04fd74affe43790587b37d4c3d3ef
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 49%
+ht-degree: 60%
 
 ---
 
@@ -23,17 +23,17 @@ Die Leitfäden für Headless-Einstieg enthalten einen einfachen Weg zum Erstelle
 >
 >In diesem Erste-Schritte-Leitfaden werden Kenntnisse über AEM und Headless-Technologien vorausgesetzt.
 >
->Wenn Sie neu AEM oder Headless sind, lesen Sie den Abschnitt [Headless Documentation Journey](/help/journey-headless/home.md) für eine durchgängige Einführung in Headless und wie AEM sie unterstützt.
+>Wenn Sie neu AEM oder Headless sind, lesen Sie den Abschnitt [Headless Documentation Journey](/help/journey-headless/overview.md) für eine durchgängige Einführung in Headless und wie AEM sie unterstützt.
 
 ## Zielgruppe {#audience}
 
 Die in den ersten Schritten für Headless beschriebenen Aufgaben sind für eine grundlegende durchgängige Demonstration der Headless-Funktionen von AEM erforderlich. Jeder Benutzer mit Administratorzugriff auf eine AEM-Testinstanz kann diesen Handbüchern folgen, um die Headless-Bereitstellung in AEM zu verstehen, obwohl jemand mit Entwicklererfahrung ideal ist.
 
-In einer Produktionssituation werden die Aufgaben jedoch in der Regel von verschiedenen Personen mit unterschiedlicher Häufigkeit ausgeführt. Zum Beispiel:
+In einer Produktionssituation werden die Aufgaben jedoch in der Regel von verschiedenen Personen mit unterschiedlicher Häufigkeit ausgeführt. Beispiel:
 
-* **Administratoren** muss die anfängliche Konfiguration und die Ordnerstruktur für den Inhalt normalerweise nur einmal oder sporadisch einrichten.
+* **Admins** müssen die anfängliche Konfiguration und Ordnerstruktur für den Inhalt normalerweise nur einmal oder sporadisch einrichten.
 * **Informationsarchitekten** Fügen Sie neue Modelle hinzu, wenn sich die Anforderungen der Organisation weiterentwickeln.
-* **Inhaltsautoren** kontinuierlich Inhalte als Inhaltsfragmente basierend auf den von den Architekten definierten Modellen erstellen.
+* **Inhaltsautorinnen und -autoren** erstellen kontinuierlich neue Inhalte als Inhaltsfragmente basierend auf den von den Architektinnen und Architekten definierten Modellen.
 
 In den ersten Schritten für Headless wird aufgezeigt, wer die beschriebenen Aufgaben in der Regel und wie häufig durchführt.
 

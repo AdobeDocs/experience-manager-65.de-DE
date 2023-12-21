@@ -7,9 +7,10 @@ breadcrumb-title: Communities-Anleitung
 user-guide-description: Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Community-Funktionen.
 feature: Communities
 role: User
-source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
+hide: true
+source-git-commit: e0db340b4fd4e4f7fe7ed623fb2ee9f1b789e39e
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '423'
 ht-degree: 13%
 
 ---
@@ -21,7 +22,6 @@ ht-degree: 13%
 + Einführung in AEM Communities {#introduction}
    + [Communities-Sites](administer-landing.md)
    + [Übersicht über AEM Communities](overview.md)
-   + [Versionshinweise zu AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/communities-release-notes.html)
    + [Erste Schritte mit AEM Communities](getting-started.md)
    + [Ersteinrichtung](setup.md)
    + [Erstellen einer neuen Community-Site](create-site.md)
@@ -34,7 +34,6 @@ ht-degree: 13%
    + [Konfigurieren des Dispatchers für Communities](dispatcher.md)
 + Verwalten {#administer}
    + [User- und UGC-Verwaltungsdienst in AEM Communities](user-ugc-management-service.md)
-   + [Communities-Sites](https://experienceleague.adobe.com/docs/experience-manager-65/communities/introduction/administer-landing.html)
    + [Communities-Konsolen](consoles.md)
    + [Analytics-Konfiguration für Communities-Funktionen](analytics.md)
    + [Messaging konfigurieren](messaging.md)
@@ -74,7 +73,7 @@ ht-degree: 13%
 + Entwickeln {#develop}
    + [Entwickeln von Communities](communities.md)
    + [Social Component Framework](scf.md)
-   + [Handbuch der Community-Komponenten](components-guide.md)
+   + [Handbuch zu Community-Komponenten](components-guide.md)
    + [Komponenten, Funktionen und Funktionsgrundlagen](essentials.md)
    + [Tutorials](tutorials.md)
    + [Fehlerbehebung](troubleshooting.md)
@@ -153,4 +152,3 @@ ht-degree: 13%
    + [Aktivitätstrends](trends.md)
    + [Verwenden der Social Tag Cloud](tagcloud.md)
    + [Verwenden der Abstimmung](voting.md)
-   + [Erstellen einer Beispielseite](https://experienceleague.adobe.com/docs/experience-manager-65/communities/develop/create-sample-page.html)
