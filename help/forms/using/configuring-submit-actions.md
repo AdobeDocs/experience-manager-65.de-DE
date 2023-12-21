@@ -4,11 +4,11 @@ description: Mit Forms können Sie eine Übermittlungsaktion konfigurieren, um z
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
+source-git-commit: 23dd80f0555ddec1ca422b13fbf0d45acf5ab6a8
 workflow-type: tm+mt
-source-wordcount: '2581'
+source-wordcount: '2580'
 ht-degree: 92%
 
 ---
@@ -169,14 +169,14 @@ Verwenden Sie nach der erfolgreichen Konfiguration die Übermittlungsaktion [Mi
 
 ## An Microsoft® SharePoint-Liste übermitteln{#submit-to-sharedrive}
 
-Die Sendeaktion **[!UICONTROL An SharePoint senden]** verbindet ein adaptives Formular mit einem Microsoft® SharePoint-Speicher. Sie können die Formulardatendatei, die Anlagen oder das Datensatzdokument an den verbundenen Microsoft® Sharepoint Storage senden.
+Die **[!UICONTROL An SharePoint übermitteln]** -Übermittlungsaktion verbindet ein adaptives Formular mit einem Microsoft® SharePoint-Speicher. Sie können die Formulardatendatei, die Anlagen oder das Datensatzdokument an den verbundenen Microsoft® Sharepoint Storage senden.
 
 ### Verbinden eines adaptiven Formulars mit der Microsoft® SharePoint-Liste {#connect-af-sharepoint-list}
 
-So verwenden Sie die [!UICONTROL An SharePoint-Liste übermitteln] Sendeaktion in einem adaptiven Formular:
+So verbinden Sie ein adaptives Formular mit der Microsoft® SharePoint-Liste:
 
 1. [Erstellen einer SharePoint-Listenkonfiguration](#create-sharepoint-list-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® Sharepoint List Storage verbunden.
-1. [Verwenden des Sendevorgangs mit dem Formulardatenmodell in einem adaptiven Formular](#use-submit-using-fdm): Dadurch wird Ihr adaptives Formular mit der konfigurierten Microsoft® SharePoint verbunden.
+1. [Verwenden Sie die **Senden mit Formulardatenmodell** Übermittlungsaktion in einem adaptiven Formular](#use-submit-using-fdm): Sendet Ihre adaptiven Formulardaten an die konfigurierte Microsoft® SharePoint.
 
 #### Erstellen einer SharePoint-Listenkonfiguration {#create-sharepoint-list-configuration}
 
