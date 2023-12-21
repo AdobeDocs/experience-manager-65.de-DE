@@ -1,19 +1,19 @@
 ---
-title: Website-Administration
-description: Erfahren Sie, wie Sie mehrsprachige Websites mit Adobe Experience Manager verwalten.
+title: Multi Site Manager und Übersetzung
+description: Erfahren Sie, wie Sie Ihre Inhalte in Ihrem gesamten Projekt wiederverwenden und mehrsprachige Websites in Adobe Experience Manager verwalten können.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 4a4f464d4140cbb3882b57786b9003a89b7a9a43
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 86%
+source-wordcount: '365'
+ht-degree: 84%
 
 ---
 
-# Website-Administration{#website-administration}
+# Multi Site Manager und Übersetzung {#msm-and-translation}
 
 Die folgenden Administrations-Tools sind für die Verwaltung von Websites und Seiten verfügbar:
 
