@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 content-type: reference
 docset: aem65
-feature: Mobile Forms
+feature: HTML5 Forms
 exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
 workflow-type: tm+mt
 source-wordcount: '1402'
 ht-degree: 22%
@@ -67,7 +67,7 @@ Ein XFA-Formular kann eine große Anzahl von Abschnitten enthalten, die nur für
 
 ## Empfohlene Lesevorgänge  {#recommended-reads}
 
-Mit Adobe Experience Manager(AEM)-Formularen können Sie komplexe Transaktionen in einfache, beeindruckende digitale Erlebnisse umwandeln. Es bedarf jedoch gemeinsamer Anstrengungen zur Entwicklung effizienter und produktiver Formen. Neben HTML5 Forms finden Sie hier einige empfohlene Informationen zu allgemeinen AEM Best Practices:
+Mit Adobe Experience Manager(AEM)-Formularen können Sie komplexe Transaktionen in einfache, beeindruckende digitale Erlebnisse transformieren. Es bedarf jedoch gemeinsamer Anstrengungen zur Entwicklung effizienter und produktiver Formen. Neben HTML5 Forms finden Sie hier einige empfohlene Informationen zu allgemeinen AEM Best Practices:
 
 * [Bewährte Verfahren für das Bereitstellen und Warten von AEM](/help/sites-deploying/best-practices.md)
 * [Bewährte Verfahren zum Erstellen von Inhalten](/help/sites-authoring/best-practices.md)

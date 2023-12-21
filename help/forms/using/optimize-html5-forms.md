@@ -4,18 +4,19 @@ description: Sie können die Ausgabegröße der HTML5-Formulare optimieren.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-feature: Mobile Forms
+discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
+feature: HTML5 Forms
 exl-id: 14309ebd-8d00-4ca5-b4ab-44d80d97d066
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
 workflow-type: tm+mt
 source-wordcount: '285'
-ht-degree: 29%
+ht-degree: 36%
 
 ---
 
 # Optimieren von HTML5-Formularen {#optimizing-html-forms}
 
-HTML5 forms rendert Formulare im HTML5-Format. Die resultierende Ausgabe kann abhängig von Faktoren wie der Formulargröße und den Bildern im Formular groß sein. Um die Datenübertragung zu optimieren, wird empfohlen, die HTML-Antwort mit dem Webserver zu komprimieren, von dem aus die Anforderung bereitgestellt wird. Dieser Ansatz reduziert die Antwortgröße, den Netzwerk-Traffic und die zum Streamen von Daten zwischen dem Server und den Clientgeräten erforderliche Zeit.
+HTML5 forms rendert Formulare im HTML5-Format. Die Ausgabe kann stark von Faktoren wie der Formulargröße und den Bildern im Formular abhängen. Um die Datenübertragung zu optimieren, wird empfohlen, die HTML-Antwort mit dem Webserver zu komprimieren, von dem aus die Anforderung bereitgestellt wird. Dieser Ansatz reduziert die Antwortgröße, den Netzwerk-Traffic und die zum Streamen von Daten zwischen dem Server und den Clientgeräten erforderliche Zeit.
 
 In diesem Artikel werden die Schritte beschrieben, die zum Aktivieren der Komprimierung für den 32-Bit-Apache-Webserver 2.0 mit JBoss erforderlich sind.
 

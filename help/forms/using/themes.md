@@ -5,18 +5,18 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, interactive-communications
 content-strategy: max-2018
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '6084'
-ht-degree: 81%
+ht-degree: 82%
 
 ---
 
 # Erstellen und Verwenden von Designs {#creating-and-using-themes}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/using/create-an-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -36,7 +36,7 @@ Sie haben folgende Möglichkeiten:
 
 ## Erstellen, Herunterladen und Hochladen eines Designs {#creating-downloading-or-uploading-a-theme}
 
-Mit AEM Forms können Sie Designs erstellen, herunterladen oder hochladen. Ein Design wird wie andere Assets wie Formulare, Dokumente und Briefe erstellt. Das Design wird als separate Entität mit Meta-Eigenschaften wie Formularen gespeichert. Designs, die eine separate Entität sind, ermöglichen die Wiederverwendung in mehreren adaptiven Formularen und interaktiver Kommunikation. Sie können ein Design auch in eine andere Instanz von AEM Forms verschieben und wiederverwenden.
+Mit AEM Forms können Sie Designs erstellen, herunterladen und hochladen. Ein Design wird wie andere Assets erstellt, z. B. Formulare, Dokumente und Briefe. Das Design wird als separate Entität mit Meta-Eigenschaften wie Formularen gespeichert. Designs, die eine separate Entität sind, ermöglichen die Wiederverwendung in mehreren adaptiven Formularen und interaktiver Kommunikation. Sie können ein Design auch in eine andere Instanz von AEM Forms verschieben und wiederverwenden.
 
 ### Erstellen von Designs {#creating-a-theme}
 
@@ -73,7 +73,7 @@ Sie können Designs als ZIP-Datei exportieren und in anderen Projekten oder AEM-
 
 ### Hochladen eines Designs {#uploading-a-theme}
 
-Sie können erstellte Designs mit Stilvorgaben für Ihr Projekt verwenden. Sie können Design-Pakete importieren, die von anderen erstellt werden, indem Sie sie in Ihr Projekt hochladen.
+Sie können erstellte Designs mit Formatierungsvorgaben für Ihr Projekt verwenden. Sie können von anderen erstellte Design-Pakete importieren, indem Sie diese in Ihr Projekt hochladen.
 
 Hochladen von Designs
 

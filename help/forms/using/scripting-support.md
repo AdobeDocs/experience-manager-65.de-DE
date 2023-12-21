@@ -5,11 +5,11 @@ contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-feature: Mobile Forms
+feature: HTML5 Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
 workflow-type: tm+mt
-source-wordcount: '3896'
+source-wordcount: '3916'
 ht-degree: 21%
 
 ---
@@ -476,7 +476,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
    <td>Ohne</td>
   </tr>
   <tr>
-   <td>instanceManager</td>
+   <td>InstanceManager</td>
    <td>Das instanceManager-Objekt verwaltet das Erstellen, Entfernen und Verschieben von Formularmodellobjekten in Instanzen.<br /> </td>
    <td>Ohne</td>
   </tr>
@@ -513,7 +513,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
    <td>Das Festlegen des Namens mithilfe von Skripten ist im HTML nicht zulässig.</td>
   </tr>
   <tr>
-   <td>parent</td>
+   <td>Elternteil</td>
    <td>Ruft die übergeordnete Node für diesen Knoten ab.</td>
    <td>Ohne</td>
   </tr>
@@ -544,7 +544,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
 
 | Eigenschaft | Beschreibung | Ausnahme |
 |---|---|---|
-| instanceManager | Das instanceManager-Objekt verwaltet das Erstellen, Entfernen und Verschieben von Formularmodellobjekten in Instanzen. | Ohne |
+| InstanceManager | Das instanceManager-Objekt verwaltet das Erstellen, Entfernen und Verschieben von Formularmodellobjekten in Instanzen. | Ohne |
 
 ## content {#content}
 
@@ -579,7 +579,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
  </tbody>
 </table>
 
-## fill {#fill}
+## Füllung {#fill}
 
 <table>
  <tbody>
@@ -1101,7 +1101,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
  </tbody>
 </table>
 
-## Elemente {#items}
+## items {#items}
 
 | **Eigenschaft** | **Beschreibung** | **Ausnahme** |
 |---|---|---|
@@ -1175,14 +1175,14 @@ FormCalc ist eine XFA-spezifische Sprache zum Erstellen von e-form-zentrierten L
 
    1. Abs()
    1. Avg()
-   1. Obergrenze()
+   1. Ceil()
    1. Anzahl()
-   1. Basis()
+   1. Floor()
    1. Maximal()
    1. Min()
    1. Mod()
-   1. Runden()
-   1. Summe()
+   1. Round()
+   1. Sum()
 
 1. **Wissenschaftliche Funktionen**
 
@@ -1192,9 +1192,9 @@ FormCalc ist eine XFA-spezifische Sprache zum Erstellen von e-form-zentrierten L
    1. Atan2()
    1. Cos()
    1. Sin()
-   1. Ocker()
+   1. Tan()
    1. Exp()
-   1. Protokoll()
+   1. Log()
    1. Pow()
    1. Sqrt()
    1. Deg2Rad()
@@ -1219,20 +1219,20 @@ FormCalc ist eine XFA-spezifische Sprache zum Erstellen von e-form-zentrierten L
    1. Choose()
    1. If()
    1. Oneof()
-   1. In()
+   1. Within()
 
 1. **Zeichenfolgen-Funktionen**
 
-   1. Bei()
+   1. At()
    1. Concat()
-   1. Linksbündig()
+   1. Left()
    1. Len()
    1. Lower()
    1. Ltrim()
    1. Ersetzen()
-   1. Richtig()
+   1. Right()
    1. Rtrim()
-   1. Bereich()
+   1. Space()
    1. Stuff()
    1. Substr()
    1. Upper()

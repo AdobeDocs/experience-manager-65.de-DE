@@ -4,12 +4,12 @@ description: Die Registerkarte "HTML in der Vorschau"in LiveCycle Designer kann 
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-feature: Mobile Forms
+feature: HTML5 Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 49%
+ht-degree: 50%
 
 ---
 
@@ -76,7 +76,7 @@ Die [geschützter Modus](../../forms/using/get-xdp-pdf-documents-aem.md) ist sta
 
       * `/lc/content/xfaforms/profiles/default.html` (AEM Forms on JEE)
 
-   * **Forms Manager-Kontext:** Kontextpfad, unter dem die Forms Manager-Benutzeroberfläche bereitgestellt wird. Die Standardwerte sind:
+   * **Forms Manager-Kontext:** Kontextpfad, unter dem die Forms Manager-Benutzeroberfläche bereitgestellt wird. Die Standardwerte lauten:
 
       * `/aem/forms` (AEM Forms on OSGi)
       * `/lc/forms` (AEM Forms on JEE)
