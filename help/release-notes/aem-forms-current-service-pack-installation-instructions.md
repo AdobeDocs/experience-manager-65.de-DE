@@ -173,7 +173,7 @@ Das Paket wird automatisch installiert.
 
   >[!NOTE]
   >
-  Das Service Pack von Experience Manager unterstützt keine Bootstrap-Installation. <!-- UPDATE FOR EACH NEW RELEASE -->
+  >Das Service Pack von Experience Manager unterstützt keine Bootstrap-Installation. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **Validierung der Installation**
 
@@ -205,7 +205,7 @@ Das Paket wird automatisch installiert.
 
 >[!NOTE]
 >
-Wenn Sie das AEM Forms Service Pack für eine relationale Datenbank installieren, müssen Sie unbedingt ein Backup von DB_schema erstellen.
+>Wenn Sie das AEM Forms Service Pack für eine relationale Datenbank installieren, müssen Sie unbedingt ein Backup von DB_schema erstellen.
 
 +++
 
@@ -223,7 +223,7 @@ Wenn Sie das AEM Forms Service Pack für eine relationale Datenbank installieren
 >[!NOTE]
 >
 >
-Stellen Sie sicher, dass Sie das Redistributable installieren, auch wenn eine frühere Version bereits installiert ist, um die Verfügbarkeit der neuesten Version zu gewährleisten.
+>Stellen Sie sicher, dass Sie das Redistributable installieren, auch wenn eine frühere Version bereits installiert ist, um die Verfügbarkeit der neuesten Version zu gewährleisten.
 
 +++
 
@@ -244,7 +244,7 @@ Es gibt zwei verschiedene Methoden, mit der Sie das Service Pack von [!DNL Exper
 
   >[!NOTE]
   >
-  Das Service Pack von Experience Manager unterstützt keine Bootstrap-installation. <!-- UPDATE FOR EACH NEW RELEASE -->
+  >Das Service Pack von Experience Manager unterstützt keine Bootstrap-installation. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **Validierung der Installation**
 
