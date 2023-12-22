@@ -1,12 +1,12 @@
 ---
 title: Versionshinweise für [!DNL Adobe Experience Manager] 6.5
-description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
+description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
 source-git-commit: 8fc35ac465240cafdce5346f2f7e9ba15c8d1fef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4333'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -156,7 +156,7 @@ in
 #### [!DNL Dynamic Media]{#assets-dm-6519}
 
 * Nachdem ein Asset in AEM hochgeladen wurde, wird der Workflow `update_asset` ausgelöst. Der Workflow wird aber nie abgeschlossen. Wenn Sie sich die Workflow-Instanzen ansehen, stellt sich heraus, dass der Workflow bis zum Schritt zum Hochladen des Produkts abgeschlossen wird. Der nächste Schritt ist der Batch-Upload in Scene7. Die Benutzerin bzw. der Benutzer kann sehen, dass sich das Asset in Scene7 in der Dynamic Media Classic-App befindet. (ASSETS-30443)
-* Ein benutzerdefiniertes Servlet (API-Endpunkt) gibt einen falschen Dynamic Media(Scene7)-Dateinamen zurück. Dies tritt auf, wenn ein Asset gelöscht und durch ein Asset mit demselben Namen ersetzt wird. Das benutzerdefinierte Servlet gibt den alten Dynamic Media(Scene7)-Dateinamen zurück, während ein „jcr“-API-Aufruf den richtigen Dateinamen zurückgibt. (ASSETS-29476)
+* Ein benutzerdefiniertes Servlet (API-Endpunkt) gibt einen falschen Dynamic Media (Scene7)-Dateinamen zurück. Dies tritt auf, wenn ein Asset gelöscht und durch ein Asset mit demselben Namen ersetzt wird. Das benutzerdefinierte Servlet gibt den alten Dynamic Media(Scene7)-Dateinamen zurück, während ein „jcr“-API-Aufruf den richtigen Dateinamen zurückgibt. (ASSETS-29476)
 * Selbst wenn die Synchronisierung auf Ordnerebene deaktiviert ist, zeigen die Protokolle den Trigger „Scene7 ReplicateOnModifyListener“. `ReplicateOnModifyListener/Worker` sollte die Verarbeitung von Assets und Inhaltsfragmenten aus nicht-dynamischen Medienordnern überspringen. (ASSETS-26705)
 * Menschen mit eingeschränktem Sehvermögen werden beeinträchtigt, wenn der Fokus in den Dropdown-Elementen („Nur Inhalt“, „Ansicht“, „Weitere Optionen“) in kontrastreichen Schwarz-Weiß-Modi nicht sichtbar ist. (ASSETS-25759)
 * Menschen mit eingeschränktem Sehvermögen werden beeinträchtigt, wenn das Helligkeits-Kontrast-Verhältnis für Text auf einer Seite weniger als 4,5:1 beträgt. (ASSETS-25756)
@@ -213,8 +213,8 @@ in
 * Überschriftenebenen, die in Forms Designer korrekt zugewiesen wurden, werden in Adobe Acrobat nach dem Zufallsprinzip in ein `<P>`-Tag geändert. (LC-3921305) 
 * In einer Tabelle kann die ID eines Objekts nach der Zuweisung nicht mehr geändert werden. (LC-3921134) 
 * Wenn zusammengeführte Zellen in der Tabelle enthalten sind, steht in AEM Forms Designer keine grafische Benutzeroberfläche zum Festlegen des Bereichs (Zeile und Spalte) in einer komplexen Tabelle zur Verfügung. (LC-3919532)
-* Wenn ein Benutzer versucht, nach der Installation des Forms Add-On-Pakets auf AEM Forms Service Pack 6.5.15.0 PDF-Dokumente zu generieren, schlägt dies zwischenzeitlich fehl und zeigt den Fehler an:
-   * `OutputServiceException AEM_OUT_001_003:Unexpected Exception: 0 Out of Memory Caused by: org.omg.CORBA.COMM_FAILURE: null` (LC-3921530)
+* Wenn Benutzende versuchen, nach der Installation des Forms-Add-on-Pakets auf AEM Forms Service Pack 6.5.15.0 PDF-Dokumente zu generieren, schlägt dies zwischenzeitlich fehl und zeigt den Fehler an:
+   * `OutputServiceException AEM_OUT_001_003:Unexpected Exception: 0 Out of Memory Caused by: org.omg.CORBA.COMM_FAILURE: null`(LC-3921530) 
 
 ### Foundation{#foundation-6519}
 
@@ -523,9 +523,9 @@ Um das Problem zu beheben, suchen Sie die Datei `<AEM_Forms_Installation_dir>\jb
 Um das Problem zu beheben, [kompilieren Sie die Sling-Skripte wie JSP, Java und Sightly neu](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=de#resolution). (FORMS-8542)
 * Nach der Installation von AEM Service Pack 6.5.14.0 und höher können Benutzende beim Navigieren zu `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings` keine Schriftart aus der JEE-Admin-Benutzeroberfläche für PDF-Dokumente auswählen, da die Schriftartenliste leer erscheint. (FORMS-12095)
 
-####  von AEM Forms für JEE
+#### AEM Forms für JEE
 
-* Für Struts 2 RCE, ein beliebtes und Open-Source-Webanwendungs-Framework für die Entwicklung von Java EE-Webanwendungen, wurden kritische Sicherheitslücken gemeldet. Adobe hat veröffentlicht [AEM 6.5 Service Pack 19.1 (6.5.19.1)](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md) , um die Sicherheitslücke in AEM Forms on JEE zu beheben.
+* Für Struts 2 RCE, ein beliebtes und Open-Source-Web-Anwendungs-Framework für die Entwicklung von Java EE-Web-Anwendungen, wurden kritische Sicherheitslücken gemeldet. Adobe hat das [AEM 6.5 Service Pack 19.1 (6.5.19.1)](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md) veröffentlicht, um die Sicherheitslücke in AEM Forms auf JEE zu beheben.
 
 
 <!--The font enumeration fails due to the missing Ps2Pdf service file.-->
