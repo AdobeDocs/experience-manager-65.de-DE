@@ -3,7 +3,7 @@ title: Versionshinweise zu Adobe Experience Manager 6.5
 description: Die AEM-Versionshinweise enthalten wichtige Informationen zur neuesten Version von AEM, einschließlich neuer unterstützter Plattformen, nicht mehr unterstützter und eingestellter Funktionen und bekannter Probleme.
 exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
 source-git-commit: 7c691e275208287250f3540158a5e9948097b277
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '257'
 ht-degree: 100%
 
