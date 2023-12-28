@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Document Services-APIs zum digitalen Signiere
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-exl-id: 9bf090db-2c14-439e-ad78-6832678a309d
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+feature: Document Services
+source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
 workflow-type: tm+mt
-source-wordcount: '6419'
+source-wordcount: '6348'
 ht-degree: 46%
 
 ---
@@ -2329,7 +2329,7 @@ Sie können die Verwendungsrechte für ein Dokument entfernen, indem Sie die `re
   </tr>
   <tr>
    <td><code>unlockOptions</code><br /> </td>
-   <td>Umfasst die zum Entsperren einer verschlüsselten Datei erforderlichen Parameter. Dies ist nur dann erforderlich, wenn die Datei verschlüsselt ist.<br /> </td>
+   <td>Umfasst die zum Entsperren einer verschlüsselten Datei erforderlichen Parameter. Dies ist nur erforderlich, wenn die Datei verschlüsselt ist.<br /> </td>
   </tr>
  </tbody>
 </table>

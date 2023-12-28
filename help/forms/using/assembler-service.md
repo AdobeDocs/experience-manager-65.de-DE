@@ -5,11 +5,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 docset: aem65
-exl-id: 2acd6b19-0fe8-4994-b0f4-c9d5b9f3fdf1
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+feature: Document Services
+source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
 workflow-type: tm+mt
 source-wordcount: '2118'
-ht-degree: 24%
+ht-degree: 25%
 
 ---
 
@@ -80,7 +80,7 @@ Wenn eines oder mehrere der Eingabedokumente verschlüsselt sind, geben Sie ein 
 
 ### Zusammenstellen von Dokumenten mithilfe der Bates-Nummerierung {#assemble-documents-using-bates-numbering}
 
-Beim Zusammenführen eines Dokuments können Sie die Bates-Nummerierung verwenden, um auf jede Seite eine eindeutige Seitenkennung anzuwenden. Wenn Sie die Bates-Nummerierung verwenden, wird jeder Seite im Dokument (oder im Dokumentensatz) eine Nummer zugewiesen, die die Seite eindeutig identifiziert. Beispielsweise können Fertigungsdokumente, die Materialaufstellungsinformationen enthalten und mit der Herstellung einer Baugruppe verbunden sind, einen Bezeichner enthalten. Eine Bates-Nummer enthält einen sequenziell inkrementierten numerischen Wert sowie ein optionales Präfix und Suffix. Das Präfix + numerischer Wert + Suffix wird als Bates-Muster bezeichnet.
+Beim Zusammenführen eines Dokuments können Sie die Bates-Nummerierung verwenden, um auf jede Seite eine eindeutige Seitenkennung anzuwenden. Wenn Sie die Bates-Nummerierung verwenden, wird jeder Seite im Dokument (oder im Dokumentensatz) eine Nummer zugewiesen, die die Seite eindeutig identifiziert. Beispielsweise können Fertigungsdokumente, die Materialaufstellungsinformationen enthalten und mit der Herstellung einer Baugruppe verbunden sind, eine Kennung enthalten. Eine Bates-Nummer enthält einen numerischen Wert, der sequenziell inkrementiert wird, sowie ein optionales Präfix und Suffix. Das Präfix + numerischer Wert + Suffix wird als Bates-Muster bezeichnet.
 
 Die folgende Abbildung zeigt ein PDF-Dokument, das eine eindeutige Kennung in der Kopfzeile des Dokuments enthält.
 

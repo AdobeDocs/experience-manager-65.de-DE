@@ -5,11 +5,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 docset: aem65
+feature: Document Services
 exl-id: 4c8a3877-1a3c-410d-ad1f-69c73ba4fcc1
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
 workflow-type: tm+mt
 source-wordcount: '1413'
-ht-degree: 31%
+ht-degree: 36%
 
 ---
 
@@ -101,17 +102,17 @@ Der DocAssurance-Dienst umfasst drei Dienste: Signature, Encryption und Reader E
 
 ### Signature-Dienst {#signature-service}
 
-Mit dem Signature-Dienst können Sie mit digitalen Signaturen und Dokumenten auf dem AEM-Server arbeiten. Der Signature-Dienst wird beispielsweise in der Regel in folgenden Situationen verwendet:
+Mit dem Signature-Dienst können Sie mit digitalen Signaturen und Dokumenten auf dem AEM-Server arbeiten. Der Signatur-Dienst wird beispielsweise in der Regel in folgenden Situationen verwendet:
 
-* Der AEM-Server zertifiziert ein Formular, bevor es an einen Benutzer zum Öffnen mithilfe von Acrobat oder Adobe Reader gesendet wird.
-* Der AEM überprüft eine Signatur, die einem Formular mithilfe von Acrobat oder Adobe Reader hinzugefügt wurde.
-* Der AEM-Server signiert ein Formular im Namen eines öffentlichen Notars.
+* Der AEM-Server zertifiziert ein Formular, bevor es an eine Person zum Öffnen mithilfe von Acrobat oder Adobe Reader gesendet wird.
+* Der AEM-Server überprüft eine Signatur, die einem Formular mithilfe von Acrobat oder Adobe Reader hinzugefügt wurde.
+* Der AEM-Server signiert ein Formular im Namen einer öffentlichen beglaubigenden Person.
 
 Der Signature-Dienst greift auf Zertifikate und Berechtigungen zu, die im Trust Store gespeichert sind.
 
 ### Encryption-Service {#encryption-service}
 
-Mit dem Encryption-Dienst können Sie Dokumente verschlüsseln und entschlüsseln. Wird ein Dokument verschlüsselt, ist sein Inhalt nicht mehr lesbar. Sie können das gesamte PDF-Dokument (einschließlich Inhalt, Metadaten und Anlagen), alles außer den Metadaten oder nur die Anlagen verschlüsseln. Ein autorisierter Benutzer kann das Dokument entschlüsseln, um Zugriff auf seinen Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, müssen die Benutzenden das Kennwort zum Öffnen angeben, damit das Dokument in Reader oder Adobe Acrobat angezeigt werden kann. Wenn ein PDF-Dokument mit einem Zertifikat verschlüsselt ist, muss der Benutzer das PDF-Dokument mit einem privaten Schlüssel (Zertifikat) entschlüsseln. Der zum Entschlüsseln des PDF-Dokuments verwendete private Schlüssel muss dem öffentlichen Schlüssel entsprechen, der zum Verschlüsseln verwendet wird.
+Mit dem Encryption-Dienst können Sie Dokumente verschlüsseln und entschlüsseln. Wenn ein Dokument verschlüsselt wird, ist sein Inhalt unlesbar. Sie können das gesamte PDF-Dokument (einschließlich Inhalt, Metadaten und Anlagen), alles außer den Metadaten oder nur die Anlagen verschlüsseln. Eine autorisierte Person kann das Dokument entschlüsseln, um Zugriff auf seinen Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, müssen die Benutzenden das Kennwort zum Öffnen angeben, damit das Dokument in Reader oder Adobe Acrobat angezeigt werden kann. Wenn ein PDF-Dokument mit einem Zertifikat verschlüsselt ist, muss der Benutzer das PDF-Dokument mit einem privaten Schlüssel (Zertifikat) entschlüsseln. Der zum Entschlüsseln des PDF-Dokuments verwendete private Schlüssel muss dem öffentlichen Schlüssel entsprechen, der zum Verschlüsseln verwendet wird.
 
 ### Reader Extension-Dienst {#reader-extension-service}
 
