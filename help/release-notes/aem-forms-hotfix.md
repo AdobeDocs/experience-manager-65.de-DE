@@ -1,17 +1,17 @@
 ---
-title: Hotfix für AEM Formular Service Pack
-description: Enthält Informationen zum Herunterladen und Installieren des Hotfixes für das AEM Forms Service Pack
-source-git-commit: 169d407835098add0312b0d12c2c80035b525762
+title: Hotfixes für AEM Forms
+description: Enthält Informationen zum Herunterladen und Installieren eines Hotfixes für AEM Forms.
+exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
+source-git-commit: 276b0122fb3d88c584dd6b2b4c2c6f6eda9d0537
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 17%
+source-wordcount: '200'
+ht-degree: 14%
 
 ---
 
+# Adobe Experience Manager Forms Hotfixes{#aem-form-hotfix}
 
-# Adobe Experience Manager Hotfixes{#aem-form-hotfix}
-
-Die Installation der neuesten [AEM Service Pack](/help/release-notes/release-notes.md) wird empfohlen, die Sicherheits-, Leistungs-, Stabilitäts- und wichtige Fehlerbehebungen und Verbesserungen umfasst, die seit der allgemeinen Verfügbarkeit von Adobe Experience Manager 6.5 veröffentlicht wurden.
+In diesem Artikel werden die kritischen Fehlerbehebungen aufgelistet, die implementiert wurden, um bekannte Probleme zu beheben, die Systemstabilität zu verbessern und die Gesamtleistung von AEM Forms zu verbessern.
 
 ## Hotfixes für adaptive Forms {#hotfix-for-adaptive-forms}
 
@@ -19,11 +19,11 @@ Die Installation der neuesten [AEM Service Pack](/help/release-notes/release-not
   <tbody>
   <tr>
     <td><strong>Datum</strong></td>
-    <td><strong>Hotfix-Namen</strong></td>
-    <td><strong>Fehlerkorrekturen</strong></td>
+    <td><strong>Hotfix-Downloadlink (Link AEM Softwareverteilung)</strong></td>
+    <td><strong>Behobene Probleme</strong></td>
    </tr>
    <tr>
-    <td>20. November 2023</td>
+    <td>Dienstag, 20. November 2023</td>
      <td>
      <ul>
      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-linux-pkg-6.0.1016-002.zip">Hotfix für AEM Service Pack 6.5.18.0 für Linux</a> </li>
@@ -42,11 +42,11 @@ Die Installation der neuesten [AEM Service Pack](/help/release-notes/release-not
     <tbody>
      </table>
 
-## Herunterladen und Installieren von Hotfix {#download-install-hotfix}
+## Hotfix herunterladen und installieren {#download-install-hotfix}
 
 Führen Sie die folgenden Schritte aus, um das Hotfix herunterzuladen und zu installieren:
 
-1. Herunterladen [Hotfix](#hotfix-for-adaptive-forms) aus der SD-Verknüpfung.
+1. Herunterladen [Hotfix](#hotfix-for-adaptive-forms) über den Link Softwareverteilung.
 1. Extrahieren Sie die Hotfix-Archivdatei, damit Sie ein Experience Manager-Paket (.zip) und Bundle-Dateien (.jar) abrufen können.
-1. Laden Sie das Paket (.zip) über den Package Manager hoch und installieren Sie es.
-1. Öffnen Sie die Bundles des Konfigurations-Managers `https://server:host/system/console/bundles`, laden Sie sie hoch und installieren Sie das Bundle (.jar).
+1. Laden Sie das Paket (.zip) über die [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
+1. Öffnen Sie die Konfigurations-Manager-Pakete. `https://server:host/system/console/bundles`, laden Sie das Bundle hoch und installieren Sie es (.jar). Der Hotfix ist installiert.
