@@ -2,10 +2,10 @@
 title: Hotfixes für AEM Forms
 description: Enthält Informationen zum Herunterladen und Installieren eines Hotfixes für AEM Forms.
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
-source-git-commit: 276b0122fb3d88c584dd6b2b4c2c6f6eda9d0537
+source-git-commit: 4c47fc5d03732d206c9eb18feb6e44018e936472
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 14%
+source-wordcount: '201'
+ht-degree: 13%
 
 ---
 
@@ -19,7 +19,7 @@ In diesem Artikel werden die kritischen Fehlerbehebungen aufgelistet, die implem
   <tbody>
   <tr>
     <td><strong>Datum</strong></td>
-    <td><strong>Hotfix-Downloadlink (Link AEM Softwareverteilung)</strong></td>
+    <td><strong>Hotfix-Downloadlink (AEM Software Distribution-Link)</strong></td>
     <td><strong>Behobene Probleme</strong></td>
    </tr>
    <tr>
@@ -27,8 +27,8 @@ In diesem Artikel werden die kritischen Fehlerbehebungen aufgelistet, die implem
      <td>
      <ul>
      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-linux-pkg-6.0.1016-002.zip">Hotfix für AEM Service Pack 6.5.18.0 für Linux</a> </li>
-     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-win-pkg-6.0.1016-002.zip">Hotfix für AEM Service Pack 6.5.18.0 für Windows</a> </li>
-     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-osx-pkg-6.0.1016-002.zip">Hotfix für AEM Service Pack 6.5.18.0 für Mac OS</a></li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-win-pkg-6.0.1016-002.zip">Hotfix für AEM Service Pack 6.5.18.0 für Microsoft Windows</a> </li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-osx-pkg-6.0.1016-002.zip">Hotfix für AEM Service Pack 6.5.18.0 für Apple macOS</a></li>
      </ul>
      </td>
     <td>
