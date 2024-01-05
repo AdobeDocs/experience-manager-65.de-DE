@@ -2,9 +2,9 @@
 title: Veraltete und entfernte Funktionen in Adobe Experience Manager Version 6.5.
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: b0ba4e0c91d3c40acf5bf7336ba2af0c8c01cd32
+source-git-commit: 5c10c5d20338b696fdab2291c714a7d6313cca8a
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1689'
 ht-degree: 91%
 
 ---
@@ -32,7 +32,6 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 | Bereich | Funktion | Ersatz | Version (SP) |
 |---|---|---|---|
 | Sites | Der Dienst **Adobe AEM Managed Polling Configuration**: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | Der Dienst **Adobe AEM Analytics Report-Sling-Importer**. Siehe „Herstellen einer Verbindung zu Adobe Analytics und Erstellen von Frameworks“ – [Konfigurieren des Importintervalls](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
-| Screens | ActiveMQ in AEM. ActiveMQ wurde für die Kommunikation zwischen zwei AEM-Publishing-Instanzen verwendet. | Adobe empfiehlt Kundinnen und Kunden die Verwendung des Lastenausgleichs. |  |
 | [!DNL Sites] | Experience Fragments-Eigenschaften für **Social-Media-Status**. |   | 6.5.11.0 |
 | [!DNL Sites] | Inhaltsfragmentvorlagen zum Erstellen einfacher Inhaltsfragmente. | Jetzt [Modellbasierte strukturierte Inhaltsfragmente](/help/assets/content-fragments/content-fragments-models.md). | 6.5.11.0 |
 | Creative Cloud-Integration | Die Ordnerfreigabe von AEM zu Creative Cloud wurde in AEM 6.2 eingeführt. Sie bietet eine Möglichkeit, kreativen Benutzerinnen und Benutzern Zugriff auf Elemente aus AEM zu geben, damit sie diese in [!DNL Creative Cloud]-Anwendungen öffnen und neue Dateien hochladen oder Änderungen in AEM speichern können.  Eine neue Funktion im Creative Cloud-Client, Adobe Asset Link, bietet ein besseres Benutzererlebnis und einen leistungsfähigeren Zugriff auf AEM-Assets direkt aus Photoshop, InDesign und Illustrator heraus.  Adobe plant keine weiteren Verbesserungen an der Integration der Ordnerfreigabe aus AEM in Creative Cloud. Obwohl die Funktion in AEM enthalten ist, wird Kundinnen und Kunden der Einsatz von Ersatzlösungen empfohlen. | Kunden sollten auf neue Creative Cloud-Integrationsfunktionen wie Adobe Asset Link oder AEM Desktop-App umsteigen. |  |
@@ -76,7 +75,7 @@ In diesem Abschnitt werden die Merkmale und Funktionen aufgelistet, die aus AEM�
 | Entwickler | Die Unterstützung für `customJavaScriptPath` wurde im HTML Client Library Manager eingestellt. | Kein Ersatz vorhanden |  |
 | [!DNL Assets] | Die Asset-Auslagerungsfunktion wurde in [!DNL Adobe Experience Manager] 6.5 entfernt. | Es steht kein Ersatz zur Verfügung. |  |
 | Cache | `system/console/slingjsp` wurde entfernt und ist in AEM 6.5 nicht mehr verfügbar. | Klassen und Slightly-Cache werden im Apache Sling Commons FileSystem ClassLoader-Bundle gespeichert. Sie können die Bundle-Nummer in der AEM-Web-Konsole überprüfen und den Cache-Ordner direkt aus dem Dateisystem entfernen (`crx-quickstart/launchpad/felix/bundle<ID>`). |  |
-| Screens | Adobe plant keine weitere Pflege und Aktualisierung des com.adobe.cq.screens.mq.activemq-Bundles und der zugehörigen Konfigurationen. | Es steht kein Ersatz zur Verfügung. |  |
+| Screens | Die Unterstützung für das activemq-Bundle und die zugehörigen Konfigurationen wurden entfernt. |  |  |
 
 <!-- ## Pre-announcement for next release {#pre-announcement-for-next-release}
 
