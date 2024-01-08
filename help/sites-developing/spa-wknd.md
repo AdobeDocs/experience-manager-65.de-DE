@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 exl-id: 59ada14e-3cb1-4f2c-b866-a2bb130db3fc
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '129'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ Tauchen Sie mit diesem mehrteiligen Tutorial in die SPA-Entwicklung ein. Impleme
 
 Ein Komplettbeispiel für das Erstellen einer eigenen Single Page Application, die mit AEM bearbeitet werden kann, von der Projekteinrichtung bis zum Anwendungs-Routing, finden Sie in den WKND-SPA-Tutorials:
 
-* [Erste Schritte mit dem AEM SPA-Editor und Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=de)
+* [Erste Schritte mit dem AEM SPA-Editor und Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
 * [Erste Schritte mit dem AEM SPA-Editor und React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=de)
 
 Bevor Sie jedoch Ihr eigenes SPA-Projekt für AEM starten, sollten Sie auch das Dokument [Entwickeln von SPAs für AEM](/help/sites-developing/spa-architecture.md) lesen.

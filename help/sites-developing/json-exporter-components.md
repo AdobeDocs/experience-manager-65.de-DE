@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 6d127e14-767e-46ad-aaeb-0ce9dd14d553
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 68%
+source-wordcount: '471'
+ht-degree: 69%
 
 ---
 
@@ -48,7 +48,7 @@ Außerdem kann die Sling-Modell-Klasse dadurch in der `ComponentExporter`-Oberfl
 
 >[!NOTE]
 >
->Jackson-Anmerkungen werden nicht auf der Ebene der Sling-Modell-Klasse, sondern auf der Ebene der Modell-Oberfläche angegeben. Dadurch soll sichergestellt werden, dass der JSON-Export als Teil der Komponenten-API betrachtet wird.
+>Jackson-Anmerkungen werden nicht auf der Ebene der Sling-Modell-Klasse, sondern auf der Ebene der Modell-Oberfläche angegeben. Damit wird sichergestellt, dass der JSON-Export als Teil der Komponenten-API gewertet wird.
 
 >[!NOTE]
 >

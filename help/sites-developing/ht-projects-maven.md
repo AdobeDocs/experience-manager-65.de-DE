@@ -1,11 +1,11 @@
 ---
 title: Erstellen von AEM-Projekten mit Apache Maven
-description: In diesem Dokument wird beschrieben, wie Sie ein AEM-Projekt einrichten, das auf Apache Maven basiert
+description: In diesem Dokument wird beschrieben, wie Sie ein AEM auf der Basis von Apache Maven einrichten.
 exl-id: 451913bf-bb1e-4444-aee5-968ac30b5c9d
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '149'
-ht-degree: 100%
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+workflow-type: tm+mt
+source-wordcount: '129'
+ht-degree: 88%
 
 ---
 
@@ -19,6 +19,6 @@ AEM 6.5 befolgt die neuesten Best Practices für Paketverwaltung und Projektstru
 >
 >* Informationen zur Strukturierung moderner AEM-Projekte im Artikel zur [AEM-Projektstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=de) in der Dokumentation zu AEM as a Cloud Service.
 >* Informationen zum Starten eines neuen AEM-Projekts mit dem Archetyp in der Dokumentation zum [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de).
->* Informationen zur Bereitstellung von AEM-Anwendungen im Artikel zum [Adobe Content Package Maven-Plug-in](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/maven-plugin.html?lang=de) in der Dokumentation zu AEM as a Cloud Service.
+>* Informationen zur Bereitstellung von AEM-Anwendungen im Artikel zum [Adobe Content Package Maven-Plug-in](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) in der Dokumentation zu AEM as a Cloud Service.
 >
 >Alle drei Dokumente beziehen sich auf AEM 6.5.

@@ -1,27 +1,27 @@
 ---
 title: Verwenden von Bedingungen zum Ausblenden
-description: Ausblendebedingungen können verwendet werden, um zu bestimmen, ob eine Komponentenressource gerendert wird oder nicht.
+description: Ausblendungsbedingungen können verwendet werden, um zu bestimmen, ob eine Komponentenressource gerendert wird oder nicht.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 44%
+source-wordcount: '582'
+ht-degree: 71%
 
 ---
 
 # Verwenden von Bedingungen zum Ausblenden {#using-hide-conditions}
 
-Ausblendebedingungen können verwendet werden, um zu bestimmen, ob eine Komponentenressource gerendert wird oder nicht. Ein Beispiel dafür wäre, wenn ein Vorlagenautor die Kernkomponente konfiguriert [Listenkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=de) im [Vorlageneditor](/help/sites-authoring/templates.md) und beschließt, die Optionen zum Erstellen der Liste basierend auf untergeordneten Seiten zu deaktivieren. Durch Deaktivieren dieser Option im Dialogfeld &quot;Design&quot;wird eine Eigenschaft so festgelegt, dass beim Rendern der Listenkomponente die Bedingung zum Ausblenden ausgewertet und die Option zum Anzeigen untergeordneter Seiten nicht angezeigt wird.
+Ausblendungsbedingungen können verwendet werden, um zu bestimmen, ob eine Komponentenressource gerendert wird oder nicht. Ein Beispiel dafür wäre, wenn ein Vorlagenautor die Kernkomponente konfiguriert [Listenkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=de) im [Vorlageneditor](/help/sites-authoring/templates.md) und beschließt, die Optionen zum Erstellen der Liste basierend auf untergeordneten Seiten zu deaktivieren. Durch Deaktivieren dieser Option im Dialogfeld &quot;Design&quot;wird eine Eigenschaft so festgelegt, dass beim Rendern der Listenkomponente die Bedingung zum Ausblenden ausgewertet und die Option zum Anzeigen untergeordneter Seiten nicht angezeigt wird.
 
 ## Übersicht {#overview}
 
-Dialogfelder können mit zahlreichen Optionen für den Benutzer komplex werden, der möglicherweise nur einen Bruchteil der verfügbaren Optionen verwendet. Dies kann zu überwältigenden Benutzeroberflächen-Erlebnissen führen.
+Dialogfelder können mit zahlreichen Optionen für den Benutzer komplex werden, der möglicherweise nur einen Bruchteil der verfügbaren Optionen verwendet. Dies kann dazu führen, dass Benutzende mit der Benutzeroberfläche überfordert sind.
 
-Durch die Verwendung von Bedingungen zum Ausblenden können Administratoren, Entwickler und Superuser Ressourcen anhand eines Regelsatzes ausblenden. Mit dieser Funktion können sie entscheiden, welche Ressourcen angezeigt werden sollen, wenn ein Autor Inhalte bearbeitet.
+Durch die Verwendung von Ausblendungsbedingungen können Admins, Entwicklungspersonen und Superuser Ressourcen anhand eines Regelsatzes ausblenden. Mit dieser Funktion können sie entscheiden, welche Ressourcen angezeigt werden sollen, wenn eine Autorin oder ein Autor Inhalte bearbeitet.
 
 >[!NOTE]
 >
@@ -57,9 +57,9 @@ Beispiele für Bedingungen zum Ausblenden finden sich überall in AEM und insbes
 
 [Mit dem Vorlageneditor](/help/sites-authoring/templates.md) kann der Vorlagenautor im Design-Dialogfeld festlegen, welche Optionen der Listenkomponente dem Seitenautor zur Verfügung stehen. Optionen wie die Erlaubnis, dass die Liste eine statische Liste, eine Liste untergeordneter Seiten, eine Liste mit getaggten Seiten usw. sein soll, können aktiviert oder deaktiviert werden.
 
-Wenn ein Vorlagenautor die Option für untergeordnete Seiten deaktiviert, wird eine Designeigenschaft festgelegt und eine Ausblendebedingung dafür ausgewertet, wodurch die Option für den Seitenautor nicht gerendert wird.
+Wenn eine Vorlagenautorin oder ein Vorlagenautor die Option für untergeordnete Seiten deaktiviert, wird eine Design-Eigenschaft festgelegt und eine Ausblendebedingung dafür ausgewertet, wodurch die Option für die Seitenautorin bzw. den Seitenautor nicht gerendert wird.
 
-1. Standardmäßig kann der Seitenautor die Listenkernkomponente verwenden, um eine Liste mit untergeordneten Seiten zu erstellen, indem er die Option auswählt **Untergeordnete Seiten**.
+1. Standardmäßig kann die Seitenautorin bzw. der Seitenautor die Listenkernkomponente verwenden, um mithilfe der Option **Untergeordnete Seiten** eine Liste mit untergeordneten Seiten zu erstellen.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 

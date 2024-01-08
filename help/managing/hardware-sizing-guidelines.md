@@ -7,9 +7,9 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '2798'
+source-wordcount: '2846'
 ht-degree: 46%
 
 ---
@@ -86,7 +86,7 @@ Der erforderliche Speicherplatz hängt stark vom Volumen und Typ Ihrer Webanwend
 * das Volumen der DAM-Asset-Ausgabedarstellungen, die generiert werden
 * das Gesamtwachstum von Inhalten im Zeitverlauf
 
-Der Festplattenspeicher wird während der Online- und Offline-Revisionsbereinigung kontinuierlich überwacht. Wenn der verfügbare Speicherplatz unter einen kritischen Wert fällt, wird der Prozess abgebrochen. Dieser kritische Wert beträgt 25 % des aktuell belegten Speicherplatzes des Repositorys und kann nicht konfiguriert werden. Adobe empfiehlt, die Größe der Festplatte mindestens zwei- oder dreimal größer als die Repository-Größe einschließlich des geschätzten Wachstums zu ändern.
+Der Festplattenspeicher wird während der Online- und Offline-Revisionsbereinigung kontinuierlich überwacht. Wenn der verfügbare Speicherplatz unter einen kritischen Wert fällt, wird der Prozess abgebrochen. Der kritische Wert beträgt 25 % des aktuellen Speicherplatzbedarfs des Repositorys und kann nicht konfiguriert werden. Adobe empfiehlt, die Größe der Festplatte mindestens zwei- oder dreimal größer als die Repository-Größe einschließlich des geschätzten Wachstums zu ändern.
 
 Erwägen Sie die Einrichtung redundanter Arrays unabhängiger Festplatten (RAID, z. B. RAID10) zur Datenredundanz.
 

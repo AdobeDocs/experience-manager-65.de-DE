@@ -2,10 +2,10 @@
 title: Optimieren von GraphQL-Abfragen
 description: Erfahren Sie, wie Sie Ihre GraphQL-Abfragen beim Filtern, Paging und Sortieren Ihrer Inhaltsfragmente in Adobe Experience Manager as a Cloud Service für die Bereitstellung Headless Content optimieren können.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1965'
-ht-degree: 61%
+source-wordcount: '1949'
+ht-degree: 60%
 
 ---
 
@@ -35,14 +35,14 @@ Beständige GraphQL-Abfragen helfen durch die Verwendung des Content Delivery Ne
 
 Siehe:
 
-* [Persistente GraphQL-Abfragen](/help/sites-developing/headless/graphql-api/persisted-queries.md).
+* [Beständige GraphQL-Abfragen](/help/sites-developing/headless/graphql-api/persisted-queries.md).
 * [Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
 
 #### Installieren des GraphQL Index-Pakets {#install-graphql-index-package}
 
 **Empfehlung**
 
-Kunden, die GraphQL verwenden *must* Installieren Sie das Experience Manager-Inhaltsfragment mit dem GraphQL-Indexpaket. Auf diese Weise können Sie die erforderliche Indexdefinition auf der Grundlage der tatsächlich verwendeten Funktionen hinzufügen. Wenn dieses Paket nicht installiert wird, kann es zu langsamen oder fehlgeschlagenen GraphQL-Abfragen kommen.
+Kunden, die GraphQL verwenden *must* Installieren Sie das Experience Manager-Inhaltsfragment mit dem GraphQL-Indexpaket. Auf diese Weise können Sie die erforderliche Indexdefinition hinzufügen, die auf den tatsächlich verwendeten Funktionen basiert. Wenn dieses Paket nicht installiert wird, kann es zu langsamen oder fehlgeschlagenen GraphQL-Abfragen kommen.
 
 Die für Ihr Service Pack geeignete Version finden Sie in den Versionshinweisen . Das neueste Service Pack finden Sie beispielsweise unter [Installieren des GraphQL-Indexpakets für Experience Manager-Inhaltsfragmente](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) .
 
@@ -69,7 +69,7 @@ Zur Optimierung können auch verschiedene Methoden der Zwischenspeicherung verwe
 
 Siehe:
 
-* [Persistente GraphQL-Abfragen - Aktivierung der Zwischenspeicherung im Dispatcher](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-persisted-queries-enabling-caching-dispatcher)
+* [Persistierte GraphQL-Abfragen – Aktivieren der Caching-Funktion im Dispatcher](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-persisted-queries-enabling-caching-dispatcher)
 
 #### Verwenden eines Content Delivery Network (CDN) {#use-cdn}
 
@@ -81,7 +81,7 @@ GraphQL-Abfragen und ihre JSON-Antworten können zwischengespeichert werden, wen
 
 Siehe:
 
-* [Verwenden von CDN in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de#using-dispatcher-with-a-cdn)
+* [Verwenden von CDN in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
 
 #### Festlegen von HTTP-Cache-Steuerelement-Headern {#set-http-cache-control-headers}
 

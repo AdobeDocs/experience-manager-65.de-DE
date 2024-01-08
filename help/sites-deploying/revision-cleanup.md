@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: deploying
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '5811'
-ht-degree: 68%
+source-wordcount: '5752'
+ht-degree: 67%
 
 ---
 
@@ -22,7 +22,7 @@ Jede Aktualisierung des Repositorys erzeugt eine Inhaltsrevision. Daher wächst 
 
 Mit AEM 6.3 und höher wurde eine Online-Version dieser Funktion namens Online-Revisionsbereinigung eingeführt. Verglichen mit der Offline-Revisionsbereinigung, bei der die AEM-Instanz beendet werden muss, kann die Online-Revisionsbereinigung ausgeführt werden, wenn die AEM-Instanz online ist. Die Online-Revisionsbereinigung ist standardmäßig aktiviert und ist die empfohlene Methode zur Durchführung der Revisionsbereinigung.
 
-**Hinweis**: [Im Video](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=en) finden Sie eine Einführung in die Verwendung der Online-Revisionsbereinigung.
+**Hinweis**: [Im Video](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) finden Sie eine Einführung in die Verwendung der Online-Revisionsbereinigung.
 
 Der Revisionsbereinigungsprozess besteht aus drei Phasen: **Schätzung**, **compaction**, und **bereinigen**. Die Schätzung bestimmt, ob die nächste Phase (Komprimierung) ausgeführt werden soll oder nicht, je nachdem, wie viel Speicherabfall möglicherweise erfasst wird. Während der Komprimierungsphase werden Segmente und TAR-Dateien neu geschrieben, wobei nicht verwendete Inhalte ausgeschlossen werden. In der Bereinigungsphase werden dann die alten Segmente entfernt, einschließlich aller darin enthaltenen Speicherbereinigungen. Der Offline-Modus kann in der Regel mehr Speicherplatz zurückgewinnen, da der Online-Modus AEM Arbeitsset berücksichtigen muss, in dem zusätzliche Segmente nicht erfasst werden.
 
@@ -492,7 +492,7 @@ Manchmal verzögert der Wechsel zwischen dem Tail- und dem vollständigen Kompri
     <ol>
      <li>Eine Anwendung, die die empfohlenen Zugriffsmechanismen (wie Sling und die JCR-API) umgeht und eine API/SPI der unteren Ebene verwendet, um auf das Repository zuzugreifen, und dann die Aufbewahrungsdauer eines Segments überschreitet. Das heißt, sie bewahrt einen Verweis auf eine Entität länger auf als die von der Online-Revisionsbereinigung erlaubte Aufbewahrungsdauer (standardmäßig 24 Stunden). Dieser Fall ist vorübergehend und führt nicht zu einer Beschädigung der Daten. Verwenden Sie für die Wiederherstellung das Tool „oak-run“, um den vorübergehenden Status der Ausnahme zu bestätigen (bei der Überprüfung mit „oak-run“ sollten keine Fehler gemeldet werden). Dazu muss die Instanz offline geschaltet und danach neu gestartet werden.</li>
      <li>Ein externes Ereignis verursachte die Beschädigung der Daten auf der Festplatte. Dabei kann es sich um einen Datenträgerfehler, ungenügenden Speicherplatz oder eine versehentliche Änderung der erforderlichen Datendateien handeln. In diesem Fall muss die Instanz offline geschaltet und mithilfe der Oak-Run-Prüfung repariert werden. Weitere Informationen zum Ausführen von Prüfungen mit „oak-run“ finden Sie in der <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Apache-Dokumentation</a>.</li>
-     <li>Alle anderen Vorkommnisse über die <a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home?lang=de#support" target="_blank">Adobe-Kundenunterstützung</a>.</li>
+     <li>Alle anderen Vorkommnisse über die <a href="https://experienceleague.adobe.com/?lang=de&amp;support-solution=General&amp;support-tab=home#support" target="_blank">Adobe-Kundenunterstützung</a>.</li>
     </ol> </td>
    <td> </td>
   </tr>
@@ -523,7 +523,7 @@ Die Datei &quot;error.log&quot;ist ausführlich, wenn während des Online-Revisi
   </tr>  
   <tr>
     <td>Schätzung</td>
-    <td>TarMK GC #2: estimation skipped because compaction is paused.</td>
+    <td>TarMK GC #2: Schätzung wurde übersprungen, weil die Komprimierung angehalten wurde.</td>
     <td>Die Schätzungsphase wird übersprungen, wenn die Komprimierung im System durch die Konfiguration deaktiviert ist.</td>
     <td>Aktivieren Sie die Online-Revisionsbereinigung.</td>
   </td>
@@ -537,7 +537,7 @@ Die Datei &quot;error.log&quot;ist ausführlich, wenn während des Online-Revisi
   </tr>
   <tr>
     <td>Komprimierung</td>
-    <td>TarMK GC #2: compaction paused.</td>
+    <td>TarMK GC #2: Komprimierung angehalten.</td>
     <td>Solange die Komprimierungsphase durch die Konfiguration angehalten wird, wird weder die Schätzungsphase noch die Komprimierungsphase ausgeführt.</td>
     <td>Aktivieren Sie die Online-Revisionsbereinigung.</td>
   </td>
@@ -558,7 +558,7 @@ Die Datei &quot;error.log&quot;ist ausführlich, wenn während des Online-Revisi
   </tr>
   <tr>
     <td>Bereinigen</td>
-    <td>TarMK GC #2: cleanup interrupted.</td>
+    <td>TarMK GC #2: Bereinigung unterbrochen.</td>
     <td>Die Bereinigung wurde durch Herunterfahren des Repositorys abgebrochen. Es sind keinerlei Auswirkungen auf die Konsistenz zu erwarten. Außerdem wird wahrscheinlich nicht der gesamte Festplattenspeicher zurückgewonnen. Dieser wird beim nächsten Revisionsbereinigungszyklus zurückgewonnen.</td>
     <td>Finden Sie heraus, warum das Repository heruntergefahren wurde, und versuchen Sie in Zukunft, das Repository nicht während eines Wartungsfensters herunterzufahren.</td>
   </td>

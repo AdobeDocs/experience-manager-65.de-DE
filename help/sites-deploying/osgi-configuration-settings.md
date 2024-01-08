@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3360'
 ht-degree: 98%
@@ -35,7 +35,7 @@ Die folgenden OSGi-Konfigurationseinstellungen (aufgeführt nach Bundle) sind f�
 
 >[!NOTE]
 >
->Das OSGi Configuration Diff-Tool, Teil der [AEM Tools](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=de), kann verwendet werden, um die standardmäßigen OSGi-Konfigurationen aufzulisten.
+>Das OSGi Configuration Diff-Tool, Teil der [AEM Tools](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html), kann verwendet werden, um die standardmäßigen OSGi-Konfigurationen aufzulisten.
 
 >[!NOTE]
 >
@@ -179,7 +179,7 @@ Siehe [AEM-Protokollierung](/help/sites-deploying/configure-logging.md) und [Sli
 
 **Apache Sling Referrer-Filter** Um bekannte Sicherheitsprobleme mit Cross-Site Request-Forgery (CSRF) in CRX WebDAV und Apache Sling zu beheben, müssen Sie den Referrer-Filter konfigurieren.
 
-Der Referrer-Filterdienst ist ein OSGi-Dienst, mit dem Sie Folgendes konfigurieren können:
+Der Referrer-Filter-Service ist ein OSGi-Service, mit dem Sie Folgendes konfigurieren können:
 
 * welche HTTP-Methoden gefiltert werden sollen
 * Ob eine leere Referrer-Kopfzeile zulässig ist
@@ -271,7 +271,7 @@ Falls ein konfigurierter Pfadwert mit einem Schrägstrich endet, wird die gesamt
 
 >[!CAUTION]
 >
->Wenn Sie die Einstellung für **Minimieren** oder **Gzip** ändern, löschen Sie die Inhalte des Clientlibs-Caches. Mehr Details finden Sie im [Knowledgebase-Artikel](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=de).
+>Wenn Sie die Einstellung für **Minimieren** oder **Gzip** ändern, löschen Sie die Inhalte des Clientlibs-Caches. Mehr Details finden Sie im [Knowledgebase-Artikel](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html).
 
 >[!NOTE]
 >

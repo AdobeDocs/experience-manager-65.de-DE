@@ -1,16 +1,16 @@
 ---
 title: Entwicklermodus
-description: Der Entwicklermodus öffnet einen Seitenbereich mit mehreren Registerkarten mit Informationen für Entwickler zur aktuellen Seite..
+description: Der Entwicklermodus öffnet ein seitliches Bedienfeld mit mehreren Registerkarten, die Entwicklern Informationen über die aktuelle Seite bereitstellen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 docset: aem65
 exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 72%
+source-wordcount: '683'
+ht-degree: 71%
 
 ---
 
@@ -54,7 +54,7 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >Siehe:
 >
 >* Knowledgebase-Artikel zum [Beheben von Fehlern in der Touch-optimierten AEM-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/kb/troubleshooting-aem-touchui-issues.html) für weitere Tipps und Tools.
->* AEM-Gems-Sitzung [AEM 6.0 Entwicklermodus](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=en).
+>* AEM-Gems-Sitzung [AEM 6.0 Entwicklermodus](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
 >
 
 ## Öffnen des Entwicklermodus {#opening-developer-mode}
@@ -114,7 +114,7 @@ Jeder Komponenteneintrag kann (z. B.) Folgendes beinhalten:
 
 >[!CAUTION]
 >
->Einige Links zeigen auf das Skript unter `/libs`. Diese sind allerdings nur für Referenzzwecke bestimmt. Sie dürfen **keine** Elemente unter `/libs` bearbeiten, da von Ihnen gemachte Änderungen möglicherweise verloren gehen. Dies liegt daran, dass sich diese Verzweigung bei jedem Upgrade oder Anwenden eines Hotfixes oder Feature Packs ändern kann. Nehmen Sie alle Änderungen vor, die Sie unter `/apps`. Siehe [Überlagerungen und Überschreibungen](/help/sites-developing/overlays.md).
+>Einige Links zeigen auf das Skript unter `/libs`. Diese sind allerdings nur für Referenzzwecke bestimmt. Sie dürfen **keine** Elemente unter `/libs` bearbeiten, da von Ihnen gemachte Änderungen möglicherweise verloren gehen. Dies liegt daran, dass sich diese Verzweigung bei jedem Upgrade oder Anwenden eines Hotfixes oder Feature Packs ändern kann. Nehmen Sie die erforderlichen Änderungen unter `/apps`. Siehe [Überlagerungen und Überschreibungen](/help/sites-developing/overlays.md).
 
 ### Fehler {#errors}
 

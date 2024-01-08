@@ -2,10 +2,10 @@
 title: Bearbeiten der Eigenschaften von Inhaltsseiten
 description: Definieren Sie die erforderlichen Eigenschaften für eine Seite in Adobe Experience Manager.
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1855'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -187,7 +187,7 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 
 * **Freigabe in Social Media**
 
-  Definiert die auf der Seite verfügbaren Freigabeoptionen. Zeigt die Optionen an, die für die [Freigabe der Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=de) zur Verfügung stehen.
+  Definiert die auf der Seite verfügbaren Freigabeoptionen. Zeigt die Optionen an, die für die [Freigabe der Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html) zur Verfügung stehen.
 
    * **Benutzerfreigabe für Facebook aktivieren**
    * **Benutzerfreigabe für Pinterest aktivieren**

@@ -2,10 +2,10 @@
 title: Authoring
 description: Konzepte zum Erstellen und Veröffentlichen in Adobe Experience Manager 6.5.
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 45%
+source-wordcount: '547'
+ht-degree: 38%
 
 ---
 
@@ -31,7 +31,7 @@ In der Autorenumgebung wird die Funktionalität von AEM über zwei Benutzeroberf
 
 ### Authoring-Umgebung {#author-environment}
 
-Der Autor arbeitet in der sogenannten **Autorenumgebung**. Diese bietet eine einfach zu verwendende Oberfläche (grafische Benutzeroberfläche (GUI oder UI)) zum Erstellen von Inhalt. Es befindet sich hinter der Firewall eines Unternehmens, die vollen Schutz bietet und die Anmeldung des Autors erfordert, wobei ein Konto verwendet wird, dem die entsprechenden Zugriffsrechte zugewiesen wurden.
+Die Autorin bzw. der Autor arbeitet in der sogenannten **Authoring-Umgebung**. Dies bietet eine einfach zu verwendende Benutzeroberfläche (grafische Benutzeroberfläche (GUI oder UI)) zum Erstellen des Inhalts. Es befindet sich hinter der Firewall eines Unternehmens, die vollen Schutz bietet und die Anmeldung des Autors erfordert, wobei ein Konto verwendet wird, dem die entsprechenden Zugriffsrechte zugewiesen wurden.
 
 >[!NOTE]
 >
@@ -81,4 +81,4 @@ Wenn die AEM Site ein [Community-Site](/help/communities/overview.md)oder enthä
 
 #### Dispatcher {#dispatcher}
 
-Um eine optimale Nutzung der Website durch Ihre Besucherinnen und Besucher zu gewährleisten, führt der **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) Lastverteilung und Caching durch.**
+Um die Leistung für Besucher Ihrer Website zu optimieren, muss die Variable **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de)** implementiert Lastenausgleich und Caching.

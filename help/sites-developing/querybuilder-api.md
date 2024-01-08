@@ -8,7 +8,7 @@ content-type: reference
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '2033'
 ht-degree: 67%
@@ -29,7 +29,7 @@ Die REST-API bietet Zugriff auf dieselben Funktionen über HTTP, wobei Antworten
 
 >[!NOTE]
 >
->Die Query Builder-API wird mithilfe der JCR-API erstellt. Sie können das Adobe Experience Manager-JCR auch abfragen, indem Sie die JCR-API aus einem OSGi-Bundle heraus verwenden. Weitere Informationen erhalten Sie unter [Adobe Experience Manager mit der JCR-API](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html?lang=de).
+>Die Query Builder-API wird mithilfe der JCR-API erstellt. Sie können das Adobe Experience Manager-JCR auch abfragen, indem Sie die JCR-API aus einem OSGi-Bundle heraus verwenden. Weitere Informationen erhalten Sie unter [Adobe Experience Manager mit der JCR-API](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html).
 
 ## Gem-Sitzung {#gem-session}
 

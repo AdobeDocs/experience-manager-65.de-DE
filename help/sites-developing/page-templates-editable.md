@@ -7,10 +7,10 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3186'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -46,7 +46,7 @@ Bei den in diesem Dokument beschriebenen Schritten wird vorausgesetzt, dass Sie 
 >[!NOTE]
 >
 >Das folgende Tutorial kann auch für das Einrichten einer bearbeitbaren Seitenvorlage in einem neuen Projekt von Interesse sein:
->[Erste Schritte mit AEM Sites Teil 2 – Erstellen einer Basisseite und Vorlage](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=de)
+>[Erste Schritte mit AEM Sites Teil 2 – Erstellen einer Basisseite und Vorlage](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html)
 
 ## Erstellen neuer Vorlagen {#creating-a-new-template}
 
@@ -73,9 +73,9 @@ Beim Erstellen einer bearbeitbaren Vorlage haben Sie folgende Möglichkeiten:
       * Wenn Sie eine Vorlage in einem benutzerdefinierten Ordner außerhalb des `We.Retail`-Beispielinhalts erstellen, können Sie Foundation-Komponenten wählen oder [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=de) verwenden.
 
    * Wenn Sie möchten, dass Seitenautorinnen und -autoren Komponenten hinzufügen und entfernen können, fügen Sie der Vorlage ein Absatzsystem hinzu.
-   * Komponenten können entsperrt und erneut gesperrt werden, damit Sie anfänglichen Inhalt definieren können.
+   * Komponenten lassen sich entsperren und erneut sperren, damit Sie den anfänglichen Inhalt definieren können.
 
-   Einzelheiten dazu, wie Vorlagenautoren Strukturen definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
+   Einzelheiten dazu, wie Vorlagenautorinnen und -autoren Strukturen definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
    Technische Details zur Struktur werden in diesem Dokument unter [Struktur](/help/sites-developing/page-templates-editable.md#structure) erläutert.
 
@@ -321,7 +321,7 @@ Speichern Sie keine Vorlagen in `/conf/global`. Bei einigen älteren Installatio
   </tr>
   <tr>
    <td rowspan="3"><code>/conf/global/settings/wcm/templates</code></td>
-   <td>Vorlagenautoren</td>
+   <td>Vorlagenautorinnen und -autoren</td>
    <td>lesen, schreiben, replizieren</td>
    <td>Vorlagenautoren, die Vorlagen erstellen, lesen, aktualisieren, löschen und replizieren <code>/conf/global</code></td>
   </tr>
@@ -374,7 +374,7 @@ Geben Sie beim Erstellen einer Vorlage einen Vorlagentyp an:
    * Der Vorlagentyp wird kopiert, um die Vorlage zu erstellen.
    * Nach dem Kopieren besteht die einzige Verbindung zwischen der Vorlage und dem Vorlagentyp in einer statischen Referenz zu Informationszwecken.
 
-* Mit Vorlagentypen können Sie Folgendes definieren:
+* Vorlagentypen ermöglichen es Ihnen, Folgendes zu definieren:
 
    * Den Ressourcentyp der Seitenkomponente.
    * Die Richtlinie des Stammknotens, die die im Vorlageneditor zulässigen Komponenten definiert.
@@ -565,7 +565,7 @@ Stellt einen relativen Verweis auf die Inhaltsrichtlinie für das Absatzsystem d
 
 ### Seitenrichtlinien {#page-policies}
 
-Mit Seitenrichtlinien können Sie die [Inhaltsrichtlinie](#content-policies) für die Seite (main parsys) in der Vorlage oder den resultierenden Seiten.
+Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) für die Seite (Hauptabsatzsystem) entweder in der Vorlage oder den resultierenden Seiten zu definieren.
 
 ### Aktivieren und Zulassen einer Vorlage {#enabling-and-allowing-a-template-for-use}
 

@@ -1,16 +1,16 @@
 ---
 title: Konfigurieren von OSGi
-description: OSGi ist ein wesentlicher Bestandteil der Technologien von Adobe Experience Manager (AEM). OSGi wird zur Steuerung der AEM-Bundles und ihrer Konfiguration verwendet. In diesem Artikel wird beschrieben, wie Sie die Konfigurationseinstellungen für solche Bundles verwalten können.
+description: OSGi ist ein wesentlicher Bestandteil der Technologien von Adobe Experience Manager (AEM). Es wird zur Steuerung der zusammengesetzten AEM-Bundles und ihrer Konfiguration verwendet. In diesem Artikel wird beschrieben, wie Sie die Konfigurationseinstellungen für solche Bundles verwalten können.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1954'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -52,9 +52,9 @@ Jede dieser Methoden kann verwendet werden, es gibt aber leichte Unterschiede vo
 Unabhängig von der verwendeten Konfigurationsmethode bieten die Konfigurationen Folgendes: 
 
 * Stellen Sie sicher, dass beim Kopieren oder Replizieren des Repository-Inhalts identische Konfigurationen neu erstellt werden.
-* Ermöglicht Ihnen das Auschecken von Konfigurationen in FileVault oder Subversion, entweder zur Sicherheit oder zu weiteren Aktualisierungen.
+* Ermöglicht das Auschecken von Konfigurationen nach FileVault oder Subversion, entweder für Sicherheits- oder weitere Updates.
 * Kann in Paketen gespeichert werden, die beim Einrichten anderer Instanzen verwendet werden können.
-* Ermöglicht Ihnen das Ausführen von Konfigurations-Rollouts mithilfe von Skripten, um die Konfigurationsdetails zu propagieren.
+* Ermöglicht das Durchführen von Konfigurations-Rollouts mithilfe von Skripten, um die Konfigurationsdetails weiterzugeben.
 
 >[!NOTE]
 >
@@ -121,9 +121,9 @@ Diese Dateien können in Inhaltspaketen eingeschlossen und in anderen Instanzen 
 
 >[!NOTE]
 >
->Das Format der Konfigurationsdateien ist spezifisch. Weitere Informationen finden Sie in der Sling Apache-Dokumentation für:
->* vollständige Angaben zu [das Apache Sling Provisioning Model und Apache SlingStart](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
->* Tutorials und Beispiele [Abrufen von Ressourcen und Eigenschaften in Sling](https://sling.apache.org/documentation/tutorials-how-tos/getting-resources-and-properties-in-sling.html).
+>Die Konfigurationsdateien haben ein spezifisches Format. In der Sling Apache-Dokumentation finden Sie Folgendes:
+>* vollständige Details zu [dem Apache Sling Bereitstellungsmodell und Apache SlingStart](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
+>* Tutorials und Beispiele zum [Abrufen von Ressourcen und Eigenschaften in Sling](https://sling.apache.org/documentation/tutorials-how-tos/getting-resources-and-properties-in-sling.html).
 >
 >Aus diesem Grund wird empfohlen, die Konfigurationsdatei zu erstellen und zu pflegen, indem Sie die effektiven Änderungen in der Web-Konsole vornehmen.
 
@@ -172,7 +172,7 @@ Da derselbe Konfigurationsparameter an mehreren Orten gespeichert wird, geht das
 
 >[!NOTE]
 >
->Lesen Sie auch, [wie Sie eine Repository-basierte Konfiguration für nur eine bestimmte Instanz definieren](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=de).
+>Lesen Sie auch, [wie Sie eine Repository-basierte Konfiguration für nur eine bestimmte Instanz definieren](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html).
 
 ### Hinzufügen einer neuen Konfiguration zum Repository {#adding-a-new-configuration-to-the-repository}
 

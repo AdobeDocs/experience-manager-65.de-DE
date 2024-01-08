@@ -7,7 +7,7 @@ topic-tags: platform
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 98%
@@ -116,7 +116,7 @@ Red Hat® Linux® nutzt einen Speicherverwaltungsalgorithmus mit der Bezeichnung
 >Sehen Sie sich die folgenden Ressourcen an:
 >
 >* Weitere Informationen zu Transparent Huge Pages unter Red Hat® Linux® finden Sie in diesem [Artikel](https://access.redhat.com/solutions/46111).
-* Tipps zum Linux®-Tuning finden Sie in diesem [Artikel](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=de).
+* Tipps zum Linux®-Tuning finden Sie in diesem [Artikel](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
 >
 
 ## Warten von Repositorys {#maintaining-the-repository}

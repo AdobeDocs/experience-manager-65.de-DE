@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1003'
 ht-degree: 1%
 
 ---
@@ -103,7 +103,7 @@ Alternativ können Sie die Gerätequelle herunterladen, um sie über die PhoneGa
 >
 >Siehe [Adobe Mobile Services Cloud Service konfigurieren](/help/mobile/configure-adobe-mobile-cloud-service.md) für Details.
 
-AEM Mobile kann über [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=en) (AMS).
+AEM Mobile kann über [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html) (AMS).
 
 Das Kontrollzentrum **Metrikbereich** zeigt zusammenfassende Analysen an, die von AMS für Ihre Anwendung abgerufen wurden. Sie können einen Drilldown im Analyse-Dashboard durchführen, indem Sie rechts unten auf &quot;...&quot;klicken.
 

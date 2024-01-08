@@ -8,10 +8,10 @@ topic-tags: configuring
 docset: aem65
 feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '3389'
-ht-degree: 31%
+source-wordcount: '3363'
+ht-degree: 28%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 31%
 Replikationsagenten sind von zentraler Bedeutung für Adobe Experience Manager (AEM), da der Mechanismus verwendet wird, um:
 
 * [Veröffentlichen (aktivieren)](/help/sites-authoring/publishing-pages.md#activatingcontent) Inhalt von einer Autoren- in eine Veröffentlichungsumgebung.
-* Explizites Leeren von Inhalten aus dem Dispatcher-Cache
+* explizites Leeren von Inhalten aus dem Dispatcher-Cache
 * Gibt Benutzereingaben (z. B. Formulareingaben) aus der Veröffentlichungsumgebung an die Autorenumgebung zurück (unter Kontrolle der Autorenumgebung).
 
 Anforderungen sind [in Warteschlange](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjobeventhandler) an den entsprechenden Agenten für die Verarbeitung.
@@ -106,7 +106,7 @@ Die folgenden Agenten sind in einer standardmäßigen AEM-Installation verfügba
 Wird für die Replikation von der Autoren- zur Veröffentlichungsinstanz verwendet.
 
 * Dispatcher Flush
-Dient zum Verwalten des Dispatcher-Caches. Weitere Informationen finden Sie unter [Invalidieren des Dispatcher-Cache aus der Autorenumgebung](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=de#invalidating-dispatcher-cache-from-the-authoring-environment) und [Invalidieren des Dispatcher-Cache von einer Veröffentlichungsinstanz](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=de#invalidating-dispatcher-cache-from-a-publishing-instance).
+Dient zum Verwalten des Dispatcher-Caches. Weitere Informationen finden Sie unter [Invalidieren des Dispatcher-Cache aus der Autorenumgebung](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) und [Invalidieren des Dispatcher-Cache von einer Veröffentlichungsinstanz](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=de#invalidating-dispatcher-cache-from-a-publishing-instance).
 
 * [Rückwärtsreplikation](#reverse-replication-publish-to-author)
 Wird für die Replikation von der Veröffentlichungs- zur Autoreninstanz verwendet. Die Rückwärtsreplikation wird nicht für Communities-Funktionen wie Foren, Blogs und Kommentare verwendet. Sie ist effektiv deaktiviert, da der Postausgang nicht aktiviert ist. Für die Rückwärtsreplikation ist eine benutzerdefinierte Konfiguration erforderlich.
@@ -140,14 +140,14 @@ Beim Konfigurieren eines Replikationsagenten über die Tools-Konsole stehen vier
    * **Leer**, wenn die Warteschlange leer ist.
    * **Blockiert**, wenn die Warteschlange Elemente enthält, die jedoch nicht verarbeitet werden können, z. B. wenn die empfangende Warteschlange deaktiviert ist.
 
-* **Anordnungstyp**
+* **Serialisierungstyp**
 
   Der Serialisierungstyp:
 
    * **Standard**: Legt fest, ob der Agent automatisch ausgewählt werden soll.
    * **Dispatcher Flush**: Wählen Sie diese Option aus, wenn der Agent zum Leeren des Dispatcher-Caches verwendet werden soll.
 
-* **Verzögerung wiederh.**
+* **Wiederholungsverzögerung**
 
   Die Verzögerung (Wartezeit in Millisekunden) zwischen zwei Wiederholungen, wenn ein Problem auftritt.
 
@@ -184,11 +184,11 @@ Beim Konfigurieren eines Replikationsagenten über die Tools-Konsole stehen vier
 
   Standard: `Info`
 
-* **Für Rückwärtsreplikation verwenden**
+* **Verwendung für Rückwärtsreplikation**
 
   Gibt an, ob dieser Agent für die Rückwärtsreplikation verwendet wird. Gibt die Benutzereingabe aus der Umgebung &quot;In Autorenumgebung veröffentlichen&quot;zurück.
 
-* **Alias-Aktualisierung**
+* **Alias-Update**
 
   Durch Auswahl dieser Option werden Anforderungen an den Dispatcher zur Invalidierung des Alias- oder Vanity-Pfads aktiviert. Weitere Informationen finden Sie auch unter [Konfigurieren eines Dispatcher Flush-Agenten](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent).
 
@@ -261,7 +261,7 @@ Die folgenden Einstellungen sind nur erforderlich, wenn ein Proxy erforderlich i
 
 #### Erweitert {#extended}
 
-* **Benutzeroberfläche**
+* **Schnittstelle**
 
   Hier können Sie die Socket-Oberfläche definieren, an die Sie sich binden möchten.
 
@@ -273,7 +273,7 @@ Die folgenden Einstellungen sind nur erforderlich, wenn ein Proxy erforderlich i
 
   Bei einem Dispatcher Flush-Agenten ist dies fast immer GET und sollte nicht geändert werden (POST wäre ein weiterer möglicher Wert).
 
-* **HTTP-Kopfzeilen**
+* **HTTP-Header**
 
   Diese werden für Dispatcher Flush-Agenten verwendet und geben Elemente an, die geleert werden müssen.
 
@@ -300,7 +300,7 @@ Die folgenden Einstellungen sind nur erforderlich, wenn ein Proxy erforderlich i
 
   Aktivieren Sie diese Option, damit Sie die Verbindung nach jeder Anfrage schließen können.
 
-* **Verbindungs-Zeitüberschreitung**
+* **Verbindungs-Timeout**
 
   Zeitüberschreitung (in Millisekunden), die beim Versuch der Herstellung einer Verbindung angewendet werden soll.
 
@@ -324,7 +324,7 @@ Diese Einstellungen werden verwendet, um Trigger für die automatisierte Replika
 
   Hier wird eine Replikation durch diesen Agenten automatisch ausgelöst, wenn eine Seite geändert wird. Wird für Dispatcher Flush-Agenten, aber auch für die Rückwärtsreplikation verwendet.
 
-* **Bei Verteilung**
+* **Bei Verteilen**
 
   Wenn diese Option aktiviert ist, repliziert der Agent automatisch alle Inhalte, die zur Verteilung markiert sind, wenn er geändert wird.
 
@@ -332,7 +332,7 @@ Diese Einstellungen werden verwendet, um Trigger für die automatisierte Replika
 
   Dadurch wird die automatische Replikation (um eine Seite zu aktivieren bzw. zu deaktivieren) Trigger, wenn die für eine Seite definierten Ein- oder Ausschaltzeiten auftreten. Dies wird hauptsächlich für Dispatcher Flush-Agenten verwendet.
 
-* **Auf Empfang**
+* **Bei Erhalt**
 
   Wenn diese Option aktiviert ist, replizieren die Agentenketten jedes Mal, wenn Replikationsereignisse empfangen werden.
 
@@ -354,13 +354,13 @@ Auf der Registerkarte Tools in der Autorenumgebung können Sie Replikationsagent
 
 >[!NOTE]
 >
->Wenn ein Dispatcher HTTP-Anforderungen für Autoren- oder Veröffentlichungsinstanzen verarbeitet, muss die HTTP-Anforderung des Replikationsagenten den PATH-Header enthalten. Zusätzlich zum folgenden Verfahren müssen Sie die PATH-Kopfzeile zur Dispatcher-Liste der Client-Kopfzeilen hinzufügen. Weitere Informationen finden Sie unter [/clientheaders (Client-Header)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#specifying-the-http-headers-to-pass-through-clientheaders).
+>Wenn ein Dispatcher HTTP-Anforderungen für Autoren- oder Veröffentlichungsinstanzen verarbeitet, muss die HTTP-Anforderung des Replikationsagenten den PATH-Header enthalten. Zusätzlich zum folgenden Verfahren müssen Sie die PATH-Kopfzeile zur Dispatcher-Liste der Client-Kopfzeilen hinzufügen. Siehe [/clientheaders (Client-Header)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#specifying-the-http-headers-to-pass-through-clientheaders).
 >
 
 1. Greifen Sie auf die Registerkarte **Tools** in AEM zu.
 1. Klicks **Replikation** (linker Bereich, um den Ordner zu öffnen).
 1. Doppelklicken **Agenten für Autor** (entweder der linke oder der rechte Bereich).
-1. Klicken Sie auf den Link mit dem entsprechenden Agentennamen, um detaillierte Informationen zu diesem Agenten anzuzeigen.
+1. Klicken Sie auf den entsprechenden Agentennamen (der ein Link ist), um detaillierte Informationen zu diesem Agenten anzuzeigen.
 1. Klicks **Bearbeiten** damit das Konfigurationsdialogfeld geöffnet wird:
 
    ![chlimage_1-22](assets/chlimage_1-22.png)

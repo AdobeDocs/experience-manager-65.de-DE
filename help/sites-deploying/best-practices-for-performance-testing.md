@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1790'
 ht-degree: 98%
@@ -72,7 +72,7 @@ Die Dokumentation [Überwachung der Leistung](/help/sites-deploying/monitoring-a
 
 **Entwicklermodus in der Touch-Benutzeroberfläche**
 
-Eine der neuen Funktionen der Touch-Benutzeroberfläche von AEM 6 ist der Entwicklermodus. So wie Autoren und Autorinnen zwischen Bearbeitungs- und Vorschaumodi wechseln können, können Entwickelnde in der Autoren-Benutzeroberfläche in den Entwicklermodus wechseln. Auf diese Weise können Sie die Renderzeit für jede Komponente auf der Seite sehen und Stacktraces von Fehlern sehen. Weitere Informationen zum Entwicklermodus finden Sie in dieser [CQ Gems-Präsentation](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=de).
+Eine der neuen Funktionen der Touch-Benutzeroberfläche von AEM 6 ist der Entwicklermodus. So wie Autoren und Autorinnen zwischen Bearbeitungs- und Vorschaumodi wechseln können, können Entwickelnde in der Autoren-Benutzeroberfläche in den Entwicklermodus wechseln. Auf diese Weise können Sie die Renderzeit für jede Komponente auf der Seite sehen und Stacktraces von Fehlern sehen. Weitere Informationen zum Entwicklermodus finden Sie in dieser [CQ Gems-Präsentation](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
 
 **Verwendung von rlog.jar zum Lesen der Anfrageprotokolle**
 
@@ -117,7 +117,7 @@ Im Abschnitt **ObservationQueueMaxLength** wird die Anzahl der Ereignisse in der
 1. Platzieren Sie sie im Ordner „/crx-­‐quickstart/install“.
 
 >[!NOTE]
->Siehe [AEM 6.x | Tipps zur Leistungsoptimierung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=de)
+>Siehe [AEM 6.x | Tipps zur Leistungsoptimierung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
 
 Die Standardeinstellung ist 10.000, aber für die meisten Bereitstellungen ist eine Anhebung auf 20.000 oder 50.000 erforderlich.
 
@@ -145,7 +145,7 @@ Nach dem Ausführen von Leistungstests auf der Authoring-Instanz müssen alle fe
 * Prüfen Sie das Fehlerprotokoll auf Fehler oder Warnungen. Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md).
 * Überwachen Sie die Hardware-Ressourcen des Systems, z. B. Speicher- und CPU-Auslastung oder E/A-Vorgänge von Festplatten bzw. Netzwerk. Diese Ressourcen sind häufig die Ursachen für Leistungsengpässe.
 * Optimieren Sie die Architektur der Seiten und ihre Adressierung, um die Verwendung von URL-Parametern zu minimieren, damit ein Höchstmaß an Zwischenspeicherung ermöglicht wird.
-* Befolgen Sie die Dokumentationen [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) und [Tipps zur Leistungsoptimierung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=de).
+* Befolgen Sie die Dokumentationen [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) und [Tipps zur Leistungsoptimierung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
 
 * Wenn beim Bearbeiten bestimmter Seiten oder Komponenten in Authoring-Instanzen Probleme auftreten, sehen Sie sich die fragliche Seite mithilfe des Entwicklermodus der Touch-optimierten Benutzeroberfläche an. Dadurch erhalten Sie eine Aufschlüsselung der einzelnen Inhaltsbereiche auf der Seite und ihrer Ladezeiten.
 * Minimieren Sie alle JS- und CSS-Dateien auf der Site. Siehe diesen [Blogpost](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).

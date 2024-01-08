@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 12%
+source-wordcount: '601'
+ht-degree: 5%
 
 ---
 
@@ -21,7 +21,7 @@ Für AEM Communities ist es erforderlich, den Dispatcher zu konfigurieren, um da
 
 So erfahren Sie, was für Ihre spezifische Implementierung und Ihr Site-Design erforderlich ist
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home?lang=de#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?lang=de&amp;support-solution=General&amp;support-tab=home#support)
 
 Siehe auch die [Dispatcher-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de).
 
@@ -39,10 +39,10 @@ Wenn diese Konfiguration zur Unterstützung der Dispatcher-Zwischenspeicherung k
 
 ### Voraussetzungen {#requirements}
 
-* Dispatcher-Version 4.1.2 oder höher (siehe [Installieren des Dispatchers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en) für die neueste Version)
+* Dispatcher-Version 4.1.2 oder höher (siehe [Installieren des Dispatchers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=de) für die neueste Version)
 * [ACS AEM Commons-Paket](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
-   * Version 3.3.2 oder neuer
+   * Version 3.3.2 oder höher
    * `ACS AEM Commons - Dispatcher Cache Control Header - Max Age` OSGi-Konfiguration
 
 ### Konfiguration {#configuration}
@@ -76,7 +76,7 @@ Die folgenden Beispiele verwenden Eigenschaftsnamen, die wahrscheinlich geänder
 
 Siehe auch:
 
-* [Dispatcher-Sicherheitscheckliste](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=de)
+* [Dispatcher-Sicherheitscheckliste](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)
 
 >[!NOTE]
 >

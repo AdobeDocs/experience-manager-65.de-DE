@@ -3,10 +3,10 @@ title: Versionshinweise für [!DNL Adobe Experience Manager] 6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 8fc35ac465240cafdce5346f2f7e9ba15c8d1fef
-workflow-type: ht
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+workflow-type: tm+mt
 source-wordcount: '4333'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -520,7 +520,7 @@ Um das Problem zu beheben, suchen Sie die Datei `<AEM_Forms_Installation_dir>\jb
 * Wenn Benutzende ein Feld erstmals in einem adaptiven Formular konfigurieren möchten, wird im Eigenschaften-Browser die Option zum Speichern einer Konfiguration nicht angezeigt. Das Problem lässt sich beheben, indem Sie im selben Editor ein anderes Feld des adaptiven Formulars konfigurieren.
 * Wenn Benutzende die Sendeaktion durchführen, schlägt die Übermittlung mit einer Fehlermeldung fehl:
   `javax.servlet.ServletException: java.lang.NoSuchMethodError`
-Um das Problem zu beheben, [kompilieren Sie die Sling-Skripte wie JSP, Java und Sightly neu](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=de#resolution). (FORMS-8542)
+Um das Problem zu beheben, [kompilieren Sie die Sling-Skripte wie JSP, Java und Sightly neu](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html#resolution). (FORMS-8542)
 * Nach der Installation von AEM Service Pack 6.5.14.0 und höher können Benutzende beim Navigieren zu `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings` keine Schriftart aus der JEE-Admin-Benutzeroberfläche für PDF-Dokumente auswählen, da die Schriftartenliste leer erscheint. (FORMS-12095)
 
 #### AEM Forms für JEE

@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1712'
-ht-degree: 4%
+source-wordcount: '1659'
+ht-degree: 2%
 
 ---
 
@@ -294,7 +294,7 @@ Um das Schlüsselmaterial aus der Autoreninstanz in alle anderen Instanzen zu ko
 
 >[!CAUTION]
 >
->Wenn bereits eine andere Sicherheitsfunktion konfiguriert wurde, die auf den Verschlüsselungsschlüsseln basiert, kann die Replikation der Verschlüsselungsschlüssel die Konfiguration beschädigen. Hilfe: [Kundenunterstützung kontaktieren](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home?lang=de#support).
+>Wenn bereits eine andere Sicherheitsfunktion konfiguriert wurde, die auf den Verschlüsselungsschlüsseln basiert, kann die Replikation der Verschlüsselungsschlüssel die Konfiguration beschädigen. Hilfe: [Kundenunterstützung kontaktieren](https://experienceleague.adobe.com/?lang=de&amp;support-solution=General&amp;support-tab=home#support).
 
 #### Repository-Replikation {#repository-replication}
 
@@ -359,7 +359,7 @@ Achten Sie insbesondere darauf, den richtigen Servernamen zu verwenden, nicht `l
 Informationen zur Verwendung eines Dispatchers finden Sie unter:
 
 * AEM [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) Dokumentation
-* [Installieren des Dispatchers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en)
+* [Installieren des Dispatchers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=de)
 * [Konfigurieren des Dispatchers für Communities](/help/communities/dispatcher.md)
 * [Bekannte Probleme](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

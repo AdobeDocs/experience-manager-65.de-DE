@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '6469'
 ht-degree: 99%
@@ -22,7 +22,7 @@ ht-degree: 99%
 >
 >Weitere Informationen zur Fehlerbehebung und zur Behebung von Leistungsproblemen finden Sie unter [Leistungsstruktur](/help/sites-deploying/performance-tree.md).
 >
->Sie können in der Wissensdatenbank auch einen Artikel über [Tipps zur Leistungsoptimierung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=de) lesen.
+>Sie können in der Wissensdatenbank auch einen Artikel über [Tipps zur Leistungsoptimierung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html) lesen.
 
 Ein wichtiger Faktor ist die Zeit, die Ihre Website benötigt, um auf Anfragen durch Besucherinnen und Besucher zu reagieren. Auch wenn dieser Wert für jede Anfrage unterschiedlich ist, kann ein durchschnittlicher Zielwert definiert werden. Sobald sich gezeigt hat, dass dieser Wert sowohl erreichbar als auch verwaltbar ist, kann er verwendet werden, um die Leistung der Website zu überwachen und die Entwicklung potenzieller Probleme anzuzeigen.
 
@@ -39,7 +39,7 @@ Diese Umgebung enthält Inhalte, die Sie Ihren Benutzerinnen und Benutzern zur V
 >[!NOTE]
 >
 >* Folgen Sie nach der Konfiguration zur Leistungsoptimierung der Anleitung in [Tough Day](/help/sites-developing/tough-day.md), um die Umgebung unter starker Belastung zu testen.
->* Siehe auch [Tipps zur Leistungsoptimierung.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=de)
+>* Siehe auch [Tipps zur Leistungsoptimierung.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
 
 ## Methode zur Leistungsoptimierung {#performance-optimization-methodology}
 
@@ -201,7 +201,7 @@ Bestimmte Aspekte von AEM (bzw. des zugrunde liegenden Repositorys) können so k
 
 >[!NOTE]
 >
->Siehe [Leistungsoptimierung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=de).
+>Siehe [Leistungsoptimierung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
 
 ### Suchindizierung {#search-indexing}
 
@@ -492,7 +492,7 @@ Der Dispatcher bietet mehrere integrierte Mechanismen, mit denen Sie die Leistun
 >
 >Allgemein beinhalten viele Caching-Strategien die Auswahl von geeigneten URLs ausgewählt, und sie verlassen sich nicht auf diese zusätzlichen Daten.
 >
->Mit Dispatcher Version 4.1.11 können Sie auch Antwort-Header zwischenspeichern; siehe [Caching von HTTP-Antwort-Headern](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#configuring-the-dispatcher-cache-cache).
+>Mit Dispatcher Version 4.1.11 können Sie auch Antwort-Header zwischenspeichern; siehe [Caching von HTTP-Antwort-Headern](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
 >
 
 ### Berechnen des Dispatcher-Cache-Verhältnisses {#calculating-the-dispatcher-cache-ratio}
@@ -528,7 +528,7 @@ Mit der Dispatcher-Version 4.1.11 können Sie Antwort-Header zwischenspeichern. 
 
 #### Vermeiden von URL-Parametern {#avoid-url-parameters}
 
-Vermeiden Sie nach Möglichkeit URL-Parameter für Seiten, die Sie zwischenspeichern möchten. Wenn Sie beispielsweise über eine Bildergalerie verfügen, wird die folgende URL nie zwischengespeichert (es sei denn, der Dispatcher ist [entsprechend konfiguriert](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#configuring-the-dispatcher-cache-cache)):
+Vermeiden Sie nach Möglichkeit URL-Parameter für Seiten, die Sie zwischenspeichern möchten. Wenn Sie beispielsweise über eine Bildergalerie verfügen, wird die folgende URL nie zwischengespeichert (es sei denn, der Dispatcher ist [entsprechend konfiguriert](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)):
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
@@ -616,7 +616,7 @@ Bezüglich der Mischung von eingeschränkten und öffentlichen Inhalten auf eine
 
 #### Sticky-Verbindungen  {#sticky-connections}
 
-[Sticky-Verbindungen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de#the-benefits-of-load-balancing) stellen sicher, dass die Dokumente für eine Benutzerin oder einen Benutzer alle auf demselben Server erstellt werden. Wenn eine Benutzerin oder ein Benutzer diesen Ordner verlässt und später zu ihm zurückkehrt, bleibt die Verbindung erhalten. Um alle Dokumente zu speichern, die Sticky-Verbindungen für die Website erfordern, definieren Sie einen Ordner. Dieser sollte keine anderen Dokumente enthalten. Diese Funktion ist wichtig, wenn Sie personalisierte Seiten und Sitzungsdaten verwenden.
+[Sticky-Verbindungen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) stellen sicher, dass die Dokumente für eine Benutzerin oder einen Benutzer alle auf demselben Server erstellt werden. Wenn eine Benutzerin oder ein Benutzer diesen Ordner verlässt und später zu ihm zurückkehrt, bleibt die Verbindung erhalten. Um alle Dokumente zu speichern, die Sticky-Verbindungen für die Website erfordern, definieren Sie einen Ordner. Dieser sollte keine anderen Dokumente enthalten. Diese Funktion ist wichtig, wenn Sie personalisierte Seiten und Sitzungsdaten verwenden.
 
 #### MIME-Typen {#mime-types}
 

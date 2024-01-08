@@ -3,10 +3,10 @@ title: Bereitstellen von Communities
 description: Bereitstellen von AEM Communities
 content-type: reference
 topic-tags: deploying
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 4%
+source-wordcount: '1705'
+ht-degree: 2%
 
 ---
 
@@ -102,7 +102,7 @@ Die erforderlichen Schritte sind:
 
    * Die Version muss >= 5.1.38 sein.
 
-1. Extrahieren `mysql-connector-java-&lt;version&gt;-bin.jar (bundle) from the archive`
+1. Extract `mysql-connector-java-&lt;version&gt;-bin.jar (bundle) from the archive`
 1. Verwenden Sie die Web-Konsole, um das Bundle zu installieren und zu starten:
 
    * Beispiel: https://localhost:4502/system/console/bundles
@@ -114,7 +114,7 @@ Die erforderlichen Schritte sind:
 
    * Beispiel: https://localhost:4502/system/console/configMgr
    * Suchen `Day Commons JDBC Connections Pool` und wählen Sie aus, um die Konfiguration zu öffnen.
-   * Klicken Sie auf `Save`.
+   * Auswählen `Save`.
 
 1. Wiederholen Sie die Schritte 3 und 4 für alle Autoren- und Veröffentlichungsinstanzen.
 
@@ -290,7 +290,7 @@ Um das Schlüsselmaterial aus der Autoreninstanz in alle anderen Instanzen zu ko
 
 >[!CAUTION]
 >
->Wenn bereits eine andere Sicherheitsfunktion konfiguriert wurde, die auf den Verschlüsselungsschlüsseln basiert, kann die Replikation der Verschlüsselungsschlüssel die Konfiguration beschädigen. Hilfe: [Kundenunterstützung kontaktieren](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home?lang=de#support).
+>Wenn bereits eine andere Sicherheitsfunktion konfiguriert wurde, die auf den Verschlüsselungsschlüsseln basiert, kann die Replikation der Verschlüsselungsschlüssel die Konfiguration beschädigen. Hilfe: [Kundenunterstützung kontaktieren](https://experienceleague.adobe.com/?lang=de&amp;support-solution=General&amp;support-tab=home#support).
 
 #### Repository-Replikation {#repository-replication}
 
@@ -357,7 +357,7 @@ Achten Sie insbesondere darauf, den richtigen Servernamen zu verwenden, nicht `l
 Informationen zur Verwendung eines Dispatchers finden Sie unter :
 
 * AEM [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) Dokumentation
-* [Installieren des Dispatchers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en)
+* [Installieren des Dispatchers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=de)
 * [Konfigurieren des Dispatchers für Communities](/help/communities/dispatcher.md)
 * [Bekannte Probleme](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

@@ -7,10 +7,10 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-2/develop/components/components-develop
 exl-id: 4059af12-49a7-489c-a2b8-d0481be57cc5
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -44,7 +44,7 @@ Den Code dieser Seite finden Sie auf GitHub.
 
 >[!NOTE]
 >
->Dieses Code-Beispiel bezieht sich auf die AEM Gems-Sitzung zum Thema [Anpassen von Dialogfeldern](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=de).
+>Dieses Code-Beispiel bezieht sich auf die AEM Gems-Sitzung zum Thema [Anpassen von Dialogfeldern](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 
 ## Verwandte Ressourcen {#related-resources}
 

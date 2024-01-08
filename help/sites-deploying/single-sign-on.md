@@ -7,18 +7,18 @@ topic-tags: configuring, Security
 content-type: reference
 feature: Configuring
 exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 35%
+source-wordcount: '723'
+ht-degree: 40%
 
 ---
 
 # Single Sign-On {#single-sign-on}
 
-Mithilfe von Single Sign-On (SSO) können Sie durch die einmalige Eingabe Ihrer Zugangsdaten (z. B. Ihres Benutzernamens und Passworts) auf mehrere Systeme zugreifen. Ein separates System (auch als vertrauenswürdiger Authentifizierer bezeichnet) führt die Authentifizierung durch und stellt den Experience Manager die Benutzeranmeldeinformationen zur Verfügung. Experience Manager überprüft und erzwingt die Zugriffsberechtigungen für den Benutzer (d. h. legt fest, auf welche Ressourcen der Benutzer zugreifen darf).
+Mithilfe von Single Sign-On (SSO) können Sie durch die einmalige Eingabe Ihrer Zugangsdaten (z. B. Ihres Benutzernamens und Passworts) auf mehrere Systeme zugreifen. Ein separates System (auch als vertrauenswürdiger Authenticator bezeichnet) führt die Authentifizierung durch und stellt Experience Manager die Benutzeranmeldeinformationen zur Verfügung. Experience Manager überprüft die Zugriffsberechtigungen und setzt diese für die Benutzerin oder den Benutzer durch (legt also fest, auf welche Ressourcen die Benutzerin oder der Benutzer zugreifen darf).
 
-Der Handler-Dienst der SSO-Authentifizierung (`com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) verarbeitet die von der vertrauenswürdigen Authentifizierung bereitgestellten Authentifizierungsergebnisse. Der SSO-Authentifizierungs-Handler sucht nach einer SSO-Kennung (SSID) als Wert eines speziellen Attributs an den folgenden Stellen in dieser Reihenfolge:
+Der Handler-Dienst der SSO-Authentifizierung (`com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) verarbeitet die von der vertrauenswürdigen Authentifizierung bereitgestellten Authentifizierungsergebnisse. Der SSO-Authentifizierungs-Handler sucht nach einer SSO-Kennung (SSO Identifier, SSID) als Wert eines speziellen Attributs an den folgenden Stellen in dieser Reihenfolge:
 
 1. Anforderungsheader
 1. Cookies
@@ -83,8 +83,7 @@ Um SSO für eine AEM-Instanz zu konfigurieren, konfigurieren Sie die [SSO-Authen
 * `disp_iis.ini`
 * IIS
 >
-Legen Sie in `disp_iis.ini` Folgendes fest:
-(siehe [Installieren des Dispatchers mit dem Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en#microsoft-internet-information-server) für alle Einzelheiten)
+In `disp_iis.ini` festgelegt ist (siehe [Installieren des Dispatchers mit dem Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) für alle Einzelheiten)
 >
 * `servervariables=1` (leitet IIS-Server-Variablen als Anforderungskopfzeilen an die Remote-Instanz weiter)
 * `replaceauthorization=1` (ersetzt alle Kopfzeilen mit dem Namen „Authorization“ mit Ausnahme von „Basic“ durch die Entsprechung von „Basic“)
@@ -96,7 +95,7 @@ In IIS:
 * enable **Integrierte Windows-Authentifizierung**
 >
 
-Mithilfe der **Authenticator** Option der Felix-Konsole; Beispiel:
+Mithilfe der **Authenticator** -Option der Felix-Konsole, z. B.:
 
 `http://localhost:4502/system/console/slingauth`
 

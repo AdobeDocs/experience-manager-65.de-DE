@@ -2,7 +2,7 @@
 title: Live-Schalten Ihres Headless-Programms
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie eine Headless-Anwendung live bereitstellen.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 98%
@@ -94,7 +94,7 @@ Die lokale Entwicklungsumgebung umfasst drei Hauptbereiche:
 
 Nachdem die lokale Entwicklungsumgebung eingerichtet wurde, können Sie die Bereitstellung von Inhalten für die React-App simulieren, indem Sie lokal einen statischen Knoten-Server bereitstellen.
 
-Weitere Informationen zum Einrichten einer lokalen Entwicklungsumgebung und allen Abhängigkeiten, die für die Inhaltsvorschau erforderlich sind, finden Sie in der [Dokumentation zur Produktionsbereitstellung](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html?lang=de).
+Weitere Informationen zum Einrichten einer lokalen Entwicklungsumgebung und allen Abhängigkeiten, die für die Inhaltsvorschau erforderlich sind, finden Sie in der [Dokumentation zur Produktionsbereitstellung](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html).
 
 ## Vorbereiten Ihres AEM Headless-Programms für die Live-Schaltung {#prepare-your-aem-headless-application-for-golive}
 
@@ -141,7 +141,7 @@ Die Bereitstellung in der Produktion kann davon abhängen, ob Sie über eine *tr
 
 ## Bereitstellen in der Produktion mit Maven {#deploy-to-production-maven}
 
-Für eine *traditionelle* Implementierung (außer AMS) mithilfe von Maven können Sie sich das [WKND-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=de#build) ansehen, um einen Überblick zu bekommen.
+Für eine *traditionelle* Implementierung (außer AMS) mithilfe von Maven können Sie sich das [WKND-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build) ansehen, um einen Überblick zu bekommen.
 
 ## Bereitstellen in der Produktion mit Cloud Manager {#deploy-to-production-cloud-manager}
 

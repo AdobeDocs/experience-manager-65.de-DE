@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1088'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -74,7 +74,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   <tr>
    <td><strong>Schritt 4</strong></td>
    <td>Gehen Anforderungen vom Dispatcher ein?</td>
-   <td><p>Um festzustellen, ob die Anfragen ordnungsgemäß zwischengespeichert wurden, überprüfen Sie die <a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#debugging">Dispatcher-Debugging-Dokumentation</a>.<br /> </p> </td>
+   <td><p>Um festzustellen, ob die Anfragen ordnungsgemäß zwischengespeichert wurden, überprüfen Sie die <a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#debugging">Dispatcher-Debugging-Dokumentation</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Schritt 5</strong></td>
@@ -225,12 +225,12 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   <tr>
    <td><strong>Schritt 31</strong></td>
    <td>Verwendung von CDN vor dem Dispatcher</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de#using-dispatcher-with-a-cdn">Verwenden des Dispatchers mit einem CDN </a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">Verwenden des Dispatchers mit einem CDN </a><br /> </td>
   </tr>
   <tr>
    <td><strong>Schritt 32</strong></td>
    <td>Verwenden Sie zum Entlasten des AEM-Servers die Sitzungsverwaltung auf Dispatcher-Ebene</td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#enabling-secure-sessions-sessionmanagement">Aktivierung von Sicherheitssitzungen</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement">Aktivierung von Sicherheitssitzungen</a></p> </td>
   </tr>
   <tr>
    <td><strong>Schritt 33</strong></td>
@@ -238,7 +238,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
    <td>
     <ol>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de">Allgemeine Dispatcher-Konfiguration</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#configuring-the-dispatcher-cache-cache">Konfigurieren des Dispatcher-Caches</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">Konfigurieren des Dispatcher-Caches</a></li>
     </ol> <p>Verbesserung des Cache-Verhältnisses; Anfragen zwischenspeicherbar machen (Best Practices für Dispatcher)</p> <p>Beachten Sie außerdem die folgenden Einstellungen, um Ihre Konfigurationen der Zwischenspeicherung zu optimieren<br /> </p>
     <ol>
      <li>Setzen Sie eine Kein-Cache-Regel für HTTP-Anfragen, die keine GET-Anfragen sind.</li>
@@ -262,14 +262,14 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
    <td>Überprüfung der Cache-Invalidierung</td>
    <td><br />
     <ul>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=de#invalidating-dispatcher-cache-from-the-authoring-environment">Cache-Invalidierung für die Authoring-Ebene</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment">Cache-Invalidierung für die Authoring-Ebene</a></li>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=de#invalidating-dispatcher-cache-from-a-publishing-instance">Cache-Invalidierung für die Veröffentlichungsschicht</a></li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>Schritte 37 und 38</strong></td>
    <td>Verzögertes Laden</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=de">Weitere Informationen finden Sie in der Gem-Sitzung „AEM Web Performance“.</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">Weitere Informationen finden Sie in der Gem-Sitzung „AEM Web Performance“.</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Schritt 39</strong></td>
@@ -289,7 +289,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   <tr>
    <td><strong>Schritt 49</strong></td>
    <td>Verkleinern der Nutzdatengröße</td>
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Aktivieren Sie Gzip</a> und <a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=de">verkleinern Sie die Bildgröße</a>.<br /> </td>
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Aktivieren Sie Gzip</a> und <a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">verkleinern Sie die Bildgröße</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Schritte 42 und 43</strong></td>
@@ -321,7 +321,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   <tr>
    <td><strong>Schritte 50 und 51</strong></td>
    <td>JS-Code-Blockierung</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=de">https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=de</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html</a></td>
   </tr>
  </tbody>
 </table>
