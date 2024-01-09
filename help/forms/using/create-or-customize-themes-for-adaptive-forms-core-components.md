@@ -8,9 +8,9 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 4a8155f754d1f71354717f5eb22511baab110916
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1921'
 ht-degree: 98%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 98%
 | AEM 6.5 | Dieser Artikel |
 
 
-**Gilt für:** ✅ Kernkomponenten für adaptive Formulare ❎ [Foundation-Komponenten für adaptive Formulare](/help/forms/using/themes.md).
+<!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
 
 In AEM Forms 6.5 ist ein Design eine AEM Client-Bibliothek, mit der Sie die Stile (Look-and-Feel) für ein adaptives Formular definieren. Zu einem Design gehören Stildetails für die Komponenten und Bedienfelder. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, spiegeln die entsprechenden Komponenten den angegebenen Stil wider. Ein Design wird ohne Verweis auf ein adaptives Formular unabhängig verwaltet und kann über mehrere adaptive Formulare hinweg wiederverwendet werden.
 
