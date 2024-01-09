@@ -2,16 +2,24 @@
 title: AEM 6.5-Verwaltungsanleitung
 description: Erfahren Sie anhand wichtiger Ressourcen und einer umfassenden Sammlung von Benutzerhandbüchern zu AEM 6.5, wie Sie AEM-Projekte erfolgreich verwalten.
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
-source-git-commit: 7c691e275208287250f3540158a5e9948097b277
+source-git-commit: 5a7729e1792bc5849682800781e31f41c6bb6e4a
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 100%
+source-wordcount: '294'
+ht-degree: 98%
 
 ---
 
 # AEM 6.5-Verwaltungsanleitung
 
 Erfahren Sie anhand wichtiger Ressourcen und einer umfassenden Sammlung von Benutzerhandbüchern zu AEM 6.5, wie Sie AEM-Projekte erfolgreich verwalten.
+
+## Wichtige Artikel
+
+* [Verwalten von Projekten – Checkliste für Best Practices](/help/managing/best-practices.md)
+* [Hardware-Skalierungsrichtlinien](/help/managing/hardware-sizing-guidelines.md)
+* [Best Practices für SEO und URL-Verwaltung](/help/managing/seo-and-url-management.md)
+* [AEM und Richtlinien für barrierefreies Webdesign](/help/managing/web-accessibility.md)
+* [Adobe Experience Manager – Einhaltung von Datenschutzbestimmungen](/help/managing/data-protection-and-privacy.md)
 
 ## Wichtige AEM-Artikel
 
