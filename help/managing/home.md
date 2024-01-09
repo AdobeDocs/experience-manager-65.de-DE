@@ -2,10 +2,10 @@
 title: AEM 6.5-Verwaltungsanleitung
 description: Erfahren Sie anhand wichtiger Ressourcen und einer umfassenden Sammlung von Benutzerhandbüchern zu AEM 6.5, wie Sie AEM-Projekte erfolgreich verwalten.
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
-source-git-commit: 5ee9bc34128738967124855652c7b38c65d8779d
+source-git-commit: 02dd950111a45908f0a65deb9e5c28b4b119269f
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 77%
+source-wordcount: '90'
+ht-degree: 72%
 
 ---
 
@@ -14,6 +14,8 @@ ht-degree: 77%
 Erfahren Sie, wie Sie ein AEM-Projekt erfolgreich verwalten können. Unterstützt von wichtigen Ressourcen, zusammen mit Best Practices und Richtlinien.
 
 ## Wichtige -Artikel
+
+Zu den wichtigsten Artikeln in diesem Handbuch gehören:
 
 * [Verwalten von Projekten – Checkliste für Best Practices](/help/managing/best-practices.md)
 * [Hardware-Skalierungsrichtlinien](/help/managing/hardware-sizing-guidelines.md)
