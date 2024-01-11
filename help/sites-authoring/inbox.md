@@ -2,7 +2,7 @@
 title: Ihr Posteingang zum Verwalten von Aufgaben
 description: Verwalten Ihrer Aufgaben mit dem Posteingang in Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 89%
@@ -39,7 +39,7 @@ Sie erhalten diese Benachrichtigungen in Ihrem eigenen Posteingang, wo Sie sie a
 >* [Projekte](/help/sites-authoring/touch-ui-managing-projects.md)
 >* [Projekte – Arbeiten mit Aufgaben](/help/sites-authoring/task-content.md)
 >* [Workflows](/help/sites-authoring/workflows.md)
->* [Formulare](/help/forms/home.md)
+>* [Formulare](/help/forms/using/introduction-aem-forms.md)
 >
 
 ## Posteingang in der Kopfzeile {#inbox-in-the-header}

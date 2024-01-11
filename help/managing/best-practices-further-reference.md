@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '3699'
 ht-degree: 100%
@@ -34,7 +34,7 @@ Bei der Implementierung von AEM (insbesondere beim ersten Mal) müssen Sie die [
 * [Assets](/help/assets/assets.md)
 * [Tags](/help/sites-administering/tags.md)
 * [Multi-Site-Management und Übersetzung](/help/sites-administering/msm-and-translation.md)
-* [Formulare](/help/forms/home.md)
+* [Formulare](/help/forms/using/introduction-aem-forms.md)
 * [Communities](/help/communities/deploy-communities.md)
 
 Überprüfen Sie außerdem die [Versionshinweise](/help/release-notes/release-notes.md) für die verschiedenen Versionen von AEM, um zu sehen, wann neue Funktionen hinzugefügt wurden.

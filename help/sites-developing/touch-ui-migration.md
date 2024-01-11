@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: introduction
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 74%
@@ -144,7 +144,7 @@ Obwohl dies nicht direkt mit einer Migration zur Touch-optimierten Benutzeroberf
 
 Umfassende Informationen zur Entwicklung von AEM finden Sie in der Sammlung von Ressourcen unter:
 
-* [Benutzerhandbuch für Entwickler](/help/sites-developing/home.md)
+* [Benutzerhandbuch für Entwickler](/help/sites-developing/getting-started.md)
 * [Dokumentation zur Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [Tutorials und Videos zu AEM 6.5 Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=de)
 * [Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial ](/help/sites-developing/getting-started.md)

@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1792'
 ht-degree: 57%
 
 ---
@@ -73,7 +73,7 @@ Auf dieser Grundlage bietet AEM außerdem mehrere Funktionen auf Anwendungsebene
 * **Websites**
 * **Mobile Apps**
 * **Digitalen Veröffentlichungen**
-* **Formulare und Dokumente**
+* **Forms und Dokumente**
 * **Digitale Assets**
 * **Communities**
 * **Online-Commerce**
@@ -84,7 +84,7 @@ Der AEM-Server ist **Java-basiert** und kann auf den meisten Betriebssystemen au
 
 >[!NOTE]
 >
->Die in AEM 6.5 QuickStart verfügbare Funktion Adaptive Forms ist nur für Explorations- und Auswertungszwecke konzipiert. Für die Verwendung in der Produktion ist es wichtig, eine gültige Lizenz für AEM Forms zu erhalten, da die Adaptive Forms-Funktion eine ordnungsgemäße Lizenzierung erfordert.
+>Die in AEM 6.5 QuickStart verfügbare Funktion Adaptive Forms ist nur für Explorations- und Auswertungszwecke konzipiert. Für die Verwendung in der Produktion muss eine gültige Lizenz für AEM Forms erworben werden, da für die Funktion „Adaptive Formulare“ eine Lizenzierung erforderlich ist.
 
 ### Typische Bereitstellungsszenarien {#typical-deployment-scenarios}
 
@@ -287,9 +287,9 @@ AEM startet und leitet Ihren Webbrowser automatisch zur entsprechenden Seite um.
 
 Nachdem Sie angemeldet sind, haben Sie Zugriff auf AEM. Weitere Informationen zu Ihrer Rolle finden Sie in den folgenden Abschnitten:
 
-* [Authoring –](/help/sites-authoring/home.md)
+* [Authoring –](/help/sites-authoring/first-steps.md)
 * [Verwalten](/help/sites-administering/home.md)
-* [Entwickeln](/help/sites-developing/home.md)
+* [Entwickeln](/help/sites-developing/getting-started.md)
 * [Verwaltung](/help/managing/best-practices.md)
 
 ## Erweiterte Bereitstellung {#advanced-deployment}

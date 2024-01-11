@@ -2,7 +2,7 @@
 title: Bearbeiten von Inhaltsseiten in AEM
 description: Die Aufgaben, die beim Bearbeiten einer Inhaltsseite in Adobe Experience Manager 6.5 erforderlich sind.
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 76%
@@ -19,7 +19,7 @@ Im Folgenden finden Sie zwei Übersichtstypen zur Seitenbearbeitung mit AEM:
 
 >[!NOTE]
 >
->Dieser Abschnitt enthält die Aufgaben, die bei der Bearbeitung von Inhaltsseiten ausgeführt werden. Es gibt viele zusätzliche Funktionen, die eng mit der Erstellung von Seiten zusammenhängen. Weitere Informationen finden Sie in anderen Abschnitten des [Leitfadens für die Seitenbearbeitung](/help/sites-authoring/home.md).
+>Dieser Abschnitt enthält die Aufgaben, die bei der Bearbeitung von Inhaltsseiten ausgeführt werden. Es gibt viele zusätzliche Funktionen, die eng mit der Erstellung von Seiten zusammenhängen. Weitere Informationen finden Sie in anderen Abschnitten des [Leitfadens für die Seitenbearbeitung](/help/sites-authoring/first-steps.md).
 
 ## Schneller Überblick über die Funktionen für die Seitenbearbeitung {#quick-overview-of-features-used-for-authoring-pages}
 

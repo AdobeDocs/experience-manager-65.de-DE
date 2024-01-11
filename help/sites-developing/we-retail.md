@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 4b5b3ac41034bd4cc0f359b35cac0515b76ca64e
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 38%
+source-wordcount: '727'
+ht-degree: 35%
 
 ---
 
@@ -49,7 +49,7 @@ We.Retail wird als AEM Beispielinhalt bereitgestellt. Zur Verwendung einfach [AE
 
 >[!CAUTION]
 >
->We.Retail basiert auf der neuesten AEM-Technologie und bietet daher keine Unterstützung für [die Inhaltserstellung mit der klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/home.md).
+>We.Retail basiert auf der neuesten AEM-Technologie und bietet daher keine Unterstützung für [die Inhaltserstellung mit der klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md).
 
 ### Neueste Version {#latest-version}
 
@@ -102,7 +102,7 @@ We.Retail wurde als Open-Source-Projekt veröffentlicht und die neueste Version 
 
 CODE AUF GITHUB
 
-Den Code dieser Seite finden Sie auf GitHub..
+Den Code dieser Seite finden Sie auf GitHub.
 
 * [Öffnen des Projekts aem-sample-we-retail auf GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
 * Laden Sie das Projekt als [ZIP-Datei](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/zip/refs/heads/master) herunter.

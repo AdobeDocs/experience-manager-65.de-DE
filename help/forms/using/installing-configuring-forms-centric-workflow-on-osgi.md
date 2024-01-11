@@ -5,10 +5,10 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '1590'
-ht-degree: 89%
+ht-degree: 96%
 
 ---
 
@@ -28,7 +28,7 @@ AEM Forms ist eine leistungsstarke Plattform der Enterprise-Klasse. Formularzent
 >
 >Mit formularzentrierten Workflows in OSGi können Sie schnell Workflows für verschiedene Aufgaben auf dem OSGi-Stapel erstellen und bereitstellen, ohne die komplette Prozessverwaltungsfunktion auf dem JEE-Stapel zu installieren. In diesem [Vergleich](capabilities-osgi-jee-workflows.md) der formularbasierten AEM-Workflows unter OSGi mit dem Process Management auf JEE erfahren Sie mehr über die Unterschiede und Gemeinsamkeiten der Funktionen.
 >
->Wenn Sie sich nach dem Vergleich für die Installation der Process Management-Funktionen auf dem JEE-Stapel entscheiden, finden Sie unter [Installieren oder Aktualisieren von AEM Forms auf JEE](/help/forms/home.md) detaillierte Informationen zum Installieren und Konfigurieren des JEE-Stapels und der Process Management-Funktionen.
+>Wenn Sie sich nach dem Vergleich für die Installation der Process Management-Funktionen auf dem JEE-Stapel entscheiden, finden Sie unter [Installieren oder Aktualisieren von AEM Forms auf JEE](/help/forms/using/introduction-aem-forms.md) detaillierte Informationen zum Installieren und Konfigurieren des JEE-Stapels und der Process Management-Funktionen.
 
 ## Bereitstellungstopologie {#deployment-topology}
 
@@ -56,11 +56,11 @@ Bevor Sie mit der Installation und Konfiguration eines formularzentrierten Workf
    * **Autor**: Eine zum Erstellen, Hochladen und Bearbeiten von Inhalten sowie zum Verwalten der Website verwendete AEM-Instanz. Sobald der Inhalt für die Veröffentlichung bereit ist, wird er an die Veröffentlichungsinstanz repliziert.
    * **Verarbeitung:** Eine Verarbeitungsinstanz ist eine [extrasichere AEM-Authoring-Instanz](/help/forms/using/hardening-securing-aem-forms-environment.md). Nach der Installation können Sie eine Autoreninstanz festlegen und absichern.
 
-   * **Publish**: Eine AEM-Instanz, die die veröffentlichten Inhalte über das Internet oder ein internes Netzwerk öffentlich zugänglich macht.
+   * **Veröffentlichung**: Eine AEM-Instanz, die die veröffentlichten Inhalte über das Internet oder ein internes Netzwerk öffentlich zugänglich macht.
 
 * Es gibt gewisse Arbeitsspeicheranforderungen. Für das Add-on-Paket für AEM Forms ist Folgendes erforderlich:
 
-   * 15 GB temporärer Speicherplatz für Windows-basierte Installationen von Microsoft.
+   * 15 GB temporärer Speicherplatz für Microsoft Windows-basierte Installationen.
    * 6 GB temporärer Speicherplatz für UNIX-basierte Installationen.
 
 * Zusätzliche Anforderungen für UNIX-basierte Systeme: Wenn Sie das UNIX-basierte Betriebssystem verwenden, installieren Sie die folgenden Pakete über die Installationsmedien des jeweiligen Betriebssystems.
@@ -163,11 +163,11 @@ Dispatcher ist ein Tool zum Zwischenspeichern und für den Lastenausgleich für 
 
    Melden Sie sich beim Apache Felix Configuration Manager als Admin an. Die Standard-URL von Configuration Manager lautet https://&#39;server&#39;:[port_number]/system/console/configMgr. Wählen Sie im Menü **Configurations** die Option **Apache Sling Referrer Filter.** Geben Sie im Feld „Hosts zulassen“ den Hostnamen des Dispatchers ein, um ihn als Referrer zuzulassen, und klicken Sie auf **Speichern**. Das Format des Eintrags ist `https://'[server]:[port]'`.
 
-#### Cache konfigurieren {#configure-cache}
+#### Konfigurieren des Cache {#configure-cache}
 
-Das Caching ist ein Mechanismus, um Datenzugriffszeiten zu verkürzen, Latenzzeiten zu reduzieren und die Ein-/Ausgabegeschwindigkeit (I/O) zu verbessern. Der Cache für adaptive Formulare speichert nur HTML-Inhalte und JSON-Strukturen eines adaptiven Formulars, ohne dass vorausgefüllte Daten gespeichert werden. Dies trägt dazu bei, die zum Rendern eines adaptiven Formulars erforderliche Zeit zu verkürzen.
+Caching ist ein Mechanismus zur Verkürzung von Datenzugriffszeiten, zur Verringerung von Latenzzeiten und zur Verbesserung der Ein-/Ausgabegeschwindigkeit (I/O). Der Cache für adaptive Formulare speichert nur HTML-Inhalte und JSON-Strukturen eines adaptiven Formulars, ohne die vorausgefüllten Daten zu speichern. Er trägt dazu bei, die für die Darstellung eines adaptiven Formulars erforderliche Zeit zu verkürzen.
 
-* Verwenden Sie bei Verwendung des Cache für adaptive Formulare den [AEM Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html) zum Zwischenspeichern von Client-Bibliotheken (CSS und JavaScript) eines adaptiven Formulars.
+* Wenn Sie den Cache für adaptive Formulare verwenden, verwenden Sie den [AEM Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html), um Client-Bibliotheken (CSS und JavaScript) eines adaptiven Formulars zwischenzuspeichern.
 * Halten Sie beim Entwickeln benutzerdefinierter Komponenten den Cache für adaptive Formulare auf dem für die Entwicklung verwendeten Server deaktiviert.
 
 Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu konfigurieren:
@@ -185,7 +185,7 @@ Adobe Sign ermöglicht Workflows für die elektronische Signatur für adaptive F
 
 In einem typischen Szenario mit Adobe Sign und einem formularzentrierten Workflow unter OSGi füllt ein Benutzer ein adaptives Formular aus, um **einen Service zu beantragen**. Dies könnte beispielsweise ein Antrag für eine Kreditkarte oder ein Formular für Dienstleistungen für Bürger sein. Wenn ein Benutzer das Antragsformular ausfüllt, übermittelt und signiert, wird ein Genehmigungs-/Zurückweisungs-Workflow gestartet. Der Dienstleister prüft den Antrag im AEM Posteingang und verwendet Adobe Sign, um den Antrag elektronisch zu signieren. Sie können ähnliche Workflows für elektronische Signaturen ermöglichen, indem Sie Adobe Sign in AEM Forms integrieren.
 
-So verwenden Sie Adobe Sign mit AEM Forms [Integrieren von Adobe Sign mit AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
+Um Adobe Sign mit AEM Forms zu verwenden, [integrieren Sie Adobe Sign mit AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
 ## Nächste Schritte {#next-steps}
 

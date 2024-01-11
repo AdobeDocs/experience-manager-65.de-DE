@@ -7,7 +7,7 @@ role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '3595'
 ht-degree: 96%
@@ -55,7 +55,7 @@ Um eine Liste von Formularen oder Vorlagen anzuzeigen, gehen Sie in der [!DNL Ex
 | | <ul><li>[!UICONTROL Video]</li></ul> | Schemaformular für Video-Assets mit dem MIME-Typ wie z. B. `video/avi` und `video/mp4`. |
 | [!UICONTROL collection] | | Schemaformular für Sammlungen. |
 | [!UICONTROL contentfragment] | | [Schemaformular für Inhaltsfragmente](/help/sites-developing/customizing-content-fragments.md). |
-| [!UICONTROL forms] | | Dieses Schemaformular bezieht sich auf [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL forms] | | Dieses Schemaformular bezieht sich auf [Adobe Experience Manager Forms](/help/forms/using/introduction-aem-forms.md). |
 | [!UICONTROL ugc_contentfragment] | | Schemaformular für benutzergenerierte Inhaltselemente und Assets, die aus Social Media in Experience Manager integriert wurden. |
 
 >[!NOTE]

@@ -7,9 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
-workflow-type: ht
-source-wordcount: '514'
+source-git-commit: 4b5b3ac41034bd4cc0f359b35cac0515b76ca64e
+workflow-type: tm+mt
+source-wordcount: '521'
 ht-degree: 100%
 
 ---
@@ -105,7 +105,7 @@ Jede Benutzerin und jeder Benutzer kann bestimmte Eigenschaften für sich selbst
 
 * **Klassisches Authoring-Erlebnis verwenden**
 
-  Diese Option ermöglicht eine auf der [klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/home.md) basierende Seitenbearbeitung. Im Normalfall wird die Standard-Benutzeroberfläche verwendet.
+  Diese Option ermöglicht eine auf der [klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) basierende Seitenbearbeitung. Im Normalfall wird die Standard-Benutzeroberfläche verwendet.
 
 * **Asset-Homepage aktivieren**
 

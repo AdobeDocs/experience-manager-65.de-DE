@@ -7,7 +7,7 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '2963'
 ht-degree: 61%
@@ -91,7 +91,7 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
   </tr>
   <tr>
    <td>Assets<br /> </td>
-   <td>In diesen Konsolen können Sie digitale Assets wie Bilder, Videos, Dokumente und Audiodateien importieren und <a href="/help/assets/home.md">verwalten</a>. Diese Assets können dann von jeder Website verwendet werden, die auf derselben AEM-Instanz ausgeführt wird. </td>
+   <td>In diesen Konsolen können Sie digitale Assets wie Bilder, Videos, Dokumente und Audiodateien importieren und <a href="/help/assets/assets.md">verwalten</a>. Diese Assets können dann von jeder Website verwendet werden, die auf derselben AEM-Instanz ausgeführt wird. </td>
   </tr>
   <tr>
    <td>Communities</td>
@@ -107,7 +107,7 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
   </tr>
   <tr>
    <td>Formulare</td>
-   <td>In dieser Konsole können Sie Ihre <a href="/help/forms/home.md">Formulare und Dokumente</a> erstellen und verwalten.</td>
+   <td>In dieser Konsole können Sie Ihre <a href="/help/forms/using/introduction-aem-forms.md">Formulare und Dokumente</a> erstellen und verwalten.</td>
   </tr>
   <tr>
    <td>Personalisierung</td>

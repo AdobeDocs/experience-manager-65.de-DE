@@ -1,18 +1,19 @@
 ---
 title: Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial
-description: Sind Sie neu bei der Entwicklung mit AEM? Benötigen Sie einen Auffrischungskurs zu Best Practices? Dann sind Sie hier richtig! Ziel dieses mehrteiligen Tutorials ist es, Entwicklerinnen und Entwicklern, die gerade mit AEM beginnen, beizubringen, wie sie in AEM eine Website unter Verwendung der neuesten Standards und Technologien implementieren können.
+description: Erfahren Sie, wie Sie Ihre AEM-Instanz aufbauen. Erfahren Sie mehr über die Plattform und die Komponenten und finden Sie Informationen zu Entwicklungs-Tools und Personalisierung.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
 docset: aem65
 exl-id: 8314d7fe-0a46-453d-9592-f1bcd8c8f10a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 95%
+source-wordcount: '211'
+ht-degree: 94%
 
 ---
+
 
 # Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial {#getting-started-developing-aem-sites-wknd-tutorial}
 

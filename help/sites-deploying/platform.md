@@ -1,18 +1,19 @@
 ---
 title: Einführung in die AEM-Plattform
-description: Dieses Kapitel gibt einen allgemeinen Überblick über die AEM-Plattform und ihre wichtigsten Komponenten.
+description: Erfahren Sie mehr über die AEM-Plattform und die wichtigsten Komponenten wie die Installation und Bereitstellung von Adobe Experience Manager 6.5 sowie über deren Architektur, einschließlich der Adobe Managed Services-Cloud-Implementierung.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
 exl-id: 8ee5f4ff-648d-45ea-a51e-894cd4385e62
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 100%
+source-wordcount: '776'
+ht-degree: 96%
 
 ---
+
 
 # Einführung in die AEM-Plattform{#introduction-to-the-aem-platform}
 

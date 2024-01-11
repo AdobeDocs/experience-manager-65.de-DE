@@ -1,18 +1,19 @@
 ---
 title: Erste Schritte für Autorinnen und Autoren beim Erstellen von Inhalten in AEM
-description: Ein Überblick über die wichtigsten Aufgaben, die Sie beim Verfassen von Inhalten mit Adobe Experience Manager verwenden (AEM).
+description: Erfahren Sie mehr über die wichtigsten Konzepte zur Inhaltserstellung und zum Authoring in AEM 6.5. Außerdem finden Sie hier Informationen zur Verwendung von Tags, Vorlagen und anderen Seitenfunktionen.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '413'
 ht-degree: 92%
 
 ---
+
 
 # Erste Schritte für Autoren{#first-steps-for-authors}
 

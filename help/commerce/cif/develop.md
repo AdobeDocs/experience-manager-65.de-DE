@@ -7,7 +7,7 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 48479725-8b52-4ff2-a599-d20958b26ee6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 97%
@@ -18,7 +18,7 @@ ht-degree: 97%
 
 Die Entwicklung von AEM Commerce-Projekten auf der Grundlage des Commerce Integration Framework (CIF) für AEM folgt denselben Regeln und Best Practices wie andere AEM Projekte. Überprüfen Sie diese zuerst:
 
-- [AEM 6.5-Entwickleranleitung](/help/sites-developing/home.md)
+- [AEM 6.5-Entwickleranleitung](/help/sites-developing/getting-started.md)
 - [Grundlegende AEM-Konzepte](/help/sites-developing/the-basics.md)
 - [AEM-Entwicklung – Richtlinien und Best Practices](/help/sites-developing/dev-guidelines-bestpractices.md)
 - [Erstellen von AEM-Projekten mit Apache Maven](/help/sites-developing/ht-projects-maven.md)
