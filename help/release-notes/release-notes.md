@@ -6,7 +6,7 @@ exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
 source-git-commit: 2c5791e972deef5fe81768d10ad53acaf946332a
 workflow-type: tm+mt
 source-wordcount: '4308'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -153,7 +153,7 @@ in
 #### [!DNL Dynamic Media]{#assets-dm-6519}
 
 * Nachdem ein Asset in AEM hochgeladen wurde, wird der Workflow `update_asset` ausgelöst. Der Workflow wird aber nie abgeschlossen. Wenn Sie sich die Workflow-Instanzen ansehen, stellt sich heraus, dass der Workflow bis zum Schritt zum Hochladen des Produkts abgeschlossen wird. Der nächste Schritt ist der Batch-Upload in Scene7. Die Benutzerin bzw. der Benutzer kann sehen, dass sich das Asset in Scene7 in der Dynamic Media Classic-App befindet. (ASSETS-30443)
-* Ein benutzerdefiniertes Servlet (API-Endpunkt) gibt einen falschen Dynamic Media (Scene7)-Dateinamen zurück. Dies tritt auf, wenn ein Asset gelöscht und durch ein Asset mit demselben Namen ersetzt wird. Das benutzerdefinierte Servlet gibt den alten Dynamic Media(Scene7)-Dateinamen zurück, während ein „jcr“-API-Aufruf den richtigen Dateinamen zurückgibt. (ASSETS-29476)
+* Ein benutzerdefiniertes Servlet (API-Endpunkt) gibt einen falschen Dynamic Media (Scene7)-Dateinamen zurück. Dies tritt auf, wenn ein Asset gelöscht und durch ein Asset mit demselben Namen ersetzt wird. Das benutzerdefinierte Servlet gibt den alten Dynamic Media (Scene7)-Dateinamen zurück, während ein „jcr“-API-Aufruf den richtigen Dateinamen zurückgibt. (ASSETS-29476)
 * Selbst wenn die Synchronisierung auf Ordnerebene deaktiviert ist, zeigen die Protokolle den Trigger „Scene7 ReplicateOnModifyListener“. `ReplicateOnModifyListener/Worker` sollte die Verarbeitung von Assets und Inhaltsfragmenten aus nicht-dynamischen Medienordnern überspringen. (ASSETS-26705)
 * Menschen mit eingeschränktem Sehvermögen werden beeinträchtigt, wenn der Fokus in den Dropdown-Elementen („Nur Inhalt“, „Ansicht“, „Weitere Optionen“) in kontrastreichen Schwarz-Weiß-Modi nicht sichtbar ist. (ASSETS-25759)
 * Menschen mit eingeschränktem Sehvermögen werden beeinträchtigt, wenn das Helligkeits-Kontrast-Verhältnis für Text auf einer Seite weniger als 4,5:1 beträgt. (ASSETS-25756)
@@ -517,7 +517,7 @@ Um das Problem zu beheben, suchen Sie die Datei `<AEM_Forms_Installation_dir>\jb
 * Wenn Benutzende ein Feld erstmals in einem adaptiven Formular konfigurieren möchten, wird im Eigenschaften-Browser die Option zum Speichern einer Konfiguration nicht angezeigt. Das Problem lässt sich beheben, indem Sie im selben Editor ein anderes Feld des adaptiven Formulars konfigurieren.
 * Wenn Benutzende die Sendeaktion durchführen, schlägt die Übermittlung mit einer Fehlermeldung fehl:
   `javax.servlet.ServletException: java.lang.NoSuchMethodError`
-Um das Problem zu beheben, [kompilieren Sie die Sling-Skripte wie JSP, Java und Sightly neu](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html#resolution). (FORMS-8542)
+Um das Problem zu beheben, [kompilieren Sie die Sling-Skripte wie JSP, Java und Sightly neu](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=de#resolution). (FORMS-8542)
 * Nach der Installation von AEM Service Pack 6.5.14.0 und höher können Benutzende beim Navigieren zu `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings` keine Schriftart aus der JEE-Admin-Benutzeroberfläche für PDF-Dokumente auswählen, da die Schriftartenliste leer erscheint. (FORMS-12095)
 
 #### AEM Forms für JEE
