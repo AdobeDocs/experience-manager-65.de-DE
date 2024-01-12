@@ -3,9 +3,9 @@ title: Veraltete und entfernte Funktionen in Adobe Experience Manager Version 6.
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1689'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 Adobe evaluiert fortlaufend Produktfunktionen, um ältere Features zu überarbeiten oder durch modernere Alternativen zu ersetzen und so den Nutzen für die Kunden insgesamt zu verbessern, wobei stets auf Abwärtskompatibilität geachtet wird.
 
-Für die Bekanntgabe der bevorstehenden Entfernung oder Ersetzung von Adobe Experience Manager(AEM)-Funktionen gelten die folgenden Regeln:
+Für die Bekanntgabe der bevorstehenden Entfernung oder Ersetzung von Adobe Experience Manager (AEM)-Funktionen gelten die folgenden Regeln:
 
 1. Zunächst wird angekündigt, dass die betreffende Funktion veraltet ist. Obwohl diese Funktionen veraltet sind, sind sie weiterhin verfügbar, sie werden jedoch nicht weiter verbessert.
 1. Das Entfernen veralteter Funktionen erfolgt frühestens mit Einführung der nächsten Hauptversion. Das geplante Datum für die Entfernung wird später bekannt gegeben.
@@ -45,15 +45,15 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 | Komponenten (AEM Sites) | Adobe plant keine weiteren Verbesserungen an den meisten Foundation-Komponenten, die in `/libs/foundation/components` gespeichert sind. Suchen Sie im Komponentenordner nach den Eigenschaften `cq:deprecated` und `cq:deprecatedReason`. Die Foundation-Komponenten sind in AEM 6.5 enthalten und Kunden, die auf diese Version aktualisieren, können diese wie gehabt verwenden. Darüber hinaus werden die Foundation-Komponenten unterstützt, auch wenn sie veraltet sind. | Adobe empfiehlt die Verwendung der Kernkomponenten für zukünftige Projekte. Vorhandene Websites können unverändert bleiben oder Sie gestalten die Website mit der [AEM-Modernisierungs-Tool-Suite](https://github.com/adobe/aem-modernize-tools) so um, dass Kernkomponenten verwendet werden. |  |
 | Komponenten (AEM Sites) | Design-Import-Tool-Komponenten (`/libs/wcm/designimporter/components`) sind seit 6.5 als veraltet gekennzeichnet. Adobe plant keine weiteren Verbesserungen an dieser Implementierung des Design-Import-Tools. | Adobe plant für künftige Versionen eine alternative Implementierung des Nutzungsszenarios. |  |
 | Foundation | Granite-Auslagerungs-Framework. Adobe plant keine weiteren Verbesserungen am Auslagerungs-Framework, das in Version CQ 5.6.1 zur Externalisierung der Asset-Verarbeitung eingeführt wurde. | Adobe arbeitet an einem cloudnativen Auslagerungs-Framework der nächsten Generation. |  |
-| Entwickler  | `Hobbes.js`. Adobe plant keine weiteren Verbesserungen am `hobbes.js`-Framework zum Testen von Benutzeroberflächen. | Adobe empfiehlt, dass Kunden die Selenium-Automatisierung verwenden. |  |
-| Entwickler  | jQuery UI-Client-Bibliothek. Adobe plant keine weitere Pflege und Aktualisierung der jQuery UI-Client-Bibliothek, die im Rahmen der Verteilung (Quickstart) bereitgestellt wird. | Adobe empfiehlt Kunden, die nach wie vor die jQuery-Benutzeroberfläche für ihren Code benötigen, diese Erweiterung zu ihrer Projekt-Code-Basis hinzuzufügen. |  |
-| Entwickler  | jQuery Animation-Client-Bibliothek (`granite.jquery.animation`). Adobe plant keine weitere Pflege und Aktualisierung der jQuery Animation-Client-Bibliothek, die im Rahmen der Verteilung (Quickstart) bereitgestellt wird. | Adobe empfiehlt Kunden, die nach wie vor jQuery-Animationen für ihren Code benötigen, diese Erweiterung zu ihrer Projekt-Code-Basis hinzuzufügen. |  |
-| Entwickler  | Handlebars-Client-Bibliothek. Adobe plant keine weitere Pflege und Aktualisierung der Handlebar-Client-Bibliothek, die im Rahmen der Verteilung (Quickstart) bereitgestellt wird. | Adobe empfiehlt Kundinnen und Kunden, die nach wie vor `Handlebars` für ihren Code benötigen, diese in ihre Projekt-Code-Basis aufzunehmen. |  |
-| Entwickler  | Lawnchair-Client-Bibliothek. Adobe plant keine weitere Pflege und Aktualisierung der Lawnchair-Client-Bibliothek, die im Rahmen der Verteilung (Quickstart) bereitgestellt wird. | Adobe empfiehlt Kunden, die nach wie vor Lawnchair für ihren Code benötigen, diese Erweiterung zu ihrer Projekt-Code-Basis hinzuzufügen. |  |
-| Entwickler  | `Granite.Sling.js`-Client-Bibliothek. Adobe plant keine weitere Pflege und Aktualisierung der Granite.Sling.js-Client-Bibliothek, die im Rahmen der Verteilung (Quickstart) bereitgestellt wird. | Adobe empfiehlt Kunden, die sich auf die Fähigkeiten der Bibliothek verlassen, ihren Code zu überarbeiten, diese nicht mehr zu verwenden. |  |
-| Entwickler  | Verwendung von YUI zum Komprimieren/Minimieren der JavaScript-Client-Bibliotheken: Adobe plant keine weitere Aktualisierung der YUI-Bibliothek. Bis AEM 6.4 wurde YUI standardmäßig verwendet, um JavaScript zu minimieren – mit optionalem Wechsel zu Google Closure Compiler (GCC). Ab AEM 6.5 ist GCC der Standard. | Adobe empfiehlt Kunden, die ein Upgrade auf AEM 6.5 durchführen, für ihre Implementierungen auf GCC umzustellen. |  |
-| Entwicklerinnen und Entwickler  | Klassischer UI-Dialog-Editor in CRXDE Lite.  Adobe plant keine weitere Pflege und Aktualisierung des Dialog-Editors für klassische UI, der im Rahmen der Verteilung (Quickstart) bereitgestellt wird | Es steht kein Ersatz zur Verfügung. |  |
-| Formulare | Die Integration von AEM Forms mit AEM Mobile ist veraltet. | Es ist kein Ersatz verfügbar. |  | Entwicklerinnen und Entwickler  | Klassischer UI-Dialog-Editor in CRXDE Lite.  Adobe plant keine weitere Pflege und Aktualisierung des Dialog-Editors für klassische UI, der im Rahmen der Verteilung (Quickstart) bereitgestellt wird | Es steht kein Ersatz zur Verfügung. |  |
+| Entwickler | `Hobbes.js`. Adobe plant keine weiteren Verbesserungen am `hobbes.js`-Framework zum Testen von Benutzeroberflächen. | Adobe empfiehlt, dass Kunden die Selenium-Automatisierung verwenden. |  |
+| Entwickler | jQuery UI-Client-Bibliothek. Adobe plant keine weitere Pflege und Aktualisierung der jQuery UI-Client-Bibliothek, die im Rahmen der Verteilung (Quickstart) bereitgestellt wird. | Adobe empfiehlt Kunden, die nach wie vor die jQuery-Benutzeroberfläche für ihren Code benötigen, diese Erweiterung zu ihrer Projekt-Code-Basis hinzuzufügen. |  |
+| Entwickler | jQuery Animation-Client-Bibliothek (`granite.jquery.animation`). Adobe plant keine weitere Pflege und Aktualisierung der jQuery Animation-Client-Bibliothek, die im Rahmen der Verteilung (Quickstart) bereitgestellt wird. | Adobe empfiehlt Kunden, die nach wie vor jQuery-Animationen für ihren Code benötigen, diese Erweiterung zu ihrer Projekt-Code-Basis hinzuzufügen. |  |
+| Entwickler | Handlebars-Client-Bibliothek. Adobe plant keine weitere Pflege und Aktualisierung der Handlebar-Client-Bibliothek, die im Rahmen der Verteilung (Quickstart) bereitgestellt wird. | Adobe empfiehlt Kundinnen und Kunden, die nach wie vor `Handlebars` für ihren Code benötigen, diese in ihre Projekt-Code-Basis aufzunehmen. |  |
+| Entwickler | Lawnchair-Client-Bibliothek. Adobe plant keine weitere Pflege und Aktualisierung der Lawnchair-Client-Bibliothek, die im Rahmen der Verteilung (Quickstart) bereitgestellt wird. | Adobe empfiehlt Kunden, die nach wie vor Lawnchair für ihren Code benötigen, diese Erweiterung zu ihrer Projekt-Code-Basis hinzuzufügen. |  |
+| Entwickler | `Granite.Sling.js`-Client-Bibliothek. Adobe plant keine weitere Pflege und Aktualisierung der Granite.Sling.js-Client-Bibliothek, die im Rahmen der Verteilung (Quickstart) bereitgestellt wird. | Adobe empfiehlt Kunden, die sich auf die Fähigkeiten der Bibliothek verlassen, ihren Code zu überarbeiten, diese nicht mehr zu verwenden. |  |
+| Entwickler | Verwendung von YUI zum Komprimieren/Minimieren der JavaScript-Client-Bibliotheken: Adobe plant keine weitere Aktualisierung der YUI-Bibliothek. Bis AEM 6.4 wurde YUI standardmäßig verwendet, um JavaScript zu minimieren – mit optionalem Wechsel zu Google Closure Compiler (GCC). Ab AEM 6.5 ist GCC der Standard. | Adobe empfiehlt Kunden, die ein Upgrade auf AEM 6.5 durchführen, für ihre Implementierungen auf GCC umzustellen. |  |
+| Entwicklerinnen und Entwickler | Klassischer UI-Dialog-Editor in CRXDE Lite.  Adobe plant keine weitere Pflege und Aktualisierung des Dialog-Editors für klassische UI, der im Rahmen der Verteilung (Quickstart) bereitgestellt wird | Es steht kein Ersatz zur Verfügung. |  |
+| Formulare | Die Integration von AEM Forms mit AEM Mobile ist veraltet. | Es ist kein Ersatz verfügbar. |  | Entwicklerinnen und Entwickler | Klassischer UI-Dialog-Editor in CRXDE Lite.  Adobe plant keine weitere Pflege und Aktualisierung des Dialog-Editors für klassische UI, der im Rahmen der Verteilung (Quickstart) bereitgestellt wird | Es steht kein Ersatz zur Verfügung. |  |
 | Entwickler | Lodash/Underscore-Client-Bibliothek. Adobe plant keine weitere Pflege und Aktualisierung der Lodash/underscore-Client-Bibliothek, die im Rahmen der Verteilung (Quickstart) bereitgestellt wird. | Adobe empfiehlt Kunden, die nach wie vor Lodash/Underscore für ihren Code benötigen, diese Erweiterung zu ihrer Projekt-Code-Basis hinzuzufügen. |  |
 
 ## Entfernte Funktionen {#removed-features}
@@ -75,7 +75,7 @@ In diesem Abschnitt werden die Merkmale und Funktionen aufgelistet, die aus AEM�
 | Entwickler | Die Unterstützung für `customJavaScriptPath` wurde im HTML Client Library Manager eingestellt. | Kein Ersatz vorhanden |  |
 | [!DNL Assets] | Die Asset-Auslagerungsfunktion wurde in [!DNL Adobe Experience Manager] 6.5 entfernt. | Es steht kein Ersatz zur Verfügung. |  |
 | Cache | `system/console/slingjsp` wurde entfernt und ist in AEM 6.5 nicht mehr verfügbar. | Klassen und Slightly-Cache werden im Apache Sling Commons FileSystem ClassLoader-Bundle gespeichert. Sie können die Bundle-Nummer in der AEM-Web-Konsole überprüfen und den Cache-Ordner direkt aus dem Dateisystem entfernen (`crx-quickstart/launchpad/felix/bundle<ID>`). |  |
-| Screens | Die Unterstützung für das activemq-Bundle und die zugehörigen Konfigurationen wurden entfernt. |  |  |
+| Screens | Unterstützung für das activemq-Bundle und die zugehörigen Konfigurationen wurde entfernt. |  |  |
 
 <!-- ## Pre-announcement for next release {#pre-announcement-for-next-release}
 
