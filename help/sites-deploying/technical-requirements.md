@@ -3,9 +3,9 @@ title: Technische Anforderungen
 description: In diesem Dokument werden die unterstützten Client- und Server-Plattformen für Adobe Experience Manager aufgeführt.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: fbf056b6b7dcbfcaa27744672c45a87316c5f761
 workflow-type: tm+mt
-source-wordcount: '3624'
+source-wordcount: '3642'
 ht-degree: 94%
 
 ---
@@ -116,8 +116,10 @@ Es gibt verschiedene Optionen zum Bereitstellen des Repositorys von Adobe Experi
 | Speichern von Binärdateien in TAR-Dateien im Dateisystem `[1]` | Binärdateien | Z: Wird nicht für die Produktion unterstützt |
 | Amazon S3 | Binärdateien | A: Unterstützt |
 | Microsoft® Azure Blob Storage | Binärdateien | A: Unterstützt |
-| MongoDB Enterprise 4.4 | Repository | A: Unterstützt `[2, 3, 4]` |
-| MongoDB Enterprise 4.2 | Repository | A: Unterstützt `[2, 3, 4]` |
+| MongoDB Enterprise 6.0 | Repository | A: Unterstützt `[3, 4]` |
+| MongoDB Enterprise 5.0 | Repository | A: Unterstützt `[3, 4]` |
+| MongoDB Enterprise 4.4 | Repository | A: Unterstützt `[2, 3, 4, 7]` |
+| MongoDB Enterprise 4.2 | Repository | A: Unterstützt `[2, 3, 4, 7]` |
 | MongoDB Enterprise 4.0 | Repository | Z: Nicht unterstützt |
 | MongoDB Enterprise 3.6 | Repository | Z: Nicht unterstützt |
 | MongoDB Enterprise 3.4 | Repository | Z: Nicht unterstützt |
@@ -135,6 +137,7 @@ Es gibt verschiedene Optionen zum Bereitstellen des Repositorys von Adobe Experi
 1. Gilt nur für AEM Forms:
    * Die Unterstützung für Oracle Database 12c wurde entfernt und die Unterstützung für Oracle Database 19c wurde hinzugefügt.
    * Die Unterstützung für Microsoft® SQL Server 2016 wurde entfernt und die Unterstützung für Microsoft® SQL Server 2019 wurde hinzugefügt.
+1. Wird für AEM Forms nicht unterstützt.
 
 >[!NOTE]
 >
@@ -358,11 +361,11 @@ Der Betrieb ist nahtlos, da keine spezielle Konfiguration erforderlich ist. Sie 
 
 Wenn eine IP-Adresse angegeben werden muss, können Sie (nach Bedarf) aus folgenden Optionen auswählen:
 
-* Eine IPv6-Adresse. Zum Beispiel: `https://[ab12::34c5:6d7:8e90:1234]:4502`
+* Eine IPv6-Adresse. Beispiel: `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
-* Eine IPv4-Adresse. Zum Beispiel: `https://123.1.1.4:4502`
+* Eine IPv4-Adresse. Beispiel: `https://123.1.1.4:4502`
 
-* Ein Servername. Zum Beispiel: `https://www.yourserver.com:4502`
+* Ein Servername. Beispiel: `https://www.yourserver.com:4502`
 
 * Der Standardfall `localhost` wird für IPv4- und IPv6-Netzwerkinstallationen angenommen. Beispiel: `https://localhost:4502`
 
