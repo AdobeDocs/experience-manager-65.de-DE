@@ -4,9 +4,9 @@ description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsan
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
 source-git-commit: 5da11d1f1a8568c12cb9f6ccea9d71e61c1310c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4376'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -446,9 +446,9 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
   "refresh": true
   ```
 
-* Wenn eine GraphQL-Abfrage mit optionalen Variablen ausgeführt wird, wenn ein bestimmter Wert **not** für die optionale Variable angegeben ist, wird der Wert für diese Variable als implizit betrachtet `null`. Das bedeutet, dass der Filter nur übereinstimmt `null` -Werte für die entsprechende Eigenschaft.
+* Wenn eine GraphQL-Abfrage mit optionalen Variablen ausgeführt wird und ein bestimmter Wert **nicht** für die optionale Variable angegeben ist, wird der Wert für diese Variable als implizierter `null` betrachtet. Das bedeutet, dass der Filter nur mit `null`-Werten für die entsprechende Eigenschaft übereinstimmt.
 
-  In der folgenden Abfrage wird beispielsweise kein Wert für die Eigenschaft angegeben `lastName`:
+  In der folgenden Abfrage wird beispielsweise kein Wert für die Eigenschaft `lastName` angegeben:
 
   ```graphql
   query getAuthorsFilteredByLastName($authorLastName: String) {
@@ -463,7 +463,7 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
   }
   ```
 
-  Nur Autoren mit der `lastName` -Eigenschaft auf null gesetzt wird zurückgegeben:
+  Nur Autoren und Autorinnen, bei denen die Eigenschaft `lastName` auf null gesetzt ist, werden zurückgegeben:
 
   ```graphql
   {
