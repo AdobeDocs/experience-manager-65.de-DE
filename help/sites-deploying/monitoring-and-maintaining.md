@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 783824ece92c12476505d695b961d782d7d70cb9
 workflow-type: tm+mt
-source-wordcount: '5793'
+source-wordcount: '5792'
 ht-degree: 98%
 
 ---
@@ -203,7 +203,7 @@ AEM WCM-System zeichnet detaillierte Protokolle auf. Nach dem Entpacken und Aufr
 
 Die Rotation von Protokolldateien bezieht sich auf den Prozess, der das Wachstum der Datei begrenzt, indem regelmäßig eine Datei erstellt wird. In AEM wird eine Protokolldatei mit dem Namen `error.log` täglich nach den vorgegebenen Regeln rotiert:
 
-* Die Datei `error.log` wird nach dem Muster {Original_Dateiname} `.yyyy-MM-dd` umbenannt. Zum Beispiel wird am 11. Juli 2010 die aktuelle Protokolldatei in `error.log-2010-07-10` umbenannt und dann eine neue `error.og` erstellt.
+* Die `error.log` -Datei wird entsprechend dem Muster umbenannt. `{original_filename}.yyyy-MM-dd`. Zum Beispiel wird am 11. Juli 2010 die aktuelle Protokolldatei in `error.log-2010-07-10` umbenannt und dann eine neue `error.log` erstellt.
 
 * Vorherige Protokolldateien werden nicht gelöscht. Also sind Sie dafür verantwortlich, alte Protokolldateien regelmäßig zu löschen, um den Speicherbedarf zu beschränken.
 
