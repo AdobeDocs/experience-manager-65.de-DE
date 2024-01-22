@@ -1,6 +1,6 @@
 ---
 title: Einführung in die AEM-Plattform
-description: Erfahren Sie mehr über die AEM-Plattform und die wichtigsten Komponenten wie die Installation und Bereitstellung von Adobe Experience Manager 6.5 sowie über deren Architektur, einschließlich der Adobe Managed Services-Cloud-Implementierung.
+description: Erfahren Sie mehr über die AEM-Plattform und ihre wichtigsten Komponenten, einschließlich der Installation und Bereitstellung von Adobe Experience Manager 6.5 und der zugehörigen Architektur sowie der Cloud-Implementierung mit Adobe Managed Services.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -10,7 +10,7 @@ exl-id: 8ee5f4ff-648d-45ea-a51e-894cd4385e62
 source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
 source-wordcount: '776'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
