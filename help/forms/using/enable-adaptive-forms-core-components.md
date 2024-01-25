@@ -8,10 +8,10 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
-source-git-commit: 4a8155f754d1f71354717f5eb22511baab110916
+source-git-commit: 6cec9874bff54dea63562f7a880429d54e83ba79
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 84%
+source-wordcount: '969'
+ht-degree: 82%
 
 ---
 
@@ -105,12 +105,11 @@ So erstellen Sie ein auf AEM Archetyp 41 oder [höher](https://github.com/adobe/
 1. Aktualisieren Sie das Projekt, um die neueste Version der Forms-Kernkomponenten einzuschließen:
 
    1. Öffnen Sie den [AEM-Archetyp-Projektordner]/pom.xml zur Bearbeitung.
-   1. Version von festlegen `core.forms.components.version` und `core.forms.components.af.version` nach [Aktuelle Forms-Kernkomponenten](https://github.com/adobe/aem-core-forms-components/tree/release/650#system-requirements) und stellen Sie sicher, dass beide dieselbe Version haben wie **Forms-Kernkomponenten** in der Tabelle angegeben sind, und legen Sie die Version von `core.wcm.components.version` gemäß **WCM-Kernkomponenten**.
+   1. Version von festlegen `core.forms.components.version` und `core.forms.components.af.version` der [Aktuelle Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history) und stellen Sie sicher, dass beide dieselbe Version haben wie **Forms-Kernkomponenten** in der Tabelle angegeben sind, und legen Sie die Version von `core.wcm.components.version` gemäß [WCM-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html).
 
       >[!WARNING]
       >
-      >* Beim Erstellen eines Archetypprojekts mit `version 45`, die [AEM Archetyp-Projektordner]/pom.xml legt die Version der Formular-Kernkomponenten zunächst auf `1.1.28`. Aktualisieren Sie vor dem Erstellen oder Bereitstellen des Archetyp-Projekts die Version der Formular-Kernkomponenten auf `1.1.26`.
-
+      >* Wenn Sie ein Archetyp-Projekt mit Version 45 erstellen, wird die `[AEM Archetype Project Folder]/pom.xml` setzt zunächst die Version der Formular-Kernkomponenten auf 1.1.28. Aktualisieren Sie vor dem Erstellen oder Bereitstellen des Archetyp-Projekts die Version der Formular-Kernkomponenten auf 1.1.26. Die neueste Version finden Sie im [AEM 6.5 Forms-Versionsverlauf](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history).
 
       >[!NOTE]
       >

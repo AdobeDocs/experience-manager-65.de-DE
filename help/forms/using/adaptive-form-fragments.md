@@ -7,10 +7,10 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 0924ae98f03f09d5e8784bbd5e7af131b1edd544
 workflow-type: tm+mt
-source-wordcount: '2359'
-ht-degree: 86%
+source-wordcount: '2380'
+ht-degree: 87%
 
 ---
 
@@ -27,9 +27,13 @@ Zwar wird jedes Formular für einen bestimmten Zweck entwickelt, doch enthalten 
 
 Adaptive Formulare bieten einen bequemen Mechanismus, um Formularsegmente wie ein Bedienfeld oder eine Gruppe von Feldern nur einmal zu erstellen und sie in allen adaptiven Formularen wiederzuverwenden. Diese wiederverwendbaren, unabhängigen Segmente werden als adaptive Formularfragmente bezeichnet.
 
+>[!NOTE]
+>
+> Sie können Ihre Fragmenterfahrung für Benutzer einfach mit der [Dialogfeld &quot;Konfigurieren&quot;und Dialogfeld &quot;Design&quot;der Formularfragment-Komponente](https://experienceleague.corp.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html).
+
 ## Erstellen eines Fragments {#create-a-fragment}
 
-Sie können adaptive Formularfragmente von Grund auf neu erstellen oder ein Panel in einem vorhandenen adaptiven Formular als Fragment speichern.
+Sie können ein adaptives Formularfragment von Grund auf neu erstellen oder ein Bedienfeld in einem vorhandenen adaptiven Formular als Fragment speichern.
 
 ### Neuerstellen von Fragmenten {#create-fragment-from-scratch}
 
@@ -47,7 +51,7 @@ Sie können adaptive Formularfragmente von Grund auf neu erstellen oder ein Pane
 
      >[!NOTE]
      >
-     > Im adaptiven Forms, das auf Kernkomponenten basiert, können Sie ein einzelnes Formularfragment mehrmals in einem Formular verwenden. Es unterstützt nicht-basierte und schemabasierte Formularfragmente.
+     > Im adaptiven Forms, das auf Kernkomponenten basiert, können Sie ein einzelnes Formularfragment mehrmals in einem Formular verwenden. Es unterstützt sowohl auf nichts basierende als auch schemabasierte Formularfragmente.
 
    * **Formularvorlage**: Das Fragment mit mithilfe einer XDP-Vorlage erstellt, die auf AEM Forms hochgeladen wurde. Wählen Sie die entsprechende XDP-Vorlage als Formularmodell für das Fragment aus.
 
@@ -170,9 +174,9 @@ Sie können ein adaptives Formularfragment ändern oder durch ein anderes ersetz
 
 Mit dem Datensatzdokument (Document of Record, DOR) können Sie Informationen zu Ihren Formularen im Druck- oder Dokumentformat speichern. Dadurch können Sie jederzeit Informationen über Ihre Kunden nachverfolgen und mithilfe des Datensatzdokuments Formulare und Inhalte im PDF-Format archivieren. [Erfahren Sie, wie Sie ein Datensatzdokument für adaptive Formularfragmente generieren](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
-### Verwenden eines Formularfragments mehrmals in einem adaptiven Formular {#using-form-fragment-mutiple-times-in-af}
+### Mehrfaches Verwenden eines Formularfragments in einem adaptiven Formular {#using-form-fragment-mutiple-times-in-af}
 
-Sie können ein schemabasiertes Formularfragment mehrmals in einem adaptiven Formular verwenden, um Daten eindeutig für jedes Formularfragmentfeld zu speichern. Sie können beispielsweise ein Adressformularfragment verwenden, um Adressdetails für permanente Kommunikation und die Darstellung lebender Adressen in einem Kreditantragsformular zu erfassen.
+Sie können ein schemabasiertes Formularfragment mehrfach in einem adaptiven Formular verwenden, um Daten für jedes Formularfragmentfeld eindeutig zu speichern. Sie können beispielsweise ein Adressformularfragment verwenden, um Adressdetails permanent für die Kommunikation zu erfassen und aktive Adressen in einem Kreditantragsformular darzustellen.
 
 ![Verwenden mehrerer Fragmente im adaptiven Formular](/help/forms/using/assets/using-multiple-fragment-af.gif)
 
