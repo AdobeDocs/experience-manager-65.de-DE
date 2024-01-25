@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: In der Dokumentation zu Adobe Experience Manager 6.5 erfahren Sie, wie die Software funktioniert und was sie für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: 4be8b14ca9af543cec89c85ec5750f2065033406
+source-git-commit: d232bfdad7b8413eb015f6fe5dd3442cebf1001d
 workflow-type: tm+mt
-source-wordcount: '7297'
+source-wordcount: '7312'
 ht-degree: 97%
 
 ---
@@ -1180,6 +1180,7 @@ ht-degree: 97%
       + [Verarbeitung von Dokumenten, auch wenn der AEM Forms-Server nicht vollständig betriebsbereit ist](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [Output-Dienst, Forms-Dienst oder DoR-Dienst (Document of Record) können nicht verwendet werden](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Abmildern von Struts 2 RCE-Schwachstellen für Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
+      + [Fehlgeschlagene Sicherung der Datenbank bei Aktualisierung auf das AEM Forms Service Pack. 6.5.12.0](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6.5.12.0.md)
    + Alte Dokumentation {#legacy-documentation}
       + [Verwenden des Service „execute script“ in AEM Forms on JEE Workbench zum Erstellen von XML-Daten](/help/forms/developing/building-xml.md)
       + [Komprimieren und Dekomprimieren von Dateien mithilfe eines benutzerdefinierten DSC von AEM Forms auf JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)
@@ -1233,8 +1234,8 @@ ht-degree: 97%
          + [Entwicklung (generisch)](/help/commerce/cif-classic/developing/generic.md)
          + [Entwicklung mit SAP Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
 + Edge Delivery Services {#edge-delivery-services}
-   + [Erste Schritte mit der Edge-Bereitstellung](/help/edge/overview.md)
-   + [Verwenden der Edge-Bereitstellung](/help/edge/using.md)
+   + [Erste Schritte mit Edge Delivery](/help/edge/overview.md)
+   + [Verwenden von Edge Delivery](/help/edge/using.md)
 + Headless {#headless}
    + [AEM Headless-Touren](/help/journey-headless/overview.md)
    + AEM Headless-Entwickler-Tour {#developer}
