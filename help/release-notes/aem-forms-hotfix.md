@@ -2,16 +2,20 @@
 title: Hotfixes für AEM Forms
 description: Enthält Informationen zum Herunterladen und Installieren eines Hotfixes für AEM Forms.
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
-source-git-commit: 4c47fc5d03732d206c9eb18feb6e44018e936472
+source-git-commit: 4685a4babbec07dc09fe19c9264b4141b9989fbb
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 13%
+source-wordcount: '320'
+ht-degree: 9%
 
 ---
 
 # Adobe Experience Manager Forms Hotfixes{#aem-form-hotfix}
 
 In diesem Artikel werden die kritischen Fehlerbehebungen aufgelistet, die implementiert wurden, um bekannte Probleme zu beheben, die Systemstabilität zu verbessern und die Gesamtleistung von AEM Forms zu verbessern.
+
+>[!NOTE]
+>
+> Die Hotfixes sind kumulativ konzipiert und umfassen alle vorherigen Fehlerbehebungen. Wenn Sie das neueste Hotfix auf eine Version anwenden, wird nicht nur das neueste Problem behoben, sondern es enthält auch alle vorherigen Fehlerbehebungen und Verbesserungen.
 
 ## Hotfixes für adaptive Forms {#hotfix-for-adaptive-forms}
 
@@ -21,6 +25,34 @@ In diesem Artikel werden die kritischen Fehlerbehebungen aufgelistet, die implem
     <td><strong>Datum</strong></td>
     <td><strong>Hotfix-Downloadlink (AEM Software Distribution-Link)</strong></td>
     <td><strong>Behobene Probleme</strong></td>
+  </tr>
+  <tr>
+    <td>Dienstag, 29. Januar 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fforms-foundation-qs-content-4.0.170-FORMS-12692-B0001.zip">Hotfix für AEM Service Pack 6.5.19.0 für Windows on JEE-Server</a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li>In AEM Forms auf dem JEE-Server kann die HTML5 Forms, die den Kontextpfad verwenden, nicht gerendert werden. (FORMS-12485).</li>
+    </ul>
+    </td>    
+  </tr>
+  <tr>
+    <td>Dienstag, 29. Januar 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fadobe-aemfd-win-pkg-6.0.1016-004.zip">Hotfix für AEM Service Pack 6.5.18.0 für Microsoft Windows</a> </li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fadobe-aemfd-linux-pkg-6.0.1016-004.zip">Hotfix für AEM Service Pack 6.5.18.0 für Linux</a></li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fadobe-aemfd-osx-pkg-6.0.1016-004.zip">Hotfix für AEM Service Pack 6.5.18.0 für Apple macOS</a></li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li> Die OOTB Scribble-Signatur-Komponente kann für eine Vorschau in einem adaptiven Formular nicht gerendert werden. (FORMS-12073).</li>
+    </ul>
+    </td>    
    </tr>
    <tr>
     <td>Dienstag, 20. November 2023</td>
@@ -38,9 +70,9 @@ In diesem Artikel werden die kritischen Fehlerbehebungen aufgelistet, die implem
     <li>Die interaktive Kommunikation mit großen Inline-Bildern kann im Bearbeitungsmodus nicht geöffnet werden. (FORMS-10578)</li>
     </ul>
     </td>    
-    </tr>
-    <tbody>
-     </table>
+  </tr>
+  <tbody>
+</table>
 
 ## Hotfix herunterladen und installieren {#download-install-hotfix}
 
