@@ -6,9 +6,9 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 23dd80f0555ddec1ca422b13fbf0d45acf5ab6a8
+source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
 workflow-type: tm+mt
-source-wordcount: '2580'
+source-wordcount: '2597'
 ht-degree: 92%
 
 ---
@@ -169,7 +169,11 @@ Verwenden Sie nach der erfolgreichen Konfiguration die Übermittlungsaktion [Mi
 
 ## An Microsoft® SharePoint-Liste übermitteln{#submit-to-sharedrive}
 
-Die **[!UICONTROL An SharePoint übermitteln]** -Übermittlungsaktion verbindet ein adaptives Formular mit einem Microsoft® SharePoint-Speicher. Sie können die Formulardatendatei, die Anlagen oder das Datensatzdokument an den verbundenen Microsoft® Sharepoint Storage senden.
+>[!NOTE]
+>
+Die Funktion &quot;An Microsoft® SharePoint-Liste übermitteln&quot;wurde mit AEM 6.5 Forms Service Pack 19 (6.5.19.0) eingeführt.
+
+Die **[!UICONTROL An SharePoint übermitteln]** -Übermittlungsaktion verbindet ein adaptives Formular mit einem Microsoft® SharePoint-Speicher. Sie können die Formulardatendatei, die Anlagen oder das Datensatzdokument an den verbundenen Microsoft® Sharepoint-Speicher senden.
 
 ### Verbinden eines adaptiven Formulars mit der Microsoft® SharePoint-Liste {#connect-af-sharepoint-list}
 
@@ -203,7 +207,7 @@ So verbinden Sie AEM Forms mit Ihrer Microsoft® Sharepoint List:
 
 Sie können die erstellte SharePoint-Listenkonfiguration in einem adaptiven Formular verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einer SharePoint-Liste zu speichern. Führen Sie die folgenden Schritte aus, um eine SharePoint List-Speicherkonfiguration in einem adaptiven Formular zu verwenden:
 
-1. [Erstellen eines Formulardatenmodells mit Microsoft](/help/forms/using/create-form-data-model.md)
+1. [Erstellen eines Formulardatenmodells mithilfe von Microsoft](/help/forms/using/create-form-data-model.md)
 1. [Konfigurieren des Formulardatenmodells zum Abrufen und Senden von Daten](/help/forms/using/work-with-form-data-model.md#configure-services)
 1. [Adaptives Formular erstellen](/help/forms/using/create-adaptive-form.md).
 1. [Konfigurieren einer Übermittlungsaktion mit einem Formulardatenmodell](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)

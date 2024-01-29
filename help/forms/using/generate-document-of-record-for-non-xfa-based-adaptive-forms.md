@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
 workflow-type: tm+mt
-source-wordcount: '3583'
+source-wordcount: '3608'
 ht-degree: 91%
 
 ---
@@ -29,6 +29,11 @@ ht-degree: 91%
 Nachdem Ihre Kunden ein Formular gesendet haben, möchten sie im Allgemeinen einen Beleg (in gedruckter Form oder im Dokumentformat) über die eingegebenen Informationen behalten, um später darauf Bezug nehmen zu können. Dies wird als Datensatzdokument bezeichnet.
 
 In diesem Artikel wird erläutert, wie Sie ein Datensatzdokument für adaptive Forms- oder adaptive Formularfragmente generieren können.
+
+>[!NOTE]
+>
+> Die Unterstützung zum Anpassen Ihrer adaptiven Formularfragmente und ihrer Felder im Editor für adaptive Formulare wurde mit AEM 6.5 Forms Service Pack 19 (6.5.19.0) eingeführt.
+
 
 >[!NOTE]
 >
