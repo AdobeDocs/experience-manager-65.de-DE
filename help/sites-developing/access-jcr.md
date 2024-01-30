@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
-source-git-commit: 152b6078d6a19f8220564188d4d5d5a7bdee4146
+source-git-commit: ff9d054d0b08f5f98f5edb63975a0dbc8370d42f
 workflow-type: tm+mt
 source-wordcount: '567'
-ht-degree: 28%
+ht-degree: 24%
 
 ---
 
@@ -65,7 +65,7 @@ Verwenden Sie eine `Session` Instanz zum Erstellen einer `javax.jcr.Node` -Insta
 Node root = session.getRootNode();
 ```
 
-Nach der Erstellung der `Node`-Instanz können Sie verschiedene Aufgaben ausführen, z. B. einen anderen Knoten erstellen und ihm einen Wert hinzufügen. Beispielsweise erstellt der folgende Code zwei Knoten und fügt dem zweiten Knoten einen Wert hinzu.
+Nachdem Sie `Node` -Instanz können Sie Aufgaben wie das Erstellen eines anderen Knotens und das Hinzufügen eines Werts dazu ausführen. Beispielsweise erstellt der folgende Code zwei Knoten und fügt dem zweiten Knoten einen Wert hinzu.
 
 ```java
 // Store content
