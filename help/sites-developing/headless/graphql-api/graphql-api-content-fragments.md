@@ -3,9 +3,9 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 3d1c3ac74c9303a88d028d957e3da6aa418e71ba
+source-git-commit: 312e2477bb6a7cccab74cd4637d6a402f61052d7
 workflow-type: tm+mt
-source-wordcount: '4697'
+source-wordcount: '4708'
 ht-degree: 96%
 
 ---
@@ -719,7 +719,7 @@ Um das Zwischenspeichern persistenter Abfragen zu aktivieren, sind folgende Aktu
   >
   >Der Dispatcher fügt das Suffix hinzu `.json` an alle gespeicherten Abfrage-URLs, damit das Ergebnis zwischengespeichert werden kann.
   >
-  >Dadurch wird sichergestellt, dass die Abfrage den Anforderungen des Dispatchers für Dokumente entspricht, die zwischengespeichert werden können.
+  >Dadurch wird sichergestellt, dass die Abfrage den Anforderungen des Dispatchers für Dokumente entspricht, die zwischengespeichert werden können. Weitere Informationen finden Sie unter [Wie werden die Dispatcher-Rückgabedokumente zurückgegeben?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=de#how-does-the-dispatcher-return-documents%3F)
 
 * `<conf.dispatcher.d/filters/ams_publish_filters.any>`
 
