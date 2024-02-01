@@ -7,10 +7,11 @@ feature-set: Experience Manager Assets,Experience Manager,Experience Manager Sit
 version: 6.5
 type: Documentation
 index: y
-source-git-commit: ee6e408668a523464632e53a01ba11eddec103f6
-workflow-type: ht
-source-wordcount: '134'
-ht-degree: 100%
+recommendations: noDisplay
+source-git-commit: fc76dd7af48aa67380b0635589acf9322bff86fb
+workflow-type: tm+mt
+source-wordcount: '131'
+ht-degree: 90%
 
 ---
 
@@ -21,7 +22,7 @@ Die metadata.md-Datei enthält Metadaten auf Repo-Ebene, die über die TOC.md-Da
 
 | metadata | Funktion |
 |--- |--- |
-| solution-title | Wird in der Artikelkopfzeile als Link verwendet. |
+| solution-title | Wird in der Artikelüberschrift als Link verwendet. |
 | solution-hub-url | Öffnet die Hub-Seite „Lernen und Support“. |
 | solution-icon | Zeigt das Lösungssymbol neben Lösungstitel an. Noch nicht implementiert. |
 | getting-started-url | Link zur Seite „Erste Schritte“. |
@@ -33,5 +34,5 @@ In der Datei TOC.md
 
 | metadata | Funktion |
 |--- |--- |
-| user-guide-title | Wird in der Artikelkopfzeile als Link verwendet. |
+| user-guide-title | Wird in der Artikelüberschrift als Link verwendet. |
 | user-guide-url | Öffnet die Hub-Seite „Lernen und Support“. |
