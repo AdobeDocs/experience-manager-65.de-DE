@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: In der Dokumentation zu Adobe Experience Manager 6.5 erfahren Sie, wie die Software funktioniert und was sie für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: ac4d8a45478fbe48b1e3d43affeee935d7b7ca90
+source-git-commit: 26ffe17d1ddd116a749f7f02e84e91d5b9759ca8
 workflow-type: tm+mt
-source-wordcount: '7334'
+source-wordcount: '7329'
 ht-degree: 97%
 
 ---
@@ -1181,8 +1181,8 @@ ht-degree: 97%
       + [Verarbeitung von Dokumenten, auch wenn der AEM Forms-Server nicht vollständig betriebsbereit ist](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [Output-Dienst, Forms-Dienst oder DoR-Dienst (Document of Record) können nicht verwendet werden](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Abmildern von Struts 2 RCE-Schwachstellen für Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
+      + [Fehlschlagen der Sicherung der Datenbank während der Aktualisierung auf 6.5.12.0 für MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6.5.12.0.md)
       + [PDF-Generierung kann nicht viele PDF auf WorkBench drucken](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
-      + [Fehlgeschlagene Sicherung der Datenbank bei Aktualisierung auf das AEM Forms Service Pack. 6.5.12.0](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6.5.12.0.md)
    + Alte Dokumentation {#legacy-documentation}
       + [Verwenden des Service „execute script“ in AEM Forms on JEE Workbench zum Erstellen von XML-Daten](/help/forms/developing/building-xml.md)
       + [Komprimieren und Dekomprimieren von Dateien mithilfe eines benutzerdefinierten DSC von AEM Forms auf JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)
