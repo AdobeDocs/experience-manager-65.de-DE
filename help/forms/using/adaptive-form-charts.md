@@ -4,9 +4,9 @@ description: Verwenden Sie Diagramme in einem adaptiven Formular, um Ihr Formula
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
-source-git-commit: 5c117d25a381b2cb85c2bf0715866dd5ad93572c
+source-git-commit: 53a6914792bb15773c8f91a2bb6295ab69b3b1bf
 workflow-type: tm+mt
-source-wordcount: '2001'
+source-wordcount: '2005'
 ht-degree: 6%
 
 ---
@@ -15,8 +15,8 @@ ht-degree: 6%
 
 ![Hero_Image](assets/charts_hero_image.jpg)
 
-Ein Diagramm oder Graph ist eine visuelle Darstellung von Daten. Dadurch können Sie große Mengen an Informationen zu einem einfach zu verständlichen und visuellen Format zusammenfassen, sodass Sie komplexe Daten besser visualisieren, interpretieren und analysieren können.
-Das AEM Forms Add-On-Paket bietet eine vordefinierte Diagrammkomponente. Sie können in Ihren adaptiven Formularen und Dokumenten zweidimensionale Daten in wiederholbaren Bereichen und Tabellen visuell darstellen. Mit der Diagrammkomponente können Sie die folgenden Arten von Diagrammen hinzufügen und konfigurieren:
+Ein Diagramm oder Graph ist eine visuelle Darstellung von Daten. Dadurch können Sie große Mengen an Informationen in ein leicht verständliches visuelles Format versetzen, sodass Sie komplexe Daten besser visualisieren, interpretieren und analysieren können.
+Das AEM Forms Add-On-Paket bietet eine vordefinierte Diagrammkomponente. Sie können in Ihren adaptiven Formularen und Dokumenten für die visuelle Darstellung zweidimensionaler Daten in **wiederholbare Bereiche** und **Tabellen**. Mit der Diagrammkomponente können Sie die folgenden Arten von Diagrammen hinzufügen und konfigurieren:
 
 1. Kreisdiagramm
 1. Spalte
@@ -41,7 +41,7 @@ Die Diagrammkomponente ist standardmäßig in AEM Seitenleiste verfügbar. Sie k
 > 
 > Stellen Sie vor dem Konfigurieren des Diagramms sicher, dass das Bedienfeld oder die Tabellenzeile, für die Sie das Diagramm konfigurieren, auf wiederholbar eingestellt ist. Sie können Mindest- und Höchstzahlen für wiederholbare Bedienfelder oder Tabellenzeilen im Dialogfeld &quot;Komponente bearbeiten&quot;auf der Registerkarte &quot;Wiederholungseinstellungen&quot;angeben.
 
-Klicken Sie zum Konfigurieren des Diagramms mit der rechten Maustaste auf die Diagrammkomponente und klicken Sie auf Bearbeiten , um das Dialogfeld Diagramm bearbeiten zu öffnen. Das Dialogfeld enthält die Registerkarten Titel und Text, Konfiguration, Erweiterte Optionen und Formatierung , mit denen Sie das Diagramm konfigurieren können.
+Um das Diagramm zu konfigurieren, klicken Sie auf die Diagrammkomponente und klicken Sie auf ![Einstellungen](cmppr1.png) , um das Dialogfeld Diagramm bearbeiten zu öffnen. Das Dialogfeld enthält die Registerkarten Titel und Text, Konfiguration, Erweiterte Optionen und Formatierung , mit denen Sie das Diagramm konfigurieren können.
 
 ### Einfach {#basic}
 
@@ -51,7 +51,7 @@ Auf der Registerkarte Allgemein können Sie die folgenden Eigenschaften konfigur
 
 * **Elementname**: Eine Kennung für das Diagrammelement in der JCR-Inhaltsstruktur. Sie ist nicht im Diagramm sichtbar, hilft aber beim Verweis auf das Element aus anderen Komponenten, Skripten und SOM-Ausdrücken.
 * **Diagrammtyp**: Gibt den Typ des Diagramms an, das Sie generieren möchten. Die verfügbaren Optionen sind Tortendiagramm, Ringdiagramm, Balken, Spalten, Linien, Linien, Linien und Punkte, Punkt und Bereich. Im Beispiel ist der Diagrammtyp Spalte.
-* **Wiederholender Zeilenname für Datenquelle**: Gibt den Elementnamen der Tabellenzeile oder des wiederholbaren Bereichs an, aus dem die Daten bezogen werden. Im Beispiel ist statementDetails der Elementname der wiederholbaren Zeile in der Tabelle mit den Anweisungsdetails.
+* **Wiederholender Zeilenname oder Bereichsname für Datenquelle**: Gibt den Elementnamen der Tabellenzeile oder des wiederholbaren Bereichs an, aus dem die Daten bezogen werden. Im Beispiel ist statementDetails der Elementname der wiederholbaren Zeile in der Tabelle mit den Anweisungsdetails.
 * **X-Achse > Titel**: Gibt den Titel für die X-Achse an. In diesem Beispiel lautet der Titel für die X-Achse Kategorie.
 * **X-Achse > Feld**: Gibt den Elementnamen des auf der X-Achse abzubildenden Felds (oder einer Zelle in einer Tabelle) an. Im Beispiel werden Kategorien auf der X-Achse konfiguriert. Der Elementname für die Tabellenzelle in der Spalte Kategorie der Beispieltabelle ist Kategorie.
 * **X-Achse > Funktion verwenden**: Gibt die statistische Funktion an, die für die Berechnung der Werte auf der X-Achse verwendet werden soll. Im Beispiel ist die ausgewählte Option Ohne. Weitere Informationen zu Funktionen finden Sie unter Funktionen im Diagramm verwenden.
@@ -64,7 +64,7 @@ Auf der Registerkarte Allgemein können Sie die folgenden Eigenschaften konfigur
 * **Diagrammspezifische Konfigurationen**: Zusätzlich zu den allgemeinen Konfigurationen ist die folgende Diagrammkonfiguration verfügbar:
 * **Innerer Radius**: Verfügbar für Ringdiagramme, um den Radius (in Pixel) des inneren Kreises im Diagramm anzugeben.
 * **Linienfarbe**: Verfügbar für Linien-, Linien- und Punkt- sowie Flächendiagramme, um den hexadezimalen Farbwert für die Linie im Diagramm anzugeben.
-* **Punktfarbe**: Verfügbar für Punkt- und Linien- und Punktdiagramme, um den hexadezimalen Farbwert für die Punkte im Diagramm anzugeben.
+* **Punktfarbe**: Verfügbar für Punkt- und Liniendiagramme sowie Punktdiagramme, um den hexadezimalen Farbwert für die Punkte im Diagramm anzugeben.
 * **Bereichsfarbe**: Verfügbar für Bereichsdiagramme, um den hexadezimalen Farbwert für den Bereich unter der Linie im Diagramm anzugeben.
 * **CSS-Klasse**: Geben Sie den Namen einer CSS-Klasse im CSS-Klassenfeld an, um benutzerdefinierte Stile auf das Diagramm anzuwenden.
 
@@ -78,7 +78,7 @@ Um dies zu erreichen, müssen Sie Kategorien auf der X-Achse und auf der Y-Achse
 
 ![Details zur Anweisung](assets/statement-details.png)
 
-Der in diesem Beispiel verwendete Kreditkartenauszug ist ein adaptives Dokument und der Abschnitt mit den Anweisungsdetails ist eine Tabelle, die im Authoring-Modus wie folgt aussieht.
+Der in diesem Beispiel verwendete Kreditkartenauszug ist ein adaptives Formulardokument und der Abschnitt mit den Anweisungsdetails ist eine Tabelle, die im Authoring-Modus wie folgt aussieht.
 
 ![Authoring von Satzdetails](assets/statement-details-authoring.png)
 
@@ -87,7 +87,7 @@ Betrachten wir die folgenden Anforderungen und Bedingungen zum Generieren der Gr
 * Das Diagramm zeigt die Gesamtausgaben in jeder Kategorie in der Tabelle mit den Auszugsdetails an.
 * Der Diagrammtyp ist Spalte , Sie können jedoch auch einen beliebigen anderen Diagrammtyp auswählen.
 * Die Tabellenzeile in der Tabelle mit den Anweisungsdetails ist wiederholbar. Sie können sie im Feld Wiederholungseinstellungen der Tabellenzeileneigenschaften konfigurieren.
-* Der Elementname für die Zeile ist statementDetails. Sie können sie in den Eigenschaften der Tabellenzeile konfigurieren.
+* Der Elementname für die Zeile ist Anweisungsdetails. Sie können sie in den Eigenschaften der Tabellenzeile konfigurieren.
 * Der Elementname für die Tabellenzelle in der Spalte Kategorie ist Kategorie. Sie können sie inline angeben. Wählen Sie die Zelle aus und tippen Sie auf die Schaltfläche Bearbeiten .
 * Der Elementname für die Tabellenzelle in der Spalte &quot;Betrag&quot;ist Betrag. Außerdem handelt es sich bei der Tabellenzelle in der Spalte &quot;Betrag&quot;um ein numerisches Feld.
 * Mit der angegebenen Konfiguration wird das Säulendiagramm im Beispiel wie folgt angezeigt. Jede Farbe stellt eine Kategorie dar und einzelne Zeileneinträge oder Beträge für eine Kategorie werden in der Grafik addiert.
@@ -108,7 +108,7 @@ So wechseln Sie in der Seitensymbolleiste zum Formatierungsmodus: **Tippen> > St
 
 ## Verwenden von Funktionen im Diagrammen {#use-functions}
 
-Sie können ein Diagramm so konfigurieren, dass es mithilfe statistischer Funktionen Werte aus den Quelldaten für die Darstellung im Diagramm berechnet. Während die Diagrammkomponente einige integrierte Funktionen enthält, können Sie eigene Funktionen schreiben und sie für die Verwendung in der Diagrammkonfiguration verfügbar machen.
+Sie können ein Diagramm so konfigurieren, dass es mithilfe statistischer Funktionen Werte aus den Quelldaten für die Darstellung im Diagramm berechnet. Während die Diagrammkomponente über einige integrierte Funktionen verfügt, können Sie eigene Funktionen schreiben und sie für die Verwendung in der Diagrammkonfiguration verfügbar machen.
 
 >[!NOTE]
 >
@@ -129,7 +129,7 @@ Die folgenden Funktionen sind standardmäßig in der Diagrammkomponente verfügb
 
 ### Benutzerdefinierte Funktionen {#custom-functions}
 
-Neben der Verwendung der Standardfunktionen in Diagrammen können Sie auch benutzerdefinierte Funktionen in JavaScript schreiben und in der Funktionsliste der Diagrammkomponente verfügbar machen.
+Zusätzlich zur Verwendung der Standardfunktionen in Diagrammen können Sie auch [benutzerdefinierte Funktionen](/help/forms/using/rule-editor.md#custom-functions-in-rule-editor-custom-functions) in JavaScript verwenden und sie in der Funktionsliste der Diagrammkomponente verfügbar machen.
 
 Eine Funktion akzeptiert ein Array oder Werte sowie einen Kategorienamen als Eingaben und gibt einen Wert zurück. Beispiel:
 
