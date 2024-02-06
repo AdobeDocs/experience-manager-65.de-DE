@@ -2,9 +2,9 @@
 title: Hotfixes für AEM Forms
 description: Enthält Informationen zum Herunterladen und Installieren eines Hotfixes für AEM Forms.
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
-source-git-commit: 4685a4babbec07dc09fe19c9264b4141b9989fbb
+source-git-commit: 5ab1fd033af0d6d5595fe41de003455ab9ba28a6
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '322'
 ht-degree: 9%
 
 ---
@@ -35,7 +35,7 @@ In diesem Artikel werden die kritischen Fehlerbehebungen aufgelistet, die implem
      </td>
     <td>
     <ul>
-    <li>In AEM Forms auf dem JEE-Server kann die HTML5 Forms, die den Kontextpfad verwenden, nicht gerendert werden. (FORMS-12485).</li>
+    <li>In AEM Forms auf dem JEE-Server kann die HTML5 Forms, die den Kontextpfad verwenden, nicht gerendert werden. (FORMS-12485, FORMS-12691).</li>
     </ul>
     </td>    
   </tr>
