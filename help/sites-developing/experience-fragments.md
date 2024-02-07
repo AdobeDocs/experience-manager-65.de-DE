@@ -7,7 +7,7 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: a9d59e00efe8f0c2cbfca51901c441a2d65b70f2
 workflow-type: tm+mt
 source-wordcount: '1781'
 ht-degree: 97%
@@ -182,7 +182,7 @@ Für diese Anwendungsfälle stellt AEM die Link Rewriter Provider-Schnittstelle 
 
 >[!NOTE]
 >
->Diese Benutzeroberfläche wurde in [AEM 6.5 SP1 (6.5.1.0)](/help/release-notes/previous/6.5.1.md) eingeführt.
+>Diese Benutzeroberfläche wurde in [AEM 6.5 SP1 (6.5.1.0)](/help/release-notes/previous/6-5-1.md) eingeführt.
 
 Für kompliziertere Fälle, die nicht vom [Standard](#default-link-rewriting) abgedeckt werden, bietet AEM die Link Rewriter Provider-Schnittstelle. Dies ist eine `ConsumerType`-Schnittstelle, die Sie als Service in Ihren Bundles implementieren können. Sie umgeht die Änderungen, die AEM an internen Links eines HTML-Angebots vornimmt, die aus einem Experience Fragment gerendert wurden. Diese Schnittstelle ermöglicht es Ihnen, das Umschreiben interner HTML-Links an Ihre geschäftlichen Anforderungen anzupassen.
 
