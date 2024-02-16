@@ -7,10 +7,10 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: 91ee4422-99c1-4907-a507-5968c6984f28
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 72%
+ht-degree: 76%
 
 ---
 
@@ -68,11 +68,11 @@ Sie müssen die Nachbearbeitungsprozesse zuerst einrichten, bevor Sie sie mit Br
 
 1. Anmelden bei `https://localhost:publishport/aem/forms`.
 1. Navigieren Sie zu **[!UICONTROL Briefe]** um den veröffentlichten Brief anzuzeigen, der in der Veröffentlichungsinstanz verfügbar ist.
-1. Konfigurieren Sie die AEM DS-Einstellungen. Siehe [AEM DS-Einstellungen konfigurieren](../../forms/using/configuring-the-processing-server-url-.md).
+1. Konfigurieren Sie die AEM DS-Einstellungen. Siehe [AEM DS-Einstellungen konfigurieren](../../forms/using/configuring-the-processing-server-url.md).
 
 >[!NOTE]
 >
->Bei Verwendung von Forms- oder AEM-Workflows ist es vor der Übermittlung durch den Veröffentlichungsserver erforderlich, den DS-Einstellungsdienst zu konfigurieren. Andernfalls schlägt die Übermittlung des Formulars fehl.
+>Wenn Sie Forms- oder AEM-Workflows verwenden, müssen Sie den DS-Einstellungsdienst konfigurieren, bevor Sie Übermittlungen vom Veröffentlichungs-Server durchführen. Andernfalls schlägt die Formularübermittlung fehl.
 
 ## Abrufen von Briefinstanzen {#letter-instances-retrieval}
 

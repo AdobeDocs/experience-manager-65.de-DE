@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: In der Dokumentation zu Adobe Experience Manager 6.5 erfahren Sie, wie die Software funktioniert und was sie für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: f41cb88406db23c2af8988f7ee584db95184c6c4
+source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
 workflow-type: tm+mt
 source-wordcount: '7335'
 ht-degree: 97%
@@ -560,7 +560,7 @@ ht-degree: 97%
       + Konfiguration von AEM Forms {#configure-aem-forms}
          + [Leistungsoptimierung für AEM Forms-Server](/help/forms/using/performance-tuning-aem-forms.md)
          + [Cache für adaptive Formulare konfigurieren](/help/forms/using/configure-adaptive-forms-cache.md)
-         + [AEM DS-Einstellungen konfigurieren](/help/forms/using/configuring-the-processing-server-url-.md)
+         + [AEM DS-Einstellungen konfigurieren](/help/forms/using/configuring-the-processing-server-url.md)
          + [Konfigurieren des Synchronisierungs-Scheduler](/help/forms/using/configure-synchronization-scheduler.md)
          + [Konfigurieren des Connector für Microsoft SharePoint](https://help.adobe.com/de_DE/AEMForms/6.1/SharePointConfig/index.html)
          + [Verbinden von AEM Forms mit Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md)
@@ -636,7 +636,7 @@ ht-degree: 97%
       + [Inline-Stile für Komponenten adaptiver Formulare](/help/forms/using/inline-style-adaptive-forms.md)
       + [Einführung in die mehrteilige Formularsequenz](/help/forms/using/introduction-form-sequence.md)
       + [Layout-Möglichkeiten für adaptive Formulare](/help/forms/using/layout-capabilities-adaptive-forms.md)
-      + [Platzhaltertext in AEM Forms](/help/forms/using/placeholder-text-in-aem-forms-.md)
+      + [Platzhaltertext in AEM Forms](/help/forms/using/placeholder-text-in-aem-forms.md)
       + [Formularvorschau](/help/forms/using/previewing-forms.md)
       + [Wiederverwenden adaptiver Formulare](/help/forms/using/reusing-adaptive-forms.md)
       + [Trennzeichenkomponenten in adaptiven Formularen](/help/forms/using/separator-component-in-adaptive-forms.md)
