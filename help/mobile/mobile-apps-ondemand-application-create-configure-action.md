@@ -1,15 +1,15 @@
 ---
 title: Erstellen und Konfigurieren von Anwendungen
-description: Das Erstellen einer App ist häufig der erste Schritt zur Erstellung und Verwaltung von AEM Mobile-On-Demand-Inhalten. Auf dieser Seite erfahren Sie mehr.
+description: Das Erstellen einer App ist häufig der erste Schritt zur Erstellung und Verwaltung von AEM Mobile-On-Demand-Inhalten. Auf dieser Seite erfahren Sie mehr darüber.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: dbe81ead-dfaa-4af0-9b66-a14917a1bcc7
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
 source-wordcount: '440'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 ## Erstellen einer On-Demand-Anwendung {#creating-an-on-demand-application}
 
-Das Erstellen einer App ist häufig der erste Schritt zur Erstellung und Verwaltung von AEM Mobile-On-Demand-Inhalten. Sie wird häufig auf AEM Administrator-Ebene durchgeführt. Es stellt eine Inhaltshierarchie dar, die auf Mobilgeräten angezeigt werden kann und in der von Autoren erstellte Inhalte wie Artikel, Bilder, Sammlungen usw. angezeigt werden können.
+Das Erstellen einer App ist häufig der erste Schritt zur Erstellung und Verwaltung von AEM Mobile-On-Demand-Inhalten. Sie wird häufig auf AEM Administrator-Ebene durchgeführt. Es stellt eine Inhaltshierarchie dar, die auf Mobilgeräten angezeigt werden kann und in der von Autoren erstellte Inhalte wie Artikel, Bilder und Sammlungen angezeigt werden können.
 
 Die Details Ihrer App können im Dashboard oder im AEM Mobile Control Center eingesehen werden.
 
@@ -67,7 +67,7 @@ Siehe [Verknüpfen Ihrer App mit der Cloud-Konfiguration](/help/mobile/mobile-on
 
 Sobald Sie mit dem Erstellen einer On-Demand-Anwendung und dem Verknüpfen dieser App mit einer Cloud-Konfiguration vertraut sind, lesen Sie [Content Management-Aktionen](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
-**Content Management-Aktionen** umfasst die Erstellung und Verwaltung von folgenden Inhalten:
+**Content Management-Aktionen** umfasst die Erstellung und Verwaltung folgender Inhalte:
 
 * [Verwalten von Artikeln](/help/mobile/mobile-on-demand-managing-articles.md)
 * [Banner verwalten](/help/mobile/mobile-on-demand-managing-banners.md)

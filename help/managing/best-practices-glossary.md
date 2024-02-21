@@ -7,9 +7,9 @@ topic-tags: managing-checklist
 content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '6922'
+source-wordcount: '6926'
 ht-degree: 99%
 
 ---
@@ -1128,11 +1128,11 @@ Es sollte ein eindeutiges Verfahren für die Abnahme von Spezifikationen auf Kun
 
 ### Auswahl der Mitarbeitenden für die AEM-Admin-Schulung {#staff-selected-for-aem-administrator-training}
 
-Interne Mitarbeitende, die für die Verwaltung der Lösung geschult werden müssen.
+Interne Mitarbeiter, die eine Schulung benötigen, damit sie die Lösung verwalten können.
 
 ### Für die Autoren- und Endanwenderschulung ausgewählte Mitarbeitende {#staff-selected-for-author-and-end-user-training}
 
-Interne Mitarbeiterinnen und Mitarbeiter, die für Authoring in der Lösung geschult werden müssen.
+Interne Mitarbeiter, die eine Schulung benötigen, damit sie die Lösung erstellen können.
 
 ### Projektbeteiligte {#stakeholders}
 

@@ -4,9 +4,9 @@ description: Der „Tough Day“-Test simuliert die tägliche Last von rund 1.00
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 61c7955c5370b5341d097dc36d08b2b92b89517b
+source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
 workflow-type: tm+mt
-source-wordcount: '1826'
+source-wordcount: '1825'
 ht-degree: 96%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 96%
 
 ## Was ist Tough Day 2? {#what-is-tough-day}
 
-„Tough Day 2“ ist eine Anwendung, mit der Sie einen Stresstest Ihrer AEM-Instanz durchführen können. Sie können diesen direkt mit der standardmäßigen Test-Suite ausführen oder an Ihre Testanforderungen anpassen. In [dieser Aufnahme](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=de) sehen Sie eine Präsentation der Anwendung.
+&quot;Tough Day 2&quot;ist eine Anwendung, mit der Sie die Grenzwerte Ihrer AEM testen können. Sie können diesen direkt mit der standardmäßigen Test-Suite ausführen oder an Ihre Testanforderungen anpassen. In [dieser Aufnahme](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=de) sehen Sie eine Präsentation der Anwendung.
 
 >[!CAUTION]
 >
@@ -49,7 +49,7 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 
 >[!NOTE]
 >
-Bei Tough Day 2 gibt es keinen Bereinigungsschritt. Wir empfehlen daher, Tough Day 2 auf einer geklonten Staging-Instanz auszuführen, nicht auf der Hauptproduktionsinstanz. Die Staging-Instanz sollte nach den Tests nicht mehr genutzt werden.
+>Bei Tough Day 2 gibt es keinen Bereinigungsschritt. Wir empfehlen daher, Tough Day 2 auf einer geklonten Staging-Instanz auszuführen, nicht auf der Hauptproduktionsinstanz. Die Staging-Instanz sollte nach den Tests nicht mehr genutzt werden.
 >
 
 ### Hilfe {#getting-help}
@@ -330,7 +330,7 @@ oder
 
 >[!NOTE]
 >
-Wegen parallel stattfindender Ausführungen entspricht die tatsächliche Anzahl an Testausführungen nicht exakt der Anzahl, die mit dem Parameter `count` konfiguriert wurde. Rechnen Sie daher mit einer Abweichung, die proportional zur Anzahl der ausgeführten Threads ausfällt (gesteuert durch den `concurrency parameter`).
+>Wegen parallel stattfindender Ausführungen entspricht die tatsächliche Anzahl an Testausführungen nicht exakt der Anzahl, die mit dem Parameter `count` konfiguriert wurde. Rechnen Sie daher mit einer Abweichung, die proportional zur Anzahl der ausgeführten Threads ausfällt (gesteuert durch den `concurrency parameter`).
 
 ### Probelauf {#dry-run}
 

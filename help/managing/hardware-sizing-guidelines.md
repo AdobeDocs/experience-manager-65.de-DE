@@ -7,10 +7,10 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
 workflow-type: tm+mt
-source-wordcount: '2846'
-ht-degree: 46%
+source-wordcount: '2835'
+ht-degree: 45%
 
 ---
 
@@ -139,11 +139,12 @@ In der Autorenumgebung ist die Effizienz der Zwischenspeicherung in der Regel de
 
 In der Autorenumgebung sind die Anzahl der parallel arbeitenden Autoren und das Laden ihrer Interaktionen, die zum System hinzugefügt werden, die wichtigsten Begrenzungsfaktoren. Daher empfiehlt Adobe, dass Sie Ihr System basierend auf dem gemeinsamen Datendurchsatz skalieren.
 
-In solchen Fällen führen Adobe Benchmark-Tests auf einem Cluster von Autoreninstanzen mit zwei Knoten &quot;shared-Nothing&quot;aus.
+In solchen Fällen führte Adobe Benchmarktests auf einem Cluster mit freigegebenen ohne zwei Knoten von Autoreninstanzen durch.
 
 * **Benchmarktest 1a** Mit einem aktiv-aktiven Shared-Nothing-Cluster von 2 Autoreninstanzen berechnen Sie den maximalen Durchsatz mit einem Lastprofil, bei dem Benutzer eine einfache Seitenübung auf einer Grundlast von 300 vorhandenen Seiten durchführen, die alle von ähnlicher Art sind.
 
-   * **Ergebnis** Der maximale Durchsatz für eine einfache Seitenerstellung wie oben beschrieben (als eine Transaktion betrachtet) liegt bei 2016 Transaktionen/Stunde. Dies ist eine Steigerung von ca. 16 % im Vergleich zu einer eigenständigen Autoreninstanz für den gleichen Benchmarktest.
+   * **Ergebnis**
+Der maximale Durchsatz für eine einfache Seitenerstellung, z. B. für eine Transaktion, beträgt 2016 Transaktionen/Stunde. Dies ist eine Steigerung von ca. 16 % im Vergleich zu einer eigenständigen Autoreninstanz für den gleichen Benchmarktest.
 
 * **Benchmarktest 2b**
 Bei einem aktiv-aktiven Shared-Nothing-Cluster von 2 Autoreninstanzen wird der maximale Durchsatz berechnet, wenn das Lastprofil einen Mix aus frischer Seitenerstellung (10 %), Änderung einer bestehenden Seite (80 %) und Erstellung und Änderung einer Seite in Folge (10 %) aufweist. Die Komplexität der Seite bleibt gleich wie im Profil des Benchmarktests 1. Die grundlegende Änderung der Seite erfolgt durch Hinzufügen eines Bildes und Ändern des Textinhalts. Auch hier wurde die Übung auf einer Grundlast von 300 Seiten mit Komplexität durchgeführt, die der Definition im Benchmarktest 1 entspricht.
@@ -168,7 +169,7 @@ Siehe auch [Parallelisierung](/help/managing/hardware-sizing-guidelines.md#paral
 
 ### Hardware-Recommendations {#hardware-recommendations}
 
-In der Regel können Sie dieselbe Hardware für Ihre Autorenumgebung verwenden, wie für Ihre Veröffentlichungsumgebung empfohlen wird. In der Regel ist der Website-Traffic auf Authoring-Systemen viel geringer, aber auch die Cache-Effizienz ist geringer. Entscheidend ist jedoch die Anzahl der parallel arbeitenden Autoren und die Art der Aktionen, die am System vorgenommen werden. Im Allgemeinen ist AEM Clustering (der Autorenumgebung) am effektivsten bei der Skalierung von Lesevorgängen, d. h. ein AEM Cluster skaliert gut mit Autoren, die grundlegende Bearbeitungsvorgänge durchführen.
+In der Regel können Sie dieselbe Hardware für Ihre Autorenumgebung verwenden, wie für Ihre Veröffentlichungsumgebung empfohlen wird. In der Regel ist der Website-Traffic auf Authoring-Systemen geringer, aber auch die Cache-Effizienz ist geringer. Entscheidend ist jedoch die Anzahl der parallel arbeitenden Autoren und die Art der Aktionen, die am System vorgenommen werden. Im Allgemeinen ist AEM Clustering (der Autorenumgebung) am effektivsten bei der Skalierung von Lesevorgängen, d. h. ein AEM Cluster skaliert gut mit Autoren, die grundlegende Bearbeitungsvorgänge durchführen.
 
 Die Benchmarktests an Adobe wurden mit dem Betriebssystem Red Hat® 5.5 durchgeführt, das auf einer Hewlett-Packard ProLiant DL380 G5-Hardwareplattform mit folgender Konfiguration ausgeführt wird:
 
@@ -204,7 +205,7 @@ Das Cache-Verhältnis ist der Prozentsatz der Seiten, die der Dispatcher zurück
 
 ### Komplexität von Vorlagen und Anwendungen {#complexity-of-templates-and-applications}
 
-Wenn Sie komplexe Vorlagen verwenden, benötigt AEM mehr Zeit, um eine Seite zu rendern. Seiten aus dem Zwischenspeicher sind davon nicht betroffen, aber die Seitengröße ist für die gesamte Antwortzeit relevant. Das Rendern einer komplexen Seite kann sehr einfach zehnmal länger dauern als das Rendern einer einfachen Seite.
+Wenn Sie komplexe Vorlagen verwenden, benötigt AEM mehr Zeit zum Rendern einer Seite. Seiten aus dem Zwischenspeicher sind davon nicht betroffen, aber die Seitengröße ist für die gesamte Antwortzeit relevant. Das Rendern einer komplexen Seite kann sehr einfach zehnmal länger dauern als das Rendern einer einfachen Seite.
 
 ### Formel {#formula}
 
@@ -270,7 +271,7 @@ Wenn Sie eine komplexere Website haben, benötigen Sie auch leistungsfähigere W
 
 ## Zusätzliche anwendungsspezifische Berechnungen {#additional-use-case-specific-calculations}
 
-Zusätzlich zur Berechnung für eine Standard-Webanwendung müssen Sie unter Umständen bestimmte Faktoren für die folgenden Anwendungsfälle berücksichtigen. Die berechneten Werte werden der Standardberechnung hinzugefügt.
+Berücksichtigen Sie neben der Berechnung für eine Standard-Webanwendung spezifische Faktoren für die folgenden Anwendungsfälle. Die berechneten Werte werden der Standardberechnung hinzugefügt.
 
 ### Asset-spezifische Überlegungen {#assets-specific-considerations}
 
@@ -280,13 +281,13 @@ Weisen Sie mindestens 16 GB Heap zu und konfigurieren Sie den Workflow [!UICONT
 
 >[!NOTE]
 >
->Ein höherer Bilddurchsatz bedeutet, dass die Rechenressourcen in der Lage sein müssen, mit der I/O des Systems Schritt zu halten und umgekehrt. Wenn beispielsweise Workflows durch den Import von Bildern gestartet werden, kann das Hochladen vieler Bilder über WebDAV zu einem Rückstau der Workflows führen.
+Ein höherer Bilddurchsatz bedeutet, dass die Rechenressourcen mit den System-I/O und umgekehrt Schritt halten müssen. Wenn beispielsweise Workflows durch den Import von Bildern gestartet werden, kann das Hochladen vieler Bilder über WebDAV zu einem Rückstau der Workflows führen.
 >
->Die Verwendung separater Festplatten für TarPM, Datenspeicher und Suchindex kann dazu beitragen, das E/A-Verhalten des Systems zu optimieren (in der Regel ist es jedoch sinnvoll, den Suchindex lokal zu halten).
+Die Verwendung separater Festplatten für TarPM, Datenspeicher und Suchindex kann dazu beitragen, das E/A-Verhalten des Systems zu optimieren (in der Regel ist es jedoch sinnvoll, den Suchindex lokal zu halten).
 
 >[!NOTE]
 >
->Siehe auch [Asset-Leistungsleitfaden](/help/sites-deploying/assets-performance-sizing.md).
+Siehe auch [Asset-Leistungsleitfaden](/help/sites-deploying/assets-performance-sizing.md).
 
 ### Multi-Site-Manager {#multi-site-manager}
 

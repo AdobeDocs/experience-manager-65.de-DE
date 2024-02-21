@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 68%
+source-wordcount: '756'
+ht-degree: 63%
 
 ---
 
@@ -27,11 +27,11 @@ Entwerfen Sie Ihre Filter so, dass Sie Kombinationen von ihnen verwenden können
 
 Nachdem Sie einen Filter erstellt haben, können Sie ihn im [Gruppenkonfiguration.](/help/sites-developing/mobile.md#creating-a-device-group)
 
-## Die Filter Java-Klasse {#the-filter-java-class}
+## Die Filter Java™-Klasse {#the-filter-java-class}
 
-Ein Gerätegruppenfilter ist eine OSGi-Komponente, die die Schnittstelle [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) implementiert. Nach der Bereitstellung stellt die Implementierungsklasse einen Filterdienst bereit, der für Gerätegruppenkonfigurationen verfügbar ist.
+Ein Gerätegruppenfilter ist eine OSGi-Komponente, die die Schnittstelle [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) implementiert. Nach der Bereitstellung stellt die Implementierungsklasse einen Filterdienst bereit, der für Gerätegruppenkonfigurationen verfügbar ist.
 
-Die in diesem Artikel beschriebene Lösung verwendet das Apache Felix Maven-SCR-Plug-in, um die Entwicklung von Komponenten und Diensten zu erleichtern. Daher verwendet die Beispiel-Java-Klasse die Anmerkungen `@Component` und `@Service`. Die Klasse weist die folgende Struktur auf:
+Die in diesem Artikel beschriebene Lösung verwendet das Apache Felix Maven-SCR-Plug-in, um die Entwicklung von Komponenten und Diensten zu erleichtern. Daher verwendet die Beispiel-Java™-Klasse die `@Component`und `@Service` Anmerkungen. Die Klasse weist die folgende Struktur auf:
 
 ```java
 package com.adobe.example.myapp;
@@ -63,9 +63,9 @@ public class myDeviceGroupFilter implements DeviceGroupFilter {
 }
 ```
 
-Sie müssen Code für die folgenden Methoden bereitstellen:
+Geben Sie Code für die folgenden Methoden an:
 
-* `getDescription`: Gibt die Filterbeschreibung zurück. Die Beschreibung wird im Konfigurationsdialogfeld „Gerätegruppe“ angezeigt.
+* `getDescription`: Gibt die Filterbeschreibung zurück. Die Beschreibung wird im Konfigurationsdialogfeld Gerätegruppen angezeigt.
 * `getTitle`: Gibt den Namen des Filters zurück. Der Name wird angezeigt, wenn Sie Filter für die Gerätegruppe auswählen.
 * `matches`: Legt fest, ob das Gerät über die erforderlichen Funktionen verfügt.
 
@@ -93,7 +93,7 @@ Die `matches` function return `true` , wenn die Gerätefunktionen alle Filterkri
 * Der Name des Benutzeragenten
 * Ein Map-Objekt, das die Gerätefunktionen enthält. Die Zuordnungsschlüssel sind die Namen der WURFL™-Funktionen und die Werte sind die entsprechenden Werte aus der WURFL™-Datenbank.
 
-Die Schnittstelle[ com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) enthält eine Teilmenge der WURFL™ -Fähigkeitsnamen in statischen Feldern. Verwenden Sie diese Feldkonstanten als Schlüssel beim Abrufen von Werten aus der Karte der Gerätefunktionen.
+Die Schnittstelle[ com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) enthält eine Teilmenge der WURFL™ -Fähigkeitsnamen in statischen Feldern. Verwenden Sie diese Feldkonstanten als Schlüssel beim Abrufen von Werten aus der Karte der Gerätefunktionen.
 
 Zum Beispiel bestimmt das folgende Codebeispiel, ob das Gerät CSS unterstützt:
 
@@ -175,7 +175,7 @@ Der folgende POM-Code ist nützlich, wenn Sie Maven zum Erstellen Ihrer Anwendun
 
 **Plug-ins:**
 
-* Apache Maven Compiler Plugin: Kompiliert Java-Klassen aus dem Quellcode.
+* Apache Maven Compiler Plugin: Kompiliert Java™-Klassen aus dem Quellcode.
 * Apache Felix Maven Bundle Plugin: Erstellt das Bundle und das Manifest
 * Apache Felix Maven SCR Plugin: Erstellt die Komponentendeskriptordatei und konfiguriert die Manifestkopfzeile der Dienstkomponente.
 
@@ -189,7 +189,7 @@ Die DeviceGroup- und DeviceGroupFilter-Schnittstellen sind im Day Communique 5 W
 
 Zum Zeitpunkt der Erstellung ist 5.5.2 die Version des WCM Mobile API-Bundles, das in der neuesten Version von AEM enthalten ist. Verwenden Sie die Adobe-Web-Konsole ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)), um sicherzustellen, dass es sich um die Paketversion handelt, die in Ihrer Umgebung bereitgestellt wird.
 
-**POM:**(Ihr POM wird eine andere groupId und Version verwenden.)
+**POM:** (Ihr POM verwendet eine andere groupId und Version.)
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0"
