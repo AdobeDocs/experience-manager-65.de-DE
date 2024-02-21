@@ -2,10 +2,10 @@
 title: Häufig gestellte Fragen zu AEM
 description: Verwenden Sie diese häufig gestellten Fragen, um allgemeine Workflows oder Probleme in AEM zu verstehen, zu konfigurieren und zu beheben.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 1a7805f063daf6f3dd07a2ff2d182e58fe7e63b8
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 41%
+source-wordcount: '936'
+ht-degree: 42%
 
 ---
 
@@ -25,12 +25,6 @@ Bei aktiviertem Binary-Less-Modus enthalten die verteilten Inhaltspakete Verweis
 
 Stellen Sie zur Aktivierung der Binary-Less-Verteilung einen freigegebenen Blob-Speicher bereit.
 Überprüfen Sie die `useBinaryReferences`-Eigenschaft in der OSGi-Konfiguration mit der werkseitigen PID (`org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)*, die der Agent verwendet.
-
-#### Wie kann ich die Fehlermeldungen beim Navigieren in der Seitenhierarchie in AEM Sites-Konsole anpassen? {#how-can-i-customize-the-error-messages-while-navigating-page-hierarchy-in-aem-sites-console}
-
-Überprüfen Sie den Bereich Netzwerk (des Chrome-Browsers), in dem eine persönliche Einrichtung (JS) nicht minimiert wurde.
-
-Sehen Sie sich die Spalte `Initiator` an, um festzustellen, wer der Initiator einer Anfrage war. Sie enthält die Dateien und die Zeilennummern, von wo aus die AJAX-Aufrufe ausgeführt werden. Später können Sie die Fehlerbearbeitungsfunktion nachverfolgen und die Fehlermeldung entsprechend Ihren Anforderungen ändern.
 
 #### Wie kann ich beim Erstellen von Sprachkopien für Inhaltsautoren in AEM Berechtigungen aktivieren? {#how-to-enable-permissions-while-creating-language-copy-for-content-authors-in-aem}
 
