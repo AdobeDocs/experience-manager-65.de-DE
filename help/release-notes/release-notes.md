@@ -5,7 +5,7 @@ mini-toc-levels: 4
 source-git-commit: 19fe527ce44d8ec5be50ebd32b46f13df96c52cc
 workflow-type: tm+mt
 source-wordcount: '2928'
-ht-degree: 57%
+ht-degree: 58%
 
 ---
 
@@ -473,7 +473,7 @@ Um das Problem zu beheben, [kompilieren Sie die Sling-Skripte wie JSP, Java und 
 * Nach der Installation von AEM Service Pack 6.5.14.0 und höher können Benutzende beim Navigieren zu `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings` keine Schriftart aus der JEE-Admin-Benutzeroberfläche für PDF-Dokumente auswählen, da die Schriftartenliste leer erscheint. (FORMS-12095)
 <!-- When a form is signed using the OOTB Scribble Signature component, it appears in the image dialogue but does not preview and appears blank when you click on it. (FORMS-12073). A hotfix is available for this issue. To download and install the hotfix, see [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md) -->
 * Unter AEM Forms on JEE kann die HTML5 Forms, die den Kontextpfad verwenden, nicht gerendert werden. (FORMS-12485, FORMS-12691) Für dieses Problem ist ein Hotfix verfügbar. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie unter [Adobe Experience Manager Forms-Hotfixes](/help/release-notes/aem-forms-hotfix.md).
-* Mit dem adaptiven Forms können Sie benutzerdefinierte Funktionen mit ECMAScript Version 5 oder früher verwenden. Wenn eine benutzerdefinierte Funktion ECMAScript-Version 6 oder höher verwendet, z. B. &quot;let&quot;, &quot;const&quot;oder Pfeilfunktionen, wird der Regeleditor möglicherweise nicht ordnungsgemäß geöffnet.
+* Mit adaptiven Formularen können Sie benutzerdefinierte Funktionen mit ECMAScript Version 5 oder früher verwenden. Wenn eine benutzerdefinierte Funktion ECMAScript-Version 6 oder höher verwendet, z. B. „let“, „const“ oder Pfeilfunktionen, wird der Regeleditor möglicherweise nicht ordnungsgemäß geöffnet.
 
 #### AEM Forms für JEE
 
