@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 exl-id: 1e839845-fb5c-4200-8ec5-6ff744a96943
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
-workflow-type: ht
-source-wordcount: '2642'
-ht-degree: 100%
+source-git-commit: fd30e16274b6d5f971120f4e360fc9d65ae21bec
+workflow-type: tm+mt
+source-wordcount: '2665'
+ht-degree: 99%
 
 ---
 
@@ -113,7 +113,7 @@ Es gibt viele Nutzungsszenarios für MSM und Live Copies. Einige der Szenarios u
   >
   >und
   >
-  >  * welcher Anteil der einzelnen Kopien angepasst werden muss
+  >  * welcher Anteil der einzelnen Kopien angepasst werden muss.
 
 ## MSM über die Benutzeroberfläche {#msm-from-the-ui}
 
@@ -148,6 +148,10 @@ Auf MSM kann mithilfe verschiedener Optionen der jeweiligen Konsole direkt über
 * **Blueprints** (**Tools** – **Sites**)
 
    * Diese Konsole ermöglicht Ihnen die [Erstellung und Verwaltung Ihrer Blueprint-Konfigurationen](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
+
+>[!NOTE]
+>
+>MSM kann sowohl mit Seiten als auch mit [Experience Fragments](/help/sites-authoring/experience-fragments.md) da diese Fragmente Teil eines Erlebnisses (Seite) sind.
 
 >[!NOTE]
 >
@@ -191,7 +195,7 @@ Zur Einführung bietet die folgende Tabelle einen Überblick über die wichtigst
   </tr>
   <tr>
    <td><strong>Blueprint-Konfiguration</strong></td>
-   <td>Vordefinierte Konfiguration zur Angabe eines Quellpfads.</td>
+   <td>Vordefinierte Konfiguration, die einen Quellpfad angibt.</td>
    <td>Wenn in einer Blueprint-Konfiguration auf eine Blueprint-Seite verwiesen wird, wird der Rollout-Befehl verfügbar.</td>
   </tr>
   <tr>

@@ -3,10 +3,10 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 312e2477bb6a7cccab74cd4637d6a402f61052d7
+source-git-commit: 452813cf50110b515c181dba1ecbde4527808cfb
 workflow-type: tm+mt
-source-wordcount: '4708'
-ht-degree: 96%
+source-wordcount: '4796'
+ht-degree: 95%
 
 ---
 
@@ -523,6 +523,53 @@ Das folgende Beispiel zeigt eine vollständige Abfrage, die alle Personen filter
     items {
       lastName
       firstName
+    }
+  }
+}
+```
+
+Wenn eine GraphQL-Abfrage mit optionalen Variablen ausgeführt wird, wenn ein bestimmter Wert **not** für die optionale Variable angegeben ist, wird die Variable bei der Filterbewertung ignoriert. Das bedeutet, dass die Abfrageergebnisse alle Werte enthalten, beide `null` und nicht `null`für die Eigenschaft, die mit der Filtervariablen verknüpft ist.
+
+>[!NOTE]
+>
+>Wenn eine `null` Wert ist *explizit* für eine solche Variable angegeben ist, stimmt der Filter nur überein mit `null` -Werte für die entsprechende Eigenschaft.
+
+In der folgenden Abfrage wird beispielsweise kein Wert für die Eigenschaft `lastName` angegeben:
+
+```graphql
+query getAuthorsFilteredByLastName($authorLastName: String) {
+  authorList(filter:
+    {
+      lastName: {_expressions: {value: $authorLastName}
+      }}) {
+    items {
+      lastName
+    }
+  }
+}
+```
+
+Alle Autoren werden zurückgegeben:
+
+```graphql
+{
+  "data": {
+    "authorList": {
+      "items": [
+        {
+          "lastName": "Hammer"
+        },
+        {
+          "lastName": "Provo"
+        },
+        {
+          "lastName": "Wester"
+        },
+        {
+          "lastName": null
+        },
+         ...
+      ]
     }
   }
 }

@@ -2,10 +2,10 @@
 title: Experience Fragments
 description: Experience Fragments in Adobe Experience Manager Sites Authoring
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: f60795363b977fa74361fb7faa8ba1138c0c4ebf
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 95%
+source-wordcount: '1468'
+ht-degree: 94%
 
 ---
 
@@ -30,6 +30,7 @@ Experience Fragments können in folgenden Fällen verwendet werden:
 
 * Wenn Autorinnen oder Autoren die Teile einer Seite (die sogenannten Fragmente eines Erlebnisses) wiederverwenden möchten, müssen sie das entsprechende Fragment kopieren und an der gewünschten Stelle einfügen. Das Erstellen und Verwalten dieser zum Kopieren/Einfügen vorgesehenen Erlebnisse sind zeitaufwendige und fehleranfällige Verfahren. Mit Experience Fragments ersparen Sie sich das Kopieren/Einfügen.
 * Zur Unterstützung des Nutzungsszenarios mit Headless-Content-Management-Systemen. Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für deren Bereitstellung für Kunden. In diesem Fall würde das Erlebnis über ein System/einen Touchpoint eines Drittanbieters für den Endnutzer bzw. die Endnutzerin bereitgestellt.
+* Mit [Multi-Site-Management (MSM)](/help/sites-administering/msm.md), da ein Experience Fragment Teil einer Seite ist. Dies gilt sowohl für die einzelnen Fragmente als auch für die Ordner, in denen sie sich befinden.
 
 >[!NOTE]
 >
@@ -37,7 +38,7 @@ Experience Fragments können in folgenden Fällen verwendet werden:
 >
 >    `experience-fragments-editors`
 >
-Falls Probleme auftreten, wenden Sie sich an Ihre Systemadmins.
+>Falls Probleme auftreten, wenden Sie sich an Ihre Systemadmins.
 
 ## Wann ist die Verwendung von Experience Fragments sinnvoll? {#when-should-you-use-experience-fragments}
 
@@ -75,13 +76,13 @@ Beim Erstellen von Ordnern können Sie:
 
   >[!NOTE]
   >
-  Es ist nicht erforderlich, die Struktur Ihrer Experience Fragments an der Seitenstruktur Ihrer Site auszurichten.
+  >Es ist nicht erforderlich, die Struktur Ihrer Experience Fragments an der Seitenstruktur Ihrer Site auszurichten.
 
 * [Zuweisen der zulässigen Vorlagen auf Ordnerebene](#configure-allowed-templates-folder)
 
   >[!NOTE]
   >
-  Verwenden Sie den [Vorlagen-Editor](/help/sites-authoring/templates.md), wenn Sie eine eigene Vorlage erstellen möchten.
+  >Verwenden Sie den [Vorlagen-Editor](/help/sites-authoring/templates.md), wenn Sie eine eigene Vorlage erstellen möchten.
 
 Das WKND-Projekt strukturiert einige Experience Fragments nach `Contributors`. Die verwendete Struktur zeigt auch, wie andere Funktionen, wie Multi-Site-Management (einschließlich Sprachkopien), verwendet werden können.
 
@@ -101,13 +102,13 @@ Um einen Ordner für Ihre Experience Fragments zu erstellen und zu konfigurieren
 
 >[!NOTE]
 >
-Es ist auch möglich, die [zulässigen Vorlagen für Ihre Instanz](#configure-allowed-templates-instance) zu konfigurieren. Diese Methode wird jedoch **nicht** empfohlen, da die Werte bei der Aktualisierung überschrieben werden können.
+>Es ist auch möglich, die [zulässigen Vorlagen für Ihre Instanz](#configure-allowed-templates-instance) zu konfigurieren. Diese Methode wird jedoch **nicht** empfohlen, da die Werte bei der Aktualisierung überschrieben werden können.
 
 ### Konfigurieren zulässiger Vorlagen für Ihren Ordner {#configure-allowed-templates-folder}
 
 >[!NOTE]
 >
-Dies ist die empfohlene Methode zur Angabe der **zulässigen Vorlagen**, da die Werte bei der Aktualisierung nicht überschrieben werden.
+>Dies ist die empfohlene Methode zur Angabe der **zulässigen Vorlagen**, da die Werte bei der Aktualisierung nicht überschrieben werden.
 
 1. Navigieren Sie zum gewünschten Ordner mit **Experience Fragments**.
 
@@ -125,7 +126,7 @@ Dies ist die empfohlene Methode zur Angabe der **zulässigen Vorlagen**, da die 
 
    >[!NOTE]
    >
-   Weitere Informationen finden Sie unter [Vorlagen für Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments).
+   >Weitere Informationen finden Sie unter [Vorlagen für Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments).
 
 1. Klicken Sie auf **Speichern und schließen**.
 
@@ -133,9 +134,9 @@ Dies ist die empfohlene Methode zur Angabe der **zulässigen Vorlagen**, da die 
 
 >[!CAUTION]
 >
-Es wird nicht empfohlen, die **zulässigen Vorlagen** mit dieser Methode zu ändern, da die angegebenen Vorlagen bei einer Aktualisierung überschrieben werden können.
+>Es wird nicht empfohlen, die **zulässigen Vorlagen** mit dieser Methode zu ändern, da die angegebenen Vorlagen bei einer Aktualisierung überschrieben werden können.
 >
-Verwenden Sie dieses Dialogfeld nur zu Informationszwecken.
+>Verwenden Sie dieses Dialogfeld nur zu Informationszwecken.
 
 1. Navigieren Sie zur gewünschten Konsole **Experience Fragments**.
 
@@ -149,7 +150,7 @@ Verwenden Sie dieses Dialogfeld nur zu Informationszwecken.
 
    >[!NOTE]
    >
-   Weitere Informationen finden Sie unter [Vorlagen für Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments).
+   >Weitere Informationen finden Sie unter [Vorlagen für Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments).
 
 1. Klicken Sie auf **Speichern**.
 
@@ -179,9 +180,9 @@ Gehen Sie zum Erstellen eines Experience Fragment folgendermaßen vor:
 
    >[!NOTE]
    >
-   Tags aus der Experience Fragment-Vorlage werden nicht mit Tags auf dieser Experience Fragment-Stammseite zusammengeführt.
+   >Tags aus der Experience Fragment-Vorlage werden nicht mit Tags auf dieser Experience Fragment-Stammseite zusammengeführt.
    >
-   Diese sind völlig voneinander getrennt.
+   >Diese sind völlig voneinander getrennt.
 
 1. Klicken Sie auf **Erstellen**.
 
@@ -197,7 +198,7 @@ Der Experience Fragment Editor bietet Ihnen ähnliche Funktionen wie der normale
 
 >[!NOTE]
 >
-Weitere Informationen zur Verwendung des Seiteneditors finden Sie unter [Bearbeiten des Seiteninhalts](/help/sites-authoring/editing-content.md).
+>Weitere Informationen zur Verwendung des Seiteneditors finden Sie unter [Bearbeiten des Seiteninhalts](/help/sites-authoring/editing-content.md).
 
 Das folgende Beispielverfahren zeigt, wie Sie einen Teaser für ein Produkt erstellen:
 
@@ -259,7 +260,7 @@ Sie können Ihr Experience Fragment jetzt beim Erstellen Ihrer Seiten verwenden:
 
    >[!NOTE]
    >
-   In der Komponenten-Symbolleiste dient die Option „Bearbeiten“ als Kurzbefehl zum Öffnen eines Fragments im Editor für Fragmente.
+   >In der Komponenten-Symbolleiste dient die Option „Bearbeiten“ als Kurzbefehl zum Öffnen eines Fragments im Editor für Fragmente.
 
 ## Bausteine {#building-blocks}
 
@@ -315,10 +316,10 @@ Details zu Ihrem Fragment können wie folgt angezeigt werden:
 
    >[!CAUTION]
    >
-   Diese Registerkarten werden angezeigt, wenn Sie **Eigenschaften** in der Konsole „Experience Fragments“ öffnen.
+   >Diese Registerkarten werden angezeigt, wenn Sie **Eigenschaften** in der Konsole „Experience Fragments“ öffnen.
    >
    >
-   Wenn Sie beim Bearbeiten eines Experience Fragment **Eigenschaften** öffnen, werden die entsprechenden [Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md) angezeigt.
+   >Wenn Sie beim Bearbeiten eines Experience Fragment **Eigenschaften** öffnen, werden die entsprechenden [Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md) angezeigt.
 
    ![ef-05](assets/ef-05.png)
 
@@ -356,7 +357,7 @@ Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe 
 
 >[!NOTE]
 >
-Diese ist zwar direkt über den Browser verfügbar, [aber ihr Hauptzweck ist es, anderen Programmen (beispielsweise Web-Programmen von Drittanbietern oder benutzerdefinierten mobilen Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, und zwar allein über die URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
+>Diese ist zwar direkt über den Browser verfügbar, [aber ihr Hauptzweck ist es, anderen Programmen (beispielsweise Web-Programmen von Drittanbietern oder benutzerdefinierten mobilen Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, und zwar allein über die URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
 
 ## Exportieren von Experience Fragments {#exporting-experience-fragments}
 

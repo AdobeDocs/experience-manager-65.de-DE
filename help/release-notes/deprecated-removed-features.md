@@ -2,7 +2,7 @@
 title: Veraltete und entfernte Funktionen in Adobe Experience Manager Version 6.5.
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 3443d331815ffb462890282a49e658693f157af0
+source-git-commit: a9b8980a5e6f0488f10c408cd18b83f3ff225058
 workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 99%
@@ -55,7 +55,8 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 | Entwickler | `Granite.Sling.js`-Client-Bibliothek. Adobe plant keine weitere Pflege und Aktualisierung der Granite.Sling.js-Client-Bibliothek, die im Rahmen der Verteilung (Quickstart) bereitgestellt wird. | Adobe empfiehlt Kunden, die sich auf die Fähigkeiten der Bibliothek verlassen, ihren Code zu überarbeiten, diese nicht mehr zu verwenden. |  |
 | Entwickler | Verwendung von YUI zum Komprimieren/Minimieren der JavaScript-Client-Bibliotheken: Adobe plant keine weitere Aktualisierung der YUI-Bibliothek. Bis AEM 6.4 wurde YUI standardmäßig verwendet, um JavaScript zu minimieren – mit optionalem Wechsel zu Google Closure Compiler (GCC). Ab AEM 6.5 ist GCC der Standard. | Adobe empfiehlt Kunden, die ein Upgrade auf AEM 6.5 durchführen, für ihre Implementierungen auf GCC umzustellen. |  |
 | Entwicklerinnen und Entwickler | Klassischer UI-Dialog-Editor in CRXDE Lite.  Adobe plant keine weitere Pflege und Aktualisierung des Dialog-Editors für klassische UI, der im Rahmen der Verteilung (Quickstart) bereitgestellt wird | Es steht kein Ersatz zur Verfügung. |  |
-| Formulare | Die Integration von AEM Forms mit AEM Mobile ist veraltet. | Es ist kein Ersatz verfügbar. |  | Entwicklerinnen und Entwickler | Klassischer UI-Dialog-Editor in CRXDE Lite.  Adobe plant keine weitere Pflege und Aktualisierung des Dialog-Editors für klassische UI, der im Rahmen der Verteilung (Quickstart) bereitgestellt wird | Es steht kein Ersatz zur Verfügung. |  |
+| Formulare | Die Integration von AEM Forms mit AEM Mobile ist veraltet. | Es ist kein Ersatz verfügbar. |
+| Entwicklerinnen und Entwickler | Klassischer UI-Dialog-Editor in CRXDE Lite.  Adobe plant keine weitere Pflege und Aktualisierung des Dialog-Editors für klassische UI, der im Rahmen der Verteilung (Quickstart) bereitgestellt wird | Es steht kein Ersatz zur Verfügung. |  |
 | Entwickler | Lodash/Underscore-Client-Bibliothek. Adobe plant keine weitere Pflege und Aktualisierung der Lodash/underscore-Client-Bibliothek, die im Rahmen der Verteilung (Quickstart) bereitgestellt wird. | Adobe empfiehlt Kunden, die nach wie vor Lodash/Underscore für ihren Code benötigen, diese Erweiterung zu ihrer Projekt-Code-Basis hinzuzufügen. |  |
 
 ## Entfernte Funktionen {#removed-features}
