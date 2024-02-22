@@ -2,9 +2,9 @@
 title: Versionshinweise für [!DNL Adobe Experience Manager] 6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 2ffb77762af1969f3c93e7dd33cb3de9349375f8
+source-git-commit: f48e77068f286ff107bb2511660bf540fea32474
 workflow-type: tm+mt
-source-wordcount: '2889'
+source-wordcount: '2888'
 ht-degree: 58%
 
 ---
@@ -67,7 +67,7 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
-* Verschachtelte Konfigurationsordner wurden nicht mehr unterstützt und Inhaltsfragmentmodellordner waren nach der Aktualisierung auf AEM 6.5.18 oder auf AEM 6.5.19 nicht mehr sichtbar. (SITES-18110) MAJOR
+* Verschachtelte Konfigurationsordner wurden nicht mehr unterstützt und Inhaltsfragmentmodellordner waren nach der Aktualisierung auf AEM 6.5.18 oder auf AEM 6.5.19 nicht mehr sichtbar. (SITES-18110)
 * Einige Unterordner können nicht aus geerbten Inhaltsfragmentmodellen auswählen. Es muss Ordner unterstützen, ohne dass eine `jcr:content` -Eigenschaft, auch wenn die über die Benutzeroberfläche erstellten DAM-Ordner einen solchen Knoten aufweisen. (SITES-17943)
 
 #### [!DNL Content Fragments] - GraphQL-API {#sites-graphql-api-6520}
@@ -156,13 +156,7 @@ Die Fehlerbehebungen in [!DNL Experience Manager] Forms werden eine Woche nach d
 
 * text -->
 
-#### [!DNL Forms Designer]{#forms-designer-6520}
-
-* text
-
-<!-- ### Foundation{#foundation-6520}
-
-* text -->
+### Fundament {#foundation-6520}
 
 #### Communitys {#communities-6520}
 
@@ -181,17 +175,9 @@ Die Fehlerbehebungen in [!DNL Experience Manager] Forms werden eine Woche nach d
 * Aria-label &quot;close&quot;ist nicht lokalisiert in **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**, wählen Sie einen Ordner aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Eigenschaften]** > **[!UICONTROL Berechtigungen]** tab > Mitgliedsname. (NPR-41705)
 * Es gibt eine abgeschnittene QuickInfo für die **[!UICONTROL Key Store Password]** auf der SSL-Setup-Seite für die Gebietsschemata ENG, FRA, KOR, DEU und PTB. (NPR-41367)
 
-<!-- #### Oak{#oak-6520}
-
-* text -->
-
 #### Platform{#foundation-platform-6520}
 
 * Problem bei der Integration von Campaign mit AEM, die durch das /api-Servlet verursacht wurden, das nicht das richtige Schema in der href json zurückgibt. Der Grund dafür war, dass AEM den Header X-Forward-Proto nicht erhielt, der die Anfrage zwang, mit einem HTTP-Schema anstelle von HTTPS zu antworten. Daher sollte die Möglichkeit hinzugefügt werden, die Schemaauswahl basierend auf einer OSGi-Konfiguration umzuschalten. (GRANITE-48454)
-
-<!-- #### Replication{#foundation-replication-6520}
-
-* text -->
 
 #### Sling{#foundation-sling-6520}
 
