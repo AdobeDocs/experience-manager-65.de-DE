@@ -6,9 +6,9 @@ role: User, Admin
 feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 93d0a38d13223a8580f54786bc4ffe149efe99f1
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1155'
 ht-degree: 97%
 
 ---
@@ -115,7 +115,8 @@ Gehen Sie wie folgt vor, um Berichte zu erstellen:
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**. Eine Meldung benachrichtigt Sie darüber, dass die Berichtserstellung startet.
 1. Im [!UICONTROL Asset-Berichte] -Seite, basiert der Berichterstellungsstatus beispielsweise auf dem aktuellen Status des Berichtauftrags, [!UICONTROL Erfolg], [!UICONTROL Fehlgeschlagen], [!UICONTROL In Warteschlange]oder [!UICONTROL Geplant]. Derselbe Status wird auch im Benachrichtigungseingang angezeigt. Klicken Sie zur Ansicht der Berichtsseite auf den Berichts-Link. Alternativ wählen Sie den Bericht aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Anzeigen]**.
 
-   ![Ein generierter Bericht](assets/report_page.png)
+   <!--![A generated report](assets/report_page.png)-->
+   [Berichtsstatus](assets/report-status.JPG)
 
    Klicken Sie in der Symbolleiste auf **[!UICONTROL Download]**, um den Bericht im CSV-Format herunterzuladen.
 
