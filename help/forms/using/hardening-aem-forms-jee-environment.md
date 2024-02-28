@@ -6,10 +6,10 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '7574'
-ht-degree: 93%
+source-wordcount: '7608'
+ht-degree: 92%
 
 ---
 
@@ -465,6 +465,10 @@ Sie können Benutzerinnen und Benutzern, die keine Admins sind, die Verwendung d
 1. Legen Sie als Wert der Variablen TRUE fest.
 
 1. Starten Sie die AEM Forms-Instanz neu.
+
+>[!NOTE]
+>
+> Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
 
 ## Konfigurieren von AEM Forms on JEE für den Zugriff außerhalb des Unternehmens {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 

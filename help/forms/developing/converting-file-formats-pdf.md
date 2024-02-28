@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '7812'
+source-wordcount: '7848'
 ht-degree: 98%
 
 ---
@@ -36,13 +36,13 @@ Der Generate PDF-Dienst verwendet native Anwendungen, um die folgenden Dateiform
 
 >[!NOTE]
 >
-Der Generate PDF-Dienst unterstützt keine 64-Bit-Versionen von OpenOffice.
+>Der Generate PDF-Dienst unterstützt keine 64-Bit-Versionen von OpenOffice.
 
 * Adobe Photoshop® CS2 zum Konvertieren von PSD (nur Windows)
 
 >[!NOTE]
 >
-Photoshop CS3 und CS4 werden nicht unterstützt, da sie Windows Server 2003 oder Windows Server 2008 nicht unterstützen.
+>Photoshop CS3 und CS4 werden nicht unterstützt, da sie Windows Server 2003 oder Windows Server 2008 nicht unterstützen.
 
 * Adobe FrameMaker® 7.2 zum Konvertieren von FM (nur Windows)
 * Adobe PageMaker® 7.0 zum Konvertieren von PMD, PM6, P65 und PM (nur Windows)
@@ -82,7 +82,7 @@ Mithilfe des Generate PDF-Dienstes können Sie diese Aufgaben ausführen:
 
 >[!NOTE]
 >
-Weitere Informationen zum Generate PDF-Dienst finden Sie in der [Dienstreferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Generate PDF-Dienst finden Sie in der [Dienstreferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Konvertieren von Word-Dokumenten in PDF-Dokumente {#converting-word-documents-to-pdf-documents}
 
@@ -90,11 +90,11 @@ In diesem Abschnitt wird beschrieben, wie Sie mit der Generate PDF-API ein Micro
 
 >[!NOTE]
 >
-Weitere Informationen zu weiteren Dateiformaten finden Sie unter [Hinzufügen der Unterstützung für weitere native Dateiformate](converting-file-formats-pdf.md#adding-support-for-additional-native-file-formats).
+>Weitere Informationen zu weiteren Dateiformaten finden Sie unter [Hinzufügen der Unterstützung für weitere native Dateiformate](converting-file-formats-pdf.md#adding-support-for-additional-native-file-formats).
 
 >[!NOTE]
 >
-Weitere Informationen zum Generate PDF-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Generate PDF-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary-of-steps}
 
@@ -202,7 +202,7 @@ So konvertieren Sie ein Microsoft Word-Dokument mithilfe der Generate PDF-API (W
 
    >[!NOTE]
    >
-   Ersetzen Sie `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
 
 1. Erstellen Sie einen Generate PDF-Client.
 
@@ -260,7 +260,7 @@ In diesem Abschnitt wird beschrieben, wie Sie mit Generate PDF-API HTML-Dokument
 
 >[!NOTE]
 >
-Weitere Informationen zum Generate PDF-Dienst finden Sie in der [Dienstreferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Generate PDF-Dienst finden Sie in der [Dienstreferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-1}
 
@@ -359,7 +359,7 @@ So konvertieren Sie HTML-Inhalte mithilfe der Generate PDF-API (Webservice) in e
 
    >[!NOTE]
    >
-   Ersetzen Sie `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
 
 1. Erstellen Sie einen Generate PDF-Client.
 
@@ -410,7 +410,7 @@ In diesem Abschnitt wird beschrieben, wie Sie mit der Generate PDF-Java-API und 
 
 >[!NOTE]
 >
-Weitere Informationen zum Generate PDF-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Generate PDF-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-2}
 
@@ -510,7 +510,7 @@ Konvertieren Sie ein PDF-Dokument mithilfe der Generate PDF API (Webservice) in 
 
    >[!NOTE]
    >
-   Ersetzen Sie `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
 
 1. Erstellen Sie einen Generate PDF-Client.
 
@@ -845,7 +845,7 @@ Wenn Sie ein Skript für ein natives Programm erstellen, das zuvor nicht unterst
 
 >[!NOTE]
 >
-In diesem Zusammenhang steht der Begriff „zusätzlich“ für den Inhalt der `appmon.[applicationname].addition.[locale].xml`-Datei. Eine solche Datei gibt Überschreibungen und Ergänzungen der XML-Dialogfelddatei an.
+>In diesem Zusammenhang steht der Begriff „zusätzlich“ für den Inhalt der `appmon.[applicationname].addition.[locale].xml`-Datei. Eine solche Datei gibt Überschreibungen und Ergänzungen der XML-Dialogfelddatei an.
 
 Sie können für folgende Zwecke auch die zusätzliche XML-Dialogfelddatei für ein natives Programm ändern:
 
@@ -858,7 +858,7 @@ Der Name der zusätzlichen XML-Dialogfelddatei muss das Format `appmon.[applicat
 
 >[!NOTE]
 >
-Keines der generischen Programme, die in der Konfigurationsdatei „native2pdfconfig.xml“ angegeben sind, verfügt über eine primäre XML-Dialogfelddatei. Der Abschnitt [Hinzufügen oder Ändern der Unterstützung für ein natives Dateiformat](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) beschreibt solche Spezifikationen.
+>Keines der generischen Programme, die in der Konfigurationsdatei „native2pdfconfig.xml“ angegeben sind, verfügt über eine primäre XML-Dialogfelddatei. Der Abschnitt [Hinzufügen oder Ändern der Unterstützung für ein natives Dateiformat](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) beschreibt solche Spezifikationen.
 
 Bestellung `windowList` -Elemente, die als untergeordnete Elemente in einer `window` -Element. (Siehe [Sortieren von window- und windowList-Elementen](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
 
@@ -878,7 +878,7 @@ In diesem Verfahren wird beschrieben, wie Sie die Konfigurationsdatei des Genera
 
 >[!NOTE]
 >
-Der Name der Anwendung wird als Wert des `name`-Attributs des `GenericApp`-Elements angegeben. Dieser Wert muss exakt mit dem entsprechenden Namen übereinstimmen, der im Skript angegeben ist, das Sie für dieses Programm entwickeln. Ebenso sollte das `displayName`-Attribut des `GenericApp`-Elements genau mit der `expectedWindow`-Fensterbeschriftung des entsprechenden Skripts übereinstimmen. Diese Gleichwertigkeit wird nach der Auflösung von regulären Ausdrücken, die in den `displayName`- oder `caption`-Attributen erscheinen, bewertet.
+>Der Name der Anwendung wird als Wert des `name`-Attributs des `GenericApp`-Elements angegeben. Dieser Wert muss exakt mit dem entsprechenden Namen übereinstimmen, der im Skript angegeben ist, das Sie für dieses Programm entwickeln. Ebenso sollte das `displayName`-Attribut des `GenericApp`-Elements genau mit der `expectedWindow`-Fensterbeschriftung des entsprechenden Skripts übereinstimmen. Diese Gleichwertigkeit wird nach der Auflösung von regulären Ausdrücken, die in den `displayName`- oder `caption`-Attributen erscheinen, bewertet.
 
 In diesem Beispiel wurden die mit dem Generate PDF-Service bereitgestellten Standardkonfigurationsdaten geändert, um anzugeben, dass nicht Microsoft Word, sondern Notepad zur Verarbeitung von Dateien mit der Dateierweiterung .txt verwendet werden soll. Vor dieser Änderung wurde Microsoft Word als das native Programm angegeben, das solche Dateien verarbeiten soll.
 
@@ -910,6 +910,10 @@ In diesem Beispiel wurden die mit dem Generate PDF-Service bereitgestellten Stan
 Erstellen Sie eine Umgebungsvariable, die den Speicherort der ausführbaren Datei des nativen Programms angibt. Die Variable muss das Format `[applicationname]_PATH` haben, wobei *applicationname* exakt mit dem in der XML-Konfigurationsdatei und im Skript verwendeten Programmnamen übereinstimmen muss und der Pfad den Pfad zur ausführbaren Datei in doppelten Anführungszeichen enthält. Ein Beispiel für eine solche Umgebungsvariable ist `Photoshop_PATH`.
 
 Nachdem Sie die neue Umgebungsvariable erstellt haben, müssen Sie den Server neu starten, auf dem der Generate PDF-Service bereitgestellt wird.
+
+>[!NOTE]
+>
+> Es wird empfohlen, den SDK-Server mit dem Befehl &quot;Strg + C&quot;neu zu starten. Das Neustart des AEM SDK-Servers mit alternativen Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
 
 **Erstellen einer Systemvariablen in der Windows XP-Umgebung**
 

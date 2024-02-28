@@ -4,9 +4,9 @@ description: Installieren Sie AEM Forms-Dokumentendienste, um PDF-Dokumente zu e
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '5599'
+source-wordcount: '5633'
 ht-degree: 95%
 
 ---
@@ -79,7 +79,7 @@ Bevor Sie mit der Installation und Konfiguration der AEM Forms-Dokumentendienste
 >[!NOTE]
 >
 >* Unter Microsoft® Windows unterstützt PDF Generator WebKit-, Acrobat WebCapture- und PhantomJS-Konvertierungsrouten zum Konvertieren von HTML-Dateien in PDF-Dokumente.
-* Unter UNIX-basierten Betriebssystemen unterstützt der PDF Generator WebKit- und PhantomJS-Konvertierungsrouten zum Konvertieren von HTML-Dateien in PDF-Dokumente.
+>* Unter UNIX-basierten Betriebssystemen unterstützt der PDF Generator WebKit- und PhantomJS-Konvertierungsrouten zum Konvertieren von HTML-Dateien in PDF-Dokumente.
 >
 
 ### Zusätzliche Anforderungen für UNIX-basierte Betriebssysteme {#extrarequirements}
@@ -194,11 +194,11 @@ Wenn Sie den PDF Generator-Service verwenden, um native Dateiformate wie Microso
 
 >[!NOTE]
 >
-* Wenn sich Ihr AEM Forms-Server in einer Offline- oder sicheren Umgebung befindet und das Internet nicht für die Aktivierung von Adobe Acrobat verfügbar ist, befolgen Sie die Anweisungen zum Aktivieren solcher Instanzen von Adobe Acrobat unter [Offline-Aktivierung](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=de).
-* Adobe Acrobat, Microsoft® Word, Excel und PowerPoint sind nur für Microsoft® Windows verfügbar. Wenn Sie das UNIX-basierte Betriebssystem verwenden, installieren Sie OpenOffice, um Rich-Text-Dateien und unterstützte Microsoft® Office-Dateien in PDF-Dokumente zu konvertieren.
-* Schließen Sie alle Dialogfelder, die nach der Installation von Adobe Acrobat und Software von Drittanbietern für alle diejenigen Benutzer angezeigt werden, die für die Verwendung des PDF Generator-Dienstes konfiguriert wurden.
-* Starten Sie die installierte Software mindestens einmal. Schließen Sie alle Dialogfelder für alle Benutzer, die für die Verwendung des PDF Generator-Dienstes konfiguriert wurden.
-* [Überprüfen Sie das Ablaufdatum der Adobe Acrobat-Seriennummern](https://helpx.adobe.com/de/enterprise/kb/volume-license-expiration-check.html) und legen Sie ein Datum für das Aktualisieren der Lizenz fest oder [migrieren Sie die Seriennummer](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) auf der Grundlage des Ablaufdatums.
+>* Wenn sich Ihr AEM Forms-Server in einer Offline- oder sicheren Umgebung befindet und das Internet nicht für die Aktivierung von Adobe Acrobat verfügbar ist, befolgen Sie die Anweisungen zum Aktivieren solcher Instanzen von Adobe Acrobat unter [Offline-Aktivierung](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=de).
+>* Adobe Acrobat, Microsoft® Word, Excel und PowerPoint sind nur für Microsoft® Windows verfügbar. Wenn Sie das UNIX-basierte Betriebssystem verwenden, installieren Sie OpenOffice, um Rich-Text-Dateien und unterstützte Microsoft® Office-Dateien in PDF-Dokumente zu konvertieren.
+>* Schließen Sie alle Dialogfelder, die nach der Installation von Adobe Acrobat und Software von Drittanbietern für alle diejenigen Benutzer angezeigt werden, die für die Verwendung des PDF Generator-Dienstes konfiguriert wurden.
+>* Starten Sie die installierte Software mindestens einmal. Schließen Sie alle Dialogfelder für alle Benutzer, die für die Verwendung des PDF Generator-Dienstes konfiguriert wurden.
+>* [Überprüfen Sie das Ablaufdatum der Adobe Acrobat-Seriennummern](https://helpx.adobe.com/de/enterprise/kb/volume-license-expiration-check.html) und legen Sie ein Datum für das Aktualisieren der Lizenz fest oder [migrieren Sie die Seriennummer](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) auf der Grundlage des Ablaufdatums.
 
 Öffnen Sie Microsoft® Word, nachdem Sie Acrobat installiert haben. Klicken Sie auf der Registerkarte **Acrobat** auf **PDF erstellen** und konvertieren Sie eine auf dem Computer verfügbare .doc- oder .docx-Datei in ein PDF-Dokument. Wenn die Konvertierung erfolgreich war, ist AEM Forms für die Verwendung von Acrobat mit PDF Generator-Dienst bereit.
 
@@ -238,14 +238,14 @@ Legen Sie Umgebungsvariablen für das 64-Bit-Java Development Kit, Anwendungen v
 
 >[!NOTE]
 >
-* Bei allen Umgebungsvariablen und den entsprechenden Pfaden wird zwischen Groß- und Kleinschreibung unterschieden.
-* „JAVA_HOME“ und „Acrobat_PATH“ (nur Windows) sind erforderliche Umgebungsvariablen.
-* Die Umgebungsvariable OpenOffice_PATH wird auf den Installationsordner statt auf den Pfad der ausführbaren Datei festgelegt.
-* Richten Sie für Microsoft® Office-Programme wie Word, PowerPoint, Excel und Project oder für AutoCAD keine Umgebungsvariablen ein. Wenn diese Anwendungen auf dem Server installiert sind, startet der Generate PDF-Dienst diese Anwendungen automatisch.
-* Installieren Sie auf UNIX-basierten Plattformen OpenOffice als /root. Wenn OpenOffice nicht als „root“ installiert ist, kann der PDF Generator-Dienst OpenOffice-Dokumente nicht in PDF-Dokumente konvertieren. Falls Sie OpenOffice unter einem anderen Benutzer als /root installieren und ausführen müssen, gewähren Sie dem betreffenden Benutzer sudo-Rechte.
-* Wenn Sie OpenOffice auf einer UNIX-basierten Plattform verwenden, führen Sie den folgenden Befehl aus, um die PATH-Variable festzulegen:
+>* Bei allen Umgebungsvariablen und den entsprechenden Pfaden wird zwischen Groß- und Kleinschreibung unterschieden.
+>* „JAVA_HOME“ und „Acrobat_PATH“ (nur Windows) sind erforderliche Umgebungsvariablen.
+>* Die Umgebungsvariable OpenOffice_PATH wird auf den Installationsordner statt auf den Pfad der ausführbaren Datei festgelegt.
+>* Richten Sie für Microsoft® Office-Programme wie Word, PowerPoint, Excel und Project oder für AutoCAD keine Umgebungsvariablen ein. Wenn diese Anwendungen auf dem Server installiert sind, startet der Generate PDF-Dienst diese Anwendungen automatisch.
+>* Installieren Sie auf UNIX-basierten Plattformen OpenOffice als /root. Wenn OpenOffice nicht als „root“ installiert ist, kann der PDF Generator-Dienst OpenOffice-Dokumente nicht in PDF-Dokumente konvertieren. Falls Sie OpenOffice unter einem anderen Benutzer als /root installieren und ausführen müssen, gewähren Sie dem betreffenden Benutzer sudo-Rechte.
+>* Wenn Sie OpenOffice auf einer UNIX-basierten Plattform verwenden, führen Sie den folgenden Befehl aus, um die PATH-Variable festzulegen:
 >
-`export OpenOffice_PATH=/opt/openoffice.org4`
+>  `export OpenOffice_PATH=/opt/openoffice.org4`
 
 ### (Nur für IBM® WebSphere®) Konfigurieren des IBM® SSL-Socket-Anbieters {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
 
@@ -306,6 +306,10 @@ Sie können Benutzern, die keine Administratoren sind, die Verwendung des PDF Ge
 1. Setzen Sie den Wert der Umgebungsvariablen auf „TRUE“.
 1. Starten Sie die AEM Forms-Instanz neu.
 
+>[!NOTE]
+>
+> Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
+
 ### (Nur Windows) Deaktivieren der Benutzerkontensteuerung (UAC) {#disable-user-account-control-uac}
 
 1. Sie können auf das Systemkonfigurationsprogramm zugreifen, indem Sie zu **[!UICONTROL Start > Ausführen]** wechseln und dann **[!UICONTROL MSCONFIG]** eingeben.
@@ -332,7 +336,7 @@ Der PDF Generator-Service bietet Routen oder Methoden von WebKit, WebCapture und
 
 >[!NOTE]
 >
-Starten Sie die AEM Forms-Instanz jedes Mal neu, wenn Sie neue Schriftarten in den Schriftartenordner installieren.
+>Starten Sie die AEM Forms-Instanz jedes Mal neu, wenn Sie neue Schriftarten in den Schriftartenordner installieren.
 
 ### (Nur UNIX-basierte Plattformen) Zusätzliche Konfigurationen für die Konvertierung von HTML zu PDF  {#extra-configurations-for-html-to-pdf-conversion}
 
@@ -352,12 +356,12 @@ Kopieren Sie die Unicode-Schriftart in die folgenden Ordner, so wie es für Ihr 
 
 >[!NOTE]
 >
-* Unter Red Hat® Enterprise Linux® 6.x sind die Courier-Schriftarten nicht verfügbar. Laden Sie zum Installieren der Courier-Schriftarten das Archiv „font-ibm-type1-1.0.3.zip“ herunter. Extrahieren Sie das Archiv unter /usr/share/fonts. Erstellen Sie eine symbolische Verknüpfung von /usr/share/X11/fonts zu /usr/share/fonts.
-* Löschen Sie alle .lst-Schriftarten-Cache-Dateien aus den Ordnern „Html2PdfSvc/bin“ und „/usr/share/fonts“.
-* Stellen Sie sicher, dass die Ordner /usr/lib/X11/fonts und /usr/share/fonts vorhanden sind. Wenn die Ordner nicht vorhanden sind, verwenden Sie den Befehl „ln“, um eine symbolische Verknüpfung vom Ordner /usr/share/X11/fonts auf /usr/lib/X11/fonts und eine andere symbolische Verknüpfung von /usr/share/fonts auf /usr/share/X11/fonts zu erstellen. Vergewissern Sie sich außerdem, dass die Courier-Schriftarten unter „/usr/lib/X11/fonts“ verfügbar sind.
-* Stellen Sie sicher, dass alle Schriftarten (Unicode und Nicht-Unicode) im Ordner /usr/share/fonts or /usr/share/X11/fonts verfügbar sind.
-* Wenn Sie den PDF Generator-Dienst unter einem anderen Benutzer als /root ausführen, gewähren Sie dem betreffenden Benutzer Lese- und Schreibzugriff auf alle Schriftartenordner.
-* Starten Sie die AEM Forms-Instanz jedes Mal neu, wenn Sie neue Schriftarten in den Schriftartenordner installieren.
+>* Unter Red Hat® Enterprise Linux® 6.x sind die Courier-Schriftarten nicht verfügbar. Laden Sie zum Installieren der Courier-Schriftarten das Archiv „font-ibm-type1-1.0.3.zip“ herunter. Extrahieren Sie das Archiv unter /usr/share/fonts. Erstellen Sie eine symbolische Verknüpfung von /usr/share/X11/fonts zu /usr/share/fonts.
+>* Löschen Sie alle .lst-Schriftarten-Cache-Dateien aus den Ordnern „Html2PdfSvc/bin“ und „/usr/share/fonts“.
+>* Stellen Sie sicher, dass die Ordner /usr/lib/X11/fonts und /usr/share/fonts vorhanden sind. Wenn die Ordner nicht vorhanden sind, verwenden Sie den Befehl „ln“, um eine symbolische Verknüpfung vom Ordner /usr/share/X11/fonts auf /usr/lib/X11/fonts und eine andere symbolische Verknüpfung von /usr/share/fonts auf /usr/share/X11/fonts zu erstellen. Vergewissern Sie sich außerdem, dass die Courier-Schriftarten unter „/usr/lib/X11/fonts“ verfügbar sind.
+>* Stellen Sie sicher, dass alle Schriftarten (Unicode und Nicht-Unicode) im Ordner /usr/share/fonts or /usr/share/X11/fonts verfügbar sind.
+>* Wenn Sie den PDF Generator-Dienst unter einem anderen Benutzer als /root ausführen, gewähren Sie dem betreffenden Benutzer Lese- und Schreibzugriff auf alle Schriftartenordner.
+>* Starten Sie die AEM Forms-Instanz jedes Mal neu, wenn Sie neue Schriftarten in den Schriftartenordner installieren.
 >
 
 ## Installieren des AEM Forms-Add-on-Pakets {#install-aem-forms-add-on-package}
@@ -406,8 +410,8 @@ Das AEM Forms Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. 
 
    >[!NOTE]
    >
-   Die Rechte zur Verwendung von Schriftarten anderer Anbieter als Adobe unterliegen dem Lizenzvertrag dieser Anbieter von Schriftarten und werden nicht von der Lizenz für die Adobe-Software abgedeckt. Adobe empfiehlt, dass Sie vor der Verwendung von Drittanbieter-Schriften in Verbindung mit Adobe-Software alle relevanten Lizenzverträge der Drittanbieter lesen und sicherstellen, dass Sie diese Verträge einhalten. Dies gilt insbesondere für die Verwendung von Schriften in einer Server-Umgebung.
-Starten Sie die AEM Forms-Instanz neu, wenn Sie neue Zeichensätze im Zeichensatzordner installieren.
+   >Die Rechte zur Verwendung von Schriftarten anderer Anbieter als Adobe unterliegen dem Lizenzvertrag dieser Anbieter von Schriftarten und werden nicht von der Lizenz für die Adobe-Software abgedeckt. Adobe empfiehlt, dass Sie vor der Verwendung von Drittanbieter-Schriften in Verbindung mit Adobe-Software alle relevanten Lizenzverträge der Drittanbieter lesen und dafür sorgen, dass Sie diese Verträge einhalten. Dies gilt insbesondere für die Verwendung von Schriften in einer Server-Umgebung.
+   >Starten Sie die AEM Forms-Instanz neu, wenn Sie neue Zeichensätze im Zeichensatzordner installieren.
    >
 
 ### Konfigurieren Sie ein lokales Benutzerkonto zum Ausführen des PDF Generator-Dienstes  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
@@ -519,7 +523,7 @@ Gehen Sie wie folgt vor, um die Zertifikate zu konfigurieren:
 
    >[!NOTE]
    >
-   Ersetzen Sie in der Produktionsumgebung die Testzugangsdaten durch Produktionszugangsdaten. Achten Sie darauf, dass Sie Ihre alten Reader Extensions-Anmeldedaten löschen, bevor Sie abgelaufene oder Testanmeldedaten aktualisieren.
+   >Ersetzen Sie in der Produktionsumgebung die Testzugangsdaten durch Produktionszugangsdaten. Achten Sie darauf, dass Sie Ihre alten Reader Extensions-Anmeldedaten löschen, bevor Sie abgelaufene oder Testanmeldedaten aktualisieren.
 
 1. Klicken Sie auf **[!UICONTROL Speichern und schließen]** auf der Seite **[!UICONTROL Benutzereinstellungen bearbeiten]**.
 
@@ -599,7 +603,7 @@ Die [Systembereitschafts-Tool](#srt-configuration) überprüft, ob der Computer 
 
    >[!NOTE]
    >
-   * Wenn das Systembereitschafts-Tool meldet, dass die Datei „pdfgen.api“ nicht im Ordner der Acrobat-Plug-ins zur Verfügung steht, dann kopieren Sie die Datei „pdfgen.api“ aus dem Verzeichnis `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` in das Verzeichnis `[Acrobat_root]\Acrobat\plug_ins`.
+   >* Wenn das Systembereitschafts-Tool meldet, dass die Datei „pdfgen.api“ nicht im Ordner der Acrobat-Plug-ins zur Verfügung steht, dann kopieren Sie die Datei „pdfgen.api“ aus dem Verzeichnis `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` in das Verzeichnis `[Acrobat_root]\Acrobat\plug_ins`.
 
 1. Navigieren Sie zu `[Path_of_reports_folder]`. Öffnen Sie die Datei SystemReadinessTool.html. Überprüfen Sie den Bericht und beheben Sie die erwähnten Probleme.
 
@@ -810,7 +814,7 @@ Wenn Sie Microsoft Excel 2019 auf Microsoft Windows Server 2019 in PDF konvertie
 * Der Standarddrucker muss auf Adobe PDF eingestellt sein.
 
   >[!NOTE]
-  * Für Apple macOS und Ubuntu OS müssen Sie die oben genannten Einstellungen nicht konfigurieren.
+  >* Für Apple macOS und Ubuntu OS müssen Sie die oben genannten Einstellungen nicht konfigurieren.
 
 +++
 

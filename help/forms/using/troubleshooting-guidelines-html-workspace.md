@@ -6,10 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: a054b60a-5e89-4c98-87bc-35669988d160
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 100%
+source-wordcount: '738'
+ht-degree: 95%
 
 ---
 
@@ -31,6 +31,10 @@ Wenn während der Installation des Pakets der Fehler `javax.jcr.nodetype.Constra
 1. Navigieren Sie zu Package Manager. Die Standardeinstellung ist `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
 1. Suchen Sie das Paket `adobe-lc-workspace-pkg-[version].zip` und installieren Sie es.
 1. Starten Sie den Anwendungs-Server neu.
+
+>[!NOTE]
+>
+> Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
 
 ## AEM Forms Workspace-Protokollierung {#aem-forms-workspace-nbsp-logging}
 

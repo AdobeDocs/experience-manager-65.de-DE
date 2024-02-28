@@ -8,10 +8,10 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 docset: aem65
 feature: Document Security
 exl-id: 7cf17fb6-021a-473e-bc3b-27c317953002
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 56%
+source-wordcount: '718'
+ht-degree: 54%
 
 ---
 
@@ -84,3 +84,7 @@ Sie können eine der folgenden Methoden verwenden, um die sichere Verbindung her
 1. Erstellen Sie einen Ordner in AEM Digital Asset Manager und laden Sie die richtliniengeschützten PDF-Dokumente in den neu erstellten Ordner hoch.
 
    Jetzt können Sie die richtliniengeschützten Dokumente mithilfe AEM Suche durchsuchen.
+
+   >[!NOTE]
+   >
+   > Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.

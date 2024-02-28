@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: process-reporting
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1676'
-ht-degree: 98%
+source-wordcount: '1710'
+ht-degree: 96%
 
 ---
 
@@ -95,6 +95,10 @@ Führen Sie die folgenden Schritte aus, um den Veröffentlichungszeitplan zu än
 1. Starten Sie den AEM Forms-Server neu.
 
 ![processdatapublisherservice](assets/processdatapublisherservice.png)
+
+>[!NOTE]
+>
+> Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
 
 ### ProcessDataStorage-Service {#processdatastorage-service}
 
@@ -275,3 +279,5 @@ Weitere Informationen zum Datenveröffentlichungsdienst und zur Planung dieses D
 * **[!UICONTROL Synchronisieren]**: Synchronisieren Sie das eingebettete Prozess-Reporting-Repository mit der AEM Forms-Datenbank.
 * **[!UICONTROL Hilfe]**: Zeigen Sie die Hilfedokumentation zu Prozess-Reporting an.
 * **[!UICONTROL Abmelden]**: Abmelden von Prozess-Reporting
+
+

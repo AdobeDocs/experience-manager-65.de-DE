@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '4570'
-ht-degree: 97%
+source-wordcount: '4604'
+ht-degree: 96%
 
 ---
 
@@ -619,7 +619,9 @@ Mit Administration-Console können Sie, wenn Sie ein Dokument von einer Flex-Cli
 
 >[!NOTE]
 >
-Um AEM Forms so zu konfigurieren, dass unsichere Dokumente akzeptiert werden, wählen Sie die Option „Unsicheren Dokumenten-Upload von Flex-Anwendungen zulassen“ aus. Starten Sie dann eine Anwendung oder einen Service neu, um sicherzustellen, dass die Einstellung wirksam wird.
+* Um AEM Forms so zu konfigurieren, dass unsichere Dokumente akzeptiert werden, wählen Sie die Option „Unsicheren Dokumenten-Upload von Flex-Anwendungen zulassen“ aus. Starten Sie dann eine Anwendung oder einen Service neu, um sicherzustellen, dass die Einstellung wirksam wird.
+* Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
+
 
 ### Schnellstart: Aufrufen eines kurzlebigen Prozesses durch Übergeben eines sicheren Dokuments mithilfe von Remoting {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
 

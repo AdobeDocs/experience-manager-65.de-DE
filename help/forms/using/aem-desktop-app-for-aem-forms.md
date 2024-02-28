@@ -7,10 +7,10 @@ topic-tags: manage
 noindex: true
 role: Admin
 exl-id: b87e07b1-4a19-4888-bad0-c0f5327b9ad3
-source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
-workflow-type: ht
-source-wordcount: '441'
-ht-degree: 100%
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 92%
 
 ---
 
@@ -38,5 +38,9 @@ Die AEM-Desktop-App verwendet das WebDAV-Protokoll unter Microsoft® Windows und
 1. Deaktivieren Sie im Dialogfeld „FormsManager AddOn Configuration“ das Kontrollkästchen **[!UICONTROL Asynchronously Sync Resources]** und klicken Sie auf **[!UICONTROL Speichern]**.
 1. Starten Sie den AEM Forms-Server neu. Nach dem Neustart ist der AEM Forms-Server in der Lage, Inhalte zu akzeptieren und mit der AEM-Desktop-App freizugeben.
 1. Öffnen Sie die App und stellen Sie eine Verbindung mit dem AEM Forms-Server her.
+
+   >[!NOTE]
+   >
+   > Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
 
    Wird die Verbindung erfolgreich hergestellt, füllt die App die Ordner `content/dam` und `content/dam/formsanddocuments`. Neben dem Verschieben von Dateien aus obigen Ordnern in lokale Ordner und umgekehrt können Sie mit der App auch Inhalte zwischen automatisch befüllten Ordnern verschieben.

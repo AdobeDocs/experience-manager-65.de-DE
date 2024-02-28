@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 55bf5196-22c6-4286-8c92-ff44d81dde49
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 28%
+source-wordcount: '299'
+ht-degree: 25%
 
 ---
 
@@ -23,6 +23,10 @@ Es gibt zwei Arten von Diensten, die Teil AEM Formularen sind:
 ## Dienste starten oder beenden, die mit AEM Formularmodulen verknüpft sind {#start-or-stop-the-services-associated-with-aem-forms-modules}
 
 AEM Formularmodule (z. B. Forms, Rights Management, Output) fungieren als Dienste. Manchmal müssen Sie die Dienste für diese AEM Formularmodule anhalten oder starten. Beispielsweise müssen Sie einen AEM Forms-Dienst beenden und neu starten, nachdem Sie eine Einstellung für den Dienst geändert haben.
+
+>[!NOTE]
+>
+> Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
 
 1. Klicken Sie in der Administration-Console auf **Services** > **Programme und Services** > **Service-Verwaltung**.
 1. Aktivieren Sie auf der Seite &quot;Dienstverwaltung&quot;das Kontrollkästchen neben dem Dienst, der angehalten oder gestartet werden soll, und klicken Sie auf &quot;Beenden&quot;oder &quot;Starten&quot;.

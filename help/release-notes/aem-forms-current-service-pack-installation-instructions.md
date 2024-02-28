@@ -2,10 +2,10 @@
 title: AEM Forms – Patch-Installationsanweisungen für AEM Forms
 description: Installationsanweisungen für AEM Forms Service Pack für OSGi- und JEE-Umgebungen
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 531eed9bb6d7792a6da0104b533a505738a64786
-workflow-type: ht
-source-wordcount: '1714'
-ht-degree: 100%
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+workflow-type: tm+mt
+source-wordcount: '1748'
+ht-degree: 98%
 
 ---
 
@@ -128,7 +128,8 @@ Navigieren Sie zum entsprechenden Ordner und geben Sie in einer Shell Folgendes 
 
 >[!NOTE]
 >
-> Nach der Installation von AEM Forms on JEE Service Pack müssen Sie das Add-On-Paket für Forms aus dem Ordner `crx-repository\install` entfernen, bevor Sie den Anwendungs-Server neu starten. Laden Sie das neueste Add-On-Paket für Forms vom [Software Distribution-Portal](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) herunter.
+>* Nach der Installation von AEM Forms on JEE Service Pack müssen Sie das Add-On-Paket für Forms aus dem Ordner `crx-repository\install` entfernen, bevor Sie den Anwendungs-Server neu starten. Laden Sie das neueste Add-On-Paket für Forms vom [Software Distribution-Portal](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) herunter.
+>* Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
 
 +++
 
@@ -205,7 +206,7 @@ Das Paket wird automatisch installiert.
 
 >[!NOTE]
 >
->Wenn Sie das AEM Forms Service Pack für eine relationale Datenbank installieren, müssen Sie unbedingt ein Backup von DB_schema erstellen.
+> Wenn Sie das AEM Forms Service Pack für eine relationale Datenbank installieren, müssen Sie unbedingt ein Backup von DB_schema erstellen.
 
 +++
 
@@ -223,7 +224,7 @@ Das Paket wird automatisch installiert.
 >[!NOTE]
 >
 >
->Stellen Sie sicher, dass Sie das Redistributable installieren, auch wenn eine frühere Version bereits installiert ist, um die Verfügbarkeit der neuesten Version zu gewährleisten.
+> Stellen Sie sicher, dass Sie das Redistributable installieren, auch wenn eine frühere Version bereits installiert ist, um die Verfügbarkeit der neuesten Version zu gewährleisten.
 
 +++
 

@@ -8,10 +8,10 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 100%
+source-wordcount: '355'
+ht-degree: 90%
 
 ---
 
@@ -42,6 +42,10 @@ Stellen Sie sicher, dass das [AEM-Kompatibilitätspaket](https://helpx.adobe.com
 
 1. Nachdem die Protokolle stabilisiert sind, starten Sie den Server neu.
 1. Verwenden Sie das Migrationsdienstprogramm, um Ihre Assets mit Version 6.5 kompatibel zu machen.
+
+   >[!NOTE]
+   >
+   > Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
 
    Weitere Informationen finden Sie unter [Migrationsdienstprogramm](../../forms/using/migration-utility.md).
 

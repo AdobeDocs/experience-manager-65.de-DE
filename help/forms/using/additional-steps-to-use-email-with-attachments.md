@@ -2,10 +2,10 @@
 title: Zusätzliche Schritte zum Abrufen von E-Mails mit Anhängen
 description: Erfahren Sie, wie Sie den Fehler beheben können, wenn Sie keine E-Mail mit Anhängen für AEM Forms on JEE-Plattformen abrufen können.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: 553aef43342a709dd8e645279999a71b9e0185f0
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 82%
+source-wordcount: '270'
+ht-degree: 72%
 
 ---
 
@@ -48,3 +48,7 @@ Benutzenden sind nicht in der Lage, Vorgänge wie „PDF per E-Mail versenden“
    * `sling.bootdelegation.activation=javax.activation.*`
 
 1. Starten Sie **JBoss®** neu.
+
+>[!NOTE]
+>
+> Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.

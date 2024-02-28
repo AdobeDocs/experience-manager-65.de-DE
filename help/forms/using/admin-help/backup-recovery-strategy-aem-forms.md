@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1518'
 ht-degree: 26%
 
 ---
@@ -87,6 +87,10 @@ Bevor Sie den Forms-Server nach einer Wiederherstellung neu starten, gehen Sie w
 1. Stellen Sie sicher, dass keine Prozesse von internen oder externen Quellen wie den Web-, SOAP- oder EJB-Prozessinitiatoren initiiert werden, bis der normale Betrieb des Systems validiert ist.
 
 Wenn die AEM Forms-Hauptdatenbank verschoben oder geändert wird, lesen Sie die Installationshandbücher für Ihren Anwendungsserver, um Informationen zum Aktualisieren der Informationen zur Datenbankverbindung für die AEM Datenquellen IDP_DS und EDC_DS zu erhalten.
+
+>[!NOTE]
+> 
+> Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
 
 ### Hostname oder IP-Adresse des AEM forms ändern {#changing-the-aem-forms-hostname-or-ip-address}
 

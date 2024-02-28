@@ -8,10 +8,10 @@ docset: aem65
 feature: Adaptive Forms
 role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 98%
+source-wordcount: '830'
+ht-degree: 94%
 
 ---
 
@@ -124,6 +124,10 @@ Das `<locale>` wird unter `https://'[server]:[port]'/libs/cq/i18n/translator.htm
 ### Starten Sie den Server neu {#restart-the-server}
 
 Starten Sie den AEM-Server neu, damit das hinzugefügte Gebietsschema in Kraft tritt.
+
+>[!NOTE]
+>
+> Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
 
 ## Beispielbibliotheken für das Hinzufügen von Unterstützung für Spanisch {#sample-libraries-for-adding-support-for-spanish}
 

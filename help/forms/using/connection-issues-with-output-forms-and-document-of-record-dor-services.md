@@ -5,13 +5,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 role: Admin
-source-git-commit: cf5da092fabbc7834108dc54d65eb97e160984ce
+exl-id: bd58099c-08cd-4056-afb6-a5935454429a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 1%
+source-wordcount: '168'
+ht-degree: 19%
 
 ---
-
 
 # Output-Dienst, Forms-Dienst oder DoR-Dienst (Document of Record) können nicht verwendet werden {#unable-to-use-output-service-forms-service-or-document-of-record-service}
 
@@ -24,8 +24,12 @@ Nach der Installation von AEM Forms 6.5 Service Pack 19 kann der Versuch, den Ou
 So lösen Sie das Problem:
 
 1. Beenden Sie Ihre AEM 6.5 Forms-Instanz.
-1. Laden Sie die [64-Bit-Version von Microsoft Visual C++ Redistributable Packages for Visual Studio 2015, 2017, 2019 und 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) auf dem Computer, auf dem AEM 6.5 Forms installiert ist.
+1. Laden Sie die [64-Bit-Version der Microsoft Visual C++ Redistributable Packages for Visual Studio 2015, 2017, 2019 und 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) auf den Computer herunter, auf dem AEM 6.5 Forms installiert ist, und installieren Sie sie.
 1. Starten Sie den AEM Forms-Server neu.
+
+   >[!NOTE]
+   >
+   > Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
 
 
 >[!NOTE]

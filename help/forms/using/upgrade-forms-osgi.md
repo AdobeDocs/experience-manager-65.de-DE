@@ -7,10 +7,10 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 exl-id: 1e39455e-f588-42a2-91f5-daefcfed82a0
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '946'
-ht-degree: 97%
+source-wordcount: '980'
+ht-degree: 93%
 
 ---
 
@@ -57,6 +57,10 @@ Führen Sie die folgenden Schritte durch, um von AEM 6.3 Forms oder AEM 6.4 Form
       >Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Halten Sie den Server nicht sofort an.** Warten Sie vor dem Anhalten des AEM Forms-Servers, bis die Meldungen „ServiceEvent REGISTERED“ und „ServiceEvent UNREGISTERED“ nicht mehr in der Datei &lt;crx-repository>/error.log angezeigt werden und das Protokoll stabil ist. Beachten Sie außerdem, dass einige Pakete im installierten Zustand verbleiben können. Sie können den Status dieser Pakete ignorieren.
 
 1. Starten Sie die AEM-Instanz neu.
+
+   >[!NOTE]
+   >
+   Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
 
 1. Führen Sie nach der Installation folgende Aktivitäten durch.
 

@@ -3,10 +3,10 @@ title: Erstellen eines Handlers zum Einladen externer Benutzer
 description: Erfahren Sie, wie Sie einen Handler für eingeladene externe Benutzer erstellen. Dadurch kann der Rights Management-Dienst externe Benutzer einladen, Rights Management-Benutzer zu werden.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1126'
-ht-degree: 83%
+source-wordcount: '1160'
+ht-degree: 81%
 
 ---
 
@@ -232,7 +232,12 @@ Um den Handler zum Einladen externer Benutzer zu testen, können Sie externe Ben
 So fügen Sie externe Benutzer hinzu, die über Administration Console eingeladen werden sollen:
 
 1. Stellen Sie die JAR-Datei des Handlers für eingeladene externe Benutzer mithilfe von Workbench bereit.
-1. Starten Sie den Anwendungsserver neu.
+1. Starten Sie den Anwendungs-Server neu.
+
+   >[!NOTE]
+   >
+   > Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
+
 1. Melden Sie sich bei Administration Console an.
 1. Klicken Sie auf **[!UICONTROL Services]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Registrierung für eingeladene Benutzer]**.
 1. Aktivieren Sie die Registrierung für eingeladene Benutzer, indem Sie die Option **[!UICONTROL Registrierung für eingeladene Benutzer aktivieren]** markieren. Klicken Sie unter **[!UICONTROL Integriertes Registrierungssystem verwenden]** auf **[!UICONTROL Nein]**. Speichern Sie Ihre Einstellungen.
