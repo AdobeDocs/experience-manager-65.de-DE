@@ -2,9 +2,9 @@
 title: Versionshinweise für [!DNL Adobe Experience Manager] 6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: c36ef1c1bd261864930039c4d60a930ead12482e
+source-git-commit: 21f39dc697a5aa3944834786a627e990e7f3ca7f
 workflow-type: tm+mt
-source-wordcount: '3390'
+source-wordcount: '3385'
 ht-degree: 70%
 
 ---
@@ -51,7 +51,7 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
    * ECDSA-elliptische Kurve P384 mit SHA384-Digest-Algorithmus
    * ECDSA-elliptische Kurve P512 mit SHA512-Digest-Algorithmus
 * **Nahtlose Kompatibilität mit Windows 11 für Forms Designer**: AEM Forms Designer unterstützt jetzt Windows 11, wodurch eine reibungslose Installation und ein reibungsloser Betrieb gewährleistet sind. Benutzer können selbstbewusst auf Windows 11 aktualisieren, ohne Forms Designer neu installieren zu müssen oder sich um Kompatibilitätsprobleme zu sorgen und einen unterbrechungsfreien Arbeitsablauf zu gewährleisten.
-* **Verbesserte Barrierefreiheit mit der benutzerdefinierten Rolle &quot;Beschriftung&quot;in AEM Forms Designer**: AEM Forms Designer enthält jetzt eine benutzerdefinierte Barrierefreiheitsrolle namens &quot;Beschriftung&quot;, mit der Benutzer XDPs mit personalisierten Untertitelelementen erstellen können. Diese Funktion verbessert die Barrierefreiheit, indem sie es Benutzern ermöglicht, benutzerdefinierte Untertitel in ihre Dokumententwürfe zu integrieren und so die Inklusivität und das Benutzererlebnis zu verbessern.
+* **Verbesserte Barrierefreiheit mit der benutzerdefinierten Rolle &quot;Beschriftung&quot;in AEM Forms Designer**: AEM Forms Designer enthält jetzt eine benutzerdefinierte Barrierefreiheitsrolle namens &quot;Beschriftung&quot;, mit der Benutzer XDPs mit personalisierten Untertitelelementen erstellen können. Diese Funktion verbessert die Barrierefreiheit, da Benutzer benutzerdefinierte Beschriftungen in ihre Dokumententwürfe integrieren können, damit sie die Inklusivität und das Benutzererlebnis verbessern können.
 
 <!-- ### [!DNL Forms]
 
@@ -152,32 +152,32 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 
 #### [!DNL Adaptive Forms]
 
-* Wenn ein Benutzer versucht, AEM Forms mit einer AEM veröffentlichten URL in eine Mailingplattform zu integrieren, fügen die AEM Formulare beim Rendern der Seite &quot;method=post&quot;nicht hinzu, obwohl die POST in der Sendeaktion mit der URL festgelegt ist. Dies führt dazu, dass die Mailingplattform dies nicht als Formular erkennt. (FORMS-12614)
+* Wenn ein Benutzer versucht, AEM Forms mit einer AEM veröffentlichten URL in eine Mailingplattform zu integrieren, fügt AEM Forms keine `method=post` beim Rendern der Seite. Dieses Problem tritt auf, wenn `POST` wird in der Sendeaktion mit der URL festgelegt. Dies führt dazu, dass die Mailingplattform dies nicht als Formular erkennt. (FORMS-12614)
 * Wenn ein Benutzer das Datumsfeld auswählt, das ein Anzeigemuster in AEM Form Service Pack 6.5.18.0 aufweist, kann er das aktuelle Datum nicht über die Tastatur auswählen. (FORMS-12736)
 * Wenn ein Benutzer in AEM Forms Service Pack 6.5.17.0 und Service Pack 6.5.18.0 zwischen Monaten im Kalender-Widget wechselt, zeigt die Datumsauswahlkomponente eine zusätzliche Zeile an. (FORMS-11869)
 * Wenn ein Benutzer auf einem iOS-Gerät mit der Komponente &quot;Foto aufnehmen&quot;in der Komponente &quot;Anhang&quot;auf ein Bild klickt, werden alle Bilder mit demselben Namen zum Ordner hinzugefügt. (FORMS-12224)
 * Wenn ein Benutzer eine vorhandene Option in einer Optionsfeldgruppe aktualisiert, werden falsche Übersetzungswerte veröffentlicht. (FORMS-12575)
-* Wenn ein Benutzer einem adaptiven Formular auf einem Android-Gerät Zeichen hinzufügt, darf der Benutzer beim Fokussieren auf Android-Geräten mehr als die definierte maximale Zeichenanzahl im Textfeld eingeben. Es funktioniert jedoch, wenn ein Benutzer den Eingabetyp HTML5 auswählt. (FORMS-12748)
-* Aufgrund der übereinstimmenden Beschriftungen Arial labelledby und Arial können die Bildschirmlesehilfen nicht zwischen diesen beiden unterscheiden. Um das Problem zu beheben, wird die Beschriftung &quot;aria-labelledby&quot;für die Formularfelder durch &quot;aria-describedby&quot;ersetzt. (FORMS-12436)
-* Wenn ein Autor die Komponente &quot;Adaptive Forms - Embed (v2)&quot;verwendet, um ein adaptives Formular in seine Siteseite einzubetten und das eingebettete Formular eine CAPTCHA-Komponente enthält (CAPTCHA-Dienst -> reCAPTCHA, Einstellungen -> reCAPTCHA-v2), wird die Site-Seite nicht gerendert, wenn der Benutzer versucht, die Site-Seite mit &quot;Als veröffentlicht anzeigen&quot;in der Autoreninstanz und dem Fehler anzuzeigen wird als angezeigt (FORMS-11859):
+* Wenn ein Benutzer einem adaptiven Formular auf einem Android™-Gerät Zeichen hinzufügt, kann der Benutzer beim Fokussieren auf Android™-Geräten mehr als die definierte maximale Zeichenanzahl in das Textfeld eingeben. Es funktioniert jedoch, wenn ein Benutzer den Eingabetyp HTML5 auswählt. (FORMS-12748)
+* Aufgrund der entsprechenden Beschriftungen Arial® labelledby und Arial® sind die Bildschirmlesehilfen nicht in der Lage, zwischen diesen beiden zu unterscheiden. Um das Problem zu beheben, wird die Beschriftung &quot;aria-labelledby&quot;für die Formularfelder durch &quot;aria-describedby&quot;ersetzt. (FORMS-12436)
+* Wenn ein Autor die Komponente &quot;Adaptive Forms - Embed (v2)&quot;verwendet, um ein adaptives Formular in seine Siteseite einzubetten und das eingebettete Formular eine CAPTCHA-Komponente enthält (CAPTCHA-Dienst -> reCAPTCHA, Einstellungen -> reCAPTCHA-v2), wird die Site-Seite nicht gerendert, wenn der Benutzer versucht, die Site-Seite mit &quot;Als veröffentlicht anzeigen&quot;in der Autoreninstanz anzuzeigen. Der folgende Fehler wird angezeigt als (FORMS-11859):
   `Failed to construct 'URL': Invalid base URL at Object.renderRecaptcha`
 
 * Wenn ein Benutzer versucht, das Datum mithilfe der Datumsauswahlkomponente auszuwählen, wird der Wert nicht aktualisiert und zeigt NULL an. (FORMS-12742, FORMS-12736)
 
-* Wenn ein Benutzer ein Upgrade auf AEM Form Service Pack 6.5.19.0 durchführt, wird nach dem Aktualisieren einer neuen Sprache auf das vorhandene Wörterbuch nicht mit den &quot;guideContainer&quot;-Zeilen zusammengeführt, um einem Formular ein neues Gebietsschema hinzuzufügen. (FORMS-12947)
+* Wenn ein Benutzer auf AEM Form Service Pack 6.5.19.0 aktualisiert, wird nach dem Aktualisieren einer neuen Sprache auf das vorhandene Wörterbuch nicht mit den &quot;guideContainer&quot;-Zeilen zusammengeführt, um einem Formular ein Gebietsschema hinzuzufügen. (FORMS-12947)
 
-* Auf AEM Forms Service Pack 6.5.19.0 schlägt der invoke-Webdienst-Vorgang auf Java 11 mit dem Fehler fehl (FORMS-12329):
+* In AEM Forms Service Pack 6.5.19.0 schlägt der aufgerufene Webdienst-Vorgang unter Java™ 11 mit dem Fehler fehl (FORMS-12329):
   `java.lang.NoClassDefFoundError message:sun/misc/BASE64Decoder`
 
 * Wenn ein Benutzer den Vorgang &quot;receive&quot;für &quot;EmailService&quot;auf AEM Forms Service Pack 6.5.18.0 aufruft, wird eine Ausnahme ausgelöst (FORMS-12050):
   `java.util.ServiceConfigurationError: javax.mail.Provider: Provider com.sun.mail.imap.IMAPProvider not a subtype`
 
-* Wenn der FIPS-Modus unter AEM Forms Service Pack 6.5.18.0 aktiviert ist, schlägt das Erstellen eines neuen Benutzers unter Standard-DOM mit dem Fehler fehl (FORMS-11857):
+* Wenn der FIPS-Modus unter AEM Forms Service Pack 6.5.18.0 aktiviert ist, schlägt das Erstellen eines Benutzers unter Standard-DOM mit dem Fehler fehl (FORMS-11857):
   `com.adobe.idp.cx.a: error seeding random number generator`
 
-* Wenn ein Benutzer Schriftarten in ADMINUI unter dem Pfad auswählt `Home>Services>PDF Generator>Adobe PDF Settings`, wird sie nicht ausgewählt. Darüber hinaus ist das Listenfeld der verfügbaren Schriftarten in einem standardmäßigen oder personalisierten Profil leer, sodass es nicht möglich ist, die Unterliste von **Immer einbetten** oder **Niemals einbetten**, führt dies dazu, dass der Benutzer die Schriftart für seine PDF mit PDF Generator nicht konfigurieren kann. Die Protokolle enthalten keine relevanten Fehlermeldungen. (FORMS-12095)
+* Wenn ein Benutzer Schriftarten in ADMINUI unter dem Pfad auswählt `Home>Services>PDF Generator>Adobe PDF Settings`, wird sie nicht ausgewählt. Darüber hinaus ist das Listenfeld der verfügbaren Schriftarten in einem standardmäßigen oder personalisierten Profil leer. Daher ist es nicht möglich, die Unterliste von **Immer einbetten** oder **Niemals einbetten**. Der Benutzer kann die Schriftart für seine PDF mit PDF Generator nicht konfigurieren. Die Protokolle enthalten keine relevanten Fehlermeldungen. (FORMS-12095)
 
-* In AEM Forms Service Pack 6.5.18.0 kann der Benutzer keine neuen Sicherheitseinstellungen erstellen, es werden keine Fehler- oder Serverprotokolle angezeigt, es wird jedoch eine Popup-Fehlermeldung auf dem Bildschirm angezeigt. (FORMS-12212)
+* In AEM Forms Service Pack 6.5.18.0 kann der Benutzer keine Sicherheitseinstellungen erstellen, es werden keine Fehler- oder Serverprotokolle angezeigt, es wird jedoch eine Popup-Fehlermeldung auf dem Bildschirm angezeigt. (FORMS-12212)
 
 * Wenn ein Benutzer mit AEM Forms Service Pack 6.5.18.0 ein adaptives Formular für den JEE-Workflow sendet, wird die Anlage im adaptiven Formular nicht an den JEE-Prozess gesendet, was zu einem Anwendungsfehler führt. (FORMS-12232, FORMS-12228)
 
@@ -198,14 +198,14 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 
 * In AEM Forms 6.5.18.0 werden beim Veröffentlichen eines adaptiven Formulars alle Abhängigkeiten, einschließlich Richtlinien, erneut veröffentlicht, selbst wenn keine Änderungen daran vorgenommen wurden. (FORMS-10454)
 
-* Wenn ein Benutzer beim Ausführen des Konfigurationsmanagers auf AEM Forms 6.5.19.1 mit JBoss Turnkey-Einrichtung &quot;Microsoft SharePoint&quot;auswählt, schlägt die Installation der LiveCycle Jboss-EAR fehl und es wird der folgende Fehler angezeigt: (FORMS-12463)
+* Wenn ein Benutzer beim Ausführen des Konfigurationsmanagers auf AEM Forms 6.5.19.1 mit JBoss® Turnkey-Einrichtung &quot;Microsoft SharePoint&quot;auswählt, schlägt die LiveCycle JBoss®-EAR-Installation fehl und es wird der folgende Fehler angezeigt: (FORMS-12463)
 
   ` Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.`
 
 #### [!DNL Forms Designer] {#forms-designer-6520}
 
 
-* Wenn ein Benutzer auf AEM Forms Service Pack 6.5.18.0 aktualisiert, schlagen aufgrund der fehlenden Ausnahmebehandlung XDPs fehl, die über den Ausgabedienst mit aktivierter getaggter PDF-Option übergeben wurden. (LC-3921757)
+* Wenn ein Benutzer aufgrund der fehlenden Ausnahmebehandlung auf AEM Forms Service Pack 6.5.18.0 aktualisiert, schlagen XDPs fehl, die über den Ausgabedienst mit dem getaggten PDF-optionalen -Skop übergeben werden. (LC-3921757)
 
 * Wenn ein Benutzer mithilfe von AEM Forms Designer eine PDF generiert, werden die Überschriftenebenen in der Struktur für Barrierefreiheit zusammen mit dem grafischen Element (z. B. einem Rechteckfeld) mit Tags versehen. (LC-3921687)
 
