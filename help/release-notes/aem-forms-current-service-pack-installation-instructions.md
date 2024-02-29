@@ -2,7 +2,7 @@
 title: AEM Forms – Patch-Installationsanweisungen für AEM Forms
 description: Installationsanweisungen für AEM Forms Service Pack für OSGi- und JEE-Umgebungen
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 181d5ffcefcf55aa75cfaf29c42dbd8d8d665398
+source-git-commit: fbdeaeca3fa05181682f94e8f71bd9bb6605762a
 workflow-type: tm+mt
 source-wordcount: '1752'
 ht-degree: 97%
@@ -261,7 +261,7 @@ Es gibt zwei verschiedene Methoden, mit der Sie das Service Pack von [!DNL Exper
 
 +++
 
-+++4. Installieren des Adobe Experience Manager Forms (AEM)-Add-On-Pakets
++++5. Installieren des Adobe Experience Manager Forms (AEM)-Add-On-Pakets
 
 1. Stellen Sie sicher, dass Sie das [!DNL Experience Manager] Service Pack installiert haben.
 1. Wählen Sie unter den aufgeführten [AEM Forms-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) das für Ihr Betriebssystem passende Forms-Add-on-Paket aus und laden Sie es herunter.
