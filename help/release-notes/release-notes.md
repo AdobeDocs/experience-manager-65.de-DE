@@ -3,9 +3,9 @@ title: Versionshinweise für [!DNL Adobe Experience Manager] 6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 source-git-commit: 210299acf9f853a19bd513c84c1678e44ba81729
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2456'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
-* Verschachtelte Konfigurationsordner wurden nicht mehr unterstützt und Inhaltsfragment-Modellordner waren nach der Aktualisierung auf AEM 6.5.18 oder auf AEM 6.5.19 nicht mehr sichtbar. (SITES-18110)
+* Verschachtelte Konfigurationsordner wurden nicht mehr unterstützt, und Inhaltsfragment-Modellordner waren nach der Aktualisierung auf AEM 6.5.18 oder auf AEM 6.5.19 nicht mehr sichtbar. (SITES-18110)
 * Einige Unterordner können nicht aus geerbten Inhaltsfragment-Modellen auswählen. Sie müssen Ordner unterstützen, ohne über eine `jcr:content`-Eigenschaft zu verfügen, auch wenn die über die Benutzeroberfläche erstellten DAM-Ordner einen solchen Knoten aufweisen. (SITES-17943)
 
 #### [!DNL Content Fragments] – GraphQL-API {#sites-graphql-api-6520}
@@ -399,7 +399,7 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
 ### Bekannte Probleme bei AEM Forms
 
-Bekannte Probleme in [!DNL Experience Manager] Forms wird eine Woche nach der geplanten Bereitstellung über ein separates Add-On-Paket bereitgestellt [!DNL Experience Manager] Veröffentlichungsdatum des Service Packs. In diesem Fall ist die Paket-Version des AEM Forms-Add-Ons 6.5.20.0 für Donnerstag, den 29. Februar 2024 geplant. Eine Liste bekannter Probleme für Formulare wird diesem Abschnitt nach der Veröffentlichung hinzugefügt.
+Bekannte Probleme in [!DNL Experience Manager] Forms werden eine Woche nach dem geplanten Veröffentlichungsdatum des [!DNL Experience Manager] Service Packs über ein separates Add-on-Paket bereitgestellt. In diesem Fall ist die Paket-Version des AEM Forms-Add-Ons 6.5.20.0 für Donnerstag, den 29. Februar 2024 geplant. Eine Liste der bekannten Probleme für Formulare wird in diesem Abschnitt nach der Veröffentlichung hinzugefügt.
 
 <!--
 
