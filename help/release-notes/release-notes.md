@@ -2,7 +2,7 @@
 title: Versionshinweise für [!DNL Adobe Experience Manager] 6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: fbdeaeca3fa05181682f94e8f71bd9bb6605762a
+source-git-commit: c36ef1c1bd261864930039c4d60a930ead12482e
 workflow-type: tm+mt
 source-wordcount: '3390'
 ht-degree: 70%
@@ -216,17 +216,6 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 * Wenn ein Benutzer in AEM Forms Designer eine XDP-Datei erstellt, wird bei der PDF-Ausgabe das Tag &quot;Schaltflächenformular&quot;nicht im übergeordneten Absatz-Tag (p-Tag) verschachtelt. (LC-3921719)
 
 * Wenn ein Benutzer eine XDP in AEM Forms Designer erstellt und bei der PDF-Ausgabe durch die Formular-Tags navigiert, wird das Hintergrundobjekt ebenfalls mit Tags versehen. (LC-3921687)
-
-<!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
-* **Document Services**
-  * text
-* **Adaptive Forms** 
-  * text
-* **Accessibility**
-  * text
-* **Interactive Communications**
-  * text -->
-<!--### Commerce{#commerce-6520} * text -->
 
 ### Fundament {#foundation-6520}
 
