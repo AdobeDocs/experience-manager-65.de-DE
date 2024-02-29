@@ -3,9 +3,9 @@ title: Technische Anforderungen
 description: In diesem Dokument werden die unterstützten Client- und Server-Plattformen für Adobe Experience Manager aufgeführt.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: d5e7f0301259fdc12b507f9568befcc34ebe9408
+source-git-commit: 52969d5ab0975871c872195ab13649fb815cead8
 workflow-type: tm+mt
-source-wordcount: '3644'
+source-wordcount: '3650'
 ht-degree: 93%
 
 ---
@@ -534,6 +534,8 @@ Windows x86:
 * Administratorrechte für die Installation von Designer
 * Microsoft Visual C++ 2019 (VC 14.28 oder höher) 32-Bit-Laufzeit für 32-Bit-AEM Forms Designer
 * Microsoft Visual C++ 2019 (VC 14.28 oder höher) 64-Bit-Laufzeitumgebung für AEM Forms Designer 64-Bit (sowohl für OSGI- als auch JEE-Stack)
+
+[Installieren und Konfigurieren von AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)
 
 ### Anforderungen für das Zurückschreiben von XMP-Metadaten der AEM Assets {#requirements-for-aem-assets-xmp-metadata-write-back}
 
