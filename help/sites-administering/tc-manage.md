@@ -2,10 +2,10 @@
 title: Verwalten von Übersetzungsprojekten
 description: Erfahren Sie, wie Sie Übersetzungsprojekte in Adobe Experience Manager verwalten.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 219338b497dae6356a68429e9e8ab02c9cfcc3b4
 workflow-type: tm+mt
-source-wordcount: '3504'
-ht-degree: 81%
+source-wordcount: '3506'
+ht-degree: 82%
 
 ---
 
@@ -123,7 +123,7 @@ Nachdem Sie ein Übersetzungsprojekt erstellt haben, können Sie das Bedienfeld 
 
 Wenn Sie einem Übersetzungsprojekt Seiten hinzufügen, werden die Seiten in einen neuen Übersetzungsauftrag einbezogen. Sie können auch [Seiten zu einem vorhandenen Vorgang hinzufügen](#adding-pages-assets-to-a-translation-job).
 
-Wie beim Erstellen eines Projekts werden beim Hinzufügen von Seiten bei Bedarf Kopien der Seiten zu einem Launch hinzugefügt, um das Überschreiben vorhandener Sprachkopien zu vermeiden. (Siehe [Erstellen von Übersetzungsprojekten für bestehende Sprachkopien](#performing-initial-translations-and-updating-existing-translations).)
+So wie beim Erstellen eines Projekts werden beim Hinzufügen von Seiten bei Bedarf Kopien der Seiten zu einem Launch hinzugefügt, um zu verhindern, dass vorhandene Sprachkopien überschrieben werden. (Siehe [Erstellen von Übersetzungsprojekten für bestehende Sprachkopien](#performing-initial-translations-and-updating-existing-translations).)
 
 1. Verwenden Sie die Sites-Konsole, um die Seite auszuwählen, die Sie zum Übersetzungsprojekt hinzufügen.
 
@@ -420,9 +420,15 @@ Wenn eine bereits übersetzte Quellseite [umbenannt oder verschoben](/help/sites
 1. Wählen Sie **Sprachkopien** aus.
 1. Wählen Sie die zu aktualisierenden Zielsprachen aus.
 1. Wählen Sie **Sprachkopien aktualisieren** aus.
+
+   ![updating-language-copy](assets/translation-move-to.png)
+
 1. Klicken Sie auf **Aktualisieren**. Es wird ein [Launch](/help/sites-authoring/launches-promoting.md) erstellt.
 1. Navigieren Sie zum erforderlichen Sprachstamm und wählen Sie ihn aus.
 1. Wählen Sie über das Bedienfeld **Verweise** **Launches** aus.
+
+   ![promote-launch-translation](assets/promote-launch-translation.png)
+
 1. Klicken Sie auf den erstellten Launch und klicken Sie auf **Launch bewerben**.
 
 Jetzt wurde die Quellseite und die zugehörige Sprachkopie verschoben.
