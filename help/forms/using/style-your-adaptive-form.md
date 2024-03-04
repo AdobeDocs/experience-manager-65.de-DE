@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie ein benutzerdefiniertes Design erstellen, ind
 topic-tags: introduction
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: a361c194c238f0f2c999abfd77ca85e7697cb7bf
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 84%
+source-wordcount: '2038'
+ht-degree: 73%
 
 ---
 
@@ -106,7 +106,7 @@ Im Rahmen dieses Tutorials gestalten Sie Kopf- und Fußzeilen, Text- und numeris
    * **Titel:** Geben Sie einen Titel für das Design an. Zum Beispiel: **Globales Design.** Der Titel hilft Ihnen, das Design in der Liste der Designs zu identifizieren.
    * **Name**: Geben Sie den Namen des Designs an. Beispiel: **Globales-Design.** Im Repository wird ein Knoten mit dem angegebenen Namen erstellt. Wenn Sie mit der Eingabe des Titels beginnen, wird automatisch ein Wert für das Feld „Name“ vorgeschlagen. Sie können den vorgeschlagenen Wert gegebenenfalls ändern. Im Feld „Name“ dürfen nur alphanumerische Zeichen, Bindestriche und Unterstriche eingegeben werden. Alle ungültigen Eingaben werden durch Bindestriche ersetzt.
 
-1. Wählen Sie **[!UICONTROL Erstellen]**. Ein Design wird erstellt und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt. Auswählen **[!UICONTROL Öffnen]** , um das neu erstellte Design in einer neuen Registerkarte zu öffnen. Das Design wird im Design-Editor geöffnet. Zum Festlegen des Designs verwendet der Design-Editor ein sofort einsatzbereites adaptives Formular, das mit AEM [!DNL Forms] mitgeliefert wird.
+1. Wählen Sie **[!UICONTROL Erstellen]** aus. Ein Design wird erstellt und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt. Auswählen **[!UICONTROL Öffnen]** , um das neu erstellte Design in einer neuen Registerkarte zu öffnen. Das Design wird im Design-Editor geöffnet. Zum Festlegen des Designs verwendet der Design-Editor ein sofort einsatzbereites adaptives Formular, das mit AEM [!DNL Forms] mitgeliefert wird.
 
    Informationen zur Verwendung der Benutzeroberfläche des Design-Editors finden Sie unter [Informationen zum Design-Editor](/help/forms/using/themes.md#aboutthethemeeditor).
 
@@ -442,16 +442,77 @@ Einige Stile gelten nur für eine bestimmte Komponente. Diese Komponenten werden
 Sie können verschiedene Schriftarten verwenden, um ein adaptives Formular zu entwerfen. Möglicherweise sind die Schriftarten, die zum Entwerfen des adaptiven Formulars verwendet werden, nicht auf allen Geräten vorhanden, auf denen das adaptive Formular angezeigt wird. Sie können einen Webfont-Dienst verwenden, um die benötigten Schriftarten auf dem Zielgerät bereitzustellen.
 
 [!DNL Adobe Fonts] ist solch ein Webfont-Dienst. Sie können den Dienst mit adaptiven Formularen konfigurieren und verwenden. So verwenden Sie [!DNL Adobe Fonts] in einem adaptiven Formular:
+1. Durchsuchen Sie die [Bibliothek mit Adobe-Schriftarten](https://fonts.adobe.com/) und wählen Sie die Schriftart, um Ihr Formular zu gestalten.
+<!--
+>[!NOTE]
+>
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).-->
 
 >[!NOTE]
 >
->![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] heißt jetzt Adobe Fonts und ist in Creative Cloud- und anderen Abonnements enthalten. [Weitere Informationen](https://fonts.adobe.com/)
+> Sie können Tags oder Filter hinzufügen, um die Liste der Schriftarten zu verfeinern.
 
-1. Erstellen Sie ein [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com)-Konto, erstellen Sie ein Kit, fügen Sie dem Kit die Schriftart Myriad Pro hinzu, veröffentlichen Sie das Kit und erhalten Sie die Kit-ID. In einem adaptiven Formular muss [!DNL Adobe Fonts] (Web Fonts) verwendet werden.
-1. Navigieren Sie auf dem AEM [!DNL Forms]-Server zu ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Werkzeuge]** ![hammer](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Öffnen Sie jetzt einen Konfigurationsordner. Wenn bereits eine Konfiguration zur Verfügung steht, klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]**, um eine neue Instanz zu erstellen.
+1. Klicken Sie auf die Schaltfläche &lt;/>, um die Familie zu einem Webprojekt hinzuzufügen, falls Sie eine Schriftart finden.
 
-   Geben Sie im Dialogfeld „Konfiguration erstellen“ einen **Titel** für die Konfiguration an und klicken Sie auf **[!UICONTROL Erstellen]**. Daraufhin werden Sie zur Seite „Konfiguration“ geleitet. Geben Sie im Dialogfeld [!UICONTROL Komponente bearbeiten], das angezeigt wird, Ihre **Kit-ID** ein und klicken Sie auf **[!UICONTROL OK]**.
+   ![select-font-from-font-library](assets/select-font-from-font-library.png)
 
-1. Konfigurieren Sie Ihr Design für die Verwendung der [!DNL Adobe Fonts]-Konfiguration. Öffnen Sie in der Autorinstanz ein Design im Design-Editor **[!UICONTROL Globales Design]**. Navigieren Sie im Design-Editor zu **[!UICONTROL Themenoptionen]** ![Themenoptionen](assets/theme-options.png) > **[!UICONTROL Konfigurieren]**. Wählen Sie im Feld **[!UICONTROL Adobe Fonts-Konfiguration]** ein Kit aus und klicken Sie auf **[!UICONTROL Speichern]**.
+   Der Bildschirm &quot;Schriftarten zu einem Webprojekt hinzufügen&quot;wird angezeigt.
 
-   Die zu **[!UICONTROL Adobe Fonts]** hinzugefügten Schriftarten stehen im **[!UICONTROL Text]**-Akkordeon aller Komponenten zur Auswahl.
+   >[!NOTE]
+   >
+   > Sie können Ihrem Webprojekt nur Schriftarten hinzufügen, wenn die Schaltfläche &lt;/> verfügbar ist.
+
+2. Benennen Sie Ihr Webprojekt.
+3. Aktivieren Sie die Kontrollkästchen, um die Schriftgewichtung und -stile auszuwählen, die Sie einbeziehen möchten.
+
+   ![Schriftartbibliothek hinzufügen](assets/add-a-font-window.png)
+
+4. Auswählen **Klicks** , um das Projekt zu erstellen.
+5. Kopieren Sie den Einbettungscode und die URL aus dem Bildschirm.
+   ![Einbettungscode und URL](assets/font-add-url.png)
+
+6. Klicks **Fertig** , um das Webprojektfenster zu schließen.
+7. Melden Sie sich bei Ihrer AEM-Instanz an und navigieren Sie zur URL `http://server:port/crx/de/index.jsp#`
+8. Erstellen Sie eine Ordnerstruktur in CRXDE, beispielsweise `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`.
+9. Navigieren Sie zur neu erstellten `clientlibs` und fügen Sie den `allowProxy` und `categories` Eigenschaften.
+10. Navigieren Sie zu `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` und erstellen Sie einen css-Ordner.
+11. Gehen Sie zum erstellten CSS-Ordner und erstellen Sie eine Datei. Erstellen Sie beispielsweise eine Datei als `fonts.css` und fügen Sie den Einbettungscode zusammen mit der URL ein.
+   ![Ordnerstruktur](/help/forms/using/assets/fonts-add-in-crxde.png)
+12. Speichern Sie die Änderungen.
+
+>[!NOTE]
+>
+> Um die hinzugefügten benutzerdefinierten Schriftarten in einem adaptiven Formular zu verwenden, stellen Sie sicher, dass der Client-Bibliotheksname in der **[!UICONTROL Client-Bibliothekskategorie]** entspricht dem in der Kategorieoption des Ordners clientlib angegebenen Namen.
+
+Die eingeschlossenen Schriftarten sind jetzt für das adaptive Formular über die folgende benutzerdefinierte Schriftarten-Client-Bibliothek verfügbar.
+
+
+<!--
+Create Adobe Fonts Configuration
+
+1. To create a API Token, go to **login** > **API Token** > **Make me a new API token**.
+
+   ![API token](/help/forms/using/assets/fonts-api-token.png)
+
+2. Once, you click **Make me a new API token**, a new token is generated. 
+3. Copy the generated token for future use.
+4. Now login to your AEM  author instance. On the author instance, go to **[!UICONTROL Tools]**>**[!UICONTROL Cloud Services]**> **[!UICONTROL Adobe Fonts]**.
+5. Select the configuration container and click **Create**. **[UICONTROL Create Adobe Fonts Configuration]** screen appears.
+    ![API token](/help/forms/using/adobe-font-configuration-screen.png)
+
+6. Spceify the name and paste the API token in the **[!UICONTROL Kit ID]** textbox.
+7. Click **Create**.
+
+
+
+The fonts added to the **[!UICONTROL Adobe Fonts]** are available for selection in the **[!UICONTROL Text]** accordion of all the components.
+1. In the theme editor, navigate to **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configure]**. 
+2. In the **[!UICONTROL Adobe Fonts Configuration]** field, select the kit, and click **[!UICONTROL Save]**.
+
+
+1. Create an [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com) account, create a kit, add font Myriad Pro to the kit, publish the kit, and obtain the Kit ID. It is required to use [!DNL Adobe Fonts] (Web Fonts) in an adaptive form. 
+1. In the AEM [!DNL Forms] Server, navigate to ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Now, open a configuration folder. If a configuration is already available, click the **[!UICONTROL Create]** button to create an instance.
+
+   On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. You are redirected to the configuration page. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**. -->
+
+
