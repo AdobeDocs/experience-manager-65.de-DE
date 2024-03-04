@@ -6,20 +6,20 @@ docset: aem65
 feature: Release Information
 role: User, Admin
 source-git-commit: 4fab3f80e01c2b7c3e4ebdc4bffdedb6f5f39d11
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2334'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 
-# Kumulative wichtige Funktionen und Verbesserungen
+# Wichtige kumulative Funktionen und Verbesserungen
 
-Eine kumulative Liste der wichtigsten Funktionen und Verbesserungen in Adobe Experience Manager 6.5 für die letzten acht Service Pack-Versionen.
+Eine kumulative Liste der wichtigsten Funktionen und Verbesserungen, die in Adobe Experience Manager 6.5 für die letzten acht Service Pack-Versionen vorgenommen wurden.
 
-Siehe auch [Versionshinweise zum Adobe Experience Manager 6.5 neuesten Service Pack](/help/release-notes/release-notes.md).
+Siehe auch die [Versionshinweise zum neuesten Service Pack von Adobe Experience Manager 6.5](/help/release-notes/release-notes.md).
 
-## AEM 6.5, Service Pack 18 - 7. Dezember 2023
+## AEM 6.5, Service Pack 18 – 7. Dezember 2023
 
 * Ermöglicht den Benutzenden des Seiteneditors bzw. der Bildkomponente die Referenzierung von Assets aus dem Remote Assets Cloud Service.  (SITES-13448, SITES-13433)
 * AEM unterstützt jetzt die Server-seitige Sortierung für eine schnellere Projektnavigation in der Listenansicht. Projektknoten werden nach der von der Benutzerin bzw. dem Benutzer ausgewählten Spalte sortiert, bevor sie in der Benutzeroberfläche angezeigt werden.
@@ -43,13 +43,13 @@ Siehe auch [Versionshinweise zum Adobe Experience Manager 6.5 neuesten Service P
 
 * **64-Bit XMLFM**: Die 64-Bit-Iteration von XMLFM führt zu verbesserter Performance, Skalierbarkeit und Speicherverwaltung. Dies ist der erste native 64-Bit-Dienst, der Server-seitig bereitgestellt wird. Durch die Nutzung seiner inhärenten Fähigkeit, auf größere Speicherressourcen im Vergleich zu seinem 32-Bit-Gegenstück zuzugreifen, ermöglicht XMLFM 64-Bit die nahtlose Handhabung größerer Rendering-Workloads. Dieser Meilenstein stellt nicht nur einen Performance-Sprung dar, sondern führt auch wichtige Verbesserungen am nativen Service-Framework innerhalb des AEM Forms-Servers ein. Mit diesem Update wird der AEM Forms-Server für die nahtlose Unterstützung nativer 64-Bit-Dienste ausgestattet.
 
-## AEM 6.5, Service Pack 18 - 24. August 2023
+## AEM 6.5, Service Pack 18 – 24. August 2023
 
 * Assets, Dynamic Media: [-Unterstützung für mehrere Untertitel und mehrere Audiospuren für Videos in Dynamic Media](/help/assets/video.md#about-msma) – Sie können jetzt ganz einfach mehrere Untertitel und mehrere Audiospuren zu einem primären Video hinzufügen.  Diese Funktion bedeutet, dass Ihre Videos für eine globale Zielgruppe zugänglich sind. Sie können ein einzelnes veröffentlichtes primäres Video für eine globale Zielgruppe in mehreren Sprachen anpassen und die Richtlinien zur Barrierefreiheit für verschiedene geografische Regionen einhalten. Autorinnen und Autoren können die Untertitel und Audiospuren auch über eine einzige Registerkarte in der Benutzeroberfläche verwalten.
-* Assets - Aus den Suchergebnissen können Sie jetzt zum Speicherort des Ordners navigieren, der ein Asset enthält, damit Sie verschiedene Asset-Verwaltungsaufgaben ausführen können.
-* Der Polaris-Picker für Sites in Inhaltsfragmenten hat die Leistung verbessert.
-* Der Seiteneditor/Bildkomponentenbenutzer von Sites wurde aktiviert, um auf Assets vom Remote-Assets-Cloud Service zu verweisen.
-* Um in der Listenansicht, in der sich möglicherweise viele Projekte in Ihrem System befinden, schnell ein Projekt zu finden, unterstützt Adobe jetzt die Server-seitige Sortierung. Projektknoten werden nach der vom Benutzer ausgewählten Spalte im Backend sortiert, bevor sie in der Benutzeroberfläche gerendert werden.
+* Assets – Von den Suchergebnissen aus können Sie jetzt zum Ordnerspeicherort navigieren, der ein Asset enthält, damit Sie verschiedene Asset-Management-Aufgaben ausführen können.
+* Sites Polaris Picker in Inhaltsfragmenten hat eine verbesserte Leistung.
+* Ermöglicht den Benutzenden des Seiteneditors bzw. der Bildkomponente die Referenzierung von Assets aus dem Remote Assets Cloud Service.
+* Um in der Listenansicht, in der sich möglicherweise viele Projekte in Ihrem System befinden, schnell ein Projekt zu finden, unterstützt Adobe jetzt die Server-seitige Sortierung. Projektknoten werden nach der von Benutzenden ausgewählten Spalte im Backend sortiert, bevor sie in der Benutzeroberfläche gerendert werden.
 * AEM 6.5.18.0 unterstützt MongoDB 5.0 bis 6.0.
 
 ### [!DNL Forms]
@@ -76,7 +76,7 @@ Siehe auch [Versionshinweise zum Adobe Experience Manager 6.5 neuesten Service P
 
 Wenn Sie eine Installation durchführen oder die Verwendung der neuesten Software für Ihre AEM 6.5 Forms auf JEE-Umgebung planen, empfiehlt Adobe die Verwendung des Vollinstallationsprogramms für AEM 6.5.18.0 Forms auf JEE. Die vollständige Liste der neu hinzugefügten und veralteten Software finden Sie in der Dokumentation zu AEM Forms auf JEE oder AEM Forms auf OSGi.
 
-## AEM 6.5, Service Pack 17 - 25. Mai 2023
+## AEM 6.5, Service Pack 17 – 25. Mai 2023
 
 * **Verbesserungen des Sucherlebnisses**: Sie können jetzt schnell die folgenden Vorgänge für die Assets ausführen, die in den Suchergebnissen angezeigt werden:
    * Erstellen eines Workflows
@@ -99,7 +99,7 @@ Wenn Sie eine Installation durchführen oder die Verwendung der neuesten Softwar
 * **Aktivieren der Salesforce-Integration mit Experience Manager Forms für den Datenaustausch**: Konfigurieren Sie die Integration zwischen Experience Manager Forms und der Salesforce-Applikation unter Verwendung des OAuth 2.0-Client-Anmeldedatenflusses. Diese Funktion ermöglicht eine sichere und direkte Authentifizierung und Autorisierung der Anwendung und ermöglicht eine nahtlose Kommunikation ohne Einbindung der Benutzenden.
 * **Optimierung und verbesserte Funktionalität der Workflow-Engine**: Erhöhen Sie die Leistung der Workflow-Engines, indem Sie die Anzahl der Workflow-Instanzen minimieren. Zusätzlich zu den Statuswerten `COMPLETED` und `RUNNING` unterstützt der Workflow auch drei neue Statuswerte: `ABORTED`, `SUSPENDED`, und `FAILED`.
 
-## AEM 6.5, Service Pack 16 - 23. Februar 2023
+## AEM 6.5, Service Pack 16 – 23. Februar 2023
 
 Die Unterstützung des neuen Protokolls DASH (Dynamic Adaptive Streaming over HTTP) wurde für adaptives Bit-Rate-Streaming in Dynamic Media-Videobereitstellung (mit aktiviertem CMAF, [Common Media Application Format]) eingeführt.
 
@@ -113,44 +113,44 @@ Siehe [Aktivieren von DASH in Ihrem Konto](/help/assets/video.md#enable-dash).
 
 * [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=de) ermöglichen es Entwicklerinnen und Entwicklern, interaktive Formulare zu erstellen, zu veröffentlichen und zu verwalten, auf die über APIs und nicht über eine herkömmliche grafische Benutzeroberfläche zugegriffen und mit denen interagiert werden kann.
 
-* [Kernkomponenten für adaptive Formulare](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de#features) sind eine Gruppe von 24 BEM-kompatiblen Open-Source-Komponenten, die auf der Grundlage der Adobe Experience Manager WCM-Kernkomponenten erstellt wurden. Diese Komponenten sind Open-Source-Komponenten und bieten Entwicklerinnen und Entwicklern die Möglichkeit, diese Komponenten einfach anzupassen und zu erweitern, um sie an die spezifischen Anforderungen ihrer Organisation anzupassen. Jeder, der über vorhandene Fähigkeiten zum Anpassen von [WCM-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/authoring.html) verfügt, kann diese Komponenten einfach anpassen und gestalten.
+* [Kernkomponenten für adaptive Formulare](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de#features) sind eine Gruppe von 24 BEM-kompatiblen Open-Source-Komponenten, die auf der Grundlage der Adobe Experience Manager WCM-Kernkomponenten erstellt wurden. Diese Komponenten sind Open-Source-Komponenten und bieten Entwicklerinnen und Entwicklern die Möglichkeit, diese Komponenten einfach anzupassen und zu erweitern, um sie an die spezifischen Anforderungen ihrer Organisation anzupassen. Jeder, der über vorhandene Fähigkeiten zum Anpassen von [WCM-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/authoring.html?lang=de) verfügt, kann diese Komponenten einfach anpassen und gestalten.
 
-* Der Reader Extension-Dienst für OSGi bietet jetzt separate Optionen, um Import- und Exportrechte für PDF zum Importieren oder Exportieren von Daten in Adobe Acrobat Reader zu ermöglichen.
+* Der Reader Extension-Dienst für OSGi bietet jetzt separate Optionen, um Import- und Export-Verwendungsrechte für PDF zum Importieren oder Exportieren von Daten in Adobe Acrobat Reader zu ermöglichen.
 
-## AEM 6.5, Service Pack 15 - 24. November 2022
+## AEM 6.5, Service Pack 15 – 24. November 2022
 
 ### [!DNL Forms]
 
-* AEM Forms Designer ist jetzt in verfügbar [Spanisches Gebietsschema](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de).
-* Sie können jetzt [OAuth2 zum Authentifizieren mit Microsoft® Office 365-Mail-Serverprotokollen (SMTP und IMAP)](/help/forms/using/oauth2-support-for-mail-service.md).
-* Sie können [Auf dem Server erneut überprüfen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=de#enabling-server-side-validation-br) -Eigenschaft auf &quot;true&quot;fest, um die ausgeblendeten Felder zum Ausschließen aus einem Datensatzdokument serverseitig zu identifizieren.
-* Für AEM Forms Designer ist eine 32-Bit-Version von Visual C++ 2019 Redistributable (x86) erforderlich.
+* AEM Forms Designer ist jetzt im [spanischen Gebietsschema](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) verfügbar. 
+* Sie können jetzt [OAuth2 verwenden, um sich bei Microsoft® Office 365-Mailserver-Protokollen (SMTP und IMAP) zu authentifizieren](/help/forms/using/oauth2-support-for-mail-service.md).
+* Sie können die Eigenschaft [Auf dem Server erneut überprüfen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=de#enabling-server-side-validation-br) auf „true“ setzen, um die ausgeblendeten Felder zum Ausschließen aus dem Datensatzdokument serverseitig zu identifizieren.
+* AEM Forms Designer erfordert die 32-Bit-Version von Visual C++ 2019 Redistributable (x86).
 
-## AEM 6.5, Service Pack 14 - 25. August 2022
+## AEM 6.5, Service Pack 14 – 25. August 2022
 
 Nur Fehlerbehebungen.
 
-## AEM 6.5, Service Pack 13 - 26. Mai 2022
+## AEM 6.5, Service Pack 13 – 26. May 2022
 
-* Verwenden Sie unsichtbares CAPTCHA in einem adaptiven Formular: Sie können jetzt ein unsichtbares CAPTCHA verwenden, um die CAPTCHA-Herausforderung nur anzuzeigen, wenn eine verdächtige Aktivität vorliegt. Wenn keine verdächtige Aktivität gefunden wird, wird die CAPTCHA-Frage nicht angezeigt. Sie hilft bei der Bewertung des Ausfüllens von Formularen durch Menschen ohne Kontrollkästchenanforderungen, reduziert den Anpassungsaufwand und verbessert das Erlebnis für Endbenutzerinnen und -benutzer.
+* Unsichtbares CAPTCHA in einem adaptiven Formular verwenden: Sie können jetzt ein unsichtbares CAPTCHA verwenden, um die CAPTCHA-Frage nur im Falle einer verdächtigen Aktivität anzuzeigen. Wenn keine verdächtige Aktivität gefunden wird, wird die CAPTCHA-Frage nicht angezeigt. Dies hilft bei der Bewertung des Ausfüllens von Formularen durch Menschen ohne Kontrollkästchenanforderungen, reduziert den Anpassungsaufwand und verbessert das Erlebnis für Endbenutzerinnen und -benutzer.
 
-* Unterstützung zum Abrufen von Antwortheadern im Nachbearbeitungsprogramm des Formulardatenmodells für REST-Endpunkte hinzugefügt.
+* Es wurde Unterstützung zum Abrufen von Antwort-Headern im Nachbearbeitungsprogramm des Formulardatenmodells für REST-Endpunkte hinzugefügt.
 
-* Beim Generieren einer Übersetzungsdatei für ein adaptives Formular ist nun dieselbe Textsequenz wie die generierte XLIFF-Datei mit der Komponentensequenz im entsprechenden adaptiven Formular identisch.
+* Bei der Erstellung einer Übersetzungsdatei für ein adaptives Formular ist nun die gleiche Abfolge von Texten in der generierten XLIFF-Datei identisch mit der Abfolge der Komponenten im entsprechenden adaptiven Formular.
 
-* Wenn Sie ein adaptives Formular lokalisierten und auch nur eine kleine Änderung am Text in der Basissprache vornahmen, ging die komplette Übersetzung für alle anderen Sprachen verloren. Das Problem wurde in [!DNL Experience Manager] 6.5.13.0.
+* Wenn Sie ein adaptives Formular lokalisierten und auch nur eine kleine Änderung am Text in der Basissprache vornahmen, ging die komplette Übersetzung für alle anderen Sprachen verloren. Das Problem wurde in [!DNL Experience Manager] 6.5.13.0 behoben.
 
 * Verbesserungen der Barrierefreiheit für Forms:
 
    * Es wurde Unterstützung für Bildschirmlesehilfen hinzugefügt, um Kopfzeilen und Körper einer Tabelle als fortgesetzte und verbundene Einheiten zu erkennen. Dadurch wird Bildschirmlesehilfen die korrekte Navigation in den Tabellen erleichtert. (NPR-37139)
-   * Bildschirmlesehilfen können jetzt die Navigation in HTML Workspace beenden, bis ein Dialogfeld geöffnet ist.
+   * Es wurde Unterstützung für Bildschirmlesehilfen hinzugefügt, um die Navigation im HTML-Arbeitsbereich zu stoppen, bis ein Dialogfeld geöffnet ist.
 
-## AEM 6.5, Service Pack 12 - 24. Februar 2022
+## AEM 6.5, Service Pack 12 – 24. Februar 2022
 
 * Nach dem Konfigurieren einer Verbindung zwischen Remote-DAM- und Sites-Bereitstellungen werden die Assets auf Remote-DAM in der Sites-Bereitstellung verfügbar gemacht. Sie können jetzt Remote-DAM-Assets oder -Ordner aktualisieren, löschen, umbenennen und verschieben. Die Aktualisierungen stehen mit etwas Verzögerung automatisch in der Sites-Bereitstellung zur Verfügung.
 * Push-Rollouts von einer Live Copy-Quelle an mehrere Live Copies sind jetzt standardmäßig möglich, ohne dass eine Blueprint-Konfiguration erforderlich ist.
-* Der Status der laufenden asynchronen Vorgänge wird jetzt in der Benutzeroberfläche angezeigt, um zu verhindern, dass Benutzer versehentlich mehrere asynchrone Vorgänge auf demselben Pfad auslösen.
-* Unterstützung für IMS-basierte Authentifizierung für Analytics 2.0-APIs.
-* API-Unterstützung für JSON-Erlebnisfragment für den Angebotstyp.
-* Die Angebotsanforderung wird jetzt für Löschangebot (Experience Fragment-API) in IMS bereitgestellt.
+* Der Status laufender asynchroner Vorgänge wird jetzt auf der Benutzeroberfläche angezeigt, um zu verhindern, dass versehentlich mehrere asynchrone Vorgänge auf demselben Pfad ausgelöst werden.
+* Es wird Unterstützung für die IMS-basierte Authentifizierung für Analytics 2.0-APIs bereitgestellt.
+* API-Unterstützung für JSON-Experience Fragments vom Angebotstyp.
+* In IMS wird jetzt die Angebotsanforderung für Löschangebote (Experience Fragment-API) bereitgestellt.
 * Das integrierte Repository (Apache Jackrabbit Oak) verbleibt weiterhin auf 1.22.9.
