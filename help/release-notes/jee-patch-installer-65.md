@@ -8,7 +8,7 @@ hidefromtoc: true
 source-git-commit: 947f45e043c2ce1b683212f70157d1e9a08e1941
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ Wenn Sie die SAML-Authentifizierung konfiguriert haben und Probleme mit großen 
 
 >[!NOTE]
 >
-> Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
+> Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mithilfe alternativer Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 ## Betroffene Module {#impacted-modules}
 
