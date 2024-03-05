@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: In der Dokumentation zu Adobe Experience Manager 6.5 erfahren Sie, wie die Software funktioniert und was sie für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+source-git-commit: e39c52bc658e3a286272d1c94106b17a2f5579ad
 workflow-type: tm+mt
-source-wordcount: '7348'
+source-wordcount: '7355'
 ht-degree: 97%
 
 ---
@@ -73,6 +73,7 @@ ht-degree: 97%
    + [Content-Disposition-Filter](/help/sites-administering/content-disposition-filter.md)
    + [Zuordnung benutzerdefinierter Benutzergruppen in AEM 6.5](/help/sites-administering/cug-mapping.md)
    + [Cookie-Unterstützung für dieselbe Website](/help/sites-administering/same-site-cookie-support.md)
+   + [Einstellung der JWT-Anmeldedaten in Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + Sites {#sites}
    + Authoring {#authoring}
       + Wesentliche Aufgaben, Tools und Konzepte für die Inhaltserstellung in AEM {#essentials}
@@ -384,9 +385,9 @@ ht-degree: 97%
       + [Aktivieren des Hotlink-Schutzes in Dynamic Media](/help/assets/hotlink-protection.md)
       + [3D-Unterstützung](/help/assets/assets-3d.md)
       + [Einschränkungen bei Dynamic Media](/help/assets/limitations.md)
-      + [Bildsets](/help/assets/image-sets.md)
+      + [Bild-Sets](/help/assets/image-sets.md)
       + [Panoramabilder](/help/assets/panoramic-images.md)
-      + [Sets mit gemischten Medien](/help/assets/mixed-media-sets.md)
+      + [Sets für gemischte Medien](/help/assets/mixed-media-sets.md)
       + [Rotationssets](/help/assets/spin-sets.md)
       + [Video in Dynamic Media](/help/assets/video.md)
       + [Karussellbanner](/help/assets/carousel-banners.md)
@@ -1397,7 +1398,7 @@ ht-degree: 97%
             + [Vorschau – JSON-Darstellung](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-json-preview.html)
          + Bereitstellungs-API{#delivery-api}
             + [Assets-HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/mac-api-assets.html)
-            + [Inhaltsfragment-REST-API](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html)
+            + [Inhaltsfragment-REST-API](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html?lang=de)
             + [Inhaltsfragment-GraphQL-API](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphql-api-content-fragments.html)
             + [Verwalten von GraphQL-Endpunkten](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
             + [Verwenden der GraphiQL-IDE](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphiql-ide.html)
