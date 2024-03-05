@@ -2,9 +2,9 @@
 title: Versionshinweise für [!DNL Adobe Experience Manager] 6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 015c36cad1e7da98888609622cf2150842d40c66
+source-git-commit: 7b920927fe400c05f6c7a744d4cb7366db0cae86
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3486'
 ht-degree: 69%
 
 ---
@@ -470,11 +470,11 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
    1. Laden Sie den Hotfix für Ihr Betriebssystem herunter:
 
-   * [Hotfix für Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip)
-   * [Hotfix für Linux](/help/release-notes/assets/Hotfix-Linux.zip)
-   * [Hotfix für Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
+      * [Hotfix für Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip)
+      * [Hotfix für Linux](/help/release-notes/assets/Hotfix-Linux.zip)
+      * [Hotfix für Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
 
-   1. Laden Sie das Paket (.zip) über den Package Manager hoch und installieren Sie es.
+   1. Laden Sie das Paket (.zip) über den [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=en#accessing) hoch und installieren Sie es.
 
 * Der Vorbefüllungs-Dienst schlägt mit einer Nullzeigerausnahme in der interaktiven Kommunikation fehl. (CQDOC-21355)
 
