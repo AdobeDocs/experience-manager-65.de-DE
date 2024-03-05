@@ -4,10 +4,10 @@ description: Adaptive Formulare bieten einen Mechanismus zum Erstellen eines For
 topic-tags: author
 keywords: Adaptive Formularfragmente hinzufügen, adaptive Formularfragmente, Formularfragment erstellen, Fragment zu einem adaptiven Formular hinzufügen, Fragmente verwalten
 feature: Adaptive Forms, Core Components
-source-git-commit: 304b1bf2e19942fb728944330512a83a9006cb2a
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '1844'
-ht-degree: 93%
+source-wordcount: '1840'
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 93%
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM 6.5 | Dieser Artikel |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=de) |
 
 Zwar wurde jedes Formular für einen bestimmten Zweck entwickelt, aber in den meisten Formularen gibt es gängige Segmente für persönliche Angaben wie Name und Anschrift, Familienmitglieder und Einkommen. Formularentwicklerinnen und -entwickler müssen diese gängigen Segmente jedes Mal erstellen, wenn ein neues Formular erstellt wird.
 
@@ -28,16 +28,16 @@ Sie können ein Fragment mehrmals zu einem Dokument hinzufügen und die Datenbin
 
 >[!NOTE]
 >
-> Sie können Ihre Fragmenterfahrung für Benutzer einfach mit der [Dialogfeld &quot;Konfigurieren&quot;und Dialogfeld &quot;Design&quot;der Formularfragment-Komponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html).
+> Mit dem [Konfigurationsdialogfeld und dem Design-Dialogfeld der Formularfragment-Komponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html?lang=de) können Sie Ihre Fragmente ganz einfach an die Bedürfnisse der Benutzenden anpassen.
 
 
 ## Erstellen eines Formularfragments {#create-a-fragment}
 
 Sie können adaptive Formularfragmente von Grund auf neu erstellen oder ein Panel in einem vorhandenen adaptiven Formular als Fragment speichern. So erstellen Sie ein Formularfragment:
 
-1. Melden Sie sich bei Ihrer AEM Forms-Instanz unter https:// an.[*hostname*]:[*port*]/aem/forms.html
+1. Melden Sie sich bei Ihrer AEM Forms-Instanz unter https://[*hostname*]:[*port*]/aem/forms.html an.
 1. Klicken Sie auf **Erstellen > Adaptives Formularfragment**.
-1. Geben Sie Titel, Namen, Beschreibung und Tags für das Fragment an. Stellen Sie sicher, dass Sie einen eindeutigen Namen für das Fragment angeben. Wenn ein anderes Fragment mit demselben Namen vorhanden ist, kann das Fragment nicht erstellt werden.
+1. Geben Sie Titel, Namen, Beschreibung und Tags für das Fragment an. Stellen Sie sicher, dass Sie einen eindeutigen Namen für das Fragment angeben. Wenn bereits ein anderes Fragment mit demselben Namen vorhanden ist, kann das Fragment nicht erstellt werden.
 1. Wählen Sie eine Formularvorlage aus. Sie können ein Formularfragment für Kernkomponenten-basierte adaptive Formular- oder Foundation-Komponenten-basierte adaptive Formulare erstellen.
    * Um Formularfragmente für auf Kernkomponenten basierende Formulare zu erstellen, wählen Sie eine auf Kernkomponenten basierende Vorlage aus.
    * Um Formularfragmente für auf Foundation-Komponenten basierende Formulare zu erstellen, wählen Sie eine Vorlage für Foundation-Komponenten aus. Beispiel: /libs/fd/af/templateForFragment/defaultFragmentTemplate.
@@ -112,7 +112,7 @@ Sie können verschachtelte adaptive Formularfragmente erstellen, d. h. ein Frag
 
 ### Mehrfaches Verwenden eines Formularfragments in einem adaptiven Formular {#using-form-fragment-mutiple-times-in-af}
 
-Sie können ein nicht-basiertes und schemabasiertes Formularfragment mehrmals in einem adaptiven Formular verwenden, um Daten für jedes Formularfragmentfeld eindeutig zu speichern. Sie können beispielsweise ein Adressformularfragment verwenden, um Adressdetails permanent für die Kommunikation zu erfassen und aktive Adressen in einem Kreditantragsformular darzustellen.
+Sie können ein schemabasiertes Formularfragment mehrfach in einem adaptiven Formular verwenden, um Daten für jedes Formularfragmentfeld eindeutig zu speichern. Sie können beispielsweise ein Adressformularfragment verwenden, um Adressdetails permanent für die Kommunikation zu erfassen und aktive Adressen in einem Kreditantragsformular darzustellen.
 
 ![Verwenden mehrerer Fragmente im adaptiven Formular](assets/using-multiple-fragment-af.gif)
 
@@ -179,10 +179,10 @@ Sie können über die Benutzeroberfläche von AEM Forms mehrere Vorgänge mit ad
 
 ## Wichtige Hinweise zum Arbeiten mit Fragmenten {#key-points-to-remember-when-working-with-fragments}
 
-* Stellen Sie sicher, dass der Fragmentname eindeutig ist. Wenn bereits ein anderes Fragment mit demselben Namen vorhanden ist, kann das Fragment nicht erstellt werden.
-* Wenn Sie in einem XDP-basierten adaptiven Formular ein Bedienfeld, das ein anderes XDP-Fragment enthält, als Fragment speichern, wird das daraus resultierende Fragment automatisch an das untergeordnete XDP-Fragment gebunden. Bei XSD-basierten adaptiven Formularen wird das resultierende Fragment an den Schemastamm gebunden.
-* Wenn Sie ein adaptives Formularfragment erstellen, wird ein Fragmentknoten erstellt, der dem Knoten guideContainer für ein adaptives Formular in CRXDE Lite ähnelt.
-* Ein Fragment, das ein anderes Formulardatenmodell verwendet, wird in einem adaptiven Formular nicht unterstützt. Beispielsweise wird ein XDP-basiertes Fragment in einem XSD-basierten adaptiven Formular nicht unterstützt und umgekehrt.
+* Stellen Sie sicher, dass der Fragmentname eindeutig ist. Das Fragment kann nicht erstellt werden, wenn ein vorhandenes Fragment mit demselben Namen vorhanden ist.
+* Wenn Sie in einem XDP-basierten adaptiven Formular ein Bedienfeld, das ein anderes XDP-Fragment enthält, als Fragment speichern, wird das daraus resultierende Fragment automatisch an das untergeordnete XDP-Fragment gebunden. Bei einem XSD-basierten adaptiven Formular ist das resultierende Fragment an den Schemastamm gebunden.
+* Wenn Sie ein adaptives Formularfragment erstellen, wird ein Fragmentknoten erstellt, der dem Knoten „guideContainer“ für ein adaptives Formular in CRXDE Lite ähnelt.
+* Ein Fragment, das ein anderes Formulardatenmodell verwendet, wird in einem adaptiven Formular nicht unterstützt. Zum Beispiel wird in einem XSD-basierten adaptiven Formular ein XDP-basiertes Fragment nicht unterstützt und umgekehrt.
 * Adaptive Formularfragmente sind in der AEM-Inhaltssuche auf der Registerkarte „Adaptive Formularfragmente“ verfügbar.
 * Alle Ausdrücke, Skripte oder Stile in einem eigenständigen adaptiven Formularfragment bleiben erhalten, wenn es als Verweis eingefügt oder in ein adaptives Formular eingebettet wird.
 * Adaptive Formularfragmente, die als Verweis eingefügt wurden, können nicht in einem adaptiven Formular bearbeitet werden. Sie bearbeiten stattdessen entweder das eigenständige adaptive Formularfragment oder betten das Fragment in das adaptive Formular ein.

@@ -5,10 +5,10 @@ content-type: reference
 docset: aem65
 feature: Release Information
 role: User, Admin
-source-git-commit: 4fab3f80e01c2b7c3e4ebdc4bffdedb6f5f39d11
-workflow-type: ht
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+workflow-type: tm+mt
 source-wordcount: '2334'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Siehe auch die [Versionshinweise zum neuesten Service Pack von Adobe Experience 
 
 * **[64-Bit-Version von AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)**: Die 64-Bit-Version von AEM Forms Designer bietet eine verbesserte Leistung, Skalierbarkeit und Speicherverwaltung, um die Erstellung von Formularen zu optimieren. Mit der 64-Bit-Architektur können Sie noch größere und komplexere Projekte einfach angehen, um nahtlose Design-Workflows und eine optimierte Effizienz zu gewährleisten. Verbessern Sie Ihre Formularentwurfsfähigkeiten und nutzen Sie die Zukunft von AEM Forms Designer mit dieser innovativen Version.
 
-* **[Verbinden eines adaptiven Formulars mit einer Microsoft® SharePoint-Liste](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms bietet eine vorkonfigurierte Integration zum Senden von Formulardaten direkt an eine SharePoint-Liste, sodass Sie die Listenfunktionen von SharePoint verwenden können. Sie können die Microsoft® SharePoint-Liste als Datenquelle für ein Formulardatenmodell konfigurieren und die Übermittlungsaktion „Senden mit Formulardatenmodell“ verwenden, um ein adaptives Formular mit der SharePoint-Liste zu verbinden.
+* **[Verbinden einer adaptiven Forms-Liste mit Microsoft® SharePoint-Liste](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms bietet eine vordefinierte Integration, um Formulardaten direkt an die SharePoint-Liste zu senden, sodass Sie die SharePoint-Funktionen &quot;Listen&quot;verwenden können. Sie können die Microsoft® SharePoint-Liste als Datenquelle für ein Formulardatenmodell konfigurieren und die Übermittlungsaktion „Senden mit Formulardatenmodell“ verwenden, um ein adaptives Formular mit der SharePoint-Liste zu verbinden.
 
 * **[Unterstützung zum Konfigurieren der Eigenschaften des Datensatzdokuments für adaptive Formularfragmente](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)**: Sie können jetzt Ihre adaptiven Formularfragmente und deren Felder im Editor für adaptive Formulare einfach anpassen.
 
