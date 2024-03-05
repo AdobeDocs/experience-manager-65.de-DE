@@ -2,9 +2,9 @@
 title: Versionshinweise für [!DNL Adobe Experience Manager] 6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 53bfd33a8bbb10d0ed82968a115ed316f63efecb
+source-git-commit: 5f95281130f0f2cac6d115b59b828946c2f70d33
 workflow-type: tm+mt
-source-wordcount: '3466'
+source-wordcount: '3462'
 ht-degree: 69%
 
 ---
@@ -51,7 +51,7 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
    * ECDSA-elliptische Kurve P384 mit SHA384-Digest-Algorithmus
    * ECDSA-elliptische Kurve P512 mit SHA512-Digest-Algorithmus
 * **Nahtlose Kompatibilität mit Windows 11 für Forms Designer**: AEM Forms Designer unterstützt jetzt Windows 11, wodurch eine reibungslose Installation und ein reibungsloser Betrieb gewährleistet sind. Benutzer können selbstbewusst auf Windows 11 aktualisieren, ohne Forms Designer neu installieren zu müssen oder sich um Kompatibilitätsprobleme zu sorgen und einen unterbrechungsfreien Arbeitsablauf zu gewährleisten.
-* **Verbesserte Barrierefreiheit mit der benutzerdefinierten Rolle &quot;Beschriftung&quot;in AEM Forms Designer**: AEM Forms Designer enthält jetzt eine benutzerdefinierte Barrierefreiheitsrolle namens &quot;Beschriftung&quot;, mit der Benutzer XDPs mit personalisierten Untertitelelementen erstellen können. Diese Funktion verbessert die Barrierefreiheit, da Benutzer benutzerdefinierte Beschriftungen in ihre Dokumententwürfe integrieren können, damit sie die Inklusivität und das Benutzererlebnis verbessern können.
+* **Verbesserte Barrierefreiheit mit der benutzerdefinierten Rolle &quot;Beschriftung&quot;in AEM Forms Designer**: AEM Forms Designer enthält jetzt eine benutzerdefinierte Barrierefreiheitsrolle mit der Bezeichnung &quot;Beschriftung&quot;, um XDPs mit personalisierten Untertitelelementen zu erstellen. Diese Funktion verbessert die Barrierefreiheit, da Benutzer benutzerdefinierte Beschriftungen in ihre Dokumententwürfe integrieren können, um die Inklusivität und das Benutzererlebnis zu verbessern.
 
 <!-- ### [!DNL Forms]
 
