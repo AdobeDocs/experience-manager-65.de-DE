@@ -7,10 +7,10 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1890'
-ht-degree: 94%
+source-wordcount: '1891'
+ht-degree: 92%
 
 ---
 
@@ -161,7 +161,7 @@ Das integrierte, über das [Vorgangs-Dashboard](/help/sites-administering/opera
 >
 >Es sollte nicht beides gleichzeitig ausgeführt werden, damit alte (und nicht verwendete) Datenspeicherdateien ebenfalls gesichert werden. Auf diese Weise sind die Binärdateien nach wie vor in der Sicherung vorhanden, wenn das Zurücksetzen auf eine alte Revision erforderlich sein sollte.
 
-Wenn Sie die automatische Datenspeicherbereinigung nicht mit dem wöchentlichen Wartungsfenster im Vorgangs-Dashboard ausführen möchten, kann sie mithilfe der wget- oder curl-HTTP-Clients automatisiert werden. Es folgt ein Beispiel für eine Automatisierung der Sicherung mithilfe von curl:
+Wenn Sie die automatische Datenspeicherbereinigung nicht mit dem wöchentlichen Wartungsfenster im Vorgangs-Dashboard ausführen möchten, kann sie auch mit den HTTP-Clients wget oder curl automatisiert werden. Es folgt ein Beispiel für eine Automatisierung der Sicherung mithilfe von curl:
 
 >[!CAUTION]
 >

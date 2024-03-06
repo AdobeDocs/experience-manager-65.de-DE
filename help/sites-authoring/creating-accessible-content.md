@@ -2,10 +2,10 @@
 title: Erstellen barrierefrei zugänglicher Inhalte für Adobe Experience Manager (in Übereinstimmung mit den WCAG 2.1-Richtlinien)
 description: Verwenden Sie AEM, um Web-Inhalte für Personen mit Behinderungen zugänglich und nutzbar zu machen.
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '13636'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -92,11 +92,11 @@ Es gibt verschiedene Arten von nichttextlichem Inhalt. Daher hängt der Wert der
 The [W3C draft: HTML5 Techniques for providing useful text alternatives](https://dev.w3.org/html5/alt-techniques/) has more details and examples of appropriate alternative text provision for images of different types.
 -->
 
-Bestimmte Arten von nichttextlichem Inhalt, für den Textalternativen erforderlich sind:
+Bestimmte Arten von nichttextlichen Inhalten, für die Textalternativen erforderlich sind:
 
 * Veranschaulichende Fotos: Hierbei handelt es sich um Bilder von Menschen, Objekten oder Orten. Es ist wichtig, sich über die Rolle des Fotos auf der Seite Gedanken zu machen und den Bildinhalt zu beschreiben, da die unterstützende Technologie den Elementtyp anzeigt (z. B. `graphic` oder `image`). Die Verwendung von `screenshot` oder `illustration` in den Beschreibungen im Alternativtext kann die Klarheit erhöhen, dies hängt jedoch vom Kontext ab. Konsistenz ist ein wichtiger Faktor. Eine Entscheidung sollte für ein gesamtes Authoring-Team getroffen werden und für das gesamte Anwendererlebnis gelten.
 * Symbole: Hierbei handelt es sich um kleine Piktogramme (Grafiken), die bestimmte Informationen vermitteln. Sie müssen durchgängig auf einer Seite und Site verwendet werden. Alle Instanzen des Symbols auf einer Seite oder Site sollten dieselbe kurze und knappe Textalternative haben, es sei denn, dies führt zu einer unnötigen Duplizierung von angrenzendem Text.
-* Diagramme: Normalerweise werden numerische Daten dargestellt. Eine Möglichkeit, eine Textalternative bereitzustellen, könnte also darin bestehen, eine kurze Zusammenfassung der wichtigsten Trends, die in der Grafik oder Grafik angezeigt werden, aufzunehmen. Fall nötig, können Sie eine detailliertere Beschreibung im Text im Feld **Beschreibung** auf der Registerkarte **Erweiterte Bildeigenschaften** einfügen. Außerdem könnten Sie die Quelldaten an anderer Stelle auf der Seite oder Site als Tabelle zur Verfügung stellen.
+* Diagramme und Schaubilder: Diese stellen in der Regel numerische Daten dar. Eine Option für eine Textalternative könnte daher eine kurze Zusammenfassung der wichtigsten Trends sein, die in dem Diagramm oder der Grafik dargestellt sind. Fall nötig, können Sie eine detailliertere Beschreibung im Text im Feld **Beschreibung** auf der Registerkarte **Erweiterte Bildeigenschaften** einfügen. Außerdem könnten Sie die Quelldaten an anderer Stelle auf der Seite oder Site als Tabelle zur Verfügung stellen.
 * Karten, Diagramme, Flussdiagramme: Stellen Sie bei Grafiken mit räumlichen Daten (z. B. zur Unterstützung der Beschreibung von Beziehungen zwischen Objekten oder einem Prozess) sicher, dass die Schlüsselbotschaft im Textformat bereitgestellt wird und dass diese Textinformationen in der Nähe jedes zugeordneten Datenpunkts positioniert sind. Bei Karten ist die Bereitstellung eines Volltextäquivalents wahrscheinlich nicht sinnvoll. Wenn aber eine Karte den Weg zu einem bestimmten Ort zeigen soll, kann der Alternativtext des Kartenbildes kurz *Karte von X* einblenden und dann an einer anderen Stelle auf der Seite oder im Feld **Beschreibung** auf der Registerkarte **Erweitert** der Komponente **Bild** eine Wegbeschreibung zu dem Ort bereitstellen.
 * CAPTCHAs: Ein CAPTCHA ist ein *vollständig automatisierter öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen*. Es handelt sich dabei um eine Sicherheitsprüfung, die auf Web-Seiten verwendet wird, um Menschen von böswilliger Software zu unterscheiden. Dies kann jedoch die Barrierefreiheit einschränken. Hierbei handelt es sich um Bilder, bei denen Benutzende beschreiben müssen, was sie sehen, um einen Sicherheitstest bestehen zu können. Es ist nicht möglich, eine Textalternative für so ein Bild bereitzustellen. Daher müssen Sie stattdessen alternative, nichtgrafische Lösungen in Betracht ziehen. Das W3C bietet einige Vorschläge, z. B.:
    * Logische Rätsel
@@ -281,7 +281,7 @@ Befolgen Sie die Anweisungen für [Audiobeschreibung oder Medienalternative (auf
 
 ### Anpassbar (1.3) {#adaptable}
 
-[Richtlinie 1.3 Anpassbar: Erstellen Sie Inhalte, die auf unterschiedliche Weise präsentiert werden können (z. B. einfacheres Layout), ohne Informationen oder Struktur zu verlieren.](https://www.w3.org/TR/WCAG/#adaptable)
+[Richtlinie 1.3 Anpassbar: Erstellen Sie Inhalte, die auf unterschiedliche Weise präsentiert werden können (z. B. einfacheres Layout), ohne Informationen oder Struktur zu verlieren.](https://www.w3.org/TR/WCAG/#adaptable)
 
 Diese Richtlinie deckt die Anforderungen ab, die zur Unterstützung der folgenden Personen erforderlich sind:
 
@@ -665,7 +665,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.1.2 erfüllen](https://ww
 
 ### Ausreichend Zeit (2.2) {#enough-time}
 
-[Richtlinie 2.2 Ausreichend Zeit: Geben Sie den Benutzern ausreichend Zeit, Inhalte zu lesen und zu benutzen.](https://www.w3.org/TR/WCAG/#enough-time)
+[Richtlinie 2.2 Ausreichend Zeit: Geben Sie den Benutzenden ausreichend Zeit, Inhalte zu lesen und zu benutzen.](https://www.w3.org/TR/WCAG/#enough-time)
 
 Dadurch wird sichergestellt, dass die Benutzer genügend Zeit zum Lesen und Handeln haben.
 
@@ -838,7 +838,7 @@ Stellen Sie vor allem sicher, dass der Link-Text den Zweck eines Links eindeutig
    * Text: Abendkurse im Herbst 2010 – Details.
    * Grund: Durch eine kleine Anpassung des Textes und der Position des Linkelements lässt sich der Link-Text verbessern:
 
-Links sollten auf allen Seiten konsistent formuliert sein, insbesondere für Navigationsleisten. Wenn beispielsweise ein Link zu einer bestimmten Seite **Veröffentlichungen** auf einer Seite verwenden Sie diesen Text auf anderen Seiten, um Konsistenz zu gewährleisten.
+Links sollten auf allen Seiten konsistent formuliert sein, insbesondere für Navigationsleisten. Wenn zum Beispiel ein Link zu einer bestimmten Seite auf einer Seite **Veröffentlichungen** heißt, verwenden Sie diesen Text auf anderen Seiten, um Konsistenz zu gewährleisten.
 
 Zum Zeitpunkt des Verfassens dieses Artikels gibt es einige Probleme im Zusammenhang mit der Verwendung von Titelattributen, um sicherzustellen, dass ähnliche Links, die auf einer Seite präsentiert werden, eindeutige Informationen über das Ziel liefern (z. B. verweist „Weitere Information“ oft auf eine Reihe verschiedener Ziele):
 
@@ -848,7 +848,7 @@ Zum Zeitpunkt des Verfassens dieses Artikels gibt es einige Probleme im Zusammen
 
 Das Title-Attribut kann also genutzt werden, um zusätzlichen Kontext zu einem Link bereitzustellen, Sie sollten aber diese Einschränkungen bedenken und es daher nicht als Alternative für einen geeigneten Link-Text nutzen.
 
-Wenn der Link aus einem Bild besteht, stellen Sie sicher, dass der alternative Text für das Bild das Ziel des Links beschreibt. Wenn beispielsweise ein Bild einer virtuellen Bibliothek als Link zu den Publikationen einer Person festgelegt wird, sollte der alternative Text wie folgt lauten: **Publikationen von John Smith** und nicht **Bücherregal**.
+Wenn der Link aus einem Bild besteht, stellen Sie sicher, dass der alternative Text für das Bild das Ziel des Links beschreibt. Wenn beispielsweise ein Bild einer virtuellen Bibliothek als Link zu den Publikationen einer Person festgelegt wird, sollte der alternative Text **Publikationen von Hans Mustermann** und nicht **Bücherregal** lauten.
 
 Wenn der Link-Anker alternativ Text enthält, der den Zweck des Links zusätzlich zum Bildelement beschreibt (und der Text daher neben dem Bild angezeigt wird), verwenden Sie ein leeres Alternativattribut für das Bild:
 
@@ -967,7 +967,7 @@ Mit diesem Erfolgskriterium soll sichergestellt werden, dass Text und andere spr
 
 #### Erfüllen - Sprache der Seite (3.1.1) {#how-to-meet-language-of-page}
 
-Um dieses Erfolgskriterium zu erfüllen, kann die Standardsprache einer Web-Seite über das Attribut `lang` innerhalb des Elements `<html>` am Anfang der Seite festgelegt werden. Beispiel:
+Um dieses Erfolgskriterium zu erfüllen, kann die Standardsprache einer Web-Seite über das Attribut `lang` innerhalb des Elements `<html>` am Anfang der Seite festgelegt werden. Zum Beispiel:
 
 * Wenn eine Seite z. B. in Englisch verfasst ist, sollte das Element `<html>` wie folgt angegeben werden:
   `<html lang = "en">`
@@ -1255,7 +1255,7 @@ Mit diesem Erfolgskriterium sollen Benutzer mit Behinderungen dabei unterstützt
 
 Benutzer mit Behinderungen machen möglicherweise eher Fehler. Personen mit Leseschwäche können Zahlen und Buchstaben vertauschen und Personen mit motorischen Behinderungen können versehentlich Tasten drücken. Wenn Benutzer die Möglichkeit erhalten, Aktionen rückgängig zu machen, können sie einen Fehler korrigieren, der schwerwiegende Folgen haben könnte. Durch die Möglichkeit, Informationen zu überprüfen und zu korrigieren, kann der Benutzer einen Fehler erkennen, bevor er eine Handlung mit schwerwiegenden Folgen vornimmt.
 
-Vom Benutzer steuerbare Daten sind vom Benutzer einsehbare Daten, die der Benutzer durch eine absichtliche Aktion ändern und/oder löschen kann. Beispiele für die Kontrolle solcher Daten durch den Benutzer wären die Aktualisierung der Telefonnummer und Adresse für das Benutzerkonto oder das Löschen eines Datensatzes früherer Rechnungen von einer Website. Es geht hier nicht um Dinge wie Internet-Protokolle und Überwachungsdaten von Suchmaschinen, die der Benutzer nicht direkt einsehen oder mit denen er nicht direkt interagieren kann.
+Vom Benutzer steuerbare Daten sind vom Benutzer einsehbare Daten, die der Benutzer durch eine absichtliche Aktion ändern und/oder löschen kann. Beispiele für die Kontrolle solcher Daten durch den Benutzer wären die Aktualisierung der Telefonnummer und Adresse für das Benutzerkonto oder das Löschen eines Datensatzes früherer Rechnungen von einer Website. Es bezieht sich nicht auf Dinge wie Internetprotokolle und Überwachungsdaten von Suchmaschinen, die der Benutzer nicht direkt anzeigen oder damit interagieren kann.
 
 #### Erfüllen: Fehlervermeidung (rechtliche, finanzielle, Daten) (3.3.4) {#how-to-meet-error-prevention-legal-financial-data}
 

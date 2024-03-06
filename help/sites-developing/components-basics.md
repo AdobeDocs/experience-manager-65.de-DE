@@ -7,10 +7,10 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4907'
-ht-degree: 62%
+source-wordcount: '4843'
+ht-degree: 61%
 
 ---
 
@@ -63,7 +63,7 @@ Die Grundlagen von beiden werden auf dieser Seite behandelt und wie sie erkannt 
 
 Adobe empfiehlt, den für das Markup und Rendering verantwortlichen Code von dem Code getrennt zu halten, der die Logik steuert, mit der der Komponenteninhalt ausgewählt wird.
 
-Diese Philosophie wird von [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de): eine Vorlagensprache, die gezielt darauf beschränkt ist, sicherzustellen, dass eine echte Programmiersprache zur Definition der zugrunde liegenden Geschäftslogik verwendet wird. Diese (optionale) Logik wird von HTL mit einem bestimmten Befehl aufgerufen. Dieser Mechanismus hebt den Code hervor, der für eine bestimmte Ansicht aufgerufen wird, und ermöglicht bei Bedarf eine spezifische Logik für verschiedene Ansichten derselben Komponente.
+Diese Philosophie wird von [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de): eine Vorlagensprache, die gezielt darauf beschränkt ist, sicherzustellen, dass eine echte Programmiersprache zur Definition der zugrunde liegenden Geschäftslogik verwendet wird. Diese (optionale) Logik wird von HTL mit einem bestimmten Befehl aufgerufen. Dieser Mechanismus hebt den Code hervor, der für eine bestimmte Ansicht aufgerufen wird, und lässt bei Bedarf eine spezifische Logik für unterschiedliche Ansichten derselben Komponente zu.
 
 ### HTL vs. JSP {#htl-vs-jsp}
 
@@ -114,7 +114,7 @@ Verwenden Sie die folgenden Tools, um Ihre Komponenten in die Veröffentlichungs
    * Das Absatzsystem ist ein wichtiger Teil einer Website, da es eine Liste von Absätzen verwaltet. Sie wird verwendet, um die einzelnen Komponenten zu speichern und zu strukturieren, die den tatsächlichen Inhalt enthalten.
    * Sie können Absätze im Absatzsystem erstellen, verschieben, kopieren und löschen.
    * Sie können auch die Komponenten auswählen, die in einem bestimmten Absatzsystem verwendet werden können.
-   * In einer Standardinstanz stehen diverse Absatzsysteme zur Verfügung (z. B, `parsys`, ` [responsivegrid](/help/sites-authoring/responsive-layout.md)`).
+   * In einer Standardinstanz stehen verschiedene Absatzsysteme zur Verfügung (z. B. `parsys`, ` [responsivegrid](/help/sites-authoring/responsive-layout.md)`).
 
 ## Struktur {#structure}
 
@@ -331,7 +331,7 @@ Eine Komponente ist ein Knoten des Typs `cq:Component` mit den folgenden Eigensc
   <tr>
    <td><code>cq:noDecoration</code></td>
    <td><code>Boolean</code></td>
-   <td>Bei „true“ wird die Komponente nicht mit automatisch erstellten div- und CSS-Klassen gerendert.<br /> </td>
+   <td>Wenn "true", wird die Komponente nicht mit automatisch generierten div- und css-Klassen gerendert.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:template</code></td>
@@ -544,13 +544,13 @@ Komponenten in AEM unterliegen drei verschiedenen Hierarchien:
 
 ## Bearbeitungsverhalten {#edit-behavior}
 
-In diesem Abschnitt wird beschrieben, wie Sie das Bearbeitungsverhalten einer Komponente konfigurieren. Hierzu zählen Attribute wie Aktionen, die für die Komponente verfügbar sind, Eigenschaften des integrierten Editors für die Bearbeitung und des Listeners in Zusammenhang mit Ereignissen bei der Komponente.
+In diesem Abschnitt wird beschrieben, wie Sie das Bearbeitungsverhalten einer Komponente konfigurieren. Dazu gehören Attribute wie für die Komponente verfügbare Aktionen, Eigenschaften des Editors für die Bearbeitung im Kontext und Listener, die sich auf Ereignisse in der Komponente beziehen.
 
 Die Konfiguration gilt dabei sowohl für die Touch-optimierte als auch für die klassische Benutzeroberfläche, wenn auch mit gewissen Unterschieden.
 
 Um das Bearbeitungsverhalten einer Komponente zu konfigurieren, fügen Sie einen `cq:editConfig`-Knoten des Typs `cq:EditConfig` unter dem Komponentenknoten (des Typs `cq:Component`) hinzu sowie spezifische Eigenschaften und untergeordnete Knoten. Die folgenden Funktionen und untergeordneten Knoten sind verfügbar:
 
-* [`cq:editConfig`-Knoteneigenschaften](#configuring-with-cq-editconfig-properties):
+* [`cq:editConfig` Knoteneigenschaften](#configuring-with-cq-editconfig-properties):
 
    * `cq:actions` ( `String array`): legt die Aktionen fest, die für die Komponente durchgeführt werden
    * `cq:layout` ( `String`): definiert, wie die Komponente in der klassischen Benutzeroberfläche bearbeitet wird.
@@ -602,9 +602,9 @@ Es gibt viele vorhandene Konfigurationen im Repository. Sie können einfach nach
 
 ### Komponenten-Platzhalter {#component-placeholders}
 
-Komponenten müssen immer HTML-Inhalte wiedergeben, die für den Autor sichtbar sind, auch wenn die Komponente keinen Inhalt hat. Andernfalls kann es visuell aus der Benutzeroberfläche des Editors verschwinden, sodass es technisch vorhanden, aber auf der Seite und im Editor nicht sichtbar ist. In einem solchen Fall können die Autoren die leere Komponente nicht auswählen und nicht damit interagieren.
+Komponenten müssen immer HTML-Inhalte wiedergeben, die für den Autor sichtbar sind, auch wenn die Komponente keinen Inhalt hat. Andernfalls kann es visuell aus der Benutzeroberfläche des Editors verschwinden, sodass es technisch vorhanden, aber auf der Seite und im Editor nicht sichtbar ist. In einem solchen Fall können die Autoren die leere Komponente nicht auswählen und damit interagieren.
 
-Aus diesem Grund sollten Komponenten einen Platzhalter darstellen, solange sie beim Rendern der Seite im Seiten-Editor (wenn der WCM-Modus `edit` oder `preview` ist) keine sichtbare Ausgabe erzeugen.
+Aus diesem Grund sollten Komponenten einen Platzhalter darstellen, solange sie beim Rendern der Seite im Seiteneditor (wenn der WCM-Modus `edit` oder `preview` ist) keine sichtbare Ausgabe erzeugen.
 Das typische HTML-Markup für einen Platzhalter sieht wie folgt aus:
 
 ```HTML

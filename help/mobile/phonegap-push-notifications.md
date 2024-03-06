@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3212'
+source-wordcount: '3156'
 ht-degree: 1%
 
 ---
@@ -169,7 +169,7 @@ Führen Sie die folgenden Schritte aus, um Amazon SNS für Push-Benachrichtigung
    <table>
     <tbody>
      <tr>
-     <td><p> </p> <p>{</p> <p> "Version": "2012-10-17",</p> <p> "Aussage": [</p> <p> {</p> <p> "Aktion": [</p> <p> "mobileanalytics:PutEvents",</p> <p> "cognito-sync:*",</p> <p> "SNS:CreatePlatformEndpoint",</p> <p> "SNS:Subscribe"</p> <p> ],</p> <p> "Effect": "Allow",</p> <p> "Ressource": [</p> <p> "*"</p> <p> ]</p> <p> }</p> <p> ]</p> <p>}</p> <p> </p> </td>
+     <td><p> </p> <p>{</p> <p> "Version": "2012-10-17",</p> <p> "Statement": [</p> <p> {</p> <p> "Aktion": [</p> <p> "mobileanalytics:PutEvents",</p> <p> "cognito-sync:*",</p> <p> "SNS:CreatePlatformEndpoint",</p> <p> "SNS:Subscribe"</p> <p> ],</p> <p> "Effect": "Allow",</p> <p> "Resource": [</p> <p> "*"</p> <p> ]</p> <p> }</p> <p> ]</p> <p>}</p> <p> </p> </td>
      </tr>
     </tbody>
     </table>
@@ -289,7 +289,7 @@ Gehen Sie wie folgt vor, um eine Benachrichtigung zu erstellen und zu senden.
 1. Benachrichtigung senden
 
    * Suchen Sie im Apps-Dashboard die Kachel Push-Benachrichtigungen .
-   * Wählen Sie die Benachrichtigung aus oder klicken Sie unten rechts auf die Schaltfläche Details (). . .), um die Liste der Benachrichtigungen anzuzeigen. Diese Liste gibt auch an, ob eine Benachrichtigung versandbereit oder bereits gesendet werden kann oder ob beim Versand ein Fehler aufgetreten ist.
+   * Wählen Sie die Benachrichtigung aus oder klicken Sie unten rechts auf die Schaltfläche Details (. ). .), um die Liste der Benachrichtigungen anzuzeigen. Diese Liste gibt auch an, ob eine Benachrichtigung versandbereit oder bereits gesendet werden kann oder ob beim Versand ein Fehler aufgetreten ist.
    * Aktivieren Sie das Kontrollkästchen für eine Benachrichtigung (nur) und klicken Sie auf die Schaltfläche &quot;Benachrichtigung senden&quot; oberhalb der Liste. Sie haben die Möglichkeit, die Benachrichtigung im angezeigten Dialogfeld &quot;Abbrechen&quot;oder &quot;Senden&quot;zu senden.
 
 1. Umgang mit den Ergebnissen

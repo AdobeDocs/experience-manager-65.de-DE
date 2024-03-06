@@ -7,10 +7,10 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 1%
+source-wordcount: '796'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +56,7 @@ Weitere Informationen zu Community-Benutzergruppen finden Sie unter [Verwalten v
 
    * Textkörper eingeben
 
-     Ich hatte nicht viel Erfolg, wenn ich jedes Jahr eine Kolibris aufhänge. Anscheinend kommen sie an ein oder zwei Tagen, dann ist es so. Ich ändere es einmal in der Woche ist das zu lang? Muss ich es früher ändern?
+     Ich hatte nicht viel Erfolg, wenn ich jedes Jahr einen Kolibris-Feder aufhänge. Anscheinend kommen sie an ein oder zwei Tagen, dann ist es so. Ich ändere es einmal in der Woche ist das zu lang? Muss ich es früher ändern?
 
    * Beitrag auswählen
    * Log Out auswählen

@@ -6,10 +6,10 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '2099'
-ht-degree: 94%
+source-wordcount: '2100'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
 
 ## Einführung {#introduction}
 
-Ein barrierefreies Formular ist ein Formular, das jeder verwenden kann, einschließlich Benutzer mit Behinderungen. Adaptive Forms umfasst verschiedene Funktionen, die die Benutzerfreundlichkeit für Benutzer mit unterschiedlichen Fähigkeiten verbessern. Die Integration barrierefreier Ein-/Ausgabehilfen in adaptive Formulare ermöglicht nicht nur eine größtmögliche Zielgruppe für den Inhalt, dies ist auch eine Anforderung beim Bereitstellen von Dokumenten in Regionen, in denen die Einhaltung von Standards zur Barrierefreiheit obligatorisch ist. Mit AEM Forms können Formularentwickler die Barrierefreiheitsstandards einhalten.
+Ein barrierefreies Formular ist ein Formular, das alle verwenden kann, einschließlich Benutzender mit Behinderungen. Adaptive Formulare verfügen über eine Reihe von Merkmalen und Funktionen, die die Benutzerfreundlichkeit für Benutzende mit begrenzten Fähigkeiten verbessern. Die Integration barrierefreier Ein-/Ausgabehilfen in adaptive Formulare ermöglicht nicht nur eine größtmögliche Zielgruppe für den Inhalt, dies ist auch eine Anforderung beim Bereitstellen von Dokumenten in Regionen, in denen die Einhaltung von Standards zur Barrierefreiheit obligatorisch ist. Mit AEM Forms können Formularentwickler die Barrierefreiheitsstandards einhalten.
 
 Beim Verfassen eines adaptiven Formulars müssen Autorinnen und Autoren die folgenden Punkte berücksichtigen, um barrierefreie adaptive Formulare zu erstellen:
 
@@ -50,7 +50,7 @@ Das „Ultramarine-Accessible“-Design („Ultramarinblau – Barrierefreiheit�
 
 1. Laden Sie das Designpaket herunter.
 1. Navigieren Sie in Ihrer AEM-Instanz zu **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![Navigation](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formulare]**.
-1. Auswählen **[!UICONTROL Erstellen]** > **[!UICONTROL Datei-Upload]**. Wählen Sie die Datei x Ultramarine-Accessible-Theme.zip aus und laden Sie sie hoch. Das Design wird in Ihre AEM Instanz hochgeladen.
+1. Wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Datei hochladen]**. Wählen Sie die Datei x Ultramarine-Accessible-Theme.zip aus und laden Sie sie hoch. Das Design wird in Ihre AEM Instanz hochgeladen.
 
 ## Gestalten eines barrierefreien adaptiven Formulars
 
@@ -61,8 +61,8 @@ Sie sollten sich auf vier wichtige Aspekte konzentrieren: Tastaturnavigation, Fa
 Wenden Sie das Design „Ultramarine-Accessible“ auf Ihr vorhandenes adaptives Formular an. So wenden Sie das Design an:
 
 1. Öffnen Sie Ihr adaptives Formular zum Bearbeiten.
-1. Wählen Sie eine Komponente und dann das übergeordnete Symbol aus. Wählen Sie im Kontextmenü **[!UICONTROL Container für adaptive Formulare]** und wählen Sie dann das Konfigurationssymbol aus.
-1. Wählen Sie das Thema Ultramarine-Accessible im Eigenschaftenbrowser aus und wählen Sie **[!UICONTROL Speichern]** Symbol.
+1. Wählen Sie eine Komponente aus und wählen Sie das übergeordnete Symbol. Wählen Sie im Kontextmenü **[!UICONTROL Container für adaptive Formulare]** und dann das Symbol „Konfigurieren“.
+1. Wählen Sie im Eigenschaften-Browser das Design „Ultramarine-Accessible“ aus und wählen Sie dann das Symbol **[!UICONTROL Speichern]**.
 1. Aktualisieren Sie das Browserfenster. Das Design wird auf das adaptive Formular angewendet.
 
 Nachdem Sie ein barrierefreies Design angewendet haben, führen Sie die folgenden zusätzlichen Korrekturen durch. Die Korrekturen ergänzen die Barrierefreiheitskorrekturen, die anhand des barrierefreien Designs angewandt werden:
@@ -99,11 +99,11 @@ Nachdem Sie ein barrierefreies Design angewendet haben, führen Sie die folgende
 
 Die Beschriftung oder der Titel einer Komponente gibt an, was die Formularkomponente darstellt. Der Text „Vorname“ weist Benutzende zum Beispiel darauf hin, dass sie ihren Vornamen in ein Textfeld eingeben müssen. Damit Bildschirmlesehilfen auf die Beschriftung zugreifen können, wird diese programmgesteuert mit einer Formularkomponente verknüpft. Alternativ dazu kann das Steuerelement im Formular mit zusätzlichen Barrierefreiheitsinformationen konfiguriert werden.
 
-Die Beschriftung, die von Bildschirmlesehilfen wahrgenommen wird, muss nicht unbedingt mit der visuellen Beschriftung übereinstimmen. In einigen Fällen möchten Sie den Zweck des Steuerelements möglicherweise genauer untersuchen. Für jedes Feldobjekt in einem Formular können die Barrierefreiheitsoptionen verwendet werden, um festzulegen, was die Bildschirmlesehilfe anzeigt, um das spezifische Formularfeld zu identifizieren.
+Die Beschriftung, die von Bildschirmlesehilfen wahrgenommen wird, muss nicht mit der visuellen Beschriftung übereinstimmen. In einigen Fällen möchten Sie den Zweck des Steuerelements möglicherweise genauer untersuchen. Für jedes Feldobjekt in einem Formular können die Barrierefreiheitsoptionen verwendet werden, um festzulegen, was die Bildschirmlesehilfe anzeigt, um das spezifische Formularfeld zu identifizieren.
 
 Gehen Sie wie folgt vor, um die Barrierefreiheitsoptionen zu verwenden:
 
-1. Komponente auswählen und auswählen ![cmppr](assets/cmppr.png).
+1. Wählen Sie eine Komponente aus und wählen Sie dann ![cmppr](assets/cmppr.png).
 1. Klicken Sie in der Seitenleiste auf **[!UICONTROL Ein-/Ausgabehilfe]**, um die gewünschte Barrierefreiheitsoption auszuwählen.
 
 ### Barrierefreiheitsoptionen in Formularkomponenten {#accessibility-options-in-form-components}
@@ -131,7 +131,7 @@ Bilder können bei einigen Benutzenden zu einem besseren Verständnis beitragen.
 
 Stellen Sie sicher, dass der Text das Objekt und seinen Zweck im Formular beschreibt. Eine Bildschirmlesehilfe liest diesen alternativen Text vor, wenn sie auf ein Bild stößt. Für jedes Bild muss ein alternativer Text angegeben sein.
 
-Wählen Sie eine Bildkomponente aus und wählen Sie ![cmppr](assets/cmppr.png). Geben Sie in der Seitenleiste unter „Eigenschaften“ einen Alternativtext für ein Bild ein.
+Wählen Sie eine Bildkomponente aus und wählen Sie dann ![cmppr](assets/cmppr.png). Geben Sie in der Seitenleiste unter „Eigenschaften“ einen Alternativtext für ein Bild ein.
 
 ![Alternativtext für ein Bild](assets/image-properties.png)
 
@@ -153,14 +153,14 @@ Die folgenden Tastaturbefehle sind in AEM Forms verfügbar.
 
 | Aktion | Tastaturbefehl |
 |---|---|
-| Cursor in einem Formular vorwärts bewegen | Tab |
+| Cursor in einem Formular vorwärts bewegen | Registerkarte |
 | Cursor in einem Formular rückwärts bewegen | Umsch+Tab |
 | Zum nächsten Bedienfeld wechseln | Alt+Nach-rechts-Taste |
 | Zum vorherigen Bedienfeld wechseln | Alt+Nach-links-Taste |
 | Die ausgefüllten Daten in einem Formular zurücksetzen | Alt+R |
 | Formular absenden | Alt+S |
 
-Darüber hinaus stehen verschiedene Tastaturbefehle für die Komponente **[!UICONTROL Datumsauswahl]** in adaptiven Formularen zur Verfügung. Um die Tastaturbefehle zu aktivieren, wählen Sie die **[!UICONTROL Datumsauswahl]** Komponente und wählen Sie ![Konfigurieren](assets/configure-icon.svg) , um die Eigenschaften zu öffnen. Wählen Sie im Abschnitt **[!UICONTROL Muster]** ein Anzeigemuster mithilfe der Dropdown-Listen **[!UICONTROL Typ]** und **[!UICONTROL Muster]** aus. Speichern Sie die Eigenschaften, um die Verwendung der Tastenkombinationen für die Komponente **[!UICONTROL Datumsauswahl]** zu aktivieren.
+Darüber hinaus stehen verschiedene Tastaturbefehle für die Komponente **[!UICONTROL Datumsauswahl]** in adaptiven Formularen zur Verfügung. Wählen Sie zum Aktivieren der Tastenkombinationen die Komponente **[!UICONTROL Datumsauswahl]** und dann ![Konfigurieren](assets/configure-icon.svg), um die Eigenschaften zu öffnen. Wählen Sie im Abschnitt **[!UICONTROL Muster]** ein Anzeigemuster mithilfe der Dropdown-Listen **[!UICONTROL Typ]** und **[!UICONTROL Muster]** aus. Speichern Sie die Eigenschaften, um die Verwendung der Tastenkombinationen für die Komponente **[!UICONTROL Datumsauswahl]** zu aktivieren.
 
 Für die Datumsauswahl-Komponente in adaptiven Formularen stehen die folgenden Tastaturbefehle zur Verfügung:
 
@@ -168,7 +168,7 @@ Für die Datumsauswahl-Komponente in adaptiven Formularen stehen die folgenden T
 |---|---|
 | <ul><li>Anzeigen der Optionen für die Datumsauswahl-Komponente, wenn der Fokus auf dem Kalendersymbol liegt</li><li>Ausführen des Klick-Ereignisses, wenn der Fokus auf einer Option liegt</li> | Leertaste oder Eingabetaste |
 | Ausblenden der Optionen für die Datumsauswahl-Komponente | Esc |
-| <ul><li>Vorwärtsbewegen des Cursors durch die Optionen, die in der Komponente „Datumsauswahl“ verfügbar sind</li><li>Festlegen des Fokus auf das Kalendersymbol, wenn das Datumseingabefeld aktiv ist</li> | Tab |
+| <ul><li>Vorwärtsbewegen des Cursors durch die Optionen, die in der Komponente „Datumsauswahl“ verfügbar sind</li><li>Festlegen des Fokus auf das Kalendersymbol, wenn das Datumseingabefeld aktiv ist</li> | Registerkarte |
 | Rückwärtsbewegen des Cursors durch die Optionen, die in der Komponente „Datumsauswahl“ verfügbar sind | Umsch+Tab |
 | <ul><li>Anzeigen der Optionen für die Datumsauswahl-Komponente, wenn der Fokus auf dem Eingabefeld für ein Datum liegt</li><li>Abwärtsbewegen des Cursors in dem Kalender, der in der Datumsauswahl-Komponente verfügbar ist</li> | Nach-unten-Taste |
 | Aufwärtsbewegen des Cursors in dem Kalender, der in der Datumsauswahl-Komponente verfügbar ist | Nach-oben-Taste |

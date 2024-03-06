@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1644'
-ht-degree: 90%
+source-wordcount: '1646'
+ht-degree: 91%
 
 ---
 
@@ -39,7 +39,7 @@ Weitere Informationen zu SPAs in AEM finden Sie in den folgenden Dokumenten:
 
 ## Design {#design}
 
-Die Seitenkomponente für einen SPA stellt die HTML-Elemente seiner untergeordneten Komponenten nicht über die JSP- oder HTL-Datei bereit. Dieser Vorgang wird an das SPA-Framework delegiert. Die Darstellung der untergeordneten Komponenten oder von Modellen wird als JSON-Datenstruktur von JCR abgerufen. Die SPA-Komponenten werden dann der Seite entsprechend dieser Struktur hinzugefügt. Durch dieses Verhalten wird die anfängliche Textkörperzusammensetzung der Seitenkomponenten, die nicht zu SPA gehören, unterschieden.
+Die Seitenkomponente für eine SPA stellt die HTML-Elemente ihrer untergeordneten Komponenten nicht über die JSP- oder HTL-Datei bereit. Dieser Vorgang wird an das SPA-Framework delegiert. Die Darstellung der untergeordneten Komponenten oder von Modellen wird als JSON-Datenstruktur von JCR abgerufen. Die SPA-Komponenten werden dann der Seite entsprechend dieser Struktur hinzugefügt. Durch dieses Verhalten wird die anfängliche Textkörperzusammensetzung der Seitenkomponenten, die nicht zu SPA gehören, unterschieden.
 
 ### Seitenmodellverwaltung  {#page-model-management}
 

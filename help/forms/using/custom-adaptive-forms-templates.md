@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 35b50573-0be8-469d-a1ac-f51b9aaa5fef
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '1267'
-ht-degree: 65%
+ht-degree: 66%
 
 ---
 
@@ -121,7 +121,7 @@ Die benutzerdefinierte Vorlage hat denselben Stil wie die Standardvorlage, da di
 
 1. Benennen Sie die kopierte Komponente in `enrollmentpage` um.
 
-1. **(Nur bei bereits vorhandener Inhaltsseite)** Führen Sie die folgenden Schritte (a-d) aus, wenn die Komponente `contentpage` bereits für Ihre Website vorhanden ist. Wenn die Komponente `contentpage` noch nicht für Ihre Website vorhanden ist, können Sie die Eigenschaft `resourceSuperType` so einstellen, dass sie auf die OOTB-Basisseite verweist.
+1. **(Nur bei bereits vorhandener Inhaltsseite)** Führen Sie die folgenden Schritte (a-d) aus, wenn die Komponente `contentpage` bereits für Ihre Website vorhanden ist. Wenn Sie keine vorhandene `contentpage`-Komponente für Ihre Website verwenden, können Sie die `resourceSuperType`-Eigenschaft auf die vordefinierte Basisseite verweisen.
 
    1. Setzen Sie die Eigenschaft `sling:resourceSuperType` für den Knoten `enrollmentpage` auf „mycompany/components/page/contentpage“. Die Komponente `contentpage` ist die Basisseitenkomponente Ihrer Site. Sie kann durch andere Seitenkomponenten erweitert werden. Entfernen Sie Skriptdateien unter `enrollmentpage`, außer `head.jsp`, `content.jsp` und `library.jsp`. Die Komponente `sling:resourceSuperType`, in diesem Fall `contentpage`, enthält alle diese Skripte. Kopf- und Fußzeile sowie Navigationsleiste werden aus der Komponente `contentpage` übernommen.
 

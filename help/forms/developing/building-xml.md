@@ -2,10 +2,10 @@
 title: Wie kann der Service „execute script“ aus der Workbench von AEM Forms on JEE zum Erstellen von XML-Daten verwendet werden?
 description: Verwenden des Service „execute script“ aus der Workbench von AEM Forms on JEE zum Erstellen von XML-Daten
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 93%
+source-wordcount: '983'
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,7 @@ Es gibt viele XML-Dateien, die mit AEM Forms on JEE Process Management-Workflows
 
 Bei einfachen XML-Einstellungen kann der Service `Set Value` verwendet werden. Es handelt sich dabei um einen Standard-Service von AEM Forms on JEE. Dieser Service legt den Wert eines oder mehrerer Datenelemente im Prozessdatenmodell fest. Für Szenarien mit einer einfachen bedingten „wenn, dann“-Logik kann dieser Service den Zweck erfüllen.
 
-In komplexeren Situationen ist der Service „Set Value“ jedoch nicht so effektiv. In diesen Situationen muss man sich auf einen robusteren Satz von Programmierbefehlen verlassen, wie sie beispielsweise eine Programmiersprache wie Java bietet. Die Verwendung von Java™ zum Erstellen komplexer XML-Dateien kann viel einfacher und klarer sein als das Erstellen eines XML-Dokuments aus einfachem Text im Service „Set Value“. Darüber hinaus ist es einfacher, bedingte Programmierung in Java™ einzubinden als in den Service „Set Value“.
+In komplexeren Situationen ist der Set Value-Dienst jedoch nicht so effektiv. In diesen Situationen muss man sich auf einen robusteren Satz von Programmierbefehlen verlassen, wie sie beispielsweise eine Programmiersprache wie Java bietet. Die Verwendung von Java™ zum Erstellen komplexer XML-Dateien kann viel einfacher und klarer sein als das Erstellen eines XML-Dokuments aus einfachem Text im Service „Set Value“. Darüber hinaus ist es einfacher, bedingte Programmierung in Java™ einzubinden als in den Service „Set Value“.
 
 ## Verwenden des Service „Execute Script“ in einem Prozess {#using-execute-script-service-in-process}
 

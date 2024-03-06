@@ -4,7 +4,7 @@ description: Installieren Sie AEM Forms-Dokumentendienste, um PDF-Dokumente zu e
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '5633'
 ht-degree: 95%
@@ -308,7 +308,7 @@ Sie können Benutzern, die keine Administratoren sind, die Verwendung des PDF Ge
 
 >[!NOTE]
 >
-> Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
+> Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mithilfe alternativer Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 ### (Nur Windows) Deaktivieren der Benutzerkontensteuerung (UAC) {#disable-user-account-control-uac}
 

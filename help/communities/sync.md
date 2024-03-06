@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '2471'
-ht-degree: 9%
+source-wordcount: '2403'
+ht-degree: 6%
 
 ---
 
@@ -75,7 +75,7 @@ Im Rahmen dieses Prozesses werden die neuen Seiten der Site auf allen Veröffent
 
 Standardmäßig werden in der Veröffentlichungsumgebung erstellte Benutzerdaten nicht in der Autorenumgebung und umgekehrt angezeigt.
 
-Wenn die Variable [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md) -Konsole wird verwendet, um neue Benutzer in der Veröffentlichungsumgebung hinzuzufügen. Bei der Benutzersynchronisierung werden die neuen Benutzer und deren Gruppenmitgliedschaft ggf. mit anderen Veröffentlichungsinstanzen synchronisiert. Die Benutzersynchronisierung synchronisiert auch Benutzergruppen, die über die Sicherheitskonsole erstellt wurden.
+Wenn die Variable [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md) -Konsole wird verwendet, um neue Benutzer in der Veröffentlichungsumgebung hinzuzufügen. Bei der Benutzersynchronisierung werden die neuen Benutzer und deren Gruppenmitgliedschaft ggf. mit anderen Veröffentlichungsinstanzen synchronisiert. Bei der Benutzersynchronisierung werden auch die über die Sicherheitskonsole erstellten Benutzergruppen synchronisiert.
 
 ### Benutzer postet Inhalte auf Veröffentlichungsinstanz {#user-posts-content-on-publish}
 
@@ -83,9 +83,9 @@ Bei benutzergenerierten Inhalten (UGC) wird auf die in einer Veröffentlichungsi
 
 ## Best Practices {#bestpractices}
 
-Standardmäßig ist die Benutzersynchronisierung **disabled**. Die Aktivierung der Benutzersynchronisierung beinhaltet die Änderung *vorhandener* OSGi-Konfigurationen. Aufgrund der Aktivierung der Benutzersynchronisierung sollten keine neuen Konfigurationen hinzugefügt werden.
+Standardmäßig ist die Benutzersynchronisierung **disabled**. Die Aktivierung der Benutzersynchronisierung umfasst das Ändern von *vorhandene* OSGi-Konfigurationen. Aufgrund der Aktivierung der Benutzersynchronisierung sollten keine neuen Konfigurationen hinzugefügt werden.
 
-Die Benutzersynchronisierung beruht bei der Verwaltung der Benutzerdatenverteilung auf der Authoring-Umgebung, auch wenn die Benutzerdaten nicht auf der Authoring-Instanz erstellt werden.
+Die Benutzersynchronisierung beruht bei der Verwaltung der Benutzerdatenverteilung auf der Autorenumgebung, auch wenn die Benutzerdaten nicht auf der Autoreninstanz erstellt werden.
 
 **Voraussetzungen**
 
@@ -100,7 +100,7 @@ Die Benutzersynchronisierung beruht bei der Verwaltung der Benutzerdatenverteilu
 
 Die folgenden Konfigurationen sind erforderlich, um die Benutzersynchronisierung in AEM Communities zu aktivieren. Stellen Sie sicher, dass diese Konfigurationen korrekt sind, um zu verhindern, dass die Sling-Inhaltsverteilung fehlschlägt.
 
-### Apache Sling Distribution Agent – Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory}
+### Apache Sling Distribution Agent - Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory}
 
 Diese Konfiguration ruft den Inhalt ab, der über die Publisher hinweg synchronisiert werden soll. Die Konfiguration befindet sich in der -Autoreninstanz. Der Autor muss alle vorhandenen Herausgeber verfolgen und alle Informationen synchronisieren.
 
@@ -128,7 +128,7 @@ Konfigurieren der Konfiguration von Apache Sling Sync Agents :
 
    ![sync-agent-fact](assets/sync-agent-fact.png)
 
-### Adobe Granite Distribution – Encrypted Password Transport Secret Provider {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
+### Adobe Granite Distribution - Encrypted Password Transport Secret Provider {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
 Dadurch kann der Autor den autorisierten Benutzer identifizieren, da er berechtigt ist, Benutzerdaten vom Autor zur Veröffentlichung zu synchronisieren.
 
@@ -153,7 +153,7 @@ So verbinden Sie Autoren mit Herausgebern mit autorisierten Benutzern:
 
 ![granite-paswrd-trans](assets/granite-paswrd-trans.png)
 
-### Apache Sling Distribution Agent – Queue Agents Factory {#apache-sling-distribution-agent-queue-agents-factory}
+### Apache Sling Distribution Agent - Queue Agents Factory {#apache-sling-distribution-agent-queue-agents-factory}
 
 Diese Konfiguration wird verwendet, um die Daten zu konfigurieren, die Sie über Publisher hinweg synchronisieren möchten. Wenn Daten in Pfaden erstellt/aktualisiert werden, die in **Zulässige Roots**, wird &quot;var/community/distribution/diff&quot;aktiviert und der erstellte Replikator ruft die Daten von einem Herausgeber ab und installiert sie auf anderen Herausgebern.
 
@@ -197,7 +197,7 @@ So stellen Sie die Mitgliedersynchronisierung sicher:
 
    ![diff-obs](assets/diff-obs.png)
 
-### Apache Sling Distribution Trigger – Scheduled Triggers Factory {#apache-sling-distribution-trigger-scheduled-triggers-factory}
+### Apache Sling Distribution Trigger - Scheduled Trigger Factory {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 Mit dieser Konfiguration können Sie das Abrufintervall konfigurieren (nach dem Publisher gepingt und Änderungen vom Autor abgerufen werden), um die Änderungen über Publisher hinweg zu synchronisieren.
 
@@ -217,7 +217,7 @@ So ändern Sie das Abrufintervall:
 
    ![scheduled-Trigger](assets/scheduled-trigger.png)
 
-### AEM Communities User Sync Listener {#aem-communities-user-sync-listener}
+### AEM Communities-Listener für Benutzersynchronisierung {#aem-communities-user-sync-listener}
 
 Bei Problemen in der Sling-Distribution, bei denen es eine Diskrepanz bei Abonnements gibt und die darauf folgen, überprüfen Sie, ob die folgenden Eigenschaften in **AEM Communities-Listener für Benutzersynchronisierung** -Konfigurationen festgelegt sind:
 
@@ -267,7 +267,7 @@ Auf jeder AEM Veröffentlichungsinstanz:
 
    `system`
 
-   `rep:cache` (da wir Sticky-Sitzungen verwenden, müssen wir diesen Knoten nicht mit verschiedenen Herausgebern synchronisieren.)
+   `rep:cache` (da fixierbare Sitzungen verwendet werden, müssen Sie diesen Knoten nicht mit verschiedenen Herausgebern synchronisieren).
 
    ![user-sync-listner](assets/user-sync-listner.png)
 
@@ -275,7 +275,7 @@ Auf jeder AEM Veröffentlichungsinstanz:
 
 AEM Autoreninstanz verwendet die Sling-ID, um zu ermitteln, woher die Daten kommen und an welche Herausgeber das Paket zurückgesendet werden muss (oder muss es nicht).
 
-Stellen Sie sicher, dass alle Herausgeber in einer Veröffentlichungsfarm über eine eindeutige Sling-ID verfügen. Wenn die Sling-ID für mehrere Veröffentlichungsinstanzen in einer Veröffentlichungsfarm identisch ist, schlägt die Benutzersynchronisierung fehl. Da der Autor nicht weiß, woher das Paket abgerufen werden soll und wo es installiert werden soll.
+Stellen Sie sicher, dass alle Herausgeber in einer Veröffentlichungsfarm über eine eindeutige Sling-ID verfügen. Wenn die Sling-ID für mehrere Veröffentlichungsinstanzen in einer Veröffentlichungsfarm identisch ist, schlägt die Benutzersynchronisierung fehl. Da der Autor nicht weiß, woher das Paket abgerufen werden soll und wo das Paket installiert werden soll.
 
 Um eine eindeutige Sling-ID von Herausgebern in der Veröffentlichungsfarm sicherzustellen, gilt Folgendes für jede Veröffentlichungsinstanz:
 
@@ -284,7 +284,7 @@ Um eine eindeutige Sling-ID von Herausgebern in der Veröffentlichungsfarm siche
 
    ![slingid](assets/slingid.png)
 
-   Wenn die Sling-ID einer Veröffentlichungsinstanz mit der Sling-ID einer anderen Veröffentlichungsinstanz übereinstimmt, dann:
+   Wenn die Sling-ID einer Veröffentlichungsinstanz der Sling-ID einer anderen Veröffentlichungsinstanz entspricht, gehen Sie wie folgt vor:
 
 1. Beenden Sie eine der Veröffentlichungsinstanzen mit einer übereinstimmenden Sling-ID.
 1. Im `crx-quickstart/launchpad/felix` Verzeichnis, suchen und löschen Sie die Datei namens *sling.id.file*

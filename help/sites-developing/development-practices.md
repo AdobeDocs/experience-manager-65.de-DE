@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 65b2029e-03c9-4df4-8579-2b15dbee1035
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '617'
 ht-degree: 44%
 
 ---
@@ -64,4 +64,4 @@ Pfadfinder haben eine Regel: „Hinterlass es besser, als du es vorgefunden hast
 
 ### Implementierung von YAGNI-Funktionen vermeiden {#avoid-implementing-yagni-features}
 
-YAGNI (You Aren&#39;t Gonna Need It) Features sind Dinge, die implementiert werden, wenn wir erwarten, dass wir etwas in der Zukunft brauchen, obwohl wir es jetzt nicht benötigen. Idealerweise sollte der einfachste Code implementiert werden, der heute funktioniert, und anhand konstanter Refaktorierung sichergestellt werden, dass sich die Architektur des Systems mit den Anforderungen und der Zeit weiterentwickelt. Auf diese Weise können wir uns darauf konzentrieren, was wichtig ist, und verhindern, dass Code-Aufblasen und Funktionen umgehen.
+YAGNI (You Are Not Gonna Need It) Features sind Dinge, die implementiert werden, wenn wir erwarten, dass wir etwas in der Zukunft brauchen, auch wenn wir es jetzt nicht benötigen. Idealerweise sollte der einfachste Code implementiert werden, der heute funktioniert, und anhand konstanter Refaktorierung sichergestellt werden, dass sich die Architektur des Systems mit den Anforderungen und der Zeit weiterentwickelt. Auf diese Weise können wir uns darauf konzentrieren, was wichtig ist, und verhindern, dass Code-Aufblasen und Funktionen umgehen.

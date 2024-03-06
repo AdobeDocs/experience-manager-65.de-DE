@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2887'
-ht-degree: 52%
+source-wordcount: '2888'
+ht-degree: 51%
 
 ---
 
@@ -145,7 +145,7 @@ Gehen Sie in ähnlicher Weise vor, um die Aufgaben im Workflow **Produkt-Fotosho
 In diesem Abschnitt wird beschrieben, wie das Produktinformations-Management in Ihr Creative-Projekt integriert wird.
 
 1. Navigieren Sie zu einem Produkt-Fotoshooting-Projekt und klicken Sie auf das **Arbeit hinzufügen** auf dem **Workflows** Karte.
-1. Wählen Sie die Workflow-Karte **Produkt-Fotoshooting (Commerce-Integration)** aus, um den entsprechenden Workflow zu starten **.** Wenn die Produktinformationen nicht unter `/etc/commerce` verfügbar sind, wählen Sie die Workflow-Karte **Produkt-Fotoshooting (Commerce-Integration)** aus, um den entsprechenden Workflow zu starten **.**
+1. Wählen Sie die Workflow-Karte **Produkt-Fotoshooting (Commerce-Integration)** aus, um den entsprechenden Workflow zu starten **.** Wenn die Produktinformationen nicht verfügbar sind unter `/etc/commerce`, wählen Sie die **Produkt-Fotoshooting** und starten Sie **Produkt-Fotoshooting** Arbeitsablauf.
 
    ![Workflow-Assistent](assets/chlimage_1-140a.png)
 

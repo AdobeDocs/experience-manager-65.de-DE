@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 61%
+source-wordcount: '913'
+ht-degree: 52%
 
 ---
 
@@ -73,7 +73,7 @@ Im Menü **Datei** von Brackets wählen Sie **Ordner öffnen...** und wählen Si
 
 >[!NOTE]
 >
->Wenn Sie kein eigenes Projekt mit einem content-package haben, können Sie das [HTL TodoMVC-Beispiel](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc) ausprobieren. Klicken Sie auf GitHub auf **Zip-Datei herunterladen**, extrahieren Sie die Dateien lokal und öffnen Sie wie oben beschrieben den Ordner `jcr_root` in Brackets. Führen Sie dann die folgenden Schritte aus, um die **Projekteinstellungen** einzurichten, und laden Sie schließlich das gesamte Paket in Ihre AEM-Entwicklungsinstanz hoch, indem Sie **das Content-Package exportieren**, wie weiter unten im Abschnitt „Vollständige Content-Package-Synchronisierung“ beschrieben.
+>Wenn Sie kein eigenes Projekt mit einem Inhaltspaket haben, können Sie die [HTL TodoMVC-Beispiel](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). Klicken Sie auf GitHub auf **Zip-Datei herunterladen**, extrahieren Sie die Dateien lokal und öffnen Sie wie oben beschrieben den Ordner `jcr_root` in Brackets. Führen Sie dann die folgenden Schritte aus, um die **Projekteinstellungen** einzurichten, und laden Sie schließlich das gesamte Paket in Ihre AEM-Entwicklungsinstanz hoch, indem Sie **das Content-Package exportieren**, wie weiter unten im Abschnitt „Vollständige Content-Package-Synchronisierung“ beschrieben.
 >
 >Nach diesen Schritten sollten Sie in der Lage sein, auf die URL `/content/todo.html` in Ihrer AEM-Entwicklungsinstanz zuzugreifen, und Sie können Änderungen am Code in Brackets vornehmen und sehen, wie nach einer Aktualisierung im Webbrowser die Änderungen sofort mit dem AEM-Server synchronisiert wurden.
 
@@ -83,10 +83,10 @@ Um Ihre Inhalte von und zu einer AEM Entwicklungsinstanz zu synchronisieren, mü
 
 ![chlimage_1-55](assets/chlimage_1-55a.png)
 
-Die Projekteinstellungen erlauben die Definition von Folgendem:
+In den Projekteinstellungen können Sie Folgendes definieren:
 
 1. Die Server-URL (z. B. `http://localhost:4502`)
-1. Ob Server toleriert werden sollen, die kein gültiges HTTPS-Zertifikat haben (deaktivieren Sie diese Option, sofern nicht erforderlich)
+1. Ob Server ohne gültiges HTTPS-Zertifikat toleriert werden sollen (deaktivieren Sie diese Option, falls nicht erforderlich)
 1. Der Benutzername, der zum Synchronisieren von Inhalten verwendet wird (z. B. `admin`)
 1. Das Kennwort des Benutzers (z. B. `admin`)
 
@@ -110,7 +110,7 @@ Dadurch werden nur Änderungen von Brackets mit der AEM-Instanz synchronisiert, 
 
 ### Vollständige Content-Package-Synchronisierung {#full-content-package-synchronization}
 
-Im Menü **AEM** können Sie mit den Optionen **Content-Package exportieren** oder **Content-Package importieren** das gesamte Projekt mit dem Server synchronisieren.
+Im **AEM** Menü, die **Inhaltspaket exportieren** oder **Inhaltspaket importieren** können Sie das gesamte Projekt mit dem Server synchronisieren.
 
 ![chlimage_1-57](assets/chlimage_1-57a.png)
 

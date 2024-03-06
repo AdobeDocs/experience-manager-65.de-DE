@@ -4,10 +4,10 @@ description: Verwenden Sie fiktive Benutzer und Gruppen, um AEM Forms-Aufgaben m
 contentOwner: anujkapo
 docset: aem65
 exl-id: 288d5459-bc69-4328-b6c9-4b4960bf4977
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2477'
-ht-degree: 99%
+source-wordcount: '2478'
+ht-degree: 98%
 
 ---
 
@@ -194,7 +194,7 @@ Aya beantwortet einige Fragen, um ihre Eignung zu bestätigen, indem sie ein kur
 
    >[!NOTE]
    >
-   >Wenn die Person mehr als 200.000 USD pro Jahr verdient, ist sie nicht berechtigt.
+   >Wenn der Benutzer mehr als 200.000 USD pro Jahr verdient, sind diese nicht berechtigt.
 
 1. Klicken Sie auf **Bin ich berechtigt?**.
 1. Klicken Sie auf **Jetzt anwenden**, um fortzufahren.

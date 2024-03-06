@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: a6e59334-09e2-4bb8-b445-1868035da556
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2973'
+source-wordcount: '2971'
 ht-degree: 1%
 
 ---
@@ -38,12 +38,12 @@ Einige Richtlinien zur Entwicklung von Content Sync Handlern lauten wie folgt:
 
 * Handler müssen implementieren *com.day.cq.contentsync.handler.ContentUpdateHandler* (entweder direkt oder erweitert eine Klasse, die dies tut)
 * Handler können *com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler*
-* Der Handler darf nur &quot;true&quot;melden, wenn er den ContentSync-Cache aktualisiert. Falsche Berichterstellung von &quot;true&quot;hat AEM eine Aktualisierung erstellt, wenn keine Aktualisierung stattgefunden hat.
+* Der Handler darf nur &quot;true&quot;melden, wenn er den ContentSync-Cache aktualisiert. Falsche Meldung von &quot;true&quot;hat AEM eine Aktualisierung erstellt, wenn keine Aktualisierung stattgefunden hat.
 * Handler sollte den Cache nur aktualisieren, wenn der Inhalt geändert wurde. Schreiben Sie nicht in den Cache, wenn kein Weiß erforderlich ist. Dadurch wird eine unnötige Aktualisierung erstellt.
 
 >[!NOTE]
 >
->Aktivieren *ContentSync Debug-Protokollierung* über OSGI-Logger-Konfigurationen im Paket *com.day.cq.contentsync*. Auf diese Weise können Sie verfolgen, welche Handler ausgeführt haben und ob sie den Cache aktualisiert und die Aktualisierung des Caches gemeldet haben.
+>Aktivieren *ContentSync Debug-Protokollierung* über OSGI-Logger-Konfigurationen im Paket *com.day.cq.contentsync*. Auf diese Weise können Sie verfolgen, welche Handler ausgeführt haben und ob sie den Cache aktualisiert und den Cache aktualisiert haben.
 
 ## Konfigurieren des Inhalts der Inhaltssynchronisierung {#configuring-the-content-sync-content}
 

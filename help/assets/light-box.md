@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Renditions
 exl-id: 7652663a-11ba-4a78-9a9f-221d514fe992
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
-workflow-type: ht
-source-wordcount: '249'
-ht-degree: 100%
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 72%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Lightbox ist ein spezieller Sammlungstyp, der den einfachen Zugriff auf Assets ermöglicht. Sie können schnell auf Lightbox zugreifen, um Assets hinzuzufügen oder zu löschen. Es dient als Ihre persönliche Bildergalerie.
 
-Wenn Sie [!DNL Adobe Experience Manager Assets] verwenden, wird Lightbox bei Ihrer ersten Anmeldung bei der Anwendung automatisch erstellt. Lightbox bezieht sich ausschließlich auf Ihre eigenen Anmeldungen. Andere Benutzer können nicht auf Ihren Lightbox-Ordner zugreifen.
+Wenn Sie [!DNL Adobe Experience Manager Assets] verwenden, wird Lightbox bei Ihrer ersten Anmeldung bei der Anwendung automatisch erstellt. Es gilt ausschließlich für Ihre Anmeldung. Andere Benutzer können nicht auf Ihre Lightbox zugreifen.
 
 ## Hinzufügen von Assets zu Lightbox {#adding-assets-to-lightbox}
 
@@ -31,7 +31,7 @@ Wenn Sie [!DNL Adobe Experience Manager Assets] verwenden, wird Lightbox bei Ihr
 
    >[!NOTE]
    >
-   >Obwohl Lightbox einer Sammlung ähnelt, können Sie nicht alle Aktionen ausführen, die Sie normalerweise mit Sammlungen ausführen. Sie können beispielsweise keine Einstellungen für eine Lightbox löschen, freigeben oder anzeigen. Außerdem können Sie sie nicht zu anderen Sammlungen hinzufügen. Sie können aber die Assets in einer Lightbox bearbeiten.
+   >Obwohl Lightbox einer Sammlung ähnelt, können Sie nicht alle Aktionen ausführen, die Sie normalerweise für Sammlungen ausführen. Sie können beispielsweise keine Einstellungen für eine Lightbox löschen, freigeben oder anzeigen. Darüber hinaus können Sie sie nicht zu anderen Sammlungen hinzufügen. Sie können die Assets jedoch in einer Lightbox bearbeiten.
 
 ## Entfernen von Assets aus Lightbox {#removing-assets-from-lightbox}
 

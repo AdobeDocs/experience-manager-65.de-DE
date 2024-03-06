@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1293'
-ht-degree: 83%
+source-wordcount: '1297'
+ht-degree: 89%
 
 ---
 
@@ -20,7 +20,7 @@ Dadurch entfällt die Notwendigkeit, eine benutzerdefinierte Komponente für jed
 
 ## Nutzungsszenario {#use-case}
 
-Vorlagenautoren müssen nicht nur die Funktion von Komponenten für Inhaltsautoren konfigurieren, sondern auch verschiedene alternative visuelle Varianten einer Komponente konfigurieren können.
+Vorlagenautorinnen und -autoren benötigen nicht nur die Möglichkeit, die Funktionsweise von Komponenten für Inhaltsautorinnen und -autoren zu konfigurieren, sondern müssen auch in der Lage sein, eine Reihe alternativer visueller Varianten einer Komponente zu konfigurieren.
 
 Ebenso müssen Inhaltsautorinnen und -autoren nicht nur die Möglichkeit haben, ihren Inhalt zu strukturieren und anzuordnen, sondern sie müssen auch auswählen können, wie er visuell dargestellt wird.
 
@@ -29,7 +29,7 @@ Das Stilsystem bietet eine einheitliche Lösung für die Anforderungen des Vorla
 * Vorlagenautorinnen und -autoren können in der Inhaltsrichtlinie von Komponenten Stilklassen definieren.
 * Inhaltsautoren können diese Klassen dann in einer Dropdown-Liste auswählen, wenn sie die Komponente auf einer Seite bearbeiten, um die entsprechenden Stile anzuwenden.
 
-Die Stilklasse wird dann in das Decoration-Wrapper-Element der Komponente eingefügt, damit der Komponentenentwickler nicht über die Bereitstellung seiner CSS-Regeln hinaus mit der Verarbeitung der Stile befasst sein muss.
+Die Stilklasse wird dann in das dekorative Wrapper-Element der Komponente eingefügt, sodass die Entwicklerin bzw. der Entwickler der Komponente sich nicht um die Handhabung der Stile kümmern muss, sondern lediglich die CSS-Regeln festzulegen braucht.
 
 ## Übersicht {#overview}
 
@@ -86,7 +86,7 @@ Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, gehen 
 
 ### Als Vorlagenautor {#as-a-template-author}
 
-1. Beim Bearbeiten der englischsprachigen Master-Homepage von WKND unter `http://<host>:<port>/sites.html/content/wknd/language-masters/en`die Vorlage der Seite über **Seiteninformationen > Vorlage bearbeiten**.
+1. Bei der Bearbeitung der englischsprachigen Primär-Homepage von WKND unter `http://<host>:<port>/sites.html/content/wknd/language-masters/en` können Sie die Vorlage der Seite über **Seiteninformationen > Vorlage bearbeiten** anpassen.
 
    ![Vorlage bearbeiten](assets/style-system-edit-template.png)
 
@@ -122,13 +122,13 @@ Damit eine Komponente mit dem Stilsystem von AEM verwendet werden kann und die R
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
-Wenn die Komponente konfiguriert ist, werden die von den Seitenautoren konfigurierten Stile automatisch von AEM in das Decoration-Element eingefügt, das AEM automatisch um jede bearbeitbare Komponente umschließt. Dafür ist keine weitere Aktion der Komponente erforderlich.
+Wenn die Komponente konfiguriert ist, werden die von den Seitenautoren konfigurierten Stile automatisch von AEM in das Decoration-Element eingefügt, das AEM automatisch um jede bearbeitbare Komponente umschließt. Die Komponente selbst muss nichts anderes tun, um dies zu erreichen.
 
 ### Aktivieren der Registerkarte „Stile“ im Dialogfeld „Bearbeiten“ {#enable-styles-tab-edit}
 
 Ab AEM-Version 6.5.3.0 ist jetzt eine optionale Registerkarte „Stile“ im Dialogfeld „Bearbeiten“ verfügbar. Im Gegensatz zur Registerkarte im Dialogfeld „Design“ ist die Registerkarte im Dialogfeld „Bearbeiten“ für die Funktion des Stilsystems nicht unbedingt erforderlich. Sie stellt jedoch eine optionale alternative Oberfläche dar, über die ein Inhaltsautor Stile festlegen kann.
 
-Die Registerkarte für das Bearbeitungsdialogfeld kann auf ähnliche Weise wie die Registerkarte für das Dialogfeld „Design“ eingebunden werden:
+Die Registerkarte für das Dialogfeld „Bearbeiten“ kann auf ähnliche Weise wie die Registerkarte für das Dialogfeld „Design“ eingebunden werden:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
@@ -141,7 +141,7 @@ Die Registerkarte für das Bearbeitungsdialogfeld kann auf ähnliche Weise wie d
 
 Mit der String-Array-Eigenschaft `cq:styleElements` können Entwickler auch eine Liste der zulässigen Elementnamen für Stile in der Komponente konfigurieren. In der Registerkarte „Stile“ für die Richtlinie im Dialogfeld „Design“ können Vorlagenautorinnen und -autoren außerdem Elementnamen auswählen, die für die einzelnen Stile festgelegt werden sollen. Dadurch wird der Elementname des Wrapper-Elements definiert.
 
-Diese Eigenschaft wird auf dem Knoten `cq:Component` festgelegt. Beispiel:
+Diese Eigenschaft wird auf dem Knoten `cq:Component` festgelegt. Zum Beispiel:
 
 * `/apps/<yoursite>/components/content/list@cq:styleElements=[div,section,span]`
 
@@ -156,4 +156,4 @@ Diese Eigenschaft wird auf dem Knoten `cq:Component` festgelegt. Beispiel:
 
 Diese Möglichkeit, Stilnamen zu definieren, ist für sehr allgemeine Komponenten wie den Layout-Container oder die Inhaltsfragment-Komponente nützlich, um ihnen eine zusätzliche Bedeutung zu verleihen.
 
-So kann beispielsweise einem Layout-Container Semantik-Elemente wie `<main>`, `<aside>`, `<nav>`usw.
+Zum Beispiel können einem Layout-Container dadurch semantische Elemente wie `<main>`, `<aside>`, `<nav>` usw. zugewiesen werden.

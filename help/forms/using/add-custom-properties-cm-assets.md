@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Correspondence Management
 exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4431'
-ht-degree: 97%
+source-wordcount: '4433'
+ht-degree: 95%
 
 ---
 
@@ -516,7 +516,7 @@ Um eine Eigenschaft einem Assettyp hinzuzufügen, führen Sie die folgenden Schr
 
 ### Zeigen Sie benutzerdefinierte Eigenschaften auf der Seite „Asset-Erstellung“ an {#display-custom-properties-on-the-asset-creation-page}
 
-Standardmäßig sind die benutzerdefinierten Eigenschaften, die neuen Registerkarten hinzugefügt werden, auf der Seite „Asset-Erstellung“ sichtbar, da diese Seite kein Registerkartenlayout hat. Um die benutzerdefinierten Eigenschaften auf der Seite „Asset-Erstellung“ zusammen mit anderen Eigenschaften anzuzeigen, müssen Sie die folgenden Schritte ausführen:
+Standardmäßig sind die benutzerdefinierten Eigenschaften, die neuen Registerkarten hinzugefügt werden, nur auf der Eigenschaftenseite sichtbar und nicht auf der Seite zur Asset-Erstellung, da die Seite zur Asset-Erstellung kein Registerkartenlayout aufweist. Um die benutzerdefinierten Eigenschaften auf der Seite „Asset-Erstellung“ zusammen mit anderen Eigenschaften anzuzeigen, müssen Sie die folgenden Schritte ausführen:
 
 1. Klicken Sie mit der rechten Maustaste auf den Elementordner an folgendem Speicherort und wählen Sie **Überlagerungsknoten**:
 
@@ -757,7 +757,7 @@ Wenn Sie die Eigenschaft „sling:orderBefore“ hinzufügen, um die Spalte für
 
 ## Aktivieren der Suche nach benutzerdefinierten Eigenschaften {#enable-search-for-custom-properties}
 
-Standardmäßig schließt die Volltextsuche keine benutzerdefinierten Eigenschaften ein, die Sie mit CRX/DE zur Benutzeroberfläche hinzufügen.
+Standardmäßig enthält die Volltextsuche keine benutzerdefinierten Eigenschaften, die Sie der Benutzeroberfläche mit CRX/DE hinzufügen.
 
 Um die benutzerdefinierten Eigenschaften in die Suche einzubeziehen, müssen Sie die Indexerstellung von benutzerdefinierten Eigenschaften zulassen.
 

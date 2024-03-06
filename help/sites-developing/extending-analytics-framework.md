@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1609'
-ht-degree: 43%
+ht-degree: 42%
 
 ---
 
@@ -59,7 +59,7 @@ Wenn Sie benutzerdefinierten JavaScript-Code verwenden, um das Framework anzupas
 
 ## Konfigurieren von Adobe Analytics-Eigenschaften {#configuring-adobe-analytics-properties}
 
-Es gibt mehrere vordefinierte Variablen in Adobe Analytics, die in einem Framework konfiguriert werden können. Die Variablen **charset**, **cookieLifetime**, **currencyCode** und **trackInlineStats** sind standardmäßig in der Liste **Allgemeine Analytics-Einstellungen** enthalten.
+Es gibt mehrere vordefinierte Variablen in Adobe Analytics, die in einem Framework konfiguriert werden können. Die **charset**, **cookieLifetime**, **currencyCode**, und **trackInlineStats** -Variablen sind in **Allgemeine Analytics-Einstellungen** standardmäßig auflisten.
 
 ![aa-22](assets/aa-22.png)
 
@@ -105,7 +105,7 @@ Mit dem folgenden Verfahren können Sie Variablen zur Liste hinzufügen:
 
 >[!CAUTION]
 >
->Einige der Variablen in dieser Liste sind **mandatory** , damit Adobe Analytics-Aufrufe ordnungsgemäß funktionieren (z. B. **currencyCode**, **charSet**)
+>Einige der Variablen in dieser Liste sind **mandatory** , damit Adobe Analytics-Aufrufe ordnungsgemäß funktionieren (z. B. **currencyCode**, **charSet**).
 >
 >Selbst wenn diese Variablen vom Framework selbst entfernt werden, werden sie dennoch bei einem Adobe Analytics-Aufruf mit dem Standardwert angehängt.
 

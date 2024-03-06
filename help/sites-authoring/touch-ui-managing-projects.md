@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '965'
 ht-degree: 80%
 
 ---
@@ -24,7 +24,7 @@ Unter Verwendung der Konsole können Sie ein Projekt erstellen, Ressourcen mit I
 
 ## Zugriffsanforderungen {#access-requirements}
 
-„Projekte“ ist eine standardmäßige AEM-Funktion und erfordert keine zusätzliche Einrichtung.
+Erstellt eine standardmäßige AEM und erfordert keine zusätzliche Einrichtung.
 
 Damit Benutzer in „Projekte“ andere Benutzer/Gruppen sehen können, während sie mit Projektfunktionen wie Erstellen von Projekten, Erstellen von Aufgaben/Workflows, Anzeigen und Verwalten des Teams arbeiten, benötigen sie Lesezugriff auf `/home/users` und `/home/groups`.
 
@@ -39,7 +39,7 @@ Führen Sie diese Schritte aus, um ein Projekt zu erstellen.
 
    ![Assistent zur Projekterstellung](assets/create-project-wizard.png)
 
-1. Definieren Sie die **Titel** und **Beschreibung** und fügen Sie eine **Miniatur** Bild, falls erforderlich. Hier können Sie auch Benutzer und deren Gruppenzugehörigkeit hinzufügen oder löschen.
+1. Definieren Sie den **Titel** und die **Beschreibung** und fügen Sie eine **Miniaturansicht** hinzu, falls erforderlich. Hier können Sie auch Benutzer und deren Gruppenzugehörigkeit hinzufügen oder löschen.
 
    ![Schritt „Eigenschaften“ des Assistenten](assets/create-project-wizard-properties.png)
 

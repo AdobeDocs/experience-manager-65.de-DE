@@ -2,7 +2,7 @@
 title: Erfahren Sie, wie Sie Ihre Inhalte modellieren
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie Ihre Inhalte für die AEM Headless-Bereitstellung mithilfe der Inhaltsmodellierung mit Inhaltsfragmentmodellen und Inhaltsfragmenten modellieren.
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
-source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1795'
 ht-degree: 95%
@@ -45,13 +45,13 @@ Dieser Artikel baut auf diesen Grundlagen auf, sodass Sie verstehen, wie Sie Ihr
 
 *Die Welt da draußen ist groß und schlecht*.
 
-Vielleicht, aber vielleicht auch nicht. Es ist sicherlich eine große ***kompliziert*** Welt da draußen. Mit der Datenmodellierung wird eine vereinfachte Darstellung eines sehr (sehr) kleinen Unterabschnitts unter Verwendung der spezifischen Informationen definiert, die für einen bestimmten Zweck benötigt werden.
+Vielleicht, aber vielleicht auch nicht. Es ist sicherlich eine überwältigende Mehrheit ***kompliziert*** Welt da draußen. Mit der Datenmodellierung wird eine vereinfachte Darstellung eines sehr (sehr) kleinen Unterabschnitts unter Verwendung der spezifischen Informationen definiert, die für einen bestimmten Zweck benötigt werden.
 
 >[!NOTE]
 >
 >Da AEM Inhalte behandelt, wird die Datenmodellierung hier als Inhaltsmodellierung bezeichnet.
 
-Beispiel:
+Zum Beispiel:
 
 Es gibt viele Schulen, aber alle haben verschiedene Gemeinsamkeiten:
 
@@ -206,7 +206,7 @@ Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglich
 
 ### Erstellen von Inhaltsfragmentmodellen {#creating-content-fragment-models}
 
-Zunächst müssen Sie Inhaltsfragmentmodelle für Ihre Site aktivieren. Diese Aktivierung erfolgt im Konfigurationsbrowser unter Tools > Allgemein > Konfigurationsbrowser. Sie können entweder den globalen Eintrag konfigurieren oder eine Konfiguration erstellen. Beispiel:
+Zunächst müssen Sie Inhaltsfragmentmodelle für Ihre Site aktivieren. Diese Aktivierung erfolgt im Konfigurationsbrowser unter Tools > Allgemein > Konfigurationsbrowser. Sie können entweder den globalen Eintrag konfigurieren oder eine Konfiguration erstellen. Zum Beispiel:
 
 ![Konfiguration definieren](assets/cfm-configuration.png)
 
@@ -214,7 +214,7 @@ Zunächst müssen Sie Inhaltsfragmentmodelle für Ihre Site aktivieren. Diese Ak
 >
 >Siehe „Zusätzliche Ressourcen – Inhaltsfragmente im Konfigurations-Browser“
 
-Anschließend können die Inhaltsfragmentmodelle erstellt und die Struktur definiert werden. Dies kann unter Tools > Assets > Inhaltsfragmentmodelle erfolgen. Beispiel:
+Anschließend können die Inhaltsfragmentmodelle erstellt und die Struktur definiert werden. Dies kann unter Tools > Assets > Inhaltsfragmentmodelle erfolgen. Zum Beispiel:
 
 ![Inhaltsfragmentmodell](assets/cfm-model.png)
 
@@ -228,7 +228,7 @@ Inhaltsfragmente basieren immer auf einem Inhaltsfragmentmodell. Das Modell stel
 
 ### Auswählen des entsprechenden Modells {#select-model}
 
-Der erste Schritt zur tatsächlichen Erstellung Ihrer Inhalte besteht darin, ein Inhaltsfragment zu erstellen. Dazu verwenden Sie Erstellen > Inhaltsfragment im erforderlichen Ordner unter Assets > Dateien . Der Assistent führt Sie durch die Schritte.
+Der erste Schritt zur tatsächlichen Erstellung Ihrer Inhalte besteht darin, ein Inhaltsfragment zu erstellen. Dies geschieht über „Erstellen“ > „Inhaltsfragment“ unter „Assets“ > „Dateien“ im erforderlichen Ordner. Der Assistent führt Sie durch die Schritte.
 
 Ein Inhaltsfragment basiert auf einem bestimmten Inhaltsfragmentmodell, das Sie als ersten Schritt des Erstellungsprozesses auswählen.
 

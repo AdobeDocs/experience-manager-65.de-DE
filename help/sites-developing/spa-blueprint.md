@@ -6,10 +6,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 94%
+source-wordcount: '2043'
+ht-degree: 96%
 
 ---
 
@@ -71,7 +71,7 @@ Das restliche Dokument beschreibt die Anforderungen dieser zwischengelagerten Fr
 
 Die Inhaltsstruktur der Seite wird in AEM gespeichert. Das Modell der Seite wird verwendet, um SPA-Komponenten zuzuordnen und zu instanziieren. Die SPA-Entwickler erstellen SPA-Komponenten, die sie den AEM-Komponenten zuordnen. Dazu verwenden sie den Ressourcentyp (oder Pfad zur AEM-Komponente) als eindeutigen Schlüssel.
 
-Die SPA-Komponenten müssen mit dem Seitenmodell synchron sein und bei Änderungen des Inhalts entsprechend aktualisiert werden. Ein Muster, das dynamische Komponenten verwendet, muss verwendet werden, um Komponenten nach der bereitgestellten Seitenmodellstruktur dynamisch zu instanziieren.
+Die SPA-Komponenten müssen mit dem Seitenmodell synchron sein und bei Änderungen des Inhalts entsprechend aktualisiert werden. Sie müssen ein Muster verwenden, das dynamische Komponenten nutzt, um Komponenten entsprechend der vorgegebenen Seitenmodellstruktur spontan zu instanziieren.
 
 ### Meta-Felder {#meta-fields}
 
@@ -82,7 +82,7 @@ Das Seitenmodell nutzt den JSON Model Exporter, der wiederum auf der [Sling Mod
 * `:hierarchyType`: Hierarchischer Typ einer Ressource. Der `PageModelManager` unterstützt derzeit den Seitentyp
 
 * `:items`: Untergeordnete Inhaltsressourcen der aktuellen Ressource (verschachtelte Struktur, nur in Containern vorhanden)
-* `:itemsOrder`: Sortierte Liste der untergeordneten Elemente. Das JSON-Zuordnungsobjekt garantiert die Reihenfolge seiner Felder nicht. Mit dem Zuordnungsobjekt und dem aktuellen Array hat der Nutzer der API die Vorteile beider Strukturen.
+* `:itemsOrder`: Sortierte Liste der untergeordneten Elemente. Das JSON-Zuordnungsobjekt bietet keine Garantie für die Reihenfolge seiner Felder. Mit dem Zuordnungsobjekt und dem aktuellen Array hat der Nutzer der API die Vorteile beider Strukturen.
 * `:path`: Inhaltspfad eines Elements (vorhanden bei Elementen, die eine Seite darstellen)
 
 Siehe auch [Erste Schritte mit AEM Content Services](https://helpx.adobe.com/de/experience-manager/kt/sites/using/content-services-tutorial-use.html).
@@ -154,7 +154,7 @@ Die `Page`-Komponente erweitert die `Container`-Komponente. Ein Container ist ei
 
 ### Responsives Raster {#responsive-grid}
 
-Die Komponente „Responsives Raster“ ist ein Container. Sie enthält eine bestimmte Variante des Modellanbieters, die die zugehörigen Spalten darstellt. Das responsive Raster und seine Spalten sind dafür verantwortlich, das äußere HTML-Element der Projektkomponente mit den spezifischen Klassennamen zu dekorieren, die im Modell enthalten sind.
+Die Komponente „Responsives Raster“ ist ein Container. Sie enthält eine bestimmte Variante des Modellanbieters, die die entsprechenden Spalten darstellt. Das responsive Raster und seine Spalten sind dafür verantwortlich, das äußere HTML-Element der Projektkomponente mit den spezifischen Klassennamen zu dekorieren, die im Modell enthalten sind.
 
 Die Komponente „Responsives Raster“ sollte vorab ihrem AEM-Gegenstück zugeordnet werden, da die Komponente komplex ist und selten angepasst wird.
 

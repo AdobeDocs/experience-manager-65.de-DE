@@ -2,9 +2,9 @@
 title: Foundation-Komponenten
 description: Informationen zu Foundation-Komponenten in Adobe Experience Manager 6.5.
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6872'
+source-wordcount: '6873'
 ht-degree: 98%
 
 ---
@@ -178,7 +178,7 @@ Die Zeit in Millisekunden für den Übergang zwischen zwei Folien.
 
    * **Erstellen einer Liste mittels**
 Es gibt verschiedene Möglichkeiten, eine Seitenliste zu erstellen: untergeordnete Seiten, feste Liste, Suche oder erweiterte Suche (alle unten beschrieben).
-Unabhängig von der gewählten Methode sollte jeder Seite, die Sie in Ihre Liste aufnehmen, bereits ein Bild zugeordnet sein. Dieses Bild wird im Karussell angezeigt. Wenn unter den Seiteneigenschaften dieser Seite kein Bild für eine bestimmte Seite vorhanden ist, sollten Sie ein Bild mit der Seite verknüpfen, bevor Sie beginnen. Andernfalls wird im Karussell eine größtenteils leere Seite angezeigt. Weitere Informationen finden Sie unter [Bearbeiten der Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md).
+Unabhängig von der gewählten Methode sollte jeder Seite, die Sie in Ihre Liste aufnehmen, bereits ein Bild zugeordnet sein. Dieses Bild wird im Karussell angezeigt. Wenn unter den Seiteneigenschaften dieser Seite kein Bild für eine bestimmte Seite vorhanden ist, sollten Sie ein Bild mit der Seite verknüpfen, bevor Sie beginnen. Andernfalls wird im Karussell eine meist leere Seite angezeigt. Weitere Informationen finden Sie unter [Bearbeiten der Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md).
 Je nach ausgewähltem Element wird ein neues Panel angezeigt:
 
       * **Optionen für untergeordnete Seiten**

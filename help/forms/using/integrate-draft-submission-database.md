@@ -5,10 +5,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1506'
-ht-degree: 49%
+source-wordcount: '1502'
+ht-degree: 51%
 
 ---
 
@@ -230,7 +230,7 @@ unter https://[*host*]:[*port*]/system/console/configMgr.
    `key` varchar(255) NOT NULL,
    `id` varchar(60) NOT NULL,
    PRIMARY KEY (`id`,`key`),
-   CONSTRAINT ‘additionalmetadatatable_fk’ FOREIGN KEY (`id`) REFERENCES `metadata` (`id`) ON DELETE CASCADE
+   CONSTRAINT 'additionalmetadatatable_fk' FOREIGN KEY (`id`) REFERENCES `metadata` (`id`) ON DELETE CASCADE
    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
@@ -312,7 +312,7 @@ Führen Sie die folgenden Schritte auf allen Autoren- und Veröffentlichungsinst
 
 >[!NOTE]
 >
-> Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
+> Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mithilfe alternativer Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 ## Beispielcode für Formularportaldaten und Metadatendienst {#sample-code-for-forms-portal-data-and-metadata-service}
 
@@ -397,7 +397,7 @@ Führen Sie die folgenden Schritte aus, um [eine Client-Bibliothek](/help/sites-
 
    >[!NOTE]
    >
-   >Das Skript ist für eine sofort einsetzbare (OOTB) Anlagen-Widgetkomponente. Wenn Sie das OOTB-Anhang-Widget angepasst haben, ändern Sie das obige Skript, um die entsprechenden Änderungen zu übernehmen.
+   >Das Skript ist für die vordefinierte Anhang-Widget-Komponente bestimmt. Wenn Sie das vordefinierte Anhang-Widget angepasst haben, ändern Sie das obige Skript, um die entsprechenden Änderungen zu übernehmen.
 
 1. Fügen Sie dem in Schritt 2 erstellten Ordner die folgende Eigenschaft hinzu und klicken Sie auf **[!UICONTROL Alle speichern]**.
 

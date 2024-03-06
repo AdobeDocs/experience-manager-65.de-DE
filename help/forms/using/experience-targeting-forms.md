@@ -5,10 +5,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 exl-id: fdc91054-3f7e-4cbf-bdfa-7d7a621747f1
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 65%
+source-wordcount: '840'
+ht-degree: 64%
 
 ---
 
@@ -51,7 +51,7 @@ Ihre Marke wird jetzt auf der Seite „Aktivitäten“ aufgeführt. 
 
    >[!NOTE]
    >
-   >Sie können folgenden Fehler ignorieren: „Ihre Aktivität wurde gespeichert, aber nicht mit Target synchronisiert. Grund: Das folgende Erlebnis enthält keine Angebote“, wenn er beim Speichern der Aktivität auftritt.
+   >Sie können den Fehler &quot;Ihre Aktivität wurde gespeichert, aber nicht mit Target synchronisiert&quot;ignorieren. Grund: Das folgende Erlebnis enthält keine Angebote“, wenn er beim Speichern der Aktivität auftritt.
 
 1. Um Target zu aktivieren, bearbeiten Sie die.jsp-Datei, wobei Sie die Client-Bibliotheken aufnehmen, die von Ihrer Vorlage für adaptive Formulare verwendet werden.
 
@@ -74,7 +74,7 @@ Ihre Marke wird jetzt auf der Seite „Aktivitäten“ aufgeführt. 
    Alternativ werden vier Schaltflächen angezeigt, wenn Sie den Mauszeiger über das Symbol für das Formular oder die interaktive Kommunikation bewegen, ohne es auszuwählen. Sie können die **Bearbeiten** angezeigt, um das Formular im Bearbeitungsmodus zu öffnen.
 
 1. Wählen Sie in der Seitensymbolleiste **Seiteninformationen** ![theme-options](assets/theme-options.png) > **Eigenschaften öffnen**.
-1. Wählen Sie auf der Registerkarte „Allgemein“ eine Konfiguration für das Feld **Adobe Target**. Klicken Sie auf **Speichern und schließen**.
+1. Wählen Sie auf der Registerkarte „Allgemein“ eine Konfiguration für das Feld **Adobe Target**. Wählen Sie **Speichern und schließen**.
 
 ## Anwenden der erstellten Aktivität auf ein Bild eines adaptiven Formulars oder einer interaktiven Kommunikation {#applying-created-activity-to-an-adaptive-form-image-or-an-interactive-communication-image}
 

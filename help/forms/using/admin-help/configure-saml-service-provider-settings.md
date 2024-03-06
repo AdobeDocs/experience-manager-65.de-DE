@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
-source-git-commit: 4289c68feb51842b5649f7cff73c5c4bc38add6c
+source-git-commit: abd3fbb5abb339d5b019fd2d7cf325404fb079e8
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 18%
@@ -17,7 +17,7 @@ ht-degree: 18%
 
 Security Assertion Markup Language (SAML) ist eine der Optionen, die Sie beim Konfigurieren der Autorisierung für eine Unternehmens- oder Hybrid-Domain auswählen können. SAML wird hauptsächlich zum Unterstützen der einmaligen Anmeldung in mehreren Domains verwendet. Wenn SAML als Ihr Authentifizierungsanbieter konfiguriert ist, melden sich Benutzer an und authentifizieren sich über einen angegebenen Identitäts-Provider (IDP) AEM Formularen.
 
-Eine Erläuterung von SAML finden Sie unter [Security Assertion Markup Language (SAML) V2.0 - Technische Übersicht](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
+Eine Erläuterung von SAML finden Sie unter [Security Assertion Markup Language (SAML) V2.0 - Technische Übersicht](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 1. Klicken Sie in Administration Console auf &quot;Einstellungen&quot;> &quot;User Management&quot;> &quot;Konfiguration&quot;> &quot;SAML-Dienstanbietereinstellungen&quot;.
 1. Geben Sie in das Feld &quot;Service Provider Entity ID&quot;eine eindeutige ID ein, die als Kennung für die Implementierung des AEM Forms-Dienstanbieters verwendet werden soll. Sie müssen diese eindeutige ID auch beim Konfigurieren Ihres Identitätsanbieters (IDP) (z. B. `um.lc.com` angeben.) Sie können außerdem die URL verwenden, die zum Zugreifen auf AEM Forms verwendet wird (z. B. `https://AEMformsserver`).

@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2669'
-ht-degree: 46%
+source-wordcount: '2635'
+ht-degree: 44%
 
 ---
 
 # Beitragen zu AEM{#contributing-to-aem}
 
-## Entwicklungsmethode {#development-methodology}
+## Entwicklungsmethodik {#development-methodology}
 
 AEM werden nach bewährten Methoden entwickelt, die in großen Open-Source-Projekten häufig eingesetzt werden. Viele Kernelemente in AEM Technologie-Stack werden tatsächlich als aktive Open-Source-Projekte wie Sling und Jackrabbit gepflegt, die zur Apache Software Foundation beigetragen haben. Ein wichtiger Aspekt dieses Geistes, der in AEM vorhanden ist, ist, dass Sie dazu ermutigt werden, die verfügbaren Mailinglisten und Online-Foren für direkte Interaktionen mit dem Entwicklungsteam zu nutzen.
 
@@ -85,17 +85,17 @@ Wiederverwendung von Code: Unsere OSGi-basierte Produktarchitektur und die Philo
 
 Lose Kopplung: Wir bevorzugen lose gekoppelte Interaktionen gegenüber engen Abhängigkeiten und „unerwünschter Intimität“. Eine lockere Kopplung ermöglicht auch eine stärkere Wiederverwendung von Code.
 
-### Das Demo nicht unterbrechen {#don-t-break-the-demo}
+### Demo nicht unterbrechen {#don-t-break-the-demo}
 
 Machen Sie sich mit Demo-Skripten und Produktfunktionen vertraut, die am häufigsten in Demos angezeigt werden. Beachten Sie, dass nichts, was Sie tun, jemals die Funktion &quot;Demo-Skript&quot;beschädigen sollte. Das Kernprodukt sollte auch während der Entwicklung immer demo-fähig sein.
 
 ### Design für Zuverlässigkeit {#design-for-reliability}
 
-Wir bemühen uns, Features in Fail-Soft-Art zu entwerfen und zu kodieren, sodass (zum Beispiel) ein Problem mit einem einzelnen DOM-Element nicht dazu führt, dass eine ganze Seite nicht gerendert wird. Mit anderen Worten: Machen Sie Dinge, die tödlich sein sollten, tödlich. Macht alles andere überlebensfähig. Machen Sie das Produkt &quot;verzeihend&quot;.
+Wir bemühen uns, Funktionen auf Fail-Soft-Weise zu entwerfen und zu kodieren, sodass (z. B.) ein Problem mit einem einzelnen DOM-Element nicht dazu führt, dass eine ganze Seite nicht gerendert wird. Mit anderen Worten: Machen Sie Dinge, die tödlich sein sollten, tödlich. Macht alles andere überlebensfähig. Machen Sie das Produkt &quot;verzeihend&quot;.
 
 ### Abnorm ist der neue Normalzustand {#abnormal-is-the-new-normal}
 
-Verlassen Sie sich nicht auf Shutdown-Hooks, sorgen Sie für eine Bereinigung beim Start. Abnormale Beendigung ist normale Beendigung.
+Abhängig von den Shutdown-Hooks sollten Sie beim Start eine Bereinigung durchführen. Abnormale Beendigung ist normale Beendigung.
 
 `shutdown == kill -9 == power outage`
 

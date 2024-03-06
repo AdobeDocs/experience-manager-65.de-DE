@@ -6,18 +6,18 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '1798'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
 # Responsives Layout{#responsive-layout}
 
-AEM ermöglicht Ihnen, mithilfe der Komponente **Layout-Container** ein responsives Layout für Ihre Seiten zu erstellen.
+AEM ermöglicht das Erstellen eines responsiven Layouts für Ihre Seiten mithilfe der Komponente **Layout-Container**.
 
-Dies umfasst ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können. Dieses Raster kann das Layout entsprechend der Geräte-/Fenstergröße und dem Format neu anordnen. Die Komponente wird zusammen mit dem [**Layout**-Modus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode) verwendet, in dem Sie Ihr responsives Layout geräteabhängig erstellen und bearbeiten können.
+Dies bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können. Dieses Raster kann das Layout entsprechend der Geräte-/Fenstergröße und dem Format neu anordnen. Die Komponente wird zusammen mit dem [**Layout-Modus**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode) verwendet, in dem Sie Ihr responsives Layout geräteabhängig erstellen und bearbeiten können.
 
 Der Layout-Container:
 
@@ -34,7 +34,7 @@ Der Benutzer bzw. die Benutzerin kann dann sehen, wie der Inhalt mithilfe des Em
 >
 >Auch wenn die Layout-Container-Komponente in der klassischen Benutzeroberfläche verfügbar ist, steht der vollständige Funktionsumfang nur in der Touch-optimierten Benutzeroberfläche zur Verfügung.
 
-Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination von Mechanismen ermöglicht:
+Das responsive Layout für Ihre Seiten wird von AEM durch eine Kombination von Mechanismen ermöglicht:
 
 * [**Layout-Container-Komponente**](#adding-a-layout-container-and-its-content-edit-mode)
 
@@ -59,7 +59,7 @@ Je nach Projekt kann der Layout-Container als standardmäßiges Absatzsystem fü
 
 >[!NOTE]
 >
->Adobe bietet [GitHub-Dokumentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) des responsiven Layouts als Referenz, der Frontend-Entwicklern zur Verfügung gestellt werden kann, damit sie das AEM Raster außerhalb von AEM verwenden können, z. B. bei der Erstellung statischer HTML-Modelle für eine zukünftige AEM Site.
+>Adobe stellt eine [GitHub-Dokumentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) zum responsiven Layout als Referenz bereit. Diese kann Frontend-Entwicklerinnen und -entwicklern zur Verfügung gestellt werden, damit sie das AEM-Raster außerhalb von AEM verwenden können, um beispielsweise statische HTML-Modelle für künftige AEM Sites zu erstellen.
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ Je nach Projekt kann der Layout-Container als standardmäßiges Absatzsystem fü
 
 Wenn Sie den Inhalt Ihrer Website erstellen, möchten Sie sicherstellen, dass Ihr Inhalt auf dem für die Anzeige verwendeten Gerät angemessen angezeigt wird.
 
-Mit AEM können Sie Layouts abhängig von der Breite des Geräts definieren:
+AEM ermöglicht die Definition von Layouts, die von der Breite des Geräts abhängig sind:
 
 * Mit dem Emulator können Sie diese Layouts auf einer Reihe von Geräten emulieren. Abgesehen vom Gerätetyp kann sich auch die durch die Option **Gerät drehen** ausgewählte Ausrichtung auf den ausgewählten Breakpoint auswirken, da sich die Breite ändert.
 * Breakpoints sind Punkte, die die Layout-Definitionen trennen.
@@ -93,7 +93,7 @@ Wenn Sie z. B. das Gerät **iPhone 6 Plus** für die Emulation und das Layout a
 
 ## Auswahl eines zu emulierenden Geräts {#selecting-a-device-to-emulate}
 
-1. Öffnen Sie die gewünschte Seite zur Bearbeitung. Beispiel:
+1. Öffnen Sie die gewünschte Seite zur Bearbeitung. Zum Beispiel:
 
    `http://localhost:4502/editor.html/content/we-retail/us/en/experience.html`
 
@@ -135,7 +135,7 @@ Wenn Sie z. B. das Gerät **iPhone 6 Plus** für die Emulation und das Layout a
 
    * Der Falz kann auch als Seitenumbruch für den Inhalt betrachtet werden (nicht zu verwechseln mit den [Breakpoints](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints)). Dies wird angezeigt, um zu veranschaulichen, welchen Teil des Inhalts die Benutzenden vor dem Scrollen auf dem Gerät sehen werden.
    * Die Linie für den Falz wird nicht angezeigt, wenn die Höhe des zu emulierenden Geräts größer als die Bildschirmgröße ist.
-   * Der Falz wird aus Komfortgründen für Autoren, aber nicht auf der veröffentlichten Seite angezeigt.
+   * Der Falz wird aus Komfortgründen für Autorinnen und Autoren angezeigt, aber nicht auf der veröffentlichten Seite.
 
 ## Hinzufügen eines Layout-Containers und seiner Inhalte (Bearbeitungsmodus) {#adding-a-layout-container-and-its-content-edit-mode}
 

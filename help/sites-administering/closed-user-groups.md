@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6808'
-ht-degree: 44%
+source-wordcount: '6650'
+ht-degree: 28%
 
 ---
 
@@ -25,11 +25,11 @@ Seit AEM 6.3 gibt es eine neue Implementierung geschlossener Benutzergruppen , d
 >
 >Aus Gründen der Einfachheit wird in dieser Dokumentation die CUG-Abkürzung verwendet.
 
-Das Ziel der neuen Implementierung ist, wo nötig vorhandene Funktionen zu übernehmen, aber gleichzeitig Probleme und entwicklungsbedingte Einschränkungen älterer Versionen zu beheben. Das Ergebnis ist ein neues CUG-Design mit den folgenden Eigenschaften:
+Ziel der neuen Implementierung ist es, bei Bedarf vorhandene Funktionen abzudecken und gleichzeitig Probleme und Designbeschränkungen älterer Versionen zu beheben. Das Ergebnis ist ein neues CUG-Design mit den folgenden Eigenschaften:
 
 * Klare Trennung der Authentifizierungs- und Autorisierungselemente, die einzeln oder in Kombination verwendet werden können;
 * Dediziertes Autorisierungsmodell, das den eingeschränkten Lesezugriff in den konfigurierten CUG-Bäumen widerspiegelt, ohne andere Einrichtungs- und Berechtigungsanforderungen für die Zugriffskontrolle zu beeinträchtigen;
-* Trennung zwischen der Einrichtung der Zugriffssteuerung für den eingeschränkten Lesezugriff, der normalerweise auf Autoreninstanzen benötigt wird, und der Berechtigungsprüfung, die normalerweise nur auf Veröffentlichungsinstanzen benötigt wird
+* Trennung zwischen der Einrichtung der Zugriffskontrolle für den eingeschränkten Lesezugriff, der in Autoreninstanzen benötigt wird, und der Berechtigungsprüfung, die nur in der Veröffentlichung gewünscht wird;
 * Bearbeiten des eingeschränkten Lesezugriffs ohne Berechtigungseskalierung;
 * Dedizierte Knotentyperweiterung zum Markieren der Authentifizierungspflicht;
 * Optionaler Anmeldepfad, der der Authentifizierungspflicht zugeordnet ist.
@@ -38,8 +38,8 @@ Das Ziel der neuen Implementierung ist, wo nötig vorhandene Funktionen zu über
 
 Eine CUG, wie sie im Kontext von AEM bekannt ist, besteht aus folgenden Schritten:
 
-* Schränken Sie den Lesezugriff auf den Baum ein, der geschützt werden muss, und erlauben Sie nur das Lesen für Prinzipale, die entweder mit einer bestimmten CUG-Instanz aufgelistet oder ganz aus der CUG-Bewertung ausgeschlossen sind. Dies wird als **Autorisierung** -Element.
-* Erzwingen Sie die Authentifizierung in einem gegebenen Baum und geben Sie optional eine dedizierte Anmeldeseite für diesen Baum an, die anschließend ausgeschlossen wird. Dies wird als **Authentifizierung** -Element.
+* Schränken Sie den Lesezugriff auf den Baum ein, der geschützt werden muss und nur das Lesen von Prinzipalen gestattet, die entweder mit einer bestimmten CUG-Instanz aufgelistet oder ganz aus der CUG-Bewertung ausgeschlossen sind. Dies wird als **Autorisierung** -Element.
+* Erzwingen Sie die Authentifizierung in einem gegebenen Baum und geben Sie optional eine dedizierte Anmeldeseite für diesen Baum an, der dann ausgeschlossen wird. Dies wird als **Authentifizierung** -Element.
 
 Die neue Implementierung wurde entwickelt, um eine Linie zwischen den Authentifizierungs- und den Autorisierungselementen zu ziehen. Ab AEM 6.3 ist es möglich, den Lesezugriff zu beschränken, ohne explizit eine Authentifizierungspflicht hinzuzufügen. Wenn beispielsweise eine bestimmte Instanz eine Authentifizierung erfordert oder sich eine bestimmte Struktur bereits in einer Unterstruktur befindet, für die bereits eine Authentifizierung erforderlich ist.
 
@@ -57,7 +57,7 @@ Diese neue Art von Richtlinie weist die folgenden Merkmale auf:
 
 * Zugriffssteuerungsrichtlinie des Typs „org.apache.jackrabbit.api.security.authorization.PrincipalSetPolicy“ (definiert von der Apache Jackrabbit-API).
 * PrincipalSetPolicy gewährt einem anpassbaren Satz von Prinzipalen Berechtigungen.
-* Die erteilten Berechtigungen und der Umfang dieser Richtlinie sind ein Implementierungsdetail.
+* Die gewährten Berechtigungen und der Umfang der Richtlinie sind Implementierungsdetails.
 
 Die Implementierung von PrincipalSetPolicy, das zur Darstellung von CUGs verwendet wird, definiert zusätzlich Folgendes:
 
@@ -68,7 +68,7 @@ Die Implementierung von PrincipalSetPolicy, das zur Darstellung von CUGs verwend
 
 Diese CUG-Richtlinien werden anhand eines separaten Autorisierungsmoduls namens „oak-authorization-cug“ auf einer AEM-Instanz bereitgestellt. Dieses Modul verfügt über eine eigene Zugriffssteuerungsverwaltung und Berechtigungsprüfung. Das heißt, die standardmäßige AEM-Einrichtung enthält eine Oak Content Repository-Konfiguration, die mehrere Autorisierungsmechanismen kombiniert. Weitere Informationen finden Sie auf [dieser Seite auf der Apache Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html).
 
-In dieser Verbundeinrichtung ersetzen neue CUGs nicht den vorhandenen Zugriffssteuerungsinhalt, der dem Zielknoten angehängt ist, sondern sind als Zusatz entworfen, der später ebenso entfernt werden kann, ohne die ursprüngliche Zugriffssteuerung zu beeinträchtigen, die in AEM standardmäßig eine Zugriffssteuerungsliste darstellen würde.
+In dieser Composite-Konfiguration ersetzt eine neue CUG nicht den vorhandenen Zugriffssteuerungsinhalt, der an den Zielknoten angehängt ist. Stattdessen ist es eine Ergänzung, die später auch entfernt werden kann, ohne die ursprüngliche Zugriffskontrolle zu beeinträchtigen, die standardmäßig in AEM eine Zugriffssteuerungsliste wäre.
 
 Im Gegensatz zur früheren Implementierung werden die neuen CUG-Richtlinien immer als Zugriffssteuerungsinhalte erkannt und behandelt. Dies bedeutet, dass sie mit der JCR-Zugriffssteuerungs-Management-API erstellt und bearbeitet werden. Weitere Informationen finden Sie im Abschnitt [Verwalten von CUG-Richtlinien](#managing-cug-policies).
 
@@ -76,18 +76,18 @@ Im Gegensatz zur früheren Implementierung werden die neuen CUG-Richtlinien imme
 
 Neben einer dedizierten Zugriffssteuerungsverwaltung für CUGs können Sie mit dem neuen Autorisierungsmodell die Berechtigungsprüfung für die Richtlinien bedingt aktivieren. Auf diese Weise können Sie CUG-Richtlinien in einer Staging-Umgebung einrichten und nur die Auswertung der effektiven Berechtigungen aktivieren, nachdem diese in die Produktionsumgebung repliziert wurden.
 
-Die Berechtigungsprüfung für CUG-Richtlinien und die Interaktion mit dem standardmäßigen oder zusätzlichen Autorisierungsmodellen folgen dem Muster, das für mehrere Autorisierungsmechanismen in Apache Jackrabbit Oak entworfen wurde: Ein gegebener Berechtigungssatz wird gewährt, falls – und nur falls – alle Modelle Zugriff erteilen. Weitere Informationen finden Sie auf [dieser Seite](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html).
+Die Berechtigungsprüfung für CUG-Richtlinien und die Interaktion mit dem Standard- oder jedem zusätzlichen Autorisierungsmodell folgen dem Muster, das für mehrere Autorisierungsmechanismen in Apache Jackrabbit Oak entwickelt wurde. Das heißt, ein bestimmter Satz von Berechtigungen wird nur gewährt, wenn und nur, wenn alle Modelle Zugriff gewähren. Weitere Informationen finden Sie auf [dieser Seite](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html).
 
 Die folgenden Merkmale gelten für die Berechtigungsprüfung im Zusammenhang mit dem Autorisierungsmodell zur Verarbeitung und Bewertung von CUG-Richtlinien:
 
 * Sie verarbeitet nur Leseberechtigungen für reguläre Knoten und Eigenschaften, nicht jedoch Lesezugriffssteuerungsinhalte
-* Sie verarbeitet keine Schreibberechtigungen oder Berechtigungen, die für die Änderung geschützter JCR-Inhalte erforderlich sind (Zugriffskontrolle, Informationen zum Knotentyp, Versionierung, Sperren oder Benutzerverwaltung usw.). Diese Berechtigungen sind von einer CUG-Richtlinie nicht betroffen und werden nicht vom zugehörigen Autorisierungsmodell bewertet. Ob diese Berechtigungen gewährt werden, hängt von den anderen Modellen ab, die in der Sicherheitseinrichtung konfiguriert sind.
+* Sie verarbeitet keine Schreibberechtigungen oder Berechtigungen, die für die Änderung geschützter JCR-Inhalte erforderlich sind (Zugriffskontrolle, Informationen zum Knotentyp, Versionierung, Sperren oder Benutzerverwaltung usw.). Diese Berechtigungen sind von einer CUG-Richtlinie nicht betroffen und werden vom zugehörigen Autorisierungsmodell nicht bewertet. Ob diese Berechtigungen gewährt werden, hängt von den anderen in der Sicherheitseinrichtung konfigurierten Modellen ab.
 
 Der Effekt einer einzelnen CUG-Richtlinie auf die Berechtigungsprüfung kann wie folgt zusammengefasst werden:
 
 * Lesezugriff wird allen vorenthalten, außer Subjekten, die ausgeschlossene oder aufgeführte Prinzipale enthalten.
 * Die Richtlinie wirkt sich auf den zugriffsgesteuerten Knoten aus, der die Richtlinie und ihre Eigenschaften enthält.
-* Der Effekt wird zusätzlich in der Hierarchie vererbt, d. h. in der Elementstruktur, die vom zugriffsgesteuerten Knoten definiert wird.
+* Der Effekt wird auch in der Hierarchie vererbt, d. h. in der Elementstruktur, die vom zugriffsgesteuerten Knoten definiert wird.
 * Sie betrifft jedoch weder Geschwister noch Vorgänger des zugriffsgesteuerten Knotens.
 * Die Vererbung einer bestimmten CUG stoppt bei einer verschachtelten CUG.
 
@@ -95,29 +95,29 @@ Der Effekt einer einzelnen CUG-Richtlinie auf die Berechtigungsprüfung kann wie
 
 Die folgenden Best Practices sollten bei der Definition des eingeschränkten Lesezugriffs über CUGs berücksichtigt werden:
 
-* Entscheiden Sie bewusst, ob Sie die CUG benötigen, um Lesezugriff einzuschränken oder die Authentifizierung zu erzwingen. Wenn letzteres der Fall ist oder beides erforderlich ist, finden Sie im Abschnitt Best Practices weitere Informationen zur Authentifizierungspflicht.
+* Entscheiden Sie bewusst, ob Sie die CUG benötigen, um Lesezugriff einzuschränken oder die Authentifizierung zu erzwingen. Wenn letzteres der Fall ist oder beides erforderlich ist, finden Sie im Abschnitt Best Practices weitere Informationen zur Authentifizierungspflicht .
 * Erstellen Sie ein Bedrohungsmodell für die Daten oder Inhalte, die geschützt werden müssen, um Bedrohungsgrenzen zu identifizieren und ein klares Bild der Vertraulichkeit der Daten und der Rollen zu erhalten, die mit dem autorisierten Zugriff verbunden sind.
 * Modellieren des Repository-Inhalts und der CUGs unter Berücksichtigung allgemeiner autorisierungsbezogener Aspekte und Best Practices:
 
-   * Beachten Sie, dass die Leseberechtigung nur erteilt wird, wenn eine bestimmte CUG und die Auswertung anderer im Setup bereitgestellter Module es einem bestimmten Subjekt erlauben, ein bestimmtes Repository-Element zu lesen
+   * Beachten Sie, dass die Leseberechtigung nur gewährt wird, wenn eine bestimmte CUG und die Auswertung anderer im Setup bereitgestellter Module es einem bestimmten Subjekt erlauben, ein bestimmtes Repository-Element zu lesen
    * Vermeiden Sie das Erstellen redundanter CUGs, bei denen der Lesezugriff bereits durch andere Autorisierungsmodule eingeschränkt ist.
    * Ein übermäßiger Bedarf an verschachtelten CUGs kann Probleme beim Inhaltserstellung hervorheben
-   * Ein sehr übermäßiger Bedarf an CUGs (z. B. auf jeder einzelnen Seite) kann auf die Notwendigkeit eines benutzerdefinierten Autorisierungsmodells hinweisen, das möglicherweise besser auf die spezifischen Sicherheitsanforderungen der vorliegenden Anwendung und des vorliegenden Inhalts abgestimmt ist.
+   * Ein übermäßiger Bedarf an CUGs (z. B. auf jeder Seite) kann auf die Notwendigkeit eines benutzerdefinierten Autorisierungsmodells hinweisen, das möglicherweise besser auf die spezifischen Sicherheitsanforderungen der vorliegenden Anwendung und des vorliegenden Inhalts abgestimmt ist.
 
 * Beschränken Sie die für CUG-Richtlinien unterstützten Pfade auf einige Bäume im Repository, um eine optimierte Leistung zu ermöglichen. Lassen Sie beispielsweise nur CUGs unter dem Knoten /content zu, die seit AEM 6.3 als Standardwert geliefert wurden.
 * CUG-Richtlinien sind so konzipiert, dass sie Lesezugriff auf eine kleine Gruppe von Prinzipalen gewähren. Die Notwendigkeit einer großen Anzahl von Prinzipalen kann Probleme beim Inhalt oder Anwendungsdesign hervorheben und sollte überdacht werden.
 
 ### Authentifizierung: Definieren der Authentifizierungspflicht {#authentication-defining-the-auth-requirement}
 
-Mit den authentifizierungsbezogenen Teilen der CUG-Funktion können Sie Bäume markieren, die authentifiziert werden müssen, und optional eine dedizierte Anmeldeseite angeben. In Übereinstimmung mit der vorherigen Version können Sie mit der neuen Implementierung Bäume markieren, die eine Authentifizierung im Content Repository erfordern, und die Synchronisierung mit dem `Sling org.apache.sling.api.auth.Authenticator`verantwortlich für die Durchsetzung der Anforderung und die Umleitung zu einer Anmelderessource.
+Mit den authentifizierungsbezogenen Teilen der CUG-Funktion können Sie Bäume markieren, die authentifiziert werden müssen, und optional eine dedizierte Anmeldeseite angeben. In Übereinstimmung mit der vorherigen Version können Sie mit der neuen Implementierung Bäume markieren, die eine Authentifizierung im Inhalts-Repository erfordern. Es ermöglicht auch bedingt die Synchronisierung mit der `Sling org.apache.sling.api.auth.Authenticator`verantwortlich für die Durchsetzung der Anforderung und die Umleitung zu einer Anmelderessource.
 
-Diese Anforderungen werden mit dem Authenticator anhand eines OSGi-Dienstes registriert, der die Registrierungseigenschaft `sling.auth.requirements` zur Verfügung stellt. Diese Eigenschaften werden dann verwendet, um die Authentifizierungsanforderungen dynamisch zu erweitern. Weitere Informationen finden Sie im [Sling-Dokumentation](https://sling.apache.org/apidocs/sling7/org/apache/sling/auth/core/AuthConstants.html#AUTH_REQUIREMENTS).
+Diese Anforderungen werden beim Authenticator von einem OSGi-Dienst registriert, der die `sling.auth.requirements` Registrierungseigenschaft. Diese Eigenschaften werden dann verwendet, um die Authentifizierungsanforderungen dynamisch zu erweitern. Weitere Informationen finden Sie im [Sling-Dokumentation](https://sling.apache.org/apidocs/sling7/org/apache/sling/auth/core/AuthConstants.html#AUTH_REQUIREMENTS).
 
 #### Definieren der Authentifizierungspflicht mit einem dedizierten Mixin-Typ {#defining-the-authentication-requirement-with-a-dedicated-mixin-type}
 
-Aus Sicherheitsgründen ersetzt die neue Implementierung die Verwendung einer übrigen JCR-Eigenschaft durch einen dedizierten Mixin-Typ mit der Bezeichnung `granite:AuthenticationRequired`. Er definiert eine einzelne optionale Eigenschaft des Typs STRING für den Anmeldepfad `granite:loginPath`. Nur Inhaltsänderungen mit Bezug zu diesem Mixin-Typ führen zur Aktualisierung der beim Apache Sling Authenticator registrierten Anforderungen. Die Änderungen werden nachverfolgt, wenn Übergangsänderungen beibehalten werden, daher muss `javax.jcr.Session.save()` aufgerufen werden, damit die Änderungen wirksam werden.
+Aus Sicherheitsgründen ersetzt die neue Implementierung die Verwendung einer verbleibenden JCR-Eigenschaft durch einen dedizierten Mixin-Typ namens `granite:AuthenticationRequired`, der eine einzelne optionale Eigenschaft des Typs STRING für den Anmeldepfad definiert `granite:loginPath`. Nur Inhaltsänderungen, die sich auf diesen Mixin-Typ beziehen, führen zu einer Aktualisierung der beim Apache Sling Authenticator registrierten Anforderungen. Die Änderungen werden nachverfolgt, wenn Übergangsänderungen beibehalten werden, daher muss `javax.jcr.Session.save()` aufgerufen werden, damit die Änderungen wirksam werden.
 
-Dasselbe gilt für die Eigenschaft `granite:loginPath`. Sie wird nur berücksichtigt, wenn sie von dem Mixin-Typ definiert wird, der mit der Authentifizierungspflicht zusammenhängt. Wird eine Resteigenschaft mit genau diesem Namen einem nicht strukturierten JCR-Knoten hinzugefügt, hat dies nicht den gewünschten Effekt und die Eigenschaft wird von dem Handler ignoriert, der für die Aktualisierung der OSGi-Registrierung zuständig ist.
+Dasselbe gilt für die Eigenschaft `granite:loginPath`. Sie wird nur berücksichtigt, wenn sie durch den Mixin-Typ definiert ist, der sich auf die auth-requirement bezieht. Das Hinzufügen einer Resteigenschaft mit genau diesem Namen in einem unstrukturierten JCR-Knoten zeigt nicht die gewünschte Wirkung und die Eigenschaft wird von dem Handler ignoriert, der für die Aktualisierung der OSGi-Registrierung verantwortlich ist.
 
 >[!NOTE]
 >
@@ -125,21 +125,21 @@ Dasselbe gilt für die Eigenschaft `granite:loginPath`. Sie wird nur berücksich
 
 #### Registrieren der Authentifizierungspflicht und des Anmeldepfads mit dem Sling Authenticator {#registering-the-authentication-requirement-and-login-path-with-the-sling-authenticator}
 
-Da diese Art der Authentifizierungspflicht nur auf bestimmte Ausführungsmodi und auf eine kleine Teilmenge von Baumstrukturen innerhalb des Content-Repository beschränkt sein soll, ist das Tracking des Mixin-Typs der Anforderung und der Anmeldepfadeigenschaften eine Bedingung und gebunden an eine entsprechende Konfiguration, welche die unterstützten Pfade definiert (siehe „Konfigurationsoptionen“ weiter unten). Daher lösen nur Änderungen im Rahmen dieser unterstützten Pfade eine Aktualisierung der OSGi-Registrierung aus. Ansonsten werden der Mixin-Typ und die Eigenschaft ignoriert.
+Da diese Art von Authentifizierungspflicht voraussichtlich auf bestimmte Ausführungsmodi und auf eine kleine Untergruppe von Baumstrukturen im Inhalts-Repository beschränkt ist, ist das Tracking des Anforderungs-Mixin-Typs und der Eigenschaften des Anmeldepfads bedingt. Außerdem ist sie an eine entsprechende Konfiguration gebunden, die die unterstützten Pfade definiert (siehe Konfigurationsoptionen unten). Daher werden nur Änderungen im Rahmen dieser unterstützten Pfade Trigger einer Aktualisierung der OSGi-Registrierung, andernorts sowohl der Mixin-Typ als auch die Eigenschaft ignoriert.
 
 Die standardmäßige Einrichtung von AEM nutzt nun diese Konfiguration, indem sie ermöglicht, für den Mixin-Typ den Autorenausführungsmodus festzulegen, ihn aber erst wirksam werden zu lassen, wenn er auf die Veröffentlichungsinstanz repliziert wurde. Auf [dieser Seite](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) finden Sie Einzelheiten dazu, wie Sling die Authentifizierungspflicht durchsetzt.
 
-Hinzufügen der `granite:AuthenticationRequired` Der Mixin-Typ innerhalb der konfigurierten unterstützten Pfade führt dazu, dass die OSGi-Registrierung des verantwortlichen Handlers mit einem neuen, zusätzlichen Eintrag mit dem `sling.auth.requirements` -Eigenschaft. Wenn eine bestimmte Authentifizierungspflicht das optionale `granite:loginPath` -Eigenschaft, wird der Wert zusätzlich beim Authenticator mit dem Präfix &quot;-&quot;registriert, um von der Authentifizierungspflicht ausgeschlossen zu werden.
+Hinzufügen der `granite:AuthenticationRequired` Mixin-Typ innerhalb der konfigurierten unterstützten Pfade bewirkt, dass die OSGi-Registrierung des verantwortlichen Handlers mit einem neuen, zusätzlichen Eintrag mit der `sling.auth.requirements` -Eigenschaft. Wenn eine bestimmte Authentifizierungspflicht das optionale `granite:loginPath` -Eigenschaft, wird der Wert auch beim Authenticator mit dem Präfix &quot;-&quot;registriert, um von der Authentifizierungspflicht ausgeschlossen zu werden.
 
 #### Prüfung und Vererbung der Authentifizierungspflicht {#evaluation-and-inheritance-of-the-authentication-requirement}
 
-Von Apache Sling-Authentifizierungsanforderungen wird erwartet, dass sie über die Seiten- oder Knotenhierarchie übernommen werden. Die genauen Details der Vererbung und die Bewertung der Authentifizierungsanforderungen wie Reihenfolge und Priorität werden als Implementierungsdetails betrachtet und in diesem Artikel nicht dokumentiert.
+Apache Sling-Authentifizierungsanforderungen werden über die Seiten- oder Knotenhierarchie übernommen. Die genauen Details der Vererbung und die Bewertung der Authentifizierungsanforderungen wie Reihenfolge und Priorität werden als Implementierungsdetails betrachtet und in diesem Artikel nicht dokumentiert.
 
 #### Auswertung des Anmeldepfads {#evaluation-of-login-path}
 
-Die Prüfung des Anmeldepfads und die Weiterleitung an die entsprechende Ressource bei Authentifizierung sind derzeit Implementierungsdetails von Adobe Granite Login Selector Authentication Handler (`com.day.cq.auth.impl.LoginSelectorHandler`), einem Apache Sling-AuthenticationHandler, der standardmäßig mit AEM konfiguriert ist.
+Die Bewertung des Anmeldepfads und die Umleitung zur entsprechenden Ressource bei Authentifizierung ist ein Implementierungsdetail des Authentifizierungs-Handlers der Adobe Granite-Anmeldungsauswahl ( `com.day.cq.auth.impl.LoginSelectorHandler`), ein standardmäßig mit AEM konfigurierter Apache Sling AuthenticationHandler.
 
-Nach dem Aufruf von `AuthenticationHandler.requestCredentials` versucht dieser Handler, die Zuordnungsanmeldeseite zu identifizieren, an die der Benutzer weitergeleitet wird. Dazu gehören die folgenden Schritte:
+Bei Aufruf `AuthenticationHandler.requestCredentials` Dieser Handler versucht, die Zuordnungsanmeldeseite zu ermitteln, an die der Benutzer umgeleitet wird. Dazu gehören die folgenden Schritte:
 
 * Unterscheidung zwischen abgelaufenem Passwort und Notwendigkeit einer regelmäßigen Anmeldung als Grund für die Umleitung;
 * Bei einer regulären Anmeldung wird in der folgenden Reihenfolge geprüft, ob ein Anmeldepfad abgerufen werden kann:
@@ -149,7 +149,7 @@ Nach dem Aufruf von `AuthenticationHandler.requestCredentials` versucht dieser H
    * von den Anmeldeseitenzuordnungen (entsprechend der mit dem `LoginSelectorHandler` erstellten Definition)
    * und gehen Sie dann zurück zur standardmäßigen Anmeldeseite, wie mit der Variablen `LoginSelectorHandler`.
 
-* Sobald anhand der oben genannten Aufrufe ein gültiger Anmeldepfad abgerufen wurde, wird die Anforderung des Benutzers an diese Seite weitergeleitet.
+* Wenn über die oben aufgeführten Aufrufe ein gültiger Anmeldepfad abgerufen wurde, wird die Anfrage des Benutzers an diese Seite weitergeleitet.
 
 Das Ziel dieser Dokumentation ist die Prüfung des Anmeldepfads, wie er von der internen Schnittstelle `LoginPathProvider` angezeigt wird. Die seit AEM 6.3 ausgelieferte Implementierung verhält sich wie folgt:
 
@@ -161,7 +161,7 @@ Das Ziel dieser Dokumentation ist die Prüfung des Anmeldepfads, wie er von der 
    * von den Anmeldeseitenzuordnungen (entsprechend der mit dem `LoginSelectorHandler` erstellten Definition)
    * und kehren schließlich zur standardmäßigen Anmeldeseite zurück, wie mit der Variablen `LoginSelectorHandler`.
 
-* Sobald anhand der oben genannten Aufrufe ein gültiger Anmeldepfad abgerufen wurde, wird die Anforderung des Benutzers an diese Seite weitergeleitet.
+* Wenn über die oben aufgeführten Aufrufe ein gültiger Anmeldepfad abgerufen wurde, wird die Anfrage des Benutzers an diese Seite weitergeleitet.
 
 `LoginPathProvider` zeigt anhand der Implementierung der neuen Authentifizierungspflichtunterstützung in Granite Anmeldepfade, wie sie anhand der `granite:loginPath`-Eigenschaften definiert sind, die wiederum wie oben beschrieben vom Mixin-Typ definiert werden. Die Zuordnung des Ressourcenpfads mit dem Anmeldepfad und dem Eigenschaftswert selbst wird im Speicher beibehalten und ausgewertet, um einen geeigneten Anmeldepfad für andere Knoten in der Hierarchie zu finden.
 
@@ -173,12 +173,12 @@ Das Ziel dieser Dokumentation ist die Prüfung des Anmeldepfads, wie er von der 
 
 Bei der Definition von Authentifizierungsanforderungen sollten die folgenden Best Practices berücksichtigt werden:
 
-* Vermeiden Sie die Verschachtelung von Authentifizierungsanforderungen: Die Platzierung einer einzelnen Authentifizierungspflicht-Markierung am Anfang eines Baums sollte ausreichend sein und wird an die gesamte vom Zielknoten definierte Unterstruktur vererbt. Zusätzliche Authentifizierungsanforderungen in diesem Baum sollten als redundant betrachtet werden und können bei der Bewertung der Authentifizierungspflicht in Apache Sling zu Leistungsproblemen führen. Durch die Trennung von Autorisierungs- und authentifizierungsbezogenen CUG-Bereichen ist es möglich, den Lesezugriff durch CUG oder andere Richtlinien zu beschränken und gleichzeitig die Authentifizierung für den gesamten Baum zu erzwingen.
+* Vermeiden Sie die Verschachtelung von Authentifizierungsanforderungen: Die Platzierung einer einzelnen Authentifizierungspflicht-Markierung am Anfang eines Baums sollte ausreichend sein und an die gesamte vom Zielknoten definierte Unterstruktur vererbt werden. Zusätzliche Authentifizierungsanforderungen in diesem Baum sollten als redundant betrachtet werden und können bei der Bewertung der Authentifizierungspflicht in Apache Sling zu Leistungsproblemen führen. Durch die Trennung von Autorisierungs- und authentifizierungsbezogenen CUG-Bereichen ist es möglich, den Lesezugriff durch CUG oder andere Arten von Richtlinien zu beschränken und gleichzeitig die Authentifizierung für den gesamten Baum zu erzwingen.
 * Modellieren Sie Repository-Inhalte so, dass Authentifizierungsanforderungen für die gesamte Baumstruktur gelten, ohne verschachtelte Unterbäume erneut von der Anforderung ausschließen zu müssen.
-* Zur Vermeidung genauer Angaben und der darauf folgenden Registrierung redundanter Anmeldepfade:
+* So vermeiden Sie die Angabe und Registrierung redundanter Anmeldepfade:
 
    * Nutzen Sie die Vererbung und vermeiden Sie die Definition verschachtelter Anmeldepfade.
-   * Legen Sie für den optionalen Anmeldepfad keinen Wert fest, der dem Standardwert oder einem vererbten Wert entspricht.
+   * Setzen Sie den optionalen Anmeldepfad nicht auf einen Wert, der dem Standardwert oder einem vererbten Wert entspricht,
    * Anwendungsentwickler müssen identifizieren, welche Anmeldepfade in den globalen „login-path“-Konfigurationen (Standard und Zuordnungen) konfiguriert werden müssen, die mit dem `LoginSelectorHandler` verknüpft sind.
 
 ## Darstellung im Repository {#representation-in-the-repository}
@@ -191,7 +191,7 @@ Die Oak-Dokumentation beschreibt, wie die neuen CUG-Richtlinien im Repository-Co
 
 Die Notwendigkeit einer separaten Authentifizierungspflicht zeigt sich im Repository-Content anhand eines dedizierten Mixin-Knotentyps am Zielknoten. Der Mixin-Typ definiert eine optionale Eigenschaft, um eine dedizierte Anmeldeseite für die vom Zielknoten definierte Baumstruktur anzugeben.
 
-Die mit dem Anmeldepfad verknüpfte Seite kann sich innerhalb oder außerhalb dieses Baums befinden. Sie wird von der Authentifizierungspflicht ausgeschlossen.
+Die mit dem Anmeldepfad verknüpfte Seite kann sich innerhalb oder außerhalb dieses Baums befinden. Sie ist von der Authentifizierungspflicht ausgenommen.
 
 ```java
 [granite:AuthenticationRequired]
@@ -203,11 +203,11 @@ Die mit dem Anmeldepfad verknüpfte Seite kann sich innerhalb oder außerhalb di
 
 ### Verwalten von CUG-Richtlinien {#managing-cug-policies}
 
-Der neue Richtlinientyp für die Zugriffssteuerung, mit dem der Lesezugriff für eine CUG eingeschränkt wird, wird mithilfe der JCR-Zugriffssteuerungsverwaltungs-API verwaltet und folgt den Mechanismen, die in der [Beschreibung von JCR 2.0](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) aufgeführt werden.
+Der neue Richtlinientyp für die Zugriffssteuerung, mit dem der Lesezugriff für eine CUG eingeschränkt wird, wird mithilfe der JCR-Zugriffssteuerungsverwaltungs-API verwaltet und folgt den Mechanismen, die in der [Beschreibung von JCR 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) aufgeführt werden.
 
 #### Neue CUG-Richtlinie festlegen {#set-a-new-cug-policy}
 
-Code zum Anwenden einer neuen CUG-Richtlinie auf einen Knoten, für den zuvor keine CUG festgelegt wurde. Beachten Sie Folgendes: `getApplicablePolicies` gibt nur neue Richtlinien zurück, die zuvor noch nicht festgelegt wurden. Am Ende muss die Richtlinie zurückgeschrieben und Änderungen müssen beibehalten werden.
+Code zum Anwenden einer neuen CUG-Richtlinie auf einen Knoten, für den zuvor keine CUG festgelegt wurde. Beachten Sie Folgendes: `getApplicablePolicies` gibt nur neue Richtlinien zurück, die zuvor noch nicht festgelegt wurden. Am Ende muss die Richtlinie zurückgeschrieben und die Änderungen müssen beibehalten werden.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -349,7 +349,7 @@ session.save();
 
 #### Hinzufügen einer neuen Authentifizierungspflicht mit dem Anmeldepfad {#add-a-new-auth-requirement-with-login-path}
 
-Schritte zum Erstellen einer Authentifizierungspflicht, einschließlich eines Anmeldepfads. Die Pflicht und die Ausnahme für den Anmeldepfad wird nur dann beim Apache Sling Authenticator registriert, wenn der `RequirementHandler` für die Baumstruktur mit dem Zielknoten konfiguriert wurde.
+Schritte zum Erstellen einer Authentifizierungspflicht, einschließlich eines Anmeldepfads. Die Anforderung und der Ausschluss für den Anmeldepfad werden nur beim Apache Sling Authenticator registriert, wenn die `RequirementHandler` wurde für den Baum konfiguriert, der den Zielknoten enthält.
 
 ```java
 Node targetNode = [...]
@@ -364,7 +364,7 @@ session.save();
 
 #### Vorhandenen Anmeldepfad ändern {#modify-an-existing-login-path}
 
-Die Schritte zum Ändern eines vorhandenen Anmeldepfads werden nachfolgend beschrieben. Die Änderung wird nur dann beim Apache Sling Authenticator registriert, wenn der `RequirementHandler` für die Baumstruktur mit dem Zielknoten konfiguriert wurde. Der Wert des vorherigen Anmeldepfads wird aus der Registrierung entfernt. Die mit dem Zielknoten verknüpfte Authentifizierungspflicht wird von dieser Änderung nicht beeinflusst.
+Die Schritte zum Ändern eines vorhandenen Anmeldepfads werden nachfolgend beschrieben. Die Änderung wird nur beim Apache Sling Authenticator registriert, wenn die `RequirementHandler` wurde für den Baum konfiguriert, der den Zielknoten enthält. Der Wert des vorherigen Anmeldepfads wird aus der Registrierung entfernt. Die mit dem Zielknoten verknüpfte Authentifizierungspflicht wird von dieser Änderung nicht beeinflusst.
 
 ```java
 Node targetNode = [...]
@@ -426,13 +426,13 @@ Die folgende Abbildung zeigt die Authentifizierungsanforderungen einer AEM Verö
 
 >[!NOTE]
 >
->In diesem Beispiel wurde die optionale Eigenschaft des Anmeldepfads nicht festgelegt. Folglich wurde kein zweiter Eintrag beim Authentifizierer registriert.
+>In diesem Beispiel wurde die optionale Eigenschaft des Anmeldepfads nicht festgelegt. Daher wurde kein zweiter Eintrag beim Authentifizierer registriert.
 
 ![chlimage_1-24](assets/chlimage_1-24.jpeg)
 
 #### Abrufen des effektiven Anmeldepfads {#retrieve-the-effective-login-path}
 
-Derzeit gibt es keine öffentliche API zum Abrufen des Anmeldepfads, der verwendet wird, wenn anonym auf eine Ressource zugegriffen wird, die eine Authentifizierung erfordert. Implementierungsdetails dazu, wie der Anmeldepfad abgerufen wird, finden Sie unter Bewertung des Anmeldepfads .
+Es gibt derzeit keine öffentliche API zum Abrufen des Anmeldepfads, der beim anonymen Zugriff auf eine Ressource wirksam wird, für die eine Authentifizierung erforderlich ist. Implementierungsdetails dazu, wie der Anmeldepfad abgerufen wird, finden Sie unter Bewertung des Anmeldepfads .
 
 Beachten Sie jedoch, dass es neben den mit dieser Funktion definierten Anmeldepfaden alternative Möglichkeiten gibt, die Weiterleitung zur Anmeldung anzugeben, die bei der Erstellung des Inhaltsmodells und der Authentifizierungsanforderungen einer bestimmten AEM berücksichtigt werden sollten.
 
@@ -468,15 +468,15 @@ In der folgenden Tabelle sind die gültigen Kombinationen von CUG-Richtlinien un
 
 | **Authentifizierung erforderlich** | **Anmeldepfad** | **Eingeschränkter Lesezugriff** | **Erwarteter Effekt** |
 |---|---|---|---|
-| Ja | Ja | Ja | Ein bestimmter Benutzer kann den mit der CUG-Richtlinie markierten Teilbaum nur anzeigen, wenn die effektive Berechtigungsprüfung den Zugriff gewährt. Ein nicht authentifizierter Benutzer wird an die angegebene Anmeldeseite umgeleitet. |
-| Ja | Nein | Ja | Ein bestimmter Benutzer kann den mit der CUG-Richtlinie markierten Teilbaum nur anzeigen, wenn die effektive Berechtigungsprüfung den Zugriff gewährt. Ein nicht authentifizierter Benutzer wird an eine übernommene Standardanmeldeseite umgeleitet. |
-| Ja | Ja | Nein | Ein nicht authentifizierter Benutzer wird an die angegebene Anmeldeseite umgeleitet. Ob es erlaubt ist, die mit der Authentifizierungspflicht markierte Baumstruktur anzuzeigen, hängt von den effektiven Berechtigungen der einzelnen Elemente in dem Teilbaum ab. Keine dedizierte CUG, die den Lesezugriff einschränkt. |
-| Ja | Nein | Nein | Ein nicht authentifizierter Benutzer wird an eine übernommene Standardanmeldeseite umgeleitet. Ob die mit der Authentifizierungspflicht markierte Baumstruktur angezeigt werden kann, hängt von den effektiven Berechtigungen der einzelnen Elemente in dieser Unterstruktur ab. Keine dedizierte CUG, die den Lesezugriff einschränkt. |
-| Nein | Nein | Ja | Ein bestimmter authentifizierter oder nicht authentifizierter Benutzer kann den mit der CUG-Richtlinie markierten Teilbaum nur anzeigen, wenn die effektive Berechtigungsprüfung den Zugriff gewährt. Ein nicht authentifizierter Benutzer wird gleich behandelt und nicht zur Anmeldung weitergeleitet. |
+| Ja | Ja | Ja | Ein bestimmter Benutzer kann den mit der CUG-Richtlinie markierten Teilbaum nur anzeigen, wenn die effektive Berechtigungsprüfung den Zugriff gewährt. Ein nicht authentifizierter Benutzer wird zur angegebenen Anmeldeseite weitergeleitet. |
+| Ja | Nein | Ja | Ein bestimmter Benutzer kann den mit der CUG-Richtlinie markierten Teilbaum nur anzeigen, wenn die effektive Berechtigungsprüfung den Zugriff gewährt. Ein nicht authentifizierter Benutzer wird zu einer geerbten standardmäßigen Anmeldeseite umgeleitet. |
+| Ja | Ja | Nein | Ein nicht authentifizierter Benutzer wird zur angegebenen Anmeldeseite weitergeleitet. Ob die mit der Authentifizierungspflicht markierte Baumstruktur angezeigt werden kann, hängt von den effektiven Berechtigungen der einzelnen Elemente in dieser Unterstruktur ab. Keine dedizierte CUG, die den Lesezugriff einschränkt. |
+| Ja | Nein | Nein | Ein nicht authentifizierter Benutzer wird zu einer geerbten standardmäßigen Anmeldeseite umgeleitet. Ob die mit der Authentifizierungspflicht markierte Baumstruktur angezeigt werden kann, hängt von den effektiven Berechtigungen der einzelnen Elemente in dieser Unterstruktur ab. Keine dedizierte CUG, die den Lesezugriff einschränkt. |
+| Nein | Nein | Ja | Ein bestimmter authentifizierter oder nicht authentifizierter Benutzer kann die mit der CUG-Richtlinie markierte Unterstruktur nur anzeigen, wenn die effektive Berechtigungsprüfung den Zugriff gewährt. Ein nicht authentifizierter Benutzer wird gleich behandelt und nicht zur Anmeldung weitergeleitet. |
 
 >[!NOTE]
 >
->Die Kombination „Authentifizierungspflicht = Ja“ und „Anmeldepfad = Ja“ wird oben nicht angeführt, da es sich beim Anmeldepfad um eine optionales, mit einer Authentifizierungspflicht verknüpftes Attribut handelt. Wird eine JCR-Eigenschaft mit diesem Namen ohne den definierenden Mixin-Typ angegeben, so hat dies keine Auswirkungen und der entsprechende Handler ignoriert die Eigenschaft.
+>Die Kombination „Authentifizierungspflicht = Ja“ und „Anmeldepfad = Ja“ wird oben nicht angeführt, da es sich beim Anmeldepfad um eine optionales, mit einer Authentifizierungspflicht verknüpftes Attribut handelt. Das Angeben einer JCR-Eigenschaft mit diesem Namen ohne Hinzufügen des definierenden Mixin-Typs hat keine Auswirkungen und wird vom entsprechenden Handler ignoriert.
 
 ## OSGi-Komponenten und -Konfiguration {#osgi-components-and-configuration}
 
@@ -494,7 +494,7 @@ Das Einrichten der CUG-Autorisierung wird in der [relevanten Apache-Dokumentatio
 
 #### Konfigurieren des Referrer-Filters {#configuring-the-referrer-filter}
 
-Sie müssen außerdem den [Sling Referrer-Filter](/help/sites-administering/security-checklist.md#the-sling-referrer-filter) mit allen Host-Namen konfigurieren, die für den Zugriff auf AEM verwendet werden können, z. B. via CDN oder Lastenausgleich.
+Sie müssen außerdem die [Sling Referrer Filter](/help/sites-administering/security-checklist.md#the-sling-referrer-filter) mit allen Hostnamen, die für den Zugriff auf AEM verwendet werden können, z. B. über CDN, Load Balancer und andere.
 
 Wenn der Referrer-Filter nicht konfiguriert ist, treten Fehler wie die folgende auf, wenn ein Benutzer versucht, sich bei einer CUG-Site anzumelden:
 
@@ -582,7 +582,7 @@ Die verfügbaren Konfigurationsoptionen, die mit dem CUG-Autorisierungsmodul ver
 
 #### Ausschluss von Prinzipalen aus der CUG-Auswertung {#excluding-principals-from-cug-evaluation}
 
-Die Befreiung einzelner Prinzipale von der CUG-Bewertung wurde von der früheren Implementierung übernommen. Die neue CUG-Autorisierung behandelt dies anhand einer dedizierten Schnittstelle mit der Bezeichnung „CugExclude“. Apache Jackrabbit Oak 1.4 verfügt über eine Standardimplementierung, die einen festen Satz von Prinzipalen und eine erweiterte Implementierung ausschließt, die die Konfiguration einzelner Prinzipallamen ermöglicht. Letztere wird in AEM Veröffentlichungsinstanzen konfiguriert.
+Die Befreiung einzelner Prinzipale von der CUG-Bewertung wurde von der früheren Implementierung übernommen. Die neue CUG-Autorisierung behandelt dies anhand einer dedizierten Schnittstelle mit der Bezeichnung „CugExclude“. Apache Jackrabbit Oak 1.4 verfügt über eine Standardimplementierung, die einen festen Satz von Prinzipalen und eine erweiterte Implementierung ausschließt, mit der Sie einzelne Prinzipallamen konfigurieren können. Letztere wird in AEM Veröffentlichungsinstanzen konfiguriert.
 
 Der Standardwert seit AEM 6.3 verhindert, dass die folgenden Prinzipale von CUG-Richtlinien betroffen sind:
 
@@ -706,7 +706,7 @@ Neue Installationen von AEM werden standardmäßig die neuen Implementierungen s
 
 | **„Adobe Granite Authentication Requirement and Login Path Handler“** | **Erklärung** |
 |---|---|
-| Unterstützte Pfade: `/content` | Authentifizierungspflichten, die im Repository mithilfe des Mixin-Typs `granite:AuthenticationRequired` definiert wurden, werden in `/content` bei `Session.save()` wirksam. Sling Authenticator wird aktualisiert. Das Hinzufügen des Mixin-Typs außerhalb der unterstützten Pfade wird ignoriert. |
+| Unterstützte Pfade: `/content` | Authentifizierungsanforderungen, wie sie im Repository von der `granite:AuthenticationRequired` Der Mixin-Typ wird unten wirksam `/content` upon `Session.save()`. Sling Authenticator wird aktualisiert. Das Hinzufügen des Mixin-Typs außerhalb der unterstützten Pfade wird ignoriert. |
 
 ## Deaktivieren der CUG-Autorisierungs- und Authentifizierungspflicht {#disabling-cug-authorization-and-authentication-requirement}
 
@@ -718,7 +718,7 @@ Lesen Sie die [CUG-Pluggabelbarkeit](https://jackrabbit.apache.org/oak/docs/secu
 
 ### Authentifizierungspflicht deaktivieren {#disable-the-authentication-requirement}
 
-So deaktivieren Sie die Unterstützung für die Authentifizierungspflicht, die von der `granite.auth.authhandler` -Modul ist es ausreichend, die Konfiguration zu entfernen, die mit **Adobe Granite Authentication Requirement and Login Path Handler**.
+So deaktivieren Sie die Unterstützung für die Authentifizierungspflicht, die von der `granite.auth.authhandler` -Modul verwenden, reicht es aus, die Konfiguration zu entfernen, die mit **Adobe Granite Authentication Requirement and Login Path Handler**.
 
 >[!NOTE]
 >
@@ -761,7 +761,7 @@ Dies wurde angepasst, um den Verweis auf `CugSupport` optional, um eine maximale
 
 ### AEM Live Copy {#aem-livecopy}
 
-Die Konfiguration von CUGs in Verbindung mit Live Copy wird im Repository durch das Hinzufügen eines zusätzlichen Knotens und einer zusätzlichen Eigenschaft wie folgt dargestellt:
+Das Konfigurieren von CUGs mit LiveCopy wird im Repository durch Hinzufügen eines zusätzlichen Knotens und einer zusätzlichen Eigenschaft wie folgt dargestellt:
 
 * `/content/we-retail/us/en/blueprint/rep:cugPolicy`
 * `/content/we-retail/us/en/LiveCopy@granite:loginPath`
@@ -790,7 +790,7 @@ Im Folgenden finden Sie eine Zusammenfassung der wichtigsten Unterschiede hinsic
 
 In der alten Implementierung wurde das standardmäßige Autorisierungsmodell verwendet, um Zugriffssteuerungslisten-Richtlinien bei der Veröffentlichung zu bearbeiten und bestehende ACEs durch das von der CUG angeforderte Setup zu ersetzen. Dies wurde durch das Schreiben regulärer, verbleibender JCR-Eigenschaften ausgelöst, die bei der Veröffentlichung interpretiert wurden.
 
-Mit der neuen Implementierung ist die Einrichtung der Zugriffskontrolle des Standardautorisierungsmodells nicht von der Erstellung, Änderung oder Entfernung einer CUG betroffen. Stattdessen wird ein neuer Typ von Richtlinie mit der Bezeichnung `PrincipalSetPolicy` als zusätzlicher Zugriffssteuerungsinhalt auf den Zielknoten angewendet. Diese zusätzliche Richtlinie ist ein untergeordnetes Element des Zielknotens und ist ein gleichrangiges Element des Standardrichtlinienknotens, falls dieser vorhanden ist.
+Mit der neuen Implementierung ist die Einrichtung der Zugriffskontrolle des Standardautorisierungsmodells nicht von der Erstellung, Änderung oder Entfernung einer CUG betroffen. Stattdessen wird ein neuer Typ von Richtlinie mit der Bezeichnung `PrincipalSetPolicy` als zusätzlicher Zugriffssteuerungsinhalt auf den Zielknoten angewendet. Diese zusätzliche Richtlinie befindet sich als untergeordnetes Element des Zielknotens und wäre gleichrangig mit dem standardmäßigen Richtlinienknoten, sofern vorhanden.
 
 **Bearbeiten von CUG-Richtlinien in der Zugriffssteuerungsverwaltung**
 
@@ -798,24 +798,24 @@ Dieser Wechsel von den restlichen JCR-Eigenschaften zu einer dedizierten Zugriff
 
 **Von Richtlinie definierter Zielknoten**
 
-Erstellen Sie CUG-Richtlinien auf dem JCR-Knoten, der die Unterstruktur definiert, die eingeschränktem Lesezugriff unterliegen soll. Dies ist wahrscheinlich eine AEM Seite, falls die CUG voraussichtlich die gesamte Baumstruktur betrifft.
+Erstellen Sie CUG-Richtlinien auf dem JCR-Knoten, der die Unterstruktur definiert, die eingeschränktem Lesezugriff unterliegen soll. Dies ist wahrscheinlich eine AEM Seite, falls die CUG voraussichtlich die gesamte Baumstruktur beeinflussen wird.
 
-Wird die CUG-Richtlinie am Knoten „jcr:content“ unterhalb einer bestimmten Seite platziert, so wird nur der Zugriff auf den Inhalt (im engeren Sinn) einer bestimmten Seite eingeschränkt, wobei die Richtlinie keine Auswirkungen auf gleichrangige oder untergeordnete Seiten hat. Dies kann ein gültiger Anwendungsfall sein, und es ist möglich, dies mit einem Repository-Editor zu erreichen, der es ermöglicht, feinkörnigen Zugriffsinhalt anzuwenden. Sie steht jedoch im Gegensatz zur früheren Implementierung, bei der das Platzieren einer cq:cugEnabled -Eigenschaft auf dem Knoten jcr:content intern zum Seitenknoten neu zugeordnet wurde. Diese Zuordnung wird nicht mehr durchgeführt.
+Wenn Sie die CUG-Richtlinie nur auf den Knoten jcr:content platzieren, der sich unter einer bestimmten Seite befindet, wird der Zugriff auf den Inhalt s.str einer bestimmten Seite beschränkt, er wird jedoch nicht auf gleichrangigen oder untergeordneten Seiten wirksam. Dies kann ein gültiger Anwendungsfall sein, und es ist möglich, dies mit einem Repository-Editor zu erreichen, mit dem Sie feinkörnige Zugriffsinhalte anwenden können. Sie steht jedoch im Gegensatz zur früheren Implementierung, bei der das Platzieren einer cq:cugEnabled -Eigenschaft auf dem Knoten jcr:content intern zum Seitenknoten neu zugeordnet wurde. Diese Zuordnung wird nicht mehr durchgeführt.
 
 **Berechtigungsprüfung mit CUG-Richtlinien**
 
-Die Umstellung von der alten CUG-Unterstützung auf ein zusätzliches Autorisierungsmodell verändert die Art und Weise, wie wirksame Leseberechtigungen geprüft werden. Wie in der [Jackrabbit-Dokumentation](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html) beschrieben, wird einem jeweiligen Prinzipal mit der Berechtigung zum Anzeigen von `CUGcontent` nur dann Lesezugriff gewährt, wenn die Berechtigungsprüfung aller im Oak-Repository konfigurierten Modelle Lesezugriff gewährt.
+Die Umstellung von der alten CUG-Unterstützung auf ein zusätzliches Autorisierungsmodell verändert die Art und Weise, wie wirksame Leseberechtigungen geprüft werden. Wie im Abschnitt [Jackrabbit-Dokumentation](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html), ein bestimmter Prinzipal, der die `CUGcontent` wird nur dann Lesezugriff gewährt, wenn die Berechtigungsprüfung aller im Oak-Repository konfigurierten Modelle Lesezugriff gewährt.
 
-Anders ausgedrückt, bei der Auswertung der wirksamen Berechtigungen werden sowohl `CUGPolicy` als auch die standardmäßigen Zugriffssteuerungseinträge berücksichtigt. Lesezugriff auf den CUG-Inhalt wird nur gewährt, wenn beide Richtlinientypen ihn gewähren. In einer standardmäßigen Veröffentlichungsinstallation von AEM, in der jedem Lesezugriff auf die vollständige Baumstruktur `/content` gewährt wird, haben die CUG-Richtlinien dieselben Auswirkungen wie in der alten Implementierung.
+Mit anderen Worten, für die Beurteilung der effektiven Berechtigungen `CUGPolicy` und die standardmäßigen Zugriffssteuerungseinträge werden berücksichtigt und der Lesezugriff auf den CUG-Inhalt wird nur gewährt, wenn er von beiden Richtlinientypen gewährt wird. In einer standardmäßigen AEM Veröffentlichungsinstallation, bei der Lesezugriff auf die vollständige `/content` -Struktur für alle bestimmt ist, entspricht die Wirkung der CUG-Richtlinien der alten Implementierung.
 
 **On-Demand-Auswertung**
 
-Das CUG-Autorisierungsmodell ermöglicht es, die Zugriffskontrolle und Berechtigungsprüfung einzeln zu aktivieren:
+Mit dem CUG-Autorisierungsmodell können Sie die Zugriffskontrolle und Berechtigungsprüfung einzeln aktivieren:
 
 * Die Zugriffssteuerungsverwaltung ist aktiviert, wenn das Modul über einen oder mehrere unterstützte Pfade verfügt, in denen CUGs erstellt werden können
-* Berechtigungsprüfung ist nur aktiviert, wenn Option **CUG-Prüfung aktiviert** zusätzlich überprüft wird.
+* Berechtigungsprüfung ist nur aktiviert, wenn Option **CUG-Prüfung aktiviert** ebenfalls aktiviert ist.
 
-In der neuen Standardeinrichtung von AEM wird die Prüfung von CUG-Richtlinien nur im Ausführungsmodus „publish“ aktiviert. Zeigen Sie dazu die näheren Informationen zur [Standardkonfiguration seit Einführung von AEM 6.3](#default-configuration-since-aem) an. Dies lässt sich durch den Vergleich der wirksamen Richtlinien eines Pfads mit den im Inhalt gespeicherten Richtlinien verifizieren. Wirksame Richtlinien werden nur angezeigt, wenn die Berechtigungsprüfung für CUGs aktiviert ist.
+In der neuen AEM standardmäßigen Setup-Bewertung von CUG-Richtlinien wird sie nur mit dem Ausführungsmodus &quot;publish&quot;aktiviert. Zeigen Sie dazu die näheren Informationen zur [Standardkonfiguration seit Einführung von AEM 6.3](#default-configuration-since-aem) an. Dies lässt sich durch den Vergleich der wirksamen Richtlinien eines Pfads mit den im Inhalt gespeicherten Richtlinien verifizieren. Wirksame Richtlinien werden nur angezeigt, wenn die Berechtigungsprüfung für CUGs aktiviert ist.
 
 Wie oben erklärt, werden die CUG-Zugriffssteuerungsrichtlinien nicht immer im Inhalt gespeichert, aber die Prüfung der gültigen Berechtigungen, die aus diesen Richtlinien hervorgehen, wird nur durchgesetzt, wenn in der Systemkonsole in der **CUG-Konfiguration** von Apache Jackrabbit Oak die Option **CUG-Prüfung aktiviert.** aktiviert ist. Standardmäßig wird sie nur im Ausführungsmodus „Veröffentlichen“ aktiviert.
 
@@ -825,11 +825,11 @@ Die Unterschiede bei der Authentifizierung werden nachfolgend beschrieben.
 
 #### Dedizierter Mixin-Typ für Authentifizierungspflicht {#dedicated-mixin-type-for-authentication-requirement}
 
-In der bisherigen Implementierung wurden die Autorisierungs- und Authentifizierungsaspekte einer CUG durch eine einzelne JCR-Eigenschaft ausgelöst (`cq:cugEnabled`). Insoweit die Authentifizierung betroffen ist, hat dies zu einer aktualisierten Liste von Authentifizierungspflichten geführt, die in der Apache Sling Authenticator-Implementierung gespeichert werden. Bei der neuen Implementierung wird dasselbe Ergebnis erzielt, indem der Zielknoten mit einem dedizierten Mixin-Typ (`granite:AuthenticationRequired`) markiert wird.
+In der bisherigen Implementierung wurden die Autorisierungs- und Authentifizierungsaspekte einer CUG durch eine einzelne JCR-Eigenschaft ausgelöst (`cq:cugEnabled`). Insoweit die Authentifizierung betroffen ist, hat dies zu einer aktualisierten Liste von Authentifizierungspflichten geführt, die in der Apache Sling Authenticator-Implementierung gespeichert werden. Mit der neuen Implementierung wird dasselbe Ergebnis erzielt, indem der Zielknoten mit einem dedizierten Mixin-Typ markiert wird ( `granite:AuthenticationRequired`).
 
 #### Eigenschaft zum Ausnehmen des Anmeldepfads {#property-for-excluding-login-path}
 
-Der Mixin-Typ definiert eine einzelne optionale Eigenschaft mit der Bezeichnung `granite:loginPath`, die grundsätzlich der Eigenschaft `cq:cugLoginPage` entspricht. Im Gegensatz zur vorherigen Implementierung wird die Eigenschaft des Anmeldepfads nur berücksichtigt, wenn der deklarierende Knotentyp der erwähnte Mixin ist. Das Hinzufügen einer Eigenschaft mit diesem Namen ohne Festlegen des Mixin-Typs hat keine Auswirkungen, und weder eine neue Anforderung noch ein Ausschluss für den Anmeldepfad wird dem Authentifizierer gemeldet.
+Der Mixin-Typ definiert eine einzelne optionale Eigenschaft mit der Bezeichnung `granite:loginPath`, die grundsätzlich der Eigenschaft `cq:cugLoginPage` entspricht. Im Gegensatz zur vorherigen Implementierung wird die Eigenschaft des Anmeldepfads nur berücksichtigt, wenn der deklarierende Knotentyp der erwähnte Mixin ist. Das Hinzufügen einer Eigenschaft mit diesem Namen, ohne den Mixin-Typ festzulegen, hat keine Auswirkungen, und weder eine neue Anforderung noch ein Ausschluss für den Anmeldepfad wird dem Authentifizierer gemeldet.
 
 #### Berechtigung für Authentifizierungspflicht {#privilege-for-authentication-requirement}
 
@@ -839,11 +839,11 @@ Soweit die `granite:loginPath` betrifft die Berechtigung, die zum Hinzufügen, �
 
 #### Vom Mixin-Typ definierter Zielknoten {#target-node-defined-by-mixin-type}
 
-Erstellen Sie Authentifizierungsanforderungen am JCR-Knoten, der die Unterstruktur definiert, die der erzwungenen Anmeldung unterliegen soll. Dies ist wahrscheinlich eine AEM Seite, falls die CUG voraussichtlich die gesamte Baumstruktur betrifft und die Benutzeroberfläche für die neue Implementierung dementsprechend den Mixin-Typ auth-requirement auf dem Seitenknoten hinzufügt.
+Erstellen Sie Authentifizierungsanforderungen am JCR-Knoten, der die Unterstruktur definiert, die der erzwungenen Anmeldung unterliegen soll. Dies ist wahrscheinlich eine AEM Seite, falls die CUG voraussichtlich die gesamte Baumstruktur betrifft und die Benutzeroberfläche für die neue Implementierung daher den Mixin-Typ &quot;auth-requirement&quot;auf dem Seitenknoten hinzufügt.
 
-Wenn Sie die CUG-Richtlinie nur auf den Knoten jcr:content platzieren, der sich unter einer bestimmten Seite befindet, wird der Zugriff auf den Inhalt nur eingeschränkt, jedoch keine Auswirkungen auf den Seitenknoten selbst oder auf untergeordnete Seiten.
+Wenn Sie die CUG-Richtlinie nur auf dem Knoten jcr:content unterhalb einer bestimmten Seite platzieren, wird der Zugriff auf den Inhalt nur eingeschränkt. Sie hat jedoch keine Auswirkungen auf den Seitenknoten selbst oder auf untergeordnete Seiten.
 
-Dies kann ein gültiges Szenario sein. Sie erreichen dies mithilfe eines Repository-Editors, der die Platzierung des Mixin-Typs an allen Knoten ermöglicht. Allerdings stellt das Verhalten einen Kontrast zur vorherigen Implementierung dar, wo eine auf dem Knoten „jcr:content“ platzierte Eigenschaft „cq:cugEnabled“ oder „cq:cugLoginPage“ intern dem Seitenknoten zugeordnet wurde. Diese Zuordnung wird nicht mehr durchgeführt.
+Dies kann ein gültiges Szenario sein und ist mit einem Repository-Editor möglich, mit dem Sie das Mixin an einem beliebigen Knoten platzieren können. Allerdings stellt das Verhalten einen Kontrast zur vorherigen Implementierung dar, wo eine auf dem Knoten „jcr:content“ platzierte Eigenschaft „cq:cugEnabled“ oder „cq:cugLoginPage“ intern dem Seitenknoten zugeordnet wurde. Diese Zuordnung wird nicht mehr durchgeführt.
 
 #### Konfigurierte unterstützte Pfade {#configured-supported-paths}
 
@@ -865,7 +865,7 @@ Die alte Implementierung der CUG-Unterstützung ist veraltet und wird in zukünf
 
 Bei einer aktualisierten AEM ist es wichtig sicherzustellen, dass nur eine CUG-Implementierung aktiviert ist. Die Kombination der neuen und alten, veralteten CUG-Unterstützung wird nicht getestet und kann wahrscheinlich zu unerwünschtem Verhalten führen:
 
-* Kollisionen im Sling Authenticator in Bezug auf Authentifizierungsanforderungen
+* Kollisionen im Sling Authenticator hinsichtlich Authentifizierungsanforderungen
 * Lesezugriff verweigert, wenn das mit der alten CUG verknüpfte ACL-Setup mit einer neuen CUG-Richtlinie kollidiert.
 
 ### Migrieren vorhandener CUG-Inhalte {#migrating-existing-cug-content}
@@ -873,7 +873,7 @@ Bei einer aktualisierten AEM ist es wichtig sicherzustellen, dass nur eine CUG-I
 Adobe bietet ein Tool für die Migration zur neuen CUG-Implementierung. Führen Sie die folgenden Schritte aus, um sie zu verwenden:
 
 1. Navigieren Sie zu `https://<serveraddress>:<serverport>/system/console/cug-migration`, um auf das Tool zuzugreifen.
-1. Geben Sie den Stammpfad ein, für den Sie CUGs überprüfen möchten, und drücken Sie die **Ausführen von Trockenlauf** Schaltfläche. Dies löst am angegebenen Speicherort eine Suche nach CUGs aus, die konvertiert werden können.
+1. Geben Sie den Stammpfad ein, für den Sie CUGs überprüfen möchten, und drücken Sie die **Ausführen von Trockenlauf** Schaltfläche. Dies sucht nach CUGs, die für die Konvertierung am ausgewählten Speicherort infrage kommen.
 1. Klicken Sie nach der Prüfung der Ergebnisse auf die Schaltfläche **Migration durchführen**, um zur neuen Implementierung zu migrieren.
 
 >[!NOTE]

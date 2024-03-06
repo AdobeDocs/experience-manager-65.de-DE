@@ -2,10 +2,10 @@
 title: Decoration-Tag
 description: Wenn eine Komponente einer Web-Seite gerendert wird, kann ein HTML-Element generiert werden, das die gerenderte Komponente in sich einschließt. Für Entwickler bietet AEM eine klare und einfache Logik für die Steuerung von Decoration-Tags, die enthaltene Komponenten einschließen.
 exl-id: d049ebf1-7fa6-4d2c-86f9-b18e107092ea
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 97%
+source-wordcount: '879'
+ht-degree: 93%
 
 ---
 
@@ -96,7 +96,7 @@ Bei allen nachfolgenden Beispielen wird von der folgenden Inhaltsstruktur und de
 
 #### Anwendungsfall 1: Einfügen einer Komponente zur Wiederverwendung von Code {#use-case-include-a-component-for-code-reuse}
 
-Der häufigste Anwendungsfall besteht darin, dass eine Komponente eine andere Komponente enthält, damit Code erneut verwendet werden kann. In diesem Fall soll die enthaltene Komponente nicht mit ihrer eigenen Symbolleiste und ihrem eigenen Dialogfeld bearbeitbar sein, sodass kein Wrapper notwendig ist. Das `cq:htmlTag` der Komponente wird ignoriert. Dies gilt als das Standardverhalten.
+Der häufigste Anwendungsfall besteht darin, dass eine Komponente eine andere Komponente enthält, damit Code erneut verwendet werden kann. In diesem Fall soll die enthaltene Komponente nicht mit ihrer eigenen Symbolleiste und ihrem eigenen Dialogfeld bearbeitbar sein, sodass kein Wrapper erforderlich ist und die Komponente `cq:htmlTag` werden ignoriert. Dies gilt als das Standardverhalten.
 
 `one.html: <sly data-sly-resource="child"></sly>`
 

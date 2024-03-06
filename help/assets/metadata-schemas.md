@@ -7,10 +7,10 @@ role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '3595'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -124,8 +124,8 @@ Um sicherzustellen, dass die Komponente ordnungsgemäß im Metadatenschema-Formu
 * **Platzhalter**: Verwenden Sie diese Eigenschaft, um relevanten Platzhaltertext für die Metadateneigenschaft anzugeben.
 * **Erforderlich**: Mit dieser Eigenschaft können Sie eine Metadateneigenschaft auf der Eigenschaftsseite als obligatorisch markieren.
 * **Bearbeitung deaktivieren**: Verwenden Sie diese Eigenschaft, um die Bearbeitung einer Eigenschaft auf der Eigenschaftsseite zu verbieten.
-* **Leeres Feld schreibgeschützt anzeigen**: Markieren Sie diese Eigenschaft, um eine Metadateneigenschaft auch dann auf der Eigenschaftenseite anzuzeigen, wenn sie keinen Wert aufweist. Standardmäßig werden Metadateneigenschaften ohne Werte nicht auf der Eigenschaftenseite aufgeführt.
-* **Listenreihenfolge anzeigen**: Verwenden Sie diese Eigenschaft, um eine geordnete Liste von Optionen anzuzeigen.
+* **Leeres Feld schreibgeschützt anzeigen**: Markieren Sie diese Eigenschaft, damit eine Metadateneigenschaft auch dann auf der Eigenschaftenseite angezeigt wird, wenn sie keinen Wert aufweist. Standardmäßig werden Metadateneigenschaften ohne Werte nicht auf der Eigenschaftenseite aufgeführt.
+* **Liste geordnet anzeigen**: Mit dieser Eigenschaft zeigen Sie eine geordnete Liste von Optionen an.
 * **Wahlen**: Mit dieser Eigenschaft legen Sie Optionen in einer Liste fest.
 * **Beschreibung**: Mit dieser Eigenschaft können Sie eine kurze Beschreibung für die Metadatenkomponente hinzufügen.
 * **Klasse**: Objektklasse, mit der die Eigenschaft verknüpft ist.
@@ -139,7 +139,7 @@ Wenn Sie die Option **[!UICONTROL Erforderlich]** auswählen, können Sie nach A
 
  ![In der Eigenschaft „Metadatenvalidierung“ des Bedienfelds „Filter“ ausgewählte Option](assets/invalid-metadata-predicate.png)
 
-Wenn Sie die Komponente &quot;Kontextuelle Metadaten&quot;zu einer Registerkarte eines Schemaformulars hinzufügen, wird die Komponente auf der Eigenschaftenseite von Assets, auf die das bestimmte Schema angewendet wird, als Liste angezeigt. Die Liste enthält alle anderen Registerkarten außer der Registerkarte, auf die Sie die Komponente „Kontextuelle Metadaten“ angewendet haben. Derzeit bietet diese Funktion grundlegende Funktionalität zur Steuerung der Anzeige von Metadaten, die auf dem Kontext basieren.
+Wenn Sie die Komponente „Kontextuelle Metadaten“ zu einer beliebigen Registerkarte eines beliebigen Schemaformulars hinzufügen, erscheint die Komponente als Liste auf der Eigenschaftsseite der Assets, auf die das jeweilige Schema angewendet wird. Die Liste enthält alle anderen Registerkarten außer der Registerkarte, auf die Sie die Komponente „Kontextuelle Metadaten“ angewendet haben. Derzeit bietet diese Funktion grundlegende Funktionalität zur Steuerung der Anzeige von Metadaten, die auf dem Kontext basieren.
 
 ![Registerkarten für die Auflistung von kontextbezogenen Metadaten-Komponenten von Asset-Eigenschaften](assets/metadata-contextual-component-list.png)
 
@@ -192,9 +192,9 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
 1. Gehen Sie in der [!DNL Experience Manager]-Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenschemata]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Schemaformulare]** ein Schemaformular aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Bearbeiten]**, um das Schema zu bearbeiten.
 
-   ![Auswahlformular](assets/select_form.png)
+   ![select_form](assets/select_form.png)
 
-1. (Optional) Erstellen Sie im Metadatenschema-Editor ein Feld, um Bedingungen zu erstellen. Geben Sie einen Namen und einen Eigenschaftspfad auf der Registerkarte **[!UICONTROL Einstellungen]** an. 
+1. (Optional) Erstellen Sie im Metadatenschema-Editor ein Feld zur Konditionalisierung. Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** einen Namen und einen Eigenschaftspfad an. 
 
    Um eine Registerkarte zu erstellen, klicken Sie auf `+` , um eine Registerkarte hinzuzufügen und anschließend ein Metadatenfeld hinzuzufügen.
 
@@ -220,7 +220,7 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
 
    >[!NOTE]
    >
-   >Wenn Sie Auswahlmöglichkeiten hinzufügen, wird beim Klicken auf das Dropdown-Feld die Benutzeroberfläche verzerrt dargestellt und die Option „Löschen“ für die Auswahlmöglichkeiten funktioniert nicht mehr. Klicken Sie erst auf die Dropdown-Liste, wenn Sie die Änderungen gespeichert haben. Wenn dieses Problem auftritt, speichern Sie das Schema und öffnen Sie es erneut, um die Bearbeitung fortzusetzen.
+   >Wenn Sie Auswahlmöglichkeiten hinzufügen, wird beim Klicken auf das Dropdown-Feld die Benutzeroberfläche verzerrt dargestellt und die Option „Löschen“ für die Auswahlmöglichkeiten funktioniert nicht mehr. Klicken Sie nicht auf das Dropdown-Element, bis Sie die Änderungen gespeichert haben. Wenn dieses Problem auftritt, speichern Sie das Schema und öffnen Sie es erneut, um die Bearbeitung fortzusetzen.
 
 1. (Optional) Fügen Sie die anderen erforderlichen Felder hinzu. Beispielsweise das Format, den Codec und die Dauer für den Asset-Typ „Video“.
 
@@ -239,7 +239,7 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
 
    >[!NOTE]
    >
-   >Dropdown-Menüs mit manuell vordefinierten Werten können mit Regeln verwendet werden. Dropdown-Menüs mit konfiguriertem JSON-Pfad können nicht mit Regeln verwendet werden, die vordefinierte Werte zur Anwendung von Bedingungen nutzen. Wenn die Werte zur Laufzeit aus einer JSON-Datei geladen werden, ist es nicht möglich, vordefinierte Regeln anzuwenden.
+   >Dropdown-Menüs mit manuell vordefinierten Werten können mit Regeln verwendet werden. Dropdown-Menüs mit konfiguriertem JSON-Pfad können nicht mit Regeln verwendet werden, die vordefinierte Werte verwenden, um Bedingungen anzuwenden. Wenn die Werte zur Laufzeit aus einer JSON-Datei geladen werden, ist es nicht möglich, vordefinierte Regeln anzuwenden.
 
 1. Wählen Sie unter **[!UICONTROL Sichtbarkeit]** die Option **[!UICONTROL Sichtbar, basierend auf neuer Regel]** aus.
 
@@ -330,7 +330,7 @@ Nur Assets, die in den Ordner hochgeladen werden, auf den dieses Schema angewend
 Die Metadatenübernahme durch Assets richtet sich nach dem Schema, das auf den Ordner der ersten Ebene in der Hierarchie angewendet wird. Dasselbe Schema wird auf die Unterordner angewendet oder von diesen übernommen. Wenn ein anderes Schema auf Unterordnerebene angewendet wird, stoppt die Übernahme.
 
 1. Gehen Sie in der [!DNL Experience Manager]-Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenschemata]**. Die Seite **[!UICONTROL Metadatenschema-Formulare]** wird angezeigt.
-1. Aktivieren Sie das Kontrollkästchen vor einem Formular, z. B. dem Standard-Metadatenformular, und klicken Sie auf **[!UICONTROL Kopieren]** und speichern Sie es als benutzerdefiniertes Formular. Geben Sie einen benutzerdefinierten Namen für das Formular an, beispielsweise `my_default`. Alternativ können Sie ein benutzerdefiniertes Formular erstellen.
+1. Aktivieren Sie das Kontrollkästchen vor einem Formular, z. B. dem Standardformular für Metadaten, klicken Sie auf **[!UICONTROL Kopieren]** und speichern Sie es als benutzerdefiniertes Formular. Geben Sie einen benutzerdefinierten Namen für das Formular an, beispielsweise `my_default`. Alternativ können Sie ein benutzerdefiniertes Formular erstellen.
 
 1. Wählen Sie auf der Seite **[!UICONTROL Metadatenschema-Formulare]** das Formular `my_default` und klicken Sie dann auf **[!UICONTROL Bearbeiten]**.
 

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 docset: aem65
 exl-id: 4f45ad22-611b-4b4f-8e89-cb64a122b70a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 99%
+source-wordcount: '1274'
+ht-degree: 96%
 
 ---
 
@@ -117,7 +117,7 @@ Weitere Informationen zu Formularanalyseberichten finden Sie unter [Anzeigen und
 
 In diesem Schritt analysieren Sie Datenpunkte im Analysebericht und schließen auf die Leistung des Formulars. Wenn es Ihre Erfolgs-KPIs nicht erfüllt, erstellen Sie auf Daten basierende Hypothesen und finden mögliche Lösungen, um die Probleme zu beheben. Beispiel:
 
-* Wenn die durchschnittliche Füllzeit für das Formular höher als erwartet ist, könnte Ihr Formular für die Kunden zu schwer verständlich sein, keine Standardterminologie enthalten, zu lang sein und so weiter. In diesem Fall sollten Sie die Formularstruktur und -felder vereinfachen, das Formular-Design überarbeiten, das Formular kürzen oder Hilfebeschreibungen und Beispiele für nicht standardmäßige Formularfelder hinzufügen.
+* Wenn die durchschnittliche Füllzeit für das Formular höher ist als erwartet, ist es möglich, dass Ihr Formular für die Kunden komplex zu verstehen ist, dass das Formular keine Standardterminologie verwendet, das Formular zu lang ist usw. In diesem Fall sollten Sie die Formularstruktur und -felder vereinfachen, das Formular-Design überarbeiten, das Formular kürzen oder Hilfebeschreibungen und Beispiele für nicht standardmäßige Formularfelder hinzufügen.
 * Wenn die Daten zeigen, dass die meisten Kundinnen und Kunden auf die Hilfe für ein bestimmtes Formular-Panel zugreifen, ist es offensichtlich, dass ihnen nicht klar ist, welche Informationen sie eingeben sollen. Sie sollten dann eine alternative Terminologie verwenden oder einige Beispieleingaben und Hilfebeschreibung für dieses Panel hinzufügen.
 * Wenn die Abbruchrate für ein Formular höher als erwartet ist, kann es daran liegen, dass die Wiedergabe des Formulars zu lange dauert, Kundinnen und Kunden es versehentlich aufrufen oder es zu schwierig ist. In diesem Fall sollten Sie die Formularbeschreibung optimieren, die in den Suchergebnissen angezeigt wird, das Formular vereinfachen, es für eine schnellere Ladezeit optimieren usw.
 

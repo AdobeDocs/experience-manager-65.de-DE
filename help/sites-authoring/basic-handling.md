@@ -7,10 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2963'
-ht-degree: 61%
+source-wordcount: '2964'
+ht-degree: 63%
 
 ---
 
@@ -21,14 +21,14 @@ ht-degree: 61%
 >* Auf dieser Seite erhalten Sie einen Überblick über die grundlegende Handhabung der Adobe Experience Manager (AEM)-Autorenumgebung. Als Grundlage wird die **Sites-Konsole** verwendet.
 >
 >* Einige Funktionen stehen nicht in allen Konsolen zur Verfügung und in einigen Konsolen können zusätzliche Funktionen zur Verfügung stehen. Ausführlichere Informationen zu den einzelnen Konsolen und ihren jeweiligen Funktionen finden Sie auf anderen Seiten.
->* In AEM sind Tastaturbefehle verfügbar. Insbesondere wenn [Verwenden von Konsolen](/help/sites-authoring/keyboard-shortcuts.md) und [Seiten bearbeiten](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+>* In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Insbesondere bei [der Verwendung von Konsolen](/help/sites-authoring/keyboard-shortcuts.md) und [der Bearbeitung von Seiten](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
 ## Erste Schritte {#getting-started}
 
 ### Touch-optimierte Benutzeroberfläche {#a-touch-enabled-ui}
 
-Die Benutzeroberfläche für AEM wurde für Touchscreens optimiert. Eine Touch-optimierte Benutzeroberfläche ermöglicht es Ihnen, mithilfe von Gesten wie &quot;Auswählen&quot;, &quot;Berühren und Halten&quot;und &quot;Wischen&quot;mit der Software zu interagieren. Im Gegensatz dazu werden auf herkömmlichen Desktop-Benutzeroberflächen Mausaktionen verwendet, wie z. B. Klicken, Doppelklicken, mit der rechten Maustaste klicken und Bewegen der Maus über ein Objekt.
+Die Benutzeroberfläche für AEM wurde für Touchscreens optimiert. Über die Touch-optimierte Benutzeroberfläche können Sie mithilfe von Berührungen wie Wählen, Berühren und Halten oder Wischen mit der Software interagieren. Im Gegensatz dazu werden auf herkömmlichen Desktop-Benutzeroberflächen Mausaktionen verwendet, wie z. B. Klicken, Doppelklicken, mit der rechten Maustaste klicken und Bewegen der Maus über ein Objekt.
 
 Da die AEM-Benutzeroberfläche Touch-optimiert ist, können Sie auf Ihren Touch-Geräten (z. B. einem Smartphone oder Tablet) Touch-Gesten und auf einem traditionellen Desktop-Gerät Mausaktionen nutzen.
 
@@ -52,7 +52,7 @@ Wenn eine Benutzerin oder ein Benutzer zum ersten Mal auf eine Konsole zugreift,
 
 Klicks **Nächste** um zur nächsten Seite der Übersicht zu gelangen. Klicks **Schließen** oder klicken Sie außerhalb des Übersichtsdialogfelds, um das Dialogfeld zu schließen.
 
-Die Übersicht wird beim nächsten Zugriff auf eine Konsole neu gestartet, es sei denn, Sie sehen alle Folien oder aktivieren die Option **Zeigt das nicht noch einmal an**.
+Die Übersicht wird beim nächsten Zugriff auf eine Konsole neu gestartet, es sei denn, Sie sehen alle Folien oder aktivieren die Option **Nicht erneut anzeigen**.
 
 ## Globale Navigation {#global-navigation}
 
@@ -228,7 +228,7 @@ Ihnen stehen verschiedene Hilferessourcen zur Verfügung:
 
 * **Konsolensymbolleiste**
 
-  Je nach Standort kann die **Hilfe** -Symbol öffnet die entsprechenden Ressourcen:
+  Durch Auswahl des Symbols **Hilfe** werden abhängig von Ihrer Position die geeigneten Ressourcen geöffnet:
 
   ![Konsolensymbolleiste](assets/bh-10.png)
 
@@ -289,7 +289,7 @@ Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbo
 
 In [Kartenansicht](#cardviewquickactions), sind bestimmte Aktionen als Schnellaktion-Symbole und in der Symbolleiste verfügbar. Schnellaktionssymbole sind jeweils nur für ein Element verfügbar, sodass Sie keine Vorauswahl treffen müssen.
 
-Die Schnellaktionen sind sichtbar, wenn Sie mit dem Mauszeiger über eine Ressourcenkarte (Desktop-Gerät) fahren. Die verfügbaren Schnellaktionen können von der Konsole und dem Kontext abhängen. Hier finden Sie beispielsweise die Schnellaktionen für eine Seite in der **Sites**-Konsole:
+Die Schnellaktionen sind sichtbar, wenn Sie den Mauszeiger (auf Desktop-Geräten) über eine Ressourcenkarte bewegen. Die verfügbaren Schnellaktionen können von der Konsole und dem Kontext abhängen. Hier finden Sie beispielsweise die Schnellaktionen für eine Seite in der **Sites**-Konsole:
 
 ![Schnellaktionen](assets/bh-13.png)
 
@@ -475,7 +475,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
    * **Geändert** – Datum und Person der letzten Änderung
    * **Veröffentlicht** – Veröffentlichungsstatus
    * **Vorlage** – Vorlage, auf der die Seite basiert
-   * **Workflow** – Workflow, der derzeit auf die Seite angewendet ist. Weitere Informationen sind verfügbar, wenn Sie die Maus darauf bewegen oder die Timeline öffnen.
+   * **Workflow** – Workflow, der derzeit auf die Seite angewendet ist. Weitere Informationen sind verfügbar, wenn Sie die Maus darüber bewegen oder die Timeline öffnen.
 
    * **Seiten-Analytik**
    * **Unique Visitors**

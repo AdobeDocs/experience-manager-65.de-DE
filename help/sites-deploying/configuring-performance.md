@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6469'
+source-wordcount: '6470'
 ht-degree: 99%
 
 ---
@@ -509,7 +509,7 @@ Die Formel zur Berechnung des Cache-Verhältnisses lautet:
 
 Wenn beispielsweise die Gesamtzahl der Anfragen 129491 und die Anzahl der von der Publishing-Instanz bereitgestellten Anforderungen 58959 beträgt, dann ist das Cache-Verhältnis: **(129491 - 58959)/129491= 54,5 %**.
 
-Wenn Sie keine 1-zu-1-Kopplung zwischen Publisher und Dispatcher haben, fügen Sie Anforderungen von allen Dispatchern und Publishern hinzu, um eine genaue Messung zu erhalten. Siehe auch [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md).
+Wenn Sie keine 1-zu-1-Kopplung zwischen Publisher und Dispatcher haben, fügen Sie Anforderungen von allen Dispatchern und Herausgebern hinzu, um eine genaue Messung zu erhalten. Siehe auch [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md).
 
 >[!NOTE]
 >

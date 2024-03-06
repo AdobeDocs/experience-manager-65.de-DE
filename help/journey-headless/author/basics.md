@@ -2,10 +2,10 @@
 title: Grundlagen zum Authoring
 description: Erfahren Sie mehr über die Konzepte und Mechanismen sw Authoring für Ihr Headless-CMS mithilfe von Inhaltsfragmenten.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1691'
-ht-degree: 95%
+source-wordcount: '1694'
+ht-degree: 94%
 
 ---
 
@@ -102,7 +102,7 @@ Dazu können Sie im Abschnitt **Dateien** der Assets-Konsole eine Reihe von Ordn
 
 ![Option „Ordner erstellen“](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Ein Dialogfeld wird geöffnet, in das Sie die Details eingeben und dann mit **Erstellen**:
+Daraufhin wird ein Dialogfeld geöffnet, in dem Sie die Details eingeben und dann mit **Erstellen** bestätigen können:
 
 ![Dialogfeld „Ordner erstellen“](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -126,7 +126,7 @@ Navigieren Sie dann durch diese Ordner, um Ihre Inhaltsfragmente zu erstellen un
 
 Nur für den Fall...
 
-Sie erhalten wahrscheinlich einen ersten Ordner, unter dem Sie Ihre Ordner erstellen können. Dies liegt daran, dass einige Konfigurationsdetails (normalerweise von einem Entwickler oder Systemadministrator) auf den Stammordner angewendet werden müssen. Dies wird Sie wahrscheinlich nicht interessieren, aber bei Bedarf können Sie die **Konfiguration** inn den **Cloud-Services** des Ordners **Eigenschaften** überprüfen:
+Sie erhalten wahrscheinlich einen ersten Ordner, unter dem Sie Ihre Ordner erstellen können. Dies liegt daran, dass einige Konfigurationsdetails (normalerweise von einem Entwickler oder Systemadministrator) auf den Stammordner angewendet werden müssen. Dies ist wahrscheinlich nicht von Interesse für Sie, aber bei Bedarf können Sie die **Konfiguration** im **Cloud Service** der Ordner **Eigenschaften**:
 
 ![Erstellen von Ordnereigenschaften – Konfiguration](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 

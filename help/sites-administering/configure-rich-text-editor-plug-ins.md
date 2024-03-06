@@ -3,10 +3,10 @@ title: Konfigurieren der Rich-Text-Editor-Plug-ins
 description: Erfahren Sie, wie Sie die Rich-Text-Editor-Plug-ins von Adobe Experience Manager konfigurieren, um einzelne Funktionen zu aktivieren.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '4391'
-ht-degree: 62%
+ht-degree: 75%
 
 ---
 
@@ -23,7 +23,7 @@ Weitere Informationen zu den anderen RTE-Konfigurationen finden Sie unter [Konfi
 
 ## Aktivieren von Plug-ins und Konfigurieren der Eigenschaft „features“ {#activateplugin}
 
-Gehen Sie wie folgt vor, um ein Plug-in zu aktivieren. Einige Schritte sind nur erforderlich, wenn Sie ein Plug-in zum ersten Mal konfigurieren, da die entsprechenden Knoten nicht vorhanden sind.
+Gehen Sie wie folgt vor, um ein Plug-in zu aktivieren. Einige Schritte sind nur erforderlich, wenn Sie ein Plug-in zum ersten Mal konfigurieren, da die entsprechenden Knoten noch nicht vorhanden sind.
 
 Standardmäßig sind die Plug-ins `format`, `link`, `list`, `justify` und `control` sowie alle ihre Funktionen im RTE aktiviert.
 
@@ -75,9 +75,9 @@ Das Dialogfeld „Suchen und ersetzen“ wird transparent, wenn auf „Suchen“
 
 ## Konfigurieren der Einfügemodi {#paste-modes}
 
-Bei Verwendung des RTE können Autoren Inhalte in einen der folgenden drei Modi einfügen:
+Bei Verwendung von RTE können Autorinnen und Autoren Inhalte in einem der folgenden drei Modi einfügen:
 
-* **Browsermodus**: Fügen Sie Text mithilfe der standardmäßigen Einfügeimplementierung des Browsers ein. Dieses Verfahren wird nicht empfohlen, da es unerwünschte Markups verursachen kann.
+* **Browser-Modus**: Fügen Sie Text mithilfe der standardmäßigen Implementierung von „Einfügen“ des Browsers ein. Dieses Verfahren wird nicht empfohlen, da es unerwünschte Markups verursachen kann.
 
 * **Klartextmodus**: Fügen Sie Inhalte aus der Zwischenablage als Text ein. Dadurch werden alle Stil- und Formatierungselemente vom kopierten Inhalt entfernt, bevor er in eine Komponente von [!DNL Experience Manager] eingefügt wird.
 
@@ -95,17 +95,17 @@ Sie können Ihren Autoren in der RTE-Symbolleiste nur einige, alle oder keine di
 
 Um die Anzeige der Symbole in RTE zu konfigurieren, führen Sie folgende Schritte aus.
 
-1. Navigieren Sie zu Ihrer Komponente, beispielsweise `/apps/<myProject>/components/text`.
+1. Navigieren Sie zu Ihrer Komponente, z. B. `/apps/<myProject>/components/text`.
 1. Navigieren Sie zum Knoten `rtePlugins/edit`. Lesen Sie die Informationen unter [Aktivieren von Plug-ins](#activateplugin), falls noch kein Knoten vorhanden ist.
 1. Erstellen Sie die Eigenschaft `features` im Knoten `edit` und fügen Sie eine oder mehrere Funktionen hinzu. Speichern Sie alle Änderungen.
 
 ### Verhalten des Symbols bzw. der Tastenkombination „Einfügen (STRG+V)“ konfigurieren {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
 
-Sie können das Verhalten der **[!UICONTROL Einfügen (Strg+V)]** mit den folgenden Schritten. Diese Konfiguration definiert auch das Verhalten des Tastaturbefehls Strg+V, das Autoren zum Einfügen von Inhalten verwenden.
+Sie können das Verhalten des Symbols **[!UICONTROL Einfügen (Strg+V)]** mit den folgenden Schritten vorkonfigurieren. Diese Konfiguration definiert auch das Verhalten des Tastaturbefehls Strg+V, den Autorinnen und Autoren zum Einfügen von Inhalten verwenden.
 
 Die Konfiguration ermöglicht die folgenden drei Arten von Anwendungsfällen:
 
-* Fügen Sie Text mithilfe der standardmäßigen Einfügeimplementierung des Browsers ein. Dieses Verfahren wird nicht empfohlen, da es unerwünschte Markups verursachen kann. Konfiguriert mithilfe von `browser`, wie unten gezeigt.
+* Fügen Sie Text mithilfe der standardmäßigen Implementierung des Browsers zum Einfügen ein. Dieses Verfahren wird nicht empfohlen, da es unerwünschte Markups verursachen kann. Konfiguriert mithilfe von `browser`, wie unten gezeigt.
 
 * Fügen Sie den Inhalt aus der Zwischenablage als Text ein. Dadurch werden alle Stil- und Formatierungselemente vom kopierten Inhalt entfernt, bevor er in eine AEM-Komponente eingefügt wird. Konfiguriert mithilfe von `plaintext`, wie unten gezeigt.
 
@@ -191,9 +191,9 @@ Ein Beispiel für eine gültige `htmlPasteRules`-Struktur ist unten aufgeführt.
 
 ## Konfigurieren von Textstilen {#textstyles}
 
-Autoren können Stile anwenden, um das Erscheinungsbild eines Textabschnitts zu ändern. Die Stile basieren auf CSS-Klassen, die Sie in Ihrem CSS-Stylesheet vordefinieren. Stilisierter Inhalt wird in `span`-Tags eingeschlossen, wobei das Attribut `class` zum Verweis auf die CSS-Klasse verwendet wird. Beispiel: `<span class=monospaced>Monospaced Text Here</span>`.
+Autorinnen und Autoren können Stile anwenden, um das Erscheinungsbild eines Textabschnitts zu ändern. Die Stile basieren auf CSS-Klassen, die Sie in Ihrem CSS-Stylesheet vordefinieren. Stilisierter Inhalt wird in `span`-Tags eingeschlossen, wobei das Attribut `class` zum Verweis auf die CSS-Klasse verwendet wird. Beispiel: `<span class=monospaced>Monospaced Text Here</span>`.
 
-Wenn das Styles-Plug-in zum ersten Mal aktiviert wird, sind keine Standardstile verfügbar. Die Popup-Liste ist leer. Gehen Sie wie folgt vor, um den Autoren Stile bereitzustellen:
+Wenn das Plug-in „Stile“ zum ersten Mal aktiviert wird, sind keine Standardstile verfügbar. Die Popup-Liste ist leer. Gehen Sie wie folgt vor, um Stile für Autorinnen und Autoren bereitzustellen:
 
 * Aktivieren Sie die Dropdown-Auswahl „Stil“.
 * Geben Sie die Speicherorte der Stylesheets an.
@@ -226,7 +226,7 @@ Dazu aktivieren Sie das Stil-Plug-in.
 
 Geben Sie dann die Speicherorte der Stylesheets an, auf die Sie verweisen möchten:
 
-1. Navigieren Sie zum Stammknoten Ihrer Textkomponente, z. B. `/apps/<myProject>/components/text`.
+1. Navigieren Sie zum Stammknoten der Textkomponente, beispielsweise `/apps/<myProject>/components/text`.
 1. Fügen Sie dem übergeordneten Knoten des Knotens `<rtePlugins-node>` die Eigenschaft `externalStyleSheets` hinzu:
 
    * **Name** `externalStyleSheets`
@@ -274,15 +274,15 @@ Geben Sie dann die Speicherorte der Stylesheets an, auf die Sie verweisen möcht
 
    * **Name** `text`
    * **Typ** `String`
-   * **Wert** Beschreibung des Stils; wird im Dropdown-Auswahlfeld Stil angezeigt.
+   * **Wert**: Beschreibung des Stils. Sie wird im Dropdown-Auswahlfeld „Stil“ angezeigt.
 
 1. Speichern Sie die Änderungen.
 
-   Wiederholen Sie die obigen Schritte für jeden erforderlichen Stil.
+   Wiederholen Sie die obigen Schritte für jeden benötigten Stil.
 
 ### RTE für optimale Wortumbrüche auf Japanisch konfigurieren {#jpwordwrap}
 
-Autoren, die AEM verwenden, um japanische Sprachinhalte zu erstellen, können einen Stil auf Zeichen anwenden, um Zeilenumbrüche zu vermeiden, bei denen kein Umbruch erforderlich ist. Dadurch können Autoren die Sätze an der gewünschten Position umbrechen lassen. Der Stil dieser Funktion basiert auf der CSS-Klasse, die im CSS-Stylesheet vordefiniert ist.
+Autoren, die AEM verwenden, um japanische Sprachinhalte zu erstellen, können einen Stil auf Zeichen anwenden, um Zeilenumbrüche zu vermeiden, bei denen kein Umbruch erforderlich ist. Dadurch können Autorinnen und Autoren die Sätze an der gewünschten Position umbrechen lassen. Der Stil dieser Funktion basiert auf der CSS-Klasse, die im CSS-Stylesheet vordefiniert ist.
 
 >[!NOTE]
 >
@@ -319,7 +319,7 @@ Führen Sie folgende Schritte aus, um den Stil zu erstellen, den Autoren auf jap
 
 ## Konfigurieren der Absatzformate {#paraformats}
 
-Jeglicher im RTE verfasster Text wird in einem Block-Tag platziert, standardmäßig handelt es sich dabei um das Tag `<p>`. Durch Aktivierung des `paraformat`-Plug-ins können Sie weitere Block-Tags festlegen, die mithilfe einer Dropdown-Auswahlliste Absätzen zugewiesen werden können. Absatzformate bestimmen den Absatztyp durch Zuweisung des richtigen Block-Tags. Der Autor kann sie mithilfe der Auswahl &quot;Format&quot;auswählen und zuweisen. Die Beispiel-Block-Tags umfassen unter anderem den Standardabsatz &lt;p> und Überschriften &lt;h1>, &lt;h2>usw.
+Jeglicher im RTE verfasster Text wird in einem Block-Tag platziert, standardmäßig handelt es sich dabei um das Tag `<p>`. Durch Aktivierung des `paraformat`-Plug-ins können Sie weitere Block-Tags festlegen, die mithilfe einer Dropdown-Auswahlliste Absätzen zugewiesen werden können. Absatzformate bestimmen den Absatztyp durch Zuweisung des richtigen Block-Tags. Die Autorin bzw. der Autor kann sie mithilfe der Selektors „Format“ auswählen und zuweisen. Die Beispiel-Block-Tags umfassen unter anderem den Standardabsatz &lt;p> und Überschriften &lt;h1>, &lt;h2>usw.
 
 >[!CAUTION]
 >
@@ -327,9 +327,9 @@ Jeglicher im RTE verfasster Text wird in einem Block-Tag platziert, standardmä�
 
 >[!NOTE]
 >
->Wenn beispielsweise ein Block-Tag &lt;hr> -Tag, einem Absatz nicht zugewiesen werden kann, ist dies kein gültiger Anwendungsfall für ein Paraformat-Plug-in.
+>Wenn beispielsweise ein Block-Tag &lt;hr> -Tag nicht einem Absatz zugewiesen werden können, ist dies kein gültiger Anwendungsfall für ein Paraformat-Plug-in.
 
-Wenn das Plug-in Absatzformate zum ersten Mal aktiviert wird, sind keine standardmäßigen Absatzformate verfügbar. Die Popup-Liste ist leer. Gehen Sie wie folgt vor, um den Autoren Absatzformate bereitzustellen:
+Wenn das Plug-in „Absatzformate“ zum ersten Mal aktiviert wird, sind keine standardmäßigen Absatzformate verfügbar. Die Popup-Liste ist leer. Gehen Sie wie folgt vor, um den Autoren Absatzformate bereitzustellen:
 
 * Aktivieren Sie die Dropdown-Auswahlliste „Format“.
 * Geben Sie die Block-Tags an, die aus der Dropdown-Liste als Absatzformate ausgewählt werden können.
@@ -388,7 +388,7 @@ Absatzformate werden wie folgt zur Auswahl bereitgestellt:
 
    * **Name** `description`
    * **Typ** `String`
-   * **Wert** Der beschreibende Text für dieses Format, beispielsweise Absatz, Überschrift 1, Überschrift 2. Dieser Text wird in der Liste Formatauswahl angezeigt.
+   * **Wert** Der beschreibende Text für dieses Format, beispielsweise Absatz, Überschrift 1, Überschrift 2. Dieser Text wird in der Auswahlliste „Format“ angezeigt.
 
 1. Speichern Sie die Änderungen.
 
@@ -476,7 +476,7 @@ Sobald die Eigenschaft gespeichert wurde, wird das entsprechende Zeichen in CRXD
 
 ## Konfigurieren von Tabellenstilen {#tablestyles}
 
-Stile werden in der Regel auf Text angewendet, es kann jedoch auch ein separater Satz von Stilen auf eine Tabelle oder einige Tabellenzellen angewendet werden. Solche Stile sind für Autoren entweder im Dialogfeld Zellen-Eigenschaften oder Tabelleneigenschaften über das Auswahlfeld Stil verfügbar. Diese Stile sind nur verfügbar, wenn eine Tabelle in einer Textkomponente (oder einer abgeleiteten Komponente davon) und nicht in der standardmäßigen Tabellenkomponente bearbeitet wird.
+Stile werden in der Regel auf Text angewendet, es kann jedoch auch ein separater Satz von Stilen auf eine Tabelle oder einige Tabellenzellen angewendet werden. Solche Stile sind für Autorinnen und Autoren entweder im Dialogfeld „Zelleneigenschaften“ oder „Tabelleneigenschaften“ über das Feld „Stilauswahl“ verfügbar. Diese Stile sind nur verfügbar, wenn eine Tabelle in einer Textkomponente (oder einer abgeleiteten Komponente davon) und nicht in der standardmäßigen Tabellenkomponente bearbeitet wird.
 
 >[!NOTE]
 >
@@ -484,7 +484,7 @@ Sie können Stile für Tabellen und Zellen nur für die klassische Benutzeroberf
 
 >[!NOTE]
 >
-Das Kopieren und Einfügen von Tabellen in oder aus der RTE-Komponente ist Browser-abhängig. Es wird nicht standardmäßig für alle Browser unterstützt. Je nach Tabellenstruktur und Browser können unterschiedliche Ergebnisse erzielt werden. Wenn Sie beispielsweise eine Tabelle in eine RTE-Komponente in Mozilla Firefox in der klassischen und der Touch-optimierten Benutzeroberfläche kopieren und einfügen, bleibt das Layout der Tabelle nicht erhalten.
+Das Kopieren und Einfügen von Tabellen in oder aus der RTE-Komponente ist Browser-abhängig. Es wird nicht standardmäßig für alle Browser unterstützt. Je nach Tabellenstruktur und Browser kann es zu unterschiedlichen Ergebnissen kommen. Wenn Sie beispielsweise eine Tabelle in eine RTE-Komponente in Mozilla Firefox in der klassischen und der Touch-optimierten Benutzeroberfläche kopieren und einfügen, bleibt das Layout der Tabelle nicht erhalten.
 
 1. Navigieren Sie in Ihrer Komponente zum Knoten . `<rtePlugins-node>/table`. Erstellen Sie die Knoten, falls diese nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
 1. Erstellen Sie die `features`-Eigenschaft für den Knoten `table`:
@@ -503,7 +503,7 @@ Das Kopieren und Einfügen von Tabellen in oder aus der RTE-Komponente ist Brows
    * `table` – um die Bearbeitung von Tabelleneigenschaften zuzulassen, einschließlich der Stile.
    * `cellprops` – um die Bearbeitung von Zelleneigenschaften zuzulassen, einschließlich der Stile.
 
-1. Definieren Sie den Speicherort von CSS-Stylesheets, damit Sie diese referenzieren können. Siehe [Festlegen der Position des Stylesheets](#locationofstylesheet) da dies mit der Definition von [Textstile](#textstyles). Der Speicherort kann definiert werden, wenn Sie andere Stile definiert haben.
+1. Definieren Sie den Speicherort von CSS-Stylesheets, damit Sie diese referenzieren können. Siehe [Festlegen des Stylesheet-Speicherorts](#locationofstylesheet), da dieser derselbe wie bei der Definition der [Textstile](#textstyles) ist. Der Speicherort wurde möglicherweise bereits beim Definieren anderer Stile definiert.
 1. Unter dem `table` erstellen Sie die folgenden neuen Knoten (nach Bedarf):
 
    * Definieren der Stile für die komplette Tabelle (verfügbar unter **Tabelleneigenschaften**):
@@ -537,7 +537,7 @@ Das Kopieren und Einfügen von Tabellen in oder aus der RTE-Komponente ist Brows
 
 1. Speichern Sie alle Änderungen.
 
-Wiederholen Sie die obigen Schritte für jeden erforderlichen Stil.
+Wiederholen Sie die obigen Schritte für jeden benötigten Stil.
 
 ### Konfigurieren von ausgeblendeten Kopfzeilen in Tabellen, um die Zugänglichkeit zu verbessern {#hiddenheader}
 
@@ -559,7 +559,7 @@ Wenn Sie sowohl die CSS- als auch die Stilzeichenfolge im Code angeben, hat die 
 
 ## Hinzufügen von Wörterbüchern für die Rechtschreibprüfung {#adddict}
 
-Wenn das spellcheck-Plug-in aktiviert ist, verwendet der RTE Wörterbücher für jede entsprechende Sprache. Diese werden dann entsprechend der Sprache der Website ausgewählt, indem entweder die language -Eigenschaft der Unterstruktur verwendet oder die Sprache aus der URL extrahiert wird. Beispiel: die `/en/` Die Verzweigung ist als Englisch markiert, die `/de/` als Deutsch.
+Wenn das Plug-in „Rechtschreibprüfung“ aktiviert haben, verwendet der RTE Wörterbücher für jede entsprechende Sprache. Diese werden dann entsprechend der Sprache der Website ausgewählt, indem entweder die language -Eigenschaft der Unterstruktur verwendet oder die Sprache aus der URL extrahiert wird. Beispiel: die `/en/` Die Verzweigung ist als Englisch markiert, die `/de/` als Deutsch.
 
 >[!NOTE]
 >
@@ -580,7 +580,7 @@ Eine standardmäßige AEM-Installation beinhaltet die Wörterbücher für amerik
    >
    Nur Wörterbücher im `MySpell`-Format für OpenOffice.org v2.0.1 bzw. frühere Versionen werden unterstützt. Da es sich bei den Wörterbüchern jetzt um Archivdateien handelt, wird empfohlen, das Archiv nach dem Herunterladen zu überprüfen.
 
-1. Suchen Sie die `.aff` und `.dic` -Dateien. Dateinamen in Kleinbuchstaben beibehalten. Zum Beispiel `de_de.aff` und `de_de.dic`.
+1. Suchen Sie die `.aff` und `.dic` -Dateien. Der Dateiname sollte nur Kleinbuchstaben aufweisen. Zum Beispiel `de_de.aff` und `de_de.dic`.
 1. Laden Sie die `.aff` und `.dic` Dateien im Repository unter `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
@@ -591,7 +591,7 @@ Wenn Sie eine Änderung annehmen, die die Rechtschreibprüfung vorschlägt, änd
 
 ## Konfigurieren der Verlaufsgröße für die Aktionen „Rückgängig“ und „Wiederholen“ {#undohistory}
 
-Mit dem RTE können Autoren einige letzte Bearbeitungen rückgängig machen oder wiederholen. Standardmäßig werden 50 Änderungen im Verlauf gespeichert. Sie können diesen Wert nach Bedarf konfigurieren.
+Mit dem RTE können Autorinnen und Autoren die letzten Bearbeitungen rückgängig machen oder wiederholen. Standardmäßig werden 50 Änderungen im Verlauf gespeichert. Sie können diesen Wert nach Bedarf konfigurieren.
 
 1. Navigieren Sie in Ihrer Komponente zum Knoten . `<rtePlugins-node>/undo`. Erstellen Sie diese Knoten, falls sie nicht bereits vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
 1. Im `undo` -Knoten erstellen Sie die Eigenschaft:
@@ -606,7 +606,7 @@ Mit dem RTE können Autoren einige letzte Bearbeitungen rückgängig machen oder
 
 Wenn das Tabulatorzeichen innerhalb eines Textes gedrückt wird, wird eine vordefinierte Anzahl von Leerzeichen eingefügt. Standardmäßig handelt es sich hierbei um drei geschützte Leerzeichen und ein Leerzeichen.
 
-So definieren Sie die Tab-Größe:
+So definieren Sie die Tabulator-Schrittweite:
 
 1. Navigieren Sie in Ihrer Komponente zum Knoten `<rtePlugins-node>/keys`. Erstellen Sie die Knoten, falls diese nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
 1. Im `keys` -Knoten erstellen Sie die Eigenschaft:

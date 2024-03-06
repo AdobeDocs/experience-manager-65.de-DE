@@ -5,10 +5,10 @@ topic-tags: introduction
 docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 100%
+source-wordcount: '913'
+ht-degree: 72%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 100%
 
 ## Einführung {#introduction}
 
-Wenn Sie auf der Suche nach einem mobilfreundlichen **Formularerlebnis** sind, das die Registrierung vereinfacht, das Engagement steigert und die Bearbeitungszeit verkürzt, sind **adaptive Formulare** die perfekte Lösung für Sie. Adaptive Formulare bieten ein mobiles, automatisierungs- und analysefreundliches Formularerlebnis. Sie können auf einfache Weise Formulare erstellen, die reaktionsschnell und interaktiv sind, automatisierte Prozesse verwenden, um administrative und sich wiederholende Aufgaben zu reduzieren, und Datenanalysen verwenden, um das Erlebnis, das Kunden mit Ihren Formularen haben, zu verbessern und zu personalisieren.
+Suchen Sie einen mobilfreundlichen **Formularerfahrung** die die Registrierung vereinfacht, die Interaktion erhöht und die Bearbeitungszeit verkürzt, **adaptive Formulare** ist perfekt für dich geeignet. Adaptive Formulare bieten ein mobiles, automatisierungs- und analysefreundliches Formularerlebnis. Sie können auf einfache Weise Formulare erstellen, die reaktionsschnell und interaktiv sind, automatisierte Prozesse verwenden, um administrative und sich wiederholende Aufgaben zu reduzieren, und Datenanalysen verwenden, um das Erlebnis, das Kunden mit Ihren Formularen haben, zu verbessern und zu personalisieren.
 
-Dieses Tutorial bietet ein End-to-End-Framework zum Erstellen eines adaptiven Formulars. Das Tutorial ist in einen Anwendungsfall und mehrere Handbücher unterteilt. Jedes Handbuch hilft Ihnen dabei, neue Funktionen zu erlernen und zum adaptiven Formular hinzuzufügen, das in diesem Tutorial erstellt wird. Sie verfügen nach jedem Handbuch über ein funktionierendes adaptives Formular. Das Handbuch zum Erstellen eines adaptiven Formulars ist verfügbar. Nachfolgende Handbücher werden in Kürze verfügbar sein. Am Ende dieser Schulung können Sie Folgendes:
+Dieses Tutorial bietet ein End-to-End-Framework zum Erstellen eines adaptiven Formulars. Das Tutorial ist in einen Anwendungsfall und mehrere Handbücher unterteilt. Jedes Handbuch hilft Ihnen dabei, neue Funktionen zu erlernen und zum adaptiven Formular hinzuzufügen, das in diesem Tutorial erstellt wird. Sie verfügen nach jedem Handbuch über ein funktionierendes adaptives Formular. Das Handbuch zum Erstellen eines adaptiven Formulars ist verfügbar. Nachfolgende Handbücher werden bald folgen. Am Ende dieses Tutorials sollten Sie zu Folgendem in der Lage sein:
 
 * Adaptive Formulare und ein Formulardatenmodell erstellen.
 * Adaptive Formulare gestalten.
@@ -43,11 +43,11 @@ Die Website wird mit Adobe Experience Manager (AEM) ausgeführt und verwendet AE
 
 ### Voraussetzung {#prerequisite}
 
-* Einrichten einer [AEM-Autoreninstanz](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=de#author-and-publish-installs)
+* Richten Sie eine [AEM Autoreninstanz](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * Installieren Sie das [AEM Forms-Add-On](../../forms/using/installing-configuring-aem-forms-osgi.md) auf der Author-Instanz.
 * Beziehen Sie den JDBC-Datenbanktreiber (JAR-Datei) vom Datenbankanbieter. Die Beispiele im Tutorial basieren auf einer [!DNL MySQL]-Datenbank und verwenden [!DNL Oracle's] [MySQL JDBC-Datenbanktreiber](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
-* Richten Sie eine Datenbank mit Kundendaten in den unten gezeigten Feldern ein. Eine Datenbank ist nicht unbedingt notwendig zum Erstellen eines adaptiven Formulars. In diesem Tutorial wird eine Datenbank zur Demonstration der Formulardatenmodell- und Persistenzfunktionen von AEM [!DNL Forms] verwendet.
+* Richten Sie eine Datenbank ein, die Kundendaten mit den unten angezeigten Feldern enthält. Eine Datenbank ist nicht unbedingt notwendig zum Erstellen eines adaptiven Formulars. In diesem Tutorial wird eine Datenbank zur Demonstration der Formulardatenmodell- und Persistenzfunktionen von AEM [!DNL Forms] verwendet.
 
 ![adaptiveformdata](assets/adaptiveformdata.png)
 
@@ -59,10 +59,10 @@ Adaptive Formulare repräsentieren eine neue Generation: ansprechend, interaktiv
 
 Ziele:
 
-* Erstellen eines adaptiven Formulars, mit dem ein Kunde eine Versandadresse hinzufügen kann
-* Layout-Felder eines adaptiven Formulars zum Anzeigen und Akzeptieren von Informationen eines Kunden
-* Erstellen Sie eine Sendeaktion zum Senden einer E-Mail mit Formularinhalt
-* Anzeigen und Senden eines adaptiven Formulars in der Vorschau
+* Erstellen Sie ein adaptives Formular, mit dem ein Kunde eine Versandadresse hinzufügen kann.
+* Layout-Felder eines adaptiven Formulars zur Anzeige und Annahme von Informationen von einem Kunden.
+* Erstellen Sie eine Sendeaktion, um eine E-Mail mit Formularinhalt zu senden.
+* Anzeigen einer Vorschau und Senden eines adaptiven Formulars
 
 [![Siehe Handbuch](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-adaptive-form.md)
 
@@ -70,15 +70,15 @@ Ziele:
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-Ein Formulardatenmodell ermöglicht es, ein adaptives Formular mit unterschiedlichen Datenquellen zu verbinden. z. B. mit AEM-Benutzerprofilen, RESTful-Web-Diensten, SOAP-basierten Web-Diensten, OData-Diensten und relationalen Datenbanken. Ein Formulardatenmodell ist ein einheitliches Datenrepräsentationsschema von Geschäftseinheiten und Diensten, die in verbundenen Datenquellen verfügbar sind. Sie können das Formulardatenmodell mit einem adaptiven Formular verwenden, um Daten von verbundenen Datenquellen abzurufen, zu aktualisieren, zu löschen und ihnen hinzuzufügen.
+Mit einem Formulardatenmodell können Sie ein adaptives Formular mit unterschiedlichen Datenquellen verbinden. z. B. mit AEM-Benutzerprofilen, RESTful-Web-Diensten, SOAP-basierten Web-Diensten, OData-Diensten und relationalen Datenbanken. Ein Formulardatenmodell ist ein einheitliches Datenrepräsentationsschema von Geschäftseinheiten und Diensten, die in verbundenen Datenquellen verfügbar sind. Sie können das Formulardatenmodell mit einem adaptiven Formular verwenden, um Daten von verbundenen Datenquellen abzurufen, zu aktualisieren, zu löschen und ihnen hinzuzufügen.
 
 Ziele:
 
-* Konfigurieren der Datenbankinstanz der Website ([!DNL MySQL]-Datenbank) als Datenquelle
-* Erstellen des Formulardatenmodells mithilfe der [!DNL MySQL]-Datenbank als Datenquelle
-* Hinzufügen von Datenmodellobjekten zum Datenmodell
-* Konfigurieren der Lese- und Schreibdienste für Datenmodellobjekte
-* Testen des Formulardatenmodells und der konfigurierten Dienste mit Testdaten
+* Konfigurieren Sie die Datenbankinstanz der Website ([!DNL MySQL] Datenbank) als Datenquelle.
+* Erstellen Sie das Formulardatenmodell mit [!DNL MySQL] Datenbank als Datenquelle.
+* Fügen Sie Datenmodellobjekte hinzu, damit Sie das Datenmodell bilden können.
+* Konfigurieren Sie Lese- und Schreibdienste für das Formulardatenmodell.
+* Testen Sie das Formulardatenmodell und die konfigurierten Dienste mit Testdaten.
 
 [![Siehe Handbuch](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
 
@@ -86,12 +86,12 @@ Ziele:
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-Adaptive Formulare stellen einen Editor zum Schreiben von Regeln für adaptive Formularobjekte bereit. Diese Regeln definieren Aktionen für Formularobjekte, die durch voreingestellte Bedingungen, Benutzereingaben und Benutzeraktionen im Formular ausgelöst werden. Dies hilft, die Genauigkeit zu gewährleisten, und beschleunigt das Ausfüllen der Formulare.
+Adaptive Formulare stellen einen Editor zum Schreiben von Regeln für adaptive Formularobjekte bereit. Diese Regeln definieren Aktionen für Formularobjekte, die durch voreingestellte Bedingungen, Benutzereingaben und Benutzeraktionen im Formular ausgelöst werden. Dadurch wird die Genauigkeit gewährleistet und das Ausfüllen von Formularen beschleunigt.
 
 Ziele:
 
-* Erstellen und Anwenden von Regeln in adaptiven Formularfeldern
-* Verwenden Sie Regeln zum Auslösen von Formulardatenmodelldiensten, um Daten in der Datenbank zu aktualisieren 
+* Erstellen Sie Regeln und wenden Sie sie auf adaptive Formularfelder an.
+* Verwenden Sie Regeln zum Trigger von Formulardatenmodelldiensten, um die Daten in die Datenbank zu aktualisieren.
 
 [![Siehe Handbuch](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
@@ -103,9 +103,9 @@ Adaptive Formulare bieten Designs und einen [Editor](../../forms/using/themes.md
 
 Ziele:
 
-* Anwenden eines vorkonfigurierten Designs auf ein adaptives Formular
-* Erstellen eines Designs für ein adaptives Formular mit dem Design-Editor
-* Verwenden von Webfonts in einem benutzerdefinierten Design
+* Wenden Sie ein Standarddesign auf ein adaptives Formular an.
+* Erstellen Sie ein Design für das adaptive Formular mit dem Design-Editor.
+* Verwenden Sie Web Fonts in einem benutzerdefinierten Design.
 
 [![Siehe Handbuch](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
@@ -117,8 +117,8 @@ Sie können adaptive Formulare als eigenständiges Formular (Einzelseitenprogram
 
 Ziele:
 
-* Veröffentlichen des adaptiven Formulars als AEM-Seite
-* Einbetten des adaptiven Formulars in eine AEM [!DNL Sites]-Seite
-* Einbetten des adaptiven Formulars in eine externe Web-Seite (eine außerhalb von AEM gehostete, nicht zu AEM gehörende Web-Seite)
+* Veröffentlichen Sie das adaptive Formular als AEM Seite.
+* Einbetten des adaptiven Formulars in ein AEM [!DNL Sites] Seite.
+* Betten Sie das adaptive Formular in eine externe Webseite ein (eine nicht AEM Webseite, die außerhalb von AEM gehostet wird).
 
 [![Siehe Handbuch](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)

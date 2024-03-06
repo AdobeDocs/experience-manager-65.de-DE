@@ -7,9 +7,9 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6184'
+source-wordcount: '6185'
 ht-degree: 98%
 
 ---
@@ -355,7 +355,7 @@ Informationen zum Anpassen der Größe des internen WiredTiger-Cache finden Sie 
 
 NUMA (Non-Uniform Memory Access) ermöglicht es einem Kernel zu verwalten, wie Speicher den Prozessorkernen zugeordnet wird. Obwohl dieser Prozess versucht, den Speicherzugriff für die Kerne zu beschleunigen, um sicherzustellen, dass sie auf die benötigten Daten zugreifen können, beeinträchtigt NUMA MMAP und führt zusätzliche Latenzzeiten ein, da Lesevorgänge nicht vorhergesagt werden können. Daher muss NUMA für den `mongod`-Prozess auf allen fähigen Betriebssystemen deaktiviert werden.
 
-Im Wesentlichen ist in einer NUMA-Architektur der Speicher mit den CPUs verbunden und die CPUs sind mit einem Bus verbunden. In einer SMP- oder UMA-Architektur ist der Speicher mit dem Bus verbunden und wird von den CPUs gemeinsam genutzt. Wenn ein Thread Speicher auf einer NUMA-CPU zuweist, wird er gemäß einer Richtlinie zugewiesen. Standardmäßig wird Speicher zugeordnet, der an die lokale CPU des Threads angebunden ist, es sei denn, es ist keine freie vorhanden. In einem solchen Fall wird dann Speicher von einer freien CPU verwendet, allerdings mit höherem Aufwand. Nach der Zuordnung wechselt der Speicher nicht mehr zwischen den CPUs. Die Zuordnung erfolgt anhand einer Richtlinie, die vom übergeordneten Thread vererbt wird. Letztendlich ist dies der Thread, über den der Prozess gestartet wurde.
+Im Wesentlichen ist in einer NUMA-Architektur der Speicher mit den CPUs verbunden und die CPUs sind mit einem Bus verbunden. In einer SMP- oder UMA-Architektur ist der Speicher mit dem Bus verbunden und wird von den CPUs gemeinsam genutzt. Wenn ein Thread Speicher auf einer NUMA-CPU zuweist, wird er gemäß einer Richtlinie zugewiesen. Standardmäßig wird Speicher zugeordnet, der an die lokale CPU des Threads angebunden ist, es sei denn, es ist keine freie vorhanden. In einem solchen Fall wird dann Speicher von einer freien CPU verwendet, allerdings mit höherem Aufwand. Nach der Zuordnung bewegt sich der Speicher nicht zwischen den CPUs. Die Zuordnung erfolgt anhand einer Richtlinie, die vom übergeordneten Thread vererbt wird. Letztendlich ist dies der Thread, über den der Prozess gestartet wurde.
 
 In vielen Datenbanken, die den Computer als eine mehrfache, einheitliche Speicherarchitektur betrachten, führt dieses Szenario dazu, dass die anfängliche CPU zuerst voll wird und die sekundäre CPU erst später gefüllt wird. Dies gilt insbesondere dann, wenn ein zentraler Thread für die Zuordnung von Speicherpuffern verantwortlich ist. Zur Lösung muss mithilfe des folgenden Befehls die NUMA-Richtlinie des Haupt-Threads geändert werden, mit dem der `mongod`-Prozess gestartet wird:
 
@@ -543,7 +543,7 @@ Die Ausgabe des zweiten Tests sollte deutlich höher sein als die erste und die 
 
 >[!NOTE]
 >
-Überprüfen Sie während der Tests die I/O-Nutzungsstatistik für die fraglichen virtuellen Maschinen in Ihrem zur Betriebssystemüberwachung eingesetzten System. Wenn für die I/O-Lesevorgänge ein Testergebnis von unter 100 % ausgegeben wird, liegt womöglich ein Problem bei der virtuellen Maschine vor.
+>Überprüfen Sie während der Tests die I/O-Nutzungsstatistik für die fraglichen virtuellen Maschinen in Ihrem zur Betriebssystemüberwachung eingesetzten System. Wenn für die I/O-Lesevorgänge ein Testergebnis von unter 100 % ausgegeben wird, liegt womöglich ein Problem bei der virtuellen Maschine vor.
 
 **Testen der Schreibleistung der primären MongoDB-Instanz**
 
@@ -654,7 +654,7 @@ CSP ermöglicht eine Feinabstimmung von Richtlinien. In einer komplexen Anwendun
 
 >[!NOTE]
 >
-Weitere Informationen zur Funktionsweise finden Sie auf der [OWASP-Seite zum Thema Inhaltssicherheitsrichtline](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
+>Weitere Informationen zur Funktionsweise finden Sie auf der [OWASP-Seite zum Thema Inhaltssicherheitsrichtline](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ### Dimensionierung {#sizing}
 
@@ -678,4 +678,4 @@ Wenn AEM auf einer MongoMK-Persistenz-Manager-Bereitstellung ausgeführt wird, s
 
 >[!NOTE]
 >
-Lesen Sie die [MongoDB-Dokumentation](https://docs.mongodb.com/manual/reference/limits/), damit Sie sich mit den bekannten Einschränkungen und Schwellenwerten von MongoDB vertraut machen können.
+>Lesen Sie die [MongoDB-Dokumentation](https://docs.mongodb.com/manual/reference/limits/), damit Sie sich mit den bekannten Einschränkungen und Schwellenwerten von MongoDB vertraut machen können.

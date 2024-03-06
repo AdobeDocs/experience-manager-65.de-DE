@@ -7,10 +7,10 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 3fe9b3d4cf6ddf7d64dbece7d62d7f18dfa183f2
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4054'
-ht-degree: 86%
+source-wordcount: '4057'
+ht-degree: 85%
 
 ---
 
@@ -41,7 +41,7 @@ In diesem Dokument werden die unterstützten Client- und Server-Plattformen für
 
 #### Vollständiges Installationsprogramm
 
-- **Upgrade-Unterstützung für vollständige Installationsprogramme**: Ein vollständiges Installationsprogramm wird mit jeder 6. AEM Service Pack-Version veröffentlicht. Beispielsweise wurde ein vollständiges Installationsprogramm mit den Versionen 6.5.12.0 und 6.5.18.0 SP veröffentlicht. AEM Forms ermöglicht direkte Upgrades ausschließlich von den letzten beiden Vollinstallationen aus. Beispielsweise ermöglicht AEM Forms direkte Aktualisierungen auf Version 6.5.18.0 nur von den letzten beiden vollständigen Installationsprogrammen, nämlich 6.5.12.0 und 6.5.6.0. Wenn Sie ein Upgrade von einem früheren Upgrade benötigen, können Sie ein Upgrade mit mehreren Hosts verwenden, um zunächst zu einer unterstützten Vollversion des Installationsprogramms zu wechseln und dann zur neuesten Version zu wechseln.
+- **Upgrade-Unterstützung für vollständige Installationsprogramme**: Ein vollständiges Installationsprogramm wird mit jeder sechsten AEM Service Pack-Version veröffentlicht. Beispielsweise wurde ein vollständiges Installationsprogramm mit den Versionen 6.5.12.0 und 6.5.18.0 SP veröffentlicht. AEM Forms ermöglicht direkte Upgrades ausschließlich von den letzten beiden Vollinstallationen aus. Beispielsweise ermöglicht AEM Forms direkte Aktualisierungen auf Version 6.5.18.0 nur von den letzten beiden vollständigen Installationsprogrammen, nämlich 6.5.12.0 und 6.5.6.0. Wenn Sie ein Upgrade von einem früheren Upgrade benötigen, können Sie ein Upgrade mit mehreren Hosts verwenden, um zunächst zu einer unterstützten Vollversion des Installationsprogramms zu wechseln und dann zur neuesten Version zu wechseln.
 
 - **Einstellung und Entfernung**: Die Plattformunterstützung wird mit jeder vollständigen Version des Installationsprogramms aktualisiert. Jede Software, die während einer vollständigen Version des Installationsprogramms in der Plattformmatrix als veraltet gekennzeichnet wurde, kann in einer nachfolgenden vollständigen Version des Installationsprogramms aus der unterstützten Plattformmatrix entfernt werden, um das Ende der Unterstützung für die Software anzugeben.
 
@@ -354,8 +354,8 @@ Beachten Sie die folgenden Ausnahmen, wenn Sie eine Plattform auswählen, auf de
 
 1. AEM Forms on JEE unterstützt IBM® WebSphere® mit MySQL nicht.
 1. AEM Forms on JEE unterstützt JBoss® unter SUSE® Linux® Enterprise Server 12 nicht. Nur IBM® WebSphere® wird auf SUSE® Linux® Enterprise Server 12 unterstützt.
-1. AEM Forms on JEE unterstützt mit JBoss® kein anderes JDK als Oracle Java™ SE.
-1. AEM Forms on JEE unterstützt mit IBM® WebSphere® kein anderes JDK als IBM® JDK.
+1. AEM Forms on JEE unterstützt kein anderes JDK mit JBoss® als Oracle Java™ SE.
+1. AEM Forms on JEE unterstützt kein anderes JDK mit IBM® WebSphere® als IBM® JDK.
 1. CRX-Repository unterstützt Persistenz des Typs TarMK, MongoDB und relationale Datenbanken (RDBMK). Sie dürfen nicht zwei verschiedene Datenbanksysteme zwischen dem Anwendungsserver und dem CRX-Repository haben. In einer AEM Forms on JEE-Umgebung können Sie MongoMK jedoch mit dem CRX-Repository und einer unterstützten relationalen Datenbank mit Anwendungsserver verwenden.
 1. AEM Forms on JEE unterstützt keinen WebSphere®-Anwendungs-Server unter CentOS.
 1. AEM Forms on JEE unterstützt keine rollenbasierte Zugriffssteuerung (RBAC) für JBoss®.
@@ -375,7 +375,7 @@ Außerdem sollten Sie die folgenden Punkte beachten, wenn Sie die Software für 
 - AEM Forms on JEE unterstützt Plattformen in Abhängigkeit der Unterstützung durch Drittanbieter.  Einige Kombinationen werden von Drittanbietern möglicherweise nicht zugelassen. Zum Beispiel haben viele Anbieter ihre Anwendungsserver nicht mit Oracle zertifiziert. Daher unterstützt auch AEM Forms on JEE diese Kombinationen nicht.  Um sicherzugehen, dass Sie die unterstützten Softwareversionen auswählen, sollten Sie auch die Support-Matrix dieser Drittanbieter überprüfen.
 - AEM Forms auf JEE unterstützt keine TarMK Cold Standby.
 - AEM Forms auf JEE unterstützt kein vertikales Clustering.
-- AEM Forms on JEE unterstützt die MySQL-Datenbank in einer Cluster-Umgebung nicht.
+- AEM Forms on JEE unterstützt keine MySQL-Datenbank in einer Clusterumgebung.
 - Eine Liste der entfernten bzw. der aktualisierten Plattformen finden Sie in dem Dokument [AEM 6.5 Forms - Übersicht über die neuen Funktionen](../../forms/using/whats-new.md).
 
 ### LDAP-Server (optional) {#ldap-servers-optional}

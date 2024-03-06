@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: abd3fbb5abb339d5b019fd2d7cf325404fb079e8
 workflow-type: tm+mt
-source-wordcount: '2717'
-ht-degree: 89%
+source-wordcount: '2665'
+ht-degree: 87%
 
 ---
 
@@ -86,7 +86,7 @@ ID3-Tags wurden für das MP3-Dateiformat entwickelt. Weitere Informationen zu Fo
 
 ### Exif {#exif}
 
-Exchangeable Image File Format (Exif, austauschbares Bilddateiformat) ist das in der digitalen Fotografie am häufigsten verwendete Metadatenformat. Es bietet eine Möglichkeit, ein festes Vokabular von Metadateneigenschaften in viele Dateiformate wie JPEG, TIFF, RIFF und WAV einzubetten. Exif speichert Metadaten als Paare aus Metadatenname und Metadatenwert. Die Name/Wert-Paare für Metadaten werden auch als Tags bezeichnet (nicht zu verwechseln mit dem Tagging in [!DNL Experience Manager]). Moderne Digitalkameras erstellen Exif-Metadaten und moderne Grafik-Software unterstützt sie. Das Exif-Format ist der kleinste gemeinsame Nenner für die Metadatenverwaltung, insbesondere für Bilder.
+Exchangeable Image File Format (Exif, austauschbares Bilddateiformat) ist das in der digitalen Fotografie am häufigsten verwendete Metadatenformat. Es bietet eine Möglichkeit, ein festes Vokabular von Metadateneigenschaften in viele Dateiformate wie JPEG, TIFF, RIFF und WAV einzubetten. Exif speichert Metadaten als Paare aus Metadatenname und Metadatenwert. Diese Name-Wert-Paare für Metadaten werden auch als „Tags“ bezeichnet, nicht zu verwechseln mit dem Tagging in [!DNL Experience Manager]. Moderne Digitalkameras erstellen Exif-Metadaten und moderne Grafik-Software unterstützt sie. Das Exif-Format ist der kleinste gemeinsame Nenner für die Metadatenverwaltung, insbesondere für Bilder.
 
 Eine wichtige Einschränkung von Exif besteht darin, dass das Format von einigen gängigen Bilddateiformaten wie BMP, GIF oder PNG nicht unterstützt wird.
 
@@ -134,7 +134,7 @@ Die programmspezifischen Metadaten umfassen technische und beschreibende Metadat
 * CC – [!DNL Creative Commons].
 * [!DNL XMPRights].
 * PLUS – [Picture Licensing Universal System](https://www.useplus.com).
-* PRISM – [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata).
+* PRISM – [Publishing Requirements for Industry Standard Metadata](https://www.w3.org/submissions/2020/SUBM-prism-20200910/Image_Guide.pdf).
 * PRL – PRISM Rights Language.
 * PUR – PRISM Usage Rights.
 * `xmpPlus` – Integration von PLUS in XMP.
@@ -149,7 +149,7 @@ Die programmspezifischen Metadaten umfassen technische und beschreibende Metadat
 ### Druckspezifische Metadaten {#print-specific-metadata}
 
 * PDF und PDF/X – Adobe PDF und Drittanbieterprogramme.
-* PRISM – [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata).
+* PRISM – [Publishing Requirements for Industry Standard Metadata](https://www.w3.org/submissions/2020/SUBM-prism-20200910/Image_Guide.pdf).
 * XMP – [!DNL Extensible Metadata Platform].
 * `xmpPG` – XMP-Metadaten für Seitentext.
 
@@ -168,7 +168,7 @@ Dublin Core-Metadaten bieten einen standardisierten Satz von Konventionen zur Be
 
 Der einfache Dublin Core Metadata Element Set (DCMES) enthält 15 Metadatenelemente, wie in der folgenden Tabelle aufgeführt. Jedes Dublin Core-Element ist optional und kann wiederholt werden. Sie können Dublin Core-Metadateninformationen genauso wie solche für medientypspezifische Metadaten hinzufügen oder löschen.
 
-Zusätzlich zum DCMES wurden auch noch andere Metadatenelemente von der Dublin Core Initiative erstellt. Weitere Informationen finden Sie unter [Dublin Core Initiative](https://dublincore.org/).
+Neben dem DCMES wurden auch noch andere Metadatenelemente von der Dublin Core Initiative erstellt. Siehe [Dublin Core-Initiative](https://dublincore.org/) für weitere Informationen.
 
 | Eigenschaft | Beschreibung |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------ |

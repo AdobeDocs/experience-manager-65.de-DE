@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3227'
 ht-degree: 99%
 
 ---
@@ -64,7 +64,7 @@ Die folgenden Eigenschaften sind für viele Workflow-Schrittkomponenten auf der 
 
 * **Benachrichtigen Sie den Benutzer bzw. die Benutzerinn per E-Mail**
 
-   * Sie können die Teilnehmenden benachrichtigen, indem Sie ihnen eine E-Mail senden, wenn der Workflow den Schritt erreicht.
+   * Benachrichtigen Sie die Teilnehmer, indem Sie ihnen eine E-Mail senden, wenn der Workflow den Schritt erreicht.
    * Wenn diese Option aktiviert ist, wird eine E-Mail an den Benutzer bzw. die Benutzerin, die durch die Eigenschaft **Benutzer/Gruppe** definiert ist, oder an jedes Mitglied der Gruppe gesendet, wenn eine Gruppe definiert ist.
 
 * **Benutzer/Gruppe**

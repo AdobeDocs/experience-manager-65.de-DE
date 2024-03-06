@@ -5,9 +5,9 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '574'
 ht-degree: 7%
 
 ---
@@ -116,14 +116,14 @@ Die folgende Tabelle zeigt die Eigenschaften von Exportkonfigurationen:
   </tr>
   <tr>
    <td>excludeChildren</td>
-   <td>Zeichenfolge[]<br /> <br /> </td>
+   <td>String[]<br /> <br /> </td>
    <td>nichts ausschließen</td>
    <td>untergeordnete Namen</td>
    <td>nur angegebene untergeordnete Elemente aus dem JSON-Export einschließen, andere ausschließen</td>
   </tr>
   <tr>
    <td>renameProperties</td>
-   <td>Zeichenfolge[]<br /> <br /> </td>
+   <td>String[]<br /> <br /> </td>
    <td>nichts umbenennen</td>
    <td>&lt;actual_property_name&gt;,&lt;replacement_property_name&gt;</td>
    <td>Umbenennen von Eigenschaften mithilfe von Ersetzungen</td>
@@ -155,7 +155,7 @@ Die folgende Tabelle zeigt die Eigenschaften:
    <td>Zeichenfolge[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Für die folgenden Sling-Ressourcentypen geben Sie nicht den standardmäßigen CAAs-JSON-Export zurück.<br /> Geben Sie einen Customer JSON-Export zurück, indem Sie die Ressource als rendern.<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
+   <td>Für die folgenden Sling-Ressourcentypen geben Sie nicht den standardmäßigen CAAS-JSON-Export zurück.<br /> Geben Sie einen Customer JSON-Export zurück, indem Sie die Ressource als rendern.<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
   </tr>
  </tbody>
 </table>

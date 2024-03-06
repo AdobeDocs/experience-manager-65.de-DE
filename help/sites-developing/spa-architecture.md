@@ -7,9 +7,9 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: '2038'
 ht-degree: 73%
 
 ---
@@ -156,7 +156,7 @@ Im Folgenden werden die Schritte beschrieben, die ein Frontend-Entwickler bei de
 
    Wenn `ModelRouter` aktiviert ist, löst der Aufruf der Funktionen `pushState` und `replaceState` eine Anfrage an `PageModelManager` aus, um ein fehlendes Fragment des Modells abzurufen.
 
-   Die aktuelle Version der `ModelRouter` unterstützt nur die Verwendung von URLs, die auf den tatsächlichen Ressourcenpfad der Einstiegspunkte des Sling-Modells verweisen. Der Einsatz von Vanity-URLs oder Aliasen wird nicht unterstützt.
+   Die aktuelle Version der `ModelRouter` unterstützt nur die Verwendung von URLs, die auf den tatsächlichen Ressourcenpfad der Einstiegspunkte des Sling-Modells verweisen. Der Einsatz von Vanity-URLs oder -Aliassen wird nicht unterstützt.
 
    Der `ModelRouter` kann deaktiviert oder so konfiguriert werden, dass eine Liste von regulären Ausdrücken ignoriert wird.
 

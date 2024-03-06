@@ -2,9 +2,9 @@
 title: Projekte
 description: Mithilfe von Projekten können Sie Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Verwaltung Ihrer Projekte erleichtert.
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1360'
 ht-degree: 96%
 
 ---
@@ -22,7 +22,7 @@ Als Benutzer haben Sie folgende Möglichkeiten:
 
 ## Zugriffsanfrorderungen {#access-requirements}
 
-„Projekte“ ist eine standardmäßige AEM-Funktion und erfordert keine zusätzliche Einrichtung.
+Erstellt eine standardmäßige AEM und erfordert keine zusätzliche Einrichtung.
 
 Damit Benutzer in „Projekte“ andere Benutzer/Gruppen sehen können, während sie mit Projektfunktionen wie Erstellen von Projekten, Erstellen von Aufgaben/Workflows, Anzeigen und Verwalten des Teams arbeiten, benötigen sie Lesezugriff auf `/home/users` und `/home/groups`.
 

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 77%
+source-wordcount: '633'
+ht-degree: 75%
 
 ---
 
@@ -41,7 +41,7 @@ Zum Erstellen und Ansehen von Anmerkungen wird ein spezieller [Modus](/help/site
 
 >[!NOTE]
 >
->Beachten Sie, dass Sie auch mithilfe von [Kommentaren](/help/sites-authoring/basic-handling.md#timeline) Feedback zu einer Seite geben können.
+>Beachten Sie Folgendes: [Kommentare](/help/sites-authoring/basic-handling.md#timeline) Sie können auch Feedback zu einer Seite geben.
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeit
 
 >[!NOTE]
 >
->Anmerkungen können nicht zu einer Seite hinzugefügt werden, die von einer anderen Benutzerin oder einem anderen Benutzer gesperrt wurde.
+>Anmerkungen können nicht zu einer Seite hinzugefügt werden, die von einer anderen Person gesperrt wurde.
 
 ### Kennzeichnung von Anmerkungen {#annotation-indicator}
 

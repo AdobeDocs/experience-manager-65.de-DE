@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 9c97f99e-d6ef-4817-8b2a-201ab22f2b38
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 82%
+source-wordcount: '479'
+ht-degree: 65%
 
 ---
 
 # Konfigurieren der Videokomponente {#configure-the-video-component}
 
-Mit der [Videokomponente](/help/sites-authoring/default-components-foundation.md#video) können Sie ein vordefiniertes, vorkonfiguriertes Videoelement auf Ihrer Seite platzieren.
+Die [Videokomponente](/help/sites-authoring/default-components-foundation.md#video) können Sie ein vordefiniertes, natives Video-Asset auf Ihrer Seite platzieren.
 
 Damit eine korrekte Transkodierung erfolgt, installiert ein Admin FFmpeg separat. Siehe [Installieren von FFmpeg und Konfigurieren von AEM](#install-ffmpeg). Admins können auch [Videoprofile](#configure-video-profiles) für die Verwendung mit HTML5-Elementen konfigurieren..
 
@@ -81,4 +81,4 @@ Gehen Sie wie folgt vor, um **AEM zu konfigurieren**:
 
 >[!NOTE]
 >
->Standardmäßige vorkonfigurierte Workflow-Modelle bleiben beim Upgrade Ihrer AEM-Instanz nicht erhalten. Adobe empfiehlt, die geänderten Workflow-Modelle zu kopieren, bevor Sie sie bearbeiten. Kopieren Sie beispielsweise das vorkonfigirierte Modell [!UICONTROL DAM Update Asset], bevor Sie den FFmpeg-Transkodierungsschritt im Modell [!UICONTROL DAM Update Asset] ändern, um bereits vor dem Upgrade vorhandene Videoprofilnamen auszuwählen. Sie können dann den Knoten `/apps` überlagern, damit AEM die benutzerdefinierten Änderungen am vorkonfigurierten Modell abrufen kann.
+>Änderungen an den standardmäßigen Workflow-Modellen bleiben beim Upgrade Ihrer AEM-Instanz nicht erhalten. Adobe empfiehlt, die geänderten Workflow-Modelle zu kopieren, bevor Sie sie bearbeiten. Kopieren Sie beispielsweise die vordefinierte [!UICONTROL DAM-Update-Asset] -Modell vor der Bearbeitung des FFmpeg-Transkodierungsschritts im [!UICONTROL DAM-Update-Asset] -Modell, um Videoprofilnamen auszuwählen, die vor dem Upgrade vorhanden waren. Anschließend können Sie die `/apps` -Knoten, damit AEM die benutzerdefinierten Änderungen am vordefinierten Modell abrufen kann.

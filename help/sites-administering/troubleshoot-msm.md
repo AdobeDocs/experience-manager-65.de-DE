@@ -4,10 +4,10 @@ description: Hier erfahren Sie, wie Sie die häufigsten Probleme mit MSM beheben
 feature: Multi Site Manager
 role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
-workflow-type: ht
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+workflow-type: tm+mt
 source-wordcount: '761'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -81,7 +81,7 @@ Stattdessen können Sie Folgendes tun:
 
 ### Warum sehe ich Live Copy-Seiten mit dem Suffix „_msm_moved“? {#moved-pages}
 
-Wenn eine Blueprint-Seite bereitgestellt wird, aktualisiert sie entweder ihre Live Copy-Seite oder erstellt eine neue Live Copy-Seite, falls sie noch nicht vorhanden war. Beispielsweise geschieht dies, wenn sie zum ersten Mal bereitgestellt wird oder die Live Copy-Seite manuell gelöscht wurde.
+Wenn eine Blueprint-Seite bereitgestellt wird, aktualisiert sie entweder ihre Live Copy-Seite oder erstellt eine neue Live Copy-Seite, falls sie noch nicht vorhanden ist. Beispielsweise geschieht dies, wenn sie zum ersten Mal bereitgestellt wird oder die Live Copy-Seite manuell gelöscht wurde.
 
 Wenn in letzterem Fall jedoch eine Seite ohne `cq:LiveRelationship`-Eigenschaft mit demselben Namen vorhanden ist, wird diese Seite umbenannt, bevor die Live Copy-Seite erstellt wird.
 

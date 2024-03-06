@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '2672'
-ht-degree: 69%
+ht-degree: 70%
 
 ---
 
@@ -24,7 +24,7 @@ Führen Sie die folgenden Schritte durch, um zu steuern, wie und wann Live Copie
 
 ## Installierte und benutzerdefinierte Rollout-Konfigurationen {#installed-and-custom-rollout-configurations}
 
-In diesem Abschnitt finden Sie Informationen zu den installierten Rollout-Konfigurationen und den von ihnen verwendeten Synchronisierungsaktionen sowie dazu, wie Sie bei Bedarf benutzerdefinierte Konfigurationen erstellen.
+In diesem Abschnitt finden Sie Informationen zu den installierten Rollout-Konfigurationen und den von ihnen verwendeten Synchronisierungsaktionen. Außerdem erfahren Sie, wie Sie ggf. benutzerdefinierte Konfigurationen erstellen.
 
 >[!CAUTION]
 >
@@ -60,7 +60,7 @@ In der folgenden Tabelle sind die Rollout-Konfigurationen aufgeführt, die mit A
   </tr>
   <tr>
    <td>Standard-Rollout-Konfiguration</td>
-   <td>Standard-Rollout-Konfiguration, die den Start des Rollout-Prozesses bei Rollout-Auslösern ermöglicht und Aktionen ausführt: Erstellen, Aktualisieren, Löschen von Inhalten und Sortierung untergeordneter Knoten.</td>
+   <td>Standard-Rollout-Konfiguration, mit der Sie den Rollout-Prozess für den Rollout-Trigger starten und Aktionen ausführen können: Erstellen, Aktualisieren, Löschen von Inhalten und Sortieren von untergeordneten Knoten.</td>
    <td>Bei Rollout</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> productUpdate<br /> orderChildren</td>
   </tr>
@@ -108,7 +108,7 @@ In der folgenden Tabelle sind die Rollout-Konfigurationen aufgeführt, die mit A
   </tr>
   <tr>
    <td>DPS-Rollout-Konfiguration für Veröffentlichungen</td>
-   <td>Rollout-Konfiguration für DPS-Veröffentlichung, die den Start des Rollout-Prozesses beim Rollout-Trigger ermöglicht, während FolioProducer-Bindungseigenschaften beim ersten Rollout ausgeschlossen werden</td>
+   <td>Rollout-Konfiguration für DPS-Veröffentlichung , mit der Sie den Rollout-Prozess für den Rollout-Trigger starten und gleichzeitig die Bindungseigenschaften des FolioProducer beim ersten Rollout ausschließen können</td>
    <td>Bei Rollout</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> orderChildren<br /> dpsMetadataFilter</td>
   </tr>
@@ -382,7 +382,7 @@ Sie können die Rollout-Konfigurationen für eine Live Copy-Seite auch konfiguri
 
    ![Konfiguration](assets/chlimage_1-1.png)
 
-1. Passen Sie bei Bedarf die **Live Copy-Vererbung** Markierung. Bei Auswahl dieser Option gilt die Life Copy-Konfiguration für alle untergeordneten Elemente.
+1. Passen Sie ggf. das Flag **Live Copy-Vererbung** an. Bei Auswahl dieser Option gilt die Life Copy-Konfiguration für alle untergeordneten Elemente.
 
 1. Deaktivieren Sie die Eigenschaft **Rollout-Konfiguration aus übergeordnetem Element übernehmen** und wählen Sie dann eine oder mehrere Rollout-Konfigurationen aus der Liste aus.
 

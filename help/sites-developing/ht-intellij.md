@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 91%
+source-wordcount: '640'
+ht-degree: 88%
 
 ---
 
@@ -106,7 +106,7 @@ IntelliJ IDEA muss wissen, wo die JSPs zum Debugging zu finden sind. Da IDEA die
 1. Klicken Sie auf das **+** und wählen Sie **JSR45 Remote** aus.
 1. Wählen Sie im Konfigurationsdialogfeld **Konfigurieren** neben **Anwendungsserver** aus und konfigurieren Sie einen generischen Server.
 1. Legen Sie die Startseite auf eine passende URL fest, wenn Sie beim Beginn des Debuggens einen Browser öffnen möchten.
-1. Entfernen Sie alle **Vor dem Start**-Aufgaben, falls Sie die automatische Synchronisierung von VLT nutzen, oder konfigurieren Sie geeignete Maven-Aufgaben, falls nicht.
+1. Alle entfernen **Vor dem Start** Aufgaben, wenn Sie vlt autosync verwenden, oder konfigurieren Sie geeignete Maven-Aufgaben, falls Sie dies nicht tun
 1. Passen Sie im Fenster **Start/Verbindung** den Port an, sofern erforderlich.
 1. Kopieren Sie die Befehlszeilenargumente, die IntelliJ IDEA vorschlägt.
 

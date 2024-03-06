@@ -1,5 +1,5 @@
 ---
-title: Anpassen von Vorlagen für Forms Portal-Komponenten
+title: Anpassen von Vorlagen für Formularportal-Komponenten
 description: Erfahren Sie, wie Benutzer über die AEM Forms-Benutzeroberfläche Metadaten zu Formularen hinzufügen können. Benutzerdefinierte Metadaten verbessern das Benutzererlebnis bei der Formularauflistung und -suche.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -7,14 +7,14 @@ topic-tags: customization
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 58%
+source-wordcount: '1246'
+ht-degree: 55%
 
 ---
 
-# Anpassen von Vorlagen für Forms Portal-Komponenten{#customizing-templates-for-forms-portal-components}
+# Anpassen von Vorlagen für Formularportal-Komponenten{#customizing-templates-for-forms-portal-components}
 
 ## Voraussetzungen {#prerequisites}
 
@@ -82,19 +82,19 @@ Im Folgenden finden Sie eine Beispielimplementierung einer benutzerdefinierten V
 
 Eine benutzerdefinierte Vorlage für eine beliebige Formularportal-Komponente enthält wiederholbare und nicht wiederholbare Einträge. Wiederholbare Einträge sind grundlegende Entitäten für die Auflistung. Beispiele für wiederholbare Einträge sind die Komponenten &quot;Search &amp; Lister&quot;, &quot;Drafts &amp; Submissions&quot;und &quot;Link&quot;.
 
-Forms Portal bietet eine Syntax für Platzhalter zur Anzeige von benutzerdefinierten bzw. OOTB-Metadaten. Die Platzhalter werden nach der Anzeige der Ergebnisse von Formularen, Entwürfen oder Übermittlungen ausgefüllt.
+Forms Portal bietet eine Syntax für Platzhalter zur Anzeige benutzerdefinierter/vordefinierter Metadaten. Die Platzhalter werden nach der Anzeige der Ergebnisse von Formularen, Entwürfen oder Übermittlungen ausgefüllt.
 
 Um einen wiederholbaren Eintrag einzuschließen, konfigurieren Sie den Wert des Attributs **data-repeatable** als **true**.
 
 *Im gezeigten Beispiel sind oben in der benutzerdefinierten Vorlage zwei Div-Elemente vorhanden. Das erste mit der CSS-Klasse „__FP_boxes-container“ fungiert als Containerelement für die aufgelisteten Formulare. Das zweite mit der CSS-Klasse „__FP_boxes“ ist eine Vorlage für die Basiseinheiten, in diesem Fall ein Formular. Das Attribut **data-repeatable**im Div-Element weist den Wert **true**auf.*
 
-Jeder Platzhalter verfügt über einen exklusiven OOTB-Metadatensatz. Um die benutzerdefinierten Metadaten an einer bestimmten Position im Formular anzuzeigen, fügen Sie die **${metadata_prop}-Eigenschaft** an der entsprechenden Position hinzu.
+Jeder Platzhalter verfügt über einen exklusiven vordefinierten Metadatensatz. Um die benutzerdefinierten Metadaten an einer bestimmten Position im Formular anzuzeigen, fügen Sie die **${metadata_prop}-Eigenschaft** an der entsprechenden Position hinzu.
 
 *In diesem Beispiel wird die Metadateneigenschaft in mehreren Instanzen verwendet. Sie wird z. B. bei **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**und **path**in der genannten Weise verwendet.*
 
 ## Vordefinierte Metadaten {#out-of-the-box-metadata}
 
-Verschiedene Forms Portal-Komponenten bieten exklusive OOTB-Metadatensätze, die Sie für die Auflistung verwenden können.
+Verschiedene Forms Portal-Komponenten bieten exklusive Sets von vordefinierten Metadaten, die Sie für die Auflistung verwenden können.
 
 ### Komponente „Suche und Auflister“ {#search-amp-lister-component}
 
@@ -103,7 +103,7 @@ Verschiedene Forms Portal-Komponenten bieten exklusive OOTB-Metadatensätze, die
 * **description**: Beschreibung des Formulars
 * **formUrl**: URL zur Ausgabe des Formulars als HTML
 * **pdfUrl**: URL zur Ausgabe des Formulars als PDF
-* **assetType**: Typ des Assets. Gültige Werte sind unter anderem **Form**,**PDF Form**,**Print Form** und **Adaptive Form**
+* **assetType**: Typ des Assets. Gültige Werte sind **Formular**, **PDF-Formular**, **Formular ausdrucken**, und **Adaptives Formular**
 
 * **htmlStyle**&amp; **pdfStyle**: Anzeigestil für HTML- bzw. PDF-Symbole für die Ausgabe. Gültige Werte sind „**__FP_display_none**“ oder leer.
 
@@ -115,7 +115,7 @@ Verschiedene Forms Portal-Komponenten bieten exklusive OOTB-Metadatensätze, die
 
 Unterstützung für Lokalisierung, Sortierung und Verwendung von Konfigurationseigenschaften in der Benutzeroberfläche (nur Search &amp; Lister):
 
-1. **Lokalisierungsunterstützung**: Zur Lokalisierung von beliebigem statischem Text verwenden Sie das Attribut `${localize-YOUR_TEXT}` und stellen Sie den lokalisierten Wert bereit, sofern er nicht bereits vorhanden ist.
+1. **Lokalisierungsunterstützung**: Verwenden Sie zum Lokalisieren von statischem Text das Attribut . `${localize-YOUR_TEXT}` und stellen Sie den lokalisierten Wert zur Verfügung, falls noch nicht vorhanden.
    *Im genannten Beispiel werden die Attribute `${localize-Apply}` und `${localize-Download}` verwendet, um den Text „Apply“ und „Download“ zu lokalisieren.*
 
 1. **Unterstützung für die Sortierung**: Klicken Sie auf das HTML-Element, um die Suchergebnisse zu sortieren. Um die Sortierung in ein Tabellenlayout zu implementieren, fügen Sie das Attribut &quot;data-sortKey&quot; in die jeweilige Tabellenüberschrift ein. Fügen Sie außerdem seinen Wert als die Metadaten hinzu, nach denen Sie sortieren möchten.
@@ -169,17 +169,17 @@ So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header
 ## Tipps, Tricks und bekannte Probleme {#tips-tricks-and-known-issues}
 
 1. Verwenden Sie in keiner benutzerdefinierten Vorlage einfache Anführungszeichen (&#39;).
-1. Bei benutzerdefinierten Metadaten speichern Sie diese Eigenschaft nur im Knoten **jcr:content/metadata**. Wenn Sie sie an einem anderen Ort speichern, kann das Formularportal die Metadaten nicht anzeigen.
+1. Bei benutzerdefinierten Metadaten speichern Sie diese Eigenschaft nur im Knoten **jcr:content/metadata**. Wenn Sie sie an einem anderen Ort speichern, kann Forms Portal die Metadaten nicht anzeigen.
 1. Stellen Sie sicher, dass der Name von benutzerdefinierten bzw. bereits vorhandenen Metadaten keinen Doppelpunkt (:) enthält. Wenn dies der Fall ist, können Sie ihn nicht auf der Benutzeroberfläche anzeigen.
 1. **data-repeatable** hat keinerlei Bedeutung für eine Komponente des Typs **Link**. Adobe empfiehlt, diese Eigenschaften in einer Vorlage für eine Komponente des Typs „Link“ zu vermeiden.
 
 ## Ähnliche Artikel
 
 * [Aktivieren von Formularportal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
-* [Forms Portal-Seite erstellen](/help/forms/using/creating-form-portal-page.md)
+* [Erstellen einer Formularportal-Seite](/help/forms/using/creating-form-portal-page.md)
 * [Auflisten von Formularen auf einer Webseite mithilfe von APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Verwenden der Komponente „Entwurf und Übermittlung“](/help/forms/using/draft-submission-component.md)
 * [Anpassen der Speicherung von Entwürfen und gesendeten Formularen](/help/forms/using/draft-submission-component.md)
 * [Beispiel für die Integration der Komponente für Entwurf und Übermittlung in die Datenbank](/help/forms/using/integrate-draft-submission-database.md)
-* [Anpassen von Vorlagen für Forms Portal-Komponenten](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [Anpassen von Vorlagen für Formularportal-Komponenten](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Einführung in das Veröffentlichen von Formularen in einem Portal](/help/forms/using/introduction-publishing-forms.md)

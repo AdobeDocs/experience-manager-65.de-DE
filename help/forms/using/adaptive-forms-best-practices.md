@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms, Foundation Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4666'
+source-wordcount: '4667'
 ht-degree: 97%
 
 ---
@@ -63,7 +63,7 @@ Nachdem Sie Ihr AEM-Projekt eingerichtet haben, definieren Sie eine Strategie f�
 * Eine adaptive Formularvorlage ist eine spezielle AEM-Seite, die die Struktur und die Informationen für Kopfzeile und Fußzeile eines adaptiven Formulars definiert. Eine Vorlage enthält vorkonfigurierte Layouts, Stile und eine einfache Struktur für ein adaptives Formular. AEM Forms bietet Standardvorlagen und -Komponenten, die Sie verwenden können, um adaptive Formulare zu erstellen. Sie können jedoch benutzerdefinierte Vorlagen und Komponenten entsprechend Ihren Anforderungen erstellen. Es wird empfohlen, Anforderungen für zusätzliche Vorlagen und Komponenten zu erfassen, die Sie in Ihren adaptiven Formularen benötigen. Weitere Informationen finden Sie unter [Anpassen von adaptiven Formularen und Komponenten](/help/forms/using/adaptive-forms-best-practices.md#customize-components).
 * Mit AEM Forms können Sie adaptive Formulare erstellen, die auf folgenden Formularmodellen basieren. Die Formularmodelle fungieren als Schnittstelle für den Datenaustausch zwischen einem Formular und einem AEM-System und liefern eine XML-basierte Struktur für den Datenfluss innerhalb und außerhalb eines adaptiven Formulars. Außerdem legen die Formularmodelle die Regeln und Beschränkungen für adaptive Formulare in Form von Schema- und XFA-Beschränkungen fest.
 
-   * **Keine**: Adaptive Formulare, die mit dieser Option erstellt worden sind, verwenden kein Formularmodell. Die XML-Datendatei, die aus diesen Formularen generiert wird, hat eine flache Struktur mit Feldern und entsprechenden Werten.
+   * **Keines**: Adaptive Formulare, die mit dieser Option erstellt wurden, verwenden kein Formularmodell. Die XML-Datendatei, die aus diesen Formularen generiert wird, hat eine flache Struktur mit Feldern und entsprechenden Werten.
    * **XML- oder JSON-Schema**: XML- und JSON-Schemata stellen die Struktur dar, in der Daten vom Back-End-System in Ihrer Organisation produziert oder genutzt werden. Sie können ein Schema mit einem adaptiven Formular verknüpfen und dem adaptiven Formular mithilfe der Elemente aus dem Schema dynamische Inhalte hinzufügen. Die Elemente des Schemas stehen auf der Registerkarte „Datenmodellobjekt“ des Inhalts-Browsers für das Erstellen von adaptiven Formularen zur Verfügung. Sie können die Schemaelemente zum Erstellen des Formulars ziehen und ablegen.
    * **XFA-Formularvorlage**: Dieses Formularmodell ist ideal, wenn bereits ein Bestand an XFA-basierten HTML5-Formularen vorhanden ist. Es bietet eine direkte Möglichkeit, Ihre XFA-basierten Formulare in adaptive Formulare zu konvertieren. Alle vorhandenen XFA-Regeln bleiben in den zugehörigen adaptiven Formularen erhalten. Die resultierenden adaptiven Formulare unterstützen XFA-Konstrukte, z. B. Überprüfungen, Ereignisse, Eigenschaften und Muster.
    * **Formulardatenmodell**: Dies ist das bevorzugte Formularmodell, wenn Sie Ihre Backend-Systeme wie Datenbanken, Web-Services und AEM-Benutzerprofile integrieren möchten, um adaptive Formulare vorauszufüllen und übermittelte Formulardaten zurück in die Backend-Systeme zu schreiben. Mit einem Formulardatenmodell-Editor können Sie Entitäten und Dienste in einem Formulardatenmodell definieren und konfigurieren, das Sie zum Erstellen adaptiver Formulare verwenden können. Weitere Informationen finden Sie unter [AEM Forms-Datenintegration](/help/forms/using/data-integration.md).

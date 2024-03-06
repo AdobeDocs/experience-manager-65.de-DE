@@ -5,10 +5,10 @@ content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '790'
-ht-degree: 91%
+ht-degree: 90%
 
 ---
 
@@ -65,7 +65,7 @@ Sie erstellen eine **adaptive Vorlage** und wenden das Design auf die Vorlage an
 
    **LESS-Variablendateien**: Dies sind die Dateien, in denen Sie die Variablen definieren oder überschreiben, die beim Definieren von CSS-Stilen verwendet werden.
 
-   Adaptive Formulare stellen OOTB-Variablen bereit, die in den folgenden `.less` -Dateien:
+   Adaptive Formulare stellen native Variablen bereit, die in den folgenden `.less` -Dateien:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
@@ -107,7 +107,7 @@ Sie erstellen eine **adaptive Vorlage** und wenden das Design auf die Vorlage an
 
    **Less mixin-Dateien:** Sie können die Funktionen definieren, die Variablen als Argumente akzeptieren. Die Ausgabe dieser Funktionen sind die resultierenden Stile. Verwenden Sie diese Mixins in verschiedenen Stilen, um Wiederholungen von CSS-Stilen zu vermeiden.
 
-   Adaptive Formulare stellen auch vorkonfigurierte Mixins bereit, die definiert wurden in:
+   Adaptive Formulare stellen vordefinierte Mixins bereit, die definiert wurden in:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/adaptiveforms-mixins.less`
 

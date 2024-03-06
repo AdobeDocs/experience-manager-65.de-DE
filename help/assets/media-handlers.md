@@ -6,9 +6,9 @@ contentOwner: AG
 role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2156'
+source-wordcount: '2136'
 ht-degree: 86%
 
 ---
@@ -29,7 +29,7 @@ Medien-Handler sind Dienste innerhalb von [!DNL Assets], die spezielle Aktionen 
 
 Die folgenden Medien-Handler sind in [!DNL Assets] verfügbar und verarbeiten die gängigsten MIME-Typen:
 
-<!-- TBD: Java versions shouldn't be set to 1.5. Must be updated.
+<!-- TBD: Java versions should not be set to 1.5. Must be updated.
 -->
 
 | Handler-Name | Dienstname (in der Systemkonsole) | Unterstützte MIME-Typen |
@@ -37,7 +37,7 @@ Die folgenden Medien-Handler sind in [!DNL Assets] verfügbar und verarbeiten di
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>application/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Wichtig</b>: Wenn Sie eine MP3-Datei hochladen, wird sie [mit einer Drittanbieterbibliothek verarbeitet](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). Die Bibliothek berechnet grob eine ungefähre Länge, wenn die MP3-Datei eine variable Bitrate (VBR) aufweist verfügt. |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Wichtig</b> - Wenn Sie eine MP3-Datei hochladen, ist es [mit einer Bibliothek eines Drittanbieters verarbeitet werden](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). Die Bibliothek berechnet grob eine ungefähre Länge, wenn die MP3-Datei eine variable Bitrate (VBR) aufweist verfügt. |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>application/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -412,7 +412,7 @@ Wenn Sie nach der Durchführung des folgenden Verfahrens eine Textdatei in [!DNL
      * * @return the number of words in the string
      * */
     private long wordCount(String text) {
-     // We need to keep track of the last character, if we have two whitespaces in a row we don't want to double count.
+     // We need to keep track of the last character, if we have two whitespaces in a row we do not want to double count.
      // The starting of the document is always a whitespace.
      boolean prevWhiteSpace = true;
      boolean currentWhiteSpace = true;

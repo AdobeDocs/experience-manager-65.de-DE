@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 99%
+source-wordcount: '1543'
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 99%
 | AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
-Adaptive Formulare benötigen Übermittlungsaktionen für die Verarbeitung der von Benutzern angegebenen Daten. Eine Übermittlungsaktion bestimmt die Aufgabe, die auf die mithilfe eines adaptiven Formulars übermittelten Daten angewendet wird. Adobe Experience Manager (AEM) umfasst [OOTB-Übermittlungsaktionen](../../forms/using/configuring-submit-actions.md), die benutzerdefinierte Aufgaben zeigen, die Sie auf die vom Benutzer übermittelten Daten anwenden können. Sie können beispielsweise Aufgaben wie das Senden von E-Mails oder das Speichern von Daten durchführen.
+Adaptive Formulare benötigen Übermittlungsaktionen für die Verarbeitung der von Benutzern angegebenen Daten. Eine Übermittlungsaktion bestimmt die Aufgabe, die auf die mithilfe eines adaptiven Formulars übermittelten Daten angewendet wird. Adobe Experience Manager (AEM) enthält [Vordefinierte Übermittlungsaktionen](../../forms/using/configuring-submit-actions.md) , die benutzerdefinierte Aufgaben zeigen, die Sie mit den vom Benutzer gesendeten Daten ausführen können. Sie können beispielsweise Aufgaben wie das Senden von E-Mails oder das Speichern von Daten durchführen.
 
 ## Workflow für eine Übermittlungsaktion {#workflow-for-a-submit-action}
 
@@ -84,7 +84,7 @@ Wenn die Aktion keinen Weiterleitungspfad bereitstellt, leitet das Übermittlung
 
 >[!NOTE]
 >
->Ein Autor stellt die Umleitungs-URL bereit (über die Konfiguration der Dankeseite). [Vordefinierte Sende-Aktionen](../../forms/using/configuring-submit-actions.md) verwenden die Umleitungs-URL, um den Browser von der Ressource, auf die der Weiterleitungspfad verweist, umzuleiten.
+>Ein Autor stellt die Umleitungs-URL bereit (über die Konfiguration der Dankeseite). [Vordefinierte Übermittlungsaktionen](../../forms/using/configuring-submit-actions.md) Verwenden Sie die Umleitungs-URL, um den Browser von der Ressource umzuleiten, auf die der Weiterleitungspfad verweist.
 >
 >Sie können eine benutzerdefinierte Sende-Aktion schreiben, die eine Abfrage an eine Ressource oder ein Servlet weiterleitet. Adobe empfiehlt, dass das Skript, das das Ressourcen-Handling für den Weiterleitungspfad durchführt, die Abfrage an die Umleitungs-URL weiterleitet, wenn die Verarbeitung abgeschlossen ist.
 
@@ -99,11 +99,11 @@ Bei einer Übermittlungsaktion handelt es sich um ein sling:Folder, das Folgende
    * **guideComponentType** vom Typ „String“ mit dem Wert **fd/af/components/guidesubmittype**
    * **guideDataModel** vom Typ String, das den Typ des adaptiven Formulars angibt, für das die Sende-Aktion anwendbar ist. **xfa** wird für XFA-basierte adaptive Formulare unterstützt, während **xsd** für XSD-basierte adaptive Formulare unterstützt wird. **basic** wird für adaptive Formulare unterstützt, die weder XDP noch XSD verwenden. Um die Aktion auf mehreren verschiedenen Typen adaptiver Formulare anzuzeigen, fügen Sie die entsprechenden Strings hinzu. Trennen Sie die Zeichenfolgen durch Kommas. Um z. B. eine Aktion auf XFA- und XSD-basierten adaptiven Formularen sichtbar zu machen, geben Sie die Werte **xfa** bzw. **xsd** an.
 
-   * **jcr:description** vom Typ „String“. Der Wert dieser Eigenschaft wird im Dialogfeld für die Bearbeitung adaptiver Formulare auf der Registerkarte „Übermittlungsaktionen“ in der Liste „Übermittlungsaktion“ angezeigt. Die vordefinierten Aktionen befinden sich im CRX-Repository im Verzeichnis **/libs/fd/af/components/guidesubmittype**.
+   * **jcr:description** vom Typ „String“. Der Wert dieser Eigenschaft wird in der Liste &quot;Übermittlungsaktion&quot;auf der Registerkarte &quot;Übermittlungsaktionen&quot;des Dialogfelds &quot;Bearbeiten&quot;für adaptive Formulare angezeigt. Die vordefinierten Aktionen befinden sich im CRX-Repository am Speicherort **/libs/fd/af/components/guidesubmittype**.
 
 ## Erstellen einer benutzerdefinierten Übermittlungsaktion {#creating-a-custom-submit-action}
 
-Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Übermittlungsaktion zu erstellen, die die Daten im CRX-Repository speichert und anschließend eine E-Mail an Sie sendet. Das adaptive Formular enthält die OOTB-Übermittlungsaktion „Inhalt speichern“ (veraltet), die die Daten im CRX-Repository speichert. Zudem stellt CQ eine [Mail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de)-API zum Senden von E-Mails bereit. Vor der Verwendung der Mail-API müssen Sie den Service „Day CQ Mail“ über die Systemkonsole [konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&amp;wcmmode=disabled). Sie können die Aktion „Inhalt speichern“ (veraltet) erneut verwenden, um Daten im Repository zu speichern. Die Aktion „Inhalt speichern“ (veraltet) ist im Ordner /libs/fd/af/components/guidesubmittype/store im CRX-Repository verfügbar.
+Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Übermittlungsaktion zu erstellen, die die Daten im CRX-Repository speichert und anschließend eine E-Mail an Sie sendet. Das adaptive Formular enthält die vordefinierte Übermittlungsaktion Speicherinhalt (veraltet), mit der die Daten im CRX-Repository gespeichert werden. Zudem stellt CQ eine [Mail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de)-API zum Senden von E-Mails bereit. Vor der Verwendung der Mail-API müssen Sie den Service „Day CQ Mail“ über die Systemkonsole [konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&amp;wcmmode=disabled). Sie können die Aktion „Inhalt speichern“ (veraltet) erneut verwenden, um Daten im Repository zu speichern. Die Aktion „Inhalt speichern“ (veraltet) ist im Ordner /libs/fd/af/components/guidesubmittype/store im CRX-Repository verfügbar.
 
 1. Melden Sie sich unter der URL https://&lt;server>:&lt;port>/crx/de/index.jsp bei CRXDE Lite an. Erstellen Sie einen Knoten mit der Eigenschaft „sling:Folder“ und dem Namen „store_and_mail“ im Ordner /apps/custom_submit_action. Erstellen Sie den Ordner „custom_submit_action“, falls er noch nicht vorhanden ist.
 
@@ -139,7 +139,7 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Übermittlung
 
    Fügen Sie der Aktion das Skript „post.POST.jsp“ hinzu. (/apps/custom_submit_action/store_and_mail/).
 
-   Führen Sie die OOTB-Speicheraktion aus (Skript „post.POST.jsp“). Verwenden Sie die von CQ bereitgestellte [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de)-API (java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) im Code, um die Speicheraktion auszuführen. Fügen Sie der JSP-Datei den folgenden Code hinzu:
+   Führen Sie die vordefinierte Speicheraktion aus (Skript &quot;post.POST.jsp&quot;). Verwenden Sie die von CQ bereitgestellte [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de)-API (java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) im Code, um die Speicheraktion auszuführen. Fügen Sie der JSP-Datei den folgenden Code hinzu:
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 

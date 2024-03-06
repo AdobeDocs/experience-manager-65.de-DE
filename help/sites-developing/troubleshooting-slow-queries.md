@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
-source-git-commit: 4289c68feb51842b5649f7cff73c5c4bc38add6c
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2236'
+source-wordcount: '2237'
 ht-degree: 93%
 
 ---
@@ -121,7 +121,7 @@ Ebenso würde ohne eine weitere Indexregel für die Eigenschaft `cq:tags` selbst
 
 Eine weitere Ursache für ein Filtern nach dem Index sind Zugangssteuerungslisten, die bei der Entwicklung oft übersehen werden. Versuchen Sie sicherzustellen, dass die Abfrage keine Pfade zurückgibt, auf die die Benutzenden möglicherweise nicht zugreifen können. Dies kann durch eine bessere Inhaltsstruktur und durch Bereitstellung relevanter Pfadbeschränkungen für die Abfrage erfolgen.
 
-Eine nützliche Methode, um festzustellen, ob der Lucene-Index viele Ergebnisse zurückgibt, von denen nur eine kleine Teilmenge als Abfrageergebnis zurückgegeben wird, besteht darin, DEBUG-Protokolle für `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex` zu aktivieren. Auf diese Weise können Sie sehen, wie viele Dokumente aus dem Index geladen werden. Die Anzahl der letztendlichen Ergebnisse sollte nicht unverhältnismäßig gering im Vergleich zur Anzahl der geladenen Dokumente sein. Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md).
+Eine nützliche Methode, um festzustellen, ob der Lucene-Index viele Ergebnisse zurückgibt, von denen nur eine kleine Teilmenge als Abfrageergebnis zurückgegeben wird, besteht darin, DEBUG-Protokolle für `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex` zu aktivieren. Auf diese Weise können Sie sehen, wie viele Dokumente aus dem Index geladen werden. Die Anzahl der Ergebnisse im Vergleich zur Anzahl der geladenen Dokumente sollte nicht unverhältnismäßig sein. Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md).
 
 #### Nach der Bereitstellung {#post-deployment-1}
 

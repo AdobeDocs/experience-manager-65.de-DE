@@ -7,10 +7,10 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: f044ed75-bb72-4be1-aef6-2fb3b2a2697b
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 77%
+source-wordcount: '692'
+ht-degree: 74%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 77%
 
 In Correspondence Management können Sie ein Bild verwenden, um die Agentsignatur in Briefen darzustellen. Nachdem Sie das Bild für die Agentsignatur festgelegt haben, können Sie es in Briefen, die Sie erstellen, als Signatur des Absenderagenten ausgeben.
 
-Das agentSignatureImage-DDE ist ein berechnetes DDE zur Darstellung des Signaturbilds des Agenten. Der Ausdruck für dieses berechnete DDE verwendet eine neue benutzerdefinierte Funktion, die vom Baustein &quot;Expression Manager&quot;verfügbar gemacht wird. Diese benutzerdefinierte Funktion akzeptiert agentID und agentFolder als Eingabeparameter und ruft den Bildinhalt anhand dieser Parameter ab. Über das Systemdatenwörterbuch SystemContext erhalten Briefe in Correspondence Management Zugriff auf Informationen im aktuellen Systemkontext. Der Systemkontext umfasst Informationen zum derzeit angemeldeten Benutzer und zu aktiven Konfigurationsparametern.
+Das agentSignatureImage-DDE ist ein berechnetes DDE, das das Signaturbild des Agenten darstellt. Der Ausdruck für dieses berechnete DDE verwendet eine neue benutzerdefinierte Funktion, die vom Baustein &quot;Expression Manager&quot;verfügbar gemacht wird. Diese benutzerdefinierte Funktion akzeptiert agentID und agentFolder als Eingabeparameter und ruft den Bildinhalt anhand dieser Parameter ab. Über das Systemdatenwörterbuch SystemContext erhalten Briefe in Correspondence Management Zugriff auf Informationen im aktuellen Systemkontext. Der Systemkontext umfasst Informationen zum derzeit angemeldeten Benutzer und zu aktiven Konfigurationsparametern.
 
 Sie können Bilder im cmuserroot-Ordner hinzufügen. In den [Eigenschaften der Correspondence Management-Konfiguration](/help/forms/using/cm-configuration-properties.md) können Sie mithilfe der Eigenschaft „URL für CM-Benutzerelemente“ den Ordner wechseln, aus dem das Agentsignaturbild abgerufen wird.
 
@@ -67,7 +67,7 @@ Der Wert des agentFolder-DDE wird aus dem CMUserRoot-Konfigurationsparameter fü
 
       ![Eigenschaft „jcr:content“](assets/3_jcrcontentntresource.png)
 
-      Zu den Untereigenschaften von jcr:content gehört jcr:data, das abgeblendet ist. Doppelklicken Sie auf jcr:data. Die Eigenschaft wird bearbeitbar und die Schaltfläche „Datei wählen“ wird im entsprechenden Eintrag angezeigt. Klicken Sie auf **Datei wählen** und wählen Sie die Bilddatei aus, die Sie als Logo benutzen möchten. Für die Bilddatei wird keine Erweiterung benötigt.
+      Zu den Untereigenschaften von jcr:content gehört jcr:data, das abgeblendet ist. Doppelklicken Sie auf jcr:data. Die Eigenschaft wird bearbeitbar und die Schaltfläche „Datei wählen“ wird im entsprechenden Eintrag angezeigt. Klicken Sie auf **Datei wählen** und wählen Sie die Bilddatei aus, die Sie als Logo benutzen möchten. Die Bilddatei muss keine Erweiterung aufweisen.
 
       ![JCR-Daten](assets/5_jcrdata.png)
 

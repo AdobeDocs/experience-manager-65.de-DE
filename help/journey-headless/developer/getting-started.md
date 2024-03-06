@@ -2,10 +2,10 @@
 title: Erste Schritte mit AEM Headless
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Voraussetzungen für AEM Headless.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2998'
-ht-degree: 96%
+source-wordcount: '2999'
+ht-degree: 98%
 
 ---
 
@@ -113,13 +113,13 @@ Diese Integrationsebene baut auf Ebene zwei auf, indem die meisten Inhalte in de
 
 ### Sie haben noch keinen externen Benutzer der Headless-Inhalte, z. B. eine Single Page Application (SPA). {#do-not-have-a-spa}
 
-Wenn Sie ein SPA erstellen möchten, das Inhalte von AEM nutzlos nutzt, können Sie Funktionen wie Inhaltsfragmente verwenden, um Headless-Inhalte zu verwalten und auch eine SPA mit AEM Editor-Framework zu erstellen.
+Wenn Sie eine SPA erstellen möchten, die Inhalte von AEM „headless“ nutzt, können Sie Funktionen wie Inhaltsfragmente verwenden, um Ihre Headless-Inhalte zu verwalten, und auch eine SPA mithilfe des AEM SPA-Editor-Frameworks erstellen.
 
 Mit dem SPA-Editor nutzt die SPA nicht nur Inhalte aus AEM, sondern kann auch innerhalb von AEM von Ihren Inhaltsautoren vollständig bearbeitet werden, sodass Sie sowohl die Flexibilität der Headless-Bereitstellung als auch der kontextbezogenen Bearbeitung innerhalb von AEM nutzen können.
 
 ## Anforderungen und Vorbedingungen {#requirements-prerequisites}
 
-Es gibt mehrere Anforderungen, bevor Sie Ihr Headless-AEM-Projekt starten.
+Bevor Sie mit Ihrem Headless-AEM-Projekt beginnen, müssen Sie verschiedene Anforderungen erfüllen.
 
 ### Kenntnisse {#knowledge}
 
@@ -206,7 +206,7 @@ Inhaltsfragmentnamen müssen für Inhaltsautoren beschreibend sein. AEM behandel
 
 Weitere Informationen zu AEM-Seitennamenkonventionen finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources).
 
-##### Verschachtelung von Inhalten nicht überstrapazieren {#content-nesting}
+##### Inhaltsverschachtelung nicht überschreiben {#content-nesting}
 
 [Inhaltsfragmente](#content-fragments) werden in AEM verwendet, um Headless-Inhalte zu erstellen. AEM unterstützt bis zu zehn Verschachtelungsebenen von Inhalten für Inhaltsfragmente. Beachten Sie jedoch, dass AEM alle im übergeordneten Inhaltsfragment definierten Verweise iterativ auflösen und dann überprüfen muss, ob in allen gleichrangigen Elementen Verweise auf untergeordnete Elemente vorhanden sind. Diese Vorgänge können sich schnell summieren und zu einem Leistungsproblem werden.
 

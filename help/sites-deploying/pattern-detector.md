@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 feature: Upgrading
 exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 97%
+source-wordcount: '500'
+ht-degree: 96%
 
 ---
 
@@ -210,7 +210,7 @@ Mit der Ausgabe:
 
 ## Erkennungsbereich {#scope}
 
-Der Musterdetektor ermöglicht derzeit die Überprüfung von:
+Mit dem Musterdetektor können Sie derzeit Folgendes überprüfen:
 
 * Nichtübereinstimmung der Exporte und Importe von OSGi-Bundles
 * Überschreibungen von Sling-Ressourcentypen und -Supertypen (mit Inhaltsüberlagerungen für Suchpfade)

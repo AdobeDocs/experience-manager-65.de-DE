@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 970e0a97d531d4cbae76119960972e54ef65dda0
 workflow-type: tm+mt
-source-wordcount: '6076'
+source-wordcount: '6074'
 ht-degree: 93%
 
 ---
@@ -612,7 +612,7 @@ Bei der Implementierung eines solchen Dienstes ist darauf zu achten, dass die Ei
 | **Name** | **Beschreibung** | **Standardverhalten** |
 |---|---|---|
 | Authenticator | Stellt Authentifizierungsinformationen für AEM bereit | Verwendet einen konfigurierbaren technischen Benutzer für sowohl Author als auch Publish. Alternativ kann SSO verwendet werden. |
-| HTMLRewriter | Schreibt Links, Bilder usw. um | Schreibt AEM-Links zu Portal-Links um, kann durch einen UrlMapper und einen TextMapper erweitert werden. |
+| HTMLRewriter | Links und Bilder neu schreiben | Schreibt AEM-Links zu Portal-Links um, kann durch einen UrlMapper und einen TextMapper erweitert werden. |
 | HttpClientService | Verarbeitet alle HTTP-Verbindungen | Standardimplementierung. |
 | LocaleHandler | Verarbeitet die Gebietsschema-Informationen | Schreibt einen Link zum Inhalt in Bezug auf das Gebietsschema neu. |
 | LocaleDetector | Ermittelt das Gebietsschema der Benutzenden | Verwendet das vom Portal bereitgestellte Gebietsschema. |

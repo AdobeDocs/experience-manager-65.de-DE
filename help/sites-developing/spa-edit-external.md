@@ -2,10 +2,10 @@
 title: Bearbeiten externer SPA in Adobe Experience Manager
 description: In diesem Dokument werden die empfohlenen Schritte zum Hochladen einer eigenständigen SPA in eine Adobe Experience Manager-Instanz, zum Hinzufügen bearbeitbarer Inhaltsabschnitte und zum Aktivieren der Bearbeitung beschrieben.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 87%
+source-wordcount: '2391'
+ht-degree: 86%
 
 ---
 
@@ -205,7 +205,7 @@ Die `AEMText`-Komponente kann jetzt in AEM bearbeitet werden.
    >
    >In diesem Beispiel wird die entpackte React-Text-Komponente anstelle der umschlossenen verwendet `AEMText` erstellt. Das liegt daran, dass, wenn die Komponente Teil einer Seite/eines Containers und nicht eigenständig ist, der Container sich um die rekursive Zuordnung der Komponente und die Aktivierung der Authoring-Funktionen kümmert und der zusätzliche Wrapper nicht für jedes untergeordnete Element benötigt wird.
 
-1. Um eine bearbeitbare Seite in der SPA hinzuzufügen, folgen Sie denselben Schritten wie im Abschnitt [Hinzufügen von bearbeitbaren Komponenten zur Seite](#add-authorable-component-to-page). Hier können wir die `itemPath`-Eigenschaft jedoch überspringen.
+1. Um eine bearbeitbare Seite in der SPA hinzuzufügen, folgen Sie denselben Schritten wie im Abschnitt [Hinzufügen von bearbeitbaren Komponenten zur Seite](#add-authorable-component-to-page). Hier können wir die `itemPath` -Eigenschaft.
 
 #### Überprüfen des Seiteninhalts in AEM {#verify-page-content}
 
@@ -300,7 +300,7 @@ Wenn Sie den vorherigen Beispielen gefolgt sind, kann Ihre externe SPA jetzt in 
 
 ### Stammknoten-ID {#root-node-id}
 
-Standardmäßig wird davon ausgegangen, dass das React-Programm innerhalb einer `div` der Element-ID `spa-root` gerendert wird. Bei Bedarf kann diese angepasst werden.
+Standardmäßig wird davon ausgegangen, dass das React-Programm innerhalb einer `div` der Element-ID `spa-root` gerendert wird. Bei Bedarf kann dies angepasst werden.
 
 Nehmen wir beispielsweise an, wir haben eine SPA, in der das Programm innerhalb einer `div` der Element-ID `root` gerendert wird. Dies muss in drei Dateien widergespiegelt werden.
 

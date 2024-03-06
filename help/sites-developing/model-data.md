@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1775'
-ht-degree: 7%
+ht-degree: 5%
 
 ---
 
@@ -71,7 +71,7 @@ Ich persönlich bevorzuge zunächst Hierarchiekonventionen anstelle des Knotenty
 >
 >Die Art und Weise, wie ein Content-Repository strukturiert ist, kann sich auch auf die Leistung auswirken. Für eine optimale Leistung sollte die Anzahl der untergeordneten Knoten, die an einzelne Knoten in einem Inhalts-Repository angehängt werden, 1&#39;000 nicht überschreiten.
 >
->Weitere Informationen finden Sie unter [Wie viele Daten kann CRX verarbeiten?](https://helpx.adobe.com/de/experience-manager/kb/CrxLimitation.html)
+>Siehe [Wie viele Daten kann CRX verarbeiten?](https://helpx.adobe.com/de/experience-manager/kb/CrxLimitation.html)
 
 #### Beispiel {#example-2}
 
@@ -89,7 +89,7 @@ Ich würde ein einfaches Blogging-System wie folgt modellieren. Anfangs interess
 
 Ich denke, dass eines der Dinge, die sichtbar werden, ist, dass die Struktur des Inhalts auf dem Beispiel basiert ohne weitere Erklärungen.
 
-Was am Anfang unerwartet sein kann, ist, warum ich die &quot;Kommentare&quot; nicht mit dem &quot;Post&quot; speichern würde, was auf die Zugriffskontrolle zurückzuführen ist, die ich gerne in einer einigermaßen hierarchischen Weise anwenden möchte.
+Was am Anfang unerwartet ist, ist, warum ich die &quot;Kommentare&quot; nicht mit dem &quot;Post&quot; speichern würde, was auf die Zugriffskontrolle zurückzuführen ist, die ich gerne in einer einigermaßen hierarchischen Weise anwenden möchte.
 
 Mithilfe des obigen Inhaltsmodells kann ich dem &quot;anonymen&quot;Benutzer einfach erlauben, Kommentare zu &quot;erstellen&quot;, aber den anonymen Benutzer für den Rest des Arbeitsbereichs schreibgeschützt halten.
 
@@ -97,7 +97,7 @@ Mithilfe des obigen Inhaltsmodells kann ich dem &quot;anonymen&quot;Benutzer ein
 
 #### Erklärung {#explanation-3}
 
-Wenn Sie in Ihrer Anwendung nicht die Methoden `clone()`, `merge()` oder `update()` verwenden, sollten Sie sich für einen einzigen Workspace entscheiden.
+Wenn Sie nicht `clone()`, `merge()` oder `update()` -Methoden in Ihrer Anwendung ist wahrscheinlich ein einziger Arbeitsbereich der richtige Weg.
 
 &quot;Entsprechende Knoten&quot;ist ein Konzept, das in der JCR-Spezifikation definiert ist. Grundsätzlich läuft er auf Knoten zurück, die denselben Inhalt in verschiedenen so genannten Arbeitsbereichen darstellen.
 
@@ -164,7 +164,7 @@ Nehmen wir an, ich lasse &quot;Verweise&quot;von einem Dokument (a) auf ein ande
 
 Also würde ich diese Verweise entweder als &quot;schwache Verweise&quot;modellieren (in JCR v1.0 läuft dies im Wesentlichen auf Zeichenfolgeneigenschaften ab, die die UUID des Zielknotens enthalten) oder einfach einen Pfad verwenden. Manchmal ist der Pfad aussagekräftiger.
 
-Ich glaube, es gibt Anwendungsfälle, in denen ein System wirklich nicht funktionieren kann, wenn eine Referenz in Gefahr ist, aber ich kann einfach kein gutes &quot;reales&quot;, aber einfaches Beispiel aus meiner direkten Erfahrung entwickeln.
+Ich denke, es gibt Anwendungsfälle, in denen ein System wirklich nicht funktionieren kann, wenn eine Referenz in Gefahr ist, aber ich kann aus meiner direkten Erfahrung einfach kein gutes &quot;reales&quot;, aber einfaches Beispiel entwickeln.
 
 ### 6. Regel: Dateien sind Dateien. {#rule-files-are-files}
 

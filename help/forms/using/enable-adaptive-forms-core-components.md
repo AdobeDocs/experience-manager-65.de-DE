@@ -8,10 +8,10 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
-source-git-commit: 6cec9874bff54dea63562f7a880429d54e83ba79
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 82%
+source-wordcount: '968'
+ht-degree: 80%
 
 ---
 
@@ -139,7 +139,7 @@ So erstellen Sie ein auf AEM Archetyp 41 oder [höher](https://github.com/adobe/
 >
 >
 >
-> * Falls Sie Schwierigkeiten haben, den Anmeldedialog auf einer Veröffentlichungsinstanz aufzurufen, um das Paket über den Package Manager zu installieren, versuchen Sie, sich über die URL `http://[Publish Server URL]:[PORT]/system/console` anzumelden. Auf diese Weise können Sie auf die Anmeldeseite bei der Veröffentlichungsinstanz zugreifen, sodass Sie mit dem Installationsprozess fortfahren können.
+> * Falls Sie Schwierigkeiten haben, den Anmeldedialog auf einer Veröffentlichungsinstanz aufzurufen, um das Paket über den Package Manager zu installieren, versuchen Sie, sich über die URL `http://[Publish Server URL]:[PORT]/system/console` anzumelden. Auf diese Weise können Sie auf die Anmeldeseite in einer Veröffentlichungsinstanz zugreifen und mit dem Installationsprozess fortfahren.
 > * Löschen oder verwerfen Sie das Archetyp-Projekt nicht, nachdem Sie es in Ihrer Umgebung bereitgestellt haben. Das Archetyp-Projekt ist erforderlich, um Ihrer Umgebung benutzerdefinierte und neue Kernkomponenten-Designs für adaptive Formulare hinzuzufügen.
 
 Die Kernkomponenten sind für Ihre Umgebung aktiviert. Eine leere, auf Kernkomponenten basierende Vorlage für ein adaptives Formular und ein Canvas 3.0-Design werden in Ihrer Umgebung bereitgestellt, sodass Sie [auf Kernkomponenten basierende adaptive Formulare erstellen können](create-an-adaptive-form-core-components.md).

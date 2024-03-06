@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: bcebbdb4-20b9-4c2d-8a87-013549d686c1
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: ht
-source-wordcount: '426'
-ht-degree: 100%
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 Das Model von David Nüscheler („David’s Model“) wurde vor Jahren entworfen, hat aber bis heute Gültigkeit. Die wichtigsten Grundsätze des Modells lauten:
 
 * Erst die Daten, dann die Struktur. Zumindest gegebenenfalls.
-* Die Inhaltshierarchie steuern, nicht dem Zufall überlassen.
+* Gestalten Sie die Inhaltshierarchie, lassen Sie sie nicht passieren.
 * Workspaces sind für `clone()`, `merge()` und `update()` vorgesehen.
 * Bei gleichgeordneten Elementen mit identischem Namen ist Vorsicht geboten.
 * Verweise richten mehr Schaden an, als sie nutzen.

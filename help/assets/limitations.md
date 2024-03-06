@@ -8,10 +8,10 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: e4d4059e-ac0b-42e7-910c-001310796574
-source-git-commit: cc219931430ba571745e6ef254a034a689acd1cf
+source-git-commit: 886edbf0e98f5cdee176aaa0a7dffcf18b1a7cc2
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 92%
+source-wordcount: '347'
+ht-degree: 88%
 
 ---
 
@@ -31,11 +31,12 @@ Wenn Sie ein Rotationsset oder Bildset erstellen oder PDFs zur Seitenextrahierun
 | Asset – Art des Grenzwerts | Best Practice | Erzwungene Begrenzung |
 | --- | --- | --- |
 | **Bild**: Anzahl der smarten Zuschnitte pro Bild | 5 | 100 |
-| **Alle Sets**: Anzahl doppelter Assets pro Set | Keine Duplikate | 20 |
+| **Alle Sets**: Anzahl doppelter Assets pro Set | Keine Duplikate | 20 ‡ |
 | **Alle Sets**: Maximale Anzahl von Assets pro Set | 5–10 Bilder pro Set | 1000 |
 | **Rotationsset**: Maximale Anzahl von Zeilen/Spalten pro 2D-Set | 12–18 Bilder pro Set | 1000 |
 | **PDF**: Maximale Zahl der Seiten für eine PDF-Datei, die für die Extraktion berücksichtigt werden sollen |  | 100 (für alle PDFs) |
 
+‡ Best Practice ist, keine doppelten Assets in einem Satz zu haben. Die Beschränkung beträgt 20 Duplikate für ein einzelnes Asset. Wenn Sie ein weiteres Duplikat für dieses Asset innerhalb dieses Satzes hinzufügen, gibt die Anfrage entweder einen Fehler aus oder ignoriert das Duplikat.
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
 ## Nicht unterstützte Webbrowser- und Betriebssystemkombinationen für Dynamic Media {#unsupported-browser-os}

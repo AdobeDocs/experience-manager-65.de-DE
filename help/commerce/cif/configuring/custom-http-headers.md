@@ -2,10 +2,10 @@
 title: Anwenderdefinierte HTTP-Kopfzeilen
 description: Erfahren Sie, wie Sie benutzerdefinierte HTTP-Header in Adobe Experience Manager Commerce konfigurieren.
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 82%
+source-wordcount: '267'
+ht-degree: 74%
 
 ---
 
@@ -34,7 +34,7 @@ Die Komponenten, die die obige Cloud Service-Konfiguration verwenden, senden die
 
 ## Einschränkungen {#restrictions}
 
-Der Service ermöglicht zwar die Definition von Kopfzeilennamen, einschließlich der standardmäßigen Namen, aber sie stehen nicht zur Konfiguration zur Verfügung. Mit anderen Worten: Sie können die standardmäßigen HTTP-Kopfzeilen nicht mit dieser Funktion überschreiben. Eine Liste mit eingeschränkten Kopfzeilennamen finden Sie [hier](https://developer.mozilla.org/de-DE/docs/Web/HTTP/Headers). Darüber hinaus gibt es zwei weitere Kopfzeilen, die nicht verwendet werden können:
+Der Dienst ermöglicht zwar die Definition von Kopfzeilennamen, einschließlich der standardmäßigen, aber sie stehen nicht zur Konfiguration zur Verfügung. Mit anderen Worten: Sie können die standardmäßigen HTTP-Kopfzeilen nicht mit dieser Funktion überschreiben. Eine Liste mit eingeschränkten Kopfzeilennamen finden Sie [hier](https://developer.mozilla.org/de-DE/docs/Web/HTTP/Headers). Darüber hinaus gibt es zwei weitere Kopfzeilen, die nicht verwendet werden können:
 
 * „Store“ – wird von CIF verwendet, um den Adobe Commerce-Store zu identifizieren.
 * „Preview-Version“ – wird von CIF zum Abrufen von Staging-Produkten verwendet.

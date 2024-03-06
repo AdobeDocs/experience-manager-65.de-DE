@@ -6,10 +6,10 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 97%
+source-wordcount: '1228'
+ht-degree: 91%
 
 ---
 
@@ -114,7 +114,7 @@ Sie müssen nicht auf den Link in der Fehlermeldung klicken, um die Felder in de
 
 ### Gelöschte Felder in der XDP-Datei {#deleted-fields-in-xdp-file}
 
-Wenn ein zuvor in ein adaptives Formular kopiertes Feld in einer XDP-Datei gelöscht wird, wird eine Fehlermeldung im Autorenmodus angezeigt, die angibt, dass das Feld in der XDP-Datei nicht vorhanden ist. In diesem Fall müssen Sie das Feld manuell aus dem adaptiven Formular löschen oder die Eigenschaft `bindRef` im Komponentendialogfeld löschen.
+Wenn ein Feld, das zuvor in ein adaptives Formular kopiert wurde, aus einer XDP-Datei gelöscht wird, wird im Authoring-Modus eine Fehlermeldung angezeigt, die besagt, dass das Feld nicht in der XDP-Datei vorhanden ist. In diesem Fall müssen Sie das Feld manuell aus dem adaptiven Formular löschen oder die Eigenschaft `bindRef` im Komponentendialogfeld löschen.
 
 Die folgenden Schritte veranschaulichen diesen Vorgang für die Assets, die in dem Beispiel in diesem Artikel verwendet wurden:
 
@@ -132,7 +132,7 @@ Das gelöschte Feld wird außerdem mit einem Symbol gekennzeichnet, um einen Feh
 
 >[!NOTE]
 >
->Die Felder im adaptiven Formular, die eine inkorrekte Bindung aufweisen (einen ungültigen `bindRef`-Wert im Bearbeitungsdialogfeld) werden ebenfalls als gelöschte Felder betrachtet. Wenn die Autorin bzw. der Autor diese Fehler nicht behebt und das adaptive Formular veröffentlicht, wird das Feld als normales ungebundenes adaptives Formularfeld behandelt und in den unbinded-Abschnitt der Ausgabe-XML-Datei aufgenommen.
+>Die Felder im adaptiven Formular, die eine inkorrekte Bindung aufweisen (einen ungültigen `bindRef`-Wert im Bearbeitungsdialogfeld) werden ebenfalls als gelöschte Felder betrachtet. Wenn der Autor diese Fehler nicht behebt und das adaptive Formular veröffentlicht, wird das Feld als normales ungebundenes adaptives Formularfeld behandelt und in den unbinded-Abschnitt der Ausgabe-XML-Datei aufgenommen.
 
 ## Downloads {#downloads}
 

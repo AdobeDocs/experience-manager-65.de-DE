@@ -5,9 +5,9 @@ contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6157'
+source-wordcount: '6159'
 ht-degree: 98%
 
 ---
@@ -293,7 +293,7 @@ Wählen Sie **Transparenz**, um die Transparenzeinstellungen beim Optimieren von
 >
 >Die Auflösung für Verlauf und Gitter sollte im Allgemeinen auf 150 bis 300 ppi eingestellt werden, da sich die Qualität von Verläufen, Schlagschatten und weichen Kanten mit höheren Auflösungen nicht verbessert. Hingegen wird durch höhere Auflösungen die Druckzeit verlängert und die Datei unnötig vergrößert.
 
-**Text in Pfade konvertieren**: Wandelt alle Textobjekte (Punkttext, Flächentext und Pfadtext) in Pfade um und ignoriert alle Textglyphen-Informationen auf Seiten mit Transparenz. Mit dieser Option wird sichergestellt, dass die Breite des Textes während der Reduzierung konsistent bleibt. Beachten Sie, dass die Aktivierung dieser Option dazu führt, dass kleine Schriften etwas dicker erscheinen, wenn sie in Acrobat angezeigt oder auf Desktop-Druckern mit niedriger Auflösung gedruckt werden. Sie wirkt sich nicht auf die Qualität des auf Druckern oder Bildträgern mit hoher Auflösung gedruckten Typs aus.
+**Text in Pfade konvertieren**: Wandelt alle Textobjekte (Punkttext, Flächentext und Pfadtext) in Pfade um und ignoriert alle Textglyphen-Informationen auf Seiten mit Transparenz. Mit dieser Option wird sichergestellt, dass die Breite des Textes während der Reduzierung konsistent bleibt. Beachten Sie, dass die Aktivierung dieser Option dazu führt, dass kleine Schriften etwas dicker erscheinen, wenn sie in Acrobat angezeigt oder auf Desktop-Druckern mit niedriger Auflösung gedruckt werden. Die Qualität des auf Druckern oder Bildträgern mit hoher Auflösung gedruckten Typs wird dadurch nicht beeinträchtigt.
 
 **Konturen in Pfade konvertieren** Wandelt auf Seiten mit Transparenz alle Konturen in einfache ausgefüllte Pfade um. Mit dieser Option wird sichergestellt, dass die Breite von Konturen beim Reduzieren unverändert bleibt. Beachten Sie, dass dünne Konturen geringfügig dicker angezeigt werden und die Leistung des Reduzierens beeinträchtigen werden könnte, wenn Sie diese Option aktivieren.
 

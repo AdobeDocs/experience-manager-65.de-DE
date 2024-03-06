@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: introduction
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 74%
+source-wordcount: '631'
+ht-degree: 70%
 
 ---
 
@@ -96,7 +96,7 @@ Beachten Sie bei der Migration die folgenden wichtigen Unterschiede zwischen der
  </tbody>
 </table>
 
-Das heißt, dass die Migration eines Bereichs Ihrer Benutzeroberfläche von der klassischen Benutzeroberfläche zur Touch-optimierten Benutzeroberfläche die Portierung eines *ExtJS-Widgets* zu einer *Sling-Komponente* bedeutet. Um dies zu vereinfachen, basiert die Touch-optimierte Benutzeroberfläche auf dem Granite-UI-Framework, das bereits einige Sling-Komponenten für die Benutzeroberfläche bereitstellt (als Granite-UI-Komponenten bezeichnet).
+Das heißt, dass die Migration eines Bereichs Ihrer Benutzeroberfläche von der klassischen Benutzeroberfläche zur Touch-Benutzeroberfläche bedeutet, dass ein *ExtJS-Widget* zu *Sling-Komponente*. Um dies zu vereinfachen, basiert die Touch-optimierte Benutzeroberfläche auf dem Granite-UI-Framework, das bereits einige Sling-Komponenten für die Benutzeroberfläche bereitstellt (als Granite-UI-Komponenten bezeichnet).
 
 Bevor Sie beginnen, überprüfen Sie den Status und die zugehörigen Empfehlungen:
 
@@ -148,7 +148,7 @@ Umfassende Informationen zur Entwicklung von AEM finden Sie in der Sammlung von 
 * [Dokumentation zur Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [Tutorials und Videos zu AEM 6.5 Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=de)
 * [Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial ](/help/sites-developing/getting-started.md)
-* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)
+* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=de)
 * [AEM-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]

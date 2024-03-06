@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 22235790b2bfefaa1a3bf71f888f8eb343d9e1b7
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '4257'
 ht-degree: 91%
@@ -280,7 +280,7 @@ Sie können ein Formularmodell auch bei der Erstellung eines Formulars auswähle
 
 1. Wählen Sie auf der Registerkarte &quot;Formularmodell&quot;im Abschnitt Konfiguration der Datensatzvorlagenkonfiguration eine der folgenden Optionen aus:
 
-   **Keine** Wählen Sie diese Option aus, wenn Sie kein Datensatzdokument für das Formular konfigurieren möchten.
+   **Keines** Wählen Sie diese Option, wenn Sie das Datensatzdokument für das Formular nicht konfigurieren möchten.
 
    **Formularvorlage als Dokument einer Datensatzvorlage verknüpfen** Wählen Sie diese Option, wenn Sie eine XDP-Datei haben, die Sie als Vorlage für das Datensatzdokument verwenden möchten. Wenn Sie diese Option wählen, werden alle im AEM Forms-Repository verfügbaren XDP-Dateien angezeigt. Wählen Sie die entsprechende Datei aus.
 
@@ -308,7 +308,7 @@ Beim Generieren eines Datensatzdokuments können Sie auf der Registerkarte „Da
 Für die Lokalisierung der Branding-Informationen, die Sie auf der Registerkarte für das Datensatzdokument eingeben, müssen Sie sicherstellen, dass das Gebietsschema des Browsers richtig eingestellt ist. Um die Branding-Informationen im Datensatzdokument anzupassen, führen Sie die folgenden Schritte aus:
 
 1. Wählen Sie einen Bereich (Stammbereich) im Datensatzdokument aus und wählen Sie dann ![konfigurieren](assets/configure.png).
-1. Auswählen ![dortab](/help/forms/using/assets/dortab.png). Die Registerkarte „Datensatzdokument“ wird angezeigt.
+1. Wählen Sie ![dortab](/help/forms/using/assets/dortab.png). Die Registerkarte „Datensatzdokument“ wird angezeigt.
 1. Wählen Sie entweder die Standardvorlage oder eine benutzerdefinierte Vorlage aus, um das Datensatzdokument zu rendern. Wenn Sie die Standardvorlage auswählen, wird eine Miniaturvorschau des Datensatzdokuments unterhalb der Dropdown-Liste „Vorlage“ angezeigt.
 
    ![brandingtemplate](/help/forms/using/assets/brandingtemplate.png)
@@ -423,7 +423,7 @@ So wenden Sie einen Seitenumbruch auf ein Datensatzdokument an:
 
 1. Im **[!UICONTROL Paginierung]** Bereich, wählen Sie ![Ordner](/help/forms/using/assets/folder-icon.png) im **[!UICONTROL Ort]** -Feld.
 1. Auswählen **[!UICONTROL Anfang der nächsten Seite]** und wählen **[!UICONTROL Auswählen]**. Sie können auch **[!UICONTROL Seitenanfang]**, wählen Sie die Masterseite aus und wählen Sie **[!UICONTROL Auswählen]** , um den Seitenumbruch anzuwenden.
-1. Auswählen ![Speichern](/help/forms/using/assets/save_icon.png) , um die Eigenschaften zu speichern.
+1. Wählen Sie ![Speichern](/help/forms/using/assets/save_icon.png) aus, um die Eigenschaften zu speichern.
 
 Das ausgewählte Bedienfeld wechselt zur nächsten Seite.
 

@@ -2,7 +2,7 @@
 title: Live-Schalten Ihres Headless-Programms
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie eine Headless-Anwendung live bereitstellen.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 98%
@@ -149,7 +149,7 @@ Wenn Sie zur AMS-Kundschaft gehören und Cloud Manager verwenden, können Sie, s
 
 Nachdem die Aktualisierungen in Cloud Manager hochgeladen wurden, können sie mit der [CI/CD-Pipeline von Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=de) in AEM bereitgestellt werden.
 
-<!-- Can't find a parallel link -->
+<!-- Cannot find a parallel link -->
 <!--
 You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
 -->
@@ -167,7 +167,7 @@ Damit Benutzerinnen und Benutzern bei der Nutzung des AEM Headless-Programms das
       * Überprüfen der Anzahl der Benutzenden, Anfragen sowie der Auslastung
 * Abrufen programm- und speicherplatzspezifischer Performance-Berichte
    * Prüfen, ob die allgemeinen Metriken grün/orange/rot gekennzeichnet sind, sobald der Server hochgefahren ist, um anschließend spezifische Programmprobleme zu identifizieren
-   * Öffnen Sie dieselben Berichte, die oben nach App oder Leerzeichen gefiltert wurden (z. B. Photoshop-Desktop, Paywall)
+   * Öffnen der oben genannten Berichte gefiltert nach App oder Bereich (z. B. Desktop-Version von Photoshop, Paywall)
    * Verwenden von Splunk-Protokoll-APIs, um Performance-Berichte zu Services und Programmen abzurufen
    * Wenden Sie sich an den Support, falls weitere Probleme auftreten.
 

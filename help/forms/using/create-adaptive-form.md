@@ -3,9 +3,9 @@ title: '„Tutorial: Erstellen eines adaptiven Formulars“'
 description: Lernen Sie, ein adaptives Formular zu erstellen, zu gestalten und in der Vorschau anzuzeigen.  Informieren Sie sich auch über das Konfigurieren von Sendeaktionen.
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1314'
 ht-degree: 85%
 
 ---
@@ -35,14 +35,14 @@ Am Ende des Artikels haben Sie ein Formular, was so ähnlich wie Folgendes aussi
 ## Schritt 1: Adaptives Formular erstellen {#step-create-the-adaptive-form}
 
 1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**. Die Standard-URL lautet [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
-1. Auswählen **[!UICONTROL Erstellen]** und wählen **[!UICONTROL Adaptives Formular]**. Eine Option zum Auswählen einer Vorlage wird angezeigt. Wählen Sie die **[!UICONTROL Leer]** Vorlage zur Auswahl und Auswahl **[!UICONTROL Nächste]**.
+1. Wählen Sie **[!UICONTROL Erstellen]** und dann **[!UICONTROL Adaptives Formular]** aus. Eine Option zum Auswählen einer Vorlage wird angezeigt. Wählen Sie die **[!UICONTROL Leer]** Vorlage zur Auswahl und Auswahl **[!UICONTROL Nächste]**.
 
 1. Eine Option **[!UICONTROL Eigenschaften hinzufügen]** wird angezeigt. Die Felder **[!UICONTROL Titel]** und **[!UICONTROL Name]** sind obligatorisch.
 
    * **Titel:** Geben Sie `Add new or update shipping address` im Feld **[!UICONTROL Titel]** an. Das Feld „Titel“: Gibt den Anzeigenamen des Formulars an. Der Titel erleichtert Ihnen die Identifizierung des Formulars in der Benutzeroberfläche von AEM [!DNL Forms].
    * **Name:** Geben Sie `shipping-address-add-update-form` in das Feld **[!UICONTROL Name]** ein. Das Feld „Name“ gibt den Namen des Formulars an.  Im Repository wird ein Knoten mit dem angegebenen Namen erstellt. Wenn Sie mit der Eingabe des Titels beginnen, wird automatisch ein Wert für das Feld „Name“ vorgeschlagen. Sie können den vorgeschlagenen Wert gegebenenfalls ändern. Im Feld „Name“ dürfen nur alphanumerische Zeichen, Bindestriche und Unterstriche eingegeben werden. Alle ungültigen Eingaben werden durch Bindestriche ersetzt.
 
-1. Wählen Sie **[!UICONTROL Erstellen]**. Ein adaptives Formular wird erstellt und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt. Auswählen **[!UICONTROL Öffnen]** , um das neu erstellte Formular in einer neuen Registerkarte zu öffnen. Das Formular wird zur Bearbeitung geöffnet.  Es zeigt auch die Seitenleiste an, um das neu erstellte Formular entsprechend den Anforderungen anzupassen.
+1. Wählen Sie **[!UICONTROL Erstellen]** aus. Ein adaptives Formular wird erstellt und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt. Auswählen **[!UICONTROL Öffnen]** , um das neu erstellte Formular in einer neuen Registerkarte zu öffnen. Das Formular wird zur Bearbeitung geöffnet.  Es zeigt auch die Seitenleiste an, um das neu erstellte Formular entsprechend den Anforderungen anzupassen.
 
    Weitere Informationen zur Authoring-Oberfläche für adaptive Formulare und zu verfügbaren Komponenten finden Sie in der [Einführung in das Authoring adaptiver Formulare](/help/forms/using/creating-adaptive-form.md).
 

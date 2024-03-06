@@ -6,10 +6,10 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '2597'
-ht-degree: 92%
+source-wordcount: '2593'
+ht-degree: 96%
 
 ---
 
@@ -79,7 +79,7 @@ Alle Felder müssen über verschiedene Elementnamen verfügen, um als Parameter 
 
 ### Post hat Daten an eine Ressource oder einen externen REST-Endpunkt übermittelt  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
-Verwenden Sie die Aktion **An REST-Endpunkt übermitteln**, um die übertragenen Daten an eine Rest-URL zu veröffentlichen. Die URL kann sich auf einem internen (dem Server, auf dem das Formular gerendert wird) oder auf einem externen Server befinden.
+Verwenden Sie die Aktion **An REST-Endpunkt übermitteln**, um die übertragenen Daten an eine Rest-URL zu veröffentlichen. Die URL kann sich auf einem internen Server (dem Server, auf dem das Formular gerendert wird) oder auf einem externen Server befinden.
 
 Um Daten auf einem internen Server zu senden, geben Sie den Pfad der Ressource an. Die Daten werden an den Pfad der Ressource gesendet. Beispiel: /content/restEndPoint. Für solche Sende-Anfragen werden die Authentifizierungsinformationen der Versandanfrage verwendet.
 
@@ -175,18 +175,18 @@ Die Funktion &quot;An Microsoft® SharePoint-Liste übermitteln&quot;wurde mit A
 
 Die **[!UICONTROL An SharePoint übermitteln]** -Übermittlungsaktion verbindet ein adaptives Formular mit einem Microsoft® SharePoint-Speicher. Sie können die Formulardatendatei, die Anlagen oder das Datensatzdokument an den verbundenen Microsoft® Sharepoint-Speicher senden.
 
-### Verbinden eines adaptiven Formulars mit der Microsoft® SharePoint-Liste {#connect-af-sharepoint-list}
+### Verbinden eines adaptiven Formulars mit einer Microsoft® SharePoint-Liste {#connect-af-sharepoint-list}
 
 So verbinden Sie ein adaptives Formular mit der Microsoft® SharePoint-Liste:
 
-1. [Erstellen einer SharePoint-Listenkonfiguration](#create-sharepoint-list-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® Sharepoint List Storage verbunden.
+1. [SharePoint-Listenkonfiguration erstellen](#create-sharepoint-list-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® Sharepoint-Listenspeicher verbunden.
 1. [Verwenden Sie die **Senden mit Formulardatenmodell** Übermittlungsaktion in einem adaptiven Formular](#use-submit-using-fdm): Sendet Ihre adaptiven Formulardaten an die konfigurierte Microsoft® SharePoint.
 
-#### Erstellen einer SharePoint-Listenkonfiguration {#create-sharepoint-list-configuration}
+#### Erstellen einer Microsoft SharePoint-Listenkonfiguration {#create-sharepoint-list-configuration}
 
-So verbinden Sie AEM Forms mit Ihrer Microsoft® Sharepoint List:
+So verbinden Sie AEM Forms mit Ihrer Microsoft® SharePoint-Liste:
 
-1. Navigieren Sie zu **[!UICONTROL Instrumente]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. Wechseln Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft® SharePoint]**.
 1. Wählen Sie einen **Konfigurations-Container**. Die Konfiguration wird im ausgewählten Konfigurations-Container gespeichert.
 1. Klicken Sie in der Dropdown-Liste auf **[!UICONTROL Erstellen]** > **[!UICONTROL SharePoint-Liste]**. Der SharePoint-Konfigurationsassistent wird angezeigt.
 1. Geben Sie **[!UICONTROL Titel]**, **[!UICONTROL Client-ID]**, **[!UICONTROL Client-Geheimnis]** und **[!UICONTROL OAuth-URL]** an. Informationen zum Abrufen der Client-ID, des Client-Geheimnisses und der Mandanten-ID für die OAuth-URL finden Sie in der [Dokumentation von Microsoft®](https://learn.microsoft.com/de-de/graph/auth-register-app-v2).
@@ -203,16 +203,16 @@ So verbinden Sie AEM Forms mit Ihrer Microsoft® Sharepoint List:
 1. Wählen Sie **[!UICONTROL SharePoint-Site]** und **[!UICONTROL SharePoint-Liste]** aus der Dropdown-Liste.
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für die Microsoft® SharePoint-Liste zu erstellen.
 
-#### Verwenden des Sendevorgangs mit dem Formulardatenmodell in einem adaptiven Formular {#use-submit-using-fdm}
+#### Verwenden der Sendeaktion mit einem Fomulardatenmodell in einem adaptiven Formular {#use-submit-using-fdm}
 
-Sie können die erstellte SharePoint-Listenkonfiguration in einem adaptiven Formular verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einer SharePoint-Liste zu speichern. Führen Sie die folgenden Schritte aus, um eine SharePoint List-Speicherkonfiguration in einem adaptiven Formular zu verwenden:
+Sie können die erstellte SharePoint-Listenkonfiguration in einem adaptiven Formular verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einer SharePoint-Liste zu speichern. Führen Sie die folgenden Schritte aus, um eine SharePoint-Listenspeicherkonfiguration in einem adaptiven Formular zu verwenden:
 
 1. [Erstellen eines Formulardatenmodells mithilfe von Microsoft](/help/forms/using/create-form-data-model.md)
 1. [Konfigurieren des Formulardatenmodells zum Abrufen und Senden von Daten](/help/forms/using/work-with-form-data-model.md#configure-services)
 1. [Adaptives Formular erstellen](/help/forms/using/create-adaptive-form.md).
 1. [Konfigurieren einer Übermittlungsaktion mit einem Formulardatenmodell](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)
 
-Wenn Sie das Formular übermitteln, werden die Daten im angegebenen Microsoft® Sharepoint List Storage gespeichert.
+Wenn Sie das Formular senden, werden die Daten im angegebenen Microsoft® Sharepoint-Listenspeicher gespeichert.
 
 >[!NOTE]
 >
@@ -235,7 +235,7 @@ Die Funktion für eine erneute Server-seitige Validierung enthält die Möglichk
 
 ### Was soll auf dem Server validiert werden? {#what-to-validate-on-server-br}
 
-Alle standardmäßig einsetzbaren Feldvalidierungen eines adaptiven Formulars, die erneut auf dem Server ausgeführt werden, sind:
+Alle nativen Feldvalidierungen eines adaptiven Formulars, die erneut auf dem Server ausgeführt werden, sind:
 
 * Erforderlich
 * Validierungbild-Klausel

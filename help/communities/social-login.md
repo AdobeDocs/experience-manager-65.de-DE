@@ -7,10 +7,10 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2773'
-ht-degree: 2%
+source-wordcount: '2672'
+ht-degree: 1%
 
 ---
 
@@ -65,7 +65,7 @@ Die Anmeldung über Social Media und das Facebook-Beispiel für We-Retail wurden
 
 >[!NOTE]
 >
->Bei älteren AEM-Versionen, wenn in Protokollen eine Ausnahme vorliegt **Kann kein Token daraus extrahieren**, aktualisieren Sie für diese AEM auf die neueste CFP-Version.
+>Bei älteren AEM-Versionen, wenn in Protokollen eine Ausnahme vorliegt **Token kann nicht aus diesem extrahiert werden**, aktualisieren Sie für diese AEM auf die neueste CFP-Version.
 
 Informationen zur Facebook Graph-API-Version finden Sie in der [Facebook API-Änderungsprotokoll](https://developers.facebook.com/docs/apps/changelog).
 
@@ -181,7 +181,7 @@ Wenn die Bearbeitung in jeder AEM Veröffentlichungsinstanz erforderlich ist:
       * name
       * first_name
       * last_name
-      * Link freigeben
+      * Verknüpfung
       * locale
       * picture
       * timezone
@@ -265,11 +265,11 @@ Die [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicat
 
      (*Erforderlich*) Geben Sie einen Anzeigetitel ein, der die Twitter App identifiziert. Verwenden Sie den gleichen Namen, der als *Anzeigename* für die Twitter-App.
 
-   * **[!UICONTROL Verbraucherschlüssel]**
+   * **[!UICONTROL Consumer Key]**
 
      (*Erforderlich*) Geben Sie die **Consumer (API) Key** für die Twitter-App. Dadurch wird die [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) -Instanz, die über das Dialogfeld erstellt wurde.
 
-   * **[!UICONTROL Kundengeheimnis]**
+   * **[!UICONTROL Verbrauchergeheimnis]**
 
      (*Erforderlich*) Geben Sie die ***Consumer(API) Secret*** für die Twitter App.
 
@@ -277,7 +277,7 @@ Die [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicat
 
      Wenn diese Option aktiviert ist, wird durch die Anmeldung mit einem Twitter-Konto ein AEM Benutzereintrag erstellt und als Mitglied zu den ausgewählten Benutzergruppen hinzugefügt. Die Standardeinstellung ist aktiviert (dringend empfohlen).
 
-   * **[!UICONTROL Benutzer-IDs verschleiern]**
+   * **[!UICONTROL Benutzer-IDs maskieren]**
 
      Lassen Sie die Auswahl aufgehoben.
 
@@ -435,7 +435,7 @@ So suchen Sie die erstellte Instanz für eine Facebook- oder Twitter-App:
 
      (*Empfohlen*) Eine oder mehrere Mitgliedergruppen, denen erstellte Benutzer hinzugefügt werden. Für AEM Communities wird empfohlen, die Mitgliedergruppe für die Community-Site aufzulisten.
 
-   * **[!UICONTROL Rückruf-URL]**
+   * **[!UICONTROL Callback-URL]**
 
      (*Optional*) URL, die mit den OAuth-Anbietern konfiguriert wurde, um den Client zurück zu leiten. Verwenden Sie eine relative URL, um den Host der ursprünglichen Anforderung zu verwenden. Lassen Sie das Feld leer, um stattdessen die ursprünglich angeforderte URL zu verwenden. Das Suffix &quot;/callback/j_security_check&quot;wird automatisch an diese URL angehängt.
 
@@ -463,7 +463,7 @@ Auf einer Autoreninstanz, die mit Administratorrechten angemeldet ist:
 
    * Unterknoten `/oak:index`
    * Knoten auswählen `ntBaseLucene`
-   * Klicken Sie auf **[!UICONTROL Kopieren]**
+   * Auswählen **[!UICONTROL Kopieren]**
    * Klicken Sie auf `/oak:index`
    * Auswählen **[!UICONTROL Einfügen]**
    * Umbenennen der Kopie von ntBaseLucene in `ntBaseLucene-oauth`

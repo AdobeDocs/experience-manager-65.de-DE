@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mühelos ein adaptives Formular erstellen ode
 Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 feature: Adaptive Forms, Foundation Components
 exl-id: dcf023a1-8735-48cb-b3ea-d17357eeedaf
-source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2881'
-ht-degree: 97%
+source-wordcount: '2882'
+ht-degree: 98%
 
 ---
 
@@ -182,8 +182,8 @@ So konvertieren Sie ein adaptives Formular auf einer AEM Sites-Seite in ein Expe
 1. Legen Sie im Dialogfeld „In Experience Fragment-Variante konvertieren“ Werte für die folgenden Optionen fest:
 
    * **Aktion:** Wählen Sie diese Option aus, um ein Experience Fragment zu erstellen oder zu einem vorhandenen Experience Fragment hinzuzufügen.
-   * **Übergeordneter Pfad:** Geben Sie den Pfad des Ordners an, in dem das Experience Fragment gehostet werden soll. Die Option ist nur zum Erstellen eines Experience Fragment verfügbar.
-   * **Vorlage:** Geben Sie den Pfad der Experience Fragment-Vorlage an. Wenn Sie keine Experience Fragment-Vorlage haben, [erstellen Sie sie](/help/sites-developing/experience-fragments.md). Die Option ist nur zum Hinzufügen des adaptiven Formulars zu einem vorhandenen Experience Fragment verfügbar.
+   * **Übergeordneter Pfad:** Geben Sie den Pfad des Ordners an, in dem das Experience Fragment gehostet werden soll. Die Option ist nur zum Erstellen eines Experience Fragments verfügbar.
+   * **Vorlage:** Geben Sie den Pfad der Experience Fragment-Vorlage an. Wenn Sie keine Experience Fragment-Vorlage haben, [erstellen Sie eine](/help/sites-developing/experience-fragments.md). Die Option ist nur zum Hinzufügen des adaptiven Formulars zu einem vorhandenen Experience Fragment verfügbar.
    * **Fragmenttitel:** Geben Sie den Titel des Experience Fragments an. Der Titel identifiziert ein Experience Fragment eindeutig.
 
 

@@ -2,10 +2,10 @@
 title: Häufig gestellte Fragen zu AEM
 description: Verwenden Sie diese häufig gestellten Fragen, um allgemeine Workflows oder Probleme in AEM zu verstehen, zu konfigurieren und zu beheben.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 1a7805f063daf6f3dd07a2ff2d182e58fe7e63b8
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '936'
-ht-degree: 42%
+ht-degree: 40%
 
 ---
 
@@ -81,11 +81,11 @@ Siehe [Gründe für die Aktualisierung AEM](https://helpx.adobe.com/experience-m
 
 Wenn der Benutzer beim Hochladen der Filmdateien keine Löschberechtigungen unter dem Asset-Knoten hat, schlagen die Löschungs-Chunk-Knoten fehl und der Upload wird neu gestartet.
 
-#### Was sind die Standardeinstellungen für OOTB-Konfigurationen beim Erstellen von Sprachkopien? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
+#### Welche Standardeinstellungen gelten für native Konfigurationen beim Erstellen der Sprachkopie? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
 Wenn Sie eine Sprachkopie über die Touch-Benutzeroberfläche erstellen (**Verweise** > **Sprachkopie aktualisieren**), wird unter der neuen Sprache ein neuer DAM-Ordner erstellt und von dort aus auf Assets verwiesen.
 
-Dies ist die Standardeinstellung für OOTB-Konfigurationen. Sie können in Übersetzungskonfigurationen für die Option **Seiten-Assets übersetzen** die Einstellung **Nicht übersetzen** festlegen.
+Dies ist die Standardeinstellung für vordefinierte Konfigurationen. Sie können in Übersetzungskonfigurationen für die Option **Seiten-Assets übersetzen** die Einstellung **Nicht übersetzen** festlegen.
 Klicken Sie dazu in AEM 6.4 auf **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services**.
 
 #### Wie lässt sich eine AEM-Komponente deaktivieren, die zu einem exponentiellen Wachstum des AEM-Segmentspeichers führt (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}

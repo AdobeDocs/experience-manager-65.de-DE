@@ -5,10 +5,10 @@ role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: ht
-source-wordcount: '1154'
-ht-degree: 100%
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+workflow-type: tm+mt
+source-wordcount: '1174'
+ht-degree: 99%
 
 ---
 
@@ -47,7 +47,7 @@ Siehe Plattformunterstützung und [Voraussetzungen für den erweiterten Connecto
 
 Im Folgenden finden Sie Details zu den Funktionen, die durch verschiedene Integrationstypen zwischen [!DNL Assets] und [!DNL Workfront] verfügbar sind.
 
-| Funktion | Beschreibung | [!DNL Workfront] und [!DNL Assets Essentials] *Kein Connector (OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *Erfordert Connector* | Workfront und [!DNL Experience Manager as a Cloud Service] *Kein Connector (OOTB)* |
+| Funktion | Beschreibung | [!DNL Workfront] und [!DNL Assets Essentials] *Kein Connector (vorkonfiguriert)* | [!DNL Workfront for Experience Manager enhanced connector] *Erfordert Connector* | Workfront und [!DNL Experience Manager as a Cloud Service] *Kein Connector (vorkonfiguriert)* |
 |----|----|----|-----|-----|
 | Bereitstellungsmethoden | Passend für welches [!DNL Assets]-Angebot. | Assets Essentials | Adobe Managed Services, On-Premise | Cloud Service |
 | **Allgemein** |
@@ -70,7 +70,7 @@ Im Folgenden finden Sie Details zu den Funktionen, die durch verschiedene Integr
 | Unterstützung der Verbindung mehrerer Workfront-Umgebungen mit einer einzelnen AEM-Umgebung | Benutzende aus mehreren Workfront-Umgebungen können eine Verbindung mit einer einzigen AEM-Umgebung herstellen. | ✓ | Nein | ✓ |
 | Unterstützung der Verbindung mehrerer AEM-Umgebungen mit einer einzelnen Workfront-Umgebung | Benutzende einer einzelnen Workfront-Umgebung können Assets an mehrere AEM-Umgebungen senden oder damit verknüpfen. | ✓ | ✓ | ✓ |
 | **Metadaten** |
-| Zuordnen von Workfront Asset-Metadaten zu AEM Assets | Eigenschaften von Workfront-Objekten und benutzerdefinierten Formularen können mit Metadateneigenschaften von AEM-Assets verknüpft werden. Die Werte werden beim ersten Hochladen/Verknüpfen übertragen. | ✓ | ✓ | ✓ |
+| Zuordnen von Workfront Asset-Metadaten zu AEM Assets | Eigenschaften von Workfront-Objekten und benutzerdefinierten Formularen können mit Metadateneigenschaften von AEM-Assets verknüpft werden. Die Werte werden beim ersten Hochladen/Verknüpfen gepusht. | ✓ | ✓ | ✓ |
 | Automatisches Erstellen von benutzerdefinierten Dokumentenformularen in Workfront | Hängen Sie mithilfe von AEM-Workflows benutzerdefinierte Formulare an Workfront-Dokumente, Aufgaben und Probleme an. | Nein | ✓ | Nein |
 | Bidirektionale automatische Aktualisierung von Metadaten zwischen AEM Assets und Workfront | Automatische Aktualisierung von Metadaten zwischen AEM Assets und Workfront. Ein Asset muss zunächst von Workfront an AEM gesendet werden und die Workfront-Asset-Metadaten müssen AEM-Assets zugeordnet werden, damit bidirektionale Aktualisierungen von Metadaten ordnungsgemäß funktionieren. | Nein | ✓ | Nein |
 | Echtzeit-Ansicht in Workfront für zugeordnete Metadaten in AEM | Zeigen Sie die aktualisierten AEM zugeordneten Metadaten in den Workfront-Bedienfeldern „Document Details“ und „Document Summary“ an. | ✓ | Nein | ✓ |

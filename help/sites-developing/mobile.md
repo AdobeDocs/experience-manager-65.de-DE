@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3720'
-ht-degree: 51%
+source-wordcount: '3722'
+ht-degree: 50%
 
 ---
 
@@ -124,7 +124,7 @@ Die **We.Retail Mobile-Demo-Website** verwendet die folgenden Mobile-Komponenten
 
 #### Erstellen einer mobilen Komponente {#creating-a-mobile-component}
 
-Das AEM-Mobile-Framework ermöglicht die Entwicklung von Komponenten, die für das Gerät, das die Anfrage erteilt, empfindlich sind. Die folgenden Code-Beispiele zeigen, wie Sie die AEM-Mobile-API in einer Komponenten-jsp verwenden und insbesondere wie Sie:
+Mit dem mobilen Framework AEM können Sie Komponenten entwickeln, die für das Gerät, das die Anforderung ausgibt, empfindlich sind. Die folgenden Code-Beispiele zeigen, wie Sie die AEM-Mobile-API in einer Komponenten-jsp verwenden und insbesondere wie Sie:
 
 * das Gerät aus der Anfrage abrufen:
   `Device device = slingRequest.adaptTo(Device.class);`
@@ -355,7 +355,7 @@ AEM unterstützt die Client-seitige Erkennung auf der Basis von `BrowserMap`. `B
 
 >[!NOTE]
 >
-Weitere Informationen zur Integration der Client-Bibliothek finden Sie unter [Verwenden Client-seitiger HTML-Bibliotheken](/help/sites-developing/clientlibs.md).
+>Weitere Informationen zur Integration der Client-Bibliothek finden Sie unter [Verwenden Client-seitiger HTML-Bibliotheken](/help/sites-developing/clientlibs.md).
 
 ### Bereitstellen alternativer Links {#providing-alternate-links}
 
@@ -374,17 +374,17 @@ Wenn der Wert der `cq:variantDomain` -Eigenschaft eines `cq:siteVariant` -Knoten
 
 >[!NOTE]
 >
-Bei der Verwendung von AEM gibt es mehrere Methoden zur Verwaltung der Konfigurationseinstellungen für solche Dienste. Weitere Informationen und empfohlene Praktiken finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
+>Bei der Verwendung von AEM gibt es mehrere Methoden zur Verwaltung der Konfigurationseinstellungen für solche Dienste. Weitere Informationen und empfohlene Praktiken finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
 ### Definieren einer gerätegruppenspezifischen URL {#defining-a-device-group-specific-url}
 
-Wenn Sie keine alternativen Links verwenden möchten, können Sie für jede `DeviceGroup` eine globale URL konfigurieren. Adobe empfiehlt, eine eigene Client-Bibliothek zu erstellen, die die `browsermap.standard` Client-Bibliothek, definiert jedoch die Gerätegruppen neu.
+Wenn Sie keine alternativen Links verwenden möchten, können Sie für jede `DeviceGroup`. Adobe empfiehlt, eine eigene Client-Bibliothek zu erstellen, die die `browsermap.standard` Client-Bibliothek, definiert jedoch die Gerätegruppen neu.
 
 BrowserMap ist so konzipiert, dass Gerätegruppendefinitionen überschrieben werden können, indem eine Gerätegruppe mit demselben Namen erstellt und zum `BrowserMap` -Objekt aus Ihrer benutzerdefinierten Client-Bibliothek.
 
 >[!NOTE]
 >
-Weitere Informationen finden Sie unter [Benutzerdefinierte BrowserMap](#creatingacustomisedbrowsermap).
+>Weitere Informationen finden Sie unter [Benutzerdefinierte BrowserMap](#creatingacustomisedbrowsermap).
 
 ### Definieren von Selektor-basierten URLs {#defining-selector-based-urls}
 
@@ -410,7 +410,7 @@ Außerdem müssen Sie die Methode `BrowserMap.forwardRequest()` in Ihrem `JavaSc
 
 >[!NOTE]
 >
-Weitere Informationen zur Integration der Client-Bibliothek finden Sie unter [Verwenden Client-seitiger HTML-Bibliotheken](/help/sites-developing/clientlibs.md).
+>Weitere Informationen zur Integration der Client-Bibliothek finden Sie unter [Verwenden Client-seitiger HTML-Bibliotheken](/help/sites-developing/clientlibs.md).
 
 Nachdem Sie Ihre angepassten `BrowserMap` Client-Bibliothek, schlägt Adobe den folgenden Ansatz vor:
 
@@ -520,7 +520,7 @@ Sie können das Gerät einer beliebigen Anforderung zwingen, eine bestimmte Vers
 
 >[!NOTE]
 >
-Die `wcmmode` -Parameter auf `disabled` um das Verhalten einer Veröffentlichungsinstanz zu simulieren.
+>Die `wcmmode` -Parameter auf `disabled` um das Verhalten einer Veröffentlichungsinstanz zu simulieren.
 
 Der übergeordnete Gerätewert wird in einem Cookie gespeichert, sodass Sie Ihre Website durchsuchen können, ohne die `device` Parameter für jeden `URL`.
 
@@ -528,7 +528,7 @@ Daher müssen Sie denselben `URL` mit dem `device` auf `browser` , um zur Deskto
 
 >[!NOTE]
 >
-BrowserMap speichert den überschreibenden Gerätewert in einem Cookie namens `BMAP_device`. Durch das Löschen dieses Cookies wird sichergestellt, dass CQ die entsprechende Version der Website entsprechend Ihrem aktuellen Gerät (z. B. Desktop oder Mobilgerät) bereitstellt.
+>BrowserMap speichert den überschreibenden Gerätewert in einem Cookie namens `BMAP_device`. Durch das Löschen dieses Cookies wird sichergestellt, dass CQ die entsprechende Version der Website entsprechend Ihrem aktuellen Gerät (z. B. Desktop oder Mobilgerät) bereitstellt.
 
 ## Verarbeitung mobiler Anfragen {#mobile-request-processing}
 
@@ -564,7 +564,7 @@ Die **Statistik** -Seite wie folgt aussieht:
 
 >[!NOTE]
 >
-Die Seite **Statistik** wird erstellt, wenn ein Mobilgerät zum ersten Mal auf AEM zugreift und erkannt wird. Zuvor ist sie nicht verfügbar.
+>Die Seite **Statistik** wird erstellt, wenn ein Mobilgerät zum ersten Mal auf AEM zugreift und erkannt wird. Zuvor ist sie nicht verfügbar.
 
 Wenn Sie einen Eintrag in der Statistik generieren müssen, können Sie wie folgt vorgehen:
 

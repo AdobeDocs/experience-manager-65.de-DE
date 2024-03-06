@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 85ca35e5-6e2b-447a-9711-b12601beacdd
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 55%
+source-wordcount: '857'
+ht-degree: 54%
 
 ---
 
@@ -33,11 +33,11 @@ Für AEM-Codes gelten die folgenden Konventionen:
 * Eine einzelne Implementierung einer Schnittstelle heißt `<Interface>Impl`, d. h. `ReaderImpl`.
 * Mehrere Implementierungen einer Schnittstelle werden `<Variant><Interface>`, d. h. `JcrReader` und `FileSystemReader`.
 * Abstrakte Basisklassen werden `Abstract<Interface>` oder `Abstract<Variant><Interface>` genannt.
-* Pakete werden `com.adobe.product.module` genannt.  Jedes Maven-Artefakt oder OSGi-Bundle muss ein eigenes Paket aufweisen.
+* Pakete werden `com.adobe.product.module`. Jedes Maven-Artefakt oder OSGi-Bundle muss ein eigenes Paket aufweisen.
 * Java™-Implementierungen werden in einem impl-Paket unter ihrer API platziert.
 
 
-Diese Konventionen gelten nicht unbedingt für Kundenimplementierungen, aber es ist wichtig, Konventionen zu definieren und einzuhalten, damit der Code aufrechterhalten werden kann.
+Diese Konventionen gelten nicht notwendigerweise für Kundenimplementierungen, aber es ist wichtig, Konventionen zu definieren und einzuhalten, damit der Code aufrechterhalten werden kann.
 
 Idealerweise sollten Namen den Zweck beschreiben. Ein guter Hinweis darauf, dass Namen nicht so deutlich sind wie gewünscht, ist das Vorhandensein von Kommentaren, die erklären, wozu die Variable oder die Methode dient:
 

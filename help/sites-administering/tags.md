@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1769'
 ht-degree: 70%
 
 ---
@@ -33,14 +33,14 @@ Neben Seiten und Assets werden Tags für AEM Communities-Funktionen genutzt.
 
 Zu den Funktionen von Tags in AEM gehören u. a. folgende:
 
-* Tags können in verschiedene Namespaces gruppiert werden. Solche Hierarchien ermöglichen die Erstellung von Taxonomien. Diese Taxonomien sind AEM global.
+* Tags können in verschiedene Namespaces gruppiert werden. Solche Hierarchien ermöglichen die Erstellung von Taxonomien. Diese Taxonomien gelten für das gesamte AEM-System.
 * Die Haupteinschränkung für neu erstellte Tags besteht darin, dass sie innerhalb eines bestimmten Namespace eindeutig sein müssen.
 * Der Titel eines Tags sollte keine Trennzeichen für den Tag-Pfad enthalten (und wird auch nicht angezeigt, wenn vorhanden)
 
    * Doppelpunkt `:` – Trennzeichen bei Namespace-Tags
    * Schrägstrich `/` – Trennzeichen bei untergeordneten Tags
 
-* Tags können von Autoren und Website-Besuchern angewendet werden. Unabhängig vom Ersteller werden alle Arten von Tags zur Auswahl bereitgestellt, sowohl bei der Zuweisung zu einer Seite als auch bei der Suche.
+* Tags können von Autoren und Website-Besuchern angewendet werden. Unabhängig davon, wer die Tags erstellt hat, stehen alle Arten von Tags zur Verfügung, um sie einer Seite hinzuzufügen oder wenn man die Tags durchsucht.
 * Mitglieder der Benutzergruppe „Tag-Administratoren“ und Mitglieder, die Bearbeitungsrechte für `/content/cq:tags` haben, können Tags erstellen und ihre Klassifikationsschemata ändern.
 
    * Ein Tag, das untergeordnete Tags enthält, wird als Container-Tag bezeichnet
@@ -76,7 +76,7 @@ So greifen Sie auf die Tagging-Konsole zu:
 
 Um einen Namespace zu erstellen, wählen Sie die **`Create Namespace`** Symbol.
 
-Der Namespace selbst ist ein Tag und muss keine untergeordneten Tags enthalten. Um jedoch mit dem Erstellen eines Klassifikationsschemas fortzufahren, [erstellen Sie untergeordnete Tags](#creating-tags), bei denen es sich um Leaf-Tags oder Container-Tags handeln kann.
+Der Namespace ist selbst ein Tag und darf keine Unter-Tags enthalten. Um jedoch mit dem Erstellen eines Klassifikationsschemas fortzufahren, [erstellen Sie untergeordnete Tags](#creating-tags), bei denen es sich um Leaf-Tags oder Container-Tags handeln kann.
 
 ![chlimage_1-183](assets/chlimage_1-183a.png) ![creating_tags_andnamespaces](assets/creating_tags_andnamespacesa.png)
 
@@ -197,7 +197,7 @@ Wenn ein Namespace oder ein anderes Tag ausgewählt wurden, können Tag-Admins u
 Wählen Sie den neuen Pfad aus, in den das Tag verschoben werden soll.
 
 * **Umbenennen in**
-Zeigt zunächst den aktuellen `name`-Wert des Tags an. Sie können einen neuen `name`-Wert eingeben.
+Zeigt zunächst den aktuellen `name`des Tags. Sie können einen neuen `name`-Wert eingeben.
 
 * Wählen Sie **Speichern** aus.
 

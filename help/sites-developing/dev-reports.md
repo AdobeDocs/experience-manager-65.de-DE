@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 0f898fd81d2952b01eac7e6b8aa9970868009b15
 workflow-type: tm+mt
-source-wordcount: '5174'
-ht-degree: 68%
+source-wordcount: '5177'
+ht-degree: 67%
 
 ---
 
@@ -114,7 +114,7 @@ Die Abfrage:
 
      Gibt die Unterstruktur des Repositorys an, das durchsucht werden soll.
 
-     Um die Auswirkungen auf die Leistung zu minimieren, ist es ratsam, die Abfrage auf eine bestimmte Unterstruktur des Repositorys zu beschränken (zu versuchen). Der Stammpfad kann entweder in der [Berichtsvorlage](#report-template) vordefiniert oder vom Benutzer im [Konfigurationsdialogfeld („Bearbeiten“)](#configuration-dialog) vordefiniert werden.
+     Um die Auswirkungen auf die Leistung zu minimieren, ist es ratsam, die Abfrage auf eine bestimmte Unterstruktur des Repositorys zu beschränken (zu versuchen). Der Stammpfad kann im [Berichtsvorlage](#report-template) oder vom Benutzer in der [Dialogfeld &quot;Konfiguration (Bearbeiten)&quot;](#configuration-dialog).
 
    * [einem Kriterium oder mehreren Kriterien](#query-definition).
 
@@ -122,7 +122,7 @@ Die Abfrage:
 
 **Entscheidend hierbei ist, dass jeder einzelne im Ergebnissatz der Abfrage zurückgegebene Knoten verwendet wird, um eine einzelne Zeile im Bericht zu generieren (es handelt sich also um eine 1:1-Beziehung).**
 
-Die Entwickelnden müssen sicherstellen, dass die für einen Bericht definierte Abfrage eine für diesen Bericht geeignete Knotengruppe zurückgibt. Der Knoten selbst muss jedoch nicht alle erforderlichen Informationen enthalten. Diese können auch von über- und/oder untergeordneten Knoten abgeleitet werden. Beispielsweise wählt die für den [Benutzerbericht](/help/sites-administering/reporting.md#user-report) verwendete Abfrage Knoten auf Basis des Knotentyps aus (in diesem Fall `rep:user`). Die meisten Spalten dieses Berichts beziehen ihre Daten jedoch nicht direkt von diesen Knoten, sondern vom Unterknoten `profile`..
+Die Entwickelnden müssen sicherstellen, dass die für einen Bericht definierte Abfrage eine für diesen Bericht geeignete Knotengruppe zurückgibt. Der Knoten selbst muss jedoch nicht alle erforderlichen Informationen enthalten. Dies kann auch von übergeordneten und/oder untergeordneten Knoten abgeleitet werden. Beispielsweise wählt die für den [Benutzerbericht](/help/sites-administering/reporting.md#user-report) verwendete Abfrage Knoten auf Basis des Knotentyps aus (in diesem Fall `rep:user`). Die meisten Spalten dieses Berichts beziehen ihre Daten jedoch nicht direkt von diesen Knoten, sondern vom Unterknoten `profile`..
 
 ### Verarbeitungswarteschlange {#processing-queue}
 

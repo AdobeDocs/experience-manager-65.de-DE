@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2935'
-ht-degree: 98%
+source-wordcount: '2939'
+ht-degree: 97%
 
 ---
 
@@ -347,10 +347,10 @@ Wenn Sie etwas für AEM entwickeln, sollte das immer die **Leistung und Skalierb
 
 **Dies sollten Sie nicht tun:**
 
-* Wenn möglich, JCR-APIs nicht direkt verwenden
-* Keine /libs ändern, sondern stattdessen Überlagerungen verwenden
-* Wo immer möglich keine Abfragen verwenden
-* Keine Sling-Bindungen verwenden, um OSGi-Dienste in Java™-Code zu erhalten, sondern stattdessen Folgendes verwenden:
+* Verwenden Sie JCR-APIs nicht direkt, wenn Sie
+* Ändern Sie /libs nicht, sondern verwenden Sie Überlagerungen
+* Verwenden Sie nach Möglichkeit keine Abfragen.
+* Verwenden Sie keine Sling-Bindungen, um OSGi-Dienste in Java™-Code zu erhalten, sondern verwenden Sie stattdessen:
 
    * @Reference in einer DS-Komponente
    * @Inject in einem Sling-Modell

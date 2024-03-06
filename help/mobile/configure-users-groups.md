@@ -6,10 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 exl-id: 9f814204-8cd4-4ba9-9e25-3ff1b25c1955
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 1%
+source-wordcount: '614'
+ht-degree: 2%
 
 ---
 
@@ -64,7 +64,7 @@ Mitglieder der Gruppe &quot;App-Autor&quot;sind für das Authoring AEM Inhalte m
 
 ### AEM Mobile-Gruppe &quot;Anwendungsadministratoren&quot;(Gruppe &quot;app-admins&quot;) {#aem-mobile-application-administrators-group-app-admins-group}
 
-Mitglieder der Gruppe &quot;app-admins&quot;können Anwendungsinhalte mit den gleichen Berechtigungen erstellen, die auch für &quot;app-authors&quot;vorhanden sind **UND** Darüber hinaus sind folgende Aufgaben zuständig:
+Mitglieder der Gruppe &quot;app-admins&quot;können Anwendungsinhalte mit denselben Berechtigungen erstellen, die auch für App-Autoren vorhanden sind **UND** Darüber hinaus sind folgende Aufgaben zuständig:
 
 * Konfigurieren von PhoneGap Build und Adobe Mobile Services Cloud Services in AEM
 * Staging, Veröffentlichen und Löschen von OTA-Aktualisierungen für die Inhaltssynchronisierung
@@ -75,7 +75,7 @@ Mitglieder der Gruppe &quot;app-admins&quot;können Anwendungsinhalte mit den gl
 >
 >Beachten Sie, dass einige Optionen nicht für App-Autoren verfügbar sind, die für App-Administratoren verfügbar sind.
 
-#### Gruppenkonfiguration - app-admins {#group-configuration-app-admins}
+#### Gruppenkonfiguration - App-Administratoren {#group-configuration-app-admins}
 
 1. Erstellen Sie eine Gruppe namens &quot;app-admins&quot;.
 1. Fügen Sie Ihrer neuen Gruppe &quot;app-admins&quot;die folgenden Gruppen hinzu:
@@ -101,7 +101,7 @@ Mitglieder der Gruppe &quot;app-admins&quot;können Anwendungsinhalte mit den gl
 
    >[!CAUTION]
    >
-   >Der Zugriff auf /var/contentsync wird OOTB verweigert.
+   >Der Zugriff auf /var/contentsync wird standardmäßig verweigert.
    >
    >Wenn Sie die LESE-Berechtigung auslassen, kann dies dazu führen, dass leere Aktualisierungspakete erstellt und repliziert werden.
 
@@ -118,7 +118,7 @@ Zusätzlich zu diesen Berechtigungen kann eine Aktion auch je nach Konfiguration
 Die Kachel verfügt derzeit über keine Aktionen, für die Berechtigungen erforderlich sind. Die Detailseite für die Anwendung weist jedoch die folgenden Aktionen auf:
 
 * *Bearbeiten* für app-author und app-admin (UI-Trigger - jcr:write - für /content/phonegap/{suffix})
-* *Download* für app-author und app-admin (UI-Trigger - unter /content/phonegap/{suffix})
+* *Herunterladen* für app-author und app-admin (UI-Trigger - unter /content/phonegap/{suffix})
 
 Die folgende Abbildung zeigt die Download- und Bearbeitungsoptionen für eine App:
 

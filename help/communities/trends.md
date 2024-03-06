@@ -7,10 +7,10 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 7%
+source-wordcount: '343'
+ht-degree: 4%
 
 ---
 
@@ -63,12 +63,12 @@ Unter dem **Kommentare** -Registerkarte angeben, ob und wie Kommentare für hoch
 
   Der Standardwert ist `Members`.
 
-* **Anzeigetitel**
+* **Titel anzeigen**
 
   einen beschreibenden Titel, der über den Daten angezeigt werden soll, z. B. `Trending Content`.
 Standardmäßig ist kein Titel angegeben.
 
-* **Anzeigezahl**
+* **Anzahl der Anzeigen**
 
   Die Anzahl der aufzulistenden Elemente.
 Der Standardwert lautet 10.
@@ -92,7 +92,7 @@ Der Standardwert lautet 10.
    * `Last 7 days`
    * `Last 30 days`
    * `Last 90 days`
-   * `This year (since Jan 1st)`
+   * `This year (since Jan 1)`
    * `Total`
 
   Der Standardwert ist `Total`.
@@ -102,7 +102,7 @@ Der Standardwert lautet 10.
   Auf diese Weise können Sie die Aktivität auf eine Teilmenge der Site einschränken, z. B. einen bestimmten Blog.
 Der Standardwert ist die gesamte Community-Site.
 
-* **Gesammelte Mitgliederzahl**
+* **Zusammenrechnung der Mitgliederzahl**
 
   Wenn diese Option deaktiviert (deaktiviert) ist, werden nur Beiträge der obersten Ebene gezählt. Wenn der Kontext beispielsweise die Stammseite ist (die Standardeinstellung), wird ein `Activity Type` von `Posts` zeigt nie eine Aktivität an, da keine Möglichkeit besteht, Inhalte auf der Stammseite zu posten. Wenn diese Option aktiviert ist, werden die Zählungen auf allen untergeordneten Seiten einbezogen.
 Die Option Standard ist aktiviert.

@@ -6,9 +6,9 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2348'
+source-wordcount: '2352'
 ht-degree: 95%
 
 ---
@@ -54,7 +54,7 @@ Derzeit sind LESS-Variablen nur für diese Eigenschaften der verschiedenen Eleme
 
 ## Änderung des Komponentenstils {#changing-component-style}
 
-Sie können das Erscheinungsbild, Layout, Positionierung und Sichtbarkeit von Elementen ändern. Erstellen oder aktualisieren Sie dazu Ihre benutzerdefinierten CSS-Dateien und beziehen sie dabei die in diesem Artikel aufgeführten Designkonstrukte ein.
+Sie können Änderungen an Aussehen, Layout, Positionierung und Sichtbarkeit von Elementen vornehmen. Erstellen oder aktualisieren Sie dazu Ihre benutzerdefinierten CSS-Dateien und beziehen sie dabei die in diesem Artikel aufgeführten Designkonstrukte ein.
 
 Um ein Design auf ein adaptives Formular anzuwenden, öffnen Sie das adaptive Formular zum Bearbeiten, öffnen Sie den Container mit den Eigenschaften des adaptiven Formulars und geben Sie im Basisregister den Pfad der benutzerdefinierten CSS-Datei ein. Standard-Designkonstrukte des adaptiven Formulars und mit den in der benutzerdefinierten CSS-Datei aufgeführten Konstrukten überschriebene Konstrukte.
 

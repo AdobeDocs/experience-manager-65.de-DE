@@ -7,10 +7,10 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 7%
+source-wordcount: '690'
+ht-degree: 1%
 
 ---
 
@@ -29,26 +29,26 @@ Die `categories` Der Eigenschaftswert, der dieser Client-Bibliothek zugewiesen w
    * Name : `clientlibs`
    * Typ : `cq:ClientLibraryFolder`
 
-1. Klicken Sie auf **OK**
+1. Klicks **OK**
 
 ![add-client-library](assets/add-client-library.png)
 
 Im **Eigenschaften** Registerkarte für die neue `clientlibs` Knoten, geben Sie die **categories** Eigenschaft:
 
 * Name : **categories**
-* Typ:**String**
+* Typ : **Zeichenfolge**
 * Wert : **apps.an-scf-sandbox**
-* Klicken Sie auf **Hinzufügen**
-* Klicken Sie auf **Alle speichern**
+* Klicks **Hinzufügen**
+* Klicks **Alle speichern**
 
 Hinweis: dem Kategoriewert &quot;apps&quot;voranstellen. ist eine Konvention, die die &#39;owning application&#39; als im Ordner /apps, nicht /libs identifiziert. WICHTIG: Platzhalter hinzufügen `js.tx`t und **`css.txt`** -Dateien. (Es handelt sich nicht offiziell um einen cq:ClientLibraryFolder ohne diese Ordner.)
 
-1. Klicken Sie mit der rechten Maustaste **`/etc/designs/an-scf-sandbox/clientlibs`**
+1. Rechtsklick **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Auswählen **Datei erstellen...**
 1. Eingabe **Name:** `css.txt`
 1. Auswählen **Datei erstellen...**
 1. Eingabe **Name:** `js.txt`
-1. Klicken Sie auf **Alle speichern**
+1. Klicks **Alle speichern**
 
 ![clientlibs-css](assets/clientlibs-css.png)
 
@@ -83,7 +83,7 @@ In diesem Fall werden die einfacheren SCF-Clientlibs, die die Autoren-Clientlibs
 
 * Name : **`embed`**
 * Typ : **`String`**
-* Klicken Sie auf **`Multi`**
+* Klicks **`Multi`**
 * Wert: **`cq.social.scf`**
 
    * Es wird ein Dialogfeld angezeigt, klicken Sie auf **`+`** nach jedem Eintrag, um die folgenden clientlib-Kategorien hinzuzufügen:
@@ -94,9 +94,9 @@ In diesem Fall werden die einfacheren SCF-Clientlibs, die die Autoren-Clientlibs
       * **`cq.social.author.hbs.rating`**
       * **`cq.social.author.hbs.reviews`**
       * **`cq.social.author.hbs.voting`**
-      * Klicken Sie auf **OK**
+      * Klicks **OK**
 
-* Klicken Sie auf **Alle speichern**
+* Klicks **Alle speichern**
 
 ![scf-clientlibs](assets/scf-clientlibs.png)
 
@@ -129,7 +129,7 @@ Die Include-Anweisung gehört in die `head` Abschnitt `html` Skript. Die Standar
 1. Hängen Sie die folgende Zeile an das Ende der Datei an
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
 
-1. Klicken Sie auf **Alle speichern**
+1. Klicks **Alle speichern**
 
 ```xml
 <%@ page session="false" %><%
@@ -151,34 +151,34 @@ Laden Sie Ihre Website in den Browser und überprüfen Sie, ob der Hintergrund k
 
 An dieser Stelle gibt es eine minimalistische Sandbox. Es kann sich lohnen, als Paket zu speichern, damit Sie während der Wiedergabe den Server ausschalten können, wenn Ihr Repository beschädigt wird und Sie einen Neustart durchführen möchten. Benennen oder löschen Sie dann den Ordner crx-quickstart/, schalten Sie Ihren Server ein, laden Sie dieses gespeicherte Paket hoch und installieren Sie es, und müssen Sie diese grundlegenden Schritte nicht wiederholen.
 
-Dieses Paket befindet sich auf der [Erstellen einer Beispielseite](/help/communities/create-sample-page.md) Tutorial für diejenigen, die nicht warten können, zu springen und zu spielen!...
+Dieses Paket befindet sich auf der [Erstellen einer Beispielseite](/help/communities/create-sample-page.md) Tutorial für diejenigen, die nicht warten können, zu springen und zu spielen.
 
 So erstellen Sie ein Paket:
 
 * Klicken Sie unter CRXDE Lite auf das [Paketsymbol](https://localhost:4502/crx/packmgr/)
-* Klicken Sie auf **Paket erstellen**
+* Klicks **Paket erstellen**
 
    * Paketname: an-scf-sandbox-minimal-pkg
    * Version: 0.1
    * Gruppe: `leave as default`
-   * Klicken Sie auf **OK**
+   * Klicks **OK**
 
-* Klicken Sie auf **Bearbeiten**
+* Klicks **Bearbeiten**
 
    * Auswählen **Filter** tab
 
       * Klicks **Filter hinzufügen**
       * Stammpfad: navigieren Sie zu `/apps/an-scf-sandbox`
-      * Klicken Sie auf **Fertig**
+      * Klicken Sie auf **Fertig**.
       * Klicks **Filter hinzufügen**
       * Stammpfad: navigieren Sie zu `/etc/designs/an-scf-sandbox`
-      * Klicken Sie auf **Fertig**
+      * Klicken Sie auf **Fertig**.
       * Klicks **Filter hinzufügen**
       * Stammpfad: navigieren Sie zu `/content/an-scf-sandbox**`
-      * Klicken Sie auf **Fertig**
+      * Klicken Sie auf **Fertig**.
 
    * Klicken Sie auf **Speichern**.
 
-* Klicken Sie auf **Aufbauen**
+* Klicks **Build**
 
 Jetzt können Sie **Herunterladen** , um es auf der Festplatte zu speichern und **Paket hochladen** an einer anderen Stelle und wählen Sie **Mehr > Replizieren** , um die Sandbox an eine localhost-Veröffentlichungsinstanz zu senden, um den Bereich Ihrer Sandbox zu erweitern.

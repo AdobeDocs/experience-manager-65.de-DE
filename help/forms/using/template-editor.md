@@ -7,10 +7,10 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2029'
-ht-degree: 73%
+source-wordcount: '2030'
+ht-degree: 78%
 
 ---
 
@@ -46,10 +46,10 @@ Nachdem Sie einen Ordner erstellt haben, öffnen Sie den Ordner und führen Sie 
 1. Wählen Sie in der Vorlagenkonsole die Option **Erstellen** in dem Ordner, den Sie erstellt haben.
 1. Wählen Sie im Abschnitt Vorlagentyp auswählen die Option **Adaptive Formularvorlage** und wählen **Nächste**.
 
-1. Geben Sie im Bereich &quot;Vorlagendetails&quot;einen Vorlagentitel ein und wählen Sie **Erstellen**.
+1. Geben Sie im Abschnitt „Vorlagendetails“ einen Namen für die Vorlage an und wählen Sie **Erstellen**.
 Sie können eine Beschreibung und eine Miniaturansicht hinzufügen, die angezeigt wird, wenn Sie die erstellte Vorlage beim Formular-Authoring auswählen.
 
-1. Auswählen **Fertig** , um zur Konsole zurückzukehren, oder wählen Sie **Öffnen** , um die Vorlage im Editor zu öffnen.
+1. Wählen Sie **Fertig**, um zur Konsole zurückzukehren, oder **Öffnen**, um die Vorlage im Editor zu öffnen.
 
 ### Benutzeroberfläche des Vorlageneditors {#template-editor-ui}
 
@@ -102,7 +102,7 @@ Kopf- und Fußzeile in der Strukturebene hinzugefügt
 
 Wenn Sie die Vorlage bearbeiten, wenn die Strukturebene ausgewählt ist, können Sie die Kopf- und Fußzeile der Vorlage entsperren. Wenn eine Komponente in der Vorlage entsperrt ist, können Formularautoren die Komponente im adaptiven Formular bearbeiten, das die Vorlage verwendet. Das Sperren einer Komponente verhindert, dass Formularautoren sie im adaptiven Formular bearbeiten. Die Sperroption ist in der Komponenten-Symbolleiste verfügbar.
 
-Beispielsweise können Sie die Kopfzeilenkomponente zur Vorlage hinzufügen. Wenn Sie die Komponente auswählen, wird in der Komponenten-Symbolleiste eine Sperroption angezeigt. In der Regel enthält die Kopfzeile den Firmennamen und das Logo und Sie möchten nicht, dass Formularautoren das Logo und die Kopfzeile in einer Vorlage ändern. In einem adaptiven Formular, das mit der Vorlage erstellt wurde, in der die Kopfzeilenkomponente gesperrt ist, können Formularautoren das Logo und den Unternehmensnamen nicht ändern.
+Beispielsweise können Sie die Kopfzeilenkomponente zur Vorlage hinzufügen. Wenn Sie die Komponente auswählen, wird in der Komponenten-Symbolleiste eine Sperroption angezeigt. In der Regel enthält die Kopfzeile den Firmennamen und das Logo und Sie möchten nicht, dass Formularautorinnen und -autoren das Logo und die Kopfzeile in einer Vorlage ändern. In einem adaptiven Formular, das mit der Vorlage erstellt wurde, in der die Kopfzeilenkomponente gesperrt ist, können Formularautoren das Logo und den Unternehmensnamen nicht ändern.
 
 >[!NOTE]
 >
@@ -143,7 +143,7 @@ Sie haben ein Logo hinzugefügt, einen Titel angegeben und eine Fußzeile in der
 * Sie können die Bedienfeldkomponente aus dem Komponenten-Browser in der Seitenleiste ziehen.
 * Sie können ein untergeordnetes Bedienfeld von `guideRootPanel` aus der Symbolleiste hinzufügen.
 
-Um die Registerkarten „Allgemeine Informationen“ und „Berufliche Informationen“ zu erstellen, fügen Sie zwei Bedienfelder im untergeordneten Bedienfeld von `guideRootPanel` hinzu. Wählen Sie die Bedienfelder aus und wählen Sie ![cmppr](assets/cmppr.png) , um die Eigenschaften in der Seitenleiste zu öffnen. Ändern Sie die Elementnamen in `general-info` und `professional-info` und die Titel in „Allgemeine Informationen“ bzw. „Berufliche Informationen“. Wählen Sie in der Seitenleiste Inhalt aus, um den Inhaltsbrowser zu öffnen. Wählen Sie in der Registerkarte „Formularobjekte“ `guideRootPanel` aus. Im Editor ist „guideRootPanel“ ausgewählt. Auswählen ![cmppr](assets/cmppr.png) in der Komponentensymbolleiste, um die Eigenschaften zu öffnen. Wählen Sie im Feld Bedienfeldlayout die Option **Registerkarten oben** und wählen **Fertig**. Die Vorlagenstruktur mit Registerkarten wird angewendet.
+Um die Registerkarten „Allgemeine Informationen“ und „Berufliche Informationen“ zu erstellen, fügen Sie zwei Bedienfelder im untergeordneten Bedienfeld von `guideRootPanel` hinzu. Wählen Sie die Bedienfelder aus und wählen Sie dann ![cmppr](assets/cmppr.png), um die Eigenschaften in der Seitenleiste zu öffnen. Ändern Sie die Elementnamen in `general-info` und `professional-info` und die Titel in „Allgemeine Informationen“ bzw. „Berufliche Informationen“. Wählen Sie in der Randleiste „Inhalt“, um den Inhalts-Browser zu öffnen. Wählen Sie in der Registerkarte „Formularobjekte“ `guideRootPanel` aus. Im Editor ist „guideRootPanel“ ausgewählt. Wählen Sie ![cmppr](assets/cmppr.png) in der Komponenten-Symbolleiste, um dessen Eigenschaften zu öffnen. Wählen Sie im Feld „Bedienfeld-Layout“ **Registerkarten oben** und wählen Sie dann **Fertig**. Die Vorlagenstruktur mit Registerkarten wird angewendet.
 
 #### Hinzufügen von Inhalten in Registerkarten {#adding-content-in-tabs}
 
@@ -164,7 +164,7 @@ Wenn Sie eine Vorlage erstellen, wird sie als Entwurf hinzugefügt. Aktivieren S
 1. Navigieren Sie zu **Adobe Experience Manager > Werkzeuge > Vorlagen** und öffnen Sie den Ordner, in dem Sie die Vorlage erstellt haben.
 
 1. Die Vorlage, die Sie erstellt haben, ist als Entwurf gekennzeichnet.
-1. Wählen Sie die Vorlage aus und wählen Sie **Aktivieren** in der Symbolleiste.
+1. Wählen Sie die Vorlage aus und wählen Sie dann **Aktivieren** in der Symbolleiste.
 Wenn Sie ein adaptives Formular erstellen, wird die Vorlage aufgeführt, wenn Sie aufgefordert werden, eine Vorlage auszuwählen.
 
 ## Importieren oder Exportieren einer Vorlage {#importing-or-exporting-a-template}

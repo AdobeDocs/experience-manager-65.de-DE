@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 feature: Document Services
 exl-id: 62adca19-8ed0-48b3-b7eb-9dbc3d8f96c6
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '684'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Standardmäßig ist der DocAssurance-Dienst nicht aktiviert. Führen Sie zum Akt
 
 >[!NOTE]
 >
-> Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
+> Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mithilfe alternativer Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 <!--
 
@@ -233,8 +233,8 @@ public class Sign{
           adminSession = slingRepository.loginAdministrative(null);
              resourceResolver = jcrResourceResolverFactory.getResourceResolver(adminSession);
 
-             //retrieve specifications for each of the services, you may pass null if you don't want to use that service
-             //as we don't want encryption in this case, passing null for Encryption Options
+             //retrieve specifications for each of the services, you may pass null if you do not want to use that service
+             //as we do not want encryption in this case, passing null for Encryption Options
              //for encrypted document pass Unlock Options - see the method getUnlockOptions() below
     outDoc = docAssuranceService.secureDocument(inDoc, null, getSignatureOptions(alias,resourceResolver),null,null);
         }

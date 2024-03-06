@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3089'
-ht-degree: 4%
+source-wordcount: '3084'
+ht-degree: 1%
 
 ---
 
@@ -59,7 +59,7 @@ Um eine Community-Site zu erstellen, wählen Sie die **Erstellen** Symbol.
 
 Um auf eine vorhandene Community-Site für das Authoring, Ändern, Veröffentlichen, Exportieren oder Hinzufügen einer verschachtelten Gruppe zuzugreifen, wählen Sie das Ordnersymbol der Site aus.
 
-## Erstellung einer Site {#site-creation}
+## Site-Erstellung {#site-creation}
 
 Die Site-Erstellungskonsole bietet einen schrittweisen Ansatz, um Funktionen der Site basierend auf einer ausgewählten [Community-Site-Vorlage](/help/communities/sites.md) und -Einstellungen.
 
@@ -93,7 +93,7 @@ Im Bereich &quot;Site-Vorlage&quot;werden der Titel, die Beschreibung, der Site-
 
   Der Standardstamm lautet `/content/sites`, aber der Stamm kann an einen beliebigen Ort auf der Website verschoben werden.
 
-* **Grundsprache der Community-Site**
+* **Community-Site-Basissprache**
 
   (Für eine Sprache unberührt lassen: Englisch) Wählen Sie über das Pulldown-Menü eine Sprache aus. *oder mehr* Basissprachen aus den verfügbaren Sprachen: Deutsch, Italienisch, Französisch, Japanisch, Spanisch, Portugiesisch (Brasilien), Chinesisch (Traditionell) und Chinesisch (vereinfacht). Eine Community-Site wird für jede hinzugefügte Sprache erstellt und befindet sich im selben Site-Ordner gemäß den Best Practices, die unter [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md). Die Stammseite jeder Site enthält eine untergeordnete Seite mit dem Namen des Sprachcodes einer der ausgewählten Sprachen, z. B. &quot;en&quot;für Englisch oder &quot;fr&quot;für Französisch.
 
@@ -180,25 +180,25 @@ Das Einstellungsbedienfeld enthält mehrere Unterbedienfelder mit Funktionen, di
 Wenn diese Option deaktiviert ist, wird die Community-Site *eingeschränkt* und Besucher der Site müssen der Mitgliedergruppe der Community-Site zugewiesen werden, eine Anfrage stellen oder per E-Mail eine Einladung erhalten. Wenn diese Option deaktiviert ist, sollte der anonyme Zugriff nicht erlaubt sein.
 Deaktivieren Sie die Option für *privat* Community-Site. Die Option Standard ist aktiviert.
 
-* **Anonymen Zugriff erlauben**
+* **Anonymen Zugriff zulassen**
 
   Ist diese Option aktiviert, wird die Community-Site *open* und jeder Besucher der Site kann auf die Site zugreifen.
 Wenn diese Option deaktiviert ist, können nur angemeldete Mitglieder auf die Site zugreifen.
 Deaktivieren Sie die Option für *privat* Community-Site. Die Option Standard ist aktiviert.
 
-* **Messaging zulassen**
+* **Zulassen von Nachrichten**
 
   Wenn diese Option aktiviert ist, können Mitglieder Nachrichten miteinander und an die Gruppe innerhalb der Community-Site senden.
 Wenn diese Option deaktiviert ist, werden Nachrichten nicht für die Community eingerichtet.
 Die Option Standard ist deaktiviert.
 
-* **Anmeldung über soziale Medien erlauben: Facebook**
+* **Social-Anmeldungen zulassen: Facebook**
 
   Wenn diese Option aktiviert ist, können sich Besucher der Site mit ihren Facebook-Kontoanmeldeinformationen anmelden. Die ausgewählte [Facebook-Cloud-Konfiguration](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) sollte so konfiguriert werden, dass Benutzer zur Mitgliedergruppe der Community-Site hinzugefügt werden, sobald die Community-Site erstellt wurde.
 Wenn diese Option deaktiviert ist, wird keine Facebook-Anmeldung angezeigt.
 Lassen Sie die Option deaktiviert für *privat* Community-Site. Die Option Standard ist deaktiviert.
 
-* **Anmeldung über soziale Medien erlauben: Twitter**
+* **Social-Anmeldungen zulassen: Twitter**
 
   Wenn diese Option aktiviert ist, können sich Besucher der Site mit ihren Twitter-Kontoanmeldeinformationen anmelden. Die ausgewählte [Twitter-Cloud-Konfiguration](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) sollte so konfiguriert werden, dass Benutzer zur Mitgliedergruppe der Community-Site hinzugefügt werden, sobald die Community-Site erstellt wurde.
 Wenn diese Option deaktiviert ist, wird keine Twitter-Anmeldung angezeigt.
@@ -236,7 +236,7 @@ Die Suche nach Community-Mitgliedern ist einfach durch die Suche nach Typ-Ahead.
 
   Beginnen Sie mit der Eingabe, um ein oder mehrere Community-Mitglieder oder Mitgliedergruppen auszuwählen, die als Moderatoren von benutzergenerierten Inhalten vertrauenswürdig sind.
 
-* **Privilegierte Community-Mitglieder**
+* **Community-privilegierte Mitglieder**
 
   Beginnen Sie mit der Typisierung, um ein oder mehrere Community-Mitglieder oder Mitgliedergruppen auszuwählen und Inhalte zu erstellen, wenn `Allow Privileged Member` wurde für eine [Community-Funktion](/help/communities/functions.md).
 
@@ -254,7 +254,7 @@ Die globale Einstellung für die Moderation benutzergenerierter Inhalte (UGC) wi
 
   Wenn diese Option aktiviert ist, werden veröffentlichte Community-Inhalte erst angezeigt, nachdem sie von einem Moderator genehmigt wurden. Die Option Standard ist deaktiviert. Weitere Informationen finden Sie unter [Moderieren von Community-Inhalten](/help/communities/moderate-ugc.md#premoderation).
 
-* **Kennzeichnung des Schwellenwerts, bevor der Inhalt ausgeblendet wird**
+* **Kennzeichnungsschwellenwert, bevor Inhalt ausgeblendet wird**
 
   Bei mehr als 0 muss die Häufigkeit definiert werden, mit der ein Thema oder Beitrag gekennzeichnet werden muss, bevor er aus der öffentlichen Ansicht ausgeblendet wird. Wenn der Wert auf -1 festgelegt ist, wird das gekennzeichnete Thema oder der Beitrag nie aus der öffentlichen Ansicht ausgeblendet. Der Standardwert lautet 5.
 
@@ -269,7 +269,7 @@ Die Option Standard ist deaktiviert. Wenn diese Option aktiviert ist, wird ein z
 
 ![site-analytics-enable](assets/site-analytics-enable.png)
 
-* **Framework-Verweis der Cloud-Konfiguration**
+* **Referenz zum Cloud Config Framework**
 
   Wählen Sie aus dem Pulldown-Menü das für diese Community-Site konfigurierte Analytics Cloud-Service-Framework aus.
   `Communities` ist das Framework-Beispiel aus [Analytics-Konfiguration für Communities-Funktionen](/help/communities/analytics.md#aem-analytics-framework-configuration) Dokumentation.
@@ -284,7 +284,7 @@ Die Option Standard ist deaktiviert. Wenn diese Option aktiviert ist, wird ein z
 
 ![allow-machine-translation](assets/allow-machine-translation.png)
 
-* **Maschinelle Übersetzung für ausgewählte Sprachen aktivieren**
+* **Aktivieren der maschinellen Übersetzung für ausgewählte Sprachen**
 
   Die für die maschinelle Übersetzung aktivierten Sprachen entsprechen standardmäßig der Systemeinstellung, die von der [Konfiguration der Übersetzungsintegration](/help/communities/translate-ugc.md#translation-integration-configuration). Diese Standardeinstellungen können für diese Site überschrieben werden, indem Standardwerte gelöscht und/oder andere Sprachen aus dem Pulldown-Menü ausgewählt werden.
 
@@ -296,11 +296,11 @@ Die Option Standard ist deaktiviert. Wenn diese Option aktiviert ist, wird ein z
 
   Für eine Website mit mehreren Sprachkopien bietet ein globaler freigegebener Speicher einen einzigen Konversationsthread, der von jeder Sprachkopie aus sichtbar ist. Dies wird erreicht, indem eine der Sprachen als Sprachkopie ausgewählt wird. Der Standardwert ist *Kein globaler freigegebener Store*.
 
-* **Übersetzungsanbieter-Konfiguration auswählen**
+* **Konfiguration des Übersetzungsanbieters auswählen**
 
   Wählen Sie eine [Framework zur Übersetzungsintegration](/help/sites-administering/tc-tic.md) erstellt für den lizenzierten Übersetzungsanbieter.
 
-* **Wählen Sie die Übersetzungsoptionen für Ihre Community-Site**
+* **Wählen Sie Übersetzungsoptionen für Ihre Community-Site aus.**
 
    * **Gesamte Seite übersetzen**
 
@@ -313,14 +313,14 @@ Die Option Standard ist deaktiviert. Wenn diese Option aktiviert ist, wird ein z
      Wenn diese Option aktiviert ist, wird neben jedem Beitrag eine Übersetzungsoption angezeigt, mit der einzelne Beiträge in die Basissprache der Seite übersetzt werden können.
 Der Standardwert ist *selected*.
 
-* **Speicheroptionen auswählen**
+* **Persistenzoptionen auswählen**
 
    * **Übersetzen von Beiträgen auf Benutzeranfrage und danach beibehalten**
 Wenn diese Option aktiviert ist, wird der Inhalt erst übersetzt, nachdem eine Anforderung gestellt wurde. Nach der Übersetzung wird die Übersetzung im Repository gespeichert.
 
      Der Standardwert ist *nicht ausgewählt*.
 
-   * **Übersetzungen nicht behalten**
+   * **Übersetzungen nicht beibehalten**
 
      Wenn diese Option aktiviert ist, werden Übersetzungen nicht im Repository gespeichert.
 
@@ -328,7 +328,7 @@ Wenn diese Option aktiviert ist, wird der Inhalt erst übersetzt, nachdem eine A
 
      Der Standardwert ist *nicht ausgewählt*.
 
-* **Smart Rendering**
+* **Smart Render**
 
   Wählen Sie eine der folgenden Optionen aus:
 
@@ -529,7 +529,7 @@ Führen Sie zur korrekten Umleitung die folgenden Schritte aus, um sicherzustell
 
   `/content/sites/<site-name>/path/to/login/page:/content/sites/<site-name>`
 
-  Beispiel:
+  Zum Beispiel:
   `/content/sites/engage/en/signin:/content/sites/engage/en`
 
 * Wählen Sie **Speichern** aus.

@@ -2,7 +2,7 @@
 title: Aktualisieren Ihres Inhalts über AEM Assets-APIs
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie mit der REST-API auf die Inhalte Ihrer Inhaltsfragmente zugreifen und diese aktualisieren können.
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 98%
@@ -262,7 +262,7 @@ Nutzung erfolgt über:
 
 `GET /{cfParentPath}/{cfName}.json`
 
-Beispiel:
+Zum Beispiel:
 
 `http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
@@ -281,7 +281,7 @@ Nutzung erfolgt über:
 
 Der Hauptteil muss eine JSON-Darstellung des zu erstellenden Inhaltsfragments enthalten – einschließlich des anfänglichen Inhalts, der für Inhaltsfragmentelemente festgelegt werden soll. Sie müssen die Eigenschaft `cq:model` festlegen und auf ein gültiges Inhaltsfragmentmodell verweisen. Andernfalls tritt ein Fehler auf. Außerdem müssen Sie eine Kopfzeile vom Typ `Content-Type` hinzufügen, für die `application/json` festgelegt ist.
 
-### Aktualisieren {#update}
+### Update {#update}
 
 Nutzung erfolgt über
 
@@ -313,7 +313,7 @@ Nachdem Sie nun diesen Teil der AEM Headless-Entwickler-Tour abgeschlossen haben
 * Have experience with sample code and know how the API works in practice.
 -->
 
-<!-- The "How to put it all together" page isn't going to be published until the first public release of the Headless SDK. Temporarily commenting out the reference below. -->
+<!-- The "How to put it all together" page is not going to be published until the first public release of the Headless SDK. Temporarily commenting out the reference below. -->
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 

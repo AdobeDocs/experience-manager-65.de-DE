@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing
 content-type: reference
 exl-id: e10e1904-7016-4eb0-9408-36297285f378
-source-git-commit: 2c0e3052e32e32f794faa69177d5fdad95bec72f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '975'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Bei der Entwicklung einer mobilen App gibt es viele neue Probleme, die speziell 
 
 * Funktion - Werden alle Anforderungen von Ihrer App erfüllt?
 * Benutzerfreundlichkeit - Ist die App von Ihrem Kunden einfach zu verwenden und zu verstehen?
-* Leistung - Was passiert während einer Spitze bei der Verwendung? Sind die App-Elemente, wie Wischen und Karussells, schnell und beeinträchtigen Sie nicht das Erlebnis?
+* Leistung - Was passiert während einer Spitze bei der Verwendung? Sind die App-Elemente wie Wischen und Karussells schnell und beeinträchtigen sie nicht vom Erlebnis?
 * Fehler oder Unterbrechungen - Was passiert, wenn während der Ausführung der App ein eingehender Aufruf oder eine eingehende Benachrichtigung erfolgt? Was passiert, wenn das Netzwerk ausfällt oder ausgeschaltet ist?
 * Installation und Updates - Wie funktioniert die Installation? Wie werden Aktualisierungen veröffentlicht?
 * Technisch - Verbraucht Ihre App zu viel Strom von einem Gerät?
@@ -40,7 +40,7 @@ Ein gewisser Grad automatisierter Tests sollte durchgeführt werden, um die vers
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
-## Manuelle Prüfung {#manual-testing}
+## Manuelle Tests {#manual-testing}
 
 Zusätzlich zu automatisierten Tests sollte Ihre App einen manuellen Testzyklus durchlaufen. Kunden, die die App auf einem echten Gerät ausführen, können nicht durch ein Skript dupliziert werden. Auch hier haben Sie viele Möglichkeiten. Sie können eine Plattform wie HockeyApp verwenden, um festzulegen, wer Zugriff hat und Feedback erfassen kann. Oder Sie können den gesamten Prozess an einen Dienst wie UTest, ElusiveStars oder Test auslagern. Wenn Sie über eine Gruppe interner Tester verfügen, aber nicht über verschiedene Geräte verfügen, gibt es Cloud-Services, mit denen Sie manuelle Tests an ihrem Gerätesool durchführen können. Ein solcher Dienst, der dies bereitstellt, ist SauceLabs. Sie können Apps auch remote für PhoneGap Enterprise erstellen und auf lokalen Geräten installieren, um Akzeptanztests oder Demos durchzuführen. Siehe PhoneGap (`https://phonegap.com/`) auf der Website mit den neuesten Funktionen und Dokumentation. Unabhängig vom Ansatz sollten manuelle Tests Folgendes tun:
 
