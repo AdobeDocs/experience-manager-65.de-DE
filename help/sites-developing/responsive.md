@@ -1,16 +1,16 @@
 ---
 title: Responsives Design für Web-Seiten
-description: Responsives Design ermöglicht die effektive Darstellung derselben Seiten auf verschiedenen Geräten in verschiedenen Ausrichtungen..
+description: Responsives Design ermöglicht die effektive Darstellung derselben Seiten auf mehreren Geräten in verschiedenen Ausrichtungen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: mobile-web
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '5375'
-ht-degree: 99%
+source-wordcount: '5293'
+ht-degree: 98%
 
 ---
 
@@ -200,7 +200,7 @@ Erstellen Sie beispielsweise einen Knoten ` [sling:OsgiConfig](/help/sites-deplo
 
   Das Suffix - `*alias*` ist erforderlich, weil der Service „MobileEmulatorProvider“ ein Factory-Service ist. Verwenden Sie einen beliebigen eindeutigen Alias für diese Factory.
 
-* jcr:primaryType: `sling:OsgiConfig`
+* `jcr:primaryType`: `sling:OsgiConfig`
 
 Fügen Sie folgende Knoteneigenschaft hinzu:
 
@@ -933,7 +933,7 @@ Verwenden Sie den folgenden Algorithmus als Ausgangspunkt für die Entwicklung d
 1. Fügen Sie der CSS-Datei für jede angestrebte Darstellungsfeldgröße die entsprechende Medienabfrage hinzu. Fügen Sie in jeder Medienabfrage die folgenden Elemente hinzu:
 
    * Eine Auswahl für `content` -Klasse, beispielsweise `.content{}`.
-   * Selektoren für die span-Klassen, z. B, `.span3{ }`.
+   * Selektoren für jede span-Klasse, beispielsweise `.span3{ }`.
    * Eine Auswahl für `row-fluid` -Klasse, beispielsweise `.row-fluid{ }`
    * Selektoren für span-Klassen, die sich innerhalb von row-fluid -Klassen befinden, z. B. `.row-fluid span3 { }`.
 

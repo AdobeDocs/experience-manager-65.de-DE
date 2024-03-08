@@ -7,10 +7,10 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 80%
+source-wordcount: '1160'
+ht-degree: 79%
 
 ---
 
@@ -119,7 +119,8 @@ Im Beispiel oben werden alle Seiten, die Ihren Suchkriterien entsprechen, zurüc
 * **path:** Durchsucht nur Knoten unter diesem Pfad. Wenn Sie mehr als einen Begriff mit einem Pfad-Präfix festlegen, wird nur das letzte berücksichtigt.
 * **Typ:** gibt nur Knoten des angegebenen Knotentyps zurück. Das schließt primäre und Mixin-Typen ein.  Sie können mehrere Knotentypen durch Kommas voneinander getrennt festlegen.  GQL gibt Knoten zurück, die einen der festgelegten Typen aufweisen.
 * **order:** Sortiert das Ergebnis nach den bestimmten Eigenschaften. Sie können mehrere Eigenschaftsnamen durch Kommas voneinander getrennt festlegen.  Um das Ergebnis in absteigender Reihenfolge zu sortieren, setzen Sie einfach ein Minuszeichen als Präfix des Eigenschaftsnamens. Zum Beispiel: order:-name.  Ein Pluszeichen gibt das Ergebnis in aufsteigender Reihenfolge zurück. Dies ist auch die Standardeinstellung.
-* **limit:** Begrenzt die Anzahl der Ergebnisse mithilfe eines Intervalls. Beispiel: limit:10.20 Das Intervall basiert auf null, der Beginn ist inklusiv und das Ende ist exklusiv. Sie können auch ein offenes Intervall festlegen: :limit:10.. oder limit:..20 Wenn die Punkte weggelassen und nur ein Wert angegeben wird, gibt GQL höchstens diese Anzahl von Ergebnissen zurück. Beispiel: limit:10 (gibt die ersten zehn Ergebnisse zurück).
+* **limit:** Begrenzt die Anzahl der Ergebnisse mithilfe eines Intervalls. Beispiel: limit:10.20 Das Intervall basiert auf null, der Beginn ist inklusiv und das Ende ist exklusiv. Sie können auch eine Öffnung `interval:limit:10..` oder `limit:..20`
+Wenn die Punkte weggelassen und nur ein Wert angegeben wird, gibt GQL höchstens diese Anzahl von Ergebnissen zurück. Beispiel: `limit:10` (gibt die ersten zehn Ergebnisse zurück).
 
 ### Exportieren von Inhalten {#exporting-content}
 

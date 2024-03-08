@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '2434'
+source-wordcount: '2433'
 ht-degree: 99%
 
 ---
@@ -141,7 +141,7 @@ Die autorisierte Benutzerin bzw. der autorisierte Benutzer wird in Schritt 3 zum
    * **Prinzipal**: *nach dem für die Benutzersynchronisierung erstellten Benutzer suchen*
    * **Typ**: `Allow`
    * **Berechtigungen**: `jcr:all`
-   * **Einschränkungen**: rep:glob: `*/activities/*`
+   * **Einschränkungen** `rep:glob`: `*/activities/*`
    * Wählen Sie **OK** aus
 
 * Wählen Sie **Alle speichern**

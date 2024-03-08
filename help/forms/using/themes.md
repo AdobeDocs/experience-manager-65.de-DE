@@ -7,7 +7,7 @@ content-strategy: max-2018
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
 source-wordcount: '6084'
 ht-degree: 82%
@@ -73,7 +73,7 @@ Sie können Designs als ZIP-Datei exportieren und in anderen Projekten oder AEM-
 
 ### Hochladen eines Designs {#uploading-a-theme}
 
-Sie können erstellte Designs mit Formatierungsvorgaben für Ihr Projekt verwenden. Sie können von anderen erstellte Design-Pakete importieren, indem Sie diese in Ihr Projekt hochladen.
+Sie können erstellte Designs mit Stilvorgaben für Ihr Projekt verwenden. Sie können Design-Pakete importieren, die von anderen erstellt werden, indem Sie sie in Ihr Projekt hochladen.
 
 Hochladen von Designs
 
@@ -178,7 +178,7 @@ Liste der Metaeigenschaften eines Designs (auf der Eigenschaftenseite eines Desi
      <li>Der benutzerdefinierte Repository-Pfad innerhalb von "/etc", in dem die clientlibs, die diesem Design entsprechen, gespeichert werden.</li>
      <li>Standardwert - "/etc/clientlibs/fd/themes"+ relativer Pfad des Design-Assets.</li>
      <li>Wenn der Speicherort nicht vorhanden ist, wird die Ordnerhierarchie automatisch generiert.</li>
-     <li>Wenn dieser Wert geändert wird, wird die clientlib-Knotenstruktur an den neuen eingegebenen Speicherort verschoben.<br /> <em><strong>Hinweis</strong>: Wenn Sie den standardmäßigen Clientlib-Speicherort ändern, weisen Sie im CRXDE-Repository <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code> zu <code>forms-users</code> und <code>crx:replicate</code> sowie <code>jcr:read </code> zu <code>fd-service</code> am neuen Speicherort zu. Fügen Sie außerdem eine weitere ACL hinzu, indem Sie <code>deny jcr:addChildNodes</code> für <code>forms-user</code></em> hinzufügen</li>
+     <li>Wenn dieser Wert geändert wird, wird die clientlib-Knotenstruktur an den neuen eingegebenen Speicherort verschoben.<br /> <em><strong>Hinweis:</strong> Wenn Sie den standardmäßigen clientlib-Speicherort ändern, weisen Sie im CRXDE-Repository die <code>crx:replicate</code>, <code>rep:write</code>, <code>rep:glob:*</code>, <code>rep:itemNames::</code> <code>js.txt</code>, <code>jcr:read</code> nach <code>forms-users</code> und <code>crx:replicate</code>, <code>jcr:read</code> nach <code>fd-service</code> am neuen Speicherort. Fügen Sie außerdem eine weitere ACL hinzu, indem Sie <code>deny jcr:addChildNodes</code> für <code>forms-user</code></em> hinzufügen</li>
     </ul> </td>
   </tr>
   <tr>
@@ -365,7 +365,7 @@ Wenn Sie eine Komponente auf der Arbeitsfläche auswählen, wird die Komponenten
 * **Widget „Numerisches Feld“**: Ermöglicht Ihnen die Auswahl der Komponente, um ihr Erscheinungsbild in der Seitenleiste anzupassen.
 * **Widget „Feld“**: Ermöglicht die Auswahl der allgemeinen Komponente für die Gestaltung. In diesem Beispiel werden alle Texteingabekomponenten (Textfeld/numerisches Feld/numerische Schritte/Datumseingabe) für die Formatierung ausgewählt.
 
-* ![field-level](assets/field-level.png): Hiermit können Sie zur allgemeinen Komponente für die Formatierung wechseln. Wenn Sie numerisches Feld auswählen und dieses Symbol auswählen, wird die Feldkomponente ausgewählt. Wenn Sie die Feldkomponente auswählen und dieses Symbol auswählen, wird der Bereich ausgewählt. Wenn Sie mehrfach zur Auswahl auf dieses Symbol tippen, wählen Sie das Formularlayout für die Formatierung aus.
+* ![field-level](assets/field-level.png): Hiermit können Sie zur allgemeinen Komponente für die Formatierung wechseln. Wenn Sie „Numerisches Feld“ und dann dieses Symbol auswählen, wird die Feldkomponente ausgewählt. Wenn Sie „Feldkomponente“ und dann dieses Symbol auswählen, wird das Bedienfeld ausgewählt. Wenn Sie mehrfach zur Auswahl auf dieses Symbol tippen, wählen Sie das Formularlayout für die Formatierung aus.
 
 >[!NOTE]
 >
@@ -592,7 +592,7 @@ Gehen Sie wie folgt vor, um ein Design zu kopieren:
 
 1. Navigieren Sie in der Author-Instanz zu **Adobe Experience Manager > Formulare > Designs**.
 1. Öffnen Sie den Ordner für die Designbibliothek.
-1. Bewegen Sie im Ordner &quot;Designbibliothek&quot;den Mauszeiger über das entsprechende vordefinierte Design und wählen Sie **Kopieren**.
+1. Fahren Sie im Ordner für die Design-Bibliothek mit dem Mauszeiger über das entsprechende vordefinierte Design und wählen Sie **Kopieren** aus.
 1. Fügen Sie das kopierte Design aus dem Design-Bibliotheks-Ordner ein.
 1. Passen Sie das kopierte Design an.
 

@@ -7,10 +7,10 @@ topic-tags: customization
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1246'
-ht-degree: 55%
+source-wordcount: '1242'
+ht-degree: 53%
 
 ---
 
@@ -143,8 +143,8 @@ So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header
 * **diffTime**: Differenz zwischen der aktuellen Zeit und der letzten Speicheraktion für den Entwurf. Alternativ dazu die Differenz zwischen der aktuellen und der zuletzt gesendeten Aktion für die Übermittlung.
 * **iconClass**: CSS-Klasse zur Anzeige des ersten Buchstabens des Entwurfs/der Übermittlung. Forms Portal umfasst die folgenden Klassen, die verschiedene farbige Hintergründe bieten.
 * **owner**: Benutzer, der den Entwurf/die Übermittlung erstellt hat.
-* **Today**: Erstellungsdatum des Entwurfs/der Übermittlung im Format TT:MM:JJJJ.
-* **TimeNow**: Erstellungszeitpunkt des Entwurfs/der Übermittlung im 24-Stunden-Format HH:MM:SS.
+* **Heute**: Erstellungsdatum des Entwurfs oder der Übermittlung in `DD:MM:YYYY` Format.
+* **TimeNow**: Zeitpunkt der Erstellung des Entwurfs oder der Übermittlung in `HH:MM:SS` Format: 24 Stunden
 
 *Hinweis:*
 
