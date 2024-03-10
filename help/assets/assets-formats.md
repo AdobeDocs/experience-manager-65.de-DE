@@ -7,9 +7,9 @@ role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 hide: true
-source-git-commit: c99d6f3c67c97ea382ace2e102b2cacbbd2e5db5
+source-git-commit: a19f07bc42d2918338b07418bed56ac2bb73ba2d
 workflow-type: tm+mt
-source-wordcount: '1884'
+source-wordcount: '1872'
 ht-degree: 99%
 
 ---
@@ -275,17 +275,17 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 
 | Format | Hochladen (Eingabeformat) | Bildvorgabe erstellen (Ausgabeformat) | Vorschau von dynamischer Ausgabedarstellung anzeigen | Dynamische Ausgabedarstellung bereitstellen | Dynamische Ausgabedarstellung herunterladen | Festlegen von Typen, die dieses Format unterstützen |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
-| AVIF | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| AVIF | − | − | − | ✓ | − | − |
 | BMP | ✓ | − | − | − | − | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Drehung](/help/assets/spin-sets.md) |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − |
-| HEIC | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| HEIC | − | − | − | ✓ | − | − |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Drehung](/help/assets/spin-sets.md) |
 | PICT | ✓ | − | − | − | − | − |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Drehung](/help/assets/spin-sets.md) |
 | PSD ‡ | ✓ | − | − | − | − | − |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Drehung](/help/assets/spin-sets.md) |
-| WEBP | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| WEBP | − | − | − | ✓ | − | − |
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
 ‡ Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
