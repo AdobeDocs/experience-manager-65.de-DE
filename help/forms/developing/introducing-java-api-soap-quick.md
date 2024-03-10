@@ -1,15 +1,15 @@
 ---
 title: Einführung in Java&trade; API QuickStart
-description: Erfahren Sie, wie AEM Forms-Vorgänge mithilfe von AEM Forms Java&trade ausgeführt werden können. Eine stark typisierte API ist für die SOAP-Verbindung aktiviert.
+description: Erfahren Sie, wie AEM Forms-Vorgänge mithilfe von AEM Forms Java&trade ausgeführt werden können. Die stark typisierte API ist für die SOAP-Verbindung aktiviert.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, development-tools
 role: Developer
 exl-id: 1d4062ef-fb24-4527-b899-896ce757beda
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '532'
 ht-degree: 32%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 32%
 
 Die Kurzanleitung zu den Adobe AEM Forms-APIs kann Sie bei der schnelleren Entwicklung von Programmen unterstützen, die mit AEM Forms-Services interagieren. *Kurzanleitungen* sind komplette Programme, die Sie kopieren und in Ihre eigenen Projekte einfügen und als Ausgangspunkt verwenden können. Sie können eine Kurzanleitung ausführen, um zu sehen, wie das Programm sich verhält, und es für Ihre eigenen Anforderungen anpassen.
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API durchgeführt werden und der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 
-Der Schnellstart für Java™-stark typisierte API bietet eine Liste von JAR-Dateien, die zum Ausführen der Java™-Anwendung erforderlich sind. Die meisten Java™-Schnellstarts sind Konsolenanwendungen, die in `main`. Der Forms Java™-Schnellstart mit starker Typisierung der API wird jedoch als Java™-Servlet implementiert, das in einer Webanwendung ausgeführt wird.
+Der Schnellstart für Java™-stark typisierte API bietet eine Liste von JAR-Dateien, die zum Ausführen der Java™-Anwendung erforderlich sind. Die meisten Java™-Schnellstarts sind Konsolenanwendungen, die in `main`. Das Forms Java™-Schnellstart-API mit starker Typisierung wird jedoch als Java™-Servlet implementiert, das in einer Webanwendung ausgeführt wird.
 
 Die Liste der JAR-Dateien befindet sich in einem Kommentarabschnitt am Anfang des Schnellstarts. Der folgende Kommentar befindet sich beispielsweise in einem Schnellstart für die Ausgabe und ist eine typische JAR-Dateiliste, die in jedem Schnellstart für Java™ zu finden ist.
 
@@ -85,4 +85,4 @@ Die meisten Schnellstarts in *Programmieren mit AEM Forms on JEE* Rufen Sie eine
 
 >[!NOTE]
 >
-Die meisten Webdienst-Schnellstarts werden in C# geschrieben und verwenden das .NET-Framework. Sie können jedoch eine Client-Anwendungslogik erstellen, die in der Lage ist, AEM Forms-Services in jeder Entwicklungsumgebung aufzurufen, die SOAP-Standards unterstützt. (Siehe [Aufrufen von AEM Forms mithilfe von Web-Services](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
+>Die meisten Webdienst-Schnellstarts werden in C# geschrieben und verwenden das .NET-Framework. Sie können jedoch eine Client-Anwendungslogik erstellen, die in der Lage ist, AEM Forms-Services in jeder Entwicklungsumgebung aufzurufen, die SOAP-Standards unterstützt. (Siehe [Aufrufen von AEM Forms mithilfe von Web-Services](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)

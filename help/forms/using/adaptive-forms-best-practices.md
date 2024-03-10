@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms, Foundation Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '4667'
-ht-degree: 97%
+source-wordcount: '4668'
+ht-degree: 96%
 
 ---
 
@@ -133,7 +133,7 @@ Der Regeleditor bietet einen visuellen Editor und einen Code-Editor zum Schreibe
 
 * Verweisen Sie auf Komponenten durch die relative eindeutige Hierarchie, um Konflikte zu vermeiden. Beispiel: `parentName.fieldName`.
 
-* Beim Bearbeiten von komplexen oder häufig verwendeten Regeln, sollten Sie die Geschäftslogik als Funktionen in eine separaten Client-Bibliothek schreiben, die Sie in adaptiven Formularen festlegen und wieder verwenden können. Die Client-Bibliothek sollte eine eigenständige Bibliothek sein und darf keine externen Abhängigkeiten, außer von jQuery und Underscore.js haben. Sie können die Client-Bibliothek auch benutzen, um [serverseitige erneute Überprüfung](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form) der übermittelten Formulardaten zu erzwingen.
+* Wenn Sie komplexe oder häufig verwendete Regeln verarbeiten, sollten Sie in Erwägung ziehen, Geschäftslogik als Funktionen in einer separaten Client-Bibliothek zu schreiben, die Sie über adaptive Formulare hinweg angeben und wiederverwenden können. Die Client-Bibliothek sollte eine eigenständige Bibliothek sein und darf keine externen Abhängigkeiten, außer von jQuery und Underscore.js haben. Sie können die Client-Bibliothek auch benutzen, um [serverseitige erneute Überprüfung](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form) der übermittelten Formulardaten zu erzwingen.
 * Adaptive Formulare bieten eine Reihe von APIs, über die Sie kommunizieren und Aktionen für adaptive Formulare anzeigen können. Einige der wichtigsten APIs sind im Folgenden aufgeführt. Weitere Informationen finden Sie in der [Referenz zur JavaScript-Bibliotheks-API für adaptive Formulare](https://adobe.com/go/learn_aemforms_documentation_63_de).
 
    * `guideBridge.reset()`: Setzt ein Formular zurück.

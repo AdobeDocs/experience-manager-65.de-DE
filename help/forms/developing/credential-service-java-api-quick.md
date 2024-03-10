@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 0ea00ef5-9923-4c03-a724-32f9ebdc650f
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '230'
 ht-degree: 45%
 
 ---
@@ -22,7 +22,7 @@ Java™ API Quick Start (SOAP) ist für den Credential-Dienst verfügbar.
 
 [Schnellstart (SOAP-Modus): Löschen von Anmeldedaten mit Java](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API durchgeführt werden und der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API durchgeführ
 
 >[!NOTE]
 >
-Sie können keine Credential-DIenst-Vorgänge über Webdienste durchführen.
+>Sie können keine Credential-DIenst-Vorgänge über Webdienste durchführen.
 
 ## Schnellstart (SOAP-Modus): Importieren von Anmeldeinformationen mit der Java™ API {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '4518'
-ht-degree: 95%
+source-wordcount: '4520'
+ht-degree: 94%
 
 ---
 
@@ -403,7 +403,7 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
 
 ### Textvorextraktion von Binärdateien {#text-pre-extraction-of-binaries}
 
-Bei der Textvorextraktion wird Text aus Binärdateien direkt aus dem Datenspeicher über einen isolierten Prozess extrahiert und verarbeitet, und der extrahierte Text wird direkt für nachfolgende Neuindizierungen von Oak-Indizes offengelegt.
+Bei der Textvorextraktion wird Text aus Binärdateien extrahiert und verarbeitet, direkt aus dem Datenspeicher über einen isolierten Prozess, und der extrahierte Text wird dann direkt zu nachfolgenden Neuindizierungen von Oak-Indizes weitergeleitet.
 
 * Die Oak-Textvorextraktion wird für die Neuindizierung/Indizierung von Lucene-Indizes in Repositorys mit großen Dateimengen (Binärdateien) empfohlen, die extrahierbaren Text enthalten (z. B. PDF, Word Docs, PPTs und TXT), der für die Volltextsuche über bereitgestellte Oak-Indizes qualifiziert ist. Beispiel: `/oak:index/damAssetLucene`.
 * Von einer Textvorextraktion profitiert lediglich die Neuindizierung/Indizierung von Lucene-Indizes, aber NICHT von Oak-Eigenschaftenindizes, da Eigenschaftenindizes keinen Text aus Binärdateien extrahieren.

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '6904'
+source-wordcount: '6905'
 ht-degree: 92%
 
 ---
@@ -207,7 +207,7 @@ Mithilfe der Funktion „Suchen und Ersetzen“ können Sie nach einer beliebige
 
 ## Liste {#list}
 
-Eine Liste ist eine Gruppe von Dokumentfragmenten, einschließlich Text, (anderen) Listen, Bedingungen und Bildern. Die Reihenfolge der Listenelemente kann festgelegt sein oder bearbeitet werden. Beim Erstellen eines Briefs können Sie einige oder alle Listenelemente verwenden, um ein wiederverwendbares Muster von Elementen zu replizieren. Listen verhalten sich generell wie Ziele, die in anderen Ziele verschachtelt werden können.
+Eine Liste ist eine Gruppe von Dokumentfragmenten, einschließlich Text oder (anderen) Listen, Bedingungen und Bildern. Die Reihenfolge der Listenelemente kann festgelegt sein oder bearbeitet werden. Beim Erstellen eines Briefs können Sie einige oder alle Listenelemente verwenden, um ein wiederverwendbares Muster von Elementen zu replizieren. Listen verhalten sich generell wie Ziele, die in anderen Ziele verschachtelt werden können.
 
 ### Implementieren von Listen {#implementing-lists}
 

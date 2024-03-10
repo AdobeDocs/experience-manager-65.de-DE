@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 93%
+source-wordcount: '383'
+ht-degree: 92%
 
 ---
 
@@ -79,7 +79,7 @@ Außerdem sind die Tastaturbefehle für alle Gebietsschemata und Tastatur-Layout
 
 ## Deaktivieren von Tastaturbefehlen {#deactivating-keyboard-shortcuts}
 
-AEM bietet Tastaturbefehle für einige häufig verwendete Funktionen (Bearbeiten, Eigenschaften, Kopieren/Einfügen, Anzeigen verschiedener Menüs in der Seitenleiste usw.).
+AEM bietet Tastaturbefehle für einige der häufig verwendeten Funktionen (Bearbeiten, Eigenschaften, Kopieren/Einfügen, Anzeigen verschiedener Menüs in der Seitenleiste usw.).
 
 Für Benutzerinnen oder Benutzer, die keine Tastaturbefehle verwenden oder bestimmte Barrierefreiheitsanforderungen haben, können alle Tastaturbefehle deaktiviert werden.
 

@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '553'
 ht-degree: 26%
 
 ---
@@ -36,7 +36,7 @@ Java™ API Quick Start (SOAP) ist für die Endpoint Registry verfügbar.
 
 [QuickStart: Endpunkt-Connector-Informationen mithilfe von Java abrufen](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API durchgeführt werden und der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API durchgeführ
 
 >[!NOTE]
 >
-Sie können mit Endpunkten nicht über einen Web-Dienst arbeiten.
+>Sie können mit Endpunkten nicht über einen Web-Dienst arbeiten.
 
 ## QuickStart: Hinzufügen eines EJB-Endpunkts mithilfe der Java™ API {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
 
@@ -251,7 +251,7 @@ Im folgenden Java™-Codebeispiel wird ein Endpunkt des Typs &quot;überwachter 
 
 >[!NOTE]
 >
-Schließen Sie die Datei WatchedFolderEndpointConfigConstants.java in Ihr Projekt ein, damit Sie den folgenden Schnellstart kompilieren und ausführen können. (Siehe [Konfigurationswerte für überwachte Ordner - Konstante Datei](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
+>Schließen Sie die Datei WatchedFolderEndpointConfigConstants.java in Ihr Projekt ein, damit Sie den folgenden Schnellstart kompilieren und ausführen können. (Siehe [Konfigurationswerte für überwachte Ordner - Konstante Datei](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
 
 ```java
  /*
@@ -386,7 +386,7 @@ Im folgenden Java™-Codebeispiel wird ein E-Mail-Endpunkt zu einem Dienst mit d
 
 >[!NOTE]
 >
-Schließen Sie die Datei EmailEndpointConfigConstants.java in Ihr Projekt ein, damit Sie den folgenden Schnellstart kompilieren und ausführen können. (Siehe [Konfigurationswerte für E-Mails - Konstante Datei](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
+>Schließen Sie die Datei EmailEndpointConfigConstants.java in Ihr Projekt ein, damit Sie den folgenden Schnellstart kompilieren und ausführen können. (Siehe [Konfigurationswerte für E-Mails - Konstante Datei](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
 
 ```java
  /*

@@ -7,10 +7,10 @@ content-strategy: max-2018
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
+source-git-commit: 7c83cdf779fc2b72b73e29064b2feec594e2e4b8
 workflow-type: tm+mt
-source-wordcount: '6084'
-ht-degree: 82%
+source-wordcount: '6086'
+ht-degree: 83%
 
 ---
 
@@ -284,7 +284,7 @@ Wenn Sie eine Komponente auf der Arbeitsfläche auswählen, werden ihre Stileige
 
 ### Kürzlich verwendete Stile im Design-Editor {#recently-used-styles-in-theme-editor}
 
-Der Design-Editor speichert bis zu 10 Stile, die auf eine Komponente angewendet werden. Die im Cache gespeicherten Stile können für andere Komponenten eines Designs verwendet werden. Kürzlich verwendete Stile sind direkt unter der ausgewählten Komponente in der Seitenleiste als Listenfeld verfügbar. Zunächst ist die Liste der kürzlich verwendeten Stile leer.
+Der Design-Editor speichert bis zu 10 Stile, die auf eine Komponente angewendet werden. Die im Cache gespeicherten Stile können für andere Komponenten eines Designs verwendet werden. Kürzlich verwendete Stile stehen direkt unter der ausgewählten Komponente in der Seitenleiste in Form eines Listenfelds zur Auswahl. Zunächst ist die Liste der kürzlich verwendeten Stile leer.
 
 ![asset-library](assets/asset-library.png)
 

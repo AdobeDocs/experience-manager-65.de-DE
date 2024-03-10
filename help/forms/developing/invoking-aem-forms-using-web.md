@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '9812'
+source-wordcount: '9814'
 ht-degree: 96%
 
 ---
@@ -1518,7 +1518,7 @@ In der folgenden Liste sind Datentypen aufgeführt, die nicht von mehreren Servi
 * `Roles`
 * `BLOB`
 
-Um dieses Problem zu vermeiden, wird empfohlen, die Datentypen vollständig zu qualifizieren. Betrachten Sie zum Beispiel ein .NET-Programm, das sowohl auf den Forms-Service als auch auf den Signature-Service mit einem Service-Verweis verweist. Beide Service-Verweise enthalten eine `BLOB`-Klasse. Um eine `BLOB`-Instanz verwenden zu können, müssen Sie das `BLOB`-Objekt bei der Deklaration vollständig qualifizieren. Dieser Ansatz wird im folgenden Code-Beispiel veranschaulicht. Informationen zu diesem Code-Beispiel finden Sie unter [Digitales Signieren von interaktiven Formularen](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-interactive-forms).
+Um dieses Problem zu vermeiden, wird empfohlen, die Datentypen vollständig zu qualifizieren. Betrachten Sie zum Beispiel ein .NET-Programm, das sowohl auf den Forms-Service als auch auf den Signature-Service mit einem Service-Verweis verweist. Beide Service-Verweise enthalten eine `BLOB`-Klasse. So verwenden Sie `BLOB` -Instanz, die die `BLOB` -Objekt, wenn Sie es deklarieren. Dieser Ansatz wird im folgenden Code-Beispiel veranschaulicht. Informationen zu diesem Code-Beispiel finden Sie unter [Digitales Signieren von interaktiven Formularen](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-interactive-forms).
 
 Im folgenden C#-Code-Beispiel wird ein interaktives Formular signiert, das vom Forms-Service gerendert wird. Das Client-Programm hat zwei Service-Verweise. Die `BLOB`-Instanz, die mit dem Forms-Service verbunden ist, gehört zum Namespace `SignInteractiveForm.ServiceReference2`. Analog dazu gehört die `BLOB`-Instanz, die mit dem Signature-Service verbunden ist, zum Namespace `SignInteractiveForm.ServiceReference1`. Das signierte interaktive Formular wird als PDF-Datei mit dem Namen *LoanXFASigned.pdf* gespeichert.
 
@@ -1553,7 +1553,7 @@ Im folgenden C#-Code-Beispiel wird ein interaktives Formular signiert, das vom F
                 try
                 {
                     //Because BLOB objects are used in both service references
-                    //it is necessary to fully-qualify the BLOB objects
+                    //it is necessary to fully qualify the BLOB objects
  
                     //Retrieve the form -- invoke the Forms service
                     SignInteractiveForm.ServiceReference2.BLOB formData = GetForm();

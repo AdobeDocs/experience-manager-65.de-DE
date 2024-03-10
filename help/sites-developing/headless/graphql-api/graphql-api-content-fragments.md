@@ -3,7 +3,7 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 452813cf50110b515c181dba1ecbde4527808cfb
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '4796'
 ht-degree: 95%
@@ -259,7 +259,7 @@ GraphQL für AEM unterstützt eine Liste von Typen. Alle unterstützten Datentyp
 | Aufzählung |  `String` |  Wird verwendet, um eine Option aus einer Liste von Optionen anzuzeigen, die bei der Modellerstellung definiert wurde |
 |  Tags |  `[String]` |  Wird verwendet, um eine Liste von Zeichenfolgen anzuzeigen, die in AEM verwendete Tags darstellen |
 | Inhaltsreferenz |  `String` |  Wird verwendet, um den Pfad zu einem anderen Asset in AEM anzuzeigen |
-| Fragmentreferenz |  *Ein Modelltyp* <br><br>Einzelnes Feld: `Model` - Modelltyp, direkt referenziert <br><br>Multifield mit einem referenzierten Typ: `[Model]` - Array des Typs `Model`, die direkt aus dem Array referenziert wird <br><br>Multifield mit mehreren referenzierten Typen: `[AllFragmentModels]` - Array aller Modelltypen, referenziert aus Array mit Vereinigungstyp |  Wird verwendet, um auf ein oder mehrere Inhaltsfragmente bestimmter Modelltypen zu verweisen, die beim Erstellen des Modells definiert wurden |
+| Fragmentreferenz |  *Ein Modelltyp* <br><br>Einzelnes Feld: `Model` – Modelltyp, direkt referenziert <br><br>Multifeld, mit einem referenzierten Typ: `[Model]`: Array vom Typ `Model`, direkt referenziert von Array <br><br>Multifeld, mit mehreren referenzierten Typen: `[AllFragmentModels]`: Array aller Modelltypen, referenziert von Array mit Vereinigungstyp |  Wird verwendet, um auf ein oder mehrere Inhaltsfragmente bestimmter Modelltypen zu verweisen, die beim Erstellen des Modells definiert wurden |
 
 {style="table-layout:auto"}
 
@@ -288,7 +288,7 @@ Der folgende Code zeigt die Pfade aller Inhaltsfragmente an, die auf der Grundla
 }
 ```
 
-Um ein einzelnes Inhaltsfragment eines bestimmten Typs abzurufen, müssen Sie zunächst auch dessen Pfad bestimmen. Beispiel:
+Um ein einzelnes Inhaltsfragment eines bestimmten Typs abzurufen, müssen Sie zunächst auch dessen Pfad bestimmen. Zum Beispiel:
 
 ```graphql
 {
@@ -363,7 +363,7 @@ Weitere Informationen finden Sie unter [Beispielabfrage für Metadaten – Liste
 
 #### Varianten {#variations}
 
-Das Feld `_variations` wurde implementiert, um die Abfrage der Varianten eines Inhaltsfragments zu vereinfachen. Beispiel:
+Das Feld `_variations` wurde implementiert, um die Abfrage der Varianten eines Inhaltsfragments zu vereinfachen. Zum Beispiel:
 
 ```graphql
 {
@@ -606,7 +606,7 @@ Die Sortierkriterien:
    * ASC (aufsteigend) oder DESC (absteigend); standardmäßig wird ASC angewendet
    * die Richtung kann pro Feld angegeben werden. Diese Fähigkeit bedeutet, dass Sie ein Feld in aufsteigender Reihenfolge sortieren können, ein anderes in absteigender Reihenfolge (name, firstName DESC)
 
-Beispiel:
+Zum Beispiel:
 
 ```graphql
 query {
@@ -638,7 +638,7 @@ Sie können auch ein Feld innerhalb eines verschachtelten Fragments mithilfe des
 >
 >Dieses Format kann sich negativ auf die Leistung auswirken.
 
-Beispiel:
+Zum Beispiel:
 
 ```graphql
 query {
@@ -929,7 +929,7 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 
    * Und Operationen:
 
-      * `_operator` : Anwendung spezifischer Operatoren; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
+      * `_operator`: bestimmte Operatoren anwenden: `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
          * Siehe [Beispielabfrage – Alle Personen, die nicht den Namen „Jobs“ haben](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-persons-not-jobs)
          * Siehe [Beispielabfrage – Alle Abenteuer, bei denen `_path` mit einem bestimmten Präfix beginnt](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-all-adventures-cycling-path-filter)
 

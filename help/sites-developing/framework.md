@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 60%
+source-wordcount: '1638'
+ht-degree: 47%
 
 ---
 
@@ -27,16 +27,16 @@ Dieser Artikel konzentriert sich auf das zugrunde liegende Framework, das Taggin
 
 ## Einführung {#introduction}
 
-Taggen Sie Inhalte und nutzen Sie die AEM-Tagging-Infrastruktur wie folgt:
+So taggen Sie Inhalte und verwenden die AEM Tagging-Infrastruktur:
 
 * Das Tag muss unterhalb des [Stammknotens der Taxonomie](#taxonomy-root-node) als Knoten vom Typ `[cq:Tag](#tags-cq-tag-node-type)` vorhanden sein.
 
 * Der `NodeType` des mit Tags versehenen Inhaltsknotens muss das Mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin) beinhalten.
-* Die [`TagID`](#tagid) wird der Eigenschaft [`cq:tags`](#tagged-content-cq-tags-property) des Inhaltsknotens hinzugefügt und ergibt einen Knoten vom Typ ` [cq:Tag](#tags-cq-tag-node-type)`.
+* Die [`TagID`](#tagid) wird zum Inhaltsknoten hinzugefügt [`cq:tags`](#tagged-content-cq-tags-property) -Eigenschaft und wird in einen Knoten des Typs aufgelöst. ` [cq:Tag](#tags-cq-tag-node-type)`.
 
 ## Tags: cq:Tag-Knotentyp  {#tags-cq-tag-node-type}
 
-Die Funktion eines Tags wird im Repository in einem Knoten vom Typ `cq:Tag` erfasst..
+Die Deklaration eines Tags wird im Repository in einem Knoten des Typs `cq:Tag`.
 
 Ein Tag kann ein einfaches Wort sein (zum Beispiel `sky`) oder stellen eine hierarchische Taxonomie dar (z. B. `fruit/apple`, d. h. sowohl das generische `fruit` und spezifischere `apple`).
 
@@ -70,15 +70,15 @@ Die Tag-ID besteht aus einem [Namespace](#tag-namespace) gefolgt von der lokalen
 
 ### Stammknoten der Taxonomie {#taxonomy-root-node}
 
-Der Stammknoten der Taxonomie ist der Basispfad für alle Tags im Repository. Der Stammknoten der Taxonomie darf kein Knoten vom Typ `cq:Tag` sein.
+Der Stammknoten der Taxonomie ist der Basispfad für alle Tags im Repository. Der Stammknoten der Taxonomie darf kein Knoten vom Typ sein `cq:Tag`.
 
 In AEM ist der Basispfad `/content/cq:tags` und der Stammknoten ist vom Typ `cq:Folder`.
 
 ### Tag-Namespace {#tag-namespace}
 
-Mithilfe von Namespaces können Sie Elemente gruppieren. Der häufigste Anwendungsfall ist ein Namespace pro Site (z. B. öffentlich, intern und Portal) oder pro größerer Anwendung (z. B. WCM, Assets, Communities). Namespaces können jedoch für verschiedene andere Anforderungen verwendet werden. Namespaces werden in der Benutzeroberfläche verwendet, um nur die Untergruppe von Tags anzuzeigen (d. h. die Tags eines bestimmten Namespace), die für den aktuellen Inhalt gültig ist.
+Mithilfe von Namespaces können Sie Elemente gruppieren. Der häufigste Anwendungsfall ist ein Namespace pro Site (z. B. öffentlich, intern und portal) oder pro größerer Anwendung (z. B. WCM, Assets, Communities). Namespaces können jedoch für verschiedene andere Anforderungen verwendet werden. Namespaces werden in der Benutzeroberfläche verwendet, um nur die Untergruppe von Tags anzuzeigen (d. h. die Tags eines bestimmten Namespace), die für den aktuellen Inhalt gültig ist.
 
-Der Namespace des Tags ist die erste Ebene im Teilbaum der Taxonomie, der den Knoten direkt unterhalb des [Stammknotens der Taxonomie darstellt](#taxonomy-root-node). Ein Namespace ist ein Knoten vom Typ `cq:Tag`, dessen übergeordnetes Element nicht vom Knotentyp `cq:Tag` ist.
+Der Namespace des Tags ist die erste Ebene im Teilbaum der Taxonomie, der den Knoten direkt unterhalb des [Stammknotens der Taxonomie darstellt](#taxonomy-root-node). Ein Namespace ist ein Knoten des Typs `cq:Tag` , deren übergeordnetes Element nicht `cq:Tag` Knotentyp.
 
 Alle Tags haben einen Namespace. Wenn kein Namespace angegeben ist, wird das Tag dem standardmäßigen Namespace TagID zugewiesen. `default` mit dem Titel `Standard Tags`, d. h. `/content/cq:tags/default`.
 
@@ -117,7 +117,7 @@ Weitere Informationen finden Sie in den folgenden Dokumenten:
 
 ### Zugriffssteuerung {#access-control}
 
-Tags bestehen als Knoten im Repository unter dem [Stammknoten der Taxonomie](#taxonomy-root-node). Sie erlauben oder verweigern Autoren und Website-Besuchern die Erstellung von Tags in einem jeweiligen Namespace, indem Sie im Repository entsprechende ACLs festlegen.
+Tags bestehen als Knoten im Repository unter dem [Stammknoten der Taxonomie](#taxonomy-root-node). Sie können Autoren und Site-Besuchern erlauben oder verweigern, Tags in einem bestimmten Namespace zu erstellen, indem Sie entsprechende ACLs im Repository festlegen.
 
 Das Verweigern von Leseberechtigungen für bestimmte Tags oder Namespaces steuert auch die Möglichkeit, Tags auf bestimmte Inhalte anzuwenden.
 
@@ -181,7 +181,7 @@ Im Folgenden werden die Auswirkungen im Repository beim Verschieben oder Zusamme
 
 * `cq:movedTo` verweist auf Tag B.
 
-   * Diese Eigenschaft bedeutet, dass Tag A in Tag B verschoben oder zusammengeführt wurde. Durch Verschieben von Tag B wird diese Eigenschaft entsprechend aktualisiert. Tag A ist somit ausgeblendet und wird nur im Repository behalten, um Tag-IDs in Inhaltsknoten aufzulösen, die auf Tag A verweisen. Der Garbage Collector für Tags entfernt Tags wie Tag A, sobald keine Inhaltsknoten mehr darauf verweisen.
+   * Diese Eigenschaft bedeutet, dass Tag A verschoben oder mit Tag B zusammengeführt wurde. Durch Verschieben von Tag B wird diese Eigenschaft entsprechend aktualisiert. Tag A ist somit ausgeblendet und wird nur im Repository beibehalten, um Tag-IDs in Inhaltsknoten aufzulösen, die auf Tag A verweisen. Der Tag-Garbage Collector entfernt Tags wie Tag A, sobald keine Inhaltsknoten mehr auf sie verweisen.
 
    * Ein spezieller Wert für `cq:movedTo` Eigenschaft ist `nirvana`. Sie wird angewendet, wenn das Tag gelöscht wird, aber nicht aus dem Repository entfernt werden kann, da es Untertags mit einer `cq:movedTo` die gehalten werden müssen.
 
@@ -192,7 +192,7 @@ Im Folgenden werden die Auswirkungen im Repository beim Verschieben oder Zusamme
   >1. Tag wird im Inhalt verwendet (d. h. es hat einen Verweis) oder
   >1. Das Tag enthält bereits verschobene untergeordnete Elemente.
 
-* `cq:backlinks` behält die Verweise in die andere Richtung bei. Das heißt, es behält eine Liste aller Tags, die in Tag B verschoben oder mit ihm zusammengeführt wurden. Dies ist hauptsächlich erforderlich, um `cq:movedTo`-Eigenschaften auf dem aktuellen Stand zu halten, wenn Tag B auch verschoben/zusammengeführt/gelöscht oder aktiviert wird. In diesem Fall müssen all seine backlinks-Tags ebenso aktiviert werden.
+* `cq:backlinks` behält die Verweise in die andere Richtung bei. Das heißt, es enthält eine Liste aller Tags, die in Tag B verschoben oder mit ihm zusammengeführt wurden. Dies ist hauptsächlich erforderlich, um `cq:movedTo` -Eigenschaften aktualisiert, wenn Tag B verschoben/zusammengeführt/gelöscht oder Tag B aktiviert wird. In diesem Fall müssen auch alle Backlinks-Tags aktiviert werden.
 
   >[!NOTE]
   >

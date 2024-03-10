@@ -4,10 +4,10 @@ description: Installieren und konfigurieren Sie ein AEM Forms-Demopaket und pass
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '4535'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -155,8 +155,8 @@ Dieser Abschnitt enthält Details und Anweisungen zur Konfiguration des Demopake
 
 1. Konfigurieren Sie den Service für die Verbindung mit dem gewünschten SMTP-Server:
 
-   1. **SMTP server hostname** (Host-Name des SMTP-Servers): z. B. „smtp.gmail.com“
-   1. **SMTP server port** (SMTP-Serverport): z. B. „465“ für Gmail mit SSL
+   1. **Hostname des SMTP-Servers**: zum Beispiel (smtp.gmail.com)
+   1. **Server-Port**: zum Beispiel (465) für Gmail mit SSL
    1. **SMTP User:** (SMTP-Benuztende) demo@ &lt;companyname> .com
    1. **„Von“-Adresse**: aemformsdemo@adobe.com
 
@@ -316,7 +316,7 @@ Sobald die Cloud-Konfiguration abgeschlossen ist, sollten Sie das Formulardatenm
 
    >[!NOTE]
    >
-   Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
+   Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mithilfe alternativer Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 #### Testen des Formulardatenmodells (Derby) {#test-fdm-derby}
 

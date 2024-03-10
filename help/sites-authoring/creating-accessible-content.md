@@ -2,10 +2,10 @@
 title: Erstellen barrierefrei zugänglicher Inhalte für Adobe Experience Manager (in Übereinstimmung mit den WCAG 2.1-Richtlinien)
 description: Verwenden Sie AEM, um Web-Inhalte für Personen mit Behinderungen zugänglich und nutzbar zu machen.
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '13636'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -693,8 +693,13 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.2.1 erfüllen](https://ww
 * Erfolgskriterium 2.2.2
 * Level A
 * Pausieren, Beenden, Ausblenden: Für sich bewegende, blinkende, scrollende oder sich automatisch aktualisierende Informationen gelten folgenden Regeln:
-   * Bewegt, blinkend, rollend: Für bewegte, blinkende oder rollende Informationen, die (a) automatisch gestartet werden, (b) länger als fünf Sekunden dauern und (c) parallel zu anderen Inhalten präsentiert werden, gibt es einen Mechanismus, mit dem Benutzende sie pausieren, beenden oder ausblenden können, es sei denn, die Bewegung, das Blinken bzw. das Rollen ist ein wesentlicher Teil einer Aktivität.
-   * Automatische Aktualisierung: Für alle automatisch aktualisierten Informationen, die (a) automatisch gestartet und (b) parallel zu anderen Inhalten angezeigt werden, gibt es einen Mechanismus, mit dem Benutzende sie pausieren, beenden oder ausblenden oder die Häufigkeit der Aktualisierung steuern können, es sei denn, die automatische Aktualisierung ist ein wesentlicher Teil einer Aktivität.
+   * Verschieben, Blinken, Scrollen: Für alle bewegten, blinkenden oder scrollenden Informationen, die
+      * a) automatisch beginnt,
+      * b) länger als fünf Sekunden dauert und
+      * (C) parallel mit anderen Inhalten präsentiert wird, gibt es einen Mechanismus, mit dem der Benutzer sie anhalten, stoppen oder verbergen kann, es sei denn, die Bewegung, das Blinken oder das Scrollen ist Teil einer Aktivität, in der sie wichtig ist.
+   * Automatische Aktualisierung: Für alle Informationen zur automatischen Aktualisierung, die
+      * a) automatisch beginnt und
+      * (b) parallel zu anderen Inhalten präsentiert wird, gibt es einen Mechanismus, mit dem der Benutzer sie anhalten, stoppen oder ausblenden oder die Häufigkeit der Aktualisierung steuern kann, es sei denn, die automatische Aktualisierung ist Teil einer Aktivität, in der sie wichtig ist.
 
 Beachten Sie Folgendes:
 

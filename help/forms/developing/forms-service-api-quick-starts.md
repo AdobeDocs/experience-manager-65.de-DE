@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1529'
 ht-degree: 56%
 
 ---
@@ -50,7 +50,7 @@ Folgende Kurzanleitungen sind für den Forms-Service verfügbar:
 
 [Schnellstart (SOAP-Modus): Übergeben von Dokumenten an den Forms-Dienst mithilfe von Java](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
-Anwendungslogik, die die Forms-Dienst-API verwendet, wird als Java™-Servlets implementiert. AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API durchgeführt werden und der Verbindungsmodus sollte auf SOAP eingestellt werden.
+Anwendungslogik, die die Forms-Dienst-API verwendet, wird als Java™-Servlets implementiert. AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 
 >[!NOTE]
 >
@@ -1378,7 +1378,7 @@ Im folgenden Code-Beispiel wird ein Formular verarbeitet, das als XML übermitte
 
 >[!NOTE]
 >
-Wenn ein `com.adobe.idp.Document`-Objekt und `org.w3c.dom.Document` im selben Programm verwendet werden, muss `org.w3c.dom.Document` vollständig qualifiziert werden.
+>Wenn ein `com.adobe.idp.Document`-Objekt und `org.w3c.dom.Document` im selben Programm verwendet werden, muss `org.w3c.dom.Document` vollständig qualifiziert werden.
 
 ## Schnellstart (SOAP-Modus): Umgang mit als PDF gesendeten PDF forms mit der Java™-API {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
 

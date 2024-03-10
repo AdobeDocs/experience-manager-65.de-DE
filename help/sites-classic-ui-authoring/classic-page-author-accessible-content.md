@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '9100'
+source-wordcount: '9070'
 ht-degree: 95%
 
 ---
@@ -94,11 +94,11 @@ AEM fügt Ihren Bildern standardmäßig einen **ALT-Text** hinzu. Für die klass
 
 * Datei:
 
-Ein Bild wird von der Festplatte der Benutzerin bzw. des Benutzers hochgeladen. Wenn Sie einer Seite eine Bildkomponente hinzufügen und dann ein Bild von Ihrer Festplatte oder einer anderen Quelle auswählen, lautet der Standardwert für **Alt-Text** `file`. Dieser Wert muss auf der Registerkarte **Erweitert** der Bildeigenschaften geändert werden. Dieser Wert wird wiederum nicht im Feld **Alternativtext** angezeigt, doch wenn der Wert geändert wird, ist der neue Wert im Feld zu sehen.
+  Ein Bild wird von der Festplatte der Benutzerin bzw. des Benutzers hochgeladen. Wenn Sie einer Seite eine Bildkomponente hinzufügen und dann ein Bild von Ihrer Festplatte oder einer anderen Quelle auswählen, lautet der Standardwert für **Alt-Text** `file`. Dieser Wert muss auf der Registerkarte **Erweitert** der Bildeigenschaften geändert werden. Dieser Wert wird wiederum nicht im Feld **Alternativtext** angezeigt, doch wenn der Wert geändert wird, ist der neue Wert im Feld zu sehen.
 
 * Asset:
 
-Ein Bild wird aus dem digitalen Asset-Repository hinzugefügt. Wenn Sie ein Bild aus dem Repository der digitalen Assets auf eine Web-Seite ziehen, werden die Werte für **Titel** und **Alternativtext** für dieses Bild aus den Metadaten des Bildes übernommen.
+  Ein Bild wird aus dem digitalen Asset-Repository hinzugefügt. Wenn Sie ein Bild aus dem Repository der digitalen Assets auf eine Web-Seite ziehen, werden die Werte für **Titel** und **Alternativtext** für dieses Bild aus den Metadaten des Bildes übernommen.
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ Ein Bild wird aus dem digitalen Asset-Repository hinzugefügt. Wenn Sie ein Bild
 Es gibt verschiedene Arten von nichttextlichem Inhalt. Daher hängt der Wert der Textalternative von der Rolle ab, die die Grafik auf der Web-Seite spielt. Zu den allgemeinen Faustregeln gehören:
 
 * Textalternativen sollten kurz sein, doch sollten sie die wesentlichen Informationen, die durch den nichttextlichen Inhalt bereitgestellt werden, eindeutig erfassen.
-* Übermäßig lange Beschreibungen (über 100 Zeichen) sollten vermieden werden. Wenn eine Textalternative mehr Details erfordert:
+* Lange Beschreibungen (mehr als 100 Zeichen) sollten vermieden werden. Wenn eine Textalternative mehr Details erfordert:
 
    * Geben Sie im Alternativtext eine kurze Beschreibung an
    * und fügen Sie irgendwo anders auf der entsprechenden Seite oder auf einer anderen Web-Seite eine längere Beschreibung ein. Verlinken Sie zu dieser separaten Beschreibung, indem Sie das Bild zu einem Link machen, oder indem Sie einen Text-Link neben dem Bild platzieren.
@@ -129,55 +129,55 @@ Bestimmte Arten von nichttextlichem Inhalt, für den Textalternativen erforderli
 
 * Veranschaulichende Fotos:
 
-Hierbei handelt es sich um Bilder von Menschen, Objekten oder Orten. Überlegen Sie, welche Rolle das Foto auf der Seite spielt. Ein geeignetes Textäquivalent ist wahrscheinlich *Foto von [Objekt]*, es kann jedoch vom Text neben dem Bild abhängen.
+  Hierbei handelt es sich um Bilder von Menschen, Objekten oder Orten. Überlegen Sie, welche Rolle das Foto auf der Seite spielt. Ein geeignetes Textäquivalent ist wahrscheinlich *Foto von [Objekt]*, es kann jedoch vom Text neben dem Bild abhängen.
 
 * Symbole:
 
-Kleine Piktogramme (Grafiken), die bestimmte Informationen vermitteln. Sie müssen konsistent auf einer Seite und einer Site verwendet werden. Alle Instanzen des Symbols auf einer Seite oder einer Site sollten dieselbe kurze und knappe Textalternative haben, es sei denn, dies führt zu einer unnötigen Duplizierung von angrenzendem Text.
+  Kleine Piktogramme (Grafiken), die bestimmte Informationen vermitteln. Sie müssen konsistent auf einer Seite und einer Site verwendet werden. Alle Instanzen des Symbols auf einer Seite oder einer Site sollten dieselbe kurze und knappe Textalternative haben, es sei denn, dies führt zu einer unnötigen Duplizierung von angrenzendem Text.
 
 * Diagramme:
 
-Diese stellen normalerweise numerische Daten dar. So könnte als eine Möglichkeit zur Bereitstellung von Alternativtext eine kurze Zusammenfassung der im Diagramm gezeigten Haupttrends eingefügt werden. Fall nötig, können Sie eine detailliertere Beschreibung im Text im Feld **Beschreibung** auf der Registerkarte **Erweiterte Bildeigenschaften** einfügen. Außerdem könnten Sie die Quelldaten an anderer Stelle auf der Seite oder Site als Tabelle zur Verfügung stellen.
+  Diese stellen normalerweise numerische Daten dar. So könnte als eine Möglichkeit zur Bereitstellung von Alternativtext eine kurze Zusammenfassung der im Diagramm gezeigten Haupttrends eingefügt werden. Fall nötig, können Sie eine detailliertere Beschreibung im Text im Feld **Beschreibung** auf der Registerkarte **Erweiterte Bildeigenschaften** einfügen. Außerdem könnten Sie die Quelldaten an anderer Stelle auf der Seite oder Site als Tabelle zur Verfügung stellen.
 
-![Beispiel eines Diagramms. Nachstehend finden Sie den besten Ansatz zur Bereitstellung einer Alternative.](assets/chlimage_1-2a.jpeg)
+  ![Beispiel eines Diagramms. Nachstehend finden Sie den besten Ansatz zur Bereitstellung einer Alternative.](assets/chlimage_1-2a.jpeg)
 
-Zur Bereitstellung einer Alternative für dieses Beispieldiagramm können Sie dem Bild selbst einen knappen `alt`-Text hinzufügen und dann dem Bild eine vollständige Textalternative folgen lassen.
+  Zur Bereitstellung einer Alternative für dieses Beispieldiagramm können Sie dem Bild selbst einen knappen `alt`-Text hinzufügen und dann dem Bild eine vollständige Textalternative folgen lassen.
 
-```xml
-<p><img src="figure1.gif" alt="Figure 1" ></p>
-<p> Figure 1. Distribution of Articles by Journal Category.
-Pie chart: Language=68%, Education=14% and Science=18%.</p>
-```
+  ```xml
+  <p><img src="figure1.gif" alt="Figure 1" ></p>
+  <p> Figure 1. Distribution of Articles by Journal Category.
+  Pie chart: Language=68%, Education=14% and Science=18%.</p>
+  ```
 
->[!NOTE]
->
->Der obige Ausschnitt dient nur zur Veranschaulichung der Reihenfolge. Verwenden Sie die **Bildkomponente** anstatt der oben verwendeten `img src`-Referenz.
+  >[!NOTE]
+  >
+  >Der obige Ausschnitt dient nur zur Veranschaulichung der Reihenfolge. Verwenden Sie die **Bildkomponente** anstatt der oben verwendeten `img src`-Referenz.
 
-In AEM können Sie dies anhand einer Kombination der Felder **Alt-Text** und **Beschreibung** im Konfigurationsdialogfeld des Bildes erreichen, wie in [Erfüllen: Nichttextlicher Inhalt (1.1.1)](#how-to-meet-non-text-content).
+  In AEM können Sie dies anhand einer Kombination der Felder **Alt-Text** und **Beschreibung** im Konfigurationsdialogfeld des Bildes erreichen, wie in [Erfüllen: Nichttextlicher Inhalt (1.1.1)](#how-to-meet-non-text-content).
 
 * Karten, Diagramme, Flussdiagramme:
 
-Für Grafiken mit räumlichen Daten (z. B. um Beziehungen zwischen Objekten oder einem Prozess zu beschreiben), stellen Sie sicher, dass die Schlüsselmeldung im Textformat bereitgestellt wird. Bei Karten ist die Bereitstellung eines Volltextäquivalents wahrscheinlich nicht sinnvoll. Wenn aber eine Karte den Weg zu einem bestimmten Ort zeigen soll, kann der Alternativtext des Kartenbildes kurz *Karte von X* einblenden und dann an einer anderen Stelle auf der Seite oder im Feld **Beschreibung** auf der Registerkarte **Erweitert** der **Bildkomponente** eine Wegbeschreibung zu dem Ort bereitstellen.
+  Für Grafiken mit räumlichen Daten (z. B. um Beziehungen zwischen Objekten oder einem Prozess zu beschreiben), stellen Sie sicher, dass die Schlüsselmeldung im Textformat bereitgestellt wird. Bei Karten ist die Bereitstellung eines Volltextäquivalents wahrscheinlich nicht sinnvoll. Wenn aber eine Karte den Weg zu einem bestimmten Ort zeigen soll, kann der Alternativtext des Kartenbildes kurz *Karte von X* einblenden und dann an einer anderen Stelle auf der Seite oder im Feld **Beschreibung** auf der Registerkarte **Erweitert** der **Bildkomponente** eine Wegbeschreibung zu dem Ort bereitstellen.
 
 * CAPTCHAs:
 
-Ein CAPTCHA ist ein *vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen*. Es handelt sich dabei um eine Sicherheitsprüfung, die auf Web-Seiten verwendet wird, um Menschen von böswilliger Software zu unterscheiden. Dies kann jedoch die Barrierefreiheit einschränken. Hierbei handelt es sich um Bilder, bei denen Benutzende beschreiben müssen, was sie sehen, um einen Sicherheitstest bestehen zu können. Es ist nicht möglich, eine Textalternative für so ein Bild bereitzustellen. Daher müssen Sie stattdessen alternative, nichtgrafische Lösungen in Betracht ziehen.
+  Ein CAPTCHA ist ein *vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen*. Es handelt sich dabei um eine Sicherheitsprüfung, die auf Web-Seiten verwendet wird, um Menschen von böswilliger Software zu unterscheiden. Dies kann jedoch die Barrierefreiheit einschränken. Hierbei handelt es sich um Bilder, bei denen Benutzende beschreiben müssen, was sie sehen, um einen Sicherheitstest bestehen zu können. Es ist nicht möglich, eine Textalternative für so ein Bild bereitzustellen. Daher müssen Sie stattdessen alternative, nichtgrafische Lösungen in Betracht ziehen.
 
-Das W3C bietet verschiedene Vorschläge, wie z. B. die folgenden. Jeder dieser Ansätze hat seine eigenen Vorteile und Nachteile.
+  Das W3C bietet verschiedene Vorschläge, wie z. B. die folgenden. Jeder dieser Ansätze hat seine eigenen Vorteile und Nachteile.
 
-    * Logische Puzzles
-    * Verwendung von Tonausgabe anstelle von Bildern
-    * Eingeschränkte Benutzerkonten und Spam-Filter.
+   * Logische Rätsel
+   * Verwendung von Tonausgabe anstelle von Bildern
+   * Eingeschränkte Benutzerkonten und Spam-Filter
 
 * Hintergrundbilder:
 
-Diese Bilder werden anhand von Cascading Style Sheets (CSS) statt HTML erstellt. Dies bedeutet, dass es nicht möglich ist, einen Wert für Alternativtext anzugeben. Daher sollten Hintergrundbilder keine wichtigen textlichen Informationen angeben. Falls sie es doch tun, müssen diese Informationen auch im Text der Seite vorhanden sein.
+  Diese Bilder werden anhand von Cascading Style Sheets (CSS) statt HTML erstellt. Dies bedeutet, dass es nicht möglich ist, einen Wert für Alternativtext anzugeben. Daher sollten Hintergrundbilder keine wichtigen textlichen Informationen angeben. Falls sie es doch tun, müssen diese Informationen auch im Text der Seite vorhanden sein.
 
-Es ist jedoch wichtig, dass ein alternativer Hintergrund angezeigt wird, wenn das Bild nicht angezeigt werden kann.
+  Es ist jedoch wichtig, dass ein alternativer Hintergrund angezeigt wird, wenn das Bild nicht angezeigt werden kann.
 
->[!NOTE]
->
->Es sollte ein angemessenes Kontrastniveau zwischen dem Hintergrund und dem Vordergrundtext vorhanden sein. Dieser Kontrast wird im Abschnitt [Kontrast (Minimum) (1.4.3)](#contrast-minimum) detaillierter behandelt.
+  >[!NOTE]
+  >
+  >Es sollte ein angemessenes Kontrastniveau zwischen dem Hintergrund und dem Vordergrundtext vorhanden sein. Dieser Kontrast wird im Abschnitt [Kontrast (Minimum) (1.4.3)](#contrast-minimum) detaillierter behandelt.
 
 #### Weitere Informationen: Nichttextlicher Inhalt (1.1.1) {#more-information-non-text-content}
 
@@ -219,7 +219,7 @@ Wenn Sie diese Informationen in einem anderen Format bereitstellen, z. B. Text 
 
    * Stellen Sie direkt vor oder nach dem Inhalt einen Link zu einem Texttranskript des Audioinhalts bereit.
 
-  Das Transkript sollte eine HTML-Seite mit einem Textäquivalent zu allen gesprochenen und wichtigen nicht-gesprochenen Inhalten sein. Es sollte auch angeben, wer spricht, eine Beschreibung der Szene, Stimmausdrücke und eine Beschreibung anderer wichtiger Audioinhalte.
+     Das Transkript sollte eine HTML-Seite mit einem Textäquivalent zu allen gesprochenen und wichtigen nicht-gesprochenen Inhalten sein. Es sollte auch angeben, wer spricht, eine Beschreibung der Szene, Stimmausdrücke und eine Beschreibung anderer wichtiger Audioinhalte.
 
 * Wenn der Inhalt eine Animation oder eine Videoaufzeichnung ohne Audio ist:
 
@@ -356,7 +356,7 @@ Befolgen Sie die Anweisungen für [Audiobeschreibung oder Medienalternative (auf
 
 ### Anpassbar (1.3) {#adaptable}
 
-[Richtlinie 1.3 Anpassbar: Erstellen Sie Inhalte, die auf unterschiedliche Weise präsentiert werden können (z. B. einfacheres Layout), ohne Informationen oder Struktur zu verlieren.](https://www.w3.org/TR/WCAG20/#content-structure-separation)
+[Richtlinie 1.3 Anpassbar: Erstellen Sie Inhalte, die auf unterschiedliche Weise präsentiert werden können (z. B. einfacheres Layout), ohne Informationen oder Struktur zu verlieren.](https://www.w3.org/TR/WCAG20/#content-structure-separation)
 
 Diese Richtlinie deckt die Anforderungen ab, die zur Unterstützung der folgenden Personen erforderlich sind:
 
@@ -388,122 +388,122 @@ Sie können folgendermaßen sicherstellen, dass Ihre Web-Seiten die entsprechend
 
 * **Verwendung von Überschriften:**
 
-Sofern Sie die Funktionen für Barrierefreiheit des RTE aktiviert haben (siehe [AEM und Barrierefreiheit](/help/sites-administering/rte-accessible-content.md)), bietet AEM drei Ebenen für Seitenüberschriften. Sie können diese verwenden, um Abschnitte und Unterabschnitte des Inhalts zu identifizieren. Überschrift 1 ist die höchste Überschriftenstufe und Stufe 3 die niedrigste. Der Systemadministrator kann das System so konfigurieren, dass mehr Überschriftenstufen verwendet werden können.
+  Sofern Sie die Funktionen für Barrierefreiheit des RTE aktiviert haben (siehe [AEM und Barrierefreiheit](/help/sites-administering/rte-accessible-content.md)), bietet AEM drei Ebenen für Seitenüberschriften. Sie können diese verwenden, um Abschnitte und Unterabschnitte des Inhalts zu identifizieren. Überschrift 1 ist die höchste Überschriftenstufe und Stufe 3 die niedrigste. Der Systemadministrator kann das System so konfigurieren, dass mehr Überschriftenstufen verwendet werden können.
 
-Im folgenden Bild ist ein Beispiel der verschiedenen Überschriftentypen zu sehen.
+  Im folgenden Bild ist ein Beispiel der verschiedenen Überschriftentypen zu sehen.
 
-![Die Überschriften H1 bis H3 werden in der Dropdown-Auswahl angezeigt (klassische Benutzeroberfläche).](assets/chlimage_1-19a.png)
+  ![Die Überschriften H1 bis H3 werden in der Dropdown-Auswahl angezeigt (klassische Benutzeroberfläche).](assets/chlimage_1-19a.png)
 
 * **Hervorgehobener Text**:
 
-Verwenden Sie das Element &lt;strong> oder &lt;em>, um eine Hervorhebung anzugeben. Verwenden Sie keine Überschriften zum Hervorheben von Text in Absätzen.
+  Verwenden Sie das Element &lt;strong> oder &lt;em>, um eine Hervorhebung anzugeben. Verwenden Sie keine Überschriften zum Hervorheben von Text in Absätzen.
 
-    * Markieren Sie den Text, den Sie hervorheben möchten;
-    * Klicken Sie auf das **B**-Symbol (für &lt;strong>) oder das **I**-Symbol (für &lt;em>), das im Fenster **Eigenschaften** angezeigt wird (stellen Sie sicher, dass HTML ausgewählt ist).
+   * Markieren Sie den Text, den Sie hervorheben möchten.
+   * Klicken Sie auf das Symbol **B** (für &lt;strong>) oder das Symbol **I** (für &lt;em>), die im Bedienfeld **Eigenschaften** angezeigt werden (vergewissern Sie sich, dass HTML ausgewählt ist).
 
->[!NOTE]
->
->RTE ist in einer Standardinstallation von AEM wie folgt eingerichtet:
->
->* &lt;b> für &lt;strong>
-* &lt;i> für &lt;em>
->
-Sie haben die gleiche Wirkung, doch &lt;strong> und &lt;em> sollten bevorzugt werden, weil sie semantisch korrekt für HTML sind. Bei der Entwicklung Ihrer Projektinstanz kann Ihr Entwicklungs-Team den RTE so konfigurieren, dass er &lt;strong> und &lt;em> (anstelle von &lt;b> und &lt;i>) verwendet.
+  >[!NOTE]
+  >
+  >RTE ist in einer Standardinstallation von AEM wie folgt eingerichtet:
+  >
+  >* &lt;b> für &lt;strong>
+  * &lt;i> für &lt;em>
+  >
+  Sie haben die gleiche Wirkung, doch &lt;strong> und &lt;em> sollten bevorzugt werden, weil sie semantisch korrekt für HTML sind. Bei der Entwicklung Ihrer Projektinstanz kann Ihr Entwicklungs-Team den RTE so konfigurieren, dass er &lt;strong> und &lt;em> (anstelle von &lt;b> und &lt;i>) verwendet.
 
 * **Listen verwenden**: Mit HTML können Sie drei verschiedene Arten von Listen angeben:
 
    * Das Element `<ul>` wird für *nicht geordnete* Listen (Aufzählungslisten) verwendet. Einzelne Listenelemente werden mit dem Element `<li>` gekennzeichnet.
 
-  Verwenden Sie in RTE das Symbol **Aufzählung**.
+     Verwenden Sie in RTE das Symbol **Aufzählung**.
 
    * Das Element `<ol>` wird für *nummerierte* Listen verwendet. Einzelne Listenelemente werden mit dem Element `<li>` gekennzeichnet.
 
-  Verwenden Sie in RTE das Symbol **Nummerierte Liste**.
+     Verwenden Sie in RTE das Symbol **Nummerierte Liste**.
 
-Wenn Sie vorhandene Inhalte in einen bestimmten Listentyp ändern möchten, markieren Sie den entsprechenden Text und wählen Sie den entsprechenden Listentyp aus. Wie im vorherigen Beispiel, das zeigt, wie Absatztext eingegeben wird, werden die entsprechenden Listenelemente automatisch zu Ihrem HTML hinzugefügt. Sie können dies jedoch in der Ansicht der Quellbearbeitung anzeigen.
+  Wenn Sie vorhandene Inhalte in einen bestimmten Listentyp ändern möchten, markieren Sie den entsprechenden Text und wählen Sie den entsprechenden Listentyp aus. Wie im vorherigen Beispiel, das zeigt, wie Absatztext eingegeben wird, werden die entsprechenden Listenelemente automatisch zu Ihrem HTML hinzugefügt. Sie können dies jedoch in der Ansicht der Quellbearbeitung anzeigen.
 
->[!NOTE]
->
-Das Element `<dl>` wird vom RTE nicht unterstützt.
+  >[!NOTE]
+  >
+  Das Element `<dl>` wird vom RTE nicht unterstützt.
 
 * **Verwenden von Tabellen**:
 
-Datentabellen müssen mit HTML-Tabellenelementen gekennzeichnet sein:
+  Datentabellen müssen mit HTML-Tabellenelementen gekennzeichnet sein:
 
-    * ein Element `&lt;table>`
-    * ein Element `&lt;tr>` für jede Zeile der Tabelle
-    * ein Element `&lt;th>` für jede Zeilen- und Spaltenüberschrift
-    * ein Element `&lt;td>` für jede Datenzelle
+   * Ein Element `<table>`
+   * Ein Element `<tr>` für jede Tabellenzeile
+   * Ein Element `<th>` für jede Zeilen- und Spaltenüberschrift
+   * Ein Element `<td>` für jede Datenzelle
 
->[!NOTE]
->
-Tabellen sollten mit der Komponente **Tabelle** umgesetzt werden. Obwohl Tabellen in der Textkomponente erstellt werden können, wird dieses Verfahren nicht empfohlen.
+  >[!NOTE]
+  >
+  Tabellen sollten mit der Komponente **Tabelle** umgesetzt werden. Obwohl Tabellen in der Textkomponente erstellt werden können, wird dieses Verfahren nicht empfohlen.
 
-Barrierefreie Tabellen verwenden außerdem die folgenden Elemente und Attribute:
+  Barrierefreie Tabellen verwenden außerdem die folgenden Elemente und Attribute:
 
-    * Das Element `&lt;caption>` wird verwendet, um eine sichtbare Beschriftung für die Tabelle zu liefern. Beschriftungen werden standardmäßig zentriert über der Tabelle angezeigt, können jedoch mithilfe von CSS entsprechend positioniert werden. Die Beschriftung wird programmgesteuert mit der Tabelle verknüpft. Daher ist sie eine nützliche Methode, um eine Einführung in Inhalte zu bieten.
-    * Das Element `&lt;h3 class=&quot;summary&quot;>` hilft nicht sehenden Benutzerinnen und Benutzern, die in einer Tabelle dargestellten Informationen leichter zu verstehen, indem es eine Zusammenfassung dessen liefert, was sehende Menschen sehen können. Dies ist besonders nützlich bei komplexen oder unkonventionellen Tabellen-Layouts (dieses Attribut wird nicht im Browser angezeigt, sondern nur für Hilfstechnologien ausgelesen).
-    * Das Attribut `scope` des Elements `&lt;th>` wird verwendet, um anzugeben, ob eine Zelle eine Überschrift für eine bestimmte Zeile oder eine bestimmte Spalte darstellt. Auf ähnliche Weise können die Überschrift und ID-Attribute in komplexen Tabellen verwendet werden, bei denen Datenzellen mit einer oder mehreren Überschriften verknüpft sein können.
+   * Das Element `<caption>` wird verwendet, um für die Tabelle eine sichtbare Tabellenbeschriftung bereitzustellen. Beschriftungen werden standardmäßig zentriert über der Tabelle angezeigt, können jedoch mithilfe von CSS entsprechend positioniert werden. Die Beschriftung wird programmgesteuert mit der Tabelle verknüpft. Daher ist sie eine nützliche Methode, um eine Einführung in Inhalte zu bieten.
+   * Das Element `<h3 class="summary">` unterstützt blinde Benutzer dabei, die in einer Tabelle dargestellten Informationen zu verstehen, weil ihnen damit eine Inhaltsangabe dessen geboten wird, was sehende Benutzer sehen können. Dies ist besonders nützlich bei komplexen oder unkonventionellen Tabellen-Layouts (dieses Attribut wird nicht im Browser angezeigt, sondern nur für Hilfstechnologien ausgelesen).
+   * Das Attribut `scope` des Elements `<th>` wird verwendet, um anzugeben, ob eine Zelle eine Überschrift für eine bestimmte Zeile oder eine bestimmte Spalte darstellt. Auf ähnliche Weise können die Überschrift und ID-Attribute in komplexen Tabellen verwendet werden, bei denen Datenzellen mit einer oder mehreren Überschriften verknüpft sein können.
 
->[!NOTE]
->
-Diese Elemente und Attribute sind standardmäßig nicht direkt verfügbar, doch Systemadmins können Unterstützung für diese Werte im Dialogfeld **Tabelleneigenschaften** hinzufügen (siehe [Hinzufügen von Unterstützung für zusätzliche HTML-Elemente und -Attribute](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+  >[!NOTE]
+  >
+  Diese Elemente und Attribute sind standardmäßig nicht direkt verfügbar, doch Systemadmins können Unterstützung für diese Werte im Dialogfeld **Tabelleneigenschaften** hinzufügen (siehe [Hinzufügen von Unterstützung für zusätzliche HTML-Elemente und -Attribute](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
-Beim Hinzufügen einer **Tabelle** können Sie die **Tabelleneigenschaften** über das Dialogfeld konfigurieren.
+  Beim Hinzufügen einer **Tabelle** können Sie die **Tabelleneigenschaften** über das Dialogfeld konfigurieren.
 
-    * eine geeignete **Beschriftung**.
-    * Entfernen Sie idealerweise alle Standardwerte für **Breite**, **Höhe**, **Rahmen**, **Zellenauffüllung**, **Zellenabstand**, da diese Eigenschaften in einem globalen Stylesheet festgelegt werden können.
+   * eine geeignete **Beschriftung**.
+   * Im Idealfall entfernen Sie alle Standardwerte für **Breite**, **Höhe**, **Rand**, **Zellauffüllung**, **Zellabstand**, da diese Eigenschaften in einem globalen Stylesheet festgelegt werden können.
 
-![Dialogfeld „Tabelleneigenschaften“](assets/chlimage_1-20a.png)
+  ![Dialogfeld „Tabelleneigenschaften“](assets/chlimage_1-20a.png)
 
-Anschließend können Sie im Dialogfeld **Zelleneigenschaften** auswählen, ob die Zelle eine Daten- oder Überschriftzelle ist und ob im Fall einer Überschriftzelle sich diese auf eine Zeile oder Spalte oder beides bezieht:
+  Anschließend können Sie im Dialogfeld **Zelleneigenschaften** auswählen, ob die Zelle eine Daten- oder Überschriftzelle ist und ob im Fall einer Überschriftzelle sich diese auf eine Zeile oder Spalte oder beides bezieht:
 
-![Dialogfeld „Zelleneigenschaften“; Festlegen einer Zeile (normalerweise die erste Zeile) als Überschriftzeile.](assets/chlimage_1-21a.png)
+  ![Dialogfeld „Zelleneigenschaften“; Festlegen einer Zeile (normalerweise die erste Zeile) als Überschriftzeile.](assets/chlimage_1-21a.png)
 
 * **Komplexe Datentabellen:**
 
-In einigen Fällen, in denen komplexe Tabellen mit zwei oder mehr Überschriftenebenen vorhanden sind, reicht das normale Dialogfeld „Tabelleneigenschaften“ nicht aus, um alle benötigten Strukturinformationen anzugeben. Für diese Art von komplexen Tabellen müssen direkte Beziehungen zwischen den Überschriften und den zugehörigen Zellen mithilfe der Attribute **Überschrift** und **ID** hergestellt werden. Beispielsweise werden in der Tabelle unten Überschriften und IDs zugeordnet, um eine programmgesteuerte Verbindung für Benutzer von Hilfstechnologien herzustellen.
+  In einigen Fällen, in denen komplexe Tabellen mit zwei oder mehr Überschriftenebenen vorhanden sind, reicht das normale Dialogfeld „Tabelleneigenschaften“ nicht aus, um alle benötigten Strukturinformationen anzugeben. Für diese Art von komplexen Tabellen müssen direkte Beziehungen zwischen den Überschriften und den zugehörigen Zellen mithilfe der Attribute **Überschrift** und **ID** hergestellt werden. Beispielsweise werden in der Tabelle unten Überschriften und IDs zugeordnet, um eine programmgesteuerte Verbindung für Benutzer von Hilfstechnologien herzustellen.
 
->[!NOTE]
->
-Das ID-Attribut ist in einer vorkonfigurierten Installation nicht verfügbar. Es kann durch die Konfiguration von HTML-Regeln und des Serialisierungsprogramms im RTE aktiviert werden.
+  >[!NOTE]
+  >
+  Das ID-Attribut ist in einer vorkonfigurierten Installation nicht verfügbar. Es kann durch die Konfiguration von HTML-Regeln und des Serialisierungsprogramms im RTE aktiviert werden.
 
->[!NOTE]
->
-Tabellen sollten mit der Komponente **Tabelle** umgesetzt werden. Obwohl Tabellen in der Textkomponente erstellt werden können, wird dieses Verfahren nicht empfohlen.
+  >[!NOTE]
+  >
+  Tabellen sollten mit der Komponente **Tabelle** umgesetzt werden. Obwohl Tabellen in der Textkomponente erstellt werden können, wird dieses Verfahren nicht empfohlen.
 
-```xml
-<table>
-   <tr>
-     <th rowspan="2" id="h">Homework</th>
-     <th colspan="3" id="e">Exams</th>
-     <th colspan="3" id="p">Projects</th>
-   </tr>
-   <tr>
-     <th id="e1" headers="e">1</th>
-     <th id="e2" headers="e">2</th>
-     <th id="ef" headers="e">Final</th>
-     <th id="p1" headers="p">1</th>
-     <th id="p2" headers="p">2</th>
-     <th id="pf" headers="p">Final</th>
-   </tr>
-   <tr>
-    <td headers="h">15%</td>
-    <td headers="e e1">15%</td>
-    <td headers="e e2">15%</td>
-    <td headers="e ef">20%</td>
-    <td headers="p p1">10%</td>
-    <td headers="p p2">10%</td>
-    <td headers="p pf">15%</td>
-   </tr>
-  </table>
-```
+  ```xml
+  <table>
+     <tr>
+       <th rowspan="2" id="h">Homework</th>
+       <th colspan="3" id="e">Exams</th>
+       <th colspan="3" id="p">Projects</th>
+     </tr>
+     <tr>
+       <th id="e1" headers="e">1</th>
+       <th id="e2" headers="e">2</th>
+       <th id="ef" headers="e">Final</th>
+       <th id="p1" headers="p">1</th>
+       <th id="p2" headers="p">2</th>
+       <th id="pf" headers="p">Final</th>
+     </tr>
+     <tr>
+      <td headers="h">15%</td>
+      <td headers="e e1">15%</td>
+      <td headers="e e2">15%</td>
+      <td headers="e ef">20%</td>
+      <td headers="p p1">10%</td>
+      <td headers="p p2">10%</td>
+      <td headers="p pf">15%</td>
+     </tr>
+    </table>
+  ```
 
-Um dies in AEM zu erreichen, müssen Sie das Markup hinzufügen, indem Sie direkt den Modus zur Bearbeitung des Quell-Codes verwenden.
+  Um dies in AEM zu erreichen, müssen Sie das Markup hinzufügen, indem Sie direkt den Modus zur Bearbeitung des Quell-Codes verwenden.
 
->[!NOTE]
->
-Diese Funktion ist in einer Standardinstallation nicht sofort verfügbar. Sie erfordert die Konfiguration des RTE, HTML-Regeln und ein Serialisierungsprogramm.
+  >[!NOTE]
+  >
+  Diese Funktion ist in einer Standardinstallation nicht sofort verfügbar. Sie erfordert die Konfiguration des RTE, HTML-Regeln und ein Serialisierungsprogramm.
 
 #### Weitere Informationen: Informationen und Beziehungen (1.3.1) {#more-information-info-and-relationships}
 
@@ -675,8 +675,13 @@ Wenn Bilder von Text verwendet werden müssen, nutzen Sie CSS, um die Bilder von
 * Level A
 * Pausieren, Beenden, Ausblenden: Für sich bewegende, blinkende, scrollende oder sich automatisch aktualisierende Informationen gelten folgenden Regeln:
 
-   * Bewegt, blinkend, rollend: Für bewegte, blinkende oder rollende Informationen, die (a) automatisch gestartet werden, (b) länger als fünf Sekunden dauern und (c) parallel zu anderen Inhalten präsentiert werden, gibt es einen Mechanismus, mit dem Benutzende sie pausieren, beenden oder ausblenden können, es sei denn, die Bewegung, das Blinken bzw. das Rollen ist ein wesentlicher Teil einer Aktivität.
-   * Automatische Aktualisierung: Für alle automatisch aktualisierten Informationen, die (a) automatisch gestartet und (b) parallel zu anderen Inhalten angezeigt werden, gibt es einen Mechanismus, mit dem Benutzende sie pausieren, beenden oder ausblenden oder die Häufigkeit der Aktualisierung steuern können, es sei denn, die automatische Aktualisierung ist ein wesentlicher Teil einer Aktivität.
+   * Verschieben, Blinken, Scrollen: Für alle bewegten, blinkenden oder scrollenden Informationen, die
+      * a) automatisch beginnt,
+      * b) länger als fünf Sekunden dauert und
+      * (c) parallel mit anderen Inhalten präsentiert wird, gibt es einen Mechanismus, mit dem der Benutzer sie anhalten, stoppen oder verbergen kann, es sei denn, die Bewegung, das Blinken oder das Scrollen ist Teil einer Aktivität, in der sie unerlässlich ist.
+   * Automatische Aktualisierung: Für alle Informationen zur automatischen Aktualisierung, die
+      * a) automatisch beginnt und
+      * (b) parallel mit anderen Inhalten präsentiert wird, gibt es einen Mechanismus, mit dem der Benutzer sie anhalten, stoppen oder ausblenden oder die Häufigkeit der Aktualisierung steuern kann, es sei denn, die automatische Aktualisierung ist Teil einer Aktivität, in der sie wichtig ist.
 
 Beachten Sie Folgendes:
 
@@ -779,7 +784,7 @@ Stellen Sie vor allem sicher, dass der Link-Text den Zweck eines Links eindeutig
    * Text: Abendkurse im Herbst 2010 – Details.
    * Grund: Durch eine kleine Anpassung des Textes und der Position des Linkelements lässt sich der Link-Text verbessern:
 
-Links sollten auf allen Seiten konsistent formuliert sein, insbesondere für Navigationsleisten. Wenn beispielsweise ein Link zu einer bestimmten Seite **Veröffentlichungen** auf einer Seite verwenden Sie diesen Text auf anderen Seiten, um Konsistenz zu gewährleisten.
+Links sollten auf allen Seiten konsistent formuliert sein, insbesondere für Navigationsleisten. Wenn zum Beispiel ein Link zu einer bestimmten Seite auf einer Seite **Veröffentlichungen** heißt, verwenden Sie diesen Text auf anderen Seiten, um Konsistenz zu gewährleisten.
 
 Zum Zeitpunkt des Schreibens gibt es jedoch einige Probleme im Zusammenhang mit der Verwendung von Titeln:
 
@@ -789,7 +794,7 @@ Zum Zeitpunkt des Schreibens gibt es jedoch einige Probleme im Zusammenhang mit 
 
 Das Title-Attribut kann also genutzt werden, um zusätzlichen Kontext zu einem Link bereitzustellen, Sie sollten aber diese Einschränkungen bedenken und es daher nicht als Alternative für einen geeigneten Link-Text nutzen.
 
-Wenn der Link aus einem Bild besteht, stellen Sie sicher, dass der alternative Text für das Bild das Ziel des Links beschreibt. Wenn beispielsweise ein Bild einer virtuellen Bibliothek als Link zu den Publikationen einer Person festgelegt wird, sollte der alternative Text wie folgt lauten: **Publikationen von John Smith** und nicht **Bücherregal**.
+Wenn der Link aus einem Bild besteht, stellen Sie sicher, dass der alternative Text für das Bild das Ziel des Links beschreibt. Wenn beispielsweise ein Bild einer virtuellen Bibliothek als Link zu den Publikationen einer Person festgelegt wird, sollte der alternative Text **Publikationen von Hans Mustermann** und nicht **Bücherregal** lauten.
 
 Wenn der Link-Anker alternativ Text enthält, der den Zweck des Links zusätzlich zum Bildelement beschreibt (und der Text daher neben dem Bild angezeigt wird), verwenden Sie ein leeres Alternativattribut für das Bild:
 
@@ -846,11 +851,11 @@ Um dieses Erfolgskriterium zu erfüllen, kann die Standardsprache einer Web-Seit
 
 * Wenn eine Seite z. B. in britischem Englisch verfasst ist, sollte das Element `<html>` wie folgt angegeben werden:
 
-`<html lang = "en-gb">`
+  `<html lang = "en-gb">`
 
 * Wenn eine Seite hingegen als Seite in US-Englisch gerendert werden soll, ist folgende Angabe erforderlich:
 
-`<html lang = "en-us">`
+  `<html lang = "en-us">`
 
 In AEM wird die Standardsprache einer Seite bei ihrer Erstellung festgelegt, kann aber auch bei ihrer Bearbeitung geändert werden. Öffnen Sie dazu den **Sidekick** > Registerkarte **Seite** > **Seiteneigenschaften…** > Registerkarte **Erweitert**.
 
@@ -955,11 +960,11 @@ Die Positionierung von Kennzeichnungen ist ebenfalls wichtig, da sie beim Suchen
 
 * Kontrollkästchen oder Optionsfelder:
 
-Beschriftungen werden direkt rechts neben dem Feld positioniert.
+  Beschriftungen werden direkt rechts neben dem Feld positioniert.
 
 * Alle anderen Formularkomponenten (z. B. Textfelder, Kombinationsfelder):
 
-Kennzeichnungen werden entweder direkt über dem Feld oder direkt links vom Feld platziert.
+  Kennzeichnungen werden entweder direkt über dem Feld oder direkt links vom Feld platziert.
 
 In einfachen Formularen mit eingeschränkter Funktionalität müssen Sie eine `Submit` -Schaltfläche kann als Beschriftung für das angrenzende Feld dienen (z. B. `Search`). Dies ist in Situationen nützlich, in denen wenig Platz für die Beschriftung vorhanden ist.
 

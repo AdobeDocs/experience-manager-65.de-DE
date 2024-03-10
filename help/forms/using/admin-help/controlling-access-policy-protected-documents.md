@@ -7,7 +7,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '2167'
 ht-degree: 23%
@@ -94,7 +94,7 @@ Wenn Sie Dokumentzugriffsberechtigungen sperren oder reaktivieren, wird die Änd
 
 * Wenn das Dokument online und geschlossen ist, wird die Änderung wirksam, wenn sich der Empfänger das nächste Mal mit Document Security durch Öffnen eines richtliniengeschützten Dokuments synchronisiert.
 * Wenn das Dokument online und geöffnet ist, wird die Änderung beim Schließen des Dokuments durch den Empfänger wirksam.
-* Wenn das Dokument offline ist (ohne Internetverbindung verwendet wird, z. B. auf einem Laptop), wird die Änderung bei der nächsten Synchronisierung des Empfängers mit Document Security wirksam.
+* Wenn das Dokument offline ist (d. h. ohne Internetverbindung verwendet wird, z. B. auf einem Laptop), wird die Änderung bei der nächsten Synchronisation des Empfängers mit Document Security wirksam.
 
 **Zugriff auf ein richtliniengeschütztes Dokument sperren**
 

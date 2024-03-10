@@ -7,10 +7,10 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '1954'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -247,7 +247,7 @@ Um die neue Konfiguration zum Repository hinzuzufügen, gehen Sie folgendermaße
    * Typ: entsprechend 
    * Wert: nach Bedarf.
 
-   Sie müssen nur Eigenschaften für die Parameter erstellen, die Sie konfigurieren möchten. Die anderen verwenden weiterhin die von AEM festgelegten Standardwerte.
+   Sie dürfen nur Eigenschaften für die Parameter erstellen, die Sie konfigurieren möchten, andere verwenden weiterhin die von AEM festgelegten Standardwerte.
 
 1. Speichern Sie alle Änderungen.
 

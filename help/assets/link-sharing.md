@@ -6,10 +6,10 @@ role: User
 feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 97%
+source-wordcount: '1026'
+ht-degree: 95%
 
 ---
 
@@ -58,7 +58,7 @@ Die URL für Assets, die Sie freigeben möchten, generieren Sie im Dialogfeld [!
 
 1. Wenn Benutzerinnen und Benutzer das Original-Asset herunterladen können sollen, wählen Sie **[!UICONTROL Download der Originaldatei zulassen]** aus. Wenn Benutzerinnen und Benutzer nur die Ausgabedarstellungen der freigegebenen Assets herunterladen können sollen, wählen Sie **[!UICONTROL Herunterladen von Ausgabeformaten der Datei zulassen]** aus.
 
-1. Klicken Sie auf **[!UICONTROL Freigeben]**. Eine Meldung bestätigt, dass der Link per E-Mail für die jeweiligen Benutzerinnen und Benutzer freigegeben wurde.
+1. Klicken Sie auf **[!UICONTROL Freigeben]**. Eine Meldung bestätigt, dass der Link per E-Mail für die Benutzer freigegeben wurde.
 
 1. Um das freigegebene Asset anzeigen, klicken Sie auf den Link in der E-Mail, die den Benutzerinnen und Benutzern gesendet wurde. Um eine Vorschau des Assets zu generieren, klicken Sie auf das freigegebene Asset. Um die Vorschau zu schließen, klicken Sie auf **[!UICONTROL Zurück]**. Wenn Sie einen Ordner freigegeben haben, klicken Sie auf **[!UICONTROL Übergeordneter Ordner]**, um zum übergeordneten Ordner zurückzukehren.
 

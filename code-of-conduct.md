@@ -1,8 +1,8 @@
 ---
-source-git-commit: 2a97935a81cf9c0a1a832dd27b62d388805863e0
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 95%
+source-wordcount: '424'
+ht-degree: 87%
 
 ---
 # Adobe-Verhaltenskodex
@@ -37,7 +37,7 @@ Projektverantwortliche haben das Recht und die Verantwortung, Kommentare, Verpfl
 
 ## Anwendungsbereich
 
-Dieser Verhaltenskodex gilt sowohl innerhalb der Projektbereiche als auch in öffentlichen Räumen, wenn eine Person das Projekt oder die Community repräsentiert. Beispiele für das Repräsentieren eines Projekts oder einer Community sind die Verwendung einer offiziellen E-Mail-Adresse des Projekts, die Veröffentlichung über ein offizielles Social-Media-Konto oder das Handeln als benannter Vertreter bei einem Online- oder Offline-Ereignis. Die Repräsentation eines Projekts kann von den Projektverantwortlichen weiter definiert und geklärt werden.
+Dieser Verhaltenskodex gilt sowohl innerhalb der Projektbereiche als auch in öffentlichen Räumen, wenn eine Person das Projekt oder die Community repräsentiert. Beispiele für die Repräsentation eines Projekts oder einer Community sind die Verwendung einer offiziellen Projekt-E-Mail-Adresse, die Veröffentlichung über ein offizielles Social-Media-Konto oder die Tätigkeit als ernannter Vertreter bei einer Online- oder Offline-Veranstaltung. Die Repräsentation eines Projekts kann von den Projektverantwortlichen weiter definiert und geklärt werden.
 
 ## Durchsetzung
 

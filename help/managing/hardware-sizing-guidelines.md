@@ -7,10 +7,10 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '2835'
-ht-degree: 45%
+source-wordcount: '2833'
+ht-degree: 44%
 
 ---
 
@@ -119,7 +119,8 @@ Für Benchmarking-Zwecke hat Adobe einige Benchmarktests für eigenständige Aut
 
 * **Benchmarktest 1** Berechnung des maximalen Durchsatzes eines Lastprofils, bei dem Benutzer eine einfache Erstellung einer Seite auf einer Grundlast von 300 vorhandenen Seiten durchführen, die alle von ähnlicher Art sind. Die Schritte bestanden darin, sich bei der Website anzumelden, eine Seite mit einer SWF und Bild/Text zu erstellen, eine Tag-Cloud hinzuzufügen und die Seite zu aktivieren.
 
-   * **Ergebnis** Der maximale Durchsatz für eine einfache Seitenerstellung wie oben beschrieben (als eine Transaktion betrachtet) betrug 1730 Transaktionen/Stunde.
+   * **Ergebnis**
+Der maximale Durchsatz für eine einfache Seitenerstellung, wie oben beschrieben (als eine Transaktion betrachtet), beträgt 1730 Transaktionen/Stunde.
 
 * **Benchmarktest 2** Berechnung des maximalen Durchsatzes, wenn das Lastprofil eine Mischung aus frischer Seitenerstellung (10 %), Änderung einer bestehenden Seite (80 %) und anschließender Änderung einer Seite in Folge (10 %) aufweist. Die Komplexität der Seiten bleibt gleich wie im Profil des Benchmarktests 1. Die grundlegende Änderung der Seite erfolgt durch Hinzufügen eines Bildes und Ändern des Textinhalts. Auch hier wurde die Übung auf einer Grundlast von 300 Seiten mit derselben Komplexität wie im Benchmarktest 1 definiert durchgeführt.
 
@@ -144,7 +145,7 @@ In solchen Fällen führte Adobe Benchmarktests auf einem Cluster mit freigegebe
 * **Benchmarktest 1a** Mit einem aktiv-aktiven Shared-Nothing-Cluster von 2 Autoreninstanzen berechnen Sie den maximalen Durchsatz mit einem Lastprofil, bei dem Benutzer eine einfache Seitenübung auf einer Grundlast von 300 vorhandenen Seiten durchführen, die alle von ähnlicher Art sind.
 
    * **Ergebnis**
-Der maximale Durchsatz für eine einfache Seitenerstellung, z. B. für eine Transaktion, beträgt 2016 Transaktionen/Stunde. Dies ist eine Steigerung von ca. 16 % im Vergleich zu einer eigenständigen Autoreninstanz für den gleichen Benchmarktest.
+Der maximale Durchsatz für eine einfache Seitenerstellungs-Übung, wie oben beschrieben (als eine Transaktion betrachtet), beträgt 2016 Transaktionen/Stunde. Dies ist eine Steigerung von ca. 16 % im Vergleich zu einer eigenständigen Autoreninstanz für den gleichen Benchmarktest.
 
 * **Benchmarktest 2b**
 Bei einem aktiv-aktiven Shared-Nothing-Cluster von 2 Autoreninstanzen wird der maximale Durchsatz berechnet, wenn das Lastprofil einen Mix aus frischer Seitenerstellung (10 %), Änderung einer bestehenden Seite (80 %) und Erstellung und Änderung einer Seite in Folge (10 %) aufweist. Die Komplexität der Seite bleibt gleich wie im Profil des Benchmarktests 1. Die grundlegende Änderung der Seite erfolgt durch Hinzufügen eines Bildes und Ändern des Textinhalts. Auch hier wurde die Übung auf einer Grundlast von 300 Seiten mit Komplexität durchgeführt, die der Definition im Benchmarktest 1 entspricht.

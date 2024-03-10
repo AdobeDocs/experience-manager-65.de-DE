@@ -3,16 +3,16 @@ title: Integration von AEM und Drittanbieter-Commerce-Lösungen mithilfe des Com
 description: Unternehmen benötigen möglicherweise zusätzliche Drittanbieterlösungen für den Handel, um ihre Storefront zu betreiben. Das Commerce Integration Framework (CIF) kann in solchen Integrationsszenarien verwendet werden, um eine Drittanbieterlösung für den Handel mit Adobe Experience Manager über I/O Runtime zu verbinden.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: e99899a4-df86-4108-991a-8b30d303a279
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
-workflow-type: ht
-source-wordcount: '507'
-ht-degree: 100%
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
+workflow-type: tm+mt
+source-wordcount: '489'
+ht-degree: 96%
 
 ---
 
 # Integration von AEM und Drittanbieter-Commerce-Lösungen mithilfe des Commerce Integration Framework {#aem-third-party}
 
-Die Integration von Lösungen außerhalb von Adobe Commerce ist ein häufiges Szenario für CIF. Drittanbieterlösungen mit verschiedenen APIs und Schemas werden über eine Integrationsebene verbunden.
+Die Integration von Lösungen außerhalb von Adobe Commerce ist ein häufiges Szenario für CIF. Drittanbieterlösungen mit verschiedenen APIs und Schemas werden über eine Integrationsschicht verbunden.
 
 ## Architektur {#architecture}
 
@@ -40,7 +40,7 @@ Die Integration von Produktkatalog-APIs ist erforderlich, um diese Anwendungsfä
 
 ## Front-End-Anwendungsfälle
 
-[AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) rufen Daten über die CIF-unterstützten Adobe Commerce-APIs ab und tauschen sie aus. Um Komponenten wiederzuverwenden, müssen die entsprechenden APIs implementiert werden.
+[AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) rufen Daten über die CIF-unterstützten Adobe Commerce-APIs ab und tauschen diese aus. Um Komponenten wiederzuverwenden, müssen die entsprechenden APIs implementiert werden.
 
 Die Empfehlung für leistungskritische Client-seitige Komponenten besteht darin, direkt mit der Drittanbieterlösung zu kommunizieren, um Latenz zu vermeiden.
 

@@ -6,10 +6,10 @@ role: User, Admin
 feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 92%
+source-wordcount: '798'
+ht-degree: 87%
 
 ---
 
@@ -87,7 +87,7 @@ Durch Filtern von XMP-Metadaten über die Zulassungsliste wird dieses Problem be
 
 1. Um Configuration Manager zu öffnen, rufen Sie `https://[aem_server]:[port]/system/console/configMgr` auf.
 1. Öffnen Sie die Konfiguration **[!UICONTROL Adobe CQ DAM XmpFilter]**.
-1. Um die Filterfunktion mit einer Zulassungsliste anzuwenden, klicken Sie auf **[!UICONTROL Zulassungsliste auf XMP-Eigenschaften anwenden]** und geben Sie die Eigenschaften an, die in das Feld **[!UICONTROL Zulässige XML-Namen für XMP-Filterfunktion]** importiert werden sollen.
+1. Um die Filterung mithilfe einer Zulassungsliste anzuwenden, wählen Sie **[!UICONTROL Anwenden der Zulassungsliste auf XMP Eigenschaften]** und geben Sie die Eigenschaften an, die in die **[!UICONTROL Zulässige XML-Namen für XMP Filterung]** ankreuzen.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 

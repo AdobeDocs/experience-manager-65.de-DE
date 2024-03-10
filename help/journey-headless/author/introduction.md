@@ -2,10 +2,10 @@
 title: Authoring für Headless mit Adobe Experience Manager
 description: Eine Einführung in die leistungsstarken und flexiblen, Headless-Funktionen von Adobe Experience Manager und die Erstellung von Inhalten für Ihr Projekt.
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
-workflow-type: ht
-source-wordcount: '659'
-ht-degree: 100%
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
+workflow-type: tm+mt
+source-wordcount: '649'
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ Der Begriff „Headless“ bezeichnet Systeme, bei denen der Inhalt von der Art 
 
 Üblicherweise würden Sie Ihre Inhalte in einem CMS verwalten und dasselbe CMS wäre für die Wiedergabe dieser Inhalte auf Ihren Webseiten verantwortlich.
 
-Headless bedeutet nun, dass Ihr Inhaltssatz im CMS verwaltet werden kann und dann von einer oder mehreren (unabhängigen) Anwendungen aufgerufen werden kann.
+Headless bedeutet jetzt, dass Ihr Content-Set im CMS verwaltet und dann von einer oder mehreren (unabhängigen) Anwendungen aufgerufen werden kann.
 
 Das bedeutet, dass Ihre Inhalte auf jedem Gerät und in einer Vielzahl von Formaten bereitgestellt werden können. Dadurch wird der gesamte Prozess viel flexibler und Sie müssen sich auch keine Gedanken über Layout und Formatierung machen.
 

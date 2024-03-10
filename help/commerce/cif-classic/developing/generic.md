@@ -3,9 +3,9 @@ title: Entwicklung (generisch)
 description: Das Integrations-Framework enthält eine Integrationsschicht mit einer API, mit der Sie AEM Komponenten für eCommerce-Funktionen erstellen können.
 contentOwner: Guillaume Carlino
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1853'
+source-wordcount: '1856'
 ht-degree: 98%
 
 ---
@@ -471,7 +471,7 @@ Einstiegspunkt für die Such-API ist die `CommerceService#search`-Methode, die e
 
    * Der ClientContext `SegmentMgr` löst Segmente auf und der ClientContext `CartMgr` löst Promotions auf. Jede Promotion, die mindestens einem aufgelösten Segment unterliegt, wird ausgelöst.
 
-      * Ausgelöste Promotions werden über einen AJAX-Aufruf an den Server zurückgesendet, um den Warenkorb neu zu berechnen.
+      * Ausgelöste Promotions werden über einen AJAX Aufruf zur Neuberechnung des Warenkorbs an den Server zurückgesendet.
       * Ausgelöste Promotions (und hinzugefügte Gutscheine) werden auch im ClientContext-Bedienfeld angezeigt.
 
 Das Hinzufügen/Entfernen eines Gutscheins aus einem Warenkorb erfolgt über die `CommerceSession`-API:

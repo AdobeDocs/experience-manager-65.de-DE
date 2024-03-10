@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 role: Developer
 exl-id: fe1198b5-4145-4dcd-ab8a-4015daaf89b7
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '428'
 ht-degree: 25%
 
 ---
@@ -32,7 +32,7 @@ Java™ API Quick Start (SOAP) ist für Komponenten und Dienste verfügbar.
 [Schnellstart (SOAP-Modus): Entfernen von Komponenten mithilfe von Java](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
 
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API durchgeführt werden und der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API durchgeführ
 
 >[!NOTE]
 >
-Wenn Sie über eine benutzerdefinierte Komponente verfügen und SOAP- oder EJB-Protokolle zum Aufrufen von DSCs auf demselben lokalen Server verwenden und diese Aufrufe nach einer Aktualisierung nicht mehr funktionieren, verwenden Sie die In-VM-Aufrufstrategie. Verwenden Sie die In-VM-DSC-Aufrufmethode mit dem standardmäßigen ServiceClientFactory-Objekt und verwenden Sie weder SOAP- noch EJB-Protokolle zum Erstellen von ServiceClientFactory.
+>Wenn Sie über eine benutzerdefinierte Komponente verfügen und SOAP- oder EJB-Protokolle zum Aufrufen von DSCs auf demselben lokalen Server verwenden und diese Aufrufe nach einer Aktualisierung nicht mehr funktionieren, verwenden Sie die In-VM-Aufrufstrategie. Verwenden Sie die In-VM-DSC-Aufrufmethode mit dem standardmäßigen ServiceClientFactory-Objekt und verwenden Sie weder SOAP- noch EJB-Protokolle zum Erstellen von ServiceClientFactory.
 
 ## Schnellstart (SOAP-Modus): Bereitstellen einer Komponente mit der Java™ API {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 

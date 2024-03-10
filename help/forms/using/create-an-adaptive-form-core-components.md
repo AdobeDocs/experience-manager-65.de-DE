@@ -9,10 +9,10 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
-source-git-commit: 4a8155f754d1f71354717f5eb22511baab110916
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1731'
-ht-degree: 97%
+source-wordcount: '1733'
+ht-degree: 98%
 
 ---
 
@@ -32,7 +32,7 @@ Mit adaptiven Formularen können Sie Formulare erstellen, die ansprechend, reakt
 
 Bevor Sie beginnen, erfahren Sie mehr über die Arten der Formular-Komponenten, die Ihnen zur Verfügung stehen:
 
-* [Kernkomponenten adaptiver Formulare](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de): Dies sind standardisierte Datenerfassungskomponenten. Diese Komponenten bieten Anpassungsfunktionen, kürzere Entwicklungszeiten und niedrigere Wartungskosten für Ihre Erlebnisse bei der digitalen Registrierung. Entwickelnde können diese Komponenten einfach anpassen und gestalten. Adobe empfiehlt die Verwendung dieser modernen und erweiterbaren Komponenten zur Entwicklung von Adaptive Forms.
+* [Kernkomponenten adaptiver Formulare](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de): Dies sind standardisierte Datenerfassungskomponenten. Diese Komponenten bieten Anpassungsfunktionen, kürzere Entwicklungszeiten und niedrigere Wartungskosten für Ihre Erlebnisse bei der digitalen Registrierung. Entwickelnde können diese Komponenten einfach anpassen und gestalten. Adobe empfiehlt die Nutzung dieser modernen und erweiterbaren Komponenten zur Entwicklung von adaptiven Formularen.
 
 * [Foundation-Komponenten adaptiver Formulare](creating-adaptive-form.md): Hierbei handelt es sich um klassische (alte) Datenerfassungskomponenten. Sie können diese weiterhin verwenden, um Ihre vorhandenen Foundation-Komponenten auf Grundlage des adaptiven Formulars zu bearbeiten. Für die Erstellung neuer Formulare empfiehlt Adobe die Verwendung von [Kernkomponenten für adaptive Formulare](/help/forms/using/create-adaptive-form.md), um ein adaptives Formular zu erstellen.
 
@@ -63,7 +63,7 @@ Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
 
 1. Melden Sie sich bei Ihrer lokalen [AEM-Autoreninstanz](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=de#author-and-publish-installs) an.
 
-1. Geben Sie Ihre Anmeldedaten auf der Experience Manager-Anmeldeseite ein. Nachdem Sie angemeldet sind, wählen Sie links oben die Option **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms und Dokumente]**.
+1. Geben Sie Ihre Anmeldedaten auf der Experience Manager-Anmeldeseite ein. Wenn Sie sich angemeldet haben, wählen Sie in der oberen linken Ecke **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** aus.
 
 1. Auswählen **[!UICONTROL Erstellen]**  > **[!UICONTROL Adaptive Forms erstellen]**.
 
@@ -77,7 +77,7 @@ Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
    * **[!UICONTROL Design-Client-Bibliothek]:** Gibt das Design für ein adaptives Formular an. Standardmäßig wird das Design `adaptiveform.theme.canvas3` ausgewählt. Sie können auch ein anderes Design im Dropdown-Menü **[!UICONTROL Design-Client-Bibliothek]** auswählen.
    * **[!UICONTROL Konfigurations-Container:]** Definiert einen Speicherort, an dem Konfigurationsdateien für adaptive Formulare gespeichert werden. Diese Konfigurationsdateien enthalten Einstellungen und Eigenschaften, die sich auf das Verhalten und das Erscheinungsbild von adaptiven Formularen beziehen.
    * **[!UICONTROL Tags:]** Gibt Tags an, die eine eindeutige Identifizierung des adaptiven Formulars ermöglichen. Tags erleichtern die Suche nach dem Formular. Um die Tags zu erstellen, geben Sie neue Tag-Namen in das Feld **[!UICONTROL Tags]** ein.
-1. Wählen Sie **[!UICONTROL Erstellen]**. Ein adaptives Formular wird erstellt, und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt.
+1. Wählen Sie **[!UICONTROL Erstellen]** aus. Ein adaptives Formular wird erstellt, und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt.
 
 
 1. Auswählen **[!UICONTROL Bearbeiten]** , um das neu erstellte Formular in einer neuen Registerkarte zu öffnen. Das Formular wird zur Bearbeitung geöffnet und zeigt den Inhalt an, der in der Vorlage verfügbar ist. Außerdem wird die Seitenleiste angezeigt, um das neu erstellte Formular anzupassen.

@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '6650'
-ht-degree: 28%
+ht-degree: 27%
 
 ---
 
@@ -322,7 +322,7 @@ while (isSupportedPath(path)) {
 
 #### Verwalten von CUG-Richtlinien nach Prinzipal {#managing-cug-policies-by-pincipal}
 
-Die von `JackrabbitAccessControlManager` definierten Erweiterungen, welche die Bearbeitung von Zugriffssteuerungsrichtlinien nach Prinzipalen ermöglichen, werden nicht anhand der CUG-Zugriffssteuerungsverwaltung implementiert, da CUG-Richtlinien per Definition immer alle Prinzipale betreffen: Den mit `PrincipalSetPolicy` aufgeführten Prinzipalen wird Lesezugriff gewährt, während alle anderen Prinzipale in der vom Zielknoten definierten Baumstruktur keine Inhalte lesen können.
+Die Erweiterungen, die durch `JackrabbitAccessControlManager` die es Ihnen ermöglichen, Zugriffskontrollrichtlinien nach Prinzipal zu bearbeiten, werden nicht mit der CUG-Zugriffssteuerungsverwaltung implementiert, da per Definition eine CUG-Richtlinie immer alle Prinzipale betrifft: diejenigen, die mit dem `PrincipalSetPolicy` erhalten Lesezugriff, während alle anderen Prinzipale daran gehindert werden, Inhalte in der vom Zielknoten definierten Baumstruktur zu lesen.
 
 Die entsprechenden Methoden geben immer ein leeres Richtlinien-Array zurück, geben jedoch keine Ausnahmen aus.
 

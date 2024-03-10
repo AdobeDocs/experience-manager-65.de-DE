@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Correspondence Management
 exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '4433'
+source-wordcount: '4434'
 ht-degree: 95%
 
 ---
@@ -147,7 +147,7 @@ Erstellen Sie einen Knoten für jede Eigenschaft (Felder), für die Sie ein Drop
 
 1. Fügen Sie unter dem property-Knoten (hier geographicallocation) einen neuen Knoten mit dem Namen `items` hinzu. Fügen Sie unter dem Knoten „items“ jeweils einen Knoten für die Werte im Dropdown-Menü hinzu. Es empfiehlt sich, den ersten Knoten leer hinzuzufügen, um diesen als Standardwert des Dropdown-Menüs zu verwenden und Benutzenden so die Möglichkeit zu geben, keinen Wert für dieses Feld anzugeben. Um mehrere Optionen/Dropdown-Werte hinzuzufügen, wiederholen Sie die folgenden Schritte:
 
-   1. Klicken Sie auf den property-Knoten, (hier: geographicallocation) mit der rechten Maustaste und wählen Sie **Erstellen** > **Knoten erstellen**.
+   1. Klicken Sie mit der rechten Maustaste auf den Eigenschaftenknoten (hier geographicallocation) und wählen Sie **Erstellen** > **Knoten erstellen**.
    1. Geben Sie `item1,` als Namen des Felds ein, behalten Sie als Typ „nt:unstructured“ bei und klicken Sie auf **OK**.
    1. Fügen Sie die folgenden Eigenschaften dem neu erstellten Knoten (hier: item1) hinzu und klicken Sie auf **Alle speichern**:
 
@@ -386,7 +386,7 @@ Dieses Szenario zeigt, wie Sie eine Eigenschaft einem bestimmten Asset-Typ hinzu
 * Datenwörterbuch
 * Brief
 
-Sie möchten z. B. nur zu den Text-Assets eine Eigenschaft, nämlich den Ort der Empfänger, hinzufügen, um zu ermitteln, für welches geografische Gebiet ein Asset relevant ist. ![Benutzerdefinierte Eigenschaft wurde zu einem Element hinzugefügt](assets/newtabui.png)
+Beispielsweise möchten Sie nur zu den Text-Assets eine Eigenschaft, den Ort der Empfänger hinzufügen, um zu ermitteln, für welches geografische Gebiet ein Asset relevant ist.  ![Benutzerdefinierte Eigenschaft wurde zu einem Element hinzugefügt](assets/newtabui.png)
 
 Um eine Eigenschaft einem Assettyp hinzuzufügen, führen Sie die folgenden Schritte aus:
 

@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 907c12be-dab4-48b5-9da1-a76b711f49f2
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '228'
 ht-degree: 49%
 
 ---
@@ -20,7 +20,7 @@ Java™ API Quick Start (SOAP) ist für den Barcoded Forms-Dienst verfügbar:
 
 [Schnellstart (SOAP-Modus): Dekodieren von mit Strichcode versehenen Formulardaten mit Java](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API durchgeführt werden und der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 
 >[!NOTE]
 >
@@ -217,4 +217,4 @@ Der folgende Java™-Code dekodiert Formulardaten, die sich in einem PDF-Formula
 
 >[!NOTE]
 >
-Wenn sowohl ein `org.w3c.dom.Document`-Objekt als auch ein `com.adobe.idp.Document`-Objekt in derselben Programmlogik verwendet werden, empfiehlt es sich, beide Objekte vollständig zu qualifizieren.
+>Wenn sowohl ein `org.w3c.dom.Document`-Objekt als auch ein `com.adobe.idp.Document`-Objekt in derselben Programmlogik verwendet werden, empfiehlt es sich, beide Objekte vollständig zu qualifizieren.

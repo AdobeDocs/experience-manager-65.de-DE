@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1007'
 ht-degree: 85%
 
 ---
@@ -40,7 +40,7 @@ Der Java-API-Schnellstart (SOAP) ist für den Assembler-Service verfügbar
 
 [Kurzanleitung (SOAP-Modus): Zusammenstellen mehrerer XDP-Fragmente mithilfe der Java-API](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API durchgeführt werden und der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 
 >[!NOTE]
 >
@@ -1688,7 +1688,7 @@ Im folgenden Codebeispiel wird ein PDF-Dokument mithilfe der `PDFUtility`.
 
 >[!NOTE]
 >
-Die `PDFUtility` kann nur PDF redigieren, die mit Acrobat zur Redigierung markiert sind.
+>Die `PDFUtility` kann nur PDF redigieren, die mit Acrobat zur Redigierung markiert sind.
 
 ```java
 /*

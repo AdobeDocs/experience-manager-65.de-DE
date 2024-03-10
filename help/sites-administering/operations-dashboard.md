@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '6061'
-ht-degree: 98%
+source-wordcount: '5868'
+ht-degree: 94%
 
 ---
 
@@ -199,7 +199,7 @@ Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle K
    <td><p>Diese Prüfung wird für alle Event-Listener und Hintergrundbeobachter schrittweise durchgeführt. Sie vergleicht die <code>queueSize </code> mit ihrer <code>maxQueueSize</code> und:</p>
     <ul>
      <li>gibt den Status „Kritisch“ zurück, wenn der Wert für <code>queueSize</code> den Wert für <code>maxQueueSize</code> übersteigt (d. h., wenn Ereignisse entfernt werden)</li>
-     <li>gibt eine Warnung zurück, wenn der Wert für <code>queueSize</code> über dem <code>maxQueueSize * WARN_THRESHOLD</code> liegt (der Standardwert liegt bei 0,75) </li>
+     <li>gibt eine Warnung zurück, wenn die <code>queueSize</code> Wert über <code>maxQueueSize * WARN_THRESHOLD</code> (der Standardwert ist 0,75) </li>
     </ul> <p>Die maximale Länge jeder Warteschlange stammt aus separaten Konfigurationen (Oak und AEM) und kann von dieser Konsistenzprüfung nicht konfiguriert werden. Das MBean für diese Konsistenzprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -223,11 +223,11 @@ Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle K
    <td>Asynchrone Indizes</td>
    <td><p>Die Prüfung auf asynchrone Indizes:</p>
     <ul>
-     <li>gibt den Status „Kritisch“ zurück, wenn mindestens eine Indizierungsspur fehlschlägt</li>
+     <li>gibt den Status "Kritisch"zurück, wenn mindestens eine Indizierungsspur fehlschlägt</li>
      <li>prüft <code>lastIndexedTime</code> für alle Indizierungsspuren und:
       <ul>
        <li>gibt den Status "Kritisch"zurück, wenn er vor mehr als 2 Stunden liegt </li>
-       <li>gibt den Warnungsstatus zurück, wenn er zwischen 2 Stunden und 45 Minuten zurückliegt </li>
+       <li>gibt einen Warnungsstatus zurück, wenn dieser zwischen 2 Stunden und 45 Minuten zurückliegt </li>
        <li>gibt den Status "OK"zurück, wenn er vor weniger als 45 Minuten liegt </li>
       </ul> </li>
      <li>Wenn keine dieser Bedingungen erfüllt ist, wird der Status „OK“ zurückgegeben.</li>
@@ -263,16 +263,16 @@ Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle K
       Diese Prüfung überprüft die Anzahl an Aufträgen, die sich in der Warteschlange des Auftrags-Managers befinden, vergleicht sie mit dem Schwellenwert <code>maxNumQueueJobs</code> und:
     </div>
     <ul>
-     <li>gibt den Status „Kritisch“ zurück, wenn sich mehr als <code>maxNumQueueJobs</code> in der Warteschlange befinden</li>
-     <li>gibt „Kritisch“ zurück, wenn es aktive Aufträge mit langer Laufzeit gibt, die älter als eine Stunde sind</li>
-     <li>gibt „Kritisch“ zurück, wenn Aufträge in der Warteschlange vorhanden sind und die Abschlusszeit des letzten Auftrags länger als 1 Stunde zurückliegt</li>
+     <li>gibt einen "Kritisch"zurück, wenn mehr als <code>maxNumQueueJobs</code> sich in der Warteschlange befinden</li>
+     <li>gibt einen "Kritisch"zurück, wenn lang laufende aktive Aufträge vorhanden sind, die älter als 1 Stunde sind</li>
+     <li>gibt einen "Kritisch"zurück, wenn Aufträge in der Warteschlange vorhanden sind und die letzte fertige Auftragszeit älter als 1 Stunde ist</li>
     </ul> <p>Nur der Parameter „Maximale Anzahl an Aufträgen in der Warteschlange“ kann konfiguriert werden und hat den Standardwert 1000.</p> <p>Das MBean für diese Konsistenzprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingJobs%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=slingJobs,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Anfrageleistung</td>
    <td><p>Diese Prüfung untersucht die <code>granite.request.metrics.timer</code> <a href="http://localhost:4502/system/console/slingmetrics" target="_blank">Sling-Metrik</a> und:</p>
     <ul>
-     <li>gibt „Kritisch“ zurück, wenn der 75. Perzentil-Wert über dem kritischen Schwellenwert liegt (der Standardwert ist 500 Millisekunden)</li>
+     <li>gibt einen "Kritisch"zurück, wenn der 75. Perzentil-Wert über dem kritischen Schwellenwert liegt (der Standardwert ist 500 Millisekunden)</li>
      <li>gibt eine Warnung zurück, wenn der 75. Perzentil-Wert über dem Warnschwellenwert liegt (der Standardwert ist 200 Millisekunden)</li>
     </ul> <p>Das MBean für diese Konsistenzprüfung ist <em> </em><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DrequestsStatus%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck</a>.</p> </td>
   </tr>
@@ -285,7 +285,7 @@ Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle K
    <td><p>Diese Prüfung untersucht das MBean <code>FileStoreStats</code>, ruft die Größe des NodeStores und den Umfang des verfügbaren Festplatten-Speicherplatzes auf der NodeStore-Partition ab und:</p>
     <ul>
      <li>gibt eine Warnung zurück, wenn das Verhältnis zwischen verfügbarem Speicherplatz und Repository-Größe kleiner als der Warnschwellenwert ist (der Standardwert ist 10)</li>
-     <li>gibt „Kritisch“ zurück, wenn das Verhältnis zwischen verfügbarem Speicherplatz und Repository-Größe kleiner als der kritische Schwellenwert ist (der Standardwert ist 2).</li>
+     <li>gibt einen "Kritisch"zurück, wenn das Verhältnis zwischen verfügbarem Speicherplatz und Repository-Größe kleiner als der kritische Schwellenwert ist (der Standardwert ist 2).</li>
     </ul> <p>Beide Werte sind konfigurierbar. Die Prüfung funktioniert nur auf Instanzen mit einem Segmentspeicher.</p> <p>Das MBean für diese Konsistenzprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DDiskSpaceHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=DiskSpaceHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -308,7 +308,7 @@ Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle K
    <td>Code-Cache-Prüfung</td>
    <td><p>Eine Konsistenzprüfung, die mehrere JVM-Bedingungen überprüft, die einen in Java™ 7 vorhandenen Code-Cache-Fehler auslösen können:</p>
     <ul>
-     <li>gibt eine Warnung zurück, wenn die Instanz auf Java™ 7 ausgeführt wird, wobei die Bereinigung des Code-Caches aktiviert ist</li>
+     <li>gibt eine Warnung zurück, wenn die Instanz unter Java™ 7 ausgeführt wird, wobei die Code-Cache-Bereinigung aktiviert ist.</li>
      <li>gibt eine Warnung zurück, wenn die Instanz auf Java™ 7 ausgeführt wird und die Größe des reservierten Code-Caches kleiner als ein Mindestschwellenwert ist (der Standardwert ist 90 MB)</li>
     </ul> <p>Der Schwellenwert <code>minimum.code.cache.size</code> ist konfigurierbar. Weitere Informationen zum Fehler finden Sie, wenn Sie unter <a href="https://bugs.java.com/bugdatabase/"> nach der Fehler-ID 8012547</a> suchen.</p> <p>Das MBean für diese Konsistenzprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
@@ -316,7 +316,7 @@ Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle K
    <td>Fehler bei Ressourcen-Suchpfaden</td>
    <td><p>Prüft, ob unter dem Pfad <code>/apps/foundation/components/primary</code> Ressourcen vorhanden sind, und:</p>
     <ul>
-     <li>gibt eine Warnung aus, wenn hier untergeordnete Knoten vorhanden sind: <code>/apps/foundation/components/primary</code></li>
+     <li>gibt eine Warnung zurück, wenn untergeordnete Knoten unter <code>/apps/foundation/components/primary</code></li>
     </ul> <p>Das MBean für diese Konsistenzprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DresourceSearchPathErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=resourceSearchPathErrorHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
  </tbody>

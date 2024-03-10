@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '7173'
-ht-degree: 24%
+source-wordcount: '7192'
+ht-degree: 41%
 
 ---
 
@@ -133,21 +133,21 @@ Verwenden Sie die folgenden Einstellungen, um einen Endpunkt des Typs &quot;übe
 
 **Domänenname:** (Erforderlich) Die Domäne des Benutzers. Der Standardwert ist „DefaultDom“.
 
-**Stapelgröße**: Die Anzahl der Dateien oder Ordner, die pro Überprüfung aufgenommen werden. Verwenden Sie , um eine Überlastung des Systems zu verhindern. Das gleichzeitige Überprüfen zu vieler Dateien kann zu einem Absturz führen. Der Standardwert ist 2.
+**Stapelgröße**: Die Anzahl der Dateien oder Ordner, die pro Überprüfung aufgenommen werden. Mit dieser Einstellung können Sie eine Überlastung des Systems verhindern, da das gleichzeitige Überprüfen zu vieler Dateien zu einem Absturz führen kann. Der Standardwert ist 2.
 
-Die Einstellungen für Wiederholungsintervall und Stapelgröße bestimmen, wie viele Dateien bei jeder Überprüfung vom Watched Folder-Dienst aufgenommen werden. Der Watched Folder-Dienst verwendet einen Quartz-Thread-Pool, um den Eingabeordner zu überprüfen. Der Thread-Pool wird für andere Dienste freigegeben. Wenn das Überprüfungsintervall gering ist, wird der Eingabeordner häufig von den Threads überprüft. Wenn Dateien häufig im überwachten Ordner abgelegt werden, sollten Sie das Überprüfungsintervall klein halten. Wenn Dateien selten abgelegt werden, verwenden Sie ein größeres Überprüfungsintervall, damit die anderen Dienste die Threads verwenden können.
+Die Einstellungen „Wiederholungsintervall“ und „Stapelgröße“ bestimmen, wie viele Dateien bei jeder Überprüfung vom Watched Folder-Dienst ausgewählt werden. Der überwachte Ordner verwendet einen Quartz-Threadpool für die Überprüfung des Eingabeordners. Der Threadpool wird mit anderen Diensten gemeinsam verwendet. Wenn das Überprüfungsintervall gering ist, wird der Eingabeordner häufig von den Threads überprüft. Wenn Dateien häufig im überwachten Ordner abgelegt werden, sollten Sie das Überprüfungsintervall klein halten. Wenn Dateien nicht häufig abgelegt werden, sollten Sie ein größeres Überprüfungsintervall verwenden, damit die anderen Dienste die Threads verwenden können.
 
-Wenn eine große Anzahl von Dateien abgelegt wird, machen Sie die Stapelgröße groß. Wenn beispielsweise der vom Endpunkt des überwachten Ordners aufgerufene Dienst 700 Dateien pro Minute verarbeiten kann und Benutzer Dateien mit derselben Rate im Eingabeordner ablegen, hilft das Festlegen der Stapelgröße auf 350 und des Wiederholungsintervalls auf 30 Sekunden, die Leistung des überwachten Ordners zu verbessern, ohne dass der überwachte Ordner zu oft überprüft werden muss.
+Falls eine große Anzahl von Dateien abgelegt wird, wählen Sie eine große Stapelgröße.  Wenn der vom Endpunkt des überwachten Ordners aufgerufene Dienst beispielsweise 700 Dateien pro Minute verarbeiten kann und die Benutzenden Dateien mit der gleichen Geschwindigkeit in den Eingabeordner ablegen, kann die Leistung des überwachten Ordners durch die Einstellung der Stapelgröße auf 350 und des Wiederholungsintervalls auf 30 Sekunden verbessert werden, ohne dass die Kosten für eine zu häufige Überprüfung des überwachten Ordners anfallen.
 
-Wenn Dateien im überwachten Ordner abgelegt werden, werden die Dateien in der Eingabe aufgelistet, was die Leistung verringern kann, wenn jede Sekunde eine Überprüfung stattfindet. Eine Erhöhung des Überprüfungsintervalls kann die Leistung verbessern. Wenn das Volumen der abgelegten Dateien gering ist, passen Sie die Stapelgröße und das Wiederholungsintervall entsprechend an. Wenn beispielsweise jede Sekunde 10 Dateien abgelegt werden, versuchen Sie, das Wiederholungsintervall auf 1 Sekunde und die Stapelgröße auf 10 festzulegen.
+Wenn Dateien im überwachten Ordner abgelegt werden, werden die Dateien in der Eingabe aufgelistet, was die Leistung beeinträchtigen kann, wenn jede Sekunde eine Überprüfung stattfindet. Ein Verlängern des Überprüfungsintervalls kann die Leistung verbessern. Wenn das Volumen der abzulegenden Dateien gering ist, passen Sie die Batch-Größe und das Wiederholungsintervall entsprechend an. Wenn beispielsweise jede Sekunde 10 Dateien abgelegt werden, versuchen Sie, das Wiederholungsintervall auf 1 Sekunde und die Batch-Größe auf 10 festzulegen.
 
-**Wartezeit**: Die Zeit in Millisekunden, die gewartet werden soll, bevor ein Ordner oder eine Datei nach der Erstellung überprüft wird. Wenn die Wartezeit beispielsweise 3.600.000 Millisekunden (eine Stunde) beträgt und die Datei vor einer Minute erstellt wurde, wird diese Datei abgerufen, nachdem 59 oder mehr Minuten vergangen sind. Der Standardwert ist 0.
+**Wartezeit**: Die Zeit in Millisekunden, die gewartet werden soll, bevor ein Ordner oder eine Datei nach der Erstellung überprüft wird. Wenn die Wartezeit beispielsweise 3.600.000 Millisekunden (eine Stunde) beträgt und die Datei vor einer Minute erstellt wurde, wird diese Datei erst nach Ablauf von mindestens 59 Minuten abgerufen. Der Standardwert ist 0.
 
 Diese Einstellung ist nützlich, um sicherzustellen, dass eine Datei oder ein Ordner vollständig in den Eingabeordner kopiert wurde. Wenn Sie beispielsweise eine große Datei verarbeiten müssen und das Herunterladen der Datei 10 Minuten dauert, legen Sie die Wartezeit auf 10 x 60 x 1000 Millisekunden fest. Dies verhindert, dass der überwachte Ordner die Datei überprüft, wenn sie nicht 10 Minuten alt ist.
 
 **Dateimuster ausschließen**: Eine durch Semikolon **;** getrennte Liste von Mustern, die ein überwachter Ordner verwendet, um zu bestimmen, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Dateien oder Ordner mit diesem Muster werden nicht zur Verarbeitung überprüft.
 
-Diese Einstellung ist nützlich, wenn die Eingabe ein Ordner mit mehreren Dateien ist. Der Inhalt des Ordners kann in einen Ordner mit einem Namen kopiert werden, der vom überwachten Ordner aufgenommen wird. Dadurch wird verhindert, dass der überwachte Ordner einen Ordner zur Verarbeitung aufnimmt, bevor der Ordner vollständig in den Eingabeordner kopiert wird.
+Diese Einstellung ist hilfreich, wenn die Eingabe aus einem Ordner mit mehreren Dateien besteht. Der Inhalt des Ordners kann in einen Ordner mit einem Namen kopiert werden, der vom überwachten Ordner aufgenommen wird. Dadurch wird verhindert, dass der überwachte Ordner einen Ordner zur Verarbeitung aufnimmt, bevor der Ordner vollständig in den Eingabeordner kopiert wird.
 
 Sie können Dateimuster verwenden, um Folgendes auszuschließen:
 
@@ -178,9 +178,9 @@ Sie können Dateimuster verwenden, um Folgendes einzuschließen:
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](configuring-watched-folder-endpoints.md#about-file-patterns).
 
 
-**Ergebnisordner**: Der Ordner, in dem die gespeicherten Ergebnisse abgelegt werden. Wenn die Ergebnisse nicht in diesem Ordner angezeigt werden, überprüfen Sie den Fehlerordner. Schreibgeschützte Dateien werden nicht verarbeitet und im Fehlerordner gespeichert. Dieser Wert kann ein absoluter oder relativer Pfad mit den folgenden Dateimustern sein:
+**Ergebnisordner**: Der Ordner, in dem die gespeicherten Ergebnisse abgelegt werden. Wenn die Ergebnisse nicht in diesem Ordner angezeigt werden, überprüfen Sie den Fehlerordner. Schreibgeschützte Dateien werden nicht verarbeitet und im Fehlerordner gespeichert. Dieser Wert kann ein absoluter oder relativer Pfad mit folgenden Dateimustern sein:
 
-* %F = Dateinamenpräfix
+* %F = Dateinamenspräfix
 * %E = Dateinamenerweiterung
 * %Y = Jahr (vollständig)
 * %y = Jahr (letzte zwei Stellen)
@@ -193,7 +193,7 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](c
 * %s = Sekunde
 * %l = Millisekunde
 * %R = Zufallszahl (zwischen 0 und 9)
-* %P = Prozess- oder Auftrags-ID
+* %P = Prozess- oder Vorgangs-ID
 
 Wenn es zum Beispiel 20 Uhr am 17. Juli 2009 ist und Sie `C:/Test/WF0/failure/%Y/%M/%D/%H/` angeben, lautet der Ergebnisordner `C:/Test/WF0/failure/2009/07/17/20`.
 
@@ -201,23 +201,23 @@ Wenn der Pfad nicht absolut, sondern relativ ist, wird der Ordner im überwachte
 
 >[!NOTE]
 >
->Je kleiner die Größe der Ergebnisordner ist, desto besser ist die Watched Folder-Leistung. Wenn beispielsweise die geschätzte Belastung für den überwachten Ordner bei 1000 Dateien pro Stunde liegt, sollten Sie ein Muster wie `result/%Y%M%D%H` verwenden, sodass jede Stunde ein neuer Unterordner erstellt wird. Wenn die Belastung geringer ist (z. B. 1000 Dateien pro Tag), können Sie ein Muster wie das folgende verwenden: `result/%Y%M%D`.
+>Je kleiner die Größe des Ergebnisordners, desto höher die Watched Folder-Leistung. Wenn beispielsweise die geschätzte Belastung für den überwachten Ordner bei 1000 Dateien pro Stunde liegt, sollten Sie ein Muster wie `result/%Y%M%D%H` verwenden, sodass jede Stunde ein neuer Unterordner erstellt wird. Wenn die Belastung geringer ist (z. B. 1000 Dateien pro Tag), können Sie ein Muster wie das folgende verwenden: `result/%Y%M%D`.
 
-**Aufbewahrungsordner**: Der Ort, an dem Dateien nach erfolgreichem Überprüfen und Aufnehmen gespeichert werden. Der Pfad kann ein absoluter, relativer oder Null-Ordnerpfad sein. Sie können Dateimuster verwenden, wie für &quot;Ergebnisordner&quot;beschrieben. Der Standardwert ist preserve/%Y/%M/%D/.
+**Aufbewahrungsordner**: Der Ort, an dem Dateien nach erfolgreichem Überprüfen und Aufnehmen gespeichert werden. Der Pfad kann absolut, relativ oder ein Nullverzeichnispfad sein. Sie können Dateimuster wie für den Ergebnisordner beschrieben verwenden.  Der Standardwert ist „preserve/%Y/%M/%D/“.
 
 **Fehlerordner**: Der Ordner, in dem Dateien mit Fehlern gespeichert werden. Dieser Speicherort ist stets relativ zum überwachten Ordner. Sie können Dateimuster verwenden, wie für &quot;Ergebnisordner&quot;beschrieben.
 
 Schreibgeschützte Dateien werden nicht verarbeitet und im Fehlerordner gespeichert.
 
-Der Standardwert ist failure/%Y/%M/%D/.
+Der Standardwert ist „failure/%Y/%M/%D/“.
 
 **Bei Fehler beibehalten:** Bewahren Sie Eingabedateien auf, wenn der Vorgang für einen Dienst nicht ausgeführt werden kann. Der Standardwert lautet true.
 
-**Doppelte Dateinamen überschreiben**: Wenn diese Option auf „True“ gesetzt ist, werden Dateien im Ergebnisordner und im Aufbewahrungsordner überschrieben. Bei Festlegung auf &quot;False&quot;werden Dateien und Ordner mit dem Suffix &quot;Numerischer Index&quot;für den Namen verwendet. Der Standardwert ist False.
+**Doppelte Dateinamen überschreiben**: Wenn diese Option auf „True“ gesetzt ist, werden Dateien im Ergebnisordner und im Aufbewahrungsordner überschrieben. Bei Festlegung auf „False“ wird an die Namen von Dateien und Ordnern ein numerisches Indexsuffix angehängt. Der Standardwert ist „False“.
 
 **Bereinigungszeit** (obligatorisch): Dateien und Ordner im Ergebnisordner werden bereinigt, wenn sie älter als dieser Wert sind. Dieser Wert wird in Tagen gemessen. Diese Einstellung hilft sicherzustellen, dass der Ergebnisordner nicht voll wird.
 
-Ein Wert von -1 Tagen bedeutet, dass der Ergebnisordner nie gelöscht wird. Der Standardwert ist -1.
+Ein Wert von „-1“ Tagen bedeutet, dass der Ergebnisordner nie gelöscht wird. Der Standardwert ist -1.
 
 **Vorgangsname** (obligatorisch): Eine Liste von Vorgängen, die dem Endpunkt des überwachten Ordners zugewiesen werden können.
 
@@ -237,32 +237,32 @@ Die Watched Folder-Ausgabe kann ein einzelnes Dokument, eine Liste von Dokumente
 
 ## Über Dateimuster {#about-file-patterns}
 
-Administratoren können den Dateityp angeben, der einen Dienst aufrufen kann. Für jeden überwachten Ordner können mehrere Dateimuster festgelegt werden. Ein Dateimuster kann eine der folgenden Dateieigenschaften sein:
+Admins können den Dateityp angeben, von dem ein Dienst aufgerufen werden kann. Für jeden überwachten Ordner können mehrere Dateimuster festgelegt werden. Ein Dateimuster kann eine der folgenden Dateieigenschaften sein:
 
-* Dateien mit bestimmten Dateinamenerweiterungen, z. B. *.dat, *.xml, *.pdf;
-* Dateien mit bestimmten Namen, z. B. data.*
+* Dateien mit bestimmten Dateinamenerweiterungen. Beispiel: &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf
+* Dateien mit bestimmten Namen. Zum Beispiel Daten.*
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
    * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
    * &amp;ast;.[dD][Aa]&#39;port&#39;
    * &amp;ast;.[Xx][Mm][Ll]
 
-Der Administrator kann das Dateimuster des Ausgabeordners definieren, in dem die Ergebnisse gespeichert werden sollen. Für die Ausgabeordner (Ergebnis, Beibehaltung und Fehler) kann der Administrator eines der folgenden Dateimuster angeben:
+Admins können das Dateimuster des Ausgabeordners definieren, in dem die Ergebnisse gespeichert werden sollen. Für die Ausgabeordner (Ergebnis, Beibehaltung und Fehler) können Admins eines der folgenden Dateimuster angeben:
 
 * %Y = Jahr (vollständig)
 * %y = Jahr (letzte zwei Stellen)
-* %M = Monat,
-* %D = Tag des Monats,
-* %d = Tag des Jahres,
-* %h = Stunde,
-* %m = Minute,
-* %s = Sekunde,
+* %M = Monat
+* %D = Tag des Monats
+* %d = Tag des Jahres
+* %h = Stunde
+* %m = Minute
+* %s = Sekunde
 * %R = Zufallszahl zwischen 0 und 9
 * %J = Auftragsname
 
 Der Pfad zum Ergebnisordner kann beispielsweise `C:\Adobe\Adobe_Experience_Manager_forms\BarcodedForms\%y\%m\%d` lauten.
 
-Zuordnungen von Ausgabeparametern können auch zusätzliche Muster angeben, z. B.:
+Über Zuordnungen von Ausgabeparametern können außerdem zusätzliche Muster angegeben werden, wie z. B.:
 
 * %F = Quelldateiname
 * %E = Quelldateinamenerweiterung
@@ -271,19 +271,19 @@ Wenn das Zuordnungsmuster der Ausgabeparameter mit &quot;File.separator&quot;(de
 
 ## Über Einschränkungen {#about-throttling}
 
-Wenn &quot;Einschränken&quot;für einen Endpunkt des Typs &quot;überwachter Ordner&quot;aktiviert ist, wird die Anzahl der Aufträge für überwachte Ordner begrenzt, die zu jeder Zeit verarbeitet werden können. Die maximale Anzahl von Aufträgen wird durch den Wert für die Stapelgröße bestimmt, der auch im Endpunkt des überwachten Ordners konfigurierbar ist. Eingehende Dokumente im Eingabeordner des überwachten Ordners werden nicht abgerufen, wenn die Beschränkung für die Einschränkungen erreicht wurde. Die Dokumente bleiben auch im Eingabeordner, bis andere Aufträge für überwachte Ordner abgeschlossen und ein weiterer Abrufversuch unternommen wurde. Bei synchroner Verarbeitung werden alle in einer einzigen Abfrage verarbeiteten Aufträge für die Drosselung berücksichtigt, auch wenn die Aufträge nacheinander in einem einzigen Thread verarbeitet werden.
+Wenn &quot;Einschränken&quot;für einen Endpunkt des Typs &quot;überwachter Ordner&quot;aktiviert ist, wird die Anzahl der Aufträge für überwachte Ordner begrenzt, die zu jeder Zeit verarbeitet werden können. Die maximale Anzahl von Aufträgen wird durch den Wert für die Batch-Größe bestimmt, der auch im Endpunkt des überwachten Ordners konfigurierbar ist. Eingehende Dokumente im Eingabeordner des überwachten Ordners werden nicht abgerufen, wenn die Beschränkung für die Einschränkungen erreicht wurde. Die Dokumente bleiben auch im Eingabeordner, bis andere Aufträge für überwachte Ordner abgeschlossen und ein weiterer Abrufversuch unternommen wurde. Bei synchroner Verarbeitung werden alle in einer einzigen Abfrage verarbeiteten Aufträge für die Drosselung berücksichtigt, auch wenn die Aufträge nacheinander in einem einzigen Thread verarbeitet werden.
 
 >[!NOTE]
 >
->Die Drosselung wird bei einem Cluster nicht skaliert. Wenn die Drosselung aktiviert ist, verarbeitet der Cluster insgesamt zu keinem Zeitpunkt mehr als die Anzahl der Aufträge, die in der Stapelgröße angegeben sind. Diese Beschränkung ist clusterweit und nicht für jeden Knoten im Cluster spezifisch. Bei einer Stapelgröße von 2 könnte beispielsweise die Beschränkung für die Einschränkungen bei der Drosselung mit einem einzelnen Knoten erreicht werden, der zwei Aufträge verarbeitet, und keine anderen Knoten würden den Eingabeordner abrufen, bis einer der Aufträge abgeschlossen ist.
+>Die Drosselung wird bei einem Cluster nicht skaliert. Wenn die Drosselung aktiviert ist, verarbeitet der Cluster insgesamt zu keinem Zeitpunkt mehr als die Anzahl der Aufträge, die in der Batch-Größe angegeben sind. Diese Beschränkung ist Cluster-weit und nicht für jeden Knoten im Cluster spezifisch. Bei einer Batch-Größe von 2 könnte beispielsweise das Einschränkungslimit mit einem einzigen Knoten erreicht werden, der zwei Aufträge verarbeitet, und keine anderen Knoten würden den Eingabeordner abrufen, bis einer der Aufträge abgeschlossen ist.
 
-### Funktionsweise von Einschränkungen {#how-throttling-works}
+### Wie die Drosselung funktioniert {#how-throttling-works}
 
 Der Watched Folder-Dienst überprüft den Eingabeordner bei jedem Wiederholungsintervall, nimmt die in der Stapelgröße angegebene Anzahl von Dateien auf und ruft den Zieldienst für jede dieser Dateien auf. Wenn die Stapelgröße beispielsweise 4 beträgt, nimmt der Watched Folder-Dienst bei jeder Überprüfung vier Dateien auf, erstellt vier Aufrufanforderungen und ruft den Zieldienst auf. Wenn der Watched Folder-Dienst vor Abschluss dieser Anforderungen erneut aufgerufen wird, werden unabhängig davon, ob die vorherigen vier Aufträge abgeschlossen sind, erneut vier Aufträge gestartet.
 
-&quot;Einschränken&quot;verhindert, dass der Watched Folder-Dienst neue Aufträge aufruft, wenn die vorherigen Aufträge noch nicht abgeschlossen sind. Der Watched Folder-Dienst erkennt laufende Aufträge und verarbeitet neue Aufträge basierend auf der Batch-Größe abzüglich der laufenden Aufträge. Wenn im zweiten Aufruf beispielsweise nur drei Aufträge abgeschlossen sind und ein Auftrag noch ausgeführt wird, ruft der Watched Folder-Dienst nur drei weitere Aufträge auf.
+Die Drosselung verhindert, dass der Dienst für überwachte Ordner neue Aufträge aufruft, wenn die vorherigen Aufträge noch nicht abgeschlossen sind. Der Watched Folder-Dienst erkennt laufende Aufträge und verarbeitet neue Aufträge basierend auf der Batch-Größe abzüglich der laufenden Aufträge. Wenn im zweiten Aufruf beispielsweise nur drei Aufträge abgeschlossen sind und ein Auftrag noch ausgeführt wird, ruft der Dienst für überwachte Ordner nur drei weitere Aufträge auf.
 
-* Der Watched Folder-Dienst verlässt sich bei der Ermittlung der Anzahl der laufenden Aufträge auf die Anzahl der im Bereitstellungsordner vorhandenen Dateien. Wenn Dateien im Bereitstellungsordner nicht verarbeitet werden, ruft der Watched Folder-Dienst keine weiteren Aufträge auf. Wenn die Stapelgröße beispielsweise 4 beträgt und drei Aufträge angehalten sind, ruft der Watched Folder-Dienst in nachfolgenden Aufrufen nur einen Auftrag auf. Es gibt mehrere Szenarien, in denen Dateien unverarbeitet im Bereitstellungsordner bleiben können. Wenn Aufträge angehalten werden, kann der Administrator den Prozess auf der Verwaltungsseite des Arbeitsablaufs für Formulare beenden, sodass der Watched Folder-Dienst die Dateien aus dem Bereitstellungsordner verschiebt.
+* Der Dienst für überwachte Ordner verlässt sich bei der Ermittlung der Anzahl der laufenden Aufträge auf die Anzahl der im Bereitstellungsordner vorhandenen Dateien. Wenn Dateien im Bereitstellungsordner nicht verarbeitet werden, ruft der Watched Folder-Dienst keine weiteren Aufträge auf. Wenn die Stapelgröße beispielsweise 4 beträgt und drei Aufträge angehalten sind, ruft der Watched Folder-Dienst in nachfolgenden Aufrufen nur einen Auftrag auf. Es gibt mehrere Szenarien, in denen Dateien im Bereitstellungsordner unverarbeitet bleiben können. Wenn Aufträge angehalten werden, kann der Administrator den Prozess auf der Verwaltungsseite des Arbeitsablaufs für Formulare beenden, sodass der Watched Folder-Dienst die Dateien aus dem Bereitstellungsordner verschiebt.
 * Wenn der Forms-Server heruntergefahren wird, bevor der Watched Folder-Dienst die Aufträge aufrufen kann, kann der Administrator die Dateien aus dem Bereitstellungsordner verschieben. Weitere Informationen finden Sie unter [Fehlerquellen und Wiederherstellung](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 * Wenn der Forms-Server ausgeführt wird, der Watched Folder-Dienst jedoch nicht ausgeführt wird, wenn der Job Manager-Dienst zurückruft (wozu es kommt, wenn Dienste nicht in der richtigen Reihenfolge starten), kann der Administrator die Dateien aus dem Bereitstellungsordner verschieben. Weitere Informationen finden Sie unter [Fehlerquellen und Wiederherstellung](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
@@ -328,37 +328,37 @@ Wenn bei asynchronen Aufrufen ein Fehler bei einem Knoten auftritt, sendet der Q
 
 ## Fehlerquellen und Wiederherstellung {#failure-points-and-recovery}
 
-Bei jedem Abrufereignis sperrt der Watched Folder-Dienst den Eingabeordner, verschiebt die Dateien, die dem Muster der einzuschließenden Dateien entsprechen, in den Bereitstellungsordner und entsperrt dann den Eingabeordner. Das Sperren ist erforderlich, damit zwei Threads nicht denselben Dateisatz abrufen und ihn zweimal verarbeiten. Die Wahrscheinlichkeit, dass dies geschieht, steigt mit einem kleinen Wiederholungsintervall und einer großen Stapelgröße. Nachdem die Dateien in den Bereitstellungsordner verschoben wurden, wird der Eingabeordner entsperrt, damit andere Threads den Ordner überprüfen können. Dieser Schritt bietet einen hohen Durchsatz, da andere Threads überprüfen können, während ein Thread die Dateien verarbeitet.
+Bei jedem Abrufereignis sperrt der Dienst für überwachte Ordner den Eingabeordner, verschiebt die Dateien, die dem Muster für einzuschließende Dateien entsprechen, in den Bereitstellungsordner und entsperrt dann den Eingabeordner. Das Sperren ist erforderlich, damit zwei Threads nicht denselben Dateisatz abrufen und ihn zweimal verarbeiten. Die Wahrscheinlichkeit, dass dies geschieht, steigt mit einem kleinen Wiederholungsintervall und einer großen Stapelgröße. Nachdem die Dateien in den Bereitstellungsordner verschoben wurden, wird der Eingabeordner entsperrt, damit andere Threads den Ordner scannen können. Dieser Schritt bietet einen hohen Durchsatz, da andere Threads scannen können, während ein Thread die Dateien verarbeitet.
 
-Nachdem die Dateien in den Bereitstellungsordner verschoben wurden, werden Aufrufanforderungen für jede Datei erstellt und der Zieldienst wird aufgerufen. Es kann vorkommen, dass der Watched Folder-Dienst die Dateien im Bereitstellungsordner nicht wiederherstellen kann:
+Nachdem die Dateien in den Bereitstellungsordner verschoben wurden, werden Aufrufanfragen für jede Datei erstellt, und der Zieldienst wird aufgerufen. Es kann vorkommen, dass der Dienst für überwachte Ordner die Dateien im Bereitstellungsordner nicht wiederherstellen kann:
 
-* Wenn der Server heruntergefahren wird, bevor der Watched Folder-Dienst die Aufrufanforderung erstellen kann, bleiben die Dateien im Bereitstellungsordner im Bereitstellungsordner und werden nicht wiederhergestellt.
-* Wenn der Watched Folder-Dienst die Aufrufanforderung für jede der Dateien im Bereitstellungsordner erfolgreich erstellt hat und der Server abstürzt, gibt es je nach Aufruftyp zwei Verhaltensweisen:
+* Wenn der Server heruntergefahren wird, bevor der Dienst für überwachte Ordner die Aufrufanfrage erstellen kann, bleiben die Dateien im Bereitstellungsordner und werden nicht wiederhergestellt.
+* Wenn der Dienst für überwachte Ordner die Aufrufanfrage für jede der Dateien im Bereitstellungsordner erfolgreich erstellt hat und der Server abstürzt, gibt es je nach Aufruftyp zwei Verhaltensweisen:
 
 **Synchron:** Wenn der Watched Folder-Dienst so konfiguriert ist, dass der Dienst synchron aufgerufen wird, bleiben alle Dateien im Bereitstellungsordner unverarbeitet im Bereitstellungsordner.
 
-**Asynchron:** In diesem Fall ist der Watched Folder-Dienst vom Job Manager-Dienst abhängig. Wenn der Job Manager-Dienst den überwachten Ordner zurückruft, werden die Dateien im Bereitstellungsordner basierend auf den Ergebnissen des Aufrufs in den Ordner &quot;Preserve&quot;oder &quot;Failure&quot;verschoben. Wenn der Job Manager-Dienst den überwachten Ordner nicht zurückruft, bleiben die Dateien unverarbeitet im Bereitstellungsordner. Diese Situation tritt auf, wenn der Watched Folder-Dienst nicht ausgeführt wird, wenn der Job Manager zurückruft.
+**Asynchron:** In diesem Fall ist der Watched Folder-Dienst vom Job Manager-Dienst abhängig. Wenn der Job Manager-Dienst den Dienst für überwachte Ordner zurückruft, werden die Dateien im Bereitstellungsordner basierend auf den Ergebnissen des Aufrufs in den Aufbewahrungs- oder Fehlerordner verschoben. Wenn der Job Manager-Dienst den Dienst für überwachte Ordner nicht zurückruft, bleiben die Dateien unverarbeitet im Bereitstellungsordner. Diese Situation tritt auf, falls der Dienst für überwachte Ordner nicht ausgeführt wird, wenn der Job Manager zurückruft.
 
 ### Nicht verarbeitete Quelldateien im Bereitstellungsordner wiederherstellen {#recovering-unprocessed-source-files-in-the-stage-folder}
 
-Wenn der Watched Folder-Dienst die Quelldateien im Bereitstellungsordner nicht verarbeiten kann, können Sie die nicht verarbeiteten Dateien wiederherstellen.
+Wenn der Dienst für überwachte Ordner die Quelldateien im Bereitstellungsordner nicht verarbeiten kann, können Sie die nicht verarbeiteten Dateien wiederherstellen.
 
-1. Starten Sie den Anwendungsserver oder Knoten neu.
-1. (Optional) Beenden Sie den Watched Folder-Dienst daran, neue Eingabedateien zu verarbeiten. Wenn Sie diesen Schritt überspringen, ist es viel schwieriger zu bestimmen, welche Dateien nicht im Bereitstellungsordner verarbeitet werden. Führen Sie eine der folgenden Aufgaben aus, um zu verhindern, dass der Watched Folder-Dienst neue Eingabedateien verarbeitet:
+1. Starten Sie den Anwendungs-Server oder Knoten neu.
+1. (Optional) Beenden Sie den Watched Folder-Dienst daran, neue Eingabedateien zu verarbeiten. Wenn Sie diesen Schritt überspringen, ist es viel schwieriger zu bestimmen, welche Dateien im Bereitstellungsordner nicht verarbeitet wurden. Führen Sie eine der folgenden Aufgaben aus, um zu verhindern, dass der Dienst für überwachte Ordner neue Eingabedateien verarbeitet:
 
    * Ändern Sie in „Anwendungen und Dienste“ den Parameter „Muster für einzuschließende Dateien“ für den überwachten Ordner-Endpunkt in ein Muster, das keiner der neuen Eingabedateien entspricht (geben Sie beispielsweise `NOMATCH` ein).
    * Setzen Sie den Prozess aus, der neue Eingabedateien erstellt.
 
-   Warten Sie, bis AEM Formulare alle Dateien wiederherstellt und verarbeitet. Die meisten Dateien sollten abgerufen und alle neuen Eingabedateien korrekt verarbeitet werden. Die Wartezeit bis zum Wiederherstellen und Verarbeiten der Dateien durch den überwachten Ordner hängt von der Dauer des aufzurufenden Vorgangs und der Anzahl der wiederherzustellenden Dateien ab.
+   Warten Sie, bis AEM Formulare alle Dateien wiederherstellt und verarbeitet. Die meisten Dateien sollten wiederhergestellt und alle neuen Eingabedateien korrekt verarbeitet werden. Die Wartezeit bis zum Wiederherstellen und Verarbeiten der Dateien durch den überwachten Ordner hängt von der Dauer des aufzurufenden Vorgangs und der Anzahl der wiederherzustellenden Dateien ab.
 
-1. Bestimmen Sie, welche Dateien nicht verarbeitet werden können. Wenn Sie eine angemessene Zeitdauer abgewartet und den vorherigen Schritt abgeschlossen haben und noch nicht verarbeitete Dateien im Bereitstellungsordner verbleiben, fahren Sie mit dem nächsten Schritt fort.
+1. Bestimmen Sie, welche Dateien nicht verarbeitet werden können. Wenn Sie eine angemessene Zeitdauer abgewartet und den vorherigen Schritt abgeschlossen haben, sich aber immer noch nicht verarbeitete Dateien im Bereitstellungsordner befinden, fahren Sie mit dem nächsten Schritt fort.
 
    >[!NOTE]
    >
-   >Sie können den Datums- und Zeitstempel der Dateien im Bereitstellungsverzeichnis anzeigen. Je nach Anzahl der Dateien und der normalen Verarbeitungszeit können Sie bestimmen, welche Dateien alt genug sind, um als blockiert betrachtet zu werden.
+   >Sie können den Datums- und Zeitstempel der Dateien im Bereitstellungsverzeichnis anzeigen. Je nach Anzahl der Dateien und der normalen Verarbeitungsdauer können Sie ermitteln, welche Dateien so alt sind, dass sie als blockiert betrachtet werden können.
 
 1. Kopieren Sie die nicht verarbeiteten Dateien aus dem Bereitstellungsordner in den Eingabeordner.
-1. Wenn Sie in Schritt 2 verhindert haben, dass der Watched Folder-Dienst neue Eingabedateien verarbeitet, ändern Sie das Muster für einzuschließende Dateien in den vorherigen Wert oder aktivieren Sie den von Ihnen deaktivierten Prozess erneut.
+1. Wenn der Dienst für überwachte Ordner in Schritt 2 an der Verarbeitung neuer Eingabedateien gehindert wurde, ändern Sie den Parameter „Muster für einzuschließende Dateien“ in den vorherigen Wert zurück oder aktivieren Sie den zuvor deaktivierten Prozess erneut.
 
 ## Sicherheitsüberlegungen für überwachte Ordner {#security-considerations-for-watched-folders}
 

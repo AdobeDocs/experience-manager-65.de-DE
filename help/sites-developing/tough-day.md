@@ -4,10 +4,10 @@ description: Der „Tough Day“-Test simuliert die tägliche Last von rund 1.00
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '1825'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -130,7 +130,7 @@ Die relevanten Parameter finden Sie in der folgenden Liste:
 | `--port=<Val>` | Der Port des Hosts. | 4502 |  |
 | `--user=<Val>` | Der Benutzername für die Instanz. | admin |  |
 | `--password=<Val>` | Kennwort für den angegebenen Benutzer. | admin |  |
-| `--duration=<Val>` | Die Dauer der Tests. Kann in Sekunden (**s**), Minuten (**m**), Stunden (**h**) und Tagen (**d**) angegeben werden. | 1d |  |
+| `--duration=<Val>` | Die Dauer der Tests. Kann in **s** Sekunden, **m** Minuten, **h** unseres und **d** ays. | 1d |  |
 | `--timeout=<Val>` | Gibt an, wie lange ein Test ausgeführt wird, bevor er unterbrochen und als fehlgeschlagen markiert wird. In Sekunden angegeben. | 180 |  |
 | `--suite=<Val>` | Der Wert kann eine oder eine Liste (durch Kommas getrennt) von vordefinierter Test-Suites sein. | toughday |  |
 | `--configfile=<Val>` | Die angesprochene yaml-Konfigurationsdatei. |  |  |

@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d72a3977-1423-49e0-899b-234bb76be378
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1578'
-ht-degree: 54%
+source-wordcount: '1580'
+ht-degree: 57%
 
 ---
 
@@ -24,15 +24,15 @@ Wenn Sie die einmalige Anmeldung über SPNEGO aktivieren, fügen Sie einen Kerbe
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Wählen Sie die gewünschte Domain in der Liste aus. Wenn Sie die Authentifizierung für eine neue Domain einrichten möchten, lesen Sie [Eine Unternehmens-Domain hinzufügen](/help/forms/using/admin-help/adding-domains.md#add-an-enterprise-domain) oder [Hybrid-Domain hinzufügen](/help/forms/using/admin-help/adding-domains.md#add-a-hybrid-domain) hinzuzufügen.
 1. Klicken Sie auf Authentifizierung hinzufügen und wählen Sie in der Liste Authentifizierungsanbieter je nach Authentifizierungsmechanismus, den Ihr Unternehmen verwendet, einen Anbieter aus.
-1. Geben Sie zusätzliche Informationen an, die auf der Seite erforderlich sind. (Siehe [Authentifizierungseinstellungen](configuring-authentication-providers.md#authentication-settings).
+1. Geben Sie weitere auf dieser Seite angeforderte Informationen ein.  (Siehe [Authentifizierungseinstellungen](configuring-authentication-providers.md#authentication-settings).)
 1. (Optional) Klicken Sie auf Testen , um die Konfiguration zu testen.
-1. Klicken Sie auf OK und dann erneut auf OK .
+1. Klicken Sie auf „OK“ und dann erneut auf „OK“.
 
 ## Vorhandenen Authentifizierungsanbieter bearbeiten {#edit-an-existing-authentication-provider}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Wählen Sie die gewünschte Domain in der Liste aus.
-1. Wählen Sie auf der angezeigten Seite den entsprechenden Authentifizierungsanbieter aus der Liste aus und nehmen Sie die erforderlichen Änderungen vor. (Siehe [Authentifizierungseinstellungen](configuring-authentication-providers.md#authentication-settings).
+1. Wählen Sie auf der angezeigten Seite den entsprechenden Authentifizierungsanbieter aus der Liste aus und nehmen Sie die erforderlichen Änderungen vor. (Siehe [Authentifizierungseinstellungen](configuring-authentication-providers.md#authentication-settings)).
 1. Klicken Sie auf OK.
 
 ## Authentifizierungsanbieter löschen {#delete-an-authentication-provider}
@@ -48,7 +48,7 @@ Die folgenden Einstellungen stehen je nach gewähltem Domain- und Authentifizier
 
 ### LDAP-Einstellungen {#ldap-settings}
 
-Wenn Sie die Authentifizierung für eine Unternehmens- oder Hybrid-Domain konfigurieren und LDAP-Authentifizierung auswählen, können Sie den in Ihrer Ordnerkonfiguration angegebenen LDAP-Server verwenden oder einen anderen LDAP-Server auswählen, der zur Authentifizierung verwendet werden soll. Wenn Sie einen anderen Server auswählen, müssen Ihre Benutzer auf beiden LDAP-Servern vorhanden sein.
+Wenn Sie die Authentifizierung für eine Unternehmens- oder Hybrid-Domain konfigurieren und LDAP-Authentifizierung auswählen, können Sie den in Ihrer Ordnerkonfiguration angegebenen LDAP-Server verwenden oder einen anderen LDAP-Server auswählen, der zur Authentifizierung verwendet werden soll. Wenn Sie einen anderen Server auswählen, müssen Ihre Benutzenden auf beiden LDAP-Servern vorhanden sein.
 
 Um den in Ihrer Ordnerkonfiguration angegebenen LDAP-Server zu verwenden, wählen Sie LDAP als Authentifizierungsanbieter aus und klicken Sie auf OK.
 
@@ -142,7 +142,7 @@ Ohne Just-in-time-Bereitstellung schlägt die Authentifizierung fehl, wenn ein B
 
 ### Just-in-time-Bereitstellung für eine Domain aktivieren {#enable-just-in-time-provisioning-for-a-domain}
 
-1. Schreiben Sie einen Dienstcontainer, der die IdentityCreator- und AssignmentProvider-Schnittstellen implementiert. (Siehe [Programmieren mit AEM](https://www.adobe.com/go/learn_aemforms_programming_63_de).
+1. Schreiben Sie einen Dienstcontainer, der die IdentityCreator- und AssignmentProvider-Schnittstellen implementiert. (Siehe [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).)
 1. Stellen Sie den Dienstcontainer auf dem Forms-Server bereit.
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 

@@ -2,10 +2,10 @@
 title: 'Schnellstartanleitung für Headless: Abrufen und Bereitstellen von Inhaltsfragmenten'
 description: Erfahren Sie, wie Sie die AEM Assets-REST-API zum Verwalten von Inhaltsfragmenten und die GraphQL-API für die Headless-Bereitstellung von Inhalten der Inhaltsfragmente verwenden.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: ht
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
+workflow-type: tm+mt
 source-wordcount: '555'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ Der Rest dieses Handbuchs konzentriert sich auf den GraphQL-Zugriff und die Bere
 
 ## Bereitstellen eines Inhaltsfragments mit GraphQL {#how-to-deliver-a-content-fragment}
 
-Informationsarchitektinnen und -architekten müssen Abfragen für ihre Kanalendpunkte entwerfen, um Inhalte bereitzustellen. Diese Abfragen dürfen pro Endpunkt und pro Modell nur einmal berücksichtigt werden. Für die Zwecke dieses Erste-Schritte-Handbuchs müssen Sie nur eine erstellen.
+Informationsarchitektinnen und -architekten müssen Abfragen für ihre Kanalendpunkte entwerfen, um Inhalte bereitzustellen. Diese Abfragen dürfen pro Endpunkt und Modell nur einmal berücksichtigt werden. Für die Zwecke dieses Erste-Schritte-Handbuchs dürfen Sie nur einen erstellen.
 
 1. Melden Sie sich bei AEM an und rufen Sie die [GraphiQL-Oberfläche](/help/sites-developing/headless/graphql-api/graphiql-ide.md) auf:
    * Beispiel: `http://<host>:<port>/aem/graphiql.html`.
