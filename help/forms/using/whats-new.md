@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
 source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '637'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Die [64-Bit-Version von AEM Forms Designer](/help/forms/using/installing-configu
 
 #### Verbinden eines adaptiven Formulars mit der Microsoft® SharePoint-Liste
 
-AEM Forms bietet eine vordefinierte Integration von [Formulardaten direkt an SharePoint List senden](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)), sodass Sie die Listenfunktionen von SharePoint verwenden können. Sie können die Microsoft® SharePoint-Liste als Datenquelle für ein Formulardatenmodell konfigurieren und die Übermittlungsaktion „Senden mit Formulardatenmodell“ verwenden, um ein adaptives Formular mit der SharePoint-Liste zu verbinden.
+AEM Forms bietet eine vorkonfigurierte Integration zum [direkten Versand von Formulardaten an eine SharePoint-Liste](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list), sodass Sie die Listenfunktionen von SharePoint verwenden können. Sie können die Microsoft® SharePoint-Liste als Datenquelle für ein Formulardatenmodell konfigurieren und die Übermittlungsaktion „Senden mit Formulardatenmodell“ verwenden, um ein adaptives Formular mit der SharePoint-Liste zu verbinden.
 
 #### Unterstützung zum Konfigurieren der Eigenschaften des Datensatzdokuments für adaptive Formularfragmente
 

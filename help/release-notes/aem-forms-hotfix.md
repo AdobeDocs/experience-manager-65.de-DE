@@ -3,9 +3,9 @@ title: Hotfixes für AEM Forms
 description: Enthält Informationen zum Herunterladen und Installieren eines Hotfixes für AEM Forms.
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '322'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
      </td>
     <td>
     <ul>
-    <li> Die vordefinierte Scribble-Signatur-Komponente kann für eine Vorschau in einem adaptiven Formular nicht gerendert werden. (FORMS-12073).</li>
+    <li> Bei der vorkonfigurierten Komponente „Freihandsignatur“ kann in einem adaptiven Formular keine Vorschau gerendert werden. (FORMS-12073).</li>
     </ul>
     </td>    
    </tr>
