@@ -3,10 +3,10 @@ title: Versionshinweise für [!DNL Adobe Experience Manager] 6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: a0ad6c5d61a971c5210f7d6dd7ef85e5effab44a
+source-git-commit: 4889c3c36ec86b1c9527cd2bc5eb77984e278342
 workflow-type: tm+mt
-source-wordcount: '3765'
-ht-degree: 95%
+source-wordcount: '3694'
+ht-degree: 93%
 
 ---
 
@@ -462,26 +462,12 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
 ### Bekannte Probleme bei AEM Forms {#known-issues-aem-forms-6520}
 
-* Nach der Aktualisierung von AEM 6.5 Forms Service Pack 18 (6.5.18.0) oder AEM 6.5 Forms Service Pack 19 (6.5.19.0) auf AEM 6.5 Forms Service Pack 20 (6.5.20.0) tritt bei Benutzenden ein JSP-Kompilierungsfehler auf. Sie können keine adaptiven Formulare öffnen oder erstellen, und bei anderen AEM-Schnittstellen wie dem Seiteneditor, der AEM Forms-Benutzeroberfläche und dem AEM Workflow-Editor treten Fehler auf. Es wird folgende Fehlermeldung ausgegeben:
-
-  `Unable to compile class for JSP: An error occurred at line: 162 in the jsp file: /libs/granite/ui/components/coral/foundation/anchorbutton/anchorbutton.jsp The method transformLinkInUriIfExternal(String) is undefined for the type ComponentHelper`
-
-  Gehen Sie folgendermaßen vor, um das Problem zu lösen:
-
-   1. Laden Sie den Hotfix für Ihr Betriebssystem herunter:
-      * [Hotfix für Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip)
-      * [Hotfix für Linux](/help/release-notes/assets/Hotfix-Linux.zip)
-      * [Hotfix für Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
-
-   1. Laden Sie das Paket (.zip) über den [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=de#accessing) hoch und installieren Sie es.
-   1. Starten Sie den AEM-Server neu und überprüfen Sie den Aktivierungsstatus aller Pakete, sobald der Neustart abgeschlossen ist. Sie können den Status der Pakete überwachen, indem Sie auf Folgendes zugreifen: `https://server:host/system/console/bundles`. Stellen Sie sicher, dass alle Pakete aktiv sind, bevor Sie mit weiteren Aufgaben fortfahren.
-
 * Der Vorbefüllungsdienst schlägt in interaktiven Kommunikationen mit einer NULL-Zeigerausnahme fehl. (CQDOC-21355)
 * Mit adaptiven Formularen können Sie benutzerdefinierte Funktionen mit ECMAScript Version 5 oder früher verwenden. Wenn eine benutzerdefinierte Funktion ECMAScript-Version 6 oder höher verwendet, z. B. „let“, „const“ oder Pfeilfunktionen, wird der Regeleditor möglicherweise nicht ordnungsgemäß geöffnet.
-* Benutzer können keinen Correspondence Management-Brief erstellen. Wenn ein Benutzer einen Brief erstellt, wird ein Fehler mit der Beschreibung &quot;Object Object Object&quot;angezeigt und der Brief wird nicht erstellt. Miniaturansichten für Layouts können auch nicht auf dem Bildschirm zur Brieferstellung geladen werden. (FORMS-13496)
-* Der interaktive Kommunikationsdienst erstellt das PDF-Dokument, die Benutzerdaten werden jedoch nicht automatisch in die Formularfelder eingefügt. Der Vorbefüllungs-Dienst funktioniert nicht wie erwartet. (FORMS-13413, FORMS-13493)
-* Der Editor &quot;Überprüfen und Korrigieren&quot;(RnC) des automated forms conversion-Dienstes kann nicht geladen werden. (FORMS-13491)
-* Nach der Aktualisierung von AEM 6.5 Forms Service Pack 18 (6.5.18.0) oder AEM 6.5 Forms Service Pack 19 (6.5.19.0) auf AEM 6.5 Forms Service Pack 20 (6.5.20.0) tritt bei Benutzenden ein JSP-Kompilierungsfehler auf. Sie können keine adaptiven Formulare öffnen oder erstellen und bei anderen AEM-Schnittstellen wie dem Seiteneditor, der AEM Forms-Benutzeroberfläche und AEM Workflow-Editor treten Fehler auf. (FORMS-13492)
+* Benutzer können keinen Correspondence Management-Brief erstellen. Wenn ein Benutzer einen Brief erstellt, wird ein Fehler mit der Beschreibung &quot;Object Object Object&quot;angezeigt und der Brief wird nicht erstellt. Miniaturansichten für Layouts können auch nicht auf dem Bildschirm zur Brieferstellung geladen werden. Sie können die [latest AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) um das Problem zu beheben. (FORMS-13496)
+* Der interaktive Kommunikationsdienst erstellt das PDF-Dokument, die Benutzerdaten werden jedoch nicht automatisch in die Formularfelder eingefügt. Der Vorbefüllungs-Dienst funktioniert nicht wie erwartet. Sie können die [latest AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) um das Problem zu beheben. (FORMS-13413, FORMS-13493)
+* Der Editor &quot;Überprüfen und Korrigieren&quot;(RnC) des automated forms conversion-Dienstes kann nicht geladen werden. Sie können die [latest AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) um das Problem zu beheben. (FORMS-13491)
+* Nach der Aktualisierung von AEM 6.5 Forms Service Pack 18 (6.5.18.0) oder AEM 6.5 Forms Service Pack 19 (6.5.19.0) auf AEM 6.5 Forms Service Pack 20 (6.5.20.0) tritt bei Benutzenden ein JSP-Kompilierungsfehler auf. Sie können keine adaptiven Formulare öffnen oder erstellen und bei anderen AEM-Schnittstellen wie dem Seiteneditor, der AEM Forms-Benutzeroberfläche und AEM Workflow-Editor treten Fehler auf. Sie können die [latest AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) um das Problem zu beheben. (FORMS-13492)
 
 Kunden können das neueste AEM 6.5 Forms Service Pack installieren, um die oben genannten Probleme zu beheben.  Hier finden Sie die direkten Links für die unterstützten Betriebssysteme:
 * [AEM 6.5 Forms Service Pack 20 für Apple macOS](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-OSX-PKG-6.0.1192.zip)
