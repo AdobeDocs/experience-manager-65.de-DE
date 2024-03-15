@@ -6,14 +6,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Transaction Reports
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 100%
+source-wordcount: '881'
+ht-degree: 95%
 
 ---
 
-# Anzeigen und Verstehen von Transaktionsberichten{#viewing-and-understanding-transaction-reports}
+# Anzeigen und Verstehen von Transaktionsberichten für AEM Forms auf OSGi{#viewing-and-understanding-transaction-reports}
 
 Mit Transaktionsberichten können Sie die Anzahl der übermittelten Formulare, verarbeiteten Dokumente und gerenderten Dokumente erfassen und nachverfolgen. Das Ziel bei der Verfolgung dieser Transaktionen ist es, eine fundierte Entscheidung über die Produktnutzung und die Neugewichtung der Investitionen in Hardware und Software treffen zu können. Weitere Informationen finden Sie unter [Übersicht über AEM Forms-Transaktionsberichte](../../forms/using/transaction-reports-overview.md).
 
@@ -88,6 +88,6 @@ Bei der Transaktionsberichterstattung werden alle im Bericht angezeigten Informa
 
 ## Ähnliche Artikel {#related-articles}
 
-* [Übersicht über Transaktionsberichte](../../forms/using/transaction-reports-overview.md)
-* [Abrechenbare APIs für Transaktionsberichte](../../forms/using/transaction-reports-billable-apis.md)
-* [Aufzeichnen einer Transaktion für benutzerdefinierte Implementierungen](/help/forms/using/record-transaction-custom-implementation.md)
+* [Übersicht über Transaktionsberichte für AEM Forms auf OSGi](../../forms/using/transaction-reports-overview.md)
+* [Transaktionsberichte Abrechnungsfähige APIs für AEM Forms auf OSGi](../../forms/using/transaction-reports-billable-apis.md)
+* [Zeichnen Sie eine Transaktion für benutzerdefinierte Implementierungen für AEM Forms auf OSGi auf](/help/forms/using/record-transaction-custom-implementation.md)

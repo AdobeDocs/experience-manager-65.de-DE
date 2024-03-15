@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: In der Dokumentation zu Adobe Experience Manager 6.5 erfahren Sie, wie die Software funktioniert und was sie für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: e39c52bc658e3a286272d1c94106b17a2f5579ad
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '7355'
-ht-degree: 97%
+source-wordcount: '7397'
+ht-degree: 96%
 
 ---
 
@@ -890,10 +890,16 @@ ht-degree: 97%
       + [Anzeigen von Komponenten basierend auf der verwendeten Vorlage](/help/forms/using/displaying-components-based-on-template.md)
       + [Erstellen benutzerdefinierter Themen für adaptive Formulare](/help/forms/using/creating-custom-adaptive-form-themes.md)
    + Transaktionsberichte {#transaction-reports}
-      + [Übersicht über Transaktionsberichte](/help/forms/using/transaction-reports-overview.md)
-      + [Anzeigen und Verstehen von Transaktionsberichten](/help/forms/using/viewing-and-understanding-transaction-reports.md)
-      + [Abrechenbare APIs für Transaktionsberichte](/help/forms/using/transaction-reports-billable-apis.md)
-      + [Aufzeichnen einer Transaktion für benutzerdefinierte Implementierungen](/help/forms/using/record-transaction-custom-implementation.md)
+      + [Übersicht über Transaktionsberichte](/help/forms/using/transaction-reports-overview-jee-osgi.md)
+      + Transaktionsberichte für AEM Forms unter OSGi {#transaction-reports-osgi}
+         + [Transaktionsberichte](/help/forms/using/transaction-reports-overview.md)
+         + [Anzeigen und Verstehen von Transaktionsberichten](/help/forms/using/viewing-and-understanding-transaction-reports.md)
+         + [Liste der abrechnungsfähigen APIs für AEM Forms unter OSGi](/help/forms/using/transaction-reports-billable-apis.md)
+         + [Aufzeichnen einer Transaktion für benutzerdefinierte Implementierungen](/help/forms/using/record-transaction-custom-implementation.md)
+      + Transaktionsberichte für AEM Forms on JEE {#transaction-reports-jee}
+         + [Aktivieren und Anzeigen von Transaktionsberichten](/help/forms/using/transaction-report-overview-jee.md)
+         + [Liste der abrechnungsfähigen APIs für AEM Forms on JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)
+         + [Eine Transaktion für benutzerdefinierte Komponenten-APIs aufzeichnen](/help/forms/using/record-transaction-custom-component-jee.md)
    + Administratorhilfe für AEM Forms on JEE {#administrator-help}
       + Erste Schritte {#get-started}
          + [Allgemeine AEM Forms-Einstellungen](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)

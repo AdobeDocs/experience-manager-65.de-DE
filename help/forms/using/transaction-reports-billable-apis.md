@@ -5,14 +5,15 @@ topic-tags: forms-manager
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Transaction Reports
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+exl-id: e92f1b59-79ef-40fa-af9a-7380cd701a75
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '1719'
-ht-degree: 100%
+source-wordcount: '1739'
+ht-degree: 97%
 
 ---
 
-# Abrechenbare APIs für Transaktionsberichte{#transaction-reports-billable-apis}
+# Transaktionsberichte Abrechnungsfähige APIs für AEM Forms auf OSGi {#transaction-reports-billable-apis}
 
 AEM Forms bietet mehrere APIs zum Senden von Formularen, zum Verarbeiten von Dokumenten und zum Rendern von Dokumenten. Einige APIs werden als Transaktionen verbucht, andere können kostenlos verwendet werden. Dieses Dokument enthält eine Liste aller APIs, die in einem Transaktionsbericht als Transaktionen verbucht werden. Im Folgenden finden Sie einige gängige Szenarien, in denen eine kostenpflichtige API verwendet wird:
 
@@ -500,6 +501,6 @@ Aktionen wie das Übermitteln eines PDF-Formulars, die Verwendung der Agent-Benu
 
 ## Ähnliche Artikel {#related-articles}
 
-* [Übersicht über Transaktionsberichte](../../forms/using/transaction-reports-overview.md)
-* [Anzeigen und Verstehen von Transaktionsberichten](../../forms/using/viewing-and-understanding-transaction-reports.md)
-* [Aufzeichnen einer Transaktion für benutzerdefinierte Implementierungen](/help/forms/using/record-transaction-custom-implementation.md)
+* [Übersicht über Transaktionsberichte für AEM Forms auf OSGi](../../forms/using/transaction-reports-overview.md)
+* [Anzeigen und Verstehen von Transaktionsberichten für AEM Forms auf OSGi](../../forms/using/viewing-and-understanding-transaction-reports.md)
+* [Zeichnen Sie eine Transaktion für benutzerdefinierte Implementierungen für AEM Forms auf OSGi auf](/help/forms/using/record-transaction-custom-implementation.md)

@@ -5,14 +5,15 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 feature: Transaction Reports
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+exl-id: b0c4f72a-e65f-453a-af66-5d9f98a9d6df
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 93%
+source-wordcount: '222'
+ht-degree: 76%
 
 ---
 
-# Aufzeichnen einer Transaktion für benutzerdefinierte Implementierungen {#record-a-transaction-for-custom-implementations}
+# Zeichnen Sie eine Transaktion für benutzerdefinierte Implementierungen für AEM Forms auf OSGi auf {#record-a-transaction-for-custom-implementations}
 
 Verwenden der TransactionRecorder-API, um Aktionen aufzuzeichnen, die nicht automatisch als Transaktionen gezählt werden
 
@@ -88,6 +89,6 @@ $.ajax({
 
 ## Ähnliche Artikel {#related-articles}
 
-* [Übersicht über Transaktionsberichte](/help/forms/using/transaction-reports-overview.md)
-* [Anzeigen und Verstehen von Transaktionsberichten](/help/forms/using/viewing-and-understanding-transaction-reports.md)
-* [Abrechenbare APIs für Transaktionsberichte](/help/forms/using/transaction-reports-billable-apis.md)
+* [Übersicht über Transaktionsberichte für AEM Forms auf OSGi](/help/forms/using/transaction-reports-overview.md)
+* [Anzeigen und Verstehen von Transaktionsberichten für AEM Forms auf OSGi](/help/forms/using/viewing-and-understanding-transaction-reports.md)
+* [Transaktionsberichte Abrechnungsfähige APIs für AEM Forms auf OSGi](/help/forms/using/transaction-reports-billable-apis.md)
