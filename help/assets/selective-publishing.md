@@ -9,7 +9,8 @@ docset: aem65
 role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: Publishing
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3000'
 ht-degree: 96%
@@ -220,7 +221,7 @@ Optional können Sie diese Kontrollkästchen zusammen mit dem Suchprädikat **[!
    | Ausgewählte Aktion | Einstellung für die Veröffentlichung von Assets in der Dynamic Media-Konfiguration | Asset-Status |
    | --- | --- | --- |
    | Veröffentlichen | Sofort oder bei Aktivierung | In Experience Manager und Dynamic Media veröffentlicht. |
-   | Veröffentlichen | Selektive Veröffentlichung | Nur in Experience Manager veröffentlicht. |
+   | Publish | Selektive Veröffentlichung | Nur in Experience Manager veröffentlicht. |
    | Veröffentlichung aufheben | Sofort oder bei Aktivierung | Veröffentlichung in Experience Manager und Dynamic Media aufgehoben. |
    | Veröffentlichung aufheben | Selektive Veröffentlichung | Veröffentlichung nur in Experience Manager aufgehoben. |
    | In Dynamic Media veröffentlichen | Sofort oder bei Aktivierung | Nicht in Experience Manager oder Dynamic Media oder in beiden veröffentlicht. |

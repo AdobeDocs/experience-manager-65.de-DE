@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1790'
 ht-degree: 98%
@@ -117,7 +118,7 @@ Im Abschnitt **ObservationQueueMaxLength** wird die Anzahl der Ereignisse in der
 1. Platzieren Sie sie im Ordner „/crx-­‐quickstart/install“.
 
 >[!NOTE]
->Siehe [AEM 6.x | Tipps zur Leistungsoptimierung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
+>Siehe [AEM 6.x | Tipps zur Leistungsoptimierung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=de)
 
 Die Standardeinstellung ist 10.000, aber für die meisten Bereitstellungen ist eine Anhebung auf 20.000 oder 50.000 erforderlich.
 
@@ -145,7 +146,7 @@ Nach dem Ausführen von Leistungstests auf der Authoring-Instanz müssen alle fe
 * Prüfen Sie das Fehlerprotokoll auf Fehler oder Warnungen. Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md).
 * Überwachen Sie die Hardware-Ressourcen des Systems, z. B. Speicher- und CPU-Auslastung oder E/A-Vorgänge von Festplatten bzw. Netzwerk. Diese Ressourcen sind häufig die Ursachen für Leistungsengpässe.
 * Optimieren Sie die Architektur der Seiten und ihre Adressierung, um die Verwendung von URL-Parametern zu minimieren, damit ein Höchstmaß an Zwischenspeicherung ermöglicht wird.
-* Befolgen Sie die Dokumentationen [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) und [Tipps zur Leistungsoptimierung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
+* Befolgen Sie die Dokumentationen [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) und [Tipps zur Leistungsoptimierung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=de).
 
 * Wenn beim Bearbeiten bestimmter Seiten oder Komponenten in Authoring-Instanzen Probleme auftreten, sehen Sie sich die fragliche Seite mithilfe des Entwicklermodus der Touch-optimierten Benutzeroberfläche an. Dadurch erhalten Sie eine Aufschlüsselung der einzelnen Inhaltsbereiche auf der Seite und ihrer Ladezeiten.
 * Minimieren Sie alle JS- und CSS-Dateien auf der Site. Siehe diesen [Blogpost](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).

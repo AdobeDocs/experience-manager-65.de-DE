@@ -6,10 +6,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: b7461d5c-95d1-4da2-9d2a-f54c410a87f9
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 10%
+ht-degree: 13%
 
 ---
 
@@ -24,7 +25,7 @@ Endpunkte können nur zu Diensten hinzugefügt werden. Ein Endpunkt kann nicht a
 >Es wird empfohlen, beim Hinzufügen von Endpunkten eindeutige Namen zu verwenden.
 
 1. Klicken Sie in der Administration-Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
-1. Klicken Sie auf der Seite &quot;Dienstverwaltung&quot;auf den zu konfigurierenden Dienst.
+1. Klicken Sie auf der Seite „Dienstverwaltung“ auf den zu konfigurierenden Dienst.
 1. Wählen Sie in der Liste auf der Registerkarte &quot;Endpunkte&quot;den Typ des hinzuzufügenden Endpunkts aus und klicken Sie auf &quot;Hinzufügen&quot;.
 1. Konfigurieren Sie abhängig vom Endpunkttyp zusätzliche Endpunkteinstellungen.
 

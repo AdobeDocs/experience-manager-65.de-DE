@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: e562b289-5d8b-4fa8-ad1c-fff5f807a45e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: ht
-source-wordcount: '855'
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '862'
 ht-degree: 100%
 
 ---
@@ -115,7 +116,7 @@ Auf der Registerkarte „Assets“ gibt es eine Dropdown-Liste zum Auswählen be
 
 ![chlimage_1-152](assets/chlimage_1-152.png)
 
-### Seitenbereich – Komponenten {#side-panel-components}
+### Seitliches Panel – Komponenten {#side-panel-components}
 
 Auf der Registerkarte „Komponenten“ können Sie aus einer Reihe von Komponenten auswählen. Sie können auch nach einem bestimmten Begriff filtern oder eine Gruppe auswählen.
 
@@ -152,7 +153,7 @@ Der Ebenenschalter ist ein Dropdown-Menü in der Symbolleiste (am oberen Fenster
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
-### Komponentensymbolleiste {#component-toolbar}
+### Komponenten-Symbolleiste {#component-toolbar}
 
 Jede Instanz einer Komponente zeigt die zugehörige Symbolleiste an, wenn Sie darauf klicken (einmaliger Klick oder langsamer Doppelklick). Die Symbolleiste enthält spezifische Aktionen (z. B. „Kopieren“, „Einfügen“, „Editor öffnen“), die für die Komponenteninstanz (Bearbeitbar) auf der Seite verfügbar sind.
 

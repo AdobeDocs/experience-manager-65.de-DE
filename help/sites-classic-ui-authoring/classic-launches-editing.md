@@ -1,16 +1,17 @@
 ---
 title: Bearbeiten von Launches
-description: Wenn ein Launch für eine Seite (oder mehrere Seiten) erstellt wurde, können Sie den Inhalt in der Launch Copy der Seiten bearbeiten.
+description: Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, können Sie den Inhalt in der Launch-Kopie der Seiten bearbeiten.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 76%
+source-wordcount: '281'
+ht-degree: 93%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 76%
 
 ## Bearbeiten von Launch-Seiten {#editing-launch-pages}
 
-Wenn ein Launch für eine Seite (oder mehrere Seiten) erstellt wurde, können Sie den Inhalt in der Launch Copy der Seiten bearbeiten.
+Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, können Sie den Inhalt in der Launch-Kopie der Seiten bearbeiten.
 
 1. Öffnen Sie die Seite zur Bearbeitung.
 1. Wählen Sie im Sidekick die Registerkarte **Versionierung** aus und erweitern Sie dann die Gruppe **Launches**. Der Titel des Launches, der derzeit bearbeitet wird, verwendet eine fette Schriftart.

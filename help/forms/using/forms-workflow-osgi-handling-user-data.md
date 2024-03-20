@@ -5,10 +5,11 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '986'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -109,7 +110,7 @@ Führen Sie die folgenden Schritte aus, um Benutzerdaten für eine Workflow-Inst
 
 1. Navigieren Sie zu den Speicherorten für Entwürfe und Verlauf für die Workflow-Instanz.
 
-   Beispiel:
+   Zum Beispiel:
 
    `/var/fd/dashboard/instances/server0/2018-04-09/_var_workflow_instances_server0_2018-04-09_basicmodel_54/draft/`
 
@@ -136,7 +137,7 @@ Wenn Sie AEM-Admin sind, können Sie Benutzerdaten aus Workflow-Instanzen lösch
 
    1. Navigieren Sie zu `https://'[server]:[port]'/aem/start.html` und melden Sie sich als Administrator an.
    1. Navigieren Sie zu **[!UICONTROL Tools > Workflow > Instanzen]**.
-   1. Wählen Sie relevante Workflow-Instanzen für den Benutzer aus und wählen Sie **[!UICONTROL Beenden]** , um laufende Instanzen zu beenden.
+   1. Wählen Sie relevante Workflow-Instanzen für die Benutzerin bzw. den Benutzer und dann **[!UICONTROL Beenden]** aus, um laufende Instanzen zu beenden.
 
       Weitere Informationen zum Arbeiten mit Workflow-Instanzen finden Sie unter [Verwalten von Workflow-Instanzen](/help/sites-administering/workflows-administering.md).
 

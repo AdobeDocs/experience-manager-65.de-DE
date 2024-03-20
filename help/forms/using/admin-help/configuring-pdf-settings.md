@@ -7,10 +7,11 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '7403'
-ht-degree: 35%
+ht-degree: 36%
 
 ---
 
@@ -111,7 +112,7 @@ Sie können die PDF-Einstellungen auf dem PDF Generator-Server verfügbar machen
 
 1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;PDF Generator&quot;> &quot;Adobe PDF-Einstellungen&quot;und dann auf &quot;Hochladen&quot;.
 1. Klicken Sie auf der Seite &quot;Adobe PDF-Einstellung hochladen&quot;auf &quot;Durchsuchen&quot;, suchen Sie die PDF-Einstellungsdatei und klicken Sie auf &quot;Öffnen&quot;.
-1. Klicken Sie auf OK und dann erneut auf OK .
+1. Klicken Sie auf „OK“ und dann erneut auf „OK“.
 
 ## PDF-Einstellungen löschen {#delete-pdf-settings}
 
@@ -230,7 +231,7 @@ Beachten Sie auch, ob Benutzer eine Seite vergrößern müssen. Wenn Sie beispie
 
 >[!NOTE]
 >
->Das Neuberechnen von Schwarzweißbildern kann zu unerwarteten Anzeigeergebnissen führen, z. B. zu keiner Bildanzeige. Wenn dieses Problem auftritt, deaktivieren Sie die Neuberechnung und konvertieren Sie die Datei erneut. Dieses Problem tritt am ehesten bei der Teilberechnung und am ehesten bei der bikubischen Neuberechnung auf.
+>Das Neuberechnen von Schwarzweißbildern kann zu unerwarteten Anzeigeergebnissen führen, z. B. zu keiner Bildanzeige. Wenn dieses Problem auftritt, deaktivieren Sie die Neuberechnung und konvertieren Sie die Datei erneut. Dieses Problem tritt am ehesten bei der Teilberechnung und am ehesten bei der bikubischen Neuberechnung auf.
 
 Diese Tabelle zeigt die Typen von Druckern und ihre in dpi gemessene Auflösung, ihre standardmäßige Bildschirmausrichtung, gemessen in lpi (Lines per Inch, Zeilen pro Zoll), und eine Neuberechnungsauflösung für Bilder, die in ppi (Pixels per Inch) gemessen werden. Um beispielsweise auf einem 600-dpi-Laserdrucker zu drucken, geben Sie 170 für die Auflösung ein, bei der Bilder neu aufgenommen werden sollen.
 
@@ -238,7 +239,7 @@ Diese Tabelle zeigt die Typen von Druckern und ihre in dpi gemessene Auflösung,
  <tbody>
   <tr>
    <th><p>Druckerauflösung</p> </th>
-   <th><p>Standardzeilenbildschirm</p> </th>
+   <th><p>Standardrasterweite</p> </th>
    <th><p>Bildauflösung</p> </th>
   </tr>
   <tr>
@@ -300,7 +301,7 @@ Die Schriftartoptionen geben an, welche Schriftarten in eine PDF-Datei eingebett
 ### Festlegen der einzubettenden Schriftarten {#specify-which-fonts-to-embed}
 
 1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;PDF Generator&quot;> &quot;Adobe PDF-Einstellungen&quot;.
-1. Klicken Sie auf Neu oder auf den Namen einer Einstellung.
+1. Klicken Sie auf „Neu“ oder auf den Namen einer Einstellung.
 1. Klicken Sie auf &quot;Schriftarten&quot;und deaktivieren Sie &quot;Alle Schriftarten einbetten&quot;.
 1. Wählen Sie in der Liste &quot;Schriftquelle&quot;eine Schriftquelle aus und klicken Sie auf Los , um die Liste der Schriftarten im Feld auf der linken Seite zu aktualisieren.
 1. Klicken Sie links im Feld auf eine Schriftart. Klicken Sie dann neben dem entsprechenden Feld auf Hinzufügen , um es in die Liste Immer einbetten oder Nie einbetten zu verschieben. Wiederholen Sie diese Schritte für jede Schriftart. Klicken Sie bei gedrückter Strg-Taste, um mehrere zu verschiebende Schriftarten auszuwählen.
@@ -558,14 +559,14 @@ Diese Dateien haben viele Zwecke. Beispielsweise können Prologue-Dateien so bea
 ### Prologue- oder Epilogue-Datei herunterladen {#download-a-prologue-or-epilogue-file}
 
 1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;PDF Generator&quot;> &quot;Adobe PDF-Einstellungen&quot;.
-1. Klicken Sie auf Neu oder auf den Namen einer Einstellung.
+1. Klicken Sie auf „Neu“ oder auf den Namen einer Einstellung.
 1. Klicken Sie auf &quot;Erweitert&quot;und dann neben der Option Prologue.ps und Epilogue.ps verwenden auf &quot;Herunterladen&quot;.
 1. Klicken Sie auf der Seite &quot;Prologue- und Epilogue-Dateien herunterladen&quot;auf Prologue.ps oder Epilogue.ps und klicken Sie auf Speichern.
 
 ### Eine Prologue- oder Epilogue-Datei hochladen {#upload-a-prologue-or-epilogue-file}
 
 1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;PDF Generator&quot;> &quot;Adobe PDF-Einstellungen&quot;.
-1. Klicken Sie auf Neu oder auf den Namen einer Einstellung.
+1. Klicken Sie auf „Neu“ oder auf den Namen einer Einstellung.
 1. Klicken Sie auf &quot;Erweitert&quot;und dann neben der Option &quot;Prologue.ps und Epilogue.ps verwenden&quot;auf &quot;Hochladen&quot;.
 1. Klicken Sie auf der Seite &quot;Prologue- und Epilogue-Dateien hochladen&quot;auf Durchsuchen , um eine Prologue- oder Epilogue-Datei auszuwählen.
 1. Suchen Sie die Datei und klicken Sie auf &quot;Öffnen&quot;.

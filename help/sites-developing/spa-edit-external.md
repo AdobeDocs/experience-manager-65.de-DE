@@ -2,7 +2,8 @@
 title: Bearbeiten externer SPA in Adobe Experience Manager
 description: In diesem Dokument werden die empfohlenen Schritte zum Hochladen einer eigenständigen SPA in eine Adobe Experience Manager-Instanz, zum Hinzufügen bearbeitbarer Inhaltsabschnitte und zum Aktivieren der Bearbeitung beschrieben.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2391'
 ht-degree: 86%

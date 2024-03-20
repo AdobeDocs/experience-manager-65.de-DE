@@ -7,7 +7,8 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '10266'
 ht-degree: 27%
@@ -73,13 +74,13 @@ Höhe: Minimum = 450; Maximum = 800
 
 Ihre AEM Forms-Umgebung enthält einen oder mehrere Administratorbenutzer, die über die entsprechenden Berechtigungen zum Erstellen von Benutzern und Gruppen verfügen. Wenn Ihr Unternehmen Document Security verwendet, muss mindestens einem Administrator auch die Berechtigung zum Verwalten eingeladener und lokaler Benutzer zugewiesen werden.
 
-Administratoren müssen außerdem über die Rolle &quot;Administration Console-Benutzer&quot;verfügen, um auf Administration Console zugreifen zu können. (Siehe [Rollen erstellen und konfigurieren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).
+Administratoren müssen außerdem über die Rolle &quot;Administration Console-Benutzer&quot;verfügen, um auf Administration Console zugreifen zu können. (Siehe [Erstellen und Konfigurieren von Rollen](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
 
 ### Sichtbare Benutzer und Gruppen konfigurieren {#configuring-visible-users-and-groups}
 
 Um bei Suchen anhand von Benutzerrichtlinien Benutzer und Gruppen in ausgewählten Domains anzuzeigen, muss ein Superadministrator oder Richtliniensatzadministrator (in User Management erstellte) Domains auswählen und der Liste der sichtbaren Benutzer und Gruppen für jeden Richtliniensatz hinzufügen.
 
-Diese Liste wird dem Richtliniensatzkoordinator angezeigt und dient zum Einschränken der Domains, die der Endbenutzer beim Auswählen von Benutzern oder Gruppen durchsuchen kann, die Richtlinien hinzugefügt werden sollen. Wenn diese Aufgabe nicht ausgeführt wird, findet der Richtliniensatzkoordinator keine Benutzer oder Gruppen, die der Richtlinie hinzugefügt werden sollen. Für jeden Richtliniensatz kann es mehr als einen Richtliniensatzkoordinator geben.
+Diese Liste wird dem Richtliniensatzkoordinator angezeigt und dient zum Einschränken der Domains, die der Endbenutzer beim Auswählen von Benutzern oder Gruppen durchsuchen kann, die Richtlinien hinzugefügt werden sollen. Wird diese Aufgabe nicht durchgeführt, kann die Richtliniensatzkoordinatorin oder der Richtliniensatzkoordinator keine der Richtlinie hinzuzufügenden Benutzenden oder Gruppen finden. Für jeden Richtliniensatz kann es mehrere Richtliniensatzkoordinierende geben.
 
 1. Nachdem Sie Ihre AEM Forms-Umgebung mit Document Security installiert und konfiguriert haben, richten Sie alle entsprechenden Domänen in User Management ein. <!-- Fix broken link (See Setting up and managing domains) -->
 

@@ -6,7 +6,8 @@ content-type: reference
 topic-tags: author, correspondence-management
 feature: Adaptive Forms, Foundation Components
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
-source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 100%
@@ -46,10 +47,10 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 
 >[!NOTE]
 >
->Mehrfachauswahl auf einem Desktop-Gerät:
+Mehrfachauswahl auf einem Desktop-Gerät:
 >
->* Windows: Strg+Klick auf die gewünschten Komponenten.
->* macOS: Befehl+Klick auf die erforderlichen Komponenten.
+* Windows: Strg+Klick auf die gewünschten Komponenten.
+* macOS: Befehl+Klick auf die erforderlichen Komponenten.
 >
 
 ## Themen-Editor  {#themeeditor}
@@ -64,7 +65,7 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 
 >[!NOTE]
 >
->Mit „&amp;ast;“ markierte Tastaturbefehle können unter macOS sowohl mit der Strg- als auch mit der Befehlstaste verwendet werden.
+Mit „&amp;ast;“ markierte Tastaturbefehle können unter macOS sowohl mit der Strg- als auch mit der Befehlstaste verwendet werden.
 
 ## Inhalts-Browser  {#contentbrowser}
 

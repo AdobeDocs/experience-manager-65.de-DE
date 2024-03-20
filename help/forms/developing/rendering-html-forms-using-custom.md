@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: 5fa385a7-f030-4c0c-8938-0991d02ef361
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1682'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
@@ -109,7 +110,7 @@ Rendern Sie ein HTML-Formular, das eine benutzerdefinierte CSS-Datei verwendet, 
 
 1. Rendern Sie ein HTML-Formular
 
-   Rufen Sie die `FormsServiceClient` -Objekt `(Deprecated) (Deprecated) renderHTMLForm` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `(Deprecated) (Deprecated) renderHTMLForm` des Objekts `FormsServiceClient` auf und geben Sie die folgenden Werte weiter:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `TransformTo`-Auflistungswert, der den HTML-Voreinstellungstyp angibt. Um beispielsweise ein HTML-Formular zu rendern, das mit Dynamic HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
@@ -127,7 +128,7 @@ Rendern Sie ein HTML-Formular, das eine benutzerdefinierte CSS-Datei verwendet, 
    * Ermitteln Sie den Inhaltstyp des `com.adobe.idp.Document`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
    * Legen Sie die `javax.servlet.http.HttpServletResponse` Inhaltstyp des Objekts durch Aufrufen seiner `setContentType` -Methode verwenden und den Inhaltstyp der `com.adobe.idp.Document` -Objekt.
    * Erstellen Sie eine `javax.servlet.ServletOutputStream` -Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser durch Aufrufen der `javax.servlet.h\ttp.HttpServletResponse` -Objekt `getOutputStream` -Methode.
-   * Erstellen Sie eine `java.io.InputStream` -Objekt durch Aufrufen der `com.adobe.idp.Document` -Objekt `getInputStream` -Methode.
+   * Erstellen Sie ein Objekt vom Typ `java.io.InputStream`, indem Sie die Methode `getInputStream` des Objekts `com.adobe.idp.Document` aufrufen.
    * Erstellen Sie ein Byte-Array und füllen Sie es mit dem Formulardatenstream, indem Sie die `InputStream` -Objekt `read` -Methode verwenden und das Byte-Array als Argument übergeben.
    * Rufen Sie die `javax.servlet.ServletOutputStream` -Objekt `write` -Methode zum Senden des Formulardatenstreams an den Client-Webbrowser. Übergeben Sie das Byte-Array an die Methode `write`.
 
@@ -161,7 +162,7 @@ Rendern Sie ein HTML-Formular, das eine benutzerdefinierte CSS-Datei verwendet, 
 
 1. Rendern Sie ein HTML-Formular
 
-   Rufen Sie die `FormsService` -Objekt `(Deprecated) renderHTMLForm` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `(Deprecated) renderHTMLForm` des Objekts `FormsService` auf und geben Sie die folgenden Werte weiter:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `TransformTo`-Auflistungswert, der den HTML-Voreinstellungstyp angibt. Um beispielsweise ein HTML-Formular zu rendern, das mit Dynamic HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.

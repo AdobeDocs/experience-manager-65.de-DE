@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a3a6a06d-ec90-4147-a5f0-e776a086ee12
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1822'
-ht-degree: 82%
+ht-degree: 84%
 
 ---
 
@@ -117,7 +118,7 @@ So rendern Sie ein Formular anhand eines Werts mithilfe der Forms-API (Java):
 
 1. Rendern eines Formulars anhand eines Werts
 
-   Rufen Sie die `FormsServiceClient` -Objekt `renderPDFForm` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `renderPDFForm` des Objekts `FormsServiceClient` auf und geben Sie die folgenden Werte weiter:
 
    * Ein leerer Zeichenfolgenwert. (Normalerweise erfordert dieser Parameter einen Zeichenfolgenwert, der den Namen des Formularentwurfs angibt.)
    * Ein `com.adobe.idp.Document`-Objekt, das den Formularentwurf enthält. Normalerweise ist dieser Parameterwert für Daten reserviert, die mit dem Formular zusammengeführt werden.
@@ -133,7 +134,7 @@ So rendern Sie ein Formular anhand eines Werts mithilfe der Forms-API (Java):
    * Ermitteln Sie den Inhaltstyp des `com.adobe.idp.Document`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
    * Legen Sie die `javax.servlet.http.HttpServletResponse` Inhaltstyp des Objekts durch Aufrufen seiner `setContentType` -Methode verwenden und den Inhaltstyp der `com.adobe.idp.Document` -Objekt.
    * Erstellen Sie eine `javax.servlet.ServletOutputStream` -Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser durch Aufrufen der `javax.servlet.http.HttpServletResponse` -Objekt `getOutputStream` -Methode.
-   * Erstellen Sie eine `java.io.InputStream` -Objekt durch Aufrufen der `com.adobe.idp.Document` -Objekt `getInputStream` -Methode.
+   * Erstellen Sie ein Objekt vom Typ `java.io.InputStream`, indem Sie die Methode `getInputStream` des Objekts `com.adobe.idp.Document` aufrufen.
    * Erstellen Sie ein Byte-Array und weisen Sie die Größe des `InputStream`-Objekts zu. Rufen Sie die `InputStream` -Objekt `available` -Methode, um die Größe der `InputStream` -Objekt.
    * Füllen Sie das Byte-Array mit dem Formulardatenstream, indem Sie die `InputStream` -Objekt `read`-Methode verwenden und das Byte-Array als Argument übergeben.
    * Rufen Sie die `javax.servlet.ServletOutputStream` -Objekt `write` -Methode zum Senden des Formulardatenstreams an den Client-Webbrowser. Übergeben Sie das Byte-Array an die Methode `write`.
@@ -171,7 +172,7 @@ So rendern Sie ein Formular anhand des Werts mithilfe der Forms-API (Webservice)
 
 1. Rendern eines Formulars anhand eines Werts
 
-   Rufen Sie die `FormsService` -Objekt `renderPDFForm` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `renderPDFForm` des Objekts `FormsService` auf und geben Sie die folgenden Werte weiter:
 
    * Ein leerer Zeichenfolgenwert. (Normalerweise erfordert dieser Parameter einen Zeichenfolgenwert, der den Namen des Formularentwurfs angibt.)
    * Ein `BLOB`-Objekt, das den Formularentwurf enthält. Normalerweise ist dieser Parameterwert für Daten reserviert, die mit dem Formular zusammengeführt werden.

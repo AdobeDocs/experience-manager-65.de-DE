@@ -1,16 +1,17 @@
 ---
 title: Multi-Store-Einrichtung in Commerce
-description: Erfahren Sie, wie Sie AEM mehrere Store-Ansichten von Adobe Commerce zuordnen. Dadurch können Projekte auch mehrinstanzenfähige und mehrsprachige Anwendungsfälle unterstützen.
+description: Erfahren Sie, wie Sie AEM mehrere Store-Ansichten von Adobe Commerce zuordnen. Dadurch können Projekte auch mehrmandantenfähige und mehrsprachige Anwendungsfälle unterstützen.
 sub-product: Commerce
 doc-type: technical-video
 activity: setup
 audience: administrator
 feature: Commerce Integration Framework
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 86%
+ht-degree: 92%
 
 ---
 
@@ -36,11 +37,11 @@ Gehen Sie wie folgt vor, um eine AEM-Site und die AEM-CIF-Kernkomponenten zu ein
 
 3. Erstellen Sie eine untergeordnete Konfiguration der CIF-Cloud Service-Konfiguration wie folgt:
 
-   * Navigieren Sie AEM zu Tools > Allgemein > [Konfigurationsbrowser](/help/sites-administering/configurations.md#using-configuration-browser)
+   * Wechseln Sie in AEM zu „Tools“ > „Allgemein“ > [Konfigurations-Browser](/help/sites-administering/configurations.md#using-configuration-browser).
    * Wählen Sie die von Ihnen erstellte Basiskonfiguration aus.
    * Erstellen Sie eine Konfiguration mithilfe der unter Punkt 2 beschriebenen Schritte.
 
-   Diese neue Konfiguration wird als untergeordnete Konfiguration der Basiskonfiguration erstellt. Sie können jetzt unter Tools > Allgemein > Konfigurationsbrowser die Konfigurationseinstellungen erstellen.
+   Diese neue Konfiguration wird als untergeordnete Konfiguration der Basiskonfiguration erstellt. Sie können nun die Konfigurationseinstellungen unter „Tools“ > „Allgemein“ > „Konfigurationsbrowser“ erstellen.
 
    >[!TIP]
    >

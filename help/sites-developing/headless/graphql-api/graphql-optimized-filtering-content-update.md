@@ -1,13 +1,14 @@
 ---
 title: Aktualisieren von Inhaltsfragmenten für optimierte GraphQL-Filterung
-description: Erfahren Sie, wie Sie Ihre Inhaltsfragmente für optimierte GraphQL-Filterung in Adobe Experience Manager für die Bereitstellung von Headless-Inhalten aktualisieren.
-source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
+description: Erfahren Sie, wie Sie Ihre Inhaltsfragmente für optimiertes GraphQL-Filtern in Adobe Experience Manager für die Bereitstellung Headless Content aktualisieren.
+exl-id: d78ec052-c091-49ca-9f36-a3d24eb9edd5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 42%
+source-wordcount: '255'
+ht-degree: 37%
 
 ---
-
 
 # Aktualisieren von Inhaltsfragmenten für optimierte GraphQL-Filterung {#updating-content-fragments-for-optimized-graphql-filtering}
 
@@ -25,7 +26,7 @@ Stellen Sie sicher, dass Sie mindestens Version 6.5.17.0 von AEM haben.
 
 Gehen Sie wie folgt vor, um das Verfahren auszuführen:
 
-1. [Konfigurieren der OSGi-Einstellungen](/help/sites-deploying/configuring-osgi.md) für **Konfiguration des Inhaltsfragmentmigrationsauftrags**:
+1. [Konfigurieren der OSGi-Einstellungen](/help/sites-deploying/configuring-osgi.md) für die **Konfiguration des Inhaltsfragmentmigrationsauftrags**:
 
    ![OSGi-Konfiguration für die Migration von Inhaltsfragmenten](assets/cfm-graphql-update-01.png "OSGi-Konfiguration für die Migration von Inhaltsfragmenten")
 

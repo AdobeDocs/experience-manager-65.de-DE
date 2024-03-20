@@ -7,10 +7,11 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4825'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -37,7 +38,7 @@ Ausführliche Informationen zur Funktionsweise von bearbeitbaren Vorlagen auf te
 
 >[!NOTE]
 >
->Der **Vorlageneditor** unterstützt kein Targeting direkt auf Vorlagenstufe. Seiten, die auf der Basis einer bearbeitbaren Vorlage erstellt wurden, können als Zielgruppe ausgewählt werden, die Vorlagen selbst können jedoch nicht erstellt werden.
+>Der **Vorlageneditor** unterstützt kein Targeting direkt auf Vorlagenstufe. Seiten, die auf der Grundlage einer bearbeitbaren Vorlage erstellt wurden, können als Ziel angegeben werden, aber die Vorlagen selber nicht.
 
 >[!CAUTION]
 >
@@ -116,16 +117,16 @@ Bei Verwendung einer Vorlage für [Erstellen einer Seite](/help/sites-authoring/
 
 ## Erstellen und Verwalten von Vorlagen {#creating-and-managing-templates}
 
-Beim Erstellen einer bearbeitbaren Vorlage haben Sie folgende Möglichkeiten:
+Gehen Sie wie folgt vor, um eine bearbeitbare Vorlage zu erstellen:
 
-* Verwenden Sie die **Vorlage** Konsole. Dies ist im Abschnitt **Allgemein** Abschnitt **Instrumente** Konsole.
+* Verwenden Sie die **Vorlagen**-Konsole. Dies ist im Abschnitt **Allgemein** der **Tools**-Konsole verfügbar.
 
    * Oder direkt unter: [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * Erstellen Sie bei Bedarf [einen Ordner für die Vorlagen](#creating-a-template-folder-admin).
 * [Erstellen einer Vorlage](#creatinganewtemplateauthor), der anfangs leer ist
 
-* [Zusätzliche Eigenschaften definieren](#definingtemplatepropertiesauthor) gegebenenfalls für die Vorlage
+* [Definieren Sie ggf. weitere Eigenschaften](#definingtemplatepropertiesauthor) für die Vorlage.
 * [Bearbeiten Sie die Vorlage](#editingtemplates), um Folgendes zu definieren:
 
    * [Struktur](#editingatemplatestructureauthor) – vordefinierter Inhalt, der auf Seiten, die mit der Vorlage erstellt werden, nicht geändert werden kann.
@@ -149,7 +150,7 @@ Beim Erstellen einer bearbeitbaren Vorlage haben Sie folgende Möglichkeiten:
 
 Für Ihr Projekt sollte ein Vorlagenordner für Ihre projektspezifischen Vorlagen erstellt werden. Dies ist eine Aufgabe für Admins, die im Dokument [Bearbeitbare Seitenvorlagen](/help/sites-developing/page-templates-editable.md#template-folders) beschrieben wird.
 
-### Erstellen einer neuen Vorlage – Vorlagenautor {#creating-a-new-template-template-author}
+### Erstellen einer neuen Vorlage – Vorlagenautorin bzw. -autor {#creating-a-new-template-template-author}
 
 1. Öffnen Sie die **Vorlagenkonsole** (via **Tools >** **Allgemein**) und navigieren Sie dann zum gewünschten Ordner.
 
@@ -196,7 +197,7 @@ Eine Vorlage kann die folgenden Eigenschaften aufweisen:
 
 * Beschreibung
 
-   * Eine optionale Beschreibung, die weitere Informationen über die Vorlage und ihre Verwendung bereitstellt, die beispielsweise im **Seite erstellen** Assistent.
+   * Eine optionale Beschreibung mit weiteren Informationen zur Vorlage und deren Verwendung, die beispielsweise im **Seitenerstellungsassistenten** angezeigt werden können.
 
 So zeigen Sie die Eigenschaften an bzw. bearbeiten sie:
 
@@ -230,7 +231,7 @@ So definieren Sie die Miniaturansicht für eine Vorlage:
 
 1. Wenn Sie mit der Miniaturansicht zufrieden sind, klicken Sie auf **Speichern und schließen**.
 
-### Aktivieren und Zulassen einer Vorlage – Vorlagenautor {#enabling-and-allowing-a-template-template-author}
+### Aktivieren und Zulassen einer Vorlage – Vorlagenautorin bzw. -autor {#enabling-and-allowing-a-template-template-author}
 
 Um beim Erstellen einer Seite eine Vorlage zu verwenden, gehen Sie wie folgt vor:
 
@@ -292,7 +293,7 @@ Da auf die Vorlage verwiesen wird, wenn eine Seite dargestellt wird, muss die vo
 
 1. Wählen Sie **Veröffentlichen** in der Symbolleiste, um den Vorgang abzuschließen.
 
-## Bearbeiten von Vorlagen - Vorlagenautoren {#editing-templates-template-authors}
+## Bearbeiten von Vorlagen – Vorlagenautorinnen und -autoren {#editing-templates-template-authors}
 
 Beim Erstellen oder Bearbeiten einer Vorlage können verschiedene Aspekte definiert werden. Das Bearbeiten von Vorlagen ähnelt der Seitenbearbeitung.
 
@@ -599,9 +600,9 @@ Obwohl der gesamte Inhalt, der im Modus **Struktur** erstellt wird, im Modus **A
 
 >[!NOTE]
 >
->Der ursprüngliche Inhalt dient zum Vorbereiten von Komponenten und dem Seitenlayout, die als Ausgangspunkt für die Erstellung des Inhalts dienen. Dies soll nicht der eigentliche Inhalt sein, der unverändert bleibt. Aus diesem Grund können anfängliche Inhalte nicht übersetzt werden.
+>Der ursprüngliche Inhalt dient zum Vorbereiten von Komponenten und dem Seitenlayout, die als Ausgangspunkt für die Erstellung des Inhalts dienen. Dies soll nicht der eigentliche Inhalt sein, der unverändert bleibt. Aus diesem Grund kann der anfängliche Inhalt nicht übersetzt werden.
 >
->Wenn Sie in Ihre Vorlage übersetzbaren Text aufnehmen möchten, z. B. in Kopf- oder Fußzeilen, können Sie die [Lokalisierungsfunktionen der Hauptkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=de) verwenden.
+>Wenn Sie in Ihre Vorlage übersetzbaren Text aufnehmen möchten, z. B. in Kopf- oder Fußzeilen, können Sie die [Lokalisierungsfunktionen der Hauptkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=de) verwenden.
 
 ### Bearbeiten einer Vorlage – Layout – Vorlagenautor {#editing-a-template-layout-template-author}
 

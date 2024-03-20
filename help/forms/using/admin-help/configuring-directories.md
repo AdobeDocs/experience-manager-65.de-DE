@@ -6,10 +6,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3229'
-ht-degree: 48%
+ht-degree: 49%
 
 ---
 
@@ -27,14 +28,14 @@ Für jede Unternehmens-Domain, die Sie konfigurieren, geben Sie die Ordner an, a
 1. Klicken Sie auf „Neue Unternehmens-Domain“ oder wählen Sie eine bestehende Unternehmens-Domain aus.
 1. Klicken Sie auf Verzeichnis hinzufügen .
 1. Geben Sie im Feld Profilname einen Namen ein, um diesen Ordner zu unterscheiden, und klicken Sie auf Weiter.
-1. Konfigurieren Sie die Ordnerservereinstellungen. (Siehe [Ordnereinstellungen](configuring-directories.md#directory-settings).
+1. Konfigurieren Sie die Ordnerservereinstellungen. (Siehe [Ordnereinstellungen](configuring-directories.md#directory-settings).)
 1. Um zu überprüfen, ob eine Verbindung zum LDAP-Server hergestellt werden kann, klicken Sie auf &quot;Testen&quot;. Wenn der Test fehlschlägt, überprüfen Sie die Ausnahme in der Protokolldatei des Anwendungsservers , um die Hauptursache des Fehlers zu ermitteln. Klicken Sie auf Schließen und dann auf Weiter .
-1. Wählen Sie Benutzereinstellungen aus und konfigurieren Sie die Einstellungen nach Bedarf. (Siehe [Ordnereinstellungen](configuring-directories.md#directory-settings).
+1. Wählen Sie Benutzereinstellungen aus und konfigurieren Sie die Einstellungen nach Bedarf. (Siehe [Ordnereinstellungen](configuring-directories.md#directory-settings).)
 1. Um zu überprüfen, ob der Basis-DN und andere konfigurierte Attribute den richtigen Benutzerstapel erfassen, klicken Sie auf Testen. LDAP versucht, die ersten 200 Datensätze mithilfe der bereitgestellten Einstellungen abzurufen (z. B. Basis-DN, Suchfilter und alle Attribute).
 
    Wenn Benutzer zurückgegeben werden, zeigen die Ergebnisse die Werte, die jedem Feld gemäß Attributsatz zugewiesen sind. Wenn der Test aufgrund eines nicht vorhandenen Servernamens, falscher Autorisierungsinformationen oder falscher Attribute fehlschlägt, wird die folgende Fehlermeldung angezeigt: &quot;Die angegebenen Suchkriterien haben kein Ergebnis zurückgegeben&quot;. Um die Hauptursache des Fehlers zu ermitteln, überprüfen Sie die Ausnahme in der Protokolldatei des Anwendungsservers. Klicken Sie auf Schließen und dann auf Weiter .
 
-1. Wählen Sie Gruppeneinstellungen aus und konfigurieren Sie die Einstellungen nach Bedarf. (Siehe [Ordnereinstellungen](configuring-directories.md#directory-settings).
+1. Wählen Sie Gruppeneinstellungen aus und konfigurieren Sie die Einstellungen nach Bedarf. (Siehe [Ordnereinstellungen](configuring-directories.md#directory-settings).)
 1. Um zu überprüfen, ob der Basis-DN und andere konfigurierte Attribute den richtigen Gruppen-Batch erfassen, klicken Sie auf Testen. Wenn Gruppen zurückgegeben werden, zeigen die Ergebnisse die Werte, die jedem Feld gemäß Attributsatz zugewiesen werden. Klicken Sie auf Schließen.
 
 ### Benutzerdefinierte SPI hinzufügen {#add-a-custom-spi}
@@ -54,7 +55,7 @@ Sie können die Details eines Ordners bearbeiten, den Sie zuvor konfiguriert hab
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Klicken Sie in der Liste auf die gewünschte Domain und wählen Sie auf der eingeblendeten Seite in der Liste den gewünschten Ordner aus.
-1. Konfigurieren Sie die Ordner-, Benutzer- und Gruppeneinstellungen nach Bedarf. (Siehe [Ordnereinstellungen](configuring-directories.md#directory-settings).
+1. Konfigurieren Sie die Ordner-, Benutzer- und Gruppeneinstellungen nach Bedarf. (Siehe [Ordnereinstellungen](configuring-directories.md#directory-settings).)
 1. Klicken Sie auf OK.
 
 ## Verzeichnis löschen {#delete-a-directory}

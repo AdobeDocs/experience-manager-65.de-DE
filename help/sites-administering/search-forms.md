@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2072'
-ht-degree: 77%
+ht-degree: 79%
 
 ---
 
@@ -422,7 +423,7 @@ Sie können Felder hinzufügen oder bearbeiten und deren Einstellungen definiere
 
    * Sie fügen ein Feld hinzu:
 
-     Nach dem Hinzufügen des Prädikats wird die **Einstellungen** wird geöffnet und zeigt die Eigenschaften an, die definiert werden können.
+     Nach dem Hinzufügen des Prädikats öffnet sich die Registerkarte **Einstellungen**. Dort werden die Eigenschaften angezeigt, die definiert werden können.
 
    * Sie aktualisieren ein vorhandenes Prädikat:
 
@@ -481,7 +482,7 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
 
 1. Erstellen Sie den Knoten, der die zu suchende Eigenschaft enthält.
 
-   Sie benötigen einen Stammknoten, der Definitionen der einzelnen Optionen enthält, die dem Benutzer zur Verfügung stehen sollen.
+   Sie benötigen einen Stammknoten, der die Definitionen der einzelnen Optionen umfasst, die für Benutzende verfügbar sein sollen.
 
    Die Knoten für die einzelnen Optionen müssen die folgenden Eigenschaften aufweisen:
 

@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '5393'
-ht-degree: 47%
+source-wordcount: '5333'
+ht-degree: 48%
 
 ---
 
@@ -860,7 +861,7 @@ Die folgende Codezeile konvertiert ein `com.adobe.idp.Document`-Objekt in ein `j
 Ebenso können Sie den Inhalt eines `com.adobe.idp.Document` in eine lokale Datei kopieren, indem Sie die folgenden Aufgaben ausführen:
 
 1. Erstellen Sie ein `java.io.File`-Objekt.
-1. Rufen Sie die Methode `copyToFile` des `com.adobe.idp.Document`-Objekts auf und übergeben Sie das `java.io.File`-Objekt.
+1. Rufen Sie die `com.adobe.idp.Document` -Objekt `copyToFile` -Methode und übergeben Sie `java.io.File`-Objekt.
 
 Das folgende Codebeispiel kopiert den Inhalt eines `com.adobe.idp.Document`-Objekts in eine Datei namens *AnotherMap.pdf*.
 
@@ -1060,7 +1061,7 @@ Rufen Sie den kurzlebigen Prozess `MyApplication/EncryptDocument` mithilfe der J
    ```
 
 1. Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateierweiterung .pdf ist.
-1. Rufen Sie die `com.adobe.idp.Document` -Objekt `copyToFile` -Methode zum Kopieren des Inhalts der `com.adobe.idp.Document` -Objekt in die Datei ein. Stellen Sie sicher, dass Sie das `com.adobe.idp.Document`-Objekt verwenden, das von der `getOutputParameter`-Methode zurückgegeben wurde.
+1. Rufen Sie die Methode `copyToFile` des `com.adobe.idp.Document`-Objekts auf, um den Inhalt des `com.adobe.idp.Document`-Objekts in die Datei zu kopieren. Stellen Sie sicher, dass Sie das `com.adobe.idp.Document`-Objekt verwenden, das von der `getOutputParameter`-Methode zurückgegeben wurde.
 
 **Siehe auch**
 

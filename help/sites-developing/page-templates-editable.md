@@ -7,10 +7,11 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3186'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -54,7 +55,7 @@ Bearbeitbare Vorlagen werden von Vorlagenautoren in erster Linie mit der [Vorlag
 
 Informationen zur Verwendung bearbeitbarer Vorlagen in einem AEM-Projekt finden Sie unter [Erstellen eines AEM-Projekts mit Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478).
 
-Beim Erstellen einer bearbeitbaren Vorlage haben Sie folgende Möglichkeiten:
+Gehen Sie wie folgt vor, um eine bearbeitbare Vorlage zu erstellen:
 
 1. Erstellen Sie einen [Ordner für die Vorlagen](#template-folders). Dieser Ordner ist nicht obligatorisch, wird jedoch als Best Practice empfohlen.
 1. Wählen Sie einen [Vorlagentyp](#template-type) aus. Dieser wird kopiert, um die [Vorlagendefinition](#template-definitions) zu erstellen.
@@ -215,7 +216,7 @@ Gehen Sie wie folgt vor, um einen Ordner zu erstellen:
 
 ### Verwenden des Konfigurations-Browsers {#using-the-configuration-browser}
 
-1. Navigieren Sie zu **Globale Navigation** > **Instrumente** > **Konfigurationsbrowser**.
+1. Wechseln Sie zu **Globale Navigation** > **Tools** > **Konfigurations-Browser**.
 
    Die vorhandenen Ordner werden links aufgelistet, einschließlich des Ordners **global**.
 
@@ -398,7 +399,7 @@ Ihre Site-spezifischen Vorlagentypen sollten an einer mit dem folgenden Pfad ver
 
 * `/apps/settings/wcm/template-types`
 
-Definitionen für Ihre benutzerdefinierten Vorlagentypen sollten in benutzerdefinierten Ordnern (empfohlen) oder alternativ im Ordner `global` gespeichert werden. Beispiel:
+Definitionen für Ihre benutzerdefinierten Vorlagentypen sollten in benutzerdefinierten Ordnern (empfohlen) oder alternativ im Ordner `global` gespeichert werden. Zum Beispiel:
 
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/template-types`
 * `/conf/<my-folder>/settings/wcm/template-types`
@@ -447,7 +448,7 @@ Den Code dieser Seite finden Sie auf GitHub.
 
 ## Vorlagendefinitionen {#template-definitions}
 
-Definitionen für bearbeitbare Vorlagen werden in [benutzerdefinierten Ordnern](/help/sites-developing/page-templates-editable.md#template-folders) (empfohlen) oder alternativ im Ordner `global` gespeichert. Beispiel:
+Definitionen für bearbeitbare Vorlagen werden in [benutzerdefinierten Ordnern](/help/sites-developing/page-templates-editable.md#template-folders) (empfohlen) oder alternativ im Ordner `global` gespeichert. Zum Beispiel:
 
 * `/conf/<my-folder>/settings/wcm/templates`
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/templates`
@@ -591,7 +592,7 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
    * [Definieren Sie die Pfade zugelassener Vorlagen über die **Seiteneigenschaften**](/help/sites-authoring/templates.md#allowing-a-template-author) der entsprechenden Seite oder Stammseite einer Unterverzweigung.
    * Legen Sie die folgende Eigenschaft fest:
      `cq:allowedTemplates`
-Im `jcr:content` -Knoten der erforderlichen Verzweigung.
+Auf dem `jcr:content`-Knoten der gewünschten Verzweigung.
 
    Beispielsweise mit dem Wert:
 

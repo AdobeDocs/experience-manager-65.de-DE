@@ -4,10 +4,12 @@ description: Sie können ein adaptives Formular so konfigurieren, dass der Inhal
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms, Foundation Components
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+exl-id: ff9bf466-228d-40e6-9389-15c1f2ed1d2e
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '736'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -82,6 +84,6 @@ Sie können ein benutzerdefiniertes Ereignis implementieren, um die Funktion fü
 
 1. Öffnen Sie das adaptive Formular im Authoring-Modus.
 
-1. Wählen Sie im Bearbeitungsmodus eine Komponente aus und wählen Sie dann ![Feldebene](assets/field-level.png) > **[!UICONTROL Container für adaptive Formulare]** und wählen Sie ![cmppr](assets/cmppr.png).
+1. Wählen Sie im Bearbeitungsmodus eine Komponente aus, wählen Sie dann ![field-leve](assets/field-level.png) > **[!UICONTROL Container eines adaptiven Formulars]** und dann ![cmppr](assets/cmppr.png).
 1. Öffnen Sie in den Eigenschaften den Abschnitt **[!UICONTROL Allgemein]**. Geben Sie im Feld **[!UICONTROL Client-Bibliothekskategorie]** den Wert der Kategorieeigenschaft ein, der beim Erstellen der Client-Bibliotheksordner definiert wurde.
 1. Öffnen Sie den Abschnitt „Automatisches Speichern“. Geben Sie im Feld **[!UICONTROL Automatisch nach diesem Ereignis speichern]** ein benutzerdefiniertes Ereignis an, das in der Client-Bibliothek bereits definiert ist. Klicken Sie auf **[!UICONTROL OK]**.

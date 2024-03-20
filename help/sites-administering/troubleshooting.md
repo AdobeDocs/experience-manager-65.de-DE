@@ -7,8 +7,9 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: ab4fc41f-e0e9-4577-aab2-f0b4298f9a59
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
-workflow-type: ht
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 100%
 
@@ -43,7 +44,7 @@ Zum Aktivieren der DEBUG-Protokollebene stellen Sie mit dem CRX-Explorer die Eig
 
 auf „debug“ ein. Lassen Sie die DEBUG-Protokollebene nicht länger als notwendig aktiviert, da hierdurch zahlreiche Protokolle generiert werden.
 
-Eine Zeile in der Debugdatei beginnt gewöhnlich mit DEBUG, gefolgt von der Angabe der Protokollebene, der Aktion des Installationsprogramms und der Protokollmeldung. Beispiel:
+Eine Zeile in der Debugdatei beginnt gewöhnlich mit DEBUG, gefolgt von der Angabe der Protokollebene, der Aktion des Installationsprogramms und der Protokollmeldung. Zum Beispiel:
 
 ```xml
 DEBUG 3 WebApp Panel: WebApp successfully deployed

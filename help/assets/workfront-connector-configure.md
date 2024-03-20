@@ -2,13 +2,14 @@
 title: Konfigurieren von [!DNL Workfront for Experience Manager enhanced connector]
 description: Konfigurieren von [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
-feature: Integrations
+feature: Workfront Integrations and Apps
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: 2cf980f643e1896ecd581fec44f963d7eb44766d
+solution: Experience Manager, Workfront
+source-git-commit: 5ccac0aadce3971e66da052d393cbd33b61e94f7
 workflow-type: tm+mt
 source-wordcount: '1698'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -60,7 +61,7 @@ Gehen Sie wie folgt vor, um die Ereignisse zu abonnieren:
 1. Gehen Sie in den Cloud-Services zur Registerkarte „Projektverknüpfte Ordner“.
 1. Übergeordneter Pfad des verknüpften Ordners: Wählen Sie einen Ordner im DAM aus, in dem Sie die verknüpften Ordner erstellen möchten. Wenn Sie das Feld leer lassen, wird standardmäßig /content/dam verwendet. Stellen Sie sicher, dass das Metadatenschema für Workfront-Tools und das Metadatenschema für Workfront-Ordner mit verknüpften Ordnern auf den ausgewählten Ordner angewendet wurden.
 1. Verknüpfte Ordnerstruktur: Geben Sie durch Kommas getrennte Werte ein. Jeder Wert sollte `DE:<some-project-custom-form-field>`, Portfolio, Programm, Jahr, Name oder ein „literaler Zeichenfolgenwert“ sein (letzteres in Anführungszeichen). Er ist derzeit auf Portfolio,Programm,Jahr,DE:Projekttyp,Name festgelegt.
-1. Berechtigungen konfigurieren: Hinzufügen `jcr:all permissions` Berechtigungen für `/conf/workfront-tools/settings/cloudconfigs` für `wf-workfront-users` hinzugefügt.
+1. Konfigurieren der Berechtigungen: Fügen Sie Berechtigungen `jcr:all permissions` zu `/conf/workfront-tools/settings/cloudconfigs` für die Gruppe `wf-workfront-users` hinzu.
 1. Das Kontrollkästchen „Verknüpfte Ordnertitel in Workfront unter Verwendung der Namen der Ordnerstruktur erstellen“ sollte aktiviert werden, wenn der Titel des Ordners in Workfront alle Ordner in der Struktur enthalten soll. Andernfalls ist es der Titel des letzten Ordners.
 1. Im Mehrfachfeld „Unterordner“ können Sie eine Liste von Ordnern angeben, die als Unterordner des verknüpften Ordners erstellt werden sollen.
 1. Projektstatus: Wählen Sie den Status des Projekts aus, um den verknüpften Ordner zu erstellen.
@@ -78,7 +79,7 @@ Die Metadaten-Zuordnung zwischen Workfront-Projekten und AEM-Ordnern wird in AEM
 
 Gehen Sie wie folgt vor, um die Zuordnungen zu konfigurieren:
 
-1. Hinzufügen `jcr:read` Berechtigungen für `/conf/global/settings/dam/adminui-extension/foldermetadataschema` für `wf-workfront-users` hinzugefügt.
+1. Fügen Sie `jcr:read`-Berechtigungen zu `/conf/global/settings/dam/adminui-extension/foldermetadataschema` für die Gruppe `wf-workfront-users` hinzu.
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Ordner-Metadatenschemata]**.
 1. Wählen Sie das Formular für das Ordner-Metadatenschema, das Sie bearbeiten möchten, und klicken Sie auf „Bearbeiten“.
 1. Wählen Sie das Formularfeld des Ordner-Metadatenschemas aus, das Sie bearbeiten möchten, und klicken Sie im rechten Bedienfeld auf die Registerkarte „Einstellungen“.

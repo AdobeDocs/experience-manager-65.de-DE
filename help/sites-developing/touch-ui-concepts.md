@@ -1,16 +1,17 @@
 ---
 title: Konzepte der Touch-optimierten Benutzeroberfläche von Adobe Experience Manager
-description: Mit Adobe Experience Manager 5.6 hat Adobe eine neue Touch-optimierte Benutzeroberfläche mit responsivem Design für die Autorenumgebung eingeführt
+description: Mit Adobe Experience Manager 5.6 führte Adobe eine neue Touch-optimierte Benutzeroberfläche mit responsivem Design für die Autorenumgebung ein
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2167'
-ht-degree: 27%
+source-wordcount: '2147'
+ht-degree: 26%
 
 ---
 
@@ -27,7 +28,7 @@ Die Touch-optimierte Benutzeroberfläche umfasst Folgendes:
 * Suite-Kopfzeile:
    * Zeigt das Logo an.
    * Enthält einen Link zu „Globale Navigation“.
-   * Enthält Link zu anderen generischen Aktionen; wie Suche, Hilfe, Experience Cloud-Lösungen, Benachrichtigungen und Benutzereinstellungen.
+   * Bietet einen Link zu anderen generischen Aktionen, z. B. Suche, Hilfe, Experience Cloud-Lösungen, Benachrichtigungen und Benutzereinstellungen.
 * Leiste auf der linken Seite (Anzeige bei Bedarf, kann ausgeblendet werden):
    * Zeitleiste
    * Verweise
@@ -52,7 +53,7 @@ Die Touch-optimierte Benutzeroberfläche umfasst Folgendes:
 
 Die Touch-optimierte Benutzeroberfläche wurde von Adobe entwickelt, um die Konsistenz des Benutzererlebnisses über mehrere Produkte hinweg zu gewährleisten. Er basiert auf:
 
-* **Coral-Benutzeroberfläche** (CUI) eine Implementierung des visuellen Stils der Adobe für die Touch-optimierte Benutzeroberfläche. Die Coral-Benutzeroberfläche bietet alles, was Ihr Produkt/Projekt/Ihre Webanwendung benötigt, um den visuellen Stil der Benutzeroberfläche zu übernehmen.
+* **Coral-Benutzeroberfläche** (CUI) eine Implementierung des visuellen Adobe-Stils für die Touch-optimierte Benutzeroberfläche. Die Coral-Benutzeroberfläche bietet alles, was Ihr Produkt/Projekt/Ihre Webanwendung benötigt, um den visuellen Stil der Benutzeroberfläche zu übernehmen.
 * **Granite-Benutzeroberfläche** -Komponenten werden mit der Coral-Benutzeroberfläche erstellt.
 
 Die Grundprinzipien der Touch-optimierten Benutzeroberfläche sind:
@@ -67,7 +68,7 @@ Die Grundprinzipien der Touch-optimierten Benutzeroberfläche sind:
 
 Einen weiteren Überblick über die Struktur der Touch-optimierten Benutzeroberfläche finden Sie unter [Struktur der AEM Touch-optimierten Benutzeroberfläche](/help/sites-developing/touch-ui-structure.md).
 
-## AEM {#aem-technology-stack}
+## AEM Technologiestapel {#aem-technology-stack}
 
 AEM verwendet die Granite-Plattform als Basis und die Granite-Plattform umfasst unter anderem das Java™ Content Repository.
 
@@ -75,9 +76,9 @@ AEM verwendet die Granite-Plattform als Basis und die Granite-Plattform umfasst 
 
 ## Granite {#granite}
 
-Granite ist der Open-Web-Stack der Adobe und bietet verschiedene Komponenten wie:
+Granite ist ein Adobe zum Öffnen des Webstapels und bietet verschiedene Komponenten, darunter:
 
-* App-Starter
+* Ein Anwendungs-Starter
 * Ein OSGi-Framework, in dem alles bereitgestellt wird
 * Mehrere OSGi-Kompendium-Dienste zur Unterstützung von Bauanwendungen
 * Ein umfassendes Protokollierungs-Framework mit verschiedenen Protokollierungs-APIs
@@ -87,17 +88,17 @@ Granite ist der Open-Web-Stack der Adobe und bietet verschiedene Komponenten wie
 
 >[!NOTE]
 >
->Granite wird als offenes Entwicklungsprojekt in Adobe ausgeführt: Beiträge zum Code, Diskussionen und Themen werden aus dem gesamten Unternehmen übernommen.
+>Granite wird als offenes Entwicklungsprojekt innerhalb der Adobe ausgeführt: Beiträge zum Code, Diskussionen und Probleme werden aus dem gesamten Unternehmen übernommen.
 >
->Granite ist jedoch **not** ein Open-Source-Projekt. Es basiert in hohem Maße auf mehreren Open-Source-Projekten (insbesondere Apache Sling, Felix, Jackrabbit und Lucene), aber die Adobe zeichnet eine klare Linie zwischen dem, was öffentlich und intern ist.
+>Granite ist jedoch **not** ein Open-Source-Projekt. Es basiert stark auf mehreren Open-Source-Projekten (insbesondere Apache Sling, Felix, Jackrabbit und Lucene), aber Adobe zeichnet eine klare Linie zwischen dem, was öffentlich ist und dem, was intern ist.
 
 ## Granite-Benutzeroberfläche {#granite-ui}
 
 Die Granite-Engineering-Plattform bietet außerdem ein Framework für die Foundation-Benutzeroberfläche. Die wichtigsten Ziele sind:
 
 * Bereitstellen granularer UI-Widgets
-* Implementieren Sie die Benutzeroberflächenkonzepte und illustrieren Sie die Best Practices (Rendern von langen Listen, Filtern von Listen, CRUD von Objekten, CUD-Assistenten usw.).
-* Bereitstellung einer erweiterbaren und Plug-in-basierten Verwaltungsoberfläche
+* Implementieren Sie die Benutzeroberflächenkonzepte und illustrieren Sie die Best Practices (Rendern von langen Listen, Filtern von Listen, CRUD von Objekten, CUD-Assistenten usw.)
+* Bereitstellung einer erweiterbaren und Plug-in-basierten Verwaltungsbenutzeroberfläche
 
 Diese erfüllen die Anforderungen:
 
@@ -117,7 +118,7 @@ Die Granite-Benutzeroberfläche:
 * Bietet eine standardmäßige, standardisierte Benutzeroberfläche
 * Ist erweiterbar
 * Wird sowohl für mobile als auch für Desktop-Geräte entwickelt (berücksichtigt zuerst mobile Geräte)
-* Kann in jeder Granite-basierten Plattform/jedem Produkt/Projekt verwendet werden; Beispiel: AEM
+* Kann in jeder beliebigen Granite-basierten Plattform/jedem beliebigen Produkt/Projekt verwendet werden, z. B. AEM
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
@@ -128,7 +129,7 @@ Die Granite-Benutzeroberfläche:
 
 Die Client-Server-Kommunikation in der Granite-Benutzeroberfläche besteht aus Hypertext, nicht aus Objekten. Daher ist es nicht erforderlich, dass der Client die Geschäftslogik versteht
 
-* Der Server ergänzt die HTML mit semantischen Daten
+* Der Server ergänzt die HTML mit semantischen Daten.
 * Der Client reichert den Hypertext mit Hypermedia (Interaktion) an
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
@@ -262,7 +263,7 @@ Die [Verwaltungskomponenten der Granite-Benutzeroberfläche](https://developer.a
 Zweck:
 
 * Einheitliches Erscheinungsbild für Verwaltungsanwendungen
-* Rad für Anwendungen zur Administration
+* RAD für Applikationen zur Administration
 
 Implementierung:
 
@@ -274,7 +275,7 @@ Implementierung:
 CoralUI.pdf
 
 [Datei abrufen](assets/coralui.pdf)
-Die Coral-Benutzeroberfläche (CUI) ist eine Implementierung des visuellen Stils der Adobe für die Touch-optimierte Benutzeroberfläche, die eine konsistente Benutzererfahrung über mehrere Produkte hinweg bietet. Die Coral-Benutzeroberfläche bietet alles, was Sie benötigen, um den visuellen Stil der Authoring-Umgebung zu übernehmen.
+Die Coral-Benutzeroberfläche (CUI) ist eine Implementierung des visuellen Adobe-Stils für die Touch-optimierte Benutzeroberfläche, der für Konsistenz des Benutzererlebnisses über mehrere Produkte hinweg sorgt. Die Coral-Benutzeroberfläche bietet alles, was Sie benötigen, um den visuellen Stil der Authoring-Umgebung zu übernehmen.
 
 >[!CAUTION]
 >
@@ -286,14 +287,14 @@ Die Coral-Benutzeroberfläche (CUI) ist eine Implementierung des visuellen Stils
 >* Wenn es versandt und mit AEM gebündelt wurde.
 >* Wird verwendet, wenn die vorhandene Benutzeroberfläche der Authoring-Umgebung erweitert wird.
 >* Begleitmaterial, Anzeigen und Präsentationen von Adobe
->* Benutzeroberfläche von Anwendungen mit Markenzeichen (die Schriftart darf nicht für andere Adoben verfügbar sein).
+>* Die Benutzeroberfläche von Anwendungen mit Adobe-Branding (die Schriftart darf nicht für andere Zwecke verfügbar sein).
 >* Mit geringfügigen Anpassungen.
 >
 >Die Verwendung der Coral-Benutzeroberfläche sollte in folgenden Fällen vermieden werden:
 >
->* Dokumente und andere Elemente, die nicht mit der Adobe in Zusammenhang stehen.
+>* Dokumente und andere nicht mit Adobe in Verbindung stehende Elemente.
 >* Umgebungen zur Inhaltserstellung (in denen die vorhergehenden Elemente möglicherweise von anderen generiert werden).
->* Anwendungen/Komponenten/Webseiten, die nicht eindeutig mit der Adobe verbunden sind.
+>* Anwendungen/Komponenten/Webseiten, die nicht eindeutig mit Adobe verbunden sind.
 >
 
 Die Coral-Benutzeroberfläche ist eine Sammlung von Bausteinen für die Entwicklung von Web-Anwendungen.
@@ -308,7 +309,7 @@ In der Coral-Benutzeroberfläche ist es nicht erforderlich, ein bestimmtes Entwi
 
 Die HTML-Elemente bieten ein einheitliches Erscheinungsbild für alle Elemente der grundlegenden Benutzeroberfläche (einschließlich Navigationsleiste, Schaltfläche, Menü, Leiste usw.).
 
-Grundsätzlich ist ein HTML-Element ein HTML-Tag mit einem dedizierten Klassennamen. Komplexere Elemente können aus mehreren Tags zusammengestellt werden, die ineinander geschachtelt sind (auf spezifische Weise).
+Auf der grundlegendsten Ebene ist ein HTML-Element ein HTML-Tag mit einem dedizierten Klassennamen. Komplexere Elemente können aus mehreren Tags zusammengestellt werden, die ineinander geschachtelt sind (auf spezifische Weise).
 
 Das CSS wird verwendet, um das eigentliche Erscheinungsbild bereitzustellen. Um das Erscheinungsbild einfach anzupassen (z. B. beim Branding), werden tatsächliche Stilwerte als Variablen deklariert, die durch die [WENIGER](https://lesscss.org/) Präprozessor während der Laufzeit.
 

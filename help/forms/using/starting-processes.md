@@ -6,10 +6,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: b2a6ba3a-0f4c-44b1-8f9a-c15c6fb8c305
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1334'
-ht-degree: 24%
+ht-degree: 28%
 
 ---
 
@@ -92,7 +93,7 @@ Sie können auch Kommentare zum Anhang hinzufügen. Sie können eine der folgend
 
 1. Klicken Sie auf die Registerkarte **Anlagen** und wählen Sie **Anlage**.
 1. Klicks **Durchsuchen** , um die anzuhängende Datei auszuwählen.
-1. Wählen Sie die **Berechtigungen** -Ebene für die Anlage für andere Benutzer, die am Prozess teilnehmen. Wenn Sie **Lesen**, können andere Benutzer die Datei lokal speichern. Wenn Sie eine der Bearbeitungsberechtigungen auswählen, können auch andere Benutzer eine neue Datei hochladen, um Ihre Anlage zu ersetzen.
+1. Wählen Sie die **Berechtigungsebene** des Anhangs für andere Benutzende aus, die an dem Prozess beteiligt sind. Wenn Sie die **Leseberechtigung** aktivieren, können andere Benutzende die Datei lokal speichern. Wenn Sie eine der Bearbeitungsberechtigungen auswählen, können andere Benutzende auch eine neue Datei hochladen, um Ihren Anhang durch sie zu ersetzen.
 1. Klicken Sie auf **OK**. Die Datei wird an das Formular angehängt. Sie können eine Datei löschen, indem Sie auf die Schaltfläche **Löschen** ![Image of a trash can](assets/icondelete.png) neben dem Anhang klicken.
 
 ## Speichern von Formularentwürfen {#saving-draft-copies-of-forms}

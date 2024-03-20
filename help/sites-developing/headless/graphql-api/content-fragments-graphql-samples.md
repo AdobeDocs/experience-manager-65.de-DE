@@ -3,9 +3,11 @@ title: Erfahren Sie, wie Sie GraphQL mit AEM verwenden – Beispielinhalt und Ab
 description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um „headless“-Inhalte bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
-workflow-type: ht
-source-wordcount: '1586'
+solution: Experience Manager, Experience Manager Sites
+role: Developer
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '1588'
 ht-degree: 100%
 
 ---
@@ -355,7 +357,7 @@ Wenn Sie eine Variante mit dem Namen „Berlin Centre“ (`berlin_centre`) für 
 }
 ```
 
-### Beispielabfrage – Namen aller Städte Als Städtereisen markiert {#sample-names-all-cities-tagged-city-breaks}
+### Beispielabfrage – Namen aller Städte, die als Städtereisen markiert sind {#sample-names-all-cities-tagged-city-breaks}
 
 Wenn Sie:
 
@@ -1145,7 +1147,7 @@ query {
 
 ## Beispielabfragen unter Verwendung des WKND-Projekts {#sample-queries-using-wknd-project}
 
-Diese Beispielabfragen basieren auf dem WKND-Projekt. Sie umfasst Folgendes:
+Diese Beispielabfragen basieren auf dem WKND-Projekt. Es umfasst Folgendes:
 
 * Inhaltsfragmentmodelle verfügbar unter:
   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`

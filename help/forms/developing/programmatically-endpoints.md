@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '10791'
-ht-degree: 83%
+source-wordcount: '10800'
+ht-degree: 85%
 
 ---
 
@@ -322,7 +323,7 @@ Die folgende Liste gibt Konfigurationswerte an, die festgelegt werden, wenn eine
 * **url**: Gibt den Speicherort des überwachten Ordners an. In einer Cluster-Umgebung muss dieser Wert auf einen freigegebenen Netzwerkordner verweisen, auf den alle Computer im Cluster zugreifen können.
 * **asynchron**: Gibt den Aufruftyp als „asynchron“ oder „synchron“ an. Transiente und synchrone Prozesse können nur synchron aufgerufen werden. Der Standardwert lautet true. Asynchron wird empfohlen.
 * **cronExpression**: Wird von Quarz zur zeitlichen Planung des Abrufs des Eingabeordners verwendet.
-* **purgeDuration**: Dies ist ein obligatorisches Attribut. Dateien und Ordner im Ergebnisordner werden bereinigt, wenn sie älter als dieser Wert sind. Dieser Wert wird in Tagen gemessen. Dieses Attribut ist nützlich, um sicherzustellen, dass der Ergebnisordner nicht voll wird. Ein Wert von -1 Tagen bedeutet, dass der Ergebnisordner nie gelöscht wird. Der Standardwert ist -1.
+* **purgeDuration**: Dies ist ein obligatorisches Attribut. Dateien und Ordner im Ergebnisordner werden bereinigt, wenn sie älter als dieser Wert sind. Dieser Wert wird in Tagen gemessen. Dieses Attribut ist nützlich, um sicherzustellen, dass der Ergebnisordner nicht voll wird. Ein Wert von „-1“ Tagen bedeutet, dass der Ergebnisordner nie gelöscht wird. Der Standardwert ist -1.
 * **repeatInterval**: Das Intervall in Sekunden, in dem der überwachte Ordner auf Eingaben überprüft wird. Sofern die Drosselung nicht aktiviert ist, sollte dieser Wert größer sein als die Verarbeitungsdauer für einen durchschnittlichen Auftrag. Andernfalls kann es zu einer Überlastung des Systems kommen. Der Standardwert ist 5.
 * **repeatCount**: Die Häufigkeit, mit der ein überwachter Ordner den Ordner oder das Verzeichnis überprüft. Der Wert &quot;-1&quot;bedeutet uneingeschränktes Überprüfen. Der Standardwert ist -1.
 * **throttleOn**: Begrenzt die Anzahl der Aufträge für überwachte Ordner, die zu einem bestimmten Zeitpunkt verarbeitet werden können. Die maximale Anzahl von Aufträgen wird durch den Wert von „batchSize“ bestimmt.

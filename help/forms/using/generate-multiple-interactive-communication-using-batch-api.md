@@ -7,7 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: 020b92463371294706e9873e0d8962583d19ac52
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 78%
@@ -91,7 +92,7 @@ So erstellen Sie eine interaktive Kommunikation aus Datensätzen, die in einer J
 
       | Eigenschaft | Typ | Beschreibung |
       |--- |--- |--- |
-      | templatePath | Zeichenfolge | Geben Sie den Pfad der zu verwendenden interaktiven Kommunikationsvorlage an. Beispiel: `/content/dam/formsanddocuments/testsample/mediumic`. Dies ist eine obligatorische Eigenschaft. |
+      | templatePath | Zeichenfolge | Geben Sie den Pfad der zu verwendenden interaktiven Kommunikationsvorlage an. Zum Beispiel: `/content/dam/formsanddocuments/testsample/mediumic`. Dies ist eine obligatorische Eigenschaft. |
       | recordPath | Zeichenfolge | Der Wert des Felds recordPath hilft beim Festlegen des Namens einer interaktiven Kommunikation. Sie können den Pfad eines Datensatzfelds als Wert des Felds recordPath festlegen. Wenn Sie beispielsweise /employee/Id angeben, wird der Wert des ID-Felds zum Namen für die entsprechende interaktive Kommunikation. Der Standardwert ist eine [zufällige UID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
       | usePrefillService | Boolesch | Legen Sie den Wert auf „False“ fest. Sie können den Parameter usePrefillService verwenden, um die interaktive Kommunikation mit Daten vorzufüllen, die aus dem Vorbefüllungs-Service abgerufen wurden, der für die entsprechende interaktive Kommunikation konfiguriert ist. Wenn usePrefillService auf „true“ gesetzt ist, werden JSON-Eingabedaten (für jeden Datensatz) als FDM-Argumente behandelt. Der Standardwert lautet false. |
       | batchType | Zeichenfolge | Setzen Sie den Wert auf PRINT, WEB oder WEB_AND_PRINT. Der Standardwert ist WEB_AND_PRINT. |

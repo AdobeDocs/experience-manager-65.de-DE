@@ -5,9 +5,10 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager 6.5
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '3677'
+source-wordcount: '3524'
 ht-degree: 99%
 
 ---
@@ -48,7 +49,7 @@ Im Folgenden finden Sie einige allgemeine Tipps zum Erstellen Ihrer URLs für SE
 
    * Auf Seiten, die Selektoren verwenden, sind Selektoren, die einen semantischen Wert bieten, zu bevorzugen.
    * Wenn ein Mensch Ihre URL nicht lesen kann, kann eine Suchmaschine dies auch nicht.
-   * Beispiel:
+   * Zum Beispiel:
      `mybrand.com/products/product-detail.product-category.product-name.html`
 wird `mybrand.com/products/product-detail.1234.html` vorgezogen
 
@@ -185,7 +186,7 @@ Wenn ein Autor wünscht, dass die Seite von einem zweiten Ort aus für Werbezwec
 
 #### Lokalisierte Seitennamen {#localized-page-names}
 
-Vielleicht möchten Sie den Benutzern von übersetzten Inhalten lokalisierte Seitennamen anzeigen. Beispiel:
+Vielleicht möchten Sie den Benutzern von übersetzten Inhalten lokalisierte Seitennamen anzeigen. Zum Beispiel:
 
 * Anstatt einen Spanisch sprechenden Benutzer zur folgenden URL zu leiten:
   `www.mydomain.com/es/home.html`

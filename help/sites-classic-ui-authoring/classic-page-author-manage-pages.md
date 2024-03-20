@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1895'
-ht-degree: 86%
+ht-degree: 88%
 
 ---
 
@@ -23,7 +24,7 @@ In diesem Abschnitt wird beschrieben, wie Sie mit Adobe Experience Manager (AEM)
 >
 >Wenn Sie auf Probleme stoßen, empfehlen wir Ihnen, sich an die bzw. den Systemadmin zu wenden.
 
-## Website-Organisation {#organizing-your-website}
+## Organisieren Ihrer Website {#organizing-your-website}
 
 Als Autor müssen Sie Ihre Website in AEM organisieren. Dazu gehört die Erstellung und Benennung von Inhaltsseiten, sodass Folgendes zutrifft:
 
@@ -72,7 +73,7 @@ Diese Struktur kann über die Websites-Konsole angezeigt werden, die Sie verwend
 
 ### Seitenbenennungskonventionen {#page-naming-conventions}
 
-Beim Erstellen einer Seite gibt es zwei Schlüsselfelder:
+Beim Erstellen einer Seite gibt es zwei wichtige Felder:
 
 * **[Titel](#title)**:
 
@@ -107,7 +108,7 @@ Wenn Sie nur eine Seite angeben **Titel** leitet AEM die Seite beim Erstellen ei
 
 #### Name {#name}
 
-Wenn Sie eine Seite angeben **Name** beim Erstellen einer Seite AEM [validiert den Namen gemäß den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR aufgezwungen.
+Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen entsprechend den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR.
 
 In der klassischen Benutzeroberfläche ist **die Eingabe von ungültigen Zeichen** im Feld **Name** unzulässig.
 

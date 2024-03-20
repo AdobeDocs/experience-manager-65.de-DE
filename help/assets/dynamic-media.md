@@ -8,10 +8,11 @@ content-type: reference
 role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Collaboration,Asset Management
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '418'
-ht-degree: 88%
+ht-degree: 96%
 
 ---
 
@@ -80,7 +81,7 @@ Für Dynamic Media aktivierte Assets enthalten `pyramid.tiffs`.
 
 ### Änderung der Asset-Ansichten {#asset-views-change}
 
-Wenn Dynamic Media aktiviert ist, können Sie durch Klicken auf die `+` und `-` Schaltflächen. Sie können auch auf klicken, um in einen bestimmten Bereich zu zoomen. Zurück bringt Sie zur Originalversion und Sie können das Bild im Vollbildmodus anzeigen, indem Sie auf die diagonalen Pfeile klicken. Dynamic Media enabled sieht wie folgt aus:
+Wenn „Dynamische Medien“ aktiviert ist, können Sie durch Klicken auf die Schaltflächen `+` und `-` ein- bzw. auszoomen. Sie können auch auf klicken, um in einen bestimmten Bereich zu zoomen. Durch „Wiederherstellen“ können Sie zur Originalansicht zurückkehren und durch Klicken auf die diagonalen Pfeile das Bild im Vollbildmodus anzeigen. Dynamic Media enabled sieht wie folgt aus:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

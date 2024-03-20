@@ -2,10 +2,13 @@
 title: Verwenden der GraphiQL-IDE in AEM
 description: Erfahren Sie, wie Sie die GraphiQL IDE in Adobe Experience Manager verwenden.
 exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+feature: Content Fragments,GraphQL API
+role: Developer
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '783'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -20,9 +23,9 @@ Eine Implementierung der standardmäßigen [GraphQL](https://graphql.org/learn/s
 >In früheren Versionen war ein Paket erforderlich, um die GraphiQL-IDE zu installieren. Sollten Sie ein solches Paket installiert haben, kann es jetzt entfernt werden.
 
 >[!NOTE]
->Sie müssen [Ihre Endpunkte](/help/sites-developing/headless/graphql-api/graphql-endpoint.md) im [Konfigurationsbrowser konfiguriert](/help/assets/content-fragments/content-fragments-configuration-browser.md) haben, bevor Sie die GraphiQL-IDE verwenden.
+>Sie müssen [Ihre Endpunkte](/help/sites-developing/headless/graphql-api/graphql-endpoint.md) im [Konfigurations-Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md) konfiguriert haben, bevor Sie die GraphiQL-IDE verwenden.
 
-Das **GraphiQL**-Tool erlaubt es Ihnen, Ihre GraphQL-Abfragen zu testen und zu debuggen, indem es Ihnen Folgendes ermöglicht:
+Das **GraphiQL**-Tool erlaubt es Ihnen, Ihre GraphQL-Abfragen zu testen und zu debuggen, indem es Ihnen folgendes ermöglicht:
 
 * Auswahl des **Endpunkts**, der der Sites-Konfiguration entspricht, die Sie für Ihre Abfragen verwenden möchten
 * Direkte Eingabe neuer Abfragen
@@ -36,7 +39,7 @@ Das **GraphiQL**-Tool erlaubt es Ihnen, Ihre GraphQL-Abfragen zu testen und zu d
 
 Sie können auf den Abfrage-Editor wie folgt zugreifen:
 
-* **Instrumente** > **Allgemein** > **GraphQL Query Editor**
+* **Tools** > **Allgemein** > **GraphQL-Abfrage-Editor**
 * Direkt, zum Beispiel: `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL-Oberfläche](assets/cfm-graphiql-interface.png "GraphiQL-Oberfläche")
@@ -91,7 +94,7 @@ In beiden Fällen ist die Abfrage, die im Editor-Bereich angezeigt wird, die Abf
 
 Mit der GraphiQL-IDE können Sie auch Ihre [Abfragevariablen](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-variables) verwalten.
 
-Beispiel:
+Zum Beispiel:
 
 ![GraphQL-Variablen](assets/cfm-graphqlapi-03.png "GraphQL-Variablen")
 
@@ -150,7 +153,7 @@ Mit der Option **URL kopieren** können Sie eine Abfrage simulieren, indem Sie d
   >The target environment might need adjusting, depending on your requirements.
 -->
 
-Beispiel:
+Zum Beispiel:
 
 `http://localhost:4502/graphql/execute.json/global/article-list-01`
 

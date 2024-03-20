@@ -8,10 +8,11 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: 0dea2b3e-fd7c-4811-a04a-6852ffc1e6d6
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2396'
-ht-degree: 44%
+source-wordcount: '2423'
+ht-degree: 43%
 
 ---
 
@@ -50,7 +51,7 @@ Nachfolgend finden Sie eine Liste der Bereiche, die von einem typischen AEM-Upgr
   <tr>
    <td>Java™ Runtime</td>
    <td>Moderate Auswirkung</td>
-   <td>AEM 6.3 erfordert JRE 1.7.x (64 Bit) oder höher. JRE 1.8 ist die einzige Version, die derzeit von Oracle unterstützt wird.</td>
+   <td>Für AEM 6.3 ist JRE 1.7.x (64 Bit) oder höher erforderlich. JRE 1.8 ist die einzige Version, die derzeit von Oracle unterstützt wird.</td>
   </tr>
   <tr>
    <td>Hardware</td>
@@ -172,7 +173,7 @@ Ein umfassender Projektplan sollte folgende Punkte beinhalten:
 * Aktualisierung der Staging-Umgebung
 * Integration, Leistung und Belastungstests
 * Zertifizierung der Umgebung
-* Live-Schaltung
+* Live schalten
 
 ### Entwicklung und Qualitätssicherung durchführen {#performing-development-and-qa}
 

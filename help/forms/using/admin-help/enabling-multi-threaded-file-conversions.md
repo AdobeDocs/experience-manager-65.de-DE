@@ -7,7 +7,8 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: PDF Generator
 exl-id: 402c1fd4-c6c8-494e-b452-b56a91c4a397
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 99%
@@ -28,7 +29,7 @@ Standardmäßig kann PDF Generator jeweils nur ein OpenOffice-, Microsoft® Word
 
 >[!NOTE]
 >
-Mehrprozessgestützte Dateikonvertierungen werden von Microsoft® Excel, Microsoft® Visio, Microsoft® Project oder Microsoft® Publisher nicht unterstützt.
+>Mehrprozessgestützte Dateikonvertierungen werden von Microsoft® Excel, Microsoft® Visio, Microsoft® Project oder Microsoft® Publisher nicht unterstützt.
 
 Jede Instanz von OpenOffice oder PDFMaker wird unter Verwendung eines separaten Benutzerkontos gestartet. Jedes von Ihnen hinzugefügte Benutzerkonto muss zu einer gültigen Person mit Administratorrechten für den Computer mit dem Formular-Server gehören. In einer Cluster-Umgebung muss derselbe Satz von Benutzenden für alle Knoten des Clusters gültig sein.
 
@@ -67,7 +68,7 @@ Wenn Sie OpenOffice, Microsoft® Word oder Microsoft® PowerPoint unter Windows 
 
    >[!NOTE]
    >
-   Stellen Sie sicher, dass Sie „user1“ und „user2“ die Rollen „Systembenutzer“ und „PDFG-Benutzer“ zugewiesen haben. Informationen zum Zuweisen einer PDFG-Rolle zu Benutzenden finden Sie unter [Hinzufügen eines Benutzerkontos](enabling-multi-threaded-file-conversions.md#add-a-user-account)
+   >Stellen Sie sicher, dass Sie „user1“ und „user2“ die Rollen „Systembenutzer“ und „PDFG-Benutzer“ zugewiesen haben. Informationen zum Zuweisen einer PDFG-Rolle zu Benutzenden finden Sie unter [Hinzufügen eines Benutzerkontos](enabling-multi-threaded-file-conversions.md#add-a-user-account)
 
 1. Suchen Sie diese Zeile in der Datei „/etc/sudoers“ und kennzeichnen Sie sie als Kommentar, indem Sie am Anfang der Zeile ein Nummernzeichen (#) hinzufügen:
 
@@ -88,7 +89,7 @@ Wenn Sie OpenOffice, Microsoft® Word oder Microsoft® PowerPoint unter Windows 
 
 >[!NOTE]
 >
-OpenOffice muss in einem Ordnerspeicherort, auf den alle PDFG-Benutzenden zugreifen können, installiert werden. Sie können dies überprüfen, indem Sie sich als PDFG-Benutzende anmelden und testen, ob Sie OpenOffice ohne Probleme starten können.
+>OpenOffice muss in einem Ordnerspeicherort, auf den alle PDFG-Benutzenden zugreifen können, installiert werden. Sie können dies überprüfen, indem Sie sich als PDFG-Benutzende anmelden und testen, ob Sie OpenOffice ohne Probleme starten können.
 
 ### Hinzufügen eines Benutzerkontos {#add-a-user-account}
 
@@ -97,7 +98,7 @@ OpenOffice muss in einem Ordnerspeicherort, auf den alle PDFG-Benutzenden zugrei
 
    >[!NOTE]
    >
-   Wenn Sie Benutzerinnen oder Benutzer für OpenOffice konfigurieren, darf die Anzahl der Instanzen von OpenOffice nicht höher sein als die Anzahl der in diesem Schritt angegebenen Benutzerkonten.
+   >Wenn Sie Benutzerinnen oder Benutzer für OpenOffice konfigurieren, darf die Anzahl der Instanzen von OpenOffice nicht höher sein als die Anzahl der in diesem Schritt angegebenen Benutzerkonten.
 
 1. Starten Sie den Formular-Server neu.
 

@@ -6,10 +6,11 @@ topic-tags: integration
 docset: aem65
 feature: Form Data Model
 exl-id: 7f5978c3-6c9f-4ce4-b0fb-660ac1d49244
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '952'
-ht-degree: 78%
+ht-degree: 95%
 
 ---
 
@@ -38,12 +39,12 @@ Die AEM Forms-Datenintegration bietet eine intuitive Benutzeroberfläche, um For
 Stellen Sie sicher, dass Sie die Datenquellen konfiguriert haben, die Sie im Formulardatenmodell verwenden möchten, wie in [Konfigurieren von Datenquellen](../../forms/using/configure-data-sources.md) beschrieben. Gehen Sie folgendermaßen vor, um ein Formulardatenmodell basierend auf konfigurierten Datenquellen zu erstellen:
 
 1. Navigieren Sie in der AEM-Autoreninstanz zu **[!UICONTROL Formulare > Datenintegration]**.
-1. Auswählen **[!UICONTROL Erstellen > Formulardatenmodell]**.
+1. Wählen Sie **[!UICONTROL Erstellen > Formulardatenmodell]**.
 1. Im Dialogfeld „Formulardatenmodell erstellen“:
 
    * Geben Sie einen Namen für das Formulardatenmodell an.
    * (**Optional**) Geben Sie Titel, Beschreibung und Tags für das Formulardatenmodell an.
-   * (**Optional und nur anwendbar, wenn Datenquellen konfiguriert sind**) Wählen Sie das Häkchen-Symbol neben dem **[!UICONTROL Datenquellenkonfiguration]** und wählen Sie den Konfigurationsknoten aus, in dem sich die Cloud-Dienste für die Datenquellen befinden, die Sie verwenden möchten. Das beschränkt die Liste der Datenquellen, die auf der nächsten Seite zur Auswahl stehen, auf diejenigen, die im ausgewählten Konfigurationsknoten verfügbar sind. Alle JDBC-Datenbank- und AEM-Benutzerprofildatenquellen werden jedoch standardmäßig aufgelistet. Wenn Sie keinen Konfigurationsknoten auswählen, werden Datenquellen aus allen Konfigurationsknoten aufgelistet.
+   * (**Optional und nur anwendbar, wenn Datenquellen konfiguriert sind**) Wählen Sie das Häkchensymbol neben dem Feld **[!UICONTROL Datenquellenkonfiguration]** und dann den Konfigurationsknoten, in dem sich die Cloud Services für die Datenquellen befinden, die Sie verwenden möchten. Das beschränkt die Liste der Datenquellen, die auf der nächsten Seite zur Auswahl stehen, auf diejenigen, die im ausgewählten Konfigurationsknoten verfügbar sind. Alle JDBC-Datenbank- und AEM-Benutzerprofildatenquellen werden jedoch standardmäßig aufgelistet. Wenn Sie keinen Konfigurationsknoten auswählen, werden Datenquellen aus allen Konfigurationsknoten aufgelistet.
 
    Wählen Sie **[!UICONTROL Weiter]** aus.
 
@@ -77,16 +78,16 @@ Führen Sie folgende Schritte aus, um Datenquellen zu einem vorhandenen Formular
 
    Auf der Registerkarte Quelle aktualisieren:
 
-   * Wählen Sie das Symbol Durchsuchen im **[!UICONTROL Kontextabhängige Konfiguration]** und wählen Sie einen Konfigurationsknoten aus, in dem sich die Cloud-Konfiguration für die Datenquelle befindet, die Sie hinzufügen möchten. Wenn Sie keinen Knoten auswählen, befinden sich Cloud-Konfigurationen, die sich nur im `global` Knoten werden angezeigt, wenn Sie **[!UICONTROL Quellen hinzufügen]**.
+   * Klicken Sie auf das Symbol „Durchsuchen“ im Feld **[!UICONTROL Kontextabhängige Konfiguration]** und wählen Sie einen Konfigurationsknoten aus, in dem sich die Cloud-Konfiguration für die hinzuzufügende Datenquelle befindet. Wenn Sie keinen Knoten auswählen, werden die Cloud-Konfigurationen, die sich nur im Knoten `global` befinden, aufgelistet, wenn Sie auf **[!UICONTROL Quellen hinzufügen]** klicken.
 
-   * Um eine neue Datenquelle hinzuzufügen, wählen Sie **[!UICONTROL Quellen hinzufügen]** und wählen Sie die Datenquellen aus, die dem Formulardatenmodell hinzugefügt werden sollen. Alle in `global` konfigurierten Datenquellen und ggf. der ausgewählte Konfigurationsknoten werden angezeigt.
+   * Um eine neue Datenquelle hinzuzufügen, wählen Sie **[!UICONTROL Quellen hinzufügen]** und d die Datannenquellen aus, die dem Formulardatenmodell hinzugefügt werden sollen. Alle in `global` konfigurierten Datenquellen und ggf. der ausgewählte Konfigurationsknoten werden angezeigt.
 
-   * Um eine vorhandene Datenquelle durch eine andere Datenquelle desselben Typs zu ersetzen, wählen Sie die **[!UICONTROL Bearbeiten]** für die Datenquelle und wählen Sie aus der Liste der verfügbaren Datenquellen aus.
-   * Um eine vorhandene Datenquelle zu löschen, wählen Sie die **[!UICONTROL Löschen]** für die Datenquelle. Das Symbol „Löschen“ ist deaktiviert, wenn ein Datenmodellobjekt in der Datenquelle im Formulardatenmodell hinzugefügt wird.
+   * Um eine vorhandene Datenquelle durch eine andere Datenquelle desselben Typs zu ersetzen, klicken Sie auf das Symbol **[!UICONTROL Bearbeiten]** für die Datenquelle und wählen Sie diese aus der Liste der verfügbaren Datenquellen aus.
+   * Um eine vorhandene Datenquelle zu löschen, wählen Sie das Symbol **[!UICONTROL Löschen]** für die Datenquelle. Das Symbol „Löschen“ ist deaktiviert, wenn ein Datenmodellobjekt in der Datenquelle im Formulardatenmodell hinzugefügt wird.
 
    ![fdm-properties](assets/fdm-properties.png)
 
-1. Auswählen **[!UICONTROL Speichern und schließen]** , um die Aktualisierungen zu speichern.
+1. Klicken Sie zum Speichern der Aktualisierungen auf **[!UICONTROL Speichern und schließen]**.
 
 >[!NOTE]
 >

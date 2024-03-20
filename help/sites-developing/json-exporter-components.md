@@ -6,10 +6,11 @@ content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 6d127e14-767e-46ad-aaeb-0ce9dd14d553
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '471'
-ht-degree: 69%
+ht-degree: 78%
 
 ---
 
@@ -21,7 +22,7 @@ Komponenten können angepasst werden, um einen JSON-Export ihrer Inhalte basiere
 
 Der JSON-Export basiert auf [Sling-Modellen](https://sling.apache.org/documentation/bundles/models.html) und auf dem Framework des [Sling Model Exporter](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) (der sich wiederum auf [Jackson-Anmerkungen](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) stützt).
 
-Das bedeutet, dass die Komponente über ein Sling-Modell verfügen muss, wenn sie JSON exportieren muss. Führen Sie daher diese beiden Schritte aus, um den JSON-Export für jede Komponente zu aktivieren.
+Das bedeutet, dass die Komponente über ein Sling-Modell verfügen muss, wenn JSON exportiert werden soll. Führen Sie daher diese beiden Schritte aus, um den JSON-Export für jede Komponente zu aktivieren.
 
 * [Definieren eines Sling-Modells für die Komponente](/help/sites-developing/json-exporter-components.md#define-a-sling-model-for-the-component)
 * [Kommentieren der Sling-Modell-Oberfläche](#annotate-the-sling-model-interface)
@@ -70,7 +71,7 @@ Um vom JSON Exporter-Framework berücksichtigt zu werden, sollte die Modellschni
 
 Für die entsprechende Sling-Modell-Oberfläche (`MyComponent`) wird in diesem Fall über [Jackson-Anmerkungen](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) definiert, wie sie exportiert (serialisiert) werden soll.
 
-Die Modellschnittstelle muss ordnungsgemäß kommentiert werden, um zu definieren, welche Methoden serialisiert werden sollen. Standardmäßig werden alle Methoden, die die übliche Benennungskonvention für Getter einhalten, serialisiert und leiten ihre JSON-Eigenschaftsnamen von den Getter-Namen aus. Um dies zu vermeiden bzw. zu überschreiben, benennen Sie die JSON-Eigenschaft mit `@JsonIgnore` oder `@JsonProperty` um.
+Es müssen die richtigen Anmerkungen für die Modell-Oberfläche angewendet werden, um zu definieren, welche Methoden serialisiert werden sollen. Standardmäßig werden alle Methoden, die die übliche Benennungskonvention für Getter einhalten, serialisiert und leiten ihre JSON-Eigenschaftsnamen von den Getter-Namen aus. Um dies zu vermeiden bzw. zu überschreiben, benennen Sie die JSON-Eigenschaft mit `@JsonIgnore` oder `@JsonProperty` um.
 
 ## Beispiel {#example}
 

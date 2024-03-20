@@ -6,10 +6,11 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1070'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -38,12 +39,12 @@ Sie können nur adaptive Formularfragmente für Lazy Loading (verzögertes Laden
    Weitere Informationen zum Erstellen von Fragmenten finden Sie unter [Adaptive Formularfragmente](../../forms/using/adaptive-form-fragments.md).
 
 * **Identifizieren und Markieren globaler Werte**
-Zu formularbasierten Transaktionen gehören dynamische Elemente, die relevante Daten von Benutzern erfassen und verarbeiten und dadurch das Ausfüllen des Formulars vereinfachen. Ihr Formular hat zum Beispiel ein Feld A in Fragment X, dessen Wert die Gültigkeit von Feld B in einem anderen Fragment bestimmt. Wenn in diesem Fall Fragment X für verzögertes Laden markiert ist, muss der Wert von Feld A verfügbar sein, um Feld B zu validieren, selbst wenn Fragment X noch nicht geladen ist. Um dies zu erreichen, können Sie das Feld A als global kennzeichnen, so dass sein Wert für die Überprüfung des Feldes B zur Verfügung steht, wenn das Fragment X noch nicht geladen ist.
+Zu formularbasierten Transaktionen gehören dynamische Elemente, die relevante Daten von Benutzern erfassen und verarbeiten und dadurch das Ausfüllen des Formulars vereinfachen. Beispiel: Ihr Formular enthält Feld A in Fragment X, dessen Wert die Gültigkeit von Feld B in einem anderen Fragment bestimmt. Wenn in diesem Fall Fragment X für verzögertes Laden markiert ist, muss der Wert von Feld A verfügbar sein, um Feld B zu validieren, selbst wenn Fragment X nicht geladen wird. Um dies zu erreichen, können Sie Feld A als global markieren, wodurch sichergestellt wird, dass der zugehörige Wert für die Validierung von Feld B verfügbar ist, selbst wenn Fragment X noch nicht geladen ist.
 
   Weitere Informationen dazu, wie Sie einen Feldwert als „global“ kennzeichnen, finden Sie unter [Konfigurieren von verzögertem Laden](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
 
 * **Erstellen von Regeln zur Steuerung der Sichtbarkeit von Feldern**
-Formulare enthalten Felder und Abschnitte, die nicht für alle Benutzer und Bedingungen gelten. Autorinnen bzw. Autoren von Formularen und Entwickelnde verwenden Regeln für Sichtbarkeit oder Einblenden/Ausblenden, um die Sichtbarkeit je nach Benutzereingabe zu steuern. Beispielsweise wird das Feld „Firmenanschrift“ Benutzenden, die im Feld „Beschäftigungsstatus“ „Erwerbslos“ ausgewählt haben, nicht angezeigt. Weitere Informationen zum Schreiben von Regeln finden Sie unter [Verwenden des Regeleditors](../../forms/using/rule-editor.md).
+Formulare enthalten Felder und Abschnitte, die nicht für alle Benutzer und Bedingungen gelten. Menschen, die Formulare verfassen und entwickeln, verwenden Regeln für Sichtbarkeit oder Ein- und Ausblenden, um die Sichtbarkeit der Formulare anhand von Benutzereingaben zu steuern. Beispielsweise wird das Feld „Büroadresse“ nicht den Benutzenden angezeigt, die im Feld „Beschäftigungsstatus“ in einem Formular die Option „Arbeitslos“ auswählen. Weitere Informationen zum Erstellen von Regeln finden Sie unter [Verwenden des Regeleditors](../../forms/using/rule-editor.md).
 
   Sie können Sichtbarkeitsregeln in verzögert geladenen Fragmenten so nutzen, dass bedingte Felder nur angezeigt werden, wenn sie benötigt werden. Markieren Sie außerdem das bedingte Feld als „global“, um im Ausdruck für die Sichtbarkeit des verzögert geladenen Fragments darauf zu verweisen.
 
@@ -53,13 +54,13 @@ Führen Sie zum Aktivieren des verzögerten Ladens in einem adaptiven Formularfr
 
 1. Öffnen Sie im Bearbeitungsmodus das adaptive Formular, das das Fragment enthält, für das Sie verzögertes Laden aktivieren möchten.
 1. Wählen Sie das adaptive Formularfragment aus und wählen Sie ![cmppr](assets/cmppr.png).
-1. Aktivieren Sie in der Seitenleiste **[!UICONTROL Fragment verzögert laden]** und wählen **Fertig**.
+1. Aktivieren Sie in der Seitenleiste die Option **[!UICONTROL Fragment verzögert laden]** und wählen Sie **Fertig** aus.
 
    ![Verzögertes Laden für das adaptive Formularfragment aktivieren](assets/lazy-loading-fragment.png)
 
    Das Fragment ist jetzt für verzögertes Laden aktiviert.
 
-Sie können die Werte von Objekten im verzögert geladenen Fragment als „global“ markieren, sodass sie für die Verwendung in Skripten verfügbar sind, selbst wenn das enthaltende Fragment nicht geladen wird. Gehen Sie folgendermaßen vor:
+Sie können die Werte von Objekten im verzögert geladenen Fragment als global markieren, damit sie in Skripten verwendet werden können, wenn das übergeordnete Fragment nicht geladen wird. Gehen Sie folgendermaßen vor:
 
 1. Öffnen Sie das adaptive Formularfragment im Authoring-Modus.
 1. Wählen Sie das Feld aus, dessen Wert Sie als global markieren möchten, und wählen Sie dann ![cmppr](assets/cmppr.png).
@@ -86,8 +87,8 @@ Einige der folgenden Einschränkungen, Empfehlungen und wichtigen Aspekte sind b
 
 Weiterhin sollten Sie Folgendes beim Entwickeln von Skripten für das verzögerte Laden beachten:
 
-* Stellen Sie sicher, dass die initialisierten und berechneten Skripte, die in den Feldern des verzögert geladenen Fragments verwendet werden, idempotent sind. Idempotente Skripte sind diejenigen, die auch nach mehreren Ausführungen den gleichen Effekt haben.
+* Stellen Sie sicher, dass die initialisierten und berechneten Skripte, die in den Feldern des verzögert geladenen Fragments verwendet werden, idempotent sind. Idempotente Skripte sind diejenigen, die den gleichen Effekt auch nach mehreren Implementierungen haben.
 * Verwenden Sie die global verfügbare Eigenschaft von Feldern, um den Wert von Feldern in einem verzögerten Ladebereich für alle anderen Bereiche eines Formulars verfügbar zu machen.
-* Leiten Sie nicht den Referenzwert eines Feld innerhalb eines verzögert geladenen Bereichs weiter, egal ob das Feld als global in allen Fragmenten markiert ist oder nicht.
-* Über die Funktion zum Zurücksetzen des Bereichs können Sie alle sichtbaren Elemente im Bereich zurückzusetzen, indem Sie den folgenden Ausdruck für ein Klickereignis verwenden.\
+* Leiten Sie den Referenzwert eines Felds in einem verzögerten Bereich nicht weiter, unabhängig davon, ob das Feld global über Fragmente hinweg markiert ist oder nicht.
+* Verwenden Sie die Funktion zum Zurücksetzen des Bedienfelds, um alle im Bedienfeld sichtbaren Elemente mithilfe des folgenden Ausdrucks für ein Klickereignis zurückzusetzen.\
   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()

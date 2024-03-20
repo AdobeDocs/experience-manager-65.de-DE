@@ -6,10 +6,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2017'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
@@ -88,7 +89,7 @@ Um die Datenbank in Echtzeit zu sichern, müssen Sie entweder den Snapshot-Modus
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (nicht mehr unterstützt) ist ein Content Management System, das mit LiveCycle installiert wird. Sie ermöglicht es Benutzern, am Menschen orientierte Prozesse zu entwerfen, zu verwalten, zu überwachen und zu optimieren. Die Unterstützung von Content Services (veraltet) endet am 31.12.2014. Siehe [Adobe-Produkt-Lifecycle-Dokument](https://www.adobe.com/de/support/products/enterprise/eol/eol_matrix.html).
+>Adobe® LiveCycle® Content Services ES (nicht mehr unterstützt) ist ein Content-Management-System, das mit LiveCycle installiert wird. Es ermöglicht Benutzenden, am Menschen orientierte Prozesse zu entwerfen, zu verwalten, zu überwachen und zu optimieren. Die Unterstützung von Content Services (veraltet) endet am 31.12.2014. Siehe [Adobe-Produkt-Lifecycle-Dokument](https://www.adobe.com/de/support/products/enterprise/eol/eol_matrix.html).
 
 ### DB2 {#db2}
 
@@ -96,7 +97,7 @@ Konfigurieren Sie Ihre DB2-Datenbank für die Ausführung im Archivprotokollmodu
 
 >[!NOTE]
 >
-Wenn Ihre AEM Forms-Umgebung von einer früheren Version von AEM Forms aktualisiert wurde und DB2 verwendet, wird die Online-Sicherung nicht unterstützt. In diesem Fall müssen Sie AEM Formulare herunterfahren und eine Offline-Sicherung durchführen. Zukünftige Versionen von AEM Forms unterstützen die Online-Sicherung für Upgrade-Kunden.
+>Wenn Ihre AEM Forms-Umgebung von einer früheren Version von AEM Forms aktualisiert wurde und DB2 verwendet, wird die Online-Sicherung nicht unterstützt. In diesem Fall müssen Sie AEM Formulare herunterfahren und eine Offline-Sicherung durchführen. Zukünftige Versionen von AEM Forms unterstützen die Online-Sicherung für Upgrade-Kunden.
 
 IBM verfügt über eine Suite von Tools und Hilfesystemen, die Datenbankadministratoren bei der Verwaltung ihrer Sicherungs- und Wiederherstellungsaufgaben unterstützen:
 
@@ -132,7 +133,7 @@ Verwenden Sie MySQLAdmin oder ändern Sie die INI-Dateien in Windows, um Ihre My
 
 >[!NOTE]
 >
-Der binäre Standardprotokolliermodus für MySQL ist &quot;Statement&quot;, der nicht mit den von Content Services (nicht mehr unterstützt) verwendeten Tabellen kompatibel ist. Die Verwendung der binären Protokollierung in diesem Standardmodus führt dazu, dass Content Services (nicht mehr unterstützt) fehlschlägt. Wenn Ihr System Content Services (nicht mehr unterstützt) enthält, verwenden Sie den Protokollierungsmodus &quot;Gemischt&quot;. Um die Protokollierung &quot;Gemischt&quot;zu aktivieren, fügen Sie das folgende Argument zur Datei &quot;my.ini&quot;hinzu: `binlog_format=mixed log-bin=logname`
+>Der binäre Standardprotokolliermodus für MySQL ist &quot;Statement&quot;, der nicht mit den von Content Services (nicht mehr unterstützt) verwendeten Tabellen kompatibel ist. Die Verwendung der binären Protokollierung in diesem Standardmodus führt dazu, dass Content Services (nicht mehr unterstützt) fehlschlägt. Wenn Ihr System Content Services (nicht mehr unterstützt) enthält, verwenden Sie den Protokollierungsmodus &quot;Gemischt&quot;. Um die Protokollierung &quot;Gemischt&quot;zu aktivieren, fügen Sie das folgende Argument zur Datei &quot;my.ini&quot;hinzu: `binlog_format=mixed log-bin=logname`
 
 Sie können das Dienstprogramm mysqldump verwenden, um die vollständige Datenbanksicherung abzurufen. Vollständige Sicherungen sind erforderlich, aber sie sind nicht immer praktisch. Sie erzeugen große Backup-Dateien und benötigen Zeit zum Generieren. Um eine inkrementelle Sicherung durchzuführen, stellen Sie sicher, dass Sie den Server mit der Option - `log-bin` starten, wie im vorherigen Abschnitt beschrieben. Bei jedem Neustart des MySQL-Servers wird das Schreiben in das aktuelle Binärprotokoll beendet und ein neues erstellt, das ab dann als aktuelles Binärprotokoll gilt. Über den Befehl `FLUSH LOGS SQL` können Sie diesen Wechsel manuell erzwingen. Nach der ersten vollständigen Sicherung erfolgen nachfolgende inkrementelle Sicherungen mithilfe von „mysqladmin“ und dem Befehl `flush-logs`, der die nächste Protokolldatei generiert.
 
@@ -193,6 +194,6 @@ Wenn Sie zusätzliche Schriftarten in Ihrer AEM Forms-Umgebung installiert haben
 
 >[!NOTE]
 >
-Standardmäßig befinden sich die mit AEM Formularen installierten Adobe-Schriftarten im `[aem-forms root]/fonts` Verzeichnis.
+>Standardmäßig befinden sich die mit AEM Formularen installierten Adobe-Schriftarten im `[aem-forms root]/fonts` Verzeichnis.
 
 Wenn Sie das Betriebssystem auf dem Hostcomputer neu initialisieren und Schriftarten aus dem vorherigen Betriebssystem verwenden möchten, sollte auch der Inhalt des Ordners für Systemschriftarten gesichert werden. (Spezifische Anweisungen finden Sie in der Dokumentation für Ihr Betriebssystem.)

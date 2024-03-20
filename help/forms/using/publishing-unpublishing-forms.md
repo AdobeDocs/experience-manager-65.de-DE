@@ -7,10 +7,11 @@ topic-tags: publish
 content-strategy: max-2018
 docset: aem65
 exl-id: f26c4268-7885-4e61-a258-219d98288548
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1402'
-ht-degree: 49%
+ht-degree: 90%
 
 ---
 
@@ -30,27 +31,27 @@ AEM Forms unterstützt die folgenden Assettypen:
 * Designs
 * Formularvorlagen (XFA-Formulare)
 * PDF-Formulare
-* Dokument (einfache PDF-Dokumente)
+* Dokumente (reduzierte PDF-Dokumente)
 * Formularsätze
-* Ressource (Bilder, Schemata und Stylesheets)
+* Ressourcen (Bilder, Schemata und Stylesheets)
 
-Zunächst sind alle Assets nur in der Autoreninstanz verfügbar. Administratoren oder Formularautoren können alle Assets mit Ausnahme von Ressourcen veröffentlichen.
+Zunächst sind alle Assets nur in der Autoreninstanz verfügbar. Admins oder Formularautorinnen bzw. -autoren können alle Assets mit Ausnahme von Ressourcen veröffentlichen.
 
 Wenn Sie ein Formular auswählen und veröffentlichen, werden auch die zugehörigen Assets und Ressourcen veröffentlicht. Abhängige Assets werden jedoch nicht veröffentlicht. In diesem Kontext sind verwandte Assets und Ressourcen Assets, die ein veröffentlichtes Asset verwendet oder auf die es verweist. Abhängige Assets sind Assets, die auf ein veröffentlichtes Asset verweisen.
 
-Ihr adaptiver Forms verwendet möglicherweise einige Konfigurationen, Einstellungen und Anpassungen, die nicht automatisch veröffentlicht werden. Es wird empfohlen, diese Ressourcen zu veröffentlichen oder zu aktivieren, bevor Sie ein adaptives Formular veröffentlichen.
+Ihr adaptives Formular verwendet möglicherweise einige Konfigurationen, Einstellungen und Anpassungen, die nicht automatisch veröffentlicht werden. Es wird empfohlen, diese Ressourcen zu veröffentlichen oder zu aktivieren, bevor Sie ein adaptives Formular veröffentlichen.
 
 * Bearbeitbare adaptive Formularvorlagen
 * Cloud Service-Konfigurationen für Adobe Sign-, Typekit-, reCAPTCHA- und Formulardatenmodelle
 * Andere Cloud-Service-Konfigurationen sind nur aktiviert, wenn der Benutzer über Administratorberechtigungen verfügt.
-* Anpassungen. Dazu gehören unter anderem:
+* Anpassungen. Dazu zählen unter anderem:
 
    * Benutzerdefinierte Layouts
    * Benutzerdefiniertes Erscheinungsbild
    * CSS-Datei – als Eingabe im Dialogfeld „Container-Eigenschaften für adaptive Formulare“
    * Client-Bibliothekskategorie – als Eingabe im Dialogfeld „Container-Eigenschaften für adaptive Formulare“
    * Jede andere Client-Bibliothek, die als Teil der Vorlage für adaptive Formulare enthalten sein kann.
-   * Designpfade
+   * Design-Pfade
 
 ## Asset-Status {#asset-states}
 
@@ -66,9 +67,9 @@ Ein Asset kann über folgende Status verfügen:
 1. Verwenden Sie eines der folgenden Verfahren, um ein Asset auszuwählen und zu veröffentlichen.
 
    1. Bewegen Sie den Mauszeiger über ein Asset und wählen Sie **[!UICONTROL Veröffentlichen]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
-   1. Führen Sie einen der folgenden Schritte aus und wählen Sie dann Veröffentlichen aus:
+   1. Führen Sie einen der folgenden Schritte aus und wählen Sie dann „Veröffentlichen“:
 
-      * Wenn Sie sich in der Kartenansicht befinden, wählen Sie **[!UICONTROL Auswahl eingeben]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)und wählen Sie das Asset aus. Das Asset wird ausgewählt.
+      * Wenn Sie sich in der Kartenansicht befinden, wählen Sie **[!UICONTROL Auswahl eingeben]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png) und wählen Sie dann das Asset aus. Das Asset wird ausgewählt.
       * Wenn Sie sich in der Listenansicht befinden, aktivieren Sie das Kontrollkästchen eines Assets. Das Asset wird ausgewählt.
       * Wählen Sie ein Asset aus, um dessen Details anzuzeigen.
       * Zeigen Sie die Eigenschaften eines Assets an, indem Sie auf „Eigenschaften anzeigen“ ![viewproperties](assets/viewproperties.png) tippen.
@@ -77,7 +78,7 @@ Ein Asset kann über folgende Status verfügen:
       >
       >Wählen Sie nicht mehrere Assets aus. Das gleichzeitige Veröffentlichen mehrerer Assets wird nicht unterstützt.
 
-1. Wenn der Veröffentlichungsprozess beginnt, wird ein Bestätigungsdialogfeld angezeigt, in dem alle zugehörigen Assets und Ressourcen aufgelistet sind. Wählen Sie im Dialogfeld mit den zugehörigen Assets die Option **[!UICONTROL Veröffentlichen]**. Das Asset wird veröffentlicht, und das Dialogfeld über das erfolgreiche Veröffentlichen des Assets wird angezeigt.
+1. Wenn der Veröffentlichungsprozess beginnt, wird ein Bestätigungsdialogfeld angezeigt, in dem alle zugehörigen Assets und Ressourcen aufgelistet sind. Wählen Sie im Dialogfeld, das das zugehörige Asset enthält, die Option **[!UICONTROL Veröffentlichen]**. Das Asset wird veröffentlicht, und das Dialogfeld über das erfolgreiche Veröffentlichen des Assets wird angezeigt.
 
    >[!NOTE]
    >
@@ -91,7 +92,7 @@ Ein Asset kann über folgende Status verfügen:
    >
    >Forms Manager: Wenn der Benutzer nicht berechtigt ist, die aufgelisteten Assets zu veröffentlichen, ist die Veröffentlichungsaktion deaktiviert. Ein Asset, für das zusätzliche Berechtigungen erforderlich sind, wird rot angezeigt.
 
-   Nachdem ein Asset veröffentlicht wurde, werden die Metadateneigenschaften des Assets in die Veröffentlichungsinstanz kopiert und der Status des Assets wird in Veröffentlicht geändert. Der Status von abhängigen Assets, die veröffentlicht werden, wird ebenfalls in &quot;Veröffentlicht&quot;geändert.
+   Nachdem ein Asset veröffentlicht wurde, werden die Metadateneigenschaften des Assets in die Veröffentlichungsinstanz kopiert und der Status des Assets wird in „Veröffentlicht“ geändert. Der Status der abhängigen Assets, die veröffentlicht wurden, wird ebenfalls in „Veröffentlicht“ geändert.
 
    Nach dem Veröffentlichen eines Assets können Sie das Forms-Portal verwenden, um alle Assets auf einer Web-Seite anzuzeigen. Weitere Informationen finden Sie unter [Einführung in das Veröffentlichen von Formularen in einem Portal](../../forms/using/introduction-publishing-forms.md).
 
@@ -102,9 +103,9 @@ Mit AEM Forms können Sie alle Correspondence Management-Assets auf einem Server
 Führen Sie nun die folgenden Schritte aus, um sämtliche Correspondence Management-Assets auf dem Server zu veröffentlichen:
 
 1. Melden Sie sich beim AEM Forms-Server an.
-1. Auswählen **Adobe Experience Manager** in der globalen Navigationsleiste.
-1. Auswählen ![tools](assets/tools.png)und wählen Sie **Forms**.
-1. Auswählen **Correspondence Management-Assets veröffentlichen**.
+1. Wählen Sie **Adobe Experience Manager** in der Menüleiste für globale Navigation aus.
+1. Wählen Sie ![Tools](assets/tools.png), und wählen Sie dann **Formulare**.
+1. Wählen Sie **Correspondence Management-Assets veröffentlichen**.
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)
 
@@ -112,13 +113,13 @@ Führen Sie nun die folgenden Schritte aus, um sämtliche Correspondence Managem
 
    ![publish-last-run-details](assets/publish-last-run-details.png)
 
-1. Auswählen **Veröffentlichen** und wählen Sie in der Bestätigungsnachricht die Option **OK**.
+1. Wählen Sie **Veröffentlichen** und wählen Sie dann in der Bestätigungsmeldung **OK**.
 
-   Nachdem ein Batch-Prozess abgeschlossen ist, können Sie die Details der letzten Ausführung anzeigen. Dazu gehören Informationen wie die Administrator-Anmeldung und ob der Batch erfolgreich ausgeführt wurde oder fehlgeschlagen ist.
+   Nachdem ein Batch-Prozess abgeschlossen ist, können Sie die Details der letzten Ausführung anzeigen. Dazu gehören Informationen wie das Admin-Login und ob die Batch-Ausführung erfolgreich gewesen oder fehlgeschlagen ist.
 
    >[!NOTE]
    >
-   >Der Veröffentlichungsprozess kann nicht abgebrochen werden, nachdem er initiiert wurde. Zudem sollten Sie darauf achten, während der Ausführung des Vorgangs „Veröffentlichen“ keine Assets zu erstellen, zu löschen, zu modifizieren oder zu veröffentlichen und nicht den Vorgang „Alle Correspondence Management-Elemente exportieren“ zu starten.
+   >Nachdem der Veröffentlichungsvorgang ausgelöst wurde, kann er nicht mehr abgebrochen werden. Zudem sollten Sie darauf achten, während der Ausführung des Vorgangs „Veröffentlichen“ keine Assets zu erstellen, zu löschen, zu modifizieren oder zu veröffentlichen und nicht den Vorgang „Alle Correspondence Management-Elemente exportieren“ zu starten.
 
 ## Formulare und Dokumente veröffentlichen und die Veröffentlichung rückgängig machen {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
@@ -126,31 +127,31 @@ Mit AEM Forms können Sie die Veröffentlichung von Assets und das Rückgängigm
 
 Führen Sie folgende Schritte aus, um das Datum und die Uhrzeit für die Veröffentlichung bzw. das Rückgängigmachen der Veröffentlichung von Formular- und Dokument-Assets zu planen:
 
-1. Auswählen eines Assets und Auswählen **[!UICONTROL Eigenschaften anzeigen]**. Die Seite mit den Metadateneigenschaften wird geöffnet.
-1. Wählen Sie auf der Seite Metadateneigenschaften die Option **[!UICONTROL Erweitert]** und wählen Sie **[!UICONTROL Bearbeiten]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
-1. Wählen Sie in den Feldern **[!UICONTROL Veröffentlichungszeit]** und **[!UICONTROL Zeit für Rückgängigmachen der Veröffentlichung]** das Datum und die Uhrzeit aus.\
-   Auswählen **[!UICONTROL Fertig]** ![aem6forms_check](assets/aem6forms_check.png).
+1. Wählen Sie ein Asset aus und wählen Sie **[!UICONTROL Eigenschaften anzeigen]**. Die Seite mit den Metadateneigenschaften wird geöffnet.
+1. Wählen Sie auf der Seite „Metadateneigenschaften“ **[!UICONTROL Erweitert]** und dann **[!UICONTROL Bearbeiten]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+1. Wählen Sie in den Feldern **[!UICONTROL Einschaltzeit für Veröffentlichung]** und **[!UICONTROL Ausschaltzeit für Veröffentlichung]** das Datum und die Uhrzeit aus.\
+   Wählen Sie **[!UICONTROL Fertig]** ![aem6forms_check](assets/aem6forms_check.png).
 
-## Die Veröffentlichung eines Assets rückgängig machen {#unpublish-an-asset}
+## Rückgängigmachen der Veröffentlichung eines Assets {#unpublish-an-asset}
 
-1. Wählen Sie ein veröffentlichtes Asset aus und wählen Sie **[!UICONTROL Veröffentlichung rückgängig machen]** ![unpublish](assets/unpublish.png).
+1. Wählen Sie ein veröffentlichtes Asset aus und wählen Sie **[!UICONTROL Veröffentlichung aufheben]** ![unpublish](assets/unpublish.png).
 1. Verwenden Sie eines der folgenden Verfahren, um ein Asset auszuwählen und seine Veröffentlichung rückgängig zu machen.
 
-   1. Bewegen Sie den Mauszeiger über ein Asset und wählen Sie **[!UICONTROL Veröffentlichung rückgängig machen]** ![unpublish](assets/unpublish.png).
-   1. Führen Sie einen der folgenden Schritte aus und wählen Sie dann Veröffentlichung rückgängig machen aus:
+   1. Bewegen Sie den Mauszeiger über ein Asset und wählen Sie **[!UICONTROL Veröffentlichung aufheben]** ![unpublish](assets/unpublish.png).
+   1. Führen Sie einen der folgenden Schritte aus und wählen Sie dann „Veröffentlichung aufheben“:
 
-      * Wenn Sie sich in der Kartenansicht befinden, wählen Sie **[!UICONTROL Auswahl eingeben]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)und wählen Sie das Asset aus. Das Asset wird ausgewählt.
+      * Wenn Sie sich in der Kartenansicht befinden, wählen Sie **[!UICONTROL Auswahl eingeben]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png) und dann das Asset aus. Das Asset wird ausgewählt.
 
-      * Wenn Sie sich in der Listenansicht befinden, halten Sie den Mauszeiger über ein Asset und wählen Sie ![selectassetcheck](assets/selectassetcheckmark.png) . Das Asset wird ausgewählt.
+      * Wenn Sie sich in der Listenansicht befinden, bewegen Sie den Mauszeiger über ein Asset und wählen Sie ![selectassetcheckmark](assets/selectassetcheckmark.png). Das Asset wird ausgewählt.
 
       * Wählen Sie ein Asset aus, um dessen Details anzuzeigen.
       * Zeigen Sie die Eigenschaften eines Assets an, indem Sie auf „Eigenschaften anzeigen“ ![viewproperties](assets/viewproperties.png) tippen.
 
-1. Wenn der Prozess zum Rückgängigmachen der Veröffentlichung startet, wird ein Bestätigungsdialogfeld angezeigt. Auswählen **[!UICONTROL Veröffentlichung rückgängig machen]**.
+1. Wenn der Prozess zum Rückgängigmachen der Veröffentlichung startet, wird ein Bestätigungsdialogfeld angezeigt. Wählen Sie **[!UICONTROL Veröffentlichung aufheben]**.
 
    >[!NOTE]
    >
-   >Es wird nur die Veröffentlichung des ausgewählten Assets rückgängig gemacht, Assets, die ihm untergeordnet sind oder auf es verweisen, bleiben veröffentlicht.
+   >Es wird nur die Veröffentlichung des ausgewählten Assets rückgängig gemacht, aber Assets, die ihm untergeordnet sind oder auf es verweisen, bleiben veröffentlicht.
 
 ## Die zuvor veröffentlichte Version eines Assets oder Briefes wiederherstellen {#revert-an-asset-or-letter-to-the-previously-published-version}
 
@@ -160,8 +161,8 @@ Jedes Mal, wenn Sie ein Asset oder einen Brief veröffentlichen, nachdem Sie es 
 >
 >Setzen Sie einen Brief nicht wieder in den zuletzt veröffentlichten Status zurück, wenn ein abhängiges Asset, das in diesem veröffentlichten Brief verwendet wird, aus dem System gelöscht wird.
 
-1. Auswählen eines Assets und Auswählen **[!UICONTROL Zurück zur zuvor veröffentlichten Version]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
-1. Bevor das Asset wiederhergestellt wird, wird ein Bestätigungsdialogfeld angezeigt. Auswählen **[!UICONTROL Wiederherstellen]**.
+1. Wählen Sie ein Asset aus und wählen Sie **[!UICONTROL Wiederherstellen der zuvor veröffentlichten Version]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
+1. Bevor das Asset wiederhergestellt wird, wird ein Bestätigungsdialogfeld angezeigt. Wählen Sie **[!UICONTROL Wiederherstellen]** aus.
 
    Das Asset bzw. der Brief wird auf seine zuvor veröffentlichte Version zurückgesetzt.
 
@@ -171,7 +172,7 @@ Jedes Mal, wenn Sie ein Asset oder einen Brief veröffentlichen, nachdem Sie es 
 >
 >Wenn Sie ein Asset löschen, wird es aus der Veröffentlichungsinstanz entfernt. Beim Löschen von Assets wird auch der Versionsverlauf mit Ausnahme der Basisversion entfernt.
 
-1. Auswählen eines Assets und Auswählen **[!UICONTROL Löschen]** ![delete](assets/delete.png).
+1. Wählen Sie ein Asset aus und wählen Sie **[!UICONTROL Löschen]** ![delete](assets/delete.png).
 
    >[!NOTE]
    >
@@ -181,18 +182,18 @@ Jedes Mal, wenn Sie ein Asset oder einen Brief veröffentlichen, nachdem Sie es 
 
    >[!NOTE]
    >
-   >Nur das ausgewählte Asset wird gelöscht, nicht jedoch die von ihm abhängigen Assets. Um die Referenzen eines Assets zu überprüfen, wählen Sie ![Verweise](assets/references.png) und wählen Sie dann ein Asset aus.
+   >Nur das ausgewählte Asset wird gelöscht, nicht jedoch die von ihm abhängigen Assets. Um die Verweise eines Assets zu prüfen, wählen Sie ![references](assets/references.png) und wählen Sie ein Asset aus.
    >
    >
    >Wenn das Asset, das Sie löschen möchten, ein untergeordnetes Asset eines anderen Assets ist, wird es nicht gelöscht. Um ein solches Asset löschen, entfernen Sie seine Verweise aus anderen Assets und wiederholen Sie den Vorgang.
 
 ## Geschützte adaptive Formular {#protected-adaptive-forms}
 
-Sie können die Authentifizierung für Formulare aktivieren, auf die ausgewählte Benutzer zugreifen sollen. Wenn Sie die Authentifizierung für Ihre Formulare aktivieren, sehen Benutzer einen Anmeldebildschirm, bevor sie darauf zugreifen. Nur Benutzer mit autorisierten Anmeldeinformationen können auf die Formulare zugreifen.
+Sie können die Authentifizierung für Formulare aktivieren, auf die ausgewählte Benutzende Zugriff haben sollen. Wenn Sie die Authentifizierung für Ihre Formulare aktivieren, sehen die Benutzenden einen Anmeldebildschirm, bevor sie darauf zugreifen. Nur Benutzende mit autorisierten Anmeldeinformationen können auf die Formulare zugreifen.
 
 Aktivieren der Authentifizierung für Ihre Formulare:
 
-1. Öffnen Sie in Ihrem Browser configMgr in der Veröffentlichungsinstanz.\
+1. Öffnen Sie in Ihrem Browser „configMgr“ in der Veröffentlichungsinstanz.\
    URL: `https://<hostname>:<PublishPort>/system/console/configMgr`
 
 1. Klicken Sie auf der Seite „Adobe Experience Manager Web Console-Konfigurationen“ auf **Apache Sling-Authentifizierungs-Service**, um diesen Service zu konfigurieren.

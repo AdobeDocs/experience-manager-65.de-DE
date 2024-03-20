@@ -4,10 +4,11 @@ description: Hier finden Sie Best Practices für die Einrichtung und Verwendung 
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1599'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -87,7 +88,7 @@ Live Copies können mit AEM auf zwei Arten erstellt werden:
 
 Berücksichtigen Sie beim Erstellen einer Website folgende Punkte:
 
-* Um eine Site zu erstellen, benötigen Sie eine [Blueprint-Konfiguration](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
+* Für die Erstellung einer Site benötigen Sie eine [Blueprint-Konfiguration](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
 * Um das Auswählen von Sprachpfaden zu ermöglichen, die für eine neue Website erstellt werden sollen, muss die Blueprint (Quelle) die entsprechenden Sprachstämme enthalten.
 * Nach der [Erstellung einer neuen Website als Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (mithilfe von **Erstellen** > **Website**) sind die ersten beiden Ebenen dieser Live Copy *flach*. Untergeordnete Elemente der Seite sind nicht Teil der Live-Beziehung, werden bei einem Rollout aber trotzdem berücksichtigt, wenn eine dem Auslöser entsprechende Live-Beziehung gefunden wird.
 
@@ -160,7 +161,7 @@ Weitere Informationen finden Sie unter [Übersetzen von Inhalt für mehrsprachig
 
 ## Anpassen von Rollouts {#customizing-rollouts}
 
-MSM-Rollout-Konfigurationen können in hohem Maße angepasst werden. Die Automatisierung von Rollouts kann weit reichende Folgen haben. Als Best Practice sollten Sie vorab *sehr* sorgfältig planen. Beispiele:
+MSM-Rollout-Konfigurationen können in hohem Maße angepasst werden. Die Automatisierung von Rollouts kann weitreichende Folgen haben. Als Best Practice sollten Sie vorab *sehr* sorgfältig planen. Beispiele:
 
 * Automatisieren von Rollouts (etwa mit [onModify-Auslösern](#onmodify))
 * Anpassen von [Knotentypen/-eigenschaften](#node-types-properties)

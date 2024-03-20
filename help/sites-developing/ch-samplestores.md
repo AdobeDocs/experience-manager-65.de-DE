@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: d8d9a799-3e30-442a-843b-d4d7ba70c557
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '464'
-ht-degree: 81%
+ht-degree: 88%
 
 ---
 
@@ -23,11 +24,11 @@ ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lös
 
 >[!WARNING]
 >
->Die Beispiele für Store-Kandidaten werden als Referenzkonfigurationen bereitgestellt, damit Sie Ihre eigene dedizierte Konfiguration für Ihr Projekt erstellen können. Verwenden Sie sie nicht direkt.
+>Die Beispiele für Store-Kandidaten werden als Referenzkonfigurationen bereitgestellt, um Ihnen bei der Einrichtung einer eigenen dedizierten Konfiguration für Ihr Projekt zu helfen. Verwenden Sie sie nicht direkt.
 
 ## Beispiel-Store-Kandidat „aem.segmentations“ {#aem-segmentation-sample-store-candidate}
 
-Store für gelöste und ungelöste ContextHub-Segmente. Ruft automatisch Segmente aus dem ContextHub SegmentManager ab.
+Store für gelöste und ungelöste ContextHub-Segmente. Ruft automatisch Segmente aus dem ContextHub SegmentManager zurück.
 
 ### Quellpfad {#source-location-segmentation}
 

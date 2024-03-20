@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 exl-id: 61a5875f-ad09-4971-a886-b0d88e0c9967
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 77%
+source-wordcount: '546'
+ht-degree: 75%
 
 ---
 
@@ -46,9 +47,9 @@ Im Rahmen der Segmentierung wird die folgende Terminologie verwendet:
 **Verhaltenseigenschaften**: Bei Verhaltenseigenschaften handelt es sich um diejenigen Eigenschaften, die sich auf das Verhalten eines Besuchers auf einer Website beziehen. Dazu gehören:
 
 * Interessensgebiete auf Ihrer Website, einschließlich besuchter Seiten und gekaufter Produkte.
-* Interesse an der verweisenden Website; einschließlich verwendeter Suchbegriffe oder angeklickte Anzeigen.
+* Interessensgebiete auf der verweisenden Website, einschließlich verwendeter Suchbegriffe oder angeklickte Anzeigen.
 * Interessensgebiete auf anderen Sites, die durch Tools wie Spyjax ermittelt werden.
-* Loyalität der Besucher, Dauer des Besuchs, Häufigkeit der Besuche.
+* Besucherloyalität, Dauer des Besuchs, Häufigkeit der Besuche.
 
 **Demografische Eigenschaften**: Dabei handelt es sich um ausgewählte Merkmale der Population, darunter:
 

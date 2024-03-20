@@ -2,10 +2,11 @@
 title: Authoring von Commerce-Erlebnissen
 description: Das CIF-Add-on erweitert das Adobe Experience Manager-Authoring mit Commerce-spezifischen Funktionen.
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 89%
+ht-degree: 94%
 
 ---
 
@@ -33,7 +34,7 @@ Durch Klicken auf die übergeordnete Kategorie kehrt der Autor zur Produktebene 
 
 ![Teaser-Komponente ohne Auswahl](/help/commerce/cif/assets/authoring/teaser_component_without_selection.png)
 
-Das Konfigurationsdialogfeld dieser Komponente erfordert ein Produkt. CIF verwendet die SKU als Produktkennung. Autoren können entweder die SKU manuell eingeben oder auf das Ordnersymbol klicken, um die Produktauswahl zu öffnen. Nach dem Auswählen und Schließen der Auswahl zeigt das Komponentendialogfeld den Namen des ausgewählten Produkts an.
+Das Konfigurationsdialogfeld dieser Komponente erfordert ein Produkt. CIF verwendet die SKU als Produktkennung. Autorinnen und Autoren können entweder die SKU manuell eingeben oder auf das Ordnersymbol klicken, um die Produktauswahl zu öffnen. Nach dem Auswählen und Schließen der Auswahl zeigt das Komponentendialogfeld den Namen des ausgewählten Produkts an.
 
 ![Teaser-Komponente mit Auswahl](/help/commerce/cif/assets/authoring/teaser_component_with_selection.png)
 
@@ -47,7 +48,7 @@ Diese Auswahl kann das Durchsuchen der Katalogstruktur anbieten, um die Kategori
 
 ![Karussellkomponente ohne Auswahl](/help/commerce/cif/assets/authoring/carousel_component_without_selection.png)
 
-Das Konfigurationsdialogfeld dieser Komponente erfordert 1:n Kategorien. CIF verwendet die UID/ID als Kategoriekennung. Autoren können entweder die UID manuell eingeben oder auf das Ordnersymbol klicken, um die Kategorieauswahl zu öffnen. Nach dem Auswählen und Schließen der Auswahl zeigt das Komponentendialogfeld den Namen der ausgewählten Kategorie an.
+Das Konfigurationsdialogfeld dieser Komponente erfordert 1:n Kategorien. CIF verwendet die UID/ID als Kategoriekennung. Autorinnen und Autoren können entweder die UID manuell eingeben oder auf das Ordnersymbol klicken, um die Kategorieauswahl zu öffnen. Nach dem Auswählen und Schließen der Auswahl zeigt das Komponentendialogfeld den Namen der ausgewählten Kategorie an.
 
 ![Karussellkomponente mit Auswahl](/help/commerce/cif/assets/authoring/carousel_component_with_selection.png)
 

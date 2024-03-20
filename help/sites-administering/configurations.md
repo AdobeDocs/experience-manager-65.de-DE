@@ -2,10 +2,11 @@
 title: Konfigurationen und der Konfigurations-Browser
 description: Machen Sie sich mit AEM-Konfigurationen und der Verwaltung der Einstellungen für den Arbeitsbereich in AEM vertraut.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1472'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -51,8 +52,8 @@ Der Administrator kann dann „WKND-General“ mit allen Inhalten der WKND-Site 
 
 Dies geschieht folgendermaßen:
 
-* Wenn eine Inhaltsautorin oder ein Inhaltsautor eine Seite für das Magazin erstellt, kann zwischen allgemeinen Vorlagen (WKND-General) oder Magazinvorlagen (WKND-Magazine) gewählt werden.
-* Wenn eine Inhaltsautorin oder ein Inhaltsautor eine Seite für einen anderen Teil der Site erstellt, bei dem es sich nicht um das Magazin handelt, kann nur aus den allgemeinen Vorlagen (WKND-General) gewählt werden.
+* Wenn eine Inhaltsautorin bzw. ein Inhaltsautor eine neue Seite für das Magazin erstellt, lässt sich zwischen allgemeinen Vorlagen (WKND-General) oder Magazinvorlagen (WKND-Magazin) wählen.
+* Wenn die Inhaltsautorin bzw. der Inhaltsautor eine neue Seite für einen anderen Teil der Website erstellt, der nicht das Magazin ist, lässt sich nur aus den allgemeinen Vorlagen (WKND-General) auswählen.
 
 Ähnliche Setups sind nicht nur für bearbeitbare Vorlagen möglich, sondern auch für Cloud-Konfigurationen, ContextHub-Segmente und Inhaltsfragmentmodelle.
 
@@ -68,7 +69,7 @@ Mit dem Konfigurations-Browser kann ein Administrator auf einfache Weise Zugriff
 
 Es ist einfach, mithilfe des Konfigurations-Browsers eine Konfiguration in AEM zu erstellen.
 
-1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü die Option **Instrumente** > **Allgemein** > **Konfigurationsbrowser**.
+1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Tools** > **Allgemein** > **Konfigurations-Browser** aus.
 1. Klicken Sie auf **Erstellen**.
 1. Geben Sie einen **Titel** und einen **Namen** für Ihre Konfiguration an.
 
@@ -93,7 +94,7 @@ Es ist einfach, mithilfe des Konfigurations-Browsers eine Konfiguration in AEM z
 
 Wenn Sie Konfigurationen als Arbeitsbereiche betrachten, können Zugriffsrechte für diese Konfigurationen festgelegt werden, um zu erzwingen, wer auf diese Arbeitsbereiche zugreifen darf und wer nicht.
 
-1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü die Option **Instrumente** > **Allgemein** > **Konfigurationsbrowser**.
+1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Tools** > **Allgemein** > **Konfigurations-Browser** aus.
 1. Wählen Sie die zu ändernde Konfiguration aus und klicken Sie auf **Eigenschaften** in der Symbolleiste.
 1. Wählen Sie alle zusätzlichen Funktionen aus, die Sie der Konfiguration hinzufügen möchten.
 
@@ -135,9 +136,9 @@ ValueMap imageServerSettings = conf.getItem("dam/imageserver");
 String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 ```
 
-Der Ausgangspunkt aller Konfigurationsabfragen ist eine Inhaltsressource unter `/content`. Dies kann eine Seite, eine Komponente innerhalb einer Seite, ein Asset oder ein DAM-Ordner sein. Dies ist der eigentliche Inhalt, für den Sie nach der richtigen Konfiguration suchen, die in diesem Zusammenhang gilt.
+Der Ausgangspunkt aller Konfigurationsabfragen ist eine Inhaltsressource unter `/content`. Dies kann eine Seite, eine Komponente innerhalb einer Seite, ein Asset oder ein DAM-Ordner sein. Dies ist der eigentliche Inhalt, für den wir nach der richtigen Konfiguration suchen, die in diesem Zusammenhang gilt.
 
-Mit dem `Conf`-Objekt können Sie nun das spezifische Konfigurationselement abrufen, an dem Sie interessiert sind. In diesem Fall ist es `dam/imageserver`, was eine Sammlung von Einstellungen im Zusammenhang mit `imageserver` ist. Der Aufruf `getItem` gibt eine `ValueMap` zurück. Anschließend lesen Sie eine `bgkcolor`-Zeichenfolgeneigenschaft aus und geben den Standardwert „FFFFFF“ an, falls die Eigenschaft (oder das gesamte Konfigurationselement) nicht vorhanden ist.
+Mit dem `Conf`-Objekt können wir nun das spezifische Konfigurationselement abrufen, an dem wir interessiert sind. In diesem Fall ist es `dam/imageserver`, was eine Sammlung von Einstellungen im Zusammenhang mit `imageserver` ist. Der Aufruf `getItem` gibt ein `ValueMap` zurück. Anschließend lesen Sie eine `bgkcolor`-Zeichenfolgeneigenschaft aus und geben den Standardwert „FFFFFF“ an, falls die Eigenschaft (oder das gesamte Konfigurationselement) nicht vorhanden ist.
 
 Sehen wir uns nun den entsprechenden JCR-Inhalt an:
 

@@ -8,9 +8,10 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2671'
+source-wordcount: '2666'
 ht-degree: 33%
 
 ---
@@ -100,7 +101,7 @@ Nachstehend finden Sie die Vorgehensweise, die zum Erstellen eines Setups mit ei
 
    1. Prüfen und löschen Sie alle vorherigen OSGi-Konfigurationen, die Sie möglicherweise unter haben `aem-primary/crx-quickstart/install`
 
-   1. Erstellen Sie unter `install.primary` den Ordner `aem-primary/crx-quickstart/install`.
+   1. Erstellen Sie unter `aem-primary/crx-quickstart/install` den Ordner `install.primary`
 
    1. Erstellen Sie die erforderlichen Konfigurationen für den bevorzugten Knotenspeicher und Datenspeicher unter `aem-primary/crx-quickstart/install/install.primary`
    1. Erstellen Sie im selben Verzeichnis die Datei `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config` und konfigurieren Sie sie entsprechend. Weitere Informationen zu den Konfigurationsoptionen finden Sie unter [Konfiguration](/help/sites-deploying/tarmk-cold-standby.md#configuration).
@@ -153,14 +154,14 @@ Nachstehend finden Sie die Vorgehensweise, die zum Erstellen eines Setups mit ei
 1. Bereiten Sie dann die Standby-Instanz vor. Führen Sie dazu die gleichen Schritte wie für die primäre Instanz aus:
 
    1. Löschen Sie alle Dateien, die Sie möglicherweise unter `aem-standby/crx-quickstart/install`.
-   1. Erstellen Sie unter `install.standby` den Ordner `aem-standby/crx-quickstart/install`.
+   1. Erstellen Sie unter `aem-standby/crx-quickstart/install` den Ordner `install.standby`
 
    1. Erstellen Sie zwei Konfigurationsdateien mit den folgenden Namen:
 
       * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
       * `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config`
 
-   1. Erstellen Sie unter `crx3` den Ordner `aem-standby/crx-quickstart/install`.
+   1. Erstellen Sie unter `aem-standby/crx-quickstart/install` den Ordner `crx3`
 
    1. Erstellen Sie die Datenspeicherkonfiguration und speichern Sie sie unter `aem-standby/crx-quickstart/install/crx3`. Für dieses Beispiel müssen Sie die folgende Datei erstellen:
 

@@ -7,9 +7,10 @@ role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2204'
+source-wordcount: '2183'
 ht-degree: 97%
 
 ---
@@ -43,7 +44,7 @@ Sie können eine Sammlung mit [statischen Referenzen](#creating-a-collection-wi
 
 ### Erstellen von Sammlungen mit statischen Referenzen {#creating-a-collection-with-static-references}
 
-Sie können eine Sammlung mit statischen Referenzen erstellen, z. B. eine Sammlung mit Referenzen zu Assets, Ordnern, Sammlungen, Rotationssets und Bildsets.
+Sie können eine Sammlung mit statischen Referenzen erstellen, z. B. eine Sammlung mit Referenzen zu Assets, Ordnern, Sammlungen, Rotations-Sets und Bildsets.
 
 1. Navigieren Sie zur Konsole **[!UICONTROL Sammlungen]**.
 1. Klicken Sie auf der Symbolleiste auf **[!UICONTROL Erstellen]**.
@@ -196,7 +197,7 @@ Innerhalb einer Sammlung ist die Suche von [!DNL Experience Manager] auf Assets 
 Sie können Sammlungseinstellungen, wie z. B. Titel und Beschreibung, bearbeiten oder Mitglieder zu einer Sammlung hinzufügen.
 
 1. Wählen Sie eine Sammlung aus und klicken Sie auf der Symbolleiste auf **[!UICONTROL Einstellungen]**. Verwenden Sie alternativ die Schnellaktion **[!UICONTROL Einstellungen]** in der Miniatur der Sammlung.
-1. Ändern Sie die Sammlungseinstellungen auf der Seite **[!UICONTROL Sammlungseinstellungen]**. Beispiel: Ändern Sie den Sammlungstitel, die Beschreibung, die Mitglieder und Berechtigungen wie unter [Hinzufügen von Sammlungen](#creating-a-collection) beschrieben.
+1. Ändern Sie die Sammlungseinstellungen auf der Seite **[!UICONTROL Einstellungen für Sammlung]**. Ändern Sie beispielsweise den Sammlungstitel, die Beschreibungen, Mitglieder und Berechtigungen wie unter [Hinzufügen von Sammlungen](#creating-a-collection).
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 

@@ -2,10 +2,12 @@
 title: Erste Schritte mit Edge Delivery Services
 description: Erste Schritte mit Edge Delivery Services
 exl-id: 8d2b2d6c-ae11-4829-842e-b186f5491713
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+solution: Experience Manager, Experience Manager Assets
+feature: Edge Delivery Services
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '834'
-ht-degree: 89%
+ht-degree: 95%
 
 ---
 
@@ -29,7 +31,7 @@ Edge Delivery ist ein zusammenstellbarer Satz von Diensten, der eine hohe Flexib
 
 Sie können beispielsweise Inhalte direkt aus Microsoft Word-Dokumenten oder Google Docs verwenden. Das bedeutet, dass Dokumente aus diesen Quellen Seiten auf Ihrer Website werden können. Darüber hinaus können Überschriften, Listen, Bilder und Schriftelemente von der ursprünglichen Quelle auf die Website übertragen werden. Der neue Inhalt wird sofort und ohne Neuerstellungsprozess hinzugefügt.
 
-Die Edge-Bereitstellung verwendet GitHub, damit Kunden Code direkt über ihr GitHub-Repository verwalten und bereitstellen können. Sie können beispielsweise Inhalte entweder in Google Docs oder Microsoft Word schreiben und die Funktionalität Ihrer Site kann mithilfe von CSS und JavaScript in GitHub entwickelt werden. Wenn Sie bereit sind, können Sie die Sidekick-Browser-Erweiterung verwenden, um Inhaltsaktualisierungen in der Vorschau anzuzeigen und zu veröffentlichen.
+Die Edge-Bereitstellung verwendet GitHub, damit Kunden Code direkt über ihr GitHub-Repository verwalten und bereitstellen können. Sie können beispielsweise Inhalte entweder in Google Docs oder Microsoft Word schreiben, und die Funktionalität Ihrer Site kann mithilfe von CSS und JavaScript in GitHub entwickelt werden. Wenn Sie bereit sind, können Sie die Sidekick-Browser-Erweiterung verwenden, um Inhaltsaktualisierungen in der Vorschau anzuzeigen und zu veröffentlichen.
 
 Weitere Informationen:
 

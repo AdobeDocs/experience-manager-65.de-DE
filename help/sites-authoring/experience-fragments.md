@@ -2,7 +2,8 @@
 title: Experience Fragments
 description: Experience Fragments in Adobe Experience Manager Sites Authoring
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: f60795363b977fa74361fb7faa8ba1138c0c4ebf
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 94%
@@ -116,7 +117,7 @@ Um einen Ordner für Ihre Experience Fragments zu erstellen und zu konfigurieren
 
 1. Geben Sie den regulären Ausdruck zum Abrufen der erforderlichen Vorlagen im Feld **Zulässige Vorlagen** an.
 
-   Beispiel:
+   Zum Beispiel:
    `/conf/(.*)/settings/wcm/templates/experience-fragment(.*)?`
 
    Siehe:

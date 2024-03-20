@@ -5,10 +5,11 @@ contentOwner: AG
 role: Architect, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 67be0ae6-5939-40fe-bf8a-b8a2c2f68f15
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
-workflow-type: ht
-source-wordcount: '253'
-ht-degree: 100%
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '251'
+ht-degree: 91%
 
 ---
 
@@ -25,7 +26,7 @@ ht-degree: 100%
    ![chlimage_1-72](assets/chlimage_1-210.png)
 
 1. Klicken Sie auf die Karte **[!UICONTROL Insights-Konfiguration]**.
-1. Wählen Sie im Assistenten ein Rechenzentrum aus und geben Sie Ihre Anmeldedaten an, z. B. den Namen Ihres Unternehmens, den Benutzernamen und gemeinsamen geheimen Schlüssel.
+1. Wählen Sie im Assistenten ein Rechenzentrum aus und geben Sie Ihre Anmeldeinformationen ein, einschließlich des Namens Ihres Unternehmens, des Benutzernamens und des gemeinsamen geheimen Geheimnisses.
 
    ![Konfigurieren von Adobe Analytics für Asset Insights in Experience Manager ](assets/insights_config2.png)
 

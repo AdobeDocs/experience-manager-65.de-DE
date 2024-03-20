@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '15462'
-ht-degree: 82%
+source-wordcount: '15394'
+ht-degree: 85%
 
 ---
 
@@ -243,7 +244,7 @@ Erstellen Sie eine Richtlinie mithilfe der Document Security-API (Java):
 
 1. Registrieren Sie die Richtlinie.
 
-   * Erstellen Sie eine `PolicyManager` -Objekt durch Aufrufen der `DocumentSecurityClient` -Objekt `getPolicyManager` -Methode.
+   * Erstellen Sie ein Objekt vom Typ `PolicyManager`, indem Sie die Methode `getPolicyManager` des Objekts `DocumentSecurityClient` aufrufen.
    * Registrieren Sie die Richtlinie, indem Sie die `PolicyManager` -Objekt `registerPolicy` -Methode verwenden und die folgenden Werte übergeben:
 
       * Das `Policy`-Objekt, das die zu registrierende Richtlinie darstellt.
@@ -279,7 +280,7 @@ So erstellen Sie eine Richtlinie mithilfe der Document Security-API (Webservice)
    * Erstellen Sie ein `DocumentSecurityServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `DocumentSecurityServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `RightsManagementServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `RightsManagementServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -290,7 +291,7 @@ So erstellen Sie eine Richtlinie mithilfe der Document Security-API (Webservice)
 
 1. Legen Sie die Attribute der Richtlinie fest.
 
-   * Erstellen Sie ein Objekt `PolicySpec`, indem Sie den Konstruktor verwenden.
+   * Erstellen Sie ein `PolicySpec`-Objekt, indem Sie den Konstruktor verwenden.
    * Legen Sie den Namen der Richtlinie fest, indem Sie dem `PolicySpec` -Objekt `name` Datenelement.
    * Legen Sie die Beschreibung der Richtlinie fest, indem Sie dem `PolicySpec` -Objekt `description` Datenelement.
    * Geben Sie den Richtliniensatz an, zu dem die Richtlinie gehört, indem Sie dem `PolicySpec` -Objekt `policySetName` Datenelement. Geben Sie einen vorhandenen Richtliniensatznamen an. (Sie können für diesen Parameterwert `null` angeben, was dazu führt, dass die Richtlinie zu *Meine Richtlinien* hinzugefügt wird).
@@ -384,7 +385,7 @@ So ändern Sie eine bestehende Richtlinie mithilfe der Document Security-API (Ja
 
 1. Rufen Sie eine bestehende Richtlinie ab.
 
-   * Erstellen Sie eine `PolicyManager` -Objekt durch Aufrufen der `RightsManagementClient` -Objekt `getPolicyManager` -Methode.
+   * Erstellen Sie ein Objekt vom Typ `PolicyManager`, indem Sie die Methode `getPolicyManager` des Objekts `RightsManagementClient` aufrufen.
    * Erstellen Sie eine `Policy` -Objekt, das die zu aktualisierende Richtlinie darstellt, indem das `PolicyManager` -Objekt `getPolicy` -Methode und Übergabe der folgenden Werte&quot;
 
       * Ein Zeichenfolgenwert, der den Namen des Richtliniensatzes darstellt, zu dem die Richtlinie gehört. Sie können `null` angeben, was dazu führt, dass der Richtliniensatz `MyPolicies` verwendet wird.
@@ -419,7 +420,7 @@ So ändern Sie eine bestehende Richtlinie mithilfe der Document Security-API (We
    * Erstellen Sie ein `RightsManagementServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `RightsManagementServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `RightsManagementServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `RightsManagementServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -493,7 +494,7 @@ So löschen Sie eine Richtlinie mithilfe der Document Security-API (Java):
 
 1. Löschen Sie die Richtlinie.
 
-   * Erstellen Sie eine `PolicyManager` -Objekt durch Aufrufen der `RightsManagementClient` -Objekt `getPolicyManager` -Methode.
+   * Erstellen Sie ein Objekt vom Typ `PolicyManager`, indem Sie die Methode `getPolicyManager` des Objekts `RightsManagementClient` aufrufen.
    * Löschen Sie die Richtlinie, indem Sie die `PolicyManager` -Objekt `deletePolicy` -Methode verwenden und die folgenden Werte übergeben:
 
       * Einen Zeichenfolgenwert, der den Richtliniensatznamen angibt, zu dem die Richtlinie gehört. Sie können `null` angeben, wodurch der Richtliniensatz `MyPolicies` verwendet wird.
@@ -522,7 +523,7 @@ Löschen einer Richtlinie mithilfe der Document Security-API (Web Service):
    * Erstellen Sie ein `RightsManagementServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `RightsManagementServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `RightsManagementServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `RightsManagementServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -615,7 +616,7 @@ Wenden Sie mithilfe der Document Security-API (Java) eine Richtlinie auf ein PDF
 
 1. Wenden Sie eine vorhandene Richtlinie auf das PDF-Dokument an.
 
-   * Erstellen Sie eine `DocumentManager` -Objekt durch Aufrufen der `RightsManagementClient` -Objekt `getDocumentManager` -Methode.
+   * Erstellen Sie ein Objekt vom Typ `DocumentManager`, indem Sie die Methode `getDocumentManager` des Objekts `RightsManagementClient` aufrufen.
    * Wenden Sie eine Richtlinie auf das PDF-Dokument an, indem Sie die `DocumentManager` -Objekt `protectDocument` -Methode verwenden und die folgenden Werte übergeben:
 
       * Das `com.adobe.idp.Document`-Objekt, das das PDF-Dokument enthält, auf das die Richtlinie angewendet wird.
@@ -664,7 +665,7 @@ Wenden Sie mithilfe der Document Security-API (Web Service) eine Richtlinie auf 
    * Erstellen Sie ein `RightsManagementServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `RightsManagementServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der dem Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Sie brauchen das Attribut `lc_version` nicht zu verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `RightsManagementServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `RightsManagementServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -678,7 +679,7 @@ Wenden Sie mithilfe der Document Security-API (Web Service) eine Richtlinie auf 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines PDF-Dokuments verwendet, auf das eine Richtlinie angewendet wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Bestimmen Sie die Byte-Array-Größe, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
+   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
    * Füllen Sie das `BLOB`-Objekt, indem Sie dessen Feld `MTOM` mit dem Inhalt des Byte-Arrays belegen.
 
 1. Wenden Sie eine vorhandene Richtlinie auf das PDF-Dokument an.
@@ -701,9 +702,9 @@ Wenden Sie mithilfe der Document Security-API (Web Service) eine Richtlinie auf 
 1. Speichern Sie das PDF-Dokument.
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des richtliniengeschützten PDF-Dokuments darstellt.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `protectDocument` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert der `BLOB` -Objekt `MTOM` Datenelement.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `protectDocument` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter` -Objekt `Write` -Methode verwenden und das Byte-Array übergeben.
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Code-Beispiele**
 
@@ -778,7 +779,7 @@ Entfernen Sie mithilfe der Document Security-API (Java) eine Richtlinie aus eine
 
 1. Entfernen Sie die Richtlinie aus dem PDF-Dokument.
 
-   * Erstellen Sie eine `DocumentManager` -Objekt durch Aufrufen der `DocumentSecurityClient` -Objekt `getDocumentManager` -Methode.
+   * Erstellen Sie ein Objekt vom Typ `DocumentManager`, indem Sie die Methode `getDocumentManager` des Objekts `DocumentSecurityClient` aufrufen.
    * Entfernen Sie eine Richtlinie aus dem PDF-Dokument, indem Sie die `DocumentManager` -Objekt `removeSecurity` -Methode und Übergabe der `com.adobe.idp.Document` -Objekt, das das richtliniengeschützte PDF-Dokument enthält. Diese Methode gibt ein `com.adobe.idp.Document`-Objekt zurück, das ein nicht gesichertes PDF-Dokument enthält.
 
 1. Speichern Sie das ungesicherte PDF-Dokument.
@@ -809,7 +810,7 @@ Entfernen Sie mithilfe der Document Security-API (Web-Service) eine Richtlinie a
    * Erstellen Sie ein `DocumentSecurityServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `DocumentSecurityServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `DocumentSecurityServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -822,8 +823,8 @@ Entfernen Sie mithilfe der Document Security-API (Web-Service) eine Richtlinie a
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des richtliniengeschützten PDF-Dokuments verwendet, aus dem die Richtlinie entfernt wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seinem `MTOM`-Feld den Inhalt des Byte-Arrays zuweisen.
 
 1. Entfernen Sie die Richtlinie aus dem PDF-Dokument.
@@ -833,7 +834,7 @@ Entfernen Sie mithilfe der Document Security-API (Web-Service) eine Richtlinie a
 1. Speichern Sie das ungesicherte PDF-Dokument.
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und ihm einen Zeichenfolgenwert, der den Dateispeicherort des ungesicherten PDF-Dokuments darstellt, übergeben.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt des von der `removePolicySecurity`-Methode zurückgegebenen `BLOB`-Objekts enthält. Füllen Sie das Byte-Array, indem Sie den Wert der `BLOB` -Objekt `MTOM` -Feld.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt des von der `removePolicySecurity`-Methode zurückgegebenen `BLOB`-Objekts enthält. Füllen Sie das Byte-Array, indem Sie den Wert des Felds `MTOM` des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
 
 **Code-Beispiele**
@@ -920,9 +921,9 @@ So widerrufen Sie mithilfe der Document Security-API (Java) den Zugriff auf ein 
 
 1. Widerrufen des richtliniengeschützten Dokuments
 
-   * Erstellen Sie eine `DocumentManager` -Objekt durch Aufrufen der `DocumentSecurityClient` -Objekt `getDocumentManager` -Methode.
+   * Erstellen Sie ein Objekt vom Typ `DocumentManager`, indem Sie die Methode `getDocumentManager` des Objekts `DocumentSecurityClient` aufrufen.
    * Rufen Sie den Wert der Lizenzkennung des richtliniengeschützten Dokuments ab, indem Sie die `DocumentManager` -Objekt `getLicenseId` -Methode. Übergeben Sie das `com.adobe.idp.Document`-Objekt, das das richtliniengeschützte Dokument darstellt. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Wert der Lizenzkennung darstellt.
-   * Erstellen Sie eine `LicenseManager` -Objekt durch Aufrufen der `DocumentSecurityClient` -Objekt `getLicenseManager` -Methode.
+   * Erstellen Sie ein Objekt vom Typ `LicenseManager`, indem Sie die Methode `getLicenseManager` des Objekts `DocumentSecurityClient` aufrufen.
    * Das richtliniengeschützte Dokument durch Aufrufen der `LicenseManager` -Objekt `revokeLicense` -Methode verwenden und die folgenden Werte übergeben:
 
       * Ein string -Wert, der den Wert der Lizenzkennung des richtliniengeschützten Dokuments angibt (geben Sie den Rückgabewert von `DocumentManager` -Objekt `getLicenseId` -Methode).
@@ -952,7 +953,7 @@ So widerrufen Sie den Zugriff auf ein richtliniengeschütztes PDF-Dokument mithi
    * Erstellen Sie ein `DocumentSecurityServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `DocumentSecurityServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `DocumentSecurityServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -965,8 +966,8 @@ So widerrufen Sie den Zugriff auf ein richtliniengeschütztes PDF-Dokument mithi
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird verwendet, um ein richtliniengeschütztes PDF-Dokument zu speichern, das widerrufen wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des zu widerrufenden richtliniengeschützten PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
 1. Widerrufen des richtliniengeschützten Dokuments
@@ -1053,12 +1054,12 @@ So stellen Sie den Zugriff auf ein widerrufenes Dokument mithilfe der Document S
 
    * Erstellen Sie ein `java.io.FileInputStream`-Objekt, das das widerrufene PDF-Dokument darstellt, indem Sie seinen Konstruktor verwenden und einen Zeichenfolgenwert übergeben, der den Speicherort des PDF-Dokuments angibt.
    * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie seinen Konstruktor verwenden und das `java.io.FileInputStream`-Objekt übergeben.
-   * Erstellen Sie eine `DocumentManager` -Objekt durch Aufrufen der `DocumentSecurityClient` -Objekt `getDocumentManager` -Methode.
+   * Erstellen Sie ein Objekt vom Typ `DocumentManager`, indem Sie die Methode `getDocumentManager` des Objekts `DocumentSecurityClient` aufrufen.
    * Rufen Sie den Wert der Lizenzkennung des gesperrten Dokuments ab, indem Sie die `DocumentManager` -Objekt `getLicenseId` -Methode und Übergabe der `com.adobe.idp.Document` -Objekt, das das gesperrte Dokument darstellt. Diese Methode gibt einen Zeichenfolgenwert zurück, der die Lizenzkennung darstellt.
 
 1. Reaktivieren Sie den Zugriff auf das widerrufene PDF-Dokument.
 
-   * Erstellen Sie eine `LicenseManager` -Objekt durch Aufrufen der `DocumentSecurityClient` -Objekt `getLicenseManager` -Methode.
+   * Erstellen Sie ein Objekt vom Typ `LicenseManager`, indem Sie die Methode `getLicenseManager` des Objekts `DocumentSecurityClient` aufrufen.
    * Den Zugriff auf das gesperrte PDF-Dokument durch Aufrufen der `LicenseManager` -Objekt `unrevokeLicense` -Methode verwenden und den Wert der Lizenzkennung des gesperrten Dokuments übergeben.
 
 **Code-Beispiele**
@@ -1084,7 +1085,7 @@ So stellen Sie den Zugriff auf ein widerrufenes Dokument mithilfe der Document S
    * Erstellen Sie ein `DocumentSecurityServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `DocumentSecurityServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `DocumentSecurityServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -1097,8 +1098,8 @@ So stellen Sie den Zugriff auf ein widerrufenes Dokument mithilfe der Document S
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird verwendet, um ein widerrufenes PDF-Dokument zu speichern, auf das der Zugriff wiederhergestellt wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des widerrufenen PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
 1. Reaktivieren Sie den Zugriff auf das widerrufene PDF-Dokument.
@@ -1188,7 +1189,7 @@ So überprüfen Sie ein richtliniengeschütztes PDF-Dokument mithilfe der Docume
 
 1. Überprüfen Sie das Dokument.
 
-   * Erstellen Sie eine `DocumentManager` -Objekt durch Aufrufen der `RightsManagementClient` -Objekt `getDocumentManager` -Methode.
+   * Erstellen Sie ein Objekt vom Typ `DocumentManager`, indem Sie die Methode `getDocumentManager` des Objekts `RightsManagementClient` aufrufen.
    * Inspect das richtliniengeschützte Dokument durch Aufrufen der `LicenseManager` -Objekt `inspectDocument` -Methode. Übergeben Sie das `com.adobe.idp.Document`-Objekt, das das richtliniengeschützte PDF-Dokument enthält. Diese Methode gibt ein `RMInspectResult`-Objekt zurück, das Informationen zum richtliniengeschützten Dokument enthält.
 
 1. Erhalten Sie Informationen zum richtliniengeschützten Dokument.
@@ -1218,7 +1219,7 @@ So überprüfen Sie ein richtliniengeschütztes PDF-Dokument mithilfe der Docume
    * Erstellen Sie ein `RightsManagementServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `RightsManagementServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `RightsManagementServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `RightsManagementServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -1231,8 +1232,8 @@ So überprüfen Sie ein richtliniengeschütztes PDF-Dokument mithilfe der Docume
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines zu überprüfenden PDF-Dokuments verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort des PDF-Dokuments und den Modus zum Öffnen der Datei darstellt.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode. Übergeben Sie das Byte-Array, die Startposition und die Länge des zu lesenden Streams.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des `System.IO.FileStream`-Objekts abrufen.
+   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die Länge des zu lesenden Streams.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
 1. Überprüfen Sie das Dokument.
@@ -1438,7 +1439,7 @@ Erstellen Sie ein Wasserzeichen mithilfe der Document Security-API (Web-Service)
    * Erstellen Sie ein `RightsManagementServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `RightsManagementServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `RightsManagementServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `RightsManagementServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -1585,7 +1586,7 @@ Code-Beispiele, die den Document Security-Service verwenden, finden Sie im Absch
    * Erstellen Sie ein `DocumentSecurityServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `RightsManagementServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `DocumentSecurityServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -1713,7 +1714,7 @@ So suchen Sie mithilfe der Rights Management-API (Webservice) nach Ereignissen:
    * Erstellen Sie ein `DocumentSecurityServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `DocumentSecurityServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `DocumentSecurityServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -2015,7 +2016,7 @@ Wenden Sie mithilfe der Document Security-API (Java) eine Richtlinie auf ein Wor
 
 1. Wenden Sie eine vorhandene Richtlinie auf das Word-Dokument an.
 
-   * Erstellen Sie eine `DocumentManager` -Objekt durch Aufrufen der `DocumentSecurityClient` -Objekt `getDocumentManager` -Methode.
+   * Erstellen Sie ein Objekt vom Typ `DocumentManager`, indem Sie die Methode `getDocumentManager` des Objekts `DocumentSecurityClient` aufrufen.
    * Wenden Sie eine Richtlinie auf das Word-Dokument an, indem Sie die `DocumentManager` -Objekt `protectDocument` -Methode verwenden und die folgenden Werte übergeben:
 
       * Das `com.adobe.idp.Document`-Objekt, das das Word-Dokument enthält, auf das die Richtlinie angewendet wird.
@@ -2057,7 +2058,7 @@ Wenden Sie mithilfe der Document Security-API (Web-Service) eine Richtlinie auf 
    * Erstellen Sie ein `DocumentSecurityServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `DocumentSecurityServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `DocumentSecurityServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -2071,7 +2072,7 @@ Wenden Sie mithilfe der Document Security-API (Web-Service) eine Richtlinie auf 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines Word-Dokuments verwendet, auf das eine Richtlinie angewendet wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des Word-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Bestimmen Sie die Byte-Array-Größe, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
+   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
 1. Wenden Sie eine vorhandene Richtlinie auf das Word-Dokument an.
@@ -2094,7 +2095,7 @@ Wenden Sie mithilfe der Document Security-API (Web-Service) eine Richtlinie auf 
 1. Speichern Sie das Word-Dokument.
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des richtliniengeschützten Word-Dokuments darstellt.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `protectDocument` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert der `BLOB` -Objekt `MTOM` Datenelement.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `protectDocument` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine Word-Datei, indem Sie die `System.IO.BinaryWriter` -Objekt `Write` -Methode verwenden und das Byte-Array übergeben.
 
@@ -2170,7 +2171,7 @@ So entfernen Sie mithilfe der Document Security-API (Java) eine Richtlinie aus e
 
 1. Entfernen der Richtlinie aus dem Word-Dokument
 
-   * Erstellen Sie eine `DocumentManager` -Objekt durch Aufrufen der `RightsManagementClient` -Objekt `getDocumentManager` -Methode.
+   * Erstellen Sie ein Objekt vom Typ `DocumentManager`, indem Sie die Methode `getDocumentManager` des Objekts `RightsManagementClient` aufrufen.
    * Entfernen Sie eine Richtlinie aus dem Word-Dokument, indem Sie die `DocumentManager` -Objekt `removeSecurity` -Methode und Übergabe der `com.adobe.idp.Document` -Objekt, das das richtliniengeschützte Word-Dokument enthält. Diese Methode gibt ein `com.adobe.idp.Document`-Objekt zurück, das ein ungesichertes Word-Dokument enthält.
 
 1. Speichern des ungesicherten Word-Dokuments
@@ -2201,7 +2202,7 @@ So entfernen Sie mithilfe der Document Security-API (Webservice) eine Richtlinie
    * Erstellen Sie ein `RightsManagementServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `RightsManagementServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `RightsManagementServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `RightsManagementServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -2214,8 +2215,8 @@ So entfernen Sie mithilfe der Document Security-API (Webservice) eine Richtlinie
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des richtliniengeschützten Word-Dokuments verwendet, aus dem die Richtlinie entfernt wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des Word-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
 1. Entfernen der Richtlinie aus dem Word-Dokument
@@ -2225,7 +2226,7 @@ So entfernen Sie mithilfe der Document Security-API (Webservice) eine Richtlinie
 1. Speichern des ungesicherten Word-Dokuments
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des ungesicherten Word-Dokuments darstellt.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `removePolicySecurity` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert der `BLOB` -Objekt `MTOM` -Feld.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `removePolicySecurity` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Felds `MTOM` des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
 
 **Code-Beispiele**

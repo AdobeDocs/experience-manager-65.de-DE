@@ -5,10 +5,11 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: 4158315c28412bb9498c7d49d21b3f4d72681fc6
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1533'
-ht-degree: 74%
+ht-degree: 75%
 
 ---
 
@@ -58,12 +59,12 @@ Gehen Sie folgendermaßen vor, um Ihre [!DNL MySQL]-Datenbank zu konfigurieren:
 
    1. Auswählen **[!UICONTROL Installieren/Aktualisieren]**. Ein Dialogfeld [!UICONTROL Pakete hochladen/installieren] wird angezeigt.
 
-   1. Wählen Sie **[!UICONTROL Datei]** auswählen aus, um den [!DNL MySQL] JDBC-Treiber OSGi Paket zu durchsuchen und auszuwählen. Wählen Sie Anfang Paket und Aktualisieren Pakete aus und wählen Sie **[!UICONTROL &quot;Installieren&quot; oder &quot;**[!UICONTROL  Aktualisieren ]**&quot;.]****** Stellen Sie sicher, dass der JDBC-Treiber der [!DNL Oracle Corporation's] für [!DNL MySQL] aktiv ist. Der Treiber wird installiert.
+   1. Wählen Sie **[!UICONTROL Datei]** auswählen aus, um den [!DNL MySQL] JDBC-Treiber OSGi Paket zu durchsuchen und auszuwählen. Wählen Sie **[!UICONTROL Anfang Paket]** und **[!UICONTROL Aktualisieren]** Pakete aus und wählen Sie &quot;Installieren&quot; oder &quot; **[!UICONTROL Aktualisieren]**&quot;. Stellen Sie sicher, dass der JDBC-Treiber der [!DNL Oracle Corporation's] für [!DNL MySQL] aktiv ist. Der Treiber wird installiert.
 
 1. Konfigurieren Sie die [!DNL MySQL]-Datenbank als Datenquelle:
 
    1. Wechseln Sie zu AEM-Web-Konsole unter [http://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-   1. Suchen Sie die Konfiguration **Apache Sling Connection Pooled DataSource**. Wählen Sie diese Option, um die Konfiguration im Bearbeitungsmodus zu öffnen.
+   1. Suchen Sie die Konfiguration **Apache Sling Connection Pooled DataSource**. Tippen Sie darauf, um die Konfiguration im Bearbeitungsmodus zu öffnen.
    1. Geben Sie im Konfigurationsdialog die folgenden Details an:
 
       * **Datenquellenname:** Sie können einen beliebigen Namen angeben. beispielsweise **WeRetailMySQL**.
@@ -124,7 +125,7 @@ Gehen Sie wie folgt vor, um das Formulardatenmodell zu konfigurieren:
 
    ![default-fdm](assets/default-fdm.png)
 
-1. Erweitern Sie den WeRailMySQL-Datenquellenbaum. Wählen Sie die folgenden Datenmodellobjekte und -dienste aus der Schema von weretail **>** customerdetails **aus**, damit Sie ein Datenmodell erstellen können:
+1. Erweitern Sie den WeRailMySQL-Datenquellenbaum. Wählen Sie die folgenden Datenmodellobjekte und -dienste aus der Schema von **weretail** > **customerdetails** aus, damit Sie ein Datenmodell erstellen können:
 
    * **Datenmodellobjekte**:
 
@@ -163,7 +164,7 @@ Gehen Sie wie folgt vor, um das Formulardatenmodell zu konfigurieren:
 
       ![id-arg](assets/id-arg.png)
 
-   1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Eigenschaften des Datenmodellobjekts zu speichern. Wählen Sie anschließend **[!UICONTROL Speichern]** , um das Formulardatenmodell zu speichern.
+   1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Eigenschaften des Datenmodellobjekts zu speichern. Wählen Sie **[!UICONTROL dann Speichern aus, um]** das Formulardatenmodell zu speichern.
 
       Die Dienste **[!UICONTROL get]** und **[!UICONTROL update]** werden als Standarddienste für das Datenmodellobjekt hinzugefügt.
 
@@ -205,7 +206,7 @@ Gehen Sie wie folgt vor, um das Formulardatenmodell zu konfigurieren:
 
       * **Ausgabetyp**: Wählen Sie **BOOLEAN**.
 
-      * **Argumente**: Wählen Sie den Argumentnamen **, die ID und** die **Kundendetails** aus.
+      * **Argumente**: Wählen Sie den Argumentnamen **, die ID** und **die Kundendetails** aus.
 
       Klicken Sie auf **[!UICONTROL Fertig]**. Der Service **[!UICONTROL update]** zur Aktualisierung der Kundendaten in der [!DNL MySQL]-Datenbank ist konfiguriert.
 
@@ -219,7 +220,7 @@ Sie können das Datenmodellobjekt und die Services testen, um zu überprüfen, o
 
 Führen Sie folgende Schritte aus, um den Test durchzuführen:
 
-1. OK Sie zur **[!UICONTROL Modell-Tab, wählen Sie das** Datenmodellobjekt &quot;customerdetails **&quot; und anschließend Test Modell-Objekt]**]**aus**[!UICONTROL .
+1. OK Sie zur **[!UICONTROL Modell-Tab]**, wählen Sie das **Datenmodellobjekt &quot;customerdetails**&quot; und anschließend Test Modell-Objekt ]**aus**[!UICONTROL .
 1. Wählen Sie im Fenster [!UICONTROL Modell/Dienst testen] **[!UICONTROL Modellobjekt lesen]** aus der Dropdown-Liste **[!UICONTROL Modell/Dienst auswählen]** auswählen.
 1. Geben Sie im **Abschnitt customerdetails** einen Wert für das ID-Argument **an, das** in der konfigurierten [!DNL MySQL] Datenbank vorhanden ist, und wählen Sie Test ]**aus**[!UICONTROL .
 

@@ -6,10 +6,11 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '718'
-ht-degree: 76%
+ht-degree: 81%
 
 ---
 
@@ -54,7 +55,7 @@ Sie können die **Konfigurieren** ![konfigurieren](assets/configure.png) -Symbol
 
 1. Erstellen Sie ein adaptives Formular mit aktivierter Option „Datensatzdokument“ oder basierend auf eine Formularvorlage. Einzelschritte finden Sie unter [Erstellen eines adaptiven Formulars](../../forms/using/creating-adaptive-form.md).
 1. Ziehen Sie die Komponente **Freihandsignatur** aus dem Komponenten-Browser in das adaptive Formular.
-1. Wählen Sie die **Konfigurieren** ![konfigurieren](assets/configure.png) Symbol. Dadurch wird der Eigenschaftenbrowser geöffnet und Eigenschaften der Komponente „Freihandsignatur“ angezeigt. Konfigurieren Sie die Eigenschaften der Komponente „Freihandsignatur“.
+1. Klicken Sie auf das Symbol **Konfigurieren** ![configure](assets/configure.png). Dadurch wird der Eigenschaftenbrowser geöffnet und Eigenschaften der Komponente „Freihandsignatur“ angezeigt. Konfigurieren Sie die Eigenschaften der Komponente „Freihandsignatur“.
 1. Ziehen Sie die Signaturschritt-Komponente aus dem Komponenten-Browser in das adaptive Formular.
 
    >[!NOTE]
@@ -62,18 +63,18 @@ Sie können die **Konfigurieren** ![konfigurieren](assets/configure.png) -Symbol
    >Die Komponente „Signaturschritt“ nimmt die gesamte für das Formular verfügbare Breite ein. Wir empfehlen, keine anderen Komponenten in dem Abschnitt zu platzieren, der die Komponente „Signaturschritt“ enthält.
    >
 
-1. Wählen Sie im Inhaltsbrowser die Option **Formular-Container** und wählen Sie die **Konfigurieren** ![konfigurieren](/help/forms/using/assets/configure.png) Symbol. Dadurch wird der Eigenschaftenbrowser geöffnet, der die Eigenschaften des Containers für adaptive Formulare anzeigt. Navigieren Sie zu **Container für adaptive Formulare** > **Elektronische Signatur** und heben Sie die Auswahl der Option **Adobe Sign aktivieren** auf. Wählen Sie Fertig aus ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) -Symbol, um die Änderungen zu speichern.
+1. Wählen Sie im Inhalts-Browser **Formular-Container** und das Symbol **Konfigurieren** ![configure](/help/forms/using/assets/configure.png) aus. Dadurch wird der Eigenschaftenbrowser geöffnet, der die Eigenschaften des Containers für adaptive Formulare anzeigt. Navigieren Sie zu **Container für adaptive Formulare** > **Elektronische Signatur** und heben Sie die Auswahl der Option **Adobe Sign aktivieren** auf. Wählen Sie Fertig aus ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) -Symbol, um die Änderungen zu speichern.
 
    >[!NOTE]
    >
    >Wenn Sie einem adaptiven Formular eine Signaturschritt-Komponente hinzufügen, wird die Option „Adobe Sign aktivieren“ ausgewählt.
    >
 
-1. Wählen Sie die **Konfigurieren** ![konfigurieren](assets/configure.png) Symbol. Dadurch wird der Eigenschaftenbrowser geöffnet, der die Eigenschaften des Signaturschritts anzeigt. Konfigurieren Sie die folgenden Eigenschaften:
+1. Klicken Sie auf das Symbol **Konfigurieren** ![configure](assets/configure.png). Dadurch wird der Eigenschaftenbrowser geöffnet, der die Eigenschaften des Signaturschritts anzeigt. Konfigurieren Sie die folgenden Eigenschaften:
 
    * **Elementname**: Geben Sie den Namen der Komponente an.
 
-   * **Titel:** Geben Sie einen eindeutigen Titel der Komponente an.
+   * **Titel**: Geben Sie den eindeutigen Titel der Komponente an.
    * **Vorlagennachricht**: Geben Sie die Nachricht an, die angezeigt werden soll, während das PDF-Signaturdokument geladen wird. Adobe Sign-Dienste benötigen einige Zeit, um das PDF-Signaturdokument vorzubereiten und zu laden.
    * **Signaturdienst**: Wählen Sie die Option **Freihandsignatur** aus.
 
@@ -89,7 +90,7 @@ Sie können die **Konfigurieren** ![konfigurieren](assets/configure.png) -Symbol
 
    ![Dialogfeld für Freihandsignatur](/help/forms/using/assets/esignscribblesign.jpg)
 
-1. Klicks **[!UICONTROL Sign]**. Das Dialogfeld „Freihandsignatur“ wird angezeigt. Signieren Sie das Formular und klicken Sie auf das Symbol „Fertig“ ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), um die Signatur zu speichern.
+1. Klicken Sie auf **[!UICONTROL Signieren]**. Das Dialogfeld „Freihandsignatur“ wird angezeigt. Signieren Sie das Formular und klicken Sie auf das Symbol „Fertig“ ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), um die Signatur zu speichern.
 
    ![Dialogfeld für Freihandsignatur](/help/forms/using/assets/scribblewidget.png)
 

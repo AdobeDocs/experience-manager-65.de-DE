@@ -10,7 +10,8 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4422'
 ht-degree: 99%
@@ -346,13 +347,13 @@ In der folgenden Tabelle werden die Mobile Viewer-Gesten aufgeführt, die auf i
    <td><p>Schwenkt</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Auswählen</strong></p> </td>
+   <td><p><strong>Auswahl</strong></p> </td>
    <td><p>Blendet Flyout-Fenster ein</p> </td>
    <td><p>Blendet die Benutzeroberfläche ein oder aus</p> </td>
    <td><p>Blendet die Benutzeroberfläche ein oder aus</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Doppelklicken</strong></p> </td>
+   <td><p><strong>Doppelt auswählen</strong></p> </td>
    <td><p>Trifft nicht zu</p> </td>
    <td><p>Zoomt ein oder setzt zurück</p> </td>
    <td><p>Zoomt ein oder setzt zurück</p> </td>
@@ -402,7 +403,7 @@ Experience Manager zeigt viele verschiedene Viewer-Vorgaben an, wenn Sie ein Ass
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-1. Ändern Sie in der Eigenschaft limit die Zahl auf die gewünschte Zahl, z. B. `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. Ändern Sie in der Eigenschaft „Limit“ den Wert auf die gewünschte Zahl, z. B. `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`.
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
 ## Erstellen einer neuen Viewer-Vorgabe {#creating-a-new-viewer-preset}

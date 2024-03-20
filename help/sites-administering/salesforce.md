@@ -7,10 +7,11 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 0f3aaa0a-ccfb-4162-97a6-ee5485595d28
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1530'
-ht-degree: 28%
+ht-degree: 29%
 
 ---
 
@@ -200,7 +201,7 @@ Sie können Benutzerdaten aus Salesforce in ClientContext laden, um sie für die
 
    ![chlimage_1-19](assets/chlimage_1-19.jpeg)
 
-1. Öffnen Sie die Komponente, indem Sie darauf doppelklicken. Auswählen **Element hinzufügen** und wählen Sie eine Eigenschaft aus der Dropdownliste aus. Fügen Sie beliebig viele Eigenschaften hinzu und wählen Sie **OK**.
+1. Öffnen Sie die Komponente, indem Sie darauf doppelklicken.  Auswählen **Element hinzufügen** und wählen Sie eine Eigenschaft aus der Dropdownliste aus. Fügen Sie beliebig viele Eigenschaften hinzu und wählen Sie **OK**.
 
    ![chlimage_1-84](assets/chlimage_1-84.png)
 

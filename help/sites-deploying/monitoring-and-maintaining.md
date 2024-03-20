@@ -8,7 +8,8 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 783824ece92c12476505d695b961d782d7d70cb9
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5792'
 ht-degree: 98%
@@ -262,7 +263,7 @@ Um die Debugging-Protokollebene für eine Protokollierung zu aktivieren, müssen
 >
 >Lassen Sie das Protokoll nicht länger als nötig auf der Debug-Protokollebene, da es zahlreiche Protokolleinträge generiert, was Ressourcen verbraucht.
 
-Eine Zeile in der Debugging-Datei beginnt üblicherweise mit „DEBUG“, gefolgt von der Protokollebene, der Installationsaktion und der Protokollmeldung. Beispiel:
+Eine Zeile in der Debugging-Datei beginnt üblicherweise mit „DEBUG“, gefolgt von der Protokollebene, der Installationsaktion und der Protokollmeldung. Zum Beispiel:
 
 ```shell
 DEBUG 3 WebApp Panel: WebApp successfully deployed
@@ -1093,12 +1094,12 @@ Im Folgenden finden Sie eine Liste mit Vorschlägen, was Sie überprüfen sollte
 
 >[!NOTE]
 >
-In folgenden Artikeln finden Sie weitere Informationen:
+>In folgenden Artikeln finden Sie weitere Informationen:
 >
-* [Thread-Dumps](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
-* [Analyse von Speicherproblemen](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=de)
-* [Analyse mit dem integrierten Profiler](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
-* [Analyse langsamer und blockierter Prozesse](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+>* [Thread-Dumps](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+>* [Analyse von Speicherproblemen](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=de)
+>* [Analyse mit dem integrierten Profiler](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
+>* [Analyse langsamer und blockierter Prozesse](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
 ### CPU bei 100 % {#cpu-at}
@@ -1191,6 +1192,6 @@ Hier können Sie sehen, wie viel Arbeitsspeicher belegt ist, welche GC-Algorithm
 
 >[!NOTE]
 >
-Informationen zu VM von Oracle finden Sie unter:
+>Informationen zu VM von Oracle finden Sie unter:
 >
-[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)
+>[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)

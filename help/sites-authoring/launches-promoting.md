@@ -8,10 +8,11 @@ topic-tags: site-features
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -93,7 +94,7 @@ Sie können Launches über die Konsolen **Sites** oder **Launches** weiterleiten
 
 ## Weiterleiten von Launch-Seiten bei der Bearbeitung {#promoting-launch-pages-when-editing}
 
-Wenn Sie eine Launch-Seite bearbeiten, steht die Aktion **Launch bewerben** auch im Bereich **Seiteninformationen** zur Verfügung. Dadurch wird der Assistent geöffnet, mit dem die benötigten Informationen erfasst werden.
+Wenn Sie eine Launch-Seite bearbeiten, steht die Aktion **Launch bewerben** auch im Bereich **Seiteninformationen** zur Verfügung. Dadurch wird der Assistent geöffnet, um die benötigten Informationen zusammenzustellen.
 
 ![Launch bewerben](assets/chlimage_1-103.png)
 

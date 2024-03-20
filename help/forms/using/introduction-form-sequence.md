@@ -7,7 +7,8 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 1333c6cb-15cc-429b-a13e-5d23afdee69a
-source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 100%
@@ -24,7 +25,7 @@ ht-degree: 100%
 | AEM 6.5 | Dieser Artikel |
 
 
-Mit adaptiven Formularen können Formularautorinnen und -autoren ein müheloses, mehrstufiges Datenerfassungserlebnis schaffen. Es bietet integrierte Unterstützung für das Erstellen mehrerer Panels und das Verknüpfen jedes Panels mit verschiedenen Navigationsmustern. Formularautorinnen und -autoren können Formularfelder in logischen Abschnitten gruppieren und eine Gruppe als Panel darstellen. Die gesamte Navigation zwischen den Bedienfeldern wird mithilfe des Bedienfeldlayouts gesteuert. Autoren können die Bedienfelder in unterschiedlichen Layouts anordnen, beispielsweise nacheinander mithilfe des Assistentenlayouts, oder ad hoc mithilfe des Registerkartenlayouts. Informationen zu Panel-Layouts finden Sie unter [Layout-Möglichkeiten für adaptive Formulare](../../forms/using/layout-capabilities-adaptive-forms.md).
+Mit adaptiven Formularen können Formularautorinnen und -autoren ein müheloses, mehrstufiges Datenerfassungserlebnis schaffen. Es bietet integrierte Unterstützung für das Erstellen mehrerer Panels und das Verknüpfen jedes Panels mit verschiedenen Navigationsmustern. Formularautorinnen und -autoren können Formularfelder in logischen Abschnitten gruppieren und eine Gruppe als Bedienfeld darstellen. Die gesamte Navigation zwischen den Bedienfeldern wird mithilfe des Bedienfeldlayouts gesteuert. Autoren können die Bedienfelder in unterschiedlichen Layouts anordnen, beispielsweise nacheinander mithilfe des Assistentenlayouts, oder ad hoc mithilfe des Registerkartenlayouts. Informationen zu Panel-Layouts finden Sie unter [Layout-Möglichkeiten für adaptive Formulare](../../forms/using/layout-capabilities-adaptive-forms.md).
 
 Beim typischen Ausfüllen eines Formulars sind mehr Schritte erforderlich als nur die Erfassung von Daten. Eine vollständige Formularübermittlung kann nämlich andere Schritte umfassen, z. B. das digitale Signieren des Formulars, die Überprüfung der im Formular eingegebenen Informationen und die Verarbeitung von Zahlungen. Sie unterscheidet sich von Fall zu Fall.
 

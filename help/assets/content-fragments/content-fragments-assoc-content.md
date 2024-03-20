@@ -4,10 +4,11 @@ description: Erfahren Sie, wie die AEM-Funktion für zugehörige Inhalte eine Ve
 feature: Content Fragments
 role: User
 exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '246'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +22,7 @@ Die AEM-Funktion für zugehörige Inhalte stellt die Verbindung bereit, mit der 
 >
 >Es gibt diverse Methoden, um [visuelle Assets (zum Beispiel Fotos)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zum Fragment und/oder der Seite hinzuzufügen.
 
-Um die Verknüpfung herzustellen, müssen Sie zunächst [Hinzufügen von Medien-Assets zu einer Sammlung](/help/assets/manage-collections.md). Danach können Sie Folgendes tun:
+Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer Sammlung hinzugefügt werden](/help/assets/manage-collections.md). Danach können Sie Folgendes tun:
 
 1. Öffnen Sie das Fragment und wählen Sie im seitlichen Bedienfeld **Zugehörige Inhalte** aus.
 

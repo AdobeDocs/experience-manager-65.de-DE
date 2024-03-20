@@ -7,8 +7,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 docset: aem65
 exl-id: 46c1ca14-78f6-4b33-9fdf-1b90a9875f66
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
-workflow-type: ht
+solution: Experience Manager, Experience Manager 6.5
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 100%
 
@@ -127,7 +128,7 @@ Darüber hinaus gewährleistet AEM Communities mit der Konsole für die Massenmo
 AEM Forms beinhaltet Komponenten und Workflows, die zur Orchestrierung von Geschäftsprozessen und zum Abschließen von digitalen Transaktionen Daten erfassen, verarbeiten und speichern. Die einzelnen Komponenten verwenden unterschiedliche Datenspeicher und ermöglichen darüber hinaus die Integration mit benutzerdefinierten Datenspeichern. In der folgenden Dokumentation werden Verfahren und Richtlinien für den Zugriff auf und die Verarbeitung von Benutzerdaten erläutert, um Datenschutzarbeitsabläufe (z. B. DSGVO oder CCPA) für eine Komponente zu unterstützen.
 
 * [Formularportal](/help/forms/using/forms-portal-handling-user-data.md)
-* [Korrespondenzverwaltung](/help/forms/using/correspondence-management-handling-user-data.md)
+* [Correspondence Management](/help/forms/using/correspondence-management-handling-user-data.md)
 * [Integration mit Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
 * [Forms-zentrierte Workflows auf OSGi](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
 * [Forms JEE-Workflows](/help/forms/using/forms-workflow-jee-handling-user-data.md) (Nur AEM Forms JEE)

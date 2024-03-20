@@ -1,6 +1,6 @@
 ---
 title: 360-Grad-/VR-Video
-description: Erfahren Sie, wie Sie mit 360- und VR-Videos (Virtual Reality) in Dynamic Media arbeiten.
+description: Erfahren Sie, wie Sie in Dynamic Media 360- und VR-Videos (Virtual Reality) verwenden.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -9,10 +9,11 @@ docset: aem65
 feature: 360 VR Video
 role: User, Admin
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 0915db99a2d3589994d6267119a5443d69f9f1f7
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 89%
+source-wordcount: '1145'
+ht-degree: 92%
 
 ---
 
@@ -37,7 +38,7 @@ Wählen Sie [Space Station 360](https://s7d1.scene7.com/s7viewers/html5/Video360
 
 ## 360-Grad-/VR-Video und Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
-Sie können Adobe Premier Pro verwenden, um 360/VR-Aufnahmen anzuzeigen und zu bearbeiten. Sie können beispielsweise Logos und Text richtig in einer Szene platzieren und speziell für Panoramedien entwickelte Effekte und Übergänge anwenden.
+Sie können 360-Grad-/VR-Videos mit Adobe Premiere Pro anzeigen und bearbeiten. Beispielsweise können Sie Logos und Text ordnungsgemäß in einer Szene platzieren sowie speziell für Panoramavideos entwickelte Effekte und Überblendungen anwenden.
 
 Weitere Informationen finden Sie unter [Bearbeiten von 360-Grad-/VR-Videos](https://helpx.adobe.com/de/premiere-pro/how-to/edit-360-vr-video.html).
 

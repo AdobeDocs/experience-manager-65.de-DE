@@ -7,7 +7,8 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '6470'
 ht-degree: 99%
@@ -22,7 +23,7 @@ ht-degree: 99%
 >
 >Weitere Informationen zur Fehlerbehebung und zur Behebung von Leistungsproblemen finden Sie unter [Leistungsstruktur](/help/sites-deploying/performance-tree.md).
 >
->Sie können in der Wissensdatenbank auch einen Artikel über [Tipps zur Leistungsoptimierung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html) lesen.
+>Sie können in der Wissensdatenbank auch einen Artikel über [Tipps zur Leistungsoptimierung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=de) lesen.
 
 Ein wichtiger Faktor ist die Zeit, die Ihre Website benötigt, um auf Anfragen durch Besucherinnen und Besucher zu reagieren. Auch wenn dieser Wert für jede Anfrage unterschiedlich ist, kann ein durchschnittlicher Zielwert definiert werden. Sobald sich gezeigt hat, dass dieser Wert sowohl erreichbar als auch verwaltbar ist, kann er verwendet werden, um die Leistung der Website zu überwachen und die Entwicklung potenzieller Probleme anzuzeigen.
 
@@ -39,7 +40,7 @@ Diese Umgebung enthält Inhalte, die Sie Ihren Benutzerinnen und Benutzern zur V
 >[!NOTE]
 >
 >* Folgen Sie nach der Konfiguration zur Leistungsoptimierung der Anleitung in [Tough Day](/help/sites-developing/tough-day.md), um die Umgebung unter starker Belastung zu testen.
->* Siehe auch [Tipps zur Leistungsoptimierung.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
+>* Siehe auch [Tipps zur Leistungsoptimierung.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=de)
 
 ## Methode zur Leistungsoptimierung {#performance-optimization-methodology}
 
@@ -201,7 +202,7 @@ Bestimmte Aspekte von AEM (bzw. des zugrunde liegenden Repositorys) können so k
 
 >[!NOTE]
 >
->Siehe [Leistungsoptimierung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
+>Siehe [Leistungsoptimierung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=de).
 
 ### Suchindizierung {#search-indexing}
 

@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 exl-id: 30ac9a63-f9e6-4075-b67e-4524d11a0e29
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '107'
-ht-degree: 19%
+ht-degree: 23%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 19%
 Wie bereits erwähnt [Akzeptanztests](/help/sites-developing/planning.md) sind eine besondere Testkategorie, mit der überprüft wird, ob
 
 * Das Projekt erfüllt die Anforderungen des Kunden.
-* Der Kunde akzeptiert das Projekt.
+* Die Kundin oder der Kunde akzeptiert das Projekt.
 
 Sie müssen vom Kunden und dem Projekt-Manager definiert werden. Sie haben eine besondere Bedeutung, da sie häufig mit der endgültigen Rechnungsstellung zusammenhängen.
 

@@ -7,10 +7,11 @@ topic-tags: interactive-communications
 docset: aem65
 feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1318'
-ht-degree: 84%
+ht-degree: 86%
 
 ---
 
@@ -79,13 +80,13 @@ Mit dem Kanal-Browser können Sie zwischen Druck- und Internet-Kanal der interak
 Die wichtigsten Punkte beim Arbeiten mit interaktiven Kommunikationskomponenten sind:
 
 * Jede Komponente verfügt über zugehörige Eigenschaften, die ihre Darstellung und Funktion steuern. Um die Eigenschaften einer Komponente zu konfigurieren, wählen Sie die Komponente aus und wählen Sie ![cmppr](assets/cmppr.png) , um die Komponenteneigenschaften im Eigenschaftenbrowser zu öffnen.
-* Eine Komponente wird mit ihrem Elementnamen gekennzeichnet. Wenn Sie ![cmppr](assets/cmppr.png)können Sie den Namen der Komponente ändern, indem Sie den Wert des Felds Elementname im Eigenschaftenbrowser ändern. Das Feld „Elementname“ akzeptiert nur Buchstaben, Zahlen, Bindestriche (-) und Unterstriche (_). Andere Sonderzeichen sind nicht zulässig, und der Elementname sollte mit einem Buchstaben beginnen.
+* Eine Komponente wird mit ihrem Elementnamen identifiziert. Wenn Sie ![cmppr](assets/cmppr.png)können Sie den Namen der Komponente ändern, indem Sie den Wert des Felds Elementname im Eigenschaftenbrowser ändern. Das Feld „Elementname“ akzeptiert nur Buchstaben, Zahlen, Bindestriche (-) und Unterstriche (_). Andere Sonderzeichen sind nicht zulässig, und der Elementname sollte mit einem Buchstaben beginnen.
 * Sie können die Titel-Eigenschaft einer Komponente einer interaktiven Kommunikation inline im Editor ändern, ohne den Eigenschaften-Browser zu öffnen, solange der Titel in der interaktiven Kommunikation sichtbar ist. Gehen Sie dazu wie folgt vor:
 
    1. Wählen Sie diese Option, um eine Komponente auszuwählen, die über eine Eigenschaft &quot;Title&quot;verfügt und deren Eigenschaft &quot;Hide title&quot;deaktiviert ist.
    1. Auswählen ![aem_6_3_edit](assets/aem_6_3_edit.png) um den Titel bearbeitbar zu machen.
 
-   1. Ändern Sie den Titel und wählen Sie die Eingabetaste aus oder wählen Sie eine beliebige Stelle außerhalb der Komponente aus, um die Änderungen zu speichern. Wählen Sie die Esc-Taste aus, um die Änderungen zu verwerfen.
+   1. Ändern Sie den Titel und drücken Sie die Eingabetaste oder wählen Sie eine beliebige Stelle außerhalb der Komponente, um die Änderungen zu speichern. Drücken Sie die Esc-Taste, um die Änderungen zu verwerfen.
 
 ## Komponenten-Symbolleiste {#component-toolbar}
 

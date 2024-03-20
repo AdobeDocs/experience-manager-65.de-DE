@@ -2,10 +2,11 @@
 title: Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher
 description: Fügen Sie Ihren Seiten ContextHub hinzu, um die ContextHub-Funktionen zu aktivieren und eine Verknüpfung mit den ContextHub-JavaScript-Bibliotheken herzustellen
 exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 95%
+source-wordcount: '902'
+ht-degree: 100%
 
 ---
 
@@ -34,7 +35,7 @@ Verwenden Sie ContextHub-Speicher, um Kontextdaten beizubehalten. ContextHub bie
 * [JSONPStore](contexthub-api.md#contexthub-store-persistedjsonpstore)
 * [PersistedJSONPStore](contexthub-api.md#contexthub-store-persistedstore)
 
-Alle Speichertypen sind Erweiterungen der Klasse [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core). Informationen zum Erstellen eines Store-Typs finden Sie unter [Erstellen benutzerdefinierter Stores](ch-extend.md#creating-custom-store-candidates). Weitere Informationen zu Beispielspeichertypen finden Sie unter [Beispielkandidaten für ContextHub-Speicher](ch-samplestores.md).
+Alle Speichertypen sind Erweiterungen der Klasse [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core). Weitere Informationen zur Erstellung eines Speichertyps finden Sie unter [Erstellen benutzerdefinierter Speicher](ch-extend.md#creating-custom-store-candidates). Weitere Informationen zu Beispielspeichertypen finden Sie unter [Beispielkandidaten für ContextHub-Speicher](ch-samplestores.md).
 
 ### Beibehaltungsmodi {#persistence-modes}
 
@@ -139,7 +140,7 @@ Die Regeln zur Auflösung dieser Segmente werden wie folgt zusammengefasst:
 
 >[!WARNING]
 >
->Die installierten Segmente werden als Referenzkonfigurationen bereitgestellt, damit Sie Ihre eigene dedizierte Konfiguration für Ihr Projekt erstellen können. Verwenden Sie sie nicht direkt.
+>Die installierten Segmente werden als Referenzkonfigurationen bereitgestellt, damit Sie Ihre eigene Konfiguration für Ihr Projekt erstellen können. Verwenden Sie sie nicht direkt.
 
 ## Debuggen von ContextHub {#debugging-contexthub}
 

@@ -2,10 +2,11 @@
 title: Personalisierung und Content-Targeting
 description: Erfahren Sie, wie Adobe Experience Manager 6.5 personalisierte Inhalte erstellen kann.
 exl-id: be34760a-875b-419d-9fa4-2359b314a3b7
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 67%
+source-wordcount: '526'
+ht-degree: 64%
 
 ---
 
@@ -57,7 +58,7 @@ AEM bietet eine integrierte Targeting-Engine, die Seitenanfragen verarbeitet und
 
 ### Adobe Target {#adobe-target}
 
-Mit der Targeting-Engine von Adobe Target werden von Seitenbesuchen gesammelte Informationen in Adobe Target verfolgt.
+Die Adobe Target-Targeting-Engine sorgt dafür, dass aus Seitenbesuchen erfasste Informationen in Adobe Target nachverfolgt werden.
 
 * Bei der Verwendung dieser Targeting-Engine setzen Sie Segmente ein, die Sie aus Adobe Target importieren, um die Zielgruppen Ihrer Erlebnisse zu bestimmen.
 * Aktivitäten, die die Adobe Target-Engine verwenden, werden [mit Target synchronisiert](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).

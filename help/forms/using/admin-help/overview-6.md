@@ -6,10 +6,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: fbe1487e-c830-4be8-9841-6022e6a98ae7
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 3%
+ht-degree: 14%
 
 ---
 
@@ -29,4 +30,4 @@ Die bereitgestellten Informationen gelten für Turnkey-, Automatisch- und manuel
 >
 >Verwenden Sie beim Erstellen von SSL-Sicherheitszertifikaten und -berechtigungen dieselben Benutzerkontoberechtigungen wie beim Ausführen des Anwendungsservers. Wenn der Anwendungsserver mit anderen Benutzerberechtigungen ausgeführt wird, wird das Formular für PDFForm-Ausgabeformate möglicherweise nicht ordnungsgemäß wiedergegeben, wenn der ContentRootURI auf HTTPS verweist.
 
-Wenn Sie über einen SSL-aktivierten LDAP-Server verfügen, konfigurieren Sie User Management für die Verwendung mit diesem Server. (Siehe [User Management für einen SSL-aktivierten LDAP-Server konfigurieren](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).
+Wenn Sie einen SSL-aktivierten LDAP-Server verwenden, konfigurieren Sie die Benutzerverwaltung dafür. (Siehe [Konfigurieren der Benutzerverwaltung für einen SSL-aktivierten LDAP-Server](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)

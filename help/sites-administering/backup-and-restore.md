@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2282'
+source-wordcount: '2314'
 ht-degree: 40%
 
 ---
@@ -212,7 +213,7 @@ Für das Online-Backup wird der folgende Algorithmus verwendet:
 
 1. Wenn Sie eine ZIP-Datei erstellen, ist der erste Schritt die Erstellung oder Lokalisierung des Zielverzeichnisses.
 
-   * Beim Sichern in eine ZIP-Datei wird ein temporäres Verzeichnis erstellt. Der Verzeichnisname beginnt mit `backup.` und endet mit `.temp`; Beispiel, `backup.f4d3.temp`.
+   * Beim Sichern in eine ZIP-Datei wird ein temporäres Verzeichnis erstellt. Der Verzeichnisname beginnt mit `backup.` und endet mit `.temp`; zum Beispiel `backup.f4d3.temp`.
    * Beim Sichern in ein Verzeichnis wird der im Zielpfad angegebene Name verwendet. Es kann ein vorhandenes Verzeichnis verwendet werden. Andernfalls wird ein neues Verzeichnis erstellt.
 
      Es wird eine leere Datei mit dem Namen `backupInProgress.txt` im Zielverzeichnis erstellt, wenn das Backup gestartet wird. Diese Datei wird gelöscht, wenn das Backup abgeschlossen ist.

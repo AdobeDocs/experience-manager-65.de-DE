@@ -7,10 +7,11 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 9abdaa6d-79ee-448e-a23f-d216433591f8
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 51%
+source-wordcount: '228'
+ht-degree: 39%
 
 ---
 
@@ -20,7 +21,7 @@ Adobe Experience Manager (AEM) bietet Ihnen die Möglichkeit, Ihr Konto und best
 
 Über die [Kontoeinstellungen](#account-settings) und [Benutzereinstellungen](#user-preferences) können die folgenden Optionen und Einstellungen definiert werden:
 
-* **Bearbeitungssymbolleiste** Legen Sie fest, ob die globale Bearbeitungssymbolleiste angezeigt werden soll. Auf dieser Symbolleiste oben im Browser-Fenster stehen die Schaltflächen **Kopieren**, **Ausschneiden**, **Einfügen**, **Löschen** zur Verwendung mit den Absatzkomponenten auf dieser Seite zur Verfügung:
+* **Bearbeitungssymbolleiste** Legen Sie fest, ob die globale Bearbeitungssymbolleiste angezeigt werden soll. Diese Symbolleiste, die oben im Browser-Fenster angezeigt wird, bietet Ihnen **Kopieren**, **Ausschneiden**, **Einfügen**, **Löschen** Schaltflächen zur Verwendung mit den Absatzkomponenten auf dieser Seite:
 
    * Bei Bedarf anzeigen (Standardeinstellung)
    * Immer anzeigen

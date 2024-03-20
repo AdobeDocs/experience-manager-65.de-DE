@@ -2,7 +2,8 @@
 title: Salesforce-Integration mit AEM Forms mithilfe des OAuth 2.0-Client-Anmeldedatenflusses
 description: Schritte zur Integration von Salesforce-Integration mit AEM Forms mithilfe des OAuth 2.0-Client-Anmeldedatenflusses
 exl-id: 4c356aa6-ebd4-40b9-89e3-bc4519e4a7c5
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 100%
@@ -18,9 +19,9 @@ ht-degree: 100%
 
 Sie können OAuth 2.0-Client-Anmeldeinformationen verwenden, um AEM Forms in die Salesforce-Anwendung zu integrieren. OAuth 2.0-Client-Anmeldeinformationen sind eine standardmäßige und sichere Methode für die direkte Kommunikation ohne Benutzerbeteiligung.
 
-![Workflow beim Festlegen der Kommunikation zwischen AEM Forms und Salesforce-Anwendung](/help/forms/using/assets/salesforce-workflow.png)
+![Workflow beim Festlegen der Kommunikation zwischen AEM Forms und der Salesforce-Anwendung](/help/forms/using/assets/salesforce-workflow.png)
 
-AEM Forms tauscht die Client-Anmeldeinformationen (Consumer Key und Consumer Secret) aus, die in der mit Salesforce verbundenen Anwendung definiert sind, um ein Zugriffs-Token zu erhalten.
+AEM Forms tauscht die in der Salesforce Connect-Anwendung definierten Client-Anmeldeinformationen (Consumer Key und Consumer Secret) aus, um ein Zugriffs-Token zu erhalten.
 
 Die Verwendung von OAuth 2.0-Client-Anmeldeinformationen für die Authentifizierung hat gegenüber Authorization Code Flow mehrere Vorteile:
 
@@ -29,7 +30,7 @@ Die Verwendung von OAuth 2.0-Client-Anmeldeinformationen für die Authentifizie
 
 ## Voraussetzungen {#prerequisites}
 
-Gehen Sie wie folgt vor, bevor Sie die Kommunikation zwischen einer Salesforce-Anwendung und einer AEM-Umgebung einrichten:
+Tun Sie Folgendes, bevor Sie die Kommunikation zwischen einer Salesforce-Anwendung und einer AEM-Umgebung einrichten:
 
 * Erstellen Sie eine [mit Salesforce verbundene App mit OAuth 2.0 Client Credential Flow](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&amp;type=5) sowie eine reine API-Benutzerin bzw. einen reinen API-Benutzer für Ihre Organisation und rufen Sie Consumer Key und Consumer Secret für die App ab.
 

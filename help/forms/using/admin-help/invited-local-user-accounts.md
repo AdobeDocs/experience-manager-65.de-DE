@@ -7,7 +7,8 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: 23f71b34-a0cb-4664-bb8b-a60f33dc70d8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1196'
 ht-degree: 4%
@@ -18,7 +19,7 @@ ht-degree: 4%
 
 Verwenden Sie die Seite Eingeladene und lokale Benutzer , um eingeladene und lokale Benutzer zu verwalten. Diese Seite wird nur angezeigt, wenn die folgenden Anforderungen erfüllt sind:
 
-* Sie sind ein Administrator, dem die Document Security-Rolle &quot;Eingeladene und lokale Benutzer verwalten&quot;und die Rolle &quot;Administration Console-Benutzer&quot;zugewiesen ist. (Siehe [Rollen erstellen und konfigurieren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).
+* Sie sind ein Administrator, dem die Document Security-Rolle &quot;Eingeladene und lokale Benutzer verwalten&quot;und die Rolle &quot;Administration Console-Benutzer&quot;zugewiesen ist. (Siehe [Erstellen und Konfigurieren von Rollen](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
 * Die Registrierung eingeladener Benutzer ist aktiviert. (Siehe [Registrierung für eingeladene Benutzer konfigurieren](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).
 
 Die Seite Eingeladene und lokale Benutzer enthält zwei Registerkarten, mit denen Sie nach Konten eingeladener und lokaler Benutzer suchen, diese anzeigen, bearbeiten, sperren, entsperren und löschen können.

@@ -6,10 +6,11 @@ role: User, Admin
 feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
-source-git-commit: 93d0a38d13223a8580f54786bc4ffe149efe99f1
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1155'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -47,7 +48,7 @@ Gehen Sie wie folgt vor, um Berichte zu erstellen:
 * Download
 * Ablauf
 * Änderung
-* Veröffentlichung
+* Veröffentlichen
 * [!DNL Brand Portal]-Veröffentlichung
 * Speichernutzung
 * Dateien
@@ -113,7 +114,7 @@ Gehen Sie wie folgt vor, um Berichte zu erstellen:
    ![Auswählen oder Aufheben der Auswahl von Berichtsspalten](assets/custom_columns.png)
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**. Eine Meldung benachrichtigt Sie darüber, dass die Berichtserstellung startet.
-1. Im [!UICONTROL Asset-Berichte] -Seite, basiert der Berichterstellungsstatus beispielsweise auf dem aktuellen Status des Berichtauftrags, [!UICONTROL Erfolg], [!UICONTROL Fehlgeschlagen], [!UICONTROL In Warteschlange]oder [!UICONTROL Geplant]. Derselbe Status wird auch im Benachrichtigungseingang angezeigt. Klicken Sie zur Ansicht der Berichtsseite auf den Berichts-Link. Alternativ wählen Sie den Bericht aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Anzeigen]**.
+1. Auf der Seite [!UICONTROL Asset-Berichte] basiert der angezeigte Berichterstellungsstatus auf dem aktuellen Status des Berichtauftrags, zum Beispiel [!UICONTROL Erfolg], [!UICONTROL Fehlgeschlagen], [!UICONTROL In Warteschlange] oder [!UICONTROL Geplant]. Derselbe Status wird auch im Benachrichtigungseingang angezeigt. Klicken Sie zur Ansicht der Berichtsseite auf den Berichts-Link. Alternativ wählen Sie den Bericht aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Anzeigen]**.
 
    <!--![A generated report](assets/report_page.png)-->
    [Berichtsstatus](assets/report-status.JPG)
@@ -128,7 +129,7 @@ Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weite
 * Download
 * Ablauf
 * Änderung
-* Veröffentlichung
+* Veröffentlichen
 * [!DNL Brand Portal]-Veröffentlichung
 * Dateien
 

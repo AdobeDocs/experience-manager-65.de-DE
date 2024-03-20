@@ -9,7 +9,8 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2004'
 ht-degree: 92%
@@ -147,7 +148,7 @@ Siehe auch [Dynamic Media-Beschränkungen](/help/assets/limitations.md).
 
    * Wählen Sie oben links auf der Seite des Rotationsset-Editors **[!UICONTROL Asset hinzufügen]** aus.
 
-   * Wählen Sie in der Mitte des Rotationsset-Editors die Option **[!UICONTROL Auswählen zum Öffnen der Asset-Auswahl]**.
+   * Wählen Sie in der Mitte des Rotationsset-Editors **[!UICONTROL Wählen, um die Asset-Auswahl zu öffnen]** aus.
 
    Wählen Sie diese Option, um Assets auszuwählen, die Sie in das Rotationsset aufnehmen möchten. Die ausgewählten Assets sind mit einem Häkchen versehen. Wenn Sie fertig sind, wählen Sie in der oberen rechten Ecke der Seite **[!UICONTROL Auswählen]**.
 

@@ -7,7 +7,8 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 58%
@@ -60,14 +61,14 @@ So abonnieren Sie Benachrichtigungen:
    >
    >`https://<host>:<port>/libs/wcm/core/content/inbox.html`
 
-1. Klicken **Konfigurieren...** in der oberen linken Ecke, um das Konfigurationsdialogfeld zu öffnen.
+1. Klicks **Konfigurieren...** in der oberen linken Ecke, um das Konfigurationsdialogfeld zu öffnen.
 
    ![screen_shot_2012-02-08at111056am](assets/screen_shot_2012-02-08at111056am.png)
 
 1. Wählen Sie den Benachrichtigungskanal aus:
 
-   * **Posteingang**: -Benachrichtigungen werden in Ihrem AEM Posteingang angezeigt.
-   * **Email**: Benachrichtigungen werden an die in Ihrem Benutzerprofil definierte E-Mail-Adresse gesendet.
+   * **Posteingang**: Benachrichtigungen werden in Ihrem AEM Posteingang angezeigt.
+   * **Email**: Benachrichtigungen werden per E-Mail an die in Ihrem Benutzerprofil definierte E-Mail-Adresse gesendet.
 
    >[!NOTE]
    >
@@ -90,7 +91,7 @@ Wenn eine Seite gelöscht oder verschoben wird, wird automatisch eine Löschakti
    * Klicken Sie auf **Hinzufügen**, um der Tabelle eine neue Zeile hinzuzufügen.
    * Klicken Sie auf **Pfad** Tabellenzelle und geben Sie den Pfad ein, beispielsweise `/content/docs`.
 
-   * Um über alle Seiten in der Unterstruktur informiert zu werden, legen Sie **Exakt?** auf **Nein**.
+   * Um über alle Seiten des Unterbaums benachrichtigt zu werden, legen Sie **Exakt?** auf **Nein**.
 Um über nur über die angegebene Seite Benachrichtigungen zu erhalten, setzen Sie **Exakt?** auf **Ja**.
 
    * Um die Regel zuzulassen, legen Sie **Regel** auf **Zulassen** fest. Wenn dies auf **Ablehnen** festgelegt ist, wird die Regel deaktiviert, aber nicht entfernt und kann später zugelassen werden.

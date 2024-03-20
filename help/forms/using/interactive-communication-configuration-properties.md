@@ -8,10 +8,11 @@ topic-tags: interactive-communications
 docset: aem65
 feature: Interactive Communication
 exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '610'
-ht-degree: 44%
+ht-degree: 48%
 
 ---
 
@@ -58,17 +59,17 @@ Auswählen **Konfiguration von Dokumentfragmenten** auf **Konfiguration der Adob
   <tr> 
    <td>Einzug</td> 
    <td>Die Breite einer Einzugseinheit, die auf Text in Listendokumentfragmenten angewendet wird.</td> 
-   <td>12.7 mm</td> 
+   <td>12,7 mm</td> 
    <td>Zahl</td> 
   </tr> 
   <tr> 
-   <td>Mindestbreite der römischen Zahlen</td> 
+   <td>Mindestbreite bei römischen Zahlen</td> 
    <td>Mindestbreite für das Aufzählungs- oder Zahlenfeld bei Verwendung von römischen Zahlen in Listendokumentfragmenten. </td> 
-   <td>12.7 mm</td> 
+   <td>12,7 mm</td> 
    <td>Zahl</td> 
   </tr> 
   <tr> 
-   <td>Mindestbreite der Zahl</td> 
+   <td>Mindestbreite bei Zahlen</td> 
    <td>Mindestbreite für das Aufzählungs- oder Zahlenfeld bei nummerierten Listen, mit Ausnahme der römischen Zahlen in Listendokumentfragmenten.</td> 
    <td>8,0 mm</td> 
    <td>Zahl</td> 
@@ -134,7 +135,7 @@ Auswählen **Webkanal-Designkonfiguration für adaptive Formulare und interaktiv
   <tr> 
    <td>Schriftlistenname</td> 
    <td>Liste der Schriftarten, die beim Erstellen der adaptiven Forms- und interaktiven Kommunikation verwendet werden können.</td> 
-   <td><p>Georgien</p> <p>Buch Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial Schwarz</p> <p>Auswirkungen</p> <p>Palatino-Linotyp</p> </td> 
+   <td><p>Georgia</p> <p>Buch Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial Schwarz</p> <p>Auswirkungen</p> <p>Palatino-Linotyp</p> </td> 
    <td>Alle gültigen Adobe-Serverschriftarten</td> 
   </tr> 
  </tbody> 

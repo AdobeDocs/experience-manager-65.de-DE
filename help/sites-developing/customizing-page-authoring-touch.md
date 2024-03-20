@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1257'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -134,7 +135,7 @@ Den Code dieser Seite finden Sie auf GitHub.
 
 ## Hinzufügen eines neuen Editors für Bearbeitung im Kontext {#add-new-in-place-editor}
 
-### Standardeditor für Bearbeitung im Kontext {#standard-in-place-editor}
+### Standardmäßiger Editor für Bearbeitung im Kontext {#standard-in-place-editor}
 
 Bei der Standardinstallation von AEM:
 
@@ -181,7 +182,7 @@ Bei der Standardinstallation von AEM:
 
    >[!CAUTION]
    >
-   >Beschneidungsverhältnisse, die durch die Eigenschaft `ratio` definiert werden, sind in AEM als **Höhe/Breite** definiert. Dies unterscheidet sich von der herkömmlichen Definition als Breite/Höhe und erfolgt aus Gründen der Kompatibilität mit Altsystemen. Die Benutzer, die die Seite erstellen, bemerken keinen Unterschied, vorausgesetzt, dass Sie die Eigenschaft `name` klar definieren, da diese auf der Benutzeroberfläche angezeigt wird.
+   >Beschneidungsverhältnisse, die durch die Eigenschaft `ratio` definiert werden, sind in AEM als **Höhe/Breite** definiert. Dies unterscheidet sich von der herkömmlichen Definition als Breite/Höhe und erfolgt aus Gründen der Legacy-Kompatibilität. Die Benutzer, die die Seite erstellen, bemerken keinen Unterschied, vorausgesetzt, dass Sie die Eigenschaft `name` klar definieren, da diese auf der Benutzeroberfläche angezeigt wird.
 
 #### Erstellen eines neuen Editors für Bearbeitung im Kontext {#creating-a-new-in-place-editor}
 
@@ -201,7 +202,7 @@ So erstellen Sie einen neuen Editor für Bearbeitung im Kontext (innerhalb Ihrer
 
    * `editor.register`
 
-1. Stellen Sie die Verbindung zwischen dem Editor und jedem Ressourcentyp (wie in der Komponente) bereit, der ihn verwenden kann.
+1. Geben Sie die Verknüpfung zwischen dem Editor und jedem Ressourcentyp an (wie in der Komponente), der ihn verwenden kann.
 
 #### Codebeispiel zum Erstellen eines neuen Editors für Bearbeitung im Kontext {#code-sample-for-creating-a-new-in-place-editor}
 
@@ -220,7 +221,7 @@ Es ist möglich, eine Komponente so zu konfigurieren, dass sie über mehrere Edi
 
 ## Hinzufügen einer neuen Seitenaktion {#add-a-new-page-action}
 
-So fügen Sie der Seitensymbolleiste eine neue Seitenaktion hinzu, z. B. eine **Zurück zu Sites** Aktion (Konsole).
+So fügen Sie der Seitensymbolleiste eine neue Seitenaktion hinzu, z. B. die Aktion **Zurück zu Sites** (Konsole).
 
 ### Codebeispiel {#code-sample-3}
 

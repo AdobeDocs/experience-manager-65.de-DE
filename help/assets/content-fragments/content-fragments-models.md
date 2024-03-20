@@ -4,10 +4,11 @@ description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für 
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2310'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -76,11 +77,11 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 
         >[!CAUTION]
         >
-        >Wenn Sie die Eigenschaft **Eigenschaftsname** für einen Datentyp manuell aktualisieren, beachten Sie, dass Namen nur A–Z, a–z, 0–9 und den Unterstrich „_“ als Sonderzeichen enthalten dürfen.
+        Wenn Sie die Eigenschaft **Eigenschaftsname** für einen Datentyp manuell aktualisieren, beachten Sie, dass Namen nur A–Z, a–z, 0–9 und den Unterstrich „_“ als Sonderzeichen enthalten dürfen.
         >
-        >Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
+        Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
 
-     Beispiel:
+     Zum Beispiel:
 
      ![Feldeigenschaften](assets/cfm-models-05.png)
 
@@ -134,7 +135,7 @@ Im Fragmenteditor wird jede Instanz als Registerkarte angezeigt.
 
      >[!NOTE]
      >
-     >Dieser Datentyp dient ausschließlich zur Formatierung und wird vom GraphQL-Schema von AEM ignoriert.
+     Dieser Datentyp dient ausschließlich zur Formatierung und wird vom GraphQL-Schema von AEM ignoriert.
 
 ## Eigenschaften {#properties}
 
@@ -147,7 +148,7 @@ Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Infor
 
   >[!CAUTION]
   >
-  >Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
+  Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
 
 * **Rendern als**
 Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Oft können Sie damit festlegen, ob der Autorin oder dem Autor nur eine einzige Instanz des Feldes angezeigt wird oder ob sie bzw. er mehrere Instanzen erstellen darf.
@@ -177,11 +178,11 @@ Content (für das spezifische Feld) muss für alle Inhaltsfragmente, die anhand 
 
   >[!NOTE]
   >
-  >Die Eindeutigkeit wird pro Sprachstamm gewährleistet.
+  Die Eindeutigkeit wird pro Sprachstamm gewährleistet.
 
   >[!NOTE]
   >
-  >Varianten können denselben *eindeutigen* Wert haben wie Varianten desselben Fragments, jedoch nicht denselben Wert wie Varianten anderer Fragmente.
+  Varianten können denselben *eindeutigen* Wert haben wie Varianten desselben Fragments, jedoch nicht denselben Wert wie Varianten anderer Fragmente.
 
 * Weitere Informationen zu diesem bestimmten Datentyp und seinen Eigenschaften finden Sie unter **[Inhaltsreferenz](#content-reference)**.
 
@@ -224,18 +225,17 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 
      >[!NOTE]
      >
-     >Diese Methode ist in Verbindung mit der [Headless-Inhaltsbereitstellung mittels Inhaltsfragmenten mit GraphQL](/help/assets/content-fragments/content-fragments-graphql.md) besonders interessant.
+     Diese Methode ist in Verbindung mit der [Headless-Inhaltsbereitstellung mittels Inhaltsfragmenten mit GraphQL](/help/assets/content-fragments/content-fragments-graphql.md) besonders interessant.
    * Kann für einen oder mehrere Verweise konfiguriert werden (im resultierenden Fragment).
 
 >[!NOTE]
 >
->AEM bietet einen Wiederholungsschutz für:
+AEM bietet einen Wiederholungsschutz für:
 >
->* Inhaltsreferenzen
->  Verhindert, dass der Benutzer dem aktuellen Fragment einen Verweis hinzufügt. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
+* Inhaltsreferenzen
+Verhindert, dass der Benutzer dem aktuellen Fragment einen Verweis hinzufügt. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
 >
->* Fragmentverweise in GraphQL
->  Wenn Sie eine tiefe Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die gegenseitig aufeinander verweisen, gibt sie beim ersten Auftreten null zurück.
+* Fragmentverweise in GraphQL Wenn Sie eine Deep-Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die von einander referenziert werden, wird beim ersten Auftreten null zurückgegeben.
 
 ### Inhaltsreferenz {#content-reference}
 
@@ -256,7 +256,7 @@ Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
 
 Die Fragmentreferenz verweist auf mindestens ein Inhaltsfragment. Diese Funktion ist besonders beim Abrufen von Inhalt für die Verwendung in Ihrer Anwendung interessant, da sie es Ihnen ermöglicht, strukturierte Daten mit mehreren Ebenen abzurufen.
 
-Beispiel:
+Zum Beispiel:
 
 * Ein Modell, das Details für einen Mitarbeiter definiert, beispielsweise:
    * Ein Verweis auf das Modell, das den Arbeitgeber definiert (Firma)
@@ -277,7 +277,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->Dies ist besonders in Verbindung mit der [Headless-Inhaltsbereitstellung mittels Inhaltsfragmenten mit GraphQL](/help/assets/content-fragments/content-fragments-graphql.md) von Interesse.
+Dies ist besonders in Verbindung mit der [Headless-Inhaltsbereitstellung mittels Inhaltsfragmenten mit GraphQL](/help/assets/content-fragments/content-fragments-graphql.md) von Interesse.
 
 Zusätzlich zu den Standardeigenschaften können Sie Folgendes definieren:
 
@@ -303,9 +303,9 @@ Gibt einen Stammpfad für referenzierte Fragmente an.
 
 >[!NOTE]
 >
->Es gibt einen Mechanismus zum Wiederholungsschutz. Dieser verhindert, dass Benutzer in der Fragmentreferenz das aktuelle Inhaltsfragment auswählen. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
+Es gibt einen Mechanismus zum Wiederholungsschutz. Dieser verhindert, dass Benutzer in der Fragmentreferenz das aktuelle Inhaltsfragment auswählen. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
 >
->Es gibt auch einen Wiederholungsschutz für Fragmentreferenzen in GraphQL. Wenn Sie eine tiefe Abfrage über zwei Inhaltsfragmente erstellen, die gegenseitig aufeinander verweisen, wird null zurückgegeben.
+Es gibt auch einen Wiederholungsschutz für Fragmentreferenzen in GraphQL. Wenn Sie eine tiefe Abfrage über zwei Inhaltsfragmente erstellen, die gegenseitig aufeinander verweisen, wird null zurückgegeben.
 
 ## Aktivieren oder Deaktivieren von Inhaltsfragmentmodellen {#enabling-disabling-a-content-fragment-model}
 
@@ -354,7 +354,7 @@ Zur Implementierung der Inhaltsverwaltung können Sie **Richtlinien** im Asset-O
 
 >[!NOTE]
 >
->Der Mechanismus ähnelt dem [Zulassen von Seitenvorlagen](/help/sites-authoring/templates.md#allowing-a-template-author) für eine Seite und deren untergeordnete Elemente in den erweiterten Eigenschaften einer Seite.
+Der Mechanismus ähnelt dem [Zulassen von Seitenvorlagen](/help/sites-authoring/templates.md#allowing-a-template-author) für eine Seite und deren untergeordnete Elemente in den erweiterten Eigenschaften einer Seite.
 
 So konfigurieren Sie die **Richtlinien** für **Zulässige Inhaltsfragmentmodelle**:
 
@@ -389,7 +389,7 @@ Die für einen Ordner zulässigen Inhaltsfragmentmodelle werden wie folgt aufgel
 
 >[!CAUTION]
 >
->Das Löschen eines Inhaltsfragment-Modells kann sich auf abhängige Fragmente auswirken.
+Das Löschen eines Inhaltsfragment-Modells kann sich auf abhängige Fragmente auswirken.
 
 Löschen eines Inhaltsfragment-Modells:
 
@@ -400,7 +400,7 @@ Löschen eines Inhaltsfragment-Modells:
 
    >[!NOTE]
    >
-   >Wenn auf das Modell verwiesen wird, wird eine Warnung angezeigt. Ergreifen Sie geeignete Maßnahmen.
+   Wenn auf das Modell verwiesen wird, wird eine Warnung angezeigt. Ergreifen Sie geeignete Maßnahmen.
 
 ## Veröffentlichen eines Inhaltsfragmentmodells {#publishing-a-content-fragment-model}
 
@@ -416,7 +416,7 @@ Der Status „Veröffentlicht“ wird in der Konsole angezeigt.
 
    >[!NOTE]
    >
-   >Wenn Sie ein Inhaltsfragment veröffentlichen, dessen Modell noch nicht veröffentlicht wurde, wird dies in einer Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
+   Wenn Sie ein Inhaltsfragment veröffentlichen, dessen Modell noch nicht veröffentlicht wurde, wird dies in einer Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
 ## Rückgängigmachen der Veröffentlichung eines Inhaltsfragmentmodells {#unpublishing-a-content-fragment-model}
 

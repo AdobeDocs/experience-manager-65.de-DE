@@ -1,15 +1,16 @@
 ---
 title: Seitenvorlagen – statisch
-description: Eine Vorlage wird verwendet, um eine Seite zu erstellen, und definiert, welche Komponenten im ausgewählten Bereich verwendet werden können
+description: Eine Vorlage wird zum Erstellen einer Seite verwendet und definiert, welche Komponenten im ausgewählten Bereich verwendet werden können
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: b934ac41-78b9-497f-ba95-b05ef1e5660e
-source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1601'
 ht-degree: 45%
 
 ---
@@ -117,10 +118,10 @@ Eine Vorlage wird unter einem Knoten des Typs **cq:Template**.
 
 Verschiedene Eigenschaften können festgelegt werden, insbesondere:
 
-* **jcr:title** - Titel der Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt.
-* **jcr:description** - Beschreibung der Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt.
+* **jcr:title** - Titel für die Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt.
+* **jcr:description** - Beschreibung für die Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt.
 
-Dieser Knoten enthält einen Knoten jcr:content (cq:PageContent) , der als Grundlage für den Inhaltsknoten der resultierenden Seiten verwendet wird. Dadurch wird mithilfe von sling:resourceType die Komponente referenziert, die zum Rendern des tatsächlichen Inhalts einer neuen Seite verwendet werden soll.
+Dieser Knoten enthält einen Knoten jcr:content (cq:PageContent) , der als Grundlage für den Inhaltsknoten der resultierenden Seiten verwendet wird. Er verweist mithilfe von sling:resourceType auf die Komponente, die zum Rendern des tatsächlichen Inhalts einer neuen Seite verwendet werden soll.
 
 ![screen_shot_2012-02-13at64010pm](assets/screen_shot_2012-02-13at64010pm.png)
 
@@ -144,14 +145,14 @@ Beispielsweise enthält AEM mehrere Vorlagen, darunter eine Inhaltsseite und ein
 
 | **Titel** | **Komponente** | **Speicherort** | **Zweck** |
 |---|---|---|---|
-| Homepage | homepage | geometrixx | Die Geometrixx-Homepage-Vorlage. |
-| Inhalts-Seite | contentpage | geometrixx | Die Inhaltsseitenvorlage des Geometrixx. |
+| Startseite | homepage | geometrixx | Die Geometrixx-Homepage-Vorlage. |
+| Inhaltsseite | contentpage | geometrixx | Die Inhaltsseitenvorlage des Geometrixx. |
 
 #### Anzeigen von Standardvorlagen {#displaying-default-templates}
 
 Um eine Liste aller Vorlagen im Repository anzuzeigen, gehen Sie wie folgt vor:
 
-1. Öffnen Sie in CRXDE Lite die **Instrumente** Menü und klicken Sie auf **Abfrage**.
+1. Öffnen Sie unter CRXDE Lite die **Instrumente** Menü und klicken Sie **Abfrage**.
 
 1. Im Tab Abfrage
 1. As **Typ** auswählen **XPath**.
@@ -172,7 +173,7 @@ Wenn Stile in der Benutzeroberfläche im [Designmodus](/help/sites-authoring/def
 >
 >Adobe empfiehlt nur die Anwendung von Designs durch den [Designmodus](/help/sites-authoring/default-components-designmode.md).
 >
->Das Ändern von Designs in CRXDE Lite ist beispielsweise keine Best Practice und die Anwendung solcher Designs kann vom erwarteten Verhalten abweichen.
+>Das Ändern von Designs beispielsweise im CRXDE Lite ist keine Best Practice und die Anwendung solcher Designs kann vom erwarteten Verhalten abweichen.
 
 Wenn Entwürfe nur im Designmodus angewendet werden, sind die folgenden Abschnitte, [Auflösung des Designpfads](/help/sites-developing/page-templates-static.md#design-path-resolution), [Entscheidungsbaum](/help/sites-developing/page-templates-static.md#decision-tree) und das [Beispiel](/help/sites-developing/page-templates-static.md#example), nicht anwendbar.
 

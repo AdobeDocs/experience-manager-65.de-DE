@@ -7,10 +7,11 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1540'
-ht-degree: 84%
+ht-degree: 88%
 
 ---
 
@@ -67,7 +68,7 @@ Es gibt verschiedene Möglichkeiten, eine Seite zu finden: Sie können navigiere
 
 1. Öffnen Sie die **Sites** -Konsole (mithilfe der **Sites** in der [Globale Navigation](/help/sites-authoring/basic-handling.md#global-navigation)) - wird ausgelöst (Dropdown), wenn Sie den Adobe Experience Manager-Link (oben links) auswählen.
 
-1. Navigieren Sie in der Struktur nach unten, indem Sie auf die entsprechende Seite tippen/klicken. Wie die Seitenressourcen dargestellt werden, hängt von der verwendeten Ansicht ab - [Karte, Liste oder Spalte](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
+1. Navigieren Sie in der Struktur nach unten, indem Sie auf die entsprechende Seite tippen/klicken. Wie die Seitenressourcen dargestellt werden, hängt von der verwendeten Ansicht ab – [Karte, Liste oder Spalte](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
@@ -155,7 +156,7 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
    * [Den Inhalt einer vorhandenen Komponente](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) auf der Seite bearbeiten:
 
       * Öffnen Sie die Komponenten-Symbolleiste mit einem Klick. Öffnen Sie das Dialogfeld über das Symbol **Bearbeiten** (Bleistift).
-      * Öffnen Sie den Editor für die Bearbeitung an Ort und Stelle für die Komponente durch Auswählen und Halten oder durch einen doppelten langsamen Klick. Die verfügbaren Aktionen werden angezeigt (bei einigen Komponenten ist dies eine eingeschränkte Auswahl).
+      * Öffnen Sie den integrierten Editor für die Komponente entweder durch Auswählen und Halten oder durch einen langsamen Doppelklick. Die verfügbaren Aktionen werden angezeigt (bei einigen Komponenten ist dies eine eingeschränkte Auswahl).
       * Um alle verfügbaren Aktionen anzuzeigen, gehen Sie wie folgt in den Vollbildmodus:
 
      ![Vollbildmodus](do-not-localize/screen_shot_2018-03-21at160706.png)
@@ -167,11 +168,11 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
    * [Verschieben](/help/sites-authoring/editing-content.md#moving-a-component) Sie eine Komponente mit einem der folgenden Verfahren:
 
       * Ziehen Sie die gewünschte Komponente an die neue Position.
-      * Öffnen Sie die Komponenten-Symbolleiste mit einem Klick. Verwenden Sie die **Ausschneiden** then **Einfügen** Symbole, falls erforderlich.
+      * Öffnen Sie die Komponenten-Symbolleiste mit einem Klick. Verwenden Sie die Symbole **Ausschneiden** und dann **Einfügen**, wo erforderlich.
 
    * Wenden Sie die Aktionen [Kopieren (und Einfügen)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) auf eine Komponente an:
 
-      * Öffnen Sie die Komponenten-Symbolleiste mit einem Klick. Verwenden Sie die **Kopieren** then **Einfügen** nach Bedarf.
+      * Öffnen Sie die Komponenten-Symbolleiste mit einem Klick. Verwenden Sie die Symbole **Ausschneiden** und dann **Einfügen**, wo erforderlich.
 
    >[!NOTE]
    >
@@ -303,7 +304,7 @@ Beispielsweise sieht das Schloss-Symbol folgendermaßen aus:
 
 1. Klicken Sie auf den gewünschten Referenztyp, um weitere Details anzuzeigen und (falls zutreffend) weitere Maßnahmen zu ergreifen.
 
-### Erstellen einer Seitenversion {#creating-a-version-of-your-page}
+### Erstellen einer Version Ihrer Seite {#creating-a-version-of-your-page}
 
 So erstellen Sie eine [Version](/help/sites-authoring/working-with-page-versions.md) Ihrer Seite:
 
@@ -329,7 +330,7 @@ Beim Wiederherstellen und/oder Vergleichen von Seitenversionen wird dasselbe gru
 
 1. Klicken Sie auf die Version, die Sie wiederherstellen möchten. Daraufhin werden zusätzliche Aktionsschaltflächen angezeigt:
 
-   * **Auf diese Version zurück**
+   * **Auf diese Version zurücksetzen**
 
       * Die Version wird wiederhergestellt.
 

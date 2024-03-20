@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5425'
 ht-degree: 96%
@@ -377,7 +378,7 @@ Wenn ein Asset zu Experience Manager Assets hinzugefügt wird, wird es automatis
 
 >[!NOTE]
 >
-Die maximale Dateigröße für das automatische Hochladen von Experience Manager Assets in Dynamic Media Classic beträgt 500 MB.
+>Die maximale Dateigröße für das automatische Hochladen von Experience Manager Assets in Dynamic Media Classic beträgt 500 MB.
 
 **So laden Sie automatisch aus Experience Manager Assets hoch:**
 
@@ -387,7 +388,7 @@ Die maximale Dateigröße für das automatische Hochladen von Experience Manager
 
    >[!NOTE]
    >
-   Unter [Konfigurieren des Status (veröffentlicht/unveröffentlicht) der auf Dynamic Media Classic gepushten Assets](#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) erhalten Sie Informationen zum Pushen von Assets auf Dynamic Media Classic im unveröffentlichten Status.
+   >Unter [Konfigurieren des Status (veröffentlicht/unveröffentlicht) der auf Dynamic Media Classic gepushten Assets](#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) erhalten Sie Informationen zum Pushen von Assets auf Dynamic Media Classic im unveröffentlichten Status.
 
    ![screen_shot_2018-03-15at52501pm](assets/screen_shot_2018-03-15at52501pm.jpg)
 
@@ -398,8 +399,8 @@ Die maximale Dateigröße für das automatische Hochladen von Experience Manager
 
    >[!NOTE]
    >
-   * Beim Hinzufügen von Assets nach der Automatisierung werden diese nicht in Dynamic Media Classic hochgeladen, wenn sie sich nicht im CQ-Zielordner befinden.
-   * Experience Manager bettet alle Metadaten als XMP ein, bevor sie in Dynamic Media Classic hochgeladen werden, sodass alle Eigenschaften auf dem Metadatenknoten in Dynamic Media Classic als XMP verfügbar sind.
+   >* Beim Hinzufügen von Assets nach der Automatisierung werden diese nicht in Dynamic Media Classic hochgeladen, wenn sie sich nicht im CQ-Zielordner befinden.
+   >* Experience Manager bettet alle Metadaten als XMP ein, bevor sie in Dynamic Media Classic hochgeladen werden, sodass alle Eigenschaften auf dem Metadatenknoten in Dynamic Media Classic als XMP verfügbar sind.
 
 ### Konfigurieren des Status (veröffentlicht/unveröffentlicht) der auf Dynamic Media Classic gepushten Assets {#configuring-the-state-published-unpublished-of-assets-pushed-to-scene}
 
@@ -424,7 +425,7 @@ Diese Schritte sind die gleichen, die Sie ausführen würden, um ein sicheres Te
 
 >[!NOTE]
 >
-Wenn Ihre Installationsumgebung ein UNIX®-64-Bit-Betriebssystem ist, finden Sie weitere Konfigurationsoptionen, die Sie festlegen müssen, unter [https://helpx.adobe.com/de/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/de/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
+>Wenn Ihre Installationsumgebung ein UNIX®-64-Bit-Betriebssystem ist, finden Sie weitere Konfigurationsoptionen, die Sie festlegen müssen, unter [https://helpx.adobe.com/de/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/de/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 
 #### Bekannte Beschränkungen für das Pushen von Assets im unveröffentlichten Status  {#known-limitations-for-pushing-assets-in-unpublished-state}
 
@@ -435,13 +436,13 @@ Beachten Sie die folgenden Beschränkungen, wenn Sie diese Funktion verwenden:
 
 >[!NOTE]
 >
-Wenn Sie Assets sofort veröffentlichen möchten, empfiehlt es sich, die Option **[!UICONTROL Sichere Vorschau aktivieren]** auf **[!UICONTROL Sofort]** eingestellt zu lassen und die Funktion **[!UICONTROL Automatisches Hochladen aktivieren]** zu verwenden.
+>Wenn Sie Assets sofort veröffentlichen möchten, empfiehlt es sich, die Option **[!UICONTROL Sichere Vorschau aktivieren]** auf **[!UICONTROL Sofort]** eingestellt zu lassen und die Funktion **[!UICONTROL Automatisches Hochladen aktivieren]** zu verwenden.
 
 ### Festlegen des Status von Assets, die auf Dynamic Media Classic gepusht werden, als unveröffentlicht {#setting-the-state-of-assets-pushed-to-scene-as-unpublished}
 
 >[!NOTE]
 >
-Wenn ein Benutzer das Asset in Experience Manager veröffentlicht, wird automatisch das S7-Asset in der Produktion/im Live-Asset aktiviert (das Asset befindet sich dann nicht mehr in der sicheren Vorschau/im unveröffentlichten Status).
+>Wenn ein Benutzer das Asset in Experience Manager veröffentlicht, wird automatisch das S7-Asset in der Produktion/im Live-Asset aktiviert (das Asset befindet sich dann nicht mehr in der sicheren Vorschau/im unveröffentlichten Status).
 
 **So legen Sie den Status der auf Dynamic Media Classic gepushten Assets auf „unveröffentlicht“ fest:**
 
@@ -513,7 +514,7 @@ Es kann immer nur eine Dynamic Media Classic-Konfiguration als Standard markiert
 
    >[!NOTE]
    >
-   Wenn es nur eine Konfiguration gibt, hat die Auswahl des Kontrollkästchens **[!UICONTROL Standardkonfiguration]** keinerlei Wirkung.
+   >Wenn es nur eine Konfiguration gibt, hat die Auswahl des Kontrollkästchens **[!UICONTROL Standardkonfiguration]** keinerlei Wirkung.
 
 ### Konfigurieren des Ad-hoc-Ordners {#configuring-the-ad-hoc-folder}
 
@@ -570,11 +571,11 @@ Insbesondere konfigurieren Sie hier das vom MIME-Typ akzeptierte Dateiformat im 
 
    >[!NOTE]
    >
-   Wenn Sie PSD-Dateien hochladen und als Vorlagen mit Ebenenextraktionen verarbeiten möchten, geben Sie Folgendes im Wertfeld **[!UICONTROL jobParam]** ein:
+   >Wenn Sie PSD-Dateien hochladen und als Vorlagen mit Ebenenextraktionen verarbeiten möchten, geben Sie Folgendes im Wertfeld **[!UICONTROL jobParam]** ein:
    >
-   `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
+   >`process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
    >
-   Stellen Sie sicher dass Ihre PSD-Datei über „Ebenen“ verfügt. Wenn es sich streng genommen um ein Bild oder ein Bild mit Maske handelt, wird es nur als Bild verarbeitet, da keine zu verarbeitenden Ebenen gibt.
+   >Stellen Sie sicher dass Ihre PSD-Datei über „Ebenen“ verfügt. Wenn es sich streng genommen um ein Bild oder ein Bild mit Maske handelt, wird es nur als Bild verarbeitet, da keine zu verarbeitenden Ebenen gibt.
 
 1. Wählen Sie in der oberen linken Ecke der Seite „CRXDE Lite“ die Option **[!UICONTROL Alle speichern]** aus.
 
@@ -616,6 +617,6 @@ Wenn Sie Probleme bei der Integration von Experience Manager mit Dynamic Media C
 
 >[!CAUTION]
 >
-Beim Importieren von Assets aus einem bestehenden Dynamic Media Classic-Unternehmenskonto kann es lange dauern, bis sie in Experience Manager angezeigt werden. Stellen Sie sicher, dass Sie einen Ordner in Dynamic Media Classic angeben, der nicht zu viele Assets enthält. Beispielsweise enthält der Stammordner häufig zu viele Assets.
+>Beim Importieren von Assets aus einem bestehenden Dynamic Media Classic-Unternehmenskonto kann es lange dauern, bis sie in Experience Manager angezeigt werden. Stellen Sie sicher, dass Sie einen Ordner in Dynamic Media Classic angeben, der nicht zu viele Assets enthält. Beispielsweise enthält der Stammordner häufig zu viele Assets.
 >
-Wenn Sie die Integration testen möchten, sollte der Stammordner nur auf einen Unterordner verweisen statt auf das ganze Unternehmen.
+>Wenn Sie die Integration testen möchten, sollte der Stammordner nur auf einen Unterordner verweisen statt auf das ganze Unternehmen.

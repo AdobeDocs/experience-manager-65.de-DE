@@ -5,7 +5,8 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: 00c01a12-1180-4f35-9179-461bf177c787
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 70%
@@ -123,7 +124,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 >[!NOTE]
 >
-Um Daten aus der Tabelle `EdcAuditEntity` zu exportieren, verwenden Sie die API [EventManager.exportEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html), die [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) als Parameter benötigt, um Audit-Daten auf der Grundlage von `principalId`, `policyId` oder `licenseId` zu exportieren.
+>Um Daten aus der Tabelle `EdcAuditEntity` zu exportieren, verwenden Sie die API [EventManager.exportEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html), die [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) als Parameter benötigt, um Audit-Daten auf der Grundlage von `principalId`, `policyId` oder `licenseId` zu exportieren.
 
 Um vollständige Daten über einen Benutzer im System zu erhalten, müssen Sie auf Daten aus der Benutzerverwaltungsdatenbank zugreifen und diese exportieren. Weitere Informationen finden Sie unter [Benutzerverwaltung für Formulare: Umgang mit Benutzerdaten](/help/forms/using/user-management-handling-user-data.md).
 
@@ -148,7 +149,7 @@ Führen Sie folgende Schritte aus, um Dokumentsicherheitsdaten für eine Prinzip
 
    >[!NOTE]
    >
-   Um Daten aus der Tabelle `EdcAuditEntity` zu löschen, verwenden Sie die API [EventManager.deleteEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html), die [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) als Parameter benötigt, um Audit-Daten auf der Grundlage von `principalId`, `policyId` oder `licenseId` zu löschen.
+   >Um Daten aus der Tabelle `EdcAuditEntity` zu löschen, verwenden Sie die API [EventManager.deleteEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html), die [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) als Parameter benötigt, um Audit-Daten auf der Grundlage von `principalId`, `policyId` oder `licenseId` zu löschen.
 
 1. Aktive und archivierte Richtlinien-XML-Dateien werden in den Datenbanktabellen `EdcPolicyXmlEntity` bzw. `EdcPolicyArchiveEntity` gespeichert. Führen Sie die folgenden Schritte aus, um Daten für einen Benutzer aus diesen Tabellen zu löschen:
 
@@ -158,7 +159,7 @@ Führen Sie folgende Schritte aus, um Dokumentsicherheitsdaten für eine Prinzip
 
    >[!NOTE]
    >
-   Entfernen Sie den vollständigen Blob im `Principal` -Tag für eine Prinzipal-ID oder die Richtlinien-XML kann beschädigt oder unbrauchbar werden.
+   >Entfernen Sie den vollständigen Blob im `Principal` -Tag für eine Prinzipal-ID oder die Richtlinien-XML kann beschädigt oder unbrauchbar werden.
 
    ```xml
    <ns2:Principal PrincipalNameType="USER">
@@ -205,7 +206,7 @@ Führen Sie folgende Schritte aus, um Dokumentsicherheitsdaten für eine Prinzip
 
    >[!NOTE]
    >
-   Administratoren können über die Verwaltungskonsole in **[!UICONTROL Dienste > Dokumentensicherheit > Meine Richtlinien]** Benutzerdaten aus persönlichen Richtlinien anderer Benutzer suchen, darauf zugreifen und sie löschen.
+   >Administratoren können über die Verwaltungskonsole in **[!UICONTROL Dienste > Dokumentensicherheit > Meine Richtlinien]** Benutzerdaten aus persönlichen Richtlinien anderer Benutzer suchen, darauf zugreifen und sie löschen.
 
 1. Löschen Sie die Daten für die Prinzipal-ID aus der Benutzerverwaltungsdatenbank. Detaillierte Schritte finden Sie unter [Benutzerverwaltung für Formulare | Umgang mit Benutzerdaten](/help/forms/using/user-management-handling-user-data.md).
 1. Starten Sie den AEM Forms-Server.

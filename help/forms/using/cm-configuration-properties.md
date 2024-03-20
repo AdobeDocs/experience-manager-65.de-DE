@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: c9c007d0-c545-4738-b11b-4c50986342ee
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
-workflow-type: ht
-source-wordcount: '845'
-ht-degree: 100%
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 96%
 
 ---
 
@@ -245,13 +246,13 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
   </tr>
   <tr>
    <td><p>Brief-Cache-Größe</p> </td>
-   <td><p>Geben Sie die maximale Anzahl von Briefen an, die im Cache gespeichert werden sollen.</p> <p>Das Ändern dieses Werts führt zur Bereinigung  <code>in-memory</code> cache.</p> </td>
+   <td><p>Geben Sie die maximale Anzahl von Briefen an, die im Cache gespeichert werden sollen.</p> <p>Eine Änderung dieses Werts führt zur Bereinigung von <code>in-memory</code> zwischenspeichern.</p> </td>
    <td><p>100</p> </td>
    <td><p>Jeder numerische Wert</p> </td>
   </tr>
   <tr>
    <td><p>Brief-Cache aktivieren</p> </td>
-   <td><p>Brief-Cache aktivieren/deaktivieren</p> <p>Das Ändern dieses Werts führt zur Bereinigung  <code>in-memory </code> cache.</p> </td>
+   <td><p>Brief-Cache aktivieren/deaktivieren</p> <p>Eine Änderung dieses Werts führt zur Bereinigung von <code>in-memory </code> zwischenspeichern.</p> </td>
    <td><p>Ja</p> </td>
    <td><p>true/false</p> </td>
   </tr>
@@ -287,7 +288,7 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
   </tr>
   <tr>
    <td><p>Debug-Ordner </p> <p> </p> </td>
-   <td>Ordnerpfad im Dateisystem für das Debugging. Ist der Ordner nicht  <code>exists</code>, es werden keine Debug-Dumps generiert.</td>
+   <td>Ordnerpfad im Dateisystem für das Debugging. Wenn der Ordner nicht <code>exists</code>, werden keine Debug-Dumps generiert.</td>
    <td>acm.debugDirectory</td>
    <td> </td>
   </tr>

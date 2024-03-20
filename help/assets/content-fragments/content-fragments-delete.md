@@ -4,10 +4,11 @@ description: Lesen Sie diese wichtigen Überlegungen, bevor Sie Ihre Richtlinien
 feature: Content Fragments
 role: User
 exl-id: 6212457e-a171-4c33-8d19-54c26516e981
-source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
-workflow-type: ht
-source-wordcount: '509'
-ht-degree: 100%
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '510'
+ht-degree: 86%
 
 ---
 
@@ -28,18 +29,18 @@ In Bezug auf die Berechtigung zum Löschen müssen Inhaltsfragmente aus zwei Per
 
 2. **Die verschiedenen Unterentitäten, die ein Inhaltsfragment bilden. Z. B. Varianten, Unterknoten.**
 
-   Die grundlegende Funktionsweise des Inhaltsfragmente-Editors erfordert, dass diese temporären Unterelemente gelöscht werden können. Beispielsweise wenn Varianten bearbeitet oder Metadaten oder verknüpfte Inhalte verwaltet werden.
+   Die grundlegende Funktionsweise des Inhaltsfragment-Editors erfordert, dass solche temporären Unterelemente gelöscht werden können. Beispielsweise wenn Varianten bearbeitet oder Metadaten oder verknüpfte Inhalte verwaltet werden.
 
    * **Nutzungsszenario:** Ein Benutzer, der ein Inhaltsfragment bearbeiten oder aktualisieren muss, **aber kein ganzes Fragment löschen darf**.
    * **Berechtigungen:** Siehe [Nur für Editor-Funktionen erforderliche Berechtigungen](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
 >
->Wenn ein Benutzer keine Berechtigungen zum [Löschen](/help/sites-administering/security.md#actions) besitzt, wird der Inhaltsfragmente-Editor im *schreibgeschützten* Modus geöffnet.
+>Wenn ein Benutzer über keine [Löschen](/help/sites-administering/security.md#actions) -Berechtigungen verwenden, wird der Inhaltsfragment-Editor in *schreibgeschützt* -Modus.
 
 >[!NOTE]
 >
->Siehe auch [Prüfen von Benutzerverwaltungsvorgängen in AEM](/help/sites-administering/audit-user-management-operations.md).
+>Siehe auch [Benutzerverwaltungsvorgänge in AEM überprüfen](/help/sites-administering/audit-user-management-operations.md).
 
 ## Nur für Editor-Funktionen erforderliche Berechtigungen {#permissions-required-for-editor-functionality-only}
 
@@ -49,11 +50,11 @@ Beispielsweise wenn Varianten bearbeitet oder Metadaten oder verknüpfte Inhalte
 
 >[!NOTE]
 >
->Die zum Bearbeiten oder Aktualisieren eines Inhaltsfragments benötigten Rechte zum Löschen erhalten sie mit der Löschberechtigung, die[ über die Benutzer- und/oder Gruppenverwaltung zugewiesen wird](/help/sites-administering/security.md#managing-permissions).
+>Die zum Bearbeiten/Aktualisieren eines Inhaltsfragments erforderlichen Löschberechtigungen sind in der Löschberechtigung enthalten [zugewiesen über Benutzer- und/oder Gruppenverwaltung](/help/sites-administering/security.md#managing-permissions).
 
-Die zum Bearbeiten oder Aktualisieren eines Fragments benötigten Rechte müssen auf den Knoten, der das Fragment enthält, oder einen entsprechenden übergeordneten Knoten angewendet werden (auf allen Ebenen unter `/content/dam`). Wenn die Zuweisung an einen übergeordneten Knoten erfolgt, werden die Berechtigungen auf allen Knoten in dieser Verzweigung angewendet.
+Die zum Bearbeiten oder Aktualisieren eines Fragments benötigten Rechte müssen auf den Knoten, der das Fragment enthält, oder einen entsprechenden übergeordneten Knoten angewendet werden (auf allen Ebenen unter `/content/dam`). Wenn sie einem übergeordneten Knoten zugewiesen sind, werden die Berechtigungen auf alle Knoten in diesem Zweig angewendet.
 
-Beispiel: Ein Ordner, der alle Inhaltsfragmente enthält, zum Beispiel:
+Beispiel: Ein Ordner, der alle Inhaltsfragmente enthält, z. B.:
 
 * `/content/dam/contentfragments`
 
@@ -63,11 +64,11 @@ Beispiel: Ein Ordner, der alle Inhaltsfragmente enthält, zum Beispiel:
 >
 >Allerdings wird die Löschberechtigung dadurch auch für *alle* anderen Asset-Typen gewährt.
 
-Damit einem bestimmten Benutzer und/oder einer bestimmten Benutzergruppe das Bearbeiten oder Aktualisieren von Inhaltsfragmenten erlaubt wird, müssen folgende Voraussetzungen erfüllt werden:
+Die Berechtigungsvoraussetzungen, die es bestimmten Benutzenden und/oder einer bestimmten Gruppe gestattet, ein Inhaltsfragment zu bearbeiten/zu aktualisieren, sind:
 
 >[!NOTE]
 >
->In dieser Liste werden alle erforderlichen Rechte mit Ausnahme der Löschberechtigungen aufgeführt.
+>Diese Liste zeigt alle erforderlichen Berechtigungen, nicht nur die Berechtigungen zum Löschen.
 
 * Für die Inhaltsfragmentknoten oder -ordner:
 

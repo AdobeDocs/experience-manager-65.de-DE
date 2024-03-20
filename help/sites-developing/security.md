@@ -2,10 +2,11 @@
 title: Sicherheit
 description: Anwendungssicherheit beginnt in der Entwicklungsphase
 exl-id: c4f7f45f-224b-4fc3-b4b0-f5b21b8a466f
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 27%
+source-wordcount: '392'
+ht-degree: 48%
 
 ---
 
@@ -17,23 +18,23 @@ Anwendungssicherheit beginnt in der Entwicklungsphase. Adobe empfiehlt die Anwen
 
 Gemäß dem Prinzip der geringsten Rechte empfiehlt Adobe, dass jeder Zugriff auf das Repository über die an die Benutzeranfrage gebundene Sitzung und eine angemessene Zugriffskontrolle erfolgt.
 
-## Protect gegen Cross-Site Scripting (XSS) {#protect-against-cross-site-scripting-xss}
+## Schützen vor Cross-Site-Scripting (XSS) {#protect-against-cross-site-scripting-xss}
 
-Cross-Site Scripting (XSS) ermöglicht es Angreifern, Code in Webseiten einzufügen, die von anderen Benutzern angesehen werden. Diese Sicherheitslücke kann von böswilligen Webbenutzern ausgenutzt werden, um Zugriffskontrollen zu umgehen.
+Mit Cross-Site-Scripting (XSS) können Angreifer Code in Web-Seiten einfügen, die von anderen Benutzenden aufgerufen werden. Diese Sicherheitslücke kann von böswilligen Web-Benutzenden ausgenutzt werden, um die Zugriffssteuerung zu umgehen.
 
-AEM filtert prinzipiell sämtliche vom Benutzer bereitgestellten Inhalte bei der Ausgabe. Die Prävention von XSS hat sowohl bei der Entwicklung als auch beim Testen höchste Priorität.
+AEM filtert prinzipiell sämtliche vom Benutzer bereitgestellten Inhalte bei der Ausgabe. Bei Entwicklung und Tests hat das Vermeiden von XSS höchste Priorität.
 
 Der von AEM bereitgestellte XSS-Schutzmechanismus basiert auf dem [AntiSamy Java™ Library](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project) von [OWASP (Open Web Application Security Project)](https://owasp.org/). Die standardmäßige AntiSamy-Konfiguration finden Sie unter
 
 `/libs/cq/xssprotection/config.xml`
 
-Es ist wichtig, dass Sie diese Konfiguration an Ihre eigenen Sicherheitsanforderungen anpassen, indem Sie die Konfigurationsdatei überlagern. Der Beamte [AntiSamy-Dokumentation](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project) liefert Ihnen alle Informationen, die Sie zur Implementierung Ihrer Sicherheitsanforderungen benötigen.
+Es ist wichtig, dass Sie diese Konfiguration an Ihre eigenen Sicherheitsanforderungen anpassen, indem Sie die Konfigurationsdatei überlagern. Der Beamte [AntiSamy-Dokumentation](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project) stellt Ihnen alle Informationen zur Verfügung, die Sie zur Implementierung Ihrer Sicherheitsanforderungen benötigen.
 
 >[!NOTE]
 >
 >Adobe empfiehlt, immer auf die XSS-Schutz-API zuzugreifen, indem Sie die [Von AEM bereitgestellte XSSAPI](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html).
 
-Außerdem eine Webanwendungs-Firewall, z. B. [mod_security für Apache](https://www.modsecurity.org)kann eine zuverlässige, zentrale Kontrolle über die Sicherheit der Bereitstellungsumgebung bieten und vor zuvor nicht erkannten Cross-Site-Scripting-Angriffen schützen.
+Auch kann eine Firewall in der Web-Anwendung wie [mod_security für Apache](https://www.modsecurity.org) die Sicherheit der Bereitstellungsumgebung zuverlässig und zentral steuern und diese vor bisher unerkannten Cross-Site-Scripting-Angriffen schützen.
 
 ## Zugang zu Cloud Service-Informationen {#access-to-cloud-service-information}
 

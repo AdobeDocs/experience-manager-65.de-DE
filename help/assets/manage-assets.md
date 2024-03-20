@@ -7,10 +7,11 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '10038'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -578,7 +579,7 @@ So löschen Sie ein Asset oder einen Ordner mit einem Asset:
 
    * Wenn das Asset keine Referenzen aufweist, wird es gelöscht.
 
-   * Wenn das Asset Verweise enthält, werden Sie durch eine Fehlermeldung darüber informiert, dass **Ein oder mehrere Assets werden referenziert**. Sie können **[!UICONTROL Löschen erzwingen]** oder **[!UICONTROL Abbrechen]**.
+   * Wenn das Asset Verweise enthält, werden Sie durch eine Fehlermeldung darüber informiert, dass **Ein oder mehrere Assets referenziert werden**. Sie können **[!UICONTROL Löschen erzwingen]** oder **[!UICONTROL Abbrechen]** auswählen.
 
    >[!NOTE]
    >
@@ -655,7 +656,7 @@ Einfache, erweiterte und benutzerdefinierte Suchen zur Erkennung und Verwendung 
 
 Schnellaktion-Symbole sind jeweils nur für ein Asset verfügbar. Führen Sie je nach Gerät folgende Aktionen durch, um die Symbole der Schnellaktionen anzuzeigen:
 
-* Touch-Geräte: Tippen und halten. Beispielsweise können Sie in einem iPad ein Asset auswählen und halten, damit die Schnellaktionen angezeigt werden.
+* Touch-Geräte: Tippen und halten. Auf einem iPad können Sie zum Beispiel ein Asset auswählen und gedrückt halten, damit die Schnellaktionen angezeigt werden.
 * Nicht-Touch-Geräte: Mit Mauszeiger darüberfahren. Auf einem Desktop-Gerät wird beispielsweise eine Schnellzugriffsleiste angezeigt, wenn Sie mit dem Mauszeiger über die Miniatur des Assets fahren.
 
 ### Navigieren und Auswählen von Assets {#navigating-and-selecting-assets}

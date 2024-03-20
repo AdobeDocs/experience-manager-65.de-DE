@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2837'
-ht-degree: 88%
+ht-degree: 91%
 
 ---
 
@@ -56,7 +57,7 @@ Eine Site oder Live Copy verweist auf ein Gebiet, das die Aktivitäten enthält,
 
 ## Anwendungsfälle {#use-cases}
 
-Je nach Anwendungsfall können Sie die Multisite-Unterstützung für zielgerichtete Inhalte auf verschiedene Arten einrichten. In diesem Abschnitt wird beschrieben, wie diese Einrichtung theoretisch für eine Marke funktioniert. Darüber hinaus können Sie unter [Beispiel: Zielgerichtete Inhalte auf geografischer Basis](#example-targeting-content-based-on-geography) eine tatsächliche Anwendung von zielgerichteten Inhalten auf mehreren Sites sehen.
+Für zielgerichtete Inhalte können Sie je nach Anwendungsfall auf verschiedene Arten Multisite-Unterstützung einrichten. In diesem Abschnitt wird beschrieben, wie diese Einrichtung theoretisch für eine Marke funktioniert. Darüber hinaus können Sie unter [Beispiel: Zielgerichtete Inhalte auf geografischer Basis](#example-targeting-content-based-on-geography) eine tatsächliche Anwendung von zielgerichteten Inhalten auf mehreren Sites sehen.
 
 Zielgerichtete Inhalte werden in sogenannte Gebiete eingeschlossen, die den Umfang für Sites oder Seiten definieren. Diese Gebiete werden auf Markenebene definiert. Eine Marke kann mehrere Gebiete enthalten. Gebiete können sich von Marke zu Marke unterscheiden. So kann beispielsweise eine Marke nur das primäre Gebiet enthalten, das für alle Marken gilt, während eine andere Marke hingegen zeitgleich mehrere Gebiete enthält (beispielsweise mit Unterschieden je nach Region). Marken müssen somit nicht zwingend die gleichen Gebiete aufweisen.
 
@@ -128,9 +129,9 @@ Sie können die Vererbung jederzeit aussetzen oder vollständig trennen. Sie kö
 
 ### Erstellen eines Bereichs bzw. eines Gebiets als Live Copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
-In AEM haben Sie die Möglichkeit, einen Bereich zu erstellen oder einen Bereich als Live Copy zu erstellen. Beim Erstellen eines Bereichs werden Aktivitäten und alles, was zu diesen Aktivitäten gehört, wie Angebote, Erlebnisse usw. gruppiert. Sie erstellen ein Gebiet, in dem Sie entweder einen völlig eigenen Satz zielgerichteter Inhalte erstellen oder einen Satz zielgerichteter Inhalte freigeben möchten.
+In AEM haben Sie die Möglichkeit, einen Bereich zu erstellen oder einen Bereich als Live Copy zu erstellen. Beim Erstellen eines Bereichs werden Aktivitäten und alles, was zu diesen Aktivitäten gehört, wie Angebote, Erlebnisse usw. gruppiert. Sie erstellen ein Gebiet, wenn Sie entweder einen völlig eigenen Satz von zielgerichteten Inhalten erstellen oder einen Satz von zielgerichteten Inhalten freigeben möchten.
 
-Wenn Sie jedoch über MSM eine Vererbung zwischen den beiden Sites eingerichtet haben, sollten Sie die Aktivitäten übernehmen. In diesem Fall erstellen Sie ein Gebiet als Live Copy, wobei Y eine Live Copy von X ist und daher alle Aktivitäten übernimmt.
+Wenn Sie jedoch über MSM eine Vererbung zwischen den beiden Sites eingerichtet haben, möchten Sie die Aktivitäten möglicherweise vererben. In diesem Fall sollten Sie ein Gebiet als Live Copy erstellen, bei der Y eine Live Copy von X ist und somit auch alle Aktivitäten übernimmt.
 
 >[!NOTE]
 >
@@ -153,9 +154,9 @@ Gebiete können aktivitäten- und angebotsübergreifend gelten. Nach der Erstell
 
 >[!NOTE]
 >
->Der Standardbereich Master Area wird standardmäßig ausgeblendet, wenn Sie auf den Namen einer Marke klicken **bis** Erstellen Sie einen anderen Bereich. Wählen Sie entweder in der **Aktivitäts-** oder der **Angebotskonsole** eine Marke aus, wird Ihnen die **Gebietskonsole** angezeigt.
+>Der Standardbereich Master Area wird standardmäßig ausgeblendet, wenn Sie auf den Namen einer Marke klicken **bis** Erstellen Sie einen anderen Bereich. Wenn Sie dann entweder in der **Aktivitäts-** oder der **Angebotskonsole** eine Marke auswählen, wird Ihnen die **Gebietskonsole** angezeigt.
 
-So erstellen Sie einen Bereich:
+So löschen Sie ein Gebiet:
 
 1. Navigieren Sie zu **Personalisierung** > **Aktivitäten** oder **Angebote** und dann zu Ihrer Marke.
 1. Klicks **Bereich erstellen**.

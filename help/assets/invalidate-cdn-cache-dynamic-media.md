@@ -8,9 +8,10 @@ content-type: reference
 role: User, Admin
 feature: CDN Cache
 exl-id: 23d3c274-0736-49f7-8d44-a56a55cfd06d
-source-git-commit: b61157b0e9afa49ef72150ae0c1703a959d154be
-workflow-type: ht
-source-wordcount: '1349'
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '1372'
 ht-degree: 100%
 
 ---
@@ -50,7 +51,6 @@ Dynamic Media-Assets werden vom CDN (Content Delivery Network) zwischengespeiche
    >Die Vorlage für CDN-Invalidierung kann Text mit bis zu 2500 Zeichen speichern.
 
 1. Klicken Sie in der rechten oberen Ecke der Seite **[!UICONTROL Vorlage für CDN-Invalidierung]** auf **[!UICONTROL Speichern]** und dann auf **[!UICONTROL OK]**.<br>
-
    *Teil 2 von 2: Einrichten von CDN-Invalidierunsoptionen*
    <br>
 

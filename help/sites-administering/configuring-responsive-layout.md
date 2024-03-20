@@ -7,7 +7,8 @@ topic-tags: operations
 content-type: reference
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 95%
@@ -22,7 +23,7 @@ Ein [responsives Layout](/help/sites-authoring/responsive-layout.md) ist eine Me
 >
 >Dieser Ansatz ist vergleichbar mit den Mechanismen für [mobile Websites](/help/sites-developing/mobile-web.md), die adaptives Webdesign nutzen (in erster Linie für die klassische Benutzeroberfläche).
 
-Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination von Mechanismen ermöglicht:
+Das responsive Layout für Ihre Seiten wird von AEM durch eine Kombination von Mechanismen ermöglicht:
 
 * [**Layout-Container-Komponente**](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
 
@@ -235,7 +236,7 @@ Die Basisrasterdefinition finden Sie unter:
 
 Die Größe von Komponenten in einem responsiven Container wird (zusammen mit den entsprechenden HTML-DOM-Elementen) entsprechend der Größe des responsiven Rasters geändert. Daher empfehlen wir in diesen Fällen, Definitionen von (enthaltenen) DOM-Elementen mit fester Breite zu vermeiden (oder zu aktualisieren).
 
-Beispiel:
+Zum Beispiel:
 
 * Vorher:
 
@@ -257,7 +258,7 @@ Jede Änderung der Größe einer Komponente innerhalb des Rasters löst mindeste
 
 Um die Größe eines adaptiven Bildes in einem responsiven Raster ordnungsgemäß zu ändern und die Inhalte des Bildes zu aktualisieren, müssen Sie den Listener `afterEdit`, dessen Wert auf `REFRESH_PAGE` festgelegt ist, zur `EditConfig`-Datei aller enthaltenen Komponenten hinzufügen.
 
-Beispiel:
+Zum Beispiel:
 
 `<cq:listeners jcr:primaryType="cq:EditListenersConfig" afteredit="REFRESH_PAGE" />`
 

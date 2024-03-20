@@ -2,9 +2,10 @@
 title: Der Link-Checker
 description: Der Link-Checker hilft bei der Validierung sowohl interner als auch externer Links und ermöglicht das Neuschreiben von Links.
 exl-id: 8ec4c399-b192-46fd-be77-3f49b83ce711
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '969'
 ht-degree: 92%
 
 ---

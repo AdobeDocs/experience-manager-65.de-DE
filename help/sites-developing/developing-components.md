@@ -8,10 +8,11 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3246'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -208,7 +209,7 @@ Um ein Widget zur Verwendung in einem Komponentendialogfeld für die Touch-optim
 >
 >Ausführliche Informationen zur Granite-Benutzeroberfläche finden Sie in der [Dokumentation zur Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
-Wenn Sie das Dialogfeld für einen einfachen Container für ein Formularelement halten, können Sie den Primärinhalt Ihres Dialogfeldinhalts als auch Formularfelder sehen. Zum Erstellen eines Formularfelds müssen Sie einen Ressourcentyp erstellen. Dies entspricht dem Erstellen einer Komponente. Um Ihnen bei dieser Aufgabe zu helfen, bietet die Granite-Benutzeroberfläche eine generische Feldkomponente, von der eine Vererbung möglich ist (mithilfe von `sling:resourceSuperType`):
+Wenn Sie das Dialogfeld für einen einfachen Container für ein Formularelement halten, können Sie den Primärinhalt Ihres Dialogfeldinhalts auch als Formularfelder sehen. Zum Erstellen eines Formularfelds müssen Sie einen Ressourcentyp erstellen. Dies entspricht dem Erstellen einer Komponente. Um Ihnen bei dieser Aufgabe zu helfen, bietet die Granite-Benutzeroberfläche eine generische Feldkomponente, von der eine Vererbung möglich ist (mithilfe von `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -342,13 +343,13 @@ Wenn Ihre neue Komponente auf Inhalte von anderen Seiten verweist, können Sie �
 
 Die Standardinstallation von AEM überprüft nur die Referenzkomponente. Um Ihre Komponente hinzuzufügen, müssen Sie die Referenzkonfiguration für das OSGi-Bundle **WCM Authoring Content** konfigurieren.
 
-Erstellen Sie einen Eintrag in der Definition und geben Sie Ihre Komponente zusammen mit der zu prüfenden Eigenschaft an. Zum Beispiel:
+Erstellen Sie einen Eintrag in der Definition und geben Sie Ihre Komponente zusammen mit der zu prüfenden Eigenschaft an. z. B.:
 
 `/apps/<*your-Project*>/components/reference@parentPath`
 
 >[!NOTE]
 >
->Beim Arbeiten mit AEM gibt es mehrere Methoden zum Verwalten der Konfigurationseinstellungen für diese Dienste. Siehe [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md) für weitere Details und empfohlene Vorgehensweisen.
+>In AEM können Sie die Konfigurationseinstellungen für solche Services auf unterschiedliche Weise verwalten. Weitere Details und Informationen zur empfohlenen Vorgehensweise finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
 ## Aktivieren und Hinzufügen Ihrer Komponente zum Absatzsystem {#enabling-and-adding-your-component-to-the-paragraph-system}
 

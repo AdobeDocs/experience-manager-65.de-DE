@@ -1,14 +1,15 @@
 ---
 title: Internationalisierung von UI-Zeichenfolgen
-description: Java&trade; und JavaScript-APIs ermöglichen es Ihnen, Zeichenfolgen zu internationalisieren.
+description: Mit Java&trade- und JavaScript-APIs können Sie Zeichenfolgen internationalisieren.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 exl-id: bc5b1cb7-a011-42fe-8759-3c7ee3068aad
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1091'
 ht-degree: 35%
 
 ---
@@ -90,7 +91,7 @@ i18n.get("Request","A noun, as in a request for a web page");
 
 #### Einschließen von Variablen in lokalisierten Sätzen {#including-variables-in-localized-sentences}
 
-Sie können Variablen in die lokalisierte Zeichenfolge einfügen, um dem Satz Kontextbedeutung zu geben. Ein Beispiel: Nach der Anmeldung bei einer Webanwendung wird auf der Homepage folgende Nachricht angezeigt: „Willkommen zurück, Administrator. Sie haben zwei Nachrichten in Ihrem Posteingang.&quot; Der Seitenkontext bestimmt den Benutzernamen und die Anzahl der Nachrichten.
+Sie können Variablen in die lokalisierte Zeichenfolge einfügen, um dem Satz Kontextbedeutung zu geben. Ein Beispiel: Nach der Anmeldung bei einer Webanwendung wird auf der Homepage folgende Nachricht angezeigt: „Willkommen zurück, Administrator. Ihr Posteingang enthält zwei Nachrichten.&quot; Der Seitenkontext bestimmt den Benutzernamen und die Anzahl der Nachrichten.
 
 [Im Wörterbuch](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings)festgelegt ist, werden die Variablen in Zeichenfolgen in Klammern als Indizes dargestellt. Geben Sie die Werte der Variablen als Argumente der `get`-Methode an. Die Argumente werden nach dem Übersetzungshinweis platziert und die Indizes entsprechen der Reihenfolge der Argumente:
 
@@ -113,7 +114,7 @@ Die `I18N` -Klasse definiert eine statische `get` -Methode, die nützlich ist, w
 
 ### Internationalisieren von Zeichenfolgen in JavaScript-Code {#internationalizing-strings-in-javascript-code}
 
-Mit der JavaScript-API können Sie Zeichenfolgen auf dem Client lokalisieren. Als [Java™ und JSP](#internationalizing-strings-in-java-and-jsp-code) -Code, können Sie mit der JavaScript-API zu lokalisierende Zeichenfolgen identifizieren, Lokalisierungshinweise bereitstellen und Variablen in die lokalisierten Zeichenfolgen aufnehmen.
+Mit der JavaScript-API können Sie Zeichenfolgen auf dem Client lokalisieren. Wie bei [Java™ und JSP](#internationalizing-strings-in-java-and-jsp-code) -Code, können Sie mit der JavaScript-API zu lokalisierende Zeichenfolgen identifizieren, Lokalisierungshinweise bereitstellen und Variablen in die lokalisierten Zeichenfolgen aufnehmen.
 
 Die `granite.utils` [Client-Bibliotheksordner](/help/sites-developing/clientlibs.md) stellt die JavaScript-API bereit. Um die API zu verwenden, fügen Sie diesen Client-Bibliotheksordner in Ihre Seite ein. Lokalisierungsfunktionen verwenden den `Granite.I18n`-Namespace.
 
@@ -142,7 +143,7 @@ Die Funktionsparameter unterscheiden sich von der Java™ I18n.get -Methode:
 * Der zweite Parameter ist ein Array von Werten, die in das Zeichenfolgenliteral eingefügt werden sollen.
 * Der dritte Parameter ist der Lokalisierungshinweis.
 
-Im folgenden Beispiel wird JavaScript verwendet, um den &quot;Welcome back Administrator&quot;zu lokalisieren. Sie haben zwei Nachrichten in Ihrem Posteingang.&quot; Satz:
+Im folgenden Beispiel wird JavaScript verwendet, um den &quot;Welcome back Administrator&quot;zu lokalisieren. Ihr Posteingang enthält zwei Nachrichten.&quot; Satz:
 
 ```
 Granite.I18n.setLocale("fr");

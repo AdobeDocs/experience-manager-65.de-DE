@@ -2,10 +2,11 @@
 title: Standardkomponenten
 description: Adobe Experience Manager verfügt über verschiedene vordefinierte Komponenten, die Website-Autoren umfangreiche Funktionen bieten.
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 78%
+source-wordcount: '420'
+ht-degree: 75%
 
 ---
 
@@ -32,7 +33,7 @@ Sie können eine Komponente auswählen und an die gewünschte Stelle auf Ihrer S
 
 * [Inhalt bearbeiten – Vollbildmodus](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-Weitere Informationen zum Hinzufügen von Komponenten zu einer Seite finden Sie unter [Bearbeiten von Seiteninhalten](/help/sites-authoring/editing-content.md).
+Weitere Informationen zum Hinzufügen von Komponenten zu einer Seite finden Sie unter [Bearbeiten des Seiteninhalts](/help/sites-authoring/editing-content.md).
 Die Komponenten sind nach verschiedenen Kategorien (Komponentengruppen) sortiert. Beispiele für solche Gruppen sind:
 
 * **We.Retail**: Enthält die Kernkomponenten, die für die Verwendung mit der [We.Retail-Referenzimplementierung](/help/sites-developing/we-retail.md) zugänglich sind.

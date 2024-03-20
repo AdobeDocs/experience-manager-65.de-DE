@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: aaacee66-6bbe-498b-91b1-3a9545ff1aeb
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1884'
-ht-degree: 40%
+ht-degree: 43%
 
 ---
 
@@ -21,13 +22,13 @@ Dieses Tutorial ist ein Schritt in der Reihe [Erstellen Sie Ihre erste interakti
 
 Nachdem Sie alle Bausteine wie Formulardatenmodell, Dokumentfragmente, Vorlagen und Designs für die Webversion erstellt haben, können Sie mit der Erstellung einer interaktiven Kommunikation beginnen.
 
-Interaktive Kommunikation kann über zwei Kanäle bereitgestellt werden: Druck und Web. Sie können auch eine interaktive Kommunikation mit dem Druckkanal als Master erstellen. Die Option &quot;Als Master drucken&quot;für den Webkanal stellt sicher, dass der Inhalt, die Vererbung und die Datenbindung des Webkanals vom Druckkanal abgeleitet werden. Außerdem wird sichergestellt, dass die im Druckkanal vorgenommenen Änderungen im Webkanal synchronisiert werden. Die Autoren der interaktiven Kommunikation dürfen jedoch die Vererbung für bestimmte Komponenten im Webkanal unterbrechen.
+Eine interaktive Kommunikation kann über zwei Kanäle bereitgestellt werden: den Druckkanal und den Web-Kanal. Sie können auch eine interaktive Kommunikation mit dem Druckkanal als Primär erstellen. Die Option &quot;Als Master drucken&quot;für den Webkanal stellt sicher, dass der Inhalt, die Vererbung und die Datenbindung des Webkanals vom Druckkanal abgeleitet werden. Außerdem wird sichergestellt, dass die im Druckkanal vorgenommenen Änderungen im Webkanal synchronisiert werden. Die Autoren der interaktiven Kommunikation dürfen jedoch die Vererbung für bestimmte Komponenten im Webkanal unterbrechen.
 
 Dieses Tutorial führt Sie durch die Schritte zum Erstellen interaktiver Kommunikation für Druck- und Webkanäle. Am Ende dieses Tutorials können Sie Folgendes:
 
-* Erstellen der interaktiven Kommunikation für den Druckkanal
-* Erstellen der interaktiven Kommunikation für den Webkanal
-* Erstellen Sie Print- und Web-interaktive Kommunikation mit Print als Master.
+* Erstellen einer interaktiven Kommunikation für den Druckkanal
+* Erstellen einer interaktiven Kommunikation für den Web-Kanal
+* Erstellen einer interaktiven Kommunikation für den Druck- und Web-Kanal mit der Option zum Drucken als Primär
 
 ## Erstellen interaktiver Kommunikation für Druck und Web ohne Synchronisierung {#create-interactive-communications-for-print-and-web-with-no-synchronization}
 
@@ -64,9 +65,9 @@ Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutoria
 
    | Dokumentfragment | Zielbereich |
    |---|---|
-   | bill_details_first_ic | BillDetails |
-   | customer_details_first_ic | CustomerDetails |
-   | bill_summary_first_ic | BillSummary |
+   | bill_details_first_ic | Rechnungsdetails |
+   | customer_details_first_ic | Kundendetails |
+   | bill_summary_first_ic | Rechnungsübersicht |
    | summary_charges_first_interactive_communication | Gebühren |
 
    ![Dokumentfragmente für interaktive Kommunikation](assets/create_first_ic_doc_fragments_new.png)
@@ -128,9 +129,9 @@ Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutoria
 
    | Dokumentfragment | Zielbereich |
    |---|---|
-   | bill_details_first_ic | BillDetails |
-   | customer_details_first_ic | CustomerDetails |
-   | bill_summary_first_ic | BillSummary |
+   | bill_details_first_ic | Rechnungsdetails |
+   | customer_details_first_ic | Kundendetails |
+   | bill_summary_first_ic | Rechnungsübersicht |
    | summary_charges_first_interactive_communication | Gebühren |
 
 1. Auswählen **Zusammenfassung der Gebühren** Zielbereich und wählen Sie **+** , um **Diagramm** -Komponente.

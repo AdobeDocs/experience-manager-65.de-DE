@@ -7,10 +7,11 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: bd0589e2-b15a-4f0e-869c-2da4760b1ff4
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 78%
+ht-degree: 80%
 
 ---
 
@@ -40,7 +41,7 @@ So konfigurieren Sie die asynchronen Übermittlung für ein adaptives Formular:
    *  **[!UICONTROL Zu URL umleiten]**: Leitet bei Übermittlung des Formulars an die angegebene URL bzw. auf die angegebene Seite um.  Sie können eine URL angeben oder mit der Funktion zum Durchsuchen den Pfad zu einer Seite im Feld **[!UICONTROL Umleitungs-URL/Pfad]** wählen.
    * **[!UICONTROL Nachricht anzeigen]**: Zeigt eine Meldung beim Senden des Formulars an. Sie können eine Nachricht in das Textfeld unterhalb der Option Nachricht anzeigen eingeben. Das Textfeld unterstützt Rich-Text-Formatierung.
 
-1. Auswählen ![check-button1](assets/check-button1.png) , um die Eigenschaften zu speichern.
+1. Wählen Sie ![check-button1](assets/check-button1.png), um die Eigenschaften zu speichern.
 
 ## Funktionsweise der asynchronen Übermittlung {#how-asynchronous-submission-works}
 
@@ -103,7 +104,7 @@ Personen, die Formulare schreiben und entwickeln, können im Code-Editor formula
 Führen Sie die folgenden Schritte aus, um im Codeeditor Regeln zu schreiben, um die Erfolgs- und Fehlerereignisse zu verarbeiten.
 
 1. Öffnen Sie das adaptive Formular im Authoring-Modus, wählen Sie ein beliebiges Formularobjekt aus und wählen Sie ![edit-rules1](assets/edit-rules1.png) , um den Regeleditor zu öffnen.
-1. Auswählen **[!UICONTROL Formular]** Wählen Sie in der Formularobjektstruktur die Option **[!UICONTROL Erstellen]**.
+1. Wählen Sie **[!UICONTROL Formular]** in der Struktur „Formularobjekte“ und dann **[!UICONTROL Erstellen]**.
 1. Wählen Sie **[!UICONTROL Code-Editor]** in der Dropdown-Liste zur Auswahl des Modus.
 1. Wählen Sie im Code-Editor **[!UICONTROL Code bearbeiten]**. Auswählen **[!UICONTROL Bearbeiten]** im Bestätigungsdialogfeld angezeigt.
 1. Wählen Sie **[!UICONTROL Übermittlung erfolgreich]** oder **[!UICONTROL Fehler beim Einreichen]** aus der Dropdown-Liste **[!UICONTROL Ereignis]**.

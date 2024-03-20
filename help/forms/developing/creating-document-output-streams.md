@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '18956'
-ht-degree: 78%
+source-wordcount: '18860'
+ht-degree: 82%
 
 ---
 
@@ -304,7 +305,7 @@ Erstellen Sie ein PDF-Dokument mithilfe der Output API (Web Service):
    * Erstellen Sie mithilfe des Standardkonstruktors ein `OutputServiceClient`-Objekt.
    * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `OutputServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -316,8 +317,8 @@ Erstellen Sie ein PDF-Dokument mithilfe der Output API (Web Service):
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt dient zum Speichern von XML-Daten, die mit dem PDF-Dokument zusammengeführt werden.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und ihm einen Zeichenfolgenwert übergeben, der den Dateispeicherort der XML-Datei mit den Formulardaten darstellt.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seinem `MTOM`-Feld den Inhalt des Byte-Arrays zuweisen.
 
 1. Festlegen von PDF-Laufzeitoptionen
@@ -562,7 +563,7 @@ So erstellen Sie ein PDF/A-Dokument mithilfe der Ausgabe-API (Webservice):
    * Erstellen Sie mithilfe des Standardkonstruktors ein `OutputServiceClient`-Objekt.
    * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `OutputServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -574,8 +575,8 @@ So erstellen Sie ein PDF/A-Dokument mithilfe der Ausgabe-API (Webservice):
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern von Daten verwendet, die mit dem PDF/A-Dokument zusammengeführt werden.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des zu verschlüsselnden PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des Objekts `System.IO.FileStream` verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge weitergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
 1. Legen Sie PDF/A-Laufzeitoptionen fest.
@@ -614,7 +615,7 @@ So erstellen Sie ein PDF/A-Dokument mithilfe der Ausgabe-API (Webservice):
 1. Rufen Sie die Ergebnisse des Vorgangs ab.
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der einen XML-Dateispeicherort darstellt, welcher Ergebnisdaten enthält. Stellen Sie sicher, dass die Dateinamenerweiterung .xml lautet.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt der `BLOB` -Objekt, das mit Ergebnisdaten von der `OutputServiceService` -Objekt `generatePDFOutput` -Methode (der achte Parameter). Füllen Sie das Byte-Array, indem Sie den Wert der `BLOB` -Objekt `MTOM` -Feld.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt der `BLOB` -Objekt, das mit Ergebnisdaten von der `OutputServiceService` -Objekt `generatePDFOutput` -Methode (der achte Parameter). Füllen Sie das Byte-Array, indem Sie den Wert des Felds `MTOM` des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in die XML-Datei, indem Sie die `System.IO.BinaryWriter` -Objekt `Write` -Methode verwenden und das Byte-Array übergeben.
 
@@ -702,7 +703,7 @@ Sie können das nicht interaktive Formular als PDF-Datei speichern. Das Formular
 
 1. Rufen Sie den Formularentwurf aus Content Services ab (veraltet).
 
-   Rufen Sie die `DocumentManagementServiceClientImpl` -Objekt `retrieveContent` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `retrieveContent` des Objekts `DocumentManagementServiceClientImpl` auf und geben Sie die folgenden Werte weiter:
 
    * Ein Zeichenfolgewert, der den Speicher angibt, dem der Inhalt hinzugefügt wird. Der Standardspeicherort ist `SpacesStore`. Dieser Wert ist ein obligatorischer Parameter.
    * Ein Zeichenfolgenwert, der den vollständig qualifizierten Pfad des abzurufenden Inhalts angibt (z. B. `/Company Home/Form Designs/Loan.xdp`). Dieser Wert ist ein obligatorischer Parameter.
@@ -712,7 +713,7 @@ Sie können das nicht interaktive Formular als PDF-Datei speichern. Das Formular
 
 1. Rendern Sie das nicht interaktive PDF-Formular.
 
-   Rufen Sie die `OutputClient` -Objekt `generatePDFOutput2` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `generatePDFOutput2` des Objekts `OutputClient` auf und geben Sie die folgenden Werte weiter:
 
    * Einen `TransformationFormat`-Aufzählungswert. Um ein PDF-Dokument zu erzeugen, geben Sie `TransformationFormat.PDF` an.
    * Ein Zeichenfolgenwert, der den Inhaltsstamm angibt, in dem sich die zusätzlichen Ressourcen wie Bilder befinden.
@@ -762,7 +763,7 @@ Sie können das nicht interaktive Formular als PDF-Datei speichern. Das Formular
    * Erstellen Sie ein `OutputServiceClient`-Objekt mithilfe des Standardkonstruktors.
    * Erstellen Sie ein `OutputServiceClient.Endpoint.Address`-Objekt mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den Forms-Service angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `OutputServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -789,7 +790,7 @@ Sie können das nicht interaktive Formular als PDF-Datei speichern. Das Formular
 
 1. Rendern Sie das nicht interaktive PDF-Formular.
 
-   Rufen Sie die `OutputServiceClient` -Objekt `generatePDFOutput2` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `generatePDFOutput2` des Objekts `OutputServiceClient` auf und geben Sie die folgenden Werte weiter:
 
    * Einen `TransformationFormat`-Aufzählungswert. Um ein PDF-Dokument zu erzeugen, geben Sie `TransformationFormat.PDF` an.
    * Ein Zeichenfolgenwert, der den Inhaltsstamm angibt, in dem sich die zusätzlichen Ressourcen wie Bilder befinden.
@@ -805,9 +806,9 @@ Sie können das nicht interaktive Formular als PDF-Datei speichern. Das Formular
 1. Führen Sie eine Aktion mit dem Formulardaten-Stream aus.
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen. Übergeben Sie einen Kennzeichenfolgewert, der den Dateispeicherort des interaktiven PDF-Dokuments und den Modus angibt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB`-Objekts speichert, das von der Methode `generatePDFOutput2` abgerufen wurde. Füllen Sie das Byte-Array, indem Sie den Wert der `BLOB` -Objekt `MTOM` Datenelement.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB`-Objekts speichert, das von der Methode `generatePDFOutput2` abgerufen wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter` -Objekt `Write` -Methode verwenden und das Byte-Array übergeben.
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
 
@@ -907,7 +908,7 @@ So übergeben Sie ein aus dem Repository abgerufenes Dokument mithilfe des Ausga
 
 1. Rendern Sie das nicht interaktive PDF-Formular.
 
-   Rufen Sie die `OutputClient` -Objekt `generatePDFOutput2` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `generatePDFOutput2` des Objekts `OutputClient` auf und geben Sie die folgenden Werte weiter:
 
    * Einen `TransformationFormat`-Aufzählungswert. Um ein PDF-Dokument zu erzeugen, geben Sie `TransformationFormat.PDF` an.
    * Ein Zeichenfolgenwert, der den Inhaltsstamm angibt, in dem sich die zusätzlichen Ressourcen wie Bilder befinden. Beispiel: `repository:///Applications/FormsApplication/1.0/FormsFolder/`.
@@ -1014,7 +1015,7 @@ Erstellen eines PDF-Dokuments basierend auf Fragmenten mithilfe der Output Servi
 
 1. Verwenden Sie den Assembler-Service, um das Design des Formulars zu generieren.
 
-   Rufen Sie die `AssemblerServiceClient` -Objekt `invokeDDX` -Methode verwenden und die folgenden erforderlichen Werte übergeben:
+   Rufen Sie die Methode `invokeDDX` des Objekts `AssemblerServiceClient` auf und geben Sie die folgenden erforderlichen Werte weiter:
 
    * Ein `com.adobe.idp.Document`-Objekt, das das zu verwendende DDX-Dokument darstellt.
    * Ein `java.util.Map`-Objekt, das die XDP-Eingabedateien enthält.
@@ -1022,13 +1023,13 @@ Erstellen eines PDF-Dokuments basierend auf Fragmenten mithilfe der Output Servi
 
    Die `invokeDDX`-Methode gibt ein `com.adobe.livecycle.assembler.client.AssemblerResult`-Objekt zurück, welches das assemblierte XDP-Dokument enthält. Um das assemblierte XDP-Dokument abzurufen, gehen Sie wie folgt vor:
 
-   * Rufen Sie die `AssemblerResult` -Objekt `getDocuments` -Methode. Diese Methode gibt ein `java.util.Map`-Objekt zurück.
+   * Rufen Sie die Methode `getDocuments` des Objekts `AssemblerResult` auf. Diese Methode gibt ein `java.util.Map`-Objekt zurück.
    * Iterieren Sie durch das `java.util.Map`-Objekt, bis Sie das resultierende `com.adobe.idp.Document`-Objekt finden.
    * Rufen Sie die `com.adobe.idp.Document` -Objekt `copyToFile` -Methode zum Extrahieren des assemblierten XDP-Dokuments.
 
 1. Verwenden Sie den Output-Service, um das PDF-Dokument zu generieren.
 
-   Rufen Sie die `OutputClient` -Objekt `generatePDFOutput2` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `generatePDFOutput2` des Objekts `OutputClient` auf und geben Sie die folgenden Werte weiter:
 
    * Einen `TransformationFormat`-Aufzählungswert. Um ein PDF-Dokument zu generieren, geben Sie `TransformationFormat.PDF` an
    * Einen Zeichenfolgenwert, der den Inhaltsstamm angibt, in dem sich die zusätzlichen Ressourcen (z. B. Bilder) befinden
@@ -1043,7 +1044,7 @@ Erstellen eines PDF-Dokuments basierend auf Fragmenten mithilfe der Output Servi
 
    * Abrufen einer `com.adobe.idp.Document` -Objekt, das das PDF-Dokument darstellt, indem das `OutputResult` -Objekt `getGeneratedDoc` -Methode.
    * Erstellen Sie ein `java.io.File`-Objekt, das die Ergebnisse des Vorgangs enthält. Stellen Sie sicher, dass die Dateinamenerweiterung .PDF lautet.
-   * Rufen Sie die `com.adobe.idp.Document` -Objekt `copyToFile` -Methode zum Kopieren des Inhalts der `com.adobe.idp.Document` -Objekt in die Datei ein. (Stellen Sie sicher, dass Sie das von der `getGeneratedDoc`-Methode zurückgegebene `com.adobe.idp.Document`-Objekt verwenden.)
+   * Rufen Sie die Methode `copyToFile` des `com.adobe.idp.Document`-Objekts auf, um den Inhalt des `com.adobe.idp.Document`-Objekts in die Datei zu kopieren. (Stellen Sie sicher, dass Sie das von der `getGeneratedDoc`-Methode zurückgegebene `com.adobe.idp.Document`-Objekt verwenden.)
 
 **Siehe auch**
 
@@ -1086,7 +1087,7 @@ Erstellen Sie ein PDF-Dokument basierend auf Fragmenten mithilfe der Output Serv
    * Erstellen Sie mithilfe seines Standardkonstruktors ein `OutputServiceClient`-Objekt.
    * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `OutputServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -1101,7 +1102,7 @@ Erstellen Sie ein PDF-Dokument basierend auf Fragmenten mithilfe der Output Serv
 
 1. Verwenden Sie den Assembler-Service, um das Design des Formulars zu generieren.
 
-   Rufen Sie die `AssemblerServiceClient` -Objekt `invokeDDX` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `invokeDDX` des `AssemblerServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
    * A `BLOB`-Objekt, das das DDX-Dokument darstellt
    * Das `MyMapOf_xsd_string_To_xsd_anyType`-Objekt, das die erforderlichen Dateien enthält
@@ -1114,7 +1115,7 @@ Erstellen Sie ein PDF-Dokument basierend auf Fragmenten mithilfe der Output Serv
 
 1. Verwenden Sie den Output-Service, um das PDF-Dokument zu generieren.
 
-   Rufen Sie die `OutputServiceClient` -Objekt `generatePDFOutput2` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `generatePDFOutput2` des Objekts `OutputServiceClient` auf und geben Sie die folgenden Werte weiter:
 
    * Einen `TransformationFormat`-Aufzählungswert. Um ein PDF-Dokument zu generieren, geben Sie `TransformationFormat.PDF` an.
    * Eine Zeichenfolge, die den Inhaltsstamm angibt, in dem sich die zusätzlichen Ressourcen (z. B. Bilder) befinden.
@@ -1130,9 +1131,9 @@ Erstellen Sie ein PDF-Dokument basierend auf Fragmenten mithilfe der Output Serv
 1. Speichern Sie das Formular als PDF-Datei.
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen. Übergeben Sie einen Kennzeichenfolgewert, der den Dateispeicherort des interaktiven PDF-Dokuments und den Modus angibt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB`-Objekts speichert, das von der Methode `generatePDFOutput2` abgerufen wurde. Füllen Sie das Byte-Array, indem Sie den Wert der `BLOB` -Objekt `MTOM` Datenelement.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB`-Objekts speichert, das von der Methode `generatePDFOutput2` abgerufen wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter` -Objekt `Write` -Methode verwenden und das Byte-Array übergeben.
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
 
@@ -1294,7 +1295,7 @@ Drucken Sie mit der Output API (Web-Service) in eine Datei:
    * Erstellen Sie mithilfe des Standardkonstruktors ein `OutputServiceClient`-Objekt.
    * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `OutputServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -1306,8 +1307,8 @@ Drucken Sie mit der Output API (Web-Service) in eine Datei:
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern von Formulardaten verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und eine Zeichenfolge übergeben, die den Speicherort der XML-Datei mit den Formulardaten angibt.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des Objekts `System.IO.FileStream` verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge weitergeben.
    * Befüllen Sie das `BLOB`-Objekt mit dem Inhalt des Byte-Arrays durch Zuweisen der Eigenschaft `binaryData`.
 
 1. Legen Sie die zum Drucken in eine Datei erforderlichen Laufzeitoptionen für das Drucken fest.
@@ -1333,7 +1334,7 @@ Drucken Sie mit der Output API (Web-Service) in eine Datei:
 1. Rufen Sie die Ergebnisse des Vorgangs ab.
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der einen XML-Dateispeicherort mit den Ergebnisdaten darstellt. Stellen Sie sicher, dass die Dateierweiterung XML ist.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt der `BLOB` -Objekt, das mit Ergebnisdaten von der `OutputServiceService` -Objekt `generatePDFOutput` -Methode (der achte Parameter). Füllen Sie das Byte-Array, indem Sie den Wert der `BLOB` -Objekt `MTOM` Datenelement.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt der `BLOB` -Objekt, das mit Ergebnisdaten von der `OutputServiceService` -Objekt `generatePDFOutput` -Methode (der achte Parameter). Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in die XML-Datei, indem Sie die `System.IO.BinaryWriter` -Objekt `Write` -Methode verwenden und das Byte-Array übergeben.
 
@@ -1580,7 +1581,7 @@ So senden Sie einen Druck-Stream an einen Netzwerkdrucker, indem Sie die Ausgabe
    * Erstellen Sie mithilfe des Standardkonstruktors ein `OutputServiceClient`-Objekt.
    * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `OutputServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -1593,7 +1594,7 @@ So senden Sie einen Druck-Stream an einen Netzwerkdrucker, indem Sie die Ausgabe
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern von Formulardaten verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Speicherort der XML-Datei angibt, die Formulardaten enthält.
    * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Bestimmen Sie die Byte-Array-Länge, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
+   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
 1. Festlegen von Laufzeitoptionen für das Drucken.
@@ -1875,7 +1876,7 @@ Erstellen mehrerer PDF-Dateien mithilfe der Output API (Web-Service):
    * Erstellen Sie mithilfe des Standardkonstruktors ein `OutputServiceClient`-Objekt.
    * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `OutputServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -1887,8 +1888,8 @@ Erstellen mehrerer PDF-Dateien mithilfe der Output API (Web-Service):
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Die `BLOB`-Objekt wird zum Speichern von Formulardaten verwendet, die mehrere Datensätze enthalten.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort der XML-Datei darstellt, die mehrere Datensätze enthält.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
    * Füllen Sie das `BLOB`-Objekt durch Zuweisen seines `MTOM`-Felds mit dem Inhalt des Byte-Arrays.
 
 1. Legen Sie PDF-Laufzeitoptionen fest.
@@ -1921,7 +1922,7 @@ Erstellen mehrerer PDF-Dateien mithilfe der Output API (Web-Service):
 1. Ergebnisse des Vorgangs abrufen
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der einen XML-Dateispeicherort darstellt, der Ergebnisdaten enthält. Stellen Sie sicher, dass die Dateinamenerweiterung .xml lautet.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt der `BLOB` -Objekt, das mit Ergebnisdaten von der `OutputServiceService` -Objekt `generatePDFOutput` -Methode (der achte Parameter). Füllen Sie das Byte-Array, indem Sie den Wert der `BLOB` -Objekt `binaryData` Datenelement.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt der `BLOB` -Objekt, das mit Ergebnisdaten von der `OutputServiceService` -Objekt `generatePDFOutput` -Methode (der achte Parameter). Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `binaryData` des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in die XML-Datei, indem Sie die `System.IO.BinaryWriter` -Objekt `Write` -Methode verwenden und das Byte-Array übergeben.
 
@@ -2107,7 +2108,7 @@ Erstellen Sie Suchregeln mithilfe der Ausgabe-API (Web-Service):
    * Erstellen Sie mithilfe des Standardkonstruktors ein `OutputServiceClient`-Objekt.
    * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `OutputServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -2119,8 +2120,8 @@ Erstellen Sie Suchregeln mithilfe der Ausgabe-API (Web-Service):
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern von Daten verwendet, die in das PDF-Dokument integriert werden sollen.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, in dem der Dateispeicherort des zu verschlüsselnden PDF-Dokuments und der Modus enthalten sind, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
    * Füllen Sie das `BLOB`-Objekt mit den Inhalten des Byte-Arrays, indem Sie diese dem `MTOM`-Feld des Objekts zuweisen.
 
 1. Definieren Sie Suchregeln.
@@ -2178,7 +2179,7 @@ Erstellen Sie Suchregeln mithilfe der Ausgabe-API (Web-Service):
 1. Ergebnisse des Vorgangs abrufen
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Speicherort einer XML-Datei mit Ergebnisdaten darstellt. Stellen Sie sicher, dass die Dateierweiterung XML ist.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt der `BLOB` -Objekt, das mit Ergebnisdaten von der `OutputServiceService` -Objekt `generatePDFOutput` -Methode (der achte Parameter). Füllen Sie das Byte-Array, indem Sie den Wert der `BLOB` -Objekt `MTOM` Datenelement.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt der `BLOB` -Objekt, das mit Ergebnisdaten von der `OutputServiceService` -Objekt `generatePDFOutput` -Methode (der achte Parameter). Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in die XML-Datei, indem Sie die `System.IO.BinaryWriter` -Objekt `Write` -Methode verwenden und das Byte-Array übergeben.
 
@@ -2321,7 +2322,7 @@ Reduzieren Sie ein interaktives PDF-Dokument mithilfe der Ausgabe-API (Web-Servi
    * Erstellen Sie mithilfe des Standardkonstruktors ein `OutputServiceClient`-Objekt.
    * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `OutputServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -2333,8 +2334,8 @@ Reduzieren Sie ein interaktives PDF-Dokument mithilfe der Ausgabe-API (Web-Servi
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird verwendet, um das interaktive PDF-Dokument zu speichern.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des interaktiven PDF-Dokuments darstellt.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des Objekts `System.IO.FileStream` verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge weitergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seiner `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
 
 1. Wandeln Sie das PDF-Dokument um.
@@ -2354,9 +2355,9 @@ Reduzieren Sie ein interaktives PDF-Dokument mithilfe der Ausgabe-API (Web-Servi
 1. Speichern Sie das nicht interaktive PDF-Dokument als PDF-Datei.
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt durch Aufrufen von dessen Konstruktor und Übergeben eines Zeichenfolgenwerts, der den Dateispeicherort des nicht interaktiven PDF-Dokuments darstellt.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der `transformPDF`-Methode zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert der `BLOB` -Objekt `MTOM` Datenelement.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der `transformPDF`-Methode zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter` -Objekt `Write` -Methode verwenden und das Byte-Array übergeben.
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
 

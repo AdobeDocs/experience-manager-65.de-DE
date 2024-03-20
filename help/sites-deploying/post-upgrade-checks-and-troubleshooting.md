@@ -8,10 +8,11 @@ content-type: reference
 docset: aem65
 feature: Upgrading
 exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1785'
-ht-degree: 42%
+source-wordcount: '1793'
+ht-degree: 41%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 42%
 
 ## Prüfungen nach einem Upgrade {#post-upgrade-checks}
 
-Nach einem [ersetzenden Upgrade](/help/sites-deploying/in-place-upgrade.md) sollten folgende Schritte durchgeführt werden, um das Upgrade abzuschließen. Es wird davon ausgegangen, dass AEM mit der 6.5-JAR-Datei gestartet wurde und die aktualisierte Codebasis bereitgestellt wurde.
+Nach einem [ersetzenden Upgrade](/help/sites-deploying/in-place-upgrade.md) sollten folgende Schritte durchgeführt werden, um das Upgrade abzuschließen. Es wird davon ausgegangen, dass AEM mit der 6.5-JAR-Datei gestartet wurde und dass die aktualisierte Codebasis bereitgestellt wurde.
 
 * [Überprüfen der Protokolle auf ein erfolgreiches Upgrade](#main-pars-header-290365562)
 
@@ -48,7 +49,7 @@ Nach einem [ersetzenden Upgrade](/help/sites-deploying/in-place-upgrade.md) soll
 
 Bisher mussten diverse Protokolldateien, Teile des Repositorys und das Launchpad sorgfältig überprüft werden, um den Status Ihrer Instanz nach einem Upgrade zu bestimmen. Durch das Generieren von Berichten nach einer Aktualisierung können defekte Upgrades erkannt werden, bevor Instanzen zum Einsatz kommen.
 
-Der primäre Zweck dieser Funktion besteht darin, den manuellen Interpretationsaufwand zu reduzieren oder eine komplexe Parsing-Logik für mehrere Endpunkte zu vermeiden, die erforderlich sind, um den Erfolg eines Upgrades zu qualifizieren. Die Lösung zielt darauf ab, für externe Automatisierungssysteme eindeutige Informationen bereitzustellen, damit diese auf den Erfolg oder das festgestellte Fehlschlagen einer Aktualisierung reagieren können.
+Der primäre Zweck dieser Funktion besteht darin, den manuellen Interpretationsaufwand zu reduzieren oder eine komplexe Parsing-Logik für mehrere Endpunkte zu vermeiden, die erforderlich sind, um den Erfolg eines Upgrades zu qualifizieren. Die Lösung zielt darauf ab, für externe Automatisierungssysteme eindeutige Informationen bereitzustellen, damit diese auf den Erfolg oder den festgestellten Fehler einer Aktualisierung reagieren können.
 
 Insbesondere wird Folgendes sichergestellt:
 
@@ -75,15 +76,15 @@ Navigieren Sie zur OSGi-Konsole unter `/system/console/bundles` und überprüfen
 
 ### Überprüfen der Oak-Version {#verify-oak-version}
 
-Nach dem Upgrade sollten Sie sehen, dass die Oak-Version auf **1,10,2**. Um die Oak-Version zu überprüfen, navigieren Sie zur OSGi-Konsole und sehen Sie sich die Version an, die Oak-Bundles zugeordnet ist: Oak-Kern, Oak-Commons, Oak-Segment-Tar.
+Nach dem Upgrade sollten Sie sehen, dass die Oak-Version auf **1,10,2**. Um die Oak-Version zu überprüfen, navigieren Sie zur OSGi-Konsole und sehen Sie sich die Version an, die Oak-Bundles zugeordnet ist: Oak Core, Oak Commons, Oak Segment Tar.
 
 ### Überprüfen des Ordners „PreUpgradeBackup“ {#inspect-preupgradebackup-folder}
 
-Während des Upgrades versucht AEM, Anpassungen zu sichern und unter `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Um diesen Ordner in CRXDE Lite anzuzeigen, müssen Sie möglicherweise [vorübergehend CRXDE Lite aktivieren](/help/sites-administering/enabling-crxde-lite.md).
+Während des Upgrades versucht AEM, Anpassungen zu sichern und unter `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Um diesen Ordner auf dem CRXDE Lite anzuzeigen, müssen Sie möglicherweise [vorübergehend CRXDE Lite aktivieren](/help/sites-administering/enabling-crxde-lite.md).
 
-Der Ordner mit dem Zeitstempel sollte die Eigenschaft `mergeStatus` mit dem Wert `COMPLETED` aufweisen. Der Ordner **to-process** sollte leer sein und der Knoten **overwritten** zeigt an, welche Knoten beim Upgrade überschrieben wurden. Der Inhalt unter dem Knoten links zeigt Inhalte an, die während der Aktualisierung nicht sicher zusammengeführt werden konnten. Wenn Ihre Implementierung von einem der untergeordneten Knoten abhängig ist (und noch nicht von Ihrem aktualisierten Code-Paket installiert wurde), müssen diese manuell zusammengeführt werden.
+Der Ordner mit dem Zeitstempel sollte die Eigenschaft `mergeStatus` mit dem Wert `COMPLETED` aufweisen. Der Ordner **to-process** sollte leer sein und der Knoten **overwritten** zeigt an, welche Knoten beim Upgrade überschrieben wurden. Der Inhalt unter dem Knoten &quot;left&quot;zeigt Inhalte an, die während der Aktualisierung nicht sicher zusammengeführt werden konnten. Wenn Ihre Implementierung von einem der untergeordneten Knoten abhängig ist (und noch nicht von Ihrem aktualisierten Code-Paket installiert wurde), müssen diese manuell zusammengeführt werden.
 
-Deaktivieren Sie die CRXDE Lite nach dieser Übung, wenn Sie sich in einer Staging- oder Produktionsumgebung befinden.
+Deaktivieren Sie das CRXDE Lite nach dieser Übung in einer Staging- oder Produktionsumgebung.
 
 ### Erstüberprüfung von Seiten {#initial-validation-of-pages}
 
@@ -95,7 +96,7 @@ Wenden Sie alle relevanten AEM 6.5 Service Packs an, falls diese veröffentlicht
 
 ### Migrieren AEM Funktionen {#migrate-aem-features}
 
-Für eine Reihe von Funktionen in AEM sind nach einem Upgrade zusätzliche Schritte erforderlich. Eine vollständige Liste dieser Funktionen und Schritte zur Migration in AEM 6.5 finden Sie im [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) Seite.
+Für eine Reihe von Funktionen in AEM sind nach einem Upgrade zusätzliche Schritte erforderlich. Eine vollständige Liste dieser Funktionen und Schritte zur Migration in AEM 6.5 finden Sie unter [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) Seite.
 
 ### Überprüfen der Konfigurationen für die geplante Wartung {#verify-scheduled-maintenance-configurations}
 
@@ -131,7 +132,7 @@ Diese Szenarien sollten dazu beitragen, die Grundursache von Aktualisierungsprob
 
 ### Repository-Migration fehlgeschlagen  {#repository-migration-failing-}
 
-Die Datenmigration von CRX2 zu Oak sollte für alle Szenarien möglich sein, die mit Quellinstanzen auf Grundlage von CQ 5.4 beginnen. Achten Sie darauf, dass Sie genau die Aktualisierungsanweisungen in diesem Dokument befolgen, die die Vorbereitung der `repository.xml`, stellen Sie sicher, dass kein benutzerdefinierter Authentifizierer über JAAS gestartet wurde und die Instanz vor dem Starten der Migration auf Inkonsistenzen überprüft wurde.
+Die Datenmigration von CRX2 zu Oak sollte für jedes Szenario möglich sein, das mit Quellinstanzen auf der Grundlage von CQ 5.4 beginnt. Achten Sie darauf, dass Sie genau die Upgrade-Anweisungen in diesem Dokument befolgen, die die Vorbereitung der `repository.xml`, stellen Sie sicher, dass kein benutzerdefinierter Authentifizierer über JAAS gestartet wurde und die Instanz vor dem Starten der Migration auf Inkonsistenzen überprüft wurde.
 
 Wenn die Migration weiterhin fehlschlägt, können Sie die Grundursache ermitteln, indem Sie die `upgrade.log`. Wenn das Problem noch nicht bekannt ist, melden Sie es dem Support.
 
@@ -153,9 +154,9 @@ Es wird außerdem empfohlen, die Bundle-Liste einer neuen AEM 6.5-Instanz mit de
 
 ### Benutzerdefinierte Pakete wechseln nicht in den aktiven Status {#custom-bundles-not-switching-to-the-active-state}
 
-Wenn Ihre benutzerdefinierten Bundles nicht zum aktiven Status wechseln, gibt es höchstwahrscheinlich Code, der die API für Änderungen nicht importiert. Dies führt meist zu nicht zufrieden stellenden Abhängigkeiten.
+Wenn Ihre benutzerdefinierten Bundles nicht zum aktiven Status wechseln, gibt es höchstwahrscheinlich Code, der die API für Änderungen nicht importiert. Dies führt in den meisten Fällen zu nicht zufrieden stellenden Abhängigkeiten.
 
-Eine gelöschte API sollte in einer der vorherigen Versionen als veraltet markiert werden. In diesem Hinweis zur veralteten Version finden Sie u. U. Anweisungen über eine direkte Migration Ihres Codes. Die Adobe zielt nach Möglichkeit auf die semantische Versionierung ab, sodass die Versionen auf brechende Änderungen hinweisen können.
+Eine gelöschte API sollte in einer der vorherigen Versionen als veraltet markiert werden. In diesem Hinweis zur veralteten Version finden Sie u. U. Anweisungen über eine direkte Migration Ihres Codes. Adobe zielt nach Möglichkeit auf die semantische Versionierung ab, sodass die Versionen auf brechende Änderungen hinweisen können.
 
 Es ist auch am besten zu überprüfen, ob die Änderung, die das Problem verursacht hat, notwendig war, und sie zurückzusetzen, wenn dies nicht der Fall ist. Überprüfen Sie außerdem, ob die Versionssteigerung des Package-Exports nach strikter semantischer Versionierung mehr als nötig erhöht wurde.
 
@@ -167,7 +168,7 @@ Wenn bestimmte Funktionen der Benutzeroberfläche nach dem Upgrade nicht ordnung
 
 Überprüfen Sie abschließend, ob JavaScript möglicherweise nicht in der Lage ist, mit Fehlkonfigurationen umzugehen. Dies ist normalerweise bei falsch deaktivierten Erweiterungen der Fall.
 
-### Fehlerhafte benutzerdefinierte Komponenten, Vorlagen oder Benutzeroberflächen-Erweiterungen {#malfunctioning-custom-components-templates-or-ui-extensions}
+### Fehlerhafte benutzerdefinierte Komponenten, Vorlagen oder Benutzeroberflächenerweiterungen {#malfunctioning-custom-components-templates-or-ui-extensions}
 
 Normalerweise sind die Grundursachen für diese Probleme dieselben wie für Pakete, die nicht gestartet werden oder nicht installiert werden, mit dem einzigen Unterschied, dass die Probleme beim erstmaligen Verwenden der Komponenten auftreten.
 
@@ -177,7 +178,7 @@ Um mit fehlerhaftem benutzerdefiniertem Code umzugehen, führen Sie zuerst Rauch
 
 `/apps` und `/libs` werden bei einem Upgrade problemlos verarbeitet. Änderungen unter `/etc` müssen jedoch möglicherweise nach dem Upgrade manuell aus `/var/upgrade/PreUpgradeBackup` wiederhergestellt werden. Überprüfen Sie diesen Speicherort auf Inhalte, die manuell zusammengeführt werden müssen.
 
-### Analysieren der Dateien „error.log“ und „upgrade.log“   {#analyzing-the-error.log-and-upgrade.log}
+### Analyse von error.log und upgrade.log {#analyzing-the-error.log-and-upgrade.log}
 
 In den meisten Fällen müssen die Protokolle bei Fehlern konsultiert werden, um die Ursache eines Problems zu finden. Bei Upgrades ist es jedoch auch erforderlich, Abhängigkeitsprobleme zu überwachen, da alte Bundles möglicherweise nicht ordnungsgemäß aktualisiert werden.
 
@@ -199,4 +200,4 @@ In einigen Fällen können Fehler auch in WARN-Meldungen gefunden werden, da gü
 
 ### Kontaktaufnahme mit dem Adobe-Support {#contacting-adobe-support}
 
-Wenn Sie die Ratschläge auf dieser Seite befolgt haben und weiterhin Probleme auftreten, wenden Sie sich an den Support von Adobe. Stellen Sie sicher, dass Sie die Datei upgrade.log aus Ihrem Upgrade einbeziehen, damit Sie dem Support-Mitarbeiter, der an Ihrem Fall arbeitet, möglichst viele Informationen zur Verfügung stellen können.
+Wenn Sie die Ratschläge auf dieser Seite befolgt haben und weiterhin Probleme auftreten, wenden Sie sich an den Adobe Support. Stellen Sie sicher, dass Sie die Datei upgrade.log aus Ihrem Upgrade einbeziehen, damit Sie dem Support-Mitarbeiter, der an Ihrem Fall arbeitet, möglichst viele Informationen zur Verfügung stellen können.

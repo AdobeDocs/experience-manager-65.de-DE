@@ -7,7 +7,8 @@ topic-tags: Security
 content-type: reference
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 8c0c2d89fca7a5ba1a834108ae54fed524b3cbab
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1604'
 ht-degree: 75%
@@ -116,11 +117,11 @@ Die Hauptfunktionen dieser Version sind die Möglichkeit, neue LDAP-Gruppen für
 
 Weitere Informationen zu den neuen Gruppenfunktionen finden Sie hier:
 
-[https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options](https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options)
+[https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options](https://adobe-apiplatform.github.io/user-sync.py/de/user-manual/advanced_configuration.html#additional-group-options)
 
 >[!NOTE]
 >
->Weitere Informationen zum Tool zur Benutzersynchronisierung finden Sie in der [Dokumentationsseite](https://adobe-apiplatform.github.io/user-sync.py/en/).
+>Weitere Informationen zum Tool zur Benutzersynchronisierung finden Sie in der [Dokumentationsseite](https://adobe-apiplatform.github.io/user-sync.py/de/).
 >
 >
 >Das User Sync Tool muss mit dem [hier](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html) beschriebenen Verfahren als Adobe I/O-Client-UMAPI registriert werden.

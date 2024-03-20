@@ -11,7 +11,8 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
-source-git-commit: cc219931430ba571745e6ef254a034a689acd1cf
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '7738'
 ht-degree: 87%
@@ -23,7 +24,7 @@ ht-degree: 87%
 >[!IMPORTANT]
 >
 >Ende der Unterstützung für Secure Socket Layer 2.0 und 3.0 sowie Transport Layer Security 1.0 und 1.1.
->Ab dem 30. April 2024 beendet Adobe Dynamic Media die Unterstützung für Folgendes:
+>Ab dem 30. April 2024 wird Adobe Dynamic Media die Unterstützung für Folgendes einstellen:
 >
 >* SSL (Secure Socket Layer) 2.0
 >* SSL 3.0
@@ -329,7 +330,7 @@ Richten Sie die Replikationsauthentifizierung auf der Autoreninstanz ein, damit 
    * Wählen Sie die **[!UICONTROL KeyStore-Datei]** aus. Gehen Sie zu der KeyStore-Datei, die Sie von Adobe erhalten haben, wählen Sie sie aus und klicken Sie dann auf **[!UICONTROL Öffnen]**.
    * Geben Sie im Feld **[!UICONTROL Kennwort für KeyStore-Datei]** das Kennwort für die KeyStore-Datei ein. Dies ist **nicht** das KeyStore-Kennwort, das Sie in Schritt 5 erstellt haben, sondern das Kennwort für die KeyStore-Datei, das Sie in der Begrüßungs-E-Mail von Adobe während der Bereitstellung erhalten haben. Wenden Sie sich an dien Kunden-Support von Adobe, um Ihr Kennwort zu erhalten (falls noch nicht vorhanden).
    * Geben Sie im Feld **[!UICONTROL Kennwort für privaten Schlüssel]** das Kennwort für den privaten Schlüssel ein (dies kann dasselbe Kennwort für den privaten Schlüssel wie im vorherigen Schritt sein). Das Kennwort für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Nehmen Sie Kontakt mit dem Kunden-Support von Adobe auf, falls Sie kein Kennwort für den privaten Schlüssel erhalten haben.
-   * Im **[!UICONTROL Alias für privaten Schlüssel]** Geben Sie den Alias für den privaten Schlüssel ein. Beispiel: `*companyname*-alias`. Der Alias für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Nehmen Sie Kontakt mit dem Kunden-Support von Adobe auf, falls Sie keinen Alias für den privaten Schlüssel erhalten haben.
+   * Im **[!UICONTROL Alias für privaten Schlüssel]** Geben Sie den Alias für den privaten Schlüssel ein. Zum Beispiel: `*companyname*-alias`. Der Alias für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Nehmen Sie Kontakt mit dem Kunden-Support von Adobe auf, falls Sie keinen Alias für den privaten Schlüssel erhalten haben.
 
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
 

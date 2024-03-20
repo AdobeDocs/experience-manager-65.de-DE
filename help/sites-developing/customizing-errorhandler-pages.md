@@ -6,8 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: d6745baa-44da-45dd-b5d5-a9b218e7e8cf
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
-workflow-type: ht
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 100%
 
@@ -88,6 +89,6 @@ Um 500-Fehler zu verarbeiten, muss der Dateiname des Fehler-Handler-Skripts iden
 >
 >In einer Autoreninstanz ist [CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md) standardmäßig aktiviert. Das Ergebnis ist immer der Antwort-Code 200. Der standardmäßige Fehler-Handler schreibt daraufhin den vollständigen Stacktrace in die Antwort.
 >
->Für eine individuelle Fehlerverarbeitung sind Antworten mit Code 500 erforderlich. [CQ WCM Debug Filter muss also deaktiviert sein](/help/sites-deploying/osgi-configuration-settings.md). Dadurch wird sichergestellt, dass der Antwort-Code 500 zurückgegeben wird, was wiederum den richtigen Sling-Fehler-Handler auslöst.
+>Für eine individuelle Fehlerverarbeitung sind Antworten mit Code 500 erforderlich. Der [CQ WCM Debug-Filter muss also deaktiviert sein](/help/sites-deploying/osgi-configuration-settings.md). Dadurch wird sichergestellt, dass der Antwort-Code 500 zurückgegeben wird, was wiederum den richtigen Sling-Fehler-Handler auslöst.
 >
 >In Veröffentlichungsinstanzen ist CQ WCM Debug Filter *immer* deaktiviert (selbst wenn er als aktiviert konfiguriert ist).

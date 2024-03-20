@@ -7,10 +7,11 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: e626bdd8-b7ae-4de5-a0a0-47fb74c080d7
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 51%
+source-wordcount: '291'
+ht-degree: 49%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 51%
 
 ## Einführung {#introduction}
 
-Sie können zur Verbesserung von Adobe Experience Cloud beitragen, indem Sie Statistiken über die Interaktion mit Adobe Experience Manager (AEM) an die Adobe senden. Diese Informationen enthalten keine Daten zu den Site-Besuchern Ihres Unternehmens und werden nur dazu verwendet, Adoben bei der Bereitstellung, dem Support und der Verbesserung Ihres Benutzererlebnisses zu unterstützen.
+Sie können Adobe Experience Cloud verbessern, indem Sie Adobe-Statistiken über die Interaktion mit Adobe Experience Manager (AEM) senden. Diese Informationen enthalten keine Daten zu den Site-Besuchern Ihres Unternehmens und werden nur verwendet, um Adobe bei der Bereitstellung, Unterstützung und Verbesserung Ihres Benutzererlebnisses zu unterstützen.
 
 Sie können die Erfassung von Nutzungsstatistiken über die Touch-Benutzeroberfläche oder die Web-Konsole aktivieren.
 
@@ -30,9 +31,9 @@ Sie können die Erfassung von Nutzungsstatistiken über die Touch-Benutzeroberfl
 
 >[!NOTE]
 >
->Sie können sich jederzeit mit der [Web-Konsole](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) oder indem Sie die Opt-in-Option auf dem Opt-in-Bildschirm AEM.
+>Sie können sich jederzeit mit der Funktion [Web-Konsole](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) oder indem Sie die Opt-in-Option auf dem Opt-in-Bildschirm AEM.
 
-## Opt-in über die Touch-Benutzeroberfläche {#opt-in-by-using-the-touch-ui}
+## Opt-in über die Touch-optimierte Benutzeroberfläche {#opt-in-by-using-the-touch-ui}
 
 Wenn Sie AEM erstmalig starten, können Sie sich wie folgt über die Touch-Benutzeroberfläche anmelden:
 

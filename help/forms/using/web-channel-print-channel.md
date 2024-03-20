@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: cd7dbdac-dc76-4a1f-b850-0a9f47ae08de
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '696'
-ht-degree: 44%
+ht-degree: 45%
 
 ---
 
@@ -76,7 +77,7 @@ Führen Sie die folgenden Schritte aus, um eine Webkanalvorlage zu erstellen:
    1. Auswählen **[!UICONTROL Instrumente]** ![tools](assets/tools.png) > **[!UICONTROL Vorlagen]**.
    1. Navigieren Sie zur entsprechenden Vorlage, wählen Sie sie aus und klicken Sie auf **[!UICONTROL Aktivieren]** und wählen Sie in der Warnmeldung **[!UICONTROL Aktivieren]**.
 
-      Die Vorlage ist aktiviert und ihr Status wird als Aktiviert angezeigt. Jetzt können Sie mit der Erstellung einer interaktiven Kommunikation fortfahren, in der Sie die neu erstellte Webkanalvorlage verwenden können.
+      Die Vorlage ist aktiviert und ihr Status wird als „Aktiviert“ angezeigt. Jetzt können Sie mit der Erstellung einer interaktiven Kommunikation fortfahren, in der Sie die neu erstellte Webkanalvorlage verwenden können.
 
 ### Druckkanal als Master für Webkanal {#print-channel-as-master-for-web-channel}
 

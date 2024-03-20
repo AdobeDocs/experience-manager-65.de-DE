@@ -4,10 +4,11 @@ description: In diesem Artikel werden die Konzepte einer SPA vorgestellt und die
 topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1945'
-ht-degree: 88%
+ht-degree: 90%
 
 ---
 
@@ -213,7 +214,7 @@ Der nächste Abschnitt, [Laden einer SPA-Anwendung](#loading-an-spa-application)
 
 ### Interaktion mit dem SPA-Editor {#interaction-with-the-spa-editor}
 
-Mithilfe der WKND SPA Project-Beispielanwendung ist klar, wie sich die App verhält und beim Veröffentlichen geladen wird. Dazu werden Inhaltsdienste für die Bereitstellung von JSON-Inhalten und das asynchrone Laden von Ressourcen verwendet.
+Mithilfe der exemplarischen WKND-SPA-Projektanwendung wird deutlich, wie sich die App verhält und beim Veröffentlichen geladen wird. Dabei kommen Inhaltsdienste für die JSON-Inhaltsbereitstellung und das asynchrone Laden von Ressourcen zum Einsatz.
 
 Darüber hinaus ist die Inhaltserstellung mit einem SPA-Editor für den Inhaltsautor in AEM nahtlos.
 
@@ -225,7 +226,7 @@ Im folgenden Abschnitt werden wir uns den Vertrag ansehen, der es dem SPA-Editor
 
 1. Überprüfen Sie mithilfe der integrierten Entwickler-Tools Ihres Browsers den Inhalt der Seite. Wählen Sie mit dem Auswahl-Tool eine bearbeitbare Komponente auf der Seite aus und zeigen Sie die Elementdetails an.
 
-   Die Komponente verfügt über ein neues Datenattribut `data-cq-data-path`.
+   Die Komponente verfügt über ein neues Datenattribut (`data-cq-data-path`).
 
    ![Schritt 2](assets/spa-walkthrough-step-2-2.png)
 

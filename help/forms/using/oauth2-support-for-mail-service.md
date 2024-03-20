@@ -2,7 +2,8 @@
 title: Konfigurieren der OAuth2-basierten Authentifizierung für Microsoft® (Forms JEE OAuth); Office 365-E-Mail-Serverprotokolle
 description: Konfigurieren der OAuth2-basierten Authentifizierung für Microsoft® (Forms JEE OAuth); Office 365-E-Mail-Serverprotokolle
 exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
-source-git-commit: 2a67e7e54a72c31a4a0ab0a186be20a914222fa7
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 84%

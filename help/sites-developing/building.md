@@ -7,10 +7,11 @@ topic-tags: platform
 content-type: reference
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '849'
-ht-degree: 75%
+ht-degree: 79%
 
 ---
 
@@ -56,7 +57,7 @@ TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 
 ### Abrufen eines Tag-Objekts {#retrieving-a-tag-object}
 
-A `Tag` kann über die `TagManager`, indem Sie entweder ein vorhandenes Tag auflösen oder eines erstellen:
+Ein `Tag` kann über den `TagManager` abgerufen werden, indem entweder ein vorhandenes Tag aufgelöst oder eines erstellt wird:
 
 ```java
 Tag tag = tagManager.resolve("my/tag"); // for existing tags
@@ -194,7 +195,7 @@ Die neue Sprache (Finnisch) ist jetzt im Tag-Dialogfeld der Seiteneigenschaften 
 
 >[!NOTE]
 >
->Die neue Sprache muss eine der AEM anerkannten Sprachen sein. Das heißt, es muss als Knoten unter verfügbar sein. `/libs/wcm/core/resources/languages`.
+>Die neue Sprache muss eine der von AEM anerkannten Sprachen sein. Das heißt, sie muss als Knoten unterhalb von `/libs/wcm/core/resources/languages` verfügbar sein.
 
 >[!CAUTION]
 >

@@ -7,7 +7,8 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: b41af9fe-c698-44b3-9ac6-97d42cdc02d4
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 44%
@@ -58,7 +59,7 @@ Weitere Informationen finden Sie in der [JSP-EL-Spezifikation](https://download.
    * java.lang.Long
    * Long
    * java.lang.Float
-   * Gleitkomma
+   * Fließkommazahl
    * java.util.Calendar
    * java.util.Date
    * java.util.List
@@ -110,7 +111,7 @@ Sie können ein benutzerdefiniertes Bundle erstellen, um Ihre eigenen Remote-Fun
    * java.lang.Long
    * Long
    * java.lang.Float
-   * Gleitkomma
+   * Fließkommazahl
    * java.util.Calendar
    * java.util.Date
    * java.util.List

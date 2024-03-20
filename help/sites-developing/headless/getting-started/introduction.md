@@ -2,7 +2,8 @@
 title: Erste Schritte mit Headless
 description: In dieser Kurzanleitung erfahren Sie mehr über die leistungsstarken Headless-Funktionen von Adobe Experience Manager (AEM) 6.5 wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API.
 exl-id: 55ebd893-b3cc-47c5-ad84-46df984197fb
-source-git-commit: 487136be68e04fd74affe43790587b37d4c3d3ef
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 60%

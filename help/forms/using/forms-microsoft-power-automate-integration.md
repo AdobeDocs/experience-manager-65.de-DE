@@ -3,13 +3,14 @@ title: Wie verbindet man adaptive Formulardaten mit Microsoft® Power Automate u
 description: Eine schrittweise Anleitung zum Verbinden und Senden von adaptiven Formulardaten an Microsoft® Power Automate.
 keywords: Adaptive Formulare an Microsoft Power Automate, Übermittlung von adaptiven Formulardaten an Microsoft Power Automate
 feature: Adaptive Forms, Foundation Components
-source-git-commit: 27eb8a53a198efd2cb059a2884b3b5ed60730806
+exl-id: 3fd26ddb-d247-462f-a0f6-8af6166516c1
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 100%
 
 ---
-
 
 # Verbinden und Übermitteln von adaptiven Formulardaten an Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
 
@@ -192,4 +193,3 @@ Nachdem Sie [Ihre AEM Forms-Autoreninstanz mit Microsoft® Power Automate verbun
 * [Erstellen eines adaptiven Formulars](create-an-adaptive-form-core-components.md)
 * [Konfigurieren einer Übermittlungsaktion](configuring-submit-actions.md)
 * [Adobe Experience Manager-Connector für Microsoft® Power Automate](https://learn.microsoft.com/de-de/connectors/adobeexperiencemanag/)
-

@@ -2,10 +2,11 @@
 title: Zusätzliche Schritte zum Abrufen von E-Mails mit Anhängen
 description: Erfahren Sie, wie Sie den Fehler beheben können, wenn Sie keine E-Mail mit Anhängen für AEM Forms on JEE-Plattformen abrufen können.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
-source-git-commit: 553aef43342a709dd8e645279999a71b9e0185f0
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '270'
-ht-degree: 72%
+ht-degree: 84%
 
 ---
 
@@ -51,4 +52,4 @@ Benutzenden sind nicht in der Lage, Vorgänge wie „PDF per E-Mail versenden“
 
 >[!NOTE]
 >
-> Es wird empfohlen, den Befehl &quot;Strg + C&quot;zu verwenden, um das SDK neu zu starten. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
+> Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mithilfe alternativer Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.

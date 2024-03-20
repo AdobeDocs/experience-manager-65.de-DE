@@ -7,10 +7,11 @@ topic-tags: Security
 content-type: reference
 exl-id: 8b2a2f1d-8286-4ba5-8fe2-627509c72a45
 feature: Security
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 32%
+source-wordcount: '481'
+ht-degree: 33%
 
 ---
 
@@ -22,7 +23,7 @@ Diese sind unten aufgeführt, zusammen mit einer Erläuterung, wie CRX mit ihnen
 
 ## 1. Injektion {#injection}
 
-* SQL - Vorsichtshinweis: Die standardmäßige Repository-Einrichtung umfasst keine traditionelle Datenbank und erfordert auch keine solche. Alle Daten werden im Inhalts-Repository gespeichert. Der Zugriff ist auf authentifizierte Benutzer beschränkt und kann nur über die JCR-API erfolgen. SQL wird nur für Suchabfragen (SELECT) unterstützt. Darüber hinaus bietet SQL Unterstützung für die Wertbindung.
+* SQL - In der Konzeption verhindert: Die standardmäßige Repository-Einrichtung umfasst keine herkömmliche Datenbank und erfordert auch keine. Alle Daten werden im Inhalts-Repository gespeichert. Der Zugriff ist auf authentifizierte Benutzer beschränkt und kann nur über die JCR-API erfolgen. SQL wird nur für Suchabfragen (SELECT) unterstützt. Darüber hinaus bietet SQL Unterstützung für die Wertbindung.
 * LDAP - Eine LDAP-Injektion ist nicht möglich, da das Authentifizierungsmodul die Eingabe filtert und den Benutzerimport mithilfe der Bindungsmethode durchführt.
 * BS - In der Anwendung wird keine Shell-Ausführung ausgeführt.
 
@@ -48,9 +49,9 @@ Darüber hinaus ist AEM mit einem Referrer-Header-basierten Filter ausgestattet,
 
 ## 6. Sicherheitsfehler {#security-misconfiguration}
 
-Es ist unmöglich zu garantieren, dass alle Software immer korrekt konfiguriert ist. Adobe bemüht sich jedoch, möglichst viele Anleitungen bereitzustellen und die Konfiguration so einfach wie möglich zu gestalten. AEM [Integrierte Sicherheits-Konsistenzprüfungen](/help/sites-administering/operations-dashboard.md) die Ihnen dabei helfen, die Sicherheitskonfiguration auf einen Blick zu verfolgen.
+Es ist unmöglich zu garantieren, dass alle Software immer korrekt konfiguriert ist. Adobe bemüht sich jedoch, möglichst viele Anleitungen zur Verfügung zu stellen und die Konfiguration so einfach wie möglich zu gestalten. Außerdem AEM mit [Integrierte Sicherheits-Gesundheitskontrollen](/help/sites-administering/operations-dashboard.md) die Ihnen dabei helfen, die Sicherheitskonfiguration auf einen Blick zu verfolgen.
 
-Überprüfen Sie die [Sicherheitscheckliste](/help/sites-administering/security-checklist.md) für weitere Informationen, die Ihnen schrittweise Anleitungen zum Härten bieten.
+Überprüfen Sie die [Sicherheitscheckliste](/help/sites-administering/security-checklist.md) für weitere Informationen, die Ihnen eine schrittweise Anleitung zum Härten bieten.
 
 ## 7. Unsicherer kryptografischer Speicher {#insecure-cryptographic-storage}
 

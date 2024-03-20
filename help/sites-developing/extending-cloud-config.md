@@ -1,14 +1,15 @@
 ---
 title: Cloud Service-Konfigurationen
-description: Sie können die vorhandenen Instanzen erweitern, um Ihre eigenen Konfigurationen zu erstellen
+description: Sie können vorhandene Instanzen erweitern, um eigene Konfigurationen zu erstellen
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 20a19ee5-7113-4aca-934a-a42c415a8d93
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '552'
 ht-degree: 44%
 
 ---
@@ -28,7 +29,7 @@ Die bei der Entwicklung der Konfigurationen verwendeten Prinzipien basieren auf 
 * Referenziert von Analyseknoten nach Pfad.
 * Einfach erweiterbar.
 * Sie können auch komplexere Konfigurationen unterstützen, z. B. [Adobe Analytics ](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Unterstützung für Abhängigkeiten (z. B. [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) Plug-ins benötigen eine [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) Konfiguration).
+* Unterstützung für Abhängigkeiten (z. B. [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) -Plug-ins benötigen eine [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) Konfiguration).
 
 ## Struktur {#structure}
 
@@ -53,7 +54,7 @@ Die Vorlage und die Komponente müssen `sling:resourceSuperType` von der Basisvo
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-Oder Basiskomponente
+Oder die Basiskomponente
 
 `cq/cloudserviceconfigs/components/configpage`
 
@@ -67,7 +68,7 @@ Ihre Vorlage erweitert die Basisvorlage:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-Definieren Sie eine `resourceType` , der auf die benutzerdefinierte Komponente verweist.
+Und definieren Sie eine `resourceType` , der auf die benutzerdefinierte Komponente verweist.
 
 ```xml
 /libs/cq/analytics/templates/sitecatalyst
@@ -148,7 +149,7 @@ Die Registerkarte bietet außerdem Folgendes:
 
 Beim Speichern von Benutzeranmeldeinformationen für den Dienst sollten alle Kennwörter verschlüsselt werden.
 
-Sie können dies erreichen, indem Sie ein ausgeblendetes Formularfeld hinzufügen. Dieses Feld sollte eine Anmerkung enthalten. `@Encrypted` im Eigenschaftsnamen; das heißt für die `password` -Feld würde der Name wie folgt geschrieben:
+Sie können dies erreichen, indem Sie ein ausgeblendetes Formularfeld hinzufügen. Dieses Feld sollte eine Anmerkung enthalten. `@Encrypted` im Eigenschaftsnamen, d. h. für die `password` -Feld würde der Name wie folgt geschrieben:
 
 `password@Encrypted`
 
@@ -213,7 +214,7 @@ Diese Eigenschaft wird dann automatisch (mit dem `CryptoSupport`-Dienst) durch d
 
 Diese Dienste werden standardmäßig bereitgestellt:
 
-* [Tracker-Snippets](/help/sites-administering/external-providers.md) (Google, WebTrends usw.)
+* [Tracker-Snippets](/help/sites-administering/external-providers.md) (Google, Webtrends usw.)
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&amp;Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
 <!-- Search&Promote is end of life as of September 1, 2022 * [Search&Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote) -->

@@ -7,10 +7,11 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1148'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
@@ -130,7 +131,7 @@ Eine vereinfachte Bildkomponente wird als Beispiel verwendet, aber alle Komponen
 
 ### index.js {#index-js}
 
-Der Einstiegspunkt in die SPA ist die hier gezeigte Datei `index.js`, die sich auf den wichtigen Inhalt konzentriert.
+Der Einstiegspunkt in die SPA ist die hier gezeigte Datei `index.js`, die hier vereinfacht dargestellt ist, um sich auf den wichtigen Inhalt zu konzentrieren.
 
 ```
 import ReactDOM from 'react-dom';
@@ -195,7 +196,7 @@ Der `Page` nimmt die JSON-Repräsentation des Seitenmodells auf und verarbeitet 
 
 ### Image.js {#image-js}
 
-Mit der gerenderten Seite können die Komponenten wie etwa `Image.js` wie hier dargestellt gerendert werden.
+Mit der gerenderten Seite können die Komponenten wie `Image.js` wie hier dargestellt gerendert werden.
 
 ```
 import React, {Component} from 'react';

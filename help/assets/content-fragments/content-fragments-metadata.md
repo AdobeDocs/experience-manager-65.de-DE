@@ -4,8 +4,9 @@ description: Erfahren Sie, wie Sie die Metadateneigenschaften für Inhaltsfragme
 feature: Content Fragments
 role: User
 exl-id: 6316ef72-7647-4e85-b8cf-152557b26540
-source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
-workflow-type: ht
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 100%
 
@@ -19,11 +20,12 @@ Erfahren Sie, wie Sie die Metadateneigenschaften für Inhaltsfragmente in AEM an
 
 Sie können die Metadaten (Eigenschaften) für das Inhaltsfragment anzeigen und bearbeiten:
 
-1. Navigieren Sie in der Konsole **Assets** zum Speicherort des Inhaltsfragments.
-2. Führen Sie einen der folgenden Schritte durch:
+1. Navigieren Sie in der **Assets**-Konsole zum Speicherort des Inhaltsfragments.
+2. Sie haben folgende Möglichkeiten:
 
    * Wählen Sie [**Eigenschaften anzeigen** aus, um das Dialogfeld zu öffnen](/help/assets/manage-assets.md#editing-properties). Sobald es zur Anzeige geöffnet wurde, können Sie auch Bearbeitungen vornehmen.
    * Öffnen Sie das Inhaltsfragment zum Bearbeiten und wählen Sie anschließend im seitlichen Bedienfeld **Metadaten** aus.
+
    ![Metadaten](assets/cfm-metadata-01.png)
 
 3. Auf der Registerkarte **Allgemein** können Sie die folgenden Optionen anzeigen oder bearbeiten:
@@ -35,10 +37,12 @@ Sie können die Metadaten (Eigenschaften) für das Inhaltsfragment anzeigen und 
    * **Tags**
       * [Tags](/help/sites-authoring/tags.md) sind besonders leistungsstark bei der Organisation Ihrer Fragmente, da sie für die Inhaltsklassifizierung und -taxonomie verwendet werden können. Tags können zum Suchen von Inhalten (nach Tags) und zum Anwenden von Massenvorgängen verwendet werden.
 Beispielsweise können Sie relevante Fragmente als „Weihnachts-Launch“ taggen, um nur diese als Teilmenge zu durchsuchen oder sie für einen anderen zukünftigen Launch in einen neuen Ordner zu kopieren.
-      >[!NOTE]
-      >
-      >**Tags** können auch beim [Erstellen von Varianteninhalten](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) und beim [Erstellen von Varianten](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation) hinzugefügt werden.
+
+     >[!NOTE]
+     >
+     >**Tags** können auch beim [Erstellen von Varianteninhalten](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) und beim [Erstellen von Varianten](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation) hinzugefügt werden.
 
    * **Erstellt** (nur Anzeigen)
+
    Beispiel:
    ![Metadaten](assets/cfm-metadata-02.png)

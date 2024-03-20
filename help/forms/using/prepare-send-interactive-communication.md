@@ -5,10 +5,11 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2010'
-ht-degree: 69%
+ht-degree: 70%
 
 ---
 
@@ -104,7 +105,7 @@ Verwalten Sie auf der Registerkarte &quot;Inhalt&quot;den Inhalt wie Dokumentfra
 
    Wenn die Vorschau Ihren Vorstellungen entspricht, wählen Sie **[!UICONTROL Einsenden]** , um die interaktive Kommunikation an einen Nachbearbeitungsprozess zu senden. Um Änderungen vorzunehmen, beenden Sie die Vorschau, um zu den Änderungen zurückzukehren.
 
-## Text formatieren {#formattingtext}
+## Formatieren von Text {#formattingtext}
 
 Beim Bearbeiten eines Textfragments in der Benutzeroberfläche des Agenten ändert sich die Symbolleiste je nach dem Typ der Änderungen, die Sie vornehmen: Schriftart, Absatz oder Liste:
 
@@ -120,7 +121,7 @@ Absatz-Symbolleiste
 
 Listen-Symbolleiste
 
-### Teile von Text hervorheben/hervorheben {#highlightemphasize}
+### Hervorheben von Teilen des Textes {#highlightemphasize}
 
 Um Textteile in einem bearbeitbaren Fragment hervorzuheben bzw. hervorzuheben, wählen Sie den Text aus und wählen Sie die Option Hervorhebungsfarbe aus.
 
@@ -130,7 +131,7 @@ Um Textteile in einem bearbeitbaren Fragment hervorzuheben bzw. hervorzuheben, w
 
 ![pastedtext](assets/pastedtext.png)
 
-### Sonderzeichen in Text einfügen {#specialcharacters}
+### Einfügen von Sonderzeichen in Text {#specialcharacters}
 
 Die Benutzeroberfläche für Agenten unterstützt jetzt 210 Sonderzeichen. Der Administrator kann [Unterstützung für mehr/benutzerdefinierte Sonderzeichen durch Anpassung hinzufügen](/help/forms/using/custom-special-characters.md).
 

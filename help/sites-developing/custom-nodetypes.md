@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
-source-git-commit: d3c40d1452217983b01245ec1c81111a3c4e7295
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1866'
+source-wordcount: '1848'
 ht-degree: 77%
 
 ---
@@ -22,7 +23,7 @@ Da Adobe Experience Manager (AEM) auf Sling basiert und ein JCR-Repository verwe
 
 Zusätzlich zu diesen Knotentypen stellt AEM eine Reihe von benutzerdefinierten Knotentypen bereit.
 
-## Prüfung {#audit}
+## Audit {#audit}
 
 ### cq:AuditEvent {#cq-auditevent}
 
@@ -316,7 +317,7 @@ Definiert die Konfiguration für „EditBar“.
 
 Konfiguriert ein Ablageziel einer Komponente. Der Name dieses Knotens wird als ID zum Ziehen und Ablegen verwendet.
 
-* `@prop accept` - Liste der MIME-Typen, die von diesem Ablageziel akzeptiert werden; Beispiel: `["image/*"]`
+* `@prop accept` - Liste der MIME-Typen, die von diesem Droptarget akzeptiert werden, z. B. `["image/*"]`
 * `@prop groups` - Liste der Drag-and-Drop-Gruppen, die eine Quelle akzeptieren.
 * `@prop propertyName` - Name der Eigenschaft, die zum Speichern des Verweises verwendet wird.
 
@@ -444,7 +445,7 @@ Container-Liste
 
 **Beschreibung**
 
-Der Knotentyp `cq:attributes` ist für die ContentBus version-Tags. Dieser Knoten verfügt nur über eine Reihe von Eigenschaften. Davon sind drei vordefinierte &quot;created&quot;, &quot;csd&quot;und &quot;timestamp&quot;.
+Der Knotentyp `cq:attributes` ist für die ContentBus-Version-Tags. Dieser Knoten verfügt nur über eine Reihe von Eigenschaften, von denen drei vordefiniert sind: &quot;created&quot;, &quot;csd&quot;und &quot;timestamp&quot;.
 
 * `@prop created (long) mandatory copy` - Zeitstempel der Erstellung der Versionsinformationen, in der Regel der Zeitpunkt des Eincheckens der Vorgängerversion oder der Seitenerstellung.
 * `@prop csd (string) mandatory copy` - csd-Standardattribut, Kopie der Eigenschaft „cq:csd“ des Seitenknotens
@@ -580,7 +581,7 @@ Definiert ein LiveSync-Mixin. Wenn ein Knoten in eine LiveRelationship mit einem
 
 Definiert ein LiveSyncCancelled-Mixin. Abbrechen des LiveSync-Verhaltens eines (kontrollierten) Live Copy-Knotens, der aufgrund eines seiner übergeordneten Elemente an einer LiveRelationship beteiligt sein kann.
 
-* `@prop cq:isCancelledForChildren` - Definiert, ob eine LiveSync abgebrochen wird; auch für Kinder.
+* `@prop cq:isCancelledForChildren` - Definiert, ob eine LiveSync abgebrochen wird, auch für untergeordnete Elemente.
 
 **Definition**
 
@@ -814,7 +815,7 @@ Jeder Benutzer/jede öffentliche Website kann den Inhalt (im Web 2.0-Stil) mit 
 
 **Beschreibung**
 
-Fügt einen Unterkoten `cq:userContent`, der von Benutzern geändert werden kann. Jeder Benutzer verfügt über eine eigene `cq:userContent/<userid>` untergeordneten Knoten, der normalerweise über das Mixin verfügt `cq:UserTaggable`.
+Fügt einen Unterkoten `cq:userContent`, der von Benutzern geändert werden kann. Jeder Benutzer verfügt über `cq:userContent/<userid>` untergeordneten Knoten, der normalerweise über das Mixin verfügt `cq:UserTaggable`.
 
 **Definition**
 

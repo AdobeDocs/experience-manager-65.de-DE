@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 exl-id: 7c856e87-9f90-435d-aceb-994f10ea6f50
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '931'
-ht-degree: 51%
+ht-degree: 53%
 
 ---
 
@@ -491,7 +492,7 @@ Der Dienst wendet das kumulative Ergebnis aller Filter an. Beispielsweise schlie
 
 >[!NOTE]
 >
->Beim Arbeiten mit AEM gibt es mehrere Methoden zum Verwalten der Konfigurationseinstellungen für diese Dienste. Siehe [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md) für ausführliche Informationen.
+>In AEM können Sie die Konfigurationseinstellungen für solche Services auf unterschiedliche Weise verwalten. Ausführliche Informationen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
 Gehen Sie beispielsweise zum Konfigurieren des Diensts mithilfe von CRXDE Lite wie folgt vor:
 

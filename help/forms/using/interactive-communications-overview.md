@@ -5,7 +5,8 @@ contentOwner: gtalwar
 topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 59%
@@ -17,7 +18,7 @@ ht-degree: 59%
 
 Dieser Artikel enthält eine Übersicht, Beispiele für Anwendungsfälle, einen Erstellungs-Workflow und Unterschiede zwischen der interaktiven Kommunikation und dem Brief.
 
-![hero-image](do-not-localize/correspondence-management.png)
+![Hero-Bild](do-not-localize/correspondence-management.png)
 
 Interaktive Kommunikation zentralisiert und verwaltet die Erstellung, Anordnung und Bereitstellung von sicheren, personalisierten und interaktiven Korrespondenzen wie Geschäftskorrespondenz, Dokumente, Kontoauszüge, Mitteilungen über finanzielle Leistungen, Marketing-Mails, Rechnungen und Begrüßungssets.
 
@@ -82,7 +83,7 @@ Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz, um Kun
    <td>Druck</td>
   </tr>
   <tr>
-   <td>Aufhebung der Veröffentlichung planen</td>
+   <td>Schema</td>
    <td>Formulardatenmodell </td>
    <td>Datenwörterbuch </td>
   </tr>

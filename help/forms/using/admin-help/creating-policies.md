@@ -7,10 +7,11 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4713'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -106,7 +107,7 @@ Wenn Sie Richtlinien bearbeiten, gelten diese Einschränkungen:
 
    >[!NOTE]
    >
-   Sie können einen Richtliniennamen erstellen, der erweiterte Zeichen enthält. Wenn jedoch ein Vergleich zwischen zwei Zeichenfolgen durchgeführt wird, werden Zeichen mit und ohne Akzentzeichen wie &quot;e&quot;und &quot;é&quot;als identisch betrachtet. Wenn jemand eine Richtlinie erstellt, wird ein Vergleich durchgeführt, um zu überprüfen, ob eine Richtlinie mit demselben Namen vorhanden ist. Der Vergleich kann nicht zwischen Namen unterscheiden, die mit Ausnahme von Akzentzeichen identisch sind. Es wird davon ausgegangen, dass die Richtlinie bereits zur Datenbank hinzugefügt und die neue nicht hinzugefügt wurde.
+   >Sie können einen Richtliniennamen erstellen, der erweiterte Zeichen enthält. Wenn jedoch ein Vergleich zwischen zwei Zeichenfolgen durchgeführt wird, werden Zeichen mit und ohne Akzentzeichen wie &quot;e&quot;und &quot;é&quot;als identisch betrachtet. Wenn jemand eine Richtlinie erstellt, wird ein Vergleich durchgeführt, um zu überprüfen, ob eine Richtlinie mit demselben Namen vorhanden ist. Der Vergleich kann nicht zwischen Namen unterscheiden, die mit Ausnahme von Akzentzeichen identisch sind. Es wird davon ausgegangen, dass die Richtlinie bereits zur Datenbank hinzugefügt und die neue nicht hinzugefügt wurde.
 
 1. Fügen Sie der Richtlinie Benutzer und Gruppen hinzu und legen Sie die entsprechenden Berechtigungen fest. (Siehe [Benutzer und Gruppen](creating-policies.md#users-and-groups).
 1. Wählen Sie unter &quot;Allgemeine Einstellungen&quot;die entsprechenden Optionen aus. (Siehe [Allgemeine Einstellungen](creating-policies.md#general-settings).
@@ -126,7 +127,7 @@ Geben Sie im Bereich Benutzer und Gruppen die Benutzer an, die Zugriff auf Dokum
 
 >[!NOTE]
 >
-Der Dokumentherausgeber ist der Benutzer, der das Dokument mit der Richtlinie schützt. Dieser Benutzer ist standardmäßig immer in eine Richtlinie mit vollen Zugriffsrechten eingeschlossen, einschließlich Sperren und Wechseln von Richtlinien. Administratoren können jedoch die Zugriffsberechtigungen des Dokumentherausgebers für freigegebene Richtlinien ändern. Beispielsweise kann der Administrator den Dokumentherausgeber daran hindern, den Dokumentzugriff zu sperren oder die Richtlinie zu wechseln.
+>Der Dokumentherausgeber ist der Benutzer, der das Dokument mit der Richtlinie schützt. Dieser Benutzer ist standardmäßig immer in eine Richtlinie mit vollen Zugriffsrechten eingeschlossen, einschließlich Sperren und Wechseln von Richtlinien. Administratoren können jedoch die Zugriffsberechtigungen des Dokumentherausgebers für freigegebene Richtlinien ändern. Beispielsweise kann der Administrator den Dokumentherausgeber daran hindern, den Dokumentzugriff zu sperren oder die Richtlinie zu wechseln.
 
 **Benutzer oder Gruppe hinzufügen:** Um einen Benutzer oder eine Benutzergruppe hinzuzufügen, klicken Sie auf Benutzer oder Gruppe hinzufügen und dann auf Erweiterte Suche , um Benutzer oder Gruppen zu finden. Zu den Benutzern gehören die internen Benutzer Ihrer Organisation und eingeladene Benutzer, die sich bei Document Security registriert haben. Wenn Sie diese Option auswählen, wird die Seite Benutzer oder Gruppe hinzufügen angezeigt:
 
@@ -138,7 +139,7 @@ Der Dokumentherausgeber ist der Benutzer, der das Dokument mit der Richtlinie sc
 
 >[!NOTE]
 >
-Wenn Sie einen korrekten Namen eines eingeladenen Benutzers oder eine E-Mail-Adresse eingeben und kein Ergebnis zurückgegeben wird, hat sich der Benutzer möglicherweise noch nicht registriert oder das Konto kann gelöscht werden. Sie können versuchen, den Benutzer als eingeladenen Benutzer hinzuzufügen, oder sich an Ihren Administrator wenden.
+>Wenn Sie einen korrekten Namen eines eingeladenen Benutzers oder eine E-Mail-Adresse eingeben und kein Ergebnis zurückgegeben wird, hat sich der Benutzer möglicherweise noch nicht registriert oder das Konto kann gelöscht werden. Sie können versuchen, den Benutzer als eingeladenen Benutzer hinzuzufügen, oder sich an Ihren Administrator wenden.
 
 **Neuen Benutzer einladen:** Um einen eingeladenen Benutzer hinzuzufügen, klicken Sie auf &quot;Neuen Benutzer einladen&quot;, geben Sie die E-Mail-Adresse des Benutzers in das angezeigte Feld ein und klicken Sie auf &quot;Einladen&quot;. Diese Option ist nur verfügbar, wenn sie vom Administrator aktiviert wurde. Wenn Sie einer Richtlinie neue eingeladene Benutzer hinzufügen, sendet Document Security eine Einladungs-E-Mail zur Registrierung, wenn die Benutzer noch nicht zur Registrierung eingeladen wurden. Die Benutzer müssen den Link in der E-Mail verwenden, um ein Konto zu erstellen, und dann das Konto aktivieren.
 
@@ -148,7 +149,7 @@ Nach der Registrierung können eingeladene Benutzer richtliniengeschützte Dokum
 
 >[!NOTE]
 >
-Um den anonymen Zugriff auf ein richtliniengeschütztes Dokument zuzulassen, für das dieser Zugriff derzeit nicht möglich ist, entfernen Sie die vorhandene Richtlinie und wenden Sie dann eine Richtlinie an, die den anonymen Zugriff zulässt. Wenn Sie die vorhandene Richtlinie wechseln oder ändern, müssen sich die Benutzer dennoch anmelden, um auf das Dokument zuzugreifen.
+>Um den anonymen Zugriff auf ein richtliniengeschütztes Dokument zuzulassen, für das dieser Zugriff derzeit nicht möglich ist, entfernen Sie die vorhandene Richtlinie und wenden Sie dann eine Richtlinie an, die den anonymen Zugriff zulässt. Wenn Sie die vorhandene Richtlinie wechseln oder ändern, müssen sich die Benutzer dennoch anmelden, um auf das Dokument zuzugreifen.
 
 #### Dokumentberechtigungen für Benutzer und Gruppen angeben {#specify-the-document-permissions-for-users-and-groups}
 
@@ -212,13 +213,13 @@ Der Bereich &quot;Allgemeine Einstellungen&quot;enthält die folgenden Einstellu
 
 >[!NOTE]
 >
-Der Gültigkeitszeitraum basiert auf der Zeitzone des Document Security-Systems und nicht auf der Zeitzone des lokalen Computers.
+>Der Gültigkeitszeitraum basiert auf der Zeitzone des Document Security-Systems und nicht auf der Zeitzone des lokalen Computers.
 
 **Prüfung:** Sie können die Prüfung auf Ereignisse im Zusammenhang mit einem richtliniengeschützten Dokument aktivieren oder deaktivieren. Document Security kann beispielsweise Ereignisse wie Versuche, ein Dokument zu öffnen, aufzeichnen. Geprüfte Ereignisse werden in der Liste auf der Seite &quot;Ereignisse&quot;angezeigt. Wenn Sie diese Option nicht auswählen, zeichnet Document Security keine Ereignisse für Dokumente auf, die mit der Richtlinie verknüpft sind.
 
 >[!NOTE]
 >
-Der Administrator muss außerdem die Serverprüfung auf der Konfigurationsseite &quot;Prüfungs- und Datenschutzeinstellungen&quot;aktivieren, damit die Prüffunktion funktioniert.
+>Der Administrator muss außerdem die Serverprüfung auf der Konfigurationsseite &quot;Prüfungs- und Datenschutzeinstellungen&quot;aktivieren, damit die Prüffunktion funktioniert.
 
 **Erweiterte Nutzungsverfolgung:** Aktivieren oder deaktivieren Sie die erweiterte Nutzungsverfolgung. Document Security unterstützt die Verfolgung von Benutzerereignissen, die mit verschiedenen Vorgängen verknüpft sind, die auf einer PDF-Datei ausgeführt werden. Auf das Document Security-Objekt kann mithilfe eines JavaScripts zugegriffen werden. Beispiele für Ereignisse, die von einer richtliniengeschützten PDF ausgelöst werden, sind das Klicken auf eine Schaltfläche, die Wiedergabe einer Multimedia-Datei oder das Speichern einer Datei. Mit dem Document Security-Objekt können Sie auch Benutzerinformationen abrufen. Das Tracking von Ereignissen kann vom Document Security-Server auf globaler Ebene oder auf Richtlinienebene aktiviert werden.
 
@@ -244,7 +245,7 @@ Wenn Sie die globalen Authentifizierungseinstellungen überschreiben, können Si
 
 >[!NOTE]
 >
-Erweiterte Authentifizierung wird unter Apple Mac OS X mit Adobe Acrobat-Version 11.0.6 und höher unterstützt.
+>Erweiterte Authentifizierung wird unter Apple Mac OS X mit Adobe Acrobat-Version 11.0.6 und höher unterstützt.
 
 ### Erweiterte Einstellungen {#advanced-settings}
 
@@ -258,7 +259,7 @@ Wenn Sie eine Richtlinie bearbeiten und der Administrator ein konfiguriertes Was
 
 >[!NOTE]
 >
-Bei Richtlinien, die anonymen Benutzerzugriff bieten, werden der Benutzername und die Kennung eines anonymen Benutzers nicht als Wasserzeichen angezeigt, selbst wenn Sie diesen Typ von Wasserzeichen auswählen.
+>Bei Richtlinien, die anonymen Benutzerzugriff bieten, werden der Benutzername und die Kennung eines anonymen Benutzers nicht als Wasserzeichen angezeigt, selbst wenn Sie diesen Typ von Wasserzeichen auswählen.
 
 **Nur zertifizierte Acrobat-Plug-Ins für PDF-Datei verwenden:** Bei Auswahl dieser Option für eine Richtlinie wird festgelegt, dass Acrobat 8.0 und höher im zertifizierten Modus ausgeführt werden muss, wenn durch die Richtlinie geschützte Dokumente geöffnet werden. Wenn Acrobat im zertifizierten Modus ausgeführt wird, werden keine Plug-ins von Drittanbietern geladen.
 
@@ -279,7 +280,7 @@ Der Bereich Unveränderliche erweiterte Einstellungen enthält die folgenden Ein
 **Verschlüsselungsalgorithmus und Schlüssellänge:** Dient zum Schutz Ihrer Dokumente. Sie können aus folgenden Optionen auswählen:
 
 * AES 128-Bit
-* AES 256-Bit. Diese Option wird nur von Acrobat 9.0 und höher unterstützt. Um die AES 256-Verschlüsselung für PDF-Dateien zu verwenden, rufen Sie die Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy-Dateien ab und installieren Sie sie. Diese Dateien ersetzen die Dateien „local_policy.jar“ und „US_export_policy.jar“ im Ordner „[JAVE_HOME] /lib/security“. Falls Sie beispielsweise Sun JDK 1.6 verwenden, kopieren Sie die heruntergeladenen Dateien in den Ordner „[dep-Stammordner]/Java/jdk1.6.0_26/lib/security“. Sie können diese Dateien von [Java SE-Downloads](https://java.sun.com/javase/downloads/index.jsp).
+* AES 256-Bit. Diese Option wird nur von Acrobat 9.0 und höher unterstützt. Um die AES-256-Verschlüsselung für PDF-Dateien zu verwenden, müssen Sie die Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy-Dateien beziehen und installieren. Diese Dateien ersetzen die Dateien „local_policy.jar“ und „US_export_policy.jar“ im Ordner „[JAVE_HOME] /lib/security“. Falls Sie beispielsweise Sun JDK 1.6 verwenden, kopieren Sie die heruntergeladenen Dateien in den Ordner „[dep-Stammordner]/Java/jdk1.6.0_26/lib/security“. Sie können diese Dateien von [Java SE-Downloads](https://java.sun.com/javase/downloads/index.jsp).
 * Keine Verschlüsselung. Acrobat 9.0 und höher unterstützen diese Option derzeit. Wenn Sie diese Option auswählen, sind die Optionen für Dokumenteinschränkungen deaktiviert. Diese Option kann nützlich sein, wenn Sie Document Security für die Dokumentenprüfung oder Versionskontrolle verwenden, das Dokument jedoch nicht verschlüsseln möchten.
 
 **Dokumenteinschränkungen:** Wählen Sie PDF-Dokumentkomponenten aus, die verschlüsselt werden sollen. Andere Clientanwendungen verschlüsseln das gesamte Dokument, jedoch keine verknüpften oder eingebetteten Dateien. Sie können aus folgenden Optionen auswählen:
@@ -296,7 +297,7 @@ Neben einer deaktivierten Richtlinie wird ein rotes X angezeigt.
 
 >[!NOTE]
 >
-Administratoren können persönliche Richtlinien nicht deaktivieren und Benutzer können ihre eigenen Richtlinien nicht aktivieren und deaktivieren.
+>Administratoren können persönliche Richtlinien nicht deaktivieren und Benutzer können ihre eigenen Richtlinien nicht aktivieren und deaktivieren.
 
 1. Klicken Sie auf der Document Security-Seite auf Richtlinien und dann auf die Registerkarte Richtliniensätze .
 1. Klicken Sie auf den Namen des entsprechenden Richtliniensatzes und dann auf die Registerkarte Richtlinien .
@@ -322,7 +323,7 @@ Sie können detailliertere Informationen zu einer Richtlinie anzeigen, die in de
 
 >[!NOTE]
 >
-Richtlinien, die Acrobat automatisch für die Empfänger von Dokumenten generiert, die an E-Mail-Nachrichten in Microsoft Outlook angehängt sind, werden nicht in der Richtlinienliste angezeigt. Sie können diese Richtlinien nur anzeigen, indem Sie die Seite &quot;Dokumentdetails&quot;für das zugehörige Dokument öffnen.
+>Richtlinien, die Acrobat automatisch für die Empfänger von Dokumenten generiert, die an E-Mail-Nachrichten in Microsoft Outlook angehängt sind, werden nicht in der Richtlinienliste angezeigt. Sie können diese Richtlinien nur anzeigen, indem Sie die Seite &quot;Dokumentdetails&quot;für das zugehörige Dokument öffnen.
 
 1. Klicken Sie auf der Document Security-Seite auf Richtlinien und dann auf die Registerkarte Meine Richtlinien .
 1. Füllen Sie die Suchinformationen aus, damit Sie nach persönlichen Richtlinien suchen können.
@@ -375,7 +376,7 @@ Externe Benutzer können Richtlinien nur kopieren, wenn der Administrator diese 
 
    >[!NOTE]
    >
-   Sie können einen Richtliniennamen erstellen, der erweiterte Zeichen enthält. Wenn jedoch ein Vergleich zwischen zwei Zeichenfolgen durchgeführt wird, werden Zeichen mit und ohne Akzentzeichen wie &quot;e&quot;und &quot;é&quot;als identisch betrachtet. Wenn jemand eine Richtlinie erstellt, wird ein Vergleich durchgeführt, um zu überprüfen, ob eine Richtlinie mit demselben Namen vorhanden ist. Der Vergleich kann nicht zwischen Namen unterscheiden, die mit Ausnahme von Akzentzeichen identisch sind. Es wird davon ausgegangen, dass die Richtlinie bereits zur Datenbank hinzugefügt und die neue nicht hinzugefügt wurde.
+   >Sie können einen Richtliniennamen erstellen, der erweiterte Zeichen enthält. Wenn jedoch ein Vergleich zwischen zwei Zeichenfolgen durchgeführt wird, werden Zeichen mit und ohne Akzentzeichen wie &quot;e&quot;und &quot;é&quot;als identisch betrachtet. Wenn jemand eine Richtlinie erstellt, wird ein Vergleich durchgeführt, um zu überprüfen, ob eine Richtlinie mit demselben Namen vorhanden ist. Der Vergleich kann nicht zwischen Namen unterscheiden, die mit Ausnahme von Akzentzeichen identisch sind. Es wird davon ausgegangen, dass die Richtlinie bereits zur Datenbank hinzugefügt und die neue nicht hinzugefügt wurde.
 
 1. Klicken Sie auf OK.
 
@@ -392,7 +393,7 @@ Eingeladene Benutzer können Richtlinien nur löschen, wenn der Administrator di
 
 >[!NOTE]
 >
-Verwenden Sie die Clientanwendung, um Richtlinien aus Dokumenten zu entfernen. (Siehe Acrobat-Hilfe oder die entsprechende Hilfe zu Acrobat Reader DC-Erweiterungen.)
+>Verwenden Sie die Clientanwendung, um Richtlinien aus Dokumenten zu entfernen. (Siehe Acrobat-Hilfe oder die entsprechende Hilfe zu Acrobat Reader DC-Erweiterungen.)
 
 ## Richtlinienliste sortieren {#sort-the-policy-list}
 

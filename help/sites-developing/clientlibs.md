@@ -1,16 +1,17 @@
 ---
 title: Verwenden Client-seitiger Bibliotheken
-description: AEM bietet Client-seitige Bibliotheksordner, mit denen Sie Ihren clientseitigen Code im Repository speichern, ihn in Kategorien organisieren und definieren können, wann und wie jede Codekategorie dem Client bereitgestellt werden soll
+description: AEM stellt Client-seitige Bibliotheksordner zur Verfügung, mit denen Sie Ihren Client-seitigen Code im Repository speichern, in Kategorien organisieren und definieren können, wann und wie jede Code-Kategorie dem Client bereitgestellt werden soll.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2853'
-ht-degree: 86%
+source-wordcount: '2791'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 86%
 
 Moderne Websites beruhen in hohem Maße auf der Client-seitigen Verarbeitung durch einen komplexen JavaScript- und CSS-Code. Die Organisation und Optimierung der Bereitstellung dieses Codes kann äußerst kompliziert sein.
 
-Um dieses Problem zu beheben, bietet AEM **Clientseitige Bibliotheksordner**, mit dem Sie Ihren clientseitigen Code im Repository speichern, ihn in Kategorien organisieren und definieren können, wann und wie jede Codekategorie dem Client bereitgestellt werden soll. Das Client-seitige Bibliothekssystem übernimmt dann das Erstellen der korrekten Links in der endgültigen Web-Seite, um den korrekten Code zu laden.
+Um Abhilfe zu schaffen, stellt AEM **Client-seitige Bibliotheksordner** zur Verfügung, mit denen Sie Ihren Client-seitigen Code im Repository speichern, in Kategorien organisieren und definieren können, wann und wie jede Code-Kategorie dem Client bereitgestellt werden soll. Das Client-seitige Bibliothekssystem übernimmt dann das Erstellen der korrekten Links in der endgültigen Web-Seite, um den korrekten Code zu laden.
 
 ## Funktionsweise Client-seitiger Bibliotheken in AEM {#how-client-side-libraries-work-in-aem}
 
@@ -34,7 +35,7 @@ Client-seitige Bibliotheken (also JS- oder CSS-Dateien) werden meist in den HTML
 ...
 ```
 
-Dieser Ansatz funktioniert zwar in AEM, kann aber zu Problemen führen, wenn Seiten und ihre Komponenten komplex werden. In solchen Fällen besteht die Gefahr, dass mehrere Kopien derselben JS-Bibliothek in die endgültige HTML-Ausgabe aufgenommen werden. Um dies zu vermeiden und einen logischen Aufbau Client-seitiger Bibliotheken zu ermöglichen, verwendet AEM **Client-seitige Bibliotheksordner**.
+Obwohl diese Vorgehensweise in AEM funktioniert, kann sie zu Problemen führen, wenn die Seiten und die darin enthaltenen Komponenten zu komplex werden. Dann besteht die Gefahr, dass mehrere Kopien derselben JS-Bibliothek in der endgültigen HTML-Ausgabe enthalten sind. Um dies zu vermeiden und einen logischen Aufbau Client-seitiger Bibliotheken zu ermöglichen, verwendet AEM **Client-seitige Bibliotheksordner**.
 
 Ein Client-seitiger Bibliotheksordner ist ein Repository-Knoten des Typs `cq:ClientLibraryFolder`. Seine Definition in [CND-Notation](https://jackrabbit.apache.org/node-type-notation.html) lautet:
 
@@ -59,7 +60,7 @@ Jeder `cq:ClientLibraryFolder` wird mit einer Reihe von JS- und/oder CSS-Dateien
 
 ## Referenzieren von Client-seitigen Bibliotheken {#referencing-client-side-libraries}
 
-Da HTL die bevorzugte Technologie zur Entwicklung von AEM Sites ist, sollte HTL verwendet werden, um Client-seitige Bibliotheken in AEM einzuschließen. Dies ist jedoch auch mit JSP möglich.
+Da HTL die bevorzugte Technologie zur Entwicklung von AEM Sites ist, sollte HTL verwendet werden, um Client-seitige Bibliotheken in AEM einzuschließen. Sie können dazu jedoch auch JSP verwenden.
 
 ### Verwenden von HTL {#using-htl}
 
@@ -82,7 +83,7 @@ Fügen Sie Ihrem JSP-Code ein `ui:includeClientLib`-Tag hinzu, um der generierte
 <ui:includeClientLib categories="<%= categories %>" />
 ```
 
-Beispiel: Der `/etc/clientlibs/foundation/jquery`-Knoten hat den Typ `cq:ClientLibraryFolder` mit dem Wert `cq.jquery` für die Eigenschaft „categories“. Der folgende Code in einer JSP-Datei verweist auf die Bibliotheken:
+Beispiel: Der `/etc/clientlibs/foundation/jquery`-Knoten hat den Typ `cq:ClientLibraryFolder` mit dem Wert `cq.jquery` für die Eigenschaft „categories“. Mit dem folgenden Code in einer JSP-Datei wird auf die Bibliotheken verwiesen:
 
 ```xml
 <ui:includeClientLib categories="cq.jquery"/>
@@ -94,11 +95,11 @@ Die generierte HTML-Seite enthält den folgenden Code:
 <script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
 ```
 
-Vollständige Informationen, einschließlich der Attribute zum Filtern von JS-, CSS- oder Designbibliotheken, finden Sie unter [ui:includeClientLib](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
+Vollständige Informationen, einschließlich der Attribute zum Filtern von JS-, CSS- oder Design-Bibliotheken, finden Sie unter [ui:includeClientLib](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>` wurde früher häufig zum Einschließen von Client-Bibliotheken verwendet, wird aber seit AEM 5.6 nicht mehr unterstützt. [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib)  sollte stattdessen wie oben beschrieben verwendet werden.
+>`<cq:includeClientLib>` wurde früher häufig zum Einschließen von Client-Bibliotheken verwendet, wird aber seit AEM 5.6 nicht mehr unterstützt. Stattdessen sollte [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) wie oben beschrieben verwendet werden.
 
 ## Erstellen von Client-Bibliotheksordnern {#creating-client-library-folders}
 
@@ -108,7 +109,7 @@ Der Knoten enthält eine oder mehrere Quelldateien, die zur Laufzeit zu einer ei
 
 Client-Bibliotheksordner enthalten die folgenden Elemente:
 
-* Die JS- und/oder CSS-Quelldateien zum Zusammenführen.
+* Die zusammenzuführenden JS- und/oder CSS-Quelldateien.
 * Ressourcen, die CSS-Styles unterstützen, z. B. Bilddateien.
 
   **Hinweis:** Sie können Quelldateien mit Unterordnern organisieren.
@@ -118,9 +119,9 @@ Client-Bibliotheksordner enthalten die folgenden Elemente:
 
 Weitere Informationen zu Anforderungen speziell für Client-Bibliotheken für Widgets finden Sie unter [Verwenden und Erweitern von Widgets](/help/sites-developing/widgets.md).
 
-Der Webclient benötigt eine Zugriffsberechtigung für den Knoten `cq:ClientLibraryFolder`. Sie können auch Bibliotheken aus gesicherten Bereichen des Repositorys verfügbar machen (siehe Einbetten von Code aus anderen Bibliotheken weiter unten).
+Der Webclient benötigt eine Zugriffsberechtigung für den Knoten `cq:ClientLibraryFolder`. Sie können auch Bibliotheken aus geschützten Bereichen des Repositorys bereitstellen (siehe „Einbetten von Code aus anderen Bibliotheken“ unten).
 
-### Überschreiben von Bibliotheken in /lib {#overriding-libraries-in-lib}
+### Überschreiben von Bibliotheken in „/lib“ {#overriding-libraries-in-lib}
 
 Unten befindliche Client-Bibliotheksordner `/apps` Vorrang vor Ordnern mit demselben Namen haben, die sich in `/libs`. Beispiel: `/apps/cq/ui/widgets` hat Vorrang vor `/libs/cq/ui/widgets`. Wenn diese Bibliotheken derselben Kategorie angehören, wird die Bibliothek unter `/apps` verwendet.
 
@@ -138,7 +139,7 @@ In früheren Versionen befanden sich Client-Bibliotheksordner unter `/etc/client
 
 Damit die Client-Bibliotheken unter `/apps` zugänglich sind, wird ein Proxy-Servlet verwendet. Die ACLs werden weiterhin im Client-Bibliotheksordner erzwungen, aber das Servlet ermöglicht, dass der Content über `/etc.clientlibs/` gelesen wird, wenn die `allowProxy`-Eigenschaft auf `true` gesetzt ist.
 
-Der Zugriff auf eine statische Ressource ist nur über den Proxy möglich, wenn sie sich unter einer Ressource unter dem Client-Bibliotheksordner befindet.
+Eine statische Ressource kann nur über den Proxy abgerufen werden, wenn sie sich unter einer Ressource unter dem Client-Bibliotheksordner befindet.
 
 Beispiel:
 
@@ -167,10 +168,10 @@ Sie legen die Eigenschaft `allowProxy` für `foo` auf „true“ fest.
 
    * Name: categories
    * Typ: String
-   * Wert: Der Kategoriename
+   * Wert: Kategoriename
    * Multi: Auswählen
 
-1. Fügen Sie auf beliebige Weise Quelldateien zum Bibliotheksordner hinzu. Verwenden Sie beispielsweise einen WebDav-Client, um Dateien zu kopieren, oder erstellen Sie eine Datei und erstellen Sie den Inhalt manuell.
+1. Fügen Sie die Quelldateien auf beliebige Weise zum Bibliotheksordner hinzu. Sie können zum Beispiel einen WebDav-Client verwenden, um Dateien zu kopieren, oder eine Datei erstellen und den Inhalt manuell eingeben.
 
    **Hinweis:** Sie können Quelldateien bei Bedarf in Unterordnern organisieren.
 
@@ -205,7 +206,7 @@ Die Abhängigkeiten müssen ein anderer `cq:ClientLibraryFolder` sein. Fügen Si
 * **Typ:** String[]
 * **Werte:** Der Wert der categories-Eigenschaft des cq:ClientLibraryFolder-Knotens, von dem der aktuelle Bibliotheksordner abhängig ist.
 
-Beispielsweise weist /`etc/clientlibs/myclientlibs/publicmain` eine Abhängigkeit von der `cq.jquery`-Bibliothek auf. Die JSP, die auf die Haupt-Client-Bibliothek verweist, generiert HTML, die den folgenden Code enthält:
+Beispielsweise weist /`etc/clientlibs/myclientlibs/publicmain` eine Abhängigkeit von der `cq.jquery`-Bibliothek auf. Die JSP, die die Haupt-Client-Bibliothek referenziert, generiert HTML mit dem folgenden Code:
 
 ```xml
 <script src="/etc/clientlibs/foundation/cq.jquery.js" type="text/javascript">
@@ -243,7 +244,7 @@ In einigen Fällen enthält der endgültige HTML-Code, den Ihre Veröffentlichun
 
 In solchen Fällen kann es nützlich sein, den gesamten benötigten Client-Bibliotheks-Code in einer einzelnen Datei zu kombinieren, um die Anzahl der Anfragen in beide Richtungen beim Laden einer Seite zu reduzieren. Zu diesem Zweck können Sie die erforderlichen Bibliotheken in Ihre App-spezifische Client-Bibliothek einbetten. Nutzen Sie dazu die `embed`-Eigenschaft des `cq:ClientLibraryFolder`-Knotens.
 
-Die folgenden Client-Bibliothekskategorien sind in AEM enthalten. Sie sollten nur diejenigen einbetten, die für die Funktionsweise Ihrer bestimmten Site erforderlich sind. Allerdings **Sie sollten die hier aufgeführte Reihenfolge beibehalten**:
+Die folgenden Client-Bibliothekskategorien sind in AEM vorhanden. Sie sollten nur die Kategorien einbetten, die für die Funktion Ihrer Site erforderlich sind. Sie sollten jedoch **die hier angegebene Reihenfolge einhalten**:
 
 1. `browsermap.standard`
 1. `browsermap`
@@ -304,7 +305,7 @@ Um einen Client-Bibliotheksordner mit einer Gerätegruppe zu verknüpfen, fügen
 
 Beispiel: Die folgende Tabelle listet den Wert der Eigenschaft `channels` für jeden Client-Bibliotheksordner der Kategorie `cq.widgets` auf:
 
-| Client-Bibliotheksordner | Wert der Eigenschaft &quot;channels&quot; |
+| Client-Bibliotheksordner | Wert der Eigenschaft „channels“ |
 |---|---|
 | `/libs/cq/analytics/widgets` | `!touch` |
 | `/libs/cq/analytics/widgets/themes/default` | `!touch` |
@@ -323,18 +324,18 @@ AEM ist mit austauschbaren Präprozessoren kompatibel und bietet Unterstützung 
 
 Die austauschbaren Präprozessoren bieten flexible Einsatzmöglichkeiten, z. B.:
 
-* Definition von ScriptProcessors, die Skriptquellen verarbeiten können
-* Prozessoren sind mit Optionen konfigurierbar
-* Prozessoren können zur Minimierung, aber auch für nicht minimierte Fälle verwendet werden
-* Die Client-Bibliothek kann den zu verwendenden Prozessor festlegen
+* Es können ScriptProcessors zur Verarbeitung von Skriptquellen definiert werden.
+* Prozessoren sind mit Optionen konfigurierbar.
+* Prozessoren können zur Minimierung, aber auch für nicht minimierte Fälle verwendet werden.
+* Die Client-Bibliothek kann definieren, welcher Prozessor verwendet werden soll.
 
 >[!NOTE]
 >
->Standardmäßig verwendet AEM den YUI Compressor. In der [GitHub-Dokumentation zum YUI Compressor](https://github.com/yui/yuicompressor/issues) finden Sie eine Liste bekannter Probleme. Ein Wechsel zum GCC Compressor für bestimmte Client-Bibliotheken kann einige Probleme beheben, die mit YUI auftreten.
+>Standardmäßig verwendet AEM den YUI Compressor. In der [GitHub-Dokumentation zum YUI Compressor](https://github.com/yui/yuicompressor/issues) finden Sie eine Liste bekannter Probleme. Ein Wechsel zu GCC Compressor für bestimmte Client-Bibliotheken kann einige mit YUI verbundene Probleme beheben.
 
 >[!CAUTION]
 >
->Platzieren Sie eine minimierte Bibliothek nicht in einer Client-Bibliothek. Stellen Sie stattdessen die Rohbibliothek bereit. Wenn eine Minimierung erforderlich ist, können Sie die Möglichkeiten der Präprozessoren verwenden.
+>Platzieren Sie eine minimierte Bibliothek nicht in einer Client-Bibliothek. Stellen Sie stattdessen die Rohbibliothek bereit. Wenn eine Minimierung erforderlich ist, können Sie die Optionen der Präprozessoren verwenden.
 
 ### Nutzung {#usage}
 
@@ -388,7 +389,7 @@ Weitere Informationen zu GCC-Optionen finden Sie in der [GCC-Dokumentation](http
 
 ### Festlegen des Systemstandard-Minimierers {#set-system-default-minifier}
 
-YUI ist in AEM der Standardminimierer. Um stattdessen GCC festzulegen, führen Sie die folgenden Schritte aus.
+YUI ist in AEM der Standardminimierer. Gehen Sie wie folgt vor, um stattdessen GCC festzulegen.
 
 1. Rufen Sie Apache Felix Config Manager unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) auf.
 1. Suchen und bearbeiten Sie den **Adobe Granite HTML Library Manager**.
@@ -403,7 +404,7 @@ YUI ist in AEM der Standardminimierer. Um stattdessen GCC festzulegen, führen S
 
 AEM bietet eine Vielzahl von Tools zum Debuggen und Testen von Client-Bibliotheksordnern an.
 
-### Siehe Eingebettete Dateien {#see-embedded-files}
+### Siehe „Eingebettete Dateien“ {#see-embedded-files}
 
 Wenn Sie den Ursprung von eingebettetem Code nachvollziehen oder sicherstellen möchten, dass eingebettete Client-Bibliotheken die erwarteten Ergebnisse produzieren, können Sie die Namen der Dateien anzeigen, die zur Laufzeit eingebettet werden. Um die Dateinamen anzuzeigen, hängen Sie den Parameter `debugClientLibs=true` an die URL Ihrer Web-Seite an. Die Bibliothek, die generiert wird, enthält `@import`-Anweisungen anstelle des eingebetteten Codes.
 
@@ -431,7 +432,7 @@ Die Komponente `/libs/cq/granite/components/dumplibs/dumplibs` generiert eine Se
 
 `https://<host>:<port>/libs/granite/ui/content/dumplibs.test.html`
 
-Zu den Informationen gehören der Bibliothekspfad und -typ (CSS oder JS) sowie die Werte der Bibliotheksattribute, wie z. B. Kategorien und Abhängigkeiten. Nachfolgende Tabellen auf der Seite zeigen die Bibliotheken in jeder Kategorie und jedem Kanal.
+Die Informationen enthalten den Bibliothekspfad und -typ (CSS oder JS) sowie die Werte der Bibliotheksattribute, wie Kategorien und Abhängigkeiten. Nachfolgende Tabellen zeigen die Bibliotheken in jeder Kategorie und jedem Kanal an.
 
 ### Anzeigen der generierten Ausgabe {#see-generated-output}
 
@@ -453,8 +454,8 @@ Die Komponente `dumplibs` enthält einen Test-Selektor, der den für `ui:include
 
 Der HTML Library Manager-Service verarbeitet `cq:ClientLibraryFolder`-Tags und generiert die Bibliotheken zur Laufzeit. Der Umgebungs-, Entwicklungs- oder Produktionstyp bestimmt, wie der Dienst konfiguriert werden soll:
 
-* Sicherheit erhöhen: Debugging deaktivieren
-* Verbesserung der Leistung: Entfernen Sie Leerzeichen und komprimieren Sie Bibliotheken.
-* Lesbarkeit verbessern: Fügen Sie Leerzeichen ein und komprimieren Sie diese nicht.
+* Verbesserung der Sicherheit: Debugging deaktivieren
+* Verbesserung der Leistung: Leerzeichen entfernen und Bibliotheken komprimieren.
+* Verbesserung der Lesbarkeit: Leerzeichen einfügen und nicht komprimieren.
 
-Informationen zum Konfigurieren des Dienstes finden Sie unter [HTML Library Manager AEM](/help/sites-deploying/osgi-configuration-settings.md#aemhtmllibrarymanager).
+Informationen zum Konfigurieren des Dienstes finden Sie unter [AEM HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md#aemhtmllibrarymanager).

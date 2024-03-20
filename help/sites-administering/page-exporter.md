@@ -2,7 +2,8 @@
 title: Das Seiten-Export-Tool
 description: Erfahren Sie, wie Sie das Seiten-Export-Tool von Adobe Experience Manager (AEM) verwenden.
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 97%

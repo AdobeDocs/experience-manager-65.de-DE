@@ -2,10 +2,11 @@
 title: Erstellen und Organisieren von Seiten mit AEM
 description: Erfahren Sie, wie Sie mit Adobe Experience Manager Seiten erstellen und verwalten.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2417'
-ht-degree: 82%
+ht-degree: 88%
 
 ---
 
@@ -17,13 +18,13 @@ In diesem Abschnitt wird beschrieben, wie Sie mit Adobe Experience Manager (AEM)
 >
 >Ihr Konto muss über die erforderlichen [Zugriffsrechte](/help/sites-administering/security.md) und [Berechtigungen](/help/sites-administering/security.md#permissions) verfügen, damit Sie Aktionen auf Seiten durchführen können, beispielsweise erstellen, kopieren, verschieben, bearbeiten und löschen.
 >
->Wenn Sie auf Probleme stoßen, empfehlen wir Ihnen, sich an die bzw. den Systemadmin zu wenden.
+>Wenn Sie auf Probleme stoßen, empfehlen wir Ihnen, sich an die Systemadmins zu wenden.
 
 >[!NOTE]
 >
->Es gibt mehrere [Tastaturbefehle](/help/sites-authoring/keyboard-shortcuts.md) , die Sie über die Websites-Konsole verwenden können, um die Seitenorganisation effizienter zu gestalten.
+>Es steht eine Reihe von [Tastaturbefehlen](/help/sites-authoring/keyboard-shortcuts.md) in der Websites-Konsole zur Verfügung, die eine effizientere Seitenorganisation ermöglichen.
 
-## Website-Organisation {#organizing-your-website}
+## Organisieren Ihrer Website {#organizing-your-website}
 
 Organisieren Sie als Autor Ihre Website in AEM. Dazu gehört die Erstellung und Benennung von Inhaltsseiten, sodass Folgendes zutrifft:
 
@@ -104,7 +105,7 @@ Der **Seitentitel** und der **Seitenname** können separat erstellt werden, sind
 >
 >Denken Sie auch daran, dass einige Browser (z. B. ältere Versionen von IE) nur URLs bis zu einer bestimmten Länge akzeptieren, sodass auch technische Gründe für die Verwendung von kurzen Seitennamen bestehen.
 
-AEM beim Erstellen einer Seite [validiert den Seitennamen gemäß den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und dem JCR auferlegt.
+Beim Erstellen einer Seite [validiert AEM den Seitennamen entsprechend den AEM- und JCR-Konventionen](/help/sites-developing/naming-conventions.md).
 
 Mindestens zulässig sind die folgenden Zeichen:
 
@@ -131,7 +132,7 @@ Wenn Sie nur eine Seite angeben **Titel** leitet AEM die Seite beim Erstellen ei
 
 #### Name {#name}
 
-Wenn Sie eine Seite bereitstellen **Name** beim Erstellen einer Seite AEM [validiert den Namen gemäß den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR aufgezwungen. Die Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld mit einer erläuternden Meldung hervorgehoben.
+Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen gemäß den AEM- und JCR-Konventionen](/help/sites-developing/naming-conventions.md). Die Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld mit einer erläuternden Meldung hervorgehoben.
 
 ![caop-02](assets/caop-02.png)
 
@@ -213,7 +214,7 @@ Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstell
    * **Name**:
 
       * Mit diesem Wert wird der URI generiert. Wenn kein Name angegeben ist, wird der Name vom Titel abgeleitet.
-      * Wenn Sie eine Seite angeben **Name** beim Erstellen einer Seite AEM [validiert den Namen gemäß den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR aufgezwungen.
+      * Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen entsprechend den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR.
 
       * Die **Eingabe von ungültigen Zeichen** im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld markiert und eine erklärende Meldung angezeigt, die angibt, welche Zeichen entfernt/ersetzt werden müssen.
 
@@ -221,7 +222,7 @@ Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstell
    >
    >Siehe [Seitenbenennungskonventionen](#page-naming-conventions).
 
-   Die zum Erstellen einer Seite mindestens erforderlichen Informationen sind die **Titel**.
+   Zum Erstellen einer neuen Seite muss mindestens der **Titel** angegeben werden.
 
    ![caop-05](assets/caop-05.png)
 
@@ -378,7 +379,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 
 #### Asynchrone Aktionen {#asynchronous-actions}
 
-Seitenverschiebungsaktionen werden immer asynchron verarbeitet, sodass der Benutzer die Bearbeitung in der Benutzeroberfläche ungehindert fortsetzen kann.
+Seitenverschiebungsaktionen werden immer asynchron verarbeitet, sodass die Benutzenden die Bearbeitung in der Benutzeroberfläche ungehindert fortsetzen können.
 
 * Der Benutzer muss definieren, wann der asynchrone Vorgang ausgeführt werden soll.
    * **Jetzt** startet die Ausführung des asynchronen Auftrags sofort.
@@ -386,7 +387,7 @@ Seitenverschiebungsaktionen werden immer asynchron verarbeitet, sodass der Benut
 
   ![Asynchrone Seitenverschiebung](assets/asynchronous-page-move.png)
 
-Der Status asynchroner Aufträge kann im [**Status asynchroner Aufträge** Dashboard](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Globale Navigation** > **Instrumente** > **Aktivitäten** > **Aufträge**
+Der Status asynchroner Aufträge kann im [**Dashboard** Status asynchroner Aufträge](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) unter **Globale Navigation** > **Werkzeuge** > **Vorgänge** > **Aufträge** überprüft werden.
 
 >[!NOTE]
 >

@@ -7,10 +7,11 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 1ad4d5370356f160398b3c19080dc4494e12cba7
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2444'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -107,7 +108,7 @@ Erstellen Sie benutzerdefinierte Synchronisierungsaktionen zur Verwendung mit Ih
 
 * `LiveAction`-Klassen umfassen die folgenden Methoden:
 
-   * `getName`: Gibt den Namen der Aktion zurück. Der Name wird verwendet, um auf die Aktion zu verweisen, z. B. in Rollout-Konfigurationen.
+   * `getName`: Gibt den Namen der Aktion zurück. Der Name wird verwendet, um auf die Aktion zu verweisen, z. B. in Rollout-Konfigurationen.
    * `execute`: Führt die Aufgabe der Aktion aus.
 
 * `LiveActionFactory`-Klassen umfassen die folgenden Mitglieder:

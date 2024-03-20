@@ -4,9 +4,10 @@ description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Man
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
-workflow-type: ht
-source-wordcount: '1972'
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '1966'
 ht-degree: 100%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 Mit Adobe Experience Manager (AEM) können Sie mithilfe von Inhaltsfragmenten seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und [veröffentlichen](/help/sites-authoring/content-fragments.md). Sie ermöglichen Ihnen die Vorbereitung von Inhalten für die Verwendung an mehreren Orten/über mehrere Kanäle, was ideal für die Headless-Bereitstellung ist.
 
-Inhaltsfragmente enthalten strukturierten Inhalt:
+Inhaltsfragmente enthalten strukturierte Inhalte:
 
 * Sie basieren auf einem [Inhaltsfragmentmodell](/help/assets/content-fragments/content-fragments-models.md), das eine Struktur für das daraus entstehende Fragment vordefiniert.
 * Die Struktur kann variieren:
@@ -192,7 +193,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 
    * In den Modi [Rich-Text](/help/assets/content-fragments/content-fragments-variations.md#rich-text) und [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown) kann ein Absatz als Kopfzeile formatiert werden. In diesem Fall gehören dieser und der folgende Absatz als eine Einheit zusammen.
 
-   * Ermöglichen die Inhaltssteuerung während der Seitenbearbeitung
+   * Aktivieren Sie die Inhaltskontrolle während der Seitenerstellung.
 
 * **In ein Fragment eingefügte Assets (Fragmente mit gemischten Medien)**
 
@@ -252,7 +253,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
    * Ausgabedarstellungen von Fragmenttext, die für einen bestimmten redaktionellen Zweck bestimmt sind; können sich auf einen Kanal beziehen, sind aber nicht obligatorisch; können auch für lokale Ad-hoc-Änderungen verwendet werden.
    * Werden als Kopien einer **primären Version** erstellt, können dann aber nach Bedarf bearbeitet werden; zwischen den Varianten selbst gibt es inhaltliche Überschneidungen.
    * können beim Erstellen von Fragmenten definiert werden;
-   * werden im Fragment gespeichert, um die Streuung von Inhaltskopien zu vermeiden;
+   * Werden im Fragment gespeichert, um zu vermeiden, dass Inhaltskopien verstreut werden.
    * können mit der Vorlage [synchronisiert](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) werden, wenn der Vorlageninhalt aktualisiert wurde;
    * können [zusammengefasst](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) werden, um Text schnell auf eine vordefinierte Länge zu kürzen;
    * sind auf der Registerkarte [Varianten](/help/assets/content-fragments/content-fragments-variations.md) des Fragment-Editors verfügbar.
@@ -277,12 +278,12 @@ Bei der Erstellung von Inhaltsfragmenten sollten Sie Folgendes beachten:
 
 * **Inhaltsmodelle**
 
-   * werden [mithilfe des Konfigurations-Browsers aktiviert](/help/assets/content-fragments/content-fragments-configuration-browser.md).
-   * werden [mithilfe von Tools erstellt](/help/assets/content-fragments/content-fragments-models.md).
+   * Werden [mithilfe des Konfigurations-Browsers aktiviert](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+   * Werden [mithilfe von Tools erstellt](/help/assets/content-fragments/content-fragments-models.md).
    * Erforderlich zum [Erstellen eines Fragments](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
    * Definiert die Struktur eines Fragments (Titel, Inhaltselemente, Tag-Definitionen).
    * Inhaltsmodelldefinitionen erfordern einen Titel und ein Datenelement. Alle weiteren Elemente sind optional.
-   * Das Modell kann Standardinhalte definieren – sofern zutreffend.
+   * Das Modell kann Standardinhalte definieren, sofern anwendbar.
    * Autoren können die definierte Struktur nicht ändern, wenn sie den Fragmentinhalt erstellen.
    * Änderungen, die nach dem Erstellen von abhängigen Inhaltsfragmenten an einem Modell vorgenommen wurden, können sich auf diese Inhaltsfragmente auswirken.
 

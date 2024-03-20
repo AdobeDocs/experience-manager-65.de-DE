@@ -8,10 +8,11 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 18%
+source-wordcount: '860'
+ht-degree: 20%
 
 ---
 
@@ -59,7 +60,7 @@ So können Kunden leichter nachvollziehen, welche Bereiche von **/libs** sicher 
 
 >[!NOTE]
 >
-Diese Richtlinien werden nur bei pfadbasierten Sling-Suchmechanismen durchgesetzt. Andere Bereiche von **/libs**, z. B. eine Client-seitige Bibliothek, die als `Internal` gekennzeichnet sind, können jedoch weiterhin mit einem standardmäßigen clientlib-Einschluss verwendet werden. Es ist wichtig, dass ein Kunde in diesen Fällen weiterhin die interne Klassifizierung berücksichtigt.
+>Diese Richtlinien werden nur bei pfadbasierten Sling-Suchmechanismen durchgesetzt. Andere Bereiche von **/libs**, z. B. eine Client-seitige Bibliothek, die als `Internal` gekennzeichnet sind, können jedoch weiterhin mit einem standardmäßigen clientlib-Einschluss verwendet werden. Es ist wichtig, dass ein Kunde in diesen Fällen weiterhin die interne Klassifizierung berücksichtigt.
 
 #### CRXDE Lite Content Type Indicators {#crxde-lite-content-type-indicators}
 
@@ -81,9 +82,9 @@ Auf CRXDE Lite angewendete Mixins zeigen Inhaltsknoten und Bäume an, die als `I
 
 >[!NOTE]
 >
-Ab AEM 6.5 empfiehlt Adobe die Verwendung der Mustererkennung, um Inhaltszugriffsverletzungen zu erkennen. Musterdetektorberichte sind detaillierter, erkennen mehr Probleme und reduzieren die Wahrscheinlichkeit falsch-positiver Ergebnisse.
+>Ab AEM 6.5 empfiehlt Adobe die Verwendung der Mustererkennung, um Inhaltszugriffsverletzungen zu erkennen. Musterdetektorberichte sind detaillierter, erkennen mehr Probleme und reduzieren die Wahrscheinlichkeit falsch-positiver Ergebnisse.
 >
-Weitere Informationen finden Sie unter [Bewerten der Aktualisierungskomplexität mit der Mustererkennung](/help/sites-deploying/pattern-detector.md).
+>Weitere Informationen finden Sie unter [Bewerten der Aktualisierungskomplexität mit der Mustererkennung](/help/sites-deploying/pattern-detector.md).
 
 AEM Version 6.5 enthält eine Konsistenzprüfung, um Kunden darauf hinzuweisen, dass überlagerte oder referenzierte Inhalte auf eine Weise verwendet werden, die nicht mit der Inhaltsklassifizierung übereinstimmt.
 

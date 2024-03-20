@@ -8,10 +8,11 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
-source-git-commit: 4a8155f754d1f71354717f5eb22511baab110916
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1921'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +40,7 @@ Die AEM 6.5-Umgebung bietet die folgenden aufgelisteten Designs für auf Kernkom
 
 Ein Design ist ein Paket, das die CSS-Datei, JavaScript-Dateien und Ressourcen (wie etwa Symbole) umfasst, die den Stil Ihrer adaptiven Formulare definieren. Ein Design für ein adaptives Formular folgt einer bestimmten Organisation, die aus den folgenden Komponenten besteht:
 
-* `src/theme.scss`: Dieser Ordner enthält die CSS-Datei, die einen großen Einfluss auf das gesamte Thema hat. Sie dient als zentralisierter Speicherort zur Definition und Verwaltung des Stils und Verhaltens Ihres Designs. Durch Bearbeitung dieser Datei können Sie Änderungen vornehmen, die im gesamten Design allgemein angewendet werden und das Erscheinungsbild und die Funktionalität Ihrer adaptiven Formular- und AEM Sites-Seiten beeinflussen.
+* `src/theme.scss`: Dieser Ordner enthält die CSS-Datei, die einen großen Einfluss auf das gesamte Design hat. Sie dient als zentralisierter Speicherort zur Definition und Verwaltung des Stils und Verhaltens Ihres Designs. Durch Bearbeitung dieser Datei können Sie Änderungen vornehmen, die im gesamten Design allgemein angewendet werden und das Erscheinungsbild und die Funktionalität Ihrer adaptiven Formular- und AEM Sites-Seiten beeinflussen.
 
 * `src/site`: Dieser Ordner enthält CSS-Dateien, die auf die gesamte Seite einer AEM-Site angewendet werden. Diese Dateien bestehen aus Code und Stilen, die die Gesamtfunktionalität und das Layout der Seite Ihrer AEM-Site beeinflussen. Alle hier vorgenommenen Änderungen werden auf sämtlichen Seiten Ihrer Site übernommen.
 
@@ -108,7 +109,7 @@ Die Beispiele in diesem Dokument basieren auf dem **Canvas**-Design, aber Sie k�
 
 Um ein Design für die auf Kernkomponenten-basierten adaptiven Formulare zu klonen, wählen Sie eines der folgenden Designs:
 
-* [Canvas-Design](https://github.com/adobe/aem-forms-theme-canvas)
+* [Design „Canvas“](https://github.com/adobe/aem-forms-theme-canvas)
 * [Design „WKND“](https://github.com/adobe/aem-forms-theme-wknd)
 * [Design „EASEL“](https://github.com/adobe/aem-forms-theme-easel)
 
@@ -284,7 +285,7 @@ Wenn das Paket installiert wurde, ist das Design zur Auswahl verfügbar.
 Schritte zum Anwenden eines Designs auf ein adaptives Formular:
 
 1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an.
-1. Geben Sie Ihre Anmeldedaten auf der Experience Manager-Anmeldeseite ein. Auswählen **Adobe Experience Manager** > **Forms** > **Forms und Dokumente**.
+1. Geben Sie Ihre Anmeldedaten auf der Experience Manager-Anmeldeseite ein. Wählen Sie **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente**.
 1. Klicken Sie auf **Erstellen** > **Adaptive Formulare**.
 1. Wählen Sie eine Vorlage mit Kernkomponenten für adaptive Formulare aus und klicken Sie auf **Weiter**. Es wird **Eigenschaften hinzufügen** angezeigt
 1. Geben Sie den **Namen** für Ihr adaptives Formular an.

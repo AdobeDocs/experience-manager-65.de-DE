@@ -1,15 +1,16 @@
 ---
 title: Mustertypen von ContextHub-UI-Modulen
-description: ContextHub bietet mehrere Muster-UI-Module, die Sie in Ihren Lösungen verwenden können.
+description: ContextHub bietet mehrere Beispiele für UI-Module, die Sie in Ihren Lösungen verwenden können.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: df28180f-7af4-437d-8e91-bfd305f73113
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 95%
+source-wordcount: '1171'
+ht-degree: 94%
 
 ---
 
@@ -181,7 +182,7 @@ Die Quelle des Benutzeroberflächenmoduls befindet sich unter /libs/granite/cont
 
 ### Konfiguration {#configuration-5}
 
-Instanzen des Benutzeroberflächenmoduls contexthub.screen-orientation benötigen keinen Wert für die Detailkonfiguration. Der folgende JSON-Text repräsentiert die Standardkonfiguration des Moduls. Die `clickable` Eigenschaft ist `false` Standardmäßig. Wenn Sie die Standardkonfiguration überschreiben, um `clickable` auf `true` zu setzen, wird beim Klicken auf das Modul ein Popup angezeigt, in dem Sie die Ausrichtung auswählen können.
+Instanzen des Benutzeroberflächenmoduls contexthub.screen-orientation benötigen keinen Wert für die Detailkonfiguration. Der folgende JSON-Text repräsentiert die Standardkonfiguration des Moduls. Die `clickable`-Eigenschaft ist standardmäßig `false`. Wenn Sie die Standardkonfiguration überschreiben, um `clickable` auf `true` zu setzen, wird beim Klicken auf das Modul ein Popup angezeigt, in dem Sie die Ausrichtung auswählen können.
 
 ```xml
 {

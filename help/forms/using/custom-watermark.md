@@ -7,10 +7,11 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: 7d90fade-1ca4-41d8-bbf9-45490465784a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '336'
-ht-degree: 60%
+ht-degree: 68%
 
 ---
 
@@ -47,13 +48,13 @@ Sie können die folgenden Schritte verwenden, um den Text und das Erscheinungsbi
 
       >[!NOTE]
       >
-      >Ändern Sie die /libs-Verzweigung nicht. Alle Änderungen, die Sie vornehmen, können verloren gehen, da sich diese Verzweigung ändern kann, wenn Sie:
+      >Ändern Sie die /libs-Verzweigung nicht. Alle Änderungen, die Sie vornehmen, gehen möglicherweise verloren, da diese Verzweigung sich ändern kann, wenn Sie:
       >
       >    
       >    
-      >    * Aktualisierung Ihrer Instanz
-      >    * Hotfix anwenden
-      >    * Feature Pack installieren
+      >    * Ihre Instanz aktualisieren
+      >    * einen Hotfix anwenden
+      >    * ein Feature Pack installieren
       >    
       >
 

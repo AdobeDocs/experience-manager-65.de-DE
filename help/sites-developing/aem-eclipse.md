@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 00473769-c447-4966-a71e-117c669e0151
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 98%
+source-wordcount: '746'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +24,7 @@ ht-degree: 98%
 
 Es bietet mehrere Funktionen, die die AEM-Entwicklung vereinfachen:
 
-* Nahtlose Integration mit AEM-Instanzen über Eclipse Server Connector.
+* Nahtlose Integration mit AEM Instanzen über Eclipse Server Connector.
 * Synchronisierung für Inhalte und OSGI-Pakete.
 * Debugging-Unterstützung mit Code-Hot-Swapping-Funktion.
 * Einfaches Bootstrap von AEM-Projekten über einen speziellen Projekterstellungsassistenten.

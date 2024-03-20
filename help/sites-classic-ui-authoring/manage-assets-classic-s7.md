@@ -7,7 +7,8 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3545'
 ht-degree: 99%
@@ -392,7 +393,7 @@ Standardmäßig durchsucht Experience Manager den ausgewählten Ordner und alle 
 >* Auf der klassischen Benutzeroberfläche können Sie auch nach **Flash** und **FXG** suchen. Auf der Touch-optimierten Benutzeroberfläche wird das Filtern nach diesen Begriffen nicht unterstützt.
 >
 >* Beim Durchsuchen eines Videos suchen Sie nach einem einzelnen Ausgabeformat. Die Ergebnisse geben die ursprüngliche (nur &#42;.mp4) und die kodierte Ausgabedarstellung zurück.
->* Beim Suchen nach einem adaptiven Videoset durchsuchen Sie den Ordner und alle Unterordner, jedoch nur dann, wenn Sie zur Suche ein Keyword hinzugefügt haben. Wenn Sie kein Keyword hinzugefügt haben, durchsucht Experience Manager nicht die Unterordner.
+* Beim Suchen nach einem adaptiven Videoset durchsuchen Sie den Ordner und alle Unterordner, jedoch nur dann, wenn Sie zur Suche ein Keyword hinzugefügt haben. Wenn Sie kein Keyword hinzugefügt haben, durchsucht Experience Manager nicht die Unterordner.
 >
 
 **Veröffentlichungsstatus**: Sie können Assets nach dem Veröffentlichungsstatus filtern: „Unveröffentlicht“ oder „Veröffentlicht“. Wenn Sie keinen Veröffentlichungsstatus auswählen, durchsucht Experience Manager standardmäßig alle Veröffentlichungsstatus.

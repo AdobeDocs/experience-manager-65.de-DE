@@ -2,7 +2,8 @@
 title: Ihr Posteingang zum Verwalten von Aufgaben
 description: Verwalten Ihrer Aufgaben mit dem Posteingang in Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 89%
@@ -67,7 +68,7 @@ So öffnen Sie den Benachrichtigungs-Posteingang in AEM:
 
 1. Klicken Sie auf die Anzeige in der Symbolleiste.
 
-1. Wählen Sie **Alle anzeigen** aus. Die **AEM Posteingang** geöffnet. Im Posteingang werden Elemente aus den Bereichen Workflows, Projekte und Aufgaben angezeigt.
+1. Wählen Sie **Alle anzeigen** aus. Der **AEM-Posteingang** wird geöffnet. Im Posteingang werden Elemente aus den Bereichen Workflows, Projekte und Aufgaben angezeigt.
 1. Die Standardansicht ist die [Listenansicht](#inbox-list-view), Sie können aber auch zur [Kalenderansicht ](#inbox-calendar-view)wechseln. Dies erfolgt mit der Ansichtsauswahl (Symbolleiste oben rechts).
 
    Für beide Ansichten können Sie auch die [Anzeigeeinstellungen](#inbox-view-settings) festlegen. Die verfügbaren Optionen hängen dabei von der aktuellen Ansicht ab.

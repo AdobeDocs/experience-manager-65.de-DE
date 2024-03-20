@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2459'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +78,7 @@ Die Dropdown-Liste für die Zeile enthält auch die Option „Bearbeiten“ zum 
 
 Sie können der Tabelle eine Beschreibung hinzufügen, die erklärt, wie die Daten aufgebaut sind, damit sie von Bildschirmlesehilfen interpretiert und ausgelesen werden können. Hinzufügen der Beschreibung:
 
-1. Wählen Sie die Tabelle aus und wählen Sie ![cmppr](assets/cmppr.png) , um die Eigenschaften in der Seitenleiste anzuzeigen.
+1. Wählen Sie die Tabelle aus und wählen Sie dann ![cmppr](assets/cmppr.png), damit ihre Eigenschaften in der Seitenleiste angezeigt werden.
 1. Geben Sie in der Registerkarte „Barrierefreiheit“ eine Zusammenfassung an.
 1. Klicken Sie auf **Fertig**.
 
@@ -95,9 +96,9 @@ Um eine Sortierung auf Tabellenspalten anzuwenden, müssen die Zellen der Tabell
 
 So aktivieren Sie die Sortierung:
 
-1. Wählen Sie die Tabelle aus und wählen Sie ![configure_icon](assets/configure_icon.png) (Konfigurieren). Sie können die Tabelle auch mithilfe des **Inhalt**-Browsers in der Seitenleiste der interaktiven Kommunikation auswählen.
+1. Wählen Sie die Tabelle aus und wählen Sie dann ![configure_icon](assets/configure_icon.png) (Konfigurieren). Sie können die Tabelle auch mithilfe des **Inhalt**-Browsers in der Seitenleiste der interaktiven Kommunikation auswählen.
 1. Wählen Sie **Sortierung aktivieren** aus.
-1. Auswählen ![done_icon](assets/done_icon.png) , um die Tabelleneigenschaften zu speichern. Die Sortiersymbole (Auf- und Ab-Pfeile) in Spaltenüberschriften zeigen an, dass die Sortierung aktiviert wurde.
+1. Wählen Sie ![done_icon](assets/done_icon.png), um die Tabelleneigenschaften zu speichern. Die Sortiersymbole (Auf- und Ab-Pfeile) in Spaltenüberschriften zeigen an, dass die Sortierung aktiviert wurde.
 
    ![Sortieren aktivieren](assets/enable_sorting_new.png)
 
@@ -116,7 +117,7 @@ So aktivieren Sie die Sortierung:
 
 Führen Sie die folgenden Schritte aus, um die Spaltenbreite für eine Tabelle festzulegen:
 
-1. Im **[!UICONTROL Inhalt]** auswählen, wählen Sie die **[!UICONTROL Verzeichnis]** und wählen Sie die Komponente Konfigurieren (![Konfigurieren](assets/configure-icon.svg)).
+1. Wählen Sie auf der Registerkarte **[!UICONTROL Inhalt]** die **[!UICONTROL Tabellenkomponente]** und tippen Sie auf das Symbol „Konfigurieren“ (![Konfigurieren](assets/configure-icon.svg)).
 
 1. Um die proportionale Breite der einzelnen Spalten der Tabelle festzulegen, geben Sie die jeweiligen Werte als kommagetrennte Liste in das **[!UICONTROL Spaltenbreite]**-Feld ein. Beispiel: Für eine Tabelle mit 3 Spalten führt die Eingabe des Werts „2,4,6“ in das **[!UICONTROL Spaltenbreite]**-Feld dazu, dass die Spaltenbreite für die erste Spalte auf 2/12, für die zweite auf 4/12 und für die dritte auf 6/12 eingestellt wird. 2/12 als Spaltenbreite für die erste Spalte entspricht einem Sechstel der Tabellenbreite. Parallel dazu wird mit dem Wert 4/12 die Breite der zweiten Spalte auf ein Drittel der Tabellenbreite und mit 6/12 die Breite der dritten Spalte auf die Hälfte der Tabellenbreite eingestellt.
 
@@ -124,9 +125,9 @@ Führen Sie die folgenden Schritte aus, um die Spaltenbreite für eine Tabelle f
 
 Sie können den Stil für eine Tabelle definieren, indem Sie den Stilmodus in der Seitensymbolleiste verwenden. Führen Sie die folgenden Schritte aus, um in den Stilmodus zu wechseln und den Tabellenstil zu bearbeiten
 
-1. Wählen Sie in der Seitensymbolleiste vor der Vorschau die Option ![Arbeitsfläche-Dropdown](assets/canvas-drop-down.png) > **Stil**.
+1. Konfigurieren in der Seiten-Symbolleiste vor der Vorschau ![canvas-drop-down](assets/canvas-drop-down.png) > **Stil**.
 
-1. Wählen Sie in der Seitenleiste die Tabelle aus und klicken Sie auf die Schaltfläche &quot;Bearbeiten&quot; ![edit-button](assets/edit-button.png).
+1. Wählen Sie in der Seitenleiste die Tabelle aus und wählen Sie dann die Schaltfläche zum Bearbeiten ![edit_button](assets/edit-button.png).
 Die Stileigenschaften werden in der Seitenleiste angezeigt.
 
 ![Anpassen der Stileigenschaften einer Tabelle](assets/style-table.png)
@@ -139,7 +140,7 @@ Die Stileigenschaften werden in der Seitenleiste angezeigt.
 
 Tabellen unterstützen standardmäßig das dynamische Hinzufügen oder Löschen von Zeilen zur Laufzeit.
 
-1. Tabellenzeile auswählen und ![cmppr](assets/cmppr.png).
+1. Wählen Sie eine Tabellenzeile aus und wählen Sie dann ![cmppr](assets/cmppr.png).
 1. Geben Sie auf der Registerkarte „Wiederholungseinstellungen“ die Mindest- und Höchstanzahl der Zeilen in der Tabelle an.
 1. Klicken Sie auf **Fertig**.
 

@@ -2,10 +2,11 @@
 title: Komponentenkonsole
 description: Die Komponentenkonsole ermöglicht es Ihnen, alle Komponenten zu durchsuchen, die für Ihre Instanz definiert sind, und wichtige Informationen für jede Komponente anzuzeigen.
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -13,7 +14,7 @@ ht-degree: 93%
 
 Die Komponentenkonsole ermöglicht es Ihnen, alle Komponenten zu durchsuchen, die für Ihre Instanz definiert sind, und wichtige Informationen für jede Komponente anzuzeigen.
 
-Der Zugriff erfolgt über **Tools >** **Allgemein >** **Komponenten**. In der Konsole sind Karten- und Listenansicht verfügbar. Da es keine Baumstruktur für Komponenten gibt, ist die Spaltenansicht nicht verfügbar.
+Über **Tools** > **Allgemein** > **Komponenten** kann auf sie zugegriffen werden. In der Konsole sind Karten- und Listenansicht verfügbar. Da es keine Baumstruktur für Komponenten gibt, ist die Spaltenansicht nicht verfügbar.
 
 ![screen-shot_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
@@ -42,7 +43,7 @@ Um Details zu einer bestimmten Komponente anzuzeigen, klicken Sie auf die gewün
 
       * Wenn Sie auf die Quelle des Symbols klicken, gelangen Sie zu dieser Komponente.
 
-   * Anzeigen des **Ressourcentyps** und **Ressourcen-Supertyps** (sofern definiert) für die Komponente.
+   * Zeigen Sie den **Ressourcentyp** und **Ressourcen-Supertyp** (sofern definiert) für die Komponente an.
 
       * Durch Klicken auf den Ressourcen-Supertyp gelangen Sie zu dieser Komponente.
 

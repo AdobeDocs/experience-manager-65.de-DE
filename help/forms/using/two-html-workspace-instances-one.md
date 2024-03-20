@@ -5,10 +5,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: 32a546fc-e33f-46f9-ac3b-45eca0e12239
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '302'
-ht-degree: 60%
+ht-degree: 59%
 
 ---
 
@@ -22,9 +23,9 @@ Führen Sie diese Schritte aus, um AEM Forms Workspace zu konfigurieren.
 
 1. Installieren Sie das Dev-Paket von AEM Forms Workspace auf dem Server. Siehe [dev-Paket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), um Anweisungen zur Erstellung zu erhalten.
 1. Melden Sie sich bei CRXDE Lite als Administrator an, indem Sie auf `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. Kopieren Sie den Knoten unter /content und fügen Sie ihn unter /content ein. Benennen Sie den Knoten in &quot;ws2&quot;um. Klicken Sie auf **[!UICONTROL Alle speichern]**. Ändern Sie in den Eigenschaften dieses Knotens den Wert `sling:resourceType` in „ws2“. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+1. Kopieren Sie den Knoten unter /content und fügen Sie ihn unter /content ein. Benennen Sie den Knoten in ws2 um. Klicken Sie auf **[!UICONTROL Alle speichern]**. Ändern Sie in den Eigenschaften dieses Knotens den Wert `sling:resourceType` in „ws2“. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
-1. Kopieren Sie die Ordner aus /libs und fügen Sie sie unter /apps ein. Benennen Sie den Ordner in &quot;ws2&quot;um. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+1. Kopieren Sie die Ordner aus /libs und fügen Sie sie unter /apps ein. Benennen Sie den Ordner in ws2 um. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 1. Ändern Sie den Code in der Datei `GET.jsp` in der Zeile `/apps/ws2` folgendermaßen. Ersetzen Sie den Code
 
    ```html
@@ -85,7 +86,7 @@ Führen Sie diese Schritte aus, um AEM Forms Workspace zu konfigurieren.
 
 1. Um auf `pdf.html` des neuen Arbeitsbereichs zu verweisen, ändern Sie die Pfade von `pdf.html` und `WsNextAdapter.swf` auf `startprocess.html`, `taskdetails.html` und `processinstancehistory.html` in der Zeile `/apps/ws2/js/runtime/templates`.
 
-1. Kopieren Sie den Ordner `/etc/map/ws` und fügen Sie ihn unter `/etc/map` ein. Benennen Sie den neuen Ordner in &quot;ws2&quot;um. Klicken Sie auf Alle speichern.
+1. Kopieren Sie den Ordner `/etc/map/ws` und fügen Sie ihn unter `/etc/map` ein. Benennen Sie den neuen Ordner in ws2 um. Klicken Sie auf Alle speichern .
 
 1. Ändern Sie in den Eigenschaften von `ws2` den Wert von `sling:redirect` auf `content/ws2`.
 

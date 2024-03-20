@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
 exl-id: 16851d65-df55-471a-8848-c73c28db8ac0
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager 6.5
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '318'
-ht-degree: 41%
+ht-degree: 45%
 
 ---
 
@@ -48,6 +49,6 @@ Um ein qualitativ hochwertiges Projekt erfolgreich bereitzustellen, müssen Sie 
 
    >[!NOTE]
    >
-   >Es besteht keine direkte 1:1-Beziehung zwischen den einzelnen erforderlichen Dokumenten und den Lieferzielen.
+   >Es gibt keine direkte 1:1-Beziehung zwischen den einzelnen erforderlichen Dokumenten und zu erbringenden Leistungen.
 
 1. Basierend auf dem Status der **[Erforderliche Dokumente](/help/managing/best-practices.md#required-documents)** und **[Lieferziele](/help/managing/best-practices.md#deliverables)**, die Arbeitsblätter **[Projekt-Heartbeat](/help/managing/best-practices.md#project-heartbeat-dashboard)** und **[Status nach Rolle](/help/managing/best-practices.md#status-by-role)** werden automatisch aktualisiert, um Ihnen einen aktuellen Überblick über den Fortschritt und den Zustand Ihres Projekts zu geben.

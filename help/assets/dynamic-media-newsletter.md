@@ -3,13 +3,13 @@ title: Dynamic Media-Newsletter-Archiv
 description: Der archivierte Dynamic Media Newsletter von Experience League war ein monatlicher Newsletter. Er sollte Ihnen helfen, sich mit Dynamic Media und Dynamic Media Classic vertraut zu machen, sodass Sie sofort Nutzen daraus ziehen können. Die archivierten Newsletter enthalten wertvolle Ressourcen zur Wissensbildung, die in diesem inzwischen eingestellten One-Stop-Shop-Newsletter verfügbar waren. Archivierte Newsletter enthalten Anleitungsvideos und Lösungsübersichten. Außerdem werden wichtige Funktionen und Möglichkeiten wie Bildvorgaben, Viewer-Vorgaben und Videoprofile vorgestellt.
 keywords: Dynamic Media;Newsletter;Produkt-Updates;Tipps und Tricks;Ereignisse;Kundenerfolg;Blog;Blogs;Bilder;Videos; Features; Funktionen
 contentOwner: Rick Brough
-solution: Experience Manager, Dynamic Media Classic
+solution: Experience Manager, Experience Manager Assets
 role: User, Admin
 exl-id: 8aa779e0-cf76-45a7-a474-556fdfded31b
 feature: Collaboration,Dynamic Media Classic
-source-git-commit: a7f1f41d54663b753bc22c6e5d54b4cb621609fd
-workflow-type: ht
-source-wordcount: '1077'
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '1014'
 ht-degree: 100%
 
 ---
@@ -47,7 +47,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
 
 * **[April 2020, Ausgabe 3](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2020_April.html?lang=de)**
 
-   In dieser Ausgabe:
+  In dieser Ausgabe:
 
    * Entdecken Sie drei Möglichkeiten, wie Ihnen Ihre Rich-Media-Investitionen in diesen schwierigen Zeiten helfen können.
    * Melden Sie sich für das Webinar an, um zu erfahren, wie Sie mit der intelligenten Bildbearbeitung das Laden Ihrer Seite erleichtern können.
@@ -58,7 +58,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
 
 * **[Februar 2020, Ausgabe 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html?lang=de)**
 
-   In dieser Ausgabe:
+  In dieser Ausgabe:
 
    * Nehmen Sie an neuen Skill Builder-Webinaren teil und werden Sie zum Experten für Dynamic Media Classic.
    * Erfahren Sie, wo Sie Dynamic Media beim Adobe Summit 2020 finden.
@@ -69,7 +69,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
 
 * **[Januar 2020, Ausgabe 1](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_01_2020_Jan.html?lang=de)**
 
-   In dieser Ausgabe:
+  In dieser Ausgabe:
 
    * Fünf neue Skill Builder-Webinare zur Verbesserung Ihrer Fähigkeiten in Dynamic Media Classic.
    * Ein kostenloses Audit, damit Sie die Vorteile von Dynamic Media Classic noch besser nutzen können.
@@ -79,7 +79,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
 
 * **[November 2019, Ausgabe 11](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_11_2019_Nov.html?lang=de)**
 
-   In dieser Ausgabe:
+  In dieser Ausgabe:
 
    * Eine Aktualisierung der Benutzeroberfläche von Dynamic Media Classic.
    * Leistungsstarke neue Sicherheitsfunktionen.
@@ -89,7 +89,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
 
 * **[Oktober 2019, Ausgabe 10](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_10_2019_Oct.html?lang=de)**
 
-   In dieser Ausgabe:
+  In dieser Ausgabe:
 
    * So erhalten Sie erweiterte Analysen zu den Aktionen, die Besucher in Ihren Dynamic Media-Viewern ausführen.
    * Eine Infografik mit Tipps für erstaunliche Ergebnisse bei der Bereitstellung von Bildern und Videos in hoher Qualität.
@@ -100,7 +100,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
 
 * **[September 2019, Ausgabe 09](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_09_2019_Sept.html?lang=de)**
 
-   In dieser Ausgabe:
+  In dieser Ausgabe:
 
    * Verbessern Sie Ihre Kundenerlebnisse, indem Sie 9 „Fallstricke“ beseitigen.
    * Erfahren Sie, wie Sie sich mit dem Dynamic Media-Team auf einen Tag mit überdurchschnittlich hohem Besucher-Traffic vorbereiten können.
@@ -111,7 +111,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
 
 * **[August 2019, Ausgabe 08](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_08_2019_Aug.html?lang=de)**
 
-   In dieser Ausgabe:
+  In dieser Ausgabe:
 
    * Erfahren Sie, welche nützlichen Funktionen nur bei einem Upgrade auf Dynamic Media verfügbar sind.
    * Informieren Sie sich über eine Webinar-Reihe, mit der Sie sich mit Experience Manager Assets und Dynamic Media vertraut machen können.
@@ -121,7 +121,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
 
 * **[Juli 2019, Ausgabe 07](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_07_2019_July.html?lang=de)**
 
-   In dieser Ausgabe:
+  In dieser Ausgabe:
 
    * Ressourcen und Informationen, mit denen Sie Ihre hochwertigen Assets ordnungsgemäß verwalten können, damit Sie Ihren Besuchern Erlebnisse bieten können, die sie immer wieder zurückkommen lassen.
    * Informieren Sie sich über ein bevorstehendes Webinar zum Schutz Ihrer digitalen Ressourcen.
@@ -132,7 +132,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
 
 * **[Juni 2019, Ausgabe 06](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_06_2019_June.html?lang=de)**
 
-   In dieser Ausgabe:
+  In dieser Ausgabe:
 
    * Sehen Sie in Videos, welche Vorteile ein Upgrade auf Dynamic Media in Experience Manager Assets bietet.
    * Sehen Sie sich wichtige Anleitungsvideos in Experience League an.
@@ -143,7 +143,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
 
 * **[Mai 2019, Ausgabe 05](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_05_2019_May.html?lang=de)**
 
-   In dieser Ausgabe:
+  In dieser Ausgabe:
 
    * Entdecken Sie die zehn besten verborgenen Funktionen von Dynamic Media Classic in einem Blog-Beitrag.
    * Sehen Sie sich wichtige Anleitungsvideos in Experience League an.
@@ -153,9 +153,9 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
 
 * **[April 2019, Ausgabe 04](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2019_April.html?lang=de)**
 
-   Willkommen bei der ersten Ausgabe des Dynamic Media-Newsletters. Der neue monatliche Newsletter von Adobe enthält Neuigkeiten, Ereignisse und Ressourcen. Die Inhalte richten sich an Benutzer von Dynamic Media in Experience Manager Assets und Adobe Dynamic Media Classic.
+  Willkommen bei der ersten Ausgabe des Dynamic Media-Newsletters. Der neue monatliche Newsletter von Adobe enthält Neuigkeiten, Ereignisse und Ressourcen. Die Inhalte richten sich an Benutzer von Dynamic Media in Experience Manager Assets und Adobe Dynamic Media Classic.
 
-   In dieser Ausgabe:
+  In dieser Ausgabe:
 
    * Registrieren Sie sich für das Adobe-Webinar zu den verborgenen Funktionen von Dynamic Media Classic.
    * Informieren Sie sich über die On-Demand-Webinar-Serie von Adobe, die Sie bei der Entwicklung Ihrer Rich-Media-Strategie unterstützt.

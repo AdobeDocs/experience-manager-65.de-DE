@@ -3,8 +3,9 @@ title: AEM Commerce – Einhaltung der DSGVO
 description: Erfahren Sie mehr über die Verarbeitungsprozeduren für DSGVO-Anfragen in AEM Commerce und wie sie verwendet werden.
 contentOwner: carlino
 exl-id: 3a483b9d-627a-41d3-8ac1-66f9c5e89ad5
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
-workflow-type: ht
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 100%
 

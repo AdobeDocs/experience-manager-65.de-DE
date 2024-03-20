@@ -7,9 +7,10 @@ topic-tags: testing
 content-type: reference
 docset: aem65
 exl-id: c09cde0d-401c-437f-9ec8-a0530c1312d5
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '515'
 ht-degree: 22%
 
 ---
@@ -29,8 +30,8 @@ Ihre Testfälle sollten auf Folgendem basieren:
 
 Die Tests sollten klar definieren:
 
-* Voraussetzungen; Diese können bestimmte Systeme, Konfigurationen oder Testerlebnisse abdecken.
-* Schritte, die zu befolgen sind; auf einer geeigneten Detailebene.
+* Voraussetzungen; diese können bestimmte Systeme, Konfigurationen oder Testerlebnisse abdecken.
+* Schritte, die zu befolgen sind, auf einer geeigneten Detailebene.
 * Erwartete Ergebnisse.
 * Klare Kriterien für Bestehen oder Fehlschlagen.
 
@@ -41,7 +42,7 @@ Die Möglichkeit der Automatisierung von Testfällen ist attraktiv, da sich wied
 Die Automatisierung von Testfällen ist jedoch eine wichtige Investition, daher sollten bestimmte Aspekte berücksichtigt werden:
 
 * Sie benötigen Zeit, Mühe und Erlebnis für die Einrichtung und Konfiguration.
-* Wenn Browser-basiert sind, besteht ein erhöhtes Risiko von Problemen bei der Installation von Browseraktualisierungen. weitere Korrekturzeit erforderlich machen.
+* Wenn Browser-basiert sind, besteht ein erhöhtes Risiko von Problemen bei der Installation von Browseraktualisierungen. Die Korrektur muss länger dauern.
 * Nur bei großen Projekten machbar.
 * Gut, wenn mehrere Versionen entweder zum Testen oder im langfristigen Release-Plan generiert werden.
 

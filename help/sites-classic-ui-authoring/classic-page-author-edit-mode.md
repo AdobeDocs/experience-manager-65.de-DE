@@ -7,7 +7,8 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5991'
 ht-degree: 98%
@@ -190,7 +191,7 @@ Optional. Die maximale Anzahl von Elementen, die Sie im Karussell verwenden möc
 
 >[!NOTE]
 >
->Sie können eine benutzerdefinierte Karussellkomponente für Adobe Experience Manager erstellen, in der die im AEM DAM vorhandenen digitalen Assets angezeigt werden.
+Sie können eine benutzerdefinierte Karussellkomponente für Adobe Experience Manager erstellen, in der die im AEM DAM vorhandenen digitalen Assets angezeigt werden.
 
 ### Diagramm {#chart}
 
@@ -225,9 +226,9 @@ Im Folgenden sehen Sie ein Beispiel für Diagrammdaten und das daraus resultiere
 
 >[!CAUTION]
 >
->Die vollständige Funktionalität der Inhaltsfragmentverwaltung ist nur in der Touch-optimierten Benutzeroberfläche verfügbar.
+Die vollständige Funktionalität der Inhaltsfragmentverwaltung ist nur in der Touch-optimierten Benutzeroberfläche verfügbar.
 >
->Die Inhaltsfragmentkomponente kann im Sidekick der klassischen Benutzeroberfläche angezeigt werden. Es stehen jedoch keine weiteren Funktionen zur Verfügung.
+Die Inhaltsfragmentkomponente kann im Sidekick der klassischen Benutzeroberfläche angezeigt werden. Es stehen jedoch keine weiteren Funktionen zur Verfügung.
 
 [Inhaltsfragmente](/help/sites-classic-ui-authoring/classic-page-author-content-fragments.md) werden als seitenunabhängige Assets erstellt und verwaltet. Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden.
 
@@ -279,7 +280,7 @@ Die externe Anwendung wird in das Absatzsystem der AEM-Seite integriert. Beispie
 
 >[!NOTE]
 >
->Je nach Anwendungsfall stehen weitere Optionen zur Integration externer Anwendungen zur Verfügung, zum Beispiel die [Integration von Portlets](/help/sites-administering/aem-as-portal.md).
+Je nach Anwendungsfall stehen weitere Optionen zur Integration externer Anwendungen zur Verfügung, zum Beispiel die [Integration von Portlets](/help/sites-administering/aem-as-portal.md).
 
 ### Flash {#flash}
 
@@ -333,11 +334,11 @@ Sie können ein Bild aus der [Inhaltssuche](/help/sites-classic-ui-authoring/cla
 
 >[!NOTE]
 >
->Der Upload-Fortschritt kann in Internet Explorer nicht verfolgt werden.
+Der Upload-Fortschritt kann in Internet Explorer nicht verfolgt werden.
 >
->Benutzerinnen und Benutzer von Internet Explorer müssen das Bild hochladen, auf **OK** klicken und anschließend das Bild erneut öffnen, um die hochgeladene Datei in der Vorschau zu sehen und Änderungen (z. B. Zuschneiden) vornehmen zu können.
+Benutzerinnen und Benutzer von Internet Explorer müssen das Bild hochladen, auf **OK** klicken und anschließend das Bild erneut öffnen, um die hochgeladene Datei in der Vorschau zu sehen und Änderungen (z. B. Zuschneiden) vornehmen zu können.
 >
->Weitere Informationen zu den von AEM verwendeten HTML5-Features finden Sie im Abschnitt [Zertifizierte Plattformen](/help/release-notes/release-notes.md#certifiedplatforms).
+Weitere Informationen zu den von AEM verwendeten HTML5-Features finden Sie im Abschnitt [Zertifizierte Plattformen](/help/release-notes/release-notes.md#certifiedplatforms).
 
 Wenn ein Bild geladen wird, können folgende Konfigurationen durchgeführt werden:
 
@@ -389,7 +390,7 @@ Das endgültige Bild (mit **Titel** und **Beschreibung**) sieht beispielsweise w
 
 >[!CAUTION]
 >
->Auch wenn die Layout-Container-Komponente in der klassischen Benutzeroberfläche verfügbar ist, steht der vollständige Funktionsumfang nur in der Touch-optimierten Benutzeroberfläche zur Verfügung. Weitere Einzelheiten dazu finden Sie unter [Responsives Layout](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md).
+Auch wenn die Layout-Container-Komponente in der klassischen Benutzeroberfläche verfügbar ist, steht der vollständige Funktionsumfang nur in der Touch-optimierten Benutzeroberfläche zur Verfügung. Weitere Einzelheiten dazu finden Sie unter [Responsives Layout](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md).
 
 ### Liste {#list}
 
@@ -654,9 +655,9 @@ Die Bildschirmpräsentation-Komponente zeigt dann wiederholt der Reihe nach die 
 
 >[!NOTE]
 >
->Die **Tabellenkomponente** basiert auf dem [Rich-Text-Editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), ebenso wie die **[Textkomponente](#text)**.
+Die **Tabellenkomponente** basiert auf dem [Rich-Text-Editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), ebenso wie die **[Textkomponente](#text)**.
 >
->Adobe empfiehlt, für Tabellen die **Tabellenkomponente** zu verwenden. Sie können jedoch auch mit der **Textkomponente** erstellt werden.
+Adobe empfiehlt, für Tabellen die **Tabellenkomponente** zu verwenden. Sie können jedoch auch mit der **Textkomponente** erstellt werden.
 
 Die **Tabellenkomponente** ist für das Erstellen, Ausfüllen und Formatieren einer Tabelle schon vorkonfiguriert. Mithilfe des Dialogfelds können Sie Ihre Tabelle konfigurieren und den Inhalt von Grund auf neu erstellen oder eine Tabelle aus einem externen Editor, wie Excel, OpenOffice oder Notepad, kopieren und einfügen.
 
@@ -689,9 +690,9 @@ Weitere Informationen zum Anwenden von Tags finden Sie unter [Verwenden von Tags
 
 >[!NOTE]
 >
->Die **Textkomponente** basiert ebenso wie die **[Tabellenkomponente](#table)** auf dem [Rich-Text-Editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md).
+Die **Textkomponente** basiert ebenso wie die **[Tabellenkomponente](#table)** auf dem [Rich-Text-Editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md).
 >
->Adobe empfiehlt, für Tabellen die **Tabellenkomponente** zu verwenden. Sie können jedoch auch mit der **Textkomponente** erstellt werden.
+Adobe empfiehlt, für Tabellen die **Tabellenkomponente** zu verwenden. Sie können jedoch auch mit der **Textkomponente** erstellt werden.
 
 Mit der Textkomponente können Sie einen Textblock unter Verwendung eines WYSIWYG-Editors eingeben, dessen Funktionalität vom [Rich-Text-Editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md) bereitgestellt wird. Mit einer Reihe von Symbolen können Sie Ihren Text formatieren, einschließlich Schriftart, Ausrichtung, Links, Listen und Einzug.
 
@@ -801,11 +802,11 @@ Nachdem Sie eine Instanz der Komponente auf Ihrer Seite platziert haben, können
 
 >[!NOTE]
 >
->Unterstützte Formate:
+Unterstützte Formate:
 >
->* `.mp4`
->* `Ogg`
->* `FLV` (Flash-Video)
+* `.mp4`
+* `Ogg`
+* `FLV` (Flash-Video)
 >
 
 ## Spalten {#columns}
@@ -840,7 +841,7 @@ Mit Formular-Komponenten können Sie Formulare erstellen, damit Besucher Eingabe
 
 >[!NOTE]
 >
->Informationen zu AEM Forms finden Sie in der [AEM Forms-Hilfe](/help/forms/using/introduction-aem-forms.md).
+Informationen zu AEM Forms finden Sie in der [AEM Forms-Hilfe](/help/forms/using/introduction-aem-forms.md).
 
 Formulare bestehen aus mehreren verschiedenen Komponenten:
 
@@ -862,7 +863,7 @@ Im Folgenden finden Sie ein Beispielformular. Es setzt sich zusammen aus der **F
 
 >[!NOTE]
 >
->Informationen zum Entwickeln und Anpassen Ihrer Formulare finden Sie auf der Seite zum [Entwickeln von Formularen](/help/sites-developing/developing-forms.md). Diese Anpassung von Formularen umfasst u. a. das Hinzufügen von Aktionen, Einschränkungen, das Vorausfüllen von Feldern und die Verwendung von Skripten, um einen Dienst für eine Aktion aufzurufen.
+Informationen zum Entwickeln und Anpassen Ihrer Formulare finden Sie auf der Seite zum [Entwickeln von Formularen](/help/sites-developing/developing-forms.md). Diese Anpassung von Formularen umfasst u. a. das Hinzufügen von Aktionen, Einschränkungen, das Vorausfüllen von Feldern und die Verwendung von Skripten, um einen Dienst für eine Aktion aufzurufen.
 
 ### Gemeinsame Einstellungen für (viele) Formularkomponenten {#settings-common-to-many-form-components}
 
@@ -888,7 +889,7 @@ Beim Konfigurieren einer jeden Formularkomponente sind die folgenden Registerkar
 
 >[!NOTE]
 >
->Die angezeigten Felder können je nach Komponente sehr unterschiedlich sein.
+Die angezeigten Felder können je nach Komponente sehr unterschiedlich sein.
 
 Diese Registerkarten bieten die notwendigen Parameter. Die Registerkarten hängen vom jeweiligen Komponententyp ab und können Folgendes umfassen:
 
@@ -1196,9 +1197,9 @@ Sie können verschiedene Parameter angeben, darunter einen Titel, eine Beschreib
 
 >[!NOTE]
 >
->Mit **Element-Ladepfad** können Sie die Kontrollkästchengruppen-Liste vorab mit Werten laden.
+Mit **Element-Ladepfad** können Sie die Kontrollkästchengruppen-Liste vorab mit Werten laden.
 >
->Siehe [Vorabladen von Formularfeldern mit mehreren Werten](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+Siehe [Vorabladen von Formularfeldern mit mehreren Werten](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Kreditkartendetails {#credit-card-details}
 
@@ -1216,9 +1217,9 @@ Sie können einen Titel und Elemente angeben, die in der Liste angezeigt werden 
 
 >[!NOTE]
 >
->Mit dem **Element-Ladepfad** können Sie die Dropdown-Liste vorab mit Werten laden.
+Mit dem **Element-Ladepfad** können Sie die Dropdown-Liste vorab mit Werten laden.
 >
->Siehe [Vorabladen von Formularfeldern mit mehreren Werten](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+Siehe [Vorabladen von Formularfeldern mit mehreren Werten](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Datei-Upload {#file-upload}
 
@@ -1236,9 +1237,9 @@ Mit dieser Komponente können Sie ein ausgeblendetes Feld erstellen. Diese ausge
 
 >[!NOTE]
 >
->Sie können das Formular auch so anpassen, dass bestimmte Formular-Komponenten abhängig vom Wert anderer auf dem Formular befindlichen Felder ein- oder ausgeblendet werden. Das Ändern der Sichtbarkeit eines Formularfelds ist nützlich, wenn das Feld nur unter besonderen Bedingungen erforderlich ist.
+Sie können das Formular auch so anpassen, dass bestimmte Formular-Komponenten abhängig vom Wert anderer auf dem Formular befindlichen Felder ein- oder ausgeblendet werden. Das Ändern der Sichtbarkeit eines Formularfelds ist nützlich, wenn das Feld nur unter besonderen Bedingungen erforderlich ist.
 >
->Siehe [Ein- und Ausblenden von Formularkomponenten](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
+Siehe [Ein- und Ausblenden von Formularkomponenten](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
 ### Bild-Schaltfläche {#image-button}
 
@@ -1287,9 +1288,9 @@ Sie können den Elementnamen zusammen mit einem Titel und einer Beschreibung ang
 
 >[!NOTE]
 >
->Mit dem **Element-Ladepfad** können Sie die Optionsfeld-Gruppe vorab mit Werten laden.
+Mit dem **Element-Ladepfad** können Sie die Optionsfeld-Gruppe vorab mit Werten laden.
 >
->Siehe [Vorabladen von Formularfeldern mit mehreren Werten](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+Siehe [Vorabladen von Formularfeldern mit mehreren Werten](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Senden-Schaltfläche {#submit-button}
 

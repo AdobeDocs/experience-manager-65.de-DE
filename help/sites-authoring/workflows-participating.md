@@ -7,10 +7,11 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1521'
-ht-degree: 80%
+ht-degree: 89%
 
 ---
 
@@ -39,7 +40,7 @@ Wenn Ihnen ein Arbeitselement zugewiesen wird (z. B. **Inhalte genehmigen**), w
 
 * Wenn Sie den Seiteneditor verwenden, wird in der Statusleiste Folgendes angezeigt:
 
-   * Der Name des Workflows, der auf die Seite angewendet wird (z. B. Aktivierungsanfrage).
+   * Der Name des Workflows, der auf die Seite angewendet wird; z. B. „Aktivierungsanfrage“.
    * Alle Aktionen, die dem momentanen Benutzer bzw. der Benutzerin für den aktuellen Workflow-Schritt zur Verfügung stehen, z. B. „Fertigstellen“, „Delegieren“ oder „Details anzeigen“.
    * Die Anzahl der Workflows, denen die Seite unterliegt. Sie haben folgende Möglichkeiten:
 
@@ -82,7 +83,7 @@ Führen Sie die folgenden Schritte aus, um das Arbeitselement abzuschließen:
 1. Öffnen Sie den **[AEM-Posteingang](/help/sites-authoring/inbox.md)**.
 1. Wählen Sie das Workflow-Element aus, mit dem Sie eine Aktion ausführen möchten (klicken Sie auf die Miniaturansicht).
 1. Wählen Sie in der Symbolleiste die Option **Fertig stellen** aus.
-1. Die **Arbeitselement abschließen** wird geöffnet. Wählen Sie die **Nächster Schritt** aus der Dropdown-Auswahl aus und fügen Sie eine **Kommentar** falls erforderlich.
+1. Die **Arbeitselement abschließen** wird geöffnet. Gehen Sie in der Dropdown-Auswahl zu **Nächster Schritt** und fügen Sie bei Bedarf einen **Kommentar** hinzu.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
 
 #### Durchführen eines Teilnehmerschritts: Seiten-Editor {#completing-a-participant-step-page-editor}
@@ -91,7 +92,7 @@ Führen Sie die folgenden Schritte aus, um das Arbeitselement abzuschließen:
 
 1. Öffnen Sie die [Seite zur Bearbeitung](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Wählen Sie in der Statusleiste oben im Bild **Fertig stellen** aus.
-1. Die **Arbeitselement abschließen** wird geöffnet. Wählen Sie die **Nächster Schritt** aus der Dropdown-Auswahl aus und fügen Sie eine **Kommentar** falls erforderlich.
+1. Die **Arbeitselement abschließen** wird geöffnet. Gehen Sie in der Dropdown-Auswahl zu **Nächster Schritt** und fügen Sie bei Bedarf einen **Kommentar** hinzu.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
 
 #### Durchführen eines Teilnehmerschritts: Zeitleiste {#completing-a-participant-step-timeline}
@@ -141,7 +142,7 @@ Gehen Sie folgendermaßen vor, um ein Arbeitselement zu delegieren:
 1. Öffnen Sie den **[AEM-Posteingang](/help/sites-authoring/inbox.md)**.
 1. Wählen Sie das Workflow-Element aus, mit dem Sie eine Aktion ausführen möchten (klicken Sie auf die Miniaturansicht).
 1. Wählen Sie in der Symbolleiste die Option **Delegieren** aus.
-1. Das Dialogfeld wird geöffnet. Geben Sie die **Benutzer** aus der Dropdown-Auswahl (dies kann auch eine Gruppe sein) und fügen Sie eine **Kommentar** falls erforderlich.
+1. Das Dialogfeld wird geöffnet. Wählen Sie in der Dropdown-Auswahl die Option **Benutzer** aus (dabei kann es sich auch um eine Gruppe handeln) und fügen Sie bei Bedarf einen **Kommentar** hinzu.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
 
 #### Delegieren eines Teilnehmerschritts: Seiten-Editor {#delegating-a-participant-step-page-editor}
@@ -150,7 +151,7 @@ Gehen Sie folgendermaßen vor, um ein Arbeitselement zu delegieren:
 
 1. Öffnen Sie die [Seite zur Bearbeitung](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Wählen Sie in der Statusleiste oben im Bild **Delegieren** aus.
-1. Das Dialogfeld wird geöffnet. Geben Sie die **Benutzer** aus der Dropdown-Auswahl (dies kann auch eine Gruppe sein) und fügen Sie eine **Kommentar** falls erforderlich.
+1. Das Dialogfeld wird geöffnet. Wählen Sie in der Dropdown-Auswahl die Option **Benutzer** aus (dabei kann es sich auch um eine Gruppe handeln) und fügen Sie bei Bedarf einen **Kommentar** hinzu.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
 
 #### Delegieren eines Teilnehmerschritts: Zeitleiste {#delegating-a-participant-step-timeline}
@@ -192,7 +193,7 @@ Gehen Sie dazu folgendermaßen vor:
 1. Wählen Sie das Workflow-Element aus, mit dem Sie eine Aktion ausführen möchten (klicken Sie auf die Miniaturansicht).
 1. Wählen Sie **Schritt zurück** aus, um das Dialogfeld zu öffnen.
 
-1. Geben Sie die **Vorheriger Schritt** und fügen Sie eine **Kommentar** falls erforderlich.
+1. Wählen Sie die Option **Vorheriger Schritt** aus und fügen Sie bei Bedarf einen **Kommentar** hinzu.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
 
 #### Wechseln zu einem vorherigen Teilnehmerschritt: Seiten-Editor {#performing-step-back-on-a-participant-step-page-editor}
@@ -201,7 +202,7 @@ Gehen Sie dazu folgendermaßen vor:
 
 1. Öffnen Sie die [Seite zur Bearbeitung](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Wählen Sie in der Symbolleiste oben im Bild **Schritt zurück** aus.
-1. Geben Sie die **Vorheriger Schritt** und fügen Sie eine **Kommentar** falls erforderlich.
+1. Wählen Sie die Option **Vorheriger Schritt** aus und fügen Sie bei Bedarf einen **Kommentar** hinzu.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
 
 #### Wechseln zu einem vorherigen Teilnehmerschritt: Zeitleiste {#performing-step-back-on-a-participant-step-timeline}
@@ -254,7 +255,7 @@ Gehen Sie folgendermaßen vor, um ein Workflow-Element zu öffnen und die Detail
 1. Wählen Sie das Workflow-Element aus, mit dem Sie eine Aktion ausführen möchten (klicken Sie auf die Miniaturansicht).
 1. Wählen Sie **Öffnen** aus, um die Informationsregisterkarten zu öffnen.
 
-1. Wählen Sie bei Bedarf die entsprechende Aktion aus, geben Sie Details an und bestätigen Sie mit **OK** (oder **Abbrechen**).
+1. Wählen Sie bei Bedarf die geeignete Aktion aus, geben Sie etwaige Details ein und bestätigen Sie mit **OK** (oder **Abbrechen**).
 1. Mit **Speichern** oder **Abbrechen** schließen Sie das Dialogfeld.
 
 #### Öffnen von Workflow-Details: Seiten-Editor {#opening-workflow-details-page-editor}
@@ -264,7 +265,7 @@ Gehen Sie folgendermaßen vor, um ein Workflow-Element zu öffnen und die Detail
 1. Öffnen Sie die [Seite zur Bearbeitung](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Wählen Sie aus der Statusleiste **Details anzeigen** aus, um die Informationsregisterkarten zu öffnen.
 
-1. Wählen Sie bei Bedarf die entsprechende Aktion aus, geben Sie Details an und bestätigen Sie mit **OK** (oder **Abbrechen**).
+1. Wählen Sie bei Bedarf die geeignete Aktion aus, geben Sie etwaige Details ein und bestätigen Sie mit **OK** (oder **Abbrechen**).
 1. Mit **Speichern** oder **Abbrechen** schließen Sie das Dialogfeld.
 
 ### Ansicht der Workflow-Payload (mehrere Ressourcen) {#viewing-the-workflow-payload-multiple-resources}

@@ -6,7 +6,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 exl-id: 171754a2-1ba5-42dc-b6d2-3d730807cc31
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2410'
 ht-degree: 42%
@@ -58,7 +59,7 @@ Formular in der AEM Forms-App synchronisieren
 
 Wenn das Formular veröffentlicht wird, synchronisiert die App mit dem Server und ruft das Formular ab. Um mehrere Formulare zu synchronisieren, wählen Sie in der Autoreninstanz mehrere Formulare im Forms Manager aus und wählen Sie **[!UICONTROL Mit AEM Forms App synchronisieren]**.
 
-## Mobilgeräteunterstützung {#mobile-device-support}
+## Unterstützung für Mobilgeräte {#mobile-device-support}
 
 Siehe [AEM Forms-App (früher bekannt als Mobile Workspace)](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
 

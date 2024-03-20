@@ -9,10 +9,11 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: 5242600c-2281-46f9-a347-d985b4e319b3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 33%
+source-wordcount: '832'
+ht-degree: 21%
 
 ---
 
@@ -42,7 +43,7 @@ In diesem Abschnitt wird von einer Topologie mit einem Autorenserver ausgegangen
 
 ![upgrade-preparation-author](assets/upgrade-preparation-author.png)
 
-1. Beenden Sie das Verfassen von Inhalten..
+1. Beenden Sie die Inhaltserstellung.
 
 1. Beenden Sie die Standby-Instanz.
 
@@ -54,7 +55,7 @@ In diesem Abschnitt wird von einer Topologie mit einem Autorenserver ausgegangen
 
 ![execute_upgrade](assets/execute_upgrade.jpg)
 
-1. Führen Sie das [In-Place-Upgrade](/help/sites-deploying/in-place-upgrade.md) aus..
+1. Führen Sie die [Ersetzende Aktualisierung](/help/sites-deploying/in-place-upgrade.md).
 1. Aktualisieren des Dispatcher-Moduls *falls erforderlich*.
 
 1. QA validiert die Aktualisierung.
@@ -75,7 +76,7 @@ In diesem Abschnitt wird von einer Topologie mit einem Autorenserver ausgegangen
 
 ![rollback](assets/rollback.jpg)
 
-1. Starten Sie die Cold-Standby-Instanz als neue Primärinstanz..
+1. Starten Sie die Cold-Standby-Instanz als neuen Primären.
 
 1. Erstellen Sie die Autorenumgebung aus der Cold-Standby-Instanz neu.
 
@@ -91,7 +92,7 @@ In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster m
 
 ![mongo-upgrade_prep](assets/mongo-upgrade_prep.jpg)
 
-1. Beenden Sie das Verfassen von Inhalten..
+1. Beenden Sie die Inhaltserstellung.
 1. Klonen Sie den Datenspeicher für die Sicherung.
 1. Beenden Sie alle bis auf eine AEM Autoreninstanz, Ihren primären Autor.
 1. Entfernen Sie alle bis auf einen MongoDB-Knoten aus der Replikatgruppe, Ihrer primären Mongo-Instanz.
@@ -105,7 +106,7 @@ In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster m
 
 ![mongo-execution](assets/mongo-execution.jpg)
 
-1. Führen Sie ein [In-Place-Upgrade](/help/sites-deploying/in-place-upgrade.md) auf der primären Autoreninstanz aus..
+1. Führen Sie einen [Ersetzende Aktualisierung](/help/sites-deploying/in-place-upgrade.md) auf der primären Autoreninstanz.
 1. Aktualisieren des Dispatchers oder Webmoduls *falls erforderlich*.
 1. QA validiert die Aktualisierung.
 
@@ -113,7 +114,7 @@ In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster m
 
 ![mongo-secondaries](assets/mongo-secondaries.jpg)
 
-1. Erstellen Sie neue 6.5-Autoreninstanzen, die mit der upgegradeten Mongo-Instanz verbunden sind..
+1. Erstellen Sie neue 6.5-Autoreninstanzen, die mit der aktualisierten Mongo-Instanz verbunden sind.
 
 1. Erstellen Sie die MongoDB-Knoten neu, die aus dem Cluster entfernt wurden.
 
@@ -127,13 +128,13 @@ In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster m
 
 ![mongo-rollback](assets/mongo-rollback.jpg)
 
-1. Konfigurieren Sie die sekundären Autoreninstanzen neu, um diese mit dem geklonten Datenspeicher zu verbinden..
+1. Konfigurieren Sie die sekundären Autoreninstanzen neu, um eine Verbindung zum geklonten Datenspeicher herzustellen.
 
-1. Beenden der upgegradeten primären Autoreninstanz.
+1. Fahren Sie die aktualisierte primäre Instanz im Autorenmodus herunter.
 
 1. Beenden Sie die upgegradete primäre Mongo-Instanz.
 
-1. Starten Sie die sekundären Mongo-Instanzen neu, wobei eine dieser Instanzen als neue primäre Instanz fungieren muss..
+1. Starten Sie die sekundären Mongo-Instanzen mit einer dieser Instanzen als neue primäre Instanz.
 
 1. Konfigurieren Sie die `DocumentNodeStoreService.cfg` -Dateien in den sekundären Autoreninstanzen auf den Replikatsatz der noch nicht aktualisierten Mongo-Instanzen verweisen.
 
@@ -153,7 +154,7 @@ Die angenommene Topologie für diesen Abschnitt besteht aus zwei TarMK-Veröffen
 
 ![upgrade-publish2](assets/upgrade-publish2.png)
 
-1. Beenden Sie den Traffic an die Veröffentlichungsinstanz 2 auf dem Lastausgleich..
+1. Beenden Sie den Traffic zur Veröffentlichungsinstanz 2 am Load Balancer.
 1. Ausführen [Wartung vor der Aktualisierung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) auf Publish 2.
 1. Führen Sie einen [Ersetzende Aktualisierung](/help/sites-deploying/in-place-upgrade.md) auf Publish 2.
 1. Aktualisieren des Dispatchers oder Webmoduls *falls erforderlich*.
@@ -167,7 +168,7 @@ Die angenommene Topologie für diesen Abschnitt besteht aus zwei TarMK-Veröffen
 
 ![upgrade-publish1](assets/upgrade-publish1.png)
 
-1. Aktivieren Sie Traffic zur Veröffentlichungsinstanz 2..
+1. Aktivieren Sie Traffic auf Publish 2.
 1. Beenden Sie den Traffic auf Publish 1.
 1. Beenden Sie die Veröffentlichungsinstanz 1.
 1. Ersetzen Sie die Veröffentlichungsinstanz 1 durch eine Kopie von Veröffentlichung 2.
@@ -180,7 +181,7 @@ Die angenommene Topologie für diesen Abschnitt besteht aus zwei TarMK-Veröffen
 
 ![pub_rollback](assets/pub_rollback.jpg)
 
-1. Erstellen Sie eine Kopie der Veröffentlichungsinstanz 1. .
+1. Erstellen Sie eine Kopie von Publish 1.
 1. Ersetzen Sie die Instanz im Veröffentlichungsmodus 2 durch eine Kopie im Veröffentlichungsmodus 1.
 1. Leeren Sie den Dispatcher-Cache für Publish 2.
 1. Starten Sie Publish 2.
@@ -189,7 +190,7 @@ Die angenommene Topologie für diesen Abschnitt besteht aus zwei TarMK-Veröffen
 
 ## Abschließende Upgrade-Schritte {#final-upgrade-steps}
 
-1. Aktivieren Sie Traffic zur Veröffentlichungsinstanz 1..
+1. Aktivieren Sie Traffic auf Publish 1.
 1. QA führt die endgültige Validierung über eine öffentliche URL durch.
 1. Aktivieren Sie Replikationsagenten aus der Autorenumgebung.
 1. Setzt die Inhaltserstellung fort.

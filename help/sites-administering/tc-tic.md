@@ -4,10 +4,11 @@ description: Erfahren Sie, wie Sie das Übersetzungsintegrations-Framework in Ad
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: 87b20e9ed0455b9bf40bc1e000bd87bbb93ea48e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1497'
-ht-degree: 78%
+ht-degree: 80%
 
 ---
 
@@ -50,7 +51,7 @@ Die folgenden Übersetzungsdienstleister bieten eine Implementierung der neuen A
 
 Wenn Sie ein Connector-Paket installiert haben, können Sie eine Cloud-Konfiguration für den Connector erstellen. In der Regel müssen Sie Ihre Anmeldedaten für die Authentifizierung beim Übersetzungs-Service angeben. Weitere Informationen zum Hinzufügen einer Cloud-Konfiguration für den Microsoft Translator-Connector finden Sie unter [Integrieren mit Microsoft Translator](/help/sites-administering/tc-msconf.md).
 
-Sie können bei Bedarf mehrere Cloud-Konfigurationen für denselben Connector erstellen. Beispielsweise können Sie eine Konfiguration für jedes Konto oder Projekt erstellen, das Sie bei einem Anbieter haben.
+Sie können mehrere Cloud-Konfigurationen für denselben Connector erstellen, falls erforderlich. Beispielsweise können Sie eine Konfiguration für jedes Konto oder Projekt erstellen, das Sie bei einem Anbieter haben.
 
 Nach der Konfiguration einer Verbindung können Sie die Framework-Konfiguration für die Übersetzungsintegration erstellen, von der diese Verbindung genutzt wird.
 
@@ -196,7 +197,7 @@ Um die Übersetzung Ihrer Quellseiten in andere Sprachen zu konfigurieren, verkn
 * mit der Cloud-Konfiguration, die AEM an Ihren Übersetzungsdienstleister anbindet
 * mit dem Framework für die Übersetzungsintegration, das die Details der Übersetzung konfiguriert
 
-Die Cloud-Konfiguration des Framework für die Übersetzungsintegration identifiziert die Cloud-Konfiguration, die für die Verbindung mit dem Dienstleister verwendet werden soll. Wenn Sie eine Quellseite mit der Cloud-Konfiguration eines Frameworks verknüpfen, muss die Seite mit der Cloud-Konfiguration des Dienstleisters verknüpft sein, die die Cloud-Konfiguration des Frameworks nutzt.
+Die Cloud-Konfiguration des Frameworks für die Übersetzungsintegration legt fest, mit welcher Cloud-Konfiguration die Verbindung zum Dienstleister hergestellt werden soll. Wenn Sie eine Quellseite mit der Cloud-Konfiguration eines Frameworks verknüpfen, muss die Seite mit der Cloud-Konfiguration des Dienstleisters verknüpft sein, die die Cloud-Konfiguration des Frameworks nutzt.
 
 Wenn Sie eine Seite mit einer Cloud-Konfiguration verknüpfen, erben die untergeordneten Elemente der Seite diese Verknüpfung. Wenn Sie z. B. die Seite /content/geometrixx/en/products mit einem Framework für die Übersetzungsintegration verknüpfen, werden die Produktseite und alle untergeordneten Seiten entsprechend diesem Framework übersetzt.
 

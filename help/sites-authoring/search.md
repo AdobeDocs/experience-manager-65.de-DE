@@ -7,10 +7,11 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '517'
-ht-degree: 80%
+ht-degree: 92%
 
 ---
 
@@ -31,7 +32,7 @@ Die Suchfunktion ist über die obere Symbolleiste verfügbar:
 Die Suchleiste bietet Ihnen folgende Möglichkeiten:
 
 * Suchen Sie nach einem bestimmten Keyword, Pfad oder Tag.
-* Filtern nach ressourcenspezifischen Kriterien, wie Änderungsdatum, Seitenstatus, Dateigröße usw.
+* Filtern Sie nach ressourcenspezifischen Kriterien, wie Änderungsdatumsangaben, Seitenstatus und Dateigröße.
 * Definieren und Verwenden eines [gespeicherte Suche](#saved-searches) - auf der Grundlage der oben genannten Kriterien.
 
 >[!NOTE]
@@ -50,10 +51,10 @@ So durchsuchen und filtern Sie Ressourcen:
 
    ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
 
-1. Bei Bedarf können Sie den Standortfilter entfernen (wählen Sie **X** auf dem Filter, den Sie entfernen möchten), um über alle Konsolen/Ressourcentypen zu suchen.
+1. Bei Bedarf können Sie den Positionsfilter entfernen (wählen Sie für den zu entfernenden Filter das **X** aus), um alle Konsolen-/Ressourcentypen zu durchsuchen.
 1. Die Ergebnisse werden gemäß der Konsole und dem zugehörigen Ressourcentyp gruppiert angezeigt.
 
-   Sie können entweder eine bestimmte Ressource auswählen (für weitere Aktionen) oder einen Drilldown durchführen, indem Sie den erforderlichen Ressourcentyp auswählen, z. B. **Alle Sites anzeigen**:
+   Sie können entweder eine spezifische Ressource (für eine spätere Aktion) oder eine Drilldown-Suche auswählen, indem Sie den erforderlichen Ressourcentyp auswählen, z. B. **Alle Sites anzeigen**:
 
    ![screen-shot_2019-03-05at101900](assets/screen-shot_2019-03-05at101900.png)
 

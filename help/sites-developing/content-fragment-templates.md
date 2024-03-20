@@ -7,10 +7,11 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 1b75721c-b223-41f0-88d9-bd855b529f31
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '677'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -50,9 +51,9 @@ Die Rangfolge ist (in absteigender Reihenfolge) `/conf`, `/apps`, `/libs`.
 >
 >da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
 >
->Die empfohlene Methode für Konfigurations- und sonstige Änderungen sieht wie folgt aus:
+>Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
 >
->1. Erstellen Sie das erforderliche Element (d. h., wie es in `/libs`) unter `/apps`
+>1. Erstellen Sie das erforderliche Element unter `/apps` neu (d. h. wie es in `/libs` existiert).
 >
 >1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 >

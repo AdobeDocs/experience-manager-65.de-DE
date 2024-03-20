@@ -6,10 +6,11 @@ topic-tags: develop
 noindex: true
 feature: Adaptive Forms, Foundation Components
 exl-id: ebec03a3-67a0-4ecd-84bb-8580388e048a
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '802'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -25,7 +26,7 @@ In diesem Artikel wird die Verwendung AEM Übersetzungs-Workflows mit adaptiven 
 
 Der Dienst für maschinelle Übersetzung übersetzt sofort Inhalte Ihrer adaptiven Formulare und DoR. AEM Forms ist für die Verwendung einer Testversion von Microsoft Translator für maschinelle Übersetzung vorkonfiguriert. Führen Sie die folgenden Schritte aus, um die maschinelle Übersetzung für Ihre adaptiven Formulare und Ihr Datensatzdokument zu aktivieren:
 
-1. Wählen Sie auf der AEM Forms-Benutzeroberfläche ein Formular aus und wählen Sie die **Wörterbuch hinzufügen** -Option.
+1. Wählen Sie in der Benutzeroberfläche von AEM Forms ein Formular und dann die Option **Wörterbuch hinzufügen** aus.
 1. Wählen Sie auf dem Bildschirm **Wörterbuch zum Übersetzungsprojekt hinzufügen** die Option **Neues Übersetzungsprojekt erstellen** oder **Zu vorhandenem Übersetzungsprojekt hinzufügen**.
 1. Geben Sie im Feld **Projekttitel** den Titel an. Beispiel: `Government Reference Site - German locale.`
 1. Geben Sie im Feld **Zielsprachen** ein Gebietsschema an (beispielsweise `German(de)`) und klicken Sie auf **Fertig**. Sie können mehrere Gebietsschemas angeben. Das Formular wird in alle im Feld **Zielsprachen** angegebenen Gebietsschemas übersetzt.

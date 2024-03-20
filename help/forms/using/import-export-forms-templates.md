@@ -7,10 +7,11 @@ topic-tags: forms-manager
 docset: aem65
 role: Admin
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2509'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -37,8 +38,8 @@ Download von Assets für Formulare und Dokumente
 
 1. Melden Sie sich bei der AEM Forms-Instanz an.
 1. Experience Manager auswählen ![adobeexperiencemanager](assets/adobeexperiencemanager.png) Symbol > Navigation ![Kompass](assets/compass.png) Symbol > Forms > Forms &amp; Dokumente.
-1. Wählen Sie die Formular-Assets aus und wählen Sie die **Herunterladen** Symbol.
-1. Wählen Sie unter Asset(s) herunterladen eine der folgenden Optionen aus und wählen Sie **Herunterladen**.
+1. Wählen Sie die AEM Forms-Assets und dann das Symbol **Herunterladen**.
+1. Wählen Sie unter „Asset(s) herunterladen“ eine der folgenden Optionen und dann **Herunterladen**.
 
    * **Als CRX-Paket herunterladen:** Verwenden Sie diese Option zum Herunterladen und Verschieben aller ausgewählten Assets und der zugehörigen Abhängigkeiten von einer AEM Forms-Instanz in eine andere. Dadurch werden alle Assets und Ordner als CRX-Paket heruntergeladen. Alle Formular-Assets, einschließlich der in AEM erstellten Formulare (adaptive Formulare, interaktive Kommunikation und adaptive Formularfragmente), Formularsätze, Formularvorlagen, PDF-Dokumente und Ressourcen (XSDs, XFS, Bilder) können als Paket von der AEM Forms-Benutzeroberfläche heruntergeladen werden.
 Der Vorteil des Herunterladens von Assets als Paket besteht darin, dass dabei auch Assets enthalten sind, die von den ausgewählten Assets verwendet wurden. Beispiel: Sie verfügen über ein adaptives Formular, das eine Formularvorlage, XSD und ein Bild verwendet. Wenn Sie dieses adaptive Formular auswählen und es als Paket herunterladen, enthält das heruntergeladene Paket ebenfalls die Formularvorlage, XSD und das Bild. Alle mit dem Asset verknüpften Metadateneigenschaften (einschließlich benutzerdefinierter Eigenschaften) werden ebenfalls heruntergeladen.
@@ -60,10 +61,10 @@ Hochladen von Assets für Formulare und Dokumente:
 
 1. Melden Sie sich bei der AEM Forms-Instanz an.
 1. Experience Manager auswählen ![adobeexperiencemanager](assets/adobeexperiencemanager.png) Symbol > Navigation ![Kompass](assets/compass.png) Symbol > Forms > Forms und Dokumente.
-1. Auswählen **Erstellen** >**Datei-Upload**. Es wird ein Dialogfeld zum Hochladen von Formularen oder Paketen angezeigt.
-1. Navigieren Sie im Dialogfeld zum Paket oder Archiv, das importiert werden soll, und wählen Sie es aus. Sie können außerdem PDF-Dokumente, XSDs, Bilder, Stylesheets und XDP-Formulare auswählen. Auswählen **Öffnen**. Der ausgewählte Ordner- oder Dateiname darf keine Sonderzeichen enthalten.
+1. Wählen Sie **Erstellen** >**Datei hochladen**. Ein Dialogfeld zum Hochladen von Formularen oder Paketen wird angezeigt.
+1. Navigieren Sie im Dialogfeld zum Paket oder Archiv, das importiert werden soll, und wählen Sie es aus. Sie können außerdem PDF-Dokumente, XSDs, Bilder, Stylesheets und XDP-Formulare auswählen. Wählen Sie **Öffnen**. Der ausgewählte Ordner- oder Dateiname darf keine Sonderzeichen enthalten.
 
-   Überprüfen Sie im Dialogfeld die Details der hochgeladenen Assets und wählen Sie **Hochladen**.
+   Überprüfen Sie im Dialogfeld die Details der Assets, die hochgeladen werden, und wählen Sie **Hochladen**.
 
    Wenn Sie ein vorhandenes Formular-Asset hochladen, wird das Asset aktualisiert.
 
@@ -83,11 +84,11 @@ Herunterladen von Designs
 
 1. Melden Sie sich bei der AEM Forms-Instanz an.
 1. Experience Manager auswählen ![adobeexperiencemanager](assets/adobeexperiencemanager.png) Symbol > Navigation ![Kompass](assets/compass.png) Symbol > Forms > Designs.
-1. Wählen Sie das Design aus und wählen Sie **Herunterladen**. Das Design wird als ein Archiv (.zip-Datei) heruntergeladen.
+1. Wählen Sie das Design und dann **Herunterladen**. Das Design wird als ein Archiv (.zip-Datei) heruntergeladen.
 
 ### Hochladen eines Designs {#uploading-a-theme}
 
-Sie können erstellte Designs mit Formatierungsvorgaben für Ihr Projekt verwenden. Sie können von anderen erstellte Design-Pakete importieren, indem Sie diese in Ihr Projekt hochladen.
+Sie können erstellte Designs mit Stilvorgaben für Ihr Projekt verwenden. Sie können Design-Pakete importieren, die von anderen erstellt werden, indem Sie sie in Ihr Projekt hochladen.
 
 Hochladen von Designs
 
@@ -206,7 +207,7 @@ Um einen Ordner zu erstellen, führen Sie die folgenden Schritte aus:
 
    >[!NOTE]
    >
-   >Standardmäßig wird der Wert des Namensfelds automatisch mit dem Titel ausgefüllt. Der Name darf nur alphanumerische Zeichen oder die Sonderzeichen Bindestrich (-) und Unterstrich (_) enthalten. Andere Sonderzeichen, die für den Titel eingegeben wurden, werden automatisch durch einen Bindestrich ersetzt und Sie werden aufgefordert, den neuen Namen zu bestätigen. Sie können mit dem vorgeschlagenen Namen fortfahren oder diesen weiter bearbeiten.
+   >Standardmäßig wird der Wert des Namensfelds automatisch mit dem Titel ausgefüllt. Der Name darf nur alphanumerische Zeichen oder die Sonderzeichen Bindestrich (-) und Unterstrich (_) enthalten. Alle anderen Sonderzeichen, die im Titel eingegeben werden, werden automatisch durch einen Bindestrich ersetzt und Sie werden aufgefordert, den neuen Namen zu bestätigen. Sie können den vorgeschlagenen Namen verwenden oder ihn weiter bearbeiten.
 
 1. Ein neuer Ordner mit dem definierten Titel wird an der aktuellen Position in der Asset-Liste angezeigt.
 

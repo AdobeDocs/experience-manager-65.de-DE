@@ -2,10 +2,11 @@
 title: Asynchrone Aufträge
 description: Adobe Experience Manager optimiert die Leistung durch asynchrone Ausführung einiger ressourcenintensiver Aufgaben.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '791'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
@@ -55,7 +56,7 @@ Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie z
 
    ![Stoppsymbol](assets/async-stop-icon.png)
 
-1. Um zusätzliche Details anzuzeigen, beispielsweise eine Beschreibung und Protokolle, wählen Sie den Vorgang aus und klicken Sie auf **[!UICONTROL Öffnen]** aus der Symbolleiste.
+1. Um zusätzliche Details anzuzeigen, beispielsweise Beschreibung und Protokolle, wählen Sie den Vorgang aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Öffnen]**.
 
    ![Öffnen-Symbol](assets/async-open-icon.png)
 

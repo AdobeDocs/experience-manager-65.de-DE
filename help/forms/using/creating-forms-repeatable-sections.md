@@ -6,10 +6,11 @@ topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
 feature: Adaptive Forms, Foundation Components
 exl-id: f2abae0a-f7fd-4a39-bd8c-03492ce06fe9
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1139'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +26,7 @@ Sie können wiederholbare Bereiche mit einer der folgenden Methoden erstellen:
 
 ## Verwenden des Instanzmanagers über Skripte  {#using-instance-manager-via-scripts-nbsp}
 
-1. Wählen Sie im Bearbeitungsmodus einen Bereich aus und wählen Sie dann ![cmppr](assets/cmppr.png). Aktivieren Sie in der Randleiste unter „Eigenschaften“ **Bereich wiederholbar machen**. Geben Sie Werte für die Felder **[!UICONTROL Maximum]** und **[!UICONTROL Minimum]** an.
+1. Wählen Sie im Bearbeitungsmodus einen Bereich und wählen Sie dann ![cmppr](assets/cmppr.png) aus. Aktivieren Sie in der Randleiste unter „Eigenschaften“ **Bereich wiederholbar machen**. Geben Sie Werte für die Felder **[!UICONTROL Maximum]** und **[!UICONTROL Minimum]** an.
 
    Das Feld „Maximum“ gibt an, wie oft ein Panel maximal auf der Seite angezeigt werden kann. Geben Sie im Feld für die maximale Anzahl den Wert „-1“ an, damit das Panel beliebig oft angezeigt werden kann.
 
@@ -37,7 +38,7 @@ Sie können wiederholbare Bereiche mit einer der folgenden Methoden erstellen:
 
 1. Das übergeordnete Element des Panels, das wiederholt werden soll, muss Schaltflächen zum Hinzufügen und Löschen enthalten, um Instanzen der wiederholbaren Panels zu verwalten. Führen Sie die folgenden Schritte aus, um Schaltflächen in das übergeordnete Element einzufügen und Skripte auf den Schaltflächen zu aktivieren:
 
-   1. Ziehen Sie eine Schaltflächenkomponente per Drag-and-Drop aus der Randleiste in das übergeordnete Element des Bereichs. Wählen Sie die Komponente aus und wählen Sie ![edit-rules](assets/edit-rules.png). Die Regeln der Schaltfläche werden im Regeleditor geöffnet.
+   1. Ziehen Sie eine Schaltflächenkomponente per Drag-and-Drop aus der Randleiste in das übergeordnete Element des Bereichs. Wählen Sie die Komponente aus und wählen Sie dann ![edit-rules](assets/edit-rules.png). Die Regeln der Schaltfläche werden im Regeleditor geöffnet.
    1. Klicken Sie im Fenster des Regeleditors auf **Erstellen**.
 
       Wählen Sie in der Zeile „Formularobjekte“ und „Funktionen“ **Visual Editor.**
@@ -91,14 +92,14 @@ Sie können wiederholbare Bereiche mit einer der folgenden Methoden erstellen:
 
       >[!NOTE]
       >
-      >Wenn alle Instanzen eines Bedienfelds aus einem adaptiven Formular entfernt werden, verwenden Sie zum Hinzufügen einer Instanz des entfernten Bedienfelds die Syntax _panelName , um den Instanzmanager des Bedienfelds zu erfassen, und verwenden Sie die API addInstance des Instanzmanagers, um die gelöschte Instanz hinzuzufügen. Beispiel: _panelName.addInstance(). Dies fügt eine Instanz der entfernten Bereichs hinzu.
+      >Wenn alle Instanzen eines Bereichs aus einem adaptiven Formular entfernt wurden, können Sie eine Instanz des entfernten Bereichs mithilfe der Syntax _panelName erfassen, um den Instanz-Manager des Bereichs zu erfassen, und die gelöschte Instanz mit der addInstance-API des Instanz-Managers hinzufügen. Beispiel: _panelName.addInstance(). Dies fügt eine Instanz der entfernten Bereichs hinzu.
 
 ## Verwenden des Akkordeon-Layouts für den übergeordneten Bereich   {#using-the-accordion-layout-for-the-parent-panel-nbsp}
 
 Ein Bereich weist verschiedene Layout-Optionen auf. Die Option zum Layout für das Akkordeon-Design bietet standardmäßig Unterstützung für wiederholbare Bereiche. Führen Sie die folgenden Schritte aus, um einen wiederholbaren Bereich mit der Option zum Layout für das Akkordeon-Design zu erstellen:
 
-1. Wählen Sie im übergeordneten Element des zu wiederholenden Bereichs die Option ![cmppr](assets/cmppr.png). Sie können die zugehörigen Eigenschaften in der Randleiste anzeigen. Wählen Sie in der Dropdown-Liste **Layout** die Option **Akkordeon**.
-1. Wählen Sie in einem Bereich, der wiederholt werden soll, ![cmppr](assets/cmppr.png). Sie können die Eigenschaften des Bereichs in der Randleiste anzeigen. Aktivieren Sie die Registerkarte **Bereich wiederholbar machen** und geben Sie den Wert für die Felder **Maximum** und **Minimum** ein.
+1. Wählen Sie im übergeordneten Element des zu wiederholenden Bereichs ![cmppr](assets/cmppr.png). Sie können die zugehörigen Eigenschaften in der Randleiste anzeigen. Wählen Sie in der Dropdown-Liste **Layout** die Option **Akkordeon**.
+1. Wählen Sie in einem Bereich, der wiederholt werden soll, ![cmppr](assets/cmppr.png). Sie können die Eigenschaften des Bereichs in der Randleiste sehen. Aktivieren Sie die Registerkarte **Bereich wiederholbar machen** und geben Sie den Wert für die Felder **Maximum** und **Minimum** ein.
 
    Jetzt können Sie die Schaltflächen Plus (+) und Löschen (![delete-panel](assets/delete-panel.png)) verwenden, um Bereiche hinzuzufügen und zu entfernen.
 

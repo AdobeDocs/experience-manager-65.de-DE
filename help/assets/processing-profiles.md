@@ -9,10 +9,11 @@ docset: aem65
 role: User, Admin
 feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: bf6566bb9e3e77924b89b31fc2ef4a59545a66da
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1392'
-ht-degree: 82%
+ht-degree: 88%
 
 ---
 
@@ -81,7 +82,7 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
    ![Workflow zur Neuverarbeitung von Assets 1](/help/assets/assets/reprocess-assets1.png)
 
 1. Wählen Sie **[!UICONTROL Workflow starten]** aus.
-1. Aus dem **[!UICONTROL Workflow starten]** Dropdown-Liste auswählen **[!UICONTROL Dynamic Media-Neuverarbeitung]**.
+1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Workflow starten]** die Option **[!UICONTROL Dynamic Media Reprocess]** aus.
 1. (Optional) Geben Sie im Textfeld **Titel des Workflows eingeben** einen Namen für den Workflow ein. Sie können den Namen gegebenenfalls verwenden, um auf die Workflow-Instanz zu verweisen.
 
    ![Assets erneut verarbeiten 2](/help/assets/assets/reprocess-assets2.png)
@@ -97,12 +98,12 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 **Anpassen der Batch-Größe des Neuverarbeitungs-Workflows:**
 
 1. Klicken Sie in Experience Manager auf **[!UICONTROL Adobe Experience Manager]**, um auf die globale Navigationskonsole zuzugreifen. Klicken Sie dann auf das Symbol **[!UICONTROL Tools]** (Hammer) > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
-1. Wählen Sie auf der Seite &quot;Workflow-Modelle&quot;in der Karten- oder Listenansicht die Option **[!UICONTROL Dynamic Media-Neuverarbeitung]**.
+1. Wählen Sie auf der Seite „Workflow-Modelle“ in der Karten- oder Listenansicht **[!UICONTROL Dynamic Media Reprocess]** aus.
 
    ![Seite &quot;Workflow-Modelle&quot;mit Dynamic Media-Neuverarbeitungs-Workflow in der Kartenansicht ausgewählt](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**. Eine neue Browserregisterkarte öffnet die Seite des Dynamic Media-Workflow-Modells für die Neuverarbeitung.
-1. Wählen Sie auf der Workflow-Seite Dynamic Media-Neuverarbeitung rechts oben die Option **[!UICONTROL Bearbeiten]** , um den Workflow zu &quot;entsperren&quot;.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**. Eine neue Browser-Registerkarte öffnet die Workflow-Modellseite „Dynamic Media Reprocess“.
+1. Klicken Sie oben rechts auf der Workflow-Seite „Dynamic Media Reprocess“ auf **[!UICONTROL Bearbeiten]**, um den Workflow zu entsperren.
 1. Wählen Sie im Workflow die Komponente „Massen-Upload in Scene7“ aus, um die Symbolleiste zu öffnen, und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Konfigurieren]**.
 
    ![Komponente „Massen-Upload in Scene7“](/help/assets/assets-dm/reprocess-assets8.png)
@@ -119,11 +120,11 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
 1. Klicken Sie oben rechts im Dialogfeld **[!UICONTROL Massen-Upload in Scene7 – Schritt-Eigenschaften]** auf **[!UICONTROL Fertig]**.
 
-1. Wählen Sie in der rechten oberen Ecke der Seite mit dem Dynamic Media-Workflow-Modell für die Neuverarbeitung die Option **[!UICONTROL Synchronisieren]**. Wenn Sie **[!UICONTROL Synchronisiert]** sehen, ist das Workflow-Laufzeitmodell erfolgreich synchronisiert und bereit, Assets in einem Ordner erneut zu verarbeiten.
+1. Klicken Sie oben rechts auf der Workflow-Modellseite „Dynamic Media Reprocess“ auf **[!UICONTROL Synchronisieren]**. Wenn Sie **[!UICONTROL Synchronisiert]** sehen, ist das Workflow-Laufzeitmodell erfolgreich synchronisiert und bereit, Assets in einem Ordner erneut zu verarbeiten.
 
    ![Synchronisieren des Workflow-Modells](/help/assets/assets-dm/reprocess-assets1.png)
 
-1. Schließen Sie die Browser-Registerkarte, auf der das Dynamic Media-Workflow-Modell zur erneuten Verarbeitung angezeigt wird.
+1. Schließen Sie die Browser-Registerkarte, auf der das Workflow-Modell „Dynamic Media Reprocess“ angezeigt wird.
 
 <!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
 1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.

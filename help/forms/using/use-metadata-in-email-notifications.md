@@ -4,10 +4,11 @@ description: Verwenden von Metadaten zum Ausfüllen von Informationen in einer E
 topic-tags: publish
 docset: aem65
 exl-id: 18cfc4be-676d-4f08-afc1-4f11bb48dab6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 24%
+source-wordcount: '871'
+ht-degree: 32%
 
 ---
 
@@ -194,15 +195,15 @@ Sie können auch benutzerdefinierte Metadaten in einer E-Mail-Benachrichtigung v
 
 Sie können die Java-Schnittstelle WorkitemUserMetadataService verwenden, um benutzerdefinierte Metadaten für E-Mail-Vorlagen hinzuzufügen. Sie können ein OSGi-Bundle erstellen, das die Java-Schnittstelle WorkitemUserMetadataService verwendet und auf dem AEM Forms-Server bereitstellt. Dadurch werden die Metadaten im Schritt &quot;Aufgabe zuweisen&quot;zur Auswahl bereitgestellt.
 
-Um ein OSGi-Bundle mit Java-Schnittstelle zu erstellen, fügen Sie [AEM Forms Client SDK](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) jar und [Granite-JAR](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) -Dateien als externe Abhängigkeiten zum OSGi-Bundle-Projekt. Sie können eine beliebige Java-IDE verwenden, um ein OSGi-Bundle zu erstellen. Im folgenden Verfahren wird beschrieben, wie Sie mit Eclipse ein OSGi-Bundle erstellen:
+Um ein OSGi-Bundle mit Java-Schnittstelle zu erstellen, fügen Sie [AEM Forms Client SDK](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) jar und [Granite-JAR](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) -Dateien als externe Abhängigkeiten zum OSGi-Bundle-Projekt. Sie können eine beliebige Java-IDE verwenden, um ein OSGi-Bundle zu erstellen. Das folgende Beispiel zeigt die Erstellung eines OSGi-Bundles mithilfe von Eclipse:
 
-1. Öffnen Sie Eclipse IDE. Navigieren Sie zu Datei > Neues Projekt.
+1. Öffnen Sie die Eclipse-IDE. Navigieren Sie zu Datei > Neues Projekt.
 
 1. Wählen Sie im Assistenten-Dialogfeld Maven-Projekt und klicken Sie auf Weiter.
 
 1. Behalten Sie im neuen Maven-Projekt die Standardeinstellungen bei und klicken Sie auf Weiter. Wählen Sie einen Archetyp aus und klicken Sie auf Weiter . Beispiel: maven-archetype-quickstart. Geben Sie Group Id, Artifact ID, Version und Paket für das Projekt an und klicken Sie auf Beenden. Das Projekt wird erstellt.
 
-1. Öffnen Sie die Datei &quot;pom.xml&quot;zur Bearbeitung und ersetzen Sie den gesamten Inhalt der Datei durch den folgenden Text:
+1. Öffnen Sie die Datei „pom.xml“ zur Bearbeitung und ersetzen Sie den gesamten Inhalt dieser Datei durch den folgenden Text:
 
 1. Fügen Sie Quellcode hinzu, der die Java-Schnittstelle WorkitemUserMetadataService verwendet, um benutzerdefinierte Metadaten für E-Mail-Vorlagen hinzuzufügen. Unten finden Sie einen Beispielcode:
 

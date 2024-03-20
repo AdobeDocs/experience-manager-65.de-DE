@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Correspondence Management
 exl-id: 9e1b0067-c7dc-4bbb-a209-d674592be858
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2171'
-ht-degree: 44%
+ht-degree: 45%
 
 ---
 
@@ -88,7 +89,7 @@ Führen Sie die folgenden Schritte durch, um das Teilformular in einer XDP-Vorla
 1. Wählen Sie **Datei** > **Speichern unter**, um die Datei im lokalen Dateisystem zu speichern:
 
    1. Navigieren Sie zum Speicherort der Datei und geben Sie einen Namen für die XDP-Vorlage an.
-   1. Auswählen **.xdp** aus dem **Dateityp** Dropdown-Liste.
+   1. Wählen Sie aus der Dropdown-Liste **Dateityp** die Option **.xdp** aus.
 
    1. Wählen Sie **Speichern** aus.
 
@@ -139,7 +140,7 @@ Führen Sie die folgenden Schritte aus, um in der XDP-Vorlage die Tabellenkompon
 1. Wählen Sie **Datei** > **Speichern unter**, um die Datei im lokalen Dateisystem zu speichern:
 
    1. Navigieren Sie zum Speicherort der Datei und geben Sie den Namen für die XDP-Vorlage an.
-   1. Auswählen **.xdp** aus dem **Dateityp** Dropdown-Liste.
+   1. Wählen Sie aus der Dropdown-Liste **Dateityp** die Option **.xdp** aus.
 
    1. Wählen Sie **Speichern** aus.
 

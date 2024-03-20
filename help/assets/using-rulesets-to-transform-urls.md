@@ -1,6 +1,6 @@
 ---
 title: Verwenden von Regelsätzen zum Konvertieren von URLs
-description: In Dynamic Media haben Sie die Möglichkeit, Regelsätze anzuwenden, um URLs zu konvertieren. Regelsätze sind Anweisungen, die in einer Skriptsprache (beispielsweise JavaScript) abgefasst werden. Sie werten XML-Daten aus und führen bestimmte Aktionen durch, falls die Daten die festgelegten Bedingungen erfüllen.
+description: In Dynamic Media haben Sie die Möglichkeit, Regelsätze bereitzustellen, um URLs zu konvertieren. Regelsätze sind Anweisungen, die in einer Skriptsprache (beispielsweise JavaScript) abgefasst werden. Sie werten XML-Daten aus und führen bestimmte Aktionen durch, falls die Daten die festgelegten Bedingungen erfüllen.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -8,34 +8,35 @@ content-type: reference
 role: User, Admin,Developer
 exl-id: b0ac587b-8592-4d37-9ce0-98a0859c367f
 feature: Configuration,Rulesets
-source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
-workflow-type: ht
-source-wordcount: '760'
-ht-degree: 100%
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '714'
+ht-degree: 97%
 
 ---
 
 # Verwenden von Regelsätzen zum Konvertieren von URLs {#using-rulesets-to-transform-urls}
 
-In Dynamic Media haben Sie die Möglichkeit, Regelsätze anzuwenden, um URLs zu konvertieren. Regelsätze sind Anweisungen, die in einer Skriptsprache (beispielsweise JavaScript) abgefasst werden. Sie werten XML-Daten aus und führen bestimmte Aktionen durch, falls die Daten die festgelegten Bedingungen erfüllen. Jede Regel besteht mindestens aus einer Bedingung und einer Aktion. Eine Regel vergleicht die XML-Daten mit den Bedingungen. Wenn eine Bedingung erfüllt ist, wird die entsprechende Aktion durchgeführt. Beispiele für Regelsätze:
+In Dynamic Media haben Sie die Möglichkeit, Regelsätze bereitzustellen, um URLs zu konvertieren. Regelsätze sind Anweisungen, die in einer Skriptsprache (beispielsweise JavaScript) abgefasst werden. Sie werten XML-Daten aus und führen bestimmte Aktionen durch, falls die Daten die festgelegten Bedingungen erfüllen. Jede Regel besteht mindestens aus einer Bedingung und einer Aktion. Eine Regel vergleicht die XML-Daten mit den Bedingungen. Wenn eine Bedingung erfüllt ist, wird die entsprechende Aktion durchgeführt. Beispiele für Regelsätze:
 
 * Hinzufügen eines Suffix vom MIME-Typ. Viele Services und Websites benötigen Bildsuffixe. So wird beispielsweise an eine URL das Suffix `.jpg` angefügt.
 * Erstellen eines Ordnerpfads zur URL für SEO (Search Engine Optimization)-Zwecke
 
-   Weitere Informationen finden Sie unter [Unterstützung von SEO durch Adobe Dynamic Media Classic](/help/assets/assets/s7_seo.pdf).
+  Weitere Informationen finden Sie unter [Unterstützung von SEO durch Adobe Dynamic Media Classic](/help/assets/assets/s7_seo.pdf).
 
 * Hinzufügen von Metadaten zur URL für SEO (Search Engine Optimization)
 
-   Weitere Informationen finden Sie unter [Unterstützung von SEO durch Adobe Dynamic Media Classic](/help/assets/assets/s7_seo.pdf).
+  Weitere Informationen finden Sie unter [Unterstützung von SEO durch Adobe Dynamic Media Classic](/help/assets/assets/s7_seo.pdf).
 
 * Einstellen der Content-Disposition zum Auslösen eines Downloads
 * Vereinfachen der URLs für Vorlagen zur Bildbearbeitung für die Personalisierung. Ändern Sie beispielsweise `rgb{XX,YY,ZZ}` in die RTF-fähige `\redXX\greenYY\blueZZ`
 
 * Anfordern bestimmter zu kodierender Zeichen wie `$`, `{` und `}` und bestimmter für ImageServer zu dekodierender Zeichen. Facebook funktioniert beispielsweise nicht mit URLs, die Sonderzeichen enthalten.
 
-   Siehe [Entfernen von Sonderzeichen aus URLs](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
+  Siehe [Entfernen von Sonderzeichen aus URLs](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
-Im Zusammenhang mit Dynamic Media können Websites, die ein XML-basiertes System zur Verwaltung von Asset-Informationen verwenden, XML-Dateien in Dynamic Media hochladen. Sie können eine dieser Dateien als Regelsatzdatei zur Vorverarbeitung für die Verarbeitung des Dynamic Media-Assets festlegen. Mit dieser Datei wird das Standard-URL-Protokollformat neu strukturiert und an die Geschäftslogik der in Dynamic Media integrierten Systeme angepasst. Sie geben eine XML-Datei an, die als Dateipfad für die Regeldefinitionen dienen soll.
+Im Zusammenhang mit Dynamic Media können Websites, die ein XML-basiertes System zur Verwaltung von Asset-Informationen verwenden, XML-Dateien in Dynamic Media hochladen. Sie können eine dieser Dateien als Regelsatzdatei zur Vorverarbeitung für die Verarbeitung des Dynamic Media-Assets festlegen. Diese Datei strukturiert das Standard-URL-Protokollformat neu, um der Geschäftslogik der in Dynamic Media integrierten Systeme zu entsprechen. Sie geben eine XML-Datei an, die als Dateipfad für die Regeldefinitionen dienen soll.
 
 >[!CAUTION]
 >

@@ -7,10 +7,11 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 2c971da0-5bd5-40d1-820d-4efc2a44b49d
 docset: aem65
 exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '740'
-ht-degree: 87%
+ht-degree: 92%
 
 ---
 
@@ -18,20 +19,20 @@ ht-degree: 87%
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
-Sie können Werte verwenden, die in ein Element Ihres Formulars eingegeben wurden, um Metadatenfelder eines Entwurfs oder einer Formularübermittlung zu berechnen. Mit Metadaten können Sie Inhalte auf der Grundlage von Benutzerdaten filtern. Beispiel: Ein Benutzer gibt Hans Mustermann in das Namensfeld Ihres Formulars ein. Sie können diese Informationen verwenden, um Metadaten zu berechnen, die diese Übermittlung unter den Initialen „HM“ kategorisieren können.
+Sie können Werte verwenden, die in ein Element Ihres Formulars eingegeben wurden, um Metadatenfelder eines Entwurfs oder einer Formularübermittlung zu berechnen. Mit Metadaten können Sie Inhalte auf der Grundlage von Benutzerdaten filtern. Beispiel: Ein Benutzer gibt „Hans Mustermann“ in das Namensfeld Ihres Formulars ein. Sie können diese Informationen verwenden, um Metadaten zu berechnen, die diese Übermittlung unter den Initialen „HM“ kategorisieren können.
 
 Um die Metadatenfelder mit den vom Benutzer eingegebenen Werten zu berechnen, müssen Sie Elemente Ihres Formulars in den Metadaten hinzufügen. Wenn ein Benutzer einen Wert in diesem Element eingibt, verwendet ein Skript den Wert, um diese Informationen zu berechnen. Diese Informationen werden den Metadaten hinzugefügt. Wenn Sie ein Element als Metadatenfeld hinzufügen, stellen Sie einen Schlüssel dafür bereit. Der Schlüssel wird als Feld in den Metadaten hinzugefügt und die berechneten Informationen werden damit protokolliert.
 
-Beispielsweise veröffentlicht eine Krankenversicherung ein Formular. In diesem Formular erfasst ein Feld das Alter der Endbenutzerinnen und Endbenutzer. Der Kunde möchte alle Übermittlungen in einer bestimmten Altersgruppe überprüfen, nachdem mehrere Benutzer das Formular übermittelt haben. Statt alle Daten einzeln zu überprüfen, was mit zunehmender Anzahl an Formularen schwieriger wird, helfen zusätzliche Metadaten dem Kunden. Der Formularautor kann konfigurieren, welche Eigenschaften/Daten vom Endbenutzer auf der obersten Ebene gespeichert werden, damit die Suche am einfachsten ist. Zusätzliche Metadaten sind vom Benutzer ausgefüllte Informationen, die auf der obersten Ebene des Metadatenknotens gespeichert werden, wie vom Autor konfiguriert.
+Beispielsweise veröffentlicht eine Krankenversicherung ein Formular. In diesem Formular erfasst ein Feld das Alter der Endbenutzenden. Die Kundin bzw. der Kunde möchte alle Übermittlungen in einer bestimmten Altersgruppe überprüfen, nachdem mehrere Benutzende das Formular übermittelt haben. Statt alle Daten einzeln zu überprüfen, was mit zunehmender Anzahl an Formularen schwieriger wird, helfen zusätzliche Metadaten dabei. Der Formularautor kann konfigurieren, welche Eigenschaften/Daten vom Endbenutzer auf der obersten Ebene gespeichert werden, damit die Suche am einfachsten ist. Zusätzliche Metadaten sind vom Benutzer ausgefüllte Informationen, die auf der obersten Ebene des Metadatenknotens gespeichert werden, wie vom Autor konfiguriert.
 
-Ein weiteres Beispiel ist ein Formular, das E-Mail-IDs und Telefonnummern erfasst. Wenn eine Benutzerin bzw. ein Benutzer dieses Formular anonym besucht und es verlässt, kann die Autorin bzw. der Autor das Formular so konfigurieren, dass die E-Mail-Adresse und Telefonnummer automatisch gespeichert werden. Dieses Formular wird automatisch gespeichert und die Telefonnummer und E-Mail-Adresse werden im Metadatenknoten des Entwurfs gespeichert. Ein Anwendungsfall dieser Konfiguration ist das Lead-Management-Dashboard.
+Ein weiteres Beispiel ist ein Formular, das E-Mail-IDs und Telefonnummern erfasst. Wenn eine Benutzerin bzw. ein Benutzer dieses Formular anonym besucht und das Formular verlässt, kann die Autorin bzw. der Autor das Formular so konfigurieren, dass die E-Mail-Adresse und die Telefonnummer automatisch gespeichert werden. Dieses Formular wird automatisch gespeichert und die Telefonnummer und die E-Mail-Adresse werden im Metadatenknoten des Entwurfs gespeichert. Ein Anwendungsfall dieser Konfiguration ist das Lead-Management-Dashboard.
 
 ## Hinzufügen von Formularelementen zu Metadaten {#adding-form-elements-to-metadata}
 
 Führen Sie die folgenden Schritte aus, um den Metadaten ein Element hinzuzufügen:
 
 1. Öffnen Sie Ihr adaptives Formular im Bearbeitungsmodus.\
-   Um das Formular im Bearbeitungsmodus zu öffnen, wählen Sie im Forms Manager das Formular aus und wählen Sie **Öffnen**.
+   Um das Formular im Bearbeitungsmodus zu öffnen, wählen Sie es im Forms Manager aus und wählen Sie **Öffnen**.
 1. Wählen Sie im Bearbeitungsmodus eine Komponente aus und wählen Sie ![Feldebene](assets/field-level.png) > **Container für adaptive Formulare** und wählen Sie ![cmppr](assets/cmppr.png).
 1. Klicken Sie in der Seitenleiste auf **Metadaten**.
 1. Klicken Sie im Abschnitt „Metadaten“ auf **Hinzufügen**.

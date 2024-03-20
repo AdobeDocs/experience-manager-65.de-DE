@@ -7,7 +7,8 @@ content-type: reference
 topic-tags: personalization
 docset: aem65
 exl-id: 34293432-cfdc-466b-96bd-2c43b566a420
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 75%
@@ -89,7 +90,7 @@ Sie können Angebote löschen, wenn Sie entweder Ordnerinhalte der Angebotsbibli
    Wählen Sie das Angebot aus und klicken Sie auf **Löschen**.
 
 1. Klicken Sie im angezeigten Dialogfeld auf **Löschen** , um den Löschvorgang zu bestätigen.
-1. Wird das Angebot von einem oder mehreren Erlebnissen verwendet, sehen Sie ein Dialogfeld, das auf die Verknüpfung des Angebots hinweist:
+1. Wird das Angebot von einem oder mehreren Erlebnissen verwendet, sehen Sie ein Dialogfeld, das auf die Referenzierung des Angebots hinweist:
 
    * Um das Angebot zu löschen und aus den Erlebnissen zu entfernen, klicken Sie auf **Löschen erzwingen**.
    * Um das Angebot beizubehalten, klicken Sie auf **Abbrechen**.

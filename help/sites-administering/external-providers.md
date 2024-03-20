@@ -7,7 +7,8 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 26%
@@ -26,7 +27,7 @@ Verschiedene vordefinierte Konfigurationen stehen Ihnen zur Integration in den e
 
 Sie können auch Ihre eigene Instanz der **Allgemeine Analytics-Snippets** , um eine neue Dienstkonfiguration zu definieren.
 
-Die Informationen werden dann von kleinen Codeausschnitten erfasst, die zu den Webseiten hinzugefügt werden. Beispiel:
+Die Informationen werden dann von kleinen Codeausschnitten erfasst, die zu den Webseiten hinzugefügt werden. z. B.:
 
 >[!CAUTION]
 >
@@ -67,7 +68,7 @@ Für die Grundkonfiguration:
 1. Erweitern Sie im linken Bereich die **Cloud Service-Konfigurationen**.
 1. Doppelklicken **Generisches Analytics-Snippet** , um die Seite zu öffnen:
 
-   ![Generisches Analyse-Snippet](assets/analytics_genericoverview.png)
+   ![Generisches Analytics-Snippet](assets/analytics_genericoverview.png)
 
 1. Klicken Sie auf + , um eine neue Konfiguration über das Dialogfeld hinzuzufügen. Weisen Sie mindestens einen Namen zu, z. B. Google Analytics:
 

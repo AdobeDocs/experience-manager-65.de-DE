@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2684'
-ht-degree: 84%
+ht-degree: 85%
 
 ---
 
@@ -125,7 +126,7 @@ Gehen Sie folgendermaßen vor, um Ihre MySQL-Datenbank zu konfigurieren:
 1. Konfigurieren der MySQL-Datenbank als Datenquelle:
 
    1. Wechseln zur AEM-Web-Konsole unter [http://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-   1. Suchen Sie die Konfiguration **Apache Sling Connection Pooled DataSource**. Wählen Sie diese Option aus, um die Konfiguration im Bearbeitungsmodus zu öffnen.
+   1. Suchen Sie die Konfiguration **Apache Sling Connection Pooled DataSource**. Tippen Sie darauf, um die Konfiguration im Bearbeitungsmodus zu öffnen.
    1. Geben Sie im Konfigurationsdialog die folgenden Details an:
 
       * **Datenquellenname:** Sie können einen beliebigen Namen angeben. Geben Sie beispielsweise **MySQL** an.
@@ -227,7 +228,7 @@ Führen Sie die folgenden Schritte durch, um untergeordnete berechnete Eigenscha
    ![Untergeordnete Eigenschaft erstellen](assets/create_child_property_new.png)
 
 1. Auswählen **Regel bearbeiten** , um den Regeleditor zu öffnen.
-1. Wählen Sie **Erstellen**. Ein Regelfenster **Wert festlegen** wird geöffnet.
+1. Wählen Sie **Erstellen** aus. Ein Regelfenster **Wert festlegen** wird geöffnet.
 1. Wählen Sie in der Dropdownliste **Mathematischer Ausdruck**.
 
    ![Regel-Editor für Nutzungsgebühren](assets/usage_charges_rule_editor_new.png)
@@ -280,7 +281,7 @@ Für jede im Datenmodellobjekt „customer“ verfügbare Mobilfunknummer stehen
 
    * Wählen Sie **mobilenum** aus der Dropdown-Liste **Bindungswert** aus.
 
-   * Klicken Sie auf **Hinzufügen**.
+   * Wählen Sie **Hinzufügen**.
 
    ![Verknüpfung für ein Argument hinzufügen](assets/add_association_argument_new.png)
 
@@ -335,7 +336,7 @@ Nachdem Sie Verknüpfungen zwischen dem Kunden- und anderen Datenmodellobjekten 
 
    * Wählen Sie **mobilenum** aus der Dropdown-Liste **Bindungswert** aus.
 
-1. Auswählen **Fertig** , um die Eigenschaften zu speichern.
+1. Wählen Sie **Fertig**, um die Eigenschaften zu speichern.
 
    ![Konfigurieren von Services](assets/configure_services_customer_new.png)
 
@@ -354,7 +355,7 @@ Nachdem Sie Verknüpfungen zwischen dem Kunden- und anderen Datenmodellobjekten 
    * Geben Sie einen optionalen Titel und eine optionale Beschreibung ein.
    * Wählen Sie **Kunde** aus der Dropdown-Liste **Ausgabemodellobjekt**.
 
-   * Auswählen **Fertig** , um die Eigenschaften zu speichern.
+   * Wählen Sie **Fertig**, um die Eigenschaften zu speichern.
 
    ![Eigenschaften bearbeiten](assets/edit_properties_get_details_new.png)
 
@@ -365,7 +366,7 @@ Nachdem Sie Verknüpfungen zwischen dem Kunden- und anderen Datenmodellobjekten 
    * Wählen Sie **customer** aus der Dropdown-Liste **Eingabemodellobjekt** aus.
 
    * Wählen Sie **Fertig**.
-   * Auswählen **Speichern** , um das Formulardatenmodell zu speichern.
+   * Wählen Sie **Speichern**, um das Formulardatenmodell zu speichern.
 
    ![Service-Eigenschaften aktualisieren](assets/update_service_properties_new.png)
 

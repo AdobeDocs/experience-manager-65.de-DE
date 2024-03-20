@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 60%
+ht-degree: 78%
 
 ---
 
@@ -27,9 +28,9 @@ Der Standardstatus für jede Seiteneigenschaft ist wie folgt:
 
 * in der Bearbeitungsansicht verfügbar sind (z. B. **Eigenschaften anzeigen**)
 
-Felder müssen bei Bedarf spezifisch konfiguriert werden. Dies geschieht mithilfe der entsprechenden Knoteneigenschaften:
+Felder müssen einzeln konfiguriert werden, wenn eine Änderung erforderlich ist. Dies erfolgt mithilfe der entsprechenden Knoteneigenschaften:
 
-* Seiteneigenschaft, die in der Erstellungsansicht verfügbar sein soll (z. B. **Seite erstellen** Assistent):
+* Seiteneigenschaft, die in der Erstellungsansicht verfügbar sein soll (z. B. im **Seitenerstellungsassistenten**):
 
    * Name: `cq:showOnCreate`
    * Typ: `Boolean`
@@ -51,7 +52,7 @@ Sehen Sie als Beispiel die Einstellungen für Felder, die unter **Weitere Titel 
 
 ## Konfiguration von Seiteneigenschaften {#configuring-your-page-properties}
 
-Sie können auch die verfügbaren Felder konfigurieren, indem Sie das Dialogfeld Ihrer Seitenkomponente konfigurieren und die entsprechenden Knoteneigenschaften anwenden.
+Sie können diese Felder auch konfigurieren, indem Sie das Dialogfeld Ihrer Seitenkomponente konfigurieren und die entsprechenden Knoteneigenschaften anwenden.
 
 Beispiel: Der [**Seitenerstellungsassistent**](/help/sites-authoring/managing-pages.md#creating-a-new-page) zeigt standardmäßig die Felder an, die unter **Weitere Titel und Beschreibungen** gruppiert sind. Um diese auszublenden, nehmen Sie folgende Konfiguration vor:
 
@@ -68,14 +69,14 @@ Beispiel: Der [**Seitenerstellungsassistent**](/help/sites-authoring/managing-pa
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
    >
-   Sie dürfen jedoch ***keinerlei*** Änderungen im Pfad `/libs` vornehmen.
+   >Sie dürfen jedoch ***keinerlei*** Änderungen im Pfad `/libs` vornehmen.
    >
-   da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
+   >da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
    >
-   Die empfohlene Methode für Konfigurations- und sonstige Änderungen sieht wie folgt aus:
+   >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
    >
-   1. Erstellen Sie das erforderliche Element (d. h., wie es in `/libs`) unter `/apps`
-   1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
+   >1. Erstellen Sie das erforderliche Element unter `/apps` neu (d. h. wie es in `/libs` existiert).
+   >1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
 1. Legen Sie die Eigenschaft `path` auf `basic` fest, um auf die Überschreibung der Registerkarte „Standard“ zu verweisen (siehe auch den nächsten Schritt). Beispiel:
 
@@ -95,11 +96,11 @@ Beispiel: Der [**Seitenerstellungsassistent**](/help/sites-authoring/managing-pa
    * **Typ**: `Boolean`
    * **Wert**: `false`
 
-   Die **Weitere Titel und Beschreibungen** wird nicht mehr im Abschnitt **Seite erstellen** Assistent.
+   Der Abschnitt **Weitere Titel und Beschreibungen** wird nicht mehr im **Seitenerstellungsassistenten** angezeigt.
 
 >[!NOTE]
 >
-Informationen zum Konfigurieren von Seiteneigenschaften für die Verwendung mit Live Copies finden Sie unter [Konfigurieren von MSM-Sperren für Seiteneigenschaften](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) für weitere Details.
+>Informationen zum Konfigurieren von Seiteneigenschaften für die Verwendung mit Live Copies finden Sie unter [Konfigurieren von MSM-Sperren für Seiteneigenschaften](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) für weitere Details.
 
 ## Beispielkonfiguration von Seiteneigenschaften {#sample-configuration-of-page-properties}
 

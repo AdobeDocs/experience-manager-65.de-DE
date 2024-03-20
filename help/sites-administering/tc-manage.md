@@ -2,10 +2,11 @@
 title: Verwalten von Übersetzungsprojekten
 description: Erfahren Sie, wie Sie Übersetzungsprojekte in Adobe Experience Manager verwalten.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 219338b497dae6356a68429e9e8ab02c9cfcc3b4
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3506'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
@@ -456,7 +457,7 @@ Wenn Sie ein Übersetzungsprojekt manuell erstellen, müssen Sie neben den [grun
 
 ## Exportieren von Übersetzungsaufträgen {#exporting-a-translation-job}
 
-Sie können den Inhalt eines Übersetzungsauftrags herunterladen, um ihn beispielsweise an einen Übersetzungsanbieter zu senden, der nicht über einen Connector mit AEM integriert ist, oder um den Inhalt zu überprüfen.
+Sie können die Inhalte eines Übersetzungsauftrags herunterladen, um sie z. B. an einen Übersetzungsanbieter zu senden, der nicht über einen Connector in AEM integriert ist, oder um die Inhalte zu überprüfen.
 
 1. Klicken Sie im Dropdown-Menü der Kachel Übersetzungsauftrag auf Exportieren.
 1. Klicken Sie im Dialogfeld &quot;Exportieren&quot;auf &quot;Exportierte Datei herunterladen&quot;und speichern Sie die Datei bei Bedarf im Webbrowser-Dialogfeld.
@@ -464,7 +465,7 @@ Sie können den Inhalt eines Übersetzungsauftrags herunterladen, um ihn beispie
 
 ## Importieren von Übersetzungsaufträgen {#importing-a-translation-job}
 
-Sie können übersetzte Inhalte beispielsweise in AEM importieren, wenn Ihr Übersetzungsanbieter sie an Sie sendet, da sie nicht über einen Connector mit AEM integriert sind.
+Sie können übersetzte Inhalte in AEM importieren, zum Beispiel wenn Ihr Übersetzungsanbieter die Inhalte an Sie sendet, da er nicht über einen Connector in AEM integriert ist.
 
 1. Klicken Sie im Dropdown-Menü der Kachel Übersetzungsauftrag auf Importieren.
 1. Wählen Sie im Dialogfeld des Webbrowsers die zu importierende Datei aus.

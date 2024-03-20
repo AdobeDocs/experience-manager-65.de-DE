@@ -7,10 +7,11 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1829'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -108,7 +109,7 @@ So erstellen Sie eine Komponente, indem Sie einen der obigen Asset-Typen ziehen:
 
    Eine für den Asset-Typ geeignete Komponente wird am erforderlichen Speicherort erstellt und enthält das ausgewählte Asset.
 
-1. [Bearbeiten](#editmovecopypastedelete) die Komponente, falls erforderlich.
+1. [Bearbeiten](#editmovecopypastedelete) Sie bei Bedarf die Komponente.
 
 ## Bearbeiten einer Komponente (Inhalt und Eigenschaften) {#editing-a-component-content-and-properties}
 

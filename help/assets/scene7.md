@@ -9,7 +9,8 @@ feature: Dynamic Media Classic
 role: User, Admin
 mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2851'
 ht-degree: 98%
@@ -331,7 +332,7 @@ Standardmäßig durchsucht Experience Manager den ausgewählten Ordner und alle 
 >* Auf der klassischen Benutzeroberfläche können Sie auch nach **Flash** und **FXG** suchen. Das Filtern nach diesen Typen auf der Touch-optimierten Benutzeroberfläche wird nicht unterstützt.
 >
 >* Beim Durchsuchen eines Videos suchen Sie nach einer einzelnen Ausgabedarstellung. Die Ergebnisse geben die ursprüngliche (nur &amp;ast;.mp4) und die kodierte Ausgabedarstellung zurück.
->* Beim Suchen nach einem adaptiven Videoset durchsuchen Sie den Ordner und alle Unterordner, jedoch nur dann, wenn Sie zur Suche ein Keyword hinzugefügt haben. Wenn Sie kein Keyword hinzugefügt haben, durchsucht Experience Manager die Unterordner nicht.
+* Beim Suchen nach einem adaptiven Videoset durchsuchen Sie den Ordner und alle Unterordner, jedoch nur dann, wenn Sie zur Suche ein Keyword hinzugefügt haben. Wenn Sie kein Keyword hinzugefügt haben, durchsucht Experience Manager die Unterordner nicht.
 >
 
 **[!UICONTROL Veröffentlichungsstatus]**: Sie können Assets nach dem Veröffentlichungsstatus filtern: **[!UICONTROL Unveröffentlicht]** oder **[!UICONTROL Veröffentlicht]**. Wenn Sie keinen **[!UICONTROL Veröffentlichungsstatus]** auswählen, durchsucht Experience Manager standardmäßig alle Veröffentlichungsstatus.

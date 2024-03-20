@@ -3,10 +3,11 @@ title: Erstellen und Synchronisieren von Live Copies
 description: Erfahren Sie, wie Sie Live Copies in Adobe Experience Manager erstellen und synchronisieren.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4194'
-ht-degree: 59%
+ht-degree: 60%
 
 ---
 
@@ -99,7 +100,7 @@ So erstellen Sie eine Live Copy:
 
    ![Live Copy erstellen](assets/chlimage_1-212.png)
 
-1. Wählen Sie die Quellseite aus und klicken Sie auf **Nächste**. Beispiel:
+1. Wählen Sie die Quellseite aus und klicken Sie auf **Nächste**. z. B.:
 
    ![Quellseite auswählen](assets/chlimage_1-213.png)
 
@@ -158,7 +159,7 @@ So erstellen Sie eine Live Copy einer Site aus einer Blueprint-Konfiguration:
 
    Alle verfügbaren Sprachen sind standardmäßig ausgewählt. Um eine Sprache zu entfernen, klicken Sie auf die **X** neben der Sprache angezeigt.
 
-   Beispiel:
+   z. B.:
 
    ![Ausgangssprachen auswählen](assets/chlimage_1-217.png)
 
@@ -194,7 +195,7 @@ So zeigen Sie die Eigenschaften an:
 
    >[!NOTE]
    >
-   >Weitere Informationen finden Sie im Knowledge Base-Artikel . [Livecopy-Statusmeldung - Aktuell/Grün/In Sync](https://helpx.adobe.com/de/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
+   >Weitere Informationen finden Sie im Knowledgebase-Artikel [Live Copy-Statusmeldung – Up-to-date/Green/In Sync-Synchronisierung](https://helpx.adobe.com/de/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
 
 ### Anzeigen der Live Copies einer Blueprint-Seite {#seeing-the-live-copies-of-a-blueprint-page}
 
@@ -412,7 +413,7 @@ Nach dem [Aussetzen](#suspending-inheritance-from-page-properties) wird die Akti
 
 ![Fortsetzen](assets/chlimage_1-229.png)
 
-Wenn diese Option ausgewählt ist, wird das Dialogfeld angezeigt. Sie können bei Bedarf eine Synchronisierung auswählen und die Aktion bestätigen.
+Wenn diese Option ausgewählt ist, wird das Dialogfeld angezeigt. Sie können ggf. eine Synchronisierung auswählen. Bestätigen Sie anschließend die Aktion.
 
 #### Fortsetzen von Live Copy-Seiten über die Live Copy-Übersicht {#resume-a-live-copy-page-from-the-live-copy-overview}
 
@@ -462,7 +463,7 @@ So geben Sie die Tiefe an oder ändern diese:
 
 ### Abbrechen der Vererbung für Komponenten {#cancelling-inheritance-for-a-component}
 
-Brechen Sie die Live Copy-Vererbung für eine Komponente ab, damit die Komponente nicht mehr mit der Quellkomponente synchronisiert wird. Sie können die Vererbung bei Bedarf zu einem späteren Zeitpunkt aktivieren.
+Brechen Sie die Live Copy-Vererbung für eine Komponente ab, damit die Komponente nicht mehr mit der Quellkomponente synchronisiert wird. Falls erforderlich, können Sie die Vererbung zu einem späteren Zeitpunkt aktivieren.
 
 >[!NOTE]
 >
@@ -522,7 +523,7 @@ Wenn Sie die Vererbung abbrechen, können Sie den Eigenschaftswert ändern. Ein 
 
 ![Eigenschaft ändern, wenn Vererbung unterbrochen wird](assets/chlimage_1-232.png)
 
-Sie können die Vererbung für eine Eigenschaft später bei Bedarf erneut aktivieren.
+Sie können später ggf. die Vererbung für eine Eigenschaft erneut aktivieren.
 
 >[!NOTE]
 >
@@ -543,7 +544,7 @@ Um die Vererbung für eine Eigenschaft zu aktivieren, klicken Sie auf die **Vere
 
 ### Zurücksetzen von Live Copy-Seiten {#resetting-a-live-copy-page}
 
-Zurücksetzen einer Live Copy-Seite auf:
+Zurücksetzen einer Live Copy-Seite, um:
 
 * alle abgebrochenen Vererbungsvorgänge zu entfernen und
 * die Seite in denselben Status wie die Quellseite zurückzuversetzen.

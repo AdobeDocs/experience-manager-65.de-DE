@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '591'
-ht-degree: 85%
+ht-degree: 83%
 
 ---
 
@@ -33,8 +34,8 @@ Correspondence Management stellt APIs zum Abrufen von Briefinstanzen über den L
 
 >[!NOTE]
 >
->„LetterInstanceService“ ist ein OSGi-Dienst und seine Instanz kann wie folgt abgerufen werden:
-über@Reference in der Java™-Klasse oder sling.getService(LetterInstanceService. Class) in JSP.
+>LetterInstanceService ist ein OSGI-Dienst und seine Instanz kann mithilfe von @Reference in Java™ abgerufen werden
+>Klasse oder sling.getService(LetterInstanceService. Class) in JSP.
 
 ### Verwendung von getAllLetterInstances {#using-nbsp-getallletterinstances}
 
@@ -146,7 +147,7 @@ Die CCR-Benutzeroberfläche unterstützt den Parameter cmLetterInstanceId , der 
 
 >[!NOTE]
 >
-Sie müssen beim Neuladen einer Korrespondenz weder cmLetterId noch cmLetterName/State/Version angeben, da die gesendeten Daten bereits alle Details zu dieser Korrespondenz enthalten. „RandomNo“ wird verwendet, um Probleme mit dem Browsercache zu vermeiden. Sie können einen Zeitstempel als Zufallszahl verwenden.
+>Sie müssen beim Neuladen einer Korrespondenz weder cmLetterId noch cmLetterName/State/Version angeben, da die gesendeten Daten bereits alle Details zu dieser Korrespondenz enthalten. „RandomNo“ wird verwendet, um Probleme mit dem Browsercache zu vermeiden. Sie können einen Zeitstempel als Zufallszahl verwenden.
 
 ### Öffnen der Briefinstanz „Gesendet“ {#opening-submitted-letter-instance}
 

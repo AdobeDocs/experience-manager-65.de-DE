@@ -3,9 +3,10 @@ title: Konfigurieren Sie den RTE für mehrere Editoren für Bearbeitung im Konte
 description: Erstellen Sie in Adobe Experience Manager mehrere Editoren für Bearbeitung im Kontext, indem Sie den Rich-Text-Editor konfigurieren.
 contentOwner: AG
 exl-id: 03030317-8b7d-408a-bdfd-619824d7260c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '445'
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '437'
 ht-degree: 100%
 
 ---
@@ -119,4 +120,3 @@ Allgemeine Informationen zum Hinzufügen eines Editors für Bearbeitung in Konte
 >[!MORELIKETHIS]
 >
 >* [Konfigurieren des Rich-Text-Editors in Experience Manager](/help/sites-administering/rich-text-editor.md).
-

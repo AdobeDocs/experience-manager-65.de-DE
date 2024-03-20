@@ -5,10 +5,11 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Interactive Communication
 exl-id: ea0c8971-56f4-4094-87e4-1b222b73951f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '652'
-ht-degree: 31%
+ht-degree: 55%
 
 ---
 
@@ -20,7 +21,7 @@ Planen Sie Ihre interaktive Kommunikation
 
 Dieses Tutorial ist ein Schritt in der Reihe [Erstellen Sie Ihre erste interaktive Kommunikation](/help/forms/using/create-your-first-interactive-communication.md). Es wird empfohlen, die Serie in chronologischer Reihenfolge zu durchlaufen, um den vollständigen Anwendungsfall des Tutorials zu verstehen, durchzuführen und zu demonstrieren.
 
-Der erste Schritt bei der Planung einer interaktiven Kommunikation besteht darin, den Inhalt der interaktiven Kommunikation fertigzustellen. Fachleute aus Abteilungen wie Rechtsabteilung, Finanzabteilung, Support oder Marketing können Ihnen bei der Fertigstellung des Inhalts helfen. Nach Abschluss des Inhalts müssen Sie ihn analysieren, um die verschiedenen Asset-Typen zu identifizieren, die zum Erstellen der interaktiven Kommunikation erforderlich sind.
+Der erste Schritt bei der Planung einer interaktiven Kommunikation besteht darin, den Inhalt der interaktiven Kommunikation fertigzustellen. Fachleute aus Abteilungen wie Rechtsabteilung, Finanzabteilung, Support oder Marketing können Ihnen bei der Fertigstellung des Inhalts helfen. Anschließend müssen Sie den Inhalt analysieren, um die verschiedenen Asset-Typen zu ermitteln, die zum Erstellen der interaktiven Kommunikation erforderlich sind.
 
 ## Planen {#planning-considerations}
 
@@ -75,12 +76,12 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
   </tr>
   <tr>
    <td>Kundendetails</td>
-   <td><p>Ort der Lieferung</p> <p>Statuscode</p> <p>Mobiltelefonnummer</p> <p>Alternative Kontaktnummer</p> <p>Beziehungsnummer</p> <p>Anzahl der Verbindungen</p> </td>
+   <td><p>Ort der Lieferung</p> <p>Statuscode</p> <p>Mobilfunknummer</p> <p>Alternative Kontaktnummer</p> <p>Beziehungsnummer</p> <p>Anzahl von Verbindungen</p> </td>
    <td><p>Werte für die folgenden Felder:</p>
     <ul>
      <li>Name</li>
      <li>Adresse</li>
-     <li>Mobiltelefonnummer</li>
+     <li>Mobilfunknummer</li>
      <li>Alternative Kontaktnummer</li>
      <li>Beziehungsnummer</li>
     </ul> <p>Tabelle - Kunde</p> </td>
@@ -88,13 +89,13 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
     <ul>
      <li>Ort der Lieferung</li>
      <li>Statuscode</li>
-     <li>Anzahl der Verbindungen</li>
+     <li>Anzahl von Verbindungen</li>
     </ul> </td>
    <td>--</td>
   </tr>
   <tr>
-   <td>Rechnungszusammenfassung</td>
-   <td><p>Vorheriger Saldo</p> <p>Zahlungen</p> <p>Anpassungen</p> <p>Gebühren für den laufenden Rechnungszeitraum</p> <p>Fälliger Betrag</p> <p>Fälligkeitsdatum</p> </td>
+   <td>Rechnungsübersicht</td>
+   <td><p>Vorheriger Saldo</p> <p>Zahlungen</p> <p>Anpassungen</p> <p>Gebühren des aktuellen Rechnungszeitraums</p> <p>Fälliger Betrag</p> <p>Fälligkeitsdatum</p> </td>
    <td><p>Wert für das Feld <strong>Gebühren des aktuellen Rechnungszeitraums</strong></p> <p>Tabelle - Rechnungen</p> </td>
    <td><p>Werte für die folgenden Felder:</p>
     <ul>
@@ -108,16 +109,16 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
   </tr>
   <tr>
    <td>Zusammenfassung der Gebühren</td>
-   <td><p>Anrufgebühren</p> <p>Gebühren für Konferenzanrufe</p> <p>SMS-Gebühren </p> <p>Gebühren für das mobile Internet</p> <p>Nationale Roaming-Gebühren</p> <p>Internationale Roaming-Gebühren</p> <p>Mehrwert - Service-Gebühren</p> <p>Gesamtkosten</p> <p>GESAMTZAHLBARER ZUSCHUSS</p> <p>Bedingung im Feld „Mehrwert Service-Gebühren“</p> </td>
+   <td><p>Anrufgebühren</p> <p>Gebühren für Telefonkonferenz</p> <p>SMS-Gebühren </p> <p>Mobile Internetgebühren</p> <p>Nationale Roaming-Gebühren</p> <p>Internationale Roaming-Gebühren</p> <p>Mehrwert-Service-Gebühren</p> <p>Gesamtgebühren</p> <p>GESAMT ZAHLBAR</p> <p>Bedingung im Feld „Mehrwert Service-Gebühren“</p> </td>
    <td><p>Werte für die folgenden Felder:</p>
     <ul>
      <li>Anrufgebühren</li>
-     <li>Gebühren für Konferenzanrufe</li>
+     <li>Gebühren für Telefonkonferenz</li>
      <li>SMS-Gebühren </li>
-     <li>Gebühren für das mobile Internet</li>
+     <li>Mobile Internetgebühren</li>
      <li>Nationale Roaming-Gebühren</li>
      <li>Internationale Roaming-Gebühren</li>
-     <li>Mehrwert - Service-Gebühren</li>
+     <li>Mehrwert-Service-Gebühren</li>
      <li>Gesamtkosten (Feld für berechnete Benutzergebühren)</li>
      <li>GESAMT ZAHLBAR (Feld für berechnete Nutzungsgebühren)</li>
     </ul> <p>Tabelle - Rechnungen</p> </td>
@@ -143,14 +144,14 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
    <td>--</td>
    <td>--</td>
    <td>--</td>
-   <td>PayNow</td>
+   <td>JetztBezahlen</td>
   </tr>
   <tr>
    <td>Mehrwert-Services</td>
    <td>--</td>
    <td>--</td>
    <td>--</td>
-   <td>ValueAddedServices</td>
+   <td>MehrwertServices</td>
   </tr>
  </tbody>
 </table>

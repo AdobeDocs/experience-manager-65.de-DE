@@ -4,7 +4,8 @@ description: Erfahren Sie, wie der Inhaltsfragment-Editor Markdown-Syntax verwen
 feature: Content Fragments
 role: User
 exl-id: e4340828-fe16-4edf-94c9-b0b145740e74
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 96%
@@ -31,7 +32,7 @@ Sie können Folgendes definieren:
 
 ## Überschriftsnotation {#heading-notation}
 
-Zum Erstellen einer Kopfzeile durch Platzieren eines Rautezeichens (#) vor der Überschrift. Ein Hash-Tag (#) wird für ein H1-Tag, zwei Hash-Tags (##) für ein H2 usw. verwendet. Sie können bis zu 6 Hashtags verwenden. Beispiel:
+Zum Erstellen einer Kopfzeile durch Platzieren eines Hashtags (#) vor der Überschrift. Ein Hash-Tag (#) wird für ein H1-Tag, zwei Hash-Tags (##) für ein H2 usw. verwendet. Sie können bis zu 6 Hashtags verwenden. Zum Beispiel:
 
     `## This is an H2`
 
@@ -39,7 +40,7 @@ Zum Erstellen einer Kopfzeile durch Platzieren eines Rautezeichens (#) vor der �
 
     `###### This is a H6`
 
-Optional können Sie eine Ü1 erstellen, indem Sie den Text mit Gleichheitszeichen unterstreichen, und eine Ü2, indem Sie den Text mit Minuszeichen unterstreichen. Beispiel:
+Optional können Sie eine Ü1 erstellen, indem Sie den Text mit Gleichheitszeichen unterstreichen, und eine Ü2, indem Sie den Text mit Minuszeichen unterstreichen. Zum Beispiel:
 
     `This is an H1`
 
@@ -105,7 +106,7 @@ Wobei „id“ der Name eines definierten Bildverweises ist. Bildverweise werden
 
 ## Blockzitate {#block-quotes}
 
-Sie können Text zitieren, indem Sie das Symbol > vor dem Text einfügen. Beispiel:
+Sie können Text zitieren, indem Sie das Symbol > vor dem Text einfügen. Zum Beispiel:
 
     `>This is block quotes`
 
@@ -113,7 +114,7 @@ Sie können Text zitieren, indem Sie das Symbol > vor dem Text einfügen. Beispi
 
     `>asdfahsdlfasdfj`
 
-Sie können verschachtelte Blockzitate nutzen. Beispiel:
+Sie können verschachtelte Blockzitate nutzen. Zum Beispiel:
 
     `> This is the first level of quoting.`
 
@@ -129,7 +130,7 @@ Sie können verschachtelte Blockzitate nutzen. Beispiel:
 
 Sie können sowohl sortierte als auch unsortierte Listen erstellen
 
-Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „*“ vor den Elementen in der Liste. Beispiel:
+Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „*“ vor den Elementen in der Liste. Zum Beispiel:
 
     `* item in list`
 
@@ -137,7 +138,7 @@ Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „*“ vor den
 
     `* item in list`
 
-Um eine sortierte Liste zu erstellen, fügen Sie vor jedem Element in der Liste die Nummer und danach einen Punkt hinzu. Beispiel:
+Um eine sortierte Liste zu erstellen, fügen Sie vor jedem Element in der Liste die Nummer und danach einen Punkt hinzu. Zum Beispiel:
 
     `1. First item in list.`
 
@@ -167,13 +168,13 @@ Sie können Text wie folgt fett formatieren:
 
 Um einen Codebereich anzugeben, schließen Sie ihn in einfache Anführungszeichen (&#39;) ein. Im Gegensatz zu vorformatierten Code-Blöcken zeigt ein Code-Bereich Code innerhalb eines normalen Absatzes an.
 
-Beispiel:
+Zum Beispiel:
 
     ``Use the `printf()` function.``
 
 ## Code-Blöcke {#code-blocks}
 
-Code-Blöcke werden in der Regel verwendet, um den Quell-Code zu veranschaulichen. Sie können Codeblöcke durch Einrücken des Codes mit Tabulator oder mindestens 4 Leerzeichen erstellen. Beispiel:
+Code-Blöcke werden in der Regel verwendet, um den Quell-Code zu veranschaulichen. Sie können Codeblöcke durch Einrücken des Codes mit Tabulator oder mindestens 4 Leerzeichen erstellen. Zum Beispiel:
 
     `This is a normal paragraph.`
 

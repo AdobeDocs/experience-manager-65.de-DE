@@ -2,10 +2,11 @@
 title: Schnellstartanleitung zum Erstellen von Asset-Ordnern per Headless-Implementierung
 description: Verwenden Sie AEM-Inhaltsfragmentmodelle, um die Struktur von Inhaltsfragmenten zu definieren – die Grundlage für Ihren Headless-Content.
 exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 82%
+ht-degree: 85%
 
 ---
 
@@ -43,9 +44,9 @@ Administratoren müssen nur gelegentlich Ordner erstellen, um Inhalte bei der Er
 
    ![Bestätigungsfenster](assets/assets-folder-confirmation.png)
 
-Sie können weitere Unterordner im von Ihnen erstellten Ordner erstellen. Die Unterordner übernehmen die **Cloud-Konfiguration** des übergeordneten Ordners. Dies kann jedoch überschrieben werden, wenn Sie Modelle aus einer anderen Konfiguration verwenden möchten.
+Sie können im erstellten Ordner weitere Unterordner erstellen. Die Unterordner übernehmen die **Cloud-Konfiguration** des übergeordneten Ordners. Dies kann jedoch überschrieben werden, wenn Sie Modelle aus einer anderen Konfiguration verwenden möchten.
 
-Wenn Sie eine lokalisierte Site-Struktur verwenden, können Sie unter Ihrem neuen Ordner [einen Sprach-Stamm](/help/assets/multilingual-assets.md) erstellen.
+Wenn Sie eine lokalisierte Site-Struktur verwenden, können Sie unter Ihrem neuen Ordner [einen Sprachstamm](/help/assets/multilingual-assets.md) erstellen.
 
 ## Nächste Schritte {#next-steps}
 

@@ -2,10 +2,11 @@
 title: Veröffentlichen von Inhaltsseiten
 description: Erfahren Sie, wie Sie Inhaltsseiten in Adobe Experience Manager 6.5 veröffentlichen.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1673'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
@@ -80,7 +81,7 @@ Wenn Sie eine Seite bearbeiten, kann sie direkt im Editor veröffentlicht werden
 
 >[!NOTE]
 >
->Seiten, auf die von [Aliase](/help/sites-authoring/editing-page-properties.md#advanced) im Editor kann nicht veröffentlicht werden. Veröffentlichungsoptionen im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
+>Seiten, auf die im Editor über [Aliasnamen](/help/sites-authoring/editing-page-properties.md#advanced) zugegriffen wird, können nicht veröffentlicht werden. Veröffentlichungsoptionen im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
 
 ### Veröffentlichungen über die Konsole {#publishing-from-the-console}
 
@@ -95,7 +96,7 @@ In der Sites-Konsole gibt es zwei Möglichkeiten zur Veröffentlichung:
 
 So veröffentlichen Sie eine Seite mit der Funktion „Quick Publish“:
 
-1. Wählen Sie die Seiten in der Sites-Konsole aus und klicken Sie auf die Schaltfläche **Quick Publish** Schaltfläche.
+1. Wählen Sie die gewünschten Seiten in der Sites-Konsole aus und klicken Sie auf die Schaltfläche **Quick Publish**.
 
    ![pp-02](assets/pp-02.png)
 
@@ -113,9 +114,9 @@ So veröffentlichen Sie eine Seite mit der Funktion „Quick Publish“:
 
 **Veröffentlichung verwalten** bietet mehr Optionen als &quot;Quick Publish&quot;, mit denen untergeordnete Seiten einbezogen, Verweise angepasst und alle entsprechenden Workflows gestartet werden können und die Option zur Veröffentlichung zu einem späteren Zeitpunkt angeboten wird.
 
-So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgängig mit „Veröffentlichung verwalten“:
+So veröffentlichen Sie mit „Veröffentlichung verwalten“ eine Seite bzw. machen ihre Veröffentlichung rückgängig:
 
-1. Wählen Sie die Seiten in der Sites-Konsole aus und klicken Sie auf die Schaltfläche **Veröffentlichung verwalten** Schaltfläche.
+1. Wählen Sie in der Sites-Konsole die entsprechenden Seiten aus und klicken Sie auf die Schaltfläche **Veröffentlichung verwalten**.
 
    ![pp-02-1](assets/pp-02-1.png)
 
@@ -209,13 +210,13 @@ Wenn Sie die Veröffentlichung einer von Ihnen bearbeiteten Seite rückgängig m
 
 >[!NOTE]
 >
->Seiten, auf die von [Aliase](/help/sites-authoring/editing-page-properties.md#advanced) im Editor kann die Veröffentlichung nicht rückgängig gemacht werden. Veröffentlichungsoptionen im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
+>Die Veröffentlichung von Seiten, auf die im Editor über [Aliasnamen](/help/sites-authoring/editing-page-properties.md#advanced) zugegriffen wird, kann nicht rückgängig gemacht werden. Veröffentlichungsoptionen im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
 
 ### Rückgängigmachen der Veröffentlichung in der Konsole {#unpublishing-from-the-console}
 
 Ebenso wie Sie [die Option „Veröffentlichung verwalten“ zur Veröffentlichung verwenden](/help/sites-authoring/publishing-pages.md#manage-publication), können Sie damit auch eine Veröffentlichung aufheben.
 
-1. Wählen Sie die Seiten in der Sites-Konsole aus und klicken Sie auf die Schaltfläche **Veröffentlichung verwalten** Schaltfläche.
+1. Wählen Sie in der Sites-Konsole die entsprechenden Seiten aus und klicken Sie auf die Schaltfläche **Veröffentlichung verwalten**.
 1. Der Assistent **Veröffentlichung verwalten** wird geöffnet. Wählen Sie im ersten Schritt **Optionen** die Option **Veröffentlichung aufheben** anstelle der Standardoption **Veröffentlichen** aus.
 
    ![chlimage_1-5](assets/chlimage_1-5.png)

@@ -8,14 +8,15 @@ content-type: reference
 docset: aem65
 exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
 feature: Operations
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 16%
+source-wordcount: '295'
+ht-degree: 14%
 
 ---
 
-# Prüfen von Benutzerverwaltungsvorgängen in Adobe Experience Manager (AEM) {#how-to-audit-user-management-operations-in-aem}
+# Benutzerverwaltungsvorgänge in Adobe Experience Manager prüfen (AEM) {#how-to-audit-user-management-operations-in-aem}
 
 ## Einführung {#introduction}
 
@@ -24,14 +25,14 @@ AEM hat die Möglichkeit eingeführt, Berechtigungsänderungen zu protokollieren
 Die Verbesserung ermöglicht die Prüfung von CRUD-Aktionen (Erstellen, Lesen, Aktualisieren, Löschen) für Berechtigungen und Gruppenzuweisungen von Benutzern. Konkret protokolliert es Folgendes:
 
 * Ein neuer Benutzer wird erstellt
-* Einen Benutzer, der einer Gruppe hinzugefügt wird
+* Einen Benutzer, der zu einer Gruppe hinzugefügt wird
 * Berechtigungsänderungen eines vorhandenen Benutzers oder einer vorhandenen Gruppe
 
 Standardmäßig werden die Einträge in die `error.log` -Datei. Um die Überwachung zu vereinfachen, empfiehlt es sich, diese Einträge in einer separaten Protokolldatei zu speichern. Weitere Informationen dazu finden Sie im folgenden Absatz.
 
 ## Weiterleiten der Ausgabe in eine separate Protokolldatei {#redirecting-the-output-to-a-separate-log-file}
 
-Um die Protokollausgabe in eine separate Protokolldatei umzuleiten, erstellen Sie eine **Apache Sling Logging Logger** Konfiguration. Verwenden wir `useraudit.log` als Name der separaten Datei im Beispiel unten.
+Um die Protokollierungsausgabe in eine separate Protokolldatei umzuleiten, erstellen Sie eine **Apache Sling Logging Logger** Konfiguration. Verwenden wir `useraudit.log` als Name der separaten Datei im Beispiel unten.
 
 1. Navigieren Sie zur Web-Konsole unter *https://Server-Adresse:Serverport/system/console/configMgr*.
 1. Suchen Sie nach **Apache Sling Logging Logger-Konfiguration**. Klicken Sie dann auf das &quot;+&quot; rechts vom Eintrag, um eine Werkskonfiguration zu erstellen.

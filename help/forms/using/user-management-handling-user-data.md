@@ -5,10 +5,11 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '904'
-ht-degree: 46%
+ht-degree: 48%
 
 ---
 
@@ -101,9 +102,9 @@ Ersetzen Sie im Befehl `select` die `<user_login_id>` durch die Anmelde-ID des B
 select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_id>
 ```
 
-Sobald Sie die Prinzipal-ID kennen, können Sie die Benutzerdaten exportieren oder löschen.
+Wenn Sie die Prinzipal-ID kennen, können Sie die Benutzerdaten exportieren oder löschen.
 
-#### Benutzerdaten exportieren {#export-user-data}
+#### Exportieren von Benutzerdaten {#export-user-data}
 
 Führen Sie die folgenden Datenbankbefehle aus, damit Sie Benutzerverwaltungsdaten für eine Prinzipal-ID aus Datenbanktabellen exportieren können. Ersetzen Sie `<principal_id>` im Befehl `select` durch die Haupt-ID des Benutzers, dessen Daten Sie exportieren möchten.
 
@@ -111,13 +112,13 @@ Führen Sie die folgenden Datenbankbefehle aus, damit Sie Benutzerverwaltungsdat
 >
 >Die folgenden Befehle verwenden Datenbanktabellennamen in My SQL- und IBM® DB2®-Datenbanken. Ersetzen Sie beim Ausführen dieser Befehle auf Oracle- und MS® SQL-Datenbanken die folgenden Tabellennamen in den Befehlen:
 >
-* Ersetzen Sie `EdcPrincipalLocalAccountEntity` durch `EdcPrincipalLocalAccount`.
+>* Ersetzen Sie `EdcPrincipalLocalAccountEntity` durch `EdcPrincipalLocalAccount`.
 >
-* Ersetzen Sie `EdcPrincipalEmailAliasEntity` durch `EdcPrincipalEmailAliasEn`.
+>* Ersetzen Sie `EdcPrincipalEmailAliasEntity` durch `EdcPrincipalEmailAliasEn`.
 >
-* Ersetzen Sie `EdcPrincipalMappingEntity` durch `EdcPrincipalMappingEntit`.
+>* Ersetzen Sie `EdcPrincipalMappingEntity` durch `EdcPrincipalMappingEntit`.
 >
-* Ersetzen Sie `EdcPrincipalGrpCtmntEntity` durch `EdcPrincipalGrpCtmntEnti`
+>* Ersetzen Sie `EdcPrincipalGrpCtmntEntity` durch `EdcPrincipalGrpCtmntEnti`
 >
 
 ```sql

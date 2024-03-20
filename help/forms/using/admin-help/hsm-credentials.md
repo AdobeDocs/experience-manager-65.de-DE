@@ -6,9 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1322'
 ht-degree: 13%
 
 ---
@@ -52,14 +53,14 @@ AEM Forms Digital Signatures kann auf einem HSM gespeicherte Berechtigungen verw
    * **Tokenname:** Entspricht einem Partitionsnamen (z. B. HSMPART1).
    * **Steckplatz-ID:** Die Steckplatz-ID ist eine Ganzzahl, die dem Steckplatz entspricht, der wiederum einer Partition entspricht. Beispielsweise hat sich der Client (Forms Server) zuerst bei der Partition HSMPART1 registriert. Dadurch wird Steckplatz 1 der Partition HSMPART1 für diesen Client zugeordnet. Da HSMPART1 die erste registrierte Partition ist, lautet die Steckplatz-ID 1 und Sie würden &quot;Steckplatzinfo&quot;auf 1 setzen.
 
-     Die Steckplatz-ID wird Client für Client festgelegt. Wenn Sie einen zweiten Rechner bei einer anderen Partition registriert haben (z. B. HSMPART2 auf demselben HSM-Gerät), wird Steckplatz 1 für diesen Client mit der Partition HSMPART2 verknüpft.
+     Die Steckplatz-ID wird für jeden Client einzeln festgelegt. Wenn Sie einen zweiten Rechner bei einer anderen Partition registriert haben (z. B. HSMPART2 auf demselben HSM-Gerät), wird Steckplatz 1 für diesen Client mit der Partition HSMPART2 verknüpft.
 
    * **Steckplatzindex:** Wenn Sie die Option „Steckplatzindex“ auswählen, stellen Sie die Steckplatzinfo auf eine Ganzzahl ein, die dem Steckplatz entspricht. Dies ist ein 0-basierter Index, d. h. wenn der Client zuerst bei der Partition HSMPART1 registriert ist, wird Steckplatz 1 für diesen Client der Partition HSMPART1 zugeordnet. Da HSMPART1 die erste registrierte Partition ist, ist der Steckplatzindex 0.
 
 1. Wählen Sie eine der folgenden Optionen aus und geben Sie den Pfad an:
 
    * **Zertifikate**: (bei Verwendung von SHA 1 nicht erforderlich) Klicken Sie auf „Durchsuchen“ und suchen Sie den Pfad zu dem öffentlichen Schlüssel für die verwendete Berechtigung.
-   * **Zertifikat SHA1:** (Nicht erforderlich bei Verwendung eines physischen Zertifikats) Geben Sie den SHA1-Wert (Thumbprint) der öffentlichen Schlüsseldatei (.cer) für die verwendete Berechtigung ein. Stellen Sie sicher, dass im SHA1-Wert keine Leerzeichen verwendet werden.
+   * **Zertifikat SHA1:** (Nicht erforderlich bei Verwendung eines physischen Zertifikats) Geben Sie den SHA1-Wert (Thumbprint) der öffentlichen Schlüsseldatei (.cer) für die verwendete Berechtigung ein. Stellen Sie sicher, dass in dem SHA1-Wert keine Leerzeichen verwendet werden.
 
 1. Geben Sie in das Feld &quot;Kennwort&quot;das Kennwort ein, das für den Zugriff auf den HSM-Schlüssel für die angegebenen Steckplatzinformationen erforderlich ist, und klicken Sie auf &quot;Speichern&quot;.
 

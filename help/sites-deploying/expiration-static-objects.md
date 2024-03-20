@@ -7,16 +7,17 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 23%
+ht-degree: 30%
 
 ---
 
 # Ablauf statischer Objekte{#expiration-of-static-objects}
 
-Statische Objekte (z. B. Symbole) ändern sich nicht. Daher sollte das System so konfiguriert werden, dass sie (für einen angemessenen Zeitraum) nicht ablaufen und so unnötigen Traffic reduzieren.
+Statische Objekte (z. B. Symbole) ändern sich nicht. Daher sollte das System so konfiguriert werden, dass diese Objekte (über einen angemessenen Zeitraum) nicht ablaufen, damit unnötiger Traffic reduziert wird.
 
 Dies hat folgende Auswirkungen:
 

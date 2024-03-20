@@ -7,10 +7,11 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3015'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -311,7 +312,7 @@ Für das Hinzufügen oder Bearbeiten von Inhalten in Komponenten sind zwei Verfa
 
 Sie können eine Komponente öffnen, um den Inhalt zu bearbeiten, indem Sie das Symbol [„Bearbeiten“ (Stiftsymbol) in der Komponenten-Symbolleiste](#edit-configure-copy-cut-delete-paste) verwenden.
 
-Die exakten Bearbeitungsoptionen hängen von der jeweiligen Komponente ab. Für einige Komponenten sind [alle Aktionen nur im Vollbildmodus verfügbar](#edit-content-full-screen-mode). Beispiel:
+Die exakten Bearbeitungsoptionen hängen von der jeweiligen Komponente ab. Für einige Komponenten sind [alle Aktionen nur im Vollbildmodus verfügbar](#edit-content-full-screen-mode). Zum Beispiel:
 
 * [Textkomponente](/help/sites-authoring/rich-text-editor.md#main-pars-title-24)
 
@@ -368,7 +369,7 @@ Z. B. die **Textkomponente**:
 
 So verschieben Sie eine Absatzkomponente:
 
-1. Wählen Sie den zu verschiebenden Absatz aus, indem Sie ihn drücken und halten oder klicken und halten.
+1. Wählen Sie den zu verschiebenden Absatz aus, indem Sie ihn entweder auswählen und gedrückt halten oder anklicken und gedrückt halten.
 1. Ziehen Sie den Absatz an die neue Position. AEM zeigt an, wo der Absatz abgelegt werden kann. Legen Sie ihn an der gewünschten Position ab.
 
    ![Verschieben einer Absatzkomponente](assets/screen_shot_2018-03-22at121821.png)

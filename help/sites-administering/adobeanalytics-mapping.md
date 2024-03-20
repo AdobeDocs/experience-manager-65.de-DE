@@ -7,10 +7,11 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1439'
-ht-degree: 53%
+source-wordcount: '1449'
+ht-degree: 54%
 
 ---
 
@@ -197,9 +198,9 @@ Wenn Sie das obige Bild als Beispiel verwenden, wird das **AEM** weist die folge
 >
 >Beispiel: Neben `prop3` können Sie Folgendes hinzufügen:
 >     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
-, um den *Titel* einer Seite und ihre *sitesection* verkettet mit einem *:* (Doppelpunkt) und mit dem Präfix *Adobe* als `prop3` zu übermitteln.
+>, um den *Titel* einer Seite und ihre *sitesection* verkettet mit einem *:* (Doppelpunkt) und mit dem Präfix *Adobe* als `prop3` zu übermitteln.
 >
 
 >[!CAUTION]
 >
-Es kann immer nur eine CQ-Variable einer Adobe Analytics-Variablen zugeordnet werden.
+>Es kann immer nur eine CQ-Variable einer Adobe Analytics-Variablen zugeordnet werden.

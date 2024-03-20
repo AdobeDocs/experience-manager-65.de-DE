@@ -5,10 +5,11 @@ contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1589'
-ht-degree: 91%
+source-wordcount: '1555'
+ht-degree: 90%
 
 ---
 
@@ -187,7 +188,7 @@ Sie können jetzt die parallele Auftragsverarbeitung für IDS aktivieren. Bestim
 
 So konfigurieren Sie die Anzahl der parallelen IDS-Aufträge:
 
-1. Öffnen Sie die Registerkarte **[!UICONTROL Konfigurationen]** der Felix-Konsole. Beispiel:     `https://[aem_server]:[port]/system/console/configMgr`.
+1. Öffnen Sie die **[!UICONTROL Konfigurationen]** Registerkarte der Felix-Konsole, z. B.: `https://[aem_server]:[port]/system/console/configMgr`.
 
 1. Wählen Sie die IDS-Verarbeitungsschlange unter `Apache Sling Job Queue Configuration`.
 

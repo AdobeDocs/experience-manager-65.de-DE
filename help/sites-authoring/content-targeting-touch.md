@@ -7,10 +7,11 @@ content-type: reference
 topic-tags: personalization
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5284'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -38,7 +39,7 @@ Die im Targeting-Modus sichtbaren Aktivitäten und Erlebnisse spiegeln die Optio
 
 >[!NOTE]
 >
->Wenn Sie eine Kampagne in Adobe Target erstellen, wird jeder Kampagne eine Eigenschaft mit dem Namen `thirdPartyId` hinzugefügt. Sollten Sie die Kampagne in Adobe Target löschen, wird die Eigenschaft „thirdPartyId“ jedoch nicht gelöscht. Die `thirdPartyId` kann nicht für Kampagnen unterschiedlicher Typen (A/B, XT) wiederverwendet werden und lässt sich nicht manuell löschen. Um dieses Problem zu vermeiden, geben Sie jeder Kampagne einen eindeutigen Namen. Kampagnennamen können nicht in verschiedenen Kampagnentypen wiederverwendet werden.
+>Wenn Sie eine Kampagne in Adobe Target erstellen, wird jeder Kampagne eine Eigenschaft mit dem Namen `thirdPartyId` hinzugefügt. Sollten Sie die Kampagne in Adobe Target löschen, wird die Eigenschaft „thirdPartyId“ jedoch nicht gelöscht. Die `thirdPartyId` kann nicht für Kampagnen unterschiedlicher Typen (A/B, XT) wiederverwendet werden und lässt sich nicht manuell löschen. Möchten Sie dieses Problem umgehen, geben Sie jeder Kampagne einen eindeutigen Namen. Kampagnennamen lassen sich nicht für verschiedene Kampagnentypen wiederverwenden.
 >
 >Wenn Sie denselben Namen im selben Kampagnentyp verwenden, überschreiben Sie die bestehende Kampagne.
 >
@@ -89,7 +90,7 @@ So fügen Sie eine Aktivität hinzu:
 
    >[!NOTE]
    >
-   >Wenn Sie eine Aktivität erstellen und eine Adobe Target-Cloud-Konfiguration an die Seite oder eine ihrer übergeordneten Seiten angehängt ist, nimmt AEM automatisch Adobe Target als Engine an.
+   >Wenn Sie eine neue Aktivität erstellen und der Seite oder einer der ihr übergeordneten Seiten eine Adobe Target-Cloud-Konfiguration angehängt ist, wird Adobe Target von AEM automatisch als Engine festgelegt.
 
 1. Wählen Sie aus dem Dropdown-Menü **Targeting** die gewünschte Targeting-Engine aus.
 
@@ -183,7 +184,7 @@ So fügen Sie Erlebnisse hinzu:
 1. Um ein Erlebnis hinzuzufügen, klicken Sie auf **+** **Hinzufügen von Erlebnis-Targeting** , das unterhalb der vorhandenen Erlebnisse in der **Zielgruppen** -Bereich.
 1. Wählen Sie eine Zielgruppe aus. Standardmäßig ist dieser Name der Name des Erlebnisses. Sie können bei Bedarf einen anderen Namen eingeben. Klicken Sie auf **OK**.
 
-#### Erlebnisse im Targeting-Modus entfernen {#removing-experiences-using-targeting-mode}
+#### Entfernen von Erlebnissen im Targeting-Modus {#removing-experiences-using-targeting-mode}
 
 So löschen Sie Erlebnisse:
 
@@ -203,7 +204,7 @@ So benennen Sie Erlebnisse im Targeting-Modus um:
 
 #### Bearbeiten von Zielgruppen im Targeting-Modus {#editing-audiences-using-targeting-mode}
 
-So bearbeiten Sie im Targeting-Modus Zielgruppen:
+So bearbeiten Sie Zielgruppen im Targeting-Modus:
 
 1. Klicken Sie auf den Pfeil neben dem Erlebnisnamen.
 1. Klicken Sie auf **Zielgruppe bearbeiten** und wählen Sie eine neue Zielgruppe aus.
@@ -429,7 +430,7 @@ Sie können die Prozentsätze ändern, solange sie in der Summe 100 Prozent erge
 ### Zielgruppen in A/B-Tests Traffic-Anteilen zuordnen {#associating-audiences-and-traffic-percentages-with-a-b-testing}
 
 1. Klicken Sie auf das Dropdown-Feld neben der Zielgruppe, die dem Erlebnis zugeordnet ist.
-1. (Optional) Klicken oder tippen Sie auf **Bearbeiten** und geben Sie den Suchbegriff ein, nach dem das gewünschte Segment durchsucht werden soll.
+1. (Optional) Klicken Sie auf **Bearbeiten** und geben Sie den Suchbegriff ein, nach dem das gewünschte Segment durchsucht werden soll.
 1. Klicks **OK.**
 1. Geben Sie Prozentsätze ein, um zu konfigurieren, wie der Zielgruppen-Traffic zu den einzelnen Erlebnissen geleitet wird. Die Gesamtsumme muss 100 betragen.
 1. (Optional) Bearbeiten Sie den Erlebnisnamen, indem Sie auf das Dropdown-Menü neben dem Erlebnisnamen klicken.
@@ -543,7 +544,7 @@ So konfigurieren Sie Einstellungen, falls Sie AEM-Targeting verwenden:
    * **Wenn deaktiviert**: Beendet die Aktivität, wenn die Seite, die den zielgerichteten Inhalt enthält, deaktiviert wird.
    * **Angegebenes Datum und Uhrzeit:** Ein bestimmter Zeitpunkt. Wenn Sie diese Option auswählen, klicken Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Zeit zum Ende der Aktivität an.
 
-1. Um eine Priorität für die Aktivität festzulegen, wählen Sie mit dem Schieberegler entweder **Niedrig**, **Normal**, oder **Hoch**.
+1. Um eine Priorität für die Aktivität festzulegen, wählen Sie mit dem Schieberegler entweder **Niedrig**, **Normal** oder **Hoch**.
 
 ### Konfigurieren von Zielen und Einstellungen (Adobe Target) {#configuring-goals-settings-adobe-target}
 
@@ -559,7 +560,7 @@ So konfigurieren Sie Ziele und Einstellungen, falls Sie Adobe Target verwenden:
    * **Wenn deaktiviert**: Beendet die Aktivität, wenn die Seite, die den zielgerichteten Inhalt enthält, deaktiviert wird.
    * **Angegebenes Datum und Uhrzeit:** Ein bestimmter Zeitpunkt. Wenn Sie diese Option auswählen, klicken Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Zeit zum Ende der Aktivität an.
 
-1. Um eine Priorität für die Aktivität festzulegen, wählen Sie mit dem Schieberegler entweder **Niedrig**, **Normal**, oder **Hoch**.
+1. Um eine Priorität für die Aktivität festzulegen, wählen Sie mit dem Schieberegler entweder **Niedrig**, **Normal** oder **Hoch**.
 1. Wenn Sie Adobe Analytics für Ihr Adobe Target-Konto konfiguriert haben, wird das Dropdown-Menü **Berichtsquelle** angezeigt. Wählen Sie **Adobe Target** oder **Adobe Analytics** als Quelle.
 
    Wenn Sie **Adobe Analytics** auswählen, wählen Sie das Unternehmen und die Report Suite aus. Sollten Sie **Adobe Target** auswählen, muss keine weitere Auswahl getroffen werden.
@@ -631,7 +632,7 @@ Verwenden Sie die folgenden Tools, um das Besuchererlebnis zu simulieren:
 
    Die Seite ändert sich, um den Inhalt anzuzeigen, der für den aktuellen Kontext angesprochen wird.
 
-1. Um die angezeigten Angebote zu ändern, wechseln Sie in den Targeting-Modus. Bearbeiten Sie bei ausgewählter Simulationsaktivität die Angebote für den Kontext, den Sie im Vorschaumodus konfiguriert haben.
+1. Um Änderungen an den angezeigten Angeboten vorzunehmen, wechseln Sie in den Targeting-Modus. Bearbeiten Sie bei ausgewählter Simulationsaktivität die Angebote für den Kontext, den Sie im Vorschaumodus konfiguriert haben.
 
 ## Konfigurieren der Target-Komponentenoptionen {#configuring-target-component-options}
 
@@ -688,7 +689,7 @@ Wenn Sie Adobe Target als Engine auswählen:
   </tr>
   <tr>
    <td><strong>Einschließen gelöster Segmente</strong></td>
-   <td><p>Aktivieren Sie dieses Kontrollkästchen, werden alle gelösten Segmente im Mbox-Aufruf sowie in beliebigen auf der Seite konfigurierten Parametern und im Framework erfasst.</p> <p>Dies funktioniert nur in Situationen mit der XML-API, in denen Sie AEM-Segmente synchronisieren. Wenn Sie über Segmente in AEM verfügen, die nicht von Adobe Target verwaltet werden (beispielsweise Skriptsegmente), ermöglicht es Ihnen diese Option, das Segment in AEM auszuwählen und Adobe Target darüber zu informieren, dass das Segment aktiv ist.</p> </td>
+   <td><p>Aktivieren Sie dieses Kontrollkästchen, werden alle gelösten Segmente im Mbox-Aufruf sowie in beliebigen auf der Seite konfigurierten Parametern und im Framework erfasst.</p> <p>Dies funktioniert nur in Situationen mit der XML-API, in denen Sie AEM-Segmente synchronisieren. Wenn Sie Segmente in AEM haben, die nicht von Adobe Target verarbeitet werden (wie etwa Skriptsegmente), können Sie mit dieser Option das Segment in AEM auflösen und Informationen darüber an Adobe Target senden, dass das Segment aktiv ist.</p> </td>
   </tr>
   <tr>
    <td><strong>Übernommene Kontextparameter</strong></td>

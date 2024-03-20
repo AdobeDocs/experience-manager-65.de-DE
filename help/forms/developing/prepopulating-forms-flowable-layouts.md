@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff087084-fb1c-43a4-ae54-cc77eb862493
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3478'
-ht-degree: 70%
+ht-degree: 74%
 
 ---
 
@@ -244,9 +245,9 @@ So füllen Sie ein Formular mit einem flexiblen Layout mithilfe der Forms API (J
 
 1. Erstellen einer arbeitsspeicherinternen XML-Datenquelle
 
-   * Java erstellen `DocumentBuilderFactory` -Objekt durch Aufruf der `DocumentBuilderFactory` class&#39; `newInstance` -Methode.
-   * Java erstellen `DocumentBuilder` -Objekt durch Aufruf der `DocumentBuilderFactory` -Objekt `newDocumentBuilder` -Methode.
-   * Rufen Sie die `DocumentBuilder` -Objekt `newDocument` -Methode zur Instanziierung einer `org.w3c.dom.Document` -Objekt.
+   * Erstellen Sie ein Java-Objekt vom Typ `DocumentBuilderFactory`, indem Sie die Methode `newInstance` der Klasse `DocumentBuilderFactory` aufrufen.
+   * Erstellen Sie ein Java-Objekt vom Typ `DocumentBuilder`, indem Sie die Methode `newDocumentBuilder` des `DocumentBuilderFactory`-Objekts aufrufen.
+   * Rufen Sie die Methode `newDocument` des Objekts `DocumentBuilder` auf, um ein Objekt `org.w3c.dom.Document` zu instantiieren.
    * Erstellen Sie das Stammelement der XML-Datenquelle, indem Sie die `org.w3c.dom.Document` -Objekt `createElement` -Methode. Dadurch wird ein `Element`-Objekt erstellt, das das Stammelement darstellt. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die Methode `createElement`. Wandeln Sie den Rückgabewert in `Element` um. Hängen Sie anschließend das Stammelement an das Dokument an, indem Sie die `Document` -Objekt `appendChild` und übergeben Sie das Stamdelement-Objekt als Argument. Die folgenden Code-Zeilen zeigen diese Anwendungslogik:
 
      ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
@@ -274,19 +275,19 @@ So füllen Sie ein Formular mit einem flexiblen Layout mithilfe der Forms API (J
 
 1. Konvertieren der XML-Datenquelle
 
-   * Erstellen Sie eine `javax.xml.transform.Transformer` -Objekt durch Aufrufen der `javax.xml.transform.Transformer` Statisches Objekt `newInstance` -Methode.
-   * Erstellen Sie eine `Transformer` -Objekt durch Aufrufen der `TransformerFactory` -Objekt `newTransformer` -Methode.
+   * Erstellen Sie ein Objekt vom Typ `javax.xml.transform.Transformer`, indem Sie die statische Methode `newInstance` des Objekts `javax.xml.transform.Transformer` aufrufen.
+   * Erstellen Sie ein Objekt vom Typ `Transformer`, indem Sie die Methode `newTransformer` des Objekts `TransformerFactory` aufrufen.
    * Erstellen Sie ein Objekt `ByteArrayOutputStream`, indem Sie den Konstruktor verwenden.
    * Erstellen Sie ein `javax.xml.transform.dom.DOMSource`-Objekt, indem Sie seinen Konstruktor verwenden und das `org.w3c.dom.Document`-Objekt übergeben, das in Schritt 1 erstellt wurde.
    * Erstellen Sie ein `javax.xml.transform.dom.DOMSource`-Objekt, indem Sie seinen Konstruktor verwenden und das `ByteArrayOutputStream`-Objekt übergeben.
    * Java ausfüllen `ByteArrayOutputStream` -Objekt durch Aufrufen der `javax.xml.transform.Transformer` -Objekt `transform` -Methode und Übergabe der `javax.xml.transform.dom.DOMSource` und `javax.xml.transform.stream.StreamResult` Objekte.
    * Erstellen Sie ein Byte-Array und weisen Sie diesem die Größe des `ByteArrayOutputStream`-Objekts zu.
-   * Füllen Sie das Byte-Array, indem Sie die `ByteArrayOutputStream` -Objekt `toByteArray` -Methode.
+   * Füllen Sie das Byte-Array auf, indem Sie die Methode `toByteArray` des Objekts `ByteArrayOutputStream` aufrufen.
    * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie seinen Konstruktor aufrufen und ihm das Byte-Array übergeben.
 
 1. Rendern von im Voraus ausgefüllten Formularen
 
-   Rufen Sie die `FormsServiceClient` -Objekt `renderPDFForm` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `renderPDFForm` des Objekts `FormsServiceClient` auf und geben Sie die folgenden Werte weiter:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs angibt, einschließlich der Dateinamenerweiterung.
    * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Stellen Sie sicher, dass Sie das `com.adobe.idp.Document`-Objekt verwenden, das in den Schritten 1 und 2 erstellt wurde.
@@ -298,7 +299,7 @@ So füllen Sie ein Formular mit einem flexiblen Layout mithilfe der Forms API (J
 
    * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Senden eines Formulardatenstroms an den Client-Webbrowser verwendet wird.
    * Erstellen Sie eine `com.adobe.idp.Document` -Objekt durch Aufrufen der `FormsResult` -Objekt `getOutputContent` -Methode.
-   * Erstellen Sie eine `java.io.InputStream` -Objekt durch Aufrufen der `com.adobe.idp.Document` -Objekt `getInputStream` -Methode.
+   * Erstellen Sie ein Objekt vom Typ `java.io.InputStream`, indem Sie die Methode `getInputStream` des Objekts `com.adobe.idp.Document` aufrufen.
    * Erstellen Sie ein Byte-Array, das mit dem Formulardatenstream gefüllt wird, indem Sie die `InputStream` -Objekt `read` -Methode verwenden und das Byte-Array als Argument übergeben.
    * Rufen Sie die `javax.servlet.ServletOutputStream` -Objekt `write` -Methode zum Senden des Formulardatenstreams an den Client-Webbrowser. Übergeben Sie das Byte-Array an die Methode `write`.
 
@@ -321,9 +322,9 @@ Führen Sie die folgenden Schritte aus, um ein Formular mit einem flexiblen Layo
 
 1. Erstellen einer arbeitsspeicherinternen XML-Datenquelle
 
-   * Java erstellen `DocumentBuilderFactory` -Objekt durch Aufruf der `DocumentBuilderFactory` class&#39; `newInstance` -Methode.
-   * Java erstellen `DocumentBuilder` -Objekt durch Aufruf der `DocumentBuilderFactory` -Objekt `newDocumentBuilder` -Methode.
-   * Rufen Sie die `DocumentBuilder` -Objekt `newDocument` -Methode zur Instanziierung einer `org.w3c.dom.Document` -Objekt.
+   * Erstellen Sie ein Java-Objekt vom Typ `DocumentBuilderFactory`, indem Sie die Methode `newInstance` der Klasse `DocumentBuilderFactory` aufrufen.
+   * Erstellen Sie ein Java-Objekt vom Typ `DocumentBuilder`, indem Sie die Methode `newDocumentBuilder` des `DocumentBuilderFactory`-Objekts aufrufen.
+   * Rufen Sie die Methode `newDocument` des Objekts `DocumentBuilder` auf, um ein Objekt `org.w3c.dom.Document` zu instantiieren.
    * Erstellen Sie das Stammelement der XML-Datenquelle, indem Sie die `org.w3c.dom.Document` -Objekt `createElement` -Methode. Dadurch wird ein `Element`-Objekt erstellt, das das Stammelement darstellt. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die Methode `createElement`. Wandeln Sie den Rückgabewert in `Element` um. Hängen Sie anschließend das Stammelement an das Dokument an, indem Sie die `Document` -Objekt `appendChild` und übergeben Sie das Stamdelement-Objekt als Argument. Die folgenden Code-Zeilen zeigen diese Programmlogik:
 
      ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
@@ -350,19 +351,19 @@ Führen Sie die folgenden Schritte aus, um ein Formular mit einem flexiblen Layo
 
 1. Konvertieren der XML-Datenquelle
 
-   * Erstellen Sie eine `javax.xml.transform.Transformer` -Objekt durch Aufrufen der `javax.xml.transform.Transformer` Statisches Objekt `newInstance` -Methode.
-   * Erstellen Sie eine `Transformer` -Objekt durch Aufrufen der `TransformerFactory` -Objekt `newTransformer` -Methode.
+   * Erstellen Sie ein Objekt vom Typ `javax.xml.transform.Transformer`, indem Sie die statische Methode `newInstance` des Objekts `javax.xml.transform.Transformer` aufrufen.
+   * Erstellen Sie ein Objekt vom Typ `Transformer`, indem Sie die Methode `newTransformer` des Objekts `TransformerFactory` aufrufen.
    * Erstellen Sie ein Objekt `ByteArrayOutputStream`, indem Sie den Konstruktor verwenden.
    * Erstellen Sie ein `javax.xml.transform.dom.DOMSource`-Objekt, indem Sie seinen Konstruktor verwenden und das `org.w3c.dom.Document`-Objekt übergeben, das in Schritt 1 erstellt wurde.
    * Erstellen Sie ein `javax.xml.transform.dom.DOMSource`-Objekt, indem Sie seinen Konstruktor verwenden und das `ByteArrayOutputStream`-Objekt übergeben.
    * Java ausfüllen `ByteArrayOutputStream` -Objekt durch Aufrufen der `javax.xml.transform.Transformer` -Objekt `transform` -Methode und Übergabe der `javax.xml.transform.dom.DOMSource` und `javax.xml.transform.stream.StreamResult` Objekte.
    * Erstellen Sie ein Byte-Array und weisen Sie diesem die Größe des `ByteArrayOutputStream`-Objekts zu.
-   * Füllen Sie das Byte-Array, indem Sie die `ByteArrayOutputStream` -Objekt `toByteArray` -Methode.
+   * Füllen Sie das Byte-Array auf, indem Sie die Methode `toByteArray` des Objekts `ByteArrayOutputStream` aufrufen.
    * Erstellen Sie ein `BLOB`-Objekt mithilfe des Konstruktors, rufen Sie die zugehörige Methode `setBinaryData` auf und übergeben Sie das Byte-Array.
 
 1. Rendern von im Voraus ausgefüllten Formularen
 
-   Rufen Sie die `FormsService` -Objekt `renderPDFForm` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `renderPDFForm` des Objekts `FormsService` auf und geben Sie die folgenden Werte weiter:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs angibt, einschließlich der Dateinamenerweiterung.
    * Ein `BLOB`-Objekt mit Daten, die mit dem Formular zusammengeführt werden sollen. Stellen Sie sicher, dass Sie das `BLOB`-Objekt verwenden, das in den Schritten 1 und 2 erstellt wurde.

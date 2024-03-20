@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
-source-git-commit: ff9d054d0b08f5f98f5edb63975a0dbc8370d42f
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 24%
@@ -23,11 +24,11 @@ Sie können programmgesteuert Knoten und Eigenschaften ändern, die sich im Adob
 
 >[!NOTE]
 >
-Fügen Sie die `jackrabbit-standalone-2.4.0.jar` -Datei in den Klassenpfad Ihrer Java™-Anwendung. Sie können diese JAR-Datei von der Java™ JCR API-Webseite abrufen unter [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+>Fügen Sie die `jackrabbit-standalone-2.4.0.jar` -Datei in den Klassenpfad Ihrer Java™-Anwendung. Sie können diese JAR-Datei von der Java™ JCR API-Webseite abrufen unter [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
-Informationen zum Abfragen des Adobe CQ-JCR mithilfe der JCR-Abfrage-API finden Sie unter [Abfrage von Adobe Experience Manager-Daten mit der JCR-API](https://helpx.adobe.com/de/experience-manager/using/querying-experience-manager-data-using1.html).
+>Informationen zum Abfragen des Adobe CQ-JCR mithilfe der JCR-Abfrage-API finden Sie unter [Abfrage von Adobe Experience Manager-Daten mit der JCR-API](https://helpx.adobe.com/de/experience-manager/using/querying-experience-manager-data-using1.html).
 
 ## Erstellen einer Repository-Instanz {#create-a-repository-instance}
 

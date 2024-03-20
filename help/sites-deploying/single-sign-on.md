@@ -7,7 +7,8 @@ topic-tags: configuring, Security
 content-type: reference
 feature: Configuring
 exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 40%
@@ -80,19 +81,20 @@ Um SSO für eine AEM-Instanz zu konfigurieren, konfigurieren Sie die [SSO-Authen
 >
 >Wenn Sie auch die [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) Mit dem Microsoft® Internet Information Server (IIS) ist eine zusätzliche Konfiguration erforderlich in:
 >
-* `disp_iis.ini`
-* IIS
+>* `disp_iis.ini`
+>* IIS
 >
-In `disp_iis.ini` festgelegt ist (siehe [Installieren des Dispatchers mit dem Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) für alle Einzelheiten)
+>Legen Sie in `disp_iis.ini` Folgendes fest:
+>(siehe [Installieren des Dispatchers mit dem Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) für alle Einzelheiten)
 >
-* `servervariables=1` (leitet IIS-Server-Variablen als Anforderungskopfzeilen an die Remote-Instanz weiter)
-* `replaceauthorization=1` (ersetzt alle Kopfzeilen mit dem Namen „Authorization“ mit Ausnahme von „Basic“ durch die Entsprechung von „Basic“)
+>* `servervariables=1` (leitet IIS-Server-Variablen als Anforderungskopfzeilen an die Remote-Instanz weiter)
+>* `replaceauthorization=1` (ersetzt alle Kopfzeilen mit dem Namen „Authorization“ mit Ausnahme von „Basic“ durch die Entsprechung von „Basic“)
 >
-In IIS:
+>In IIS:
 >
-* Deaktivieren Sie die Option **Anonymer Zugriff**.
+>* Deaktivieren Sie die Option **Anonymer Zugriff**.
 >
-* enable **Integrierte Windows-Authentifizierung**
+>* enable **Integrierte Windows-Authentifizierung**
 >
 
 Mithilfe der **Authenticator** -Option der Felix-Konsole, z. B.:
@@ -151,7 +153,7 @@ Sie können auch den folgenden curl-Befehl verwenden, um die `TestHeader`-Kopfze
 
 >[!NOTE]
 >
-Wenn Sie den Anforderungsparameter in einem Browser verwenden, sehen Sie nur einige der HTML - ohne CSS. Dies liegt daran, dass alle Anfragen von der HTML ohne den Anforderungsparameter durchgeführt werden.
+>Wenn Sie den Anforderungsparameter in einem Browser verwenden, sehen Sie nur einige der HTML - ohne CSS. Dies liegt daran, dass alle Anfragen von der HTML ohne den Anforderungsparameter durchgeführt werden.
 
 ## Entfernen AEM Abmelde-Links {#removing-aem-sign-out-links}
 

@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 41898fa7-a369-4c63-8ccb-69eb3fa146a1
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '637'
-ht-degree: 66%
+ht-degree: 75%
 
 ---
 
@@ -38,7 +39,7 @@ Verwenden Sie zum Erstellen eines Store-Kandidaten die Funktion [`ContextHub.Uti
 * [`ContextHub.Store.JSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-jsonpstore)
 * [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore)
 
-Jeder Basisspeicher erweitert die [`ContextHub.Store.Core`](/help/sites-developing/contexthub-api.md#contexthub-store-core) speichern.
+Jeder grundlegende Store erweitert den Store [`ContextHub.Store.Core`](/help/sites-developing/contexthub-api.md#contexthub-store-core).
 
 Im folgenden Beispiel wird erst die einfachste Erweiterung des Store-Kandidaten `ContextHub.Store.PersistedStore` erstellt:
 
@@ -47,7 +48,7 @@ myStoreCandidate = function(){};
 ContextHub.Utils.inheritance.inherit(myStoreCandidate,ContextHub.Store.PersistedStore);
 ```
 
-In der Praxis definieren Ihre benutzerdefinierten Store-Kandidaten zusätzliche Funktionen oder überschreiben die anfängliche Konfiguration des Stores. Mehrere [Beispiel-Store-Kandidaten](/help/sites-developing/ch-samplestores.md) werden im Repository unter `/libs/granite/contexthub/components/stores` installiert. Um von diesen Beispielen zu lernen, verwenden Sie CRXDE Lite zum Öffnen der JavaScript-Dateien.
+In der Praxis definieren Ihre benutzerdefinierten Store-Kandidaten zusätzliche Funktionen oder überschreiben die anfängliche Konfiguration des Stores. Mehrere [Beispiel-Store-Kandidaten](/help/sites-developing/ch-samplestores.md) werden im Repository unter `/libs/granite/contexthub/components/stores` installiert. Um von diesen Beispielen zu lernen, verwenden Sie CRXDE Lite, um die JavaScript-Dateien zu öffnen.
 
 ### Registrieren von ContextHub-Store-Kandidaten {#registering-a-contexthub-store-candidate}
 
@@ -66,7 +67,7 @@ Normalerweise ist nur ein Kandidat erforderlich und die Priorität kann auf `0`.
 
 ## Erstellen von Typen von ContextHub-Benutzeroberflächenmodulen {#creating-contexthub-ui-module-types}
 
-Erstellen Sie benutzerdefinierte Typen eines Benutzeroberflächenmoduls, wenn die [mit ContextHub installierten Typen](/help/sites-developing/ch-samplemodules.md) nicht Ihren Anforderungen entsprechen. Um einen UI-Modultyp zu erstellen, erstellen Sie einen Benutzeroberflächenmodul-Renderer, indem Sie die `ContextHub.UI.BaseModuleRenderer` und dann mit `ContextHub.UI`.
+Erstellen Sie benutzerdefinierte Typen eines Benutzeroberflächenmoduls, wenn die [mit ContextHub installierten Typen](/help/sites-developing/ch-samplemodules.md) nicht Ihren Anforderungen entsprechen. Erstellen Sie dazu einen Benutzeroberflächenmodul-Renderer, indem Sie die Klasse `ContextHub.UI.BaseModuleRenderer` erweitern und sie dann mit `ContextHub.UI` registrieren.
 
 Erstellen Sie zum Erstellen eines Benutzeroberflächenmodul-Renderers ein `Class`-Objekt, das die Logik enthält, die das Benutzeroberflächenmodul rendert. Ihre Klasse muss mindestens die folgenden Aktionen durchführen:
 
@@ -74,7 +75,7 @@ Erstellen Sie zum Erstellen eines Benutzeroberflächenmodul-Renderers ein `Class
 
 * Bereitstellen einer Standardkonfiguration. Erstellen Sie eine Eigenschaft `defaultConfig`. Diese Eigenschaft ist ein Objekt, das die Eigenschaften enthält, die für das Benutzeroberflächenmodul [`contexthub.base`](/help/sites-developing/ch-samplemodules.md#contexthub-base-ui-module-type) definiert sind, sowie alle anderen Eigenschaften, die Sie benötigen.
 
-Die Quelle für `ContextHub.UI.BaseModuleRenderer` befindet sich unter /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js. Verwenden Sie zum Registrieren des Renderers die Methode [`registerRenderer`](/help/sites-developing/contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) der `ContextHub.UI`-Klasse. Geben Sie einen Namen für den Modultyp an. Wenn Administratoren ein Benutzeroberflächenmodul auf Grundlage dieses Renderers erstellen, geben sie diesen Namen an.
+Die Quelle für `ContextHub.UI.BaseModuleRenderer` befindet sich unter /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js. Verwenden Sie zum Registrieren des Renderers die Methode [`registerRenderer`](/help/sites-developing/contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) der `ContextHub.UI`-Klasse. Geben Sie einen Namen für den Modultyp an. Wenn Admins ein Benutzeroberflächenmodul auf Grundlage dieses Renderers anlegen, geben sie diesen Namen an.
 
 Erstellen und registrieren Sie die Renderer-Klasse in einer selbstausführenden anonymen Funktion. Das folgende Beispiel basiert auf dem Quellcode für das Benutzeroberflächenmodul contexthub.browserinfo. Dieses Benutzeroberflächenmodul ist eine einfache Erweiterung der `ContextHub.UI.BaseModuleRenderer`-Klasse.
 

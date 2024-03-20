@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 5cb3ee55-f411-4692-84f7-89bf6ade729d
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 91%
+ht-degree: 94%
 
 ---
 
@@ -43,7 +44,7 @@ Mit AEM Forms können Sie jetzt ein Design erstellen und auf Ihr Formular anwend
 Indem Sie ein Design im Design-Editor erstellen, können Sie das Layout aller Felder im Formular anpassen. Nachdem Sie ein Design erstellt haben, führen Sie die folgenden Schritte aus, um es auf ein Formular anzuwenden:
 
 1. Öffnen Sie das Formular im Bearbeitungsmodus.
-1. Wählen Sie im Bearbeitungsmodus eine Komponente aus und wählen Sie dann ![Feldebene](assets/field-level.png) > **Container für adaptive Formulare** und wählen Sie ![cmppr](assets/cmppr.png).
+1. Wählen Sie im Bearbeitungsmodus eine Komponente aus, wählen Sie dann ![field-leve](assets/field-level.png) > **Container eines adaptiven Formulars** und dann ![cmppr](assets/cmppr.png).
 1. Wählen Sie in der Seitenleiste unter „Adaptives Formulardesign“ das Design aus, das Sie im Design-Editor erstellt haben.
 
 ## Erstellen eines benutzerdefinierten Feld-Layouts {#create-a-custom-field-layout}

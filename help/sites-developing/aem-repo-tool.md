@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: c46c9f0c-b0d2-4f2f-b95c-90fd3ced32a9
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 74%
+source-wordcount: '267'
+ht-degree: 79%
 
 ---
 
@@ -33,7 +34,7 @@ Mehrere Filterpfade werden vom Tool ebenso wenig unterstützt wie `filter.xml` v
 
 Das [AEM Repo Tool ist unter diesem Link auf GitHub verfügbar](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo), zusammen mit detaillierten Installations- und Nutzungsanleitungen.
 
-Wenn Sie die Quelle des AEM Repo Tool herunterladen möchten, lesen Sie das unten verlinkte GitHub-Projekt.
+Wenn Sie die Quelle des AEM Repo Tools herunterladen möchten, sehen Sie sich das unten verlinkte GitHub-Projekt an.
 
 CODE AUF GITHUB
 

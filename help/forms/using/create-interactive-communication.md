@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '6130'
 ht-degree: 85%
@@ -68,7 +69,7 @@ Wenn Sie die Option **[!UICONTROL Drucken als Übergeordnet für Webkanal verwen
 
    Weitere Informationen zu Druckkanal und Webkanal finden Sie unter [Druckkanal und Webkanal](/help/forms/using/web-channel-print-channel.md).
 
-1. Wählen Sie **[!UICONTROL Erstellen]**. Die interaktive Kommunikation wird erstellt und eine Warnmeldung erscheint. Auswählen **[!UICONTROL Bearbeiten]** , um den Inhalt der interaktiven Kommunikation zu erstellen, wie hier beschrieben: [Hinzufügen von Inhalten über die Benutzeroberfläche zum Erstellen interaktiver Kommunikation](#step2). Alternativ können Sie **[!UICONTROL Fertig]** und wählen Sie die Option, die interaktive Kommunikation später zu bearbeiten.
+1. Wählen Sie **[!UICONTROL Erstellen]** aus. Die interaktive Kommunikation wird erstellt und eine Warnmeldung erscheint. Auswählen **[!UICONTROL Bearbeiten]** , um den Inhalt der interaktiven Kommunikation zu erstellen, wie hier beschrieben: [Hinzufügen von Inhalten über die Benutzeroberfläche zum Erstellen interaktiver Kommunikation](#step2). Alternativ können Sie **[!UICONTROL Fertig]** und wählen Sie die Option, die interaktive Kommunikation später zu bearbeiten.
 
 ## Fügen Sie der interaktiven Kommunikation Inhalte hinzu {#step2}
 
@@ -422,9 +423,9 @@ Die Sortierung kann auf Tabellenspalten angewendet werden, die Folgendes enthalt
 
 So aktivieren Sie die Sortierung:
 
-1. Wählen Sie die Tabelle aus und wählen Sie ![configure_icon](assets/configure_icon.png) (Konfigurieren). Sie können die Tabelle auch mithilfe des **Inhalt**-Browsers in der Seitenleiste der interaktiven Kommunikation auswählen.
+1. Wählen Sie die Tabelle aus und wählen Sie dann ![configure_icon](assets/configure_icon.png) (Konfigurieren). Sie können die Tabelle auch mithilfe des **Inhalt**-Browsers in der Seitenleiste der interaktiven Kommunikation auswählen.
 1. Wählen Sie **Sortierung aktivieren** aus.
-1. Auswählen ![done_icon](assets/done_icon.png) , um die Tabelleneigenschaften zu speichern. Die Sortiersymbole (Auf- und Ab-Pfeile) in Spaltenüberschriften zeigen an, dass die Sortierung aktiviert wurde.
+1. Wählen Sie ![done_icon](assets/done_icon.png), um die Tabelleneigenschaften zu speichern. Die Sortiersymbole (Auf- und Ab-Pfeile) in Spaltenüberschriften zeigen an, dass die Sortierung aktiviert wurde.
 
    ![Sortieren aktivieren](assets/enable_sorting_new-1.png)
 

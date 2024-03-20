@@ -6,7 +6,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '10702'
 ht-degree: 95%
@@ -221,7 +222,7 @@ Die folgenden Einstellungen sind für den Verschlüsselungsdienst verfügbar.
 
 >[!NOTE]
 >
-Verwenden Sie einfache Authentifizierung (Benutzername und Kennwort) nur, wenn die Verbindung mit SSL (unter Verwendung von LDAPS) geschützt ist.
+>Verwenden Sie einfache Authentifizierung (Benutzername und Kennwort) nur, wenn die Verbindung mit SSL (unter Verwendung von LDAPS) geschützt ist.
 
 **Kompatibilitätsmodus:**
 
@@ -429,7 +430,7 @@ Die folgenden Einstellungen sind für den Microsoft SharePoint-Konfigurationsdie
 
 >[!NOTE]
 >
-Wenn die Offline-Unterstützung aktiviert wurde und Sie sie deaktivieren, werden die Bereitstellungsprofile der Benutzer sofort aktualisiert oder sobald sie online sind. Wenn ein Benutzer offline gearbeitet hat, werden alle ausstehenden Aufgaben in ihre Aufgabenliste zurückgestellt und alle Elemente in ihrer Warteschlange, einschließlich ausstehender Formulare, Aufgaben und Formulare mit Überprüfungsfehlern, werden aus der Warteschlange gelöscht.
+>Wenn die Offline-Unterstützung aktiviert wurde und Sie sie deaktivieren, werden die Bereitstellungsprofile der Benutzer sofort aktualisiert oder sobald sie online sind. Wenn ein Benutzer offline gearbeitet hat, werden alle ausstehenden Aufgaben in ihre Aufgabenliste zurückgestellt und alle Elemente in ihrer Warteschlange, einschließlich ausstehender Formulare, Aufgaben und Formulare mit Überprüfungsfehlern, werden aus der Warteschlange gelöscht.
 
 **Android:** Ermöglicht Android-Geräten eine Verbindung zum Server herzustellen.
 
@@ -731,7 +732,7 @@ Wenn der Pfad nicht absolut, sondern relativ ist, wird der Ordner innerhalb des 
 
 >[!NOTE]
 >
-Je kleiner die Größe des Ergebnisordners, desto höher die Watched Folder-Leistung. Wenn beispielsweise die geschätzte Belastung für den überwachten Ordner bei 1000 Dateien pro Stunde liegt, sollten Sie ein Muster wie `result/%Y%M%D%H` verwenden, sodass jede Stunde ein neuer Unterordner erstellt wird. Wenn die Belastung geringer ist (z. B. 1000 Dateien pro Tag), können Sie ein Muster wie das folgende verwenden: `result/%Y%M%D`.
+>Je kleiner die Größe des Ergebnisordners, desto höher die Watched Folder-Leistung. Wenn beispielsweise die geschätzte Belastung für den überwachten Ordner bei 1000 Dateien pro Stunde liegt, sollten Sie ein Muster wie `result/%Y%M%D%H` verwenden, sodass jede Stunde ein neuer Unterordner erstellt wird. Wenn die Belastung geringer ist (z. B. 1000 Dateien pro Tag), können Sie ein Muster wie das folgende verwenden: `result/%Y%M%D`.
 
 **Bereitstellungsordner**: Der Standardname für den Bereitstellungsordner im überwachten Ordner.
 
@@ -813,7 +814,7 @@ Standardsicherheitsprofile, die installiert sind, können Sie so konfigurieren, 
 
    >[!NOTE]
    >
-   Wiedergabe- und Absendedienste, die mit den Variablen „xfaForm“, „Document Form“ und „Form“ verwendet werden, werden immer mithilfe des Systembenutzerkontos ausgeführt.
+   >Wiedergabe- und Absendedienste, die mit den Variablen „xfaForm“, „Document Form“ und „Form“ verwendet werden, werden immer mithilfe des Systembenutzerkontos ausgeführt.
 
 1. Klicken Sie auf „Prinzipal hinzufügen“, um die Berechtigungen von Benutzenden und Gruppen für diesen Dienst anzugeben.
 1. Im Bildschirm „Prinzipal wählen“ werden die in der Benutzerverwaltung konfigurierten Benutzenden und Gruppen angezeigt. Falls die gewünschte Person oder Gruppe nicht angezeigt wird, verwenden Sie die Suchfunktion, um sie zu finden. Klicken Sie auf einen Benutzer- oder Gruppennamen.

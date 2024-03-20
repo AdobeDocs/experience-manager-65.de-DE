@@ -7,7 +7,8 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: 736926af-ae41-4da3-b181-444de72407bd
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 15%
@@ -109,4 +110,4 @@ Wenn Sie einen Richtliniensatz löschen, können Richtlinien, die Teil des Satze
 
 1. Klicken Sie auf Richtlinien und dann auf die Registerkarte Richtliniensätze .
 1. Aktivieren Sie das Kontrollkästchen für den zu löschenden Richtliniensatz.
-1. Klicken Sie auf Löschen und dann auf OK.
+1. Klicken Sie auf „Löschen“ und dann auf „OK“.

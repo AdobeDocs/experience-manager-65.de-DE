@@ -2,7 +2,8 @@
 title: Es ist nicht möglich, ein beschädigtes CRX-Repository, das auf einen JEE-Cluster-Server anwendbar ist, wiederherzustellen.
 description: Erfahren Sie, wie Sie ein beschädigtes CRX-Repository wiederherstellen können.
 exl-id: 212f61f1-360f-4abe-b874-055ec65454c7
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 87%

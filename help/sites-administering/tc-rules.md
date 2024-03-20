@@ -4,10 +4,11 @@ description: Erfahren Sie, wie Sie Inhalte identifizieren können, die in Adobe 
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1158'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -160,7 +161,7 @@ Von hier aus können Sie **Kontext hinzufügen**. Damit können Sie einen Pfad 
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
-Anschließend müssen Sie Ihren Kontext auswählen und dann auf **Bearbeiten** klicken. Dadurch wird der Editor für Übersetzungsregeln geöffnet.
+Anschließend müssen Sie Ihren Kontext auswählen und dann auf **Bearbeiten** klicken. Hierdurch wird der Editor für Übersetzungsregeln geöffnet.
 
 ![chlimage_1-58](assets/chlimage_1-58.jpeg)
 

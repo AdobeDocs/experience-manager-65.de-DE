@@ -7,10 +7,11 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 81%
+ht-degree: 87%
 
 ---
 
@@ -57,7 +58,7 @@ Die Erstellung **CSV-Bericht** ist beim Durchsuchen der **Sites** console (in de
 
 So erstellen Sie einen CSV-Export:
 
-1. Öffnen Sie die **Sites** Navigieren Sie bei Bedarf zum gewünschten Speicherort.
+1. Öffnen Sie die **Sites-Konsole** und wechseln Sie zum gewünschten Verzeichnis, falls erforderlich.
 1. Wählen Sie in der Symbolleiste **Erstellen** und dann **CSV-Bericht** aus, um den Assistenten zu öffnen:
 
    ![etc-03](assets/etc-03.png)

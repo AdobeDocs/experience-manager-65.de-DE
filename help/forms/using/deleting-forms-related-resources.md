@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 role: Admin
 exl-id: b31f9f56-dd33-4478-ad34-01ac7d5a1b40
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 36%
+ht-degree: 39%
 
 ---
 
@@ -40,7 +41,7 @@ Wenn Sie ein Asset aus der Autoreninstanz löschen, wird das Asset auch aus der 
 
 ## Auswirkungen des Löschens eines referenzierten XFA-Formulars {#impact-of-deleting-a-referenced-xfa-form}
 
-In AEM Forms kann eine XFA-Formularvorlage durch ein adaptives Formular oder eine andere XFA-Formularvorlage referenziert werden. Eine Vorlage kann auch auf eine Ressource oder eine andere XFA-Vorlage verweisen.
+In AEM Forms kann eine XFA-Formularvorlage durch ein adaptives Formular oder eine andere XFA-Formularvorlage referenziert werden. Des Weiteren kann eine Vorlage auf eine Ressource oder eine andere XFA-Vorlage verweisen.
 
 Es ist nicht ratsam, ein XFA-Formular zu löschen, auf das von einem adaptiven Formular verwiesen wird, da es das adaptive Formular beschädigen kann. Wenn ein adaptives Formular auf ein XFA-Formular verweist, sind deren Felder gebunden. Nach dem Löschen des XFA kann das adaptive Formular seine Felder nicht mit den XFA-Feldern synchronisieren und zeigt eine Fehlermeldung für diese Felder an. Weitere Informationen zur Auswirkung beim Löschen referenzierter XFA-Formulare und zu beschädigten adaptiven Formularen finden Sie unter [Aktualisieren referenzierter XFA-Formulare](/help/forms/using/get-xdp-pdf-documents-aem.md#p-updating-referenced-xfa-forms-p).
 

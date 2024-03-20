@@ -6,10 +6,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3796'
-ht-degree: 55%
+ht-degree: 56%
 
 ---
 
@@ -72,7 +73,7 @@ Damit der Arbeitsablauf für Formulare eingehende E-Mail-Nachrichten von Benutze
 
 **Wiederholungsintervall:** Die Häufigkeit, mit der der Ordner abgerufen wird. Der Standardwert für das Wiederholungsintervall in Sekunden, wenn in der Endpunktkonfiguration kein Wert angegeben ist. Der Standardwert ist 10. Dieser Wert kann nicht kleiner als „10“ sein.
 
-**Anzahl der Wiederholungen:** Wie oft das Eingabeverzeichnis abgefragt wird. Die standardmäßige Wiederholungsanzahl, die verwendet wird, wenn dieser Wert nicht in der Endpunktkonfiguration angegeben ist. Der Wert &quot;-1&quot;bedeutet, dass das Verzeichnis auf unbestimmte Zeit überprüft wird. Der Standardwert lautet -1.
+**Anzahl der Wiederholungen:** Wie oft das Eingabeverzeichnis abgefragt wird. Der Standardwert für die Anzahl der Wiederholungen, der verwendet wird, wenn in der Endpunktkonfiguration kein Wert angegeben ist. Ein Wert von „-1“ bedeutet unbegrenztes Überprüfen des Ordners. Der Standardwert lautet -1.
 
 **Start des Auftrags verzögern:** Der Standardwert in Sekunden für die Verzögerung, bevor der Auftrag beginnt, den Endpunkt zu überprüfen. Der Standardwert lautet 0.
 

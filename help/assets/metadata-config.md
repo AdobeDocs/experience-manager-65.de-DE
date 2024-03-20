@@ -6,10 +6,11 @@ role: User, Admin
 feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 99%
+source-wordcount: '1978'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +61,7 @@ Mit einem Metadatenprofil können Sie Standardmetadaten auf Assets in einem Ordn
 
    ![Bearbeiten eines Metadaten-Formulars](assets/metadata-edit-form.png)
 
-1. Klicken Sie auf eine Komponente und konfigurieren Sie deren Eigenschaften auf der Registerkarte **[!UICONTROL Einstellungen]**. Klicken Sie beispielsweise auf die Komponente **[!UICONTROL Beschreibung]** und bearbeiten Sie die zugehörigen Eigenschaften.
+1. Klicken Sie auf eine Komponente und konfigurieren Sie ihre Eigenschaften in der Registerkarte **[!UICONTROL Einstellungen]**. Klicken Sie beispielsweise auf die **[!UICONTROL Beschreibung]** und bearbeiten Sie die Eigenschaften.
 
    ![Festlegen einer Komponente im Metadatenprofil](assets/metadata-profile-component-setting.png)
 
@@ -93,7 +94,7 @@ Mit einem Metadatenprofil können Sie Standardmetadaten auf Assets in einem Ordn
 | [!UICONTROL Datum] | Feldbezeichnung, <br> Zu Eigenschaft zuordnen, <br> Standardwert |
 | [!UICONTROL Standard-Tags] | Feldbezeichnung, <br> Zu Eigenschaft zuordnen, <br> Standardwert, <br> Beschreibung |
 
-1. Klicken Sie auf **[!UICONTROL Fertig]**. Das Metadatenprofil wird der Liste der Profile auf der Seite **[!UICONTROL Metadatenprofile]** hinzugefügt.<br>
+1. Klicken Sie auf **[!UICONTROL Fertig]**. Das Metadatenprofil wird zur Liste der Profile im **[!UICONTROL Metadatenprofile]** Seite.<br>
 
    ![Auf der Seite „Metadatenprofile“ hinzugefügtes Metadatenprofil](assets/MetadataProfiles-page.png)
 
