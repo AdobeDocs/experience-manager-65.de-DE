@@ -8,10 +8,10 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: af30cfed8f039207c0363d1ace5ac2b2a1cf84ba
 workflow-type: tm+mt
-source-wordcount: '6944'
-ht-degree: 97%
+source-wordcount: '6607'
+ht-degree: 96%
 
 ---
 
@@ -641,35 +641,36 @@ Syntax: `@this currentComponent`
 >
 >Kommentare vor benutzerdefinierten Funktionen werden für die Zusammenfassung verwendet. Die Zusammenfassung kann sich über mehrere Zeilen bis zum nächsten Tag erstrecken. Beschränken Sie ihre Länge auf eine einzelne Zeile, um eine kurze Beschreibung im Regel-Builder zu erhalten.
 
-**Hinzufügen einer benutzerdefinierten Funktion**
+<!--
+**Adding a custom function**
 
-Angenommen, Sie möchten eine benutzerdefinierte Funktion zur Berechnung der Fläche eines Quadrats hinzufügen. Die Seitenlänge entspricht der Benutzereingabe für die benutzerdefinierte Funktion. Dieser Wert muss in ein numerisches Feld im Formular eingegeben werden. Die berechnete Ausgabe wird in einem anderen numerischen Feld im Formular angezeigt. Um eine benutzerdefinierte Funktion hinzuzufügen, müssen Sie zuerst eine Client-Bibliothek erstellen und diese anschließend zum CRX-Repository hinzufügen.
+For example, you want to add a custom function which calculates area of a square. Side length is the user input to the custom function, which is accepted using a numeric box in your form. The calculated output is displayed in another numeric box in your form. To add a custom function, you have to first create a client library, and then add it to the CRX repository.
 
-Führen Sie die folgenden Schritte aus, um eine Client-Bibliothek zu erstellen und sie zum CRX-Repository hinzuzufügen:
+Perform the following steps to create a client library and add it in the CRX repository.
 
-1. Erstellen Sie eine Client-Bibliothek. Weitere Informationen finden Sie unter [Verwenden Client-seitiger Bibliotheken](/help/sites-developing/clientlibs.md).
-1. Fügen Sie in CRXDE die Eigenschaft `categories` mit dem Wert `customfunction` (vom Typ „String“ (Zeichenfolge)) zum Ordner `clientlib` hinzu.
+1. Create a client library. For more information, see [Using Client-Side Libraries](/help/sites-developing/clientlibs.md).
+2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
    >
-   >`customfunction` ist eine Beispielkategorie. Sie können einen beliebigen Namen für die Kategorie wählen, die Sie im Ordner `clientlib`erstellen.
+   >`customfunction`is an example category. You can choose any name for the category you create in the `clientlib`folder.
 
-Nachdem Sie die Client-Bibliothek im CRX-Repository hinzugefügt haben, verwenden Sie sie in Ihrem adaptiven Formular. Sie ermöglicht die Verwendung der benutzerdefinierten Funktion als Regel im Formular. Führen Sie die folgenden Schritte durch, um die Client-Bibliothek dem adaptiven Formular hinzuzufügen:
+After you have added your client library in the CRX repository, use it in your adaptive form. It lets you use your custom function as a rule in your form. Perform the following steps to add the client library in your adaptive form.
 
-1. Öffnen Sie das Formular im Bearbeitungsmodus.
-Um ein Formular im Bearbeitungsmodus zu öffnen, wählen Sie ein Formular aus und wählen Sie dann **Öffnen**.
-1. Wählen Sie im Bearbeitungsmodus eine Komponente aus, wählen Sie dann ![field-leve](assets/field-level.png) > **Container eines adaptiven Formulars** und dann ![cmppr](assets/cmppr.png).
-1. Fügen Sie in der Seitenleiste unter „Name der Client-Bibliothek“ Ihre Client-Bibliothek hinzu. (In diesem Beispiel wäre das `customfunction`.)
+1. Open your form in edit mode.
+   To open a form in edit mode, select a form and select **Open**.
+1. In the edit mode, select a component, then select ![field-level](assets/field-level.png) &gt; **Adaptive Form Container**, and then select ![cmppr](assets/cmppr.png).
+1. In the sidebar, under Name of Client Library, add your client library. ( `customfunction` in the example.)
 
-   ![Hinzufügen der benutzerdefinierten Funktion zur Client-Bibliothek](assets/clientlib.png)
+   ![Adding the custom function client library](assets/clientlib.png)
 
-1. Wählen Sie das numerische Eingabefeld aus und wählen Sie dann ![edit-rules](assets/edit-rules.png), um den Regeleditor zu öffnen.
-1. Wählen Sie **Regel erstellen** aus. Erstellen Sie mithilfe der unten gezeigten Optionen eine Regel zum Speichern des Quadratwerts der Eingabe im Ausgabefeld des Formulars.
-   [![Verwenden benutzerdefinierter Funktionen zum Erstellen einer Regel](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Auswählen **Fertig**. Ihre benutzerdefinierte Funktion wird hinzugefügt.
+1. Select the input numeric box, and select ![edit-rules](assets/edit-rules.png) to open the rule editor.
+1. Select **Create Rule**. Using options shown below, create a rule to save the squared value of the input in the Output field of your form.
+   [ ![Using custom functions to create a rule](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Select **Done**. Your custom function is added.
 
-#### Unterstützte Typen von Funktionsdeklarationen {#function-declaration-supported-types}
+#### Function declaration supported types {#function-declaration-supported-types}
 
-**Funktionsanweisung**
+**Function Statement**
 
 ```javascript
 function area(len) {
@@ -677,9 +678,9 @@ function area(len) {
 }
 ```
 
-Diese Funktion wird ohne `jsdoc`-Kommentare eingefügt.
+This function is included without `jsdoc` comments.
 
-**Funktionsausdruck**
+**Function Expression**
 
 ```javascript
 var area;
@@ -690,7 +691,7 @@ area = function(len) {
 };
 ```
 
-**Funktionsausdruck und -anweisung**
+**Function Expression and Statement**
 
 ```javascript
 var b={};
@@ -700,7 +701,7 @@ b.area = function(len) {
 }
 ```
 
-**Funktionsdeklaration als Variable**
+**Function Declaration as Variable**
 
 ```javascript
 /** */
@@ -711,9 +712,9 @@ var x1,
     x2 =5, x3 =true;
 ```
 
-Einschränkung: Über die benutzerdefinierte Funktion wird nur die erste Funktionsdeklaration aus der Variablenliste ausgewählt, falls zusammen vorhanden. Der Funktionsausdruck kann für jede deklarierte Funktion verwendet werden.
+Limitation: custom function picks only the first function declaration from the variable list, if together. You can use function expression for every function declared.
 
-**Funktionsdeklaration als Objekt**
+**Function Declaration as Object**
 
 ```javascript
 var c = {
@@ -728,7 +729,10 @@ var c = {
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass Sie `jsdoc` für jede benutzerdefinierte Funktion verwenden. Obwohl `jsdoc`-Kommentare empfohlen werden, sollten Sie einen leeren `jsdoc`-Kommentar einfügen, um eine Funktion als benutzerdefinierte Funktion zu kennzeichnen. Dies ermöglicht eine standardmäßige Behandlung Ihrer benutzerdefinierten Funktion.
+>Ensure that you use `jsdoc` for every custom function. Although `jsdoc`comments are encouraged, include an empty `jsdoc`comment to mark your function as custom function. It enables default handling of your custom function.
+-->
+
+Sie können auch benutzerdefinierte Funktionen in Ihrem Regeleditor verwenden. Anweisungen zum Erstellen benutzerdefinierter Funktionen finden Sie im Artikel [Benutzerdefinierte Funktionen in Adaptive Forms](/help/forms/using/create-and-use-custom-functions.md).
 
 ## Verwalten von Regeln {#manage-rules}
 
