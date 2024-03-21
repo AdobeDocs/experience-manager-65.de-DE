@@ -4,9 +4,9 @@ description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsan
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 source-git-commit: 7f150219bce3036c0e330b7349e679fdf19797d1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3688'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -203,7 +203,7 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 
   ` Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.`
 
-* Wenn ein Benutzer ein Dokumentfragment mithilfe des Formulardatenmodells in AEM Forms Service Pack 6.5.19.0 erstellt, erscheinen die Variablennamen im Seitenbereich undefiniert, aber die Variablennamen werden angezeigt, wenn sie im Formularbereich abgelegt werden oder wenn auf sie geklickt wird. (FORMS-13238)
+* Wenn Benutzende ein Dokumentfragment mithilfe des Formulardatenmodells in AEM Forms Service Pack 6.5.19.0 erstellen, werden die Variablennamen im seitlichen Bedienfeld undefiniert angezeigt. Die Variablennamen werden aber korrekt angezeigt, wenn sie im Formularbereich abgelegt werden oder wenn auf sie geklickt wird. (FORMS-13238)
 
 
 #### [!DNL Forms Designer] {#forms-designer-6520}
