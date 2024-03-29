@@ -6,9 +6,9 @@ role: User, Admin
 feature: Collaboration
 exl-id: 130cec6d-1cdd-4304-94bb-65e6bb573e55
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '928'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ Zu den Best Practices für die Verwendung der Ordnerfreigabe von [!DNL Experienc
 * **Überlegungen zum Volumen:** Die Ordnerfreigabe zwischen [!DNL Experience Manager] und [!DNL Creative Cloud] sollte für eine kleinere Anzahl von Dateien verwendet werden, z. B. für eine bestimmte Kampagne oder Aktivität. Greifen Sie für das Freigeben größerer Mengen von Assets, z. B. aller genehmigten Assets in der Organisation, besser auf andere Methoden (z. B. [!DNL Assets Brand Portal]) oder auf das [!DNL Experience Manager]-Desktop-Programm zurück.
 * **Vermeiden Sie die Freigabe komplexer Hierarchien:** Die Freigabe erfolgt rekursiv und erlaubt kein selektives Aufheben der Freigabe. Normalerweise sollten nur Ordner ohne Unterordner oder mit einer einfachen Hierarchie, z. B. nur einer Unterordnerebene, für die Freigabe in Erwägung gezogen werden.
 * **Separate Ordner für die Einwegfreigabe:** Für das Freigeben von endgültigen Assets aus [!DNL Assets] für [!DNL Creative Cloud]-Dateien und umgekehrt zum Freigeben von Assets für die kreative Bearbeitung aus [!DNL Creative Cloud]-Dateien für [!DNL Assets] sollten separate Ordner verwendet werden. In Verbindung mit einer sinnvollen Benennungskonvention für diese Ordner entsteht eine Arbeitsumgebung, die für Benutzende von [!DNL Assets] und [!DNL Creative Cloud] gleichermaßen verständlich ist.
-* **Vermeiden Sie WIP im freigegebenen Ordner:** Verwenden Sie keinen freigegebenen Ordner für laufende Arbeiten - verwenden Sie einen separaten Ordner in Creative Cloud-Dateien, um Arbeiten durchzuführen, die häufige Dateiänderungen erfordern.
+* **Vermeidung von laufenden Arbeiten in einem freigegebenen Ordner:** Verwenden Sie keine freigegebene Ordner für laufende Arbeiten. Verwenden Sie einen separaten Ordner in Creative Cloud Files, um Arbeiten zu erledigen, die häufige Änderungen an der Datei erfordern.
 * **Beginn neuer Arbeit außerhalb eines freigegebenen Ordners:** Es empfiehlt sich, mit der Erstellung neuer Designs (kreativer Dateien) in einem separaten Ordner für laufende Prozesse in Creative Cloud Files zu beginnen. Sobald die Designs für Benutzende von [!DNL Assets] freigegeben werden können, sollten sie in den freigegebenen Ordner verschoben oder in diesem gespeichert werden.
 * **Vereinfachung der Freigabestruktur:** Im Sinne einer besser überschaubaren Organisation sollten Sie darüber nachdenken, die Freigabestruktur zu vereinfachen. Anstatt [!DNL Assets]-Ordner für alle kreativen Benutzenden freizugeben, sollten sie nur für Personen freigegeben werden, die das Team repräsentieren, z. B. die Person, die für den Kreativbereich zuständig ist oder das Team leitet. Auf diese Weise kann der Leiter des Kreativbereichs endgültige Assets erhalten, über die Arbeitsaufteilung entscheiden und dann die Designer in ihren eigenen Creative Cloud-Konten an den unfertigen Assets arbeiten lassen. Sie können die Creative Cloud-Zusammenarbeitsfunktionen verwenden, um die Arbeit zu koordinieren, und Assets, die für die Freigabe bereit sind, auswählen und wieder für [!DNL Assets] im Ordner für kreatives Arbeiten freigeben.
 

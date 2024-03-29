@@ -1,22 +1,22 @@
 ---
 title: Anzeigen von Seitenanalysedaten
-description: Verwenden Sie Seitenanalysedaten, um die Effektivität des Seiteninhalts zu messen.
+description: Verwenden Sie Seitenanalysedaten, um die Wirkung des Seiteninhalts zu messen.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 docset: aem65
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '91'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
 
 # Anzeigen von Seitenanalysedaten{#seeing-page-analytics-data}
 
-Verwenden Sie Seitenanalysedaten, um die Effektivität des Seiteninhalts zu messen.
+Verwenden Sie Seitenanalysedaten, um die Wirkung des Seiteninhalts zu messen.
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 

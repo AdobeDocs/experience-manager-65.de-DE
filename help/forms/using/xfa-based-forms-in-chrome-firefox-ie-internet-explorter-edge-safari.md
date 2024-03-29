@@ -2,7 +2,7 @@
 title: XFA-basierte PDF-Formulare können in Google Chrome, Firefox, Microsoft® Edge, Microsoft® Internet Explorer oder Apple Safari nicht geöffnet werden.
 feature: Adaptive Forms
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '321'
 ht-degree: 100%
 

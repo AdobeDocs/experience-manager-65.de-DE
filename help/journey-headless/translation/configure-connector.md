@@ -3,9 +3,9 @@ title: Konfigurieren der Übersetzungsintegration
 description: Erfahren Sie, wie Sie AEM mit einem Übersetzungs-Service verbinden.
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1143'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Dieser Artikel baut auf diesen Grundlagen auf, damit Sie den ersten Konfiguratio
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie eine AEM Integration mit Ihrem ausgewählten Übersetzungsdienst einrichten. Nach dem Lesen sollten Sie:
+In diesem Dokument erfahren Sie, wie Sie eine AEM-Integration für Ihren ausgewählten Übersetzungsdienst einrichten. Nach dem Lesen sollten Sie:
 
 * die wichtigen Parameter des Translation Integration Framework in AEM verstehen.
 * In der Lage sein, Ihre eigene Verbindung zu Ihrem Übersetzungsdienst einzurichten.
@@ -70,22 +70,22 @@ Nachdem das Connector-Paket für Ihren bevorzugten Übersetzungsdienst installie
 
 So erstellen Sie eine Übersetzungskonfiguration:
 
-1. Klicken Sie im globalen Navigationsmenü auf **Instrumente** > **Cloud Service** > **Übersetzungs-Cloud Service**.
+1. Klicken Sie im globalen Navigationsmenü auf **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services**.
 1. Navigieren Sie zu der Stelle in Ihrer Inhaltsstruktur, an der Sie die Konfiguration erstellen möchten. Diese bezieht sich oft auf ein bestimmted Projekt oder kann global sein.
    * In diesem Fall kann beispielsweise eine Konfiguration global vorgenommen werden, um sie auf alle Inhalte oder nur auf das WKND-Projekt anzuwenden.
 
    ![Speicherort der Übersetzungskonfiguration](assets/translation-configuration-location.png)
 
-1. Geben Sie die folgenden Informationen in die Felder ein und klicken Sie auf **Erstellen**.
+1. Geben Sie die folgenden Informationen in die Felder ein und klicken Sie dann auf **Erstellen**.
    1. Wählen Sie **Konfigurationstyp** in der Dropdown-Liste aus. Wählen Sie **Übersetzungsintegration** aus der Liste aus.
    1. Geben Sie einen **Titel** für Ihre Konfiguration ein. Durch den **Titel** wird die Konfiguration in der **Cloud Services**-Konsole und in Dropdown-Listen mit den Seiteneigenschaften identifiziert.
    1. Geben Sie optional einen **Namen** für den Repository-Knoten ein, auf dem die Konfiguration gespeichert wird.
 
    ![Erstellen einer Übersetzungskonfiguration](assets/create-translation-configuration.png)
 
-1. Klicks **Erstellen** und **Konfiguration bearbeiten** angezeigt, in dem Sie die Konfigurationseigenschaften konfigurieren können.
+1. Klicken Sie auf **Erstellen**. Daraufhin wird das Fenster **Konfiguration bearbeiten** angezeigt, in dem Sie die Konfigurationseigenschaften konfigurieren können.
 
-1. Denken Sie daran, dass Inhaltsfragmente in AEM als Assets gespeichert werden. Klicken Sie auf **Assets** Registerkarte.
+1. Denken Sie daran, dass Inhaltsfragmente in AEM als Assets gespeichert werden. Klicken Sie auf die Registerkarte **Assets**.
 
 ![Eigenschaften der Übersetzungskonfiguration](assets/translation-configuration.png)
 
@@ -114,9 +114,9 @@ Gehen Sie dazu zum Sprachstamm Ihrer Inhalte. Für unsere Beispielzwecke ist die
 /content/dam/<your-project>/en
 ```
 
-1. Navigieren Sie zur globalen Navigation und navigieren Sie zu **Navigation** > **Assets** > **Dateien**.
+1. Gehen Sie in der globalen Navigation zu **Navigation** > **Assets** > **Dateien**.
 1. Wählen Sie in der Assets-Konsole den zu konfigurierenden Sprachstamm aus und klicken Sie auf **Eigenschaften**.
-1. Klicken Sie auf **Cloud Service** Registerkarte.
+1. Klicken Sie auf die Registerkarte **Cloud-Services**.
 1. Wählen Sie unter **Cloud-Service-Konfigurationen** in der Dropdown-Liste **Konfiguration hinzufügen** Ihren Connector aus. Er sollte in der Dropdown-Liste angezeigt werden, wenn Sie das Paket wie [weiter oben beschrieben](#connect-translation-provider) installiert haben.
 1. Wählen Sie unter **Cloud-Service-Konfigurationen** in der Dropdown-Liste **Konfiguration hinzufügen** auch Ihre Konfiguration aus.
 1. Klicken Sie auf **Speichern und schließen**.

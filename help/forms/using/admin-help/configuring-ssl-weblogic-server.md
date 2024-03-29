@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1052'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Konfigurieren Sie WebLogic anschließend so, dass Ihr benutzerdefinierter Identi
 
 ## Erstellen einer SSL-Berechtigung für WebLogic Server {#creating-an-ssl-credential-for-use-on-weblogic-server}
 
-Der Keytool-Befehl befindet sich normalerweise im Ordner &quot;Java jre/bin&quot;und muss mehrere Optionen und Optionswerte enthalten, die in der folgenden Tabelle aufgeführt sind.
+Der Keytool-Befehl befindet sich in der Regel im Java-Ordner „jre/bin“ und muss verschiedene Optionen und Optionswerte enthalten, die in der folgenden Tabelle aufgeführt sind.
 
 <table>
  <thead>
@@ -179,7 +179,7 @@ Konfigurieren Sie WebLogic so, dass Ihr benutzerdefinierter Identitäts-Keystore
 
    **Art des benutzerdefinierten Identitäts-Keystores**: JKS
 
-   **Custom Identity Keystore Passphrase**: *mypassword* (benutzerdefiniertes Identitäts-Keystore-Kennwort)
+   **Kennwort für benutzerdefinierten Identitäts-Keystore**: *mypassword* (Kennwort für benutzerdefinierten Identitäts-Keystore)
 
 1. Geben Sie unter „Trust“ die folgenden Werte an:
 
@@ -187,7 +187,7 @@ Konfigurieren Sie WebLogic so, dass Ihr benutzerdefinierter Identitäts-Keystore
 
    **Art des benutzerdefinierten Trust-Keystores**: JKS
 
-   **Custom Trust Keystore Pass Phrase**: *mypassword* (benutzerdefiniertes Kennwort für Vertrauensschlüssel)
+   **Kennwort für benutzerdefinierten Trust-Keystore**: *mypassword* (Kennwort für benutzerdefinierten Trust-Keystore)
 
 1. Wählen Sie unter „General“ (Allgemein) im Bereich „Configuration“ (Konfiguration) den Eintrag **SSL** aus.
 1. Standardmäßig ist unter „Identity and Trust Locations“ (Speicherort für Identitäten und Vertrauensstellungen) die Option „Keystore“ ausgewählt. Wenn nicht, ändern Sie die Einstellung zu „Keystore“.

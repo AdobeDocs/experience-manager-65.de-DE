@@ -1,8 +1,8 @@
 ---
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '729'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 # Richtlinien für Beiträge zur Adobe Experience Manager-Dokumentation
@@ -79,7 +79,7 @@ Das [Manual of Style von Microsoft®](https://learn.microsoft.com/de-de/style-gu
 
 Screenshots sind mit Bedacht und nur dann zu verwenden, wenn eine Textbeschreibung nicht ausreicht.
 
-Verwenden Sie keine Markierungen oder anderen Anmerkungen in Screenshots (z. B. rote Rahmen, Pfeile oder Text). Auf diese Weise können die Screenshots in lokalisierten Versionen der Dokumentation einfacher wiederverwendet oder repliziert werden.
+Verwenden Sie keine Markierungen oder anderen Anmerkungen in Screenshots (z. B. rote Rahmen, Pfeile oder Text). Auf diese Weise können die Screenshots in lokalisierten Versionen der Dokumentation einfacher wiederverwendet oder repliziert werden.
 
 ### Versionsspezifische Verweise
 
@@ -89,4 +89,4 @@ Versuchen Sie nach Möglichkeit direkte Verweise auf eine bestimmte Version im g
 
 Das Produkt sollte in einem Artikel zum ersten Mal immer mit dem vollständigen Namen **Adobe Experience Manager** genannt und anschließend als **AEM** bezeichnet werden.
 
-Verwenden Sie Day, Day Software, CQ und CRX nur, wenn dies unvermeidlich ist, z. B. in Klassennamen oder bei Verweisen auf die AEM.
+Verwenden Sie nicht die Begriffe „Day“, „Day Software“, „CQ“ oder „CRX“, außer wo dies unvermeidbar ist, weil es z. B. um Klassennamen oder frühere Versionen von AEM geht.

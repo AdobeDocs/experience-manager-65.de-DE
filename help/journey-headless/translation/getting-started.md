@@ -3,9 +3,9 @@ title: Erste Schritte mit der AEM Headless-Übersetzung
 description: Erfahren Sie, wie Sie Ihre Headless-Inhalte organisieren und wie AEM Übersetzungs-Tools funktionieren.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1472'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ In diesem Dokument erfahren Sie, wie Sie mit der Übersetzung von Headless-Inhal
 
 ## Anforderungen und Vorbedingungen {#requirements-prerequisites}
 
-Es gibt mehrere Voraussetzungen, bevor Sie mit der Übersetzung Ihrer Headless AEM-Inhalte beginnen.
+Bevor Sie mit der Übersetzung der Headless-AEM-Inhalte beginnen, müssen Sie verschiedene Anforderungen erfüllen.
 
 ### Kenntnisse {#knowledge}
 
@@ -44,7 +44,7 @@ Es gibt mehrere Voraussetzungen, bevor Sie mit der Übersetzung Ihrer Headless A
 
 >[!TIP]
 >
->Wenn Sie nicht mit der Verwendung eines umfangreichen CMS wie AEM vertraut sind, sollten Sie die Dokumentation [Grundlegende Handhabung](/help/sites-authoring/basic-handling.md) lesen, bevor Sie fortfahren. Die Grundlegende Handling-Dokumentation ist nicht Teil des Journey, daher kehren Sie nach Abschluss zu dieser Seite zurück.
+>Wenn Sie nicht mit der Verwendung eines umfangreichen CMS wie AEM vertraut sind, sollten Sie die Dokumentation [Grundlegende Handhabung](/help/sites-authoring/basic-handling.md) lesen, bevor Sie fortfahren. Die Dokumentation „Grundlegende Handhabung“ ist nicht Teil der Tour. Kehren Sie also nach Abschluss der Lektüre zu dieser Seite zurück.
 
 ### Tools {#tools}
 
@@ -64,7 +64,7 @@ Inhalte in AEM, seien sie Headless- oder herkömmliche Webseiten, werden durch i
 
 ## Wie AEM Headless-Inhalte speichert {#headless-content-in-aem}
 
-Für den Übersetzer ist es nicht wichtig, zu verstehen, wie AEM Headless-Inhalte verwaltet. Wenn Sie jedoch mit den grundlegenden Konzepten und der Terminologie vertraut sind, wird dies bei der späteren Verwendung der AEM-Übersetzungs-Tools hilfreich sein. Vor allem müssen Sie Ihre eigenen Inhalte verstehen und wissen, wie sie strukturiert sind, um sie effektiv zu übersetzen.
+Für den Übersetzer ist es nicht wichtig, zu verstehen, wie AEM Headless-Inhalte verwaltet. Wenn Sie jedoch mit den grundlegenden Konzepten und der Terminologie vertraut sind, wird dies bei der späteren Verwendung der AEM-Übersetzungs-Tools hilfreich sein. Vor allem müssen Sie Ihre eigenen Inhalte verstehen und wissen, wie sie strukturiert sind, um sie effektiv übersetzen zu können.
 
 ### Inhaltsmodelle {#content-models}
 
@@ -78,7 +78,7 @@ Der Inhaltsarchitekt wird zu Beginn des Projekts aktiv, um diese Struktur zu def
 
 Da die Inhaltsmodelle die Struktur Ihrer Inhalte definieren, müssen Sie wissen, welche Felder Ihrer Modelle übersetzt werden müssen. Im Allgemeinen arbeiten Sie mit dem Inhaltsarchitekten zusammen, um dies zu definieren. Gehen Sie wie folgt vor, um die Felder Ihrer Inhaltsmodelle durchzugehen.
 
-1. Navigieren Sie zu **Instrumente** > **Assets** > **Inhaltsfragmentmodelle**.
+1. Gehen Sie zu **Tools** > **Assets** > **Inhaltsfragmentmodelle**.
 1. Inhaltsfragmentmodelle werden im Allgemeinen in einer Ordnerstruktur gespeichert. Klicken Sie auf den Ordner für Ihr Projekt.
 1. Die Modelle werden aufgelistet. Klicken Sie auf das Modell, um die Details anzuzeigen.
    ![Inhaltsfragmentmodelle](assets/content-fragment-models.png)
@@ -93,7 +93,7 @@ Notieren Sie sich den **Eigenschaftsnamen** des Feldes für alle Felder, die üb
 
 >[!TIP]
 >
->Im Allgemeinen stellt der Inhaltsarchitekte dem Übersetzungsanbieter die **Eigenschaftsname** von allen für die Übersetzung erforderlichen Feldern. Diese Feldnamen werden für einen späteren Zeitpunkt in der Tour benötigt. Die vorangegangenen Schritte sind für das Verständnis des Übersetzungsspezialisten vorgesehen.
+>Im Allgemeinen stellt die Inhaltsarchitektin oder der Inhaltsarchitekt der Übersetzungsfachkraft die **Eigenschaftsnamen** für alle für die Übersetzung erforderlichen Felder zur Verfügung. Diese Feldnamen werden für einen späteren Zeitpunkt in der Tour benötigt. Die vorangegangenen Schritte sind für das Verständnis des Übersetzungsspezialisten vorgesehen.
 
 ### Inhaltsfragmente {#content-fragments}
 
@@ -180,7 +180,7 @@ Nachdem Sie nun diesen Teil der Headless-Übersetzungs-Tour abgeschlossen haben,
 * verstehen, wie AEM Headless-Inhalte speichert.
 * mit den Übersetzungs-Tools von AEM vertraut sein.
 
-Auf diesen Erkenntnissen aufbauen und Ihre Journey-zur Headless-AEM-Übersetzung fortsetzen, indem Sie das Dokument erneut überprüfen. [Übersetzungsintegration konfigurieren](configure-connector.md) Hier erfahren Sie, wie Sie AEM mit einem Übersetzungsdienst verbinden.|
+Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Headless-Übersetzungs-Tour fort, indem Sie als Nächstes das Dokument [Konfigurieren der Übersetzungsintegration](configure-connector.md) lesen, in dem Sie lernen, wie Sie AEM mit einem Übersetzungsdienst verbinden.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

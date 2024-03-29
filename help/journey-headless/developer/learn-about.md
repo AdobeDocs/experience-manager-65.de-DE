@@ -3,9 +3,9 @@ title: Grundlegendes zur CMS-Headless-Entwicklung
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Headless-Technologie und darüber, warum Sie sie verwenden sollten.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
 source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1601'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Seit der Einführung benutzerfreundlicher, umfangreicher Content-Management-Syst
 
 ![Das klassische Full-Stack-CMS](assets/full-stack.png)
 
-In einem Full-Stack-CMS befindet sich die gesamte Funktionalität zum Bearbeiten Ihres Inhalts im CMS. Die Funktionen des Systems bilden die verschiedenen Komponenten des CMS-Stacks. Die Full-Stack-Lösung hat viele Vorteile.
+In einem Full-Stack-CMS befindet sich die gesamte Funktionalität zum Bearbeiten Ihrer Inhalte im CMS. Die Funktionen des Systems bilden die verschiedenen Komponenten des CMS-Stacks. Die Full-Stack-Lösung hat viele Vorteile.
 
 * Sie haben nur ein System zu verwalten.
 * Inhalte werden zentral verwaltet.
@@ -56,19 +56,19 @@ Benutzer erwarten Interaktionen, unabhängig von der Plattform oder dem Kontaktp
 
 Der Kopf (engl. „head“) eines Systems ist im Allgemeinen der Ausgabe-Renderer dieses Systems, in der Regel in Form einer GUI oder einer anderen grafischen Ausgabe.
 
-Ein Headless-Server beispielsweise sitzt wahrscheinlich in einem Rack irgendwo in einem Serverraum und hat keinen Monitor angeschlossen. Um darauf zuzugreifen, müssen Sie sich per Fernzugriff damit verbinden. In diesem Fall ist der Monitor der Kopf, da er das Rendering der Ausgabe des Servers übernimmt. Als Verbraucher des Services stellen Sie Ihren eigenen Kopf (den Monitor) bereit, wenn Sie per Fernzugriff eine Verbindung mit ihm herstellen.
+Ein Headless-Server beispielsweise befindet sich wahrscheinlich in einem Rack irgendwo in einem Server-Raum und hat keinen angeschlossenen Monitor. Um darauf zuzugreifen, müssen Sie sich per Fernzugriff damit verbinden. In diesem Fall ist der Monitor der Kopf, da er das Rendering der Ausgabe des Servers übernimmt. Als Verbraucher des Services stellen Sie Ihren eigenen Kopf (den Monitor) bereit, wenn Sie per Fernzugriff eine Verbindung mit ihm herstellen.
 
 Wenn wir über ein Headless-CMS sprechen, verwaltet das CMS die Inhalte und stellt sie in der Folge für die Verbraucher bereit. Indem ein Headless-CMS jedoch nur die **Inhalte** standardisiert bereitstellt, lässt es das endgültige Ausgabe-Rendering aus, sodass die **Präsentation** des Inhalts dem verbrauchenden Service überlassen bleibt.
 
 ![Headless-CMS](assets/headless-cms.png)
 
-Die verbrauchenden Dienste, seien es AR-Erlebnisse, ein Webshop, mobile Erlebnisse, progressive Web-Apps (PWA) usw., übernehmen Inhalte aus dem Headless-CMS und bieten ihr eigenes Rendering. Sie sorgen für die Bereitstellung eigener Köpfe für Ihre Inhalte.
+Die verbrauchenden Dienste – seien es AR-Erlebnisse, ein Webshop, mobile Erlebnisse oder Progressive Web Apps (PWAs) usw. – nehmen Inhalte aus dem Headless-CMS auf und stellen ihr eigenes Rendering bereit. Sie sorgen für die Bereitstellung eigener Köpfe für Ihre Inhalte.
 
 Das Auslassen des Kopfes vereinfacht das CMS, indem es die Komplexität beseitigt. Dadurch wird auch die Verantwortung für das Rendering der Inhalte auf die Services verlagert, die den Inhalt tatsächlich benötigen und oft besser für dieses Rendering geeignet sind.
 
 ## Entkopplung {#decoupling}
 
-Eine Headless-Bereitstellung ist möglich, indem eine Reihe robuster und flexibler Anwendungsprogrammierschnittstellen (APIs) verfügbar gemacht werden, in denen all Ihre Erlebnisse ausgewählt werden können. Die API dient als gemeinsame Sprache für die Services, bindet sie auf Inhaltsebene durch standardisierte Inhaltsbereitstellung zusammen, ermöglicht ihnen jedoch die Flexibilität, eigene Lösungen zu implementieren.
+Die Headless-Bereitstellung wird möglich, indem eine Reihe robuster und flexibler Anwendungs-Programmierschnittstellen (Application Programming Interfaces, APIs) zur Verfügung gestellt wird, auf die alle Ihre Erlebnisse zugreifen können. Die API dient als gemeinsame Sprache für die Services, bindet sie auf Inhaltsebene durch standardisierte Inhaltsbereitstellung zusammen, ermöglicht ihnen jedoch die Flexibilität, eigene Lösungen zu implementieren.
 
 Headless ist ein Beispiel für die Entkopplung Ihrer Inhalte von ihrer Präsentation. Oder in einem allgemeineren Sinne, die Entkopplung des Frontend vom Backend Ihres Service-Stacks. Bei einem Headless-Setup wird das Präsentationssystem (der Kopf) vom Content-Management (dem Schwanz) entkoppelt. Die beiden interagieren nur über API-Aufrufe.
 
@@ -96,7 +96,7 @@ Headless eröffnet Ihnen eine Welt der Flexibilität für die Bereitstellung dig
 
 Viele verschiedene Kanäle zu haben, kann bedeuten, dass diese jeweils ihre eigenen Präsentationssysteme haben. Obwohl sie alle dieselben Inhalte über dieselben APIs nutzen, kann das Erlebnis aufgrund der verschiedenen Präsentationen unterschiedlich sein. Die Konsistenz des Kundenerlebnisses muss sorgfältig sichergestellt werden.
 
-Durch die Implementierung sorgfältiger Designsysteme, die Freigabe von Musterbibliotheken und die Verwendung wiederverwendbarer Designkomponenten und etablierter, offener Client-seitiger Frameworks können konsistente Erlebnisse sichergestellt werden, dies muss jedoch geplant werden.
+Durch die Implementierung sorgfältiger Design-Systeme, die Freigabe von Musterbibliotheken und die Nutzung wiederverwendbarer Design-Komponenten sowie etablierter, offener Client-seitiger Frameworks können konsistente Erlebnisse sichergestellt werden. Dies muss jedoch geplant werden.
 
 ## Die Zukunft ist Headless und die Zukunft ist jetzt {#future}
 
