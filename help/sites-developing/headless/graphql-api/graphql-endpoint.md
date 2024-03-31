@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '510'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ So aktivieren Sie den entsprechenden Endpunkt:
    >
    >Die folgende Warnung wird im Dialogfeld angezeigt:
    >
-   >* *GraphQL-Endpunkte können Probleme mit der Datensicherheit und Leistung verursachen, wenn sie nicht sorgfältig verwaltet werden. Stellen Sie sicher, dass Sie nach dem Erstellen eines Endpunkts entsprechende Berechtigungen festlegen.*
+   >* *GraphQL-Endpunkte können Probleme mit der Datensicherheit und Leistung verursachen, wenn sie nicht sorgfältig verwaltet werden. Bitte stellen Sie sicher, dass Sie nach dem Erstellen eines Endpunkts die entsprechenden Berechtigungen festlegen.*
 
 1. Bestätigen Sie mit **Erstellen**.
 1. Das Dialogfeld **Nächste Schritte** stellt einen direkten Link zur Sicherheitskonsole bereit, sodass Sie sicherstellen können, dass der neu erstellte Endpunkt über geeignete Berechtigungen verfügt.
@@ -91,4 +91,4 @@ Wählen Sie den neuen Endpunkt und **Veröffentlichen** aus, um ihn in allen Umg
 >
 >Dies kann – insbesondere bei Veröffentlichungsinstanzen – Sicherheitsbedenken aufwerfen, da GraphQL-Abfragen eine hohe Server-Belastung verursachen können.
 >
->Richten Sie ACLs entsprechend Ihrem Anwendungsfall am -Endpunkt ein.
+>Sie müssen am Endpunkt geeignete ACLs für Ihren Anwendungsfall einrichten.

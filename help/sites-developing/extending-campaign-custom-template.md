@@ -1,6 +1,6 @@
 ---
 title: Erstellen benutzerdefinierter AEM-Seitenvorlagen mit Adobe Campaign-Formularkomponenten
-description: Erstellen Sie eine benutzerdefinierte Seitenvorlage, die Adobe Campaign-Formularkomponenten verwendet
+description: Erstellen Sie eine benutzerdefinierte Seitenvorlage auf der Basis von Adobe Campaign-Formularkomponenten.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ Auf dieser Seite wird anhand der Implementierung der Geometrixx-Outdoors-Vorlage
 
 >[!NOTE]
 >
->[E-Mail- und Formularbeispiele sind nur in Geometrixx verfügbar](/help/sites-developing/we-retail.md). Laden Sie Beispielinhalt aus Package Share herunter.
+>[E-Mail- und Formularbeispiele sind nur in Geometrixx verfügbar](/help/sites-developing/we-retail.md). Laden Sie Geometrixx-Beispielinhalt aus Package Share herunter.
 
-Um eine benutzerdefinierte AEM-Seitenvorlage mit Adobe Campaign-Formularkomponenten zu erstellen, stellen Sie Folgendes sicher:
+Um eine benutzerdefinierte AEM-Seitenvorlage mit Adobe Campaign-Formularkomponenten zu erstellen, müssen Sie über Folgendes verfügen:
 
-1. **Korrektes resourceSuperType**
+1. **Die richtige resourceSuperType-Klasse**
 
    Stellen Sie sicher, dass die Seitenkomponente von `mcm/campaign/components/profile` erbt.
 
@@ -46,7 +46,7 @@ Um eine benutzerdefinierte AEM-Seitenvorlage mit Adobe Campaign-Formularkomponen
 
 1. **head.jsp (/apps/geometrixx-outdoors/components/page_campaign_profile/head.jsp)**
 
-   In **head.jsp**, sehen Sie die folgenden Zeilen, die die **clientcontext-config** und **cloudservice-hook**:
+   **head.jsp** enthält die folgenden Zeilen, die **clientcontext-config** und **cloudservice-hook** verwenden:
 
    ```
    <cq:include path="config" resourceType="cq/personalization/components/clientcontext_optimized/config"/>
@@ -62,9 +62,9 @@ Um eine benutzerdefinierte AEM-Seitenvorlage mit Adobe Campaign-Formularkomponen
    <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>
    ```
 
-1. **Kampagnenseiteneigenschaften**
+1. **Eigenschaften von Campaign-Seiten**
 
-   Um eine Adobe Campaign-Vorlage auswählen zu können, werden die Seiteneigenschaften mit der **Kampagne** tab:
+   Um eine Adobe Campaign-Vorlage auswählen zu können, müssen die Seiteneigenschaften um die Registerkarte **Campaign** erweitert werden:
 
    `/apps/geometrixx-outdoors/components/page_campaign_profile/dialog/items/tabs/items/campaign`
 

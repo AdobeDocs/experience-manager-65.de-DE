@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5868'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -425,7 +425,7 @@ Beispiele:
 * Wenn Sie alle Meldungen des Typs **FEHLER** erfassen möchten, ist keine Konfiguration erforderlich. Alle FEHLER-Meldungen werden standardmäßig erfasst.
 * Wenn alle Meldungen des Typs **FEHLER**, **WARNUNG** und **INFO** erfasst werden sollen, sollte der Logger-Name auf „**Stamm**“ und die Protokollierungsstufe auf **INFO** festgelegt werden.
 
-* Wenn Sie alle Nachrichten aus einem bestimmten Paket erfassen möchten (z. B. com.adobe.granite), sollte der Logger-Name auf &quot;com.adobe.granite&quot;gesetzt werden. Darüber hinaus sollte die Protokollierungsebene auf **DEBUG** festgelegt werden (dadurch werden alle Meldungen des Typs **FEHLER**, **WARNUNG**, **INFO** und **DEBUG** erfasst), wie in der Abbildung unten dargestellt.
+* Wenn Sie alle Meldungen aus einem bestimmten Paket erfassen möchten (z. B. com.adobe.granite), sollte der Logger-Name auf „com.adobe.granite“ festgelegt werden. Darüber hinaus sollte die Protokollierungsebene auf **DEBUG** festgelegt werden (dadurch werden alle Meldungen des Typs **FEHLER**, **WARNUNG**, **INFO** und **DEBUG** erfasst), wie in der Abbildung unten dargestellt.
 
 ![chlimage_1-121](assets/chlimage_1-121.png)
 

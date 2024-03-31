@@ -6,13 +6,13 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
 # Verwenden des Service „execute script“ in AEM Forms on JEE Workbench zum Erstellen von XML-Daten {#using-execute-script-service-forms-jee-workbench}
 
-Es gibt viele XML-Dateien, die mit AEM Forms on JEE Process Management-Workflows verwendet werden, z. B.: XML-Informationen können in einem Prozess erstellt und an eine Flex-Anwendung in AEM Forms on JEE Workspace gesendet werden, die für Systemeinstellungen verwendet wird oder Informationen an und von Formularen übergeben werden. Es gibt viele Fälle, in denen ein Entwickler für AEM Forms on JEE XML verwalten muss. Häufig muss dazu die XML über einen AEM Forms on JEE-Prozess verwaltet werden.
+Viele Prozess-Management-Workflows für AEM Forms auf JEE beinhalten XML. XML-Informationen können zum Beispiel in einem Prozess erstellt und an eine Flex-Anwendung im Arbeitsbereich von AEM Forms auf JEE gesendet oder für Systemeinstellungen verwendet werden. Mittels XML können zudem Informationen an und von Formularen übergeben werden. Es gibt viele Fälle, in denen ein Entwickler für AEM Forms on JEE XML verwalten muss. Häufig muss dazu die XML über einen AEM Forms on JEE-Prozess verwaltet werden.
 
 Bei einfachen XML-Einstellungen kann der Service `Set Value` verwendet werden. Es handelt sich dabei um einen Standard-Service von AEM Forms on JEE. Dieser Service legt den Wert eines oder mehrerer Datenelemente im Prozessdatenmodell fest. Für Szenarien mit einer einfachen bedingten „wenn, dann“-Logik kann dieser Service den Zweck erfüllen.
 
@@ -26,7 +26,7 @@ Zum Satz der Standard-Services von AEM Forms on JEE, die in der Workbench von AE
 
 Die allgemeine Erstellung von Anwendungen und Prozessen ist nicht Gegenstand dieses Tutorials, aber für diese Anleitung haben wir eine Anwendung namens „DemoApplication02“ erstellt. Wenn eine Anwendung bereits erstellt wurde, müssen Sie in dieser Anwendung einen Prozess erstellen, um den executeScript-Service aufzurufen. So fügen Sie dem Programm einen Prozess hinzu, der den Service `Execute Script` beinhaltet:
 
-1. Klicken Sie mit der rechten Maustaste auf Ihre Anwendung und wählen Sie **[!UICONTROL Neu]**. Wählen Sie im ausklappbaren Menü **[!UICONTROL Neu]** die Option **[!UICONTROL Prozess]**. Benennen Sie den Prozess, fügen Sie bei Bedarf eine Beschreibung hinzu und wählen Sie das Symbol aus, das diesen Prozess darstellen soll. Für dieses Tutorial haben wir einen Prozess erstellt und ihn `executeScriptDemoProcess` genannt.
+1. Klicken Sie mit der rechten Maustaste auf die Anwendung und wählen Sie **[!UICONTROL Neu]** aus. Wählen Sie im ausklappbaren Menü **[!UICONTROL Neu]** die Option **[!UICONTROL Prozess]**. Benennen Sie den Prozess, fügen Sie bei Bedarf eine Beschreibung hinzu und wählen Sie das Symbol aus, das diesen Prozess darstellen soll. Für dieses Tutorial haben wir einen Prozess erstellt und ihn `executeScriptDemoProcess` genannt.
 1. Definieren Sie die Startpunkte oder entscheiden Sie sich einfach, die Startpunkte später hinzuzufügen.
 1. Der Prozess wird jetzt erstellt und sollte automatisch im Fenster [!UICONTROL Prozess-Design] geöffnet werden. Klicken Sie hier oben im Fenster „Prozess-Design“ auf das Symbol für die Aktivitätsauswahl und ziehen Sie die neue Aktivität auf die Schwimmbahn. Zu diesem Zeitpunkt sollte das Fenster [!UICONTROL Aktivität definieren] angezeigt werden (siehe Abbildung unten).
    ![Aktivität definieren](assets/define-activity.jpg)
@@ -106,7 +106,7 @@ Das Ergebnis dieses einfachen Skripts ist ein neues XML-Dokument mit einem Varia
 
 **Verwenden einer iterativen Schleife zum Hinzufügen von Knoten zur XML-Datei**
 
-Knoten können auch innerhalb des Prozesses zu einer vorhandenen XML-Variablen hinzugefügt werden. Die Variable &quot;node&quot;enthält das erstellte XML-Objekt.
+Knoten können auch innerhalb des Prozesses zu einer vorhandenen XML-Variablen hinzugefügt werden. Die Variable, der Knoten, enthält das erstellte XML-Objekt.
 
 ```xml
 Document document = patExecContext.getProcessDataValue("/process_data/node");

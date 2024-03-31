@@ -1,6 +1,6 @@
 ---
 title: Integrieren der Benutzeroberfläche „Korrespondenz erstellen“ in Ihr benutzerdefiniertes Portal
-description: Erfahren Sie, wie Sie die Benutzeroberfläche "Korrespondenz erstellen"in Ihr benutzerdefiniertes Portal integrieren
+description: Erfahren Sie, wie Sie die Benutzeroberfläche „Korrespondenz erstellen“ in Ihr benutzerdefiniertes Portal integrieren.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 37%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 37%
 
 ## Übersicht {#overview}
 
-In diesem Artikel wird beschrieben, wie Sie die Lösung &quot;Korrespondenz erstellen&quot;in Ihre Umgebung integrieren können.
+In diesem Artikel wird erläutert, wie Sie die Lösung „Korrespondenz erstellen“ in Ihre Umgebung integrieren können.
 
 ## URL-basierter Aufruf {#url-based-invocation}
 
-Eine Möglichkeit, die Anwendung &quot;Korrespondenz erstellen&quot;über ein benutzerdefiniertes Portal aufzurufen, besteht darin, die URL mit den folgenden Anforderungsparametern vorzubereiten:
+Eine Möglichkeit, die Anwendung „Korrespondenz erstellen“ von einem Cluster-Portal aufzurufen, besteht darin, die URL mit folgenden Anfrageparametern vorzubereiten:
 
 * die Kennung für die Briefvorlage (mithilfe des cmLetterId-Parameters).
 
@@ -34,26 +34,26 @@ Beispielsweise würde das benutzerdefinierte Portal die URL als\
 
 >[!NOTE]
 >
->Ein solcher Aufruf ist nicht sicher, da die erforderlichen Parameter als GET-Anfrage übergeben werden, indem der gleiche (deutlich sichtbare) Parameter in der URL offen gelegt wird.
+>Den Aufruf auf diese Weise durchzuführen, ist nicht sicher, da die erforderlichen Parameter als GET-Anfrage übergeben werden, indem dieselben (eindeutig sichtbaren) Parameter in der URL offengelegt werden.
 
 >[!NOTE]
 >
->Bevor Sie die Anwendung &quot;Korrespondenz erstellen&quot;aufrufen, speichern und laden Sie die Daten hoch, um die Benutzeroberfläche &quot;Korrespondenz erstellen&quot;unter der angegebenen dataURL aufzurufen. Dies kann entweder vom benutzerdefinierten Portal selbst oder über einen anderen Back-End-Prozess erfolgen.
+>Bevor Sie die Anwendung „Korrespondenz erstellen“ aufrufen, speichern und laden Sie die Daten, um die Benutzeroberfläche „Korrespondenz erstellen“ unter der angegebenen Daten-URL aufzurufen. Dies kann entweder vom benutzerdefinierten Portal aus oder über einen anderen Backend-Vorgang ausgeführt werden.
 
-## Inline-datenbasierter Aufruf {#inline-data-based-invocation}
+## Auf Daten basierter Inline-Aufruf {#inline-data-based-invocation}
 
-Eine weitere (und sicherere) Möglichkeit, die Anwendung „Korrespondenz erstellen“ aufzurufen, besteht darin, die URL https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html aufzurufen, während die Parameter und Daten zum Aufrufen der Anwendung „Korrespondenz erstellen“ als POST-Anforderung gesendet werden (wodurch sie vor dem Endbenutzer versteckt werden). Dies bedeutet auch, dass Sie jetzt die XML-Daten für die Anwendung &quot;Korrespondenz erstellen&quot;inline übergeben können (als Teil derselben Anforderung, unter Verwendung des cmData-Parameters), was im vorherigen Ansatz nicht möglich/ideal war.
+Eine weitere (und sicherere) Möglichkeit, die Anwendung „Korrespondenz erstellen“ aufzurufen, besteht darin, die URL https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html aufzurufen, während die Parameter und Daten zum Aufrufen der Anwendung „Korrespondenz erstellen“ als POST-Anforderung gesendet werden (wodurch sie vor dem Endbenutzer versteckt werden). Dies bedeutet auch, dass Sie jetzt die XML-Datei für die Anwendung „Korrespondenz erstellen“ inline (als Teil der gleichen Anfrage unter Verwendung des Parameters cmData) übergeben können, was bei der vorigen Herangehensweise nicht möglich/ideal war.
 
-### Parameter für die Angabe von Briefen {#parameters-for-specifying-letter}
+### Parameter für das Festlegen des Briefs {#parameters-for-specifying-letter}
 
 | **Name** | **Typ** | **Beschreibung** |
 |---|---|---|
 | cmLetterInstanceId | Zeichenfolge | Der Bezeichner für die Briefinstanz. |
 | cmLetterId | Zeichenfolge | Der Name der Briefvorlage. |
 
-Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen der Parameter an, die zum Laden des Briefs verwendet werden.
+Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen von Parametern an, die zum Laden des Briefs verwendet werden.
 
-### Parameter zum Angeben der XML-Datenquelle {#parameters-for-specifying-the-xml-data-source}
+### Parameter für die Angabe der XML-Datenquelle {#parameters-for-specifying-the-xml-data-source}
 
 <table>
  <tbody>
@@ -65,7 +65,7 @@ Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen der Param
   <tr>
    <td>cmDataUrl<br /> </td> 
    <td>URL</td> 
-   <td>XML-Daten aus einer Quelldatei mit Grundprotokollen wie cq, ftp, http oder file.<br /> </td> 
+   <td>XML-Daten aus einer Quelldatei, die Standardprotokolle wie CQ, FTP, HTTP oder FILE verwenden.<br /> </td> 
   </tr>
   <tr>
    <td>cmLetterInstanceId</td> 
@@ -75,12 +75,12 @@ Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen der Param
   <tr>
    <td>cmUseTestData</td> 
    <td>Boolesch</td> 
-   <td>Um die im Datenwörterbuch angehängten Testdaten wiederzuverwenden.</td> 
+   <td>Um die Testdaten wiederzuverwenden, die im Datenwörterbuch angehängt sind.</td> 
   </tr>
  </tbody>
 </table>
 
-Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen der Parameter an, die zum Laden der XML-Daten verwendet werden.
+Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen von Parametern an, die zum Laden der XML-Daten verwendet werden.
 
 ### Andere Parameter {#other-parameters}
 
@@ -94,12 +94,12 @@ Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen der Param
   <tr>
    <td>cmPreview<br /> </td> 
    <td>Boolesch</td> 
-   <td>True zum Öffnen des Briefs im Vorschaumodus<br /> </td> 
+   <td>„True“, um den Brief im Vorschaumodus zu öffnen.<br /> </td> 
   </tr>
   <tr>
    <td>Willkürlich</td> 
    <td>Zeitstempel</td> 
-   <td>Beheben von Problemen beim Zwischenspeichern im Browser.</td> 
+   <td>Um die Probleme mit dem Browser-Caching zu lösen.</td> 
   </tr>
  </tbody>
 </table>

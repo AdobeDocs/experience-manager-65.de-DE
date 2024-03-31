@@ -10,27 +10,27 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '115'
-ht-degree: 26%
+ht-degree: 100%
 
 ---
 
 # Protokolldateien {#log-files}
 
-Ereignisse wie Laufzeit- oder Startfehler werden in die Protokolldateien des Anwendungsservers aufgenommen. Wenn bei der Bereitstellung auf dem Anwendungsserver Probleme auftreten, können Sie die Protokolldateien verwenden, um das Problem zu beheben. Sie können die Protokolldateien mit einem beliebigen Texteditor öffnen.
+Ereignisse wie Laufzeit- oder Startfehler werden in die Protokolldateien des Anwendungs-Servers geschrieben. Wenn bei der Bereitstellung auf dem Anwendungs-Server Probleme auftreten, können Sie diese mithilfe der Protokolldateien ermitteln. Sie können die Protokolldateien in einem beliebigen Texteditor öffnen.
 
-(JBoss) Die folgenden Protokolldateien befinden sich im `[appserver root]/server/'server'/log` directory:
+(JBoss) Die folgenden Protokolldateien befinden sich im Verzeichnis `[appserver root]/server/'server'/log`:
 
 * boot.log
 * server.log.*[jjjj-mm-tt]*
 * server.log
 
-(WebLogic) Protokolldateien für Domänen befinden sich im Ordner `[appserverdomain]` -Ordner und die Protokolldateien des Servers befinden sich im `[appserverdomain]/servers/[appserver name]/logs` directory:
+(WebLogic) Protokolldateien für Domains befinden sich im Verzeichnis `[appserverdomain]` und Protokolldateien des Servers im Verzeichnis `[appserverdomain]/servers/[appserver name]/logs`:
 
 * `access.log`
 * `[appserver name].log`
 * `[appserver name].out.[incremental number]`
 
-(WebSphere) Die folgenden Protokolldateien befinden sich im `[appserver root]/profiles/default/logs/[appserver name]` directory:
+(WebSphere) Die folgenden Protokolldateien befinden sich im Verzeichnis `[appserver root]/profiles/default/logs/[appserver name]`:
 
 * SystemErr.log
 * SystemOut.log

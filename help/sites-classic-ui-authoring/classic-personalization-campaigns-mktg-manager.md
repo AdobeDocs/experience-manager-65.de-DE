@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1161'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -35,12 +35,12 @@ Aus MCM können Sie auf folgende Komponenten zugreifen:
 Dieses ist in vier Bereiche unterteilt:
 
    * [Listen](#lists)
-Dieser Bereich enthält die Listen, die Sie bereits erstellt haben, sowie die Anzahl der Leads in den jeweiligen Listen. In diesem Bereich können Sie eine Liste direkt erstellen oder Leads importieren, um eine Liste zu erstellen.
+Dieser Bereich enthält die Listen, die Sie bereits erstellt haben, sowie die Anzahl der Leads in den jeweiligen Listen. Aus diesem Bereich können Sie direkt eine Liste erstellen oder Leads importieren, um eine Liste zu erstellen.
 Wenn Sie eine bestimmte Liste auswählen, gelangen Sie in den Bereich [Listen](#lists), der Details zu Ihrer Liste enthält.
 
    * [Segmente](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation)
 Dieser Bereich enthält die Segmente, die Sie definiert haben. Mit Segmenten können Sie eine Gruppe von Besuchern charakterisieren, die bestimmte Eigenschaften teilen.
-Wenn Sie ein bestimmtes Segment auswählen, wird die Seite zur Segmentdefinition geöffnet.
+Wenn Sie ein bestimmtes Segment auswählen, wird die Segment-Definitionsseite geöffnet.
 
    * [Berichte](/help/sites-administering/reporting.md)
 In AEM stehen verschiedene Berichte zur Verfügung, mit denen Sie den Status Ihrer Instanz analysieren und überwachen können. In diesem MCM-Bereich werden die Berichte angezeigt.
@@ -51,11 +51,11 @@ In diesem Fenster werden Ihre Kampagnenerlebnisse wie [Newsletter](/help/sites-c
 
 * **[Leads](#leads)**
 Hier können Sie Ihre Leads verwalten. Sie können Leads erstellen oder importieren, bestimmte Details für einzelne Leads bearbeiten oder löschen, wenn sie nicht mehr benötigt werden. Außerdem können Sie Leads in verschiedene Gruppen, sogenannte Listen, einteilen. **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen.
-Es wird empfohlen [Adobe Campaign und Integration in AEM](/help/sites-administering/campaign.md).
+Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration in AEM](/help/sites-administering/campaign.md) zu nutzen.
 
 * **[Listen](#lists)**
 Hier können Sie Ihre (Lead-)Listen verwalten.**Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen.
-Es wird empfohlen [Adobe Campaign und Integration in AEM](/help/sites-administering/campaign.md).
+Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration in AEM](/help/sites-administering/campaign.md) zu nutzen.
 
 * **[Kampagnen](#campaigns)**
 Hier können Sie Ihre Marken, Kampagnen und Erlebnisse verwalten.
@@ -71,7 +71,7 @@ Das Dashboard enthält vier Bereiche, die Ihnen eine Übersicht über Ihre (Lead
 >[!NOTE]
 >
 >Adobe plant nicht, diese Funktion (Lead-Verwaltung) weiter auszubauen.
->Es wird empfohlen [Adobe Campaign und Integration in AEM](/help/sites-administering/campaign.md).
+>Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration in AEM](/help/sites-administering/campaign.md) zu nutzen.
 
 Im MCM von AEM können Sie Leads organisieren und hinzufügen, indem Sie sie manuell eingeben oder indem Sie eine kommagetrennte Liste importieren, z. B. eine Mailing-Liste. Sie können Leads auch anhand von Newsletter- oder Community-Anmeldungen generieren. (Wenn dies konfiguriert wurde, kann nach einer Anmeldung ein Workflow ausgelöst werden, aus dem Leads hervorgehen.) Leads werden in der Regel kategorisiert und in eine Liste eingefügt, sodass Sie später Aktionen für die gesamte Liste durchführen können, beispielsweise Senden einer benutzerdefinierten E-Mail an eine bestimmte Liste.
 
@@ -88,7 +88,7 @@ Im linken Bereich unter **Leads** können Sie Ihre Leads erstellen, importieren,
 >[!NOTE]
 >
 >Adobe plant nicht, diese Funktion (Listenverwaltung) weiter auszubauen.
->Es wird empfohlen [Adobe Campaign und Integration in AEM](/help/sites-administering/campaign.md).
+>Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration in AEM](/help/sites-administering/campaign.md) zu nutzen.
 
 Mithilfe von Listen können Sie Ihre Leads in Gruppen organisieren. Mit Listen können Sie Marketing-Kampagnen gezielt für eine bestimmte Personengruppe erstellen, z. B. können Sie einen zielgruppengerechten Newsletter an eine Liste senden.
 
@@ -112,11 +112,11 @@ Klicken Sie in MCM auf **Kampagnen**, um auf die bestehenden Kampagnen zuzugreif
 
 * **Linker Bereich**:
 Hier finden Sie eine vollständige Aufzählung aller Marken und Kampagnen.
-Wenn Sie auf eine Marke klicken, wird die Liste um alle zugehörigen Kampagnen im linken Bereich erweitert. Diese Liste zeigt auch die Anzahl der Erlebnisse, die für jede Kampagne vorhanden sind. Außerdem wird die Markenübersicht im rechten Bereich geöffnet.
+Wenn Sie auf eine Marke klicken, wird die Liste erweitert, um alle zugehörigen Kampagnen im linken Bereich anzuzeigen. Diese Liste enthält auch die Anzahl der Erlebnisse, die für die einzelnen Kampagnen vorhanden sind. Im rechten Bereich wird außerdem die Markenübersicht geöffnet.
 
 * **Rechter Bereich**:
 Hier werden für jede Marke Symbole angezeigt (historische Kampagnen werden nicht aufgeführt).
-Sie können auf diese Elemente doppelklicken, um die Markenübersicht zu öffnen.
+Sie können darauf doppelklicken, um die Markenübersicht zu öffnen.
 
 #### Markenübersicht {#brand-overview}
 
@@ -164,7 +164,7 @@ Für die einzelnen Kampagnen stehen zwei Ansichten zur Verfügung:
 
    ![Listenansicht](do-not-localize/mcm_icon_listview.png)
 
-   Hier werden alle Erlebnisse (z. B. Teaser und Newsletter) für die ausgewählte Kampagne aufgelistet:
+   Hier werden alle Erlebnisse (z. B. Teaser und Newsletter) für die ausgewählte Kampagne aufgelistet:
 
    ![mcm_banner_listview](assets/mcm_banner_listview.png)
 
@@ -192,6 +192,6 @@ Von hier aus können Sie auch den Sidekick öffnen (klicken Sie auf den kleinen 
 
 ### Analysieren Ihrer Kampagnenerlebnisse {#analyzing-your-campaign-experiences}
 
-Klicken Sie im MCM auf **Kampagnen**. Vergewissern Sie sich, dass die Listenansicht aktiv ist, wählen Sie dann die gewünschte Kampagnenerfahrung und klicken Sie auf **Analysieren...**. Ein Diagramm der Seitenimpressionen im Zeitverlauf wird angezeigt.
+Klicken Sie im MCM auf **Kampagnen**. Vergewissern Sie sich, dass die Listenansicht aktiv ist, wählen Sie dann die gewünschte Kampagnenerfahrung und klicken Sie auf **Analysieren...**. Ein Diagramm mit den Seiten-Impressions im Zeitverlauf wird angezeigt.
 
 ![mcm_campaignanalyze](assets/mcm_campaignanalyze.png)

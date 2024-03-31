@@ -1,6 +1,6 @@
 ---
 title: Hinzufügen und Entfernen von Anmeldeinformationen mit Benutzernamen und Kennwort
-description: Erfahren Sie, wie Sie Benutzernamen- und Kennwortberechtigungen hinzufügen und entfernen.
+description: Hier finden Sie Informationen dazu, wie Sie Benutzernamen- und Kennwortberechtigungen hinzufügen und entfernen.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
@@ -10,15 +10,15 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '150'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
 # Hinzufügen und Entfernen von Anmeldeinformationen mit Benutzernamen und Kennwort {#adding-and-removing-user-name-and-password-credentials}
 
-Auf der Seite &quot;Trust Store-Verwaltung&quot;können Sie vom Forms-Dienst verwendete Benutzername- und Kennwortberechtigungen hinzufügen und entfernen, wenn er eine Anforderung mit SOAP-Sicherheitsstufe erhält.
+Auf der Seite „Trust Store-Verwaltung“ können Sie Benutzer- und Kennwortberechtigungen hinzufügen bzw. entfernen, die der Forms-Dienst verwendet, wenn er eine Anforderung mit SOAP-Sicherheitsstufe empfängt.
 
-## Benutzernamen- und Kennwortberechtigungen hinzufügen {#add-a-user-name-and-password-credential}
+## Hinzufügen von Benutzernamen- und Kennwortberechtigungen {#add-a-user-name-and-password-credential}
 
 1. Klicken Sie in Administration-Console auf **[!UICONTROL „Einstellungen“> „Trust Store-Verwaltung“ > „Benutzer- und Kennwortberechtigungen“]** und anschließend auf **[!UICONTROL „Hinzufügen“]**.
 1. Geben Sie in das Feld **[!UICONTROL „Profilname“]** einen Namen für die Berechtigung ein.

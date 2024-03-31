@@ -1,6 +1,6 @@
 ---
 title: Verwenden der Scribble-Signatur in HTML5-Formularen
-description: HTML5-Formulare werden zunehmend auf Touch-Geräten verwendet. Eine gängige Voraussetzung ist die Unterstützung von Signaturen. Die Unterschrift von Dokumenten auf Mobilgeräten wird zu einer anerkannten Methode zur Unterzeichnung von Formularen auf Mobilgeräten.
+description: HTML5-Formulare werden zunehmend auf Touch-Geräten verwendet. Eine allgemeine Voraussetzung ist dabei die Unterstützung von Signaturen. Das Unterzeichnen von Dokumenten auf Mobilgeräten ist eine immer mehr gängige Form der Unterzeichnung von Formularen.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,15 +12,15 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '655'
-ht-degree: 25%
+ht-degree: 100%
 
 ---
 
 # Verwenden der Scribble-Signatur in HTML5-Formularen{#using-scribble-signature-in-html-forms}
 
-HTML5-Formulare werden zunehmend auf Touch-Geräten verwendet. Eine gängige Voraussetzung ist die Unterstützung von Signaturen. Die Skripterstellung (Schreiben mit einem Stift oder Finger) wird zu einer gängigen Methode, Formulare auf Mobilgeräten zu signieren. HTML5 Forms und Designer bieten jetzt auf dem Formular ein Feld für die Scribble-Signatur. Wenn das Formular im Browser wiedergegeben wird, kann man diese Felder mit einem Stil, einer Maus oder einem Touch kennzeichnen.
+HTML5-Formulare werden zunehmend auf Touch-Geräten verwendet. Eine allgemeine Voraussetzung ist dabei die Unterstützung von Signaturen. Die Scribble-Signatur (Schreiben mit dem Eingabestift oder mit dem Finger) ist eine immer mehr gängige Form der Unterzeichnung von Formularen auf Mobilgeräten. HTML5 Forms und Designer bieten jetzt auf dem Formular ein Feld für die Scribble-Signatur. Wenn das Formular im Browser angezeigt wird, können Benutzende mit einem Eingabestift, einer Maus oder einem Finger in diesem Feld unterzeichnen.
 
-## Entwerfen eines Formulars mithilfe des Scribble-Signatur-Felds {#how-to-design-a-form-using-scribble-signature-field}
+## Entwerfen eines Formulars mit einem Feld für Scribble-Signaturen {#how-to-design-a-form-using-scribble-signature-field}
 
 1. Öffnen Sie ein Formular in Forms Designer.
 1. Ziehen das Scribble-Signatur-Feld auf die Seite.
@@ -29,13 +29,13 @@ HTML5-Formulare werden zunehmend auf Touch-Geräten verwendet. Eine gängige Vor
 
    >[!NOTE]
    >
-   >Die Abmessungen des in Forms Designer ausgewählten Feldes werden beim Rendern des Feldes berücksichtigt. Die Dimension des wiedergegebenen Signaturfelds wird jedoch auf der Grundlage des Seitenverhältnisses des Felds und nicht anhand der in Forms Designer festgelegten Dimension berechnet.
+   >Die Abmessungen des in Forms Designer ausgewählten Feldes werden beim Rendern des Feldes berücksichtigt. Allerdings wird die Größe des angezeigten Unterschriftenfelds basierend auf dem Seitenverhältnis des Felds und nicht anhand der in Forms Designer festgelegten Größe berechnet.
 
-1. Konfigurieren Sie das Scribble-Signatur-Feld.
+1. Konfigurieren Sie das Freihand-Signatur-Feld.
 
-   Das Scribble-Signatur -Feld kennzeichnet beim Signieren auf iPad standardmäßig Geolocation-Informationen als obligatorisch (und ist für andere Geräte optional). Dieses Standardverhalten kann außer Kraft gesetzt werden, indem der Wert der Eigenschaft `geoLocMandatoryOnIpad` geändert wird. Diese Eigenschaft wird als Extras im Scribble-Signatur-Feld bereitgestellt. Gehen Sie zur Änderung wie folgt vor:
+   Beim Unterschreiben auf einem iPad werden vom Freihand-Signatur-Feld standardmäßig die geografischen Informationen als Pflichtangabe markiert. (Diese Angabe ist auf anderen Geräten optional.) Dieses Standardverhalten kann außer Kraft gesetzt werden, indem der Wert der Eigenschaft `geoLocMandatoryOnIpad` geändert wird. Diese Eigenschaft wird im Freihand-Signatur-Feld als Extra-Option geboten. So nehmen Sie eine Änderung vor:
 
-   1. Wählen Sie im Formular das Scribble-Signatur -Feld aus.
+   1. Wählen Sie im Formular das Freihand-Signatur-Feld aus.
    1. Wählen Sie die Registerkarte **XML-Quelle.**
 
       >[!NOTE]
@@ -50,16 +50,16 @@ HTML5-Formulare werden zunehmend auf Touch-Geräten verwendet. Eine gängige Vor
       </extras>
       ```
 
-   1. Wählen Sie die **Designansicht** Registerkarte. Klicken Sie im Bestätigungsfeld auf **Ja**.
+   1. Wählen Sie die Registerkarte **Design-Ansicht** aus. Klicken Sie im Bestätigungsfenster auf **Ja**.
    1. Speichern Sie das Formular.
 
-1. Wiedergabe des Formulars in einem unterstützten Geräte-/Desktop-Browser.
+1. Rendern Sie das Formular in einem unterstützten Geräte-/Desktop-Browser.
 
-## Benutzeroberfläche für Scribble-Signaturen {#interfacing-with-the-scribble-signatures}
+## Benutzeroberfläche für Freihand-Signaturen {#interfacing-with-the-scribble-signatures}
 
-### Signing {#signing}
+### Unterzeichnen {#signing}
 
-Nachdem dem Formular ein Scribble-Signatur-Feld hinzugefügt und wiedergegeben wurde, wird durch Klicken oder Tippen auf das Feld ein Dialogfeld geöffnet. Der Benutzer kann mithilfe einer Maus, eines Fingers oder eines Stylus eine Signatur in dem gepunkteten Bereich, der durch ein gepunktetes Rechteck gekennzeichnet ist, kritzeln.
+Nachdem ein Freihand-Signatur-Feld dem Formular hinzugefügt wurde und gerendert wird, wird beim Klicken oder Tippen auf das Feld ein Dialogfeld geöffnet. Benutzende können mit einer Maus, mit dem Finger oder einem Eingabestift in einem gepunkteten Rechteckrahmen unterschreiben.
 
 ![geolocation](assets/geolocation.png)
 
@@ -67,38 +67,38 @@ Nachdem dem Formular ein Scribble-Signatur-Feld hinzugefügt und wiedergegeben w
 
 ### Geotagging {#geo-tagging}
 
-Wenn Sie beim Erstellen des Scribble auf das Geolocation-Symbol klicken, werden geografische Informationen und die Uhrzeit in das Feld eingebettet.
+Wenn Sie beim Erstellen der Freihand-Signatur auf das Geolocation-Symbol klicken, werden geografische Informationen und Zeitangaben in das Feld eingebettet.
 
 >[!NOTE]
 >
-In iPad ist standardmäßig das Einbetten von Geolocation-Informationen obligatorisch.
+Das Einbetten der geografischen Informationen ist auf einem iPad obligatorisch.
 
-In der iPad wird das Geolocation-Symbol nicht standardmäßig angezeigt und die Geolocation-Informationen werden automatisch eingebettet, wenn Sie auf **OK**.
+Auf einem iPad wird das Geolocation-Symbol standardmäßig nicht angezeigt. Die geografischen Informationen werden automatisch eingebettet, wenn Sie auf **OK** klicken.
 
 Diese Einstellung kann auf iPads geändert werden, indem in den init-Parametern des Feldes der Wert des Parameters `geoLocManadatoryOnIpad` auf `0` gesetzt wird.
 
-* Wenn Geolocation-Informationen erforderlich sind, wird dem Benutzer ein reduzierter Zeichenbereich angezeigt. Geolocation-Text wird hinzugefügt, wenn der Benutzer auf **OK** auf dem anderen Bereich angezeigt.
-* In anderen Fällen wird dem Benutzer ein vollständiger Bereich angezeigt, in dem er zu verwenden ist. Wenn der Benutzer Geolocation-Informationen einbetten möchte, wird die Größe dieses Bereichs so geändert, dass der Geolocation-Text berücksichtigt wird.
+* Wenn die Angabe geografischer Informationen obligatorisch ist, wird den Benutzenden ein kleinerer Bereich zum Zeichnen angezeigt. Der Text mit den geografischen Informationen wird außerhalb dieses Bereichs hinzugefügt, wenn die Benutzenden auf das Symbol **OK** klicken.
+* In anderen Fällen wird ihnen der komplette Bereich, in dem gezeichnet werden kann, angezeigt. Wenn die Person sich dazu entscheidet, geografische Informationen hinzuzufügen, wird die Größe des Bereichs angepasst, um den entsprechenden Text einfügen zu können.
 
-### Signatur löschen {#clearing-a-signature}
+### Löschen einer Signatur {#clearing-a-signature}
 
-Bei dieser Funktion kann ein Benutzer auf das Symbol **Radiergummi** klicken, um den Inhalt des Felds zu löschen und von vorne zu beginnen. Wenn Geolocation-Informationen hinzugefügt wurden, werden sie ebenfalls gelöscht.
+Bei dieser Funktion kann ein Benutzer auf das Symbol **Radiergummi** klicken, um den Inhalt des Felds zu löschen und von vorne zu beginnen. Wenn zuvor geografische Informationen hinzugefügt wurden, werden diese ebenfalls gelöscht.
 
 ### Speichern einer Signatur {#saving-a-signature}
 
-Klicken Sie auf **OK** speichert das Scribble als Bild im Feld. Das Bild und die Werte können zur weiteren Verarbeitung an den Server gesendet werden. Nachdem ein Benutzer geklickt hat **OK**, ist das Scribble-Feld gesperrt. Die Signatur kann nicht mit dem Scribble-Widget erneut bearbeitet werden.
+Durch Klicken auf das Symbol **OK** wird die Freihand-Signatur als Bild im Feld gespeichert. Das Bild und die Werte können zur weiteren Bearbeitung an den Server gesendet werden. Sobald die Person auf **OK** geklickt hat, wird das Freihand-Signatur-Feld gesperrt. Die Unterschrift kann nicht mehr mithilfe des Freihand-Widgets bearbeitet werden.
 
-Durch Tippen oder Klicken auf das Scribble-Feld wird das Dialogfeld im schreibgeschützten Modus geöffnet.
+Durch Tippen oder Klicken auf das Freihand-Feld wird das Dialogfeld im schreibgeschützten Modus geöffnet.
 
 ![3](assets/3.png)
 
 ### Auswählen der Schriftgröße {#selecting-pen-size}
 
-Klicken Sie auf das Symbol **Pinsel**, um eine Liste der verfügbaren Stiftgrößen anzuzeigen. Klicken Sie auf die Pen-Größe, um den entsprechenden Pen zu verwenden.
+Klicken Sie auf das Symbol **Pinsel**, um eine Liste der verfügbaren Stiftgrößen anzuzeigen. Klicken Sie auf eine Stiftgröße, um den entsprechenden Stift zu verwenden.
 
 ### Löschen von Signaturen aus dem Formular {#delete-signatures-from-the-form}
 
 So löschen Sie die Signaturen aus dem Formular:
 
 * (Mobilgeräte) Drücken Sie lange auf das Signaturfeld und wählen Sie im Bestätigungsdialogfeld die Option **Ja**.
-* (Desktop) Bewegen Sie den Mauszeiger über das Signaturfeld und klicken Sie auf das **Abbrechen** und im Bestätigungsdialogfeld auf **Ja**.
+* (Desktop) Bewegen Sie den Mauszeiger über das Signaturfeld und klicken Sie auf das Symbol **Abbrechen** und dann im Bestätigungsdialogfeld auf **Ja**.

@@ -1,6 +1,6 @@
 ---
 title: ClientContext
-description: Erfahren Sie, wie Sie mit ClientContext Informationen zur aktuellen Seite und zum Besucher in Adobe Experience Manager anzeigen können.
+description: Erfahren Sie, wie Sie mit ClientContext Informationen zur aktuellen Seite und den aktuellen Besucherinnen bzw. Besuchern in Adobe Experience Manager anzeigen können.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1961'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ In der Veröffentlichungs- und Autorenumgebung werden Informationen zu Folgendem
 ![ClientContext-Fenster mit den Symbolen zum Bearbeiten, Laden und Zurücksetzen](do-not-localize/clientcontext_icons.png)
 
 * **Bearbeiten**
-Eine neue Seite wird geöffnet, auf der Sie [Bearbeiten, Hinzufügen oder Entfernen einer Profileigenschaft](#editingprofiledetails).
+Eine neue Seite wird geöffnet. Dort können Sie [Profileigenschaften bearbeiten, hinzufügen oder entfernen](#editingprofiledetails).
 
 * **Laden**
 Sie können [aus einer Liste von Profilen auswählen und das Profil laden](#loading-a-new-user-profile), das getestet werden soll.
@@ -61,13 +61,13 @@ ClientContext kann die folgenden Eigenschaften anzeigen ([abhängig von der mit 
 * die **X**-Position der Maus
 * die **Y**-Position der Maus
 
-**Aktivitäts-Stream** Hier erhalten Sie Informationen zur sozialen Aktivität des Benutzers auf verschiedenen Plattformen, z. B. den AEM, Blogs, Bewertungen usw.
+**Aktivitäts-Stream**: Liefert Informationen zu sozialen Aktivitäten der Person auf verschiedenen Plattformen, z. B. AEM-Foren, Blogs und Bewertungen.
 
 **Kampagne**: Ermöglicht es Autoren, ein bestimmtes Erlebnis für eine Kampagne zu simulieren. Diese Komponente setzt die normale Kampagnenauflösung und Erlebnisauswahl außer Kraft, um verschiedene Permutationen testen zu können.
 
 Die Kampagnenauflösung basiert normalerweise auf der Prioritätseigenschaft der Kampagne. Das Erlebnis wird im Regelfall auf Grundlage der Segmentierung ausgewählt.
 
-**Warenkorb** Zeigt Informationen zum Warenkorb an, einschließlich Produkteinträgen (Titel, Menge, PreisFormatiert usw.), aufgelösten Promotions (Titel, Nachricht usw.) und Gutscheinen (Code, Beschreibung usw.).
+**Warenkorb**: Zeigt Informationen zum Warenkorb an, darunter Produkteinträge (Titel, Menge, Preisformatierung usw.), aufgelöste Promotions (Titel, Nachricht usw.) und Gutscheine (Code, Beschreibung usw.).
 
 Der Warenkorbsitzungs-Store benachrichtigt mittels ClientContextCartServlet zudem den Server über aufgelöste Promotion-Änderungen (basierend auf Segmentierungsänderungen).
 
@@ -89,7 +89,7 @@ Bei Anzeige in ContextCloud nutzt die Komponente eine Google-API, um eine Karte 
 
 **JSONP-Store**: Eine Komponente, die Inhalt anzeigt, der abhängig von Ihrer Installation ist.
 
-Der JSON-Standard ist eine JSON-Ergänzung, mit der dieselbe ursprüngliche Richtlinie umgangen werden kann (sodass eine Web-Anwendung mit Servern in einer anderen Domain kommunizieren kann). Er besteht darin, das JSON-Objekt in einen Funktionsaufruf zu verpacken, damit es als `<script>` von der anderen Domäne aus (was eine zulässige Ausnahme von derselben Ursprungsrichtlinie ist).
+Der JSON-Standard ist eine JSON-Ergänzung, mit der dieselbe ursprüngliche Richtlinie umgangen werden kann (sodass eine Web-Anwendung mit Servern in einer anderen Domain kommunizieren kann). Dabei wird das JSON-Objekt in einem Funktionsaufruf verpackt, sodass dieses als `<script>` aus der anderen Domain geladen werden kann (wobei es sich um eine erlaubte Ausnahme von derselben ursprünglichen Richtlinie handelt).
 
 Der JSONP-Store ist zwar wie jeder andere Store, er lädt allerdings Informationen aus einer anderen Domain, ohne dass für diese Informationen ein Proxy in der aktuellen Domain benötigt wird. Siehe hierzu das Beispiel unter [Speichern von Daten in ClientContext über JSON](/help/sites-administering/client-context.md#storing-data-in-client-context-via-jsonp).
 
@@ -97,7 +97,7 @@ Der JSONP-Store ist zwar wie jeder andere Store, er lädt allerdings Information
 >
 >Der JSONP-Store speichert die Informationen nicht im Cookie zwischen, ruft aber die Daten bei jedem Seitenladevorgang ab.
 
-**Profildaten**: Zeigt im Benutzerprofil erfasste Informationen an, Zum Beispiel Geschlecht, Alter, E-Mail-Adresse usw.
+**Profildaten**: Zeigt im Benutzerprofil erfasste Informationen an, z. B. Geschlecht, Alter, E-Mail-Adresse usw.
 
 **Aufgelöste Segmente**: Gibt an, welche Segmente aktuell aufgelöst werden (häufig von anderen in ClientContext angezeigten Informationen abhängig). Dies ist beim Konfigurieren von Kampagnen von Interesse.
 
@@ -151,7 +151,7 @@ Wenn Sie fertig sind, können Sie das [Profil zurücksetzen](#resetting-the-prof
 
    ![Das ClientContext-Symbol „Profil laden“](do-not-localize/clientcontext_loadprofile.png)
 
-1. Dadurch wird das Dialogfeld geöffnet. Hier können Sie das zu ladende Profil auswählen:
+1. Daraufhin wird das zugehörige Dialogfeld geöffnet. Hier können Sie das zu ladende Profil auswählen:
 
    ![Das Dialogfeld „Profil-Lader“ mit der Dropdown-Liste zur Profilauswahl](assets/clientcontext_profileloader.png)
 
@@ -161,7 +161,7 @@ Wenn Sie fertig sind, können Sie das [Profil zurücksetzen](#resetting-the-prof
 
 Sie können ein Profil auch mit dem Auswahlregler auswählen:
 
-1. Doppelklicken Sie auf das Symbol für den aktuellen Benutzer. Der Selektor wird geöffnet. Navigieren Sie mit den Pfeilen und sehen Sie sich die verfügbaren Profile an:
+1. Doppelklicken Sie auf das Symbol für die aktuelle Person. Daraufhin wird die Auswahl geöffnet. Navigieren Sie mit den Pfeilen und sehen Sie sich die verfügbaren Profile an:
 
    ![Die Benutzerauswahl](assets/clientcontext_profileselector.png)
 
@@ -175,7 +175,7 @@ Sie können ein Profil auch mit dem Auswahlregler auswählen:
 
 ### Ändern der Browser-Plattform {#changing-the-browser-platform}
 
-1. Doppelklicken Sie auf das Symbol, das die Browser-Plattform darstellt. Der Selektor wird geöffnet. Navigieren Sie mit den Pfeilen zu den verfügbaren Plattformen/Browsern und sehen Sie sie an:
+1. Doppelklicken Sie auf das Symbol für die Browser-Plattform. Daraufhin wird die Auswahl geöffnet. Navigieren Sie mit den Pfeilen und sehen Sie sich die verfügbaren Plattformen/Browser an:
 
    ![Browser-Plattformauswahl](assets/clientcontext_browserplatform.png)
 
@@ -183,7 +183,7 @@ Sie können ein Profil auch mit dem Auswahlregler auswählen:
 
 ### Ändern der Geolocation {#changing-the-geolocation}
 
-1. Doppelklicken Sie auf das Geolocation-Symbol. Eine erweiterte Zuordnung wird geöffnet. Hier können Sie die Markierung an eine neue Position ziehen:
+1. Doppelklicken Sie auf das Geolocation-Symbol. Daraufhin wird eine erweiterte Karte geöffnet. Hier können Sie die Markierung an einen neuen Standort ziehen:
 
    ![Standortdetails](assets/clientcontext_geomocationrelocate.png)
 
@@ -191,7 +191,7 @@ Sie können ein Profil auch mit dem Auswahlregler auswählen:
 
 ### Ändern der Tag-Auswahl {#changing-the-tag-selection}
 
-1. Doppelklicken Sie auf den Abschnitt Tag Cloud des ClientContext. Das Dialogfeld wird geöffnet. Hier können Sie Tags auswählen:
+1. Doppelklicken Sie auf den ClientContext-Abschnitt „Tag-Cloud“. Daraufhin wird das zugehörige Dialogfeld geöffnet. Hier können Sie Tags auswählen:
 
    ![Tag-Cloud-Dialogfeld](assets/clientcontext_tagselection.png)
 
@@ -209,7 +209,7 @@ Mittels ClientContext-Bearbeitung können die Werte bestimmter Eigenschaften fes
 
 ### Hinzufügen von Eigenschaftskomponenten {#adding-a-property-component}
 
-Nachdem Sie die **ClientContext-Designseite** können Sie auch **Hinzufügen** eine vollständig neue Eigenschaft mit den verfügbaren Komponenten (die Komponenten werden sowohl im Sidekick als auch aus dem **Neue Komponente einfügen** Dialogfeld, das nach einem Doppelklick auf die **Komponenten oder Assets hierher ziehen** -Feld):
+Nach dem Öffnen der **ClientContext-Design-Seite** können Sie auch eine vollkommen neue Eigenschaft mithilfe der verfügbaren Komponenten **hinzufügen**. (Diese Komponenten werden sowohl im Sidekick als auch im Dialogfeld **Neue Komponente einfügen** aufgeführt. Letzteres rufen Sie per Doppelklick im Feld **Komponenten oder Assets hierhin ziehen** auf.)
 
 ![Hinzufügen einer Eigenschaft zum ClientContext-Fenster](assets/clientcontext_alisonparker_new.png)
 
@@ -242,7 +242,7 @@ Fügen Sie die Komponente „JSONP-Store“ zu ClientContext hinzu und nutzen Si
 
    `https://api.wipmania.com/jsonp?callback=${callback}`
 
-   Die Komponente ruft den JSONP-Dienst auf und listet alle Eigenschaften auf, die die zurückgegebenen Daten enthalten. Die Eigenschaften in der Liste entsprechen den in ClientContext verfügbaren Eigenschaften.
+   Die Komponente ruft den JSONP-Dienst auf und führt alle Eigenschaften auf, die die zurückgegebenen Daten enthalten. Die Eigenschaften in der Liste entsprechen den in ClientContext verfügbaren Eigenschaften.
 
    ![Die Eigenschaften des JSONP-Dienstes](assets/chlimage_1-40.png)
 

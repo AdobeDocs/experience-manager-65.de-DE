@@ -1,6 +1,6 @@
 ---
 title: Anpassen der Aufgabendetailseite
-description: Gehen Sie wie folgt vor, um die Aufgabendetailseite in AEM Forms Workspace anzupassen, um die Standardinformationen zu einer Aufgabe zu ändern.
+description: Erfahren Sie, wie Sie die Aufgabendetailseite in AEM Forms Workspace anpassen, um die Standardinformationen zu einer Aufgabe zu ändern.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -9,27 +9,27 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '263'
-ht-degree: 30%
+ht-degree: 100%
 
 ---
 
 # Anpassen der Aufgabendetailseite {#customizing-the-task-details-page}
 
-Die Aufgabendetailseite enthält Informationen zu einer Aufgabe und ihren Prozessen. Sie können jedoch die Aufgabendetailseite anpassen, um Informationen hinzuzufügen oder zu löschen.
+Die Aufgabendetailseite enthält Informationen über eine Aufgabe und die zugehörigen Prozesse. Sie können jedoch die Aufgabendetailseite anpassen, um Informationen hinzuzufügen oder zu löschen.
 
-Sie können der Aufgabendetailseite die folgenden Informationen hinzufügen:
+Sie können die folgenden Informationen zur Aufgabendetailseite hinzufügen:
 
-* Im JSON-Objekt einer Aufgabe verfügbare Informationen (Abschnitt &quot;Aufgabe&quot;unter [AEM Forms Workspace JSON-Objektbeschreibung](/help/forms/using/html-workspace-json-object-description.md))
-* Informationen, die im JSON-Objekt einer Prozessinstanz verfügbar sind (Abschnitt &quot;Prozessinstanz&quot;unter [AEM Forms Workspace JSON-Objektbeschreibung](/help/forms/using/html-workspace-json-object-description.md))
+* Informationen, die im JSON-Objekt einer Aufgabe verfügbar sind (Abschnitt „Aufgabe“ unter [AEM Forms Workspace – JSON-Objektbeschreibung](/help/forms/using/html-workspace-json-object-description.md))
+* Informationen, die im JSON-Objekt einer Prozessinstanz verfügbar sind (Abschnitt „Prozessinstanz“ unter [AEM Forms Workspace – JSON-Objektbeschreibung](/help/forms/using/html-workspace-json-object-description.md))
 
 So passen Sie die Aufgabendetailseite an:
 
-1. Folgen [Generische Schritte zur Anpassung von AEM Forms Workspace.](/help/forms/using/generic-steps-html-workspace-customization.md)
-1. Um weitere Informationen anzuzeigen, fügen Sie der `translation.json` Datei unter `todo`block > `details`block > `app`block > [`required`block].
+1. Folgen Sie den Anweisungen unter [Generische Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md).
+1. Wenn Sie zusätzliche Informationen anzeigen möchten, fügen Sie der Datei `translation.json` entsprechende Schlüssel-Wert-Paare unter `todo`-Block > `details`-Block > `app`-Block > [`required`-Block] hinzu.
 
-   Die [`required`block] bezieht sich auf verfügbare Bausteine, wie z. B. den Aufgabenblock für Aufgabeninformationen, den Prozessblock für Prozessinformationen und den derzeit ausstehenden Aufgabenblock für Informationen zu ausstehenden Aufgaben.
+   Der [`required`-Block] verweist auf verfügbare Blöcke, wie den task-Block für Aufgabeninformationen, den process-Block für Prozessinformationen und den currentpendingtask-Block für Informationen zu ausstehenden Aufgaben.
 
-   Um beispielsweise Informationen zur Routenauswahl erforderlich auf der Aufgabendetailseite hinzuzufügen, können Sie das folgende Schlüssel-Wert-Paar zum Aufgabenblock hinzufügen:
+   Um beispielsweise Informationen über „Routenauswahl erforderlich“ auf der Aufgabendetailseite hinzuzufügen, können Sie das folgende Schlüssel-Wert-Paar im task-Block hinzufügen:
 
    ```json
    "todo" : {

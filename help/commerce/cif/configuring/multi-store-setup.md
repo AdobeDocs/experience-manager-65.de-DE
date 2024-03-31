@@ -1,6 +1,6 @@
 ---
 title: Multi-Store-Einrichtung in Commerce
-description: Erfahren Sie, wie Sie AEM mehrere Store-Ansichten von Adobe Commerce zuordnen. Dadurch können Projekte auch mehrmandantenfähige und mehrsprachige Anwendungsfälle unterstützen.
+description: Erfahren Sie, wie Sie AEM mehrere Store-Ansichten von Adobe Commerce zuordnen. Dadurch können Projekte auch mehrinstanzenfähige und mehrsprachige Anwendungsfälle unterstützen.
 sub-product: Commerce
 doc-type: technical-video
 activity: setup
@@ -11,7 +11,7 @@ solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Gehen Sie wie folgt vor, um eine AEM-Site und die AEM-CIF-Kernkomponenten zu ein
 4. Weisen Sie die untergeordnete Konfiguration zu einer AEM-Site zu.
 
    * Wechseln Sie zur AEM Sites-Konsole.
-   * Navigieren Sie zum Regions- oder zum Sprachstamm Ihrer Site-Struktur, z. B. /content/venia/us _oder_ /content/venia/us/en für die Venia-Beispielseite
+   * Navigieren Sie zum Regions- oder Sprachstamm Ihrer Site-Struktur, z. B. „/content/venia/us“ _oder_ „/content/venia/us/en“ für die Venia-Beispielseite.
    * Wählen Sie die Seiten aus und öffnen Sie die Seiteneigenschaften.
    * Wählen Sie die Registerkarte „Erweitert“ aus. 
    * Wählen Sie im Abschnitt `Configuration` die zuvor erstellte Konfiguration aus. 

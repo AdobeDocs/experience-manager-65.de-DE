@@ -1,6 +1,6 @@
 ---
 title: Zusammenstellen des Testplans
-description: Die einzelnen Testfälle werden in Ihrem Testplan zusammengefasst.
+description: Die einzelnen Testfälle werden in Ihrem Testplan zusammengeführt.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
@@ -11,36 +11,36 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 # Zusammenstellen des Testplans{#compiling-your-test-plan}
 
-Die einzelnen Testfälle werden dann in Ihren Testplan integriert, der auch Folgendes definiert:
+Die einzelnen Testfälle werden in Ihrem Testplan zusammengeführt. Dieser Plan legt auch Folgendes fest:
 
 **Prioritäten**
 
-Bestimmte Tests haben eine größere Bedeutung als andere. Daher ist es ratsam, ihre Priorität anzugeben.
+Bestimmte Tests sind von größerer Bedeutung als andere. Daher empfiehlt es sich, ihre Priorität festzulegen.
 
-Beispielsweise können bestimmte Tests eine Go/No-Go-Entscheidung beeinflussen und müssen daher bei jedem Zwischenversionstest bestätigt werden.
+Beispielsweise können bestimmte Tests dazu führen, dass eine Entscheidung für bzw. gegen etwas getroffen wird, und müssen daher bei jeder getesteten Zwischenversion bestätigt werden.
 
-**Iterationen**
+**Wiederholungen**
 
-Wenn in Ihrem Projekt eine Entwicklungs-Iteration verwendet wird (dabei werden mehrere Versionen zur Verfügung gestellt), benötigen oder möchten Sie möglicherweise eine Angabe der Ergebnisse für jede Iteration. Dies kann verwendet werden, um Folgendes anzugeben:
+Wenn bei Ihrem Projekt irgendeine Art der Entwicklungswiederholung genutzt wird (und mehrere Versionen zur Verfügung gestellt werden), benötigen oder wünschen Sie vielleicht eine Anzeige der Ergebnisse jeder Wiederholung. Dadurch lässt sich Folgendes erkennen:
 
-* welche Tests in welcher Iteration behandelt werden.
-* die Ergebnisse bei Tests, die in verschiedenen Iterationen wiederholt wurden.
-* dass in regelmäßigen Abständen Prioritätstests und Tests zu grundlegenden Funktionen wiederholt werden.
+* welche Tests mit welchen Wiederholungen durchgeführt werden
+* die Ergebnisse von Tests, die mehrfach wiederholt wurden
+* dass Prioritätstests und Tests von grundlegenden Funktionen regelmäßig wiederholt werden
 
 **Tester**
 
-Sie können zu einem bestimmten Zeitpunkt entweder das entsprechende Testteam oder eine bestimmte Testperson zuweisen (möglicherweise abhängig von Verfügbarkeit und/oder Erfahrung).
+Sie können das entsprechende Test-Team oder eine bestimmte Testperson zuweisen (möglicherweise abhängig von Verfügbarkeit und/oder Erfahrung).
 
 **Zusammenfassung oder Übersicht**
 
-Zu Berichtszwecken möchten Sie einen Überblick über die Testergebnisse bereitstellen:
+Für Reporting-Zwecke ist eine Übersicht über die Testergebnisse sinnvoll:
 
 * Prozentsatz der bereits durchgeführten Tests
-* Prozentsatz von Erfolg/Fehlschlagen
-* Spezifische Zahlen zu den Prioritätstests.
+* Prozentsatz der erfolgreichen/fehlgeschlagenen Tests
+* Spezifische Zahlen in Bezug auf die Prioritätstests

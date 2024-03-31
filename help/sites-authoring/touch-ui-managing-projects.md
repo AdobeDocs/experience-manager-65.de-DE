@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '965'
-ht-degree: 80%
+ht-degree: 98%
 
 ---
 
@@ -33,14 +33,14 @@ Um dies umzusetzen, erteilen Sie am besten der Gruppe **projects-users** Lesezug
 
 ## Erstellen eines Projekts {#creating-a-project}
 
-Führen Sie diese Schritte aus, um ein Projekt zu erstellen.
+Gehen Sie wie folgt vor, um ein Projekt zu erstellen.
 
-1. Im **Projekte** Console, klicken Sie auf **Erstellen** , um die **Projekt erstellen** Assistent.
+1. Klicken Sie in der **Projektekonsole** auf **Erstellen**, um den Assistenten zur **Projekterstellung** zu öffnen.
 1. Wählen Sie eine Vorlage aus und klicken Sie auf **Weiter**. Weitere Informationen zu den standardmäßigen Projektvorlagen finden Sie [hier](/help/sites-authoring/projects.md#project-templates).
 
    ![Assistent zur Projekterstellung](assets/create-project-wizard.png)
 
-1. Definieren Sie den **Titel** und die **Beschreibung** und fügen Sie eine **Miniaturansicht** hinzu, falls erforderlich. Hier können Sie auch Benutzer und deren Gruppenzugehörigkeit hinzufügen oder löschen.
+1. Definieren Sie den **Titel** und die **Beschreibung** und fügen Sie ggf. eine **Miniaturansicht** hinzu. Hier können Sie auch Benutzer und deren Gruppenzugehörigkeit hinzufügen oder löschen.
 
    ![Schritt „Eigenschaften“ des Assistenten](assets/create-project-wizard-properties.png)
 
@@ -50,12 +50,12 @@ Die Vorgehensweise zum Erstellen eines Projekts ist für alle Projektvorlagen id
 
 ### Zuordnen von Ressourcen zum Projekt {#associating-resources-with-your-project}
 
-Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit zu gruppieren, um sie insgesamt zu verwalten. Daher müssen Sie Ressourcen mit dem Projekt verknüpfen. Diese Ressourcen werden innerhalb des Projekts als **Kacheln** gruppiert. Die Ressourcentypen, die Sie mit einem Projekt verknüpfen können, werden unter [Projektkacheln](/help/sites-authoring/projects.md#project-tiles) beschrieben.
+„Projekte“ ermöglicht es Ihnen, Ressourcen zu einer Einheit zu gruppieren, um sie insgesamt zu verwalten. Daher müssen Sie Ressourcen mit dem Projekt verknüpfen. Diese Ressourcen werden innerhalb des Projekts als **Kacheln** gruppiert. Die Ressourcentypen, die Sie mit einem Projekt verknüpfen können, werden unter [Projektkacheln](/help/sites-authoring/projects.md#project-tiles) beschrieben.
 
 So ordnen Sie Ihrem Projekt Ressourcen zu:
 
 1. Öffnen Sie das Projekt in der **Projektekonsole**.
-1. Klicks **Kachel hinzufügen** und wählen Sie die Kachel aus, die Sie mit Ihrem Projekt verknüpfen möchten. Sie können mehrere Arten von Kacheln auswählen.
+1. Klicken Sie auf **Kachel hinzufügen** und wählen Sie die Kachel aus, die mit Ihrem Projekt verknüpft werden soll. Sie können mehrere Arten von Kacheln auswählen.
 
    ![Kachel hinzufügen](assets/project-add-tile.png)
 
@@ -69,15 +69,15 @@ So fügen Sie einer Kachel Elemente hinzu:
 
 1. Navigieren Sie in **Projekte** zum Projekt, klicken Sie oben rechts in der Kachel, der Sie ein Element hinzufügen möchten, auf das Pfeilsymbol nach unten und wählen Sie die entsprechende Option aus.
 
-   * Die Option hängt vom Typ der Kachel ab. Beispielsweise kann es sein, dass **Aufgabe erstellen** für die **Aufgaben** Baustein oder **Workflow starten** für die **Workflows** Kachel.
+   * Die Option hängt vom Typ der Kachel ab. Zum Beispiel kann dies **Aufgabe erstellen** für die Kachel **Aufgaben** oder **Workflow starten** für die Kachel **Workflows** sein.
 
    ![Kachel-Chevron](assets/project-tile-create-task.png)
 
-1. Fügen Sie das Element wie beim Erstellen einer Kachel zur Kachel hinzu. Projektkacheln werden [hier](/help/sites-authoring/projects.md#project-tiles) beschrieben.
+1. Fügen Sie der Kachel auf dieselbe Weise ein Element hinzu wie bei der Erstellung einer Kachel. Projektkacheln werden [hier](/help/sites-authoring/projects.md#project-tiles) beschrieben.
 
 ## Anzeigen von Projektinformationen {#viewing-project-info}
 
-Der Hauptzweck von Projekten besteht darin, verknüpfte Informationen an einem Ort zu gruppieren, um sie leichter zugänglich und umsetzbar zu machen. Sie haben mehrere Möglichkeiten, auf diese Informationen zuzugreifen.
+Der Hauptzweck von Projekten besteht darin, verknüpfte Informationen an einem Ort zu gruppieren, um sie leichter zugänglich und umsetzbar zu machen. Sie haben verschiedene Möglichkeiten, auf diese Informationen zuzugreifen.
 
 ### Öffnen einer Kachel {#opening-a-tile}
 
@@ -85,7 +85,7 @@ Manchmal kann es nötig sein zu wissen, welche Elemente in einer aktuellen Kache
 
 Dazu öffnen Sie die Kachel, sodass Sie ihre Elemente anzeigen und ändern können:
 
-1. Klicken Sie unten rechts in der Kachel auf das Symbol mit den Auslassungspunkten.
+1. Klicken Sie unten rechts auf der Kachel auf das Symbol mit den Auslassungspunkten.
 
    ![Aufgabenkachel](assets/project-tile-tasks.png)
 
@@ -97,7 +97,7 @@ Dazu öffnen Sie die Kachel, sodass Sie ihre Elemente anzeigen und ändern könn
 
 Die Projekt-Zeitleiste enthält Informationen dazu, wann Assets des Projekts zuletzt verwendet wurden. Gehen Sie wie folgt vor, um die Projekt-Zeitleiste anzuzeigen.
 
-1. Im **Projekte** Console, klicken Sie auf **Timeline** in der Schienenauswahl oben links in der Konsole.
+1. Klicken Sie in der **Projektekonsole** in der Leistenauswahl oben links auf **Timeline**.
    ![Auswahl des Zeitleisten-Modus](assets/projects-timeline-rail.png)
 2. Wählen Sie in der Konsole das Projekt aus, dessen Zeitleiste Sie anzeigen möchten.
    ![Projekt-Zeitleisten-Ansicht](assets/project-timeline-view.png)
@@ -120,7 +120,7 @@ Es stehen mehrere Optionen zur Verfügung, um Ihre Projekte zu organisieren und 
 
 In der **Projektekonsole** können Sie Ordner erstellen, um ähnliche Projekte zu gruppieren und zu organisieren.
 
-1. Im **Projekte** Console click **Erstellen** und dann **Ordner erstellen**.
+1. Klicken in der **Projektekonsole** auf **Erstellen** und anschließend auf **Ordner erstellen**.
 
    ![Ordner erstellen](assets/project-create-folder.png)
 
@@ -132,7 +132,7 @@ Sie können jetzt Projekte im Ordner erstellen. Sie können mehrere Ordner erste
 
 ### Inaktivieren von Projekten {#making-projects-inactive-or-active}
 
-Sie können ein Projekt nach Abschluss als inaktiv markieren, aber dennoch die Informationen zum Projekt beibehalten. [Inaktive Projekte werden jetzt](#viewing-active-inactive-projects) standardmäßig in der **Projektekonsole** angezeigt.
+Sie können ein Projekt als inaktiv markieren, wenn Sie es abgeschlossen haben, aber die Informationen über das Projekt beibehalten möchten. [Inaktive Projekte werden jetzt](#viewing-active-inactive-projects) standardmäßig in der **Projektekonsole** angezeigt.
 
 Gehen Sie wie folgt vor, um ein Projekt inaktiv zu machen.
 
@@ -142,21 +142,21 @@ Gehen Sie wie folgt vor, um ein Projekt inaktiv zu machen.
 
    ![Projektstatusauswahl im Fenster „Eigenschaften“](assets/project-status.png)
 
-1. Klicks **Speichern und schließen** , um Ihre Änderungen zu speichern.
+1. Klicken Sie auf **Speichern und schließen**, um die Änderungen zu speichern.
 
 ### Löschen von Projekten {#deleting-a-project}
 
 Gehen Sie wie folgt vor, um ein Projekt zu löschen.
 
-1. Navigieren Sie zur obersten Ebene der **Projekte** Konsole.
+1. Gehen Sie zur obersten Ebene der **Projektekonsole**.
 1. Wählen Sie Ihr Projekt in der Konsole aus.
-1. Klicks **Löschen** in der Symbolleiste.
+1. Klicken Sie in der Symbolleiste auf **Löschen**.
 1. AEM kann die zugehörigen Projektdaten beim Löschen des Projekts entfernen/ändern. Wählen Sie die gewünschten Optionen im Dialogfenster **Projekt löschen** aus.
    * Projektgruppen und -rollen entfernen
    * Projekt-Asset-Ordner löschen
    * Projekt-Workflows beenden
 
    ![Optionen zum Löschen von Projekten](assets/project-delete-options.png)
-1. Klicks **Löschen** , um das Projekt mit den ausgewählten Optionen zu löschen.
+1. Klicken Sie auf **Löschen**, um das Projekt mit den ausgewählten Optionen zu löschen.
 
 Weitere Einzelheiten zu automatisch von Projekten erstellten Gruppen finden Sie unter [Automatische Gruppenerstellung](/help/sites-authoring/projects.md#auto-group-creation).

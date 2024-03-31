@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2088'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 Dieses Dokument beschäftigt sich mit den folgenden Themen:
 
 * Gründe zum Erstellen benutzerdefinierter Asset-Editor-Seiten
-* Erstellen und Anpassen von Asset-Editor-Seiten, bei denen es sich um WCM-Seiten handelt, mit denen Sie Metadaten anzeigen und bearbeiten und Aktionen für das Asset durchführen können.
+* Erstellen und Anpassen von Asset-Editor-Seiten, bei denen es sich um WCM-Seiten handelt, mit denen Sie Metadaten anzeigen und bearbeiten sowie Aktionen für das Asset durchführen können.
 * Gleichzeitiges Bearbeiten mehrerer Assets
 
 <!-- TBD: Add UICONTROL tags. Need PM review. Flatten the structure a bit. Re-write to remove Geometrixx mentions and to adhere to 6.5 default samples. -->
@@ -424,7 +424,7 @@ So führen Sie eine Mehrfachbearbeitung von Assets mit der Asset-Editor-Seite du
 
    Klicken Sie auf **OK**, um die Änderungen in das Formular zu schreiben. Das Kästchen neben dem Feld **Tags** wird automatisch aktiviert.
 
-1. Bearbeiten Sie das Feld „Beschreibung“. Setzen Sie sie beispielsweise auf:
+1. Bearbeiten Sie das Feld „Beschreibung“. Legen Sie es beispielsweise wie folgt fest:
 
    `This is a common description`
 

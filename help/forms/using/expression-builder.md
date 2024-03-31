@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '783'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Der Ausdrucksgenerator verwendet intern JSP EL-Bibliotheken, damit der Ausdruck 
 
 ### Operatoren  {#operators}
 
-Die Operatoren, die zur Verwendung in Ausdrücken verfügbar sind, sind in der oberen Leiste des Ausdruckseditors verfügbar.
+Die Operatoren, die zur Verwendung in Ausdrücken verfügbar sind, sind in der oberen Leiste des Ausdrucksgenerators verfügbar.
 
 ### Beispielausdrücke {#exampleexpressions}
 
@@ -48,7 +48,7 @@ Weitere Informationen finden Sie in der [JSP-EL-Spezifikation](https://download.
    * java.lang.Boolean
    * Boolesch
    * java.lang.Integer
-   * Int
+   * int
    * java.util.list
    * java.lang.Short
    * Short
@@ -70,17 +70,17 @@ Remote-Funktionen bieten die Möglichkeit, benutzerdefinierte Logik in Ausdrück
 
 ![Remote-Funktion](assets/remotefunction.png)
 
-#### Benutzerdefinierte Remote-Funktionen hinzufügen {#adding-custom-remote-functions}
+#### Hinzufügen benutzerdefinierter Remote-Funktionen {#adding-custom-remote-functions}
 
-Sie können ein benutzerdefiniertes Bundle erstellen, um Ihre eigenen Remote-Funktionen zur Verwendung in Ausdrücken zu exportieren. Um ein benutzerdefiniertes Bundle zum Exportieren Ihrer eigenen Remote-Funktionen zu erstellen, führen Sie die folgenden Aufgaben aus. Es wird gezeigt, wie eine benutzerdefinierte Funktion geschrieben wird, die ihre Eingabezeichenfolge großschreibt.
+Sie können ein benutzerdefiniertes Bundle erstellen, um Ihre eigenen Remote-Funktionen zur Verwendung in Ausdrücken zu exportieren. Um ein benutzerdefiniertes Bundle zum Exportieren Ihrer eigenen Remote-Funktionen zu erstellen, führen Sie die folgenden Aufgaben aus. Dies zeigt, wie eine benutzerdefinierte Funktion geschrieben wird, die ihre Eingabezeichenfolge großschreibt.
 
-1. Definieren Sie eine Schnittstelle für den OSGi-Dienst mit Methoden, die zur Verwendung durch Expression Manager exportiert werden.
+1. Definieren Sie eine Schnittstelle für den OSGi-Dienst mit Methoden, die zur Verwendung durch den Expression Manager exportiert werden.
 1. Deklarieren Sie Methoden in der Schnittstelle A und versehen Sie sie mit der Anmerkung „@ServiceMethod“ (com.adobe.exm.expeval.ServiceMethod). Expression Manager ignoriert alle Methoden, bei denen keine Anmerkungen vorhanden sind. Die ServiceMethod-Anmerkung verfügt über die folgenden optionalen Attribute, die ebenfalls festgelegt werden können:
 
-   1. **Aktiviert**: Bestimmt, ob diese Methode aktiviert ist. Expression Manager ignoriert deaktivierte Methoden.
-   1. **familyId**: Gibt die Familie (Gruppe) der Methode an. Wenn dieses Feld leer ist, geht Expression Manager davon aus, dass die Methode zur Standardfamilie gehört. Es gibt keine Register der Familien (außer der Standardfamilie), aus denen Funktionen ausgewählt werden. Expression Manager erstellt die Registrierung dynamisch, indem es eine Vereinigung aller Familien-IDs verwendet, die von allen von den verschiedenen Bundles exportierten Funktionen angegeben werden. Stellen Sie sicher, dass die hier angegebene ID angemessen lesbar ist, da sie auch in der Authoring-Benutzeroberfläche für Ausdrücke angezeigt wird.
-   1. **displayName**: Ein für Menschen lesbarer Name für die Funktion. Dieser Name wird für Anzeigezwecke in der Authoring-Benutzeroberfläche verwendet. Wenn dieses Feld leer ist, erstellt Expression Manager einen Standardnamen mithilfe des Präfixes und des lokalen Namens der Funktion.
-   1. **Beschreibung**: Eine ausführliche Beschreibung der Funktion. Diese Beschreibung wird für Anzeigezwecke in der Authoring-Benutzeroberfläche verwendet. Wenn leer, erstellt Expression Manager eine Standardbeschreibung mit dem Präfix und dem lokalen Namen der Funktion.
+   1. **Aktiviert**: Bestimmt, ob diese Methode aktiviert ist. Der Expression Manager ignoriert deaktivierte Methoden.
+   1. **familyId**: Gibt die Familie (Gruppe) der Methode an. Wenn dieses Feld leer ist, geht der Expression Manager davon aus, dass die Methode zur Standardfamilie gehört. Es gibt keine Register der Familien (außer der Standardfamilie), aus denen Funktionen ausgewählt werden. Der Expression Manager erstellt die Registrierung dynamisch, indem er eine Vereinigung aller Familien-IDs verwendet, die von allen von den verschiedenen Bundles exportierten Funktionen angegeben werden. Stellen Sie sicher, dass die hier angegebene ID angemessen lesbar ist, da sie auch in der Authoring-Benutzeroberfläche für Ausdrücke angezeigt wird.
+   1. **displayName**: Ein für Menschen lesbarer Name der Funktion. Dieser Name wird für Anzeigezwecke in der Authoring-Benutzeroberfläche verwendet. Wenn dieses Feld leer ist, erstellt der Expression Manager einen Standardnamen mithilfe des Präfixes und des lokalen Namens der Funktion.
+   1. **Beschreibung**: Eine ausführliche Beschreibung der Funktion. Diese Beschreibung wird für Anzeigezwecke in der Authoring-Benutzeroberfläche verwendet. Wenn dieses Feld leer ist, erstellt der Expression Manager eine Standardbeschreibung mit dem Präfix und dem lokalen Namen der Funktion.
 
    ```java
    package mergeandfuse.com;
@@ -101,7 +101,7 @@ Sie können ein benutzerdefiniertes Bundle erstellen, um Ihre eigenen Remote-Fun
    * java.lang.Boolean
    * Boolesch
    * java.lang.Integer
-   * Int
+   * int
    * java.lang.Short
    * Short
    * java.lang.Byte
@@ -125,7 +125,7 @@ Sie können ein benutzerdefiniertes Bundle erstellen, um Ihre eigenen Remote-Fun
   @org.apache.felix.scr.annotations.Property(name = "exm.service", boolValue = true)})
 ```
 
-Der Eintrag exm.service=true weist Expression Manager an, dass der Dienst Remote-Funktionen enthält, die für die Verwendung in Ausdrücken geeignet sind. Die &lt;service_id> -Wert muss eine gültige Java-Kennung sein (alphanumerisch,$, _ ohne weitere Sonderzeichen). Dieser Wert, dem das Schlüsselwort REMOTE_ vorangestellt ist, bildet das Präfix, das in Ausdrücken verwendet wird. Beispielsweise kann eine Schnittstelle mit einer kommentierten Methode bar() und der Dienst-ID-foo in den Diensteigenschaften in Ausdrücken mithilfe von REMOTE_foo:bar() referenziert werden.
+Der Eintrag exm.service=true erklärt dem Expression Manager, dass der Dienst Remote-Funktionen enthält, die für die Verwendung in Ausdrücken geeignet sind. Der &lt;service_id>-Wert muss eine gültige Java-Kennung sein (alphanumerisch, $, _, ohne weitere Sonderzeichen). Dieser Wert, dem das Schlüsselwort REMOTE_ vorangestellt ist, bildet das Präfix, das in Ausdrücken verwendet wird. Beispielsweise kann eine Schnittstelle mit einer kommentierten Methode „bar()“ und der Dienst-ID „foo“ in den Diensteigenschaften in Ausdrücken mithilfe von REMOTE_foo:bar() referenziert werden.
 
 ```java
 package mergeandfuse.com;
@@ -151,7 +151,7 @@ public class RemoteFuntionImpl implements RemoteFunction {
 }
 ```
 
-Im Folgenden finden Sie Beispiel-Archive, die verwendet werden sollen:
+Im Folgenden finden Sie Beispielarchive, die verwendet werden können:
 
 * **GoodFunctions.jar.zip** ist die JAR-Datei mit Bundle, die eine Definition für eine Muster-Remote-Funktion enthält. Laden Sie die GoodFunctions.jar.zip-Datei herunter und dekomprimieren Sie diese, um die JAR-Datei zu erhalten.
 * **GoodFunctions.zip** ist das Paket des Quellcodes zum Definieren einer benutzerdefinierten Remote-Funktion und eines Bundles dafür.

@@ -1,12 +1,12 @@
 ---
 title: AEM Content and Commerce – Versionshinweise 2020
-description: Versionshinweise zu Adobe Experience Manager Content and Commerce 2020.
+description: Versionshinweise zu Adobe Experience Manager Content and Commerce 2020
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
 solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '1257'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 97%
 
 * Eine neue Karussellkomponente für Kategorien wurde hinzugefügt, damit Business-Anwenderinnen und -Anwender diese Komponente per Drag-and-Drop auf AEM-Inhaltsseiten ziehen können, um Inhaltsseiten mit Commerce-Daten anzureichern.
 
-* Die CIF-Kernkomponenten wurden erweitert, sodass sie nun die Adobe-Client-Datenschicht durch Senden von Commerce-Daten einbinden. Die Adobe Client-Datenschicht ist eine standardisierte Methode zur Erfassung von Daten und zur Weitergabe der Daten für digitale Analysen und Reporting-Server. Weitere Informationen finden Sie unter [Adobe Client-Datenschicht](https://github.com/adobe/adobe-client-data-layer/wiki).
+* Die CIF-Kernkomponenten wurden erweitert, sodass sie nun die Adobe-Client-Datenschicht durch Senden von Commerce-Daten einbinden. Die Adobe Client-Datenschicht ist eine standardisierte Methode zur Erfassung von Daten und zur Weitergabe der Daten für digitale Analysen und Reporting-Server. Weitere Informationen finden Sie unter [Adobe-Client-Datenschicht](https://github.com/adobe/adobe-client-data-layer/wiki).
 
 * Produktdetailseiten und Produktlistenseiten wurden erweitert, um SEO-Metadaten (wie Titel, Meta-Beschreibung, Meta-Schlüsselwörter) automatisch auszufüllen, die über die Adobe Commerce-Benutzeroberfläche für Admins konfiguriert wurden.
 
@@ -144,7 +144,7 @@ Dies ist die erste Version der CIF-Kernkomponenten, die von Adobe Experience Man
 
 * Kategoriefilterung wurde als Facette hinzugefügt, damit Käufer nach Kategorie filtern können.
 
-* Eine Zuordnung von Service und Benutzer wurde als Teil der Sicherheitsanforderung hinzugefügt, um den Zugriff auf „/conf“ über Service-Benutzer und nicht durch direkte Bearbeitung von ACLs sicherzustellen. CIF Kernkomponenten müssen einen Dienstbenutzer verwenden, um auf Konfigurationen zuzugreifen.
+* Eine Zuordnung von Service und Benutzer wurde als Teil der Sicherheitsanforderung hinzugefügt, um den Zugriff auf „/conf“ über Service-Benutzer und nicht durch direkte Bearbeitung von ACLs sicherzustellen. CIF-Kernkomponenten müssen eine Dienstbenutzerin oder einen Dienstbenutzer verwenden, um auf Konfigurationen zuzugreifen.
 
 ### Verbesserte Funktionen {#what-is-improved-june}
 

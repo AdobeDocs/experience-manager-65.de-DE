@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Der Systeminformationsdienst stellt eine Reihe von REST-APIs zum Abrufen von Inf
   <tr>
    <td><p>SystemInfo.properties</p></td>
    <td><p>https://[Server]:[Port]/rest/services/SystemInfo.properties</p></td>
-   <td><p>Diese API ist ein Wrapper für <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java-API. Es ruft die Konfiguration der aktuellen Arbeitsumgebung ab. </p></td>
+   <td><p>Diese API ist ein Wrapper für Java-API<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()"> system.getProperties-Java-API</a>. Sie ruft die Konfiguration des aktuellen Arbeitsbereichs ab. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.envVar</p></td>
@@ -40,7 +40,7 @@ Der Systeminformationsdienst stellt eine Reihe von REST-APIs zum Abrufen von Inf
   <tr>
    <td><p>SystemInfo.logs</p></td>
    <td><p>https://[Server]:[Port]/rest/services/SystemInfo.logs</p></td>
-   <td><p>Lädt eine ZIP-Datei herunter, die die Protokolle des Anwendungsservers enthält. </p></td>
+   <td><p>Lädt eine ZIP-Datei mit Protokollen des Anwendungs-Servers herunter. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.config</p></td>
@@ -50,7 +50,7 @@ Der Systeminformationsdienst stellt eine Reihe von REST-APIs zum Abrufen von Inf
   <tr>
    <td><p>SystemInfo.services</p></td>
    <td><p>https://[Server]:[Port]/rest/services/SystemInfo.services</p></td>
-   <td><p>Ruft Status- und Konfigurationsparameter von AEM Forms-Diensten ab.</p></td>
+   <td><p>Ruft Status und Konfigurationsparameter von AEM Forms-Diensten ab.</p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.vitalDetails</p></td>
@@ -89,21 +89,21 @@ Der Systeminformationsdienst stellt eine Reihe von REST-APIs zum Abrufen von Inf
   <tr>
    <td><p>SystemInfNo.serverConfig</p></td>
    <td><p>https://[Server]:[Port]/rest/services/SystemInfo.serverConfig</p></td>
-   <td><p>Lädt Konfigurationsdateien des Host-Anwendungsservers herunter. </p></td>
+   <td><p>Lädt Konfigurationsdateien des Host-Anwendungs-Servers herunter. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.threads?delay=[n]&amp;iterations=[n]</p></td>
    <td><p>https://[Server]:[Port]/rest/services/SystemInfo.threads?delay=[n]&amp;iterations=[n]</p></td>
-   <td><p>Ruft die Anzahl und Stapelablaufverfolgung aktiver Threads ab. Folgende Parameter werden akzeptiert:</p>
+   <td><p>Ruft Anzahl und Stapel-Trace aktiver Threads ab. Folgende Parameter werden akzeptiert:</p>
     <ul>
      <li><p>iterations= [n]: Gibt die Anzahl der Iterationen an. Ersetzen Sie n durch eine Zahl. </p></li>
-     <li><p>Delay= [n]: Gibt die Anzahl der Millisekunden an, die gewartet werden soll, bevor die nächste Iteration gestartet wird. </p></li>
+     <li><p>Delay= [n]: Gibt an, wie viele Millisekunden vor der nächsten Iteration gewartet werden soll. </p></li>
     </ul><p></p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.info</p></td>
    <td><p>https://[Server]:[Port]/rest/services/SystemInfo.info</p></td>
-   <td><p>Diese API ist ein Wrapper für alle Systeminformationsdienst-APIs. Intern werden alle Systeminformationen-APIs ausgeführt und Informationen im ZIP-Format heruntergeladen. </p><p><i><strong>Hinweis</strong>: Die Datei „SystemInfo.info“ enthält nicht Anzahl und Stapelablaufverfolgung aktiver Threads. </i></p></td>
+   <td><p>Diese API ist ein Wrapper für alle Systeminformationsdienst-APIs. Sie führt intern alle Systeminformations-APIs aus und lädt Informationen im ZIP-Format herunter. </p><p><i><strong>Hinweis</strong>: Die Datei „SystemInfo.info“ enthält nicht Anzahl und Stapelablaufverfolgung aktiver Threads. </i></p></td>
   </tr>
  </tbody>
 </table>

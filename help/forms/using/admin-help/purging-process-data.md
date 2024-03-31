@@ -1,6 +1,6 @@
 ---
 title: Bereinigen von Prozessdaten
-description: Prozessdaten, die beim Aufrufen eines langlebigen Prozesses generiert werden, können zu groß werden, was zu einer geringeren AEM der Formularleistung und zur Verwendung unnötigen Festplattenspeichers führt. Erfahren Sie, wie Sie Prozessdaten bereinigen können.
+description: Prozessdaten, die beim Aufrufen eines Prozesses mit langer Lebensdauer generiert werden, können zu stark anwachsen, was zu einer Beeinträchtigung der Leistung von AEM Forms und zur unnötigen Belegung von Speicherplatz führt.  Erfahren Sie, wie Sie Prozessdaten bereinigen können.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
@@ -10,14 +10,14 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '187'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 # Bereinigen von Prozessdaten {#purging-process-data}
 
-Prozessdaten, die beim Aufrufen eines langlebigen Prozesses generiert werden, können zu groß werden, was zu einer geringeren AEM der Formularleistung und zur Verwendung unnötigen Festplattenspeichers führt. Es empfiehlt sich, Prozessdaten zu bereinigen, wenn Datensätze nicht mehr benötigt werden. AEM Formulare bieten mehrere Möglichkeiten, Prozessdaten zu bereinigen:
+Prozessdaten, die beim Aufrufen eines Prozesses mit langer Lebensdauer generiert werden, können zu stark anwachsen, was zu einer Beeinträchtigung der Leistung von AEM Forms und zur unnötigen Belegung von Speicherplatz führt.  Es ist empfehlenswert, Prozessdaten zu bereinigen, wenn die Einträge nicht mehr benötigt werden.  AEM Forms bietet mehrere Möglichkeiten, Prozessdaten zu bereinigen:
 
-* Sie können Administration Console verwenden, um eine einmalige Bereinigung veralteter Datensätze im Zusammenhang mit langlebigen Prozessen durchzuführen oder regelmäßige automatische Bereinigungen zu planen. (Siehe [Job Manager-Datenbank um Datensätze bereinigen](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database).
-* Sie können die Java-API und Webdienst-API von AEM Forms verwenden, um Prozessdaten im Zusammenhang mit langlebigen Prozessen programmgesteuert zu bereinigen. (Siehe &quot;Bereinigen von Prozessdaten&quot;in [Programmieren mit AEM](https://www.adobe.com/go/learn_aemforms_programming_63_de).
-* Verwenden Sie das Tool zur Prozessbereinigung, um Prozesse basierend auf dem Prozessnamen und anderen Parametern zu bereinigen. Weitere Informationen finden Sie in der Datei &quot;Bitte lesen&quot;des Prozessbereinigungs-Tools unter *[aem_forms-Stamm]*\sdk\misc\Foundation\ProcessPurgeTool\ReadMe.txt
+* Sie können die Administrationskonsole verwenden, um eine einmalige Bereinigung von veralteten Einträgen im Zusammenhang mit dauerhaft genutzten Prozessen auszuführen oder regelmäßige automatische Bereinigungen zu planen. (Weitere Informationen finden Sie unter [Bereinigen von Einträgen in der Job Manager-Datenbank](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database).)
+* Sie können die AEM Forms Java-API und die Webservice-API verwenden, um Prozessdaten im Zusammenhang mit dauerhaft genutzten Prozessen programmgesteuert zu bereinigen.  (Siehe „Bereinigen von Prozessdaten“ in [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).)
+* Verwenden Sie das Prozessbereinigungswerkzeug zum Bereinigen von Prozessen anhand des Prozessnamens und anderer Parameter.  Weitere Informationen finden Sie in der Datei „Bitte lesen“ zum Prozessbereinigungswerkzeug, die sich unter „*[aem_forms root]*\sdk\misc\Foundation\ProcessPurgeTool\ReadMe.txt“ befindet.

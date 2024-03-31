@@ -1,6 +1,6 @@
 ---
 title: Verwenden des Übersetzungs-Workflows von AEM zum Lokalisieren von adaptiven Formularen und Datensatzdokumenten
-description: Erfahren Sie, wie Sie mithilfe AEM Übersetzungs-Workflows adaptive Formulare und Datensatzdokumente lokalisieren können.
+description: Erfahren Sie, wie Sie AEM-Übersetzungs-Workflows zum Lokalisieren von adaptiven Formularen und Datensatzdokumenten verwenden.
 content-type: reference
 topic-tags: develop
 noindex: true
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '802'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 81%
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
-Mit lokalisierten Formularen können Sie eine größere Zielgruppe über Ländergrenzen hinweg ansprechen. Mit den Adobe Experience Manager-Übersetzungs-Workflows können Sie adaptive Formulare und ihre DoR lokalisieren. Sie können **maschinelle Übersetzung** oder **Übersetzer** , um ein adaptives Formular zu lokalisieren.
+Mit lokalisierten Formularen können Sie eine größere Zielgruppe über Ländergrenzen hinweg ansprechen. Mit den Adobe Experience Manager-Übersetzungs-Workflows können Sie adaptive Formulare und ihre DoR lokalisieren. Zum Lokalisieren eines adaptiven Formulars können Sie die **maschinelle Übersetzung** nutzen oder menschliche **Übersetzerinnen und Übersetzer** beauftragen.
 
-In diesem Artikel wird die Verwendung AEM Übersetzungs-Workflows mit adaptiven Formularen und Datensatzdokumenten erläutert.
+In diesem Artikel wird die Vorgehensweise zur Verwendung des AEM-Übersetzungs-Workflows in Verbindung mit adaptiven Formularen und Datensatzdokumenten erläutert.
 
 ## Lokalisieren eines adaptiven Formulars und Datensatzdokuments mithilfe der maschinellen Übersetzung {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
-Der Dienst für maschinelle Übersetzung übersetzt sofort Inhalte Ihrer adaptiven Formulare und DoR. AEM Forms ist für die Verwendung einer Testversion von Microsoft Translator für maschinelle Übersetzung vorkonfiguriert. Führen Sie die folgenden Schritte aus, um die maschinelle Übersetzung für Ihre adaptiven Formulare und Ihr Datensatzdokument zu aktivieren:
+Der Dienst für maschinelle Übersetzung übersetzt sofort Inhalte Ihrer adaptiven Formulare und DoR. AEM Forms ist für die Verwendung einer Testversion von Microsoft Translator für maschinelle Übersetzung vorkonfiguriert. Führen Sie zum Aktivieren der maschinellen Übersetzung für Ihre adaptiven Formulare und Datensatzdokumente folgende Schritte durch:
 
 1. Wählen Sie in der Benutzeroberfläche von AEM Forms ein Formular und dann die Option **Wörterbuch hinzufügen** aus.
 1. Wählen Sie auf dem Bildschirm **Wörterbuch zum Übersetzungsprojekt hinzufügen** die Option **Neues Übersetzungsprojekt erstellen** oder **Zu vorhandenem Übersetzungsprojekt hinzufügen**.
@@ -49,14 +49,14 @@ Der Dienst für maschinelle Übersetzung übersetzt sofort Inhalte Ihrer adaptiv
 
 [Einstellungen für Datensatzdokumente](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
-1. [Anpassen der Branding-Informationen des Datensatzdokuments](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) und stellen Sie sicher, dass das Browsergebietsschema auf dieselbe Sprache festgelegt ist, in die Sie das adaptive Formular mithilfe der Maschinensprache lokalisiert haben. Das Browser-Gebietsschema hilft beim Lokalisieren der Branding-Informationen im Datensatzdokument.
-1. Um das lokalisierte Datensatzdokument anzuzeigen, wählen Sie Vorschau generieren aus. Die PDF-Datei des Datensatzdokuments wird erstellt und in einer neuen Registerkarte im Browser geöffnet.
+1. [Passen Sie die Branding-Informationen des Datensatzdokuments an](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) und stellen Sie sicher, dass für das Browser-Gebietsschema die Sprache eingestellt ist, für die Sie das adaptive Formular mithilfe maschineller Übersetzung lokalisiert haben. Das Browser-Gebietsschema hilft beim Lokalisieren der Branding-Informationen im Datensatzdokument.
+1. Um das lokalisierte Datensatzdokument anzuzeigen, wählen Sie „Vorschau generieren“ aus. Die PDF-Datei des Datensatzdokuments wird erstellt und in einer neuen Registerkarte im Browser geöffnet.
 
 ## Lokalisieren eines adaptiven Formulars und seines Datensatzdokuments mithilfe menschlicher Übersetzung {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 
 Bei der menschlichen Übersetzung wird der Inhalt an einen Übersetzungsanbieter gesendet und von professionellen Übersetzerinnen oder Übersetzern übersetzt. Wenn die Inhalte übersetzt wurden, werden sie zurückgesendet und in AEM importiert. Ist Ihr Übersetzungsdienstleister in AEM integriert, werden die Inhalte automatisch von AEM an den Übersetzungsdienstleister gesendet.
 
-Für die Übersetzung wird den professionellen Übersetzerinnen oder Übersetzern ein Wörterbuch zur Verfügung gestellt, das Dateien im XLIFF-Format enthält. Das Wörterbuch enthält für jedes Gebietsschema eine separate XLIFF-Datei. Jede XLIFF-Datei enthält Text, der den Endbenutzern angezeigt wird, sowie Platzhalter für den entsprechenden lokalisierten Text.
+Für die Übersetzung wird den professionellen Übersetzerinnen oder Übersetzern ein Wörterbuch zur Verfügung gestellt, das Dateien im XLIFF-Format enthält. Das Wörterbuch enthält für jedes Gebietsschema eine separate XLIFF-Datei. Jede XLIFF-Datei enthält Text, der den Endbenutzenden angezeigt wird, und Platzhalter für den entsprechenden lokalisierten Text.
 
 Führen Sie die folgenden Schritte zum Lokalisieren eines Formulars und seines Datensatzdokuments mit menschlicher Übersetzung durch:
 

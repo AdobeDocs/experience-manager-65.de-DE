@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '171'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Derzeit unterstützen alle Implementierungen der Java-Plattform [TrueType](https
 
    `/apps/<your-project>/`
 
-1. under `/apps/<your-project>/` einen Knoten erstellen:
+1. Erstellen Sie einen Knoten unter `/apps/<your-project>/`:
 
    * **Name**: `fonts`
    * **Typ**: `sling:Folder`
@@ -39,7 +39,7 @@ Derzeit unterstützen alle Implementierungen der Java-Plattform [TrueType](https
    >
    >Die Schriftarten-Dateien im Repository müssen die Dateiendung `*.ttf` oder `*.TTF` aufweisen.
 
-1. Aktualisieren Sie die [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) von [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Fügen Sie den Pfad zum Ordner &quot;Schriftarten&quot;hinzu, also `/apps/<your-project>/fonts`.
+1. Aktualisieren Sie die [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) von [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Fügen Sie den Pfad zum Schriftarten-Ordner hinzu, d. h. `/apps/<your-project>/fonts`.
 
 1. Kehren Sie zu CRXDE Lite zurück. Sie sollten jetzt in Ihrem Ordner einen Knoten namens `.fontlist` sehen, der den Namen der importierten Schriftarten enthält.
 

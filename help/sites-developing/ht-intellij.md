@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '640'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
@@ -57,7 +57,7 @@ Folgen Sie den Anweisungen im Abschnitt [So arbeiten Sie mit JSPs](/help/sites-d
 1. Öffnen Sie das Dialogfeld **Importieren** in IntelliJ IDEA, indem Sie
 
    * auf dem Willkommensbildschirm **Projekt importieren** auswählen, sofern Sie noch kein Projekt geöffnet haben, oder
-   * Auswählen **Datei > Projekt importieren** aus dem Hauptmenü
+   * Auswählen von **Datei > Projekt importieren** im Hauptmenü
 
 1. Wählen Sie im Importdialogfeld die POM-Datei Ihres Projekts aus.
 
@@ -85,7 +85,7 @@ Zum Debuggen von JSPs mit IntelliJ IDEA sind die folgenden Schritte notwendig:
 
 IntelliJ IDEA muss wissen, wo die JSPs zum Debugging zu finden sind. Da IDEA die `content-package-maven-plugin`-Einstellungen nicht interpretieren kann, muss es manuell konfiguriert werden.
 
-1. Navigieren Sie zu **Datei > Projektstruktur**
+1. Gehen Sie zu **Datei > Projektstruktur**.
 1. Wählen Sie das Modul **Inhalte** aus
 1. Klicken Sie über der Modulliste auf **+** und wählen Sie **Web** aus.
 1. Wählen Sie als Webressourcen-Verzeichnis das `content/src/main/content/jcr_root subdirectory` Ihres Projekts, wie im folgenden Screenshot gezeigt.
@@ -103,7 +103,7 @@ IntelliJ IDEA muss wissen, wo die JSPs zum Debugging zu finden sind. Da IDEA die
 
 #### Konfigurieren Sie ein Debugprofil. {#configure-a-debug-profile}
 
-1. Navigieren Sie zu **Ausführen > Konfigurationen bearbeiten**
+1. Gehen Sie zu **Ausführen > Konfigurationen bearbeiten**.
 1. Klicken Sie auf das **+** und wählen Sie **JSR45 Remote** aus.
 1. Wählen Sie im Konfigurationsdialogfeld **Konfigurieren** neben **Anwendungsserver** aus und konfigurieren Sie einen generischen Server.
 1. Legen Sie die Startseite auf eine passende URL fest, wenn Sie beim Beginn des Debuggens einen Browser öffnen möchten.
@@ -117,7 +117,7 @@ IntelliJ IDEA muss wissen, wo die JSPs zum Debugging zu finden sind. Da IDEA die
 
 Der letzte erforderliche Schritt besteht darin, AEM mit den von IntelliJ IDEA vorgeschlagenen JVM-Optionen zu starten.
 
-Starten Sie die AEM JAR-Datei direkt und fügen Sie diese Optionen hinzu, z. B. mit der folgenden Befehlszeile:
+Starten Sie dazu die AEM-JAR-Datei direkt und fügen Sie diese Optionen hinzu, zum Beispiel mit der folgenden Befehlszeile:
 
 `java -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,suspend=n,server=y -Xmx1024m -jar cq-quickstart-6.5.0.jar`
 
@@ -140,7 +140,7 @@ CQ_JVM_OPTS="$CQ_JVM_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,su
 
 Sie können nun mit dem Debuggen Ihrer JSPs in AEM beginnen.
 
-1. Auswählen **Ausführen > Debuggen > Ihr Debug-Profil**
+1. Wählen Sie **Ausführen > Debugging > Ihr Debugging-Profil** aus.
 1. Legen Sie in Ihrem Komponenten-Code Haltepunkte fest.
 1. Greifen Sie in Ihrem Browser auf eine Seite zu.
 

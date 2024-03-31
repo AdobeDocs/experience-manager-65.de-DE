@@ -44,7 +44,7 @@ Viele Probleme können durch eine Umstrukturierung des Inhalts gelöst werden. B
 
 * **Inhaltsstruktur verfeinern**
 
-   * Verschieben Sie sie an andere Stellen, z. B. wo die Zugriffssteuerung mit den verfügbaren Anfragesitzungen übereinstimmt.
+   * An andere Stellen verschieben, wo z. B. die Zugriffssteuerung mit den verfügbaren Anfragesitzungen übereinstimmt;
    * Die Inhaltsgranularität ändern;
 
 * **Code zum korrekten Dienst refaktorieren**

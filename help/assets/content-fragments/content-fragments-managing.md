@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1712'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -238,7 +238,7 @@ Der Editor bietet mehrere Optionen:
   >
   >Mit der Aktion werden nicht nur einfach Ihre Änderungen gespeichert, sondern auch alle Verweise aktualisiert und sichergestellt, dass der Dispatcher nach Bedarf geleert wird. Es kann einige Zeit dauern, bis diese Änderungen verarbeitet werden. Aus diesem Grund kann die Leistung eines umfassenden/komplexen/stark belasteten Systems beeinträchtigt werden.
   >
-  >Beachten Sie Folgendes bei Verwendung von **Speichern und schließen** und dann schnell wieder in den Fragmenteditor eingeben, um weitere Änderungen vorzunehmen und zu speichern.
+  >Beachten Sie dies, wenn Sie die Option **Speichern und schließen** auswählen und den Fragmenteditor danach schnell erneut aufrufen, um weitere Änderungen vorzunehmen und zu speichern.
 
 * **Schließen**
 
@@ -318,7 +318,7 @@ Beispiel:
 
 ## Vergleichen von Fragment-Versionen {#comparing-fragment-versions}
 
-Die Aktion **Mit aktueller Version vergleichen** ist in der [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) verfügbar, sobald Sie eine bestimmte Version ausgewählt haben.
+Die Aktion **Mit aktueller Version vergleichen** ist in der [Zeitleiste](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) verfügbar, sobald Sie eine bestimmte Version ausgewählt haben.
 
 Dadurch wird Folgendes geöffnet:
 

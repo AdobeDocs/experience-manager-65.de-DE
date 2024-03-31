@@ -1,6 +1,6 @@
 ---
 title: Beschreibung wiederverwendbarer Komponenten
-description: Eine vollständige Liste der wiederverwendbaren Komponenten mit Dateinamen und Abhängigkeiten, die Sie bei der Integration der AEM Forms Workspace-Komponente in Ihre Webanwendungen unterstützen.
+description: Eine vollständige Liste von wiederverwendbaren Komponenten mit Dateinamen und Abhängigkeiten, die Sie bei der Integration von AEM Forms Workspace-Komponenten in Ihre Web-Anwendungen unterstützen.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1231'
-ht-degree: 26%
+ht-degree: 100%
 
 ---
 
@@ -47,17 +47,17 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>JS-Abhängigkeiten</p></td>
    <td>
     <ul>
-     <li><p>Aufgabenmodell</p></li>
-     <li><p>teamtask-Modell</p></li>
+     <li><p>Task-Modell</p></li>
+     <li><p>TeamTask-Modell</p></li>
     </ul></td>
   </tr>
   <tr>
    <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td>
     <ul>
-     <li><p>filterSelected - TaskList-Modell</p></li>
-     <li><p>remove - TaskList-Modell</p></li>
-     <li><p>updateQueue - TaskList-Modell</p></li>
+     <li><p>filterSelected – TaskList-Modell</p></li>
+     <li><p>remove – TaskList-Modell</p></li>
+     <li><p>updateQueue – TaskList-Modell</p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -65,7 +65,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
 
 >[!NOTE]
 >
->Diese Komponente kann unabhängig von AEM Forms Workspace verwendet werden, vorausgesetzt, das Trigger filterSelected -Ereignis für diese Komponente stammt aus Ihrer benutzerdefinierten Anwendung.
+>Diese Komponente kann unabhängig von AEM Forms Workspace verwendet werden, vorausgesetzt, Sie lösen das Ereignis „filterSelected“ für diese Komponente über Ihre benutzerdefinierte Anwendung aus.
 
 ## Aufgabe {#task}
 
@@ -99,8 +99,8 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td>
     <ul>
-     <li><p>submitComplete - Task-Modell</p></li>
-     <li><p>Ablehnen - Task-Modell</p></li>
+     <li><p>submitComplete – Task-Modell</p></li>
+     <li><p>Reject – Task-Modell</p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -108,7 +108,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
 
 >[!NOTE]
 >
->Workspace ruft die Funktion fetchTasks des TaskList-Modells auf, um Task-Modelle für diese Komponente zu erstellen.
+>Workspace ruft die Funktion „fetchTasks“ des TaskList-Modells auf, um Task-Modelle für diese Komponente zu erstellen.
 
 ## FilterList {#filterlist}
 
@@ -138,11 +138,11 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td>
     <ul>
-     <li><p>fetched - TaskList-Modell </p></li>
-     <li><p>remove - TaskList-Modell </p></li>
-     <li><p>updateQueue - TaskList-Modell </p></li>
-     <li><p>refreshedQueue - TaskList-Modell </p></li>
-     <li><p>filterSelected - TaskList-Modell</p></li>
+     <li><p>fetched – TaskList-Modell </p></li>
+     <li><p>remove – TaskList-Modell </p></li>
+     <li><p>updateQueue – TaskList-Modell </p></li>
+     <li><p>refreshedQueue – TaskList-Modell </p></li>
+     <li><p>filterSelected – TaskList-Modell</p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -170,13 +170,13 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
     <ul>
      <li><p>Feld: queue: { name, qid, isDefault, type}</p> </li>
      <li><p>Feld: query: string</p> </li>
-     <li><p>Feld: parentView: Filterlistenansicht</p> </li>
+     <li><p>Feld: parentView: FilterList-Ansicht</p> </li>
      <li><p>Feld: parentModel: TaskList-Modell</p> </li>
      <li><p>Feld: utility</p> </li>
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Listener Ereignisse</p> </td>
+   <td><p>Listener-Ereignisse</p> </td>
    <td><p>nicht vorhanden</p> </td>
   </tr>
  </tbody>
@@ -210,10 +210,10 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td>
     <ul>
-     <li><p>fetched - TaskList-Modell </p></li>
-     <li><p>remove - TaskList-Modell </p></li>
-     <li><p>updateQueue - TaskList-Modell </p></li>
-     <li><p>teamQueuesFetched - TaskList-Modell </p></li>
+     <li><p>fetched – TaskList-Modell </p></li>
+     <li><p>remove – TaskList-Modell </p></li>
+     <li><p>updateQueue – TaskList-Modell </p></li>
+     <li><p>teamQueuesFetched – TaskList-Modell </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -243,16 +243,16 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>JS-Abhängigkeiten</p> </td>
    <td>
     <ul>
-     <li><p>Erweitert : Filteransicht</p> </li>
-     <li><p>Feld : queue :{ name, qid, isDefault, type }</p> </li>
-     <li><p>Feld : query : string</p> </li>
-     <li><p>Feld : parentView : FilterList-Ansicht</p> </li>
-     <li><p>Feld : parentModel : TaskList-Modell</p> </li>
-     <li><p>Feld : utility</p> </li>
+     <li><p>Erweitert: Filteransicht</p> </li>
+     <li><p>Feld: queue: { name, qid, isDefault, type}</p> </li>
+     <li><p>Feld: query: string</p> </li>
+     <li><p>Feld : parentView : filterlist view</p> </li>
+     <li><p>Feld : parentModel : tasklist model</p> </li>
+     <li><p>Feld: utility</p> </li>
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Listener Ereignisse</p> </td>
+   <td><p>Listener-Ereignisse</p> </td>
    <td><p>nicht vorhanden</p> </td>
   </tr>
  </tbody>
@@ -260,7 +260,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
 
 >[!NOTE]
 >
->TeamFilter ruft das Ereignis ab, das angibt, welche Aufgabe aus der TaskList-Komponente ausgewählt wurde. Obwohl diese Komponenten die Modellklasse teilen, gibt es keine andere Abhängigkeit.
+>TeamFilter ruft das Ereignis ab, das angibt, welche Aufgabe von der TaskList-Komponente ausgewählt wurde. Diese Komponenten haben zwar die gleiche Modellklasse, es gibt aber keine andere Abhängigkeit.
 
 ## TaskDetails {#taskdetails}
 
@@ -298,23 +298,23 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p> </td>
    <td>
     <ul>
-     <li><p>forwarded - Task-Modell</p> </li>
-     <li><p>shared - Task-Modell</p> </li>
-     <li><p>visited - Task-Modell</p> </li>
-     <li><p>rejected - Task-Modell</p> </li>
-     <li><p>abandoned - Task-Modell</p> </li>
-     <li><p>unlocked - Task-Modell</p> </li>
-     <li><p>locked - Task-Modell</p> </li>
-     <li><p>claim - Task-Modell</p> </li>
-     <li><p>change:taskselected - TaskList-Modell</p> </li>
-     <li><p>change:formUrl - Task-Modell</p> </li>
-     <li>attachmentURLFetched - Task-Modell</li>
+     <li><p>forwarded – Task-Modell</p> </li>
+     <li><p>shared – Task-Modell</p> </li>
+     <li><p>consulted – Task-Modell</p> </li>
+     <li><p>rejected – Task-Modell</p> </li>
+     <li><p>abandoned – Task-Modell</p> </li>
+     <li><p>unlocked – Task-Modell</p> </li>
+     <li><p>locked – Task-Modell</p> </li>
+     <li><p>claimed – Task-Modell</p> </li>
+     <li><p>change:taskselected – TaskList-Modell</p> </li>
+     <li><p>change:formUrl – Task-Modell</p> </li>
+     <li>attachmentURLFetched – Task-Modell</li>
     </ul>
     <ul>
-     <li>newAttachment - Task-Modell</li>
-     <li><p>taskHistoryFetched - Task-Modell</p> </li>
-     <li>prepareForSubmitComplete - Task-Modell</li>
-     <li><p>submitComplete - Task-Modell</p> </li>
+     <li>newAttachment – Task-Modell</li>
+     <li><p>taskHistoryFetched – Task-Modell</p> </li>
+     <li>prepareForSubmitComplete – Task-Modell</li>
+     <li><p>submitComplete – Task-Modell</p> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -326,15 +326,15 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
  <tbody>
   <tr>
    <td><p>Modell</p></td>
-   <td><p>categorylist.js</p></td>
+   <td><p>categoryList.js</p></td>
   </tr>
   <tr>
    <td><p>Anzeigen</p></td>
-   <td><p>categorylist.js</p></td>
+   <td><p>categoryList.js</p></td>
   </tr>
   <tr>
    <td><p>Vorlage</p></td>
-   <td><p>startprocess.html (im Ordner "route")</p></td>
+   <td><p>startprocess.html (im Ordner „route“)</p></td>
   </tr>
   <tr>
    <td><p>Erfordert Komponenten</p></td>
@@ -344,16 +344,16 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>JS-Abhängigkeiten</p></td>
    <td>
     <ul>
-     <li><p>favoritecategorfactory-Modell</p></li>
-     <li><p>allcategoryFactory-Modell</p></li>
+     <li><p>FavoriteCategoryFactory-Modell</p></li>
+     <li><p>AllCategoryFactory-Modell</p></li>
     </ul></td>
   </tr>
   <tr>
    <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td>
     <ul>
-     <li><p>allStartpointsFetched - CategoryList-Modell </p></li>
-     <li><p>add - CategoryList-Modell </p></li>
+     <li><p>allStartpointsFetched – CategoryList-Modell </p></li>
+     <li><p>add – CategoryList-Modell </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -361,7 +361,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
 
 >[!NOTE]
 >
->Diese Komponente verwendet Modellklassen einiger anderer Komponenten wie StartPointList, StartPoint und Task. Neben dieser Abhängigkeit kann CategoryList unabhängig verwendet werden.
+>Diese Komponente verwendet Modellklassen einiger anderer Komponenten wie StartPointList, StartPoint und Task. Abgesehen von dieser Abhängigkeit kann CategoryList unabhängig verwendet werden.
 
 ## Kategorie {#category}
 
@@ -388,16 +388,16 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td>
     <ul>
      <li><p>CategoryList-Modell</p></li>
-     <li><p>startpointlist-Modell</p></li>
+     <li><p>StartPointList-Modell</p></li>
     </ul></td>
   </tr>
   <tr>
    <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td>
     <ul>
-     <li><p>changed - category model </p></li>
-     <li><p>childrenFetched - Kategoriemodell </p></li>
-     <li><p>category:selected - CategoryList-Modell </p></li>
+     <li><p>changed – Category-Modell </p></li>
+     <li><p>childrenFetched – Category-Modell </p></li>
+     <li><p>category:selected – CategoryList-Modell </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -409,7 +409,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
  <tbody>
   <tr>
    <td><p>Modell</p></td>
-   <td><p>categorylist.js</p></td>
+   <td><p>categoryList.js</p></td>
   </tr>
   <tr>
    <td><p>Anzeigen</p></td>
@@ -417,7 +417,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
   </tr>
   <tr>
    <td><p>Vorlage</p></td>
-   <td><p>startprocess.html (im Ordner "route")</p></td>
+   <td><p>startprocess.html (im Ordner „route“)</p></td>
   </tr>
   <tr>
    <td><p>Erfordert Komponenten</p></td>
@@ -427,24 +427,24 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>JS-Abhängigkeiten</p></td>
    <td>
     <ul>
-     <li><p>Kategoriemodell</p></li>
-     <li><p>favoritecategorfactory-Modell</p></li>
-     <li><p>allcategoryFactory-Modell</p></li>
-     <li><p>Startpunkt-Ansicht</p></li>
-     <li><p>startpointlist-Modell</p></li>
+     <li><p>Category-Modell</p></li>
+     <li><p>FavoriteCategoryFactory-Modell</p></li>
+     <li><p>AllCategoryFactory-Modell</p></li>
+     <li><p>StartPoint-Ansicht</p></li>
+     <li><p>StartPointList-Modell</p></li>
      <li><p>StartPoint-Modell</p></li>
-     <li><p>Aufgabenmodell</p></li>
-     <li><p>Aufgabenmodell</p></li>
+     <li><p>Task-Modell</p></li>
+     <li><p>Task-Modell</p></li>
      <li><p>TaskList-Modell</p></li>
-     <li><p>teamtask-Modell</p></li>
+     <li><p>TeamTask-Modell</p></li>
     </ul></td>
   </tr>
   <tr>
    <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td>
     <ul>
-     <li><p>category:selected - CategoryList-Modell </p></li>
-     <li><p>allStartpointsFetched - CategoryList-Modell </p></li>
+     <li><p>category:selected – CategoryList-Modell </p></li>
+     <li><p>allStartpointsFetched – CategoryList-Modell </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -452,7 +452,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
 
 >[!NOTE]
 >
->Die Komponenten StartPointList und CategoryList teilen sich die Modellklasse, sodass die erste von der zweiten abhängig ist. CategoryList greift auf die Informationen zu, welche Startpunkte der Kategorie angezeigt werden. Um StartPointList unabhängig zu verwenden, simulieren Sie den Ereignis-Trigger über CategoryList.
+>Die Komponenten „StartPointList“ und „CategoryList“ weisen dieselbe Modellklasse auf, sodass die erste Komponente von der zweiten abhängig ist. CategoryList greift auf die Informationen darüber zu, für welche Kategorie die Startpunkte angezeigt werden. Um StartPointList unabhängig zu verwenden, simulieren Sie den Ereignisauslöser über CategoryList.
 
 ## StartPoint {#startpoint}
 
@@ -476,11 +476,11 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
   </tr>
   <tr>
    <td><p>JS-Abhängigkeiten</p></td>
-   <td><p>Aufgabenmodell</p></td>
+   <td><p>Task-Modell</p></td>
   </tr>
   <tr>
    <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
-   <td><p>change - StartPoint-Modell </p></td>
+   <td><p>change – StartPoint-Modell </p></td>
   </tr>
  </tbody>
 </table>
@@ -491,7 +491,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
  <tbody>
   <tr>
    <td><p>Modell</p> </td>
-   <td><p>categorylist.js</p> </td>
+   <td><p>categoryList.js</p> </td>
   </tr>
   <tr>
    <td><p>Anzeigen</p> </td>
@@ -513,9 +513,9 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>JS-Abhängigkeiten</p> </td>
    <td>
     <ul>
-     <li><p>Kategoriemodell</p> </li>
-     <li><p>favoritecategorfactory-Modell</p> </li>
-     <li><p>allcategoryFactory-Modell</p> </li>
+     <li><p>Category-Modell</p> </li>
+     <li><p>FavoriteCategoryFactory-Modell</p> </li>
+     <li><p>AllCategoryFactory-Modell</p> </li>
      <li><p>formrendering-Dienstprogramm</p> </li>
      <li><p>notes-Dienstprogramm</p> </li>
      <li><p>attachments-Dienstprogramm</p> </li>
@@ -526,19 +526,19 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p> </td>
    <td>
     <ul>
-     <li><p>category:selected - CategoryList-Modell</p> </li>
-     <li><p>change:invokedTask - StartPointList-Modell</p> </li>
-     <li><p>change:formUrl - Task-Modell</p> </li>
-     <li><p>startpoint:selected - StartPointList-Modell</p> </li>
-     <li><p>forwarded - Task-Modell</p> </li>
-     <li><p>abandoned - Task-Modell</p> </li>
-     <li><p>unlocked - Task-Modell</p> </li>
-     <li><p>locked - Task-Modell</p> </li>
-     <li>attachmentURLFetched - Task-Modell</li>
-     <li>newAttachment - Task-Modell</li>
-     <li>prepareForSubmitComplete - Task-Modell </li>
-     <li><p>submitComplete - Task-Modell</p> </li>
-     <li><p>allStartpointsFetched - CategoryList-Modell</p> </li>
+     <li><p>category:selected – CategoryList-Modell</p> </li>
+     <li><p>change:invokedTask – StartPointList-Modell</p> </li>
+     <li><p>change:formUrl – Task-Modell</p> </li>
+     <li><p>startpoint:selected – StartPointList-Modell</p> </li>
+     <li><p>forwarded – Task-Modell</p> </li>
+     <li><p>abandoned – Task-Modell</p> </li>
+     <li><p>unlocked – Task-Modell</p> </li>
+     <li><p>locked – Task-Modell</p> </li>
+     <li>attachmentURLFetched – Task-Modell</li>
+     <li>newAttachment – Task-Modell</li>
+     <li>prepareForSubmitComplete – Task-Modell </li>
+     <li><p>submitComplete – Task-Modell</p> </li>
+     <li><p>allStartpointsFetched – CategoryList-Modell</p> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -546,7 +546,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
 
 >[!NOTE]
 >
->Die Komponenten StartProcess und StartPointList teilen sich die Modellklasse. Diese Komponente wird relevant, wenn Sie einen Startpunkt aus StartPointList auswählen.
+>Die Komponenten „StartProcess“ und „StartPointList“ weisen dieselbe Modellklasse auf. Diese Komponente wird relevant, wenn Sie in StartPointList einen Startpunkt auswählen.
 
 ## ProcessNameList {#processnamelist}
 
@@ -562,7 +562,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
   </tr>
   <tr>
    <td><p>Vorlage</p></td>
-   <td><p>tracking.html (im Ordner "route")</p></td>
+   <td><p>tracking.html (im Ordner „route“)</p></td>
   </tr>
   <tr>
    <td><p>Erfordert Komponenten</p></td>
@@ -570,15 +570,15 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
   </tr>
   <tr>
    <td><p>JS-Abhängigkeiten</p></td>
-   <td><p>processname-Modell</p></td>
+   <td><p>ProcessName-Modell</p></td>
   </tr>
   <tr>
    <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td>
     <ul>
-     <li><p>add - ProcessNameList-Modell </p></li>
-     <li><p>fetched:processnames - ProcessNameList-Modell </p></li>
-     <li><p>change - ProcessNameList-Modell </p></li>
+     <li><p>add – ProcessNameList-Modell </p></li>
+     <li><p>fetched:processnames – ProcessNameList-Modell </p></li>
+     <li><p>change – ProcessNameList-Modell </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -586,7 +586,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
 
 >[!NOTE]
 >
->ProcessNameList ist nicht von anderen Komponenten abhängig. Intern ist es jedoch von der Modellklasse ProcessInstanceList abhängig, die wiederum von anderen Komponenten abhängig ist. Daher verwendet ProcessNameList viele Modellklassen wie ProcessInstanceList, ProcessInstance, TaskList, TeamTask und Task. Neben diesen Abhängigkeiten kann ProcessNameList unabhängig verwendet werden.
+>ProcessNameList ist nicht von anderen Komponenten abhängig. Intern besteht jedoch eine Abhängigkeit von der Modellklasse „ProcessInstanceList“, die wiederum von anderen Komponenten abhängig ist. Daher verwendet ProcessNameList viele Modellklassen wie ProcessInstanceList, ProcessInstance, TaskList, TeamTask und Task. Abgesehen von diesen Abhängigkeiten kann ProcessNameList unabhängig verwendet werden.
 
 ## ProcessName {#processname}
 
@@ -598,7 +598,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
   </tr>
   <tr>
    <td><p>Anzeigen</p></td>
-   <td><p>processname (in processnamelist.js)</p></td>
+   <td><p>ProcessName (in processnamelist.js)</p></td>
   </tr>
   <tr>
    <td><p>Vorlage</p></td>
@@ -614,7 +614,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
   </tr>
   <tr>
    <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
-   <td><p>change - ProcessName-Modell </p></td>
+   <td><p>change – ProcessName-Modell </p></td>
   </tr>
  </tbody>
 </table>
@@ -633,7 +633,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
   </tr>
   <tr>
    <td><p>Vorlage</p></td>
-   <td><p>tracking.html (im Ordner "route")</p></td>
+   <td><p>tracking.html (im Ordner „route“)</p></td>
   </tr>
   <tr>
    <td><p>Erfordert Komponenten</p></td>
@@ -641,14 +641,14 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
   </tr>
   <tr>
    <td><p>JS-Abhängigkeiten</p></td>
-   <td><p>processname-Modell</p></td>
+   <td><p>ProcessName-Modell</p></td>
   </tr>
   <tr>
    <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td>
     <ul>
-     <li><p>processname:selected - ProcessNameList-Modell </p></li>
-     <li><p>processname:instancesfetched - ProcessNameList-Modell </p></li>
+     <li><p>processname:selected – ProcessNameList-Modell </p></li>
+     <li><p>processname:instancesfetched – ProcessNameList-Modell </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -656,7 +656,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
 
 >[!NOTE]
 >
->ProcessInstanceList erwartet ein Ereignis von ProcessNameList, das den Prozessnamen zum Abrufen und Anzeigen von Instanzen angibt. Um ProcessInstanceList unabhängig zu verwenden, simulieren Sie den Ereignis-Trigger separat.
+>ProcessInstanceList erwartet ein Ereignis von ProcessNameList, das den Prozessnamen für das Abrufen und Anzeigen von Instanzen angibt. Um ProcessInstanceList unabhängig zu verwenden, simulieren Sie den Ereignisauslöser separat.
 
 ## ProcessInstance {#processinstance}
 
@@ -668,7 +668,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
   </tr>
   <tr>
    <td><p>Anzeigen</p></td>
-   <td><p>processname in processnamelist.js</p></td>
+   <td><p>ProcessName (in processnamelist.js)</p></td>
   </tr>
   <tr>
    <td><p>Vorlage</p></td>
@@ -684,7 +684,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
   </tr>
   <tr>
    <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
-   <td><p>change - ProcessInstance-Modell </p></td>
+   <td><p>change – ProcessInstance-Modell </p></td>
   </tr>
  </tbody>
 </table>
@@ -713,7 +713,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>JS-Abhängigkeiten</p></td>
    <td>
     <ul>
-     <li><p>processname-Modell</p></li>
+     <li><p>ProcessName-Modell</p></li>
      <li><p>history-Dienstprogramm</p></li>
     </ul></td>
   </tr>
@@ -721,9 +721,9 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td>
     <ul>
-     <li><p>processname:selected - ProcessNameList-Modell </p></li>
-     <li><p>processinstance:selected - ProcessInstanceList-Modell </p></li>
-     <li><p>tasksFetched - ProcessInstance-Modell </p></li>
+     <li><p>processname:selected – ProcessNameList-Modell </p></li>
+     <li><p>processinstance:selected – ProcessInstanceList-Modell </p></li>
+     <li><p>tasksFetched – ProcessInstance-Modell </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -731,7 +731,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
 
 >[!NOTE]
 >
->ProcessInstanceHistory erwartet ein Ereignis von ProcessInstanceList, das angibt, welcher Verlauf der Prozessinstanz angezeigt werden soll. Neben dieser Abhängigkeit kann die Komponente unabhängig verwendet werden.
+>ProcessInstanceHistory erwartet ein Ereignis von ProcessInstanceList, das angibt, für welche Prozessinstanz der Verlauf angezeigt werden soll. Abgesehen von dieser Abhängigkeit kann die Komponente unabhängig verwendet werden.
 
 ## OutofOffice {#outofoffice}
 
@@ -755,16 +755,16 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
   </tr>
   <tr>
    <td><p>JS-Abhängigkeiten</p> </td>
-   <td><p>usersearch-Ansicht</p> </td>
+   <td><p>UserSearch-Ansicht</p> </td>
   </tr>
   <tr>
    <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p> </td>
    <td>
     <ul>
-     <li><p>outOfOfficeSettingsFetched - OutofOffice-Modell</p> </li>
-     <li><p>outOfOfficeSettingsSaved - OutofOffice-Modell</p> </li>
-     <li><p>processesFetched - OutofFoffice-Modell</p> </li>
-     <li><p>principalSelected - principalsearch-Ansicht</p> </li>
+     <li><p>outOfOfficeSettingsFetched – OutofOffice-Modell</p> </li>
+     <li><p>outOfOfficeSettingsSaved – OutofOffice-Modell</p> </li>
+     <li><p>processesFetched – OutofOffice-Modell</p> </li>
+     <li><p>principalSelected – PrincipalSearch-Ansicht</p> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -796,19 +796,19 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
   </tr>
   <tr>
    <td><p>JS-Abhängigkeiten</p> </td>
-   <td><p>usersearch-Ansicht</p> </td>
+   <td><p>UserSearch-Ansicht</p> </td>
   </tr>
   <tr>
    <td><p>Vom Listener gefundene Ereignisse (Name des Ereignisses – Auslöser)</p> </td>
    <td>
     <ul>
-     <li><p>queueAccessGranted - sharequeue-Modell</p> </li>
-     <li><p>queueAccessRequested - sharequeue-Modell</p> </li>
-     <li><p>givenUsersFetched - sharequeue-Modell</p> </li>
-     <li>accessibleUsersFetched - sharequeue-Modell</li>
-     <li><p>queueAccessRevoked - sharequeue-Modell</p> </li>
-     <li><p>queueAccessRemoved - sharequeue-Modell</p> </li>
-     <li><p>principalSelected - principalsearch-Ansicht</p> </li>
+     <li><p>queueAccessGranted – ShareQueue-Modell</p> </li>
+     <li><p>queueAccessRequested – ShareQueue-Modell</p> </li>
+     <li><p>grantedUsersFetched – ShareQueue-Modell</p> </li>
+     <li>accessibleUsersFetched – ShareQueue-Modell</li>
+     <li><p>queueAccessRevoked – ShareQueue-Modell</p> </li>
+     <li><p>queueAccessRemoved – ShareQueue-Modell</p> </li>
+     <li><p>principalSelected – PrincipalSearch-Ansicht</p> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -846,8 +846,8 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td>
     <ul>
-     <li><p>preferencesFetched - UISettings-Modell </p></li>
-     <li><p>settingUpdated - UISettings-Modell </p></li>
+     <li><p>preferencesFetched – UISettings-Modell </p></li>
+     <li><p>settingUpdated – UISettings-Modell </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -882,7 +882,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>nicht vorhanden</p></td>
   </tr>
   <tr>
-   <td><p>Listener Ereignisse</p></td>
+   <td><p>Listener-Ereignisse</p></td>
    <td><p>nicht vorhanden</p></td>
   </tr>
  </tbody>
@@ -921,8 +921,8 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td>
     <ul>
      <li>userImageUrlFetched – UserInfo-Modell</li>
-     <li>sessionRenewed - userinfo-Modell <br /> </li>
-     <li>sessionExpired - userinfo-Modell </li>
+     <li>sessionRenewed – UserInfo-Modell <br /> </li>
+     <li>sessionExpired – UserInfo-Modell </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -958,7 +958,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
   </tr>
   <tr>
    <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
-   <td><p>newWsError - Wserror-Modell </p></td>
+   <td><p>newWsError – WSError-Modell </p></td>
   </tr>
  </tbody>
 </table>
@@ -991,8 +991,8 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p> </td>
    <td>
     <ul>
-     <li>principalSearched - principalsearch-Modell</li>
-     <li>outOfOfficeInfoFetched - UserSearch-Modell</li>
+     <li>principalSearched – PrincipalSearch-Modell</li>
+     <li>outOfOfficeInfoFetched – UserSearch-Modell</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -1024,7 +1024,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
   </tr>
   <tr>
    <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p> </td>
-   <td><p>templateFetched- searchtemplate-Modell</p> </td>
+   <td><p>templateFetched – SearchTemplate-Modell</p> </td>
   </tr>
  </tbody>
 </table>
@@ -1043,7 +1043,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
   </tr>
   <tr>
    <td><p>Vorlage</p> </td>
-   <td><p>tracking.html (im Ordner "route")</p> </td>
+   <td><p>tracking.html (im Ordner „route“)</p> </td>
   </tr>
   <tr>
    <td><p>Erfordert Komponenten</p> </td>
@@ -1051,11 +1051,11 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
   </tr>
   <tr>
    <td><p>JS-Abhängigkeiten</p> </td>
-   <td><p>searchtemplate-Modell</p> </td>
+   <td><p>SearchTemplate-Modell</p> </td>
   </tr>
   <tr>
    <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p> </td>
-   <td><p>change - searchtemplatelist-Modell</p> </td>
+   <td><p>change – SearchTemplateList-Modell</p> </td>
   </tr>
  </tbody>
 </table>

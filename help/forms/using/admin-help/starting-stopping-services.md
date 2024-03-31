@@ -10,41 +10,41 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '299'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
 
 # Starten und Anhalten von Diensten {#starting-and-stopping-services}
 
-Es gibt zwei Arten von Diensten, die Teil AEM Formularen sind:
+Es gibt zwei Arten von Diensten, die Teil von AEM Formularen sind:
 
-* Dienste, die den AEM forms-Anwendungsserver und die Datenbank steuern.
-* Dienste, die AEM Formularmodule steuern
+* Dienste, die den AEM Forms-Anwendungs-Server und die Datenbank steuern.
+* Services, die AEM Forms-Module steuern
 
-## Dienste starten oder beenden, die mit AEM Formularmodulen verknüpft sind {#start-or-stop-the-services-associated-with-aem-forms-modules}
+## Starten oder Beenden von Diensten, denen AEM Forms-Module zugeordnet sind {#start-or-stop-the-services-associated-with-aem-forms-modules}
 
-AEM Formularmodule (z. B. Forms, Rights Management, Output) fungieren als Dienste. Manchmal müssen Sie die Dienste für diese AEM Formularmodule anhalten oder starten. Beispielsweise müssen Sie einen AEM Forms-Dienst beenden und neu starten, nachdem Sie eine Einstellung für den Dienst geändert haben.
+AEM Forms-Module (z. B. Forms, Rights Management, Output) arbeiten als Dienste.  Manchmal müssen die Dienste für diese AEM Forms-Module beendet und neu gestartet werden.  Beispielsweise müssen Sie einen AEM Forms-Dienst beenden und wieder neu starten, nachdem Sie Einstellungen des Dienstes geändert haben.
 
 >[!NOTE]
 >
-> Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mithilfe alternativer Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+> Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 1. Klicken Sie in der Administration-Console auf **Services** > **Programme und Services** > **Service-Verwaltung**.
-1. Aktivieren Sie auf der Seite &quot;Dienstverwaltung&quot;das Kontrollkästchen neben dem Dienst, der angehalten oder gestartet werden soll, und klicken Sie auf &quot;Beenden&quot;oder &quot;Starten&quot;.
+1. Wählen Sie auf der Seite „Dienstverwaltung“ das Kontrollkästchen neben dem zu beendenden oder startenden Dienst aus und klicken Sie auf „Beenden“ bzw. „Starten“.
 
-## Dienste für den Anwendungsserver und die Datenbank starten oder beenden {#start-or-stop-services-for-the-application-server-and-database}
+## Starten und Beenden von Diensten für den Anwendungs-Server und die Datenbank {#start-or-stop-services-for-the-application-server-and-database}
 
-Eine vollständige Implementierung AEM Formulars umfasst einen Anwendungsserver und Datenbankdienste:
+Eine vollständige Implementierung von AEM Forms umfasst einen Anwendungs-Server und Datenbankdienste:
 
 * *`[application server]`* für AEM Forms
 * *`[database]`* für AEM Forms
 
-Unter Windows sind diese Services über **Verwaltung** > **Dienste** zugänglich. Wenn Sie beispielsweise AEM Formulare mithilfe der Turnkey-Methode auf JBoss installiert haben, sind die folgenden Dienste auf Ihrem System verfügbar:
+Unter Windows sind diese Services über **Verwaltung** > **Dienste** zugänglich. Wenn Sie z. B. AEM Forms unter JBoss mit der Turnkey-Methode installiert haben, stehen auf Ihrem System die folgenden Dienste zur Verfügung:
 
-* JBoss für Adobe Experience Manager forms
-* MySQL für Adobe Experience Manager forms
+* JBoss für Adobe Experience Manager Forms
+* MySQL für Adobe Experience Manager Forms
 
-Starten oder stoppen Sie diese Dienste, indem Sie sie in der Liste im Bedienfeld Dienste auswählen und dann auf die entsprechende Aktionsschaltfläche im Bedienfeld klicken.
+Sie können diese Dienste starten bzw. beenden, indem Sie sie in der Liste im Bereich „Dienste“ auswählen und anschließend auf die entsprechende Aktionsschaltfläche klicken.
 
 Unter UNIX® oder Linux geben Sie folgenden Text an einer Befehlszeile ein, wobei *`[service name]`* der Name des zu überprüfenden Services ist:
 

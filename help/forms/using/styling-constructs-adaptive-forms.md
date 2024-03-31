@@ -1,6 +1,6 @@
 ---
 title: Stilkonstrukte für adaptive Formulare
-description: Verwenden Sie LESS-Framework, um das Erscheinungsbild adaptiver Formulare anzupassen.
+description: Verwenden Sie das LESS-Framework, um das Erscheinungsbild adaptiver Formulare anzupassen.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 docset: aem65
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2352'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -24,13 +24,13 @@ Kenntnisse im Umgang mit CSS und dem LESS-Framework.
 
 ## Was angepasst werden kann {#what-can-be-customized}
 
-Der Artikel listet öffentlich verfügbare CSS-Klassen von adaptiven Formularen. Sie können diese Klassen verwenden, um verschiedene Komponenten eines adaptiven Formulars zu formatieren. Das Gestalten von Authoring-Komponenten, wie Dialogfelder und Statusleisten, die Warnhinweise anzeigen, würde den Rahmen dieses Artikels sprengen. Verwenden Sie diese Stilkonstrukte, um Stile (mit CSS oder LESS) nur dann zu erstellen, wenn Sie mit dem [Designeditor](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/themes.html) keine Komponenten formatieren können.
+Der Artikel listet öffentlich verfügbare CSS-Klassen von adaptiven Formularen. Sie können diese Klassen nutzen, um verschiedene Komponenten eines adaptiven Formulars zu gestalten. Das Gestalten von Authoring-Komponenten, wie Dialogfelder und Statusleisten, die Warnhinweise anzeigen, würde den Rahmen dieses Artikels sprengen. Verwenden Sie diese Stilkonstrukte, um Stile (mit CSS oder LESS) nur dann zu erstellen, wenn Sie mit dem [Designeditor](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/themes.html) keine Komponenten formatieren können.
 
 ## Anpassen von Stilen in adaptiven Formularen {#customizing-styles-in-adaptive-forms}
 
-Das LESS-Framework vereinfacht das Anwendungsbeispiel zum Anpassen von Stilen in adaptiven Formularen. Mit dem Framework können Sie Stile mit einem Satz von Variablen und Funktionen (Mixins) definieren. Das LESS-Framework hilft, die Größe des gebündelten Codes zu reduzieren und seine Wiederverwendbarkeit zu verbessern.
+Das LESS-Framework vereinfacht die Anpassung von Stilen in adaptiven Formularen. Mit dem Framework können Sie Stile mit einem Satz von Variablen und Funktionen (Mixins) definieren. Das LESS-Framework hilft, die Größe des gebündelten Codes zu reduzieren und seine Wiederverwendbarkeit zu verbessern.
 
-Sie können adaptive Formularstile wie folgt anpassen:
+Sie können Stile adaptiver Formulare wie folgt anpassen:
 
 * Design ändern
 * Stil der Komponente ändern
@@ -55,7 +55,7 @@ Derzeit sind LESS-Variablen nur für diese Eigenschaften der verschiedenen Eleme
 
 ## Änderung des Komponentenstils {#changing-component-style}
 
-Sie können Änderungen an Aussehen, Layout, Positionierung und Sichtbarkeit von Elementen vornehmen. Erstellen oder aktualisieren Sie dazu Ihre benutzerdefinierten CSS-Dateien und beziehen sie dabei die in diesem Artikel aufgeführten Designkonstrukte ein.
+Sie können Änderungen am Erscheinungsbild, am Layout, an der Positionierung und an der Sichtbarkeit von Elementen vornehmen. Erstellen oder aktualisieren Sie dazu Ihre benutzerdefinierten CSS-Dateien und beziehen sie dabei die in diesem Artikel aufgeführten Design-Konstrukte ein.
 
 Um ein Design auf ein adaptives Formular anzuwenden, öffnen Sie das adaptive Formular zum Bearbeiten, öffnen Sie den Container mit den Eigenschaften des adaptiven Formulars und geben Sie im Basisregister den Pfad der benutzerdefinierten CSS-Datei ein. Standard-Designkonstrukte des adaptiven Formulars und mit den in der benutzerdefinierten CSS-Datei aufgeführten Konstrukten überschriebene Konstrukte.
 
@@ -103,7 +103,7 @@ Ein Container ist die Komponente der obersten Ebene. Andere Bedienfelder und Fel
 
 ## Feldstile {#field-styling}
 
-Adaptive Formulare umfassen verschiedene Feldtypen. Jedes Feld verfügt über einen eindeutigen Klassennamen, der der Name des Feldes ist. Das Feld enthält außerdem den gemeinsamen Klassennamen `guideFieldNode`.
+Adaptive Formulare enthalten verschiedene Arten von Feldern. Jedes Feld verfügt über einen eindeutigen Klassennamen, der der Name des Feldes ist. Das Feld enthält außerdem den gemeinsamen Klassennamen `guideFieldNode`.
 
 Felder enthalten Bezeichnungen, Widgets, Hilfebeschreibung (lange und kurze) sowie Feldhilfesymbole (Fragezeichen).
 
@@ -351,7 +351,7 @@ Mit dem Geschäftsbedingungs-(TnC `` ``)-Widget können Sie Geschäftsbedingunge
 
 ## Schaltfläche {#button}
 
-Schaltflächen sind auch Widgets. Ihr Stil unterscheidet sich jedoch geringfügig von den Widgets. In adaptiven Formularen stellt Folgendes eine Schaltfläche dar:
+Schaltflächen sind auch Widgets. Ihr Stil unterscheidet sich jedoch geringfügig von den Widgets. In adaptiven Formularen bildet Folgendes eine Schaltfläche:
 
 * input[type = text]
 * Schaltfläche
@@ -534,7 +534,7 @@ Sie können das Farbschema für Kopf- und Textzeilen in einer Tabelle ändern, i
 
 ## Dateianhang {#file-attachment}
 
-Mit dem Dateianhang-Widget von adaptiven Formularen können Sie Dateien hochladen. Sie können außerdem das Widget mithilfe von Variablen anpassen.
+Mit dem Dateianhangs-Widget von adaptiven Formularen können Sie Dateien hochladen. Sie können außerdem das Widget mithilfe von Variablen anpassen.
 
 <table>
  <tbody>

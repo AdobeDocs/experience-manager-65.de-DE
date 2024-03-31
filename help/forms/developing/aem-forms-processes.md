@@ -1,6 +1,6 @@
 ---
 title: Grundlagen zu AEM Forms-Prozessen
-description: Erfahren Sie, wie AEM Forms-Prozesse Formularerstellung, Übermittlung, Datenverarbeitung, Validierung, Integration, Workflow-Automatisierung und Ausgabeverwaltung umfassen.
+description: Erfahren Sie, inwiefern AEM Forms-Prozesse Formularerstellung, Übermittlung, Datenverarbeitung, Validierung, Integration, Workflow-Automatisierung und Ausgabeverwaltung umfassen.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 91%
 
 Ein gängiges Anwendungsbeispiel besteht darin, dass eine Reihe von AEM Forms-Services mit einem einzigen Dokument arbeiten kann. Sie können eine Anfrage an den Service-Container senden, indem Sie einen Prozess mithilfe von Workbench erstellen. Ein Workflow stellt einen Geschäftsprozess dar, den Sie automatisieren. Informationen zum Erstellen von Prozessen finden Sie unter [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_de).
 
-Sobald ein Prozess aktiviert wird, wird er zu einem Service und kann wie andere Services aufgerufen werden. Ein Unterschied zwischen einem Standard-Service, wie dem Verschlüsselungs-Service, und einem Service, der aus einem Prozess entstanden ist, besteht darin, dass letzterer einen Vorgang hat, die viele Aktionen ausführt. Ein Standarddienst weist dagegen viele Vorgänge auf. Jeder Vorgang führt in der Regel nur eine Aktion durch, z. B. das Anwenden einer Richtlinie auf ein Dokument oder das Verschlüsseln eines Dokuments.
+Sobald ein Prozess aktiviert wird, wird er zu einem Service und kann wie andere Services aufgerufen werden. Ein Unterschied zwischen einem Standard-Service, wie dem Verschlüsselungs-Service, und einem Service, der aus einem Prozess entstanden ist, besteht darin, dass letzterer einen Vorgang hat, die viele Aktionen ausführt. Ein Standard-Service weist dagegen viele Vorgänge auf. Jeder Vorgang führt in der Regel nur eine Aktion durch, z. B. das Anwenden einer Richtlinie auf ein Dokument oder das Verschlüsseln eines Dokuments.
 
 Prozesse können kurzlebig oder langlebig sein. Ein kurzlebiger Prozess ist ein Vorgang, der synchron und in demselben Ausführungs-Thread ausgeführt wird, von dem aus er aufgerufen wurde. Kurzlebige Vorgänge sind mit dem Standardverhalten in den meisten Programmiersprachen vergleichbar, bei dem ein Client-Programm eine Methode aufruft und auf einen Rückgabewert wartet.
 
@@ -29,7 +29,7 @@ Es gibt jedoch Situationen, in denen ein Prozess aufgrund von Faktoren wie den f
 
 * Ein Prozess kann eine erhebliche Zeitspanne umfassen.
 * Ein Prozess kann organisatorische Grenzen überschreiten.
-* Ein Prozess benötigt eine externe Eingabe, damit er abgeschlossen werden kann. Angenommen, ein Formular wird an einen Manager gesendet, der nicht im Büro ist. In diesem Fall ist der Prozess erst abgeschlossen, wenn der Manager das Formular zurückgibt und ausfüllt.
+* Zur Beendigung eines Prozesses ist eine externe Eingabe erforderlich. Angenommen, ein Formular wird an einen Manager gesendet, der nicht im Büro ist. In diesem Fall ist der Prozess erst abgeschlossen, wenn der Manager das Formular zurückgibt und ausfüllt.
 
   Diese Arten von Prozessen werden als langlebige Prozesse bezeichnet. Ein langlebiger Prozess wird asynchron ausgeführt, sodass Systeme so interagieren können, wie es die Ressourcen zulassen, und das Tracking und die Überwachung des Vorgangs ermöglicht wird. Wenn ein langlebiger Prozess aufgerufen wird, erstellt AEM Forms einen Aufrufkennungswert als Teil eines Datensatzes, der den langlebigen Prozessstatus verfolgt. Der Datensatz wird in der AEM Forms-Datenbank gespeichert. Sie können langlebige Prozesseinträge löschen, wenn sie nicht mehr benötigt werden.
 
@@ -59,10 +59,10 @@ Wenn dieser kurzlebige Prozess aufgerufen wird, führt er die folgenden Aktionen
    >
    >In der Regel besteht ein kurzlebiger Prozess aus mehr als drei Aktionen. Sie erstellen einen Prozess mithilfe von Workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_de).)
 
-   *Programmieren mit AEM* beschreibt die folgenden Methoden, mit denen Sie diesen kurzlebigen Prozess programmgesteuert aufrufen können:
+   Unter *Programmieren mit AEM Forms* werden die folgenden Methoden beschrieben, mit denen Sie diesen kurzlebigen Prozess programmgesteuert aufrufen können:
 
    * [Aufrufen eines kurzlebigen Prozesses durch Übergeben eines unsicheren Dokuments mithilfe von AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (Verwenden eines Flex-Programms)
-   * [Aufrufen eines kurzlebigen Prozesses mithilfe der Aufruf-API](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (Java™-Aufruf-API)
+   * [Aufrufen eines kurzlebigen Prozesses mithilfe der Aufruf-API](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (Java™ Invocation API)
    * [Aufrufen von AEM Forms mithilfe der Base64-Codierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) (Beispiel für einen Webservice)
    * [Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (Beispiel für einen Webservice)
    * [Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (Beispiel für einen Webservice)

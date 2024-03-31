@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '7848'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -589,7 +589,7 @@ In diesem Dokument wird der Ausdruck *natives Programm* verwendet, um das Progra
 1. Öffnen des Dialogfeldes „Drucken“ durch Auswählen von „Datei“ und „Drucken“
 1. Sicherstellen, dass das Dialogfeld „Drucken“ angezeigt wird
 
-AppMon verwendet standardmäßige Win32-APIs, um mit Drittanbieteranwendungen zu interagieren und Benutzeroberflächenereignisse wie Tastenanschläge und Mausklicks zu übertragen. Dies ist nützlich, um diese Anwendungen zur Erstellung von PDF-Dateien zu steuern.
+AppMon verwendet standardmäßige Win32-APIs, um mit Drittanbieteranwendungen zu interagieren und Benutzenden Benutzeroberflächen-Ereignisse wie Tastenanschläge und Mausklicks zu übermitteln. Dadurch werden diese Anwendungen so gesteuert, dass aus ihnen heraus PDF-Dateien erzeugt werden.
 
 Aufgrund einer Einschränkung bei diesen Win32-APIs kann AppMon diese Benutzeroberflächenereignisse nicht an bestimmte Arten von Fenstern, wie z. B. unverankerte Menüleisten (in einigen Programmen, wie beispielsweise TextPad, enthalten) und bestimmte Arten von Dialogfeldern, deren Inhalt nicht mithilfe der Win32-APIs abgerufen werden kann, senden.
 
@@ -616,7 +616,7 @@ In dieser Tabelle sind die Informationstypen aufgeführt, die beim Drucken nativ
   <tr>
    <td><p>Script </p></td>
    <td><p>Gibt Interaktionen zwischen dem Generate PDF-Service und einem nativen Programm an. Durch diese Interaktionen wird normalerweise das Programm zum Drucken einer Datei an den Adobe PDF-Treiber weitergeleitet. </p><p>Das Skript enthält Anweisungen, die das native Programm anweisen, bestimmte Dialogfelder zu öffnen, und die bestimmte Antworten auf Felder und Schaltflächen in diesen Dialogfeldern bereitstellen. </p></td>
-   <td><p>Der Generate PDF-Service schließt Skriptdateien für alle unterstützten nativen Programme ein. Diese Dateien lassen sich mithilfe eines Programms zur Bearbeitung von XML modifizieren.</p><p>Um Unterstützung für eine neue native Anwendung hinzuzufügen, müssen Sie eine Skriptdatei erstellen. (Siehe <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Erstellen oder Modifizieren einer zusätzlichen XML-Dialogfelddatei für ein natives Programm</a>.) </p></td>
+   <td><p>Der Generate PDF-Service schließt Skriptdateien für alle unterstützten nativen Programme ein. Diese Dateien lassen sich mithilfe eines Programms zur Bearbeitung von XML modifizieren.</p><p>Um Unterstützung für eine neue native Anwendung hinzuzufügen, müssen Sie eine neue Skriptdatei erstellen. (Siehe <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Erstellen oder Modifizieren einer zusätzlichen XML-Dialogfelddatei für ein natives Programm</a>.) </p></td>
   </tr>
   <tr>
    <td><p>Allgemeine Dialogfeldanweisungen </p></td>
@@ -631,7 +631,7 @@ In dieser Tabelle sind die Informationstypen aufgeführt, die beim Drucken nativ
   <tr>
    <td><p>Zusätzliche anwendungsspezifische Dialogfeldanweisungen </p></td>
    <td><p>Geben Überschreibungen und Hinzufügungen zu anwendungsspezifischen Dialogfeldanweisungen an. Der Abschnitt enthält ein Beispiel für solche Informationen. </p><p>Die Datei, die diese Informationen enthält, ist „appmon“.<i>`[appname]`</i>.addition.<i>`[locale]`</i>.xml. Ein Beispiel ist „appmon.addition.de_DE.xml“.</p></td>
-   <td><p>Dateien dieses Typs können mit einem Programm zur XML-Bearbeitung erstellt und geändert werden. (Siehe <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Erstellen oder Ändern einer zusätzlichen XML-Dialogfelddatei für ein natives Programm</a>.) </p><p><strong>Wichtig</strong>: Erstellen Sie zusätzliche anwendungsspezifische Dialogfeldanweisungen für jede native Anwendung, die Ihr Server unterstützt. </p></td>
+   <td><p>Dateien dieses Typs können mit einem Programm zur XML-Bearbeitung erstellt und geändert werden. (Siehe <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Erstellen oder Ändern einer zusätzlichen XML-Dialogfelddatei für ein natives Programm</a>.) </p><p><strong>Wichtig</strong>: Sie müssen für jede native Anwendung, die Ihr Server unterstützt, zusätzliche anwendungsspezifische Dialogfeldanweisungen erstellen. </p></td>
   </tr>
  </tbody>
 </table>
@@ -670,7 +670,7 @@ Die Unterstützung des Services „Generate PDF“ für XML-Skriptdateien soll d
 
 Die Schritte in einer XML-Skriptdatei werden der Reihe nach ausgeführt, ohne die Möglichkeit einer Verzweigung. Der einzige unterstützte bedingte Test ist die Zeitüberschreitung/Wiederholung, wodurch ein Skript beendet wird, wenn ein Schritt nicht innerhalb eines bestimmten Zeitraums und nach einer bestimmten Anzahl weiterer Versuche erfolgreich abgeschlossen wird.
 
-Die Anweisungen in einem Schritt sind nicht nur sequenziell, sondern werden auch der Reihe nach ausgeführt. Stellen Sie sicher, dass die Schritte und Anweisungen die Reihenfolge widerspiegeln, in der ein Benutzer die gleichen Schritte durchführt.
+Die Anweisungen in einem Schritt sind nicht nur sequenziell, sondern werden auch der Reihe nach ausgeführt. Stellen Sie sicher, dass die Schritte und Anweisungen der Reihenfolge entsprechen, in der Benutzende diese Schritte ausführen würden.
 
 Jeder Schritt in einer XML-Skriptdatei identifiziert das Fensterelement, das angezeigt werden soll, wenn die Anweisungen des Schritts erfolgreich ausgeführt wurden. Wird während der Ausführung eines Skriptschritts ein unerwartetes Dialogfeld angezeigt, durchsucht der Service „Generate PDF“ die XML-Dialogfelddateien, wie im nächsten Abschnitt beschrieben.
 
@@ -793,7 +793,7 @@ Sie können reguläre Ausdrücke in Beschriftungsspezifikationen verwenden. Der 
 
 #### Sortieren von window- und windowList-Elementen {#ordering-the-window-and-windowlist-elements}
 
-Bestellung `window` und `windowList` -Elemente wie folgt:
+Ordnen Sie die `window`- und `windowList`-Elemente wie folgt an:
 
 * Wenn mehrere `window` -Elemente werden als untergeordnete Elemente in `windowList` oder `dialog` -Element, diese sortieren `window` -Elemente in absteigender Reihenfolge, mit den Längen der `caption` Namen, die die Position in der Reihenfolge angeben.
 * Wenn mehrere `windowList`-Elemente in einem `window`-Element enthalten sind, sortieren Sie diese `windowList`-Elemente in absteigender Reihenfolge, wobei den Längen der `caption`-Attribute des ersten `indexes/`-Elements die Position in der Reihenfolge angeben.
@@ -861,7 +861,7 @@ Der Name der zusätzlichen XML-Dialogfelddatei muss das Format `appmon.[applicat
 >
 >Keines der generischen Programme, die in der Konfigurationsdatei „native2pdfconfig.xml“ angegeben sind, verfügt über eine primäre XML-Dialogfelddatei. Der Abschnitt [Hinzufügen oder Ändern der Unterstützung für ein natives Dateiformat](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) beschreibt solche Spezifikationen.
 
-Bestellung `windowList` -Elemente, die als untergeordnete Elemente in einer `window` -Element. (Siehe [Sortieren von window- und windowList-Elementen](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
+Ordnen Sie die `windowList`-Elemente an, die als untergeordnete Elemente in einem `window`-Element erscheinen. (Siehe [Sortieren von window- und windowList-Elementen](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
 
 ### Ändern der allgemeinen XML-Dialogfelddatei {#modifying-the-general-dialog-xml-file}
 

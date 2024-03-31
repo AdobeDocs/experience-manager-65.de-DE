@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2203'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -21,23 +21,23 @@ ht-degree: 84%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
 ## Einführung {#introduction}
 
-Sie können die Felder eines adaptiven Formulars mit vorhandenen Daten vorbefüllen. Wenn ein Benutzer ein Formular öffnet, werden die Werte für diese Felder vorbefüllt. Um Daten in einem adaptiven Formular vorab auszufüllen, stellen Sie die Benutzerdaten als XML/JSON zum Vorausfüllen in dem Format bereit, das der Datenstruktur für adaptive Formulare im Voraus entspricht.
+Sie können die Felder eines adaptiven Formulars mit vorhandenen Daten vorbefüllen. Wenn ein Benutzer ein Formular öffnet, werden die Werte für diese Felder vorbefüllt. Um ein adaptives Formular mit Daten vorzufüllen, stellen Sie die Benutzerdaten als vorbefüllte XML/JSON in dem Format bereit, das der Datenstruktur zum Vorbefüllen von adaptiven Formularen entspricht.
 
 ## Struktur der Vorbefüllungsdaten {#the-prefill-structure}
 
 Ein adaptives Formular kann eine Mischung aus gebundenen und ungebundenen Feldern enthalten. Gebundene Felder sind diejenigen, die aus der Registerkarte für die Inhaltssuche gezogen werden und einen nicht leeren Wert für die `bindRef`-Eigenschaft im Dialogfeld zum Bearbeiten von Feldern enthalten. Ungebundene Felder werden direkt aus dem Sidekick gezogen und haben einen leeren `bindRef`-Wert.
 
-Sie können sowohl gebundene als auch ungebundene Felder eines adaptiven Formulars im Voraus ausfüllen. Die Vorbefüllungsdaten enthalten die Abschnitte afBoundData und afUnBoundData , um sowohl gebundene als auch ungebundene Felder eines adaptiven Formulars vorab auszufüllen. Der Abschnitt `afBoundData` enthält die Daten zum Vorbefüllen für gebundene Felder und Bereiche. Diese Daten müssen mit dem verknüpften Formularmodellschema konform sein:
+Sie können sowohl gebundene als auch ungebundene Felder eines adaptiven Formulars vorbefüllen. Die Vorbefüllungsdaten enthalten die Abschnitte „afBoundData“ und „afUnBoundData“, um sowohl gebundene als auch ungebundene Felder eines adaptiven Formulars vorzubefüllen. Der Abschnitt `afBoundData` enthält die Daten zum Vorbefüllen für gebundene Felder und Bereiche. Diese Daten müssen mit dem verknüpften Formularmodellschema konform sein:
 
-* Für adaptive Formulare, die die [XFA-Formularvorlage](../../forms/using/prepopulate-adaptive-form-fields.md)verwenden Sie die XML zum Vorbefüllen, die mit dem Datenschema der XFA-Vorlage konform ist.
-* Für adaptive Formulare mit [XML-Schema](#xml-schema-af)verwenden Sie die XML zum Vorbefüllen, die mit der XML-Schemastruktur konform ist.
-* Für adaptive Formulare mit [JSON-Schema](#json-schema-based-adaptive-forms)verwenden Sie die JSON-Vorbefüllungs-JSON, die mit dem JSON-Schema konform ist.
-* Verwenden Sie für adaptive Formulare mit dem FDM-Schema die JSON-Datei zum Vorbefüllen, die mit dem FDM-Schema konform ist.
+* Bei adaptiven Formularen mit der [XFA-Formularvorlage](../../forms/using/prepopulate-adaptive-form-fields.md) muss die XML zum Vorbefüllen mit dem Datenschema der XFA-Vorlage konform sein.
+* Bei adaptiven Formularen mit [XML-Schema](#xml-schema-af) muss die XML zum Vorbefüllen mit der XML-Schemastruktur konform sein.
+* Bei adaptiven Formularen mit dem [JSON-Schema](#json-schema-based-adaptive-forms) muss die JSON zum Vorbefüllen mit dem JSON-Schema konform sein.
+* Bei adaptiven Formularen mit dem FDM-Schema muss die JSON zum Vorbefüllen mit dem FDM-Schema konform sein.
 * Bei adaptiven Formularen [ohne Formularmodell](#adaptive-form-with-no-form-model) gibt es keine gebundenen Daten. Jedes Feld ist ein ungebundenes Feld und wird anhand der ungebundenen XML vorausgefüllt.
 
 ### XML-Beispielstruktur zum Vorbefüllen {#sample-prefill-xml-structure}
@@ -95,9 +95,9 @@ Prefill-Submit-Data-ContentPackage.zip
 [Datei laden](assets/prefill-submit-data-contentpackage.zip)
 Beispiel mit vorbefüllten und übermittelten Daten
 
-### XML-schemabasierte adaptive Formulare  {#xml-schema-af}
+### XML-Schema-basierte adaptive Formulare  {#xml-schema-af}
 
-Die Struktur von XML zum Vorbefüllen und der gesendeten XML für adaptive Formulare, die auf dem XML-Schema basieren, sieht wie folgt aus:
+Die Struktur von Prefill-XML und von eingereichten XML für adaptive Formulare, die auf XML-Schemata basieren, ist wie folgt:
 
 * **XML-Struktur zum Vorbefüllen**: Die XML zum Vorbefüllen muss mit dem verknüpften XML-Schema konform sein. Um ungebundene Felder vorzubefüllen, umschließen Sie die XML-Struktur zum Vorbefüllen in das Tag „/afData/afBoundData“.
 * **Übermittelte XML-Struktur**: Wenn keine XML zum Vorbefüllen verwendet wird, enthält die übermittelte XML Daten für gebundene und ungebundene Felder im `afData`-Wrapper-Tag. Wenn die XML zum Vorbefüllen verwendet wird, enthält die übermittelte XML dieselbe Struktur wie die XML zum Vorbefüllen. Wenn die XML zum Vorbefüllen mit dem `afData`-Stamm-Tag beginnt, hat die Ausgabe-XML dasselbe Format. Wenn die XML zum Vorbefüllen nicht den `afData/afBoundData`-Wrapper aufweist und stattdessen direkt aus dem Schemastamm-Tag beginnt wie `employeeData`, beginnt die übermittelte XML ebenfalls mit dem `employeeData`-Tag.
@@ -148,9 +148,9 @@ Bei Feldern, deren Modell das XML-Schema ist, werden die Daten im `afBoundData`-
 </config>
 ```
 
-### JSON-schemabasierte adaptive Formulare {#json-schema-based-adaptive-forms}
+### JSON-Schema-basierte adaptive Formulare {#json-schema-based-adaptive-forms}
 
-Für adaptive Formulare, die auf dem JSON-Schema basieren, wird die Struktur von JSON zum Vorbefüllen und gesendeten JSON unten beschrieben. Weitere Informationen finden Sie unter [Erstellen adaptiver Formulare mithilfe des JSON-Schemas](../../forms/using/adaptive-form-json-schema-form-model.md).
+Für adaptive Formulare, die auf dem JSON-Schema basieren, wird im Folgenden die Struktur von JSONs zum Vorbefüllen und vom übermittelten JSONs beschrieben. Weitere Informationen finden Sie unter [Erstellen von adaptiven Formularen mit dem JSON-Schema](../../forms/using/adaptive-form-json-schema-form-model.md).
 
 * **Struktur von JSON zum Vorbefüllen**: Das JSON zum Vorbefüllen muss mit dem verknüpften JSON-Schema konform sein. Optional kann es in das „/afData/afBoundData“-Objekt eingeschlossen werden, wenn Sie auch ungebundene Felder vorbefüllen möchten.
 * **Übermittelte JSON-Struktur**: Wenn kein JSON zum Vorbefüllen verwendet wird, enthält das übermittelte JSON im „afData-Wrapper“-Tag Daten für gebundene und ungebundene Felder. Wenn das JSON zum Vorbefüllen verwendet wird, enthält das übermittelte JSON dieselbe Struktur wie das JSON zum Vorbefüllen. Wenn das JSON zum Vorbefüllen mit dem „afData“-Stamm-Objekt beginnt, hat das Ausgabe-JSON dasselbe Format. Wenn das JSON zum Vorbefüllen keinen „afData/afBoundData“-Wrapper hat und stattdessen direkt vom Schemastammobjekt startet, z. B. Benutzer, dann startet das übermittelte JSON ebenfalls mit dem Objekt „Benutzer“.
@@ -237,7 +237,7 @@ Um den Vorbefüllungs-Service zu aktivieren, müssen Sie die standardmäßige Vo
 
 >[!NOTE]
 >
->Die Konfiguration des Vorbefüllungs-Dienstes gilt für adaptive Formulare, HTML5-Formulare und HTML5-Formularsätze.
+>Die Vorbefüllungs-Dienstkonfiguration ist auf adaptive Formulare, HTML5-Formulare und HTML5-Formularsätze anwendbar.
 
 1. Öffnen Sie die **[!UICONTROL Adobe Experience Manager Web-Konsolenkonfiguration]** über die URL:\
    https://&lt;server>:&lt;port>/system/console/configMgr
@@ -262,9 +262,9 @@ Um den Vorbefüllungs-Service zu aktivieren, müssen Sie die standardmäßige Vo
 
 ## Die Besonderheit wiederholbarer Bereiche {#the-curious-case-of-repeatable-panels}
 
-Im Allgemeinen werden gebundene (Formularschema) und ungebundene Felder im selben adaptiven Formular erstellt. Im Folgenden finden Sie jedoch einige Ausnahmen, falls die gebundenen Felder wiederholbar sind:
+Im Allgemeinen werden gebundene (Formular-Schema) und ungebundene Felder oder Teilformulare in demselben adaptiven Formular erstellt. Im Folgenden werden allerdings einige Ausnahmen genannt, die gelten, falls die Gebundenen wiederholbar sind:
 
-* Ungebundene wiederholbare Bereiche werden für adaptive Formulare mit der XFA-Formularvorlage, XSD, JSON-Schema oder dem FDM-Schema nicht unterstützt.
+* Ungebundene wiederholbare Bereiche werden bei adaptiven Formularen mit der XFA-Formularvorlage, XSD, JSON-Schema oder dem FDM-Schema nicht unterstützt.
 * Verwenden Sie keine ungebundenen Felder in gebundenen, wiederholbaren Bedienfeldern.
 
 >[!NOTE]
@@ -273,7 +273,7 @@ Im Allgemeinen werden gebundene (Formularschema) und ungebundene Felder im selbe
 
 ## Unterstützte Protokolle zum Vorbefüllen von Benutzerdaten {#supported-protocols-for-prefilling-user-data}
 
-Adaptive Formulare können mit Benutzerdaten im Datenformat zum Vorbefüllen über die folgenden Protokolle vorausgefüllt werden, wenn sie mit einem gültigen Regex konfiguriert sind:
+Adaptive Formulare können mit Benutzerdaten im Vorbefülldatenformat über die folgenden Protokolle vorbefüllt werden, wenn sie mit gültigem Regex konfiguriert sind:
 
 ### „crx://“-Protokoll  {#the-crx-protocol}
 
@@ -343,11 +343,11 @@ Beispieldatei „prefill.jsp“ in der Seitenkomponente
 
 ## Benutzerdefinierter AEM Forms-Vorbefüllungsdienst {#aem-forms-custom-prefill-service}
 
-Sie können den benutzerdefinierten Vorbefüllungs-Service für die Szenarien verwenden, in denen Sie permanent Daten aus einer vordefinierten Quelle lesen. Der Vorbefüllungs-Dienst liest Daten aus definierten Datenquellen und füllt die Felder des adaptiven Formulars mit dem Inhalt der Vorbefüllungs-Datendatei im Voraus aus. Außerdem können Sie dauerhaft vorgefüllte Daten mit einem adaptiven Formular verknüpfen.
+Sie können den benutzerdefinierten Vorbefüllungs-Service für die Szenarien verwenden, in denen Sie permanent Daten aus einer vordefinierten Quelle lesen. Der Vorbefüllungsdienst liest Daten aus definierten Datenquellen und befüllt die Felder des adaptiven Formulars mit dem Inhalt der Vorbefüllungsdatendatei vor. Außerdem können Sie dauerhaft vorgefüllte Daten mit einem adaptiven Formular verknüpfen.
 
 ### Erstellen und Ausführen eines Vorbefüllungs-Service {#create-and-run-a-prefill-service}
 
-Der Vorbefüllungsdienst ist ein OSGi-Dienst und wird über das OSGi-Paket bereitgestellt. Sie erstellen das OSGi-Bundle, laden es hoch und installieren es in AEM Forms-Bundles. Bevor Sie mit der Erstellung des Pakets beginnen:
+Der Vorbefüllungsdienst ist ein OSGi-Dienst und wird über das OSGi-Paket bereitgestellt. Sie erstellen das OSGi-Bundle, laden es hoch und installieren es in die AEM Forms-Pakete. Bevor Sie mit der Erstellung des Pakets beginnen:
 
 * [Laden Sie das AEM Forms Client SDK herunter](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html)
 * Laden Sie das Textbausteinpaket herunter
@@ -372,9 +372,9 @@ Das Textbausteinpaket (Vorbefüllungsdienst-Beispielpaket) enthält folgende Bei
 
 #### Starten und Verwenden des Vorbefüllungs-Service {#start-and-use-the-prefill-service}
 
-Um den Vorbefüllungsdienst zu starten, laden Sie die JAR-Datei in die AEM Forms Web Console hoch und aktivieren Sie den Dienst. Jetzt wird der Dienst im Editor für adaptive Formulare angezeigt. So verknüpfen Sie einen Vorbefüllungs-Dienst mit einem adaptiven Formular:
+Um den Vorbefüllungsdienst zu starten, laden Sie die JAR-Datei in die AEM Forms Web Console hoch und aktivieren Sie den Dienst. Jetzt wird der Dienst im Editor für adaptive Formulare angezeigt. Verknüpfen eines Vorbefüllungs-Dienstes mit einem adaptiven Formular:
 
-1. Öffnen Sie das adaptive Formular im Forms Editor und öffnen Sie den Bereich Eigenschaften für den Formularcontainer.
+1. Öffnen Sie das adaptive Formular im Editor für Formulare und öffnen Sie den Bereich „Eigenschaften“ für den Formular-Container.
 1. In der Eigenschaftenkonsole gehen Sie zu „AEM Forms-Container“ > „Standard“ > „Vorbefüllungsdienst“.
 1. Wählen Sie den Vorbefüllungsdienst und klicken Sie auf **[!UICONTROL Speichern]**. Dieser Service ist mit dem Formular verknüpft.
 

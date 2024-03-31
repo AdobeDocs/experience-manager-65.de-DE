@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 80%
 | AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/asynchronous-submissions-adaptive-forms.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
-Web-Formulare werden herkömmlicherweise für die synchrone Übermittlung konfiguriert. Wenn Benutzer bei der synchronen Übermittlung ein Formular übermitteln, werden sie auf eine Bestätigungsseite, eine Dankeseite oder, falls ein Sendefehler vorliegt, eine Fehlerseite umgeleitet. Allerdings sind moderne Web-Abläufe wie Einzelseitenanwendungen zunehmend beliebt. Dabei bleibt die Web-Seite unverändert, während die Client-Server-Interaktion im Hintergrund abläuft. Sie können diese Erfahrung jetzt in adaptiven Formularen bieten, indem Sie die asynchrone Übermittlung konfigurieren.
+Web-Formulare werden herkömmlicherweise für die synchrone Übermittlung konfiguriert. Bei der synchronen Übermittlung werden Benutzende, die ein Formular senden, zu einer Bestätigungsseite, zu einer Dankesseite oder bei fehlgeschlagener Übermittlung zu einer Fehlerseite umgeleitet. Allerdings sind moderne Web-Abläufe wie Einzelseitenanwendungen zunehmend beliebt. Dabei bleibt die Web-Seite unverändert, während die Client-Server-Interaktion im Hintergrund abläuft. Sie können diese Erfahrung jetzt in adaptiven Formularen bieten, indem Sie die asynchrone Übermittlung konfigurieren.
 
-Bei der asynchronen Übermittlung fügt der Formularentwickler beim Absenden des Formulars durch den Benutzer ein separates Erlebnis ein, wie etwa die Weiterleitung zu einem anderen Formular oder einem separaten Bereich der Website. Der Autor kann auch separate Services wie das Senden von Daten an einen anderen Speicherort oder das Hinzufügen einer benutzerdefinierten Analytics-Engine einbinden. Bei asynchroner Übermittlung verhält sich ein adaptives Formular wie eine Einzelseitenanwendung, da das Formular nicht neu geladen wird oder sich die URL nicht ändert, wenn die gesendeten Formulardaten auf dem Server validiert werden.
+Bei der asynchronen Übermittlung fügt der Formularentwickler beim Absenden des Formulars durch den Benutzer ein separates Erlebnis ein, wie etwa die Weiterleitung zu einem anderen Formular oder einem separaten Bereich der Website. Der Autor kann auch separate Services wie das Senden von Daten an einen anderen Speicherort oder das Hinzufügen einer benutzerdefinierten Analytics-Engine einbinden. Bei einer asynchronen Übermittlung verhält sich ein adaptives Formular wie eine Single Page Application, da das Formular nicht neu geladen wird und die URL unverändert bleibt, wenn die gesendeten Formulardaten auf dem Server validiert werden.
 
 Im Folgenden finden Sie Details zu der asynchronen Übermittlung in adaptiven Formularen.
 
@@ -34,14 +34,14 @@ Im Folgenden finden Sie Details zu der asynchronen Übermittlung in adaptiven Fo
 
 So konfigurieren Sie die asynchronen Übermittlung für ein adaptives Formular:
 
-1. Wählen Sie im Authoring-Modus für adaptive Formulare das Objekt Formular-Container aus und wählen Sie ![cmppr1](assets/cmppr1.png) , um seine Eigenschaften zu öffnen.
+1. Wählen Sie im Authoring-Modus des adaptiven Formulars das Formular-Container-Objekt und dann ![cmppr1](assets/cmppr1.png) aus, um die zugehörigen Eigenschaften anzuzeigen.
 1. Aktivieren Sie im Eigenschaftenbereich **[!UICONTROL Übermittlung]** die Option **[!UICONTROL Asynchrone Übermittlung verwenden]**.
 1. Wählen Sie im Abschnitt **[!UICONTROL Beim Absenden]** eine der folgenden Optionen aus, die bei der erfolgreichen Übermittlung des Formulars ausgeführt werden soll.
 
    *  **[!UICONTROL Zu URL umleiten]**: Leitet bei Übermittlung des Formulars an die angegebene URL bzw. auf die angegebene Seite um.  Sie können eine URL angeben oder mit der Funktion zum Durchsuchen den Pfad zu einer Seite im Feld **[!UICONTROL Umleitungs-URL/Pfad]** wählen.
    * **[!UICONTROL Nachricht anzeigen]**: Zeigt eine Meldung beim Senden des Formulars an. Sie können eine Nachricht in das Textfeld unterhalb der Option Nachricht anzeigen eingeben. Das Textfeld unterstützt Rich-Text-Formatierung.
 
-1. Wählen Sie ![check-button1](assets/check-button1.png), um die Eigenschaften zu speichern.
+1. Wählen Sie ![check-button1](assets/check-button1.png) aus, um die Eigenschaften zu speichern.
 
 ## Funktionsweise der asynchronen Übermittlung {#how-asynchronous-submission-works}
 
@@ -64,7 +64,7 @@ Die Server-Antwort für Erfolgsereignis bei Übermittlung weist folgende Struktu
 }
 ```
 
-Die Serverantwort bei erfolgreicher Formularübermittlung umfasst:
+Die Server-Antwort enthält bei erfolgreicher Formularübermittlung Folgendes:
 
 * Formattyp der Formulardaten: XML oder JSON
 * Formulardaten im XML- oder JSON-Format
@@ -90,7 +90,7 @@ Die Server-Antwort für ein Fehlerereignis bei Übermittlung weist folgende Stru
  }
 ```
 
-Die Serverantwort, wenn bei der Formularübermittlung ein Fehler auftritt, umfasst:
+Die Server-Antwort enthält bei einer fehlerhaften Formularübermittlung Folgendes:
 
 * Grund für den Fehler, falsche Antwort in CAPTCHA oder fehlgeschlagene Server-seitige Validierung
 * Liste der Fehlerobjekte einschließlich SOM-Ausdruck des Felds mit der fehlgeschlagenen Validierung und zugehörige Fehlermeldung
@@ -103,9 +103,9 @@ Personen, die Formulare schreiben und entwickeln, können im Code-Editor formula
 
 Führen Sie die folgenden Schritte aus, um im Codeeditor Regeln zu schreiben, um die Erfolgs- und Fehlerereignisse zu verarbeiten.
 
-1. Öffnen Sie das adaptive Formular im Authoring-Modus, wählen Sie ein beliebiges Formularobjekt aus und wählen Sie ![edit-rules1](assets/edit-rules1.png) , um den Regeleditor zu öffnen.
-1. Wählen Sie **[!UICONTROL Formular]** in der Struktur „Formularobjekte“ und dann **[!UICONTROL Erstellen]**.
+1. Öffnen Sie das adaptive Formular im Authoring-Modus und wählen Sie ein beliebiges Formularobjekt und dann ![edit-rules1](assets/edit-rules1.png) aus, um den Regeleditor zu öffnen.
+1. Wählen Sie in der Struktur „Formularobjekte“ den Eintrag **[!UICONTROL Formular]** und dann **[!UICONTROL Erstellen]** aus.
 1. Wählen Sie **[!UICONTROL Code-Editor]** in der Dropdown-Liste zur Auswahl des Modus.
-1. Wählen Sie im Code-Editor **[!UICONTROL Code bearbeiten]**. Auswählen **[!UICONTROL Bearbeiten]** im Bestätigungsdialogfeld angezeigt.
+1. Wählen Sie im Code-Editor die Option **[!UICONTROL Code bearbeiten]** aus. Wählen Sie im Bestätigungsdialogfeld die Option **[!UICONTROL Bearbeiten]** aus.
 1. Wählen Sie **[!UICONTROL Übermittlung erfolgreich]** oder **[!UICONTROL Fehler beim Einreichen]** aus der Dropdown-Liste **[!UICONTROL Ereignis]**.
-1. Eine Regel für das ausgewählte Ereignis schreiben und auswählen **[!UICONTROL Fertig]** , um die Regel zu speichern.
+1. Schreiben Sie eine Regel für das ausgewählte Ereignis und wählen Sie **[!UICONTROL Fertig]** aus, um die Regel zu speichern.

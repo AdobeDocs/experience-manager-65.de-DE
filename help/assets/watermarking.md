@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '319'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Um Wasserzeichen auf Assets anwenden zu können, fügen Sie den Schritt „Wasse
    *Abbildung: Stellen Sie die Argumente im Schritt „Wasserzeichen hinzufügen“ in [!DNL Assets] bereit.*
 
 1. Speichern Sie den Workflow **[!UICONTROL DAM-Update-Asset]** mit dem Schritt „Wasserzeichen“.
-1. Laden Sie über die [!DNL Assets]-Benutzeroberfläche ein Beispiel-Asset hoch. Das Wasserzeichen wird mit der Schriftgröße, Farbe usw. an der Position angezeigt, die Sie in den oben genannten Schritten konfiguriert haben.
+1. Laden Sie über die [!DNL Assets]-Benutzeroberfläche ein Beispiel-Asset hoch. Das Wasserzeichen wird mit den Werten für Schriftgrad und Farbe an der in den obigen Schritten konfigurierten Position angezeigt.
 
 Wenn Sie PDF-Dokumente programmgesteuert oder mit dynamischen Informationen mit Wasserzeichen versehen möchten, sollten Sie [Experience Manager Document Services](/help/forms/using/overview-aem-document-services.md) nutzen.
 

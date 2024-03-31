@@ -1,6 +1,6 @@
 ---
 title: Correspondence Management – Zusammenfassung
-description: In diesem Thema erhalten Sie einen Überblick über Correspondence Management.
+description: Dieses Thema gibt Ihnen einen Überblick über Correspondence Management.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '217'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
@@ -18,30 +18,30 @@ ht-degree: 12%
 
 ## Einführung {#introduction}
 
-Correspondence Management zentralisiert und verwaltet die Erstellung, Zusammenstellung und Bereitstellung sicherer, personalisierter und interaktiver Schriftstücke. Dadurch können Sie Korrespondenz aus vorab genehmigten und benutzerdefinierten Inhalten in einem optimierten Prozess von der Erstellung bis zur Archivierung schnell zusammenführen. Dadurch erhalten Ihre Kunden die richtige Kommunikation zur richtigen Zeit und auf die richtige Weise: rechtzeitig, präzise, bequem, sicher und relevant. Ihr Unternehmen maximiert den Wert von Kundeninteraktionen und minimiert Kosten und Risiken mit einem Prozess, der für Einfachheit, Geschwindigkeit und Produktivität optimiert ist.
+Mit Correspondence Management lässt sich die Generierung, Zusammenstellung und Verteilung sicherer, personalisierter und interaktiver Korrespondenzen zentralisieren und verwalten. Es ermöglicht Ihnen, in einem optimierten Prozess von der Erstellung bis zur Archivierung schnell Korrespondenzen aus vorab genehmigten und individuell erstellten Inhalten zusammenzustellen. Dadurch erhält Ihre Kundschaft die richtige Kommunikation zur richtigen Zeit auf die richtige Art und Weise: zeitnah, präzise, bequem, sicher und relevant. Ihr Unternehmen maximiert den Wert von Kundeninteraktionen und minimiert Kosten und Risiken durch einen Prozess, der für Einfachheit, Geschwindigkeit und Produktivität optimiert ist. 
 
 ## Vorteile {#benefits}
 
-### Leistungsfähig und produktiv {#efficient-and-productive}
+### Effizient und produktiv {#efficient-and-productive}
 
-Die Verarbeitung wird optimiert und ermöglicht Ihnen Folgendes:
+Es optimiert die Verarbeitung und ermöglicht Folgendes:
 
-* Bereitstellen und Verwalten von Vorlagen und Inhalten in einer intuitiven Benutzeroberfläche, die für Geschäftsbenutzer konzipiert ist
+* Vorlagen und Inhalte in einer intuitiven Benutzeroberfläche, die für Benutzende in Unternehmen entwickelt wurde, bereitstellen und verwalten
 * Schriftstücke aus vorab genehmigten wie aus benutzerdefinierten Inhalten zügig zusammenstellen
 
 ### Verwaltet {#managed}
 
-Es bietet qualitativ hochwertige Kommunikation und ermöglicht Ihnen Folgendes:
+Es bietet qualitativ hochwertigere Kommunikation und ermöglicht Folgendes:
 
-* Verwalten von Geschäftsregeln und genehmigten Inhalten in einem zentralen Inhalts-Repository
-* Verwenden AEM DAM für die Bildverwaltung
-* Erstellen von Adobe PDF-Dateien für Archivierung und Prüfung
+* Geschäftsregeln und genehmigte Inhalte in einem zentralen Content-Repository verwalten
+* AEM DAM zum Verwalten von Bildern verwenden
+* Adobe PDF-Dateien zur Archivierung und Prüfung erstellen
 * unternehmenskonforme Mitteilungen erstellen und dazu dank integrierter Unternehmensregeln vorab genehmigte Inhalte verwenden.
 
-### Umfassend {#extensive}
+### Umfangreich {#extensive}
 
-Sie verbessert die Kundeninteraktion und ermöglicht Ihnen Folgendes:
+Es verbessert die Kundenbindung und ermöglicht Folgendes:
 
-* Hinzufügen interaktiver Technologien, um einen bidirektionalen Kanal zu ermöglichen, wodurch die Übermittlung von Papier verringert wird
-* Protect-vertrauliche Informationen mit integrierter, durchgängiger Dokumentsicherheit
-* Senden Sie die Korrespondenz über den vom Kunden bevorzugten Kommunikationskanal, sei es per E-Mail, Mobiltelefon oder Fax.
+* Interaktive Technologien hinzufügen, um einen bidirektionalen Kanal zu ermöglichen und so das Einreichen von Papieren zu reduzieren
+* Vertrauliche Informationen mit integrierter End-to-End-Dokumentensicherheit schützen
+* Korrespondenz über den von der Kundschaft bevorzugten Kommunikationskanal senden: elektronisch, per Post, Mobiltelefon oder Fax.

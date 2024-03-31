@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2959'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -390,7 +390,7 @@ Obwohl es nicht empfohlen wird, können Sie dies deaktivieren, falls Sie die alt
 
 ### Paket für anonyme Berechtigungs-Härtung {#anonymous-permission-hardening-package}
 
-Standardmäßig speichert AEM Systemmetadaten wie `jcr:createdBy` oder `jcr:lastModifiedBy` als Knoteneigenschaften neben regulären Inhalten im Repository. Abhängig von der Konfiguration und der Einrichtung der Zugriffskontrolle kann dies in einigen Fällen zur Anzeige persönlich identifizierbarer Informationen (PII) führen, z. B. wenn solche Knoten als rohe JSON- oder XML-Dateien gerendert werden.
+Standardmäßig speichert AEM Systemmetadaten wie `jcr:createdBy` oder `jcr:lastModifiedBy` als Knoteneigenschaften neben regulären Inhalten im Repository. Abhängig von der Konfiguration und der Einrichtung der Zugriffssteuerung kann dies in einigen Fällen zur Offenlegung personenbezogener Daten führen, z. B. wenn solche Knoten als rohe JSON- oder XML-Dateien gerendert werden.
 
 Wie alle Repository-Daten werden diese Eigenschaften durch den Oak-Autorisierungs-Stapel vermittelt. Der Zugriff auf sie sollte gemäß dem Grundsatz der geringsten Rechte eingeschränkt werden.
 
@@ -404,7 +404,7 @@ mit den Optionen vergleichen, die nach der Installation des Pakets angezeigt wer
 
 ![Nach der Installation des Pakets](/help/sites-administering/assets/after_resized.png)
 
-Weitere Informationen finden Sie in den Versionshinweisen zu Paketen .
+Weitere Informationen finden Sie in den Versionshinweisen zu Paketen.
 
 ### Verhindern von Clickjacking {#prevent-clickjacking}
 

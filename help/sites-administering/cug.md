@@ -11,13 +11,13 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '706'
-ht-degree: 64%
+ht-degree: 99%
 
 ---
 
 # Erstellen von geschlossenen Benutzergruppen{#creating-a-closed-user-group}
 
-Geschlossene Benutzergruppen (CUGs) werden verwendet, um den Zugriff auf bestimmte Seiten zu beschränken, die sich auf einer veröffentlichten Website befinden. Für solche Seiten müssen sich die zugewiesenen Mitglieder anmelden und Sicherheitsberechtigungen bereitstellen.
+Geschlossene Benutzergruppen (CUGs) werden verwendet, um den Zugriff auf bestimmte Seiten zu beschränken, die sich auf einer veröffentlichten Internet-Site befinden. Bei diesen Seiten ist es erforderlich, dass sich die zugewiesenen Mitglieder anmelden und sicherheitsspezifische Anmeldedaten bereitstellen.
 
 So konfigurieren Sie einen solchen Bereich innerhalb Ihrer Website:
 
@@ -25,15 +25,15 @@ So konfigurieren Sie einen solchen Bereich innerhalb Ihrer Website:
 
 * [Wenden Sie diese Gruppe auf die erforderlichen Seiten an](#applying-your-closed-user-group-to-content-pages) und wählen (oder erstellen) Sie die Anmeldeseite, die von den Mitgliedern der CUG verwendet werden soll. Dies wird auch festgelegt, wenn eine CUG auf eine Inhalts-Seite angewendet wird.
 
-* [einen Link in beliebigem Formular zu mindestens einer Seite innerhalb des geschützten Bereichs erstellen](#linking-to-the-cug-pages), andernfalls wird sie nicht angezeigt.
+* [Erstellen Sie einen Link in beliebiger Form zu mindestens einer Seite innerhalb des geschützten Bereichs](#linking-to-the-cug-pages), andernfalls wird sie nicht angezeigt.
 
-* [Konfigurieren des Dispatchers](#configure-dispatcher-for-cugs) falls in Verwendung.
+* [Konfigurieren Sie den Dispatcher](#configure-dispatcher-for-cugs), falls er in Verwendung ist.
 
 >[!CAUTION]
 >
 >Geschlossene Benutzergruppen (CUGs) sollten immer unter Berücksichtigung der Leistung erstellt werden.
 >
->Obwohl die Anzahl der Benutzer und Gruppen in einer CUG nicht begrenzt ist, kann eine hohe Anzahl von CUGs auf einer Seite die Rendering-Leistung verlangsamen.
+>Obwohl die Anzahl der Benutzenden und Gruppen in einer CUG nicht begrenzt ist, kann eine hohe Anzahl von CUGs auf einer Seite die Rendering-Leistung verlangsamen.
 >
 >Die Auswirkungen von CUGs sollten bei Leistungstests immer berücksichtigt werden.
 
@@ -45,13 +45,13 @@ So erstellen Sie eine geschlossene Benutzergruppe:
 
    >[!NOTE]
    >
-   >Siehe [Verwalten von Benutzern und Gruppen](/help/sites-administering/security.md#managing-users-and-groups) für ausführliche Informationen zur Erstellung und Konfiguration von Benutzern und Gruppen.
+   >Siehe [Verwalten von Benutzenden und Gruppen](/help/sites-administering/security.md#managing-users-and-groups) für ausführliche Informationen zur Erstellung und Konfiguration von Benutzenden und Gruppen.
 
-1. Wählen Sie die **Gruppen** vom nächsten Bildschirm aus.
+1. Wählen Sie auf dem nächsten Bildschirm die **Gruppenkarte** aus.
 
    ![screen_shot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
-1. Drücken Sie die **Erstellen** Schaltfläche oben rechts, um eine Gruppe zu erstellen.
+1. Klicken Sie oben rechts auf die Schaltfläche **Erstellen**, um eine neue Gruppe zu erstellen.
 1. Benennen Sie Ihre neue Gruppe, z. B. `cug_access`.
 
    ![screen_shot_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
@@ -89,11 +89,11 @@ Dies ist optional. Wenn Sie das Feld leer lassen, wird die standardmäßige Anme
 
    >[!NOTE]
    >
-   >Beachten Sie, dass CUGs auf der Registerkarte „Berechtigungen“ aus Blueprints nicht zu Live Copies ausgerollt werden können. Planen Sie dies bei der Konfiguration der Live Copy.
+   >Beachten Sie, dass CUGs auf der Registerkarte „Berechtigungen“ aus Blueprints nicht zu Live Copies ausgerollt werden können. Berücksichtigen Sie dies, wenn Sie eine Live Copy konfigurieren.
    >
    >Weitere Informationen finden Sie auf [dieser Seite](closed-user-groups.md#aem-livecopy).
 
-1. Die **Geschlossene Benutzergruppe bearbeiten** wird geöffnet. Hier können Sie nach Ihrer CUG suchen und diese auswählen und dann die Gruppenauswahl mit **Speichern** bestätigen.
+1. Der Dialog **Geschlossene Benutzergruppe bearbeiten** öffnet sich. Hier können Sie nach Ihrer CUG suchen und diese auswählen und dann die Gruppenauswahl mit **Speichern** bestätigen.
 
    Die Gruppe wird der Liste hinzugefügt; beispielsweise die Gruppe **cug_access**.
 
@@ -113,13 +113,13 @@ Um dies zu vermeiden, empfiehlt es sich, nicht-geschützte Umleitungsseiten zu e
 
 ## Konfigurieren des Dispatchers für CUGs {#configure-dispatcher-for-cugs}
 
-Wenn Sie den Dispatcher verwenden, müssen Sie eine Dispatcher-Farm mit den folgenden Eigenschaften definieren:
+Falls Sie den Dispatcher verwenden, müssen Sie eine Dispatcher-Farm mit den folgenden Eigenschaften definieren:
 
-* [virtualhosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#identifying-virtual-hosts-virtualhosts): Entspricht dem Pfad zu den Seiten, für die die CUG gilt.
+* [virtualhosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#identifying-virtual-hosts-virtualhosts): Entspricht dem Pfad zu den Seiten, auf die die CUG angewendet wird
 * \sessionmanagement: siehe unten.
-* [cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache): Ein Cache-Verzeichnis, das den Dateien gewidmet ist, für die die CUG gilt.
+* [cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache): Ein Zwischenspeicher-Verzeichnis, das für die Dateien vorgesehen ist, auf die die CUG angewendet wird
 
-### Konfigurieren der Dispatcher-Sitzungsverwaltung für CUGs {#configuring-dispatcher-session-management-for-cugs}
+### Konfigurieren des Dispatcher-Sitzungs-Managements für CUGs {#configuring-dispatcher-session-management-for-cugs}
 
 Konfigurieren Sie das [Sitzungsmanagement in der Datei dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) für die CUG. Der Authentifizierungs-Handler, der verwendet wird, wenn der Zugriff auf CUG-Seiten angefordert wird, bestimmt, wie Sie das Sitzungsmanagement konfigurieren.
 

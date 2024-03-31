@@ -1,6 +1,6 @@
 ---
 title: Benutzerdefiniertes Wasserzeichen in der PDF-Briefvorschau
-description: Erfahren Sie, wie Sie in der Briefvorschau ein benutzerdefiniertes Wasserzeichen erstellen.
+description: Erfahren Sie, wie Sie benutzerdefinierte Wasserzeichen in der PDF-Briefvorschau erstellen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '336'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -19,17 +19,17 @@ ht-degree: 68%
 
 ## Übersicht {#overview}
 
-Agent-Benutzer zeigen in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;die Korrespondenz in der endgültigen Form an, in der sie zur Nachbearbeitung gesendet wird, z. B. zum E-Mail-Versand oder zum Drucken.
+Agenten-Benutzende zeigen in der Benutzeroberfläche „Korrespondenz erstellen“ eine Vorschau der Korrespondenz in ihrer endgültigen Form an, in der sie zur Nachbearbeitung gesendet wird, z. B. für E-Mails oder zum Drucken.
 
-Um die unbefugte Verwendung dieser Daten zu verhindern, können Unternehmen ein Wasserzeichen auf der Vorschau-PDF festlegen. Das standardmäßige Wasserzeichen ist „VORSCHAU“ und wird über die gesamte PDF hinweg angezeigt.
+Um eine nicht autorisierte Nutzung dieser Daten zu verhindern, können Unternehmen der PDF-Vorschau ein Wasserzeichen hinzufügen. Das standardmäßige Wasserzeichen ist „VORSCHAU“ und wird über die gesamte PDF hinweg angezeigt.
 
 Um das Wasserzeichen in der PDF-Vorschau zu aktivieren, wählen Sie die Option **[!UICONTROL Wasserzeichen während der Vorschau anwenden]** in **[!UICONTROL Korrespondenzverwaltungskonfigurationen]** unter https://[server]:[port]/system/console/configMgr.
 
 ![default-watermark](assets/default-watermark.png)
 
-Sie können die folgenden Schritte verwenden, um den Text und das Erscheinungsbild des Wasserzeichens anzupassen:
+Sie können folgende Schritte verwenden, um den Text und das Erscheinungsbild des Wasserzeichens anzupassen.
 
-## Anpassen des Wasserzeichens in der PDF-Vorschau in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot; {#customizewatermark-}
+## Anpassen des Wasserzeichens in der PDF-Vorschau in der Benutzeroberfläche „Korrespondenz erstellen“ {#customizewatermark-}
 
 1. Wechseln Sie zu `https://'[server]:[port]'/[ContextPath]/crx/de` und melden Sie sich als „Administrator“ an.
 1. Erstellen Sie im Anwendungsordner einen Ordner mit dem Namen **[!UICONTROL previewwatermark]**, dessen Pfad/Struktur der des Ordners „previewwatermark“ im Ordner „libs“ entspricht:
@@ -82,6 +82,6 @@ Sie können die folgenden Schritte verwenden, um den Text und das Erscheinungsbi
 
    >[!NOTE]
    >
-   >In der ddx-Datei sollten die Verweise auf &quot;result&quot;und &quot;source&quot;in output.pdf und input.pdf unverändert bleiben. Der Name der Datei ddx sollte ebenfalls nicht geändert werden.
+   >In der DDX-Datei sollten die Verweise auf das Ergebnis und die Quelle für „output.pdf“ und „input.pdf“ unverändert bleiben. Der Name der DDX-Datei sollte ebenfalls nicht geändert werden.
 
 1. Klicken Sie auf **Alle speichern**.

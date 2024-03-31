@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1531'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -169,7 +169,7 @@ Bei einem Adobe Analytics-Framework handelt es sich um eine Reihe von Zuordnunge
 
    >[!NOTE]
    >
-   >Es kann bis zu 10 Sekunden länger dauern, bis der Abrufvorgang für den Bericht über die Zeitüberschreitung abgeschlossen ist und dann die angegebene Anzahl von Sekunden.
+   >Die maximale Wartezeit bis zum Abruf eines Berichts kann die angegebene Anzahl von Sekunden um bis zu 10 Sekunden überschreiten.
 
 1. Wiederholen Sie die Schritte 1-3 in der Veröffentlichungsinstanz, um Analysen zu konfigurieren.
 

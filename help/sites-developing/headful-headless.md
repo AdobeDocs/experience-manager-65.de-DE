@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1023'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Aber dies muss keine binäre Wahl sein. AEM bietet beispiellose Flexibilität, s
 
 ![AEM-Implementierungsmodelle](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
-In einem Headful- oder Full-Stack-Modell wird der Inhalt im AEM-Repository verwaltet und AEM Komponenten, die auf Java, HTL usw. basieren, werden verwendet, um den Inhalt für das Benutzererlebnis zu rendern. In diesem Modell erfolgen die Erstellung, Formatierung, Präsentation und Bereitstellung des Contents in AEM.
+In einem Headful- oder Full-Stack-Modell wird der Inhalt im AEM-Repository verwaltet, und es werden AEM Komponenten verwendet, die auf Java und HTL basieren, um den Inhalt für das Anwendererlebnis zu rendern. In diesem Modell erfolgen die Erstellung, Formatierung, Präsentation und Bereitstellung des Contents in AEM.
 
 Bei einem Headless-Modell wird der Content im AEM-Repository verwaltet, aber über APIs wie REST und GraphQL an ein anderes System gesendet, um ihn für das Anwendererlebnis wiederzugeben. In diesem Modell wird Content in AEM erstellt, aber die Formatierung, Präsentation und Bereitstellung erfolgen auf einer anderen Plattform.
 
@@ -44,7 +44,7 @@ Im nächsten Abschnitt werden diese Integrationsstufen genauer untersucht.
 
 >[!NOTE]
 >
->Natürlich könnten Sie die Webshop-SPA als voll funktionsfähige AEM-SPA erneut implementieren. [Dafür verwenden Sie das AEM-SPA Editor-Framework.](/help/sites-developing/spa-walkthrough.md) Wenn Sie bereits AEM haben und einen Webshop oder andere SPA erstellen möchten, ist dies die empfohlene Methode, für dieses Dokument ist sie jedoch nicht verfügbar.
+>Natürlich könnten Sie die Webshop-SPA als voll funktionsfähige AEM-SPA erneut implementieren. [Dafür verwenden Sie das AEM-SPA Editor-Framework.](/help/sites-developing/spa-walkthrough.md) Wenn Sie bereits über AEM verfügen und einen Webshop oder eine andere SPA erstellen möchten, ist dies die empfohlene Methode. Diese würde den Umfang dieses Dokuments allerdings sprengen.
 
 ## SPA-Integrationsstufen {#integration-levels}
 

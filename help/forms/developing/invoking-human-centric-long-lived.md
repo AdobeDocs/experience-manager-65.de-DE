@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3674'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Der `FirstAppSolution/PreLoanProcess`-Prozess wird aufgerufen, wenn ein Antragst
  </LoanApp>
 ```
 
-An einen Prozess übergebene XML-Daten müssen mit den Feldern im Formular übereinstimmen, das im Prozess verwendet wird. Andernfalls werden keine Daten im Formular angezeigt. Alle Programme, die den `FirstAppSolution/PreLoanProcess`-Prozess aufrufen, müssen diese XML-Datenquelle übergeben. Die in *Aufrufen von am Menschen orientierten langlebigen Prozessen* erstellten Programme erstellen die XML-Datenquelle dynamisch aus den Werten, die ein Benutzer in einen Webclient eingegeben hat.
+Die an einen Prozess übergebenen XML-Daten müssen den Feldern in dem Formular entsprechen, das im Prozess verwendet wird. Andernfalls werden keine Daten im Formular angezeigt. Alle Programme, die den `FirstAppSolution/PreLoanProcess`-Prozess aufrufen, müssen diese XML-Datenquelle übergeben. Die in *Aufrufen von am Menschen orientierten langlebigen Prozessen* erstellten Programme erstellen die XML-Datenquelle dynamisch aus den Werten, die ein Benutzer in einen Webclient eingegeben hat.
 
 Mithilfe eines Client-Programms können Sie dem *FirstAppSolution/PreLoanProcess*-Prozess die erforderlichen XML-Daten senden. Ein langlebiger Prozess gibt einen Aufruf-ID-Wert als Rückgabewert zurück. Die folgende Abbildung zeigt Client-Programme, die den langlebigen Prozess „*FirstAppSolution/PreLoanProcess“ aufrufen. Die Client-Programme senden XML-Daten und erhalten einen Zeichenfolgenwert zurück, der den Wert der Aufrufkennung darstellt.
 
@@ -515,7 +515,7 @@ Beachten Sie, dass es unter den Service-Verweisen zwei Elemente gibt. Das erste 
 
 ### Erstellen einer ASP-Seite, die den FirstAppSolution/PreLoanProcess aufruft {#create-an-asp-page-that-invokes-firstappsolution-preloanprocess}
 
-Fügen Sie innerhalb des ASP.NET-Projekts ein Web-Formular (eine ASPX-Datei) hinzu, das für die Anzeige einer HTML-Seite für den Antragsteller des Darlehens verantwortlich ist. Das Web-Formular basiert auf einer Klasse, die von `System.Web.UI.Page` abgeleitet ist. Die C#-Anwendungslogik, die `FirstAppSolution/PreLoanProcess` im `Button1_Click` -Methode (diese Schaltfläche stellt die Schaltfläche &quot;Anwendung übermitteln&quot;dar).
+Fügen Sie innerhalb des ASP.NET-Projekts ein Web-Formular (eine ASPX-Datei) hinzu, das für die Anzeige einer HTML-Seite für den Antragsteller des Darlehens verantwortlich ist. Das Web-Formular basiert auf einer Klasse, die von `System.Web.UI.Page` abgeleitet ist. Die C#-Anwendungslogik, die `FirstAppSolution/PreLoanProcess` aufruft, befindet sich in der Methode `Button1_Click` (diese Schaltfläche stellt die Schaltfläche „Anwendung absenden“ dar).
 
 Die folgende Abbildung zeigt das ASP.NET-Programm
 
@@ -556,7 +556,7 @@ In der folgenden Tabelle sind die Steuerelemente aufgeführt, die Teil dieses AS
  </tbody>
 </table>
 
-Die Anwendungslogik, die Teil des ASP.NET-Programms ist, muss dynamisch eine XML-Datenquelle erstellen, die an den Prozess `FirstAppSolution/PreLoanProcess` übergeben wird. Die Werte, die der Antragsteller auf der HTML-Seite eingegeben hat, müssen in der XML-Datenquelle angegeben werden. Diese Datenwerte werden beim Anzeigen des Formulars in Workspace mit dem Formular zusammengeführt. Die Klassen in `System.Xml` -Namespace zum Erstellen der XML-Datenquelle verwendet.
+Die Anwendungslogik, die Teil des ASP.NET-Programms ist, muss dynamisch eine XML-Datenquelle erstellen, die an den Prozess `FirstAppSolution/PreLoanProcess` übergeben wird. Die Werte, die der Antragsteller auf der HTML-Seite eingegeben hat, müssen in der XML-Datenquelle angegeben werden. Diese Datenwerte werden beim Anzeigen des Formulars in Workspace mit dem Formular zusammengeführt. Die Klassen, die sich im Namespace `System.Xml` befinden, werden zum Erstellen der XML-Datenquelle verwendet.
 
 Beim Aufrufen eines Prozesses, der XML-Daten aus einem ASP.NET-Programm erfordert, steht Ihnen ein XML-Datentyp zur Verfügung. Das heißt, Sie können keine `System.Xml.XmlDocument`-Instanz an den Prozess übergeben. Der vollständig qualifizierte Name dieser XML-Instanz, die an den Prozess übergeben wird, lautet `InvokePreLoanProcess.PreLoanProcess.XML`. Konvertieren Sie die `System.Xml.XmlDocument`-Instanz zu `InvokePreLoanProcess.PreLoanProcess.XML`. Sie können diese Aufgabe mithilfe des folgenden Codes ausführen.
 
@@ -812,7 +812,7 @@ Das folgende C#-Code-Beispiel ruft den `FirstAppSolution/PreLoanProcess`-Prozess
 
 >[!NOTE]
 >
->Die Werte in der benutzerdefinierten Methode getJobDescription entsprechen den vom Job Manager-Dienst zurückgegebenen Werten.
+>Die Werte in der benutzerdefinierten getJobDescription-Methode entsprechen den vom Job Manager-Service zurückgegebenen Werten.
 
 ### Ausführen des ASP.NET-Programms {#run-the-asp-net-application}
 

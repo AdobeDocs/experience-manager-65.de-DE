@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Der Forms-Service ermöglicht das Erstellen interaktiver Client-Programme zur Da
 
 Wenn ein Endbenutzer ein Formular anfordert, sendet ein Client-Programm die Anforderung an den Forms-Service, der das Formular in einem entsprechenden Format zurückgibt. Sobald der Forms-Service eine Anforderung erhält, werden die Daten mit einem Formularentwurf zusammengeführt und das Formular im gewünschten Format bereitgestellt. Die Ausgabe des Forms-Services ist ein interaktives Formular, in der Regel ein PDF-Dokument. Mit einem interaktiven Formular können Benutzer Felder im Formular ausfüllen.
 
-Je nach Typ des Client-Programms können Sie das Formular in einen Client-Webbrowser schreiben oder es als PDF-Datei speichern. Ein Web-basiertes Programm kann das Formular in einen Webbrowser schreiben. Ein Desktop-Programm kann das Formular als PDF-Datei speichern. Um zu demonstrieren, wie Sie in einen Webbrowser und eine PDF-Datei schreiben, beginnt der Schnellstart in der *Rendern von Forms* -Abschnitte sind wie folgt organisiert:
+Je nach Typ des Client-Programms können Sie das Formular in einen Client-Webbrowser schreiben oder es als PDF-Datei speichern. Ein Web-basiertes Programm kann das Formular in einen Webbrowser schreiben. Ein Desktop-Programm kann das Formular als PDF-Datei speichern. Um zu demonstrieren, wie die Ausgabe in einen Webbrowser und in eine PDF-Datei erfolgt, sind die Kurzanleitungen im Abschnitt *Rendern von Formularen* wie folgt aufgebaut:
 
 * Die Beispiele für Java-API mit starker Typisierung (SOAP-Modus) sind ein Java-Servlet.
 * Die Beispiele für den Webservice (Java Base64) sind ein Java-Servlet.
@@ -38,7 +38,7 @@ Je nach Typ des Client-Programms können Sie das Formular in einen Client-Webbro
 
 Sie können einen Formularentwurf (eine XDP-Datei) oder ein PDF-Dokument auf zwei Arten an den Forms-Service übergeben:
 
-* Sie können den Formularentwurf mithilfe eines URL-Werts referenzieren. Dieser Ansatz beinhaltet die Verwendung eines `URLSpec`-Objekts. Der Inhaltsstamm wird mit der Methode `setContentRootURI` des `URLSpec`-Objekts an den Forms-Service übergeben. Der Name des Formularentwurfs (`formQuery`) wird als separater Parameter übergeben. Die beiden Werte werden verkettet, um den absoluten Verweis auf den Formularentwurf zu bilden. (Die meisten Schnellstarts finden im *Rendern von Forms* -Abschnitt verwenden diesen Ansatz.)
+* Sie können den Formularentwurf mithilfe eines URL-Werts referenzieren. Dieser Ansatz beinhaltet die Verwendung eines `URLSpec`-Objekts. Der Inhaltsstamm wird mit der Methode `setContentRootURI` des `URLSpec`-Objekts an den Forms-Service übergeben. Der Name des Formularentwurfs (`formQuery`) wird als separater Parameter übergeben. Die beiden Werte werden verkettet, um den absoluten Verweis auf den Formularentwurf zu bilden. (Die meisten der Kurzanleitungen im Abschnitt *Rendern von Formularen* verwenden diesen Ansatz.)
 * Sie können ein `com.adobe.idp.Document`, das den Formularentwurf enthält, an den Forms-Service übergeben. Zwei neue Methoden namens `renderPDFForm2` und `renderHTMLForm2` akzeptieren `com.adobe.idp.Document`-Objekt, das einen Formularentwurf enthält. (Siehe [Übergeben von Dokumenten an den Forms-Service](/help/forms/developing/passing-documents-forms-service.md)
 
 Sie können diese Aufgaben mithilfe des Forms-Services ausführen:

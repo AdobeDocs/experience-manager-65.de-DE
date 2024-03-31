@@ -9,7 +9,7 @@ feature: Proxy Workers
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '824'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 95%
 
 [!DNL Adobe Experience Manager Assets] verwendet einen Proxy, um die Verarbeitung bestimmter Aufgaben zu verteilen.
 
-Ein Proxy ist eine bestimmte (und gelegentlich separate) Experience Manager-Instanz, die Proxy-Worker als Prozessoren verwendet, um Aufträge zu bearbeiten und Ergebnisse zu generieren. Ein Proxy-Worker kann für eine Vielzahl von Aufgaben verwendet werden. Wenn eine [!DNL Assets] Proxy, der zum Laden von Assets zum Rendern in Assets verwendet werden kann. Beispielsweise verarbeitet der [IDS-Proxy-Worker](indesign.md) Dateien, die in Assets verwendet werden sollen, mit einem [!DNL Adobe InDesign]-Server.
+Ein Proxy ist eine bestimmte (und gelegentlich separate) Experience Manager-Instanz, die Proxy-Worker als Prozessoren verwendet, um Aufträge zu bearbeiten und Ergebnisse zu generieren. Ein Proxy-Worker kann für eine Vielzahl von Aufgaben verwendet werden. [!DNL Assets]-Proxys können Assets laden, die in Assets gerendert werden sollen. Beispielsweise verarbeitet der [IDS-Proxy-Worker](indesign.md) Dateien, die in Assets verwendet werden sollen, mit einem [!DNL Adobe InDesign]-Server.
 
 Wenn der Proxy eine separate [!DNL Experience Manager]-Instanz ist, wird die Last für die [!DNL Experience Manager]-Autorinstanz(en) reduziert. Standardmäßig führt [!DNL Assets] die Aufgaben zur Asset-Verarbeitung in derselben JVM (externalisiert über Proxy) aus, um die Last für die [!DNL Experience Manager]-Autorinstanz zu reduzieren.
 
 ## Proxy (HTTP-Zugriff) {#proxy-http-access}
 
-Ein Proxy ist über das HTTP-Servlet verfügbar, wenn es für die Annahme von Verarbeitungsvorgängen konfiguriert ist unter: `/libs/dam/cloud/proxy`. Dieses Servlet erstellt einen Sling-Auftrag aus den geposteten Parametern. Der Auftrag wird dann der Proxy-Auftragswarteschlange hinzugefügt und mit dem entsprechenden Proxy-Worker verbunden.
+Ein Proxy ist über das HTTP-Servlet verfügbar, wenn die Konfiguration Verarbeitungsaufträge unter `/libs/dam/cloud/proxy` zulässt. Dieses Servlet erstellt einen Sling-Auftrag aus den geposteten Parametern. Der Auftrag wird dann der Proxy-Auftragswarteschlange hinzugefügt und mit dem entsprechenden Proxy-Worker verbunden.
 
 ### Unterstützte Vorgänge {#supported-operations}
 
@@ -166,7 +166,7 @@ Das folgende Diagramm und die folgenden Schritte beschreiben den weiteren Ablauf
 
    Als Beispiel dient `IDSJob.IDS_EXTENDSCRIPT_JOB` für den IDS-Proxy-Worker.
 
-1. Mit dem externen Schritt wird das Ereignis ausgelöst, anschließend wird auf den Abschluss gewartet. Hierfür wird die ID abgerufen. Entwickeln Sie Ihren eigenen Schritt, um neue Funktionen zu implementieren.
+1. Mit dem externen Schritt wird das Ereignis ausgelöst, anschließend wird auf den Abschluss gewartet. Hierfür wird die ID abgerufen. Entwickeln Sie einen eigenen Schritt, um eine neue Funktionalität zu implementieren.
 
    Implementieren Sie einen `WorkflowExternalProcess`. Bereiten Sie dann mit der JobService-API und Ihrem Auftragsthema ein Auftragsereignis vor und senden Sie es an den JobService (einen OSGi-Dienst). 
 

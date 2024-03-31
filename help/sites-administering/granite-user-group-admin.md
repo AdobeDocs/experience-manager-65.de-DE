@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '951'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 86%
 
 Da Granite die CRX-Repository-Implementierung der JCR-API-Spezifikation enthält, verfügt es über eine eigene Benutzer- und Gruppenverwaltung.
 
-Diese Konten bilden die Grundlage der [AEM](/help/sites-administering/security.md) und alle Kontoänderungen, die mit der Granite-Verwaltung vorgenommen werden, werden angezeigt, wenn/wenn der Zugriff auf die Konten über die [AEM-Konsole](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (zum Beispiel: `http://localhost:4502/useradmin`). In der AEM-Benutzerkonsole können Sie auch die Berechtigungen und andere AEM-Eigenschaften verwalten.
+Diese Konten bilden die Grundlage der [AEM-Konten](/help/sites-administering/security.md). Sämtliche in der Granite-Verwaltung durchgeführten Kontoänderungen werden widergespiegelt, falls/wenn auf die Konten über die [AEM-Benutzerkonsole](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (z. B. `http://localhost:4502/useradmin`) zugegriffen wird. In der AEM-Benutzerkonsole können Sie auch die Berechtigungen und andere AEM-Eigenschaften verwalten.
 
 Die Konsolen für die Benutzer- und Gruppenverwaltung sind jeweils über die **[Tools](/help/sites-administering/tools-consoles.md)**-Konsole der Touch-optimierten Benutzeroberfläche verfügbar:
 
 ![Tools-Konsole](assets/chlimage_1-72a.png)
 
-Entweder **Benutzer** oder **Gruppen** über die Tools-Konsole die entsprechende Konsole öffnen. In beiden können Sie Aktionen durchführen, indem Sie entweder das Kontrollkästchen und dann Aktionen aus der Symbolleiste verwenden oder indem Sie die Kontodetails über den Link unter **Name** aufrufen.
+Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die entsprechende Konsole geöffnet. In beiden können Sie Aktionen durchführen, indem Sie entweder das Kontrollkästchen und dann Aktionen aus der Symbolleiste verwenden oder indem Sie die Kontodetails über den Link unter **Name** aufrufen.
 
 * [Benutzerverwaltung](#user-administration)
 
@@ -54,11 +54,11 @@ Entweder **Benutzer** oder **Gruppen** über die Tools-Konsole die entsprechende
 
 1. Verwenden Sie das Symbol **Benutzer hinzufügen**:
 
-   ![Symbol &quot;Benutzer hinzufügen&quot;](do-not-localize/chlimage_1-1.png)
+   ![Symbol „Benutzer hinzufügen“](do-not-localize/chlimage_1-1.png)
 
-1. Die **Benutzer erstellen** Formular wird geöffnet:
+1. Das Formular **Benutzer erstellen** wird geöffnet:
 
-   ![Formular &quot;Benutzerdetails&quot;](assets/chlimage_1-75a.png)
+   ![Formular „Benutzerdetails“](assets/chlimage_1-75a.png)
 
    Hier können Sie die Benutzerdetails für das Konto eingeben (die meisten entsprechen dem Standard und sind selbsterklärend):
 
@@ -91,7 +91,7 @@ Entweder **Benutzer** oder **Gruppen** über die Tools-Konsole die entsprechende
    * **Kontoeinstellungen**
 
       * **Status**
-Sie können das Konto als **active** oder **inactive**.
+Sie können das Konto sowohl als **aktiv** als auch als **inaktiv** markieren.
 
    * **Foto**
 
@@ -130,11 +130,11 @@ Sie können das Konto als **active** oder **inactive**.
 
 1. Sie können nun die Details wie unter [Hinzufügen neuer Benutzer](#adding-a-new-user) bearbeiten. Unter **Kontoeinstellungen** ist ein Link **Kennwort ändern** vorhanden.
 
-   ![Dialogfeld &quot;Kontoeinstellungen&quot;](assets/chlimage_1-76a.png)
+   ![Dialogfeld „Konto-Einstellungen“](assets/chlimage_1-76a.png)
 
-1. Die **Kennwort ändern** wird geöffnet. Geben Sie das neue Kennwort, die Kennwortwiederholung und Ihr Kennwort ein. Bestätigen Sie die Änderungen mit **OK**.
+1. Das Dialogfeld **Kennwort ändern** wird geöffnet. Geben Sie das neue Kennwort, die Kennwortwiederholung und Ihr Kennwort ein. Bestätigen Sie die Änderungen mit **OK**.
 
-   ![Dialogfeld &quot;Kennwort ändern&quot;](assets/chlimage_1-77a.png)
+   ![Dialog „Kennwort ändern“.](assets/chlimage_1-77a.png)
 
    Über eine Meldung wird bestätigt, dass das Kennwort geändert wurde.
 
@@ -145,7 +145,7 @@ Sie können das Konto als **active** oder **inactive**.
 
    ![Verwenden des Gruppensymbols](do-not-localize/chlimage_1-2.png)
 
-   So öffnen Sie das Dropdown-Menü für die Gruppenauswahl:
+   Hierdurch wird die Dropdown-Liste für die Gruppenauswahl geöffnet:
 
    ![Gruppenauswahl](assets/chlimage_1-78a.png)
 
@@ -173,9 +173,9 @@ Sie können das Konto als **active** oder **inactive**.
 
    ![Neue Gruppe hinzufügen](do-not-localize/chlimage_1-4.png)
 
-1. Die **Gruppe erstellen** Formular wird geöffnet:
+1. Das Formular **Gruppe erstellen** wird geöffnet:
 
-   ![Gruppendetails-Formular](assets/chlimage_1-79a.png)
+   ![Formular „Gruppendetails“](assets/chlimage_1-79a.png)
 
    Hier können Sie die Gruppendetails eingeben:
 
@@ -185,7 +185,7 @@ Sie können das Konto als **active** oder **inactive**.
 
    * **Name**
 
-     Ein Name für die Gruppe; er wird in der Gruppenkonsole angezeigt.
+     Der Name für die Gruppe; dieser wird in der Gruppenkonsole angezeigt.
 
    * **Beschreibung**
 
@@ -219,7 +219,7 @@ Sie können das Konto als **active** oder **inactive**.
 
 1. Das Formular **Gruppeneinstellungen bearbeiten** wird geöffnet.
 
-   Die Gruppenkennung entspricht der ursprünglichen, vorangestellt ist allerdings der Hinweis `Copy of`. Bearbeiten Sie diese ID, da sie keine Leerzeichen enthalten darf. Alle anderen Details sind mit dem Original identisch.
+   Die Gruppenkennung entspricht der ursprünglichen, vorangestellt ist allerdings der Hinweis `Copy of`. Bearbeiten Sie diese ID, da sie keine Leerzeichen enthalten darf. Alle anderen Details bleiben gegenüber dem Original unverändert.
 
    Sie können nun die Details wie unter [Hinzufügen neuer Gruppen](#adding-a-new-group) bearbeiten.
 

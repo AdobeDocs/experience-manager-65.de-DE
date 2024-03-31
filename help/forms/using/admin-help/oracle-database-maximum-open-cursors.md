@@ -1,6 +1,6 @@
 ---
 title: Schwellenwert für die Anzahl maximal geöffneter Cursor für Oracle-Datenbank
-description: Erfahren Sie, wie Sie einen Maximalwert für geöffnete Cursor in Oracle konfigurieren.
+description: Erfahren Sie mehr über die Konfiguration eines Maximalwerts für geöffnete Cursors in Oracle.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '82'
-ht-degree: 23%
+ht-degree: 100%
 
 ---
 
 # Schwellenwert für die Anzahl maximal geöffneter Cursor für Oracle-Datenbank {#oracle-database-maximum-open-cursors-threshold}
 
-Um einen Maximalwert für geöffnete Cursor in Oracle zu konfigurieren, müssen Sie diesen Wert möglicherweise auf eine Zahl einstellen, die für Ihre Anwendung geeignet ist. Es ist offensichtlich, dass unter moderater Belastung die durchschnittlich geöffneten Cursor 2700 waren. Es wird empfohlen, mit einer Obergrenze von 3000 zu beginnen. Weitere Informationen finden Sie unter [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758).
+Um einen Maximalwert für geöffnete Cursors in Oracle zu konfigurieren, müssen Sie diesen Wert möglicherweise auf eine Zahl einstellen, die für Ihre Anwendung geeignet ist.  Es ist offensichtlich, dass die durchschnittliche Anzahl geöffneter Cursors bei mittlerer Auslastung 2700 betrug.  Es wird empfohlen, mit einem oberen Grenzwert von 3000 zu beginnen.  Weitere Informationen finden Sie unter [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758).

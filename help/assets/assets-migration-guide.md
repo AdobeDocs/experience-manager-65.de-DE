@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1739'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Beim Migrieren von Assets nach [!DNL Adobe Experience Manager] sind verschiedene
 
 ## Voraussetzungen {#prerequisites}
 
-Bevor Sie einen Schritt dieser Methodik tatsächlich ausführen, lesen Sie sich die Anleitungen in den [Tipps zur Assets-Leistungsoptimierung](performance-tuning-guidelines.md) durch und setzen Sie diese um. Viele der Schritte, z. B. die Konfiguration der maximalen Anzahl gleichzeitiger Aufträge, verbessern die Stabilität und Leistung des Servers unter Last erheblich. Andere Schritte, wie das Konfigurieren eines Dateidatenspeichers, sind nach dem Laden des Systems mit Assets viel schwieriger durchzuführen.
+Bevor Sie einen Schritt dieser Methodik tatsächlich ausführen, lesen Sie sich die Anleitungen in den [Tipps zur Assets-Leistungsoptimierung](performance-tuning-guidelines.md) durch und setzen Sie diese um. Viele der Schritte, z. B. die Konfiguration der maximalen Anzahl gleichzeitiger Aufträge, verbessern die Stabilität und Leistung des Servers unter Last erheblich.  Andere Schritte, wie das Konfigurieren eines Dateidatenspeichers, sind nach dem Laden des Systems mit Assets viel schwieriger durchzuführen.
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ Die Migration von Assets nach [!DNL Experience Manager] erfolgt in mehreren Schr
 
 ### Deaktivieren von Workflows {#disabling-workflows}
 
-Deaktivieren Sie vor der Migration die Starter für den Workflow [!UICONTROL DAM-Update-Asset]. Am besten nehmen Sie alle Assets in das System auf und führen dann die Workflows in Batches aus. Wenn Sie während der Migration bereits aktiv sind, können Sie diese Aktivitäten so planen, dass sie außerhalb der Arbeitszeiten ausgeführt werden.
+Deaktivieren Sie vor der Migration die Starter für den Workflow [!UICONTROL DAM-Update-Asset]. Optimalerweise führen Sie die Workflows nach der Aufnahme aller Assets im System in Stapeln aus. Wenn Sie während der Migration bereits aktiv sind, können Sie diese Aktivitäten so planen, dass sie außerhalb der Arbeitszeiten ausgeführt werden.
 
 ### Laden von Tags {#loading-tags}
 
@@ -56,13 +56,13 @@ Womöglich verfügen Sie bereits über eine Tag-Taxonomie für Ihre Bilder. Zwar
 
 ### Aufnehmen von Assets {#ingesting-assets}
 
-Bei der Aufnahme von Assets in das System sind Leistung und Stabilität von großer Bedeutung. Da Sie eine große Datenmenge in das System laden, sollten Sie sicherstellen, dass das System gut funktioniert, um die erforderliche Zeit zu minimieren und eine Überlastung des Systems zu vermeiden, was zu einem Systemabsturz führen kann, insbesondere bei Systemen, die bereits in Produktion sind.
+Bei der Aufnahme von Assets in das System sind Leistung und Stabilität von großer Bedeutung. Da Sie eine große Menge an Daten in das System laden, sollten Sie sicherstellen, dass das System gut funktioniert, um die erforderliche Zeit zu minimieren und eine Überlastung des Systems zu vermeiden, welche zu einem Systemabsturz führen kann, insbesondere bei Systemen, die bereits in Produktion sind.
 
 Es gibt zwei Ansätze zum Laden der Assets in das System: einen Push-basierten Ansatz mit HTTP oder einen Pull-basierten Ansatz mit den JCR-APIs.
 
 #### Senden über HTTP {#pushing-through-http}
 
-Das Adobe Managed Services-Team verwendet ein Tool namens Glutton, um Daten in Kundenumgebungen zu laden. Glutton ist eine kleine Java-Anwendung, die alle Assets von einem Verzeichnis in ein anderes Verzeichnis einer [!DNL Experience Manager]-Bereitstellung lädt. Statt Glutton können Sie auch Tools wie Perl-Skripts zum Posten der Assets in das Repository verwenden.
+Das Managed Services-Team von Adobe lädt Daten mit einem Tool namens Glutton in Kundenumgebungen. Glutton ist eine kleine Java-Anwendung, die alle Assets von einem Verzeichnis in ein anderes Verzeichnis einer [!DNL Experience Manager]-Bereitstellung lädt. Statt Glutton können Sie auch Tools wie Perl-Skripts zum Posten der Assets in das Repository verwenden.
 
 Der Push-basierte Ansatz mit HTTP hat zwei wesentliche Nachteile:
 
@@ -83,14 +83,14 @@ Nachdem Sie die Assets in das System geladen haben, müssen Sie sie über den Wo
 
 Wenn Sie den Workflow den Anforderungen entsprechend konfiguriert haben, stehen Ihnen zwei Optionen zur Ausführung zur Verfügung:
 
-1. Der einfachste Ansatz ist [Bulk Workflow Manager von ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Mit diesem Tool können Sie eine Abfrage ausführen und die Ergebnisse der Abfrage mithilfe eines Workflows verarbeiten. Es gibt auch Optionen zum Festlegen von Batch-Größen.
+1. Die einfachste Herangehensweise bietet [Bulk Workflow Manager von ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Mit diesem Tool können Sie eine Abfrage ausführen und die Ergebnisse der Abfrage mithilfe eines Workflows verarbeiten. Es gibt auch Optionen zum Festlegen von Batch-Größen.
 1. Sie können [Fast Action Manager von ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) zusammen mit [Synthetic Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html) verwenden. Dieser Ansatz erfordert zwar viel mehr Mitwirkung, Sie können jedoch den Verwaltungsaufwand für die [!DNL Experience Manager]-Workflow-Engine verringern und gleichzeitig die Verwendung von Server-Ressourcen optimieren. Darüber hinaus steigert der Fast Action Manager die Leistung durch die dynamische Überwachung der Serverressourcen und die Einschränkung der Systemlast. Beispielskripte wurden auf der Seite mit den ACS Commons-Funktionen bereitgestellt.
 
 ### Aktivieren von Assets {#activating-assets}
 
-Bei Bereitstellungen mit einer Veröffentlichungsebene müssen Sie die Assets in der Veröffentlichungs-Farm aktivieren. Obwohl Adobe empfiehlt, mehr als eine Veröffentlichungsinstanz auszuführen, ist es am effizientesten, alle Assets in einer Veröffentlichungsinstanz zu replizieren und diese Instanz dann zu klonen. Wenn Sie eine große Anzahl von Assets aktivieren, müssen Sie nach dem Auslösen einer Strukturaktivierung möglicherweise eingreifen. Der Grund: Beim Auslösen von Aktivierungen werden Elemente der Sling-Auftrags-/Even-Warteschlange hinzugefügt. Wenn die Größe dieser Warteschlange etwa 40.000 Elemente überschreitet, verlangsamt sich die Verarbeitung drastisch. Wenn die Größe dieser Warteschlange 100.000 Elemente überschreitet, leidet die Systemstabilität.
+Bei Bereitstellungen mit einer Veröffentlichungsebene müssen Sie die Assets in der Veröffentlichungs-Farm aktivieren. Adobe empfiehlt zwar, mehr als eine Veröffentlichungsinstanz auszuführen, es ist jedoch am effizientesten, alle Assets in einer Veröffentlichungsinstanz zu replizieren und diese Instanz dann zu klonen. Wenn Sie eine große Anzahl von Assets aktivieren, müssen Sie nach dem Auslösen einer Strukturaktivierung möglicherweise eingreifen. Der Grund: Beim Auslösen von Aktivierungen werden Elemente der Sling-Auftrags-/Even-Warteschlange hinzugefügt. Wenn die Größe dieser Warteschlange etwa 40.000 Elemente überschreitet, verlangsamt sich die Verarbeitung drastisch. Wenn die Größe dieser Warteschlange 100.000 Elemente überschreitet, leidet die Systemstabilität.
 
-Um dieses Problem zu umgehen, können Sie den [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) zur Verwaltung der Asset-Replikation einsetzen. Dies funktioniert ohne die Sling-Warteschlangen. So wird der Overhead verringert und gleichzeitig die Arbeitslast reduziert, sodass eine Server-Überlastung verhindert wird. Ein Beispiel für die Verwendung von FAM zur Verwaltung der Replikation finden Sie auf der Dokumentationsseite der Funktion.
+Um dieses Problem zu umgehen, können Sie den [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) zur Verwaltung der Asset-Replikation einsetzen. Dies funktioniert ohne die Sling-Warteschlangen. So wird der Overhead verringert und gleichzeitig die Arbeitslast reduziert, sodass eine Server-Überlastung verhindert wird. Ein Beispiel für die Verwendung des FAM zur Verwaltung der Replikation finden Sie auf der Dokumentationsseite der Funktion.
 
 Zu weiteren Optionen zum Übertragen von Assets in die Veröffentlichungsfarm gehören u. a. [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) und [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), die als Tools mit Jackrabbit bereitgestellt werden. Eine andere Möglichkeit ist zudem [Grabbit](https://github.com/TWCable/grabbit), ein Open-Source-Tool für Ihre [!DNL Experience Manager]-Infrastruktur, das schneller sein soll als vlt.
 

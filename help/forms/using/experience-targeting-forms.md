@@ -1,6 +1,6 @@
 ---
 title: Erstellen zielgerichteter Erlebnisse in AEM Forms
-description: Verwenden Sie Target in AEM Forms, um personalisierte Erlebnisse für zielgerichtete Kunden zu erstellen.
+description: Mithilfe von Target können Sie in AEM Forms personalisierte Erlebnisse für bestimmte Zielgruppen erstellen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '840'
-ht-degree: 64%
+ht-degree: 98%
 
 ---
 
@@ -27,26 +27,26 @@ Informationen zum Konfigurieren von Adobe Target in AEM für die Verwendung mit 
 
 ## Erstellen einer Target- Aktivität {#creating-a-target-activity}
 
-1. Auswählen **Adobe Experience Manager > Personalisierung > Aktivitäten**.
+1. Wählen Sie **Adobe Experience Manager > Personalisierung > Aktivitäten** aus.
 
    `https://<hostname>:<port>/libs/cq/personalization/touch-ui/content/v2/activities.html`
 
-1. Wählen Sie auf der Seite Aktivitäten die Option **Erstellen > Marke erstellen**.
+1. Wählen Sie auf der Seite „Aktivitäten“ die Optionen **Erstellen > Marke erstellen** aus.
 1. Sie werden aufgefordert, eine Vorlage auswählen und Eigenschaften einzugeben.
 
-   Wählen Sie eine Vorlage aus, wählen Sie **Weiter.** Geben Sie den Titel Ihrer Marke im Abschnitt Eigenschaften ein und wählen Sie **Erstellen Sie.**
+   Wählen Sie eine Vorlage aus und dann **Weiter.** Geben Sie den Titel Ihrer Marke im Abschnitt „Eigenschaften“ ein und wählen Sie **Erstellen.**
 Ihre Marke wird jetzt auf der Seite „Aktivitäten“ aufgeführt. 
 
-1. Wählen Sie Ihre Marke auf der Seite Aktivitäten aus.
-1. Wählen Sie im Masterbereich Ihrer Marke die Option **Erstellen** > **Aktivität erstellen**.
+1. Wählen Sie Ihre Marke auf der Seite „Aktivitäten“ aus.
+1. Wählen Sie unter „Primäres Gebiet“ für Ihre Marke die Optionen **Erstellen** > **Aktivität erstellen** aus.
 
    Beim Erstellen einer Aktivität geben Sie deren Details, Ziel und Einstellungen an.
 
-   Der Abschnitt Details enthält Namen, Targeting-Engine und Ziel. Wenn Sie Adobe Target als Targeting-Engine auswählen, wird die Target-Cloud-Konfigurationsoption aktiviert. Wählen Sie Ihre Target-Cloud-Konfiguration, wählen Sie den Aktivitätstyp, geben Sie das Ziel der Aktivität an und wählen Sie **Nächste**. Interaktive Kommunikation unterstützt nur den Aktivitätstyp Erlebnis-Targeting.
+   Der Abschnitt „Details“ enthält den Namen, die Targeting-Engine und die Vorgabe. Wenn Sie Adobe Target als Targeting-Engine auswählen, wird die Option für die Target-Cloud-Konfiguration aktiviert. Wählen Sie Ihre Target-Cloud-Konfiguration aus, geben Sie die Zielsetzung der Aktivität ein und wählen Sie **Weiter** aus. Interaktive Kommunikation unterstützt nur den Aktivitätstyp Erlebnis-Targeting.
 
-   Im Abschnitt „Target“ können Sie das Erlebnis für die Zielgruppe hinzufügen und benennen. Klicken Sie auf **Erlebnis hinzufügen**, um die Optionen **Zielgruppe auswählen** und **Erlebnis benennen** zu aktivieren. Auswählen **Zielgruppe auswählen** um eine Liste der Zielgruppen und ihrer Quelle anzuzeigen. Wählen Sie eine Zielgruppe aus der Liste „Zielgruppenname“ aus. Auswählen **Erlebnis hinzufügen** , um das Erlebnis zu benennen, und wählen Sie **Nächste**.
+   Im Abschnitt „Target“ können Sie das Erlebnis für die Zielgruppe hinzufügen und benennen. Klicken Sie auf **Erlebnis hinzufügen**, um die Optionen **Zielgruppe auswählen** und **Erlebnis benennen** zu aktivieren. Wählen Sie **Zielgruppe wählen** aus, um eine Liste der Zielgruppen und ihrer Quelle anzuzeigen. Wählen Sie eine Zielgruppe aus der Liste „Zielgruppenname“ aus. Wählen Sie erst **Erlebnis hinzufügen** aus, um das Erlebnis zu benennen, und dann **Weiter**.
 
-   Im Abschnitt „Ziele und Einstellungen“ können Sie den Zeitplan und die Priorität für Ihre Aktivität festlegen. Legen Sie das Startdatum, Enddatum und die Priorität der Aktivität, Zielmetrik und zusätzlichen Metrik fest und wählen Sie **Speichern**.
+   Im Abschnitt „Ziele und Einstellungen“ können Sie den Zeitplan und die Priorität für Ihre Aktivität festlegen. Legen Sie das Start- und Enddatum, die Priorität für die Aktivität, die Zielmetrik sowie weitere Metriken fest und wählen Sie **Speichern** aus.
 
    Die Aktivität wird jetzt in Ihrer Markenseite aufgeführt.
 
@@ -70,12 +70,12 @@ Ihre Marke wird jetzt auf der Seite „Aktivitäten“ aufgeführt. 
 
 1. Um das Target-Framework für adaptive Formulare zu aktivieren, navigieren Sie zu Ihrem Formular oder zu der interaktiven Kommunikation und öffnen Sie es bzw. sie im Bearbeitungsmodus.
 
-   Um ein Formular oder eine interaktive Kommunikation im Bearbeitungsmodus zu öffnen, wählen Sie **Auswählen** und wählen Sie **Öffnen**.
+   Um ein Formular oder eine interaktive Kommunikation im Bearbeitungsmodus zu öffnen, wählen Sie **Auswählen** und dann **Öffnen** aus.
 
-   Alternativ werden vier Schaltflächen angezeigt, wenn Sie den Mauszeiger über das Symbol für das Formular oder die interaktive Kommunikation bewegen, ohne es auszuwählen. Sie können die **Bearbeiten** angezeigt, um das Formular im Bearbeitungsmodus zu öffnen.
+   Alternativ werden vier Schaltflächen angezeigt, wenn Sie den Mauszeiger über das Symbol für das Formular oder die interaktive Kommunikation bewegen, ohne es auszuwählen. Sie können die angezeigte Schaltfläche **Bearbeiten** auswählen, um das Formular im Bearbeitungsmodus zu öffnen.
 
-1. Wählen Sie in der Seitensymbolleiste **Seiteninformationen** ![theme-options](assets/theme-options.png) > **Eigenschaften öffnen**.
-1. Wählen Sie auf der Registerkarte „Allgemein“ eine Konfiguration für das Feld **Adobe Target**. Wählen Sie **Speichern und schließen**.
+1. Wählen Sie in der Seitensymbolleiste die Optionen **Seiteninformationen** ![theme-options](assets/theme-options.png) > **Eigenschaften öffnen** aus.
+1. Wählen Sie auf der Registerkarte „Allgemein“ eine Konfiguration für das Feld **Adobe Target**. Klicken Sie auf **Speichern und schließen**.
 
 ## Anwenden der erstellten Aktivität auf ein Bild eines adaptiven Formulars oder einer interaktiven Kommunikation {#applying-created-activity-to-an-adaptive-form-image-or-an-interactive-communication-image}
 
@@ -88,21 +88,21 @@ Ihre Marke wird jetzt auf der Seite „Aktivitäten“ aufgeführt. 
    >AEM Forms unterstützt nur Zielgruppenbestimmung von Bildkomponenten. Stellen Sie sicher, dass das Bedienfeld, in dem sich die Bildkomponente befindet, keine andere Komponente enthält und die Anzahl der Spalten für das Bedienfeld auf 1 eingestellt ist.
 
 1. Von **Bearbeiten** zu **Targeting**-Modus wechseln. Die Option zum Wechseln der Modi befindet sich oben rechts.
-1. Wählen Sie eine **MARKE** auswählen **AKTIVITÄT** und wählen Sie **Targeting starten**. Das **Zielgruppen**-Menü wird auf der rechten Seite des Editors angezeigt.
+1. Wählen Sie eine **MARKE** aus, wählen Sie eine **AKTIVITÄT** aus und wählen Sie dann **Zielgruppenbestimmung starten**. Das **Zielgruppen**-Menü wird auf der rechten Seite des Editors angezeigt.
 
    ![Zielgruppenbestimmungs-Menü](assets/targeting-menu.png)
 
-1. Wählen Sie eine Zielgruppe aus dem **Zielgruppen** und wählen Sie das gewünschte Bild aus. Ein Menü wird angezeigt. Wählen Sie im Menü **Target**. Wählen Sie das Bild aus und wählen Sie **Konfigurieren**. Wählen Sie im Eigenschaftenfenster das Bild aus, das für die ausgewählte Zielgruppe angezeigt werden soll. Wiederholen Sie den Schritt für alle Zielgruppen. Das Experience-Targeting ist für das Bild in der interaktiven Kommunikation oder im adaptiven Formular aktiviert.
+1. Wählen Sie eine Zielgruppe aus dem Menü **Zielgruppen** aus und wählen Sie das gewünschte Bild. Ein Menü wird angezeigt. Wählen Sie im Menü **Target** aus. Wählen Sie das Bild und dann **Konfigurieren** aus. Wählen Sie im Eigenschaftenfenster das Bild aus, das für die ausgewählte Zielgruppe angezeigt werden soll. Wiederholen Sie den Schritt für alle Zielgruppen. Das Experience-Targeting ist für das Bild in der interaktiven Kommunikation oder im adaptiven Formular aktiviert.
 
 ## Überprüfen Sie, ob die erstellte Aktivität mit dem Target-Server synchronisiert wird. {#check-if-the-created-activity-syncs-with-the-target-server}
 
-Eine für die Zielgruppenbestimmung verwendete Aktivität synchronisiert sie mit dem Target-Server. Um zu überprüfen, ob Ihre Aktivität mit dem Zielserver synchronisiert ist, überprüfen Sie den Status Ihrer Aktivität auf Ihrer Markenseite.
+Aktivitäten, die für das Targeting verwendet werden, werden mit dem Target-Server synchronisiert.  Um zu überprüfen, ob Ihre Aktivität mit dem Target-Server synchron ist, überprüfen Sie den Status Ihrer Aktivität auf Ihrer Markenseite.
 
-Stellen Sie sicher, dass der Status der Aktivität &quot;Synchronisiert&quot;lautet.
+Vergewissern Sie sich, dass die Aktivität den Status „Synchronisiert“ aufweist.
 
-## Target-Verhalten überprüfen {#validate-target-behavior}
+## Validieren des Target-Verhaltens {#validate-target-behavior}
 
-Überprüfen des Target-Verhaltens:
+So validieren Sie das Target-Verhalten:
 
 * Verwenden Sie Targeting mit `wcmmode preview`-Vorschau im Autor-Modus.
 * Verwenden Sie Targeting mit `wcmmode preview` und `wcmmode disabled` im Veröffentlichungsmodus
@@ -113,4 +113,4 @@ Um das Targeting für Bildkomponenten in Ihrem Formular zu überwachen, veröffe
 
 ## Offene Probleme {#open-issues}
 
-Ausdruck für die Sichtbarkeit: Festlegen des Fokus schlägt für zielgerichtete Bilder in adaptiven Formularen fehl.
+Ausdruck für die Sichtbarkeit: Festlegen des Fokus schlägt für Targeting-Bilder auf adaptiven Formularen fehl.

@@ -1,5 +1,5 @@
 ---
-title: Best Practices für AEM Entwickler
+title: Best Practices für AEM-Entwickelnde
 description: Die Entwicklungs- und Beratungs-Teams von Adobe haben einen umfassenden Satz an Best Practices für AEM-Entwicklerinnen und -Entwickler zusammengestellt.
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '445'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

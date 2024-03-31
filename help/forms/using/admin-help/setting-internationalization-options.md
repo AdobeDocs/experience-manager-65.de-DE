@@ -1,6 +1,6 @@
 ---
 title: Festlegen der Internationalisierungsoptionen
-description: Erfahren Sie, wie Sie das Gebietsschema angeben, das zum Rendern von Formularen verwendet wird, und wie Sie den Zeichensatz angeben, der zum Kodieren des Ausgabestreams verwendet wird.
+description: Erfahren Sie, wie Sie das Gebietsschema angeben, das verwendet wird, um Formulare zu rendern, und wie Sie den Zeichensatz angeben, mit dem der Ausgabe-Stream kodiert wird.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 32%
+ht-degree: 100%
 
 ---
 
@@ -18,10 +18,10 @@ ht-degree: 32%
 
 ## Festlegen des Gebietsschemas zum Rendern von Formularen {#specify-the-locale-used-to-render-forms}
 
-Sie können das Gebietsschema angeben, das beim Rendern eines PDF-Formulars verwendet wird. Die Felder in einem PDF-Formular verwenden das angegebene Gebietsschema, um Daten anzuzeigen. Wenn das Gebietsschema beispielsweise auf Deutsch festgelegt ist, verwendet das Formular deutsche Dezimaltrennzeichen für numerische Werte. Das Gebietsschema wird auch zum Senden von Validierungsmeldungen an Clientgeräte wie Webbrowser im Rahmen von HTML-Transformationen verwendet.
+Sie können das Gebietsschema angeben, das beim Rendern eines PDF-Formulars verwendet wird. Die Felder in einem PDF-Formular verwenden das angegebene Gebietsschema, um Daten anzuzeigen. Wenn das Gebietsschema beispielsweise auf Deutsch festgelegt ist, verwendet das Formular deutsche Dezimaltrennzeichen für numerische Werte. Das Gebietsschema wird außerdem zum Senden von Überprüfungsmeldungen an Client-Anwendungen wie Webbrowser als Teil von HTML-Transformationen verwendet.
 
 1. Klicken Sie in der Administration-Console auf „Dienste“ > „Formulare“.
-1. Wählen Sie unter &quot;Internationalisierung&quot;in der Liste &quot;Sprache&quot;das Gebietsschema aus, das zum Rendern eines Formulars verwendet wird. Der Standardwert ist Englisch (USA).
+1. Wählen Sie unter „Internationalisierung“ in der Liste „Sprachen“ das Gebietsschema, das zum Wiedergeben eines Formulars verwendet wird. Der Standardwert ist „Deutsch (Deutschland)“.
 1. Klicken Sie auf Speichern.
 
 ## Geben Sie den Zeichensatz an, der zum Kodieren des Ausgabe-Streams verwendet wird {#specify-the-character-set-used-to-encode-the-output-stream}

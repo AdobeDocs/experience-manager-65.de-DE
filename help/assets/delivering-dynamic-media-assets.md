@@ -1,6 +1,6 @@
 ---
 title: Bereitstellen von Dynamic Media-Assets
-description: Erfahren Sie, wie Sie Dynamic Media-Assets wie Videos und Bilder auf Ihren Webseiten bereitstellen.
+description: Erfahren Sie, wie Sie Dynamic Media-Assets wie Videos und Bilder auf Ihren Web-Seiten bereitstellen.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '323'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 

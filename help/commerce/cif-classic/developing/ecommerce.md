@@ -1,12 +1,12 @@
 ---
-title: E-Commerce-Integrationsschicht mit einer API
-description: Mit dem Integrations-Framework können Sie Produktdaten in AEM abrufen und AEM Komponenten für Commerce-Funktionen erstellen.
+title: E-Commerce-Integrationsebene mit einer API
+description: Mit dem Integrations-Framework können Sie Produktdaten in AEM ziehen und AEM-Komponenten für eCommerce-Funktionen erstellen.
 exl-id: da63c576-34cd-40ce-81de-d7391a331364
 solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '144'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -38,4 +38,4 @@ Die eCommerce-API wird von den folgenden Paketen bereitgestellt:
 
 `com.adobe.cq.commerce.*`
 
-Weitere Informationen finden Sie in der [API-Dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html).
+Weitere Informationen finden Sie in der [API-Dokumentation](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html).

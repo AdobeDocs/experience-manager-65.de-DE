@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1855'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -256,9 +256,9 @@ Definieren Sie die Experience-Fragment-Variante, die für die Erzeugung von Meta
 
 Sie können Seiteneigenschaften definieren:
 
-* In der Konsole **Sites**:
+* In der **Sites**-Konsole:
 
-   * [Erstellen einer Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page) (eine Untergruppe der Eigenschaften)
+   * [Erstellen einer neuen Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page) (eine Untergruppe der Eigenschaften)
 
    * durch Klicken oder Tippen auf **Eigenschaften**
 
@@ -353,7 +353,7 @@ Nach dem Start der Massenbearbeitung können Sie Folgendes tun:
    * Gemeinsame Eigenschaften mit einem gemeinsamen Wert
 
       * Nur Eigenschaften mit einem gemeinsamen Wert werden im Ansichtsmodus angezeigt.
-      * Wenn das Feld mehrwertig ist (z. B. Tags), werden Werte nur angezeigt, wenn *all* sind häufig. Wenn nur einige übereinstimmen, werden sie nur bei der Bearbeitung angezeigt.
+      * Wenn es sich um ein mehrwertiges Feld handelt (z. B. Tags), werden die Werte nur angezeigt, wenn *alle* übereinstimmen. Wenn nur einige übereinstimmen, werden sie nur bei der Bearbeitung angezeigt.
 
   Wenn keine Eigenschaften mit einem gemeinsamen Wert vorhanden sind, wird eine Meldung angezeigt.
 
@@ -364,7 +364,7 @@ Nach dem Start der Massenbearbeitung können Sie Folgendes tun:
    * Sie können die Werte in den verfügbaren Feldern aktualisieren.
 
       * Die neuen Werte werden auf alle gewählten Seiten angewendet, wenn Sie **Fertig** wählen.
-      * Wenn das Feld mehrwertig ist (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
+      * Wenn es sich um ein mehrwertiges Feld handelt (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
 
    * Felder, die häufig vorkommen, aber auf den verschiedenen Seiten unterschiedliche Werte haben, werden durch einen speziellen Wert angezeigt, beispielsweise `<Mixed Entries>`.
 

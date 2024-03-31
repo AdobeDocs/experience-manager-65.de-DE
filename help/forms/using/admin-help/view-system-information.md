@@ -1,6 +1,6 @@
 ---
 title: Anzeigen von Systeminformationen
-description: Erfahren Sie, wie Sie Diagramme zur Ressourcenüberwachung und Informationen über den Server anzeigen können, auf dem AEM Formulare ausgeführt werden.
+description: Erfahren Sie, wie Sie Diagramme zur Ressourcenüberwachung und Informationen über den Server anzeigen, der AEM Forms ausführt.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
@@ -10,29 +10,29 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
 # Anzeigen von Systeminformationen {#view-system-information}
 
-Auf der Registerkarte System werden Diagramme zur Ressourcenüberwachung und Informationen über den Server angezeigt, auf dem AEM Formulare ausgeführt werden. Um auf diese Informationen zuzugreifen, klicken Sie in Administration Console oben rechts auf der Seite auf Health Monitor . Wenn Sie AEM Formulare in einer Clusterumgebung ausführen, werden die angezeigten Informationen für den Knoten angezeigt, der aus der Serverliste ausgewählt wurde.
+Auf der Registerkarte „System“ werden Diagramme zur Ressourcenüberwachung und Informationen über den Server angezeigt, der AEM Forms ausführt.  Klicken Sie in der Administrationskonsole in der rechten oberen Ecke der Seite auf „Health Monitor“, um diese Informationen anzuzeigen.  Wenn Sie AEM Forms in einer Cluster-Umgebung ausführen, gelten die angezeigten Informationen für den auf der Server-Liste ausgewählten Knoten.
 
-Um die aktuellen Systeminformationen als Eigenschaftendatei zu speichern, klicken Sie auf Speichern.
+Um die aktuellen Systeminformationen als Eigenschaftendatei zu speichern, klicken Sie auf „Speichern“.
 
-Im rechten Bereich der Registerkarte System werden die folgenden Informationen grafisch dargestellt:
+Im rechten Bereich der Registerkarte „System“ werden die folgenden Informationen grafisch angezeigt:
 
-* Auftrags- und Arbeitzählungselemente
-* Heap- und zugesicherte Heap-Nutzung
-* Nicht-Heap- und zugesicherte Nicht-Heap-Nutzung
+* Anzahl der Auftrags- und Arbeitselemente
+* Heap- und zugesicherte Heap-Auslastung
+* Nicht-Heap- und zugesicherte Nicht-Heap-Auslastung
 
-Sie können Ihren Mauszeiger auf die Timeline ziehen, um Werte für einen bestimmten Zeitpunkt abzurufen.
+Sie können Ihren Zeiger auf der Zeitachse verschieben, um Werte für einen bestimmten Zeitpunkt abzurufen.
 
 >[!NOTE]
 >
->Die Diagrammdaten, Server-Informationswerte und die Uhrzeit werden alle 10 Minuten aktualisiert. Die Informationen werden nicht in Echtzeit angezeigt.
+>Die Diagrammdaten, Werte zu Server-Informationen und die Uhrzeit werden alle 10 Minuten aktualisiert.  Die Informationen werden nicht in Echtzeit angezeigt.
 
-Im linken Bereich der Registerkarte System werden die folgenden Informationen zum Server oder Knoten angezeigt:
+Im linken Bereich der Registerkarte „System“ werden die folgenden Informationen zum Server oder Knoten angezeigt:
 
 **Virtual Machine:** Version von Java Virtual Machine (JVM) auf dem Server.
 

@@ -1,6 +1,6 @@
 ---
-title: Single Page Applications (SPAs) und Server-seitiges Rendering
-description: Erfahren Sie mehr über SPA und Server-seitiges Rendering in Adobe Experience Manager.
+title: Single Page Applications (SPAs) und Server-seitiges Rendern
+description: Erfahren Sie mehr über SPAs und Server-seitiges Rendern in Adobe Experience Manager.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -11,19 +11,19 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1659'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# Single Page Applications (SPAs) und Server-seitiges Rendering {#spa-and-server-side-rendering}
+# Single Page Applications (SPAs) und Server-seitiges Rendern{#spa-and-server-side-rendering}
 
 >[!NOTE]
 >
->Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
+>Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen Client-seitiges Rendern auf Basis eines SPA-Frameworks (z. B. React oder Angular) erforderlich ist.
 
 >[!NOTE]
 >
->Adobe Experience Manager (AEM) 6.5.1.0 oder höher ist erforderlich, um die SPA serverseitigen Rendering-Funktionen zu verwenden, wie in diesem Dokument beschrieben.
+>Adobe Experience Manager (AEM) 6.5.1.0 oder höher ist erforderlich, um die in diesem Dokument beschriebenen Funktionen zum Server-seitigen SPA-Rendern zu verwenden.
 
 ## Übersicht {#overview}
 
@@ -50,8 +50,8 @@ Wenn Sie [davon überzeugt sind, dass Ihr Projekt die Implementierung von SSR er
 
 Weitere Informationen zu Adobe I/O Runtime finden Sie im Folgenden:
 
-* [https://developer.adobe.com/runtime/](https://developer.adobe.com/runtime/) - für einen Überblick über den Dienst
-* [https://developer.adobe.com/runtime/docs/](https://developer.adobe.com/runtime/docs/) - für detaillierte Dokumentation zur Plattform
+* [https://developer.adobe.com/runtime/](https://developer.adobe.com/runtime/) – Überblick über den Dienst
+* [https://developer.adobe.com/runtime/docs/](https://developer.adobe.com/runtime/docs/) – Ausführliche Dokumentation der Plattform.
 
 In den folgenden Abschnitten wird erläutert, wie Sie mit Adobe I/O Runtime für Ihre SPA in zwei verschiedenen Modellen SSR implementieren können:
 
@@ -66,7 +66,7 @@ In den folgenden Abschnitten wird erläutert, wie Sie mit Adobe I/O Runtime für
 
 ## Remote Renderer-Konfiguration {#remote-renderer-configuration}
 
-AEM muss wissen, wo der Remote-gerenderte Inhalt abgerufen werden kann. Unabhängig von [welches Modell Sie für SSR implementieren möchten,](#adobe-i-o-runtime)müssen Sie angeben, wie auf diesen Remote-Rendering-Dienst AEM werden soll.
+AEM muss wissen, wo der Remote-gerenderte Inhalt abgerufen werden kann. Unabhängig davon, [welches Modell Sie für SSR implementieren möchten,](#adobe-i-o-runtime) müssen Sie AEM mitteilen, wie der Zugriff auf diesen Remote-Rendering-Dienst erfolgen soll.
 
 Dies geschieht über den **RemoteContentRenderer – Configuration Factory OSGi-Service**. Suchen Sie in der Konsole „Web-Konsolen-Konfiguration“ unter `http://<host>:<port>/system/console/configMgr` nach der Zeichenfolge „RemoteContentRenderer“.
 
@@ -121,11 +121,11 @@ Beide Modelle sind gültig und werden von AEM unterstützt. Vor der Einführung 
    <th><strong>Nachteile</strong></th>
   </tr>
   <tr>
-   <th><strong>AEM</strong><br /> </th>
+   <th><strong>mit AEM</strong><br /> </th>
    <td>
     <ul>
      <li>AEM verwaltet bei Bedarf das Einfügen von Bibliotheken</li>
-     <li>Verwalten von Ressourcen nur auf AEM<br /> </li>
+     <li>Beibehalten von Ressourcen nur für AEM<br /> </li>
     </ul> </td>
    <td>
     <ul>
@@ -140,7 +140,7 @@ Beide Modelle sind gültig und werden von AEM unterstützt. Vor der Einführung 
     </ul> </td>
    <td>
     <ul>
-     <li>Für die Anwendung erforderliche Clientlib-Ressourcen wie CSS und JavaScript müssen vom AEM-Entwickler über die <code><a href="/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet">allowProxy</a></code> property<br /> </li>
+     <li>Für die Anwendung erforderliche Clientlib-Ressourcen wie CSS und JavaScript müssen von AEM-Entwickelnden über die Eigenschaft <code><a href="/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet">allowProxy</a></code><br /> verfügbar gemacht werden. </li>
      <li>Ressourcen müssen zwischen AEM und Adobe I/O Runtime synchronisiert werden.<br /> </li>
      <li>Um das Authoring der SPA zu aktivieren, ist unter Umständen ein Proxy-Server für Adobe I/O Runtime erforderlich.</li>
     </ul> </td>
@@ -150,15 +150,15 @@ Beide Modelle sind gültig und werden von AEM unterstützt. Vor der Einführung 
 
 ## Planen für SSR {#planning-for-ssr}
 
-Nur ein Teil einer Anwendung muss serverseitig gerendert werden. Das häufigste Beispiel ist, dass der Inhalt, der beim anfänglichen Laden der Seite über der Kante angezeigt wird, Server-seitig gerendert wird. Das spart Zeit, indem bereits gerenderte Inhalte an den Client gesendet werden. Wenn der Benutzer mit der SPA interagiert, wird der zusätzliche Inhalt vom Client gerendert.
+Nur ein Teil einer Anwendung muss Server-seitig gerendert werden. Das häufigste Beispiel ist, dass der Inhalt, der beim anfänglichen Laden der Seite über der Kante angezeigt wird, Server-seitig gerendert wird. Das spart Zeit, indem bereits gerenderte Inhalte an den Client gesendet werden. Wenn der Benutzer mit der SPA interagiert, wird der zusätzliche Inhalt vom Client gerendert.
 
 Wenn Sie erwägen, das Server-seitige Rendern für Ihre SPA zu implementieren, überprüfen Sie, für welche Teile der Anwendung es erforderlich ist.
 
 ## Entwickeln einer SPA mit SSR {#developing-an-spa-using-ssr}
 
-SPA-Komponenten können vom Client (im Browser) oder vom Server gerendert werden. Beim Server-seitigen Rendern sind keine Browser-Eigenschaften wie Fenstergröße und -position vorhanden. Daher sollten SPA Komponenten isomorphisch sein und keine Annahme darüber machen, wo sie gerendert werden.
+SPA-Komponenten können vom Client (im Browser) oder vom Server gerendert werden. Beim Server-seitigen Rendern sind keine Browser-Eigenschaften wie Fenstergröße und -position vorhanden. Daher sollten SPA-Komponenten isomorph sein und keine Annahme darüber machen, wo sie gerendert werden.
 
-Um SSR zu verwenden, stellen Sie Ihren Code in AEM und in Adobe I/O Runtime bereit, der für das Server-seitige Rendering verantwortlich ist. Der Großteil des Codes ist identisch, Server-spezifische Aufgaben unterscheiden sich jedoch.
+Stellen Sie für die Verwendung von SSR Ihren Code in AEM und in Adobe I/O Runtime bereit, der für das Server-seitige Rendern verantwortlich ist. Der größte Teil des Codes ist gleich, jedoch unterscheiden sich die Server-spezifischen Aufgaben.
 
 ## SSR für SPAs in AEM {#ssr-for-spas-in-aem}
 
@@ -191,7 +191,7 @@ Bei lokalen AEM-Instanzen ist es auch möglich, SSR mit einer benutzerdefinierte
 
 >[!NOTE]
 >
->Wenn SSR über Node.js implementiert werden muss, empfiehlt Adobe eine separate Node.js-Instanz für jede AEM Umgebung (Autor, Veröffentlichung, Staging usw.).
+>Wenn SSR über Node.js implementiert werden muss, empfiehlt Adobe für jede AEM-Umgebung (Autor, Veröffentlichung, Staging) eine separate Node.js-Instanz.
 
 ## Remote Content Renderer {#remote-content-renderer}
 
@@ -207,7 +207,7 @@ Dieser Dienst wird intern vom [RemoteContentRendererRequestHandlerServlet](#remo
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
-Mit dem `RemoteContentRendererRequestHandlerServlet` können Sie die Anfragekonfiguration programmgesteuert einstellen. `DefaultRemoteContentRendererRequestHandlerImpl`, die bereitgestellte standardmäßige Implementierung des Anfrage-Handlers, ermöglicht Ihnen das Erstellen mehrerer OSGi-Konfigurationen, um einen Ort in der Inhaltsstruktur einem Remote-Endpunkt zuzuordnen.
+Mit dem `RemoteContentRendererRequestHandlerServlet` können Sie die Anfragekonfiguration programmgesteuert einstellen. `DefaultRemoteContentRendererRequestHandlerImpl`, die bereitgestellte standardmäßige Implementierung des Anfrage-Handlers, ermöglicht es Ihnen, mehrere OSGi-Konfigurationen zu erstellen, um einen Punkt in der Inhaltsstruktur einem Remote-Endpunkt zuzuordnen.
 
 Implementieren Sie die `RemoteContentRendererRequestHandler`-Schnittstelle, um einen benutzerdefinierten Anfrage-Handler hinzuzufügen. Stellen Sie sicher, dass die Komponenteneigenschaft `Constants.SERVICE_RANKING` auf eine ganze Zahl größer als 100 gesetzt wird, was der Rangfolge von `DefaultRemoteContentRendererRequestHandlerImpl` entspricht.
 

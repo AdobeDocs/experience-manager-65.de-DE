@@ -11,38 +11,38 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1797'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 # Upgrades von benutzerdefinierten Suchformularen{#upgrading-custom-search-forms}
 
-In AEM 6.2 hat sich der Speicherort, an dem die benutzerdefinierte Search Forms im Repository gespeichert ist, geändert. Nach dem Upgrade werden diese von ihrem Speicherort in 6.1 unter:
+Der in AEM 6.2 verwendete Speicherort von benutzerdefinierten Suchformularen im Repository wurde geändert. Nach dem Upgrade werden diese von ihrem Speicherort in 6.1 unter:
 
 * /apps/cq/gui/content/facets
 
-an einen neuen Speicherort unter:
+an einen neuen Speicherort verschoben, und zwar unter:
 
 * /conf/global/settings/cq/search/facets
 
 Daher müssen nach einem Upgrade manuelle Anpassungen vorgenommen werden, damit die Formulare weiterhin funktionieren.
 
-Dies gilt für neue, angepasste Search Forms und standardmäßige Forms.
+Dies gilt für neue Suchformulare und Standardformulare, die angepasst wurden.
 
-Weitere Informationen finden Sie in der Dokumentation unter [Suchfacetten](/help/assets/search-facets.md).
+Weitere Informationen finden Sie in der Dokumentation zu [Suchfacetten](/help/assets/search-facets.md).
 
 ## Ändern der Eigenschaft „resourceType“ {#changing-the-resourcetype-property}
 
-Sofern nicht anders angegeben, muss für die meisten Anpassungen nach einem Upgrade die Eigenschaft `sling:resourceType` für die konfigurierten benutzerdefinierten Suchformulare geändert werden. Dies ist erforderlich, damit die Eigenschaft auf den richtigen Speicherort des Rendering-Skripts verweist.
+Sofern nicht anders angegeben, muss für die meisten Anpassungen nach einem Upgrade die Eigenschaft `sling:resourceType` für die konfigurierten benutzerdefinierten Suchformulare geändert werden. Dieser Schritt ist notwendig, damit die Eigenschaft auf den richtigen Speicherort des Rendering-Skripts verweist.
 
-Sie können die Eigenschaft wie folgt ändern:
+Sie können die Eigenschaft ändern, indem Sie folgende Schritte ausführen:
 
 1. Öffnen von CRXDE Lite über `https://server:port/crx/de/index.jsp`
-1. Navigieren Sie zum Speicherort des Knotens, der angepasst werden muss, wie in der Liste der [Forms für benutzerdefinierte Suche](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) unten.
-1. Klicken Sie auf den Knoten. Klicken Sie im rechten Eigenschaftenbereich auf und ändern Sie die **sling:resourceType** -Eigenschaft.
-1. Speichern Sie abschließend die Änderungen, indem Sie die **Alle speichern** Schaltfläche.
+1. Navigieren Sie zum Speicherort des Knotens, der angepasst werden muss, wie in der Liste mit [benutzerdefinierten Suchformularen](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) unten angegeben.
+1. Klicken Sie auf den Knoten. Klicken Sie im rechten Eigenschaftenfenster auf die Eigenschaft **sling:resourceType** und ändern Sie diese.
+1. Speichern Sie dann die Änderungen durch Anklicken der Schaltfläche **Alle speichern**.
 
-## Liste der Forms für benutzerdefinierte Suche {#list-of-custom-search-forms}
+## Liste der benutzerdefinierten Suchformulare {#list-of-custom-search-forms}
 
 Nachstehend finden Sie eine Liste aller benutzerdefinierten Suchformulare und der Änderungen, die nach dem Upgrade erforderlich sind. Sie beziehen sich auf die Namen unter `/conf/global/settings/cq/search/facets/sites/items`.
 
@@ -65,7 +65,7 @@ Nachstehend finden Sie eine Liste aller benutzerdefinierten Suchformulare und de
  </tbody>
 </table>
 
-In AEM 6.1 war die standardmäßige Volltexteigenschaft Teil des Suchformulars. In 6.2 wurde das Volltextfeld durch OmniSearch ersetzt. Diese Eigenschaft wird programmgesteuert übersprungen und kann entfernt werden.
+In AEM 6.1 war die standardmäßige Volltexteigenschaft Teil des Suchformulars. In Version 6.2 wurde das Volltext-Feld durch OmniSearch ersetzt. Diese Eigenschaft wird programmgesteuert übersprungen und kann entfernt werden.
 
 **Aktion:** Entfernen Sie den Knoten vollständig.
 
@@ -74,7 +74,7 @@ In AEM 6.1 war die standardmäßige Volltexteigenschaft Teil des Suchformulars. 
 <table>
  <tbody>
   <tr>
-   <td>Knoten in Standard-Suche von in 6.1</td>
+   <td>Knoten im Standard-Suchformular in 6.1</td>
    <td>Nicht zutreffend</td>
   </tr>
   <tr>
@@ -168,7 +168,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
 
 * Stellen Sie sicher, dass Sie die Eigenschaft `listOrder` für den Knoten `analyticspredicate` auf „**8**“ setzen. Dies ist erforderlich, um Konflikte zu vermeiden.
 
-### Datumsbereichseigenschaften {#date-range-predicates}
+### Datumsbereichs-Eigenschaften {#date-range-predicates}
 
 <table>
  <tbody>
@@ -208,7 +208,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
  </tbody>
 </table>
 
-**Aktion:** Keine Anpassung.
+**Aktion:** Keine Anpassungen erforderlich.
 
 ### Analytics-Eigenschaft {#analytics-predicate}
 
@@ -254,7 +254,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
 
 >[!NOTE]
 >
->Hinweis: Im Gegensatz zu 6.1 rendert das Bereichsprädikat kein Tag mehr in der Suchleiste.
+>Hinweis: Anders als in 6.1 wird mit der Eigenschaft „Bereich“ kein Tag mehr in der Suchleiste gerendert.
 
 ### Options-Eigenschaftsprädikat {#options-property-predicate}
 

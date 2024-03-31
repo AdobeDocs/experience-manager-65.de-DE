@@ -1,6 +1,6 @@
 ---
 title: Entwerfen barrierefreier HTML5-Formulare
-description: HTML5-Formulare verwenden den ARIA HTML5-Barrierefreiheitsstandard. Diese Formulare unterstützen die Navigation mit Registerkarten und sind zertifiziert für die Kompatibilität mit gängigen Bildschirmlesehilfen.
+description: HTML5-Formulare verwenden den ARIA-HTML5-Standard für Barrierefreiheit. Diese Formulare unterstützen die Registerkartennavigation und sind zertifiziert für ihre Kompatibilität mit den gängigen Bildschirmlesehilfen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
@@ -11,23 +11,23 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '343'
-ht-degree: 27%
+ht-degree: 100%
 
 ---
 
 # Entwerfen barrierefreier HTML5-Formulare {#designing-accessible-html-forms}
 
-Für HTML5-Formulare wird der ARIA-HTML5-Standard für Barrierefreiheit verwendet, um die HTML-Formulare barrierefrei zu gestalten. Diese Formulare unterstützen Registerkartennavigation (außer Mozilla FireFox) und sind für die Kompatibilität mit gängigen Bildschirmlesehilfen zertifiziert. Um ein HTML5-Formular mit Barrierefreiheitsmerkmalen zu generieren, entwerfen Sie die XFA-Formularvorlage nach einigen grundlegenden Entwurfsrichtlinien. Die Entwurfsrichtlinien umfassen das Konfigurieren der richtigen Registerkartenreihenfolge und die Bereitstellung des Sprechtext-Inhalts für jedes Formularsteuerelement. AEM Forms Designer unterstützt das Festlegen dieser Formularsteuerungsattribute zum Erstellen eines barrierefreien PDF- und HTML5-Formulars.
+Für HTML5-Formulare wird der ARIA-HTML5-Standard für Barrierefreiheit verwendet, um die HTML-Formulare barrierefrei zu gestalten. Diese Formulare unterstützen die Registerkartennavigation (außer Mozilla Firefox) und sind zertifiziert für ihre Kompatibilität mit den gängigen Bildschirmlesehilfen. Um ein HTML5-Formular mit Barrierefreiheitsmerkmalen zu generieren, entwerfen Sie die XFA-Formularvorlage nach einigen grundlegenden Entwurfsrichtlinien. Die Entwurfsrichtlinien umfassen das Konfigurieren der richtigen Registerkartenreihenfolge und die Bereitstellung des Sprechtext-Inhalts für jedes Formularsteuerelement. AEM Forms Designer unterstützt das Festlegen dieser Formularsteuerungsattribute zum Erstellen eines barrierefreien PDF- und HTML5-Formulars.
 
-*Hinweis:Die Registerkartennavigation deckt keine geschützten Felder ab, z. B. Berechnungsfelder, die die Summe der Werte anzeigen. Damit die Bildschirmlesehilfe den Wert eines geschützten Felds lesen kann, platzieren Sie ein leeres schreibgeschütztes Feld entweder auf dem geschützten Feld oder neben dem Feld. Weisen Sie den Wert des geschützten Felds dem neuen schreibgeschützten Feld zu. Die Bildschirmlesehilfe oder die Registerkartennavigation können dieses schreibgeschützte Feld auswählen und als Wert des geschützten Felds ausdrücken.*
+*Hinweis: Die Registerkartennavigation deckt keine geschützten Felder ab, wie etwa Berechnungsfelder, die Wertesummen anzeigen. Damit die Bildschirmlesehilfe den Wert eines geschützten Felds liest, platzieren Sie ein leeres, schreibgeschütztes Feld entweder auf oder neben dem geschützten Feld. Weisen Sie den Wert des geschützten Feldes dem neuen, schreibgeschützten Feld zu. Die Bildschirmlesehilfe oder die Registerkartennavigation kann dieses schreibgeschützte Feld erfassen und als Wert des geschützten Felds wiedergeben.*
 
-AEM Forms Designer enthält mehrere Sprachtext-Optionen, die an Bildschirmlesehilfen übergeben werden können. Für jedes Objekt in einem Formular kann der Benutzer eine von mehreren Einstellungen für den Text der Bildschirmlesehilfe angeben:
+AEM Forms Designer enthält verschiedene Sprechtextoptionen, die an Bildschirmlesehilfen übergeben werden können. Benutzende können für jedes Objekt in einem Formular eine oder mehrere Einstellungen für den Text der Bildschirmlesehilfe angeben:
 
-* Benutzerdefinierter Bildschirmlesehilfen-Text, der über die Palette &quot;Ein-/Ausgabehilfe&quot;festgelegt werden kann. Autoren können die Namen von Schaltflächen und Feldern und ihren Zweck kommentieren.
-* QuickInfos, die in der Palette &quot;Ein-/Ausgabehilfe&quot;festgelegt werden können.
+* Benutzerdefinierter Bildschirmlesehilfen-Text, der mithilfe der Palette „Barrierefreiheit“ festgelegt werden kann. Autorinnen und Autoren können die Namen von Schaltflächen und Feldern sowie deren Zweck kommentieren.
+* QuickInfos, die in der Palette „Barrierefreiheit“ festgelegt werden können.
 * Beschriftungen für Felder im Formular.
-* Namen von Objekten, wie in der Option &quot;Name&quot;der Registerkarte &quot;Bindung&quot;angegeben.
+* Namen von Objekten (wie für die Option „Name“ der Registerkarte „Bindung“ angegeben).
 
 ![Barrierefreiheit](assets/accessibility.png)
 
-Wenn in einem Formularsteuerelement mehrere Optionen wie QuickInfos, Bildschirmtext und Beschriftung verfügbar sind, verwendet der Reader &quot;Reader&quot;nur eine dieser Eigenschaften. Die Standardreihenfolge lautet &quot;Benutzerdefinierter Bildschirmtext&quot;, &quot;QuickInfo&quot;, &quot;Beschriftung&quot;und &quot;Reader&quot;. Diese Standardreihenfolge können Sie über die Option Bildschirmlesehilfen-**Rangfolge** in der Palette „Ein-/Ausgabehilfe“ außer Kraft setzen.
+Wenn mehrere Optionen wie QuickInfos, Bildschirmlesehilfen-Text und Beschriftung in einem Formularsteuerelement zur Verfügung stehen, verwendet die Bildschirmlesehilfe nur eine dieser Eigenschaften. Die Standardreihenfolge ist: Benutzerdefinierter Bildschirmlesehilfen-Text, QuickInfo, Beschriftung und Name. Diese Standardreihenfolge können Sie über die Option Bildschirmlesehilfen-**Rangfolge** in der Palette „Ein-/Ausgabehilfe“ außer Kraft setzen.

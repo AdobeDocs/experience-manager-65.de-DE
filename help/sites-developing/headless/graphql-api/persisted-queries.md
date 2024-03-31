@@ -1,6 +1,6 @@
 ---
 title: Persistente GraphQL-Abfragen
-description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager beibehalten, um die Leistung zu optimieren. Persistierte Abfragen können von Client-Programmen mithilfe der HTTP-GET-Methode angefragt werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, was letztendlich die Leistung der Client-Programme verbessert.
+description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager persistieren, um die Leistung zu optimieren. Persistierte Abfragen können von Client-Programmen mithilfe der HTTP-GET-Methode angefragt werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, was letztendlich die Leistung der Client-Programme verbessert.
 exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
@@ -8,7 +8,7 @@ role: Developer
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1401'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -400,12 +400,12 @@ Persistente Abfragen können in [AEM-Pakete](/help/sites-administering/package-m
 So erstellen Sie ein Paket:
 
 1. Navigieren Sie zu **Tools** > **Bereitstellung** > **Pakete**.
-1. Erstellen Sie ein Paket durch Tippen auf **Paket erstellen**. Dadurch wird ein Dialogfeld zum Definieren des Pakets geöffnet.
+1. Erstellen Sie ein Paket, indem Sie **Paket erstellen** auswählen. Dadurch wird ein Dialogfeld zum Definieren des Pakets geöffnet.
 1. Geben Sie im Dialogfeld zur Paketdefinition unter **Allgemein** einen **Namen** wie „wknd-persistent-queries“ ein.
 1. Geben Sie eine Versionsnummer wie „1.0“ ein.
-1. Fügen Sie unter **Filter** einen neuen **Filter** hinzu. Wählen Sie über die Pfadsuche den Ordner `persistentQueries` unterhalb der Konfiguration aus. Beispiel: für die `wknd` Konfiguration der vollständigen Pfad `/conf/wknd/settings/graphql/persistentQueries`.
+1. Fügen Sie unter **Filter** einen neuen **Filter** hinzu. Wählen Sie über die Pfadsuche den Ordner `persistentQueries` unterhalb der Konfiguration aus. Für die `wknd`-Konfiguration lautet der vollständige Pfad beispielsweise `/conf/wknd/settings/graphql/persistentQueries`.
 1. Wählen Sie **Speichern** aus, um die neue Paketdefinition zu speichern und das Dialogfeld zu schließen.
-1. Wählen Sie die **Build** in der neu erstellten Package-Definition.
+1. Wählen Sie in der neu erstellten Paketdefinition die Option **Erstellen** aus.
 
 Nachdem das Paket erstellt wurde, können Sie Folgendes tun:
 

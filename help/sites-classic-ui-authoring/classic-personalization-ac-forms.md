@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1227'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Weitere Informationen hierzu finden Sie in der [Vorlagendokumentation](/help/sit
 
    >[!NOTE]
    >
-   >Wenn die Vorlage nicht verfügbar ist, lesen Sie den Abschnitt [Verfügbarmachen von Vorlagen](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate) Abschnitt.
+   >Ist die Vorlage nicht verfügbar, finden Sie weitere Informationen unter [Verfügbarmachen von Vorlagen](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate).
 
 1. Klicken Sie auf **Erstellen**, um das Formular zu erstellen.
 
@@ -80,7 +80,7 @@ In diesem Abschnitt werden nur für Adobe Campaign spezifische Verknüpfungen b
 
 1. Navigieren Sie zu dem Formular, das Sie bearbeiten möchten.
 1. Wählen Sie in der Toolbox **Seite** > **Seiteneigenschaften...** aus und navigieren Sie zur Registerkarte **Cloud-Services** des Popup-Fensters.
-1. Hinzufügen des Adobe Campaign-Dienstes durch Klicken auf **Dienst hinzufügen** und wählen Sie dann in der Dropdown-Liste des Dienstes die Ihrer Adobe Campaign-Instanz entsprechende Konfiguration aus. Diese Konfiguration wird bei der Einrichtung der Verbindung zwischen den Instanzen durchgeführt. Weitere Informationen finden Sie unter [Verbinden von AEM mit Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
+1. Fügen Sie den Adobe Campaign-Service hinzu, indem Sie auf **Service hinzufügen** klicken und anschließend aus der Dropdown-Liste des Service die Konfiguration auswählen, die Ihrer Adobe Campaign-Instanz entspricht. Diese Konfiguration wird bei der Einrichtung der Verbindung zwischen den Instanzen durchgeführt. Weitere Informationen finden Sie unter [Verbinden von AEM mit Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
 
    >[!NOTE]
    >
@@ -106,7 +106,7 @@ In diesem Abschnitt werden nur für Adobe Campaign spezifische Verknüpfungen b
    >
    >Der **Elementname** muss für jedes Formularfeld unterschiedlich sein. Ändern Sie ihn bei Bedarf.
    >
-   >Jedes Formular muss **Verschlüsselter Primärer Schlüssel** zur korrekten Verwaltung der Empfänger in der Adobe Campaign-Datenbank.
+   >Jedes Formular muss eine Komponente vom Typ **Verschlüsselter Primärschlüssel** aufweisen, damit die Empfängerinnen und Empfänger in der Adobe Campaign-Datenbank ordnungsgemäß verwaltet werden können.
 
 1. Aktivieren Sie die Seite, indem Sie in der Toolbox **Seite** > **Seite aktivieren** auswählen. Die Seite wird auf Ihrer Site aktiviert. Sie können sie anzeigen, indem Sie zu Ihrer AEM-Publishing-Instanz wechseln. Die Daten in der Adobe Campaign-Datenbank werden aktualisiert, sobald ein Formular validiert wurde.
 

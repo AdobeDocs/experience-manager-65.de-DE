@@ -1,6 +1,6 @@
 ---
 title: Kampagnen
-description: Lernen Sie die Grundlagen der Verwendung von Adobe Experience Manager-Kampagnen (AEM) kennen.
+description: Lernen Sie die Grundlagen der Verwendung von Adobe Experience Manager(AEM)-Kampagnen kennen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -10,19 +10,19 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 13%
+ht-degree: 100%
 
 ---
 
 # Kampagnen{#campaigns}
 
-Das Kampagnenmanagement bietet digitalen Marketing-Experten die Möglichkeit, personalisierte Inhalte bereitzustellen und spezielle Erlebnisse für Besucher zu erstellen.
+Das Kampagnen-Management bietet E-Marketing-Fachleuten die Möglichkeit, personalisierte Inhalte bereitzustellen und so individuelle Erlebnisse für Besuchende zu schaffen.
 
-Wenn Sie Kampagnen verwalten (einschließlich Landingpages), müssen Sie möglicherweise Folgendes tun:
+Wenn Sie Kampagnen verwalten (einschließlich Landing Pages), müssen Sie möglicherweise Folgendes tun:
 
-* **Segmente definieren** - Sie müssen Segmente und Strategien für Ihre zielgerichteten Inhalte definieren.
-* **HTML für Landingpages vorbereiten** - Mit Landingpages können Autoren Design und Inhalte schnell und einfach in eine AEM importieren. Sie müssen die HTML vorbereiten, damit Assets ordnungsgemäß importiert werden können. Landingpages sind nützlich bei der Erstellung von Marketing-Landingpages, die nur für eine begrenzte Zeit aktiv sind und schnell erstellt werden müssen.
-* **Integrieren mit SiteCatalyst** - Sie können Landingpages mit SiteCatalyst integrieren.
+* **Segmente definieren**: Sie müssen Segmente und Strategien für Ihre zielgerichteten Inhalte definieren.
+* **HTML für Landing Pages vorbereiten**: Mit Landing Pages können Autorinnen und Autoren Designs und Inhalte schnell und einfach in eine AEM-Seite importieren. Sie müssen den HTML-Text vorbereiten, damit Assets ordnungsgemäß importiert werden können. Landing Pages sind nützlich bei der Erstellung von Landing Pages für das Marketing, die nur für eine begrenzte Zeit aktiv sind und schnell erstellt werden müssen.
+* **Integrieren mit SiteCatalyst**: Sie können Landing Pages mit SiteCatalyst integrieren.
 
 Siehe die folgenden Seiten:
 

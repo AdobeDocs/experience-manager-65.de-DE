@@ -1,6 +1,6 @@
 ---
 title: Verschlüsselungsunterstützung für Konfigurationseigenschaften
-description: Erfahren Sie mehr über die Verschlüsselungsunterstützung für Konfigurationseigenschaften, die in AEM bereitgestellt werden.
+description: Erfahren Sie mehr über die Verschlüsselungsunterstützung für Konfigurationseigenschaften in AEM.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '279'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 
@@ -20,15 +20,15 @@ ht-degree: 34%
 
 Unterstützung für die Speicherung aller OSGi-Konfigurationseigenschaften in sicherer, verschlüsselter Form anstatt als Klartext. Das Formular in der Web-Konsolen-Benutzeroberfläche dient zum Erstellen von verschlüsseltem Text aus unverschlüsseltem Text mit dem systemweiten Verschlüsselungs-Zentralschlüssel.
 
-Die Unterstützung für das OSGi-Konfigurations-Plugin wurde hinzugefügt, um die Eigenschaft zu entschlüsseln, bevor sie von einem Dienst verwendet wird.
+Die Unterstützung für das OSGi-Konfigurations-Plug-in wurde hinzugefügt, um die Eigenschaft zu entschlüsseln, bevor sie von einem Dienst verwendet wird.
 
 >[!NOTE]
 >
->Dienste, die einen verschlüsselten Wert erwarten, müssen die IsProtected-Prüfung verwenden, um zu sehen, ob der Wert verschlüsselt ist, bevor versucht wird, ihn zu entschlüsseln, da er möglicherweise bereits entschlüsselt wurde.
+>Dienste, die einen verschlüsselten Wert erwarten, müssen anhand der isProtected-Prüfung feststellen, ob der Wert verschlüsselt ist, bevor mit der Entschlüsselung begonnen werden kann. Dieser könnte nämlich bereits zuvor entschlüsselt worden sein.
 
-## Verschlüsselungsunterstützung aktivieren {#enabling-encryption-support}
+## Aktivieren der Verschlüsselungsunterstützung {#enabling-encryption-support}
 
-Diese Schritte zeigen, wie Sie das SMTP-Kennwort für den Mail-Dienst verschlüsseln. Sie können diese Schritte für eine OSGi-Eigenschaft ausführen, die verschlüsselt werden soll.
+Die folgenden Schritte zeigen, wie das SMTP-Kennwort für den E-Mail-Dienst verschlüsselt wird. Sie können diese Schritte für eine OSGI-Eigenschaft ausführen, die verschlüsselt werden soll.
 
 1. Navigieren Sie zur AEM-Web-Konsole unter *https://&lt;Server-Adresse>:&lt;Serverport>/system/console/configMgr*
 1. Gehen Sie in der oberen linken Ecke zu **Main - Crypto-Unterstützung.**
@@ -39,17 +39,17 @@ Diese Schritte zeigen, wie Sie das SMTP-Kennwort für den Mail-Dienst verschlüs
 
    ![screen_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
 
-1. Im **Nur Text** den Text der sensiblen Daten eingeben, die Sie schützen möchten.
-1. Auswählen **Protect**. Der geschützte Text wird als verschlüsselter Text angezeigt.
+1. Geben Sie im Feld für **Nur-Text** den Text der sensiblen Daten ein, die geschützt werden sollen.
+1. Wählen Sie die **Schaltfläche zum Schützen** aus. Der geschützte Text wird als verschlüsselter Text angezeigt.
 
    ![screen_shot_2018-08-01at113844am](assets/screen_shot_2018-08-01at113844am.png)
 
-1. Kopieren Sie den geschützten Text aus Schritt 5 und fügen Sie ihn in den Wert des OSGi-Formulars ein. In diesem Beispiel wurde die **SMTP-Kennwort** wird zum *Day CQ Mail Service*.
+1. Kopieren Sie den geschützten Text aus Schritt 5 und fügen Sie ihn in den OSGI-Formularwert ein. In diesem Beispiel wird das verschlüsselte **SMTP-Kennwort** dem *Day CQ Mail Service* hinzugefügt.
 
    ![screen_shot_2016-12-18at105809pm](assets/screen_shot_2016-12-18at105809pm.png)
 
-1. Speichern Sie die Eigenschaften des Day CQ Mail Service. Das SMTP-Kennwort wird jetzt als verschlüsselter Wert gesendet.
+1. Speichern Sie die Eigenschaften von „Day CQ Mail Service“. Das SMTP-Kennwort wird jetzt als verschlüsselter Wert gesendet.
 
 ## Entschlüsselungsunterstützung {#decryption-support}
 
-AEM stellt jetzt ein Configuration Plugin zum Entschlüsseln von Konfigurationseigenschaften bereit. Dieses AEM-Plug-in entschlüsselt und ruft automatisch die Klartext-Eigenschaften ab.
+AEM bietet nun ein Konfigurations-Plug-in zur Entschlüsselung von Konfigurationseigenschaften. Dieses AEM-Plug-in führt eine automatische Entschlüsselung durch und ruft die Klartext-Eigenschaften ab.

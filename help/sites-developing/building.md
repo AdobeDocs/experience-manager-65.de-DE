@@ -11,23 +11,23 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '849'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 # Einbinden von Tagging in eine AEM-Anwendung{#building-tagging-into-an-aem-application}
 
-Für das programmgesteuerte Arbeiten mit Tags oder das Erweitern von Tags in einem benutzerdefinierten AEM-Programm beschreibt diese Seite die Verwendung des
+Für das programmatische Arbeiten mit Tags oder das Erweitern von Tags in einem benutzerdefinierten AEM-Programm wird in diesem Dokument die Verwendung der
 
 * [Tagging-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/tagging/package-summary.html),
 
-Das interagiert mit dem
+die mit dem
 
 * [Tagging-Framework interagiert, beschrieben.](/help/sites-developing/framework.md)
 
 Weitere Informationen zum Tagging finden Sie unter:
 
-* [Verwalten von Tags](/help/sites-administering/tags.md) für Informationen zum Erstellen und Verwalten von Tags und darüber, auf welche Inhalts-Tags angewendet wurden.
+* [Verwalten von Tags](/help/sites-administering/tags.md). Hier finden Sie außerdem Informationen zum Erstellen und Verwalten von Tags sowie dazu, welchen Inhalten Tags zugewiesen wurden.
 * [Verwenden von Tags](/help/sites-authoring/tags.md) für Informationen zum Tagging von Inhalten.
 
 ## Übersicht über die Tagging-API {#overview-of-the-tagging-api}
@@ -40,7 +40,7 @@ Die Implementierung des [Tagging-Frameworks](/help/sites-developing/framework.md
 
 ### Abrufen eines JCR-basierten TagManagers {#getting-a-jcr-based-tagmanager}
 
-Um eine TagManager-Instanz abzurufen, benötigen Sie ein JCR `Session` und `getTagManager(Session)`:
+Um eine TagManager-Instanz abzurufen, benötigen Sie eine JCR-`Session`, und Sie müssen `getTagManager(Session)` aufrufen:
 
 ```java
 @Reference
@@ -49,7 +49,7 @@ JcrTagManagerFactory jcrTagManagerFactory;
 TagManager tagManager = jcrTagManagerFactory.getTagManager(session);
 ```
 
-Im typischen Sling-Kontext können Sie sich auch an einen `TagManager` aus dem `ResourceResolver`:
+Im typischen Sling-Kontext können Sie sich auch mit dem `ResourceResolver` an einen `TagManager` anpassen:
 
 ```java
 TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
@@ -133,7 +133,7 @@ Das Formular-Widget `CQ.tagging.TagInputField` dient zur Eingabe von Tags. Es be
 
 Der Tag Garbage Collector ist ein Hintergrund-Service, der die ausgeblendeten und nicht verwendeten Tags bereinigt. Ausgeblendete und nicht verwendete Tags sind Tags unter `/content/cq:tags`, die eine Eigenschaft `cq:movedTo` haben und nicht auf einem Inhaltsknoten verwendet werden, d. h. ihre Anzahl beträgt null. Durch Verwenden dieses Lazy-Deletion-Prozesses muss der Inhaltsknoten (d. h. die Eigenschaft `cq:tags`) nicht als Teil des Verschiebungs- oder des Zusammenführungsvorgangs aktualisiert werden. Die Verweise in der Eigenschaft `cq:tags` werden automatisch aktualisiert, wenn die Eigenschaft `cq:tags` aktualisiert wird, z. B. durch das Seiteneigenschaften-Dialogfeld.
 
-Das Garbage Collector Tag wird standardmäßig einmal am Tag ausgeführt. Sie können sie wie folgt konfigurieren:
+Der Garbage Collector für Tags wird standardmäßig einmal täglich ausgeführt. Sie können ihn hier konfigurieren:
 
 ```xml
 http://localhost:4502/system/console/configMgr/com.day.cq.tagging.impl.TagGarbageCollector
@@ -149,7 +149,7 @@ Die Tag-Suche und die Tag-Auflistung funktionieren folgendermaßen:
 
 ## Tags in verschiedenen Sprachen {#tags-in-different-languages}
 
-Wie in der Dokumentation zur Verwaltung von Tags im Abschnitt [Verwalten von Tags in verschiedenen Sprachen](/help/sites-administering/tags.md#managing-tags-in-different-languages) beschrieben, kann ein Tag-`title` in verschiedenen Sprachen definiert werden. Eine sprachempfindliche Eigenschaft wird dann dem Tag-Knoten hinzugefügt. Diese Eigenschaft weist das Format `jcr:title.<locale>` auf, beispielsweise `jcr:title.fr` für die französische Übersetzung. Die `<locale>` muss eine ISO-Gebietsschema-Zeichenfolge in Kleinbuchstaben sein und &quot;_&quot;anstelle von &quot;-&quot;verwenden. Beispiel: `de_ch`.
+Wie in der Dokumentation zur Verwaltung von Tags im Abschnitt [Verwalten von Tags in verschiedenen Sprachen](/help/sites-administering/tags.md#managing-tags-in-different-languages) beschrieben, kann ein Tag-`title` in verschiedenen Sprachen definiert werden. Eine sprachempfindliche Eigenschaft wird dann dem Tag-Knoten hinzugefügt. Diese Eigenschaft weist das Format `jcr:title.<locale>` auf, beispielsweise `jcr:title.fr` für die französische Übersetzung. `<locale>` muss eine ISO-Gebietsschema-Zeichenfolge in Kleinbuchstaben sein und „_“ anstelle von „-“ enthalten, z. B. `de_ch`.
 
 Wenn das Tag **Animals** zur **Produktseite** hinzugefügt wird, wird der Wert `stockphotography:animals` zur Eigenschaft `cq:tags` des Knotens „/content/geometrixx/de/products/jcr:content“ hinzugefügt. Die Übersetzung wird vom Tag-Knoten referenziert.
 
@@ -179,13 +179,13 @@ In AEM kann die Sprache entweder aus der Seitensprache oder aus der Benutzerspra
 
    * `slingRequest.getLocale()`
 
-Die `currentPage` und `slingRequest` sind in einer JSP über [&lt;cq:definedobjects>](/help/sites-developing/taglib.md) -Tag.
+`currentPage` und `slingRequest` sind in einer JSP über das Tag [&lt;cq:definedObjects>](/help/sites-developing/taglib.md) verfügbar.
 
-Beim Tagging hängt die Lokalisierung vom Kontext als Tag ab `titles`kann in der Seitensprache, in der Benutzersprache oder in einer anderen Sprache angezeigt werden.
+Beim Tagging hängt die Lokalisierung vom Kontext ab, da das Tag `titles` in der Seitensprache, in der Anwendersprache oder in jeder anderen Sprache angezeigt werden kann.
 
 ### Hinzufügen einer neuen Sprache zum Dialogfeld „Tag bearbeiten“ {#adding-a-new-language-to-the-edit-tag-dialog}
 
-Im folgenden Verfahren wird beschrieben, wie Sie eine Sprache (Finnisch) zum **Tag bearbeiten** dialog:
+Im folgenden Verfahren wird beschrieben, wie Sie eine Sprache (Finnisch) zum Dialogfeld **Tag bearbeiten** hinzufügen:
 
 1. Bearbeiten Sie in **CRXDE** die Mehrwerteigenschaft `languages` des Knotens `/content/cq:tags`.
 
@@ -195,8 +195,8 @@ Die neue Sprache (Finnisch) ist jetzt im Tag-Dialogfeld der Seiteneigenschaften 
 
 >[!NOTE]
 >
->Die neue Sprache muss eine der von AEM anerkannten Sprachen sein. Das heißt, sie muss als Knoten unterhalb von `/libs/wcm/core/resources/languages` verfügbar sein.
+>Die neue muss eine Sprache sein, die von AEM erkannt wird. Das heißt, sie muss als Knoten unter `/libs/wcm/core/resources/languages` verfügbar sein.
 
 >[!CAUTION]
 >
->Durch die Installation eines Service Packs wird die Eigenschaft languages des Knotens /content/cq:tags auf den Standardwert zurückgesetzt. Daher ist es erforderlich, sie vor der Installation aus den Eigenschaften hinzuzufügen.
+>Durch die Installation des Service Packs wird die Spracheigenschaft des Knotens „/content/cq:tags“ auf den Standardwert zurückgesetzt. Daher ist es erforderlich, sie vor der Installation aus den Eigenschaften hinzuzufügen.

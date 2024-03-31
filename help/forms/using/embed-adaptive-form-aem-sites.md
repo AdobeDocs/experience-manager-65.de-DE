@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1150'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ AEM Forms stellt eine Komponente bereit, die Sie Ihren Sites-Seiten hinzufügen 
 
 Wenn Sie ein adaptives Formular oder die interaktive Kommunikation in eine AEM Sites-Seite einbetten möchten, die eine bearbeitbare Vorlage verwendet, stellen Sie sicher, dass die AEM Form-Komponente als zulässige Komponente in der verknüpften Vorlage konfiguriert ist. Weitere Informationen finden Sie im Abschnitt **Richtlinie und Eigenschaften (Layout-Container)** unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md).
 
-Wenn eine Sites-Seite eine statische Vorlage verwendet, müssen Sie sie im Absatzsystem der Site-Seite konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren von Komponenten im Design-Modus](/help/sites-authoring/default-components-designmode.md).
+Wenn eine Sites-Seite eine statische Vorlage verwendet, müssen Sie sie im Absatzsystem der Seite konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren von Komponenten im Design-Modus](/help/sites-authoring/default-components-designmode.md).
 
 ## Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation {#af-component}
 
@@ -56,7 +56,7 @@ Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation mithil
    >
    >Mehrere AEM Forms-Container-Komponenten auf einer Seite werden nicht unterstützt.
 
-1. Wählen Sie die eingebettete AEM Forms-Container-Komponente auf der Siteseite aus und wählen Sie dann ![settings_icon](assets/settings_icon.png) in der Aktionsleiste. Das Dialogfeld **[!UICONTROL AEM Forms-Container bearbeiten]** wird geöffnet.
+1. Wählen Sie die eingebettete AEM Forms-Container-Komponente in der Sites-Seite und dann ![settings_icon](assets/settings_icon.png) in der Aktionsleiste aus. Das Dialogfeld **[!UICONTROL AEM Forms-Container bearbeiten]** wird geöffnet.
 1. Geben Sie im Dialogfeld „AEM Forms-Container bearbeiten“ Folgendes an.
 
    * **Asset-Typ:** Wählen Sie den Typ des einzubettenden Assets. Die Optionen sind „Adaptives Formular“ und „Interaktive Kommunikation“
@@ -65,7 +65,7 @@ Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation mithil
 
       * **Dankesnachricht**: Verfassen Sie im Rich-Text-Editor eine Nachricht, die beim Absenden des Formulars angezeigt werden soll. Diese Option steht nur zur Verfügung, wenn Sie ausgewählt haben, dass eine Dankesnachricht angezeigt werden soll.
       * **Dankesseite**: Klicken Sie auf „Durchsuchen“ und wählen Sie die Seite aus, die bei Übermittlung eines Formulars angezeigt werden soll. Diese Option steht nur zur Verfügung, wenn Sie ausgewählt haben, dass eine Dankesseite angezeigt werden soll.
-      * **Seite beim Senden aktualisieren**: Aktivieren Sie diese Option, damit Sie die Seite mit dem eingebetteten adaptiven Formular aktualisieren und die Dankeseite anzeigen können. Andernfalls ersetzt die Dankesseite das adaptive Formular im AEM Forms-Container, ohne die Seite zu aktualisieren. Diese Option steht nur zur Verfügung, wenn Sie ausgewählt haben, dass eine Dankesseite angezeigt werden soll.
+      * **Seite beim Senden aktualisieren**: Aktivieren Sie diese Option, um die Seite mit dem eingebetteten adaptiven Formular zu aktualisieren und die Dankesseite anzuzeigen. Andernfalls ersetzt die Dankesseite das adaptive Formular im AEM Forms-Container, ohne die Seite zu aktualisieren. Diese Option steht nur zur Verfügung, wenn Sie ausgewählt haben, dass eine Dankesseite angezeigt werden soll.
 
    * **Thema**: Wählen Sie ein Thema, das die Formatierung der Komponenten in Ihrem adaptiven Formular oder interaktiver Kommunikation definiert. Zur Formatierung gehören Eigenschaften des Erscheinungsbildes, wie Schriftschnitt, Hintergrundfarbe, Abmessungen und Ausrichtung.
    * **Höhe**: Geben Sie die Höhe des Containers an. Lassen Sie es leer, um die Größe des Containers automatisch zu anzupassen.
@@ -88,7 +88,7 @@ Die AEM Sites-Seite behält einen Verweis auf das adaptive Formular und die inte
 Um eine Konfiguration oder Eigenschaft des eingebetteten adaptiven Formulars zu ändern, führen Sie einen der folgenden Schritte aus.
 
 * Öffnen Sie das ursprüngliche Formular in adaptiven Formularen oder interaktiver Kommunikation in den entsprechenden Editoren und modifizieren Sie diese.
-* Wählen Sie das adaptive Formular oder die interaktive Kommunikation auf der Site-Seite im Bearbeitungsmodus aus und wählen Sie dann **[!UICONTROL In einem neuen Fenster bearbeiten]**. Das ursprüngliche Formular wird im Bearbeitungsmodus geöffnet, sodass Sie es bearbeiten können.
+* Wählen Sie auf der Site-Seite im Bearbeitungsmodus das adaptive Formular bzw. die interaktive Kommunikation und dann **[!UICONTROL In neuem Fenster bearbeiten]** aus. Das ursprüngliche Formular wird im Bearbeitungsmodus geöffnet, sodass Sie es bearbeiten können.
 
 >[!NOTE]
 >

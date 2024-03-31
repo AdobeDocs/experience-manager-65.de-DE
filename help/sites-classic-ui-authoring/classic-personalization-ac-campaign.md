@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 91%
 
 Sie können E-Mail-Inhalte in AEM erstellen und diese in Adobe Campaign-E-Mails verarbeiten. Gehen Sie dazu wie folgt vor:
 
-1. Erstellen Sie einen Newsletter in AEM aus einer Adobe Campaign-spezifischen Vorlage.
+1. Erstellen Sie in AEM mithilfe einer spezifischen Vorlage für Adobe Campaign einen neuen Newsletter.
 1. Wählen Sie [einen Adobe Campaign-Service](#selectingtheadobecampaigncloudservice) aus, bevor Sie die Inhalte bearbeiten, um Zugriff auf alle Funktionen zu erhalten.
 1. Bearbeiten Sie den Inhalt.
 1. Überprüfen Sie den Inhalt.
@@ -53,7 +53,7 @@ Detaillierte Anweisungen finden Sie in diesem Dokument.
 
    >[!NOTE]
    >
-   >[E-Mail-Muster stehen nur in Geometrixx zur Verfügung](/help/sites-developing/we-retail.md#weretail). Laden Sie Beispielinhalt aus Package Share herunter.
+   >[E-Mail-Muster stehen nur in Geometrixx zur Verfügung](/help/sites-developing/we-retail.md#weretail). Laden Sie Geometrixx-Beispielinhalt aus Package Share herunter.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
@@ -82,7 +82,7 @@ Darüber hinaus müssen Sie möglicherweise auch die Adobe Campaign-Vorlage ausw
 
    >[!NOTE]
    >
-   >Klicken Sie auf **OK** oder **Anwenden** nach dem Hinzufügen des Cloud-Dienstes. Nur so funktioniert die Registerkarte **Adobe Campaign** ordnungsgemäß.
+   >Stellen Sie sicher, dass Sie nach dem Hinzufügen des Cloud-Service auf **OK** oder **Anwenden** klicken. Nur so funktioniert die Registerkarte **Adobe Campaign** ordnungsgemäß.
 
 1. Möchten Sie anstatt der Standardvorlage **E-Mail** eine bestimmte Bereitstellungsvorlage für E-Mails (aus Adobe Campaign) verwenden, wählen Sie erneut **Seiteneigenschaften** aus. Geben Sie auf der Registerkarte **Adobe Campaign** den internen Namen der E-Mail-Bereitstellungsvorlage in der entsprechenden Adobe Campaign-Instanz ein.
 
@@ -112,8 +112,8 @@ Sie können E-Mail-Inhalte entweder in der klassischen Benutzeroberfläche oder 
 
 Beim Bearbeiten Ihrer Inhalte können Sie Folgendes einfügen:
 
-* Adobe Campaign-Kontextfelder. Hierbei handelt es sich um Felder, die Sie in Ihren Text einfügen können und die sich entsprechend den Empfängerdaten anpassen (z. B. Vorname, Nachname oder beliebige Daten der Zieldimension).
-* Adobe Campaign-Personalisierungsblöcke. Hierbei handelt es sich um vordefinierte Inhaltsbausteine, die nicht mit den Empfängerdaten in Zusammenhang stehen, wie z. B. ein Markenlogo oder ein Link zu einer Mirrorseite.
+* Adobe Campaign-Kontextfelder. Hierbei handelt es sich um Felder, die Sie in Ihren Text einfügen können und die sich automatisch je nach Daten der Empfängerinnen bzw. Empfänger ändern (beispielsweise Vor- und Nachname oder andere Daten der Zieldimension).
+* Adobe Campaign-Personalisierungsblöcke. Hierbei handelt es sich um Blöcke mit vorkonfiguriertem Inhalt, die sich nicht auf die Daten der Empfängerinnen und Empfänger beziehen (beispielsweise ein Markenlogo oder ein Link zu einer Mirrorseite).
 
 Eine ausführliche Beschreibung der Campaign-Komponenten finden Sie unter [Adobe Campaign-Komponenten](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md).
 
@@ -144,7 +144,7 @@ Eine ausführliche Beschreibung der Campaign-Komponenten finden Sie unter [Adobe
 
 ### Newsletter-Vorschau {#previewing-a-newsletter}
 
-Sie können eine Vorschau des Newsletters anzeigen und eine Vorschau der Personalisierung anzeigen.
+Sie können das Aussehen des Newsletters und die Personalisierung in der Vorschau anzeigen.
 
 1. Öffnen Sie den Newsletter, dessen Vorschau angezeigt werden soll, und klicken Sie auf Vorschau (Lupe), um den Sidekick zu verkleinern.
 1. Klicken Sie auf eines der E-Mail-Client-Symbole, um herauszufinden, wie der Newsletter von verschiedenen Clients angezeigt wird.

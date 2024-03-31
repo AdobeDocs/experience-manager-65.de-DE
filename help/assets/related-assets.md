@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '640'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Ist die Quelldatei mit einem anderen Asset verknüpft, ruft [!DNL Experience Man
 
 *Abbildung: Quell-Asset der verknüpften Assets, die zur Übersetzung hinzugefügt werden sollen.*
 
-1. Übersetzen Sie die Assets im Quellordner in eine Zielsprache, indem Sie die Schritte unter [Erstellen eines Übersetzungsprojekts](translation-projects.md#create-a-new-translation-project). Übersetzen Sie in diesem Fall zum Beispiel Ihre Assets ins Französische.
+1. Übersetzen Sie die Assets im Quellordner für eine Zielsprache, indem Sie die Schritte unter [Übersetzungsprojekt erstellen](translation-projects.md#create-a-new-translation-project) befolgen. Übersetzen Sie in diesem Fall zum Beispiel Ihre Assets ins Französische.
 
 1. Öffnen Sie auf der Seite [!UICONTROL Projekte] den Übersetzungsordner.
 

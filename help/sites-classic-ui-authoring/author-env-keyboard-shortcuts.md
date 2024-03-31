@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '114'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 # Tastaturbefehle für Konsolen{#keyboard-shortcuts-for-consoles}
 
-In Adobe Experience Manager stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich einige auf die Verwendung von Konsolen und andere auf die [Seitenbearbeitung](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich einige auf die Verwendung von Konsolen und andere auf die [Seitenbearbeitung](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -39,9 +39,9 @@ In Adobe Experience Manager stehen verschiedene Tastaturbefehle zur Verfügung. 
   <tr>
    <td>Konsole</td>
    <td><strong><code>Shift-Double-Click</code></strong><br /> (auf der erforderlichen Seite)</td>
-   <td>Öffnen Sie die Seite in einem neuen Fenster.<br /> <strong>Hinweis:</strong> Dies ist operationell, wenn die <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Benutzereigenschaften</a> auf "Einzelfenster"eingestellt sind; bei "Mehrere Fenster"ist dies das Standardverhalten.</td>
+   <td>Seite in neuem Fenster öffnen.<br /> <strong>Hinweis:</strong> Dieser Befehl ist verfügbar, wenn die <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Benutzereigenschaften</a> auf „Einfaches Fenster“ gesetzt sind. Bei „Mehrere Fenster“ ist dies das Standardverhalten.</td>
   </tr>
  </tbody>
 </table>
 
-Desktop-Benutzern stehen bei Verwendung des [Seiteneditors](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) zur Seitenbearbeitung ebenfalls verschiedene Tastaturbefehle zur Verfügung.
+Desktop-Benutzenden stehen bei Verwendung des [Seiteneditors](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) zur Seitenbearbeitung außerdem verschiedene Tastaturbefehle zur Verfügung.

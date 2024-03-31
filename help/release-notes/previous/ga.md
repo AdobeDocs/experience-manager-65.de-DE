@@ -5,7 +5,7 @@ exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '4484'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -187,7 +187,7 @@ Weitere Informationen zu Änderungen in AEM Screens finden Sie in den Versionsh
 
 * Die Leiste [Referenz](/help/sites-authoring/author-environment-tools.md#references) enthält einen neuen Abschnitt, in dem interne Links aufgelistet werden, die auf die ausgewählte Seite verweisen. Dies ist nützlich, wenn Sie planen, eine Seite offline zu schalten oder zu löschen. So können Sie sehen, welche Seiten angepasst werden müssen, bevor sie offline geschaltet werden.
 * Die [Listenansicht](/help/sites-authoring/basic-handling.md#list-view) enthält eine neue Workflow-Spalte, die den Status anzeigt, wenn sich die Seite in einem Workflow befindet.
-* Im [Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md)können Sie jetzt nach vorhandenen Assets suchen, wenn Sie der Seite eine Miniaturansicht zuweisen (Registerkarte &quot;Miniaturansicht&quot;).
+* In den [Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md) können Sie nun nach vorhandenen Assets suchen, wenn Sie der Seite eine Miniaturansicht zuweisen (Registerkarte „Miniatur“).
 
 #### Seiteneditor {#page-editor}
 
@@ -218,7 +218,7 @@ Weitere Informationen zu Änderungen in AEM Screens finden Sie in den Versionsh
 
 #### Multi-Site-Management (MSM) {#multi-site-management-msm}
 
-* Bei Rollout-Konfigurationen, die PushOnModify verwenden, ist die Handhabung des Seitenverschiebungsvorgangs besser, um inkonsistente Zustände zu vermeiden.
+* Bei Rollout-Konfigurationen mit PushOnModify werden Seitenverschiebevorgänge besser verarbeitet, um einen inkonsistenten Zustand zu vermeiden.
 * Durch Erstellen einer Seite in der Live Copy-Struktur wird standardmäßig eine eigenständige Seite generiert.
 * Sie können MSM-Funktionen in Single-Page-Apps nutzen, die das JS-SDK verwenden (auch als SPA-Editor bezeichnet).
 
@@ -307,7 +307,7 @@ Site-Admins können eine Gruppe auf jeder Hierarchieebene erstellen und zu Stand
 Die Aktivierungsfunktion von AEM 6.5 Communities unterstützt die Engine „Shareable Content Object Reference Model“ [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/).
 
 * Unterstützte Tastaturnavigation bei Aktivierungskomponenten
-* Aktivierungskomponenten (z. B. &quot;Katalog- und Kurswiedergabe&quot;, &quot;Zuweisungen&quot;, &quot;Dateibibliothek&quot;) in AEM Communities unterstützen die Tastaturnavigation für eine verbesserte Barrierefreiheit.
+* Aktivierungskomponenten (z. B. für Katalog und Wiedergabe von Kursen, Zuweisungen, Dateibibliothek) in AEM Communities unterstützen die Tastaturnavigation und sorgen so für eine verbesserte Barrierefreiheit.
 
 ##### Weitere Verbesserungen {#other-enhancements}
 
@@ -506,7 +506,7 @@ Die vollständige Matrix der unterstützten Plattformen, einschließlich der Sup
 
 >[!NOTE]
 >
->Für Oracle Java™ SE-Produkte ist Oracle ist auf ein LTS (Long Term Support)-Modell umgestiegen. Java™ 9 und 10 sind Nicht-LTS-Versionen von Oracle. Siehe [Support-Roadmap für oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html). Adobe unterstützt LTS-Versionen von Java™ nur zum Ausführen von AEM in einer Produktionsumgebung. Java™ 11 ist die empfohlene Version für AEM 6.5.
+>Für Oracle Java™ SE-Produkte ist Oracle ist auf ein LTS (Long Term Support)-Modell umgestiegen. Java™ 9 und 10 sind Nicht-LTS-Versionen von Oracle. Siehe [Roadmap für Oracle Java™ SE-Support](https://www.oracle.com/technetwork/java/eol-135779.html). Adobe unterstützt LTS-Versionen von Java™ nur zum Ausführen von AEM in einer Produktionsumgebung. Java™ 11 ist die empfohlene Version für AEM 6.5.
 
 ## Veraltete und entfernte Funktionen {#deprecated-and-removed-features}
 

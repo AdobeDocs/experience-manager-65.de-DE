@@ -1,6 +1,6 @@
 ---
 title: Entwicklungspraktiken
-description: Best Practices für die Entwicklung in Adobe Experience Manager.
+description: Best Practices für die Entwicklung mit Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,59 +10,59 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '617'
-ht-degree: 44%
+ht-degree: 94%
 
 ---
 
 # Entwicklungspraktiken{#development-practices}
 
-## Arbeiten nach einer Definition von Fertig (DoD) {#work-according-to-a-definition-of-done}
+## Arbeiten nach einer Definition of Done (DoD) {#work-according-to-a-definition-of-done}
 
 Jedes Team hat sein eigenes Verständnis davon, was „fertig“ bedeutet, aber es ist wichtig, eines zu haben und sicherzustellen, dass eine Story die definierten Kriterien erfüllt, bevor sie akzeptiert wird.
 
-Einige häufig von Teams festgelegte Kriterien sind:
+Zu den Kriterien, die häufig von Teams festgelegt werden, gehören:
 
-* Für die Formatierung überarbeiteter Code
+* Code auf Formatierung überprüft
 * Kommentare/Javadoc hinzugefügt
-* Erfüllt die erforderlichen Testabdeckung
-* Übergibt Unit- und Integrationstests
-* In der QS-Umgebung validiert
+* Erfüllt die erforderlichen Testabdeckungsniveaus
+* Besteht Unit- und Integrationstests
+* Validiert in der QS-Umgebung
 * Lokalisierung implementiert
 
-Ohne ein klar definiertes DoD ist es einfach, in einer Situation zu landen, in der viele Dinge auf halbem Weg erledigt sind und nichts wirklich vollständig ist.
+Ohne ein klar definiertes DoD kann es leicht passieren, dass viele Dinge zur Hälfte erledigt sind und nichts wirklich abgeschlossen ist.
 
-### Kodierungs- und Formatierungskonventionen definieren und einhalten {#define-and-adhere-to-coding-and-formatting-conventions}
+### Definieren und Befolgen von Kodierungs- und Formatierungskonventionen {#define-and-adhere-to-coding-and-formatting-conventions}
 
 Dinge wie Einzüge und Leerräume erscheinen möglicherweise nicht wichtig, aber korrekt formatierter Code trägt erheblich zur Lesbarkeit und Pflegeleichtigkeit bei. Konventionen sollten im Team abgesprochen und beim Programmieren befolgt werden.
 
 ### Auf hohe Testabdeckung abzielen  {#aim-for-high-test-coverage}
 
-Je größer die Projektimplementierung wird, desto länger muss sie getestet werden. Ohne eine gute Testabdeckung kann das Testteam nicht skalieren und die Entwickler werden schließlich in Bugs begraben.
+Je größer eine Projektimplementierung wird, desto mehr Zeit ist auch erforderlich, um sie zu testen. Ohne entsprechende Testabdeckung kann das Test-Team nicht skalieren und die Entwickelnden kommen irgendwann vor lauter Bugs nicht mehr hinterher.
 
-Entwickler sollten die Test Driven Development (TDD) praktizieren und fehlerhafte Komponententests vor dem Produktionscode schreiben, der ihre Anforderungen erfüllt. Die Qualitätssicherung sollte einen automatisierten Satz von Abnahmeprüfungen erstellen, um sicherzustellen, dass das System von einer hohen Ebene aus wie erwartet funktioniert.
+Entwickelnde sollten Test Driven Development (TDD) praktizieren und fehlschlagende Einheitstests vor dem Produktions-Code schreiben, der ihre Anforderungen erfüllt. Die Qualitätssicherung sollte einen automatisierten Satz von Abnahmeprüfungen erstellen, um sicherzustellen, dass das System von einer hohen Ebene aus wie erwartet funktioniert.
 
-Es stehen benutzerdefinierte Frameworks wie Jackalope und Prosper zur Verfügung, um die Nachahmung von JCR-APIs zu vereinfachen, um die Produktivität der Entwickler beim Schreiben von Komponententests sicherzustellen.
+Es stehen benutzerdefinierte Frameworks wie Jackalope und Prosper zur Verfügung, um das Mocking von JCR-APIs zu vereinfachen und die Produktivität der Entwickelnden beim Schreiben von Einheitstests sicherzustellen.
 
-### Demo bereit halten {#stay-demo-ready}
+### Für Demos bereithalten {#stay-demo-ready}
 
 Das System sollte am Ende jeder Iteration für Demos im Unternehmen zur Verfügung stehen. Indem das System immer bereit für Demos gehalten wird, ist das Team immer nur eine Iteration von Produktionsbereitschaft entfernt und technische Rückstände werden auf ein vertretbares Maß beschränkt.
 
 ### Kontinuierliche Integrationsumgebung implementieren und verwenden {#implement-a-continuous-integration-environment-and-use-it}
 
-Durch die Implementierung einer kontinuierlichen Integrationsumgebung können Sie mühelos und wiederholt Unit-Tests und Integrationstests durchführen. Außerdem werden Bereitstellungen des Entwicklungsteams entkoppelt, sodass die anderen Teile des Teams effizienter werden und stabilere und berechenbarere Bereitstellungen möglich sind.
+Das Implementieren einer kontinuierlichen Integrationsumgebung ermöglicht das einfache und wiederholte Durchführen von Einheits- und Integrationstests. Außerdem werden so Bereitstellungen vom Entwicklungs-Team entkoppelt, was andere Teile des Teams effizienter und Bereitstellungen stabiler sowie vorhersehbarer macht.
 
 ### Entwicklungszyklus durch niedrige Erstellungszeiten beschleunigen {#keep-the-development-cycle-fast-by-keeping-build-times-low}
 
-Wenn Einheitstests zu viel Zeit beanspruchen, lassen Entwickler sie aus, wodurch sie ihren Wert verlieren. Wenn es viel Zeit in Anspruch nimmt, den Code zu erstellen und bereitzustellen, werden diese Aufgaben seltener durchgeführt. Die Festlegung kurzer Erstellungszeiten als Priorität stellt sicher, dass die Zeit, die Sie in die Testabdeckung und CI-Infrastruktur investiert haben, das Team produktiver macht.
+Wenn Einheitstests zu viel Zeit beanspruchen, lassen Entwickler sie aus, wodurch sie ihren Wert verlieren. Wenn es viel Zeit in Anspruch nimmt, den Code zu erstellen und bereitzustellen, werden diese Aufgaben seltener durchgeführt. Indem Sie kurze Erstellungszeiten zur Priorität machen, wird sichergestellt, dass die Zeit, die Sie in die Testabdeckung und CI-Infrastruktur investiert haben, weiterhin der Produktivität des Teams zugutekommt.
 
-### Optimieren Sie Sonar und andere statische Code-Analyse-Tools und reagieren Sie auf ihre Berichte. {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
+### Optimieren von „Sonar“ sowie anderen statischen Codeanalysewerkzeugen und Verwerten ihrer Berichte {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
 
-Code-Analysewerkzeuge haben nur dann einen Wert, wenn ihre Berichte vom Entwickler-Team verwertet werden. Ohne eine Feinabstimmung der Analyse, die diese Instrumente bieten, werden die Empfehlungen, die sie generieren, irrelevant und verlieren ihren Wert.
+Code-Analysewerkzeuge haben nur dann einen Wert, wenn ihre Berichte vom Entwickler-Team auch verwertet werden. Ohne die Optimierung der Analysen, die diese Tools bieten, sind die generierten Empfehlungen nicht relevant und verlieren ihren Wert.
 
 ### Der Pfadfinderregel folgen {#follow-the-boy-scout-rule}
 
-Pfadfinder haben eine Regel: „Hinterlass es besser, als du es vorgefunden hast.“ Solange alle Mitglieder des Entwicklungsteams diese Regel befolgen und etwas bereinigen, wenn sie auf ein Chaos stoßen, wird sich der Code ständig verbessern.
+Pfadfinder haben eine Regel: „Hinterlass es besser, als du es vorgefunden hast.“ Sofern sich alle Mitglieder des Entwicklungs-Teams an diese Regel halten und eine Verbesserung vornehmen, wenn sie einen Fehler sehen, wird der Code konstant verbessert. 
 
 ### Implementierung von YAGNI-Funktionen vermeiden {#avoid-implementing-yagni-features}
 
-YAGNI (You Are Not Gonna Need It) Features sind Dinge, die implementiert werden, wenn wir erwarten, dass wir etwas in der Zukunft brauchen, auch wenn wir es jetzt nicht benötigen. Idealerweise sollte der einfachste Code implementiert werden, der heute funktioniert, und anhand konstanter Refaktorierung sichergestellt werden, dass sich die Architektur des Systems mit den Anforderungen und der Zeit weiterentwickelt. Auf diese Weise können wir uns darauf konzentrieren, was wichtig ist, und verhindern, dass Code-Aufblasen und Funktionen umgehen.
+YAGNI (You Are Not Gonna Need It) Features sind Dinge, die implementiert werden, wenn wir erwarten, dass wir etwas in der Zukunft brauchen, auch wenn wir es jetzt nicht benötigen. Idealerweise sollte der einfachste Code implementiert werden, der heute funktioniert, und anhand konstanter Refaktorierung sichergestellt werden, dass sich die Architektur des Systems mit den Anforderungen und der Zeit weiterentwickelt. Dies ermöglicht eine Konzentration auf das Wesentliche und verhindert, dass der Code aufgebläht wird und die Funktionen überhandnehmen.

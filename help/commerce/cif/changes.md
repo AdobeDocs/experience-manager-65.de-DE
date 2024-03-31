@@ -6,7 +6,7 @@ solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '312'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -58,4 +58,4 @@ AEM rendert Produktkatalog-Erlebnisse direkt mithilfe von AEM-Katalogvorlagen, d
 
 >[!NOTE]
 >
->Weitere Informationen zur Verwendung von CIF mit AEM Managed Service oder AEM On-Premise finden Sie unter [Commerce integration framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>Weitere Dokumentationen zur Verwendung von CIF mit AEM Managed Service oder AEM On-Premise finden Sie unter [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html).

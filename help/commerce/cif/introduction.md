@@ -7,7 +7,7 @@ solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Diese Komplexität sorgt für potenzielle Schwachstellen, erhöhte Gesamtbetrieb
 
 ## CIF unterstützt seit 2013 erfolgreich Kunden
 
-Mit mehr als 200 Kunden hat sich CIF als Bestandteil eines erfolgreichen Content and Commerce-Projekts etabliert. Dies ist für IT und Unternehmen heute und in der Zukunft von Nutzen. Neuere Kundenprojekte beschreiben CIF als &quot;großen Beschleuniger und einen riesigen Zeitersparnis mit viel Wert&quot;.
+Mit mehr als 200 Kunden hat sich CIF als Bestandteil eines erfolgreichen Content and Commerce-Projekts etabliert. Dies ist für IT und Unternehmen heute und in der Zukunft von Nutzen. Neuere Kundenprojekte beschreiben CIF als „großartigen Beschleuniger und enorme Zeitersparnis von großem Wert“.
 
 ## Vorteile des CIF {#cif-benefits}
 

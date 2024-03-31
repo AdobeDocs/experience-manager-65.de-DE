@@ -1,6 +1,6 @@
 ---
 title: Erstellen neuer Ordner für die Formularkategorisierung
-description: Verwenden Sie Ordner zum Organisieren von Formularvorlagen, PDF, Ressourcen und adaptiven Formularen.
+description: Verwenden Sie Ordner, um Formularvorlagen, PDFs, Ressourcen und adaptive Formulare zu organisieren.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
@@ -10,23 +10,23 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '386'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
 # Erstellen neuer Ordner für die Formularkategorisierung {#create-new-folders-to-categorize-forms}
 
-Sie können Ihre Assets mithilfe von Ordnern besser organisieren. Da AEM Forms verschiedene Asset-Typen unterstützt - Formularvorlagen, PDF, Dokumente, Ressourcen und adaptive Formulare mit verschiedenen Metadaten - können Sie Ordner verwenden, um Formulare anhand der gewünschten Kriterien zu kategorisieren.
+Sie können Assets mithilfe von Ordnern besser organisieren. Da AEM Forms mehrere Asset-Typen (Formularvorlagen, PDFs, Dokumente, Ressourcen und adaptive Formulare mit verschiedenen Metadaten) unterstützt, können Sie über Ordner Formulare basierend auf den gewünschten Kriterien kategorisieren.
 
-In AEM Forms können Sie den Titel eines Ordners ändern. Der Titel ist nicht mit dem Namen des Knotens identisch, unter dem der Ordner im Repository gespeichert ist. Stattdessen wird der Titel als Metadaten für den Ordner beibehalten. Wenn Sie den Titel eines Ordners ändern, hat dies keine Auswirkungen auf den Pfad eines Assets, das im Ordner vorhanden ist.
+In AEM Forms können Sie den Titel eines Ordners ändern. Der Titel ist nicht mit dem Namen des Knotens identisch, unter dem der Ordner im Repository gespeichert ist. Stattdessen wird der Titel als Teil der Metadaten für den Ordner beibehalten. Wenn Sie den Titel eines Ordners ändern, ist der Pfad der Assets, die sich im Ordner befinden, davon nicht betroffen.
 
-## Erstellen von Ordnern {#create-a-folder}
+## Erstellen eines Ordners {#create-a-folder}
 
-Sie können einen Ordner in AEM Forms auf eine der folgenden Arten erstellen:
+Sie haben folgenden Möglichkeiten, um einen Ordner in AEM Forms zu erstellen:
 
 * Laden Sie eine ZIP-Datei hoch, die Assets in der gewünschten Ordnerstruktur enthält (siehe [Einbinden von XDP- und PDF-Dokumenten in AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md))
 
-* Leeren Ordner erstellen
+* Erstellen Sie einen leeren Ordner.
 
 1. Melden Sie sich bei der AEM Forms-Benutzeroberfläche unter `https://<server>:<port>/aem/forms.html` an.
 1. Navigieren Sie zu dem Speicherort, unter dem Sie einen Ordner erstellen möchten.
@@ -51,5 +51,5 @@ Sie können einen Ordner in AEM Forms auf eine der folgenden Arten erstellen:
 
 1. Wählen Sie den Ordner aus, dessen Namen Sie bearbeiten möchten.
 1. Klicken Sie auf das Symbol ![aem6forms_edit](assets/aem6forms_edit.png) in der Symbolleiste.
-1. Geben Sie den neuen Titel ein. Das Textfeld wird vorab mit dem aktuellen Wert des Ordnertitels gefüllt. Sie können diesen in einen neuen Wert ändern.
+1. Geben Sie den neuen Titel ein. Das Textfeld wird mit dem aktuellen Wert des Ordnertitels vorausgefüllt. Sie können diesen in einen neuen Wert ändern.
 1. Klicken Sie auf **[!UICONTROL Senden].**

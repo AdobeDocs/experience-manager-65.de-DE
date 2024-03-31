@@ -1,12 +1,12 @@
 ---
 title: Verwenden des Rich-Text-Editors zum Erstellen von Inhalten
-description: Verwenden des Rich-Text-Editors zum Erstellen von Inhalten in Adobe Experience Manager 6.5.
+description: Verwenden Sie den Rich-Text-Editor, um Inhalte in Adobe Experience Manager 6.5 zu erstellen.
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '264'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ Der Rich-Text-Editor (RTE) ist ein grundlegender Baustein für die Eingabe von T
 
 ## Bearbeiten im Kontext {#in-place-editing}
 
-Wenn Sie eine textbasierte Komponente mit einem einzigen Klick auswählen, wird die [Komponenten-Symbolleiste](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) wie bei jeder beliebigen Komponente.
+Bei der Auswahl einer textbasierten Komponente durch einen einfachen Klick wird, wie bei Komponenten üblich, die [Komponenten-Symbolleiste](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) geöffnet.
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-Durch Tippen/Klicken auf die Komponente oder anfängliches Auswählen der Komponente mit einem langsamen Doppelklick wird die Bearbeitung im Kontext geöffnet, die über eine eigene Symbolleiste verfügt. Hier können Sie den Inhalt bearbeiten und grundlegende Formatierungsänderungen vornehmen.
+Wenn Sie erneut klicken oder die Komponente anfangs mit einem langsamen Doppelklick auswählen, wird die Funktion zur Bearbeitung im Kontext geöffnet, die über eine eigene Symbolleiste verfügt. Hier können Sie den Inhalt bearbeiten und grundlegende Formatierungsänderungen vornehmen.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 

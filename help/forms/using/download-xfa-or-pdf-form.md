@@ -1,6 +1,6 @@
 ---
 title: Herunterladen von XFA- oder PDF-Formularvorlagen
-description: Sie können Formulare aus dem Repository in das lokale System exportieren und die heruntergeladenen Formulare in das neue Repository migrieren.
+description: Sie können Formulare aus dem Repository in das lokale System exportieren und die heruntergeladenen Formulare in ein neues Repository migrieren.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
@@ -10,21 +10,21 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
 # Herunterladen von XFA- oder PDF-Formularvorlagen {#download-an-xfa-or-a-pdf-form-template}
 
-Der Download-Vorgang ermöglicht, wie der Name schon sagt, den Export von Formularen aus dem Repository in das lokale System. In Kombination mit dem Upload-Vorgang hilft dieser Vorgang Ihnen bei der Migration Ihrer Formulare von einem Repository zu einem anderen.
+Mit dem Download-Vorgang können Sie, wie der Name schon sagt, Formulare aus dem Repository in das lokale System exportieren. In Kombination mit dem Upload-Vorgang hilft Ihnen dieser Vorgang bei der Migration Ihrer Formulare von einem Repository in ein anderes.
 
 In AEM Forms wird der Download-Vorgang für die folgenden Asset-Typen unterstützt:
 
-* Formularvorlagen (XFA Forms)
+* Formularvorlagen (XFA-Formulare)
 * PDF-Formulare
-* Dokumente (flache PDF-Dateien)
+* Dokumente (reduzierte PDF-Dateien)
 
-AEM Forms unterstützt den Download dieser Formulartypen einzeln oder in einem Ordner mit einem oder mehreren unterstützten Formularen.
+AEM Forms unterstützt das Herunterladen dieser Formulartypen einzeln oder in einem Ordner, der ein oder mehrere unterstützte Formulare enthält.
 
 Abgesehen von diesen Elementen können Sie den `Resource`-Elementtyp herunterladen, wenn er in einem Ordner vorhanden ist. Diese Funktion wird bereitgestellt, damit Sie neben dem Formular die Ressource herunterladen können, auf die ein XFA-Formular verweist.
 
@@ -38,18 +38,18 @@ Abgesehen von diesen Elementen können Sie den `Resource`-Elementtyp herunterlad
 
    >[!NOTE]
    >
-   >Sie können nur ein Formular zum Herunterladen auswählen. Wenn Sie mehrere Formulare herunterladen möchten, müssen Sie sie als Ordner herunterladen.
+   >Sie können nur ein Formular zum Herunterladen auswählen. Wenn Sie mehrere Formulare herunterladen möchten, müssen Sie diese als einen Ordner herunterladen.
 
 1. Klicken Sie im eingeblendeten Dialogfeld auf **[!UICONTROL Herunterladen]**.
 
    AEM Forms generiert eine ZIP-Datei, die die ausgewählte Datei oder den ausgewählten Ordner enthält.
 
-   Wenn Sie einen Ordner herunterladen, werden die unterstützten Assets innerhalb des Ordners in ihre vorhandene Hierarchie heruntergeladen.
+   Wenn Sie einen Ordner herunterladen, werden die unterstützten Assets im Ordner in ihrer vorhandenen Hierarchie heruntergeladen.
 
    Die ZIP-Datei wird im Ordner `Downloads` auf Ihrem System gespeichert.
 
 ## Überlegungen zum Upload-Vorgang {#related-considerations-for-the-upload-operation}
 
-* Sie können die ZIP-Datei an einen anderen Speicherort im selben Repository oder in einem anderen Repository hochladen.
-* Die Hierarchie der Assets in einem Ordner wird beim Hochladen beibehalten
+* Sie können die ZIP-Datei in einen beliebigen Speicherort in demselben oder in einem anderen Repository hochladen
+* Die Hierarchie der Assets in einem Ordner wird während des Upload-Vorgangs beibehalten
 * Änderungen, die vor dem Download an den Metadaten der heruntergeladenen Assets vorgenommen werden, werden beim Hochladen angezeigt. 

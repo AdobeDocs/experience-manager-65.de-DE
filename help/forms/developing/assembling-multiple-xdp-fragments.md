@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1859'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -71,9 +71,9 @@ Das DDX-Dokument enthält ein XDP-`result`-Tag, das den Namen des Ergebnisses an
  }
 ```
 
-Die `XDP source` -Tag gibt die XDP-Datei an, die ein vollständiges XDP-Dokument darstellt, das als Container zum Hinzufügen von XDP-Fragmenten oder als eines von mehreren Dokumenten verwendet werden kann, die in der richtigen Reihenfolge angehängt werden. In dieser Situation wird das XDP-Dokument nur als Container verwendet (die erste Abbildung, die in *Zusammenstellen mehrerer XDP-Fragmente* gezeigt wird). Das heißt, die anderen XDP-Dateien werden im XDP-Container platziert.
+Das Tag `XDP source` gibt die XDP-Datei an, die ein vollständiges XDP-Dokument darstellt, das als Container für das Hinzufügen von XDP-Fragmenten oder als eines von mehreren Dokumenten verwendet werden kann, die der Reihe nach aneinandergehängt werden. In dieser Situation wird das XDP-Dokument nur als Container verwendet (die erste Abbildung, die in *Zusammenstellen mehrerer XDP-Fragmente* gezeigt wird). Das heißt, die anderen XDP-Dateien werden im XDP-Container platziert.
 
-Für jedes Teilformular können Sie ein `XDPContent`-Element hinzufügen (dieses Element ist optional). Beachten Sie im obigen Beispiel, dass es drei Teilformulare gibt: `subPatientContact`, `subPatientPhysical` und `subPatientHealth`. Beide `subPatientPhysical` und das `subPatientHealth` Teilformulare befinden sich in derselben XDP-Datei, tuc018_patient.xdp. Das Fragment-Element gibt den Namen des Unterformulars an, wie er im Designer definiert ist.
+Für jedes Teilformular können Sie ein `XDPContent`-Element hinzufügen (dieses Element ist optional). Beachten Sie im obigen Beispiel, dass es drei Teilformulare gibt: `subPatientContact`, `subPatientPhysical` und `subPatientHealth`. Sowohl das Teilformular `subPatientPhysical` als auch das Teilformular `subPatientHealth` befinden sich in der gleichen XDP-Datei, „tuc018_patient.xdp“. Das Fragment-Element gibt den Namen des Unterformulars an, wie er im Designer definiert ist.
 
 >[!NOTE]
 >
@@ -123,7 +123,7 @@ Um mehrere XDP-Dokumente zusammenzuführen, verweisen Sie auf alle XDP-Dateien, 
  <XDPContent insertionPoint="ddx_fragment" source="tuc018_contact.xdp" fragment="subPatientContact" required="false"/>
 ```
 
-Das Teilformular mit dem Namen *subPatientContact* muss sich in der XDP-Datei mit dem Namen *tuc018_contact.xdp*.
+Das Teilformular mit dem Namen *subPatientContact* muss sich in der XDP-Datei mit dem Namen *tuc018_contact.xdp* befinden.
 
 **Festlegen von Laufzeitoptionen**
 

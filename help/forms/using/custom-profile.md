@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '656'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Um ein benutzerdefiniertes Profil zu erstellen, führen Sie die folgenden Schrit
 Nachdem Sie ein benutzerdefiniertes Profil erstellt haben, fügen Sie Render-Informationen zu diesem Profil hinzu. Nach Erhalt einer Anfrage für das neue Profil prüft CRX das Vorhandensein des Ordners „/apps“, damit die JSP-Seite gerendert werden kann. Erstellen Sie die JSP-Seite im Ordner „/apps“.
 
 1. Navigieren Sie im linken Fensterbereich zum Ordner `/apps`.
-1. Rechtsklicken Sie auf die `/apps` Ordner erstellen und einen Ordner mit dem Namen erstellen **hrform**.
+1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps` und wählen Sie die Erstellung eines Ordners mit dem Namen **hrform**.
 1. Erstellen Sie innerhalb des Ordners **hrform** einen Ordner namens **demo**.
 1. Klicken Sie auf die Schaltfläche **Alle speichern**.
 1. Navigieren Sie zu `/libs/xfaforms/profile/html.jsp` und kopieren Sie den Knoten **html.jsp**.

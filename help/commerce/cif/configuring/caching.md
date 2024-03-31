@@ -6,7 +6,7 @@ solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '821'
-ht-degree: 83%
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,7 @@ Für die AEM-CIF-Kernkomponenten wird das Caching auf Komponentenbasis konfiguri
 
 ### Konfiguration
 
-Nach der Konfiguration für eine bestimmte Komponente speichert der Cache die von den einzelnen Cache-Konfigurationseinträgen definierten GraphQL-Abfragen und -Antworten zwischen. Die Größe des Caches und die Caching-Dauer jedes Eintrags müssen auf Projektbasis definiert werden, z. B. abhängig davon, wie oft sich die Katalogdaten ändern können, wie wichtig es ist, dass eine Komponente immer die neuesten möglichen Daten anzeigt usw. Beachten Sie, dass es keine Cache-Invalidierung gibt. Gehen Sie daher beim Festlegen der Cache-Dauer vorsichtig vor.
+Nach der Konfiguration für eine bestimmte Komponente speichert der Cache die von den einzelnen Cache-Konfigurationseinträgen definierten GraphQL-Abfragen und -Antworten zwischen. Die Größe des Caches und die Caching-Dauer jedes Eintrags sind auf Projektbasis festzulegen, z. B. je nachdem, wie oft sich die Katalogdaten ändern können oder wie wichtig es ist, dass eine Komponente immer die neuestmöglichen Daten anzeigt. Beachten Sie, dass es keine Cache-Invalidierung gibt. Gehen Sie daher beim Festlegen der Cache-Dauer vorsichtig vor.
 
 Beim Konfigurieren des Cachings für Komponenten muss der Cache-Name dem Namen der **Proxy-Komponenten** entsprechen, die Sie in Ihrem Projekt definieren.
 
@@ -28,7 +28,7 @@ Bevor der Client eine GraphQL-Anfrage sendet, prüft er, ob **exakt** diese Grap
 
 ### Beispiele
 
-Es wird empfohlen, zum Konfigurieren des Cachings für den Such-Service alle verfügbaren Aggregations-/Facettenwerte abzurufen, die auf den Produktsuchen- und Kategorieseiten angezeigt werden. Diese Werte ändern sich normalerweise nur, wenn beispielsweise ein neues Attribut zu Produkten hinzugefügt wird. Daher kann die Dauer für diesen Cache-Eintrag &quot;groß&quot;sein, wenn sich der Satz von Produktattributen nicht häufig ändert. Obwohl dies projektspezifisch ist, empfiehlt Adobe Werte von einigen Minuten in der Projektentwicklungsphase und einigen Stunden auf stabilen Produktionssystemen.
+Es wird empfohlen, zum Konfigurieren des Cachings für den Such-Service alle verfügbaren Aggregations-/Facettenwerte abzurufen, die auf den Produktsuchen- und Kategorieseiten angezeigt werden. Diese Werte ändern sich normalerweise nur, wenn beispielsweise ein neues Attribut zu Produkten hinzugefügt wird. Daher kann die Dauer für diesen Cache-Eintrag auf „groß“ festgelegt sein, wenn die Produktattribute nur selten geändert werden. Obwohl dies projektspezifisch ist, empfiehlt Adobe Werte von einigen Minuten in der Projektentwicklungsphase und einigen Stunden auf stabilen Produktionssystemen.
 
 Dies wird in der Regel mit dem folgenden Cache-Eintrag konfiguriert:
 

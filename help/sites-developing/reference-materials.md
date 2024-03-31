@@ -1,6 +1,6 @@
 ---
 title: API-Handbücher
-description: Dokumentation für die APIs, die AEM für die Entwicklung von Anwendungen bereitstellt
+description: Dokumentation zu den APIs, die AEM zum Entwickeln von Anwendungen bereitstellt
 contentOwner: Guillaume Carlino
 topic-tags: introduction
 audience: developing
@@ -12,13 +12,13 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
 # API-Handbücher {#api-guides}
 
-Adobe Experience Manager (AEM) bietet mehrere APIs für die Entwicklung von Anwendungen und die Erweiterung von AEM. Die folgende Liste enthält die Dokumentation für von AEM unterstützte APIs:
+Adobe Experience Manager (AEM) stellt mehrere APIs zum Entwickeln von Anwendungen und Erweitern von AEM bereit. Die folgende Liste enthält die Dokumentation für APIs, die von AEM unterstützt werden:
 
 * [Adobe AEM 6.5.0-API](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/index.html)
 * [API für die (Touch-optimierte) Granite-Benutzeroberfläche – Dokumentation](https://www.adobe.io/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
@@ -34,7 +34,7 @@ AEM Single-Page Application (SPA) Editor – SDK-Framework-JavaScript-API-Refer
 * [Bearbeitbare React-Komponenten](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 * [Bearbeitbare Angular-Komponenten](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
-AEM Bereitstellungs- und Content Management-APIs:
+APIs für AEM-Bereitstellung und Content Management:
 
 * Kernkomponenten (JSON)
 
@@ -42,11 +42,11 @@ AEM Bereitstellungs- und Content Management-APIs:
    * [Aktivieren eines JSON-Exports für eine Komponente](/help/sites-developing/json-exporter-components.md)
    * Weitere Informationen finden Sie im [Abschnitt „Komponenten“ des Benutzerhandbuchs für Entwickler](/help/sites-developing/getting-started.md).
 
-* **Assets**: Die Assets-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für Assets, einschließlich Binärdateien, Metadaten, Ausgabedarstellungen und Kommentaren. Siehe [AEM Assets HTTP-API](/help/assets/mac-api-assets.md)
+* **Assets**: Die Asset-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für Assets, einschließlich Binärdateien, Metadaten, Ausgabeformaten und Kommentaren. Siehe [AEM Assets-HTTP-API](/help/assets/mac-api-assets.md)
 
-* **Inhaltsfragmente** (KF): [CF-Unterstützung in der Assets-HTTP-API](/help/assets/assets-api-content-fragments.md) und [AEM Assets API - Inhaltsfragmente](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* **Inhaltsfragmente**: Es werden [Inhaltsfragmente in der Assets-HTTP-API](/help/assets/assets-api-content-fragments.md) und [AEM Assets-API – Inhaltsfragmente](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html) unterstützt.
 
-Die folgenden externen Ressourcen dienen nur als Referenz:
+Die folgenden externen Ressourcen werden nur zu Referenzzwecken angegeben:
 
 * [Apache Sling 11-API](https://sling.apache.org/apidocs/sling11/)
 * [Jackrabbit Oak-API](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)

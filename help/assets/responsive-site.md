@@ -1,6 +1,6 @@
 ---
 title: Bereitstellen von optimierten Bildern für eine responsive Website
-description: Verwenden der Funktion für responsiven Code zur Bereitstellung optimierter Bilder
+description: Erfahren Sie, wie Sie mit der Funktion für responsiven Code optimierte Bilder bereitstellen.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '340'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -53,4 +53,4 @@ Siehe auch [Verknüpfen von URLs mit Ihrer Web-Anwendung](linking-urls-to-yourwe
 
 HTTP/2 ist das neue, aktualisierte Web-Protokoll, das die Kommunikation zwischen Browser und Servern verbessert. Es beschleunigt die Übertragung von Informationen und reduziert die erforderliche Prozessorleistung. Die Bereitstellung von Dynamic Media-Assets kann über HTTP/2 erfolgen, das schnellere Antwort- und Ladezeiten bietet.
 
-Siehe [Bereitstellung von Inhalt über HTTP/2](http2.md), um ausführliche Informationen zu den ersten Schritten mit HTTP/2 mit Ihrem Dynamic Media-Konto zu erhalten.
+Unter [Bereitstellung von Inhalten über HTTP/2](http2.md) finden Sie ausführliche Informationen zu den ersten Schritten mit HTTP/2 mit Ihrem Dynamic Media-Konto.

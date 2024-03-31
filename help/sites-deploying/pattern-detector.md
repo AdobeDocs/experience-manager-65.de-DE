@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ Der Musterdetektor wird als separates [Paket](https://experience.adobe.com/#/dow
 
 >[!NOTE]
 >
->Der Musterdetektor kann in jeder beliebigen Umgebung, einschließlich lokaler Entwicklungsinstanzen, ausgeführt werden. Sie haben jedoch folgende Möglichkeiten:
+>Der Musterdetektor kann in jeder beliebigen Umgebung, einschließlich lokaler Entwicklungsinstanzen, ausgeführt werden. Um jedoch:
 >
 >* die Erkennungsrate zu erhöhen,
 >* vermeiden Sie jede Verlangsamung bei geschäftskritischen Instanzen.
@@ -221,4 +221,4 @@ Mit dem Musterdetektor können Sie derzeit Folgendes überprüfen:
 
 >[!NOTE]
 >
->Die Mustererkennung versucht, die Warnungen für die Aktualisierung genau vorherzusagen. In einigen Szenarien kann dies jedoch zu falsch-positiven Ergebnissen führen.
+>Der Musterdetektor versucht, die Warnungen für das Upgrade genau vorherzusagen. In einigen Szenarien kann dies jedoch zu falsch-positiven Ergebnissen führen.

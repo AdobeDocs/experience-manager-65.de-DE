@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '537'
-ht-degree: 37%
+ht-degree: 100%
 
 ---
 
@@ -32,22 +32,22 @@ Die Seite „Inhaltserkenntnisse“ enthält Berichte, die Adobe SiteCatalyst-, 
    * Durchschnittliche Besuchszeit pro Seite
    * Quellen
 
-* Target: Berichte zur Kampagnenaktivität, für die Ihre Seite Angebote enthält.
-* BrightEdge: Berichte zu den Seitenfunktionen, die die Sichtbarkeit der Seite für Suchmaschinen verbessern, und empfiehlt Funktionen, die implementiert werden sollten.
+* Target: Berichte über Kampagnenaktivität, für die Ihre Seite Angebote enthält.
+* BrightEdge: Berichte über die Seitenfunktionen, die die Sichtbarkeit der Seite für Suchmaschinen verbessern, mit Empfehlungen für Funktionen, die implementiert werden sollten.
 
 Weitere Informationen finden Sie unter [Öffnen von Analytics und Empfehlungen für eine Seite](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page).
 
 ## Berichtszeitraum
 
-Berichte zeigen Daten für einen Zeitraum, den Sie bestimmen. Wenn Sie den Berichtszeitraum anpassen, werden die Berichte automatisch mit Daten für diesen Zeitraum aktualisiert. Visuelle Hinweise geben den Zeitpunkt an, zu dem Seitenversionen geändert wurden, sodass Sie die Leistung der einzelnen Versionen vergleichen können.
+Berichte zeigen Daten für einen Zeitraum, den Sie bestimmen. Wenn Sie den Berichtszeitraum anpassen, werden die Berichte automatisch mit Daten für diesen Zeitraum aktualisiert. Visuelle Hinweise geben die Zeit an, zu der Seitenversionen geändert wurden, damit Sie die Leistung jeder Version vergleichen können.
 
 >[!NOTE]
 >
 >Die Timeline für das Content Insight-Dashboard finden Sie unter `GMT`.
 
-Sie können auch die Granularität der gemeldeten Daten festlegen, z. B. die täglichen, wöchentlichen, monatlichen oder jährlichen Daten.
+Sie können außerdem die Granularität der berichteten Daten angeben, z. B. können Sie tägliche, wöchentliche, monatliche oder jährliche Daten sehen.
 
-Siehe [Ändern des Berichtszeitraums](/help/sites-authoring/ci-analyze.md#changing-the-reporting-period).
+Weitere Informationen finden Sie unter [Ändern des Berichtszeitraums](/help/sites-authoring/ci-analyze.md#changing-the-reporting-period).
 
 >[!NOTE]
 >
@@ -55,47 +55,47 @@ Siehe [Ändern des Berichtszeitraums](/help/sites-authoring/ci-analyze.md#changi
 
 ## Der Ansichtsbericht {#the-views-report}
 
-Der Bericht Ansichten umfasst die folgenden Funktionen zur Bewertung des Seiten-Traffics:
+Der Ansichtsbericht umfasst die folgenden Funktionen für die Bewertung des Traffics auf der Seite:
 
-* Die Gesamtzahl der Ansichten für eine Seite im Berichtszeitraum.
-* Ein Diagramm zur Anzahl der Ansichten im Berichtszeitraum:
+* Die Gesamtzahl der Ansichten für eine Seite während des Berichtszeitraums.
+* Ein Diagramm der Anzahl der Ansichten während des Berichtszeitraums:
 
-   * Gesamtanzahl der Ansichten.
+   * Gesamtzahl der Ansichten
    * Unique Visitors.
 
 ![chlimage_1-312](assets/chlimage_1-312.png)
 
-## Der Bericht &quot;Seitendurchschnitt - Interaktion&quot; {#the-page-average-engaged-report}
+## Der Bericht über die durchschnittliche Aufenthaltsdauer auf der Seite {#the-page-average-engaged-report}
 
-Der Bericht &quot;Seitendurchschnitt eingebettet&quot;umfasst die folgenden Funktionen zur Bewertung der Seiteneffektivität:
+Der Bericht über die durchschnittliche Aufenthaltsdauer auf der Seite umfasst die folgenden Funktionen für die Bewertung der Seiteneffektivität:
 
-* Die durchschnittliche Zeit, zu der die Seite während des gesamten Berichtszeitraums geöffnet bleibt.
-* Ein Diagramm der durchschnittlichen Länge einer Seitenansicht im Berichtszeitraum.
+* Die durchschnittliche Besuchszeit, während der die Seite geöffnet bleibt, für den gesamten Berichtzeitraum.
+* Ein Graph der durchschnittlichen Dauer einer Seitenansicht während des Berichtszeitraums.
 
 ![chlimage_1-313](assets/chlimage_1-313.png)
 
 ## Der Quellenbericht {#the-sources-report}
 
-Der Quellenbericht zeigt an, wie Benutzer zur Seite navigiert sind, z. B. aus Suchmaschinenergebnissen oder mithilfe der bekannten URL.
+Der Quellenbericht gibt an, wie Benutzende zur Seite gekommen sind, zum Beispiel von Suchmaschinen-Ergebnissen aus oder mithilfe der bekannten URL.
 
 ![chlimage_1-314](assets/chlimage_1-314.png)
 
-## Der Bounces-Bericht {#the-bounces-report}
+## Der Absprungbericht {#the-bounces-report}
 
-Der Bericht &quot;Absprünge&quot;enthält ein Diagramm, das die Anzahl der Absprünge anzeigt, die für eine Seite im ausgewählten Berichtszeitraum aufgetreten sind.
+Der Absprungbericht umfasst ein Diagramm, das die Anzahl der Absprünge anzeigt, die über den ausgewählten Berichtszeitraum für eine Seite aufgetreten sind.
 
 ![chlimage_1-315](assets/chlimage_1-315.png)
 
-## Der Bericht Kampagnenaktivität {#the-campaign-activity-report}
+## Der Kampagnenaktivitätsbericht {#the-campaign-activity-report}
 
-Für jede Kampagne, für die die Seite aktiv ist, wird ein Bericht mit dem Namen *Kampagnenname* Aktivität. Der Bericht zeigt Seitenimpressionen und Konversionen für jedes Segment, für das ein Angebot bereitgestellt wird.
+Für jede Kampagne, für die die Seite aktiv ist, wird ein Bericht namens *Kampagnennamenaktivität* angezeigt. Der Bericht zeigt Seitenimpressionen und Konversionen für jedes Segment, für das ein Angebot bereitgestellt wird.
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
-## SEO Recommendations-Bericht {#the-seo-recommendations-report}
+## Der SEO-Empfehlungsbericht {#the-seo-recommendations-report}
 
-Der SEO Recommendations-Bericht enthält die Ergebnisse der BrightEdge-Analyse für die Seite. Der Bericht ist eine Checkliste der Seitenfunktionen, die anzeigt, welche Funktionen die Seite für die Maximierung der Auffindbarkeit mithilfe von Suchmaschinen aufweist und nicht enthält.
+Der SEO-Empfehlungsbericht enthält die Ergebnisse der BrightEdge-Analyse für die Seite. Der Bericht ist eine Checkliste der Seitenfunktionen, die angibt, welche Funktionen die Seite enthält bzw. nicht enthält, um die Auffindbarkeit mithilfe von Suchmaschinen zu maximieren.
 
-Mit dem Bericht können Sie Aufgaben erstellen, die zu einer Verbesserung der Auffindbarkeit der Seite führen. Recommendations gibt an, dass Aufgaben für die Implementierung der Empfehlung erstellt wurden. Siehe [Zuweisen von Aufgaben für SEO Recommendations](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
+Mit dem Bericht können Sie Aufgaben erstellen, die zu einer Verbesserung der Auffindbarkeit der Seite führen. Empfehlungen weisen darauf hin, dass Aufgaben zur Implementierung der Empfehlung erstellt wurden. Weitere Informationen finden Sie unter [Zuweisen von Aufgaben für SEO-Empfehlungen](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
 
 ![chlimage_1-317](assets/chlimage_1-317.png)

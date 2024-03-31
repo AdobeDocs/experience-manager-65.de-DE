@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->Dieses Dokument behandelt die Konfiguration der Segmentierung zur Verwendung mit ClientContext. Informationen zum Konfigurieren von Segmenten mit ContextHub mithilfe der Touch-Benutzeroberfläche finden Sie unter [Konfigurieren der Segmentierung mit ContextHub](/help/sites-administering/segmentation.md).
+>Dieses Dokument behandelt die Konfiguration der Segmentierung zur Verwendung mit ClientContext. Informationen zum Konfigurieren von Segmenten mit ContextHub über die Touch-Benutzeroberfläche finden Sie unter [Konfigurieren der Segmentierung mit ContextHub](/help/sites-administering/segmentation.md).
 
 Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. Im [Segmentierungs-Glossar](/help/sites-authoring/segmentation-overview.md) finden Sie Informationen zur Funktionsweise der Segmentierung sowie zu Schlüsselbegriffen.
 
-Je nachdem, welche Informationen Sie bereits über Ihre Site-Besucher gesammelt haben und welche Ziele Sie erreichen möchten, müssen Sie die für Ihre zielgerichteten Inhalte erforderlichen Segmente und Strategien definieren.
+Je nach den Informationen, die Sie bereits über die Besucherinnen und Besucher Ihrer Site gesammelt haben, und den Zielen, die Sie erreichen wollen, müssen Sie die erforderlichen Segmente und Strategien für Ihre zielgerichteten Inhalte festlegen.
 
-Diese Segmente werden dann verwendet, um einem Besucher gezielt bestimmte Inhalte anzuzeigen. Dieser Inhalt wird im Abschnitt [Kampagnen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) der Website verwaltet. Die hier definierten Teaser-Seiten können als Teaser-Abschnitte in jede beliebige Seite eingefügt werden, und es kann festgelegt werden, für welches Besuchersegment der jeweilige Inhalt gilt.
+Diese Segmente werden dann verwendet, um einer Besucherin oder einem Besucher gezielt bestimmte Inhalte anzuzeigen. Dieser Inhalt wird im Abschnitt [Kampagnen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) der Website verwaltet. Die hier definierten Teaser-Seiten können als Teaser-Abschnitte in jede beliebige Seite eingefügt werden, und es kann festgelegt werden, für welches Besuchersegment der jeweilige Inhalt gilt.
 
 Mit AEM können Sie einfach Segmente, Teaser und Kampagnen erstellen und aktualisieren. Außerdem können Sie damit die Ergebnisse Ihrer Segmentdefinitionen überprüfen.
 
@@ -107,11 +107,11 @@ Die folgenden Segmenteigenschaften sind standardmäßig verfügbar und können v
 
 Sie können diese Eigenschaften mithilfe der booleschen Operatoren „ODER“ und „UND“ kombinieren (siehe [Erstellen eines neuen Segments](#creating-a-new-segment)), um das exakte Szenario zur Auswahl dieses Segments festzulegen.
 
-Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird dieses Segment aufgelöst. Wenn mehrere anwendbare Segmente vorhanden sind, wird die **[Verstärken](/help/sites-administering/campaign-segmentation.md#boost-factor)** wird auch verwendet.
+Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird dieses Segment aufgelöst. Wenn mehrere anwendbare Segmente vorhanden sind, wird außerdem der Faktor **[Verstärken](/help/sites-administering/campaign-segmentation.md#boost-factor)** verwendet.
 
 >[!CAUTION]
 >
->Der Segmenteditor prüft nicht auf Zirkelbezüge. Beispiel: Segment A verweist auf ein anderes Segment B, das wiederum auf Segment A verweist. Stellen Sie sicher, dass Ihre Segmente keine Zirkelbezüge enthalten.
+>Der Segmenteditor prüft nicht auf Zirkelbezüge. Ein Beispiel hierfür wäre, wenn Segment A auf ein anderes Segment B verweist, das wiederum auf Segment A verweist. Stellen Sie sicher, dass Ihre Segmente keine Zirkelbezüge enthalten.
 
 >[!NOTE]
 >
@@ -128,10 +128,10 @@ So legen Sie Ihr neues Segment fest:
 1. Erstellen Sie mit der **Segment**-Vorlage eine [neue Seite](/help/sites-authoring/editing-content.md#creatinganewpage).
 1. Öffnen Sie die neue Seite, um den Segment-Editor anzuzeigen:
 
-   ![Der erste Schritt zum Erstellen eines Segments im Segment-Editor](assets/screen_shot_2012-02-02at101726am.png)
+   ![Der erste Schritt zum Erstellen eines neuen Segments im Segmenteditor](assets/screen_shot_2012-02-02at101726am.png)
 
 1. Verwenden Sie entweder den Sidekick oder das Kontextmenü (in der Regel wird das Fenster „Neue Komponente einfügen“ mit einem Rechtsklick auf die Schaltfläche und dann auf der Option **Neu…** geöffnet), um nach dem gewünschten Segmentmerkmal zu suchen. Ziehen Sie es dann in den **Segment-Editor**, wo es im **UND**-Standardcontainer angezeigt wird.
-1. Doppelklicken Sie auf die neue Eigenschaft, um die spezifischen Parameter zu bearbeiten, z. B. die Mausposition:
+1. Doppelklicken Sie auf das neue Merkmal, um die spezifischen Parameter zu bearbeiten, z. B. die Mausposition:
 
    ![Bearbeiten einer Komponente im Segment-Editor](assets/screen_shot_2012-02-02at103135am.png)
 
@@ -140,13 +140,13 @@ So legen Sie Ihr neues Segment fest:
 
    ![Bearbeiten der Segmenteinstellungen im Segment-Editor](assets/screen_shot_2012-02-02at103547am.png)
 
-1. Fügen Sie bei Bedarf weitere Eigenschaften hinzu. Mit den unter **Segmentlogik** gefundenen Segmenten aus dem **UND-Container** und dem **ODER-Container** können Sie boolesche Ausdrücke formulieren. Mit dem Segment-Editor können Sie nicht mehr benötigte Komponenten löschen oder diese an neue Positionen innerhalb der Anweisung ziehen.
+1. Fügen Sie ggf. weitere Merkmale hinzu. Mit den unter **Segmentlogik** gefundenen Segmenten aus dem **UND-Container** und dem **ODER-Container** können Sie boolesche Ausdrücke formulieren. Mit dem Segment-Editor können Sie nicht mehr benötigte Komponenten löschen oder diese an neue Positionen innerhalb der Anweisung ziehen.
 
 ### Verwenden von UND- und ODER-Containern {#using-and-and-or-containers}
 
 Sie können in AEM komplexe Segmente erstellen. Dabei ist es hilfreich, sich einige grundlegende Punkte bewusst zu machen:
 
-* Die oberste Ebene der Definition ist immer der ursprünglich erstellte UND-Container. Dieser kann nicht geändert werden, hat jedoch keine Auswirkungen auf den Rest Ihrer Segmentdefinition.
+* Die oberste Ebene der Definition ist immer der ursprünglich erstellte UND-Container. Dies kann nicht verändert werden, hat allerdings auch keine Auswirkungen auf den Rest der Segmentdefinition.
 * Stellen Sie sicher, dass die Verschachtelung Ihres Containers sinnvoll ist. Die Container können als die Klammern Ihres booleschen Ausdrucks betrachtet werden.
 
 In folgendem Beispiel werden Besucherinnen bzw. Besucher ausgewählt, die entweder

@@ -1,6 +1,6 @@
 ---
 title: AEM Repo Tool
-description: Das AEM Repo Tool ist eine einfache Lösung, um JCR-Inhalte über eine mit FTP vergleichbare Befehlszeile zwischen Ihrem lokalen Dateisystem und dem AEM-Server zu übertragen. Das AEM Repo Tool ähnelt dem Jackrabbit FileVault-Tool, ist aber schneller, hat minimale Abhängigkeiten und besteht aus einem einfachen Bash-Skript.
+description: Das AEM Repo Tool ist eine einfache Lösung, mit der Sie JCR-Inhalte ähnlich wie bei FTP über die Befehlszeile zwischen Ihrem lokalen Dateisystem und dem AEM-Server übertragen können. Das AEM Repo Tool ähnelt dem Jackrabbit FileVault-Tool, ist aber schneller, hat minimale Abhängigkeiten und besteht aus einem einfachen Bash-Skript.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 79%
 
 Das AEM Repo Tool ist eine einfache Lösung, mit der Sie JCR-Inhalte ähnlich wie bei FTP über die Befehlszeile zwischen Ihrem lokalen Dateisystem und dem AEM-Server übertragen können. Das AEM Repo Tool ähnelt dem [Jackrabbit FileVault-Tool](/help/sites-developing/ht-vlttool.md), ist aber schneller, hat minimale Abhängigkeiten und besteht aus einem einfachen Bash-Skript.
 
-Dieses Tool vereinfacht die Übertragung von Dateien für Entwickler und kann auch in IntelliJ und Eclipse integriert werden, um die Entwicklung noch effizienter zu gestalten.
+Dieses Tool vereinfacht die Dateiübertragung für Entwickelnde und lässt sich auch in IntelliJ und Eclipse integrieren, um die Entwicklung noch effizienter zu gestalten.
 
 ## Übersicht {#overview}
 

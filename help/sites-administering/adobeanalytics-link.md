@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren des Linktrackings für Adobe Analytics
-description: Erfahren Sie mehr über die Konfiguration des Linktrackings für SiteCatalyst.
+description: Erfahren Sie mehr über die Konfiguration von Linktracking für SiteCatalyst.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -10,29 +10,29 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1615'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
 
 # Konfigurieren des Linktrackings für Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
 
-Wenn Benutzer auf Links auf Seiten Ihrer Website klicken, können Sie zugehörige Informationen in Adobe Analytics erfassen. Verwenden Sie beispielsweise das Linktracking , um zu erfahren, wie Benutzer mit Ihrer Site interagieren, Dateidownloads verfolgen und Exitlinks verfolgen.
+Wenn Benutzende auf Links auf Seiten Ihrer Website klicken, können Sie zugehörige Informationen in Adobe Analytics erfassen.  Verwenden Sie beispielsweise Linktracking, um zu erfahren, wie Benutzende mit Ihrer Site interagieren, und Datei-Downloads sowie Ausstiegs-Links nachzuverfolgen.
 
-## Konfigurieren der Linktracking für ein Adobe Analytics-Framework {#configuring-link-tracking-for-an-adobe-analytics-framework}
+## Konfigurieren von Linktracking für ein Adobe Analytics-Framework {#configuring-link-tracking-for-an-adobe-analytics-framework}
 
 1. Gehen Sie unter **Navigation** über **Bereitstellung** > **Cloud-Services** zum Abschnitt **Adobe Analytics**.
 
 1. Öffnen Sie mit **Konfigurationen anzeigen** das erforderliche Adobe Analytics-Framework.
-1. Erweitern Sie die **Linktracking-Konfiguration** und konfigurieren Sie sie nach Bedarf (auf dieser Seite finden Sie weitere Details):
+1. Erweitern Sie den Abschnitt **Konfiguration von Linktracking** und nehmen Sie die erforderlichen Konfigurationen vor (auf dieser Seite werden weitere Informationen bereitgestellt):
 
    ![Analytics-Framework](assets/aa-08.png)
 
 ## Nachverfolgen von Datei-Downloads {#tracking-file-downloads}
 
-Konfigurieren Sie das Adobe Analytics-Framework, damit heruntergeladene Dateien von zugehörigen Seiten automatisch als Downloads in Adobe Analytics nachverfolgt werden. Wenn Sie das Tracking von Downloads aktivieren, werden nur die von Ihnen angegebenen Dateitypen verfolgt.
+Konfigurieren Sie das Adobe Analytics-Framework, damit heruntergeladene Dateien von zugehörigen Seiten automatisch als Downloads in Adobe Analytics nachverfolgt werden. Wenn Sie das Tracking von Downloads aktivieren, werden nur die von Ihnen angegebenen Dateitypen nachverfolgt.
 
-Downloads der folgenden Dateitypen werden standardmäßig verfolgt:
+Downloads der folgenden Dateitypen werden standardmäßig nachverfolgt:
 
 * exe
 * zip
@@ -46,7 +46,7 @@ Downloads der folgenden Dateitypen werden standardmäßig verfolgt:
 * pdf
 * xls
 
-Wenn beispielsweise das Download-Tracking für PDF-Dateien aktiviert ist, wird der Download der PDF verfolgt, sobald Benutzer auf Links zu PDF-Dateien klicken.
+Wenn also etwa für PDF-Dateien das Download-Tracking aktiviert ist, wird beim Klicken auf Links zu PDF-Dateien der Download des PDFs nachverfolgt.
 
 Die Eigenschaften für die Download-Nachverfolgung werden als Code in der für eine Seite erstellten Datei `analytics.sitecatalyst.js` implementiert. Das folgende Code-Beispiel steht für eine standardmäßige Konfiguration zur Download-Nachverfolgung:
 
@@ -58,12 +58,12 @@ s.linkDownloadFileTypes= 'exe,zip,wav,mp3,mov,mpg,avi,wmv,doc,pdf,xls';
 So aktivieren Sie die Download-Nachverfolgung für Ihr Adobe Analytics-Framework:
 
 1. [Öffnen Sie das Adobe Analytics-Framework und erweitern Sie den Abschnitt Konfiguration der Link-Überwachung](#configuring-link-tracking-for-an-adobe-analytics-framework).
-1. Aktivieren **Tracking von Downloads**.
-1. Im **Dateitypen herunterladen** Geben Sie die Dateinamenerweiterungen für die Dateitypen ein, die verfolgt werden sollen.
+1. Aktivieren Sie **Downloads nachverfolgen**.
+1. Geben Sie im Feld **Download-Dateitypen** die Dateinamenserweiterungen für die nachzuverfolgenden Dateitypen ein.
 
-## Externe Links verfolgen {#tracking-external-links}
+## Tracking externer Links {#tracking-external-links}
 
-Sie können das Klicken auf externe Links (Exitlinks) auf Ihren Seiten verfolgen.
+Sie können das Klicken auf externe Links (Ausstiegs-Links) auf Ihren Seiten nachverfolgen.
 
 So verfolgen Sie externe Links für Ihr Adobe Analytics-Framework nach:
 
@@ -76,21 +76,21 @@ Eigenschaften zum Nachverfolgen beim Klicken auf externe Links:
 Aktiviert die Nachverfolgung externer Links.
 
 * **Externe Filter**
-(Optional) Definiert Filter zum Abgleichen der externen URLs von Link-Zielen. Wenn die Link-Ziele mit dem Filter übereinstimmen, wird der Link verfolgt. Externe Filter sind nützlich, um nur einige der externen Links auf Ihren Seiten zu verfolgen.
+(Optional) Definiert Filter zum Abgleichen der externen URLs von Link-Zielen. Wenn die Link-Ziele dem Filter entsprechen, wird der Link nachverfolgt.  Externe Filter sind nützlich, um nur einige externe Links auf Ihren Seiten nachzuverfolgen.
 
-  Um die nachzuverfolgenden externen Links festzulegen, geben Sie die URL des Link-Ziels vollständig oder teilweise ein. Trennen Sie mehrere Filter durch ein Komma. Schließen Sie Zeichenfolgenliterale in einfache Anführungszeichen ein. Ist kein Wert angegeben (Standardwert `''`, zwei einfache Anführungszeichen), werden alle externen Links nachverfolgt.
+  Um die nachzuverfolgenden externen Links festzulegen, geben Sie die URL des Link-Ziels vollständig oder teilweise ein. Trennen Sie mehrere Filter durch Kommas.  Schließen Sie Zeichenfolgenliterale in einfache Anführungszeichen ein.  Ist kein Wert angegeben (Standardwert `''`, zwei einfache Anführungszeichen), werden alle externen Links nachverfolgt.
 
 * **Interne Filter**
-Definiert Filter zum Abgleichen der URLs interner Links. Wenn der Link auf URLs ausgerichtet ist, die diesem Filter entsprechen, wird der Link nicht verfolgt. Der Standardwert ist ein JavaScript-Befehl, der den Hostnamen der URL für die aktuelle Fensteradresse zurückgibt.
+Definiert Filter zum Abgleichen der URLs interner Links. Wenn der Link URLs zum Ziel hat, die diesem Filter entsprechen, wird der Link nicht nachverfolgt.  Der Standardwert ist ein JavaScript-Befehl, der den Host-Namen der URL für die aktuelle Fensteradresse zurückgibt.
 
-  Um die nicht nachverfolgten internen Links festzulegen, geben Sie die interne URL des Link-Ziels vollständig oder teilweise ein. Trennen Sie mehrere Filter durch ein Komma. Schließen Sie Zeichenfolgenliterale in einfache Anführungszeichen ein.
+  Um die nicht nachverfolgten internen Links festzulegen, geben Sie die interne URL des Link-Ziels vollständig oder teilweise ein. Trennen Sie mehrere Filter durch Kommas.  Schließen Sie Zeichenfolgenliterale in einfache Anführungszeichen ein.
 
   Der Standardwert ist `'javascript:,'+window.location.hostname`
 
 * **Suchbegriff belassen**
 Schließt URL-Parameter ein, wenn Übereinstimmungen mit internen und externen Filtern bewertet werden.
 
-  Aktivieren Sie diese Option, wenn Sie URL-Parameter bei der Bewertung von Link-Ziel-URLs mit externen und internen Filtern einbeziehen möchten.
+  Aktivieren Sie diese Eigenschaft, um URL-Parameter beim Bewerten von Link-Ziel-URLs gegenüber externen und internen Filtern einzuschließen.
 
 Die Eigenschaften für die Nachverfolgung externer Links werden als Code in der für eine Seite erstellten Datei `analytics.sitecatalyst.js` implementiert. Der folgende Beispiel-Code wird für eine Seite mit einem Framework generiert, für das die Nachverfolgung externer Links aktiviert ist – mit folgender Konfiguration:
 
@@ -139,77 +139,77 @@ s.linkTrackVars= 'prop4';
 
 ## Beispielhafte Konfiguration der Link-Überwachung {#example-link-tracking-configuration}
 
-Gehen Sie wie folgt vor, um sich mit dem Verhalten bei der Link-Überwachung der Adobe Analytics-Integration vertraut zu machen. Die Verfahren zeigen Ergebnisse aus [Adobe Marketing Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=de).
+Gehen Sie wie folgt vor, um sich mit dem Verhalten bei der Link-Überwachung der Adobe Analytics-Integration vertraut zu machen. Die Vorgehensweisen enthalten Ergebnisse von [Adobe Marketing Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=de).
 
 ### Allgemeine Konfiguration {#general-configuration}
 
 Dieses Beispiel zeigt, wie die Zuordnung im Zusammenhang mit der Überwachung und dem Debugger erfolgt:
 
 1. Öffnen Sie das mit einer Web-Seite verknüpfte Framework.
-1. Ziehen Sie die **Seite** -Komponente in den Zuordnungsbereich des Frameworks. Die **Seitenkomponente** gehört zur Komponentengruppe **Allgemein** im Sidekick.
+1. Ziehen Sie die **Seitenkomponente** in den Zuordnungsbereich des Frameworks. Die **Seitenkomponente** gehört zur Komponentengruppe **Allgemein** im Sidekick.
 
    >[!NOTE]
    >
-   >Die Komponente, die Sie in einem realen Szenario verwenden sollten, hängt von der von übernommenen Komponente ab (wenn überhaupt).
+   >Die Komponente, die Sie in einem realen Szenario verwenden sollten, hängt von der Komponente ab, von der (falls überhaupt) geerbt wird.
    >
-   >Wenn nicht, sollten Sie dort Ihre eigene Komponente verfügbar machen (indem Sie einen Analytics-Unterknoten in der zugehörigen Seitenkomponente definieren).
+   >Ist dies nicht der Fall, sollten Sie dort Ihre eigene Komponente bereitstellen (indem Sie einen Unterknoten „analytics“ in der zugehörigen Seitenkomponente definieren).
 
-   Konfigurieren Sie die Zuordnung gemäß der folgenden Tabelle, indem Sie die Analytics-Variable (SiteCatalyst) aus dem linken Seitenbereich ziehen:
+   Konfigurieren Sie die Zuordnung gemäß der folgenden Tabelle, indem Sie die Analytics-Variable (SiteCatalyst-Variable) aus dem linken Seitenbereich ziehen:
 
 <table>
  <tbody>
   <tr>
    <th>CQ-Variable<br /> </th>
-   <th>Eintrag im Variablenbrowser<br /> </th>
+   <th>Eintrag im Variablen-Browser<br /> </th>
    <th>Adobe Analytics-Variable</th>
   </tr>
   <tr>
    <td>pagedata.title</td>
-   <td>Benutzerdefiniertes eVar 1 (eVar1)</td>
+   <td>Benutzerspezifisches eVar 1 (evar1)</td>
    <td>eVar1</td>
   </tr>
   <tr>
    <td>eventdata.events.pageView</td>
-   <td>Benutzerdefiniert 1 (event1)</td>
+   <td>Benutzerdefiniertes Ereignis 1 (event1)</td>
    <td>event1</td>
   </tr>
  </tbody>
 </table>
 
-1. Ziehen Sie die Suchkomponente in den Zuordnungsbereich des Frameworks. Die Suchkomponente gehört zur Komponentengruppe &quot;Allgemein&quot;im Sidekick. Konfigurieren Sie die Zuordnung gemäß der folgenden Tabelle, indem Sie die Analytics-Variable (SiteCatalyst) aus dem linken Seitenbereich ziehen:
+1. Ziehen Sie die Suchkomponente in den Zuordnungsbereich des Frameworks.  Die Suchkomponente gehört zur allgemeinen Komponentengruppe im Sidekick.  Konfigurieren Sie die Zuordnung gemäß der folgenden Tabelle, indem Sie die Analytics-Variable (SiteCatalyst-Variable) aus dem linken Seitenbereich ziehen:
 
 <table>
  <tbody>
   <tr>
    <th>CQ-Variable<br /> </th>
-   <th>Eintrag im Variablenbrowser</th>
+   <th>Eintrag im Variablen-Browser</th>
    <th>Adobe Analytics-Variable</th>
   </tr>
   <tr>
    <td>eventdata.keyword</td>
-   <td>Benutzerspezifische eVar 2 (eVar2)</td>
+   <td>Benutzerspezifisches eVar 2 (evar2)</td>
    <td>eVar2</td>
   </tr>
   <tr>
    <td>eventdata.results</td>
-   <td>Benutzerspezifische eVar 3 (eVar3)</td>
+   <td>Benutzerspezifisches eVar 3 (evar3)</td>
    <td>eVar3</td>
   </tr>
   <tr>
    <td>eventdata.events.search</td>
-   <td>Benutzerspezifisch 2 (event2)</td>
+   <td>Benutzerdefiniertes Ereignis 2 (event2)</td>
    <td>event2</td>
   </tr>
  </tbody>
 </table>
 
-### Externes Linktracking konfigurieren {#configure-external-link-tracking}
+### Konfigurieren von externem Linktracking {#configure-external-link-tracking}
 
-1. Erweitern Sie in Ihrem Framework die **Linktracking-Konfiguration** Bereich.
+1. Erweitern Sie in Ihrem Framework den Bereich **Linktracking-Konfiguration**.
 1. Heben Sie die Auswahl für **Downloads nachverfolgen** auf.
 
-1. Auswählen **Externes Tracking**.
-1. Auswahl deaktivieren **Abfragezeichenfolge beibehalten**.
+1. Wählen Sie **Externe nachverfolgen** aus.
+1. Heben Sie die Auswahl für **Abfragezeichenfolge belassen** auf.
 1. Verwenden Sie den folgenden Wert für die Liste **Externe Filter**, um diesen als externe URL anzugeben:
 
    `'yahoo.com'`
@@ -240,15 +240,15 @@ Der Abruf sieht bei der Anzeige mit Adobe Marketing Cloud Debugger wie folgt aus
 >
 >Die URL umfasst nicht die Abfragezeichenfolge: `?p=this`
 
-### URL-Parameter einschließen {#include-the-url-parameter}
+### Einschließen von URL-Parametern {#include-the-url-parameter}
 
-1. Erweitern Sie im Framework die **Linktracking-Konfiguration** Bereich.
-1. Aktivieren **Abfragezeichenfolge beibehalten**.
+1. Erweitern Sie im Framework den Bereich **Linktracking-Konfiguration**.
+1. Aktivieren Sie **Abfragezeichenfolge belassen**.
 1. Laden Sie die Seitenvorschau neu und klicken Sie auf den Link.
 
 Die in Adobe Marketing Cloud Debugger angezeigten Aufrufdetails ähneln dem folgenden Beispiel:
 
-![Adobe Marketing Cloud Debugger erneut](assets/aa-leavequerysearch-active.png)
+![Erneut Adobe Marketing Cloud Debugger](assets/aa-leavequerysearch-active.png)
 
 >[!NOTE]
 >
@@ -256,14 +256,14 @@ Die in Adobe Marketing Cloud Debugger angezeigten Aufrufdetails ähneln dem folg
 
 ## Ad-hoc-Linktracking {#ad-hoc-link-tracking}
 
-Beim Ad-hoc-Linktracking können Inhaltsautoren das Linktracking für eine Komponente konfigurieren. Die Konfiguration der Komponente setzt die **Linktracking-Konfiguration** des Frameworks, sodass auf Seiten, die mit dem Framework verknüpft sind, **Text** -Komponenten können für das Linktracking von URLs konfiguriert werden.
+Mit Ad-hoc-Linktracking können Inhaltsautorinnen und Inhaltsautoren das Linktracking für eine Komponente konfigurieren.  Die Konfiguration der Komponente setzt die **Linktracking-Konfiguration** des Frameworks außer Kraft. Auf mit dem Framework verknüpften Seiten können daher **Textkomponenten** für das Linktracking von URLs konfiguriert werden.
 
 Durch eine Ad-hoc-Hyperlink-Überwachung können Sie Download-Links und externe Links zusammen mit Ereignis- und Variablendaten nachverfolgen.
 
 Zum Aktivieren der Ad-hoc-Hyperlink-Überwachung müssen Sie wie folgt vorgehen:
 
-* [Verknüpfen Sie die Seite, die die **Text** Komponente mit dem Framework](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework).
-* [Konfigurieren des Adobe Analytics-Frameworks zur Aktivierung des Ad-hoc-Linktrackings](#enabling-ad-hoc-link-tracking).
+* [Verknüpfen Sie die Seite, die die **Textkomponente** enthält, mit dem Framework](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework).
+* [Konfigurieren Sie das Adobe Analytics-Framework, um Ad-hoc-Linktracking zu aktivieren](#enabling-ad-hoc-link-tracking).
 * [Konfigurieren Sie die Link-Überwachung für eine Textkomponente](#configuring-link-tracking-for-a-text-component).
 
 ### Aktiveren der Ad-hoc-Hyperlink-Überwachung {#enabling-ad-hoc-link-tracking}
@@ -272,17 +272,17 @@ Konfigurieren Sie das Adobe Analytics-Framework, um die Ad-hoc-Hyperlink-Überwa
 
 1. Öffnen Sie das Adobe Analytics-Framework und erweitern Sie den Abschnitt **Konfiguration der Link-Überwachung**.
 
-1. Aktivieren **Ad-hoc-Linktracking**.
+1. Aktivieren Sie **Ad-hoc-Linktracking**.
 
    >[!NOTE]
    >
-   >Nicht alle Benutzertypen haben Zugriff auf dieses Kontrollkästchen. Wenden Sie sich an Ihren Site-Administrator, wenn Sie Zugriff benötigen.
+   >Nicht alle Benutzertypen haben Zugriff auf dieses Kontrollkästchen.  Wenden Sie sich an Ihre Site-Administratorin bzw. Ihren Site-Administrator, wenn Sie Zugriff benötigen.
 
 >[!NOTE]
 >
 >Die XSS Antisamy-Konfiguration befindet sich nun in SLING unter dem Pfad **/libs/sling/xss.config.xml**. Die folgenden Regeln müssen hinzugefügt werden, damit Ad-hoc-Hyperlinks funktionieren:
 
-#### Tag-Regelerweiterung verankern {#anchor-tag-rule-extension}
+#### Anker-Tag-Regelerweiterung {#anchor-tag-rule-extension}
 
 ```xml
 <attribute name="onclick">
@@ -308,12 +308,12 @@ Konfigurieren Sie das Adobe Analytics-Framework, um die Ad-hoc-Hyperlink-Überwa
 </attribute>
 ```
 
-### Konfigurieren der Linktracking für eine Textkomponente {#configuring-link-tracking-for-a-text-component}
+### Konfigurieren von Linktracking für eine Textkomponente {#configuring-link-tracking-for-a-text-component}
 
 Um die Ad-hoc-Link-Überwachung für **Textkomponenten** konfigurieren zu können, müssen die folgenden Konfigurationen bereits implementiert worden sein:
 
-* Die [Das Adobe Analytics-Framework ist so konfiguriert, dass das Ad-hoc-Linktracking aktiviert wird](#enabling-ad-hoc-link-tracking).
-* Die [-Seite, die die **Text** Komponente ist mit dem Framework verknüpft](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework).
+* Das [Adobe Analytics-Framework ist zur Aktivierung von Ad-hoc-Linktracking konfiguriert](#enabling-ad-hoc-link-tracking).
+* Die [Seite, die die **Textkomponente** enthält, ist mit dem Framework verknüpft](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework).
 
 Gehen Sie wie folgt vor, um die Link-Überwachung für eine **Textkomponente** zu konfigurieren:
 
@@ -327,11 +327,11 @@ Gehen Sie wie folgt vor, um die Link-Überwachung für eine **Textkomponente** z
 
    >[!NOTE]
    >
-   >Das benutzerdefinierte Linktracking ist als separate Aktion neben der Aktion Link/Verknüpfung aufheben (Analytics-Symbol) sichtbar.
+   >„Tracking benutzerdefinierter Links“ erscheint als separate Aktion neben der Aktion „Verknüpfen“/„Verknüpfung aufheben“ (Analytics-Symbol).
    >
-   >Sie wird nur aktiviert, wenn Sie einen gültigen Link im RTE ausgewählt haben.
+   >Die Option wird nur aktiviert, wenn Sie einen gültigen Link im RTE ausgewählt haben.
 
-   ![Linktracking aktivieren](assets/aa-17.png)
+   ![Aktivieren von Linktracking](assets/aa-17.png)
 
 1. Aktivieren Sie **Tracking benutzerdefinierter Links**, um die Konfiguration der Link-Überwachung des Adobe Analytics-Frameworks außer Kraft zu setzen und die Link-Überwachung für den aktuellen Link zu aktivieren.
 

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1749'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Sie können ein PDF-Dokument aufteilen, indem Sie es an den Assembler-Service ü
 
 ![pd_pd_pdfsfrombookmarks](assets/pd_pd_pdfsfrombookmarks.png)
 
-Stellen Sie zum Aufteilen eines PDF-Dokuments sicher, dass die `PDFsFromBookmarks` -Element im DDX-Dokument. Das Element `PDFsFromBookmarks` ist ein resultierendes Element und kann nur ein untergeordnetes Element des Elements `DDX` sein. Es hat kein `result`-Attribut, da es zur Erzeugung mehrerer Dokumente führen kann.
+Um ein PDF-Dokument aufzuteilen, stellen Sie sicher, dass sich das Element `PDFsFromBookmarks` im DDX-Dokument befindet. Das Element `PDFsFromBookmarks` ist ein resultierendes Element und kann nur ein untergeordnetes Element des Elements `DDX` sein. Es hat kein `result`-Attribut, da es zur Erzeugung mehrerer Dokumente führen kann.
 
 Das `PDFsFromBookmarks`-Element bewirkt, dass für jedes Lesezeichen der Stufe 1 im Quelldokument ein einzelnes Dokument generiert wird.
 

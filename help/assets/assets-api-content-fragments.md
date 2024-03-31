@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1902'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -205,7 +205,7 @@ Die Antwort enthält Paging-Informationen im Bereich `properties` der SIREN-Ausg
 
 Ordner dienen als Container für Assets und andere Ordner. Ihre Struktur entspricht den Inhalts-Repositorys von AEM.
 
-Die Assets-REST-API bietet Zugriff auf die Eigenschaften eines Ordners, z. B. seinen Namen, Titel usw. Assets werden als untergeordnete Entitäten von Ordnern und Unterordnern bereitgestellt.
+Die Assets-REST-API gewährt Zugriff auf die Eigenschaften eines Ordners, z. B. Name, Titel und so weiter. Assets werden als untergeordnete Entitäten von Ordnern und Unterordnern bereitgestellt.
 
 >[!NOTE]
 >
@@ -236,7 +236,7 @@ Inhaltsfragmente:
 
 #### Inhaltsmodelle und Inhaltsfragmente {#content-models-and-content-fragments}
 
-Derzeit werden die Modelle, die die Struktur eines Inhaltsfragments definieren, nicht über eine HTTP-API bereitgestellt. Daher *Verbraucher* muss über das Modell eines Fragments wissen (mindestens) - obwohl die meisten Informationen aus der Payload abgeleitet werden können, wie Datentypen usw. Teil der Definition.
+Derzeit werden die Modelle, die die Struktur eines Inhaltsfragments definieren, nicht über eine HTTP-API bereitgestellt. Daher benötigen *Benutzende* (zumindest einige) Informationen über das Modell eines Fragments, obwohl die meisten Informationen aus der Payload abgeleitet werden können, beispielsweise Datentypen. Teil der Definition.
 
 Zum Erstellen eines Inhaltsfragments muss der Pfad (des internen Repositorys) für das Modell angegeben werden.
 
@@ -308,7 +308,7 @@ Nutzung erfolgt über:
 
 Es gibt einige Beschränkungen:
 
-* **Inhaltsfragmentmodelle werden derzeit nicht unterstützt**: sie können weder gelesen noch erstellt werden. Um ein Inhaltsfragment zu erstellen oder ein vorhandenes zu aktualisieren, müssen Entwickler den richtigen Pfad zum Inhaltsfragmentmodell kennen. Derzeit ist dies lediglich über die Verwaltungsoberfläche möglich.
+* **Inhaltsfragmentmodelle werden derzeit nicht unterstützt**: sie können weder gelesen noch erstellt werden. Zum Erstellen eines neuen oder Aktualisieren eines vorhandenen Inhaltsfragments müssen Entwickelnde den richtigen Pfad zum Inhaltsfragmentmodell kennen. Derzeit ist dies lediglich über die Verwaltungsoberfläche möglich.
 * **Verweise werden ignoriert**. Zurzeit sind keine Überprüfungen für Verweise auf vorhandene Inhaltsfragmente verfügbar. Wenn Sie beispielsweise ein Inhaltsfragment löschen, treten möglicherweise Probleme auf einer Seite auf, die einen Verweis auf das gelöschte Inhaltsfragment enthält.
 * **JSON-Datentyp** Die REST-API-Ausgabe des *JSON-Datentyps* basiert derzeit auf *Zeichenfolgen*.
 
@@ -327,7 +327,8 @@ Wird zurückgegeben, wenn:
 
    * ein Inhaltsfragment per `POST` erstellt wurde
 
-* **404** (Nicht gefunden) Wird zurückgegeben, wenn:
+* **404** (Nicht gefunden)
+Wird zurückgegeben, wenn:
 
    * das angeforderte Inhaltsfragment nicht vorhanden ist
 

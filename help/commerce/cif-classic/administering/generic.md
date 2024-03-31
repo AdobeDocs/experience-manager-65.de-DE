@@ -10,7 +10,7 @@ solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '2907'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -195,7 +195,7 @@ Für jeden Produkttyp ist eine separate Strukturvorlage erforderlich. Die Strukt
 
    ![Produktkonsole mit geöffneten Verweisen](/help/sites-administering/assets/chlimage_1-88.png)
 
-1. Klicken Sie auf den Referenztyp (z. B. Produktseiten), um die Liste zu erweitern.
+1. Klicken Sie auf den Referenztyp (z. B. Produktseiten), um die Liste zu erweitern.
 1. Wählen Sie eine spezifische Referenz aus, damit Sie die Optionen anzeigen können:
 
    * Zu Produktseite navigieren
@@ -265,7 +265,7 @@ Sie können in der Produktkomponente mehrere Assets hinzufügen und dann das Ass
 Zwei Assets werden jetzt in Ihrer Produktkomponente gespeichert. Sie können konfigurieren, welches von ihnen auf der Produktseite angezeigt werden soll. Dies funktioniert mit einem Kategoriesystem. Zuerst müssen Sie den einzelnen Assets eine Kategorie hinzufügen:
 
 1. Wählen Sie **Produktdaten anzeigen**.
-1. Geben Sie eine **Asset-Kategorie** unter den Assets, beispielsweise `cat1` und `cat2`.
+1. Geben Sie unter den Assets eine **Asset-Kategorie** ein, z. B. `cat1` und `cat2`.
 
    >[!NOTE]
    >
@@ -464,7 +464,7 @@ Generieren Sie wie folgt einen Katalog:
    ![Assistent zum Erstellen eines Katalogs](/help/sites-administering/assets/chlimage_1-99.png)
 
 1. Navigieren Sie zum gewünschten Katalog-Blueprint.
-1. Wählen Sie die **Auswählen** und klicken Sie auf den gewünschten Katalog-Blueprint.
+1. Wählen Sie die Schaltfläche **Auswählen** und klicken Sie auf den gewünschten Katalog-Blueprint.
 1. Wählen Sie **Weiter** aus.
 
    ![Assistent für Katalogeigenschaften](/help/sites-administering/assets/chlimage_1-100.png)
@@ -476,7 +476,7 @@ Generieren Sie wie folgt einen Katalog:
 
 1. Wenn Sie auf die Schaltfläche **Fertig** klicken, gelangen Sie zurück zur Sites-Konsole, wo Sie Ihren Katalog finden können.
 
-   Tippen/Klicken **Katalog öffnen** -Schaltfläche öffnet Ihren Katalog (z. B. `http://localhost:4502/editor.html/content/test-catalog.html`).
+   Wenn Sie auf die Schaltfläche **Katalog öffnen** tippen oder klicken, wird Ihr Katalog geöffnet (z. B. `http://localhost:4502/editor.html/content/test-catalog.html`).
 
 #### Generieren eines Katalogs – klassische Benutzeroberfläche {#generating-a-catalog-classic-ui}
 
@@ -525,7 +525,7 @@ Führen Sie den Rollout für einen Katalog wie folgt durch:
 
    ![Rollout](/help/sites-administering/do-not-localize/chlimage_1-24.png)
 
-1. Legen Sie im Assistenten den Rollout nach Bedarf fest und klicken Sie auf **Rollout-Änderungen**.
+1. Legen Sie im Assistenten den Rollout wie gewünscht fest und klicken Sie dann auf **Rollout-Änderungen**.
 1. Ein Dialogfeld wird angezeigt. Wählen Sie **Fertig**, wenn der Vorgang abgeschlossen ist.
 
 #### Durchführen des Rollouts für einen Katalog – klassische Benutzeroberfläche {#rolling-out-a-catalog-classic-ui}
@@ -550,7 +550,7 @@ Führen Sie den Rollout für einen Katalog wie folgt durch:
 
    ![Symbol „Blueprints importieren“](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
-1. Wählen Sie im Assistenten die gewünschte Quelle aus und klicken Sie auf **Nächste**.
+1. Wählen Sie im Assistenten die gewünschte Quelle aus und klicken Sie auf **Weiter**.
 
    ![Blueprint-Assistent](/help/sites-administering/assets/chlimage_1-102.png)
 

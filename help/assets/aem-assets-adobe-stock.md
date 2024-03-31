@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2446'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -324,7 +324,7 @@ In der folgenden Tabelle wird erläutert, wie die Benutzerberechtigungen beim Zu
 
 Mit dieser Funktion können Organisationen ihren Benutzern die Arbeit mit [!DNL Adobe Stock]-Assets in [!DNL Experience Manager Assets] ermöglichen. Benutzer können aus der [!DNL Experience Manager]-Benutzeroberfläche heraus nach [!DNL Adobe Stock]-Assets suchen und die erforderlichen Assets lizenzieren.
 
-Sobald ein [!DNL Adobe Stock]-Asset in [!DNL Experience Manager] lizenziert ist, kann es wie ein typisches Asset verwendet und verwaltet werden. In [!DNL Experience Manager], können die Benutzer Assets durchsuchen und eine Vorschau der Assets anzeigen, die Assets kopieren und veröffentlichen sowie die Assets für [!DNL Brand Portal]; Zugriff auf und Verwendung der Assets über [!DNL Experience Manager] Desktop-Programm usw.
+Sobald ein [!DNL Adobe Stock]-Asset in [!DNL Experience Manager] lizenziert ist, kann es wie ein typisches Asset verwendet und verwaltet werden. Benutzende können Assets in [!DNL Experience Manager] suchen und in einer Vorschau anzeigen, Assets kopieren und veröffentlichen, Assets in [!DNL Brand Portal] freigeben, Assets per [!DNL Experience Manager]-Desktop-App aufrufen und verwenden und vieles mehr.
 
 ![Suchen nach [!DNL Adobe Stock]-Assets und Filtern der Ergebnisse aus Ihrem [!DNL Adobe Experience Manager]-Arbeitsbereich](assets/adobe-stock-search-results-workspace.png)
 

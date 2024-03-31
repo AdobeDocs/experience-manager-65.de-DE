@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1558'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -85,9 +85,9 @@ Zusätzlich zum JBoss®-Server können Sie das JVM-Argument „-Dabtesting.enabl
 
 AEM ermöglicht die Erstellung einer Zielgruppe und ihre Verwendung für A/B-Tests. Die in AEM erstellte Zielgruppe ist in AEM Forms verfügbar. Gehen Sie wie folgt vor, um Zielgruppen zu erstellen:
 
-1. Wählen Sie in der Authoring-Instanz **Adobe Experience Manager** > **Personalisierung** > **Zielgruppen**.
+1. Wählen Sie in der Autoreninstanz **Adobe Experience Manager** > **Personalisierung** > **Zielgruppen** aus.
 
-1. Wählen Sie auf der Seite Zielgruppen die Option **Zielgruppe erstellen > Target-Zielgruppe erstellen**.
+1. Wählen Sie auf der Seite „Zielgruppen“ die Elemente **Zielgruppe erstellen > Target-Zielgruppe erstellen** aus.
 1. Wählen Sie im Dialogfeld „Adobe Target-Konfiguration“ eine Target-Konfiguration und klicken Sie auf **OK**.
 1. Erstellen Sie Regeln auf der Seite „Neue Zielgruppe erstellen“. Mit Regeln können Sie die Zielgruppe kategorisieren. Beispielsweise können Sie Zielgruppen basierend auf dem Betriebssystem kategorisieren. Ihre Zielgruppe A kommt von Windows und Audience B von Linux®.
 

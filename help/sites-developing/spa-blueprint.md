@@ -1,6 +1,6 @@
 ---
 title: SPA-Blueprint
-description: In diesem Dokument wird der allgemeine, Framework-unabhängige Vertrag beschrieben, den jedes SPA Framework erfüllen sollte, um bearbeitbare SPA in AEM zu implementieren.
+description: In diesem Dokument wird der allgemeine, Framework-unabhängige Vertrag beschrieben, den jedes SPA-Framework erfüllen sollte, um in AEM bearbeitbare SPA-Komponenten zu implementieren.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2043'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ Damit die Autorin oder der Autor mit dem AEM-SPA-Editor den Inhalt einer SPA bea
 
 >[!NOTE]
 >
->Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
+>Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen Client-seitiges Rendern auf Basis eines SPA-Frameworks (z. B. React oder Angular) erforderlich ist.
 
 ## Einführung {#introduction}
 
-In diesem Dokument wird der allgemeine Vertrag beschrieben, den jedes SPA Framework erfüllen sollte (d. h. die Art AEM Unterstützungsschicht), um bearbeitbare SPA in AEM zu implementieren.
+In diesem Dokument wird der Generalvertrag beschrieben, den jedes SPA-Framework erfüllen sollte (d. h. die Art der AEM-Support-Ebene), um in AEM bearbeitbare SPA-Komponenten zu implementieren.
 
 >[!NOTE]
 >

@@ -1,6 +1,6 @@
 ---
 title: Erstellen von benutzerspezifischen Erscheinungsbildern in HTML5-Formularen
-description: Sie können benutzerdefinierte Widgets mit einer mobilen Forms einbinden. Sie können vorhandene jQuery Widgets erweitern oder eigene benutzerdefinierte Widgets entwickeln.
+description: Sie können mit Mobile-Formularen benutzerdefinierte Widgets einsetzen.  Sie können vorhandene jQuery Widgets erweitern oder Ihre eigenen benutzerdefinierten Widgets entwickeln.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,13 +12,13 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '635'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
 # Erstellen von benutzerspezifischen Erscheinungsbildern in HTML5-Formularen{#create-custom-appearances-in-html-forms}
 
-Sie können benutzerdefinierte Widgets mit einer mobilen Forms einbinden. Sie können mithilfe des Erscheinungsbild-Framework vorhandene jQuery Widgets erweitern oder Ihre eigenen benutzerdefinierten Widgets entwickeln. Die XFA-Engine verwendet verschiedene Widgets. Detaillierte Informationen finden Sie unter [Erscheinungsbild-Framework für adaptive und HTML5-Formulare](/help/forms/using/introduction-widgets.md).
+Sie können mit Mobile-Formularen benutzerdefinierte Widgets einsetzen.  Sie können mithilfe des Erscheinungsbild-Framework vorhandene jQuery Widgets erweitern oder Ihre eigenen benutzerdefinierten Widgets entwickeln. Die XFA-Engine verwendet verschiedene Widgets. Detaillierte Informationen finden Sie unter [Erscheinungsbild-Framework für adaptive und HTML5-Formulare](/help/forms/using/introduction-widgets.md).
 
 ![Beispiel für ein standardmäßiges und benutzerdefiniertes Widget](assets/custom-widgets.jpg)
 
@@ -26,13 +26,13 @@ Beispiel für ein standardmäßiges und ein benutzerdefiniertes Widget
 
 ## Integrieren benutzerdefinierter Widgets mit HTML5-Formularen {#integrating-custom-widgets-with-html-forms}
 
-### Profil erstellen  {#create-a-profile-nbsp}
+### Erstellen eines Profils  {#create-a-profile-nbsp}
 
-Sie können ein Profil erstellen oder ein vorhandenes Profil auswählen, um ein benutzerdefiniertes Widget hinzuzufügen. Weitere Informationen zum Erstellen von Profilen finden Sie unter [Erstellen eines benutzerdefinierten Profils](/help/forms/using/custom-profile.md).
+Erstellen Sie ein Profil oder wählen Sie ein vorhandenes Profil, um ein benutzerdefiniertes Widget hinzuzufügen.  Weitere Informationen über das Erstellen benutzerdefinierter Profile finden Sie unter [Erstellen eines benutzerfreundlichen Profils](/help/forms/using/custom-profile.md).
 
 ### Erstellen eines Widgets {#create-a-widget}
 
-HTML5-Formulare bieten eine Implementierung des Widget-Frameworks, die zum Erstellen neuer Widgets erweitert werden kann. Die Implementierung ist ein jQuery-Widget *abstractWidget* , die erweitert werden können, um ein neues Widget zu schreiben. Das neue Widget kann nur durch Erweitern/Überschreiben der unten genannten Funktionen funktionieren.
+HTML5-Formulare bieten eine Implementierung des Widget-Frameworks, die zum Erstellen neuer Widgets erweitert werden kann. Die Implementierung ist ein jQuery-Widget *abstractWidget*, das zum Schreiben eines neuen Widgets erweitert werden kann. Das neue Widget kann nur durch Erweitern bzw. Überschreiben der unten erwähnten Funktionen ordnungsgemäß laufen.
 
 <table>
  <tbody>
@@ -42,7 +42,7 @@ HTML5-Formulare bieten eine Implementierung des Widget-Frameworks, die zum Erste
   </tr>
   <tr>
    <td>render</td>
-   <td>Die Renderfunktion gibt das jQuery-Objekt für das standardmäßige HTML-Element des Widgets zurück. Das standardmäßige HTML-Element sollte fokussierbar sein. Beispiel: &lt;a&gt;, &lt;input&gt;, und &lt;li&gt;. Das zurückgegebene Element wird als $userControl verwendet. Wenn $userControl die oben stehende Bedingung erfüllt, laufen die Funktionen der Klasse „AbstractWidget“ ordnungsgemäß. Ansonsten müssen einige allgemeine APIs (focus, click) geändert werden. </td>
+   <td>Die Render-Funktion gibt das jQuery-Objekt für das standardmäßige HTML-Element des Widgets zurück.  Das standardmäßige HTML-Element sollte fokussierbar sein. Zum Beispiel &lt;a&gt;, &lt;input&gt; und &lt;li&gt;.  Das zurückgegebene Element wird als „$userControl“ verwendet.  Wenn $userControl die oben stehende Bedingung erfüllt, laufen die Funktionen der Klasse „AbstractWidget“ ordnungsgemäß. Ansonsten müssen einige allgemeine APIs (focus, click) geändert werden. </td>
   </tr>
   <tr>
    <td>getEventMap</td>
@@ -50,24 +50,24 @@ HTML5-Formulare bieten eine Implementierung des Widget-Frameworks, die zum Erste
   </tr>
   <tr>
    <td>getOptionsMap</td>
-   <td>Gibt eine Zuordnung zurück, die detailliert beschreibt, welche Aktion bei Änderung einer Option ausgeführt werden soll. Die Schlüssel sind die Optionen, die dem Widget übergeben werden, und die Werte sind die Funktionen, die aufgerufen werden, wenn eine Änderung in der jeweiligen Option erkannt wird. Das Widget bietet Handler für alle allgemeinen Optionen (außer value und displayValue)</td>
+   <td>Gibt eine Zuordnung mit detaillierten Informationen zurück, wie eine Option geändert werden kann.  Die Schlüssel sind die Optionen, die dem Widget übergeben werden, und die Werte sind die Funktionen, die aufgerufen werden, wenn eine Änderung in der jeweiligen Option erkannt wird. Das Widget verfügt über Handler für alle allgemeinen Optionen (außer „value“ und „displayValue“).</td>
   </tr>
   <tr>
    <td>getCommitValue</td>
-   <td>Das Widget-Framework lädt die Funktion jedes Mal, wenn der Wert des Widgets im XFAModel gespeichert wird (z. B. beim exit-Ereignis eines textField). Die Implementierung sollte den Wert zurückgeben, der im Widget gespeichert wird. Der Handler erhält den neuen Wert für die Option.</td>
+   <td>Das Widget-Framework lädt Funktionen, sobald der Wert des Widgets im XFAModel gespeichert wird (beispielsweise bei einem exit-Ereignis für ein textField).  Die Implementierung sollte den Wert zurückgeben, der im Widget gespeichert wird. Der Handler erhält den neuen Wert für die Option.</td>
   </tr>
   <tr>
    <td>showValue</td>
-   <td>Standardmäßig wird in XFA beim enter-Ereignis der rawValue des Felds angezeigt. Diese Funktion wird aufgerufen, um dem Benutzer den rawValue anzuzeigen. </td>
+   <td>Standardmäßig wird in XFA beim Ereignis „enter“ der rawValue des Felds angezeigt.  Diese Funktion wird aufgerufen, um der Benutzerin oder dem Benutzer den „rawValue“ zu zeigen. </td>
   </tr>
   <tr>
    <td>showDisplayValue</td>
-   <td>Standardmäßig wird in XFA beim exit-Ereignis der formattedValue des Felds angezeigt. Diese Funktion wird aufgerufen, um dem Benutzer den formattedValue anzuzeigen. </td>
+   <td>Standardmäßig wird in XFA beim Ereignis „exit“ der formattedValue des Felds angezeigt. Diese Funktion wird aufgerufen, um der Benutzerin oder dem Benutzer den „formattedValue“ zu zeigen. </td>
   </tr>
  </tbody>
 </table>
 
-Um ein eigenes Widget im oben erstellen Profil zu erstellen, müssen Sie die Verweise der JavaScript-Datei einschließen, die die überschriebenen und neu hinzugefügten Funktionen enthält. Das *sliderNumericFieldWidget* ist beispielsweise ein Widget für numerische Felder. Um das Widget in Ihrem Profil im Kopfzeilenabschnitt zu verwenden, fügen Sie die folgende Zeile ein:
+Um ein eigenes Widget im oben erstellen Profil zu erstellen, müssen Sie die Verweise der JavaScript-Datei einschließen, die die überschriebenen und neu hinzugefügten Funktionen enthält. Das *sliderNumericFieldWidget* ist beispielsweise ein Widget für numerische Felder. Um das Widget in Ihrem Profil in der Kopfzeile zu verwenden, fügen Sie die folgende Zeile hinzu:
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
@@ -75,7 +75,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### Registrieren von benutzerdefinierten Widgets mit XFA Scripting Engine  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Wenn der Code des benutzerdefinierten Widgets fertig ist, registrieren Sie das Widget mit der Skripterstellungs-Engine, indem Sie die `registerConfig`-API für [Form Bridge](/help/forms/using/form-bridge-apis.md) verwenden. Es erfordert widgetConfigObject als Eingabe.
+Wenn der Code des benutzerdefinierten Widgets fertig ist, registrieren Sie das Widget mit der Skripterstellungs-Engine, indem Sie die `registerConfig`-API für [Form Bridge](/help/forms/using/form-bridge-apis.md) verwenden. Als Eingabe ist „widgetConfigObject“ erforderlich.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",
@@ -87,7 +87,7 @@ window.formBridge.registerConfig("widgetConfig",
 
 #### widgetConfigObject {#widgetconfigobject}
 
-Die Widget-Konfiguration wird als JSON-Objekt (eine Sammlung von Schlüssel-Wert-Paaren) bereitgestellt, bei dem der Schlüssel die Felder identifiziert und der Wert das Widget darstellt, das mit diesen Feldern verwendet werden soll. Eine Beispielkonfiguration sieht wie folgt aus:
+Die Widget-Konfiguration wird als JSON-Objekt bereitgestellt (eine Sammlung von Schlüssel-Wert-Paaren), bei dem der Schlüssel die Felder identifiziert und der Wert für das Widget steht, das mit den Feldern verwendet werden soll.  Eine Beispielkonfiguration sieht wie folgt aus:
 
 ```
 *{*
@@ -102,6 +102,6 @@ wobei „Kennung“ eine jQuery-CSS-Auswahl ist, die ein bestimmtes Feld, eine G
 
 | Typ des Bezeichners | ID | Beschreibung |
 |---|---|---|
-| Bestimmtes Feld mit name fieldname | Bezeichner:&quot;div.fieldname&quot; | Alle Felder mit dem Namen &quot;fieldname&quot;werden mithilfe des Widgets gerendert. |
-| Alle Felder des Typs „type“ („type“ ist hier „NumericField“, „DateField“ usw.): | Bezeichner: &quot;div.type&quot; | Für „TimeField“ und „DateTimeField“ ist der Typ „textfield“, da diese Felder nicht unterstützt werden. |
+| Bestimmtes Feld mit dem Namen „fieldname“ | Kennung: &quot;div.fieldname&quot; | Alle Felder mit dem Namen „fieldname“ werden mithilfe des Widgets gerendert. |
+| Alle Felder des Typs „type“ („type“ ist hier „NumericField“, „DateField“ usw.): | Kennung: &quot;div.type&quot; | Für „TimeField“ und „DateTimeField“ ist der Typ „textfield“, da diese Felder nicht unterstützt werden. |
 | Alle Felder | Kennung: &quot;div.field&quot; |  |

@@ -1,6 +1,6 @@
 ---
 title: APIs zum Arbeiten mit gesendeten Formularen in Forms Portal
-description: AEM Forms bietet APIs, mit denen Sie gesendete Formulardaten im Forms Portal abfragen und bearbeiten können.
+description: AEM Forms bietet APIs, mit deren Hilfe Sie über das Formularportal gesendete Formulardaten abfragen und Aktionen für sie durchführen können.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '539'
-ht-degree: 38%
+ht-degree: 98%
 
 ---
 
@@ -32,7 +32,7 @@ Für diese API sind keine zusätzlichen Parameter erforderlich.
 
 ### Antwort {#response}
 
-Das Antwortobjekt enthält ein JSON-Array mit Formularnamen und deren Repository-Pfad. Die Antwort weist die folgende Struktur auf:
+Das Antwortobjekt enthält ein JSON-Array mit den Namen der Formulare und ihrem Repository-Pfad. Die Antwort weist die folgende Struktur auf:
 
 ```json
 [
@@ -58,11 +58,11 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 
 ## GET /content/forms/portal/submission.review.json?func=getAllSubmissions {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
 
-Gibt Details zu allen gesendeten Formularen zurück. Sie können jedoch URL-Parameter verwenden, um die Ergebnisse zu begrenzen.
+Gibt Details zu allen gesendeten Formularen zurück. Sie können die Ergebnisse jedoch mithilfe der URL-Parameter einschränken.
 
 ### URL-Parameter {#url-parameters-1}
 
-Geben Sie die folgenden Parameter in die Anfrage-URL ein:
+Geben Sie die folgenden Parameter in der Anfrage-URL an:
 
 <table>
  <tbody>
@@ -72,7 +72,7 @@ Geben Sie die folgenden Parameter in die Anfrage-URL ein:
   </tr>
   <tr>
    <td><code>formPath</code></td>
-   <td>Gibt den CRX-Repository-Pfad an, in dem sich das Formular befindet. Wenn Sie den Formularpfad nicht angeben, wird eine leere Antwort zurückgegeben.<br /> </td>
+   <td>Gibt den Pfad für das CRX-Repository an, in dem sich das Formular befindet. Wenn Sie den Pfad des Formulars nicht angeben, wird eine leere Antwort zurückgegeben.<br /> </td>
   </tr>
   <tr>
    <td><code>offset</code><br /> (optional)</td>
@@ -84,11 +84,11 @@ Geben Sie die folgenden Parameter in die Anfrage-URL ein:
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (optional)</td>
-   <td>Gibt die Eigenschaft zum Sortieren der Ergebnisse an. Der Standardwert ist <strong>jcr:lastModified</strong>sortiert die Ergebnisse nach der letzten Änderungszeit.</td>
+   <td>Gibt die Eigenschaft für die Sortierung der Ergebnisse an. Der Standardwert ist <strong>jcr:lastModified</strong>, d. h., die Ergebnisse werden nach dem Zeitpunkt der letzten Änderung sortiert.</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> (optional)</td>
-   <td>Gibt die Reihenfolge zum Sortieren der Ergebnisse an. Der Standardwert ist <strong>desc</strong>, der die Ergebnisse in absteigender Reihenfolge sortiert. Indem Sie <code>asc</code> angeben, können Sie die Ergebnisse in iaufsteigender Reihenfolge sortieren.</td>
+   <td>Gibt die Reihenfolge für die Sortierung der Ergebnisse an. Der Standardwert ist <strong>desc</strong>, d. h., die Ergebnisse werden in absteigender Reihenfolge sortiert. Indem Sie <code>asc</code> angeben, können Sie die Ergebnisse in iaufsteigender Reihenfolge sortieren.</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (optional)</td>
@@ -96,7 +96,7 @@ Geben Sie die folgenden Parameter in die Anfrage-URL ein:
   </tr>
   <tr>
    <td><code>search</code> <br /> (optional)</td>
-   <td>Durchsucht den angegebenen Wert in den Formulareigenschaften und gibt Formulare mit übereinstimmenden Werten zurück. Der Standardwert ist <strong>""</strong>.</td>
+   <td>Sucht in den Formulareigenschaften nach dem angegebenen Wert und gibt Formulare mit übereinstimmenden Werten zurück. Der Standardwert ist <strong>""</strong>.</td>
   </tr>
  </tbody>
 </table>
@@ -132,16 +132,16 @@ Fügt der angegebenen Sendeinstanz einen Kommentar hinzu.
 
 ### URL-Parameter {#url-parameters-2}
 
-Geben Sie die folgenden Parameter in die Anfrage-URL ein:
+Geben Sie die folgenden Parameter in der Anfrage-URL an:
 
 | Parameter | Beschreibung |
 |---|---|
 | `submitID` | Gibt die zu einer Sendeinstanz gehörige Metadaten-ID an. |
-| `Comment` | Gibt den Text für Kommentar an, der der angegebenen Sendeinstanz hinzugefügt werden soll. |
+| `Comment` | Gibt den Text für den Kommentar an, der der angegebenen Sendeinstanz hinzugefügt werden soll. |
 
 ### Antwort {#response-2}
 
-Gibt eine Kommentar-ID zum erfolgreichen Posten eines Kommentars zurück.
+Gibt bei erfolgreicher Veröffentlichung des Kommentars eine Kommentar-ID zurück.
 
 ### Beispiel {#example-2}
 
@@ -157,13 +157,13 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 1403873422601300
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getComments   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
+## GET /content/forms/portal/submission.review.json?func=getComments  {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
 
 Gibt alle für die angegebene Sendeinstanz veröffentlichten Kommentare zurück.
 
 ### URL-Parameter {#url-parameters-3}
 
-Geben Sie den folgenden Parameter in der Anforderungs-URL an:
+Geben Sie den folgenden Parameter in der Anfrage-URL an:
 
 | Parameter | Beschreibung |
 |---|---|
@@ -171,7 +171,7 @@ Geben Sie den folgenden Parameter in der Anforderungs-URL an:
 
 ### Antwort {#response-3}
 
-Das Antwortobjekt enthält ein JSON-Array, das alle mit der angegebenen Sende-ID verknüpften Kommentare enthält. Die Antwort weist die folgende Struktur auf:
+Das Antwortobjekt enthält ein JSON-Array mit allen mit der angegebenen Sende-ID verknüpften Kommentaren. Die Antwort weist die folgende Struktur auf:
 
 ```json
 [{
@@ -197,11 +197,11 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=getCommen
 
 ## POST /content/forms/portal/submission.review.json?func=updateSubmission {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
 
-Aktualisiert den Wert der angegebenen Eigenschaft der angegebenen gesendeten Formularinstanz.
+Aktualisiert den Wert der festgelegten Eigenschaft der angegebenen gesendeten Formularinstanz.
 
 ### URL-Parameter {#url-parameters-4}
 
-Geben Sie die folgenden Parameter in die Anfrage-URL ein:
+Geben Sie die folgenden Parameter in der Anfrage-URL an:
 
 | Parameter | Beschreibung |
 |---|---|

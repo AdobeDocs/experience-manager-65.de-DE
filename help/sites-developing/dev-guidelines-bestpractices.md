@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 94%
 
 Adobe Experience Manager(AEM)-Komponenten und -Vorlagen beinhalten ein leistungsstarkes Toolkit. Sie können von Entwickelnden verwendet werden, um Menschen, die eine Website geschäftlich nutzen, bearbeiten oder verwalten, die Möglichkeit zu geben, ihre Website an die sich ändernden Geschäftsanforderungen anzupassen (Content-Agilität). All dies erfolgt unter Beibehaltung des einheitlichen Layouts der Sites (Markenschutz).
 
-Eine typische Herausforderung für eine Person, die für eine Website oder eine Reihe von Websites verantwortlich ist (z. B. in einer Zweigstelle eines globalen Unternehmens), besteht darin, eine neue Art der Präsentation von Inhalten auf ihren Websites einzuführen.
+Eine typische Herausforderung für die für eine oder mehrere Websites (z. B. in einer Zweigniederlassung eines globalen Unternehmens) verantwortliche Person ist die Einführung einer neuen Art von Inhaltspräsentation auf den Websites.
 
 Angenommen, eine Newslisten-Seite, die Auszüge aus bereits veröffentlichten Artikeln enthält, muss zu den Websites hinzugefügt werden. Die Seite soll das gleiche Design und die gleiche Struktur wie der Rest der Website haben.
 
 Es wird empfohlen, wie folgt an eine solche Herausforderung heranzugehen:
 
-* Verwenden Sie eine vorhandene Vorlage erneut, damit Sie einen Seitentyp erstellen können. Die Vorlage definiert grob die Seitenstruktur (Navigationselemente, Bedienfelder usw.), die im Rahmen des jeweiligen Designs (CSS, Grafiken) weiter verfeinert wird.
+* Verwenden Sie eine vorhandene Vorlage erneut, sodass Sie einen Seitentyp erstellen können. Die Vorlage definiert grob die Seitenstruktur (Navigationselemente, Bedienfelder usw.), die im Rahmen des jeweiligen Designs (CSS, Grafiken) weiter verfeinert wird.
 * Verwenden Sie das Absatzsystem (parsys/iparsys) auf den neuen Seiten.
 * Definieren Sie Zugriffsberechtigungen für den Design-Modus der Absatzsysteme, damit diese nur von berechtigten Personen (normalerweise der Administrator) geändert werden können.
 * Definieren Sie die Komponenten, die im angegebenen Absatzsystem zulässig sind, damit beim Bearbeiten die erforderlichen Komponenten auf der Seite platziert werden können. In diesem Fall könnte es sich um eine Listenkomponente handeln, die eine Unterstruktur von Seiten durchlaufen und die Informationen nach vordefinierten Regeln extrahieren kann.
@@ -47,7 +47,7 @@ Die folgenden allgemeinen Regeln für Entwickelnde sind bei den meisten gängige
 
 ### Anpassen von Komponenten und anderen Elementen {#customizing-components-and-other-elements}
 
-Wenn Sie eigene Komponenten erstellen oder eine vorhandene Komponente anpassen, ist es häufig am einfachsten (und sichersten), vorhandene Definitionen wiederzuverwenden. Die gleichen Prinzipien gelten auch für andere Elemente in AEM, z. B. den Fehler-Handler.
+Wenn Sie eigene Komponenten erstellen oder eine vorhandene Komponente anpassen, ist es häufig am einfachsten (und sichersten), vorhandene Definitionen wiederzuverwenden. Dies gilt auch für andere Elemente in AEM, z. B. für den Fehler-Handler.
 
 Kopieren Sie dazu die vorhandene Definition und überlagern Sie sie, wie nachfolgend beschrieben: Mit anderen Worten, kopieren Sie die Definition von `/libs` zu `/apps/<your-project>`. Sie können die neue Definition in `/apps` Anforderungen entsprechend aktualisieren.
 

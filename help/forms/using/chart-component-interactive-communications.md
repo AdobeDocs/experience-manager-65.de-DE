@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2621'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,13 +25,13 @@ Beim Erstellen einer interaktiven Kommunikation können Sie Diagramme hinzufüge
 
 Führen Sie die folgenden Schritte aus, um ein Diagramm in einer interaktiven Kommunikation hinzuzufügen und zu konfigurieren:
 
-1. Auswählen **Komponenten** aus dem Sidekick der interaktiven Kommunikation.
+1. Tippen Sie im Sidekick der interaktiven Kommunikation auf **Komponenten**.
 1. Ziehen Sie die **Diagrammkomponente** per Drag-and-Drop auf eine der folgenden Komponenten:
 
    * Druckkanal: Zielbereich oder Bildfeld
    * Web-Kanal: Bedienfeld oder Zielbereich
 
-1. Wählen Sie die Diagrammkomponente im Editor für interaktive Kommunikation aus und wählen Sie **[!UICONTROL Konfigurieren (]** ![configure_icon](assets/configure_icon.png)) in der Komponenten-Symbolleiste.
+1. Wählen Sie im Editor für interaktive Kommunikation die Diagrammkomponente und dann **[!UICONTROL Konfigurieren (]** ![configure_icon](assets/configure_icon.png)) in der Symbolleiste „Komponenten“ aus.
 
    Die Diagrammeigenschaften werden im linken Bereich angezeigt.
 
@@ -44,13 +44,13 @@ Führen Sie die folgenden Schritte aus, um ein Diagramm in einer interaktiven Ko
    Grundlegende Eigenschaften eines Zeilentypdiagramms im Webkanal
 
 1. Konfigurieren Sie die [Diagrammeigenschaften](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) basierend auf dem Kanaltyp.
-1. (Nur Druckkanal) Legen Sie in den **[!UICONTROL Agenteneinstellungen]** fest, ob der Agent dieses Diagramm verwenden muss. Wenn i **[!UICONTROL Der Agent muss dieses Diagramm verwenden]** nicht ausgewählt ist, kann der Agent das Augensymbol für das Diagramm im **[!UICONTROL Inhalt]** Registerkarte der Benutzeroberfläche für Agenten , um das Diagramm ein- oder auszublenden.
+1. (Nur Druckkanal) Legen Sie in den **[!UICONTROL Agenteneinstellungen]** fest, ob der Agent dieses Diagramm verwenden muss. Wenn die Option **[!UICONTROL Obligatorisch für Agenten, dieses Diagramm zu verwenden]** nicht ausgewählt ist, kann der Agent zum Ein- bzw. Ausblenden des Diagramms das Augensymbol für das Diagramm auf der Registerkarte **[!UICONTROL Inhalt]** der Agent-Benutzeroberfläche auswählen.
 
    ![chart_agentproperties](assets/chart_agentproperties.png)
 
-1. Auswählen ![done_icon](assets/done_icon.png) , um die Diagrammeigenschaften zu speichern.
+1. Wählen Sie ![done_icon](assets/done_icon.png), um die Diagrammeigenschaften zu speichern.
 
-   Auswählen **[!UICONTROL Vorschau]** um das Erscheinungsbild und die mit der Grafik verknüpften Daten anzuzeigen. Auswählen **[!UICONTROL Bearbeiten]** um die Eigenschaften des Diagramms neu zu konfigurieren.
+   Wählen Sie **[!UICONTROL Vorschau]**, um das Erscheinungsbild und die mit dem Diagramm verknüpften Daten anzuzeigen. Wählen Sie **[!UICONTROL Bearbeiten]** aus, um die Eigenschaften des Diagramms neu zu konfigurieren.
 
 ## Konfigurieren von Diagrammeigenschaften {#configure-chart-properties}
 
@@ -158,7 +158,7 @@ Konfigurieren Sie beim Erstellen von Diagrammen für Druck- und Web-Kanäle die 
    <td><p>Neben den allgemeinen Konfigurationen sind die folgenden spezifischen Diagrammkonfiguration verfügbar:</p>
     <ul>
      <li><strong>Legende anzeigen: </strong>Zeigt eine Legende für das Torten- oder Ringdiagramm an, wenn aktiviert.</li>
-     <li><strong>Legendenposition: </strong>Legt die Position der Legende in Bezug auf das Diagramm fest. Die verfügbaren Optionen sind rechts, links, oben und unten. Verwenden Sie die rechte Legende im Druckkanal.</li>
+     <li><strong>Legendenposition: </strong>Legt die Position der Legende in Bezug auf das Diagramm fest. Die verfügbaren Optionen sind rechts, links, oben und unten. Verwenden Sie die Legende rechts im Druckkanal.</li>
      <li><strong>Innerer Radius</strong>: Für Ringdiagramme verfügbar, um den Radius (in Pixeln) für den inneren Kreis des Diagramms anzugeben.</li>
      <li><strong>Linienfarbe</strong>: Verfügbar für Liniendiagramme, Linien- und Punktdiagramme sowie Bereichsdiagramme, um den hexadezimalen Farbwert für die Linie im Diagramm anzugeben.</li>
      <li><strong>Punktfarbe</strong>: Verfügbar für Punktdiagramme sowie Linien- und Punktdiagramme, um den hexadezimalen Farbwert für den Punkt im Diagramm anzugeben.<br /> </li>

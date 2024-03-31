@@ -1,6 +1,6 @@
 ---
 title: Anzeigen zusätzlicher Daten in der Aufgabenliste
-description: Gehen Sie wie folgt vor, um die Anzeige der Aufgabenliste von LiveCycle AEM Forms Workspace so anzupassen, dass neben dem Standard weitere Informationen angezeigt werden.
+description: Gehen Sie wie folgt vor, um durch Anpassen der Anzeige der Aufgabenliste von LiveCycle AEM Forms Workspace weitere Informationen außer den standardmäßig angezeigten Informationen darzustellen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -10,30 +10,30 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 
 # Anzeigen zusätzlicher Daten in der Aufgabenliste{#displaying-additional-data-in-todo-list}
 
-Standardmäßig zeigt die Aufgabenliste von AEM Forms Workspace den Anzeigenamen und die Beschreibung der Aufgabe an. Sie können jedoch weitere Informationen wie Erstellungsdatum und Termin hinzufügen. Sie können auch Symbole hinzufügen und den Stil der Anzeige ändern.
+Standardmäßig zeigt die Aufgabenliste von AEM Forms Workspace den Anzeigenamen und die Beschreibung von Aufgaben an. Sie können jedoch andere Informationen wie Erstellungsdatum und Termin hinzufügen. Sie können auch Symbole hinzufügen und den Stil der Anzeige ändern.
 
 ![Abbildung der Registerkarte „Aufgaben“ von HTML Workspace mit der Standardkonfiguration](assets/html-todo-list.png)
 
-In diesem Artikel werden die Schritte zum Hinzufügen von Informationen beschrieben, die für jede Aufgabe in der ToDo-Liste angezeigt werden sollen.
+Dieser Artikel führt die einzelnen Schritte auf, um Anzeigeinformationen für jede Aufgabe in der Aufgabenliste hinzuzufügen.
 
-## Was kann hinzugefügt werden? {#what-can-be-added}
+## Was kann hinzugefügt werden {#what-can-be-added}
 
-Sie können die verfügbaren Informationen der Datei in `task.json` hinzufügen, die vom Server gesendet wurde. Die Informationen können als normaler Text hinzugefügt werden oder Sie können Stile verwenden, um die Informationen zu formatieren.
+Sie können die verfügbaren Informationen der Datei in `task.json` hinzufügen, die vom Server gesendet wurde. Die Informationen können als normaler Text hinzugefügt werden, oder Sie können Stile verwenden, um die Informationen zu formatieren.
 
-Weitere Informationen zur JSON-Objektbeschreibung finden Sie unter [this](/help/forms/using/html-workspace-json-object-description.md) Artikel.
+Weitere Informationen über die JSON-Objektbeschreibung finden Sie in [diesem](/help/forms/using/html-workspace-json-object-description.md) Artikel.
 
-## Anzeigen von Informationen zu einer Aufgabe {#displaying-information-on-a-task}
+## Anzeigen von Informationen über eine Aufgabe {#displaying-information-on-a-task}
 
 1. Befolgen Sie die [generischen Schritte zur Anpassung von AEM Forms Workspace](../../forms/using/generic-steps-html-workspace-customization.md).
 1. Um zusätzliche Information für eine Aufgabe anzuzeigen, müssen die entsprechenden Schlüssel-Wert-Paare innerhalb des Aufgabenblocks von `translation.json` hinzugefügt werden.
 
-   Ändern Sie beispielsweise `/apps/ws/locales/en-US/translation.json` für Englisch:
+   Ändern Sie zum Beispiel `/apps/ws/locales/en-US/translation.json` für Englisch:
 
    ```json
    "task" : {
@@ -109,7 +109,7 @@ Weitere Informationen zur JSON-Objektbeschreibung finden Sie unter [this](/help/
    >
    >Fügen Sie entsprechende Schlüssel-Wert-Paare für alle unterstützten Sprachen hinzu.
 
-1. Fügen Sie beispielsweise Informationen innerhalb des Aufgabenblocks hinzu:
+1. Fügen Sie beispielsweise Informationen im Aufgabenblock hinzu:
 
    ```json
    "stepname" : {
@@ -120,9 +120,9 @@ Weitere Informationen zur JSON-Objektbeschreibung finden Sie unter [this](/help/
 
 ## Definieren von CSS für die neue Eigenschaft {#defining-css-for-the-new-property}
 
-1. Sie können einen Stil auf die Informationen (Eigenschaft) anwenden, die einer Aufgabe hinzugefügt werden. Dazu müssen Sie Stilinformationen für die neue Eigenschaft hinzufügen, die `/apps/ws/css/newStyle.css` hinzugefügt wurde.
+1. Sie können einen Stil auf die einer Aufgabe hinzugefügten Informationen (Eigenschaft) anwenden. Dazu müssen Sie Stilinformationen für die neue Eigenschaft hinzufügen, die `/apps/ws/css/newStyle.css` hinzugefügt wurde.
 
-   Fügen Sie beispielsweise hinzu:
+   Fügen Sie beispielsweise Folgendes hinzu:
 
    ```css
    .task .taskProperties .stepname{
@@ -132,9 +132,9 @@ Weitere Informationen zur JSON-Objektbeschreibung finden Sie unter [this](/help/
    }
    ```
 
-## Eintrag in der HTML-Vorlage hinzufügen {#adding-entry-in-the-html-template}
+## Hinzufügen eines Eintrags in der HTML-Vorlage {#adding-entry-in-the-html-template}
 
-Schließlich müssen Sie für jede Eigenschaft, die Sie der Aufgabe hinzufügen möchten, einen Eintrag in das Dev-Paket aufnehmen. Informationen zum Erstellen eines Workflows finden Sie unter Erstellen von AEM Forms Workspace-Code .
+Schließlich müssen Sie für jede Eigenschaft, die Sie der Aufgabe hinzufügen möchten, einen Eintrag ins Entwicklerpaket aufnehmen. Informationen zum Erstellen eines Eintrags finden Sie unter „Erstellen von AEM Forms Workspace-Code“.
 
 1. Kopieren `task.html`:
 

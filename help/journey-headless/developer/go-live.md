@@ -5,7 +5,7 @@ exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
 source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1803'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -100,7 +100,7 @@ Weitere Informationen zum Einrichten einer lokalen Entwicklungsumgebung und alle
 
 <!-- Start of CDN Review -->
 
-Jetzt ist es an der Zeit, Ihre AEM Headless App für den Start bereitzustellen, indem Sie die unten beschriebenen Best Practices befolgen.
+Jetzt sollten Sie Ihre AEM Headless-Anwendung für den Launch vorbereiten, indem Sie die nachfolgend beschriebenen Best Practices umsetzen.
 
 ### Sichern Ihres Headless-Programms vor dem Launch {#secure-and-scale-before-launch}
 
@@ -167,7 +167,7 @@ Damit Benutzerinnen und Benutzern bei der Nutzung des AEM Headless-Programms das
       * Überprüfen der Anzahl der Benutzenden, Anfragen sowie der Auslastung
 * Abrufen programm- und speicherplatzspezifischer Performance-Berichte
    * Prüfen, ob die allgemeinen Metriken grün/orange/rot gekennzeichnet sind, sobald der Server hochgefahren ist, um anschließend spezifische Programmprobleme zu identifizieren
-   * Öffnen der oben genannten Berichte gefiltert nach App oder Bereich (z. B. Desktop-Version von Photoshop, Paywall)
+   * Öffnen der oben genannten Berichte, jedoch gefiltert nach Anwendung oder Speicherplatz. (z. B. Desktop-Version von Photoshop, Paywall).
    * Verwenden von Splunk-Protokoll-APIs, um Performance-Berichte zu Services und Programmen abzurufen
    * Wenden Sie sich an den Support, falls weitere Probleme auftreten.
 

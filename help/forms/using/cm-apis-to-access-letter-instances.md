@@ -1,6 +1,6 @@
 ---
 title: APIs zum Zugriff auf Briefinstanzen
-description: Entdecken Sie APIs und verwenden Sie sie, um programmgesteuert auf Briefinstanzen in der AEM Forms-Umgebung zuzugreifen.
+description: Erfahren Sie mehr über APIs und verwenden Sie sie, um programmgesteuert auf Briefinstanzen in der AEM Forms-Umgebung zuzugreifen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '591'
-ht-degree: 83%
+ht-degree: 97%
 
 ---
 
@@ -136,12 +136,12 @@ Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName )
 
 Die Briefinstanz kann vom Typ „Gesendet“ oder „Entwurf“ sein. Beim Öffnen der beiden Briefinstanztypen zeigen sich unterschiedliche Verhaltensweisen:
 
-* Wenn eine Instanz für gesendete Briefe vorhanden ist, wird eine PDF geöffnet, die die Briefinstanz darstellt. Die Briefinstanz vom Typ „Gesendet“, die auf dem Server vorhanden ist, enthält auch die dataXML und verarbeitete XDP, die verwendet werden können, um Anwendungsfälle wie das Erstellen einer PDF/A durchzuführen und weiter anzupassen.
-* Wenn eine Briefinstanz vom Typ Entwurf vorhanden ist, wird die Benutzeroberfläche &quot;Korrespondenz erstellen&quot;in den exakten vorherigen Status wie zum Zeitpunkt der Erstellung des Entwurfs neu geladen
+* Bei einer Briefinstanz vom Typ „Gesendet“ wird ein PDF-Dokument geöffnet, das die Briefinstanz darstellt. Die Briefinstanz vom Typ „Gesendet“, die auf dem Server vorhanden ist, enthält auch die dataXML und verarbeitete XDP, die verwendet werden können, um Anwendungsfälle wie das Erstellen einer PDF/A durchzuführen und weiter anzupassen.
+* Bei einer Briefinstanz vom Typ „Entwurf“ wird die Benutzeroberfläche „Korrespondenzen erstellen“ wieder genau in dem Zustand wie beim Erstellen des Entwurfs geladen
 
 ### Öffnen der Briefinstanz „Entwurf“  {#opening-draft-letter-instance-nbsp}
 
-Die CCR-Benutzeroberfläche unterstützt den Parameter cmLetterInstanceId , der zum Neuladen des Briefs verwendet werden kann.
+Die CCR-Benutzeroberfläche unterstützt den Parameter „cmLetterInstanceId“, mit dem der Brief erneut geladen werden kann.
 
 `https://[hostName]:[portNo]/[contextPath]//aem/forms/createcorrespondence.html?random=[randomNo]&cmLetterInstanceId=[letterInstanceId]`
 

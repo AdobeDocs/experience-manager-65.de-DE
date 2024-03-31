@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3442'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ Im Folgenden finden Sie die logischen Schritte, damit der Design Importer Ihre b
 
 1. Erstellen eines Taghandlers
 
-   * Ein Taghandler ist ein POJO, das HTML-Tags eines bestimmten Typs handelt. Welche Arten von HTML-Tags Ihr TagHandler verarbeiten kann, wird über die OSGi-Eigenschaft „tagpattern.name“ in der TagHandlerFactory definiert. Im Grunde handelt es sich bei der OSGi-Eigenschaft um einen RegEx, der dem Eingabe-HTML-Tag entsprechen sollte, das Sie handeln möchten. Alle verschachtelten Tags würden zum Handling an den Taghandler übergeben werden. Wenn Sie sich beispielsweise für ein div registrieren, das eine verschachtelte &lt;p> -Tag &lt;p> -Tag auch an Ihren TagHandler gesendet werden und es liegt an Ihnen, wie Sie darauf achten möchten.
+   * Ein Taghandler ist ein POJO, das HTML-Tags eines bestimmten Typs handelt. Welche Arten von HTML-Tags Ihr TagHandler verarbeiten kann, wird über die OSGi-Eigenschaft „tagpattern.name“ in der TagHandlerFactory definiert. Im Grunde handelt es sich bei der OSGi-Eigenschaft um einen RegEx, der dem Eingabe-HTML-Tag entsprechen sollte, das Sie handeln möchten. Alle verschachtelten Tags würden zum Handling an den Taghandler übergeben werden. Wenn Sie sich z. B. für ein div registrieren, das ein verschachteltes &lt;p>-Tag enthält, wird das &lt;p>-Tag ebenfalls an den TagHandler übermittelt und Sie können entscheiden, wie Sie damit umgehen möchten.
    * Die Oberfläche des Taghandlers ähnelt der Oberfläche eines SAX-Inhaltshandlers. Sie erhält für jedes HTML-Tag SAX-Ereignisse. Als Anbieterin bzw. Anbieter des Tag-Handlers müssen Sie bestimmte Lebenszyklusmethoden implementieren, die automatisch vom Design Importer-Framework aufgerufen werden.
 
 1. Erstellen Sie die entsprechende TagHandlerFactory.
@@ -59,10 +59,10 @@ Landingpage-Schnellübersicht
 
 Ein Beispiel für ein ZIP-Layout:
 
-* /index.html > Landingpage-HTML-Datei
-* /css > , um es der CSS-clientlib hinzuzufügen
+* /index.html > HTML-Datei der Landingpage
+* /css > zum Hinzufügen zur CSS-Client-Bibliothek
 * /img > alle Bilder und Assets
-* /js > zur Hinzufügung in die JS-clientlib
+* /js > für das Hinzufügen zur JS-Client-Bilbiothek
 
 Das Layout basiert auf dem Boilerplate-Layout für HTML5. Lesen Sie mehr unter [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
@@ -112,9 +112,9 @@ Im folgenden Abschnitt wird beschrieben, wie Sie Ihre HTML-Datei so bearbeiten, 
 
 Beachten Sie vor dem Import die folgenden Einschränkungen:
 
-### Jedes Attribut wie die Klasse oder ID, das auf das Tag &amp;lt;body> angewendet wird, wird nicht beibehalten {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
+### Alle Attribute wie „id“ oder „class“, die auf das &lt;body>-Tag angewendet werden, bleiben nicht erhalten {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
-Wenn beispielsweise ein beliebiges Attribut wie ID oder Klasse auf das Body-Tag angewendet wird, `<body id="container">` nach dem Import nicht beibehalten. Das importierte Design darf also über keine Abhängigkeiten bei den Attributen verfügen, die auf das `<body>`-Tag angewendet werden.
+Wenn ein beliebiges Attribut wie „id“ oder „class“ auf das body-Tag angewendet wird, z. B. `<body id="container">`, bleibt dieses Attribut nach dem Import nicht erhalten. Das importierte Design darf also über keine Abhängigkeiten bei den Attributen verfügen, die auf das `<body>`-Tag angewendet werden.
 
 ### Verschieben einer Zip-Datei per Drag-and-Drop {#drag-and-drop-zip}
 
@@ -250,7 +250,7 @@ Unterstützte Eigenschaften
 * Ziel-URL mit Unterstützung für Drittanbieter- und AEM-URLs
 * Seiten-Render-Optionen („Identisches Fenster“, „Neues Fenster“ usw.)
 
-HTML-Tag mit in der importierten Zip enthaltener Click Through-Komponente: Hier ordnet href der Ziel-URL zu, &quot;Produktdetails anzeigen&quot;wird der Beschriftung zugeordnet usw.
+HTML-Tag, um die Click-Through-Komponente in die importierte Zip aufzunehmen. Hier verweist „href“ auf die Ziel-URL und „View Product Details“ auf Bezeichnungen und so weiter.
 
 ```xml
 <div id="cqcanvas">
@@ -283,7 +283,7 @@ Unterstützte Eigenschaften
 * Ziel-URL mit Unterstützung für Drittanbieter- und AEM-URLs
 * Seiten-Render-Optionen („Identisches Fenster“, „Neues Fenster“ usw.)
 
-HTML-Tag mit in der importierten ZIP-Datei enthaltenem grafischen Link: Hier ordnet href der Ziel-URL zu, img src ist das Rendering-Bild, &quot;title&quot;wird als Hover-Text verwendet usw.
+HTML-Tag mit in der importierten ZIP-Datei enthaltenem grafischen Link: Hier verweist „href“ auf die Ziel-URL, „img src“ ist das Render-Bild und „title“ wird als Hover-Text verwendet und so weiter.
 
 ```xml
 <div id="cqcanvas">
@@ -322,7 +322,7 @@ Ein Lead-Formular ist ein Formular, das dazu verwendet wird, die Informationen e
 
 * Vordefinierte Lead-Felder (Vorname, Nachname, Adresse, Geburtsdatum, Geschlecht, Info, Benutzer-ID, E-Mail-ID, Sende-Schaltfläche) sind im Sidekick verfügbar. Platzieren Sie die erforderliche Komponente einfach per Drag-and-Drop in Ihrem Lead-Formular.
 * Mithilfe dieser Komponenten kann der Autor ein eigenständiges Formular entwerfen. Diese Felder entsprechen den Lead-Formular-Feldern. In eigenständigen oder importierten ZIP-Anwendungen können Benutzende mit den Formularfeldern „cq:form“ oder „cta lead“ weitere Felder hinzufügen und diese ihren Anforderungen entsprechend benennen und entwerfen.
-* Weisen Sie Lead-Formular-Felder mit bestimmten vordefinierten Namen des CTA-Lead-Formulars zu, z. B. - firstName für Vorname im Lead-Formular usw.
+* Ordnen Sie Formularfelder mithilfe spezifischer vordefinierter Namen für CTA-Lead-Formulare zu, z. B. „firstName“ für den Vornamen in einem Lead-Formular.
 * Felder, die nicht dem Lead-Formular zugewiesen sind, werden cq:form-Komponenten (Text, Optionsfeld, Kontrollkästchen, Dropdown, verborgenes Feld, Kennwort) zugeordnet.
 * Benutzende können den Titel mit dem Tag „Beschriften“ und Stile mit dem Stilattribut „Klasse“ angeben (nur für CTA-Lead-Formular-Komponenten verfügbar).
 * Die Dankeseite und die Abonnement-Liste können als versteckte Parameter des Formulars (vorhanden in der Datei „index.htm“) bereitgestellt werden oder über die Bearbeitungsleiste von „Start des Lead-Formulars“ hinzugefügt oder bearbeitet werden.
@@ -366,7 +366,7 @@ HTML-Tag mit in der importierten Zip enthaltenem grafischen Link: Hier verweist 
 
 ### Parsys {#parsys}
 
-Das AEM-parsys ist eine Container-Komponente, die andere AEM-Komponenten enthalten kann. Es ist möglich, der importierten HTML eine parsys-Komponente hinzuzufügen. Dadurch können Benutzende bearbeitbare AEM-Komponenten zur Landingpage hinzufügen bzw. daraus löschen, selbst nachdem sie importiert wurde.
+Das AEM-parsys ist eine Container-Komponente, die andere AEM-Komponenten enthalten kann. Es ist möglich, eine parsys-Komponente in die importierte HTML einzufügen. Dadurch können Benutzende bearbeitbare AEM-Komponenten zur Landingpage hinzufügen bzw. daraus löschen, selbst nachdem sie importiert wurde.
 
 Das Absatzsystem bietet Benutzenden die Möglichkeit, mithilfe des Sidekicks Komponenten hinzuzufügen.
 
@@ -439,9 +439,9 @@ Wenn im HTML-Import keine Kodierung angegeben ist, ist die vom Design-Import-Too
 
 ### Überlagern der Vorlage {#overlaying-template}
 
-Die Vorlage für leere Landingpages kann überlagert werden, indem Sie eine Vorlage erstellen unter: `/apps/<appName>/designimporter/templates/<templateName>`
+Die Vorlage „Leere Einstiegsseite“ kann überlagert werden, indem eine Vorlage erstellt wird unter: `/apps/<appName>/designimporter/templates/<templateName>`
 
-Die Schritte zum Erstellen einer Vorlage in AEM werden erläutert. [here](/help/sites-developing/templates.md).
+Die Schritte zum Erstellen einer Vorlage in AEM werden [hier](/help/sites-developing/templates.md) erläutert.
 
 ### Verweisen auf eine Komponente von der Landingpage {#referring-a-component-from-landing-page}
 
@@ -531,7 +531,7 @@ In der folgenden Tabelle werden die Eigenschaften kurz beschrieben:
 >
 >>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
->Und Sie müssen `CQ_DESIGN_PATH` mit `VIPURL` im Suchmuster ein, sollte Ihr Suchmuster wie folgt aussehen:
+>Und Sie müssen `CQ_DESIGN_PATH` durch `VIPURL` im Suchmuster ersetzen. Ihr Suchmuster sollte dann wie folgt aussehen:
 >
 >`/\* *VIPURL *\*/ *(['"])`
 
@@ -548,7 +548,7 @@ Wenn das Designpaket ein parsys-Komponenten-Markup enthält, werden nach dem Imp
 Wenn Fehler aufgetreten sind (das importierte Paket ist beispielsweise keine gültige ZIP-Datei), wird das Paket beim Design-Import nicht importiert. Stattdessen wird oben auf der Seite direkt über dem Drag-and-Drop-Feld eine Fehlermeldung angezeigt. Hier werden Beispiele für Fehlerszenarios aufgeführt. Wenn Sie den Fehler korrigiert haben, können Sie die aktualisierte ZIP-Datei erneut in dieselbe leere Landingpage importieren. In folgenden unterschiedlichen Szenarien werden Fehler gemeldet:
 
 * Das importierte Design-Paket ist kein gültiges ZIP-Archiv.
-* Das importierte Designpaket enthält kein index.html auf der obersten Ebene.
+* Das importierte Design-Paket enthält auf der höchsten Ebene keine index.html.
 
 ### Nach dem Import werden Warnmeldungen angezeigt {#warnings-displayed-after-import}
 
@@ -599,4 +599,4 @@ mit einem wie folgt auf die Klasse `box` angewendeten CSS:
 
 >[!NOTE]
 >
->Designer sollten nur Code innerhalb der **id=cqcanvas** -Tag vom Importtool erkannt wird, andernfalls wird das Design nicht beibehalten.
+>Außerdem sollten Designerinnen und Designer beachten, dass nur Code innerhalb des **id=cqcanvas**-Tags vom Importer erkannt wird. Andernfalls bleibt das Design nicht erhalten.

@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3360'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -209,7 +209,7 @@ Siehe [AEM-Protokollierung](/help/sites-deploying/configure-logging.md) und [Sli
 
 * **Virtuelle URLs** zum Definieren der Vanity-URL-Zuweisungen.
 
-* **URL-Zuordnungen** , um Aliase zu definieren. Beispiel: von `/content` nach `/`.
+* **URL-Zuordnungen** zum Definieren der Aliasse. Zum Beispiel von `/content` auf `/`.
 
 * **Mapping Location**, die Zuordnungskonfiguration, die in `/etc/map` externalisiert ist.
 
@@ -336,7 +336,7 @@ Verschiedene Eigenschaften können konfiguriert werden:
 * **Pfad**
 Der Pfad, für den dieser Authentifizierungs-Handler aktiv ist. Wenn dieser Parameter nicht angegeben wird, ist der Authentifizierungs-Handler deaktiviert. Beispielsweise wird beim Pfad / der Authentifizierungs-Handler für das gesamte Repository verwendet.
 
-* **Service Ranking** Der Rangfolge-Wert für den OSGi-Framework-Dienst gibt die Reihenfolge an, in der dieser Dienst aufgerufen wird. Dieser Wert ist ein `int` -Wert, bei dem höhere Werte eine höhere Priorität angeben.
+* **Service Ranking** Der Rangfolge-Wert für den OSGi-Framework-Dienst gibt die Reihenfolge an, in der dieser Dienst aufgerufen wird. Dieser Wert ist ein `int`-Wert, wobei höhere Werte eine höhere Priorität bezeichnen.
 Der Standardwert ist `0`.
 
 * **Kopfzeilen-Namen**
@@ -348,7 +348,7 @@ Die Namen von Cookies, die möglicherweise eine Benutzer-ID enthalten.
 * **Parameter-Namen**
 Die Namen von Anfrageparametern, die möglicherweise eine Benutzer-ID angeben.
 
-* **User Map** Für bestimmte Benutzer kann der aus der HTTP-Anforderung extrahierte Benutzername im Anmeldedaten-Objekt durch einen anderen Namen ersetzt werden. Die Zuordnung ist hier definiert. Wenn der Benutzername `admin` auf beiden Seiten der Zuordnung angezeigt wird, wird die Zuordnung ignoriert. Das Zeichen „=“ muss mit einem vorangestellten „\“ versehen werden.
+* **User Map** Für bestimmte Benutzer kann der aus der HTTP-Anforderung extrahierte Benutzername im Anmeldedaten-Objekt durch einen anderen Namen ersetzt werden. Die Zuordnung ist hier definiert. Falls der Benutzername `admin` auf beiden Seiten der Zuordnung angezeigt wird, wird die Zuordnung ignoriert. Das Zeichen „=“ muss mit einem vorangestellten „\“ versehen werden.
 
 * **Format** Gibt das Format an, in dem die Benutzer-ID angegeben ist. Verwenden Sie:
 

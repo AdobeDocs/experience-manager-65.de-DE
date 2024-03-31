@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1070'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Formulare enthalten Felder und Abschnitte, die nicht für alle Benutzer und Bedi
 Führen Sie zum Aktivieren des verzögerten Ladens in einem adaptiven Formularfragment folgende Schritte durch:
 
 1. Öffnen Sie im Bearbeitungsmodus das adaptive Formular, das das Fragment enthält, für das Sie verzögertes Laden aktivieren möchten.
-1. Wählen Sie das adaptive Formularfragment aus und wählen Sie ![cmppr](assets/cmppr.png).
+1. Wählen Sie das adaptive Formularfragment aus und dann ![cmppr](assets/cmppr.png) aus.
 1. Aktivieren Sie in der Seitenleiste die Option **[!UICONTROL Fragment verzögert laden]** und wählen Sie **Fertig** aus.
 
    ![Verzögertes Laden für das adaptive Formularfragment aktivieren](assets/lazy-loading-fragment.png)
@@ -63,7 +63,7 @@ Führen Sie zum Aktivieren des verzögerten Ladens in einem adaptiven Formularfr
 Sie können die Werte von Objekten im verzögert geladenen Fragment als global markieren, damit sie in Skripten verwendet werden können, wenn das übergeordnete Fragment nicht geladen wird. Gehen Sie folgendermaßen vor:
 
 1. Öffnen Sie das adaptive Formularfragment im Authoring-Modus.
-1. Wählen Sie das Feld aus, dessen Wert Sie als global markieren möchten, und wählen Sie dann ![cmppr](assets/cmppr.png).
+1. Wählen Sie das Feld aus, dessen Wert Sie als „global“ markieren möchten, und wählen Sie dann ![cmppr](assets/cmppr.png) aus.
 1. Aktivieren Sie in der Randleiste **Wert bei verzögertem Laden verwenden**.
 
    ![Feld „Verzögertes Laden“ in der Randleiste](assets/enable-lazy-loading.png)
@@ -74,7 +74,7 @@ Sie können die Werte von Objekten im verzögert geladenen Fragment als global m
 
 Einige der folgenden Einschränkungen, Empfehlungen und wichtigen Aspekte sind beim Arbeiten mit verzögertem Laden zu beachten:
 
-* Verwenden Sie schemabasierte adaptive XSD-Formulare anstelle von XFA-basierten adaptiven Formularen, um verzögertes Laden auf großen Formularen zu konfigurieren. Die Leistungsverbesserung aufgrund von verzögertem Laden ist in XFA-basierten adaptiven Formularen verhältnismäßiger geringer als in XSD-basierten adaptiven Formularen.
+* Verwenden Sie bei umfangreichen Formularen XSD-schemabasierte statt XFA-basierte adaptive Formulare für die Konfiguration von verzögertem Laden. Die Leistungsverbesserung aufgrund von verzögertem Laden ist in XFA-basierten adaptiven Formularen verhältnismäßiger geringer als in XSD-basierten adaptiven Formularen.
 * Konfigurieren Sie kein Lazy Loading (verzögertes Laden) für Fragmente in einem adaptiven Formular, die das Layout **[!UICONTROL Responsiv – alles auf einer Seite ohne Navigation]** für den Stammbereich verwenden. Infolge der Konfiguration „Responsive Layout“ werden in einem adaptiven Formular alle Fragmente gleichzeitig geladen. Dies kann ebenfalls die Performance beeinträchtigen.
 * Es wird empfohlen, bei dem ersten Fragment in einem adaptiven Formular Lazy Loading nicht zu konfigurieren.
 * Es wird empfohlen, verzögertes Laden für Fragmente nicht im ersten Bereich zu konfigurieren, der beim Laden des adaptiven Formulars gerendert wird.
@@ -87,8 +87,8 @@ Einige der folgenden Einschränkungen, Empfehlungen und wichtigen Aspekte sind b
 
 Weiterhin sollten Sie Folgendes beim Entwickeln von Skripten für das verzögerte Laden beachten:
 
-* Stellen Sie sicher, dass die initialisierten und berechneten Skripte, die in den Feldern des verzögert geladenen Fragments verwendet werden, idempotent sind. Idempotente Skripte sind diejenigen, die den gleichen Effekt auch nach mehreren Implementierungen haben.
-* Verwenden Sie die global verfügbare Eigenschaft von Feldern, um den Wert von Feldern in einem verzögerten Ladebereich für alle anderen Bereiche eines Formulars verfügbar zu machen.
+* Stellen Sie sicher, dass die initialisierten und berechneten Skripte, die in den Feldern des verzögert geladenen Fragments verwendet werden, idempotent sind. Idempotente Skripte sind diejenigen, die auch nach mehreren Ausführungen den gleichen Effekt haben.
+* Verwenden Sie die global verfügbare Eigenschaft von Feldern, um die Werte von Feldern, die sich in einem verzögert geladenen Bereich befinden, für alle anderen Bereiche eines Formulars verfügbar zu machen.
 * Leiten Sie den Referenzwert eines Felds in einem verzögerten Bereich nicht weiter, unabhängig davon, ob das Feld global über Fragmente hinweg markiert ist oder nicht.
 * Verwenden Sie die Funktion zum Zurücksetzen des Bedienfelds, um alle im Bedienfeld sichtbaren Elemente mithilfe des folgenden Ausdrucks für ein Klickereignis zurückzusetzen.\
   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()

@@ -1,6 +1,6 @@
 ---
 title: Veröffentlichen von Ordnern in Brand Portal
-description: Erfahren Sie, wie Sie Ordner in Brand Portal veröffentlichen und deren Veröffentlichung rückgängig machen können.
+description: Erfahren Sie, wie Sie Sammlungen in Brand Portal veröffentlichen und Veröffentlichungen rückgängig machen können.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: brand-portal
@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '565'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Falls Sie danach Änderungen am ursprünglichen Asset oder am Ordner in AEM Asse
    1. Wählen Sie in **Aktion** die Option **In Brand Portal veröffentlichen** aus, wählen Sie in **Zeitplan** die Option **Jetzt** aus und klicken Sie auf **Weiter**.
    1. Bestätigen Sie Ihre Auswahl in **Umfang** und klicken Sie auf **In Brand Portal veröffentlichen**.
 
-   Eine Meldung erscheint, die besagt, dass der Ordner zur Veröffentlichung in Brand Portal in die Warteschlange gestellt wurde. Melden Sie sich bei der Brand Portal-Benutzeroberfläche an, um den veröffentlichten Ordner anzuzeigen.
+   Eine Meldung erscheint, die besagt, dass der Ordner zur Veröffentlichung in Brand Portal in die Warteschlange gestellt wurde. Melden Sie sich bei der Brand Portal-Benutzeroberfläche an, um den veröffentlichten Ordner zu sehen.
 
    **Späteres Veröffentlichen von Ordnern**
 
@@ -63,9 +63,9 @@ Falls Sie danach Änderungen am ursprünglichen Asset oder am Ordner in AEM Asse
 
 ## Veröffentlichung von Ordnern in Brand Portal rückgängig machen {#unpublish-folders-from-brand-portal}
 
-Sie können alle in Brand Portal veröffentlichten Asset-Ordner entfernen, indem Sie die Veröffentlichung in AEM -Autoreninstanz rückgängig machen. Nachdem Sie die Veröffentlichung des ursprünglichen Ordners aufgehoben haben, ist dessen Kopie nicht mehr für Brand Portal-Benutzer verfügbar.
+Sie können alle in Brand Portal veröffentlichte Asset-Ordner entfernen, indem Sie die Veröffentlichung über die AEM-Autoreninstanz rückgängig machen. Nachdem Sie die Veröffentlichung des ursprünglichen Ordners aufgehoben haben, ist dessen Kopie nicht mehr für Brand Portal-Benutzer verfügbar.
 
-Sie haben die Möglichkeit, die Veröffentlichung von Ordnern in Brand Portal schnell rückgängig zu machen oder die Veröffentlichung für einen späteren Zeitpunkt zu planen. So machen Sie die Veröffentlichung von Assets/Ordnern in Brand Portal rückgängig:
+Sie haben die Möglichkeit, die Veröffentlichung von Ordnern aus Brand Portal schnell aufzuheben oder sie für einen späteren Zeitpunkt zu planen. So machen Sie die Veröffentlichung von Assets/Ordnern in Brand Portal rückgängig:
 
 1. Wählen Sie in der AEM Assets-Benutzeroberfläche in der AEM-Autoreninstanz den Ordner aus, dessen Veröffentlichung Sie rückgängig machen möchten.
 
@@ -73,9 +73,9 @@ Sie haben die Möglichkeit, die Veröffentlichung von Ordnern in Brand Portal sc
 
 1. Klicken Sie in der Symbolleiste auf **Veröffentlichung verwalten**.
 
-1. **Veröffentlichung von Brand Portal jetzt rückgängig machen**
+1. **Sofortiges Rückgängigmachen der Veröffentlichung in Brand Portal**
 
-   So machen Sie die Veröffentlichung des gewünschten Ordners in Brand Portal schnell rückgängig:
+   So heben Sie die Veröffentlichung des gewünschten Ordners in Brand Portal schnell auf:
 
    1. Wählen Sie in der Symbolleiste **Veröffentlichung verwalten** aus.
    1. Wählen Sie in **Aktion** die Option **Veröffentlichung in Brand Portal rückgängig machen** aus, wählen Sie in **Zeitplan** die Option **Jetzt** aus und klicken Sie auf **Weiter**.

@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren von Diensteinstellungen
-description: Erfahren Sie, wie Sie Diensteinstellungen konfigurieren. Auf der Seite "Dienstverwaltung"können Sie die Einstellungen für die einzelnen Dienste konfigurieren, die zu AEM Formularen gehören.
+description: Erfahren Sie, wie Sie die Diensteinstellungen konfigurieren. Sie können die Dienstverwaltungsseite verwenden, um die Einstellungen für jeden der Dienste zu konfigurieren, die Bestandteil von AEM Forms sind.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '10702'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Sie können die Dienstverwaltungsseite verwenden, um Einstellungen für jeden de
 
    >[!NOTE]
    >
-   >Nicht alle auf der Seite &quot;Dienstverwaltung&quot;aufgelisteten Dienste haben die Registerkarte &quot;Konfiguration&quot;. Für von Ihnen erstellte Prozesse wird die Registerkarte „Konfiguration“ nur angezeigt, wenn Sie dem Prozess in Workbench einen Konfigurationsparameter hinzugefügt haben. (Siehe „Konfigurationsparameter“ in der [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63_de).)
+   >Nicht alle Dienste, die auf der Seite „Dienstverwaltung“ aufgeführt sind, verfügen über eine Registerkarte „Konfiguration“. Für von Ihnen erstellte Prozesse wird die Registerkarte „Konfiguration“ nur angezeigt, wenn Sie dem Prozess in Workbench einen Konfigurationsparameter hinzugefügt haben. (Siehe „Konfigurationsparameter“ in der [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63_de).)
 
 
 1. Klicken Sie auf die Registerkarte „Sicherheit“ und legen Sie die Sicherheitseinstellungen für den Dienst fest. Siehe [Ändern von Sicherheitseinstellungen für einen Dienst](configure-service-settings.md#modifying-security-settings-for-a-service).
@@ -36,7 +36,7 @@ Sie können die Dienstverwaltungsseite verwenden, um Einstellungen für jeden de
 
 ## Einstellungen des Audit Workflow-Dienstes {#audit-workflow-service-settings}
 
-Workbench gibt Ihnen die Möglichkeit, Prozessinstanzen während der Ausführung zur Laufzeit aufzuzeichnen und anschließend wiederzugeben, um das Verhalten des Prozesses zu untersuchen. (Siehe [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63_de).) Um Speicherplatz im Dateisystem des Forms-Servers zu sparen, können Sie die Menge der gespeicherten Prozessaufzeichnungsdaten begrenzen. Sie können die folgenden Eigenschaften des Audit Workflow-Dienstes (`AuditWorkflowService`) konfigurieren:
+Workbench gibt Ihnen die Möglichkeit, Prozessinstanzen während der Ausführung zur Laufzeit aufzuzeichnen und anschließend wiederzugeben, um das Verhalten des Prozesses zu untersuchen. (Siehe [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63_de).) Zum Einsparen von Speicherplatz im Dateisystem des Formular-Servers können Sie die Menge der zu speichernden Prozessaufzeichnungsdaten begrenzen. Sie können die folgenden Eigenschaften des Audit Workflow-Dienstes (`AuditWorkflowService`) konfigurieren:
 
 **maxNumberOfRecordingInstances**: Die maximale Anzahl von zu speichernden Aufzeichnungen. Wenn die maximale Anzahl gespeichert ist, wird beim Erstellen einer neuen Aufzeichnung die älteste Aufzeichnung aus dem Dateisystem gelöscht. Diese Eigenschaft ist nützlich, wenn Sie dazu neigen, viele Aufzeichnungen zu erstellen, und alte Aufzeichnungen automatisch löschen möchten. Der Standardwert ist 50.
 
@@ -108,7 +108,7 @@ Der Standardwert für diese Einstellung ist `/LiveCycleES/ConnectorforIBMFileNet
 
 ## Einstellungen des Convert PDF-Dienstes {#convert-pdf-service-settings}
 
-Der Convert PDF-Dienst ( `ConvertPdfService`) konvertiert PDF-Dokumente in PostScript und verschiedene Bildformate (JPEG, JPEG 2000, PNG und TIFF). Die Konvertierung eines PDF-Dokuments in PostScript ist nützlich für das unbeaufsichtigte, Server-basierte Drucken auf einem beliebigen PostScript-Drucker. Die Konvertierung eines PDF-Dokuments in eine mehrseitige TIFF-Datei ist praktisch bei der Archivierung von Dokumenten in Content-Management-Systemen, die keine PDF-Dokumente unterstützen.
+Der Convert PDF-Dienst (`ConvertPdfService`) konvertiert PDF-Dokumente in PostScript sowie verschiedene Bildformate (JPEG, JPEG 2000, PNG und TIFF). Die Konvertierung eines PDF-Dokuments in PostScript ist nützlich für das unbeaufsichtigte, Server-basierte Drucken auf einem beliebigen PostScript-Drucker. Die Konvertierung eines PDF-Dokuments in eine mehrseitige TIFF-Datei ist praktisch bei der Archivierung von Dokumenten in Content-Management-Systemen, die keine PDF-Dokumente unterstützen.
 
 Folgende Einstellungen sind für den Convert PDF-Dienst verfügbar:
 
@@ -242,7 +242,7 @@ Die folgenden Einstellungen sind für den FTP-Dienst verfügbar.
 
 ## Einstellungen des Generate PDF-Dienstes {#generate-pdf-service-settings}
 
-Der Generate PDF-Dienst ( `GeneratePDFService`) konvertiert Dateien in verschiedenen nativen Formaten in PDF-Dokumente und konvertiert PDF-Dokumente in verschiedene Dateiformate.
+Mit dem Generate PDF-Dienst (`GeneratePDFService`) können Sie Dateien in verschiedenen nativen Formaten in PDF-Dokumente bzw. PDF-Dokumente in eine Vielzahl von Dateiformaten konvertieren.
 
 Folgende Einstellungen sind für den Generate PDF-Dienst verfügbar:
 
@@ -258,7 +258,8 @@ Folgende Einstellungen sind für den Generate PDF-Dienst verfügbar:
 
 **Acrobat-basierte AutoCAD-Konvertierungen aktivieren (nur Windows)**: Wenn diese Einstellung aktiviert ist, verwendet der Generate PDF-Service für alle Konvertierungen von DWG in PDF Acrobat X Pro. Diese Einstellung ist nur sinnvoll, wenn AutoCAD nicht auf dem Server installiert ist bzw. wenn der AutoCAD-Konvertierungsmechanismus nicht in der Lage ist, Dateien erfolgreich zu konvertieren.
 
-**Reguläre Ausdrücke zum Auffinden unzulässiger Sonderzeichen im Benutzernamen (nur Windows):** Gibt Zeichen an, die den Export PDF- und Optimize PDF-Vorgang beeinträchtigen, wenn die Zeichen im Benutzernamen angezeigt werden.
+**Reguläre Ausdrücke zum Auffinden nicht zulässiger
+Sonderzeichen in Benutzernamen (nur Windows)**: Gibt Zeichen an, welche die Vorgänge zum Erstellen und Optimieren von PDF-Dateien beeinträchtigen, wenn die Zeichen im Benutzernamen enthalten sind.
 
 **ImageToPDF-Pool-Größe**: Die Pool-Größe des standardmäßigen (reinen Java) Bild-zu-PDF-Konverters im Generate PDF-Service. Mit dieser Einstellung steuern Sie die maximale Anzahl gleichzeitiger „Bild in PDF“-Konvertierungen, die der Generate PDF-Dienst ausführen kann. Der Standardwert dieser Einstellung (empfohlen für Einzelprozessorsysteme) ist 3, wobei der Wert für Multiprozessorsysteme erhöht werden kann.
 
@@ -266,7 +267,7 @@ Folgende Einstellungen sind für den Generate PDF-Dienst verfügbar:
 
 **OCR-Pool-Größe**: Die Pool-Größe des PaperCaptureService, den PDF Generator für optische Zeichenerkennung (OCR) verwendet. Der Standardwert dieser Einstellung (empfohlen für Einzelprozessorsysteme) ist 3, wobei der Wert für Multiprozessorsysteme erhöht werden kann. Diese Einstellung ist nur auf Windows-Systemen gültig.
 
-**Fallback-Schriftfamilie für HTML zu PDF-Konvertierungen:** Der Name der Schriftfamilie, die in PDF-Dokumenten verwendet werden soll, wenn die im Original-HTML verwendete Schriftart für den AEM Forms-Server nicht verfügbar ist. Geben Sie eine Schriftfamilie an, wenn Sie HTML-Seiten konvertieren möchten, die nicht verfügbare Schriftarten verwenden. Beispielsweise könnten Seiten, die in regionalen Sprachen verfasst wurden, nicht verfügbare Schriftarten verwenden.
+**Ersatzschriftfamilie für HTML-zu-PDF-Konvertierungen**: Der Name der Schriftfamilie, die in PDF-Dokumenten verwendet werden soll, wenn die im Original-HTML verwendete Schriftart nicht für den AEM-Formular-Server verfügbar ist. Geben Sie eine Schriftfamilie an, wenn Sie HTML-Seiten konvertieren möchten, die nicht verfügbare Schriftarten verwenden. Beispielsweise könnten Seiten, die in regionalen Sprachen verfasst wurden, nicht verfügbare Schriftarten verwenden.
 
 **Logik für native Konvertierungen wiederholen**: Steuert Wiederholungsversuche zur PDF-Generierung, wenn der erste Konvertierungsversuch fehlgeschlagen ist
 
@@ -284,7 +285,7 @@ Die PDF-Konvertierung wird wiederholt, wenn die für den ersten Konvertierungsve
 
 ## Einstellungen für Guides ES4 Utilities-Dienste {#guides-es4-utilities-service-settings}
 
-Beim Erstellen eines Guides werden einige Ressourcen, wie z. B. die Guide-Definition, in den Guide eingebettet. Ressourcen können auch als Verweise auf Anwendungs-Assets vorhanden sein, die lokal oder auf dem AEM Forms-Server gespeichert sind. Der Guide enthält keine Daten und die Werte für den Absendeort und die Eingaben sind nicht für alle externen Umgebungen geeignet.
+Beim Erstellen eines Guides werden einige Ressourcen, wie z. B. die Guide-Definition, in den Guide eingebettet. Die Ressourcen können auch als Verweise auf Anwendungs-Assets vorhanden sein, die lokal oder auf dem AEM-Formular-Server gespeichert sind. Der Guide enthält keine Daten und die Werte für den Absendeort und die Eingaben sind nicht für alle externen Umgebungen geeignet.
 
 In den meisten Fällen reichen die standardmäßigen Render-Dienste für Guides aus, um einen Guide für die Verwendung in Workspace oder anderen externen Umgebungen vorzubereiten. (In der Ansicht „Dienste“ in Workbench ist der Standarddienst „Guides (System)/Processes/Render Guide - 1.0“.) Mit dem Guide Utilities-Dienst (`GuidesUtility`) können Sie, sofern erforderlich, einen benutzerdefinierten Prozess zum Rendern eines Guides erstellen.
 
@@ -325,7 +326,7 @@ Die Standardwerte für den Guide Utilities-Dienst unterstützen die meisten Anwe
 
 ### Verwenden von Guides in einem Server-Cluster {#using-guides-in-a-server-cluster}
 
-Das Rendern eines Guides in einem Server-Cluster, der keine Sticky-Sitzungen verwendet, schlägt mit einer NullPointerException fehl. Eine Guides-Anfrage verwendet sichere URLs, die standardmäßig für den Server eindeutig sind, auf dem sie generiert werden. In einem Cluster, der Sticky-Sitzungen verwendet, werden nach dem Eintreffen einer Anfrage bei einem Knoten im Cluster alle nachfolgenden Anfragen für die Sitzung oder die Benutzenden ausschließlich auf diesen Server weitergeleitet. In dem Fall ist alles in Ordnung. In einem Cluster, der keine Sticky-Sitzungen verwendet, können nachfolgende Anfragen auf einen beliebigen Server im Cluster treffen. Wenn der Server, an den die Anfragen gesendet werden, nicht der Original-Server ist, kann die sichere URL nicht aufgelöst werden.
+Das Rendern eines Guides in einem Server-Cluster, der keine Sticky-Sitzungen verwendet, schlägt mit einer NullPointerException fehl. Eine Guides-Anfrage nutzt sichere URLs, die standardmäßig für den Server, auf dem sie generiert werden, eindeutig sind. In einem Cluster, der Sticky-Sitzungen verwendet, werden nach dem Eintreffen einer Anfrage bei einem Knoten im Cluster alle nachfolgenden Anfragen für die Sitzung oder die Benutzenden ausschließlich auf diesen Server weitergeleitet. In dem Fall ist alles in Ordnung. In einem Cluster, der keine Sticky-Sitzungen verwendet, können nachfolgende Anfragen auf einen beliebigen Server im Cluster treffen. Wenn der Server, an den die Anfragen gesendet werden, nicht der Original-Server ist, kann die sichere URL nicht aufgelöst werden.
 
 Wenn Sie Guides in einem Server-Cluster verwenden, der keine Sticky-Sitzungen verwendet, stellen Sie den macKeySeed-Wert für den GuidesUtility-Service ein, halten Sie anschließend den Cluster an und starten Sie ihn wieder. 
 
@@ -341,7 +342,7 @@ Der JDBC-Dienst (`JdbcService`) ermöglicht Prozessen die Interaktion mit Datenb
 
 Folgende Einstellungen sind für den JDBC-Dienst verfügbar:
 
-**datasourceName:** Ein Zeichenfolgenwert, der den JNDI-Namen der Datenquelle darstellt, die zum Herstellen einer Verbindung mit dem Datenbank-Server zu verwenden ist. Die Datenquelle muss auf dem Anwendungsserver definiert sein, der als Host für den Forms-Server dient. Der Standardwert ist der JNDI-Name der Datenquelle für die AEM Forms-Datenbank.
+**datasourceName:** Ein Zeichenfolgenwert, der den JNDI-Namen der Datenquelle darstellt, die zum Herstellen einer Verbindung mit dem Datenbank-Server zu verwenden ist. Die Datenquelle muss auf dem Anwendungs-Server definiert sein, der als Host für den Formular-Server dient. Der Standardwert ist der JNDI-Name der Datenquelle für die AEM Forms-Datenbank.
 
 ## Einstellungen des JMS-Dienstes {#jms-service-settings}
 
@@ -424,13 +425,13 @@ Die folgenden Einstellungen sind für den Microsoft SharePoint-Konfigurationsdie
 
 **Aufgabenanwendung:** Aktiviert die Aufgabenfunktion in den mobilen Client-Anwendungen. Wenn diese Option ausgewählt ist, können die Benutzer von ihren mobilen Geräten aus auf ihre Aufgabenlisten zugreifen und Aufgaben erledigen.
 
-**Content Services-Anwendung:** Aktiviert die Content Services-Funktion in der mobilen Client-Anwendung. Diese Funktion ist nur für iOS verfügbar. Wenn diese Option aktiviert ist, können Benutzer von iPhone und iPad auf Dateien zugreifen, die auf dem WebDAV-Server Ihres Unternehmens gespeichert sind.
+**Content Services-Anwendung:** Aktiviert die Content Services-Funktion in der mobilen Client-Anwendung. Diese Funktion ist nur für iOS verfügbar. Wenn diese Option ausgewählt ist, können iPhone- und iPad-Benutzende auf Dateien zugreifen, die auf dem WebDAV-Server Ihres Unternehmens gespeichert sind.
 
 **Offline-Unterstützung:** Ermöglicht es den Benutzern, die mobilen Client-Anwendungen auch dann zu nutzen, wenn sie keine Verbindung zum Server haben ( beispielsweise, wenn sie sich außerhalb des Mobilfunkbereichs oder im Flugzeugmodus befinden). Benutzer müssen außerdem die Einstellung Offline-Support auf ihren Mobilgeräten aktivieren. Diese Funktion ist für Android- und iOS-Geräte verfügbar. Standardmäßig ist diese Funktion deaktiviert.
 
 >[!NOTE]
 >
->Wenn die Offline-Unterstützung aktiviert wurde und Sie sie deaktivieren, werden die Bereitstellungsprofile der Benutzer sofort aktualisiert oder sobald sie online sind. Wenn ein Benutzer offline gearbeitet hat, werden alle ausstehenden Aufgaben in ihre Aufgabenliste zurückgestellt und alle Elemente in ihrer Warteschlange, einschließlich ausstehender Formulare, Aufgaben und Formulare mit Überprüfungsfehlern, werden aus der Warteschlange gelöscht.
+>Wenn die Offline-Unterstützung aktiviert ist und Sie sie dann deaktivieren, werden die Bereitstellungsprofile der Benutzenden sofort (oder sobald sie online sind) aktualisiert. Wenn ein Benutzer offline gearbeitet hat, werden alle ausstehenden Aufgaben in ihre Aufgabenliste zurückgestellt und alle Elemente in ihrer Warteschlange, einschließlich ausstehender Formulare, Aufgaben und Formulare mit Überprüfungsfehlern, werden aus der Warteschlange gelöscht.
 
 **Android:** Ermöglicht Android-Geräten eine Verbindung zum Server herzustellen.
 
@@ -483,7 +484,7 @@ Folgende Einstellungen sind für den PDFG Config-Dienst (`PDFGConfigService`) ve
 
 **Konvertierungszeitlimit für Server:** Das maximale Zeitlimit für die Auftragskonvertierung (in Sekunden) für den Generate PDF-Service und den Distiller-Service. Diese Einstellung beschränkt den maximalen Konvertierungstimeout-Wert, der in der Datei „config.xml“ sowie auf den Administration Console-Seiten für PDF Generator angegeben werden kann. Der Standardwert ist 270.
 
-**Globales Server-Timeout:** Bei der Durchführung von PDF-Konvertierungen berücksichtigt ein Forms-Server die Timeout-Beschränkung. Konfigurieren Sie den Timeoutwert, um das Problem zu lösen.
+**Globales Zeitlimit für Server**: Bei der Durchführung von PDF-Konvertierungen berücksichtigt ein Formular-Server dieses Zeitlimit. Konfigurieren Sie den Timeoutwert, um das Problem zu lösen.
 
 **Auftragsoptionenpräfix**: Ein Präfix, das vom Generate PDF-Service verwendet wird, um den Auftragsoptionendateien, die vorübergehend für die Verwendung durch Acrobat Distiller erstellt werden, eine kurze Zeichenfolge voranzustellen. Der Standardwert ist pdfg.
 
@@ -613,7 +614,7 @@ Folgende Einstellungen sind für den Signature-Dienst verfügbar.
 
 **TSP Server Username:** Der Benutzername, falls vom Zeitstempelanbieter benötigt. Wird nur verwendet, wenn ein gültiger Wert für die URL angegeben wurde. Kein Standardwert.
 
-**TSP Server Password:** Das Kennwort für den obigen Benutzernamen, falls vom Zeitstempelanbieter benötigt. Wird nur verwendet, wenn gültige Werte für die URL und den Benutzernamen angegeben wurden. Kein Standardwert.
+**TSP Server Password:** Das Kennwort für den oben angegebenen Benutzernamen, falls vom Zeitstempelanbieter benötigt. Wird nur verwendet, wenn gültige Werte für die URL und den Benutzernamen angegeben wurden. Kein Standardwert.
 
 **Request Hash Algorithm:** Gibt den Hash-Algorithmus an, der beim Erstellen der Anforderung für den Zeitstempelanbieter zu verwenden ist. Der Standardwert ist SHA1.
 
@@ -663,7 +664,7 @@ Folgende Einstellungen sind für den Signature-Dienst verfügbar.
 
 **Online gehen**: Gibt an, ob für die Sperrprüfung online gegangen werden soll. Der Standardwert lautet true.
 
-**Ignorieren Sie die Zeiten thisUpdate und nextUpdate der Antwort:** Gibt an, ob die Zeiten &quot;thisUpdate&quot;und &quot;nextUpdate&quot;der Antwort ignoriert werden sollen, wodurch verhindert wird, dass sich diese Zeiten negativ auf die Gültigkeit der Antwort auswirken. Der Standardwert lautet false.
+**Update-Zeiten der Antwort ignorieren**: Gibt an, ob die Uhrzeiten „thisUpdate“ und „nextUpdate“ der Antwort ignoriert werden sollen, um so jegliche negative Auswirkung dieser Uhrzeiten auf die Gültigkeit der Antwort zu verhindern. Der Standardwert lautet false.
 
 **OCSPNoCheck-Erweiterung zulassen**: Gibt an, ob die Erweiterung „OCSPNoCheck“ im Signierzertifikat der Antwort zulässig ist. Der Standardwert lautet true.
 
@@ -705,7 +706,7 @@ In einer Cluster-Konfiguration skaliert sich die Batch-Größe für einen überw
 
 **Doppelte Dateinamen überschreiben:** Eine Boolean-Zeichenfolge, die angibt, ob der überwachte Ordner doppelte Ergebnisdateinamen überschreibt und ob beibehaltene Dokumente mit demselben Namen überschrieben werden sollen.
 
-**Aufbewahrungsordner:** Der Standardwert für den Aufbewahrungsordner. Dieser Ordner wird verwendet, um die Quelldateien in zu kopieren, wenn die Eingabe erfolgreich verarbeitet wurde. Dieser Wert kann ein leerer, relativer oder absoluter Pfad mit einem Dateimuster sein (wie für die Einstellung „Ergebnisordner“ beschrieben).
+**Aufbewahrungsordner:** Der Standardwert für den Aufbewahrungsordner. In diesen Ordner werden die Quelldateien im Falle einer erfolgreichen Verarbeitung der Eingabe kopiert. Dieser Wert kann ein leerer, relativer oder absoluter Pfad mit einem Dateimuster sein (wie für die Einstellung „Ergebnisordner“ beschrieben).
 
 **Fehlerordner:** Der Name des Ordners, in den die Dateien mit Fehlern kopiert werden. Dieser Wert kann ein leerer, relativer oder absoluter Pfad mit einem Dateimuster sein (wie für die Einstellung „Ergebnisordner“ beschrieben).
 
@@ -746,17 +747,17 @@ Wenn der Pfad nicht absolut, sondern relativ ist, wird der Ordner innerhalb des 
 
 Der Web Service-Dienst (`WebService`) ermöglicht Prozessen das Aufrufen von Webdienstvorgängen.
 
-Der Web Service-Dienst ermöglicht Prozessen das Aufrufen von Web-Dienst-Vorgängen. Beispielsweise kann ein Unternehmen einen Prozess integrieren, um Informationen wie Kontakt- und Kontodetails zu speichern und abzurufen, indem die angezeigten Webdienste eines Dienstleisters aufgerufen werden. Der Web Service-Dienst ruft einen angegebenen Web-Dienst auf und übergibt Werte für alle dazugehörigen Parameter. Anschließend speichert er die Rückgabewerte des Vorgangs in einer angegebenen Prozessvariablen.
+Der Web Service-Dienst ermöglicht Prozessen das Aufrufen von Web-Dienst-Vorgängen. Ein Unternehmen kann beispielsweise einen Prozess zum Speichern und Abrufen von Informationen wie Kontakt- und Kontodetails integrieren, indem die offengelegten Web-Dienste eines Dienstanbieters aufgerufen werden. Der Web Service-Dienst ruft einen angegebenen Web-Dienst auf und übergibt Werte für alle dazugehörigen Parameter. Anschließend speichert er die Rückgabewerte des Vorgangs in einer angegebenen Prozessvariablen.
 
 Der Web Service-Dienst interagiert mit Web-Diensten durch das Senden und Empfangen von SOAP-Nachrichten. Der Dienst unterstützt außerdem das Senden von MIME-, MTOM- und SwaRef-Anlagen zusammen mit SOAP-Nachrichten unter Verwendung des Protokolls „WS-Attachment“. Die Interaktionen des Web Service-Dienstes sind mit SAP-Systemen und .NET-Web-Diensten kompatibel.
 
 Folgende Einstellungen sind für den Web Service-Dienst verfügbar:
 
-**Keystore**: Der vollständige Pfad der Keystore-Datei mit dem privaten Schlüssel, der für die Authentifizierung verwendet werden soll. Der Forms-Server muss auf die Datei zugreifen können.
+**Keystore**: Der vollständige Pfad der Keystore-Datei mit dem privaten Schlüssel, der für die Authentifizierung verwendet werden soll. Der Formular-Server muss auf die Datei zugreifen können.
 
 **Keystore-Kennwort**: Das Kennwort für die Keystore-Datei.
 
-**Keystore-Typ**: Der Typ des Keystores. Geben Sie keinen Wert an, um den standardmäßigen Keystore-Typ zu verwenden, der für die JVM konfiguriert ist, auf der der Forms-Server ausgeführt wird. Geben Sie andernfalls einen der folgenden Werte an:
+**Keystore-Typ**: Der Typ des Keystores. Geben Sie keinen Wert an, wenn Sie den Standard-Keystore-Typ verwenden möchten, der für die JVM konfiguriert ist, die den Formular-Server ausführt. Geben Sie andernfalls einen der folgenden Werte an:
 
 * jks
 * pkcs12
@@ -767,7 +768,7 @@ Folgende Einstellungen sind für den Web Service-Dienst verfügbar:
 
 **Trust Store-Kennwort**: Das Kennwort für die TrustStore-Datei.
 
-**Trust Store-Typ**: Der Typ des TrustStores. Geben Sie keinen Wert an, um den standardmäßigen Keystore-Typ zu verwenden, der für die JVM konfiguriert ist, auf der der Forms-Server ausgeführt wird. Geben Sie andernfalls einen der folgenden Werte an:
+**Trust Store-Typ**: Der Typ des TrustStores. Geben Sie keinen Wert an, wenn Sie den Standard-Keystore-Typ verwenden möchten, der für die JVM konfiguriert ist, die den Formular-Server ausführt. Geben Sie andernfalls einen der folgenden Werte an:
 
 * jks
 * pkcs12
@@ -780,11 +781,11 @@ Der XSLT Transformation-Dienst (`XSLTService`) ermöglicht Prozessen das Anwende
 
 Folgende Einstellung ist für den XSLT Transformation-Dienst verfügbar:
 
-**Factory-Name**: Der voll qualifizierte Name der Java-Klasse, die für die Durchführung von XSLT-Transformationen verwendet werden soll. Wenn kein Wert angegeben ist, wird die Standardfactory verwendet, die in der Java Virtual Machine konfiguriert ist, auf der der Forms-Server ausgeführt wird.
+**Factory-Name**: Der voll qualifizierte Name der Java-Klasse, die für die Durchführung von XSLT-Transformationen verwendet werden soll. Wenn kein Wert angegeben ist, wird die Standard-Factory verwendet, die in der Java Virtual Machine konfiguriert ist, in der der Formular-Server ausgeführt wird.
 
-## Ändern von Sicherheitseinstellungen für einen Dienst {#modifying-security-settings-for-a-service}
+## Ändern der Sicherheitseinstellungen für einen Dienst {#modifying-security-settings-for-a-service}
 
-Mit Forms Server können Sie Sicherheitseinstellungen für jeden Dienst konfigurieren, sodass Sie eine differenzierte Zugriffskontrolle für einzelne Dienste konfigurieren können.
+Der Formular-Server ermöglicht Ihnen das Konfigurieren der Sicherheitseinstellungen für jeden einzelnen Dienst, wodurch Sie eine fein abgestufte Zugriffssteuerung auf Dienstebene konfigurieren können.
 
 Standardsicherheitsprofile, die installiert sind, können Sie so konfigurieren, dass sie den Anforderungen Ihres Systems entsprechen. Jedem Sicherheitsprofil ist eine Domain zugeordnet und es wird entweder auf Benutzerebene oder auf Gruppenebene erstellt.
 
@@ -825,7 +826,7 @@ Standardsicherheitsprofile, die installiert sind, können Sie so konfigurieren, 
    * **SUPERVISOR_PERM:** Anzeigen der Prozessinstanzdaten für einen Dienst, der aus einem Prozess erstellt wurde
    * **START_STOP_PERM:** Starten und Beenden eines Dienstes
    * **ADD_REMOVE_ENDPOINTS_PERM:** Hinzufügen, Entfernen und Ändern von Endpunkten für einen Dienst
-   * **CREATE_VERSION_PERM:** So erstellen Sie eine Version des Dienstes
+   * **CREATE_VERSION_PERM:** Erstellen einer neuen Version des Dienstes
    * **DELETE_VERSION_PERM:** Löschen einer Version des Dienstes
    * **MODIFY_VERSION_PERM:**&#x200B;Ändern einer Version des Dienstes
    * **READ_PERM:** Anzeigen des Dienstes

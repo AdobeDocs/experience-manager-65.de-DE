@@ -1,6 +1,6 @@
 ---
-title: Design-Anpassung
-description: Erfahren Sie, wie Sie das Design der AEM Forms-Anwendung anpassen. Sie können den HTML-Code und die CSS-Datei anpassen, um ein unternehmensspezifisches Erscheinungsbild zu erhalten.
+title: Anpassung des Designs
+description: Erfahren Sie, wie Sie das Design der AEM Forms-Anwendung anpassen können. Sie können den HTML-Code und die CSS-Datei anpassen, um ein organisationsspezifisches Look-and-Feel zu ermöglichen.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,17 +10,17 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
 # Design-Anpassung {#theme-customization}
 
-Sie können den HTML-Code und die CSS-Datei anpassen, um der AEM Forms-App ein unverwechselbares, organisationsspezifisches Erscheinungsbild zu geben. Sie können beispielsweise die Hintergrundfarbe und die Höhe von Aufgaben oder Startpunkten ändern. Das folgende Beispiel enthält Anweisungen zum Ändern:
+Sie können den HTML-Code und die CSS-Datei anpassen, um der AEM Forms-App ein unverwechselbares, organisationsspezifisches Erscheinungsbild zu geben. Sie können beispielsweise die Hintergrundfarbe und die Höhe von Aufgaben oder Startpunkten ändern. Das folgende Beispiel enthält hierzu Anweisungen:
 
 * Anweisungen statt Beschreibungen anzeigen
 * Anzahl der Anzeigewege
-* Farbverlauf mit Hintergrundfarbe
+* Hintergrundverlaufsfarbe
 
 ## Schritte {#steps}
 
@@ -80,4 +80,4 @@ Sie können den HTML-Code und die CSS-Datei anpassen, um der AEM Forms-App ein u
 1. Speichern Sie die Änderungen und schließen Sie die Datei `_style.css`.
 1. Öffnen Sie die AEM Forms-App.
 
-   Das AEM Forms-Programm zeigt jetzt Anweisungen anstelle von Beschreibungen an.
+   Die AEM Forms-App zeigt jetzt Anweisungen anstelle einer Beschreibung an.

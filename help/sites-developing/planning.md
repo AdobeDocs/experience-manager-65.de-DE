@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '979'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
 # Planung{#planning}
 
-In diesem Dokument wird beschrieben, was Sie für die Planung Ihres Tests wissen müssen. Darüber hinaus sollten Sie diese Fragen beantworten, bevor Sie Ihre Tests durchführen:
+In diesem Dokument wird beschrieben, was Sie für die Planung Ihres Tests wissen müssen. Außerdem sollten Sie die folgenden Fragen beantworten, bevor Sie Ihre Tests durchführen:
 
 * [Welche Testumgebungen sind erforderlich?](/help/sites-developing/test-environments.md)
 * [Definieren von Testfällen](/help/sites-developing/test-cases.md)
@@ -24,35 +24,35 @@ In diesem Dokument wird beschrieben, was Sie für die Planung Ihres Tests wissen
 
 ## Bevor Sie beginnen {#before-you-start}
 
-Bevor Sie mit der eigentlichen Analyse und Definition von Tests beginnen, lesen Sie die folgenden Informationen durch:
+Bevor Sie mit der eigentlichen Analyse und Definition der Tests beginnen, lesen Sie die folgenden Informationen durch:
 
 **AEM-Architektur**: Lesen Sie „Grundlegende Konzepte“, um sich mit der Architektur und den Grundprinzipien von AEM vertraut zu machen.
 
 **Dokumentation**: In der Dokumentation und den Anleitungsartikeln erhalten Sie weitere Informationen.
 
-**Grundlegende Prinzipien des Testens**: Sie sollten die Grundlagen von Softwaretests und Qualitätssicherung kennen. Vorzugsweise sollten Sie Erfahrung mit dem Testen von Projekten haben.
+**Grundlegende Prinzipien des Testens**: Sie sollten die Grundlagen von Softwaretests und Qualitätssicherung kennen. Vorzugsweise sollten Sie bereits Erfahrung mit dem Testen von Projekten haben.
 
-Es gibt viele Websites, Bücher und Kurse, die sich mit solchen Grundsätzen befassen, und deshalb werden sie in diesem Dokument nicht ausführlich behandelt.
+Es gibt viele Websites, Bücher und Kurse, die solche Prinzipien behandeln. Deshalb werden sie in diesem Dokument nicht weiter besprochen.
 
-**Zu vermeidende Annahmen** - Die größte Annahme ist, dass Ihre Website täglich Millionen von Anfragen bearbeiten muss. Unter bestimmten Umständen mag dies wahr sein, kann aber nicht angenommen werden.
+**Zu vermeidende Annahmen**: Die größte Annahme ist, dass Ihre Website täglich Millionen von Anfragen bedienen muss. Unter bestimmten Umständen kann dies zwar zutreffen, Sie sollten es jedoch nicht grundsätzlich voraussetzen.
 
-Zukünftige Werte können zwar nicht 100 % genau vorausgesagt werden, aber Sie erhalten einen guten Anhaltspunkt, indem Sie Ihre aktuelle Website und den Besucher-Traffic beobachten. Sie können dann Schätzungen abhängig von dem Faktor machen, mit dem Sie erwarten / hoffen, dass der Traffic zunehmen wird.
+Zukünftige Werte können zwar nicht 100 % genau vorausgesagt werden, aber Sie erhalten einen guten Anhaltspunkt, indem Sie Ihre aktuelle Website und den Besucher-Traffic beobachten. Sie können dann anhand des Faktors, um den der Besucher-Traffic erwartungsgemäß/hoffentlich wachsen wird, Schätzungen anstellen.
 
 **Verpflichtung zur Qualität**: Es ist äußerst wichtig, dass jeder, der am Test teilnimmt, neutral bleibt und nur die Ergebnisse der durchgeführten Tests berichtet.
 
 Es liegt in der Verantwortung des Projekt-Managers, abhängig von den Ergebnissen Handlungen zu bestimmen und zu veranlassen.
 
-**Werden Sie involviert** - Obwohl es in der Verantwortung des Projektmanagers liegt, sicherzustellen, dass alle Parteien umfassend an allen Sitzungen (Status, Workshops usw.) beteiligt sind, sollten Sie auch versuchen, so früh wie möglich am Projektzyklus beteiligt zu werden, einschließlich der Prozesse zur Informationserfassung und Anforderungsanalyse.
+**Sich einbringen**: Obwohl es in der Verantwortung des bzw. der Projektverantwortlichen liegt, sicherzustellen, dass alle Betroffenen an allen Meetings beteiligt sind (Status, Workshops usw.), sollten auch Sie versuchen, sich so früh wie möglich in den Projektzyklus einzubinden. Dazu gehören Informationssammlung und Anforderungsanalyse.
 
 **Den Kunden einbinden**: In ähnlicher Weise sollten Sie auch versuchen, beim Definieren Ihrer Testfälle und des Testplans nach Möglichkeit den Kunden einzubeziehen.
 
-## Testtypen {#types-of-tests}
+## Testarten {#types-of-tests}
 
-Es gibt verschiedene Standardklassifizierungen von Tests, die zum Testen eines AEM-Projekts geeignet sind. Sie sollten mit diesen vertraut sein, um zu entscheiden, welche Sie verwenden:
+Es gibt verschiedene Standardklassifikationen von Tests, die sich zum Testen von AEM-Projekten eignen. Sie sollten mit ihnen vertraut sein, um zu entscheiden, welche Sie verwenden möchten:
 
 >[!NOTE]
 >
->Diese werden in ihrer chronologischen Reihenfolge ihrer Anwendung aufgelistet.
+>Sie werden hier in ihrer chronologischen Anwendungsreihenfolge aufgeführt.
 
 **Komponententests**: Tests werden (in der Regel) vom Entwicklungs-Team durchgeführt, um sicherzustellen, dass sich die einzelnen Elemente korrekt verhalten (wenn auch isoliert).
 
@@ -60,9 +60,9 @@ Es gibt verschiedene Standardklassifizierungen von Tests, die zum Testen eines A
 
 **Smoke-Tests**: Hierbei handelt es sich um Schnelltests, um zu überprüfen, ob die Software ausgeführt wird und allgemeine Funktionen verfügbar sind. Es werden keine Detailtests durchgeführt.
 
-**Funktionstests**: Diese Tests werden verwendet, um die Funktionalität der Software zu testen. Eine Reihe von Tests soll alle Funktionsdetails abdecken, mit erwarteten und unerwarteten bzw. fehlerhaften Eingaben.
+**Funktionstests**: Diese Tests werden verwendet, um die Funktionalität der Software zu testen. Es wird eine Testreihe konzipiert, die alle Funktionsdetails mit vorgesehenen, nicht vorgesehenen und/oder fehlerhaften Eingaben abdeckt.
 
-Black-Box-Tests sind Funktionstests einer kompletten Einheit/Komponente/eines Moduls, die ohne Kenntnis der internen Funktionsweise des betreffenden Elements durchgeführt werden.
+Black-Box-Tests sind Funktionsprüfungen einer vollständigen Einheit/Komponente bzw. eines Moduls und werden ohne Kenntnis der internen Funktionsweise des betreffenden Elements durchgeführt.
 
 **Systemtests**: Hierbei wird das gesamte System getestet, nachdem es vollständig auf einer geeigneten Plattform integriert und installiert wurde.
 
@@ -70,23 +70,23 @@ Sie testen die Funktionalität nach dem Black-Box-Prinzip.
 
 **Leistungstests**: Leistungstests sind beim Testen von AEM äußerst wichtig.
 
-Sie dienen zur Veranschaulichung der Leistung unter verschiedenen Bedingungen:
+Sie zeigen die Leistung unter verschiedenen Bedingungen auf:
 
 * Normal
 
-  Bedingungen, die die Site in etwa 90 % der Zeit erleben wird. Wenn beispielsweise nur ein Teil der Autoren das System verwendet.
+  Bedingungen, die für die Site in etwa 90 % aller Fälle gegeben sind. Beispielsweise verwendet nur ein Teil der Autorinnen und Autoren das System.
 
 * Spitze
 
-  Bedingungen, die aufgrund besonderer Umstände für eine verhältnismäßig kurze Zeit gelten, z. B. wenn alle Autoren das System gleichzeitig verwenden oder wenn neue Inhalte veröffentlicht werden und eine größere Anzahl von Besuchern Ihre Site anzeigt.
+  Bedingungen, die während relativ kurzer Zeitspannen aufgrund besonderer Umstände auftreten, zum Beispiel, wenn alle Autorinnen und Autoren gleichzeitig das System verwenden oder wenn neue Inhalte veröffentlicht werden und eine größere Anzahl von Besuchenden Ihre Site nutzt.
 
 * Extrem
 
-  Kann verwendet werden, um die Leistungsvorhersage zu simulieren, wenn neue, extrem interessante Inhalte auf Ihrer Website veröffentlicht werden. Dann kann ein extremer Höhepunkt zu sehen sein - auch wenn dies möglicherweise nicht immer vollständig vorhersehbar ist.
+  Kann verwendet werden, um die prognostizierte Leistung zu simulieren, wenn neue, besonders interessante Inhalte auf Ihrer Website veröffentlicht werden. In diesem Fall kann eine extreme Spitze auftreten, dies ist jedoch nicht immer vorhersehbar.
 
-  Diese Umstände treten manchmal auf, wenn Eintrittskarten für bestimmte Veranstaltungen zur Verfügung gestellt oder zum ersten Mal eine Website veröffentlicht wird, die viel erwartet wird.
+  Solche Situationen können auftreten, wenn etwa Karten für bestimmte Ereignisse in den Verkauf gehen oder eine lang erwartete Website zum ersten Mal live geschaltet wird.
 
-Die Ergebnisse werden dann zur Abstimmung der Anwendung verwendet.
+Die Ergebnisse werden dann verwendet, um die Anwendung zu optimieren.
 
 **Belastungstest**: Belastungstests werden durchgeführt, um zu prüfen, wie sich eine Komponente oder Anwendung unter Extrembedingungen verhält. Insbesondere werden diese Tests verwendet, um zu zeigen, wie sich das Verhalten verschlechtert, wenn das Element fehlschlägt.
 
@@ -96,20 +96,20 @@ Regressionstests eignen sich gut für Automatisierung (sofern möglich), um sich
 
 **Akzeptanztests**: Akzeptanztests sind eine spezielle Kategorie, da sie verwendet werden, um die Akzeptanz des Projekts beim Kunden zu prüfen.
 
-Die Liste der Annahmeprüfungen kann eine Kombination von Tests aus den oben genannten Kategorien enthalten und wird ausgewählt, um zu überprüfen, ob das Projekt die Anforderungen des Kunden erfüllt
+Die Akzeptanztests umfassen möglicherweise einige Tests aus den oben aufgeführten Kategorien. Sie werden ausgewählt, um sicherzustellen, dass das Projekt die Kundenanforderungen erfüllt.
 
-Siehe [Akzeptanz und Abnahme](/help/sites-developing/acceptance-signoff.md) für weitere Details.
+Weitere Informationen finden Sie unter [Akzeptanz und Abnahme](/help/sites-developing/acceptance-signoff.md).
 
 ## Erste Schritte {#getting-started}
 
-Bevor Sie mit Ihren detaillierten Testfällen und Testplänen beginnen, können Sie:
+Bevor Sie mit Ihren detaillierten Testfällen und Ihrem Testplan beginnen, können Sie Folgendes tun:
 
-**Definieren der Ziele**: Definieren Sie Ihre allgemeinen Ziele, die im Laufe der Tests als Ausgangspunkt für die Feinabstimmung dienen. Sie haben folgende Möglichkeiten:
+**Definieren der Ziele**: Definieren Sie Ihre allgemeinen Ziele, die im Laufe der Tests als Ausgangspunkt für die Feinabstimmung dienen. Sie sollten Folgendes tun:
 
-* Testen Sie die Funktionalität gemäß der detaillierten Anforderungsspezifikation.
-* Testleistung gemäß [Zielmetriken](/help/managing/best-practices-further-reference.md#key-performance-indicators-and-target-metrics).
+* Testen Sie die Funktion anhand der detaillierten Anforderungsspezifikationen.
+* Testen Sie die Leistung anhand der [Zielmetriken](/help/managing/best-practices-further-reference.md#key-performance-indicators-and-target-metrics).
 
-unter anderem.
+und andere.
 
 **Sammeln von Traffic-Statistiken von der bestehenden Website**: Diese Informationen können aus den Protokolldateien extrahiert werden. Weitere Informationen finden Sie unter „Leistungsüberwachung“.
 
@@ -119,4 +119,4 @@ Diese Zahlen geben einen Überblick über den aktuellen Traffic (Menge und Verte
 
 **Bestätigen von Zielmetriken**: Metriken werden zum Festlegen quantitativer Messwerte für die Qualität der Website verwendet, da sie Leistungsziele darstellen.
 
-Sie sollten zu Beginn des Projekts gemeinsam mit dem Kunden definiert werden. Siehe [Zielmetriken](/help/sites-developing/planning.md) für weitere Informationen.
+Sie sollten zu Beginn des Projekts gemeinsam mit der Kundschaft definiert werden. Weitere Informationen finden Sie unter [Zielmetriken](/help/sites-developing/planning.md).

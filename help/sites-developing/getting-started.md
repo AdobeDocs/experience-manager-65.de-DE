@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Die Tutorial-Implementierung nutzt eine Vielzahl leistungsstarker Funktionen von
 * [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
 * [Bearbeitbare Vorlagen](/help/sites-developing/page-templates-editable.md)
 
-Führen Sie das Tutorial durch, bevor Sie sich mit den oben genannten Konzepten im Detail befassen.
+Wir empfehlen Ihnen, das Tutorial durchzugehen, bevor Sie sich mit diesen Konzepten ausführlicher beschäftigen.
 
 ## Nächste Schritte {#next-steps}
 

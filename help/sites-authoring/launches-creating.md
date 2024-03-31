@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1039'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -54,18 +54,18 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
 
 1. Im Schritt **Quelle auswählen** müssen Sie **Seiten hinzufügen**. Sie können mehrere Seiten auswählen, wobei jeweils der Pfad angegeben werden muss:
 
-   * Navigieren Sie zur erforderlichen Position.
+   * Navigieren Sie zum gewünschten Speicherort.
    * Wählen Sie die Quellseite(n) aus und bestätigen Sie dies durch ein Häkchen.
 
    Wiederholen Sie dies nach Bedarf.
 
-   ![Quelle auswählen und Seiten hinzufügen](assets/chlimage_1-225.png)
+   ![Auswählen von Quellen und Hinzufügen von Seiten](assets/chlimage_1-225.png)
 
    >[!NOTE]
    >
-   >Um Seiten und/oder Verzweigungen zu einem Launch hinzuzufügen, müssen sie sich auf einer Site befinden, d. h. unterhalb eines gemeinsamen Stammverzeichnisses der obersten Ebene.
+   >Um Seiten und/oder Verzweigungen zu einem Launch hinzuzufügen, müssen diese sich auf einer Site befinden, d. h. unterhalb eines gemeinsamen Stammverzeichnisses der obersten Ebene.
    >
-   >Wenn eine Site Sprachstämme unterhalb der obersten Ebene enthält, müssen die Seiten und Verzweigungen für einen Launch unter einem gemeinsamen Sprachstamm liegen.
+   >Wenn eine Site Sprachstämme unterhalb der obersten Ebene enthält, müssen sich die Seiten und Verzweigungen für einen Launch unterhalb eines gemeinsamen Sprachstamms befinden.
    >
    >Wenn Sie versuchen, einen Launch mit einer übergeordneten oder untergeordneten Seite im Quellpfad zu erstellen, schlägt er fehl und gibt den Fehler „Ziel existiert bereits unter :Pfad der Seite“ zurück.
 
@@ -77,7 +77,7 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
 
    Fahren Sie mit **Weiter** fort.
 
-   ![Festlegen, ob Seiten eingeschlossen werden sollen](assets/chlimage_1-226.png)
+   ![Geben Sie an, ob Seiten mit eingeschlossen werden sollen](assets/chlimage_1-226.png)
 
 1. Im Schritt **Eigenschaften** des Assistenten können Sie Folgendes festlegen:
 
@@ -90,7 +90,7 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
 
    * **Launch-Datum**: Das Datum und die Uhrzeit für die Aktivierung der Launch-Kopie (abhängig von der Markierung **Produktionsbereit**. Siehe [Launches: Reihenfolge von Ereignissen](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
-   ![Eigenschaften angeben](assets/chlimage_1-227.png)
+   ![Angeben von Eigenschaften](assets/chlimage_1-227.png)
 
 1. Verwenden Sie **Erstellen**, um den Vorgang abzuschließen und den neuen Launch zu erstellen. Im Bestätigungsdialogfeld werden Sie gefragt, ob Sie den Launch sofort öffnen möchten.
 
@@ -101,20 +101,20 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
 
 ### Erstellen von Launches mit einer neuen Vorlage {#create-launch-with-new-template}
 
-Wann [Erstellen eines Launches](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) Sie können auswählen, ob eine neue Vorlage mit der Option verwendet werden soll: **Verwenden einer neuen Vorlage zum Ersetzen der Seite**
+Wenn Sie [einen Launch erstellen](/help/sites-authoring/launches-creating.md#create-launch-with-new-template), können Sie auswählen, ob eine neue Vorlage mit der folgenden Option verwendet werden soll: **Verwenden einer neuen Vorlage zum Ersetzen der Seite**.
 
 >[!CAUTION]
 >
 >Diese Option ist nur verfügbar, wenn ein Launch über die Konsole **Sites** erstellt wird. Sie steht nicht zur Verfügung, wenn ein Launch über die Konsole **Launches** erstellt wird.
 
-![Neue Vorlage verwenden, um die Seite zu ersetzen](assets/chlimage_1-228.png)
+![Verwenden einer neuen Vorlage, um die Seite zu ersetzen](assets/chlimage_1-228.png)
 
 Die Auswahl dieser Option bewirkt Folgendes:
 
 * die anderen verfügbaren Optionen werden aktualisiert,
 * ein neuer Schritt wird einbezogen, mit dem Sie die gewünschte Vorlage auswählen können.
 
-![Vorlage auswählen](assets/chlimage_1-229.png)
+![Auswählen der Vorlage](assets/chlimage_1-229.png)
 
 >[!CAUTION]
 >
@@ -137,11 +137,11 @@ Das Erstellen eines verschachtelten Launches über die Konsole **Launches** ist 
 1. Wählen Sie in der Konsole **Launches** die Option **Erstellen** aus.
 1. Wählen Sie **Seiten hinzufügen** aus und navigieren Sie zur Launch-Verzweigung, indem Sie `/content/launches` im Filter angeben. Wählen Sie den gewünschten Launch aus und bestätigen Sie mit **Auswählen**:
 
-   ![Launch auswählen](assets/chlimage_1-230.png)
+   ![Auswählen des Launches](assets/chlimage_1-230.png)
 
 1. Klicken Sie auf **Weiter**, um fortzufahren. Geben Sie die **Eigenschaften** dann wie bei jedem anderen Launch an.
 
-   ![Eigenschaften angeben](assets/chlimage_1-231.png)
+   ![Angeben von Eigenschaften](assets/chlimage_1-231.png)
 
 #### Erstellen von verschachtelten Launches: Konsole „Sites“  {#creating-a-nested-launch-sites-console}
 

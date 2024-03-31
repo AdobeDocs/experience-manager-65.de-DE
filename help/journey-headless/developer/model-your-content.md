@@ -5,7 +5,7 @@ exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
 source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1795'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ Dieser Artikel baut auf diesen Grundlagen auf, sodass Sie verstehen, wie Sie Ihr
 
 *Die Welt da draußen ist groß und schlecht*.
 
-Vielleicht, aber vielleicht auch nicht. Es ist sicherlich eine überwältigende Mehrheit ***kompliziert*** Welt da draußen. Mit der Datenmodellierung wird eine vereinfachte Darstellung eines sehr (sehr) kleinen Unterabschnitts unter Verwendung der spezifischen Informationen definiert, die für einen bestimmten Zweck benötigt werden.
+Vielleicht, aber vielleicht auch nicht. Es ist sicherlich eine überwältigende Mehrheit ***kompliziert*** Welt da draußen. Die Datenmodellierung wird verwendet, um eine vereinfachte Darstellung eines sehr (sehr) kleinen Unterabschnitts zu definieren, wobei die spezifischen Informationen verwendet werden, die für einen bestimmten Zweck benötigt werden.
 
 >[!NOTE]
 >
@@ -158,7 +158,7 @@ Inhaltsfragmentmodelle bieten verschiedene Mechanismen, mit denen Sie die Strukt
 Ein Inhaltsfragmentmodell beschreibt eine Entität.
 
 >[!NOTE]
->Aktivieren Sie die Funktion &quot;Inhaltsfragment&quot;im Konfigurationsbrowser, damit Sie Modelle erstellen können.
+>Aktivieren Sie die Funktionalität für Inhaltsfragmente im Konfigurations-Browser, um Modelle erstellen zu können.
 
 >[!TIP]
 >
@@ -206,7 +206,7 @@ Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglich
 
 ### Erstellen von Inhaltsfragmentmodellen {#creating-content-fragment-models}
 
-Zunächst müssen Sie Inhaltsfragmentmodelle für Ihre Site aktivieren. Diese Aktivierung erfolgt im Konfigurationsbrowser unter Tools > Allgemein > Konfigurationsbrowser. Sie können entweder den globalen Eintrag konfigurieren oder eine Konfiguration erstellen. Zum Beispiel:
+Zunächst müssen Sie Inhaltsfragmentmodelle für Ihre Site aktivieren. Diese Aktivierung erfolgt im Konfigurations-Browser unter „Tools“ > „Allgemein“ > „Konfigurations-Browser“. Sie können entweder den globalen Eintrag konfigurieren oder eine Konfiguration erstellen. Zum Beispiel:
 
 ![Konfiguration definieren](assets/cfm-configuration.png)
 
@@ -214,7 +214,7 @@ Zunächst müssen Sie Inhaltsfragmentmodelle für Ihre Site aktivieren. Diese Ak
 >
 >Siehe „Zusätzliche Ressourcen – Inhaltsfragmente im Konfigurations-Browser“
 
-Anschließend können die Inhaltsfragmentmodelle erstellt und die Struktur definiert werden. Dies kann unter Tools > Assets > Inhaltsfragmentmodelle erfolgen. Zum Beispiel:
+Anschließend können die Inhaltsfragmentmodelle erstellt und die Struktur definiert werden. Dies kann unter „Tools“ > „Assets“ > „Inhaltsfragmentmodelle“ erfolgen. Zum Beispiel:
 
 ![Inhaltsfragmentmodell](assets/cfm-model.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Testen der globalisierten Site-Struktur von We.Retail
-description: Erfahren Sie, wie Sie mit We.Retail eine globalisierte Site-Struktur in Adobe Experience Manager ausprobieren.
+description: Erfahren Sie, wie Sie mit We.Retail eine globalisierte Site-Struktur in Adobe Experience Manager testen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ We.Retail wurde mit einer globalisierten Site-Struktur erstellt, die eine Sprach
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
-1. Für jede Sprachübersetzung wird ein Projekt erstellt. Anzeigen unter **Navigation > Projekte**.
+1. Für jede Sprachübersetzung wird ein Projekt erstellt. Sie können sie unter **Navigation > Projekte** einsehen.
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
@@ -69,4 +69,4 @@ We.Retail wurde mit einer globalisierten Site-Struktur erstellt, die eine Sprach
 
 ## Weitere Informationen {#further-information}
 
-Weitere Informationen finden Sie im Authoring-Dokument . [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md) für vollständige technische Details.
+Weitere Informationen, wie z. B. vollständige technische Details, finden Sie unter [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md).

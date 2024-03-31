@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 82%
+ht-degree: 99%
 
 ---
 
@@ -46,7 +46,7 @@ Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführe
 
 Diese Migration ist nicht erforderlich, wenn Sie ein Upgrade von AEM 6.3 durchführen. Für Versionen älter als 6.3 bietet Adobe ein Tool, mit dem Sie das Repository in die neue Version von Oak Segment Tar von AEM 6.3 migrieren können. Es wird als Teil des Schnellstartpakets bereitgestellt und ist für alle Upgrades, die TarMK verwenden, obligatorisch. Upgrades für Umgebungen, die MongoMK verwenden, erfordern keine Repository-Migration. Weitere Informationen zu den Vorteilen des neuen Segment-TAR-Formats finden Sie in den [häufig gestellten Fragen zur Migration zu Oak Segment Tar](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
 
-Die tatsächliche Migration wird mithilfe der standardmäßigen AEM Schnellstart-JAR-Datei durchgeführt, die mit einer neuen `-x crx2oak` -Option, die das CRX2OAK-Tool ausführt, um die Aktualisierung zu vereinfachen und sie stabiler zu machen.
+Die tatsächliche Migration wird mithilfe der standardmäßigen quickstart-JAR-Datei für AEM durchgeführt, und zwar mit der neuen Option `-x crx2oak`, mit der das crx2oak-Tool ausgeführt wird, um die Aktualisierung einfacher und zuverlässiger zu machen.
 
 >[!NOTE]
 >
@@ -114,9 +114,9 @@ Dabei werden `<<YOUR_PROFILE>>` und `<<ADDITIONAL_FLAGS>>` durch das Profil und 
 
 **Möglicherweise benötigen Sie auch zusätzliche Schalter für folgende Szenarien:** 
 
-* Wenn Sie die Aktualisierung auf einem Windows-System durchführen, bei dem die Java-Speicherzuordnung nicht ordnungsgemäß durchgeführt wird, fügen Sie die `--disable-mmap` -Parameter auf den -Befehl.
+* Wenn Sie das Upgrade auf einem Windows-System durchführen, auf dem die Java-Speicherzuordnung nicht korrekt durchgeführt wird, fügen Sie dem Befehl den Parameter `--disable-mmap` hinzu.
 
-Weitere Informationen über die Verwendung des crx2oak-Tools finden Sie unter „Verwenden des [CRX2Oak Migration Tools](/help/sites-deploying/using-crx2oak.md)“. crx2oak helper JAR kann bei Bedarf manuell aktualisiert werden, indem die Datei manuell durch neuere Versionen ersetzt wird, nachdem die Schnellstart-Datei entpackt wurde. Der Speicherort im AEM Installationsordner ist: `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. Die neueste Version des CRX2Oak-Migrations-Tools kann vom Adobe-Repository hier heruntergeladen werden: [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
+Weitere Informationen über die Verwendung des crx2oak-Tools finden Sie unter „Verwenden des [CRX2Oak Migration Tools](/help/sites-deploying/using-crx2oak.md)“. crx2oak helper JAR kann bei Bedarf manuell aktualisiert werden, indem die Datei manuell durch neuere Versionen ersetzt wird, nachdem die Schnellstart-Datei entpackt wurde. Sie finden die Datei im AEM-Installationsordner unter: `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. Die neueste Version des CRX2Oak-Migrations-Tools kann vom Adobe-Repository hier heruntergeladen werden: [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
 Wenn die Migration erfolgreich abgeschlossen wurde, wird das Tool mit einem Exit Code von null beendet. Beachten Sie zusätzlich etwaige WARN- und ERROR-Meldungen in der Datei `upgrade.log` im AEM-Installationsverzeichnis unter `crx-quickstart/logs`. Diese Meldungen führen Fehler auf, die nicht schwerwiegend sind und bei der Migration auftraten.
 
@@ -128,11 +128,11 @@ Prüfen Sie die Konfigurationsdateien unter dem Ordner `crx-quickstart/install`.
 
 ## Fehlerbehebung bei Migrationsproblemen {#troubleshooting-migration-issues}
 
-Überspringen Sie diesen Abschnitt, wenn Sie ein Upgrade von 6.3 durchführen. Während die bereitgestellten crx2oak-Profile den Anforderungen der meisten Kunden entsprechen sollten, sind manchmal zusätzliche Parameter erforderlich. Wenn während der Migration ein Fehler auftritt, sind für manche Aspekte Ihrer Umgebung möglicherweise zusätzliche Konfigurationsoptionen nötig. Wenn dies der Fall ist, werden Sie wahrscheinlich auf den folgenden Fehler stoßen:
+Überspringen Sie diesen Abschnitt, wenn Sie ein Upgrade von 6.3 durchführen. Während die mitgelieferten crx2oak-Profile die Anforderungen der meisten Kundinnen und Kunden erfüllen sollten, gibt es Fälle, in denen zusätzliche Parameter erforderlich sind. Wenn während der Migration ein Fehler auftritt, sind für manche Aspekte Ihrer Umgebung möglicherweise zusätzliche Konfigurationsoptionen nötig. Wenn dies der Fall ist, werden Sie wahrscheinlich auf den folgenden Fehler stoßen:
 
 **Checkpoints werden nicht kopiert, da kein externer Datenspeicher angegeben wurde. Dadurch wird das gesamte Repository beim ersten Start neu indiziert. Verwenden Sie „--skip-checkpoints“, um die Migration zu erzwingen, oder finden Sie weitere Informationen unter https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration.**
 
-Aus irgendeinem Grund benötigt der Migrationsprozess Zugriff auf Binärdateien im Datenspeicher und kann diese nicht finden. Um Ihre Datenspeicherkonfiguration festzulegen, fügen Sie die folgenden Flags in die `<<ADDITIONAL_FLAGS>>` Abschnitt Ihres Migrationsbefehls:
+Aus irgendeinem Grund benötigt der Migrationsprozess Zugriff auf Binärdateien im Datenspeicher und kann diese nicht finden. Um Ihre Datenspeicher-Konfiguration zu spezifizieren, fügen Sie die folgenden Flags in den Abschnitt `<<ADDITIONAL_FLAGS>>` Ihres Migrationsbefehls ein:
 
 **Für S3-Datenspeicher:**
 
@@ -162,13 +162,13 @@ Dabei entspricht `/path/to/datastore` dem Pfad zu Ihrem Datei-Datenspeicher.
 
 ### Bestimmen des korrekten Befehls zum Starten des Upgrades {#determining-the-correct-upgrade-start-command}
 
-Um das Upgrade durchzuführen, muss AEM mithilfe der JAR-Datei gestartet werden, um die Instanz zu öffnen. Informationen zur Aktualisierung auf 6.5 finden Sie unter Weitere Optionen zur Inhaltsumstrukturierung und -migration unter [Lazy-Content-Migration](/help/sites-deploying/lazy-content-migration.md) die Sie mit dem Upgrade-Befehl auswählen können.
+Um das Upgrade durchzuführen, muss AEM mithilfe der JAR-Datei gestartet werden, um die Instanz zu öffnen. Lesen Sie für die Aktualisierung auf 6.5 auch die Informationen zu den Optionen für die Neustrukturierung und Migration des Inhalts unter [Lazy-Content-Migration](/help/sites-deploying/lazy-content-migration.md), die Sie mit dem Upgrade-Befehl auswählen können.
 
 >[!IMPORTANT]
 >
->Wenn Sie Oracle Java 11 (oder allgemein Java-Versionen unter 8) ausführen, müssen beim Starten von AEM zusätzliche Switches zu Ihrer Befehlszeile hinzugefügt werden. Weitere Informationen finden Sie unter [Überlegungen zu Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
+>Wenn Sie Oracle Java 11 ausführen (oder generell Java-Versionen höher als 8), müssen beim Starten von AEM zusätzliche Schalter zur Befehlszeile hinzugefügt werden. Weitere Informationen finden Sie unter [Überlegungen zu Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
-Beachten Sie, dass der Start von AEM über das Startskript das Upgrade nicht startet. Die meisten Kunden beginnen AEM mit der Verwendung des Startskripts und haben dieses Startskript so angepasst, dass es Switches für Umgebungskonfigurationen wie Speichereinstellungen, Sicherheitszertifikate usw. enthält. Aus diesem Grund empfiehlt Adobe die folgende Vorgehensweise, um den richtigen Upgrade-Befehl zu ermitteln:
+Beachten Sie, dass der Start von AEM über das Startskript das Upgrade nicht startet. Die meisten Kundinnen und Kunden starten AEM per Startskript und haben dieses Startskript so angepasst, dass es Schalter für Umgebungskonfigurationen wie Speichereinstellungen, Sicherheitszertifikate usw. enthält. Aus diesem Grund empfiehlt Adobe die folgende Vorgehensweise, um den richtigen Upgrade-Befehl zu ermitteln:
 
 1. Führen Sie in einer aktiven AEM-Instanz Folgendes in der Befehlszeile aus: 
 

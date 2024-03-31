@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1333'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Führen Sie die folgenden Schritte aus, um Correspondence Management so anzupass
 
 1. Wechseln Sie zu `https://'[server]:[port]'/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
 
-1. Erstellen Sie im Apps-Ordner einen Ordner mit dem Namen items mit einem ähnlichen Pfad/einer ähnlichen Struktur zum items-Ordner im Auswahlordner mithilfe der folgenden Schritte:
+1. Erstellen Sie im Anwendungsordner einen Ordner mit dem Namen „items“ mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner „items“, der sich im Auswahlordner befindet, indem Sie folgende Schritte durchführen:
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner **items** unter dem folgenden Pfad und wählen Sie **Überlagerungsknoten**:
 
@@ -137,7 +137,7 @@ Führen Sie die folgenden Schritte aus, um Correspondence Management so anzupass
         </tbody>
        </table>
 
-1. Erstellen Sie im Apps-Ordner einen Ordner mit dem Namen js mit einem ähnlichen Pfad/einer ähnlichen Struktur zum items-Ordner im Admin-Ordner, indem Sie folgende Schritte durchführen:
+1. Erstellen Sie im Anwendungs-Ordner einen Ordner mit dem Namen „js“ mit einem ähnlichen Pfad/einer ähnlichen Struktur zum items-Ordner, der sich im Administratorordner befindet, indem Sie folgende Schritte durchführen:
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner **js** unter dem folgenden Pfad und wählen Sie **Überlagerungsknoten**:
 
@@ -227,7 +227,7 @@ Führen Sie die folgenden Schritte aus, um Correspondence Management so anzupass
 
       Der obige Code dient der für Briefe spezifischen Aktionsbearbeitung des in diesem Verfahren erstellten Befehls. Für die Aktionsbearbeitung anderer Assets müssen Sie den JavaScript-Code ändern.
 
-1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen &quot;items&quot;mit einem ähnlichen Pfad/einer ähnlichen Struktur zum Ordner &quot;items&quot;im Ordner &quot;actionhandlers&quot;, indem Sie folgende Schritte durchführen:
+1. Erstellen Sie im Anwendungs-Ordner einen Ordner mit dem Namen „items“ mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner „items“, der sich im Ordner „actionhandlers“ befindet, indem Sie folgende Schritte durchführen:
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner **items** unter dem folgenden Pfad und wählen Sie **Überlagerungsknoten**:
 

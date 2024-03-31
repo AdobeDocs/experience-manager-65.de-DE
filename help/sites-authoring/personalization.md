@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '526'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ AEM stellt eine Reihe von Tools zur Bearbeitung von Inhalten für eine bestimmte
 
 ## Aktivitäten {#activities}
 
-Aktivitäten definieren und organisieren Ihre Marketing-Maßnahmen. Die Aktivitäten umfassen die Zielgruppen und den Zeitraum, in dem die Zielgruppenbestimmung erfolgt.
+Aktivitäten definieren und organisieren Ihre Marketing-Maßnahmen.  Aktivitäten umfassen die Zielgruppen, die Sie als Ziel angeben, und den Zeitraum, in dem das Targeting angewendet wird.
 
 So enthält der We.Retail-Produktkatalog beispielsweise Teaser, die die Aufmerksamkeit auf Produkte der aktuellen Saison lenken sollen. In der Aktivität „Sommersport“ sind die Marketing-Segmente definiert, die während der Sommermonate gezielt angesprochen werden sollen.
 
-Aktivitäten identifizieren auch [Targeting-Engine](/help/sites-authoring/personalization.md#targeting-engine) , die Ihre Seiten verwenden.
+Mit Aktivitäten wird zudem auch die [Targeting-Engine](/help/sites-authoring/personalization.md#targeting-engine) bestimmt, die Ihre Seiten verwenden.
 
 Mit der [Aktivitätskonsole](/help/sites-authoring/activitylib.md) können Sie die Aktivitäten Ihrer Marken erstellen und verwalten. Sie können auch Aktivitäten erstellen, während Sie [zielgerichtete Inhalte erstellen](/help/sites-authoring/content-targeting-touch.md).
 
@@ -34,31 +34,31 @@ Mit der [Aktivitätskonsole](/help/sites-authoring/activitylib.md) können Sie d
 
 Legen Sie für jede Aktivität ein oder mehr Erlebnisse fest, in denen die gewünschten Zielgruppen identifiziert sind. Mit AEM verfügen Sie über die Möglichkeit, die Inhalte jedes Erlebnisses gezielt zu steuern.
 
-Zielgruppen basieren auf Marketingsegmenten, die entweder in AEM oder Adobe Target erstellt werden. Öffnet ein Besucher eine Web-Seite, bestimmt die Seitenlogik die Zielgruppe, in die er fällt, und zeigt die für diese Zielgruppe erstellten Inhalte an.
+Zielgruppen basieren auf Marktsegmenten, die entweder in AEM oder in Adobe Target erstellt werden.  Öffnet ein Besucher eine Web-Seite, bestimmt die Seitenlogik die Zielgruppe, in die er fällt, und zeigt die für diese Zielgruppe erstellten Inhalte an.
 
 Mit einer Aktivität können beispielsweise Erlebnisse für zwei verschiedene Zielgruppen festgelegt werden: Frauen über 30 und Frauen unter 30. Die Damenabteilung der We.Retail-Website zeigt für die beiden Erlebnisse unterschiedliche Inhalte an.
 
-Sie definieren Erlebnisse für eine Aktivität. Sie können die [Aktivitätskonsole](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console) oder [Targeting-Modus](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode) , um einer Aktivität Erlebnisse hinzuzufügen.
+Die Erlebnisse der Aktivitäten werden von Ihnen festgelegt.  Sie können die [Aktivitätskonsole](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console) oder den [Targeting-Modus](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode) verwenden, um Erlebnisse zu einer Aktivität hinzuzufügen.
 
 ## Angebote {#offers}
 
-Ein Angebot ist Inhalt, der an einer Stelle auf einer Seite für ein Erlebnis angezeigt wird. Verwenden Sie verschiedene Angebote für verschiedene Erlebnisse, um die Effektivität des Inhalts für Ihre Zielgruppen zu maximieren.
+Bei einem Angebot handelt es sich um Inhalte, die an einer Stelle auf einer Seite für ein Erlebnis angezeigt werden.  Verwenden Sie verschiedene Angebote für verschiedene Erlebnisse, um die Effektivität von Inhalten für Ihre Zielgruppen zu optimieren.
 
 Beispielsweise könnte die Damenabteilung einer We.Retail-Beispiel-Website Angebote als das Teaser-Bild verwenden, das oben auf der Seite eingeblendet wird. Für Erlebnisse für Frauen über 30 werden andere Angebote eingesetzt als für Frauen unter 30.
 
-Verwenden Sie die [Angebotskonsole](/help/sites-authoring/offerlib.md) , um Angebote zu erstellen, die Sie in mehreren Erlebnissen verwenden können. Erstellen Sie Angebote für einzelne Anwendungen oder fügen Sie Angebote aus einer Angebotsbibliothek hinzu, wenn [Verfassen zielgerichteter Inhalte](/help/sites-authoring/content-targeting-touch.md).
+Mit der [Angebotskonsole](/help/sites-authoring/offerlib.md) können Sie Angebote erstellen, die Sie für mehrere Erlebnisse einsetzen können. Erstellen Sie Einmal-Angebote oder fügen Sie Angebote aus einer Angebotsbibliothek hinzu, wenn Sie [zielgerichtete Inhalte erstellen](/help/sites-authoring/content-targeting-touch.md).
 
 ## Targeting-Engine {#targeting-engine}
 
-Die Targeting-Engine ist der Mechanismus, der die Logik für zielgerichtete Inhalte steuert. [Aktivitäten](/help/sites-authoring/activitylib.md) sind so konfiguriert, dass eine von zwei verfügbaren Targeting-Engines verwendet wird: AEM oder Adobe Target.
+Die Targeting-Engine ist der Mechanismus, der die Logik hinter zielgerichteten Inhalten darstellt.  [Aktivitäten](/help/sites-authoring/activitylib.md) sind so konfiguriert, dass eine von zwei verfügbaren Targeting-Engines verwendet wird: AEM oder Adobe Target.
 
 ### AEM {#aem}
 
-AEM bietet eine integrierte Targeting-Engine, die Seitenanfragen verarbeitet und den anzuzeigenden Inhalt bestimmt. Bei der Verwendung der AEM Targeting-Engine sind Sie auf den Einsatz von Segmenten beschränkt, die in AEM erstellt wurden, um die Zielgruppen Ihrer Erlebnisse festzulegen.
+AEM bietet eine integrierte Targeting-Engine, die Seitenanforderungen verarbeitet und den anzuzeigenden Inhalt bestimmt.  Bei der Verwendung der AEM Targeting-Engine sind Sie auf den Einsatz von Segmenten beschränkt, die in AEM erstellt wurden, um die Zielgruppen Ihrer Erlebnisse festzulegen.
 
 ### Adobe Target {#adobe-target}
 
-Die Adobe Target-Targeting-Engine sorgt dafür, dass aus Seitenbesuchen erfasste Informationen in Adobe Target nachverfolgt werden.
+Die Targeting-Engine von Adobe Target führt dazu, dass die Informationen, die bei Seitenbesuchen erfasst werden, in Adobe Target verfolgt werden.
 
 * Bei der Verwendung dieser Targeting-Engine setzen Sie Segmente ein, die Sie aus Adobe Target importieren, um die Zielgruppen Ihrer Erlebnisse zu bestimmen.
 * Aktivitäten, die die Adobe Target-Engine verwenden, werden [mit Target synchronisiert](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).

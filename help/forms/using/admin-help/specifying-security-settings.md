@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '89'
-ht-degree: 23%
+ht-degree: 100%
 
 ---
 
 # Angeben der Sicherheitseinstellungen {#specifying-security-settings}
 
-Mit Forms können Sie steuern, ob externe Entitäten in XML-Eingaben aufgelöst werden. Standardmäßig werden sie aufgelöst. Sie können dieses Verhalten jedoch ändern, um die Sicherheit Ihres AEM Forms-Systems zu erhöhen.
+Mit Forms können Sie steuern, ob externe Entitäten in XML-Eingaben aufgelöst werden. Standardmäßig werden sie aufgelöst, jedoch können Sie dieses Verhalten ändern, um die Sicherheit Ihres AEM Forms-Systems zu erhöhen.
 
 **Verhindern der Verarbeitung von XML-Datendateien mit Verweisen auf externe Entitäten**
 

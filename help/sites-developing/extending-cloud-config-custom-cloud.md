@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # Erstellen eines individuellen Cloud-Services{#creating-a-custom-cloud-service}
 
-Die standardmäßigen Cloud-Services können durch benutzerdefinierte Cloud-Service-Typen erweitert werden. So können Sie auf strukturierte Weise benutzerdefiniertes Markup in die Seite einfügen. Dies ist vor allem für Analytics-Anbieter von Drittanbietern wie Google Analytics, CharterBeat usw. nützlich. Cloud-Services werden von übergeordneten Seiten auf untergeordnete Seiten übernommen. Dabei kann die Übernahme auf einer beliebigen Ebene unterbrochen werden.
+Die standardmäßigen Cloud-Services können durch benutzerdefinierte Cloud-Service-Typen erweitert werden. So können Sie auf strukturierte Weise benutzerdefiniertes Markup in die Seite einfügen. Dies ist hauptsächlich für externe Analyseanbieter hilfreich, z. B. Google Analytics, Chartbeat usw. Cloud-Services werden von übergeordneten Seiten auf untergeordnete Seiten übernommen. Dabei kann die Übernahme auf einer beliebigen Ebene unterbrochen werden.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Die standardmäßigen Cloud-Services können durch benutzerdefinierte Cloud-Serv
    * **Name**: templates
    * **Typ**: `sling:Folder`
 
-1. Rechtsklick `/apps/acs/analytics/components`. Wählen Sie **Erstellen…** und dann **Komponente erstellen…** aus. Im Dialogfeld, das sich öffnet, können Sie Folgendes angeben:
+1. Klicken Sie mit der rechten Maustaste auf `/apps/acs/analytics/components`. Wählen Sie **Erstellen…** und dann **Komponente erstellen…** aus. Im Dialogfeld, das sich öffnet, können Sie Folgendes angeben:
 
    * **Bezeichnung**: `googleanalyticspage`
    * **Titel**: `Google Analytics Page`
@@ -209,6 +209,6 @@ Die standardmäßigen Cloud-Services können durch benutzerdefinierte Cloud-Serv
 
    Wählen Sie **Google Analytics Configuration** und klicken Sie auf **Erstellen**.
 
-1. Geben Sie eine **Konto-ID**, beispielsweise `AA-11111111-1`. Klicken Sie auf **OK**.
+1. Geben Sie eine **Konto-ID** ein, z. B. `AA-11111111-1`. Klicken Sie auf **OK**.
 1. Navigieren Sie zu einer Seite und fügen Sie die neu erstellte Konfiguration in den Seiteneigenschaften unter der Registerkarte **Cloud-Services** hinzu.
 1. Das benutzerdefinierte Markup wird der Seite hinzugefügt.

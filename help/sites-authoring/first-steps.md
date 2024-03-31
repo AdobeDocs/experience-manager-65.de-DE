@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Der Inhalt Ihrer Website wird in einer Baumstruktur archiviert. Um eine Seite zu
 
 ### Erstellen einer neuen Seite {#creating-a-new-page}
 
-Vor der Bearbeitung [Erstellen einer Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page).
+Vor der Bearbeitung müssen Sie [eine neue Seite erstellen](/help/sites-authoring/managing-pages.md#creating-a-new-page).
 
 ### Öffnen einer Seite {#opening-a-page}
 
@@ -46,7 +46,7 @@ Für viele Aktionen, z. B. die Bearbeitung, müssen Sie eine [Seite öffnen](/h
 
 ### Bearbeiten einer Seite {#editing-a-page}
 
-Unabhängig davon, ob Ihre Instanz bereits über vorhandene Seiten verfügt oder ob Sie selbst eine neue Seite erstellt haben, können Sie [Bearbeiten einer Seite](/help/sites-authoring/editing-content.md) durch:
+Unabhängig davon, ob Ihre Instanz bereits über vorhandene Seiten verfügt oder ob Sie gerade selbst eine neue Seite erstellt haben, können Sie [eine Seite bearbeiten](/help/sites-authoring/editing-content.md), indem Sie folgende Schritte befolgen:
 
 * [Einfügen einer Komponente (Absatz)](/help/sites-authoring/editing-content.md#inserting-a-component)
 * [Bearbeiten/Konfigurieren/Kopieren/Ausschneiden/Löschen/Einfügen](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) einer Komponente

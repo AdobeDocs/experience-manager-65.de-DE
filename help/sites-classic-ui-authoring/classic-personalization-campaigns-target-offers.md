@@ -1,6 +1,6 @@
 ---
 title: Target-Angebote
-description: Erstellen Sie Zielangebote in Adobe Experience Manager zur Verwendung in Adobe Target.
+description: Erstellen Sie Target-Angebote in Adobe Experience Manager zur Verwendung in Adobe Target.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '100'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren der Remoting-Endpunkte
-description: Erfahren Sie, wie Sie Remoting-Endpunkte konfigurieren. In diesem Dokument wird erläutert, wie Sie mit Flex erstellte Anwendungen aktivieren, um den Dienst mithilfe des AEM Forms Remoting aufzurufen.
+description: Erfahren Sie, wie Sie Remoting-Endpunkte konfigurieren.  In diesem Dokument wird erläutert, wie Sie eine Anwendung aktivieren, die mit Flex erstellt wurde, um den Dienst mithilfe von AEM Forms Remoting aufzurufen.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
 
 # Konfigurieren der Remoting-Endpunkte {#configuring-remoting-endpoints}
 
-Ein Remoting-Endpunkt ermöglicht es einer mit Flex erstellten Anwendung, den Dienst mithilfe von (für AEM Formulare nicht mehr unterstützt) AEM Forms Remoting aufzurufen. Für jeden aktivierten Dienst wird automatisch ein Remoting-Endpunkt erstellt. Ein Flex-Ziel mit demselben Namen wie der Endpunkt wird erstellt. Flex-Clients können Remote-Objekte erstellen, die auf dieses Ziel verweisen, um Vorgänge für den entsprechenden Dienst aufzurufen.
+Ein Remoting-Endpunkt aktiviert eine Anwendung, die mit Flex erstellt wurde, um den Dienst mithilfe von AEM Forms Remoting (für AEM Forms nicht mehr unterstützt) aufzurufen.  Ein Remoting-Endpunkt wird automatisch für jeden aktivierten Dienst erstellt. Ein Flex-Ziel mit demselben Namen wie der Endpunkt wird erstellt, und Flex-Kundinnen und -Kunden können Remote-Objekte erstellen, die auf dieses Ziel verweisen, um Vorgänge für den entsprechenden Service aufzurufen.
 
 ## Remoting-Endpunkteinstellungen {#remoting-endpoint-settings}
 

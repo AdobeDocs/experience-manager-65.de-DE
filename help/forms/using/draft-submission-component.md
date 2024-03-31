@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '744'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,11 +29,11 @@ Die Entwurfsfunktion ist standardmäßig aktiviert. Wenn eine Benutzerin oder ei
 Führen Sie die folgenden Schritte aus, um eine Komponente „Entwürfe und Sendungen“ hinzuzufügen und zu konfigurieren:
 
 1. Ziehen Sie die Komponente **Entwürfe und Sendungen** unter der Kategorie „Dokumentendienste“ im Komponenten-Browser auf Ihre Seite.
-1. Wählen Sie die Komponente aus und wählen Sie dann ![settings_icon](assets/settings_icon.png) , um das Dialogfeld Bearbeiten für die Komponente zu öffnen.
+1. Wählen Sie die Komponente und dann ![settings_icon](assets/settings_icon.png) aus, um das Dialogfeld „Bearbeiten“ für die Komponente zu öffnen.
 
    ![Komponente „Drafts &amp; Submissions“](assets/drafts-submissions-edit.png)
 
-1. Geben Sie im Dialogfeld &quot;Bearbeiten&quot;die folgenden Details an und wählen Sie **Fertig** , um die Einstellungen zu speichern.
+1. Geben Sie im Dialogfeld „Bearbeiten“ die folgenden Details an und wählen Sie **Fertig** aus, um die Einstellungen zu speichern.
 
 <table>
  <tbody>

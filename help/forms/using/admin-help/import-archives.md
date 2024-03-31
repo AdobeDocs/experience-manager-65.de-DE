@@ -1,6 +1,6 @@
 ---
 title: Importieren und Verwalten von Archiven
-description: Erfahren Sie, wie Sie Archive importieren und verwalten. Archiviert Importe und verwaltet in Workbench erstellte LCAs. Sie können ein Archiv importieren, konfigurieren, verwenden und löschen.
+description: Erfahren Sie, wie Sie Archive importieren und verwalten.  Mit „Archive“ können LCAs, die in Workbench erstellt wurden, importiert und verwaltet werden.  Sie können ein Archiv importieren, konfigurieren, verwenden und löschen.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1438'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Verwenden Sie die Registerkarte „Archive“, um LCAs, die in Workbench erstell
 1. Klicken Sie auf „Durchsuchen“, um das zu importierende Archiv auszuwählen, und dann auf „Vorschau“.
 1. Prüfen Sie die Liste der Ressourcen und Objekte, die mit dem Archiv installiert werden. Stellen Sie sicher, dass keine Konflikte mit vorhandenen Ressourcen, Objekten und Dienstkonfigurationen vorliegen, weil es keine Möglichkeit gibt, den Vorgang rückgängig zu machen.
 
-   Wenn Sie die Dienstkonfigurationen importieren möchten, importiert AEM Formulare alle Prozesskonfigurationsdateien (Endpunkte, Sicherheitsprofile und Dienstkonfigurationsparameter), die von den Prozessen in der LCA verwendet werden.
+   Wenn Sie sich für den Import der Dienstkonfigurationen entscheiden, importiert AEM Forms alle Prozesskonfigurationsdateien (Endpunkte, Sicherheitsprofile und Dienstkonfigurationsparameter), die von den Prozessen im LifeCycle-Archiv (LCA) verwendet werden.
 
 1. Wählen Sie Importieren.
 1. Überprüfen Sie die Importergebnisse und klicken Sie entweder auf „Konfiguration überspringen“, um den Importprozess fertig zu stellen, oder auf „Konfigurieren“, um das Archiv zu konfigurieren.
@@ -78,7 +78,7 @@ Verwenden Sie die Registerkarte „Archive“, um LCAs, die in Workbench erstell
 
      **ADD_REMOVE_ENDPOINTS_PERM:** Hinzufügen, Entfernen und Ändern von Endpunkten für einen Dienst
 
-     **CREATE_VERSION_PERM:** So erstellen Sie eine Version des Dienstes
+     **CREATE_VERSION_PERM:** Erstellen einer neuen Version des Dienstes
 
      **DELETE_VERSION_PERM:** Löschen einer Version des Dienstes
 
@@ -145,7 +145,7 @@ Verwenden Sie die Registerkarte „Archive“, um LCAs, die in Workbench erstell
 
      **ADD_REMOVE_ENDPOINTS_PERM:** Hinzufügen, Entfernen und Ändern von Endpunkten für einen Dienst
 
-     **CREATE_VERSION_PERM:** So erstellen Sie eine Version des Dienstes
+     **CREATE_VERSION_PERM:** Erstellen einer neuen Version des Dienstes
 
      **DELETE_VERSION_PERM:** Löschen einer Version des Dienstes
 

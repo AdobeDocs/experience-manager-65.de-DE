@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '917'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 >[!NOTE]
 >
 >Adobe plant nicht, diese Funktionen (Lead- und Listenverwaltung) weiter auszubauen.
->Es wird empfohlen, [Adobe Campaign und seine AEM](/help/sites-administering/campaign.md).
+>Es wird empfohlen, [Adobe Campaign und dessen AEM-Integration](/help/sites-administering/campaign.md) zu verwenden.
 
 Benutzer können über die Komponente **Formular** auf einer AEM-Web-Seite gebeten werden, Mailing-Listen eines **E-Mail-Dienstanbieters** zu abonnieren. Damit Sie eine AEM-Seite mit einem Abonnementformular erstellen können, das für die Anmeldung bei Mailing-Listen Ihres E-Mail-Diensts konfiguriert ist, müssen Sie die entsprechende Dienstkonfiguration auf die AEM-Seite anwenden, die der potenzielle Abonnent besuchen wird.
 
@@ -69,7 +69,7 @@ So erstellen Sie ein Abonnementformular und konfigurieren es für die Anmeldung 
 Damit das Abonnieren und Abbestellen von E-Mail-Diensten über Abonnementformulare auf Veröffentlichungsinstanzen funktioniert, müssen Sie die folgenden Schritte ausführen:
 
 1. Navigieren Sie in der Autoreninstanz zum Package Manager.
-1. Erstellen Sie ein Paket. Wählen Sie den Filter `/etc/key` aus.
+1. Erstellen Sie ein Paket.  Wählen Sie den Filter `/etc/key` aus.
 1. Erstellen Sie das Paket und laden Sie es herunter.
 1. Navigieren Sie in der Veröffentlichungsinstanz zum Package Manager und laden Sie dieses Paket hoch.
 1. Navigieren Sie zu der OSGi-Konsole für die Veröffentlichung und starten Sie das Bundle **„Adobe Granite Crypto Support“** neu.

@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '162'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Mithilfe des Demopakets können Sie Adobe Assets Insights aktivieren, um Daten a
 ## [!DNL Use Experience Manager Assets] Insights mit Beispiel-Webseite  {#using-aem-assets-insights-with-sample-web-page}
 
 1. Konfigurieren Sie Assets Insights anhand der Anleitungen unter [Konfigurieren von Assets Insights](configure-asset-insights.md).
-1. Laden Sie das Asset-Beispielpaket unten herunter und installieren Sie das Paket aus dem CRXDE Package Manager.
+1. Laden Sie das Assets-Beispielpaket unten herunter und installieren Sie das Paket über den CRXDE Package Manager.
 
 [Datei laden](assets/insightsdemo.zip)
 
@@ -28,12 +28,12 @@ Mithilfe des Demopakets können Sie Adobe Assets Insights aktivieren, um Daten a
 
 [Datei laden](assets/demosite.zip)
 
-1. Klicken Sie auf die Webseite, die im Webbrowser geöffnet wird.
+1. Klicken Sie auf die Web-Seite, um sie im Webbrowser zu öffnen.
 
    >[!CAUTION]
    >
-   >Die Webseite ist so konfiguriert, dass Assets vom localhost-Server geladen werden. Falls Ihr Server an einer anderen Stelle ausgeführt wird, ändern Sie im HTML-Inhalt der Webseite die Serveradresse von localhost in die Serveradresse.
+   >Die Web-Seite ist so konfiguriert, dass Assets vom Localhost-Server geladen werden. Wenn Ihr Server an einer anderen Stelle ausgeführt wird, ändern Sie die Server-Adresse von „localhost“ zu der Server-Adresse im HTML-Inhalt der Web-Seite.
 
    >[!NOTE]
    >
-   >Die externe Webseite kann sich in [!DNL Experience Manager] selbst befinden.
+   >Die externe Web-Seite kann sich in [!DNL Experience Manager] selbst befinden.

@@ -1,6 +1,6 @@
 ---
 title: Anpassen der Ansichten von Seiteneigenschaften
-description: Jede Seite verfügt über eine Reihe von Eigenschaften, die Sie nach Bedarf bearbeiten können
+description: Jede Seite verfügt über eine Reihe von Eigenschaften, die Sie nach Bedarf bearbeiten können.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 # Anpassen der Ansichten von Seiteneigenschaften{#customizing-views-of-page-properties}
 
-Jede Seite verfügt über einen Satz von [properties](/help/sites-authoring/editing-page-properties.md) die von Benutzern angezeigt und bearbeitet werden können. Einige sind beim Erstellen der Seite erforderlich (Ansicht erstellen), andere können später angezeigt und bearbeitet (Ansicht bearbeiten) werden. Diese Seiteneigenschaften werden über das Dialogfeld (`cq:dialog`) der entsprechenden Seitenkomponente definiert und bereitgestellt.
+Jede Seite verfügt über einen Satz von [Eigenschaften](/help/sites-authoring/editing-page-properties.md), die von Benutzenden angezeigt und bearbeitet werden können. Einige sind beim Erstellen der Seite erforderlich (Ansicht erstellen), andere können später angezeigt und bearbeitet werden (Ansicht bearbeiten). Diese Seiteneigenschaften werden über das Dialogfeld (`cq:dialog`) der entsprechenden Seitenkomponente definiert und bereitgestellt.
 
 >[!CAUTION]
 >
@@ -24,9 +24,9 @@ Jede Seite verfügt über einen Satz von [properties](/help/sites-authoring/edit
 
 Der Standardstatus für jede Seiteneigenschaft ist wie folgt:
 
-* in der Erstellungsansicht ausgeblendet (z. B. **Seite erstellen** wizard)
+* In der Erstellungsansicht ausgeblendet (z. B. im **Seitenerstellungsassistenten**)
 
-* in der Bearbeitungsansicht verfügbar sind (z. B. **Eigenschaften anzeigen**)
+* In der Bearbeitungsansicht verfügbar (z. B. unter **Eigenschaften anzeigen**)
 
 Felder müssen einzeln konfiguriert werden, wenn eine Änderung erforderlich ist. Dies erfolgt mithilfe der entsprechenden Knoteneigenschaften:
 
@@ -35,7 +35,7 @@ Felder müssen einzeln konfiguriert werden, wenn eine Änderung erforderlich ist
    * Name: `cq:showOnCreate`
    * Typ: `Boolean`
 
-* Seiteneigenschaft, die in der Bearbeitungsansicht verfügbar sein soll (beispielsweise **Ansicht**/**Bearbeiten**) **Eigenschaften** -Option):
+* Seiteneigenschaft, die in der Bearbeitungsansicht verfügbar sein soll (z. B. die Option **Anzeigen**/**Bearbeiten**) von **Eigenschaften**):
 
    * Name: `cq:hideOnEdit`
    * Typ: `Boolean`
@@ -100,7 +100,7 @@ Beispiel: Der [**Seitenerstellungsassistent**](/help/sites-authoring/managing-pa
 
 >[!NOTE]
 >
->Informationen zum Konfigurieren von Seiteneigenschaften für die Verwendung mit Live Copies finden Sie unter [Konfigurieren von MSM-Sperren für Seiteneigenschaften](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) für weitere Details.
+>Wenn Sie Seiteneigenschaften für die Verwendung mit Live Copies konfigurieren, finden Sie weitere Details unter [Konfigurieren von MSM-Sperren für Seiteneigenschaften](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui).
 
 ## Beispielkonfiguration von Seiteneigenschaften {#sample-configuration-of-page-properties}
 

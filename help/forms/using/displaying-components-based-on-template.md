@@ -1,6 +1,6 @@
 ---
 title: Anzeigen von Komponenten basierend auf der verwendeten Vorlage
-description: Erfahren Sie beim Erstellen eines Formulars, wie Sie Komponenten in der Seitenleiste basierend auf der ausgewählten Vorlage aktivieren können.
+description: Erfahren Sie, wie Sie bei der Erstellung eines Formulars Komponenten in der Seitenleiste basierend auf der ausgewählten Vorlage aktivieren können.
 contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
@@ -11,15 +11,15 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
 # Anzeigen von Komponenten basierend auf der verwendeten Vorlage{#displaying-components-based-on-the-template-used}
 
-Wenn ein Formularautor ein adaptives Formular mithilfe einer [template](../../forms/using/template-editor.md)festgelegt ist, kann der Formularverfasser bestimmte Komponenten basierend auf der Vorlagenrichtlinie anzeigen und verwenden. Sie können eine Inhaltsrichtlinie für Vorlagen angeben, mit der Sie eine Gruppe von Komponenten auswählen können, die dem Formularautor zum Zeitpunkt der Formularbearbeitung angezeigt werden.
+Wenn ein Formular anhand einer [Vorlage](../../forms/using/template-editor.md) erstellt wird, lassen sich basierend auf der Vorlagenrichtlinie bestimmte Komponenten sehen und verwenden. Sie können eine Inhaltsrichtlinie für Vorlagen angeben, mit der Sie eine Gruppe von Komponenten auswählen können, die Formularautorinnen und -autoren beim Verfassen des Formulars angezeigt wird.
 
-## Inhaltsrichtlinie einer Vorlage ändern {#changing-the-content-policy-of-a-template}
+## Ändern der Inhaltsrichtlinie einer Vorlage {#changing-the-content-policy-of-a-template}
 
 Wenn Sie eine Vorlage erstellen, wird diese unter `/conf` im Content Repository erstellt. Basierend auf den Ordnern, die Sie im Verzeichnis `/conf` erstellt haben, lautet der Pfad zur Vorlage: `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
 
@@ -33,7 +33,7 @@ Führen Sie die folgenden Schritte aus, um die Komponenten basierend auf der Con
 
 1. Navigieren Sie in CRXDE zu: `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/`
 
-   Um eine Gruppe von Komponenten auszuwählen, ist eine neue Inhaltsrichtlinie erforderlich. Um eine Richtlinie zu erstellen, kopieren Sie die Standardrichtlinie, fügen Sie sie ein und benennen Sie sie um.
+   Zum Auswählen einer Komponentengruppe ist eine neue Inhaltsrichtlinie erforderlich. Kopieren Sie zum Erstellen einer Richtlinie die Standardrichtlinie, fügen Sie sie ein und benennen Sie sie um.
 
    Der Pfad zur Standardinhaltsrichtlinie lautet: `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/default`
 
@@ -43,7 +43,7 @@ Führen Sie die folgenden Schritte aus, um die Komponenten basierend auf der Con
 
 1. Wählen Sie die neu zu erstellende Richtlinie und anschließend im rechten Bedienfeld die Eigenschaft **Komponenten** vom Typ `string[]` aus.
 
-   Wenn Sie die Komponenteneigenschaft auswählen und öffnen, wird das Dialogfeld &quot;Komponenten bearbeiten&quot;angezeigt. Im Dialogfeld &quot;Komponenten bearbeiten&quot;können Sie Komponentengruppen mithilfe der **+** und **-** Schaltflächen. Sie können Komponentengruppen mit Komponenten hinzufügen, die Autoren für Formulare verwenden sollen. 
+   Wenn Sie die Komponenteneigenschaft auswählen und öffnen, erscheint das Dialogfeld „Komponenten bearbeiten“. Im Dialogfeld „Komponenten bearbeiten“ können Sie Komponentengruppen mit den Tasten **+** und **-** hinzufügen oder entfernen. Sie können Komponentengruppen mit Komponenten hinzufügen, die Autoren für Formulare verwenden sollen. 
 
    ![Hinzufügen oder Entfernen von Komponenten in der Richtlinie](assets/add-components-list1.png)
 

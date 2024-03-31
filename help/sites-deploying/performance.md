@@ -1,6 +1,6 @@
 ---
 title: Leistung und Skalierbarkeit
-description: In diesem Whitepaper wird erläutert, wie Skalierbarkeit in AEM integriert wurde, sowie Leistungsindikatoren und Funktionen zur Notfallwiederherstellung.
+description: Dieses Whitepaper beschreibt, wie Skalierbarkeitsoptionen zusammen mit Leistungsindikatoren und Funktionen für die Notfallwiederherstellung in Adobe Experience Manager integriert wurden.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '72'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
 # Leistung und Skalierbarkeit{#performance-scalability}
 
-## Whitepaper: AEM Skalierbarkeit, Leistung und Notfallwiederherstellung {#white-paper-aem-scalability-performance-and-disaster-recovery}
+## Whitepaper: AEM-Skalierbarkeit, Leistung und Notfallwiederherstellung {#white-paper-aem-scalability-performance-and-disaster-recovery}
 
 Dieses Whitepaper beschreibt, wie Skalierbarkeitsoptionen zusammen mit überdurchschnittlichen Leistungsindikatoren und Funktionen für die Notfallwiederherstellung in Adobe Experience Manager integriert wurden.
 

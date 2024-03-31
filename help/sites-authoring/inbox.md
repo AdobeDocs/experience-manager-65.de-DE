@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1155'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Sie erhalten diese Benachrichtigungen in Ihrem eigenen Posteingang, wo Sie sie a
 
 ## Posteingang in der Kopfzeile {#inbox-in-the-header}
 
-In sämtlichen Konsolen wird in der Kopfzeile die Anzahl der aktuell in Ihrem Posteingang vorhandenen Elemente angezeigt. Die Anzeige kann auch geöffnet werden, um einen schnellen Zugriff auf die Seiten zu ermöglichen, die Aktionen erfordern, oder um auf den Posteingang zuzugreifen:
+In sämtlichen Konsolen wird in der Kopfzeile die Anzahl der aktuell in Ihrem Posteingang vorhandenen Elemente angezeigt. Sie können diese Anzeige auch öffnen, um schnell auf die Seiten zuzugreifen, auf denen Aktionen nötig sind, oder um den Posteingang aufzurufen.
 
 ![wf-80](assets/wf-80.png)
 
@@ -139,8 +139,8 @@ Die Option „Admin-Kontrolle“ ist nur für die Mitglieder der Gruppen `admini
 
 * **Spaltenanpassung**: Passen Sie einen AEM-Posteingang an, indem Sie den Standardtitel einer Spalte ändern, eine Spalte neu anordnen und zusätzliche Spalten basierend auf den Daten eines Workflows anzeigen.
    * **Spalte hinzufügen**: Wählen Sie eine Spalte aus, die dem AEM-Posteingang hinzugefügt werden soll.
-   * **Spalte bearbeiten**: Bewegen Sie den Mauszeiger über den Spaltentitel und wählen Sie ![edit](assets/edit.svg) -Symbol, um einen Anzeigenamen der Spalte einzugeben.
-   * **Spalte löschen**: Wählen Sie die ![delete](assets/delete_updated.svg) -Symbol, um die Spalte aus AEM Posteingang zu löschen.
+   * **Spalte bearbeiten**: Bewegen Sie den Mauszeiger über den Spaltentitel und wählen Sie das Symbol ![Bearbeiten](assets/edit.svg) aus, um einen Anzeigenamen für die Spalte einzugeben.
+   * **Spalte löschen**: Wählen Sie das Symbol ![Löschen](assets/delete_updated.svg) aus, um die Spalte aus dem AEM-Posteingang zu löschen.
    * **Spalte verschieben**: Ziehen Sie das Symbol ![Verschieben](assets/move_updated.svg), um eine Spalte im AEM-Posteingang an eine neue Position zu verschieben.
 
   ![Admin-Kontrolle](assets/admin-control-column-customize.png)
@@ -168,7 +168,7 @@ Die Option „Admin-Kontrolle“ ist nur für die Mitglieder der Gruppen `admini
 
    Die entsprechend dem ausgewählten Element verfügbaren Aktionen können Folgendes umfassen:
 
-   * **Fertig** -Aktion, z. B. eine Aufgabe oder ein Workflow-Element.
+   * **Fertigstellen**, z. B. eine Aufgabe oder ein Workflow-Element.
    * **Neu zuweisen**/**Delegieren** eines Elements.
    * **Öffnen** eines Elements. Je nach Elementtyp bewirkt diese Aktion Folgendes:
 
@@ -192,13 +192,13 @@ Die Option „Admin-Kontrolle“ ist nur für die Mitglieder der Gruppen `admini
    * Ein Assistent für eine bestimmte Aktion wird gestartet.
    * Eine Dokumentationsseite wird geöffnet.
 
-   Beispiel: **Neu zuweisen** öffnet ein Dialogfeld:
+   Wird etwa die Aktion **Neu zuweisen** ausgeführt, öffnet sich ein Dialogfeld:
 
    ![wf-85](assets/wf-85.png)
 
    Je nachdem, ob ein Dialogfeld, ein Assistent oder eine Dokumentationsseite geöffnet wurde, können Sie Folgendes durchführen:
 
-   * Bestätigen Sie die entsprechende Aktion, z. B. Neu zuweisen.
+   * Bestätigen Sie die entsprechende Aktion, z. B. „Neu zuweisen“.
    * Die Aktion abbrechen.
    * Den Rückwärtspfeil verwenden: Wenn beispielsweise ein Aktionsassistent oder eine Dokumentationsseite geöffnet wurde, können Sie zum Posteingang zurückkehren.
 
@@ -224,7 +224,7 @@ Im Posteingang können Sie Aufgaben erstellen:
 
    * **Erweitert**
 
-      * **Name**: Wird verwendet, um die URL zu bilden. Wenn das Feld leer ist, basiert die URL auf der **Titel**.
+      * **Name**: Daraus wird die URL gebildet. Wird kein Name angegeben, basiert sie auf dem **Titel**.
 
    ![wf-87](assets/wf-87.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren von Speicherdiensten für Entwürfe und Übermittlungen
-description: Erfahren Sie, wie Sie Speicher für Entwürfe und Übermittlungen konfigurieren
+description: Erfahren Sie, wie Sie die Datenspeicherung für Entwürfe und Übermittlungen konfigurieren
 topic-tags: publish
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '531'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 
@@ -23,11 +23,11 @@ Mit AEM Forms können Sie Folgendes speichern:
 
 * **Übermittlungen**: Die übermittelten Formulare mit den von den Benutzern angegebenen Daten.
 
-Die Daten- und Metadatendienste von AEM Forms Portal unterstützen Entwürfe und Übermittlungen. Standardmäßig werden die Daten in der Veröffentlichungsinstanz gespeichert, die dann in die konfigurierte Autoreninstanz zurückrepliziert wird, um für die Perkolation mit anderen Veröffentlichungsinstanzen verfügbar zu sein.
+Die AEM Forms Portal-Daten- und -Metadatendienste bieten Unterstützung für Entwürfe und Übermittlungen. Die Daten werden standardmäßig in der Veröffentlichungsinstanz gespeichert, die dann in die konfigurierte Autoreninstanz zurückrepliziert wird, um für andere Veröffentlichungsinstanzen verfügbar zu sein.
 
-Das Problem mit dem vorhandenen vordefinierten Ansatz besteht darin, dass alle Daten in der Veröffentlichungsinstanz gespeichert werden, einschließlich der Daten, bei denen es sich um personenbezogene Daten (PII) handeln kann.
+Das Problem mit dem bestehenden vorkonfigurierten Ansatz besteht darin, dass alle Daten auf der Veröffentlichungsinstanz gespeichert werden, einschließlich personenbezogener Daten (Personal Identifiable Information, PII).
 
-Zusätzlich zum oben genannten Standardansatz ist auch eine alternative Implementierung verfügbar, mit der die Formulardaten direkt zur Verarbeitung übertragen werden, anstatt sie lokal zu speichern. Kunden, die Bedenken bei der Speicherung potenziell vertraulicher Daten in der Veröffentlichungsinstanz haben, können die alternative Implementierung wählen, in der die Daten an einen Verarbeitungsserver gesendet werden. Da die Verarbeitung in der Autoreninstanz erfolgt, verbleibt sie normalerweise in einer sicheren Zone.
+Zusätzlich zum oben genannten Standardansatz ist auch eine alternative Implementierung verfügbar, um die Formulardaten direkt zur Verarbeitung zu übertragen, anstatt sie lokal zu speichern. Kundinnen und Kunden, die Bedenken hinsichtlich der Speicherung potenziell sensibler Daten auf der Veröffentlichungsinstanz haben, können die alternative Implementierung wählen, bei der die Daten an einen Verarbeitungs-Server gesendet werden. Da die Verarbeitung auf der Autoreninstanz erfolgt, bleibt sie normalerweise in einem sicheren Bereich.
 
 >[!NOTE]
 >
@@ -35,15 +35,15 @@ Zusätzlich zum oben genannten Standardansatz ist auch eine alternative Implemen
 >
 >Weitere Informationen finden Sie im [Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank](/help/forms/using/integrate-draft-submission-database.md).
 
-## Konfigurieren von Forms Portal-Diensten für Entwurf und Übermittlung {#configuring-forms-portal-drafts-and-submissions-services}
+## Konfigurieren der Formularportal-Dienste für Entwürfe und Sendungen {#configuring-forms-portal-drafts-and-submissions-services}
 
 Klicken Sie in der AEM-Web-Konsolenkonfiguration (`https://[host]:'port'/system/console/configMgr`), um die **Konfiguration des Formularportals für Entwurf und Übermittlung** im Bearbeitungsmodus zu öffnen.
 
-Geben Sie die Werte für die Eigenschaften entsprechend Ihren Anforderungen an, wie unten beschrieben:
+Geben Sie die Werte für Eigenschaften basierend auf Ihren Anforderungen wie unten beschrieben an:
 
-### Vorkonfigurierte Dienste zum Speichern von Daten in der Veröffentlichungsinstanz {#out-of-the-box-services-to-store-data-on-publish-instance}
+### Sofort einsatzbereite Dienste zum Speichern von Daten auf der Veröffentlichungsinstanz {#out-of-the-box-services-to-store-data-on-publish-instance}
 
-Die Daten werden auf die konfigurierte Autoreninstanz zurückrepliziert.
+Die Daten werden in die konfigurierte Autoreninstanz zurückrepliziert.
 
 <table>
  <tbody>
@@ -52,27 +52,27 @@ Die Daten werden auf die konfigurierte Autoreninstanz zurückrepliziert.
    <th>Wert</th>
   </tr>
   <tr>
-   <td>Forms Portal Draft Data Service (Bezeichner für den Entwurfsdatendienst (<strong>draft.data.service</strong>))</td>
+   <td>Entwurfsdatendienst des Formularportals (Kennung für den Entwurfsdatendienst (<strong>draft.data.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.DraftDataServiceImpl<br /> </td>
   </tr>
   <tr>
-   <td>Forms Portal-Metadatendienst für Entwurf (Bezeichner für den Metadatendienst für Entwurf (<strong>draft.metadata.service</strong>))</td>
+   <td>Entwurfsmetadatendienst des Formularportals (Kennung für den Entwurfsmetadatendienst (<strong>draft.metadata.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceImpl<br /> </td>
   </tr>
   <tr>
-   <td>Forms Portal-Datendienst für Übermittlung (Bezeichner für den Datendienst für Übermittlung (<strong>submit.data.service</strong>))</td>
+   <td>Datenübermittlungsdienst des Formularportals (Kennung für den Datenübermittlungsdienst (<strong>submit.data.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.SubmitDataServiceImpl<br /> </td>
   </tr>
   <tr>
-   <td>Forms Portal-Metadatendienst für Übermittlung (Bezeichner für den Metadatendienst für Übermittlung (<strong>submit.metadata.service</strong>))</td>
+   <td>Metadatenübermittlungsdienst des Formularportals (Kennung für den Metadatenübermittlungsdienst (<strong>submit.metadata.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.SubmitMetadataServiceImpl<br /> </td>
   </tr>
  </tbody>
 </table>
 
-### Vorkonfigurierte Dienste zum Speichern von Daten auf der Remote-Verarbeitungsinstanz {#out-of-the-box-services-to-store-data-on-remote-processing-instance}
+### Sofort einsatzbereite Dienste zum Speichern von Daten auf einer Remote-Verarbeitungsinstanz {#out-of-the-box-services-to-store-data-on-remote-processing-instance}
 
-Daten werden direkt an die konfigurierte Remote-Instanz gesendet
+Daten werden direkt an die konfigurierte Remote-Instanz übertragen
 
 <table>
  <tbody>
@@ -81,27 +81,27 @@ Daten werden direkt an die konfigurierte Remote-Instanz gesendet
    <th>Wert</th>
   </tr>
   <tr>
-   <td>Forms Portal Draft Data Service (Bezeichner für den Entwurfsdatendienst (<strong>draft.data.service</strong>))</td>
+   <td>Entwurfsdatendienst des Formularportals (Kennung für den Entwurfsdatendienst (<strong>draft.data.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.DraftDataServiceRemoteImpl<br /> </td>
   </tr>
   <tr>
-   <td>Forms Portal-Metadatendienst für Entwurf (Bezeichner für den Metadatendienst für Entwurf (<strong>draft.metadata.service</strong>))</td>
+   <td>Entwurfsmetadatendienst des Formularportals (Kennung für den Entwurfsmetadatendienst (<strong>draft.metadata.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceRemoteImpl<br /> </td>
   </tr>
   <tr>
-   <td>Forms Portal-Datendienst für Übermittlung (Bezeichner für den Datendienst für Übermittlung (<strong>submit.data.service</strong>))</td>
+   <td>Datenübermittlungsdienst des Formularportals (Kennung für den Datenübermittlungsdienst (<strong>submit.data.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.SubmitDataServiceRemoteImpl<br /> </td>
   </tr>
   <tr>
-   <td>Forms Portal-Metadatendienst für Übermittlung (Bezeichner für den Metadatendienst für Übermittlung (<strong>submit.metadata.service</strong>))</td>
+   <td>Metadatenübermittlungsdienst des Formularportals (Kennung für den Metadatenübermittlungsdienst (<strong>submit.metadata.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.SubmitMetadataServiceRemoteImpl<br /> </td>
   </tr>
  </tbody>
 </table>
 
-Geben Sie neben der oben angegebenen Konfiguration Informationen zur konfigurierten Remote-Verarbeitungsinstanz an.
+Geben Sie neben der oben angegebenen Konfiguration auch Informationen zur konfigurierten Remote-Verarbeitungsinstanz an.
 
-Klicken Sie in der AEM-Web-Konsolenkonfiguration (`https://[host]:'port'/system/console/configMgr`), um den **AEM DS-Einstellungen-Service** im Bearbeitungsmodus zu öffnen. Geben Sie im Dialogfeld AEM DS Settings Service Informationen zu URL des Verarbeitungsservers, Benutzername des Verarbeitungsservers und Kennwort ein.
+Klicken Sie in der AEM-Web-Konsolenkonfiguration (`https://[host]:'port'/system/console/configMgr`), um den **AEM DS-Einstellungen-Service** im Bearbeitungsmodus zu öffnen. Geben Sie im Dialogfeld „AEM DS-Einstellungsdienst“ Informationen zur Verarbeitungs-Server-URL, zum Verarbeitungs-Server-Benutzernamen und zum Kennwort an.
 
 >[!NOTE]
 >

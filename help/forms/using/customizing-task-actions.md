@@ -1,6 +1,6 @@
 ---
 title: Anpassen von Aufgabenaktionen
-description: Sie können das Erscheinungsbild der Aufgabenaktionen anpassen, nur Bilder für Aktionen verwenden und die in Route-Aktionen verwendeten Bilder anpassen.
+description: Sie können das Erscheinungsbild der Aufgabenaktionen anpassen, nur Bilder für Aktionen verwenden und die Bilder anpassen, die in Route-Aktionen verwendet werden.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -107,7 +107,7 @@ Um den Textstil anzupassen, fügen Sie das folgende Codefragment in der Datei `/
 
 ## Anpassen von Bildern {#customizing-images}
 
-Um die Bilder anzupassen, fügen Sie folgendes Codefragment in der Datei `/apps/ws/css/newStyle.css` hinzu. Das folgende Codefragment passt das Bild für die *lock* Aktion:
+Um die Bilder anzupassen, fügen Sie folgendes Codefragment in der Datei `/apps/ws/css/newStyle.css` hinzu. Das folgende Code-Fragment passt das Bild für die Aktion *Sperren* an:
 
 ```css
 #taskarea .taskActionsPopUp .lock, .task .taskActionsPopUp .lock{
@@ -117,7 +117,7 @@ Um die Bilder anzupassen, fügen Sie folgendes Codefragment in der Datei `/apps/
 
 >[!NOTE]
 >
->Fügen Sie separate Stile hinzu, um verschiedene Bilder oder Bilder mit unterschiedlicher Auflösung für die Aktionen Aufgabenliste und Aufgabendetails anzuzeigen. So ändern Sie beispielsweise die Aktion &quot;Sperren&quot;:
+>Fügen Sie verschiedene Stile hinzu, um verschiedene Bilder oder Bilder unterschiedlicher Auflösung für die Aufgabenlisten- und Aufgabendetails-Aktionen anzuzeigen. Um beispielsweise die Aktion „Sperren“ zu ändern:
 
 ```css
 #taskarea .taskActionsPopUp .lock{
@@ -128,13 +128,13 @@ Um die Bilder anzupassen, fügen Sie folgendes Codefragment in der Datei `/apps/
 }
 ```
 
-## Nur Bilder für Aktionen anzeigen {#showing-only-images-for-actions}
+## Ausschließliches Anzeigen von Bildern für Aktionen {#showing-only-images-for-actions}
 
 Um nur Bilder für Aktionen anzuzeigen, passen Sie die Bilder an, die in Route-Aktionen verwendet werden. Detaillierte Informationen finden Sie unter [Bilder für Route-Aktionen](/help/forms/using/images-route-actions.md).
 
-### Aufgabenaktionen-Popup-Menü für Aufgabenliste {#task-list-task-action-nbsp-pop-up-menu}
+### Popup-Menü der Aufgabenaktionen „Aufgabenliste“ {#task-list-task-action-nbsp-pop-up-menu}
 
-1. Sie benötigen ein Entwicklungspaket, um Elemente des Popup-Menüs für die Aufgabenaktion &quot;Aufgabenliste&quot;in AEM Forms Workspace anzupassen. Ausführliche Informationen zum Erstellen des Entwicklungspakets finden Sie unter [Code für AEM Forms-Arbeitsbereich erstellen.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. Sie benötigen ein Entwicklungspaket, um Elemente des Popup-Menüs der Aufgabenaktionen „Aufgabenliste“ von AEM Forms Workspace anzupassen. Ausführliche Informationen zum Erstellen des Entwicklungspakets finden Sie unter [Code für AEM Forms-Arbeitsbereich erstellen.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. Kopieren Sie /libs/ws/js/runtime/templates/task.html nach `/apps/ws/js/runtime/templates/task.html`, und ersetzen Sie das folgende Codefragment:
 
@@ -356,5 +356,5 @@ Führen Sie die folgenden Schritte aus, um das Aufgabenaktionen-Popupmenü „Au
 ```
 
 * Öffnen Sie die Datei /apps/ws/js/registry.js für die Bearbeitung.
-* Suchen Sie den folgenden Text: `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
-* Ersetzen Sie den gefundenden durch den folgenden Text: `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`
+* Suchen Sie folgenden Text: `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
+* Ersetzen Sie den gefundenen Text durch den folgenden Text: `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`

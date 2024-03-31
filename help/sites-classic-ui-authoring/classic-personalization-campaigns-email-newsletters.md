@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1106'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Zur Veröffentlichung einer Mail beim E-Mail-Dienstanbieter müssen Sie wie folg
 
 Sie können eine E-Mail oder einen Newsletter, die oder den Sie in einem E-Mail-Dienst veröffentlichen möchten, in Kampagnen mithilfe der Vorlage **Geometrixx-Newsletter** erstellen. Alternativ können Sie auch die Vorlage **Geometrixx Outdoors-E-Mail** verwenden. Beispiel-E-Mails oder -Newsletter, die auf der Vorlage **Geometrixx Outdoors-E-Mail** basieren, finden Sie unter `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
 
-So erstellen Sie eine E-Mail, die im konfigurierten E-Mail-Dienst veröffentlicht wird:
+So erstellen Sie eine neue E-Mail, die im konfigurierten E-Mail-Dienst veröffentlicht wird:
 
 1. Gehen Sie zu **Websites** und dann zu **Kampagnen**. Wählen Sie eine Kampagne.
 1. Wählen Sie **Neu**, um das Fenster **Seite erstellen** zu öffnen.
@@ -149,7 +149,7 @@ So veröffentlichen Sie E-Mails/Newsletter in Ihrem E-Mail-Dienst:
 
    Wenn der Vorgang erfolgreich war, erhalten Sie in AEM eine Meldung, dass Sie die E-Mail in ExactTarget oder Silverpop Engage anzeigen können.
 
-   Wenn ExactTarget vorhanden ist, kann die veröffentlichte E-Mail durch Klicken auf **Veröffentlichte E-Mail anzeigen**. Sie werden direkt zum veröffentlichten Newsletter in ExactTarget weitergeleitet ([https://members.exacttarget.com/](https://members.exacttarget.com/)).
+   Bei ExactTarget kann die veröffentlichte E-Mail durch einen Klick auf **Veröffentlichte E-Mail anzeigen** angezeigt werden. Sie werden direkt zum veröffentlichten Newsletter in ExactTarget weitergeleitet ([https://members.exacttarget.com/](https://members.exacttarget.com/)).
 
 >[!NOTE]
 >

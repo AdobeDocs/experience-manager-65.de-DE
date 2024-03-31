@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '530'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Best Practices rund um Assets, einschließlich der Dynamic Media-Funktionen und 
   <tr>
    <td>Organisieren Ihres Inhalts (Ordnerhierarchie)</td>
    <td><a href="/help/assets/organize-assets.md">Best Practices für die Dateiverwaltung</a></td>
-   <td>Die meisten Verarbeitungsprofile sind ordnerbasiert, da Video, Metadaten und Bildverarbeitung immer auf Ordner angewendet werden. In diesem Best Practice-Dokument wird beschrieben, wie Sie Ihre Ordnerhierarchie definieren und einrichten, da die Hierarchie erhebliche Auswirkungen auf die Verarbeitung von Inhalten hat. </td>
+   <td>Die meisten Verarbeitungsprofile sind ordnerbasiert, da die Verarbeitung von Video, Metadaten und Bildern immer auf Ordner angewendet wird. In diesem Best Practice-Dokument wird beschrieben, wie Sie Ihre Ordnerhierarchie definieren und einrichten, da die Hierarchie erhebliche Auswirkungen auf die Verarbeitung von Inhalten hat. </td>
   </tr>
   <tr>
    <td>Integrieren von Scene7 und AEM</td>

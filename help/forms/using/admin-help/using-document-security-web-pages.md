@@ -1,6 +1,6 @@
 ---
 title: Verwenden der Document Security-Web-Seiten
-description: Erfahren Sie, wie Sie sich anmelden, auf den Document Security-Webseiten navigieren und diese verwenden können.
+description: Erfahren Sie, wie Sie zu Dokumentensicherheits-Web-Seiten navigieren, sie verwenden und sich bei ihnen anmelden können.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
@@ -11,95 +11,95 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
 # Verwenden der Document Security-Web-Seiten {#using-the-document-security-webpages}
 
-Benutzer und Administratoren verwenden die Document Security-Webseiten zum Erstellen und Verwalten von Richtlinien, zum Verwalten richtliniengeschützter Dokumente und zum Überwachen von Ereignissen, die mit richtliniengeschützten Dokumenten verknüpft sind. Administratoren verwenden auch die Webseiten, um Richtliniensätze zu erstellen und Richtliniensatzkoordinatoren zu bestimmen, Standardeinstellungen für Document Security zu konfigurieren, die Registrierung und Konten eingeladener Benutzer zu verwalten sowie Server-, Richtlinien-, Benutzer- und dokumentbezogene Ereignisse zu überwachen und zu verwalten.
+Benutzende und Admins nutzen die Dokumentensicherheits-Web-Seiten zum Erstellen und Verwalten von Richtlinien, zum Verwalten richtliniengeschützter Dokumente und zum Überwachen von Ereignissen in Verbindung mit richtliniengeschützten Dokumenten.  Admins nutzen Webseiten auch zum Erstellen von Richtliniensätzen und Zuweisen von Richtliniensatzkoordinatorinnen bzw. -koordinatoren, zum Konfigurieren von Dokumentensicherheits-Standardeinstellungen, zum Verwalten der Registrierung eingeladener Benutzender und deren Konten sowie zum Überwachen und Verwalten von Server-, Richtlinien-, Benutzer- und Dokumenten-bezogenen Ereignissen.
 
 >[!NOTE]
 >
->Sie können sich auch mit Ihrem Benutzeranmeldekonto über Acrobat und andere Clientanwendungen bei Document Security anmelden. (Siehe [Zugriff auf Document Security in Clientanwendungen einrichten](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications).
+>Sie können sich auch mit Ihrem Benutzeranmeldekonto über Acrobat und andere Clientanwendungen bei Document Security anmelden. (Siehe [Einrichten des Zugriffs auf die Dokumentensicherheit in Client-Anwendungen](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications).)
 
-Zum Öffnen der Webseiten benötigen Sie einen Browser sowie die URL und Ihre Anmeldeinformationen für Document Security. Die URL für Benutzer unterscheidet sich von der URL für Administratoren.
+Zum Öffnen der Web-Seiten benötigen Sie einen Browser sowie die URL und Ihre Anmeldeinformationen für die Dokumentensicherheit.  Die URL für Benutzende unterscheidet sich von der für Admins.
 
-Da Document Security die vorhandenen Ordner Ihres Unternehmens für Benutzerinformationen referenziert, können Ihre Document Security-Anmeldeinformationen mit den Informationen übereinstimmen, die Sie zum Anmelden in Ihrem Netzwerk und anderen Anwendungen verwenden. Informationen zu Ihrem Konto erhalten Sie von Ihrem Systemadministrator oder -administrator.
+Da die Dokumentensicherheit die vorhandenen Verzeichnisse Ihres Unternehmens für Benutzerinformationen nutzt, können die Dokumentensicherheits-Anmeldeinformationen mit den Informationen übereinstimmen, mit denen Sie sich am Netzwerk und anderen Anwendungen anmelden.  Informationen zu Ihrem Konto erhalten Sie von Ihren Systemadmins oder Admins.
 
-Damit Sie sich als Administrator anmelden können, müssen Sie die Administratorrolle zugewiesen haben. Sie können das standardmäßige Superadministrator-Konto verwenden, das während des Installationsprozesses erstellt wird.
+Um sich als Admin anmelden zu können, muss Ihnen die Rolle „Administrator“ zugewiesen worden sein.  Sie können das standardmäßige Superadministratorkonto verwenden, das während der Installation angelegt wird.
 
-## Bei den Webseiten anmelden {#log-in-to-the-web-pages}
+## Anmelden bei den Web-Seiten {#log-in-to-the-web-pages}
 
-Um sich über einen Browser bei den Webseiten anzumelden, benötigen Sie die Document Security-URL und ein Konto. Die URL für Benutzer unterscheidet sich von der URL für Administratoren. Administratoren können sich auch bei den Benutzerseiten anmelden, um Richtlinien zu erstellen.
+Zum Anmelden bei den Web-Seiten über einen Browser benötigen Sie die Dokumentensicherheits-URL sowie ein Konto.  Die URL für Benutzende unterscheidet sich von der für Admins. Admins können sich auch bei den Benutzerseiten anmelden, um Richtlinien zu erstellen.
 
-Wenn Sie Zugriff auf mehr als eine Installation von Document Security haben, benötigen Sie die URL für die Instanz von Document Security, auf die Sie zugreifen möchten. Wenden Sie sich an Ihren Administrator, wenn Sie nicht über diese Informationen verfügen. Die Standard-URL für Benutzerseiten ist `https://[host]:[port]/edc`. In einigen Fällen ist die Portnummer möglicherweise nicht erforderlich. Fragen Sie Ihren Administrator nach Details.
+Wenn Sie Zugriff auf mehrere Dokumentensicherheits-Installationen haben, benötigen Sie die URL der Instanz der Dokumentensicherheit, auf die Sie zugreifen möchten.  Wenden Sie sich an ihre Admins, falls Sie diese Informationen nicht haben.  Die Standard-URL für Benutzerseiten ist `https://[host]:[port]/edc`. In einigen Fällen ist die Port-Nummer möglicherweise nicht erforderlich.  Fragen Sie Ihre Admins nach Details.
 
 Die Standard-URL für Administratoren lautet `https://[host]:[port]/adminui`.
 
-Für Administratoren wird während der Installation ein standardmäßiges Superadministratorkonto erstellt. Sie können dieses Konto verwenden, um sich anzumelden, wenn Document Security zum ersten Mal installiert wird.
+Für Admins wird während der Installation ein standardmäßiges Superadministratorkonto angelegt.  Sie können sich mit diesem Konto anmelden, nachdem die Dokumentensicherheit erstmals installiert wurde.
 
 >[!NOTE]
 >
->Sie können auch über Acrobat und andere Clientanwendungen auf die Webseiten zugreifen. Weitere Informationen finden Sie in der Hilfe zu Acrobat oder in der entsprechenden Hilfe zu Acrobat Reader DC-Erweiterungen .
+>Sie können auch in Acrobat und anderen Client-Anwendungen auf die Web-Seiten zugreifen.  Weitere Informationen finden Sie in der Acrobat-Hilfe oder der entsprechenden Hilfe zu den Acrobat Reader DC Erweiterungen.
 
-1. Geben Sie die URL in Ihren Browser ein:
+1. Geben Sie die URL in den Browser ein.
 
    Document Security-URL: `https://[host]:[port]/edc`
 
    oder Administration Console-URL: `https://[host]:[port]/adminui`
 
-1. Geben Sie im Anmeldefenster Ihren Benutzernamen und Ihr Kennwort ein und klicken Sie auf &quot;OK&quot;.
-1. Klicken Sie in Administration Console auf Dienste > Document Security.
+1. Geben Sie im Anmeldefenster Ihren Benutzernamen und Ihr Kennwort ein und klicken Sie auf „OK“.
+1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Dokumentensicherheit“.
 
 >[!NOTE]
 >
->Vermeiden Sie beim Arbeiten mit Webseiten die Verwendung von Browser-Schaltflächen wie der Zurück-, der Aktualisierungs- und der Zurück- und der Vorwärts-Taste, da diese Aktion zu unerwünschten Problemen bei der Datenerfassung und Datenanzeige führen kann.
+>Verwenden Sie beim Arbeiten mit Web-Seiten nicht die Schaltflächen des Browsers (z. B. die Schaltfläche „Zurück“, die Schaltfläche „Aktualisieren“ oder die Pfeilschaltflächen „Zurück“ und „Vorwärts“), da dies zu unerwünschten Problemen bei der Erfassung und Anzeige von Daten führen kann.
 
-## Navigieren auf den Webseiten {#navigating-the-web-pages}
+## Navigieren auf den Web-Seiten {#navigating-the-web-pages}
 
-Wenn Sie sich bei den Benutzer-Webseiten anmelden, sehen Sie Links zu den Benutzerseiten &quot;Richtlinien&quot;, &quot;Dokumente&quot;und &quot;Ereignisse&quot;.
+Wenn Sie sich bei den Benutzer-Web-Seiten anmelden, werden Links zu den Benutzerseiten „Richtlinien“, „Dokumente“ und „Ereignisse“ angezeigt.
 
-Wenn Sie sich bei Administration Console anmelden und zur Document Security-Hauptseite navigieren, werden möglicherweise auch ein oder zwei weitere Links angezeigt: einer für die Seite &quot;Konfiguration&quot;und einer für die Seite &quot;Eingeladene und lokale Benutzer&quot;. Die Seite Eingeladene und lokale Benutzer wird nur angezeigt, wenn die Registrierung für eingeladene Benutzer aktiviert ist.
+Wenn Sie sich bei der Administrationskonsole anmelden und zur Dokumentensicherheits-Hauptseite wechseln, werden ggf. ein oder zwei zusätzliche Links angezeigt, und zwar einer zur Seite „Konfiguration“ und einer zur Seite „Eingeladene und lokale Benutzer“.  Die Seite „Eingeladene und lokale Benutzer“ wird nur angezeigt, wenn die Registrierung für eingeladene Benutzende aktiviert ist.
 
-Verwenden Sie diese Links, um auf die verschiedenen Seiten zuzugreifen, auf denen Sie Richtlinien und richtliniengeschützte Dokumente erstellen und verwalten.
+Über diese Links greifen Sie auf die verschiedenen Seiten zu, auf denen Sie Richtlinien und richtliniengeschützte Dokumente erstellen und verwalten können.
 
 **Anzeigen einer Seite**
 
-1. Klicken Sie auf den Namen der Seite, z. B. auf Richtlinien .
+1. Klicken Sie auf den Namen der Seite, z. B. „Richtlinien“.
 
-**Zurück zur vorherigen Seite**
+**Zurückkehren zur vorherigen Seite**
 
-1. Klicken Sie oben auf der Seite auf den Navigationslink der Seite, zu der Sie zurückkehren möchten.
+1. Klicken Sie oben auf der Seite auf den Navigations-Link der Seite, zu der Sie zurückkehren möchten.
 
-**Datenliste auf einer Seite aktualisieren**
+**Aktualisieren der Datenanzeige auf einer Seite**
 
 1. Klicken Sie auf der Hauptseite auf den Link zu der Seite, die Sie aktualisieren möchten.
 
 >[!NOTE]
 >
->Vermeiden Sie beim Arbeiten mit Webseiten die Verwendung von Browser-Schaltflächen wie der Zurück-, der Aktualisierungs- und der Zurück- und der Vorwärts-Taste, da diese Aktion zu unerwünschten Problemen bei der Datenerfassung und Datenanzeige führen kann.
+>Verwenden Sie beim Arbeiten mit Web-Seiten nicht die Schaltflächen des Browsers (z. B. die Schaltfläche „Zurück“, die Schaltfläche „Aktualisieren“ oder die Pfeilschaltflächen „Zurück“ und „Vorwärts“), da dies zu unerwünschten Problemen bei der Erfassung und Anzeige von Daten führen kann.
 
-## Zugriff auf Document Security in Clientanwendungen einrichten {#setting-up-access-to-document-security-from-client-applications}
+## Einrichten des Zugriffs auf die Dokumentensicherheit in Client-Anwendungen {#setting-up-access-to-document-security-from-client-applications}
 
-Clientanwendungen müssen so eingerichtet sein, dass sie eine Verbindung zu Document Security herstellen, um Dokumente zu schützen, richtliniengeschützte Dokumente zu öffnen und eine Verbindung zu den Document Security-Webseiten herzustellen. Siehe *Hilfe zu Acrobat* oder *RightsManagementExtension-Hilfe* für Informationen zum Konfigurieren der Verbindung innerhalb der Clientanwendung.
+Client-Anwendungen müssen so eingerichtet werden, dass sie eine Verbindung mit der Dokumentensicherheit herstellen, um Dokumente zu schützen, richtliniengeschützte Dokumente öffnen zu und die Verbindung mit den Dokumentensicherheits-Web-Seiten herzustellen.  Einzelheiten zum Konfigurieren der Verbindung in der Client-Anwendung finden Sie in der *Acrobat-Hilfe* oder der entsprechenden *RightsManagementExtension-Hilfe*.
 
-Der Zugriff auf Document Security erfolgt über Secure Sockets Layer (SSL). Installieren Sie das Zertifikat der Website in Ihrem Zertifikatspeicher, damit Sie über die Clientanwendungen auf Document Security zugreifen können.
+Der Zugriff auf die Dokumentensicherheit erfolgt über SSL (Secure Sockets Layer).  Installieren Sie das Zertifikat der Website in Ihrem Zertifikatsspeicher, damit Sie über die Client-Anwendungen auf die Dokumentensicherheit zugreifen können.
 
 <!-- Fix broken link See Configuring SSL for information on SSL.-->
 
-Diese Anweisungen gelten speziell für Internet Explorer. Sie können das Zertifikat jedoch mit einem beliebigen unterstützten Webbrowser installieren. Weitere Informationen finden Sie in der Hilfe für Ihren Browser.
+Diese Anweisungen gelten für Internet Explorer. Sie können das Zertifikat jedoch auch mithilfe eines anderen unterstützten Webbrowsers installieren. Weitere Informationen finden Sie in der Hilfe für Ihren Browser.
 
-**Installieren des Serverzertifikats mit Internet Explorer**
+**Installieren des Server-Zertifikats mit Internet Explorer**
 
-1. Öffnen Sie Ihren Webbrowser und geben Sie die Basis-URL für Document Security in das Feld &quot;Adresse&quot;ein. Geben Sie beispielsweise `https://[host]:[port]`. Ein Dialogfeld mit einer Sicherheitswarnung wird angezeigt.
-1. Klicken Sie auf Zertifikat anzeigen , klicken Sie auf Zertifikat installieren und wählen Sie die Standardeinstellungen für die Installation aus. Das Zertifikat muss in den vertrauenswürdigen Stammzertifizierungsstellen installiert sein.
+1. Öffnen Sie den Webbrowser und geben Sie die Basis-URL für die Dokumentensicherheit in das Adressfeld ein. Geben Sie beispielsweise `https://[host]:[port]`. Es wird ein Dialogfeld mit einer Sicherheitswarnung angezeigt.
+1. Klicken Sie auf „Zertifikat anzeigen“ und anschließend auf „Zertifikat installieren“ und übernehmen Sie die Standardeinstellungen für die Installation. Das Zertifikat muss unter „Vertrauenswürdige Stammzertifizierungsstellen“ installiert werden.
 1. Schließen Sie die Browser-Sitzung.
-1. Öffnen Sie ein anderes Browser-Fenster und geben Sie dieselbe URL in das Feld Adresse ein. Ein Dialogfeld mit Sicherheitswarnung sollte nicht angezeigt werden. Dieser Test bestätigt, dass das Zertifikat ordnungsgemäß installiert ist.
+1. Öffnen Sie ein weiteres Browser-Fenster und geben Sie dieselbe URL in das Adressfeld ein. Es sollte kein Dialogfeld mit einer Sicherheitswarnung angezeigt werden. Dieser Test bestätigt, dass das Zertifikat ordnungsgemäß installiert wurde.
 
-## Von den Webseiten abmelden {#log-out-of-the-web-pages}
+## Abmelden von den Web-Seiten {#log-out-of-the-web-pages}
 
-Melden Sie sich ab, wenn Sie mit den Webseiten fertig sind, damit Sie Ihren Webbrowser sicher für andere Zwecke verwenden können. Abhängig davon, wie Document Security konfiguriert ist, müssen Sie möglicherweise den Browser schließen, um sich vollständig abzumelden.
+Melden Sie sich ab, wenn Sie Ihre Aufgaben auf den Web-Seiten erledigt haben, damit Sie den Webbrowser sicher für andere Zwecke verwenden können. Je nach Konfiguration der Dokumentensicherheit müssen Sie ggf. den Browser schließen, um sich vollständig abzumelden.
 
-1. Klicken Sie oben rechts auf der Seite auf Abmelden .
-1. Wenn eine Meldung auf der Seite &quot;Abmelden&quot;angezeigt wird, schließen Sie das Browser-Fenster, um sich vollständig abzumelden. Andernfalls können Sie den Browser für andere Zwecke verwenden.
+1. Klicken Sie oben rechts auf der Seite auf „Abmelden“.
+1. Wenn eine Meldung auf der Seite „Abmelden“ angezeigt wird, schließen Sie das Browser-Fenster, um sich vollständig abzumelden. Ansonsten können Sie den Browser direkt für andere Zwecke weiterverwenden.

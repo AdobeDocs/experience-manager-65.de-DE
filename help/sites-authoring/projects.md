@@ -1,12 +1,12 @@
 ---
 title: Projekte
-description: Mithilfe von Projekten können Sie Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Verwaltung Ihrer Projekte erleichtert.
+description: Projekte ermöglichen es Ihnen, Ressourcen innerhalb einer Entität zu gruppieren. Über deren allgemeine, gemeinsam genutzte Umgebung können Sie Projekte einfach verwalten.
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1360'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ In der Projektekonsole können Sie innerhalb von AEM auf Ihre Projekte zugreifen
 
 ![Die Projektekonsole](assets/screen-shot_2019-03-05at125110.png)
 
-Die Projektekonsole ähnelt anderen Konsolen in AEM, erlaubt mehrere Aktionen für einzelne Projekte und passt Ihre Ansicht der Projekte an.
+Die Projektekonsole ähnelt anderen Konsolen in AEM, ermöglicht verschiedene Aktionen für einzelne Projekte und passt Ihre Ansicht der Projekte an.
 
 ### Modus umschalten {#modes}
 

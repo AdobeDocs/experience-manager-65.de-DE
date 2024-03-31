@@ -1,6 +1,6 @@
 ---
 title: Verwenden von SOM-Ausdrücken in adaptiven Formularen
-description: Erfahren Sie, wie Sie SOM-Ausdrücke eines Bedienfelds eines adaptiven Formulars extrahieren.
+description: Erfahren Sie, wie Sie SOM-Ausdrücke eines Bedienfelds in einem adaptiven Formular extrahieren.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 feature: Adaptive Forms, Foundation Components
@@ -11,15 +11,15 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
 # Verwenden von SOM-Ausdrücken in adaptiven Formularen{#using-som-expressions-in-adaptive-forms}
 
-Adaptive Formulare werden als AEM Seite modelliert, die in AEM Repository als JCR-Inhaltsstruktur dargestellt wird. Das Schlüsselelement der Inhaltsstruktur ist der Knoten guideContainer . Unter &quot;guideContainer&quot;befindet sich &quot;rootPanel&quot;, das verschachtelte Bedienfelder und Felder enthalten kann.
+Adaptive Formulare werden als AEM-Seite modelliert, die im AEM-Repository als JCR-Inhaltstruktur dargestellt wird. Das Schlüsselelement der Inhaltsstruktur ist der Knoten „guideContainer“. Unter „guideContainer“ befindet sich der Knoten „rootPanel“, der verschachtelte Bedienfelder und Felder enthalten kann.
 
-Sie können ein Skriptobjektmodell (SOM) verwenden, um Werte, Eigenschaften und Methoden innerhalb eines bestimmten Dokumentobjektmodells (DOM) zu referenzieren. Ein DOM organisiert die Speicherobjekte und -eigenschaften in einer Baumstruktur. Ein SOM-Ausdruck verweist auf Felder/Zeichenelemente und Bereiche.
+Sie können ein Skripting-Objektmodell (SOM) verwenden, um Werte, Eigenschaften und Methoden innerhalb eines bestimmten Dokumentobjektmodells (DOM) zu referenzieren. Ein DOM organisiert die Speicherobjekte und Eigenschaften in einer hierarchischen Baumstruktur. Ein SOM-Ausdruck verweist auf Felder/Zeichenelemente und Bedienfelder.
 
 Die folgende Abbildung zeigt eine Knotenstruktur, in die ein adaptives Formular umgesetzt wird, wenn Sie einem Formular Komponenten hinzufügen. Sie können beispielsweise dem Stammbereich einen Bereich und diesem dann ein Optionsfeld hinzufügen. Der Bereich wird dann zur Laufzeit in ein DOM transformiert. Der SOM-Ausdruck für das Optionsfeld im adaptiven Formular wird als `guide[0].guide1[0].guideRootPanel[0].panel1[0].radiobutton[0]` angegeben.
 
@@ -33,7 +33,7 @@ Einem SOM-Ausdruck für ein beliebiges Element in einem adaptiven Formular wird 
 
 DOM-Baumstruktur mit zwei Optionsfeldern
 
-Der SOM-Ausdruck ändert sich, wenn Sie die Position der Optionsfelder im adaptiven Formular ändern. Im Authoring-Modus können Sie den SOM-Ausdruck eines Felds oder Elements in AEM Forms mithilfe der Option SOM-Ausdruck anzeigen anzeigen. Die Option wird auf dem Bereich angezeigt und wenn Sie mit der rechten Maustaste auf das Feld oder Element klicken.
+Der SOM-Ausdruck ändert sich, wenn Sie die Position der Optionsfelder im adaptiven Formular ändern. Im Authoring-Modus können Sie den SOM-Ausdruck eines Felds oder Elements in AEM Forms mithilfe der Option „SOM-Ausdruck anzeigen“ anzeigen. Die Option wird auf dem Bereich angezeigt und wenn Sie mit der rechten Maustaste auf das Feld oder Element klicken.
 
 ![Extrahieren von SOM-Ausdrücken in einem adaptiven Formular](assets/som-expressions.png)
 

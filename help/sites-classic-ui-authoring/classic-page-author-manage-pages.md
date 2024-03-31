@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1895'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ In diesem Abschnitt wird beschrieben, wie Sie mit Adobe Experience Manager (AEM)
 >
 >Wenn Sie auf Probleme stoßen, empfehlen wir Ihnen, sich an die bzw. den Systemadmin zu wenden.
 
-## Organisieren Ihrer Website {#organizing-your-website}
+## Organisation Ihrer Website {#organizing-your-website}
 
-Als Autor müssen Sie Ihre Website in AEM organisieren. Dazu gehört die Erstellung und Benennung von Inhaltsseiten, sodass Folgendes zutrifft:
+Als Autorin oder Autor müssen Sie Ihre Website in AEM organisieren. Dazu gehört die Erstellung und Benennung von Inhaltsseiten, sodass Folgendes zutrifft:
 
 * Sie müssen leicht in der Autorenumgebung auffindbar sein.
 * Besucher der Website müssen sie einfach in der Veröffentlichungsumgebung durchsuchen können.
@@ -85,7 +85,7 @@ Beim Erstellen einer Seite gibt es zwei wichtige Felder:
    * Mit diesem Wert wird der URI generiert.
    * Benutzereingaben sind für dieses Feld optional. Wenn kein Name angegeben ist, wird der Name vom Titel abgeleitet.
 
-AEM beim Erstellen einer Seite [validiert den Seitennamen gemäß den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR aufgezwungen.
+Beim Erstellen einer Seite [validiert AEM den Seitennamen entsprechend den von AEM und JCR vorgegebenen Konventionen](/help/sites-developing/naming-conventions.md).
 
 Die Implementierung und die Liste von zulässigen Zeichen variieren entsprechend der Benutzeroberfläche (umfangreicher für die Touch-optimierte Benutzeroberfläche). Das zulässige Minimum ist:
 
@@ -99,7 +99,7 @@ Verwenden Sie nur diese Zeichen, wenn Sie sicherstellen möchten, dass sie akzep
 
 #### Titel {#title}
 
-Wenn Sie nur eine Seite angeben **Titel** leitet AEM die Seite beim Erstellen einer Seite ab **Name** aus dieser Zeichenfolge und [den Namen gemäß den Konventionen validieren](/help/sites-developing/naming-conventions.md) von AEM und JCR aufgezwungen. In beiden Benutzeroberflächen wird ein Feld **Titel**, das ungültige Zeichen enthält, akzeptiert, aber in dem abgeleiteten Namen werden die ungültigen Zeichen ersetzt. Beispiel:
+Wenn Sie beim Erstellen einer Seite nur den **Titel** angeben, leitet AEM den **Namen** für die Seite von dieser Zeichenfolge ab und [validiert den Namen entsprechend den von AEM und JCR vorgegebenen Konventionen](/help/sites-developing/naming-conventions.md). In beiden Benutzeroberflächen wird ein Feld **Titel**, das ungültige Zeichen enthält, akzeptiert, aber in dem abgeleiteten Namen werden die ungültigen Zeichen ersetzt. Zum Beispiel:
 
 | Titel | Abgeleiteter Name |
 |---|---|
@@ -108,7 +108,7 @@ Wenn Sie nur eine Seite angeben **Titel** leitet AEM die Seite beim Erstellen ei
 
 #### Name {#name}
 
-Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen entsprechend den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR.
+Wenn Sie beim Erstellen einer Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen entsprechend den von AEM und JCR vorgegebenen Konventionen](/help/sites-developing/naming-conventions.md).
 
 In der klassischen Benutzeroberfläche ist **die Eingabe von ungültigen Zeichen** im Feld **Name** unzulässig.
 
@@ -125,7 +125,7 @@ In der klassischen Benutzeroberfläche ist **die Eingabe von ungültigen Zeichen
 
 In AEM gibt eine Vorlage einen speziellen Seitentyp an. Eine Vorlage wird als Grundlage für jede neue Seite verwendet, die erstellt wird.
 
-Die Vorlage definiert die Struktur einer Seite, einschließlich eines Miniaturbilds und anderer Eigenschaften. Sie können beispielsweise separate Vorlagen für Produktseiten, Sitemaps und Kontaktinformationen verwenden. Vorlagen bestehen aus [Komponenten](#components).
+Die Vorlage definiert die Seitenstruktur, einschließlich einer Miniaturansicht und anderer Eigenschaften. Beispielsweise können Sie unterschiedliche Vorlagen für Produktseiten, Sitemaps und Kontaktangaben verwenden. Vorlagen bestehen aus [Komponenten](#components).
 
 Im Lieferumfang von AEM sind diverse Vorlagen enthalten. Die angebotenen Vorlagen hängen von der einzelnen Website ab. Welche Informationen (beim Erstellen der neuen Seite) angegeben werden müssen, hängt von der verwendeten Benutzeroberfläche ab. Die wichtigsten Felder sind:
 
@@ -156,7 +156,7 @@ Sobald Sie eine Seite erstellt und geöffnet haben, können Sie mithilfe der Kom
 
 Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstellen, bevor Sie mit der Erstellung von Inhalten beginnen können:
 
-1. Aus dem **Websites** -Konsole, wählen Sie die Ebene aus, auf der Sie eine Seite erstellen möchten.
+1. Wählen Sie in der Konsole **Websites** die Ebene aus, auf der Sie eine Seite erstellen möchten.
 
    Im folgenden Beispiel erstellen Sie eine Seite auf der Ebene **Produkte**, die im linken Bereich angezeigt wird. Der rechte Bereich zeigt Seiten, die bereits auf der Ebene unter **Produkte** existieren.
 
@@ -171,7 +171,7 @@ Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstell
    * Angabe eines **Titels**, der für die Benutzenden angezeigt wird.
    * Angabe eines **Namens**, der für die Erzeugung des URI verwendet wird. Wenn kein Name angegeben wird, wird der Name aus dem Titel abgeleitet.
 
-      * Wenn Sie eine Seite angeben **Name** beim Erstellen einer Seite AEM [validiert den Namen gemäß den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR eingeführt.
+      * Wenn Sie beim Erstellen einer Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen entsprechend den von AEM und JCR vorgegebenen Konventionen](/help/sites-developing/naming-conventions.md).
       * In der klassischen Benutzeroberfläche ist **die Eingabe von ungültigen Zeichen** im Feld **Name** unzulässig.
 
    * Klicken Sie auf die Vorlage, die Sie zum Erstellen der neuen Seite verwenden möchten.
@@ -182,7 +182,7 @@ Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstell
    >
    >Siehe [Seitenbenennungskonventionen](#page-naming-conventions).
 
-   Die zum Erstellen einer Seite mindestens erforderlichen Informationen sind die **Titel** und die erforderliche Vorlage.
+   Zum Erstellen einer Seite sind mindestens ein **Titel** und die Vorlage erforderlich.
 
    ![screen_shot_2012-02-15at114845am](assets/screen_shot_2012-02-15at114845am.png)
 
@@ -192,11 +192,11 @@ Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstell
 
 1. Klicken Sie auf **Erstellen**, um die Seite zu erstellen. Dann kehren Sie zur Konsole **Websites** zurück, wo Sie den Eintrag für die neue Seite sehen können.
 
-   Die Konsole enthält Informationen über die Seite (z. B. wann sie zuletzt bearbeitet wurde und von wem), die nach Bedarf aktualisiert werden.
+   Die Konsole enthält Informationen über die Seite (z. B. wann und von wem sie zuletzt bearbeitet wurde), die nach Bedarf aktualisiert werden.
 
    >[!NOTE]
    >
-   >Sie können auch eine Seite erstellen, wenn Sie eine vorhandene Seite bearbeiten. Verwenden **Untergeordnete Seite erstellen** aus dem **Seite** -Registerkarte des Sidekicks erstellt eine Seite direkt unter der Seite, die bearbeitet wird.
+   >Sie können auch eine Seite erstellen, wenn Sie eine vorhandene Seite bearbeiten. Mit **Untergeordnete Seite erstellen** auf der Registerkarte **Seite** im Sidekick erstellen Sie eine Seite direkt unter der Seite, die Sie bearbeiten.
 
 ### Öffnen einer Seite zur Bearbeitung {#opening-a-page-for-editing}
 
@@ -236,7 +236,7 @@ Beim Kopieren können Sie Folgendes kopieren:
 
    >[!NOTE]
    >
-   >Sie können auch **Seite kopieren** auf der Registerkarte **Seite** des Sidekicks verwenden. Dadurch wird ein Dialogfeld geöffnet, in dem Sie das Ziel angeben können usw.
+   >Sie können auch **Seite kopieren** auf der Registerkarte **Seite** des Sidekicks verwenden. Ein Dialogfeld wird geöffnet, in dem Sie unter anderem das Ziel angeben können.
 
 ### Verschieben oder Umbenennen einer Seite {#moving-or-renaming-page}
 
@@ -322,7 +322,7 @@ So verschieben oder benennen Sie eine Seite um:
 
 ### Sperren einer Seite {#locking-a-page}
 
-Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite eine [Seite sperren/entsperren](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page). Informationen zu gesperrten Seiten werden auch an beiden Orten angezeigt.
+Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite [eine Seite sperren/entsperren](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page). An beiden Stellen werden auch Informationen zu gesperrten Seiten angezeigt.
 
 ### Erstellen eines neuen Ordners {#creating-a-new-folder}
 
@@ -332,7 +332,7 @@ Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite eine [Sei
 
 1. Öffnen Sie die Konsole **Websites** und navigieren Sie zum gewünschten Ort.
 1. Klicken Sie im Menü **Neu...** (klicken Sie auf den Pfeil neben **Neu...**) auf **Neuer Ordner...**
-1. Die **Ordner erstellen** wird geöffnet. Hier können Sie den **Namen** und den **Titel** eingeben:
+1. Das Dialogfeld **Ordner erstellen** wird geöffnet. Hier können Sie den **Namen** und den **Titel** eingeben:
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 

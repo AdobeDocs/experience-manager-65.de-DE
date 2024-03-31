@@ -10,19 +10,19 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '112'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
 # SPA-Referenzmaterial {#spa-reference-materials}
 
-## JavaScript-API-Verweise SPA{#spa-javascript-api-references}
+## JavaScript-API-Referenzen für SPAs{#spa-javascript-api-references}
 
 Im Folgenden finden Sie die verfügbaren JavaScript-API-Referenzen der NPM-Module für das AEM SPA Editor SDK-Framework.
 
 >[!NOTE]
 >
->Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
+>Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen Client-seitiges Rendern auf Basis eines SPA-Frameworks (z. B. React oder Angular) erforderlich ist.
 
 * [Komponentenzuordnung](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [Seitenmodell-Manager](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
@@ -31,7 +31,7 @@ Im Folgenden finden Sie die verfügbaren JavaScript-API-Referenzen der NPM-Modul
 
 ## GitHub-Open-Source-Repositorys {#github-repositories}
 
-Im Folgenden finden Sie die Open-Source-Repositorys auf GitHub für die SPA Bibliotheken.
+Im Folgenden sind die Open-Source-Repositorys auf GitHub für die SPA Bibliotheken aufgeführt.
 
 * [Komponentenzuordnung](https://github.com/adobe/aem-spa-component-mapping)
 * [Seitenmodell-Manager](https://github.com/adobe/aem-spa-page-model-manager)

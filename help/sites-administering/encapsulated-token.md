@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 89%
 
 ## Einführung {#introduction}
 
-Standardmäßig verwendet AEM den Token-Authentifizierungs-Handler, um Anfragen zu authentifizieren. Um Authentifizierungsanfragen zu erfüllen, benötigt der Token Authentication Handler jedoch Zugriff auf das Repository für jede Anfrage. Dies liegt daran, dass Cookies verwendet werden, um den Authentifizierungsstatus aufrechtzuerhalten. Logischerweise muss der Status im Repository beibehalten werden, um nachfolgende Anfragen zu validieren. Das bedeutet, dass der Authentifizierungsmechanismus zustandsabhängig ist.
+Standardmäßig verwendet AEM den Token-Authentifizierungs-Handler, um Anfragen zu authentifizieren. Um Authentifizierungsanfragen zu erfüllen, benötigt der Token-Authentifizierungs-Handler jedoch für jede Anfrage Zugriff auf das Repository. Dies liegt daran, dass Cookies verwendet werden, um den Authentifizierungsstatus aufrechtzuerhalten. Logischerweise muss der Status im Repository beibehalten werden, um nachfolgende Anfragen zu validieren. Das bedeutet, dass der Authentifizierungsmechanismus zustandsabhängig ist.
 
-Dies ist für die horizontale Skalierbarkeit besonders wichtig. Bei einer Einrichtung mit mehreren Instanzen wie der unten dargestellten Veröffentlichungsfarm kann der Lastenausgleich nicht optimal durchgeführt werden. Bei der zustandsabhängigen Authentifizierung ist der gespeicherte Authentifizierungsstatus nur auf der Instanz verfügbar, auf der der Benutzer zum ersten Mal authentifiziert wird.
+Dies ist für die horizontale Skalierbarkeit besonders wichtig. Bei einem Setup mit mehreren Instanzen, wie etwa der unten dargestellten Veröffentlichungsfarm, kann die Lastverteilung nie optimal sein. Bei der zustandsabhängigen Authentifizierung ist der gespeicherte Authentifizierungsstatus nur auf der Instanz verfügbar, auf der der Benutzer zum ersten Mal authentifiziert wird.
 
 ![chlimage_1-33](assets/chlimage_1-33a.png)
 
@@ -44,7 +44,7 @@ Wie dies in einer geografisch verteilten Bereitstellung mit MongoMK-Autoren und 
 
 >[!NOTE]
 >
->Das Encapsulated Token bezieht sich auf die Authentifizierung. Dadurch wird sichergestellt, dass das Cookie ohne Zugriff auf das Repository validiert werden kann. Es ist jedoch weiterhin erforderlich, dass die Benutzenden in allen Instanzen vorhanden sind und dass die unter diesen Benutzenden gespeicherten Informationen für jede Instanz zugänglich sind.
+>Das Encapsulated Token dient zur Authentifizierung. Dadurch wird sichergestellt, dass das Cookie ohne Zugriff auf das Repository validiert werden kann. Es ist jedoch weiterhin erforderlich, dass die Benutzenden in allen Instanzen vorhanden sind und dass die unter diesen Benutzenden gespeicherten Informationen für jede Instanz zugänglich sind.
 >
 >Wenn beispielsweise neue Benutzende auf der Veröffentlichungsinstanz 1 erstellt werden, werden sie aufgrund der Funktionsweise des Encapsulated Tokens erfolgreich auf der Veröffentlichungsinstanz 2 authentifiziert. Wenn die Benutzenden auf der zweiten Veröffentlichungsinstanz nicht vorhanden sind, ist die Anfrage dennoch nicht erfolgreich.
 >
@@ -60,12 +60,12 @@ Wie dies in einer geografisch verteilten Bereitstellung mit MongoMK-Autoren und 
 
 Beim Konfigurieren des Encapsulated Tokens müssen einige Aspekte beachtet werden:
 
-1. Aufgrund der Verschlüsselung müssen alle Instanzen denselben HMAC-Schlüssel haben. Seit AEM 6.3 werden die Schlüsseldaten nicht mehr im Repository, sondern im Dateisystem selbst gespeichert. Daher besteht die beste Möglichkeit zum Replizieren der Schlüssel darin, sie vom Dateisystem der Quellinstanz zum Dateisystem der Zielinstanz(en) zu kopieren, auf die Sie die Schlüssel replizieren möchten. Weitere Informationen dazu finden Sie unter „Replizieren des HMAC-Schlüssels“.
+1. Aufgrund der Verschlüsselung müssen alle Instanzen denselben HMAC-Schlüssel aufweisen. Seit AEM 6.3 werden die Schlüsseldaten nicht mehr im Repository, sondern im Dateisystem selbst gespeichert. Daher besteht die beste Möglichkeit zum Replizieren der Schlüssel darin, sie vom Dateisystem der Quellinstanz zum Dateisystem der Zielinstanz(en) zu kopieren, auf die Sie die Schlüssel replizieren möchten. Weitere Informationen dazu finden Sie unter „Replizieren des HMAC-Schlüssels“.
 1. Das Encapsulated Token muss aktiviert sein. Dies kann über die Web-Konsole erfolgen.
 
 ### Replizieren des HMAC-Schlüssels {#replicating-the-hmac-key}
 
-Um den Schlüssel über mehrere Instanzen hinweg zu replizieren, müssen Sie:
+Um den Schlüssel auf weitere Instanzen zu replizieren, führen Sie die folgenden Schritte durch:
 
 1. Greifen Sie auf die AEM-Instanz zu, auf der sich die zu kopierenden Schlüsseldaten befinden. In der Regel handelt es sich dabei um eine Autoreninstanz.
 1. Suchen Sie im lokalen Dateisystem das Bundle `com.adobe.granite.crypto.file`. Es kann sich z. B. unter diesem Pfad befinden:

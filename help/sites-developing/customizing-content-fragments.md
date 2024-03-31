@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2728'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Je nach Fragmenttyp werden außerdem Modelle oder Vorlagen verwendet:
    * Inhaltsfragmentmodelle definieren die Struktur eines Inhaltsfragments, wenn dieses erstellt wird.
    * Ein Fragment verweist auf das Modell. Änderungen am Modell können sich daher auf alle abhängigen Fragmente auswirken.
    * Modelle werden anhand von Datentypen erstellt.
-   * Funktionen zum Hinzufügen neuer Varianten usw. müssen das Fragment entsprechend aktualisieren.
+   * Funktionen zum Hinzufügen neuer Varianten müssen das Fragment entsprechend aktualisieren.
 
   >[!CAUTION]
   >
@@ -61,8 +61,8 @@ Je nach Fragmenttyp werden außerdem Modelle oder Vorlagen verwendet:
    * wird zum Definieren von einfachen Inhaltsfragmenten verwendet.
    * Vorlagen definieren die (grundlegende, textbasierte) Struktur eines Inhaltsfragments, wenn dieses erstellt wird.
    * Die Vorlage wird beim Erstellen des Fragments in dieses kopiert. Weitere Änderungen an der Vorlage werden daher nicht für bereits vorhandene Fragmente übernommen.
-   * Funktionen zum Hinzufügen neuer Varianten usw. müssen das Fragment entsprechend aktualisieren.
-   * [Inhaltsfragmentvorlagen](/help/sites-developing/content-fragment-templates.md) auf andere Weise als andere Vorlagenkomponenten innerhalb des AEM-Ökosystems (z. B. Seitenvorlagen usw.) arbeiten. Daher sollten sie separat berücksichtigt werden.
+   * Funktionen zum Hinzufügen neuer Varianten müssen das Fragment entsprechend aktualisieren.
+   * [Inhaltsfragmentvorlagen](/help/sites-developing/content-fragment-templates.md) funktionieren anders als die anderer Vorlagenmechanismen im AEM-Ökosystem (z. B. Seitenvorlagen). Daher sollten sie separat berücksichtigt werden.
    * Wenn der MIME-Typ eines Inhalts auf einer Vorlage basiert, wird er für den tatsächlichen Inhalt verwaltet. Folglich kann jedes Element und jede Variante einen anderen MIME-Typ aufweisen.
 
 ### Integration in Assets {#integration-with-assets}
@@ -77,7 +77,7 @@ Die Inhaltsfragmentverwaltung (Content Fragment Management, CFM) ist Teil von AE
 
 ![fragment-to-assets-structured](assets/fragment-to-assets-structured.png)
 
-Inhaltsfragmente mit strukturiertem Inhalt (d. h. basierend auf einem Inhaltsfragmentmodell) werden einem einzelnen Asset zugeordnet:
+Inhaltsfragmente mit strukturierten Inhalten (d. h. basierend auf einem Inhaltsfragmentmodell) werden einem einzelnen Asset zugeordnet:
 
 * Alle Inhalte werden im Knoten `jcr:content/data` des Assets gespeichert:
 
@@ -139,7 +139,7 @@ AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen andere
 * Außerdem kann eine Reihe von Absätzen ausgewählt werden, um die Ausgabe zu beschränken, z. B. für die Ausgabe in mehreren Spalten.
 * Die Komponente lässt auch [Zwischeninhalte](/help/sites-developing/components-content-fragments.md#in-between-content) zu:
 
-   * Hier können Sie mit der Komponente andere Assets (Bilder usw.) zwischen den Absätzen des referenzierten Fragments platzieren.
+   * Hier können Sie mit der Komponente andere Assets (Bilder) zwischen den Absätzen des referenzierten Fragments platzieren.
    * Bei Zwischeninhalten müssen Sie:
 
       * beachten, dass Verweise möglicherweise instabil sind. Bei der Seitenbearbeitung hinzugefügte Zwischeninhalte haben keine feste Beziehung zu dem Absatz, neben dem sie platziert werden; es wird ein neuer Absatz (im Inhaltsfragment-Editor) eingefügt, bevor der Zwischeninhalt die relative Position verlieren kann.
@@ -162,7 +162,7 @@ Die Backend-Implementierung von Inhaltsfragmenten ist beispielsweise dafür vera
 Die erforderlichen Parameter können in der [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) für das OSGi-Bundle **Konfiguration der Inhaltsfragmentkomponente** konfiguriert werden.
 
 * **Ressourcentypen**
-Eine Liste von `sling:resourceTypes` kann bereitgestellt werden, um Komponenten zu definieren, die für die Wiedergabe von Inhaltsfragmenten verwendet werden und auf die die Hintergrundverarbeitung angewendet werden soll.
+Es kann eine Liste von `sling:resourceTypes` angegeben werden, um zu definieren, welche Komponenten zum Rendern der Inhaltsfragmente verwendet werden sollen und worauf die Hintergrundverarbeitung angewendet werden soll.
 
 * **Verweiseigenschaften** Eine Liste der konfigurierbaren Eigenschaften, die angeben, wo der Verweis auf das Fragment für die entsprechende Komponente gespeichert werden soll.
 
@@ -182,7 +182,7 @@ Es gibt noch einige weitere Richtlinien, die Sie befolgen müssen, um sicherzust
 
 * Falls die Ausgabe mehrerer Elemente (durch Verwendung von `elementNames` zur Angabe mehrerer Elemente) unterstützt wird, wird der tatsächliche Anzeigemodus durch die `displayMode`-Eigenschaft definiert:
 
-   * Wenn der Wert `singleText` (und nur ein Element konfiguriert ist) wird das Element als Text mit Zwischeninhalten, Layout-Unterstützung usw. gerendert. Dies ist die Standardeinstellung für Fragmente, für die nur ein einzelnes Element gerendert wird.
+   * Falls der Wert `singleText` lautet (und nur ein Element konfiguriert ist), wird das Element als Text mit Zwischeninhalt und Layout-Unterstützung gerendert. Dies ist die Standardeinstellung für Fragmente, für die nur ein einzelnes Element gerendert wird.
    * In allen anderen Fällen wird ein weitaus einfacherer Ansatz (eine Art „Formularansicht“) verwendet, bei dem kein Zwischeninhalt unterstützt, sondern das Fragment im Ist-Zustand gerendert wird.
 
 * Falls das Fragment für `displayMode` == `singleText` (implizit oder explizit) gerendert wird, müssen auch folgende zusätzlichen Eigenschaften berücksichtigt werden:
@@ -234,7 +234,7 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
 
      `/libs/dam/content/schemaeditors/forms/contentfragment`
 
-     diese Option kann bei Bedarf erweitert werden.
+     dieses kann bei Bedarf erweitert werden.
 
    * Das entsprechende Schemaformular ist mit dem Fragmenteditor integriert.
 
@@ -254,7 +254,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
 * **Fragmentvorlage** ([FragmentTemplate](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
-  Verwendung `FragmentTemplate.createFragment()` zum Erstellen eines Fragments.
+  Verwenden Sie `FragmentTemplate.createFragment()` zum Erstellen eines neuen Fragments.
 
   ```
   Resource templateOrModelRsc = resourceResolver.getResource("...");
@@ -323,7 +323,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
       * Hinzufügen von Sammlungen
       * Entfernen von Sammlungen
 
-   * Zugriff auf das Modell oder die Vorlage des Fragments
+   * Zugreifen auf das Modell oder die Vorlage des Fragments
 
   Folgende Schnittstellen stehen für die Hauptelemente eines Fragments:
 
@@ -480,7 +480,7 @@ Dazu können Sie die Ressource, die für die API steht, wie folgt anpassen:
 
 `com.adobe.cq.dam.cfm.ContentFragment`
 
-Beispiel:
+Zum Beispiel:
 
 ```java
 // first, get the resource
@@ -498,7 +498,7 @@ Um ein Inhaltsfragment programmgesteuert zu erstellen, müssen Sie Folgendes ver
 
 `com.adobe.cq.dam.cfm.ContentFragmentManager#create`
 
-Beispiel:
+Zum Beispiel:
 
 ```java
 Resource templateOrModelRsc = resourceResolver.getResource("...");

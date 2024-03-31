@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 31%
+ht-degree: 100%
 
 ---
 
@@ -20,15 +20,15 @@ Ein Startpunkt ruft einen in der Workbench erstellten Prozess auf. Ein ist mit e
 
 >[!NOTE]
 >
->Die Begriffe &quot;Startpunkte&quot;, &quot;Startprozess&quot;und &quot;Formular&quot;werden synonym verwendet, wenn auf dieses Konzept verwiesen wird.
+>Die Begriffe „Startpunkte“, „Startprozess“ und „Formular“ werden wechselweise verwendet, wenn von diesem Konzept die Rede ist.
 
-Um einen Prozess aus der Adobe Experience Manager (AEM) Forms App zu starten, benötigen Sie einen Startpunkt vom Typ **Arbeitsbereich** in Ihrem Prozess. Außerdem müssen Sie die **[!UICONTROL In Mobile Workspace sichtbar]** -Option für den Startpunkt.
+Um einen Prozess aus der Adobe Experience Manager Forms-Anwendung zu initiieren, müssen Sie einen Startpunkt des Typs **Arbeitsbereich** in Ihrem Prozess haben. Außerdem müssen Sie für den Startpunkt die Option **[!UICONTROL In Mobile Workspace sichtbar]** auswählen.
 
 ![mws_startpoint_select_option](assets/mws_startpoint_select_option.png)
 
 **Starten eines in Workbench definierten Prozesses**
 
-1. Um die in der AEM Forms-App verfügbaren Startpunkte anzuzeigen, navigieren Sie zu [Startbildschirm](../../forms/using/home-screen.md).
+1. Um die in der AEM Forms-Anwendung verfügbaren Startpunkte anzuzeigen, navigieren Sie zum [Startbildschirm](../../forms/using/home-screen.md).
 1. Auf dem Bildschirm **[!UICONTROL Startseite]** wird standardmäßig die Liste **[!UICONTROL Alle Formulare]** angezeigt.
 
    Der Startpunkt ist mit einem Formular verknüpft. Wählen Sie in der Liste das mit dem Startpunkt verknüpfte Formular aus, um es zu öffnen.
@@ -39,10 +39,10 @@ Um einen Prozess aus der Adobe Experience Manager (AEM) Forms App zu starten, be
 
    Sie können dieser Aufgabe mithilfe der Schaltfläche[ Anlage](../../forms/using/add-attachments.md) Anmerkungen hinzufügen.
 
-1. Nachdem Sie das Formular ausgefüllt haben, wählen Sie die **[!UICONTROL Einsenden]** Schaltfläche.
+1. Nachdem Sie das Formular ausgefüllt haben, wählen Sie die Schaltfläche **[!UICONTROL Absenden]** aus.
 
-Wenn die App offline ist, werden das Formular und die zugehörigen Daten im Ordner &quot;Outbox&quot;gespeichert.
+Wenn die App offline ist, werden das Formular und die Daten im Ordner „Postausgang“ gespeichert.
 
-Wenn die App online ist, wird die Aufgabe mit dem AEM Forms-Server synchronisiert und dem im Prozess angegebenen Benutzer zugewiesen.
+Wenn die App online ist, wird die Aufgabe mit dem AEM-Formular-Server synchronisiert und der im Prozess angegebenen Person zugewiesen.
 
-Informationen zum Arbeiten mit der Aufgabe in der Aufgabenliste finden Sie unter [Öffnen einer Aufgabe](/help/forms/using/open-task.md).
+Informationen zum Bearbeiten der Aufgabe in Ihrer Aufgabenliste finden Sie unter [Öffnen einer Aufgabe](/help/forms/using/open-task.md).

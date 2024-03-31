@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '740'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Sie können Werte verwenden, die in ein Element Ihres Formulars eingegeben wurde
 
 Um die Metadatenfelder mit den vom Benutzer eingegebenen Werten zu berechnen, müssen Sie Elemente Ihres Formulars in den Metadaten hinzufügen. Wenn ein Benutzer einen Wert in diesem Element eingibt, verwendet ein Skript den Wert, um diese Informationen zu berechnen. Diese Informationen werden den Metadaten hinzugefügt. Wenn Sie ein Element als Metadatenfeld hinzufügen, stellen Sie einen Schlüssel dafür bereit. Der Schlüssel wird als Feld in den Metadaten hinzugefügt und die berechneten Informationen werden damit protokolliert.
 
-Beispielsweise veröffentlicht eine Krankenversicherung ein Formular. In diesem Formular erfasst ein Feld das Alter der Endbenutzenden. Die Kundin bzw. der Kunde möchte alle Übermittlungen in einer bestimmten Altersgruppe überprüfen, nachdem mehrere Benutzende das Formular übermittelt haben. Statt alle Daten einzeln zu überprüfen, was mit zunehmender Anzahl an Formularen schwieriger wird, helfen zusätzliche Metadaten dabei. Der Formularautor kann konfigurieren, welche Eigenschaften/Daten vom Endbenutzer auf der obersten Ebene gespeichert werden, damit die Suche am einfachsten ist. Zusätzliche Metadaten sind vom Benutzer ausgefüllte Informationen, die auf der obersten Ebene des Metadatenknotens gespeichert werden, wie vom Autor konfiguriert.
+Beispielsweise veröffentlicht eine Krankenversicherung ein Formular. In diesem Formular erfasst ein Feld das Alter der Endbenutzenden. Die Kundin bzw. der Kunde möchte alle Übermittlungen in einer bestimmten Altersgruppe überprüfen, nachdem mehrere Benutzende das Formular übermittelt haben. Statt alle Daten einzeln zu überprüfen, was mit zunehmender Anzahl an Formularen schwieriger wird, helfen dabei zusätzliche Metadaten. Die Autorin oder der Autor des Formulars kann konfigurieren, welche Eigenschaften/Daten von Endbenutzenden auf der obersten Ebene gespeichert werden, damit die Suche möglichst einfach ist. Zusätzliche Metadaten sind von Benutzenden ausgefüllte Informationen, die auf der obersten Ebene des Metadatenknotens gespeichert werden, wie der Autor bzw. die Autorin es konfiguriert hat.
 
 Ein weiteres Beispiel ist ein Formular, das E-Mail-IDs und Telefonnummern erfasst. Wenn eine Benutzerin bzw. ein Benutzer dieses Formular anonym besucht und das Formular verlässt, kann die Autorin bzw. der Autor das Formular so konfigurieren, dass die E-Mail-Adresse und die Telefonnummer automatisch gespeichert werden. Dieses Formular wird automatisch gespeichert und die Telefonnummer und die E-Mail-Adresse werden im Metadatenknoten des Entwurfs gespeichert. Ein Anwendungsfall dieser Konfiguration ist das Lead-Management-Dashboard.
 
@@ -32,8 +32,8 @@ Ein weiteres Beispiel ist ein Formular, das E-Mail-IDs und Telefonnummern erfass
 Führen Sie die folgenden Schritte aus, um den Metadaten ein Element hinzuzufügen:
 
 1. Öffnen Sie Ihr adaptives Formular im Bearbeitungsmodus.\
-   Um das Formular im Bearbeitungsmodus zu öffnen, wählen Sie es im Forms Manager aus und wählen Sie **Öffnen**.
-1. Wählen Sie im Bearbeitungsmodus eine Komponente aus und wählen Sie ![Feldebene](assets/field-level.png) > **Container für adaptive Formulare** und wählen Sie ![cmppr](assets/cmppr.png).
+   Um das Formular im Bearbeitungsmodus zu öffnen, wählen Sie es in Forms Manager aus und wählen Sie **Öffnen** aus.
+1. Wählen Sie im Bearbeitungsmodus eine Komponente aus, wählen Sie ![field-level](assets/field-level.png) > **Adaptiver Formular-Container** und dann ![cmppr](assets/cmppr.png) aus.
 1. Klicken Sie in der Seitenleiste auf **Metadaten**.
 1. Klicken Sie im Abschnitt „Metadaten“ auf **Hinzufügen**.
 1. Verwenden Sie das Feld „Wert“ auf der Registerkarte „Metadaten“, um Skripte hinzuzufügen. Die Skripte, die Sie hinzufügen, erfassen Daten aus Elementen im Formular und berechnen Werte, die an die Metadaten übergeben werden.

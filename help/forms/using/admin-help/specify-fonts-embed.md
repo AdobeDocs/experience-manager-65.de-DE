@@ -1,6 +1,6 @@
 ---
 title: Angeben der einzubettenden Schriftarten
-description: Erfahren Sie, wie Sie Schriftarten angeben, die in ein adaptives Formular eingebettet werden sollen. Sie können angeben, welche Schriftarten in Formulare eingebettet werden oder nie in Formulare eingebettet werden, die der Forms-Dienst generiert.
+description: Erfahren Sie, wie Sie Schriftarten angeben, die in ein adaptives Formular eingebettet werden sollen. Sie können angeben, welche Schriften in Formulare eingebettet oder nie eingebettet werden sollen, die vom Forms-Dienst erstellt werden.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
@@ -10,19 +10,19 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 22%
+ht-degree: 100%
 
 ---
 
 # Angeben der einzubettenden Schriftarten{#specify-fonts-to-embed}
 
-Sie können angeben, welche Schriftarten immer oder nie in die von Output verwendeten Formulare eingebettet werden. Das Einbetten von Schriftarten erhöht die Dateigröße der Formulare. Betten Sie ungewöhnliche Schriftarten ein, die Benutzer wahrscheinlich nicht auf ihren Systemen haben, und betten Sie keine gängigen Schriftarten ein, die sie installiert haben.
+Sie können angeben, welche Schriftarten immer oder nie in Formulare eingebettet werden sollen, die von der Ausgabe verwendet werden. Das Einbetten von Schriften erhöht die Dateigröße von Formularen. Betten Sie ungewöhnliche Schriftarten ein, die Benutzende eher selten installiert haben, während gängige Schriften, die vermutlich installiert sind, nicht eingebettet werden sollten.
 
 >[!NOTE]
 >
->Wenn Sie eine benutzerdefinierte XCI-Datei für die Ausgabe angegeben haben, setzt die Option &quot;Schrift einbetten&quot;in der XCI-Datei diese Einstellungen außer Kraft. (Siehe [Dateispeicherorte für Output angeben](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).
+>Wenn Sie eine benutzerdefinierte XCI-Datei für Output angegeben haben, setzt die Option „Schrift einbetten“ in der XCI-Datei diese Einstellungen außer Kraft. (Siehe [Angeben von Dateispeicherorten für die Ausgabe](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).)
 
 1. Klicken Sie in der Administration-Console auf „Dienste“ > „Ausgabe“.
-1. Geben Sie unter „Schrifteinbettungseinstellungen“ in das Feld „Schriftarten immer einbetten“ die Namen der Schriftarten (durch Kommas getrennt) ein, die in Formulare eingebettet werden sollen. Die von Ihnen angegebenen Schriftarten werden nur dann in das generierte Formular eingebettet, wenn sie im Formular verwendet werden. Diese Einstellung wird ignoriert, wenn die Option &quot;Schrift einbetten&quot;in der XCI-Datei aktiviert wurde, die an den Dienst übergeben wird. In diesem Fall werden alle im PDF verwendeten Schriftarten immer eingebettet.
-1. Geben Sie in das Feld „Schriften nie einbetten“ die Namen der Schriftarten (durch Kommas getrennt) ein, die nicht in Formulare eingebettet werden sollen. Die von Ihnen angegebenen Schriftarten werden nicht in die PDF eingebettet, selbst wenn sie auf der generierten PDF verwendet werden. Diese Einstellung wird ignoriert, wenn die Option &quot;Schrift einbetten&quot;in der XCI-Datei, die an den Dienst übergeben wird, deaktiviert wurde. In diesem Fall wird keine der im PDF verwendeten Schriftarten eingebettet.
+1. Geben Sie unter „Schrifteinbettungseinstellungen“ in das Feld „Schriftarten immer einbetten“ die Namen der Schriftarten (durch Kommas getrennt) ein, die in Formulare eingebettet werden sollen. Die von Ihnen angegebenen Schriftarten werden nur dann in dem erzeugten Formular eingebettet, wenn sie in dem Formular verwendet werden. Diese Einstellung wird ignoriert, wenn die Option „Schrift einbetten“ in der XCI-Datei, die an den Dienst übermittelt wird, aktiviert ist.  In diesem Fall werden alle Schriftarten, die in der PDF-Datei verwendet werden, immer eingebettet.
+1. Geben Sie in das Feld „Schriften nie einbetten“ die Namen der Schriftarten (durch Kommas getrennt) ein, die nicht in Formulare eingebettet werden sollen. Die hier von Ihnen angegebenen Schriftarten werden nicht in der PDF-Datei eingebettet, selbst wenn sie in der generierten PDF-Datei verwendet werden. Diese Einstellung wird ignoriert, wenn die Option „Schriftart einbetten“ in der XCI-Datei, die an den Dienst übermittelt wird, deaktiviert ist.  In diesem Fall wird keine der Schriftarten, die in der PDF-Datei verwendet werden, eingebettet.
 1. Klicken Sie auf „Speichern“.

@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '933'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -397,7 +397,7 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
 
 ## Unterschiede zwischen den Funktionen von AEM Inbox und AEM Forms-App {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Zwei der bekanntesten Möglichkeiten zum Starten eines formularbasierten Workflows sind der [AEM-Posteingang](../../forms/using/manage-applications-inbox.md) und die Mobile App von AEM Forms. Die Funktionen von AEM Inbox und AEM Forms-App sind jedoch unterschiedlich. AEM Posteingang funktioniert nur mit [Forms-orientierte Workflows](../../forms/using/aem-forms-workflow.md) während die AEM Forms-App sowohl mit Forms-orientierten Workflows als auch mit Prozessverwaltung funktioniert.
+Zwei der bekanntesten Möglichkeiten zum Starten eines formularbasierten Workflows sind der [AEM-Posteingang](../../forms/using/manage-applications-inbox.md) und die Mobile App von AEM Forms. Die Funktionen von AEM Inbox und AEM Forms-App sind jedoch unterschiedlich. Der AEM-Posteingang funktioniert nur mit [Formular-zentrierten Workflows](../../forms/using/aem-forms-workflow.md), während die AEM Forms-App sowohl mit Formular-zentrierten Workflows als auch mit der Prozessverwaltung verwendet werden kann.
 
 Die folgende Tabelle zeigt die Funktionen von AEM Inbox und der AEM Forms App:
 

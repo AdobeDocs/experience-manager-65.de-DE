@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 474a14a247afecdd8415f75997279d1ecd394cda
 workflow-type: tm+mt
 source-wordcount: '5504'
-ht-degree: 82%
+ht-degree: 84%
 
 ---
 
@@ -69,7 +69,7 @@ Nachdem Sie Ihr AEM-Projekt eingerichtet haben, definieren Sie eine Strategie f�
    * **XFA-Formularvorlage**: Dieses Formularmodell ist ideal, wenn bereits ein Bestand an XFA-basierten HTML5-Formularen vorhanden ist. Es bietet eine direkte Möglichkeit, Ihre XFA-basierten Formulare in adaptive Formulare zu konvertieren. Alle vorhandenen XFA-Regeln bleiben in den zugehörigen adaptiven Formularen erhalten. Die resultierenden adaptiven Formulare unterstützen XFA-Konstrukte, z. B. Überprüfungen, Ereignisse, Eigenschaften und Muster.
    * **Formulardatenmodell**: Dies ist das bevorzugte Formularmodell, wenn Sie Ihre Backend-Systeme wie Datenbanken, Web-Services und AEM-Benutzerprofile integrieren möchten, um adaptive Formulare vorauszufüllen und übermittelte Formulardaten zurück in die Backend-Systeme zu schreiben. Mit einem Formulardatenmodell-Editor können Sie Entitäten und Dienste in einem Formulardatenmodell definieren und konfigurieren, das Sie zum Erstellen adaptiver Formulare verwenden können. Weitere Informationen finden Sie unter [AEM Forms-Datenintegration](/help/forms/using/data-integration.md).
 
-Es ist wichtig, das Datenmodell mit Bedacht auszuwählen, das nicht nur Ihren Anforderungen entspricht, aber Ihre bereits getätigten Investitionen in XSD-Asset XFA-Assets erweitert. Verwenden Sie das XSD-Modell, um Formularvorlagen zu erstellen, da die generierte XML Daten gemäß dem vom Schema definierten XPATH enthält. Die Verwendung des XSD-Modells als Standardoption für das Formulardatenmodell ist ebenfalls hilfreich, weil wegen der One-to-One-Zuweisung des Formularfelds der Formularentwurf vom Backend-System, das Daten verarbeitet und verbraucht, entkoppelt und die Leistung des Formulars verbessert wird. Außerdem kann BindRef des Felds als XPATH seines Datenwerts in XML verwendet werden.
+Es ist wichtig, das Datenmodell mit Bedacht auszuwählen, das nicht nur Ihren Anforderungen entspricht, aber Ihre bereits getätigten Investitionen in XSD-Asset XFA-Assets erweitert. Verwenden Sie das XSD-Modell, um Formularvorlagen zu erstellen, da die generierte XML Daten enthält, die per XPATH vom Schema definiert wurden. Die Verwendung des XSD-Modells als Standardoption für das Formulardatenmodell ist ebenfalls hilfreich, weil wegen der One-to-One-Zuweisung des Formularfelds der Formularentwurf vom Backend-System, das Daten verarbeitet und verbraucht, entkoppelt und die Leistung des Formulars verbessert wird. Außerdem kann BindRef des Felds als XPATH seines Datenwerts in XML verwendet werden.
 
 Weitere Informationen finden Sie unter [Erstellen eines adaptiven Formulars](/help/forms/using/creating-adaptive-form.md).
 
@@ -104,7 +104,7 @@ Die Formularvorlagen können auch aus Paketen mit adaptiven Formularen, die auf 
 * Der Ausführungsmodus **nosamplecontent** wird nur für Autor- und nicht für Veröffentlichungsknoten empfohlen.
 * Die Bearbeitung von Assets wie adaptiven Formularen, Designs, Vorlagen oder Cloud-Konfigurationen erfolgt nur über Autorknoten, die auf den konfigurierten Veröffentlichungsknoten veröffentlicht werden können.
 Weitere Informationen finden Sie unter [Veröffentlichung von Formularen und Dokumenten und Veröffentlichungen rückgängig machen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=de)
-* Das Forms-Add-On-Paket ist für die Bearbeitung und Veröffentlichung erforderlich, um die Document Service-Vorgänge zu unterstützen. Daher kann es als Abhängigkeit betrachtet werden.
+* Das Add-On-Paket für Forms ist für Authoring und Publishing erforderlich, um die Document Service-Vorgänge zu unterstützen. Daher kann es als Abhängigkeit betrachtet werden.
 Wenn Sie nur Forms-bezogene Beispielvorlagen, Designs und DOR-Pakete möchten, können Sie sie von [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=de) herunterladen.
 
 Weitere Informationen finden Sie im Abschnitt zu empfohlenen Vorgehensweisen unter [Einführung in das Authoring adaptiver Formulare](/help/forms/using/introduction-forms-authoring.md).
@@ -188,7 +188,7 @@ Der Regeleditor bietet einen visuellen Editor und einen Code-Editor zum Schreibe
 
 ### Arbeiten mit Designs {#working-with-themes}
 
-Mit Designs für adaptive Formulare können Sie wiederverwendbare Stile erstellen, die formularübergreifend angewendet werden können, um Einheitlichkeit in Bezug auf Look und Stil zu erreichen. Verwenden Sie Designs, um die Formatierung für Formularkomponenten und Bedienfelder zu definieren. Einige Best Practices zu Designs lauten wie folgt:
+Mit Designs für adaptive Formulare können Sie wiederverwendbare Stile erstellen, die formularübergreifend angewendet werden können, um Einheitlichkeit in Bezug auf Look und Stil zu erreichen. Verwenden Sie Designs, um Formatierungen für Formularkomponenten und Bedienfelder zu definieren. Einige Best Practices zu Designs lauten wie folgt:
 
 * Nutzen Sie die Asset-Bibliothek zur schnellen Anwendung von Textstilen, Hintergründen und Bildern. Wenn ein Stil in der Asset-Bibliothek hinzugefügt wird, steht er für andere Designs und im Stilmodus des Formulareditors zur Verfügung.
 * Wenden Sie globale Einstellungen, z. B. für Schrift und Seitenhintergrund, mithilfe der Auswahl auf Seitenebene an.
@@ -242,7 +242,7 @@ Adaptive Formulare benötigen Übermittlungsaktionen für die Verarbeitung der v
 * Sie können eine benutzerdefinierte Sendeaktion schreiben, wenn die standardmäßigen Sendeaktionen Ihren Anwendungsfall nicht erfüllen. Weitere Informationen finden Sie unter[ Schreiben von benutzerdefinierten Übermittlungsaktionen für ein adaptives Formular](/help/forms/using/custom-submit-action-form.md).
 * Beziehen Sie serverseitige Validierungen ein, um zu verhindern, dass ungültige Daten übermittelt werden. 
 
-Sie können Adobe Sign in adaptiven Formularen mit mehreren Signaturen verwenden. Beachten Sie die folgenden Punkte bei der Konfiguration von Adobe Sign in adaptiven Formularen.  Weitere Informationen finden Sie unter [Verwenden von Adobe Sign in einem adaptiven Formular](/help/forms/using/working-with-adobe-sign.md).
+Sie können die Funktion der mehrfachen Signaturen von Adobe Sign in adaptiven Formularen nutzen.  Beachten Sie die folgenden Punkte bei der Konfiguration von Adobe Sign in adaptiven Formularen.  Weitere Informationen finden Sie unter [Verwenden von Adobe Sign in einem adaptiven Formular](/help/forms/using/working-with-adobe-sign.md).
 
 * Adobe Sign-aktiviertes Formular wird nur gesendet, nachdem alle Unterzeichner das Formular unterzeichnet haben. Formulare werden im Status „Ausstehende Signatur“ angezeigt, bis das Formular von allen Signierern unterzeichnet wurde.
 * Sie können die Funktion des Unterzeichnens im Formular konfigurieren oder Unterzeichnende beim Absenden auf eine neue Signaturseite umleiten.
@@ -258,7 +258,7 @@ Ein Datensatzdokument (Document of Record, DoR) ist eine komprimierte PDF-Versio
    * **XSD-Schema**: Verwendet die zugeordnete XFA-Vorlage, die das gleiche XML-Schema wie das adaptive Formular verwendet.
    * **Ohne**: Verwendet ein automatisch generiertes DoR.
 
-* Konfigurieren Sie Kopf- und Fußzeile, Bilder, Farbe, Schriftart usw. direkt auf der Registerkarte Datensatzdokument des adaptiven Formulareditors.
+* Konfigurieren Sie Kopf- und Fußzeile, Bilder, Farbe und Schrift direkt auf der Registerkarte „Datensatzdokument“ des Editors für adaptive Formulare.
 * Verwenden Sie `DoRService`, um das DoR programmatisch zu generieren.
 * Ausgeblendete Felder aus DoR ausschließen.
 * Verwenden Sie den Aufforderungsparameter `afAcceptLang`; um DoR in einem anderen Gebietsschema anzuzeigen.
@@ -290,7 +290,7 @@ Einige Best Practices beim Lokalisieren von adaptiven Formularen lauten wie fol
 
 * Verwenden Sie adaptive Formularfragmente für gängige Elemente in Formularen und lokalisieren Sie Fragmente. Das stellt sicher, dass Sie ein Fragment einmal lokalisieren und es dann in allen Formularen reflektiert wird, in denen das Fragment verwendet wird.
 * Alle Modifizierungen wie das Hinzufügen einer neuen Komponente oder das Anwenden eines Skripts in einem lokalisierten Formular werden nicht automatisch lokalisiert.  Daher müssen Sie ein Formular vor der Lokalisierung fertigstellen, um mehrere Lokalisierungszyklen zu vermeiden.
-* Verwenden Sie den Anforderungsparameter `afAcceptLang`, um das Browsergebietsschemazu überschreiben und das Formular in einem spezifischen Gebietsschema zu lokalisieren. Beispielsweise wird die folgende URL gezwungen, das Formular in japanischem Gebietsschema wiederzugeben, unabhängig von dem in der Browsereinstellung angegebenen Gebietsschema:
+* Verwenden Sie den Anforderungsparameter `afAcceptLang`, um das Browsergebietsschemazu überschreiben und das Formular in einem spezifischen Gebietsschema zu lokalisieren. Die folgende URL erzwingt beispielsweise die Darstellung des Formulars im japanischen Gebietsschema, unabhängig vom Gebietsschema, das in den Browser-Einstellungen angegeben ist:
 
   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 

@@ -11,17 +11,17 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1892'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
 # Datenspeicherbereinigung {#data-store-garbage-collection}
 
-Wenn ein herkömmliches WCM-Asset entfernt wird, kann der Verweis zum zugrunde liegenden Datenspeichereintrag aus der Knotenhierarchie entfernt werden. Der Datenspeichereintrag selbst bleibt allerdings bestehen. Dieser nicht referenzierte Datenspeichereintrag wird dadurch zu „Ausschussdaten“, die nicht aufbewahrt werden müssen. In Fällen, in denen mehrere Garbage Assets vorhanden sind, ist es von Vorteil, diese zu entfernen, um Speicherplatz zu sparen und die Backup- und Dateisystemwartungsleistung zu optimieren.
+Wenn ein herkömmliches WCM-Asset entfernt wird, kann der Verweis zum zugrunde liegenden Datenspeichereintrag aus der Knotenhierarchie entfernt werden. Der Datenspeichereintrag selbst bleibt allerdings bestehen. Dieser nicht referenzierte Datenspeichereintrag wird dadurch zu „Ausschussdaten“, die nicht aufbewahrt werden müssen. In Instanzen mit mehreren Garbage-Assets ist es von Vorteil, diese zu beseitigen, um Speicherplatz einzusparen und um die Performance beim Backup sowie bei der Dateisystemwartung zu optimieren.
 
 Meist neigen WCM-Anwendungen dazu, Informationen zu sammeln. Gelöscht werden die Informationen allerdings bei Weitem nicht so oft. Auch wenn neue Bilder hinzugefügt werden und sogar wenn alte Versionen ersetzt werden, behält das Versionskontrollsystem dennoch die alte Version bei und unterstützt die Möglichkeit, bei Bedarf zu dieser Version zurückzukehren. Daher wird der Großteil der Inhalte, die wir zum System hinzufügen, permanent gespeichert. Was ist also die typische Quelle für „Ausschussdaten“ im Repository, die wir bereinigen möchten?
 
-AEM verwendet das Repository als Speicher für mehrere interne und speicherinterne Aktivitäten:
+AEM verwendet das Repository als Speicher für verschiedene interne und bereinigungsbezogene Aktivitäten:
 
 * Zusammengestellte und heruntergeladene Pakete
 * Für die Veröffentlichungsreplikation erstellte temporäre Dateien
@@ -42,7 +42,7 @@ Wenn das Repository mit einem externen Datenspeicher konfiguriert wurde, [wird d
 
 Der Datenspeicherbereiniger merkt sich zunächst den aktuellen Zeitstempel, wenn der Prozess beginnt. Die Sammlung der Daten wird mithilfe eines Multi-Pass-Mark-/Sweep-Pattern-Algorithmus durchgeführt.
 
-In der ersten Phase führt der Datenspeicher-Garbage Collector einen umfassenden Durchlauf aller Repository-Inhalte durch. Zu jedem Inhaltsobjekt mit einem Verweis zum Datenspeichereintrag sucht er die Datei im Dateisystem, führt eine Metadatenaktualisierung durch und ändert das „Zuletzt geändert“- oder MTIME-Attribut. An diesem Punkt erhalten Dateien, auf die in dieser Phase zugegriffen wurde, einen neueren Zeitstempel als den ursprünglichen Basiszeitstempel.
+In der ersten Phase unternimmt der Datenspeicherbereiniger einen umfassenden Durchlauf durch den gesamten Repository-Inhalt. Zu jedem Inhaltsobjekt mit einem Verweis zum Datenspeichereintrag sucht er die Datei im Dateisystem, führt eine Metadatenaktualisierung durch und ändert das „Zuletzt geändert“- oder MTIME-Attribut. An diesem Punkt erhalten Dateien, auf die in dieser Phase zugegriffen wurde, einen neueren Zeitstempel als den ursprünglichen Basiszeitstempel.
 
 In der zweiten Phase durchläuft der Datenspeicherbereiniger die physische Verzeichnisstruktur des Datenspeichers auf eine sehr ähnliche Weise wie eine Suche. Er untersucht das „Zuletzt geändert“- oder MTIME-Attribut der Datei und bestimmt Folgendes:
 
@@ -106,12 +106,12 @@ Wenn Sie die Datenspeicherbereinigung zu einem anderen Zeitpunkt ausführen müs
 
 Vor der Ausführung der Datenspeicherbereinigung sollten Sie sicherstellen, dass zu dem Zeitpunkt keine Sicherungen ausgeführt werden.
 
-1. Öffnen Sie das Vorgangs-Dashboard durch **Navigation** > **Instrumente** > **Aktivitäten** > **Wartung**.
-1. Klicken Sie auf **Wöchentliches Wartungsfenster**.
+1. Öffnen Sie das Vorgangs-Dashboard über **Navigation** > **Tools** > **Vorgänge** > **Wartung**.
+1. Klicken Sie auf die Seite **Wöchentliches Wartungsfenster**.
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
-1. Wählen Sie die **Datenspeicherbereinigung** und klicken Sie dann auf **Ausführen** Symbol.
+1. Wählen Sie die Aufgabe **Automatische Datenspeicherbereinigung** aus und klicken Sie dann auf das Symbol **Ausführen**.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -136,7 +136,7 @@ So führen Sie die Speicherbereinigung durch:
 1. Markieren Sie in der Apache Felix OSGi Management Console die Registerkarte **Main** und wählen Sie **JMX** aus dem folgenden Menü aus.
 1. Suchen Sie dann nach dem MBean **Repository Manager** und klicken Sie darauf (oder gehen Sie zu `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
 1. Klicken Sie auf **startDataStoreGC(boolean markOnly)**.
-1. eintragen`true`&quot; für die `markOnly` Parameter, falls erforderlich:
+1. Geben Sie ggf. `true` für den Parameter `markOnly` ein:
 
    | **Option** | **Beschreibung** |
    |---|---|
@@ -154,7 +154,7 @@ So führen Sie die Speicherbereinigung durch:
 
 ## Automatisieren der Datenspeicherbereinigung {#automating-data-store-garbage-collection}
 
-Wenn möglich, sollte die automatische Datenspeicherbereinigung ausgeführt werden, wenn das System beispielsweise morgens wenig ausgelastet ist.
+Falls möglich, sollte die Datenspeicherbereinigung ausgeführt werden, wenn das System nicht stark ausgelastet ist – beispielsweise am frühen Morgen.
 
 Das integrierte, über das [Vorgangs-Dashboard](/help/sites-administering/operations-dashboard.md) verfügbare wöchentliche Wartungsfenster beinhaltet die integrierte Aufgabe, die Datenspeicherbereinigung sonntags um 1 Uhr morgens durchzuführen. Sie sollten auch sicherstellen, dass zu dem Zeitpunkt keine Sicherungen ausgeführt werden. Der Start des Wartungsfensters kann bei Bedarf über das Dashboard angepasst werden.
 

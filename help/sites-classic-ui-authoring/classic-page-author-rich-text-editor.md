@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1764'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Sie können nun den Text direkt auf der Seite bearbeiten, anstatt ein Dialogfens
 
 >[!NOTE]
 >
->Wenn Sie den Content Finder geöffnet haben, wird oben auf der Registerkarte eine Symbolleiste mit den RTE-Formatierungsoptionen angezeigt (wie oben).
+>Wenn Sie die Inhaltssuche geöffnet haben, wird oben auf der Registerkarte eine Symbolleiste mit den RTE-Formatierungsoptionen angezeigt (wie oben).
 >
 >Wenn die Inhaltssuche nicht geöffnet ist, wird die Symbolleiste nicht angezeigt.
 
@@ -51,7 +51,7 @@ Derzeit ist der Kontext-Bearbeitungsmodus für Seitenelemente aktiviert, die von
 
 >[!NOTE]
 >
->Die [!UICONTROL Titel]-Komponente wurde konzipiert, um kurzen Text ohne Zeilenumbrüche zu enthalten. Wenn Sie einen Titel im Kontext-Bearbeitungsmodus bearbeiten, wird durch die Eingabe eines Zeilenumbruchs ein neuer **Text** -Komponente unterhalb des Titels.
+>Die [!UICONTROL Titel]-Komponente wurde konzipiert, um kurzen Text ohne Zeilenumbrüche zu enthalten. Wenn Sie einen Titel im Kontext-Bearbeitungsmodus bearbeiten, wird durch die Eingabe eines Zeilenumbruchs eine neue **Textkomponente** unter dem Titel geöffnet.
 
 ## Funktionen des Rich-Text-Editors {#features-of-the-rich-text-editor}
 
@@ -77,7 +77,7 @@ Alle fungieren als Umschalter, sodass bei einer erneuten Auswahl das Format entf
 
 ![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
 
-Ihre Installation kann vordefinierte Stile und Formate enthalten. Diese sind mit der Variablen **[!UICONTROL Stil]** und **[!UICONTROL Format]** Dropdown-Listen und können auf den ausgewählten Text angewendet werden.
+Ihre Installation kann vordefinierte Stile und Formate enthalten. Diese sind in den Dropdown-Listen **[!UICONTROL Stil]** und **[!UICONTROL Format]** verfügbar und können auf Text angewendet werden, den Sie ausgewählt haben.
 
 Ein Stil kann auf eine bestimmte Zeichenfolge angewendet werden (ein Stil ist CSS-basiert):
 
@@ -89,7 +89,7 @@ Ein Format hingegen wird auf einen gesamten Textabsatz angewendet (Formate sind 
 
 Ein bestimmtes Format kann nur geändert werden (die Standardeinstellung ist **[!UICONTROL Absatz]**).
 
-Ein Stil kann entfernt werden. Platzieren Sie den Cursor in den Text, auf den der Stil angewendet wurde, und klicken Sie auf das Symbol zum Entfernen:
+Ein Stil kann auch entfernt werden. Platzieren Sie dafür den Cursor innerhalb des Textes, auf den der Stil angewendet wurde, und klicken Sie dann auf das Löschsymbol:
 
 >[!CAUTION]
 >
@@ -114,7 +114,7 @@ Dies ist das Standard-Einfügeverfahren (Strg+V) für die Komponente. Für Stand
 
 ![Symbolleiste „Rückgängig machen, Wiederholen“](do-not-localize/cq55_rte_undoredo.png)
 
-AEM speichert die jeweils letzten 50 Aktionen in der aktuellen Komponente in chronologischer Reihenfolge. Diese Aktionen können bei Bedarf in strikter Reihenfolge rückgängig gemacht (und dann wiederholt) werden.
+AEM speichert die jeweils letzten 50 Aktionen in der aktuellen Komponente in chronologischer Reihenfolge. Diese Aktionen können ggf. rückgängig gemacht (und dann wiederholt) werden, aber nur in der Reihenfolge ihrer Durchführung.
 
 >[!CAUTION]
 >
@@ -156,7 +156,7 @@ Der Stil der Liste kann einfach dadurch geändert werden, dass Sie den Cursor in
 
 ![Links-Symbolleiste](do-not-localize/cq55_rte_links.png)
 
-Ein Link zu einer URL (entweder innerhalb Ihrer Website oder an einer externen Position) wird durch Hervorhebung des erforderlichen Texts und anschließendes Klicken auf das Hyperlink-Symbol generiert:
+Ein Link zu einer URL (entweder innerhalb der Website oder zu einer externen Adresse) wird dadurch erstellt, dass Sie den gewünschten Text markieren und dann auf das Hyperlink-Symbol klicken:
 
 ![Hyperlink-Symbol](do-not-localize/chlimage_1-9.png)
 
@@ -184,7 +184,7 @@ Um den Hyperlink zu entfernen, klicken Sie auf eine beliebige Stelle innerhalb d
 
 ![Anker-Symbolleiste](do-not-localize/cq55_rte_anchor.png)
 
-Ein Anker kann an einer beliebigen Stelle innerhalb des Textes erstellt werden, indem Sie entweder den Cursor platzieren oder Text auswählen. Klicken Sie anschließend auf **Anker** -Symbol, um das Dialogfeld zu öffnen.
+Ein Anker kann an einer beliebigen Stelle innerhalb des Textes erstellt werden, indem Sie entweder den Cursor platzieren oder Text auswählen. Klicken Sie dann auf das **Anker**-Symbol, um das Dialogfeld zu öffnen.
 
 Geben Sie den Namen des Ankers ein und klicken Sie auf **OK**, um die Änderung zu speichern.
 
@@ -218,7 +218,7 @@ Bilder können aus der Inhaltssuche gezogen werden, um sie zum Text hinzuzufüge
 
 >[!NOTE]
 >
->AEM bietet auch spezielle Komponenten für eine detailliertere Bildkonfiguration. Beispiel: die **Bild** und **Textbild** -Komponenten verfügbar sind.
+>AEM bietet auch spezielle Komponenten für eine detailliertere Bildkonfiguration. Beispielsweise stehen Ihnen die Komponenten **Bild** und **Textbild** zur Verfügung.
 
 ### Rechtschreibprüfung {#spelling-checker}
 
@@ -232,7 +232,7 @@ Alle falschen Schreibweisen werden hervorgehoben:
 
 >[!NOTE]
 >
->Die Rechtschreibprüfung erfolgt in der Sprache der Website. Dazu wird entweder die Spracheigenschaft der Unterstruktur übernommen oder die Sprache aus der URL extrahiert. Beispiel: die `en` -Zweig wird auf Englisch überprüft, und die `de` Niederlassung für Deutsch.
+>Die Rechtschreibprüfung erfolgt in der Sprache der Website. Dazu wird entweder die Spracheigenschaft der Unterstruktur übernommen oder die Sprache aus der URL extrahiert. Beispielsweise erfolgt die Prüfung für die Verzweigung `en` in Englisch und für die Verzweigung `de` in Deutsch.
 
 ### Tabellen {#tables}
 
@@ -353,7 +353,7 @@ Auswählen einer einzelnen Zelle, um sie zu teilen:
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
-Beim Erstellen einer verschachtelten Tabelle wird eine eigenständige Tabelle innerhalb der aktuellen Zelle erstellt.
+Durch Erstellen einer geschachtelten Tabelle wird eine separate Tabelle innerhalb der aktuellen Zelle eingefügt.
 
 >[!NOTE]
 >

@@ -1,6 +1,6 @@
 ---
 title: Correspondence Management | Umgang mit Benutzerdaten
-description: Erfahren Sie mehr über Correspondence Management und die Verarbeitung von Benutzerdaten in einer Adobe Experience Manager Forms-Umgebung.
+description: Erfahren Sie mehr über Correspondence Management und den Umgang mit Benutzerdaten in einer Adobe Experience Manager Forms-Umgebung.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
@@ -9,15 +9,15 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '552'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 # Correspondence Management | Umgang mit Benutzerdaten {#correspondence-management-handling-user-data}
 
-Mit AEM Forms Correspondence Management können Sie sichere und personalisierte Kundenkorrespondenzen erstellen, verwalten und optimieren. Es bietet eine intuitive Benutzeroberfläche, über die Geschäftsbenutzer Korrespondenzen mit vorab genehmigten Inhaltsbausteinen und Medienelementen erstellen können. Weitere Informationen zum Erstellen von Briefen finden Sie unter [Korrespondenz erstellen](/help/forms/using/create-correspondence.md).
+Mit AEM Forms Correspondence Management können Sie sichere und personalisierte Kundenkorrespondenz erstellen, verwalten und optimieren. Es bietet eine intuitive Benutzerschnittstelle für Business-Benutzende, um Mitteilungen unter Verwendung vorab genehmigter Inhaltsblöcke und Medienelemente zu erstellen. Weitere Informationen zum Erstellen von Briefen finden Sie unter [Korrespondenz erstellen](/help/forms/using/create-correspondence.md).
 
-Wenn ein Business-Benutzer oder ein Agent eine Korrespondenz als Entwurf speichert oder sendet, wird eine Briefinstanz im AEM Repository gespeichert. Die Briefinstanz enthält Korrespondenzdaten und Metadaten.
+Wenn Business-Benutzende oder Agentinnen bzw. Agenten eine Mitteilung als Entwurf speichern oder übermitteln, wird eine Briefinstanz im AEM-Repository gespeichert. Die Briefinstanz umfasst Korrespondenzdaten und Metadaten.
 
 >[!NOTE]
 >
@@ -25,9 +25,9 @@ Wenn ein Business-Benutzer oder ein Agent eine Korrespondenz als Entwurf speiche
 
 ## Benutzerdaten und Datenspeicher {#data}
 
-Correspondence Management speichert nur dann Daten für Entwürfe und gesendete Briefe in AEM Repository, wenn die Veröffentlichungsinstanz für die Verwaltung von Briefinstanzen konfiguriert ist. Weitere Informationen zur Konfiguration finden Sie unter [Konfigurationseigenschaften von Correspondence Management](/help/forms/using/cm-configuration-properties.md).
+Correspondence Management speichert Daten für Entwürfe und gesendete Briefe im AEM-Repository nur, wenn die Veröffentlichungsinstanz für die Verwaltung von Briefinstanzen konfiguriert ist. Weitere Informationen zur Konfiguration finden Sie unter [Eigenschaften der Correspondence Management-Konfiguration](/help/forms/using/cm-configuration-properties.md).
 
-Je nach der für Ihre AEM-Bereitstellung konfigurierten Datenspeicherpersistenz werden Entwürfe und gesendete Korrespondenzdaten an den folgenden Speicherorten gespeichert.
+Abhängig von der für Ihre AEM-Bereitstellung konfigurierten Datenspeicherpersistenz werden Entwürfe und übermittelte Korrespondenzdaten an den folgenden Speicherorten gespeichert.
 
 <table>
  <tbody>
@@ -38,12 +38,12 @@ Je nach der für Ihre AEM-Bereitstellung konfigurierten Datenspeicherpersistenz 
   </tr>
   <tr>
    <td><p>Standard</p> </td>
-   <td><p>AEM Repository der Veröffentlichungsinstanz und Autoreninstanzen, die in der Konfiguration der Rückwärtsreplikation angegeben sind</p> </td>
+   <td><p>AEM-Repository der Veröffentlichungsinstanz und der Autoreninstanzen, die in der Konfiguration für die umgekehrte Replikation angegeben wurden</p> </td>
    <td><p><code>/content/apps/cm/letterInstances/[yyyy]/[mm]/[dd]/[node-id]/[letter-instance-name]/</code><br /> </p> </td>
   </tr>
   <tr>
    <td><p>Remote</p> </td>
-   <td><p>AEM Repository der Autoreninstanz der Remote-Verarbeitung</p> </td>
+   <td><p>AEM-Repository der Autoreninstanz zur Remote-Verarbeitung</p> </td>
    <td><p><code>/content/apps/cm/letterInstances/[yyyy]/[mm]/[dd]/[node-id]/[letter-instance-name]/</code></p> </td>
   </tr>
  </tbody>
@@ -61,24 +61,24 @@ Unter dem Knoten [letter-instance-name] wird die folgende Knotenstruktur erstell
 |---|---|
 | `extendedProperties` | Speichert Metadateneigenschaften der Briefinstanz. |
 | `dataXML` | Speichert eine herunterladbare dataXML-Datei, die die Korrespondenzdaten im Binärformat enthält. |
-| `processedXDP` | Enthält die Details der XDP-Vorlage, die zum Erstellen des gesendeten Briefs verwendet wird. Dieser Knoten wird nur für übermittelte Korrespondenzen erstellt. |
+| `processedXDP` | Enthält die Details der XDP-Vorlage, die zum Erstellen des gesendeten Briefs verwendet wurde. Dieser Knoten wird nur für übermittelte Korrespondenzen erstellt. |
 | `submittedLetter` | Speichert die übermittelten Briefdaten im herunterladbaren Binärformat. Dieser Knoten wird nur für übermittelte Korrespondenzen erstellt. |
 
 ## Zugreifen auf und Löschen von Benutzerdaten {#access-and-delete-user-data}
 
-Sie können in den konfigurierten Datenspeichern auf Entwürfe und übermittelte Korrespondenzdaten zugreifen und diese bei Bedarf löschen.
+Sie können in den konfigurierten Datenspeichern auf Entwürfe und übermittelte Korrespondenzdaten zugreifen und diese ggf. löschen.
 
 ### Zugreifen auf Benutzerdaten {#access-user-data}
 
-Correspondence Management bietet APIs, mit denen Sie Entwurfs- und gesendete Briefinstanzen finden und darauf zugreifen können. Mithilfe der APIs können Sie Briefinstanzen mithilfe der Briefinstanz-ID oder des Benutzers, der die Korrespondenz gespeichert oder gesendet hat, suchen und öffnen. Weitere Informationen finden Sie unter [APIs zum Zugreifen auf Briefinstanzen](/help/forms/using/cm-apis-to-access-letter-instances.md).
+Correspondence Management stellt APIs bereit, mit denen Sie Entwürfe und übermittelte Briefinstanzen finden und darauf zugreifen können. Mit den APIs können Sie Briefinstanzen anhand der Briefinstanz-ID oder der Person, die die Korrespondenz gespeichert oder gesendet hat, finden und öffnen. Weitere Informationen finden Sie unter [APIs zum Zugreifen auf Briefinstanzen](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
-Alternativ können Sie über CRXDE Lite zur Briefinstanz im AEM Repository navigieren. Siehe [Benutzerdaten und Datenspeicher](/help/forms/using/correspondence-management-handling-user-data.md#data) für Informationen zu gespeicherten Daten und zum Repository-Speicherort.
+Alternativ können Sie mithilfe von CRXDE Lite zur Briefinstanz im AEM-Repository navigieren. Weitere Informationen über gespeicherte Daten und den Repository-Speicherort finden Sie unter [Benutzerdaten und Datenspeicher](/help/forms/using/correspondence-management-handling-user-data.md#data).
 
 ### Benutzerdaten löschen {#delete-user-data}
 
-Um eine Briefinstanz zu finden, die die Daten eines bestimmten Benutzers enthält, können Sie:
+Um eine Briefinstanz zu finden, die die Daten einer bestimmten Person enthält, können Sie wie folgt vorgehen:
 
-* Verwenden Sie Correspondence Management-APIs, wenn der Name der Briefinstanz oder der Benutzer, der den Entwurf gespeichert oder die Korrespondenz gesendet hat, bekannt ist
+* Verwenden Sie die Correspondence Management-APIs, wenn der Name der Briefinstanz oder der Person, die den Entwurf gespeichert oder die Korrespondenz gesendet hat, bekannt ist.
 * Verwenden Sie die AEM-Repository-Suche mit persönlich identifizierbaren Informationen wie der E-Mail-ID oder dem Namen, um den Knoten zu finden, auf dem die Informationen gespeichert sind
 
 Um Benutzerdaten vollständig aus Entwurfs- und übermittelter Korrespondenz aus AEM-Systemen zu löschen, müssen Sie den Briefinstanzknoten manuell aus allen anwendbaren AEM-Instanzen löschen.

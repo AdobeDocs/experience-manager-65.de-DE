@@ -8,7 +8,7 @@ solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '685'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ Das Add-on und die [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-c
 
 Diese Konfiguration kann mithilfe der CIF-Cloud Service-Konfiguration wie folgt für das Projekt angepasst werden:
 
-1. Gehen Sie AEM zu Tools > Cloud Service > CIF Konfiguration
+1. Gehen Sie in AEM zu „Tools“ > „Cloud Services“ > „CIF-Konfiguration“
 
 2. Wählen Sie die Commerce-Konfiguration aus, die Sie ändern möchten
 

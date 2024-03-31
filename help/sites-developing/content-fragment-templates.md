@@ -1,6 +1,6 @@
 ---
 title: Inhaltsfragmentvorlagen
-description: Vorlagen werden beim Erstellen eines Inhaltsfragments ausgewählt und geben dem neuen Fragment die grundlegende Struktur, das Element und die Variante
+description: Vorlagen werden ausgewählt, wenn ein Inhaltsfragment erstellt und das neue Fragment mit der grundlegenden Struktur, dem Element und der Variante versehen wird.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '677'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ conf
               ...
 ```
 
-Die spezifische Struktur lautet:
+Die spezifische Struktur ist dabei:
 
 ```xml
 + <template-name>

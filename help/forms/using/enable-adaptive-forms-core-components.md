@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '968'
-ht-degree: 80%
+ht-degree: 88%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 80%
 
 Durch Aktivierung der Kernkomponenten für adaptive Formulare können Sie mit der Erstellung, Veröffentlichung und Bereitstellung von [auf Kernkomponenten basierenden adaptiven Formularen](create-an-adaptive-form-core-components.md) und [adaptiven Headless-Formularen](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=de) aus Ihrer AEM 6.5 Forms-Umgebung beginnen.
 
-Um die adaptiven Forms-Kernkomponenten in Ihrer AEM 6.5 Forms-Umgebung zu aktivieren, richten Sie ein [AEM Archetyp 41 oder höher](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) Basiertes Projekt (mit aktivierten Formularoptionen) auf allen Autoren- und Veröffentlichungsinstanzen.
+Um Kernkomponenten für adaptive Formulare in Ihrer AEM 6.5 Forms-Umgebung zu aktivieren, richten Sie ein auf [AEM Archetyp 41 oder höher](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) basierendes Projekt ein und stellen Sie es (mit aktivierten Formularoptionen) für all Ihre Autoren- und Veröffentlichungsinstanzen bereit.
 
-Dieser Artikel enthält detaillierte Anweisungen zum Einrichten und Bereitstellen AEM Archetyp 41 oder höher-basierten Projekts auf Ihrer AEM 6.5 Forms-Umgebung, um die adaptiven Forms-Kernkomponenten zu aktivieren. Die nachstehende Liste finden Sie unter **AEM 6.5** kompatible Versionen zur Aktivierung der Forms-Kernkomponenten:
+Dieser Artikel enthält detaillierte Anweisungen zum Einrichten und Bereitstellen von einem auf AEM Archetyp 41 oder höher basierenden Projekt in der AEM 6.5 Forms-Umgebung, um die Kernkomponenten für adaptive Formulare zu aktivieren. In der nachstehenden Liste finden Sie für **AEM 6.5** kompatible Versionen zur Aktivierung der Kernkomponenten für Formulare:
 
 ## Voraussetzungen {#prerequisites}
 

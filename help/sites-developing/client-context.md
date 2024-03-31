@@ -1,6 +1,6 @@
 ---
 title: Client-Kontext im Detail
-description: ClientContext stellt eine dynamisch zusammengestellte Sammlung von Benutzerdaten dar.
+description: ClientContext ist eine dynamische Zusammenstellung von erfassten Benutzerdaten.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -9,10 +9,10 @@ docset: aem65
 feature: Context Hub
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f52b2076c94b64a9d84646621be3a04bfe15b13c
 workflow-type: tm+mt
 source-wordcount: '2969'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 90%
 
 >[!NOTE]
 >
->ClientContext wurde durch ContextHub abgelöst. Siehe [zugehörige Dokumentation](/help/sites-developing/contexthub.md) für Details.
+>ClientContext wurde durch ContextHub abgelöst. Weitere Informationen finden Sie in der [entsprechenden Dokumentation](/help/sites-developing/contexthub.md).
 
 ClientContext stellt eine dynamisch zusammengestellte Sammlung von Benutzerdaten dar. Mithilfe der Daten können Sie bestimmen, welcher Inhalt auf einer Web-Seite in einer bestimmten Situation angezeigt werden soll (Content-Targeting). Die Daten stehen auch für die Website-Analyse und für JavaScript auf der Seite zur Verfügung.
 
@@ -45,7 +45,7 @@ Das Client Context-Framework bietet eine [JavaScript-API](/help/sites-developing
 
 Sitzungsspeicherdaten verbleiben auf dem Client. Der Client-Kontext schreibt keine Daten an den Server zurück. Verwenden Sie zum Übermitteln von Daten an den Server ein Formular oder schreiben Sie einen benutzerdefinierten JavaScript-Code.
 
-Jeder Sitzungsspeicher besteht aus Eigenschaft-Wert-Paaren. Der Sitzungsspeicher stellt eine Sammlung von Daten (beliebiger Art) dar, deren konzeptionelle Bedeutung vom Designer, Entwickler oder beidem bestimmt werden kann. Der folgende JavaScript-Beispiel-Code definiert ein Objekt, das die Profildaten darstellt, die der Sitzungsspeicher unter Umständen enthält:
+Jeder Sitzungsspeicher besteht aus Eigenschaft-Wert-Paaren. Der Sitzungsspeicher stellt eine Zusammenstellung verschiedener Daten dar, deren konzeptuelle Bedeutung vom Designer- oder Entwickler-Team festgelegt werden kann. Der folgende JavaScript-Beispiel-Code definiert ein Objekt, das die Profildaten darstellt, die der Sitzungsspeicher unter Umständen enthält:
 
 ```
 {
@@ -65,7 +65,7 @@ Ein Sitzungsspeicher kann über mehrere Browser-Sitzungen hinweg oder nur für d
 >
 >Für die Beibehaltung wird der Browser-Speicher oder Cookies verwendet (das `SessionPersistence`-Cookie). Der Browser-Speicher ist hierbei die gängigere Option.
 >
->Wenn der Browser geschlossen und erneut geöffnet wird, kann ein Sitzungsspeicher mit den Werten aus einem persistierten Speicher geladen werden. Das Löschen des Browser-Caches ist erforderlich, um die alten Werte zu entfernen.
+>Wenn der Browser geschlossen und erneut geöffnet wird, kann ein Sitzungsspeicher mit den Werten aus einem persistierten Speicher geladen werden. Um die alten Werte zu entfernen, müssen Sie den Browsercache löschen.
 
 ### Kontextspeicherkomponenten {#context-store-components}
 
@@ -101,7 +101,7 @@ Schließen Sie die Client Context-Komponente in den Hauptteil Ihrer Web-Seiten e
 Durch die ClientContext-Komponente lädt die Seite die Client-Bibliotheken, die Client Context implementieren:
 
 * Die Client Context-JavaScript-API.
-* Das ClientContext-Framework, das Sitzungsspeicher, Ereignisverwaltung usw. unterstützt.
+* Das ClientContext-Framework, das Sitzungsspeicher und Ereignisverwaltung unterstützt.
 * Segmente, die definiert sind.
 * Die init.js-Skripte, die für jede Kontextspeicherkomponente generiert werden, die zu Client Context hinzugefügt wurde.
 * (Nur Authoring-Instanz) Die Client Context-Benutzeroberfläche.
@@ -117,7 +117,7 @@ Um Client Context zu erweitern, erstellen Sie einen Sitzungsspeicher und zeigen 
 
 >[!NOTE]
 >
->Bei der Auswahl (bzw. beim Erstellen) eines `JSONP`-Dienstes für die Bereitstellung der Daten können Sie einfach die `JSONP`-Kontextspeicherkomponente verwenden und dem JSONP-Dienst zuweisen. Dadurch wird der Sitzungsspeicher verarbeitet.
+>Bei der Auswahl (bzw. beim Erstellen) eines `JSONP`-Dienstes für die Bereitstellung der Daten können Sie einfach die `JSONP`-Kontextspeicherkomponente verwenden und dem JSONP-Dienst zuweisen. Dadurch wird der Sitzungsspeicher verwaltet.
 
 ### Erstellen eines Sitzungsspeichers {#creating-a-session-store}
 
@@ -189,9 +189,9 @@ AEM stellt die Kontextspeicherkomponenten „genericstore“ und „genericstore
 
 * Eigenschaft-Wert-Paare: `GenericStoreProperties`-Komponente erweitern. Diese Komponente rendert automatisch die Speicher von Eigenschaft-Wert-Paaren. Es werden mehrere Interaktionspunkte bereitgestellt:
 
-   * `prolog.jsp` und `epilog.jsp`: Komponenteninteraktion, mit der Sie serverseitige Logik vor oder nach dem Komponenten-Rendering hinzufügen können.
+   * `prolog.jsp` und `epilog.jsp`: Komponenteninteraktion, die das Hinzufügen von Server-seitiger Logik vor oder nach dem Komponenten-Rendering ermöglicht
 
-* Komplexe Daten: `GenericStore`-Komponente erweitern. Ihr Sitzungsspeicher benötigt eine &quot;Renderer&quot;-Methode, die jedes Mal aufgerufen wird, wenn die Komponente gerendert werden muss. Die Rendering-Funktion wird mit zwei Parametern aufgerufen:
+* Komplexe Daten: `GenericStore`-Komponente erweitern. Für Ihren Sitzungsspeicher ist eine „Rendering“-Methode erforderlich, die immer dann abgerufen wird, wenn die Komponente gerendert werden muss. Die Rendering-Funktion wird mit zwei Parametern aufgerufen:
 
    * `@param {String} store`
 Der zu rendernde Speicher
@@ -299,7 +299,7 @@ Die Kontextspeicherkomponente `/libs/cq/personalization/components/contextstores
 
 ### Rendern von Sitzungsspeicherdaten für genericstore-Komponenten {#rendering-session-store-data-for-genericstore-components}
 
-Gehen Sie wie folgt vor, um Store-Daten mithilfe einer genericstore-Komponente zu rendern:
+Um Speicherdaten mithilfe einer genericstore-Komponente zu rendern, müssen Sie Folgendes tun:
 
 * der JSP-Skriptkomponete das Tag personalization:storeRendererTag hinzufügen, um den Namen des Sitzungsspeichers zu identifizieren.
 * eine Rendering-Methode für die Sitzungsspeicherklasse implementieren.
@@ -320,7 +320,7 @@ Das Tag weist folgendes Format auf:
 
 #### Implementieren der Rendering-Methode für den Sitzungsspeicher {#implementing-the-session-store-renderer-method}
 
-Ihr Sitzungsspeicher benötigt eine &quot;Renderer&quot;-Methode, die jedes Mal aufgerufen wird, wenn die Komponente gerendert werden muss. Die Rendering-Funktion wird mit zwei Parametern aufgerufen:
+Für Ihren Sitzungsspeicher ist eine „Rendering“-Methode erforderlich, die immer dann abgerufen wird, wenn die Komponente gerendert werden muss. Die Rendering-Funktion wird mit zwei Parametern aufgerufen:
 
 * @param {String} store
 Der zu rendernde Speicher
@@ -384,7 +384,7 @@ Verwenden Sie die Methoden [onStoreRegistered](/help/sites-developing/ccjsapi.md
 
 >[!CAUTION]
 >
->Wenn Sie von einem anderen Store abhängig sind, müssen Sie den Fall berücksichtigen, dass der Store nie registriert wird.
+>Wenn Sie einen anderen Speicher verwenden, müssen Sie sich auch auf den Fall einrichten, dass der Speicher nie registriert wird.
 
 Im folgenden Beispiel wird das Ereignis `onStoreRegistered` des Sitzungsspeichers `profile` verwendet. Wenn der Speicher registriert ist, wird dem Ereignis `update` des Sitzungsspeichers ein Listener hinzugefügt. Beim Aktualisieren des Speichers wird der Inhalt des Elements `<div class="welcome">` auf der Seite mit dem Namen des Speichers `profile` aktualisiert.
 
@@ -416,7 +416,7 @@ function getName(){
 
 ### Ausschließen einer Eigenschaft aus dem sessionpersistence-Cookie {#excluding-a-property-from-the-sessionpersistence-cookie}
 
-So verhindern Sie eine -Eigenschaft von `PersistedSessionStore` aus der Persistenz ausgeschlossen werden (d. h. schließen Sie sie aus der `sessionpersistence` -Cookie), fügen Sie die -Eigenschaft zur nicht persistenten Eigenschaftsliste des beibehaltenen Sitzungsspeichers hinzu.
+Um zu verhindern, dass eine Eigenschaft eines `PersistedSessionStore` beibehalten wird (um sie aus dem Cookie `sessionpersistence` auszuschließen), fügen Sie die Eigenschaft der Liste der nicht permanenten Eigenschaften des permanenten Sitzungsspeichers hinzu.
 
 Siehe ` [CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)](/help/sites-developing/ccjsapi.md#setnonpersisted-name)`
 
@@ -504,11 +504,11 @@ Erstellen Sie eine CQ-Anwendung und fügen Sie die Geoloc-Komponente hinzu.
 
 ### Erstellen des Dialogfelds „Geoloc-Bearbeitung“ {#create-the-geoloc-edit-dialog}
 
-Für die Kontextspeicherkomponente ist ein Bearbeitungsdialogfeld erforderlich. Das Dialogfeld &quot;Geoloc-Bearbeitung&quot;enthält eine statische Meldung, die anzeigt, dass keine Eigenschaften zum Konfigurieren vorhanden sind.
+Für die Kontextspeicherkomponente ist ein Bearbeitungsdialogfeld erforderlich. Das Dialogfeld zur Geoloc-Bearbeitung enthält eine statische Meldung, die anzeigt, dass keine Eigenschaften zum Konfigurieren vorhanden sind.
 
 1. Klicken Sie mit der rechten Maustaste auf den Knoten `/libs/cq/personalization/components/contextstores/genericstoreproperties/dialog` und klicken Sie auf „Kopieren“.
 1. Klicken Sie mit der rechten Maustaste auf den Knoten `/apps/myapp/contextstores/geoloc` und klicken Sie auf „Einfügen“.
-1. Löschen Sie alle untergeordneten Knoten unter dem Knoten /apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items :
+1. Löschen Sie alle untergeordneten Knoten unter dem Knoten „/apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items“:
 
    * store
    * properties
@@ -611,17 +611,17 @@ Fügen Sie die Standortspeicher-Komponente zu Client Context hinzu, damit sie be
 
 ## Erstellen eines benutzerdefinierten Client Context {#creating-a-customized-client-context}
 
-Um einen zweiten Client-Kontext zu erstellen, duplizieren Sie die Verzweigung:
+Zum Erstellen eines zweiten ClientContext duplizieren Sie die Verzweigung:
 
 `/etc/clientcontext/default`
 
 * Der Unterordner:
   `/content`
-enthält den Inhalt des angepassten Client-Kontexts.
+enthält den Inhalt des benutzerdefinierten ClientContext.
 
 * Der Ordner:
   `/contextstores`
-ermöglicht die Definition verschiedener Konfigurationen für die Kontextspeicher.
+ermöglicht es Ihnen, verschiedene Konfigurationen für die Kontextspeicher festzulegen.
 
 Um Ihren benutzerdefinierten ClientContext zu verwenden, bearbeiten Sie die Eigenschaft
 `path`

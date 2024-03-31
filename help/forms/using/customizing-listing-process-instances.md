@@ -1,6 +1,6 @@
 ---
 title: Anpassen der Auflistung von Prozessinstanzen
-description: Gehen Sie wie folgt vor, um die Eigenschaften anzupassen, die in der Prozessinstanz in AEM Forms Workspace angezeigt werden.
+description: Erfahren Sie, wie Sie die Eigenschaften anpassen, die in der Prozessinstanz in AEM Forms Workspace angezeigt werden.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -9,13 +9,13 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
 # Anpassen der Auflistung von Prozessinstanzen {#customizing-the-listing-of-process-instances}
 
-Die Liste der Prozessinstanzen wird auf der Registerkarte &quot;Verfolgung&quot;von AEM Forms Workspace angezeigt.
+Die Prozessinstanzliste wird auf der Registerkarte „Tracking“ von AEM Forms Workspace angezeigt.
 
 In der Prozessinstanzliste zeigt AEM Forms Workspace für jede Prozessinstanz einige Eigenschaften dieser Instanz. Die folgenden Eigenschaften sind für jede Prozessinstanz verfügbar. Diese Eigenschaften werden als Attribute im Prozessinstanz-Komponentenmodell gespeichert und sind in dessen Ansicht und Vorlage verfügbar.
 
@@ -30,12 +30,12 @@ In der Prozessinstanzliste zeigt AEM Forms Workspace für jede Prozessinstanz ei
    <td>Beschreibung der Prozessinstanz.</td>
   </tr>
   <tr>
-   <td>Initiator</td>
-   <td>Name des Initiators der Prozessinstanz.</td>
+   <td>initiator</td>
+   <td>Name der Initiatorin bzw. des Initiators der Prozessinstanz.</td>
   </tr>
   <tr>
    <td>initiatorId</td>
-   <td>Kennung des Initiators der Prozessinstanz.</td>
+   <td>ID der Initiatorin bzw. des Initiators der Prozessinstanz.</td>
   </tr>
   <tr>
    <td>processCompleteTime</td>
@@ -47,7 +47,7 @@ In der Prozessinstanzliste zeigt AEM Forms Workspace für jede Prozessinstanz ei
   </tr>
   <tr>
    <td>processInstanceStatus</td>
-   <td>0 = Initiiert<br /> 1 = Läuft<br /> 2 = Abgeschlossen<br /> 3 = Abgeschlossen<br /> 4 = Beendet<br /> 5 = Beenden<br /> 6 = Ausgesetzt<br /> 7 = Aussetzen<br /> 8 = Aufhebung der Aussetzung</td>
+   <td>0 = Initiiert<br /> 1 = Wird ausgeführt<br /> 2 = Abgeschlossen<br /> 3 = Wird abgeschlossen<br />4 = Beendet<br /> 5 = Wird beendet<br /> 6 = Ausgesetzt<br /> 7 = Wird ausgesetzt<br /> 8 = Aussetzen wird aufgehoben</td>
   </tr>
   <tr>
    <td>processName</td>
@@ -55,11 +55,11 @@ In der Prozessinstanzliste zeigt AEM Forms Workspace für jede Prozessinstanz ei
   </tr>
   <tr>
    <td>processStartTime</td>
-   <td>Zeitstempel, zu dem der Prozess gestartet wurde.</td>
+   <td>Zeitstempel zum Zeitpunkt, als der Prozess gestartet wurde.</td>
   </tr>
   <tr>
    <td>processVariables</td>
-   <td>Array von Objekten aus Prozessvariablen. Jedes Prozessvariablenobjekt enthält <strong>name</strong> (Name der Prozessvariablen), <strong>value</strong> (Wert der Prozessvariablen) und<strong> type</strong> (der Typ der Prozessvariablen).</td>
+   <td>Array von Objekten aus Prozessvariablen. Jedes Objekt einer Prozessvariable enthält <strong>name</strong> (den Namen der Prozessvariable), <strong>value</strong> (den Wert der Prozessvariable) und <strong>type</strong> (den Typ der Prozessvariable).</td>
   </tr>
  </tbody>
 </table>

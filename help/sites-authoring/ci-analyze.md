@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 90%
 Gehen Sie wie folgt vor, um die Analysen und Empfehlungen für eine Seite anzuzeigen:
 
 1. Navigieren Sie zu der Seite, die Sie analysieren möchten.
-1. Klicken Sie in der Symbolleiste auf **Analytics und Recommendations**.
+1. Klicken Sie in der Symbolleiste auf **Analysen und Empfehlungen**.
 
    >[!NOTE]
    >
@@ -49,7 +49,7 @@ Die Tools zum Ändern der zeitbezogenen Aspekte der Berichte werden oben auf der
 
 So ändern Sie den Berichtszeitraum einer Inhaltseinblick-Seite:
 
-1. Wenn der Zeitrahmen nicht oben auf der Seite angezeigt wird, klicken Sie auf das Symbol Zeitrahmen umschalten .
+1. Wenn der Zeitrahmen nicht oben auf der Seite angezeigt wird, klicken Sie auf das Symbol „Zeitrahmen umschalten“.
 
    ![Zeitrahmen ein/aus](do-not-localize/chlimage_1-22.png)
 
@@ -67,7 +67,7 @@ So ändern Sie den Berichtszeitraum einer Inhaltseinblick-Seite:
 
 Die Granularität wirkt sich auf die Berichte aus, die Daten in Bezug auf die Zeit darstellen, z. B. die Berichte „Ansichten“ und „Durchschnittliche Aufenthaltsdauer auf der Seite in Minuten“. Die Granularität wirkt sich auch auf den Maßstab des Zeitrahmens aus.
 
-1. Wenn das Granularitätssteuerelement nicht angezeigt wird, klicken Sie auf das Symbol Granularität ein/aus .
+1. Wenn das Steuerelement für die Granularität nicht angezeigt wird, klicken Sie auf das Symbol „Granularität umschalten“.
 
    ![chlimage_1-128](assets/chlimage_1-128.png)
 
@@ -95,7 +95,7 @@ Gehen Sie wie folgt vor, um eine Aufgabe für eine SEO-Empfehlung zu erstellen.
 
    ![chlimage_1-131](assets/chlimage_1-131.png)
 
-1. Füllen Sie die angezeigten Formularfelder aus und wählen Sie dann Erstellen:
+1. Füllen Sie die angezeigten Formularfelder aus und wählen Sie „Erstellen“ aus:
 
    * Projekt: Wählen Sie das Projekt aus, in dem die Aufgabe erstellt werden soll.
    * Name: Der Name, der die Aufgabe identifiziert. Der Standardname ist der Titel der SEO-Empfehlung.
@@ -106,4 +106,4 @@ Gehen Sie wie folgt vor, um eine Aufgabe für eine SEO-Empfehlung zu erstellen.
 
    **Hinweis:** Die Aufgabe, die erstellt wird, enthält den Pfad zu der Seite, für die die SEO-Empfehlung gilt.
 
-1. Klicken Sie auf Fertig , um die Meldung &quot;Aufgabe erstellt&quot;zu schließen.
+1. Klicken Sie auf „Fertig“, um die Meldung „Aufgabe erstellt“ zu schließen.

@@ -1,6 +1,6 @@
 ---
 title: Grundlegende Konfigurationskonzepte
-description: Erfahren Sie, wie Sie Adobe Experience Manager für Ihre spezifischen Anforderungen konfigurieren.
+description: Erfahren Sie, wie Sie Adobe Experience Manager für Ihre eigenen spezifischen Anforderungen konfigurieren können.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2093'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -55,7 +55,7 @@ Abhängig von der spezifischen Konfiguration können diese Änderungen mithilfe 
 
 >[!NOTE]
 >
->Die Konfiguration von AEM ist unkompliziert. Einige Änderungen können sich jedoch erheblich auf die Anwendungen auswirken. Stellen Sie daher sicher, dass Sie über die nötige Erfahrung und das erforderliche Wissen verfügen, bevor Sie mit der AEM-Konfiguration beginnen. Nehmen Sie außerdem nur die Änderungen vor, von denen Sie wissen, dass sie erforderlich sind. Alle über die OSGi-Konsole vorgenommenen Änderungen werden **sofort** auf das aktive System angewendet (kein Neustart erforderlich).
+>Die Konfiguration von AEM ist unkompliziert. Bestimmte Änderungen können jedoch erhebliche Auswirkungen auf die Anwendungen haben. Stellen Sie daher sicher, dass Sie über die nötige Erfahrung und das erforderliche Wissen verfügen, bevor Sie mit der AEM-Konfiguration beginnen. Nehmen Sie außerdem nur die Änderungen vor, von denen Sie wissen, dass sie erforderlich sind. Alle über die OSGi-Konsole vorgenommenen Änderungen werden **sofort** auf das aktive System angewendet (kein Neustart erforderlich).
 
 ## Wesentliche Konfigurationsaspekte {#primary-configuration-considerations}
 
@@ -118,7 +118,7 @@ Mit AEM können Sie Folgendes konfigurieren:
 
 * globale Parameter für den zentralen Protokollierungsdienst
 * Anfragedatenprotokollierung; eine spezielle Protokollierungskonfiguration für Anfrageinformationen
-* spezifische Einstellungen für die einzelnen Dienste, z. B. eine einzelne Protokolldatei und ein bestimmtes Format für die Protokollmeldungen
+* bestimmte Einstellungen für einzelne Dienste, beispielsweise eine einzelne Protokolldatei und das Format für die Protokollmeldungen
 
 Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md). 
 
@@ -288,7 +288,7 @@ Weitere Informationen finden Sie unter [Grundlagen der Berichtsanpassung](/help/
 
 CQ sendet E-Mail-Benachrichtigungen an Benutzende, die:
 
-* Sie haben Seitenereignisse abonniert, z. B. Änderungen oder Replikation.
+* Seitenereignisse wie Änderungen oder Replikationen abonniert haben.
 * Forumsveranstaltungen abonniert haben.
 * Einen Schritt in einem Workflow ausführen müssen.
 

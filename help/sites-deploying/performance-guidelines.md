@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2939'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -267,7 +267,7 @@ Verwenden Sie die Leistungsrichtlinien in den folgenden Situationen:
 * **Aktualisierung auf eine neue Version**: Bei der Aktualisierung auf eine neue Version müssen Sie sich über die Leistungsunterschiede im Vergleich zur aktuellen Umgebung im Klaren sein. Beispielsweise beim Upgrade von AEM 6.1 auf 6.2 oder von AEM 6.0 CRX2 auf 6.2 OAK.
 * **Langsame Reaktionszeit**: Wenn die ausgewählte Knotenspeicher-Architektur Ihre Anforderungen nicht erfüllt, müssen Sie wissen, welche Leistungsunterschiede im Vergleich zu anderen Topologieoptionen bestehen. Beispielsweise bei der Bereitstellung von TarMK anstelle von MongoMK oder der Verwendung eines Dateidatenspeichers anstelle eines Amazon S3- oder Microsoft® Azure-Datenspeichers.
 * **Hinzufügen weiterer Autoren**: Wenn die empfohlene TarMK-Topologie die Leistungsanforderungen nicht erfüllt und der Author-Knoten auf die maximale verfügbare Kapazität aufgestockt wurde, sollten Sie die Leistungsunterschiede verstehen. Vergleichen Sie die Verwendung von MongoMK mit drei oder mehr Author-Knoten. Beispielsweise bei der Bereitstellung von MongoMK anstelle von TarMK.
-* **Hinzufügen von mehr Inhalten**: Wenn die empfohlene Data Store-Architektur Ihre Anforderungen nicht erfüllt, müssen Sie die Leistungsunterschiede im Vergleich zu anderen Datenspeicheroptionen verstehen. Beispielsweise bei Verwendung des Amazon S3- oder Microsoft® Azure-Datenspeichers anstatt eines Dateidatenspeichers.
+* **Hinzufügen weiterer Inhalte**: Wenn die empfohlene Datenspeicherarchitektur Ihre Anforderungen nicht erfüllt, müssen Sie wissen, welche Leistungsunterschiede im Vergleich zu anderen Datenspeicheroptionen bestehen. Beispielsweise bei Verwendung des Amazon S3- oder Microsoft® Azure-Datenspeichers anstatt eines Dateidatenspeichers.
 
 ## Einführung {#introduction}
 

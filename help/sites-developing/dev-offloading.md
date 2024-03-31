@@ -1,6 +1,6 @@
 ---
 title: Erstellen und Verarbeiten von Aufträgen für die Auslagerung
-description: Die Apache Sling Discovery-Funktion bietet eine Java-API, mit der Sie JobManager-Aufträge und JobConsumer-Dienste erstellen können, die sie nutzen
+description: Die Apache Sling Discovery-Funktion stellt eine Java-API bereit, die das Erstellen von JobManager-Aufträgen und JobConsumer-Diensten ermöglicht, die sie verarbeiten.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -10,19 +10,19 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '393'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
 # Erstellen und Verarbeiten von Aufträgen für die Auslagerung{#creating-and-consuming-jobs-for-offloading}
 
-Die Apache Sling Discovery-Funktion bietet eine Java-API, mit der Sie JobManager-Aufträge und JobConsumer-Dienste erstellen können, die sie nutzen.
+Die Apache Sling Discovery-Funktion stellt eine Java-API bereit, die das Erstellen von JobManager-Aufträgen und JobConsumer-Diensten ermöglicht, die sie verarbeiten.
 
-Informationen zum Erstellen von Abladetopologien und Konfigurieren des Themenverbrauchs finden Sie unter [Abladen von Aufträgen](/help/sites-deploying/offloading.md).
+Weitere Informationen zum Erstellen von Abladetopologien und zum Konfigurieren der Themenverarbeitung finden Sie unter [Abladen von Aufträgen](/help/sites-deploying/offloading.md).
 
 ## Verarbeiten von Auftrags-Payloads {#handling-job-payloads}
 
-Das Abladungs-Framework definiert zwei Auftragseigenschaften zum Identifizieren der Auftrags-Payload. Die Abladungs-Replikationsagenten verwenden diese Eigenschaften, um die Ressourcen zu identifizieren, die auf die Instanzen in der Topologie repliziert werden sollen:
+Das Abladungs-Framework definiert zwei Auftragseigenschaften zum Identifizieren der Auftrags-Payload. Die Replikationsagenten zur Abladung ziehen diese Eigenschaften heran, um die Ressourcen für die Replikation der Instanzen in der Topologie zu identifizieren:
 
 * `offloading.job.input.payload`: Eine kommagetrennte Liste von Inhaltspfaden. Der Inhalt wird auf der Instanz repliziert, die den Auftrag ausführt.
 * `offloading.job.output.payload`: Eine kommagetrennte Liste von Inhaltspfaden. Wenn die Auftragsausführung abgeschlossen ist, wird die Auftrags-Payload unter diesen Pfaden auf der Instanz repliziert, die den Auftrag erstellt hat.
@@ -36,7 +36,7 @@ Für Aufträge sind keine Payloads erforderlich. Eine Payload ist jedoch dann no
 
 ## Erstellen von Aufträgen für die Abladung {#creating-jobs-for-offloading}
 
-Erstellen Sie einen Client, der die Methode JobManager.addJob aufruft, um einen Auftrag zu erstellen, den ein automatisch ausgewählter JobConsumer-Dienst ausführt. Geben Sie die folgenden Informationen an, um den Auftrag zu erstellen:
+Erstellen Sie einen Client, der die Methode „JobManager.addJob“ aufruft, um einen Auftrag zu erstellen, der von einem automatisch ausgewählten JobConsumer-Dienst ausgeführt wird. Geben Sie die folgenden Informationen an, um den Auftrag zu erstellen:
 
 * Thema: Das Auftragsthema.
 * Name: (Optional)
@@ -173,13 +173,13 @@ Die MyJobConsumer-Klasse generiert die folgenden Protokollmeldungen für die Ein
 10.06.2013 16:02:40.884 *INFO* [pool-7-thread-17-<main queue>(com/adobe/example/offloading)] com.adobe.example.offloading.MyJobConsumer Job OK for payload /content/geometrixx/de/services
 ```
 
-Die Eigenschaft &quot;Consumed&quot;kann mithilfe von CRXDE Lite beobachtet werden:
+Die Eigenschaft „Consumed“ kann durch die Verwendung von CRXDE Lite überprüft werden:
 
 ![chlimage_1-25](assets/chlimage_1-25a.png)
 
 ## Maven-Abhängigkeiten {#maven-dependencies}
 
-Fügen Sie die folgenden Abhängigkeitsdefinitionen zu Ihrer Datei &quot;pom.xml&quot;hinzu, damit Maven die Klassen auflösen kann, die sich auf die Abladung beziehen.
+Fügen Sie die folgenden Abhängigkeitsdefinitionen zur Datei „pom.xml“ hinzu, damit Maven abladungsbezogene Klassen auflösen kann.
 
 ```xml
 <dependency>
@@ -196,7 +196,7 @@ Fügen Sie die folgenden Abhängigkeitsdefinitionen zu Ihrer Datei &quot;pom.xml
 </dependency>
 ```
 
-Für die vorherigen Beispiele waren auch die folgenden Abhängigkeitsdefinitionen erforderlich:
+Für die vorherigen Beispiele sind auch die folgenden Abhängigkeitsdefinitionen erforderlich:
 
 ```xml
 <dependency>

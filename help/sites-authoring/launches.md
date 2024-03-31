@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '831'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -112,7 +112,7 @@ Die Konsole „Launches“ bietet eine Zusammenfassung Ihrer Launches und ermög
 
 * über die Konsole **Tools**: **Tools** > **Sites** > **Launches**.
 
-* oder direkt mit [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
+* oder direkt über [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
 
 ## Launches in „Verweise“ (Sites-Konsole) {#launches-in-references-sites-console}
 

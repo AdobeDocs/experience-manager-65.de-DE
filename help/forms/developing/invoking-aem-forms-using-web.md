@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '9814'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -144,7 +144,7 @@ In der folgenden Tabelle sind die WSDL-Definitionen des Services aufgeführt (un
 
 **WSDL-Definitionen für AEM Forms-Prozesse**
 
-Geben Sie den Anwendungsnamen und den Prozessnamen in der WSDL-Definition an, um auf eine WSDL zuzugreifen, die zu einem in Workbench erstellten Prozess gehört. Angenommen, der Name des Programms lautet `MyApplication` und der Name des Prozesses lautet `EncryptDocument`. Geben Sie in diesem Fall die folgende WSDL-Definition an:
+Geben Sie den Anwendungsnamen und den Prozessnamen in der WSDL-Definition an, um auf eine WSDL zugreifen zu können, die zu einem in Workbench erstellten Prozess gehört. Angenommen, der Name des Programms lautet `MyApplication` und der Name des Prozesses lautet `EncryptDocument`. Geben Sie in diesem Fall die folgende WSDL-Definition an:
 
 ```java
  http://localhost:8080/soap/services/MyApplication/EncryptDocument?wsdl
@@ -209,11 +209,11 @@ Die Felder `MTOM` und `swaRef` werden nur in AEM Forms unterstützt. Sie können
 
 **Bereitstellen von BLOB-Objekten in Service-Anforderungen**
 
-Wenn ein Service-Vorgang von AEM Forms einen `BLOB`-Typ als Eingabewert erfordert, erstellen Sie in Ihrer Anwendungslogik eine Instanz des `BLOB`-Typs. (Viele der Webdienst-Schnellstarts in *Programmieren mit AEM* zeigen, wie Sie mit einem BLOB-Datentyp arbeiten.)
+Wenn ein Service-Vorgang von AEM Forms einen `BLOB`-Typ als Eingabewert erfordert, erstellen Sie in Ihrer Anwendungslogik eine Instanz des `BLOB`-Typs. (Viele der Webservice-Schnellstartanleitungen unter *Programmieren mit AEM Forms* zeigen, wie Sie mit einem BLOB-Datentyp arbeiten).
 
 Weisen Sie den Feldern, die zur `BLOB`-Instanz gehören, wie folgt Werte zu:
 
-* **Base64**: Um Daten als Text zu übergeben, der in einem Base64-Format kodiert wurde, legen Sie die Daten im `BLOB.binaryData` und legen Sie den Datentyp im MIME-Format fest (z. B. `application/pdf`) in der `BLOB.contentType` -Feld. (Siehe [Aufrufen von AEM Forms mit Base64-Kodierung](#invoking-aem-forms-using-base64-encoding).)
+* **Base64**: Um Daten als im Base64-Format kodierten Text zu übergeben, legen Sie die Daten im Feld `BLOB.binaryData` und den Datentyp im MIME-Format (beispielsweise `application/pdf`) im Feld `BLOB.contentType` fest. (Siehe [Aufrufen von AEM Forms mit Base64-Kodierung](#invoking-aem-forms-using-base64-encoding).)
 * **MTOM**: Um Binärdaten in einer MTOM-Anlage zu übergeben, geben Sie die Daten im Feld `BLOB.MTOM` ein. Mit dieser Einstellung werden die Daten über das Java JAX-WS-Framework oder die native API des SOAP-Frameworks an die SOAP-Anfrage angehängt. (Siehe [Aufruf von AEM Forms mit MTOM](#invoking-aem-forms-using-mtom).)
 * **SwaRef**: Um Binärdaten in einem WS-I SwaRef-Anhang zu übergeben, geben Sie die Daten im `BLOB.swaRef`-Feld ein. Mit dieser Einstellung werden die Daten unter Verwendung des Java JAX-WS-Frameworks an die SOAP-Anfrage angehängt. (Siehe [Aufruf von AEM Forms mit SwaRef](#invoking-aem-forms-using-swaref).)
 * **MIME- oder DIME-Anlage**: Um Daten in einer MIME- oder DIME-Anlage zu übergeben, fügen Sie die Daten mithilfe der nativen API des SOAP-Frameworks der SOAP-Anfrage hinzu. Legen Sie die Anlagenkennung im `BLOB.attachmentID`-Feld fest. (Siehe [Aufruf von AEM Forms mit Base64-Kodierung](#invoking-aem-forms-using-base64-encoding).)
@@ -358,7 +358,7 @@ Sie können JAX-WS verwenden, um eine Forms-Dienst-WSDL in Java-Proxy-Klassen zu
 1. Installieren Sie JDK 1.6 oder höher.
 
    * Fügen Sie den JDK-Bin-Ordner zu Ihrem Klassenpfad hinzu.
-   * Fügen Sie den JRE-Bin-Ordner zu Ihrem Klassenpfad hinzu. Diese Klasse befindet sich im `[JDK_INSTALL_LOCATION]/jre` Verzeichnis.
+   * Fügen Sie den JRE-Bin-Ordner zu Ihrem Klassenpfad hinzu. Dieses Bin befindet sich im Verzeichnis `[JDK_INSTALL_LOCATION]/jre`.
    * Setzen Sie die `JAVA_HOME`-Umgebungsvariable auf den Ordner, in dem Sie das JDK installiert haben.
 
    JDK 1.6 enthält das in der Datei „build.xml“ verwendete Programm wsimport. JDK 1.5 enthält dieses Programm nicht.
@@ -441,11 +441,11 @@ Sie können JAX-WS verwenden, um eine Forms-Dienst-WSDL in Java-Proxy-Klassen zu
    * Setzen Sie die Konformitätsstufe des Java-Compilers auf 5.0 oder höher.
    * Erstellen Sie das Projekt.
    * Exportieren Sie das Projekt als JAR-Datei.
-   * Importieren Sie diese JAR-Datei in den Klassenpfad eines Client-Projekts. Importieren Sie außerdem alle JAR-Dateien in &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
+   * Importieren Sie diese JAR-Datei in den Klassenpfad eines Client-Projekts. Importieren Sie außerdem alle JAR-Dateien in „&lt;Installationsverzeichnis>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty“.
 
    >[!NOTE]
    >
-   >Alle Schnellstarts des Java-Webdienstes (mit Ausnahme des Forms-Dienstes) unter Programmieren mit AEM Formularen erstellen Java-Proxy-Dateien mit JAX-WS. Darüber hinaus verwenden alle Kurzanleitungen für Java-Webservices SwaRef. (Siehe [Aufrufen von AEM Forms mithilfe von SwaRef](#invoking-aem-forms-using-swaref).)
+   >In allen Schnellstarts für Java-Web-Dienste (mit Ausnahme des Forms-Dienstes), die sich unter „Programmieren mit AEM Forms“ befinden, werden Java-Proxy-Dateien mit JAX-WS erstellt. Darüber hinaus verwenden alle Kurzanleitungen für Java-Webservices SwaRef. (Siehe [Aufrufen von AEM Forms mithilfe von SwaRef](#invoking-aem-forms-using-swaref).)
 
 **Siehe auch**
 
@@ -585,7 +585,7 @@ Sie können eine .NET-Client-Assembly erstellen, um einen Forms-Dienst aus einem
 
 **Proxy-Klasse erstellen**
 
-Sie können mithilfe eines Werkzeuges, das zu Microsoft Visual Studio gehört, eine Proxyklasse zur Erstellung der .NET-Client-Assembly erstellen. Der Name des Tools ist wsdl.exe und befindet sich im Installationsordner von Microsoft Visual Studio. Um eine Proxy-Klasse zu erstellen, öffnen Sie die Eingabeaufforderung und navigieren Sie zu dem Ordner, der die Datei „wsdl.exe“ enthält. Weitere Informationen zum Tool „wsdl.exe“ finden Sie in der *MSDN-Hilfe*.
+Sie können mithilfe eines Werkzeuges, das zu Microsoft Visual Studio gehört, eine Proxyklasse zur Erstellung der .NET-Client-Assembly erstellen. Dieses Tool trägt den Namen „wsdl.exe“ und befindet sich im Installationsordner von Microsoft Visual Studio. Um eine Proxy-Klasse zu erstellen, öffnen Sie die Eingabeaufforderung und navigieren Sie zu dem Ordner, der die Datei „wsdl.exe“ enthält. Weitere Informationen zum Tool „wsdl.exe“ finden Sie in der *MSDN-Hilfe*.
 
 Geben Sie an der Eingabeaufforderung den folgenden Befehl ein:
 
@@ -645,7 +645,7 @@ Sie können den Service `MyApplication/EncryptDocument` (der in Workbench erstel
 1. Erstellen Sie eine Microsoft .NET-Client-Assembly, die die WSDL des Services `MyApplication/EncryptDocument` verwendet.
 1. Erstellen Sie ein Microsoft .NET-Client-Projekt. Verweisen Sie im Client-Projekt auf die Microsoft .NET-Client-Assembly. Verweisen Sie auch auf `System.Web.Services`.
 1. Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `MyApplication_EncryptDocumentService`-Objekt, indem Sie seinen Standardkonstruktor aufrufen.
-1. Legen Sie die Eigenschaft `Credentials` des `MyApplication_EncryptDocumentService`-Objekts mit einem `System.Net.NetworkCredential`-Objekt fest. Innerhalb der `System.Net.NetworkCredential` -Konstruktor einen AEM Formular-Benutzernamen und das entsprechende Kennwort angeben. Legen Sie Authentifizierungswerte fest, damit Ihre .NET-Client-Anwendung erfolgreich SOAP-Nachrichten mit AEM Forms austauschen kann.
+1. Legen Sie die Eigenschaft `Credentials` des `MyApplication_EncryptDocumentService`-Objekts mit einem `System.Net.NetworkCredential`-Objekt fest. Geben Sie im `System.Net.NetworkCredential`-Konstruktor einen AEM Forms-Benutzernamen und das entsprechende Kennwort an. Legen Sie Authentifizierungswerte fest, damit Ihre .NET-Client-Anwendung erfolgreich SOAP-Nachrichten mit AEM Forms austauschen kann.
 1. Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird verwendet, um ein PDF-Dokument zu speichern, das an den Prozess `MyApplication/EncryptDocument` übergeben wird.
 1. Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort des PDF-Dokuments und den Modus angibt, in dem die Datei geöffnet werden soll.
 1. Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des `System.IO.FileStream`-Objekts abrufen.
@@ -670,7 +670,7 @@ Sie können einen AEM Forms-Service mithilfe von Java-Proxy-Klassen und Base64 a
    >Ersetzen Sie `hiro-xp` *durch die IP-Adresse des J2EE-Anwendungsservers, der als Host für AEM Forms dient.*
 
 1. Packen Sie die mit JAX-WS erstellten Java-Proxy-Klassen in eine JAR-Datei.
-1. Schließen Sie die Java-Proxy-JAR-Datei und die JAR-Dateien in den folgenden Pfad ein:
+1. Schließen Sie die Java-Proxy-JAR-Datei und die JAR-Dateien im folgenden Pfad ein:
 
    &lt;Installationsverzeichnis>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
@@ -865,7 +865,7 @@ Um den `MyApplication/EncryptDocument`-Prozess mithilfe von Java-Proxy-Dateien a
    >Ersetzen `hiro-xp` *mit der IP-Adresse des J2EE-Anwendungsservers, auf dem AEM Forms gehostet wird.*
 
 1. Packen Sie die mit JAX-WS erstellten Java-Proxy-Klassen in eine JAR-Datei.
-1. Schließen Sie die Java-Proxy-JAR-Datei und die JAR-Dateien in den folgenden Pfad ein:
+1. Schließen Sie die Java-Proxy-JAR-Datei und die JAR-Dateien im folgenden Pfad ein:
 
    &lt;Installationsverzeichnis>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
@@ -961,13 +961,13 @@ Sie können den `MyApplication/EncryptDocument`-Dienst (der in Workbench erstell
 1. Erstellen Sie die .NET-Client-Assembly.
 1. Referenzieren Sie die Microsoft .NET-Client-Assembly. Erstellen Sie ein Microsoft .NET-Client-Projekt. Verweisen Sie im Client-Projekt auf die Microsoft .NET-Client-Assembly. Verweisen Sie auch auf `System.Web.Services`.
 1. Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `MyApplication_EncryptDocumentService`-Objekt, indem Sie seinen Standardkonstruktor aufrufen.
-1. Legen Sie die Eigenschaft `Credentials` des `MyApplication_EncryptDocumentService`-Objekts mit einem `System.Net.NetworkCredential`-Objekt fest. Innerhalb der `System.Net.NetworkCredential` -Konstruktor einen AEM Formular-Benutzernamen und das entsprechende Kennwort angeben. Legen Sie Authentifizierungswerte fest, damit Ihre .NET-Client-Anwendung erfolgreich SOAP-Nachrichten mit AEM Forms austauschen kann.
+1. Legen Sie die Eigenschaft `Credentials` des `MyApplication_EncryptDocumentService`-Objekts mit einem `System.Net.NetworkCredential`-Objekt fest. Geben Sie im `System.Net.NetworkCredential`-Konstruktor einen AEM Forms-Benutzernamen und das entsprechende Kennwort an. Legen Sie Authentifizierungswerte fest, damit Ihre .NET-Client-Anwendung erfolgreich SOAP-Nachrichten mit AEM Forms austauschen kann.
 1. Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird verwendet, um Daten an den `MyApplication/EncryptDocument`-Prozess zu übergeben.
 1. Weisen Sie dem Datenelement `remoteURL` des `BLOB`-Objekts einen String-Wert zu, der den URI-Speicherort eines PDF-Dokuments angibt, das an den `MyApplication/EncryptDocument`-Dienst übergeben werden soll.
 1. Rufen Sie den Prozess `MyApplication/EncryptDocument` auf, indem Sie die Methode `invoke` des `MyApplication_EncryptDocumentService`-Objekts aufrufen und das `BLOB`-Objekt übergeben. Dieser Prozess gibt ein verschlüsseltes PDF-Dokument innerhalb eines `BLOB`-Objekts zurück.
 1. Erstellen Sie ein `System.UriBuilder`-Objekt, indem Sie seinen Konstruktor verwenden und den Wert des Datenelements `remoteURL` des zurückgegebenen `BLOB`-Objekts übergeben.
 1. Konvertieren Sie das `System.UriBuilder`-Objekt zu einem `System.IO.Stream`-Objekt. (Der C#-Schnellstart, der dieser Liste folgt, veranschaulicht, wie diese Aufgabe ausgeführt wird).
-1. Erstellen Sie ein Byte-Array und fügen Sie es mit den Daten im `System.IO.Stream` -Objekt.
+1. Erstellen Sie ein Byte-Array und füllen Sie es mit den Daten aus dem `System.IO.Stream`-Objekt auf.
 1. Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
 1. Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
@@ -988,7 +988,7 @@ Sie können einen AEM Forms-Dienst mit Java-Proxy-Klassen und BLOB-Daten über H
    >Ersetzen `hiro-xp` *mit der IP-Adresse des J2EE-Anwendungsservers, auf dem AEM Forms gehostet wird.*
 
 1. Packen Sie die mit JAX-WS erstellten Java-Proxy-Klassen in eine JAR-Datei.
-1. Schließen Sie die Java-Proxy-JAR-Datei und die JAR-Dateien in den folgenden Pfad ein:
+1. Schließen Sie die Java-Proxy-JAR-Datei und die JAR-Dateien im folgenden Pfad ein:
 
    &lt;Installationsverzeichnis>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
@@ -1107,7 +1107,7 @@ Sie können einen Forms-Dienst mit DIME aufrufen. Beachten Sie den `MyApplicatio
 1. Rufen Sie die Methode `EncryptDocumentServiceWse.RequestSoapContext.Attachments.Add` auf und übergeben Sie das `Microsoft.Web.Services2.Dime.DimeAttachment`-Objekt.
 1. Rufen Sie den Prozess `MyApplication/EncryptDocument` auf, indem Sie die Methode `invoke` des `EncryptDocumentServiceWse`-Objekts aufrufen und das `BLOB`-Objekt übergeben, das den DIME-Anhang enthält. Dieser Prozess gibt ein verschlüsseltes PDF-Dokument innerhalb eines `BLOB`-Objekts zurück.
 1. Ermitteln Sie den Anlagenkennungswert, indem Sie den Wert des Datenelements `attachmentID` des zurückgegebenen `BLOB`-Objekts abrufen.
-1. Iterieren Sie durch die Anlagen in `EncryptDocumentServiceWse.ResponseSoapContext.Attachments` und verwenden Sie den Anlagenkennungswert, um das verschlüsselte PDF-Dokument abzurufen.
+1. Iterieren Sie durch die Anlagen unter `EncryptDocumentServiceWse.ResponseSoapContext.Attachments` und verwenden Sie den Anlagenkennungswert, um das verschlüsselte PDF-Dokument abzurufen.
 1. Erhalten Sie ein `System.IO.Stream`-Objekt, indem Sie den Wert des Datenelements `Stream` des `Attachment`-Objekts abrufen.
 1. Erstellen Sie ein Byte-Array und übergeben Sie dieses Byte-Array an die Methode `Read` des `System.IO.Stream`-Objekts. Diese Methode füllt das Byte-Array mit einem Datenstrom, der das verschlüsselte PDF-Dokument darstellt.
 1. Erstellen Sie ein `System.IO.FileStream`-Objekt durch Aufrufen des Konstruktors und Übergeben eines Zeichenfolgenwerts, der einen Speicherort der PDF-Datei darstellt. Dieses Objekt stellt das verschlüsselte PDF-Dokument dar.
@@ -1228,7 +1228,7 @@ Ein Client-Programm kann die Bestätigung von jeder AuthenticationManager-API in
 * Authentifizieren des Benutzers mithilfe einer der Authentifizierungsmethoden, die von der AuthenticationManager-API verfügbar gemacht werden. Normalerweise würden der Benutzername und das Kennwort verwendet. Sie können jedoch auch die Zertifikatauthentifizierung verwenden.
 * Mithilfe der Methode `AuthenticationManager.getAuthResultOnBehalfOfUser`. Mithilfe dieser Methode kann ein Client-Programm für einen beliebigen AEM Forms-Benutzer ein `AuthResult`-Objekt abrufen.
 
-Ein AEM forms-Benutzer kann mithilfe eines SAML-Tokens authentifiziert werden, das abgerufen wird. Diese SAML-Bestätigung (XML-Fragment) kann als Teil der WS-Security-Kopfzeile mit dem Aufruf des Web-Services zur Benutzerauthentifizierung gesendet werden. In der Regel hat ein Client-Programm einen Benutzer authentifiziert, aber die Anmeldeinformationen des Benutzers nicht gespeichert. (Oder der Benutzer hat sich bei diesem Client über einen anderen Mechanismus als die Verwendung eines Benutzernamens und Kennworts angemeldet.) In dieser Situation muss das Client-Programm AEM Forms aufrufen und einen bestimmten Benutzer verkörpern, der berechtigt ist, AEM Forms aufzurufen.
+AEM Forms-Benutzende können mithilfe eines SAML-Tokens authentifiziert werden, das abgerufen wird. Diese SAML-Bestätigung (XML-Fragment) kann als Teil der WS-Security-Kopfzeile mit dem Aufruf des Web-Services zur Benutzerauthentifizierung gesendet werden. In der Regel hat ein Client-Programm einen Benutzer authentifiziert, aber die Anmeldeinformationen des Benutzers nicht gespeichert. (Oder der Benutzer hat sich bei diesem Client über einen anderen Mechanismus als die Verwendung eines Benutzernamens und Kennworts angemeldet.) In dieser Situation muss das Client-Programm AEM Forms aufrufen und einen bestimmten Benutzer verkörpern, der berechtigt ist, AEM Forms aufzurufen.
 
 Um einen bestimmten Benutzer zu verkörpern, rufen Sie die Methode `AuthenticationManager.getAuthResultOnBehalfOfUser` mithilfe eines Web-Services auf. Diese Methode gibt eine `AuthResult`-Instanz zurück, die die SAML-Bestätigung für diesen Benutzer enthält.
 
@@ -1736,4 +1736,4 @@ Im folgenden C#-Code-Beispiel wird ein interaktives Formular signiert, das vom F
 
 ### Services, die mit dem Buchstaben I beginnen, erzeugen ungültige Proxy-Dateien {#services-starting-with-the-letter-i-produce-invalid-proxy-files}
 
-Die Namen einiger von AEM Forms generierter Proxyklassen sind bei Verwendung von Microsoft .Net 3.5 und WCF falsch. Dieses Problem tritt auf, wenn Proxy-Klassen für IBMFilenetContentRepositoryConnector, IDPSchedulerService oder einen anderen Dienst erstellt werden, dessen Name mit dem Buchstaben I beginnt. Beispielsweise lautet der Name des generierten Clients, wenn IBMFileNetContentRepositoryConnector vorhanden ist. `BMFileNetContentRepositoryConnectorClient`. Der Buchstabe I fehlt in der generierten Proxy-Klasse.
+Die Namen einiger von AEM Forms generierter Proxyklassen sind bei Verwendung von Microsoft .Net 3.5 und WCF falsch. Dieses Problem tritt auf, wenn für den IBMFilenetContentRepositoryConnector, IDPSchedulerService oder einen anderen Dienst, dessen Name mit dem Buchstaben I beginnt, Proxy-Klassen erstellt werden. Beispielsweise lautet der Name des generierten Clients im Fall von IBMFileNetContentRepositoryConnector `BMFileNetContentRepositoryConnectorClient`. Der Buchstabe I fehlt in der generierten Proxy-Klasse.

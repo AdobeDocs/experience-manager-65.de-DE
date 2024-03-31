@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '595'
-ht-degree: 78%
+ht-degree: 95%
 
 ---
 
@@ -21,16 +21,16 @@ ht-degree: 78%
 
 ## Voraussetzungen {#pre-requisites}
 
-+++ Für 64-Bit-AEM Forms Designer (empfohlen)
++++ Für die 64-Bit-Version von AEM Forms Designer (empfohlen)
 
-* 64-Bit-Version von installieren  [Visual C++ 2019 Redistributable (x64)](https://learn.microsoft.com/de-de/cpp/windows/latest-supported-vc-redist?view=msvc-170). Stellen Sie vor Installationsbeginn sicher, dass die oben genannten Redistributable Runtime Packages installiert sind.
+* Installation der 64-Bit-Version von [Visual C++ 2019 Redistributable (x64)](https://learn.microsoft.com/de-de/cpp/windows/latest-supported-vc-redist?view=msvc-170). Stellen Sie vor Installationsbeginn sicher, dass die oben genannten Redistributable Runtime Packages installiert sind.
 * Eine Benutzerin bzw. ein Benutzer mit Administratorrechten zum Installieren oder Deinstallieren von AEM Forms Designer.
 
 +++
 
-+++ Für 32-Bit-AEM Forms Designer
++++ Für die 32-Bit-Version von AEM Forms Designer
 
-* 32-Bit-Version von installieren  [Visual C++ 2019 Redistributable (x64)](https://learn.microsoft.com/de-de/cpp/windows/latest-supported-vc-redist?view=msvc-170). Stellen Sie vor Installationsbeginn sicher, dass die oben genannten Redistributable Runtime Packages installiert sind.
+* Installation der 32-Bit-Version von [Visual C++ 2019 Redistributable (x64)](https://learn.microsoft.com/de-de/cpp/windows/latest-supported-vc-redist?view=msvc-170). Stellen Sie vor Installationsbeginn sicher, dass die oben genannten Redistributable Runtime Packages installiert sind.
 * Eine Benutzerin bzw. ein Benutzer mit Administratorrechten zum Installieren oder Deinstallieren von AEM Forms Designer.
 
 +++
@@ -46,12 +46,12 @@ ht-degree: 78%
 Designer ist als eigenständiges Installationsprogramm sowie als Teil von WorkBench verfügbar. Wenn Sie ein eigenständiges Installationsprogramm für AEM Forms Designer verwenden, führen Sie die folgenden Schritte aus:
 
 1. Deinstallieren Sie die vorherige Version von AEM Forms Designer, falls sie installiert ist.
-1. Laden Sie den 64-Bit-AEM Forms Designer (empfohlen) oder den 32-Bit-AEM Forms-Designer entsprechend Ihren Anforderungen herunter.
+1. Laden Sie die 64-Bit-Version von AEM Forms Designer (empfohlen) oder die 32-Bit-Version von AEM Forms Designer entsprechend Ihren Anforderungen herunter.
 
    >[!NOTE]
    > 
-   >* Forms Designer mit 32-Bit-Version wird ab AEM Version 6.5 Forms Service Packs 20 (6.5.20.0) nicht mehr unterstützt. Adobe empfiehlt ein Upgrade auf Forms Designer 64-Bit.
-   >* Forms Designer mit 64 Bit ist nur für AEM 6.5 Forms Service Packs 19 (6.5.19.0) oder neuere Versionen verfügbar.
+   >* Die 32-Bit-Version von Forms Designer wird voraussichtlich ab AEM 6.5 Forms Service Packs 20 (6.5.20.0) nicht mehr unterstützt. Adobe empfiehlt ein Upgrade auf Forms Designer 64-Bit.
+   >* Die 64-Bit-Version von Forms Designer ist nur für AEM 6.5 Forms Service Packs 19 (6.5.19.0) oder höher verfügbar.
    >* Ab Adobe Experience Manager 6.5 Forms Service Pack 15 (6.5.15.0) umfasst die Version von Forms Designer auch die Version des Service Packs. Beispielsweise ist 6.5.15.20221112.1.0 die Versionsnummer für Service Pack 15. Hier ist 6.5.15 die Version des Service Packs.
 
 1. Starten Sie das Installationsprogramm für AEM Forms Designer, indem Sie auf die Datei „setup.exe“ doppelklicken.
@@ -59,7 +59,7 @@ Designer ist als eigenständiges Installationsprogramm sowie als Teil von WorkBe
 
    >[!NOTE]
    >
-   >* Forms Designer-Lizenzschlüssel abrufen von [Adobe Licensing-Website](https://licensing.adobe.com/).
+   >* Beziehen Sie Ihren Forms Designer-Lizenzschlüssel über die [Lizenzierungs-Website von Adobe](https://licensing.adobe.com/).
 
 1. Wenn Sie die Lizenzvereinbarung akzeptieren, klicken Sie auf Weiter, um fortzufahren.
 1. (Optional) Ändern Sie den standardmäßigen Installationspfad, wenn Sie Designer an einem anderen Speicherort installieren möchten. Klicken Sie auf Weiter.

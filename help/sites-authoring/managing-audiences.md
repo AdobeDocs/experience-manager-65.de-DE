@@ -1,6 +1,6 @@
 ---
 title: Verwalten von Zielgruppen
-description: Mit der Konsole "Zielgruppen"können Sie Zielgruppen für Ihr Adobe Target-Konto erstellen, organisieren und verwalten oder Segmente für ContextHub oder ClientContext verwalten
+description: Mithilfe der Zielgruppenkonsole können Sie Zielgruppen für Ihr Adobe Target-Konto erstellen, organisieren und verwalten oder Segmente für ContextHub bzw. ClientContext verwalten.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -8,16 +8,16 @@ topic-tags: personalization
 docset: aem65
 exl-id: 97e02986-049f-4747-a67a-6aa0677b281e
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f52b2076c94b64a9d84646621be3a04bfe15b13c
 workflow-type: tm+mt
 source-wordcount: '903'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 # Verwalten von Zielgruppen{#managing-audiences}
 
-Mit der Konsole &quot;Zielgruppen&quot;können Sie Zielgruppen für Ihr Adobe Target-Konto erstellen, organisieren und verwalten oder Segmente für ContextHub oder ClientContext verwalten:
+Mithilfe der Zielgruppenkonsole können Sie Zielgruppen für Ihr Adobe Target-Konto erstellen, organisieren und verwalten oder Segmente für ContextHub bzw. ClientContext verwalten:
 
 * Zielgruppen hinzufügen – entweder Adobe Target-Zielgruppen oder ContextHub-Segmente.
 * Verwalten von Zielgruppen
@@ -40,8 +40,8 @@ Sie können ContextHub-Segmente entweder in der Konsole „Zielgruppen“ oder w
 
 So erstellen Sie ContextHub-Segmente in der Konsole „Zielgruppen“:
 
-1. Klicken Sie in der Navigationskonsole auf **Personalisierung**. Klicks **Zielgruppen**.
-1. Klicks **Erstellen eines ContextHub-Segments**.
+1. Klicken Sie in der Navigationskonsole auf **Personalisierung**. Klicken Sie auf **Zielgruppen**.
+1. Klicken Sie auf **ContextHub-Segment erstellen**.
 
    ![screen-shot_2019-03-05at124034](assets/screen-shot_2019-03-05at124034.png)
 
@@ -67,19 +67,19 @@ Wenn Sie mehr als eine Regel verwenden, werden diese Regeln durch den booleschen
 
 So erstellen Sie eine Adobe Target-Zielgruppe:
 
-1. Klicken Sie in der Navigationskonsole auf **Personalisierung**. Klicks **Zielgruppen**.
+1. Klicken Sie in der Navigationskonsole auf **Personalisierung**. Klicken Sie auf **Zielgruppen**.
 
    ![screen-shot_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. Klicken Sie in der Konsole Zielgruppen auf **Erstellen** und dann ** Target-Zielgruppe erstellen**.
+1. Klicken Sie in der Zielgruppen-Konsole auf **Erstellen** und dann auf „Target-Zielgruppe erstellen“.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. Im **Adobe Target-Konfiguration** wählen Sie die Zielkonfiguration aus und klicken Sie auf **OK**.
-1. Klicken Sie im Bereich Regel Nr. 1 auf den Attributtyp und geben Sie in die verfügbaren Felder Attributinformationen ein. Wenn Sie fertig sind, wählen Sie das Häkchen rechts neben dem Attribut aus, um es zu speichern. Weitere Informationen zu allen Attributen finden Sie unter [Attribute und zugehörige Optionen](#attributes-and-their-options).
+1. Wählen Sie im Dialogfeld **Adobe Target-Konfiguration** die Zielgruppenkonfiguration aus und klicken Sie dann auf **OK**.
+1. Klicken Sie im Bereich für Regel Nr. 1 auf den Attributtyp und geben Sie in die verfügbaren Felder Attributinformationen ein. Wenn Sie fertig sind, wählen Sie das Häkchen rechts neben dem Attribut aus, um es zu speichern. Weitere Informationen zu allen Attributen finden Sie unter [Attribute und zugehörige Optionen](#attributes-and-their-options).
 1. Klicken Sie auf **Regel hinzufügen**, um eine weitere Regel hinzuzufügen. Geben Sie so viele Regeln wie erforderlich ein. Regeln werden mit dem booleschen Operator UND kombiniert. Das bedeutet, dass die Zielgruppe alle Anforderungen jeder Regel erfüllen muss, um für eine Aktivität zugelassen zu werden.
 1. Klicken Sie auf **Weiter**.
-1. Geben Sie einen Namen für die Audience ein und klicken Sie auf **Speichern**.
+1. Geben Sie einen Namen für die Zielgruppe ein und klicken Sie auf **Speichern**.
 1. Klicken Sie auf **Speichern**. Ihre Zielgruppe wird nun in der Zielgruppenliste angezeigt.
 
 ### Attribute und zugehörige Optionen {#attributes-and-their-options}
@@ -104,6 +104,6 @@ Sie können Targeting-Regeln für jedes der folgenden Attribute erstellen:
 
 ContextHub- oder Client Context-Zielgruppen lassen sich beliebig mit der Zielgruppen-Konsole bearbeiten. Sie können zudem Adobe Target-Zielgruppen bearbeiten, jedoch nur diejenigen, die in AEM erstellt wurden:
 
-1. Klicken Sie in der Navigationskonsole auf **Personalisierung**. Klicks **Zielgruppen**.
-1. Klicken Sie auf das Symbol neben dem zu bearbeitenden ContextHub- oder ClientContext-Segment und klicken Sie auf **Bearbeiten**.
+1. Klicken Sie in der Navigationskonsole auf **Personalisierung**. Klicken Sie auf **Zielgruppen**.
+1. Klicken Sie auf das Symbol neben dem zu bearbeitenden ContextHub- oder ClientContext-Segment und dann auf **Bearbeiten**.
 1. Bearbeiten Sie die gewünschten Einstellungen im Editor. Siehe die Dokumentation zu [Client Context](/help/sites-administering/campaign-segmentation.md) bzw. [ContextHub](/help/sites-developing/ch-configuring.md).

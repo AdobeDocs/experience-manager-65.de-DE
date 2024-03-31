@@ -1,6 +1,6 @@
 ---
 title: Überprüfen der Informationen zur Verwendung von Anmeldedaten
-description: Erfahren Sie, wie Sie die Informationen zur Nutzung der Berechtigung überprüfen. Auf die Informationen zur Verwendung der Berechtigung, die deren Verwendung beschreibt, kann über die Acrobat Reader-Erweiterung zugegriffen werden.
+description: Erfahren Sie, wie Sie die Informationen zur Verwendung von Anmeldedaten überprüfen. Auf die Informationen zur Verwendung von Anmeldedaten, die ihre Verwendung beschreiben, kann über die Acrobat Reader-Erweiterung zugegriffen werden.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
@@ -10,19 +10,19 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 9%
+ht-degree: 100%
 
 ---
 
 # Überprüfen der Informationen zur Verwendung von Anmeldedaten {#review-credential-use-information}
 
-Die Berechtigung enthält Informationen zur Beschreibung der vorgesehenen Verwendung, auf die über die Acrobat Reader DC Extensions-Webanwendung für Endbenutzer zugegriffen werden kann. Mithilfe dieser Informationen können Sie den Typ der installierten Berechtigung (entweder Test oder Produktion) und deren Gültigkeitsdaten bestimmen.
+Die Anmeldedaten enthalten Informationen zur Beschreibung der vorgesehenen Verwendung, auf die über die Acrobat Reader DC-Erweiterungen-Web-Anwendung für Endbenutzende zugegriffen werden kann. Anhand dieser Informationen können Sie den Typ der installierten Anmeldedaten (entweder Test oder Produktion) und die Gültigkeitsdauer bestimmen.
 
 1. Öffnen Sie einen Webbrowser und geben Sie diese URL ein:
 
    http://localhost:port/ReaderExtensions (wobei *port* die Port-Nummer Ihres Programm-Servers ist)
 
-1. Melden Sie sich mit dem Standardbenutzernamen und -kennwort an:
+1. Melden Sie sich mit dem standardmäßigen Benutzernamen und Kennwort an:
 
    Benutzername: administrator
 
@@ -30,10 +30,10 @@ Die Berechtigung enthält Informationen zur Beschreibung der vorgesehenen Verwen
 
    >[!NOTE]
    >
-   >Sie müssen über Administrator- oder Superuser-Berechtigungen verfügen, um sich mit dem Standardbenutzernamen und -kennwort anzumelden. Um anderen Benutzern den Zugriff auf Acrobat Reader DC-Erweiterungen zu ermöglichen, erstellen Sie die Benutzerkonten in User Management und weisen Sie den Benutzern die Rolle Acrobat Reader DC Extensions-Webanwendung zu.
+   >Sie benötigen Administrator- oder Hauptbenutzer-Berechtigungen, um sich mit dem standardmäßigen Benutzernamen und Kennwort anmelden zu können. Um anderen Benutzenden den Zugriff auf Acrobat Reader DC-Erweiterungen zu erlauben, erstellen Sie die Benutzerkonten in User Management und weisen Sie ihnen die Rolle „Acrobat Reader DC-Erweiterungen-Web-Anwendung“ zu.
 
-1. Wählen Sie den Berechtigungsalias aus der Liste &quot;Berechtigung auswählen&quot;aus und überprüfen Sie die Informationen in den Abschnitten &quot;Ablaufdatum&quot;und &quot;Hinweis zur vorgesehenen Verwendung&quot;.
+1. Wählen Sie den Anmeldedaten-Alias in der Liste „Anmeldedaten auswählen“ aus und überprüfen Sie die Informationen in den Feldern „Ablaufdatum“ und „Hinweis zur bestimmungsgemäßen Verwendung“.
 
 >[!NOTE]
 >
->Das Ablaufdatum der Berechtigung ist auch auf der Seite Einstellungen > Trust Store-Verwaltung > Lokale Berechtigungen in Administration Console unter &quot;Ablaufdatum&quot;verfügbar.
+>Das Ablaufdatum der Anmeldedaten finden Sie auch in der Administrationskonsole auf der Seite „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Anmeldedaten“ unter „Ablaufdatum“.

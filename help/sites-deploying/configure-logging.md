@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '650'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Mit AEM können Sie Folgendes konfigurieren:
 
 * globale Parameter für den zentralen Protokollierungsdienst
 * Anfragedatenprotokollierung; eine spezielle Protokollierungskonfiguration für Anfrageinformationen
-* spezifische Einstellungen für die einzelnen Dienste, z. B. eine einzelne Protokolldatei und ein bestimmtes Format für die Protokollmeldungen
+* bestimmte Einstellungen für einzelne Dienste, beispielsweise eine einzelne Protokolldatei und das Format für die Protokollmeldungen
 
 Hierbei handelt es sich jeweils um [OSGi-Konfigurationen](/help/sites-deploying/configuring-osgi.md).
 
@@ -102,7 +102,7 @@ Das erste Paar ist ein Sonderfall, da sowohl `request.log`- als auch `access.log
 
    * Schreibt Meldungen in `request.log` oder `access.log`.
 
-Diese können bei Bedarf angepasst werden, obwohl die Standardkonfiguration für die meisten Installationen geeignet ist.
+Eine Anpassung ist hier ggf. möglich, auch wenn die Standardkonfiguration für die meisten Installationen geeignet ist.
 
 Die anderen Paare folgen der Standardkonfiguration:
 
@@ -132,13 +132,13 @@ Die anderen Paare folgen der Standardkonfiguration:
 
 Sie können ein eigenes Logger-/Writer-Paar definieren:
 
-1. Erstellen einer Instanz der Factory-Konfiguration [Apache Sling Logging Logger-Konfiguration](/help/sites-deploying/osgi-configuration-settings.md).
+1. Erstellen Sie eine Instanz der Werkskonfiguration [Apache Sling Logging Logger-Konfiguration](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. Geben Sie die Protokolldatei an.
    1. Geben Sie den Logger an.
    1. Konfigurieren Sie ggf. die anderen Parameter.
 
-1. Erstellen einer Instanz der Factory-Konfiguration [Apache Sling Logging Writer-Konfiguration](/help/sites-deploying/osgi-configuration-settings.md).
+1. Erstellen Sie eine Instanz der Werkskonfiguration [Apache Sling Logging Writer Configuration](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. Geben Sie die Protokolldatei an – diese muss mit der Angabe für den Logger übereinstimmen.
    1. Konfigurieren Sie ggf. die anderen Parameter.

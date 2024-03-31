@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2372'
-ht-degree: 75%
+ht-degree: 82%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 75%
 
 Während jedes Formular für einen bestimmten Zweck entwickelt wurde, gibt es einige gängige Segmente in den meisten Formularen, z. B. zur Bereitstellung persönlicher Details wie Name und Adresse, Familiendetails und Einkommensdetails. Beim Entwickeln von Formularen müssen diese gängigen Segmente jedes Mal erstellt werden, wenn ein neues Formular erstellt wird.
 
-Adaptive Formulare bieten einen bequemen Mechanismus, um Formularsegmente wie ein Bedienfeld oder eine Gruppe von Feldern nur einmal zu erstellen und sie in allen adaptiven Formularen wiederzuverwenden. Diese wiederverwendbaren, unabhängigen Segmente werden als adaptive Formularfragmente bezeichnet.
+Adaptive Formulare bieten einen praktischen Mechanismus, mit dem Formularsegmente wie ein Bedienfeld oder eine Gruppe von Feldern nur einmal erstellt werden müssen und dann in adaptiven Formularen wiederverwendet werden können. Diese wiederverwendbaren, unabhängigen Segmente werden als adaptive Formularfragmente bezeichnet.
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Sie können ein adaptives Formularfragment von Grund auf neu erstellen oder ein 
 
      >[!NOTE]
      >
-     > Im adaptiven Forms, das auf Kernkomponenten basiert, können Sie ein einzelnes Formularfragment mehrmals in einem Formular verwenden. Es unterstützt sowohl auf nichts basierende als auch schemabasierte Formularfragmente.
+     > Im adaptiven Formularen, die auf Kernkomponenten basieren, können Sie ein einzelnes Formularfragment mehrmals in einem Formular verwenden. Es werden sowohl auf nichts basierende als auch schemabasierte Formularfragmente unterstützt.
 
    * **Formularvorlage**: Das Fragment mit mithilfe einer XDP-Vorlage erstellt, die auf AEM Forms hochgeladen wurde. Wählen Sie die entsprechende XDP-Vorlage als Formularmodell für das Fragment aus.
 
@@ -105,7 +105,7 @@ Wenn Sie außerdem ein XML-Schema oder eine XDP-Formularvorlage als Formularmode
    * **Formularmodell**: Je nach Formularmodell für das adaptive Formular wird im Feld das **XML-Schema**, die **Formularvorlage** oder **Keine** angezeigt. Dies ist ein Feld, das nicht bearbeitet werden kann.
 
    * **Fragmentmodellstamm**: Diese Option wird nur in XSD-basierten adaptiven Formularen angezeigt. Sie gibt den Stamm für das Fragmentmodell an. Sie können auch **/** oder den komplexen XSD-Typ aus der Dropdown-Liste auswählen. Sie können das Fragment nur dann in einem anderen adaptiven Formular wiederverwenden, wenn Sie den komplexen Typ als Fragmentmodellstamm auswählen.
-Wenn Sie **/** als Fragmentmodellstamm auswählen, wird die vollständige XSD-Struktur vom Stamm in der Registerkarte für das Datenmodell des adaptiven Formulars angezeigt. Für Fragmentmodellstamm eines komplexen Typs sind nur die untergeordneten Elemente des ausgewählten komplexen Typs auf der Registerkarte des Datenmodells des adaptiven Formulars sichtbar. Wenn Sie ein Fragment erstellen und einen komplexen Typ als **Fragmentmodellstamm** können Sie sie überall dort verwenden, wo dieser komplexe Typ verwendet wird, entweder innerhalb desselben Formulars oder über mehrere Formulare hinweg.
+Wenn Sie **/** als Fragmentmodellstamm auswählen, wird die vollständige XSD-Struktur vom Stamm in der Registerkarte für das Datenmodell des adaptiven Formulars angezeigt. Für einen Fragmentmodellstamm mit komplexem Typ werden lediglich die untergeordneten Elemente des ausgewählten komplexen Typs auf der Registerkarte „Datenmodell“ des adaptiven Formulars angezeigt. Wenn Sie ein Fragment erstellen und einen komplexen Typ als **Fragmentmodellstamm** festlegen, können Sie es überall dort einsetzen, wo dieser komplexe Typ verwendet wird (entweder innerhalb desselben Formulars oder formularübergreifend).
 
    * **XSD-REF**: Diese Option ist nur in den XSD-basierten adaptiven Formularen verfügbar. Sie zeigt den Ort des XML-Schemas an.
 
@@ -171,19 +171,19 @@ Sie können verschachtelte adaptive Formularfragmente erstellen, d. h. ein Frag
 
 Sie können ein adaptives Formularfragment ändern oder durch ein anderes ersetzen, indem Sie im Dialogfeld „Komponente bearbeiten“ die Eigenschaft **Fragment-Asset auswählen** für ein Panel mit adaptivem Formularfragment verwenden.
 
-### Generieren des Datensatzdokuments für adaptives Formularfragment {#generate-DOR-for-fragments}
+### Generieren eines Datensatzdokuments für adaptive Formularfragmente {#generate-DOR-for-fragments}
 
 Mit dem Datensatzdokument (Document of Record, DOR) können Sie Informationen zu Ihren Formularen im Druck- oder Dokumentformat speichern. Auf diese Weise können Sie jederzeit Informationen über Ihre Kunden verfolgen und mithilfe des Datensatzdokuments Formulare und Inhalte im PDF-Format archivieren. [Erfahren Sie, wie Sie ein Datensatzdokument für adaptive Formularfragmente generieren](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
 ### Mehrfaches Verwenden eines Formularfragments in einem adaptiven Formular {#using-form-fragment-mutiple-times-in-af}
 
-Sie können ein schemabasiertes Formularfragment mehrfach in einem adaptiven Formular verwenden, um Daten für jedes Formularfragmentfeld eindeutig zu speichern. Sie können beispielsweise ein Adressformularfragment verwenden, um Adressdetails permanent für die Kommunikation zu erfassen und aktive Adressen in einem Kreditantragsformular darzustellen.
+Sie können ein schemabasiertes Formularfragment mehrfach in einem adaptiven Formular verwenden, um Daten für jedes Formularfragmentfeld eindeutig zu speichern. Es ist beispielsweise möglich, ein Adressformularfragment zu verwenden, um Adressangaben zum ständigen Wohnsitz, zur Kommunikation und zum aktuellen Wohnsitz in einem Kreditantragsformular zu erfassen.
 
-![Verwenden mehrerer Fragmente im adaptiven Formular](/help/forms/using/assets/using-multiple-fragment-af.gif)
+![Verwenden mehrerer Fragmente in einem adaptiven Formular](/help/forms/using/assets/using-multiple-fragment-af.gif)
 
 >[!NOTE]
 >
-> * Wenn Sie nicht basierte Formularfragmente mehrmals in einem adaptiven Formular verwenden, erfolgt eine Datensynchronisation zwischen den Feldern der Fragmente. Das Problem mit der Datensynchronisierung tritt nicht in auf Kernkomponenten basierenden Formularfragmenten auf, in denen Sie ein Fragment entweder schemabasiert oder nicht-basiert mehrmals in einem Formular verwenden können.
+> * Wenn Sie auf nichts basierende Formularfragmente mehrfach in einem adaptiven Formular verwenden, wird eine Datensynchronisierung zwischen den Feldern der Fragmente durchgeführt. Das Problem mit der Datensynchronisierung tritt nicht in auf Kernkomponenten basierenden Formularfragmenten auf, bei denen Sie ein Fragment entweder auf einem Schema basierend oder auf nichts basierend mehrmals in einem Formular verwenden können.
 
 ## Automatisches Zuordnen von Fragmenten für die Datenbindung {#auto-mapping-of-fragments-for-data-binding}
 

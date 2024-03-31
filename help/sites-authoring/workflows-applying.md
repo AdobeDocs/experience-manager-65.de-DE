@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '647'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Sie können einen Workflow wie folgt starten:
 * [die Option Erstellen der Sites-Symbolleiste.](#starting-a-workflow-from-the-sites-toolbar)
 * [die Zeitleiste der Sites-Konsole](#starting-a-workflow-from-the-timeline).
 
-In beiden Fällen müssen Sie:
+In beiden Fällen müssen Sie Folgendes vornehmen:
 
 * [Angeben der Workflow-Details im Assistenten „Workflow erstellen“](#specifying-workflow-details-in-the-create-workflow-wizard)
 
@@ -112,12 +112,12 @@ Details können Sie angeben wie folgt:
 
 1. Im Schritt **Umfang** können Sie Folgendes auswählen:
 
-   * **Inhalt hinzufügen** , um die [Pfad-Browser](/help/sites-authoring/author-environment-tools.md#path-browser) und wählen Sie zusätzliche Ressourcen aus. Klicken Sie im Browser auf **Auswählen** , um den Inhalt zur Workflow-Instanz hinzuzufügen.
+   * **Fügen Sie Inhalte hinzu**, um den [Pfad-Browser](/help/sites-authoring/author-environment-tools.md#path-browser) zu öffnen und zusätzliche Ressourcen auszuwählen. Klicken Sie im Browser auf **Auswählen**, um den Inhalt zur Workflow-Instanz hinzuzufügen.
 
    * Eine vorhandene Ressource, um weitere Aktionen zu sehen:
 
       * **Untergeordnete Elemente einbeziehen**, um anzugeben, dass untergeordnete Elemente der betreffenden Ressource im Workflow enthalten sind.
-Daraufhin wird ein Dialogfeld geöffnet, in dem Sie die Auswahl wie folgt verfeinern können:
+Ein Dialogfeld wird geöffnet, in dem Sie die Auswahl wie folgt verfeinern können:
 
          * Nur unmittelbar untergeordnete Elemente einbeziehen.
          * Nur geänderte Seiten einbeziehen.
@@ -137,6 +137,6 @@ Daraufhin wird ein Dialogfeld geöffnet, in dem Sie die Auswahl wie folgt verfei
 
 ## Starten eines Workflows aus dem Seiten-Editor {#starting-a-workflow-from-the-page-editor}
 
-Wenn Sie eine Seite bearbeiten, können Sie die **Seiteninformationen** von der Symbolleiste aus aufrufen. Das Dropdown-Menü enthält die Option **In Workflow starten**. Dadurch wird ein Dialogfeld geöffnet, in dem Sie den erforderlichen Workflow ggf. zusammen mit einem Titel angeben können:
+Wenn Sie eine Seite bearbeiten, können Sie die **Seiteninformationen** von der Symbolleiste aus aufrufen. Das Dropdown-Menü enthält die Option **In Workflow starten**. Ein Dialogfeld wird geöffnet, in dem Sie den gewünschten Workflow bei Bedarf zusammen mit einem Titel angeben können:
 
 ![wf-54](assets/wf-54.png)

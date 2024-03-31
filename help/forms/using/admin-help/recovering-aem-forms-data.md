@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1118'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -121,7 +121,7 @@ Falls der globale Dokumentenspeicher an einem anderen als dem ursprünglichen Sp
 
 >[!NOTE]
 >
->Die Komponentenbereitstellung schlägt unter Windows fehl, wenn sich der Ordner des globalen Dokumentenspeichers im Stammordner des Laufwerks befindet (z. B. D:\). Beim globalen Dokumentenspeicher müssen Sie sicherstellen, dass sich der Ordner nicht im Stammverzeichnis des Laufwerks befindet, sondern in einem Unterverzeichnis. Der Ordner sollte beispielsweise „D:\GDS“ und nicht einfach „D:\“ lauten.
+>Die Komponentenbereitstellung schlägt unter Windows fehl, wenn sich der Ordner des globalen Dokumentenspeichers im Stammordner des Laufwerks befindet (z. B. D:\). Beim globalen Dokumentenspeicher müssen Sie daher sicherstellen, dass sich das Verzeichnis nicht im Stammverzeichnis des Laufwerks befindet, sondern in einem Unterverzeichnis. Der Ordner sollte beispielsweise „D:\GDS“ und nicht einfach „D:\“ lauten.
 
 ## Wiederherstellen des globalen Dokumentenspeichers in einer Cluster-Umgebung {#recovering-the-gds-to-a-clustered-environment}
 

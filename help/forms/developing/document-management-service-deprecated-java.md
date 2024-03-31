@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Die folgenden Schnellstarts sind für den Document Management-Dienst (nicht mehr
 
 >[!NOTE]
 >
->Mit Wirkung vom 5. August 2011 migriert Adobe Kunden von Content Services ES zu Adobe Digital Enterprise Platform Experience Services. Die Produkt-Roadmap für Kunden, die Content Services verwenden, sieht den Wechsel zu den neuen ADEP Experience Services - Core vor, die ein natives Content-Repository umfassen, das auf der modernen, modularen CRX-Architektur basiert, die im Zuge der Übernahme von Day Software durch Adobe erworben wurde.
+>Seit dem 5. August 2011 migriert Adobe Content Services ES-Kundinnen und -Kunden auf die Adobe Digital Enterprise Platform Experience Services. Die Produkt-Roadmap für Kunden, die Content Services verwenden, sieht den Wechsel zu den neuen ADEP Experience Services - Core vor, die ein natives Content-Repository umfassen, das auf der modernen, modularen CRX-Architektur basiert, die im Zuge der Übernahme von Day Software durch Adobe erworben wurde.
 
 [Schnellstart (SOAP-Modus): Erstellen von Content Services-Bereichen mit der Java-API](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 
@@ -43,11 +43,11 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt 
 
 >[!NOTE]
 >
->Schnellstarts beim Programmieren mit AEM Formularen basieren auf dem Forms-Server, der auf JBoss und dem Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie beispielsweise UNIX verwenden, ersetzen Sie die Windows-spezifischen Pfade durch Pfade, die von dem jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungs-Server verwenden, müssen Sie ebenfalls sicherstellen, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Die Schnellstartanleitungen unter „Programmieren mit AEM Forms“ basieren auf dem Formular-Server, der auf JBoss und dem Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie beispielsweise UNIX verwenden, ersetzen Sie die Windows-spezifischen Pfade durch Pfade, die von dem jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungs-Server verwenden, müssen Sie ebenfalls sicherstellen, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Schnellstart (SOAP-Modus): Erstellen von Content Services-Bereichen mit der Java-API (nicht mehr unterstützt) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
-Im folgenden Java-Codebeispiel wird ein neues Leerzeichen mit dem Namen *Testverzeichnis* auf der Startseite des Unternehmens. Der Identifikationswert des neuen Bereichs wird in die Konsole geschrieben.
+Das folgende Java-Code-Beispiel erstellt unter „Company Home“ einen neuen Bereich mit dem Namen *Test Directory* (Testverzeichnis). Der Identifikationswert des neuen Bereichs wird in die Konsole geschrieben.
 
 ```java
  /*
@@ -573,7 +573,7 @@ Das folgende Java-Codebeispiel verschiebt eine PDF-Datei mit dem Namen *Mortgage
 
 ## Schnellstart (SOAP-Modus): Auflisten von Content Services-Inhalte mit der Java-API (nicht mehr unterstützt) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
 
-Im folgenden Java-Codebeispiel werden Inhalte aufgelistet, die sich in /Company Home befinden. Jeder Knotentyp und jeder Knotenname wird angezeigt.
+Das folgende Java-Code-Beispiel listet Inhalte auf, die sich unter „/Company Home“ befinden. Jeder Knotentyp und jeder Knotenname wird angezeigt.
 
 ```java
  /*

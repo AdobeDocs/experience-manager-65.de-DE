@@ -1,6 +1,6 @@
 ---
 title: Strukturierung von Multisite-Management für zielgerichtete Inhalte
-description: Ein Diagramm zeigt die Struktur der Multisite-Unterstützung für zielgerichtete Inhalte
+description: Im Diagramm ist der Aufbau der Multisite-Unterstützung für zielgerichtete Inhalte dargestellt.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -22,12 +22,12 @@ Gebiete werden unter **/content/campaigns/&lt;Marke>** eingeordnet und jede Mark
 
 ![chlimage_1-268](assets/chlimage_1-268.png)
 
-Zum Nachschlagen zielgerichteter Inhalte können die Seiten oder Sites einem Gebiet zugeordnet werden. Sollte kein Gebiet konfiguriert sein, bezieht sich AEM für diese Marke auf das primäre Gebiet.
+Seiten oder Sites können Gebieten zugeordnet werden, sodass sich Targeting-Inhalte nachschlagen lassen. Sollte kein Gebiet konfiguriert sein, bezieht sich AEM für diese Marke auf das primäre Gebiet.
 
 Im folgenden Diagramm finden Sie ein Beispiel dafür, wie die Logik im Falle der drei Sites Site1, Site2 und Site3 funktioniert.
 
 ![chlimage_1-269](assets/chlimage_1-269.png)
 
-* site1 sucht basierend auf der Bereichszuordnung nach myarea1 für brand1 und other area2 für brand2.
+* site1 schlägt myarea1 für brand1 und otherarea2 für brand2 basierend auf der Bereichszuordnung nach.
 * Site2 bezieht sich für Marke1 auf MeinGebiet1 und für Marke2 auf das primäre Gebiet, da nur für Marke1 Gebiete zugewiesen wurden.
 * Site3 bezieht sich für Marke1 und für Marke2 auf das primäre Gebiet, weil für diese Site keine Gebietszuordnung vorgenommen wurde.

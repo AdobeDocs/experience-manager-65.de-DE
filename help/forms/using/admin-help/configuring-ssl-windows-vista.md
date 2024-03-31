@@ -10,19 +10,19 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '173'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
 # Konfigurieren von SSL unter Windows Vista {#configuring-ssl-on-windows-vista}
 
-Zum Konfigurieren von SSL unter Windows Vista™ benötigen Sie ein SSL-Zertifikat mit RSA-Schlüsseln für die Authentifizierung. Sie können das Java-Keytool verwenden, um das Zertifikat zu erstellen.
+Zum Konfigurieren von SSL unter Windows Vista™ benötigen Sie ein SSL-Zertifikat mit RSA-Schlüsseln zur Authentifizierung. Sie können das Java-Keytool zum Erstellen des Zertifikats verwenden.
 
 >[!NOTE]
 >
->Windows Vista funktioniert nicht mit DSA-Schlüsseln.
+>Windows Vista kann nicht mit DSA-Schlüsseln verwendet werden.
 
-Sie können Keytool mit einem einzelnen Befehl ausführen, der alle zum Erstellen des Zertifikats und Keystore erforderlichen Informationen enthält.
+Sie können das Keytool mit einem einzelnen Befehl ausführen, der alle zum Erstellen von Zertifikat und Keystore erforderlichen Informationen enthält.
 
 **Erstellen eines SSL-Zertifikats**
 

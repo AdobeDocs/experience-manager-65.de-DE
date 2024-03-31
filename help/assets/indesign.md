@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1555'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Dieses Befehlsskript führt folgende Aktionen aus:
 
    >[!CAUTION]
    >
-   >Wenn der [!DNL InDesign Server] nicht installiert oder konfiguriert ist, können Sie trotzdem eine INDD-Datei in [!DNL Experience Manager] hochladen. Die erzeugten Ausgabedarstellungen sind jedoch auf PNG und JPEG beschränkt. Sie können keine HTML-, .idml- oder Seitenausgabeformate generieren.
+   >Wenn der [!DNL InDesign Server] nicht installiert oder konfiguriert ist, können Sie trotzdem eine INDD-Datei in [!DNL Experience Manager] hochladen. Die erzeugten Ausgabedarstellungen sind jedoch auf PNG und JPEG beschränkt. Sie können keine HTML-, IDML- oder Seitenausgabeformate generieren.
 
 1. Nach der Extraktion und Ausgabegenerierung:
 
@@ -67,7 +67,7 @@ Dieses Befehlsskript führt folgende Aktionen aus:
 Um [!DNL InDesign Server] für die Verwendung mit [!DNL Experience Manager Assets] zu integrieren und nach der Konfiguration des Proxys müssen Sie folgende Schritte durchführen:
 
 1. [Installieren Sie InDesign Server](#installing-the-indesign-server).
-1. Falls erforderlich, [Konfigurieren des Experience Manager Assets-Workflows](#configuring-the-aem-assets-workflow).
+1. Falls erforderlich, [konfigurieren Sie den Experience Manager Assets-Workflow](#configuring-the-aem-assets-workflow).
 Dies ist nur dann notwendig, wenn die Standardwerte für Ihre Instanz nicht geeignet sind.
 1. Konfigurieren Sie einen [Proxy Worker für InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
@@ -77,7 +77,7 @@ Um den [!DNL InDesign Server] für die Verwendung mit [!DNL Experience Manager] 
 
 1. Laden Sie den [!DNL InDesign Server] herunter und Sie installieren ihn.
 
-1. Bei Bedarf können Sie die Konfiguration Ihrer [!DNL InDesign Server] -Instanz.
+1. Bei Bedarf können Sie die Konfiguration Ihrer [!DNL InDesign Server]-Instanz anpassen.
 
 1. Starten Sie den Server über die Befehlszeile:
 
@@ -154,7 +154,7 @@ Anpassungen können Sie im Schritt **[!UICONTROL Extrahierung von Seiten]** auf 
 >
 >Der Worker befindet sich in der Proxy-Instanz.
 
-1. Erweitern Sie in der Tools-Konsole **[!UICONTROL Cloud Service-Konfigurationen]** im linken Bereich. Anschließend erweitern Sie den Eintrag **[!UICONTROL Cloud-Proxy-Konfiguration]**.
+1. Erweitern Sie in der Tools-Konsole die Option **[!UICONTROL Cloud Service-Konfigurationen]** im linken Bereich. Anschließend erweitern Sie den Eintrag **[!UICONTROL Cloud-Proxy-Konfiguration]**.
 
 1. Doppelklicken Sie auf den **[!UICONTROL IDS-Worker]**, um ihn für die Konfiguration zu öffnen.
 
@@ -184,11 +184,11 @@ Wenn [!DNL InDesign Server] und [!DNL Experience Manager] auf unterschiedlichen 
 Sie können jetzt die parallele Auftragsverarbeitung für IDS aktivieren. Bestimmen Sie die maximale Anzahl paralleler Aufträge (`x`), die ein [!DNL InDesign Server] verarbeiten kann:
 
 * Auf einem einzelnen Mehrprozessor-Computer ist die Anzahl der parallelen Aufträge (`x`), die ein [!DNL InDesign Server] verarbeiten kann, um eins kleiner als die Anzahl der Prozessoren, die IDS ausführen.
-* Wenn Sie IDS auf mehreren Computern ausführen, müssen Sie die Gesamtanzahl der verfügbaren Prozessoren (d. h. auf allen Computern) zählen und dann die Gesamtanzahl der Maschinen subtrahieren.
+* Wenn Sie IDS auf mehreren Computern ausführen, müssen Sie die Gesamtanzahl der verfügbaren Prozessoren (d. h. auf allen Computern) zählen und dann die Gesamtanzahl der Maschinen subtrahieren.
 
 So konfigurieren Sie die Anzahl der parallelen IDS-Aufträge:
 
-1. Öffnen Sie die **[!UICONTROL Konfigurationen]** Registerkarte der Felix-Konsole, z. B.: `https://[aem_server]:[port]/system/console/configMgr`.
+1. Öffnen Sie die Registerkarte **[!UICONTROL Konfigurationen]** der Felix-Konsole. Zum Beispiel: `https://[aem_server]:[port]/system/console/configMgr`.
 
 1. Wählen Sie die IDS-Verarbeitungsschlange unter `Apache Sling Job Queue Configuration`.
 
@@ -234,8 +234,8 @@ Führen Sie für [!DNL InDesign Server] 10.0 oder höher die folgenden Schritte
 Sie können die standardmäßigen Admin-Anmeldeinformationen (Benutzername und Passwort) für den Zugriff auf den [!DNL InDesign Server] in Ihrer [!DNL Experience Manager]-Bereitstellung ändern, ohne die Integration mit dem [!DNL InDesign Server] aufzuheben.
 
 1. Wechseln zu `/etc/cloudservices/proxy.html`.
-1. Geben Sie im Dialogfeld den neuen Benutzernamen und das neue Kennwort an.
-1. Speichern Sie die Anmeldeinformationen.
+1. Geben Sie im Dialogfeld den neuen Benutzernamen und das neue Passwort an.
+1. Speichern Sie die Anmeldeinformationen. 
 
 >[!MORELIKETHIS]
 >

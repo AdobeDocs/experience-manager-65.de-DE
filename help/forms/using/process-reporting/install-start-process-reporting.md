@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1710'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Führen Sie die folgenden Schritte aus, um den Veröffentlichungszeitplan zu än
 1. Starten Sie den AEM Forms-Server neu.
 
 1. Beenden Sie die AEM Forms-Server-Instanz.
-1. Melden Sie sich bei WebSphere® Administrative Console an. Klicken Sie in der Navigationsstruktur auf **Server** > **Anwendungsserver** und klicken Sie dann im rechten Bereich auf den Servernamen.
+1. Melden Sie sich bei WebSphere® Administrative Console an. Klicken Sie in der Navigationsstruktur auf **Servers** > **Application servers** und im rechten Bereich auf den Server-Namen.
 
 1. Klicken Sie unter „Server Infrastructure“ auf **Java™ and Process Management** > **Process Definition**.
 
@@ -99,7 +99,7 @@ Führen Sie die folgenden Schritte aus, um den Veröffentlichungszeitplan zu än
 
 >[!NOTE]
 >
-> Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mithilfe alternativer Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+> Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 ### ProcessDataStorage-Service {#processdatastorage-service}
 

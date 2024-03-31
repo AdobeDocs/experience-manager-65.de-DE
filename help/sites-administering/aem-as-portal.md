@@ -1,6 +1,6 @@
 ---
 title: AEM-Portale und Portlets
-description: Erfahren Sie, wie Sie AEM als Portal konfigurieren und verwalten und wie Sie AEM Inhalt in einem Portlet konfigurieren und anzeigen.
+description: Erfahren Sie, wie Sie AEM als Portal konfigurieren und verwalten und wie Sie AEM-Inhalt in einem Portlet konfigurieren und anzeigen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '6074'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -107,7 +107,7 @@ Das Portlet kann mit den folgenden Voreinstellungen konfiguriert werden:
  <tbody>
   <tr>
    <td>startPath</td>
-   <td><p>Dies ist der Startpfad des Portlets: Er definiert den anfänglich angezeigten Inhalt.</p> <p><strong>Wichtig</strong>: Wenn das Portlet so konfiguriert ist, dass eine Verbindung zu AEM Autoren- und Veröffentlichungsinstanzen hergestellt wird, die auf einem anderen Kontextpfad ausgeführt werden als<strong> /</strong>, müssen Sie die Kraft aktivieren <strong>CQUrlInfo</strong> in der HTML Library Manager-Konfiguration dieser AEM Instanzen (z. B. über die Felix Webconsole) funktioniert die Bearbeitung nicht und das Dialogfeld "Voreinstellungen"wird nicht angezeigt.</p> </td>
+   <td><p>Dies ist der Startpfad des Portlets: Er definiert den anfänglich angezeigten Inhalt.</p> <p><strong>Wichtig</strong>: Wenn das Portlet so konfiguriert ist, dass es eine Verbindung zu AEM-Autoren- und -Veröffentlichungsinstanzen herstellt, die unter einem anderen Kontextpfad als <strong> /</strong> ausgeführt werden, müssen Sie das Erzwingen von <strong>CQUrlInfo</strong> in der HTML Library Manager-Konfiguration dieser AEM-Instanzen aktivieren (z. B. über die Felix Web Console). Andernfalls ist eine Bearbeitung nicht möglich und das Dialogfeld „Voreinstellungen“ wird nicht angezeigt.</p> </td>
   </tr>
   <tr>
    <td>htmlSelector</td>
@@ -127,7 +127,7 @@ Das Portlet kann mit den folgenden Voreinstellungen konfiguriert werden:
   </tr>
   <tr>
    <td>preferenceDialog</td>
-   <td>Pfad zum Dialogfeld "Voreinstellungen"in AEM - wenn leer gelassen, wird das integrierte Dialogfeld "Voreinstellungen"verwendet. Die Standardeinstellung ist /libs/portal/content/prefs.html.</td>
+   <td>Pfad zum Dialogfeld „Voreinstellungen“ in AEM. Wird kein Pfad angegeben, wird das integrierte Dialogfeld „Voreinstellungen“ verwendet. Die Standardeinstellung ist /libs/portal/content/prefs.html.</td>
   </tr>
   <tr>
    <td>initialRedirect</td>
@@ -150,7 +150,7 @@ Vorausgesetzt, dass der Portal-Server auf dem Host „localhost“ (Port ) ausge
 
 Zur Unterstützung automatisierter Implementierungen und Konfigurationsbereitstellungen verfügt das AEM-Inhalts-Portlet über eine integrierte Konfigurations-Support-Funktion, die versucht, Konfigurationen aus dem Klassenpfad auszulesen, der für die Portlet-Anwendung angegeben wird.
 
-Beim Start wird die Systemeigenschaft **com.day.cq.portet.config** ausgelesen, sodass die aktuelle Umgebung erkannt werden kann. Normalerweise ähnelt der Wert dieser Eigenschaft **dev**, **prod**, **test** usw. Wenn keine Umgebung festgelegt ist, werden keine Konfigurationen ausgelesen.
+Beim Start wird die Systemeigenschaft **com.day.cq.portet.config** ausgelesen, sodass die aktuelle Umgebung erkannt werden kann. Normalerweise lautet der Wert dieser Eigenschaft **dev**, **prod**, **test**.  Wenn keine Umgebung festgelegt ist, werden keine Konfigurationen ausgelesen.
 
 Ist eine Umgebung festgelegt, wird im Klassenpfad unter **com/day/cq/portlet/{umg}.config** nach einer Konfigurationsdatei gesucht, wobei **umg** durch den tatsächlichen Wert für die Umgebung ersetzt wird. Diese Datei sollte alle Konfigurationsdateien für diese Umgebung auflisten. Diese Dateien werden relativ zum Speicherort der Konfigurationsdatei durchsucht. Wenn die Datei beispielsweise eine Zeile `my.service.xml,` enthält, wird diese Datei aus dem Klassenpfad unter `com/day/cq/portlet/my.service.config.` gelesen. Der Name der Datei besteht aus der Persistenz-ID des Service, gefolgt von **.config**. Im vorherigen Beispiel ist die Persistenz-ID **my.service**. Das Format der Konfigurationsdatei entspricht dem Format, das vom Apache Sling OSGi-Installationsprogramm verwendet wird.
 
@@ -190,7 +190,7 @@ So konfigurieren Sie einen Replikationsagenten für das Portal:
 
    ![screen_shot_2012-02-15at40817pm](assets/screen_shot_2012-02-15at40817pm.png)
 
-1. Doppelklicken Sie auf den erstellten Replikationsagenten. Er wird als ungültig angezeigt, da er noch nicht konfiguriert wurde.
+1. Doppelklicken Sie auf den soeben erstellten Replikationsagenten. Er wird als ungültig angezeigt, da er noch nicht konfiguriert wurde.
 
    ![screen_shot_2012-02-15at41001pm](assets/screen_shot_2012-02-15at41001pm.png)
 
@@ -340,7 +340,7 @@ Bei jeder Anfrage, die AEM WCM empfängt, wird zunächst versucht, eine SSO-basi
 
 #### Aktivieren der SSO-Authentifizierung in einem AEM Portlet {#enabling-sso-authentication-in-a-aem-portlet}
 
-Damit die zugrunde liegende AEM WCM-Instanz SSO-Anforderungen akzeptieren kann, muss der Authentifizierungsmodus des Portlets von **Technisch** nach **SSO**.
+Damit die zugrundeliegende AEM WCM-Instanz SSO-Anfragen akzeptieren kann, muss der Authentifizierungsmodus des Portlets von **Technisch** in **SSO** geändert werden.
 
 Zur Aktivierung der SSO-Authentifizierung in einem AEM-Portlet:
 
@@ -392,7 +392,7 @@ Um die Verwaltungsseite für die Website zu öffnen oder eine Seite des Portlets
 
 ### Berechtigungen {#privileges}
 
-Einige Funktionen des Portlets werden durch Berechtigungen geschützt. Der aktuelle Benutzer muss über diese Berechtigung verfügen, um auf diese Funktion zugreifen zu können. Folgende Berechtigungen sind vordefiniert:
+Einige Funktionen des Portlets werden durch Berechtigungen geschützt. Benutzende müssen über die entsprechende Berechtigung verfügen, um auf diese Funktion zugreifen zu können. Folgende Berechtigungen sind vordefiniert:
 
 * „toolbar“: Dies ist die allgemeine Berechtigung zum Anzeigen/Verwenden der Symbolleiste im Portlet.
 * „prefs“: Wenn Benutzende über diese Berechtigung verfügen, können sie die Voreinstellungen des Portlets anzeigen/ändern.
@@ -406,7 +406,7 @@ Darüber hinaus ist es möglich, diesen rollenbasierten Zugriff pro Portlet-Inst
 
 ### Anpassen der AEM-Portlet-Anwendung {#customizing-the-aem-portlet-application}
 
-Die bereitgestellte AEM-Portlet-Anwendung startet genauso wie AEM einen OSGi-Container in der Web-Anwendung. Mit dieser Architektur können Sie alle Vorteile von OSGi nutzen:
+Die bereitgestellte AEM-Portlet-Anwendung startet genauso wie AEM einen OSGi-Container in der Web-Anwendung. Dank dieser Architektur können Sie alle Vorteile von OSGi nutzen:
 
 * Einfache Aktualisierung und Erweiterung
 * Bereitstellung von Hot-Updates für das Portlet ohne jedwede Interaktion des Portal-Servers
@@ -502,7 +502,7 @@ In HTML können Sie die folgenden Platzhalter verwenden, die beim Rendern durch 
 
 | Platzhalter-Zeichenfolge | Beschreibung |
 |---|---|
-| {name} | Name der Schaltfläche, beispielsweise **Autor, Zurück, Aktualisieren** usw. |
+| {name} | Name der Schaltfläche, z. B., **author, back, refresh**. |
 | {id} | CSS-ID der Schaltfläche. |
 | {url} | URL für das Ziel der Schaltfläche. |
 | {text} | Beschriftung der Schaltfläche. |
@@ -524,7 +524,7 @@ title="{text}"/>
 
 #### Installieren eines benutzerdefinierten Layouts {#installing-a-custom-layout}
 
-Um ein benutzerdefiniertes Layout zu installieren, greifen Sie auf den Abschnitt &quot;OSGI-Web-Konsole&quot;des Portlets zu und laden Sie das Bundle hoch.
+Zur Installation benutzerdefinierter Layouts rufen Sie den Abschnitt **Bundles** der OSGi-Web-Konsole des Portlets auf und laden Sie das Bundle hoch.
 
 #### Pakete {#packages}
 
@@ -545,7 +545,7 @@ Das AEM Content-Portlet verfügt über eine integrierte Lokalisierungsfunktion, 
 Dies geschieht in zwei Schritten:
 
 1. Der „Portal Directory Locale Detector“ erkennt das Gebietsschema der Person, die das Portal benutzt, indem er die Gebietsschema-Einstellung vom Portal abruft. Dieser Dienst muss mit der Liste der verfügbaren Sprachen in AEM konfiguriert werden.
-1. Der „Portal Director Locale Handler“ führt die Lokalisierung der aktuellen Anfrage aus. Er nimmt den Pfad des angeforderten Inhalts, z. B. `/content/geometrixx/en/company.html`und entsprechend der Konfiguration wird die **en** mit dem tatsächlichen Gebietsschema des Benutzers.
+1. Der „Portal Director Locale Handler“ führt die Lokalisierung der aktuellen Anfrage aus. Dazu benötigt er den Pfad der angeforderten Inhalte, z. B. `/content/geometrixx/en/company.html`, und je nach Konfiguration wird **en** mit dem tatsächlichen Gebietsschema der Person überschrieben.
 
 Der „Portal Director Locale Handler“ kann mit den Pfaden für die Suche nach Gebietsschema-Informationen – für gewöhnlich alles unter `/content` – und mit der Position der Gebietsschema-Informationen unter dem Pfad konfiguriert werden. Standardmäßig befolgt der „Locale Handler“ die Empfehlung zur Strukturierung von mehrsprachigen Sites innerhalb von AEM.
 
@@ -658,7 +658,7 @@ Die AEM-Schnellstart-JAR-Datei enthält die Portlet-Komponentendateien. Um die D
 
    Das Paket speichert die Datei cq-portlet-director-sharedlibs-x.x.x.jar im Ordner /libs/portal/director im Repository.
 
-1. Kopieren Sie cq-portlet-director-sharedlibs-x.x.x.jar auf Ihre Festplatte. Verwenden Sie alle Mittel, um die Datei abzurufen, z. B. FileVault oder einen WebDAV-Client.
+1. Kopieren Sie cq-portlet-director-sharedlibs-x.x.x.jar auf Ihre Festplatte. Verwenden Sie eine beliebige Methode, um die Datei abzurufen, z. B. FileVault oder einen WebDAV-Client.
 1. Verschieben Sie die Datei cq-portlet-director-sharedlibs.x.x.x.jar in den Ordner der freigegebenen Bibliothek Ihres Anwendungs-Servers, sodass die Klassen für bereitgestellte Portlet-Anwendungen verfügbar sind.
 
 ### Hinzufügen der Portlet-Komponente zum Sidekick {#adding-the-portlet-component-to-sidekick}
@@ -699,7 +699,7 @@ Stellen Sie die Portlets im Web-Container des Anwendungs-Servers bereit, sodass 
 
    **Tipp:** Der Befehl `jar cvf nameofapp.war *` fügt der Datei nameofapp.war Inhalte des aktuellen Verzeichnisses hinzu.
 
-1. Stellen Sie die Portlet-Applikation auf dem Anwendungs-Server bereit. Weitere Informationen finden Sie in der Dokumentation für Ihren Anwendungsserver.
+1. Stellen Sie die Portlet-Applikation auf dem Anwendungs-Server bereit. Weitere Informationen finden Sie in der Dokumentation für Ihren Anwendungs-Server.
 
 ### Hinzufügen von Portlets zu Ihrer AEM-Seite {#adding-portlets-to-your-aem-page}
 
@@ -728,7 +728,7 @@ Nutzen Sie die Portlet-Komponente zum Einfügen eines Portlet-Fensters auf Ihrer
 
 Um auf von AEM WCM bereitgestellte Inhalte zuzugreifen, muss der Portal-Server mit dem AEM Portal Director Portlet ausgestattet werden. Dazu installieren und konfigurieren Sie das Portlet und fügen es der Portal-Seite hinzu, indem Sie die in diesem Abschnitt beschriebenen Schritte ausführen.
 
-Standardmäßig stellt das Portlet eine Verbindung zur Veröffentlichungsinstanz unter localhost:4503 und zur Autoreninstanz unter localhost:4502 her. Diese Werte können während der Bereitstellung des Portlets geändert werden. Der Portal-Director ist als Inhalt im Repository unter /libs/portal/directory verfügbar. Laden Sie die WAR-Datei der Anwendung herunter, bevor Sie sie verwenden.
+Standardmäßig stellt das Portlet eine Verbindung zur Veröffentlichungsinstanz unter localhost:4503 und zur Autoreninstanz unter localhost:4502 her. Diese Werte können während der Bereitstellung des Portlets geändert werden. Der Portal-Director ist als Inhalt im Repository unter /libs/portal/directory verfügbar. Laden Sie die WAR-Datei der Anwendung vor der Verwendung herunter.
 
 ### Herunterladen der WAR-Datei {#downloading-the-war-file}
 
@@ -738,7 +738,7 @@ Standardmäßig stellt das Portlet eine Verbindung zur Veröffentlichungsinstanz
 
 >[!NOTE]
 >
->Diese Verfahren verwenden das Websphere-Portal als Beispiel, obwohl sie so allgemein wie möglich sind; Verfahren variieren für andere Webportale. Obwohl die Schritte im Wesentlichen für alle Web-Portale identisch sind, müssen Sie die Schritte für Ihr spezielles Web-Portal erneut verwenden.
+>Bei diesen Verfahren wird das Websphere-Portal als Beispiel verwendet. Auch wenn es so allgemein wie möglich gehalten wurde, kann es sein, dass die Verfahren für andere Web-Portale davon abweichen. Obwohl die Schritte im Wesentlichen für alle Web-Portale identisch sind, müssen Sie die Schritte für Ihr spezielles Web-Portal erneut verwenden.
 
 #### Installieren des Portlets {#installing-the-portlet}
 
@@ -763,7 +763,7 @@ So konfigurieren Sie das Portlet:
 
    >[!NOTE]
    >
-   >Wenn das Portlet so konfiguriert ist, dass eine Verbindung zu AEM Autoren- und Veröffentlichungsinstanzen hergestellt wird, die auf einem anderen Kontextpfad als **/**, müssen Sie die Kraft aktivieren **CQUrlInfo** in der HTML Library Manager-Konfiguration dieser AEM Instanzen (z. B. über die Felix Webconsole) funktioniert die Bearbeitung nicht und das Dialogfeld &quot;Voreinstellungen&quot;wird nicht angezeigt.
+   >Wenn das Portlet so konfiguriert ist, dass es eine Verbindung zu AEM-Autoren- und -Veröffentlichungsinstanzen herstellt, die unter einem anderen Kontextpfad als **/** ausgeführt werden, müssen Sie das Erzwingen von **CQUrlInfo** in der HTML Library Manager-Konfiguration dieser AEM-Instanzen aktivieren (z. B. über die Felix Web Console). Andernfalls ist eine Bearbeitung nicht möglich und das Dialogfeld „Voreinstellungen“ wird nicht angezeigt.
 
 1. Speichern Sie die geänderte Konfiguration im Anwendungs-Server.
 
@@ -797,7 +797,7 @@ Normalerweise verweist der Startpfad direkt auf den Inhalt in AEM. Falls Sie die
 So fügen Sie das Portlet zur Portalseite hinzu:
 
 1. Achten Sie darauf, dass Sie sich im Verwaltungsfenster Ihres Anwendungs-Servers befinden, und navigieren Sie zum Speicherort, an dem Sie Seiten verwalten. (Klicken Sie z. B. in WebSphere 6.1 auf **Seiten verwalten**).
-1. Wählen Sie den Namen des Portlets aus und wählen Sie dann eine vorhandene Seite aus oder erstellen Sie eine Seite.
+1. Wählen Sie den Namen des Portlets und dann eine vorhandene Seite aus oder erstellen Sie eine Seite.
 1. Bearbeiten Sie das Seiten-Layout.
 1. Wählen Sie das Portlet aus und fügen Sie es einem Container hinzu.
 1. Speichern Sie Ihre Änderungen.
@@ -807,4 +807,4 @@ So fügen Sie das Portlet zur Portalseite hinzu:
 So greifen Sie auf die Seite zu, die Sie dem Portlet hinzugefügt haben:
 
 1. Konfigurieren Sie das Portlet in seinem Menü „Personalisierung“ so, wie Sie es im Portal konfiguriert haben.
-1. Öffnen Sie die Konfiguration (das Portlet zeigt die in der Portlet-Konfiguration konfigurierte URL für den Veröffentlichungsstart an), nehmen Sie nach Bedarf Änderungen vor und speichern Sie diese.
+1. Öffnen Sie die Konfiguration (das Portlet zeigt die in der Portlet-Konfiguration konfigurierte Start-URL für die Veröffentlichung an), nehmen Sie nach Bedarf Änderungen vor und speichern Sie diese.

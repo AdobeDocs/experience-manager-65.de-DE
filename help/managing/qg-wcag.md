@@ -1,12 +1,12 @@
 ---
 title: Kurzanleitung zu WCAG 2.1
-description: Kurzanleitung zu Web Content Accessibility Guidelines (WCAG) Version 2.1.
+description: Kurzanleitung zu den Web Content Accessibility Guidelines (WCAG), Version 2.1.
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 solution: Experience Manager, Experience Manager 6.5
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '1734'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Die [Web Content Accessibility Guidelines (WCAG), Version 2.1](https://www.w3.o
 >
 >Eine [aktualisierte Version der Richtlinien (WCAG 2.2)](https://www.w3.org/TR/WCAG22/) befindet sich derzeit in der Entwicklung, wird aber noch nicht berücksichtigt.
 
-WCAG 2.1 umfasst eine Reihe technologieunabhängiger Richtlinien und Erfolgskriterien, die Sie bei der Erstellung von Web-Inhalten unterstützen, die für Personen mit Behinderungen barrierefrei zugänglich sind. Sie bieten Autoren, Designern und Entwicklern von Web-Inhalten Ratschläge dazu, wie sie sicherstellen können, dass die von ihnen erzeugten Ressourcen so vielen Menschen wie möglich zugänglich sind, unabhängig von etwaigen Behinderungen, die sie haben; zum Beispiel Sehbehinderungen, Hörverlust, Lernschwierigkeiten, altersbedingte Einschränkungen.
+WCAG 2.1 umfasst eine Reihe technologieunabhängiger Richtlinien und Erfolgskriterien, die Sie bei der Erstellung von Web-Inhalten unterstützen, die für Personen mit Behinderungen barrierefrei zugänglich sind. Es werden Ratschläge für Autorinnen und Autoren, Designerinnen und Designer und Entwickelnde von Web-Inhalten geboten, wie sichergestellt werden kann, dass die von ihnen produzierten Ressourcen für möglichst viele Menschen so barrierefrei wie möglich sind, und zwar unabhängig von ihrer Behinderung, z. B. Sehbehinderung, Gehörschädigung, Lernschwächen oder altersbedingte Einschränkungen.
 
 Die Beschreibung eines Bildes (oder anderer Nicht-Text-Inhalte) mithilfe des `alt`-Attributs in HTML ist zum Beispiel für Blinde und Sehbehinderte von großem Nutzen. Die textliche Beschreibung im `alt`-Attribut kann entweder in eine Sprachausgabe umgewandelt oder an elektronisch aktualisierbare Braillezeilen übertragen werden.
 
@@ -41,7 +41,7 @@ Absicht von WCAG 2.1 ist es, Richtlinien mit folgenden Merkmalen bereitzustellen
 * **Testfähig:** Jede Richtlinie ist so formuliert, dass sie objektiv getestet werden kann, um sicherzustellen, dass eine Gruppe von Fachleuten für Barrierefreiheit generell zustimmt, dass die Richtlinie eingehalten wird. Eine der Herausforderungen bei Richtlinien zur Barrierefreiheit besteht darin, dass einige zwar technisch prüfbar sind, andere jedoch menschliches Urteilsvermögen erfordern, um festzustellen, ob die Richtlinie erfolgreich umgesetzt wurde oder nicht.
 
 * Unterstützung einer **priorisierten und kontextbezogenen Implementierung:**
-Den WCAG 2.1-Richtlinien werden Prioritäten zugewiesen, die sich auf die wahrscheinlichen Auswirkungen der Nichtbeachtung einer Richtlinie auf eine bestimmte Gruppe von Anwendern mit Behinderungen beziehen. Dies ermöglicht es Autoren, eine fundierte Entscheidung zu den wichtigsten Richtlinien für ihre jeweilige Situation zu treffen. Darüber hinaus wird der Begriff *Barrierefreiheit unterstützt* eingeführt. Auf diese Weise können Autoren Entscheidungen darüber treffen, wie Webtechnologien am besten verwendet werden können, die möglicherweise nicht vollständig barrierefrei sind, oder Benutzer müssen möglicherweise über bestimmte Hilfstechnologien und/oder Browser verfügen, um von den Funktionen für Barrierefreiheit zu profitieren.
+Den WCAG 2.1-Richtlinien werden Prioritäten zugewiesen, die sich auf die wahrscheinlichen Auswirkungen der Nichtbeachtung einer Richtlinie auf eine bestimmte Gruppe von Anwendern mit Behinderungen beziehen. Dies ermöglicht es Autoren, eine fundierte Entscheidung zu den wichtigsten Richtlinien für ihre jeweilige Situation zu treffen. Außerdem wird das Konzept *Barrierefreiheit unterstützend* eingeführt. Dadurch können Autorinnen und Autoren Entscheidungen dazu treffen, wie sie Web-Technologien nutzen, die möglicherweise nicht vollständig barrierefrei sind, oder ggf. festlegen, dass Anwendende über spezielle unterstützende Technologien und/oder Browser verfügen müssen, um von Barrierefreiheitsfunktionen zu profitieren.
 
 Diese Ziele haben die Struktur von WCAG 2.1 wesentlich beeinflusst.
 

@@ -10,60 +10,60 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '659'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 
 # Konfigurieren von Abwesenheitseinstellungen {#configuring-out-of-office-settings}
 
-Die Abwesenheitsfunktion ermöglicht es Benutzern und Administratoren, Zeiträume anzugeben, in denen ein Benutzer nicht im Hause und deshalb nicht in der Lage ist, vom Arbeitsablauf für AEM Forms zugewiesene Aufgaben auszuführen. Während ein Benutzer auf Abwesenheit festgelegt ist, werden seine Aufgaben einem oder mehreren bestimmten Benutzern zugewiesen. Benutzer können ihre Abwesenheitseinstellungen in Workspace ändern oder Administratoren können die Einstellungen im Namen eines Benutzers im Arbeitsablauf für Formulare ändern.
+Die Abwesenheitsfunktion ermöglicht es Benutzern und Administratoren, Zeiträume anzugeben, in denen ein Benutzer nicht im Hause und deshalb nicht in der Lage ist, vom Arbeitsablauf für AEM Forms zugewiesene Aufgaben auszuführen. Wenn eine Benutzerin oder ein Benutzer als abwesend festgelegt ist, werden die zugehörigen Aufgaben einer oder mehreren anderen angegebenen Personen zugewiesen. Benutzende können ihre Abwesenheitseinstellungen in Workspace ändern, oder Admins können die Einstellungen im Namen einer Person in Forms Workflow ändern.
 
-Beim Erstellen eines Prozesses kann der Workbench-Benutzer angeben, ob eine Aufgabe aufgrund von Abwesenheitseinstellungen umgeleitet werden kann.
+Beim Erstellen eines Prozesses können Workbench-Benutzende festlegen, ob eine Aufgabe aufgrund von Abwesenheitseinstellungen weitergeleitet werden darf.
 
-## Abwesenheitsinformationen eines Benutzers anzeigen {#view-a-user-s-out-of-office-information}
+## Anzeigen der Abwesenheitsinformationen von Benutzenden {#view-a-user-s-out-of-office-information}
 
-1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;Arbeitsablauf für Formulare&quot;> &quot;Abwesenheit&quot;.
-1. Im Feld oben auf der Seite &quot;Abwesenheit&quot;können Sie einen der folgenden Schritte ausführen:
+1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Forms Workflow“ > „Abwesenheit“.
+1. Sie haben im Feld oben auf der Seite „Abwesenheit“ folgende Möglichkeiten:
 
-   **Suche nach Name**
+   **Nach Namen suchen**
 
-   Wählen Sie die Option Suche nach Name aus. Geben Sie den Benutzernamen ganz oder teilweise ein und klicken Sie auf &quot;Suchen&quot;. Wenn Sie das Feld leer lassen, gibt der Forms-Workflow eine Liste aller Benutzer zurück.
+   Wählen Sie die Option „Nach Namen suchen“ aus. Geben Sie den Benutzernamen vollständig oder teilweise ein und klicken Sie auf „Suchen“. Wenn Sie das Feld leer lassen, gibt Forms Workflow eine Liste aller Benutzenden zurück.
 
    **Suche nach Datumsbereich**
 
-   Wählen Sie die Option Suche nach Datumsbereich aus. Geben Sie die Daten von und bis sowie die gewünschten Zeitstempel an, um das Suchergebnis einzuschränken. Klicken Sie auf „Suchen“.
+   Wählen Sie die Option „Suche nach Datumsbereich“ aus. Geben Sie die Daten „Von“ und „Bis“ und die gewünschten Zeitstempel ein, um die Suchergebnisse einzugrenzen. Klicken Sie auf „Suchen“.
 
-1. Klicken Sie auf einen Benutzernamen, um die Abwesenheitsinformationen des Benutzers unter der Liste der Benutzer anzuzeigen.
+1. Klicken Sie auf einen Benutzernamen, um die Abwesenheitsinformationen dieser Person unterhalb der Liste der Benutzenden anzuzeigen.
 
-## Abwesenheitsstatus eines Benutzers ändern {#change-a-user-s-out-of-office-status}
+## Ändern des Abwesenheitsstatus von Benutzenden {#change-a-user-s-out-of-office-status}
 
-1. Suchen Sie den Benutzer, wie unter [Abwesenheitsinformationen eines Benutzers anzeigen](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
-1. Klicken Sie auf den Namen des Benutzers, den Sie ändern möchten.
-1. Aus dem *Benutzername* derzeit aufgeführt ist, wählen Sie entweder Im Büro oder Nicht im Hause aus.
+1. Suchen Sie die Person, wie unter [Anzeigen der Abwesenheitsinformationen von Benutzenden](configuring-out-office-settings.md#view-a-user-s-out-of-office-information) beschrieben.
+1. Klicken Sie auf den Namen der Person, für die Änderungen vorgenommen werden sollen.
+1. Wählen Sie in der Liste der aktuellen *Benutzernamen* entweder „Im Hause“ oder „Nicht im Hause“ aus.
 1. Klicken Sie auf Speichern.
 
-## Einen Abwesenheitsdatumsbereich für einen Benutzer hinzufügen {#add-an-out-of-office-date-range-for-a-user}
+## Hinzufügen eines Abwesenheitsdatumsbereichs für Benutzende {#add-an-out-of-office-date-range-for-a-user}
 
-1. Suchen Sie den Benutzer, wie unter [Abwesenheitsinformationen eines Benutzers anzeigen](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
-1. Klicken Sie auf den Namen des Benutzers, den Sie ändern möchten.
-1. Klicken Sie auf Datumsbereich hinzufügen .
-1. Geben Sie eine Startzeit und Endzeit ein. Sie können auf das Kalendersymbol klicken, um ein Datum auszuwählen. Wenn Sie keine Endzeit angeben, wird der Benutzer auf unbestimmte Zeit als abwesend festgelegt.
+1. Suchen Sie die Person, wie unter [Anzeigen der Abwesenheitsinformationen von Benutzenden](configuring-out-office-settings.md#view-a-user-s-out-of-office-information) beschrieben.
+1. Klicken Sie auf den Namen der Person, für die Änderungen vorgenommen werden sollen.
+1. Klicken Sie auf „Datumsbereich hinzufügen“.
+1. Geben Sie eine Startzeit und Endzeit ein. Sie können zum Auswählen eines Datums auf das Kalendersymbol klicken. Wenn Sie keine Endzeit angeben, wird der Abwesenheitszeitraum der Person auf unbefristet festgelegt.
 1. Klicken Sie auf Speichern.
 
-## Benutzer für Abwesenheitsaufgaben zuweisen {#assign-a-user-for-out-of-office-tasks}
+## Zuweisen von Benutzenden für Aufgaben bei Abwesenheit {#assign-a-user-for-out-of-office-tasks}
 
-Während ein Benutzer nicht im Büro ist, können Sie einen oder mehrere Benutzer zuweisen, die alle neuen Aufgaben für den Benutzer ausführen. Sie können die folgenden Konfigurationen einrichten:
+Wenn jemand abwesend ist, können Sie eine oder mehrere Personen zuweisen, die alle neuen Aufgaben für diese Person übernimmt. Sie können die folgenden Konfigurationen einrichten:
 
-* Weisen Sie alle neuen Aufgaben einem festgelegten Standardbenutzer zu.
-* Weisen Sie keine Aufgaben zu. Neue Aufgaben bleiben dem abwesenden Benutzer zugewiesen.
-* Weisen Sie einen Standardbenutzer zu, der die meisten Aufgaben des Benutzers erhält, geben Sie jedoch an, dass Aufgaben aus bestimmten Prozessen anderen Benutzern neu zugewiesen werden oder dem Abwesenheitsbenutzer zugewiesen bleiben.
-* Weisen Sie keinen Standardbenutzer zu, sondern weisen Sie bestimmten Benutzern bestimmte Aufgaben aus bestimmten Prozessen zu.
+* Alle neuen Aufgaben werden einer bestimmten Person zugewiesen.
+* Weisen Sie Aufgaben nicht neu zu. Neue Aufgaben bleiben der abwesenden Person zugewiesen.
+* Eine Standardperson zuweisen, die die meisten Aufgaben der abwesenden Person erhält, aber festlegen, dass Aufgaben aus bestimmten Prozessen anderen Benutzenden neu zugewiesen werden oder der abwesenden Person zugewiesen bleiben.
+* Es wird keine Standardperson zugewiesen, aber bestimmte Aufgaben von speziellen Prozessen werden spezifischen Benutzenden zugewiesen.
 
-   1. Suchen Sie den Benutzer, wie unter [Abwesenheitsinformationen eines Benutzers anzeigen](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
-   1. Klicken Sie auf den Namen des Benutzers, den Sie ändern möchten.
-   1. Wählen Sie in der Liste &quot;Standardbenutzer für Abwesenheitsaufgaben&quot;einen Benutzer aus der Liste. Wenn Sie keinen Standardbenutzer für den Empfang neu zugewiesener Elemente festlegen möchten, wählen Sie &quot;Nicht zuweisen&quot;aus.
+   1. Suchen Sie die Person, wie unter [Anzeigen der Abwesenheitsinformationen von Benutzenden](configuring-out-office-settings.md#view-a-user-s-out-of-office-information) beschrieben.
+   1. Klicken Sie auf den Namen der Person, für die Änderungen vorgenommen werden sollen.
+   1. Wählen Sie in der Liste „Standardbenutzer für Abwesenheitsaufgaben“ eine Person aus. Wenn keine Standardperson für die Annahme neu zugewiesener Elemente festgelegt werden soll, wählen Sie „Nicht zuweisen“ aus.
 
-      Wenn der entsprechende Benutzername nicht in der Liste angezeigt wird, klicken Sie auf &quot;Benutzer suchen&quot;und suchen Sie im Dialogfeld &quot;Benutzer suchen&quot;nach dem Benutzer. Wählen Sie den entsprechenden Benutzer aus der Liste aus und klicken Sie auf Benutzer auswählen . Sie können auch im Dialogfeld &quot;Benutzer suchen&quot;auf &quot;Zeitplan des Benutzers anzeigen&quot;klicken, um den Abwesenheitszeitplan des ausgewählten Benutzers anzuzeigen.
+      Wenn der gewünschte Benutzername nicht in der Liste aufgeführt wird, klicken Sie auf „Benutzer suchen“ und führen Sie dann im Dialogfeld „Benutzer suchen“ eine Suche nach der Person durch. Wählen Sie die gewünschte Person aus der Liste aus und klicken Sie auf „Benutzer auswählen“. Sie können im Dialogfeld „Benutzer suchen“ auch auf „Zeitplan des Benutzers anzeigen“ klicken, um den Abwesenheitszeitplan der ausgewählten Person anzuzeigen.
 
-   1. Wenn Prozesse vorhanden sind, die nicht an den Standardbenutzer gesendet werden sollen, klicken Sie auf Ausnahme hinzufügen , wählen Sie den Prozess aus und wählen Sie einen anderen Benutzer aus der Liste aus. Sie können auch Nicht zuweisen auswählen, damit die Aufgabe dem abwesenden Benutzer zugewiesen bleibt.
+   1. Wenn Prozesse vorhanden sind, die nicht an die Standardperson gesendet werden sollen, klicken Sie auf „Ausnahme hinzufügen“, wählen Sie den Prozess und dann eine andere Person aus der Liste aus. Sie können auch „Nicht zuweisen“ auswählen, damit die Aufgabe der abwesenden Person zugewiesen bleibt.
    1. Klicken Sie auf Speichern.

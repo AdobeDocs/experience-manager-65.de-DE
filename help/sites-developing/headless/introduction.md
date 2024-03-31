@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ AEM 6.5 ist ein flexibles Tool für das Headless-Implementierungsmodell, das dr
 
 ## Erste Schritte mit AEM Headless {#first-steps}
 
-Es stehen mehrere Ressourcen zur Verfügung, mit denen Sie mit AEM Headless-Funktionen beginnen können. Sie sind für verschiedene Nutzungsszenarien vorgesehen, bieten jedoch alle einen umfassenden Überblick über AEM Headless-Funktionen.
+Für die ersten Schritte mit AEM Headless-Funktionen stehen verschiedene Ressourcen zur Verfügung. Sie sind für verschiedene Nutzungsszenarien vorgesehen, bieten jedoch alle einen umfassenden Überblick über AEM Headless-Funktionen.
 
 | Ressource | Beschreibung | Typ | Zielgruppe | Schätzung Zeit |
 |---|---|---|---|---|

@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2851'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -175,7 +175,7 @@ Mit der Dynamic Media Classic-Komponente **[!UICONTROL Bild]** können Sie Bilde
 
 **[!UICONTROL Bildvorgabe]**: Wählen Sie im Dropdown-Menü eine vorhandene Bildvorgabe aus. Wenn die gewünschte Bildvorgabe nicht sichtbar ist, müssen Sie sie sichtbar machen. Siehe [Verwalten von Bildvorgaben](/help/assets/managing-image-presets.md). Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 
-**[!UICONTROL Ausgabeformat]** - Wählen Sie das Ausgabeformat des Bildes aus, z. B. jpeg. In Abhängigkeit des von Ihnen ausgewählten Ausgabeformats stehen Ihnen zusätzliche Konfigurationsoptionen zur Verfügung. Siehe [Best Practices für Bildvorgaben](/help/assets/managing-image-presets.md#image-preset-options).
+**[!UICONTROL Ausgabeformat]**: Wählen Sie das Ausgabeformat des Bildes aus, beispielsweise JPEG. In Abhängigkeit des von Ihnen ausgewählten Ausgabeformats stehen Ihnen zusätzliche Konfigurationsoptionen zur Verfügung. Siehe [Best Practices für Bildvorgaben](/help/assets/managing-image-presets.md#image-preset-options).
 
 **[!UICONTROL Scharfzeichnen]**: Wählen Sie aus, wie Sie das Bild scharfzeichnen möchten. Das Scharfzeichnen wird unter [Best Practices für Bildvorgaben](/help/assets/managing-image-presets.md#image-preset-options) und [Best Practices für das Scharfzeichnen](/help/assets/assets/sharpening_images.pdf) detailliert beschrieben.
 
@@ -274,7 +274,7 @@ Wenn Sie über mehrere Konfigurationen verfügen, zeigt Experience Manager stand
 
 ### Durchsuchen von Inhalt auf der Touch-optimierten Benutzeroberfläche {#browsing-content-in-the-touch-optimized-ui}
 
-Sie können entweder über die Touch-optimierte oder die klassische Benutzeroberfläche auf den Inhaltsbrowser zugreifen. Derzeit gilt für die Touch-optimierte Funktion die folgende Einschränkung:
+Sie können über die Touch-optimierte oder die klassische Benutzeroberfläche auf den Inhalts-Browser zugreifen. Derzeit gilt für die Touch-optimierte Benutzeroberfläche die folgende Einschränkung:
 
 * FXG- und Flash-Assets aus Dynamic Media Classic werden nicht unterstützt.
 
@@ -292,8 +292,8 @@ Zusätzlich können Sie Informationen über Auflösung, Größe, Tage seit der �
 
 ![chlimage_1-241](assets/chlimage_1-241.png)
 
-* Für adaptive Videosets und Vorlagen werden keine Größeninformationen für Miniaturansichten generiert.
-* Für adaptive Videosets wird keine Auflösung für Miniaturansichten generiert.
+* Bei adaptiven Videosets und -vorlagen werden für Miniaturansichten keine Größeninformationen generiert.
+* Bei adaptiven Videosets wird für Miniaturansichten keine Auflösung generiert.
 
 ### Suchen nach Dynamic Media Classic-Assets mit dem Inhaltsbrowser {#searching-for-scene-assets-with-the-content-browser}
 

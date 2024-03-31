@@ -5,7 +5,7 @@ exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
 source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1301'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -242,7 +242,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Bevor Sie mit Abfragen zu Ihren Inhalten beginnen, müssen Sie Folgendes tun:
 
 * Aktivieren des Endpunkts
-   * Tools > Assets > GraphQL verwenden
+   * Verwenden von „Tools“ > „Assets > „GraphQL“
    * [Aktivieren des GraphQL-Endpunkts](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
 
 * Zugriff auf GraphiQL (falls erforderlich)
@@ -269,7 +269,7 @@ Die Fragmentmodelle werden verwendet:
 
 ### Testen von Abfragen {#where-to-test-your-queries}
 
-Die Abfragen können im [GraphiQL-Benutzeroberfläche](/help/sites-developing/headless/graphql-api/graphiql-ide.md), z. B. bei:
+Die Abfragen können über die [GraphiQL-Schnittstelle](/help/sites-developing/headless/graphql-api/graphiql-ide.md) eingegeben werden, beispielsweise unter:
 
 * `http://localhost:4502/aem/graphiql.html`
 

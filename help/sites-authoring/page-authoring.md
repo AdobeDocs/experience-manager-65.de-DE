@@ -1,12 +1,12 @@
 ---
-title: Bearbeiten von Inhaltsseiten in AEM
-description: Die Aufgaben, die beim Bearbeiten einer Inhaltsseite in Adobe Experience Manager 6.5 erforderlich sind.
+title: Erstellen von Inhaltsseiten in AEM
+description: Die Aufgaben, die mit dem Erstellen einer Inhaltsseite in Adobe Experience Manager 6.5 verbunden sind.
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -39,10 +39,10 @@ Text- und Bildkomponenten können direkt auf der Webseite bearbeitet werden, ohn
 Links auf einer bearbeitbaren Seite kann ein Browser eingeblendet werden. Von hier können Sie Komponenten auf die Seite ziehen und dann bearbeiten.
 
 * **[Asset-Browser](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)**
-Auf der linken Seite einer bearbeitbaren Seite kann ein Browser eingeblendet werden. Von hier können Assets auf die Seite gezogen werden, z. B. um Assets zu positionieren oder Links zu anderen Seiten zu erstellen.
+Links auf einer bearbeitbaren Seite kann ein Browser eingeblendet werden. Von hier können Assets auf die Seite gezogen werden, z. B. wenn Sie Assets positionieren oder Links zu anderen Seiten erstellen möchten.
 
 * **Komponenten-Symbolleiste**
-Sowohl ein einfacher als auch ein langsamer Doppelklick zeigt die entsprechende Symbolleiste an (einfach für die Symbolleiste der Bearbeitung im Kontext, dann langsam doppelt für die volle Symbolleiste).
+Sowohl mit einem einfachen Klick als auch einem langsamen Doppelklick wird die entsprechende Symbolleiste angezeigt (ein Klick zum Anzeigen der Symbolleiste für die Bearbeitung im Kontext, dann langsamer Doppelklick zum Einblenden der vollständigen Symbolleiste).
 
 * **[Responsives Layout](/help/sites-authoring/responsive-layout.md)**
 Damit steht Ihnen ein Absatzsystem zur Verfügung, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können.

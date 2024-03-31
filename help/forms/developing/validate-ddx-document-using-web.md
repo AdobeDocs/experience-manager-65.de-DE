@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '634'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ So validieren Sie ein DDX-Dokument mithilfe der Assembler Service-API (Webservic
 
    >[!NOTE]
    >
-   >Ersetzen Sie localhost durch die IP-Adresse des Forms-Servers.
+   >Ersetzen Sie „localhost“ durch die IP-Adresse des Formular-Servers.
 
 1. Erstellen Sie einen PDF Assembler-Client.
 

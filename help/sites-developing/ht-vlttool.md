@@ -10,15 +10,15 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2687'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # Vewenden des VLT-Tools {#how-to-use-the-vlt-tool}
 
-Das Jackrabbit FileVault Tool (VLT) ist ein von [The Apache Foundation](https://www.apache.org/) entwickeltes Tool, das den Inhalt einer Jackrabbit/AEM-Instanz Ihrem Dateisystem zuordnet. Das VLT-Tool weist ähnliche Funktionen wie der Quellcode-Systemclient (z. B. ein Subversion-Client) auf und bietet normale Ein- und Auschecken- und Verwaltungsvorgänge sowie Konfigurationsoptionen für eine flexible Darstellung des Projektinhalts.
+Das Jackrabbit FileVault Tool (VLT) ist ein von [The Apache Foundation](https://www.apache.org/) entwickeltes Tool, das den Inhalt einer Jackrabbit/AEM-Instanz Ihrem Dateisystem zuordnet. Das VLT-Tool hat ähnliche Funktionen wie der Quellkontrollsystem-Client (z. B. ein Subversion (SVN)-Client) und bietet normale Eincheck-, Auscheck- und Verwaltungsvorgänge sowie Konfigurationsoptionen für die flexible Darstellung des Projektinhalts.
 
-Sie führen das VLT-Tool von der Befehlszeile aus. In diesem Dokument wird beschrieben, wie Sie das Tool verwenden, einschließlich der ersten Schritte und der Bereitstellung von Hilfe, sowie eine Liste aller [commands](#vlt-commands) und verfügbar [options](#vlt-global-options).
+Sie führen das VLT-Tool über die Befehlszeile aus. In diesem Dokument wird beschrieben, wie Sie das Tool verwenden, einschließlich der ersten Schritte und der Hilfe sowie einer Liste aller [Befehle](#vlt-commands) und verfügbaren [Optionen](#vlt-global-options).
 
 ## Konzepte und Architektur {#concepts-and-architecture}
 
@@ -314,7 +314,7 @@ Die folgende Tabelle beschreibt alle verfügbaren VLT-Befehle. Detaillierte Info
 | Befehl | Abgekürzter Befehl | Beschreibung |
 | `export` |  | Exportiert aus einem JCR-Repository (Vault-Dateisystem) in das lokale Dateisystem ohne Kontrolldateien. |
 | `import` |  | Importiert ein lokales Dateisystem in ein JCR-Repository (Vault-Dateisystem). |
-| `checkout` | `co` | Checkt ein Vault-Dateisystem aus. Verwenden Sie dies für ein Anfangs-JCR-Repository für das lokale Dateisystem. (Hinweis: Sehen Sie sich zunächst das Repository in Subversion an.) |
+| `checkout` | `co` | Checkt ein Vault-Dateisystem aus. Verwenden Sie dies für ein Anfangs-JCR-Repository für das lokale Dateisystem. (Hinweis: Sie müssen zuerst das Repository in der Unterversion überprüfen.) |
 | `analyze` |  | Analysiert Pakete. |
 | `status` | `st` | Druckt den Status von Arbeitskopiedateien und Verzeichnissen. |
 | `update` | `up` | Importiert Änderungen aus dem Repository in die Arbeitskopie. |
@@ -330,11 +330,11 @@ Die folgende Tabelle beschreibt alle verfügbaren VLT-Befehle. Detaillierte Info
 | `diff` | `di` | Zeigt die Unterschiede zwischen zwei Pfaden an. |
 | `console` |  | Führt eine interaktive Konsole aus. |
 | `rcp` |  | Kopiert einen Knotenbaum von einem Remote-Repository in ein anderes. |
-| `sync` |  | Hiermit können Sie den Vault-Synchronisierungsdienst steuern. |
+| `sync` |  | Ermöglicht die Steuerung des Vault-Synchronisierungsdienstes. |
 
 ### Export {#export}
 
-Exportiert das unter &lt;uri> bereitgestellte Vault-Dateisystem in das lokale Dateisystem unter &lt;local-path>. Ein optionales &lt;jcr-path> kann spezifiziert werden, um nur eine Unterstruktur zu exportieren.
+Exportiert das unter &lt;uri> bereitgestellte Vault-Dateisystem in das lokale Dateisystem unter &lt;local-path>. Ein optionaler &lt;jcr-path> kann angegeben werden, um nur eine Unterstruktur zu exportieren.
 
 #### Syntax {#syntax}
 
@@ -441,7 +441,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |  |  |
 |--- |--- |
-| `-l (--linkFormat) <format>` | Druckformat für Hotfix-Links (name,id), z. B. `[CQ520_HF_%s|%s]` |
+| `-l (--linkFormat) <format>` | printf-Format für Hotfix-Links (name,id), z. B. `[CQ520_HF_%s|%s]` |
 | `-v (--verbose)` | ausführliche Ausgabe |
 | `-q (--quiet)` | druckt so wenig wie möglich |
 | `<localPaths> [<localPaths> ...]` | lokaler Pfad |
@@ -743,7 +743,7 @@ vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localh
 
 ### Sync {#sync}
 
-Hiermit können Sie den Vault-Synchronisierungsdienst steuern. Dieser Befehl versucht ohne Argumente, das aktuelle Arbeitsverzeichnis unter Sync-Kontrolle zu stellen. Bei Ausführung in einem vlt-Checkout wird der entsprechende Filter und Host verwendet, um die Synchronisierung zu konfigurieren. Wenn sie außerhalb eines vlt-Auscheckens ausgeführt wird, wird der aktuelle Ordner nur dann zur Synchronisierung registriert, wenn der Ordner leer ist.
+Ermöglicht die Steuerung des Vault-Synchronisierungsdienstes. Dieser Befehl versucht ohne Argumente, das aktuelle Arbeitsverzeichnis unter Sync-Kontrolle zu stellen. Wenn er innerhalb des vlt-Checkouts ausgeführt wird, verwendet er den entsprechenden Filter und den Host, um die Synchronisierung zu konfigurieren. Bei einer Ausführung außerhalb eines vlt-Checkouts wird der aktuelle Ordner nur dann zur Synchronisierung registriert, wenn das Verzeichnis leer ist.
 
 #### Syntax {#syntax-18}
 
@@ -782,7 +782,7 @@ Der Vault-Synchronisierungsdienst wird zum Synchronisieren des Repository-Inhalt
 
 >[!NOTE]
 >
->Der Vault-Synchronisierungsdienst ist ein Entwicklungstool und es wird dringend davon abgeraten, ihn in einem produktiven System zu verwenden. Außerdem kann der Dienst nur mit dem lokalen Dateisystem synchronisieren und nicht für die Remote-Entwicklung verwendet werden.
+>Der Vault-Synchronisierungsdienst ist ein Entwicklungstool und es wird dringend davon abgeraten, ihn in einem produktiven System zu verwenden. Der Dienst kann außerdem nur mit dem lokalen Dateisystem synchronisiert und nicht für die Remote-Entwicklung verwendet werden.
 
 ### Dienstinstallation mit dem VLT {#installing-the-service-using-vlt}
 
@@ -855,7 +855,7 @@ Sobald der Dienst ausgeführt wird, kann er mit folgenden Parametern konfigurier
 >
 >Der Dienst kann mit der Web-Konsole oder einem `sling:OsgiConfig`-Knoten (mit dem Namen `com.day.jcr.sync.impl.VaultSyncServiceImpl`) im Repository konfiguriert werden.
 >
->In AEM können Sie die Konfigurationseinstellungen für solche Services auf unterschiedliche Weise vornehmen. Umfassende Informationen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
+>In AEM können Sie die Konfigurationseinstellungen für solche Dienste auf unterschiedliche Weise vornehmen. Umfassende Informationen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
 #### Synchronisierungsordnerkonfiguration {#sync-folder-configuration}
 
@@ -945,4 +945,4 @@ Ihr lokaler Ordner ist jetzt mit dem Repository synchronisiert. Die Synchronisie
 
 >[!NOTE]
 >
->Die VLT-Synchronisierungsfunktion unterstützt nur einfache Dateien und Ordner, erkennt jedoch spezielle serialisierte Vault-Dateien (.content.xml, dialog.xml usw.) und ignoriert sie im Hintergrund. So ist es möglich, die Vault-Synchronisierung bei einem standardmäßigen VLT-Auschecken zu verwenden.
+>Die VLT-Synchronisierungsfunktion unterstützt nur einfache Dateien und Ordner, erkennt jedoch spezielle serialisierte Vault-Dateien (.content.xml, dialog.xml usw.) und ignoriert sie stillschweigend. So ist es möglich, die Vault-Synchronisierung bei einem standardmäßigen VLT-Auschecken zu verwenden.

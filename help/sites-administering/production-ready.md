@@ -10,25 +10,25 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '384'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 # Ausführen von AEM im produktionsbereiten Modus{#running-aem-in-production-ready-mode}
 
-Mit AEM 6.1 führt Adobe die neue `"nosamplecontent"` Ausführungsmodus zur Automatisierung der Schritte, die zur Vorbereitung einer AEM Instanz für die Bereitstellung in einer Produktionsumgebung erforderlich sind.
+Mit AEM 6.1 hat Adobe den neuen `"nosamplecontent"`-Ausführungsmodus eingeführt, der der Automatisierung der für die Vorbereitung einer AEM-Instanz zur Bereitstellung einer Produktionsumgebung erforderlichen Schritte dient.
 
-Der neue Ausführungsmodus konfiguriert die Instanz nicht nur automatisch, um die in der Sicherheitscheckliste beschriebenen Best Practices für die Sicherheit einzuhalten, sondern entfernt auch alle Beispielanwendungen und -konfigurationen im Geometrixx.
+Der neue Ausführungsmodus konfiguriert nicht nur automatisch die Instanz, um die in der Sicherheitsprüfliste beschriebenen Best Practices für die Sicherheit einzuhalten, sondern entfernt darüber hinaus alle Geometrixx-Beispielsanwendungen und -konfigurationen innerhalb des Prozesses.
 
 >[!NOTE]
 >
->Da aus praktischen Gründen der AEM produktionsbereite Modus nur die meisten Aufgaben abdeckt, die zum Schützen einer Instanz erforderlich sind, empfehlen wir dringend, die [Sicherheitscheckliste](/help/sites-administering/security-checklist.md) bevor Sie mit Ihrer Produktionsumgebung live gehen.
+>Da der produktionsbereite Modus von AEM aus praktischen Gründen nur einen Großteil der für die Sicherung einer Instanz erforderlichen Aufgaben abdeckt, empfehlen wir Ihnen dringend, vor dem tatsächlichen Einsatz der Produktionsumgebung die [Sicherheitsprüfliste](/help/sites-administering/security-checklist.md) durchzugehen.
 >
 >Beachten Sie außerdem, dass die Ausführung von AEM im produktionsbereiten Modus den Zugriff auf CRXDE Lite effektiv deaktiviert. Wenn Sie es zum Debuggen benötigen, finden Sie unter [Aktivieren von CRXDE Lite in AEM](/help/sites-administering/enabling-crxde-lite.md) weitere Informationen.
 
 ![chlimage_1-83](assets/chlimage_1-83a.png)
 
-Um AEM im produktionsbereiten Modus auszuführen, müssen Sie nur Folgendes hinzufügen: `nosamplecontent` über die `-r` Wechseln Sie zum Ausführungsmodus zu den vorhandenen Startargumenten:
+Für die Ausführung von AEM im produktionsbereiten Modus müssen Sie nur `nosamplecontent` über den Ausführungsmodus-Schalter `-r` zu Ihren vorhandenen Startargumenten hinzufügen:
 
 ```shell
 java -jar aem-quickstart.jar -r nosamplecontent
@@ -42,14 +42,14 @@ java -jar aem-quickstart.jar -r author,crx3,crx3mongo,nosamplecontent -Doak.mong
 
 ## Ändern eines Teils des produktionsbereiten Modus {#changes-part-of-the-production-ready-mode}
 
-Genauer gesagt werden die folgenden Konfigurationsänderungen ausgeführt, wenn AEM im produktionsbereiten Modus ausgeführt wird:
+Genauer gesagt werden die folgenden Konfigurationsveränderungen durchgeführt, wenn AEM im produktionsbereiten Modus ausgeführt wird:
 
-1. Das **CRXDE-Support-Bundle** (`com.adobe.granite.crxde-support`) ist im produktionsbereiten Modus standardmäßig deaktiviert. Es kann jederzeit über das öffentliche Adobe-Maven-Repository installiert werden. Version 3.0.0 ist für AEM 6.1 erforderlich.
+1. Das **CRXDE-Support-Bundle** (`com.adobe.granite.crxde-support`) ist im produktionsbereiten Modus standardmäßig deaktiviert. Es kann jederzeit über das öffentliche Maven-Repository von Adobe installiert werden. Version 3.0.0 ist für AEM 6.1 erforderlich.
 
 1. Das Bundle **Apache Sling Simple WebDAV Access to repositories** (`org.apache.sling.jcr.webdav`) ist nur für **Autoreninstanzen** verfügbar.
 
-1. Neu erstellte Benutzer müssen das Kennwort bei der ersten Anmeldung ändern. Dies gilt nicht für den Admin-Benutzer.
-1. **Debug-Informationen generieren** ist für die **Apache Sling JavaScript Handler**.
+1. Neu erstellte Benutzende müssen das Passwort bei der ersten Anmeldung ändern. Dies gilt nicht für Admin-Benutzende.
+1. **Debug-Informationen erzeugen** ist für den **Apache Sling JavaScript Handler** deaktiviert.
 
 1. **Die Funktionen zum zugeordneten Inhalt** und **zum Erzeugen von Debug-Informationen** sind für den **Apache Sling Jsp Script Handler** deaktiviert.
 

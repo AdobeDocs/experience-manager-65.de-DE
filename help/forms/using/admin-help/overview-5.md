@@ -12,18 +12,18 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '149'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
 # Einführung in das Arbeiten mit PDF Generator {#introduction-to-working-with-pdf-generator}
 
-PDF Generator konvertiert verschiedene Dateiformate in PDF. Er kann außerdem PDF-Dokumente in andere Dateiformate konvertieren und die Größe von PDF-Dokumenten optimieren. Eine Liste der unterstützten Dateiformate finden Sie unter [Softwareunterstützung für PDF Generator](/help/forms/using/aem-forms-jee-supported-platforms.md)
+PDF Generator konvertiert verschiedene Dateiformate in PDF. Er kann außerdem PDF-Dokumente in andere Dateiformate konvertieren und die Größe von PDF-Dokumenten optimieren. Eine Liste der unterstützten Dateiformate finden Sie unter [Software-Unterstützung für PDF Generator](/help/forms/using/aem-forms-jee-supported-platforms.md)
 
-**Senden von Dateien zur Verarbeitung an PDF Generator**
+**Senden von Dateien an PDF Generator zur Verarbeitung**
 
 Es gibt drei Möglichkeiten, Dateien zur Verarbeitung an PDF Generator zu senden:
 
-* Administratoren können auf die PDFG-Seiten in Administration Console zugreifen. (Siehe [Dateien mithilfe von PDF Generator konvertieren](/help/forms/using/admin-help/converting-files-using-pdf-generator.md).)
+* Admins können auf die PDFG-Seiten in der Administrationskonsole zugreifen. (Siehe [Dateien mithilfe von PDF Generator konvertieren](/help/forms/using/admin-help/converting-files-using-pdf-generator.md).)
 * Benutzer können auf die PDFG-Endbenutzerseiten zugreifen, indem sie sich bei `http(s)://'[server]:[port]'/pdfgui.` anmelden. Von dort aus können sie auf die Seiten für PDFG-Netzwerkdrucker, PDF erstellen, HTML zu PDF, PDF erstellen und PDF optimieren zugreifen.
 * Sie können Endpunkte für die Dienste konfigurieren. Siehe <!--Fix broken link to Managing Endpoints --> [Empfehlungen für den Generate PDF-Dienst](configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations).

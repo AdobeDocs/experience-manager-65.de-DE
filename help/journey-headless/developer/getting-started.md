@@ -5,7 +5,7 @@ exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
 source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '2999'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -81,7 +81,7 @@ Um Inhalte „headless“ zu ändern, bietet AEM zwei robuste APIs.
 * Mit der GraphQL-API können Sie Anfragen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellen.
 * Mit der Assets-REST-API können Sie Inhaltsfragmente (und andere Assets) erstellen und ändern.
 
-In einem späteren Teil der AEM Headless-Tour erfahren Sie mehr über diese APIs und deren Verwendung. Oder sehen Sie die [Zusätzliche Ressourcen](#additional-resources) unten finden Sie weitere Dokumentationen.
+In einem späteren Teil der AEM Headless-Tour erfahren Sie mehr über diese APIs und deren Verwendung. Weitere Informationen finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) unten.
 
 ## Headless-Integrationsebenen {#integration-levels}
 
@@ -195,7 +195,7 @@ Ordner können auch darauf beschränkt werden, nur bestimmte Inhaltstypen zuzula
 * verhindert, dass Inhaltsautoren Inhalte erstellen, die nicht zum Ordner gehören,
 * optimiert den Inhaltserstellungsprozess, indem die Inhaltstypen gefiltert werden, die im Ordner während der Erstellung zulässig sind, sodass nur gültige Inhaltstypen angezeigt werden.
 
-Durch die Erstellung einer geeigneten Inhaltsstruktur wird es einfacher, das Headless-Content-Authoring kanalübergreifend zu koordinieren, um die Wiederverwendung von Inhalten zu maximieren. Durch die Nutzung von Inhalten über mehrere Kanäle wird die Effizienz der Inhaltserstellung und das Änderungs-Management erheblich verbessert.
+Durch die Erstellung einer geeigneten Inhaltsstruktur wird es einfacher, das Authoring von Headless-Inhalten kanalübergreifend zu koordinieren, um die Wiederverwendung von Inhalten zu maximieren. Durch die Nutzung von Inhalten über mehrere Kanäle wird die Effizienz der Inhaltserstellung und das Änderungs-Management erheblich verbessert.
 
 ##### Einrichten guter Benennungskonventionen {#naming-conventions}
 
@@ -240,7 +240,7 @@ Für eine [typische Headless-Implementierung mit AEM](#level-1) benötigt der En
 
 Damit ein Projekt erfolgreich ist, muss die Leistung berücksichtigt werden, bevor Inhalte erstellt werden.
 
-Vergewissern Sie sich, dass Sie die Erwartungen Ihrer Benutzer/Besucher und deren Design verstehen. Legen Sie Service-Level-Ziele (SLOs) fest und messen Sie sie, um zu verstehen, ob Sie die Erwartungen Ihrer Benutzer erfüllen.
+Seien Sie sich der Erwartungen der Benutzenden/Besuchenden bewusst und entwickeln Sie für diese. Legen Sie Service-Level-Ziele (SLOs) fest und messen Sie sie, um zu verstehen, ob Sie die Erwartungen Ihrer Benutzer erfüllen.
 
 #### Traffic-Muster {#traffic-patterns}
 

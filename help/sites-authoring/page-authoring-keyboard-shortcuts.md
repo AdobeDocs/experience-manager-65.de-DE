@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 82%
+ht-degree: 93%
 
 ---
 
@@ -26,13 +26,13 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 
 | Standort | Tastaturbefehl | Beschreibung |
 |---|---|---|
-| Beliebiger Fenstermodus „Bearbeiten“ | `Ctrl-Shift-m` | Zwischen wechseln **Vorschau** und der derzeit ausgewählten [mode](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (zum Beispiel: **Bearbeiten**, **Layout** usw.) |
+| Beliebiger Fenstermodus „Bearbeiten“ | `Ctrl-Shift-m` | Wechseln zwischen **Vorschau** und dem aktuell ausgewählten [Modus](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (z. B. **Bearbeiten**, **Layout** usw.) |
 | Modus **Bearbeiten** | `Ctrl-z` | [Letzte Änderung rückgängig machen](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Letzte Änderung wiederholen](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Mehrere Absätze auswählen |
 |  | `Ctrl-c` | Kopieren von ausgewählten Absätzen |
 |  | `Ctrl-x` | Ausgewählte Absätze ausschneiden (ausgeschnittene Absätze werden in der Benutzeroberfläche erst nach dem Einfügen ausgeblendet) |
-|  | `Ctrl-v` | Einfügen von Absätzen, die zuvor ausgeschnitten oder kopiert wurden |
+|  | `Ctrl-v` | Zuvor ausgeschnittene oder kopierte Absätze einfügen |
 |  | `Ctrl-Backspace` | Ausgewählte Absätze löschen |
 | Modus **Bearbeiten** – Rich-Text-Editor | `Ctrl-b` | Fett |
 |  | `Ctrl-I` | Kursiv |
@@ -40,7 +40,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 
 >[!NOTE]
 >
->&amp;ast; Sobald der Benutzer mit der Seite im Vorschaumodus interagiert, ist der Tastaturbefehl `Ctrl-Shift-m` nicht mehr verfügbar. Die Benutzerin bzw. der Benutzer muss auf die obere Editor-Leiste klicken oder wieder in den Bearbeitungsmodus wechseln, damit der Tastaturbefehl erneut verfügbar wird.
+>&amp;ast; Sobald der Benutzer mit der Seite im Vorschaumodus interagiert, ist der Tastaturbefehl `Ctrl-Shift-m` nicht mehr verfügbar. Es muss auf die obere Editorleiste geklickt oder wieder in den Bearbeitungsmodus gewechselt werden, damit der Tastaturbefehl erneut verfügbar wird.
 
 Desktop-Benutzern stehen bei der Verwendung von [Konsolen](/help/sites-authoring/keyboard-shortcuts.md) ebenfalls verschiedene Tastaturbefehle zur Verfügung.
 

@@ -1,6 +1,6 @@
 ---
 title: Verwalten von Aufgaben in einer hierarchischen Struktur mithilfe der Manager-Ansicht
-description: Wie Manager und Organisationsleiter auf die Aufgaben ihrer direkten und indirekten Berichte im Tab Aufgaben in AEM Forms Workspace zugreifen und diese bearbeiten können.
+description: Wie Führungskräfte und Unternehmensleitungen auf der Registerkarte „Aufgaben“ in AEM Forms Workspace auf die Aufgaben ihrer direkt und indirekt unterstellten Mitarbeiterinnen und Mitarbeiter zugreifen und sie verwenden können.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,26 +11,26 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '337'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
 # Verwalten von Aufgaben in einer hierarchischen Struktur mithilfe der Manager-Ansicht{#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
 
-In AEM Forms Workspace können Manager jetzt auf die Aufgaben zugreifen, die Benutzern in ihren Hierarchien – direkt oder indirekt unterstellten Mitarbeitern – zugewiesen sind, und dafür verschiedene Aktionen ausführen. Die Aufgaben sind in AEM Forms Workspace auf der Registerkarte „Aufgaben“ verfügbar. Folgende Aktionen werden für die Aufgaben von Direktberichten unterstützt:
+In AEM Forms Workspace können Manager jetzt auf die Aufgaben zugreifen, die Benutzern in ihren Hierarchien – direkt oder indirekt unterstellten Mitarbeitern – zugewiesen sind, und dafür verschiedene Aktionen ausführen. Die Aufgaben sind in AEM Forms Workspace auf der Registerkarte „Aufgaben“ verfügbar. Die folgenden Aktionen werden für die Aufgaben von direkt unterstellten Mitarbeiterinnen und Mitarbeitern unterstützt:
 
-**Weiterleiten** - Leitet eine Aufgabe aus einem direkten Bericht an einen beliebigen Benutzer weiter.
+**Weiterleiten** – Leitet eine Aufgabe von direkt unterstellten Mitarbeiterinnen und Mitarbeitern an eine beliebige Benutzerin oder einen beliebigen Benutzer weiter.
 
-**Anspruch** - Fordert eine Aufgabe eines direkt unterstellten Mitarbeiters an.
+**Anfordern** – Fordert eine Aufgabe von direkt unterstellten Mitarbeiterinnen und Mitarbeitern an.
 
-**Anfordern und Öffnen** - Fordert eine Aufgabe eines direkt unterstellten Mitarbeiters an und öffnet sie automatisch in der Aufgabenliste des Managers.
+**Anfordern und öffnen** Fordert eine Aufgabe von direkt unterstellten Mitarbeiterinnen und Mitarbeitern an und öffnet sie automatisch in der Aufgabenliste der Führungskraft.
 
-**Ablehnen** - Lehnen Sie eine Aufgabe ab, die von einem anderen Benutzer an einen direkt unterstellten Mitarbeiter weitergeleitet wurde. Diese Option ist für die Aufgaben verfügbar, die von anderen Benutzern an einen direkt unterstellten Mitarbeiter weitergeleitet wurden.
+**Ablehnen** Lehnt eine Aufgabe ab, die von einer anderen Benutzerin oder einem anderen Benutzer an eine direkt unterstellte Person weitergeleitet wurde. Diese Option ist für die Aufgaben verfügbar, die von anderen Benutzern an einen direkt unterstellten Mitarbeiter weitergeleitet wurden.
 
-AEM Forms beschränkt den Zugriff eines Benutzers auf die Aufgaben, für die der Benutzer die Zugriffskontrolle (ACL) hat. Mit einer solchen Prüfung wird sichergestellt, dass ein Benutzer nur die Aufgaben abrufen kann, für die er Zugriffsberechtigungen hat. Mit Webdiensten von Drittanbietern und Implementierungen zur Definition der Hierarchie kann ein Unternehmen die Definition von Manager- und Direktberichten an seine Anforderungen anpassen.
+AEM Forms beschränkt den Zugriff eines Benutzers auf die Aufgaben, für die der Benutzer die Zugriffskontrolle (ACL) hat. Durch diese Überprüfung wird sichergestellt, dass Benutzende nur die Aufgaben abrufen können, für die sie Zugriffsberechtigungen haben. Ein Unternehmen kann die Hierarchie mit Web-Diensten von Drittanbietern definieren und die Definition von Führungskräften und direkt unterstellten Mitarbeiterinnen und Mitarbeitern an ihren Bedarf anpassen.
 
 1. Erstellen Sie einen DSC. Weitere Informationen erhalten Sie unter „Entwickeln von Komponenten für AEM Forms“ im Handbuch [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).
-1. Definieren Sie in dem DSC eine neue SPI für das Hierarchiemanagement, um direkt unterstellte Mitarbeiter und Hierarchie unter den AEM Forms-Benutzern zu definieren. Im Folgenden finden Sie ein Beispiel für ein Java™-Codefragment.
+1. Definieren Sie in dem DSC eine neue SPI für das Hierarchiemanagement, um direkt unterstellte Mitarbeiter und Hierarchie unter den AEM Forms-Benutzern zu definieren. Im Folgenden finden Sie ein Java™-Beispiel-Code-Fragment.
 
    ```java
    public class MyHierarchyMgmtService
@@ -65,7 +65,7 @@ AEM Forms beschränkt den Zugriff eines Benutzers auf die Aufgaben, für die der
    }
    ```
 
-1. Erstellen Sie eine Datei &quot;component.xml&quot;. Stellen Sie sicher, dass spec-id mit dem unten im Codefragment gezeigten übereinstimmt. Im Folgenden finden Sie ein Beispielcode-Snippet, das Sie wiederverwenden können.
+1. Erstellen Sie die Datei „component.xml“. Stellen Sie sicher, dass spec-id mit dem unten angegebenen Code-Fragment übereinstimmt. Im Folgenden finden Sie ein Beispiel-Code-Fragment, das Sie für Ihre Zwecke anpassen können.
 
    ```xml
    <component xmlns="https://adobe.com/idp/dsc/component/document">
@@ -109,10 +109,10 @@ AEM Forms beschränkt den Zugriff eines Benutzers auf die Aufgaben, für die der
    </component>
    ```
 
-1. Stellen Sie DSC über Workbench bereit. Starten Sie den Service `ProcessManagementTeamTasksService` neu.
+1. Stellen Sie das DSC über Workbench bereit. Starten Sie den Service `ProcessManagementTeamTasksService` neu.
 1. Möglicherweise müssen Sie den Browser aktualisieren oder sich für den Benutzer erneut abmelden/anmelden.
 
-Der folgende Bildschirm veranschaulicht den Zugriff auf die Aufgaben direkter Berichte und die verfügbaren Aktionen.
+Der folgende Bildschirm veranschaulicht den Zugriff auf die Aufgaben direkt unterstellter Mitarbeiterinnen und Mitarbeiter und die verfügbaren Aktionen.
 
 ![cu_manager_view](assets/cu_manager_view.png)
 

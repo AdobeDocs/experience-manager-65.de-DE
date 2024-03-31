@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '975'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -58,9 +58,9 @@ Die Befehlszeilenargumente für die Imaging Transcoding Library können Folgende
 Für den Parameter `-resize` können folgende Optionen konfiguriert werden:
 
 * `X`: Funktioniert ähnlich wie [!DNL Experience Manager]. Beispiel: -resize 319.
-* `WxH`: Das Seitenverhältnis wird beispielsweise nicht beibehalten. `-resize 319x319`.
-* `Wx`: Legt die Breite fest und berechnet die Höhe mit Beibehaltung des Seitenverhältnisses. Zum Beispiel: `-resize 319x`.
-* `xH`: Legt die Höhe fest und berechnet die Breite mit Beibehaltung des Seitenverhältnisses. Zum Beispiel: `-resize x319`.
+* `WxH`: Das Seitenverhältnis wird nicht beibehalten, z. B. `-resize 319x319`.
+* `Wx`: Legt die Breite fest und berechnet die Höhe unter Beibehaltung des Seitenverhältnisses. Zum Beispiel: `-resize 319x`.
+* `xH`: Legt die Höhe fest und berechnet die Breite unter Beibehaltung des Seitenverhältnisses. Zum Beispiel: `-resize x319`.
 
 ```shell
  -AllowUpsampling (Resizes smaller images)

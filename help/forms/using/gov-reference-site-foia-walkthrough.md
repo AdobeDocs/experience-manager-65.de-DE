@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Unter dem Freedom of Information Act fordert Sarah eine Kopie der Fallprotokolle
 
 ### Sehen Sie selbst {#see-it-yourself}
 
-Öffnen Sie in Ihrem Browser `https://<hostname>:<PublishPort>/wegov`. Wählen Sie auf der Site &quot;We.Gov&quot;Anwendungen > Alle Anwendungen aus. Wählen Sie auf der Seite Alle Anwendungen unter Anwendung für FOIA-Anfrage die Option Übernehmen aus.
+Öffnen Sie in Ihrem Browser `https://<hostname>:<PublishPort>/wegov`. Wählen Sie auf der We.Gov-Website „Applications > All Applications“ (Anträge > Alle Anträge) aus. Wählen Sie auf der Seite „All Applications“ (Alle Anträge) unter „Application for FOIA Request“ (Antrag für FOIA-Anfrage) „Apply“ (Beantragen) aus.
 
 ## Sarah stellt ihren Antrag auf Informationen gemäß FOIA. {#sarah-starts-her-application-for-information-under-foia}
 
@@ -55,7 +55,7 @@ Sarah klickt auf **Apply** (Beantragen) und gibt auf der Seite für das Freedom 
 
 Anfordern einer Kopie der Fallprotokolle von Administration for Children and Families für die Geschäftsjahre 2013 bis 2016
 
-Sarah kann jederzeit **Speichern** , um einen Formularentwurf zu speichern, und später erneut darauf zugreifen, um das Formular auszufüllen und zu versenden. Sarah sendet das Formular ab.
+Sarah kann jederzeit **Save** (Speichern) auswählen, um den Entwurf des Formulars zu speichern und später zurückzukehren, um das Formular fertig auszufüllen und abzusenden. Sarah sendet das Formular ab.
 
 >[!NOTE]
 >

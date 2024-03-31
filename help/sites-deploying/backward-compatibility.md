@@ -1,6 +1,6 @@
 ---
 title: Abwärtskompatibilität in AEM 6.5
-description: Erfahren Sie, wie Sie Ihre Apps und Konfigurationen mit Adobe Experience Manager (AEM) 6.5 kompatibel halten.
+description: Erfahren Sie, wie Sie die Kompatibilität Ihrer Apps und Konfigurationen mit Adobe Experience Manager (AEM) 6.5 sicherstellen.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 38%
+ht-degree: 100%
 
 ---
 
@@ -22,25 +22,25 @@ ht-degree: 38%
 
 >[!NOTE]
 >
->Eine Liste der Inhalts- und Konfigurationsänderungen, die nicht unter das Kompatibilitätspaket fallen, finden Sie unter [Repository-Neustrukturierung in AEM](/help/sites-deploying/repository-restructuring.md).
+>Eine Liste der Änderungen am Inhalt und an der Konfiguration, die das Kompatibilitätspaket nicht betreffen, finden Sie unter [Repository-Neustrukturierung in AEM](/help/sites-deploying/repository-restructuring.md).
 
-In Adobe Experience Manager (AEM) 6.5 wurden alle Funktionen mit Rückwärtskompatibilität entwickelt.
+In Adobe Experience Manager (AEM) 6.5 wurden alle Funktionen im Hinblick auf die Abwärtskompatibilität entwickelt.
 
-Normalerweise sollten Kunden, die AEM 6.3 ausführen, den Code oder die Anpassungen bei der Aktualisierung nicht ändern müssen. Für Kunden von AEM 6.1 und 6.2 gibt es keine zusätzlichen Änderungen, die grundlegend sind, als dies bei einem Upgrade auf 6.3 der Fall wäre.
+In der Regel sollten Kundinnen und Kunden, die mit AEM 6.3 arbeiten, weder ihren Code noch ihre Anpassungen ändern müssen, wenn sie das entsprechende Upgrade durchführen. Für Kundinnen und Kunden mit AEM 6.1 und 6.2 gibt es nicht wesentlich mehr zusätzliche Änderungen, als dies bei einem Upgrade auf 6.3 erforderlich wäre.
 
-Für Ausnahmen, in denen Funktionen nicht abwärtskompatibel gehalten werden konnten, können Abwärtskompatibilitätsprobleme bei Paketen und Inhalten reduziert werden. Installieren Sie dazu ein Kompatibilitätspaket für 6.4 (weitere Informationen zum Herunterladen finden Sie unten unter Einrichten ). Dieses Kompatibilitätspaket hilft bei der Wiederherstellung der Kompatibilität, die normalerweise für Anwendungen gilt, die AEM 6.4 erfüllen.
+In den Ausnahmefällen, in denen Funktionen nicht abwärtskompatibel realisiert werden konnten, können Abwärtskompatibilitätsprobleme bei Bundles und Inhalten reduziert werden. Installieren Sie dazu ein Kompatibilitätspaket für 6.4. (Weitere Informationen zum Herunterladen finden Sie nachstehend unter „Einrichtung“.) Dieses Kompatibilitätspaket wird normalerweise dazu beitragen, die Kompatibilität für Anwendungen, die mit AEM 6.4 kompatibel sind, wiederherzustellen.
 
 Mit dem Kompatibilitätspaket können Sie AEM im Kompatibilitätsmodus ausführen und so die benutzerdefinierte Entwicklung für neue AEM-Funktionen zurückstellen:
 
 >[!NOTE]
 >
->Das Kompatibilitätspaket ist nur eine temporäre Lösung, um die Entwicklung zu verschieben, die für die Kompatibilität mit AEM 6.5 erforderlich ist. Adobe empfiehlt dies nur als letzte Option, wenn Sie Kompatibilitätsprobleme nicht unmittelbar nach der Aktualisierung durch die Entwicklung beheben können. Darüber hinaus empfiehlt Adobe, in den nativen Modus zu wechseln und das Kompatibilitätspaket zu deinstallieren, sobald Sie sich für eine 6.5-basierte benutzerdefinierte Entwicklung entscheiden und die vollständige 6.5-Funktionalität nutzen.
+>Das Kompatibilitätspaket ist nur eine Zwischenlösung, um die für die Kompatibilität mit AEM 6.5 erforderliche Entwicklung aufzuschieben. Adobe empfiehlt dies nur als letzte Option, falls Sie Kompatibilitätsprobleme nicht direkt nach dem Upgrade durch Eigenentwicklungen beheben können. Adobe empfiehlt zudem, in den nativen Modus zu wechseln und das Kompatibilitätspaket zu deinstallieren, sobald Sie auf 6.5 basierende Eigenentwicklungen vornehmen, damit Sie den vollen Funktionsumfang von 6.5 nutzen können.
 
 ![sase](assets/sase.png)
 
 Das Kompatibilitätspaket bietet zwei Modi: **Routing aktiviert** und **Routing deaktiviert**.
 
-Dadurch kann AEM 6.5 in drei Modi ausgeführt werden:
+Damit kann AEM 6.5 in drei Modi ausgeführt werden:
 
 **Nativer Modus:**
 
@@ -60,10 +60,10 @@ Der Legacy-Modus eignet sich für Kundinnen und Kunden, die benutzerdefinierte S
 
 ## Einrichtung {#how-to-set-up}
 
-Die **AEM 6.4 Compatibility Pack für 6.5** kann als Paket mit Package Manager installiert werden. Sie können die [AEM 6.4-Kompatibilitätspaket für 6.5 von der Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64) Site.
+Das **AEM 6.4-Kompatibilitätspaket für 6.5** kann als Paket mit Package Manager installiert werden. Sie können das [AEM 6.4-Kompatibilitätspaket für 6.5 von der Software Distribution-Site](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64) herunterladen.
 
 Sobald das Kompatibilitätspaket installiert wurde, können Sie das Routing über einen Schalter in der OSGi-Konfiguration aktivieren oder deaktivieren:
 
 ![Schalter für Kompatibilität](assets/compat-switches.png)
 
-Nachdem das Kompatibilitätspaket installiert und eingerichtet wurde, werden die Funktionen basierend auf dem ausgewählten Kompatibilitätsmodus verwendet.
+Nachdem das Kompatibilitätspaket installiert und konfiguriert wurde, werden die Funktionen basierend auf dem ausgewählten Kompatibilitätsmodus verwendet.

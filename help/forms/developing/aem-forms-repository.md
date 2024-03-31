@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '9036'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Nehmen Sie zum Beispiel das folgende Forms-Programm mit dem Namen *Applications/
 
 ![ww_ww_formrepository](assets/ww_ww_formrepository.png)
 
-Beachten Sie, dass sich im FormsFolder eine Datei mit dem Namen &quot;Loan.xdp&quot;befindet. Um auf diesen Formularentwurf zuzugreifen, geben Sie den vollständigen Pfad an (einschließlich der Version): `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+Beachten Sie, dass sich im Ordner „FormsFolder“ eine Datei mit dem Namen „Loan.xdp“ befindet. Um auf diesen Formularentwurf zuzugreifen, geben Sie den vollständigen Pfad an (einschließlich der Version): `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Die folgenden Werte zeigen einige Beispiele für URI-Werte:
 >
 >Sie können das AEM Forms-Repository mithilfe eines Webbrowsers durchsuchen. Um das Repository zu durchsuchen, geben Sie die URL `https://[server name]:[server port]/repository` in einen Webbrowser ein. Sie können die Ergebnisse der Kurzanleitung, die mit dem Abschnitt „Arbeiten mit dem AEM Forms-Repository“ verbunden sind, mit einem Webbrowser überprüfen. Wenn Sie beispielsweise Inhalte zum AEM Forms-Repository hinzufügen, können Sie diese Inhalte in einem Webbrowser anzeigen. (Siehe [Kurzanleitung (SOAP-Modus): Schreiben einer Ressource mithilfe der Java-API](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
 
-Die Repository-API bietet verschiedene Vorgänge, mit denen Sie Informationen aus dem Repository speichern und abrufen können. Beispielsweise können Sie eine Liste von Ressourcen oder spezifische Ressourcen abrufen, die im Repository gespeichert sind, wenn eine Ressource im Rahmen der Verarbeitung eines Programms benötigt wird.
+Die Repository-API bietet eine Reihe von Vorgängen, mit denen Sie Informationen aus dem Repository speichern und abrufen können. Beispielsweise können Sie eine Liste von Ressourcen oder spezifische Ressourcen abrufen, die im Repository gespeichert sind, wenn eine Ressource im Rahmen der Verarbeitung eines Programms benötigt wird.
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Mithilfe der Repository-Service-API können Sie die folgenden Aufgaben ausführe
 >
 >Weitere Informationen zum Repository-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-## Erstellen von Ordnern {#creating-folders}
+## Erstellen eines Ordners {#creating-folders}
 
 Ordner (Ressourcensammlungen) werden zum Speichern von Objekten (Dateien oder Ressourcen) in organisierten Gruppierungen verwendet. Ordner können Ressourcen und andere Ordner enthalten, die auch als Unterordner bezeichnet werden. Ressourcen können jeweils nur in einem Ordner gespeichert werden.
 
@@ -160,7 +160,7 @@ Erstellen Sie einen Ordner mit der Repository Service-API (Java):
 
 **Siehe auch**
 
-[Erstellen von Ordnern](aem-forms-repository.md#creating-folders)
+[Erstellen eines Ordners](aem-forms-repository.md#creating-folders)
 
 [Kurzanleitung (SOAP-Modus): Erstellen eines Ordners mithilfe der Java-API](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
 
@@ -200,7 +200,7 @@ Erstellen Sie einen Ordner mit der Repository Service-API (Web-Dienst):
 
 **Siehe auch**
 
-[Erstellen von Ordnern](aem-forms-repository.md#creating-folders)
+[Erstellen eines Ordners](aem-forms-repository.md#creating-folders)
 
 [Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
@@ -302,7 +302,7 @@ Schreiben Sie eine Ressource mit der Repository Service API (Java):
 
 1. Die Ressource in den Zielordner schreiben
 
-   Rufen Sie die `ResourceRepositoryClient` -Objekt `writeResource` -Methode verwenden und den URI des Ordners übergeben, und die `Resource` -Objekt.
+   Rufen Sie die Methode `writeResource` des `ResourceRepositoryClient`-Objekts auf und übergeben Sie den URI des Ordners sowie das `Resource`-Objekt.
 
 **Siehe auch**
 
@@ -351,7 +351,7 @@ Schreiben Sie eine Ressource mithilfe der Repository Service-API (Web-Dienst):
 
 1. Die Ressource in den Zielordner schreiben
 
-   Rufen Sie die `RepositoryServiceService` -Objekt `writeResource` -Methode verwenden und den URI des Ordners übergeben, und die `Resource` -Objekt. Übergeben Sie `null` für die beiden anderen Parameter.
+   Rufen Sie die Methode `writeResource` des `RepositoryServiceService`-Objekts auf und übergeben Sie den URI des Ordners sowie das `Resource`-Objekt. Übergeben Sie `null` für die beiden anderen Parameter.
 
 **Siehe auch**
 
@@ -539,7 +539,7 @@ So lesen Sie eine Ressource mithilfe der Repository Service-API (Java):
 
 1. Angeben des URI der zu lesenden Ressource
 
-   Geben Sie einen Zeichenfolgenwert an, der den URI der abzurufenden Ressource darstellt. Angenommen, die Ressource heißt *testResource* , der sich in einem Ordner namens *testFolder*, spezifizieren `/testFolder/testResource`.
+   Geben Sie einen Zeichenfolgenwert an, der den URI der abzurufenden Ressource darstellt. Angenommen, die Ressource heißt zum Beispiel *testResource* und befindet sich in einem Ordner mit dem Namen *testFolder*, dann geben Sie `/testFolder/testResource` an.
 
 1. Lesen der Ressource
 
@@ -590,7 +590,7 @@ Wenn Sie eine Ressource aktualisieren, wird die neue Version anhand der angegebe
 
 Wenn Sie beispielsweise eine XDP-Datei aktualisieren, die Verweise auf andere Ressourcen enthält, werden diese zusätzlichen Verweise ebenfalls aufgezeichnet. Angenommen, die Datei „form.xdp“ Version 1.0 enthält zwei externe Verweise: ein Logo und ein Stylesheet, und Sie aktualisieren anschließend „form.xdp“, sodass es jetzt drei Verweise enthält: ein Logo, ein Stylesheet und eine Schemadatei. Während der Aktualisierung fügt das Repository die dritte Beziehung (zur Schemadatei) zu seiner ausstehenden Beziehungstabelle hinzu. Sobald die Schemadatei im Repository vorhanden ist, wird die Beziehung automatisch hergestellt. Wenn jedoch „form.xdp-Version 2.0“ das Logo nicht mehr verwendet, weist „form.xdp-Version 2.0“ keine Beziehung zum Logo auf.
 
-Alle Aktualisierungsvorgänge sind atomisch und transaktional. Wenn beispielsweise zwei Benutzer dieselbe Ressource lesen und beide Version 1.0 auf Version 2.0 aktualisieren möchten, wird einer von ihnen erfolgreich sein und einer von ihnen schlägt fehl, wird die Integrität des Repositorys gewahrt und beide erhalten eine Meldung, die den Erfolg oder Fehler bestätigt. Wenn die Transaktion nicht übertragen wird, wird sie bei einem Datenbankfehler zurückgesetzt und abhängig vom Anwendungsserver eine Zeitüberschreitung oder ein Rollback durchgeführt.
+Alle Aktualisierungsvorgänge sind atomisch und transaktional. Wenn beispielsweise zwei Benutzer dieselbe Ressource lesen und beide Version 1.0 auf Version 2.0 aktualisieren möchten, wird einer von ihnen erfolgreich sein und einer von ihnen schlägt fehl, wird die Integrität des Repositorys gewahrt und beide erhalten eine Meldung, die den Erfolg oder Fehler bestätigt. Wenn die Transaktion nicht bestätigt wird, wird sie im Fall eines Datenbankfehlers zurückgesetzt und abhängig vom Anwendungs-Server erfolgt eine Zeitüberschreitung oder eine Zurücksetzung.
 
 Sie können Ressourcen programmgesteuert aktualisieren, indem Sie die Java-API des Repository-Dienstes oder die Webdienst-API verwenden.
 
@@ -713,7 +713,7 @@ Sie können verwandte Ressourcen abrufen, um Abhängigkeiten zwischen einem Form
 
 **Abfrageanweisungen**
 
-Eine *Abfrage* enthält eine oder mehrere Anweisungen, die durch Bedingungen logisch verbunden sind. Eine *Anweisung* besteht aus einem linken Operanden, einem Operator und einem rechten Operanden. Darüber hinaus können Sie die Sortierreihenfolge für die Suchergebnisse festlegen. Die *Sortierreihenfolge* enthält Informationen, die SQL entsprechen `ORDER BY` -Klausel und besteht aus Elementen, die die Attribute enthalten, auf denen die Suche basierte, und einem Wert, der angibt, ob die aufsteigende oder absteigende Reihenfolge verwendet werden soll.
+Eine *Abfrage* enthält eine oder mehrere Anweisungen, die durch Bedingungen logisch verbunden sind. Eine *Anweisung* besteht aus einem linken Operanden, einem Operator und einem rechten Operanden. Darüber hinaus können Sie die Sortierreihenfolge für die Suchergebnisse festlegen. Die *Sortierreihenfolge* enthält Informationen, die einer SQL-`ORDER BY`-Klausel entsprechen, und besteht aus Elementen mit den Attributen, auf denen die Suche basiert, sowie einem Wert, der angibt, ob eine aufsteigende oder absteigende Reihenfolge verwendet werden soll.
 
 Sie können mithilfe der Java-API des Repository-Dienstes programmgesteuert nach Ressourcen suchen. Derzeit ist es nicht möglich, die Webdienst-API für die Suche nach Ressourcen zu verwenden.
 
@@ -839,7 +839,7 @@ Suchen Sie mithilfe der Repository-Service-API (Java) nach einer Ressource:
 
 1. Abrufen der Ressourcen aus dem Suchergebnis
 
-   Um die im Suchergebnis enthaltenen Ressourcen abzurufen, navigieren Sie durch die `List` und jedes Objekt in eine `Resource` , um seine Informationen zu extrahieren. In diesem Beispiel wird der Name jeder Ressource angezeigt.
+   Um die im Suchergebnis enthaltenen Ressourcen abzurufen, iterieren Sie durch die `List` und wandeln jedes Objekt in eine `Resource` um, um seine Informationen zu extrahieren. In diesem Beispiel wird der Name jeder Ressource angezeigt.
 
 **Siehe auch**
 
@@ -918,7 +918,7 @@ Erstellen Sie mithilfe der Java-API des Repository-Service Beziehungsressourcen 
 
 1. Geben Sie die URIs der zu verknüpfenden Ressourcen an
 
-   Geben Sie die URIs der zu verknüpfenden Ressourcen an. In diesem Fall, weil die Ressourcen `testResource1` und `testResource2` und sich im Ordner mit dem Namen `testFolder`, sind ihre URIs `"/testFolder/testResource1"` und `"/testFolder/testResource2"`. Die URIs werden als `java.lang.String`-Objekte gespeichert. In diesem Beispiel werden die Ressourcen zuerst in das Repository geschrieben und ihre URIs abgerufen. Weitere Informationen zum Schreiben einer Ressource finden Sie unter [Schreiben von Ressourcen](aem-forms-repository.md#writing-resources).
+   Geben Sie die URIs der zu verknüpfenden Ressourcen an. Da die Ressourcen in diesem Fall `testResource1` und `testResource2` heißen und sich im Ordner `testFolder` befinden, lauten ihre URIs `"/testFolder/testResource1"` und `"/testFolder/testResource2"`. Die URIs werden als `java.lang.String`-Objekte gespeichert. In diesem Beispiel werden die Ressourcen zuerst in das Repository geschrieben und ihre URIs abgerufen. Weitere Informationen zum Schreiben einer Ressource finden Sie unter [Schreiben von Ressourcen](aem-forms-repository.md#writing-resources).
 
 1. Erstellen Sie die Beziehung
 
@@ -962,7 +962,7 @@ Erstellen Sie Beziehungsressourcen mithilfe der Repository-API (Webdienst):
 
 1. Geben Sie die URIs der zu verknüpfenden Ressourcen an
 
-   Geben Sie die URIs der zu verknüpfenden Ressourcen an. In diesem Fall, weil die Ressourcen `testResource1` und `testResource2` und sich im Ordner mit dem Namen `testFolder`, sind ihre URIs `"/testFolder/testResource1"` und `"/testFolder/testResource2"`. Bei Verwendung einer mit dem Microsoft .NET Framework kompatiblen Sprache (beispielsweise C#) werden die URIs als `System.String`-Objekte gespeichert. In diesem Beispiel werden die Ressourcen zuerst in das Repository geschrieben und ihre URIs abgerufen. Weitere Informationen zum Schreiben einer Ressource finden Sie unter [Schreiben von Ressourcen](aem-forms-repository.md#writing-resources).
+   Geben Sie die URIs der zu verknüpfenden Ressourcen an. Da die Ressourcen in diesem Fall `testResource1` und `testResource2` heißen und sich in dem Ordner `testFolder` befinden, lauten ihre URIs `"/testFolder/testResource1"` und `"/testFolder/testResource2"`. Bei Verwendung einer mit dem Microsoft .NET Framework kompatiblen Sprache (beispielsweise C#) werden die URIs als `System.String`-Objekte gespeichert. In diesem Beispiel werden die Ressourcen zuerst in das Repository geschrieben und ihre URIs abgerufen. Weitere Informationen zum Schreiben einer Ressource finden Sie unter [Schreiben von Ressourcen](aem-forms-repository.md#writing-resources).
 
 1. Erstellen Sie die Beziehung
 
@@ -996,7 +996,7 @@ Erstellen Sie Beziehungsressourcen mithilfe der Repository-API (Webdienst):
 
 Sie können eine Ressource oder eine Gruppe von Ressourcen für die ausschließliche Nutzung durch einen bestimmten Benutzer oder die gemeinsame Nutzung durch mehrere Benutzer sperren. Eine freigegebene Sperre ist ein Hinweis darauf, dass mit der Ressource etwas passieren wird, aber es hindert niemanden daran, Aktionen mit dieser Ressource durchzuführen. Eine freigegebene Sperre sollte als Signalmechanismus betrachtet werden. Eine exklusive Sperre bedeutet, dass der Benutzer, der die Ressource gesperrt hat, die Ressource ändern wird. Die Sperre stellt sicher, dass niemand anders dies tun kann, bis der Benutzer den Zugriff auf die Ressource nicht mehr benötigt und die Sperre freigegeben hat. Wenn ein Repository-Administrator eine Ressource entsperrt, werden alle exklusiven und freigegebenen Sperren für diese Ressource automatisch entfernt. Dieser Aktionstyp ist für Situationen gedacht, in denen ein Benutzer nicht mehr verfügbar ist und die Ressource nicht entsperrt hat.
 
-Wenn eine Ressource gesperrt ist, wird ein Sperrsymbol angezeigt, wenn Sie die Registerkarte &quot;Ressourcen&quot;in Workbench anzeigen, wie in der folgenden Abbildung dargestellt.
+Wenn eine Ressource gesperrt ist, wird auf der Registerkarte „Ressourcen“ in der Workbench ein Schlosssymbol angezeigt, wie in der folgenden Abbildung dargestellt.
 
 ![lr_lr_lockrepository](assets/lr_lr_lockrepository.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Sling-Schnellübersicht
-description: Erfahren Sie mehr über Apache Sling, eine Adobe Experience Manager-Basistechnologie, mithilfe dieses Referenzdiagramms.
+description: Erfahren Sie mithilfe dieses Referenzdiagramms mehr über Apache Sling, eine Adobe Experience Manager-Basistechnologie.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '40'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 

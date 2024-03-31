@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren von Video-Tracking für Adobe Analytics
-description: Erfahren Sie mehr über die Konfiguration des Video-Trackings für SiteCatalyst.
+description: Erfahren Sie, wie Sie das Video-Tracking für SiteCatalyst konfigurieren.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -11,13 +11,13 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1754'
-ht-degree: 71%
+ht-degree: 99%
 
 ---
 
 # Konfigurieren von Video-Tracking für Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 
-Es gibt verschiedene Methoden zum Verfolgen von Videoereignissen. Zwei davon sind veraltete Optionen für ältere Versionen von Adobe Analytics. Diese veraltete Option sind: Legacy Milestones und Legacy Seconds.
+Es gibt mehrere Methoden für das Tracking von Video-Ereignissen. Zwei von ihnen sind Legacy-Optionen für ältere Versionen von Adobe Analytics. Diese Legacy-Optionen sind: Legacy Milestones und Legacy Seconds.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Mit der folgenden Vorgehensweise können Sie ein Framework für das Videotrackin
 
 >[!NOTE]
 >
->Bei neuen Implementierung empfehlen wir, **nicht** die Legacy-Optionen für das Videotracking zu verwenden. Verwenden Sie die **Milestones** -Methode.
+>Bei neuen Implementierung empfehlen wir, **nicht** die Legacy-Optionen für das Videotracking zu verwenden. Nutzen Sie stattdessen die **Meilenstein**-Methode.
 
 ## Allgemeine Schritte {#common-steps}
 
@@ -52,15 +52,15 @@ Mit der folgenden Vorgehensweise können Sie ein Framework für das Videotrackin
 
 ## Milestones {#milestones}
 
-Die Meilensteinmethode verfolgt die meisten Informationen über das Video, ist stark anpassbar und leicht zu konfigurieren.
+Die Meilenstein-Methode verfolgt die meisten Informationen zum Video nach, ist hochgradig anpassbar und leicht zu konfigurieren.
 
-Um die Meilensteinmethode zu verwenden, geben Sie zeitbasierte Tracking-Offsets an, um die Meilensteine zu definieren. Wenn eine Videowiedergabe einen Milestone erreicht, ruft die Seite Adobe Analytics auf, um das Ereignis nachzuverfolgen. Für jeden von Ihnen definierten Meilenstein erstellt die Komponente eine CQ-Variable, die Sie einer Adobe Analytics-Eigenschaft zuordnen können. Der Name dieser CQ-Variablen verwendet das folgende Format:
+Um die Meilenstein-Methode zu nutzen, legen Sie den zeitbasierten Tracking-Versatz fest, um die Meilensteine zu definieren. Wenn eine Videowiedergabe einen Milestone erreicht, ruft die Seite Adobe Analytics auf, um das Ereignis nachzuverfolgen. Für jeden von Ihnen definierten Meilenstein erstellt die Komponente eine CQ-Variable, die Sie einer Adobe Analytics-Eigenschaft zuordnen können. Der Name dieser CQ-Variablen verwendet das folgende Format:
 
 ```shell
 eventdata.events.milestoneXX
 ```
 
-Das XX-Suffix ist der Tracking-Offset, der den Meilenstein definiert. So erzeugt die Festlegung der Tracking-Versatzwerte auf 4, 8, 16, 20 und 28 Sekunden die folgenden CQ-Variablen:
+Das XX-Suffix ist der Tracking-Versatz, der den Meilenstein definiert. So erzeugt die Festlegung der Tracking-Versatzwerte auf 4, 8, 16, 20 und 28 Sekunden die folgenden CQ-Variablen:
 
 * `eventdata.events.milestone4`
 * `eventdata.events.milestone8`
@@ -82,11 +82,11 @@ In der folgenden Tabelle sind die standardmäßigen CQ-Variablen beschrieben, di
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
-   <td>Variablen, die diesem zugeordnet sind, enthalten den Namen der Datei. Wird nur zusammen mit eventdata.events.a.media.view gesendet </td>
+   <td>Variablen, die dieser Eigenschaft zugeordnet sind, enthalten den Namen der Datei. Wird nur zusammen mit eventdata.events.a.media.view gesendet </td>
   </tr>
   <tr>
    <td>eventdata.videoFilePath </td>
-   <td>Variablen, die diesem zugeordnet sind, enthalten den Pfad der Datei auf dem Server. Wird nur zusammen mit eventdata.events.a.media.view gesendet </td>
+   <td>Variablen, die dieser Eigenschaft zugeordnet sind, enthalten den Pfad der Datei auf dem Server. Wird nur zusammen mit eventdata.events.a.media.view gesendet </td>
   </tr>
   <tr>
    <td>eventdata.events.a.media.segmentView </td>
@@ -94,7 +94,7 @@ In der folgenden Tabelle sind die standardmäßigen CQ-Variablen beschrieben, di
   </tr>
   <tr>
    <td>eventdata.events.a.media.timePlayed</td>
-   <td>Wird jedes Mal gesendet, wenn ein Milestone ausgelöst wird. Die Anzahl der Sekunden, die Benutzende mit der Wiedergabe des angegebenen Segments verbracht haben, wird ebenfalls zusammen mit diesem Ereignis gesendet, Beispiel: eventX=21<br /> </td>
+   <td>Wird jedes Mal gesendet, wenn ein Milestone ausgelöst wird. Die Anzahl der Sekunden, die Benutzende mit der Wiedergabe des angegebenen Segments verbracht haben, wird ebenfalls zusammen mit diesem Ereignis gesendet, zum Beispiel: eventX=21<br /> </td>
   </tr>
   <tr>
    <td>eventdata.events.a.media.view </td>
@@ -127,13 +127,13 @@ In der folgenden Tabelle sind die standardmäßigen CQ-Variablen beschrieben, di
 >
 >Um den **Anzeigename** eines Videos festzulegen, öffnen Sie das Video zur Bearbeitung im DAM-System und geben Sie im Metadatenfeld **Titel** den gewünschten Namen ein.
 
-1. Nachdem Sie Meilensteine als Tracking-Methode ausgewählt haben, geben Sie im Feld &quot;Versatz verfolgen&quot;eine kommagetrennte Liste der Tracking-Versätze in Sekunden ein. Beispielsweise definiert der folgende Wert Meilensteine bei 4, 8, 16, 20 und 28 Sekunden nach dem Anfang des Videos:
+1. Nachdem Sie Meilensteine als Tracking-Methode ausgewählt haben, geben Sie im Feld „Tracking-Versatz“ eine kommagetrennte Liste der Tracking-Versätze in Sekunden ein. Beispielsweise definiert der folgende Wert Meilensteine bei 4, 8, 16, 20 und 28 Sekunden nach dem Anfang des Videos:
 
    ```xml
    4,8,16,20,24
    ```
 
-   Die Offset-Werte müssen Ganzzahlen größer als 0 sein. Der Standardwert ist `10,25,50,75`.
+   Die Offset-Werte müssen ganzzahlig und größer 0 sein. Der Standardwert ist `10,25,50,75`.
 
 1. Um die CQ-Variablen zu Adobe Analytics-Eigenschaften zuzuordnen, ziehen Sie die Adobe Analytics-Eigenschaften vom Content Finder neben der CQ-Variablen auf die Komponente.
 
@@ -241,9 +241,9 @@ Aufrufe an Adobe Analytics mit dem gezeigten Beispiel sollten wie folgt aussehen
 * *event11 gesendet, weil eventdata.events.milestone8 erreicht wurde*
 * *prop2 bis 4 wurden nicht gesendet (da eventdata.events.a.media.view nicht ausgelöst wurde)*
 
-## Nicht veraltete Meilensteine {#non-legacy-milestones}
+## Non-Legacy Milestones {#non-legacy-milestones}
 
-Die Nicht-Legacy-Meilensteinmethode ähnelt der Meilensteinmethode, mit der Ausnahme, dass Meilensteine mit Prozentsätzen der Verfolgungslänge definiert werden. Folgende Gemeinsamkeiten treten auf:
+Die Methode „Non-Legacy Milestones“ ähnelt der Milestones-Methode, mit dem Unterschied, dass Meilensteine mit Prozentwerten der Titellänge definiert werden. Folgende Gemeinsamkeiten liegen vor:
 
 * Wenn eine Videowiedergabe einen Milestone erreicht, ruft die Seite Adobe Analytics auf, um das Ereignis nachzuverfolgen.
 * Der [statische Satz an CQ-Variablen](#cqvars), die für die Zuordnung zu Adobe Analytics-Eigenschaften definiert sind.
@@ -251,7 +251,7 @@ Die Nicht-Legacy-Meilensteinmethode ähnelt der Meilensteinmethode, mit der Ausn
 
 Der Name dieser CQ-Variablen verwendet das folgende Format:
 
-Das XX-Suffix ist der Prozentsatz der Verfolgungslänge, der den Meilenstein definiert. Wenn Sie beispielsweise die Prozentsätze 10, 25, 50 und 75 angeben, werden die folgenden CQ-Variablen generiert:
+Das XX-Suffix ist der Prozentwert der Titellänge, der den Meilenstein definiert. Wenn Sie z. B. die Prozentwerte 10, 25, 50 und 75 festlegen, werden die folgenden CQ-Variablen erzeugt:
 
 * `eventdata.events.milestone10`
 * `eventdata.events.milestone25`
@@ -262,13 +262,13 @@ Das XX-Suffix ist der Prozentsatz der Verfolgungslänge, der den Meilenstein def
 eventdata.events.milestoneXX
 ```
 
-1. Nachdem Sie als Tracking-Methode Nicht-Legacy-Meilensteine ausgewählt haben, geben Sie im Feld &quot;Versatz verfolgen&quot;eine kommagetrennte Liste mit Prozentsätzen der Verfolgungslänge ein. Der folgende Standardwert definiert beispielsweise Meilensteine bei 10, 25, 50 und 75 Prozent der Verfolgungslänge:
+1. Nachdem Sie „Non-Legacy Milestones“ als Tracking-Methode ausgewählt haben, geben Sie im Feld „Versatz nachverfolgen“ eine kommagetrennte Liste der Prozentwerte der Titellänge ein. Beispielsweise definiert der folgende Standardwert Non-Meilensteine bei 10, 25, 50 und 75 Prozent der Titellänge:
 
    ```xml
    10,25,50,75
    ```
 
-   Die Offset-Werte müssen Ganzzahlen größer als 0 sein.
+   Die Offset-Werte müssen ganzzahlig und größer 0 sein. 
 
 1. Um die CQ-Variablen zu Adobe Analytics-Eigenschaften zuzuordnen, ziehen Sie die Adobe Analytics-Eigenschaften vom Content Finder neben der CQ-Variablen auf die Komponente.
 
@@ -279,15 +279,15 @@ eventdata.events.milestoneXX
 
 ## Legacy Milestones {#legacy-milestones}
 
-Diese Methode ähnelt der Milestones-Methode mit dem Unterschied, dass die in der *Tracking-Offset* -Feld sind Prozentsätze anstelle von festgelegten Punkten im Video.
+Diese Methode ähnelt der Milestones-Methode, mit dem Unterschied, dass die im Feld *Versatz nachverfolgen* festgelegten Meilensteine Prozentwerte statt fester Punkte im Video sind.
 
 >[!NOTE]
 >
->Das Feld Tracking Offset akzeptiert nur eine kommagetrennte Liste mit Ganzzahlen zwischen 1 und 100.
+>Das Feld „Versatz nachverfolgen“ akzeptiert nur eine kommagetrennte Liste mit Ganzzahlen zwischen 1 und 100.
 
-1. Legen Sie den Versatz &quot;Verfolgen&quot;fest.
+1. Legen Sie die Tracking-Versatzwerte fest.
 
-   * z. B. 10,50,75,100
+   * Zum Beispiel 10, 50, 75, 100
 
    Die Informationen, die an Adobe Analytics gesendet werden, sind nur begrenzt anpassbar. Für die Zuordnung stehen nur drei Variablen zur Verfügung:
 
@@ -299,11 +299,11 @@ Diese Methode ähnelt der Milestones-Methode mit dem Unterschied, dass die in de
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
-   <td>Variablen, die diesem zugeordnet sind, enthalten den Namen der Datei. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
+   <td>Variablen, die dieser Eigenschaft zugeordnet sind, enthalten den Namen der Datei. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
   </tr>
   <tr>
    <td>eventdata.videoFilePath </td>
-   <td>Die dieser Variablen zugeordnete Variable enthält den Pfad der Datei auf dem Server. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
+   <td>Hier zugeordnete Variablen enthalten den Dateipfad auf dem Server. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
   </tr>
  </tbody>
 </table>
@@ -332,15 +332,15 @@ Diese Methode ähnelt der Milestones-Methode mit dem Unterschied, dass die in de
 
    * *Start Timestamp*: Zeitstempel, der angibt, wann die Videowiedergabe gestartet ist (*1331035567*)
 
-   * *Play Session*: die Details der Wiedergabesitzung. Dieses Feld gibt an, wie Benutzende mit dem Video interagiert haben. Dazu gehören Daten wie: wo haben sie die Wiedergabe des Videos gestartet, haben sie mit dem Videoregler das Video vorgespult, wo haben sie die Wiedergabe angehalten (*L10E24S58L58 – Video wurde bei Sekunde 25 von Abschnitt L10, dann übersprungen auf Sek. 48*)
+   * *Play Session*: die Details der Wiedergabesitzung. Dieses Feld gibt an, wie Benutzende mit dem Video interagiert haben. Dazu gehören Daten wie: wo haben sie die Wiedergabe des Videos gestartet, haben sie mit dem Videoregler das Video vorgespult, wo haben sie die Wiedergabe angehalten (*L10E24S58L58 – Video wurde bei Sekunde 25 von Abschnitt L10 angehalten, dann wurde zu Sekunde 48* gesprungen)
 
-## Ältere Sekunden {#legacy-seconds}
+## Legacy Seconds {#legacy-seconds}
 
 Bei Nutzung der **Legacy Seconds**-Methode werden Adobe Analytics-Aufrufe alle N Sekunden ausgelöst, wobei N im Feld „Versatz nachverfolgen“ festgelegt ist.
 
 1. Legen Sie den Tracking-Versatz auf eine beliebige Anzahl an Sekunden fest.
 
-   * Beispiel: 6
+   * Zum Beispiel 6
 
    >[!NOTE]
    >
@@ -356,11 +356,11 @@ Bei Nutzung der **Legacy Seconds**-Methode werden Adobe Analytics-Aufrufe alle N
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
-   <td>Die dieser Variablen zugeordnete Variable enthält den Namen der Datei. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
+   <td>Die dieser Eigenschaft zugeordnete Variable enthält den Namen der Datei. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
   </tr>
   <tr>
    <td>eventdata.videoFilePath </td>
-   <td>Die dieser Variablen zugeordnete Variable enthält den Pfad der Datei auf dem Server. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
+   <td>Hier zugeordnete Variablen enthalten den Dateipfad auf dem Server. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
   </tr>
  </tbody>
 </table>
@@ -369,15 +369,15 @@ Bei Nutzung der **Legacy Seconds**-Methode werden Adobe Analytics-Aufrufe alle N
 >
 >Um den **Anzeigename** eines Videos festzulegen, öffnen Sie das Video zur Bearbeitung im DAM-System und geben Sie im Metadatenfeld **Titel** den gewünschten Namen ein. Wenn Sie fertig sind, müssen Sie die Änderungen speichern.
 
-1. Ordnen Sie diese Variablen prop1, prop2 und prop3 zu
+1. Ordnen Sie diese Variablen zu prop1, prop2 und prop3 zu.
 
-   Die **der übrigen einschlägigen Informationen** im Aufruf wird zusammen mit **one** Variable namens **pev3**.
+   Die **übrigen relevanten Informationen** des Aufrufs werden zusammenhängend in **einer** Variablen namens **pev3** gesendet.
 
    Aufrufe an Adobe Analytics mit dem gezeigten Beispiel sollten wie folgt aussehen, wenn Sie sie mit DigitalPulse Debugger anzeigen:
 
    ![lseconds](assets/lseconds.png)
 
-   *Der Aufruf ähnelt dem obigen Legacy Milestones-Aufruf. Siehe Informationen zu pev3 .**[sofern vorhanden](/help/sites-administering/adobeanalytics.md)**.*
+   *Der Aufruf ähnelt dem o. g. Legacy Milestones-Aufruf.  Informationen zu pev3 **[finden Sie hier](/help/sites-administering/adobeanalytics.md)**.*
 
 **In diesem Tutorial verwendete Referenzen:**
 

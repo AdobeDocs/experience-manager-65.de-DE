@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '592'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -24,15 +24,15 @@ Die Unterstützung der relativen Datenbankpersistenz in AEM wird mithilfe des Do
 
 Er umfasst eine Java-API, die auf der Mongo-Java-API basiert. Eine BlobStore-API wird ebenfalls implementiert. Standardmäßig werden Blobs in der Datenbank gespeichert.
 
-Weitere Informationen zu den Implementierungsdetails finden Sie unter [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) und [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) Dokumentation.
+Weitere Informationen zu den Implementierungsdetails finden Sie in der Dokumentation unter [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) und [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html).
 
 >[!NOTE]
 >
->Unterstützung für **PostgreSQL 9.4** wird ebenfalls bereitgestellt, jedoch nur zu Demozwecken. Sie ist nicht für Produktionsumgebungen verfügbar.
+>Unterstützung für **PostgreSQL 9.4** wird ebenfalls bereitgestellt, jedoch nur zu Demozwecken. Es ist nicht für Produktionsumgebungen verfügbar.
 
 ## Unterstützte Datenbanken {#supported-databases}
 
-Weitere Informationen zur Unterstützung der Relationalen Datenbank in AEM finden Sie im Abschnitt [Seite &quot;Technische Anforderungen&quot;](/help/sites-deploying/technical-requirements.md).
+Weitere Informationen zum Grad der Unterstützung relationaler Datenbanken in AEM finden Sie auf der [Seite mit den technischen Anforderungen](/help/sites-deploying/technical-requirements.md). 
 
 ## Konfigurationsschritte {#configuration-steps}
 
@@ -40,7 +40,7 @@ Das Repository wird durch Konfigurieren des OSGi-Dienstes `DocumentNodeStoreServ
 
 Um diese nutzen zu können, muss eine Datenquelle mithilfe von AEM konfiguriert werden. Dies geschieht über die Datei `org.apache.sling.datasource.DataSourceFactory.config`. Die JDBC-Treiber für die jeweilige Datenbank müssen separat als OSGi-Bundles in der lokalen Konfiguration bereitgestellt werden.
 
-Anweisungen zum Erstellen von OSGi-Bundles für JDBC-Treiber finden Sie in diesem [Dokumentation](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) auf der Apache Sling-Website.
+Anweisungen zum Erstellen von OSGi-Bundles für JDBC-Treiber finden Sie in dieser [Dokumentation](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) auf der Apache Sling-Website.
 
 Sobald die Bundles eingerichtet sind, führen Sie die folgenden Schritte aus, um AEM mit RDB-Persistenz zu konfigurieren:
 
@@ -95,7 +95,7 @@ Folgende Konfigurationsoptionen sind verfügbar:
 
 ### URL-Zeichenfolgenformate {#url-string-formats}
 
-Je nach dem zu verwendenden Datenbanktyp wird ein unterschiedliches URL-Zeichenfolgenformat in der Datenquellenkonfiguration verwendet. Nachstehend finden Sie eine Liste der Formate für die Datenbanken, die derzeit AEM unterstützt:
+Je nach dem zu verwendenden Datenbanktyp wird ein unterschiedliches URL-Zeichenfolgenformat in der Datenquellenkonfiguration verwendet. Nachstehend finden Sie eine Liste der Formate für die Datenbanken, die AEM derzeit unterstützt:
 
 * `jdbc:postgresql:databasename` für PostgreSQL;
 * `jdbc:db2://localhost:port/databasename` für DB2;
@@ -105,6 +105,6 @@ Je nach dem zu verwendenden Datenbanktyp wird ein unterschiedliches URL-Zeichenf
 
 ## Bekannte Einschränkungen {#known-limitations}
 
-Die gleichzeitige Verwendung mehrerer AEM Instanzen mit einer einzigen Datenbank wird zwar durch die RDBMS-Persistenz unterstützt, gleichzeitige Installationen jedoch nicht.
+Die gleichzeitige Verwendung mehrerer AEM-Instanzen mit einer einzigen Datenbank wird von der RDBMS-Persistenz zwar unterstützt, gleichzeitige Installationen jedoch nicht.
 
 Um dieses Problem zu umgehen, führen Sie zuerst die Installation mit nur einer Instanz aus und fügen Sie dann nach Abschluss derselben weitere hinzu.

@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '470'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -27,17 +27,17 @@ Eine vollständige Liste der unterstützten Dateiformate finden Sie unter [Von A
 
 Zur Leistungsoptimierung empfiehlt Adobe die Verwendung der [!DNL Adobe Camera Raw]-Bibliothek für RAW- und DNG-Dateien.
 
-Die [!DNL Adobe Camera Raw]-Bibliothek unterstützt das CMYK-Farbprofil als Eingabe. Es erzeugt jedoch die Ausgabe im RGB-Farbraum und unterstützt nur die Ausgabe im JPEG-Format. Der Farbraum der Quelldatei (z. B. CMYK) wird nicht in den Miniaturansichten beibehalten.
+Die [!DNL Adobe Camera Raw]-Bibliothek unterstützt das CMYK-Farbprofil als Eingabe. Allerdings generiert es die Ausgabe im RGB-Farbraum und unterstützt nur die Ausgabe im JPEG-Format. Der Farbraum der Quelldatei (z. B. CMYK) wird in den Miniaturansichten nicht beibehalten.
 
 Weitere Informationen finden Sie unter [Camera Raw-Unterstützung](/help/assets/camera-raw.md).
 
 ## Adobe PDF Rasterizer-Bibliothek {#adobe-pdf-rasterizer-library}
 
-Für optimale Ergebnisse empfiehlt Adobe die Verwendung der Adobe PDF Rasterizer-Bibliothek für die folgenden Dateien:
+Damit Sie optimale Ergebnisse erzielen, empfiehlt Adobe die Verwendung der Adobe PDF Rasterizer-Bibliothek für die folgenden Dateien:
 
-* Hohe, inhaltsintensive PDF-Dateien
-* AI-Dateien mit nicht standardmäßig generierten Miniaturansichten
-* Für AI-Dateien mit SPOT-Farben (PMS)
+* Umfangreiche, inhaltsintensive PDF-Dateien
+* KI-Dateien mit Miniaturansichten werden nicht standardmäßig generiert
+* Für KI-Dateien mit SPOT-Farben (PMS)
 
 Die Miniaturbilder und Vorschauen, die mit PDF-Rasterizer generiert werden, haben eine bessere Qualität als die standardmäßige Rasterausgabe. Die Adobe PDF Rasterizer-Bibliothek unterstützt keine Farbraumkonvertierung. Ungeachtet des Farbraums der Quell-PDF-Datei generiert Adobe PDF Rasterizer nur eine RGB-Ausgabe.
 
@@ -53,16 +53,16 @@ Derzeit unterstützt [!DNL Dynamic Media] Videos mit bis zu 15 GB Inhalt pro Da
 
 ## ImageMagick-Bibliothek {#imagemagick-library}
 
-Adobe empfiehlt die Verwendung der ImageMagick-Bibliothek in den folgenden Szenarien:
+Adobe empfiehlt, die ImageMagick-Bibliothek für folgende Zwecke zu verwenden:
 
-* So generieren Sie Miniaturansichten für EPS-Dateien.
+* Zum Generieren von Miniatur-Ausgabedarstellungen für EPS-Dateien.
 * Beibehaltung von Bildprofilinformationen.
 * Beibehaltung von Transparenz.
 * Verarbeitung von PSD- und PSB-Dateien.
 
 Informationen dazu, wie die [!DNL ImageMagick]-Bibliothek in [!DNL Experience Manager] eingerichtet wird, finden Sie unter [Verwenden von ImageMagick](/help/assets/media-handlers.md#an-example-using-imagemagick). Informationen zur optimalen Verwendung finden Sie unter [Best Practices für die Konfiguration von ImageMagick](/help/assets/best-practices-for-imagemagick.md).
 
-## Bildtranskodierungsbibliothek {#image-transcoding-library}
+## Image Transcoding Library {#image-transcoding-library}
 
 Bei der Adobe Imaging Transcoding Library handelt es sich um eine Lösung zur Bildverarbeitung, die essenzielle Bildfunktionen übernimmt, darunter Bildkodierung, -transkodierung, Größenanpassung usw.
 

@@ -1,6 +1,6 @@
 ---
 title: Ausführen von AEM Forms im Wartungsmodus
-description: Der Wartungsmodus ist nützlich, wenn Aufgaben wie das Patchen eines DSC, das Aktualisieren AEM Formulare oder das Anwenden eines Service Packs ausgeführt werden. Erfahren Sie mehr über das Ausführen AEM Formulare im Wartungsmodus.
+description: Der Wartungsmodus bietet sich beim Ausführen von Aufgaben wie dem Hinzufügen von Patches zu DSC, dem Aktualisieren von AEM Forms oder dem Anwenden eines Service Packs an. Erfahren Sie mehr über die Ausführung von AEM Forms im Wartungsmodus.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
@@ -10,38 +10,38 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '256'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
 # Ausführen von AEM Forms im Wartungsmodus {#running-aem-forms-in-maintenance-mode}
 
-Der Wartungsmodus ist nützlich, wenn Aufgaben wie das Patchen eines DSC, das Aktualisieren AEM Formulare oder das Anwenden eines Service Packs ausgeführt werden.
+Der Wartungsmodus bietet sich beim Ausführen von Aufgaben wie dem Hinzufügen von Patches zu DSC, dem Aktualisieren von AEM Forms oder dem Anwenden eines Service Packs an.
 
-Vermeiden Sie das Aufrufen von Prozessen, während sich der Server im Wartungsmodus befindet. Dies geschieht, wenn ein Prozess aufgerufen wird, während sich der Server im Wartungsmodus befindet:
+Vermeiden Sie das Aufrufen von Prozessen, während sich der Server im Wartungsmodus befindet. Folgendes erfolgt, wenn ein Prozess aufgerufen wird, während sich der Server im Wartungsmodus befindet:
 
-* Wenn der Prozess langlebig ist, wird er der Auftragsdatenbank hinzugefügt, aber nicht gestartet. Wenn Sie den Wartungsmodus beenden, verarbeitet AEM Forms die Aufträge mit langer Lebensdauer in der Warteschlange, auch wenn der Server im Wartungsmodus neu gestartet wurde.
+* Wenn der Prozess langlebig ist, wird er der Auftragsdatenbank hinzugefügt, aber nicht gestartet. Wenn Sie den Wartungsmodus beenden, verarbeitet AEM Forms die langlebigen Aufträge in der Warteschlange, auch wenn der Server im Wartungsmodus neu gestartet wurde.
 * Wenn der Prozess kurzlebig ist, wird er sofort verarbeitet.
 
-**AEM in den Wartungsmodus versetzen**
+**AEM Forms in den Wartungsmodus versetzen**
 
 1. Geben Sie in einem Webbrowser Folgendes ein:
 
    `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=[administrator username]&password=[password]`
 
-   Im Browserfenster wird die Meldung &quot;Jetzt angehalten&quot; angezeigt.
+   Die Meldung „Jetzt angehalten“ wird im Browser-Fenster angezeigt.
 
    >[!NOTE]
    >
-   >Wenn Sie den Server herunterfahren, während er sich im Wartungsmodus befindet, befindet er sich beim Neustart noch im Wartungsmodus. Deaktivieren Sie den Wartungsmodus, wenn Sie Ihre Wartungsaufgaben abgeschlossen haben.
+   >Wenn Sie den Server herunterfahren, während er sich im Wartungsmodus befindet, befindet er sich beim Neustart weiterhin im Wartungsmodus. Deaktivieren Sie den Wartungsmodus, wenn Sie Ihre Wartungsaufgaben abgeschlossen haben.
 
-**Überprüfen, ob AEM Formulare im Wartungsmodus ausgeführt werden**
+**Überprüfen, ob AEM Forms im Wartungsmodus ausgeführt wird**
 
 1. Geben Sie in einem Webbrowser Folgendes ein:
 
    `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=[administrator username]&password=[password]`
 
-   Der Status wird im Browserfenster angezeigt. Der Status &quot;true&quot;zeigt an, dass der Server im Wartungsmodus ausgeführt wird, und &quot;false&quot;zeigt an, dass sich der Server nicht im Wartungsmodus befindet.
+   Der Status wird im Browser-Fenster angezeigt. Der Status „true“ zeigt an, dass der Server im Wartungsmodus ausgeführt wird, und „false“ zeigt an, dass sich der Server nicht im Wartungsmodus befindet.
 
 **Wartungsmodus deaktivieren**
 

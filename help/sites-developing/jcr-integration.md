@@ -1,6 +1,6 @@
 ---
 title: JCR-Integration
-description: Hier finden Sie Tipps zur Integration mit Adobe Experience Manager auf JCR-Ebene.
+description: Hier finden Sie Tipps zur Integration in Adobe Experience Manager auf JCR-Ebene.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,21 +10,21 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
 # JCR-Integration{#jcr-integration}
 
-## Sling Resource API der JCR-API vorziehen {#prefer-the-sling-resource-api-to-jcr-api}
+## Ziehen Sie die Sling-Ressourcen-API der JCR-API vor {#prefer-the-sling-resource-api-to-jcr-api}
 
-Die Sling-API arbeitet auf einem höheren, abstrakteren Niveau als die JCR-API. Dadurch kann Ihr Code wiederverwendbar und unabhängig vom zugrunde liegenden Speicher sein. Dies erleichtert bei Bedarf die Einbeziehung externer virtueller Daten über den ResourceProvider-Mechanismus.
+Die Sling-API arbeitet auf einem höheren, abstrakteren Niveau als die JCR-API. Dadurch kann Ihr Code wiederverwendbar und unabhängig vom zugrunde liegenden Speicher sein. Dies erleichtert ggf. das Einbinden externer virtueller Daten über den ResourceProvider-Mechanismus.
 
-## Vermeiden Sie nach Möglichkeit Abfragen {#avoid-queries-wherever-possible}
+## Vermeiden Sie Abfragen, wo immer es möglich ist {#avoid-queries-wherever-possible}
 
-Es ist immer schneller, das Repository zu durchsuchen, um Daten abzurufen, als eine Abfrage auszuführen. Es gibt Fälle, in denen Abfragen erforderlich sind, z. B. eine Endbenutzerabfrage oder die Suche nach strukturiertem Inhalt aus dem gesamten Repository, aber in allen anderen Fällen wird es bevorzugt, zu den erforderlichen Knoten zu navigieren. In der Render-Logik, z. B. in Navigationskomponenten, einer „Liste der letzten Elemente“, Anzahl von Elementen usw., sollten Abfragen grundsätzlich vermieden werden. In diesen Fällen ist es besser, die Hierarchie zu durchlaufen oder das Ergebnis vorab zwischenzuspeichern, damit es beim Rendern direkt verwendet werden kann.
+Es ist immer schneller, das Repository zu durchsuchen, um Daten abzurufen, als eine Abfrage auszuführen. Es gibt Fälle, in denen Abfragen erforderlich sind, z. B. eine Endbenutzerabfrage oder die Suche nach strukturiertem Inhalt aus dem gesamten Repository, aber in allen anderen Fällen wird es bevorzugt, zu den erforderlichen Knoten zu navigieren. In der Render-Logik, z. B. in Navigationskomponenten, einer „Liste der letzten Elemente“, Anzahl von Elementen usw., sollten Abfragen grundsätzlich vermieden werden. In diesen Fällen ist es besser, durch die Hierarchie zu gehen oder das Ergebnis vorab zwischenzuspeichern, damit es direkt beim Rendern verwendet werden kann.
 
-## Den Umfang der JCR-Beobachtung einschränken {#restrict-the-scope-of-jcr-observation}
+## Schränken Sie den Umfang der JCR-Beobachtung ein {#restrict-the-scope-of-jcr-observation}
 
 Beim Lauschen auf Ereignisse im Repository ist es wichtig, den Umfang so weit wie möglich einzuschränken. Zum Beispiel ist es viel besser, `/etc/mycompany` auf ein Ereignis zu überwachen als `/etc`. Lauschen Sie niemals auf Ereignisse am Repository-Stamm. Stellen Sie außerdem sicher, dass die Callback-Methoden so schnell wie möglich ausgeführt werden, wenn für sie nichts zu tun ist.
 

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1306'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ Verwenden Sie dann den obigen Index-Dump, um den Speicher aufzufüllen:
 java -jar oak-run.jar tika --data-file text-extraction/oak-binary-stats.csv --store-path text-extraction/store --index-dir ./indexing-result/index-dumps/<oak-index-name>/data populate
 ```
 
-Wo `oak-index-name` ist der Name des Volltextindex, z. B. &quot;lucene&quot;.
+Wobei `oak-index-name` der Name des Volltextindex ist, z. B. „lucene“.
 
 **3. Ausführen des Textextraktionsvorgangs mit der Tika-Bibliothek für die im obigen Schritt ausgelassenen Binärdateien**
 
@@ -102,7 +102,7 @@ Weitere Einzelheiten über den Textextraktionsprozess finden Sie in der [Dokumen
 
 Erstellen Sie den Lucene-Index vor dem Upgrade offline. Bei der Verwendung von MongoMK wird empfohlen, es direkt auf einem der MongoMk-Knoten laufen zu lassen, da dies einen zu großen Netzwerk-Overhead vermeidet.
 
-Gehen Sie wie folgt vor, um den Index offline zu erstellen:
+Um den Index offline zu erstellen, führen Sie die folgenden Schritte aus:
 
 **1. Generieren von Oak Lucene-Indexdefinitionen für die AEM-Zielversion**
 
@@ -161,7 +161,7 @@ merge-index-definitions_target: JSON file having merged definitions for the targ
 
 Die Verwendung des `--doc-traversal-mode`-Parameters ist bei MongoMK-Installationen praktisch, da er die Neuindizierung erheblich beschleunigt, indem er Repository-Inhalte in eine lokale flache Datei spoolt. Allerdings wird dafür zusätzlicher Speicherplatz benötigt, der doppelt so groß ist wie das Repository.
 
-Wenn MongoMK vorhanden ist, kann dieser Prozess beschleunigt werden, wenn dieser Schritt in einer Instanz ausgeführt wird, die näher an der MongoDB-Instanz liegt. Wenn er auf demselben Computer ausgeführt wird, kann ein zu großer Netzwerk-Overhead vermieden werden.
+Im Falle von MongoMK kann dieser Prozess beschleunigt werden, wenn dieser Schritt in einer Instanz ausgeführt wird, die näher an der MongoDB-Instanz liegt. Wenn er auf demselben Computer ausgeführt wird, kann ein zu großer Netzwerk-Overhead vermieden werden.
 
 Weitere technische Details finden Sie in der [Oak-run-Dokumentation zur Indizierung](Https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html).
 

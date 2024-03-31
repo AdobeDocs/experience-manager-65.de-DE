@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Integrieren mit Adobe Experience Cloud{#integrating-with-the-adobe-marketing-cloud}
 
-[Adobe Experience Cloud](https://business.adobe.com/de/products/marketing-cloud/main.html) enthält leistungsstarke Produkte zur Web-Analyse und Website-Optimierung, die umsetzbare Echtzeitdaten und Einblicke liefern, um erfolgreiche Online-Initiativen zu fördern. Es bietet eine integrierte und offene Plattform für die Optimierung Ihres Online-Business. Die Cloud besteht aus integrierten Anwendungen, mit denen Kundeneinblicke gesammelt und freigesetzt werden können, um die Akquise, Konvertierung und Bindung von Kunden sowie die Erstellung und Verteilung von Inhalten zu optimieren.
+[Adobe Experience Cloud](https://business.adobe.com/de/products/marketing-cloud/main.html) enthält leistungsstarke Produkte zur Web-Analyse und Website-Optimierung, die umsetzbare Echtzeitdaten und Einblicke liefern, um erfolgreiche Online-Initiativen zu fördern. Es bietet eine integrierte und offene Plattform für die Optimierung Ihres Online-Business. Die Cloud besteht aus integrierten Anwendungen, mit denen Kundeneinblicke gesammelt und nutzbar gemacht werden können, um die Akquise, Konversion und Bindung von Kundinnen und Kunden sowie die Erstellung und Verteilung von Inhalten zu optimieren.
 
 Mit Adobe Experience Manager (AEM) können Sie die nahtlose Integration mit folgenden Produkten von Adobe Experience Cloud durchführen:
 
@@ -38,7 +38,7 @@ Sie können Adobe Analytics verwenden, um Daten aus Ihren Sites zu analysieren.
 Durch die Integration mit Adobe Analytics haben Sie folgende Möglichkeiten:
 
 * Aktivieren von Analytics-Benutzer-Tracking
-* Ordnen Sie Ihre Ausführungsmodi (z. B. Autor, Veröffentlichung) verschiedenen Report Suites zu.
+* Zuweisen von Ausführungsmodi (z. B. Autor, Veröffentlichen) zu unterschiedlichen Report Suites
 * Übermitteln von Client-Kontextvariablen als Konversionsvariablen oder Traffic-Eigenschaften
 * Verwenden von vordefinierten Variablenzuweisungen
 * Konfigurieren von gesamten Site-Bereichen auf einmal

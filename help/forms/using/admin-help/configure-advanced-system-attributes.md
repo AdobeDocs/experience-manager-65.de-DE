@@ -1,6 +1,6 @@
 ---
 title: Erweiterte Systemattribute konfigurieren
-description: Auf der Seite "Erweiterte Systemattribute konfigurieren"können Sie bestimmte Einstellungen in der Konfigurationsdatei ändern, ohne die Datei exportieren, bearbeiten und importieren zu müssen.
+description: Sie können auf der Seite „Erweiterte Systemattribute konfigurieren“ bestimmte Einstellungen in der Konfigurationsdatei ändern, ohne die Datei exportieren, bearbeiten und importieren zu müssen.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '480'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # Erweiterte Systemattribute konfigurieren {#configure-advanced-system-attributes}
 
-Auf der Seite &quot;Erweiterte Systemattribute konfigurieren&quot;können Sie bestimmte Einstellungen in der Konfigurationsdatei ändern, ohne die Datei exportieren, bearbeiten und importieren zu müssen. (Siehe [Konfigurationsdatei importieren und exportieren](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).
+Sie können auf der Seite „Erweiterte Systemattribute konfigurieren“ bestimmte Einstellungen in der Konfigurationsdatei ändern, ohne die Datei exportieren, bearbeiten und importieren zu müssen. (Siehe [Importieren und Exportieren der Konfigurationsdatei](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
 1. Klicken Sie in der Administration-Console auf **[!UICONTROL „Einstellungen“ > „User Management“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“]**.
 1. (Optional) Ändern Sie folgende Sitzungsattribute:

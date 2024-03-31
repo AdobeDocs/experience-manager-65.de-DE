@@ -1,6 +1,6 @@
 ---
 title: Migration zur Touch-optimierten Benutzeroberfläche
-description: Erfahren Sie mehr über die Migration von Adobe Experience Manager auf die Touch-Benutzeroberfläche und darüber, wie sie sich auf Sie auswirkt.
+description: Erfahren Sie mehr über die Migration von Adobe Experience Manager zur Touch-optimierten Benutzeroberfläche und darüber, wie sich dies auf Sie auswirkt.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -11,15 +11,15 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '629'
-ht-degree: 70%
+ht-degree: 95%
 
 ---
 
 # Migration zur Touch-optimierten Benutzeroberfläche{#migration-to-the-touch-ui}
 
-Mit der Version 6.0 führte Adobe Experience Manager (AEM) eine neue Benutzeroberfläche ein, die als *Touch-optimierte Benutzeroberfläche* (auch einfach *Touch-Benutzeroberfläche* genannt) bezeichnet wird. Sie ist an die Adobe Experience Cloud und die allgemeinen Richtlinien für die Adobe-Benutzeroberfläche angepasst. Dies ist inzwischen die Standard-Benutzeroberfläche in AEM. Die veraltete, Desktop-orientierte Benutzeroberfläche wird *klassische Benutzeroberfläche* genannt.
+Mit der Version 6.0 führte Adobe Experience Manager (AEM) eine neue Benutzeroberfläche ein, die als *Touch-optimierte Benutzeroberfläche* (auch einfach *Touch-Benutzeroberfläche* genannt) bezeichnet wird. Sie ist an Adobe Experience Cloud und die allgemeinen Richtlinien für die Benutzeroberflächen von Adobe angepasst. Dies ist inzwischen die Standard-Benutzeroberfläche in AEM. Die veraltete, Desktop-orientierte Benutzeroberfläche wird *klassische Benutzeroberfläche* genannt.
 
-Wenn Sie AEM mit der klassischen Benutzeroberfläche verwendet haben, sollten Sie Maßnahmen ergreifen, um Ihre Instanz zu migrieren. Diese Seite soll als Sprungbrett dienen, indem Links zu einzelnen Ressourcen bereitgestellt werden.
+Wenn Sie AEM mit der klassischen Benutzeroberfläche verwendet haben, ergreifen Sie Maßnahmen, um Ihre Instanz zu migrieren. Diese Seite soll als Sprungbrett dienen, indem Links zu einzelnen Ressourcen bereitgestellt werden.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ Wenn Sie AEM mit der klassischen Benutzeroberfläche verwendet haben, sollten Si
 
 ## Grundlagen {#the-basics}
 
-Beachten Sie bei der Migration die folgenden wichtigen Unterschiede zwischen der klassischen und der Touch-Benutzeroberfläche:
+Beachten Sie bei der Migration die folgenden wichtigen Unterschiede zwischen der klassischen und der Touch-optimierten Benutzeroberfläche:
 
 <table>
  <tbody>
@@ -104,7 +104,7 @@ Bevor Sie beginnen, überprüfen Sie den Status und die zugehörigen Empfehlunge
 * [Status der Funktionen der Touch-optimierten Benutzeroberfläche](/help/release-notes/touch-ui-features-status.md)
 * [Empfehlungen für Kunden zur Benutzeroberfläche](/help/sites-deploying/ui-recommendations.md)
 
-Die Grundlagen der Entwicklung der Touch-Benutzeroberfläche bieten eine solide Grundlage:
+Die Grundlagen der Entwicklung der Touch-optimierten Benutzeroberfläche bieten ein solides Fundament:
 
 * [Konzepte der Touch-optimierten Benutzeroberfläche von AEM](/help/sites-developing/touch-ui-concepts.md)
 * [Struktur der Touch-optimierten Benutzeroberfläche von AEM](/help/sites-developing/touch-ui-structure.md)
@@ -117,7 +117,7 @@ Dialoge sind bei der Migration Ihrer Komponenten ein wichtiger Faktor:
 * [Migration von einer klassischen Komponente](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
 * [AEM Modernisierungs-Tools](/help/sites-developing/modernization-tools.md): helfen Ihnen, die Dialoge Ihrer klassischen Benutzeroberflächenkomponenten in die Touch-optimierte Benutzeroberfläche umzuwandeln
 
-   * In der Touch-Benutzeroberfläche gibt es eine Kompatibilitätsebene, um ein Dialogfeld der klassischen Benutzeroberfläche in einem &quot;Touch-UI-Wrapper&quot;zu öffnen. Dies hat jedoch eingeschränkte Funktionalität und wird langfristig nicht empfohlen.
+   * In der Touch-optimierten Benutzeroberfläche gibt es eine Kompatibilitätsebene, um ein Dialogfeld der klassischen Benutzeroberfläche in einem „Touch-UI-Wrapper“ zu öffnen. Dies ist jedoch mit einer eingeschränkten Funktionalität verbunden und wird für eine langfristige Nutzung nicht empfohlen.
 
 * [Anpassen von Dialogfeldern in der Touch-optimierten Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Erstellen einer neuen Feld-Komponente in der Granite-Benutzeroberfläche](/help/sites-developing/granite-ui-component.md)
@@ -125,7 +125,7 @@ Dialoge sind bei der Migration Ihrer Komponenten ein wichtiger Faktor:
 
 ## Migrieren von Konsolen {#migrating-consoles}
 
-Sie können die Konsolen auch anpassen:
+Sie können auch die Konsolen anpassen:
 
 * [Anpassen der Konsolen](/help/sites-developing/customizing-consoles-touch.md) (für die Touch-optimierte Benutzeroberfläche)
 
@@ -154,4 +154,4 @@ Umfassende Informationen zur Entwicklung von AEM finden Sie in der Sammlung von 
 
 >[!CAUTION]
 >
->AEM Modernisierungs-Tools sind ein Community-Projekt und werden vom Adobe nicht unterstützt oder garantiert.
+>Die AEM-Modernisierung-Tools werden von der Community zusammengestellt, Adobe bietet keinerlei Unterstützung oder Garantie dafür.

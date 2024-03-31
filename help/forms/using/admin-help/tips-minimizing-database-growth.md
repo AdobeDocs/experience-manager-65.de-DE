@@ -1,6 +1,6 @@
 ---
 title: Tipps zum Minimieren des Datenbankwachstums
-description: Prozesse mit langer Lebensdauer speichern Prozessdaten in der AEM Formulardatenbank. Das Wachstum der AEM Forms-Datenbank kann mithilfe einiger einfacher Prozessdesign- und Produktkonfigurationsstrategien minimiert werden.
+description: Langlebige Prozesse speichern Prozessdaten in der AEM Forms-Datenbank. Das Wachstum der AEM Forms-Datenbank kann mithilfe weniger einfacher Prozessentwurfs- und Produktkonfigurationsstrategien minimiert werden.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
@@ -10,26 +10,26 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '408'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 # Tipps zum Minimieren des Datenbankwachstums {#tips-for-minimizing-database-growth}
 
-Prozesse mit langer Lebensdauer speichern Prozessdaten in der AEM Formulardatenbank. Das Wachstum der AEM Forms-Datenbank kann mithilfe einiger einfacher Prozessdesign- und Produktkonfigurationsstrategien minimiert werden.
+Langlebige Prozesse speichern Prozessdaten in der AEM Forms-Datenbank. Das Wachstum der AEM Forms-Datenbank kann mithilfe weniger einfacher Prozessentwurfs- und Produktkonfigurationsstrategien minimiert werden. 
 
-## Tipps zur Prozessgestaltung {#process-design-tips}
+## Tipps zum Prozessentwurf {#process-design-tips}
 
-Verwenden Sie nach Möglichkeit kurzlebige Prozesse. In kurzlebigen Prozessen werden keine Prozessdaten in der Datenbank gespeichert. Der Nachteil bei der Verwendung von kurzlebigen Prozessen besteht darin, dass ihr Status und ihr Status nicht in Administration Console verfolgt werden und es keinen Verlauf des Prozesses gibt.
+Verwenden Sie kurzlebige Prozesse, wann immer dies möglich ist. Kurzlebige Prozesse speichern keine Prozessdaten in der Datenbank. Der Nachteil beim Verwenden von kurzlebigen Prozessen besteht darin, dass ihr Status und Zustand nicht in der Administrationskonsole nachvollzogen werden und es keine Historie des Prozesses gibt.
 
-Einige Dienstvorgänge wie der Vorgang &quot;Assign Task&quot;(User-Dienst) erfordern, dass sie in langlebigen Prozessen verwendet werden. In diesem Fall können Sie den Prozess in mehrere Teilprozesse unterteilen und nach Möglichkeit kurzlebig gestalten. Wenn Sie diese Strategie verwenden, sollten kurzlebige Teilprozesse große Datenelemente wie Dokumentwerte verarbeiten.
+Einige Dienstvorgänge, z. B. der Vorgang „Aufgabe zuweisen“ (User-Dienst), müssen in langlebigen Prozessen verwendet werden. In diesem Fall können Sie den Prozess in mehrere Unterprozesse aufteilen und daraus kurzlebige Prozesse machen, wo dies möglich ist. Wenn Sie diese Strategie verwenden, sollten kurzlebige Prozesse große Datenelemente, z. B. Dokumentwerte, verarbeiten können.
 
-Verwenden Sie Variablen sparsam. Bei der Verwendung langlebiger Prozesse wird für jede Prozessinstanz der Datenbank für jede Variable im Prozess Speicherplatz zugewiesen. Die strategische Nutzung von Variablen kann viel Platz sparen. Sie können beispielsweise Variablenwerte überschreiben, wenn alte Werte im Prozess nicht mehr benötigt werden. Löschen Sie alle Variablen, die Sie erstellt haben und nicht verwenden. Sie können den Prozess validieren, um nicht verwendete Variablen zu finden.
+Verwenden Sie Variablen nur sparsam.  Wenn Sie langlebige Prozesse verwenden, wird bei jeder Prozessinstanz für jede Variable im Prozess Speicherplatz in der Datenbank zugewiesen. Wenn Sie Variablen strategisch verwenden, können Sie hier viel Speicherplatz sparen. Sie können beispielsweise Variablenwerte überschreiben, wenn alte Werte nicht mehr in dem Prozess benötigt werden. Und Sie können alle von Ihnen erstellten Variablen, die Sie nicht mehr verwenden, löschen. Sie können den Prozess überprüfen, um nicht verwendete Variablen zu suchen.
 
-Verwenden Sie einfache Variablentypen (z. B. Zeichenfolge oder int) und vermeiden Sie die Verwendung komplexer Variablentypen, wann immer möglich. Datenbankspeicherplatz wird Variablen zugewiesen, selbst wenn sie keinen Wert enthalten. Komplexe Variablen benötigen in der Regel mehr Platz als einfache.
+Verwenden Sie einfache Variablentypen (z. B. String oder Int) und vermeiden Sie es, wo immer möglich, komplexe Variablentypen zu verwenden. Speicherplatz in der Datenbank wird Variablen auch dann zugewiesen, wenn diese keinen Wert enthalten. Komplexe Variablen erfordern in der Regel mehr Speicherplatz als einfache Variablen.
 
 ## Tipps zur Produktverwaltung {#product-administration-tips}
 
-Verwenden Sie den globalen Dokumentenspeicher (GDS) effektiv. Der Ordner des globalen Dokumentenspeichers auf dem Forms-Server wird unter anderem zum Speichern von Dateien verwendet, die an Dienste übergeben werden, die Teil AEM Formulare in Prozessen sind. Zur Leistungsverbesserung werden kleinere Dokumente stattdessen im Arbeitsspeicher gespeichert und in der Datenbank beibehalten.
+Verwenden Sie den globalen Dokumentenspeicher (GDS) effizient.  Das GDS-Verzeichnis auf dem Formular-Server wird unter anderem zum Speichern von Dateien verwendet, die an Dienste übergeben werden, die Teil von AEM Forms in Prozessen sind. Zum Verbessern der Leistung werden kleinere Dokumente stattdessen im Arbeitsspeicher gespeichert und bleiben in der Datenbank erhalten.
 
-Administration Console stellt die Eigenschaft &quot;Default Document Max Inline Size&quot;zur Konfiguration der maximalen Größe von Dokumenten bereit, die im Speicher gespeichert und in der Datenbank beibehalten werden. (Siehe [Konfigurieren allgemeiner AEM Forms-Einstellungen](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).) Wenn Sie diese Eigenschaft auf einen niedrigen Wert setzen, werden die meisten Dokumente im Ordner des globalen Dokumentenspeichers und nicht in der Datenbank beibehalten. Der Vorteil besteht darin, dass Sie die Dateien leichter löschen können, wenn sie nicht mehr benötigt werden, wenn sie im Ordner des globalen Dokumentenspeichers gespeichert sind.
+Die Administrationskonsole stellt die Eigenschaft „Standardmäßige Maximalgröße für Inline-Dokumente“ zum Konfigurieren der Maximalgröße von Dokumenten bereit, die im Arbeitsspeicher gespeichert werden und in der Datenbank erhalten bleiben. (Siehe [Konfigurieren allgemeiner AEM Forms-Einstellungen](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).) Wenn Sie für diese Eigenschaft einen niedrigen Wert festgelegt haben, bleiben die meisten Dokumente im GDS-Verzeichnis und nicht in der Datenbank erhalten. Der Vorteil besteht darin, dass Sie nicht mehr benötigte Dateien leichter löschen können, wenn sie im GDS-Verzeichnis gespeichert sind.

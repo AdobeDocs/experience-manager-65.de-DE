@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '671'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Sie können die unterstützten Assettypen einzeln oder als ZIP-Archiv hochladen.
 
 1. Melden Sie sich bei der Benutzeroberfläche von AEM Forms an, indem Sie auf `https://'[server]:[port]'/aem/forms.html` zugreifen.
 1. Navigieren Sie zu dem Ordner, in den Sie das Formular oder die Ordner mit Formularen hochladen möchten.
-1. Wählen Sie in der Symbolleiste &quot;Aktionen&quot;die Option **Erstellen > Datei-Upload**.
+1. Wählen Sie in der Aktionssymbolleiste **Erstellen > Datei hochladen** aus.
 
    ![Dateien von der Option „Lokaler Speicher“ unter „Erstellen“](assets/step.png)
 

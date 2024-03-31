@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4604'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -312,7 +312,7 @@ Sie aktivieren die benutzerdefinierte Authentifizierung in der Administration-Co
 >
 In der vorherigen Version von AEM Forms haben Sie Anmeldeinformationen an ein Ziel gesendet, indem Sie die `RemoteObject.setCredentials`-Methode aufgerufen haben. Die `setCredentials`-Methode hat die Anmeldeinformationen erst beim ersten Versuch der Komponente, eine Verbindung zum Server herzustellen, an den Server übergeben. Wenn die Komponente ein fehlerhaftes Ereignis ausgegeben hat, konnten Sie daher nicht sicher sein, ob der Fehler aufgrund eines Authentifizierungsfehlers oder aus einem anderen Grund aufgetreten ist. Die `ChannelSet.login`-Methode stellt eine Verbindung zum Server her, wenn Sie sie aufrufen, damit Sie Authentifizierungsprobleme sofort verarbeiten können. Sie können auch weiterhin die `setCredentials`-Methode verwenden, allerdings wird die Verwendung der `ChannelSet.login`-Methode empfohlen.
 
-Da mehrere Ziele dieselben Kanäle und das zugehörige ChannelSet-Objekt verwenden können, wird bei der Anmeldung bei einem Ziel der Benutzer zu jedem anderen Ziel protokolliert, das denselben Kanal oder dieselben Kanäle verwendet. Wenn zwei Komponenten unterschiedliche Anmeldeinformationen auf dasselbe „ChannelSet“-Objekt anwenden, werden die zuletzt angewendeten Anmeldeinformationen verwendet. Wenn mehrere Komponenten dasselbe authentifizierte „ChannelSet“-Objekt verwenden, werden bei Aufruf der `logout`-Methode alle Komponenten bei den Zielen abgemeldet.
+Da mehrere Ziele dieselben Kanäle und das dazugehörige „ChannelSet“-Objekt verwenden können, wird eine Person, wenn sie sich bei einem Ziel anmeldet, auch bei jedem anderen Ziel angemeldet, das denselben Kanal oder dieselben Kanäle verwendet. Wenn zwei Komponenten unterschiedliche Anmeldeinformationen auf dasselbe „ChannelSet“-Objekt anwenden, werden die zuletzt angewendeten Anmeldeinformationen verwendet. Wenn mehrere Komponenten dasselbe authentifizierte „ChannelSet“-Objekt verwenden, werden bei Aufruf der `logout`-Methode alle Komponenten bei den Zielen abgemeldet.
 
 Im folgenden Beispiel werden die Methoden `ChannelSet.login` und `ChannelSet.logout` mit einem „RemoteObject“-Steuerelement verwendet. Diese Anwendung führt die folgenden Aktionen durch:
 
@@ -547,11 +547,11 @@ Sie können eine mit Flex erstellte Client-Anwendung starten und den zentralen A
 
 Sie können sichere Dokumente an AEM Forms übergeben, wenn Sie einen Prozess aufrufen, für den ein oder mehrere Dokumente erforderlich sind. Durch Übergabe eines sicheren Dokuments schützen Sie Geschäftsinformationen und vertrauliche Dokumente. In diesem Fall kann ein Dokument auf ein PDF-Dokument, ein XML-Dokument, ein Word-Dokument usw. verweisen. Die Übergabe eines sicheren Dokuments von einer in Flex geschriebenen Client-Anwendung an AEM Forms ist erforderlich, wenn AEM Forms für sichere Dokumente konfiguriert ist. (Weitere Informationen finden Sie unter [Konfigurieren von AEM Forms zum Akzeptieren sicherer und unsicherer Dokumente](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).)
 
-Verwenden Sie beim Übergeben eines sicheren Dokuments Single Sign-On und geben Sie einen AEM Forms-Benutzer an, der über die *Document Upload Application User* Rolle. Ohne diese Rolle kann der Benutzer kein sicheres Dokument hochladen. Sie können Benutzern programmgesteuert eine Rolle zuweisen. (Weitere Informationen finden Sie unter [Verwalten von Rollen und Berechtigungen](/help/forms/developing/users.md#managing-roles-and-permissions).)
+Verwenden Sie beim Übergeben eines sicheren Dokuments Single Sign-on und geben Sie eine Benutzerin oder einen Benutzer von AEM Forms an, die bzw. der über die Rolle *Benutzer der Dokumenten-Upload-Anwendung* verfügt. Ohne diese Rolle kann der Benutzer kein sicheres Dokument hochladen. Sie können Benutzern programmgesteuert eine Rolle zuweisen. (Weitere Informationen finden Sie unter [Verwalten von Rollen und Berechtigungen](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
 >[!NOTE]
 >
-Wenn Sie eine Rolle erstellen und möchten, dass Mitglieder dieser Rolle sichere Dokumente hochladen, stellen Sie sicher, dass Sie die Berechtigung zum Hochladen von Dokumenten angeben.
+Wenn Sie eine Rolle erstellen und Mitglieder dieser Rolle sichere Dokumente hochladen sollen, vergewissern Sie sich, dass Sie die Berechtigung zum Hochladen von Dokumenten angeben.
 
 AEM Forms unterstützt einen Vorgang mit dem Namen `getFileUploadToken`, der ein Token zurückgibt, das an das Upload-Servlet übergeben wird. Die `DocumentReference.constructRequestForUpload`-Methode benötigt eine URL zu AEM Forms zusammen mit dem Token, das von der `LC.FileUploadAuthenticator.getFileUploadToken`-Methode zurückgegeben wird. Diese Methode gibt ein `URLRequest`-Objekt zurück, das beim Aufruf des Upload-Servlets verwendet wird. Der folgende Code veranschaulicht diese Anwendungslogik.
 
@@ -621,7 +621,7 @@ Mit Administration-Console können Sie, wenn Sie ein Dokument von einer Flex-Cli
 >[!NOTE]
 >
 * Um AEM Forms so zu konfigurieren, dass unsichere Dokumente akzeptiert werden, wählen Sie die Option „Unsicheren Dokumenten-Upload von Flex-Anwendungen zulassen“ aus. Starten Sie dann eine Anwendung oder einen Service neu, um sicherzustellen, dass die Einstellung wirksam wird.
-* Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mithilfe alternativer Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+* Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 
 ### Schnellstart: Aufrufen eines kurzlebigen Prozesses durch Übergeben eines sicheren Dokuments mithilfe von Remoting {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
@@ -892,7 +892,7 @@ Wenn AEM Forms so konfiguriert ist, dass nur sichere Dokumente hochgeladen werde
 
 ## Aufrufen benutzerdefinierter Komponenten-Services mithilfe von Remoting {#invoking-custom-component-services-using-remoting}
 
-Sie können Dienste in einer benutzerdefinierten Komponente mithilfe von Remoting aufrufen. Nehmen wir zum Beispiel die Komponente „Bank“, die den Kundendienst enthält. Sie können Vorgänge, die zum Kundendienst gehören, mithilfe einer in Flex geschriebenen Clientanwendung aufrufen. Bevor Sie den Schnellstart für diesen Abschnitt ausführen können, müssen Sie die benutzerdefinierte Komponente „Bank“ erstellen.
+Sie können Services in einer benutzerdefinierten Komponente aufrufen, indem Sie Remoting verwenden. Nehmen wir zum Beispiel die Komponente „Bank“, die den Kundendienst enthält. Sie können Vorgänge, die zum Kundendienst gehören, mithilfe einer in Flex geschriebenen Clientanwendung aufrufen. Bevor Sie den Schnellstart für diesen Abschnitt ausführen können, müssen Sie die benutzerdefinierte Komponente „Bank“ erstellen.
 
 Der Kundendienst stellt einen Vorgang mit dem Namen `createCustomer` zur Verfügung. In dieser Diskussion wird beschrieben, wie Sie eine Flex-Clientanwendung erstellen, die den Kundendienst aufruft und einen Kunden erstellt. Dieser Vorgang erfordert ein komplexes Objekt vom Typ `com.adobe.livecycle.sample.customer.Customer` das den neuen Kunden darstellt. Die folgende Abbildung zeigt die Client-Anwendung, die den Kundendienst aufruft und einen neuen Kunden erstellt. Der `createCustomer`-Vorgang gibt einen Wert für die Kundenkennung zurück. Der Wert der Kennung wird im Textfeld „Kundenkennung“ angezeigt.
 
@@ -972,7 +972,7 @@ Die folgende ActionScript-Klasse namens „Kunde“ zeigt, wie sie dem AEM Forms
 
 Der vollständig qualifizierte Datentyp des komplexen AEM Forms-Typs wird dem Alias-Tag zugewiesen.
 
-Die Felder der ActionScript-Klasse entsprechen den Feldern, die zum komplexen AEM Forms-Typ gehören. Die sechs Felder in der Customer ActionScript-Klasse entsprechen den Feldern, die zu `com.adobe.livecycle.sample.customer.Customer`.
+Die Felder der ActionScript-Klasse entsprechen den Feldern, die zum komplexen AEM Forms-Typ gehören. Die sechs Felder in der Customer ActionScript-Klasse stimmen mit den Feldern überein, die zu `com.adobe.livecycle.sample.customer.Customer` gehören.
 
 >[!NOTE]
 >

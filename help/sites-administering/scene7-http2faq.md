@@ -1,6 +1,6 @@
 ---
 title: Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)
-description: Erfahren Sie mehr über die Bereitstellung von HTTP2-Inhalten und wie sie die Gesamtleistung Ihrer Webinhalte erhöhen können.
+description: Erfahren Sie mehr über die Bereitstellung von HTTP2-Inhalten und darüber, wie sie die Gesamtleistung Ihrer Web-Inhalte steigern können.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ){#http-delivery-of-content-faq}
 
-Adobe freut sich, die Möglichkeit zur Bereitstellung von Inhalten per HTTP/2 bekanntgeben zu können. Wenn Sie HTTP/2 verwenden, wird eine allgemeine Leistungssteigerung festgestellt.
+Adobe freut sich, die Möglichkeit zur Bereitstellung von Inhalten per HTTP/2 bekanntgeben zu können. Wenn Sie HTTP/2 verwenden, wird die Gesamtleistung gesteigert.
 
 ## Was ist HTTP/2? {#what-is-http}
 
@@ -33,7 +33,7 @@ Die Verbesserung der Leistung ist von verschiedenen Faktoren abhängig, z. B. d
 Von Adobe durchgeführte Prüfungen führten zu folgenden Ergebnissen:
 
 * Bei Bildern wurde die Reaktionszeit je nach Gerät und Browser um 7–28 % verbessert. Die bedeutendste Leistungssteigerung war bei iOS-Geräten zu beobachten.
-* Für Viewer wurde die Ladezeitleistung um 15 % verbessert.
+* Die Ladezeitleistung für Viewer wurde um 15 % verbessert.
 
 Die folgende Demonstration zeigt den Unterschied zwischen Laden mit HTTP/1 und Laden mit HTTP/2:
 

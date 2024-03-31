@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1653'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -69,18 +69,18 @@ Gehen Sie wie folgt vor, um Variablen für Felder mit der Agentenbenutzeroberfl�
 
    1. Wählen Sie im Abschnitt **Datenmodell** die Option **Formulardatenmodell** aus.
 
-   1. Auswählen **FDM_Create_First_IC** als Formulardatenmodell und wählen Sie **Auswählen**.
+   1. Wählen Sie **FDM_Create_First_IC** als Formulardatenmodell aus und wählen Sie dann **Auswählen**.
 
    1. Wählen Sie **Weiter** aus.
 
-1. Wählen Sie die **Variablen** Registerkarte im linken Bereich und wählen Sie **Erstellen**.
+1. Wählen Sie im linken Bereich die Registerkarte **Variablen** und dann **Erstellen** aus.
 1. Gehen Sie im Abschnitt **Variable erstellen** wie folgt vor:
 
    1. Geben Sie **Rechnungsnummer** als Namen der Variablen ein.
    1. Wählen Sie unter „Typ“ die Option **Zeichenfolge** aus.
    1. Wählen Sie **Erstellen** aus.
 
-   ![Variable vom Typ String erstellen](assets/variable_create_string_new.png)
+   ![Variable vom Typ „Zeichenfolge“ erstellen](assets/variable_create_string_new.png)
 
    Wiederholen Sie die Schritte 4 und 5, um die folgenden Variablen zu erstellen:
 
@@ -133,11 +133,11 @@ Gehen Sie wie folgt vor, um Variablen für Felder mit der Agentenbenutzeroberfl�
 
    1. Wählen Sie im Abschnitt **Datenmodell** die Option **Formulardatenmodell** aus.
 
-   1. Auswählen **FDM_Create_First_IC** als Formulardatenmodell und wählen Sie **Auswählen**.
+   1. Wählen Sie **FDM_Create_First_IC** als Formulardatenmodell aus und wählen Sie dann **Auswählen**.
 
    1. Wählen Sie **Weiter** aus.
 
-1. Wählen Sie die **Variablen** Registerkarte im linken Bereich und wählen Sie **Erstellen**.
+1. Wählen Sie im linken Bereich die Registerkarte **Variablen** und dann **Erstellen** aus.
 1. Gehen Sie im Abschnitt **Variable erstellen** wie folgt vor:
 
    1. Geben Sie als Name der Variablen **Placesupply** ein.
@@ -196,11 +196,11 @@ Gehen Sie wie folgt vor, um Variablen für Felder mit der Agentenbenutzeroberfl�
 
    1. Wählen Sie im Abschnitt **Datenmodell** die Option **Formulardatenmodell** aus.
 
-   1. Auswählen **FDM_Create_First_IC** als Formulardatenmodell und wählen Sie **Auswählen**.
+   1. Wählen Sie **FDM_Create_First_IC** als Formulardatenmodell aus und wählen Sie dann **Auswählen**.
 
    1. Wählen Sie **Weiter** aus.
 
-1. Wählen Sie die **Variablen** Registerkarte im linken Bereich und wählen Sie **Erstellen**.
+1. Wählen Sie im linken Bereich die Registerkarte **Variablen** und dann **Erstellen** aus.
 1. Gehen Sie im Abschnitt **Variable erstellen** wie folgt vor:
 
    1. Geben Sie als Name der Variablen **Previousbalance** ein.
@@ -263,7 +263,7 @@ Gehen Sie wie folgt vor, um statischen Text zu erstellen und Formulardatenmodell
 
    1. Wählen Sie im Abschnitt **Datenmodell** die Option **Formulardatenmodell** aus.
 
-   1. Auswählen **FDM_Create_First_IC** als Formulardatenmodell und wählen Sie **Auswählen**.
+   1. Wählen Sie **FDM_Create_First_IC** als Formulardatenmodell aus und wählen Sie dann **Auswählen**.
 
    1. Wählen Sie **Weiter** aus.
 
@@ -294,7 +294,7 @@ Gehen Sie wie folgt vor, um statischen Text zu erstellen und Formulardatenmodell
 
    ![Zusammenfassung der Gebühren](assets/summary_charges_static_fdm_new.png)
 
-1. Wählen Sie den Text im **Mehrwert - Service-Gebühren** und wählen Sie **Regel erstellen** , um eine Bedingung zu erstellen, anhand derer die Zeile in der interaktiven Kommunikation angezeigt wird:
+1. Wählen Sie den Text in der Zeile **Mehrwert-Service-Gebühren** und dann **Regel erstellen** aus, um eine Bedingung zu erstellen, auf deren Grundlage die Zeile in der interaktiven Kommunikation angezeigt wird:
 1. Gehen Sie im Popup-Fenster **Regel erstellen** wie folgt vor:
 
    1. Wählen Sie **Datenmodelle und Variablen** aus und dann **Rechnungen** > **Anrufgebühren**.

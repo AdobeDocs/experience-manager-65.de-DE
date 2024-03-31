@@ -1,6 +1,6 @@
 ---
 title: Verwenden von benutzerdefinierten E-Mail-Vorlagen im Schritt „Aufgabe zuweisen“
-description: Benutzerdefinierte E-Mail-Vorlagen für E-Mail-Benachrichtigungen beim Arbeitsablauf für Formulare
+description: Benutzerdefinierte E-Mail-Vorlagen für E-Mail-Benachrichtigungen in einem Forms-Workflow
 topic-tags: publish
 docset: aem65
 exl-id: d4035c91-ee8d-4f12-bdac-e3912be732d7
@@ -8,27 +8,27 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 38%
+ht-degree: 100%
 
 ---
 
 # Benutzerdefinierte E-Mail-Vorlagen im Schritt „Aufgabe zuweisen“ verwenden{#use-custom-email-templates-in-an-assign-task-step}
 
-Sie können den Schritt &quot;Aufgabe zuweisen&quot;verwenden, um einem Benutzer oder einer Gruppe Aufgaben zu erstellen und zuzuweisen. Wenn eine Aufgabe einem Benutzer oder einer Gruppe zugewiesen wird, wird eine E-Mail-Benachrichtigung an den definierten Benutzer oder an jedes Mitglied der definierten Gruppe gesendet. Eine typische E-Mail-Benachrichtigung enthält einen Link zur zugewiesenen Aufgabe und Informationen zur Aufgabe. Die folgende Abbildung zeigt eine Beispiel-E-Mail-Benachrichtigung:
+Mit dem Schritt „Aufgabe zuweisen“ können Sie Aufgaben erstellen und einer Person oder Gruppe zuweisen. Wenn eine Aufgabe einer Person oder einer Gruppe zugewiesen wird, erhält die definierte Person bzw. jedes Mitglied der definierten Gruppe eine E-Mail-Benachrichtigung. Eine typische E-Mail-Benachrichtigung enthält einen Link zur zugewiesenen Aufgabe und dazugehörige Informationen. Die folgende Abbildung zeigt ein Beispiel für eine E-Mail-Benachrichtigung:
 
 ![E-Mail-Benachrichtigung mit vorgegebener Vorlage](do-not-localize/default_email_template_new.png)
 
-Sie können das Erscheinungsbild anpassen und benutzerdefinierte Metadaten in einer E-Mail-Benachrichtigung verwenden. AEM Forms stellt eine vordefinierte Vorlage für E-Mail-Benachrichtigungen bereit. Sie können die vordefinierte Vorlage anpassen oder eine neue Vorlage erstellen.
+Sie können die Darstellung von E-Mail-Benachrichtigungen anpassen und benutzerdefinierte Metadaten darin verwenden. In AEM Forms steht eine vorkonfigurierte Vorlage für E-Mail-Benachrichtigungen zur Verfügung. Sie können die vorkonfigurierte Vorlage verwenden oder eine neue Vorlage erstellen.
 
-Vorlagen für E-Mail-Benachrichtigungen basieren auf [HTML-E-Mail](https://en.wikipedia.org/wiki/HTML_email). Diese E-Mails passen sich an unterschiedliche E-Mail-Clients und Bildschirmgrößen an. Darüber hinaus wird der Stil der E-Mail in der Vorlage definiert.
+Vorlagen für E-Mail-Benachrichtigungen basieren auf [HTML-E-Mail](https://en.wikipedia.org/wiki/HTML_email). Diese E-Mails passen sich an unterschiedliche E-Mail-Clients und Bildschirmgrößen an. Darüber hinaus wird die Darstellung der E-Mail innerhalb der Vorlage definiert.
 
 Die folgende Abbildung zeigt eine angepasste E-Mail-Benachrichtigung:
 
 ![E-Mail-Benachrichtigung mit benutzerdefinierter Vorlage](do-not-localize/customized-email.png)
 
-## Vorhandene Vorlage anpassen {#customize-the-existing-template}
+## Anpassen der vorhandenen Vorlage {#customize-the-existing-template}
 
-Standardmäßig stellt AEM Forms eine Vorlage für E-Mail-Benachrichtigungen bereit. Die Vorlage enthält eine Titelbeschreibung, ein Fälligkeitsdatum, eine Priorität, den Namen des Workflows und den Link der zugewiesenen Aufgabe. Sie können die Vorlage anpassen, um das Erscheinungsbild zu ändern. Führen Sie die folgenden Schritte aus, um die Vorlage anzupassen:
+In AEM Forms steht eine vorkonfigurierte Vorlage für E-Mail-Benachrichtigungen zur Verfügung. Die Vorlage enthält eine Titelbeschreibung, ein Fälligkeitsdatum, eine Priorität, einen Workflow-Namen und eine Verknüpfung zur zugewiesenen Aufgabe. Sie können die Vorlage anpassen, um das Erscheinungsbild zu ändern. Führen Sie die folgenden Schritte aus, um die Vorlage anzupassen:
 
 1. Melden Sie sich mit einem Administratorkonto bei CRXDE an.
 
@@ -42,9 +42,9 @@ Standardmäßig stellt AEM Forms eine Vorlage für E-Mail-Benachrichtigungen ber
 
 1. Speichern Sie die Datei. Damit ist die benutzerdefinierte Vorlage einsatzbereit.
 
-## E-Mail-Vorlage erstellen {#create-an-email-template}
+## Erstellen einer E-Mail-Vorlage {#create-an-email-template}
 
-Standardmäßig stellt AEM Forms eine Vorlage für E-Mail-Benachrichtigungen bereit. Die Vorlage enthält eine Titelbeschreibung, ein Fälligkeitsdatum, eine Priorität, den Namen des Workflows und den Link der zugewiesenen Aufgabe. Sie können auch eine benutzerdefinierte E-Mail-Vorlage (Ihre eigene Vorlage) für die Schritte zum Zuweisen von Aufgaben hinzufügen. Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte E-Mail-Vorlage hinzuzufügen:
+In AEM Forms steht eine vorkonfigurierte Vorlage für E-Mail-Benachrichtigungen zur Verfügung. Die Vorlage enthält eine Titelbeschreibung, ein Fälligkeitsdatum, eine Priorität, einen Workflow-Namen und eine Verknüpfung zur zugewiesenen Aufgabe. Sie können außerdem eine benutzerdefinierte E-Mail-Vorlage (Ihre eigene Vorlage) für den Schritt „Aufgabe zuweisen“ hinzufügen. Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte E-Mail-Vorlage hinzuzufügen:
 
 1. Melden Sie sich mit einem Administratorkonto bei CRXDE an.
 
@@ -58,9 +58,9 @@ Standardmäßig stellt AEM Forms eine Vorlage für E-Mail-Benachrichtigungen ber
 
 1. Speichern Sie die Datei. Damit ist die Vorlage zur Verwendung im Schritt „Aufgabe zuweisen“ bereit.
 
-## E-Mail-Vorlage in einem Schritt &quot;Aufgabe zuweisen&quot;verwenden {#use-an-email-template-in-an-assign-task-step}
+## Verwenden einer E-Mail-Vorlage im Schritt „Aufgabe zuweisen“ {#use-an-email-template-in-an-assign-task-step}
 
-Standardmäßig ist der Schritt Aufgabe zuweisen für die Verwendung der Standardvorlage htmlEmailTemplate.txt konfiguriert. Sie können eine benutzerdefinierte Vorlage verwenden. So ändern Sie die Vorlage:
+Der Schritt „Aufgabe zuweisen“ ist standardmäßig so konfiguriert, dass die Standardvorlage „htmlEmailTemplate.txt“ verwendet wird. Sie können stattdessen eine benutzerdefinierte Vorlage verwenden. Gehen Sie wie folgt vor, um die Vorlage zu ändern:
 
 1. Öffnen Sie den Schritt „Aufgabe zuweisen“.
 
@@ -70,4 +70,4 @@ Standardmäßig ist der Schritt Aufgabe zuweisen für die Verwendung der Standar
 
 1. Klicken Sie auf OK. Die Vorlage wird geändert.
 
-Eine E-Mail-Benachrichtigung verwendet auch [Metadaten](../../forms/using/use-metadata-in-email-notifications.md). Beispielsweise Fälligkeitsdatum, Priorität, Workflow-Name und mehr. Sie können die Vorlage auch so konfigurieren, dass [benutzerdefinierte Metadaten](../../forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification) verwendet werden.
+In E-Mail-Benachrichtigungen werden außerdem [Metadaten](../../forms/using/use-metadata-in-email-notifications.md) verwendet. Dies können beispielsweise Fälligkeitsdatum, Priorität, Workflow-Name und mehr sein. Sie können die Vorlage auch so konfigurieren, dass [benutzerdefinierte Metadaten](../../forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification) verwendet werden.

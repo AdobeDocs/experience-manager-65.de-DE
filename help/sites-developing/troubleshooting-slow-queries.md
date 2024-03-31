@@ -1,6 +1,6 @@
 ---
 title: Fehlerbehebung bei langsamen Abfragen
-description: Erfahren Sie, wie Sie in Adobe Experience Manager Probleme mit langsamen Abfragen beheben können.
+description: Erfahren Sie, wie Sie in Adobe Experience Manager eine Fehlerbehebung bei langsamen Abfragen durchführen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2237'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -318,7 +318,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es die gängigste Abfrage
 ## Vorhandene Indexabstimmung {#existing-index-tuning}
 
 1. Wenn die optimale Abfrage auf einen Eigenschaftsindex aufgelöst wird, gibt es nichts mehr zu tun, da Eigenschaftsindizes nur minimale Anpassungsmöglichkeiten bieten.
-1. Andernfalls sollte die Abfrage auf einen Lucene-Eigenschaftsindex aufgelöst werden. Wenn kein Index aufgelöst werden kann, springen Sie zu Erstellen eines Index .
+1. Andernfalls sollte die Abfrage auf einen Lucene-Eigenschaftsindex aufgelöst werden. Wenn kein Index aufgelöst werden kann, springen Sie zu „Erstellen eines Index“.
 1. Konvertieren Sie die Abfrage nach Bedarf in XPath oder JCR-SQL2.
 
    * **Query Builder-Abfrage**

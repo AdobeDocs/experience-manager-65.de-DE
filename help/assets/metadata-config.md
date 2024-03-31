@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1978'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -57,11 +57,11 @@ Mit einem Metadatenprofil können Sie Standardmetadaten auf Assets in einem Ordn
 ### Hinzufügen eines Metadatenprofils {#adding-a-metadata-profile}
 
 1. Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenprofile]** und klicken Sie dann auf **[!UICONTROL Erstellen]**.
-1. Geben Sie einen Titel für das Profil ein, beispielsweise `Sample Metadata`und klicken Sie auf **[!UICONTROL Erstellen]**. Es wird [!UICONTROL Formular bearbeiten] für das Metadatenprofil angezeigt.
+1. Geben Sie einen Titel für das Profil ein, z. B. `Sample Metadata`, und klicken Sie auf **[!UICONTROL Erstellen]**. Es wird [!UICONTROL Formular bearbeiten] für das Metadatenprofil angezeigt.
 
    ![Bearbeiten eines Metadaten-Formulars](assets/metadata-edit-form.png)
 
-1. Klicken Sie auf eine Komponente und konfigurieren Sie ihre Eigenschaften in der Registerkarte **[!UICONTROL Einstellungen]**. Klicken Sie beispielsweise auf die **[!UICONTROL Beschreibung]** und bearbeiten Sie die Eigenschaften.
+1. Klicken Sie auf eine Komponente und konfigurieren Sie ihre Eigenschaften auf der Registerkarte **[!UICONTROL Einstellungen]**. Klicken Sie beispielsweise auf die **[!UICONTROL Beschreibungskomponente]** und bearbeiten Sie die Eigenschaften.
 
    ![Festlegen einer Komponente im Metadatenprofil](assets/metadata-profile-component-setting.png)
 
@@ -94,7 +94,7 @@ Mit einem Metadatenprofil können Sie Standardmetadaten auf Assets in einem Ordn
 | [!UICONTROL Datum] | Feldbezeichnung, <br> Zu Eigenschaft zuordnen, <br> Standardwert |
 | [!UICONTROL Standard-Tags] | Feldbezeichnung, <br> Zu Eigenschaft zuordnen, <br> Standardwert, <br> Beschreibung |
 
-1. Klicken Sie auf **[!UICONTROL Fertig]**. Das Metadatenprofil wird zur Liste der Profile im **[!UICONTROL Metadatenprofile]** Seite.<br>
+1. Klicken Sie auf **[!UICONTROL Fertig]**. Das Metadatenprofil wird zur Liste der Profile auf der Seite **[!UICONTROL Metadatenprofile]** hinzugefügt.<br>
 
    ![Auf der Seite „Metadatenprofile“ hinzugefügtes Metadatenprofil](assets/MetadataProfiles-page.png)
 

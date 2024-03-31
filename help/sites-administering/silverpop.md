@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '593'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Silverpop-Konfigurationen können über **Cloud Services**, **Tools** oder **API
 
 So erstellen Sie eine Silverpop-Konfiguration in Cloud-Services:
 
-1. Klicken Sie AEM auf **Instrumente** > **Implementierung** > **Cloud Service**. (Oder gehen Sie direkt zu `https://<hostname>:<port>/etc/cloudservices.html`.)
+1. Klicken Sie in AEM auf **Tools** > **Bereitstellung** > **Cloud-Services**. (Oder gehen Sie direkt zu `https://<hostname>:<port>/etc/cloudservices.html`.)
 1. Klicken Sie unter den Drittanbieterdiensten auf **Silverpop Engage** und dann auf **Konfigurieren**. Das Silverpop-Konfigurationsfenster öffnet sich.
 
    >[!NOTE]
@@ -58,7 +58,7 @@ So erstellen Sie eine Silverpop-Konfiguration in Cloud-Services:
 
 So erstellen Sie eine Silverpop-Konfiguration in Tools:
 
-1. Klicken Sie AEM auf **Instrumente** > **Implementierung** > **Cloud Service**. Oder navigieren Sie über `https://<hostname>:<port>/misadmin#/etc` direkt dorthin.
+1. Klicken Sie in AEM auf **Tools** > **Bereitstellung** > **Cloud-Services**. Oder navigieren Sie über `https://<hostname>:<port>/misadmin#/etc` direkt dorthin.
 1. Wählen Sie **Tools**, **Cloud Service-Konfigurationen** und dann **Silverpop Engage**.
 1. Klicken Sie auf **Neu**.
 

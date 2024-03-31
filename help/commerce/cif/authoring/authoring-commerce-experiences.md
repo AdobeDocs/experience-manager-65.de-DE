@@ -1,12 +1,12 @@
 ---
 title: Authoring von Commerce-Erlebnissen
-description: Das CIF-Add-on erweitert das Adobe Experience Manager-Authoring mit Commerce-spezifischen Funktionen.
+description: Das CIF-Add-on erweitert das Authoring in Adobe Experience Manager um Commerce-spezifische Funktionen.
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
 solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Produkt- und Kategorieauswahloptionen sind Dialogfelder der modalen Benutzerober
 
 ### Produktauswahl {#product-picker}
 
-Diese Auswahl kann das Durchsuchen der Katalogstruktur oder die Volltextsuche anbieten, um das Produkt zu finden. Produkte mit Variante bieten in der Spalte „Typ“ ein Ordnersymbol. Durch Klicken auf das Ordnersymbol werden die Varianten des ausgewählten Produkts geöffnet.
+Diese Auswahl ermöglicht es, durch die Katalogstruktur oder die Volltextsuche zu navigieren, um das Produkt zu finden. Produkte mit Variante bieten in der Spalte „Typ“ ein Ordnersymbol. Durch Klicken auf das Ordnersymbol werden die Varianten des ausgewählten Produkts geöffnet.
 
 ![Produktauswahl](/help/commerce/cif/assets/authoring/product-picker.png)
 
@@ -40,7 +40,7 @@ Das Konfigurationsdialogfeld dieser Komponente erfordert ein Produkt. CIF verwen
 
 ### Kategorieauswahl {#category-picker}
 
-Diese Auswahl kann das Durchsuchen der Katalogstruktur anbieten, um die Kategorie zu finden.
+Diese Auswahl ermöglicht es, die Katalogstruktur nach der gewünschten Kategorie zu durchsuchen.
 
 ![Kategorieauswahl](/help/commerce/cif/assets/authoring/category-picker.png)
 

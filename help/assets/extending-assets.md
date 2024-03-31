@@ -9,15 +9,15 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '250'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
 # Anpassen und Erweitern von [!DNL Assets] {#customizing-and-extending-assets}
 
-Der Asset-Editor ist der primäre Zugriffspunkt, den Benutzer einer Adobe Enterprise Manager-Website verwenden, um die digitalen Assets in Ihrem Repository zu finden, anzuzeigen und zu bearbeiten.
+Der Asset-Editor ist der primäre Zugangspunkt, den Benutzende einer Adobe Enterprise Manager-Website verwenden, um die digitalen Assets in Ihrem Repository zu suchen, anzuzeigen und zu bearbeiten.
 
-Als [!DNL Experience Manager] Entwickler können Sie den Asset-Editor auf verschiedene Arten anpassen und erweitern, indem Sie Benutzern eine speziell auf sie zugeschnittene Benutzeroberfläche und eine Reihe von Funktionen präsentieren.
+Als [!DNL Experience Manager]-Entwicklerin oder -Entwickler können Sie den Asset-Editor auf mehrere Arten anpassen und erweitern und Benutzenden eine maßgeschneiderte Oberfläche und passende Funktionen zur Verfügung stellen.
 
 Die folgenden Funktionen können angepasst bzw. verbessert werden:
 
@@ -32,12 +32,12 @@ Die folgenden Funktionen können angepasst bzw. verbessert werden:
 
 Die folgenden Aspekte des Erscheinungsbilds des Asset-Editors sind anpassbar:
 
-* Logo: Sie können das Logo Ihrer eigenen Organisation zur Benutzeroberfläche hinzufügen.
-* Farben und Schriftarten: Sie können die in der Benutzeroberfläche verwendeten Farben und Schriftarten ändern.
-* HTML-Code: Für eine genauere Anpassung können Sie den zugrunde liegenden HTML-Code ändern, der die Schnittstellen definiert.
+* Logo: Sie können das Logo Ihrer Organisation zur Benutzeroberfläche hinzufügen.
+* Farben und Schriftarten: Sie können die Farben und Schriftarten ändern, die in der Benutzeroberfläche verwendet werden.
+* HTML-Code: Zur besseren Anpassung können Sie den zugrunde liegenden HTML-Code ändern, der die Benutzeroberflächen definiert.
 
 ## Anpassen von Ausgabedarstellungen {#customizing-renditions}
 
-In der [!DNL Experience Manager Assets]-Terminologie ist ein Ausgabeformat die Form, in der ein Asset dargestellt wird. Im Allgemeinen kann ein bestimmtes Asset mehrere Ausgabedarstellungen aufweisen. Beispielsweise kann ein Vollfarbbild eine Darstellung in der Originalgröße aufweisen, eine andere in einer herunterskalierten Größe und eine andere, die sowohl herunterskaliert als auch in Graustufen konvertiert wird.
+In der [!DNL Experience Manager Assets]-Terminologie ist ein Ausgabeformat die Form, in der ein Asset dargestellt wird. Im Allgemeinen kann ein Asset mehrere Ausgabedarstellungen haben.  Z. B. kann ein Farbbild in seiner Originalgröße ausgegeben, verkleinert oder verkleinert und in Graustufen konvertiert sein.
 
-Die Ausgabedarstellungen, in denen ein bestimmtes Asset verfügbar ist, können angepasst und neue Ausgabedarstellungen erstellt werden.
+Die Ausgabedarstellungen, in denen ein bestimmtes Asset verfügbar ist, können angepasst werden und es können neue Ausgabedarstellungen erstellt werden.

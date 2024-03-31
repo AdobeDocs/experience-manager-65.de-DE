@@ -1,6 +1,6 @@
 ---
 title: Videoausgabeformate
-description: Erfahren Sie, wie Sie mit Adobe Experience Manager Assets Videoausgabeformate für Video-Assets mit verschiedenen Formaten wie OGG, FLV usw. generieren.
+description: Erstellen Sie mit Adobe Experience Manager Assets Videoausgabedarstellungen für Video-Assets verschiedener Formate einschließlich OGG, FLV usw.
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
@@ -9,7 +9,7 @@ feature: Video
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '246'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Die Liste mit Videoausgabeformate wird im Bereich **[!UICONTROL Wiedergaben]** a
 
 Konfigurieren Sie den Proxyserver für DM-kodierte Ausgabeformate, indem Sie [Cloud-Dienste für Dynamic Media konfigurieren](config-dynamic.md).
 
-So generieren Sie Videoausgabeformate mit gewünschten Parametern: [Erstellen eines entsprechenden Videoprofils](video-profiles.md).
+Generieren Sie Videoausgabeformate mit gewünschten Parametern: [Erstellen eines passenden Videoprofils](video-profiles.md).
 
 Nachdem Sie den Proxyserver konfiguriert und Videoprofile erstellt haben, können Sie diese Videovorlage in ein Verarbeitungsprofil aufnehmen und dieses Verarbeitungsprofil auf einen Ordner anwenden.
 

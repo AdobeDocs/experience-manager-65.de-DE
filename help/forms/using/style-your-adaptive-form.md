@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2038'
-ht-degree: 73%
+ht-degree: 88%
 
 ---
 
@@ -54,7 +54,7 @@ Der Editor für adaptive Formulare bietet mehrere vorkonfigurierte Designs. Wenn
    [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
 1. Öffnen Sie die Eigenschaften des **[!UICONTROL Containers für adaptive Formulare]**. Navigieren Sie im Eigenschaften-Browser zu **[!UICONTROL Allgemein]** > **[!UICONTROL Adaptives Formulardesign]**. Das Feld **[!UICONTROL Adaptives Formulardesign]** listet alle vordefinierten und benutzerdefinierten Designs auf. Standardmäßig wird das Canvas-Design angewendet.
-1. Wählen Sie ein Design aus dem Feld **[!UICONTROL Adaptives Formulardesign]** aus, z. B. für **Umfragen**. Auswählen ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) damit Sie das ausgewählte Design anwenden können.
+1. Wählen Sie ein Design aus dem Feld **[!UICONTROL Adaptives Formulardesign]** aus, z. B. für **Umfragen**. Wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) aus, damit Sie das ausgewählte Design anwenden können.
 
    ![Adaptives Formular mit dem Standarddesign](assets/default-adaptive-form.png)
 
@@ -76,17 +76,17 @@ Das oben angezeigte Design erfordert Änderungen am Platzhaltertext und Logo des
 
       [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
-   1. Logobild im [!UICONTROL header] Komponente und wählen Sie ![cmppr](assets/cmppr.png) **[!UICONTROL properties]**. Im [!UICONTROL image] -Eigenschaft, wählen Sie X aus, um das vorhandene Logo-Bild zu entfernen.
-   1. Auswählen **[!UICONTROL hochladen]**, wählen Sie logo.png und dann ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) , um die Änderungen zu speichern. Das Bild wurde im Abschnitt [Bevor Sie beginnen](/help/forms/using/style-your-adaptive-form.md#before-you-start) heruntergeladen.
-   1. Kopfzeilentext auswählen, `We.Retail`und wählen Sie ![aem_6_3_edit](assets/aem_6_3_edit.png) **[!UICONTROL edit]**. Ändern des Kopfzeilentextes in `we retail`. Anwenden der Fettformatierung nur auf `we`in `we retail`.
+   1. Wählen Sie das Logo-Bild in der Komponente [!UICONTROL Kopfzeile] und anschließend ![cmppr](assets/cmppr.png) **[!UICONTROL Eigenschaften]** aus. Wählen Sie in der Eigenschaft [!UICONTROL Bild] das X aus, um das vorhandene Logo-Bild zu entfernen.
+   1. Wählen Sie **[!UICONTROL Hochladen]**, „logo.png“ und dann ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) aus, um die Änderungen zu speichern. Das Bild wurde im Abschnitt [Bevor Sie beginnen](/help/forms/using/style-your-adaptive-form.md#before-you-start) heruntergeladen.
+   1. Wählen Sie den Kopfzeilentext, `We.Retail` und anschließend ![aem_6_3_edit](assets/aem_6_3_edit.png) **[!UICONTROL Bearbeiten]** aus. Ändern des Kopfzeilentextes in `we retail`. Anwenden der Fettformatierung nur auf `we`in `we retail`.
 
       ![we-retail-logo-text](assets/we-retail-logo-text.png)
 
 1. Entfernen Sie Titel und fügen Sie Platzhaltertext hinzu:
 
-   1. Wählen Sie das Feld Kunden-ID aus und wählen Sie ![cmppr](assets/cmppr.png) Eigenschaften.
+   1. Wählen Sie das Feld „Kunden-ID“ und anschließend ![cmppr](assets/cmppr.png) „Eigenschaften“ aus.
    1. Kopieren Sie den Inhalt des Felds **[!UICONTROL Titel]** in das Feld **[!UICONTROL Platzhaltertext]**.
-   1. Löschen Sie den Inhalt der **[!UICONTROL Titel]** Feld und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. Löschen Sie den Inhalt des Felds **[!UICONTROL Titel]** und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) aus.
    1. Wiederholen Sie die vorherigen drei Schritte für alle Textfelder, das numerische Feld und das E-Mail-Feld im Formular.
 
       ![updated-adaptive-form](assets/updated-adaptive-form.png)
@@ -102,16 +102,16 @@ Im Rahmen dieses Tutorials gestalten Sie Kopf- und Fußzeilen, Text- und numeris
 ### Erstellen von Designs {#create-a-theme}
 
 1. Melden Sie sich bei der AEM-Autoreninstanz an und navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Designs]**. Die Standard-URL lautet [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
-1. Auswählen **[!UICONTROL Erstellen]** und wählen **[!UICONTROL Design]**. Die Seite [!UICONTROL Design erstellen] mit den Feldern zum Erstellen eines Designs wird angezeigt. Die Felder **[!UICONTROL Titel]** und **[!UICONTROL Name]** sind obligatorisch.
+1. Wählen Sie **[!UICONTROL Erstellen]** und dann **[!UICONTROL Design]** aus. Die Seite [!UICONTROL Design erstellen] mit den Feldern zum Erstellen eines Designs wird angezeigt. Die Felder **[!UICONTROL Titel]** und **[!UICONTROL Name]** sind obligatorisch.
 
    * **Titel:** Geben Sie einen Titel für das Design an. Zum Beispiel: **Globales Design.** Der Titel hilft Ihnen, das Design in der Liste der Designs zu identifizieren.
    * **Name**: Geben Sie den Namen des Designs an. Beispiel: **Globales-Design.** Im Repository wird ein Knoten mit dem angegebenen Namen erstellt. Wenn Sie mit der Eingabe des Titels beginnen, wird automatisch ein Wert für das Feld „Name“ vorgeschlagen. Sie können den vorgeschlagenen Wert gegebenenfalls ändern. Im Feld „Name“ dürfen nur alphanumerische Zeichen, Bindestriche und Unterstriche eingegeben werden. Alle ungültigen Eingaben werden durch Bindestriche ersetzt.
 
-1. Wählen Sie **[!UICONTROL Erstellen]** aus. Ein Design wird erstellt und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt. Auswählen **[!UICONTROL Öffnen]** , um das neu erstellte Design in einer neuen Registerkarte zu öffnen. Das Design wird im Design-Editor geöffnet. Zum Festlegen des Designs verwendet der Design-Editor ein sofort einsatzbereites adaptives Formular, das mit AEM [!DNL Forms] mitgeliefert wird.
+1. Wählen Sie **[!UICONTROL Erstellen]** aus. Ein Design wird erstellt und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt. Wählen Sie **[!UICONTROL Öffnen]** aus, um das neu erstellte Design in einer neuen Registerkarte zu öffnen. Das Design wird im Design-Editor geöffnet. Zum Festlegen des Designs verwendet der Design-Editor ein sofort einsatzbereites adaptives Formular, das mit AEM [!DNL Forms] mitgeliefert wird.
 
    Informationen zur Verwendung der Benutzeroberfläche des Design-Editors finden Sie unter [Informationen zum Design-Editor](/help/forms/using/themes.md#aboutthethemeeditor).
 
-1. Auswählen **[!UICONTROL Designoptionen]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Konfigurieren]**. Im **[!UICONTROL Vorschau des Formulars]** ein, wählen Sie die **shipping-address-add-update-form** adaptives Formular, auswählen ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png)auswählen **[!UICONTROL Speichern]**. Jetzt ist der Design-Editor konfiguriert, um Ihr eigenes adaptives Formular anstelle des adaptiven Standardformulars zu benutzen. Auswählen **[!UICONTROL Abbrechen]** , um zum Design-Editor zurückzukehren.
+1. Wählen Sie **[!UICONTROL Design-Optionen]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Konfigurieren]** aus. Wählen Sie im Feld **[!UICONTROL Vorschauformular]** das adaptive Formular **shipping-address-add-update-form**, ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) und dann **[!UICONTROL Speichern]** aus. Jetzt ist der Design-Editor konfiguriert, sodass Sie Ihr eigenes adaptives Formular anstelle des adaptiven Standardformulars benutzen können. Wählen Sie **[!UICONTROL Abbrechen]** aus, um zum Design-Editor zurückzukehren.
 
    ![custom-theme](assets/custom-theme.png)
 
@@ -125,9 +125,9 @@ Im Rahmen dieses Tutorials gestalten Sie Kopf- und Fußzeilen, Text- und numeris
 
 Kopf- und Fußzeile bieten ein konsistentes und unverwechselbares Erscheinungsbild für ein adaptives Formular. Im Allgemeinen enthält die Kopfzeile das Logo und den Namen der Organisation, während die Fußzeile Copyright-Informationen enthält. Diese Angaben bleiben in unterschiedlichen Formularen einer Organisation identisch. So gestalten Sie die Kopf- und Fußzeile des adaptiven Formulars „shipping-address-add-update-form“:
 
-1. Navigieren Sie zur Option **[!UICONTROL Kopfzeile]** > **[!UICONTROL Text]** im Bedienfeld „Selektoren“. Das Bedienfeld „Selektoren“ befindet sich auf der linken Seite des Design-Editors. Wenn das Bedienfeld nicht sichtbar ist, wählen Sie ![Umschalten des Seitenbereichs](assets/toggle-side-panel.png) Seitliches Bedienfeld ein/aus.
+1. Navigieren Sie zur Option **[!UICONTROL Kopfzeile]** > **[!UICONTROL Text]** im Bedienfeld „Selektoren“. Das Bedienfeld „Selektoren“ befindet sich auf der linken Seite des Design-Editors. Wenn das Bedienfeld nicht sichtbar ist, wählen Sie ![toggle-side-panel](assets/toggle-side-panel.png) – „Seitliches Bedienfeld ein/aus“ aus.
 
-1. Legen Sie die folgenden Eigenschaften in der **[!UICONTROL Text]** Akkordeon und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Legen Sie die folgenden Eigenschaften im Akkordeon **[!UICONTROL Text]** fest und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) aus.
 
    | Eigenschaft | Wert |
    |---|---|
@@ -135,10 +135,10 @@ Kopf- und Fußzeile bieten ein konsistentes und unverwechselbares Erscheinungsbi
    | Schriftfarbe | FFFFFF |
    | Schriftgrad | 54 px |
 
-1. Wählen Sie die [!UICONTROL header] Widget und auswählen **[!UICONTROL Kopfzeile]**. Die Optionen zum Formatieren des Kopfzeilen-Widgets werden auf der linken Seite angezeigt. Erweitern Sie die **[!UICONTROL Dimensionen und Position]** Akkordeon festlegen **[!UICONTROL Höhe]** nach `120px`und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
-1. Erweitern Sie das Akkordeon **[!UICONTROL Hintergrund]** des Kopfzeilen-Widgets und legen Sie für die **[!UICONTROL Hintergrundfarbe]** `F6921E.` fest.
+1. Wählen Sie das Widget [!UICONTROL Kopfzeile] und dann **[!UICONTROL Kopfzeile]** aus. Die Optionen zum Formatieren des Kopfzeilen-Widgets werden auf der linken Seite angezeigt. Erweitern Sie das Akkordeon **[!UICONTROL Abmessungen und Position]**, legen Sie für die **[!UICONTROL Höhe]** die Option `120px` fest und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) aus.
+1. Erweitern Sie das Akkordeon **[!UICONTROL Hintergrund]** des Kopfzeilen-Widgets und legen Sie für die **[!UICONTROL Hintergrundfarbe]** die Option `F6921E.` fest.
 
-   Bewegen **[!UICONTROL Bild und Verlauf]** > **[!UICONTROL + Hinzufügen]** auswählen **[!UICONTROL Bild]**. Legen Sie die folgenden Eigenschaften fest und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   Bewegen Sie den Mauszeiger über **[!UICONTROL Bild und Verlauf]** > **[!UICONTROL + Hinzufügen]** und wählen Sie **[!UICONTROL Bild]** aus. Legen Sie die folgenden Eigenschaften fest und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) aus.
 
    | Eigenschaft | Wert |
    |---|---|
@@ -146,7 +146,7 @@ Kopf- und Fußzeile bieten ein konsistentes und unverwechselbares Erscheinungsbi
    | Position | Rechts unten |
    | Kachelung | Keine Wiederholung |
 
-1. Wählen Sie im Design-Editor das Logo in der Kopfzeile aus und wählen Sie **[!UICONTROL Kopfzeilenlogo]**. Erweitern Sie das Akkordeon Dimensionen &amp; Position , legen Sie die folgenden Eigenschaften fest und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Wählen Sie im Design-Editor das Logo in der Kopfzeile und **[!UICONTROL Kopfzeilen-Logo]** aus. Erweitern Sie das Akkordeon „Abmessungen und Position“, legen Sie die folgenden Eigenschaften fest und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) aus.
 
    <table> 
     <tbody> 
@@ -161,7 +161,7 @@ Kopf- und Fußzeile bieten ein konsistentes und unverwechselbares Erscheinungsbi
         <li>Oben: 1,5 rem</li> 
         <li>Unten: -35 px</li> 
         <li>Links: 1rem<strong><br /> </strong></li> 
-       </ul> <p><strong>Tipp:</strong> Wählen Sie die <img src="assets/link.png"> Verknüpfungssymbol, um für jedes Feld einen anderen Wert bereitzustellen.<br /> </p> </td> 
+       </ul> <p><strong>Tipp:</strong> Wählen Sie das Link-Symbol <img src="assets/link.png">, um einen anderen Wert für jedes Feld anzugeben.<br /> </p> </td> 
      </tr> 
      <tr> 
       <td>Höhe</td> 
@@ -170,13 +170,13 @@ Kopf- und Fußzeile bieten ein konsistentes und unverwechselbares Erscheinungsbi
     </tbody> 
    </table>
 
-1. Wählen Sie das Fußzeilen-Widget aus und wählen Sie **[!UICONTROL Fußzeile]**. Erweitern Sie die **[!UICONTROL Hintergrund]** Akkordeon festlegen **[!UICONTROL Hintergrundfarbe]** nach `F6921E`und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Wählen Sie das Fußzeilen-Widget und dann **[!UICONTROL Fußzeile]** aus. Erweitern Sie das Akkordeon für den **[!UICONTROL Hintergrund]**, legen Sie für die **[!UICONTROL Hintergrundfarbe]** `F6921E` fest und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 ### Gestalten der Datenerfassungskomponente und Anwenden eines Hintergrunds auf das adaptive Formular {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
 Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten zu erfassen,  zum Beispiel ein Textfeld und ein numerisches Feld. Sie können für alle Datenerfassungskomponenten einen identischen Stil bereitstellen oder jeder Komponente einen eigenen Stil zuweisen.  In diesem Lernprogramm wird ein identischer Stil auf numerische Felder (Kunden-ID, Postleitzahl) und Textfelder (Kunden-ID, Name, Lieferadresse, Status, E-Mail) angewendet. So gestalten Sie die Datenerfassungskomponenten:
 
-1. Wählen Sie die **[!UICONTROL Kunden-ID]** und wählen Sie die **[!UICONTROL Feld-Widget]** -Option. Legen Sie die folgenden Eigenschaften fest und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Wählen Sie das Feld **[!UICONTROL Kunden-ID]** und dann die Option **[!UICONTROL Feld-Widget]**. Legen Sie die folgenden Eigenschaften fest und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -232,7 +232,7 @@ Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten 
     </tbody> 
     </table>
 
-1. Wählen Sie den leeren Bereich über dem **[!UICONTROL Kunden-ID]** Feld und wählen Sie **[!UICONTROL Container für responsives Bedienfeld]**. Legen Sie den **[!UICONTROL Hintergrund]** > **[!UICONTROL Hintergrundfarbe]** auf F1F2F2 fest. Auswählen ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Wählen Sie zunächst den leeren Bereich über dem Feld **[!UICONTROL Kunden-ID]** und dann **[!UICONTROL Container für responsives Panel]**. Legen Sie den **[!UICONTROL Hintergrund]** > **[!UICONTROL Hintergrundfarbe]** auf F1F2F2 fest. Wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) aus.
 
    ![Responsiver Panel-Container](do-not-localize/responsive-panel-container.png)
 
@@ -240,7 +240,7 @@ Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten 
 
 Sie können ein benutzerdefiniertes Design verwenden, um allen Schaltflächen des adaptiven Formulars einen identischen Stil zuzuweisen, bzw. einen [Inline-Stil](/help/forms/using/inline-style-adaptive-forms.md), um einen Stil einer bestimmten Schaltfläche zuzuweisen. So gestalten Sie die Schaltflächen:
 
-1. Wählen Sie die **[!UICONTROL Einsenden]** und wählen Sie die **[!UICONTROL Schaltfläche]** -Option. Legen Sie die folgenden Eigenschaften fest und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Wählen Sie die Schaltfläche **[!UICONTROL Senden]** und dann **[!UICONTROL Option]** aus. Legen Sie die folgenden Eigenschaften fest und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) aus.
 
    <table> 
     <tbody> 
@@ -301,14 +301,14 @@ Einige Stile gelten nur für eine bestimmte Komponente. Diese Komponenten werden
 
    ![style-option](assets/style-option.png)
 
-1. Wählen Sie die **[!UICONTROL Attach]** und wählen Sie die ![aem_6_3_edit](assets/aem_6_3_edit.png)Symbol. Stellen Sie die folgenden Eigenschaften im Akkordeon **[!UICONTROL Abmessungen und Position]** ein:
+1. Wählen Sie die Schaltfläche **[!UICONTROL Anhängen]** und dann das Symbol ![aem_6_3_edit](assets/aem_6_3_edit.png) aus. Stellen Sie die folgenden Eigenschaften im Akkordeon **[!UICONTROL Abmessungen und Position]** ein:
 
    | Eigenschaft | Wert |
    |---|---|
    | Fließkommazahl | Linksbündig |
    | Breite | 10% |
 
-1. Wählen Sie die **[!UICONTROL Von Behörden anerkannter Adressnachweis]** und wählen Sie die ![aem_6_3_edit](assets/aem_6_3_edit.png)Symbol. Legen Sie die folgenden Eigenschaften fest:
+1. Wählen Sie die Option **[!UICONTROL Von Behörden anerkannter Adressnachweis]** und dann das Symbol ![aem_6_3_edit](assets/aem_6_3_edit.png) aus. Legen Sie die folgenden Eigenschaften fest:
 
    <table> 
     <tbody> 
@@ -398,7 +398,7 @@ Einige Stile gelten nur für eine bestimmte Komponente. Diese Komponenten werden
     </tbody> 
    </table>
 
-1. Wählen Sie die **[!UICONTROL Einsenden]** und wählen Sie die ![aem_6_3_edit](assets/aem_6_3_edit.png) Symbol. Legen Sie die folgenden Eigenschaften fest:
+1. Wählen Sie die Schaltfläche **[!UICONTROL Senden]** und dann das Symbol ![aem_6_3_edit](assets/aem_6_3_edit.png) aus. Legen Sie die folgenden Eigenschaften fest:
 
    <table> 
     <tbody> 

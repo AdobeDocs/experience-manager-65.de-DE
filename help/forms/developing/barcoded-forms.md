@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1911'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Weitere Informationen zum Barcode-Formular-Service finden Sie in der [Service-Re
 
 ## Decodieren der Daten von Barcode-Formularen {#decoding-barcoded-form-data}
 
-Sie können die Barcode-Formular-Service-API verwenden, um Daten aus einem PDF-Formular oder einem Bild mit einem Barcode zu decodieren. Das Dekodieren von Formulardaten bedeutet das Extrahieren von Daten, die sich im Barcode befinden. Bevor Daten aus einem PDF-Formular (oder Bild) decodiert werden können, muss ein Benutzer das Formular mit Daten ausfüllen.
+Sie können die Barcode-Formular-Service-API verwenden, um Daten aus einem PDF-Formular oder einem Bild mit einem Barcode zu decodieren. Das Decodieren von Formulardaten bedeutet das Extrahieren von Daten, die im Barcode enthalten sind. Bevor Daten aus einem PDF-Formular (oder Bild) decodiert werden können, muss ein Benutzer das Formular mit Daten ausfüllen.
 
 >[!NOTE]
 >
@@ -57,9 +57,9 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-barcodedforms-client.jar
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* xercesImpl.jar (in &lt;install directory=&quot;&quot;>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
+* xercesImpl.jar (unter &lt;Installationsverzeichnis>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
 
-Wenn AEM Forms auf einem unterstützten J2EE-Anwendungsserver bereitgestellt wird, der nicht JBOSS ist, müssen Sie adobe-utilities.jar und jbossall-client.jar durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Anwendungsserver sind, auf dem AEM Forms bereitgestellt wird. Informationen zum Speicherort aller AEM Forms-JAR-Dateien finden Sie unter [Einbeziehen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Wenn AEM Forms auf einem unterstützten J2EE-Anwendungs-Server bereitgestellt wird, der nicht JBOSS ist, müssen Sie „adobe-utilities.jar“ und „jbossall-client.jar“ durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Anwendungs-Server sind, auf dem AEM Forms bereitgestellt wird. Informationen zum Speicherort aller AEM Forms-JAR-Dateien finden Sie unter [Einbeziehen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Erstellen eines Client-API-Objekts für Barcode-Formulare**
 
@@ -67,7 +67,7 @@ Bevor Sie einen Barcode-Formular-Service-Vorgang programmgesteuert durchführen 
 
 **Abrufen eines PDF-Formulars, das mit Barcodes versehene Daten enthält**
 
-Rufen Sie ein PDF-Formular mit einem Barcode ab, der mit Benutzerdaten ausgefüllt wurde.
+Rufen Sie ein PDF-Formular mit einem Barcode ab, das mit Benutzerdaten ausgefüllt wurde.
 
 **Decodieren der Daten aus dem PDF-Formular**
 
@@ -125,7 +125,7 @@ So decodieren Sie Formulardaten mithilfe der Barcode-Formulare-API (Java):
 
 1. Decodieren der Daten aus dem PDF-Formular
 
-   Dekodieren Sie die Formulardaten, indem Sie die `BarcodedFormsServiceClient` -Objekt `decode` -Methode verwenden und die folgenden Werte übergeben:
+   Decodieren Sie die Formulardaten, indem Sie die Methode `decode` des `BarcodedFormsServiceClient`-Objekts aufrufen und die folgenden Werte übergeben:
 
    * Das `com.adobe.idp.Document`-Objekt, das das PDF-Formular enthält.
    * Ein `java.lang.Boolean`-Objekt, das angibt, ob ein PDF417-Barcode decodiert werden soll.
@@ -142,9 +142,9 @@ So decodieren Sie Formulardaten mithilfe der Barcode-Formulare-API (Java):
 
 1. Konvertieren der Daten in eine XML-Datenquelle
 
-   Konvertieren Sie die dekodierten Daten durch Aufrufen der `BarcodedFormsServiceClient` -Objekt `extractToXML` -Methode verwenden und die folgenden Werte übergeben:
+   Konvertieren Sie die decodierten Daten entweder in XDP- oder in XFDF-Daten, indem Sie die Methode `extractToXML` des `BarcodedFormsServiceClient`-Objekts aufrufen und die folgenden Werte übergeben:
 
-   * Die `org.w3c.dom.Document` -Objekt, das dekodierte Daten enthält (verwenden Sie dazu die `decode` Rückgabewert der Methode).
+   * Das `org.w3c.dom.Document`-Objekt, das die decodierten Daten enthält (stellen Sie sicher, dass Sie den Rückgabewert der Methode `decode` verwenden).
    * Ein `com.adobe.livecycle.barcodedforms.Delimiter`-Auflistungswert, der das Trennzeichen für die Zeile angibt. Es wird empfohlen, `Delimiter.Carriage_Return` anzugeben.
    * Ein `com.adobe.livecycle.barcodedforms.Delimiter`-Auflistungswert, der das Feldtrennzeichen angibt. Geben Sie zum Beispiel `Delimiter.Tab` an.
    * Ein `com.adobe.livecycle.barcodedforms.XMLFormat`-Auflistungswert, der angibt, ob die Barcode-Daten in XDP- oder XFDF-XML-Daten konvertiert werden sollen. Geben Sie beispielsweise `XMLFormat.XDP` an, um die Daten in XDP-Daten zu konvertieren.
@@ -157,9 +157,9 @@ So decodieren Sie Formulardaten mithilfe der Barcode-Formulare-API (Java):
 
 1. Verarbeiten der decodierten Daten
 
-   * Iteration durch die `java.util.List` Objekt zum Abrufen `org.w3c.dom.Document` -Objekt, das sich in der Liste befindet.
+   * Iterieren Sie durch das `java.util.List`-Objekt, um jedes `org.w3c.dom.Document`-Objekt zu erhalten, das sich in der Liste befindet.
    * Konvertieren Sie für jedes Element in der Liste das `org.w3c.dom.Document`-Objekt in ein `com.adobe.idp.Document`-Objekt. (Die Anwendungslogik, die ein `org.w3c.dom.Document`-Objekt in ein `com.adobe.idp.Document`-Objekt umwandelt, wird im Beispiel zum Dekodieren von Barcode-Formulardaten mithilfe der Java-API gezeigt).
-   * Speichern Sie die XML-Daten als XML-Datei, indem Sie die `com.adobe.idp.Document` -Objekt `copyToFile`und übergeben Sie ein File -Objekt, das die XML-Datei darstellt.
+   * Speichern Sie die XML-Daten als XML-Datei, indem Sie die Methode `copyToFile` des `com.adobe.idp.Document`-Objekts aufrufen und ein Dateiobjekt übergeben, das die XML-Datei darstellt.
 
 **Siehe auch**
 
@@ -192,7 +192,7 @@ Dekodieren Sie Formulardaten mithilfe der Barcode-Formulare-API (Web-Service):
 
 1. Decodieren der Daten aus dem PDF-Formular
 
-   Dekodieren Sie die Formulardaten, indem Sie die `BarcodedFormsServiceService` -Objekt `decode` -Methode verwenden und die folgenden Werte übergeben:
+   Decodieren Sie die Formulardaten, indem Sie die Methode `decode` des `BarcodedFormsServiceService`-Objekts aufrufen und die folgenden Werte übergeben:
 
    * Das `BLOB`-Objekt, das das PDF-Formular enthält.
    * Ein `Boolean`-Objekt, das angibt, ob ein PDF417-Barcode decodiert werden soll.
@@ -209,9 +209,9 @@ Dekodieren Sie Formulardaten mithilfe der Barcode-Formulare-API (Web-Service):
 
 1. Konvertieren der Daten in eine XML-Datenquelle
 
-   Konvertieren Sie die dekodierten Daten durch Aufrufen der `BarcodedFormsServiceService` -Objekt `extractToXML` -Methode verwenden und die folgenden Werte übergeben:
+   Konvertieren Sie die decodierten Daten entweder in XDP- oder in XFDF-Daten, indem Sie die Methode `extractToXML` des `BarcodedFormsServiceService`-Objekts aufrufen und die folgenden Werte übergeben:
 
-   * Ein string -Wert, der dekodierte Daten enthält (stellen Sie sicher, dass Sie die `decode` Rückgabewert der Methode).
+   * Ein Zeichenfolgenwert, der decodierte Daten enthält (stellen Sie sicher, dass Sie den Rückgabewert der Methode `decode` verwenden).
    * Ein `Delimiter`-Auflistungswert, der das Trennzeichen für die Zeile angibt. Es wird empfohlen, `Delimiter.Carriage_Return` anzugeben.
    * Ein `Delimiter`-Auflistungswert, der das Feldtrennzeichen angibt. Geben Sie zum Beispiel `Delimiter.Tab` an.
    * Ein `XMLFormat`-Auflistungswert, der angibt, ob die Barcode-Daten in XDP- oder XFDF-XML-Daten konvertiert werden sollen. Geben Sie beispielsweise `XMLFormat.XDP` an, um die Daten in XDP-Daten zu konvertieren.

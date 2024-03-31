@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2444'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Die wichtigsten MSM-API-Objekte interagieren wie folgt (siehe auch [Verwendete B
 
 * **`Blueprint`**
 
-  Ein `Blueprint` (wie in [Blueprint-Konfiguration](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations)) legt die Seiten fest, von denen eine Live Copy Inhalte erben kann.
+  Ein `Blueprint` (wie in der [Blueprint-Konfiguration](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations)) legt die Seiten fest, von denen eine Live Copy Inhalte erben kann.
 
   ![Blueprint](assets/chlimage_1-74.png)
 
@@ -150,7 +150,7 @@ Die folgenden Objekte sind als Parameter der `execute`-Methode vom `LiveAction`-
 
 * Der Wert für das Zurücksetzen legt den Rollout-Modus für das Zurücksetzen fest.
 
-Von diesen Objekten können Sie alle Informationen über die `LiveCopy`. Mit den `Resource`-Objekten können Sie auch die `ResourceResolver`-, `Session`- und `Node`-Objekte abrufen. Diese Objekte sind bei der Bearbeitung der Repository-Inhalte hilfreich:
+Über diese Objekte können Sie alle Informationen zur `LiveCopy` abrufen. Mit den `Resource`-Objekten können Sie auch die `ResourceResolver`-, `Session`- und `Node`-Objekte abrufen. Diese Objekte sind bei der Bearbeitung der Repository-Inhalte hilfreich:
 
 In der ersten Zeile des folgenden Codes ist das `Resource`-Objekt der Quellseite die Quelle:
 
@@ -201,7 +201,7 @@ Die neue Rollout-Konfiguration steht dann zur Verfügung, wenn Sie die Rollout-K
 
 1. **Erstellen** Sie darunter einen Knoten mit den folgenden Eigenschaften:
 
-   * **Name**: Der Knotenname der Rollout-Konfiguration. md#installed-sync-actions), zum Beispiel `contentCopy` oder `workflow`.
+   * **Name**: Der Knotenname der Rollout-Konfiguration. md#installed-synchronization-actions), zum Beispiel `contentCopy` oder `workflow`.
    * **Typ**: `cq:RolloutConfig`
 
 1. Fügen Sie diesem Knoten die folgenden Eigenschaften hinzu:
@@ -235,7 +235,7 @@ Fügen Sie untergeordnete Knoten des Typs `cq:LiveSyncAction` hinzu, um Synchron
 1. **Erstellen** Sie einen Knoten mit den folgenden Knoteneigenschaften:
 
    * **Name**: Der Knotenname der Synchronisierungsaktion.
-Der Name muss mit dem **Aktionsname** in der Tabelle unter [Synchronisierungsaktionen](/help/sites-administering/msm-sync.md#installed-synchronization-actions), beispielsweise `contentCopy` oder `workflow`.
+Der Name muss dem **Aktionsnamen** in der Tabelle unter [Synchronisierungsaktionen](/help/sites-administering/msm-sync.md#installed-synchronization-actions) entsprechen, z. B. `contentCopy` oder `workflow`.
    * **Typ**: `cq:LiveSyncAction`
 
 1. Fügen Sie so viele Synchronisierungsaktionsknoten hinzu wie erforderlich und konfigurieren Sie sie. Ordnen Sie die Aktionsknoten so an, dass sie die Reihenfolge aufweisen, in der sie ausgeführt werden sollen. Der oberste Aktionsknoten wird zuerst ausgeführt.
@@ -620,7 +620,7 @@ MSM bestimmt anhand einer gespeicherten Liste von Sprach- und Ländercodes den N
 
 * Sprachtitel
 * Ländernamen
-* Standardländer für Sprachen (für Codes wie `en`, `de`, unter anderem)
+* Standardländer für Sprachen (bei Codes wie `en`, `de` oder anderen)
 
 Die Sprachliste ist unter dem Knoten `/libs/wcm/core/resources/languages` gespeichert. Jeder untergeordnete Knoten steht für eine Sprache oder ein Sprachland:
 
@@ -647,7 +647,7 @@ So bearbeiten Sie die Sprachen:
 1. Klicken Sie auf **Tools** > **Vorgänge** > **Web-Konsole**. Klicken Sie in dieser Konsole auf **OSGi** > **Konfiguration**.
 1. Suchen Sie **Day CQ WCM Language Manager**, klicken Sie darauf und ändern Sie den Wert von **Language List** in `/apps/wcm/core/resources/languages`. Klicken Sie dann auf **Speichern**.
 
-   ![Day CQ WCM-Sprach-Manager](assets/chlimage_1-78.png)
+   ![Day CQ WCM Language Manager](assets/chlimage_1-78.png)
 
 ## Konfigurieren von MSM-Sperren bei Seiteneigenschaften (Touch-optimierte Benutzeroberfläche) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 

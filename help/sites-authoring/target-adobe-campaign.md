@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '801'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -33,9 +33,9 @@ Im Rahmen des Einrichtens der Segmentierung werden Segmente erstellt sowie eine 
 So erstellen Sie Segmente:
 
 1. Öffnen Sie die [Segmentierungskonsole](http://localhost:4502/miscadmin#/etc/segmentation) unter **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**.
-1. Erstellen Sie eine Seite und geben Sie einen Titel ein, beispielsweise **AC-Segmente**- und wählen Sie die **Segment (Adobe Campaign)** Vorlage.
+1. Erstellen Sie eine Seite, geben Sie einen Titel ein (zum Beispiel **AC-Segmente**) und wählen Sie die Vorlage **Segment (Adobe Campaign)**
 1. Wählen Sie die erstellte Seite in der Strukturansicht auf der linken Seite aus.
-1. Erstellen Sie ein Segment beispielsweise für männliche Benutzer, indem Sie eine Seite unter dem von Ihnen erstellten Segment namens Männlich erstellen und wählen Sie die **Segment (Adobe Campaign)** Vorlage.
+1. Erstellen Sie ein Segment, mit dem beispielsweise männliche Benutzer angesprochen werden, indem Sie eine Seite unter dem Segment erstellen, die Sie „männlich“ nennen, und die Vorlage **Segment (Adobe Campaign)** wählen.
 1. Öffnen Sie die erstellte Segmentseite und ziehen Sie per Drag-and-Drop eine **Segment-ID** aus dem Sidekick auf die Seite.
 1. Doppelklicken Sie auf das Merkmal, geben Sie die zugewiesene ID des männlichen Segments in Adobe Campaign ein (beispielsweise **MÄNNLICH**) und klicken Sie auf **OK**. Die folgende Meldung sollte angezeigt werden: *`targetData.segmentCode == "MALE"`*
 1. Wiederholen Sie diese Schritte für ein weiteres Segment, beispielsweise eines, mit dem Benutzerinnen angesprochen werden.
@@ -44,26 +44,26 @@ So erstellen Sie Segmente:
 
 So erstellen Sie eine Marke:
 
-1. In **Sites**, navigieren Sie zum **Kampagnen** -Ordner (z. B. in We.Retail).
-1. Klicks **Seite erstellen** und geben Sie einen Titel für die Seite ein, z. B. We.Retail Brand, und wählen Sie die **Marke** Vorlage.
+1. Navigieren Sie auf **Sites** zum Ordner **Kampagnen** (zum Beispiel in We.Retail).
+1. Klicken Sie auf **Seite erstellen**, geben Sie einen Titel für die Seite ein (zum Beispiel „We.Retail-Marke“) und wählen Sie die Vorlage **Marke**.
 
 ### Erstellen einer Kampagne {#creating-a-campaign}
 
 So erstellen Sie eine Kampagne:
 
-1. Öffnen Sie die **Marke** Seite, die Sie erstellt haben.
+1. Öffnen Sie die Seite **Marke**, die Sie erstellt haben.
 1. Klicken Sie auf **Seite erstellen**, geben Sie einen Titel für Ihre Seite an (beispielsweise „We.Retail-Kampagne“), wählen Sie die Vorlage **Kampagne** aus und klicken Sie auf **Erstellen**.
 
 ### Erstellen von Erlebnissen {#creating-experiences}
 
 So erstellen Sie Erlebnisse für Segmente:
 
-1. Öffnen Sie die **Kampagne** Seite, die Sie erstellt haben.
+1. Öffnen Sie die Seite **Kampagne**, die Sie erstellt haben.
 1. Erstellen Sie Erlebnisse für Ihre Segmente, indem Sie auf **Seite erstellen** klicken, und geben Sie einen Titel für Ihre Seite ein, z. B. „Männlich“, wenn Sie ein Erlebnis für das Segment „Männlich“ erstellen, und wählen Sie dann die Vorlage **Erlebnis** aus.
 1. Öffnen Sie die erstellte Erlebnisseite.
 1. Klicken Sie auf **Bearbeiten** und unterhalb der Segmente auf **Element hinzufügen**.
-1. Geben Sie den Pfad zum männlichen Segment ein, beispielsweise **/etc/segmentation/ac-segments/male** und klicken **OK**. Es wird folgende Meldung angezeigt: *Erlebnis ist ausgerichtet auf: Männlich*.
-1. Wiederholen Sie die vorherigen Schritte, um ein Erlebnis für alle Segmente zu erstellen, z. B. für die weibliche Zielgruppe.
+1. Geben Sie den Pfad zum Segment „männlich“ ein, zum Beispiel **/etc/segmentation/ac-segments/male**, und klicken Sie auf **OK**. Es sollte die folgende Meldung angezeigt werden: *Erlebnis ist ausgerichtet auf: Männlich*.
+1. Wiederholen Sie die vorherigen Schritte, um ein Erlebnis für alle Segmente zu erstellen, zum Beispiel eine weibliche Zielgruppe.
 
 ## Erstellen eines Newsletters mit zielgerichteten Inhalten {#creating-a-newsletter-with-targeted-content}
 
@@ -71,11 +71,11 @@ Nachdem Sie Segmente, eine Marke, eine Kampagne und ein Erlebnis erstellt haben,
 
 >[!NOTE]
 >
->[E-Mail-Muster stehen nur in Geometrixx zur Verfügung](/help/sites-developing/we-retail.md). Laden Sie Beispielinhalt aus Package Share herunter.
+>[E-Mail-Muster stehen nur in Geometrixx zur Verfügung](/help/sites-developing/we-retail.md). Laden Sie Geometrixx-Beispielinhalt aus Package Share herunter.
 
-So erstellen Sie einen Newsletter mit zielgerichtetem Inhalt:
+So erstellen Sie einen Newsletter mit zielgerichteten Inhalten:
 
-1. Erstellen Sie einen Newsletter mit zielgerichteten Inhalten: Klicken Sie unter &quot;E-Mail-Kampagnen in Geometrixx Outdoors&quot;auf **Erstellen** > **Seite** und wählen Sie eine der Adobe Campaign Mail-Vorlagen aus.
+1. Erstellen eines Newsletters mit zielgerichteten Inhalten: Klicken Sie unter „E-Mail-Kampagnen“ in Geometrixx Outdoors auf **Erstellen** > **Seite** und wählen Sie eine der Adobe Campaign-E-Mail-Vorlagen.
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 
@@ -87,7 +87,7 @@ So erstellen Sie einen Newsletter mit zielgerichtetem Inhalt:
 
    >[!NOTE]
    >
-   >Standardmäßig werden die in AEM enthaltenen E-Mail-Beispiele als Zielgruppenbestimmungs-Engine für Adobe Campaign verwendet. Bei benutzerdefinierten Newslettern müssen Sie möglicherweise Adobe Campaign als Zielgruppenbestimmungs-Engine auswählen. Klicken Sie beim Targeting in der Symbolleiste auf +, geben Sie einen Titel für die neue Aktivität ein und wählen Sie **Adobe Campaign** als Targeting-Engine.
+   >Standardmäßig werden die in AEM enthaltenen E-Mail-Beispiele als Zielgruppenbestimmungs-Engine für Adobe Campaign verwendet. Bei benutzerdefinierten Newslettern müssen Sie möglicherweise Adobe Campaign als Zielgruppenbestimmungs-Engine auswählen. Klicken Sie während des Targetings in der Symbolleiste auf „+“, geben Sie einen Namen für die neue Aktivität ein und wählen Sie **Adobe Campaign** als Targeting-Engine aus.
 
 1. Klicken Sie auf **Standard** und dann auf die Komponente „Text und Personalisierung“, die Sie hinzugefügt haben, und Sie sehen eine Zielscheibe mit darin steckendem Pfeil. Klicken Sie auf das Symbol, um diese Komponente als Ziel festzulegen.
 
@@ -107,4 +107,4 @@ So erstellen Sie einen Newsletter mit zielgerichtetem Inhalt:
 
    >[!NOTE]
    >
-   >Wenn Sie die Segmente auch in Adobe Campaign einrichten, klicken Sie auf **Vorschau** zeigt Ihnen die Erlebnisse für jedes Segment an.
+   >Sollten Sie die Segmente auch in Adobe Campaign festgelegt haben, werden Ihnen beim Klicken auf **Vorschau** die Erlebnisse für die unterschiedlichen Segmente angezeigt.

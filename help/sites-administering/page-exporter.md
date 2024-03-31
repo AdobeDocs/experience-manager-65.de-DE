@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '997'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -149,7 +149,7 @@ Mit dem Knoten design wird das für die exportierte Seite genutzte Design kopier
    * Er verfügt nicht über die Eigenschaft `path`, da der aktuelle Seitenpfad dynamisch in die Konfiguration kopiert wird.
 
 * `generic`
-Ein generischer Knoten wird zum Kopieren von Ressourcen wie clientlibs verwendet `.js` oder `.css` -Dateien in die ZIP-Datei. Er weist die folgenden Eigenschaften auf:
+Mit einem generischen Knoten werden Ressourcen wie die `.js`- oder `.css`-Dateien der Client-Bibliotheken in die ZIP-Datei kopiert. Er weist die folgenden Eigenschaften auf:
 
    * Optional.
    * Befindet sich unter `/etc/contentsync/templates/<mysite>`.
@@ -157,7 +157,7 @@ Ein generischer Knoten wird zum Kopieren von Ressourcen wie clientlibs verwendet
    * Knotentyp ist `nt:unstructured`.
    * Er hat eine `type`-Eigenschaft und mit `type` verwandte Eigenschaften. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
-  Beispielsweise kopiert der folgende Konfigurationsknoten die `mysite.clientlibs.js` -Dateien in die ZIP-Datei:
+  Beispielsweise kopiert der folgende Konfigurationsknoten die Dateien `mysite.clientlibs.js` in die ZIP-Datei:
 
   ```xml
   "mysite.clientlibs.js": {

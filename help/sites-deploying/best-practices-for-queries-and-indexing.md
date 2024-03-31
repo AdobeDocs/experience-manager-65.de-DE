@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4520'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -86,7 +86,7 @@ Zwar werden alle Abfragen vor der Ausführung in SQL2 konvertiert, jedoch ist de
 
 ### Das Tool „Abfrage erläutern“ {#the-explain-query-tool}
 
-Wie bei jeder anderen Abfragesprache besteht der erste Schritt zur Optimierung einer Abfrage darin, zu verstehen, wie sie ausgeführt wird. Dies ermöglicht das [Tool „Abfrage erläutern“](/help/sites-administering/operations-dashboard.md#explain-query), das zum Vorgangs-Dashboard gehört. Mithilfe dieses Tools kann eine Abfrage geladen und erläutert werden. Eine Warnung wird angezeigt, wenn die Abfrage Probleme mit einem großen Repository und einer langen Laufzeit sowie mit den verwendeten Indizes verursacht. Das Tool kann auch eine Liste langsamer und gängiger Abfragen laden, die dann erläutert und optimiert werden können.
+Wie bei jeder anderen Abfragesprache besteht der erste Schritt zur Optimierung einer Abfrage darin, zu verstehen, wie sie ausgeführt wird. Dies ermöglicht das [Tool „Abfrage erläutern“](/help/sites-administering/operations-dashboard.md#explain-query), das zum Vorgangs-Dashboard gehört. Mithilfe dieses Tools kann eine Abfrage geladen und erläutert werden. Neben der Ausführungsdauer und den verwendeten Indizes wird eine Warnung angezeigt, falls die Abfrage bei einem großen Repository Probleme verursachen würde. Das Tool kann auch eine Liste langsamer und gängiger Abfragen laden, die dann erläutert und optimiert werden können.
 
 ### DEBUG-Protokollierung für Abfragen {#debug-logging-for-queries}
 
@@ -106,13 +106,13 @@ Lucene registriert ein JMX-Bean, das Details zum indizierten Inhalt enthält, ei
 
 Ein Zugriff ist über die JMX-Konsole unter `https://server:port/system/console/jmx` möglich.
 
-Nachdem Sie in der JMX-Konsole angemeldet sind, suchen Sie nach **Lucene-Indexstatistiken** um sie zu finden. Weitere Indexstatistiken finden Sie im MBean **IndexStats**.
+Wenn Sie bei der JMX-Konsole angemeldet sind, suchen Sie nach **Lucene-Indexstatistiken**, um es zu finden. Weitere Indexstatistiken finden Sie im MBean **IndexStats**.
 
 Um Abfragestatistiken zu erhalten, sehen Sie sich das MBean mit der Bezeichnung **Oak Query Statistics** an.
 
-Um Ihre Indizes mit einem Tool wie [Luke](https://code.google.com/archive/p/luke/) durchzugehen, müssen Sie die Oak-Konsole aufrufen und den Index vom `NodeStore` in einem Dateisystemverzeichnis sichern. Anweisungen hierzu finden Sie im Abschnitt [Lucene-Dokumentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+Um Ihre Indizes mit einem Tool wie [Luke](https://code.google.com/archive/p/luke/) durchzugehen, müssen Sie die Oak-Konsole aufrufen und den Index vom `NodeStore` in einem Dateisystemverzeichnis sichern. Anweisungen hierzu finden Sie in der [Lucene-Dokumentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
-Sie können die Indizes in Ihrem System auch im JSON-Format extrahieren. Dazu müssen Sie `https://server:port/oak:index.tidy.-1.json`
+Sie können die Indizes in Ihrem System auch im JSON-Format extrahieren. Dazu müssen Sie auf `https://server:port/oak:index.tidy.-1.json` zugreifen.
 
 ### Abfragelimits {#query-limits}
 
@@ -159,7 +159,7 @@ Darüber hinaus sind Indizes nur dann nützlich, wenn die im Index enthaltenen D
 
 Lucene-Indizes wurden in Oak 1.0.9 eingeführt und bieten einige Optimierungsvarianten, die gegenüber den bei der Ersteinführung von AEM 6 enthaltenen Eigenschaftenindizes leistungsstärker sind. Bei der Entscheidung zwischen Lucene-Indizes oder Eigenschaftenindizes sollten die folgenden Aspekte berücksichtigt werden:
 
-* Lucene-Indizes bieten deutlich mehr Funktionen als Eigenschaftenindizes. Beispielsweise kann ein Eigenschaftenindex nur eine einzelne Eigenschaft indizieren, während ein Lucene-Index eine Vielzahl von Eigenschaften umfassen kann. Weitere Informationen zu allen in Lucene-Indizes verfügbaren Funktionen finden Sie im [Dokumentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+* Lucene-Indizes bieten deutlich mehr Funktionen als Eigenschaftenindizes. Beispielsweise kann ein Eigenschaftenindex nur eine einzelne Eigenschaft indizieren, während ein Lucene-Index eine Vielzahl von Eigenschaften umfassen kann. Weitere Informationen zu den in Lucene-Indizes verfügbaren Funktionen finden Sie in der [Dokumentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 * Lucene-Indizes sind asynchron. Dies ist zwar mit einer erheblichen Leistungssteigerung verbunden, kann aber auch zu einer Verzögerung zwischen dem Schreiben von Daten in das Repository und dem Aktualisieren des Index führen. Wenn Abfragen zu 100 % genaue Ergebnisse zurückgeben müssen, ist ein Eigenschaftenindex erforderlich.
 * Da Lucene-Indizes asynchron sind, können sie keine Eindeutigkeitseinschränkungen erzwingen. Sofern erforderlich, muss ein Eigenschaftenindex angelegt werden.
 
@@ -167,7 +167,7 @@ Im Allgemeinen wird empfohlen, Lucene-Indizes zu verwenden, es sei denn, es best
 
 ### Solr-Indizierung {#solr-indexing}
 
-AEM unterstützt standardmäßig auch die Solr-Indizierung. Dies wird zur Unterstützung der Volltextsuche verwendet, kann aber auch zur Unterstützung beliebiger JCR-Abfragen verwendet werden. Solr sollte in Betracht gezogen werden, wenn die CPU-Kapazität der AEM-Instanzen nicht für die benötigte Anzahl an Anfragen in suchintensiven Bereitstellungen wie suchgesteuerten Websites mit einer hohen Anzahl gleichzeitiger Benutzerinnen und Benutzer ausreicht. Solr kann auch in einem Crawler-basierten Ansatz implementiert werden, um einige der hochmodernen Funktionen dieser Plattform nutzen zu können.
+AEM unterstützt zudem standardmäßig die Solr-Indizierung. Diese dient zur Unterstützung der Volltextsuche, kann aber auch für beliebige JCR-Abfragen verwendet werden. Solr sollte in Betracht gezogen werden, wenn die CPU-Kapazität der AEM-Instanzen nicht für die benötigte Anzahl an Anfragen in suchintensiven Bereitstellungen wie suchgesteuerten Websites mit einer hohen Anzahl gleichzeitiger Benutzerinnen und Benutzer ausreicht. Solr kann auch in einem Crawler-basierten Ansatz implementiert werden, um einige der hochmodernen Funktionen dieser Plattform nutzen zu können.
 
 Solr-Indizes können so konfiguriert werden, dass sie eingebettet auf dem AEM-Server für Entwicklungsumgebungen ausgeführt werden, oder sie können auf eine Remote-Instanz abgeladen werden, um die Suchskalierbarkeit in der Produktions- und Staging-Umgebung zu verbessern. Zwar wird die Skalierbarkeit durch Abladen von Suchvorgängen optimiert, allerdings führt dies zu Latenzzeiten, und deshalb wird von einem solchen Vorgehen, sofern nicht erforderlich, abgeraten. Weitere Informationen zum Konfigurieren einer Solr-Integration und zum Erstellen von Solr-Indizes finden Sie in der [Dokumentation zu Oak-Abfragen und -Indizierung](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
 
@@ -190,7 +190,7 @@ In der Oak-Dokumentation für Lucene-Indizes sind verschiedene Überlegungen auf
 * In einem Eigenschaftenindex trägt ein eindeutiger Eigenschaftsname dazu bei, die Indexgröße zu reduzieren, aber für Lucene-Indizes sollten `nodeTypes` und `mixins` zum Erstellen kohäsiver Indizes verwendet werden. Die Abfrage nach einem bestimmten `nodeType` oder `mixin` ist leistungsstärker als eine `nt:base`-Abfrage. Definieren Sie bei diesem Ansatz `indexRules` für die fraglichen `nodeTypes`.
 
 * Wenn Ihre Abfragen nur unter bestimmten Pfaden ausgeführt werden, erstellen Sie diese Indizes unter diesen Pfaden. Indizes müssen nicht im Stammverzeichnis des Repositorys gespeichert werden.
-* Verwenden Sie einen einzigen Index, wenn alle zu indizierenden Eigenschaften miteinander verknüpft sind, damit Lucene so viele Eigenschaftsbeschränkungen wie möglich nativ bewerten kann. Darüber hinaus wird selbst im Falle einer Zusammenführung nur ein Index für eine Abfrage genutzt.
+* Verwenden Sie einen einzigen Index, wenn alle zu indizierenden Eigenschaften miteinander zusammenhängen, damit Lucene so viele Eigenschaftseinschränkungen wie möglich nativ bewerten kann. Darüber hinaus wird selbst im Falle einer Zusammenführung nur ein Index für eine Abfrage genutzt.
 
 ### CopyOnRead {#copyonread}
 
@@ -298,7 +298,7 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
 
       * Ansonsten sollte eine [Neuindizierung](#how-to-re-index) des Lucene-Index vorgenommen werden.
 
-         * Hinweis: Der Indexstatus der letzten guten Neuindizierung (oder anfänglichen Indizierung) wird verwendet, bis eine neue Neuindizierung ausgelöst wird.
+         * Hinweis: Der Indexstatus der letzten erfolgreichen Neuindizierung (oder Erstindizierung) wird so lange verwendet, bis eine Neuindizierung ausgelöst wird.
 
 ### Fehler- und Ausnahmesituationen {#erring-and-exceptional-situations}
 
@@ -394,7 +394,7 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
 #### Neuindizieren von Lucene-Eigenschaftsindizes {#re-indexing-lucene-property-indexes}
 
 * Verwenden Sie [oak-run.jar zum Neuindizieren](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing) des Lucene-Eigenschaftsindex.
-* Setzen Sie die Eigenschaft &quot;async-reindex&quot;im Lucene-Eigenschaftenindex auf &quot;true&quot;.
+* Stellen Sie im Lucene-Eigenschaftenindex die Eigenschaft „async-reindex“ auf „true“ ein.
 
    * `[oak:queryIndexDefinition]@reindex-async=true`
 
@@ -427,7 +427,7 @@ Die Textvorextraktion kann nicht für neue Inhalte verwendet werden, die zum Rep
 
 Neue Inhalte, die dem Repository hinzugefügt werden, werden nämlich automatisch und schrittweise durch die asynchrone Volltextindizierung indiziert (standardmäßig alle 5 Sekunden).
 
-Unter normalen AEM, z. B. beim Hochladen von Assets über die Web-Benutzeroberfläche oder bei der programmatischen Erfassung von Assets, wird AEM den neuen binären Inhalt automatisch und inkrementell mit Volltext indizieren. Da die Datenmenge inkrementell und relativ klein ist (in etwa die Datenmenge, die in 5 Sekunden in das Repository persistiert werden kann), kann AEM während der Indizierung eine Volltextextraktion aus den Binärdateien durchführen, ohne die Gesamtleistung des Systems zu beeinträchtigen.
+Bei normalem AEM-Betrieb, etwa beim Hochladen von Assets über die Web-Benutzeroberfläche oder bei der programmgesteuerten Aufnahme von Assets, führt AEM eine automatische und schrittweise Volltextindizierung des neuen Binärinhalts durch. Da die Datenmenge inkrementell und relativ klein ist (in etwa die Datenmenge, die in 5 Sekunden in das Repository persistiert werden kann), kann AEM während der Indizierung eine Volltextextraktion aus den Binärdateien durchführen, ohne die Gesamtleistung des Systems zu beeinträchtigen.
 
 #### Voraussetzungen für die Verwendung der Textvorextraktion {#prerequisites-to-using-text-pre-extraction}
 

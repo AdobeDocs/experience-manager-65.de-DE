@@ -1,6 +1,6 @@
 ---
 title: Integrieren von Landing-Pages in Adobe Analytics
-description: Erfahren Sie, wie Sie Landingpages in Adobe Analytics integrieren können.
+description: Erfahren Sie, wie Sie Landingpages mit Adobe Analytics integrieren können.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
@@ -33,12 +33,12 @@ In AEM können die **Aktionsaufruf**-Komponenten – **ClickThroughLink** und *
 
 ![chlimage_1-21](assets/chlimage_1-21a.jpeg)
 
-### Zuordnen von Einstiegsseitenkomponenten zu Adobe Analytics {#mapping-landing-page-components-to-adobe-analytics}
+### Zuordnen von Landingpages zu Adobe Analytics {#mapping-landing-page-components-to-adobe-analytics}
 
-So ordnen Sie Einstiegsseitenkomponenten Adobe Analytics zu:
+Sie können Landingpages wie folgt zu Adobe Analytics zuordnen:
 
-1. Nachdem Sie die Adobe Analytics-Konfiguration erstellt und ein Framework erstellt haben, wählen Sie die entsprechende Report Suite aus dem Dropdownmenü aus. Dadurch werden die Adobe Analytics-Variablen abgerufen und im Content Finder angezeigt.
-1. Ziehen Sie die Komponenten &quot;Aktionsaufruf (CTA)&quot;aus dem Sidekick in den Zuordnungsbereich in der Mitte der Seite, falls zutreffend.
+1. Wählen Sie nach der Erstellung der Adobe Analytics-Konfiguration und der Erstellung eines Frameworks die passende Suite für das Reporting aus dem Dropdown-Menü aus. Hierdurch erfolgt das Abrufen der Adobe Analytics-Variablen und ihre Anzeige in der Inhaltssuche.
+1. Ziehen Sie CTA-Komponenten (Handlungsaufruf, Call to Action) Ihren Anforderungen entsprechend per Drag-and-Drop aus dem Sidekick in den Zuordnungsbereich in der Mitte der Seite.
 
 <table>
  <tbody>
@@ -55,7 +55,7 @@ So ordnen Sie Einstiegsseitenkomponenten Adobe Analytics zu:
   <tr>
    <td><br type="_moz" /> </td>
    <td><i>eventdata.clickthroughLinkTarget</i> <br /> </td>
-   <td>Das Ziel, an das Sie beim Klicken auf den Link gelangt sind </td>
+   <td>Das Ziel, zu dem navigiert wird, wenn Sie auf den Link klicken. </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
@@ -70,7 +70,7 @@ So ordnen Sie Einstiegsseitenkomponenten Adobe Analytics zu:
   <tr>
    <td><br type="_moz" /> </td>
    <td><i>eventdata.clicktroughImageTarget</i> <br /> </td>
-   <td>Das Ziel, an dem Sie beim Klicken auf das Bild, das einen Link enthält, geleitet werden</td>
+   <td>Das Ziel, zu dem navigiert wird, wenn Sie auf das Bild mit Link klicken.</td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
@@ -86,7 +86,7 @@ So ordnen Sie Einstiegsseitenkomponenten Adobe Analytics zu:
 </table>
 
 1. Weisen Sie diese offengelegten Attribute beliebigen Adobe Analytics-Variablen aus der Inhaltssuche zu. Das Framework ist nun einsatzbereit.
-1. Sie können jetzt eine Landingpage erstellen oder eine vorhandene Landingpage mit vorhandenen CTA-Komponenten öffnen und auf **Cloud Service** Registerkarte in **Seiteneigenschaften** Wählen Sie im Sidekick (in der Touch-optimierten Benutzeroberfläche die Option **Eigenschaften öffnen** und klicken **Cloud Service**) und konfigurieren Sie das Framework für die Verwendung mit der Landingpage. Wählen Sie das Framework aus der Dropdown-Liste aus.
+1. Sie können jetzt eine neue Landingpage oder eine vorhandene Landingpage mit vorhandenen CTA-Komponenten erstellen und über den Sidekick in den **Seiteneigenschaften** auf die Registerkarte **Cloud-Dienste** klicken (wählen Sie in der Touch-optimierten Benutzeroberfläche **Eigenschaften öffnen** aus und klicken Sie auf **Cloud-Dienste**), um das für die Landingpage zu verwendende Framework zu konfigurieren. Wählen Sie das Framework aus der Dropdown-Liste aus.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 

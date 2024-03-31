@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 0915db99a2d3589994d6267119a5443d69f9f1f7
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 92%
 
 Der Dynamic Media – Scene7-Modus bietet native Unterstützung für die Bereitstellung von 360-Grad-Video-Assets. Standardmäßig ist keine weitere Konfiguration für die Anzeige oder die Wiedergabe erforderlich. 360-Grad-Videos werden mit Standardvideoerweiterungen wie .mp4, .mkv und .mov bereitgestellt. Der häufigste Codec ist H.264.
 
-In diesem Abschnitt wird beschrieben, wie Sie mit dem 360/VR-Video-Viewer ein Panoramavideo für ein interaktives Betrachtungserlebnis eines Raums, einer Eigenschaft, eines Standorts, einer Landschaft, eines medizinischen Verfahrens usw. rendern können.
+In diesem Abschnitt erfahren Sie, wie Sie mit dem 360-Grad-/VR-Video-Viewer ein Panoramavideo für eine interaktive Anzeige eines Raums, einer Eigenschaft, eines Standorts, einer Landschaft oder eines medizinischen Verfahrens rendern.
 
 Räumliches Audio wird derzeit nicht unterstützt. Falls Audio in Stereo gemischt wird, ändert sich die Balance (L/R) nicht, wenn der Kunde den Anzeigewinkel der Kamera ändert.
 
@@ -38,7 +38,7 @@ Wählen Sie [Space Station 360](https://s7d1.scene7.com/s7viewers/html5/Video360
 
 ## 360-Grad-/VR-Video und Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
-Sie können 360-Grad-/VR-Videos mit Adobe Premiere Pro anzeigen und bearbeiten. Beispielsweise können Sie Logos und Text ordnungsgemäß in einer Szene platzieren sowie speziell für Panoramavideos entwickelte Effekte und Überblendungen anwenden.
+Sie können 360-Grad-/VR-Videos mit Adobe Premiere Pro anzeigen und bearbeiten. Beispielsweise können Sie Logos und Text in einer Szene platzieren sowie speziell für Panoramavideos entwickelte Effekte und Überblendungen anwenden.
 
 Weitere Informationen finden Sie unter [Bearbeiten von 360-Grad-/VR-Videos](https://helpx.adobe.com/de/premiere-pro/how-to/edit-360-vr-video.html).
 
@@ -86,9 +86,9 @@ Standardmäßig erkennt Experience Manager Videos als „360“, wenn ihr Seiten
    * **Eigenschaftstyp**: Doppelt
    * **Wert**: Gleitkomma-Seitenverhältnis, standardmäßig 2.0.
 
-Nachdem Sie diese Eigenschaft festgelegt haben, wird sie sowohl für vorhandene als auch für neu hochgeladene Videos sofort wirksam.
+Wenn Sie diese Eigenschaft festlegen, wird sie umgehend sowohl auf vorhandene als auch auf neu hochgeladene Videos angewendet.
 
-Das Seitenverhältnis gilt für 360-Grad-Video-Assets für die Asset-Detailseite und die [Video 360 Media WCM-Komponente](/help/assets/adding-dynamic-media-assets-to-pages.md#dynamic-media-components).
+Das Seitenverhältnis gilt für 360-Grad-Video-Assets für die Asset-Detailseite und die [WCM-Komponente für 360-Grad-Videos](/help/assets/adding-dynamic-media-assets-to-pages.md#dynamic-media-components).
 
 Laden Sie zunächst 360-Grad-Videos hoch.
 

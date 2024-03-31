@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4535'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ Dieses Paket enthält eine Cloud-Konfiguration, die die folgenden Plattformversi
 | Adobe Analytics | v1.4-Rest-API | **Unterstützt** |
 **Überlegungen zur Paketinstallation:**
 
-* Installieren Sie das Paket auf einem sauberen Server, der frei von anderen Demopaketen oder älteren Demopaketen ist.
+* Installieren Sie das Paket auf einem bereinigten Server, der frei von anderen Demopaketen oder älteren Demopaketversionen ist.
 * Installieren Sie das Paket auf einem OSGi-Server, der im Autorenmodus ausgeführt wird.
 
 ### Was enthält dieses Paket? {#what-does-this-package-include}
@@ -54,11 +54,11 @@ Das [AEM Forms-We.Gov-Demopaket](https://experience.adobe.com/#/downloads/conten
 
       * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** – *AEM Sites Grid-Layout-Paket für die Seitenspaltensteuerung in Sites*
 
-   * **we-gov-forms.ui.content-&lt;version>.zip** - *Enthält alle Inhalte, Seiten, Bilder, Formulare, interaktiven Kommunikations-Assets usw.*
+   * **we-gov-forms.ui.content-&lt;version>.zip**: *Enthält alle Inhalte, Seiten, Bilder, Formulare, Assets der interaktiven Kommunikation usw.*
 
-   * **we-gov-forms.ui.analytics-&lt;version>.zip** – *Enthält alle Forms-Analysedaten zu We.Gov, die im Repository gespeichert werden sollen.*
+   * **we-gov-forms.ui.analytics-&lt;version>.zip**: *Enthält alle Forms-Analysedaten zu We.Gov, die im Repository gespeichert werden sollen.*
 
-   * **we-gov-forms.config.public-&lt;version>.zip** - *Enthält alle standardmäßigen Konfigurationsknoten, einschließlich Platzhalter-Cloud-Konfigurationen, um Formulardatenmodelle und Service-Bindungsprobleme zu vermeiden.*
+   * **we-gov-forms.config.public-&lt;version>.zip**: *Enthält alle standardmäßigen Konfigurationsknoten, einschließlich Platzhalter-Cloud-Konfigurationen, damit Probleme mit Formulardatenmodellen und der Dienstbindung vermieden werden.*
 
 Zu den in diesem Paket enthaltenen Assets gehören:
 
@@ -80,11 +80,11 @@ Dieser Abschnitt enthält Informationen zur Installation des Demopakets.
 ### Von Software Distribution {#from-software-distribution}
 
 1. Öffnen Sie [Software Distribution](https://experience.adobe.com/downloads). Zum Anmelden bei Software Distribution benötigen Sie eine Adobe ID.
-1. Auswählen **[!UICONTROL Adobe Experience Manager]** im Kopfzeilenmenü verfügbar.
+1. Wählen Sie im Kopfzeilenmenü **[!UICONTROL Adobe Experience Manager]** aus.
 1. Im Abschnitt **[!UICONTROL Filter]**:
    1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** aus.
    2. Wählen Sie die Version aus und geben Sie sie für das Paket ein. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
-1. Wählen Sie die **we-gov-forms.pkg.all-&lt;version>.zip** Paketname auswählen **[!UICONTROL EULA-Bedingungen akzeptieren]** und wählen Sie **[!UICONTROL Herunterladen]**.
+1. Wählen Sie den Paketnamen **we-gov-forms.pkg.all-&lt;version>.zip**, dann **[!UICONTROL EULA-Bedingungen akzeptieren]** und schließlich **[!UICONTROL Herunterladen]** aus.
 1. Öffnen Sie [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
@@ -317,7 +317,7 @@ Sobald die Cloud-Konfiguration abgeschlossen ist, sollten Sie das Formulardatenm
 
    >[!NOTE]
    >
-   Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mithilfe alternativer Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+   Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 #### Testen des Formulardatenmodells (Derby) {#test-fdm-derby}
 
@@ -367,7 +367,7 @@ Dieses Paket ist für die Verbindung mit Adobe Analytics vorkonfiguriert. Die fo
 
    ![Analytics Cloud-Service-Konfiguration](assets/analytics_config.jpg)
 
-1. Klicken Sie auf die Schaltfläche &quot;Bearbeiten&quot;, um die Adobe Analytics-Konfiguration zu aktualisieren (Sie müssen den gemeinsamen geheimen Schlüssel angeben). Klicken Sie auf „Mit Analytics verbinden“, um eine Verbindung herzustellen, und auf „OK“, um den Vorgang abzuschließen.
+1. Klicken Sie auf die Schaltfläche „Bearbeiten“, um die Adobe Analytics-Konfiguration zu aktualisieren. (Sie müssen den gemeinsamen geheimen Schlüssel angeben.) Klicken Sie auf „Mit Analytics verbinden“, um eine Verbindung herzustellen, und auf „OK“, um den Vorgang abzuschließen.
 
    ![We.Gov Adobe Analytics](assets/wegov_adobe_analytics.jpg)
 
@@ -481,7 +481,7 @@ Um AEM Forms mit dem Konvertierungs-Tool von Adobe Forms zu installieren und zu 
 
 #### Erstellen einer IMS-Konfiguration, Teil 1 {#creating-ims-config}
 
-Damit der Dienst ordnungsgemäß mit dem Konvertierungs-Tool für Formulare kommunizieren kann, müssen die Benutzer den Identity Management System (IMS)-Dienst konfigurieren, damit sie sich bei Adobe I/O registrieren können.
+Damit der Service ordnungsgemäß mit dem Konvertierungs-Tool für Formulare kommunizieren kann, müssen Benutzende den Identity Management-System(IMS)-Dienst konfigurieren, damit sie sich bei Adobe I/O registrieren können.
 
 1. Navigieren Sie zu https://&lt;aemserver>:&lt;port> und klicken Sie links oben auf „Adobe Experience Manager“ > „Tools“ > „Sicherheit“ > „Adobe IMS-Konfiguration“.
 
@@ -501,7 +501,7 @@ Das in diesem Abschnitt erstellte Zertifikat wird verwendet, um den Integrations
 
 #### Erstellen der Integration in Adobe I/O {#create-integration-adobeio}
 
-Stellen Sie sicher, dass Sie die Möglichkeit haben, eine Integration in Ihrer Adobe-Domäne zu erstellen, wenn Sie sich nicht an Ihren Systemadministrator wenden, um dies zu tun.
+Vergewissern Sie sich, dass Sie die Möglichkeit haben, eine Integration in Ihrer Adobe-Domain zu erstellen. Wenn nicht, wenden Sie sich dafür an Ihr Systemadministrations-Team.
 
 1. Navigieren Sie zur [Adobe I/O-Konsole](https://developer.adobe.com/console/).
 
@@ -631,7 +631,7 @@ Nach dem Einrichten der Konfiguration können Benutzer sie testen, indem sie ein
 
    ![Erweiterte Konvertierungseinstellungen](assets/aftia-conversion-settings-2.jpg)
 
-1. Wählen Sie Konvertierung starten aus, nachdem Sie alle Optionen konfiguriert haben, die Sie verwenden möchten.
+1. Wählen Sie „Konvertierung starten“ aus, nachdem Sie alle gewünschten Optionen konfiguriert haben.
 
 1. Wenn der Konvertierungsprozess beginnt, sollten die Benutzer den folgenden Bildschirm sehen:
 
@@ -697,7 +697,7 @@ Weitere Informationen hierzu finden Sie unter „Bearbeiten von Seiteninhalten�
 
 Alle Sites-Seiten sind verfügbar unter: *https://&lt;aemserver>:&lt;port>/sites.html/content/we-gov*
 
-Auf diesen Seiten wird auch das AEM Grid-Paket verwendet, um das Layout einiger Komponenten zu steuern.
+Auf diesen Sites-Seiten wird auch das AEM Grid-Paket verwendet, um das Layout einiger Komponenten zu steuern.
 
 #### Stilsystem {#style-system}
 
@@ -705,7 +705,7 @@ Die in diesem Paket enthaltenen Seiten unterstützen auch das Stilsystem:
 
 [Stilsystem](../../sites-authoring/style-system.md)
 
-Sie können auch [Vorlagenanpassungs-Stilsystem](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) für die Dokumentation zu unterstützten Stilen.
+Weitere Informationen zu unterstützten Stilen finden Sie unter [Stilsystem für die Vorlagenanpassung](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates).
 
 ### Anpassung adaptiver Formulare {#adaptive-forms-customization}
 

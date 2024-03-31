@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5284'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -39,9 +39,9 @@ Die im Targeting-Modus sichtbaren Aktivitäten und Erlebnisse spiegeln die Optio
 
 >[!NOTE]
 >
->Wenn Sie eine Kampagne in Adobe Target erstellen, wird jeder Kampagne eine Eigenschaft mit dem Namen `thirdPartyId` hinzugefügt. Sollten Sie die Kampagne in Adobe Target löschen, wird die Eigenschaft „thirdPartyId“ jedoch nicht gelöscht. Die `thirdPartyId` kann nicht für Kampagnen unterschiedlicher Typen (A/B, XT) wiederverwendet werden und lässt sich nicht manuell löschen. Möchten Sie dieses Problem umgehen, geben Sie jeder Kampagne einen eindeutigen Namen. Kampagnennamen lassen sich nicht für verschiedene Kampagnentypen wiederverwenden.
+>Wenn Sie eine Kampagne in Adobe Target erstellen, wird jeder Kampagne eine Eigenschaft mit dem Namen `thirdPartyId` hinzugefügt. Sollten Sie die Kampagne in Adobe Target löschen, wird die Eigenschaft „thirdPartyId“ jedoch nicht gelöscht. Die `thirdPartyId` kann nicht für Kampagnen unterschiedlicher Typen (A/B, XT) wiederverwendet werden und lässt sich nicht manuell löschen. Um dieses Problem zu umgehen, geben Sie jeder Kampagne einen eindeutigen Namen. Kampagnennamen lassen sich nicht für verschiedene Kampagnentypen wiederverwenden.
 >
->Wenn Sie denselben Namen im selben Kampagnentyp verwenden, überschreiben Sie die bestehende Kampagne.
+>Wenn Sie denselben Namen im selben Kampagnentyp verwenden, wird die vorhandene Kampagne überschrieben.
 >
 >Sollte Ihnen beim Synchronisieren die Fehlermeldung „Anforderung fehlgeschlagen. `thirdPartyId` ist bereits vorhanden“ angezeigt werden, ändern Sie den Kampagnennamen und synchronisieren Sie erneut.
 
@@ -56,11 +56,11 @@ Wechseln Sie in den Targeting-Modus, um auf die Werkzeuge für die Erstellung vo
 So wechseln Sie in den Targeting-Modus:
 
 1. Öffnen Sie die Seite, für die Sie zielgerichtete Inhalte erstellen möchten.
-1. Klicken Sie oben auf der Seite in der Symbolleiste auf das Dropdown-Menü Modus , um die verfügbaren Modustypen anzuzeigen.
+1. Klicken Sie in der Symbolleiste oben auf der Seite auf das Dropdown-Menü für Modi, um die verfügbaren Modustypen anzuzeigen.
 
    ![chlimage_1-9](assets/chlimage_1-9.png)
 
-1. Klicks **Targeting**. Die Targeting-Optionen werden daraufhin oben auf der Seite eingeblendet.
+1. Klicken Sie auf **Targeting**. Die Targeting-Optionen werden daraufhin oben auf der Seite eingeblendet.
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
@@ -80,17 +80,17 @@ So fügen Sie eine Aktivität hinzu:
 
    >[!NOTE]
    >
-   >Adobe empfiehlt, dass Sie [Marken über die Aktivitätskonsole erstellen](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
+   >Adobe empfiehlt, dass Sie [Marken über die Aktivitätenkonsole erstellen](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
    >
    >
    >Wenn Sie eine Marke auf andere Weise erstellen, stellen Sie sicher, dass der Knoten `/campaigns/<brand>/master` vorhanden ist. Sonst führt der Versuch, eine Aktivität zu erstellen, zu einem Fehler.
 
-1. Klicken Sie auf + neben **Aktivität** Dropdown-Menü.
+1. Klicken Sie neben dem Dropdown-Menü **Aktivität** auf das Plus-Zeichen (+).
 1. Geben Sie einen Namen für die Aktivität ein.
 
    >[!NOTE]
    >
-   >Wenn Sie eine neue Aktivität erstellen und der Seite oder einer der ihr übergeordneten Seiten eine Adobe Target-Cloud-Konfiguration angehängt ist, wird Adobe Target von AEM automatisch als Engine festgelegt.
+   >Wenn Sie eine neue Aktivität erstellen und der Seite oder einer der ihr übergeordneten Seiten eine Adobe Target-Cloud-Konfiguration angehängt ist, wird von AEM automatisch Adobe Target als Engine festgelegt.
 
 1. Wählen Sie aus dem Dropdown-Menü **Targeting** die gewünschte Targeting-Engine aus.
 
@@ -123,13 +123,13 @@ So fügen Sie eine Aktivität hinzu:
 
 1. Wählen Sie im Dropdown-Menü **Marke** die Marke aus, die die Aktivität enthält, an der Sie gerade arbeiten.
 1. Wählen Sie im Dropdown-Menü **Aktivität** die Aktivität aus, für die zielgerichtete Inhalte verfasst werden sollen.
-1. Um die Steuerelemente anzuzeigen, die Sie durch den Zielgruppenbestimmungsprozess führen, klicken Sie auf **Targeting starten**.
+1. Um die Steuerelemente anzuzeigen, die Sie durch den Targeting-Prozess führen, klicken Sie auf **Targeting starten**.
 
    ![chlimage_1-11](assets/chlimage_1-11.png)
 
    >[!NOTE]
    >
-   >Um die Aktivität zu ändern, mit der Sie arbeiten, klicken Sie auf **Zurück**.
+   >Möchten Sie die Aktivität ändern, mit der Sie sich aktuell befassen, klicken Sie auf **Zurück**.
 
 ## Erstellen: Verfassen der Erlebnisse {#create-authoring-the-experiences}
 
@@ -181,7 +181,7 @@ Im Erstellungsschritt des [Targeting-Prozesses](/help/sites-authoring/content-ta
 
 So fügen Sie Erlebnisse hinzu:
 
-1. Um ein Erlebnis hinzuzufügen, klicken Sie auf **+** **Hinzufügen von Erlebnis-Targeting** , das unterhalb der vorhandenen Erlebnisse in der **Zielgruppen** -Bereich.
+1. Um ein Erlebnis hinzuzufügen, klicken Sie auf **+** **Erlebnis-Targeting hinzufügen**. Diese Option befindet sich unter den bereits bestehenden Erlebnissen im Bereich **Zielgruppen**.
 1. Wählen Sie eine Zielgruppe aus. Standardmäßig ist dieser Name der Name des Erlebnisses. Sie können bei Bedarf einen anderen Namen eingeben. Klicken Sie auf **OK**.
 
 #### Entfernen von Erlebnissen im Targeting-Modus {#removing-experiences-using-targeting-mode}
@@ -200,11 +200,11 @@ So benennen Sie Erlebnisse im Targeting-Modus um:
 
 1. Klicken Sie auf den Pfeil neben dem Erlebnisnamen.
 1. Klicken Sie auf **Erlebnis umbenennen** und geben Sie den neuen Namen ein.
-1. Klicken Sie auf eine andere Stelle auf dem Bildschirm, um die Änderungen zu speichern.
+1. Klicken Sie auf einen anderen Bereich des Bildschirms, um die Änderungen zu speichern.
 
 #### Bearbeiten von Zielgruppen im Targeting-Modus {#editing-audiences-using-targeting-mode}
 
-So bearbeiten Sie Zielgruppen im Targeting-Modus:
+So bearbeiten Sie im Targeting-Modus Zielgruppen:
 
 1. Klicken Sie auf den Pfeil neben dem Erlebnisnamen.
 1. Klicken Sie auf **Zielgruppe bearbeiten** und wählen Sie eine neue Zielgruppe aus.
@@ -244,11 +244,11 @@ Nach dem Targeting einer Komponente kann nur diese Komponente im Angebot verwend
 
 Gehen Sie folgendermaßen vor, nachdem Sie den [Targeting-Prozess gestartet](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) haben.
 
-1. Klicken Sie auf die auszuwählende Komponente. Die Symbolleiste für die Komponente wird angezeigt, ähnlich wie im folgenden Beispiel.
+1. Klicken Sie auf die Komponente für das Targeting. Die Symbolleiste für die Komponente wird angezeigt, ähnlich wie im folgenden Beispiel.
 
    ![chlimage_1-18](assets/chlimage_1-18.png)
 
-1. Klicken Sie auf das Target -Symbol.
+1. Klicken Sie auf das Zielsymbol.
 
    ![Ziel](do-not-localize/chlimage_1.png)
 
@@ -282,17 +282,17 @@ Wenn Sie der Target-Komponente eine Komponente hinzufügen, stellt diese Inhalte
 
 Sie können eine Target-Komponente zur Seite im Bearbeitungsmodus oder im Target-Modus hinzufügen. Sie können der Target-Komponente nur im Targeting-Modus Komponenten hinzufügen. Die Target-Komponente gehört zur Komponentengruppe „Personalisierung“.
 
-Wenn Sie zielgerichtete Inhalte bearbeiten, müssen Sie auf **Targeting starten** bevor Sie dies tun können.
+Möchten Sie Targeting-Inhalte bearbeiten, müssen Sie zunächst auf **Targeting starten** klicken.
 
 1. Ziehen Sie die Target-Komponente auf die Seite, auf der das Angebot angezeigt werden soll.
-1. Standardmäßig ist keine Standort-ID festgelegt. Klicken Sie auf das Zahnradsymbol &quot;Konfigurieren&quot;, um den Standort festzulegen.
+1. Standardmäßig ist keine Standort-ID festgelegt. Klicken Sie auf das Zahnradsymbol „Konfigurieren“, um den Standort festzulegen.
 
    >[!NOTE]
    >
-   >Sollte diese Einstellung vom Administrator gefordert werden, müssen Sie den Ort möglicherweise genau angeben.
+   >Falls diese Einstellung von den Admins festgelegt worden ist, müssen Sie den Ort möglicherweise genau angeben.
    >
    >
-   >Administratoren können festlegen, ob diese Konfiguration unter **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
+   >Hier können Admins entscheiden, ob diese Konfiguration erforderlich ist: **http://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
    >
    >
    Um Benutzer zur Eingabe eines Pfads aufzufordern, aktivieren Sie das Kontrollkästchen **Ortsangabe erzwingen**.
@@ -310,11 +310,11 @@ Erstellen Sie ein Angebot, indem Sie den Inhalt einer Targeting-Komponente im Ta
 Sollten Sie sich dazu entschließen, das Angebot auch für andere Erlebnisse nutzen zu wollen, können Sie ein individuelles Angebot erstellen und es [der Bibliothek hinzufügen](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library). Weitere Informationen zur Verwendung der Angebotskonsole für die Erstellung wiederverwendbarer Angebote finden Sie unter [Hinzufügen von Angeboten zu Angebotsbibliotheken](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library).
 
 1. Wählen Sie das Erlebnis aus, dem Sie das Angebot hinzufügen möchten.
-1. Um das Komponentenmenü anzuzeigen, klicken Sie auf die Targeting-Komponente, der Sie das Angebot hinzufügen.
+1. Um das Komponentenmenü anzuzeigen, klicken Sie auf die Targeting-Komponente, zu der Sie das Angebot hinzufügen.
 
    ![chlimage_1-21](assets/chlimage_1-21.png)
 
-1. Klicken Sie auf das Symbol + .
+1. Klicken Sie auf das Symbol „+“.
 
    Der Inhalt des Standardangebots wird als Angebot für das aktuelle Erlebnis verwendet.
 
@@ -331,7 +331,7 @@ Fügen Sie einem Erlebnis ein Angebot aus der [Angebotsbibliothek](/help/sites-a
 Sie können dem Standarderlebnis keine Bibliotheksangebote hinzufügen.
 
 1. Wählen Sie das Erlebnis aus, dem Sie das Angebot hinzufügen möchten.
-1. Um das Komponentenmenü anzuzeigen, klicken Sie auf die Targeting-Komponente, der Sie das Angebot hinzufügen.
+1. Um das Komponentenmenü anzuzeigen, klicken Sie auf die Targeting-Komponente, zu der Sie das Angebot hinzufügen.
 
    ![chlimage_1-22](assets/chlimage_1-22.png)
 
@@ -339,17 +339,17 @@ Sie können dem Standarderlebnis keine Bibliotheksangebote hinzufügen.
 
    ![Ordnersymbol](do-not-localize/chlimage_1-3.png)
 
-1. Wählen Sie das Angebot aus der Bibliothek aus und klicken Sie auf das Häkchen-Symbol.
+1. Wählen Sie das gewünschte Angebot aus der Bibliothek aus und klicken Sie dann auf das entsprechende Häkchen.
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
    Mit der Angebotsauswahl können Sie nach Angeboten suchen oder diese filtern. Beim Durchsuchen oder Filtern können Sie auch die Angebote sortieren und deren Ansicht ändern. Die Zahl oben rechts zeigt an, wie viele Angebote in der aktuellen Bibliothek verfügbar sind.
 
-   * Klicks **Durchsuchen** , um zu einem anderen Ordner zu navigieren. Es öffnet sich ein Navigationsfenster, in dem Sie durch Klicken auf die Pfeile tiefer in die Ordnerstruktur vordringen können. Klicks **Durchsuchen** erneut, um den Navigationsbereich zu schließen.
+   * Klicken Sie auf **Durchsuchen**, um zu einem anderen Ordner zu navigieren. Es öffnet sich ein Navigationsfenster, in dem Sie durch Klicken auf die Pfeile tiefer in die Ordnerstruktur vordringen können. Klicken Sie erneut auf **Durchsuchen**, um das Navigationsfenster zu schließen.
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 
-   * Klicks **Filter** , um die Angebote nach Keywords oder Tags zu filtern. Sie geben Suchbegriffe ein und wählen Tags aus dem Dropdown-Menü aus. Klicks **Filter** erneut, um den Filterbereich zu schließen.
+   * Klicken Sie auf **Filter**, um die Angebote nach Schlüsselwörtern oder Tags zu filtern. Sie geben Schlüsselwörter ein und wählen Tags aus dem Dropdown-Menü aus. Klicken Sie erneut auf **Filtern**, um das Filterfenster wieder zu schließen.
 
    ![chlimage_1-25](assets/chlimage_1-25.png)
 
@@ -357,7 +357,7 @@ Sie können dem Standarderlebnis keine Bibliotheksangebote hinzufügen.
 
    ![chlimage_1-26](assets/chlimage_1-26.png)
 
-   Klicken Sie auf das Symbol neben **Anzeigen als** um Angebote als Kacheln oder Liste anzuzeigen.
+   Klicken Sie auf das Symbol neben **Anzeigen als**, um Angebote als Kacheln bzw. Liste anzuzeigen.
 
    ![chlimage_1-27](assets/chlimage_1-27.png)
 
@@ -368,18 +368,18 @@ Fügen Sie ein benutzerdefiniertes Angebot zur [Angebotsbibliothek](/help/sites-
 Weitere Informationen zur Verwendung der Angebotskonsole für die Erstellung wiederverwendbarer Angebote finden Sie unter [Hinzufügen von Angeboten zu Angebotsbibliotheken](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library).
 
 1. Wählen Sie das Erlebnis aus, um das benutzerdefinierte Angebot anzuzeigen.
-1. Klicken Sie auf das benutzerdefinierte Angebot, um das Angebotsmenü anzuzeigen, und klicken Sie auf die Schaltfläche **Angebot in Angebotsbibliothek speichern** Symbol.
+1. Klicken Sie auf das benutzerdefinierte Angebot, um das Angebotsmenü anzuzeigen, und dann auf das Symbol **Angebot in Angebotsbibliothek speichern**.
 
    ![Angebot in Angebotsbibliothek speichern](do-not-localize/chlimage_1-4.png)
 
-1. Geben Sie einen Namen für das Angebot ein, wählen Sie die Bibliothek aus, der Sie das Angebot hinzufügen möchten, und klicken Sie dann auf das Häkchen-Symbol.
+1. Geben Sie einen Angebotsnamen ein und wählen Sie die Bibliothek aus, zu der das Angebot hinzugefügt werden soll. Klicken Sie anschließend auf das Häkchen.
 
 #### Umwandeln von Bibliotheksangeboten in individuelle Angebote {#converting-a-library-offer-to-a-custom-library}
 
 Konvertieren Sie ein Bibliotheksangebot in ein benutzerdefiniertes Angebot, um das Angebot für das aktuelle Erlebnis zu ändern, ohne das Angebot in anderen Erlebnissen zu ändern.
 
 1. Wählen Sie das Erlebnis aus, um das Bibliotheksangebot anzuzeigen.
-1. Klicken Sie auf das Bibliotheksangebot, um das Angebotsmenü anzuzeigen, und klicken Sie dann auf das Symbol In Inline-Angebot konvertieren .
+1. Klicken Sie auf das Bibliotheksangebot, um das Angebotsmenü anzuzeigen, und dann auf das Symbol „In Inline-Angebot konvertieren“.
 
    ![In Inline-Angebot konvertieren](do-not-localize/chlimage_1-5.png)
 
@@ -403,7 +403,7 @@ werden Zielgruppen auf der linken Seite des Zuordnungsdiagramms angezeigt, Erleb
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
-Legen Sie mithilfe eines Segments eine Zielgruppe fest. Die Cloud-Konfiguration für die Seite bestimmt die Segmente, die Ihnen zur Verfügung stehen. Wenn die Seite nicht mit einer Adobe Target-Cloud-Konfiguration verknüpft ist, stehen AEM-Segmente zum Definieren von Zielgruppen zur Verfügung. Wenn die Seite mit einer Adobe Target-Cloud-Konfiguration verknüpft ist, verwenden Sie Target-Segmente.
+Legen Sie mithilfe eines Segments eine Zielgruppe fest. Die Cloud-Konfiguration für die Seite bestimmt darüber, welche Segmente Ihnen zur Verfügung stehen. Wenn die Seite nicht mit einer Adobe Target-Cloud-Konfiguration verknüpft ist, stehen AEM-Segmente zum Definieren von Zielgruppen zur Verfügung. Wenn die Seite mit einer Adobe Target-Cloud-Konfiguration verknüpft ist, verwenden Sie Target-Segmente.
 
 Informationen zu Targeting-Engines finden Sie unter [Targeting-Engine](/help/sites-authoring/personalization.md#targeting-engine).
 
@@ -415,9 +415,9 @@ Verwenden Sie nicht mehr als ein Erlebnis für eine Zielgruppe. Neben einem Erle
 
 Gehen Sie wie folgt vor, um ein Erlebnis mit einer Zielgruppe zu verknüpfen, wenn Sie AEM-Targeting (oder Erlebnis-Targeting in Adobe Target) verwenden:
 
-1. Klicken Sie auf den Dropdown-Pfeil neben dem Zielgruppenfeld, das dem Erlebnis zugeordnet ist.
+1. Klicken Sie auf den Dropdown-Pfeil neben dem Feld für die Zielgruppe, die dem Erlebnis zugeordnet ist.
 1. (Optional) Klicken Sie auf **Bearbeiten** und geben Sie dann einen Suchbegriff ein, um nach dem gewünschten Segment zu suchen.
-1. Wählen Sie in der Zielgruppenliste die gewünschte Audience aus und klicken Sie auf **OK**.
+1. Wählen Sie aus der Zielgruppenliste die gewünschte Zielgruppe aus und klicken Sie auf **OK**.
 
 ### Wenn Sie A/B-Tests (Adobe Target) verwenden …     {#if-you-are-using-a-b-testing-adobe-target}
 
@@ -427,11 +427,11 @@ Sie können die Prozentsätze ändern, solange sie in der Summe 100 Prozent erge
 
 ![chlimage_1-29](assets/chlimage_1-29.png)
 
-### Zielgruppen in A/B-Tests Traffic-Anteilen zuordnen {#associating-audiences-and-traffic-percentages-with-a-b-testing}
+### Zuordnen von Zielgruppen und Traffic-Prozentsätzen bei A/B-Tests {#associating-audiences-and-traffic-percentages-with-a-b-testing}
 
 1. Klicken Sie auf das Dropdown-Feld neben der Zielgruppe, die dem Erlebnis zugeordnet ist.
-1. (Optional) Klicken Sie auf **Bearbeiten** und geben Sie den Suchbegriff ein, nach dem das gewünschte Segment durchsucht werden soll.
-1. Klicks **OK.**
+1. (Optional) Klicken oder tippen Sie auf **Bearbeiten** und geben Sie den Suchbegriff ein, nach dem das gewünschte Segment durchsucht werden soll.
+1. Klicken Sie auf **OK**.
 1. Geben Sie Prozentsätze ein, um zu konfigurieren, wie der Zielgruppen-Traffic zu den einzelnen Erlebnissen geleitet wird. Die Gesamtsumme muss 100 betragen.
 1. (Optional) Bearbeiten Sie den Erlebnisnamen, indem Sie auf das Dropdown-Menü neben dem Erlebnisnamen klicken.
 
@@ -439,7 +439,7 @@ Sie können die Prozentsätze ändern, solange sie in der Summe 100 Prozent erge
 
 Im Schritt „Ziele und Einstellungen“ des [Targeting-Verfahrens](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) wird das Verhalten der Markenaktivität konfiguriert. Geben Sie an, wann die Aktivität beginnt und endet, und geben Sie die Aktivitätspriorität an. Darüber hinaus verfolgen Sie auch Ziele. Insbesondere können Sie entscheiden, was Sie mit Ihren Aktivitäten messen möchten.
 
-Zielmetriken sind nur verfügbar, wenn Sie Adobe Target für Ihre Targeting-Engine verwenden. Definieren Sie mindestens eine Zielmetrik. Wenn Sie Adobe Analytics konfiguriert haben und eine A4T Analytics-Cloud-Konfiguration haben, können Sie auswählen, ob die Berichtsquelle Adobe Target oder Adobe Analytics sein soll.
+Zielmetriken sind nur verfügbar, wenn Sie Adobe Target für Ihre Targeting-Engine verwenden. Sie müssen mindestens eine Zielmetrik definieren. Wenn Sie Adobe Analytics konfiguriert haben und eine A4T Analytics-Cloud-Konfiguration haben, können Sie auswählen, ob die Berichtsquelle Adobe Target oder Adobe Analytics sein soll.
 
 Die Zielmetriken werden nur für die veröffentlichte Kampagne gemessen.
 
@@ -479,7 +479,7 @@ Es sind folgende Erfolgsmetriken verfügbar (nur für die Veröffentlichung eins
   </tr>
   <tr>
    <td><strong>Interaktion</strong></td>
-   <td><p>Sie können drei Interaktionstypen messen:</p>
+   <td><p>Es können drei Interaktionsarten gemessen werden:</p>
     <ul>
      <li>Seitenansichten</li>
      <li>Individuelle Bewertung</li>
@@ -509,7 +509,7 @@ Verwenden Sie die erweiterten Einstellungen, um zu bestimmen, was passiert, **na
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Anzahl erhöhen, Benutzer freigeben und Wiedereintritt erlauben</strong></td>
+   <td><strong>Anzahl erhöhen, Benutzende freigeben und Wiedereintritt erlauben</strong></td>
    <td>Wählen Sie das Erlebnis aus, das dem Besucher angezeigt wird, wenn er erneut in die Aktivität eintritt.
     <ul>
      <li>Gleiches Erlebnis</li>
@@ -518,7 +518,7 @@ Verwenden Sie die erweiterten Einstellungen, um zu bestimmen, was passiert, **na
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Anzahl erhöhen, Benutzer freigeben und Wiedereintritt von Balken verweigern</strong></td>
+   <td><strong>Anzahl erhöhen, Benutzende freigeben und Wiedereintritt untersagen</strong></td>
    <td>Bestimmen Sie, was der Benutzer anstelle des Aktivitätsinhalts sieht:
     <ul>
      <li>Gleiches Erlebnis, ohne Tracking</li>
@@ -542,9 +542,9 @@ So konfigurieren Sie Einstellungen, falls Sie AEM-Targeting verwenden:
 1. Verwenden Sie das Dropdown-Menü **Ende**, um festzulegen, wann die Aktivität beendet werden soll. Wählen Sie einen der folgenden Werte aus:
 
    * **Wenn deaktiviert**: Beendet die Aktivität, wenn die Seite, die den zielgerichteten Inhalt enthält, deaktiviert wird.
-   * **Angegebenes Datum und Uhrzeit:** Ein bestimmter Zeitpunkt. Wenn Sie diese Option auswählen, klicken Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Zeit zum Ende der Aktivität an.
+   * **Angegebenes Datum und Uhrzeit:** Ein bestimmter Zeitpunkt. Wenn Sie diese Option auswählen, klicken Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Zeit für das Ende der Aktivität an.
 
-1. Um eine Priorität für die Aktivität festzulegen, wählen Sie mit dem Schieberegler entweder **Niedrig**, **Normal** oder **Hoch**.
+1. Um eine Priorität für die Aktivität festzulegen, wählen Sie mit dem Schieberegler entweder **Niedrig**, **Normal**, oder **Hoch**.
 
 ### Konfigurieren von Zielen und Einstellungen (Adobe Target) {#configuring-goals-settings-adobe-target}
 
@@ -558,9 +558,9 @@ So konfigurieren Sie Ziele und Einstellungen, falls Sie Adobe Target verwenden:
 1. Verwenden Sie das Dropdown-Menü **Ende**, um festzulegen, wann die Aktivität beendet werden soll. Wählen Sie einen der folgenden Werte aus:
 
    * **Wenn deaktiviert**: Beendet die Aktivität, wenn die Seite, die den zielgerichteten Inhalt enthält, deaktiviert wird.
-   * **Angegebenes Datum und Uhrzeit:** Ein bestimmter Zeitpunkt. Wenn Sie diese Option auswählen, klicken Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Zeit zum Ende der Aktivität an.
+   * **Angegebenes Datum und Uhrzeit:** Ein bestimmter Zeitpunkt. Wenn Sie diese Option auswählen, klicken Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Zeit für das Ende der Aktivität an.
 
-1. Um eine Priorität für die Aktivität festzulegen, wählen Sie mit dem Schieberegler entweder **Niedrig**, **Normal** oder **Hoch**.
+1. Um eine Priorität für die Aktivität festzulegen, wählen Sie mit dem Schieberegler entweder **Niedrig**, **Normal**, oder **Hoch**.
 1. Wenn Sie Adobe Analytics für Ihr Adobe Target-Konto konfiguriert haben, wird das Dropdown-Menü **Berichtsquelle** angezeigt. Wählen Sie **Adobe Target** oder **Adobe Analytics** als Quelle.
 
    Wenn Sie **Adobe Analytics** auswählen, wählen Sie das Unternehmen und die Report Suite aus. Sollten Sie **Adobe Target** auswählen, muss keine weitere Auswahl getroffen werden.
@@ -593,7 +593,7 @@ So konfigurieren Sie Ziele und Einstellungen, falls Sie Adobe Target verwenden:
    >
    Sie können andere Ziele entfernen, indem Sie entweder auf die drei Punkte oder auf **Löschen** klicken oder tippen. AEM erfordert, dass Sie mindestens ein Ziel definiert haben.
 
-1. Wenn Sie mehr Kontrolle darüber haben möchten, wie Erfolgsmetriken gezählt werden, klicken Sie auf **Erweiterte Einstellungen** , um darauf zuzugreifen.
+1. Möchten Sie auf weitere Steuermöglichkeiten dafür zugreifen, wie Erfolgsmetriken gemessen werden, klicken Sie auf **Erweiterte Einstellungen**.
 1. Klicken Sie auf **Speichern**.
 
 Nach abgeschlossener Konfiguration können Sie die [Leistung der Aktivitäten](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test) anzeigen, die Adobe Target verwenden (Erlebnis-Targeting oder A/B-Tests). Bei A/B-Tests können Sie zusätzlich [die Gewinner konvertieren.](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test)
@@ -621,12 +621,12 @@ Verwenden Sie die folgenden Tools, um das Besuchererlebnis zu simulieren:
 * Die Simulationsaktivität im Targeting-Modus: Auf der Seite werden die Angebote für die Person angezeigt, die derzeit in ContextHub ausgewählt ist. Sie können die Angebote bearbeiten, die auf die Person ausgerichtet sind.
 * Vorschaumodus: Verwenden Sie ContextHub, um Benutzerinnen und Benutzer sowie Orte auszuwählen, die den Kriterien der Segmente entsprechen, auf denen Ihre Erlebnisse basieren. Wenn sich Ihre ContextHub-Auswahl ändert, ändern sich die zielgerichteten Inhalte entsprechend.
 
-1. Um in den Vorschaumodus zu wechseln, klicken Sie in der Symbolleiste auf **Vorschau**.
-1. Klicken Sie in der Symbolleiste auf das Symbol ContextHub .
+1. Möchten Sie in den Vorschaumodus wechseln, klicken Sie in der Symbolleiste auf **Vorschau**.
+1. Klicken Sie in der Symbolleiste auf das ContextHub-Symbol.
 
    ![Context-Hub](do-not-localize/chlimage_1-7.png)
 
-1. Verwenden Sie Context Hub, um die Kontexteigenschaften zu ändern. Klicken Sie beispielsweise auf die Eigenschaft Persona , um einen anderen Benutzer auszuwählen.
+1. Verwenden Sie Context Hub, um die Kontexteigenschaften zu ändern. Klicken Sie beispielsweise auf die Rolleneigenschaft, um eine andere Person auszuwählen.
 
    ![chlimage_1-36](assets/chlimage_1-36.png)
 
@@ -638,7 +638,7 @@ Verwenden Sie die folgenden Tools, um das Besuchererlebnis zu simulieren:
 
 Sie können die Komponente „Target“ anpassen, indem Sie auf eine von zwei möglichen Arten auf die Komponentenoptionen zugreifen:
 
-1. Nachdem Sie die Komponente als Ziel ausgewählt haben, klicken Sie in der Target-Komponente auf die Komponente und dann auf das Einstellungssymbol (Zahnrad).
+1. Klicken Sie nach abgeschlossenem Targeting der Komponente in der Target-Komponente auf die Komponente und dann auf das Einstellungssymbol (Zahnrad).
 
    ![Target-Komponentenmenü](do-not-localize/chlimage_1-8.png)
 
@@ -646,7 +646,7 @@ Sie können die Komponente „Target“ anpassen, indem Sie auf eine von zwei m�
 
    ![chlimage_1-37](assets/chlimage_1-37.png)
 
-1. Um alternativ auf diese Einstellungen im Vollbildmodus zuzugreifen, klicken Sie im Fenster mit den Target-Komponentenoptionen auf das Vollbildsymbol.
+1. Alternativ können Sie auf diese Einstellungen auch im Vollbildmodus zugreifen: Klicken Sie dazu im Optionsfenster der Target-Komponente auf das Vollbildsymbol.
 
    ![Fenster mit Target-Komponentenoptionen](do-not-localize/chlimage_1-9.png)
 
@@ -697,11 +697,11 @@ Wenn Sie Adobe Target als Engine auswählen:
   </tr>
   <tr>
    <td><strong>Kontextparameter</strong></td>
-   <td>Klicks <strong>Feld hinzufügen</strong> um zusätzliche Kontextparameter zu konfigurieren (identisch mit den verfügbaren Parametern im Target-Framework). Kontextparameter, die der Komponente hinzugefügt wurden, gelten <i>nur</i> für die gewählte Komponente, nicht für andere Komponenten, wie dies der Fall wäre, wenn Kontextparameter direkt dem Framework hinzugefügt würden.</td>
+   <td>Klicken oder tippen Sie auf <strong>Feld hinzufügen</strong>, um zusätzliche Kontextparameter zu konfigurieren (es stehen die gleichen Optionen wie im Target-Framework zur Verfügung). Kontextparameter, die der Komponente hinzugefügt wurden, gelten <i>nur</i> für die gewählte Komponente, nicht für andere Komponenten, wie dies der Fall wäre, wenn Kontextparameter direkt dem Framework hinzugefügt würden.</td>
   </tr>
   <tr>
    <td><strong>Statische Parameter</strong></td>
-   <td>Klicks <strong>Feld hinzufügen</strong> um zusätzliche statische Parameter zu konfigurieren (entspricht den verfügbaren Parametern im Target-Framework). Statische Parameter, die der Komponente hinzugefügt wurden, gelten <i>nur</i> für die gewählte Komponente, nicht für andere Komponenten, wie dies der Fall wäre, wenn statische Parameter direkt dem Framework hinzugefügt würden. Statische Parameter stammen nicht aus dem Kontext (Client Context des Content Hub).</td>
+   <td>Klicken Sie auf <strong>Feld hinzufügen</strong>, um zusätzliche statische Parameter zu konfigurieren (es stehen die gleichen Optionen wie im Target-Framework zur Verfügung). Statische Parameter, die der Komponente hinzugefügt wurden, gelten <i>nur</i> für die gewählte Komponente, nicht für andere Komponenten, wie dies der Fall wäre, wenn statische Parameter direkt dem Framework hinzugefügt würden. Statische Parameter stammen nicht aus dem Kontext (Client Context des Content Hub).</td>
   </tr>
  </tbody>
 </table>

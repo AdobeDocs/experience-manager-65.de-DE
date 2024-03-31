@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2246'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
    * Komponenten nach Namen filtern
    * Mittels Dropdown-Auswahl die Anzeige auf eine bestimmte Gruppe begrenzen
 
-  Für eine detailliertere Beschreibung der Komponente können Sie auf das Informationssymbol neben der Komponente im **Komponenten** Browser (sofern verfügbar). Beispiel für den **Layout-Container**:
+  Wenn Sie auf das Informationssymbol neben der Komponente im **Komponenten**-Browser klicken, finden Sie eine detailliertere Beschreibung der Komponente (falls verfügbar). Beispiel für den **Layout-Container**:
 
   ![ateat-06](assets/ateat-06.png)
 
@@ -175,7 +175,7 @@ Die Inhaltsstruktur befindet sich auf einer Registerkarte im seitlichen Bedienfe
 
 ![Inhaltsstruktur](do-not-localize/screen_shot_2018-03-22at142042.png)
 
-Wenn Sie das seitliche Bedienfeld öffnen, wird es von der linken Seite aus eingeblendet. Wählen Sie ggf. die Registerkarte **Inhaltsstruktur**. Beim Öffnen können Sie eine Baumstrukturansicht Ihrer Seite oder Vorlage anzeigen, damit Sie leichter nachvollziehen können, wie ihr Inhalt hierarchisch strukturiert ist. Auf einer komplexer gestalteten Seite können Sie so zudem einfacher zwischen Komponenten auf der Seite wechseln.
+Wenn Sie das seitliche Bedienfeld öffnen, wird es von der linken Seite aus eingeblendet. Wählen Sie ggf. die Registerkarte **Inhaltsstruktur** aus. Mit dieser Strukturansicht Ihrer Seite oder Vorlage können Sie leicht nachvollziehen, wie die darauf verwendeten Komponenten hierarchisch strukturiert sind. Auf einer komplexer gestalteten Seite können Sie so zudem einfacher zwischen Komponenten auf der Seite wechseln.
 
 ![ateat-11](assets/ateat-11.png)
 
@@ -235,9 +235,9 @@ Wenn Ihre Seite Inhaltsfragmente enthält, haben Sie auch Zugriff auf den [Brows
 
 Wählen Sie den gewünschten Verweistyp, um weitere Informationen anzuzeigen. In bestimmten Situationen sind weitere Aktionen verfügbar, wenn Sie einen bestimmten Verweis auswählen, z. B.:
 
-* **Eingehende Links** bietet eine Liste der Seiten, die auf die Seite verweisen, sowie direkten Zugriff auf **Bearbeiten** eine dieser Seiten, wenn Sie einen bestimmten Link auswählen.
+* **Eingehende Links** enthält eine Liste der Seiten, die auf die Seite verweisen, und bietet direkten Zugriff zum **Bearbeiten** einer dieser Seiten, wenn Sie einen bestimmten Link auswählen. 
 
-   * Hier können nur statische Links angezeigt werden, nicht dynamisch generierte Links, z. B. aus der Listenkomponente.
+   * Es können nur statische Links angezeigt werden, nicht dynamisch generierte Links, z. B. aus der Listenkomponente.
 
 * Instanzen von geliehenen und verliehenen Inhalten, die die **Referenz**-Komponente verwenden. Sie können von hier aus zur referenzierten Seite navigieren.
 
@@ -345,7 +345,7 @@ Der Pfad-Browser ist wie die [Spaltenansicht](/help/sites-authoring/basic-handli
 
 ![screen_shot_2018-03-22at154521](assets/screen_shot_2018-03-22at154521.png)
 
-* Sobald eine Ressource ausgewählt wird, wird die Schaltfläche **Auswählen** oben rechts im Dialogfeld aktiviert. Klicken Sie auf , um die Auswahl zu bestätigen oder **Abbrechen** abbrechen.
+* Wenn eine Ressource ausgewählt wird, wird die Schaltfläche **Auswählen** oben rechts im Dialogfeld aktiviert. Klicken Sie, um die Auswahl zu bestätigen, oder wählen Sie zum Aufheben der Auswahl die Option **Abbrechen** aus.
 * Wenn der Kontext die Auswahl mehrerer Ressourcen zulässt, wird bei Auswahl einer Ressource auch die Schaltfläche **Auswählen** aktiviert, aber auch die Anzahl der ausgewählten Ressourcen wird oben rechts im Fenster angezeigt. Klicken Sie auf das **X** neben der Zahl, um die Auswahl für alle aufzuheben.
 * Wenn Sie durch den Baum navigieren, wird Ihre Position in den Breadcrumbs am oberen Rand des Dialogfelds angezeigt. Mithilfe der Breadcrumbs können Sie innerhalb der Ressourcenhierarchie schnell von einem Punkt zu einem anderen wechseln.
 * Sie können auch jederzeit das Suchfeld oben im Dialogfeld verwenden. Klicken Sie im Suchfeld auf **X**, wenn Sie die Suche löschen möchten.

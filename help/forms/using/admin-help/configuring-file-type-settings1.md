@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '6163'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -186,7 +186,7 @@ Aktivieren Sie diese Optionen, um festzulegen, wie Inhalte angezeigt werden, wie
 
 **Seiten-Layout**: Wählen Sie die Art des Seiten-Layouts für das PDF-Dokument.
 
-**Vergrößerung**: Wählen Sie die voreingestellte Vergrößerung für die Ansicht beim Öffnen des PDF-Dokuments oder wählen Sie einen benutzerdefinierten Wert. Wenn Sie eine Standardeinstellung auswählen, wird die standardmäßige Acrobat-Vergrößerung verwendet.
+**Vergrößerung**: Wählen Sie die voreingestellte Vergrößerung für die Ansicht beim Öffnen des PDF-Dokuments oder wählen Sie einen benutzerdefinierten Wert. Das Übernehmen der Standardeinstellung bedeutet, dass die Standardvergrößerung von Acrobat verwendet werden soll.
 
 **Auf folgender Seite öffnen**: Geben Sie die Nummer der Seite an, auf der das PDF-Dokument geöffnet werden soll.
 
@@ -214,7 +214,7 @@ Aktivieren Sie diese Optionen, um das Erscheinungsbild des Fensters festzulegen:
 
 ## „Flashvideos in PDF“-Einstellungen {#flash-videos-to-pdf-settings}
 
-PDF Generator unterstützt die Funktion zum Senden von Videos für Adobe Flash (SWF- oder FLV-Datei) und zum Erstellen einer PDF-Datei mit eingebettetem Video für Adobe Flash. Für diese Konvertierung muss keine Adobe-Flash Player auf dem Forms-Server installiert sein. Anweisungen zum Zugriff auf diese Option finden Sie unter [Erstellen oder Bearbeiten von Dateitypeinstellungen](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+PDF Generator unterstützt die Funktion zum Senden von Videos für Adobe Flash (SWF- oder FLV-Datei) und zum Erstellen einer PDF-Datei mit eingebettetem Video für Adobe Flash. Für diese Konversion braucht Adobe Flash Player nicht auf dem Formular-Server installiert zu sein. Anweisungen zum Zugriff auf diese Option finden Sie unter [Erstellen oder Bearbeiten von Dateitypeinstellungen](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **Dateinamenerweiterungen:** Durch Kommas getrennte Liste von Dateinamenerweiterungen, die konvertiert werden können.
 
@@ -311,7 +311,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 Die folgende Tabelle zeigt gängige Druckertypen und ihre Auflösung in dpi, ihre Standard-Rasterweite in Zeilen pro Zoll (lpi) und eine Resampling-Auflösung für Bilder in Pixel pro Zoll (ppi). Wenn Sie beispielsweise auf einem 600-dpi-Laserdrucker drucken, geben Sie 170 für die Auflösung ein, mit der Bilder neu berechnet werden sollen.
 
-**Bilder**: Wählen Sie diese Option, um Komprimierungs- und Neuberechnungsoptionen für Farb-, Graustufen- und Schwarzweißbilder festzulegen. Sie können mit diesen Optionen experimentieren, um einen guten Kompromiss zwischen Dateigröße und Bildqualität zu finden. Die Auflösungseinstellung für Farb- und Graustufenbilder sollte dem 1,5- bis 2-fachen der Rasterweitenlinierung entsprechen, mit der die Datei gedruckt wird. Die Auflösung für Schwarzweißbilder sollte mit der des Ausgabegeräts übereinstimmen. Durch das Speichern eines Schwarzweißbilds mit einer Auflösung von mehr als 1500 dpi wird die Dateigröße erhöht, ohne dass sich die Bildqualität spürbar verbessert. Bilder, die vergrößert werden, wie beispielsweise Karten, erfordern möglicherweise höhere Auflösungen.
+**Bilder**: Wählen Sie diese Option, um Komprimierungs- und Neuberechnungsoptionen für Farb-, Graustufen- und Schwarzweißbilder festzulegen. Sie können mit diesen Optionen experimentieren, um einen guten Kompromiss zwischen Dateigröße und Bildqualität zu finden. Die Auflösungseinstellung für Farb- und Graustufenbilder sollte dem 1,5- bis 2-fachen der Rasterweitenlinierung entsprechen, mit der die Datei gedruckt wird. Die Auflösung für Schwarzweißbilder sollte mit der des Ausgabegeräts übereinstimmen. Das Speichern eines Schwarzweißbilds mit einer Auflösung von mehr als 1500 dpi erhöht allerdings die Dateigröße, ohne die Bildqualität spürbar zu verbessern. Bilder, die vergrößert werden, wie beispielsweise Karten, erfordern möglicherweise höhere Auflösungen.
 
 >[!NOTE]
 >

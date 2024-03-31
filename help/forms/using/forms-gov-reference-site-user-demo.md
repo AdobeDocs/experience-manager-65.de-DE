@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2478'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -98,7 +98,7 @@ Die folgenden Gruppen sind ebenfalls enthalten:
 
 ## Automatische Forms-Konversion (Camila) {#automated-forms-conversion}
 
-**Dieser Abschnitt**: Camila, der CX Lead, verfügt über ein bereits existierendes PDF-basiertes Formular, das im Rahmen eines papierbasierten Prozesses verwendet wurde. Im Rahmen einer Modernisierung möchte Camila dieses PDF-Formular verwenden, um automatisch ein modernes adaptives Forms zu erstellen.
+**Dieser Abschnitt**: Camila, der CX Lead, verfügt über ein bereits existierendes PDF-basiertes Formular, das im Rahmen eines papierbasierten Prozesses verwendet wurde. Im Rahmen einer Modernisierung möchte sie dieses PDF-Formular verwenden, um automatisch ein modernes adaptives Formular zu erstellen.
 
 ### Automatische Forms-Konversion - We.Gov (Camila) {#automated-forms-conversion-wegov}
 

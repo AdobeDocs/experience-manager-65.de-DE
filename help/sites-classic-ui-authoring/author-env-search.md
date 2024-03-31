@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Die Autorenumgebung von AEM bietet abhängig vom Ressourcentyp verschiedene Mög
 
 ## Grundlagen zur Suche {#search-basics}
 
-Um auf das Suchfeld zuzugreifen, klicken Sie auf die **Suche** oben im linken Bereich der entsprechenden Konsole.
+Um den Suchbereich aufzurufen, klicken Sie in der jeweiligen Konsole im linken Bereich oben auf die Registerkarte **Suchen**.
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 

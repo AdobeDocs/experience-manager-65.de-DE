@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1641'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 97%
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
 
-Sie können ein PDF-Dokument mit einem Kennwort verschlüsseln, indem Sie den Assembler-Service verwenden. Nachdem ein PDF-Dokument mit einem Kennwort verschlüsselt wurde, muss ein Benutzer das Kennwort angeben, um das PDF-Dokument in Adobe Reader oder Acrobat anzuzeigen. Um ein PDF-Dokument mit einem Kennwort zu verschlüsseln, muss das DDX-Dokument Verschlüsselungselementwerte enthalten, die zum Verschlüsseln eines PDF-Dokuments erforderlich sind.
+Sie können ein PDF-Dokument mit einem Kennwort verschlüsseln, indem Sie den Assembler-Service verwenden. Nachdem ein PDF-Dokument mit einem Kennwort verschlüsselt wurde, müssen Sie das Kennwort angeben, damit das PDF-Dokument in Adobe Reader oder Acrobat angezeigt werden kann. Zum Verschlüsseln eines PDF-Dokuments mit einem Kennwort muss das DDX-Dokument Verschlüsselungselementwerte enthalten, die für die Verschlüsselung eines PDF-Dokuments erforderlich sind.
 
 Nehmen Sie für dieses Thema bitte an, dass das folgende DDX-Dokument verwendet wird.
 

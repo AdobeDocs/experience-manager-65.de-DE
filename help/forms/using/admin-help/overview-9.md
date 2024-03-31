@@ -1,6 +1,6 @@
 ---
 title: Überblick über den Arbeitsablauf für Formulare
-description: Mit Forms-Workflows können Benutzer am Menschen orientierte Prozesse entwerfen, verwalten und optimieren. Mithilfe des Arbeitsablaufs für Formulare können Benutzer auch automatisierte Geschäftsprozessanwendungen verwalten, die Systeme und Personen miteinander verbinden.
+description: Mit einem Forms-Workflow können Benutzende am Menschen orientierte Prozesse entwerfen, verwalten und optimieren. Mithilfe eines Forms-Workflows können Benutzende auch automatisierte Geschäftsprozessanwendungen verwalten, die Systeme und Personen miteinander verbinden.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
@@ -10,15 +10,15 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 18%
+ht-degree: 100%
 
 ---
 
 # Überblick über den Arbeitsablauf für Formulare {#overview-of-forms-workflow}
 
-Mit Forms-Workflows können Benutzer am Menschen orientierte Prozesse entwerfen, verwalten und optimieren. Mithilfe des Arbeitsablaufs für Formulare können Benutzer auch automatisierte Geschäftsprozessanwendungen verwalten, die Systeme und Personen miteinander verbinden.
+Mit einem Forms-Workflow können Benutzende am Menschen orientierte Prozesse entwerfen, verwalten und optimieren. Mithilfe eines Forms-Workflows können Benutzende auch automatisierte Geschäftsprozessanwendungen verwalten, die Systeme und Personen miteinander verbinden.
 
-Auf jeder Forms-Workflow-Seite in Administration Console können Sie verschiedene Aufgaben ausführen, wie in dieser Tabelle beschrieben.
+Auf jeder Forms-Workflow-Seite in der Administrationskonsole können Sie verschiedene Aufgaben ausführen, wie in dieser Tabelle beschrieben.
 
 <table>
  <thead>
@@ -30,23 +30,23 @@ Auf jeder Forms-Workflow-Seite in Administration Console können Sie verschieden
  </thead>
  <tbody>
   <tr>
-   <td><p>Servereinstellungen</p></td>
+   <td><p>Server-Einstellungen</p></td>
    <td>
     <ul>
-     <li><p>E-Mail-Einstellungen konfigurieren</p></li>
-     <li><p>Aufgabenbenachrichtigungen für Benutzer konfigurieren</p></li>
-     <li><p>Administratorbenachrichtigungen konfigurieren</p></li>
-     <li><p>Konfigurationseinstellungen für Business Activity Monitoring konfigurieren </p></li>
+     <li><p>Konfigurieren der E-Mail-Einstellungen</p></li>
+     <li><p>Konfigurieren von Aufgabenbenachrichtigungen für Benutzende</p></li>
+     <li><p>Konfigurieren von Admin-Benachrichtigungen</p></li>
+     <li><p>Konfigurieren der Konfigurationseinstellungen für Business Activity Monitoring </p></li>
     </ul></td>
    <td><p><a href="/help/forms/using/admin-help/configuring-server-settings.md#configuring-server-settings">Servereinstellungen konfigurieren</a></p></td>
   </tr>
   <tr>
-   <td><p>Arbeitsablauf für Formulare</p></td>
+   <td><p>Forms-Workflow</p></td>
    <td>
     <ul>
-     <li><p>Anzeigen aktiver Prozesse</p></li>
+     <li><p>Anzeigen der aktiven Prozesse</p></li>
      <li><p>Anzeigen und Arbeiten mit Prozessinstanzen, Vorgängen und Aufgaben</p></li>
-     <li><p>Prozessinstanzen, Teilprozesse und Vorgänge aussetzen, beenden und wiederholen</p></li>
+     <li><p>Aussetzen, Beenden und Wiederholen von Prozessinstanzen, Teilprozessen und Vorgängen</p></li>
     </ul></td>
    <td><p><a href="/help/forms/using/admin-help/processes.md#managing-processes">Prozesse verwalten</a></p></td>
   </tr>
@@ -59,7 +59,7 @@ Auf jeder Forms-Workflow-Seite in Administration Console können Sie verschieden
    <td><p><a href="/help/forms/using/admin-help/searching-process-instances.md#searching-for-process-instances">Nach Prozessinstanzen suchen</a></p></td>
   </tr>
   <tr>
-   <td><p>Aufgabensuche</p></td>
+   <td><p>Nach Aufgaben suchen</p></td>
    <td>
     <ul>
      <li><p>Aufgaben nach Benutzer- oder Aufgaben-ID suchen</p></li>
@@ -79,8 +79,8 @@ Auf jeder Forms-Workflow-Seite in Administration Console können Sie verschieden
    <td><p>Fehler bei angehaltenen Verzweigungen</p></td>
    <td>
     <ul>
-     <li><p>Alle angehaltenen Zweige und deren Fehler anzeigen</p></li>
-     <li><p>Angehaltene Zweige wiederholen</p></li>
+     <li><p>Alle angehaltenen Verzweigungen und deren Fehler anzeigen</p></li>
+     <li><p>Angehaltene Verzweigungen wiederholen</p></li>
     </ul></td>
    <td><p><a href="/help/forms/using/admin-help/stalled-operations-branches.md#working-with-stalled-operations-and-branches">Arbeiten mit angehaltenen Vorgängen und Zweigen</a></p></td>
   </tr>
@@ -88,10 +88,10 @@ Auf jeder Forms-Workflow-Seite in Administration Console können Sie verschieden
    <td><p>Abwesend</p></td>
    <td>
     <ul>
-     <li><p>Abwesenheitsinformationen eines Benutzers anzeigen</p></li>
-     <li><p>Den Status des Benutzers ändern (entweder im Büro oder außerhalb des Büros)</p></li>
-     <li><p>Einen Abwesenheitsdatumsbereich hinzufügen </p></li>
-     <li><p>Angeben, was mit Aufgaben zu tun ist, während der Benutzer nicht im Hause ist</p></li>
+     <li><p>Abwesenheitsinformationen von Benutzenden anzeigen</p></li>
+     <li><p>Den Status der Benutzenden ändern (entweder im Büro oder außerhalb des Büros)</p></li>
+     <li><p>Abwesenheitsdatumsbereich hinzufügen </p></li>
+     <li><p>Angeben, was mit Aufgaben zu tun ist, während die Benutzenden nicht im Büro sind</p></li>
     </ul></td>
    <td><p><a href="/help/forms/using/admin-help/configuring-out-office-settings.md#configuring-out-of-office-settings">Konfigurieren von Abwesenheitseinstellungen</a></p></td>
   </tr>

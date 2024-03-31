@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '464'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -24,11 +24,11 @@ ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lös
 
 >[!WARNING]
 >
->Die Beispiele für Store-Kandidaten werden als Referenzkonfigurationen bereitgestellt, um Ihnen bei der Einrichtung einer eigenen dedizierten Konfiguration für Ihr Projekt zu helfen. Verwenden Sie sie nicht direkt.
+>Die Beispiele für Store-Kandidaten werden als Referenzkonfigurationen bereitgestellt, um Ihnen bei der Einrichtung einer eigenen dedizierten Konfiguration für Ihr Projekt zu helfen. Verwenden Sie sie daher nicht direkt.
 
 ## Beispiel-Store-Kandidat „aem.segmentations“ {#aem-segmentation-sample-store-candidate}
 
-Store für gelöste und ungelöste ContextHub-Segmente. Ruft automatisch Segmente aus dem ContextHub SegmentManager zurück.
+Store für gelöste und ungelöste ContextHub-Segmente. Ruft automatisch Segmente aus dem ContextHub SegmentManager ab.
 
 ### Quellpfad {#source-location-segmentation}
 
@@ -40,7 +40,7 @@ Store für gelöste und ungelöste ContextHub-Segmente. Ruft automatisch Segment
 
 ### Konfiguration {#configuration-segmentation}
 
-Wenn Sie einen aem.segmentation -Store erstellen, müssen Sie keine detaillierte Konfiguration angeben. Die Standardkonfiguration gibt den Speicherort der ContextHub-Segmentdefinitionen an.
+Wenn Sie einen aem.segmentation-Store erstellen, ist es nicht erforderlich, eine detaillierte Konfiguration zur Verfügung zu stellen. Die Standardkonfiguration gibt den Speicherort der ContextHub-Segmentdefinitionen an.
 
 ```xml
 {
@@ -54,7 +54,7 @@ Wenn Sie einen aem.segmentation -Store erstellen, müssen Sie keine detaillierte
 
 ## Beispiel-Store-Kandidat „contexthub.geolocations“ {#contexthub-geolocation-sample-store-candidate}
 
-Der Beispiel-Store-Kandidat &quot;contexthub.geolocation&quot;verwendet Google Maps zum Abrufen und Speichern von Informationen zum Client-Standort.
+Der Beispiel-Store-Kandidat „contexthub.geolocation“ verwendet Google Maps zum Abrufen und Speichern von Informationen zum Client-Standort.
 
 ### Quellpfad {#source-location-geolocation}
 
@@ -108,7 +108,7 @@ Der Store verwendet einen Datenbaum, der dem folgenden Beispiel ähnelt:
 
 >[!NOTE]
 >
->Eine in Chrome 50.x eingeführte Sicherheitsrichtlinie erfordert, dass alle Geolocation-bezogenen Anrufe über eine gesicherte Verbindung erfolgen. Daher erzwingt AEM die Verwendung von https für Geolocation-API-Aufrufe, wenn AEM auch über https ausgeführt wird. Andernfalls wird http verwendet, um die Richtlinie des gleichen Ursprungs zu befolgen. In [diesem Google-Blogpost](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) erhalten Sie weitere Informationen zu den Änderungen in Chrome.
+>Eine in Chrome 50.x eingeführte Sicherheitsrichtlinie erfordert, dass alle Geolocation-bezogenen Anrufe über eine gesicherte Verbindung erfolgen. Daher erzwingt AEM die Verwendung von https für Geolocation-API-Aufrufe, wenn AEM auch über https ausgeführt wird. Andernfalls wird http verwendet, um der Richtlinie gleichen Ursprungs zu entsprechen. In [diesem Google-Blogpost](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) erhalten Sie weitere Informationen zu den Änderungen in Chrome.
 
 ## Beispiel-Store-Kandidat „contexthub.surferinfo“ {#contexthub-surferinfo-sample-store-candidate}
 
@@ -179,7 +179,7 @@ Stores, die diesen Store-Kandidaten verwenden, haben eine Datenstruktur, die dem
 
 ## Beispiel-Store-Kandidat „granite.emulators“  {#granite-emulators-sample-store-candidate}
 
-Der Beispiel-Store-Kandidat &quot;granite.emulators&quot;speichert Informationen über Clientgeräte.
+Der Beispiel-Store-Kandidat „granite.emulators“ speichert Informationen zu Client-Geräten.
 
 ### Quellpfad {#source-location-emulators}
 

@@ -1,6 +1,6 @@
 ---
 title: Die nächste Version …
-description: Eine nachfolgende Version ist fast immer vorgesehen und kann sogar in den letzten Phasen der aktuellen Implementierung beginnen
+description: Es sind fast immer nachfolgende Versionen vorgesehen, deren Einführung ggf. sogar bereits während der Schlussphase der laufenden Implementierung beginnt.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
@@ -10,20 +10,20 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 # Die nächste Version …{#the-next-release}
 
-Die Implementierung eines Projekts ist selten das Ende des Prozesses. Eine nachfolgende Version ist (fast) immer vorgesehen und kann sogar in den letzten Phasen der aktuellen Implementierung beginnen.
+Die Umsetzung eines Projekts ist meist nicht das Ende des Prozesses. Es sind (fast) immer nachfolgende Versionen vorgesehen, deren Einführung ggf. sogar bereits während der Schlussphase der laufenden Implementierung beginnt.
 
-Auf jeden Fall kann es nützlich sein, die nächste Version zu planen, indem Sie:
+In jedem Fall ist es ratsam, sich wie folgt auf die nächste Version vorzubereiten:
 
-* Führen Sie eine sorgfältige Dokumentation durch und speichern Sie Ihre Testfälle, damit sie referenziert oder hoffentlich wiederverwendet werden können.
-* Entwicklung von Tests, die als Regressionstests für die nächste Version verwendet werden können.
-* Erfassen aller Informationen, die Sie oder der Kunde durch die Erfahrung des Testprozesses gewonnen haben.
+* Dokumentieren und speichern Sie Ihre Testfälle sorgfältig, damit sie referenziert oder im besten Fall wiederverwendet werden können.
+* Entwickeln Sie Tests, die als Regressionstests für die nächste Version verwendet werden können.
+* Sammeln Sie jegliche Informationen zu den Erfahrungen, die Sie oder die Kundin bzw. der Kunde durch den Testprozess gewonnen haben.
 
-  Dies kann zu Formulareigenschaften für die nächste Version beitragen, z. B. da das Kundenerlebnis des Produkts während des Tests zugenommen hat.
+  Dies kann dabei helfen, Anforderungen für die nächste Version zu formulieren, beispielsweise weil die Kundenerfahrung im Umgang mit dem Produkt während des Tests zugenommen hat.
 
-Da es sich bei der nächsten Version um eine Migration handeln kann, sind alle damit verbundenen Informationen nützlich.
+Da es sich bei der nächsten Version um eine Migration handeln könnte, sind alle damit zusammenhängenden Informationen nützlich.

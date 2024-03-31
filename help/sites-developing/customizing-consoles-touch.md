@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '646'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 90%
 AEM bietet verschiedene Methoden zum Anpassen von Konsolen (und der [Seitenbearbeitungsfunktionen](/help/sites-developing/customizing-page-authoring-touch.md)) Ihrer Autoreninstanz.
 
 * Client-Bibliotheken 
-Mit Client-Bibliotheken können Sie die Standardimplementierung um neue Funktionen erweitern und gleichzeitig Standardfunktionen, -objekte und -methoden wiederverwenden. Bei der Anpassung können Sie Ihre eigene clientlib unter erstellen. `/apps.` Beispielsweise kann er den Code enthalten, der für Ihre benutzerdefinierte Komponente erforderlich ist.
+Mit Client-Bibliotheken können Sie die Standardimplementierung um neue Funktionen erweitern und gleichzeitig Standardfunktionen, -objekte und -methoden wiederverwenden. Bei der Anpassung können Sie unter `/apps.` Ihre eigene Client-Bibliothek erstellen. Sie kann beispielsweise den Code enthalten, der für Ihre benutzerdefinierte Komponente erforderlich ist.
 
 * Überlagerungen
 Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, die Standardfunktionen (in `/libs`) mit Ihren eigenen benutzerdefinierten Funktionen (in `/apps`) zu überlagern. Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da die Sling-Ressourcenzusammenführung das Vererben zulässt.
@@ -157,6 +157,6 @@ Anpassen von Spalten in der Listenansicht:
 
 ### Filtern von Ressourcen {#filtering-resources}
 
-Bei Verwendung einer Konsole ist es häufig der Fall, dass der Benutzer aus Ressourcen auswählen muss (z. B. Seiten, Komponenten, Assets usw.). Dies kann beispielsweise in Form einer Liste erfolgen, aus der der Autor ein Element auswählen muss.
+Ein häufiges Nutzungsszenario beim Verwenden der Konsole ist die Auswahl von Ressourcen (etwa Seiten, Komponenten, Assets) durch Benutzende. Dabei kann beispielsweise eine Liste verwendet werden, aus der die Autorin odbzw.er der Autor ein Element auswählen muss.
 
 Um die Liste in einer angemessenen Größe und auch für den Anwendungsfall relevant zu halten, kann ein Filter in Form eines benutzerdefinierten Prädikats implementiert werden. Weitere Informationen finden Sie in [diesem Artikel](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources).

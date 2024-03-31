@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '184'
-ht-degree: 55%
+ht-degree: 86%
 
 ---
 
@@ -21,11 +21,11 @@ Adobe Experience Platform Launch ist die empfohlene Methode zur Implementierung 
 
 >[!NOTE]
 >
->Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
+>Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen Client-seitiges Rendern auf Basis eines SPA-Frameworks (z. B. React oder Angular) erforderlich ist.
 
 ## Tutorial {#tutorial}
 
-Informationen zur Integration Ihrer SPA in Adobe Experience Platform Launch finden Sie unter [diesem Knowledgebase-Artikel und -Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=de), der Sie durch die Einrichtung von Launch führt und die mit Angular oder React erstellte Experience Cloud in implementiert.
+Um zu verstehen, wie Sie SPAs mit Adobe Experience Platform Launch integrieren können, sehen Sie sich [diesen Knowledgebase-Artikel und das Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=de) an, um sich durch die Einrichtung von Launch und die Implementierung von Experience Cloud mit Angular oder React führen zu lassen.
 
 >[!NOTE]
 >

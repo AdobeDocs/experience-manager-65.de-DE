@@ -1,6 +1,6 @@
 ---
 title: Hinzufügen von Anhängen
-description: Fotos und Notizen als Anmerkungen zu Ihrer Aufgabe in der AEM Forms-App hinzufügen
+description: Fügen Sie Fotos und Freihandnotizen als Anmerkungen zu Aufgaben in der AEM Forms-App hinzu.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 34%
 
 ## Hinzufügen von Anhängen in Formularen, die mit AEM Forms Workflow-Server (AEM Forms on JEE) synchronisiert werden {#adding-annotations}
 
-Mit der AEM Forms-App können Sie Bilder, Notizen und Textanmerkungen an das mit dem AEM Forms JEE-Server synchronisierte Formular anhängen. Wenn Ihr Formular von einem AEM Forms Workflow-Server geladen wird, werden Ihre Anhänge zum Formular hinzugefügt. Sie können die Schaltfläche für Anlagen auswählen ![attachments-app](assets/attachments-app.png) , um alle Anlagen in einem Formular zusammen anzuzeigen. Die rote Benachrichtigung gibt die Anzahl von Anhänge im Formular an. Wenn keine Anhänge im Formular vorhanden sind, wird die rote Benachrichtigungsschaltfläche nicht angezeigt. Wenn keine Anlagen im Formular vorhanden sind, wenn Sie die Schaltfläche &quot;Anlagen&quot;auswählen ![attch](assets/attch.png), erhalten Sie Optionen zum Anhängen von Fotos oder Scribbles.
+Mit der AEM Forms-App können Sie Bilder, Freihandnotizen und Kommentare zu Ihrem Formular hinzufügen, das mit dem AEM Forms-JEE-Server synchronisiert wird. Wenn das Formular von einem AEM Forms Workflow-Server geladen wird, werden die Anhänge zu dem Formular hinzugefügt. Sie können die Schaltfläche für Anhänge ![attachments-app](assets/attachments-app.png) auswählen, um alle Anhänge in einem Formular gemeinsam anzuzeigen. Die rote Benachrichtigung gibt die Anzahl von Anhänge im Formular an. Wenn keine Anhänge im Formular vorhanden sind, wird die rote Benachrichtigungsschaltfläche nicht angezeigt. Falls keine Anhänge im Formular vorhanden sind, erhalten Sie Optionen zum Anhängen von Fotos oder Skizzen, wenn Sie die Schaltfläche für Anhänge ![attach](assets/attch.png) auswählen.
 
 Ihre Optionen sind:
 
@@ -35,7 +35,7 @@ Ihre Optionen sind:
 
 ### Der Bildschirm „Anhänge“ {#the-attachments-screen}
 
-Um alle Anlagen an einer Stelle anzuzeigen, wählen Sie ![attachments-app](assets/attachments-app.png). Hier können Sie Anhänge hinzufügen, umbenennen und löschen.
+Um alle Anhänge zusammen an einem Ort zu sehen, wählen Sie ![attachments-app](assets/attachments-app.png) aus. Hier können Sie Anhänge hinzufügen, umbenennen und löschen.
 
 ![Alle Anhänge an einem Ort](assets/attachments-screen.png)
 
@@ -43,47 +43,47 @@ Verwenden Sie die Schaltfläche mit dem **Pluszeichen** (+) im Bildschirm „Anh
 
 ### Hinzufügen eines Fotos {#adding-a-photograph}
 
-Sie können die Kamera Ihres Mobilgeräts oder gespeicherte Bilder auf Ihrem Gerät verwenden, um ein Bild im Formular anzuhängen.
+Sie können die Kamera Ihres Mobilgeräts oder auf Ihrem Gerät gespeicherte Bilder verwenden, um ein Bild im Formular anzuhängen.
 
-1. Schaltfläche &quot;Anlage auswählen&quot; ![attch](assets/attch.png) unten im Fenster.
-1. Auswählen **Galerie** oder **Kamera** im angezeigten Popup-Fenster.
-1. Führen Sie je nach ausgewählter Option Folgendes aus:
+1. Wählen Sie unten im Fenster die Schaltfläche für Anhänge ![attach](assets/attch.png) aus.
+1. Wählen Sie im Popup-Menü, das angezeigt wird, die Option **Galerie** oder **Kamera** aus.
+1. Führen Sie je nach ausgewählter Option einen der folgenden Schritte aus:
 
-   1. Wenn Sie **Kamera**.
+   1. Wenn Sie **Kamera** auswählen:
 
-      Machen Sie ein Foto. Wählen Sie dann die **Verwendung** ![use-pic](assets/use-pic.png) Schaltfläche.
+      Nehmen Sie ein Foto auf. Wählen Sie anschließend die Schaltfläche **Verwenden** ![use-pic](assets/use-pic.png) aus.
 
-      Oder wählen Sie die **Wiederholen** ![retake](assets/retake.png) -Schaltfläche, um das Foto erneut aufzunehmen.
+      Oder wählen Sie die Schaltfläche **Erneut aufnehmen** ![retake](assets/retake.png) aus, um erneut ein Foto aufzunehmen.
 
-   1. Wenn Sie **Galerie**.
+   1. Wenn Sie **Galerie** auswählen:
 
-      Der Bildbrowser des Geräts wird angezeigt. Wählen Sie im Bildbrowser Ihres Geräts das Bild aus, das Sie anhängen möchten.
+      Die Bildauswahl des Geräts wird eingeblendet. Wählen Sie in der Bildauswahl des Geräts das Bild aus, das Sie anhängen möchten.
 
 ### Hinzufügen einer Notiz {#adding-a-note}
 
 Mit der Option **Notizen** können Sie dem Formular Freihandskizzen oder Textanhänge hinzufügen.
 
-1. Schaltfläche &quot;Anlage auswählen&quot; ![attch](assets/attch.png) unten im Fenster.
-1. Auswählen **Hinweise** im angezeigten Popup-Fenster.
-1. Erfassen Sie in der Benutzeroberfläche &quot;Notizen&quot;, die gestartet wird, ein Freihand-Scribble.
+1. Wählen Sie unten im Fenster die Schaltfläche für Anhänge ![attach](assets/attch.png) aus.
+1. Wählen Sie im Popup-Menü, das angezeigt wird, die Option **Notizen** aus.
+1. Dadurch wird die Benutzeroberfläche „Notizen“ gestartet, auf der Sie Freihandskizzen erfassen können.
 
    ![Freihand-Benutzeroberfläche](assets/scribble-ui.png)
 
-   Scribble
+   Freihandskizzen
 
-   Sie können die folgenden Optionen in der Scribble-Benutzeroberfläche verwenden:
+   Sie können die folgenden Optionen in der Benutzeroberfläche für Freihandskizzen verwenden:
 
-   * **Löschen**: Löscht den Bildschirm.
-   * **Schaltfläche Fertig**: Fügt das aktuelle Scribble hinzu.
-   * **Schaltfläche &quot;Abbrechen&quot;**: Verwirft das aktuelle Scribble und beendet die Scribble-Benutzeroberfläche.
+   * **Löschen**: Löscht den gesamten Bildschirm.
+   * **Fertig-Schaltfläche**: Fügt die aktuelle Freihandskizze hinzu.
+   * **Abbrechen-Schaltfläche**: Verwirft die aktuelle Freihandskizze und beendet die zugehörige Benutzeroberfläche.
    * ![Tastatur](assets/keyboard.png): Löscht die Skizze und ermöglicht die Eingabe einer Textnotiz.
 
    ![Tastatur im AEM Forms-Programm Scribble](assets/keyboard-inapp.png)
 
-## Anlagen in Formularen, die mit den AEM Forms-Servern ohne AEM Forms Workflow (AEM Forms unter OSGi) synchronisiert werden {#attachments-in-forms-synced-with-the-aem-forms-servers-without-aem-forms-workflow-aem-forms-on-osgi}
+## Anhänge in Formularen, die mit AEM-Formular-Servern ohne AEM Forms Workflow (AEM Forms on OSGi) synchronisiert werden {#attachments-in-forms-synced-with-the-aem-forms-servers-without-aem-forms-workflow-aem-forms-on-osgi}
 
-Anlagen für mobile Formulare, die mit AEM Forms OSGi-Servern synchronisiert werden, funktionieren ähnlich wie die AEM Forms JEE-Server.
+Anhänge für mobile Formulare, die mit AEM Forms OSGi-Servern synchronisiert werden, funktionieren ähnlich wie AEM Forms JEE-Server.
 
-Anlagen auf Formularebene werden nicht für adaptive Formulare unterstützt, die in der App von einem AEM Forms OSGi-Server geladen werden. Um Bilder oder Textanmerkungen anzuhängen, aktivieren Sie Anlagen auf Feldebene im Formular, wenn Sie es erstellen. Ziehen Sie die Dateianlagenkomponente aus dem Komponenten-Browser in das Feld.
+Anhänge auf Formularebene werden für adaptive Formulare, die in der App von einem AEM Forms OSGi-Server geladen werden, nicht unterstützt. Um Bilder oder Kommentare anzuhängen, aktivieren Sie Anhänge auf Feldebene im Formular, wenn Sie es erstellen. Ziehen Sie die Dateianhangskomponente aus dem Komponenten-Browser in das Feld.
 
-Wenn adaptive Formulare vorhanden sind, können Sie die angehängten Dateien im Datensatzdokument (DoR) anzeigen. Weitere Informationen finden Sie unter [Generierung eines Datensatzdokuments für adaptive Nicht-XFA-Formulare](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+Bei adaptiven Formularen können Sie die angehängten Dateien im Datensatzdokument (Document of Record, DoR) anzeigen. Weitere Informationen finden Sie unter [Generierung eines Datensatzdokuments für adaptive Nicht-XFA-Formulare](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).

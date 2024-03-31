@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '814'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Sie können zusätzliche Suchregisterkarten hinzufügen, indem Sie sie in der Ad
 
    >[!NOTE]
    >
-   >Wenn Sie eine Sekunde erstellen `siteadminsearchpanel`müssen Sie eine `id` -Eigenschaft, um Formularkonflikte zu vermeiden.
+   >Achten Sie bei Erstellung eines zweiten `siteadminsearchpanel` auf die Festlegung einer `id`-Eigenschaft, um Formularkonflikte zu vermeiden.
 
 ## Erstellen benutzerdefinierter Eigenschaften {#creating-custom-predicates}
 
@@ -54,13 +54,13 @@ Sie können zusätzliche Suchregisterkarten hinzufügen, indem Sie sie in der Ad
 
 Um benutzerdefinierte Eigenschaften erstellen zu können, benötigen Sie Grundlagenkenntnisse über das [Widget-Framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?lang=de).
 
-Es sich als Best Practice erwiesen, eine vorhandene Eigenschaft zu kopieren und anzupassen. Beispielprädikate finden Sie unter **/libs/cq/search/components/predicates**.
+Es sich als Best Practice erwiesen, eine vorhandene Eigenschaft zu kopieren und anzupassen. Beispieleigenschaften finden Sie unter **/libs/cq/search/components/predicates**.
 
 ### Beispiel: Einfaches Eigenschaftsprädikat erstellen   {#example-build-a-simple-property-predicate}
 
 So erstellen Sie ein Eigenschaftsprädikat:
 
-1. Erstellen Sie einen Komponentenordner in Ihrem Projektverzeichnis, beispielsweise **/apps/weretail/components/titlepredicate**.
+1. Erstellen Sie einen Komponentenordner in Ihrem Projektverzeichnis, z. B. **/apps/weretail/components/titlepredicate**.
 1. Fügen Sie **content.xml** hinzu:
 
    ```xml
@@ -153,7 +153,7 @@ So erstellen Sie ein Eigenschaftsprädikat:
 
 So erstellen Sie eine Gruppeneigenschaft:
 
-1. Erstellen Sie einen Komponentenordner in Ihrem Projektverzeichnis, beispielsweise **/apps/weretail/components/picspredicate**.
+1. Erstellen Sie einen Komponentenordner in Ihrem Projektverzeichnis, z. B. **/apps/weretail/components/picspredicate**.
 1. Fügen Sie **content.xml** hinzu:
 
    ```xml

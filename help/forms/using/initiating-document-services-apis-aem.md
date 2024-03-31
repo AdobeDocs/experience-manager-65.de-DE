@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1167'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -51,14 +51,14 @@ Auf der Registerkarte „Umgebungsoptionen“ können Sie verschiedene Verarbeit
 * *Vorgangslog-Stufe*: Gibt die Protokollebene für die Verarbeitungsprotokolle an.
 * *Validate Only*: Prüft die Gültigkeit der Eingabe-DDX.
 
-* *Fehler bei Fehler*: Gibt an, ob der Aufruf des Assembler-Dienstes fehlschlagen soll, wenn ein Fehler auftritt. Der Standardwert ist „False“.
+* *Bei Fehler abbrechen*: Gibt an, ob der Aufruf an den Assembler-Dienst bei einem Fehler fehlschlagen soll. Der Standardwert ist „False“.
 
 #### Ausgabedokumente {#output-documents}
 
 Je nach Eingabe-DDX kann die aufrufende API mehrere Ausgabedokumente erstellen. Auf der Registerkarte der Ausgabedokumente können Sie auswählen, wo das Ausgabedokument gespeichert werden soll.
 
 1. *Ausgabe in Payload speichern*: Speichert Ausgabedokumente unter dem Payload-Ordner oder überschreibt die Payload, wenn die Payload eine Datei ist.
-1. *Landkarte des Ausgabedokuments*: Hiermit können Sie explizit angeben, wo jedes Ausgabedokument gespeichert werden soll, indem pro Ausgabedokument ein Eintrag hinzugefügt wird. Jeder Eintrag gibt das Dokument an und wo es gespeichert werden soll. Ein Output Document kann die Payload überschreiben oder im Payload-Ordner speichern. Dies ist nützlich, wenn es mehrere Output Documents gibt.
+1. *Ausgabedokumentzuordnung*: Lässt Sie explizit angeben, wo jedes Ausgabedokument gespeichert werden soll, indem ein Eintrag pro Ausgabedokument hinzugefügt wird. Jeder Eintrag gibt das Dokument an und wo es gespeichert werden soll. Ein Output Document kann die Payload überschreiben oder im Payload-Ordner speichern. Dies ist nützlich, wenn es mehrere Output Documents gibt.
 
 1. *Vorgangslog*: Gibt an, wo das Vorgangslogdokument gespeichert werden soll. Dies ist bei der Fehlerbehebung hilfreich.
 

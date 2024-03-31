@@ -1,6 +1,6 @@
 ---
 title: Admin Consoles
-description: Erfahren Sie, wie Sie die in Adobe Experience Manager verfügbaren Admin Consolen verwenden.
+description: Erfahren Sie, wie Sie die in Adobe Experience Manager verfügbaren Admin Consoles verwenden.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -11,20 +11,20 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
 
 # Admin Consoles{#admin-consoles}
 
-Standardmäßig ist die Möglichkeit, über die Admin Console zur klassischen Benutzeroberfläche zu wechseln, deaktiviert. Daher werden die Popup-Symbole, die beim Bewegen des Mauszeigers über bestimmte Konsolensymbole angezeigt wurden und den Zugriff auf die klassische Benutzeroberfläche ermöglichen, nicht mehr angezeigt.
+Die Möglichkeit, über die Admin Consoles zur klassischen Benutzeroberfläche zu wechseln, ist standardmäßig deaktiviert. Daher werden die Popup-Symbole, die beim Bewegen des Mauszeigers über bestimmte Konsolensymbole angezeigt wurden und den Zugriff auf die klassische Benutzeroberfläche ermöglichten, nicht mehr angezeigt.
 
-Jede Konsole, die unter `/libs/cq/core/content/nav` über eine klassische Benutzeroberfläche verfügt, kann einzeln wieder aktiviert werden. Die Option **Klassische Benutzeroberfläche** wird für das Konsolensymbol dann wieder angezeigt, wenn Sie den Mauszeiger darauf bewegen.
+Jede Konsole, die unter `/libs/cq/core/content/nav` über eine klassische Benutzeroberfläche verfügt, kann einzeln wieder aktiviert werden. Die Option **Klassische Benutzeroberfläche** wird für das Konsolensymbol dann wieder angezeigt, wenn Sie den Mauszeiger darüber bewegen.
 
-In diesem Beispiel aktivieren Sie die klassische Benutzeroberfläche für die Sites-Konsole erneut.
+In diesem Beispiel aktivieren wir die klassische Benutzeroberfläche wieder für die Sites-Konsole.
 
-1. Suchen Sie mithilfe von CRXDE Lite den Knoten, der der Admin Console entspricht, für die Sie die klassische Benutzeroberfläche erneut aktivieren möchten. Sie finden ihn hier:
+1. Suchen Sie in CRXDE Lite nach dem Knoten für die Admin Console, für die Sie die klassische Benutzeroberfläche wieder aktivieren möchten. Sie finden ihn hier:
 
    `/libs/cq/core/content/nav`
 
@@ -32,7 +32,7 @@ In diesem Beispiel aktivieren Sie die klassische Benutzeroberfläche für die Si
 
    [`https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
 
-1. Wählen Sie den entsprechenden Knoten der Konsole aus, für die Sie die klassische Benutzeroberfläche wieder aktivieren möchten. In diesem Beispiel aktivieren Sie die klassische Benutzeroberfläche für die Sites-Konsole erneut.
+1. Wählen Sie den entsprechenden Knoten der Konsole aus, für die Sie die klassische Benutzeroberfläche wieder aktivieren möchten. In diesem Beispiel aktivieren wir die klassische Benutzeroberfläche wieder für die Sites-Konsole.
 
    `/libs/cq/core/content/nav/sites`
 
@@ -46,7 +46,7 @@ In diesem Beispiel aktivieren Sie die klassische Benutzeroberfläche für die Si
 
    `enableDesktopOnly = {Boolean}true`
 
-1. Die **Klassische Benutzeroberfläche** ist in der Admin Console wieder als Popover-Option verfügbar.
+1. Die Option **Klassische Benutzeroberfläche** ist in der Admin Console wieder als Popover-Option verfügbar.
 
    ![Popover-Option „klassische Benutzeroberfläche“](assets/syui-01-2019-02-27-15-16-55.png)
 

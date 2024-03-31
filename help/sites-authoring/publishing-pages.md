@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1673'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ Wenn Sie eine Seite bearbeiten, kann sie direkt im Editor veröffentlicht werden
    * Die Seite wird direkt veröffentlicht, wenn keine Verweise veröffentlicht werden müssen.
    * Wenn die Seite Verweise enthält, die veröffentlicht werden müssen, werden diese im **Veröffentlichungsassistenten** aufgeführt und Sie können eine der folgenden Aktionen ausführen:
 
-      * Geben Sie an, welche Assets oder Tags Sie zusammen mit der Seite veröffentlichen möchten, und verwenden Sie dann **Veröffentlichen** , um den Prozess abzuschließen.
+      * Geben Sie an, welche Assets oder Tags Sie mit der Seite veröffentlichen möchten, und wählen Sie **Veröffentlichen** aus, um den Vorgang abzuschließen.
 
       * Mit **Abbrechen** können Sie den Vorgang abbrechen.
 
@@ -77,7 +77,7 @@ Wenn Sie eine Seite bearbeiten, kann sie direkt im Editor veröffentlicht werden
 
 >[!NOTE]
 >
->Die Veröffentlichung im Editor ist eine flache Veröffentlichung, d. h. nur die ausgewählten Seiten werden veröffentlicht und keine untergeordneten Seiten.
+>Im Editor kann nur eine teilweise Veröffentlichung vorgenommen werden, d. h. nur die ausgewählten und keine untergeordneten Seiten werden veröffentlicht.
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ So veröffentlichen Sie eine Seite mit der Funktion „Quick Publish“:
 
 #### Veröffentlichung verwalten {#manage-publication}
 
-**Veröffentlichung verwalten** bietet mehr Optionen als &quot;Quick Publish&quot;, mit denen untergeordnete Seiten einbezogen, Verweise angepasst und alle entsprechenden Workflows gestartet werden können und die Option zur Veröffentlichung zu einem späteren Zeitpunkt angeboten wird.
+**Veröffentlichung verwalten** bietet mehr Optionen als „Schnell veröffentlichen“. Sie können damit auch untergeordnete Seiten einschließen, Verweise anpassen, alle nötigen Workflows starten und bei Bedarf zu einem späteren Zeitpunkt veröffentlichen.
 
 So veröffentlichen Sie mit „Veröffentlichung verwalten“ eine Seite bzw. machen ihre Veröffentlichung rückgängig:
 
@@ -183,7 +183,7 @@ So veröffentlichen Sie mit „Veröffentlichung verwalten“ eine Seite bzw. ma
 
    >[!NOTE]
    >
-   >Der gezeigte **Workflow**-Schritt hängt von den Rechten der jeweiligen Person ab. Siehe [vorheriger Hinweis auf dieser Seite](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) bezüglich Veröffentlichungsberechtigungen und [Verwalten des Zugriffs auf Workflows](/help/sites-administering/workflows-managing.md) und [Anwenden von Workflows auf Seiten](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) für Details.
+   >Der gezeigte **Workflow-Schritt** hängt von den Rechten der jeweiligen Person ab. Weitere Informationen finden Sie im [vorherigen Hinweis auf dieser Seite](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) bezüglich Berechtigungen für die Veröffentlichung sowie unter [Verwaltung der Zugriffsrechte auf Workflows](/help/sites-administering/workflows-managing.md) und unter [Anwenden von Workflows auf Seiten](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd).
 
    Die Ressourcen werden nach den ausgelösten Workflows gruppiert und erhalten jeweils folgende Optionen:
 

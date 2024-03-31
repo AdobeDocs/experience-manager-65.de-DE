@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4130'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Sehen Sie sich eine exemplarische Vorgehensweise dazu an, [wie interaktive Bildb
 
 Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstieg in die Arbeit mit interaktiven Bildern in Adobe Experience Manager Assets ermöglichen.
 
-Suchen Sie nach der Überschrift **Beispiele** in einigen der Schnellstartaufgaben. Es enthält ein kurzes Tutorial, das auf dem folgenden Webseitenbeispiel basiert, dem noch keine interaktiven Bilder hinzugefügt wurden:
+Suchen Sie nach der Überschrift **Beispiele** in einigen der Schnellstartaufgaben. Hier finden Sie ein kurzes Tutorial, das auf der folgenden Beispiel-Web-Seite basiert, der noch keine interaktiven Bilder hinzugefügt wurden:
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=de](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=de)
 
@@ -171,7 +171,7 @@ Die Demo-Web-Seite enthält mehrere Produktminiaturen. Jede davon verfügt über
 Wenn Sie die Server-Aufrufe betrachten, sehen Sie, dass nur der Anfragepfad produktspezifische Informationen enthält. Beachten Sie außerdem, dass die Abfragezeichenfolge überhaupt nicht verwendet wird und zwei unterschiedliche Typen von Datenteilen beteiligt sind:
 
 * Der erste Typ ist „Männlich“ oder „Weiblich“. Dies kann als „Produktkategorie“ bezeichnet werden.
-* Der zweite Typ ist der Produktname, z. B. CamoPullover. Sie können davon ausgehen, dass dies die Produkt-SKU ist.
+* Der zweite Typ ist der Produktname, beispielsweise „CamoPullover“. Sie können davon ausgehen, dass dies die Produkt-SKU ist.
 
 Mit diesen Informationen hat die gesamte Schnellansichts-URL das folgende Muster:
 
@@ -209,7 +209,7 @@ Nachdem Sie die Viewer-Vorgabe gespeichert haben, wird sie automatisch auf der S
 
    Stellen Sie sicher, die neue Viewer-Vorgabe zu veröffentlichen.
 
-   Siehe [Veröffentlichen von hinzugefügten Viewer-Vorgaben](/help/assets/managing-viewer-presets.md#publishing-viewer-presets).
+   Siehe [Veröffentlichen der von Ihnen hinzugefügten Viewer-Vorgaben](/help/assets/managing-viewer-presets.md#publishing-viewer-presets)
 
    Sie sind nun bereit, ein Bildbanner hochzuladen.
 
@@ -266,7 +266,7 @@ Siehe [(Optional) Anzeigen einer Vorschau für interaktive Bilder](#optional-pre
 
    * Wählen Sie das Bild aus, um es auf der Seite Detailansicht zu öffnen. Wählen Sie in der Symbolleiste die Option **[!UICONTROL Bearbeiten]** aus.
 
-1. Wählen Sie oben links auf der Seite **[!UICONTROL Hotspot hinzufügen]** (Finger-Auswahlsymbol) aus, um die Hotspot-Verwaltungsseite zu öffnen.
+1. Wählen Sie oben links auf der Seite **[!UICONTROL Hotspot hinzufügen]** (Fingertipp-Symbol) aus, um die Hotspot-Verwaltungsseite zu öffnen.
 1. Wählen Sie in der linken oberen Ecke der Seite **[!UICONTROL Hotspot]** aus.
 
    1. Wählen Sie in der rechten oberen Ecke der Seite „Hotspot-Verwaltung“ **[!UICONTROL Hotspot]** aus.
@@ -514,7 +514,7 @@ Im Folgenden finden Sie den vollständigen Quell-Code:
  s7interactiveimageviewer.init();
 ```
 
-Die endgültige Demowebsite mit dem vollständig integrierten interaktiven Bild sieht wie folgt aus:
+Die endgültige Demo-Website mit dem vollständig integrierten interaktiven Bild sieht folgendermaßen aus:
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=de](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=de)
 

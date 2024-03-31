@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 79%
+ht-degree: 97%
 
 ---
 
@@ -42,7 +42,7 @@ Wenn Sie beispielsweise alle Namen und E-Mail-Adressen von Benutzenden benötige
 Ein Beispiel, das einen solchen Anwendungsfall veranschaulicht, ist auf der Geometrixx-Website enthalten:
 
 1. Navigieren Sie zur Seite **Support** und dann zur Umfrage zur **Zufriedenheit mit dem Kunden-Service**.
-1. **Bearbeiten** Sie den Absatz **Beginn des Formulars**. Klicken Sie im Dialogfeld auf die **Erweitert** Registerkarte, erweitern Sie die **Aktionskonfiguration** Klicken Sie auf **Daten anzeigen...**.
+1. **Bearbeiten** Sie den Absatz **Beginn des Formulars**. Klicken Sie im Dialogfeld auf die Registerkarte **Erweitert**, erweitern Sie den Bereich **Aktionskonfiguration** und klicken Sie dann auf **Daten anzeigen**.
 
    ![Beispiel für eine Umfrage zur Kundenzufriedenheit](assets/custsatsurvey.png)
 
@@ -64,7 +64,7 @@ Mit dem Bulk Editor können Sie:
 So bearbeiten Sie mit dem Bulk Editor mehrere Elemente gleichzeitig:
 
 1. Klicken Sie in der **Tools**-Konsole auf den Ordner für **Import-Tools**, um ihn zu erweitern.
-1. Doppelklicken Sie auf die **Bulk Editor**.
+1. Doppelklicken Sie auf den **Bulk Editor**.
 1. Geben Sie die Auswahlanforderungen ein:
 
 <table>
@@ -79,11 +79,11 @@ So bearbeiten Sie mit dem Bulk Editor mehrere Elemente gleichzeitig:
   </tr>
   <tr>
    <td>Abfrageparameter</td>
-   <td>Geben Sie mithilfe der GQL-Parameter die Suchzeichenfolge ein, nach der der Bulk Editor im Repository suchen soll. Beispiel: <code>type:Page</code> sucht nach allen Seiten im Stammpfad, <code>text:professional</code> sucht nach allen Seiten, die das Wort "professionell"enthalten, und <code>"jcr:title":English</code> sucht nach allen Seiten, die "Englisch"als Titel haben. Sie können nur nach Zeichenfolgen suchen.</td>
+   <td>Geben Sie mithilfe von GQL-Parametern die Suchzeichenfolge ein, nach der der Bulk Editor im Repository suchen soll. Beispielsweise wird mit <code>type:Page</code> nach allen Seiten im Stammverzeichnis gesucht, mit <code>text:professional</code> nach allen Seiten, die das Wort „professional“ enthalten, und mit <code>"jcr:title":English</code> nach allen Seiten, die „English“ als Titel aufweisen. Sie können nur nach Zeichenfolgen suchen.</td>
   </tr>
   <tr>
    <td>Kontrollkästchen „Inhaltsmodus“</td>
-   <td>Aktivieren Sie dieses Kontrollkästchen, damit Sie Eigenschaften in der <code>jcr:content</code> Unterknoten der Suchergebnisse, falls vorhanden. Diese Option ist nur für Seiten nutzbar. Eigenschaftsnamen erhalten das Präfix <code>"jcr:content/"</code></td>
+   <td>Aktivieren Sie dieses Kontrollkästchen, um die Eigenschaften im Unterknoten <code>jcr:content</code> der Suchergebnisse zu lesen, sofern vorhanden. Diese Option ist nur für Seiten nutzbar. Eigenschaftsnamen erhalten das Präfix <code>"jcr:content/"</code></td>
   </tr>
   <tr>
    <td>Eigenschaften/Spalten</td>
@@ -109,7 +109,7 @@ Im Beispiel oben werden alle Seiten, die Ihren Suchkriterien entsprechen, zurüc
 
    ![Massenbearbeitung](assets/srchresultedit.png)
 
-1. Klicks **Speichern** um Ihre Änderungen zu speichern (die **Speichern** aktiviert ist, nachdem Sie eine Zelle bearbeitet haben).
+1. Klicken Sie auf **Speichern**, um die Änderungen zu speichern. (Die Schaltfläche **Speichern** wird aktiviert, wenn Sie eine Zelle bearbeitet haben.)
 
    >[!CAUTION]
    >
@@ -118,19 +118,19 @@ Im Beispiel oben werden alle Seiten, die Ihren Suchkriterien entsprechen, zurüc
 #### Weitere GQL-Abfrageparameter {#additional-gql-query-parameters}
 
 * **path:** Durchsucht nur Knoten unter diesem Pfad. Wenn Sie mehr als einen Begriff mit einem Pfad-Präfix festlegen, wird nur das letzte berücksichtigt.
-* **Typ:** gibt nur Knoten des angegebenen Knotentyps zurück. Das schließt primäre und Mixin-Typen ein.  Sie können mehrere Knotentypen durch Kommas voneinander getrennt festlegen.  GQL gibt Knoten zurück, die einen der festgelegten Typen aufweisen.
+* **type:** Gibt nur Knoten des angegebenen Knotentyps zurück. Das schließt primäre und Mixin-Typen ein.  Sie können mehrere Knotentypen durch Kommas voneinander getrennt festlegen.  GQL gibt Knoten zurück, die einen der festgelegten Typen aufweisen.
 * **order:** Sortiert das Ergebnis nach den bestimmten Eigenschaften. Sie können mehrere Eigenschaftsnamen durch Kommas voneinander getrennt festlegen.  Um das Ergebnis in absteigender Reihenfolge zu sortieren, setzen Sie einfach ein Minuszeichen als Präfix des Eigenschaftsnamens. Zum Beispiel: order:-name.  Ein Pluszeichen gibt das Ergebnis in aufsteigender Reihenfolge zurück. Dies ist auch die Standardeinstellung.
-* **limit:** Begrenzt die Anzahl der Ergebnisse mithilfe eines Intervalls. Beispiel: limit:10.20 Das Intervall basiert auf null, der Beginn ist inklusiv und das Ende ist exklusiv. Sie können auch eine Öffnung `interval:limit:10..` oder `limit:..20`
+* **limit:** Begrenzt die Anzahl der Ergebnisse mithilfe eines Intervalls. Beispiel: limit:10..20. Das Intervall basiert auf null. Der Startwert ist ein-, der Endwert ausgeschlossen. Sie können auch eine Öffnung `interval:limit:10..` oder `limit:..20`
 Wenn die Punkte weggelassen und nur ein Wert angegeben wird, gibt GQL höchstens diese Anzahl von Ergebnissen zurück. Beispiel: `limit:10` (gibt die ersten zehn Ergebnisse zurück).
 
 ### Exportieren von Inhalten {#exporting-content}
 
-Exportieren Sie bei Bedarf Inhalte in eine Excel-Tabelle, um Änderungen vorzunehmen. Sie können beispielsweise eine Mailingliste exportieren und den Bereichscode aller aufgelisteten Telefonnummern direkt in Excel ändern oder zusätzliche Zeilen hinzufügen.
+Exportieren Sie bei Bedarf Inhalte in eine Excel-Tabelle, um Änderungen vorzunehmen. Vielleicht möchten Sie z. B. eine Mailing-Liste exportieren und die Vorwahl aller aufgeführten Telefonnummern direkt in Excel ändern oder zusätzliche Zeilen hinzufügen.
 
 So exportieren Sie Inhalte:
 
 1. Suchen Sie wie in [Suchen und Bearbeiten von Inhalten](#searching-and-editing-content) beschrieben nach Inhalten.
-1. Klicks **Export** sodass Sie die Änderungen in eine tabulatorgetrennte Excel-Tabelle exportieren können. AEM WCM fragt Sie, in welches Verzeichnis Sie die Datei herunterladen möchten.
+1. Klicken Sie auf **Exportieren**, um die Änderungen in eine tabulatorgetrennte Excel-Tabelle zu exportieren. AEM WCM fragt Sie, in welches Verzeichnis Sie die Datei herunterladen möchten.
 
    >[!NOTE]
    >

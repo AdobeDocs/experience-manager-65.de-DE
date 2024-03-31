@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1666'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -55,13 +55,13 @@ Komponente „Suche und Auflister“ auf einer Seite mit Raster-Layout
 
 Im Listenbereich werden die Formulare aufgeführt. Die Komponente „Search &amp; Lister“ bietet unterschiedliche Konfigurationsoptionen, mit denen Sie die Anzeige von Formularen im Listenbereich steuern können.
 
-Um den Listenbereich zu konfigurieren, wählen Sie die Komponente &quot;Search and Lister&quot;aus und klicken Sie auf ![settings_icon](assets/settings_icon.png). Das Dialogfeld **[!UICONTROL Komponente bearbeiten]** wird geöffnet.
+Um den Listenbereich zu konfigurieren, wählen Sie die Komponente „Suche und Auflister“ und dann ![settings_icon](assets/settings_icon.png) aus. Das Dialogfeld **[!UICONTROL Komponente bearbeiten]** wird geöffnet.
 
 ![Listenbereich im Bearbeitungsmodus](assets/edit-list.png)
 
 Listenbereich im Bearbeitungsmodus
 
-Das Dialogfeld **Bearbeiten** enthält mehrere Registerkarten mit Konfigurationsoptionen (siehe Tabelle unten). Auswählen **OK** , um die Konfiguration zu speichern.
+Das Dialogfeld **Bearbeiten** enthält mehrere Registerkarten mit Konfigurationsoptionen (siehe Tabelle unten). Wählen Sie abschließend **OK**, um die Konfiguration zu speichern.
 
 <table>
  <tbody>
@@ -174,7 +174,7 @@ Die Komponente „Datumseigenschaft“ ermöglicht die Suche nach aufgeführten 
 
 So konfigurieren Sie die Komponente „Datumseigenschaft“:
 
-1. Wählen Sie die Komponente aus und wählen Sie dann ![settings_icon](assets/settings_icon.png). Das Dialogfeld „Edit “ wird geöffnet.
+1. Wählen Sie die Komponente und dann ![settings_icon](assets/settings_icon.png) aus. Das Dialogfeld „Bearbeiten“ wird geöffnet.
 1. Geben Sie Folgendes an:
 
    * **Typ:** Die einzige verfügbare Option ist **Last Modified Date** (Letztes Änderungsdatum).
@@ -185,7 +185,7 @@ So konfigurieren Sie die Komponente „Datumseigenschaft“:
    * **End Date Label (Enddatumsbeschriftung):** Beschriftung des Feldes „Enddatum“.
    * **Ausblenden:** Damit wird der Standarddatumsfilter für die Auflistung von Formularen erzwungen. 
 
-1. Auswählen **OK**
+1. Wählen Sie **OK** aus.
 
 #### Vollständige Texteigenschaft {#full-text-predicate}
 
@@ -193,9 +193,9 @@ Die Komponente „Volltexteigenschaft“ implementiert die Volltextsuche nach Fo
 
 So konfigurieren Sie die Komponente „Volltexteigenschaft“:
 
-1. Wählen Sie die Komponente aus und wählen Sie dann ![settings_icon](assets/settings_icon.png). Das Dialogfeld „Edit “ wird geöffnet.
+1. Wählen Sie die Komponente und dann ![settings_icon](assets/settings_icon.png) aus. Das Dialogfeld „Bearbeiten“ wird geöffnet.
 1. Geben Sie den Titel im Feld **Haupttitel** an.
-1. Auswählen **Ok**
+1. Wählen Sie **OK** aus.
 
 #### Eigenschaften-Eigenschaft {#properties-predicate}
 
@@ -203,15 +203,15 @@ Die Komponente „Eigenschaftsprädikat“ implementiert die Suche nach Formular
 
 So konfigurieren Sie die Komponente „Eigenschaftsprädikat“:
 
-1. Wählen Sie die Komponente aus und wählen Sie dann ![settings_icon](assets/settings_icon.png). Das Dialogfeld „Edit “ wird geöffnet.
+1. Wählen Sie die Komponente und dann ![settings_icon](assets/settings_icon.png) aus. Das Dialogfeld „Bearbeiten“ wird geöffnet.
 1. Geben Sie auf der Registerkarte „Allgemein“ die Suchbeschriftung an. Der Standardwert ist **Eigenschaften**. 
 
-1. Wählen Sie auf der Registerkarte Optionen die Option **Element hinzufügen.**
+1. Wählen Sie auf der Registerkarte „Optionen“ **Element hinzufügen** aus.
 1. Wählen Sie eine Eigenschaft in der Dropdownliste aus und geben Sie für die Eigenschaft eine Suchbeschriftung im Feld unter der Dropdown-Liste an.
 1. Wiederholen Sie Schritt 4, um weitere Eigenschaften hinzuzufügen. Sie können auch einen Standardfilterwert für die Auflistung von Formularen anhand der angegebenen Kriterien festlegen und die Eigenschaft für die Suche durch Endbenutzer ausblenden. Aktivieren Sie das Kontrollkästchen „Ausblenden“ für eine Eigenschaft und legen Sie den Standardfilterwert fest.
  Wenn Sie beispielsweise Formulare anzeigen möchten, die „Reise“ in ihrem Titel enthalten, wählen Sie „Ausblenden“ neben der Eigenschaft „Titel“. Geben Sie außerdem „Reise“ im Textfeld des Standardfilterwerts an.
 
-1. Auswählen **OK**
+1. Wählen Sie **OK** aus.
 
 #### Tag-Eigenschaft {#tags-predicate}
 
@@ -219,10 +219,10 @@ Die Komponente „Tag-Eigenschaft“ implementiert die Suche nach Formularen anh
 
 So konfigurieren Sie die Komponente „Tag-Eigenschaft“:
 
-1. Wählen Sie die Komponente aus und wählen Sie dann ![settings_icon](assets/settings_icon.png). Das Dialogfeld „Edit “ wird geöffnet.
-1. Wählen Sie die Abwärtspfeilschaltfläche neben dem Feld Tags aus.
+1. Wählen Sie die Komponente und dann ![settings_icon](assets/settings_icon.png) aus. Das Dialogfeld „Bearbeiten“ wird geöffnet.
+1. Wählen Sie neben dem Feld „Tags“ die Schaltfläche mit dem Abwärtspfeil aus.
 1. Wählen Sie geeignete Tags aus.
-1. Auswählen **OK**
+1. Wählen Sie **OK** aus.
 
 Die ausgewählten Tags werden im Suchbereich zusammen mit den Kontrollkästchen zur Auswahl angezeigt. Benutzer können ihre Suche nun anhand der Tags eingrenzen.
 

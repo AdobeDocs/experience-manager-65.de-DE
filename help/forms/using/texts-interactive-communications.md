@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2474'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -77,21 +77,21 @@ Sie können ein vorhandenes Textdokumentfragment wie folgt bearbeiten: Sie könn
 1. Navigieren Sie zu einem Textdokumentfragment und wählen Sie es aus.
 1. Wählen Sie **[!UICONTROL Bearbeiten]** aus.
 1. Nehmen Sie die erforderlichen Änderungen vor. Weitere Informationen zu Optionen im Text finden Sie unter [Text erstellen](#createtext).
-1. Auswählen **[!UICONTROL Speichern]** und wählen Sie **[!UICONTROL Schließen]**.
+1. Wählen Sie **[!UICONTROL Speichern]** und dann **[!UICONTROL Schließen]** aus.
 
 ## Personalisieren eines Textdokumentfragments mithilfe der Eigenschaften des Formulardatenmodells {#formdatamodel}
 
 Sie können Textdokumentfragmente personalisieren, indem Sie die Eigenschaften des Formulardatenmodells einfügen. Wenn Sie die Eigenschaften der Formulardaten in Text einfügen, können Sie empfängerspezifische Daten aus der Datenquelle für die Vorschau einer interaktiven Kommunikation abrufen und befüllen. Weitere Informationen zum Formulardatenmodell finden Sie unter [Datenintegration für AEM Forms](/help/forms/using/data-integration.md).
 
-Wenn Sie beim Erstellen eines Texts ein Formulardatenmodell angegeben haben, werden die Eigenschaften im Formulardatenmodell im linken Bereich des Texteditors angezeigt. Das angegebene Formulardatenmodell sollte für das Textdokumentfragment und die interaktive Kommunikation, die es enthält, identisch sein.
+Wenn Sie beim Erstellen eines Texts ein Formulardatenmodell angegeben haben, werden die Eigenschaften im Formulardatenmodell im linken Bereich des Texteditors angezeigt. Das angegebene Formulardatenmodell sollte für das Textdokumentfragment sowie für die interaktive Kommunikation, die es enthält, identisch sein.
 
 ![insertfdmelementtext](assets/insertfdmelementtext.png)
 
-* Um eine Formulardatenmodelleigenschaft in Text einzufügen, platzieren Sie den Cursor an die Stelle, an der Sie die Eigenschaft einfügen möchten, und wählen Sie dann die **[A]** Eigenschaft im linken Bereich durch Tippen darauf und wählen Sie **[!UICONTROL [B] Auswahl hinzufügen]**. Sie können die Eigenschaft auch einfach doppelt auswählen, um sie im **[C]** Cursorposition. Die Eigenschaften des Formulardatenmodells werden in einer bräunlichen Hintergrundfarbe hervorgehoben.
+* Um eine Formulardatenmodell-Eigenschaft in Text einzufügen, platzieren Sie den Cursor an die Stelle, an der Sie die Eigenschaft einfügen möchten. Wählen Sie dann im linken Bereich die Eigenschaft **[A]** aus, indem Sie darauf tippen, und wählen Sie **[!UICONTROL [B] Ausgewählte hinzufügen]**. Sie können auch einfach die Eigenschaft doppelt auswählen, um sie an der Cursor-Position **[C]** einzufügen. Die Eigenschaften des Formulardatenmodells werden in einer bräunlichen Hintergrundfarbe hervorgehoben.
 
 Alternativ können Sie die Eigenschaft des Formulardatenmodells mit dem @-Symbol im Texteditor suchen und hinzufügen. Platzieren Sie den Cursor an die Stelle, an der Sie die Eigenschaft einfügen möchten. Geben Sie @ ein, gefolgt von der Suchzeichenfolge. Der Suchvorgang wird für alle Eigenschaften und Variablen des Formulardatenmodells ausgeführt, die im Dokumentfragment verfügbar sind. Die Eigenschaften oder Variablen, die die Suchzeichenfolge enthalten, werden abgerufen und als Dropdown-Liste angezeigt. Navigieren Sie durch die Suchergebnisse und klicken Sie an der Position des Cursors auf die Eigenschaft, die Sie einfügen möchten. Drücken Sie Esc, um die Suchergebnisse auszublenden.
 
-* So können die Agenten den Wert einer Formulardatenmodelleigenschaft in der Benutzeroberfläche für Agenten bearbeiten, während [Interaktive Kommunikation vorbereiten und senden](/help/forms/using/prepare-send-interactive-communication.md) Wählen Sie mithilfe der Benutzeroberfläche für Agenten die **[D]** Sperrsymbol für diese Eigenschaft und stellen Sie sicher, dass sie sich in einem entsperrten Status befindet. Der Standardstatus der Eigenschaft ist gesperrt und ein Agent kann die Eigenschaft in der Benutzeroberfläche für Agenten nicht bearbeiten.
+* Damit die Agenten einen Eigenschaftswert eines Formulardatenmodells in der Agent-Benutzeroberfläche bearbeiten können, während Sie mithilfe der Agent-Benutzeroberfläche eine [interaktive Kommunikation vorbereiten und senden](/help/forms/using/prepare-send-interactive-communication.md), wählen Sie das **[D]** Schloss-Symbol für diese Eigenschaft aus und stellen Sie sicher, dass es entsperrt ist. Der Standardstatus der Eigenschaft ist gesperrt und ein Agent kann die Eigenschaft in der Benutzeroberfläche für Agenten nicht bearbeiten.
 
 Sie können die Eigenschaften des Formulardatenmodells auch verwenden, um Regeln zum Anzeigen oder Ausblenden von Inhaltsbereichen zu erstellen. Weitere Informationen finden Sie unter [Erstellen von Regeln im Text](#rules).
 
@@ -109,7 +109,7 @@ Beim Erstellen oder Bearbeiten eines Textdokumentfragments können Sie Variablen
 
 ### Variablen erstellen {#createvariables}
 
-1. Wählen Sie im linken Bereich die Option **[!UICONTROL Variablen]**.
+1. Wählen Sie im linken Bereich **[!UICONTROL Variablen]** aus.
 
    Der Variablenbereich wird angezeigt.
 
@@ -119,7 +119,7 @@ Beim Erstellen oder Bearbeiten eines Textdokumentfragments können Sie Variablen
 
    Der Bereich „Variablen erstellen“ wird angezeigt.
 
-1. Geben Sie die folgenden Informationen ein und wählen Sie **[!UICONTROL Erstellen]**:
+1. Geben Sie die folgenden Informationen ein und wählen Sie **[!UICONTROL Erstellen]** aus:
 
    * **[!UICONTROL Name]**: Name der Variablen.
    * **[!UICONTROL Beschreibung]**: Geben Sie optional eine Beschreibung der Variablen ein.
@@ -130,7 +130,7 @@ Beim Erstellen oder Bearbeiten eines Textdokumentfragments können Sie Variablen
 
    Die Variable wird erstellt und im Bereich „Variablen“ aufgelistet.
 
-1. Um eine Variable in den Text einzufügen, platzieren Sie den Cursor an der richtigen Stelle, wählen Sie die Variable aus und wählen Sie **[!UICONTROL Auswahl hinzufügen]**.
+1. Um eine Variable in den Text einzufügen, platzieren Sie den Cursor an der entsprechenden Stelle, wählen Sie die Variable aus und wählen Sie **[!UICONTROL Ausgewählte hinzufügen]** aus.
 
    ![variableinserted](assets/variableinserted.png)
 
@@ -157,7 +157,7 @@ Durch Anwendung des Regeleditors in einem Text können Sie Regeln erstellen, um 
 
    ![selectcontentapplyrule](assets/selectcontentapplyrule.png)
 
-1. Auswählen **[!UICONTROL Regel erstellen]**.
+1. Wählen Sie **[!UICONTROL Regel erstellen]** aus.
 
    Das Dialogfeld „Regel erstellen“ wird angezeigt. Zusätzlich zu Zeichenfolge, Zahl, mathematischem Ausdruck und Datum steht im Regeleditor Folgendes zum Erstellen der Regelanweisungen zur Verfügung:
 
@@ -182,7 +182,7 @@ Durch Anwendung des Regeleditors in einem Text können Sie Regeln erstellen, um 
 
    Regel, um den ausgewählten Text anzuzeigen, wenn der Standort des Empfängers gemäß den Quelldaten von FDM US ist
 
-   * Beim Erstellen oder Bearbeiten einer Regel können Sie auch ![icon_resize](assets/icon_resize.png) (Größe ändern), um das Dialogfeld Regel erstellen/Regel bearbeiten zu erweitern. Der erweiterte Vollbilddialog ermöglicht Ihnen, Eigenschaften des Formulardatenmodells und Variablen mittels Drag-and-Drop einzufügen, um Regeln zu erstellen. Wählen Sie erneut Größe ändern aus, um zum Dialogfeld Regel erstellen zurückzukehren.
+   * Beim Erstellen oder Bearbeiten einer Regel können Sie auch ![icon_resize](assets/icon_resize.png) (Größe ändern) auswählen, um das Dialogfeld „Regel erstellen/Regel bearbeiten“ zu erweitern. Der erweiterte Vollbilddialog ermöglicht Ihnen, Eigenschaften des Formulardatenmodells und Variablen mittels Drag-and-Drop einzufügen, um Regeln zu erstellen. Wählen Sie erneut „Größe ändern“ aus, um zum Dialogfeld „Regel erstellen“ zurückzukehren.
    * Sie können auch mehrere Bedingungen in einer Regel erstellen.
    * Sie können auch überlappende Regeln erstellen, in denen eine Regel auf einen Teil eines Inhalts angewendet wird, auf den bereits eine Regel angewendet wurde.
 
@@ -216,13 +216,13 @@ Auflistungs-Symbolleiste
 
 ### Hervorheben von Teilen des Textes {#highlight}
 
-Um Textteile in einem bearbeitbaren Dokumentfragment hervorzuheben bzw. hervorzuheben, wählen Sie den Text aus und wählen Sie die Option Hervorhebungsfarbe aus.
+Um Teile eines Textes in einem bearbeitbaren Dokumentfragment hervorzuheben, wählen Sie den Text und dann „Hervorhebungsfarbe“ aus.
 
 ![textbackgroundcolorapplied-1](assets/textbackgroundcolorapplied-1.png)
 
-Sie können entweder eine Grundfarbe direkt auswählen `**[A]**` in der Palette &quot;Grundfarben&quot;angezeigt werden, oder wählen Sie **Auswählen** nach Verwendung des Reglers `**[B]**` , um die gewünschte Farbschattierung auszuwählen.
+Sie können entweder direkt eine Grundfarbe `**[A]**` in der Grundfarbenpalette auswählen oder auf **Auswählen** klicken, nachdem Sie den Regler `**[B]**` verwendet haben, um den entsprechenden Farbton der Farbe festzulegen.
 
-Optional können Sie auch auf der Registerkarte Erweitert die gewünschte Farbe, Helligkeit und Sättigung auswählen `**[C]**` , um die genaue Farbe zu erstellen, und wählen Sie dann Auswählen `**[D]**` , um die Farbe anzuwenden und den Text hervorzuheben.
+Sie können auch auf der Registerkarte „Erweitert“ die gewünschten Werte für Farbton, Helligkeit und Sättigung `**[C]**` auswählen, um die Farbe präzise festzulegen, und dann „Auswählen“ `**[D]**` wählen, um die Farbe zum Hervorheben des Textes anzuwenden.
 
 ![textbackgroundcolor-2](assets/textbackgroundcolor-2.png)
 
@@ -261,15 +261,15 @@ Bei der Arbeit mit Textdokumentfragmenten, die eine große Menge an Text enthalt
 Mithilfe der Funktion „Suchen und Ersetzen“ können Sie nach jeder beliebigen Textzeichenfolge in einem Textdokumentfragment suchen (und diese ersetzen). Die Funktion umfasst außerdem eine leistungsstarke Suche nach regulären Ausdrücken.
 
 1. Öffnen Sie ein Textdokumentenfragment zur [Bearbeitung](#edittext).
-1. Auswählen **[!UICONTROL Suchen und Ersetzen]**.
+1. Wählen Sie **[!UICONTROL Suchen und Ersetzen]** aus:
 
-1. Geben Sie den zu suchenden Text in die **[!UICONTROL Suchen]** und den neuen Text (Ersatztext) im **[!UICONTROL Ersetzen]** Textfeld und wählen Sie **[!UICONTROL Ersetzen]**.
+1. Geben Sie den zu suchenden Text in das Textfeld **[!UICONTROL Suchen]** und den neuen Text (Ersatztext) in das Textfeld **[!UICONTROL Ersetzen]** ein und wählen Sie **[!UICONTROL Ersetzen]**.
 
 1. Wenn der zu suchende Text gefunden wird, wird der Text durch den Ersetzungstext ersetzt.
 
-   * Wenn eine andere Instanz des gesuchten Textes gefunden wird, wird diese Instanz im Textdokumentfragment hervorgehoben. Wenn Sie **[!UICONTROL Ersetzen]** erneut wird die hervorgehobene Instanz ersetzt und der Cursor bewegt sich weiter, wenn eine dritte Instanz gefunden wird.
+   * Wenn eine andere Instanz des gesuchten Textes gefunden wird, wird diese Instanz im Textdokumentfragment hervorgehoben. Wenn Sie **[!UICONTROL Ersetzen]** erneut auswählen, wird die hervorgehobene Instanz ersetzt und der Cursor bewegt sich weiter, falls eine dritte Instanz gefunden wird.
    * Wenn keine andere Instanz gefunden wird, wird im Dialogfeld „Suchen und Ersetzen“ folgende Meldung angezeigt: „Ende des Moduls wurde erreicht“.
 
-   Sie können auch Alle ersetzen auswählen, um alle Übereinstimmungen in einem Schritt zu ersetzen.
+   Sie können auch „Alle ersetzen“ auswählen, um alle Übereinstimmungen auf einmal zu ersetzen.
 
-   Die Funktion umfasst außerdem eine leistungsstarke Suche nach regulären Ausdrücken. Um Regex in Ihrer Suche zu verwenden, wählen Sie **[!UICONTROL Reg ex]** und wählen Sie **[!UICONTROL Suchen]** oder **[!UICONTROL Ersetzen]**.
+   Die Funktion „Suchen und Ersetzen“ umfasst außerdem eine leistungsstarke Suche nach regulären Ausdrücken (Regex). Um Regex in Ihrer Suche zu verwenden, wählen Sie **[!UICONTROL Regex]** und dann **[!UICONTROL Suchen]** bzw. **[!UICONTROL Ersetzen]** aus.

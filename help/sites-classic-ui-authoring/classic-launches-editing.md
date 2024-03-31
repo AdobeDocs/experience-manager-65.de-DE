@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, kö
 
    >[!NOTE]
    >
-   >Sie können die **Seite** Registerkarte des Sidekicks zum Ausführen von Aktionen wie **Untergeordnete Seite erstellen**, unter anderem.
+   >Sie können für Aktionen wie **Untergeordnete Seite erstellen** die Registerkarte **Seite** des Sidekicks verwenden.
 
 ## Bearbeiten einer Launch-Konfiguration {#editing-a-launch-configuration}
 

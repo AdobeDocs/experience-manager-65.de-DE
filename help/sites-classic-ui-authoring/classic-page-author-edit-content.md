@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f52b2076c94b64a9d84646621be3a04bfe15b13c
 workflow-type: tm+mt
 source-wordcount: '1829'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ So fügen Sie eine neue Komponente ein:
 
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
-1. Sowohl im Sidekick als auch in der Symbolleiste **Neue Komponente einfügen** wird eine Liste der verfügbaren Komponenten (Absatztypen) angezeigt. Diese können in verschiedene Abschnitte unterteilt werden (z. B. &quot;Allgemein&quot;, &quot;Spalten&quot;usw.), die bei Bedarf erweitert werden können.
+1. Sowohl im Sidekick als auch in der Symbolleiste **Neue Komponente einfügen** wird eine Liste der verfügbaren Komponenten (Absatztypen) angezeigt. Diese Liste kann in verschiedene Abschnitte („Allgemein“, „Spalten“ usw.) gegliedert sein, die Sie nach Bedarf aus- oder einblenden können.
 
    Abhängig von Ihrer Produktionsumgebung können diese Optionen unterschiedlich sein. Ausführliche Informationen zu Komponenten finden Sie unter [Standardkomponenten](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
 
@@ -176,13 +176,13 @@ Vererbte Komponenten können sich aus diversen Szenarien ergeben, wie:
 * [Verwaltung mehrerer Sites](/help/sites-administering/msm.md), auch in Kombination mit [Strukturvorlagen](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
 
 * [Launch](/help/sites-classic-ui-authoring/classic-launches.md) (wenn er auf Live Copy basiert).
-* Bestimmte Komponenten, z. B. das geerbte Absatzsystem in Geometrixx.
+* Spezifische Komponenten, z. B. das Vererbungs-Absatzsystem in Geometrixx.
 
 Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Abhängig von der Komponente kann dies über Folgendes verfügbar sein:
 
 1. **Live Copy**
 
-   Wenn eine Komponente Teil einer Live Copy oder eines Launches ist, wird sie durch ein Vorhängeschloss-Symbol gekennzeichnet. Sie können auf das Vorhängeschloss klicken, um die Vererbung abzubrechen.
+   Wenn eine Komponente Teil einer Live Copy oder eines Launches ist, wird dies durch ein Schlosssymbol angezeigt. Sie können auf das Vorhängeschloss klicken, um die Vererbung abzubrechen.
 
    * Das Schlosssymbol wird angezeigt, wenn die Komponente ausgewählt wird. Beispiel:
 
@@ -226,7 +226,7 @@ Für umfangreichere Bearbeitungen desselben Satzes können Sie mit der Menüopti
 
 ## Sperren einer Seite {#locking-a-page}
 
-AEM ermöglicht das Sperren einer Seite, sodass niemand außer Ihnen den Inhalt ändern kann. Dies ist nützlich, wenn Sie zahlreiche Bearbeitungen an einer bestimmten Seite vornehmen oder wenn Sie eine Seite für eine kurze Zeit einfrieren müssen.
+AEM bietet Ihnen die Möglichkeit, eine Seite zu sperren, sodass niemand außer Ihnen den Inhalt ändern kann. Dies ist nützlich, wenn Sie zahlreiche Änderungen an einer bestimmten Seite vornehmen oder wenn Sie eine Seite für kurze Zeit einfrieren müssen.
 
 >[!CAUTION]
 >

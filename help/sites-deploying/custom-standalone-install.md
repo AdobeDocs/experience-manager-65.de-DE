@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1629'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -44,15 +44,15 @@ Beachten Sie beim Umbenennen der Quickstart-JAR-Datei die folgenden Regeln:
 
 ### Besonderheiten von Java 11 {#java-considerations}
 
-Wenn Sie Oracle Java 11 (oder allgemein Java-Versionen unter 8) ausführen, müssen beim Starten von AEM zusätzliche Switches zu Ihrer Befehlszeile hinzugefügt werden.
+Wenn Sie Oracle Java 11 ausführen (oder generell Java-Versionen höher als 8), müssen beim Starten von AEM zusätzliche Schalter zur Befehlszeile hinzugefügt werden.
 
-* Folgendes - `-add-opens` -Switches müssen hinzugefügt werden, um entsprechende Reflektionszugriffswarnungen in der `stdout.log`
+* Die folgenden -`-add-opens`-Schalter müssen hinzugefügt werden, um entsprechende Reflection-Zugriffs-Warnmeldungen in `stdout.log` zu verhindern
 
 ```shell
 --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
 ```
 
-* Darüber hinaus müssen Sie die `-XX:+UseParallelGC` umschalten, um potenzielle Leistungsprobleme zu vermeiden.
+* Darüber hinaus müssen Sie den Schalter `-XX:+UseParallelGC` verwenden, um potenzielle Leistungsprobleme zu minimieren.
 
 Nachfolgend finden Sie ein Beispiel dafür, wie die zusätzlichen JVM-Parameter aussehen sollten, wenn Sie AEM auf Java 11 starten:
 
@@ -66,7 +66,7 @@ Wenn Sie eine Instanz ausführen, die von AEM 6.3 aktualisiert wurde, stellen Si
 
 ## Ausführungsmodi {#run-modes}
 
-**Ausführungsmodi** Sie können Ihre AEM-Instanz für einen bestimmten Zweck anpassen, z. B. für Autoren- oder Veröffentlichungsinstanz, Test, Entwicklung, Intranet usw. Mit diesen Modi können Sie auch die Verwendung von Beispielinhalten steuern. Dieser Beispielinhalt wird vor der Erstellung des Schnellstarts definiert und kann Pakete, Konfigurationen usw. enthalten. Dies kann besonders für produktionsbereite Installationen nützlich sein, wenn Sie Ihre Installation schlank und ohne Beispielinhalt durchführen möchten. Weitere Informationen finden Sie unter:
+Mit **Ausführungsmodi** können Sie Ihre AEM-Instanz auf einen bestimmten Zweck ausrichten, z. B. Author oder Publish, Test, Entwicklung, Intranet usw. Mit diesen Modi können Sie auch die Verwendung von Beispielinhalten steuern. Der Beispielinhalt wird vor der Erstellung des Schnellstarts definiert und kann Pakete, Konfigurationen usw. umfassen: Dies kann vor allem für produktionsbereite Installationen nützlich sein, wenn Sie sich eine schlanke Installation ohne Beispielinhalte wünschen. Weitere Informationen finden Sie unter:
 
 * [Ausführungsmodi](/help/sites-deploying/configure-runmodes.md)
 
@@ -75,7 +75,7 @@ Wenn Sie eine Instanz ausführen, die von AEM 6.3 aktualisiert wurde, stellen Si
 Standardmäßig wird der Ordner `crx-quickstart/install` auf Dateien überwacht.
 Dieser Ordner existiert nicht, kann jedoch einfach beim Ausführen erstellt werden.
 
-Wenn Bundles, Konfigurationen oder Inhaltspakete in diesem Verzeichnis abgelegt werden, werden diese automatisch registriert und installiert. Wenn es entfernt wird, wird es deinstalliert.
+Wenn Bundles, Konfigurationen oder Inhaltspakete in diesem Verzeichnis abgelegt werden, werden diese automatisch registriert und installiert. Wenn sie entfernt werden, erfolgt die Deinstallation.
 Dies stellt eine andere Möglichkeit dar, Bundles, Inhaltspakete oder Konfigurationen in das Repository aufzunehmen.
 
 Dies kann für viele Anwendungsfälle besonders interessant sein:
@@ -142,7 +142,7 @@ Deinstallieren Sie den Dienst, indem Sie entweder in der Systemsteuerung unter *
 
 ## Neudefinieren des Speicherorts für das temporäre Arbeitsverzeichnis {#redefining-the-location-of-the-temporary-work-directory}
 
-Der Standardpfad für den temporären Ordner des Java-Computers ist `/tmp`. AEM verwendet diesen Ordner beispielsweise auch beim Erstellen von Paketen.
+Der Standardpfad für den temporären Ordner des Java-Computers ist `/tmp`. AEM greift ebenfalls auf diesen Ordner zurück, etwa beim Erstellen von Paketen.
 
 Wenn Sie den Pfad des temporären Ordners ändern möchten (wenn Sie zum Beispiel ein Verzeichnis mit mehr freiem Speicherplatz benötigen), definieren Sie einen *`<new-tmp-path>`*, indem Sie den JVM-Parameter:
 

@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '299'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -41,10 +41,10 @@ Text- und Bildkomponenten können direkt auf der Webseite bearbeitet werden, ohn
 Ein unverankertes „Inspektor“-Fenster, das auf der bearbeitbaren Seite angezeigt wird. Von hier können Sie neue Komponenten auf die Seite ziehen und seitenspezifische Aktionen ausführen.
 
 * **[Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)** 
-Der Content Finder, der sich links auf jeder bearbeitbaren Seite befindet, bietet schnellen Zugriff auf eine Reihe von Assets, einschließlich digitaler Assets (z. B. Bilder, Flash-Elemente und Dokumente), anderer Seiten und Absätze. Diese Elemente können auf die Seite gezogen werden, um beispielsweise Assets zu positionieren oder Links zu anderen Seiten zu erstellen.
+Der Content Finder, der sich links auf jeder bearbeitbaren Seite befindet, bietet schnellen Zugriff auf eine Reihe von Assets, einschließlich digitaler Assets (z. B. Bilder, Flash-Elemente und Dokumente), anderer Seiten und Absätze. Diese Elemente können auf die Seite gezogen werden, z. B. um Assets zu positionieren oder Links zu anderen Seiten zu erstellen.
 
 * **Kontextmenü**
-Wenn Sie mit der rechten Maustaste auf die meisten Bildschirmelemente (z. B. Absätze auf der Seite) klicken, wird ein Kontextmenü mit den entsprechenden Aktionsoptionen angezeigt.
+Mit einem Rechtsklick auf die meisten Bildschirmelemente (z. B. Absätze auf der Seite) wird ein Kontextmenü mit entsprechenden Aktionsoptionen angezeigt.
 
 * **Suche während der Eingabe**
 In bestimmten Szenarios (z. B. bei der Pfadauswahl in Dialogfeldern für die Bearbeitung) liefert die Inhaltssuche in der AEM-Oberfläche bereits während der Eingabe dynamische Suchergebnisse.

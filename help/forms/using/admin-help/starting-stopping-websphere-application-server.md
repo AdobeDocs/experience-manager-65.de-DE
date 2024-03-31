@@ -1,6 +1,6 @@
 ---
 title: Starten und Anhalten des WebSphere-Anwendungs-Servers
-description: In mehreren Verfahren müssen Sie die Instanz von WebSphere, in der Sie AEM Forms-Produkte bereitstellen möchten, stoppen oder starten. In diesem Dokument wird beschrieben, wie Sie WebSphere Application Server starten und beenden.
+description: Bei mehreren Verfahren müssen Sie die WebSphere-Instanz stoppen oder starten, für die Sie AEM Forms-Produkte bereitstellen möchten. In diesem Dokument wird beschrieben, wie Sie WebSphere Application Server starten und stoppen.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
@@ -10,15 +10,15 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
 # Starten und Anhalten des WebSphere-Anwendungs-Servers {#starting-and-stopping-websphere-application-server}
 
-In mehreren Verfahren müssen Sie die Instanz von WebSphere, in der Sie AEM Forms-Produkte bereitstellen möchten, stoppen oder starten. Wenn Sie nicht sicher sind, ob der Anwendungsserver gestartet wurde, können Sie zunächst den Status von WebSphere Application Server anzeigen.
+Bei mehreren Verfahren müssen Sie die WebSphere-Instanz stoppen oder starten, für die Sie AEM Forms-Produkte bereitstellen möchten. Wenn Sie nicht sicher sind, ob der Anwendungs-Server gestartet wurde, können Sie zunächst den WebSphere Application Server-Status anzeigen.
 
-## Status von WebSphere Application Server anzeigen {#view-the-status-of-websphere-application-server}
+## Anzeigen des WebSphere Application Server-Status {#view-the-status-of-websphere-application-server}
 
 1. Wechseln Sie ausgehend von einer Eingabeaufforderung in das Verzeichnis `[appserver root]/bin`.
 1. Geben Sie den folgenden Befehl ein. Ersetzen Sie dabei *Servername* durch den Namen Ihres WebSphere Application Servers:

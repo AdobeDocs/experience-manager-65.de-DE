@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2483'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -198,7 +198,7 @@ Sie können die Berechtigungen für alle Rollen ändern, die Sie erstellt haben.
 
 **Core-Systemeinstellungen steuern**: Die Einstellungen auf der Seite „Core-Systemeinstellungen“ in der Administration-Console verwalten
 
-**CREATE_VERSION_PERM:** Erstellen einer Version eines Dienstes
+**CREATE_VERSION_PERM**: Erstellen einer Version eines Service
 
 **Berechtigung ändern**: Beliebige Berechtigungen für die Signierung im Trust Store ändern
 
@@ -288,7 +288,7 @@ Sie können die Berechtigungen für alle Rollen ändern, die Sie erstellt haben.
 
 **Rights Management-Richtliniensatz – Koordinator hinzufügen**: Berechtigungen für Richtliniensatzkoordinatoren hinzufügen, entfernen und ändern
 
-**Rights Management Policy Set Create Policy:** Erstellen einer Richtlinie für einen Richtliniensatz
+**Rights Management-Richtliniensatz – Richtlinie erstellen**: Richtlinie für einen Richtliniensatz erstellen
 
 **Rights Management-Richtliniensatz – Richtlinie löschen**: Richtlinie aus einem Richtliniensatz entfernen
 

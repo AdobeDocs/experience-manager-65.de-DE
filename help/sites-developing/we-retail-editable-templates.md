@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '467'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Alle Seiten in We.Retail basieren auf bearbeitbaren Vorlagen, sodass auch Mensch
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
-1. Die Modusauswahl bietet keinen Designmodus mehr. Alle Seiten für We.Retail basieren auf bearbeitbaren Vorlagen. Um das Design von bearbeitbaren Vorlagen zu ändern, müssen sie im Vorlageneditor bearbeitet werden.
+1. Die Modusauswahl bietet keinen Design-Modus mehr. Alle Seiten für We.Retail basieren auf bearbeitbaren Vorlagen. Um das Design von bearbeitbaren Vorlagen zu ändern, müssen sie im Vorlageneditor bearbeitet werden.
 1. Wählen Sie aus dem Menü **Seiteninformationen** die Option **Vorlage bearbeiten** aus.
 1. Sie bearbeiten jetzt die Hero-Seitenvorlage.
 
@@ -42,7 +42,7 @@ Alle Seiten in We.Retail basieren auf bearbeitbaren Vorlagen, sodass auch Mensch
 
 1. Im Dialogfeld „Design“ des Layout-Containers können Sie
 
-   * Wählen Sie eine vorhandene Richtlinie aus oder erstellen Sie eine Richtlinie für den Container
+   * eine vorhandene Richtlinie auswählen oder eine Richtlinie für den Container erstellen
    * auswählen, welche Komponenten im Container zulässig sind
    * die Standardkomponenten festlegen, die platziert werden sollen, wenn ein Asset in den Container gezogen wird
 
@@ -52,7 +52,7 @@ Alle Seiten in We.Retail basieren auf bearbeitbaren Vorlagen, sodass auch Mensch
 
    Damit können Sie:
 
-   * Wählen Sie eine vorhandene Richtlinie aus oder erstellen Sie eine Richtlinie für den Container
+   * eine vorhandene Richtlinie auswählen oder eine Richtlinie für den Container erstellen
    * festlegen, welche Funktionen den Seitenautorinnen und -autoren bei Verwendung dieser Komponente zur Verfügung stehen, z. B.
 
       * zulässige Einfügequellen
@@ -70,6 +70,6 @@ Alle Seiten in We.Retail basieren auf bearbeitbaren Vorlagen, sodass auch Mensch
 
 ## Weitere Informationen {#more-information}
 
-Weitere Informationen finden Sie im Authoring-Dokument . [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) oder der Seite mit dem Entwicklerdokument [Vorlagen - bearbeitbar](/help/sites-developing/page-templates-editable.md) für vollständige technische Details zu bearbeitbaren Vorlagen.
+Umfassende technische Informationen zu bearbeitbaren Vorlagen finden Sie im Dokument [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) für Autorinnen und Autoren oder im Dokument [Bearbeitbare Seitenvorlagen](/help/sites-developing/page-templates-editable.md) für Entwickelnde.
 
 Sie können sich darüber hinaus eingehender mit [Kernkomponenten](/help/sites-developing/we-retail-core-components.md) befassen. Im Dokument [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) für Autoren finden Sie einen Überblick über die Kernkomponenten. Im Dokument [Dokumentation zur Entwicklung der Kernkomponenten](https://helpx.adobe.com/de/experience-manager/core-components/using/developing.html) für Entwickler finden Sie einen technischen Überblick.

@@ -1,6 +1,6 @@
 ---
 title: Anpassen der Benutzeroberfläche „Korrespondenz erstellen“
-description: Erfahren Sie, wie Sie eine Correspondence-Benutzeroberfläche (Benutzeroberfläche) wie das Logo in der AEM Forms-Umgebung anpassen können.
+description: Erfahren Sie, wie Sie in der AEM Forms-Umgebung eine Benutzeroberfläche „Korrespondenz erstellen“ anpassen können, wie etwa ein Logo.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1099'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Führen Sie die folgenden Schritte aus, um die erforderliche Ordnerstruktur in d
 
       >[!NOTE]
       >
-      >Ändern Sie nicht die `/libs`-Verzweigung. Alle Änderungen, die Sie vornehmen, können verloren gehen, da diese Verzweigung jederzeit geändert werden kann:
+      >Ändern Sie nicht die `/libs`-Verzweigung. Alle Änderungen, die Sie vornehmen, gehen möglicherweise verloren, da diese Verzweigung sich ändern kann, wenn Sie:
       >
       >    
       >    
@@ -84,7 +84,7 @@ Führen Sie die folgenden Schritte aus, um die erforderliche Ordnerstruktur in d
 
    1. Klicken Sie auf **OK**. Der css-Ordner wird im angegebenen Pfad erstellt.
 
-1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen `imgs` mit Pfad/Struktur, die dem `imgs` Ordner (im Ordner ccrui ).
+1. Erstellen Sie im Apps-Ordner einen Ordner namens `imgs` mit einem ähnlichen Pfad bzw. einer ähnlichen Struktur wie der `imgs`-Ordner (im CCRUI-Ordner).
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner **imgs** im folgenden Pfad und wählen Sie **Überlagerungsknoten**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:

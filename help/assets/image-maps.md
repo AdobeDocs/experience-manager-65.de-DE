@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Mit Imagemaps können Sie einen oder mehrere Hyperlinkbereiche hinzufügen, die 
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. Klicken Sie auf den Hotspot und geben Sie die URL und ALT-Text ein. Aus dem **[!UICONTROL Target]** -Liste angeben, wo die Imagemap angezeigt werden soll, z. B. auf derselben Registerkarte, auf einer neuen Registerkarte oder in einem iFrame. Geben Sie zum Beispiel `https://www.adobe.com` als URL, `Adobe website` als ALT-Text und **[!UICONTROL Neue Registerkarte]** von der **[!UICONTROL Target]**-Liste aus ein, damit die Imagemap in einer neuen Registerkarte geöffnet wird.
+1. Klicken Sie auf den Hotspot und geben Sie die URL und ALT-Text ein. Geben Sie in der **[!UICONTROL Target-Liste]** an, wo die Imagemap angezeigt werden soll, z. B. auf derselben Registerkarte, auf einer neuen Registerkarte oder in einem iFrame. Geben Sie zum Beispiel `https://www.adobe.com` als URL, `Adobe website` als ALT-Text und **[!UICONTROL Neue Registerkarte]** von der **[!UICONTROL Target]**-Liste aus ein, damit die Imagemap in einer neuen Registerkarte geöffnet wird.
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 

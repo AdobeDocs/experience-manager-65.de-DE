@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2105'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -116,7 +116,7 @@ Nachdem Sie den Service-Client erstellt, eine DDX-Datei referenziert, ein Auflis
 
 Der Assembler-Service gibt ein `java.util.Map`-Objekt zurück, das vom `AssemblerResult`-Objekt abgerufen werden kann und Vorgangsergebnisse enthält. Das zurückgegebene `java.util.Map`-Objekt enthält die resultierenden Dokumente und alle Ausnahmen.
 
-Die folgende Tabelle fasst einige der Schlüsselwerte und Objekttypen zusammen, die in der zurückgegebenen `java.util.Map` -Objekt.
+Die folgende Tabelle fasst einige der Schlüsselwerte und Objekttypen zusammen, die in dem zurückgegebenen `java.util.Map`-Objekt enthalten sein können.
 
 <table>
  <thead>

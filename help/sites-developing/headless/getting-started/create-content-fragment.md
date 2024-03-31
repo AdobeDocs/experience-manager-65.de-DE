@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -26,24 +26,24 @@ Inhaltsfragmente enthalten strukturierte Inhalte und können im JSON-Format bere
 
 Inhaltsautorinnen und -autoren können eine beliebige Anzahl von Inhaltsfragmenten für ihre Inhalte erstellen. Das die zentrale Aufgabe, die sie in AEM ausführen. Für die Zwecke dieser Anleitung für den Einstieg müssen wir nur ein Fragment erstellen.
 
-1. Melden Sie sich bei AEM an und wählen Sie im Hauptmenü die Option **Navigation > Assets**.
+1. Melden Sie sich bei AEM an und wählen Sie im Hauptmenü **Navigation > Assets** aus.
 1. Navigieren Sie zu dem [zuvor erstellten Ordner](create-assets-folder.md).
-1. Klicks **Erstellen > Inhaltsfragment**.
-1. Die Erstellung eines Inhaltsfragments erfolgt mithilfe eines Assistenten in zwei Schritten. Wählen Sie zunächst das Modell aus, das Sie zum Erstellen des Inhaltsfragments verwenden möchten, und klicken Sie auf **Nächste**.
+1. Klicken Sie auf **Erstellen > Inhaltsfragment**.
+1. Die Erstellung eines Inhaltsfragments erfolgt mithilfe eines Assistenten in zwei Schritten. Wählen Sie zuerst das Modell aus, das Sie zum Erstellen des Inhaltsfragments verwenden möchten, und klicken Sie dann auf **Weiter**.
    * Die verfügbaren Modelle hängen von der [**Cloud-Konfiguration** ab, die Sie für den Asset-Ordner](create-assets-folder.md) definiert haben, in dem Sie das Inhaltsfragment erstellen.
    * Wenn Ihnen die Meldung `We could not find any models` angezeigt wird, überprüfen Sie die Konfiguration Ihres Asset-Ordners.
 
    ![Auswählen des Inhaltsfragmentmodells](assets/content-fragment-model-select.png)
-1. Stellen Sie eine **Titel**, **Beschreibung**, und **Tags** klicken Sie bei Bedarf auf **Erstellen**.
+1. Geben Sie nach Bedarf einen **Titel**, eine **Beschreibung** und **Tags** ein und klicken Sie auf **Erstellen**.
 
    ![Inhaltsfragment erstellen](assets/content-fragment-create.png)
-1. Klicks **Öffnen** im Bestätigungsfenster.
+1. Klicken Sie im Bestätigungsfenster auf **Öffnen**.
 
    ![Bestätigung der Inhaltsfragment-Erstellung ](assets/content-fragment-confirmation.png)
 1. Geben Sie im Inhaltsfragment-Editor die Details des Inhaltsfragments an.
 
    ![Inhaltsfragmente-Editor](assets/content-fragment-edit.png)
-1. Klicks **Speichern** oder  **Speichern und schließen**.
+1. Klicken Sie auf **Speichern** oder **Speichern und schließen**.
 
 Inhaltsfragmente können auf andere Inhaltsfragmente verweisen, was bei Bedarf eine verschachtelte Inhaltsstruktur ermöglicht.
 

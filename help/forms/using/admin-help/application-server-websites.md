@@ -1,6 +1,6 @@
 ---
 title: Websites für Anwendungs-Server
-description: Dieses Dokument enthält Links zu den Websites der Hersteller für alle unterstützten Anwendungsserver.
+description: Dieses Dokument enthält Links zu den Websites der Hersteller aller unterstützten Anwendungs-Server.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '48'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 # Websites für Anwendungs-Server {#application-server-websites}
 
-Diese Liste enthält Links zu den Websites der Hersteller für alle unterstützten Anwendungsserver.
+Diese Liste enthält Links zu den Websites der Hersteller aller unterstützten Anwendungs-Server.
 
 **JBoss:** https://www.jboss.com/products/platforms/application
 

@@ -25,7 +25,7 @@ Sie können in der Benutzeroberfläche von [!DNL Adobe Experience Manager Assets
 
 >[!NOTE]
 >
->Der private Ordner hat mindestens einen Benutzer mit der Rolle „Eigentümer“.
+>Der private Ordner hat mindestens ein Mitglied mit der Rolle „Eigentümer“.
 
 ## Erstellung und Freigabe privater Ordner {#create-share-private-folder}
 

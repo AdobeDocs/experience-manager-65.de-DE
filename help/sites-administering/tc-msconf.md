@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -31,9 +31,9 @@ Nachdem Sie die Konfiguration erstellt haben, müssen Sie sie [aktivieren](#act
 
 Mit dem folgenden Verfahren wird eine Microsoft Translator-Konfiguration erstellt.
 
-1. Im [Navigationsfenster,](/help/sites-authoring/basic-handling.md#first-steps) click **Instrumente** > **Cloud Service** > **Übersetzungs-Cloud Service**.
+1. Klicken Sie im [Navigationsbereich](/help/sites-authoring/basic-handling.md#first-steps) auf **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services**.
 1. Navigieren Sie zu dem Ort, an dem Sie die Konfiguration erstellen möchten. Normalerweise ist dies in Ihrem Site-Stammverzeichnis oder es kann eine globale Standardkonfiguration sein.
-1. Klicken Sie auf **Erstellen** Schaltfläche.
+1. Klicken Sie auf die Schaltfläche **Erstellen**.
 1. Legen Sie Ihre Konfiguration fest.
    1. Wählen Sie **Microsoft Translator** in der Dropdown-Liste aus.
    1. Geben Sie einen Titel für Ihre Konfiguration ein. Durch den Titel wird die Konfiguration in der Cloud Services-Konsole und in Dropdown-Listen mit den Seiteneigenschaften identifiziert.
@@ -46,26 +46,26 @@ Mit dem folgenden Verfahren wird eine Microsoft Translator-Konfiguration erstell
 
    ![Bearbeiten einer Übersetzungskonfiguration](assets/edit-translation-config.png)
 
-1. Klicks **Verbinden** , um die Verbindung zu überprüfen.
+1. Klicken Sie auf **Verbinden**, um die Verbindung zu überprüfen.
 1. Klicken Sie auf **Speichern und schließen**.
 
 ## Durchführen eines Upgrades für die Konfiguration „Microsoft Translator-Testlizenz“ {#upgrading-the-microsoft-translator-trial-license-configuration}
 
 Die Seiten der Microsoft Translation-Konfiguration enthalten einen direkten Link zur Microsoft-Website, über den Sie ein für Produktionssysteme geeignetes Kontoabonnement erhalten können.
 
-1. Im [Navigationsfenster,](/help/sites-authoring/basic-handling.md#first-steps) click **Instrumente** > **Cloud Service** > **Übersetzungs-Cloud Service**.
-1. Klicken Sie auf Ihre bestehende Microsoft Translator-Konfiguration.
+1. Klicken Sie im [Navigationsbereich](/help/sites-authoring/basic-handling.md#first-steps) auf **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services**.
+1. Klicken Sie auf Ihre vorhandene Microsoft Translator-Konfiguration.
 1. Klicken Sie auf **Bearbeiten**.
-1. Im **Konfiguration bearbeiten** Fenster, klicken Sie **Upgrade-Abonnement**. Eine Microsoft-Webseite mit weiteren Details zum Service wird geöffnet.
+1. Klicken Sie im Fenster **Konfiguration bearbeiten** auf **Abonnement-Upgrade**. Eine Microsoft-Webseite mit weiteren Details zum Service wird geöffnet.
 
 ## Anpassen der Microsoft Translator-Engine {#customizing-your-microsoft-translator-engine}
 
 Die Seiten der Microsoft Translation-Konfiguration enthalten einen direkten Link zur Microsoft-Website, auf der die Microsoft Translator-Engine angepasst werden kann.
 
-1. Im [Navigationsfenster,](/help/sites-authoring/basic-handling.md#first-steps) click **Instrumente** > **Cloud Service** > **Übersetzungs-Cloud Service**.
-1. Klicken Sie auf Ihre bestehende Microsoft Translator-Konfiguration.
+1. Klicken Sie im [Navigationsbereich](/help/sites-authoring/basic-handling.md#first-steps) auf **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services**.
+1. Klicken Sie auf Ihre vorhandene Microsoft Translator-Konfiguration.
 1. Klicken Sie auf **Bearbeiten**.
-1. Im **Konfiguration bearbeiten** Fenster, klicken Sie **Übersetzer anpassen**. Verwenden Sie die Microsoft-Webseite, die geöffnet wird, um Ihren Service anzupassen.
+1. Klicken Sie im Fenster **Konfiguration bearbeiten** auf **Übersetzung anpassen**. Verwenden Sie die Microsoft-Webseite, die geöffnet wird, um Ihren Service anzupassen.
 
 ## Aktivieren der Übersetzungs-Service-Konfigurationen {#activating-the-translator-service-configurations}
 

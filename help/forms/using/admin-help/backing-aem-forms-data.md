@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1515'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Beachten Sie zusätzlich die folgenden Richtlinien für den Sicherungs-/Wiederhe
 
 * Sichern Sie das GDS-Verzeichnis mithilfe eines Sicherungsprogramms des Betriebssystems oder eines anderen Anbieters. (Siehe [GDS-Speicherort](/help/forms/using/admin-help/files-back-recover.md#gds-location).)
 * (Optional) Sichern Sie den Stammordner für Inhalte mithilfe eines Sicherungsprogramms des Betriebssystems oder eines anderen Anbieters. (Siehe [Speicherort des Stammordners für Inhalte (eigenständige Umgebung)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) oder [Speicherort des Stammordners für Inhalte (Clusterumgebung)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)
-* Sichern Sie Autoren- und Veröffentlichungsinstanzen ( crx -repository backup).
+* Sichern Sie Autor- und Veröffentlichungsinstanzen (CRX-Repository-Sicherung).
 
   Um die Correspondence Management Solution-Umgebung zu sichern, führen Sie die Schritte für Autoren- und Veröffentlichungsinstanzen durch wie unter [Sichern und Wiederherstellen](/help/sites-administering/backup-and-restore.md) beschrieben.
 
@@ -138,7 +138,7 @@ Sie können die Befehlszeilenschnittstelle verwenden, um den abgesicherten Siche
 
    >[!NOTE]
    >
-   >Legen Sie den Ordner JAVA_HOME wie im entsprechenden Kapitel für Ihren Anwendungsserver in beschrieben fest. [Vorbereiten der Installation von AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_de)*.*
+   >Legen Sie das Verzeichnis „JAVA_HOME“ so fest, wie es im entsprechenden Kapitel für Ihren Anwendungs-Server unter [Vorbereiten der Installation von AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_de)*beschrieben ist.*
 
 1. Führen Sie den folgenden Befehl in einer einzelnen Zeile durch:
 

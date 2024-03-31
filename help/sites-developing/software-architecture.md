@@ -1,6 +1,6 @@
 ---
 title: Software-Architektur
-description: Erfahren Sie mehr über Best Practices für die Architektur Ihrer Software für Adobe Experience Manager.
+description: Erfahren Sie mehr über Best Practices zum Entwickeln Ihrer Software für Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '614'
-ht-degree: 88%
+ht-degree: 90%
 
 ---
 

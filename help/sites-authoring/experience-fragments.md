@@ -1,12 +1,12 @@
 ---
 title: Experience Fragments
-description: Experience Fragments in Adobe Experience Manager Sites Authoring
+description: Experience Fragments beim Verfassen mit Adobe Experience Manager Sites
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1468'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -57,7 +57,7 @@ Experience Fragments sollten in folgenden Fällen verwendet werden:
 * Wenn Sie über ein Erlebnis mit unterschiedlichen Varianten oder Ausgabedarstellungen verfügen.
 
    * Kanal- oder kontextspezifische Varianten
-   * Erlebnisse, die eine Gruppierung sinnvoll sind (z. B. eine Kampagne mit unterschiedlichen Erlebnissen über verschiedene Kanäle hinweg)
+   * Erlebnisse, die als Gruppe sinnvoll eingesetzt werden können (z. B. eine Kampagne, die je nach Kanal unterschiedliche Erlebnisse liefert)
 
 * Wenn Sie Omni-Channel-Commerce betreiben.
 
@@ -236,7 +236,7 @@ Je nach Ihren Anforderungen können Sie Varianten eines Experience Fragments ers
 
    ![xf-06](assets/xf-06.png)
 
-1. Bestätigen mit **Fertig** (Häkchensymbol) wird die neue Variante im Bedienfeld angezeigt:
+1. Bestätigen Sie Ihre Auswahl mit der Option **Fertig** (Häkchen-Symbol). Daraufhin wird die neue Variante im Bedienfeld angezeigt:
 
    ![xf-07](assets/xf-07.png)
 
@@ -269,7 +269,7 @@ Sie können eine oder mehrere Komponenten auswählen, um einen Baustein zur Wied
 
 ### Erstellen eines Bausteins {#creating-a-building-block}
 
-So erstellen Sie einen Baustein:
+So erstellen Sie einen neuen Baustein:
 
 1. Wählen Sie im Experience Fragment-Editor die Komponenten aus, die Sie wiederverwenden möchten:
 
@@ -283,7 +283,7 @@ So erstellen Sie einen Baustein:
 
    ![xf-11](assets/xf-11.png)
 
-1. Die **Baustein** wird auf der Registerkarte angezeigt und kann im Absatzsystem ausgewählt werden:
+1. Der **Baustein** wird auf der Registerkarte angezeigt und kann im Absatzsystem ausgewählt werden:
 
    ![xf-12](assets/xf-12.png)
 
@@ -350,7 +350,7 @@ Details zu Ihrem Fragment können wie folgt angezeigt werden:
 
    * **Social-Media-Status**
 
-      * Details zu Social-Media-Varianten.
+      * Details zu Social Media-Varianten
 
 ## Einfache HTML-Ausgabedarstellung {#the-plain-html-rendition}
 

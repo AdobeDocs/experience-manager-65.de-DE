@@ -14,7 +14,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '11187'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -39,9 +39,9 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
 >* Wenn ein veröffentlichtes Video aktualisiert wird, muss es erneut veröffentlicht werden, um Änderungen beim Versand widerzuspiegeln.
 >
 
-1. **Konfigurieren Sie Videos in Dynamic Media** anhand der folgenden Schritte:
+1. **Laden Sie Videos in Dynamic Media** anhand der folgenden Schritte hoch:
 
-   * Erstellen Sie Ihr eigenes Videokodierungsprofil. Sie können auch einfach das in „Dynamische Medien“ bereits integrierte vordefinierte Profil _Adaptive Videokodierung_ verwenden.
+   * Erstellen Sie Ihr eigenes Videokodierungsprofil. Sie können auch einfach das in Dynamic Media bereits integrierte vordefinierte Profil _Adaptive Videokodierung_ verwenden.
 
       * [Erstellen eines Videokodierungsprofils](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * Erfahren Sie mehr über die [Best Practices für Videokodierung](#best-practices-for-encoding-videos).
@@ -148,9 +148,9 @@ Für das Verwalten von einzelnen Videos und adaptiven Videosets wird Folgendes u
 * Organisieren und Durchsuchen von Videos mit kompletter Metadatenunterstützung für die effiziente Verwaltung von Video-Assets
 * Stellen Sie adaptive Video-Sets im Web, auf Desktops und mobilen Geräten bereit, einschließlich iPhone, iPad, Android™, BlackBerry® und Windows Phone.
 
-Das adaptive Video-Streaming wird auf verschiedenen iOS-Plattformen unterstützt. Siehe [Dynamic Media Viewers-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video).
+Das adaptive Video-Streaming wird auf verschiedenen iOS-Plattformen unterstützt. Siehe [Dynamic Media Viewers-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html?lang=de#video).
 
-Dynamic Media unterstützt die mobile Videowiedergabe für MP4 H.264-Videos. <!-- LINK IS 404 WITH NO SUITABLE REPLACEMENT You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482). -->
+Dynamic Media unterstützt die mobile Videowiedergabe für MP4 H.264-Videos. <!-- LINK IS 404 WITH NO SUITABLE REPLACEMENT You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482). -->
 
 Welche Windows-Geräte dieses Videoformat unterstützen, können Sie hier einsehen: [Unterstützte Medien-Codecs für Windows Phone 8](https://learn.microsoft.com/de-de/windows/uwp/audio-video-camera/supported-codecs)
 
@@ -513,7 +513,7 @@ Damit Videoberichte ordnungsgemäß funktionieren, wird automatisch eine Report 
 
 **So zeigen Sie Videoberichte an:**
 
-1. Wählen Sie in der linken oberen Ecke des Experience Managers das Experience Manager-Logo aus und wählen Sie dann in der linken Leiste die Option **[!UICONTROL Instrumente]** (Hammersymbol) > **[!UICONTROL Assets]** > **[!UICONTROL Videoberichte]**.
+1. Wählen Sie in der linken oberen Ecke von Experience Manager das Experience Manager-Logo und dann links in der Leiste **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets]** > **[!UICONTROL Videoberichte]**.
 1. Führen Sie auf der Seite „Videoberichte“ eine der folgenden Aktionen aus:
 
    * Klicken Sie in der Nähe der oberen rechten Ecke auf das Symbol **Videobericht aktualisieren**.
@@ -877,7 +877,7 @@ Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie
 
    Siehe [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
 
-   Es gibt viele Websites, die sowohl kostenlose als auch Premium-Tools und -Services anbieten, die Sie verwenden können, um WebVTT-Untertiteldateien außerhalb von Dynamic Media zu erstellen. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
+   Auf zahlreichen Websites werden sowohl kostenlose als auch Premium-Tools und -Dienste angeboten, die Sie verwenden können, um WebVTT-Beschriftungen/Untertiteldateien außerhalb von Dynamic Media zu erstellen. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
    <!--[WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
@@ -885,7 +885,7 @@ Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie
 
    In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video. -->
 
-   Folgen Sie den Anweisungen auf dem Bildschirm von einer dieser Websites, um Ihre WebVTT-Datei zu erstellen und zu speichern. Wenn Sie fertig sind, kopieren Sie den Inhalt der Untertiteldatei und fügen Sie ihn in einen Texteditor ein. Speichern Sie ihn dann mit der Dateierweiterung `.vtt`.
+   Folgen Sie auf der Site den Anweisungen auf dem Bildschirm, um Ihre WebVTT-Datei zu erstellen und zu speichern. Wenn Sie fertig sind, kopieren Sie den Inhalt der Untertiteldatei und fügen Sie ihn in einen Texteditor ein. Speichern Sie ihn dann mit der Dateierweiterung `.vtt`.
 
    >[!NOTE]
    >
@@ -972,7 +972,7 @@ Siehe [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
        <td>
        <ol>
        <li>Navigieren Sie zum <i>veröffentlichten</i> Video-Asset, das Sie mit der hochgeladenen Kapiteldatei verbinden möchten. Denken Sie daran, dass URLs erst kopiert werden können, <i>nachdem</i> Sie die Assets <i>veröffentlicht</i> haben. Siehe <a href="/help/assets/publishing-dynamicmedia-assets.md">Veröffentlichen von Assets</a>.</li>
-       <li>Klicken Sie im Dropdown-Menü auf <strong>Viewer</strong>.</li>
+       <li>Klicken Sie dann im Dropdown-Menü auf <strong>Viewer</strong>.</li>
        <li>Klicken Sie in der linken Leiste auf den Namen der Video-Viewer-Vorgabe. Auf einer separaten Seite wird eine Vorschau des Videos geöffnet.</li>
        <li>Klicken Sie in der linken Leiste unten auf <strong>URL</strong>.</li>
        <li>Wählen Sie im Dialogfeld „URL“ die URL aus, kopieren Sie sie in die Zwischenablage und fügen Sie sie dann in einen einfachen Texteditor ein.</li>
@@ -984,7 +984,7 @@ Siehe [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
        <td>
        <ol>
        <li>Navigieren Sie zum <i>veröffentlichten</i> Video-Asset, das Sie mit der hochgeladenen Kapiteldatei verbinden möchten. Denken Sie daran, dass URLs erst kopiert werden können, <i>nachdem</i> Sie die Assets <i>veröffentlicht</i> haben. Siehe <a href="/help/assets/publishing-dynamicmedia-assets.md">Veröffentlichen von Assets</a>.</li>
-       <li>Klicken Sie im Dropdown-Menü auf <strong>Viewer</strong>.</li>
+       <li>Klicken Sie dann im Dropdown-Menü auf <strong>Viewer</strong>.</li>
        <li>Klicken Sie in der linken Leiste auf den Namen der Video-Viewer-Vorgabe. Auf einer separaten Seite wird eine Vorschau des Videos geöffnet.</li>
        <li>Klicken Sie im unteren Bereich der linken Leiste auf <strong>Einbetten</strong>.</li>
        <li>Wählen Sie im Dialogfeld „Einbettungs-Code“ den Einbettungs-Code aus, kopieren Sie den gesamten Code in die Zwischenablage und fügen Sie ihn dann in einen einfachen Texteditor ein.</li>
@@ -1061,15 +1061,15 @@ Die folgenden Schritte gelten nur, wenn Dynamic Media im Hybridmodus ausgeführt
 **So fügen Sie eine Videominiatur hinzu:**
 
 1. Navigieren Sie zum hochgeladenen Video-Asset, dem Sie eine Videominiaturansicht hinzufügen möchten.
-1. Wählen Sie im Asset-Auswahlmodus in der Listenansicht oder der Kartenansicht das Video-Asset aus.
-1. Wählen Sie in der Symbolleiste die **[!UICONTROL Eigenschaften anzeigen]** -Symbol (ein Kreis mit einem &quot;i&quot; darin).
+1. Wählen Sie im Asset-Auswahlmodus entweder in der Listen- oder Kartenansicht das Video-Asset aus.
+1. Wählen Sie in der Symbolleiste das Symbol **[!UICONTROL Eigenschaften anzeigen]** (ein Kreis mit einem darin enthaltenen „i“) aus.
 1. Wählen Sie auf der Seite „Eigenschaften“ des Videos **[!UICONTROL Miniaturansicht ändern]** aus.
-1. Wählen Sie auf der Seite &quot;Miniatur ändern&quot;in der Symbolleiste die Option **[!UICONTROL Frame auswählen]**.
+1. Wählen Sie auf der Seite „Miniaturansicht ändern“ in der Symbolleiste **[!UICONTROL Frame auswählen]** aus.
 
    Dynamic Media generiert eine Serie von Miniaturansichten aus Ihrem Video, die auf dem Standardzeitintervall oder dem angepassten Zeitintervall basiert.
 
 1. Zeigen Sie die generierten Miniaturbilder in der Vorschau an und wählen Sie dann dasjenige aus, das Sie zum Video hinzufügen möchten.
-1. Auswählen **[!UICONTROL Änderung speichern]**.
+1. Wählen Sie **[!UICONTROL Änderung speichern]** aus.
 
    Das Miniaturbild des Videos wird aktualisiert. Es wird nun die ausgewählte Miniaturansicht verwendet. Wenn Sie sich später entscheiden, das Miniaturbild zu ändern, können Sie zur Seite **[!UICONTROL Miniaturansicht ändern]** zurückkehren und ein neues Bild auswählen.
 
@@ -1085,21 +1085,21 @@ Siehe [Hinzufügen von Videominiaturansichten](#adding-a-video-thumbnail).
 
 **So konfigurieren Sie das Standardzeitintervall, in dem Videominiaturansichten generiert werden:**
 
-1. Wählen Sie in Experience Manager **[!UICONTROL Instrumente]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
+1. Wählen Sie in Experience Manager **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]** aus.
 
 1. Navigieren Sie auf der CRXDE Lite-Seite im Verzeichnisbereich links zu `o etc/dam/imageserver/configuration/jcr:content/settings.`.
 
-   Wenn das Ordnerbedienfeld nicht sichtbar ist, wählen Sie links neben der Registerkarte Startseite das Symbol >> aus.
+   Wenn der Verzeichnisbereich nicht angezeigt wird, wählen Sie links neben der Registerkarte „Startseite“ das Symbol „>>“ aus.
 
-1. Wählen Sie im rechten unteren Bereich auf der Registerkarte Eigenschaften die Option `thumbnailtime`.
-1. Geben Sie im Dialogfeld **[!UICONTROL Zeit der Miniaturansicht bearbeiten]** in den Textfeldern Intervalle als Prozentwerte ein.
+1. Wählen Sie im rechten unteren Rand der Registerkarte „Eigenschaften“ zweimal `thumbnailtime`.
+1. Geben Sie im Dialogfeld **[!UICONTROL Zeit der Miniaturansicht bearbeiten]** in den Textfeldern Intervallwerte als Prozentwerte ein.
 
-   * Wählen Sie das Pluszeichen (+) aus, wenn Sie ein oder mehrere Intervallwertfelder hinzufügen möchten. Scrollen Sie bei Bedarf zum unteren Rand des Dialogfelds, um das Symbol anzuzeigen.
-   * Wählen Sie das Minuszeichen (-) rechts neben einem Intervallwertfeld aus, wenn Sie es aus der Liste löschen möchten.
-   * Wählen Sie das Pfeilsymbol nach oben und das Pfeilsymbol nach unten aus, wenn Sie die Intervallwerte neu anordnen möchten.
+   * Wählen Sie das Pluszeichen (+) aus, um ein oder mehrere Intervallwertfelder hinzuzufügen. Scrollen Sie bei Bedarf zum unteren Rand des Dialogfelds, um das Symbol zu sehen.
+   * Wählen Sie rechts neben einem Intervallwertfeld das Minuszeichen (-) aus, um es aus der Liste zu löschen.
+   * Wählen Sie die Pfeile nach oben und unten aus, um die Intervallwerte neu anzuordnen.
 
-1. Auswählen **[!UICONTROL OK]** und kehren zur Registerkarte Eigenschaften zurück.
-1. Wählen Sie links oben auf der CRXDE Lite-Seite die Option **[!UICONTROL Alle speichern]** und wählen Sie dann oben links das Symbol Zurück zur Startseite aus, um zum Experience Manager zurückzukehren.
+1. Wählen Sie **[!UICONTROL OK]** aus, um zur Registerkarte „Eigenschaften“ zurückzukehren.
+1. Wählen Sie in der linken oberen Ecke der Seite „CRXDE Lite“**[!UICONTROL Alle speichern]** und dann das Symbol „Zurück zur Startseite“ aus, um zu Experience Manager zurückzukehren.
 
    Siehe [Hinzufügen von Videominiaturansichten](#adding-a-video-thumbnail).
 
@@ -1110,12 +1110,12 @@ Die folgenden Schritte gelten nur, wenn Dynamic Media im Hybridmodus ausgeführt
 **So fügen Sie eine benutzerdefinierte Videominiatur hinzu:**
 
 1. Navigieren Sie zum hochgeladenen Video-Asset, dem Sie eine benutzerdefinierte Videominiatur hinzufügen möchten.
-1. Wählen Sie im Asset-Auswahlmodus in der Listenansicht oder der Kartenansicht das Video-Asset aus.
-1. Wählen Sie in der Symbolleiste die **[!UICONTROL Eigenschaften anzeigen]** -Symbol (ein Kreis mit einem &quot;i&quot; darin).
+1. Wählen Sie im Asset-Auswahlmodus entweder in der Listen- oder Kartenansicht das Video-Asset aus.
+1. Wählen Sie in der Symbolleiste das Symbol **[!UICONTROL Eigenschaften anzeigen]** (ein Kreis mit einem darin enthaltenen „i“) aus.
 1. Wählen Sie auf der Seite „Eigenschaften“ des Videos **[!UICONTROL Miniaturansicht ändern]** aus.
-1. Wählen Sie auf der Seite &quot;Miniatur ändern&quot;in der Symbolleiste die Option **[!UICONTROL Neue Miniatur hochladen]**.
-1. Navigieren Sie zu einem Miniaturbild, das Sie verwenden möchten, wählen Sie es aus und wählen Sie dann **[!UICONTROL Öffnen]** , um mit dem Hochladen des Bildes in Experience Manager zu beginnen. Vergewissern Sie sich nach dem Hochladen, dass Sie das Bild veröffentlichen.
-1. Nachdem Sie das Bild erfolgreich hochgeladen und veröffentlicht haben, wählen Sie auf der Seite &quot;Miniatur ändern&quot;die Option **[!UICONTROL Änderungen speichern]**.
+1. Wählen Sie auf der Seite „Miniaturansicht ändern“ auf der Symbolleiste **[!UICONTROL Neue Miniaturansicht hochladen]** aus.
+1. Navigieren Sie zu einer Miniaturansicht, die Sie verwenden möchten, wählen Sie sie aus und wählen Sie dann **[!UICONTROL Öffnen]**, um das Hochladen des Bildes in Experience Manager zu starten. Vergewissern Sie sich nach dem Hochladen, dass Sie das Bild veröffentlichen.
+1. Wählen Sie nach dem Hochladen und Veröffentlichen des Bildes auf der Seite „Miniaturansicht ändern“ die Option **[!UICONTROL Änderungen speichern]** aus.
 
    Die benutzerdefinierte Miniaturansicht wird Ihrem Video hinzugefügt.
 

@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '879'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -17,13 +17,13 @@ Wenn eine Komponente einer Web-Seite gerendert wird, kann ein HTML-Element gener
 * Eine Komponente kann nur bearbeitet werden, wenn sie in einem HTML-Element eingeschlossen ist.
 * Das einschließende Element wird verwendet, um HTML-Klassen anzuwenden, die Folgendes bieten:
 
-   * Layoutinformationen
+   * Layout-Informationen
    * Stilinformationen
 
 Für Entwickler bietet AEM eine klare und einfache Logik für die Steuerung von Decoration-Tags, die enthaltene Komponenten einschließen. Ob und wie das Decoration-Tag gerendert wird, hängt von der Kombination zweier Faktoren ab, auf die diese Seite eingeht:
 
 * Die Komponente selbst kann ihr Decoration-Tag mit einer Reihe von Eigenschaften konfigurieren.
-* Die Skripte, die Komponenten enthalten (HTL, JSP, Dispatcher usw.), können die Aspekte des Decoration-Tags mit include-Parametern definieren.
+* Die Skripte, die Komponenten einschließen (HTL, JSP, Dispatcher usw.) können die Eigenschaften des Decoration-Tags mit include-Parametern definieren.
 
 ## Empfehlungen {#recommendations}
 

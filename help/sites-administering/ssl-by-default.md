@@ -1,6 +1,6 @@
 ---
-title: SSL/TLS By Default
-description: Erfahren Sie, wie Sie in AEM 6.5 SSL standardmäßig verwenden.
+title: SSL/TLS by Default
+description: Erfahren Sie, wie Sie die Funktion SSL by Default in AEM 6.5 verwenden.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '828'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Im Bestreben, die Sicherheit von AEM kontinuierlich weiter zu verbessern, hat Ad
 
 ## Aktivieren von „SSL/TLS By Default“ {#enabling-ssl-tls-by-default}
 
-Sie können mit der Konfiguration von „SSL/TLS By Default“ beginnen, indem Sie in Ihrem AEM-Startbildschirm auf die entsprechende Posteingangsnachricht klicken. Um den Posteingang zu erreichen, klicken Sie auf das Glockensymbol in der oberen rechten Ecke des Bildschirms. Klicken Sie anschließend auf **Alle anzeigen**. Dadurch wird eine Liste aller bestellten Warnungen in einer Listenansicht angezeigt.
+Sie können mit der Konfiguration von „SSL/TLS By Default“ beginnen, indem Sie in Ihrem AEM-Startbildschirm auf die entsprechende Posteingangsnachricht klicken. Um den Posteingang zu erreichen, klicken Sie auf das Glockensymbol in der oberen rechten Ecke des Bildschirms. Klicken Sie dann auf **Alle anzeigen**. Dadurch wird eine Liste aller bestellten Warnungen in einer Listenansicht angezeigt.
 
 Wählen und öffnen Sie in der Liste die Warnung **HTTPS konfigurieren**:
 
@@ -160,7 +160,7 @@ Nachstehend finden Sie ein Beispiel für das Erstellen eines selbstsignierten Ze
 
 >[!NOTE]
 >
->Die Verwendung eines selbstsignierten Zertifikats dient nur zu Beispielzwecken. Nicht bei der Herstellung anwenden.
+>Die Verwendung eines selbstsignierten Zertifikats dient nur zu Beispielzwecken. Verwenden Sie dies nicht in der Produktion.
 
 1. Erstellen Sie zunächst den privaten Schlüssel:
 
@@ -199,7 +199,7 @@ Sie können die SSL-/TLS-Konfiguration auch mithilfe des cURL-Tools automatisier
 
 *https://&lt;Server-Adresse>:&lt;Serverport>/libs/granite/security/post/sslSetup.html*
 
-Im Folgenden finden Sie die Parameter, mit denen Sie die verschiedenen Einstellungen im Konfigurationsassistenten ändern können:
+Nachfolgend finden Sie die Parameter, mit denen Sie die verschiedenen Einstellungen im Konfigurationsassistenten ändern können:
 
 * `-F "keystorePassword=password"` – KeyStore-Kennwort
 
@@ -220,7 +220,7 @@ Im Folgenden finden Sie die Parameter, mit denen Sie die verschiedenen Einstellu
 >
 >Die schnellste Art, cURL auszuführen, um die SSL-/TLS-Konfiguration zu automatisieren, ist über den Ordner, in dem sich die DER- und CRT-Dateien befinden. Alternativ dazu können Sie den vollständigen Pfad in den Argumenten `privatekeyFile` und „certificateFile“ festlegen.
 >
->Sie müssen auch authentifiziert sein, um die Aktualisierung durchzuführen. Stellen Sie daher sicher, dass Sie den cURL-Befehl mit dem `-u user:passeword` -Parameter.
+>Außerdem müssen Sie authentifiziert sein, um die Aktualisierung durchzuführen. Stellen Sie also sicher, dass Sie den cURL-Befehl mit dem angehängten Parameter `-u user:passeword` versehen.
 >
 >Ein korrekter cURL-Post-Befehl sollte wie folgt aussehen:
 
@@ -234,7 +234,7 @@ Sie können dem Servlet eine Kette von Zertifikaten senden, indem Sie den Parame
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-Stellen Sie nach Ausführung des Befehls sicher, dass alle Zertifikate an den KeyStore gesendet wurden. Überprüfen Sie die **Keystore** Einträge aus:
+Stellen Sie nach Ausführung des Befehls sicher, dass alle Zertifikate an den KeyStore gesendet wurden. Überprüfen Sie die **Keystore-Einträge** von:
 [http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service)
 
 ### Aktivieren einer TLS 1.3-Verbindung {#enabling-tls-connection}

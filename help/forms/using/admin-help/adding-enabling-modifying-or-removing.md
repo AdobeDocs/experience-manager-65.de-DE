@@ -1,6 +1,6 @@
 ---
 title: Hinzufügen, Aktivieren, Ändern oder Entfernen von Endpunkten
-description: Erfahren Sie, wie Sie Endpunkte hinzufügen, aktivieren, ändern und entfernen können.
+description: Erfahren Sie, wie Sie Endpunkte hinzufügen, aktivieren, ändern und entfernen.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
@@ -10,24 +10,24 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 13%
+ht-degree: 100%
 
 ---
 
 # Hinzufügen, Aktivieren, Ändern oder Entfernen von Endpunkten {#adding-enabling-modifying-or-removing-endpoints}
 
-## Endpunkt zu einem Dienst hinzufügen {#add-an-endpoint-to-a-service}
+## Hinzufügen eines Endpunkts zu einem Dienst {#add-an-endpoint-to-a-service}
 
-Endpunkte können nur zu Diensten hinzugefügt werden. Ein Endpunkt kann nicht allein vorhanden sein. Er muss mit einem Dienst verknüpft sein.
+Endpunkte können nur zu Diensten hinzugefügt werden. Ein Endpunkt kann nicht selbstständig bestehen bleiben, sondern muss einem Dienst zugeordnet werden.
 
 >[!NOTE]
 >
->Es wird empfohlen, beim Hinzufügen von Endpunkten eindeutige Namen zu verwenden.
+>Beim Hinzufügen von Endpunkten sollten Sie mit eindeutigen Namen arbeiten.
 
 1. Klicken Sie in der Administration-Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
 1. Klicken Sie auf der Seite „Dienstverwaltung“ auf den zu konfigurierenden Dienst.
-1. Wählen Sie in der Liste auf der Registerkarte &quot;Endpunkte&quot;den Typ des hinzuzufügenden Endpunkts aus und klicken Sie auf &quot;Hinzufügen&quot;.
-1. Konfigurieren Sie abhängig vom Endpunkttyp zusätzliche Endpunkteinstellungen.
+1. Wählen Sie in der Liste auf der Registerkarte „Endpunkte“ den hinzuzufügenden Endpunkttyp aus und klicken Sie auf „Hinzufügen“.
+1. Je nach Endpunkttyp müssen weitere Endpunkteinstellungen konfiguriert werden.
 
 [Einstellungen für Endpunkte des Typs „Überwachter Ordner“](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
 
@@ -39,34 +39,34 @@ Endpunkte können nur zu Diensten hinzugefügt werden. Ein Endpunkt kann nicht a
 
 1. Klicken Sie auf Hinzufügen.
 
-## Endpunkt aktivieren oder deaktivieren {#enable-or-disable-an-endpoint}
+## Aktivieren oder Deaktivieren eines Endpunkts {#enable-or-disable-an-endpoint}
 
-Standardmäßig werden neue Endpunkte automatisch aktiviert. Wenn Sie einen Endpunkt deaktiviert haben, müssen Sie ihn aktivieren, damit er funktioniert.
+Standardmäßig sind neue Endpunkte automatisch aktiviert. Wenn Sie aber einen Endpunkt deaktiviert haben, müssen Sie ihn aktivieren, damit er verwendet werden kann.
 
-Wenn Probleme mit Diensten auftreten, deaktivieren Sie die zugehörigen Endpunkte, um das Problem besser zu beheben. Sie können Endpunkte auch während der regulären Systemwartung oder beim Aktualisieren eines Dienstes deaktivieren.
+Wenn mit Diensten Probleme auftreten, deaktivieren Sie die zugeordneten Endpunkte, um das Problem besser analysieren und beheben zu können. Es kann auch ratsam sein, Endpunkte während der normalen Systemwartung oder beim Upgrade eines Dienstes zu deaktivieren.
 
-1. Klicken Sie in Administration Console auf Dienste > Anwendungen und Dienste > Endpunktverwaltung.
-1. Aktivieren Sie auf der Seite &quot;Endpunktverwaltung&quot;das Kontrollkästchen für den Endpunkt, der aktiviert oder deaktiviert werden soll, und klicken Sie auf &quot;Aktivieren&quot;oder &quot;Deaktivieren&quot;.
+1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Anwendungen und Dienste“ > „Endpunktverwaltung“.
+1. Aktivieren bzw. deaktivieren Sie auf der Seite „Endpunktverwaltung“ das Kontrollkästchen für den zu aktivierenden oder zu deaktivierenden Endpunkt und klicken Sie auf „Aktivieren“ oder „Deaktivieren“.
 
-## Endpunkt ändern {#modify-an-endpoint}
+## Ändern eines Endpunkts {#modify-an-endpoint}
 
 >[!NOTE]
 >
->Die Änderungen, die Sie mit Administration Console an einer Endpunktkonfiguration vornehmen, werden nicht in den Entwurfszeitkopien Ihrer Anwendungen übernommen. Wenn Sie eine Anwendung erneut bereitstellen, gehen alle Änderungen verloren, die Sie mithilfe von Administration Console an ihren Endpunkten vorgenommen haben.
+>Die Änderungen, die Sie in der Administrationskonsole an einer Endpunktkonfiguration vornehmen, werden nicht in die Entwurfskopien Ihrer Anwendungen übernommen. Wenn Sie eine Anwendung erneut bereitstellen, gehen alle Änderungen verloren, die Sie mithilfe der Administrationskonsole an den zugehörigen Endpunkten vorgenommen haben.
 
-1. Klicken Sie in Administration Console auf Dienste > Anwendungen und Dienste > Endpunktverwaltung.
-1. Klicken Sie auf der Seite &quot;Endpunktverwaltung&quot;auf den zu ändernden Endpunkt.
-1. Ändern Sie auf der Seite &quot;Endpunkt aktualisieren&quot;den Namen, die Beschreibung und die Einstellungen des Endpunkts.
+1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Anwendungen und Dienste“ > „Endpunktverwaltung“.
+1. Klicken Sie auf der Seite „Endpunktverwaltung“ auf den zu ändernden Endpunkt.
+1. Ändern Sie auf der Seite „Endpunkt aktualisieren“ den Namen, die Beschreibung und die Einstellungen für den Endpunkt.
 
    >[!NOTE]
    >
-   >Der Name oder die Beschreibung darf kein &lt; -Zeichen enthalten, da dadurch der in Workspace angezeigte Name oder die Beschreibung abgeschnitten wird.
+   >Der Name und die Beschreibung dürfen kein Kleiner-als-Zeichen (&lt;) enthalten, weil dadurch die Anzeige des Namens bzw. der Beschreibung in Workspace abgeschnitten würde.
 
-1. Klicken Sie zum Speichern der Änderungen auf Aktualisieren.
+1. Klicken Sie auf „Aktualisieren“, um die vorgenommenen Änderungen zu speichern.
 
-Sie können diese Aufgabe auch auf der Seite Dienstverwaltung durchführen, indem Sie einen Dienst auswählen und dann auf die Registerkarte Endpunkte klicken.
+Dieser Vorgang kann auch auf der Seite „Dienstverwaltung“ durchgeführt werden, indem Sie einen Dienst auswählen und dann auf die Registerkarte „Endpunkte“ klicken.
 
-## Endpunkt entfernen {#remove-an-endpoint}
+## Entfernen eines Endpunkts {#remove-an-endpoint}
 
-1. Klicken Sie in Administration Console auf Dienste > Anwendungen und Dienste > Endpunktverwaltung.
-1. Aktivieren Sie auf der Seite &quot;Endpunktverwaltung&quot;das Kontrollkästchen für den zu entfernenden Endpunkt und klicken Sie auf &quot;Entfernen&quot;. Der Endpunkt wird nicht mehr angezeigt.
+1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Anwendungen und Dienste“ > „Endpunktverwaltung“.
+1. Aktivieren Sie auf der Seite „Endpunktverwaltung“ das Kontrollkästchen für den zu entfernenden Endpunkt und klicken Sie auf „Entfernen“. Der Endpunkt wird nicht mehr angezeigt.

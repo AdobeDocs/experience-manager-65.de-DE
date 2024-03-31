@@ -1,6 +1,6 @@
 ---
-title: Identifizieren zu übersetzender Inhalte
-description: Erfahren Sie, wie Sie Inhalte identifizieren können, die in Adobe Experience Manager übersetzt werden müssen.
+title: Identifizieren von zu übersetzenden Inhalten
+description: Erfahren Sie, wie Sie Inhalte in Adobe Experience Manager identifizieren können, die übersetzt werden müssen.
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1158'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Die Datei gilt für alle Übersetzungsprojekte.
 
 Die Regeln umfassen die folgenden Informationen:
 
-* Der Pfad des Knotens, für den die Regel gilt. Die Regel gilt auch für die nachfolgenden Elemente des Knotens.
+* Den Pfad des Knotens, auf den die Regel angewendet wird. Die Regel gilt auch für die nachfolgenden Elemente des Knotens.
 * Die Namen der Knoteneigenschaften, die den zu übersetzenden Inhalt enthalten. Die Eigenschaft kann sich speziell auf einen bestimmten Ressourcentyp oder auf alle Ressourcentypen beziehen.
 
 Sie können zum Beispiel eine Regel erstellen, die den Inhalt übersetzt, den Autorinnen und Autoren zu allen AEM Foundation-Textkomponenten auf Ihren Seiten hinzufügen. Die Regel kann den Knoten `/content` und die Eigenschaft `text` für die Komponente `foundation/components/text` identifizieren.
@@ -102,7 +102,7 @@ Verwenden Sie die folgende Regelsyntax, um in andere Komponenten integrierte ode
 
 Jedes `assetNode`-Element hat die folgenden Merkmale:
 
-* One `resourceType` -Attribut, das dem Pfad entspricht, der zu der Komponente aufgelöst wird.
+* Ein `resourceType`-Attribut, das dem zu der Komponente führenden Pfad entspricht.
 * Ein dem Namen der Eigenschaft entsprechendes `assetReferenceAttribute`, das (bei integrierten Assets) die Binärdaten des Assets oder den Pfad zum referenzierten Asset enthält.
 
 Das folgende Beispiel extrahiert Bilder aus der Foundation-Bildkomponente:
@@ -193,7 +193,7 @@ In der Benutzeroberfläche können Sie **Übernehmen** auf der Registerkarte **E
 
 In der Benutzeroberfläche können Sie **Übersetzen** auf der Registerkarte **Eigenschaften** aktivieren/deaktivieren.
 
-**updateDestinationLanguage** Dieses Attribut wird für Eigenschaften verwendet, die keinen Text, sondern Sprachcodes enthalten, z. B. jcr:language. Der Benutzer übersetzt keinen Text, sondern das Sprachschema von der Quelle ins Ziel. Solche Eigenschaften werden nicht zur Übersetzung versendet.
+**updateDestinationLanguage** Dieses Attribut wird für Eigenschaften verwendet, die keinen Text, sondern Sprach-Codes enthalten, wie zum Beispiel jcr:language. Der Benutzer übersetzt keinen Text, sondern das Sprachschema von der Quelle ins Ziel. Solche Eigenschaften werden nicht zur Übersetzung versendet.
 
 In der Benutzeroberfläche können Sie **Übersetzen** auf der Registerkarte **Eigenschaften** aktivieren/deaktivieren, außer bei den spezifischen Eigenschaften mit Sprach-Codes als Wert.
 

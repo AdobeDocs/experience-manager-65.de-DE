@@ -11,19 +11,19 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '605'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
 # Auditprotokollwartung in AEM 6{#audit-log-maintenance-in-aem}
 
-AEM Ereignisse, die für die Prüfprotokollierung qualifiziert sind, generieren viele archivierte Daten. Diese Datenmenge kann aufgrund von Replikationen, Asset-Uploads und anderen Systemaktivitäten schnell anwachsen.
+AEM-Ereignisse, die sich für die Auditprotokollierung qualifizieren, generieren eine große Menge archivierter Daten. Diese Datenmenge kann aufgrund von Replikationen, Asset-Uploads und anderen Systemaktivitäten schnell anwachsen.
 
-Die Wartung des Auditprotokolls umfasst verschiedene Funktionsbereiche, mit denen die Wartung von Auditprotokollen unter bestimmten Richtlinien automatisiert werden kann.
+Die Auditprotokollwartung beinhaltet mehrere Funktionsbestandteile, die die Auditprotokollwartung gemäß spezifischen Richtlinien automatisieren können.
 
-Es wird als konfigurierbare wöchentliche Wartungsaufgabe implementiert und kann über die Überwachungskonsole des Vorgangs-Dashboards aufgerufen werden.
+Sie werden als konfigurierbare wöchentliche Wartungsaufgabe implementiert und sind über die Überwachungskonsole des Vorgangs-Dashboards verfügbar.
 
-Weitere Informationen finden Sie unter [Dokumentation zum Vorgangs-Dashboard](/help/sites-administering/operations-dashboard.md).
+Weitere Informationen dazu finden Sie in der [Dokumentation zum Vorgangs-Dashboard](/help/sites-administering/operations-dashboard.md).
 
 Es gibt drei Arten von Optionen zur Auditprotokolllöschung:
 
@@ -35,7 +35,7 @@ Jede der Optionen kann durch Erstellen von Regeln in der Web-Konsole von AEM kon
 
 ## Konfigurieren der Seiten-Auditprotokolllöschung {#configure-page-audit-log-purging}
 
-Führen Sie die folgenden Schritte aus, um die Auditprotokolllöschung zu konfigurieren:
+Führen Sie zum Konfigurieren der Auditprotokolllöschung die folgenden Schritte aus:
 
 1. Gehen Sie zum Admin der Web-Konsole, indem Sie über den Browser `http://localhost:4502/system/console/configMgr/` aufrufen.
 
@@ -43,19 +43,19 @@ Führen Sie die folgenden Schritte aus, um die Auditprotokolllöschung zu konfig
 
    ![chlimage_1-365](assets/chlimage_1-365.png)
 
-1. Konfigurieren Sie anschließend den Bereinigungs-Scheduler entsprechend Ihren Anforderungen. Folgende Optionen sind verfügbar:
+1. Konfigurieren Sie als Nächstes den Löschungsplaner gemäß Ihren Anforderungen. Folgende Optionen sind verfügbar:
 
-   * **Regelname:** den Namen der Prüfrichtlinienregel;
+   * **Regelname:** der Name der Auditrichtlinienregel.
    * **Content path:** der Inhalts-Pfad, auf den die Regel angewandt wird;
-   * **Mindestalter:** die Zeit in Tagen, in der die Auditprotokolle aufbewahrt werden müssen;
-   * **Auditprotokolltyp:** der Typ des Auditprotokolls, das bereinigt werden soll.
+   * **Mindestalter:** die Zeit in Tagen, für die die Auditprotokolle aufbewahrt werden müssen.
+   * **Auditprotokolltyp:** der Typ des zu löschenden Auditprotokolls.
 
    >[!NOTE]
    >
    >Der Inhalts-Pfad gilt nur für untergeordnete Elemente des Knotens `/var/audit/com.day.cq.wcm.core.page` im Repository.
 
 1. Speichern Sie die Regel.
-1. Die erstellte Regel muss im Vorgangs-Dashboard verfügbar gemacht werden, damit sie ausgeführt werden kann. Gehen Sie dazu **Tools - Betrieb - Wartung** über den AEM Willkommensbildschirm aus.
+1. Die von Ihnen erstellte Regel muss im Vorgangs-Dashboard vorhanden sein, um ausgeführt werden zu können. Gehen Sie hierzu über den AEM-Begrüßungsbildschirm zu **Tools – Vorgänge – Wartung**.
 
 1. Klicken Sie auf die Karte **Wöchentliches Wartungsfenster**.
 
@@ -67,34 +67,34 @@ Führen Sie die folgenden Schritte aus, um die Auditprotokolllöschung zu konfig
 
 Wenn das Fenster zur geplanten Wartung in AEM 6.3 geschlossen wird, bevor die Aufgabe zur Auditprotokolllöschung abgeschlossen werden konnte, wird die Aufgabe automatisch angehalten. Sie wird fortgesetzt, wenn das nächste Wartungsfenster beginnt.
 
-**Mit AEM 6.5** können Sie eine aktuell ausgeführte Aufgabe zur Auditprotokolllöschung manuell anhalten, indem Sie auf das **Stopp**-Symbol klicken. Bei der nächsten Ausführung wird die Aufgabe sicher fortgesetzt.
+**Mit AEM 6.5** können Sie eine aktuell ausgeführte Aufgabe zur Auditprotokolllöschung manuell anhalten, indem Sie auf das **Stopp**-Symbol klicken. Bei der nächsten Ausführung wird die Aufgabe auf sichere Art und Weise wiederaufgenommen.
 
 >[!NOTE]
 >
->Die Wartungsaufgabe anzuhalten bedeutet, die Ausführung auszusetzen, ohne den bereits ausgeführten Auftrag zu verlieren.
+>Das Anhalten der Wartungsaufgabe bedeutet, dass ihre Ausführung verschoben wird, ohne den Überblick über den aktuell bereits ausgeführten Auftrag zu verlieren.
 
-## DAM-Auditprotokolllöschung konfigurieren {#configure-dam-audit-log-purging}
+## Konfigurieren der DAM-Auditprotokolllöschung {#configure-dam-audit-log-purging}
 
 1. Navigieren Sie unter *https://&lt;Server-Adresse>:&lt;Serverport>/system/console/configMgr* zur Systemkonsole.
-1. Suchen Sie nach **Bereinigung des DAM-Auditprotokolls** und klicken Sie auf das Ergebnis.
+1. Suchen Sie nach der Regel **DAM-Auditprotokoll löschen** und klicken Sie auf das Ergebnis.
 1. Konfigurieren Sie im nächsten Fenster Ihre Regel entsprechend: Die Optionen sind:
 
-   * **Regelname:** den Namen der Prüfrichtlinienregel;
+   * **Regelname:** der Name der Auditrichtlinienregel.
    * **Content path:** der Inhalts-Pfad, auf den die Regel angewandt wird
-   * **Mindestalter:** die Zeit in Tagen, in der die Auditprotokolle aufbewahrt werden müssen
-   * **Auditprotokoll-DAM-Ereignistypen:** die Typen der DAM-Prüfereignisse, die bereinigt werden sollen.
+   * **Mindestalter:** die Zeit in Tagen, für die die Auditprotokolle aufbewahrt werden müssen
+   * **Auditprotokoll-DAM-Ereignistypen:** der Typ der zu löschenden DAM-Auditereignisse
 
-1. Klicks **Speichern** , um Ihre Konfiguration zu speichern
+1. Klicken Sie auf **Speichern**, um Ihre Konfiguration zu speichern.
 
 ## Konfigurieren der Replikations-Auditprotokolllöschung  {#configure-replication-audit-log-purging}
 
 1. Navigieren Sie unter *https://&lt;Server-Adresse>:&lt;Serverport>/system/console/configMgr* zur Systemkonsole.
-1. Suchen Sie nach **Replikations-Auditprotokoll-Bereinigungs-Planung** und klicken Sie auf das Ergebnis
+1. Suchen Sie nach **Replikations-Auditprotokoll-Löschungsplaner** und klicken Sie auf das Ergebnis
 1. Konfigurieren Sie im nächsten Fenster Ihre Regel entsprechend: Die Optionen sind:
 
-   * **Regelname:** den Namen der Prüfrichtlinienregel
+   * **Regelname:** der Name der Auditrichtlinienregel.
    * **Content path:** der Inhalts-Pfad, auf den die Regel angewandt wird
-   * **Mindestalter:** die Zeit in Tagen, in der die Auditprotokolle aufbewahrt werden müssen
-   * **Audit log Replication event types:** die Typen von Replikations-Audit-Ereignissen, die gelöscht werden sollen
+   * **Mindestalter:** die Zeit in Tagen, für die die Auditprotokolle aufbewahrt werden müssen.
+   * **Auditprotokoll-Replikationsereignistypen:** die Typen von Replikations-Auditereignissen, die gelöscht werden sollen.
 
-1. Klicks **Speichern** , um Ihre Konfiguration zu speichern.
+1. Klicken Sie auf **Speichern**, um Ihre Konfiguration zu speichern.

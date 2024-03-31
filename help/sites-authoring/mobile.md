@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '226'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Geräte sind entsprechend ihrer Fähigkeit zur Wiedergabe einer Seite in die Kat
 Gehen Sie wie folgt vor, um eine Seite für Mobilgeräte zu erstellen:
 
 1. Öffnen Sie ausgehend von der globalen Navigation die **Sites-Konsole**.
-1. Öffnen Sie die Seite **We.Retail** > **Vereinigte Staaten** > **englisch**.
+1. Öffnen Sie die Seite **We.Retail** > **Vereinigte Staaten** > **Englisch**.
 
 1. Wechseln Sie in den **Vorschaumodus**.
 1. Wechseln Sie durch Klicken auf das Gerätesymbol am oberen Seitenrand zum gewünschten Emulator.

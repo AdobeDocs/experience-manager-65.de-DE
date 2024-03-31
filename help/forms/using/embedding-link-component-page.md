@@ -1,6 +1,6 @@
 ---
 title: Einbetten einer Link-Komponente in eine Seite
-description: Sie können die Verknüpfungskomponente verwenden, um ein adaptives Dokument oder ein adaptives Formular von einer beliebigen Seite aus zu verknüpfen.
+description: Mithilfe der Komponente „Link“ können Sie Links zu adaptiven Dokumenten oder Formularen von beliebigen Seiten aus erstellen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '408'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
 
@@ -18,32 +18,32 @@ ht-degree: 36%
 
 ## Voraussetzungen {#prerequisites}
 
-Die Verknüpfungskomponente ist ein Mitglied der Document Services-Kategorie. Stellen Sie sicher, dass die Document Services-Kategorie im AEM-Komponentenbrowser verfügbar ist. Wenn die Kategorie nicht aufgeführt ist, führen Sie die Schritte unter [Aktivieren der Komponenten im Forms Portal](/help/forms/using/enabling-forms-portal-components.md).
+Die Komponente „Link“ gehört zur Kategorie „Dokumentendienste“. Stellen Sie sicher, dass die Document Services-Kategorie im AEM-Komponentenbrowser verfügbar ist. Wenn die Kategorie nicht aufgelistet ist, führen Sie die Schritte unter [Aktivieren der Komponenten im Formularportal](/help/forms/using/enabling-forms-portal-components.md) aus.
 
-## Link {#link-component}
+## Komponente „Link“ {#link-component}
 
-Mit der Komponente &quot;Link&quot;können Formularportalautoren von überall auf einer Seite einen Link zu einem adaptiven Formular erstellen. Die Komponente Link ist im Abschnitt Document Services im Komponenten-Browser verfügbar.
+Mithilfe der Komponente „Link“ können Formularportal-Autorinnen und -Autoren an einer beliebigen Seitenposition eine Verknüpfung zu einem adaptiven Formular erstellen. Die Komponente „Link“ ist im Abschnitt „Dokumentendienste“ im Komponenten-Browser verfügbar.
 
-Führen Sie die folgenden Schritte aus, um der Seite eine Komponente Link hinzuzufügen:
+Gehen Sie wie folgt vor, um der Seite eine Komponente des Typs „Link“ hinzuzufügen:
 
-1. Ziehen Sie die Komponente **Link** auf die Seite. Wählen Sie die Komponente aus und wählen Sie ![cmppr](assets/cmppr.png). Das Komponentendialogfeld „Link bearbeiten“ wird geöffnet.
+1. Ziehen Sie die Komponente **Link** auf die Seite. Wählen Sie die Komponente aus und dann ![cmppr](assets/cmppr.png) aus. Das Komponentendialogfeld „Link bearbeiten“ wird geöffnet.
 
    ![edit-link-component](assets/edit-link-component.png)
 
 1. Geben Sie auf der Registerkarte **Anzeige** Folgendes an:
 
-   * **Linkbeschriftung**: Linktext oder Beschriftung für den Link.
-   * **Link-Tooltip**: QuickInfo für den Link.
-   * **Layout-Vorlage**: Vorlage für das Layout der Komponente Link .
+   * **Link-Titel**: Link-Text oder Beschriftung des Links.
+   * **Link-QuickInfo**: QuickInfo für den Link.
+   * **Layout-Vorlage**: Vorlage für das Layout der Komponente vom Typ „Link“.
 
-1. Öffnen Sie die **Asset-Informationen** und geben Sie den Typ des Assets an. Ein Asset kann ein **Formular** sein. Je nach ausgewähltem Assettyp können die unten aufgeführten Optionen angezeigt werden:
+1. Öffnen Sie die Registerkarte **Element-Info** und geben Sie den Typ des Assets an. Ein Asset kann ein **Formular** sein. Je nach ausgewähltem Assettyp können die unten aufgeführten Optionen angezeigt werden:
 
    * **Asset Path**: Pfad für das Repository, in dem das Asset gespeichert ist.
 
-   * **Render Type**: Das Wiedergabeformat – PDF, HTML oder Auto Der Wiedergabetyp &quot;Auto&quot;erkennt die Benutzerumgebung und rendert das Formular entsprechend als HTML oder als PDF. Wenn das Formular beispielsweise von einem Mobilgerät aus aufgerufen wird, gibt der Wiedergabetyp &quot;Auto&quot;das Formular auf HTML wieder.
+   * **Render Type**: Das Wiedergabeformat – PDF, HTML oder Auto Der Render-Typ „Auto“ erkennt die Benutzerumgebung und rendert das Formular entsprechend im HTML- oder PDF-Format. Wenn das Formular beispielsweise auf einem Mobilgerät aufgerufen wird, rendert der Render-Typ „Auto“ das Formular im HTML-Format.
    * **Sende-URL**: URL zu dem Servlet, an das die Formulardaten gesendet werden.
-   * **HTML-Profil**: Profil für die Wiedergabe des Formulars als HTML.
-   * **PDF-Profil**: Profil für die Wiedergabe des Formulars als PDF-Dokument.
+   * **HTML-Profil**: Profil für das Rendern des Formulars als HTML.
+   * **PDF-Profil**: Profil für das Rendern des Formulars als PDF-Dokument.
 
 1. Öffnen Sie die Registerkarte **Erweitert**. Sie können zusätzliche Parameter in Form von Schlüssel-Wert-Paaren angeben. Wenn auf den Link geklickt wird, werden diese zusätzlichen Parameter zusammen mit dem Formular übergeben.
 
@@ -51,9 +51,9 @@ Führen Sie die folgenden Schritte aus, um der Seite eine Komponente Link hinzuz
 
 ## Best Practices für die Verwendung der Komponente „Link“  {#best-practices-for-using-link-component-br}
 
-* Stellen Sie sicher, dass Sie PDF als Rendertyp auswählen, wenn der im Formularpfad angegebene Pfad auf ein Dokument verweist, dessen Renderformat PDF ist.
-* Die Sende-URL für ein Formular kann an mehreren Stellen angegeben werden und die Rangfolge lautet wie folgt:
+* Stellen Sie sicher, dass Sie „PDF“ als Render-Typ auswählen, wenn der im Formularpfad angegebene Pfad auf ein Dokument verweist, bei dem das zulässige Render-Format PDF ist.
+* Die Übermittlungs-URL für ein Formular kann an mehreren Stellen festgelegt werden. Ihre Prioritätsreihenfolge lautet wie folgt:
 
-   1. Die Sende-URL, die in das Formular eingebettet ist (in der Senden-Schaltfläche), hat die höchste Priorität.
-   1. Die Sende-URL, die in Forms Manager erwähnt wird, hat die mittlere Priorität.
+   1. Die in das Formular eingebettete Übermittlungs-URL (in der Senden-Schaltfläche) hat die höchste Priorität.
+   1. Die in Forms Manager erwähnte Übermittlungs-URL hat eine mittlere Priorität.
    1. Die Sende-URL, die im Forms Portal erwähnt wird, hat die niedrigste Priorität.

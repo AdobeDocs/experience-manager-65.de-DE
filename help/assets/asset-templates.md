@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1576'
-ht-degree: 54%
+ht-degree: 70%
 
 ---
 
@@ -19,7 +19,7 @@ Asset-Vorlagen sind eine spezielle Asset-Klasse, die die schnelle Wiederverwendu
 
 Da eingeschränkte Bearbeitungen flexibel vorgenommen werden können, während das globale Erscheinungsbild geschützt ist, sind Asset-Vorlagen ideale Bausteine für die schnelle Inhaltsadaptation und Verteilung als Inhaltsartefakte für verschiedene Funktionen. Die Neuverwendung von Inhalten trägt dazu bei, die Kosten für die Verwaltung von Druck- und digitalen Kanälen zu senken und ganzheitliche und konsistente Erlebnisse über diese Kanäle hinweg bereitzustellen.
 
-Als Marketingexperte können Sie Vorlagen in [!DNL Experience Manager Assets] speichern und verwalten und eine zentrale Basisvorlage verwenden, um auf einfache Weise mehrere personalisierte Druckerlebnisse zu schaffen. Sie können verschiedene Arten von Marketingmaterial erstellen, darunter Broschüren, Flyer, Postkarten, Visitenkarten usw., um Ihre Marketingbotschaft eindeutig an Kunden zu übermitteln. Sie können auch mehrseitige Druckausgaben aus vorhandenen oder neuen Druckausgaben zusammenstellen. Vor allem können Sie gleichzeitig digitale und gedruckte Erlebnisse bereitstellen, um den Benutzern ein konsistentes, integriertes Erlebnis zu bieten.
+Als Marketingexperte können Sie Vorlagen in [!DNL Experience Manager Assets] speichern und verwalten und eine zentrale Basisvorlage verwenden, um auf einfache Weise mehrere personalisierte Druckerlebnisse zu schaffen. Sie können verschiedene Arten von Marketingmaterial erstellen, darunter Broschüren, Flyer, Postkarten, Visitenkarten usw., um Ihre Marketingbotschaft eindeutig an Kunden zu übermitteln. Außerdem können Sie aus vorhandenen oder neuen Druckausgaben mehrseitige Druckausgaben zusammenstellen. Und das Beste ist: Sie können ohne großen Aufwand gleichzeitig digitale Erfahrungen und gedruckte Erfahrungen bereitstellen, um für Benutzende eine konsistente integrierte Erfahrung zu schaffen.
 
 Bei Asset-Vorlagen handelt es sich zwar meistens um [!DNL Adobe InDesign]-Dateien, aber gute [!DNL Adobe InDesign]-Kenntnisse sind keine Grundvoraussetzung für die Erstellung von beeindruckenden Artefakten. Sie müssen die Felder Ihrer [!DNL Adobe InDesign] Vorlage mit Ihren Produktfeldern, die Sie sonst beim Erstellen von Katalogen benötigen. Sie können die Vorlagen im WYSIWYG-Modus direkt auf der Web-Benutzeroberfläche bearbeiten. Damit Ihre Änderungen von [!DNL Adobe InDesign] verarbeitet werden können, müssen Sie aber zuerst [!DNL Experience Manager Assets] für die Integration in [!DNL Adobe InDesign Server] konfigurieren.
 
@@ -28,7 +28,7 @@ Die Möglichkeit zur Bearbeitung von [!DNL Adobe InDesign]-Vorlagen über die We
 Sie können Asset-Vorlagen für folgende Zwecke nutzen:
 
 * Ändern von bearbeitbaren Vorlagenfeldern über die Web-Benutzeroberfläche.
-* Steuern Sie die grundlegende Formatierung von Text, z. B. Schriftgröße, -stil und -typ auf Tag-Ebene.
+* Steuern der grundlegenden Textformatierung, z. B. Schriftgrad, -stil und -typ auf Tag-Ebene.
 * Ändern von Bildern in der Vorlage per Inhaltsauswahl.
 * Anzeigen von Vorlagenbearbeitungen in der Vorschau.
 * Führen Sie mehrere Vorlagendateien zusammen, damit Sie ein mehrseitiges Artefakt erstellen können.
@@ -39,7 +39,7 @@ Sie können die aktualisierte Datei im übergeordneten Ordner in den Formaten IN
 
 ## Erstellen eines Sicherheitsteils {#creating-a-collateral}
 
-Stellen Sie sich ein Szenario vor, in dem Sie digitale druckbare Materialien wie Broschüren, Flyer und Anzeigen für eine bevorstehende Kampagne erstellen und für eine globale Freigabe mit Verkaufsstellen verwenden möchten. Das Erstellen von Begleitmaterial basierend auf einer Vorlage hilft, kanalübergreifend ein einheitliches Kundenerlebnis zu bieten. Designer können die Kampagnenvorlagen (ein- oder mehrseitig) erstellen, indem sie eine Lösung für die Kreativarbeit nutzen, z. B. [!DNL InDesign], und die Vorlagen für Sie in [!DNL Experience Manager Assets] hochladen. Bevor Sie ein Sicherheitselement erstellen, lassen Sie eine oder mehrere INDD-Vorlagen in hochladen und verfügbar in [!DNL Experience Manager] im Voraus.
+Stellen Sie sich einen Fall vor, in dem Sie digitales, druckbares Material, z. B. Broschüren, Flyer und Anzeigen, für eine anstehende Kampagne erstellen und für Ihre Filialgeschäfte weltweit bereitstellen möchten. Wenn Sie das Material basierend auf einer Vorlage erstellen, können Sie kanalübergreifend ein einheitliches Kundenerlebnis erzielen. Designer können die Kampagnenvorlagen (ein- oder mehrseitig) erstellen, indem sie eine Lösung für die Kreativarbeit nutzen, z. B. [!DNL InDesign], und die Vorlagen für Sie in [!DNL Experience Manager Assets] hochladen. Bevor Sie ein Sicherheitselement erstellen, lassen Sie eine oder mehrere INDD-Vorlagen in hochladen und verfügbar in [!DNL Experience Manager] im Voraus.
 
 1. Im [!DNL Experience Manager] Benutzeroberfläche, wählen Sie [!UICONTROL Assets].
 
@@ -57,11 +57,11 @@ Stellen Sie sich ein Szenario vor, in dem Sie digitale druckbare Materialien wie
    ![chlimage_1-104](assets/chlimage_1-309.png)
 
 1. (Optional) Klicken Sie auf **[!UICONTROL Tags]** und wählen Sie einen oder mehrere Tags für die Broschüre aus. Klicken Sie auf **[!UICONTROL Bestätigen]**, um Ihre Auswahl zu bestätigen.
-1. Klicken Sie auf **[!UICONTROL Erstellen]**. Ein Dialogfeld bestätigt, dass eine neue Broschüre erstellt wurde. Klicken Sie auf **[!UICONTROL Öffnen]**, um die Broschüre im Bearbeitungsmodus zu öffnen.
+1. Klicken Sie auf **[!UICONTROL Erstellen]**. In einem Dialogfeld mit einem Hinweis wird bestätigt, dass eine neue Broschüre erstellt wurde. Klicken Sie auf **[!UICONTROL Öffnen]**, um die Broschüre im Bearbeitungsmodus zu öffnen.
 
    <!--![chlimage_1-106](assets/.png) -->
 
-   Alternativ können Sie das Dialogfeld schließen und auf der Seite &quot;Vorlagen&quot;zu dem Ordner navigieren, mit dem Sie begonnen haben, um die erstellte Broschüre anzuzeigen. Der Typ des Materials wird in der Kartenansicht auf der Miniaturansicht angezeigt. In diesem Fall wird in der Miniaturansicht beispielsweise das Wort [!UICONTROL Broschüre] angezeigt.
+   Alternativ hierzu können Sie das Dialogfeld schließen und auf der Seite „Vorlagen“ zu dem Ordner navigieren, mit dem Sie den Vorgang begonnen haben, um die erstellte Broschüre anzuzeigen. Der Typ des Materials wird in der Kartenansicht als die dazugehörige Miniaturansicht angezeigt. In diesem Fall wird in der Miniaturansicht beispielsweise das Wort [!UICONTROL Broschüre] angezeigt.
 
    ![chlimage_1-107](assets/chlimage_1-312.png)
 
@@ -80,7 +80,7 @@ Sie können ein Material direkt nach seiner Erstellung bearbeiten. Alternativ hi
 
    Die Asset-Suche und der Texteditor werden links auf der Seite angezeigt. Der Text-Editor ist standardmäßig geöffnet.
 
-   Ändern Sie mit dem Texteditor den Text, der im Textfeld angezeigt werden soll. Sie können Schriftgröße, Stil, Farbe und Typ auf Tag-Ebene ändern.
+   Ändern Sie mit dem Texteditor den Text, der im Textfeld angezeigt werden soll. Sie können Schriftgrad, -stil, -farbe und -typ auf der Tag-Ebene ändern.
 
    Um die Asset-Suche zu verwenden, können Sie in [!DNL Experience Manager Assets] und ersetzen Sie die bearbeitbaren Bilder in der Vorlage durch Bilder Ihrer Wahl.
 
@@ -96,7 +96,7 @@ Sie können ein Material direkt nach seiner Erstellung bearbeiten. Alternativ hi
 
    ![chlimage_1-111](assets/chlimage_1-316.png)
 
-   Sie können die Texteigenschaften, z. B. Schriftstil, Farbe und Größe, mithilfe der bereitgestellten Optionen bearbeiten.
+   Sie können die Texteigenschaften, z. B. Schriftstil, -farbe und -grad, mit den vorhandenen Optionen bearbeiten.
 
 1. Auswählen **[!UICONTROL Vorschau]** sodass Sie eine Vorschau der Textänderungen anzeigen können.
 
@@ -106,7 +106,7 @@ Sie können ein Material direkt nach seiner Erstellung bearbeiten. Alternativ hi
 
    ![chlimage_1-114](assets/chlimage_1-319.png)
 
-   Sie können auch mithilfe von Keywords, Tags und basierend auf ihrem Veröffentlichungsstatus nach Bildern suchen. Sie können das [!DNL Experience Manager Assets]-Repository durchsuchen und zum Speicherort des gewünschten Bildes navigieren.
+   Sie können auch nach Bildern suchen, indem Sie Schlüsselwörter, Tags oder den Veröffentlichungsstatus angeben. Sie können das [!DNL Experience Manager Assets]-Repository durchsuchen und zum Speicherort des gewünschten Bildes navigieren.
 
    ![chlimage_1-115](assets/chlimage_1-320.png)
 
@@ -129,8 +129,8 @@ Sie können ein Material direkt nach seiner Erstellung bearbeiten. Alternativ hi
    >
    >Weitere Informationen zum Arbeiten mit [!DNL InDesign]-Dokumenten finden Sie in den [Best Practices für die Arbeit mit InDesign-Dokumenten in Experience Manager](https://helpx.adobe.com/de/experience-manager/kb/best-practices-idd-docs-aem.html).
 
-1. Um eine PDF-Ausgabedarstellung für die Broschüre zu generieren, wählen Sie die Option Acrobat im Dialogfeld aus und klicken Sie dann auf **[!UICONTROL Weiter]**.
-1. Das Material wird in dem Ordner erstellt, mit dem Sie begonnen haben. Um die Ausgabedarstellungen anzuzeigen, öffnen Sie das Material und wählen Sie **[!UICONTROL Ausgabeformate]** aus der GlobalNav-Liste.
+1. Wählen Sie zum Generieren einer PDF-Ausgabedarstellung für die Broschüre im Dialogfeld die Acrobat-Option aus und klicken Sie anschließend auf **[!UICONTROL Weiter]**.
+1. Das Material wird in dem Ordner erstellt, mit dem Sie begonnen haben. Öffnen Sie das Material und wählen Sie in der GlobalNav-Liste die Option **[!UICONTROL Ausgabedarstellungen]**, um die Ausgabedarstellungen anzuzeigen.
 
    ![chlimage_1-118](assets/chlimage_1-323.png)
 
@@ -158,10 +158,10 @@ Sie können ein Material direkt nach seiner Erstellung bearbeiten. Alternativ hi
 
    Sie können das [!DNL Experience Manager Assets]-Repository bzw. die Sammlungen durchsuchen, zum Speicherort der gewünschten Vorlagen navigieren und sie dann für die Zusammenführung auswählen.
 
-   Sie können verschiedene Filter anwenden, um die gewünschten Vorlagen zu durchsuchen. Sie können beispielsweise nach Vorlagen suchen, die auf dem Dateityp oder den Tags basieren.
+   Sie können verschiedene Filter anwenden, um nach den gewünschten Vorlagen zu suchen. Es ist beispielsweise möglich, basierend auf dem Dateityp oder auf Tags nach Vorlagen zu suchen.
 
 1. Auswählen **[!UICONTROL Nächste]** aus der Symbolleiste.
-1. Im **[!UICONTROL Vorschau &amp; Neu anordnen]** , ordnen Sie bei Bedarf die Vorlagen neu und zeigen Sie sich eine Vorschau der zusammenzuführenden Vorlagen an. Wählen Sie in der Symbolleiste **[!UICONTROL Nächste]**.
+1. Ordnen Sie die Vorlagen ggf. auf dem Bildschirm **[!UICONTROL Vorschau anzeigen und neu anordnen]** neu an und zeigen Sie eine Vorschau für die ausgewählten Vorlagen an, die zusammengeführt werden sollen. Wählen Sie in der Symbolleiste **[!UICONTROL Nächste]**.
 
    ![chlimage_1-126](assets/chlimage_1-331.png)
 

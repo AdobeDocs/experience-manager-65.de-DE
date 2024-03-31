@@ -1,6 +1,6 @@
 ---
-title: Assembler Service Java&trade; API QuickStart(SOAP)
-description: Erfahren Sie, wie Sie mit dem Assembler-Dienst Java&trade; API QuickStart (SOAP) ein PDF-Dokument zusammenführen, aufteilen und dynamisch erstellen.
+title: Java™-API-Schnellstart (SOAP) für den Assembler-Dienst
+description: Erfahren Sie, wie Sie mit der Schnellstartanleitung (SOAP) für die Assembler Service Java™-API ein PDF-Dokument zusammenführen, aufteilen und dynamisch erstellen.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,11 +11,11 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1007'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# Assembler Service Java™ API QuickStart(SOAP) {#assembler-service-java-api-quickstart-soap}
+# Java™-API-Schnellstart (SOAP) für den Assembler-Dienst {#assembler-service-java-api-quickstart-soap}
 
 Der Java-API-Schnellstart (SOAP) ist für den Assembler-Service verfügbar
 
@@ -45,7 +45,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt 
 
 >[!NOTE]
 >
->Die Lernprogramme für AEM Forms basieren auf dem Forms-Server, der auf JBoss® Application Server und dem Microsoft® Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX® verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungs-Server verwenden, müssen Sie ebenfalls sicherstellen, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+>Die Schnellstarts für die Programmierung mit AEM Forms basieren auf dem Forms Server, der auf dem JBoss® Application Server und dem Microsoft® Windows-Betriebssystem eingesetzt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX® verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungs-Server verwenden, müssen Sie ebenfalls sicherstellen, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Schnellstart (SOAP-Modus): Zusammenstellen eines PDF-Dokuments mit der Java-API {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
 
@@ -737,7 +737,7 @@ Im folgenden Java-Codebeispiel wird ein nicht interaktives PDF-Dokument zusammen
 
 ## Schnellstart (SOAP-Modus): Bestimmen, ob ein Dokument mit PDF/A kompatibel ist, mithilfe der Java-API  {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird ermittelt, ob das PDF-Eingabedokument PDF/A-kompatibel ist. Das PDF-Eingabedokument, das an den Assembler-Service übergeben wird, heißt *Loan.pdf*. Der Name des DDX-Dokuments ist shell_PDFA.xml. Das vom Assembler-Dienst zurückgegebene XML-Dokument, das angibt, ob das PDF-Eingabedokument PDF/A-kompatibel ist, wird als XML--Datei namens result.xml gespeichert. Weitere Informationen über das in diesem Code-Beispiel verwendete DDX-Dokument *shell_PDFA.xml* finden Sie unter [Bestimmen, ob Dokumente PDF/A-konform sind](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
+Im folgenden Java-Codebeispiel wird ermittelt, ob das PDF-Eingabedokument PDF/A-kompatibel ist. Das PDF-Eingabedokument, das an den Assembler-Service übergeben wird, heißt *Loan.pdf*. Der Name des DDX-Dokuments ist shell_PDFA.xml. Das XML-Dokument, das vom Assembler-Dienst zurückgegeben wird und angibt, ob das PDF-Eingabedokument PDF/A-kompatibel ist, wird als XML-Datei mit dem Namen „result.xml“ gespeichert. Weitere Informationen über das in diesem Code-Beispiel verwendete DDX-Dokument *shell_PDFA.xml* finden Sie unter [Bestimmen, ob Dokumente PDF/A-konform sind](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
 
 ```java
  /*
@@ -1184,7 +1184,7 @@ Im folgenden Java-Code-Beispiel wird ein PDF-Dokument zusammengestellt, das Lese
 
 ## Kurzanleitung (SOAP-Modus): Dynamisches Erstellen eines DDX-Dokuments mithilfe der Java-API {#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird dynamisch ein DDX-Dokument erstellt, das ein PDF-Dokument disassembliert. Für jedes Lesezeichen der Ebene 1 im eingegebenen PDF-Dokument wird ein neues PDF-Dokument erstellt. Dieses Code-Beispiel enthält zwei benutzerdefinierte Methoden:
+Im folgenden Java-Code-Beispiel wird dynamisch ein DDX-Dokument erstellt, das ein PDF-Dokument zerlegt. Für jedes Lesezeichen der Ebene 1 im eingegebenen PDF-Dokument wird ein neues PDF-Dokument erstellt. Dieses Code-Beispiel enthält zwei benutzerdefinierte Methoden:
 
 * `createDDX`: Erstellt ein `org.w3c.dom.Document`-Objekt, das das DDX-Dokument darstellt, welches an den Assembler-Service gesendet wird. Diese benutzerdefinierte Methode gibt das `org.w3c.dom.Document`-Objekt zurück.
 * `convertDDX`: Konvertiert ein `org.w3c.dom.Document`-Objekt in ein `com.adobe.idp.Document`-Objekt. Diese Methode akzeptiert ein `org.w3c.dom.Document`-Objekt als Eingabeparameter und gibt ein `com.adobe.idp.Document`-Objekt zurück.
@@ -1532,7 +1532,7 @@ Im folgenden Java-Code-Beispiel wird ein PDF-Portfolio erstellt. Das PDF-Portfol
 
 ## Kurzanleitung (SOAP-Modus): Zusammenstellen mehrerer XDP-Fragmente mithilfe der Java-API {#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api}
 
-Im folgenden Java-Code-Beispiel werden XDP-Fragmente zusammengestellt, die auf den folgenden XDP-Dateien basieren: *tuc018_template_flowed.xdp*, *tuc018_contact.xdp*, und „tuc018_patient.xdp“. Das assemblierte XDP-Dokument, das alle Fragmente enthält, wird als XDP-Datei mit dem Namen *AssemblerResultXDP.xdp*. (Siehe [Zusammenstellen mehrerer XDP-Fragmente](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments).)
+Im folgenden Java-Code-Beispiel werden XDP-Fragmente zusammengestellt, die auf den folgenden XDP-Dateien basieren: *tuc018_template_flowed.xdp*, *tuc018_contact.xdp*, und „tuc018_patient.xdp“. Das zusammengestellte XDP-Dokument, das alle Fragmente enthält, wird als XDP-Datei mit dem Namen *AssemblerResultXDP.xdp* gespeichert. (Siehe [Zusammenstellen mehrerer XDP-Fragmente](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments).)
 
 ```java
  /*
@@ -1685,11 +1685,11 @@ Im folgenden Java-Code-Beispiel werden XDP-Fragmente zusammengestellt, die auf d
 
 ## Kurzanleitung (SOAP-Modus): Redigieren eines PDF-Dokuments mithilfe der Java-API {#quick-start-soap-mode-redacting-a-pdf-document-using-the-java-api}
 
-Im folgenden Codebeispiel wird ein PDF-Dokument mithilfe der `PDFUtility`.
+Im folgenden Code-Beispiel wird ein PDF-Dokument mithilfe von `PDFUtility` redigiert.
 
 >[!NOTE]
 >
->Die `PDFUtility` kann nur PDF redigieren, die mit Acrobat zur Redigierung markiert sind.
+>`PDFUtility` kann nur PDFs redigieren, die mithilfe von Acrobat zum Redigieren markiert worden sind.
 
 ```java
 /*

@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1088'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 96%
 
 Kundinnen und Kunden von Adobe Experience Manager Forms (AEM Forms) mit einer Basislizenz für Adobe Managed Services oder On-Premise Enterprise sind berechtigt, den Service Acrobat Reader DC-Erweiterungen zu nutzen. Dieser Service ermöglicht einer Organisation das einfache Freigeben interaktiver PDF-Dokumente, indem er die Funktionalität von Acrobat Reader um zusätzliche Nutzungsrechte erweitert. Der Service fügt einem PDF-Dokument Nutzungsrechte hinzu und aktiviert Funktionen, die beim Öffnen eines PDF-Dokuments mit Adobe Acrobat Reader nicht zur Verfügung stehen, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments. Externe Benutzer benötigen keine zusätzliche Software oder Plug-Ins für das Verwenden von Dokumenten mit aktivierten Benutzerrechten. PDF-Dokumente, für die zusätzlich Nutzungsrechte gelten, werden als Dokumente mit aktivierten Nutzungsrechten bezeichnet. Benutzende, die ein berechtigungsaktiviertes PDF-Dokument in Acrobat Reader öffnen, können Vorgänge durchführen, die für dieses Dokument aktiviert sind.
 
-Adobe verwendet eine PKI (Public Key Infrastructure), um digitale Zertifikate zur Verwendung bei der Lizenzierung und Aktivierung von Funktionen auszustellen. Adobe hat Zertifikate unter der Zertifizierungsstelle **Adobe Root CA** ausgestellt, die am 7. Januar 2023 auslaufen wird. Die Gültigkeit des Zertifikats wirkt sich nicht auf PDF-Dokumente aus, die mit Produktionszertifikaten erweitert wurden, welche von den **Adobe Root CA** basierten Zertifikaten ausgestellt wurden (alte Zertifikate). Alle PDF-Dokumente, die mithilfe der alten Zertifikate vor dem 7. Januar 2023 Reader Extended wurden, einschließlich der von Kundenseite aus heruntergeladenen, funktionieren weiterhin mit allen Nutzungsrechten, die für sie gelten, und benötigen keine Updates.
+Adobe nutzt eine Infrastruktur mit öffentlichen Schlüsseln (Public Key Infrastructure, PKI), um digitale Zertifikate für die Lizenzierung und die Aktivierung von Funktionen auszustellen. Adobe hat Zertifikate unter der Zertifizierungsstelle **Adobe Root CA** ausgestellt, die am 7. Januar 2023 auslaufen wird. Die Gültigkeit des Zertifikats wirkt sich nicht auf PDF-Dokumente aus, die mit Produktionszertifikaten erweitert wurden, welche von den **Adobe Root CA** basierten Zertifikaten ausgestellt wurden (alte Zertifikate). Alle PDF-Dokumente, die mithilfe der alten Zertifikate vor dem 7. Januar 2023 Reader Extended wurden, einschließlich der von Kundenseite aus heruntergeladenen, funktionieren weiterhin mit allen Nutzungsrechten, die für sie gelten, und benötigen keine Updates.
 
 Eine neue Zertifizierungsstelle, **Adobe Root CA G2**, und Zertifikate, die auf der neuen Zertifizierungsstelle basieren, sind jetzt verfügbar. Beginnen Sie am oder vor dem 7. Januar 2023 mit der Verwendung der neuen Zertifikate, die auf **Adobe Root CA G2** basieren, um die Reader Extension auf Ihre neuen PDF-Dokumente anzuwenden.  Sie können neue Zertifikate [von der Adobe-Lizenzierungs-Website](https://licensing.adobe.com/) oder vom Adobe-Support erhalten.
 
@@ -39,7 +39,7 @@ A. Alle PDF-Dokumente, die mit Produktionszertifikaten erweitert wurden, welche 
 
 **F. Unterscheidet sich die Beschreibung neuer Zertifikate von alten Zertifikaten?**
 
-A. In der Beschreibung der neuen Acrobat Reader Extensions-Zertifikate wird **G3-P24** als Programmname genannt. In der Beschreibung älterer Zertifikate (Zertifikate auf der Grundlage von &quot;Adobe Root CA&quot;) **P24** wird als Programmname angegeben.
+A. In der Beschreibung der neuen Acrobat Reader Extensions-Zertifikate wird **G3-P24** als Programmname genannt. In der Beschreibung älterer Zertifikate (Zertifikate, die auf „Adobe Root CA“ basieren) wird **P24** als Programmname erwähnt.
 
 **F. Wie erhalte ich die neuesten Zertifikate?**
 

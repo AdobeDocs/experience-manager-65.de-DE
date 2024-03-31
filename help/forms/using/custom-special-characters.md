@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '656'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -136,7 +136,7 @@ Führen Sie die folgenden Schritte aus, um Unterstützung für benutzerdefiniert
    <td>
     <ol>
      <li>Fügen Sie einen untergeordneten Knoten unter „/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters“ mit obligatorischen Eigenschaften hinzu. </li>
-     <li>Fügen Sie die Eigenschaft "sling:orderBefore (String)"zum neu erstellten untergeordneten Knoten hinzu. </li>
+     <li>Fügen Sie die Eigenschaft „sling:orderBefore (String)“ zum neu erstellten untergeordneten Knoten hinzu. </li>
      <li>Fügen Sie den Knotennamen als den Wert hinzu, vor dem das neu hinzugefügte Sonderzeichen angezeigt werden soll. </li>
      <li>Klicken Sie auf „Alle speichern“. </li>
      <li>Aktualisieren Sie den Texteditor bzw. die Benutzeroberfläche „Korrespondenz erstellen“, um die Änderungen anzuzeigen.<br /> </li>

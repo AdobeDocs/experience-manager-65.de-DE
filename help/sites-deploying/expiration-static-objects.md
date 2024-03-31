@@ -1,6 +1,6 @@
 ---
 title: Ablauf statischer Objekte
-description: Erfahren Sie, wie Sie Adobe Experience Manager so konfigurieren, dass statische Objekte (für einen angemessenen Zeitraum) nicht ablaufen.
+description: Erfahren Sie, wie Sie Adobe Experience Manager so konfigurieren können, dass statische Objekte (über einen angemessenen Zeitraum) nicht ablaufen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 30%
+ht-degree: 100%
 
 ---
 
@@ -19,24 +19,24 @@ ht-degree: 30%
 
 Statische Objekte (z. B. Symbole) ändern sich nicht. Daher sollte das System so konfiguriert werden, dass diese Objekte (über einen angemessenen Zeitraum) nicht ablaufen, damit unnötiger Traffic reduziert wird.
 
-Dies hat folgende Auswirkungen:
+Dies wirkt sich wie folgt aus:
 
-* Lädt Anforderungen aus der Serverinfrastruktur ab.
-* Erhöht die Leistung beim Laden von Seiten, da der Browser Objekte im Browser-Cache zwischenspeichert.
+* Anforderungen werden von der Server-Infrastruktur abgeladen.
+* Die Leistung beim Laden von Seiten wird erhöht, da der Browser Objekte im Browsercache zwischenspeichert.
 
-Die Ablaufdaten werden durch den HTTP-Standard in Bezug auf den &quot;Ablauf&quot;von Dateien angegeben (siehe beispielsweise Kapitel 14.21 von [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Hypertext Transfer Protocol - HTTP 1.1&quot;). Dieser Standard greift auf den Header zurück, um Clients das Speichern von Objekten im Cache zu erlauben, bis die Objekte als alt eingestuft werden; diese Objekte werden für den angegebenen Zeitraum im Cache gespeichert, ohne dass der Ursprungsserver einer Statusprüfung unterzogen wird.
+Abläufe sind im HTTP-Standard in Bezug auf den „Ablauf“ von Dateien spezifiziert (siehe etwa Kapitel 14.21 des Dokuments [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt), „Hypertext Transfer Protocol – HTTP 1.1“). Dieser Standard greift auf den Header zurück, um Clients das Speichern von Objekten im Cache zu erlauben, bis die Objekte als alt eingestuft werden; diese Objekte werden für den angegebenen Zeitraum im Cache gespeichert, ohne dass der Ursprungs-Server einer Statusprüfung unterzogen wird.
 
 >[!NOTE]
 >
->Diese Konfiguration unterscheidet sich vom Dispatcher (und funktioniert nicht für diesen).
+>Diese Konfiguration ist losgelöst vom Dispatcher (und kann nicht für diesen verwendet werden).
 >
->Der Dispatcher dient dazu, Daten vor Adobe Experience Manager (AEM) zwischenzuspeichern.
+>Der Dispatcher dient dem Caching der Daten vor Adobe Experience Manager (AEM).
 
-Alle Dateien, die nicht dynamisch sind und sich im Laufe der Zeit nicht ändern, können und sollten zwischengespeichert werden. Die Konfiguration für den Apache HTTPD-Server könnte abhängig von der Umgebung wie eine der folgenden aussehen:
+Alle Dateien, die nicht dynamisch sind und im Laufe der Zeit nicht geändert werden, können und sollten im Cache gespeichert werden. Die Konfiguration für den Apache-HTTPD-Server kann je nach Umgebung wie eine der folgenden aussehen:
 
 >[!CAUTION]
 >
->Seien Sie vorsichtig, wenn Sie den Zeitraum definieren, in dem ein Objekt als aktuell betrachtet wird. Da gibt es *keine Überprüfung bis zum Ablauf des angegebenen Zeitraums*, kann der Client schließlich alte Inhalte aus dem Cache präsentieren.
+>Seien Sie vorsichtig, wenn Sie den Zeitraum definieren, in dem ein Objekt als aktuell gilt. Da *keine Prüfung bis zum Ablauf des angegebenen Zeitraums erfolgt*, ist es möglich, dass der Client alte Inhalte aus dem Cache präsentiert.
 
 1. **Für eine Autoreninstanz:**
 
@@ -50,9 +50,9 @@ Alle Dateien, die nicht dynamisch sind und sich im Laufe der Zeit nicht ändern,
    </Location>
    ```
 
-   Dadurch kann der Zwischenspeicher (z. B. der Browsercache) CSS-, JavaScript-, PNG- und GIF-Dateien bis zu einem Monat speichern, bis sie ablaufen. Dies bedeutet, dass sie nicht von AEM oder dem Webserver angefordert werden müssen, sondern im Browsercache verbleiben können.
+   Hierdurch wird ermöglicht, dass der temporäre Cache (etwa der Browsercache) CSS-, JavaScript-, PNG- und GIF-Dateien maximal einen Monat lang, bis zu ihrem Ablauf, speichert. Sie müssen also nicht von AEM oder vom Webserver angefordert werden, sondern können im Browsercache verbleiben.
 
-   Andere Bereiche der Site sollten nicht in einer Autoreninstanz zwischengespeichert werden, da sie jederzeit geändert werden können.
+   Andere Abschnitte der Site sollten nicht in einer Autoreninstanz im Cache gespeichert werden, da sich diese jederzeit ändern können.
 
 1. **Für eine Veröffentlichungsinstanz:**
 
@@ -72,9 +72,9 @@ Alle Dateien, die nicht dynamisch sind und sich im Laufe der Zeit nicht ändern,
    </Location>
    ```
 
-   Dadurch kann der Zwischenspeicher (z. B. der Browsercache) CSS-, JavaScript-, PNG- und GIF-Dateien für bis zu einen Tag in Client-Caches speichern. Obwohl dieses Beispiel globale Einstellungen für alle Elemente unter `/content` und `/etc/designs` veranschaulicht, sollten Sie hier genauer vorgehen.
+   Hierdurch wird ermöglicht, dass der temporäre Cache (etwa der Browsercache) CSS-, JavaScript-, PNG- und GIF-Dateien bis zu einem Tag lang in Client-Caches speichert. Obwohl dieses Beispiel globale Einstellungen für alle Elemente unter `/content` und `/etc/designs` veranschaulicht, sollten Sie hier genauer vorgehen.
 
-   Je nachdem, wie oft Ihre Site aktualisiert wird, können Sie auch das Zwischenspeichern von HTML-Seiten in Erwägung ziehen. Ein angemessener Zeitraum wäre eine Stunde:
+   Abhängig vom Aktualisierungsintervall der Site käme für Sie ggf. auch das Caching von HTML-Seiten infrage. Ein angemessener Zeitraum wäre etwa 1 Stunde:
 
    ```xml
    <Location /content>

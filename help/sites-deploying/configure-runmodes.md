@@ -11,13 +11,13 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '746'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Ausführungsmodi{#run-modes}
 
-Mit Ausführungsmodi können Sie Ihre AEM für einen bestimmten Zweck anpassen, z. B. für Autoren- oder Veröffentlichungsinstanz, Test, Entwicklung, Intranet oder andere.
+Mit Ausführungsmodi können Sie Ihre AEM-Instanz auf einen bestimmten Zweck ausrichten, z. B. Author oder Publish, Test, Entwicklung, Intranet usw.
 
 Sie haben folgende Möglichkeiten:
 
@@ -72,9 +72,9 @@ Benutzerdefinierte Ausführungsmodi können auch bei jedem Start ausgewählt wer
 
 Mit diesen Modi können Sie die Verwendung von Beispielinhalten steuern. Der Beispielinhalt wird vor der Erstellung des Schnellstarts definiert und kann Pakete, Konfigurationen usw. umfassen:
 
-* Die `samplecontent` Ausführungsmodus installiert diesen Inhalt (Standardmodus).
+* Mit dem Ausführungsmodus `samplecontent` wird dieser Inhalt installiert (Standardmodus). 
 
-* Die `nosamplecontent` installiert den Beispielinhalt nicht.
+* Mit dem Modus `nosamplecontent` wird der Beispielinhalt nicht installiert.
 
 Der Ausführungsmodus nosamplecontent wurde für Produktionsinstallationen entwickelt.
 
@@ -150,7 +150,7 @@ java -jar cq-56-p4545.jar -r dev
 
 Mit einer Systemeigenschaft im Startskript kann der Ausführungsmodus spezifiziert werden.
 
-* Verwenden Sie beispielsweise Folgendes, um eine Instanz in den USA als Produktionsveröffentlichungsinstanz zu starten:
+* Beispielsweise können Sie Folgendes verwenden, um eine Instanz als Produktionsveröffentlichungsinstanz zu starten, die sich in den USA befindet:
 
   `-Dsling.run.modes=publish,prod,us`
 

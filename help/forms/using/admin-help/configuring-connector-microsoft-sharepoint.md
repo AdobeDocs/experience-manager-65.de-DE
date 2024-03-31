@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren des Connectors für Microsoft SharePoint
-description: Konfigurieren Sie Connector für Microsoft SharePoint, um die Kommunikation zwischen AEM Formularen und Microsoft SharePoint zu aktivieren.
+description: Konfigurieren Sie Connector für Microsoft SharePoint, um die Kommunikation zwischen AEM Forms und Microsoft SharePoint zu ermöglichen.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
@@ -10,15 +10,15 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 # Connector für Microsoft SharePoint konfigurieren {#configuring-connector-for-microsoft-sharepoint}
 
-Connector für Microsoft SharePoint ermöglicht die Kommunikation zwischen AEM Formularen und Microsoft SharePoint. Weitere Hintergrundinformationen finden Sie unter „Connectors for ECM“ in der [Dienstreferenz](https://www.adobe.com/go/learn_aemforms_services_63).
+Connector für Microsoft SharePoint ermöglicht die Kommunikation zwischen AEM Forms und Microsoft SharePoint. Weitere Hintergrundinformationen finden Sie unter „Connector-Dienste für ECM“ in der [Dienstreferenz](https://www.adobe.com/go/learn_aemforms_services_63).
 
-1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;Connector für Microsoft SharePoint&quot;.
+1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Connector für Microsoft SharePoint“.
 1. Geben Sie die folgenden Einstellungen für Ihren SharePoint-Server an:
 
    **Hostname des SharePoint-Servers:** Die Hostnamen-Anschlussnummer der Webanwendung auf dem SharePoint-Server im Format `[hostname]:'port'`.
@@ -37,9 +37,9 @@ Mit dem Microsoft SharePoint-Konfigurations-Service (`(MSSharePointConfigService
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
 1. Durchlaufen Sie die Liste der Dienste und klicken Sie auf `MSSharePointConfigService`.
-1. Geben Sie auf der Seite &quot;Konfiguration&quot;die folgenden Einstellungen an:
+1. Geben Sie auf der Seite „Konfiguration“ die folgenden Einstellungen an:
 
-   * Benutzername für einen Benutzer mit Berechtigungen zum Identitätswechsel
-   * Kennwort für den obigen Benutzer
+   * Benutzername für Benutzer mit Berechtigungen zum Identitätswechsel
+   * Kennwort für oben genannten Benutzer
 
 1. Klicken Sie auf Speichern.

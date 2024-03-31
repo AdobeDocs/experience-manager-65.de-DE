@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '517'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -32,8 +32,8 @@ Die Suchfunktion ist über die obere Symbolleiste verfügbar:
 Die Suchleiste bietet Ihnen folgende Möglichkeiten:
 
 * Suchen Sie nach einem bestimmten Keyword, Pfad oder Tag.
-* Filtern Sie nach ressourcenspezifischen Kriterien, wie Änderungsdatumsangaben, Seitenstatus und Dateigröße.
-* Definieren und Verwenden eines [gespeicherte Suche](#saved-searches) - auf der Grundlage der oben genannten Kriterien.
+* Filtern Sie nach ressourcenspezifischen Kriterien, wie geänderte Daten, Seitenstatus und Dateigröße.
+* Definieren und verwenden Sie eine [gespeicherte Suche](#saved-searches), die auf den oben genannten Kriterien basiert.
 
 >[!NOTE]
 >
@@ -47,14 +47,14 @@ So durchsuchen und filtern Sie Ressourcen:
 
    ![s-01](assets/s-01.png)
 
-   Standardmäßig sind die Suchergebnisse auf Ihre aktuelle Position beschränkt (d. h. Konsole und Ressourcentyp):
+   Standardmäßig sind die Suchergebnisse auf Ihren aktuellen Ort begrenzt (d. h. Konsolen- und zugehöriger Ressourcentyp):
 
    ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
 
 1. Bei Bedarf können Sie den Positionsfilter entfernen (wählen Sie für den zu entfernenden Filter das **X** aus), um alle Konsolen-/Ressourcentypen zu durchsuchen.
 1. Die Ergebnisse werden gemäß der Konsole und dem zugehörigen Ressourcentyp gruppiert angezeigt.
 
-   Sie können entweder eine spezifische Ressource (für eine spätere Aktion) oder eine Drilldown-Suche auswählen, indem Sie den erforderlichen Ressourcentyp auswählen, z. B. **Alle Sites anzeigen**:
+   Sie können entweder eine spezifische Ressource (für eine spätere Aktion) auswählen oder einen Drilldown durchführen, indem Sie den erforderlichen Ressourcentyp auswählen, z. B. **Alle Sites anzeigen**: 
 
    ![screen-shot_2019-03-05at101900](assets/screen-shot_2019-03-05at101900.png)
 

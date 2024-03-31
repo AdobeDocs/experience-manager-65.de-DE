@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1854'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Das Hinzufügen einer Schaltfläche mit einer Aktion (hier: „Brief zur Überpr
 ### Hinzufügen der Schaltfläche „Korrespondenz erstellen“ zur Benutzeroberfläche  {#add-the-button-to-the-create-correspondence-user-interface}
 
 1. Wechseln Sie zu `https://'[server]:[port]'/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
-1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen `defaultApp` mit einem ähnlichen Pfad/einer ähnlichen Struktur zum Ordner defaultApp (im Konfigurationsordner). Mit den folgenden Schritten können Sie den Ordner erstellen:
+1. Erstellen Sie im Apps-Ordner einen Ordner mit dem Namen `defaultApp` und einem ähnlichen Pfad/einer ähnlichen Struktur wie der defaultApp-Ordner (im config-Ordner). Mit den folgenden Schritten können Sie den Ordner erstellen:
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner **defaultApp** unter dem folgenden Pfad und wählen Sie **Überlagerungsknoten**:
 

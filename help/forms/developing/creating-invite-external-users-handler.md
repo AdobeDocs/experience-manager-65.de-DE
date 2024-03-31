@@ -1,13 +1,13 @@
 ---
-title: Erstellen eines Handlers zum Einladen externer Benutzer
-description: Erfahren Sie, wie Sie einen Handler für eingeladene externe Benutzer erstellen. Dadurch kann der Rights Management-Dienst externe Benutzer einladen, Rights Management-Benutzer zu werden.
+title: Erstellen eines Handlers zum Einladen externer Benutzender
+description: Erfahren Sie, wie Sie einen Handler zum Einladen von externen Benutzenden erstellen. Damit ist der Rights Management-Service in der Lage, externe Benutzende einzuladen, damit diese zu Rights Management-Benutzenden werden.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -33,11 +33,11 @@ Um einen Handler zum Einladen externer Benutzer einzurichten, müssen Sie die fo
 
 ## Einrichten der Entwicklungsumgebung {#setting-up-development-environment}
 
-Um Ihre Entwicklungsumgebung einzurichten, müssen Sie ein Java-Projekt erstellen, z. B. ein Eclipse-Projekt. Es wird die Eclipse-Version `3.2.1` oder höher unterstützt.
+Um Ihre Entwicklungsumgebung einzurichten, müssen Sie ein Java-Projekt erstellen, z. B. ein Eclipse-Projekt. Es wird die Eclipse-Version `3.2.1` oder höher unterstützt.
 
-Die Rights Management-SPI erfordert die `edc-server-spi.jar` -Datei, die im Klassenpfad Ihres Projekts festgelegt werden soll. Wenn Sie diese JAR-Datei nicht angeben, können Sie die Rights Management-SPI nicht in Ihrem Java-Projekt verwenden. Diese JAR-Datei wird zusammen mit dem AEM Forms-SDK im Ordner `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` installiert.
+Die Rights Management-SPI erfordert es, dass die Datei `edc-server-spi.jar` im Klassenpfad Ihres Projekts deklariert wird. Wenn Sie diese JAR-Datei nicht angeben, können Sie die Rights Management-SPI nicht in Ihrem Java-Projekt verwenden. Diese JAR-Datei wird zusammen mit dem AEM Forms-SDK im Ordner `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` installiert.
 
-Zusätzlich zum Hinzufügen der `edc-server-spi.jar` zum Klassenpfad Ihres Projekts hinzufügen, müssen Sie auch die JAR-Dateien hinzufügen, die zur Verwendung der Rights Management Service-API erforderlich sind. Diese Dateien sind erforderlich, um die Rights Management Service-API im Handler zum Einladen externer Benutzer verwenden zu können.
+Zusätzlich zur Datei `edc-server-spi.jar` müssen Sie auch die JAR-Dateien zum Klassenpfad Ihres Projekts hinzufügen, die zur Verwendung der Rights Management Service-API erforderlich sind. Diese Dateien sind erforderlich, um die Rights Management Service-API im Handler zum Einladen externer Benutzer verwenden zu können.
 
 ## Definieren der Implementierung des Handlers zum Einladen externer Benutzer {#define-invite-external-users-handler}
 
@@ -51,7 +51,7 @@ Die `invitedUser`-Methode akzeptiert eine `java.util.List`-Instanz, die E-Mail-A
 
 Die Implementierung des Handlers zum Einladen externer Benutzer enthält eine benutzerdefinierte Methode namens `createLocalPrincipalAccount`. Diese Methode akzeptiert einen Zeichenfolgenwert, in dem eine E-Mail-Adresse als Parameter enthalten ist. Die `createLocalPrincipalAccount`-Methode setzt voraus, dass eine lokale Domain namens `EDC_EXTERNAL_REGISTERED` vorhanden ist. Sie können diesen Domain-Namen nach Belieben konfigurieren. Bei einem Produktionsprogramm sollten Sie diesen jedoch in eine Unternehmens-Domain integrieren.
 
-Die `createUsers`-Methode durchläuft die einzelnen E-Mail-Adressen und erstellt jeweils ein entsprechendes Benutzerobjekt (einen lokalen Benutzer in der Domain `EDC_EXTERNAL_REGISTERED`). Schließlich wird die `doEmails`-Methode aufgerufen. Diese Methode wird absichtlich als Stub in der Probe hinterlassen. In einer Produktionsimplementierung würde dies die Anwendungslogik zum Senden von Einladungs-E-Mail-Nachrichten an die neu erstellten Benutzer enthalten. Der logische Ablauf eines echten Programms wird im Beispiel demonstriert werden.
+Die `createUsers`-Methode durchläuft die einzelnen E-Mail-Adressen und erstellt jeweils ein entsprechendes Benutzerobjekt (einen lokalen Benutzer in der Domain `EDC_EXTERNAL_REGISTERED`). Schließlich wird die `doEmails`-Methode aufgerufen. Diese Methode wird absichtlich als Stub in der Probe hinterlassen. In einer Produktionsimplementierung würde sie die Programmlogik zum Senden von Einladungs-E-Mail-Nachrichten an die neu erstellten Benutzenden enthalten. Der logische Ablauf eines echten Programms wird im Beispiel demonstriert werden.
 
 ### Definieren der Implementierung des Handlers zum Einladen externer Benutzer {#user-handler-implementation}
 
@@ -171,7 +171,7 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 
 ## Definieren der XML-Komponentendatei für den Autorisierungs-Handler {#define-component-xml-authorization-handler}
 
-Definieren Sie eine Komponenten-XML-Datei, um die Komponente für eingeladene externe Benutzer-Handler bereitzustellen. Für jede Komponente ist eine XML-Komponentendatei vorhanden, die Metadaten zur Komponente bereitstellt.
+Definieren Sie eine XML-Komponentendatei, um die Handler-Komponente zum Einladen von externen Benutzenden bereitzustellen. Für jede Komponente ist eine XML-Komponentendatei vorhanden, die Metadaten zur Komponente bereitstellt.
 
 Die folgende `component.xml`-Datei wird für den Handler zum Einladen externer Benutzer verwendet. Beachten Sie, dass der Service-Name `InviteExternalUsersSample` lautet und der Vorgang, den dieser Service bereitstellt, heißt `invitedUser`. Der Eingabeparameter ist eine `java.util.List`-Instanz und der Ausgabewert ist ein Array von `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult`-Instanzen.
 
@@ -204,19 +204,19 @@ Die folgende `component.xml`-Datei wird für den Handler zum Einladen externer B
 
 ## Verpacken des Handlers zum Einladen externer Benutzer {#packaging-invite-external-users-handler}
 
-Um den Handler zum Einladen externer Benutzer in AEM Forms bereitzustellen, müssen Sie Ihr Java-Projekt in eine JAR-Datei packen. Stellen Sie sicher, dass die externen JAR-Dateien, von denen die Geschäftslogik des Handlers für eingeladene externe Benutzer abhängt, wie z. B. die `edc-server-spi.jar` und `adobe-rightsmanagement-client.jar` -Dateien sind auch in der JAR-Datei enthalten. Außerdem muss die XML-Komponentendatei vorhanden sein. Die Datei `component.xml` und die externen JAR-Dateien müssen sich im Stammverzeichnis der JAR-Datei befinden.
+Um den Handler zum Einladen externer Benutzer in AEM Forms bereitzustellen, müssen Sie Ihr Java-Projekt in eine JAR-Datei packen. Stellen Sie sicher, dass die externen JAR-Dateien, von denen die Geschäftslogik des Handlers zum Einladen von externen Benutzenden abhängt, wie z. B. die Dateien `edc-server-spi.jar` und `adobe-rightsmanagement-client.jar`, auch in der JAR-Datei enthalten sind. Außerdem muss die XML-Komponentendatei vorhanden sein. Die Datei `component.xml` und die externen JAR-Dateien müssen sich im Stammverzeichnis der JAR-Datei befinden.
 
 >[!NOTE]
 >
 >In der unten stehenden Abbildung wird eine `BootstrapImpl`-Klasse dargestellt. In diesem Abschnitt wird nicht beschrieben, wie Sie eine `BootstrapImpl`-Klasse erstellen.
 
-Die folgende Abbildung zeigt den Inhalt des Java-Projekts, der in die JAR-Datei des Handlers für eingeladene externe Benutzer gepackt ist.
+Die folgende Abbildung zeigt den Inhalt des Java-Projekts, der in die JAR-Datei des Handlers zum Einladen von externen Benutzenden gepackt wird.
 
 ![Benutzer einladen](assets/ci_ci_InviteUsers.png)
 
 A. Externe JAR-Dateien, die für die Komponente erforderlich sind B. JAVA-Datei
 
-Verpacken Sie den Handler für das Einladen externer Benutzer in eine JAR-Datei. Beachten Sie, dass im vorherigen Diagramm JAVA-Dateien aufgelistet sind. Nachdem die Dateien in eine JAR-Datei gepackt wurden, müssen auch die zugehörigen CLASS-Dateien angegeben werden. Ohne die CLASS-Dateien funktioniert der Autorisierungs-Handler nicht.
+Packen Sie den Handler zum Einladen von externen Benutzenden in eine JAR-Datei. Beachten Sie, dass im vorherigen Diagramm JAVA-Dateien aufgelistet sind. Nachdem die Dateien in eine JAR-Datei gepackt wurden, müssen auch die zugehörigen CLASS-Dateien angegeben werden. Ohne die CLASS-Dateien funktioniert der Autorisierungs-Handler nicht.
 
 >[!NOTE]
 >
@@ -232,12 +232,12 @@ Um den Handler zum Einladen externer Benutzer zu testen, können Sie externe Ben
 
 So fügen Sie externe Benutzer hinzu, die über Administration Console eingeladen werden sollen:
 
-1. Stellen Sie die JAR-Datei des Handlers für eingeladene externe Benutzer mithilfe von Workbench bereit.
+1. Stellen Sie die JAR-Datei des Handlers zum Einladen von externen Benutzenden mithilfe von Workbench bereit.
 1. Starten Sie den Anwendungs-Server neu.
 
    >[!NOTE]
    >
-   > Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mithilfe alternativer Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+   > Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 1. Melden Sie sich bei Administration Console an.
 1. Klicken Sie auf **[!UICONTROL Services]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Registrierung für eingeladene Benutzer]**.

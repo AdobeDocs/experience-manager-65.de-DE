@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ Sie können Seiten in der Websites-Konsole aktivieren. Nachdem Sie eine Seite ge
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
-1. AEM WCM aktiviert den ausgewählten Inhalt. Die veröffentlichten Seiten werden im [Websites-Konsole](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (grün markiert) mit Informationen darüber, wer den Inhalt aktiviert hat, sowie Datum und Uhrzeit der Aktivierung.
+1. AEM WCM aktiviert den ausgewählten Inhalt. Die veröffentlichten Seiten werden in der [Websites-Konsole](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) angezeigt (grün markiert), zusammen mit Informationen darüber, wer den Inhalt aktiviert hat, sowie Datum und Uhrzeit der Aktivierung.
 
    ![screen_shot_2012-02-08at14335pm](assets/screen_shot_2012-02-08at14335pm.png)
 
@@ -151,7 +151,7 @@ Von der Registerkarte **Websites** aus können Sie die einzelnen Seiten aktivier
 
    ![screen_shot_2012-02-08at125033pm](assets/screen_shot_2012-02-08at125033pm.png)
 
-1. Im **Replikation** Console, klicken Sie auf **Baum aktivieren**.
+1. Klicken Sie in der Konsole **Replikation** auf **Tree aktivieren**.
 
    Das folgende Fenster (`https://localhost:4502/etc/replication/treeactivation.html`) wird angezeigt.
 

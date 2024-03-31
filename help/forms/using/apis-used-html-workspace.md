@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1059'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -386,7 +386,7 @@ Die folgenden APIs werden in AEM Forms Workspace verwendet.
    <td>Lädt eine Notiz für eine Aufgabe auf den Server hoch.</td>
   </tr>
   <tr>
-   <td>uploadRMAToServer (es wird auch direkt von der HTML-Vorlage aufgerufen)<br /> </td>
+   <td>uploadRMAToServer (wird auch direkt von der HTML-Vorlage aufgerufen)<br /> </td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>uploadAttachment</td>
    <td>Lädt einen Anhang für eine Aufgabe auf den Server hoch.</td>

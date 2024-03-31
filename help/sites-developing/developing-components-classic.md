@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2340'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -197,7 +197,7 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
    * Verwenden von CRXDE Lite zum Hinzufügen des Werts `<path-to-component>` (Beispiel: `/apps/geometrixx/components/myComponent`) zu den Eigenschaftenkomponenten des Knotens `/etc/designs/geometrixx/jcr:content/contentpage/par`
    * Beachten der Anweisungen in [Hinzufügen neuer Komponenten zu Absatzsystemen](#adding-a-new-component-to-the-paragraph-system-design-mode)
 
-1. Öffnen Sie in AEM WCM eine Seite auf Ihrer Website und fügen Sie einen Absatz des von Ihnen erstellten Typs ein, um sicherzustellen, dass die Komponente ordnungsgemäß funktioniert.
+1. Öffnen Sie in AEM WCM eine Seite auf Ihrer Website und fügen Sie einen Absatz vom erstellten Typ ein, um sicherzustellen, dass die Komponente ordnungsgemäß funktioniert.
 
 >[!NOTE]
 >
@@ -207,7 +207,7 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
 
 Nachdem die Komponente entwickelt wurde, fügen Sie sie zum Absatzsystem hinzu, wodurch Autorinnen und Autoren die Komponente auswählen und beim Bearbeiten einer Seite verwenden können.
 
-1. Greifen Sie auf eine Seite in Ihrer Authoring-Umgebung zu, die beispielsweise das Absatzsystem verwendet `<contentPath>/Test.html`.
+1. Rufen Sie eine Seite in Ihrer Authoring-Umgebung auf, die das Absatzsystem verwendet, z. B. `<contentPath>/Test.html`.
 1. Wechseln Sie auf eine der folgenden Arten zum Design-Modus:
 
    * Hinzufügen von `?wcmmode=design` zum Ende der URL und erneuter Zugriff, z. B.:

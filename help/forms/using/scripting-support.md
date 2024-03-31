@@ -1,6 +1,6 @@
 ---
 title: Skriptunterstützung für HTML5-Formulare
-description: JavaScript, FormCalc-Eigenschaften und andere Methoden, die in HTML5 Forms unterstützt werden.
+description: JavaScript, FormCalc-Eigenschaften und andere Methoden, die in HTML5-Formularen unterstützt werden.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,13 +11,13 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3916'
-ht-degree: 21%
+ht-degree: 100%
 
 ---
 
 # Skriptunterstützung für HTML5-Formulare {#scripting-support-for-html-forms}
 
-Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-Formularen unterstützt:
+Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Formularen unterstützt:
 
 ## $event {#event}
 
@@ -30,16 +30,16 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td><code>prevText</code></td>
-   <td>Gibt den Inhalt des Felds an, bevor er sich aufgrund der Aktionen eines Benutzers ändert. Dieser Wert kann ähnlich wie bei einer Funktion zum Rückgängigmachen zurückgerufen werden.</td>
-   <td><p>Funktioniert nicht bei Dropdown-Listen und Listenfeldern. <code>PrevText </code>funktioniert in folgenden Fällen nicht:</p>
+   <td>Gibt den Inhalt des Felds vor einer Änderung aufgrund von Benutzeraktionen an. Dieser Wert kann ähnlich wie bei einer Rückgängig-Funktion erneut aufgerufen werden.</td>
+   <td><p>Er funktioniert nicht mit Dropdown-Menüs und Listenfeldern. <code>PrevText </code>funktioniert in folgenden Fällen nicht:</p>
     <ul>
-     <li>Beim Eingeben bestimmter Sonderzeichen (z. B. $ oder , &amp; oder @ und viele andere) in numerischen Feldern in der iPad und </li>
-     <li>Für das Datumsfeld (wenn das Datum über den Kalender eingegeben wird).<br /> </li>
+     <li>Beim Eingeben von bestimmten Sonderzeichen (z. B. $ oder , oder &amp; oder @) in ein numerisches Feld auf einem iPad und </li>
+     <li>Im Datumsfeld (wenn das Datum über den Kalender eingetragen wird).<br /> </li>
     </ul> <p>Das Festlegen eines Werts mithilfe eines Skripts wird nicht unterstützt.</p> </td>
   </tr>
   <tr>
    <td><code>target</code></td>
-   <td>Gibt das Objekt an, auf das das Ereignis reagiert.</td>
+   <td>Gibt das Objekt an, für das das Ereignis ausgeführt wird.</td>
    <td>Das Festlegen eines Werts mithilfe eines Skripts wird nicht unterstützt.<br /> </td>
   </tr>
   <tr>
@@ -47,10 +47,10 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
    <td>Gibt den Inhalt des Feldes nach einer Änderung aufgrund von Benutzeraktionen an.</td>
    <td><p>Die Eigenschaft <code>newText</code> funktioniert in folgenden Fällen nicht ordnungsgemäß:</p>
     <ul>
-     <li>Beim Auswählen und Ersetzen von Texten</li>
-     <li>Beim Löschen, Kopieren und Einfügen von Texten.</li>
-     <li>Beim Eingeben von bestimmten Sonderzeichen (z. B. $ oder , &amp; oder @ und viele andere) in numerischen Feldern<br /> </li>
-     <li>Bei Verwendung der Kombination Umschalt+Alphanumerisch. </li>
+     <li>Beim Markieren und Ersetzen von Texten</li>
+     <li>Beim Löschen, Kopieren und Einfügen von Texten</li>
+     <li>Beim Eingeben von bestimmten Sonderzeichen (z. B. $ oder , oder &amp; oder @) in numerische Felder<br /> </li>
+     <li>Beim Verwenden der Kombination Umschalttaste+alphanumerisches Zeichen. </li>
      <li>Beim Verwenden von Datums- und Uhrzeitfeldern</li>
     </ul>
     <div>
@@ -59,24 +59,24 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>ändern</td>
-   <td>Gibt den Wert an, den ein Benutzer unmittelbar nach Ausführung der Aktion in ein Feld eingibt oder einfügt. </td>
+   <td>Gibt den Wert an, den Sie unmittelbar nach der Durchführung der Aktion in ein Feld eingeben oder einfügen. </td>
    <td><p>Die Eigenschaft „Ändern“ funktioniert in folgenden Fällen nicht ordnungsgemäß:</p>
     <ul>
-     <li>Beim Auswählen und Ersetzen von Texten</li>
-     <li>Beim Löschen, Kopieren und Einfügen von Texten.</li>
-     <li>Beim Eingeben von bestimmten Sonderzeichen (z. B. $ oder , &amp; oder @ und viele andere) in numerischen Feldern<br /> </li>
-     <li>Bei Verwendung der Kombination Umschalt+Alphanumerisch. </li>
+     <li>Beim Markieren und Ersetzen von Texten</li>
+     <li>Beim Löschen, Kopieren und Einfügen von Texten</li>
+     <li>Beim Eingeben von bestimmten Sonderzeichen (z. B. $ oder , oder &amp; oder @) in numerische Felder<br /> </li>
+     <li>Beim Verwenden der Kombination Umschalttaste+alphanumerisches Zeichen. </li>
      <li>Beim Verwenden von Datums- und Uhrzeitfeldern</li>
     </ul> <p>Das Festlegen eines Werts mithilfe eines Skripts wird nicht unterstützt.</p> </td>
   </tr>
   <tr>
-   <td>Keydown</td>
-   <td>Bestimmt, ob ein Benutzer eine Auswahl durch Drücken einer Pfeiltaste trifft. Diese Eigenschaft ist nur für Listenfelder und Dropdownlisten verfügbar.</td>
+   <td>keyDown</td>
+   <td>Stellt fest, ob Benutzende die Auswahl durch Drücken einer Pfeiltaste treffen. Diese Eigenschaft ist nur für Listenfelder und Dropdown-Listen verfügbar.</td>
    <td>Ohne</td>
   </tr>
   <tr>
    <td>modifier</td>
-   <td>Bestimmt, ob die Modifikatortaste (z. B. Strg unter Microsoft® Windows®) gedrückt wird, wenn ein bestimmtes Ereignis ausgeführt wird.</td>
+   <td>Legt fest, ob bei Ausführung eines bestimmten Ereignisses die Modifizierungstaste (beispielsweise Strg unter Microsoft® Windows®) gedrückt wird.</td>
    <td>Ohne</td>
   </tr>
  </tbody>
@@ -93,7 +93,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td><code>apptype</code></td>
-   <td>Gibt den Anwendungstyp des Hosts zurück. Nur für Clientanwendungen verfügbar.</td>
+   <td>Gibt den Anwendungstyp des Hosts zurück. Nur für Client-Anwendungen verfügbar.</td>
    <td>Rückgabe <code>HTML 5</code>.</td>
   </tr>
   <tr>
@@ -104,31 +104,31 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   <tr>
    <td><code>numPages</code></td>
    <td>Gibt die Anzahl der Seiten im Dokument zurück.</td>
-   <td>Die Paginierungspolitik von HTML5-Formularen ist nicht mit der Paginierungsrichtlinie für PDF forms identisch. Die numPages-API kann daher in beiden Fällen unterschiedliche Werte zurückgeben.</td>
+   <td>Die Paginierungsrichtlinie in HTML5-Formularen unterscheidet sich von der entsprechenden Richtlinie in PDF-Formularen. Die numPages-API gibt daher in den beiden Fällen eventuell unterschiedliche Werte zurück.</td>
   </tr>
   <tr>
    <td><code>platform</code></td>
-   <td>Gibt eine Zeichenfolge zurück, die die Plattform des Computers darstellt, auf dem das Skript ausgeführt wird.</td>
+   <td>Gibt eine Zeichenfolge zurück, die für die Plattform des Computers steht, auf dem das Skript ausgeführt wird.</td>
    <td>Ohne</td>
   </tr>
   <tr>
    <td><code>title</code></td>
-   <td>Gibt den Titel des Dokuments an. Sie ist nur für Clientanwendungen verfügbar.</td>
-   <td>Es wird der Titel des HTML-Dokuments im Formular und nicht der Metadatentitel des Formulars zurückgegeben, als gäbe es PDF forms.</td>
+   <td>Gibt den Titel des Dokuments an. Nur für Client-Anwendungen verfügbar.</td>
+   <td>Gibt nicht wie im Fall von PDF-Formularen den Metadatentitel des Formulars, sondern den Titel des HTML-Dokuments im Formular zurück.</td>
   </tr>
   <tr>
    <td><code>version</code></td>
    <td>Gibt eine Zeichenfolge zurück, die die Versionsnummer der aktuellen Anwendung darstellt.</td>
-   <td>Es wird die Version des Formulars zurückgegeben.</td>
+   <td>Gibt die Version des Formulars zurück.</td>
   </tr>
   <tr>
    <td><code>calculationsEnabled</code></td>
-   <td>Gibt an, ob Berechnungsskripten ausgeführt werden.<br /> </td>
+   <td>Gibt an, ob Berechnungsskripte ausgeführt werden.<br /> </td>
    <td>Ohne</td>
   </tr>
   <tr>
    <td><code>validationsEnabled</code></td>
-   <td>Gibt an, ob Überprüfungsskripten ausgeführt werden.<br /> </td>
+   <td>Gibt an, ob Überprüfungsskripte ausgeführt werden.<br /> </td>
    <td>Ohne</td>
   </tr>
   <tr>
@@ -138,27 +138,27 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td><code>pageDown</code></td>
-   <td>Wechselt zur nächsten Formularseite. Verwenden Sie die pageDown-Methode zur Laufzeit.</td>
+   <td>Wechselt zur nächsten Seite eines Formulars. Verwendet die pageDown-Methode zur Laufzeit.</td>
    <td> </td>
   </tr>
   <tr>
    <td><code>setFocus</code></td>
-   <td>Legt den Tastaturfokus auf das angegebene Feld fest. Das Feld wird als Objekt oder durch den SOM-Ausdruck des Felds angegeben. Sie ist nur für Clientanwendungen verfügbar.</td>
+   <td>Stellt den Tastaturfokus auf das angegebene Feld ein. Das Feld wird als Objekt oder durch den SOM-Ausdruck des Felds definiert. Nur für Client-Anwendungen verfügbar.</td>
    <td> </td>
   </tr>
   <tr>
    <td><code>resetdata</code></td>
    <td>Setzt die Felder auf ihre Standardwerte in einem Dokument zurück.</td>
-   <td>Löscht alle Daten in einem Formular mit zusammengeführten Daten, anstatt sie auf Standardwerte zurückzusetzen.</td>
+   <td>Löscht alle Daten in einem Formular mit zusammengeführten Daten, anstatt die Standardwerte wiederherzustellen.</td>
   </tr>
   <tr>
    <td><code>messageBox</code></td>
-   <td>Zeigt ein Dialogfeld auf dem Bildschirm an. Sie ist nur für Client-Anwendungen verfügbar</td>
-   <td>Das Meldungsfeld vom Typ Ja/Nein wird in OK/Abbrechen konvertiert. Das Meldungsfeld mit drei Schaltflächen wird nicht unterstützt.</td>
+   <td>Zeigt ein Dialogfeld auf dem Bildschirm an. Nur für Client-Anwendungen verfügbar.</td>
+   <td>Das Meldungsfeld vom Typ „Ja/Nein“ wird in ein Feld vom Typ „OK/Abbrechen“ konvertiert. Ein Meldungsfeld mit drei Schaltflächen wird nicht unterstützt.</td>
   </tr>
   <tr>
    <td>currentPage</td>
-   <td><p>Legt die derzeit aktive Seite eines Dokuments zur Laufzeit fest.</p> <p>Seitenzahlen sind 0-basiert, sodass die erste Seite eines Dokuments den Wert 0 zurückgibt.</p> <p>Die currentPage -Eigenschaft ist verfügbar, wenn layout:ready auf einem Client ausgeführt wird. Sie ist jedoch nicht verfügbar, wenn layout:ready auf dem Server ausgeführt wird, da die Eigenschaft erst ausgeführt wird, wenn das Formularlayout ausgeführt wird.</p> </td>
+   <td><p>Legt die aktuell aktive Seite eines Dokuments zur Laufzeit fest.</p> <p>Seitenzahlen sind 0-basiert, d. h., die erste Seite eines Dokuments gibt den Wert 0 zurück.</p> <p>Die currentPage-Eigenschaft ist verfügbar, wenn „layout:ready“ auf einem Client ausgeführt wird. Sie ist jedoch nicht verfügbar, wenn „layout:ready“ auf dem Server ausgeführt wird, da die Eigenschaft nur in Verbindung mit dem Formular-Layout ausgeführt wird.</p> </td>
    <td>Ohne</td>
   </tr>
  </tbody>
@@ -175,18 +175,18 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td><code>presence</code></td>
-   <td>Steuert die Beteiligung des verknüpften Objekts an verschiedenen Verarbeitungsphasen. Wenn das Objekt ein Container ist, erben die Inhalte des Containers alle Einschränkungen, die dieses Steuerelement anwendet.</td>
+   <td>Steuert die Teilnahme des zugehörigen Objekts in den verschiedenen Phasen der Verarbeitung. Wenn das Objekt ein Container ist, werden alle Einschränkungen dieses Steuerelements für den Inhalt des Containers übernommen.</td>
    <td>Ohne</td>
   </tr>
   <tr>
    <td><code>access</code></td>
    <td>Steuert den Benutzerzugriff auf den Inhalt.</td>
-   <td>Funktioniert nicht mit die Ausschlussgruppe. Außerdem werden nicht interaktive und geschützte Objekte in HTML5-Formularen gleich behandelt.<br /> </td>
+   <td>Funktioniert nicht mit die Ausschlussgruppe. Außerdem werden nicht interaktive und geschützte Objekte in HTML5-Formularen auf dieselbe Weise behandelt.<br /> </td>
   </tr>
   <tr>
    <td><code>name</code></td>
    <td>Eine Kennung, die verwendet wird, um dieses Element in Skriptausdrücken eindeutig zu kennzeichnen.</td>
-   <td>HTML5-Formulare lassen das Festlegen der name-Eigenschaft für Objekte nicht zu. Dies ist eine schreibgeschützte Eigenschaft für HTML5-Formulare.</td>
+   <td>In HTML5-Formulare kann die Eigenschaft „name“ nicht für Objekte festgelegt werden. Es handelt sich um eine schreibgeschützte Eigenschaft für HTML5-Formulare.</td>
   </tr>
   <tr>
    <td><code>value</code></td>
@@ -240,7 +240,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td><code>length</code></td>
-   <td>Die Anzahl der Listenelemente.</td>
+   <td>Die Anzahl der Elemente in der Liste.</td>
    <td>Ohne</td>
   </tr>
   <tr>
@@ -255,17 +255,17 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td><code>boundItem</code></td>
-   <td>Ruft den Bindewert eines bestimmten Anzeigeelements aus einer Dropdown-Liste oder einem Listenfeld ab.</td>
+   <td>Ruft den Bindewert eines bestimmten Anzeigeelements aus einer Dropdown-Liste oder aus einem Listenfeld ab.</td>
    <td>Ohne</td>
   </tr>
   <tr>
    <td><code>execCalculate</code></td>
-   <td>Führt das Berechnungsskript des Felds aus.</td>
+   <td>Führt das Berechnungsskript des Feldes aus.</td>
    <td>Ohne</td>
   </tr>
   <tr>
    <td><code>execValidate</code></td>
-   <td>Führt das Überprüfungsskript des Felds aus.</td>
+   <td>Führt das Überprüfungsskript des Feldes aus.</td>
    <td>Ohne</td>
   </tr>
   <tr>
@@ -275,7 +275,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td><code>getItemState</code></td>
-   <td>Gibt den Auswahlstatus des angegebenen Elements aus</td>
+   <td>Gibt den Auswahlstatus des angegebenen Elements zurück.</td>
    <td>Ohne</td>
   </tr>
   <tr>
@@ -295,17 +295,17 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td><code>deleteItem</code></td>
-   <td>Löscht das Element am angegebenen Index.</td>
+   <td>Entfernt das Element an der angegebenen Indexposition.</td>
    <td>Ohne</td>
   </tr>
   <tr>
    <td><code>setItems</code></td>
-   <td>Legt die angegebenen Elemente im aktuellen Feld fest. Sie ersetzt bereits vorhandene Elemente.</td>
+   <td>Legt die angegebenen Elemente im aktuellen Feld fest. Ersetzt die bereits vorhandenen Elemente.</td>
    <td>Ohne</td>
   </tr>
   <tr>
    <td>h</td>
-   <td>Eine Messung der Höhe für das Layout.</td>
+   <td>Eine Maßeinheit für die Höhe des Layouts.</td>
    <td>Ohne</td>
   </tr>
   <tr>
@@ -315,22 +315,22 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>x</td>
-   <td>Gibt die X-Koordinate des Verankerungspunkts des Containers im Verhältnis zur oberen linken Ecke des übergeordneten Containers bei Platzierung mit positioniertem Layout an.</td>
+   <td>Gibt die X-Koordinate für den Ankerpunkt des Containers in Bezug auf die linke obere Ecke des übergeordneten Containers bei Platzierung anhand eines positionierten Layouts an.</td>
    <td>Ohne</td>
   </tr>
   <tr>
    <td>y</td>
-   <td>Gibt die Y-Koordinate für den Ankerpunkt eines Containers im Verhältnis zur oberen linken Ecke des übergeordneten Containers bei Platzierung mit einem positionierten Layout an.</td>
+   <td>Gibt die Y-Koordinate für den Ankerpunkt eines Containers in Bezug auf die linke obere Ecke des übergeordneten Containers bei Platzierung anhand eines positionierten Layouts an.</td>
    <td>Ohne</td>
   </tr>
   <tr>
    <td>caption</td>
-   <td>Das caption -Objekt beschreibt eine beschreibende Bezeichnung, die mit einem Formularentwurfsobjekt verknüpft ist.<br /> </td>
+   <td>Das caption-Objekt stellt eine beschreibende Beschriftung dar, die mit einem Formularentwurfsobjekt verknüpft ist.<br /> </td>
    <td>Ohne</td>
   </tr>
   <tr>
    <td>validate</td>
-   <td>Das validate -Objekt steuert die Überprüfung von vom Benutzer bereitgestellten Daten in einem Formular. Das validate -Objekt kann während der Lebensdauer eines Formulars mehrmals aktiviert werden.</td>
+   <td>Das validate-Objekt steuert die Überprüfung von Daten, die benutzerseitig in einem Formular eingegeben werden. Das validate-Objekt kann während der Lebensdauer eines Formulars mehrmals aktiviert werden.</td>
    <td>Ohne</td>
   </tr>
   <tr>
@@ -350,7 +350,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
 
 | **Eigenschaft** | **Beschreibung** | **Ausnahme** |
 |---|---|---|
-| formNodes | Gibt eine Liste aller Formularmodellobjekte zurück, die an ein bestimmtes Datenobjekt gebunden sind. |  |
+| formNodes | Gibt eine Liste mit allen Formularmodellobjekten zurück, die an ein bestimmtes Datenobjekt gebunden sind. |  |
 
 ## InstanceManager {#instancemanager}
 
@@ -364,7 +364,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
 | `setInstances` | Fügt die angegebenen Teilformulare oder Teilformularsätze von diesem Knoten zurück oder entfernt diese. |
 | `addInstance` | Fügt diese Knoten eine neue Instanz eines Teilformulars oder Teilformularsatzes hinzu. |
 | `removeInstance` | Entfernt ein Teilformular oder einen Teilformularsatz von diesem Knoten. |
-| `moveInstance` | Verschiebt ein untergeordnetes Objekt eines Formularmodellobjekts an eine andere angegebene Position innerhalb des Formularmodells. Die entsprechenden Datenmodellinformationen für das Objekt werden ebenfalls innerhalb des Datenmodells neu positioniert. |
+| `moveInstance` | Verschiebt ein untergeordnetes Objekt eines Formularmodellobjekts an einen anderen angegebenen Speicherort innerhalb des Formularmodells. Die entsprechenden Datenmodellinformationen für das Objekt ziehen innerhalb des Datenmodells ebenfalls um. |
 | `insertInstance` | Fügt diesem Knoten eine neue Instanz eines Teilformulars oder Teilformularsatzes hinzu. |
 
 ## list {#list}
@@ -377,18 +377,18 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
 | `remove` | Entfernt einen Knoten aus der Knotenliste. |
 | `insert` | Fügt einen Knoten vor einem bestimmten Knoten in die Knotenliste ein. |
 
-## Knoten {#node}
+## node {#node}
 
 | Eigenschaft | Beschreibung | Ausnahme |
 |---|---|---|
 | createNode | Erstellt einen neuen Knoten basierend auf einem gültigen Klassennamen. | Ohne |
-| `isContainer` | Gibt an, ob dieses Objekt ein Containerobjekt ist. | Ohne |
+| `isContainer` | Gibt an, ob dieses Objekt ein Container-Objekt ist. | Ohne |
 | `isNull` | Gibt an, ob der aktuelle Datenwert ein Nullwert ist. | Ohne |
 | `resolveNode` | Wertet den angegebenen SOM-Ausdruck aus, angefangen mit dem aktuellen Objekt des XML-Formularobjektmodells, und gibt den Wert des im SOM-Ausdruck angegebenen Objekts zurück. | Ohne |
 | `resolveNodes` | Wertet den angegebenen SOM-Ausdruck aus, angefangen mit dem aktuellen Objekt des XML-Formularobjektmodells, und gibt den Wert des im SOM-Ausdruck angegebenen Objekts zurück. | Ohne |
 | oneOfChild | Erstellt einen neuen Knoten basierend auf einem gültigen Klassennamen. | Ohne |
 | getElement | Gibt ein bestimmtes untergeordnetes Objekt zurück. | Ohne |
-| getAttribute | Ruft einen angegebenen Eigenschaftswert ab. | Ohne |
+| getAttribute | Ruft den Wert einer angegebenen Eigenschaft ab. | Ohne |
 | setAttribute | Legt den Wert einer angegebenen Eigenschaft fest. | Ohne |
 
 ## model {#model}
@@ -418,7 +418,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>getInvalidObjects</td>
-   <td>Gibt eine Liste von Nodes im Teilformular (einschließlich) zurück, bei denen der Validierungstest fehlgeschlagen ist.</td>
+   <td>Gibt eine Liste von Knoten in dem Teilformular (einschließlich) zurück, bei denen der Test zur Überprüfung fehlgeschlagen ist.</td>
    <td>Ohne</td>
   </tr>
   <tr>
@@ -433,7 +433,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>h</td>
-   <td>Eine Messung der Höhe für das Layout.</td>
+   <td>Eine Maßeinheit für die Höhe des Layouts.</td>
    <td>Ohne</td>
   </tr>
   <tr>
@@ -443,17 +443,17 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>x</td>
-   <td>Gibt die X-Koordinate des Verankerungspunkts des Containers im Verhältnis zur oberen linken Ecke des übergeordneten Containers bei Platzierung mit positioniertem Layout an.</td>
+   <td>Gibt die X-Koordinate für den Ankerpunkt des Containers in Bezug auf die linke obere Ecke des übergeordneten Containers bei Platzierung anhand eines positionierten Layouts an.</td>
    <td>Ohne</td>
   </tr>
   <tr>
    <td>y</td>
-   <td>Gibt die Y-Koordinate für den Ankerpunkt eines Containers im Verhältnis zur oberen linken Ecke des übergeordneten Containers bei Platzierung mit einem positionierten Layout an.</td>
+   <td>Gibt die Y-Koordinate für den Ankerpunkt eines Containers in Bezug auf die linke obere Ecke des übergeordneten Containers bei Platzierung anhand eines positionierten Layouts an.</td>
    <td>Ohne</td>
   </tr>
   <tr>
    <td>validate</td>
-   <td>Das validate -Objekt steuert die Überprüfung von vom Benutzer bereitgestellten Daten in einem Formular. Das validate -Objekt kann während der Lebensdauer eines Formulars mehrmals aktiviert werden.</td>
+   <td>Das validate-Objekt steuert die Überprüfung von Daten, die benutzerseitig in einem Formular eingegeben werden. Das validate-Objekt kann während der Lebensdauer eines Formulars mehrmals aktiviert werden.</td>
    <td>Ohne</td>
   </tr>
   <tr>
@@ -468,27 +468,27 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>access</td>
-   <td>Steuert den Benutzerzugriff auf den Inhalt eines Containers, z. B. eines Teilformulars.</td>
+   <td>Steuert den Benutzerzugriff auf den Inhalt eines Container-Objekts, beispielsweise ein Teilformular.</td>
    <td>Ohne</td>
   </tr>
   <tr>
    <td>execValidate</td>
-   <td>Berechnet den Index eines Teilformulars oder Teilformularsatzes anhand dessen Position im Verhältnis zu anderen Instanzen desselben Formularobjekts.</td>
+   <td>Berechnet den Index eines Teilformulars oder Teilformularsatzes anhand dessen Position im Verhältnis zu anderen Instanzen des gleichen Formularobjekts.</td>
    <td>Ohne</td>
   </tr>
   <tr>
    <td>InstanceManager</td>
-   <td>Das instanceManager-Objekt verwaltet das Erstellen, Entfernen und Verschieben von Formularmodellobjekten in Instanzen.<br /> </td>
+   <td>Das instanceManager-Objekt verwaltet das Erstellen, Entfernen und Verschieben einer Instanz von Formularmodellobjekten.<br /> </td>
    <td>Ohne</td>
   </tr>
  </tbody>
 </table>
 
-### absenden {#submit}
+### submit {#submit}
 
 | Eigenschaft | Beschreibung |
 |---|---|
-| target | Die URL, an die die Daten gesendet werden. Das Auslassen dieses Attributs impliziert, dass die XFA-Verarbeitungsanwendung den URI mithilfe einer produktspezifischen Technik abruft, z. B. durch Zugriff auf produktspezifische Informationen im config-Objekt. |
+| target | Die URL, an die die Daten gesendet werden. Bei Auslassung dieses Attributs ruft die XFA-Verarbeitungsanwendung den URI mithilfe eines produktspezifischen Verfahrens ab, z. B. durch Zugreifen auf produktspezifische Informationen im config-Objekt. |
 
 ## tree {#tree}
 
@@ -511,16 +511,16 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   <tr>
    <td>name</td>
    <td>Gibt den Namen dieses Knotens an.</td>
-   <td>Das Festlegen des Namens mithilfe von Skripten ist im HTML nicht zulässig.</td>
+   <td>In HTML kann der Name mithilfe von Skripten nicht festgelegt werden.</td>
   </tr>
   <tr>
-   <td>Elternteil</td>
-   <td>Ruft die übergeordnete Node für diesen Knoten ab.</td>
+   <td>parent</td>
+   <td>Ruft den übergeordneten Knoten dieses Knotens ab.</td>
    <td>Ohne</td>
   </tr>
   <tr>
    <td>index</td>
-   <td>Gibt die Position dieses Knotens in seiner Sammlung von untergeordneten Knoten mit gleichen Namen im Bereich zurück.</td>
+   <td>Gibt die Position dieses Knotens in der zugehörigen Sammlung von untergeordneten Knoten mit gleichen Namen im Bereich zurück.</td>
    <td>Ohne</td>
   </tr>
   <tr>
@@ -545,7 +545,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
 
 | Eigenschaft | Beschreibung | Ausnahme |
 |---|---|---|
-| InstanceManager | Das instanceManager-Objekt verwaltet das Erstellen, Entfernen und Verschieben von Formularmodellobjekten in Instanzen. | Ohne |
+| InstanceManager | Das instanceManager-Objekt verwaltet das Erstellen, Entfernen und Verschieben einer Instanz von Formularmodellobjekten. | Ohne |
 
 ## content {#content}
 
@@ -570,17 +570,17 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>Farbe</td>
-   <td>Die Eigenschaft "Farbe"beschreibt eine eindeutige Farbe für das pattern-Objekt.</td>
+   <td>Die Eigenschaft „color“ beschreibt eine eindeutige Farbe für das Musterobjekt.</td>
    <td>
     <ul>
      <li>Der Standardwert kann nicht abgerufen werden. </li>
-     <li>Die Änderungen werden im Modell übernommen und stehen für die Skripterstellung zur Verfügung, werden jedoch nicht mit HTML-Elementen synchronisiert. Daher werden die Änderungen nicht in der Benutzeroberfläche angezeigt.</li>
+     <li>Die Änderungen werden im Modell angezeigt und sind zur Skripterstellung verfügbar, werden aber nicht mit HTML-Elementen synchronisiert. Daher werden die Änderungen nicht auf der Benutzeroberfläche angezeigt.</li>
     </ul> </td>
   </tr>
  </tbody>
 </table>
 
-## Füllung {#fill}
+## fill {#fill}
 
 <table>
  <tbody>
@@ -591,11 +591,11 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>Farbe</td>
-   <td>Die Farbeigenschaften definieren eine eindeutige Füllfarbe.</td>
+   <td>Die color-Eigenschaften legen eine eindeutige Füllfarbe fest.</td>
    <td>
     <ul>
      <li>Der Standardwert kann nicht abgerufen werden. </li>
-     <li>Die Änderungen werden im Modell übernommen und stehen für die Skripterstellung zur Verfügung, werden jedoch nicht mit HTML-Elementen synchronisiert. Daher werden die Änderungen nicht in der Benutzeroberfläche angezeigt.</li>
+     <li>Die Änderungen werden im Modell angezeigt und sind zur Skripterstellung verfügbar, werden aber nicht mit HTML-Elementen synchronisiert. Daher werden die Änderungen nicht auf der Benutzeroberfläche angezeigt.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -612,11 +612,11 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>Farbe</td>
-   <td>Die Eigenschaft "Farbe"beschreibt eine eindeutige Farbe für einen linearen Füllverlauf in einem Formular.</td>
+   <td>Die color-Eigenschaft beschreibt eine eindeutige Farbe für einen linearen Farbverlauf in einem Formular.</td>
    <td>
     <ul>
      <li>Der Standardwert kann nicht abgerufen werden. </li>
-     <li>Die Änderungen werden im Modell übernommen und stehen für die Skripterstellung zur Verfügung, werden jedoch nicht mit HTML-Elementen synchronisiert. Daher werden die Änderungen nicht in der Benutzeroberfläche angezeigt.</li>
+     <li>Die Änderungen werden im Modell angezeigt und sind zur Skripterstellung verfügbar, werden aber nicht mit HTML-Elementen synchronisiert. Daher werden die Änderungen nicht auf der Benutzeroberfläche angezeigt.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -633,8 +633,8 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>edge</td>
-   <td>Das edge -Objekt beschreibt einen Bogen, eine Linie oder eine Seite eines Rahmens oder Rechtecks.<br /> </td>
-   <td>Attribute wie Farbe, Cap usw. werden nicht unterstützt.<br /> </td>
+   <td>Das edge-Objekt beschreibt einen Bogen, eine Linie oder eine Seite eines Rahmens oder Rechtecks.<br /> </td>
+   <td>Attribute wie „color“, „cap“ usw. werden nicht unterstützt.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -650,11 +650,11 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>Farbe</td>
-   <td>Die Eigenschaft "Farbe"beschreibt eine eindeutige Farbe für das pattern-Objekt. </td>
+   <td>Die Eigenschaft „color“ beschreibt eine eindeutige Farbe für das Musterobjekt. </td>
    <td>
     <ul>
      <li>Der Standardwert kann nicht abgerufen werden. </li>
-     <li>Die Änderungen werden im Modell übernommen und stehen für die Skripterstellung zur Verfügung, werden jedoch nicht mit HTML-Elementen synchronisiert. Daher werden die Änderungen nicht in der Benutzeroberfläche angezeigt.</li>
+     <li>Die Änderungen werden im Modell angezeigt und sind zur Skripterstellung verfügbar, werden aber nicht mit HTML-Elementen synchronisiert. Daher werden die Änderungen nicht auf der Benutzeroberfläche angezeigt.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -671,11 +671,11 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>Farbe</td>
-   <td>Die Eigenschaft "Farbe"beschreibt eine eindeutige Farbe für das radial-Objekt</td>
+   <td>Die color-Eigenschaft beschreibt eine eindeutige Farbe für das radial-Objekt.</td>
    <td>
     <ul>
      <li>Der Standardwert kann nicht abgerufen werden. </li>
-     <li>Die Änderungen werden im Modell übernommen und stehen für die Skripterstellung zur Verfügung, werden jedoch nicht mit HTML-Elementen synchronisiert. Daher werden die Änderungen nicht in der Benutzeroberfläche angezeigt.</li>
+     <li>Die Änderungen werden im Modell angezeigt und sind zur Skripterstellung verfügbar, werden aber nicht mit HTML-Elementen synchronisiert. Daher werden die Änderungen nicht auf der Benutzeroberfläche angezeigt.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -692,11 +692,11 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>Farbe</td>
-   <td>Die Eigenschaft "Farbe"beschreibt eine eindeutige Farbe für das stipple -Objekt.</td>
+   <td>Die color-Eigenschaft beschreibt eine eindeutige Farbe für das stipple-Objekt.</td>
    <td>
     <ul>
      <li>Der Standardwert kann nicht abgerufen werden. </li>
-     <li>Die Änderungen werden im Modell übernommen und stehen für die Skripterstellung zur Verfügung, werden jedoch nicht mit HTML-Elementen synchronisiert. Daher werden die Änderungen nicht in der Benutzeroberfläche angezeigt.</li>
+     <li>Die Änderungen werden im Modell angezeigt und sind zur Skripterstellung verfügbar, werden aber nicht mit HTML-Elementen synchronisiert. Daher werden die Änderungen nicht auf der Benutzeroberfläche angezeigt.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -718,7 +718,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>caption</td>
-   <td>Das caption -Objekt beschreibt eine beschreibende Bezeichnung, die mit einem Formularentwurfsobjekt verknüpft ist.</td>
+   <td>Das caption-Objekt beschreibt eine beschreibende Bezeichnung, die mit einem Formularentwurfsobjekt verknüpft ist.</td>
    <td> </td>
   </tr>
   <tr>
@@ -728,12 +728,12 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>name</td>
-   <td>Gibt eine Kennung an, die verwendet werden kann, um dieses Objekt oder Ereignis in Skriptausdrücken anzugeben.</td>
-   <td>Das Festlegen des Werts zur Laufzeit wird nicht unterstützt</td>
+   <td>Gibt eine Kennung an, mit der dieses Objekt oder Ereignis in Skriptausdrücken angegeben werden kann.</td>
+   <td>Die Festlegung des Werts zur Laufzeit wird nicht unterstützt</td>
   </tr>
   <tr>
    <td>value</td>
-   <td>Das value -Objekt umfasst eine Dateninhaltseinheit.<br /> </td>
+   <td>Das value-Objekt umfasst eine einzige Dateninhaltseinheit.<br /> </td>
    <td> </td>
   </tr>
  </tbody>
@@ -750,11 +750,11 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>Farbe</td>
-   <td>Die Eigenschaft "Farbe"beschreibt eine eindeutige Farbe für das corner-Objekt.</td>
+   <td>Die color-Eigenschaft beschreibt eine eindeutige Farbe für das corner-Objekt.</td>
    <td>
     <ul>
      <li>Der Standardwert kann nicht abgerufen werden. </li>
-     <li>Die Änderungen werden im Modell übernommen und stehen für die Skripterstellung zur Verfügung, werden jedoch nicht mit HTML-Elementen synchronisiert. Daher werden die Änderungen nicht in der Benutzeroberfläche angezeigt.</li>
+     <li>Die Änderungen werden im Modell angezeigt und sind zur Skripterstellung verfügbar, werden aber nicht mit HTML-Elementen synchronisiert. Daher werden die Änderungen nicht auf der Benutzeroberfläche angezeigt.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -772,7 +772,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   <tr>
    <td>border</td>
    <td>Das border-Objekt beschreibt den Rahmen, der das checkButton-Objekt umgibt. </td>
-   <td>Die Änderungen werden im Modell übernommen und stehen für die Skripterstellung zur Verfügung, werden jedoch nicht mit HTML-Elementen synchronisiert. Daher werden die Änderungen nicht in der Benutzeroberfläche angezeigt.<br /> </td>
+   <td>Die Änderungen werden im Modell angezeigt und sind zur Skripterstellung verfügbar, werden aber nicht mit HTML-Elementen synchronisiert. Daher werden die Änderungen nicht auf der Benutzeroberfläche angezeigt.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -834,7 +834,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
 |---|---|---|
 | border | Das border-Objekt beschreibt den Rahmen, der ein Objekt umgibt. | keine |
 
-## Objekt {#object}
+## object {#object}
 
 <table>
  <tbody>
@@ -845,13 +845,13 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>className</td>
-   <td>Bestimmt den Namen der Klasse dieses Objekts.<br /> </td>
+   <td>Legt den Namen der Klasse dieses Objekts fest.<br /> </td>
    <td>keine</td>
   </tr>
  </tbody>
 </table>
 
-## Rechteck {#rectangle}
+## rectangle {#rectangle}
 
 <table>
  <tbody>
@@ -862,8 +862,8 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>edge</td>
-   <td>Das edge -Objekt beschreibt einen Bogen, eine Linie oder eine Seite eines Rahmens oder Rechtecks.<br /> </td>
-   <td>Attribute wie Farbe, Cap usw. werden nicht unterstützt.</td>
+   <td>Das edge-Objekt beschreibt einen Bogen, eine Linie oder eine Seite eines Rahmens oder Rechtecks.<br /> </td>
+   <td>Attribute wie „color“, „cap“ usw. werden nicht unterstützt.</td>
   </tr>
  </tbody>
 </table>
@@ -896,12 +896,12 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>layout</td>
-   <td>Gibt die von diesem Objekt zu verwendende Layoutstrategie an.</td>
+   <td>Gibt die von diesem Objekt zu verwendende Layout-Strategie an.</td>
    <td>Ohne</td>
   </tr>
   <tr>
    <td>border</td>
-   <td>Gibt den Rahmen für dieses Feld an.</td>
+   <td>Gibt den Rahmen an, der dieses Feld umgibt.</td>
    <td>Ohne</td>
   </tr>
   <tr>
@@ -911,7 +911,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>borderColor</td>
-   <td>Gibt den Rahmenfarbwert für dieses Feld an. Bevor Sie die Farbe mithilfe eines Skripts ändern können, muss ein Rahmen definiert werden.</td>
+   <td>Gibt den Rahmenfarbwert für dieses Feld an. Bevor die Farbe mithilfe der Skripterstellung geändert werden kann, muss ein Rahmen definiert werden.</td>
    <td>Ohne</td>
   </tr>
   <tr>
@@ -921,7 +921,7 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>h</td>
-   <td>Eine Messung der Höhe für das Layout.</td>
+   <td>Eine Maßeinheit für die Höhe des Layouts.</td>
    <td>Ohne</td>
   </tr>
   <tr>
@@ -936,27 +936,27 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>x</td>
-   <td>Gibt die X-Koordinate des Verankerungspunkts des Containers im Verhältnis zur oberen linken Ecke des übergeordneten Containers bei Platzierung mit positioniertem Layout an.</td>
+   <td>Gibt die X-Koordinate für den Ankerpunkt des Containers in Bezug auf die linke obere Ecke des übergeordneten Containers bei Platzierung anhand eines positionierten Layouts an.</td>
    <td>Ohne</td>
   </tr>
   <tr>
    <td>y</td>
-   <td>Gibt die Y-Koordinate für den Ankerpunkt eines Containers im Verhältnis zur oberen linken Ecke des übergeordneten Containers bei Platzierung mit einem positionierten Layout an.</td>
+   <td>Gibt die Y-Koordinate für den Ankerpunkt eines Containers in Bezug auf die linke obere Ecke des übergeordneten Containers bei Platzierung anhand eines positionierten Layouts an.</td>
    <td>Ohne</td>
   </tr>
   <tr>
    <td>caption</td>
-   <td>Das caption -Objekt beschreibt eine beschreibende Bezeichnung, die mit einem Formularentwurfsobjekt verknüpft ist.<br /> </td>
+   <td>Das caption-Objekt stellt eine beschreibende Beschriftung dar, die mit einem Formularentwurfsobjekt verknüpft ist.<br /> </td>
    <td>Ohne</td>
   </tr>
   <tr>
    <td>validate</td>
-   <td>Das validate -Objekt steuert die Überprüfung von vom Benutzer bereitgestellten Daten in einem Formular. Das validate -Objekt kann während der Lebensdauer eines Formulars mehrmals aktiviert werden.</td>
+   <td>Das validate-Objekt steuert die Überprüfung von Daten, die benutzerseitig in einem Formular eingegeben werden. Das validate-Objekt kann während der Lebensdauer eines Formulars mehrmals aktiviert werden.</td>
    <td>Ohne</td>
   </tr>
   <tr>
    <td>dataNode</td>
-   <td>Ruft die Daten-Node ab, an die eine Formular-Node nach der Zusammenführung gebunden ist.</td>
+   <td>Ruft den Datenknoten ab, an den ein Formularknoten nach dem Zusammenführen gebunden ist.</td>
    <td>Ohne</td>
   </tr>
   <tr>
@@ -966,17 +966,17 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>access</td>
-   <td>Steuert den Benutzerzugriff auf den Inhalt eines Containers, z. B. eines Teilformulars.</td>
+   <td>Steuert den Benutzerzugriff auf den Inhalt eines Container-Objekts, beispielsweise ein Teilformular.</td>
    <td>Wird für einzelne Elemente der exclgrp immer offen zurückgegeben. </td>
   </tr>
   <tr>
    <td>name</td>
-   <td>Gibt eine Kennung an, die verwendet werden kann, um dieses Objekt oder Ereignis in Skriptausdrücken anzugeben.</td>
+   <td>Gibt eine Kennung an, mit der dieses Objekt oder Ereignis in Skriptausdrücken angegeben werden kann.</td>
    <td>Ohne</td>
   </tr>
   <tr>
-   <td>Mitglieder</td>
-   <td>Geben Sie die Elemente der Ausschlussgruppe an. </td>
+   <td>members</td>
+   <td>Gibt die Elemente einer Ausschlussgruppe an. </td>
    <td>Ohne</td>
   </tr>
   <tr>
@@ -986,18 +986,18 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>execCalculate</td>
-   <td>Führt Skripten für das calculate-Ereignis des angegebenen Objekts und etwaiger untergeordneter Objekte aus.</td>
+   <td>Führt Skripte für das calculate-Ereignis des angegebenen Objekts und etwaiger untergeordneter Objekte aus.</td>
    <td>Ohne</td>
   </tr>
   <tr>
    <td>calculate</td>
-   <td>Das calculate -Objekt steuert die Berechnung des Werts eines Felds.<br /> </td>
+   <td>Das calculate-Objekt steuert die Berechnung des Werts eines Felds.<br /> </td>
    <td>Ohne</td>
   </tr>
  </tbody>
 </table>
 
-## Bogen {#arc}
+## arc {#arc}
 
 <table>
  <tbody>
@@ -1008,8 +1008,8 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>edge</td>
-   <td>Das edge -Objekt beschreibt einen Bogen, eine Linie oder eine Seite eines Rahmens oder Rechtecks.<br /> </td>
-   <td>Attribute wie Farbe, Cap usw. werden nicht unterstützt. </td>
+   <td>Das edge-Objekt beschreibt einen Bogen, eine Linie oder eine Seite eines Rahmens oder Rechtecks.<br /> </td>
+   <td>Attribute wie „color“, „cap“ usw. werden nicht unterstützt. </td>
   </tr>
  </tbody>
 </table>
@@ -1025,8 +1025,8 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
   </tr>
   <tr>
    <td>edge</td>
-   <td>Das edge -Objekt beschreibt einen Bogen, eine Linie oder eine Seite eines Rahmens oder Rechtecks.<br /> </td>
-   <td>Attribute wie Farbe, Cap usw. werden nicht unterstützt. </td>
+   <td>Das edge-Objekt beschreibt einen Bogen, eine Linie oder eine Seite eines Rahmens oder Rechtecks.<br /> </td>
+   <td>Attribute wie „color“, „cap“ usw. werden nicht unterstützt. </td>
   </tr>
  </tbody>
 </table>
@@ -1045,8 +1045,8 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
    <td>Bestimmt die Höhe eines angegebenen Formularentwurfsobjekts.<br /> </td>
    <td>
     <ul>
-     <li>Die Eigenschaft "Höhe"(h) wird für Seiten- und Inhaltsbereiche nicht unterstützt. </li>
-     <li>Parameter "Offset vom ersten Inhaltsbereich, in dem das XFA-Formularobjekt auftritt"wird nicht unterstützt.</li>
+     <li>Die Eigenschaft „Höhe“ (h) wird für Seiten- und Inhaltsbereiche nicht unterstützt. </li>
+     <li>Parameter „Offset vom ersten Inhaltsbereich, in dem das XFA-Formularobjekt auftritt“ wird nicht unterstützt.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -1054,8 +1054,8 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
    <td>Bestimmt die Breite eines angegebenen Formularentwurfsobjekts.</td>
    <td>
     <ul>
-     <li>Die Eigenschaft "Breite"(w) wird für Seiten- und Inhaltsbereiche nicht unterstützt. </li>
-     <li>Parameter "Offset vom ersten Inhaltsbereich, in dem das XFA-Formularobjekt auftritt"wird nicht unterstützt.</li>
+     <li>Die Eigenschaft „Breite“ (w) wird für Seiten- und Inhaltsbereiche nicht unterstützt. </li>
+     <li>Parameter „Offset vom ersten Inhaltsbereich, in dem das XFA-Formularobjekt auftritt“ wird nicht unterstützt.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -1063,8 +1063,8 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
    <td>Bestimmt die X-Koordinate eines angegebenen Formularentwurfsobjekts relativ zum übergeordneten Objekt.</td>
    <td>
     <ul>
-     <li>Die Eigenschaft "X-Koordinate"(x) wird für Seiten- und Inhaltsbereiche nicht unterstützt. </li>
-     <li>Parameter "Offset vom ersten Inhaltsbereich, in dem das XFA-Formularobjekt auftritt"wird nicht unterstützt.</li>
+     <li>Die Eigenschaft „X-Koordinate“ (x) wird für Seiten- und Inhaltsbereiche nicht unterstützt. </li>
+     <li>Parameter „Offset vom ersten Inhaltsbereich, in dem das XFA-Formularobjekt auftritt“ wird nicht unterstützt.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -1072,8 +1072,8 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
    <td>Bestimmt die Y-Koordinate eines angegebenen Formularentwurfsobjekts relativ zum übergeordneten Objekt.</td>
    <td>
     <ul>
-     <li>Die Eigenschaft Y-Koordinate (y) wird für Seiten- und Inhaltsbereiche nicht unterstützt. </li>
-     <li>Parameter "Offset vom ersten Inhaltsbereich, in dem das XFA-Formularobjekt auftritt"wird nicht unterstützt.</li>
+     <li>Die Eigenschaft „Y-Koordinate“ (y) wird für Seiten- und Inhaltsbereiche nicht unterstützt. </li>
+     <li>Parameter „Offset vom ersten Inhaltsbereich, in dem das XFA-Formularobjekt auftritt“ wird nicht unterstützt.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -1081,12 +1081,12 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
    <td>Bestimmt die Anzahl der Seiten des aktuellen Formulars.</td>
    <td>
     <ul>
-     <li>Die Methode layout.pageCount() gibt unterschiedliche Werte für PDF- und HTML-Formulare zurück.</li>
-     <li>Wenn die Seitenzahl durch Ausblenden eines Objekts verringert wird, gibt die Methode abspagecount einen falschen Wert zurück.<br /> </li>
+     <li>Die Methode „layout.pageCount()“ gibt unterschiedliche Werte für PDF- und HTML-Formulare zurück.</li>
+     <li>Die Methode „absPageCount“ gibt bei geringerer Seitenzahl durch ausgeblendete Objekte einen falschen Wert zurück.<br /> </li>
     </ul> </td>
   </tr>
   <tr>
-   <td>pageContent</td>
+   <td>pagecontent</td>
    <td>Ruft Formularentwurfsobjekttypen von einer angegebenen Seite eines Formulars ab.</td>
    <td>Ohne</td>
   </tr>
@@ -1095,8 +1095,8 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
    <td>Bestimmt die Seitenzahl des aktuellen Formulars.</td>
    <td>
     <ul>
-     <li>Die Methode layout.pageCount() gibt unterschiedliche Werte für PDF- und HTML-Formulare zurück.</li>
-     <li>Wenn die Seitenzahl durch Ausblenden eines Objekts verringert wird, gibt die Methode abspagecount einen falschen Wert zurück.</li>
+     <li>Die Methode „layout.pageCount()“ gibt unterschiedliche Werte für PDF- und HTML-Formulare zurück.</li>
+     <li>Die Methode „absPageCount“ gibt bei geringerer Seitenzahl durch ausgeblendete Objekte einen falschen Wert wieder.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -1110,11 +1110,11 @@ Die folgenden JavaScript-, FormCalc-Eigenschaften und Methoden werden in HTML5-F
 
 ## FormCalc {#formcalc}
 
-FormCalc ist eine XFA-spezifische Sprache zum Erstellen von e-form-zentrierten Logiken und Berechnungsstämmen. FormCalculation stellt einen leistungsstarken Satz von Build-Funktionen bereit.
+„FormCalc“ ist eine XFA-spezifische Sprache zum Erstellen von E-Formular-orientierter Logik und Berechnungsstämmen. „FormCalculation“ stellt einen umfangreichen Satz an Erstellungsfunktionen bereit.
 
 ### Von FormCalc unterstützte Funktionen {#formcalc-supported-functions}
 
-### FormCalc-Ausdrucksunterstützung {#formcalc-expression-support}
+### Von FormCalc unterstützte Ausdrücke {#formcalc-expression-support}
 
 <table>
  <tbody>
@@ -1130,7 +1130,7 @@ FormCalc ist eine XFA-spezifische Sprache zum Erstellen von e-form-zentrierten L
   </tr>
   <tr>
    <td>Variablendeklaration</td>
-   <td>Variable definieren</td>
+   <td>Definieren einer Variablen</td>
    <td>var a<br /> var a=3<br /> a=3</td>
   </tr>
   <tr>
@@ -1170,9 +1170,9 @@ FormCalc ist eine XFA-spezifische Sprache zum Erstellen von e-form-zentrierten L
  </tbody>
 </table>
 
-### Acrobat API-Unterstützung {#acrobat-api-support}
+### Acrobat-API-Unterstützung {#acrobat-api-support}
 
-1. **Arithmetische Funktionen**
+1. **Arithmetik-Funktionen**
 
    1. Abs()
    1. Avg()
@@ -1215,7 +1215,7 @@ FormCalc ist eine XFA-spezifische Sprache zum Erstellen von e-form-zentrierten L
    1. Rate()
    1. Begriff()
 
-1. **Logische Funktionen**
+1. **Logikfunktionen**
 
    1. Choose()
    1. If()
@@ -1269,33 +1269,33 @@ FormCalc ist eine XFA-spezifische Sprache zum Erstellen von e-form-zentrierten L
   </tr>
   <tr>
    <td>app.execDialog()</td>
-   <td>Stellt ein modales Dialogfeld für den Benutzer bereit. Modale Dialogfelder müssen vom Benutzer geschlossen werden, bevor die Host-Anwendung direkt erneut verwendet werden kann.</td>
+   <td>Zeigt Benutzenden ein modales Dialogfeld an. Modale Dialogfelder müssen zuerst geschlossen werden, um die Host-Anwendung direkt wieder verwenden zu können.</td>
    <td>Es wird keine Aktion ausgeführt.<br /> </td>
   </tr>
   <tr>
    <td>app.launchURL()</td>
-   <td>Startet eine URL in einem Browserfenster.</td>
+   <td>Startet eine URL in einem Browser-Fenster.</td>
    <td> </td>
   </tr>
   <tr>
    <td>app.setInterval()</td>
-   <td>Gibt ein JavaScript-Skript und einen Zeitraum an. Das Skript wird jedes Mal ausgeführt, wenn der Zeitraum abgelaufen ist. Der Rückgabewert dieser Methode muss in einer JavaScript-Variablen gespeichert werden. Andernfalls unterliegt das Intervallobjekt der Garbage Collection, wodurch die Uhr angehalten wird. Um die periodische Ausführung zu beenden, übergeben Sie das zurückgegebene Intervallobjekt an clearInterval.</td>
+   <td>Gibt ein JavaScript-Skript und einen Zeitraum an. Das Skript wird jedes Mal ausgeführt, wenn dieser Zeitraum abgelaufen ist. Der Rückgabewert dieser Methode muss in einer JavaScript-Variable erfasst werden. Andernfalls unterliegt das Intervallobjekt der Garbage Collection und die Uhr würde angehalten werden. Um die regelmäßige Ausführung zu beenden, übergeben Sie das zurückgegebene Intervallobjekt an clearInterval.</td>
    <td> </td>
   </tr>
   <tr>
    <td>app.setTimeOut()</td>
-   <td>Gibt ein JavaScript-Skript und einen Zeitraum an. Das Skript wird nur einmal nach Ablauf des Zeitraums ausgeführt. Der Rückgabewert dieser Methode muss in einer JavaScript-Variablen gespeichert werden. Andernfalls unterliegt das Zeitüberschreitungsobjekt der Garbage Collection, wodurch die Uhr angehalten wird. Um das Timeout-Ereignis abzubrechen, übergeben Sie das zurückgegebene Timeout-Objekt an clearTimeOut.</td>
+   <td>Gibt ein JavaScript-Skript und einen Zeitraum an. Das Skript wird nur einmal nach dem Ablauf des Zeitraums ausgeführt. Der Rückgabewert dieser Methode muss in einer JavaScript-Variable erfasst werden. Andernfalls unterliegt das Zeitüberschreitungsobjekt der Garbage Collection und die Uhr würde angehalten werden. Um das Zeitüberschreitungsereignis zu beenden, übergeben Sie das zurückgegebene Zeitüberschreitungsobjekt an clearTimeOut.</td>
    <td> </td>
   </tr>
   <tr>
    <td>app.clearInterval()</td>
-   <td>Bricht ein zuvor registriertes Intervall ab, das ursprünglich von der setInterval-Methode festgelegt wurde.</td>
-   <td>In HTML5-Formularen funktioniert die API nicht ordnungsgemäß.</td>
+   <td>Bricht ein zuvor registriertes Intervall ab, das anfangs mit der Methode setInterval festgelegt wurde.</td>
+   <td>Die API wird in HTML5-Formularen nicht ordnungsgemäß ausgeführt.</td>
   </tr>
   <tr>
    <td>app.clearTimeOut()</td>
-   <td>Bricht ein zuvor registriertes Zeitüberschreitungsintervall ab. Ein solches Intervall wird zunächst von setTimeOut festgelegt.</td>
-   <td>In HTML5-Formularen funktioniert die API nicht ordnungsgemäß.<br /> </td>
+   <td>Bricht ein zuvor registriertes Zeitüberschreitungsintervall ab. Ein solches Intervall wird anfangs mit setTimeOut festgelegt.</td>
+   <td>Die API wird in HTML5-Formularen nicht ordnungsgemäß ausgeführt.<br /> </td>
   </tr>
   <tr>
    <td>app.eval()</td>
@@ -1304,40 +1304,40 @@ FormCalc ist eine XFA-spezifische Sprache zum Erstellen von e-form-zentrierten L
   </tr>
   <tr>
    <td>app.activeDocs</td>
-   <td>Ein Array, das das Doc -Objekt für jedes aktive Dokument enthält. Wenn keine Dokumente aktiv sind, gibt activeDocs nichts zurück. Das heißt, es weist dasselbe Verhalten wie d = new Array(0) im Kern-JavaScript auf.</td>
+   <td>Ein Array, das das doc-Objekt für jedes aktive Dokument enthält. Wenn keine Dokumente aktiv sind, gibt activeDocs keinen Wert zurück. Das heißt, es weist das gleiche Verhalten auf wie d = new Array(0) im Core-JavaScript.</td>
    <td>Gibt ein leeres Array für HTML5-Formulare zurück.</td>
   </tr>
   <tr>
    <td>app.calculate</td>
-   <td>Wenn "true"(Standardwert), können Berechnungen durchgeführt werden. Wenn "false", sind Berechnungen nicht zulässig.</td>
-   <td>Immer true für HTML5 Forms.</td>
+   <td>Wenn „true“ (Standardwert), können Berechnungen ausgeführt werden. Wenn „false“, werden keine Berechnungen zugelassen.</td>
+   <td>Bei HTML5-Formularen ist der Wert immer „true“.</td>
   </tr>
   <tr>
    <td>app.constants</td>
-   <td>Ein Wrapper-Objekt zum Halten verschiedener Konstantenwerte. Derzeit gibt diese Eigenschaft ein Objekt mit einer einzelnen Eigenschaft "align"zurück.</td>
+   <td>Ein Wrapper-Objekt zum Erfassen von verschiedenen konstanten Werten. Derzeit gibt diese Eigenschaft ein Objekt mit einer Eigenschaft zurück, nämlich „align“.</td>
    <td>HTML5-Formulare geben ein leeres align-Objekt zurück.</td>
   </tr>
   <tr>
    <td>app.focusRect</td>
-   <td>Aktiviert und deaktiviert das Fokusrechteck. Das Fokusrechteck ist die schwache gepunktete Linie um Schaltflächen, Kontrollkästchen, Optionsfelder und Signaturen, die angibt, dass das Formularfeld den Tastaturfokus hat. Der Wert true aktiviert das Fokusrechteck.</td>
-   <td>Für HTML5-Formulare immer "true".</td>
+   <td>Aktiviert und deaktiviert das Fokusrechteck. Das Fokusrechteck ist die schwach gepunktete Linie um die Schaltflächen, Kontrollkästchen, Optionsfelder und Signaturen und zeigt an, dass das Formularfeld den Tastaturfokus hat. Mit dem Wert „true“ wird das Fokusrechteck aktiviert.</td>
+   <td>Bei HTML5-Formularen ist der Wert immer „true“.</td>
   </tr>
   <tr>
    <td>app.formsVersion</td>
-   <td>Die Versionsnummer der Viewer Forms-Software. Überprüfen Sie diese Eigenschaft, um festzustellen, ob Objekte, Eigenschaften oder Methoden in neueren Versionen der Software verfügbar sind, wenn Sie die Abwärtskompatibilität in Ihren Skripten beibehalten möchten.</td>
+   <td>Die Versionsnummer der Viewer-Formular-Software. Aktivieren Sie diese Eigenschaft, um festzulegen, ob Objekte, Eigenschaften oder Methoden in den neueren Versionen der Software verfügbar sind, wenn Sie die Abwärtskompatibilität in den Skripten beibehalten möchten.</td>
    <td>Immer 11.001.</td>
   </tr>
   <tr>
    <td>app.language</td>
-   <td>Die Sprache des ausgeführten Acrobat-Viewers.</td>
-   <td>Für HTML5-Formulare immer "ENU".</td>
+   <td>Die Sprache des aktuellen Acrobat Viewer.</td>
+   <td>In HTML5-Formularen immer „ENU“.</td>
   </tr>
  </tbody>
 </table>
 
 ## Unterstützte XFA-Ereignisse {#supported-xfa-events}
 
-Die folgenden clientseitigen XFA-Ereignisse werden unterstützt:
+Folgende Client-seitige XFA-Ereignisse werden unterstützt:
 
 * Initialisieren
 * Validieren
@@ -1350,4 +1350,4 @@ Die folgenden clientseitigen XFA-Ereignisse werden unterstützt:
 
 >[!NOTE]
 >
->HTML5-Formulare werden clientseitig (im Browser) wiedergegeben. Clientseitig verwenden **validate** und **calculate** Skripten anstelle von serverseitigen Skripten.
+>HTML5-Formulare werden clientseitig (im Browser) wiedergegeben. Verwenden Sie Client-seitige **Validierungs**- und **Berechnungsskripte** anstelle Server-seitiger Skripte.

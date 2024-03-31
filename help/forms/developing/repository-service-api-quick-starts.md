@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '645'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -297,7 +297,7 @@ Im folgenden Java-Code-Beispiel wird eine Ressource namens *loan.xdp* in das Rep
 
 ## Kurzanleitung (SOAP-Modus): Auflisten von Ressourcen mithilfe der Java-API {#quick-start-soap-mode-listing-resources-using-the-java-api}
 
-Im folgenden Java-Codebeispiel werden Ressourcen aufgelistet, die sich in `Applications/FormsApplication/1.0/FormsFolder`. (Siehe [Auflisten von Ressourcen](/help/forms/developing/aem-forms-repository.md#listing-resources).)
+Im folgenden Java-Code-Beispiel werden Ressourcen aufgelistet, die sich in `Applications/FormsApplication/1.0/FormsFolder` befinden. (Siehe [Auflisten von Ressourcen](/help/forms/developing/aem-forms-repository.md#listing-resources).)
 
 ```java
  /*

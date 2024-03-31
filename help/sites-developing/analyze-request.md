@@ -1,6 +1,6 @@
 ---
 title: Anfragenanalyse-Skript
-description: Das Skript zur Anforderungsanalyse erleichtert die Analyse der access.log-Dateien, die einen lesbaren Bericht zur späteren Verarbeitung erzeugen
+description: Das Anfragenanalyse-Skript vereinfacht die Analyse der access.log-Dateien und erzeugt einen lesbaren Bericht für die spätere Verarbeitung.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '171'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 

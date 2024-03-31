@@ -11,11 +11,11 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4257'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
-# Generieren von Datensatzdokumenten für adaptive Formulare oder adaptive Formularfragmente {#generate-document-of-record-for-adaptive-forms}
+# Generierung eines Datensatzdokuments für adaptive Formulare oder adaptive Formularfragmente {#generate-document-of-record-for-adaptive-forms}
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
@@ -29,7 +29,7 @@ ht-degree: 91%
 
 Nachdem Ihre Kunden ein Formular gesendet haben, möchten sie im Allgemeinen einen Beleg (in gedruckter Form oder im Dokumentformat) über die eingegebenen Informationen behalten, um später darauf Bezug nehmen zu können. Dies wird als Datensatzdokument bezeichnet.
 
-In diesem Artikel wird erläutert, wie Sie ein Datensatzdokument für adaptive Forms- oder adaptive Formularfragmente generieren können.
+In diesem Artikel erfahren Sie, wie Sie ein Datensatzdokument für adaptive Formulare oder adaptive Formularfragmente erstellen können.
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Sie benötigen die folgenden Komponenten, um ein Datensatzdokument für adaptive
 
 **Adaptives Formular** Das adaptive Formular, für das Sie ein Datensatzdokument generieren möchten.
 
-**Adaptives Formularfragment** Adaptives Formularfragment, für das Sie ein Datensatzdokument generieren möchten.
+**Adaptives Formularfragment** Das adaptive Formularfragment, für das Sie ein Datensatzdokument generieren möchten.
 
 **Basisvorlage (empfohlen)** Das ist eine in AEM Designer erstellte XFA-Vorlage (XDP-Datei). Eine Basisvorlage wird verwendet, um die Stile und Branding-Informationen für die Datensatzdokument-Vorlage festzulegen.
 
@@ -220,7 +220,7 @@ Die Tabellenkomponenten adaptiver Formulare (wie Kopf- und Fußzeile sowie Zeile
 
 Die Basisvorlage liefert Informationen zu Stil und Erscheinungsbild des Datensatzdokuments. Sie bietet Ihnen die Möglichkeit, das Standarderscheinungsbild des automatisch generierten Datensatzdokuments anzupassen. Beispiel: Sie möchten das Logo Ihres Unternehmens in der Kopfzeile und die Copyright-Informationen in der Fußzeile des Datensatzdokuments einfügen. Die Musterseite aus der Basisvorlage wird als Musterseite für die Datensatzdokument-Vorlage verwendet. Die Musterseite kann Informationen wie Kopfzeile, Fußzeile und Seitenzahl enthalten, die Sie auf das Datensatzdokument anwenden können. Sie können solche Informationen mithilfe der Basisvorlage für die automatische Erstellung des Datensatzdokuments auf das Datensatzdokument anwenden. Die Verwendung der Basisvorlage ermöglicht es Ihnen, die Standardeinstellungen von Feldern zu ändern.
 
-Stellen Sie sicher, dass Sie [Konventionen für Basisvorlagen](#base-template-conventions) wenn Sie eine Basisvorlage erstellen.
+Folgen Sie bei der Entwicklung Ihrer Basisvorlage unbedingt den [Konventionen für Basisvorlagen](#base-template-conventions).
 
 ## Konventionen für Basisvorlagen {#base-template-conventions}
 
@@ -236,7 +236,7 @@ Eine Basisvorlage wird verwendet, um Kopf- und Fußzeile, Stil und Erscheinungsb
 
 **Stilkonventionen für Felder**
 
-* Um einen Stil auf die Felder im Datensatzdokument anzuwenden, stellt die Basisvorlage Felder im `AF_FIELDSSUBFORM` Unterabschnitt unter `AF_METATEMPLATE` Stammteilformular.
+* Wenn Sie einen Stil auf die Felder im Nachweis anwenden, stellt die Basisvorlage die Felder im Teilformular `AF_FIELDSSUBFORM` bereit, das sich unter dem Stammteilformular `AF_METATEMPLATE` befindet.
 
 * Die Eigenschaften dieser Felder werden auf die Felder im Datensatzdokument angewendet. Benennungen für diese Felder sollten der Form `AF_<name of field in all caps>_XFO` folgen. So sollte beispielsweise der Feldname für ein Kontrollkästchen `AF_CHECKBOX_XFO` lauten.
 
@@ -272,14 +272,14 @@ Führen Sie die folgenden Schritte aus, um ein Datensatzdokument für adaptive F
 
 1. Klicken Sie in der AEM-Autor-Instanz auf **Formulare > Formulare und Dokumente**.
 1. Wählen Sie ein Formular aus und klicken Sie auf **Eigenschaften anzeigen**.
-1. Wählen Sie im Fenster Eigenschaften die Option **Formularmodell**.
+1. Wählen Sie im Fenster „Eigenschaften“ **Formularmodell** aus.
 Sie können ein Formularmodell auch bei der Erstellung eines Formulars auswählen.
 
    >[!NOTE]
    >
    >Achten Sie auf der Registerkarte „Formularmodell“ darauf, dass Sie **Schema** oder **Ohne** aus dem Dropdown-Menü **Auswählen** auswählen. **[!UICONTROL Das Datensatzdokument wird nicht für XFA-basierte oder adaptive Formulare mit einer Formularvorlage als Formularmodell unterstützt.]**
 
-1. Wählen Sie auf der Registerkarte &quot;Formularmodell&quot;im Abschnitt Konfiguration der Datensatzvorlagenkonfiguration eine der folgenden Optionen aus:
+1. Wählen Sie auf der Registerkarte „Formularmodell“ im Abschnitt „Konfiguration von Nachweisvorlagen“ eine der folgenden Optionen aus:
 
    **Keines** Wählen Sie diese Option, wenn Sie das Datensatzdokument für das Formular nicht konfigurieren möchten.
 
@@ -308,15 +308,15 @@ Beim Generieren eines Datensatzdokuments können Sie auf der Registerkarte „Da
 
 Für die Lokalisierung der Branding-Informationen, die Sie auf der Registerkarte für das Datensatzdokument eingeben, müssen Sie sicherstellen, dass das Gebietsschema des Browsers richtig eingestellt ist. Um die Branding-Informationen im Datensatzdokument anzupassen, führen Sie die folgenden Schritte aus:
 
-1. Wählen Sie einen Bereich (Stammbereich) im Datensatzdokument aus und wählen Sie dann ![konfigurieren](assets/configure.png).
-1. Wählen Sie ![dortab](/help/forms/using/assets/dortab.png). Die Registerkarte „Datensatzdokument“ wird angezeigt.
+1. Wählen Sie im Datensatzdokument einen Bereich (Stammbereich) und dann ![Konfigurieren](assets/configure.png) aus.
+1. Wählen Sie ![dortab](/help/forms/using/assets/dortab.png) aus. Die Registerkarte „Datensatzdokument“ wird angezeigt.
 1. Wählen Sie entweder die Standardvorlage oder eine benutzerdefinierte Vorlage aus, um das Datensatzdokument zu rendern. Wenn Sie die Standardvorlage auswählen, wird eine Miniaturvorschau des Datensatzdokuments unterhalb der Dropdown-Liste „Vorlage“ angezeigt.
 
    ![brandingtemplate](/help/forms/using/assets/brandingtemplate.png)
 
    Wenn Sie sich für eine benutzerdefinierte Vorlage entscheiden, navigieren zu einer XDP-Datei auf Ihrem AEM Forms-Server und wählen Sie sie aus. Wenn Sie eine Vorlage verwenden möchten, die sich noch nicht auf Ihrem AEM Forms-Server befindet, müssen Sie die XDP-Datei zuerst auf Ihren AEM Forms-Server hochladen.
 
-1. Je nachdem, ob Sie eine Standard- oder eine benutzerdefinierte Vorlage auswählen, werden auf der Registerkarte &quot;Datensatzdokument&quot;einige oder alle der folgenden Eigenschaften angezeigt. Legen Sie die folgenden entsprechend fest:
+1. Abhängig davon, ob Sie eine standardmäßige oder benutzerdefinierte Vorlage auswählen, werden einige oder alle der folgenden Eigenschaften auf der Registerkarte „Datensatzdokument“ angezeigt. Legen Sie die folgenden entsprechend fest:
 
    * **Logo-Bild:** Sie können entweder das Logo-Bild des adaptiven Formulars verwenden, eines in DAM auswählen oder eines von Ihrem Computer hochladen.
    * **Formulartitel**
@@ -354,7 +354,7 @@ Für die Lokalisierung der Branding-Informationen, die Sie auf der Registerkarte
    </proto>
    ```
 
-1. Um die Branding-Änderungen zu speichern, wählen Sie Fertig aus.
+1. Wählen Sie „Fertig“ aus, um die Branding-Änderungen zu speichern.
 
 ## Tabellen- und Spalten-Layouts für Bereiche im Datensatzdokument {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -404,7 +404,7 @@ Die Datensatzdokument-Einstellungen einer Komponente sind unter den Eigenschafte
 
   >[!NOTE]
   >
-  > Die Eigenschaft &quot;Paginierung&quot;ist nicht für adaptive Formularfragmente verfügbar.
+  > Die Eigenschaft „Seitenumbruch“ ist nicht für adaptive Formularfragmente verfügbar.
 
 Informationen zum Anwenden von Seitenumbrüchen und zum Anwenden mehrerer Master-Seiten in einem Datensatzdokument finden Sie unter [Anwenden eines Seitenumbruchs in einem Datensatzdokument](#apply-page-breaks-in-dor) und [Anwenden mehrerer Master-Seiten auf ein Datensatzdokument](#apply-multiple-master-pages-dor).
 
@@ -419,11 +419,11 @@ Sie können Seitenumbrüche in einem Datensatzdokument mithilfe mehrerer Methode
 
 So wenden Sie einen Seitenumbruch auf ein Datensatzdokument an:
 
-1. Wählen Sie das Bedienfeld aus und wählen Sie ![Konfigurieren](/help/forms/using/assets/configure.png)
+1. Wählen Sie den Bereich und dann ![Konfigurieren](/help/forms/using/assets/configure.png) aus.
 1. Erweitern Sie das **[!UICONTROL Datensatzdokument]**, um die Eigenschaften anzuzeigen.
 
-1. Im **[!UICONTROL Paginierung]** Bereich, wählen Sie ![Ordner](/help/forms/using/assets/folder-icon.png) im **[!UICONTROL Ort]** -Feld.
-1. Auswählen **[!UICONTROL Anfang der nächsten Seite]** und wählen **[!UICONTROL Auswählen]**. Sie können auch **[!UICONTROL Seitenanfang]**, wählen Sie die Masterseite aus und wählen Sie **[!UICONTROL Auswählen]** , um den Seitenumbruch anzuwenden.
+1. Wählen Sie im Bereich **[!UICONTROL Seitenumbruch]** ![Ordner](/help/forms/using/assets/folder-icon.png) im Feld **[!UICONTROL Ort]** aus.
+1. Wählen Sie **[!UICONTROL Anfang der nächsten Seite]** und dann **[!UICONTROL Auswählen]** aus. Sie können auch **[!UICONTROL Seitenanfang]**, dann die primäre Seite und **[!UICONTROL Auswählen]** auswählen, um den Seitenumbruch anzuwenden.
 1. Wählen Sie ![Speichern](/help/forms/using/assets/save_icon.png) aus, um die Eigenschaften zu speichern.
 
 Das ausgewählte Bedienfeld wechselt zur nächsten Seite.
@@ -439,14 +439,14 @@ Sie laden eine XDP-Vorlage, die vier Master-Seiten enthält, auf den [!DNL AEM F
 
 Führen Sie die folgenden Schritte aus, um die zweiten Master-Seiteneigenschaften auf ein Bedienfeld und die dritten Master- Seiteneigenschaften auf die nachfolgenden Bedienfelder anzuwenden:
 
-1. Wählen Sie das Bedienfeld aus, um die zweite Masterseite anzuwenden, und wählen Sie ![Konfigurieren](assets/cmppr.png).
-1. Im **[!UICONTROL Paginierung]** Bereich, wählen Sie ![Ordner](/help/forms/using/assets/folder-icon.png) im **[!UICONTROL Ort]** -Feld.
-1. Auswählen **[!UICONTROL Auf Seite]**, wählen Sie die zweite Masterseite aus und wählen Sie **[!UICONTROL Auswählen]**.
-AEM Forms wendet die zweite Master-Seite auf das Bedienfeld und alle nachfolgenden Bedienfelder im adaptiven Formular an.
-1. Im **[!UICONTROL Paginierung]** Bereich, wählen Sie ![Ordner](/help/forms/using/assets/folder-icon.png) im **[!UICONTROL Nachher]** -Feld.
-1. Auswählen **[!UICONTROL Gehe zu Seite]**, wählen Sie die dritte Masterseite aus und wählen Sie **[!UICONTROL Auswählen]**.
-1. Auswählen ![Speichern](/help/forms/using/assets/save_icon.png) , um die Eigenschaften zu speichern.
-AEM Forms wendet die dritte Master-Seite auf das Bedienfeld und alle nachfolgenden Bedienfelder im adaptiven Formular an.
+1. Wählen Sie den Bereich aus, um die zweite Musterseite anzuwenden, und wählen Sie dann ![Konfigurieren](assets/cmppr.png) aus.
+1. Wählen Sie im Bereich **[!UICONTROL Seitenumbruch]** im Feld **[!UICONTROL Ort]** die Option ![Ordner](/help/forms/using/assets/folder-icon.png) aus.
+1. Wählen Sie **[!UICONTROL Auf Seite]**, dann die zweite Musterseite und schließlich **[!UICONTROL Auswählen]** aus.
+AEM Forms wendet die zweite Musterseite auf den Bereich und alle nachfolgenden Bereiche im adaptiven Formular an.
+1. Wählen Sie im Bereich **[!UICONTROL Seitenumbruch]** im Feld **[!UICONTROL Nachher]** die Option ![Ordner](/help/forms/using/assets/folder-icon.png) aus.
+1. Wählen Sie **[!UICONTROL Wechseln zu Seite]**, dann die dritte Musterseite und schließlich **[!UICONTROL Auswählen]** aus.
+1. Wählen Sie ![Speichern](/help/forms/using/assets/save_icon.png) aus, um die Eigenschaften zu speichern.
+AEM Forms wendet die dritte Musterseite auf den Bereich und alle nachfolgenden Bereiche im adaptiven Formular an.
 
 >[!NOTE]
 >

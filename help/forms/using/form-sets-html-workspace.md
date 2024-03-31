@@ -1,6 +1,6 @@
 ---
 title: Arbeiten mit Formularsätzen in AEM Forms Workspace
-description: Ein Formularsatz ist eine Sammlung von HTML5 Formularen, die gruppiert sind und Endbenutzern als Formularsatz präsentiert werden. Erfahren Sie, wie Sie in AEM Forms Workspace mit Formularsätzen arbeiten können.
+description: Ein Formularsatz ist eine Sammlung von HTML5-Formularen, die gruppiert sind und Endbenutzenden als einzelner Formularsatz bereitgestellt werden. Erfahren Sie, wie Sie in AEM Forms Workspace mit Formularsätzen arbeiten können.
 contentOwner: vishgupt
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,15 +11,15 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
 # Arbeiten mit Formularsätzen in AEM Forms Workspace{#working-with-formsets-in-aem-forms-workspace}
 
-Ein Formularsatz ist eine Sammlung von HTML5 Formularen, die gruppiert sind und Endbenutzern als Formularsatz präsentiert werden. Wenn der Benutzer einen Formularsatz ausfüllt, werden diese Informationen von einem Formular auf ein anderes übertragen. Der Formularsatz kann dann mit nur einem Klick gesendet werden. Weitere Informationen zu Formularsätzen und dazu, wie sie eingerichtet werden, finden Sie unter [Formularsätze in AEM Forms](../../forms/using/formset-in-aem-forms.md).
+Ein Formularsatz ist eine Sammlung von HTML5-Formularen, die gruppiert sind und Endbenutzenden als einzelner Formularsatz bereitgestellt werden. Wenn der Benutzer einen Formularsatz ausfüllt, werden diese Informationen von einem Formular auf ein anderes übertragen. Der Formularsatz kann dann mit nur einem Klick gesendet werden. Weitere Informationen zu Formularsätzen und dazu, wie sie eingerichtet werden, finden Sie unter [Formularsätze in AEM Forms](../../forms/using/formset-in-aem-forms.md).
 
-AEM Forms Workspace unterstützt Formularsätze. Mit Formularsätzen können mehrere mit einem Dienst oder Prozess verknüpfte Formulare gruppiert werden, um einen Geschäftsprozess zu automatisieren und den Endbenutzern vorzustellen. In einem solchen Szenario können die Benutzer den gesamten Satz als einen Satz ausfüllen und es ist nicht erforderlich, einzelne Formulare oder Prozesse zu archivieren, zu senden und zu verfolgen.
+AEM Forms Workspace unterstützt Formularsätze. Mit Formularsätzen können mehrere zu einem Dienst oder Prozess gehörige Formulare gruppiert werden, um einen Geschäftsprozess zu automatisieren, und anschließend für die Endbenutzenden bereitgestellt werden. In einem solchen Fall können die Benutzenden den gesamten Formularsatz als einzelnes Formular ausfüllen. Es besteht zudem keine Notwendigkeit, einzelne Formulare oder Prozesse zu archivieren, zu übermitteln oder nachzuverfolgen.
 
 ## Ein Formularsatz in der AEM Forms Workspace-App dem Startpunkt zuweisen  {#attaching-a-formset-to-startpoint-in-an-aem-forms-workspace-app-br}
 

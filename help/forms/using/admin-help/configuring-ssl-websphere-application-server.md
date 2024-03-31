@@ -10,25 +10,25 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1220'
-ht-degree: 18%
+ht-degree: 100%
 
 ---
 
 # Konfigurieren von SSL für WebSphere Application Server {#configuring-ssl-for-websphere-application-server}
 
-Dieser Abschnitt enthält die folgenden Schritte zum Konfigurieren von SSL mit Ihrem IBM WebSphere Application Server.
+In diesem Abschnitt werden die folgenden Schritte zum Konfigurieren von SSL für IBM WebSphere Application Server beschrieben.
 
-## Erstellen eines lokalen Benutzerkontos auf WebSphere {#creating-a-local-user-account-on-websphere}
+## Erstellen eines lokalen Benutzerkontos unter WebSphere {#creating-a-local-user-account-on-websphere}
 
-Für die Aktivierung von SSL benötigt WebSphere Zugriff auf ein Benutzerkonto in der Benutzerregistrierung des lokalen Betriebssystems, das zur Verwaltung des Systems berechtigt ist:
+Zum Aktivieren von SSL muss WebSphere in der Benutzerregistrierung des lokalen Betriebssystems Zugriff auf ein Benutzerkonto mit Administratorrechten haben:
 
-* (Windows) Erstellen Sie einen Windows-Benutzer, der der Gruppe Administratoren angehört und berechtigt ist, als Teil des Betriebssystems zu fungieren. (Siehe [Windows-Benutzer für WebSphere erstellen](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere).
-* (Linux, UNIX) Der Benutzer kann ein Root-Benutzer oder ein anderer Benutzer mit Root-Berechtigungen sein. Wenn Sie SSL unter WebSphere aktivieren, verwenden Sie die Serverkennung und das Kennwort dieses Benutzers.
+* (Windows) Erstellen Sie einen Windows-Benutzer oder eine -Benutzerin in der Administratorgruppe, der bzw. die berechtigt ist, als Teil des Betriebssystems zu agieren. (Siehe [Erstellen von Windows-Benutzenden für WebSphere](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere).)
+* (Linux, UNIX) Der Benutzer bzw. die Benutzerin kann ein Root-Benutzer bzw. -Benutzerin oder eine andere Person mit Root-Berechtigungen sein. Wenn Sie SSL unter WebSphere aktivieren, verwenden Sie die Server-Kennung und das Kennwort dieser Person.
 
-### Linux- oder UNIX-Benutzer für WebSphere erstellen {#create-a-linux-or-unix-user-for-websphere}
+### Erstellen von Linux- oder UNIX-Benutzenden für WebSphere {#create-a-linux-or-unix-user-for-websphere}
 
-1. Melden Sie sich als Root-Benutzer an.
-1. Erstellen Sie einen Benutzer, indem Sie den folgenden Befehl an einer Eingabeaufforderung eingeben:
+1. Melden Sie sich als Root-Benutzer bzw. -Benutzerin an.
+1. Erstellen Sie einen Benutzer oder eine Benutzerin, indem Sie an einer Eingabeaufforderung den folgenden Befehl eingeben:
 
    * (Linux und Sun Solaris) `useradd`
    * (IBM AIX) `mkuser`
@@ -43,126 +43,126 @@ Für die Aktivierung von SSL benötigt WebSphere Zugriff auf ein Benutzerkonto i
 1. Öffnen Sie die Gruppendatei aus dem Ordner „/etc“ in einem Texteditor.
 1. Fügen Sie der Gruppe `root` den Benutzer hinzu, den Sie in Schritt 2 erstellt haben.
 1. Speichern und schließen Sie die Datei.
-1. (UNIX mit aktiviertem SSL) Starten und beenden Sie WebSphere als Root-Benutzer.
+1. (UNIX mit aktiviertem SSL) Starten und beenden Sie WebSphere als Root-Benutzer bzw. -Benutzerin.
 
-### Windows-Benutzer für WebSphere erstellen {#create-a-windows-user-for-websphere}
+### Erstellen von Windows-Benutzenden für WebSphere {#create-a-windows-user-for-websphere}
 
-1. Melden Sie sich mit einem Administrator-Benutzerkonto bei Windows an.
-1. Auswählen **Start > Systemsteuerung > Verwaltung > Computerverwaltung > Lokale Benutzer und Gruppen**.
-1. Klicken Sie mit der rechten Maustaste auf Benutzer und wählen Sie **Neuer Benutzer**.
-1. Geben Sie einen Benutzernamen und ein Kennwort in die entsprechenden Felder ein und geben Sie in die übrigen Felder alle weiteren erforderlichen Informationen ein.
-1. Auswahl deaktivieren **Der Benutzer muss das Kennwort bei der nächsten Anmeldung ändern** klicken **Erstellen** und klicken Sie anschließend auf **Schließen**.
-1. Klicks **Benutzer**, klicken Sie mit der rechten Maustaste auf den erstellten Benutzer und wählen Sie **Eigenschaften**.
-1. Klicken Sie auf **Mitglied von** und klicken Sie auf **Hinzufügen**.
+1. Melden Sie sich über ein Administrator-Benutzerkonto bei Windows an.
+1. Wählen Sie **Start > Control Panel > Verwaltung > Computerverwaltung > Lokale Benutzer und Gruppen** aus.
+1. Klicken Sie mit der rechten Maustaste auf „Benutzer“ und wählen Sie **Neuer Benutzer** aus.
+1. Geben Sie in die entsprechenden Felder einen Benutzernamen und ein Kennwort ein und geben Sie weitere wichtige Informationen in die übrigen Felder ein.
+1. Deaktivieren Sie die Option **Benutzer muss Kennwort bei der nächsten Anmeldung ändern**, klicken Sie auf **Erstellen** und dann auf **Schließen**.
+1. Klicken Sie auf **Benutzer**, klicken Sie mit der rechten Maustaste auf die Person, die Sie erstellt haben, und wählen Sie dann **Eigenschaften** aus.
+1. Klicken Sie auf die Registerkarte **Mitgliedschaft** und dann auf **Hinzufügen**.
 1. Geben Sie in das Feld „Geben Sie die zu verwendenden Objektnamen ein“ den Namen `Administrators`. Klicken Sie auf „Namen überprüfen“, um sicherzustellen, dass der Gruppenname richtig ist.
-1. Klicks **OK** und klicken Sie anschließend auf **OK** erneut.
-1. Auswählen **Start > Systemsteuerung > Verwaltung > Lokale Sicherheitsrichtlinie > Lokale Richtlinien**.
-1. Klicken Sie auf &quot;Zuweisung von Benutzerrechten&quot;, klicken Sie dann mit der rechten Maustaste auf Als Teil des Betriebssystems arbeiten und wählen Sie Eigenschaften aus.
-1. Klicks **Benutzer oder Gruppe hinzufügen**.
-1. Geben Sie im Feld &quot;Geben Sie die zu verwendenden Objektnamen ein&quot;den Namen des Benutzers ein, den Sie in Schritt 4 erstellt haben, und klicken Sie auf **Namen überprüfen** , um sicherzustellen, dass der Name korrekt ist, und klicken Sie dann auf **OK**.
-1. Klicks **OK** , um das Dialogfeld Eigenschaften des Betriebssystems zu schließen.
+1. Klicken Sie auf **OK** und dann erneut auf **OK**.
+1. Wählen Sie **Start > Control Panel > Verwaltung > Lokale Sicherheitsrichtlinie > Lokale Richtlinien** aus.
+1. Klicken Sie auf „Zuweisen von Benutzerrechten“ und anschließend mit der rechten Maustaste auf „Einsetzen als Teil des Betriebssystems“. Wählen Sie dann „Eigenschaften“ aus.
+1. Klicken Sie auf **Benutzer oder Gruppe hinzufügen**.
+1. Geben Sie in das Feld „Geben Sie die zu verwendenden Objektnamen ein“ den Namen der von Ihnen in Schritt 4 erstellten Person ein und klicken Sie auf **Namen überprüfen**, um sicherzustellen, dass der Name richtig ist. Klicken Sie dann auf **OK**.
+1. Klicken Sie auf **OK**, um das Dialogfeld „Eigenschaften von Einsetzen als Teil des Betriebssystems“ zu schließen.
 
-### WebSphere für die Verwendung des neu erstellten Benutzers als Administrator konfigurieren {#configure-websphere-to-use-the-newly-created-user-as-administrator}
+### Konfigurieren Sie WebSphere, um den neu erstellten Benutzer bzw. die neu erstellte Benutzerin als Admin festzulegen {#configure-websphere-to-use-the-newly-created-user-as-administrator}
 
-1. Stellen Sie sicher, dass WebSphere ausgeführt wird.
-1. Wählen Sie in WebSphere Administrative Console **Sicherheit > Globale Sicherheit**.
-1. Wählen Sie unter &quot;Administrative security&quot;die Option **Administratorrollen**.
-1. Klicken Sie auf Hinzufügen und führen Sie die folgenden Schritte aus:
+1. Vergewissern Sie sich, dass WebSphere ausgeführt wird.
+1. Wählen Sie in WebSphere Administrative Console **Security (Sicherheit) > Global Security (Globale Sicherheit)** aus.
+1. Wählen Sie unter „Administrative security“ (Administrative Sicherheit) die Option **Administrative user roles** (Administrative Benutzerrollen) aus.
+1. Klicken Sie auf „Add“ (Hinzufügen) und führen Sie folgende Schritte aus:
 
    1. Geben Sie im Suchfeld ***** ein und klicken Sie auf „Suchen“.
-   1. Klicks **Administrator** unter Rollen.
-   1. Fügen Sie den neu erstellten Benutzer der Rolle &quot;Mapped to role&quot;hinzu und ordnen Sie ihn Administrator zu.
+   1. Klicken Sie unter „Roles“ (Rollen) auf **Administrator** (Admin).
+   1. Fügen Sie die neu erstellte Benutzerin bzw. den neu erstellten Benutzer zu „Mapped to role“ (Zugeordnet zur Rolle) hinzu und ordnen Sie diese Person der Rolle „Administrator“ (Admin) zu.
 
-1. Klicks **OK** und speichern Sie Ihre Änderungen.
-1. Starten Sie das WebSphere-Profil neu.
+1. Klicken Sie auf **OK**, um die Änderungen zu speichern.
+1. Starten Sie das WebSphere-Profil erneut.
 
-## Administrative Sicherheit aktivieren {#enable-administrative-security}
+## Aktivieren der administrativen Sicherheit {#enable-administrative-security}
 
-1. Wählen Sie in WebSphere Administrative Console **Sicherheit > Globale Sicherheit**.
-1. Klicks **Sicherheitskonfigurationsassistent**.
-1. Sichern **Anwendungssicherheit aktivieren** aktiviert ist. Klicken Sie auf **Weiter**.
-1. Auswählen **Federated Repositorys** und klicken **Nächste**.
-1. Geben Sie die festzulegenden Berechtigungen an und klicken Sie auf **Nächste**.
+1. Wählen Sie in der WebSphere Administrative Console **Security (Sicherheit) > Global Security (Globale Sicherheit)**.
+1. Klicken Sie auf **Security Configuration Wizard**.
+1. Stellen Sie sicher, dass das Kontrollkästchen **Enable Application Security (Anwendungssicherheit aktivieren)** aktiviert ist. Klicken Sie auf **Weiter**.
+1. Wählen Sie **Federated Repositories** und klicken Sie auf **Weiter**.
+1. Geben Sie die gewünschten Anmeldeinformationen an und klicken Sie auf **Weiter**.
 1. Klicken Sie auf **Beenden**.
-1. Starten Sie das WebSphere-Profil neu.
+1. Starten Sie das WebSphere-Profil erneut.
 
    WebSphere verwendet zunächst den standardmäßigen Keystore und TrustStore.
 
-## Aktivieren Sie SSL (benutzerdefinierten Schlüssel und TrustStore) {#enable-ssl-custom-key-and-truststore}
+## Aktivieren Sie SSL (Custom Key und Truststore) {#enable-ssl-custom-key-and-truststore}
 
-Truststores und Keystores können mit dem Dienstprogramm ikeyman oder der Admin Console erstellt werden. Damit ikeyman ordnungsgemäß funktioniert, stellen Sie sicher, dass der WebSphere-Installationspfad keine Klammern enthält.
+Truststores und Keystores können mithilfe ides Dienstprogramms „ikeyman“ oder über die Admin Console erstellt werden. Vergewissern Sie sich, dass der WebSphere-Installationspfad keine Klammern enthält, damit „ikeyman“ ordnungsgemäß funktioniert.
 
-1. Wählen Sie in WebSphere Administrative Console **Sicherheit > SSL-Zertifikat und Schlüsselverwaltung**.
-1. Klicks **Keystores und Zertifikate** unter Verwandte Artikel.
-1. Im **Schlüsselspeicherverwendung** Dropdown-Liste, stellen Sie sicher, dass **SSL-Schlüssel** ausgewählt ist. Klicken Sie auf **Neu**.
+1. Wählen Sie in der WebSphere Administrative Console **Security > SSL certificate and key management**.
+1. Klicken Sie unter „Related items“ (Verwandte Eleme)nte auf **Keystores and certificates**.
+1. Vergewissern Sie sich, dass in der Dropdown-Liste **Key store usages (Keystore-Verwendungen)** die Option **SSL Keystores** ausgewählt ist. Klicken Sie auf **Neu**.
 1. Geben Sie einen logischen Namen und eine Beschreibung ein.
-1. Geben Sie den Pfad an, in dem Ihr Keystore erstellt werden soll. Wenn Sie bereits einen Keystore über &quot;ikeyman&quot;erstellt haben, geben Sie den Pfad zur Keystore-Datei an.
-1. Geben Sie das Kennwort an und bestätigen Sie es.
-1. Wählen Sie den Keystore-Typ aus und klicken Sie auf **Anwenden**.
-1. Speichern Sie die Master-Konfiguration.
-1. Klicks **Persönliches Zertifikat**.
-1. Wenn Sie bereits einen Keystore mit ikeyman erstellt haben, wird Ihr Zertifikat angezeigt. Andernfalls müssen Sie ein neues selbstsigniertes Zertifikat hinzufügen, indem Sie die folgenden Schritte ausführen:
+1. Geben Sie den Pfad an, in dem Ihr Keystore erstellt werden soll. Wenn Sie bereits ein Keystore mit „ikeyman“ erstellt haben, geben Sie den Pfad zur Keystore-Datei an.
+1. Geben Sie ein Kennwort ein und bestätigen Sie es.
+1. Wählen Sie den Keystore-Typ aus und klicken Sie auf **Übernehmen**.
+1. Speichern Sie die primäre Konfiguration.
+1. Klicken Sie auf **Persönliches Zertifikat**.
+1. Wenn Sie bereits einen mithilfe von „ikeyman“ erstellten Keystore hinzugefügt haben, wird Ihr Zertifikat angezeigt. Andernfalls müssen Sie ein neues selbstsigniertes Zertifikat hinzufügen, indem Sie die folgenden Schritte ausführen:
 
-   1. Auswählen **Erstellen > Selbstsigniertes Zertifikat**.
-   1. Geben Sie die entsprechenden Werte im Zertifikatformular an. Achten Sie darauf, Alias und den allgemeinen Namen als vollständig qualifizierten Domänennamen des Computers zu verwenden.
+   1. Klicken Sie auf **Erstellen > Selbstsigniertes Zertifikat**.
+   1. Geben Sie die entsprechenden Werte im Zertifikatsformular an. Behalten Sie den Alias und den allgemeinen Namen als vollständig qualifizierten Domain-Namen des Computers bei.
    1. Klicken Sie auf **Übernehmen**.
 
-1. Wiederholen Sie die Schritte 2 bis 10 für die Erstellung eines TrustStore.
+1. Wiederholen Sie die Schritte 2 bis 10 zum Erstellen eines Truststores.
 
-## Anwenden von benutzerdefiniertem Keystore und TrustStore auf den Server {#apply-custom-keystore-and-truststore-to-the-server}
+## Anwenden des benutzerdefinierten Keystores und Truststores auf den Server {#apply-custom-keystore-and-truststore-to-the-server}
 
-1. Wählen Sie in WebSphere Administrative Console **Sicherheit > SSL-Zertifikat und Schlüsselverwaltung**.
-1. Klicks **Konfiguration der Endpunktsicherheit verwalten**. Die lokale Topologiemap wird geöffnet.
-1. Wählen Sie unter &quot;Eingehend&quot;das direkt untergeordnete Element der Knoten aus.
-1. Wählen Sie unter Verwandte Elemente die Option **SSL-Konfigurationen**.
-1. Auswählen **NodeDeafultSSLSetting**.
-1. Wählen Sie aus den Dropdownlisten Truststore name and keystore name den von Ihnen erstellten benutzerdefinierten Truststore und Keystore aus.
+1. Wählen Sie in der WebSphere Administrative Console **Security > SSL certificate and key management**.
+1. Klicken Sie auf **Manage endpoint security configuration (Konfiguration der Endpunktsicherheit verwalten)**. Die lokale Topologiekarte wird geöffnet.
+1. Wählen Sie unter „Inbound“ das direkt untergeordnete Element der Knoten.
+1. Wählen Sie unter „Related items“ (Verwandte Elemente) die Option **SSL configurations**.
+1. Wählen Sie **NodeDefaultSSLSetting**.
+1. Wählen Sie aus den Dropdown-Listen „Truststore-Name“ und „Keystore-Name“ den benutzerdefinierten Truststore und Keystore aus, die Sie erstellt haben.
 1. Klicken Sie auf **Übernehmen**.
-1. Speichern Sie die Master-Konfiguration.
-1. Starten Sie das WebSphere-Profil neu.
+1. Speichern Sie die primäre Konfiguration.
+1. Starten Sie das WebSphere-Profil erneut.
 
    Ihr Profil wird jetzt mit benutzerdefinierten SSL-Einstellungen und Ihrem Zertifikat ausgeführt.
 
 ## Aktivieren der Unterstützung für native AEM Forms {#enabling-support-for-aem-forms-natives}
 
-1. Wählen Sie in WebSphere Administrative Console **Sicherheit > Globale Sicherheit**.
-1. Erweitern Sie im Abschnitt Authentifizierung den **RMI/IIOP-Sicherheit** und klicken **CSIv2 Inbound Communications**.
-1. Stellen Sie sicher, dass **SSL-gestützt** wird in der Dropdownliste Transport ausgewählt.
-1. Starten Sie das WebSphere-Profil neu.
+1. Wählen Sie in der WebSphere Administrative Console **Security > Global Security**.
+1. Erweitern Sie im Abschnitt „Authentication“ die **RMI/IIOP security** und klicken Sie auf **CSIv2 inbound communications (Eingehende CSIv2-Kommunikationen)**.
+1. Vergewissern Sie sich, dass **SSL-unterstützt** in der Dropdown-Liste „Transport“ ausgewählt ist.
+1. Starten Sie das WebSphere-Profil erneut.
 
-## WebSphere zum Konvertieren von URLs konfigurieren, die mit https beginnen {#configuring-websphere-to-convert-urls-that-begins-with-https}
+## Konfigurieren von WebSphere zum Konvertieren von URLs, die mit „https“ beginnen {#configuring-websphere-to-convert-urls-that-begins-with-https}
 
-Um eine URL zu konvertieren, die mit HTTPS beginnt, fügen Sie dem WebSphere-Server ein Signiererzertifikat für diese URL hinzu.
+Um eine URL zu konvertieren, die mit „https“ beginnt, fügen Sie dem WebSphere-Server ein Signer-Zertifikat für diese URL hinzu.
 
-**Erstellen eines Signiererzertifikats für eine HTTPS-aktivierte Site**
+**Erstellen eines Signer-Zertifikats für eine https-aktivierte Site**
 
-1. Stellen Sie sicher, dass WebSphere ausgeführt wird.
-1. Navigieren Sie in WebSphere Administrative Console zu den Signiererzertifikaten und klicken Sie dann auf Security > SSL Certificate and Key Management > Key Stores and Certificates > NodeDefaultTrustStore > Signer Certificates.
-1. Klicken Sie auf Aus Port abrufen und führen Sie die folgenden Aufgaben aus:
+1. Vergewissern Sie sich, dass WebSphere ausgeführt wird.
+1. Navigieren Sie in WebSphere Administrative Console zu den Signaturgeberzertifikaten und klicken Sie auf „Security“ (Sicherheit) > „SSL Certificate and Key Management“ (Verwaltung von SSL-Zertifikaten und Schlüsseln) > „Key Stores and Certificates“ (Schlüsselspeicher und Zertifikate) > „NodeDefaultTrustStore“ > „Signer certificates“ (Signaturgeberzertifikate).
+1. Klicken Sie auf „Retrieve from port“ (Abrufen von Port) und führen Sie die folgenden Aufgaben aus:
 
-   * Geben Sie in das Feld &quot;Host&quot;die URL ein. Geben Sie beispielsweise `www.paypal.com`.
-   * Geben Sie in das Feld „Port“ den Wert `443` ein. Dieser Port ist der standardmäßige SSL-Anschluss.
-   * Geben Sie in das Feld &quot;Alias&quot;einen Alias ein.
+   * Geben Sie in das Feld „Host“ die URL ein. Geben Sie beispielsweise `www.paypal.com`.
+   * Geben Sie in das Feld „Port“ den Wert `443` ein. Dieser Port ist der standardmäßige SSL-Port.
+   * Geben Sie in das Feld „Alias“ einen Alias ein.
 
-1. Klicken Sie auf &quot;Signiererinformationen abrufen&quot;und überprüfen Sie dann, ob die Informationen abgerufen werden.
-1. Klicken Sie auf Anwenden und dann auf Speichern.
+1. Klicken Sie auf „Retrieve Signer Information“ (Signaturgeberinformationen abrufen) und prüfen Sie, ob die Informationen abgerufen werden.
+1. Klicken Sie auf „Apply“ (Anwenden) und dann auf „Save“ (Speichern).
 
-Die HTML-zu-PDF-Konvertierung von der Site, deren Zertifikat hinzugefügt wird, funktioniert jetzt mit dem Generate PDF-Dienst.
+Die Konvertierung von HTML in PDF von der Site, deren Zertifikat hinzugefügt wurde, erfolgt nun über den Generate PDF-Dienst.
 
 >[!NOTE]
 >
->Damit eine Anwendung von in WebSphere aus eine Verbindung zu SSL-Sites herstellen kann, ist ein Signiererzertifikat erforderlich. Sie wird von Java Secure Socket Extensions (JSSE) verwendet, um Zertifikate zu überprüfen, die die Remote-Seite der Verbindung während eines SSL-Handshake sendet.
+>Es ist ein Signaturgeberzertifikat erforderlich, damit eine Anwendung von WebSphere aus eine Verbindung zu SSL-Sites herstellen kann. Dieses wird von Java Secure Socket Extensions (JSSE) dazu verwendet, die Zertifikate zu prüfen, die die Remote-Seite der Verbindung bei einem SSL-Handshake sendet.
 
-## Dynamische Ports konfigurieren {#configuring-dynamic-ports}
+## Konfigurieren von dynamischen Ports {#configuring-dynamic-ports}
 
-IBM WebSphere lässt nicht mehrere Aufrufe an ORB.init() zu, wenn die globale Sicherheit aktiviert ist. Informationen über die dauerhafte Einschränkung finden Sie unter https://www-01.ibm.com/support/docview.wss?uid=swg1PK58704.
+IBM WebSphere erlaubt nicht mehrere ORB.init()-Aufrufe, wenn die globale Sicherheit aktiviert wurde. Informationen über die dauerhafte Einschränkung finden Sie unter https://www-01.ibm.com/support/docview.wss?uid=swg1PK58704.
 
-Führen Sie die folgenden Schritte aus, um den Port als dynamisch festzulegen und das Problem zu beheben:
+Führen Sie die folgenden Schritte aus, um den Port als dynamisch festzulegen und das Problem zu lösen:
 
-1. Wählen Sie in WebSphere Administrative Console **Server** > **Servertypen** > **WebSphere-Anwendungsserver**.
-1. Wählen Sie im Bereich Voreinstellungen den gewünschten Server aus.
-1. Im **Konfiguration** Registerkarte unter **Kommunikation** Abschnitt erweitern **Ports** und klicken Sie auf **Details**.
-1. Klicken Sie auf die folgenden Portnamen und ändern Sie die **Portnummer** auf 0 klicken und auf **OK**.
+1. Wählen Sie in WebSphere Administrative Console **Servers** (Server) > **Server Types** (Server-Typen) > **WebSphere application servers** (WebSphere-Anwendungs-Server) aus.
+1. Wählen Sie in den Voreinstellungen Ihren Server aus.
+1. Erweitern Sie auf der Registerkarte **Configuration** (Konfiguration) unter **Communications** (Kommunikation) den Abschnitt **Ports** und klicken Sie auf **Details**.
+1. Klicken Sie auf die folgenden Port-Namen, ändern Sie nach Bedarf die **Port-Nummer** zu 0 und klicken Sie auf **OK**.
 
    * `ORB_LISTENER_ADDRESS`
    * `SAS_SSL_SERVERAUTH_LISTENER_ADDRESS`

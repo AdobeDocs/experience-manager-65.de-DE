@@ -1,6 +1,6 @@
 ---
 title: Vorlagen für Empfehlungsschreiben
-description: AEM Forms bietet Layoutvorlagen für Correspondence Management-Briefe, mit denen Sie Briefe schnell erstellen können.
+description: AEM Forms bietet Correspondence Management-Layout-Vorlagen, mit denen Sie schnell Briefe erstellen können.
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: correspondence-management
@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 21%
+ht-degree: 100%
 
 ---
 
@@ -21,78 +21,78 @@ Correspondence Management bietet Briefvorlagen im [AEM Forms-Add-on-Paket](https
 
 * Klassisch
 * Klassisch einfach
-* Ausbalancierte Linke
-* Ausbalancierte rechts
-* Visuell links
+* Symmetrisch links
+* Symmetrisch rechts
+* Sichtbar links
 * Sichtbar oben
-* Visual Top - Classic
+* Sichtbar oben – klassisch
 
-Nach der Installation des Pakets werden die Layout-Vorlagen (XDPs) im Ordner templates unter folgendem Speicherort aufgelistet:
+Nach der Installation des Pakets werden die Layout-Vorlagen (XDPs) im Vorlagenordner unter diesem Pfad aufgelistet:
 
 `https://'[server]:[port]'/[context-root]/aem/forms.html/content/dam/formsanddocuments/templates-folder`
 
-Im Folgenden finden Sie die allgemeinen Felder in allen Vorlagen dieses Pakets:
+Diese allgemeinen Datenfelder sind in allen Vorlagen dieses Pakets enthalten:
 
 * Datum
 * Anrede
-* Text schließen
-* Signaturtext
+* Schließender Text
+* Unterschriften-Text
 
 ![Alle CM-Briefvorlagen aufgeführt](assets/templatescorrespondence.png)
 
-Nach der Installation des Packages AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES werden die Vorlagen im Ordner templates aufgelistet
+Nach der Installation des Pakets AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES werden die Vorlagen im Vorlagenordner aufgeführt.
 
 ## Klassisch {#classic}
 
-Die klassische Vorlage ist mit einem Logo oben für einen einfachen professionellen Brief geeignet.
+Mit einem Logo oben eignet sich die klassische Vorlage für einen einfachen professionellen Brief.
 
 ![klassisch](assets/classic.png)
 
-PDF einer Vorschau eines Briefs, der mit der klassischen Vorlage erstellt wurde
+PDF-Vorschau eines mithilfe der klassischen Vorlage erstellten Briefs
 
 ## Klassisch einfach {#classic-simple}
 
-Enthält Felder zum Erfassen von Telefonnummer und E-Mail-Adresse. Eine klassische einfache Vorlage ähnelt der klassischen Vorlage, es gibt jedoch keine Felder, in denen Sie die Adresse des Empfängers eingeben können.
+Enthält Felder zum Erfassen von Telefonnummer und E-Mail-Adresse. Eine klassische einfache Vorlage ähnelt der klassischen Vorlage. Allerdings enthält sie keine Felder, in denen Sie die Empfängeradresse eingeben können.
 
 ![Kontaktangabenfragment](assets/classicsimple.png)
 
-PDF einer Vorschau eines Briefs, der mit der Vorlage Klassisches Einfaches erstellt wurde
+PDF-Vorschau eines mithilfe der klassischen einfachen Vorlage erstellten Briefs
 
-## Ausbalancierte Linke {#balanced-left}
+## Symmetrisch links {#balanced-left}
 
-Die Vorlage Ausgewogene Linke enthält das Logo links neben dem Brief.
+Die Vorlage „Symmetrisch links“ zeigt das Logo links neben dem Brief.
 
 ![symmetrischlinks](assets/balancedleft.png)
 
-PDF-Vorschau eines Briefs, der mit der Vorlage &quot;Ausgewogene Linke&quot;erstellt wurde
+PDF-Vorschau eines mithilfe der Vorlage „Symmetrisch links“ erstellten Briefs
 
-## Ausbalancierte rechts {#balanced-right}
+## Symmetrisch rechts {#balanced-right}
 
-Die Vorlage &quot;Ausgewogene rechte&quot;enthält das Firmenlogo auf der linken Seite und bietet Platz für die Eingabe der Empfängeradresse auf dem Brief selbst. Die Vorlage &quot;Ausgewogene rechte&quot;enthält auch eine Fußzeile, die fließt, wenn Ihr Brief über mehrere Seiten verfügt.
+Die Vorlage „Symmetrisch rechts“ zeigt das Firmenlogo auf der linken Seite und bietet Platz für die Eingabe der Empfängeradresse in dem Brief selbst. Die Vorlage „Symmetrisch rechts“ enthält auch eine Fußzeile, die auf allen Seiten eines Briefs angezeigt wird.
 
 ![symmetrischrechts](assets/balancedright.png)
 
-PDF-Vorschau eines Briefs, der mit der Vorlage &quot;Ausgewogenes rechts&quot;erstellt wurde
+PDF-Vorschau eines mithilfe der Vorlage „Symmetrisch rechts“ erstellten Briefs
 
-## Visuell links {#visual-left}
+## Sichtbar links {#visual-left}
 
-Die Vorlage &quot;Visuell links&quot;hat einen Seitenkopf links auf der Seite, wobei das Firmenlogo über dem Seitenkopf platziert ist. Die Vorlage &quot;Visuell links&quot;hat ein Betrefffeld, aber keine Fußzeile.
+Die Vorlage „Sichtbar links“ verfügt über einen Seitenkopf links auf der Seite, wobei das Firmenlogo über dem Seitenkopf platziert ist. Die Vorlage „Sichtbar links“ hat eine Betreffzeile, aber keine Fußzeile.
 
 ![sichtbarlinks](assets/visualleft.png)
 
-PDF-Vorschau eines Briefs, der mit der Vorlage &quot;Visuell links&quot;erstellt wurde
+PDF-Vorschau eines mithilfe der Vorlage „Sichtbar links“ erstellten Briefs
 
 ## Sichtbar oben {#visual-top}
 
-Die Vorlage &quot;Sichtbar oben&quot;hat oben einen visuellen Rand. Die Vorlage &quot;Sichtbar oben&quot;enthält ein Feld zur Eingabe der Empfängeradresse auf der Seite selbst. Die Vorlage &quot;Sichtbar oben&quot;enthält das Betrefffeld und eine Fußzeile, die für Briefe fließt, die sich auf mehrere Seiten erstrecken.
+Die Vorlage „Sichtbar oben“ hat einen sichtbaren Rand oben. Die Vorlage „Sichtbar oben“ verfügt über ein Feld für die Eingabe der Empfängeradresse auf der Seite selbst. Die Vorlage „Sichtbar oben“ hat eine Betreffzeile und eine Fußzeile, die auf allen Seiten eines Briefs angezeigt wird.
 
 ![visualtop](assets/visualtop.png)
 
-PDF der Vorschau eines Briefs, der mit der Vorlage &quot;Sichtbar oben&quot;erstellt wurde
+PDF-Vorschau eines mithilfe der Vorlage „Sichtbar oben“ erstellten Briefs
 
-## Visual Top - Classic {#visual-top-classic}
+## Sichtbar oben – klassisch {#visual-top-classic}
 
-Die Vorlage &quot;Visual Top - Classic&quot;enthält oben auf der Seite eine Kopfzeile mit dem Firmenlogo. Die Vorlage &quot;Visual Top - Classic&quot;verfügt über ein Feld, in das ein Betreff, aber keine Fußzeile eingegeben werden kann.
+Die Vorlage „Sichtbar oben – klassisch“ zeigt oben auf der Seite eine Kopfzeile mit dem Firmenlogo. Die Vorlage „Sichtbar oben – klassisch“ hat ein Feld, in dem ein Betreff eingegeben werden kann, aber keine Fußzeile.
 
 ![visualtopclassic](assets/visualtopclassic.png)
 

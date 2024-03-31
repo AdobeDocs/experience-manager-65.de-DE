@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '790'
-ht-degree: 90%
+ht-degree: 97%
 
 ---
 
@@ -60,9 +60,9 @@ Sie erstellen eine **adaptive Vorlage** und wenden das Design auf die Vorlage an
 
    * Ordner `less`: Enthält die Variablendateien `less`, in denen Sie die Variablen `less` und `less mixins` definieren, die für die Verwaltung der .css-Stile verwendet werden.
 
-     Dieser Ordner besteht aus `less`-Variablendateien, `less`-Mixin-Dateien, `less`-Dateien, die Stile unter Verwendung von Mixins definieren, und Variablen. Und all diese `less` -Dateien werden dann in styles.less importiert.
+     Dieser Ordner besteht aus `less`-Variablendateien, `less`-Mixin-Dateien, `less`-Dateien, die Stile unter Verwendung von Mixins definieren, und Variablen. Diese `less`-Dateien werden dann alle in „styles.less“ importiert.
 
-   * Ordner `css`: Enthält die .css-Dateien, in denen Sie die im Thema zu verwendenden statischen Stile definieren.
+   * Ordner `css`: Enthält die .css-Dateien, in denen Sie die im Design zu verwendenden statischen Stile definieren.
 
    **LESS-Variablendateien**: Dies sind die Dateien, in denen Sie die Variablen definieren oder überschreiben, die beim Definieren von CSS-Stilen verwendet werden.
 
@@ -75,7 +75,7 @@ Sie erstellen eine **adaptive Vorlage** und wenden das Design auf die Vorlage an
 
    `/apps/clientlibs/fd/af/third-party/less/variables.less`
 
-   Sie können die `less` Variablen, die mit adaptiven Formularen bereitgestellt werden, können Sie diese Variablen überschreiben oder Sie können neue `less` Variablen.
+   Sie können die mit den adaptiven Formularen bereitgestellten `less`-Variablen verwenden. Sie können diese Variablen überschreiben oder neue `less`-Variablen erstellen.
 
    >[!NOTE]
    >
@@ -132,11 +132,11 @@ Sie erstellen eine **adaptive Vorlage** und wenden das Design auf die Vorlage an
    }
    ```
 
-   **Styles.less-Datei:** Verwenden Sie diese Datei, um alle `less` -Dateien (Variablen, Mixins, Stile), die Sie in der Client-Bibliothek verwenden müssen.
+   **Datei „Styles.less“:** Verwenden Sie diese Datei, um alle `less`-Dateien (Variablen, Mixins, Stile) einzubeziehen, die Sie in der Client-Bibliothek verwenden müssen.
 
    In der folgenden Musterdatei `styles.less` kann die Importanweisung in jeder beliebigen Reihenfolge platziert werden.
 
-   Die Anweisungen zum Importieren der folgenden `.less` -Dateien sind obligatorisch:
+   Die Anweisungen zum Importieren der folgenden `.less`-Dateien sind obligatorisch:
 
    * `globalvariables.less`
    * `layoutvariables.less`

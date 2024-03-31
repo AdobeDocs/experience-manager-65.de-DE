@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Mit der Aktion „E-Mail senden“ kann ein Autor automatisch eine E-Mail an ein
 
 1. Öffnen Sie ein adaptives Formular im **[!UICONTROL Bearbeitungsmodus]**.
 
-1. Im **[!UICONTROL Inhalt]** Registerkarte auswählen **[!UICONTROL Formular-Container]** und wählen ![konfigurieren](assets/configure-icon.svg) , um die Eigenschaften des adaptiven Formulars anzuzeigen.
+1. Wählen Sie auf der Registerkarte **[!UICONTROL Inhalt]** die Option **[!UICONTROL Formular-Container]** und dann ![Konfigurieren](assets/configure-icon.svg) aus, um die Eigenschaften des adaptiven Formulars anzuzeigen.
 
 1. Wählen Sie im Abschnitt **[!UICONTROL Übermittlung]** die Option **[!UICONTROL E-Mail senden]** aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]**.
 

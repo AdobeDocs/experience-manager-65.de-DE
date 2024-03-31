@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager 6.5
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ DevOp-Strategien sollen unter anderem zur Vermeidung folgender Probleme beitrage
 
 ## Umgebungen {#environments}
 
-Eine Adobe Experience Manager-Bereitstellung (AEM) besteht in der Regel aus mehreren Umgebungen, die für unterschiedliche Zwecke auf unterschiedlichen Ebenen verwendet werden:
+Die Bereitstellung von Adobe Experience Manager (AEM) besteht gewöhnlich aus mehreren Umgebungen, die für unterschiedliche Zwecke auf unterschiedlichen Ebenen verwendet werden:
 
 * [Entwicklung](#development)
 * [Qualitätssicherung](#quality-assurance)
@@ -50,10 +50,10 @@ Die Entwicklenden sind für die Entwicklung und Anpassung des vorgeschlagenen Pr
 * setzen das Design um;
 * entwickeln die notwendigen Dienste und Skripte, um die geforderten Funktionalitäten umzusetzen.
 
-Die Konfiguration der [development](/help/sites-developing/best-practices.md) -Umgebung kann von verschiedenen Faktoren abhängen, allerdings umfasst sie:
+Die Konfiguration der [Entwicklungsumgebung](/help/sites-developing/best-practices.md) kann von verschiedenen Faktoren abhängen, meist besteht sie jedoch aus:
 
 * einem integrierten Entwicklungssystem mit Versionssteuerung, um eine integrierte Codebasis zur Verfügung zu stellen. Dies wird dazu verwendet, die von den jeweiligen Entwicklern in der jeweiligen Entwicklungsumgebung verwendete Programmierung zusammenzuführen und zu konsolidieren;
-* eine persönliche Umgebung für jeden Entwickler, für gewöhnlich auf einem lokalen Rechner. In angemessenen Abständen wird der Code mit dem Versionskontrollsystem synchronisiert
+* eine persönliche Umgebung für jeden Entwickler, für gewöhnlich auf einem lokalen Rechner. Der Code wird in geeigneten Abständen mit dem Versionskontrollsystem synchronisiert.
 
 Je nach Größe Ihres Systems kann die Entwicklungsumgebung sowohl über Autoren- als auch Veröffentlichungsinstanzen verfügen.
 
@@ -78,7 +78,7 @@ Eine Produktionsumgebung besteht aus mindestens einer Autoreninstanz und einer V
 * [Autoreninstanz](#author) für die Eingabe von Inhalt;
 * [Veröffentlichungsinstanz](#publish) für Inhalte, die den Besuchern/Benutzern zugänglich gemacht werden.
 
-Je nach Größe des Projekts besteht es oft aus mehreren Autoreninstanzen, mehreren Veröffentlichungsinstanzen oder beidem. Auf niedrigerer Ebene kann das Repository in mehrere Instanzen gebündelt werden.
+Je nach Größe des Projekts besteht sie häufig aus mehreren Autoren- und/oder Veröffentlichungsinstanzen. Auf niedrigerer Ebene kann das Repository in mehrere Instanzen gebündelt werden.
 
 #### Autor {#author}
 
@@ -91,11 +91,11 @@ Autoreninstanzen befinden sich meist hinter der internen Firewall. Das ist die U
 
 Aktivierte Inhalte werden gebündelt und in der Replikationswarteschlange der Autorenumgebung abgelegt. Der Replikationsprozess überträgt den Inhalt dann in die Veröffentlichungsumgebung.
 
-Um in einer Veröffentlichungsumgebung generierte Daten rückgängig zu machen, fragt ein Replikations-Listener in der Autorenumgebung die Veröffentlichungsumgebung ab und ruft diese Inhalte aus dem Postausgang für die Rückwärtsreplikation der Veröffentlichungsumgebung ab.
+Um die in der Veröffentlichungsumgebung erstellten Daten umgekehrt zurück in die Autoreninstanz zu replizieren, durchsucht ein Replikations-Listener in der Autorenumgebung die Veröffentlichungsumgebung und ruft solche Inhalte aus dem Postausgang für die umgekehrte Replikation der Veröffentlichungsumgebung ab.
 
 #### Veröffentlichen {#publish}
 
-Eine Veröffentlichungsumgebung befindet sich in der demilitarisierten Zone (DMZ). Dies ist die Umgebung, in der Besucher auf Ihre Inhalte zugreifen (z. B. über eine Website oder eine Mobile App) und damit interagieren, sei es öffentlich oder in Ihrem Intranet. Die Veröffentlichungsumgebung:
+Eine Veröffetlichungsumgebung befindet sich normalerweise in der „Demilitarized Zone“ (DMZ). Dies ist die Umgebung, in der die Besucherinnen und Besucher auf Ihren Inhalt zugreifen (beispielsweise über die Website oder über eine App) und damit interagieren, sei es öffentlich oder innerhalb Ihres Intranets. Die Veröffentlichungsumgebung:
 
 * enthält alle aus der Autorenumgebung replizierten Inhalte;
 * macht Inhalte für Besucher zugänglich;
@@ -106,16 +106,16 @@ Die Veröffentlichungsumgebung erzeugt Ihren Inhalt dynamisch in Echtzeit und er
 
 ## Code-Verschiebung   {#code-movement}
 
-Immer Code von unten nach oben verteilen:
+Propagieren Sie den Code immer von unten nach oben:
 
 * Der Code wird zunächst in der lokalen Umgebung entwickelt und dann in die Entwicklungsumgebungen integriert,
 * gefolgt von gründlichen Tests in den QA-Umgebungen,
 * und wird dann abermals in den Staging-Umgebungen getestet.
 * Der Code sollte erst danach in den Produktionsumgebungen bereitgestellt werden.
 
-Der Code (z. B. benutzerdefinierte Webanwendungsfunktionen und Designvorlagen) wird durch den Export und Import von Paketen zwischen den verschiedenen Inhalts-Repositorys übertragen. Ggf. kann diese Replikation als automatischer Prozess konfiguriert werden.
+Der Code (z. B. angepasste Funktionalitäten von Web-Anwendungen und Design-Vorlagen) wird durch den Export und Import von Datenpaketen zwischen den verschiedenen Inhalts-Repositorys übertragen. Ggf. kann diese Replikation als automatischer Prozess konfiguriert werden.
 
-AEM Projekte stellen häufig Trigger-Code bereit:
+AEM-Projekte lösen häufig die Bereitstellung von Code aus:
 
 * Automatisch: zur Übertragung an die Entwicklungs- und QA-Umgebungen.
 * Manuell: Die Bereitstellung für die Staging- und Produktionsumgebungen erfolgt kontrollierter und häufig manuell. Bei Bedarf ist jedoch eine Automatisierung möglich.
@@ -132,11 +132,11 @@ Die Produktionsinhalte sollten von der Produktionsumgebung in die Staging-Umgebu
 
 >[!NOTE]
 >
->Dies bedeutet nicht, dass Staging-Inhalte kontinuierlich mit der Produktion synchronisiert werden müssen. Regelmäßige Aktualisierungen sind ausreichend, aber vor allem vor dem Testen einer neuen Iteration von Code. Die Inhalte in den QS- und Entwicklungsumgebungen müssen nicht so häufig aktualisiert werden. Sie sollten eine gute Darstellung des Produktionsinhalts sein.
+>Dies bedeutet nicht, dass die Staging-Inhalte kontinuierlich mit der Produktion synchronisiert werden müssen. Regelmäßige Updates reichen aus, jedoch sollten diese besonders vor dem Testen einer neuen Code-Iteration erfolgen. Die Inhalte in den Qualitätssicherungs- und Entwicklungsumgebungen müssen nicht gleich häufig aktualisiert werden. Sie sollten die Produktionsinhalte gut widerspiegeln.
 
 Inhalte können übertragen werden:
 
 * zwischen verschiedenen Umgebungen – durch den Export und Import von Paketen;
-* Zwischen verschiedenen Instanzen - durch direkte Replikation ([AEM](/help/sites-deploying/replication.md)), den Inhalt (über eine HTTP- oder HTTPS-Verbindung).
+* zwischen verschiedenen Instanzen – durch direktes Replizieren ([AEM-Replikation](/help/sites-deploying/replication.md)) des Inhalts (mithilfe einer HTTP- oder HTTPS-Verbindung).
 
 ![chlimage_1-1](assets/chlimage_1-1.png)

@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '332'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -27,15 +27,15 @@ Standardmäßig sind Formularportal-Komponenten nicht verfügbar. Führen Sie di
 
 1. Führen Sie für die Seiten, die eine statische Vorlage verwenden, die folgenden Schritte aus:
 
-   1. Wählen Sie im Seitenkopf die Option ![Arbeitsfläche-Dropdown](assets/canvas-drop-down.png) > **Design** , um die Seite im Designmodus zu öffnen.
-   1. Wählen Sie eine beliebige Komponente (mit blauem Rahmen) aus und klicken Sie auf ![Feldebene](assets/field-level.png) , um das Absatzsystem auszuwählen, das die aktuelle Komponente enthält.
-   1. Wählen Sie im Absatzsystem die Option ![settings_icon](assets/settings_icon.png) , um das Dialogfeld &quot;Bearbeiten&quot;für das Absatzsystem zu öffnen.
+   1. Tippen Sie in der Kopfzeile der Seite auf ![canvas-drop-down](assets/canvas-drop-down.png) > **Design**, um die Seite im Design-Modus zu öffnen.
+   1. Wählen Sie eine beliebige Komponente (mit blauem Rahmen) und dann ![field-level](assets/field-level.png) aus, um das Absatzsystem auszuwählen, das die aktuelle Komponente enthält.
+   1. Wählen Sie im Absatzsystem ![settings_icon](assets/settings_icon.png) aus, um das Dialogfeld „Bearbeiten“ für das Absatzsystem zu öffnen.
    1. Aktivieren Sie in der Liste **[!UICONTROL Zugelassene Komponenten]** die Kontrollkästchen für die Komponenten **[!UICONTROL Dokumentdienst]** und **[!UICONTROL Dokumentdienst-Eigenschaften]**. Wählen Sie **[!UICONTROL OK]** aus.
 
 1. Führen Sie für die Seiten, die eine dynamische Vorlage verwenden, die folgenden Schritte aus:
 
-   1. Wählen Sie im Seitenkopf die Option ![properties](assets/properties.png) > **Vorlage bearbeiten** , um die Vorlage der Seite zu öffnen.
-   1. Auswählen **Layout-Container** und wählen ![FeedManagement](/help/forms/using/assets/feedmanagement.png). Im **Zugelassene Komponenten** Registerkarte, aktivieren Sie die **Document Services- und Document Services-Eigenschaften** Optionen und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. Wählen Sie in der Kopfzeile der Seite ![Eigenschaften](assets/properties.png) > **Vorlage bearbeiten** aus, um die Vorlage der Seite zu öffnen.
+   1. Wählen Sie **Layout-Container** und![FeedManagement](/help/forms/using/assets/feedmanagement.png) aus. Aktivieren Sie auf der Registerkarte **Zugelassene Komponenten** die Optionen **Dokumentendienste und Dokumentendienste-Eigenschaften** und dann ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 >[!NOTE]
 >

@@ -8,7 +8,7 @@ role: Developer
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4796'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -118,7 +118,7 @@ AEM bietet Funktionen zum Konvertieren von Abfragen (beide Typen) in [persistier
 
 GraphQL-Abfragen über POST werden nicht empfohlen, da sie nicht zwischengespeichert werden. Daher ist der Dispatcher auf einer Standardinstanz so konfiguriert, dass er solche Abfragen blockiert.
 
-GraphQL unterstützt zwar auch GET-Anfragen, aber diese Anfragen können Einschränkungen (z. B. die Länge der URL) erreichen, die durch persistente Abfragen vermieden werden können.
+GraphQL unterstützt zwar auch GET-Anfragen, diese Anfragen können jedoch Einschränkungen unterliegen (z. B. in Bezug auf die URL-Länge), die durch persistierte Abfragen vermieden werden können.
 
 Weitere Informationen finden Sie unter [Aktivieren der Caching-Funktion für persistierte Abfragen](#enable-caching-persisted-queries).
 
@@ -197,7 +197,7 @@ Wenn Benutzende beispielsweise ein Inhaltsfragmentmodell mit dem Namen `Article`
 
    * Drei von ihnen wurden auf Benutzerseite kontrolliert: `author`, `main`, und `referencearticle`.
 
-   * Die anderen Felder wurden von AEM automatisch hinzugefügt und stellen hilfreiche Methoden zur Bereitstellung von Informationen zu einem bestimmten Inhaltsfragment dar. In diesem Beispiel (die Variable [Helper-Felder](#helper-fields)) `_path`, `_metadata`, `_variations`.
+   * Die anderen Felder wurden automatisch von AEM hinzugefügt und stellen hilfreiche Methoden dar, um Informationen zu einem bestimmten Inhaltsfragment bereitzustellen. In diesem Beispiel (die Variable [Helper-Felder](#helper-fields)) `_path`, `_metadata`, `_variations`.
 
 1. Nachdem ein Benutzer ein Inhaltsfragment basierend auf dem Modell „Article“ erstellt hat, kann es über GraphQL abgefragt werden. Beispiele finden Sie in den [Beispielabfragen](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#graphql-sample-queries) (basierend auf einer [Beispielstruktur für Inhaltsfragmente zur Verwendung mit GraphQL](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)).
 
@@ -261,7 +261,7 @@ GraphQL für AEM unterstützt eine Liste von Typen. Alle unterstützten Datentyp
 | Aufzählung |  `String` |  Wird verwendet, um eine Option aus einer Liste von Optionen anzuzeigen, die bei der Modellerstellung definiert wurde |
 |  Tags |  `[String]` |  Wird verwendet, um eine Liste von Zeichenfolgen anzuzeigen, die in AEM verwendete Tags darstellen |
 | Inhaltsreferenz |  `String` |  Wird verwendet, um den Pfad zu einem anderen Asset in AEM anzuzeigen |
-| Fragmentreferenz |  *Ein Modelltyp* <br><br>Einzelnes Feld: `Model` – Modelltyp, direkt referenziert <br><br>Multifeld, mit einem referenzierten Typ: `[Model]`: Array vom Typ `Model`, direkt referenziert von Array <br><br>Multifeld, mit mehreren referenzierten Typen: `[AllFragmentModels]`: Array aller Modelltypen, referenziert von Array mit Vereinigungstyp |  Wird verwendet, um auf ein oder mehrere Inhaltsfragmente bestimmter Modelltypen zu verweisen, die beim Erstellen des Modells definiert wurden |
+| Fragmentreferenz | *Ein Modelltyp* <br><br>Einzelnes Feld: `Model` – Modelltyp, direkt referenziert <br><br>Multifeld, mit einem referenzierten Typ: `[Model]`: Array vom Typ `Model`, direkt referenziert von Array <br><br>Multifeld, mit mehreren referenzierten Typen: `[AllFragmentModels]`: Array aller Modelltypen, referenziert von Array mit Vereinigungstyp  |  Wird verwendet, um auf ein oder mehrere Inhaltsfragmente bestimmter Modelltypen zu verweisen, die beim Erstellen des Modells definiert wurden |
 
 {style="table-layout:auto"}
 
@@ -603,7 +603,7 @@ Die Sortierkriterien:
    * das erste Feld in der Liste definiert die primäre Sortierreihenfolge
       * das zweite Feld wird verwendet, wenn zwei Werte des primären Sortierkriteriums gleich sind
       * das dritte Feld wird verwendet, wenn die ersten beiden Kriterien gleich sind, usw.
-   * gepunktete Notation, also `field1.subfield.subfield`usw.
+   * gepunktete Notation, das heißt `field1.subfield.subfield`, usw.
 * mit optionaler Sortierrichtung
    * ASC (aufsteigend) oder DESC (absteigend); standardmäßig wird ASC angewendet
    * die Richtung kann pro Feld angegeben werden. Diese Fähigkeit bedeutet, dass Sie ein Feld in aufsteigender Reihenfolge sortieren können, ein anderes in absteigender Reihenfolge (name, firstName DESC)

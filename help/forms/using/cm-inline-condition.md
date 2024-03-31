@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1660'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Sie können eine Inline-Bedingung in einen Brief einfügen, indem Sie die Inline
 >
 >Wenn Ihre vorhandenen Assets alte Bedingungs-/Wiederholungsausdrücke einbeziehen (vor 6.2 SP1 CFP 4), zeigen die Assets die alte Syntax der Bedingung und Wiederholung an. Allerdings funktioniert die Bedingung oder Wiederholung. Die neuen und alten Bedingungs- oder Wiederholungsausdrücke sind miteinander kompatibel, um eine verschachtelte Mischung aus alten und neuen Bedingungs-/Wiederholungsausdrücken erstellen zu können.
 
-1. Wählen Sie im entsprechenden Textmodul den Teil des Textes aus, den Sie konditionalisieren möchten, und wählen Sie **Bedingung**.
+1. Wählen Sie im entsprechenden Textmodul den Textteil aus, für den Sie Bedingungen festlegen möchten, und wählen Sie dann **Bedingung** aus.
 
    ![1_selecttext](assets/1_selecttext.png)
 
@@ -57,9 +57,9 @@ Sie können eine Inline-Bedingung in einen Brief einfügen, indem Sie die Inline
    >
    >Leerer oder ungültiger Bedingungsausdruck kann nicht gespeichert werden. Damit der Ausdruck gespeichert werden kann, muss `${}` einen gültigen Bedingungsausdruck enthalten.
 
-1. Führen Sie die folgenden Schritte aus, um eine Bedingung für die Bewertung zu erstellen, ob der ausgewählte/bedingte Text im Brief angezeigt wird, und wählen Sie dann das Kontrollkästchen aus, um den Ausdruck zu speichern:
+1. Führen Sie die folgenden Schritte aus, um eine Bedingung zum Auswerten zu erstellen, ob der ausgewählte/bedingte Text im Brief angezeigt wird. Wählen Sie anschließend das Häkchen aus, um den Ausdruck zu speichern:
 
-   Wählen Sie ein DD-Element doppelt aus, um es in die Bedingung einzufügen. Fügen Sie den entsprechenden Operator ein und erstellen Sie die folgende Bedingung im Dialogfeld.
+   Doppeltippen Sie auf ein DD-Element, um es in die Bedingung einzufügen. Fügen Sie den entsprechenden Operator ein und erstellen Sie die folgende Bedingung im Dialogfeld.
 
    ```javascript
    ${DD_creditcard_Gender=="Male"}
@@ -67,7 +67,7 @@ Sie können eine Inline-Bedingung in einen Brief einfügen, indem Sie die Inline
 
    Weitere Informationen zum Erstellen eines Ausdrucks finden Sie unter **Erstellen von Ausdrücken und Remote-Funktionen mit dem Ausdrucksgenerator** im [Ausdrucksgenerator](../../forms/using/expression-builder.md). Der im Ausdruck angegebene Wert muss für das Element im Datenwörterbuch unterstützt werden. Weitere Informationen finden Sie unter [Datenwörterbuch](../../forms/using/data-dictionary.md).
 
-   Sobald die Bedingung eingefügt wurde, können Sie den Mauszeiger über den Griff auf der linken Seite der Bedingung bewegen, um die Bedingung anzuzeigen. Sie können das Handle auswählen, um das Popupmenü der Bedingung anzuzeigen, mit dem Sie die Bedingung bearbeiten oder entfernen können.
+   Sobald die Bedingung eingefügt wurde, können Sie den Mauszeiger über den Griff auf der linken Seite der Bedingung bewegen, um die Bedingung anzuzeigen. Sie können den Griff auswählen, um das Popup-Menü der Bedingung anzuzeigen, das es Ihnen ermöglicht, die Bedingung zu bearbeiten oder zu entfernen.
 
    ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editcondition_removeconditionpopup](assets/4_editconditionremoveconditionpopup.png)
 
@@ -108,13 +108,13 @@ Das folgende Beispiel zeigt die Schritte für die Verwendung der Wiederholungsfu
 
    ![2_selection](assets/2_selection.png)
 
-1. Wählen Sie Wiederholen aus.
+1. Wählen Sie „Wiederholen“ aus.
 
    Das Dialogfeld „Wiederholung“ wird angezeigt.
 
    ![3_repeatdialog](assets/3_repeatdialog.png)
 
-1. Wählen Sie Zeilenumbruch als Trennzeichen und ggf. Bedingung hinzufügen aus, um eine Regel zu erstellen. Sie können auch Text als Trennzeichen verwenden und die Textzeichen angeben, die als Trennzeichen verwendet werden sollen.
+1. Wählen Sie „Zeilenumbruch“ als Trennzeichen und bei Bedarf „Bedingung hinzufügen“ aus, um eine Regel zu erstellen. Sie können auch Text als Trennzeichen verwenden und die Textzeichen angeben, die als Trennzeichen verwendet werden sollen.
 
    Das Dialogfeld „Regel erstellen“ wird angezeigt. 
 
@@ -165,15 +165,15 @@ Das folgende Beispiel zeigt die Schritte für die Verwendung der Wiederholungsfu
 
    Um den statischen Text zusammen mit den DD-Elementen zu wiederholen, müssen Sie eine Wiederholungsfunktion anwenden, wie in den weiteren Schritten beschrieben.
 
-1. Wählen Sie den statischen Text und die DD-Elemente aus, die Sie wiederholen möchten, wie unten dargestellt:
+1. Wählen Sie den statischen Text und die DD-Elemente, die Sie wiederholen möchten, wie unten gezeigt:
 
    ![2_repeat_selecttext](assets/2_repeat_selecttext.png)
 
-1. Auswählen **Wiederholen**. Das Dialogfeld „Wiederholung“ wird mit einer leeren Inline-Bedingung angezeigt.
+1. Wählen Sie **Wiederholen** aus. Das Dialogfeld „Wiederholung“ wird mit einer leeren Inline-Bedingung angezeigt.
 
    ![3_repeat_dialog](assets/3_repeat_dialog.png)
 
-1. Fügen Sie bei Bedarf eine Bedingung ein, um die Transaktionen selektiv zu rendern, z. B. um Transaktionsbeträge zu rendern, die größer als 50 Cent sind:
+1. Falls erforderlich, fügen Sie eine Bedingung ein, um Transaktionen selektiv zu rendern, zum Beispiel um Transaktionsbeträge größer als 50 Cent zu rendern:
 
    ```javascript
    ${DD_creditcard_TransactionAmount > 0.5}
@@ -181,7 +181,7 @@ Das folgende Beispiel zeigt die Schritte für die Verwendung der Wiederholungsfu
 
    Andernfalls, wenn Sie die Informationen (hier Transaktionen) nicht selektiv rendern müssen, lassen Sie die Bedingung leer, indem Sie im Dialogfeld Folgendes löschen: `${}`. Das Speichern eines Wiederholungsausdrucks wird aktiviert, wenn das Fenster für den Wiederholungsausdruck leer ist (ohne ${}, wenn keine Wiederholung erforderlich ist) oder wenn es eine gültige Bedingung für die Wiederholung enthält.
 
-1. Wählen Sie ein Trennzeichen zur Formatierung des dynamischen Texts aus und wählen Sie das zu speichernde Häkchen aus:
+1. Wählen Sie ein Trennzeichen zur Formatierung von dynamischem Text aus und wählen Sie zum Speichern das Häkchen aus:
 
    * **Zeilenumbruch**: Fügt nach jedem Transaktionseintrag im Ausgabebrief einen Zeilenumbruch ein.
    * **Text**: Fügt das angegebene Textzeichen nach jedem Transaktionseintrag im Ausgabebrief ein.
@@ -190,7 +190,7 @@ Das folgende Beispiel zeigt die Schritte für die Verwendung der Wiederholungsfu
 
    ![4_repeat_hoverdetail](assets/4_repeat_hoverdetail.png)
 
-   Sie können das Handle auswählen, um das Popup-Menü der Wiederholung anzuzeigen, mit dem Sie das Wiederholungskonstrukt bearbeiten oder entfernen können.
+   Sie können den Griff auswählen, um das Popup-Menü der Wiederholung anzuzeigen, das es Ihnen ermöglicht, das Wiederholungskonstrukt zu bearbeiten oder zu entfernen.
 
    ![5_repeateditremove](assets/5_repeateditremove.png)
 

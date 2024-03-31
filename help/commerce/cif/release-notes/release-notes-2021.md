@@ -1,12 +1,12 @@
 ---
 title: Versionshinweise zu Adobe Experience Manager Content and Commerce 2021
-description: Versionshinweise zu Adobe Experience Manager Content and Commerce 2021.
+description: Versionshinweise 2021 für Adobe Experience Manager-Inhalt und Commerce.
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '1088'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

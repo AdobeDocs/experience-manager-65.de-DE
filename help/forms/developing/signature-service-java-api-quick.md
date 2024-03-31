@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '868'
-ht-degree: 86%
+ht-degree: 97%
 
 ---
 
@@ -43,7 +43,7 @@ AEM Forms JEE-Vorgänge können mit der stark typisierten AEM Forms-API ausgefü
 
 >[!NOTE]
 >
->Schnellstart für die Programmierung mit AEM Forms basiert auf dem Forms-Server, der auf JBoss Application Server und dem Windows-Betriebssystem Microsoft bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem, z. B. UNIX, verwenden, ersetzen Sie die Windows-spezifischen Pfade durch Pfade, die von dem jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungs-Server verwenden, müssen Sie ebenfalls sicherstellen, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Die Schnellstarts, die unter „Programmieren mit AEM Forms“ zu finden sind, basieren darauf, dass der Formular-Server auf einem JBoss-Anwendungs-Server und unter dem Betriebssystem Microsoft Windows bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem, z. B. UNIX, verwenden, ersetzen Sie die Windows-spezifischen Pfade durch Pfade, die von dem jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungs-Server verwenden, müssen Sie ebenfalls sicherstellen, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Schnellstart (SOAP-Modus): Hinzufügen eines Signaturfelds zu einem PDF-Dokument mithilfe der Java-API {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
 
@@ -163,7 +163,7 @@ Im folgenden Java-Codebeispiel wird ein Signaturfeld mit dem Namen *SignatureFie
 
 ## Schnellstart (SOAP-Modus): Abrufen von Signaturfeldnamen mit der Java-API {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}
 
-Im folgenden Java-Codebeispiel werden die Namen von Signaturfeldern in einem PDF-Dokument mit dem Namen *LoanSig.pdf*. (Siehe [Abrufen von Signaturfeldnamen](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
+Im folgenden Java-Code-Beispiel werden die Namen von Signaturfeldern in einem PDF-Dokument mit dem Namen *LoanSig.pdf* abgerufen. (Siehe [Abrufen von Signaturfeldnamen](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
 
 ```java
  /*
@@ -907,7 +907,7 @@ Im folgenden Codebeispiel wird ein PDF-Dokument zertifiziert, das auf einer PDF-
 
 ## Schnellstart (SOAP-Modus): Überprüfen einer digitalen Signatur mithilfe der Java-API {#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird eine digitale Signatur überprüft, die sich in einem signierten PDF-Dokument befindet, das auf einer PDF-Datei namens LoanSigned.pdf basiert. Die Überprüfungszeit ist auf die aktuelle Zeit eingestellt und die Option zur Sperrprüfung ist auf den bestmöglichen Aufwand eingestellt. (Siehe [Überprüfen digitaler Signaturen](#verifying-digital-signatures).)
+Im folgenden Java-Code-Beispiel wird eine digitale Signatur überprüft, die sich in einem signierten PDF-Dokument befindet, das auf einer PDF-Datei mit dem Namen „LoanSigned.pdf“ basiert. Die Überprüfungszeit ist auf die aktuelle Zeit eingestellt und die Option zur Sperrprüfung ist auf den bestmöglichen Aufwand eingestellt. (Siehe [Überprüfen digitaler Signaturen](#verifying-digital-signatures).)
 
 ```java
  /*
@@ -1071,7 +1071,7 @@ Im folgenden Java-Codebeispiel wird eine digitale Signatur überprüft, die sich
 
 ## Schnellstart (SOAP-Modus): Überprüfen mehrerer digitaler Signaturen mit der Java-API {#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api}
 
-Im folgenden Java-Codebeispiel werden mehrere digitale Signaturen überprüft, die sich in einem signierten PDF-Dokument befinden, das auf einer PDF-Datei namens LoanAllSigs.pdf basiert. Die Überprüfungszeit ist auf die aktuelle Zeit eingestellt und die Option zur Sperrprüfung ist auf den bestmöglichen Aufwand eingestellt. (Siehe [Überprüfung mehrerer digitaler Signaturen](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api).)
+Im folgenden Java-Code-Beispiel werden mehrere digitale Signaturen überprüft, die sich in einem signierten PDF-Dokument befinden, das auf einer PDF-Datei mit dem Namen „LoanAllSigs.pdf“ basiert. Die Überprüfungszeit ist auf die aktuelle Zeit eingestellt und die Option zur Sperrprüfung ist auf den bestmöglichen Aufwand eingestellt. (Siehe [Überprüfung mehrerer digitaler Signaturen](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api).)
 
 ```java
  /*

@@ -1,6 +1,6 @@
 ---
 title: Konsistenz- und Durchlaufprüfungen
-description: Erfahren Sie, wie Sie Konsistenz- und Durchlaufprüfungen durchführen.
+description: Erfahren Sie, wie Sie Konsistenz- und Ausnahmeprüfungen durchführen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,15 +10,15 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '147'
-ht-degree: 28%
+ht-degree: 100%
 
 ---
 
 # Konsistenz- und Durchlaufprüfungen{#consistency-and-traversal-checks}
 
-Bei der Aktualisierung kann es aufgrund von Arbeitsbereichsinkonsistenzen zu Problemen kommen. Sie können entweder ein Testupgrade durchführen, um zu sehen, ob dies ein Problem darstellt, oder die Konsistenzprüfungen als Präventivmaßnahme ausführen.
+Beim Aktualisieren können aufgrund von Arbeitsbereichsinkonsistenzen Probleme auftreten. Sie können eine Testaktualisierung ausführen, um anzuzeigen, ob dies ein Problem darstellt, oder Konsistenzüberprüfungen als Präventivmaßnahme ausführen.
 
-Wenn Sie eine Testaktualisierung durchführen, die aufgrund von Arbeitsbereichsinkonsistenzen fehlschlägt, werden in crx-quickstart/logs/crx/error.log Einträge ähnlich den folgenden angezeigt:
+Wenn Sie eine Testaktualisierung ausführen, die aufgrund von Arbeitsbereichsinkonsistenzen fehlschlägt, werden in der Datei „crx-quickstart/logs/crx/error.log“ Einträge angezeigt, die den folgenden ähneln:
 
 ```xml
 *ERROR* TarPersistenceManager: No bundle found for uuid 'deadbeef-cafe-babe-cafe-babecafebabe'
@@ -30,12 +30,12 @@ javax.jcr.RepositoryException: Error indexing workspace: Error indexing workspac
 
 ## Ausführen einer Konsistenzüberprüfung {#perform-a-consistency-check}
 
-Um eine Konsistenzprüfung durchzuführen, navigieren Sie zur Administrationsseite für das JMX-MBean **com.adobe.granite (Repository)**. Wechseln Sie auf dem AEM-Hauptbildschirm zu:
+Navigieren Sie zum Ausführen einer Konsistenzüberprüfung zur Verwaltungsseite für das JMX MBean **com.adobe.granite (Repository)**. Wechseln Sie auf dem AEM-Hauptbildschirm zu:
 
 **Tools > Webkonsole > Haupt (auf der Menüleiste) > JMX > com.adobe.granite (Repository)**
 
 In einer Standardinstallation befindet er sich hier: **[|Anzeigen|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
 
-Im **Aktivitäten** zwei Methoden finden: **`traversalCheck`** und **`consistencyCheck`**. Um eine Prüfung auszuführen, klicken Sie auf den Vorgang und geben Sie die gewünschten Parameter ein.
+Im Abschnitt **Vorgänge** der Seite finden Sie zwei Methoden: **`traversalCheck`** und **`consistencyCheck`**.  Klicken Sie zum Ausführen einer Überprüfung auf den Vorgang und geben Sie die gewünschten Parameter ein.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)

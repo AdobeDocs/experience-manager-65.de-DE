@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -31,8 +31,8 @@ Gehen Sie wie folgt vor, um ein benutzerdefiniertes Layout auf ein Feld anzuwend
 
 ### Anpassen des Layouts eines einzelnen Felds {#customize-layout-of-a-single-field}
 
-1. Öffnen Sie das Formular im **Stilmodus**. Um das Formular im Stilmodus zu öffnen, wählen Sie in der Seitensymbolleiste ![Arbeitsfläche-Dropdown](assets/canvas-drop-down.png) > **Stil**.
-1. In der Seitenleiste unter **Formularobjekte**, wählen Sie das Feld aus und klicken Sie auf die Schaltfläche &quot;Bearbeiten&quot; ![edit-button](assets/edit-button.png).
+1. Öffnen Sie das Formular im **Stilmodus**. Um das Formular im Stilmodus zu öffnen, wählen Sie in der Symbolleiste der Seite ![canvas-drop-down](assets/canvas-drop-down.png) > **Stil** aus.
+1. Wählen Sie in der Seitenleiste unter **Formularobjekte** das Feld und dann die Schaltfläche „Bearbeiten“ ![edit-button](assets/edit-button.png) aus.
 1. Wählen Sie den Status des Felds, das Sie anpassen möchten, und geben Sie den Stil für diesen Status an.
 
    ![Festlegen des Inline-Stils für ein Feld](assets/edit-error-state.png)
@@ -44,7 +44,7 @@ Mit AEM Forms können Sie jetzt ein Design erstellen und auf Ihr Formular anwend
 Indem Sie ein Design im Design-Editor erstellen, können Sie das Layout aller Felder im Formular anpassen. Nachdem Sie ein Design erstellt haben, führen Sie die folgenden Schritte aus, um es auf ein Formular anzuwenden:
 
 1. Öffnen Sie das Formular im Bearbeitungsmodus.
-1. Wählen Sie im Bearbeitungsmodus eine Komponente aus, wählen Sie dann ![field-leve](assets/field-level.png) > **Container eines adaptiven Formulars** und dann ![cmppr](assets/cmppr.png).
+1. Wählen Sie im Bearbeitungsmodus eine Komponente, ![field-level](assets/field-level.png) > **Container für ein adaptives Formular** und dann ![cmppr](assets/cmppr.png) aus.
 1. Wählen Sie in der Seitenleiste unter „Adaptives Formulardesign“ das Design aus, das Sie im Design-Editor erstellt haben.
 
 ## Erstellen eines benutzerdefinierten Feld-Layouts {#create-a-custom-field-layout}

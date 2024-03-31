@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -26,14 +26,14 @@ Sie können den Layout-Modus verwenden, um die Größe von Komponenten für alle
 Wählen Sie **Layout** aus der Dropdown-Liste, die oben in der Authoring-Oberfläche für die interaktive Kommunikation neben der Option **Vorschau** angezeigt wird. Das Formular wird im Layout-Modus angezeigt.
 
 1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente**.
-1. Erstellen Sie eine [Interaktive Kommunikation](../../forms/using/create-interactive-communication.md) oder öffnen Sie eine bestehende.
+1. Erstellen Sie eine [Interaktive Kommunikation](../../forms/using/create-interactive-communication.md) oder öffnen Sie eine bestehende. 
 1. Wählen Sie **Layout** aus der Dropdownliste, die oben neben der Option **Vorschau** angezeigt wird. Das Formular wird im Layout-Modus angezeigt.
 
    ![Layout-Modus für interaktive Kommunikationen](assets/layout_mode_ic_new.png)
 
 ## Anpassen der Größe von Komponenten {#resize-components}
 
-1. Wählen Sie im Layout-Modus die Komponente, deren Größe geändert werden soll. Die blauen Punkte werden am Beginn und am Ende des responsiven Rasters angezeigt.
+1. Wählen Sie im Layout-Modus die Komponente aus, deren Größe geändert werden soll. Die blauen Punkte werden am Beginn und am Ende des responsiven Rasters angezeigt.
 1. Ziehen Sie die blauen Punkte mit der Maus, um die Position der Komponente im responsiven Raster zu definieren.
 
    ![Ändern der Größe mit dem Layout-Modus](assets/layout_mode_resize_new_updated.png)
@@ -43,7 +43,7 @@ Wählen Sie **Layout** aus der Dropdown-Liste, die oben in der Authoring-Oberfl�
    * **Übergeordnet**: Wählen Sie das übergeordnete Element einer Komponente aus.
    * **In neue Zeile verschieben**: Versetzt die Komponente in die nächste Zeile, wenn sich mehrere Komponenten in derselben Zeile befinden.
 
-   Sie können alle Größenänderungen rückgängig machen und das Standard-Layout auf den Bereich anwenden, der skalierte Komponenten enthält, indem Sie die Option **[!UICONTROL Breakpoint-Layout zurücksetzen]** (![Breakpoint zurücksetzen](assets/reverttopreviouslypublishedversion.png) verwenden). Wählen Sie das übergeordnete Element der angepassten Komponente aus, um die Option anzuzeigen.
+   Sie können alle Größenänderungen rückgängig machen und das Standard-Layout auf den Bereich anwenden, der skalierte Komponenten enthält, indem Sie die Option **[!UICONTROL Breakpoint-Layout zurücksetzen]** (![Breakpoint zurücksetzen](assets/reverttopreviouslypublishedversion.png) verwenden). Wählen Sie das übergeordnete Element der skalierten Komponente aus, um die Option anzuzeigen.
 
    >[!NOTE]
    >
@@ -54,7 +54,7 @@ Wählen Sie **Layout** aus der Dropdown-Liste, die oben in der Authoring-Oberfl�
 **Ziel**: Sie möchten in einer interaktiven Kommunikation eine Tabellenkomponente und eine Bildkomponente einfügen und sie parallel zueinander positionieren.
 
 1. Fügen Sie die Tabellen- und Bildkomponenten mithilfe des Bearbeitungsmodus im Web-Kanal einer interaktiven Kommunikation ein. Die Bildkomponente wird nach der Tabellenkomponente angezeigt.
-1. Wechseln Sie in den Layout -Modus und wählen Sie die Komponente Tabelle aus. Die blauen Punkte zur Größenanpassung der Komponente werden in den Spalten 1 und 12 angezeigt.
+1. Wechseln Sie in den Layout-Modus und wählen Sie die Tabellenkomponente aus. Die blauen Punkte zur Größenanpassung der Komponente werden in den Spalten 1 und 12 angezeigt.
 1. Ziehen Sie per Drag-und-Drop den blauen Punkt von Spalte 12 in Spalte 6 des responsiven Rasters.
 
    ![Definieren des Endpunkts der Tabelle](assets/layout_mode_end_point_table_new.png)
@@ -63,13 +63,13 @@ Wählen Sie **Layout** aus der Dropdown-Liste, die oben in der Authoring-Oberfl�
 
    ![Tabelle und Bild parallel im Layout-Modus](assets/table_image_parallel_new.png)
 
-   Sie können die Bildkomponente auswählen und die Option **In neue Zeile gleiten lassen** wählen, die in der Symbolleiste verfügbar ist, um die Bildkomponente zur nächsten Zeile zu verschieben.
+   Sie können die Bildkomponente und dann die Option **In neue Zeile platzieren** auswählen, die in der Symbolleiste verfügbar ist, um die Bildkomponente zur nächsten Zeile zu verschieben.
 
 ## Ändern der Größe von Bereichen {#resize-panels-layout-mode}
 
 Führen Sie folgende Schritte aus, wenn Sie die Größe des gesamten Bereichs statt der Größe einzelner Komponenten ändern möchten:
 
-1. Wählen Sie eine der Komponenten im Bereich, dessen Größe Sie ändern möchten, und wählen Sie ![Übergeordnetes Element auswählen](assets/select_parent_icon.svg) aus und dann die erste Option in der Dropdown-Liste, wenn der Bereich der Komponente direkt übergeordnet ist.
+1. Wählen Sie eine der Komponenten im Bereich aus, dessen Größe Sie ändern möchten. Wählen Sie ![Übergeordnetes Element auswählen](assets/select_parent_icon.svg) und dann die erste Option in der Dropdown-Liste aus, wenn der Bereich der Komponente direkt übergeordnet ist.
 
    Die blauen Punkte werden am Beginn und am Ende des responsiven Rasters angezeigt.
 
@@ -80,13 +80,13 @@ Sie können die Schritte 1 und 2 wiederholen und mit ![Übergeordnetes Element a
 
 Führen Sie folgende Schritte aus, um die Anzahl der Spalten für einen Bereich zu definieren:
 
-1. Wählen Sie im Modus **[!UICONTROL Bearbeiten]** den Bereich, wählen Sie ![Konfigurieren](assets/configure_icon.png) aus und dann **[!UICONTROL Responsiv – alles auf der Seite ohne Navigation]** aus der Dropdown-Liste **[!UICONTROL Bereichs-Layout]**.
+1. Wählen Sie im Modus **[!UICONTROL Bearbeiten]** den Bereich und dann ![Konfigurieren](assets/configure_icon.png) aus. Wählen Sie anschließend **[!UICONTROL Responsiv – alles auf der Seite ohne Navigation]** aus der Dropdown-Liste **[!UICONTROL Bereichs-Layout]** aus.
 
-1. Wählen Sie ![Speichern](assets/save_icon.svg) aus, um die Änderungen zu speichern.
+1. Wählen Sie ![Speichern](assets/save_icon.svg), um die Eigenschaften zu speichern.
 
-1. Wählen Sie im Modus **[!UICONTROL Layout]** eine der Komponenten im Bereich, wählen Sie ![Übergeordnetes Element auswählen](assets/select_parent_icon.svg) aus und dann den jeweiligen Bereich.
+1. Wählen Sie im Modus **[!UICONTROL Layout]** eine der Komponenten im Bereich, dann ![Übergeordnetes Element auswählen](assets/select_parent_icon.svg) und anschließend den Bereich aus.
 
-1. Wählen Sie ![multi-column](assets/multi-column.svg) und wählen Sie die Spaltenanzahl aus der Dropdown-Liste aus. Die Anzahl der Spalten kann zwischen 1 und 12 liegen. Der Bereich wird in ein mehrspaltiges Layout unterteilt.
+1. Wählen Sie ![mit mehreren Spalten](assets/multi-column.svg) und dann die Spaltenanzahl aus der Dropdown-Liste aus. Die Anzahl der Spalten kann zwischen 1 und 12 liegen. Der Bereich wird in ein mehrspaltiges Layout unterteilt.
 
 ![mehrere Spalten im Layout-Modus](assets/multi-column-layout.png)
 
@@ -97,9 +97,9 @@ Sie können den Layout-Modus für Formulare mit altem responsivem Layout deaktiv
 Gehen Sie wie folgt vor, um den Layout-Modus zu deaktivieren:
 
 1. Wählen Sie **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Vorlagen]** und öffnen Sie die Vorlage, die im Formular im Modus **[!UICONTROL Bearbeiten]** verwendet wird.
-1. Wählen Sie den Dokumentcontainer im linken Bereich aus und wählen Sie **[!UICONTROL Richtlinie.]**
+1. Wählen Sie den Dokument-Container im linken Fensterbereich und dann **[!UICONTROL Richtlinie]** aus.
 
    ![Deaktivieren des Layout-Modus](assets/policy_disable_layout_mode.png)
 
-1. Wählen Sie auf die Registerkarte **[!UICONTROL Layout-Einstellungen]** aus und wählen Sie dann **[!UICONTROL Layout-Modus deaktivieren]**.
+1. Wählen Sie die Registerkarte **[!UICONTROL Layout-Einstellungen]** und dann **[!UICONTROL Layout-Modus deaktivieren]** aus.
 1. Wählen Sie ![Änderungen speichern](assets/save_icon.png), um die Vorlageneigenschaften zu speichern.

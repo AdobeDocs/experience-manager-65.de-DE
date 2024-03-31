@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1551'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Die Dynamic Media Classic-Videointegration erweitert die Reichweite optimierter 
 
 ## Informationen zu FFMPEG und Dynamic Media Classic {#about-ffmpeg-and-scene}
 
-Die Grundlage des standardmäßigen Videokodierungsprozesses ist die Verwendung der FFMPEG-basierten Integration mit Videoprofilen. Daher enthält der vordefinierte DAM-Aufnahme-Workflow die folgenden beiden ffmpeg-basierten Workflow-Schritte:
+Die Grundlage des standardmäßigen Videokodierungsprozesses ist die Verwendung der FFMPEG-basierten Integration mit Videoprofilen. Aus diesem Grund enthält der vorkonfigurierte Aufnahme-Workflow von DAM die folgenden ffmpeg-basierten Workflow-Schritte:
 
 * FFMPEG-Miniaturen
 * FFMPEG-Codierung
@@ -40,7 +40,7 @@ Wenn Sie die FFMPEG-basierte Videokodierung in Experience Manager konfiguriert u
 
 ## Unterstützte Formate {#supported-formats}
 
-Die folgenden Formate werden für die Scene7-Videokomponente unterstützt:
+Die folgenden Formate werden für die Scene7-Video-Komponente unterstützt:
 
 * F4V H.264
 * MP4 H.264
@@ -54,7 +54,7 @@ Die Entscheidung, wo Sie Ihre Video-Assets hochladen können, hängt von Folgend
 
 Wenn Sie eine oder beide Fragen mit „Ja“ beantworten können, laden Sie Ihr Video direkt in Adobe DAM hoch. Lautet die Antwort auf beide Fragen „nein“, sollten Sie Ihr Video direkt in Dynamic Media Classic hochladen. Der Workflow für die einzelnen Szenarien wird im folgenden Abschnitt beschrieben.
 
-### Wenn Sie Ihr Video direkt auf Adobe DAM hochladen {#if-you-are-uploading-your-video-directly-to-adobe-dam}
+### Wenn Sie Ihr Video direkt in Adobe DAM hochladen {#if-you-are-uploading-your-video-directly-to-adobe-dam}
 
 Wenn Sie einen Workflow oder eine Versionierung für Ihre Assets benötigen, laden Sie sie zuerst in Adobe DAM hoch. Der folgende Workflow wird empfohlen:
 
@@ -89,7 +89,7 @@ Wenn Sie keinen Workflow und keine Versionierung für Ihre Assets benötigen, la
    >
    >Adobe empfiehlt, entweder beide adaptive Videosets bei der Konfiguration der universellen Vorgaben oder die Option **[!UICONTROL Adaptive Videokodierung]** auszuwählen.
 
-1. Die ausgewählten Kodierungsprofile werden automatisch auf alle Videos angewendet, die in den für diese Scene7-Cloud-Konfiguration eingerichteten CQ DAM-Zielordner hochgeladen wurden. Sie können mehrere Scene7-Cloud-Konfigurationen mit verschiedenen Zielordnern einrichten, um bei Bedarf unterschiedliche Kodierungsprofile anzuwenden.
+1. Die ausgewählten Kodierungsprofile werden automatisch auf alle Videos angewendet, die in den von Ihnen für diese Scene7-Cloud-Konfiguration eingerichteten CQ DAM-Zielordner hochgeladen werden. Sie können mehrere Scene7-Cloud-Konfigurationen mit verschiedenen Zielordnern einrichten, um nach Bedarf verschiedene Kodierungsprofile anzuwenden.
 
 ## Aktualisieren von Viewer- und Kodierungsvorgaben {#updating-viewer-and-encoding-presets}
 
@@ -112,7 +112,7 @@ Um die Viewer- und Kodierungsvorgaben für Videos zu aktualisieren, da die Vorga
 
 Wenn Sie Experience Manager nutzen, haben Sie auf die Videokomponente, die in Sites verfügbar ist, und auf die Scene7-Videokomponente Zugriff. Diese Komponenten sind nicht austauschbar.
 
-Die Scene7-Videokomponente funktioniert nur für Scene7-Videos. Die Foundation-Komponente funktioniert mit Videos, die in Experience Manager (mit FFMPEG) gespeichert wurden, und Scene7-Videos.
+Die Scene7-Video-Komponente funktioniert nur für Scene7-Videos. Die Foundation-Komponente funktioniert mit Videos, die in Experience Manager (mit FFMPEG) gespeichert wurden, und Scene7-Videos.
 
 Die folgende Matrix verdeutlicht, wann welche Komponente verwendet wird:
 
@@ -150,7 +150,7 @@ Die verschiedenen Videokodierungsmethoden werden anhand der S7-Kodierungsvorgabe
 
 1. Wählen Sie in Experience Manager **[!UICONTROL Tools]** > **[!UICONTROL Konfigurationskonsole]** aus.
 1. Navigieren Sie in der **[!UICONTROL Konfigurationskonsole]** in der Navigationsstruktur zu **[!UICONTROL Tools]** > **[!UICONTROL DAM]** > **[!UICONTROL Videoprofile]**.
-1. Erstellen Sie ein S7-Videoprofil. Im **[!UICONTROL Neu]**. Menü auswählen **[!UICONTROL Seite erstellen]** und wählen Sie dann die Vorlage Scene7-Videoprofil aus. Geben Sie der neuen Videoprofilseite einen Namen und wählen Sie **[!UICONTROL Erstellen]** aus.
+1. Erstellen Sie ein S7-Videoprofil. Wählen Sie im Menu **[!UICONTROL Neu]** die Option **[!UICONTROL Seite erstellen]** und anschließend die Scene7-Video-Profilvorlage aus. Geben Sie der neuen Videoprofilseite einen Namen und wählen Sie **[!UICONTROL Erstellen]** aus.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
@@ -162,13 +162,13 @@ Die verschiedenen Videokodierungsmethoden werden anhand der S7-Kodierungsvorgabe
    |---|---|
    | Scene7-Cloud-Konfiguration | Die Cloud-Konfiguration, die für die Codierungsvorlagen verwendet werden soll |
    | Scene7-Kodierungsvorgabe | Die Codierungsvorgabe, mit der dieses Videoprofil verknüpft werden soll. |
-   | HTML5-Videotyp | Mit dieser Eigenschaft können Sie den Wert der Typeigenschaft des HTML5-Videoquellelements festlegen. Diese Informationen werden nicht von den S7-Kodierungsvorgaben bereitgestellt, sind aber für die korrekte Wiedergabe der Videos mithilfe des HTML5-Videoelements erforderlich. Eine Liste für gängige Formate wird bereitgestellt, kann jedoch für andere Formate überschrieben werden. |
+   | HTML5-Videotyp | Mit dieser Eigenschaft können Sie den Wert der Typeigenschaft des HTML5-Videoquellelements festlegen. Diese Information wird nicht von den S7-Kodierungsvorgaben bereitgestellt. Sie ist jedoch erforderlich, um die Videos anhand des HTML5-Video-Elements ordnungsgemäß zu rendern. Eine Liste für gängige Formate wird bereitgestellt, kann jedoch für andere Formate überschrieben werden. |
 
    Wiederholen Sie diesen Schritt für alle in der Cloud-Konfiguration ausgewählten Kodierungsvorgaben, die Sie in der Videokomponente verwenden möchten.
 
 #### Konfigurieren des Designs {#configuring-design}
 
-Die **[!UICONTROL Foundation-Video]** muss wissen, welche Videoprofile zum Erstellen der Videoquellenliste verwendet werden sollen. Öffnen Sie das Dialogfeld für das Design von Videokomponenten und konfigurieren Sie das Design der Komponenten für die Nutzung der neuen Videoprofile.
+Die **[!UICONTROL Foundation-Video-Komponente]** muss darüber informiert sein, welche Video-Profile verwendet werden sollen, damit sie die Video-Quellenliste erstellen kann. Öffnen Sie das Dialogfeld für das Design von Videokomponenten und konfigurieren Sie das Design der Komponenten für die Nutzung der neuen Videoprofile.
 
 >[!NOTE]
 >
@@ -176,7 +176,7 @@ Die **[!UICONTROL Foundation-Video]** muss wissen, welche Videoprofile zum Erste
 
 >[!NOTE]
 >
->Änderungen am Entwurf erfordern die Aktivierung des Designs, damit er bei der Veröffentlichung wirksam wird.
+>Bei Änderungen am Design ist eine Aktivierung des Designs erforderlich, damit sie für die Veröffentlichung übernommen werden.
 
 1. Öffnen Sie das Dialogfeld für das Design der **[!UICONTROL Foundation]**-Videokomponente und wechseln Sie auf die Registerkarte **[!UICONTROL Profile]**. Löschen Sie anschließend die vordefinierten Profile und fügen Sie die neuen S7-Videoprofile hinzu. Die Reihenfolge der Profilliste im Design-Dialogfeld definiert die Reihenfolge des Videoquellenelements beim Rendern.
 1. Bei Browsern, die kein HTML5 unterstützen, ermöglicht die Videokomponente ein Ausweichen auf Flash. Öffnen Sie das Dialogfeld für das Design der Videokomponenten und wechseln Sie auf die Registerkarte **[!UICONTROL Flash]**. Konfigurieren Sie die Einstellungen des Flash-Players und weisen Sie ein Ersatzprofil für den Flash-Player zu.
@@ -184,7 +184,7 @@ Die **[!UICONTROL Foundation-Video]** muss wissen, welche Videoprofile zum Erste
 #### Checkliste {#checklist}
 
 1. Erstellen Sie eine S7-Cloud-Konfiguration. Vergewissern Sie sich, dass die Videokodierungsvorgaben festgelegt sind und das Importprogramm ausgeführt wird.
-1. Erstellen Sie für jede in der Cloud-Konfiguration ausgewählte Videokodierungsvorgabe ein S7-Videoprofil.
+1. Erstellen Sie ein S7-Video-Profil für jede in der Cloud-Konfiguration ausgewählte Video-Kodierungsvorgabe.
 1. Die Videoprofile müssen aktiviert sein.
 1. Konfigurieren Sie das Design der **[!UICONTROL Foundation]**-Videokomponente auf Ihrer Seite.
 1. Aktivieren Sie das Design, sobald Sie mit Ihren Design-Änderungen fertig sind.

@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1762'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -57,20 +57,20 @@ Führen Sie die folgenden Schritte aus, um die Erweiterungen AEM Forms und [Adob
 
 1. Melden Sie sich bei Adobe Experience Cloud an und wählen Sie einen geeigneten Namen für das Unternehmen.
 
-1. Wählen Sie **[!UICONTROL Launch/Datenerfassung]** und dann **[!UICONTROL Zu Launch/Datenerfassung gehen]**.
+1. Wählen Sie **[!UICONTROL Launch/Datenerfassung]** und dann **[!UICONTROL Zu Launch/Datenerfassung gehen]** aus.
 
-1. Wählen Sie **[!UICONTROL Neue Eigenschaft]** und geben Sie einen Namen für die Konfiguration an.
+1. Wählen Sie **[!UICONTROL Neue Eigenschaft]** aus und geben Sie einen Namen für die Konfiguration an.
 
-1. Geben Sie einen Domain-Namen an und wählen Sie **[!UICONTROL Speichern]**, um die Eigenschaft zu speichern.
+1. Geben Sie einen Domain-Namen an und wählen Sie **[!UICONTROL Speichern]** aus, um die Eigenschaft zu speichern.
 
-1. Wählen Sie den Konfigurationsnamen, der in der Liste der Tag-Eigenschaften verfügbar ist.
+1. Wählen Sie den Konfigurationsnamen aus, der in der Liste der Tag-Eigenschaften verfügbar ist.
 
-1. Wählen Sie im Abschnitt **[!UICONTROL Authoring]** die Option **[!UICONTROL Erweiterungen]**.
+1. Wählen Sie im Abschnitt **[!UICONTROL Authoring]** die Option **[!UICONTROL Erweiterungen]** aus.
 
-1. Wählen Sie **[!UICONTROL Katalog]** und dann **[!UICONTROL Installieren]** für die **[!UICONTROL Adobe Experience Manager Forms]**-Erweiterung aus. **[!UICONTROL Adobe Experience Manager Forms]** wird in der Liste der installierten Erweiterungen auf der Registerkarte **Installiert** angezeigt.
+1. Wählen Sie **[!UICONTROL Katalog]** und dann **[!UICONTROL Installieren]** für die Erweiterung **[!UICONTROL Adobe Experience Manager Forms]** aus. **[!UICONTROL Adobe Experience Manager Forms]** wird in der Liste der installierten Erweiterungen auf der Registerkarte **Installiert** angezeigt.
 
-1. Wählen Sie **[!UICONTROL Installieren]** für die **[!UICONTROL Adobe Analytics]**-Erweiterung.
-1. Wählen Sie den Namen der Report Suite in den Dropdown-Listen **[!UICONTROL Entwicklungs-Report Suites]**, **[!UICONTROL Staging-Report Suites]** und **[!UICONTROL Produktions-Report Suites]** aus und wählen Sie **[!UICONTROL Speichern]**, um die Erweiterung zu speichern.
+1. Wählen Sie **[!UICONTROL Installieren]** für die **[!UICONTROL Adobe Analytics]**-Erweiterung aus.
+1. Wählen Sie den Namen der Report Suite in den Dropdown-Listen **[!UICONTROL Entwicklungs-Report Suites]**, **[!UICONTROL Staging-Report Suites]** und **[!UICONTROL Produktions-Report Suites]** und dann **[!UICONTROL Speichern]** aus, um die Erweiterung zu speichern.
 
 ### Konfigurieren von Datenelementen {#configure-data-elements}
 
@@ -100,9 +100,9 @@ Nach der Installation der Erweiterung **[!UICONTROL Adobe Experience Manager For
 
 Führen Sie die folgenden Schritte aus, um Datenelemente zu konfigurieren:
 
-1. Wählen Sie im Abschnitt **[!UICONTROL Authoring]** die Option **[!UICONTROL Datenelemente]**.
+1. Wählen Sie im Abschnitt **[!UICONTROL Authoring]** die Option **[!UICONTROL Datenelemente]** aus.
 
-1. Wählen Sie **[!UICONTROL Neues Datenelement erstellen]**.
+1. Wählen Sie **[!UICONTROL Neues Datenelement erstellen]** aus.
 
 1. Geben Sie einen Namen für das Datenelement an. Zum Beispiel „Formulartitel“ für ein Datenelement vom Typ Formulartitel.
 
@@ -110,7 +110,7 @@ Führen Sie die folgenden Schritte aus, um Datenelemente zu konfigurieren:
 
 1. Wählen Sie den **[!UICONTROL Datenelementtyp]** aus.
 
-1. Wählen Sie **[!UICONTROL Speichern]**, um das Datenelement zu speichern.
+1. Wählen Sie **[!UICONTROL Speichern]** aus, um das Datenelement zu speichern.
 
    >[!VIDEO](https://video.tv.adobe.com/v/337472)
 
@@ -118,21 +118,21 @@ Führen Sie die folgenden Schritte aus, um Datenelemente zu konfigurieren:
 
 Führen Sie die folgenden Schritte aus, um Regeln auf der Grundlage der Erweiterung **[!UICONTROL Adobe Experience Manager Forms]** zu erstellen:
 
-1. Wählen Sie im Abschnitt **[!UICONTROL Authoring]** die Option **[!UICONTROL Regeln]**.
+1. Wählen Sie im Abschnitt **[!UICONTROL Authoring]** die Option **[!UICONTROL Regeln]** aus.
 
-1. Wählen Sie **[!UICONTROL Neue Regel erstellen]**.
+1. Wählen Sie **[!UICONTROL Neue Regel erstellen]** aus.
 
 1. Geben Sie einen Namen für die Regel an. Zum Beispiel „Formularübermittlung“, um Formularübermittlungen aufzuzeichnen.
 
-1. Wählen Sie im Abschnitt **[!UICONTROL Ereignisse]** die Option **[!UICONTROL Hinzufügen]**.
+1. Wählen Sie im Abschnitt **[!UICONTROL Ereignisse]** die Option **[!UICONTROL Hinzufügen]** aus.
 
 1. Geben Sie **[!UICONTROL Adobe Experience Manager Forms]** als Name der Erweiterung an.
 
 1. Wählen Sie den Ereignistyp aus. Die Eingabe für das Feld **[!UICONTROL Name]** wird automatisch auf der Grundlage des ausgewählten Ereignistyps ausgefüllt.
 
-1. Wählen Sie **[!UICONTROL Änderungen beibehalten]**, um das Ereignis zu speichern.
+1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus, um das Ereignis zu speichern.
 
-1. Wählen Sie im Abschnitt **[!UICONTROL Aktionen]** die Option **[!UICONTROL Hinzufügen]**.
+1. Wählen Sie im Abschnitt **[!UICONTROL Aktionen]** die Option **[!UICONTROL Hinzufügen]** aus.
 
 1. Geben Sie **[!UICONTROL Adobe Analytics]** als Namen der Erweiterung an.
 
@@ -149,21 +149,21 @@ Führen Sie die folgenden Schritte aus, um Regeln auf der Grundlage der Erweiter
 1. Im Abschnitt **[!UICONTROL Props]** ordnen Sie die in der Dropdown-Liste verfügbaren Report Suite-Optionen den Datenelementen zu, die mit [Datenelemente konfigurieren](#configure-data-elements) definiert wurden.
 
    Zum Beispiel, um das Datenelement **Formulartitel** von AEM Forms an zu senden, wenn Sie ein Formular übermitteln:[!DNL Adobe Analytics]
-   1. Wählen Sie im Abschnitt **[!UICONTROL Props]** ein in der Report Suite verfügbare Eigenschaft für Formulartitel und wählen Sie dann das ![Datenbanksymbol](/help/forms/using/assets/database-icon.svg), um es dem in [Datenelemente konfigurieren](#configure-data-elements) erstellten Formulartitel zuzuordnen.
+   1. Wählen Sie im Abschnitt **[!UICONTROL Props]** ein in der Report Suite verfügbares Prop für Formulartitel und dann das ![Datenbanksymbol](/help/forms/using/assets/database-icon.svg) aus, um es dem unter [Datenelemente konfigurieren](#configure-data-elements) erstellten Formulartitel zuzuordnen.
 
       ![define-props](/help/forms/using/assets/define-props.png)
 
-   1. Wählen Sie **[!UICONTROL Weiteres hinzufügen]**, um der Liste weitere Datenelemente hinzuzufügen.
+   1. Wählen Sie **[!UICONTROL Weiteres hinzufügen]** aus, um der Liste weitere Datenelemente hinzuzufügen.
 
-1. Wählen Sie im Abschnitt **[!UICONTROL Ereignisse]** ein Ereignis aus den in der Report Suite verfügbaren Optionen aus und wählen Sie **[!UICONTROL Änderungen beibehalten]**.
+1. Wählen Sie im Abschnitt **[!UICONTROL Ereignisse]** ein Ereignis aus den in der Report Suite verfügbaren Optionen und dann **[!UICONTROL Änderungen beibehalten]** aus.
 
-1. Wählen Sie im Bereich **[!UICONTROL Aktionen]** das Symbol „+“ und geben Sie **[!UICONTROL Adobe Analytics]** als Namen der Erweiterung an.
+1. Wählen Sie im Abschnitt **[!UICONTROL Aktionen]** das Pluszeichen (+) aus und geben Sie **[!UICONTROL Adobe Analytics]** als Namen der Erweiterung an.
 
-1. Wählen Sie als Aktionstyp **[!UICONTROL Beacon senden]** aus. Wählen Sie im rechten Bereich **[!UICONTROL s.t()]**, um Daten an [!DNL Adobe Analytics] zu senden und als Seitenansicht zu behandeln, oder **[!UICONTROL s.tl()]**, um Daten an [!DNL Adobe Analytics] zu senden und nicht als Seitenansicht zu behandeln. Wählen Sie **[!UICONTROL Änderungen beibehalten]**.
+1. Wählen Sie als Aktionstyp **[!UICONTROL Beacon senden]** aus. Wählen Sie im rechten Bereich **[!UICONTROL s.t()]**, um Daten an [!DNL Adobe Analytics] zu senden und als Seitenansicht zu behandeln, oder **[!UICONTROL s.tl()]**, um Daten an [!DNL Adobe Analytics] zu senden und nicht als Seitenansicht zu behandeln. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
 
-1. Wählen Sie im Bereich **[!UICONTROL Aktionen]** das Symbol „+“ und geben Sie **[!UICONTROL Adobe Analytics]** als Namen der Erweiterung an.
+1. Wählen Sie im Abschnitt **[!UICONTROL Aktionen]** das Pluszeichen (+) aus und geben Sie **[!UICONTROL Adobe Analytics]** als Namen der Erweiterung an.
 
-1. Wählen Sie als Aktionstyp **[!UICONTROL Variablen löschen]** aus. Wählen Sie **[!UICONTROL Änderungen beibehalten]**. Nachdem Sie diese Schritte durchgeführt haben, wird der Abschnitt **[!UICONTROL Aktionen]** wie folgt angezeigt:
+1. Wählen Sie als Aktionstyp **[!UICONTROL Variablen löschen]** aus. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus. Nachdem Sie diese Schritte durchgeführt haben, wird der Abschnitt **[!UICONTROL Aktionen]** wie folgt angezeigt:
    ![Konfiguration von Aktionen](/help/forms/using/assets/actions-config.png)
 
    Passen Sie den Abschnitt **[!UICONTROL Aktionen]** Ihren Anforderungen entsprechend an. Sie können beispielsweise zwei Schritte **Beacon senden** in einem Aktionsfluss definieren, um in einem Schritt Daten an [!DNL Adobe Analytics] zu senden und als Seitenansicht zu behandeln und im zweiten Schritt Daten an [!DNL Adobe Analytics] zu senden und nicht als Seitenansicht zu behandeln.
@@ -183,13 +183,13 @@ Nachdem Sie die Datenelemente erstellt und in Regeln verwendet haben, müssen Si
 
 Führen Sie zum Veröffentlichen der Konfiguration folgende Schritte aus:
 
-1. Wählen Sie im Abschnitt **[!UICONTROL Veröffentlichen]** die Option **[!UICONTROL Fluss veröffentlichen]**.
+1. Wählen Sie im Abschnitt **[!UICONTROL Veröffentlichung]** die Option für den **[!UICONTROL Veröffentlichungsfluss]** aus.
 
-1. Wählen Sie **[!UICONTROL Bibliothek hinzufügen]**, geben Sie einen Namen an und wählen Sie die Umgebung für die Bibliothek aus.
+1. Wählen Sie **[!UICONTROL Bibliothek hinzufügen]** aus, geben Sie einen Namen an und wählen Sie die Umgebung für die Bibliothek aus.
 
-1. Wählen Sie **[!UICONTROL Alle geänderten Ressourcen hinzufügen]** und wählen Sie dann **[!UICONTROL Für Entwicklung speichern und erstellen]**.
+1. Wählen Sie **[!UICONTROL Alle geänderten Ressourcen hinzufügen]** und dann **[!UICONTROL Für Entwicklung speichern und erstellen]** aus.
 
-1. Wählen Sie im Abschnitt **[!UICONTROL Entwicklung]** ![Weitere Optionen](/help/forms/using/assets/more-options-icon.svg) und dann **[!UICONTROL Genehmigen und zur Produktion veröffentlichen]**.
+1. Wählen Sie im Abschnitt **[!UICONTROL Entwicklung]** das Element ![Weitere Optionen](/help/forms/using/assets/more-options-icon.svg) und dann **[!UICONTROL Genehmigen und zur Produktion veröffentlichen]** aus.
 
 1. Bestätigen Sie die Änderungen. Der Veröffentlichungsfluss wird kurz darauf im Abschnitt **[!UICONTROL Veröffentlicht]** angezeigt.
 
@@ -205,7 +205,7 @@ Führen Sie die folgenden Schritte aus, um eine Adobe Launch-Konfiguration zu er
 
 1. Gehen Sie in der AEM Forms-Autoreninstanz zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Launch-Konfigurationen]**.
 
-1. Wählen Sie einen Ordner aus, um die Konfiguration zu erstellen, und wählen Sie **[!UICONTROL Erstellen]**.
+1. Wählen Sie einen Ordner aus, um die Konfiguration zu erstellen, und dann **[!UICONTROL Erstellen]**.
 
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Titel für die Konfiguration an.
 
@@ -215,7 +215,7 @@ Führen Sie die folgenden Schritte aus, um eine Adobe Launch-Konfiguration zu er
 
 1. Wählen Sie den Namen der erstellten Eigenschaft, der bei der [Konfiguration von Adobe Analytics](#install-extensions) verwendet wurde.
 
-1. Wählen Sie **[!UICONTROL Speichern und schließen]**.
+1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
 1. Veröffentlichen Sie die Konfiguration.
 
@@ -224,9 +224,9 @@ Führen Sie die folgenden Schritte aus, um eine Adobe Launch-Konfiguration zu er
 Verwenden der [!DNL Adobe Launch]-Konfiguration in einem vorhandenen adaptiven Formular:
 
 1. Navigieren Sie in der AEM Forms-Autoreninstanz zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente]**.
-1. Wählen Sie das adaptive Formular aus und wählen Sie dann **[!UICONTROL Eigenschaften]**.
+1. Wählen Sie das adaptive Formular und dann **[!UICONTROL Eigenschaften]** aus.
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Standard]** den [Konfigurations-Container](#create-adobe-launch-configuration) aus, der bei der Erstellung der Adobe Launch-Konfiguration verwendet wurde.
-1. Wählen Sie **[!UICONTROL Speichern und schließen]**. Das adaptive Formular ist für [!DNL Adobe Analytics] aktiviert.
+1. Wählen Sie **[!UICONTROL Speichern und schließen]** aus. Das adaptive Formular ist für [!DNL Adobe Analytics] aktiviert.
 1. Formulare veröffentlichen.
 
 Nachdem Sie [!DNL Adobe Analytics] für ein adaptives Formular aktiviert haben, können Sie [überprüfen](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=de#validate-the-page-view-beacon), ob ein geeigneter Datenereignisfluss zwischen AEM Forms und [!DNL Adobe Analytics] vorhanden ist. Die Integration von AEM Forms mit Adobe Analytics ist nun abgeschlossen. Sie können jetzt [Berichte in Adobe Analytics konfigurieren und anzeigen](#view-reports-adobe-analytics).
@@ -243,7 +243,7 @@ In einem zweistufigen Prozess definieren Sie eine Regel für ein Feld in einem a
 
 So erstellen Sie mit dem Regeleditor Regeln in einem adaptiven Formular:
 
-1. Wählen Sie das entsprechende Feld und wählen Sie ![Regeleditor](/help/forms/using/assets/rule-editor-icon.svg), um die Seite mit dem Regeleditor zu öffnen.
+1. Wählen Sie das Feld und dann ![Regeleditor](/help/forms/using/assets/rule-editor-icon.svg) aus, um die Seite mit dem Regeleditor zu öffnen.
 1. Definieren Sie eine Bedingung im Abschnitt [!UICONTROL Wenn] der Regel.
 1. Wählen Sie im Abschnitt [!UICONTROL Dann] der Regel die Option **[!UICONTROL Dispatch-Ereignis]** aus der Dropdown-Liste **[!UICONTROL Aktion auswählen]**.
 1. Geben Sie den Namen des Ereignisses im Feld **[!UICONTROL Ereignisname eingeben]** an.
@@ -256,7 +256,7 @@ So ordnen Sie das Ereignis einem benutzerdefinierten Erfassungsereignis in [!DNL
 
 1. [Erstellen einer Regel](#configure-rules).
 
-1. Wählen Sie im Abschnitt **[!UICONTROL Ereignisse]** die Option **[!UICONTROL Hinzufügen]**.
+1. Wählen Sie im Abschnitt **[!UICONTROL Ereignisse]** die Option **[!UICONTROL Hinzufügen]** aus.
 
 1. Geben Sie **[!UICONTROL Adobe Experience Manager Forms]** als Name der Erweiterung an.
 
@@ -264,7 +264,7 @@ So ordnen Sie das Ereignis einem benutzerdefinierten Erfassungsereignis in [!DNL
 
 1. Geben Sie den Namen des Ereignisses an, den Sie in Schritt 4 beim Erstellen einer Regel mit dem Regeleditor angegeben haben.
 
-1. Wählen Sie **Änderungen beibehalten** und führen Sie die restlichen unter [Regeln konfigurieren](#configure-rules) angegebenen Aktionen aus.
+1. Wählen Sie **Änderungen beibehalten** aus und führen Sie die restlichen unter [Konfigurieren von Regeln](#configure-rules) angegebenen Aktionen aus.
 
 ## 3. Konfigurieren und Anzeigen von Berichten in [!DNL Adobe Analytics] {#view-reports-adobe-analytics}
 
@@ -282,8 +282,8 @@ Nachdem Sie ein adaptives Formular zum Senden von Ereignisdaten an [!DNL Adobe A
 
 1. Legen Sie im Abschnitt **[!UICONTROL Metriken]** die zu verfolgenden Ereignisse in das Textfeld **[!UICONTROL Metrik (oder eine andere Komponente) hier ablegen]** ab.
 
-1. Wählen Sie ![Visualisierungen](/help/forms/using/assets/visualization-icon.svg) und legen Sie einen Diagrammtyp im Abschnitt „Freiform“ ab. In ähnlicher Weise können Sie mehrere Diagrammtypen zum Abschnitt „Freiform“ hinzufügen.
+1. Wählen Sie ![Visualisierungen](/help/forms/using/assets/visualization-icon.svg) aus und legen Sie einen Diagrammtyp im Abschnitt „Freiform“ ab. In ähnlicher Weise können Sie mehrere Diagrammtypen zum Abschnitt „Freiform“ hinzufügen.
 
-1. Wählen Sie Strg + S-Schlüssel aus und geben Sie einen Namen für das Projekt an.
+1. Drücken Sie die Tasten Strg+S und geben Sie einen Namen an, um das Projekt zu speichern.
 
 Ausführliche Informationen zur Anzeige von Formularanalyseberichten finden Sie unter [Anzeigen und Verstehen von AEM Forms-Analyseberichten](../../forms/using/view-understand-aem-forms-analytics-reports.md).

@@ -9,7 +9,7 @@ solution: Experience Manager, Workfront
 source-git-commit: 5ccac0aadce3971e66da052d393cbd33b61e94f7
 workflow-type: tm+mt
 source-wordcount: '1698'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -65,8 +65,8 @@ Gehen Sie wie folgt vor, um die Ereignisse zu abonnieren:
 1. Das Kontrollkästchen „Verknüpfte Ordnertitel in Workfront unter Verwendung der Namen der Ordnerstruktur erstellen“ sollte aktiviert werden, wenn der Titel des Ordners in Workfront alle Ordner in der Struktur enthalten soll. Andernfalls ist es der Titel des letzten Ordners.
 1. Im Mehrfachfeld „Unterordner“ können Sie eine Liste von Ordnern angeben, die als Unterordner des verknüpften Ordners erstellt werden sollen.
 1. Projektstatus: Wählen Sie den Status des Projekts aus, um den verknüpften Ordner zu erstellen.
-1. Erstellen Sie einen verknüpften Ordner in Projekten mit Portfolio: Liste der Portfolios, zu denen das Projekt gehören muss, um den verknüpften Ordner zu erstellen. Lassen Sie diese Liste leer, wenn der verknüpfte Ordner für alle Projektportfolios erstellt werden soll.
-1. Erstellen Sie einen verknüpften Ordner in Projekten mit benutzerdefinierten Formularfeldern: Benutzerdefiniertes Formularfeld und der entsprechende Wert, den das Projekt zum Erstellen des verknüpften Ordners benötigen muss. Diese Konfiguration wird ignoriert, wenn sie leer gelassen wird. Wählen Sie `CUSTOM FORMS: Create DAM Linked Folder` als Feld und geben Sie `Yes` als Wert ein.
+1. Erstellen eines verknüpften Ordners in Projekten mit Portfolio: Liste der Portfolios, denen das Projekt angehören muss, um den verknüpften Ordner erstellen zu können. Lassen Sie diese Liste leer, wenn der verknüpfte Ordner für alle Projektportfolios erstellt werden soll.
+1. Erstellen eines verknüpften Ordners in Projekten mit benutzerdefiniertem Formularfeld: Das benutzerdefinierte Formularfeld und sein entsprechender Wert, den das Projekt haben muss, damit der verknüpfte Ordner erstellt werden kann. Diese Konfiguration wird ignoriert, wenn sie leer gelassen wird. Wählen Sie `CUSTOM FORMS: Create DAM Linked Folder` als Feld und geben Sie `Yes` als Wert ein.
 1. Klicken Sie auf „Automatische Erstellung verknüpfter Ordner aktivieren“. Wenn Sie zur Registerkarte „Ereignisabonnements“ zurückkehren, sehen Sie, dass es jetzt ein Erstellungsereignis gibt.
 
 ![Konfiguration verknüpfter Ordner](/help/assets/assets/wf-linked-folder-config.png)
@@ -79,7 +79,7 @@ Die Metadaten-Zuordnung zwischen Workfront-Projekten und AEM-Ordnern wird in AEM
 
 Gehen Sie wie folgt vor, um die Zuordnungen zu konfigurieren:
 
-1. Fügen Sie `jcr:read`-Berechtigungen zu `/conf/global/settings/dam/adminui-extension/foldermetadataschema` für die Gruppe `wf-workfront-users` hinzu.
+1. Fügen Sie `jcr:read`-Berechtigungen zu `/conf/global/settings/dam/adminui-extension/foldermetadataschema` für die Gruppe `wf-workfront-users` hinzu.
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Ordner-Metadatenschemata]**.
 1. Wählen Sie das Formular für das Ordner-Metadatenschema, das Sie bearbeiten möchten, und klicken Sie auf „Bearbeiten“.
 1. Wählen Sie das Formularfeld des Ordner-Metadatenschemas aus, das Sie bearbeiten möchten, und klicken Sie im rechten Bedienfeld auf die Registerkarte „Einstellungen“.
@@ -97,7 +97,7 @@ Die Zuordnung von Metadaten zwischen Adobe Workfront-Dokumenten und Assets wird 
 Gehen Sie wie folgt vor, um die Zuordnungen zu konfigurieren:
 
 1. Navigieren Sie zu **Tools** > **Assets** > **Metadatenschemata**.
-1. Wählen Sie das Metadatenschema-Formular aus, das Sie bearbeiten möchten, und klicken Sie auf **Bearbeiten** oder erstellen Sie ein Metadatenschema von Grund auf neu.
+1. Wählen Sie das Metadatenschema-Formular aus, das Sie bearbeiten möchten, und klicken Sie auf **Bearbeiten** oder erstellen Sie ein neues Metadatenschema von Grund auf.
 1. Wählen Sie das Metadatenschema-Formularfeld aus, das Sie bearbeiten möchten, und wählen Sie die Registerkarte **Einstellungen** im rechten Bedienfeld.
 1. Wählen Sie in [!DNL Workfront] unter „Benutzerdefiniertes Formularfeld“ den Namen des [!DNL Workfront]-Feldes, das Sie der ausgewählten AEM-Eigenschaft zuordnen möchten. Verfügbare Optionen sind:
 
@@ -175,7 +175,7 @@ Um den Versionsverlauf von Assets in AEM beizubehalten, konfigurieren Sie die As
 
 1. Wählen Sie die Option **[!UICONTROL Assets mit demselben Namen wie Versionen des vorhandenen Assets speichern]**. Wenn diese Option aktiviert ist, können Sie Assets speichern, die mit demselben Namen und demselben Speicherort wie die Version des vorhandenen Assets hochgeladen wurden. Wenn diese Option deaktiviert ist, wird ein neues Asset mit einem anderen Namen erstellt (z. B. `asset-name.pdf` und `asset-name-1.pdf`).
 
-1. Option auswählen **[!UICONTROL Aktualisieren von Asset-Metadaten beim Erstellen einer Version]**. Wenn diese Option aktiviert ist, werden die Asset-Metadaten bei jeder Erstellung einer neuen Version des Assets aktualisiert. Wenn diese Option deaktiviert ist, behält das Asset die Metadaten bei, die es vor dem Erstellen der neuen Version hatte.
+1. Wählen Sie die Option **[!UICONTROL Asset-Metadaten beim Erstellen einer Version aktualisieren]**. Wenn diese Option aktiviert ist, werden die Asset-Metadaten bei jeder Erstellung einer neuen Version des Assets aktualisiert. Wenn diese Option deaktiviert ist, behält das Asset die Metadaten bei, die es vor dem Erstellen der neuen Version hatte.
 
 ![Asset-Versionierung konfigurieren](/help/assets/assets/wf-config-versioning.png)
 

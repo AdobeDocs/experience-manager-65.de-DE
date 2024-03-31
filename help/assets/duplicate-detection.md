@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '165'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -31,4 +31,4 @@ Die Funktion zur Duplikatserkennung ist nun in [!DNL Assets] aktiviert. Wenn ein
 >[!MORELIKETHIS]
 >
 >* [Duplizieren von Assets im vorhandenen Repository (Tutorial eines Community-Mitglieds)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
->* [Erkennen doppelter Assets in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html)
+>* [Erkennen von doppelten Assets in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html?lang=de)

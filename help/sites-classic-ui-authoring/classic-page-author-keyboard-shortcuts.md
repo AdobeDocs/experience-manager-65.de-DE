@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '307'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -26,8 +26,8 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 >
 >Mehrfachauswahl auf einem Desktop-Gerät:
 >
->* Windows: Strg+Klicken auf erforderliche Komponenten.
->* Mac: Befehlstaste+Klick auf erforderliche Komponenten
+>* Windows: Strg+Klick auf die erforderlichen Komponenten.
+>* Mac: Befehlstaste+Klick auf die erforderlichen Komponenten
 >
 
 ## Tastaturbefehle für die Bearbeitung {#editing-keyboard-shortcuts}
@@ -62,17 +62,17 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-C</code></strong></td>
-   <td>Ausgewählte Absätze kopieren</td>
+   <td>Ausgewählte Absätze kopieren.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-X</code></strong></td>
-   <td>Ausgewählte Absätze ausschneiden<strong><br /> Hinweis:</strong> Der ausgeschnittene Absatz wird weiter angezeigt, bis er an einer anderen Stelle eingefügt wurde.</td>
+   <td>Ausgewählte Absätze ausschneiden. <strong><br /> Hinweis:</strong> Der ausgeschnittene Absatz wird so lange weiter angezeigt, bis er an einer anderen Stelle eingefügt wurde.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-V</code></strong></td>
-   <td>Absätze aus der Zwischenablage einfügen</td>
+   <td>Absätze aus der Zwischenablage einfügen.</td>
   </tr>
   <tr>
    <td> </td>
@@ -82,17 +82,17 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
   <tr>
    <td> </td>
    <td><strong><code>Super-Del (fn-delete)</code></strong></td>
-   <td>Ausgewählte Absätze löschen</td>
+   <td>Ausgewählte Absätze löschen.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Cmd-Backspace</code></strong></td>
-   <td>Ausgewählte Absätze löschen</td>
+   <td>Ausgewählte Absätze löschen.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Alt-right-click</code></strong></td>
-   <td>Standardkontextmenü (Browser) erzwingen.<br /> <strong>Hinweis:</strong> AEM Kontextmenüs werden nur in der klassischen Benutzeroberfläche angezeigt.</td>
+   <td>Standardkontextmenü des Browsers erzwingen.<br /> <strong>Hinweis:</strong> AEM-Kontextmenüs werden nur in der klassischen Benutzeroberfläche angezeigt.</td>
   </tr>
   <tr>
    <td> </td>

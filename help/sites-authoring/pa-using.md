@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -34,10 +34,10 @@ Jede Spalte zeigt einen Wert für den aktuellen Berichtszeitraum an und zeigt da
 >
 >Um den Aktualisierungszeitraum zu ändern, [konfigurieren Sie das Importintervall](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. Öffnen Sie die **Sites** -Konsole, z. B. [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
-1. Klicken Sie ganz rechts in der Symbolleiste (obere rechte Ecke) auf das Symbol, um **Listenansicht** (Das angezeigte Symbol hängt von der [aktuelle Ansicht](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
+1. Öffnen Sie die **Sites**-Konsole, z. B.: [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content).
+1. Klicken Sie ganz rechts in der Symbolleiste (rechte obere Ecke) auf das Symbol zur Auswahl der **Listenansicht** (das angezeigte Symbol hängt von der [aktuellen Ansicht](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) ab).
 
-1. Klicken Sie erneut rechts oben in der Symbolleiste auf das Symbol und wählen Sie **Anzeigeeinstellungen**. Die **Spalten konfigurieren** wird geöffnet. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie den Vorgang mit **Aktualisieren**.
+1. Klicken Sie erneut ganz rechts in der Symbolleiste (rechte obere Ecke) auf das Symbol und wählen Sie dann **Einstellungen anzeigen** aus. Das Dialogfeld **Spalten konfigurieren** öffnet sich. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie den Vorgang mit **Aktualisieren**.
 
    ![aa-04](assets/aa-04.png)
 
@@ -49,7 +49,7 @@ Wählen Sie den Berichtszeitraum aus, für den Analytics-Daten in der Sites-Kons
 * Daten der letzten 90 Tage
 * Daten aus diesem Jahr
 
-Der aktuelle Berichtszeitraum wird in der Symbolleiste der Konsole „Sites“ (rechts neben der oberen Symbolleiste) angezeigt. Verwenden Sie das Dropdown-Menü, um den erforderlichen Berichtszeitraum auszuwählen.
+Der aktuelle Berichtszeitraum wird in der Symbolleiste der Konsole „Sites“ (rechts neben der oberen Symbolleiste) angezeigt. Wählen Sie den gewünschten Berichtszeitraum über die Dropdown-Liste aus.
 ![aa-05](assets/aa-05.png)
 
 ### Konfigurieren der verfügbaren Datenspalten {#configuring-available-data-columns}
@@ -79,11 +79,11 @@ Mitglieder der Benutzergruppe „Analytics-Administratoren“ können die Sites-
 
    ![Symbol „Analytics und Empfehlungen“](do-not-localize/chlimage_1-16a.png)
 
-## Im Seiten-Editor sichtbare Analysen (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
+## Im Seiteneditor sichtbare Analysen (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!NOTE]
 >
->Dies wird angezeigt, wenn die Variable [Activity Map wurde konfiguriert.](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) für Ihre Website.
+>Dies wird angezeigt, wenn die [Activity Map für Ihre Website konfiguriert wurde](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map).
 
 >[!NOTE]
 >

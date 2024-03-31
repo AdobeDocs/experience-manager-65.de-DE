@@ -1,6 +1,6 @@
 ---
 title: Referenz für Workflow-Schritte
-description: Weitere Informationen zu Workflows in Adobe Experience Manager finden Sie in dieser Schrittreferenz .
+description: Weitere Informationen zu Workflows in Adobe Experience Manager finden Sie in dieser Schrittreferenz.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem

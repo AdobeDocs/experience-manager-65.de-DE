@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 20fb57a51e47562a290e3608a2fe080a39774998
 workflow-type: tm+mt
 source-wordcount: '2781'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -194,7 +194,7 @@ Es gibt folgende Methoden zum Hinzufügen von Validierungen zu Feldern:
 
 ### Erforderlich {#required}
 
-Um eine Komponente als obligatorisch festzulegen, können Sie im Dialogfeld **Bearbeiten** der Komponente die Option **Titel und Text > Erforderlich** auswählen. Sie können auch die entsprechenden **erforderliche Nachricht** (optional).
+Um eine Komponente als obligatorisch festzulegen, können Sie im Dialogfeld **Bearbeiten** der Komponente die Option **Titel und Text > Erforderlich** auswählen. Sie können auch die entsprechende **erforderliche Meldung** (optional) hinzufügen. 
 
 ### Überprüfungsmuster {#validation-patterns}
 
@@ -212,7 +212,7 @@ Das Anzeigeformat kann verwendet werden, um die Daten in verschiedenen Formaten 
 
 ### GuideBridge – APIs und Ereignisse {#guidebridge-apis-and-events}
 
-GuideBridge ist eine Sammlung von APIs, die zur Interaktion mit adaptiven Formularen im Speichermodell in einem Browser verwendet werden können. Eine ausführliche Einführung in die Guide Bridge-API, Klassenmethoden und offen gelegte Ereignisse finden Sie unter [JavaScript-Bibliotheks-API-Referenz für adaptive Formulare.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
+GuideBridge ist eine Sammlung von APIs, die für die Interaktion mit adaptiven Formularen im Speichermodell in einem Browser verwendet werden können. Eine ausführliche Einführung in die Guide Bridge-API, Klassenmethoden und offen gelegte Ereignisse finden Sie unter [JavaScript-Bibliotheks-API-Referenz für adaptive Formulare.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
 
 >[!NOTE]
 >
@@ -282,7 +282,7 @@ Führen Sie die folgenden Schritte durch, um ein benutzerspezifisches Muster fü
 
 1. Der Wert dieser Eigenschaft variiert je nach dem Feld, für das Sie die Muster definieren möchten. Bei numerischen Feldern lautet der Wert der Eigenschaft `guideComponentType` *fd/af/components/formatter/guideNumericBox*. Der Wert für das Feld „Datepicker“ lautet *fd/af/components/formatter/guideDatepicker*.
 ``
-1. Sie können ein benutzerspezifisches Muster hinzufügen, indem Sie dem Knoten `textboxpatterns` eine Eigenschaft zuweisen. Fügen Sie eine Eigenschaft mit einem Namen hinzu (z. B. `pattern1`) und legen Sie ihren Wert auf das Muster fest, das Sie hinzufügen möchten. Beispiel: Fügen Sie eine Eigenschaft `pattern1` mit dem Wert „Fax=text{99-999-9999999}“ hinzu. Das Muster ist für alle Textfelder verfügbar, die Sie in adaptiven Formularen verwenden.
+1. Sie können ein benutzerspezifisches Muster hinzufügen, indem Sie dem Knoten `textboxpatterns` eine Eigenschaft zuweisen. Fügen Sie eine Eigenschaft mit einem Namen (z. B. `pattern1`) hinzu und legen Sie ihren Wert auf das Muster fest, das Sie hinzufügen möchten. Beispiel: Fügen Sie eine Eigenschaft `pattern1` mit dem Wert „Fax=text{99-999-9999999}“ hinzu. Das Muster ist für alle Textfelder verfügbar, die Sie in adaptiven Formularen verwenden.
 
    ![Erstellen benutzerspezifischer Muster für Felder in CrxDe](assets/creating-custom-patterns.png)
 

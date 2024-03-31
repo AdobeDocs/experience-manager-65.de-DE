@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2455'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Der Forms-Service rendert interaktive PDF-Formulare an Client-Geräte, normalerw
 
 **Beispielformular für einen Darlehensantrag**
 
-Anhand eines Beispiels für einen Darlehensantrag wird gezeigt, wie der Forms-Service interaktive Formulare verwendet, um Informationen von Benutzern zu erfassen. Mit diesem Antrag kann ein Benutzer ein Formular mit Daten ausfüllen, die für die Aufnahme eines Darlehens erforderlich sind, und die Daten dann an den Forms-Service übermitteln. Das folgende Diagramm zeigt den Logikfluss des Kreditantrags.
+Anhand eines Beispiels für einen Darlehensantrag wird gezeigt, wie der Forms-Service interaktive Formulare verwendet, um Informationen von Benutzern zu erfassen. Mit diesem Antrag kann ein Benutzer ein Formular mit Daten ausfüllen, die für die Aufnahme eines Darlehens erforderlich sind, und die Daten dann an den Forms-Service übermitteln. Die folgende Abbildung zeigt den logischen Ablauf des Darlehensantrags.
 
 ![ri_ri_finsrv_loanapp_v1](assets/ri_ri_finsrv_loanapp_v1.png)
 
@@ -60,24 +60,24 @@ Die folgende Tabelle beschreibt die Schritte in diesem Diagramm.
   </tr>
   <tr>
    <td><p>5</p></td>
-   <td><p>Ein Bestätigungsformular wird an den Webbrowser zurückgegeben. Daten wie der Vor- und Nachname des Benutzers werden mit dem Formular zusammengeführt, bevor es wiedergegeben wird. (Siehe <a href="/help/forms/developing/prepopulating-forms-flowable-layouts.md">Vorausfüllen von Formularen mit flexiblen Layouts</a>.)</p></td>
+   <td><p>Ein Bestätigungsformular wird an den Webbrowser zurückgegeben. Daten wie der Vor- und Nachname der Person werden mit dem Formular zusammengeführt, bevor es gerendert wird. (Siehe <a href="/help/forms/developing/prepopulating-forms-flowable-layouts.md">Vorausfüllen von Formularen mit flexiblen Layouts</a>.)</p></td>
   </tr>
  </tbody>
 </table>
 
 **Darlehensformular**
 
-Dieses interaktive Darlehensformular wird durch die `GetLoanForm` Java-Servlet.
+Dieses interaktive Darlehensformular wird vom Java-Servlet `GetLoanForm` des Beispiel-Darlehensantrags gerendert.
 
 ![ri_ri_loanform](assets/ri_ri_loanform.png)
 
 **Bestätigungsformular**
 
-Dieses Formular wird durch das Beispiel für einen Kreditantrag wiedergegeben `HandleData` Java-Servlet.
+Dieses Formular wird vom Java-Servlet `HandleData` des Beispiel-Darlehensantrags gerendert.
 
 ![ri_ri_confirm](assets/ri_ri_confirm.png)
 
-Die `HandleData` Java Servlet füllt dieses Formular mit dem Vor- und Nachnamen des Benutzers und dem Betrag vorab aus. Nachdem das Formular vorausgefüllt wurde, wird es an den Client-Webbrowser gesendet. (Siehe [Vorausfüllen von Forms mit flexiblen Layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md))
+Das Java-Servlet `HandleData` füllt dieses Formular vorab mit dem Vor- und Nachnamen der Person sowie dem Betrag aus. Nachdem das Formular vorausgefüllt wurde, wird es an den Client-Webbrowser gesendet. (Siehe [Vorausfüllen von Forms mit flexiblen Layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md))
 
 **Java-Servlets**
 
@@ -97,7 +97,7 @@ Der folgende Code zeigt die Syntax eines Java-Servlets mit dem Namen GetLoanForm
              }
 ```
 
-Normalerweise platzieren Sie den Client-API-Code des Forms-Dienstes nicht in einem Java-Servlet `doGet` oder `doPost` -Methode. Es ist eine bessere Programmierpraxis, diesen Code in einer separaten Klasse zu platzieren, die Klasse innerhalb der Methode `doPost` (oder `doGet`) zu instanziieren und die entsprechenden Methoden aufzurufen. Aus Gründen der Kürze des Codes werden die Code-Beispiele in diesem Abschnitt jedoch auf ein Minimum beschränkt und die Code-Beispiele in der Methode `doPost` untergebracht.
+Normalerweise würden Sie den Client-API-Code des Forms-Services nicht innerhalb der Methode `doGet` oder `doPost` eines Java-Servlets platzieren. Es ist eine bessere Programmierpraxis, diesen Code in einer separaten Klasse zu platzieren, die Klasse innerhalb der Methode `doPost` (oder `doGet`) zu instanziieren und die entsprechenden Methoden aufzurufen. Aus Gründen der Kürze des Codes werden die Code-Beispiele in diesem Abschnitt jedoch auf ein Minimum beschränkt und die Code-Beispiele in der Methode `doPost` untergebracht.
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ Wenn Sie ein Formular mit einer Senden-Schaltfläche und einer Berechnen-Schaltf
 
 >[!NOTE]
 >
->Anstatt einen URL-Wert anzugeben, um auf eine XDP-Datei zu verweisen, können Sie auch eine `com.adobe.idp.Document` -Instanz auf den Forms-Dienst hinzu. Die `com.adobe.idp.Document`-Instanz enthält einen Formularentwurf. (Siehe [Übergeben von Dokumenten an den Forms-Service](/help/forms/developing/passing-documents-forms-service.md).)
+>Anstatt einen URL-Wert anzugeben, um auf eine XDP-Datei zu verweisen, können Sie auch eine `com.adobe.idp.Document`-Instanz an den Forms-Service übergeben. Die `com.adobe.idp.Document`-Instanz enthält einen Formularentwurf. (Siehe [Übergeben von Dokumenten an den Forms-Service](/help/forms/developing/passing-documents-forms-service.md).)
 
 **Anhängen von Dateien an das Formular**
 
@@ -167,9 +167,9 @@ Sie können Dateien an ein Formular anhängen. Wenn Sie ein PDF-Formular mit Dat
 
 **Rendern eines interaktiven PDF-Formulars**
 
-Um ein Formular wiederzugeben, verwenden Sie einen Formularentwurf, der in Designer erstellt und als XDP- oder PDF-Datei gespeichert wurde. Sie können auch ein Formular wiedergeben, das mit Acrobat erstellt und als PDF-Datei gespeichert wurde. Rufen Sie zum Rendern eines interaktiven PDF-Formulars die `FormsServiceClient` -Objekt `renderPDFForm` Methode oder `renderPDFForm2` -Methode.
+Um ein Formular wiederzugeben, verwenden Sie einen Formularentwurf, der in Designer erstellt und als XDP- oder PDF-Datei gespeichert wurde. Sie können auch ein Formular wiedergeben, das mit Acrobat erstellt und als PDF-Datei gespeichert wurde. Um ein interaktives PDF-Formular zu rendern, rufen Sie die Methode `renderPDFForm2` oder die Methode `renderPDFForm` des `FormsServiceClient`-Objekts auf.
 
-Die Methode `renderPDFForm` verwendet ein `URLSpec`-Objekt. Der Inhaltsstamm an die XDP-Datei wird mithilfe der `URLSpec` -Objekt `setContentRootURI` -Methode. Der Name des Formularentwurfs (`formQuery`) wird als separater Parameterwert übergeben. Die beiden Werte werden zusammengefügt, um den absoluten Verweis auf den Formularentwurf zu erhalten.
+Die Methode `renderPDFForm` verwendet ein `URLSpec`-Objekt. Der Inhaltsstamm der XDP-Datei wird mit der Methode `setContentRootURI` des `URLSpec`-Objekts an den Forms-Dienst übergeben. Der Name des Formularentwurfs (`formQuery`) wird als separater Parameterwert übergeben. Die beiden Werte werden zusammengefügt, um den absoluten Verweis auf den Formularentwurf zu erhalten.
 
 Die Methode `renderPDFForm2` akzeptiert eine `com.adobe.idp.Document`-Instanz, die das zu rendernde XDP- oder PDF-Dokument enthält.
 
@@ -183,7 +183,7 @@ So rendern Sie ein interaktives PDF-Formular mithilfe der Forms-API (Java):
 
 1. Projektdateien einschließen
 
-   Schließen Sie Client-JAR-Dateien wie adobe-forms-client.jar in den Klassenpfad Ihres Java-Projekts ein.
+   Fügen Sie Client-JAR-Dateien wie „adobe-forms-client.jar“ in den Klassenpfad Ihres Java-Projekts ein. 
 
 1. Erstellen eines Forms Client-API-Objekts
 
@@ -193,14 +193,14 @@ So rendern Sie ein interaktives PDF-Formular mithilfe der Forms-API (Java):
 1. Angeben der URI-Werte
 
    * Erstellen Sie ein `URLSpec`-Objekt, das URI-Werte speichert, indem Sie seinen Konstruktor verwenden.
-   * Rufen Sie die `URLSpec` -Objekt `setApplicationWebRoot` -Methode verwenden und einen string -Wert übergeben, der den Webstamm der Anwendung darstellt.
-   * Rufen Sie die `URLSpec` -Objekt `setContentRootURI` -Methode verwenden und einen string -Wert übergeben, der den Inhaltsstamm-URI-Wert angibt. Stellen Sie sicher, dass sich der Formularentwurf im Inhaltsstamm-URI befindet. Andernfalls löst der Forms-Service eine Ausnahme aus. Um auf das Repository zu verweisen, geben Sie `repository:///` an.
-   * Rufen Sie die `URLSpec` -Objekt `setTargetURL` -Methode verwenden und einen Zeichenfolgenwert übergeben, der den Ziel-URL-Wert angibt, an den die Formulardaten gesendet werden. Wenn Sie die Ziel-URL im Formularentwurf definieren, können Sie auch eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular zur Durchführung von Berechnungen gesendet wird.
+   * Rufen Sie die Methode `setApplicationWebRoot` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Web-Stamm der Anwendung darstellt.
+   * Rufen Sie die Methode `setContentRootURI` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den URI-Wert des Inhaltsstamms angibt. Stellen Sie sicher, dass sich der Formularentwurf im Inhaltsstamm-URI befindet. Andernfalls löst der Forms-Service eine Ausnahme aus. Um auf das Repository zu verweisen, geben Sie `repository:///` an.
+   * Rufen Sie die Methode `setTargetURL` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Ziel-URL-Wert angibt, an den die Formulardaten gesendet werden. Falls Sie die Ziel-URL im Formularentwurf definieren, können Sie auch eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular gesendet wird, um Berechnungen durchzuführen.
 
 1. Anhängen von Dateien an das Formular
 
    * Erstellen Sie ein `java.util.HashMap`-Objekt, um Dateianhänge zu speichern, indem Sie seinen Konstruktor verwenden.
-   * Rufen Sie die `java.util.HashMap` -Objekt `put` -Methode für jede Datei, die an das wiedergegebene Formular angehängt werden soll. Übergeben Sie die folgenden Werte an diese Methode:
+   * Rufen Sie die Methode `put` des `java.util.HashMap`-Objekts für jede Datei auf, die an das gerenderte Formular angehängt werden soll. Übergeben Sie die folgenden Werte an diese Methode:
 
       * Ein Zeichenfolgenwert, der den Namen des Dateianhangs angibt, einschließlich der Dateinamenerweiterung.
 
@@ -212,7 +212,7 @@ So rendern Sie ein interaktives PDF-Formular mithilfe der Forms-API (Java):
 
 1. Wiedergeben eines interaktiven PDF-Formulars
 
-   Rufen Sie die Methode `renderPDFForm` des Objekts `FormsServiceClient` auf und geben Sie die folgenden Werte weiter:
+   Rufen Sie die Methode `renderPDFForm` des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document`-Objekt.
@@ -224,13 +224,13 @@ So rendern Sie ein interaktives PDF-Formular mithilfe der Forms-API (Java):
 
 1. Schreiben des Formulardaten-Streams in den Client-Webbrowser
 
-   * Erstellen Sie eine `com.adobe.idp.Document` -Objekt durch Aufrufen der `FormsResult` -Objekt `getOutputContent` -Methode.
-   * Ermitteln Sie den Inhaltstyp des `com.adobe.idp.Document`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
-   * Legen Sie die `javax.servlet.http.HttpServletResponse` Inhaltstyp des Objekts durch Aufrufen seiner `setContentType` -Methode verwenden und den Inhaltstyp der `com.adobe.idp.Document` -Objekt.
-   * Erstellen Sie eine `javax.servlet.ServletOutputStream` -Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser durch Aufrufen der `javax.servlet.http.HttpServletResponse` -Objekt `getOutputStream` -Methode.
-   * Erstellen Sie ein Objekt vom Typ `java.io.InputStream`, indem Sie die Methode `getInputStream` des Objekts `com.adobe.idp.Document` aufrufen.
-   * Erstellen Sie ein Byte-Array und füllen Sie es mit dem Formulardatenstream, indem Sie die `InputStream` -Objekt `read` -Methode verwenden und das Byte-Array als Argument übergeben.
-   * Rufen Sie die `javax.servlet.ServletOutputStream` -Objekt `write` -Methode zum Senden des Formulardatenstreams an den Client-Webbrowser. Übergeben Sie das Byte-Array an die Methode `write`.
+   * Erstellen Sie ein Objekt vom Typ `com.adobe.idp.Document`, indem Sie die Methode `getOutputContent` des `FormsResult`-Objekts aufrufen.
+   * Ermitteln Sie den Content-Typ des `com.adobe.idp.Document`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
+   * Legen Sie den Content-Typ des `javax.servlet.http.HttpServletResponse`-Objekts fest, indem Sie seine Methode `setContentType` aufrufen und den Content-Typ des `com.adobe.idp.Document`-Objekts übergeben.
+   * Erstellen Sie ein Objekt vom Typ `javax.servlet.ServletOutputStream`, das zum Schreiben des Formulardatenstroms in den Client-Webbrowser verwendet wird, indem Sie die Methode `getOutputStream` des `javax.servlet.http.HttpServletResponse`-Objekts aufrufen.
+   * Erstellen Sie ein Objekt vom Typ `java.io.InputStream`, indem Sie die Methode `getInputStream` des `com.adobe.idp.Document`-Objekts aufrufen.
+   * Erstellen Sie ein Byte-Array und füllen Sie es mit dem Formulardatenstrom, indem Sie die Methode `read` des `InputStream`-Objekts aufrufen und das Byte-Array als Argument übergeben.
+   * Rufen Sie die Methode `write` des `javax.servlet.ServletOutputStream`-Objekts auf, um den Formulardatenstrom an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die Methode `write`.
 
 ## Rendern eines interaktiven PDF-Formulars mithilfe der Webservice-API {#render-an-interactive-pdf-form-using-the-web-service-api}
 
@@ -248,14 +248,14 @@ So rendern Sie ein interaktives PDF-Formular mithilfe der Forms-API (Webservice)
 1. Angeben der URI-Werte
 
    * Erstellen Sie ein `URLSpec`-Objekt, das URI-Werte speichert, indem Sie seinen Konstruktor verwenden.
-   * Rufen Sie die `URLSpec` -Objekt `setApplicationWebRoot` -Methode verwenden und einen string -Wert übergeben, der den Webstamm der Anwendung darstellt.
-   * Rufen Sie die `URLSpec` -Objekt `setContentRootURI` -Methode verwenden und einen string -Wert übergeben, der den Inhaltsstamm-URI-Wert angibt. Stellen Sie sicher, dass sich der Formularentwurf im Inhaltsstamm-URI befindet. Andernfalls löst der Forms-Service eine Ausnahme aus. Um auf das Repository zu verweisen, geben Sie `repository:///` an.
-   * Rufen Sie die `URLSpec` -Objekt `setTargetURL` -Methode verwenden und einen Zeichenfolgenwert übergeben, der den Ziel-URL-Wert angibt, an den die Formulardaten gesendet werden. Wenn Sie die Ziel-URL im Formularentwurf definieren, können Sie auch eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular zur Durchführung von Berechnungen gesendet wird.
+   * Rufen Sie die Methode `setApplicationWebRoot` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Web-Stamm der Anwendung darstellt.
+   * Rufen Sie die Methode `setContentRootURI` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den URI-Wert des Inhaltsstamms angibt. Stellen Sie sicher, dass sich der Formularentwurf im Inhaltsstamm-URI befindet. Andernfalls löst der Forms-Service eine Ausnahme aus. Um auf das Repository zu verweisen, geben Sie `repository:///` an.
+   * Rufen Sie die Methode `setTargetURL` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Ziel-URL-Wert angibt, an den die Formulardaten gesendet werden. Falls Sie die Ziel-URL im Formularentwurf definieren, können Sie auch eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular gesendet wird, um Berechnungen durchzuführen.
 
 1. Anhängen von Dateien an das Formular
 
    * Erstellen Sie ein `java.util.HashMap`-Objekt, um Dateianhänge zu speichern, indem Sie seinen Konstruktor verwenden.
-   * Rufen Sie die `java.util.HashMap` -Objekt `put` -Methode für jede Datei, die an das wiedergegebene Formular angehängt werden soll. Übergeben Sie die folgenden Werte an diese Methode:
+   * Rufen Sie die Methode `put` des `java.util.HashMap`-Objekts für jede Datei auf, die an das gerenderte Formular angehängt werden soll. Übergeben Sie die folgenden Werte an diese Methode:
 
       * Ein Zeichenfolgenwert, der den Namen des Dateianhangs angibt, einschließlich der Dateinamenerweiterung
 
@@ -267,7 +267,7 @@ So rendern Sie ein interaktives PDF-Formular mithilfe der Forms-API (Webservice)
 
 1. Wiedergeben eines interaktiven PDF-Formulars
 
-   Rufen Sie die Methode `renderPDFForm` des Objekts `FormsService` auf und geben Sie die folgenden Werte weiter:
+   Rufen Sie die Methode `renderPDFForm` des `FormsService`-Objekts auf und übergeben Sie die folgenden Werte:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `BLOB`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie `null`.
@@ -283,13 +283,13 @@ So rendern Sie ein interaktives PDF-Formular mithilfe der Forms-API (Webservice)
 
 1. Schreiben des Formulardaten-Streams in den Client-Webbrowser
 
-   * Erstellen Sie eine `FormResult` -Objekt durch Abrufen des Werts der `com.adobe.idp.services.holders.FormsResultHolder` -Objekt `value` Datenelement.
-   * Erstellen Sie eine `BLOB` -Objekt, das Formulardaten enthält, durch Aufrufen der `FormsResult` -Objekt `getOutputContent` -Methode.
-   * Ermitteln Sie den Inhaltstyp des `BLOB`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
-   * Legen Sie die `javax.servlet.http.HttpServletResponse` Inhaltstyp des Objekts durch Aufrufen seiner `setContentType` -Methode verwenden und den Inhaltstyp der `BLOB` -Objekt.
-   * Erstellen Sie eine `javax.servlet.ServletOutputStream` -Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser durch Aufrufen der `javax.servlet.http.HttpServletResponse` -Objekt `getOutputStream` -Methode.
-   * Erstellen Sie ein Byte-Array und füllen Sie es durch Aufrufen der `BLOB` -Objekt `getBinaryData` -Methode. Mit dieser Aufgabe wird dem Byte-Array der Inhalt des `FormsResult`-Objekts zugewiesen.
-   * Rufen Sie die `javax.servlet.http.HttpServletResponse` -Objekt `write` -Methode zum Senden des Formulardatenstreams an den Client-Webbrowser. Übergeben Sie das Byte-Array an die Methode `write`.
+   * Erstellen Sie ein Objekt vom Typ `FormResult`, indem Sie den Wert des Datenelements `value` des `com.adobe.idp.services.holders.FormsResultHolder`-Objekts abrufen.
+   * Erstellen Sie ein Objekt vom Typ `BLOB`, das Formulardaten enthält, indem Sie die Methode `getOutputContent` des `FormsResult`-Objekts aufrufen.
+   * Ermitteln Sie den Content-Typ des `BLOB`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
+   * Legen Sie den Content-Typ des `javax.servlet.http.HttpServletResponse`-Objekts fest, indem Sie seine Methode `setContentType` aufrufen und den Content-Typ des `BLOB`-Objekts übergeben.
+   * Erstellen Sie ein Objekt vom Typ `javax.servlet.ServletOutputStream`, das zum Schreiben des Formulardatenstroms in den Client-Webbrowser verwendet wird, indem Sie die Methode `getOutputStream` des `javax.servlet.http.HttpServletResponse`-Objekts aufrufen.
+   * Erstellen Sie ein Byte-Array und füllen Sie es auf, indem Sie die Methode `getBinaryData` des `BLOB`-Objekts aufrufen. Mit dieser Aufgabe wird dem Byte-Array der Inhalt des `FormsResult`-Objekts zugewiesen.
+   * Rufen Sie die Methode `write` des `javax.servlet.http.HttpServletResponse`-Objekts auf, um den Formulardatenstrom an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die Methode `write`.
 
 **Schreiben des Formulardaten-Streams in den Client-Webbrowser**
 

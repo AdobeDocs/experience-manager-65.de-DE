@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -70,11 +70,11 @@ var path = workflowData.getPayload().toString();
 }
 ```
 
-Im folgenden Beispiel wählt ECMAScript dynamisch einen Verantwortlichen für den Adobe Sign-Schritt aus. Vor der Verwendung der unten aufgeführten Skripts müssen Sie sicherstellen, dass die Benutzerinformationen (E-Mail-Adressen und Telefonnummern), die im Skript erwähnt werden, richtig sind. Wenn die im Skript enthaltenen Benutzerdaten nicht korrekt sind, schlägt der entsprechende Prozess möglicherweise fehl.
+Im folgenden Beispiel wählt ECMAScript dynamisch eine verantwortliche Person für den Schritt „Adobe Sign“ aus. Vor der Verwendung der unten aufgeführten Skripts müssen Sie sicherstellen, dass die Benutzerinformationen (E-Mail-Adressen und Telefonnummern), die im Skript erwähnt werden, richtig sind. Wenn die im Skript enthaltenen Benutzerdaten nicht korrekt sind, schlägt der entsprechende Prozess möglicherweise fehl.
 
 >[!NOTE]
 >
->Bei Verwendung von ECMAScript für Adobe Sign muss sich das Skript im crx-Repository unter /apps/fd/workflow/scripts/adobesign/ befinden und sollte über eine Funktion namens getAdobeSignRecipients verfügen, um eine Benutzerliste zurückzugeben.
+>Wird ECMAScript für Adobe Sign verwendet, muss sich das Skript im CRX-Repository unter „/apps/fd/workflow/scripts/adobesign/“ befinden. Zudem sollte es über die getAdobeSignRecipients-Funktion verfügen, die eine Liste der Benutzenden zurückgibt.
 
 ```javascript
 function getAdobeSignRecipients() {
@@ -113,7 +113,7 @@ function getAdobeSignRecipients() {
 
 ## Verwenden der Java-Schnittstelle zum dynamischen Auswählen eines Benutzers oder eine Gruppe {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-Sie können die [RecipientInfoSpecifier](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java-Schnittstelle zur dynamischen Auswahl eines Benutzers oder einer Gruppe für die Schritte &quot;Adobe Sign&quot;und &quot;Aufgabe zuweisen&quot;. Sie können ein OSGi-Bundle erstellen, das die Java-Schnittstelle [RecipientInfoSpecifier](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) verwendet, und es auf dem AEM Forms-Server bereitstellen. Dadurch wird die Option zur Auswahl in den Komponenten &quot;Aufgabe zuweisen&quot;und &quot;Adobe Sign&quot;AEM Workflows verfügbar.
+Sie können die Java-Schnittstelle [RecipientInfoSpecifier](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) verwenden, um eine Benutzerin bzw. einen Benutzer oder eine Gruppe für die Schritte „Adobe Sign“ und „Aufgabe zuzuweisen“ dynamisch auszuwählen. Sie können ein OSGi-Bundle erstellen, das die Java-Schnittstelle [RecipientInfoSpecifier](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) verwendet, und es auf dem AEM Forms-Server bereitstellen. Dadurch wird es möglich, die Option in den Komponenten „Aufgabe zuweisen“ und „Adobe Sign“ im AEM-Workflow auszuwählen.
 
 Sie benötigen die Dateien [AEM Forms Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de)-JAR und [granite-JAR](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/), um die unten aufgeführten Codebeispiele zu kompilieren. Fügen Sie diese JAR-Dateien dem OSGi-Bundle-Projekt als externe Abhängigkeiten hinzu. Sie können eine beliebige Java-IDE verwenden, um ein OSGi-Bundle zu erstellen. Das folgende Beispiel zeigt die Erstellung eines OSGi-Bundles mithilfe von Eclipse:
 
@@ -227,7 +227,7 @@ Sie benötigen die Dateien [AEM Forms Client SDK](https://experienceleague.adobe
 
    `mvn clean install`
 
-1. Laden Sie das Paket auf einen AEM Forms-Server hoch. Sie können AEM Package Manager verwenden, um das Bundle auf den AEM Forms-Server zu importieren.
+1. Laden Sie das Bundle auf einen AEM-Formular-Server hoch. Mit AEM Package Manager können Sie das Bundle auf einen AEM-Formular-Server importieren.
 
 Nachdem das Bundle importiert wurde, ist die Option für die Auswahl der Java-Schnittstelle zum dynamischen Auswählen eines Benutzers oder einer Gruppe für die Schritte „Adobe Sign“ und „Aufgabe zuweisen“ verfügbar.
 

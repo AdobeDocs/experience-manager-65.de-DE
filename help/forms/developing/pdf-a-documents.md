@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2331'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -235,7 +235,7 @@ Bevor Sie einen DocConverter-Vorgang programmgesteuert ausführen können, müss
 
 **Referenzieren eines PDF-Dokuments zur Bestimmung der PDF/A-Konformität**
 
-Ein PDF-Dokument muss referenziert und an den DocConverter-Dienst übergeben werden, um festzustellen, ob das PDF-Dokument PDF/A-kompatibel ist.
+Ein PDF-Dokument muss referenziert und an den DocConverter-Service übergeben werden, um festzustellen, ob das PDF-Dokument PDF/A-kompatibel ist.
 
 **Festlegen von Laufzeitoptionen**
 

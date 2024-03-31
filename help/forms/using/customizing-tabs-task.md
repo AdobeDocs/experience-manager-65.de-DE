@@ -1,6 +1,6 @@
 ---
 title: Anpassen von Registerkarten für eine Aufgabe
-description: Gehen Sie wie folgt vor, um die Namen der Registerkarten für Ihre Aufgaben in LiveCycle AEM Forms Workspace anzupassen.
+description: Erfahren Sie, wie Sie die Namen der Registerkarten für Ihre Aufgaben in LiveCycle AEM Forms Workspace anpassen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '101'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 

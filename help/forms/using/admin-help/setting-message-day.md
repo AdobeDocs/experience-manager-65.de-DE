@@ -1,6 +1,6 @@
 ---
 title: Festlegen der Nachricht des Tages
-description: Mit der Tagesmeldung können Sie eine Nachricht festlegen, die auf der Begrüßungsseite in der Workspace-Benutzeroberfläche angezeigt werden soll.
+description: Mit „Nachricht des Tages“ können Sie eine Nachricht festlegen, die auf der Startseite der Workspace-Benutzeroberfläche angezeigt wird.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
@@ -10,34 +10,34 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '173'
-ht-degree: 26%
+ht-degree: 100%
 
 ---
 
 # Festlegen der Nachricht des Tages {#setting-the-message-of-the-day}
 
-Sie können eine Nachricht festlegen, die auf der Begrüßungsseite in der Workspace-Benutzeroberfläche angezeigt wird.
+Sie können eine Nachricht festlegen, die auf der Startseite der Workspace-Benutzeroberfläche angezeigt wird.
 
-Bei Bedarf können Sie die vom Adobe Flash® Player unterstützten HTML-Tags verwenden, um das Erscheinungsbild des Textes zu formatieren:
+Wenn gewünscht, können Sie mithilfe der von Adobe Flash® Player unterstützten HTML-Tags das Erscheinungsbild des Textes formatieren:
 
 * &lt;a> Anker-Tag
-* &lt;b> Fett-Tag
-* &lt;br> Break-Tag
+* &lt;b> Fettdruck-Tag
+* &lt;br> Zeilenumbruch-Tag
 * &lt;font> Schriftart-Tag
 * &lt;img> Bild-Tag
-* &lt;i> Kursiv-Tag
-* &lt;li> Element-Tag auflisten
+* &lt;i> Kursivdruck-Tag
+* &lt;li> Listenelement-Tag
 * &lt;p> Absatz-Tag
 * &lt;span> Span-Tag
 * &lt;textformat> Textformat-Tag
-* &lt;u> Tag unterstreichen
+* &lt;u> Unterstreichungs-Tag
 
 Weitere Informationen zu den unterstützten Tags finden Sie in der Definition der `htmlText`-Eigenschaft für die „TextField“-Klasse in der [Flex Language Reference](https://flex.apache.org/de/).
 
-## Nachricht des Tages festlegen {#set-the-message-of-the-day}
+## Festlegen der Nachricht des Tages {#set-the-message-of-the-day}
 
-1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;Workspace&quot;> &quot;Nachricht des Tages&quot;.
-1. Geben Sie im Feld &quot;Nachricht des Tages&quot;den Text ein, der auf dem Begrüßungsbildschirm angezeigt werden soll.
+1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Workspace“ > „Nachricht des Tages“.
+1. Geben Sie im Feld „Nachricht des Tages“ den Text ein, der auf dem Startbildschirm angezeigt werden soll.
 1. Klicken Sie auf Speichern.
 
 >[!NOTE]

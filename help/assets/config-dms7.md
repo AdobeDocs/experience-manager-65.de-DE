@@ -14,7 +14,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '6508'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -277,7 +277,7 @@ Wenn Sie diese Funktion verwenden möchten, beachten Sie die folgenden Vorausset
 
    * Kopieren Sie den obigen Pfad und fügen Sie ihn in das Feld Pfad von CRXDE Lite unter der Symbolleiste ein. Drücken Sie dann die Taste `Enter`.
 
-1. Klicken Sie in der linken Leiste mit der rechten Maustaste auf `fileupload`und wählen Sie dann im Popup-Menü **[!UICONTROL Überlagerungsknoten]**.
+1. Klicken Sie in der linken Leiste mit der rechten Maustaste auf `fileupload` und wählen Sie im Popup-Menü die Option **[!UICONTROL Überlagerungsknoten]** aus.
 
    ![Option „Überlagerungsknoten“](/help/assets/assets-dm/uploadassets15gb_a.png)
 
@@ -443,7 +443,7 @@ Sie können in Experience Manager Assets benutzerdefinierte MIME-Typen für nich
 
    ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
 
-1. Mit dem MIME-Typ `image_vnd.dwg` weiterhin ausgewählt ist, aus dem **[!UICONTROL Eigenschaften]** in der **[!UICONTROL enabled]** Zeile unter der **[!UICONTROL Wert]** Spaltenüberschrift, doppelklicken Sie auf den Wert, um den **[!UICONTROL Wert]** Dropdown-Liste.
+1. Während der MIME-Typ `image_vnd.dwg` noch ausgewählt ist, wählen Sie auf der Registerkarte **[!UICONTROL Eigenschaften]** in der Zeile **[!UICONTROL Aktiviert]** unter der Spaltenüberschrift **[!UICONTROL Wert]** den Wert doppelt aus, um die Dropdown-Liste **[!UICONTROL Wert]** zu öffnen.
 1. Geben Sie `false` in das Feld ein (oder wählen Sie **[!UICONTROL false]** aus der Dropdown-Liste).
 
    ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)

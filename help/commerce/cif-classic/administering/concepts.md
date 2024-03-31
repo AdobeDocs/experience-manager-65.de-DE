@@ -1,13 +1,13 @@
 ---
 title: Konzepte
-description: Erfahren Sie mehr über die allgemeinen Konzepte von eCommerce mit Adobe Experience Manager.
+description: Erfahren Sie mehr über die allgemeinen E-Commerce-Konzepte in Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '4439'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -487,7 +487,7 @@ Beim Erstellen eines Katalogs werden zehn Knoten pro Produkt verwendet, da er ei
 
 Proxy-Seiten nutzen eine Struktur mit zwei Knoten (`jcr:content` und `cq:Page`), die keine Produktinhalte enthalten. Die Inhalte werden zur Abfragezeit durch Verweise auf die Produktdaten und die Vorlagenseite generiert.
 
-Dabei gilt allerdings: Sie können Ihre Produktinformationen nicht innerhalb von AEM anpassen. Es wird eine Standardvorlage (definiert für Ihre Site) verwendet.
+Dabei gilt allerdings: Sie können die Produktdaten nicht in AEM anpassen. Es wird eine Standardvorlage (für Ihre Site definiert) verwendet.
 
 >[!NOTE]
 >
@@ -575,7 +575,7 @@ Eine Promotion kann entweder in einem Erlebnis oder direkt in der Kampagne gespe
 
 >[!NOTE]
 >
->[hybris-Promotions](https://www.hybris.com/modules/promotion) und [hybris-Gutscheine](https://www.hybris.com/en/modules/voucher) decken alles ab, was sich auf den Warenkorb auswirkt und mit der Preisgestaltung in Zusammenhang steht. Werbespezifische Marketing-Inhalte (z. B. Banner). sind nicht Teil der hybris-Promotion.
+>[hybris-Promotions](https://www.hybris.com/modules/promotion) und [hybris-Gutscheine](https://www.hybris.com/en/modules/voucher) decken alles ab, was sich auf den Warenkorb auswirkt und mit der Preisgestaltung in Zusammenhang steht. Promotion-spezifische Marketing-Inhalte (wie Banner usw.) sind nicht Teil der hybris-Promotion.
 
 ## Personalisierung  {#personalization}
 

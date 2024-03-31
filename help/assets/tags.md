@@ -14,7 +14,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '6664'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -537,7 +537,7 @@ Um eine Erweiterung zu installieren, klicken Sie auf **[!UICONTROL Installieren]
 
 Wenn erforderlich, müssen die folgenden Erweiterungen installiert und konfiguriert werden:
 
-* (Erforderlich) *Experience Cloud ID-Dienst* -Erweiterung.
+* (Erforderlich) *Experience Cloud ID Service*-Erweiterung.
 
 Es ist keine zusätzliche Konfiguration erforderlich; akzeptieren Sie die vorgeschlagenen Werte. Wenn Sie fertig sind, klicken Sie unbedingt auf **[!UICONTROL Speichern]**.
 
@@ -579,7 +579,7 @@ Danach ist die Erweiterung *Dynamic Media Viewer* nur verfügbar, wenn die Exper
 
 Siehe [Erstellen einer Eigenschaft in Experience Platform Tags](#creating-a-property-in-adobe-launch).
 
-Nachdem die Erweiterungen installiert und eingerichtet wurden, werden mindestens die folgenden fünf Erweiterungen (vier, wenn Sie kein Video verfolgen) im Bereich Erweiterungen > Installiert aufgeführt.
+Nachdem die Erweiterungen installiert und eingerichtet wurden, werden im Bereich „Erweiterungen“ > „Installiert“ mindestens die folgenden fünf Erweiterungen aufgeführt (vier, wenn Sie kein Video-Tracking nutzen).
 
 ![image2019-7-22_12-7-36](assets/image2019-7-22_12-7-36.png)
 
@@ -827,7 +827,7 @@ Beispiel: `https://ims-na1.adobelogin.com/`
 
    Überprüfen Sie im Feld **[!UICONTROL URI der Bibliothek]** (Uniform Resource Identifier) den Speicherort der Staging-Version Ihrer Experience Platform Tags-Bibliothek. Experience Manager füllt dieses Feld automatisch aus.
 
-   Dieser Schritt verwendet nur zu Beispielzwecken Experience Platform-Tags-Bibliotheken, die auf Adobe CDN bereitgestellt werden.
+   Nur als Beispiel werden in diesem Schritt Experience Platform-Tag-Bibliotheken verwendet, die in Adobe CDN bereitgestellt werden.
 
    >[!NOTE]
    >

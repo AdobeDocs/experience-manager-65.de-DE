@@ -1,6 +1,6 @@
 ---
 title: Erstellen einer effektiven Landingpage für Newsletter
-description: Eine effektive Startseite für Ihren Newsletter hilft Ihnen dabei, so viele Personen wie möglich dazu zu animieren, sich für Ihren Newsletter (oder eine andere E-Mail-Marketing-Kampagne) zu registrieren. Sie können die Informationen verwenden, die Sie aus Ihren Newsletter-Anmeldungen erfassen, um Leads zu erhalten.
+description: Eine effektive Startseite für Ihren Newsletter hilft Ihnen dabei, so viele Personen wie möglich dazu zu animieren, sich für Ihren Newsletter (oder eine andere E-Mail-Marketing-Kampagne) zu registrieren. Sie können die Informationen nutzen, die Sie aus Ihren Newsletter-Anmeldungen sammeln, um Leads zu gewinnen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -11,25 +11,25 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '596'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
 # Erstellen einer effektiven Landingpage für Newsletter{#creating-an-effective-newsletter-landing-page}
 
-Eine effektive Startseite für Ihren Newsletter hilft Ihnen dabei, so viele Personen wie möglich dazu zu animieren, sich für Ihren Newsletter (oder eine andere E-Mail-Marketing-Kampagne) zu registrieren. Sie können die Informationen verwenden, die Sie aus Ihren Newsletter-Anmeldungen erfassen, um Leads zu erhalten.
+Eine effektive Startseite für Ihren Newsletter hilft Ihnen dabei, so viele Personen wie möglich dazu zu animieren, sich für Ihren Newsletter (oder eine andere E-Mail-Marketing-Kampagne) zu registrieren. Sie können die Informationen nutzen, die Sie aus Ihren Newsletter-Anmeldungen sammeln, um Leads zu gewinnen.
 
-Gehen Sie wie folgt vor, um eine effektive Newsletter-Landingpage zu erstellen:
+Um eine effektive Newsletter-Landingpage zu erstellen, müssen Sie Folgendes tun:
 
-1. Erstellen Sie eine Liste für den Newsletter, damit sich Benutzer für den Newsletter anmelden können.
-1. Erstellen Sie das Registrierungsformular. Fügen Sie in diesem Fall einen Workflow-Schritt hinzu, der automatisch die Person, die sich für den Newsletter anmeldet, zu Ihrer Lead-Liste hinzufügt.
-1. Erstellen Sie eine Bestätigungsseite, auf der die Benutzer für die Anmeldung gedankt und ihnen möglicherweise eine Promotion bereitgestellt wird.
-1. Teaser hinzufügen.
+1. Erstellen Sie eine Liste für den Newsletter, damit die Leute den Newsletter abonnieren können.
+1. Erstellen Sie das Registrierungsformular. Fügen Sie dabei einen Workflow-Schritt hinzu, der die Person, die sich für den Newsletter anmeldet, automatisch zu Ihrer Lead-Liste hinzufügt.
+1. Erstellen Sie eine Bestätigungsseite, die den Benutzenden für ihre Anmeldung dankt und ihnen möglicherweise eine Werbeaktion anbietet.
+1. Fügen Sie Teaser hinzu.
 
 >[!NOTE]
 >
 >Adobe plant nicht, diese Funktionen (Lead- und Listenverwaltung) weiter auszubauen.
->Es wird empfohlen [Adobe Campaign und Integration in AEM](/help/sites-administering/campaign.md).
+>Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
 ## Erstellen einer Liste für den Newsletter {#creating-a-list-for-the-newsletter}
 
@@ -41,9 +41,9 @@ Nachfolgend sehen Sie ein Beispiel für eine Liste:
 
 ## Erstellen eines Anmeldeformulars {#create-a-sign-up-form}
 
-Erstellen Sie ein Registrierungsformular für den Newsletter, über das Benutzer Tags abonnieren können. Die Beispiel-Geometrixx-Website bietet eine Newsletter-Seite in der Geometrixx-Symbolleiste, auf der Sie Ihr Formular erstellen können.
+Erstellen Sie ein Registrierungsformular für den Newsletter, über das Benutzer Tags abonnieren können. Die Beispiel-Website „Geometrixx“ bietet eine Newsletter-Seite in der Geometrixx-Symbolleiste, wo Sie Ihr Formular erstellen können.
 
-Informationen zum Erstellen eines eigenen Newsletter-Formulars finden Sie unter Informationen zum Erstellen von Formularen in der [Forms-Dokumentation](/help/sites-authoring/default-components.md#form). Der Newsletter verwendet die Tags aus der Tag-Bibliothek. Informationen zum Hinzufügen zusätzlicher Tags finden Sie unter [Tag-Verwaltung](/help/sites-authoring/tags.md#tagadministration).
+Informationen zum Erstellen Ihres eigenen Newsletter-Formulars finden Sie in der [Dokumentation zu Formularen](/help/sites-authoring/default-components.md#form). Der Newsletter verwendet die Tags aus der Tag-Bibliothek. Informationen zum Hinzufügen zusätzlicher Tags finden Sie unter [Tag-Verwaltung](/help/sites-authoring/tags.md#tagadministration).
 
 Die ausgeblendeten Felder in dem folgenden Beispiel enthalten die minimal erforderlichen Informationen (E-Mail); zusätzlich hierzu können Sie später weitere Felder hinzufügen, was jedoch Auswirkungen auf die Konversionsrate hat.
 
@@ -63,7 +63,7 @@ Das folgende Beispiel ist ein Formular, das unter „https://localhost:4502/cf#/
 
 ### Erstellen einer Dankeseite {#creating-a-thank-you-page}
 
-Wenn Benutzer auf **Jetzt abonnieren** klicken, soll automatisch eine Dankeseite geöffnet werden. Erstellen Sie die Dankeseite auf der Seite des Geometrixx-Newsletters. Bearbeiten Sie nach der Erstellung des Newsletter-Formulars die Formular-Komponente und fügen Sie den Pfad zur Dankeseite hinzu.
+Wenn Benutzer auf **Jetzt abonnieren** klicken, soll automatisch eine Dankeseite geöffnet werden. Erstellen Sie die Dankeseite auf der Seite des Geometrixx-Newsletters. Nachdem Sie das Newsletter-Formular erstellt haben, bearbeiten Sie die Formularkomponente und fügen Sie den Pfad zur Dankeseite hinzu.
 
 Nach dem Übermitteln der Anforderung wird der Benutzer zu einer **Danke**-Seite geleitet. Danach erhält er eine E-Mail. Diese Dankeseite wurde unter /content/geometrixx/en/toolbar/newsletter/thank_you erstellt.
 
@@ -71,22 +71,22 @@ Nach dem Übermitteln der Anforderung wird der Benutzer zu einer **Danke**-Seite
 
 ### Hinzufügen von Teasern {#adding-teasers}
 
-Fügen Sie [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers) hinzu, um bestimmte Zielgruppen anzusprechen. Beispielsweise können Sie der Dankeseite und der Newsletter-Anmeldeseite Teaser hinzufügen.
+Fügen Sie [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers) hinzu, um bestimmte Zielgruppen anzusprechen. Sie können beispielsweise der Dankeseite und der Newsletter-Anmeldeseite Teaser hinzufügen.
 
 So fügen Sie Teaser hinzu, um eine effektive Newsletter-Landingpage zu erstellen:
 
-1. Erstellen Sie einen Teaser-Absatz für ein Registrierungsgeschenk. Auswählen **Erste** als Strategie verwenden und Text einschließen, der ihnen mitteilt, welches Geschenk sie erhalten.
+1. Erstellen Sie einen Teaser-Absatz für ein Registrierungsgeschenk. Wählen Sie **Erste** als Strategie aus und fügen Sie einen Text hinzu, der Benutzende darüber informiert, welches Geschenk sie erhalten werden.
 
    ![dc_teaser_thankyou](assets/dc_teaser_thankyou.png)
 
-1. Erstellen Sie einen Teaser-Absatz für die Dankeseite. Auswählen **Erste** als Strategie verwenden und Text einschließen, der anzeigt, dass das Geschenk unterwegs ist.
+1. Erstellen Sie einen Teaser-Absatz für die Dankeseite. Wählen Sie **Erste** als die Strategie aus und fügen Sie einen Text ein, der darauf hinweist, dass das Geschenk unterwegs ist.
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
 1. Erstellen Sie eine Kampagne mit zwei Teasern; kennzeichnen Sie einen Teaser als „geschäftlich“ und belassen Sie den anderen ohne Kennzeichnung.
 
-### Übermitteln von Inhalten an Abonnenten {#pushing-content-to-subscribers}
+### Pushen von Inhalten zu Abonnentinnen und Abonnenten {#pushing-content-to-subscribers}
 
-Übernehmen Sie alle Änderungen an Seiten über die Newsletter-Funktion in MCM. Anschließend senden Sie aktualisierte Inhalte an Abonnenten.
+Übernehmen Sie alle Änderungen an Seiten über die Newsletter-Funktion in MCM. Anschließend pushen Sie aktualisierte Inhalte zu den Abonnentinnen und Abonnenten.
 
-Siehe [Newsletter senden](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters).
+Siehe [Senden von Newslettern](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters).

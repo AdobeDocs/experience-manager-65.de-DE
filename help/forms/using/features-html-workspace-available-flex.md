@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -38,4 +38,4 @@ Bilder oder Avatare für angemeldete Benutzer können nun rechts oben in AEM For
 
 ## Unterstützung für benutzerdefinierte Aufgabenerstellung basierend auf dem Gerät des Endanwenders {#support-for-custom-task-rendering-based-on-end-user-s-device}
 
-AEM Forms Workspace unterstützt die HTML-Wiedergabe von XDP-Formularen. Die Verwendung dieser Unterstützung in einem Rendering-Prozess, der basierend auf dem Gerät oder dem User-Agent zu verschiedenen Ausgabeformaten von XDP weiterleitet, ermöglicht es Benutzenden, ein XDP-Formular als HTML auf den Mobilgeräten und als PDF auf einem Desktop anzuzeigen. Dies hilft bei der Bereitstellung einer nahtlosen Abdeckung für das Prozess-Management für Benutzende, die in verschiedenen Umgebungen auf verschiedenen Geräten arbeiten.
+AEM Forms Workspace bietet Unterstützung für die HTML-Ausgabedarstellung von XDP-Formularen. Die Verwendung dieser Unterstützung in einem Rendering-Prozess, der basierend auf dem Gerät oder dem User-Agent zu verschiedenen Ausgabeformaten von XDP weiterleitet, ermöglicht es Benutzenden, ein XDP-Formular als HTML auf den Mobilgeräten und als PDF auf einem Desktop anzuzeigen. Dies hilft bei der Bereitstellung einer nahtlosen Abdeckung für das Prozess-Management für Benutzende, die in verschiedenen Umgebungen auf verschiedenen Geräten arbeiten.

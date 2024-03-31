@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Die folgenden beiden Bilder zeigen den Unterschied zwischen Standard- und benutz
 
 1. **Wählen Sie ein Profil aus, um benutzerdefinierte Stile hinzufügen**
 
-   Rufen Sie die CRX DE-Schnittstelle unter der URL **https://&lt;Server>:&lt;Port>/crx/de** auf und erstellen Sie ein Profil oder wählen Sie ein vorhandenes Profil. Informationen zum Erstellen eines Profils finden Sie unter [Erstellen eines Profils](/help/forms/using/custom-profile.md)
+   Rufen Sie die CRX DE-Schnittstelle unter der URL **https://&lt;Server>:&lt;Port>/crx/de** auf und erstellen Sie ein Profil oder wählen Sie ein vorhandenes Profil. Wie Sie ein Profil erstellen, erfahren Sie hier: [Erstellen eines Profils](/help/forms/using/custom-profile.md).
 
 1. **Erstellen Sie ein CSS-Stylesheet zum Gestalten der HTML5-Formulare**
 
@@ -37,7 +37,7 @@ Die folgenden beiden Bilder zeigen den Unterschied zwischen Standard- und benutz
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner und wählen Sie **Erstellen**-> **Datei erstellen** im Menü aus.
 
-   1. Geben Sie im Dateierstellungsdialog den Namen des Stylesheets ein. Stellen Sie sicher, dass Sie die Erweiterung .css verwenden (z. B. stylesheet.css).
+   1. Geben Sie im Dateierstellungsdialog den Namen des Stylesheets ein. Achten Sie darauf, die Erweiterung „.css“ (z. B. stylesheet.css) zu verwenden.
    1. Öffnen Sie im Navigationsfeld die von Ihnen erstellte CSS-Datei.
    1. Definieren Sie die CSS-Klassen der Komponenten, die Sie gestalten wollen, und fügen Sie in diesen Klassen Stile hinzu.
 

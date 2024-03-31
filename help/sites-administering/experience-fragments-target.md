@@ -1,6 +1,6 @@
 ---
 title: Exportieren von Experience Fragments nach Adobe Target
-description: Erfahren Sie, wie Sie Adobe Experience Manager-Experience Fragments (AEM) nach Adobe Target exportieren.
+description: Erfahren Sie, wie Sie Adobe Experience Manager (AEM) Experience Fragments in Adobe Target exportieren.
 contentOwner: carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1513'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 62%
 >6.5.3.0:
 >
 >* **Externalizer-Domains** können jetzt ausgewählt werden.
->  **Hinweis:** Externalizer-Domänen sind nur für den Inhalt des Experience Fragment relevant, das an Target gesendet wird, und nicht für Metadaten wie Angebotsinhalt anzeigen.
+>  **Hinweis:** Externalizer-Domains sind nur für den Inhalt des Experience Fragments relevant, das an Target gesendet wird, und nicht für Metadaten wie Inhalte zum Anzeigen von Angeboten.
 >
 >6.5.2.0:
 >
@@ -41,7 +41,7 @@ ht-degree: 62%
 >* Die AEM Experience Fragments werden in den Standardarbeitsbereich von Adobe Target exportiert.
 >* AEM muss gemäß den Anweisungen unter [Integration mit Adobe Target](/help/sites-administering/target.md) mit Adobe Target integriert werden.
 
-Sie können [Experience Fragments](/help/sites-authoring/experience-fragments.md), die in Adobe Experience Manager (AEM) erstellt wurden, nach Adobe Target (Target) exportieren. Sie können dann als Angebote in Target-Aktivitäten verwendet werden, um Erlebnisse bedarfsgerecht zu testen und zu personalisieren.
+Sie können [Experience Fragments](/help/sites-authoring/experience-fragments.md), die in Adobe Experience Manager (AEM) erstellt wurden, nach Adobe Target (Target) exportieren. Diese können dann als Angebote in Target-Aktivitäten verwendet werden, um Erlebnisse im benötigten Umfang zu testen und zu personalisieren.
 
 Es gibt drei Formatoptionen für den Export eines Experience Fragments in Adobe Target:
 
@@ -64,7 +64,7 @@ AEM Experience Fragments können in den Standardarbeitsbereich in Adobe Target o
 >Weitere Informationen finden Sie auch unter:
 >
 >* [Adobe Target-Entwicklung](https://developers.adobetarget.com/)
->* [Kernkomponenten – Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
+>* [Kernkomponenten – Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=de)
 >
 
 ## Voraussetzungen {#prerequisites}
@@ -76,7 +76,7 @@ AEM Experience Fragments können in den Standardarbeitsbereich in Adobe Target o
 Verschiedene Aktionen sind erforderlich:
 
 1. Sie müssen [AEM mit Adobe Target über IMS integrieren](/help/sites-administering/integration-target-ims.md).
-2. Experience Fragments werden aus der AEM-Autoreninstanz exportiert. Daher müssen Sie [Konfigurieren von AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) auf der Autoreninstanz, um sicherzustellen, dass alle Verweise im Experience Fragment für die Webbereitstellung externalisiert werden.
+2. Experience Fragments werden aus der AEM-Autoreninstanz exportiert. Daher müssen Sie auf der Autoreninstanz [den AEM Link Externalizer konfigurieren](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer), um sicherzustellen, dass alle Verweise im Experience Fragment für die Web-Bereitstellung externalisiert werden.
 
    >[!NOTE]
    >
@@ -84,11 +84,11 @@ Verschiedene Aktionen sind erforderlich:
 
 ## Hinzufügen der Cloud-Konfiguration {#add-the-cloud-configuration}
 
-Bevor Sie ein Fragment exportieren, müssen Sie die **Cloud-Konfiguration** für **Adobe Target** in das Fragment oder den Ordner. Dies ermöglicht Ihnen auch:
+Bevor Sie ein Fragment exportieren, müssen Sie die **Cloud-Konfiguration** für **Adobe Target** zum Fragment oder Ordner hinzufügen. Dies ermöglicht Ihnen auch:
 
-* die für den Export zu verwendenden Formatoptionen angeben
+* die für den Export zu verwendenden Formatoptionen anzugeben
 * einen Target-Arbeitsbereich als Ziel auszuwählen
-* eine Externalizer-Domäne für das Neuschreiben von Verweisen im Experience Fragment auswählen (optional)
+* eine Externalizer-Domain zum Umschreiben von Verweisen im Experience Fragment auszuwählen (optional)
 
 Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderlichen Ordners bzw. Fragments ausgewählt werden. Die Spezifikation wird nach Bedarf vererbt.
 
@@ -101,7 +101,7 @@ Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderl
    >Wenn Sie die Cloud-Konfiguration zum übergeordneten Ordner des Experience Fragments hinzufügen, wird die Konfiguration von allen untergeordneten Elementen geerbt.
    >
    >
-   >Wenn Sie die Cloud-Konfiguration zum Experience Fragment selbst hinzufügen, wird die Konfiguration von allen Varianten übernommen.
+   >Wenn Sie die Cloud-Konfiguration zum Experience Fragment selbst hinzufügen, wird die Konfiguration an alle Varianten vererbt.
 
 1. Wählen Sie die Registerkarte **Cloud-Services** aus.
 
@@ -109,24 +109,24 @@ Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderl
 
    >[!NOTE]
    >
-   >Das JSON-Format eines Experience Fragment-Angebots kann angepasst werden. Definieren Sie dazu eine Customer Experience Fragment-Komponente und kommentieren Sie dann, wie die Eigenschaften im Komponenten-Sling-Modell exportiert werden.
+   >Das JSON-Format eines Experience Fragment-Angebots kann angepasst werden. Definieren Sie dazu eine kundenspezifische Experience Fragment-Komponente und kommentieren Sie dann, wie die Eigenschaften im Komponenten-Sling-Modell exportiert werden.
    >
    >Beachten Sie die Kernkomponente:
    >
-   >[Kernkomponenten – Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
+   >[Kernkomponenten – Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=de)
 
    Wählen Sie unter **Adobe Target** Folgendes aus:
 
    * die passende Konfiguration
    * die Option für das erforderliche Format
    * einen Adobe Target-Arbeitsbereich
-   * bei Bedarf - die Externalizer-Domäne
+   * falls erforderlich – die Externalizer-Domain
 
    >[!CAUTION]
    >
-   >Die Externalizer-Domäne ist optional.
+   >Die Externalizer-Domain ist optional.
    >
-   >Ein AEM Externalizer wird konfiguriert, wenn der exportierte Inhalt auf einen bestimmten *publish* Domäne. Weitere Informationen finden Sie unter [Konfigurieren des AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
+   >Ein AEM Externalizer wird konfiguriert, wenn die exportierten Inhalte auf eine bestimmte *Veröffentlichungs*-Domain verweisen sollen. Weitere Informationen finden Sie unter [Konfigurieren des AEM Link Externalizers](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
    >
    >Beachten Sie außerdem, dass Externalizer-Domains nur für den Inhalt des Experience Fragments, das an Target gesendet wird, relevant sind und nicht Metadaten wie Inhalte zum Anzeigen von Angeboten.
 
@@ -142,9 +142,9 @@ Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderl
 >
 >Für Medien-Assets wie Bilder wird nur ein Verweis nach Target exportiert. Das Asset selbst bleibt in AEM Assets gespeichert und wird von der AEM-Veröffentlichungsinstanz bereitgestellt.
 >
->Daher muss das Experience Fragment mit allen zugehörigen Assets vor dem Export in Target veröffentlicht werden.
+>Daher muss das Experience Fragment mit allen zugehörigen Assets veröffentlicht werden, bevor es in Target exportiert wird.
 
-So exportieren Sie ein Experience Fragment aus AEM in Target (nach Angabe der Cloud-Konfiguration):
+Exportieren eines Experience Fragments aus AEM in Target (nach Angabe der Cloud-Konfiguration):
 
 1. Navigieren Sie zur Experience Fragment-Konsole.
 1. Wählen Sie das Experience Fragment aus, das Sie in nach Target exportieren möchten.
@@ -153,21 +153,21 @@ So exportieren Sie ein Experience Fragment aus AEM in Target (nach Angabe der Cl
    >
    >Es muss sich um eine Experience Fragment Web-Variante handeln.
 
-1. Klicks **Exportieren in Adobe Target**.
+1. Klicken Sie auf **In Adobe Target exportieren**.
 
    >[!NOTE]
    >
    >Wenn das Experience Fragment bereits exportiert wurde, wählen Sie **In Adobe Target aktualisieren**.
 
-1. Klicks **Exportieren ohne Veröffentlichung** oder **Veröffentlichen** nach Bedarf.
+1. Klicken Sie auf **Exportieren ohne Veröffentlichung** bzw. auf **Veröffentlichen**.
 
    >[!NOTE]
    >
-   >Auswählen **Veröffentlichen** veröffentlicht das Experience Fragment sofort und sendet es an Target.
+   >Wenn Sie **Veröffentlichen** auswählen, wird das Experience Fragment sofort veröffentlicht und an Target gesendet.
 
-1. Klicks **OK** im Bestätigungsdialogfeld.
+1. Klicken Sie im Bestätigungsdialogfeld auf **OK**.
 
-   Ihr Experience Fragment sollte sich jetzt in Target befinden.
+   Ihr Experience Fragment sollte jetzt in Target enthalten sein.
 
    >[!NOTE]
    >
@@ -183,7 +183,7 @@ So exportieren Sie ein Experience Fragment aus AEM in Target (nach Angabe der Cl
 
 ## Ihre Experience Fragments in Adobe Target verwenden {#using-your-experience-fragments-in-adobe-target}
 
-Nach dem Ausführen der vorherigen Aufgaben wird das Experience Fragment auf der Angebotsseite in Adobe Target angezeigt. Sehen Sie sich die [spezifische Target-Dokumentation](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=de) um zu erfahren, was man dort erreichen kann.
+Nach dem Ausführen der zuvor genannten Aufgaben wird das Experience Fragment auf der Seite „Angebote“ in Adobe Target angezeigt. Schauen Sie sich die [spezifische Target-Dokumentation](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=de) an, um zu erfahren, was Sie dort erreichen können.
 
 >[!NOTE]
 >
@@ -191,12 +191,12 @@ Nach dem Ausführen der vorherigen Aufgaben wird das Experience Fragment auf der
 
 ## Löschen eines bereits nach Adobe Target exportierten Experience Fragments {#deleting-an-experience-fragment-already-exported-to-adobe-target}
 
-Das Löschen eines Experience Fragment, das bereits in Target exportiert wurde, kann Probleme verursachen, wenn das Fragment bereits in einem Angebot in Adobe Target verwendet wird. Durch das Löschen des Fragments wird das Angebot unbrauchbar, da der Fragmentinhalt von AEM bereitgestellt wird.
+Das Löschen eines Experience Fragments, das bereits in Target exportiert wurde, kann Probleme verursachen, wenn das Fragment bereits in einem Angebot in Adobe Target verwendet wird. Durch das Löschen des Fragments wird das Angebot unbrauchbar, da der Fragmentinhalt von AEM bereitgestellt wird.
 
 So vermeiden Sie solche Situationen:
 
 * Wenn das Experience Fragment derzeit nicht in einer Aktivität verwendet wird, ermöglicht AEM es den Benutzenden, das Fragment ohne Warnmeldung zu löschen.
-* Wenn das Experience Fragment von einer Aktivität in Adobe Target verwendet wird, wird der AEM in einer Fehlermeldung über die möglichen Auswirkungen des Löschens des Fragments auf die Aktivität gewarnt.
+* Wenn das Experience Fragment derzeit von einer Aktivität in Adobe Target verwendet wird, werden AEM-Benutzende durch eine Fehlermeldung über die möglichen Auswirkungen eines Löschens des Fragments auf die Aktivität gewarnt.
 
   Die Fehlermeldung in AEM untersagt den Benutzenden nicht das (erzwungene) Löschen des Experience Fragments. Wenn das Experience Fragment gelöscht wurde, gilt Folgendes:
 
@@ -205,12 +205,12 @@ So vermeiden Sie solche Situationen:
       * Das Angebot wird wahrscheinlich noch gerendert, da das Experience Fragment-HTML nach Target verschoben wurde
       * Verweise im Experience Fragment funktionieren möglicherweise nicht ordnungsgemäß, wenn referenzierte Assets auch in AEM gelöscht wurden.
 
-   * Weitere Änderungen am Experience Fragment sind nicht möglich, da das Experience Fragment nicht mehr in AEM vorhanden ist.
+   * Es sind keine weiteren Änderungen am Experience Fragment möglich, da es nicht mehr in AEM vorhanden ist.
 
 
-## Entfernen von ClientLibs aus nach Target exportierten Experience Fragments {#removing-clientlibs-from-fragments-exported-target}
+## Entfernen von Client-Bibliotheken aus nach Target exportierten Experience Fragments {#removing-clientlibs-from-fragments-exported-target}
 
-Experience Fragments enthalten vollständige HTML-Tags und alle erforderlichen Client-Bibliotheken (CSS/JS), um das Fragment genau so wiederzugeben, wie es vom Experience Fragment-Inhaltsautor erstellt wurde. Dies ist beabsichtigt.
+Experience Fragments enthalten vollständige HTML-Tags und alle erforderlichen Client-Bibliotheken (CSS/JS), um das Fragment genau so wiederzugeben, wie es von dem Inhaltsautor bzw. der Inhaltsautorin des Experience Fragments erstellt wurde. Dies ist beabsichtigt.
 
 Wenn Sie ein Experience Fragment-Angebot mit Adobe Target auf einer Seite verwenden, die von AEM bereitgestellt wird, enthält die Zielseite bereits alle erforderlichen Client-Bibliotheken. Außerdem wird das überflüssige HTML im Experience Fragment-Angebot ebenfalls nicht benötigt (siehe [Überlegungen](#considerations)).
 
@@ -230,27 +230,27 @@ Im Folgenden finden Sie ein Pseudobeispiel für HTML in einem Experience Fragmen
 </html>
 ```
 
-Auf hoher Ebene werden beim AEM eines Experience Fragment nach Adobe Target mehrere zusätzliche Sling-Selektoren verwendet. Beispielsweise könnte die URL für das exportierte Experience Fragment wie folgt aussehen (beachten Sie `nocloudconfigs.atoffer`):
+Wenn AEM ein Experience Fragment in Adobe Target exportiert, verwendet es mehrere zusätzliche Sling-Selektoren. Beispielsweise könnte die URL für das exportierte Experience Fragment wie folgt aussehen (beachten Sie `nocloudconfigs.atoffer`):
 
 * http://www.your-aem-instance.com/content/experience-fragments/my-offers/my-xf-offer.nocloudconfigs.atoffer.html
 
-Die `nocloudconfigs` Der Selektor wird mithilfe von HTL definiert und kann durch Kopieren aus folgenden Quellen überlagert werden:
+Der Selektor `nocloudconfigs` wird mithilfe von HTL definiert und kann überlagert werden, indem er aus der folgenden Quelle kopiert wird:
 
 * /libs/cq/experience-fragments/components/xfpage/nocloudconfigs.html
 
-Die `atoffer` Selektor wird nach der Verarbeitung mit [Sling Rewriter](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). Beide können verwendet werden, um die Client-Bibliotheken zu entfernen.
+Der Selektor `atoffer` wird bei der Nachbearbeitung mit [Sling Rewriter](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html) angewendet. Beide können verwendet werden, um die Client-Bibliotheken zu entfernen.
 
 ### Beispiel {#example}
 
-Lassen Sie uns für diesen Zweck veranschaulichen, wie dies mit `nocloudconfigs`.
+Für unsere Zwecke veranschaulichen wir dies mit `nocloudconfigs`.
 
 >[!NOTE]
 >
->Siehe [Bearbeitbare Vorlagen](/help/sites-developing/templates.md#editable-templates) für weitere Informationen.
+>Weitere Informationen finden Sie unter [Bearbeitbare Vorlagen](/help/sites-developing/templates.md#editable-templates).
 
 #### Überlagerungen {#overlays}
 
-In diesem Beispiel werden die [Überlagerungen](/help/sites-developing/overlays.md) eingefügt, um die Client-Bibliotheken *und* die überflüssige HTML zu entfernen. Es wird davon ausgegangen, dass Sie den Experience Fragment-Vorlagentyp bereits erstellt haben. Die erforderlichen Dateien, aus denen kopiert werden muss `/libs/cq/experience-fragments/components/xfpage/` include:
+In diesem Beispiel werden die [Überlagerungen](/help/sites-developing/overlays.md) eingefügt, um die Client-Bibliotheken *und* die überflüssige HTML zu entfernen. Es wird davon ausgegangen, dass Sie den Experience Fragment-Vorlagentyp bereits erstellt haben. Zu den notwendigen Dateien, die von `/libs/cq/experience-fragments/components/xfpage/` kopiert werden müssen, gehören:
 
 * `nocloudconfigs.html`
 * `head.nocloudconfigs.html`
@@ -258,7 +258,7 @@ In diesem Beispiel werden die [Überlagerungen](/help/sites-developing/overlays.
 
 #### Überlagerungen vom Vorlagentyp {#template-type-overlays}
 
-Im Rahmen dieses Beispiels sehen Sie die folgende Struktur:
+Für dieses Beispiel verwenden wir die folgende Struktur:
 
 ![Überlagerungen vom Vorlagentyp](assets/xf-target-integration-02.png "Überlagerungen vom Vorlagentyp")
 
@@ -278,11 +278,11 @@ Diese Dateien enthalten folgende Inhalte:
 
 >[!NOTE]
 >
->Verwendung `data-sly-unwrap` um das Body-Tag zu entfernen, müssen Sie `nocloudconfigs.html`.
+>Um `data-sly-unwrap` zum Entfernen des Body-Tags zu verwenden, benötigen Sie `nocloudconfigs.html`.
 
 ### Überlegungen {#considerations}
 
-Wenn Sie mit Experience Fragment-Angeboten in Adobe Target sowohl AEM als auch Nicht-AEM-Sites unterstützen müssen, müssen Sie zwei Experience Fragments (zwei verschiedene Vorlagentypen) erstellen:
+Wenn Sie sowohl AEM-Sites als auch Nicht-AEM-Sites mit Experience Fragment-Angeboten in Adobe Target unterstützen möchten, müssen Sie zwei Experience Fragments (zwei verschiedene Vorlagentypen) erstellen:
 
 * Eins mit der Überlagerung zum Entfernen von clientlibs/extra HTML
 

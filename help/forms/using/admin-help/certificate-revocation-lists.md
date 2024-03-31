@@ -1,6 +1,6 @@
 ---
 title: Verwalten von Zertifikatsperrlisten
-description: Erfahren Sie, wie Sie Zertifikatsperrlisten verwalten. Sie können Zertifikatsperrlisten mithilfe der Trust Store-Verwaltung importieren, bearbeiten und löschen.
+description: Erfahren Sie, wie Sie Zertifikatsperrlisten verwalten. Mit der Trust Store-Verwaltung können Sie Zertifikatsperrlisten importieren, bearbeiten und löschen.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '167'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 

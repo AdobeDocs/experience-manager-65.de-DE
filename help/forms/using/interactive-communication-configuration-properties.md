@@ -1,6 +1,6 @@
 ---
 title: Konfigurationseigenschaften für interaktive Kommunikation
-description: Bearbeiten von Standardkonfigurationseigenschaften für interaktive Kommunikation
+description: Bearbeiten Sie die Standardkonfigurationseigenschaften für interaktive Kommunikationen.
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
@@ -9,10 +9,10 @@ docset: aem65
 feature: Interactive Communication
 exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f52b2076c94b64a9d84646621be3a04bfe15b13c
 workflow-type: tm+mt
 source-wordcount: '610'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Die Konfigurationseigenschaften umfassen Folgendes:
 
 ## Konfiguration für Dokumentfragment {#document-fragments-configuration}
 
-Auswählen **Konfiguration von Dokumentfragmenten** auf **Konfiguration der Adobe Experience Manager-Web-Konsole** Seite, um die Konfigurationseigenschaften für Dokumentfragmente anzuzeigen.
+Wählen Sie auf der Seite zur **Konfiguration der Adobe Experience Manager-Web-Konsole** die Option **Dokumentfragment-Konfiguration** aus, um die Konfigurationseigenschaften für Dokumentfragmente anzuzeigen.
 
 <table>
  <tbody> 
@@ -58,19 +58,19 @@ Auswählen **Konfiguration von Dokumentfragmenten** auf **Konfiguration der Adob
   </tr> 
   <tr> 
    <td>Einzug</td> 
-   <td>Die Breite einer Einzugseinheit, die auf Text in Listendokumentfragmenten angewendet wird.</td> 
+   <td>Die Breite der einzelnen Einzugseinheit, die auf den Text in Listendokumentfragmenten angewendet wird.</td> 
    <td>12,7 mm</td> 
    <td>Zahl</td> 
   </tr> 
   <tr> 
    <td>Mindestbreite bei römischen Zahlen</td> 
-   <td>Mindestbreite für das Aufzählungs- oder Zahlenfeld bei Verwendung von römischen Zahlen in Listendokumentfragmenten. </td> 
+   <td>Mindestbreite für das Aufzählungszeichen- oder Zahlenfeld, wenn römische Zahlen in Listendokumentfragmenten verwendet werden. </td> 
    <td>12,7 mm</td> 
    <td>Zahl</td> 
   </tr> 
   <tr> 
    <td>Mindestbreite bei Zahlen</td> 
-   <td>Mindestbreite für das Aufzählungs- oder Zahlenfeld bei nummerierten Listen, mit Ausnahme der römischen Zahlen in Listendokumentfragmenten.</td> 
+   <td>Mindestbreite für das Aufzählungszeichen- oder Zahlenfeld, wenn neben römischen Zahlen nummerierte Listen in Listendokumentfragmenten verwendet werden.</td> 
    <td>8,0 mm</td> 
    <td>Zahl</td> 
   </tr> 
@@ -79,7 +79,7 @@ Auswählen **Konfiguration von Dokumentfragmenten** auf **Konfiguration der Adob
 
 ## Erstellen der Korrespondenzkonfiguration {#create-correspondence-configuration}
 
-Auswählen **Korrespondenzkonfiguration erstellen** auf **Konfiguration der Adobe Experience Manager-Web-Konsole** Seite, um die Konfigurationseigenschaften für die Benutzeroberfläche für Agenten anzuzeigen.
+Wählen Sie auf der Seite zur **Konfiguration der Adobe Experience Manager-Web-Konsole** die Option **Korrespondenzkonfiguration erstellen** aus, um die Konfigurationseigenschaften für die Agent-Benutzeroberfläche anzuzeigen.
 
 <table>
  <tbody> 
@@ -90,14 +90,14 @@ Auswählen **Korrespondenzkonfiguration erstellen** auf **Konfiguration der Adob
    <td>Zulässige Werte</td> 
   </tr> 
   <tr> 
-   <td>Gelösten Inhalt zur Bearbeitung anzeigen</td> 
-   <td>Aktivieren Sie das Kontrollkästchen, um aufgelösten Inhalt (tatsächliche Werte anstelle von Platzhaltern) beim Bearbeiten des Textmoduls auf der Benutzeroberfläche für Agenten anzuzeigen.</td> 
+   <td>Aufgelöste Inhalte zur Bearbeitung anzeigen</td> 
+   <td>Aktivieren Sie das Kontrollkästchen, um aufgelöste Inhalte (tatsächliche Werte anstelle von Platzhaltern) anzuzeigen, während Sie Textmodule auf der Agent-Benutzeroberfläche bearbeiten.</td> 
    <td>Nicht ausgewählt</td> 
    <td>Nicht zutreffend</td> 
   </tr> 
   <tr> 
-   <td>Anwenden von Wasserzeichen während der Vorschau</td> 
-   <td>Aktivieren Sie das Kontrollkästchen, um das Wasserzeichen auf den Druckkanal der interaktiven Kommunikation im Vorschaumodus anzuwenden.</td> 
+   <td>Wasserzeichen während der Vorschau anwenden</td> 
+   <td>Aktivieren Sie das Kontrollkästchen, um ein Wasserzeichen auf den Druckkanal der interaktiven Kommunikation im Vorschaumodus anzuwenden.</td> 
    <td>Nicht ausgewählt</td> 
    <td>Nicht zutreffend</td> 
   </tr> 
@@ -112,17 +112,17 @@ Auswählen **Korrespondenzkonfiguration erstellen** auf **Konfiguration der Adob
 
 ## Konfiguration des Web-Kanals für adaptive Formulare und interaktive Kommunikation {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Auswählen **Webkanalkonfiguration für adaptive Formulare und interaktive Kommunikation** auf **Konfiguration der Adobe Experience Manager-Web-Konsole** Seite, um die Konfigurationseigenschaften für den Webkanal &quot;Adaptive Forms&quot;und &quot;Interaktive Kommunikation&quot;anzuzeigen. In der folgenden Tabelle werden die Eigenschaften im Zusammenhang mit interaktiver Kommunikation beschrieben:
+Wählen Sie auf der Seite zur **Konfiguration der Adobe Experience Manager-Web-Konsole** die Option zur **Web-Kanal-Konfiguration für adaptive Formulare und interaktive Kommunikation** aus, um die Konfigurationseigenschaften für den Web-Kanal für adaptive Formulare und interaktive Kommunikation anzuzeigen. Die folgende Tabelle enthält eine Beschreibung der Eigenschaften, die sich auf die interaktive Kommunikation beziehen:
 
 | Eigenschaft | Beschreibung | Standard | Zulässige Werte |
 |---|---|---|---|
-| Platzhalter anzeigen | Aktivieren Sie das Kontrollkästchen, um die Anzeige von Platzhaltern für Felder zu aktivieren, die in adaptiven Formularen und interaktiver Kommunikation enthalten sind. | Ausgewählt | Nicht zutreffend |
-| Maximale Cache-Einträge | Legen Sie die maximale Anzahl adaptiver Formulare und interaktiver Kommunikation fest, die mithilfe des Cache-Speichers abgerufen werden können. | 100 | Zahl |
-| Dateinamen eindeutig machen | Aktivieren Sie das Kontrollkästchen, um eindeutige Namen für Dateien zu erhalten, die als Anhänge in Adaptive Forms und interaktive Kommunikation enthalten sind. | Nicht ausgewählt | Nicht zutreffend |
+| Platzhalter anzeigen | Aktivieren Sie das Kontrollkästchen, um die Anzeige von Platzhaltern für Felder zu aktivieren, die in adaptiven Formularen und in interaktiver Kommunikation enthalten sind. | Ausgewählt | Nicht zutreffend |
+| Maximale Cache-Einträge | Legen Sie die maximale Anzahl an adaptiven Formularen und interaktiven Kommunikationen fest, die mithilfe des Cache-Speichers abgerufen werden können. | 100 | Zahl |
+| Dateinamen als eindeutig festlegen | Aktivieren Sie das Kontrollkästchen, um eindeutige Namen für Dateien zu erhalten, die als Anlagen in adaptiven Formularen und interaktiven Kommunikationen enthalten sind. | Nicht ausgewählt | Nicht zutreffend |
 
 ## Konfiguration der Web-Kanalthemen für adaptive Formulare und interaktive Kommunikation {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Auswählen **Webkanal-Designkonfiguration für adaptive Formulare und interaktive Kommunikation** auf **Konfiguration der Adobe Experience Manager-Web-Konsole** Seite, um die Konfigurationseigenschaften für Webkanalthemen zu adaptiven Forms- und interaktiven Kommunikationen anzuzeigen.
+Wählen Sie auf der Seite zur **Konfiguration der Adobe Experience Manager-Web-Konsole** die Option **Web-Kanalthemen-Konfiguration für adaptive Formulare und interaktive Kommunikation** aus, um die Konfigurationseigenschaften für die Web-Kanalthemen für adaptive Formulare und interaktive Kommunikationen anzuzeigen.
 
 <table>
  <tbody> 
@@ -133,10 +133,10 @@ Auswählen **Webkanal-Designkonfiguration für adaptive Formulare und interaktiv
    <td>Zulässige Werte</td> 
   </tr> 
   <tr> 
-   <td>Schriftlistenname</td> 
-   <td>Liste der Schriftarten, die beim Erstellen der adaptiven Forms- und interaktiven Kommunikation verwendet werden können.</td> 
-   <td><p>Georgia</p> <p>Buch Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial Schwarz</p> <p>Auswirkungen</p> <p>Palatino-Linotyp</p> </td> 
-   <td>Alle gültigen Adobe-Serverschriftarten</td> 
+   <td>Liste der Schriftartennamen</td> 
+   <td>Liste der Schriften, die beim Erstellen von adaptiven Formularen und interaktiven Kommunikationen verwendet werden können.</td> 
+   <td><p>Georgia</p> <p>Book Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial Schwarz</p> <p>Auswirkungen</p> <p>Palatino Linotype</p> </td> 
+   <td>Alle gültigen Adobe-Server-Schriften</td> 
   </tr> 
  </tbody> 
 </table>

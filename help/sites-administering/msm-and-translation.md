@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '365'
-ht-degree: 84%
+ht-degree: 95%
 
 ---
 
@@ -37,7 +37,7 @@ Sie können durch den kombinierten Einsatz von Multi Site Manager und Übersetzu
 * Verwenden Sie [Multi Site Manager](/help/sites-administering/msm.md) für Folgendes:
 
    * Sie können die Inhalte der Primär-Site sowie die zugehörigen Übersetzungen wiederverwenden, um Sites für andere Länder und Kulturen zu erstellen.
-   * Stellen Sie sicher, dass Sie die Verwendung von Multi Site Manager auf Inhalte in einer Sprache beschränken, z. B. auf englische Master > englische Sprachzweige auf Länderseiten, französische Master > französische Sprachzweige auf Länderseiten.
+   * Achten Sie darauf, die Verwendung des Multi-Site-Managers auf Inhalte in einer Sprache zu begrenzen, z. B. englische Primär-Site > englische Sprachzweige auf Länder-Sites, französische Primär-Site > französische Sprachzweige auf Länder-Sites.
    * Trennen Sie bei Bedarf Elemente von den Live Copies, um Lokalisierungsdetails hinzuzufügen.
 
 Das folgende Diagramm veranschaulicht, wie sich die Hauptkonzepte überschneiden (es sind jedoch nicht alle beteiligten Ebenen/Elemente dargestellt):
@@ -57,7 +57,7 @@ Das folgende Diagramm veranschaulicht, wie sich die Hauptkonzepte überschneiden
 >
 >Bei allen Nutzungsszenarien wird empfohlen, die folgenden Best Practices zu lesen:
 >
->* [Best Practices für MSM](/help/sites-administering/msm-best-practices.md); insbesondere:
+>* [Best Practices für MSM](/help/sites-administering/msm-best-practices.md); vor allem:
 >
 >   * [Erstellen einer Website](/help/sites-administering/msm-best-practices.md#create-site)
 >   * [MSM und mehrsprachige Websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)

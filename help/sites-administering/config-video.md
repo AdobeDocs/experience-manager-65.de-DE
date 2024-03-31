@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren der Videokomponente
-description: Erfahren Sie, wie Sie mit der Videokomponente in Adobe Experience Manager ein vordefiniertes, vordefiniertes Video-Asset auf Ihrer Seite platzieren.
+description: Erfahren Sie, wie Sie die Videokomponente im Adobe Experience Manager verwenden, um ein vordefiniertes, sofort einsatzbereites Video-Asset auf Ihrer Seite zu platzieren.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '479'
-ht-degree: 65%
+ht-degree: 83%
 
 ---
 
@@ -47,18 +47,18 @@ Gehen Sie wie folgt vor, um FFmpeg unter **Windows** zu installieren:
 1. Legen Sie die Systemumgebungsvariable `PATH` als &lt;*your-ffmpeg-location*>`\bin` fest.
 1. Starten Sie AEM neu.
 
-So installieren Sie FFmpeg in **MACOS X** führen Sie die folgenden Schritte aus:
+Um FFmpeg auf **macOS X** zu installieren, gehen Sie folgendermaßen vor:
 
 1. Installieren Sie Xcode, das unter [developer.apple.com/xcode](https://developer.apple.com/xcode/) verfügbar ist.
-1. Installieren Sie es unter [XQuartz](https://www.xquartz.org), um [X11](https://support.apple.com/en-us/100724) zu erhalten.
+1. Installieren Sie es unter [XQuartz](https://www.xquartz.org), um [X11](https://support.apple.com/de-de/100724) zu erhalten.
 1. Installieren Sie die unter [www.macports.org](https://www.macports.org/) verfügbaren MacPorts.
-1. Führen Sie in der Konsole `sudo port install ffmpeg` und befolgen Sie die Anweisungen auf dem Bildschirm. Stellen Sie sicher, dass der Pfad der ausführbaren Datei `FFmpeg` zur Systemvariablen `PATH` hinzugefügt wird.
+1. Führen Sie in der Konsole den Befehl `sudo port install ffmpeg` aus und folgen Sie den Anweisungen auf dem Bildschirm. Stellen Sie sicher, dass der Pfad der ausführbaren Datei `FFmpeg` zur Systemvariablen `PATH` hinzugefügt wird.
 
-So installieren Sie FFmpeg in **macOS X 10.6** Führen Sie mithilfe der vorkompilierten Version die folgenden Schritte aus:
+Um FFmpeg unter **macOS X 10.6** mit der vorkompilierten Version zu installieren, folgen Sie diesen Schritten:
 
 1. Laden Sie die vorkompilierte Version herunter.
 1. Archivieren Sie sie im Verzeichnis `/usr/local`.
-1. Führen Sie in der Konsole `sudo ln -s /usr/local/Cellar/ffmpeg/0.6/bin/ffmpeg /usr/bin/ffmpeg`. Ändern Sie den Pfad entsprechend.
+1. Führen Sie `sudo ln -s /usr/local/Cellar/ffmpeg/0.6/bin/ffmpeg /usr/bin/ffmpeg` in der Konsole aus. Ändern Sie den Pfad nach Bedarf.
 
 Gehen Sie wie folgt vor, um **AEM zu konfigurieren**:
 

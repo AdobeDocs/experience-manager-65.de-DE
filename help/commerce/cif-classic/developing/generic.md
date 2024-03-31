@@ -1,13 +1,13 @@
 ---
 title: Entwicklung (generisch)
-description: Das Integrations-Framework enthält eine Integrationsschicht mit einer API, mit der Sie AEM Komponenten für eCommerce-Funktionen erstellen können.
+description: Das Integrations-Framework enthält eine Integrationsebene mit einer API und ermöglicht es Ihnen, AEM-Komponenten für eCommerce-Funktionen zu erstellen.
 contentOwner: Guillaume Carlino
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
 solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '1856'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 

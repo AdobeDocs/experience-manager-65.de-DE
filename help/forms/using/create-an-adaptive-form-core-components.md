@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1733'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -66,7 +66,7 @@ Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
 
 1. Geben Sie Ihre Anmeldedaten auf der Experience Manager-Anmeldeseite ein. Wenn Sie sich angemeldet haben, wählen Sie in der oberen linken Ecke **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** aus.
 
-1. Auswählen **[!UICONTROL Erstellen]**  > **[!UICONTROL Adaptive Forms erstellen]**.
+1. Wählen Sie **[!UICONTROL Erstellen]**  > **[!UICONTROL Adaptives Formular erstellen]** aus.
 
 1. Wählen Sie eine Vorlage mit Kernkomponenten für adaptive Formulare aus und klicken Sie auf **[!UICONTROL Weiter]**.
 
@@ -78,10 +78,10 @@ Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
    * **[!UICONTROL Design-Client-Bibliothek]:** Gibt das Design für ein adaptives Formular an. Standardmäßig wird das Design `adaptiveform.theme.canvas3` ausgewählt. Sie können auch ein anderes Design im Dropdown-Menü **[!UICONTROL Design-Client-Bibliothek]** auswählen.
    * **[!UICONTROL Konfigurations-Container:]** Definiert einen Speicherort, an dem Konfigurationsdateien für adaptive Formulare gespeichert werden. Diese Konfigurationsdateien enthalten Einstellungen und Eigenschaften, die sich auf das Verhalten und das Erscheinungsbild von adaptiven Formularen beziehen.
    * **[!UICONTROL Tags:]** Gibt Tags an, die eine eindeutige Identifizierung des adaptiven Formulars ermöglichen. Tags erleichtern die Suche nach dem Formular. Um die Tags zu erstellen, geben Sie neue Tag-Namen in das Feld **[!UICONTROL Tags]** ein.
-1. Wählen Sie **[!UICONTROL Erstellen]** aus. Ein adaptives Formular wird erstellt, und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt.
+1. Wählen Sie **[!UICONTROL Erstellen]**. Es wird ein adaptives Formular erstellt und ein Dialogfeld zum Öffnen der Formularbearbeitung angezeigt. 
 
 
-1. Auswählen **[!UICONTROL Bearbeiten]** , um das neu erstellte Formular in einer neuen Registerkarte zu öffnen. Das Formular wird zur Bearbeitung geöffnet und zeigt den Inhalt an, der in der Vorlage verfügbar ist. Außerdem wird die Seitenleiste angezeigt, um das neu erstellte Formular anzupassen.
+1. Wählen Sie **[!UICONTROL Bearbeiten]** aus, um das neu erstellte Formular auf einer neuen Registerkarte zu öffnen. Das Formular wird zur Bearbeitung geöffnet und zeigt den Inhalt an, der in der Vorlage verfügbar ist. Außerdem wird die Seitenleiste angezeigt, um das neu erstellte Formular anzupassen.
 
 
 ## Verwenden der Kernkomponenten für adaptive Formulare zum Erstellen Ihres Formulars

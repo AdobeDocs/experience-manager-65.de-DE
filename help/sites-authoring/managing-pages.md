@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2417'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -18,15 +18,15 @@ In diesem Abschnitt wird beschrieben, wie Sie mit Adobe Experience Manager (AEM)
 >
 >Ihr Konto muss über die erforderlichen [Zugriffsrechte](/help/sites-administering/security.md) und [Berechtigungen](/help/sites-administering/security.md#permissions) verfügen, damit Sie Aktionen auf Seiten durchführen können, beispielsweise erstellen, kopieren, verschieben, bearbeiten und löschen.
 >
->Wenn Sie auf Probleme stoßen, empfehlen wir Ihnen, sich an die Systemadmins zu wenden.
+>Wenn Sie auf Probleme stoßen, empfehlen wir Ihnen, sich an Ihre Systemadmins zu wenden.
 
 >[!NOTE]
 >
->Es steht eine Reihe von [Tastaturbefehlen](/help/sites-authoring/keyboard-shortcuts.md) in der Websites-Konsole zur Verfügung, die eine effizientere Seitenorganisation ermöglichen.
+>Es steht eine Reihe von [Tastaturbefehlen](/help/sites-authoring/keyboard-shortcuts.md) in der Website-Konsole zur Verfügung, die eine effizientere Seitenorganisation ermöglichen.
 
-## Organisieren Ihrer Website {#organizing-your-website}
+## Organisation Ihrer Website {#organizing-your-website}
 
-Organisieren Sie als Autor Ihre Website in AEM. Dazu gehört die Erstellung und Benennung von Inhaltsseiten, sodass Folgendes zutrifft:
+Organisieren Sie als Autorin oder Autor Ihre Website innerhalb von AEM. Dazu gehört die Erstellung und Benennung von Inhaltsseiten, sodass Folgendes zutrifft:
 
 * Sie müssen leicht in der Authoring-Umgebung auffindbar sein.
 * Besucher der Website müssen sie einfach in der Veröffentlichungsumgebung durchsuchen können.
@@ -79,7 +79,7 @@ An jedem Punkt können Sie die Verzwigung nach oben in den Breadcrumbs in der Ko
 
 ### Seitenbenennungskonventionen {#page-naming-conventions}
 
-Beim Erstellen einer Seite gibt es zwei Schlüsselfelder:
+Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
 
 * **[Titel](#title)**:
 
@@ -105,7 +105,7 @@ Der **Seitentitel** und der **Seitenname** können separat erstellt werden, sind
 >
 >Denken Sie auch daran, dass einige Browser (z. B. ältere Versionen von IE) nur URLs bis zu einer bestimmten Länge akzeptieren, sodass auch technische Gründe für die Verwendung von kurzen Seitennamen bestehen.
 
-Beim Erstellen einer Seite [validiert AEM den Seitennamen entsprechend den AEM- und JCR-Konventionen](/help/sites-developing/naming-conventions.md).
+Beim Erstellen einer Seite [validiert AEM den Seitennamen entsprechend den von AEM und JCR vorgegebenen Konventionen](/help/sites-developing/naming-conventions.md).
 
 Mindestens zulässig sind die folgenden Zeichen:
 
@@ -123,7 +123,7 @@ Umfassende Informationen zu allen zulässigen Zeichen finden Sie in den [Benennu
 
 #### Titel {#title}
 
-Wenn Sie nur eine Seite angeben **Titel** leitet AEM die Seite beim Erstellen einer Seite ab **Name** aus dieser Zeichenfolge und [den Namen gemäß den Konventionen validieren](/help/sites-developing/naming-conventions.md) von AEM und JCR aufgezwungen. Im Feld **Titel** werden ungültige Zeichen akzeptiert, wobei die ungültigen Zeichen im abgeleiteten Namen jedoch ersetzt werden. Beispiel:
+Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen** für die Seite von dieser Zeichenfolge ab und [validiert den Namen entsprechend den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR. Im Feld **Titel** werden ungültige Zeichen akzeptiert, wobei die ungültigen Zeichen im abgeleiteten Namen jedoch ersetzt werden. Beispiel:
 
 | Titel | Abgeleiteter Name |
 |---|---|
@@ -132,7 +132,7 @@ Wenn Sie nur eine Seite angeben **Titel** leitet AEM die Seite beim Erstellen ei
 
 #### Name {#name}
 
-Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen gemäß den AEM- und JCR-Konventionen](/help/sites-developing/naming-conventions.md). Die Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld mit einer erläuternden Meldung hervorgehoben.
+Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen gemäß den Konventionen von AEM und JCR](/help/sites-developing/naming-conventions.md). Die Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld mit einer erläuternden Meldung hervorgehoben.
 
 ![caop-02](assets/caop-02.png)
 
@@ -146,7 +146,7 @@ Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben
 
 In AEM gibt eine Vorlage einen speziellen Seitentyp an. Eine Vorlage wird als Grundlage für jede neue Seite verwendet, die erstellt wird.
 
-Die Vorlage definiert die Struktur einer Seite, einschließlich eines Miniaturbilds und anderer Eigenschaften. Sie können beispielsweise separate Vorlagen für Produktseiten, Sitemaps und Kontaktinformationen verwenden. Vorlagen bestehen aus [Komponenten](#components).
+Die Vorlage definiert die Seitenstruktur, u. a. eine Miniaturansicht und andere Eigenschaften. Beispielsweise könnten Sie unterschiedliche Vorlagen für Produktseiten, Sitemaps und Kontaktangaben verwenden. Vorlagen bestehen aus [Komponenten](#components).
 
 Im Lieferumfang von AEM sind diverse Vorlagen enthalten. Welche Vorlagen verfügbar sind, hängt von der jeweiligen Website ab. Die wichtigsten Felder sind:
 
@@ -165,7 +165,7 @@ Eine Liste von Vorlagen, die für das Erstellen neuer Seiten verwendet werden k�
 
 ### Komponenten {#components}
 
-Komponenten sind die Elemente, die von AEM bereitgestellt werden, damit Sie bestimmte Inhaltstypen hinzufügen können. AEM enthält eine Reihe von [vordefinierte Komponenten](/help/sites-authoring/default-components-console.md) , die eine umfassende Funktionalität bieten. Dazu gehören:
+Komponenten sind die Elemente, die von AEM bereitgestellt werden, damit Sie bestimmte Inhaltstypen hinzufügen können. AEM ist mit [einsatzbereiten Komponenten](/help/sites-authoring/default-components-console.md) ausgestattet, die umfangreiche Funktionen bieten, wie:
 
 * Text
 * Bild
@@ -186,14 +186,14 @@ Sobald Sie eine Seite erstellt und geöffnet haben, können Sie [Inhalte mithilf
 Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstellen, bevor Sie mit der Erstellung von Inhalten beginnen können:
 
 1. Öffnen Sie die Sites-Konsole, (z. B. [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content).).
-1. Navigieren Sie zu der Position, an der Sie die neue Seite erstellen möchten.
+1. Navigieren Sie zum Speicherort, an dem Sie die neue Seite erstellen möchten.
 1. Öffnen Sie das Dropdown-Menü über **Erstellen** in der Symbolleiste und wählen Sie **Seite** aus der Liste aus:
 
    ![caop-03](assets/caop-03.png)
 
 1. Im ersten Schritt des Assistenten haben Sie folgende Möglichkeiten:
 
-   * Wählen Sie die Vorlage aus, die Sie zum Erstellen der neuen Seite verwenden möchten, und klicken Sie auf **Nächste** um fortzufahren.
+   * Wählen Sie die Vorlage, die Sie zum Erstellen der neuen Seite verwenden möchten, und klicken/tippen Sie dann auf **Weiter**, um fortzufahren.
 
    * Mit **Abbrechen** brechen Sie den Vorgang ab.
 
@@ -201,7 +201,7 @@ Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstell
 
 1. Im letzten Schritt des Assistenten haben Sie folgende Möglichkeiten:
 
-   * Verwenden Sie die drei Tabs, um die [Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md) Sie der neuen Seite zuweisen möchten, klicken Sie auf **Erstellen** , um die Seite zu erstellen.
+   * Geben Sie auf den drei Registerkarten die [Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md) ein, die Sie der neuen Seite zuweisen möchten, und klicken bzw. tippen Sie dann auf **Erstellen**, um die Seite zu erstellen.
 
    * Verwenden Sie die **Rücktaste**, um zur Vorlagenauswahl zurückzukehren.
 
@@ -220,9 +220,9 @@ Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstell
 
    >[!NOTE]
    >
-   >Siehe [Seitenbenennungskonventionen](#page-naming-conventions).
+   >Siehe [Seitenbenennungskonventionen](#page-naming-conventions)
 
-   Zum Erstellen einer neuen Seite muss mindestens der **Titel** angegeben werden.
+   Zum Erstellen einer neuen Seite muss zumindest der **Titel** angegeben werden.
 
    ![caop-05](assets/caop-05.png)
 
@@ -232,7 +232,7 @@ Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstell
 
    >[!NOTE]
    >
-   >Wenn Sie eine Seite erstellen und dabei einen in diesem Verzeichnis bereits vorhandenen Namen verwenden, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn beispielsweise `winter` bereits vorhanden ist, wird eine neue Seite `winter0`.
+   >Wenn Sie eine Seite erstellen und dabei einen in diesem Verzeichnis bereits vorhandenen Namen verwenden, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn beispielsweise `winter` bereits vorhanden ist, wird eine neue Seite `winter0` genannt.
 
 1. Wenn Sie zur Konsole zurückkehren, wird die neue Seite angezeigt:
 
@@ -282,17 +282,17 @@ Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicher
    >Wenn Sie sich im Auswahlmodus befinden, wird dieser automatisch beendet, sobald die Seite kopiert wird.
 
 1. Navigieren Sie zum Speicherort, an dem Sie die neue Kopie der Seite speichern möchten.
-1. Die **Einfügen** ist mit einem Dropdown-Pfeil direkt rechts verfügbar:
+1. Das Symbol **Einfügen** ist mit einem Dropdown-Pfeil direkt rechts verfügbar:
 
    ![Einfügen](assets/paste-without-children.png)
 
    Wählen Sie eine der folgenden Möglichkeiten aus:
    * Wählen Sie das Symbol **Einfügen** aus: An dieser Stelle wird eine Kopie der Originalseite und etwaiger untergeordneter Seiten erstellt.
-   * Wählen Sie den Dropdown-Pfeil aus, um die **Ohne untergeordnete Elemente einfügen** -Option. An dieser Stelle wird eine Kopie der Originalseite erstellt. Untergeordnete Seiten werden nicht kopiert.
+   * Wählen Sie den Dropdown-Pfeil aus, um die Option **Ohne untergeordnete Elemente einfügen** anzuzeigen. An dieser Stelle wird eine Kopie der Originalseite erstellt. Untergeordnete Seiten werden nicht kopiert.
 
    >[!NOTE]
    >
-   >Wenn Sie die Seite an einen Speicherort kopieren, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn beispielsweise `winter` bereits vorhanden `winter` wird `winter1`.
+   >Wenn Sie die Seite an einen Speicherort kopieren, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn `winter` beispielsweise bereits existiert, wird `winter` zu `winter1`.
 
 ### Verschieben oder Umbenennen einer Seite {#moving-or-renaming-a-page}
 
@@ -324,9 +324,9 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 
    Dadurch wird der Assistent zum Verschieben von Seiten geöffnet.
 
-1. Im **Umbenennungs**-Schritt des Assistenten haben Sie folgende Möglichkeiten:
+1. Im Schritt **Umbenennung** des Assistenten haben Sie folgende Möglichkeiten:
 
-   * Geben Sie den Namen an, den die Seite nach dem Verschieben aufweisen soll, und klicken Sie dann auf **Nächste** um fortzufahren.
+   * Geben Sie den Namen an, den die Seite nach dem Verschieben aufweisen soll, und klicken Sie dann auf **Weiter**, um den Vorgang fortzusetzen.
 
    * Mit **Abbrechen** brechen Sie den Vorgang ab.
 
@@ -336,7 +336,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 
    >[!NOTE]
    >
-   >Wenn Sie die Seite an einen Speicherort verschieben, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn beispielsweise `winter` bereits vorhanden `winter` wird `winter1`.
+   >Wenn Sie die Seite an einen Speicherort verschieben, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn `winter` beispielsweise bereits existiert, wird `winter` zu `winter1`.
 
 1. Im Schritt **Ziel auswählen** des Assistenten können Sie entweder:
 
@@ -355,7 +355,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 
    >[!NOTE]
    >
-   >Wenn Sie die Seite an einen Speicherort verschieben, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn beispielsweise `winter` bereits vorhanden `winter` wird `winter1`.
+   >Wenn Sie die Seite an einen Speicherort verschieben, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn `winter` beispielsweise bereits existiert, wird `winter` zu `winter1`.
 
 1. Wenn die Seite verknüpft ist oder darauf verwiesen wird, werden die Details im Schritt **Anpassen/Erneut veröffentlichen** aufgeführt.
 
@@ -379,7 +379,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 
 #### Asynchrone Aktionen {#asynchronous-actions}
 
-Seitenverschiebungsaktionen werden immer asynchron verarbeitet, sodass die Benutzenden die Bearbeitung in der Benutzeroberfläche ungehindert fortsetzen können.
+Seitenverschiebungsaktionen werden immer asynchron verarbeitet, sodass Sie ungehindert mit der Erstellung in der Benutzeroberfläche fortfahren können.
 
 * Der Benutzer muss definieren, wann der asynchrone Vorgang ausgeführt werden soll.
    * **Jetzt** startet die Ausführung des asynchronen Auftrags sofort.
@@ -387,11 +387,11 @@ Seitenverschiebungsaktionen werden immer asynchron verarbeitet, sodass die Benut
 
   ![Asynchrone Seitenverschiebung](assets/asynchronous-page-move.png)
 
-Der Status asynchroner Aufträge kann im [**Dashboard** Status asynchroner Aufträge](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) unter **Globale Navigation** > **Werkzeuge** > **Vorgänge** > **Aufträge** überprüft werden.
+Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträge**](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) unter **Globale Navigation** > **Tools** > **Vorgänge** > **Aufträge** überprüft werden.
 
 >[!NOTE]
 >
->Weitere Informationen zur asynchronen Auftragsverarbeitung und zum Konfigurieren der Begrenzung für Seitenverschiebungs-/Umbenennungsaktionen finden Sie in der [Asynchrone Aufträge](/help/sites-administering/asynchronous-jobs.md) im Administrations-Benutzerhandbuch.
+>Weitere Informationen zur asynchronen Auftragsverarbeitung und zum Konfigurieren der Grenzwerte für Verschiebungs- und Umbenennungsaktionen für Seiten finden Sie im Dokument [Asynchrone Aufträge](/help/sites-administering/asynchronous-jobs.md) im Administrations-Benutzerhandbuch.
 
 >[!NOTE]
 >
@@ -414,7 +414,7 @@ Der Status asynchroner Aufträge kann im [**Dashboard** Status asynchroner Auftr
    * Mit **Löschen** bestätigen Sie die Aktion.
 
       * Wenn die Seite keine Verweise enthält, wird sie gelöscht.
-      * Wenn die Seite Verweise enthält, werden Sie in einem Meldungsfeld darüber informiert, dass **Es wird auf eine oder mehrere Seiten verwiesen.** Sie können **Löschen erzwingen** oder **Abbrechen**.
+      * Wenn die Seite Referenzen enthält, werden Sie in einem Meldungsfeld darüber informiert, dass **auf eine oder mehrere Seiten verwiesen wird.** Sie können **Löschen erzwingen** oder **Abbrechen** auswählen.
 
 >[!NOTE]
 >
@@ -422,7 +422,7 @@ Der Status asynchroner Aufträge kann im [**Dashboard** Status asynchroner Auftr
 
 ### Sperren einer Seite {#locking-a-page}
 
-Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite eine [Seite sperren/entsperren](/help/sites-authoring/editing-content.md#locking-a-page). Informationen zu gesperrten Seiten werden auch an beiden Orten angezeigt.
+Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite [eine Seite sperren/entsperren](/help/sites-authoring/editing-content.md#locking-a-page). An beiden Stellen werden auch Informationen zu gesperrten Seiten angezeigt.
 
 ![screen_shot_2018-03-22at105713](assets/screen_shot_2018-03-22at105713.png) ![screen_shot_2018-03-22at105720](assets/screen_shot_2018-03-22at105720.png)
 

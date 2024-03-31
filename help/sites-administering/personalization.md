@@ -1,6 +1,6 @@
 ---
 title: Personalisierung
-description: Erfahren Sie mehr über die Personalisierung in Adobe Experience Manager, um dem Benutzer eine maßgeschneiderte Umgebung mit dynamischen Inhalten bereitzustellen.
+description: Erfahren Sie mehr über die Personalisierung in Adobe Experience Manager, um Benutzenden eine maßgeschneiderte Umgebung mit dynamischen Inhalten bereitzustellen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1696'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -64,10 +64,10 @@ Die Personalisierung kann in vielen Fällen verwendet werden, wie zum Beispiel:
 
 ### Spezifische begrenzte Zielbenutzergruppen – Extranets {#extranets}
 
-* Benutzer benötigen zur Autorisierung einen Login. Dieser wird mit einem Profil verknüpft, das für die Personalisierung erforderliche Informationen bereitstellt, möglicherweise Details wie Standort, Beziehung zum Produkt, Nutzungsverlauf, Budgetierungsverpflichtungen usw.
+* Benutzende benötigen Anmeldedaten zur Autorisierung. Dies wird mit einem Profil verknüpft, das die erforderlichen Informationen für die Personalisierung bereitstellt – wie zum Beispiel den Standort, die Beziehung zum Produkt, die Nutzungshistorie, Budgetierungsverpflichtungen usw.
 * Solche Instanzen können sich über Sites erstrecken wie etwa:
 * Unternehmen, die Websites für einen hoch spezialisierten Bereich ihres Marktes anbieten, z. B. ein Pharmaunternehmen, das eine spezielle Website für Ärztinnen und Ärzte bereitstellt.
-* Unternehmen, die Websites bereitstellen, die es ihren Kunden ermöglichen, aktuelle Konto- und Rechnungsinformationen anzuzeigen, wie beispielsweise Telefonanbieter.
+* Unternehmen, die Websites bereitstellen, mit denen ihre Kundinnen und Kunden aktuelle Konto- und Rechnungsinformationen anzeigen können, z. B. Telekommunikationsanbieter.
 
 ### Verkaufs- und Vertriebs-Website {#sales-site}
 
@@ -112,7 +112,7 @@ Berücksichtigen Sie beim Einsetzen von Personalisierung Folgendes:
 
 * Die Personalisierung, die durch Tracking des Benutzerverhaltens oder durch Festlegung von Regeln auf Grundlage des Benutzerprofils durchgeführt wird, muss akkurat und logisch sein.
 * Es gibt nichts Frustrierenderes für Benutzende, als dass ihnen aufgrund der ungenauen Logik einer Regel Inhalte aufgezwungen oder verweigert werden.
-* Daher müssen die Regeln gut durchdacht sein. Die Anforderungen des Benutzers müssen dabei immer im Vordergrund stehen. Dies kann viel Aufwand erfordern und ist nicht zu unterschätzen. Die Definition der Geschäftsregeln übersteigt oft den technischen Aufwand bei der Implementierung der Personalisierung.
+* Daher müssen die Regeln gut durchdacht sein. Die Anforderungen des Benutzers müssen dabei immer im Vordergrund stehen. Dies kann sehr mühsam sein und darf nicht unterschätzt werden. Die Festlegung der geschäftlichen Regeln ist häufig aufwendiger als die technischen Maßnahmen beim Implementieren der Personalisierung.
 
 #### Wann ist sie einzusetzen? {#when-to-use}
 
@@ -154,7 +154,7 @@ Mit AEM werden verschiedene Komponenten für die Personalisierung bereitgestellt
 | Formular-Textfeld | Ein Textfeld, in das Benutzer Informationen eingeben können. |
 | Meine Gadgets | Ermöglicht die Auswahl eines der verfügbaren Gadgets. |
 | Profil – Avatar-Foto | Ermöglicht die Eingabe eines Avatar-Fotos. |
-| Profil – Genauer Name | Eingabe von Namensdetails, einschließlich Elementen wie Titel, Vorname und Suffix, falls erforderlich. |
+| Profil – Genauer Name | Eingabe von Namensdetails, darunter ggf. Elemente wie Titel, zweiter Vorname und Suffix. |
 | Profil – Anzeigename | Anzuzeigender Name. |
 | Profil – E-Mail-Adresse | Eingabe einer E-Mail-Adresse. |
 | Profil – Geschlecht | Ermöglicht die Eingabe des Geschlechts.  |
@@ -177,4 +177,4 @@ Ohne Communities-Erweiterung gibt es verschiedene Methoden, das Problem der Kons
 * Synchronisierung der verschiedenen Veröffentlichungsinstanzen, falls erforderlich
 * Senden des UGC von der Veröffentlichungsinstanz an die Autorenumgebung, von wo aus dieser auf eine ähnliche Weise wie Seiteninhalte veröffentlicht werden kann
 
-Die Methode, die verwendet wird, um UGC-Konsistenz in einer Veröffentlichungsumgebung aus mehreren Veröffentlichungsinstanzen zu erzielen, sollte sorgfältig konzipiert und auf Leistung und Konsistenz getestet werden.
+Die Methode, die verwendet wird, um die Konsistenz von benutzergenerierten Inhalten über mehrere Veröffentlichungsinstanzen hinweg zu erzielen, sollte sorgfältig gestaltet und auf ihre Leistung und Konsistenz hin überprüft werden.

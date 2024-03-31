@@ -148,7 +148,7 @@ Nachfolgend finden Sie einige Empfehlungen zum Entwerfen von Formularen und zum 
 * Verwenden Sie Standard- oder allgemeine Terminologie für Formularfelder.
 * Erklären Sie das Feld und die erforderliche Eingabe mit Beispielen oder Hilfe in Fällen, in denen der Benutzer durcheinanderkommen könnte.
 * Validieren Sie Benutzereingaben nach Möglichkeit gleich während des Tippens, um Fehler bei der Formularübermittlung zu vermeiden.
-* Optimieren Sie Layouts für Desktop- und Mobilgeräte.
+* Optimieren Sie Layouts für Desktop-Computer und Mobilgeräte.
 * Lassen Sie Informationen für schon bekannte Benutzerinnen und Benutzer automatisch ausfüllen.
 
 **A/B-Tests**

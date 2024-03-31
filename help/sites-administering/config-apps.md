@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren von AEM-Apps
-description: Erfahren Sie, wie Sie mit Adobe Experience Manager-Apps den Inhalt Ihres Anwendungs-OTA aktualisieren können (über die Luft).
+description: Erfahren Sie, wie Sie Adobe Experience Manager-Apps verwenden, um den Inhalt Ihrer Anwendung OTA (over the air) zu aktualisieren.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -10,15 +10,15 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '153'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
 # Konfigurieren von AEM-Apps{#configuring-for-aem-apps}
 
-Mit Adobe Experience Manager Apps können Sie den Inhalt Ihres Anwendungs-OTA (über die Luft) aktualisieren. Die aktualisierten Inhalte werden in der Veröffentlichungsinstanz gespeichert. Damit die App auf Ihrem Gerät eine Verbindung zur Veröffentlichungsinstanz herstellen und nach Updates suchen kann, muss die Veröffentlichungsinstanz so konfiguriert sein, dass ein leerer Referrer-Header zulässig ist.
+Mit Adobe Experience Manager-Apps können Sie den Inhalt Ihrer Anwendung OTA (over the air) aktualisieren. Die aktualisierten Inhalte werden in der Veröffentlichungsinstanz gespeichert. Damit die App auf Ihrem Gerät eine Verbindung zur Veröffentlichungsinstanz herstellen und nach Updates suchen kann, muss die Veröffentlichungsinstanz so konfiguriert sein, dass sie einen leeren Referrer-Header zulässt.
 
-## Konfigurieren der Kopfzeile des leeren Referrers {#configuring-empty-referrer-header}
+## Konfigurieren eines leeren Referrer-Headers {#configuring-empty-referrer-header}
 
 So konfigurieren Sie den Referrer-Filterdienst:
 
@@ -26,7 +26,7 @@ So konfigurieren Sie den Referrer-Filterdienst:
 * https://&lt;Server>:&lt;Port-Nummer>/system/console/configMgr
 * Melden Sie sich als admin an.
 * Wählen Sie im Menü **Configurations**: *Apache Sling Referrer Filter*.
-* Aktivieren Sie das Feld Leere erlauben , damit leere/fehlende Referrer-Header zulässig sind.
+* Aktivieren Sie das Feld „Leeres Feld zulassen“, um leere/fehlende Referrer-Header zuzulassen.
 * Klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern.
 
 ![chlimage_1-58](assets/chlimage_1-58a.png)

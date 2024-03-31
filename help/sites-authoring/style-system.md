@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1297'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ Ebenso müssen Inhaltsautorinnen und -autoren nicht nur die Möglichkeit haben, 
 Das Stilsystem bietet eine einheitliche Lösung für die Anforderungen des Vorlagenautors und des Inhaltsautors:
 
 * Vorlagenautorinnen und -autoren können in der Inhaltsrichtlinie von Komponenten Stilklassen definieren.
-* Inhaltsautoren können diese Klassen dann in einer Dropdown-Liste auswählen, wenn sie die Komponente auf einer Seite bearbeiten, um die entsprechenden Stile anzuwenden.
+* Inhaltsautorinnen und -autoren können diese Klassen dann aus einer Dropdown-Liste auswählen, wenn sie die Komponente auf einer Seite bearbeiten, um die entsprechenden Stile anzuwenden.
 
 Die Stilklasse wird dann in das dekorative Wrapper-Element der Komponente eingefügt, sodass die Entwicklerin bzw. der Entwickler der Komponente sich nicht um die Handhabung der Stile kümmern muss, sondern lediglich die CSS-Regeln festzulegen braucht.
 
@@ -77,7 +77,7 @@ Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, gehen 
 
    ![Stilsystem für den Autor](assets/style-system-author.png)
 
-1. Klicken Sie auf **Stile** in der Symbolleiste der **Liste** -Komponente, um das Stilmenü zu öffnen und das Erscheinungsbild der Komponente zu ändern.
+1. Klicken Sie auf die Schaltfläche **Stile** in der Symbolleiste der Komponente **Liste**, um das Stilmenü zu öffnen und das Erscheinungsbild der Komponente zu ändern.
 
    ![Auswählen von Stilen](assets/style-system-author2.png)
 
@@ -108,7 +108,7 @@ Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, gehen 
 
 >[!CAUTION]
 >
->Die als Stil-Eigenschaften einer Komponentenrichtlinie konfigurierten CSS-Klassen (und das erforderliche JavaScript) müssen als [Client-Bibliotheken](/help/sites-developing/clientlibs.md) zu arbeiten.
+>Die als Stil-Eigenschaften einer Komponentenrichtlinie konfigurierten CSS-Klassen (sowie das erforderliche JavaScript) müssen als [Client-Bibliotheken](/help/sites-developing/clientlibs.md) bereitgestellt werden, damit sie funktionieren.
 
 ## Einrichtung {#setup}
 
@@ -123,7 +123,7 @@ Damit eine Komponente mit dem Stilsystem von AEM verwendet werden kann und die R
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
-Wenn die Komponente konfiguriert ist, werden die von den Seitenautoren konfigurierten Stile automatisch von AEM in das Decoration-Element eingefügt, das AEM automatisch um jede bearbeitbare Komponente umschließt. Die Komponente selbst muss nichts anderes tun, um dies zu erreichen.
+Ist die Komponente entsprechend konfiguriert, fügt AEM die von den Seitenautorinnen bzw. Seitenautoren festgelegten Stile automatisch in den Decoration-Element-Wrapper ein, der automatisch auf alle bearbeitbaren Komponenten angewendet wird. Die Komponente selbst muss nichts anderes tun, um dies zu erreichen.
 
 ### Aktivieren der Registerkarte „Stile“ im Dialogfeld „Bearbeiten“ {#enable-styles-tab-edit}
 
@@ -155,6 +155,6 @@ Diese Eigenschaft wird auf dem Knoten `cq:Component` festgelegt. Zum Beispiel:
 >1. Die Werte `cq:htmlTag`/ `cq:tagName` der Komponente werden schließlich als Ausweichwert verwendet.
 >
 
-Diese Möglichkeit, Stilnamen zu definieren, ist für sehr allgemeine Komponenten wie den Layout-Container oder die Inhaltsfragment-Komponente nützlich, um ihnen eine zusätzliche Bedeutung zu verleihen.
+Die Fähigkeit, Stilnamen zu definieren, ist bei generischen Komponenten wie dem Layout-Container oder der Inhaltsfragmentkomponente hilfreich, um diesen eine zusätzliche Bedeutung zu verleihen.
 
-Zum Beispiel können einem Layout-Container dadurch semantische Elemente wie `<main>`, `<aside>`, `<nav>` usw. zugewiesen werden.
+Zum Beispiel können einem Layout-Container dadurch semantische Elemente wie `<main>`, `<aside>` und `<nav>` zugewiesen werden.

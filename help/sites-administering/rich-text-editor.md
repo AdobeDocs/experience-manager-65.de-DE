@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2887'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -63,7 +63,7 @@ Beim Öffnen (durch langsames Doppelklicken) kann der Inhalt innerhalb der Seite
 
 *Abbildung: Inline-Bearbeitung mit einfacher Symbolleiste in der Touch-optimierten Benutzeroberfläche*
 
-In der klassischen Benutzeroberfläche ermöglicht ein langsamer Doppelklick auf die Komponente die Inline-Bearbeitung und ein orangefarbener Entwurf hebt den Inhalt hervor. Wenn die Inhaltssuche geöffnet ist, wird oben im Fenster eine Symbolleiste mit den verfügbaren RTE-Formatierungsoptionen angezeigt. Ist der Content Finder nicht geöffnet, werden die Formatierungsoptionen nicht angezeigt und Sie können nur grundlegende Textbearbeitungen vornehmen.
+In der klassischen Benutzeroberfläche ermöglicht ein langsamer Doppelklick auf die Komponente die Inline-Bearbeitung, und der Inhalt wird orange umrandet. Wenn die Inhaltssuche geöffnet ist, wird oben im Fenster eine Symbolleiste mit den verfügbaren RTE-Formatierungsoptionen angezeigt. Ist der Content Finder nicht geöffnet, werden die Formatierungsoptionen nicht angezeigt und Sie können nur grundlegende Textbearbeitungen vornehmen.
 
 ### Bearbeitung im Vollbildmodus {#full-screen-editing}
 
@@ -183,7 +183,7 @@ Ausführliche Konfigurationen der RTE-Plug-ins finden Sie unter [Aktivieren und 
 >
 >Die [Text-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=de#the-text-component-and-the-rich-text-editor) gestattet es Bearbeitern von Vorlagen, viele RTE-Plug-ins in einer grafischen Benutzeroberfläche als Content-Richtlinien zu konfigurieren, sodass keine technische Konfiguration mehr erforderlich ist. Content-Richtlinien können mit RTE-Benutzeroberflächenkonfigurationen verwendet werden, wie in diesem Dokument beschrieben ist.
 >
->Weitere Informationen finden Sie unter [Einstellungen und Content-Richtlinien der RTE-Benutzeroberfläche](/help/sites-administering/rich-text-editor.md) Abschnitt dieses Dokuments und [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) und [Entwicklerdokumentation für Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=de).
+>Weitere Informationen finden Sie unter [Einstellungen und Inhaltsrichtlinien der RTE-Benutzeroberfläche](/help/sites-administering/rich-text-editor.md) sowie [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) und [Entwicklerdokumentation für Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=de).
 
 >[!NOTE]
 >

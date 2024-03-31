@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5466'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -137,7 +137,7 @@ So konfigurieren Sie Google Cloud-Einstellungen:
 
 1. Nehmen Sie eine der folgenden Aktionen vor:
 
-   * Wählen Sie im Dashboard Ihres Projekts auf der Karte Erste Schritte die Option **[!UICONTROL APIs erkunden und aktivieren]**.
+   * Wählen Sie im Projekt-Dashboard auf der Karte „Erste Schritte“ die Option zum **[!UICONTROL Entdecken und Aktivieren von APIs]** aus.
    * Wählen Sie im Projekt-Dashboard auf der API-Karte die Option zum **[!UICONTROL Aufrufen der API-Übersicht]** aus.
 
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
@@ -234,7 +234,7 @@ Falls Sie die Standard-Tags in Experience Manager verwenden möchten, können Si
 
 ### Aktivieren des Agenten für die YouTube-Veröffentlichungsreplikation {#enabling-the-youtube-publish-replication-agent}
 
-Nachdem Sie den Agenten für die YouTube-Veröffentlichungsreplikation aktiviert haben, wählen Sie, wenn Sie die Verbindung zum Google Cloud-Konto testen möchten, die Option **[!UICONTROL Verbindung testen]**. Auf einer Browser-Registerkarte werden die Verbindungsergebnisse angezeigt. Wenn Sie YouTube-Kanäle hinzugefügt haben, wird als Teil des Tests eine Liste dieser Kanäle angezeigt.
+Wenn Sie nach dem Aktivieren des Agenten für die YouTube-Veröffentlichungsreplikation die Verbindung zum Google Cloud-Konto testen möchten, wählen Sie **[!UICONTROL Verbindung testen]** aus. Auf einer Browser-Registerkarte werden die Verbindungsergebnisse angezeigt. Wenn Sie YouTube-Kanäle hinzugefügt haben, wird als Teil des Tests eine Liste dieser Kanäle angezeigt.
 
 1. Klicken Sie oben links in Experience Manager auf das Experience Manager-Logo und anschließend in der linken Leiste auf **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Replikation]** > **[!UICONTROL Agenten für Autor]**.
 1. Klicken Sie auf der Seite „Agenten für Autor“ auf **[!UICONTROL In Youtube veröffentlichen]**.
@@ -254,7 +254,7 @@ Mit Experience Manager 6.4 wurde eine neue Methode für die Touch-Benutzeroberfl
 #### Einrichten von YouTube in Experience Manager 6.4 oder höher {#setting-up-youtube-in-aem-and-later}
 
 1. Melden Sie sich als Administrator bei Ihrer Dynamic Media-Instanz an.
-1. Wählen Sie links oben das Experience Manager-Logo und links in der Leiste die Option **[!UICONTROL Instrumente]**(Hammersymbol) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Veröffentlichungskonfiguration für YouTube]**.
+1. Wählen Sie oben links das Experience Manager-Logo und dann in der linken Leiste **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Cloud-Services]** > **[!UICONTROL Konfiguration zur YouTube-Veröffentlichung]** aus.
 1. Klicken Sie auf **[!UICONTROL global]** (nicht auswählen).
 
 1. Klicken Sie oben rechts auf der globalen Seite auf **[!UICONTROL Erstellen]**.
@@ -289,8 +289,8 @@ Lassen Sie die Seite „YouTube-Konfiguration erstellen“ geöffnet, Sie werden
    Richten Sie jetzt Tags für die Veröffentlichung ein.
 
 1. **[!UICONTROL Einrichten von Tags für die Veröffentlichung]**: Klicken Sie auf der Seite „Cloud Services“ > „YouTube“ auf das Stiftsymbol, um die Liste der Tags zu bearbeiten, die Sie verwenden möchten.
-1. Wählen Sie das Dropdownlisten-Symbol (umgekehrtes Caret-Symbol) aus, damit Sie die Liste der verfügbaren Tags in Experience Manager anzeigen können.
-1. Wählen Sie einen oder mehrere Tags aus, damit Sie sie hinzufügen können.
+1. Wählen Sie das Symbol der Dropdown-Liste (umgekehrtes Caret-Zeichen) aus, um die Liste der verfügbaren Tags in Experience Manager anzuzeigen.
+1. Wählen Sie ein oder mehrere Tags aus, damit Sie sie hinzufügen können.
 
    Wählen Sie zum Löschen eines von Ihnen hinzugefügten Tags das Tag aus und klicken Sie auf **[!UICONTROL X]**.
 
@@ -302,7 +302,7 @@ Lassen Sie die Seite „YouTube-Konfiguration erstellen“ geöffnet, Sie werden
 
 1. Melden Sie sich als Administrator bei Ihrer Dynamic Media-Instanz an.
 
-1. Wählen Sie links oben das Experience Manager-Logo und links in der Leiste die Option **[!UICONTROL Instrumente]** (Hammersymbol) > **[!UICONTROL Implementierung]** > **[!UICONTROL Cloud Service]**.
+1. Wählen Sie oben links das Experience Manager-Logo und dann in der linken Leiste **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Cloud-Services]** aus.
 1. Klicken Sie unter der Überschrift „Services von Drittanbietern“ unter „YouTube“ auf **[!UICONTROL Jetzt konfigurieren]**.
 1. Geben Sie im Dialogfeld „Konfiguration erstellen“ einen Titel (obligatorisch) und einen Namen (optional) in die entsprechenden Felder ein.
 1. Wählen Sie **[!UICONTROL Erstellen]**.
@@ -335,8 +335,8 @@ Lassen Sie das Dialogfeld „YouTube-Kontoeinstellungen“ geöffnet, da Sie gle
    Richten Sie jetzt Tags für die Veröffentlichung ein.
 
 1. **[!UICONTROL Einrichten von Tags für die Veröffentlichung]**: Klicken Sie auf der Seite „Cloud Services“ > „YouTube“ auf das Stiftsymbol, um die Liste der Tags zu bearbeiten, die Sie verwenden möchten.
-1. Wählen Sie das Dropdownlisten-Symbol (umgekehrtes Caret-Symbol) aus, damit Sie die Liste der verfügbaren Tags in Experience Manager anzeigen können.
-1. Wählen Sie einen oder mehrere Tags aus, damit Sie sie hinzufügen können.
+1. Wählen Sie das Symbol der Dropdown-Liste (umgekehrtes Caret-Zeichen) aus, um die Liste der verfügbaren Tags in Experience Manager anzuzeigen.
+1. Wählen Sie ein oder mehrere Tags aus, damit Sie sie hinzufügen können.
 
    Wählen Sie zum Löschen eines von Ihnen hinzugefügten Tags das Tag aus und klicken Sie auf **X**.
 
@@ -352,7 +352,7 @@ Um das Metadaten-Verarbeitungsprofil zu erstellen, kopieren Sie zunächst die We
 
 So automatisieren Sie die Einstellung von YouTube-Standardeigenschaften für hochgeladene Videos:
 
-1. Wählen Sie links oben das Experience Manager-Logo aus und klicken Sie links in der Leiste auf **[!UICONTROL Instrumente]** (Hammersymbol) > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenschemata]**.
+1. Wählen Sie oben links das Experience Manager-Logo und dann in der linken Leiste **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenschemata]** aus.
 1. Klicken Sie auf **[!UICONTROL Standard]**. (Aktiveren Sie nicht das Auswahlfeld links neben „Standard“.)
 1. Aktivieren Sie auf der Seite **[!UICONTROL Standard]** das Kontrollkästchen links neben **[!UICONTROL Video]** und klicken Sie dann auf **[!UICONTROL Bearbeiten]**.
 1. Klicken Sie auf der Seite „Metadatenschema-Editor“ auf die Registerkarte **[!UICONTROL Erweitert]**.
@@ -375,7 +375,7 @@ Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen 
 Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen diesen Wert später, wenn Sie das Metadaten-Verarbeitungsprofil erstellen. Lassen Sie den Texteditor geöffnet.
 
 1. Klicken Sie in der rechten oberen Ecke der Seite „Metadatenschema-Editor“ auf **[!UICONTROL Abbrechen]**.
-1. Wählen Sie links oben im Experience Manager das Experience Manager-Logo aus und klicken Sie dann in der linken Leiste auf **[!UICONTROL Instrumente]** (Hammersymbol) > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenprofile]**.
+1. Wählen Sie oben links in Experience Manager das Experience Manager-Logo aus und klicken Sie dann in der linken Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenprofile]**.
 
 1. Klicken Sie auf der Seite „Metadatenprofile“ in der rechten oberen Ecke der Seite auf **[!UICONTROL Erstellen]**.
 1. Geben Sie im Dialogfeld „Metadatenprofil hinzufügen“ im Textfeld **[!UICONTROL Profiltitel]** den Namen `YouTube Video` ein. Klicken Sie danach auf **[!UICONTROL Erstellen]**.
@@ -489,7 +489,7 @@ Wenn Sie die Veröffentlichung eines Video-Assets in Experience Manager aufheben
 
 1. Navigieren Sie zu den Video-Assets, deren Veröffentlichung in Ihrem YouTube-Kanal Sie aufheben möchten.
 1. Wählen Sie in einem Asset-Auswahlmodus eines oder mehrere der veröffentlichten Video-Assets aus.
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Veröffentlichung verwalten]**. Wählen Sie das Symbol mit den drei Punkten aus (. . . in der Symbolleiste, sodass **[!UICONTROL Veröffentlichung verwalten]** geöffnet wird.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Veröffentlichung verwalten]**. Wählen Sie das Drei-Punkte-Symbol (…) in der Symbolleiste, sodass **[!UICONTROL Veröffentlichung verwalten]** geöffnet wird.
 1. Klicken Sie auf der Seite „Veröffentlichung verwalten“ auf **[!UICONTROL Veröffentlichung rückgängig machen]**.
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Weiter]**.
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Veröffentlichung rückgängig machen]**.
@@ -510,11 +510,11 @@ Wenn Sie ein neues Video in einen Ordner hochladen, auf den Videokodierung angew
 
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
-   Diese Spalte wird standardmäßig nicht angezeigt. Um die Spalte zu aktivieren, wählen Sie **[!UICONTROL Anzeigeeinstellungen]** aus dem Dropdown-Menü &quot;Ansichten&quot;aus und fügen Sie die **[!UICONTROL Verarbeitungsstatus]** Spalte und klicken Sie auf **[!UICONTROL Aktualisieren]**.
+   Diese Spalte wird standardmäßig nicht angezeigt. Um die Spalte zu aktivieren, wählen Sie aus dem Dropdown-Menü „Ansichten“ die Option **[!UICONTROL Anzeigeeinstellungen]** aus, fügen Sie die Spalte **[!UICONTROL Verarbeitungsstatus]** hinzu und klicken Sie auf **[!UICONTROL Aktualisieren]**.
 
    ![chlimage_1-431](assets/chlimage_1-431.png)
 
-1. Anzeigen des Fortschritts in den Asset-Details. Wenn Sie auf ein Asset klicken, öffnen Sie das Dropdown-Menü und wählen Sie **[!UICONTROL Timeline]**. Um die Ergebnisse auf Workflow-Aktivitäten wie Kodierung oder YouTube-Veröffentlichung zu begrenzen, wählen Sie **[!UICONTROL Workflows]**.
+1. Anzeigen des Fortschritts in den Asset-Details. Wenn Sie auf ein Asset klicken, öffnen Sie das Dropdown-Menü und wählen Sie die Option **[!UICONTROL Zeitleiste]** aus. Um die Ergebnisse auf Workflow-Aktivitäten wie Kodierung oder YouTube-Veröffentlichung zu begrenzen, wählen Sie **[!UICONTROL Workflows]**.
 
    ![chlimage_1-432](assets/chlimage_1-432.png)
 
@@ -584,18 +584,18 @@ Wie Sie Benachrichtigungen konfigurieren, hängt davon ab, ob Sie Benachrichtigu
 
 * Gehen Sie bei YouTube-Veröffentlichungsaufträgen wie folgt vor:
 
-1. Wählen Sie in Experience Manager **[!UICONTROL Instrumente]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
-1. Wählen Sie auf der Seite Workflow-Modelle die Option **[!UICONTROL In YouTube veröffentlichen]**, wählen Sie **[!UICONTROL Bearbeiten]** in der Symbolleiste.
-1. Wählen Sie rechts oben auf der Workflow-Seite In YouTube veröffentlichen die Option **[!UICONTROL Bearbeiten]**.
-1. Bewegen Sie den Mauszeiger über die Komponente YouTube-Upload und wählen Sie einmal aus, um die Inline-Symbolleiste anzuzeigen.
+1. Wählen Sie in Experience Manager **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]** aus.
+1. Wählen Sie auf der Seite „Workflow-Modelle“ die Option **[!UICONTROL Auf YouTube veröffentlichen]** und dann in der Symbolleiste **[!UICONTROL Bearbeiten]** aus.
+1. Wählen Sie oben rechts auf der Workflow-Seite „Auf YouTube veröffentlichen“ die Option **[!UICONTROL Bearbeiten]** aus.
+1. Zeigen Sie mit der Maus auf die Komponente für den YouTube-Upload und wählen Sie diese einmal aus, um die Inline-Symbolleiste anzuzeigen.
 
    ![6_5_publishtoyoutubeworkflow](assets/6_5_publishtoyoutubeworkflow.png)
 
-1. Wählen Sie in der Inline-Symbolleiste das Symbol Konfiguration (Schraubenschlüssel) aus. Klicken Sie auf die Registerkarte **[!UICONTROL Argumente.]**
+1. Wählen Sie in der Inline-Symbolleiste das Konfigurationssymbol (Schraubenschlüssel) aus. Klicken Sie auf die Registerkarte **[!UICONTROL Argumente.]**
 
    ![6_5_publishtoyoutubeworkflow-configurationicon](assets/6_5_publishtoyoutubeworkflow-configurationicon.png)
 
-1. Wählen Sie im Dialogfeld YouTube-Upload-Prozess - Schritteigenschaften die Option **[!UICONTROL Argumente]** Registerkarte.
+1. Wählen Sie im Dialogfeld „YouTube-Upload-Prozess – Schritteigenschaften“ die Registerkarte **[!UICONTROL Argumente]** aus.
 
    ![6_5_publishtoyoutubeworkflow-arguments-tab](assets/6_5_publishtoyoutubeworkflow-arguments-tab.png)
 
@@ -611,8 +611,8 @@ Wie Sie Benachrichtigungen konfigurieren, hängt davon ab, ob Sie Benachrichtigu
    >
    >Diese E-Mails sind für YouTube spezifisch und eine Ergänzung der generischen Workflow-E-Mail-Benachrichtigungen. Sie können daher je nach den Konfigurationseinstellungen zwei E-Mail-Benachrichtigungen erhalten – die im **[!UICONTROL E-Mail-Benachrichtigungsservice Day CQ-Workflow]** verfügbare generische Benachrichtigung und eine für YouTube spezifische Benachrichtigung.
 
-1. Wenn Sie fertig sind, wählen Sie rechts oben im Dialogfeld die Option **[!UICONTROL Fertig]** -Symbol (Häkchen).
-1. Wählen Sie auf der Workflow-Seite In YouTube veröffentlichen rechts oben die Option **[!UICONTROL Synchronisieren]**.
+1. Wenn Sie fertig sind, wählen Sie oben rechts im Dialogfeld das Symbol **[!UICONTROL Fertig]** (Häkchensymbol) aus.
+1. Wählen Sie auf der Workflow-Seite „Auf YouTube veröffentlichen“ die Option **[!UICONTROL Sync]** aus.
 
 ## Hinzufügen von Anmerkungen zu Video-Assets {#annotate-video-assets}
 

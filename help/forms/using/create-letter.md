@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3982'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -135,7 +135,7 @@ Dieses Dokument einer Kündigungsmitteilung ist ein Beispiel für eine typische 
   </tr> 
   <tr> 
    <td>Gespeicherte<br /> Bilder aus dem zentralen Repository</td> 
-   <td>Bilder wie Logos und Signaturbilder. Bilder wie Unternehmenslogos würden in den meisten Schriftstücken oder in allen Schriftstücken angezeigt. Unterschriftsbilder sind spezifisch für den Brief und die Person, in deren Namen der Brief gesendet wird.</td> 
+   <td>Bilder wie Logos und Signaturbilder. Bilder wie Unternehmenslogos sind wohl in den meisten oder in allen Anschreiben enthalten. Unterschriftsbilder sind spezifisch für den Brief und die Person, in deren Namen der Brief gesendet wird.</td> 
    <td><p>In AEM-Assets (DAM) gespeicherte Bilder<br /> </p> <p> </p> </td> 
   </tr> 
  </tbody> 
@@ -167,7 +167,7 @@ Analysieren Sie jeden Brief, um die verschiedenen Teile freizulegen, die den Bri
 
 **Aufbau des Datenwörterbuchs**: Es gibt Datenwerte wie „Kundennummer“ und „Kundenname“, die in vielen Briefen verwendet werden. Sie können eine konsolidierte Liste aller dieser Datenwerte erstellen. Normalerweise wird bei der Strukturplanung jemand vom Middleware-Team des Unternehmens konsultiert. Dies bildet die Grundlage für die Erstellung des Datenwörterbuchs.
 
-**Datenquellen aus Back-End-Unternehmenssystemen** Sie werden auch alle erforderlichen Datenwerte kennen und erfahren, von wo aus die Daten des Unternehmenssystems abgerufen werden. Sie können dann die Architektur so einrichten, dass die Daten aus dem Unternehmenssystem extrahiert und an die Brieflösung übermittelt werden.
+**Bezug von Daten aus Backend-Unternehmenssystemen**: Sie werden auch über alle erforderlichen Datenwerte und deren jeweilige Bezugsquelle im Unternehmenssystem Bescheid wissen. Sie können dann die Architektur so einrichten, dass die Daten aus dem Unternehmenssystem extrahiert und an die Brieflösung übermittelt werden.
 
 **Schätzung der Komplexität von Briefen**: Es ist wichtig zu ermitteln, wie komplex die Erstellung einer bestimmten Korrespondenz sein wird. Anhand dieser Analyse kann bestimmt werden, wie viel Zeit und welche Fähigkeiten zur Erstellung der Briefvorlagen erforderlich sind. Dies wiederum erleichtert die Schätzung des Ressourcenbedarfs und der Kosten für die Implementierung der Brieflösung.
 
@@ -242,11 +242,11 @@ Zur Erstellung einer Korrespondenz müssen Sie zunächst Folgendes einrichten:
 
    ![create-letter](assets/create-letter.png)
 
-1. Wählen Sie ein Layout aus, indem Sie darauf tippen und **Nächste**.
+1. Wählen Sie ein Layout durch Antippen und dann **Weiter** aus.
 
-   ![Wählen Sie „Layout“, um einen Brief zu erstellen](assets/selectlayout.png)
+   ![Wählen eines Layouts, um einen Brief zu erstellen](assets/selectlayout.png)
 
-1. Geben Sie die Eigenschaften für die Korrespondenz ein und wählen Sie **Speichern:**
+1. Geben Sie die Eigenschaften für die Korrespondenz ein und wählen Sie **Speichern:** aus.
 
    * **Titel (optional)**: Geben Sie einen Titel für den Brief ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nicht-englische Zeichen enthalten.
    * **Name**: Der eindeutige Name des Briefs. Es darf immer nur ein Brief mit einem bestimmten Namen in einem Status vorhanden sein. Im Feld „Name“ können Sie nur englische Zeichen, Zahlen und Bindestriche eingeben. Das Feld „Name“ wird automatisch auf der Grundlage des Titelfelds vorausgefüllt. Die Sonderzeichen, Leerzeichen, Zahlen und die nichtenglischen Zeichen im Feld „Titel“ werden im Feld „Name“ durch Bindestriche ersetzt. Obwohl der Wert im Feld „Titel“ automatisch in das Feld „Name“ kopiert wird, können Sie den Wert bearbeiten.
@@ -257,21 +257,21 @@ Zur Erstellung einer Korrespondenz müssen Sie zunächst Folgendes einrichten:
 
    ![Eigenschaften der Korrespondenz](assets/createcorrespondenceproperties.png)
 
-1. Das System zeigt eine Nachricht an: „Brief erfolgreich erstellt.“ (in der Warnmeldung) Wählen Sie **Öffnen** , um die Datenmodule und Layout-Fragmente darin zu konfigurieren. Oder wählen Sie **Fertig** zurück zur vorherigen Seite.
+1. Das System zeigt eine Nachricht an: „Brief erfolgreich erstellt.“ Wählen Sie (in der Warnmeldung) **Öffnen** aus, um die darin enthaltenen Datenmodule und Layout-Fragmente zu konfigurieren. Oder wählen Sie **Fertig** aus, um zur vorherigen Seite zurückzukehren.
 
    ![Warnmeldung: Brief erfolgreich erstellt](assets/createcorrespondencecreated.png)
 
-   **Nächste**: Wenn Sie **Öffnen**, zeigt Correspondence Management eine Darstellung des Layouts mit allen aufgelisteten Komponenten im Layout (XDP) an. Fahren Sie mit dem Einfügen und [Konfigurieren von Datenmodulen und Layout-Fragmenten](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p) fort.
+   **Weiter**: Wenn Sie **Öffnen** auswählen, zeigt das Correspondence Management eine Darstellung des Layouts an, in der alle Komponenten des Layouts (XDP) aufgeführt sind. Fahren Sie mit dem Einfügen und [Konfigurieren von Datenmodulen und Layout-Fragmenten](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p) fort.
 
 ### Einfügen von Datenmodulen und Layout-Fragmenten in einen Brief mit anschließender Konfiguration {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 
-Wenn Sie nach dem Erstellen einer Korrespondenz die Option &quot;Öffnen&quot;auswählen, zeigt Correspondence Management eine Darstellung des Layouts mit allen im Layout (XDP) aufgelisteten Teilformulare/Zielbereiche an. Sie können in jeden der Zielbereiche entweder ein Datenmodul oder ein Layout-Fragment (und dann Datenmodule in das Layout-Fragment) einfügen.
+Wenn Sie nach dem Erstellen einer Korrespondenz „Öffnen“ auswählen, zeigt das Correspondence Management eine Darstellung des Layouts an, in der alle Teilformulare/Zielbereiche des Layouts (XDP) aufgelistet sind. Sie können in jeden der Zielbereiche entweder ein Datenmodul oder ein Layout-Fragment (und dann Datenmodule in das Layout-Fragment) einfügen.
 
 >[!NOTE]
 >
->Sie können auch auf der Seite &quot;Briefe&quot;auf das Symbol &quot;Bearbeiten&quot;klicken, um Datenmodule und Layout-Fragmente in einen Brief einzufügen und sie zu konfigurieren.
+>Auf der Seite „Briefe“ können Sie auch das Symbol „Bearbeiten“ für einen Brief auswählen, um Datenmodule und Layout-Fragmente in einen Brief einzufügen und sie zu konfigurieren.
 
-1. Auswählen **Einfügen** für jedes der Teilformulare und wählen Sie &quot;Datenmodule&quot;oder &quot;Layout-Fragment&quot;, die in die einzelnen Teilformulare eingefügt werden sollen.
+1. Wählen Sie für jedes der Teilformulare **Einfügen** und dann Datenmodule oder ein Layout-Fragment zum Einfügen in jedes der Teilformulare aus.
 
    ![Fügen Sie Datenmodule und Layout-Fragmente ein](assets/insertdmandlf.png)
 
@@ -280,7 +280,7 @@ Wenn Sie nach dem Erstellen einer Korrespondenz die Option &quot;Öffnen&quot;au
    ![nestedlf](assets/nestedlf.png)
 
 1. Wenn Sie ein Layout-Fragment einfügen, wird der Name des Layout-Fragments im Teilformular angezeigt. Je nach ausgewähltem Fragment werden verschachtelte Teilformulare im Teilformular angezeigt.
-1. Nachdem die ausgewählten Datenmodule in das Layout eingefügt wurden, können Sie den Konfigurationsmodus auswählen und nach dem Tippen auf das Symbol Bearbeiten für jedes der Module Folgendes festlegen:
+1. Wenn die ausgewählten Datenmodule im Layout eingefügt wurden, können Sie nach dem Tippen auf das Symbol „Bearbeiten“ den Konfigurationsmodus auswählen und für jedes der Module folgende Optionen einstellen:
 
    1. **Bearbeitbar**: Wenn diese Option aktiviert ist, kann der Inhalt in der Benutzeroberfläche „Korrespondenz erstellen“ bearbeitet werden. Markieren Sie Inhalte nur dann als bearbeitbar, wenn Business-Anwenderinnen und -Anwender (z. B. bei der Schadenregulierung) sie ändern müssen.
    1. **Obligatorisch**: Wenn diese Option aktiviert ist, ist der Inhalt in der Benutzeroberfläche „Korrespondenz erstellen“ erforderlich.
@@ -291,18 +291,18 @@ Wenn Sie nach dem Erstellen einer Korrespondenz die Option &quot;Öffnen&quot;au
 
    ![Eingefügte Datenmodule und Layout-Fragmente](assets/insertdmandlf2.png)
 
-1. Um ein Modul zu bearbeiten, wählen Sie neben dem Modul das Symbol Bearbeiten aus. Nachdem Sie die Module bearbeitet haben, wählen Sie **Speichern**.
+1. Wählen Sie zum Bearbeiten eines Moduls das Symbol „Bearbeiten“ daneben aus. Wählen Sie nach dem Bearbeiten des Moduls die Option **Speichern** aus.
 
    Auf dieser Seite können Sie für die Unterformulare auch die folgenden Optionen einstellen:
 
-   1. **Freien Text zulassen**: Wenn die Option „Freien Text zulassen“ aktiviert wird, dann kann der Benutzer in der CCR-Ansicht Inline-Text in einem Brief hinzufügen. In der CCR-Ansicht wird für die Zielbereiche, für die die Option Freien Text zulassen aktiviert ist, die Aktion &quot;T&quot;aktiviert. Wenn der Benutzer sie auswählt, wird er nach einem Namen und einer Beschreibung des Textes gefragt. Wenn er dann auf &quot;OK&quot;tippt, wird dieser Text im Bearbeitungsmodus geöffnet, in dem der Benutzer Text hinzufügen kann. Das funktioniert wie bei anderen Textmodulen
+   1. **Freien Text zulassen**: Wenn die Option „Freien Text zulassen“ aktiviert wird, dann kann der Benutzer in der CCR-Ansicht Inline-Text in einem Brief hinzufügen. In der CCR-Ansicht wird die Aktion „T“ für jene Zielbereiche aktiviert, für die „Freien Text zulassen“ aktiviert wurde. Bei Auswahl wird zur Eingabe des Namens und einer Beschreibung des Textes aufgefordert. Tippt die Person anschließend auf „OK“, wird dieser Text im Bearbeitungsmodus geöffnet, damit sich Text hinzufügen lässt. Das funktioniert wie bei anderen Textmodulen
    1. **Reihenfolge sperren**: Sperrt die Reihenfolge der Unterformulare im Brief. Die Autorin bzw. der Autor darf die Unterformulare/Komponenten beim Erstellen des Briefs nicht neu anordnen.
 
    Auf dieser Seite können Sie auch für jedes Asset in den Unterformularen folgende Schritte ausführen:
 
    1. **Reihenfolge der Assets ändern**: Ziehen Sie dazu das Symbol „Neu anordnen“ (![dragndrop](assets/dragndrop.png)) eines Assets per Drag-and-Drop an die gewünschte Stelle.
-   1. **Löschen von Assets**: Wählen Sie das Symbol Löschen neben einem Asset aus, um es zu löschen.
-   1. **Asset-Vorschau**: Wählen Sie das Vorschausymbol ( ![showpreview](assets/showpreview.png)) neben einem Asset.
+   1. **Assets löschen**: Wählen Sie neben einem Asset das Symbol „Löschen“ aus, um das Asset zu löschen.
+   1. **Vorschau von Assets**: Wählen Sie das Symbol „Vorschau anzeigen“ (![showpreview](assets/showpreview.png)) neben einem Asset aus.
 
 1. Wählen Sie **Weiter** aus.
 1. Auf der Seite „Daten“ wird beschrieben, wie Datenfelder und Variablen in der Vorlage verwendet werden. Daten können mit Datenquellen, z. B. einem Datenwörterbuch oder einer Benutzereingabe, verknüpft werden. Jedes Feld definiert Eigenschaften, aus denen Datenwörterbücher Daten zuordnen oder entscheiden, welche Beschriftungen für Benutzereingabefelder angezeigt werden.
@@ -334,15 +334,15 @@ Wenn Sie nach dem Erstellen einer Korrespondenz die Option &quot;Öffnen&quot;au
 
    ![Verknüpfungen](assets/linkages.png)
 
-1. Nachdem Sie die Verknüpfung angegeben haben, wählen Sie **Nächste**. Correspondence Management zeigt den Anhänge-Bildschirm an.
+1. Wählen Sie nach Angabe der Verknüpfung **Weiter** aus. Correspondence Management zeigt den Anhänge-Bildschirm an.
 
 ### Richten Sie die Anlagen ein {#set-up-the-attachments}
 
 1. Wählen Sie **Medienelement hinzufügen**.
-1. Wählen Sie im Bildschirm &quot;Select Asset&quot;die Assets aus, die dem Brief angehängt werden sollen, und wählen Sie **Fertig**. Sie müssen die Anlagen zuerst in „Anlagen“ hochladen“. Es wird empfohlen, dass Sie nur PDF- und Microsoft Office-Dokumente anhängen. Sie können aber auch Bilder anhängen. Weitere Informationen über das Hochladen von Assets in DAM finden Sie unter [Assets hochladen](/help/assets/manage-assets.md).
-1. Um die Reihenfolge der Assets in der Liste so zu sperren, dass der Schadensregulierer sie nicht ändern kann, wählen Sie **Reihenfolge sperren**. Wenn Sie diese Option nicht aktivieren, kann der Schadensregulierer die Reihenfolge der Listenelemente ändern.
+1. Wählen Sie im Bildschirm „Asset auswählen“ die Assets aus, die an den Brief angehängt werden sollen, und wählen Sie dann **Fertig** aus. Sie müssen die Anlagen zuerst in „Anlagen“ hochladen“. Es wird empfohlen, dass Sie nur PDF- und Microsoft Office-Dokumente anhängen. Sie können aber auch Bilder anhängen. Weitere Informationen über das Hochladen von Assets in DAM finden Sie unter [Assets hochladen](/help/assets/manage-assets.md).
+1. Wenn Sie die Reihenfolge der Assets in der Liste festschreiben möchten, sodass der Schadensregulierer sie nicht ändern kann, wählen Sie **Sperrungsreihenfolge** aus. Wenn Sie diese Option nicht aktivieren, kann der Schadensregulierer die Reihenfolge der Listenelemente ändern.
 1. Reihenfolge der Assets ändern: Ziehen Sie ein Assets per Drag and Drop, indem Sie das Symbol „Neu anordnen“ für ein Asset gedrückt halten (![dragndrop](assets/dragndrop.png)).
-1. Auswählen **Bearbeiten** vor einer Anlage und geben Sie eine Anlage als obligatorisch an, wenn Sie nicht möchten, dass der Autor sie löschen kann. Geben Sie eine Anlage als „Ausgewählt“ an, wenn sie in der CCR-Benutzeroberfläche vorausgewählt werden soll.
+1. Wählen Sie **Bearbeiten** vor einem Anhang aus und geben Sie einen Anhang als „Obligatorisch“ an, wenn Sie nicht möchten, dass die Autorin oder der Autor diesen löschen kann. Geben Sie eine Anlage als „Ausgewählt“ an, wenn sie in der CCR-Benutzeroberfläche vorausgewählt werden soll.
 1. Wählen Sie **Bibliothekszugriff** aus, um Zugriff auf die Bibliothek zu gewähren. Bei Aktivierung des Bibliothekszugriffs kann der Schadensregulierer beim Erstellen eines Briefes auf die Inhaltsbibliothek zugreifen und Anlagen einfügen.
 1. Wählen Sie **Anlagenkonfiguration** aus und geben Sie die maximale Anzahl von Anlagen an.
 
@@ -470,7 +470,7 @@ Die folgenden Werte in der Tabelle
 Sie können eine Briefvorlage schnell anhand einer vorhandenen Briefvorlage mit ähnlichen Eigenschaften, Inhalten und vererbten Assets, wie Dokumentfragmenten und Datenwörterbüchern, erstellen. Kopieren Sie dazu einen Brief und fügen Sie ihn ein.
 
 1. Wählen Sie auf der Seite „Briefe“ einen oder mehrere Briefe aus. Auf der Benutzeroberfläche wird das Symbol „Kopieren“ angezeigt.
-1. Wählen Sie Kopieren aus. Auf der Benutzeroberfläche wird das Symbol „Einfügen“ angezeigt. Sie können vor dem Einfügen auch in einen Ordner wechseln. Verschiedene Ordner können Assets mit demselben Namen enthalten. Weitere Informationen zu Ordnern finden Sie unter [Ordner und Organisieren von Assets](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
-1. Wählen Sie Einfügen aus. Das Dialogfeld „Einfügen“ wird angezeigt. Wenn Sie die Dokumentfragmente kopieren und an derselben Stelle einfügen, weist das System den neuen Briefkopien automatisch Namen und Titel zu, die Sie jedoch ändern können.
-1. Bearbeiten Sie bei Bedarf den Titel und den Namen, mit denen Sie die Kopie des Briefs speichern möchten.
-1. Wählen Sie Einfügen aus. Die Kopie des Briefes wird erstellt. Jetzt können Sie die erforderlichen Änderungen an Ihrem neu erstellten Brief vornehmen.
+1. Wählen Sie „Kopieren“. Auf der Benutzeroberfläche wird das Symbol „Einfügen“ angezeigt. Sie können vor dem Einfügen auch in einen Ordner wechseln. Verschiedene Ordner können Assets mit demselben Namen enthalten. Weitere Informationen zu Ordnern finden Sie unter [Ordner und Organisieren von Assets](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
+1. Wählen Sie „Einfügen“. Das Dialogfeld „Einfügen“ wird angezeigt. Wenn Sie die Dokumentfragmente kopieren und an derselben Stelle einfügen, weist das System den neuen Briefkopien automatisch Namen und Titel zu, die Sie jedoch ändern können.
+1. Bearbeiten Sie ggf. den Titel und den Namen, unter dem Sie die Briefkopie speichern möchten.
+1. Wählen Sie „Einfügen“. Die Kopie des Briefes wird erstellt. Jetzt können Sie die erforderlichen Änderungen an Ihrem neu erstellten Brief vornehmen.

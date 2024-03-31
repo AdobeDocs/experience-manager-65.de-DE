@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '969'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Der Link-Checker wird automatisch ausgeführt, um Autorinnen und Autoren von Inh
 * Anzeigen einer Liste aller externen Links im Inhalt
 * Durchführen von Linktransformationen
 
-Der Link-Checker verfügt über mehrere [Konfigurationsoptionen](#configuring) wie das Definieren der internen Validierung, das Auslassen bestimmter Links oder Link-Muster in der Validierung und das Neuschreiben von Linkumschreibungsregeln.
+Der Link-Checker verfügt über verschiedene [Konfigurationsoptionen](#configuring), wie das Definieren der Validierung als intern, das Auslassen der Validierung für bestimmte Links oder Link-Muster oder das Neuschreiben von Umschreibungsregeln für Links.
 
 Der Link-Checker überprüft sowohl [interne Links](#internal) als auch [externe Links](#external).
 
@@ -89,7 +89,7 @@ Sie können den Inhalt des Fensters mithilfe der beiden Schaltflächen oben in d
 
 ### Funktionsweise des Externer-Link-Checkers {#how-it-works}
 
-Der Checker für externe Links ist zwar benutzerfreundlich, stützt sich aber auf mehrere Dienste und zeigt Ihnen, wie diese funktionieren. [Konfigurieren des Link-Checkers](#configuring) um Ihre Bedürfnisse zu erfüllen.
+Der Checker für externe Links ist zwar einfach zu bedienen, ist aber auf eine Reihe von Diensten angewiesen. Wenn Sie verstehen, wie diese funktionieren, können Sie den [Link-Checker so konfigurieren](#configuring), dass er Ihren Anforderungen gerecht wird.
 
 1. Wenn ein Inhaltsautor einen Link zu einer Seite speichert, wird ein Ereignis-Handler ausgelöst.
 1. Der Ereignis-Handler durchläuft alle Inhalte unter `/content` und sucht nach neuen oder aktualisierten Links und fügt sie einem Cache für den Link-Checker hinzu.
@@ -100,7 +100,7 @@ Der Checker für externe Links ist zwar benutzerfreundlich, stützt sich aber au
 
 ## Konfigurieren des Link-Checkers {#configuring}
 
-Der Link-Checker ist in AEM automatisch vorkonfiguriert verfügbar. Es gibt jedoch mehrere OSGi-Konfigurationen, die geändert werden können, um ihr Verhalten zu ändern:
+Der Link-Checker ist in AEM automatisch vorkonfiguriert verfügbar. Es gibt jedoch verschiedene OSGi-Konfigurationen, die geändert werden können, um sein Verhalten zu ändern:
 
 * **Day CQ Link Checker Info Storage Service**: Dieser Dienst definiert die Größe des Link-Checker-Cache im Repository.
 * **Day CQ Link Checker Service**: Dieser Dienst führt eine asynchrone Überprüfung der Syntax von externen Links durch. Sie können unter anderem den Prüfzeitraum festlegen und festlegen, welche Links vom Checker übersprungen werden.

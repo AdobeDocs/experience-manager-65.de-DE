@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2309'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ Sie haben folgende Möglichkeiten:
 
 ### Vollbild-Editor {#full-screen-editor}
 
-Wenn Sie ein mehrzeiliges Textfeld bearbeiten, können Sie den Vollbild-Editor öffnen. Klicken Sie auf den tatsächlichen Text und wählen Sie dann das folgende Aktionssymbol aus:
+Beim Bearbeiten eines mehrzeiligen Textfelds können Sie den Vollbild-Editor öffnen. Klicken Sie auf den eigentlichen Text und wählen Sie dann das folgende Aktionssymbol aus:
 
 ![Symbol für den Vollbild-Editor](assets/cfm-variations-03.png)
 

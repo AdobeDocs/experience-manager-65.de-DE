@@ -14,7 +14,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3770'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -117,7 +117,7 @@ Adobe Sensei ist auf 9000 Frames beschränkt. Das heißt: fünf Minuten bei 30 
 >
 >Damit das smarte Zuschneiden für Videos funktioniert, müssen Sie mindestens eine Vorgabe für Videokodierung in Ihr Videoprofil einschließen.
 
-Wenn Sie smartes Zuschneiden für Videos verwenden möchten, erstellen Sie ein Profil für adaptive oder progressive Videoverschlüsselung. Verwenden Sie im Rahmen Ihres Profils das Tool **[!UICONTROL Smart Crop Ratio]**, um vordefinierte Seitenverhältnisse auszuwählen. Nachdem Sie beispielsweise Ihre Videokodierungsvorgaben definiert haben, können Sie eine Definition für &quot;Mobiles Querformat&quot;mit einem Seitenverhältnis von 16×9 und eine Definition für &quot;Mobiles Hochformat&quot;mit einem Seitenverhältnis von 9×16 hinzufügen. Andere Seiten- oder Zuschnittverhältnisse, aus denen Sie wählen können, sind 1×1, 4×3 und 4×5.
+Wenn Sie smartes Zuschneiden für Videos verwenden möchten, erstellen Sie ein Profil für adaptive oder progressive Videoverschlüsselung. Verwenden Sie im Rahmen Ihres Profils das Tool **[!UICONTROL Smart Crop Ratio]**, um vordefinierte Seitenverhältnisse auszuwählen. Nachdem Sie Ihre Vorgaben für die Videokodierung definiert haben, können Sie beispielsweise eine Definition für „Mobiles Querformat“ mit einem Seitenverhältnis von 16 × 9 und eine Definition für „Mobiles Hochformat“ mit einem Seitenverhältnis von 9 × 16 hinzufügen. Andere verfügbare Seiten- oder Zuschneideverhältnisse sind 1 × 1, 4 × 3 und 4 × 5.
 
 ![Bearbeiten von Videokodierungsprofilen mit smartem Zuschneiden](assets/edit-smart-crop-video2.png)
 

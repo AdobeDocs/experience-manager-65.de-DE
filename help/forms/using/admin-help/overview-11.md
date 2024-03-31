@@ -10,27 +10,27 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 9%
+ht-degree: 100%
 
 ---
 
 # Übersicht der Statusüberwachung {#overview-of-health-monitor}
 
-Health Monitor stellt wichtige Informationen zum AEM Forms-System bereit, z. B. Serverinformationen, Speicherbelegung und Prozessorauslastung. Außerdem stehen Work Manager-Statistiken zur Verfügung, z. B. die Anzahl der Arbeitselemente oder Aufträge in der Warteschlange und deren Status. Sie können die folgenden Aufgaben mithilfe von Health Monitor ausführen:
+Health Monitor stellt wichtige Informationen zum AEM Forms-System bereit, z. B. Server-Informationen, Speichernutzung und Prozessorauslastung. Außerdem stehen Work Manager-Statistiken zur Verfügung, z. B. die Anzahl der Arbeitselemente oder Aufträge in der Warteschlange und deren Status. Sie können die folgenden Aufgaben mithilfe von Health Monitor ausführen:
 
-* Überprüfen Sie, ob das System ordnungsgemäß ausgeführt wird.
-* Anzeigen von Informationen zur Diagnose von Systemproblemen bei deren Auftreten
-* Ausführen von Vorgängen für Arbeitselemente oder Aufträge mit Problemen
-* Bereinigen veralteter Datensätze aus der Job Manager-Datenbank
+* Überprüfen, ob das System ordnungsgemäß läuft
+* Anzeigen von Informationen zur Diagnose von auftretenden Systemproblemen
+* Ausführen von Vorgängen mit Arbeitselementen oder Aufträgen, die Probleme aufweisen
+* Bereinigung von veralteten Einträgen in der Job Manager-Datenbank
 
-Die Seite &quot;Health Monitor&quot;in Administration Console verfügt über drei Registerkarten:
+Die Seite „Health Monitor“ in der Administrationskonsole verfügt über drei Registerkarten:
 
-* Auf der Registerkarte System werden Diagramme zur Ressourcenüberwachung und Informationen zum Forms-Server (oder Knoten in einer Clusterumgebung) angezeigt. (Siehe [Systeminformationen anzeigen](/help/forms/using/admin-help/view-system-information.md#view-system-information).
-* Auf der Registerkarte &quot;Work Manager&quot;werden Daten angezeigt, die mit Work Manager in Verbindung stehen, z. B. die Anzahl der Arbeitselemente in der Warteschlange von Work Manager. Sie können die Informationen mithilfe verschiedener Kriterien filtern oder einzelne Arbeitselemente mithilfe der Vorgangstools verwalten. (Siehe [Anzeigen von Statistiken im Zusammenhang mit Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).
-* Auf der Registerkarte &quot;Zeitplaner für die Auftragsbereinigung&quot;können Sie veraltete Datensätze aus der Job Manager-Datenbank bereinigen. (Siehe [Job Manager-Datenbank um Datensätze bereinigen](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database).
+* Auf der Registerkarte „System“ werden Diagramme zur Ressourcenüberwachung und Informationen zum Formular-Server (oder Knoten in einer Cluster-Umgebung) angezeigt. (Weitere Informationen finden Sie unter [Anzeigen von Systeminformationen](/help/forms/using/admin-help/view-system-information.md#view-system-information).
+* Auf der Registerkarte „Work Manager“ werden Daten mit Bezug auf Work Manager, z. B. die Anzahl der Arbeitselemente in der Warteschlange von Work Manager, angezeigt. Sie können die Informationen mithilfe von verschiedenen Kriterien filtern oder einzelne Arbeitselemente mithilfe der Vorgangs-Tools verwalten. (Weitere Informationen finden Sie unter [Anzeigen von Statistiken mit Bezug auf Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
+* Mithilfe der Registerkarte „Zeitplaner für die Auftragsbereinigung“ können Sie veraltete Einträge aus der Job Manager-Datenbank löschen. (Weitere Informationen finden Sie unter [Bereinigen von Einträgen in der Job Manager-Datenbank](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database).)
 
-Die Webseite &quot;Health Monitor&quot;enthält Statistiken, die über eine Gemfire-API erfasst wurden. Diese API erkennt automatisch alle Knoten in einem Cluster. Außerdem werden Sicherheitsprobleme behoben, die auftreten, wenn Statistiken von Proxyservern oder Lastenausgleichern erfasst werden. Es stehen Java-Optionen zum Optimieren von Health Monitor zur Verfügung, mit deren Hilfe Sie die Auswirkungen auf die Leistung der AEM Forms-Umgebung reduzieren können. (Siehe [Optimieren der Leistung von Health Monitor](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md#fine-tuning-health-monitor-performance).
+Die Health Monitor-Web-Seite wird mit Statistiken, die mithilfe einer Gemfire-API gesammelt werden, aufgefüllt. Diese API erkennt automatisch alle Knoten in einem Cluster. Sie löst auch Sicherheitsprobleme, die auftreten, wenn Statistiken von Proxy-Servern oder Lastenausgleichsmodulen gesammelt werden. Es stehen Java-Optionen zum Optimieren von Health Monitor zur Verfügung, mit deren Hilfe Sie die Auswirkungen auf die Leistung der AEM Forms-Umgebung reduzieren können. (Weitere Informationen finden Sie unter [Leistungsoptimierung von Health Monitor](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md#fine-tuning-health-monitor-performance).)
 
-**Auf die Statusüberwachung zugreifen**
+**Zugreifen auf Health Monitor**
 
-1. Klicken Sie in Administration Console oben rechts auf der Seite auf Health Monitor .
+1. Klicken Sie in der Administrationskonsole in der rechten oberen Ecke der Seite auf „Health Monitor“.

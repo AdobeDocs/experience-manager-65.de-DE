@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1382'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Dieses Verfahren weist Ähnlichkeiten mit dem [Hinzufügen digitaler Assets als 
 
 ### Erstellen von Referenzen zu Assets durch Exportieren einer ZIP-Datei {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
-1. Führen Sie die Schritte unter [Workflow-Modelle erstellen](/help/sites-developing/workflows-models.md) , um einen Workflow zu erstellen.
+1. Führen Sie die Schritte in [Erstellen von Workflow-Modellen](/help/sites-developing/workflows-models.md) aus, um einen neuen Workflow zu erstellen.
 1. Exportieren Sie das Dokument mit der [Paketfunktion](https://helpx.adobe.com/indesign/how-to/save-share-projects.html) von [!DNL Adobe InDesign]. [!DNL Adobe InDesign] kann ein Dokument und die verknüpften Assets als Paket exportieren. In diesem Fall enthält der exportierte Ordner einen `Links`-Ordner, der Unter-Assets in der [!DNL InDesign]-Datei enthält. Der `Links`-Ordner befindet sich im selben Ordner wie die INDD-Datei.
 1. Erstellen Sie eine ZIP-Datei und laden Sie sie in das [!DNL Experience Manager]-Repository hoch.
 1. Starten Sie den `Unarchiver`-Workflow.
@@ -79,7 +79,7 @@ Dieses Verfahren weist Ähnlichkeiten mit dem [Hinzufügen digitaler Assets als 
 
    Rufen Sie die referenzierten Assets auf, indem Sie die [Leiste](/help/sites-authoring/basic-handling.md#rail-selector) auf der Asset-Detailseite schließen.
 
-1. Die referenzierten Assets enthalten auch die Liste der Assets, von denen sie referenziert werden. Um eine Liste der referenzierten Assets anzuzeigen, navigieren Sie zur Asset-Detailseite und schließen Sie die [Leiste](/help/sites-authoring/basic-handling.md#rail-selector).
+1. Die referenzierten Assets enthalten auch die Liste der Assets, von denen sie jeweils referenziert werden. Rufen Sie eine Liste der referenzierten Assets auf, indem Sie zur Seite mit den Asset-Details navigieren und die [Seitenleiste](/help/sites-authoring/basic-handling.md#rail-selector) schließen.
 
 >[!NOTE]
 >

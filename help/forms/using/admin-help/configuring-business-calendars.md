@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1889'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ Beispielsweise ist eine Aufgabenerinnerung so konfiguriert, dass sie drei Werkta
 
 >[!NOTE]
 >
->Bei der Berechnung von Daten und Uhrzeiten mithilfe von Geschäftskalendern verwendet AEM Forms das Datum und die Uhrzeit des Servers, auf dem es ausgeführt wird, und passt nicht den Unterschied zwischen Zeitzonen an. Wenn beispielsweise eine Aufgabenerinnerung um 10:00 Uhr auf einem Server geplant ist, der in London ausgeführt wird, sich der Benutzer, der die Erinnerung erhält, jedoch in New York City befindet, erhält der Benutzer die Erinnerung um 5:00 Uhr Ortszeit.
+>Bei der Berechnung von Daten und Uhrzeiten mithilfe von Geschäftskalendern verwendet AEM Forms das Datum und die Uhrzeit des Servers, auf dem es ausgeführt wird, und passt nicht den Unterschied zwischen Zeitzonen an. Wenn beispielsweise eine Aufgabenerinnerung um 10:00 Uhr auf einem Server geplant ist, der in London läuft, sich die Person, die die Erinnerung erhält, jedoch in New York City befindet, erhält die Person die Erinnerung um 5:00 Uhr Ortszeit.
 
 ## Verwenden des Standardgeschäftskalenders {#using-the-default-business-calendar}
 
-AEM Forms bietet einen Standardgeschäftskalender (namens *Integrierter Kalender*), in dem Samstage und Sonntage als geschäftsfreie Tage festgelegt sind. Wenn alle Benutzer in Ihrer Organisation dieselben geschäftsfreien Tage haben, können Sie den Standardgeschäftskalender entsprechend Ihrer Organisation aktualisieren. Wenn Sie nur den Standardgeschäftskalender verwenden, müssen Sie keine Geschäftskalender in der Benutzerverwaltung aktivieren oder Zuordnungen bereitstellen. Wenn keine anderen Geschäftskalender definiert sind, verwendet AEM Forms den Standardgeschäftskalender.
+AEM Forms bietet einen Standardgeschäftskalender (namens *Integrierter Kalender*), in dem Samstage und Sonntage als geschäftsfreie Tage festgelegt sind. Wenn alle Benutzenden in Ihrer Organisation dieselben geschäftsfreien Tage haben, können Sie den Standardgeschäftskalender entsprechend Ihrer Organisation aktualisieren. Wenn Sie nur den Standardgeschäftskalender verwenden, müssen Sie keine Geschäftskalender in der Benutzerverwaltung aktivieren oder Zuordnungen bereitstellen. Wenn keine anderen Geschäftskalender definiert sind, verwendet AEM Forms den Standardgeschäftskalender.
 
 ## Einrichten mehrerer Geschäftskalender {#setting-up-multiple-business-calendars}
 
@@ -36,7 +36,7 @@ Wenn einige Personen in Ihrer Organisation unterschiedliche geschäftsfreie Tage
 
 1. Entscheiden Sie, wie Sie den entsprechenden Geschäftskalender mit einer Person verknüpfen. Es gibt zwei Möglichkeiten, einen Geschäftskalender mit einer Benutzerin bzw. einem Benutzer zu verknüpfen:
 
-   **Gruppenmitgliedschaft:** Sie können einem Benutzer einen Geschäftskalender auf Grundlage der Gruppenmitgliedschaft des Benutzers zuweisen. In diesem Fall verwenden alle Benutzenden der Gruppe denselben Geschäftskalender.
+   **Gruppenmitgliedschaft**: Ein Geschäftskalender kann Benutzenden auf Basis ihrer Gruppenmitgliedschaft zugewiesen werden. In diesem Fall verwenden alle Benutzenden der Gruppe denselben Geschäftskalender.
 
    Ist eine Person Mitglied in zwei verschiedenen Gruppen, die unterschiedlichen Geschäftskalendern zugeordnet sind, verwendet AEM Forms den ersten in den Suchergebnissen gefundenen Kalender. In diesem Fall sollten Sie die Verwendung von Geschäftskalenderschlüsseln erwägen, um Benutzende mit Geschäftskalendern zu verknüpfen.
 
@@ -125,7 +125,7 @@ AEM Forms ermöglicht Ihnen das Exportieren und Importieren Ihrer Geschäftskale
 
 >[!NOTE]
 >
->Diese Funktion exportiert und importiert alle definierten Geschäftskalender, einschließlich des von AEM Formularen bereitgestellten Standardgeschäftskalenders. Ein importierter Geschäftskalender mit demselben Namen wie ein vorhandener Kalender überschreibt den vorhandenen Kalender.
+>Diese Funktion exportiert und importiert alle definierten Geschäftskalender, einschließlich des von AEM Forms bereitgestellten Standardgeschäftskalenders. Ein importierter Geschäftskalender mit demselben Namen wie ein bereits vorhandener Kalender überschreibt den vorhandenen Kalender.
 
 ### Exportieren von Geschäftskalendern {#export-business-calendars}
 
@@ -140,7 +140,7 @@ AEM Forms ermöglicht Ihnen das Exportieren und Importieren Ihrer Geschäftskale
 
 ## Löschen eines Geschäftskalenders {#delete-a-business-calendar}
 
-Alle Geschäftskalender, die in Ihrer Organisation nicht mehr benötigt werden, können entfernt werden. Wenn Sie einen Geschäftskalender löschen, der noch Benutzern und Gruppen zugeordnet ist, wird der Standardkalender verwendet.
+Alle Geschäftskalender, die in Ihrer Organisation nicht mehr benötigt werden, können entfernt werden. Wenn Sie einen Geschäftskalender löschen, der noch Benutzenden oder Gruppen zugeordnet ist, wird der Standardkalender verwendet.
 
 1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Formular-Workflow“ > „Geschäftskalender“.
 1. Wählen Sie den Kalender aus.

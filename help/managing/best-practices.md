@@ -1,6 +1,6 @@
 ---
 title: Verwalten von Projekten – Checkliste mit Best Practices
-description: Die Verwaltung eines Projekts zur Implementierung von Adobe Experience Manager (AEM) erfordert Planung und Know-how. Die Checklisten für Projekte bieten eine Zusammenstellung der Best Practices für die Projektabwicklung. Sie führen Sie durch alle Phasen des Projektlebenszyklus und bieten eine allgemeine Überwachung Ihres Status.
+description: Die Verwaltung eines Projekts zur Implementierung von Adobe Experience Manager (AEM) erfordert Planung und Know-how. Die Checklisten für Projekte bieten eine Zusammenstellung der Best Practices für die Projektabwicklung. Sie führen Sie durch alle Phasen des Projektlebenszyklus und bieten eine allgemeine Statusüberwachung.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist, introduction
@@ -11,13 +11,13 @@ solution: Experience Manager, Experience Manager 6.5
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '3214'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Verwalten von Projekten – Checkliste für Best Practices{#managing-projects-best-practices-checklist}
 
-Die Verwaltung eines Projekts zur Implementierung von Adobe Experience Manager (AEM) erfordert Planung und Verständnis, damit Sie sich der Probleme und (damit zusammenhängenden) Entscheidungen bewusst sind, die Sie vor und während der Implementierung des Projekts treffen müssen.
+Die Verwaltung eines Projekts zur Implementierung von Adobe Experience Manager (AEM) erfordert Planung und Know-how. Nur so werden Sie sich der Probleme und (entsprechenden) Entscheidungen bewusst, die Sie vor und während der Umsetzung des Projekts treffen müssen.
 
 Als Hilfestellung für Sie umfassen die Best Practices Folgendes:
 
@@ -26,7 +26,7 @@ Als Hilfestellung für Sie umfassen die Best Practices Folgendes:
    * Sie definiert Inputs und die zu erbringenden Leistungen nach Phase, Meilenstein und Rolle.
    * Sie stellt automatische Übersichten (Qualität, Konsistenz und Vollständigkeit) bereit, um den Fortschritt und die Konsistenz des Projekts anzuzeigen.
 
-* Die Dokumentation basiert auf der [Checkliste](/help/managing/best-practices-checklist.md) , die Folgendes beschreibt:
+* Dokumentation, die auf der [Checkliste](/help/managing/best-practices-checklist.md) basiert, mit folgenden Details:
 
    * [Projekt-Heartbeat](#projectheartbeat)-Analyse
    * Überblick über den [Status nach Rolle](#status-by-role)
@@ -118,7 +118,7 @@ Die vier Faktoren:
 
 ### Planung {#planning}
 
-Die Planung des Projekts vertieft die Vorbereitung. Hier sollten Sie damit beginnen, die Ziele und Erwartungen in einen klar definierten Fahrplan umzuwandeln, der aus konkreten Aufgaben besteht, die durch klare Kommunikation verbunden sind, mit strengen Überprüfungen zur Messung des Fortschritts.
+Die Planung des Projekts vertieft die Vorbereitung. Beginnen Sie damit, Ihre Ziele und Erwartungen in eine sorgfältig formulierte Roadmap umzuwandeln, die aus konkreten Aufgaben besteht, an eine klare Kommunikation gebunden ist und strenge Überprüfungen zur Messung des Fortschritts enthält.
 
 #### Milestones {#milestones-1}
 
@@ -136,7 +136,7 @@ Die Planung des Projekts vertieft die Vorbereitung. Hier sollten Sie damit begin
 
 * **Kommunikation**
 
-  Kommunikation ist immer der Schlüssel zum Erfolg eines jeden Projekts. Vermitteln Sie klar und effizient, um sicherzustellen, dass alle:
+  Kommunikation ist immer der Schlüssel zum Erfolg eines jeden Projekts. Kommunizieren Sie klar und effizient, um sicherzustellen, dass alle Beteiligten:
 
    * an denselben grundlegenden Zielen arbeiten;
    * dieselbe Informationsgrundlage nutzen;
@@ -170,7 +170,7 @@ Die Entwicklungsplanung ist der Schlüssel, um zu gewährleisten, dass das Proje
 
    * Inhaltsstruktur, einschließlich Assets
    * Grundstrukturen, einschließlich Kampagnen usw.
-   * Multisite- und mehrsprachige Strukturen (MSM, Übersetzung usw.)
+   * Strukturen mit mehreren Sites und Sprachen (MSM, Übersetzung)
    * Unterstützende Inhalte (einschließlich Tags und Tagging-Konzepte)
    * Strategien für das Caching und die Wiederverwendung von Inhalten
 
@@ -204,7 +204,7 @@ Die Entwicklungsplanung ist der Schlüssel, um zu gewährleisten, dass das Proje
    * Grundlegende Code-Struktur für das Projekt
    * Code-Artefakte (Bundles, Pakete usw.)
    * Aufschlüsselung der Vorlagen/Komponenten und ihrer Beziehungen
-   * Allgemeine Details der erforderlichen Anpassungen (spezifische Überlagerungen folgen später)
+   * Allgemeine Details der erforderlichen Anpassungen (spezifische Überlagerungen werden später folgen)
    * Entwurf der für die Lösung erforderlichen Workflows (z. B. Inhaltserstellung, Genehmigung, Veröffentlichung, Transformationen, Importe und Exporte)
    * Besondere Berücksichtigung komplexer Module wie MSM, Commerce, Drittanbieterintegration
 
@@ -212,8 +212,8 @@ Die Entwicklungsplanung ist der Schlüssel, um zu gewährleisten, dass das Proje
 
   Die Systemintegration erfordert Ihre Planung (die Implementierung erfolgt danach):
 
-   * Wie alle Teilsysteme und [Lösungsintegrationen](/help/sites-administering/integration.md) zusammengeführt werden, um als einheitliches System zu fungieren
-   * Integration von Drittanbietersystemen zusammen mit besonderen Überlegungen wie Offline-/Online-, Client-/Browser-seitig oder Fallover-Handhabung bei Ausfall eines Drittanbietersystems
+   * Zusammenführen sämtlicher Teilsysteme und [Lösungsintegrationen](/help/sites-administering/integration.md) zu einem schlüssig operierenden System
+   * Integrieren von Drittsystemen zusammen mit besonderer Berücksichtigung von Aspekten wie offline/online, Client-/Browser-seitig oder Handhabung der Ausfallsicherung, wenn ein Drittsystem ausfällt
 
 * **Testkonzept**
 
@@ -352,7 +352,7 @@ Entwicklung ist eine entscheidende Phase, die mehr erfordert als nur Programmier
 
 ### Leistung und Tests {#performance-and-testing}
 
-Sobald die neue Anwendung verfügbar ist, muss sie strengen Tests unterzogen werden, sowohl hinsichtlich der Funktionalität als auch [Leistung](/help/sites-deploying/configuring-performance.md).
+Sobald die neue Anwendung verfügbar ist, muss sie in Bezug auf Funktionalität und [Leistung](/help/sites-deploying/configuring-performance.md) strengen Tests unterzogen werden.
 
 >[!NOTE]
 >
@@ -571,7 +571,7 @@ Die Leitung der Sicherheit:
 
 * Autorinnen und Autoren sowie Endbenutzende
 
-   * Die Personen, die das System zur Erstellung und Pflege Ihrer Website-Inhalte verwenden.
+   * Die Personen, die das System verwenden, um Website-Inhalte zu erstellen und zu verwalten.
 
 ## Erforderliche Dokumente und zu erbringende Leistungen {#required-documents-and-deliverables}
 

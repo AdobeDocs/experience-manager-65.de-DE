@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1387'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 96%
 
 Der interne Neuindizierungsprozess von AEM erfasst Repository-Daten und speichert sie in Oak-Indizes, um eine leistungsfähige Inhaltsabfrage zu unterstützen. Bei außergewöhnlichen Umständen kann der Vorgang langsam werden oder sogar anhalten. Diese Seite dient als Anleitung zur Fehlerbehebung, um festzustellen, ob die Indizierung langsam ist, die Ursache zu finden und das Problem zu beheben.
 
-Es ist wichtig, zwischen einer Neuindizierung, die unangemessen lange dauert, und einer Neuindizierung zu unterscheiden, die viel Zeit in Anspruch nimmt, da sie große Mengen von Inhalten indiziert. Die Zeit, die für die Indizierung von Inhalten benötigt wird, hängt beispielsweise von der Menge der Inhalte ab, sodass die Neuindizierung großer Produktions-Repositorys länger dauert als die kleiner Entwicklungs-Repositorys.
+Es ist wichtig, zwischen Neuindizierungen zu unterscheiden, die unangemessen lange dauern, und Neuindizierungen, die einfach viel Zeit in Anspruch nehmen, weil große Mengen an Inhalten indiziert werden. Die Zeit, die für die Indizierung von Inhalten benötigt wird, hängt beispielsweise von der Menge der Inhalte ab, sodass die Neuindizierung großer Produktions-Repositorys länger dauert als die kleiner Entwicklungs-Repositorys.
 
 In den [Best Practices für Abfragen und Indizierung](/help/sites-deploying/best-practices-for-queries-and-indexing.md) finden Sie weitere Informationen darüber, wann und wie Inhalte neu indiziert werden sollten.
 

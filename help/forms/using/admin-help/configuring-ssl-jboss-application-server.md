@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren von SSL für JBoss Application Server
-description: Erfahren Sie, wie Sie SSL für JBoss Application Server konfigurieren.
+description: Hier finden Sie Informationen dazu, wie Sie SSL für den JBoss-Anwendungs-Server konfigurieren.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
@@ -10,17 +10,17 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '904'
-ht-degree: 70%
+ht-degree: 99%
 
 ---
 
 # Konfigurieren von SSL für JBoss Application Server {#configuring-ssl-for-jboss-application-server}
 
-Zum Konfigurieren von SSL unter JBoss Application Server benötigen Sie eine SSL-Berechtigung für die Authentifizierung. Sie können das Java-Keytool verwenden, um eine Berechtigung zu erstellen oder eine Berechtigung von einer Zertifizierungsstelle (CA) anzufordern und zu importieren. Anschließend müssen Sie SSL unter JBoss aktivieren.
+Zum Konfigurieren von SSL auf dem JBoss-Anwendungs-Server benötigen Sie eine SSL-Berechtigung für die Authentifizierung. Sie können das Java-Keytool zum Erstellen einer Berechtigung oder zum Anfordern und Importieren einer Berechtigung von einer Zertifizierungsstelle verwenden. Aktivieren Sie anschließend SSL unter JBoss.
 
-Sie können Keytool mit einem einzelnen Befehl ausführen, der alle zum Erstellen des Keystore erforderlichen Informationen enthält.
+Sie können das Keytool mit einem einzelnen Befehl ausführen, der alle zum Erstellen des Keystore erforderlichen Informationen enthält.
 
-Im Rahmen dieses Verfahrens:
+In diesem Verfahren gilt:
 
 * `[appserver root]` ist der Basisordner des Anwendungs-Servers, auf dem AEM Forms ausgeführt wird.
 * `[type]` ist ein Ordnername, der von der von Ihnen ausgeführten Installation abhängig ist.
@@ -67,7 +67,7 @@ Im Rahmen dieses Verfahrens:
    * `keytool -printcert -v -file [appserver root]\standalone\configuration\AEMForms_cert.cer`
    * `keytool -printcert -v -file [appserver root]\domain\configuration\AEMForms_cert.cer`
 
-1. So gewähren Sie Schreibzugriff auf die Datei &quot;cacerts&quot;in `[JAVA_HOME]\jre\lib\security`Führen Sie bei Bedarf die folgende Aufgabe aus:
+1. Um ggf. Schreibzugriff auf die Datei „cacerts“ in `[JAVA_HOME]\jre\lib\security` zu ermöglichen, führen Sie die folgende Aufgabe aus:
 
    * (Windows) Klicken Sie mit der rechten Maustaste auf die Datei „cacerts“, wählen Sie „Eigenschaften“ und deaktivieren Sie das Attribut „Schreibgeschützt“.
    * (Linux) Typ `chmod 777 cacerts`
@@ -77,8 +77,8 @@ Im Rahmen dieses Verfahrens:
    `keytool -import -alias "AEMForms Cert" -file`*AEMForms_cert* `.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
 
 1. Geben Sie `changeit` als Passwort ein. Dieses Kennwort ist das Standardkennwort für Java-Installationen. Eventuell wurde es von Ihrem Systemadministrator geändert.
-1. Wenn Sie dazu aufgefordert werden `Trust this certificate? [no]`, Typ `yes`. Die Bestätigung &quot;Zertifikat wurde dem Keystore hinzugefügt&quot;wird angezeigt.
-1. Wenn Sie eine Verbindung über SSL von Workbench aus herstellen, installieren Sie das Zertifikat auf dem Workbench-Computer.
+1. Wenn Sie dazu aufgefordert werden `Trust this certificate? [no]`, Typ `yes`. Daraufhin wird die Bestätigung „Certificate was added to keystore“ angezeigt.
+1. Installieren Sie das Zertifikat auf dem Workbench-Computer, wenn Sie die Verbindung über SSL von Workbench aus herstellen.
 1. Öffnen Sie in einem Texteditor die folgende Dateien zur Bearbeitung:
 
    * Einzel-Server – `[appserver root]`/standalone/configuration/lc_&lt;dbname/turnkey>.xml
@@ -137,13 +137,13 @@ Im Rahmen dieses Verfahrens:
 
    * Für Turnkey-Installationen:
 
-      * Klicken Sie in der Windows-Systemsteuerung auf &quot;Verwaltung&quot;, und klicken Sie auf &quot;Dienste&quot;.
-      * Wählen Sie JBoss für Adobe Experience Manager forms.
-      * Wählen Sie Aktion > Anhalten aus.
-      * Warten Sie, bis der Status des Dienstes als angehalten angezeigt wird.
-      * Wählen Sie Aktion > Start aus.
+      * Klicken Sie in der Windows-Systemsteuerung Panel auf „Verwaltung“ und dann auf „Dienste“.
+      * Wählen Sie JBoss für Adobe Experience Manager-Formulare.
+      * Wählen Sie „Aktion“ > „Anhalten“.
+      * Warten Sie, bis als Status des Dienstes „Angehalten“ angezeigt wird.
+      * Wählen Sie „Aktion“ > „Starten“.
 
-   * Für Adobe-vorkonfigurierte oder manuell konfigurierte JBoss-Installationen:
+   * Für von Adobe vorkonfigurierte oder manuell konfigurierte JBoss-Installationen:
 
       * Wechseln Sie in einer Eingabeaufforderung zum Ordner „*`[appserver root]`*/bin“.
       * Beenden Sie den Server durch Eingabe des folgenden Befehls:
@@ -151,17 +151,17 @@ Im Rahmen dieses Verfahrens:
          * (Windows) `shutdown.bat -S`
          * (Linux) `./shutdown.sh -S`
 
-      * Warten Sie, bis der JBoss-Prozess vollständig heruntergefahren wurde (wenn der JBoss-Prozess die Kontrolle an das Terminal zurückgibt, in dem er gestartet wurde).
-      * Starten Sie den Server, indem Sie den folgenden Befehl eingeben:
+      * Warten Sie, bis der JBoss-Prozess vollständig heruntergefahren wurde. (Dies ist der Fall, wenn der JBoss-Prozess die Kontrolle wieder an das Terminal übergibt, in dem er gestartet wurde.)
+      * Starten Sie den Server durch Eingabe des folgenden Befehls:
 
          * (Windows) `run.bat -c <profile>`
          * (Linux) `./run.sh -c <profile>`
 
 1. Um mithilfe von SSL auf Administration Console zuzugreifen, geben Sie `https://[host name]:'port'/adminui` in einem Webbrowser ein:
 
-   Der standardmäßige SSL-Anschluss für JBoss ist 8443. Geben Sie von hier an diesen Anschluss an, wenn Sie auf AEM Formulare zugreifen.
+   Der SSL-Standard-Port für JBoss ist 8443.  Geben Sie von hier an beim Zugriff auf AEM Forms diesen Port an.
 
-## Berechtigung von einer Zertifizierungsstelle anfordern {#request-a-credential-from-a-ca}
+## Anfordern einer Berechtigung von einer Zertifizierungsstelle {#request-a-credential-from-a-ca}
 
 1. Wechseln Sie in einer Eingabeaufforderung zum Ordner „*[JAVA HOME]*/bin“ und geben Sie den folgenden Befehl ein, um den Keystore und den Schlüssel zu erstellen:
 
@@ -175,9 +175,9 @@ Im Rahmen dieses Verfahrens:
 
    `keytool -certreq -alias` „AEMForms Cert“ `-keystore`*Keystore-Name* `.keystore -file`*AEMFormscertRequest.csr*
 
-1. Wenn Ihre Anforderung einer Zertifikatdatei erfüllt ist, führen Sie das nächste Verfahren aus.
+1. Wenn Ihre Anforderung einer Zertifikatsdatei erfüllt wurde, führen Sie die Schritte im nächsten Verfahren durch.
 
-## Berechtigung von einer Zertifizierungsstelle zum Aktivieren von SSL verwenden {#use-a-credential-obtained-from-a-ca-to-enable-ssl}
+## Verwenden einer Berechtigung von einer Zertifizierungsstelle zum Aktivieren von SSL {#use-a-credential-obtained-from-a-ca-to-enable-ssl}
 
 1. Wechseln Sie in einer Eingabeaufforderung zum Ordner „*`[JAVA HOME]`*/bin“ und geben Sie den folgenden Befehl ein, um das Stammzertifikat der Zertifizierungsstelle, mit dem die CSR-Datei signiert wurde, zu importieren:
 
@@ -196,6 +196,6 @@ Im Rahmen dieses Verfahrens:
    >[!NOTE]
    >
    >* Ersetzen Sie `[JAVA_HOME]` durch den Ordner, in dem das JDK installiert ist, und ersetzen Sie die kursiv gedruckten Werte durch die für Ihre Umgebung zutreffenden Werte.
-   >* Das importierte, von einer Zertifizierungsstelle signierte Zertifikat ersetzt ein selbst signiertes öffentliches Zertifikat, sofern es vorhanden ist.
+   >* Das importierte, von der Zertifizierungsstelle signierte Zertifikat ersetzt ein selbst signiertes Zertifikat (sofern vorhanden).
 
-1. Führen Sie die Schritte 13 bis 18 von SSL-Berechtigung erstellen aus.
+1. Führen Sie die Schritte 13 bis 18 im Abschnitt „Erstellen einer SSL-Berechtigung“ durch.

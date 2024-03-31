@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '955'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ Angenommen, Sie sind in einem Browser bei der Administrationskonsole angemeldet.
 **Null-Referrer:** Wenn Sie ein neues Browser-Fenster oder eine neue Registerkarte öffnen, dann eine Adresse eingeben und die Eingabetaste drücken, ist der Referrer null. Die Anfrage ist völlig neu und stammt nicht von einer übergeordneten Web-Seite. Daher gibt es keinen Referrer für die Anfrage. Der Formular-Server kann einen Null-Referrer von folgenden Quellen erhalten:
 
 * Anfragen, die auf SOAP- oder REST-Endpunkten von Acrobat durchgeführt werden
-* alle Desktop-Clients, die HTTP-Anforderungen an einen SOAP- oder REST-Endpunkt AEM Formulars senden
+* beliebige Desktop-Clients, die eine HTTP-Anfrage auf einem SOAP- oder REST-Endpunkt von AEM Forms durchführen
 * beim Öffnen eines neuen Browser-Fensters und Eingeben der URL für die Anmeldeseite einer AEM Forms-Web-Anwendung
 
 Lassen Sie einen Null-Referrer auf SOAP- und REST-Endpunkten zu. Lassen Sie außerdem einen Null-Referrer auf allen URI-Anmeldeseiten wie „/adminui“ und „/contentspace“ und den entsprechenden zugeordneten Ressourcen zu. Beispielsweise ist „/contentspace/faces/jsp/login.jsp“ das zugeordnete Servlet für „/contentspace“, was eine Null-Referrer-Ausnahme sein sollte. Diese Ausnahme ist nur erforderlich, wenn Sie die GET-Filterung für die Web-Anwendung aktivieren. In Ihren Anwendungen kann angegeben werden, ob Null-Referrer zulässig sind. Siehe „Schutz vor Cross-Site Request Forgery-Angriffen“ in [Härtung und Sicherheit für AEM Forms](https://help.adobe.com/de_DE/livecycle/11.0/HardeningSecurity/index.html).

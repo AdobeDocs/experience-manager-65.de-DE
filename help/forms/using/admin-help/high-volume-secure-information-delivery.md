@@ -1,6 +1,6 @@
 ---
 title: Bereitstellung von großen Mengen geschützter Informationen
-description: Document Security unterstützt die Zuordnung von Lizenzen zu Benutzern und nicht zu Dokumenten in Massenproduktionsumgebungen.
+description: Die Dokumentensicherheit unterstützt in Massenproduktionsumgebungen die Zuordnung von Lizenzen zu Benutzenden anstatt zu Dokumenten.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
@@ -11,20 +11,20 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '320'
-ht-degree: 5%
+ht-degree: 92%
 
 ---
 
 # Bereitstellung von großen Mengen geschützter Informationen {#high-volume-secure-information-delivery}
 
-In einer Massenproduktionsumgebung, z. B. bei der Erstellung gesicherter monatlicher Rechnungen für ein Telekommunikationsunternehmen, kann die Erstellung von Lizenzen, die für jedes Dokument spezifisch sind, zu einem ressourcenintensiven Prozess werden. In solchen Fällen unterstützt Document Security die Zuordnung von Lizenzen zu Benutzern und nicht zu Dokumenten. Die für einen Benutzer generierte Lizenz wird für alle Dokumente verwendet, die für diesen Benutzer geschützt sind.
+In einer Massenproduktionsumgebung, wie z. B. der Erstellung von geschützten monatlichen Rechnungen für ein Telecom-Unternehmen, kann das Erstellen von Lizenzen, die für jedes einzelne Dokument spezifisch sind, ein ressourcenintensiver Prozess werden. In solchen Fällen unterstützt die Dokumentensicherheit die Zuordnung von Lizenzen zu Benutzenden anstatt zu Dokumenten. Die für eine Person generierte Lizenz wird für alle Dokumente verwendet, die für diese Person geschützt sind.
 
-Ein Vorteil dieses Ansatzes besteht darin, dass die Größe der Document Security-Datenbank nicht linear mit den Dokumenten wächst, sondern mit der Anzahl der Benutzer. Da Sie die Lizenz nur einmal für einen Benutzer erstellen müssen, wird der anschließende Schutz von Dokumenten durch diese Richtlinien schneller. Funktionen wie Offline-Zugriff, Ablauf von Dokumenten und Sperrung werden für alle diese Dokumente unterstützt.
+Ein Vorteil dieses Ansatzes besteht darin, dass die Größe der Document Security-Datenbank nicht linear mit den Dokumenten wächst, sondern mit der Anzahl der Benutzer. Da Sie die Lizenz für eine Person nur einmal erstellen müssen, wird der anschließende Schutz von Dokumenten durch diese Richtlinien schneller. Funktionen wie Offline-Zugriff, Ablauf von Dokumenten und Widerruf werden für alle derartigen Dokumente unterstützt.
 
-Document Security unterstützt auch abstrakte Richtlinien. Abstrakte Richtlinien sind Richtlinienvorlagen, die alle Richtlinienattribute wie Document Security-Einstellungen und Verwendungsrechte enthalten, jedoch keine Liste von Prinzipalen enthalten. Administratoren können eine beliebige Anzahl von Richtlinien aus der abstrakten Richtlinie mit verschiedenen Prinzipalen erstellen, die Zugriff auf die Dokumente haben sollten. Änderungen an der abstrakten Richtlinie wirken sich nicht auf die tatsächlichen Richtlinien aus, die aus den abstrakten Richtlinien generiert werden.
+Die Dokumentensicherheit unterstützt auch abstrakte Richtlinien. Abstrakte Richtlinien sind Richtlinienvorlagen, die alle Richtlinienattribute wie Dokumentensicherheitseinstellungen und Nutzungsrechte beinhalten, jedoch keine Prinzipalliste. Admins können anhand der abstrakten Richtlinie eine beliebige Anzahl von Richtlinien mit verschiedenen Prinzipalen erstellen, die Zugriff auf die Dokumente haben. An der abstrakten Richtlinie vorgenommene Änderungen wirken sich nicht auf die Richtlinien aus, die anhand der abstrakten Richtlinie generiert wurden.
 
-Wenn für ein Telekommunikationsunternehmen eine monatliche Rechnungserstellung erfolgt, erstellen Sie eine abstrakte Richtlinie, erstellen Benutzer und generieren dann eindeutige Lizenzen für jeden Benutzer. Die Lizenzen werden später für jeden Benutzer auf Dokumente angewendet.
+In dem Beispiel der monatlichen Rechnungserstellung für ein Telecom-Unternehmen erstellen Sie eine abstrakte Richtlinie, dann Benutzerinnen und Benutzer und schließlich eindeutige Lizenzen für jede Person. Die Lizenzen werden dann für jede Person auf Dokumente angewendet.
 
-Die Erstellung einer abstrakten Richtlinie wird nur über das Document Security Java SDK unterstützt. Sie können jedoch die Richtlinien, die Sie aus der abstrakten Richtlinie erstellen, auf den Document Security-Webseiten verwalten. Richtlinien, die mit dieser Methode erstellt werden, sind im Verhalten mit denen identisch, die von Document Security-Webseiten erstellt wurden.
+Das Erstellen einer abstrakten Richtlinie wird nur von Document Security Java SDK unterstützt. Sie können die Richtlinien, die Sie aus der abstrakten Richtlinie erstellt haben, allerdings auf den Web-Seiten zur Dokumentensicherheit verwalten. Richtlinien, die mit dieser Methode erstellt werden, sind im Verhalten mit denen identisch, die über Web-Seiten der Dokumentensicherheit erstellt werden.
 
 Weitere Informationen finden Sie unter [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).

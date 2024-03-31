@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1247'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 94%
 
 Der Sling Resource Merger bietet Dienste für den Zugriff auf und das Zusammenführen von Ressourcen. Er stellt Differenzierungsmechanismen bereit für:
 
-* **[Überlagerungen](/help/sites-developing/overlays.md)** der Ressourcen, die [konfigurierte Suchpfade](/help/sites-developing/overlays.md#configuring-the-search-paths).
+* **[Überlagerungen](/help/sites-developing/overlays.md)** von Ressourcen unter Verwendung der [konfigurierten Suchpfade](/help/sites-developing/overlays.md#configuring-the-search-paths).
 
 * **Überschreibungen** von Komponentendialogfeldern für die Touch-optimierte Benutzeroberfläche (`cq:dialog`) unter Verwendung der Ressourcentyphierarchie (anhand der Eigenschaft `sling:resourceSuperType`).
 
@@ -34,7 +34,7 @@ Mit dem Sling Resource Merger werden die Überlagerungs-/Überschreibungsressour
 >
 >Der Sling Resource Merger und zugehörige Methoden können nur mit [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) verwendet werden. Das bedeutet auch, dass er nur für die standardmäßige Touch-optimierte Benutzeroberfläche geeignet ist: Insbesondere auf diese Art und Weise definierte Überschreibungen sind nur für das Touch-fähige Dialogfeld einer Komponente geeignet.
 >
->Überlagerungen/Überschreibungen für andere Bereiche (einschließlich anderer Aspekte einer Touch-optimierten Komponente oder der klassischen Benutzeroberfläche) umfassen das Kopieren des entsprechenden Knotens und der entsprechenden Struktur aus dem Original in den Bereich, in dem die Anpassung definiert wird.
+>Überlagerungen/Überschreibungen für andere Bereiche (einschließlich anderer Aspekte einer Touch-fähigen Komponente oder der klassischen Benutzeroberfläche) umfassen das Kopieren des entsprechenden Knotens und der entsprechenden Struktur aus dem Original dahin, wo die Anpassung definiert wird.
 
 ### Ziele für AEM {#goals-for-aem}
 
@@ -202,7 +202,7 @@ Diese ermöglichen Ihnen zusammen mit den Standardfunktionen Folgendes:
 
 * **Untergeordnete Elemente eines Knotens ausblenden (wobei die Eigenschaften des Knotens beibehalten werden)**
 
-  Der Knoten, seine Eigenschaften und seine untergeordneten Elemente sind in `/libs` definiert. Der Knoten und seine Eigenschaften sind in der `/apps` -Überlagerung/-Überschreibung, aber einige oder alle untergeordneten Knoten sind im `/apps` Überlagerung/Überschreibung.
+  Der Knoten, seine Eigenschaften und seine untergeordneten Elemente sind in `/libs` definiert. Der Knoten und seine Eigenschaften sind in der `/apps`-Überlagerung/-Überschreibung erforderlich, aber einige oder alle der untergeordneten Knoten sind in der `/apps`-Überlagerung/-Überschreibung nicht erforderlich.
 
    1. Erstellen Sie den entsprechenden Knoten unter `/apps`
    1. Erstellen Sie die Eigenschaft `sling:hideChildren`:
@@ -256,7 +256,7 @@ Der Sling Resource Merger umfasst zwei benutzerdefinierte Ressourcenanbieter �
 
 ### Anwendungsbeispiele {#example-of-usage}
 
-Einige Beispiele werden behandelt:
+Einige Beispiele sind enthalten:
 
 * Überlagerung:
 

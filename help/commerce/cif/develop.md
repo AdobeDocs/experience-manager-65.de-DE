@@ -11,13 +11,13 @@ solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '798'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
 # Entwicklung in AEM Commerce {#develop}
 
-Die Entwicklung von AEM Commerce-Projekten auf der Grundlage des Commerce Integration Framework (CIF) für AEM folgt denselben Regeln und Best Practices wie andere AEM Projekte. Überprüfen Sie diese zuerst:
+Die Entwicklung von AEM Commerce-Projekten auf der Grundlage des Commerce Integration Framework (CIF) für AEM folgt denselben Regeln und Best Practices wie andere AEM Projekte. Sehen Sie sich zuerst die folgenden Artikel an:
 
 - [AEM 6.5-Entwickleranleitung](/help/sites-developing/getting-started.md)
 - [Grundlegende AEM-Konzepte](/help/sites-developing/the-basics.md)
@@ -30,7 +30,7 @@ Für die Arbeit mit CIF-Projekten wird eine lokale Entwicklungsumgebung empfohle
 
 >[!NOTE]
 >
->Die folgenden Anweisungen helfen Ihnen beim Einrichten einer lokalen AEM-Entwicklungsumgebung für AEM Commerce mithilfe von CIF und mit Schwerpunkt auf AEM 6.5. Wenn Sie AEM as a Cloud Service verwenden, lesen Sie den Abschnitt [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=de) Dokumentation.
+>Die folgenden Anweisungen helfen Ihnen beim Einrichten einer lokalen AEM-Entwicklungsumgebung für AEM Commerce mithilfe von CIF und mit Schwerpunkt auf AEM 6.5. Wenn Sie AEM as a Cloud Service verwenden, lesen Sie die Dokumentation zu [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=de).
 
 Das AEM Commerce-Add-on für AEM 6.5 alias. Das CIF-Add-on steht auch für die lokale Entwicklung zur Verfügung und wird als AEM-Paket bereitgestellt. Sie können es über [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) als Feature Pack herunterladen.
 

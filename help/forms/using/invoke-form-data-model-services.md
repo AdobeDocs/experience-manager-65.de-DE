@@ -1,6 +1,6 @@
 ---
 title: API zum Aufrufen des Formulardatenmodell-Service aus adaptiven Formularen
-description: Erläutert die invokeWebServices-API, mit der Sie Webdienste aufrufen können, die in WSDL von einem Feld in einem adaptiven Formular aus geschrieben wurden.
+description: Hier wird die invokeWebServices-API beschrieben, mit deren Hilfe Sie Web-Dienste aufrufen können, die in einem Feld eines adaptiven Formulars in WSDL geschrieben wurden.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 89%
 
 ## Übersicht {#overview}
 
-AEM Forms ermöglicht es Formularautoren, das Ausfüllen von Formularen weiter zu vereinfachen und zu verbessern, indem sie Dienste aufrufen, die in einem Formulardatenmodell innerhalb eines adaptiven Formularfelds konfiguriert sind. Um einen Datenmodell-Service aufzurufen, können Sie entweder eine Regel im visuellen Editor anlegen oder ein JavaScript mit der `guidelib.dataIntegrationUtils.executeOperation`-API im Code-Editor des [Regeleditors](/help/forms/using/rule-editor.md) angeben.
+AEM Forms ermöglicht es Formularautorinnen und -autoren, das Ausfüllen von Formularen weiter zu vereinfachen und zu verbessern, indem in einem Formulardatenmodell konfigurierte Dienste aus einem adaptiven Formularfeld heraus aufgerufen werden. Um einen Datenmodell-Service aufzurufen, können Sie entweder eine Regel im visuellen Editor anlegen oder ein JavaScript mit der `guidelib.dataIntegrationUtils.executeOperation`-API im Code-Editor des [Regeleditors](/help/forms/using/rule-editor.md) angeben.
 
 In diesem Dokument wird das Schreiben von JavaScript in der `guidelib.dataIntegrationUtils.executeOperation`-API für den Aufruf eines Service beschrieben.
 

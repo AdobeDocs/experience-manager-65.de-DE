@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2894'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -172,7 +172,7 @@ Nachdem Sie festgestellt haben, ob ein Formular Dateianhänge enthält, können 
 
 >[!NOTE]
 >
->Das Formular muss als PDF-Daten gesendet werden, um Dateianlagen abzurufen. Wenn das Formular als XML-Daten übermittelt wird, werden keine Dateianlagen übermittelt.
+>Das Formular muss als PDF-Daten übermittelt werden, um Dateianhänge abzurufen. Wenn das Formular als XML-Daten übermittelt wird, werden keine Dateianlagen übermittelt.
 
 **Verarbeiten der übermittelten Daten**
 

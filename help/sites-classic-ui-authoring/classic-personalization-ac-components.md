@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2548'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Wenn Sie eine Integration mit Adobe Campaign durchführen, stehen Ihnen Kompone
 >
 >Die E-Mail-Komponenten von AEM werden nicht mehr unterstützt. Aufgrund der Art von E-Mails, bei denen Inhalt und Stil zusammengeführt werden, können die standardmäßig von AEM bereitgestellten E-Mail-Komponenten von Kunden nur eingeschränkt wiederverwendet werden, da benutzerdefinierte Stile in allen Komponenten implementiert werden müssen, die für Projekte erforderlich sind.
 >
->E-Mail-Komponenten können auf Projektebene implementiert werden. Die veralteten AEM-E-Mail-Komponenten veranschaulichen, wie dies erreicht werden kann. Verwenden Sie diese veralteten Komponenten jedoch nicht für Projekte.
+>E-Mail-Komponenten können auf Projektebene implementiert werden. Die veralteten AEM-E-Mail-Komponenten veranschaulichen, wie dies erreicht werden kann. Verwenden Sie diese veralteten Komponenten jedoch nicht in Projekten.
 
 ## Adobe Campaign-Newsletter-Komponenten {#adobe-campaign-newsletter-components}
 
@@ -72,7 +72,7 @@ Die Komponente „Bild (Campaign)“ zeigt ein Bild und begleitenden Text gemä�
 
 Sie können ein Bild hochladen und dieses anschließend bearbeiten und anpassen (beispielsweise zuschneiden, drehen oder Links/Titel/Text hinzufügen).
 
-Sie können ein Bild hochladen und es dann bearbeiten (z. B. zuschneiden, drehen, Link/Titel/Text hinzufügen). Sie können ein Bild aus der [Inhaltssuche](/help/sites-authoring/author-environment-tools.md#thecontentfinderclassicui) per Drag-and-Drop direkt auf die Komponente oder ihren Bearbeitungsdialog ziehen. Sie können auch im zentralen Bereich des Bearbeitungsdialogs doppelklicken, um Ihr lokales Dateisystem zu durchsuchen und ein Bild hochzuladen. Die beiden Registerkarten des Bearbeitungsdialogs steuern auch alle Definitionen und Bearbeitungen des Bildes:
+Sie können ein Bild hochladen und dieses anschließend bearbeiten und ändern (beispielsweise zuschneiden, drehen oder Links/Titel/Text hinzufügen). Sie können ein Bild aus der [Inhaltssuche](/help/sites-authoring/author-environment-tools.md#thecontentfinderclassicui) per Drag-and-Drop direkt auf die Komponente oder ihren Bearbeitungsdialog ziehen. Sie können auch im zentralen Bereich des Bearbeitungsdialogs doppelklicken, um Ihr lokales Dateisystem zu durchsuchen und ein Bild hochzuladen. Die beiden Registerkarten des Bearbeitungsdialogs steuern auch alle Definitionen und Bearbeitungen des Bildes:
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
 
@@ -109,7 +109,7 @@ Legt die Höhe und Breite des Bildes fest.
 
 >[!NOTE]
 >
->Geben Sie Informationen in die **Alternativtext** im Feld **Erweitert** oder das Bild kann nicht gespeichert werden. Die folgende Fehlermeldung wird angezeigt:
+>Geben Sie auf der Registerkarte **Erweitert** in das Feld **Alt-Text** Informationen ein, da das Bild sonst nicht gespeichert werden kann und die folgende Fehlermeldung ausgegeben wird:
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -132,15 +132,15 @@ Die Beschriftung des Links. Dies ist der Text, der den Benutzern angezeigt wird.
 * **Link-QuickInfo**
 Mit dieser Option werden weitere Informationen zur Verwendung des Links hinzugefügt.
 
-* **LinkType**
-Wählen Sie in der Dropdown-Liste zwischen einer **Benutzerspezifische URL** und **Adaptives Dokument**. Dieses Feld ist obligatorisch. Wenn Sie „Benutzerdefinierte URL“ auswählen, können Sie die URL des Links angeben. Entscheiden Sie sich für ein adaptives Dokument, können Sie den Dokumentenpfad festlegen.
+* **Verknüpfungstyp**
+Wählen Sie in der Dropdown-Liste zwischen einer **benutzerdefinierten URL** und einem **adaptiven Dokument** aus. Dieses Feld ist obligatorisch. Wenn Sie „Benutzerdefinierte URL“ auswählen, können Sie die URL des Links angeben. Entscheiden Sie sich für ein adaptives Dokument, können Sie den Dokumentenpfad festlegen.
 
 * **Zusätzlicher URL-Parameter**
 Fügen Sie weitere URL-Parameter hinzu. Klicken Sie auf „Element hinzufügen“, um mehrere Elemente hinzuzufügen.
 
 >[!NOTE]
 >
->Geben Sie Informationen in die **Link-Typ** im Feld **URL-Info** oder die Komponente kann nicht gespeichert werden. Die folgende Fehlermeldung wird angezeigt:
+>Geben Sie auf der Registerkarte **URL-Info** in das Feld **Verknüpfungstyp** Informationen ein, da die Komponente sonst nicht gespeichert werden kann und die folgende Fehlermeldung ausgegeben wird:
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -175,7 +175,7 @@ Ziehen Sie ein Bild aus dem Content Finder oder klicken Sie, um zu einem Bild zu
 Damit können Sie Folgendes festlegen:
 
    * **Titel**
-Der Titel des Blocks, der durch Bewegen der Maus angezeigt wird.
+Der Titel des Blocks, der angezeigt wird, wenn Sie mit der Maus darauf zeigen.
 
    * **ALT-Text**
 Alternativer Text, der angezeigt wird, wenn das Bild nicht dargestellt werden kann.
@@ -277,7 +277,7 @@ In der folgenden Tabelle werden die Komponenten beschrieben, die zum Anzeigen un
 
 ### Für die meisten Komponenten übliche Einstellungen {#settings-common-to-most-components}
 
-Die Adobe Campaign-Komponenten verfügen über Einstellungen, die in allen Komponenten verwendet werden (mit Ausnahme der Komponenten &quot;Verschlüsselter Primärer Schlüssel&quot;und &quot;Ausgeblendeter Abstimmschlüssel&quot;).
+Die Adobe Campaign-Komponenten verfügen über Einstellungen, die von allen Komponenten genutzt werden (mit Ausnahme der Komponenten „Verschlüsselter Primärschlüssel“ und „Ausgeblendeter Abstimmschlüssel“).
 
 In den meisten Komponenten können Sie Folgendes konfigurieren:
 
@@ -327,7 +327,7 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Kontrollkästchen (Campai
 
 ### „Datumsfeld (Campaign)“ und „Datumsfeld/HTML 5 (Campaign)“ {#date-field-campaign-and-date-field-html-campaign}
 
-Verwenden Sie das Datumsfeld, um Empfängern ein Datum zu geben. Beispielsweise können Sie von den Empfängern verlangen, ihr Geburtsdatum anzugeben. Das Datumsformat entspricht dem Format, das in Ihrer Adobe Campaign-Instanz verwendet wird.
+Verwenden Sie das Datumsfeld, um den Empfängerinnen und Empfängern eine Datumseingabe zu ermöglichen. Sie können beispielsweise von ihnen verlangen, ihr Geburtsdatum anzugeben. Das Datumsformat entspricht dem Format, das in Ihrer Adobe Campaign-Instanz verwendet wird.
 
 Neben den [von den meisten Adobe Campaign-Komponenten genutzten Einstellungen](#settings-common-to-most-components) können Sie auch Folgendes konfigurieren:
 
@@ -378,7 +378,7 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Ausgeblendeter Abstimmsch
 
 ### Numerisches Feld (Campaign) {#numeric-field-campaign}
 
-Verwenden Sie das numerische Feld, damit Empfänger Zahlen eingeben können, z. B. ihr Alter.
+Verwenden Sie das numerische Feld, um Empfängerinnen und Empfängern die Eingabe von Zahlen zu ermöglichen, z. B. ihres Alters.
 
 Neben den [von den meisten Adobe Campaign-Komponenten genutzten Einstellungen](#settings-common-to-most-components) können Sie auch Folgendes konfigurieren:
 
