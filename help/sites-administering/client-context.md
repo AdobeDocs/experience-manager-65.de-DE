@@ -115,7 +115,7 @@ Beispiel: die Frage, ob sich die Maus aktuell im linken oder rechten Fensterbere
 
 >[!NOTE]
 >
-Auf DAM-Assets gesetzte Tags, die auf besuchten Seiten angezeigt werden, werden nicht gezählt.
+>Auf DAM-Assets gesetzte Tags, die auf besuchten Seiten angezeigt werden, werden nicht gezählt.
 
 **Technografie-Store**: Diese Komponente hängt von Ihrer Installation ab.
 
@@ -127,7 +127,7 @@ Weitere Informationen finden Sie unter [ClientContext im Detail](/help/sites-dev
 
 >[!NOTE]
 >
-Die Seitendaten sind keine Standardkomponenten in ClientContext mehr. Sie können sie ggf. hinzufügen, indem Sie ClientContext bearbeiten, die Komponente **Generische Store-Eigenschaften** hinzufügen und dann eine entsprechende Konfiguration durchführen, um den **Store** als `pagedata` zu definieren.
+>Die Seitendaten sind keine Standardkomponenten in ClientContext mehr. Sie können sie ggf. hinzufügen, indem Sie ClientContext bearbeiten, die Komponente **Generische Store-Eigenschaften** hinzufügen und dann eine entsprechende Konfiguration durchführen, um den **Store** als `pagedata` zu definieren.
 
 ## Ändern des ClientContext-Profils {#changing-the-client-context-profile}
 
