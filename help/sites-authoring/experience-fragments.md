@@ -3,10 +3,10 @@ title: Experience Fragments
 description: Experience Fragments beim Verfassen mit Adobe Experience Manager Sites
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 5d37e4ec23bbbd838f4787622648aad7e1c1905b
 workflow-type: tm+mt
-source-wordcount: '1468'
-ht-degree: 98%
+source-wordcount: '1489'
+ht-degree: 96%
 
 ---
 
@@ -225,6 +225,10 @@ Je nach Ihren Anforderungen können Sie Varianten eines Experience Fragments ers
 
    * **Variante**
    * **Variante als [Live Copy](/help/sites-administering/msm.md#live-copies)**
+
+     >[!NOTE]
+     >
+     >Beim Erstellen einer anfänglichen Variante als Live Copy wird der Titel durch Verwendung der Live Copy-Quelle als Master-Variante übernommen.
 
 1. Definieren Sie die erforderlichen Eigenschaften:
 
