@@ -3,10 +3,10 @@ title: Versionshinweise für [!DNL Adobe Experience Manager] 6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 7f150219bce3036c0e330b7349e679fdf19797d1
-workflow-type: ht
-source-wordcount: '3688'
-ht-degree: 100%
+source-git-commit: f22f51b4d65abf4cf1f6e04952f873eca5119727
+workflow-type: tm+mt
+source-wordcount: '3735'
+ht-degree: 99%
 
 ---
 
@@ -460,8 +460,9 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
    * Der Hotspot in einem interaktiven Dynamic Media-Bild ist nicht sichtbar, wenn Sie eine Vorschau des Assets mit dem Viewer für Banner mit Shopping-Funktion anzeigen.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]`: Zeitüberschreitung beim Warten darauf, dass die Registrierung geändert wird, um das Aufheben der Registrierung abzuschließen.
 
-* Ab AEM 6.5.15 weist die vom Bundle ```org.apache.servicemix.bundles.rhino``` bereitgestellte Rhino-JavaScript-Engine ein neues Hoisting-Verhalten auf. Skripte, die den strikten Modus (```use strict;```) verwenden, müssen ihre Variablen korrekt deklarieren, sonst werden sie nicht ausgeführt, sondern es wird ein Laufzeitfehler ausgegeben.
+* Ab AEM 6.5.15 weist die vom Bundle ```org.apache.servicemix.bundles.rhino``` bereitgestellte Rhino-JavaScript-Engine ein neues Hoisting-Verhalten auf. Skripte, die den strikten Modus (```use strict;```) verwenden, müssen ihre Variablen korrekt deklarieren, sonst werden sie nicht ausgeführt, sondern geben einen Laufzeitfehler aus.
 
+* Durch die Installation von Tags für verwandte native Inhalte über ein offizielles Aktualisierungspaket (einschließlich Service Packs, Security Service Packs, Extended Feature Packs, Cumulative Feature Packs, Patches usw.) wird die Spracheigenschaft der `/content/cq:tags` -Knoten auf Standard umzustellen. Daher ist es erforderlich, sie vor der Installation aus den Eigenschaften hinzuzufügen.
 
 ### Bekannte Probleme bei AEM Forms {#known-issues-aem-forms-6520}
 

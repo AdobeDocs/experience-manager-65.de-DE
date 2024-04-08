@@ -8,10 +8,10 @@ content-type: reference
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f22f51b4d65abf4cf1f6e04952f873eca5119727
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 100%
+source-wordcount: '868'
+ht-degree: 95%
 
 ---
 
@@ -199,4 +199,4 @@ Die neue Sprache (Finnisch) ist jetzt im Tag-Dialogfeld der Seiteneigenschaften 
 
 >[!CAUTION]
 >
->Durch die Installation des Service Packs wird die Spracheigenschaft des Knotens „/content/cq:tags“ auf den Standardwert zurückgesetzt. Daher ist es erforderlich, sie vor der Installation aus den Eigenschaften hinzuzufügen.
+>Durch die Installation von Tags für verwandte native Inhalte über ein offizielles Aktualisierungspaket (einschließlich Service Packs, Security Service Packs, Extended Feature Packs, Cumulative Feature Packs, Patches usw.) wird die Spracheigenschaft der `/content/cq:tags` -Knoten auf Standard umzustellen. Daher ist es erforderlich, sie vor der Installation aus den Eigenschaften hinzuzufügen.
