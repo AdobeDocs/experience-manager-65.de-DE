@@ -3,10 +3,12 @@ title: Asynchrone Aufträge
 description: Adobe Experience Manager optimiert die Leistung durch asynchrone Ausführung einiger ressourcenintensiver Aufgaben.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '791'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +24,7 @@ Zu diesen Vorgängen gehören:
 * Abrufen von Assets, die über dem festgelegten Schwellenwert liegen, aus einer Remote-AEM-Bereitstellung
 * Ausrollen von Live Copies
 
-Sie können den Status asynchroner Aufträge im **[!UICONTROL Status asynchroner Aufträge]** Dashboard am **Globale Navigation** > **Instrumente** > **Aktivitäten** > **Aufträge**.
+Sie können den Status asynchroner Aufträge über das Dashboard **[!UICONTROL Status asynchroner Aufträge]** unter **Globale Navigation** > **Tools** > **Vorgänge** > **Aufträge** anzeigen.
 
 >[!NOTE]
 >
@@ -56,7 +58,7 @@ Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie z
 
    ![Stoppsymbol](assets/async-stop-icon.png)
 
-1. Um zusätzliche Details anzuzeigen, beispielsweise Beschreibung und Protokolle, wählen Sie den Vorgang aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Öffnen]**.
+1. Um zusätzliche Details anzuzeigen, beispielsweise eine Beschreibung und Protokolle, wählen Sie den Vorgang aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Öffnen]**.
 
    ![Öffnen-Symbol](assets/async-open-icon.png)
 
@@ -89,7 +91,7 @@ Sie können den Zeitplan für den Bereinigungsauftrag bearbeiten. Außerdem kön
 
 ## Konfigurieren der asynchronen Verarbeitung {#configuring-asynchronous-processing}
 
-Sie können den Schwellenwert für Assets, Seiten oder Verweise so konfigurieren, dass AEM einen bestimmten Vorgang asynchron verarbeiten und E-Mail-Benachrichtigungen für den Zeitpunkt der Auftragsverarbeitung umschalten.
+Sie können die Schwellenwerte für Assets, Seiten oder Verweise konfigurieren, damit AEM einen bestimmten Vorgang asynchron verarbeitet, und E-Mail-Benachrichtigungen für den Zeitpunkt der erfolgten Auftragsverarbeitung ein- oder ausschalten.
 
 ### Konfigurieren von asynchronen Vorgängen zum Löschen von Assets {#configuring-synchronous-delete-operations}
 

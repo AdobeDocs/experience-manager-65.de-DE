@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Deploying
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '6185'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -177,13 +179,13 @@ Dabei gilt:
 Der MongoDB-AEM, zu dem AEM eine Verbindung herstellen muss. Verbindungen werden zu allen bekannten Mitgliedern des standardmäßigen Replikatsatzes hergestellt. Wenn MongoDB Cloud Manager verwendet wird, ist die Serversicherheit aktiviert. Daher muss die Verbindungszeichenfolge einen geeigneten Benutzernamen und ein passendes Passwort enthalten. Nicht-Enterprise-Versionen von MongoDB unterstützen nur die Authentifizierung von Benutzernamen und Passwörtern. Weitere Informationen zur Syntax der Verbindungszeichenfolge finden Sie im Abschnitt [Dokumentation](https://docs.mongodb.org/manual/reference/connection-string/).
 
 * `db`
-Der Name der Datenbank. Die Standardeinstellung für AEM ist `aem-author`.
+Der Name der Datenbank. Der Standardwert für AEM lautet `aem-author`.
 
 * `customBlobStore`
-Wenn Binärdateien im Zuge der Bereitstellung in der Datenbank gespeichert werden, werden sie Teil des Workingsets. Aus diesem Grund wird empfohlen, Binärdateien nicht in MongoDB zu speichern, sondern stattdessen einen alternativen Datenspeicher wie einen `FileSystem` Datenspeicher auf einem NAS.
+Wenn Binärdateien im Zuge der Bereitstellung in der Datenbank gespeichert werden, werden sie Teil des Arbeitssatzes. Aus diesem Grund sollten Binärdateien nicht in MongoDB gespeichert werden. Stattdessen werden alternative Datenspeicher wie ein `FileSystem`-Datenspeicher in einem NAS empfohlen.
 
 * `cache`
-Die Cache-Größe in Megabyte. Dieser Bereich ist auf verschiedene Caches verteilt, die im `DocumentNodeStore`. Die Standardgröße ist 256 MB. Die Leistung des Oak-Lesens profitiert jedoch von einem größeren Cache.
+Die Cache-Größe in Megabyte. Dieser Wert ist verteilt über diverse Cache-Speicher im `DocumentNodeStore`. Die Standardgröße ist 256 MB. Die Leistung des Oak-Lesens profitiert jedoch von einem größeren Cache.
 
 * `blobCacheSize`
 Häufig verwendete Blobs können von AEM im Cache gespeichert werden. So wird vermieden, dass sie erneut aus dem Datenspeicher abgerufen werden. Dies wirkt sich stärker auf die Leistung aus, insbesondere beim Speichern von Blobs in der MongoDB-Datenbank. Alle dateisystembasierten Datenspeicher profitieren vom Datenträger-Cache auf Betriebssystemebene.
@@ -206,20 +208,20 @@ cacheSizeInMB=128
 Dabei gilt:
 
 * `minRecordLength`
-Größe in Byte. Binärdateien, die gleich wie oder kleiner als diese Größe sind, werden mit dem Knotenspeicher „Dokument“ gespeichert. Anstatt die Kennung des Blob zu speichern, wird der Inhalt der Binärdatei gespeichert. Bei Binärdateien, die größer als diese Größe sind, wird die ID der Binärdatei als Eigenschaft des Dokuments in der Knotensammlung gespeichert. Und der Hauptteil der Binärdatei wird im `FileDataStore` auf der Festplatte. 4096 Byte entspricht einer typischen Dateisystem-Blockgröße.
+Größe in Byte. Binärdateien, die gleich wie oder kleiner als diese Größe sind, werden mit dem Knotenspeicher „Dokument“ gespeichert. Anstatt die Kennung des Blob zu speichern, wird der Inhalt der Binärdatei gespeichert. Bei Binärdateien, die größer als diese Größe sind, wird die ID der Binärdatei als Eigenschaft des Dokuments in der Knotensammlung gespeichert. Und der Hauptteil der Binärdatei wird im `FileDataStore` auf der Festplatte gespeichert. 4096 Byte entspricht einer typischen Dateisystem-Blockgröße.
 
 * `path`
-Der Pfad zum Stamm des Datenspeichers. Bei einer MongoMK-Bereitstellung muss dieser Pfad ein freigegebenes Dateisystem sein, das für alle AEM-Instanzen verfügbar ist. Normalerweise wird ein NAS-Server (Network Attached Storage) verwendet. Bei Cloud-Implementierungen wie Amazon Web Services wird der `S3DataFileStore` ist auch verfügbar.
+Der Pfad zum Stamm des Datenspeichers. Bei einer MongoMK-Bereitstellung muss dieser Pfad ein freigegebenes Dateisystem sein, das für alle AEM-Instanzen verfügbar ist. Normalerweise wird ein NAS-Server (Network Attached Storage) verwendet. Für Cloudbereitstellungen wie Amazon Web Services steht zudem der `S3DataFileStore` zur Verfügung.
 
 * `cacheSizeInMB`
-Die Gesamtgröße des Binärdatencache in Megabyte. Sie wird verwendet, um Binärdateien zwischenzuspeichern, die kleiner sind als die `maxCacheBinarySize` -Einstellung.
+Die Gesamtgröße des Binärdatencache in Megabyte. Damit werden Binärdateien im Cache gespeichert, deren Wert unterhalb der Einstellung `maxCacheBinarySize` liegt.
 
 * `maxCachedBinarySize`
 Die maximale Größe in Byte der im Binärdatencache gespeicherten Binärdatei. Wenn ein dateisystembasierter Datenspeicher verwendet wird, wird die Verwendung hoher Werte für den Datenspeicher-Cache nicht empfohlen, da die Binärdateien bereits vom Betriebssystem zwischengespeichert werden.
 
 #### Deaktivieren des Abfragehinweises {#disabling-the-query-hint}
 
-Es wird empfohlen, den mit allen Abfragen gesendeten Abfragehinweis zu deaktivieren, indem Sie die -Eigenschaft hinzufügen `-Doak.mongo.disableIndexHint=true` wenn Sie AEM beginnen. Dadurch wird sichergestellt, dass MongoDB anhand interner Statistiken den am besten geeigneten Index berechnet.
+Es wird empfohlen, den mit allen Abfragen gesendeten Abfragehinweis zu deaktivieren, indem Sie die Eigenschaft `-Doak.mongo.disableIndexHint=true` beim Starten von AEM hinzufügen. Dadurch wird sichergestellt, dass MongoDB anhand interner Statistiken den am besten geeigneten Index berechnet.
 
 Wenn der Abfragehinweis nicht deaktiviert ist, hat eine Leistungsoptimierung von Indizes keine Auswirkungen auf die Leistung von AEM.
 
@@ -356,7 +358,7 @@ Informationen zum Anpassen der Größe des internen WiredTiger-Cache finden Sie 
 
 NUMA (Non-Uniform Memory Access) ermöglicht es einem Kernel zu verwalten, wie Speicher den Prozessorkernen zugeordnet wird. Obwohl dieser Prozess versucht, den Speicherzugriff für die Kerne zu beschleunigen, um sicherzustellen, dass sie auf die benötigten Daten zugreifen können, beeinträchtigt NUMA MMAP und führt zusätzliche Latenzzeiten ein, da Lesevorgänge nicht vorhergesagt werden können. Daher muss NUMA für den `mongod`-Prozess auf allen fähigen Betriebssystemen deaktiviert werden.
 
-Im Wesentlichen ist in einer NUMA-Architektur der Speicher mit den CPUs verbunden und die CPUs sind mit einem Bus verbunden. In einer SMP- oder UMA-Architektur ist der Speicher mit dem Bus verbunden und wird von den CPUs gemeinsam genutzt. Wenn ein Thread Speicher auf einer NUMA-CPU zuweist, wird er gemäß einer Richtlinie zugewiesen. Standardmäßig wird Speicher zugeordnet, der an die lokale CPU des Threads angebunden ist, es sei denn, es ist keine freie vorhanden. In einem solchen Fall wird dann Speicher von einer freien CPU verwendet, allerdings mit höherem Aufwand. Nach der Zuordnung bewegt sich der Speicher nicht zwischen den CPUs. Die Zuordnung erfolgt anhand einer Richtlinie, die vom übergeordneten Thread vererbt wird. Letztendlich ist dies der Thread, über den der Prozess gestartet wurde.
+Im Wesentlichen ist in einer NUMA-Architektur der Speicher mit den CPUs verbunden und die CPUs sind mit einem Bus verbunden. In einer SMP- oder UMA-Architektur ist der Speicher mit dem Bus verbunden und wird von den CPUs gemeinsam genutzt. Wenn ein Thread Speicher auf einer NUMA-CPU zuweist, wird er gemäß einer Richtlinie zugewiesen. Standardmäßig wird Speicher zugeordnet, der an die lokale CPU des Threads angebunden ist, es sei denn, es ist keine freie vorhanden. In einem solchen Fall wird dann Speicher von einer freien CPU verwendet, allerdings mit höherem Aufwand. Nach der Zuweisung wechselt der Speicher nicht mehr zwischen den CPUs. Die Zuordnung erfolgt anhand einer Richtlinie, die vom übergeordneten Thread vererbt wird. Letztendlich ist dies der Thread, über den der Prozess gestartet wurde.
 
 In vielen Datenbanken, die den Computer als eine mehrfache, einheitliche Speicherarchitektur betrachten, führt dieses Szenario dazu, dass die anfängliche CPU zuerst voll wird und die sekundäre CPU erst später gefüllt wird. Dies gilt insbesondere dann, wenn ein zentraler Thread für die Zuordnung von Speicherpuffern verantwortlich ist. Zur Lösung muss mithilfe des folgenden Befehls die NUMA-Richtlinie des Haupt-Threads geändert werden, mit dem der `mongod`-Prozess gestartet wird:
 

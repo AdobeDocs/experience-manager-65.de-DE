@@ -7,7 +7,9 @@ content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '4520'
 ht-degree: 98%
@@ -141,7 +143,7 @@ Folgende Werte werden empfohlen:
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
 
-In AEM 6.3 sind die beiden oben genannten Parameter standardmäßig vorkonfiguriert und können über die OSGi QueryEngineSettings beibehalten werden.
+In AEM 6.3 sind die beiden oben genannten Parameter vorkonfiguriert und können über die OSGi QueryEngineSettings beibehalten werden.
 
 Weitere Informationen finden Sie unter: [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
@@ -404,7 +406,7 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
 
 ### Textvorextraktion von Binärdateien {#text-pre-extraction-of-binaries}
 
-Bei der Textvorextraktion wird Text aus Binärdateien extrahiert und verarbeitet, direkt aus dem Datenspeicher über einen isolierten Prozess, und der extrahierte Text wird dann direkt zu nachfolgenden Neuindizierungen von Oak-Indizes weitergeleitet.
+Textvorextraktion ist der Prozess der Extrahierung und Verarbeitung von Text aus Binärdateien direkt aus dem Datenspeicher über einen isolierten Prozess und der direkten Offenlegung des extrahierten Textes für nachfolgende Neuindizierungen von Oak-Indizes.
 
 * Die Oak-Textvorextraktion wird für die Neuindizierung/Indizierung von Lucene-Indizes in Repositorys mit großen Dateimengen (Binärdateien) empfohlen, die extrahierbaren Text enthalten (z. B. PDF, Word Docs, PPTs und TXT), der für die Volltextsuche über bereitgestellte Oak-Indizes qualifiziert ist. Beispiel: `/oak:index/damAssetLucene`.
 * Von einer Textvorextraktion profitiert lediglich die Neuindizierung/Indizierung von Lucene-Indizes, aber NICHT von Oak-Eigenschaftenindizes, da Eigenschaftenindizes keinen Text aus Binärdateien extrahieren.

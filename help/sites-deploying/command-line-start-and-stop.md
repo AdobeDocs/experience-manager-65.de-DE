@@ -7,7 +7,9 @@ content-type: reference
 topic-tags: deploying
 exl-id: 21041b55-240c-487d-9d79-c54c877f4e1e
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 39%
@@ -18,7 +20,7 @@ ht-degree: 39%
 
 ## Starten von Adobe Experience Manager über die Befehlszeile {#starting-adobe-experience-manager-from-the-command-line}
 
-Das Skript `start` befindet sich im Verzeichnis *&lt;cq-installation>/bin*. Sowohl UNIX®- als auch Windows-Versionen werden bereitgestellt. Das Skript startet die in *&lt;cq-installation>* Verzeichnis.
+Das Skript `start` befindet sich im Verzeichnis *&lt;cq-installation>/bin*. Es werden sowohl UNIX®- als auch Windows-Versionen bereitgestellt. Das Skript startet die in installierte Instanz *&lt;cq-installation>* Verzeichnis.
 
 Diese beiden Versionen unterstützen eine Liste von Umgebungsvariablen, die zum Starten und Optimieren der Adobe Experience Manager (AEM)-Instanz verwendet werden können.
 
@@ -65,15 +67,15 @@ Diese beiden Versionen unterstützen eine Liste von Umgebungsvariablen, die zum 
 
 >[!CAUTION]
 >
->Einige Ausführungsmodi, darunter Autoren- und Veröffentlichungsmodus, müssen vor dem ersten Start der AEM festgelegt werden und können danach nicht mehr geändert werden. Bevor Sie eine in der Produktion verwendete AEM einrichten, lesen Sie [Dokumentation zu Ausführungsmodi](/help/sites-deploying/configure-runmodes.md) für Details.
+>Einige Ausführungsmodi, darunter Autor und Veröffentlichung, müssen vor dem ersten Starten von AEM festgelegt werden und können danach nicht mehr geändert werden. Bevor Sie eine AEM-Instanz einrichten, die in der Produktion verwendet wird, lesen Sie Folgendes [Dokumentation zu Ausführungsmodi](/help/sites-deploying/configure-runmodes.md) für Details.
 
-### Skriptbeispiel für Windows-Plattform start.bat {#windows-platform-start-bat-script-example}
+### Beispiel für ein Windows-Plattformstart.bat-Skript {#windows-platform-start-bat-script-example}
 
 ```shell
 SET CQ_PORT=1234 & ./start.bat
 ```
 
-### Beispiel für ein Startskript der UNIX®-Plattform {#unix-platform-start-script-example}
+### Beispiel für ein UNIX®-Startskript {#unix-platform-start-script-example}
 
 ```shell
 CQ_PORT=1234 ./start
@@ -83,38 +85,38 @@ CQ_PORT=1234 ./start
 >
 >Über das Skript „start“ wird der im Ordner *the &lt;cq-installation>/app* installierte AEM-Schnellstart gestartet.
 
-## Beenden von Adobe Experience Manager {#stopping-adobe-experience-manager}
+## Adobe Experience Manager stoppen {#stopping-adobe-experience-manager}
 
-Um AEM zu beenden, führen Sie einen der folgenden Schritte aus:
+Führen Sie einen der folgenden Schritte aus, um AEM zu stoppen:
 
-* Abhängig von der verwendeten Plattform:
+* Je nach verwendeter Plattform:
 
    * Drücken Sie **Strg + C**, um den Server herunterzufahren, wenn Sie AEM über ein Skript oder die Befehlszeile gestartet haben.
-   * Wenn Sie das Startskript unter UNIX® verwendet haben, müssen Sie das Stopp-Skript verwenden, um AEM anzuhalten.
+   * Wenn Sie das Startskript unter UNIX® verwendet haben, müssen Sie das Stopp-Skript verwenden, um AEM zu stoppen.
 
-* Wenn Sie AEM durch Doppelklicken auf die JAR-Datei gestartet haben, klicken Sie auf die **on** Schaltfläche im Startfenster (die Schaltfläche ändert sich in **Aus**), um den Server herunterzufahren.
+* Wenn Sie AEM durch Doppelklicken auf die JAR-Datei gestartet haben, klicken Sie auf die Schaltfläche **am** auf dem Startfenster (die Schaltfläche ändert sich dann in **AUS**), um den Server herunterzufahren.
 
   ![chlimage_1-63](assets/chlimage_1-63.png)
 
 ## Adobe Experience Manager über die Befehlszeile anhalten {#stopping-adobe-experience-manager-from-the-command-line}
 
-Das Skript `stop` befindet sich im Verzeichnis *&lt;cq-installation>/bin*. Sowohl UNIX®- als auch Windows-Versionen werden bereitgestellt. Das Skript hält die im Verzeichnis *&lt;cq-installation>* installierte aktive Instanz an.
+Das Skript `stop` befindet sich im Verzeichnis *&lt;cq-installation>/bin*. Es werden sowohl UNIX®- als auch Windows-Versionen bereitgestellt. Das Skript hält die im Verzeichnis *&lt;cq-installation>* installierte aktive Instanz an.
 
-### Beispiel eines Stoppskripts für die UNIX®-Plattform {#unix-platform-stop-script-example}
+### Beispiel für ein UNIX®-Plattformstoppskript {#unix-platform-stop-script-example}
 
 ```shell
 ./stop
 ```
 
-### Skriptbeispiel für das Windows-Plattform-stop.bat {#windows-platform-stop-bat-script-example}
+### Windows-Plattform, Skriptbeispiel für stop.bat {#windows-platform-stop-bat-script-example}
 
 ```shell
 ./stop.bat
 ```
 
-Wenn Sie das Repository nur vorkonfigurieren möchten (ohne es neu zu lokalisieren), müssen Sie nur:
+Wenn Sie nur das Repository vorkonfigurieren möchten (ohne es zu verschieben), müssen Sie nur:
 
-* Extract `repository.xml` an den gewünschten Ort
+* Extrahieren `repository.xml` An den erforderlichen Speicherort
 
 * `repository.xml` nach Bedarf aktualisieren
 

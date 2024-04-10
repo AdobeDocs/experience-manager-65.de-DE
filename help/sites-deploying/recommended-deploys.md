@@ -8,10 +8,12 @@ topic-tags: deploying
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Deploying
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '1758'
-ht-degree: 52%
+ht-degree: 98%
 
 ---
 
@@ -23,15 +25,15 @@ ht-degree: 52%
 
 Ab AEM 6.2 fungieren Mikrokernel als Persistenz-Manager. Die Auswahl des geeigneten Mikrokernels für Ihre Anforderungen hängt vom Zweck der Instanz und von dem von Ihnen in Betracht gezogenen Bereitstellungstyp ab.
 
-Die folgenden Beispiele geben an, welche Verwendungszwecke sie in den gängigsten AEM verwenden.
+Die nachfolgenden Beispiele sollen ihre empfohlene Verwendung in den gängigsten AEM-Konfigurationen veranschaulichen.
 
 ## Bereitstellungsszenarien {#deployment-scenarios}
 
 ### Einzelne TarMK-Instanz {#single-tarmk-instance}
 
-In diesem Szenario wird eine einzelne TarMK-Instanz auf einem einzelnen Server ausgeführt.
+In diesem Szenario wird eine einzige TarMK-Instanz auf einem einzigen Server ausgeführt.
 
-**Dies ist die Standardbereitstellung für Autoreninstanzen.**
+**Dies ist das Standard-Bereitstellungsszenario für Autoreninstanzen.**
 
 ![chlimage_1-15](assets/chlimage_1-15.png)
 
@@ -43,14 +45,14 @@ Die Vorteile:
 
 Die Nachteile:
 
-* Nicht skalierbar über die Grenzen der Server-Kapazität
+* Nicht über die Grenzen der Server-Kapazität hinaus skalierbar
 * Keine Failover-Kapazität
 
-### TarMK Cold Standby {#tarmk-cold-standby}
+### TarMK-Cold-Standby {#tarmk-cold-standby}
 
-Eine TarMK-Instanz fungiert als primäre Instanz. Das Repository von der primären Instanz wird in ein Standby-Failover-System repliziert.
+Eine TarMK-Instanz fungiert als primäre Instanz. Das Repository der primären Instanz wird auf einem Standby-Failover-System repliziert.
 
-Der Cold-Standby-Mechanismus kann auch als Sicherungsmechanismus verwendet werden, da das gesamte Repository ständig auf dem Failover-Server repliziert wird. Der Failover-Server wird im Cold-Standby-Modus ausgeführt, was bedeutet, dass nur der HttpReceiver der Instanz ausgeführt wird.
+Der Cold-Standby-Mechanismus kann auch als Sicherungsmechanismus verwendet werden, da das gesamte Repository ständig auf dem Failover-Server repliziert wird. Der Failover-Server wird im Cold-Standby-Modus ausgeführt. Das bedeutet, dass nur der HttpReceiver der Instanz ausgeführt wird.
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
@@ -63,9 +65,9 @@ Die Vorteile:
 
 Die Nachteile:
 
-* Nicht skalierbar über die Grenzen der Server-Kapazität
-* Ein Server ist meistens inaktiv
-* Kein automatisches Failover. Sie muss extern erkannt werden, bevor das Failover-System mit der Verarbeitung von Anforderungen beginnen kann.
+* Nicht über die Grenzen der Server-Kapazität hinaus skalierbar
+* Ein Server ist die meiste Zeit im Leerlauf
+* Kein automatisches Failover. Eine externe Erkennung ist erforderlich, bevor das Failover-System Anfragen verarbeiten kann.
 
 >[!NOTE]
 >
@@ -73,11 +75,11 @@ Die Nachteile:
 
 >[!NOTE]
 >
->Für die Cold-Standby-Bereitstellung in diesem TarMK-Beispiel müssen die primäre und die Standby-Instanz separat lizenziert werden, da eine konstante Replikation auf dem Failover-Server stattfindet. Weitere Informationen zur Lizenzierung finden Sie im [Adobe Allgemeine Lizenzbedingungen](https://www.adobe.com/de/legal/terms/enterprise-licensing.html).
+>Für die Cold-Standby-Bereitstellung in diesem TarMK-Beispiel müssen die primäre und die Standby-Instanz separat lizenziert werden, da eine konstante Replikation auf dem Failover-Server stattfindet. Weitere Informationen zur Lizenzierung finden Sie in den [allgemeinen Lizenzbedingungen von Adobe](https://www.adobe.com/de/legal/terms/enterprise-licensing.html).
 
 ### TarMK-Farm {#tarmk-farm}
 
-Mehrere Oak-Instanzen werden jeweils mit einer TarMK-Instanz ausgeführt. Die TarMK-Repositorys sind unabhängig und müssen synchronisiert werden.
+Mehrere Oak-Instanzen werden jeweils mit einer TarMK-Instanz ausgeführt. Die TarMK-Repositorys sind unabhängig voneinander und müssen synchron gehalten werden.
 
 Die Synchronisierung der Repositorys wird dadurch erreicht, dass der Autorenserver dieselben Inhalte auf allen Mitgliedern der Farm veröffentlicht. Weitere Informationen finden Sie unter [Replikation](/help/sites-deploying/replication.md).
 
@@ -90,23 +92,23 @@ Für AEM Communities werden benutzergenerierte Inhalte nie repliziert. Weitere I
 Die Vorteile:
 
 * Leistung
-* Skalierbarkeit des Lesezugriffs
+* Skalierbarkeit für Lesezugriff
 * Failover
 
 ### Oak-Cluster mit MongoMK-Failover für hohe Verfügbarkeit in einem einzigen Rechenzentrum {#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter}
 
-Dieser Ansatz bedeutet, dass mehrere Oak-Instanzen auf ein MongoDB-Replikat in einem einzigen Rechenzentrum zugreifen und so einen aktiv-aktiven Cluster für die AEM-Autorenumgebung erstellen. Replikat-Sets in MongoDB werden verwendet, um im Falle eines Hardware- oder Netzwerkfehlers hohe Verfügbarkeit und Redundanz zu gewährleisten.
+Dieser Ansatz bedeutet, dass mehrere Oak-Instanzen auf ein MongoDB-Replikat in einem einzigen Rechenzentrum zugreifen und so einen aktiv-aktiven Cluster für die AEM-Autorenumgebung erstellen. Replikat-Sets in MongoDB werden verwendet, um eine hohe Verfügbarkeit und Redundanz im Falle eines Hardware- oder Netzwerkausfalls zu gewährleisten.
 
 ![chlimage_1-18](assets/chlimage_1-18.png)
 
 Die Vorteile:
 
-* Möglichkeit zur horizontalen Skalierung mit neuen AEM Autoreninstanzen
+* Möglichkeit zur horizontalen Skalierung mit neuen AEM-Autoreninstanzen
 * Hohe Verfügbarkeit, Redundanz und automatisiertes Failover der Datenschicht
 
 Die Nachteile:
 
-* In einigen Szenarien kann die Leistung geringer sein als bei TarMK
+* In einigen Szenarien kann die Leistung geringer sein als bei TarMK.
 
 ### Oak-Cluster mit MongoMK-Failover über mehrere Rechenzentren hinweg {#oak-cluster-with-mongomk-failover-across-multiple-datacenters}
 
@@ -116,8 +118,8 @@ Dieser Ansatz bedeutet, dass mehrere Oak-Instanzen auf ein MongoDB-Replikat in m
 
 Die Vorteile:
 
-* Möglichkeit zur horizontalen Skalierung mit neuen AEM Autoreninstanzen
-* Hohe Verfügbarkeit, Redundanz und automatisiertes Failover der Datenschicht (einschließlich Ausfall des Rechenzentrums)
+* Möglichkeit zur horizontalen Skalierung mit neuen AEM-Autoreninstanzen
+* Hohe Verfügbarkeit, Redundanz und automatisiertes Failover der Datenschicht (einschließlich Rechenzentrumsausfällen)
 
 >[!NOTE]
 >
@@ -127,19 +129,19 @@ Die Vorteile:
 >
 >Weitere Informationen zu den in diesem Abschnitt beschriebenen MongoDB-Architekturkonzepten finden Sie unter [MongoDB-Replikation](https://docs.mongodb.org/manual/replication/).
 
-## Microkernels: welche verwendet werden soll {#microkernels-which-one-to-use}
+## Mikro-Kernel: Welcher soll verwendet werden? {#microkernels-which-one-to-use}
 
-Die grundlegende Regel, die bei der Auswahl zwischen den beiden verfügbaren Mikrokernels berücksichtigt werden muss, besteht darin, dass TarMK für die Leistung entwickelt wurde, während MongoMK für die Skalierbarkeit verwendet wird.
+Bei der Wahl zwischen den beiden verfügbaren Mikro-Kerneln muss eine Grundregel berücksichtigt werden: TarMK ist für Leistung konzipiert, während MongoMK für Skalierbarkeit eingesetzt wird.
 
-Mit diesen Entscheidungsmatrizen können Sie festlegen, welche Art von Bereitstellung für Ihre Anforderungen am besten geeignet ist.
+Anhand dieser Entscheidungsmatrizen können Sie ermitteln, welche Bereitstellungsart für Ihre Anforderungen am besten geeignet ist.
 
-Adobe empfiehlt dringend, TarMK als standardmäßige Persistenztechnologie zu verwenden, die von Kunden in allen Bereitstellungsszenarien verwendet wird, sowohl für die AEM- als auch für die Veröffentlichungsinstanz, mit Ausnahme der unten beschriebenen Anwendungsfälle.
+Adobe empfiehlt Kundinnen und Kunden dringend, TarMK als Standard-Persistenztechnologie in allen Bereitstellungsszenarien zu verwenden, sowohl für die Autoren- als auch die Veröffentlichungsinstanz von AEM. Davon ausgenommen sind die unten aufgeführten Anwendungsfälle.
 
-### Ausnahmen für die Auswahl AEM MongoMK gegenüber TarMK in Autoreninstanzen {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-author-instances}
+### Ausnahmen für die Auswahl von AEM MongoMK gegenüber TarMK auf Autoreninstanzen {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-author-instances}
 
-Der Hauptgrund dafür, warum anstatt des TarMK der MongoMK als Persistenz-Backend ausgewählt werden sollte, liegt in der horizontalen Skalierung der Instanzen. Das bedeutet, dass immer mindestens zwei aktive Autoreninstanzen ausgeführt werden und MongoDB als Persistenzspeichersystem verwendet wird. Die Notwendigkeit, mehr als eine Authoring-Instanz auszuführen, resultiert im Allgemeinen aus der Tatsache, dass die CPU- und Speicherkapazität eines einzelnen Servers, der alle gleichzeitigen Authoring-Aktivitäten unterstützt, nicht mehr ausreicht.
+Der Hauptgrund dafür, warum anstatt des TarMK der MongoMK als Persistenz-Backend ausgewählt werden sollte, liegt in der horizontalen Skalierung der Instanzen. Das bedeutet, dass immer mindestens zwei aktive Autoreninstanzen ausgeführt werden und MongoDB als Persistenzspeichersystem verwendet wird. Die Notwendigkeit, mehr als eine Autoreninstanz auszuführen, resultiert im Allgemeinen aus der Tatsache, dass die CPU- und Speicherkapazität eines einzelnen Servers, der alle gleichzeitigen Authoring-Aktivitäten unterstützt, nicht mehr ausreicht.
 
-Es ist quasi unmöglich, vorherzusagen, wie das genau Parallelitätsmodell nach der Live-Schaltung einer neuen Site aussehen wird. Daher empfiehlt Adobe, bei der Beurteilung, ob MongoMK und zwei oder mehr aktive Autorenknoten verwendet werden sollen, die folgenden Kriterien zu beachten:
+Es ist quasi unmöglich, vorherzusagen, wie das genau Parallelitätsmodell nach der Live-Schaltung einer neuen Site aussehen wird. Daher empfiehlt Adobe, bei der Bewertung, ob MongoMK und zwei oder mehr aktive Autorenknoten verwendet werden sollen, die folgenden Kriterien zu berücksichtigen:
 
 1. Anzahl der benannten, verbundenen Benutzer an einem Tag: Tausende oder mehr.
 1. Anzahl der gleichzeitigen Benutzer: Hunderte oder mehr.
@@ -149,22 +151,22 @@ Es ist quasi unmöglich, vorherzusagen, wie das genau Parallelitätsmodell nach 
 
 >[!NOTE]
 >
->Tough Day kann verwendet werden, um die Leistung der Anwendung des Kunden im Kontext der bereitgestellten Hardwarekonfiguration zu bewerten. Weitere Informationen zu diesem Tool finden Sie unter [here](/help/sites-developing/tough-day.md).
+>Mithilfe von Tough Day kann die Leistung der Kundenanwendung im Kontext der bereitgestellten Hardware-Konfiguration bewertet werden. Weitere Informationen zu diesem Tool sind [hier](/help/sites-developing/tough-day.md) verfügbar.
 
-Eine minimale Bereitstellung mit MongoDB umfasst normalerweise die folgende Topologie:
+Eine Mindestbereitstellung mit MongoDB umfasst normalerweise die folgende Topologie:
 
 * Eine MongoDB-Replikatgruppe mit einem primären und zwei sekundären Knoten, wobei alle MongoDB-Instanzen in einer Verfügbarkeitszone mit einer Latenz von unter 15 Millisekunden für jeden Knoten ausgeführt werden.
-* Ein Cluster von Autoreninstanzen mit einem Leader-Knoten, einem Nicht-Leader-Knoten und beiden gleichzeitig aktiven Instanzen, wobei jede Autoreninstanz in jedem Rechenzentrum ausgeführt wird, in dem die primären und sekundären MongoDB-Instanzen ausgeführt werden.
+* Ein Cluster von Autoreninstanzen mit einem Leader-Knoten, einem Nicht-Leader-Knoten und beiden, die jederzeit aktiv sind, wobei jede der Autoreninstanzen in jedem der Datenzentren ausgeführt wird, in denen die primären und sekundären MongoDB-Instanzen ausgeführt werden.
 
-Darüber hinaus wird dringend empfohlen, den Datenspeicher auf einem freigegebenen Dateisystem oder Amazon S3 so zu konfigurieren, dass die Assets oder Binärdateien nicht in MongoDB gespeichert werden. Dadurch wird eine optimale Leistung innerhalb der Implementierung sichergestellt.
+Darüber hinaus wird dringend empfohlen, den Datenspeicher auf einem freigegebenen Dateisystem oder Amazon S3 so zu konfigurieren, dass die Assets oder Binärdateien nicht in MongoDB gespeichert werden. Dadurch wird eine optimale Leistung innerhalb der Bereitstellung sichergestellt.
 
-Einer der zusätzlichen Vorteile der Bereitstellung eines MongoDB-Replikatsatzes mit einem Cluster von zwei oder mehr Autoreninstanzen besteht darin, dass ein automatisiertes Wiederherstellungsszenario mit minimalen Ausfallzeiten vorliegt, wenn Autoreninstanzen, MongoDB-Replikate oder ein kompletter Rechenzentrumsfehler vorliegen. Dennoch sollte die Wahl von MongoMK gegenüber TarMK nicht allein von der Wiederherstellungsanforderung bestimmt werden, da TarMK auch eine minimale Ausfallzeitlösung mit einem kontrollierten Failover-Mechanismus bereitstellen kann.
+Ein weiterer Vorteil, der sich durch die Bereitstellung einer MongoDB-Replikatgruppe mit einem Cluster von zwei oder mehr Autoreninstanzen ergibt, ist das automatisierte Wiederherstellungsszenario mit minimalen Ausfallzeiten bei einem Ausfall der Autoreninstanzen, der MongoDB-Replikatgruppe oder des gesamten Rechenzentrums. Dennoch sollte die Wahl von MongoMK gegenüber TarMK nicht ausschließlich von der Wiederherstellungsanforderung bestimmt werden, da TarMK ebenfalls eine Lösung mit minimalen Ausfallzeiten und einem kontrollierten Failover-Mechanismus bieten kann.
 
-Wenn die oben genannten Kriterien in den ersten 18 Monaten der Bereitstellung nicht erfüllt sein sollen, wird empfohlen, zunächst AEM mit TarMK bereitzustellen, dann Ihre Konfiguration später bei Anwendung der oben genannten Kriterien neu zu bewerten und schließlich zu bestimmen, ob auf TarMK verbleiben oder zu MongoMK migriert werden soll.
+Wenn erwartet wird, dass die oben genannten Kriterien innerhalb der ersten 18 Monate nach der Bereitstellung nicht erfüllt werden, wird Folgendes empfohlen: Stellen Sie AEM zunächst mit TarMK bereit, bewerten Sie Ihre Konfiguration zu einem späteren Zeitpunkt erneut, wenn die oben genannten Kriterien zutreffen, und entscheiden Sie dann, ob Sie bei TarMK bleiben oder zu MongoMK migrieren möchten.
 
-### Ausnahmen für die Auswahl AEM MongoMK gegenüber TarMK auf Veröffentlichungsinstanzen {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-publish-instances}
+### Ausnahmen für die Auswahl von AEM MongoMK gegenüber TarMK bei Veröffentlichungsinstanzen {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-publish-instances}
 
-Die Bereitstellung von MongoMK für Veröffentlichungsinstanzen wird nicht empfohlen. Die Veröffentlichungsschicht der Bereitstellung wird fast immer als Farm mit unabhängigen Veröffentlichungsinstanzen bereitgestellt, auf denen TarMK ausgeführt wird und die durch das Replizieren von Inhalten von den Autoreninstanzen synchronisiert werden. Diese für Veröffentlichnungsinstanzen geeignete Shared-Nothing-Architektur ermöglicht die horizontale, lineare Skalierung der bereitgestellten Veröffentlichungsschicht. Die Farm-Topologie bietet auch den Vorteil, dass Aktualisierungen oder Aktualisierungen rollierend auf Veröffentlichungsinstanzen angewendet werden, sodass Änderungen an der Veröffentlichungsstufe keine Ausfallzeiten erfordern.
+Die Bereitstellung von MongoMK für Veröffentlichungsinstanzen wird nicht empfohlen. Die Veröffentlichungsschicht der Bereitstellung wird fast immer als Farm mit unabhängigen Veröffentlichungsinstanzen bereitgestellt, auf denen TarMK ausgeführt wird und die durch das Replizieren von Inhalten von den Autoreninstanzen synchronisiert werden. Diese für Veröffentlichnungsinstanzen geeignete Shared-Nothing-Architektur ermöglicht die horizontale, lineare Skalierung der bereitgestellten Veröffentlichungsschicht. Die Farm-Topologie bietet außerdem den Vorteil, dass Aktualisierungen oder Upgrades fortlaufend auf Veröffentlichungsinstanzen angewendet werden können, sodass bei Änderungen an der Veröffentlichungsebene keine Ausfallzeiten erforderlich sind.
 
 Dies gilt nicht für AEM Communities, das MongoMK-Cluster auf der Veröffentlichungsschicht verwendet, wenn mehr als ein Publisher vorhanden ist. Bei Auswahl von JSRP (siehe [Community-Inhaltsspeicher](/help/communities/working-with-srp.md)) ist ein MongoMK-Cluster angebracht, ebenso wie jedes Cluster auf Veröffentlichungsseite, unabhängig vom ausgewählten Mikrokernel (z. B. MongoDB oder RDB).
 
@@ -174,11 +176,11 @@ Falls Sie eine MongoMK-Bereitstellung für AEM in Betracht ziehen, liegt eine Re
 
 **Obligatorische Voraussetzungen für MongoDB-Bereitstellungen:**
 
-1. Die MongoDB-Bereitstellungsarchitektur und -dimensionierung muss mithilfe von Adobe Consulting oder MongoDB-Architekten, die mit AEM vertraut sind, Teil der Projektimplementierung sein.
-1. MongoDB-Expertise muss im Partner- oder Kundenteam vorhanden sein, um darauf vertrauen zu können, dass eine vorhandene oder neue MongoDB-Umgebung erhalten und gepflegt werden kann.
-1. Sie können die kommerzielle oder Open-Source-Version von MongoDB bereitstellen (AEM unterstützt beide), müssen jedoch einen MongoDB-Wartungs- und Supportvertrag direkt bei MongoDB Inc erwerben.
-1. AEM- und MongoDB-Architekturen und -Infrastrukturen sollten von einem Adobe-AEM-Architekten klar definiert und validiert werden.
-1. Überprüfen Sie das Supportmodell für AEM Bereitstellungen, die MongoDB enthalten.
+1. Die Bereitstellungsarchitektur und -dimensionierung von MongoDB muss Teil der Projektimplementierung sein und mithilfe von Adobe Consulting oder MongoDB-Architekten erfolgen, die mit AEM vertraut sind.
+1. Das Partner- oder Kunden-Team muss über MongoDB-Fachwissen verfügen, um die Aufrechterhaltung und Wartung einer bestehenden oder neuen MongoDB-Umgebung sicher gewährleisten zu können.
+1. Sie können sich für die Bereitstellung der kommerziellen oder Open-Source-Version von MongoDB entscheiden (AEM unterstützt beide), müssen jedoch einen Wartungs- und Supportvertrag für MongoDB direkt von MongoDB Inc. erwerben.
+1. AEM- und MongoDB-Architekturen und -Infrastrukturen sollten insgesamt von einer Adobe AEM-Fachkraft klar definiert und validiert werden;
+1. Prüfen Sie das Supportmodell für AEM-Bereitstellungen, die MongoDB umfassen.
 
 **Dringende Empfehlungen für MongoDB-Bereitstellungen:**
 
@@ -188,13 +190,13 @@ Falls Sie eine MongoMK-Bereitstellung für AEM in Betracht ziehen, liegt eine Re
 
 >[!NOTE]
 >
->Bei allen weiteren Fragen zu diesen Richtlinien, Voraussetzungen und Empfehlungen wenden Sie sich an [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
+>Bei allen weiteren Fragen zu diesen Richtlinien, Voraussetzungen und Empfehlungen wenden Sie sich bitte an die [ Adobe-Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
 
 ### Überlegungen zu AEM Communities {#considerations-for-aem-communities}
 
-Für Sites, die bereitstellen möchten [AEM Communities](/help/communities/overview.md)wird empfohlen, [Bereitstellung auswählen](/help/communities/working-with-srp.md#characteristicsofstorageoptions) optimiert für die Verarbeitung von benutzergenerierten Inhalten, die von Community-Mitgliedern aus der Veröffentlichungsumgebung veröffentlicht werden.
+Für Sites, die eine Bereitstellung von [ AEM-Communities](/help/communities/overview.md) planen, wird empfohlen, [ eine Bereitstellung auszuwählen](/help/communities/working-with-srp.md#characteristicsofstorageoptions), die für den Umgang mit UGC optimiert ist, der von Community-Mitgliedern aus der Veröffentlichungsumgebung gepostet wird.
 
-Durch Verwendung von [gemeinsamer Speicher](/help/communities/working-with-srp.md), muss UGC nicht zwischen Autoren- und anderen Veröffentlichungsinstanzen repliziert werden, um eine konsistente Ansicht der benutzergenerierten Inhalte zu erhalten.
+Durch die Verwendung eines [ gemeinsamen Speichers](/help/communities/working-with-srp.md) muss UGC nicht zwischen Autoren- und anderen Veröffentlichungsinstanzen repliziert werden, um eine konsistente Ansicht des UGC zu erhalten.
 
 Mit den nachfolgenden Entscheidungshilfen können Sie den optimalen Persistenztyp für Ihre Bereitstellung auswählen:
 
@@ -214,6 +216,6 @@ Mit den nachfolgenden Entscheidungshilfen können Sie den optimalen Persistenzty
 >
 >Die Lizenz umfasst eine standardmäßige Replikatgruppe. Diese besteht aus einer primären und zwei sekundären Instanzen, die für die Autoren- oder Veröffentlichungsbereitstellungen verwendet werden können.
 >
->Wenn Sie sowohl Autor als auch Veröffentlichung auf MongoDB ausführen möchten, müssen zwei separate Lizenzen erworben werden.
+>Falls Sie sowohl Author als auch Publish auf MongoDB ausführen möchten, müssen zwei separate Lizenzen erworben werden.
 >
 >Weitere Informationen finden Sie auf der Seite für [MongoDB für Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).

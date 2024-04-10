@@ -7,7 +7,9 @@ topic-tags: Security
 content-type: reference
 exl-id: b55ff9d5-8139-4ecf-ba09-5cf88207c5c4
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Security
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 6%
@@ -18,37 +20,37 @@ ht-degree: 6%
 
 ## Übersicht {#overview}
 
-Seit Version 6.3 ermöglicht Adobe Experience Manager (AEM) das Festlegen des Administratorkennworts über die Befehlszeile bei der Installation einer neuen Instanz.
+Seit Version 6.3 kann das Administratorkennwort in Adobe Experience Manager (AEM) bei der Installation einer neuen Instanz über die Befehlszeile festgelegt werden.
 
-Bei früheren Versionen von AEM musste das Kennwort für das Administratorkonto zusammen mit dem Kennwort für verschiedene andere Konsolen nach der Installation geändert werden.
+Bei früheren Versionen von AEM mussten das Passwort für das Admin-Konto sowie das Passwort für verschiedene andere Konsolen nach der Installation geändert werden.
 
-Diese Funktion bietet die Möglichkeit, während der Installation einer AEM-Instanz ein neues Administratorkennwort für das Repository und die Servlet-Engine festzulegen, sodass die manuelle Ausführung später entfällt.
+Mit dieser Funktion können Sie während der Installation einer AEM-Instanz ein neues Administratorkennwort für das Repository und die Servlet-Engine festlegen, sodass Sie es anschließend nicht mehr manuell tun müssen.
 
 >[!CAUTION]
 >
->Die Felix-Konsole, für die das Kennwort manuell geändert werden muss, wird von der Funktion nicht erfasst. Weitere Informationen finden Sie in der entsprechenden [Abschnitt &quot;Sicherheitscheckliste&quot;](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts).
+>Die Funktion deckt nicht die Felix-Konsole ab, für die das Kennwort manuell geändert werden muss. Weitere Informationen finden Sie in den entsprechenden [Abschnitt „Sicherheitscheckliste“](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts).
 
-## Wie benutze ich es? {#how-do-i-use-it}
+## Wie verwende ich es? {#how-do-i-use-it}
 
 Diese Funktion wird automatisch Trigger, wenn Sie AEM über die Befehlszeile installieren möchten, anstatt auf die JAR-Datei in einem Dateisystem-Explorer zu doppelklicken.
 
-Die allgemeine Syntax für die Ausführung einer AEM-Instanz über die Befehlszeile lautet:
+Die allgemeine Syntax zum Ausführen einer AEM-Instanz über die Befehlszeile lautet:
 
 ```shell
 java -jar aem6.3.jar
 ```
 
-Nachdem Sie die Instanz über die Befehlszeile ausgeführt haben, erhalten Sie die Möglichkeit, das Administratorkennwort während des Installationsprozesses zu ändern:
+Nachdem Sie die Instanz über die Befehlszeile ausgeführt haben, wird Ihnen die Option angezeigt, das Administratorkennwort während des Installationsprozesses zu ändern:
 
 ![chlimage_1-116](assets/chlimage_1-116a.png)
 
 >[!NOTE]
 >
->Die Aufforderung zur Änderung des Administratorkennworts wird nur während der Installation einer neuen AEM angezeigt.
+>Die Aufforderung zur Änderung des Administratorkennworts wird nur während der Installation einer neuen AEM-Instanz angezeigt.
 
-## Verwenden des Flag -nointeractive {#using-the-nointeractive-flag}
+## Verwenden des Flags -nointeractive {#using-the-nointeractive-flag}
 
-Sie können das Kennwort auch in einer Eigenschaftendatei angeben. Dies geschieht mithilfe der `-nointeractive` Markierung kombiniert mit `-Dadmin.password.file` Systemeigenschaft.
+Sie können das Kennwort auch in einer Eigenschaftendatei angeben. Dies geschieht mithilfe der `-nointeractive` -Markierung kombiniert mit der `-Dadmin.password.file` Systemeigenschaft.
 
 Beispiel:
 
@@ -56,7 +58,7 @@ Beispiel:
 java -Dadmin.password.file =/path/to/passwordfile.properties -jar aem6.3.jar -nointeractive
 ```
 
-Das Kennwort in der `passwordfile.properties` -Datei muss das folgende Format aufweisen:
+Das Kennwort in der `passwordfile.properties` Die Datei muss im folgenden Format vorliegen:
 
 ```xml
 admin.password = 12345678
@@ -64,4 +66,4 @@ admin.password = 12345678
 
 >[!NOTE]
 >
->Wenn Sie einfach die `-nointeractive` -Parameter ohne `-Dadmin.password.file` -Systemeigenschaft verwenden AEM das standardmäßige Administratorkennwort, ohne Sie dazu aufzufordern, es zu ändern. Dies entspricht im Wesentlichen dem Verhalten früherer Versionen. Dieser nicht interaktive Modus kann für automatisierte Installationen mit der Befehlszeile in einem Installationsskript verwendet werden.
+>Wenn Sie einfach die `-nointeractive` Parameter ohne `-Dadmin.password.file` Systemeigenschaft verwendet AEM das standardmäßige Administratorkennwort, ohne Sie aufzufordern, es zu ändern, was im Wesentlichen dem Verhalten älterer Versionen entspricht. Dieser nicht interaktive Modus kann für automatisierte Installationen mithilfe der Befehlszeile in einem Installationsskript verwendet werden.

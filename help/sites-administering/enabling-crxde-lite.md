@@ -7,16 +7,18 @@ topic-tags: Security
 content-type: reference
 exl-id: bf51def2-1dd4-4bd3-b989-685058f0ead8
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '256'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
 # Aktivieren von CRXDE Lite in AEM {#enabling-crxde-lite-in-aem}
 
-Um sicherzustellen, dass AEM Installationen so sicher wie möglich sind, empfiehlt die Sicherheitsprüfliste [WebDAV deaktivieren](/help/sites-administering/security-checklist.md#disable-webdav) in Produktionsumgebungen.
+Damit AEM-Installationen so sicher wie möglich sind, wird gemäß der Sicherheitsprüfliste empfohlen, in Produktionsumgebungen [WebDAV zu deaktivieren](/help/sites-administering/security-checklist.md#disable-webdav).
 
 Allerdings hängt CRXDE Lite davon ab, dass das Bundle `org.apache.sling.jcr.davex` ordnungsgemäß funktioniert, weshalb durch die Deaktivierung von WebDAV effektiv auch CRXDE Lite deaktiviert wird.
 
@@ -26,7 +28,7 @@ Wenn dies eintritt, wird beim Browsen zu `https://serveraddress:4502/crx/de/inde
 404 Resource at '/crx/server/crx.default/jcr:root/.1.json' not found: No resource found
 ```
 
-Diese Empfehlung soll zwar Angriffsflächen so weit wie möglich reduzieren, doch Systemadministratoren benötigen manchmal Zugriff auf CRXDE Lite, um Inhalte zu durchsuchen oder Probleme in Produktionsinstanzen zu beheben.
+Diese Empfehlung dient zwar dazu, Angriffsflächen so weit wie möglich zu minimieren, dennoch müssen Systemadmins manchmal vielleicht auf CRXDE Lite zugreifen, um Inhalte zu durchsuchen oder Probleme von Produktionsinstanzen zu debuggen.
 
 Sie können CRXDE Lite entweder mit [OSGi-Einstellungen](#enabling-crxde-lite-osgi) oder mit einem [cURL-Befehl](#enabling-crxde-lite-curl) aktivieren.
 
@@ -66,7 +68,7 @@ curl -u admin:admin -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server"
 
 ## Sonstige -Ressourcen {#other-resources}
 
-Weitere Informationen zu AEM 6 Sicherheitsfunktionen finden Sie auf den folgenden Seiten:
+Weitere Informationen zu den Sicherheitsfunktionen von AEM 6 finden Sie auf den folgenden Seiten:
 
 * [Die AEM-Sicherheitsprüfliste](/help/sites-administering/security-checklist.md)
 * [Ausführung von AEM im produktionsbereiten Modus](/help/sites-administering/production-ready.md)

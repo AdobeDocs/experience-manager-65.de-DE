@@ -1,6 +1,6 @@
 ---
 title: Prüfen von Benutzerverwaltungsvorgängen in Adobe Experience Manager
-description: Erfahren Sie, wie Sie User Management-Vorgänge in Adobe Experience Manager prüfen.
+description: Erfahren Sie, wie Sie User Management-Vorgänge in Adobe Experience Manager überprüfen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -9,33 +9,34 @@ docset: aem65
 exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 14%
 
 ---
 
-# Benutzerverwaltungsvorgänge in Adobe Experience Manager prüfen (AEM) {#how-to-audit-user-management-operations-in-aem}
+# Prüfen von Benutzerverwaltungsvorgängen in Adobe Experience Manager (AEM) {#how-to-audit-user-management-operations-in-aem}
 
 ## Einführung {#introduction}
 
 AEM hat die Möglichkeit eingeführt, Berechtigungsänderungen zu protokollieren, damit Sie sie später überprüfen können.
 
-Die Verbesserung ermöglicht die Prüfung von CRUD-Aktionen (Erstellen, Lesen, Aktualisieren, Löschen) für Berechtigungen und Gruppenzuweisungen von Benutzern. Konkret protokolliert es Folgendes:
+Die Verbesserung ermöglicht die Prüfung von CRUD-Aktionen (Erstellen, Lesen, Aktualisieren, Löschen) für Berechtigungen und Gruppenzuweisungen von Benutzern. Genauer gesagt protokolliert es:
 
 * Ein neuer Benutzer wird erstellt
-* Einen Benutzer, der zu einer Gruppe hinzugefügt wird
+* Ein Benutzer, der zu einer Gruppe hinzugefügt wird
 * Berechtigungsänderungen eines vorhandenen Benutzers oder einer vorhandenen Gruppe
 
-Standardmäßig werden die Einträge in die `error.log` -Datei. Um die Überwachung zu vereinfachen, empfiehlt es sich, diese Einträge in einer separaten Protokolldatei zu speichern. Weitere Informationen dazu finden Sie im folgenden Absatz.
+Standardmäßig werden die Einträge in den `error.log` -Datei. Um die Überwachung zu vereinfachen, empfiehlt es sich, diese Einträge in einer separaten Protokolldatei zu speichern. Weitere Informationen dazu finden Sie im folgenden Absatz.
 
-## Weiterleiten der Ausgabe in eine separate Protokolldatei {#redirecting-the-output-to-a-separate-log-file}
+## Ausgabe in eine separate Protokolldatei umleiten {#redirecting-the-output-to-a-separate-log-file}
 
-Um die Protokollierungsausgabe in eine separate Protokolldatei umzuleiten, erstellen Sie eine **Apache Sling Logging Logger** Konfiguration. Verwenden wir `useraudit.log` als Name der separaten Datei im Beispiel unten.
+Um die Protokollausgabe in eine separate Protokolldatei umzuleiten, erstellen Sie eine **Apache Sling Logging Logger** Konfiguration. Verwenden wir `useraudit.log` als der Name der separaten Datei im folgenden Beispiel.
 
 1. Navigieren Sie zur Web-Konsole unter *https://Server-Adresse:Serverport/system/console/configMgr*.
-1. Suchen Sie nach **Apache Sling Logging Logger-Konfiguration**. Klicken Sie dann auf das &quot;+&quot; rechts vom Eintrag, um eine Werkskonfiguration zu erstellen.
+1. Suchen nach **Apache Sling Logging Logger Configuration**. Drücken Sie dann das „+“ auf der rechten Seite des Eintrags, um eine Werkskonfiguration zu erstellen.
 1. Erstellen Sie die folgende Konfiguration:
 
    * **Protokollebene:** Informationen
@@ -43,11 +44,11 @@ Um die Protokollierungsausgabe in eine separate Protokolldatei umzuleiten, erste
    * **Nachrichtenmuster:** Standardwert beibehalten
    * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   So geben Sie beide Logger in die **Logger** eingeben, müssen Sie den Namen des ersten Felds eingeben, dann ein weiteres Feld erstellen, indem Sie die Schaltfläche &quot;+&quot; drücken und den Namen des zweiten Loggers eingeben.
+   So geben Sie beide Logger in die **Logger** müssen Sie den Namen des ersten Loggers eingeben und dann ein weiteres Feld erstellen. Klicken Sie dazu auf die Schaltfläche „+„. Geben Sie dann den Namen des zweiten Loggers ein.
 
 ## Beispielausgabe {#example-output}
 
-Bei richtiger Konfiguration sollte die Ausgabe wie folgt aussehen:
+Bei korrekter Konfiguration sollte die Ausgabe wie folgt aussehen:
 
 ```xml
 19.05.2017 15:15:08.933 *INFO* [0:0:0:0:0:0:0:1 [1495196108932] POST /libs/granite/security/post/authorizables.html HTTP/1.1] com.adobe.granite.security.user.internal.servlets.AuthorizableServlet Create Group 'group1' operation initiated by User 'admin' (administrator)
@@ -81,7 +82,7 @@ Bei richtiger Konfiguration sollte die Ausgabe wie folgt aussehen:
 
 ## Klassische Benutzeroberfläche {#classic-ui}
 
-In der klassischen Benutzeroberfläche sind Informationen zu CRUD-Vorgängen, die im Auditprotokoll zum Hinzufügen und Löschen von Benutzern aufgezeichnet werden, auf die ID des betroffenen Benutzers und den Zeitpunkt der Änderung beschränkt.
+In der klassischen Benutzeroberfläche sind Informationen zu CRUD-Vorgängen, die im Administratorprotokoll aufgezeichnet werden und sich auf das Hinzufügen und Löschen von Benutzern beziehen, auf die ID des betroffenen Benutzers und den Zeitpunkt der Änderung beschränkt.
 
 Beispiel:
 

@@ -7,7 +7,9 @@ content-type: reference
 topic-tags: best-practices
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '1790'
 ht-degree: 98%
@@ -59,7 +61,7 @@ Auf dem Markt ist eine Vielzahl von Tools für Leistungstests erhältlich. Stell
 
 * **Load Runner** ist ein Enterprise-Produkt für Auslastungstests. Eine kostenlose Evaluierungsversion ist verfügbar. Weitere Informationen finden Sie unter [https://www.microfocus.com/de-de/portfolio/performance-engineering/overview](https://www.microfocus.com/de-de/portfolio/performance-engineering/overview).
 
-* Tools zum Laden von Websites, [Vercara](https://vercara.com/website-performance-management) kann auch verwendet werden.
+* Website-Belastungstests-Tools wie [Vercara](https://vercara.com/website-performance-management) Kann auch verwendet werden.
 * Beim Testen mobiler oder responsiver Websites muss ein separater Satz von Tools verwendet werden. Diese drosseln die Netzwerkbrandbreite, um langsamere mobile Verbindungen wie 3G oder EDGE zu simulieren. Zu den gängigeren Tools gehören:
 
    * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)** mit einer benutzerfreundlichen Oberfläche und einer relativ niedrigen Ebene im Netzwerk-Stack. Es sind OS X- und iOS-Versionen verfügbar.
@@ -150,7 +152,7 @@ Nach dem Ausführen von Leistungstests auf der Authoring-Instanz müssen alle fe
 
 * Wenn beim Bearbeiten bestimmter Seiten oder Komponenten in Authoring-Instanzen Probleme auftreten, sehen Sie sich die fragliche Seite mithilfe des Entwicklermodus der Touch-optimierten Benutzeroberfläche an. Dadurch erhalten Sie eine Aufschlüsselung der einzelnen Inhaltsbereiche auf der Seite und ihrer Ladezeiten.
 * Minimieren Sie alle JS- und CSS-Dateien auf der Site. Siehe diesen [Blogpost](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
-* Entfernen Sie eingebettete CSS- und JS-Elemente aus den Komponenten. Sie sollten mit den clientseitigen Bibliotheken eingeschlossen und minimiert werden, um die Anzahl der Anforderungen zu minimieren, die zum Rendern der Seite erforderlich sind.
+* Entfernen Sie eingebettete CSS- und JS-Elemente aus den Komponenten. Sie sollten in den Client-seitigen Bibliotheken enthalten und minimiert sein, um die Anzahl der zum Rendern der Seite erforderlichen Anfragen zu minimieren.
 * Verwenden Sie Browser-Tools wie den Chrome-Tab „Netzwerk“, um die Server-Anfragen zu überprüfen und festzustellen, welche am längsten dauern.
 
 Nach Identifizierung von Problembereichen kann der Anwendungs-Code im Hinblick auf Leistungsoptimierungen untersucht werden. Sollten AEM-Standardfunktionen nicht ordnungsgemäß verwendet werden können, wenden Sie sich an den Adobe-Support, um Unterstützung zu erhalten.

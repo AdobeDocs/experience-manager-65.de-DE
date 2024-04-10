@@ -5,10 +5,11 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-feature: Configuring
+feature: Administering
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '5753'
 ht-degree: 99%
@@ -491,7 +492,7 @@ Manchmal verzögert der Wechsel zwischen dem Tail- und dem vollständigen Kompri
    <td><strong>Was verursacht <code>SegmentNotFoundException</code>-Instanzen im <code>error.log</code>-Protokoll und wie erreiche ich eine Wiederherstellung?</strong></td>
    <td><p><code>SegmentNotFoundException</code> wird von TarMK beim Versuch protokolliert, auf eine Speichereinheit (ein Segment) zuzugreifen, die nicht auffindbar ist. Es gibt drei Szenarien, die dieses Problem verursachen können:</p>
     <ol>
-     <li>Eine Anwendung, die die empfohlenen Zugriffsmechanismen (wie Sling und die JCR-API) umgeht und eine API/SPI auf niedrigerer Ebene verwendet, um auf das Repository zuzugreifen, und dann die Aufbewahrungsdauer eines Segments überschreitet. Das heißt, sie bewahrt einen Verweis auf eine Entität länger auf als die von der Online-Revisionsbereinigung erlaubte Aufbewahrungsdauer (standardmäßig 24 Stunden). Dieser Fall ist vorübergehend und führt nicht zu einer Datenbeschädigung. Verwenden Sie für die Wiederherstellung das Tool „oak-run“, um den vorübergehenden Status der Ausnahme zu bestätigen (bei der Überprüfung mit „oak-run“ sollten keine Fehler gemeldet werden). Hierzu müssen Sie die Instanz in den Offline-Modus versetzen und anschließend neu starten.</li>
+     <li>Eine Anwendung, die die empfohlenen Zugriffsmechanismen (wie Sling und die JCR-API) umgeht und eine API/SPI auf niedrigerer Ebene verwendet, um auf das Repository zuzugreifen, und dann die Aufbewahrungsdauer eines Segments überschreitet. Das heißt, sie bewahrt einen Verweis auf eine Entität länger auf als die von der Online-Revisionsbereinigung erlaubte Aufbewahrungsdauer (standardmäßig 24 Stunden). Dieser Fall ist vorübergehend und führt nicht zu einer Beschädigung der Daten. Verwenden Sie für die Wiederherstellung das Tool „oak-run“, um den vorübergehenden Status der Ausnahme zu bestätigen (bei der Überprüfung mit „oak-run“ sollten keine Fehler gemeldet werden). Hierzu müssen Sie die Instanz in den Offline-Modus versetzen und anschließend neu starten.</li>
      <li>Ein externes Ereignis verursachte die Beschädigung der Daten auf der Festplatte. Dabei kann es sich um einen Datenträgerfehler, ungenügenden Speicherplatz oder eine versehentliche Änderung der erforderlichen Datendateien handeln. In diesem Fall muss die Instanz offline geschaltet und mithilfe der Prüfung mit „oak-run“ repariert werden. Weitere Informationen zum Ausführen von Prüfungen mit „oak-run“ finden Sie in der <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Apache-Dokumentation</a>.</li>
      <li>Bei allen anderen Vorfällen wenden Sie sich an die <a href="https://experienceleague.adobe.com/?lang=de&amp;support-solution=General&amp;support-tab=home#support" target="_blank">Adobe-Kundenunterstützung</a>.</li>
     </ol> </td>

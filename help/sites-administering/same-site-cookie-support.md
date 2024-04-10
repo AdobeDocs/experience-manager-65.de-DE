@@ -1,13 +1,15 @@
 ---
 title: Same-Site-Cookie-Unterstützung für AEM 6.5
-description: Erfahren Sie mehr über die Unterstützung von Same Site-Cookies für AEM 6.5.
+description: Erfahren Sie mehr über Same-Site-Cookie-Unterstützung für AEM 6.5
 topic-tags: security
 exl-id: e1616385-0855-4f70-b787-b01701929bbc
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Security
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +19,7 @@ Seit Version 80 ist in Chrome und Safari ein neues Modell für die Sicherheit vo
 
 Der Standardwert dieser Einstellung (`SameSite=Lax`) kann dazu führen, dass die Authentifizierung zwischen AEM-Instanzen oder -Services nicht funktioniert. Dies liegt daran, dass die Domains oder URL-Strukturen dieser Services möglicherweise nicht unter die Beschränkungen dieser Cookie-Richtlinie fallen.
 
-Um dies zu umgehen, müssen Sie die `SameSite` Cookie-Attribut zu `None` für das Anmelde-Token.
+Um dies zu umgehen, müssen Sie das Cookie-Attribut `SameSite` für das Login-Token auf `None` setzen.
 
 >[!CAUTION]
 >

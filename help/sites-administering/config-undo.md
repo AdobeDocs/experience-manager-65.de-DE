@@ -1,16 +1,18 @@
 ---
 title: Konfigurieren von Rückgängig-Vorgängen zur Seitenbearbeitung
-description: Erfahren Sie, wie Sie die Rückgängig-Unterstützung für die Seitenbearbeitung in AEM konfigurieren.
+description: Erfahren Sie, wie Sie die Unterstützung für Rückgängig-Vorgänge zur Seitenbearbeitung in AEM konfigurieren.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 2cf3ac3f-ee17-480d-a32a-c57631502693
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Configuring
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -32,15 +34,15 @@ Dieser Knoten umfasst die Eigenschaften `cq.wcm.undo.whitelist` und `cq.wcm.undo
 >
 >da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
 
-## Konfigurieren von &quot;Rückgängig&quot;und &quot;Wiederherstellen&quot; {#configuring-undo-and-redo}
+## Konfigurieren von Rückgängig- und Wiederherstellen-Vorgängen {#configuring-undo-and-redo}
 
-Sie können diese OSGi-Diensteigenschaften für Ihre eigene Instanz konfigurieren.
+Sie können diese Eigenschaften des OSGi-Dienstes für Ihre eigene Instanz konfigurieren.
 
 >[!NOTE]
 >
 >Bei der Verwendung von AEM gibt es mehrere Methoden zur Verwaltung der Konfigurationseinstellungen für solche Dienste. Weitere Informationen und empfohlene Praktiken finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
-Nachfolgend werden die Eigenschaften so aufgeführt, wie sie in der Web-Konsole angezeigt werden. Darauf folgt der Name des entsprechenden OSGi-Parameters zusammen mit einer Beschreibung und (ggf.) dem Standardwert:
+Nachfolgend werden die Eigenschaften so aufgeführt, wie sie in der Web-Konsole angezeigt werden. Darauf folgt jeweils der Name des entsprechenden OSGi-Parameters zusammen mit einer Beschreibung und (ggf.) dem Standardwert:
 
 * **Aktivieren**
 ( `cq.wcm.undo.enabled`)
@@ -52,15 +54,15 @@ Nachfolgend werden die Eigenschaften so aufgeführt, wie sie in der Web-Konsole
 * **Pfad**
 ( `cq.wcm.undo.path`)
 
-   * **Beschreibung**: Der Repository-Pfad für die Beibehaltung binärer Rückgängig-Daten. Wenn Autoren Binärdaten wie Bilder ändern, wird hier die Originalversion der Daten beibehalten. Wenn Änderungen an den Binärdaten rückgängig gemacht werden, werden diese Rückgängig-Binärdaten auf der Seite wiederhergestellt.
+   * **Beschreibung**: Der Repository-Pfad zum Beibehalten von Rückgängig-Binärdaten. Wenn Autorinnen und Autoren Binärdaten wie Bilder ändern, wird die ursprüngliche Version der Daten hier beibehalten. Wenn Änderungen an den Binärdaten rückgängig gemacht werden, werden diese Rückgängig-Binärdaten auf der Seite wiederhergestellt.
    * **Standard**: `/var/undo`
    * **Typ**: `String`
 
   >[!NOTE]
   >
-  >Standardmäßig können nur Admins auf den Knoten `/var/undo` zugreifen. Autoren können Vorgänge zum Rückgängigmachen und Wiederholen von Binärinhalten erst dann ausführen, wenn ihnen Berechtigungen für den Zugriff auf die binären Rückgängig-Daten erteilt wurden.
+  >Standardmäßig können nur Admins auf den Knoten `/var/undo` zugreifen. Autorinnen und Autoren können Rückgängig- und Wiederherstellen-Vorgänge für Binärdaten nur dann durchführen, wenn ihnen Zugriffsberechtigungen für die Rückgängig-Binärdaten gewährt wurden.
 
-* **Min. validity**
+* **Min. Gültigkeit**
 ( `cq.wcm.undo.validity`)
 
    * **Beschreibung**: Der Mindestzeitraum, über den Rückgängig-Binärdaten gespeichert werden (in Stunden). Nach dieser Zeit können die Binärdaten gelöscht werden, um Festplattenspeicher einzusparen.
@@ -86,9 +88,9 @@ Nachfolgend werden die Eigenschaften so aufgeführt, wie sie in der Web-Konsole
    * **Typ**: `String`
 
 * **Persistenzmodus**
-( `cq.wcm.undo.persistence.mode`)
+(`cq.wcm.undo.persistence.mode`)
 
-   * **Beschreibung**: Legt fest, wann der Verlauf der Rückgängigmachungen beibehalten wird. Wählen Sie diese Option, um den Verlauf der rückgängig gemachten Angaben nach jeder Seitenbearbeitung beizubehalten. Deaktivieren Sie diese Option, damit sie nur beibehalten wird, wenn eine Seite neu geladen wird (z. B. wenn der Benutzer zu einer anderen Seite navigiert).
+   * **Beschreibung**: Legt fest, wann der Verlauf der Rückgängigmachungen beibehalten wird. Aktivieren Sie diese Option, damit der Verlauf der Rückgängigmachungen nach jeder Seitenbearbeitung beibehalten wird. Deaktivieren Sie diese Option, damit der Verlauf nur beim erneuten Laden einer Seite beibehalten wird (etwa wenn die Person zu einer anderen Seite navigiert).
 
      Der Verlauf der Rückgängigmachungen wird mittels Webbrowserressourcen beibehalten. Wenn der Browser Ihrer Benutzer langsam auf Seitenbearbeitungen reagiert, versuchen Sie, den Verlauf der Rückgängigmachungen bei Seitenneuladungen beizubehalten.
 
@@ -96,12 +98,12 @@ Nachfolgend werden die Eigenschaften so aufgeführt, wie sie in der Web-Konsole
    * **Typ**: `Boolean`
 
 * **Markierungsmodus**
-( `cq.wcm.undo.markermode`)
+(`cq.wcm.undo.markermode`)
 
    * **Beschreibung**: Gibt den visuellen Hinweis an, der verwendet wird, um die von einem Rückgängig- oder Wiederherstellen-Vorgang betroffenen Absätze anzugeben. Die folgenden Werte sind gültig:
 
-      * flash: Die Auswahlanzeige der Absätze blinkt vorübergehend.
-      * select: Der Absatz ist ausgewählt.
+      * flash: Der Auswahlindikator der Absätze wird vorübergehend eingeblendet.
+      * select: Der Absatz wird ausgewählt.
 
    * **Standard**: `flash`
    * **Typ**: `String`
@@ -109,7 +111,7 @@ Nachfolgend werden die Eigenschaften so aufgeführt, wie sie in der Web-Konsole
 * **Gute Komponenten**
 ( `cq.wcm.undo.whitelist`)
 
-   * **Beschreibung**: Eine Liste von Komponenten, die von Befehlen zum Rückgängigmachen und Wiederholen betroffen sein sollen. Fügen Sie Komponentenpfade zu dieser Liste hinzu, wenn sie beim Rückgängigmachen/Wiederholen ordnungsgemäß funktionieren. Hängen Sie ein Sternchen (&amp;ast;) an, um eine Gruppe von Komponenten anzugeben:
+   * **Beschreibung**: Eine Liste von Komponenten, für die die Befehle „Rückgängig“ und „Wiederherstellen“ angewendet werden sollen. Fügen Sie dieser Liste Komponentenpfade hinzu, wenn sie korrekt mit „Rückgängig“ und „Wiederherstellen“ funktionieren. Hängen Sie ein Sternchen (&amp;ast;) an, um eine Gruppe von Komponenten anzugeben:
 
       * Der folgende Wert legt die Foundation-Textkomponente fest:
 
@@ -129,14 +131,14 @@ Nachfolgend werden die Eigenschaften so aufgeführt, wie sie in der Web-Konsole
 
    * **Beschreibung**: Eine Liste der Komponenten und/oder Komponentenvorgänge, für die die Befehle „Rückgängig“ und „Wiederherstellen“ nicht angewendet werden sollen. Fügen Sie Komponenten und Komponentenvorgänge hinzu, die sich beim Anwenden des Befehls „Rückgängig“ nicht ordnungsgemäß verhalten:
 
-      * Fügen Sie einen Komponentenpfad hinzu, wenn Sie keine der Vorgänge der Komponente im Verlauf der Rückgängigmachungen anzeigen möchten, z. B. `collab/forum/components/post`
-      * Hängen Sie einen Doppelpunkt (:) und einen Vorgang an den Pfad an, wenn Sie möchten, dass dieser bestimmte Vorgang aus dem Verlauf der Rückgängigmachungen ausgelassen wird (andere Vorgänge funktionieren beispielsweise ordnungsgemäß). `collab/forum/components/post:insertParagraph.`
+      * Fügen Sie einen Komponentenpfad hinzu, wenn keiner der Komponentenvorgänge im Verlauf der Rückgängigmachungen angezeigt werden soll, z. B. `collab/forum/components/post`.
+      * Hängen Sie einen Doppelpunkt (:) und einen Vorgang an den Pfad an, wenn dieser Vorgang im Verlauf der Rückgängigmachungen ausgelassen werden soll (bei ordnungsgemäßer Funktionsweise der anderen Vorgänge), z. B. `collab/forum/components/post:insertParagraph.`.
 
   >[!NOTE]
   >
-  >Wenn sich ein Vorgang auf dieser Liste befindet, wird er dennoch zum Verlauf der Rückgängigmachungen hinzugefügt. Benutzer können Vorgänge, die vor einem **Ungültige Komponente** -Operation im Verlauf der Rückgängigmachungen.
+  >Wenn ein Vorgang in dieser Liste vorhanden ist, wird er nach wie vor dem Verlauf der Rückgängigmachungen hinzugefügt. Benutzerinnen und Benutzer können Vorgänge nicht rückgängig machen, die im Verlauf der Rückgängigmachungen zeitlich vor einem Vorgang **Ungültige Komponente** liegen.
 
-   * Typische Vorgangsnamen sind:
+   * Typische Vorgangsnamen lauten etwa wie folgt:
 
       * `insertParagraph`: Die Komponente wird der Seite hinzugefügt.
       * `removeParagraph`: Die Komponente wird gelöscht.

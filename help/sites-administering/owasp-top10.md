@@ -8,7 +8,8 @@ content-type: reference
 exl-id: 8b2a2f1d-8286-4ba5-8fe2-627509c72a45
 feature: Security
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 33%
@@ -17,17 +18,17 @@ ht-degree: 33%
 
 # OWASP – Top 10{#owasp-top}
 
-Die [Webanwendungs-Sicherheitsprojekt öffnen](https://owasp.org/) (OWASP) verwaltet eine Liste dessen, was sie als [Die zehn häufigsten Sicherheitsrisiken für Webanwendungen](https://owasp.org/www-project-top-ten/).
+Die [Sicherheitsprojekt für Webanwendungen öffnen](https://owasp.org/) (OWASP) führt eine Liste dessen, was sie als [Top 10 der Sicherheitsrisiken von Web-Anwendungen](https://owasp.org/www-project-top-ten/).
 
 Diese sind unten aufgeführt, zusammen mit einer Erläuterung, wie CRX mit ihnen umgeht.
 
-## 1. Injektion {#injection}
+## 1. Einspritzung {#injection}
 
-* SQL - In der Konzeption verhindert: Die standardmäßige Repository-Einrichtung umfasst keine herkömmliche Datenbank und erfordert auch keine. Alle Daten werden im Inhalts-Repository gespeichert. Der Zugriff ist auf authentifizierte Benutzer beschränkt und kann nur über die JCR-API erfolgen. SQL wird nur für Suchabfragen (SELECT) unterstützt. Darüber hinaus bietet SQL Unterstützung für die Wertbindung.
-* LDAP - Eine LDAP-Injektion ist nicht möglich, da das Authentifizierungsmodul die Eingabe filtert und den Benutzerimport mithilfe der Bindungsmethode durchführt.
-* BS - In der Anwendung wird keine Shell-Ausführung ausgeführt.
+* SQL - Vom Design verhindert: Die standardmäßige Repository-Einrichtung umfasst keine herkömmliche Datenbank, und es ist auch keine herkömmliche Datenbank erforderlich. Alle Daten werden im Content-Repository gespeichert. Der Zugriff ist auf authentifizierte Benutzer beschränkt und kann nur über die JCR-API erfolgen. SQL wird nur für Suchabfragen unterstützt (SELECT). Darüber hinaus bietet SQL Unterstützung für die Wertbindung.
+* LDAP - LDAP-Einschleusung ist nicht möglich, da das Authentifizierungsmodul die Eingabe filtert und den Benutzerimport mit der Bind-Methode durchführt.
+* Betriebssystem: Es wird keine Shell-Ausführung innerhalb des Programms durchgeführt.
 
-## 2. Cross-Site Scripting (XSS) {#cross-site-scripting-xss}
+## 2. Cross-Site-Scripting (XSS) {#cross-site-scripting-xss}
 
 Die allgemeine Praxis zur Schadensbegrenzung besteht in der Codierung aller Ausgaben benutzergenerierter Inhalte mithilfe einer Server-seitigen XSS-Schutzbibliothek, die auf dem [OWASP Encoder](https://owasp.org/www-project-java-encoder/) und [AntiSamy](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project) basiert.
 
@@ -37,9 +38,9 @@ XSS hat sowohl bei den Tests als auch bei der Entwicklung eine hohe Priorität u
 
 AEM nutzt fundierte, bewährte Authentifizierungstechniken und greift hierzu auf [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/index.html) und [Apache Sling](https://sling.apache.org/) zurück. In AEM werden keine Browser-/HTTP-Sitzungen verwendet.
 
-## 4. Unsichere direkte Objektreferenzen {#insecure-direct-object-references}
+## 4. Unsichere direkte Objektverweise {#insecure-direct-object-references}
 
-Der Zugriff auf Datenobjekte wird vom Repository vermittelt und daher durch rollenbasierte Zugriffskontrolle eingeschränkt.
+Der gesamte Zugriff auf Datenobjekte wird durch das Repository vermittelt und daher durch die rollenbasierte Zugriffssteuerung eingeschränkt.
 
 ## 5. Cross-Site Request Forgery (CSRF) {#cross-site-request-forgery-csrf}
 
@@ -47,25 +48,25 @@ Auf das Risiko der Cross-Site Request Forgery (CSRF) wird durch die automatisch
 
 Darüber hinaus ist AEM mit einem Referrer-Header-basierten Filter ausgestattet, der so konfiguriert werden kann, dass er *nur* POST-Anforderungen von bestimmten Hosts (in einer Liste definiert) zulässt.
 
-## 6. Sicherheitsfehler {#security-misconfiguration}
+## 6. Fehlerhafte Sicherheitskonfiguration {#security-misconfiguration}
 
-Es ist unmöglich zu garantieren, dass alle Software immer korrekt konfiguriert ist. Adobe bemüht sich jedoch, möglichst viele Anleitungen zur Verfügung zu stellen und die Konfiguration so einfach wie möglich zu gestalten. Außerdem AEM mit [Integrierte Sicherheits-Gesundheitskontrollen](/help/sites-administering/operations-dashboard.md) die Ihnen dabei helfen, die Sicherheitskonfiguration auf einen Blick zu verfolgen.
+Es ist unmöglich zu garantieren, dass die gesamte Software immer korrekt konfiguriert ist. Adobe ist jedoch bestrebt, möglichst viele Anleitungen zu geben und die Konfiguration so einfach wie möglich zu gestalten. Darüber hinaus wird AEM ausgeliefert mit [Integrierte Sicherheits-Konsistenzprüfungen](/help/sites-administering/operations-dashboard.md) Damit können Sie die Sicherheitskonfiguration auf einen Blick überwachen.
 
-Überprüfen Sie die [Sicherheitscheckliste](/help/sites-administering/security-checklist.md) für weitere Informationen, die Ihnen eine schrittweise Anleitung zum Härten bieten.
+Überprüfen Sie die [Sicherheitscheckliste](/help/sites-administering/security-checklist.md) Für weitere Informationen, die Ihnen Schritt-für-Schritt-Härtungsanweisungen bereitstellen.
 
-## 7. Unsicherer kryptografischer Speicher {#insecure-cryptographic-storage}
+## 7. Unsichere kryptografische Speicherung {#insecure-cryptographic-storage}
 
-Passwörter werden als kryptografische Hashes im Benutzerknoten gespeichert. Standardmäßig sind solche Knoten nur vom Administrator und vom Benutzer selbst lesbar.
+Kennwörter werden als kryptografische Hashes im Benutzerknoten gespeichert. Standardmäßig können solche Knoten nur vom Administrator und vom Benutzer selbst gelesen werden.
 
-Sensible Daten wie Drittanbieter-Anmeldeinformationen werden in verschlüsselter Form mit einer FIPS 140-2-zertifizierten kryptografischen Bibliothek gespeichert.
+Sensible Daten wie Anmeldeinformationen von Drittanbietern werden mithilfe einer nach FIPS 140-2 zertifizierten kryptografischen Bibliothek verschlüsselt gespeichert.
 
-## 8. Fehler beim Einschränken des URL-Zugriffs {#failure-to-restrict-url-access}
+## 8. URL-Zugriff nicht einschränken {#failure-to-restrict-url-access}
 
-Das Repository ermöglicht die Festlegung von [Präzise Berechtigungen (gemäß JCR)](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) für jeden einzelnen Benutzer oder jede Gruppe an einem beliebigen Pfad über Zugriffssteuerungseinträge. Zugriffbeschränkungen werden durch das Repository durchgesetzt.
+Das Repository ermöglicht die Einstellung von [Fein abgestimmte Berechtigungen (wie durch JCR angegeben)](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) für jeden Benutzer bzw. jede Gruppe unter jedem beliebigen Pfad über Zugriffssteuerungseinträge. Zugriffbeschränkungen werden durch das Repository durchgesetzt.
 
 ## 9. Unzureichende Transportschichtsicherheit {#insufficient-transport-layer-protection}
 
-Wird durch die Serverkonfiguration abgemildert (z. B. nur HTTPS verwenden).
+Wird durch die Server-Konfiguration gemildert (z. B. nur HTTPS).
 
 ## 10. Ungeprüfte Um- und Weiterleitungen {#unvalidated-redirects-and-forwards}
 

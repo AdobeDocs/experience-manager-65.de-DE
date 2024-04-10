@@ -1,16 +1,18 @@
 ---
 title: Konfigurieren von E-Mail-Benachrichtigungen
-description: Erfahren Sie, wie Sie E-Mail-Benachrichtigungen in Adobe Experience Manager konfigurieren.
+description: Erfahren Sie, wie Sie E-Mail-Benachrichtigungen in Adobe Experience Manager konfigurieren können.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Configuring
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '2037'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +21,7 @@ ht-degree: 89%
 
 AEM sendet E-Mail-Benachrichtigungen an Benutzerinnen und Benutzer, die:
 
-* Sie haben Seitenereignisse abonniert, z. B. Änderungen oder Replikation. Im Abschnitt [Benachrichtigungs-Posteingang](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) ist beschrieben, wie solche Ereignisse abonniert werden können.
+* Seitenereignisse wie Änderungen oder Replikationen abonniert haben. Im Abschnitt [Benachrichtigungs-Posteingang](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) ist beschrieben, wie solche Ereignisse abonniert werden können.
 
 * Forumsveranstaltungen abonniert haben.
 * Einen Schritt in einem Workflow ausführen müssen. Im Abschnitt [Teilnehmerschritt](/help/sites-developing/workflows-step-ref.md#participant-step) wird beschrieben, wie E-Mail-Benachrichtigungen in einem Workflow ausgelöst werden können.
@@ -86,7 +88,7 @@ Wenn Sie E-Mail-Benachrichtigungen durch den Workflow erhalten, werden sowohl di
 
 Die Standardkonfiguration sieht in der Web-Konsole wie folgt aus:
 
-![Das Konfigurationsfenster des Day CQ Workflow Email Notification Service](assets/chlimage_1-277.png)
+![Das Konfigurationsfenster des Workflow-E-Mail-Benachrichtungsdienstes von Day CQ](assets/chlimage_1-277.png)
 
 ### E-Mail-Vorlagen für die Seitenbenachrichtigung {#email-templates-for-page-notification}
 
@@ -231,7 +233,7 @@ Die folgenden Variablen können innerhalb der E-Mail-Vorlage verwendet werden:
 
 * `${payload.type}`, der Typ der Payload
 * `${payload.path}`, der Pfad der Payload
-* `${host.prefix}`, Host-Präfix, z. B.: `http://localhost:4502`
+* `${host.prefix}`, Host-Präfix, zum Beispiel: `http://localhost:4502`
 
 ### Hinzufügen einer E-Mail-Vorlage für eine neue Sprache {#adding-an-email-template-for-a-new-language}
 
@@ -259,7 +261,7 @@ Wenn Sammlungen in AEM Assets freigegeben oder nicht freigegeben werden, können
 
 ## Einrichten von OAuth {#setting-up-oauth}
 
-AEM bietet OAuth2-Unterstützung für seinen integrierten Mailer-Service, damit Unternehmen die sicheren E-Mail-Anforderungen erfüllen können.
+AEM bietet OAuth2-Unterstützung für seinen integrierten E-Mail-Service, um Unternehmen die Einhaltung von E-Mail-Sicherheitsanforderungen zu ermöglichen.
 
 Sie können OAuth für mehrere E-Mail-Anbieter konfigurieren, wie unten beschrieben.
 
@@ -276,7 +278,7 @@ Sie können OAuth für mehrere E-Mail-Anbieter konfigurieren, wie unten beschrie
    * `https://mail.google.com/`
    * `https://www.googleapis.com//auth/gmail.send`
 1. Nachdem Sie die Bereiche hinzugefügt haben, gehen Sie zurück zu **Anmeldedaten** im Menü links und dann zu **Erstellen von Anmeldedaten** > **OAuth-Client-ID** > **Desktop-Programm**.
-1. Ein neues Fenster mit der Client-ID und dem Client-Geheimnis wird geöffnet.
+1. Daraufhin wird ein neues Fenster mit der Client-ID und dem Client-Geheimnis geöffnet.
 1. Speichern Sie diese Anmeldedaten.
 
 **AEM-Seitenkonfigurationen**
@@ -288,17 +290,17 @@ Sie können OAuth für mehrere E-Mail-Anbieter konfigurieren, wie unten beschrie
 Konfigurieren Sie zunächst den E-Mail-Dienst:
 
 1. Öffnen Sie die AEM-Web-Konsole, indem Sie zu `http://serveraddress:serverport/system/console/configMgr` gehen.
-1. Suchen Sie nach und klicken Sie auf **Day CQ Mail Service**
+1. Suchen Sie nach **Day CQ Mail Service** und klicken Sie darauf.
 1. Fügen Sie die folgenden Einstellungen hinzu:
    * SMTP-Server-Host-Name: `smtp.gmail.com`
    * SMTP-Server-Port: `25` oder `587`, abhängig von den Anforderungen
    * Markieren Sie die Kontrollkästchen für **SMPT verwendet StarTLS** und **SMTP erfordert StarTLS**.
    * Markieren Sie **OAuth-Fluss** und klicken Sie auf **Speichern**.
 
-Konfigurieren Sie anschließend Ihren SMTP OAuth-Provider wie unten beschrieben:
+Konfigurieren Sie anschließend Ihren SMTP-OAuth-Provider wie unten beschrieben:
 
 1. Öffnen Sie die AEM-Web-Konsole, indem Sie zu `http://serveraddress:serverport/system/console/configMgr` gehen.
-1. Suchen Sie nach und klicken Sie auf **CQ Mailer SMTP OAuth2 Provider**
+1. Suchen Sie nach **CQ Mailer SMTP OAuth2 Provider** und klicken Sie darauf.
 1. Füllen Sie die erforderlichen Informationen wie folgt aus:
    * Autorisierungs-URL: `https://accounts.google.com/o/oauth2/auth`
    * Token-URL: `https://accounts.google.com/o/oauth2/token`
@@ -312,7 +314,7 @@ Konfigurieren Sie anschließend Ihren SMTP OAuth-Provider wie unten beschrieben:
 
 Nach der Konfiguration sollten die Einstellungen wie folgt aussehen:
 
-![Das Konfigurationsfenster des CQ Mailer SMTP Oauth2 Provider](assets/oauth-smtpprov2.png)
+![Das Konfigurationsfenster des CQ Mailer SMTP Oauth2-Providers](assets/oauth-smtpprov2.png)
 
 Aktivieren Sie jetzt die OAuth-Komponenten. Gehen Sie dazu wie folgt vor:
 
@@ -322,7 +324,7 @@ Aktivieren Sie jetzt die OAuth-Komponenten. Gehen Sie dazu wie folgt vor:
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
 1. Klicken Sie links neben den Komponenten auf das Wiedergabesymbol.
 
-   ![Liste der Komponenten, die OAuthCodeGenerateServlet und OAuthCodeAccessTokenGenerator anzeigen](assets/oauth-components-play.png)
+   ![Liste der Komponenten, in der OAuthCodeGenerateServlet und OAuthCodeAccessTokenGenerator zu sehen sind](assets/oauth-components-play.png)
 
 Bestätigen Sie abschließend die Konfiguration, indem Sie:
 
@@ -342,7 +344,7 @@ Bestätigen Sie abschließend die Konfiguration, indem Sie:
 
    ![Die neue Registrierungsschaltfläche beim Konfigurieren von Microsoft Outlook](assets/oauth-outlook1.png)
 
-1. Füllen Sie die Informationen entsprechend Ihren Anforderungen aus und klicken Sie auf **registrieren**
+1. Füllen Sie die Informationen entsprechend Ihren Anforderungen aus und klicken Sie dann auf **Registrieren**.
 1. Wechseln Sie zur neu erstellten Anwendung und wählen Sie **API-Berechtigungen** aus.
 1. Gehen Sie zu **Berechtigung hinzufügen** – **Diagrammberechtigungen** – **Zugewiesene Berechtigungen**.
 1. Wählen Sie die folgenden Berechtigungen für Ihre Anwendung aus und klicken Sie dann auf **Berechtigung hinzufügen**:
@@ -355,10 +357,10 @@ Bestätigen Sie abschließend die Konfiguration, indem Sie:
    * `http://localhost:4503/services/mailer/oauth2/token`
 1. Wiederholen Sie die obigen Schritte für jede Veröffentlichungsinstanz
 1. Konfigurieren Sie die Einstellungen entsprechend Ihren Anforderungen.
-1. Navigieren Sie als Nächstes zu **Zertifikate und Geheimnisse** klicken **Neues Client-Geheimnis** und führen Sie die Schritte auf dem Bildschirm aus, um ein Geheimnis zu erstellen. Notieren Sie sich dieses Geheimnis für die spätere Verwendung.
+1. Gehen Sie dann zu **Zertifikate und Geheimnisse**, klicken Sie auf **Neues Client-Geheimnis** und führen Sie die Schritte auf dem Bildschirm aus, um ein Geheimnis zu erstellen. Notieren Sie sich dieses Geheimnis für die spätere Verwendung.
 1. Klicken Sie auf **Überblick** im linken Bereich und kopieren Sie die Werte für **Anwendungs (Client) ID** und **Directory (Mandant) ID** zur späteren Verwendung.
 
-Um eine Neukodierung durchzuführen, müssen Sie über die folgenden Informationen verfügen, um OAuth2 für den Mailer-Dienst auf der AEM zu konfigurieren:
+Zusammenfassend benötigen Sie die folgenden Informationen, um OAuth2 für den E-Mail-Service auf der AEM-Seite zu konfigurieren:
 
 * Die Auth-URL, die mit der Mandanten-ID erstellt wird. Sie hat folgendes Format: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
 * Die Token-URL, die mit der Mandanten-ID erstellt wird. Sie hat folgendes Format: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
@@ -371,7 +373,7 @@ Um eine Neukodierung durchzuführen, müssen Sie über die folgenden Information
 Integrieren Sie anschließend Ihre OAuth2-Einstellungen mit AEM:
 
 1. Gehen Sie zur Web-Konsole Ihrer lokalen Instanz, indem Sie zu `http://serveraddress:serverport/system/console/configMgr` navigieren.
-1. Suchen Sie nach und klicken Sie **Day CQ Mail Service**
+1. Suchen Sie nach **Day CQ Mail Service** und klicken Sie darauf.
 1. Fügen Sie die folgenden Einstellungen hinzu:
    * SMTP-Server-Host-Name: `smtp.office365.com`
    * SMTP-Benutzer: Ihr Benutzername im E-Mail-Format
@@ -379,7 +381,7 @@ Integrieren Sie anschließend Ihre OAuth2-Einstellungen mit AEM:
    * SMTP-Server-Port: `25` oder `587`, je nach den Anforderungen
    * Markieren Sie die Kontrollkästchen für **SMPT verwendet StarTLS** und **SMTP erfordert StarTLS**.
    * Markieren Sie **OAuth-Fluss** und klicken Sie auf **Speichern**.
-1. Suchen Sie nach und klicken Sie auf **CQ Mailer SMTP OAuth2 Provider**
+1. Suchen Sie **CQ Mailer SMTP OAuth2 Provider** und klicken Sie darauf.
 1. Füllen Sie die erforderlichen Informationen wie folgt aus:
    * Füllen Sie die Autorisierungs-URL, Token-URL und Aktualisierungstoken-URL aus, indem Sie sie wie unter [Ende dieses Verfahrens](#microsoft-outlook) beschrieben dekonstruieren.
    * Client-ID und Client-Geheimnis: Konfigurieren Sie diese Felder mit den Werten, die Sie wie oben beschrieben abgerufen haben.
@@ -405,7 +407,7 @@ Aktivieren Sie jetzt die OAuth-Komponenten. Gehen Sie dazu wie folgt vor:
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
 1. Klicken Sie links neben den Komponenten auf das Wiedergabesymbol.
 
-![Ein Codeausschnitt der Komponentenliste, der OAuthCodeGenerateServlet und OAuthCodeAccessTokenGenerator enthält](assets/oauth-components-play.png)
+![Ein Ausschnitt der Komponentenliste, der OAuthCodeGenerateServlet und OAuthCodeAccessTokenGenerator enthält](assets/oauth-components-play.png)
 
 Bestätigen Sie abschließend die Konfiguration, indem Sie:
 

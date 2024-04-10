@@ -1,6 +1,6 @@
 ---
 title: Identitäts-Management
-description: Erfahren Sie mehr über die inneren Funktionen des Identitätsmanagements in AEM.
+description: Erfahren Sie mehr über die Funktionsweise des Identitäts-Managements in AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering
+role: Admin
+source-git-commit: 315171dca4501718a34fd33f937334f7e7958963
 workflow-type: tm+mt
 source-wordcount: '1249'
-ht-degree: 83%
+ht-degree: 99%
 
 ---
 
@@ -59,11 +61,11 @@ Ein [Formular](/help/sites-authoring/default-components.md#form-component) kann 
 Benutzerinnen und Benutzer können beispielsweise mithilfe der folgenden Geometrixx-Seite ein neues Profil anfordern:
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
-![Beispielformular für eine Registrierung](assets/registerform.png)
+![Beispiel für ein Registrierungsformular](assets/registerform.png)
 
-Nach dem Übermitteln der Anfrage wird die Profilseite geöffnet. Auf dieser kann der Benutzer oder die Benutzerin persönliche Daten bereitstellen.
+Nach dem Übermitteln der Anfrage wird die Profilseite geöffnet. Auf dieser kann die Person Daten angeben.
 
-![Beispielprofilseite](assets/profilepage.png)
+![Beispiel einer Profilseite](assets/profilepage.png)
 
 Das neue Konto ist auch in der [Benutzerkonsole](/help/sites-administering/security.md) sichtbar.
 
@@ -73,11 +75,11 @@ Die Anmeldungskomponente kann verwendet werden, um die Anmeldeinformationen zu e
 
 Sie stellt dem Besucher bzw. der Besucherin die Standardfelder **Benutzername** und **Kennwort** bereit, sowie ferner eine Schaltfläche **Anmelden** zum Aktivieren des Login-Verfahrens bei Eingabe der Anmeldedaten.
 
-Beispielsweise können sich Benutzer entweder mit dem **Anmelden** -Option in der Geometrixx-Symbolleiste, die die Seite verwendet:
+Zum Beispiel können sich Benutzende entweder anmelden oder mithilfe der Option **Anmelden** in der Geometrixx-Symbolleiste ein neues Konto erstellen, wobei die folgende Seite verwendet wird:
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
-![Beispielseite für die Anmeldung](assets/login.png)
+![Beispiel einer Anmeldeseite](assets/login.png)
 
 ## Abmelden {#logging-out}
 
@@ -91,35 +93,35 @@ Je nach Ihrem Registrierungsformular können die Besuchenden registrierte Inform
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-Um die Details Ihres Profils anzuzeigen, klicken Sie auf **Mein Profil** in der oberen rechten Ecke einer beliebigen Seite, z. B. mit der `admin` Konto:
+Um die Daten Ihres Profils einzusehen, klicken Sie in der rechten oberen Ecke einer beliebigen Seite auf **Mein Profil**, beispielsweise mit dem `admin`-Konto
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
-Sie können mit dem [ClientContext](/help/sites-administering/client-context.md) (in der Authoring-Umgebung und mit ausreichend Berechtigungen) ein anderes Profil anzeigen:
+Sie können mit dem [ClientContext](/help/sites-administering/client-context.md) (in der Authoring-Umgebung und mit ausreichenden Berechtigungen) ein anderes Profil anzeigen:
 
-1. Öffnen Sie eine Seite, z. B. die Geometrixx-Seite:
+1. Öffnen Sie eine Seite, beispielsweise die Geometrixx-Seite:
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
-1. Klicken Sie auf **Mein Profil** in der oberen rechten Ecke. Sie sehen das Profil Ihres aktuellen Kontos, z. B. den Administrator.
+1. Klicken Sie auf **Mein Profil** in der rechten oberen Ecke. Sie sehen das Profil Ihres aktuellen Kontos, z. B. Admin.
 1. Drücken Sie **Strg+Alt+C**, um den Client-Kontext zu öffnen.
 1. Klicken Sie in der oberen linken Ecke des Client-Kontextes auf die Schaltfläche **Profil laden**.
 
-   ![Symbol &quot;Profil laden&quot;](do-not-localize/loadprofile.png)
+   ![Symbol „Profil laden“](do-not-localize/loadprofile.png)
 
-1. Wählen Sie ein anderes Profil aus der Dropdown-Liste im Dialogfeld aus, z. B.: **Alison Parker**.
+1. Wählen Sie ein anderes Profil aus der Dropdown-Liste im Dialogfenster aus, zum Beispiel **Alina Schmidt**.
 1. Klicken Sie auf **OK**.
 1. Klicken Sie erneut auf **Mein Profil**. Das Formular wird mit den Details von Alina aktualisiert.
 
-   ![Beispielprofil von Alison](assets/profilealison.png)
+   ![Beispielprofil von Alina](assets/profilealison.png)
 
 1. Sie können nun **Profil bearbeiten** oder **Kennwort ändern** verwenden, um die Details zu aktualisieren.
 
 ## Hinzufügen von Feldern zur Profildefinition {#adding-fields-to-the-profile-definition}
 
-Sie können der Profildefinition Felder hinzufügen. So fügen Sie dem Geometrixx beispielsweise das Feld &quot;Lieblingsfarbe&quot;hinzu:
+Sie können der Profildefinition Felder hinzufügen. Beispielsweise zum Hinzufügen eines Felds „Lieblingsfarbe“ zum Geometrixx-Profil:
 
 1. Navigieren Sie von der Websites-Konsole zu „Geometrixx Outdoors Site“ > „Deutsch“ > „Benutzer“ > „Mein Profil“.
-1. Doppelklicken Sie auf die **Mein Profil** Seite, um sie zur Bearbeitung zu öffnen.
+1. Doppelklicken Sie auf die Seite **Mein Profil**, um sie zur Bearbeitung zu öffnen.
 1. Erweitern Sie in der Registerkarte **Komponenten** des Sidekicks den Abschnitt **Formular**.
 1. Ziehen Sie eine **Dropdown-Liste** aus dem Sidekick in das Formular, direkt unter das Feld **Info zu eigener Person**.
 1. Doppelklicken Sie auf die Komponente **Dropdown-Liste**, um das Dialogfeld für die Konfiguration zu öffnen, und geben Sie Folgendes ein:
@@ -134,21 +136,21 @@ Sie können der Profildefinition Felder hinzufügen. So fügen Sie dem Geometrix
 
    Bei der nächsten Ansicht eines Profils können Sie eine Lieblingsfarbe auswählen:
 
-   ![Alison Parkers Lieblingsfarbstichprobe-Feld](assets/aparkerfavcolour.png)
+   ![Feld „Alina Schmidts Lieblingsfarbmuster“](assets/aparkerfavcolour.png)
 
    Das Feld wird unter dem Abschnitt **Profil** des relevanten Benutzerkontos gespeichert:
 
-   ![Alison Parkers Daten in CRXDE](assets/aparkercrxdelite.png)
+   ![Alina Schmidts Daten in CRXDE](assets/aparkercrxdelite.png)
 
 ## Profilstatus {#profile-states}
 
-Es gibt verschiedene Anwendungsfälle, bei denen es erforderlich ist zu wissen, ob sich ein Benutzer (oder eher sein Profil) in einem *spezifischer Status* oder nicht.
+Es gibt verschiedene Nutzungsszenarien, bei denen es wichtig ist zu wissen, ob sich eine Person (oder genauer: ihr Profil) in einem *bestimmten Status* befindet oder nicht.
 
 Dazu gehört das Definieren einer entsprechenden Eigenschaft im Benutzerprofil auf eine Weise, die:
 
 * für den Benutzer sichtbar und zugänglich ist
 * zwei Status für jede Eigenschaft definiert
-* Umschalten zwischen den beiden definierten Status
+* Hiermit können Sie zwischen den beiden definierten Status wechseln
 
 Dies geschieht mithilfe von:
 
@@ -160,7 +162,7 @@ Dies geschieht mithilfe von:
 
   Zum Verwalten von statusbezogenen Aktionen.
 
-Es können mehrere Status definiert werden. In Geometrixx umfassen diese beispielsweise:
+Es können mehrere Status definiert werden. In Geometrixx gehören dazu beispielsweise:
 
 * das Abonnieren (oder das Aufheben des Abonnements) von Benachrichtigungen zu Newslettern oder Kommentar-Threads
 * Das Hinzufügen und Entfernen einer Verknüpfung zu einem Freund bzw. einer Freundin
@@ -218,19 +220,19 @@ Diese Komponente bietet Ihnen zwei Felder für:
 
 Mit den Standardeinstellungen wird die Komponente wie folgt angezeigt:
 
-![Dialogfeld &quot;Kennwort überprüfen&quot;](assets/dc_profiles_checkedpassword.png)
+![Dialogfeld „Kennwort überprüfen“](assets/dc_profiles_checkedpassword.png)
 
 ### Profil – Avatar-Foto {#profile-avatar-photo}
 
 Diese Komponente bietet den Benutzenden einen Mechanismus zum Auswählen und Hochladen einer Avatar-Fotodatei.
 
-![Avatar-Selektor](assets/dc_profiles_avatarphoto.png)
+![Avatar-Auswahl](assets/dc_profiles_avatarphoto.png)
 
 ### Profil – Genauer Name {#profile-detailed-name}
 
 Mit dieser Komponente können die Benutzenden einen detaillierten Namen eingeben.
 
-![Dialogfeld &quot;Detailname&quot;](assets/dc_profiles_detailedname.png)
+![Dialogfeld „Genauer Name“](assets/dc_profiles_detailedname.png)
 
 ### Profil – Geschlecht {#profile-gender}
 

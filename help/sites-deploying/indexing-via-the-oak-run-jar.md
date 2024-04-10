@@ -1,28 +1,30 @@
 ---
-title: Indizierung mithilfe des Oak-run-JAR
-description: Erfahren Sie, wie Sie mithilfe des Oak-run-JAR eine Indizierung durchführen.
+title: Indizieren mit dem Oak-run JAR
+description: Erfahren Sie, wie Sie die Indizierung mit dem Oak-run JAR durchführen.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: dcec8c1b-13cc-486c-b1a4-62e6eb3184ad
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Configuring
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '923'
-ht-degree: 25%
+ht-degree: 100%
 
 ---
 
-# Indizierung mithilfe des Oak-run-JAR {#indexing-via-the-oak-run-jar}
+# Indizieren mit dem Oak-run JAR {#indexing-via-the-oak-run-jar}
 
-Oak-run unterstützt alle Indizierungs-Anwendungsfälle über die Befehlszeile, ohne dass der Einsatz von JMX erforderlich ist. Vorteile des Oak-Run-Ansatzes sind:
+Oak-run unterstützt alle Indizierungsszenarien über die Befehlszeile und muss nicht auf der JMX-Ebene ausgeführt werden.  Vorteile des Oak-run-Ansatzes:
 
-1. Es ist ein neues Indizierungs-Tool für AEM 6.4
-1. Dadurch wird die Zeit bis zur Neuindizierung verkürzt, was sich positiv auf die Neuindizierungszeiten bei größeren Repositorys auswirkt
-1. Sie reduziert den Ressourcenverbrauch während der Neuindizierung in AEM, was zu einer besseren Systemleistung für andere AEM-Aktivitäten führt.
-1. Oak-run bietet Out-of-Band-Unterstützung: Wenn Sie unter Produktionsbedingungen keine Neuindizierung auf Produktionsinstanzen durchführen lassen, kann eine geklonte Umgebung für die Neuindizierung verwendet werden, um kritische Leistungseinbußen zu vermeiden.
+1. Bietet ein neues Toolset zur Indizierung für AEM 6.4.
+1. Verringert die für die Neuindizierung erforderliche Zeit, was bei größeren Repositorys von Vorteil ist.
+1. Verringert den Ressourcenverbrauch während der Neuindizierung in AEM, was die Systemleistung für andere AEM-Aktivitäten verbessert.
+1. Oak-run bietet bandexternen Support: Wenn die Produktionsbedingungen keine Ausführung der Neuindizierung auf Produktionsinstanzen erlauben, kann für die Neuindizierung eine geklonte Umgebung genutzt werden, um eine kritische Leistungsbeeinträchtigung zu vermeiden.
 
-Im Folgenden finden Sie eine Liste von Anwendungsfällen, die bei der Durchführung von Indizierungsvorgängen über die `oak-run` -Tool.
+Nachstehend finden Sie eine Liste von Anwendungsfällen, die Sie bei der Durchführung von Indizierungen mit dem Tool `oak-run` nutzen können.
 
 ## Prüfung der Indexkonsistenz {#indexconsistencychecks}
 
@@ -30,7 +32,7 @@ Im Folgenden finden Sie eine Liste von Anwendungsfällen, die bei der Durchführ
 >
 >Weitere Informationen zu diesem Szenario finden Sie unter [Nutzungsszenario 1 - Prüfung der Indexkonsistenz](/help/sites-deploying/oak-run-indexing-usecases.md#usercase1indexconsistencycheck).
 
-* `oak-run.jar`ermittelt schnell, ob Lucene Oak-Indizes beschädigt sind.
+* `oak-run.jar` ermittelt schnell, ob Lucene Oak-Indizes beschädigt sind.
 * Es kann problemlos auf einer verwendeten AEM-Instanz ausgeführt werden, um die Konsistenz auf den Ebenen 1 und 2 zu prüfen.
 
 ![Prüfung der Indexkonsistenz](assets/screen_shot_2017-12-14at135758.png)
@@ -41,14 +43,14 @@ Im Folgenden finden Sie eine Liste von Anwendungsfällen, die bei der Durchführ
 >
 >Weitere Informationen zu diesem Szenario finden Sie unter [Nutzungsszenario 2 - Indexstatistiken](/help/sites-deploying/oak-run-indexing-usecases.md#usecase2indexstatistics) 
 
-* `oak-run.jar` Gibt alle Indexdefinitionen, wichtigen Indexstatistiken und Indexinhalte für die Offline-Analyse aus.
+* `oak-run.jar` speichert alle Indexdefinitionen, wichtige Indexstatistiken und Indexinhalte für Offline-Analysen.
 * Kann problemlos auf einer verwendeten AEM-Instanz ausgeführt werden.
 
 ![image2017-12-19_9-47-40](assets/image2017-12-19_9-47-40.png)
 
-## Entscheidungsbaum &quot;Neuindizierungsansatz&quot; {#reindexingapproachdecisiontree}
+## Entscheidungsdiagramm für den Ansatz zur Neuindizierung {#reindexingapproachdecisiontree}
 
-Dieses Diagramm ist ein Entscheidungsbaum für die Verwendung der verschiedenen Neuindizierungsansätze.
+Dieses Diagramm ist eine Entscheidungsbaumstruktur für die Verwendung der verschiedenen Neuindizierungsansätze.
 
 ![oak_-_reindexingwithoak-run](assets/oak_-_reindexingwithoak-run.png)
 
@@ -60,23 +62,23 @@ Dieses Diagramm ist ein Entscheidungsbaum für die Verwendung der verschiedenen 
 
 ### Textvorextraktion für SegmentNodeStore und DocumentNodeStore {#textpre-extraction}
 
-[Textvorextraktion](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (eine Funktion, die mit AEM 6.3 vorhanden ist) kann verwendet werden, um die Zeit für die Neuindizierung zu verkürzen. Die Textvorextraktion kann mit allen Neuindizierungsansätzen verwendet werden.
+Die [Textvorextraktion](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (eine Funktion, die mit AEM 6.3 eingeführt wurde) kann genutzt werden, um die Zeit für die Neuindizierung zu verkürzen. Die Textvorextraktion kann mit allen Neuindizierungsansätzen verwendet werden.
 
-Je nach `oak-run.jar` Indizierungsansatz verwenden, gibt es auf beiden Seiten des Schritts Neuindizierung durchführen im unten stehenden Diagramm verschiedene Schritte.
+Abhängig vom `oak-run.jar`-Indizierungsansatz, müssen, wie im Diagramm unten dargestellt, auf beiden Seiten des Schrittes zur Durchführung der Neuindizierung verschiedene Schritte ausgeführt werden.
 
 ![Textvorextraktion für SegmentNodeStore und DocumentNodeStore](assets/4.png)
 
 >[!NOTE]
 >
->Orange bezeichnet Aktivitäten, bei denen sich AEM in einem Wartungsfenster befinden müssen.
+>Aktivitäten, bei denen sich AEM in einem Wartungsfenster befinden muss, sind orangefarben dargestellt.
 
 ### Online-Neuindizierung für MongoMK oder RDBMK mit oak-run.jar {#onlinere-indexingformongomk}
 
 >[!NOTE]
 >
->Weitere Informationen zu diesem Szenario finden Sie unter [Neuindizieren - DocumentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#reindexdocumentnodestore).
+>Weitere Informationen zu diesem Szenario finden Sie unter [Neuindizieren – DocumentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#reindexdocumentnodestore).
 
-Dies ist die empfohlene Methode für die Neuindizierung von MongoMK (und RDBMK) AEM Installationen. Es sollte keine andere Methode angewendet werden.
+Dies ist die empfohlene Methode für die Neuindizierung von AEM-Installationen mit MongoMK (und RDBMK).  Wenden Sie keine andere Methode an.
 
 Führen Sie diesen Prozess nur für eine einzelne AEM-Instanz im Cluster aus.
 
@@ -86,25 +88,25 @@ Führen Sie diesen Prozess nur für eine einzelne AEM-Instanz im Cluster aus.
 
 >[!NOTE]
 >
->Weitere Informationen zu diesem Szenario finden Sie unter [Neuindizieren - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#reindexsegmentnodestore).
+>Weitere Informationen zu diesem Szenario finden Sie unter [Neuindizieren – SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#reindexsegmentnodestore).
 
 * **Überlegungen zu Cold-Standby (TarMK)**
 
-   * Für Cold Standby gibt es keine besonderen Überlegungen. Die Cold Standby-Instanzen synchronisieren Änderungen wie gewohnt.
+   * Es gibt keine besonderen Überlegungen zum Cold-Standby. Die Cold-Standby-Instanzen synchronisieren Änderungen wie üblich.
 
-* **AEM Veröffentlichungsfarmen (AEM-Veröffentlichungsfarmen sollten immer TarMK sein)**
+* **AEM-Veröffentlichungsfarmen (AEM-Veröffentlichungsfarmen müssen immer TarMK-Veröffentlichungsfarmen sein)**
 
-   * Für die Veröffentlichungsfarm muss dies für alle ODER die Schritte für eine einzelne Veröffentlichung ausgeführt werden. Dann klonen Sie das Setup für andere (nehmen Sie alle üblichen Vorsichtsmaßnahmen beim Klonen AEM Instanzen; sling.id - sollte hier auf etwas verweisen).
+   * Für eine Veröffentlichungsfarm muss dies für alle Veröffentlichungen ausgeführt werden, ODER die Schritte müssen für eine einzelne Veröffentlichung ausgeführt werden. Klonen Sie anschließend das Setup für andere (unter Berücksichtigung aller üblichen Vorsichtsmaßnahmen beim Klonen von AEM Instanzen; sling.id sollte hier auf etwas verweisen).
 
 ### Online-Neuindizierung für TarMK {#onlinere-indexingfortarmk}
 
 >[!NOTE]
 >
->Weitere Informationen zu diesem Szenario finden Sie unter [Online-Neuindizierung - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestore).
+>Weitere Informationen zu diesem Szenario finden Sie unter [Online-Neuindizierung – SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestore).
 
-Dies ist die Methode, die vor der Einführung der neuen Indizierungsfunktionen von oak-run.jar angewendet wurde. Dies geschieht durch Festlegen der `reindex=true` -Eigenschaft auf dem Oak-Index.
+Dies ist die Methode, die vor der Einführung der neuen Indizierungsfunktionen von oak-run.jar angewendet wurde. Sie kann verwendet werden, indem für den Oak-Index die Eigenschaft `reindex=true` festlegt wird.
 
-Dieser Ansatz kann verwendet werden, wenn die Zeit- und Leistungseffekte für den Kunden akzeptabel sind. Dies gilt häufig für kleine und mittlere AEM.
+Dieser Ansatz kann verwendet werden, wenn die Auswirkungen auf die Dauer und die Performance für die Kundin bzw. den Kunden akzeptabel sind.  Dies ist häufig bei kleinen und mittleren AEM-Installationen der Fall.
 
 ![Online-Neuindizierung für TarMK](assets/6.png)
 
@@ -114,7 +116,7 @@ Dieser Ansatz kann verwendet werden, wenn die Zeit- und Leistungseffekte für de
 >
 >Weitere Informationen zu diesem Szenario finden Sie unter [Online-Neuindizierung - SegmentNodeStore - Die AEM-Instanz wird ausgeführt](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoretheaeminstanceisrunning).
 
-Die Online-Neuindizierung von TarMK mithilfe von oak-run.jar ist schneller als die [Online-Neuindizierung für TarMK](#onlinere-indexingfortarmk) weiter oben beschrieben. Es erfordert jedoch auch die Ausführung während eines Wartungsfensters, mit der Hinweis, dass das Fenster kürzer ist und mehr Schritte erforderlich sind, um die Neuindizierung durchzuführen.
+Die Online-Neuindizierung von TarMK mithilfe von oak-run.jar ist schneller als die oben beschriebene [Online-Neuindizierung für TarMK](#onlinere-indexingfortarmk). Sie muss jedoch ebenfalls während eines Wartungsfensters ausgeführt werden, wobei das Zeitfenster kleiner ist und für die Neuindizierung mehr Schritte erforderlich sind.
 
 >[!NOTE]
 >
@@ -126,13 +128,13 @@ Die Online-Neuindizierung von TarMK mithilfe von oak-run.jar ist schneller als d
 
 >[!NOTE]
 >
->Weitere Informationen zu diesem Szenario finden Sie unter [Online-Neuindizierung - SegmentNodeStore - Die AEM Instanz ist beendet.](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoreaeminstanceisdown).
+>Weitere Informationen zu diesem Szenario finden Sie unter [Online-Neuindizierung – SegmentNodeStore – Die AEM-Instanz ist heruntergefahren](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoreaeminstanceisdown).
 
-Die Offline-Neuindizierung von TarMK ist die einfachste `oak-run.jar` basierter Neuindizierungsansatz für TarMK, da er nur eine `oak-run.jar` kommentieren. Dazu muss die AEM Instanz jedoch heruntergefahren werden.
+Die Offline-Neuindizierung von TarMK ist der einfachste auf `oak-run.jar` basierende Neuindizierungsansatz für TarMK, da nur ein einziger `oak-run.jar`-Befehl erforderlich ist. Die AEM-Instanz muss jedoch heruntergefahren werden.
 
 >[!NOTE]
 >
->Rot bezeichnet Vorgänge, bei denen AEM heruntergefahren werden müssen.
+>Vorgänge, bei denen AEM heruntergefahren sein muss, sind rot dargestellt.
 
 ![Offline-Neuindizierung von TarMK mit oak-run.jar](assets/8.png)
 
@@ -140,13 +142,13 @@ Die Offline-Neuindizierung von TarMK ist die einfachste `oak-run.jar` basierter 
 
 >[!NOTE]
 >
->Weitere Informationen zu diesem Szenario finden Sie unter [Out-Band-Neuindizierung - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#outofbandreindexsegmentnodestore).
+>Weitere Informationen zu diesem Szenario finden Sie unter [Bandexterne Neuindizierung – SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#outofbandreindexsegmentnodestore).
 
-Die Out-of-Band-Neuindizierung minimiert die Auswirkungen der Neuindizierung auf AEM-Instanzen in der Verwendung.
+Die Out-of-Band-Neuindizierung minimiert die Auswirkung der Neuindizierung auf verwendete AEM-Instanzen.
 
 >[!NOTE]
 >
->Rot bezeichnet Vorgänge, bei denen AEM abgeschaltet werden können.
+>Vorgänge, bei denen AEM heruntergefahren sein muss, sind rot dargestellt.
 
 ![Out-of-Band-Neuindizierung von TarMK mit oak-run.jar](assets/9.png)
 
@@ -156,24 +158,24 @@ Die Out-of-Band-Neuindizierung minimiert die Auswirkungen der Neuindizierung auf
 >
 >Weitere Informationen zu diesem Szenario finden Sie unter [Nutzungsszenario 4 - Aktualisieren von Indexdefinitionen](/help/sites-deploying/oak-run-indexing-usecases.md#usecase4updatingindexdefinitions).
 
-### Erstellen und Aktualisieren von Indexdefinitionen auf TarMK mithilfe von ACS Ensure Index {#creatingandupdatingindexdefinitionsontarmkusingacsensureindex}
+### Erstellen und Aktualisieren von Indexdefinitionen auf TarMK mit ACS Ensure Index {#creatingandupdatingindexdefinitionsontarmkusingacsensureindex}
 
 >[!NOTE]
 >
->ACS Ensure Index ist ein von der Community unterstütztes Projekt und wird von der Adobe-Unterstützung nicht unterstützt.
+>ACS Ensure Index ist ein Community-Projekt, das nicht vom Adobe-Support unterstützt wird.
 
-Dies ermöglicht den Versand der Indexdefinition über das Inhaltspaket, was später zu einer Neuindizierung führt, indem das reindex-Flag auf `true`. Dies funktioniert bei kleineren Setups, bei denen die Neuindizierung nicht lange dauert.
+Es ermöglicht das Versenden der Indexdefinition über ein Inhaltspaket, das später zu einer Neuindizierung führt, indem für das Neuindizierungs-Flag der Wert `true` festgelegt wird. Dies funktioniert für kleinere Setups, bei denen die Neuindizierung nicht viel Zeit in Anspruch nimmt.
 
-Weitere Informationen finden Sie unter [ACS Ensure Index-Dokumentation](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) für Details.
+Weitere Informationen finden Sie in der [Dokumentation zu ACS Ensure Index](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html).
 
 ### Erstellen und Aktualisieren von Indexdefinitionen auf TarMK mit oak-run.jar {#creatingandupdatingindexdefinitionsontarmkusingoak-run-jar}
 
-Wenn die Zeit- oder Leistungsauswirkungen der Neuindizierung mit Nicht-Indizierung`oak-run.jar` -Methoden zu hoch ist, lautet die folgende `oak-run.jar` kann zum Importieren und Neuindizieren von Lucene-Index-Definitionen in einer TarMK-basierten AEM verwendet werden.
+Wenn die Dauer der Neuindizierung oder die Auswirkung auf die Performance bei Nicht-`oak-run.jar`-Methoden zu hoch ist, kann der folgende auf `oak-run.jar` basierende Ansatz genutzt werden, um Lucene-Indexdefinitionen in eine TarMK-basierte AEM-Installation zu importieren und neu zu indizieren.
 
 ![Erstellen und Aktualisieren von Indexdefinitionen auf TarMK mit oak-run.jar](assets/10.png)
 
 ### Erstellen und Aktualisieren von Indexdefinitionen auf MongoMK mit oak-run.jar {#creatingandupdatingindexdefinitionsonmonogmkusingoak-run-jar}
 
-Wenn die Zeit- oder Leistungsauswirkungen der Neuindizierung mit Nicht-Indizierung`oak-run.jar` -Methoden zu hoch ist, lautet die folgende `oak-run.jar` kann zum Importieren und Neuindizieren von Lucene-Index-Definitionen in MongoMK-basierten AEM verwendet werden.
+Wenn die Dauer der Neuindizierung oder die Auswirkung auf die Performance bei Nicht-`oak-run.jar`-Methoden zu hoch ist, kann der folgende auf `oak-run.jar` basierende Ansatz genutzt werden, um Lucene-Indexdefinitionen in MongoMK-basierte AEM-Installationen zu importieren und neu zu indizieren.
 
 ![Erstellen und Aktualisieren von Indexdefinitionen auf MongoMK mit oak-run.jar](assets/11.png)

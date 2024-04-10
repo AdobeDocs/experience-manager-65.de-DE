@@ -1,6 +1,6 @@
 ---
 title: Upgrades von Code und Anpassungen
-description: Erfahren Sie mehr über das Upgrade von Code und Anpassungen in AEM.
+description: Erfahren Sie mehr über Code-Aktualisierungen und Benutzerdefinitionen in AEM.
 contentOwner: sarchiz
 topic-tags: upgrading
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,11 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: a36a310d-5943-4ff5-8ba9-50eaedda98c5
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '2138'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
