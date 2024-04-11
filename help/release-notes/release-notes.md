@@ -4,9 +4,9 @@ description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsan
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 source-git-commit: f22f51b4d65abf4cf1f6e04952f873eca5119727
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3735'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -92,11 +92,11 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 
 #### [!DNL Content Fragments] – REST-API{#sites-restapi-6520}
 
-* Mit der Aktualisierung der `org.json`-Bibliothek wurde die Deserialisierung von Dezimalzahlen geändert. Vorher wurden sie „standardmäßig“ in „Double“ und jetzt in „BigDecimals“ umgewandelt.  Stattdessen sollten die Metadaten-Eigenschaftswerte, die über die REST-API gespeichert werden, von „BigDecimal“ in „Double“ konvertiert werden. (SITES-16857)
+* Mit der Aktualisierung der `org.json`-Bibliothek wurde die Deserialisierung von Dezimalzahlen geändert. Vorher wurden sie „standardmäßig“ in „Double“ und jetzt in „BigDecimals“ umgewandelt. Stattdessen sollten die Metadaten-Eigenschaftswerte, die über die REST-API gespeichert werden, von „BigDecimal“ in „Double“ konvertiert werden. (SITES-16857)
 
 #### Core-Backend{#sites-core-backend-6520}
 
-* Wenn die Funktion „Quick Publish“ eines Inhaltsfragments verwendet wird, wird das Fragment weiter geladen und nicht veröffentlicht. Das heißt, nach einer Service Pack-Aktualisierung von AEM 6.5.7 auf AEM 6.5.17 funktioniert die Funktion „Quick Publish“ nicht für Inhaltsfragmente. Als die Person es mit einer verwalteten Veröffentlichung versuchte, funktionierte dies zwar,  als sie jedoch versuchte, die Funktion „Quick Publish“ zu verwenden, wurde die Veröffentlichung nicht durchgeführt.  Genau gesagt: `com.day.cq.wcm.core.impl.reference.ActivationReferenceSearchBuilder` hat den Absturz des Systems verursacht. (SITES-17311)
+* Wenn die Funktion „Quick Publish“ eines Inhaltsfragments verwendet wird, wird das Fragment weiter geladen und nicht veröffentlicht. Das heißt, nach einer Service Pack-Aktualisierung von AEM 6.5.7 auf AEM 6.5.17 funktioniert die Funktion „Quick Publish“ nicht für Inhaltsfragmente. Als die Person es mit einer verwalteten Veröffentlichung versuchte, funktionierte dies zwar, als sie jedoch versuchte, die Funktion „Quick Publish“ zu verwenden, wurde die Veröffentlichung nicht durchgeführt.  Genau gesagt: `com.day.cq.wcm.core.impl.reference.ActivationReferenceSearchBuilder` hat den Absturz des Systems verursacht. (SITES-17311)
 * Inhaltsfragmente können mit Jackson Exporter nicht serialisiert werden: Das Laden der Seite bricht ab, wenn ein Inhaltsfragment auf einer Seite referenziert ist (verwendet Jackson Exporter-Code) und ein beliebiges Tag zu einem Inhaltsfragment hinzugefügt wird. (SITES-18096)
 
 #### Kernkomponenten{#sites-core-components-6520}
@@ -105,7 +105,7 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 
 #### Campaign-Integration{#sites-campaign-integration-6520}
 
-* AEM verwendete eine Zulassungsliste – auch bekannt als `whitelist` – aufgrund eines Berichts über Sicherheitslücken. Die Zulassungsliste hinderte Kundinnen und Kunden daran, die benötigten Funktionen zu verwenden. (SITES-16822)
+* AEM verwendete eine Zulassungsliste – auch bekannt als `whitelist`– aufgrund eines Berichts über Sicherheitslücken. Die Zulassungsliste hinderte Kundinnen und Kunden daran, die benötigten Funktionen zu verwenden. (SITES-16822)
 
 #### Experience Fragments{#sites-experiencefragments-6520}
 
@@ -143,7 +143,7 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 #### [!DNL Dynamic Media]{#assets-dm-6520}
 
 * Nachdem ein Asset in AEM hochgeladen wurde, wird der Workflow `Update_asset` ausgelöst. Der Workflow wird aber nie abgeschlossen. Der Workflow wird nur bis zum Schritt zum Hochladen des Produkts abgeschlossen. Der nächste Schritt ist der Scene7-Batch-Upload, aber dieser Prozess wird nicht in AEM übertragen. (ASSETS-30443)
-* Es besteht Bedarf für eine bessere Möglichkeit zur angemessenen Handhabung von Nicht-Dynamic Media-Videos in der Dynamic Media-Komponente. Dieses Problem führte zu einer Ausnahme, bei der `dynamicmedia_sly.js` instanziiert wurde.  (ASSETS-31301)
+* Es besteht Bedarf für eine bessere Möglichkeit zur angemessenen Handhabung von Nicht-Dynamic Media-Videos in der Dynamic Media-Komponente. Dieses Problem führte zu einer Ausnahme, bei der `dynamicmedia_sly.js` instanziiert wurde. (ASSETS-31301)
 * Die Vorschau funktioniert für alle Assets, adaptiven Videosets und Videos. Es wird jedoch ein 403-Fehler für `.m3u8`-Dateien ausgelöst (die übrigens über öffentliche Links noch funktionieren). (ASSETS-31882)
 * Der Status `scene7SmartCropProcessingStatus` wurde korrigiert. Beim intelligenten Zuschneiden von Videometadaten wurde ein Fehler angezeigt, selbst wenn der Vorgag erfolgreich war. (ASSETS-31255)
 
@@ -154,7 +154,7 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 #### [!DNL Adaptive Forms]
 
 * Wenn Benutzende versuchen, AEM Forms mit einer von AEM veröffentlichten URL in eine Mailing-Plattform zu integrieren, fügt AEM Forms beim Rendern der Seite kein `method=post` hinzu. Dieses Problem tritt auf, obwohl `POST` in der Übermittlungsaktion mit der URL festgelegt ist. Dadurch erkennt die Mailing-Plattform dies nicht als Formular. (FORMS-12614)
-* Wenn Benutzende das Datumsfeld auswählen, das über ein Anzeigemuster in AEM Form Service Pack 6.5.18.0 verfügt, können sie das aktuelle Datum nicht über die Tastatur auswählen. (FORMS-12736)
+* Wenn Benutzende das Datumsfeld auswählen, das über ein Anzeigemuster in AEM Form Service Pack 6.5.18.0 verfügt, können sie das aktuelle Datum nicht über die Tastatur auswählen.  (FORMS-12736)
 * Wenn Benutzende in AEM Forms Service Pack 6.5.17.0 und Service Pack 6.5.18.0 zwischen Monaten im Kalender-Widget wechseln, zeigt die Komponente „Datumsauswahl“ eine zusätzliche Zeile an. (FORMS-11869)
 * Wenn Benutzende auf einem iOS-Gerät die Fotoaufnahme-Option in der Komponente „Anlage“ verwenden und auf ein Bild klicken, werden alle Bilder mit demselben Namen zum Ordner hinzugefügt. (FORMS-12224)
 * Wenn Benutzende eine vorhandene Option in einer Optionsfeldgruppe aktualisieren, werden falsche Übersetzungswerte veröffentlicht. (FORMS-12575)
@@ -250,9 +250,9 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 
 #### Übersetzung{#foundation-translation-6520}
 
-* Nach der Bereitstellung von AEM 6.5 Service Pack 18 trat ein Problem mit der Registerkarte „Filter“ im Editor für Übersetzungsregeln auf. Wenn ein Kontext ausgewählt ist, erscheint durch Klicken auf „Bearbeiten“ > „Speichern“ beim nächsten Öffnen desselben Kontexts ein doppeltes Anführungszeichen als HTML-Zeichen.  Im Grunde wurden die Übersetzungsregeln nicht korrekt gespeichert. (NPR-41624)
+* Nach der Bereitstellung von AEM 6.5 Service Pack 18 trat ein Problem mit der Registerkarte „Filter“ im Editor für Übersetzungsregeln auf. Wenn ein Kontext ausgewählt ist, erscheint durch Klicken auf „Bearbeiten“ > „Speichern“ beim nächsten Öffnen desselben Kontexts ein doppeltes Anführungszeichen als HTML-Zeichen. Im Grunde wurden die Übersetzungsregeln nicht korrekt gespeichert. (NPR-41624)
 * Probleme im Zusammenhang mit Inhaltsfragment-Übersetzungen, bei denen die übersetzten Zeichenfolgen vom Übersetzungsanbieter an AEM zurückgesendet werden, aber auf der Ebene `/content/projects` stecken bleiben und die Inhaltsfragmente nicht aktualisiert wurden. (NPR-41516)
-* Beim Erstellen einer Sprachkopie wird eine Fehlermeldung angezeigt. Sie tritt auf einer Seite auf, die ein Inhaltsfragment enthält, auf das mit Inhaltsfragmentmodellen in einer Seiteneigenschaft verwiesen wird.  (NPR-41441)
+* Beim Erstellen einer Sprachkopie wird eine Fehlermeldung angezeigt. Sie tritt auf einer Seite auf, die ein Inhaltsfragment enthält, auf das mit Inhaltsfragmentmodellen in einer Seiteneigenschaft verwiesen wird. (NPR-41441)
 * Links in Experience Fragments werden während der Sprachkopie nicht an die richtige Sprache angepasst. Stattdessen verweist das Experience Fragment auf das primäre Gebietsschema. (NPR-41343)
 
 #### Benutzeroberfläche{#foundation-ui-6520}
@@ -462,7 +462,7 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
 * Ab AEM 6.5.15 weist die vom Bundle ```org.apache.servicemix.bundles.rhino``` bereitgestellte Rhino-JavaScript-Engine ein neues Hoisting-Verhalten auf. Skripte, die den strikten Modus (```use strict;```) verwenden, müssen ihre Variablen korrekt deklarieren, sonst werden sie nicht ausgeführt, sondern geben einen Laufzeitfehler aus.
 
-* Durch die Installation von Tags für verwandte native Inhalte über ein offizielles Aktualisierungspaket (einschließlich Service Packs, Security Service Packs, Extended Feature Packs, Cumulative Feature Packs, Patches usw.) wird die Spracheigenschaft der `/content/cq:tags` -Knoten auf Standard umzustellen. Daher ist es erforderlich, sie vor der Installation aus den Eigenschaften hinzuzufügen.
+* Durch die Installation von Tag-bezogenen, vorkonfigurierten Inhalten über ein offizielles Update-Paket (einschließlich Service Packs, Security Service Packs, Extended Feature Packs, Cumulative Feature Packs, Patches usw.) wird die Spracheigenschaft des Knotens „`/content/cq:tags`“ auf den Standardwert zurückgesetzt. Daher ist es erforderlich, sie vor der Installation aus den Eigenschaften hinzuzufügen.
 
 ### Bekannte Probleme bei AEM Forms {#known-issues-aem-forms-6520}
 
