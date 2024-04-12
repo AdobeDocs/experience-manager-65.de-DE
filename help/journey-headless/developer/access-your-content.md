@@ -2,7 +2,10 @@
 title: Zugreifen auf Ihre Inhalte über AEM-Bereitstellungs-APIs
 description: In diesem Teil der AEM Headless-Entwickler-Tour lernen Sie, wie Sie GraphQL-Abfragen verwenden, um auf den Inhalt Ihrer Inhaltsfragmente zuzugreifen.
 exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin, Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1301'
 ht-degree: 100%

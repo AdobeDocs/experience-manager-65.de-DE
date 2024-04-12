@@ -1,16 +1,18 @@
 ---
 title: Testen von Experience Fragments in We.Retail
-description: Erfahren Sie, wie Sie mithilfe von We.Retail Experience Fragments in Adobe Experience Manager ausprobieren.
+description: Erfahren Sie, wie Sie Experience Fragments in Adobe Experience Manager mit We.Retail ausprobieren.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: e17ff611-122a-4d17-97af-071d0234dd16
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Experience Fragments,Developing
+role: Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '242'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 

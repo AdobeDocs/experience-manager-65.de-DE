@@ -6,10 +6,12 @@ content-type: reference
 docset: aem65
 exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
 solution: Experience Manager, Experience Manager 6.5
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Compliance
+role: Developer,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '3524'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -469,7 +471,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-Darüber hinaus kann die für XML-Sitemaps implementierte Funktionalität auch für verschiedene Anwendungsfälle verwendet werden, z. B. um den kanonischen Link hinzuzufügen oder die Sprache wechselt zum Kopf einer Seite. Weitere Informationen finden Sie in der [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html)-Oberfläche.
+Darüber hinaus kann die für XML-Sitemaps implementierte Funktionalität auch in verschiedenen Nutzungsszenarien verwendet werden, z. B. um den kanonischen Link oder die Sprachalternativen zum Header einer Seite hinzuzufügen. Weitere Informationen finden Sie in der [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html)-Oberfläche.
 
 ### Erstellen von 301-Weiterleitungen für veraltete URLs {#creating-redirects-for-legacy-urls}
 

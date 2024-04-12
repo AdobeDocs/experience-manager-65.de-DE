@@ -1,13 +1,14 @@
 ---
 title: Assistent „Sprachkopie erstellen“
-description: Erfahren Sie mehr über die Verwendung des Sprachkopie-Assistenten in Adobe Experience Manager.
+description: Erfahren Sie mehr über die Verwendung des Assistenten „Sprachkopie erstellen“ in Adobe Experience Manager.
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -17,11 +18,11 @@ Der Assistent „Sprachkopie erstellen“ führt Sie durch die Erstellung und Ve
 
 >[!NOTE]
 >
->Der Benutzer muss Mitglied der Gruppe projects-administrators sein, um die Sprachkopie einer Site zu erstellen.
+>Benutzende müssen Mitglieder der Gruppe „projects-administrators“ sein, um die Sprachkopie einer Seite zu erstellen.
 
 Sie können wie folgt auf diesen Assistenten zugreifen:
 
-1. Wählen Sie in Sites eine Seite aus und klicken Sie auf Erstellen .
+1. Wählen Sie unter „Sites“ eine Seite aus und klicken Sie auf „Erstellen“.
 
    ![chlimage_1-9](assets/chlimage_1-9.jpeg)
 
@@ -41,7 +42,7 @@ Sie können wie folgt auf diesen Assistenten zugreifen:
    >
    >Standardmäßig gibt es nur eine Übersetzungs-Einstellung. Um die Auswahl anderer Einstellungen zu ermöglichen, müssen Sie zuerst die Cloud-Einstellungen konfigurieren. Siehe [Konfigurieren des Übersetzungsintegrations-Frameworks](/help/sites-administering/tc-tic.md).
 
-1. Über die Schaltfläche **Weiter** gelangen Sie zum Schritt **Übersetzen** des Assistenten. Hier können Sie zwischen der Erstellung der Struktur, der Erstellung eines Übersetzungsprojekts oder dem Hinzufügen zu einem vorhandenen Übersetzungsprojekt wählen.
+1. Über die Schaltfläche **Weiter** gelangen Sie zum Schritt **Übersetzen** des Assistenten. Hier können Sie wählen, ob Sie nur die Struktur oder ein Übersetzungsprojekt erstellen oder ein vorhandenes Übersetzungsprojekt hinzufügen möchten.
 
    >[!NOTE]
    >

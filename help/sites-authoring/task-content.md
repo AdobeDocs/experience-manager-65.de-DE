@@ -7,10 +7,12 @@ topic-tags: projects
 content-type: reference
 exl-id: a0719745-8d67-44bc-92ba-9ab07f31f8d2
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +31,7 @@ Sie können den Projektfortschritt verfolgen, indem Sie sich die aktiven/abgesch
 
 * **Aufgabenliste:** Beim Klicken auf die Aufgabenkachel wird eine Liste von Aufgaben angezeigt. Diese Liste enthält detaillierte Informationen zu allen Aufgaben in Zusammenhang mit dem Projekt.
 
-Beide Optionen listen Workflow-Aufgaben und Aufgaben auf, die Sie direkt in der Aufgabenkachel erstellen.
+Bei beiden Optionen werden sowohl Workflow-Aufgaben als auch Aufgaben, die Sie direkt auf der Aufgabenkachel erstellen, aufgelistet.
 
 ### Aufgabenkachel {#task-tile}
 
@@ -47,13 +49,13 @@ Zusätzlich zur Verfolgung des Fortschritts möchten Sie vielleicht auch Informa
 
 #### Aufgabenliste {#task-list}
 
-Klicken Sie unten rechts in der Aufgabenkachel auf die Schaltfläche mit Auslassungspunkten, um Ihren Posteingang anzuzeigen, der nach den Aufgaben im Zusammenhang mit dem Projekt gefiltert wurde. Die Aufgabendetails werden zusammen mit Metadaten wie Fälligkeitsdatum, Verantwortlicher, Priorität und Status angezeigt.
+Klicken Sie unten rechts in der Aufgabenkachel auf die Schaltfläche mit Auslassungspunkten, um den Posteingang anzuzeigen, der nach den mit dem Projekt verbundenen Aufgaben gefiltert wurde. Die Aufgabendetails werden zusammen mit Metadaten wie Fälligkeitsdatum, Verantwortlicher, Priorität und Status angezeigt.
 
 ![Posteingang für Projektaufgaben](assets/project-tasks.png)
 
 #### Aufgabendetails {#task-details}
 
-Um weitere Informationen zu einer bestimmten Aufgabe zu erhalten, klicken Sie im Posteingang auf die Aufgabe, um sie auszuwählen, und klicken Sie dann auf **Öffnen** in der Symbolleiste.
+Um weitere Informationen zu einer bestimmten Aufgabe zu erhalten, klicken Sie im Posteingang auf die Aufgabe, um sie auszuwählen, oder klicken Sie in der Symbolleiste auf **Öffnen**.
 
 ![Aufgabendetails](assets/project-task-detail.png)
 
@@ -71,12 +73,12 @@ Sie können neue Aufgaben zu Projekten hinzufügen. Diese Aufgaben werden dann i
 So fügen Sie eine Aufgabe hinzu:
 
 1. Suchen Sie im Projekt die Kachel **Aufgaben**.
-1. Klicken Sie auf den nach unten gerichteten Pfeil oben rechts in der Kachel und wählen Sie **Aufgabe erstellen**.
+1. Klicken Sie oben rechts auf der Kachel auf den nach unten gerichteten Pfeil und wählen Sie **Aufgabe erstellen** aus.
 1. Geben Sie im Fester **Aufgabe hinzufügen** Aufgabendetails wie Priorität, Beauftragter und Fälligkeitsdatum an.
 
    ![Hinzufügen einer Aufgabe](assets/project-add-task.png)
 
-1. Klicken Sie auf **Senden**.
+1. Klicken Sie auf **Absenden**.
 
 ## Arbeiten mit Aufgaben im Posteingang {#working-with-tasks-in-the-inbox}
 

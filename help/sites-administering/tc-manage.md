@@ -3,10 +3,12 @@ title: Verwalten von Übersetzungsprojekten
 description: Erfahren Sie, wie Sie Übersetzungsprojekte in Adobe Experience Manager verwalten.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Language Copy
+role: Admin
+source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '3506'
-ht-degree: 83%
+ht-degree: 85%
 
 ---
 
@@ -413,7 +415,7 @@ Füllen Sie Ihre Sprachkopie so, dass sie Inhalte aus der Stammsprache enthält,
 
 ## Verschieben oder Umbenennen einer Quellseite {#move-source}
 
-Wenn eine bereits übersetzte Quellseite [umbenannt oder verschoben](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), wodurch die Seite nach dem Verschieben erneut übersetzt wird, wird eine Sprachkopie erstellt, die auf dem neuen Seitennamen/Speicherort basiert. Die alte Sprachkopie, die auf dem vorherigen Namen/Speicherort basiert, ist noch vorhanden. Um dies zu verhindern, können Sie nach dem Verschieben die Funktion zum Aktualisieren der Sprachkopie verwenden:
+Wenn eine bereits übersetzte Quellseite [umbenannt oder verschoben](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page) werden muss, wird beim erneuten Übersetzen der Seite nach der Verschiebung eine Sprachkopie auf Grundlage des neuen Seitennamens/Speicherorts erstellt. Die alte Sprachkopie mit dem vorherigen Namen/Speicherort bleibt bestehen. Um dies zu verhindern, können Sie nach dem Verschieben die Funktion zum Aktualisieren der Sprachkopie verwenden:
 
 1. Verschieben Sie eine Seite mit einer Sprachkopie.
 1. Wählen Sie den Sprachkopiestamm aus.
@@ -422,17 +424,17 @@ Wenn eine bereits übersetzte Quellseite [umbenannt oder verschoben](/help/sites
 1. Wählen Sie die zu aktualisierenden Zielsprachen aus.
 1. Wählen Sie **Sprachkopien aktualisieren** aus.
 
-   ![updating-language-copy](assets/translation-move-to.png)
+   ![Aktualisieren der Sprachkopie](assets/translation-move-to.png)
 
 1. Klicken Sie auf **Aktualisieren**. Es wird ein [Launch](/help/sites-authoring/launches-promoting.md) erstellt.
 1. Navigieren Sie zum erforderlichen Sprachstamm und wählen Sie ihn aus.
 1. Wählen Sie über das Bedienfeld **Verweise** **Launches** aus.
 
-   ![promote-launch-translation](assets/promote-launch-translation.png)
+   ![Launch bewerben – Übersetzung](assets/promote-launch-translation.png)
 
-1. Klicken Sie auf den erstellten Launch und klicken Sie auf **Launch bewerben**.
+1. Klicken Sie auf den erstellten Launch und dann auf **Launch bewerben**.
 
-Jetzt wurde die Quellseite und die zugehörige Sprachkopie verschoben.
+Die Quellseite und die zugehörige Sprachkopie wurden nun verschoben.
 
 ## Erstellen von Übersetzungsprojekten mithilfe der Projektkonsole {#creating-a-translation-project-using-the-projects-console}
 

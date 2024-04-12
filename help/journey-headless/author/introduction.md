@@ -2,7 +2,10 @@
 title: Authoring für Headless mit Adobe Experience Manager
 description: Eine Einführung in die leistungsstarken und flexiblen, Headless-Funktionen von Adobe Experience Manager und die Erstellung von Inhalten für Ihr Projekt.
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
-source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 96%

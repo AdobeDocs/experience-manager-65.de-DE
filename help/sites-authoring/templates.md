@@ -8,10 +8,12 @@ topic-tags: site-features
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '4825'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +25,7 @@ Mit dem **Vorlageneditor** ist das Erstellen und Verwalten von Vorlagen nicht me
 
 Mit der **Vorlagenkonsole** können Vorlagenautorinnen bzw. -autoren:
 
-* Erstellen Sie eine Vorlage oder kopieren Sie eine vorhandene Vorlage.
+* eine neue Vorlage erstellen oder eine vorhandene Vorlage kopieren
 * den Lebenszyklus der Vorlage verwalten
 
 Mit dem **Vorlageneditor** können Vorlagenautoren:
@@ -34,11 +36,11 @@ Mit dem **Vorlageneditor** können Vorlagenautoren:
 
 In diesem Dokument wird erklärt, wie ein **Vorlagenautor** die Vorlagenkonsole und den Vorlageneditor verwenden kann, um bearbeitbare Vorlagen zu erstellen und zu verwalten.
 
-Ausführliche Informationen zur Funktionsweise von bearbeitbaren Vorlagen auf technischer Ebene finden Sie im Entwicklerdokument [Seitenvorlagen - bearbeitbar](/help/sites-developing/page-templates-editable.md) für weitere Informationen.
+Ausführliche Informationen zur Funktionsweise von bearbeitbaren Vorlagen auf technischer Ebene finden Sie im Entwicklerdokument [Bearbeitbare Seitenvorlagen](/help/sites-developing/page-templates-editable.md).
 
 >[!NOTE]
 >
->Der **Vorlageneditor** unterstützt kein Targeting direkt auf Vorlagenstufe. Seiten, die auf der Grundlage einer bearbeitbaren Vorlage erstellt wurden, können als Ziel angegeben werden, aber die Vorlagen selber nicht.
+>Der **Vorlageneditor** unterstützt kein Targeting direkt auf Vorlagenstufe. Seiten, die auf der Grundlage einer bearbeitbaren Vorlage erstellt wurden, können als Ziel angegeben werden, aber die Vorlagen selbst nicht.
 
 >[!CAUTION]
 >
@@ -52,13 +54,13 @@ Ausführliche Informationen zur Funktionsweise von bearbeitbaren Vorlagen auf te
 
 Achten Sie auf Folgendes, bevor Sie beginnen:
 
-* Das Erstellen einer Vorlage erfordert Zusammenarbeit. Aus diesem Grund wird für jede Aufgabe eine [Rolle](#roles) angezeigt.
+* Das Erstellen einer Vorlage erfordert eine Zusammenarbeit.  Aus diesem Grund wird für jede Aufgabe eine [Rolle](#roles) angezeigt.
 
-* Je nach Konfiguration Ihrer Instanz bietet AEM jetzt [zwei grundlegende Vorlagentypen](/help/sites-authoring/templates.md#editable-and-static-templates). Dies hat keinen Einfluss auf die Art und Weise, wie Sie [eine Seite mit einer Vorlage erstellen](#using-a-template-to-create-a-page), aber auf die Art von Vorlage, die Sie erstellen können, und wie eine Seite mit ihrer Vorlage in Beziehung steht.
+* Je nach Konfiguration Ihrer Instanz bietet AEM jetzt [zwei grundlegende Arten von Vorlagen](/help/sites-authoring/templates.md#editable-and-static-templates). Dies hat keinen Einfluss auf die Art und Weise, wie Sie [eine Seite mit einer Vorlage erstellen](#using-a-template-to-create-a-page), aber auf die Art von Vorlage, die Sie erstellen können, und wie eine Seite mit ihrer Vorlage in Beziehung steht.
 
 ### Rollen {#roles}
 
-Erstellen einer Vorlage mit dem **Vorlagenkonsole** und **Vorlagen-Editor** erfordert die Zusammenarbeit zwischen den folgenden Rollen:
+Für das Erstellen einer Vorlage mithilfe der **Vorlagenkonsole** und des **Vorlageneditors** ist eine Zusammenarbeit zwischen folgenden Rollen erforderlich:
 
 * **Admin**:
 
@@ -98,7 +100,7 @@ AEM bietet jetzt zwei grundlegende Arten von Vorlagen:
 
    * Können von Vorlagenautoren [erstellt](#creatinganewtemplate) und [bearbeitet](#editingatemplate) werden, indem die **Vorlagenkonsole und der Vorlagen-Editor** verwendet werden. Auf die **Vorlagenkonsole** kann im Bereich **Allgemein** der Konsole **Werkzeuge** zugegriffen werden.
 
-   * Nachdem die neue Seite erstellt wurde, wird eine dynamische Verbindung zwischen der Seite und der Vorlage aufrechterhalten. Das bedeutet, dass Änderungen an der Vorlagenstruktur und/oder an gesperrten Inhalten auf allen Seiten übernommen werden, die mit dieser Vorlage erstellt werden. Änderungen am entsperrten (d. h. anfänglichen) Inhalt werden nicht übernommen.
+   * Nachdem die neue Seite erstellt wurde, wird eine dynamische Verbindung zwischen der Seite und der Vorlage aufrechterhalten. Das bedeutet, dass Änderungen an der Vorlagenstruktur und/oder an gesperrten Inhalten auf allen Seiten übernommen werden, die mit dieser Vorlage erstellt werden. Änderungen am entsperrten (d. h. anfänglichen) Inhalt werden nicht übernommen.
    * Verwenden Sie die Inhaltsrichtlinien, die Sie im Vorlagen-Editor definieren können, um die Designeigenschaften beizubehalten. Der Design-Modus im Seiteneditor wird nicht mehr für bearbeitbare Vorlagen verwendet.
 
 * Statische Vorlagen
@@ -107,26 +109,26 @@ AEM bietet jetzt zwei grundlegende Arten von Vorlagen:
    * Sie werden [von Ihren Entwicklern bereitgestellt](/help/sites-developing/page-templates-static.md) und können somit nicht von Autoren erstellt oder bearbeitet werden.
    * Sie werden kopiert, um die neue Seite zu erstellen, wobei danach keine dynamische Verbindung besteht (obwohl der Name der Vorlage zu Informationszwecken registriert ist).
    * Verwenden Sie den [Designmodus](/help/sites-authoring/default-components-designmode.md), um Designeigenschaften beizubehalten.
-   * Da die Bearbeitung statischer Vorlagen die ausschließliche Aufgabe eines Entwicklers ist, lesen Sie das Entwicklerdokument [Seitenvorlagen - Statisch](/help/sites-developing/page-templates-static.md) für weitere Informationen.
+   * Da die Bearbeitung von statischen Vorlagen ausschließlich von Entwickelnden durchgeführt wird, lesen Sie das Entwicklerdokument [Statische Seitenvorlagen](/help/sites-developing/page-templates-static.md), um weitere Informationen zu erhalten.
 
 Die Vorlagenkonsole und der Vorlageneditor ermöglichen standardmäßig nur die Erstellung und Bearbeitung bearbeitbarer Vorlagen. Deshalb konzentriert sich dieses Dokument ausschließlich auf bearbeitbare Vorlagen.
 
 ### Verwenden einer Vorlage zum Erstellen einer Seite {#using-a-template-to-create-a-page}
 
-Bei Verwendung einer Vorlage für [Erstellen einer Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page) Es gibt keinen sichtbaren Unterschied und keinen Hinweis zwischen statischen und bearbeitbaren Vorlagen. Für die Seitenautoren ist der Prozess transparent.
+Wenn Sie eine Vorlage zum [Erstellen einer Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page) verwenden, ist kein Unterschied zwischen statischen und bearbeitbaren Vorlagen ersichtlich. Für die Seitenautoren ist der Prozess transparent.
 
 ## Erstellen und Verwalten von Vorlagen {#creating-and-managing-templates}
 
-Gehen Sie wie folgt vor, um eine bearbeitbare Vorlage zu erstellen:
+Gehen Sie zum Erstellen einer bearbeitbaren Vorlage wie folgt vor:
 
-* Verwenden Sie die **Vorlagen**-Konsole. Dies ist im Abschnitt **Allgemein** der **Tools**-Konsole verfügbar.
+* Verwenden Sie die **Vorlagenkonsole**. Diese ist im Abschnitt **Allgemein** der **Tools-Konsole** verfügbar.
 
    * Oder direkt unter: [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * Erstellen Sie bei Bedarf [einen Ordner für die Vorlagen](#creating-a-template-folder-admin).
-* [Erstellen einer Vorlage](#creatinganewtemplateauthor), der anfangs leer ist
+* [Erstellen einer neuen Vorlage](#creatinganewtemplateauthor), die anfangs leer ist
 
-* [Definieren Sie ggf. weitere Eigenschaften](#definingtemplatepropertiesauthor) für die Vorlage.
+* [Definieren weiterer Eigenschaften](#definingtemplatepropertiesauthor) für die Vorlage bei Bedarf
 * [Bearbeiten Sie die Vorlage](#editingtemplates), um Folgendes zu definieren:
 
    * [Struktur](#editingatemplatestructureauthor) – vordefinierter Inhalt, der auf Seiten, die mit der Vorlage erstellt werden, nicht geändert werden kann.
@@ -150,9 +152,9 @@ Gehen Sie wie folgt vor, um eine bearbeitbare Vorlage zu erstellen:
 
 Für Ihr Projekt sollte ein Vorlagenordner für Ihre projektspezifischen Vorlagen erstellt werden. Dies ist eine Aufgabe für Admins, die im Dokument [Bearbeitbare Seitenvorlagen](/help/sites-developing/page-templates-editable.md#template-folders) beschrieben wird.
 
-### Erstellen einer neuen Vorlage – Vorlagenautorin bzw. -autor {#creating-a-new-template-template-author}
+### Erstellen einer neuen Vorlage – Vorlagenautor {#creating-a-new-template-template-author}
 
-1. Öffnen Sie die **Vorlagenkonsole** (via **Tools >** **Allgemein**) und navigieren Sie dann zum gewünschten Ordner.
+1. Öffnen Sie die **Vorlagenkonsole** (über **Tools** **Allgemein**) und navigieren Sie dann zum gewünschten Ordner.
 
    >[!NOTE]
    >
@@ -174,7 +176,7 @@ Für Ihr Projekt sollte ein Vorlagenordner für Ihre projektspezifischen Vorlage
    * **Vorlagenname**
    * **Beschreibung**
 
-1. Wählen Sie **Erstellen**. Eine Bestätigung wird angezeigt, wählen Sie **Öffnen** zu starten [Bearbeiten der Vorlage](#editingatemplate) oder **Fertig** , um zur Vorlagenkonsole zurückzukehren.
+1. Wählen Sie **Erstellen**. Eine Bestätigung wird angezeigt. Wählen Sie **Öffnen**, um mit der [Bearbeitung der Vorlage](#editingatemplate) zu beginnen, oder **Fertig**, um zur Vorlagenkonsole zurückzukehren.
 
    >[!NOTE]
    >
@@ -197,7 +199,7 @@ Eine Vorlage kann die folgenden Eigenschaften aufweisen:
 
 * Beschreibung
 
-   * Eine optionale Beschreibung mit weiteren Informationen zur Vorlage und deren Verwendung, die beispielsweise im **Seitenerstellungsassistenten** angezeigt werden können.
+   * Eine optionale Beschreibung mit weiteren Informationen zur Vorlage und deren Verwendung, die beispielsweise im **Seitenerstellungsassistenten** angezeigt werden kann.
 
 So zeigen Sie die Eigenschaften an bzw. bearbeiten sie:
 
@@ -222,16 +224,16 @@ So definieren Sie die Miniaturansicht für eine Vorlage:
 1. Bearbeiten Sie die Vorlageneigenschaften.
 1. Wählen Sie, ob Sie eine Miniaturansicht hochladen oder aus dem Vorlageninhalt erstellen möchten.
 
-   * Wenn Sie eine Miniaturansicht hochladen möchten, klicken Sie auf **Bild hochladen**
-   * Wenn Sie eine Miniaturansicht generieren möchten, klicken Sie auf **Vorschau generieren**
+   * Wenn Sie eine Miniaturansicht hochladen möchten, klicken Sie auf **Bild hochladen**.
+   * Wenn Sie eine Miniaturansicht erzeugen möchten, klicken Sie auf **Vorschau generieren**.
 
 1. Bei beiden Methoden wird eine Vorschau der Miniaturansicht angezeigt.
 
-   Wenn sie nicht zufriedenstellend ist, klicken Sie auf **Löschen** , um ein anderes Bild hochzuladen oder die Miniaturansicht neu zu generieren.
+   Wenn Sie mit dem Ergebnis nicht zufrieden sind, klicken Sie auf **Löschen**, um ein anderes Bild hochzuladen oder die Miniaturansicht erneut zu generieren.
 
 1. Wenn Sie mit der Miniaturansicht zufrieden sind, klicken Sie auf **Speichern und schließen**.
 
-### Aktivieren und Zulassen einer Vorlage – Vorlagenautorin bzw. -autor {#enabling-and-allowing-a-template-template-author}
+### Aktivieren und Zulassen einer Vorlage – Vorlagenautor {#enabling-and-allowing-a-template-template-author}
 
 Um beim Erstellen einer Seite eine Vorlage zu verwenden, gehen Sie wie folgt vor:
 
@@ -248,7 +250,7 @@ Eine Vorlage kann aktiviert oder deaktiviert werden, damit sie im Assistenten **
 
 1. Wählen Sie in der **Vorlagenkonsole** eine Vorlage aus.
 1. Wählen Sie in der Symbolleiste die Option **Aktivieren** oder **Deaktivieren** und bestätigen Sie Ihre Wahl im Bestätigungsdialogfeld.
-1. Sie können Ihre Vorlage jetzt verwenden, wenn [Erstellen einer Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page), obwohl Sie wahrscheinlich [Vorlage bearbeiten](#editingatemplate) nach Ihren eigenen Anforderungen.
+1. Nun können Sie Ihre Vorlage verwenden, wenn Sie [eine Seite erstellen](/help/sites-authoring/managing-pages.md#creating-a-new-page), bzw. [die Vorlage bearbeiten](#editingatemplate), um sie an Ihre Anforderungen anzupassen.
 
 >[!NOTE]
 >
@@ -293,7 +295,7 @@ Da auf die Vorlage verwiesen wird, wenn eine Seite dargestellt wird, muss die vo
 
 1. Wählen Sie **Veröffentlichen** in der Symbolleiste, um den Vorgang abzuschließen.
 
-## Bearbeiten von Vorlagen – Vorlagenautorinnen und -autoren {#editing-templates-template-authors}
+## Bearbeiten von Vorlagen | Vorlagenautorinnen und -autoren {#editing-templates-template-authors}
 
 Beim Erstellen oder Bearbeiten einer Vorlage können verschiedene Aspekte definiert werden. Das Bearbeiten von Vorlagen ähnelt der Seitenbearbeitung.
 
@@ -384,7 +386,7 @@ Im **Struktur**-Modus des Vorlageneditors:
   >Wenn Sie diesen ändern und Ihren eigenen Text einfügen, wird dieser aktualisierte Text verwendet, wenn eine Seite aus der Vorlage erstellt wird.
   >
   >
-  >Wenn Sie den Standardtext (Struktur) nicht ändern, wird der Titel standardmäßig mit dem Namen der nachfolgenden Seite benannt.
+  >Wenn Sie den Standardtext (Struktur) nicht ändern, wird als Titel standardmäßig der Name der nachfolgenden Seite verwendet.
 
   >[!NOTE]
   >
@@ -423,7 +425,7 @@ Im **Struktur**-Modus des Vorlageneditors:
    * Auf der linken Seite des Dialogfelds können Sie unter **Richtlinie** eine vorhandene Richtlinie auswählen.
    * Auf der rechten Seite des Dialogfelds können Sie unter **Eigenschaften** die für den Komponententyp spezifischen Eigenschaften festlegen.
 
-  Die verfügbaren Eigenschaften hängen von der ausgewählten Komponente ab. Beispielsweise definieren die Eigenschaften für eine Textkomponente die Optionen zum Kopieren und Einfügen, Formatierungsoptionen und den Absatzstil unter anderen Optionen.
+  Die verfügbaren Eigenschaften hängen von der ausgewählten Komponente ab. Beispielsweise definieren die Eigenschaften bei einer Textkomponente u. a. die Optionen zum Kopieren und Einfügen, Formatierungsoptionen und das Absatzformat.
 
   ***Richtlinie***
 
@@ -464,13 +466,13 @@ Im **Struktur**-Modus des Vorlageneditors:
 
   Beispielsweise kann die zulässige Breite für eine Bildkomponente zusammen mit der Aktivierung des „Lazy Loading“ (Langsames Laden) definiert werden.
 
-  Wenn eine Einstellung mehrere Konfigurationen zulässt, klicken Sie auf die **Hinzufügen** -Schaltfläche, um eine weitere Konfiguration hinzuzufügen.
+  Wenn eine Einstellung mehrere Konfigurationen zulässt, klicken Sie auf die Schaltfläche **Hinzufügen**, um eine weitere Konfiguration hinzuzufügen.
 
   ![chlimage_1-141](assets/chlimage_1-141.png)
 
-  Um eine Konfiguration zu entfernen, klicken Sie auf das **Löschen** -Schaltfläche rechts neben der Konfiguration.
+  Um eine Konfiguration zu entfernen, klicken Sie auf die Schaltfläche **Löschen**, die sich rechts neben der Konfiguration befindet.
 
-  Um eine Konfiguration zu entfernen, klicken Sie auf die Schaltfläche &quot;Löschen&quot;.
+  Um eine Konfiguration zu entfernen, klicken Sie auf die Schaltfläche **Löschen**.
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -488,7 +490,7 @@ Im **Struktur**-Modus des Vorlageneditors:
 
   >[!NOTE]
   >
-  >[Inhaltsrichtlinien für Komponenten, die den Rich-Text-Editor implementieren](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) kann nur für Optionen definiert werden, die vom RTE über seine UI-Einstellungen zur Verfügung gestellt werden. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[Inhaltsrichtlinien für Komponenten, die den Rich-Text-Editor implementieren](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638), können nur für Optionen definiert werden, die vom RTE über seine UI-Einstellungen bereitgestellt werden. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Richtlinien und Eigenschaften (Layout-Container)**
 
@@ -530,9 +532,9 @@ Im **Struktur**-Modus des Vorlageneditors:
 
   Auf der Registerkarte **Standardkomponenten** legen Sie fest, welche Komponenten automatisch mit bestimmten Medientypen verknüpft werden, damit AEM beim Ziehen eines Assets aus dem Asset-Browser weiß, mit welcher Komponente es verknüpft werden soll. Beachten Sie, dass nur Komponenten mit Ablagebereichen für eine solche Konfiguration verfügbar sind.
 
-  Klicks **Zuordnung hinzufügen** , um eine völlig neue Komponente und MIME-Typzuordnung hinzuzufügen.
+  Klicken Sie auf **Zuordnung hinzufügen**, um eine völlig neue Komponente und MIME-Typzuordnung hinzuzufügen.
 
-  Wählen Sie eine Komponente in der Liste aus und klicken Sie auf **Typ hinzufügen** , um einer bereits zugeordneten Komponente einen zusätzlichen MIME-Typ hinzuzufügen. Klicken Sie auf das Symbol **Löschen**, um einen MIME-Typ zu entfernen.
+  Wählen Sie eine Komponente in der Liste und klicken Sie dann auf **Typ hinzufügen**, um einer bereits zugeordneten Komponente einen zusätzlichen MIME-Typ hinzuzufügen. Klicken Sie auf das Symbol **Löschen**, um einen MIME-Typ zu entfernen.
 
   ![chlimage_1-145](assets/chlimage_1-145.png)
 
@@ -556,7 +558,7 @@ Im **Struktur**-Modus des Vorlageneditors:
 
   ![chlimage_1-146](assets/chlimage_1-146.png)
 
-  Dies umfasst das Entsperren von Containerkomponenten, sodass weitere Komponenten hinzugefügt werden können, entweder im **Ursprüngliche Inhalte** oder auf den daraus resultierenden Seiten. Wenn Sie dem Container bereits Komponenten/Inhalte hinzugefügt haben, bevor Sie ihn entsperren, werden diese nicht mehr angezeigt, wenn Sie **Struktur** -Modus, sie werden jedoch in **Anfänglicher Inhalt** -Modus. Im **Strukturmodus** werden nur die Container-Komponente selbst und die zugehörige Liste der **zugelassenen Komponenten** angezeigt.
+  Dies umfasst das Entsperren von Container-Komponenten, sodass weitere Komponenten hinzugefügt werden können, entweder im Modus **Anfänglicher Inhalt** oder auf den daraus resultierenden Seiten. Wenn Sie dem Container bereits vor der Freischaltung Komponenten oder Inhalte hinzugefügt haben, werden diese nicht mehr im Modus **Struktur**, sondern im Modus **Anfänglicher Inhalt** angezeigt. Im **Strukturmodus** werden nur die Container-Komponente selbst und die zugehörige Liste der **zugelassenen Komponenten** angezeigt.
 
   ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -679,7 +681,7 @@ Mithilfe der Seiteneigenschaften können Sie die erforderlichen Client-seitigen 
 
 >[!NOTE]
 >
->Der Vorlagenautor kann zwar die Seitenrichtlinie in der Vorlage angeben, muss jedoch vom Entwickler Details zu den entsprechenden clientseitigen Bibliotheken erhalten.
+>Vorlagenautorinnen und -autoren können zwar die Seitenrichtlinien in der Vorlage festlegen, sie benötigen aber Angaben zu den jeweiligen Client-seitigen Bibliotheken der Entwickelnden.
 
 ### Bearbeiten einer Vorlage – Anfängliche Seiteneigenschaften – Autor {#editing-a-template-initial-page-properties-author}
 

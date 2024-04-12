@@ -1,12 +1,14 @@
 ---
 title: Foundation-Komponenten
-description: Informationen zu Foundation-Komponenten in Adobe Experience Manager 6.5.
+description: Erfahren Sie mehr über die Foundation-Komponenten in Adobe Experience Manager 6.5.
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '6873'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -22,7 +24,7 @@ ht-degree: 98%
 
 Die Foundation-Komponenten wurden für die Verwendung beim Bearbeiten von Inhalten für eine Standardwebseite entworfen. Sie bilden eine Teilmenge der Komponenten, die vorkonfiguriert für eine Standardinstallation von AEM verfügbar sind.
 
-Einige sind sofort über den Komponenten-Browser verfügbar. Verschiedene weitere sind auch verfügbar, indem Sie [Designmodus](/help/sites-authoring/default-components-designmode.md) (wenn die Seite auf einer statischen Vorlage basiert) oder von [Bearbeiten der Vorlage](/help/sites-authoring/templates.md) (wenn die Seite auf einer bearbeitbaren Vorlage basiert).
+Einige sind direkt im Komponenten-Browser verfügbar.  Viele andere stehen außerdem im [Design-Modus](/help/sites-authoring/default-components-designmode.md) (wenn die Seite auf einer statischen Vorlage basiert) bzw. beim [Bearbeiten der Vorlage](/help/sites-authoring/templates.md) (wenn die Seite auf einer bearbeitbaren Vorlage basiert) zur Verfügung.
 
 Die Verwendung von Foundation-Komponenten wird unterstützt, sie wurden jedoch größtenteils eingestellt und durch Kernkomponenten ersetzt, die eine größere Erweiterbarkeit und Flexibilität bieten.
 
@@ -37,7 +39,7 @@ Die Komponenten sind im Seiteneditor auf dem seitlichen Bedienfeld der Registerk
 Sie können eine Komponente auswählen und an die gewünschte Stelle auf Ihrer Seite ziehen. Sie können sie dann bearbeiten, indem Sie Folgendes verwenden:
 
 * [Eigenschaften konfigurieren](/help/sites-authoring/editing-page-properties.md)
-* [Inhalt bearbeiten](/help/sites-authoring/editing-content.md)
+* [Bearbeiten von Inhalten](/help/sites-authoring/editing-content.md)
 
 * [Inhalt bearbeiten – Vollbildmodus](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
@@ -203,11 +205,11 @@ Sie können eine Textsuchabfrage eingeben.
       * **Optionen für die erweiterte Suche**
 
          * **Querybuilder-Eigenschafts-Notation**
-Sie können eine Suchabfrage mit der Querybuilder-Eigenschafts-Notation eingeben. Sie können beispielsweise &quot;fulltext=Marketing&quot;eingeben, damit alle Seiten mit &quot;Marketing&quot;in ihrem Inhalt im Karussell angezeigt werden.
+Geben Sie mit der Querybuilder-Eigenschafts-Notation eine Suchanfrage ein. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.
 Unter [„QueryBuilder API“](/help/sites-developing/querybuilder-api.md) finden Sie eine umfassende Übersicht über Abfrageausdrücke sowie weitere Beispiele.
 
-   * **Sortierreihenfolge**
-Auswählen `jcr:title`, `jcr:created`, `cq:lastModified`oder `cq:template` aus dem Dropdown-Menü aus.
+   * **Sortieren nach**
+Wählen Sie `jcr:title`, `jcr:created`, `cq:lastModified`, oder `cq:template` aus dem Dropdown-Menü aus.
 
    * **Limit**
 Optional. Die maximale Anzahl von Elementen, die Sie im Karussell verwenden möchten.
@@ -352,7 +354,7 @@ Mithilfe der Flash-Komponente können Sie einen Flash-Film laden. Sie können ei
 
    * **Fenstermodus**
 
-     Darstellung des Fensters, z. B. als undurchsichtiges, transparentes oder als eigenständiges (solides) Fenster.
+     Darstellung des Fensters, zum Beispiel deckend, transparent oder als separates (einfarbiges) Fenster.
 
    * **Hintergrundfarbe**
 

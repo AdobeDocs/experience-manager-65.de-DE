@@ -2,8 +2,11 @@
 title: Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM
 description: Erfahren Sie mehr über die Konzepte und Methoden der Modellierung von Inhalten für Ihr Headless-CMS mithilfe von Inhaltsfragmentmodellen.
 exl-id: b377e01f-e392-4ef5-a259-73ce9ff941d0
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
-workflow-type: ht
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Architect,Data Architect
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 100%
 
@@ -63,11 +66,11 @@ Sie können Instanzen der **Datentypen** auf den linken Bereich ziehen – Sie d
 
 ![Felder definieren](/help/assets/content-fragments/assets/cfm-models-04.png)
 
-Nachdem Sie einen Datentyp hinzugefügt haben, müssen Sie die **Eigenschaften** für dieses Feld definieren. Diese hängen vom verwendeten Typ ab. Beispiel:
+Nachdem Sie einen Datentyp hinzugefügt haben, müssen Sie die **Eigenschaften** für dieses Feld definieren. Diese hängen vom verwendeten Typ ab. Zum Beispiel:
 
 ![Dateneigenschaften](/help/assets/content-fragments/assets/cfm-models-05.png)
 
-Sie können beliebig viele Felder hinzufügen. Beispiel:
+Sie können beliebig viele Felder hinzufügen. Zum Beispiel:
 
 ![Inhaltsfragmentmodell](/help/assets/content-fragments/assets/cfm-models-07.png)
 

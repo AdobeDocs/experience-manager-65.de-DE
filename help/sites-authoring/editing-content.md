@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '3015'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -103,7 +105,7 @@ Wird eine Seite bearbeitet, die einem oder mehreren [Workflows](/help/sites-auth
 
 In der Benachrichtigung ist der Workflow aufgeführt, dem die Seite zugeordnet ist. Wenn Benutzende am aktuellen Workflow-Schritt beteiligt sind, sind zusätzlich auch Optionen verfügbar, die sich [auf den Workflow-Status auswirken](/help/sites-authoring/workflows-participating.md) und die weiteren Informationen zum Workflow liefern, darunter:
 
-* **Fertig** - Öffnet die **Arbeitselement abschließen** Dialogfeld
+* **Fertigstellen**: Öffnet das Dialogfeld **Arbeitselement fertigstellen**.
 
 * **Delegieren**: Öffnet das Dialogfeld **Arbeitselement fertigstellen**.
 
@@ -369,7 +371,7 @@ Z. B. die **Textkomponente**:
 
 So verschieben Sie eine Absatzkomponente:
 
-1. Wählen Sie den zu verschiebenden Absatz aus, indem Sie ihn entweder auswählen und gedrückt halten oder anklicken und gedrückt halten.
+1. Wählen Sie durch Tippen und Halten bzw. Klicken und Halten den Absatz aus, der verschoben werden soll.
 1. Ziehen Sie den Absatz an die neue Position. AEM zeigt an, wo der Absatz abgelegt werden kann. Legen Sie ihn an der gewünschten Position ab.
 
    ![Verschieben einer Absatzkomponente](assets/screen_shot_2018-03-22at121821.png)
@@ -388,7 +390,7 @@ Wenn Sie eine Komponente anpassen möchten, müssen Sie nicht ständig zwischen 
 
    ![Bearbeitungsmodus im Formular](assets/screen_shot_2018-03-22at133756.png)
 
-   Klicken Sie auf **Layout** -Aktion, damit Sie das Layout der Komponente anpassen können.
+   Klicken Sie auf die **Layout-Aktion**, um das Layout der Komponente anzupassen.
 
    ![Komponenten-Symbolleiste](do-not-localize/chlimage_1-21.png)
 

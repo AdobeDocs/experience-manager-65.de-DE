@@ -1,27 +1,28 @@
 ---
 title: Verbesserungen an der Übersetzung
-description: Inkrementelle Verbesserungen und Verbesserungen bei AEM Übersetzungsmanagement-Funktionen.
+description: Inkrementelle Verbesserungen und Anpassungen für die Funktionen der AEM-Übersetzungsverwaltung.
 topic-tags: site-features
 content-type: reference
 feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
 # Verbesserungen an der Übersetzung{#translation-enhancements}
 
-Auf dieser Seite werden schrittweise Verbesserungen und Verbesserungen AEM Übersetzungsmanagementfunktionen vorgestellt.
+Diese Seite enthält inkrementelle Verbesserungen und Anpassungen für die Funktionen der AEM-Übersetzungsverwaltung.
 
 ## Automatisierung von Übersetzungsprojekten {#translation-project-automation}
 
 Es wurden Optionen zur Verbesserung der Produktivität bei der Arbeit mit Übersetzungsprojekten hinzugefügt, z. B. zum automatischen Hervorheben und Löschen von Übersetzungsstarts und zum Planen der wiederholten Ausführung eines Übersetzungsprojekts.
 
-1. Klicken Sie in Ihrem Übersetzungsprojekt auf das Auslassungszeichen am unteren Rand des **Übersetzungszusammenfassung** Kachel.
+1. Klicken Sie in Ihrem Übersetzungsprojekt unten auf der Kachel **Zusammenfassung der Übersetzung** auf die Auslassungspunkte.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
@@ -41,7 +42,7 @@ Es wurden Optionen zur Verbesserung der Produktivität bei der Arbeit mit Übers
 
 Es ist möglich, mehrere Zielsprachen in einem Übersetzungsprojekt zu konfigurieren, um die Anzahl der insgesamt erstellten Übersetzungsprojekte zu reduzieren.
 
-1. Klicken Sie in Ihrem Übersetzungsprojekt auf die Punkte am unteren Rand des **Übersetzungszusammenfassung** Kachel.
+1. Klicken Sie in Ihrem Übersetzungsprojekt unten auf der Kachel **Zusammenfassung der Übersetzung** auf die Punkte.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
@@ -86,13 +87,13 @@ Die Aktualisierungen des Translation Memory können auch umgeleitet und an ein b
 
 ## Sprachkopien auf mehreren Ebenen {#language-copies-on-multiple-levels}
 
-Sprachstämme können jetzt unter Knoten gruppiert werden, z. B. nach Region, während sie weiterhin als Wurzeln von Sprachkopien erkannt werden.
+Sie können Sprachstämme jetzt unter Knoten gruppieren, z. B. nach Region. Diese werden weiterhin als Stämme von Sprachkopien erkannt.
 
 ![screen_shot_2018-04-23at144012](assets/screen_shot_2018-04-23at144012.jpg)
 
 >[!CAUTION]
 >
->Hierbei ist nur eine Ebene zulässig. Beispielsweise lässt Folgendes nicht zu, dass die Seite &quot;es&quot;in eine Sprachkopie aufgelöst wird:
+>Hierbei ist nur eine Ebene zulässig. Im folgenden Beispiel ist es nicht zulässig, dass die „es“-Seite in eine Sprachkopie aufgelöst wird:
 >
 >* `/content/we-retail/language-masters/en`
 >* `/content/we-retail/language-masters/americas/central-america/es`
@@ -101,21 +102,21 @@ Sprachstämme können jetzt unter Knoten gruppiert werden, z. B. nach Region, w�
 
 >[!NOTE]
 >
->Sprachstämme können einen beliebigen Seitennamen haben, nicht nur den ISO-Code der Sprache. AEM prüft immer zuerst den Pfad und den Namen, aber wenn der Seitenname keine Sprache identifiziert, überprüft AEM die Eigenschaft cq:language der Seite auf die Sprachkennung.
+>Sprachstämme können einen beliebigen Seitennamen haben. Es muss nicht der ISO-Code der Sprache sein. AEM prüft stets zuerst den Pfad und den Namen. Aber wenn der Seitenname keinen Hinweis auf eine Sprache enthält, überprüft AEM die Eigenschaft „cq:language“ der Seite, um die Sprache zu identifizieren.
 
 ## Berichte zum Übersetzungsstatus {#translation-status-reporting}
 
-Eine Eigenschaft kann jetzt in der Sites-Listenansicht ausgewählt werden, die anzeigt, ob eine Seite übersetzt wurde, sich in der Übersetzung befindet oder noch nicht übersetzt wurde. Sie können dies wie folgt anzeigen:
+In der Sites-Listenansicht können Sie jetzt eine Eigenschaft auswählen, mit der angegeben wird, ob für eine Seite der Status „Übersetzt“ oder „In Übersetzung“ gilt oder ob sie noch nicht übersetzt wurde. Sie können dies wie folgt anzeigen:
 
 1. Wechseln Sie in Sites zur **Listenansicht**.
 
    ![screen_shot_2018-04-23at130646](assets/screen_shot_2018-04-23at130646.jpg)
 
-1. Klicks **Anzeigeeinstellungen**.
+1. Klicken Sie auf **Anzeigeeinstellungen**.
 
    ![screen_shot_2018-04-23at130844](assets/screen_shot_2018-04-23at130844.jpg)
 
-1. Überprüfen **Übersetzt** Kontrollkästchen unter **Übersetzung** und klicken **Aktualisieren**.
+1. Aktivieren Sie unter **Übersetzung** das Kontrollkästchen **Übersetzt** und klicken Sie auf **Aktualisieren**.
 
    ![screen_shot_2018-04-23at130955](assets/screen_shot_2018-04-23at130955.jpg)
 

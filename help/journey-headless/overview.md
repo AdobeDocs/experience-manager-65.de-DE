@@ -2,10 +2,13 @@
 title: AEM Headless-Touren
 description: Eine Sammlung von Dokumentations-Touren, die die Verwendung von Adobe Experience Manager als Headless-CMS beschreiben.
 exl-id: 369f79ab-c8ae-4d49-9b0b-e3a2e423b40f
-source-git-commit: 719dd7b30c8ce3f02fe46c632b1589fcc74a1759
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Developing,Content Fragments
+role: Admin, Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +38,7 @@ Headless-Touren sind für unterschiedliche Rollen konzipiert und legen die Anfor
 
 Eine einzelne Tour wird für eine bestimmte Rolle oder Zielgruppe definiert, aber auch für weitere Rollen, mit denen der Leser interagiert.
 
-Informationen in den Journey können für mehrere Rollen nützlich sein, aber eine Journey richtet sich an eine bestimmte Person, und einige Informationen können für bestimmte Rollen überflüssig sein.
+Die Informationen in den Touren können für mehrere Rollen nützlich sein, aber eine Tour ist auf eine bestimmte Rolle ausgerichtet und einige Informationen können für bestimmte Rollen irrelevant sein.
 
 ## Headless-Touren {#headless-journeys}
 

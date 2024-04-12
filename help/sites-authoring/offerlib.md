@@ -8,10 +8,12 @@ topic-tags: personalization
 docset: aem65
 exl-id: 34293432-cfdc-466b-96bd-2c43b566a420
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring,Personalization
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '834'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -35,7 +37,7 @@ Wenn Sie eine Marke mithilfe der Angebotskonsole erstellen, wird diese Marke auc
    ![screen-shot_2019-03-05at124139-1](assets/screen-shot_2019-03-05at124139-1.png)
 
 1. Klicks **Erstellen** und dann **Erstellen** **Marke**.
-1. Wählen Sie die Markenvorlage aus und klicken Sie auf **Nächste**.
+1. Wählen Sie die Markenvorlage aus und klicken Sie auf **Weiter**.
 1. Geben Sie den Namen der Marke an, der in Angebots- und Aktivitätskonsole angezeigt werden soll. Optional können Sie eins oder mehrere Tags eingeben oder auswählen, die mit der Marke verknüpft werden sollen.
 1. Klicken Sie auf **Erstellen**.
 

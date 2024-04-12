@@ -3,10 +3,12 @@ title: Schnellstartanleitung zum Erstellen von Asset-Ordnern per Headless-Implem
 description: Verwenden Sie AEM-Inhaltsfragmentmodelle, um die Struktur von Inhaltsfragmenten zu definieren – die Grundlage für Ihren Headless-Content.
 exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin,Architect,Data Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -20,14 +22,14 @@ Verwenden Sie AEM-Inhaltsfragmentmodelle, um die Struktur von Inhaltsfragmenten 
 
 Zunächst müssen Sie jedoch einen Ordner für Assets erstellen, in dem Sie diese speichern.
 
-Asset-Ordner werden für [Organisieren von traditionellen Inhalts-Assets](/help/assets/manage-assets.md) wie Bilder und Videos und Inhaltsfragmente.
+Asset-Ordner werden verwendet, um [herkömmliche Inhalts-Assets](/help/assets/manage-assets.md) wie Bilder und Videos sowie Inhaltsfragmente zu organisieren.
 
 ## Erstellen eines Asset-Ordners {#how-to-create-an-assets-folder}
 
 Administratoren müssen nur gelegentlich Ordner erstellen, um Inhalte bei der Erstellung zu organisieren. Für die Zwecke dieser Anleitung für den Einstieg müssen wir nur einen Ordner erstellen.
 
-1. Melden Sie sich bei AEM an und wählen Sie im Hauptmenü die Option **Navigation > Assets > Dateien**.
-1. Klicks **Erstellen > Ordner**.
+1. Melden Sie sich bei AEM an und wählen Sie im Hauptmenü **Navigation > Assets > Dateien** aus.
+1. Klicken Sie auf **Erstellen > Ordner**.
 1. Geben Sie einen **Titel** und einen **Namen** für Ihren Ordner an.
    * Der **Titel** sollte beschreibend sein.
    * Der **Name** wird zum Knotennamen im Repository.
@@ -35,16 +37,16 @@ Administratoren müssen nur gelegentlich Ordner erstellen, um Inhalte bei der Er
       * Er kann bei Bedarf angepasst werden.
 
    ![Ordner erstellen](assets/assets-folder-create.png)
-1. Wählen Sie den von Ihnen erstellten Ordner aus und klicken Sie auf **Eigenschaften** über die Symbolleiste (oder verwenden Sie die `p` [Tastaturbefehl verwenden.](/help/sites-authoring/keyboard-shortcuts.md))
+1. Wählen Sie den soeben erstellten Ordner und dann in der Symbolleiste **Eigenschaften** aus (oder verwenden Sie den [Tastaturbefehl](/help/sites-authoring/keyboard-shortcuts.md) `p`).
 1. Wählen Sie im Fenster **Eigenschaften** die Registerkarte **Cloud-Services** aus.
 1. Wählen Sie für die **Cloud-Konfiguration** die zuvor erstellte [Konfiguration aus.](create-configuration.md)
    ![Konfigurieren des Asset-Ordners](assets/assets-folder-configure.png)
 1. Klicken Sie auf **Speichern und schließen**.
-1. Klicks **OK** im Bestätigungsfenster.
+1. Klicken Sie im Bestätigungsfenster auf **OK**.
 
    ![Bestätigungsfenster](assets/assets-folder-confirmation.png)
 
-Sie können im erstellten Ordner weitere Unterordner erstellen. Die Unterordner übernehmen die **Cloud-Konfiguration** des übergeordneten Ordners. Dies kann jedoch überschrieben werden, wenn Sie Modelle aus einer anderen Konfiguration verwenden möchten.
+Sie können im soeben erstellten Ordner weitere Unterordner erstellen. Die Unterordner übernehmen die **Cloud-Konfiguration** des übergeordneten Ordners. Dies kann jedoch überschrieben werden, wenn Sie Modelle aus einer anderen Konfiguration verwenden möchten.
 
 Wenn Sie eine lokalisierte Site-Struktur verwenden, können Sie unter Ihrem neuen Ordner [einen Sprachstamm](/help/assets/multilingual-assets.md) erstellen.
 

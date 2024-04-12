@@ -9,10 +9,12 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring,Launches
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +63,7 @@ Sie können Launches über die Konsolen **Sites** oder **Launches** weiterleiten
 
    * die **Launch**-Konsole:
 
-      1. Wählen Sie Ihren Launch aus (klicken Sie auf die Miniaturansicht).
+      1. Wählen Sie den Launch aus (klicken Sie auf die Miniaturansicht).
       1. Wählen Sie **Bewerben** aus.
 
 1. Im ersten Schritt können Sie folgende Optionen festlegen:
@@ -126,7 +128,7 @@ Wenn Sie einen verschachtelten Launch erstellt haben, können Sie ihn wieder an 
       * **Aktuelle Seite hochstufen**
       * **Aktuelle Seite und Unterseiten weiterleiten**
 
-   ![Einstellungen für die Promotion eines Launches](assets/chlimage_1-105.png)
+   ![Einstellungen für das Bewerben eines Launches](assets/chlimage_1-105.png)
 
 1. Wählen Sie **Weiter** aus.
 1. Überprüfen Sie die Details, bevor Sie **Bewerben** auswählen:
@@ -139,7 +141,7 @@ Wenn Sie einen verschachtelten Launch erstellt haben, können Sie ihn wieder an 
 
 1. Ihre Änderungen werden hochgestuft und in der Konsole **Launches** dargestellt:
 
-   ![Konsole &quot;Launches&quot;](assets/chlimage_1-107.png)
+   ![Launch-Konsole](assets/chlimage_1-107.png)
 
 ## Bearbeiten weitergeleiteter Seiten mit einem AEM-Workflow {#processing-promoted-pages-using-aem-workflow}
 

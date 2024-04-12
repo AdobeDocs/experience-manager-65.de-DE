@@ -2,8 +2,11 @@
 title: Übersetzen von Inhalten
 description: Verwenden Sie den Übersetzungs-Connector und die Regeln, um Ihre Headless-Inhalte zu übersetzen.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
-workflow-type: ht
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+workflow-type: tm+mt
 source-wordcount: '2115'
 ht-degree: 100%
 
@@ -187,7 +190,7 @@ Sie können die vorherigen Schritte verwenden, um die erforderlichen Inhalte zu 
 
 Normalerweise beginnt der Inhalt des Übersetzungsauftrags im Status **Entwurf**, wie in der Spalte **Status** im Fenster **Übersetzungsauftrag** angegeben.
 
-Um den Übersetzungsauftrag zu starten, kehren Sie zur Übersicht des Übersetzungsprojekts zurück, klicken Sie auf die Pfeil-Schaltfläche oben auf der Karte **Übersetzungsauftrag** und wählen Sie dann **Starten** aus.
+Um den Übersetzungsauftrag zu starten, kehren Sie zur Übersicht des Übersetzungsprojekts zurück, klicken Sie auf die Pfeil-Schaltfläche oben auf der Karte **Übersetzungsauftrag** und wählen Sie **Starten** aus.
 
 ![Übersetzungsauftrag starten](assets/start-translation-job-manual.png)
 
@@ -239,7 +242,7 @@ Nachdem Sie nun diesen Teil der Headless-Übersetzungs-Tour abgeschlossen haben,
 * Erstellen von Übersetzungsprojekten.
 * Übersetzungsprojekte verwenden können, um Ihre Headless-Inhalte zu übersetzen.
 
-Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM-Headless-Übersetzungs-Tour fort, indem Sie als Nächstes das Dokument [Veröffentlichen übersetzter Inhalte](publish-content.md) lesen. Dort lernen Sie, wie Sie übersetzte Inhalte veröffentlichen und wie Sie diese Übersetzungen aktualisieren, wenn sich die Inhalte Ihres Sprachstamms ändern.
+Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Headless-Übersetzungs-Journey fort, indem Sie als Nächstes das Dokument [Übersetzte Inhalte veröffentlichen](publish-content.md) lesen. Dort lernen Sie, wie Sie übersetzte Inhalte veröffentlichen und wie Sie diese Übersetzungen aktualisieren, wenn sich die Inhalte Ihres Sprachstamms ändern.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

@@ -7,10 +7,12 @@ topic-tags: page-authoring
 content-type: reference
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '633'
-ht-degree: 75%
+ht-degree: 97%
 
 ---
 
@@ -26,7 +28,7 @@ Bei einer Anmerkung wird eine farbige Markierung/Haftnotiz auf der Seite platzie
 
 >[!NOTE]
 >
->In der klassischen Benutzeroberfläche erstellte Anmerkungen werden in der Touch-optimierten Benutzeroberfläche angezeigt. Zeichnungen sind jedoch benutzeroberflächenspezifisch und werden nur in der Benutzeroberfläche angezeigt, in der sie erstellt wurden.
+>In der klassischen Benutzeroberfläche erstellte Anmerkungen werden in der Touch-optimierten Benutzeroberfläche angezeigt. Skizzen sind jedoch benutzeroberflächenspezifisch und werden nur in der Benutzeroberfläche angezeigt, in der sie erstellt wurden.
 
 >[!CAUTION]
 >
@@ -64,15 +66,15 @@ Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeit
 
    >[!NOTE]
    >
-   >Um den Anmerkungsmodus zu beenden, klicken Sie rechts oben in der Symbolleiste auf das Symbol Anmerken (x-Symbol).
+   >Um den Anmerkungsmodus zu beenden, klicken Sie oben rechts in der Symbolleiste auf das Anmerken-Symbol (x-Symbol).
 
-1. Klicken Sie auf das Symbol Anmerkung hinzufügen (Plussymbol links in der Symbolleiste), um mit dem Hinzufügen von Anmerkungen zu beginnen.
+1. Klicken Sie auf das Symbol „Anmerkung hinzufügen“ (Plussymbol links in der Symbolleiste), um mit dem Hinzufügen von Anmerkungen zu beginnen.
 
    >[!NOTE]
    >
-   >Um das Hinzufügen von Anmerkungen zu beenden (und zur Anzeige zurückzukehren), klicken Sie links in der oberen Symbolleiste auf das Symbol Abbrechen (x-Symbol in einem weißen Kreis).
+   >Um das Hinzufügen von Anmerkungen zu beenden (und zur Anzeige zurückzukehren), klicken Sie links in der oberen Symbolleiste auf das Abbrechen-Symbol (x-Symbol in einem weißen Kreis).
 
-1. Klicken Sie auf die gewünschte Komponente (Komponenten, die kommentiert werden können, werden durch einen blauen Rahmen hervorgehoben), um die Anmerkung hinzuzufügen und das Dialogfeld zu öffnen:
+1. Klicken Sie auf die erforderliche Komponente (Komponenten, denen eine Anmerkung hinzugefügt werden kann, sind mit einem blauen Rahmen gekennzeichnet), um die Anmerkung hinzuzufügen und das Dialogfeld zu öffnen:
 
    ![screen_shot_2018-03-22at110606](assets/screen_shot_2018-03-22at110606.png)
 
@@ -104,12 +106,12 @@ Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeit
       * Zeichnungen können nicht unabhängig von der Anmerkung gelöscht werden.
 
    * Positionieren Sie die Textmarkierung neu.
-   * Klicken Sie auf eine Zeichnung, um diese Zeichnung auszuwählen und sie an die gewünschte Position zu ziehen.
+   * Klicken Sie auf eine Skizze, um diese Skizze auszuwählen und sie auf die gewünschte Position zu ziehen.
    * Eine Komponente zu verschieben oder zu kopieren.
 
       * Alle damit verbundenen Anmerkungen und deren Zeichnungen werden ebenfalls verschoben oder kopiert und ihre Position in Relation zum Absatz bleibt gleich.
 
-1. Um den Anmerkungsmodus zu beenden und zum zuvor verwendeten Modus zurückzukehren, klicken Sie auf das Symbol Anmerken (x-Symbol) rechts oben in der Symbolleiste.
+1. Um den Anmerkungsmodus zu beenden und zum vorher verwendeten Modus zurückzukehren, klicken Sie auf die Schaltfläche (x-Symbol) oben rechts in der Symbolleiste.
 
 >[!NOTE]
 >

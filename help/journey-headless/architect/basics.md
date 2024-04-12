@@ -2,8 +2,11 @@
 title: Grundlagen zur Inhaltsmodellierung
 description: Erfahren Sie mehr über die Grundlagen der Modellierung von Inhalten für Ihr Headless-CMS mithilfe von Inhaltsfragmenten.
 exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
-workflow-type: ht
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Architect,Data Architect
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 100%
 
@@ -113,7 +116,7 @@ Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglich
 
 ## Strukturebenen (verschachtelte Fragmente) {#levels-of-structure-nested-fragments}
 
-Bei der Inhaltsmodellierung ermöglicht der Datentyp **Fragmentverweis** die Erstellung mehrerer Strukturebenen und Beziehungen.
+Bei der Inhaltsmodellierung ermöglicht der Datentyp **Fragmentreferenz** die Erstellung mehrerer Strukturebenen und Beziehungen.
 
 Mit diesem Verweis können Sie verschiedene Inhaltsfragmentmodelle *verbinden*, um Zusammenhänge darzustellen. Dadurch kann die Headless-Anwendung den Verbindungen folgen und bei Bedarf auf die Inhalte zugreifen.
 

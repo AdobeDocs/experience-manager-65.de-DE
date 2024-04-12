@@ -7,10 +7,12 @@ content-type: reference
 topic-tags: personalization
 exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring,Personalization,Integration
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1281'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +55,7 @@ Weitere Informationen hierzu finden Sie in der [Vorlagendokumentation](/help/sit
 >Stellen Sie sicher, dass die Eigenschaft **acMapping** im Knoten **jcr:content** der Seite auf den Wert **mapRecipient** bzw. **profile** eingestellt ist, wenn Sie mit Adobe Campaign Classic oder Adobe Campaign Standard arbeiten.
 >
 
-1. Navigieren Sie in AEM in Sites an die Stelle, an der Sie eine Seite erstellen möchten.
+1. Navigieren Sie in AEM unter „Sites“ an den Ort, an dem Sie eine Seite erstellen möchten.
 1. Erstellen Sie eine Seite, wählen Sie **Adobe Campaign Classic-Profil** oder **Adobe Campaign Standard-Profil** aus und klicken Sie auf **Weiter**.
 
    ![chlimage_1-43](assets/chlimage_1-43a.png)
@@ -95,7 +97,7 @@ In diesem Abschnitt werden nur für Adobe Campaign spezifische Verknüpfungen b
    * **Adobe Campaign: Abmeldung von Diensten**: ermöglicht Ihnen, die Abonnements einer Empfängerin oder eines Empfängers in Adobe Campaign zu stornieren.
 
 1. Sie müssen in jedem Formular eine Komponente **Verschlüsselter Primärschlüssel** haben. Diese Komponente definiert, welcher URL-Parameter zum Akzeptieren des verschlüsselten Primärschlüssels eines Adobe Campaign-Profils verwendet wird. Wählen Sie aus den Komponenten Adobe Campaign aus, sodass nur die entsprechenden Komponenten angezeigt werden.
-1. Ziehen Sie die Komponente **Verschlüsselter Primärer Schlüssel** zum Formular (an einer beliebigen Stelle) hinzu und klicken Sie auf **Konfiguration** Symbol. Geben Sie auf der Registerkarte **Adobe Campaign** einen beliebigen Namen für den URL-Parameter an. Klicken Sie auf das Häkchen, um Ihre Änderungen zu speichern.
+1. Ziehen Sie die Komponente **Verschlüsselter Primärschlüssel** an eine beliebige Stelle im Formular und klicken Sie auf das Symbol für die **Konfiguration**. Geben Sie auf der Registerkarte **Adobe Campaign** einen beliebigen Namen für den URL-Parameter an. Klicken Sie auf das Häkchen, um Ihre Änderungen zu speichern.
 
    Generierte Links zu diesem Formular müssen diesen URL-Parameter verwenden und ihn dem verschlüsselten Primärschlüssel eines Adobe Campaign-Profils zuweisen. Der verschlüsselte Primärschlüssel muss ordnungsgemäß URL-codiert (Prozent) sein.
 

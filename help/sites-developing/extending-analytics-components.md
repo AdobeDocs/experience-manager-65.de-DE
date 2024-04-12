@@ -7,10 +7,12 @@ topic-tags: extending-aem
 content-type: reference
 exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Integration
+role: Developer
+source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '1244'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +39,7 @@ Der ContextHub-Eintrag sollte direkt unter dem `<head>`-Tag erfolgen, während C
 
 Mit dem `contexthub`-Skript, das Sie nach dem `<head>`-Element einfügen, werden die ContextHub-Funktionen zur Seite hinzugefügt.
 
-Die `cloudservices`-Skripte, die Sie in den Abschnitten `<head>` und `<body>` hinzufügen, gelten für die Cloud Services-Konfigurationen, die der Seite hinzugefügt werden. (Wenn die Seite mehr als eine Cloud Service-Konfiguration verwendet, müssen Sie die ContextHub-JSP und die Cloud Service-JSP nur einmal einschließen.)
+Die `cloudservices`-Skripte, die Sie in den Abschnitten `<head>` und `<body>` hinzufügen, gelten für die Cloud Services-Konfigurationen, die der Seite hinzugefügt werden. (Falls die Seite mehr als eine Cloud-Services-Konfiguration verwendet, müssen Sie die ContextHub-JSP und Cloud-Services-JSP nur einmal einschließen.)
 
 Wenn der Seite ein Adobe Analytics-Framework hinzugefügt wird, generieren die `cloudservices`-Skripte Adobe Analytics-bezogenes JavaScript und Verweise auf Client-seitige Bibliotheken, ähnlich wie im folgenden Beispiel:
 
@@ -169,13 +171,13 @@ Konfigurieren Sie die topnav-Komponente und bearbeiten Sie die JSP-Datei, um das
    * Name: `analytics`
    * Typ: `nt:unstructured`
 
-1. Fügen Sie dem Knoten analytics die folgende Eigenschaft hinzu, damit Sie das Tracking-Ereignis benennen können:
+1. Fügen Sie die folgende Eigenschaft zum Knoten „analytics“ hinzu, um das Tracking-Ereignis zu benennen:
 
    * Name: cq:trackevents
    * Typ: String
    * Wert: topnavClick
 
-1. Fügen Sie dem Knoten analytics die folgende Eigenschaft hinzu, damit Sie die Datenvariablen benennen können:
+1. Fügen Sie die folgende Eigenschaft zum Knoten „analytics“ hinzu, um die Datenvariablen zu benennen:
 
    * Name: cq:trackvars
    * Typ: String
@@ -195,7 +197,7 @@ Konfigurieren Sie die topnav-Komponente und bearbeiten Sie die JSP-Datei, um das
 
 1. Klicken Sie auf „Alle speichern“.
 1. Öffnen Sie die Datei `topnav.jsp`.
-1. Fügen Sie dem Element das folgende Attribut hinzu:
+1. Fügen Sie im Element das folgende Attribut hinzu:
 
    ```xml
    onclick = "tracknav('<%= child.getPath() %>.html')"
@@ -361,7 +363,7 @@ Der Knoten `analytics` der Komponente muss die Namen der Variablen anzeigen, die
 * product.evars.eVarName1
 * product.evars.eVarName_n
 
-Das E-Commerce-Modul stellt mehrere Komponenten bereit, die Daten für die Variable „s.products“ generieren. Beispiel: die `submitorder` component ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) generiert JavaScript, das dem folgenden Beispiel ähnelt:
+Das E-Commerce-Modul stellt mehrere Komponenten bereit, die Daten für die Variable „s.products“ generieren. Die Komponente `submitorder` ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) erzeugt beispielsweise JavaScript, das dem folgenden Beispiel ähnelt:
 
 ```
 <script type="text/javascript">
@@ -437,6 +439,6 @@ Das E-Commerce-Modul stellt mehrere Komponenten bereit, die Daten für die Varia
 
 #### Begrenzen der Größe von Tracking-Aufrufen {#limiting-the-size-of-tracking-calls}
 
-Im Allgemeinen beschränken Webbrowser die Größe von GET-Anfragen. Da CQ-Produkt- und SKU-Werte Repository-Pfade sind, können Produkt-Arrays, die mehrere Werte enthalten, die Anfragegrößenbeschränkung überschreiten. Daher sollten die Komponenten die Anzahl der Elemente im `product`-Array jeder `CQ_Analytics.record function` beschränken. Erstellen Sie mehrere Funktionen, wenn die Anzahl der Elemente, die Sie verfolgen müssen, die Grenze überschreiten kann.
+Im Allgemeinen beschränken Webbrowser die Größe von GET-Anfragen. Da CQ-Produkt- und SKU-Werte Repository-Pfade sind, können Produkt-Arrays, die mehrere Werte enthalten, die Anfragegrößenbeschränkung überschreiten. Daher sollten die Komponenten die Anzahl der Elemente im `product`-Array jeder `CQ_Analytics.record function` beschränken. Erstellen Sie mehrere Funktionen, wenn die Anzahl der Elemente, die Sie verfolgen möchten, das Limit überschreiten kann.
 
-Zum Beispiel der eCommerce `submitorder` -Komponente begrenzt die Anzahl der `product` -Elemente in einem -Aufruf von vier. Wenn der Warenkorb mehr als vier Produkte enthält, erzeugt sie mehrere `CQ_Analytics.record`-Funktionen.
+Die eCommerce-Komponente `submitorder` beschränkt z. B. die Anzahl der `product`-Elemente in einem Aufruf auf vier. Wenn der Warenkorb mehr als vier Produkte enthält, erzeugt sie mehrere `CQ_Analytics.record`-Funktionen.

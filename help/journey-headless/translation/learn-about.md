@@ -2,8 +2,11 @@
 title: Erfahren Sie mehr über Headless-Inhalte und wie Sie sie in AEM übersetzen können.
 description: Lernen Sie die Headless-Konzepte, ihre Zuordnung zu AEM und die Theorie der Übersetzung in AEM kennen.
 exl-id: cb2e2d89-e2d2-462f-8fff-b201847d0641
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
-workflow-type: ht
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 100%
 

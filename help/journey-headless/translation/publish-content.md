@@ -2,8 +2,11 @@
 title: Veröffentlichen übersetzter Inhalte
 description: Erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und die Übersetzungen aktualisieren, wenn die Inhalte sich ändern.
 exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
-workflow-type: ht
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 100%
 
@@ -94,7 +97,7 @@ Der Prozess unterscheidet sich jedoch geringfügig, je nachdem, ob Sie sich für
 
 1. Gehen Sie zu **Navigation** > **Assets** > **Dateien**.  Beachten Sie, dass Headless-Inhalte in AEM als Assets gespeichert werden. Diese werden auch als Inhaltsfragmente bezeichnet.
 1. Wählen Sie den Sprachstamm Ihres Projekts aus. In diesem Fall wird `/content/dam/wknd/en` ausgewählt.
-1. Klicken Sie auf die Auswahlleiste und zeigen Sie das Bedienfeld **Verweise** an.
+1. Klicken Sie auf die Leistenauswahl und zeigen Sie das Bedienfeld **Verweise** an.
 1. Klicken Sie auf **Sprachkopien**.
 1. Aktivieren Sie das Kontrollkästchen **Sprachkopien**.
 1. Erweitern Sie den Abschnitt **Sprachkopien aktualisieren** unten im Bereich „Verweise“.

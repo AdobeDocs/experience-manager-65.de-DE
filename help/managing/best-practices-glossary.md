@@ -8,7 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
 solution: Experience Manager, Experience Manager 6.5
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Compliance
+role: Admin,Architect,Data Architect,Developer,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '6926'
 ht-degree: 99%
@@ -103,7 +105,7 @@ Neben den standardmäßigen Wartungsaufgaben für Adobe Experience Manager (AEM)
 
 ### Entsprechend geschultes Personal {#appropriately-trained-staff}
 
-Stellen Sie sicher, dass Ihr Team aus Mitarbeitenden mit entsprechender Qualifikation besteht. Für Projektteams wird empfohlen, über Folgendes zu verfügen:
+Stellen Sie sicher, dass Ihr Team aus Mitarbeitenden mit entsprechender Qualifikation besteht. Zu Projekt-Teams sollten die folgenden Mitglieder zählen:
 
 * Mindestens ein AEM-zertifizierter Entwicklungsleiter
 * Mindestens ein AEM-zertifizierter Architekt
@@ -291,7 +293,7 @@ Ein erster Entwurf des rechtsgültigen Vertrags.
 
 ### Aktuelle Inhaltsstruktur und -format {#current-content-structure-and-format}
 
-Dokumentation der aktuellen Inhaltsarchitektur und -format. Damit wird die zukünftige Inhaltsarchitektur generiert. Sie wird auch für das Migrationskonzept verwendet.
+Dokumentation der aktuellen Inhaltsarchitektur und -format. Mit ihrer Hilfe wird die künftige Inhaltsarchitektur generiert. Sie wird auch für das Migrationskonzept verwendet.
 
 ### Sicherungs- und Wiederherstellungsrichtlinien der Kundin bzw. des Kunden {#customer-backup-and-restore-policy}
 
@@ -555,7 +557,7 @@ Definition der Inhaltsstruktur des Vorgängersystems. Diese dient als Referenz u
 
 ### Leistung und Leistungs-KPIs des Vorgängersystems {#historical-performance-and-historical-performance-kpis}
 
-Erfassen und dokumentieren Sie Leistungsstatistiken und Leistungs-KPIs aus dem alten System. Diese werden dann als Bezugspunkt und Vergleichsmaßstab für die neue Lösung verwendet.
+Sammeln und dokumentieren Sie Leistungsstatistiken und -KPIs des Vorgängersystems. Diese werden dann als Bezugspunkt und Vergleichsmaßstab für die neue Lösung verwendet.
 
 ### Ermitteln wichtiger Lösungen und Funktionen {#identify-critical-key-solutions-functionalities}
 
@@ -668,7 +670,7 @@ Details zum alten System sollten gesammelt werden, damit Sie wissen, was stillge
 
 ### Liste der zu verwendenden Entwicklungs-Tools {#list-of-development-tools-to-be-used}
 
-Eine Übersicht über die bei der Implementierung verwendeten Tools. Die Tools sollten Folgendes umfassen:
+Ein Überblick über die Tools, die bei der Implementierung verwendet werden. Folgende Tools sollten enthalten sein:
 
 * Dokumentations-Tools
 * Tools zur Problemverfolgung

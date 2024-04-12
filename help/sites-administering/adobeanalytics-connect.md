@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Integration
+role: Admin
+source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '1484'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -128,7 +130,7 @@ Für die von Ihnen verwendete Report Suite-ID (RSID) können Sie steuern, welche
    >
    >Im Content Finder auf der linken Seite werden Adobe Analytics-Variablen (SiteCatalyst-Variablen) eingetragen, wenn Sie eine Report Suite-ID auswählen.
 
-1. Um die Serverinstanzen auszuwählen, die Informationen an die Report Suite senden sollen, verwenden Sie die **Ausführungsmodus** Dropdown-Liste (neben der Report Suite-ID).
+1. Um die Server-Instanzen auszuwählen, die Informationen an die Report Suite senden sollen, verwenden Sie die Dropdown-Liste **Ausführungsmodus** (neben der Report Suite-ID).
 
    ![aa-framework-01](assets/aa-framework-01.png)
 
@@ -174,7 +176,7 @@ Untergeordnete Elemente der Seite übernehmen die Verknüpfung mit dem Framework
 1. Öffnen Sie die **[Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md)** entweder direkt über die Konsole oder über den Seiteneditor.
 1. Öffnen Sie die Registerkarte **Cloud-Services**.
 
-1. Verwenden Sie die **Konfiguration hinzufügen** Dropdown zur Auswahl **Adobe Analytics** aus den verfügbaren Optionen. Wenn die Vererbung platziert ist, deaktivieren Sie diese, bevor der Selektor verfügbar wird.
+1. Verwenden Sie die Dropdown-Liste **Konfiguration hinzufügen** und wählen Sie aus den verfügbaren Optionen **Adobe Analytics** aus. Wenn die Vererbung platziert ist, deaktivieren Sie diese, bevor der Selektor verfügbar wird.
 
 1. Der Dropdown-Selektor für **Adobe Analytics** wird an die verfügbaren Optionen angehängt. Wählen Sie die erforderliche Framework-Konfiguration aus.
 
@@ -192,16 +194,18 @@ Siehe [Anzeigen von Seitenanalysedaten](/help/sites-authoring/page-analytics-usi
 
 ### Konfigurieren des Importintervalls {#configuring-the-import-interval}
 
-Konfigurieren Sie die entsprechende Instanz der **Adobe AEM Analytics Report Sling Importer** -Dienst:
+Konfigurieren Sie die entsprechende Instanz des Dienstes **Adobe AEM Analytics Report Sling Importer**:
 
-* **Abrufversuche**: Anzahl der Versuche, einen Bericht in der Warteschlange abzurufen.
+* **Abrufversuche**: 
+Anzahl der Versuche, einen Bericht in der Warteschlange abzurufen.
 Der Standardwert lautet `6`.
 
-* **Abrufverzögerung**: Die Anzahl der Millisekunden zwischen den Versuchen, einen in die Warteschlange gestellten Bericht abzurufen.
+* **Abrufverzögerung**: 
+Die Anzahl der Millisekunden zwischen den Versuchen, einen Bericht in der Warteschlange abzurufen.
 Der Standardwert lautet `10000`. Da dies in Millisekunden angegeben wird, entspricht es 10 Sekunden.
 
-* **Abrufhäufigkeit**: A `cron` Ausdruck verwenden, um die Häufigkeit für das Abrufen des Analytics-Berichts zu bestimmen.
-Der Standardwert ist `0 0 0/12 * * ?`; dies entspricht 12 Abrufen pro Stunde.
+* **Abrufhäufigkeit**:Ein Ausdruck `cron` zum Bestimmen der Häufigkeit für das Abrufen des Analyseberichts.
+Der Standardwert ist `0 0 0/12 * * ?`, was 12 Abrufen pro Stunde entspricht.
 
 Zum Konfigurieren dieses OSGi-Service können Sie entweder die [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) oder einen [osgiConfig-Knoten im Repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) verwenden (die Service-PID lautet `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
 

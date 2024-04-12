@@ -3,10 +3,12 @@ title: Konfigurationen und der Konfigurations-Browser
 description: Machen Sie sich mit AEM-Konfigurationen und der Verwaltung der Einstellungen für den Arbeitsbereich in AEM vertraut.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Configuring
+role: Admin
+source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '1472'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +71,7 @@ Mit dem Konfigurations-Browser kann ein Administrator auf einfache Weise Zugriff
 
 Es ist einfach, mithilfe des Konfigurations-Browsers eine Konfiguration in AEM zu erstellen.
 
-1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Tools** > **Allgemein** > **Konfigurations-Browser** aus.
+1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Tools** > **Allgemein** > **Konfigurations-Browser** aus.
 1. Klicken Sie auf **Erstellen**.
 1. Geben Sie einen **Titel** und einen **Namen** für Ihre Konfiguration an.
 
@@ -95,7 +97,7 @@ Es ist einfach, mithilfe des Konfigurations-Browsers eine Konfiguration in AEM z
 Wenn Sie Konfigurationen als Arbeitsbereiche betrachten, können Zugriffsrechte für diese Konfigurationen festgelegt werden, um zu erzwingen, wer auf diese Arbeitsbereiche zugreifen darf und wer nicht.
 
 1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Tools** > **Allgemein** > **Konfigurations-Browser** aus.
-1. Wählen Sie die zu ändernde Konfiguration aus und klicken Sie auf **Eigenschaften** in der Symbolleiste.
+1. Wählen Sie die zu ändernde Konfiguration aus und klicken Sie in der Symbolleiste auf **Eigenschaften**.
 1. Wählen Sie alle zusätzlichen Funktionen aus, die Sie der Konfiguration hinzufügen möchten.
 
    >[!NOTE]
@@ -158,7 +160,7 @@ Sehen wir uns nun den entsprechenden JCR-Inhalt an:
 
 In diesem Beispiel gehen Sie von einem WKND-spezifischen DAM-Ordner und einer entsprechenden Konfiguration aus. Ausgehend von diesem Ordner `/content/dam/wknd` wird eine Zeichenfolgeneigenschaft mit dem Namen `cq:conf` angezeigt, die auf die Konfiguration verweist, die für die Unterstruktur gelten soll. Die Eigenschaft wird auf `jcr:content` eines Asset-Ordners oder einer Asset-Seite festgelegt. Diese `conf`-Links sind explizit, sodass es einfach ist, ihnen zu folgen, indem Sie sich den Inhalt in CRXDE ansehen.
 
-Wenn Sie in `/conf` springen, können Sie dem Verweis folgen und sehen, dass es einen `/conf/wknd`-Knoten gibt. Dies ist eine Konfiguration. Die Suche ist für den Anwendungs-Code transparent. Der Beispielcode hat nie einen dedizierten Verweis darauf. Er wird hinter dem `Conf` -Objekt. Welche Konfiguration gilt, wird durch den JCR-Inhalt gesteuert.
+Wenn Sie in `/conf` springen, können Sie dem Verweis folgen und sehen, dass es einen `/conf/wknd`-Knoten gibt. Dies ist eine Konfiguration. Die Suche ist für den Anwendungs-Code transparent. Der Beispiel-Code hat niemals einen dedizierten Verweis darauf, er verbirgt sich vielmehr hinter dem `Conf`-Objekt. Welche Konfiguration gilt, wird durch den JCR-Inhalt gesteuert.
 
 Sie können sehen, dass die Konfiguration einen fest benannten `settings`-Knoten mit den tatsächlichen Elementen enthält, einschließlich `dam/imageserver`, was in diesem Fall benötigt wird. Ein solches Element kann als „Einstellungsdokument“ betrachtet werden und wird durch eine `cq:Page` dargestellt, die `jcr:content` mit dem tatsächlichen Inhalt enthält.
 

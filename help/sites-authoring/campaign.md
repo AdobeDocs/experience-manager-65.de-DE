@@ -7,10 +7,12 @@ content-type: reference
 topic-tags: personalization
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring,Personalization,Integration
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2770'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +20,7 @@ ht-degree: 93%
 
 Sie können E-Mail-Inhalte in AEM erstellen und diese in Adobe Campaign-E-Mails verarbeiten. Gehen Sie dazu wie folgt vor:
 
-1. Erstellen Sie einen Newsletter in AEM aus einer Adobe Campaign-spezifischen Vorlage.
+1. Erstellen Sie in AEM mithilfe einer spezifischen Vorlage für Adobe Campaign einen neuen Newsletter.
 1. Wählen Sie [einen Adobe Campaign-Service](#selecting-the-adobe-campaign-cloud-service-and-template) aus, bevor Sie die Inhalte bearbeiten, um Zugriff auf alle Funktionen zu erhalten.
 1. Bearbeiten Sie den Inhalt.
 1. Überprüfen Sie den Inhalt.
@@ -56,7 +58,7 @@ Detaillierte Anweisungen finden Sie in diesem Dokument.
 
    >[!NOTE]
    >
-   >[E-Mail-Muster stehen nur in Geometrixx zur Verfügung](/help/sites-developing/we-retail.md). Laden Sie Beispielinhalt aus Package Share herunter.
+   >[E-Mail-Muster stehen nur in Geometrixx zur Verfügung](/help/sites-developing/we-retail.md). Laden Sie Geometrixx-Beispielinhalt aus Package Share herunter.
 
    ![chlimage_1-15](assets/chlimage_1-15a.png)
 
@@ -147,7 +149,7 @@ So bearbeiten Sie E-Mail-Inhalte:
 Beim Bearbeiten Ihrer Inhalte können Sie Folgendes einfügen:
 
 * Adobe Campaign-Kontextfelder. Hierbei handelt es sich um Felder, die Sie in Ihren Text einfügen können und die sich entsprechend den Empfängerdaten anpassen (z. B. Vorname, Nachname oder beliebige Daten der Zieldimension).
-* Adobe Campaign-Personalisierungsblöcke. Hierbei handelt es sich um vordefinierte Inhaltsbausteine, die nicht mit den Empfängerdaten in Zusammenhang stehen, wie z. B. ein Markenlogo oder ein Link zu einer Mirrorseite.
+* Adobe Campaign-Personalisierungsblöcke. Hierbei handelt es sich um Blöcke mit vorkonfiguriertem Inhalt, die sich nicht auf die Daten der Empfängerinnen und Empfänger beziehen (beispielsweise ein Markenlogo oder ein Link zu einer Mirrorseite).
 
 Eine ausführliche Beschreibung der Campaign-Komponenten finden Sie unter [Adobe Campaign-Komponenten](/help/sites-authoring/adobe-campaign-components.md).
 
@@ -188,7 +190,7 @@ So fügen Sie Personalisierung ein:
 
 ### Newsletter-Vorschau {#previewing-a-newsletter}
 
-Sie können eine Vorschau des Newsletters anzeigen und eine Vorschau der Personalisierung anzeigen.
+Sie können das Aussehen des Newsletters und die Personalisierung in der Vorschau anzeigen.
 
 1. Klicken Sie bei geöffnetem Newsletter oben rechts in AEM auf **Vorschau**. In AEM wird nun angezeigt, wie der Newsletter für Empfänger aussieht.
 

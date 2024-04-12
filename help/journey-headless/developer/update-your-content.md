@@ -2,10 +2,13 @@
 title: Aktualisieren Ihres Inhalts über AEM Assets-APIs
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie mit der REST-API auf die Inhalte Ihrer Inhaltsfragmente zugreifen und diese aktualisieren können.
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin, Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1029'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -180,7 +183,7 @@ Assets can have multiple renditions. These are typically exposed as child entiti
 
 ## Assets-HTTP-API und Inhaltsfragmente {#assets-http-api-content-fragments}
 
-Inhaltsfragmente werden für die Headless-Bereitstellung verwendet. Ein Inhaltsfragment ist ein spezieller Asset-Typ. Sie werden für den Zugriff auf strukturierte Daten wie Texte, Zahlen und Daten verwendet.
+Inhaltsfragmente werden für die Headless-Bereitstellung verwendet. Ein Inhaltsfragment ist ein spezieller Asset-Typ. Sie werden verwendet, um auf strukturierte Daten zuzugreifen, wie z. B. Texte, Zahlen und Daten.
 
 <!--
 As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.

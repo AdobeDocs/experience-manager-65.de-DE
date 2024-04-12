@@ -1,12 +1,14 @@
 ---
 title: Konfigurieren von Standardkomponenten im Design-Modus
-description: Konfigurieren von Adobe Experience Manager-Komponenten im Designmodus.
+description: Konfigurieren von Adobe Experience Manager-Komponenten im Design-Modus.
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +49,7 @@ Beispielsweise kann der Inhalt einer Produktseite ein Absatzsystem enthalten, da
 >
 >Bearbeiten des Designs im Design-Modus wie in diesem Artikel beschrieben ist die empfohlene Vorgehensweise zum Definieren von Designs statischer Vorlagen
 >
->Das Ändern von Designs beispielsweise in CRX DE ist keine Best Practice und die Anwendung solcher Designs kann vom erwarteten Verhalten abweichen. Weitere Informationen finden Sie im Entwicklerdokument [Seitenvorlagen – statisch](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied).
+>Das Ändern von Designs in CRX DE ist beispielsweise nicht ratsam, und die Anwendung derartiger Designs kann von erwarteten Verhaltensweisen abweichen. Weitere Informationen finden Sie im Entwicklerdokument [Seitenvorlagen – statisch](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied).
 
 ## Aktivieren/Deaktivieren von Komponenten {#enable-disable-components}
 
@@ -57,17 +59,17 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    ![screen_shot_2018-03-22at103113](assets/screen_shot_2018-03-22at103113.png)
 
-1. Klicken Sie auf eine Komponente. Die Komponente hat einen blauen Rahmen, wenn sie ausgewählt ist.
+1. Klicken Sie auf eine Komponente. Diese Komponente wird mit einem blauen Rahmen versehen, wenn sie ausgewählt ist.
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Klicken Sie auf **Übergeordnet** Symbol.
+1. Klicken Sie auf das Symbol für **übergeordnetes Element**.
 
    ![Übergeordnetes Element](do-not-localize/screen_shot_2018-03-22at103204.png)
 
-   Dadurch wird das Absatzsystem mit der aktuellen Komponente ausgewählt.
+   Dadurch wird das Absatzsystem ausgewählt, das die aktuelle Komponente enthält.
 
-1. Die **Konfigurieren** -Symbol für das Absatzsystem wird in der Aktionsleiste des übergeordneten Elements angezeigt.
+1. Das Symbol **Konfigurieren** für das Absatzsystem wird in der Aktionsleiste für das übergeordnete Element angezeigt.
 
    ![Konfigurieren](do-not-localize/screen_shot_2018-03-22at103256.png)
 
@@ -96,7 +98,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    >[!NOTE]
    >
-   >Adaptive Formularkomponenten sind für die Verwendung im Container für adaptive Formulare entwickelt, um das Forms-Ökosystem zu verwenden. Entsprechend dürfen diese Komponenten nur im Editor für adaptive Formulare verwendet werden und funktionieren nicht im Seiten-Editor von Sites.
+   >Adaptive Formularkomponenten sind für die Verwendung im Container für adaptive Formulare konzipiert, um das Forms-Ökosystem zu nutzen. Entsprechend dürfen diese Komponenten nur im Editor für adaptive Formulare verwendet werden und funktionieren nicht im Seiten-Editor von Sites.
 
    **Einstellungen**
 
@@ -110,7 +112,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    ![screen_shot_2018-03-22at103113-1](assets/screen_shot_2018-03-22at103113-1.png)
 
-1. Klicken Sie auf eine Komponente mit einem blauen Rahmen. In diesem Beispiel wird eine Hero-Bild-Komponente ausgewählt.
+1. Klicken Sie auf eine Komponente mit einem blauen Rahmen. In diesem Beispiel ist eine Hero-Bildkomponente ausgewählt.
 
    ![screen_shot_2018-03-22at103434](assets/screen_shot_2018-03-22at103434.png)
 
@@ -130,7 +132,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    **Eigenschaften**
 
-   Auf der Registerkarte **Eigenschaften** können Sie die wichtigsten Design-Parameter der Komponente konfigurieren. Beispielsweise können Sie für eine Bildkomponente die maximal zulässige und minimale Größe des Bildes definieren.
+   Auf der Registerkarte **Eigenschaften** können Sie die wichtigsten Design-Parameter der Komponente konfigurieren. Beispielsweise können Sie für eine Bildkomponente die maximal und minimal zulässige Bildgröße festlegen.
 
    **Funktionen**
 
@@ -154,4 +156,4 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    ![Verschieben](do-not-localize/screen_shot_2018-03-22at103816.png)
 
-1. Klicken Sie auf **Fertig** zum Speichern und Schließen des Dialogfelds.
+1. Klicken Sie auf das Symbol **Fertig**, um Ihre Änderungen zu speichern und das Dialogfeld zu schließen.
