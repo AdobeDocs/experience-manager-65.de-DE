@@ -5,15 +5,21 @@ keywords: Fügen Sie eine benutzerdefinierte Funktion hinzu, verwenden Sie eine 
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: d1348a964e664cf502f6eded14a1054641ebc740
+exl-id: a328b4a8-e8dd-42a0-b73b-94e76c7692a8
+source-git-commit: 91ab786cd7e0dd75b9ad15058a125605245ec5bb
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 49%
+source-wordcount: '1119'
+ht-degree: 50%
 
 ---
 
 
 # Benutzerdefinierte Funktionen in Adaptive Forms (Kernkomponenten)
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions) |
+| AEM 6.5 | Dieser Artikel |
 
 ## Einführung
 
@@ -266,4 +272,3 @@ Jetzt können Sie eine Regel erstellen, um benutzerdefinierte Funktionen im Rege
 ![Hinzufügen der benutzerdefinierten Funktion zur Client-Bibliothek](/help/forms/using//assets/calculateage-customfunction.png)
 
 Jetzt sollten wir verstehen, wie eine benutzerdefinierte Funktion mithilfe der [Aufrufdienst des Regeleditors in AEM Forms](/help//forms/using/rule-editor.md).
-
