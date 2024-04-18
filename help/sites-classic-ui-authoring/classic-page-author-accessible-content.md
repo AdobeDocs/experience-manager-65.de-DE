@@ -8,10 +8,12 @@ topic-tags: page-authoring
 content-type: reference
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '9070'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -103,11 +105,11 @@ AEM fügt Ihren Bildern standardmäßig einen **ALT-Text** hinzu. Für die klass
 
 >[!NOTE]
 >
->In beiden oben genannten Szenarien wird die Standardeinstellung **Alternativtext** -Wert nicht im **Erweiterte Bildeigenschaften** Registerkarte. Um den Standardwert zu ändern, geben Sie einfach einen neuen Wert in die **Alternativtext** -Feld.
+>In beiden oben genannten Szenarien ist der Standardwert für den **Alt-Text** auf der Registerkarte **Erweiterte Bildeigenschaften** nicht zu sehen. Um den Standardwert zu ändern, geben Sie einfach einen neuen Wert in das Feld **Alt-Text** ein.
 
 >[!NOTE]
 >
->Wenn Ihr Bild nur Dekorationszwecken dient (siehe [Erstellen guter Textalternativen](#creating-good-text-alternatives)), dann können Sie im Feld **ALT-Text** durch Drücken der Leertaste ein Leerzeichen einfügen. Dadurch wird ein leeres `alt`-Attribut erstellt, das eine Bildschirmlesehilfe auffordert, das Bild zu ignorieren.
+>Wenn Ihr Bild nur Dekorationszwecken dient (siehe [Erstellen guter Textalternativen](#creating-good-text-alternatives)), dann können Sie im Feld **Alt-Text** durch Drücken der Leertaste ein Leerzeichen einfügen. Dadurch wird ein leeres `alt`-Attribut erstellt, das eine Bildschirmlesehilfe auffordert, das Bild zu ignorieren.
 
 #### Erstellen guter Textalternativen {#creating-good-text-alternatives}
 
@@ -140,7 +142,7 @@ Bestimmte Arten von nichttextlichem Inhalt, für den Textalternativen erforderli
 
   Diese stellen normalerweise numerische Daten dar. So könnte als eine Möglichkeit zur Bereitstellung von Alternativtext eine kurze Zusammenfassung der im Diagramm gezeigten Haupttrends eingefügt werden. Fall nötig, können Sie eine detailliertere Beschreibung im Text im Feld **Beschreibung** auf der Registerkarte **Erweiterte Bildeigenschaften** einfügen. Außerdem könnten Sie die Quelldaten an anderer Stelle auf der Seite oder Site als Tabelle zur Verfügung stellen.
 
-  ![Beispiel eines Diagramms. Nachstehend finden Sie den besten Ansatz zur Bereitstellung einer Alternative.](assets/chlimage_1-2a.jpeg)
+  ![Beispiel für ein Diagramm. Nachstehend finden Sie den besten Ansatz zur Bereitstellung einer Alternative.](assets/chlimage_1-2a.jpeg)
 
   Zur Bereitstellung einer Alternative für dieses Beispieldiagramm können Sie dem Bild selbst einen knappen `alt`-Text hinzufügen und dann dem Bild eine vollständige Textalternative folgen lassen.
 
@@ -379,7 +381,7 @@ Dieses Erfolgskriterium besteht, um sicherzustellen, dass derartige Strukturinfo
 
 #### Erfüllen: Informationen und Beziehungen (1.3.1)       {#how-to-meet-info-and-relationships}
 
-AEM erleichtert den Aufbau von Web-Seiten mit den entsprechenden HTML-Elementen. Öffnen Sie den Seiteninhalt im RTE (eine Textkomponente) und verwenden Sie die **Format** -Menü, um das entsprechende Strukturelement anzugeben (z. B. Absatz und Überschrift).
+AEM erleichtert den Aufbau von Web-Seiten mit den entsprechenden HTML-Elementen. Öffnen Sie Ihren Seiteninhalt im RTE (eine Text-Komponente), und geben Sie im Menü **Format** das entsprechende Strukturelement (zum Beispiel Absatz und Überschrift) an.
 
 Das folgende Bild zeigt einen Text, der als Absatztext formatiert wurde. Der verwendete Quell-Code zeigt die korrekten Anfangs- und End-Tags &lt;p> und &lt;/p>.
 
@@ -393,7 +395,7 @@ Sie können folgendermaßen sicherstellen, dass Ihre Web-Seiten die entsprechend
 
   Im folgenden Bild ist ein Beispiel der verschiedenen Überschriftentypen zu sehen.
 
-  ![Die Überschriften H1 bis H3 werden in der Dropdown-Auswahl angezeigt (klassische Benutzeroberfläche).](assets/chlimage_1-19a.png)
+  ![Überschrift H1 bis H3 in der Dropdown-Auswahl (klassische Benutzeroberfläche).](assets/chlimage_1-19a.png)
 
 * **Hervorgehobener Text**:
 
@@ -531,7 +533,7 @@ Die Anforderungen, die sich auf die Alternativen für Farben beziehen, finden Si
 
 Stellen Sie sicher, dass alle Informationen, die sich auf visuelle Eigenschaften des Seiteninhalts stützen, auch in einem alternativen Format angezeigt werden.
 
-* Verlassen Sie sich nicht auf die visuelle Position, um Informationen anzugeben. Wenn Sie beispielsweise Benutzer auf ein Menü rechts auf der Seite verweisen möchten, über das sie auf weitere Informationen zugreifen können, verweisen Sie auf *das Menü rechts*; benennen Sie stattdessen das Menü (z. B. über eine Überschrift) und verweisen Sie im Text auf diesen Namen.
+* Verlassen Sie sich nicht auf die visuelle Position, um Informationen anzugeben. Wenn Sie beispielsweise Benutzerinnen und Benutzer auf ein Menü rechts auf der Seite verweisen möchten, über das diese auf weitere Informationen zugreifen können, verweisen Sie nicht auf *das Menü rechts*, sondern benennen Sie stattdessen das Menü (z. B. mit einer Überschrift) und verweisen Sie im Text auf diesen Namen.
 * Verlassen Sie sich nicht auf den Textstil (z. B. fett oder kursiv gedruckter Text) als einzige Methode zur Vermittlung von Informationen.
 
 >[!NOTE]
@@ -607,7 +609,7 @@ Wenn Farbe als Hinweis für die Bereitstellung von Informationen verwendet wird,
 * Kontrast (Minimum): Die visuelle Darstellung von Text und Abbildungen von Text hat ein Kontrastverhältnis von mindestens 4,5:1, mit den folgenden Ausnahmen:
 
    * Großer Text: Großformatiger Text und Bilder von großformatigem Text weisen ein Kontrastverhältnis von mindestens 3:1 auf.
-   * Beiläufig: Text oder Bilder von Text, die Teil einer inaktiven Komponente der Benutzeroberfläche sind und reine Dekoration sind oder für niemanden sichtbar sind oder die Teil eines Bildes sind, das signifikanten anderen visuellen Inhalt enthält, haben keine Kontrastanforderung.
+   * Beiläufig: Für Text oder Textbilder, die Teil einer inaktiven Komponente der Benutzeroberfläche sind, die reine Dekoration darstellen oder für niemanden sichtbar sind, oder die Teil eines Bildes sind, das signifikanten anderen visuellen Inhalt enthält, ist kein Kontrast erforderlich.
    * Firmenschriftzüge: Für Text, der Teil eines Logos oder eines Markennamens ist, gibt es keine Kontrastanforderungen.
 
 #### Zweck – Kontrast (Minimum) (1.4.3) {#purpose-contrast-minimum}
@@ -686,7 +688,7 @@ Wenn Bilder von Text verwendet werden müssen, nutzen Sie CSS, um die Bilder von
 
 Beachten Sie Folgendes:
 
-1. Anforderungen für flackernden oder blinkenden Inhalt finden Sie unter [Gestalten Sie Inhalt nicht auf eine Art und Weise, von der bekannt ist, dass sie zu Anfällen führt (2.3)](#seizures).
+1. Die Anforderungen für flackernden oder blinkenden Inhalt finden Sie unter [Gestalten Sie Inhalte nicht auf Arten, von denen bekannt ist, dass sie zu Anfällen führen (2.3)](#seizures).
 1. Jeglicher Inhalt, der dieses Erfolgskriterium nicht erfüllt, kann die Möglichkeit eines Benutzers beeinträchtigen, die gesamte Seite zu nutzen. Daher muss jeglicher Inhalt auf einer Web-Seite (egal ob er dazu dient, andere Erfolgskriterien zu erfüllen oder nicht) dieses Erfolgskriterium erfüllen. Siehe [Konformitätsanforderung 5: Nicht-Interferenz](https://www.w3.org/TR/WCAG20/#cc5).
 1. Für Inhalte, die regelmäßig durch Software aktualisiert werden oder an den Benutzeragenten gestreamt werden, müssen Informationen, die zwischen der Initiierung der Pause und der Wiederaufnahme der Präsentation generiert oder empfangen wurden, nicht beibehalten oder präsentiert werden, da dies möglicherweise technisch nicht möglich ist und in vielen Situationen sogar irreführend sein könnte.
 1. Eine Animation, die im Rahmen einer Vorausladephase oder einer ähnlichen Situation auftritt, kann als wesentlich angesehen werden, wenn während dieser Phase keine Interaktion für alle Benutzenden stattfinden kann und wenn eine Nichtanzeige des Fortschritts die Benutzenden verwirren oder zu der Annahme führen könnte, dass der Inhalt eingefroren oder unterbrochen ist.
@@ -785,7 +787,7 @@ Stellen Sie vor allem sicher, dass der Link-Text den Zweck eines Links eindeutig
    * Text: Abendkurse im Herbst 2010 – Details.
    * Grund: Durch eine kleine Anpassung des Textes und der Position des Linkelements lässt sich der Link-Text verbessern:
 
-Links sollten auf allen Seiten konsistent formuliert sein, insbesondere für Navigationsleisten. Wenn zum Beispiel ein Link zu einer bestimmten Seite auf einer Seite **Veröffentlichungen** heißt, verwenden Sie diesen Text auf anderen Seiten, um Konsistenz zu gewährleisten.
+Links sollten auf allen Seiten konsistent formuliert sein, insbesondere für Navigationsleisten. Wenn beispielsweise ein Link zu einer bestimmten Seite den Titel **Veröffentlichungen** auf einer Seite hat, verwenden Sie diesen auch auf anderen Seiten, um Konsistenz zu gewährleisten.
 
 Zum Zeitpunkt des Schreibens gibt es jedoch einige Probleme im Zusammenhang mit der Verwendung von Titeln:
 
@@ -820,7 +822,7 @@ Auch wenn es angeraten ist, einen Link-Text bereitzustellen, der den Zweck des L
 
 In einigen Fällen, in denen sich mehrere Links auf einer Seite befinden (von denen jeder das Ziel des Links durch komplexe, aber erforderliche Details angibt), kann es sinnvoll sein, eine alternative Version der Web-Seite anzubieten, die denselben Inhalt anzeigt, auf der der Link-Text jedoch weniger ausführlich ist.
 
-Alternativ können Skripte verwendet werden, sodass eine minimale Textmenge innerhalb des Links selbst bereitgestellt wird. Beim Aktivieren eines entsprechenden Steuerelements, das sich oben auf der Seite befindet, lautet der Link-Text jedoch *erweitert* detailliert beschrieben. Einen ähnlichen Ansatz bietet die Verwendung von CSS, um den vollständigen Link für sehende Menschen *auszublenden*, ihn aber für Menschen, die eine Bildschirmlesehilfe nutzen, auszugeben. Dies überschreitet den Rahmen dieses Dokuments, weitere Informationen hierzu finden Sie jedoch unter [Weitere Informationen: Link-Zweck (Im Kontext) (2.4.4)](#more-information-link-purpose-in-context).
+Alternativ können Skripte verwendet werden, damit innerhalb des Links selbst nur eine minimale Textmenge angegeben wird. Beim Aktivieren eines entsprechenden Steuerelements, das sich oben auf der Seite befindet, wird der Link-Text dann jedoch *erweitert* und detaillierter beschrieben. Einen ähnlichen Ansatz bietet die Verwendung von CSS, um den vollständigen Link für sehende Menschen *auszublenden*, ihn aber für Menschen, die eine Bildschirmlesehilfe nutzen, auszugeben. Dies überschreitet den Rahmen dieses Dokuments, weitere Informationen hierzu finden Sie jedoch unter [Weitere Informationen: Link-Zweck (Im Kontext) (2.4.4)](#more-information-link-purpose-in-context).
 
 #### Weitere Informationen – Link-Zweck (im Kontext) (2.4.4) {#more-information-link-purpose-in-context}
 
@@ -945,7 +947,7 @@ Wenn Bild-Schaltflächen verwendet werden (z. B. die Komponente **Bild-Schaltfl�
 
 Bei einer Gruppe zusammengehöriger Steuerelemente, z. B. **Optionsfeldgruppe**, kann sowohl ein Titel für die Gruppe als auch für einzelne Steuerelemente erforderlich sein. Wenn Sie einen Satz Optionsfelder in AEM hinzufügen, gibt das Feld **Titel** diesen Gruppentitel an, während die einzelnen Titel beim Erstellen der Optionsfelder (**Elemente**) angegeben werden.
 
-![Hinzufügen von Elementen zur Optionsfeldgruppe. Der Gruppentitel lautet &quot;Contact me by&quot;- definiert im Feld Titel .](assets/chlimage_1-24a.png)
+![Hinzufügen von Elementen zur Optionsfeldgruppe. Der Gruppentitel lautet „Kontakt per“, wie definiert im Feld „Titel“.](assets/chlimage_1-24a.png)
 
 Es gibt jedoch keine programmgesteuerte Zuordnung zwischen dem Gruppentitel und den Optionsschaltflächen. Der Titel muss beim Bearbeiten der Vorlage in die erforderlichen Tags `fieldset` und `legend` gesetzt werden, um diese Zuordnung herzustellen. Dies kann ausschließlich über die Bearbeitung des Quell-Codes der Seite erfolgen. Alternativ können Systemadmins die Unterstützung für diese Elemente hinzufügen, damit sie im Dialogfeld **Feldeigenschaften** angezeigt werden (siehe [Hinzufügen von Unterstützung für zusätzliche HTML-Elemente und -Attribute](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
@@ -967,7 +969,7 @@ Die Positionierung von Kennzeichnungen ist ebenfalls wichtig, da sie beim Suchen
 
   Kennzeichnungen werden entweder direkt über dem Feld oder direkt links vom Feld platziert.
 
-In einfachen Formularen mit eingeschränkter Funktionalität müssen Sie eine `Submit` -Schaltfläche kann als Beschriftung für das angrenzende Feld dienen (z. B. `Search`). Dies ist in Situationen nützlich, in denen wenig Platz für die Beschriftung vorhanden ist.
+In einfachen Formularen mit wenigen Funktionen kann eine passende Kennzeichnung einer `Submit`-Schaltfläche auch als Kennzeichnung für das angrenzende Feld dienen (z. B. `Search`). Dies ist in Situationen nützlich, in denen wenig Platz für die Beschriftung vorhanden ist.
 
 #### Weitere Informationen – Beschriftungen oder Anweisungen (3.3.2) {#more-information-labels-or-instructions}
 

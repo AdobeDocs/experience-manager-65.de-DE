@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '892'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -181,7 +183,7 @@ Das **Auditprotokoll** kann über die Registerkarte **Informationen** im Sidekic
 
 ## Seiteninformationen {#page-information}
 
-Die Website-Konsole [liefert Informationen zum aktuellen Status der Seite](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) wie Veröffentlichung, Änderung, Sperrung, Live Copy usw.
+Die Website-Konsole enthält auch [Informationen zum aktuellen Status der Seite](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), wie zum Beispiel Veröffentlichung, Bearbeitung, gesperrt oder Live Copy.
 
 ## Seitenmodi {#page-modes}
 
@@ -206,7 +208,7 @@ In diesem Modus können Sie das Design der Seite bearbeiten, indem Sie die verf�
 >
 >* [Strukturvorlage](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
 >* [ClientContext](/help/sites-administering/client-context.md)
->* Websites - öffnet die Websites-Konsole.
+>* Websites – öffnet die Websites-Konsole.
 >* Neu laden – aktualisiert die Seite.
 
 ## Tastaturbefehle {#keyboard-shortcuts}

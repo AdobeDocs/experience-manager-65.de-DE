@@ -8,10 +8,12 @@ content-type: reference
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Operations
+role: Admin
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1275'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +44,7 @@ Das responsive Layout für Ihre Seiten wird von AEM durch eine Kombination von M
         Sie können den Layout-Container als Standard für die Seite festlegen und es den Benutzern gleichzeitig erlauben, weitere Layout-Container darin hinzuzufügen, z. B. für die Spaltensteuerung.
 
 * **[Layout-Modus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
-Sobald der Layout-Container auf Ihrer Seite positioniert ist, können Sie die **Layout** -Modus, um Inhalte im responsiven Raster zu positionieren.
+Sobald der Layout-Container auf der Seite positioniert ist, können Sie im **Layout**-Modus Inhalte im responsiven Raster positionieren.
 
 * [**Emulator**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 Auf diese Weise können Sie responsive Websites erstellen und bearbeiten, deren Layout sich durch interaktive Größenanpassung der Komponenten an die Geräte-/Fenstergröße anpasst. Die Benutzerin bzw. der Benutzer kann dann mit dem Emulator sehen, wie der Inhalt wiedergegeben wird.
@@ -60,7 +62,7 @@ Mit diesen responsiven Rastermechanismen können Sie:
 
 >[!NOTE]
 >
->Bei einer vorab konfigurierten Installation wurde das responsive Layout für die [We.Retail-Referenzwebsite](/help/sites-developing/we-retail.md) konfiguriert. [Aktivieren der Komponente Layout-Container](#enable-the-layout-container-component-for-page) für andere Seiten.
+>Bei einer vorab konfigurierten Installation wurde das responsive Layout für die [We.Retail-Referenzwebsite](/help/sites-developing/we-retail.md) konfiguriert. [Aktivieren Sie die Layout-Container-Komponente](#enable-the-layout-container-component-for-page) für andere Seiten.
 
 ## Konfigurieren des responsiven Emulators {#configuring-the-responsive-emulator}
 
@@ -266,7 +268,7 @@ Der Mechanismus für adaptive Bilder wird über ein Skript zur Verfügung gestel
 
 >[!CAUTION]
 >
->Benutzerdefinierte Stylesheet-Client-Bibliotheken müssen als Teil der Kopfzeile geladen werden, damit sie auf Autoren- und Veröffentlichungsinstanz ordnungsgemäß funktionieren.
+>Benutzerdefinierte Stylesheet-ClientLibs müssen als Teil der Kopfzeile geladen werden, damit sie in der Autoren- und Veröffentlichungsumgebung ordnungsgemäß funktionieren.
 
 ## Aktivieren der Layout-Container-Komponente für die Seite {#enable-the-layout-container-component-for-page}
 

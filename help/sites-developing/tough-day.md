@@ -5,10 +5,12 @@ topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1825'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -87,7 +89,7 @@ In der nachfolgenden Tabelle finden Sie die relevanten Hilfeparameter.
   </tr>
   <tr>
    <td>--help_full</td>
-   <td>Druckt alle oben genannten Elemente sowie Tests, Herausgeber und Suite-Komponenten.</td>
+   <td>Druckt alle oben genannten Funktionen sowie Tests, Publisher und Suite-Komponenten.</td>
    <td> </td>
   </tr>
   <tr>
@@ -239,7 +241,7 @@ tests:
   - add : CreatePageTreeTest
 ```
 
-Sie können vorhandene Tests in einer bestimmten Suite mit dem Parameter* *`config` auch neu konfigurieren. Geben Sie auch den Suite-Namen und den tatsächlichen Namen des Tests an (nicht den Namen der Testklasse). Den Testnamen finden Sie in der Eigenschaft `name` der Testklasse. Weitere Informationen zum Finden von Testeigenschaften finden Sie im Abschnitt [Ändern von Testeigenschaften](/help/sites-developing/tough-day.md#changing-the-test-properties).
+Sie können vorhandene Tests in einer bestimmten Suite mit dem Parameter* *`config` auch neu konfigurieren. Geben Sie außerdem den Namen der Suite und den tatsächlichen Namen des Tests (nicht den Namen der Testklasse) an. Den Testnamen finden Sie in der Eigenschaft `name` der Testklasse. Weitere Informationen zum Finden von Testeigenschaften finden Sie im Abschnitt [Ändern von Testeigenschaften](/help/sites-developing/tough-day.md#changing-the-test-properties).
 
 Im nachfolgenden Beispiel wird der Standardtitel des Assets für den Test `CreatePageTreeTest` (namens `UploadAsset`) in „NewAsset“ geändert.
 
@@ -261,7 +263,7 @@ tests:
       title : NewAsset
 ```
 
-Außerdem können Sie auch Tests aus vordefinierten Suites oder Herausgebern von der Standardkonfiguration entfernen. Dazu dient der Parameter `exclude`. Geben Sie auch den Suite-Namen und den tatsächlichen Namen des Tests an (nicht den Test C `lass` name). Den Testnamen finden Sie in der Eigenschaft `name` der Testklasse. Im nachfolgenden Beispiel wird der Test `CreatePageTreeTest` (namens `UploadAsset`) von der Tough Day-Suite entfernt.
+Außerdem können Sie auch Tests aus vordefinierten Suites oder Herausgebern von der Standardkonfiguration entfernen. Dazu dient der Parameter `exclude`. Geben Sie außerdem den Namen der Suite und den tatsächlichen Namen des Tests (nicht den Namen der Testk`lass`e) an. Den Testnamen finden Sie in der Eigenschaft `name` der Testklasse. Im nachfolgenden Beispiel wird der Test `CreatePageTreeTest` (namens `UploadAsset`) von der Tough Day-Suite entfernt.
 
 Mit Befehlszeilenparametern:
 

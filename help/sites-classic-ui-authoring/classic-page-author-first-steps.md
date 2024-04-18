@@ -7,10 +7,12 @@ content-type: reference
 topic-tags: page-authoring, introduction
 exl-id: b41aa7e5-1a5f-4e5e-be79-637d9f71ad72
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '410'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +36,7 @@ Der Inhalt Ihrer Website wird in einer Baumstruktur archiviert. Um eine Seite zu
 
 ### Erstellen einer neuen Seite {#creating-a-new-page}
 
-Vor der Bearbeitung [Erstellen einer Seite](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#creating-a-new-page).
+Vor der Bearbeitung müssen Sie [eine neue Seite erstellen](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#creating-a-new-page).
 
 ### Öffnen einer Seite {#opening-a-page}
 
@@ -42,7 +44,7 @@ Für viele Aktionen, z. B. die Bearbeitung, müssen Sie eine [Seite öffnen](/h
 
 ### Bearbeiten einer Seite {#editing-a-page}
 
-Unabhängig davon, ob Ihre Instanz bereits über vorhandene Seiten verfügt oder ob Sie selbst eine neue Seite erstellt haben, können Sie [Bearbeiten einer Seite](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) durch:
+Unabhängig davon, ob Ihre Instanz bereits über vorhandene Seiten verfügt oder ob Sie gerade selbst eine neue Seite erstellt haben, können Sie [eine Seite bearbeiten](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md), indem Sie folgende Schritte befolgen:
 
 * [Einfügen einer Komponente (Absatz)](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#inserting-a-component)
 * [Bearbeiten einer Komponente](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties)

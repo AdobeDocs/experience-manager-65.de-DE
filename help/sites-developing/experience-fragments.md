@@ -1,6 +1,6 @@
 ---
 title: Experience Fragments in der Adobe Experience Manager Sites-Entwicklung
-description: Erfahren Sie, wie Sie Experience Fragments für Adobe Experience Manager anpassen können.
+description: Erfahren Sie, wie Sie Experience Fragments für Adobe Experience Manager konfigurieren.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1781'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -41,13 +43,13 @@ Bei der einfachen HTML-Ausgabedarstellung werden das Protokoll, der Host und der
 
 * oder folgendermaßen enden: `-src` oder `-href`
 
-Beispiel:
+Zum Beispiel:
 
 `.../brooklyn-coat/master.plain.html`
 
 >[!NOTE]
 >
->Links verweisen immer auf die Publishing-Instanz. Sie werden von Drittanbietern genutzt, sodass der Link immer von der Veröffentlichungsinstanz und nicht von der Autoreninstanz aufgerufen wird.
+>Links verweisen immer auf die Publishing-Instanz. Sie werden von Dritten verwendet, weswegen der Link immer von der Veröffentlichungsinstanz und nicht von der Autoreninstanz aufgerufen wird.
 >
 >Weitere Informationen finden Sie unter [Externalisieren von URLs](/help/sites-developing/externalizer.md).
 
@@ -215,7 +217,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 Um die Schnittstelle zu verwenden, müssen Sie zunächst ein Bundle mit einer neuen Dienstkomponente erstellen, die die Link Rewriter Provider-Schnittstelle implementiert.
 
-Dieser Dienst wird verwendet, um das Neuschreiben des Experience Fragment-Exports in Target zu aktivieren, um Zugriff auf die verschiedenen Links zu erhalten.
+Dieser Dienst wird verwendet, um das Umschreiben beim Experience Fragment-Export in Target zu ermöglichen, damit auf die verschiedenen Links zugegriffen werden kann.
 
 Beispiel: `ComponentService`:
 

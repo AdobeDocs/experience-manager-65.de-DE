@@ -1,22 +1,24 @@
 ---
 title: Checklisten
-description: In der folgenden Checkliste werden einige der wichtigsten Testprobleme hervorgehoben
+description: Die folgende Checkliste hebt einige der wichtigsten Testprobleme hervor
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 exl-id: 16c5f9aa-024d-4d8a-ba08-22b073289cfd
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '156'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 # Checklisten{#checklists}
 
-In der folgenden Checkliste werden einige der Hauptprobleme hervorgehoben. Weitere Informationen finden Sie in den anderen Abschnitten zum Testen .
+Die folgende Checkliste hebt einige der wichtigsten Probleme hervor – für alle Details lesen Sie die anderen Abschnitte, die sich auf das Testen beziehen.
 
 | Überprüfen Sie Folgendes | Antwort | Aktion | Inhaber | Fällig am |
 |---|---|---|---|---|

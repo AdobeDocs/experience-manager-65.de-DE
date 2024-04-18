@@ -9,10 +9,12 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '3246'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -178,7 +180,7 @@ newComponent (cq:Component)
             description
 ```
 
-Das Anpassen eines Dialogfelds ähnelt dem Entwickeln einer Komponente, da das Dialogfeld selbst eine Komponente ist (d. h. Markup, das von einem Komponentenskript zusammen mit dem Verhalten/Stil einer Client-Bibliothek gerendert wird).
+Das Anpassen eines Dialogfelds ähnelt der Entwicklung einer Komponente, da das Dialogfeld selbst eine Komponente ist (d. h. Markup, das von einem Komponentenskript zusammen mit dem von einer Client-Bibliothek bereitgestellten Verhalten/Stil gerendert wird).
 
 Beispiele finden Sie hier:
 
@@ -203,13 +205,13 @@ Beispiele finden Sie hier:
 
 Widgets für die Touch-optimierte Benutzeroberfläche sind als Komponenten der Granite-Benutzeroberfläche implementiert.
 
-Um ein Widget zur Verwendung in einem Komponentendialogfeld für die Touch-optimierte Benutzeroberfläche zu erstellen, müssen Sie [Erstellen einer Granite-UI-Feldkomponente](/help/sites-developing/granite-ui-component.md).
+Um für die Touch-optimierte Benutzeroberfläche ein Widget zur Verwendung in einem Komponentendialogfeld zu erstellen, müssen Sie eine [Feldkomponente für die Granite-Benutzeroberfläche erstellen](/help/sites-developing/granite-ui-component.md).
 
 >[!NOTE]
 >
 >Ausführliche Informationen zur Granite-Benutzeroberfläche finden Sie in der [Dokumentation zur Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
-Wenn Sie das Dialogfeld für einen einfachen Container für ein Formularelement halten, können Sie den Primärinhalt Ihres Dialogfeldinhalts auch als Formularfelder sehen. Zum Erstellen eines Formularfelds müssen Sie einen Ressourcentyp erstellen. Dies entspricht dem Erstellen einer Komponente. Um Ihnen bei dieser Aufgabe zu helfen, bietet die Granite-Benutzeroberfläche eine generische Feldkomponente, von der eine Vererbung möglich ist (mithilfe von `sling:resourceSuperType`):
+Wenn Sie das Dialogfeld als einen einfachen Container für ein Formularelement betrachten, können Sie den Primärinhalt Ihres Dialogfeldinhalts auch als Formularfelder ansehen. Zum Erstellen eines Formularfelds müssen Sie einen Ressourcentyp erstellen. Dies entspricht dem Erstellen einer Komponente. Um Ihnen bei dieser Aufgabe zu helfen, bietet die Granite-Benutzeroberfläche eine generische Feldkomponente, von der eine Vererbung möglich ist (mithilfe von `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -225,7 +227,7 @@ Sobald Sie Ihren Ressourcentyp erstellt haben, können Sie Ihr Feld instanziiere
 
 Wenn Sie Stil und Verhalten für Ihre Komponente definieren möchten, können Sie eine dedizierte [Client-Bibliothek](/help/sites-developing/clientlibs.md) erstellen, die Ihre benutzerdefinierte CSS/LESS- und JS-Datei definiert.
 
-Damit Ihre Client-Bibliothek ausschließlich für Ihr Komponentendialogfeld geladen wird (d. h. sie wird nicht für eine andere Komponente geladen), müssen Sie die -Eigenschaft festlegen `extraClientlibs` des Dialogfelds zum Kategorienamen der von Ihnen erstellten Client-Bibliothek. Dies ist ratsam, wenn Ihre Client-Bibliothek sehr groß ist und/oder Ihr Feld für dieses Dialogfeld spezifisch ist und in anderen Dialogfeldern nicht benötigt wird.
+Damit Ihre Client-Bibliothek nur für das Komponentendialogfeld geladen wird (d. h., sie wird nicht für eine andere Komponente geladen), müssen Sie die Eigenschaft `extraClientlibs` Ihres Dialogfelds auf den Kategorienamen der erstellten Client-Bibliothek festlegen. Dies empfiehlt sich, wenn die Client-Bibliothek recht groß ist und/oder das Feld für dieses Dialogfeld spezifisch ist und nicht in anderen Dialogfeldern benötigt wird.
 
 Um die Client-Bibliothek für alle Dialogfelder zu laden, legen Sie die Kategorieeigenschaft Ihrer Client-Bibliothek auf `cq.authoring.dialog` fest. Dies ist der Kategoriename der Client-Bibliothek, die beim Rendern aller Dialogfelder standardmäßig enthalten ist. Dies empfiehlt sich, wenn die Client-Bibliothek klein ist und/oder Ihr Feld generisch ist und in anderen Dialogfeldern wiederverwendet werden kann.
 
@@ -240,7 +242,7 @@ Ein Beispiel finden Sie unter:
 Je nach Ihren Anforderungen haben Sie folgende Möglichkeiten:
 
 * Ein gegebenes Granite-Benutzeroberflächenfeld um Komponentenvererbung (`sling:resourceSuperType`) erweitern
-* Erweitern Sie ein bestimmtes Widget aus der zugrunde liegenden Widget-Bibliothek (wenn es eine Granite-Benutzeroberfläche gibt, ist dies die Coral-Benutzeroberfläche), indem Sie die Widget-Bibliotheks-API (JS-/CSS-Vererbung) befolgen.
+* Sie können ein bestimmtes Widget aus der zugrunde liegenden Widget-Bibliothek (falls eine Granite-Benutzeroberfläche vorhanden ist, ist dies die Coral-Benutzeroberfläche) erweitern, indem Sie der Widget-Bibliotheks-API (JS-/CSS-Vererbung) folgen.
 
 #### Zugriff auf Dialogfelder {#access-to-dialog-fields}
 
@@ -343,7 +345,7 @@ Wenn Ihre neue Komponente auf Inhalte von anderen Seiten verweist, können Sie �
 
 Die Standardinstallation von AEM überprüft nur die Referenzkomponente. Um Ihre Komponente hinzuzufügen, müssen Sie die Referenzkonfiguration für das OSGi-Bundle **WCM Authoring Content** konfigurieren.
 
-Erstellen Sie einen Eintrag in der Definition und geben Sie Ihre Komponente zusammen mit der zu prüfenden Eigenschaft an. z. B.:
+Erstellen Sie einen Eintrag in der Definition und geben Sie Ihre Komponente zusammen mit der zu überprüfenden Eigenschaft an. Zum Beispiel:
 
 `/apps/<*your-Project*>/components/reference@parentPath`
 
@@ -375,7 +377,7 @@ Dieses Verhalten und die erforderliche Beziehung zwischen Asset und Komponente k
    * Name: `cq:authoring`
    * Typ: `nt:unstructured`
 
-1. Erstellen Sie darunter einen Knoten, unter dem alle Zuordnungen von Assets zu Komponenten gespeichert werden:
+1. Erstellen Sie unter diesem einen Knoten, der alle Zuordnungen zwischen Asset und Komponente enthält:
 
    * Name: `assetToComponentMapping`
    * Typ: `nt:unstructured`
@@ -395,7 +397,7 @@ Dieses Verhalten und die erforderliche Beziehung zwischen Asset und Komponente k
    * `assetMimetype`:
 
       * Typ: `String`
-      * Wert: der MIME-Typ des zugehörigen Assets, z. B. `image/*`
+      * Wert: der MIME-Typ des zugehörigen Assets; zum Beispiel `image/*`
 
    * `droptarget`:
 

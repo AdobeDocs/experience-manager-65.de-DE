@@ -7,10 +7,12 @@ content-type: reference
 docset: aem65
 exl-id: 9528d92b-0989-4e2d-83be-ba6c07c845e2
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing,SPA Editor
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '999'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +28,7 @@ Die SPA-Autorenfunktion bietet eine umfassende Lösung zur Unterstützung von SP
 
 >[!NOTE]
 >
->Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
+>Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen Client-seitiges Rendern auf Basis eines SPA-Frameworks (z. B. React oder Angular) erforderlich ist.
 
 ## Einführung {#introduction}
 
@@ -40,7 +42,7 @@ Weitere Details zur Funktionsweise von SPAs in AEM finden Sie in den folgenden D
 
 >[!NOTE]
 >
->Um Inhalte in einem SPA erstellen zu können, muss der Inhalt in AEM gespeichert und durch das Inhaltsmodell verfügbar gemacht werden.
+>Um Inhalt in einer SPA zu erstellen, muss der Inhalt in AEM gespeichert und durch das Inhaltsmodell verfügbar gemacht werden.
 >
 >Eine SPA, die außerhalb von AEM entwickelt wurde, wird nicht autorisiert, wenn der Content-Modell-Vertrag nicht eingehalten wird.
 
@@ -291,4 +293,4 @@ Weitere Informationen dazu, wie Sie sich für die Entwicklung von SPAs für AEM 
 
 Weitere Informationen zum dynamischen Modell für die Komponentenzuordnung und dazu, wie es mit SPAs in AEM funktioniert, finden Sie im Artikel [Dynamisches Modell für die Komponentenzuordnung bei SPAs](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Wenn Sie SPA in AEM für ein anderes Framework als React oder Angular implementieren möchten oder einfach einen tiefen Einblick in die Funktionsweise des SPA SDK für AEM erhalten möchten, lesen Sie den Abschnitt [SPA Blueprint](/help/sites-developing/spa-blueprint.md) Artikel.
+Wenn Sie SPAs in AEM für ein anderes Framework als React oder Angular implementieren oder einfach nur tief in die Funktionsweise des SPA-SDK für AEM eintauchen möchten, lesen Sie den Artikel [SPA Blueprint](/help/sites-developing/spa-blueprint.md).

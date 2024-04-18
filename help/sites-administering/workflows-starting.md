@@ -7,10 +7,12 @@ topic-tags: operations
 content-type: reference
 exl-id: 84a1964c-4121-4763-b946-9eee6093747d
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Operations
+role: Admin
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '790'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
@@ -20,16 +22,16 @@ Bei der Verwaltung von Workflows können Sie diese mit verschiedenen Methoden st
 
 * Manuell:
 
-   * Von einem [Workflow-Modell](#workflow-models).
-   * Verwenden eines Workflow-Pakets für [Stapelverarbeitung](#workflow-packages-for-batch-processing).
+   * Von einem [Workflow-Modell](#workflow-models) ausgehend
+   * Mithilfe eines Workflow-Pakets für die [Stapelverarbeitung](#workflow-packages-for-batch-processing).
 
 * Automatisch:
 
-   * Als Reaktion auf Knotenänderungen; [Verwenden eines Starters](#workflows-launchers).
+   * Als Reaktion auf Knotenänderungen; [mithilfe eines Starters](#workflows-launchers).
 
 >[!NOTE]
 >
->Weitere Methoden stehen Autoren ebenfalls zur Verfügung. Ausführliche Informationen finden Sie unter:
+>Weitere Methoden stehen Autorinnen und Autoren ebenfalls zur Verfügung. Ausführliche Informationen finden Sie hier:
 >
 >* [Anwenden von Workflows auf Seiten](/help/sites-authoring/workflows-applying.md)
 >* [Anwenden von Workflows auf DAM-Assets](/help/assets/assets-workflow.md)
@@ -39,19 +41,19 @@ Bei der Verwaltung von Workflows können Sie diese mit verschiedenen Methoden st
 
 ## Workflow-Modelle {#workflow-models}
 
-Sie können einen Workflow starten [basierend auf einem der Modelle](/help/sites-administering/workflows.md#workflow-models-and-instances) in der Konsole &quot;Workflow-Modelle&quot;aufgeführt. Die einzige erforderliche Angabe ist die Payload. Sie können aber auch einen Titel und/oder einen Kommentar hinzufügen.
+Sie können einen Workflow starten, der [auf einem der Modelle basiert](/help/sites-administering/workflows.md#workflow-models-and-instances), die in der Konsole „Workflow-Modelle“ aufgeführt sind. Die einzige erforderliche Angabe ist die Payload. Sie können aber auch einen Titel und/oder einen Kommentar hinzufügen.
 
-## Workflows Launcher {#workflows-launchers}
+## Workflow-Starter {#workflows-launchers}
 
-Der Workflow-Starter überwacht Änderungen im Inhalts-Repository, um Workflows abhängig vom Speicherort und Ressourcentyp des geänderten Knotens zu starten.
+Der Workflow-Starter überwacht Änderungen im Content-Repository, um Workflows abhängig vom Speicherort und Ressourcentyp des geänderten Knotens zu starten.
 
 Mit dem **Starter** können Sie:
 
-* Siehe bereits für bestimmte Knoten gestartete Workflows.
-* Wählen Sie einen Workflow aus, der gestartet werden soll, wenn ein bestimmter Knoten/Knotentyp erstellt/geändert/entfernt wurde.
-* Entfernen Sie eine vorhandene Workflow-zu-Knoten-Beziehung.
+* Sich die Workflows ansehen, die bereits für bestimmte Knoten gestartet wurden.
+* Einen Workflow auswählen, der gestartet werden soll, wenn ein bestimmter Knoten/Knotentyp erstellt/geändert/entfernt wurde.
+* Eine vorhandene Workflow-zu-Knoten-Beziehung entfernen.
 
-Ein Starter kann für jeden Knoten erstellt werden. Änderungen an bestimmten Knoten starten jedoch keine Workflows. Änderungen an Knoten unter den folgenden Pfaden führen nicht dazu, dass Workflows gestartet werden:
+Ein Starter kann für jeden Knoten erstellt werden. Durch Änderungen an bestimmten Knoten werden jedoch keine Workflows gestartet. Änderungen an Knoten unter den folgenden Pfaden führen nicht dazu, dass Workflows gestartet werden:
 
 * `/var/workflow/instances`
 * alle Workflow-Posteingangsknoten in der Verzweigung `/home/users`
@@ -65,7 +67,7 @@ Ein Starter kann für jeden Knoten erstellt werden. Änderungen an bestimmten Kn
 
    * Ausnahme: Bei Änderungen an Knoten unter `/var/statistics/tracking` *werden* Workflows gestartet.
 
-Die Standardinstallation umfasst verschiedene Definitionen. Diese werden für Digital Asset Management- und Social Collaboration-Aufgaben verwendet:
+Die Standardinstallation umfasst verschiedene Definitionen. Diese werden für das Digital Asset Management- und Social Collaboration-Aufgaben verwendet:
 
 ![wf-100](assets/wf-100.png)
 
@@ -75,29 +77,29 @@ Workflow-Pakete sind Pakete, die als Payload zur Verarbeitung an einen Workflow 
 
 Ein Workflow-Paket:
 
-* enthält Links zu einer Reihe von Ressourcen (wie Seiten, Assets).
-* enthält Paketinformationen wie das Erstellungsdatum, den Benutzer, der das Paket erstellt hat, und eine kurze Beschreibung.
+* enthält Links zu einer Reihe von Ressourcen (wie Seiten oder Assets).
+* enthält Paketinformationen wie das Erstellungsdatum, die Person, die das Paket erstellt hat, und eine kurze Beschreibung.
 * wird anhand einer speziellen Seitenvorlage definiert; mit solchen Seiten kann der Benutzer die Ressourcen im Paket angeben
 * kann mehrmals verwendet werden.
-* kann vom Benutzer geändert werden (Ressourcen hinzufügen oder entfernen), während die Workflow-Instanz tatsächlich ausgeführt wird.
+* kann von der Person geändert werden (Ressourcen hinzufügen oder entfernen), während die Workflow-Instanz ausgeführt wird.
 
-## Starten eines Workflows über die Modellkonsole {#starting-a-workflow-from-the-models-console}
+## Starten eines Workflows von der Modelle-Konsole aus {#starting-a-workflow-from-the-models-console}
 
 1. Gehen Sie zur **Modelle-Konsole** (**Tools** > **Workflow** > **Modelle**).
-1. Wählen Sie den Workflow aus (entsprechend der Konsolenansicht). Sie können bei Bedarf auch die Suche (oben links) verwenden:
+1. Wählen Sie den Workflow aus (entsprechend der Konsolenansicht). Bei Bedarf können Sie auch die Suche (links oben) verwenden:
 
    ![wf-103](assets/wf-103.png)
 
    >[!NOTE]
    >
-   >Die **[Übergangs](/help/sites-developing/workflows.md#transient-workflows)** zeigt Workflows an, für die der Workflow-Verlauf nicht beibehalten wird.
+   >Die **[Übergangsanzeige](/help/sites-developing/workflows.md#transient-workflows)** zeigt Workflows an, deren Workflow-Verlauf nicht persistiert wird.
 
 1. Wählen Sie in der Symbolleiste **Workflow starten** aus.
-1. Das Dialogfeld Workflow ausführen wird geöffnet. Hier können Sie Folgendes angeben:
+1. Das Dialogfeld „Workflow ausführen“ wird geöffnet. Darin können Sie Folgendes festlegen:
 
    * **Payload**
 
-     Dies kann eine Seite, ein Knoten, ein Asset, ein Paket usw. sein.
+     Hierbei kann es sich um eine Seite, einen Knoten, ein Asset, ein Paket und andere Ressourcen handeln.
 
    * **Titel**
 
@@ -112,7 +114,7 @@ Ein Workflow-Paket:
 ## Erstellen einer Starter-Konfiguration {#creating-a-launcher-configuration}
 
 1. Gehen Sie zur Konsole **Workflow-Starter** (**Tools** > **Workflow** > **Starter**).
-1. Auswählen **Erstellen**, dann **Launcher hinzufügen** , um das Dialogfeld zu öffnen:
+1. Wählen Sie **Erstellen** und anschließend **Starter hinzufügen**, um das Dialogfeld zu öffnen:
 
    ![wf-105](assets/wf-105.png)
 
@@ -162,17 +164,17 @@ Ein Workflow-Paket:
 
      Kontrolliert, ob der Workflow-Starter aktiviert wird:
 
-      * Auswählen **Aktivieren** , um Workflows zu starten, wenn die Konfigurationseigenschaften erfüllt sind.
-      * Auswählen **Deaktivieren** wenn der Workflow nicht ausgeführt werden soll (auch nicht, wenn die Konfigurationseigenschaften erfüllt sind).
+      * Wählen Sie **Aktivieren**, um Workflows zu starten, wenn die Konfigurationseigenschaften erfüllt sind.
+      * Wählen Sie **Deaktivieren**, wenn der Workflow nicht ausgeführt werden soll (selbst dann nicht, wenn die Konfigurationseigenschaften erfüllt sind).
 
    * **Liste ausschließen**
 
-     Gibt alle JCR-Ereignisse an, die ausgeschlossen werden sollen (d. h. ignorieren), wenn bestimmt wird, ob ein Workflow ausgelöst werden soll.
+     Hier können Sie JCR-Ereignisse festlegen, die ausgeschlossen (d. h. ignoriert) werden sollen, wenn bestimmt wird, ob ein Workflow ausgelöst werden soll oder nicht.
 
-     Diese Starter-Eigenschaft ist eine kommagetrennte Liste von Elementen: &quot;
+     Bei dieser Starter-Eigenschaft handelt es sich um eine Reihe von kommagetrennten Elementen:
 
-      * `property-name` ignoriert alle `jcr`-Ereignisse, die beim festgelegten Eigenschaftsnamen ausgelöst werden. ``
-      * `event-user-data:<*someValue*>` ignoriert alle Ereignisse, die die `*<someValue*`> `user-data` über die [`ObservationManager` API](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+      * `property-name` ignoriert alle `jcr`-Ereignisse, die bei dem festgelegten Eigenschaftsnamen ausgelöst werden. 
+      * `event-user-data:<*someValue*>` ignoriert jedes Ereignis, das die über die [`ObservationManager`-API] festgelegten `*<someValue*`> `user-data` enthält (https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Beispiel:
 

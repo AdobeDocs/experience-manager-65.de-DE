@@ -8,7 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering,Personalization
+role: Admin
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '1961'
 ht-degree: 100%
@@ -115,7 +117,7 @@ Beispiel: die Frage, ob sich die Maus aktuell im linken oder rechten Fensterbere
 
 >[!NOTE]
 >
->Auf DAM-Assets gesetzte Tags, die auf besuchten Seiten angezeigt werden, werden nicht gezählt.
+Auf DAM-Assets gesetzte Tags, die auf besuchten Seiten angezeigt werden, werden nicht gezählt.
 
 **Technografie-Store**: Diese Komponente hängt von Ihrer Installation ab.
 
@@ -127,7 +129,7 @@ Weitere Informationen finden Sie unter [ClientContext im Detail](/help/sites-dev
 
 >[!NOTE]
 >
->Die Seitendaten sind keine Standardkomponenten in ClientContext mehr. Sie können sie ggf. hinzufügen, indem Sie ClientContext bearbeiten, die Komponente **Generische Store-Eigenschaften** hinzufügen und dann eine entsprechende Konfiguration durchführen, um den **Store** als `pagedata` zu definieren.
+Die Seitendaten sind keine Standardkomponenten in ClientContext mehr. Sie können sie ggf. hinzufügen, indem Sie ClientContext bearbeiten, die Komponente **Generische Store-Eigenschaften** hinzufügen und dann eine entsprechende Konfiguration durchführen, um den **Store** als `pagedata` zu definieren.
 
 ## Ändern des ClientContext-Profils {#changing-the-client-context-profile}
 

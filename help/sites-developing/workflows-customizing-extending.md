@@ -7,10 +7,12 @@ topic-tags: extending-aem
 content-type: reference
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '3499'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +36,7 @@ Eine Workflow-Schritt-Komponente definiert das Erscheinungsbild und Verhalten de
 * Dialogfeld „Bearbeiten“ für die Konfiguration der Komponenteneigenschaften.
 * Der Dienst oder das Skript, das zur Laufzeit ausgeführt wird.
 
-Wie bei [Alle Komponenten](/help/sites-developing/components.md), erben Workflow-Schritt-Komponenten von der Komponente, die für die `sling:resourceSuperType` -Eigenschaft. Das folgende Diagramm zeigt die Hierarchie von `cq:component`-Knoten, die die Grundlage aller Workflow-Schritt-Komponenten bilden. Das Diagramm enthält auch die Komponenten **Prozess-Schritt**, **Teilnehmer-Schritt** und **Dynamischer-Teilnehmer-Schritt**, da sie die gängigsten (und grundlegendsten) Ausgangspunkte für die Entwicklung angepasster Schritt-Komponenten darstellen.
+Wie [alle Komponenten](/help/sites-developing/components.md) erben Workflow-Schritt-Komponenten von der Komponente, die für die Eigenschaft `sling:resourceSuperType` festgelegt ist. Das folgende Diagramm zeigt die Hierarchie von `cq:component`-Knoten, die die Grundlage aller Workflow-Schritt-Komponenten bilden. Das Diagramm enthält auch die Komponenten **Prozess-Schritt**, **Teilnehmer-Schritt** und **Dynamischer-Teilnehmer-Schritt**, da sie die gängigsten (und grundlegendsten) Ausgangspunkte für die Entwicklung angepasster Schritt-Komponenten darstellen.
 
 ![aem_wf_componentinherit](assets/aem_wf_componentinherit.png)
 
@@ -46,7 +48,7 @@ Wie bei [Alle Komponenten](/help/sites-developing/components.md), erben Workflow
 >
 >Die empfohlene Methode für Konfigurations- und sonstige Änderungen sieht wie folgt aus:
 >
->1. Erstellen Sie das erforderliche Element (d. h., wie es in `/libs` under `/apps`
+>1. Erstellen Sie das erforderliche Element neu (d. h. so wie es in `/libs` unter `/apps` existiert).
 >2. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
 Die Komponente `/libs/cq/workflow/components/model/step` ist der nächste gemeinsame Vorgänger von **Prozess-Schritt**, **Teilnehmer-Schritt** und **Dynamischer-Teilnehmer-Schritt**, die alle die folgenden Elemente erben:
@@ -525,7 +527,7 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 
 So verwenden Sie das Skript:
 
-1. Erstellen Sie das Skript (z. B. mit CRXDE Lite) und speichern Sie es im Repository unten `//apps/workflow/scripts/`
+1. Erstellen Sie das Skript (z. B. mit CRXDE Lite) und speichern Sie es im Repository unter `//apps/workflow/scripts/`.
 1. Um einen Titel festzulegen, der das Skript im Dialogfeld „Bearbeiten“ von **Prozess-Schritt** identifiziert, fügen Sie die folgenden Eigenschaften zum Knoten `jcr:content` Ihres Skripts hinzu:
 
    | Name | Typ | Wert |
@@ -616,7 +618,7 @@ So definieren Sie einen Teilnehmer-Schritt als OSGi-Dienstkomponente (Java-Klass
 
 Sie können ein ECMA-Skript erstellen, das die Person auswählt, der das vom **Teilnehmer-Schritt** erzeugte Arbeitselement zugewiesen wird. Das Skript muss eine Funktion namens `getParticipant` enthalten, das keine Argumente benötigt und einen `String` zurückgibt, der die ID eines Benutzers oder einer Gruppe enthält.
 
-Skripte befinden sich im JCR-Repository und werden von dort aus ausgeführt.
+Die Skripte befinden sich im JCR-Repository und werden von dort aus ausgeführt.
 
 In der folgenden Tabelle sind die Variablen aufgeführt, die sofortigen Zugriff auf Workflow-Java-Objekte in Ihren Skripten bieten.
 
@@ -642,7 +644,7 @@ function getParticipant() {
 }
 ```
 
-1. Erstellen Sie das Skript (z. B. mit CRXDE Lite) und speichern Sie es im Repository unten `//apps/workflow/scripts`
+1. Erstellen Sie das Skript (z. B. mit CRXDE Lite) und speichern Sie es im Repository unter `//apps/workflow/scripts`.
 1. Um einen Titel festzulegen, der das Skript im Dialogfeld „Bearbeiten“ von **Prozess-Schritt** identifiziert, fügen Sie die folgenden Eigenschaften zum Knoten `jcr:content` Ihres Skripts hinzu:
 
    | Name | Typ | Wert |
@@ -800,7 +802,7 @@ Eine einfache Möglichkeit, mit der Erstellung Ihres eigenen benutzerdefinierten
    >
    >Dieser Schritt gilt nicht für den Modell-Editor in der klassischen Benutzeroberfläche
 
-1. Platzieren Sie dann den kopierten Schritt in den Ordner /apps , z. B.:
+1. Fügen Sie dann den kopierten Schritt in den Ordner „/apps“ ein, z. B. als:
 
    `/apps/cq/workflow/components/model/myCustomStep`
 
@@ -822,7 +824,7 @@ Eine einfache Möglichkeit, mit der Erstellung Ihres eigenen benutzerdefinierten
 
      Muss von einem vorhandenen Schritt erben.
 
-     In diesem Beispiel erben wir vom Basisschritt bei `cq/workflow/components/model/step`, aber Sie können andere Supertypen wie `participant`, `process`usw.
+     In diesem Beispiel erbt er vom Basisschritt unter `cq/workflow/components/model/step`, aber Sie können auch andere Supertypen wie `participant`, `process` usw. verwenden.
 
    * `jcr:title`
 
@@ -1039,4 +1041,4 @@ Die in diesem Beispiel verwendete Datei `_cq_dialog/.content.xml`:
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
 >
->  Bearbeiten Sie nichts in `/libs`, verwenden Sie sie einfach als Beispiele. Wenn Sie einen der vorhandenen Schritte verwenden möchten, kopieren Sie ihn in `/apps` und sie dort bearbeiten.
+>  Nehmen Sie in `/libs` keine Änderungen vor, sondern verwenden Sie sie lediglich als Beispiele. Wenn Sie einen der vorhandenen Schritte nutzen möchten, kopieren Sie ihn in `/apps` und bearbeiten Sie ihn dort.

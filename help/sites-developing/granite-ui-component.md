@@ -1,54 +1,56 @@
 ---
 title: Erstellen einer neuen Feld-Komponente in der Granite-Benutzeroberfläche
-description: Die Granite-Benutzeroberfläche bietet eine Reihe von Komponenten, die für die Verwendung in Formularen entwickelt wurden, so genannte Felder
+description: Die Granite-Benutzeroberfläche bietet eine Reihe von Komponenten für die Verwendung in Formularen, die in Granite als „Felder“ bezeichnet werden.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: e4820330-2ee6-4eca-83fd-462aa0b83647
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '498'
-ht-degree: 22%
+ht-degree: 100%
 
 ---
 
 # Erstellen einer neuen Feld-Komponente in der Granite-Benutzeroberfläche{#creating-a-new-granite-ui-field-component}
 
-Die Granite-Benutzeroberfläche bietet eine Reihe von Komponenten, die für die Verwendung in Formularen entwickelt wurden. Diese werden als *fields* im Vokabular der Granite-Benutzeroberfläche. Die standardmäßigen Granite-Formularkomponenten sind unter verfügbar:
+Die Granite-Benutzeroberfläche bietet eine Reihe von Komponenten für die Verwendung in Formularen, die im Vokabular der Granite-Benutzeroberfläche als *Felder* bezeichnet werden. Die Standard-Formularkomponenten in Granite sind verfügbar unter:
 
 `/libs/granite/ui/components/foundation/form/*`
 
 >[!NOTE]
 >
->Diese Formularfelder der Granite-Benutzeroberfläche sind von besonderem Interesse, da sie für [Komponentendialogfelder](/help/sites-developing/developing-components.md).
+>Die Formularfelder der Granite-Benutzeroberfläche sind von besonderem Interesse, da sie für [Komponenten-Dialogfelder](/help/sites-developing/developing-components.md) verwendet werden.
 
 >[!NOTE]
 >
->Ausführliche Informationen zu Feldern finden Sie im Abschnitt [Dokumentation zur Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
+>Vollständige Informationen zu Feldern finden Sie in der [Dokumentation zur Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
-Verwenden Sie das Foundation-Framework der Granite-Benutzeroberfläche, um Granite-Komponenten zu entwickeln und/oder zu erweitern. Dies umfasst zwei Elemente:
+Verwenden Sie das Foundation-Framework der Granite-Benutzeroberfläche zum Entwickeln und/oder Erweitern von Granite-Komponenten.  Dieses umfasst zwei Elemente:
 
 * Server-seitig:
 
-   * eine Sammlung von Foundation-Komponenten
+   * eine Reihe von Foundation-Komponenten
 
-      * foundation - modular, zusammenstellbar, schichtfähig, wiederverwendbar
+      * Foundation – modular, zusammensetzbar, schichtfähig, wiederverwendbar
       * Komponenten – Sling-Komponenten
 
-   * Helfer zur Unterstützung der Anwendungsentwicklung
+   * Hilfsprogramme für die Anwendungsentwicklung
 
-* clientseitig:
+* Client-seitig:
 
-   * eine Sammlung von Clientlibs, die ein Vokabular bereitstellen (d. h. eine Erweiterung der HTML), um generische Interaktionsmuster über eine durch Hypermedia gesteuerte Benutzeroberfläche zu erreichen.
+   * eine Sammlung von Client-Bibliotheken mit Vokabular (das heißt, einer Erweiterung der HTML-Sprache) für generische Interaktionsmuster in einer von Hypermedia gesteuerten Benutzeroberfläche.
 
 Die generische Komponente `field` der Granite-Benutzeroberfläche beinhaltet zwei wichtige Dateien:
 
-* `init.jsp`: verarbeitet die generische Verarbeitung, Beschriftung und Beschreibung und stellt den Formularwert bereit, den Sie beim Rendern Ihres Felds benötigen.
-* `render.jsp`: Hier wird das tatsächliche Rendering des Felds durchgeführt und muss für Ihr benutzerdefiniertes Feld überschrieben werden. Ist enthalten von `init.jsp`.
+* `init.jsp`: Übernimmt die generische Verarbeitung sowie Beschriftung und Beschreibung und liefert den für das Rendern des Felds erforderlichen Formularwert.
+* `render.jsp`: Übernimmt das tatsächliche Rendern des Felds und muss für das benutzerdefinierte Feld überschrieben werden; ist in `init.jsp` enthalten.
 
-Siehe [Granite-UI-Dokumentation - Feld](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) für Details.
+Weitere Informationen finden Sie in der [Dokumentation zur Granite-Benutzeroberfläche – Feld](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html).
 
 Beispiele finden Sie hier:
 
@@ -60,23 +62,23 @@ Beispiele finden Sie hier:
 
 >[!NOTE]
 >
->Da dieser Mechanismus JSP verwendet, werden i18n und XSS nicht nativ bereitgestellt. Dies bedeutet, dass Sie Ihre Zeichenfolgen internationalisieren und maskieren müssen. Das folgende Verzeichnis enthält die generischen Felder einer Standardinstanz, die Sie als Referenz verwenden können:
+>Da dieser Mechanismus JSP verwendet, werden i18n und XSS nicht vorgefertigt bereitgestellt.  Daher müssen Sie die Zeichenfolgen internationalisieren und mit Escape-Zeichen versehen.  Das folgende Verzeichnis enthält die generischen Felder aus einer Standardinstanz, die Sie als Referenz verwenden können:
 >
 >`/libs/granite/ui/components/foundation/form`-Verzeichnis
 
 ## Erstellen des serverseitigen Skripts für die Komponente {#creating-the-server-side-script-for-the-component}
 
-Das benutzerdefinierte Feld sollte das `render.jsp`-Skript nur überschreiben, wenn Sie das Markup für die Komponente angeben. Sie können die JSP (das Rendering-Skript) als Wrapper für Ihr Markup betrachten.
+Das benutzerdefinierte Feld sollte das `render.jsp`-Skript nur überschreiben, wenn Sie das Markup für die Komponente angeben. Das JSP (das heißt das Render-Skript) ist dabei quasi der Wrapper für das Markup.
 
-1. Erstellen Sie eine Komponente, die die `sling:resourceSuperType` -Eigenschaft, von der erbt wird:
+1. Erstellen Sie eine Komponente, die die Eigenschaft `sling:resourceSuperType` zum Erben aus Folgendem verwendet:
 
    `/libs/granite/ui/components/foundation/form/field`
 
-1. Überschreiben Sie das Skript:
+1. So überschreiben Sie das Skript:
 
    `render.jsp`
 
-   Generieren Sie in diesem Skript das Hypermedia-Markup (d. h. das angereicherte Markup, das die Hypermedia-Bezahlbarkeit enthält), damit der Client weiß, wie er mit dem generierten Element interagieren kann. Dies sollte dem serverseitigen Kodierungsstil der Granite-Benutzeroberfläche entsprechen.
+   In diesem Skript müssen Sie das Hypermedia-Markup (das heißt das erweiterte Markup mit Hypermedia-Angebot) erzeugen, damit der Client Anweisungen erhält, wie er mit dem erstellten Element interagieren soll.  Verwenden Sie dabei den Server-seitigen Code-Stil der Granite-Benutzeroberfläche.
 
    Bei der Anpassung *müssen* Sie nur festlegen, dass der (in `init.jsp` initialisierte) Formularwert wie folgt aus der Anforderung gelesen wird:
 
@@ -86,11 +88,11 @@ Das benutzerdefinierte Feld sollte das `render.jsp`-Skript nur überschreiben, w
    vm.get("value, String.class");
    ```
 
-   Weitere Informationen finden Sie in der Implementierung von nativen Feldern der Granite-Benutzeroberfläche, z. B.: `/libs/granite/ui/components/foundation/form/textfield`.
+   Weitere Informationen finden Sie im Abschnitt zur Implementierung von vorkonfigurierten Feldern der Granite-Benutzeroberfläche, beispielsweise `/libs/granite/ui/components/foundation/form/textfield`.
 
    >[!NOTE]
    >
-   >Derzeit ist JSP die bevorzugte Skriptmethode, da die Übergabe von Informationen von einer Komponente an eine andere (die häufig im Kontext von Formular/Feldern vorkommt) in HTL nicht einfach möglich ist.
+   >Derzeit ist JSP die bevorzugte Methode für die Skripterstellung, da die Weitergabe von Daten von einer Komponente an die andere (die bei Formularen/Feldern häufig erfolgt) mit HTL schwierig zu bewerkstelligen ist.
 
 ## Erstellen der Client-Bibliothek für die Komponente {#creating-the-client-library-for-the-component}
 
@@ -103,4 +105,4 @@ Gehen Sie wie folgt vor, um der Komponente ein bestimmtes Client-seitiges Verhal
 
    >[!NOTE]
    >
-   >Derzeit bietet die Granite-Benutzeroberfläche keine nativen Listener oder Hooks, die Sie direkt zum Hinzufügen von JS-Verhalten verwenden können. Um Ihrer Komponente also zusätzliches JS-Verhalten hinzuzufügen, müssen Sie einen JS-Hook in eine benutzerdefinierte Klasse implementieren, die Sie dann während der Markup-Generierung Ihrer Komponente zuweisen.
+   >Derzeit stellt die Granite-Benutzeroberfläche keine vorgefertigten Listener oder Hooks bereit, die Sie direkt zum Hinzufügen von JS-Verhalten verwenden können.  Um der JS-Komponente zusätzliches Verhalten hinzuzufügen, müssen Sie daher einen JS-Hook in einer benutzerdefinierten Klasse implementieren, die Sie der Komponente bei der Markup-Erzeugung zuweisen.

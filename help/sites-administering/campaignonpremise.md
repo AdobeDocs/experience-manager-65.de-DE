@@ -7,10 +7,12 @@ topic-tags: integration
 content-type: reference
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Integration
+role: Admin
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1552'
-ht-degree: 89%
+ht-degree: 92%
 
 ---
 
@@ -151,7 +153,7 @@ AEM kann jetzt mit Adobe Campaign kommunizieren.
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass Ihr Adobe Campaign-Server über das Internet erreichbar ist. AEM können nicht auf private Netze zugreifen.
+>Stellen Sie sicher, dass Ihr Adobe Campaign-Server über das Internet erreichbar ist. AEM kann nicht auf private Netzwerke zugreifen.
 
 ## Konfigurieren der Replikation für die AEM-Veröffentlichungsinstanz {#replication}
 
@@ -163,7 +165,7 @@ So konfigurieren Sie die Replikation von Ihrer AEM-Autoreninstanz zur Veröffent
 
 1. Melden Sie sich bei Ihrer AEM-Autoreninstanz als Admin an.
 
-1. Wählen Sie in der Seitenleiste der globalen Navigation die Option **Instrumente** > **Implementierung** > **Replikation** > **Agenten für Autor** Klicken Sie auf **Standardagent (publish)**.
+1. Wählen Sie in der Seitenleiste der globalen Navigation **Tools** > **Bereitstellung** > **Replikation** > **Agenten für Autor** aus und klicken Sie dann auf **Standardagent (veröffentlichen)**.
 
    ![Konfigurieren des Replikationsagenten](assets/acc-replication-config.png)
 
@@ -173,7 +175,7 @@ So konfigurieren Sie die Replikation von Ihrer AEM-Autoreninstanz zur Veröffent
 
    ![Registerkarte „Transport“](assets/acc-transport-tab.png)
 
-1. Klicks **OK** , um die Änderungen an den Agenteneinstellungen zu speichern.
+1. Klicken Sie auf **OK**, um die Änderungen an den Agenteneinstellungen zu speichern.
 
 Sie haben die Replikation zur AEM-Veröffentlichungsinstanz konfiguriert, damit Ihre Kampagnenempfängerinnen und -empfänger auf Ihren Inhalt zugreifen können.
 
@@ -185,11 +187,11 @@ Sie haben die Replikation zur AEM-Veröffentlichungsinstanz konfiguriert, damit 
 
 ## Konfigurieren des AEM-Externalizers {#externalizer}
 
-[Der Externalizer](/help/sites-developing/externalizer.md) ist ein OSGi-Service in AEM, der einen Ressourcenpfad in eine externe und absolute URL umwandelt, was erforderlich ist, damit AEM für Campaign geeignete Inhalte bereitstellen kann. Konfigurieren Sie sie so, dass die Campaign-Integration funktioniert.
+[Der Externalizer](/help/sites-developing/externalizer.md) ist ein OSGi-Service in AEM, der einen Ressourcenpfad in eine externe und absolute URL umwandelt, was erforderlich ist, damit AEM für Campaign geeignete Inhalte bereitstellen kann. Konfigurieren Sie ihn so, dass die Campaign-Integration funktioniert.
 
 1. Melden Sie sich bei der AEM-Autoreninstanz als Admin an.
 1. Wählen Sie in der globalen Navigationsleiste die Option **Tools** > **Vorgänge** > **Web-Konsole** > **OSGi-Konfiguration** und suchen Sie nach **Day CQ Link Externalizer**.
-1. Standardmäßig ist der letzte Eintrag im Feld **Domains** für die Veröffentlichungsinstanz vorgesehen. Ändern der URL von der Standardeinstellung `http://localhost:4503` an Ihre öffentlich verfügbare Veröffentlichungsinstanz.
+1. Standardmäßig ist der letzte Eintrag im Feld **Domains** für die Veröffentlichungsinstanz vorgesehen. Ändern Sie die URL von der Standardadresse `http://localhost:4503` in Ihre öffentlich verfügbare Veröffentlichungsinstanz.
 
    ![Konfigurieren des Externalizers](assets/acc-externalizer-config.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Responsives Design für Web-Seiten
-description: Responsives Design ermöglicht die effektive Darstellung derselben Seiten auf mehreren Geräten in verschiedenen Ausrichtungen.
+description: Responsives Design ermöglicht die effektive Darstellung derselben Seiten auf verschiedenen Geräten in verschiedenen Ausrichtungen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: mobile-web
@@ -8,10 +8,12 @@ content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '5293'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -927,20 +929,20 @@ Das CSS umfasst eine Reihe von Medienabfragen, die die folgende Struktur verwend
 
 Verwenden Sie den folgenden Algorithmus als Ausgangspunkt für die Entwicklung der Elementklassen und CSS-Stile für Ihre Seiten.
 
-1. Definieren Sie einen Klassennamen für das div -Element, das alle Zeilen enthält, z. B. `content.`
+1. Definieren Sie einen Klassennamen für das div-Element, das alle Zeilen enthält, z. B. `content.`.
 1. Definieren Sie eine CSS-Klasse für div-Elemente, die Zeilen darstellen, z. B. `row-fluid`.
 1. Definieren Sie Klassennamen für Inhaltsblockelemente. Für alle möglichen Breiten ist eine Klasse erforderlich, und zwar in Form von Spaltenspannen. Verwenden Sie beispielsweise die Klasse `span3` für `div`-Elemente, die sich über drei Spalten erstrecken, und die Klasse `span4` für Elemente, die sich über vier Spalten erstrecken. Definieren Sie so viele Klassen, wie Spalten in Ihrem Raster vorhanden sind.
 
 1. Fügen Sie der CSS-Datei für jede angestrebte Darstellungsfeldgröße die entsprechende Medienabfrage hinzu. Fügen Sie in jeder Medienabfrage die folgenden Elemente hinzu:
 
-   * Eine Auswahl für `content` -Klasse, beispielsweise `.content{}`.
-   * Selektoren für jede span-Klasse, beispielsweise `.span3{ }`.
-   * Eine Auswahl für `row-fluid` -Klasse, beispielsweise `.row-fluid{ }`
-   * Selektoren für span-Klassen, die sich innerhalb von row-fluid -Klassen befinden, z. B. `.row-fluid span3 { }`.
+   * Einen Selektor für die `content`-Klasse, z. B. `.content{}`.
+   * Selektoren für die span-Klassen, z. B `.span3{ }`.
+   * Einen Selektor für die `row-fluid`-Klasse, z. B. `.row-fluid{ }`.
+   * Selektoren für span-Klassen, die sich in row-fluid-Klassen befinden, z. B. `.row-fluid span3 { }`.
 
 1. Fügen Sie jedem Selektor width-Stile hinzu:
 
-   1. Festlegen der Breite von `content` Selektoren zur absoluten Größe der Seite, z. B. `width:480px`.
+   1. Legen Sie für die Breite von `content`-Selektoren die absolute Größe der Seite fest, z. B. `width:480px`.
    1. Legen Sie für die Breite aller row-fluid-Selektoren auf 100 % fest.
    1. Legen Sie für die Breite aller span-Selektoren die absolute Breite des Inhaltsblocks fest. Ein triviales Raster verwendet gleichmäßig verteilte Spalten mit der gleichen Breite: `(absolute width of page)/(number of columns)`.
    1. Legen Sie die Breite der `.row-fluid .span`-Selektoren als Prozentsatz der Gesamtbreite fest. Berechnen Sie diese Breite mithilfe der Formel `(absolute span width)/(absolute page width)*100`.

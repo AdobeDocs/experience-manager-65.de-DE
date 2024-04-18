@@ -1,24 +1,26 @@
 ---
 title: Adobe Classifications
-description: Erfahren Sie, wie Sie mit Adobe Classifications Classifications Classification-Daten nach Adobe Analytics exportieren können.
+description: Erfahren Sie, wie Sie Adobe Classifications verwenden, um Klassifizierungsdaten in Adobe Analytics zu exportieren.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 0e675ce8-ba3b-481d-949e-0c85c97054d2
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Integration
+role: Admin
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
 # Adobe Classifications{#adobe-classifications}
 
-Adobe Classifications führt geplante Exporte von Klassifizierungsdaten in [Adobe Analytics](/help/sites-administering/adobeanalytics.md) durch. Der Ausführer führt eine **com.adobe.cq.scheduled.exporting.Exporter**.
+Adobe Classifications führt geplante Exporte von Klassifizierungsdaten in [Adobe Analytics](/help/sites-administering/adobeanalytics.md) durch. Der Exporter ist eine Implementierung von **com.adobe.cq.scheduled.exporter.Exporter**.
 
-So konfigurieren Sie Folgendes:
+Dies konfigurieren Sie wie folgt:
 
 1. Wählen Sie unter **Navigation** die Option **Tools** > **Cloud Services** und dann **Legacy-Cloud-Services** aus.
 1. Blättern Sie zu **Adobe Analytics** und wählen Sie **Konfigurationen anzeigen** aus.
@@ -42,24 +44,24 @@ So konfigurieren Sie Folgendes:
 
    | **Feld** | **Beschreibung** |
    |---|---|
-   | Aktiviert | Auswählen **Ja** um die Adobe Classifications-Einstellungen zu aktivieren. |
-   | Bei Konflikt überschreiben | Auswählen **Ja** , um Datenkollisionen zu überschreiben. Standardmäßig ist dies auf **Nein**. |
-   | Bearbeitete löschen | Wenn auf **Ja** löscht verarbeitete Knoten, nachdem sie exportiert wurden. Der Standardwert ist **False**. |
-   | Beschreibung des Exportvorgangs | Geben Sie eine Beschreibung für den Adobe-Classifications-Auftrag ein. |
+   | Aktiviert | Wählen Sie **Ja**, um die Adobe Classifications-Einstellungen zu aktivieren. |
+   | Bei Konflikt überschreiben | Wählen Sie **Ja**, um etwaige Datenkollisionen zu überschreiben. Standardmäßig ist dies auf **Nein** festgelegt. |
+   | Bearbeitete löschen | Wenn dies auf **Ja** festgelegt ist, werden verarbeitete Knoten nach dem Export gelöscht. Der Standard hierfür ist **Falsch**. |
+   | Beschreibung des Exportvorgangs | Geben Sie eine Beschreibung für den Adobe Classifications-Vorgang ein. |
    | Benachrichtigungs-E-Mail | Geben Sie eine E-Mail-Adresse für Adobe Classifications-Benachrichtigungen ein. |
-   | Report Suite | Geben Sie die Report Suite ein, für die der Importauftrag ausgeführt werden soll. |
-   | Datensatz | Geben Sie die Kennung der Datensatzrelation ein, für die der Importauftrag ausgeführt werden soll. |
-   | Transformator | Wählen Sie aus dem Dropdown-Menü eine Transformatorimplementierung aus. |
-   | Datenquelle | Navigieren Sie zum Pfad für den Datencontainer. |
-   | Zeitplan exportieren | Wählen Sie den Exportplan aus. Die Standardeinstellung ist alle 30 Minuten. |
+   | Report Suite | Geben Sie die Report Suite ein, für die der Importvorgang ausgeführt werden soll. |
+   | Datensatz | Geben Sie die Datensatzbeziehungs-ID ein, für die der Importvorgang ausgeführt werden soll. |
+   | Transformer | Wählen Sie im Dropdown-Menü eine Transformer-Implementierung aus. |
+   | Datenquelle | Navigieren Sie zum Pfad für den Daten-Container. |
+   | Exportzeitplan | Wählen Sie den Zeitplan für den Export aus. Der Standard ist alle 30 Minuten. |
 
-1. Klicks **OK** , um Ihre Einstellungen zu speichern.
+1. Klicken Sie auf **OK**, um Ihre Einstellungen zu speichern. 
 
 ## Ändern der Seitengröße {#modifying-page-size}
 
-Datensätze werden auf Seiten verarbeitet. Adobe Classifications erstellt standardmäßig Seiten mit einer Seitengröße von 1.000.
+Einträge werden seitenweise verarbeitet. Adobe Classifications erstellt standardmäßig Seiten mit einer Seitengröße von 1.000.
 
-Eine Seite kann (gemäß Definition in Adobe Classifications) maximal die Größe 25.000 haben und über die Felix-Konsole geändert werden. Während des Exports sperrt Adobe Classifications den Quellknoten, um gleichzeitige Änderungen zu verhindern. Der Knoten wird nach dem Export, bei Fehlern oder beim Schließen der Sitzung entsperrt.
+Eine Seite kann (gemäß Definition in Adobe Classifications) maximal die Größe 25.000 haben und über die Felix-Konsole geändert werden. Während des Exports sperrt Adobe Classifications den Quellknoten, um gleichzeitige Änderungen zu verhindern. Der Knoten wird nach dem Export, bei einem Fehler oder beim Schließen der Sitzung entsperrt.
 
 So ändern Sie die Seitengröße:
 
@@ -67,7 +69,7 @@ So ändern Sie die Seitengröße:
 
    ![aa-26](assets/aa-26.png)
 
-1. Aktualisieren Sie die **Seitengröße exportieren** Klicken Sie nach Bedarf auf **Speichern**.
+1. Aktualisieren Sie die **Seitengröße für den Export** nach Bedarf, und klicken Sie dann auf **Speichern**.
 
 ## SAINTDefaultTransformer {#saintdefaulttransformer}
 
@@ -75,7 +77,7 @@ So ändern Sie die Seitengröße:
 >
 >Adobe Classifications war früher als SAINT Exporter bekannt.
 
-Ein Exporter kann einen Transformator verwenden, um die Exportdaten in ein bestimmtes Format umzuwandeln. Für Adobe Classifications wird die Unterschnittstelle `SAINTTransformer<String[]>` bereitgestellt, die die Transformatorschnittstelle implementiert. Diese Schnittstelle dient dazu, den Datentyp auf den von der SAINT-API verwendeten Datentyp `String[]` zu beschränken und eine Markierungsschnittstelle für die Suche nach entsprechenden Services für die Auswahl zu erhalten.
+Ein Exporter kann einen Transformer verwenden, um die Exportdaten in ein bestimmtes Format umzuwandeln. Für Adobe Classifications wird die Unterschnittstelle `SAINTTransformer<String[]>` bereitgestellt, die die Transformatorschnittstelle implementiert. Diese Schnittstelle dient dazu, den Datentyp auf den von der SAINT-API verwendeten Datentyp `String[]` zu beschränken und eine Markierungsschnittstelle für die Suche nach entsprechenden Services für die Auswahl zu erhalten.
 
 In der Standardimplementierung (SAINTDefaultTransformer) werden die untergeordneten Ressourcen der Exporter-Quelle als Datensätze (mit Eigenschaftsnamen als Schlüssel und Eigenschaftswerten als Werte) behandelt. Die Spalte **Schlüssel** wird automatisch als erste Spalte hinzugefügt und enthält den Knotennamen. Eigenschaften mit Namespace (enthalten `:`) werden ignoriert.
 
@@ -85,13 +87,13 @@ In der Standardimplementierung (SAINTDefaultTransformer) werden die untergeordne
 
    * 1 `nt:unstructured`
 
-      * Produkt = Eigener Produktname (Zeichenfolge)
-      * Preis = 120,90 (String)
+      * Produkt = Mein Produktname (Zeichenfolge)
+      * Preis = 120,90 (Zeichenfolge)
       * Größe = M (Zeichenfolge)
       * Farbe = schwarz (Zeichenfolge)
-      * Color^Code = 101 (String)
+      * Color^Code = 101 (Zeichenfolge)
 
-**SAINT-Kopfzeile und -Datensatz:**
+**SAINT-Header und -Eintrag:**
 
 | **Schlüssel** | **Produkt** | **Preis** | **Größe** | **Farbe** | **Farb-Code** |
 |---|---|---|---|---|---|
@@ -106,40 +108,40 @@ Die Eigenschaften umfassen Folgendes:
    <td><strong>Beschreibung</strong></td>
   </tr>
   <tr>
-   <td>Transformator</td>
-   <td>Klassenname einer SAINTTransformer-Implementierung</td>
+   <td>Transformer</td>
+   <td>Ein Klassenname einer SAINTTransformer-Implementierung</td>
   </tr>
   <tr>
    <td>email</td>
-   <td>Benachrichtigungs-E-Mail-Adresse</td>
+   <td>Benachrichtigungs-E-Mail-Adresse.</td>
   </tr>
   <tr>
-   <td>reportsuites</td>
-   <td>Report Suite-IDs, für die der Importauftrag ausgeführt werden soll </td>
+   <td>Report Suites</td>
+   <td>Report-Suite-IDs, für die der Importvorgang ausgeführt werden soll. </td>
   </tr>
   <tr>
    <td>Datensatz</td>
-   <td>Datensatzrelations-ID, für die der Importauftrag ausgeführt werden soll. </td>
+   <td>Datensatzbeziehungs-ID, für die der Importvorgang ausgeführt werden soll. </td>
   </tr>
   <tr>
    <td>description</td>
    <td>Auftragsbeschreibung. <br /> </td>
   </tr>
   <tr>
-   <td>Überschreiben</td>
-   <td>Flag zum Überschreiben von Datenkollisionen. Der Standardwert ist <strong>false</strong>.</td>
+   <td>overwrite</td>
+   <td>Flag zum Überschreiben von Datenkollisionen. Der Standardwert lautet <strong>false</strong>. </td>
   </tr>
   <tr>
-   <td>Checkdivisionen</td>
-   <td>Flag zur Überprüfung der Kompatibilität von Report Suites. Der Standardwert ist <strong>true</strong>.</td>
+   <td>checkdivisions</td>
+   <td>Flag zum Überprüfen von Report Suites auf Kompatibilität. Der Standardwert lautet <strong>true</strong>.</td>
   </tr>
   <tr>
    <td>deleteprocessed</td>
-   <td>Flag zum Löschen der verarbeiteten Knoten nach dem Export. Der Standardwert ist <strong>false</strong>.</td>
+   <td>Flag zum Löschen der verarbeiteten Knoten nach dem Export. Der Standardwert lautet <strong>false</strong>.</td>
   </tr>
  </tbody>
 </table>
 
-## Automatisieren des Adobe Classifications-Exports {#automating-adobe-classifications-export}
+## Automatisierung des Exports von Adobe Classifications {#automating-adobe-classifications-export}
 
-Sie können einen eigenen Workflow erstellen, sodass bei jedem neuen Import der Workflow gestartet wird, um die entsprechenden und korrekt strukturierten Daten in **/var/export/** , damit sie nach Adobe Classifications exportiert werden können.
+Sie können Ihren eigenen Workflow erstellen, sodass alle neuen Importe den Workflow starten, um die entsprechenden und korrekt strukturierten Daten in **/var/export/** zu erstellen, sodass sie in Adobe Classifications exportiert werden können.

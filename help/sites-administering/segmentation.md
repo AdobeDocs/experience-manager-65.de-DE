@@ -7,10 +7,12 @@ topic-tags: personalization
 content-type: reference
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering,Personalization
+role: Admin
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '1745'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -18,26 +20,26 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->In diesem Abschnitt wird beschrieben, wie Sie die Segmentierungsfunktion mit ContextHub konfigurieren. Wenn Sie die ClientContext-Funktion verwenden, lesen Sie die entsprechende Dokumentation für [Konfigurieren der Segmentierung für ClientContext](/help/sites-administering/campaign-segmentation.md).
+>In diesem Abschnitt wird beschrieben, wie Sie die Segmentierungsfunktion mit ContextHub konfigurieren. Wenn Sie die ClientContext-Funktion verwenden, finden Sie weitere Informationen in der entsprechenden Dokumentation zum [Konfigurieren der Segmentierungsfunktion für ClientContext](/help/sites-administering/campaign-segmentation.md).
 >
 
 Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. Unter [Verwalten von Zielgruppen](/help/sites-authoring/managing-audiences.md) finden Sie Informationen zur Funktionsweise der Segmentierung sowie zu Schlüsselbegriffen.
 
-Je nachdem, welche Informationen Sie bereits über Ihre Site-Besucher gesammelt haben und welche Ziele Sie erreichen möchten, müssen Sie die für Ihre zielgerichteten Inhalte erforderlichen Segmente und Strategien definieren.
+Je nach den Informationen, die Sie bereits über die Besucherinnen und Besucher Ihrer Site gesammelt haben, und den Zielen, die Sie erreichen wollen, müssen Sie die erforderlichen Segmente und Strategien für Ihre zielgerichteten Inhalte festlegen.
 
-Diese Segmente werden dann verwendet, um einem Besucher gezielt bestimmte Inhalte anzuzeigen. Dieser Inhalt wird im Abschnitt [Personalisierung](/help/sites-authoring/personalization.md) der Website verwaltet. Hier festgelegte [Aktivitäten](/help/sites-authoring/activitylib.md) können auf jeder Seite einbezogen werden – und sie können bestimmen, auf welches Besuchersegment die spezialisierten Inhalte angewendet werden sollen.
+Diese Segmente werden dann verwendet, um einer Besucherin oder einem Besucher gezielt bestimmte Inhalte anzuzeigen. Dieser Inhalt wird im Abschnitt [Personalisierung](/help/sites-authoring/personalization.md) der Website verwaltet. Hier festgelegte [Aktivitäten](/help/sites-authoring/activitylib.md) können auf jeder Seite einbezogen werden – und sie können bestimmen, auf welches Besuchersegment die spezialisierten Inhalte angewendet werden sollen.
 
 AEM ermöglicht Ihnen eine einfache Personalisierung des Anwendererlebnisses. Außerdem können Sie die Ergebnisse Ihrer Segmentdefinitionen überprüfen.
 
 ## Zugriff auf Segmente {#accessing-segments}
 
-Die [Zielgruppen](/help/sites-authoring/managing-audiences.md) -Konsole wird verwendet, um Segmente für ContextHub oder ClientContext und Zielgruppen für Ihr Adobe Target-Konto zu verwalten. Diese Dokumentation befasst sich mit der Verwaltung von Segmenten für ContextHub. Für [ClientContext-Segmente](/help/sites-administering/campaign-segmentation.md) und Adobe Target-Segmenten, siehe die entsprechende Dokumentation.
+Die [Zielgruppenkonsole](/help/sites-authoring/managing-audiences.md) wird verwendet, um Segmente für ContextHub oder ClientContext sowie Zielgruppen für Ihr Adobe Target-Konto zu verwalten. Diese Dokumentation befasst sich mit der Verwaltung von Segmenten für ContextHub. Weitere Informationen zu [ClientContext-Segmenten](/help/sites-administering/campaign-segmentation.md) und Adobe Target-Segmenten finden Sie in der entsprechenden Dokumentation.
 
 Um auf Ihre Segmente zuzugreifen, müssen Sie Ihre Konfiguration auswählen. Wählen Sie in der globalen Navigation **Navigation > Personalisierung > Zielgruppen**. Ihnen werden die verfügbaren Konfigurationen angezeigt:
 
 ![Zielgruppen – Konfigurationen](assets/segmentation-access-confs.png)
 
-Wählen Sie Ihre Konfiguration aus, um die Segmente anzuzeigen, z. B. WKND Site:
+Wählen Sie Ihre Konfiguration aus, um die Segmente anzuzeigen, z. B. die WKND-Site:
 
 ![Zielgruppen – Segmente](assets/segmentation-access-segments.png)
 
@@ -49,11 +51,11 @@ Mit dem **Segmenteditor** können Sie ein Segment einfach ändern. Wählen Sie 
 
 Mithilfe des Komponenten-Browsers können Sie **UND**- und **ODER**-Container zur Festlegung der Segmentlogik und anschließend zusätzliche Komponenten zum Vergleich von Eigenschaften und Werten oder Referenzskripts oder anderen Segmenten zur Definition der Auswahlkriterien (siehe [Erstellen eines neuen Segments](#creating-a-new-segment)) hinzufügen, um das genaue Szenario für die Auswahl des Segments festzulegen.
 
-Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufgelöst. Wenn mehrere anwendbare Segmente vorhanden sind, wird die **Verstärken** wird auch verwendet. Unter [Erstellen eines neuen Segments](#creating-a-new-segment) finden Sie weitere Details zum [Faktor „Verstärken“](/help/sites-administering/campaign-segmentation.md#boost-factor).
+Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufgelöst. Wenn mehrere anwendbare Segmente vorhanden sind, wird außerdem der Faktor **Verstärken** verwendet. Unter [Erstellen eines neuen Segments](#creating-a-new-segment) finden Sie weitere Details zum [Faktor „Verstärken“](/help/sites-administering/campaign-segmentation.md#boost-factor).
 
 >[!CAUTION]
 >
->Der Segmenteditor prüft nicht auf Zirkelbezüge. Beispiel: Segment A verweist auf ein anderes Segment B, das wiederum auf Segment A verweist. Stellen Sie sicher, dass Ihre Segmente keine zirkulären Verweise enthalten.
+>Der Segmenteditor prüft nicht auf Zirkelbezüge. Ein Beispiel hierfür wäre, wenn Segment A auf ein anderes Segment B verweist, das wiederum auf Segment A verweist. Stellen Sie sicher, dass Ihre Segmente keine Zirkelbezüge enthalten.
 
 ### Container {#containers}
 
@@ -62,7 +64,7 @@ Die folgenden Container sind standardmäßig verfügbar und ermöglichen es Ihne
 <table>
  <tbody>
   <tr>
-   <td>Container UND<br /> </td>
+   <td>UND-Container<br /> </td>
    <td>Der boolesche UND-Operator<br /> </td>
   </tr>
   <tr>
@@ -79,7 +81,7 @@ Die folgenden Segmentvergleiche sind standardmäßig verfügbar, um Segmenteigen
 <table>
  <tbody>
   <tr>
-   <td>property-value<br /> </td>
+   <td>Eigenschaft-Wert<br /> </td>
    <td>Vergleicht eine Eigenschaft eines Geschäfts mit einem definierten Wert<br /> </td>
   </tr>
   <tr>
@@ -134,11 +136,11 @@ Festlegen eines neuen Segments
 
 1. Nachdem Sie [auf die Segmente zugegriffen haben](/help/sites-administering/segmentation.md#accessing-segments), [navigieren Sie zum Ordner](#organizing-segments), in dem Sie das Segment erstellen möchten.
 
-1. Klicken Sie auf die Schaltfläche Erstellen und wählen Sie **Erstellen eines ContextHub-Segments**.
+1. Klicken Sie auf die Schaltfläche „Erstellen“ und wählen Sie **ContextHub-Segment erstellen** aus.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. Im **Neues ContextHub-Segment**, geben Sie einen Titel für das Segment und ggf. einen Verstärkungswert ein und klicken Sie auf **Erstellen**.
+1. Geben Sie unter **Neues ContextHub-Segment** einen Titel für das Segment sowie bei Bedarf einen Verstärkungswert ein und klicken Sie auf **Erstellen**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
@@ -147,7 +149,7 @@ Festlegen eines neuen Segments
    * Mindestwert: `0`
    * Höchstwert: `1000000`
 
-1. Ziehen Sie einen Vergleich oder Verweis in den Segmenteditor. Der Vergleich oder Verweis wird dann im standardmäßigen UND-Container angezeigt.
+1. Ziehen Sie einen Vergleich oder Verweis in den Segmenteditor. Der Vergleich bzw. Verweis wird dann im standardmäßigen UND-Container angezeigt.
 1. Doppelklicken Sie auf die Konfigurationsoption des neuen Verweises oder Segments, um die spezifischen Parameter zu bearbeiten. In diesem Beispiel prüfen wir auf Personen in San José.
 
    ![screen_shot_2012-02-02at103135am](assets/screen_shot_2012-02-02at103135ama.png)
@@ -161,7 +163,7 @@ Festlegen eines neuen Segments
 
 Mithilfe der UND- und ODER-Container-Komponenten können Sie komplexe Segmente in AEM erstellen. Hierbei ist es hilfreich, sich einige grundlegende Punkte bewusst zu machen:
 
-* Die oberste Ebene der Definition ist immer der ursprünglich erstellte UND-Container. Dies kann nicht geändert werden, hat jedoch keine Auswirkungen auf den Rest Ihrer Segmentdefinition.
+* Die oberste Ebene der Definition ist immer der ursprünglich erstellte UND-Container. Dies kann nicht verändert werden, hat allerdings auch keine Auswirkungen auf den Rest der Segmentdefinition.
 * Stellen Sie sicher, dass die Verschachtelung Ihres Containers sinnvoll ist. Die Container können als die Klammern Ihres booleschen Ausdrucks betrachtet werden.
 
 Das folgende Beispiel wird zur Auswahl von Besucherinnen und Besuchern verwendet, die zu unserer wichtigsten Alterszielgruppe gehören:
@@ -234,7 +236,7 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 
 ### Erstellen eines neuen Ordners {#create-folder}
 
-1. Nachher [Zugriff auf Segmente](#accessing-segments), klicken Sie auf die **Erstellen** Schaltfläche und wählen Sie **Ordner**.
+1. Klicken Sie nach dem [Zugriff auf die Segmente](#accessing-segments) auf die Schaltfläche **Erstellen** und wählen Sie **Ordner** aus.
 
    ![Ordner hinzufügen](assets/contexthub-create-segment.png)
 
@@ -257,13 +259,13 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 
 ### Ändern vorhandener Ordner {#modify-folders}
 
-1. Nachher [Zugriff auf Segmente](#accessing-segments)klicken Sie auf den Ordner, den Sie ändern möchten, um ihn auszuwählen.
+1. Klicken Sie nach dem [Zugriff auf die Segmente](#accessing-segments) auf den Ordner, den Sie ändern möchten, um ihn auszuwählen.
 
    ![Ordner auswählen](assets/contexthub-select-folder.png)
 
-1. Klicks **Umbenennen** in der Symbolleiste, um den Ordner umzubenennen.
+1. Wählen Sie in der Symbolleiste **Umbenennen** aus, um den Ordner umzubenennen.
 
-1. Bereitstellung eines neuen **Ordnertitel** und klicken **Speichern**.
+1. Geben Sie einen neuen **Ordnertitel** an und klicken Sie auf **Speichern**.
 
    ![Ordner umbenennen](assets/contexthub-rename-folder.png)
 
@@ -273,25 +275,25 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 
 ### Löschen eines Ordners
 
-1. Nachher [Zugriff auf Segmente](#accessing-segments)klicken Sie auf den Ordner, den Sie ändern möchten, um ihn auszuwählen.
+1. Klicken Sie nach dem [Zugriff auf die Segmente](#accessing-segments) auf den Ordner, den Sie ändern möchten, um ihn auszuwählen.
 
    ![Ordner auswählen](assets/contexthub-select-folder.png)
 
-1. Klicks **Löschen** in der Symbolleiste, um den Ordner zu löschen.
+1. Klicken Sie in der Symbolleiste auf **Löschen**, um den Ordner zu löschen.
 
 1. In einem Dialogfeld wird eine Liste der zum Löschen ausgewählten Ordner angezeigt.
 
    ![Löschen bestätigen](assets/contexthub-confirm-segment-delete.png)
 
-   * Klicks **Löschen** zur Bestätigung.
-   * Klicks **Abbrechen** abbrechen.
+   * Klicken Sie zum Bestätigen auf **Löschen**.
+   * Klicken Sie zum Abbrechen auf **Abbrechen**.
 
 1. Wenn einer der ausgewählten Ordner Unterordner oder Segmente enthält, muss deren Löschung bestätigt werden.
 
    ![Löschen von untergeordneten Elementen bestätigen](assets/contexthub-confirm-segment-child-delete.png)
 
-   * Klicks **Löschen erzwingen** zur Bestätigung.
-   * Klicks **Abbrechen** abbrechen.
+   * Klicken Sie zum Bestätigen auf **Löschen erzwingen**.
+   * Klicken Sie zum Abbrechen auf **Abbrechen**.
 
 >[!NOTE]
 >

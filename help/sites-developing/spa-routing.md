@@ -7,10 +7,12 @@ topic-tags: spa
 content-type: reference
 exl-id: eaef65ec-2e4d-490f-8158-d48d738e3409
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing,SPA Editor
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '488'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +22,7 @@ Bei Single Page Applications in AEM ist die App für das Routing verantwortlich.
 
 >[!NOTE]
 >
->Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
+>Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen Client-seitiges Rendern auf Basis eines SPA-Frameworks (z. B. React oder Angular) erforderlich ist.
 
 ## Projekt-Routing {#project-routing}
 
@@ -28,7 +30,7 @@ Die App ist für das Routing verantwortlich und wird dann von den Frontend-Entwi
 
 ## Architektur {#architecture}
 
-Eine ausführliche Beschreibung finden Sie im Abschnitt [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) Abschnitt des SPA Blueprint-Dokuments.
+Eine ausführliche Beschreibung finden Sie im Abschnitt [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) des SPA-Blueprint-Dokuments.
 
 ## ModelRouter {#modelrouter}
 

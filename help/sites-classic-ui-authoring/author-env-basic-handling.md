@@ -7,7 +7,9 @@ topic-tags: introduction
 content-type: reference
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 100%
@@ -21,7 +23,7 @@ ht-degree: 100%
 >* Diese Seite soll einen Überblick über die grundlegende Handhabung der Adobe Experience Manager(AEM)-Autorenumgebung geben. Als Grundlage wird die **Sites-Konsole** verwendet.
 >
 >* Einige Funktionen sind nicht in allen Konsolen verfügbar, bzw. zusätzliche Funktionen sind in bestimmten Konsolen verfügbar. Ausführlichere Informationen zu den einzelnen Konsolen und ihren jeweiligen Funktionen finden Sie auf anderen Seiten.
->* In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Insbesondere bei [der Verwendung von Konsolen](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) und [der Bearbeitung von Seiten](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+>* In AEM stehen verschiedene Tastaturbefehle zur Verfügung, insbesondere bei der [Verwendung von Konsolen](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) und der [Bearbeitung von Seiten](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
 
 ## Der Begrüßungsbildschirm {#the-welcome-screen}

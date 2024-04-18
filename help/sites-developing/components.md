@@ -7,10 +7,12 @@ topic-tags: components
 content-type: reference
 exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '570'
-ht-degree: 73%
+ht-degree: 79%
 
 ---
 
@@ -20,10 +22,10 @@ Diese Seite enthält einen Überblick über die Komponenten von Adobe Experience
 
 ## Was sind Komponenten? {#what-exactly-is-a-component}
 
-* Sind modulare Einheiten, mit denen spezifische Funktionalität zum Darstellen von Inhalten auf Ihrer Website realisiert wird.
+* Es sind modulare Einheiten, mit denen eine spezifische Funktionalität zum Darstellen von Inhalten auf Ihrer Website realisiert wird.
 * Sind wiederverwendbar.
 * Werden als eigenständige Einheiten innerhalb eines Ordners des Repositorys entwickelt.
-* Es gibt keine ausgeblendeten Konfigurationsdateien.
+* Verfügen nicht über ausgeblendete Konfigurationsdateien.
 * Kann andere Komponenten enthalten.
 * Kann überall in einem beliebigen AEM ausgeführt werden. Sie können auch auf die Ausführung unter bestimmten Komponenten beschränkt werden.
 * Verfügen über eine standardisierte Benutzeroberfläche.
@@ -32,9 +34,9 @@ Diese Seite enthält einen Überblick über die Komponenten von Adobe Experience
 * Werden per [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de) (empfohlen) oder JSP entwickelt.
 * Kann entwickelt werden, um benutzerdefinierte Komponenten zu erstellen, die die Standardfunktion erweitern.
 
-Da Komponenten modular sind, haben Sie folgende Möglichkeiten:
+Da die Komponenten modular sind, haben Sie folgende Möglichkeiten:
 
-* Entwickeln Sie eine neue Komponente auf Ihrer lokalen Instanz.
+* Entwickeln einer neuen Komponente auf Ihrer lokalen Instanz
 * Bereitstellen dieser Komponente in Ihrer Testumgebung
 * Bereitstellen in Ihrer Live-Authoring-Umgebung, in der Autoren bzw. Administratoren Inhalt hinzufügen und konfigurieren können
 * Bereitstellen in Ihren Live-Veröffentlichungsumgebungen, in denen sie zum Rendern von Inhalten für Besucher Ihrer Website verwenden können Bestimmte Komponenten, z. B. für Communities, akzeptieren auch Eingaben von Ihren Benutzern.
@@ -78,7 +80,7 @@ Die **Kernkomponenten** wurden mit AEM 6.3 eingeführt und bieten flexible und 
 
 Eine Übersicht über alle verfügbaren Komponenten in Ihrer AEM-Instanz erhalten Sie über die [Komponentenkonsole](/help/sites-authoring/default-components-console.md).
 
-Alternativ können Sie auch CRXDE Lite verwenden, um eine Liste aller im Repository verfügbaren Komponenten zu erhalten.
+Alternativ hierzu können Sie auch CRXDE Lite verwenden, um eine Liste mit allen Komponenten abzurufen, die im Repository verfügbar sind.
 
 1. Wählen Sie in **[!UICONTROL CRXDE Lite]** in der Symbolleiste die Option **[!UICONTROL Tools]** und dann **[!UICONTROL Abfrage]**, um die Registerkarte **[!UICONTROL Abfrage]** zu öffnen.
 

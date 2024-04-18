@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring,Personalization
+role: User
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '3360'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -38,7 +40,7 @@ Die Vorbereitung des Design-Pakets für den Import wird unter [Erweitern und Kon
 
 ## Was sind Landing Pages? {#what-are-landing-pages}
 
-Landingpages sind einzelne oder mehrseitige Websites, die den &quot;Endpunkt&quot;einer Marketing-Zielgruppe darstellen, z. B. mit E-Mail, Adwords/Bannern und sozialen Medien. Eine Landingpage kann verschiedenen Zwecken dienen, die jedoch alle eins gemeinsam haben – die Person, die die Seite besucht, sollte eine Aufgabe erfüllen, wodurch sich der Erfolg einer Landingpage definiert.
+Landingpages sind Websites mit einer oder mehreren Seiten, die den „Endpunkt“ einer Marketing-Kampagne darstellen – beispielsweise mit E-Mail, Adwords/Bannern oder sozialen Medien. Eine Landingpage kann verschiedenen Zwecken dienen, die jedoch alle eins gemeinsam haben – die Person, die die Seite besucht, sollte eine Aufgabe erfüllen, wodurch sich der Erfolg einer Landingpage definiert.
 
 Mit der Landing Pages-Funktion in AEM können Marketing-Fachleute mit Web-Designerinnen und -Designern in Agenturen oder internen Kreativ-Teams zusammenarbeiten, um Seitenentwürfe zu erstellen, die einfach in AEM importiert und von Marketing-Fachleuten bearbeitet und unter der gleichen Governance wie die übrigen AEM-gesteuerten Sites veröffentlicht werden können.
 
@@ -122,7 +124,7 @@ Im Folgenden finden Sie ein Beispiel für eine Bild-Komponenten auf einer Einsti
 
 Das Design einer Landingpage kann mehrere Links enthalten, von denen einige als Aktionsaufrufe angelegt sein können.
 
-Aktionsaufrufe (CTA) werden verwendet, um Besucher dazu zu bringen, sofort auf der Landingpage Maßnahmen zu ergreifen, z. B. &quot;Jetzt anmelden&quot;, &quot;Dieses Video anzeigen&quot;, &quot;Nur für begrenzte Zeit&quot;usw.
+Ein Aktionsaufruf (Call to action, CTA) dient dazu, eine Person zu einer unmittelbaren Handlung auf der Landingpage zu animieren, z. B. „Jetzt registrieren“, „Video ansehen“ und „Nur für kurze Zeit“.
 
 * Clickthrough-Link: Sie können einen Text-Link hinzufügen. Wer auf diesen klickt, wird zu einer Ziel-URL weitergeleitet.
 * Grafischer Link: Sie können ein Bild hinzufügen. Wer darauf klickt, wird zu einer Ziel-URL weitergeleitet.
@@ -348,11 +350,11 @@ Adobe empfiehlt, das Design-Import-Tool in einer Staging-Instanz zu verwenden. I
 
 ### Erstellen einer Import-Tool-Seite {#creating-an-importer-page}
 
-Bevor Sie Ihren Entwurf für die Einstiegsseite importieren können, müssen Sie eine Importtool-Seite erstellen, z. B. unter einer Kampagne. Mit der Vorlage „Importtool-Seite“ können Sie Ihre komplette HTML-Einstiegsseite importieren. Die Seite enthält eine Dropbox, in der das Design-Paket für die Landingpage per Drag-and-Drop importiert werden kann.
+Damit Sie Ihr Landingpage-Design importieren können, müssen Sie eine Import-Tool-Seite erstellen. Dies ist z. B. unter einer Kampagne möglich. Mit der Vorlage „Importtool-Seite“ können Sie Ihre komplette HTML-Einstiegsseite importieren. Die Seite enthält eine Dropbox, in der das Design-Paket für die Landingpage per Drag-and-Drop importiert werden kann.
 
 >[!NOTE]
 >
->Standardmäßig kann eine Importtool-Seite nur unter Kampagnen erstellt werden. Sie können diese Vorlage jedoch auch überlagern, um eine Landingpage unter `/content/mysite`.
+>Standardmäßig kann eine Import-Tool-Seite nur unter Kampagnen erstellt werden. Sie können diese Vorlage jedoch auch überlagern, um eine Landingpage unter `/content/mysite` zu erstellen.
 
 So erstellen Sie eine Landingpage:
 
@@ -386,7 +388,7 @@ Wenn Ihr Design-Paket fertig ist, wird in den folgenden Schritten beschrieben, w
 
 >[!NOTE]
 >
->Beim Import wird das Markup aus Sicherheitsgründen bereinigt, um den Import und die Veröffentlichung von ungültigem Markup zu vermeiden. Dabei wird davon ausgegangen, dass sämtliches reines HTML-Markup und alle anderen Elemente wie Inline-SVG oder Web-Komponenten herausgefiltert werden.
+>Beim Importieren wird das Markup aus Sicherheitsgründen bereinigt, um den Import und die Veröffentlichung von ungültigem Markup zu verhindern. Dabei wird davon ausgegangen, dass sämtliches reines HTML-Markup und alle anderen Elemente wie Inline-SVG oder Web-Komponenten herausgefiltert werden.
 
 >[!NOTE]
 >
@@ -414,7 +416,7 @@ Wenn Sie das Design-Paket importieren, sind die Optionen **Design löschen** und
 
 ### Herunterladen des importierten Design-Pakets {#downloading-the-imported-design-package}
 
-Beim Herunterladen der Zip-Datei können Sie aufzeichnen, welche Zip-Datei mit einer bestimmten Einstiegsseite importiert wurde. Auf einer Seite vorgenommene Änderungen werden der Zip-Datei nicht hinzugefügt.
+Beim Herunterladen der Zip-Datei können Sie aufzeichnen, welche Zip-Datei mit einer bestimmten Einstiegsseite importiert wurde. Die auf einer Seite vorgenommenen Änderungen werden nicht zur ZIP-Datei hinzugefügt.
 
 Um das importierte Design-Paket herunterzuladen, klicken Sie in der Symbolleiste der Landingpage auf **Zip herunterladen**.
 
@@ -436,7 +438,7 @@ Wenn Sie die Einstiegsseite entfernen, können Sie die Inhaltsänderungen lösch
 
 >[!NOTE]
 >
->Wenn Sie die Inhaltsänderungen entfernen, gehen alle Änderungen, die Sie auf der importierten Landingpage vorgenommen haben, sowie alle Seiteneigenschaften verloren, wenn Sie auf **Löschen**.
+>Wenn Sie sämtliche Inhaltsänderungen löschen möchten, klicken Sie auf **Entfernen**. Dadurch gehen sämtliche Änderungen, die Sie an der importierten Landingpage vorgenommen haben, sowie sämtliche Seiteneigenschaften verloren.
 
 ### Ändern und Hinzufügen von Komponenten einer Landingpage {#modifying-and-adding-components-on-a-landing-page}
 

@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '3186'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -55,7 +57,7 @@ Bearbeitbare Vorlagen werden von Vorlagenautoren in erster Linie mit der [Vorlag
 
 Informationen zur Verwendung bearbeitbarer Vorlagen in einem AEM-Projekt finden Sie unter [Erstellen eines AEM-Projekts mit Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478).
 
-Gehen Sie wie folgt vor, um eine bearbeitbare Vorlage zu erstellen:
+Gehen Sie zum Erstellen einer bearbeitbaren Vorlage wie folgt vor:
 
 1. Erstellen Sie einen [Ordner für die Vorlagen](#template-folders). Dieser Ordner ist nicht obligatorisch, wird jedoch als Best Practice empfohlen.
 1. Wählen Sie einen [Vorlagentyp](#template-type) aus. Dieser wird kopiert, um die [Vorlagendefinition](#template-definitions) zu erstellen.
@@ -170,7 +172,7 @@ In einer Standard-AEM-Instanz ist der Ordner **Global** in der Vorlagenkonsole v
 
 Arten von Vorlagen und Richtlinien werden gemäß der folgenden Rangordnung in allen Ordnern übernommen:
 
-1. Der aktuelle Ordner.
+1. der aktuelle Ordner
 1. dem aktuellen Ordner übergeordnete Elemente
 1. `/conf/global`
 1. `/apps`
@@ -264,7 +266,7 @@ In der folgenden Tabelle sind die erforderlichen Berechtigungen für die Bearbei
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/templates</code></td>
    <td>Vorlagenautoren<br /> </td>
    <td>lesen, schreiben, replizieren</td>
-   <td>Vorlagenautoren, die Vorlagen in Site-spezifischen Vorlagen erstellen, lesen, aktualisieren, löschen und replizieren <code>/conf</code> space</td>
+   <td>Vorlagenautorinnen und -autoren, die Vorlagen im Site-spezifischen <code>/conf</code>-Raum erstellen, lesen, aktualisieren, löschen und replizieren</td>
   </tr>
   <tr>
    <td>Anonymer Web-Anwender</td>
@@ -280,7 +282,7 @@ In der folgenden Tabelle sind die erforderlichen Berechtigungen für die Bearbei
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/policies</code></td>
    <td><code>Template Author</code></td>
    <td>lesen, schreiben, replizieren</td>
-   <td>Vorlagenautoren, die Vorlagen in Site-spezifischen Vorlagen erstellen, lesen, aktualisieren, löschen und replizieren <code>/conf</code> space</td>
+   <td>Vorlagenautorinnen und -autoren, die Vorlagen im Site-spezifischen <code>/conf</code>-Raum erstellen, lesen, aktualisieren, löschen und replizieren</td>
   </tr>
   <tr>
    <td>Anonymer Web-Anwender</td>
@@ -592,7 +594,7 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
    * [Definieren Sie die Pfade zugelassener Vorlagen über die **Seiteneigenschaften**](/help/sites-authoring/templates.md#allowing-a-template-author) der entsprechenden Seite oder Stammseite einer Unterverzweigung.
    * Legen Sie die folgende Eigenschaft fest:
      `cq:allowedTemplates`
-Auf dem `jcr:content`-Knoten der gewünschten Verzweigung.
+Auf dem `jcr:content`-Knoten der erforderlichen Verzweigung.
 
    Beispielsweise mit dem Wert:
 

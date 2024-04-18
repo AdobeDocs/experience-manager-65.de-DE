@@ -7,10 +7,12 @@ topic-tags: personalization
 content-type: reference
 exl-id: 3fd50655-7461-4900-a3b8-c01b04c7ba7a
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing,Personalization
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '284'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +28,7 @@ ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextda
 >
 >Der Pfad, der die ContextHub-Beispielkonfiguration enthält, die von der [We.Retail-Referenzimplementierung](/help/sites-developing/we-retail.md) verwendet wird (`/libs/settings/cloudsettings/legacy`), sollte nur als Referenz zum Erstellen einer eigenen Konfiguration verwendet werden.
 >
->Verwenden Sie in einem Projekt nicht als Ihre eigene ContextHub-Konfiguration.
+>Er sollte nicht in einem Projekt als eigene ContextHub-Konfiguration verwendet werden.
 
 ## Persistenz {#persistence}
 
@@ -37,7 +39,7 @@ Jeder ContextHub-Store ist eine Instanz eines vordefinierten Store-Typs:
 * ContextHub stellt verschiedene [Beispielspeicherarten bereit](/help/sites-developing/ch-samplestores.md).
 * Verwenden Sie AEM-Konsolen, um [Stores zu erstellen](ch-configuring.md#creating-a-contexthub-store).
 * Entwickler können [anwenderdefinierte Speichertypen erstellen](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
-* Entwickler können [Zugriffsspeicherdaten](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) über JavaScript.
+* Entwickelnde können per JavaScript auf [Store-Daten zugreifen](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores).
 
 ## Segmentierung {#segmentation}
 
@@ -45,7 +47,7 @@ ContextHub enthält eine Segmentierungs-Engine, die Segmente verwaltet und besti
 
 ## Präsentation {#presentation}
 
-Die [ContextHub-Symbolleiste](/help/sites-authoring/ch-previewing.md) ermöglicht es Marketern und Autoren, gespeicherte Daten anzuzeigen und zu bearbeiten, um das Anwendererlebnis beim Erstellen von Seiten zu simulieren. Die Symbolleiste besteht aus Gruppen von UI-Modulen, die Zugriff auf ContextHub-Stores bieten.
+Die [ContextHub-Symbolleiste](/help/sites-authoring/ch-previewing.md) ermöglicht es Marketern und Autoren, gespeicherte Daten anzuzeigen und zu bearbeiten, um das Anwendererlebnis beim Erstellen von Seiten zu simulieren. Die Symbolleiste besteht aus Gruppen von UI-Modulen, die Zugriff auf ContextHub-Stores ermöglichen.
 
 Jedes ContextHub-UI-Modul ist eine Instanz eines vordefinierten Modultyps:
 

@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing,SPA Editor
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
@@ -21,7 +23,7 @@ In einer SPA stellt die Seitenkomponente die HTML-Elemente ihrer untergeordneten
 
 >[!NOTE]
 >
->Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
+>Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen Client-seitiges Rendern auf Basis eines SPA-Frameworks (z. B. React oder Angular) erforderlich ist.
 
 ## Einführung {#introduction}
 
@@ -88,9 +90,9 @@ Die Meta-Ressourceneigenschaften, die den SPA-Inhalt beschreiben:
 
 >[!CAUTION]
 >
->In diesem Dokument dient die We.Retail Journal-App ausschließlich zu Demonstrationszwecken. Verwenden Sie nicht für Projektarbeiten.
+>In diesem Dokument dient die We.Retail Journal-App ausschließlich zu Demonstrationszwecken. Verwenden Sie sie nicht für Projektaufgaben.
 >
->Jedes AEM Projekt sollte [AEM Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de), SPA Projekte mit React oder Angular unterstützt und das SPA SDK verwendet. Alle SPA Projekte auf AEM sollten auf dem Maven-Archetyp für SPA Starter Kit basieren.
+>Jedes AEM-Projekt sollte den [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) verwenden, der SPA-Projekte mit React oder Angular unterstützt und das SPA-SDK nutzt. Alle SPA-Projekte in AEM sollten auf dem Maven-Archetyp für das SPA-Starter-Kit basieren.
 
 ## Synchronisation von Seiteneditor-Überlagerungen {#page-editor-overlay-synchronization}
 

@@ -7,10 +7,12 @@ topic-tags: development-tools
 content-type: reference
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing,Developer Tools
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 52%
+ht-degree: 92%
 
 ---
 
@@ -18,57 +20,57 @@ ht-degree: 52%
 
 ## Übersicht {#overview}
 
-Die AEM Brackets-Erweiterung bietet einen reibungslosen Arbeitsablauf zum Bearbeiten AEM Komponenten und Client-Bibliotheken und nutzt die Leistungsfähigkeit des [Brackets](https://brackets.io/) Code-Editor, der den Zugriff von im Code-Editor auf Photoshop-Dateien und -Ebenen ermöglicht. Die durch die Erweiterung gebotene einfache Synchronisation (kein Maven oder File Vault erforderlich) erhöht die Effizienz der Entwickler und hilft auch Frontend-Entwicklern mit begrenztem AEM-Wissen, an Projekten teilzunehmen. Diese Erweiterung bietet auch Unterstützung für die [HTML Template Language (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de), die JSP die Komplexität nimmt, um die Komponentenentwicklung einfacher und sicherer zu machen.
+Die AEM Brackets-Erweiterung bietet einen reibungslosen Workflow für die Bearbeitung von AEM-Komponenten und Client-Bibliotheken und nutzt den [Brackets](https://brackets.io/)-Code-Editor, um auf Photoshop-Dateien und -Ebenen zuzugreifen. Die durch die Erweiterung gebotene einfache Synchronisation (kein Maven oder File Vault erforderlich) erhöht die Effizienz der Entwickler und hilft auch Frontend-Entwicklern mit begrenztem AEM-Wissen, an Projekten teilzunehmen. Diese Erweiterung bietet auch Unterstützung für die [HTML Template Language (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de), die JSP die Komplexität nimmt, um die Komponentenentwicklung einfacher und sicherer zu machen.
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 
 ### Funktionen {#features}
 
-Die wichtigsten Funktionen der AEM Brackets-Erweiterung sind:
+Die Hauptmerkmale der AEM Brackets-Erweiterung:
 
 * Automatische Synchronisierung geänderter Dateien mit der AEM-Entwicklungsinstanz
 * Manuelle bidirektionale Synchronisierung von Dateien und Ordnern
 * Vollständige Content-Package-Synchronisierung des Projekts
 * HTL-Code-Vervollständigung für Ausdrücke und `data-sly-*`-Blockanweisungen.
 
-Darüber hinaus bietet Brackets viele nützliche Funktionen für AEM Schriftartentwickler:
+Zusätzlich bietet Brackets viele nützliche Funktionen für AEM-Front-End-Entwickelnde:
 
-* Photoshop-Dateiunterstützung zum Extrahieren von Informationen aus einer PSD-Datei wie Ebenen, Messungen, Farben, Schriftarten, Texten usw.
-* Codehinweise von der PSD, um diese extrahierten Informationen im Code einfach wiederzuverwenden.
+* Photoshop-Dateiunterstützung zum Extrahieren von Informationen aus einer PSD-Datei, z. B. Ebenen, Maße, Farben, Schriften, Texte usw.
+* Code-Hinweise aus der PSD, um diese extrahierten Informationen im Code einfach wiederzuverwenden
 * CSS-Präprozessor-Unterstützung wie LESS und SCSS.
-* Hunderte von zusätzlichen Erweiterungen, die spezifischere Anforderungen abdecken.
+* Hunderte zusätzlicher Erweiterungen für spezifischere Anforderungen
 
 ## Installation {#installation}
 
 ### Brackets {#brackets}
 
-Die AEM Brackets-Erweiterung unterstützt Brackets-Version 1.0 oder höher.
+Die AEM Brackets-Erweiterung unterstützt die Brackets-Version 1.0 oder höher.
 
 Laden Sie die neueste Brackets-Version von [brackets.io](https://brackets.io/) herunter.
 
 ### Die Erweiterung {#the-extension}
 
-So installieren Sie die Erweiterung:
+Um die Erweiterung zu installieren, gehen Sie wie folgt vor:
 
-1. Öffnen Sie Brackets. Im Menü **Datei** auswählen **Extension Manager...**
-1. Eingabe **AEM** in der Suchleiste und suchen Sie nach **AEM Brackets-Erweiterung**.
+1. Öffnen Sie Brackets. Wählen Sie im Menü **Datei** die Option **Extension Manager** aus.
+1. Geben Sie in die Suchleiste **AEM** ein und suchen Sie nach **AEM Brackets-Erweiterung**.
 
    ![chlimage_1-54](assets/chlimage_1-54a.png)
 
 1. Klicken Sie auf **Installieren**.
-1. Schließen Sie das Dialogfeld und den Extension Manager nach Abschluss der Installation.
+1. Schließen Sie das Dialogfeld und Extension Manager nach Abschluss der Installation.
 
 ## Erste Schritte {#getting-started}
 
-### Das Inhaltspaket-Projekt {#the-content-package-project}
+### Das Content-Package-Projekt {#the-content-package-project}
 
-Nachdem die Erweiterung installiert wurde, können Sie mit der Entwicklung AEM Komponenten beginnen, indem Sie mit Brackets einen Ordner mit Inhaltspaketen aus Ihrem Dateisystem öffnen.
+Nachdem die Erweiterung installiert wurde, können Sie AEM-Komponenten entwickeln, indem Sie mit Brackets einen content-package-Ordner aus Ihrem Dateisystem öffnen.
 
 Das Projekt muss mindestens Folgendes enthalten:
 
-1. a `jcr_root` Ordner (z. B. `myproject/jcr_root`)
+1. einen Ordner `jcr_root` (z. B. `myproject/jcr_root`)
 
-1. a `filter.xml` -Datei (z. B. `myproject/META-INF/vault/filter.xml`); für weitere Details zur Struktur der `filter.xml` -Datei sehen Sie die [Definition von Workspace-Filtern](https://jackrabbit.apache.org/filevault/filter.html).
+1. eine Datei `filter.xml` (z. B. `myproject/META-INF/vault/filter.xml`); für weitere Informationen zur Struktur der Datei `filter.xml` siehe [Workspace-Filter-Definition](https://jackrabbit.apache.org/filevault/filter.html)
 
 Im Menü **Datei** von Brackets wählen Sie **Ordner öffnen...** und wählen Sie entweder den Ordner `jcr_root` oder den übergeordneten Projektordner.
 
@@ -80,16 +82,16 @@ Im Menü **Datei** von Brackets wählen Sie **Ordner öffnen...** und wählen Si
 
 ### Projekteinstellungen {#project-settings}
 
-Um Ihre Inhalte von und zu einer AEM Entwicklungsinstanz zu synchronisieren, müssen Sie Ihre Projekteinstellungen definieren. Dies erreichen Sie, indem Sie das Menü **AEM** aufrufen und **Projekteinstellungen** wählen.
+Um Ihren Inhalt mit einer AEM-Entwicklungsinstanz zu synchronisieren, müssen Sie Ihre Projekteinstellungen definieren. Dies erreichen Sie, indem Sie das Menü **AEM** aufrufen und **Projekteinstellungen** wählen.
 
 ![chlimage_1-55](assets/chlimage_1-55a.png)
 
 In den Projekteinstellungen können Sie Folgendes definieren:
 
-1. Die Server-URL (z. B. `http://localhost:4502`)
+1. Server-URL (z. B. `http://localhost:4502`)
 1. Ob Server ohne gültiges HTTPS-Zertifikat toleriert werden sollen (deaktivieren Sie diese Option, falls nicht erforderlich)
-1. Der Benutzername, der zum Synchronisieren von Inhalten verwendet wird (z. B. `admin`)
-1. Das Kennwort des Benutzers (z. B. `admin`)
+1. Benutzername, der für die Synchronisierung von Inhalten verwendet wird (z. B. `admin`)
+1. Benutzerkennwort (z. B. `admin`)
 
 ## Synchronisieren von Inhalten {#synchronizing-content}
 
@@ -97,9 +99,9 @@ Die AEM Brackets-Erweiterung bietet folgende Arten der Inhaltssynchronisierung f
 
 ### Automatisierte Synchronisierung geänderter Dateien {#automated-synchronization-of-changed-files}
 
-Dadurch werden nur Änderungen von Brackets mit der AEM-Instanz synchronisiert, aber nie umgekehrt.
+Dadurch werden nur Änderungen von Brackets mit der AEM-Instanz synchronisiert, jedoch niemals umgekehrt.
 
-### Manuelle bidirektionale Synchronisation {#manual-bidirectional-synchronization}
+### Manuelle bidirektionale Synchronisierung {#manual-bidirectional-synchronization}
 
 Öffnen Sie im Projekt-Explorer das Kontextmenü, indem Sie mit der rechten Maustaste auf eine Datei oder einen Ordner klicken. Dort können Sie auf die Optionen **Auf Server exportieren** oder **Von Server importieren** zugreifen.
 
@@ -117,14 +119,14 @@ Im **AEM** Menü, die **Inhaltspaket exportieren** oder **Inhaltspaket importier
 
 ### Synchronisierungsstatus {#synchronization-status}
 
-Die AEM Brackets-Erweiterung verfügt über ein Benachrichtigungssymbol in der Symbolleiste rechts neben dem Brackets-Fenster, das den Status der letzten Synchronisation angibt:
+Die AEM Brackets-Erweiterung verfügt über ein Benachrichtigungssymbol in der Symbolleiste rechts im Fenster „Brackets“, das den Status der letzten Synchronisierung angibt:
 
-* grün - alle Dateien wurden erfolgreich synchronisiert
-* blau - ein Synchronisierungsvorgang wird ausgeführt
-* gelb - einige der Dateien wurden nicht synchronisiert
-* rot - keine der Dateien wurde synchronisiert
+* Grün: Alle Dateien wurden erfolgreich synchronisiert.
+* Blau: Ein Synchronisierungsvorgang wird gerade ausgeführt.
+* Gelb: Einige der Dateien wurden nicht synchronisiert.
+* Rot: Es wurden keine Dateien wurde synchronisiert.
 
-Wenn Sie auf das Benachrichtigungssymbol klicken, wird das Dialogfeld Synchronisierungsstatus -Bericht geöffnet, in dem alle Status für jede synchronisierte Datei aufgelistet sind.
+Wenn Sie auf das Benachrichtigungssymbol klicken, wird das Dialogfeld „Synchronisierungsstatusbericht“ geöffnet, das den Status aller synchronisierten Dateien anzeigt.
 
 ![chlimage_1-58](assets/chlimage_1-58a.png)
 
@@ -143,7 +145,7 @@ Die AEM Brackets-Erweiterung bietet auch eine automatische Vervollständigung, u
 1. Geben Sie in einem HTML-Attribut `sly` ein. Das Attribut wird automatisch zu `data-sly-` vervollständigt.
 1. Wählen Sie in der Dropdown-Liste das HTL-Attribut aus.
 
-### Ausdruck - Automatische Vervollständigung {#expression-auto-completion}
+### Automatische Vervollständigung von Ausdrücken {#expression-auto-completion}
 
 Innerhalb eines `${}`-Ausdrucks werden allgemeine Variablennamen automatisch vervollständigt.
 

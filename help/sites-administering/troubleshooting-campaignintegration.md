@@ -7,10 +7,12 @@ topic-tags: integration
 content-type: reference
 exl-id: 317bab41-3504-4e46-9ddc-72e291a34e06
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Integration
+role: Admin
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '802'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +58,7 @@ Um dieses Problem zu beheben, ändern Sie Folgendes in `$CAMPAIGN_HOME/conf/conf
 
 Stellen Sie sicher, dass in Adobe Campaign Classic nach der Port-Nummer kein Schrägstrich (`/`) steht.
 
-![Adobe Campaign Classic - Sicherstellen, dass kein Schrägstrich nach der Anschlussnummer eingefügt wird](assets/chlimage_1-149.png)
+![Adobe Campaign Classic – Sicherstellen, dass kein Schrägstrich nach der Port-Nummer steht](assets/chlimage_1-149.png)
 
 ## Wenn Sie eine Warnung bezüglich setlocale erhalten {#if-you-get-a-warning-about-your-setlocale}
 

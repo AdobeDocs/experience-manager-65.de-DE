@@ -7,10 +7,12 @@ topic-tags: extending-aem
 content-type: reference
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1925'
-ht-degree: 26%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +20,7 @@ ht-degree: 26%
 
 Workflows ermöglichen die Automatisierung von Aktivitäten in Adobe Experience Manager (AEM).
 
-Sie stellen oft einen großen Teil der Verarbeitung dar, die in einer AEM-Umgebung stattfindet. Wenn also benutzerdefinierte Workflow-Schritte nicht gemäß Best Practices geschrieben werden oder native Workflows nicht so konfiguriert sind, dass sie so effizient wie möglich ausgeführt werden, kann dies Auswirkungen auf das System haben.
+Sie stellen oft einen großen Teil der Verarbeitung dar, die in einer AEM-Umgebung stattfindet. Wenn also benutzerdefinierte Workflow-Schritte nicht gemäß den Best Practices geschrieben werden oder native Workflows nicht so konfiguriert sind, dass sie so effizient wie möglich ausgeführt werden, kann dies Auswirkungen auf das System haben.
 
 Wir empfehlen daher dringend, Workflow-Implementierungen sorgfältig zu planen.
 
@@ -28,14 +30,14 @@ Beim Konfigurieren von Workflow-Prozessen (angepasst und/oder vorkonfiguriert) s
 
 ### Übergangs-Workflows {#transient-workflows}
 
-Um die Ladevorgänge mit hoher Aufnahme zu optimieren, können Sie eine [Workflow als transient](/help/sites-developing/workflows.md#transient-workflows).
+Um hohe Aufnahmemengen zu optimieren, können Sie einen [Workflow als vorübergehend](/help/sites-developing/workflows.md#transient-workflows) definieren.
 
-Wenn ein Workflow vorübergehend ist, werden die Laufzeitdaten, die sich auf die Zwischenarbeitsschritte beziehen, bei ihrer Ausführung nicht im JCR persistiert (die Ausgabedarstellungen werden beibehalten).
+Wenn ein Workflow vorübergehend ist, werden die Laufzeitdaten, die sich auf die Zwischenarbeitsschritte beziehen, bei ihrer Ausführung nicht im JCR festgehalten (die Ausgabedarstellungen werden aber beibehalten).
 
 Zu den Vorteilen zählen:
 
 * Verringerung der Verarbeitungszeit des Workflows um bis zu 10 %.
-* Reduzieren Sie das Repository-Wachstum erheblich.
+* Erhebliche Verringerung des Repository-Wachstums.
 * Es sind keine CRUD-Workflows mehr zum Bereinigen erforderlich.
 * Darüber hinaus wird die Anzahl der zu komprimierenden TAR-Dateien reduziert.
 
@@ -45,15 +47,15 @@ Zu den Vorteilen zählen:
 
 ### Anpassen von DAM-Workflows {#tuning-dam-workflows}
 
-Richtlinien zur Leistungsoptimierung von DAM-Workflows finden Sie im Abschnitt [Handbuch zur Leistungsoptimierung von AEM Assets](/help/assets/performance-tuning-guidelines.md).
+Richtlinien zur Leistungsoptimierung von DAM-Workflows finden Sie im [Handbuch zur Leistungsoptimierung von AEM Assets](/help/assets/performance-tuning-guidelines.md).
 
 ### Konfigurieren der maximalen Anzahl gleichzeitiger Workflows {#configure-the-maximum-number-of-concurrent-workflows}
 
-AEM können die gleichzeitige Ausführung mehrerer Workflow-Threads zulassen. Standardmäßig ist die Anzahl der Threads so konfiguriert, dass die Anzahl der Prozessorkerne auf dem System halbiert wird.
+AEM kann die gleichzeitige Ausführung mehrerer Workflow-Threads zulassen. Standardmäßig ist die Anzahl der Threads auf die Hälfte der Anzahl der Prozessorkerne des Systems festgelegt.
 
-In Fällen, in denen die ausgeführten Workflows Systemressourcen erfordern, kann dies bedeuten, dass AEM für andere Aufgaben wie das Rendern der Authoring-Benutzeroberfläche wenig übrig haben. Daher kann das System bei Aktivitäten wie dem Massen-Bild-Upload zu langsam sein.
+In Fällen, in denen die ausgeführten Workflows sehr viele Systemressourcen beanspruchen, kann dies bedeuten, dass AEM für andere Aufgaben wie das Rendern der Authoring-Benutzeroberfläche wenig Ressourcen zur Verfügung stehen. Dies kann dazu führen, dass das System bei Aktivitäten wie etwa dem Massenhochladen von Bildern nur noch langsam reagiert.
 
-Um dieses Problem zu beheben, empfiehlt Adobe, die Anzahl der **Maximale Anzahl paralleler Aufträge** zwischen der Hälfte und drei Viertel der Anzahl der Prozessorkerne auf dem System. Dadurch sollte dem System genügend Kapazität zur Verfügung stehen, damit solche Workflows ohne Beeinträchtigung der Reaktionsfähigkeit verarbeitet werden können.
+Um dieses Problem zu beheben, empfiehlt sich, die Anzahl der **maximalen parallelen Aufträge** auf einen Wert festzulegen, der zwischen der Hälfte und drei Vierteln der Anzahl der Prozessorkerne des Systems liegt. Dadurch sollte dem System genügend Kapazität zur Verfügung stehen, damit solche Workflows ohne Beeinträchtigung der Reaktionsfähigkeit verarbeitet werden können.
 
 Die **maximale Anzahl paralleler Aufträge** kann wie folgt konfiguriert werden:
 
@@ -61,21 +63,21 @@ Die **maximale Anzahl paralleler Aufträge** kann wie folgt konfiguriert werden:
 
 * Konfigurieren Sie die Warteschlange über die Option **Sling-Aufträge** der AEM-Web-Konsole für **Auftragswarteschlange-Konfiguration: Granite Workflow-Warteschlange** unter `http://localhost:4502/system/console/slingevent`.
 
-Darüber hinaus gibt es eine separate Konfiguration für die **Granite-Workflow-Warteschlange für externe Verarbeitungsaufträge**. Dies wird für Workflow-Prozesse verwendet, die externe Binärdateien starten, z. B. **InDesign Server** oder **Image Magick**.
+Darüber hinaus gibt es eine separate Konfiguration für die **Granite-Workflow-Warteschlange für externe Verarbeitungsaufträge**. Dies wird für Workflow-Prozesse verwendet, die externe Binärdateien starten, wie **InDesign Server** oder **Image Magick**.
 
 ### Konfigurieren einzelner Auftragswarteschlangen {#configure-individual-job-queues}
 
-In einigen Fällen ist es nützlich, einzelne Auftragswarteschlangen zu konfigurieren, um gleichzeitige Threads oder andere Warteschlangenoptionen auf Basis einzelner Aufträge zu steuern. Sie können eine einzelne Warteschlange über die Web-Konsole hinzufügen und konfigurieren. **Apache Sling Job Queue-Konfiguration** Fabrik. Um das entsprechende Thema aufzulisten, führen Sie das Modell Ihres Workflows aus und suchen Sie im **Sling-Aufträge** console, z. B. at `http://localhost:4502/system/console/slingevent`.
+In einigen Fällen ist es nützlich, einzelne Auftragswarteschlangen zu konfigurieren, um parallele Threads oder andere Warteschlangenoptionen auf Basis einzelner Aufträge zu steuern. Sie können eine einzelne Warteschlange von der Web-Konsole aus über die **Apache Sling Job Queue Configuration**-Factory hinzufügen und konfigurieren. Führen Sie zum Ermitteln des entsprechenden Themas das Modell Ihres Workflows aus und suchen Sie es in der Konsole **Sling Jobs**, beispielsweise unter `http://localhost:4502/system/console/slingevent`.
 
 Individuelle Auftragswarteschlangen können auch für Verlaufs-Workflows hinzugefügt werden.
 
 ### Konfigurieren der Workflow-Bereinigung {#configure-workflow-purging}
 
-In einer standardmäßigen AEM bietet eine Wartungskonsole, in der tägliche und wöchentliche Wartungsaktivitäten geplant und konfiguriert werden können, z. B. unter:
+In einer standardmäßigen Installation bietet AEM eine Wartungskonsole, in der tägliche und wöchentliche Wartungsaktivitäten geplant und konfiguriert werden können, z. B. bei:
 
 `http://localhost:4502/libs/granite/operations/content/maintenance.html`
 
-Standardmäßig wird die Variable **Wöchentliches Wartungsfenster** hat eine **Workflow-Bereinigung** -Aufgabe, dies muss jedoch konfiguriert werden, bevor sie ausgeführt werden kann. Um die Workflow-Bereinigung zu konfigurieren, wird eine neue **Adobe Granite-Workflow-Bereinigungskonfiguration** muss in der Webkonsole hinzugefügt werden.
+Standardmäßig hat das **wöchentliche Wartungsfenster** eine Aufgabe zur **Workflow-Bereinigung**, diese muss jedoch konfiguriert werden, bevor sie ausgeführt werden kann. Um die Workflow-Bereinigung zu konfigurieren, muss eine neue **Adobe Granite-Workflow-Bereinigungskonfiguration** in der Web-Konsole hinzugefügt werden.
 
 Weitere Informationen zu Wartungsaufgaben in AEM finden Sie im [Vorgangs-Dashboard](/help/sites-administering/operations-dashboard.md).
 
@@ -85,30 +87,30 @@ Beim Schreiben benutzerdefinierter Workflow-Prozesse sollten einige Aspekte beac
 
 ### Speicherorte {#locations}
 
-Definitionen von Workflow-Modellen, Startern, Skripten und Benachrichtigungen werden im Repository nach Typ gespeichert, d. h. standardmäßig benutzerdefinierte Definitionen, unter anderem.
+Definitionen von Workflow-Modellen, -Startern, -Skripten und -Benachrichtigungen werden im entsprechenden Repository für den jeweiligen Typ gespeichert, also beispielsweise unter „vorkonfiguriert“ oder „benutzerdefiniert“.
 
 >[!NOTE]
 >
 >Weitere Informationen finden Sie unter [Neue Repositorystruktur in AEM 6.5](/help/sites-deploying/repository-restructuring.md).
 
-#### Standorte - Workflow-Modelle {#locations-workflow-models}
+#### Speicherorte – Workflow-Modelle {#locations-workflow-models}
 
 Workflow-Modelle werden im Repository nach Typ gespeichert:
 
-* Vordefinierte Workflow-Designs werden unter folgendem Pfad gespeichert:
+* Vorkonfigurierte Workflow-Designs sind unter dem folgenden Pfad zu finden:
 
   `/libs/settings/workflow/models/`
 
   >[!CAUTION]
   >
-  >Nicht beachten:
+  >Vermeiden Sie Folgendes:
   >
-  >* Platzieren Sie beliebige Ihrer benutzerdefinierten Workflow-Modelle in diesem Ordner.
+  >* Platzieren Sie keine benutzerdefinierten Workflow-Modelle in diesem Ordner.
   >* Lassen Sie alles in `/libs` unverändert.
   >
-  >Da alle Änderungen beim Upgrade oder bei der Installation von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben werden können.
+  >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
 
-* Benutzerdefinierte Workflow-Designs befinden sich unter:
+* Pfad für benutzerdefinierte Workflow-Designs:
 
   ```
   /conf/global/settings/workflow/models/...
@@ -124,26 +126,26 @@ Workflow-Modelle werden im Repository nach Typ gespeichert:
 
   >[!NOTE]
   >
-  >Wenn diese Designs bearbeitet werden *Verwenden der AEM-Benutzeroberfläche*, werden die Details an die neuen Speicherorte kopiert.
+  >Wenn diese Designs *mithilfe der AEM-Benutzeroberfläche* bearbeitet werden, werden die Details an die neuen Speicherorte kopiert.
 
-#### Standorte - Workflow-Starter {#locations-workflow-launchers}
+#### Speicherorte – Workflow-Starter {#locations-workflow-launchers}
 
-Workflow-Starter-Definitionen werden auch im Repository nach Typ gespeichert:
+Definitionen für Workflow-Starter werden im Repository ebenfalls auf der Grundlage ihres Typs gespeichert:
 
-* Vordefinierte Workflow-Starter befinden sich unter folgendem Pfad:
+* Pfad für vorkonfigurierte Workflow-Starter:
 
   `/libs/settings/workflow/launcher/`
 
   >[!CAUTION]
   >
-  >Nicht beachten:
+  >Vermeiden Sie Folgendes:
   >
-  >* Platzieren Sie einen Ihrer benutzerdefinierten Workflow-Starter in diesem Ordner.
+  >* Platzieren von benutzerdefinierten Workflow-Startern in diesem Ordner.
   >* Lassen Sie alles in `/libs` unverändert.
   >
-  >Da alle Änderungen beim Upgrade oder bei der Installation von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben werden können.
+  >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
 
-* Benutzerdefinierte Workflow-Starter befinden sich unter:
+* Pfad für benutzerdefinierte Workflow-Starter:
 
   ```
   /conf/global/settings/workflow/launcher/...
@@ -155,26 +157,26 @@ Workflow-Starter-Definitionen werden auch im Repository nach Typ gespeichert:
 
   >[!NOTE]
   >
-  >Wenn diese Definitionen bearbeitet werden *Verwenden der AEM-Benutzeroberfläche*, werden die Details an die neuen Speicherorte kopiert.
+  >Wenn diese Definitionen *mithilfe der AEM-Benutzeroberfläche* bearbeitet werden, werden die Details an die neuen Speicherorte kopiert.
 
-#### Speicherorte - Workflow-Skripte {#locations-workflow-scripts}
+#### Speicherorte – Workflow-Skripte {#locations-workflow-scripts}
 
-Workflow-Skripte werden auch im Repository nach Typ gespeichert:
+Workflow-Skripte werden im Repository ebenfalls auf der Grundlage ihres Typs gespeichert:
 
-* Vordefinierte Workflow-Skripte werden unter folgendem Pfad gespeichert:
+* Pfad für vorkonfigurierte Workflow-Skripte:
 
   `/libs/workflow/scripts/`
 
   >[!CAUTION]
   >
-  >Nicht beachten:
+  >Vermeiden Sie Folgendes:
   >
-  >* Platzieren Sie beliebige Ihrer benutzerdefinierten Workflow-Skripte in diesem Ordner
+  >* Platzieren von benutzerdefinierten Workflow-Skripten in diesem Ordner.
   >* Lassen Sie alles in `/libs` unverändert.
   >
-  >Da alle Änderungen beim Upgrade oder bei der Installation von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben werden können.
+  >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
 
-* Benutzerdefinierte Workflow-Skripte befinden sich unter:
+* Pfad für benutzerdefinierte Workflow-Skripte:
 
   ```
   /apps/workflow/scripts/...
@@ -184,24 +186,24 @@ Workflow-Skripte werden auch im Repository nach Typ gespeichert:
 
   `/etc/workflow/scripts/`
 
-#### Standorte - Workflow-Benachrichtigungen {#locations-workflow-notifications}
+#### Speicherorte – Workflow-Benachrichtigungen {#locations-workflow-notifications}
 
-Workflow-Benachrichtigungen werden auch im Repository nach Typ gespeichert:
+Workflow-Benachrichtigungen werden im Repository ebenfalls auf der Grundlage ihres Typs gespeichert:
 
-* Vordefinierte Workflow-Benachrichtigungsdefinitionen werden unter folgendem Pfad gespeichert:
+* Pfad für vorkonfigurierte Workflow-Benachrichtigungsdefinitionen:
 
   `/libs/settings/workflow/notification/`
 
   >[!CAUTION]
   >
-  >Nicht beachten:
+  >Vermeiden Sie Folgendes:
   >
-  >* Platzieren Sie eine Ihrer benutzerdefinierten Workflow-Benachrichtigungsdefinitionen in diesem Ordner
+  >* Platzieren benutzerdefinierter Workflow-Benachrichtigungsdefinitionen in diesem Ordner.
   >* Lassen Sie alles in `/libs` unverändert.
   >
-  >Da alle Änderungen beim Upgrade oder bei der Installation von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben werden können.
+  >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
 
-* Benutzerdefinierte Workflow-Benachrichtigungsdefinitionen befinden sich unter:
+* Pfad für benutzerdefinierte Workflow-Benachrichtigungsdefinitionen:
 
   ```
   /conf/global/settings/workflow/notification/...
@@ -220,16 +222,16 @@ Workflow-Benachrichtigungen werden auch im Repository nach Typ gespeichert:
 
 ### Prozesssitzungen {#process-sessions}
 
-Wie bei jeder benutzerdefinierten Entwicklung wird immer empfohlen, nach Möglichkeit eine Benutzersitzung zu verwenden:
+Wie bei jeder benutzerdefinierten Entwicklung empfiehlt es sich, nach Möglichkeit die Sitzung einer Person zu verwenden. Dies hat folgende Vorteile:
 
-* zur optimalen Einhaltung der Sicherheitsrichtlinien
-* , damit das System das Öffnen und Schließen der Sitzung verwalten kann
+* Optimale Einhaltung der Sicherheitsrichtlinien
+* Verwaltung des Öffnens und Schließens der Sitzung durch das System
 
-Bei der Implementierung eines Workflow-Prozesses:
+Wenn Sie einen Workflow-Prozess implementieren, gilt Folgendes:
 
 * Eine Workflow-Sitzung wird bereitgestellt und sollte verwendet werden, solange kein zwingender Grund dagegenspricht.
-* Neue Sitzungen sollten nicht aus Workflow-Schritten erstellt werden, da dies zu Inkonsistenzen im Status sowie möglichen gleichzeitigen Problemen in der Workflow-Engine führt.
-* Sie sollten innerhalb eines Prozessschritts in einem Workflow keine neue JCR-Sitzung abrufen. Sie sollten die von der Prozess-Schritt-API bereitgestellte Workflow-Sitzung an eine JCR-Sitzung anpassen. Beispiel:
+* Auf der Grundlage von Workflow-Schritten sollten keine neuen Sitzungen erstellt werden, da dies zu Inkonsistenzen beim Zustand sowie zu möglichen Parallelitätsproblemen in der Workflow-Engine führt.
+* Über einen Prozessschritt in einem Workflow sollte keine neue JCR-Sitzung initiiert werden. Passen Sie die von der Prozessschritt-API bereitgestellte Workflow-Sitzung an eine JCR-Sitzung an. Beispiel:
 
 ```
 public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap args) throws WorkflowException {
@@ -246,68 +248,68 @@ Speichern einer Sitzung:
 * `Session.Save` darf nicht innerhalb eines Workflow-Schritts aufgerufen werden:
 
    * Es wird empfohlen, die Workflow-JCR-Sitzung anzupassen. In diesem Fall wird `save` nicht benötigt, da die Workflow-Engine die Sitzung nach Abschluss der Workflow-Ausführung automatisch speichert.
-   * Es wird nicht empfohlen, für einen Prozessschritt eine eigene JCR-Sitzung zu erstellen.
+   * Ein Prozessschritt sollte keine eigene JCR-Sitzung erstellen.
 
-* Durch die Vermeidung unnötiger Speichervorgänge können Sie den Verwaltungsaufwand reduzieren und die Workflows effizienter gestalten.
+* Unnötige Speichervorgänge zu vermeiden, bedeutet weniger Mehraufwand und somit eine höhere Workflow-Effizienz.
 
 >[!CAUTION]
 >
->Wenn Sie trotz der Empfehlungen hier Ihre eigene JCR-Sitzung erstellen, muss sie gespeichert werden.
+>Sollten Sie entgegen den hier angegebenen Empfehlungen eine eigene JCR-Sitzung erstellen, muss diese gespeichert werden.
 
-### Anzahl/Umfang der Starter minimieren {#minimize-the-number-scope-of-launchers}
+### Verringern von Anzahl/Umfang der Starter {#minimize-the-number-scope-of-launchers}
 
-Es gibt einen Listener, der für alle [Workflow-Starter](/help/sites-administering/workflows-starting.md#workflows-launchers) registriert sind:
+Es gibt einen Listener, der für alle registrierten [Workflow-Starter](/help/sites-administering/workflows-starting.md#workflows-launchers) zuständig ist:
 
-* Er überwacht Änderungen an allen Pfaden, die in den Globbing-Eigenschaften der anderen Starter angegeben sind.
-* Wenn ein Ereignis gesendet wird, bewertet die Workflow-Engine jeden Starter, um festzustellen, ob er ausgeführt werden soll.
+* Er lauscht auf Änderungen an allen Pfaden, die in den Globbing-Eigenschaften der anderen Starter angegeben sind.
+* Wenn ein Ereignis übermittelt wird, wertet die Workflow-Engine die einzelnen Starter aus, um zu ermitteln, ob sie ausgeführt werden sollen.
 
-Das Erstellen zu vieler Starter führt dazu, dass der Evaluierungsprozess langsamer ausgeführt wird.
+Eine zu hohe Anzahl von Startern verlangsamt diese Auswertung.
 
-Wenn Sie einen Globbing-Pfad im Stammverzeichnis des Repositorys in einem einzelnen Starter erstellen, überwacht die Workflow-Engine die Ereignisse zum Erstellen/Ändern jedes Knotens im Repository und wertet sie aus. Daher wird empfohlen, nur erforderliche Starter zu erstellen und den Globbing-Pfad so spezifisch wie möglich zu gestalten.
+Die Erstellung eines Globbing-Pfads am Stamm des Repositorys für einen einzelnen Starter führt dazu, dass die Workflow-Engine auf Erstellungs-/Änderungsereignisse für jeden Knoten im Repository lauscht und diese auswertet. Es empfiehlt sich daher, nur Starter zu erstellen, die wirklich benötigt werden, und den Globbing-Pfad so spezifisch wie möglich zu machen.
 
-Aufgrund der Auswirkungen dieser Starter auf das Workflow-Verhalten kann es auch hilfreich sein, vordefinierte Starter zu deaktivieren, die nicht verwendet werden.
+Angesichts der Auswirkungen, die diese Starter auf das Workflow-Verhalten haben, kann es hilfreich sein, alle ungenutzten vorkonfigurierten Starter zu deaktivieren.
 
 ### Konfigurationserweiterungen für Starter {#configuration-enhancements-for-launchers}
 
 Die benutzerdefinierte [Starter-Konfiguration](/help/sites-administering/workflows-starting.md#workflows-launchers) wurde erweitert, um Folgendes zu unterstützen:
 
-* Mehrere Bedingungen &quot;AND&quot;zusammen haben.
-* Verwenden Sie ODER-Bedingungen innerhalb einer einzelnen Bedingung.
-* Deaktivieren/aktivieren Sie Starter je nachdem, ob ein Feature Flag aktiviert oder deaktiviert ist.
+* Verknüpfung mehrerer Bedingungen mit „UND“
+* Verwendung von ODER-Bedingungen innerhalb einer einzelnen Bedingung
+* Deaktivierung/Aktivierung von Startern auf Grundlage des Aktivierungsstatus eines Funktions-Flags
 * Unterstützung regulärer Ausdrücke in Starter-Bedingungen
 
-### Workflows nicht aus anderen Workflows starten {#do-not-start-workflows-from-other-workflows}
+### Kein Start von Workflows über andere Workflows {#do-not-start-workflows-from-other-workflows}
 
-Workflows können einen erheblichen Mehraufwand verursachen, sowohl im Hinblick auf im Speicher erstellte Objekte als auch auf im Repository nachverfolgte Knoten. Aus diesem Grund ist es besser, einen Workflow seine Verarbeitung selbst durchführen zu lassen, anstatt zusätzliche Workflows zu starten.
+Durch die Objekterstellung im Speicher sowie durch die Knotenüberwachung im Repository können Workflows zu erheblichem Mehraufwand führen. Es empfiehlt sich daher, die Verarbeitung eines Workflows innerhalb dieses Workflows abzuwickeln, anstatt weitere Workflows zu starten.
 
-Ein Beispiel hierfür wäre ein Workflow, der einen Geschäftsprozess für einen Satz von Inhalten implementiert und diesen Inhalt dann aktiviert. Es ist besser, einen benutzerdefinierten Workflow-Prozess zu erstellen, der jeden dieser Knoten aktiviert, anstatt einen **Inhalt aktivieren** -Modell für die einzelnen Inhaltsknoten erstellen, die veröffentlicht werden müssen. Dieser Ansatz erfordert zusätzliche Entwicklungsarbeiten, ist jedoch bei der Ausführung effizienter als beim Starten einer separaten Workflow-Instanz für jede Aktivierung.
+Ein Beispiel wäre etwa ein Workflow, der einen Geschäftsprozess für eine Gruppe von Inhalten implementiert und die Inhalte anschließend aktiviert. Es ist besser, einen benutzerdefinierten Workflow-Prozess zu erstellen, der jeden dieser Knoten aktiviert, anstatt für jeden der zu veröffentlichenden Inhaltsknoten ein Modell vom Typ **Inhalt aktivieren** zu starten. Dieser Ansatz führt zwar zu einem höheren Entwicklungsaufwand, ist aber effizienter, als für jede Aktivierung eine separate Workflow-Instanz zu starten.
 
-Ein weiteres Beispiel wäre ein Workflow, der mehrere Knoten verarbeitet, ein Workflow-Paket erstellt und dann dieses Paket aktiviert. Anstatt das Paket zu erstellen und anschließend einen separaten Workflow mit dem Paket als Payload zu erstellen, können Sie im Paketerstellungsschritt die Payload Ihres Workflows ändern und dann den Paketaktivierungsschritt innerhalb desselben Workflow-Modells aufrufen.
+Ein weiteres Beispiel wäre ein Workflow, der mehrere Knoten verarbeitet, ein Workflow-Paket erstellt und dieses Paket anschließend aktiviert. Anstatt das Paket zu erstellen und anschließend einen separaten Workflow mit dem Paket als Payload zu erstellen, können Sie im Paketerstellungsschritt die Payload Ihres Workflows ändern und dann den Paketaktivierungsschritt innerhalb desselben Workflow-Modells aufrufen.
 
 ### Handler-Fortschritt {#handler-advance}
 
-Wenn Sie ein Workflow-Modell entwerfen, können Sie den Handler-Fortschritt für Ihre Workflow-Schritte aktivieren. Alternativ können Sie Ihrem Workflow-Schritt Code hinzufügen, um zu bestimmen, welcher Schritt als Nächstes ausgeführt werden soll, und ihn dann ausführen.
+Wenn Sie ein Workflow-Modell entwerfen, können Sie den Handler-Fortschritt für Ihre Workflow-Schritte aktivieren. Sie können Ihrem Workflow-Schritt auch Code hinzufügen, um den als Nächstes auszuführenden Schritt zu bestimmen und auszuführen.
 
 Es wird empfohlen, den Handler-Fortschritt zu verwenden, da sich dadurch die Leistung verbessert.
 
 ### Phasen eines Workflows {#workflow-stages}
 
-Sie können [Workflow-Phasen](/help/sites-developing/workflows.md#workflow-stages), und weisen Sie dann einer bestimmten Workflow-Phase Aufgaben/Schritte zu.
+Sie können [Workflow-Statuswerte](/help/sites-developing/workflows.md#workflow-stages) definieren und Aufgaben/Schritte einem bestimmten Workflow-Status zuweisen.
 
-Diese Informationen werden verwendet, um den Fortschritt eines Workflows anzuzeigen, wenn Sie auf die [**Workflow-Info** Registerkarte eines Arbeitselements aus dem **Posteingang**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). Vorhandene Workflow-Modelle können bearbeitet werden, um Statuswerte hinzuzufügen.
+Diese Information wird zum Anzeigen des Fortschritts eines Workflows verwendet, wenn Sie auf die Registerkarte [**Workflow-Informationen** eines Arbeitselements aus dem **Posteingang**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) klicken. Vorhandene Workflow-Modelle können bearbeitet werden, um Statuswerte hinzuzufügen.
 
-### Schritt &quot;Seitenprozess aktivieren&quot; {#activate-page-process-step}
+### Prozessschritt „Seite aktivieren“ {#activate-page-process-step}
 
-Die **Seitenprozess aktivieren** -Schritt aktiviert Seiten für Sie, aber es werden keine referenzierten DAM-Assets gefunden und auch diese aktiviert.
+Der Prozessschritt **Seite aktivieren** aktiviert zwar Seiten für Sie, es werden durch diesen Schritt aber nicht automatisch referenzierte DAM-Assets gesucht und aktiviert.
 
-Dies ist bei der Verwendung dieses Schritts als Teil eines Workflow-Modells zu beachten.
+Berücksichtigen Sie dies, wenn Sie diesen Schritt im Rahmen eines Workflow-Modells verwenden möchten.
 
-### Überlegungen zum Upgrade {#upgrade-considerations}
+### Überlegungen zu Upgrades {#upgrade-considerations}
 
-Beim Aktualisieren Ihrer Instanz:
+Wichtige Punkte bei Upgrades für Ihre Instanz:
 
-* Stellen Sie sicher, dass alle benutzerdefinierten Workflow-Modelle gesichert werden, bevor eine Instanz aktualisiert wird.
-* Vergewissern Sie sich, dass keiner Ihrer benutzerdefinierten Workflows unter dem [location](#locations):
+* Sichern Sie alle benutzerdefinierten Workflow-Modelle, bevor Sie ein Upgrade für eine Instanz durchführen.
+* Vergewissern Sie sich, dass keiner Ihrer benutzerdefinierten Workflows am folgenden [Speicherort](#locations) gespeichert ist:
 
    * `/libs/settings/workflow/models/projects`
 
@@ -315,22 +317,22 @@ Beim Aktualisieren Ihrer Instanz:
 >
 >Weitere Informationen finden Sie unter [Neue Repositorystruktur in AEM 6.5](/help/sites-deploying/repository-restructuring.md).
 
-## Systemwerkzeuge {#system-tools}
+## System-Tools {#system-tools}
 
-Es stehen viele Systemwerkzeuge zur Verfügung, die bei der Überwachung, Wartung und Fehlerbehebung von Workflows helfen. In den folgenden Beispiel-URLs wird zwar `localhost:4502` verwendet, sie sollten aber in jeder Autoreninstanz (`<hostname>:<port>`) verfügbar sein.
+Für die Überwachung, Verwaltung und Problembehandlung von Workflows stehen zahlreiche System-Tools zur Verfügung. In den folgenden Beispiel-URLs wird zwar `localhost:4502` verwendet, sie sollten aber in jeder Autoreninstanz (`<hostname>:<port>`) verfügbar sein.
 
 ### Konsole zur Behandlung von Sling-Aufträgen {#sling-job-handling-console}
 
 `http://localhost:4502/system/console/slingevent`
 
-Die Konsole &quot;Sling Job Handling&quot;zeigt Folgendes an:
+In der Konsole zur Behandlung von Sling-Aufträgen wird Folgendes angezeigt:
 
-* Statistiken zum Status der Vorgänge im System seit dem letzten Neustart.
+* Statistik zum Zustand von Aufträgen im System seit dem letzten Neustart
 * Konfigurationen für alle Auftragswarteschlangen sowie ein Tastaturbefehl für die Bearbeitung im Konfigurations-Manager
 
-### Workflow-Berichtswerkzeug {#workflow-report-tool}
+### Workflow-Berichts-Tool {#workflow-report-tool}
 
-Das Workflow-Reporting-Tool wurde in Version 6.3 entfernt, um eine Leistungsbeeinträchtigung zu verhindern.
+Das Workflow-Berichts-Tool wird in Version 6.3 entfernt, um die Leistung nicht zu beeinträchtigen.
 
 ### MBean für Workflow-Wartungsvorgänge {#workflow-maintenance-operations-mbean}
 

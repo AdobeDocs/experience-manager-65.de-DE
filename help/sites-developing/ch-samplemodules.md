@@ -1,16 +1,18 @@
 ---
 title: Mustertypen von ContextHub-UI-Modulen
-description: ContextHub bietet mehrere Beispiele für UI-Module, die Sie in Ihren Lösungen verwenden können.
+description: ContextHub bietet mehrere Musterbenutzeroberflächenmodule, die Sie in Ihren Lösungen verwenden können.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: df28180f-7af4-437d-8e91-bfd305f73113
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing,Personalization
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '1171'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -106,7 +108,7 @@ Instanzen des UI-Moduls contexthub.browserinfo benötigen keinen Wert für die D
 
 ## UI-Modultyp contexthub.datetime {#contexthub-datetime-ui-module-type}
 
-Das UI-Modul contexthub.datetime zeigt das Datum und die Uhrzeit an, die in einem Store mit dem Namen datetime gespeichert sind, der auf der [contexthub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) Store-Kandidat.
+Das Benutzeroberflächenmodul „contexthub.datetime“ zeigt das Datum und die Uhrzeit an, die in einem Store mit dem Namen „datetime“ gespeichert sind, der auf dem Storekandidaten [contexthub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) basiert.
 
 ![chlimage_1-78](assets/chlimage_1-78a.png)
 
@@ -198,7 +200,7 @@ Instanzen des Benutzeroberflächenmoduls contexthub.screen-orientation benötige
 
 ## Benutzeroberflächenmodultyp contexthub.tagcloud {#contexthub-tagcloud-ui-module-type}
 
-Das Benutzeroberflächenmodul contexthub.tagcloud zeigt Informationen zu Tags an. Auf der Symbolleiste zeigt das UI-Modul die Anzahl der Tags an. Das Popup zeigt eine Tagcloud und ein Texbox zum Hinzufügen neuer Tags an. Das UI-Modul erhält Informationen von einem ContextHub-Store namens &quot;tagcloud&quot;, der auf dem [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) Store-Kandidat.
+Das Benutzeroberflächenmodul contexthub.tagcloud zeigt Informationen zu Tags an. Auf der Symbolleiste zeigt das UI-Modul die Anzahl der Tags an. Das Popup zeigt eine Tagcloud und ein Texbox zum Hinzufügen neuer Tags an. Das Benutzeroberflächenmodul ruft Informationen aus einem ContextHub-Store namens „tagcloud“ ab, der auf dem Storekandidat [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) basiert.
 
 ![chlimage_1-82](assets/chlimage_1-82a.png)
 

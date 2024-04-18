@@ -1,16 +1,18 @@
 ---
 title: Anpassen der Willkommens-Konsole (klassische Benutzeroberfläche)
-description: Die Begrüßungskonsole bietet eine Liste von Links zu den verschiedenen Konsolen und Funktionen in AEM
+description: Die Willkommens-Konsole bietet eine Liste mit Links zu den unterschiedlichen Konsolen und Funktionen innerhalb von AEM.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 9e171b62-8efb-4143-a202-ba6555658d4b
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '449'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
@@ -22,24 +24,24 @@ ht-degree: 51%
 >
 >Unter [Anpassung der Konsolen](/help/sites-developing/customizing-consoles-touch.md) finden Sie genauere Informationen zur standardmäßigen Touch-optimierten Benutzeroberfläche.
 
-Die Begrüßungskonsole bietet eine Liste von Links zu den verschiedenen Konsolen und Funktionen in AEM.
+Die Willkommens-Konsole bietet eine Liste mit Links zu den unterschiedlichen Konsolen und Funktionen innerhalb von AEM.
 
 ![cq_welcomescreen](assets/cq_welcomescreen.png)
 
-Es ist möglich, die sichtbaren Links zu konfigurieren. Dies kann für bestimmte Benutzer und/oder Gruppen definiert werden. Die zu ergreifenden Aktionen hängen vom Zieltyp ab (entspricht dem Abschnitt der Konsole, in der sie sich befinden):
+Sie können die sichtbaren Links konfigurieren. Sie können dies für bestimmte Benutzende und/oder Gruppen definieren. Die erforderlichen Handlungen hängen vom Zieltyp ab. Dieser hängt vom Abschnitt der Konsole ab, in dem sich die Ziele befinden:
 
-* [Hauptkonsole](#links-in-main-console-left-pane) - Links in der Hauptkonsole (linker Bereich)
-* [Ressourcen, Dokumentation und Referenz, Funktionen](#links-in-sidebar-right-pane) - Links in der Seitenleiste (rechter Bereich)
+* [Hauptkonsolen](#links-in-main-console-left-pane): links in der Hauptkonsole (linker Bereich)
+* [Ressourcen, Dokumentation und Verweis, Funktionen](#links-in-sidebar-right-pane): links in der Seitenleiste (rechter Bereich)
 
 ## Links in der Hauptkonsole (linker Bereich) {#links-in-main-console-left-pane}
 
-Hier werden die Hauptkonsolen von AEM aufgelistet.
+Dies sind die Hauptkonsolen von AEM.
 
 ![cq_welcomescreenmainconsole](assets/cq_welcomescreenmainconsole.png)
 
-### Konfigurieren, ob die Hauptkonsolen-Links sichtbar sind {#configuring-whether-main-console-links-are-visible}
+### Legt fest, ob Hauptkonsolen-Links sichtbar sind {#configuring-whether-main-console-links-are-visible}
 
-Berechtigungen auf Knotenebene bestimmen, ob der Link angezeigt werden kann. Die betreffenden Knoten sind Folgende:
+Berechtigungen auf Knotenebene legen fest, ob der Link sichtbar ist. Die betreffenden Knoten sind Folgende:
 
 * **Websites:** `/libs/wcm/core/content/siteadmin`
 
@@ -63,7 +65,7 @@ Beispiel:
 
   `/libs/wcm/core/content/misc`
 
-Siehe [Sicherheitsabschnitt](/help/sites-administering/security.md) für weitere Informationen zum Festlegen der gewünschten Berechtigungen.
+Im [Abschnitt „Sicherheit“](/help/sites-administering/security.md) finden Sie weitere Informationen zum Festlegen der gewünschten Berechtigungen.
 
 ### Links in der Seitenleiste (rechter Bereich) {#links-in-sidebar-right-pane}
 
@@ -156,9 +158,9 @@ Drei Abschnitte werden standardmäßig bereitgestellt (leicht getrennt):
  </tbody>
 </table>
 
-#### Sichtbarkeit von Seitenleisten-Links konfigurieren {#configuring-whether-sidebar-links-are-visible}
+#### Konfiguration der Sichtbarkeit von Seitenleisten-Links {#configuring-whether-sidebar-links-are-visible}
 
-Es ist möglich, einen Link für bestimmte Benutzer oder Gruppen auszublenden, indem der Lesezugriff auf die Knoten, die den Link darstellen, entfernt wird.
+Sie können einen Link für bestimmte Benutzende oder Gruppen ausblenden, indem Sie den Lesezugriff auf die Knoten entfernen, die diesen Link repräsentieren.
 
 * Ressourcen – Entfernen des Zugriffs auf:
 
@@ -182,7 +184,7 @@ Beispiel:
 
   `/libs/cq/core/content/welcome/features/packages`
 
-Siehe [Sicherheitsabschnitt](/help/sites-administering/security.md) für weitere Informationen zum Festlegen der gewünschten Berechtigungen.
+Im [Abschnitt „Sicherheit“](/help/sites-administering/security.md) finden Sie weitere Informationen zum Festlegen der gewünschten Berechtigungen.
 
 ### Link-Auswahlmechanismus {#link-selection-mechanism}
 
@@ -201,7 +203,7 @@ Wenn ein Benutzer oder eine Gruppe keine Leseberechtigungen für einen Knoten mi
 
 ### Hinzufügen eines benutzerdefinierten Elements {#adding-a-custom-item}
 
-Die [Link-Auswahlmechanismus](#link-selection-mechanism) kann verwendet werden, um Ihr eigenes benutzerdefiniertes Element zur Liste der Links hinzuzufügen.
+Mit dem [Link-Auswahlmechanismus](#link-selection-mechanism) können Sie Ihr selbst definiertes Element zur Liste der Links hinzufügen.
 
 Fügen Sie Ihr benutzerdefiniertes Element zur Liste hinzu, indem Sie das Mixin `cq:Console` zu Ihrem Widget oder Ihrer Ressource hinzufügen. Definieren Sie dazu die Eigenschaft:
 

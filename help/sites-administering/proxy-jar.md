@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +85,7 @@ So überprüfen Sie, ob Keep-Alive funktioniert:
 
 **Finden verlorener Anfragen**
 
-Wenn Sie Anforderungen in einer komplexen Servereinstellung verlieren, z. B. mit einer Firewall und einem Dispatcher, können Sie den Proxy-Server verwenden, um herauszufinden, wo die Anforderung verloren ging. Wenn eine Firewall vorhanden ist:
+Sollten Anfragen in einer komplexen Server-Umgebung, zum Beispiel mit einer Firewall und einem Dispatcher, verloren gehen, können Sie mithilfe des Proxy-Servers herausfinden, wo die Anfrage verloren ging.  Wenn eine Firewall vorhanden ist:
 
 1. Starten Sie einen Proxy vor der Firewall.
 1. Starten Sie einen weiteren Proxy hinter der Firewall.

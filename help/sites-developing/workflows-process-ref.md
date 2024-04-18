@@ -1,33 +1,35 @@
 ---
 title: Prozessreferenz für Workflows
-description: Weitere Informationen zu Workflows in Adobe Experience Manager finden Sie in dieser Prozessreferenz .
+description: Lesen Sie diese Prozessreferenz für Workflows in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: a9de8ec6-6948-4643-89c3-62d9b1f6293a
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
 # Prozessreferenz für Workflows{#workflow-process-reference}
 
-AEM bietet mehrere Prozessschritte, die zum Erstellen von Workflow-Modellen verwendet werden können. Benutzerdefinierte Prozessschritte können auch für Aufgaben hinzugefügt werden, die nicht von den integrierten Schritten abgedeckt werden (siehe [Erstellen von Workflow-Modellen](/help/sites-developing/workflows-models.md)).
+AEM bietet verschiedene Prozessschritte für die Erstellung von Workflow-Modellen. Darüber hinaus können auch benutzerdefinierte Prozessschritte für Aufgaben hinzugefügt werden, die nicht von den integrierten Schritten abgedeckt werden (siehe [Erstellen von Workflow-Modellen](/help/sites-developing/workflows-models.md)).
 
 ## Prozessmerkmale {#process-characteristics}
 
-Für jeden Prozessschritt werden die folgenden Eigenschaften beschrieben.
+Die folgenden Merkmale werden für jeden Prozessschritt beschrieben.
 
 ### Java™-Klasse oder ECMA-Pfad {#java-class-or-ecma-path}
 
-Prozessschritte werden entweder von einer Java™-Klasse oder einem ECMAScript definiert.
+Prozessschritte werden entweder durch eine Java™-Klasse oder ein ECMAScript definiert.
 
 * Für die Java™-Klassenprozesse wird der vollqualifizierte Klassenname angegeben.
-* Für die ECMAScript-Prozesse wird der Pfad zum Skript bereitgestellt.
+* Bei ECMAScript-Prozessen wird der Pfad des Skripts angegeben.
 
 ### Payload {#payload}
 
@@ -35,13 +37,13 @@ Die Payload ist die Entität, auf die die Workflow-Instanz reagiert. Die Payload
 
 Wenn beispielsweise ein Workflow auf die AEM-Seite *P* angewendet wird, durchläuft *P* bei fortlaufendem Workflow die verschiedenen Schritte. Dabei wirkt sich jeder Schritt optional in irgendeiner Weise auf *P* aus.
 
-Im häufigsten Fall ist die Payload ein JCR-Knoten im Repository (z. B. eine AEM Seite oder ein Asset). Eine JCR-Knoten-Payload wird als Zeichenfolge übergeben, die entweder aus einem JCR-Pfad oder einer JCR-Kennung besteht (UUID). Manchmal kann die Payload eine JCR-Eigenschaft (übergeben als JCR-Pfad), eine URL, ein binäres Objekt oder ein generisches Java™-Objekt sein. Einzelne Prozessschritte, die auf die Payload reagieren, erwarten in der Regel einen bestimmten Typ Payload oder verhalten sich je nach Payload-Typ anders. Der erwartete Payload-Typ (falls vorhanden) wird für jeden der unten beschriebenen Prozesse angegeben.
+Meist besteht die Payload aus einem JCR-Knoten im Repository (beispielsweise eine AEM-Seite oder ein AEM-Asset). Eine JCR-Knoten-Payload wird als Zeichenfolge übergeben, die entweder aus einem JCR-Pfad oder einer JCR-Kennung besteht (UUID). Manchmal ist die Payload eine JCR-Eigenschaft (sie wird dann als JCR-Pfad übergeben), eine URL, ein Binärobjekt oder ein generisches Java™-Objekt. Einzelne Prozessschritte, die auf die Payload reagieren, erwarten in der Regel einen bestimmten Typ Payload oder verhalten sich je nach Payload-Typ anders. Der erwartete Payload-Typ (falls vorhanden) wird für jeden der unten beschriebenen Prozesse angegeben.
 
 ### Argumente {#arguments}
 
-Einige Workflow-Prozesse akzeptieren Argumente, die der Administrator beim Einrichten des Workflow-Schritts angibt.
+Einige Workflow-Prozesse akzeptieren Argumente, die die Administratorin oder der Administrator beim Einrichten des Workflow-Schritts angibt.
 
-Argumente werden als einzelne Zeichenfolge in der **Prozess-Argumente** -Eigenschaft in der **Eigenschaften** -Bereich des Workflow-Editors. Für jeden unten beschriebenen Prozess wird das Format der Argumentzeichenfolge in einer einfachen EBNF-Grammatik beschrieben. Das folgende Beispiel zeigt, dass die Argumentzeichenfolge aus einem oder mehreren durch Komma getrennten Paaren besteht, wobei jedes Paar aus einem Namen (der eine Zeichenfolge ist) und einem Wert besteht, getrennt durch einen Doppelpunkt:
+Argumente werden als einzelne Zeichenfolge im Bereich **Eigenschaften** des Workflow-Editors in der Eigenschaft **Prozess-Argumente** angegeben. Das Format der Argumentzeichenfolge wird für jeden unten beschriebenen Prozess in einfacher EBNF-Grammatik angegeben. Im folgenden Beispiel besteht die Argumentzeichenfolge aus einem oder mehreren durch Kommas getrennten Paaren. Jedes Paar besteht aus einem Namen (einer Zeichenfolge) und einem Wert, die durch einen zweifachen Doppelpunkt getrennt werden:
 
 ```
     args := name '::' value [',' name '::' value]*
@@ -50,9 +52,9 @@ Argumente werden als einzelne Zeichenfolge in der **Prozess-Argumente** -Eigensc
 ```
 
 
-### Zeitüberschreitung {#timeout}
+### Maximale Wartezeit {#timeout}
 
-Nach diesem Timeout-Zeitraum ist der Workflow-Schritt nicht mehr funktionsfähig. Einige Workflow-Prozesse berücksichtigen den Timeout-Wert, während er für andere nicht gilt und ignoriert wird.
+Nach dieser maximalen Wartezeit funktioniert der Workflow-Schritt nicht mehr. Einige Workflow-Prozesse respektieren die maximale Wartezeit, für andere gilt sie nicht und wird daher ignoriert.
 
 ### Berechtigungen {#permissions}
 
@@ -66,27 +68,27 @@ Die Sitzung, die an den `WorkflowProcess` übergeben wird, wird durch den Diens
 
 Wenn dieser Berechtigungssatz nicht ausreichend für die `WorkflowProcess`-Implementierung ist, muss auf eine Sitzung mit den erforderlichen Berechtigungen zurückgegriffen werden.
 
-Die empfohlene Vorgehensweise ist die Verwendung eines Dienstbenutzers, der mit der erforderlichen, jedoch minimalen Untergruppe von Berechtigungen erstellt wurde.
+Hierfür wird empfohlen, eine Dienstbenutzerin oder einen Dienstbenutzer mit einer minimalen Teilmenge der erforderlichen Berechtigungen einzusetzen.
 
 >[!CAUTION]
 >
->Wenn Sie ein Upgrade von einer Version vor AEM 6.2 durchführen, müssen Sie möglicherweise Ihre Implementierung aktualisieren.
+>Wenn Sie ein Upgrade von einer früheren Version auf AEM 6.2 durchführen, müssen Sie möglicherweise auch Ihre Implementierung aktualisieren.
 >
->In früheren Versionen wurde die Admin-Sitzung an die `WorkflowProcess` -Implementierungen implementiert werden und dann vollen Zugriff auf das Repository haben können, ohne dass bestimmte ACLs definiert werden müssen.
+>In den vorherigen Versionen wurde die Adminsitzung an die `WorkflowProcess`-Implementierungen übergeben. Danach war der uneingeschränkte Zugriff auf das Repository ohne Definition der spezifischen ACLs möglich.
 >
->Die Berechtigungen werden jetzt wie oben definiert ([Berechtigungen](#permissions)). Dies ist die empfohlene Methode für die Aktualisierung Ihrer Implementierung.
+>Die Berechtigungen werden nun wie oben dargestellt definiert ([Berechtigungen](#permissions)). Dasselbe gilt für die empfohlene Methode zum Aktualisieren Ihrer Implementierung.
 >
->Eine kurzfristige Lösung ist auch für Abwärtskompatibilitätszwecke verfügbar, wenn Codeänderungen nicht möglich sind:
+>Wenn Code-Änderungen nicht praktikabel sind, steht eine kurzfristige Lösung für die Abwärtskompatibilität zur Verfügung:
 >
 >* Öffnen Sie die Web-Konsole (`/system/console/configMgr`) und suchen Sie nach dem **Adobe Granite Workflow-Konfigurationsdienst**.
 >
 >* Aktivieren Sie den **Legacymodus des Workflow-Prozesses**.
 >
->Dadurch wird das alte Verhalten der Bereitstellung einer Admin-Sitzung zum `WorkflowProcess` Implementierung implementieren und uneingeschränkten Zugriff auf das gesamte Repository gewähren.
+>Dadurch wird das bisherige Verhalten wieder aktiviert, nach dem eine Adminsitzung an die `WorkflowProcess`-Implementierung übergeben und wieder uneingeschränkter Zugriff auf das gesamte Repository eingeräumt wird.
 
-## Workflow-Kontrollprozesse {#workflow-control-processes}
+## Workflow-Steuerungsprozesse {#workflow-control-processes}
 
-Die folgenden Prozesse führen keine Aktionen für Inhalte durch. Sie dienen der Steuerung des Workflows.
+Die folgenden Prozesse wirken sich nicht auf Inhalte aus. Sie dienen der Steuerung des Workflows.
 
 ### AbsoluteTimeAutoAdvancer (automatisches Voranschreiten für absolute Uhrzeit) {#absolutetimeautoadvancer-absolute-time-auto-advancer}
 
@@ -109,11 +111,11 @@ Der `AutoAdvancer`-Prozess bringt den Workflow automatisch zum nächsten Schritt
 
 ### ProcessAssembler (Prozess-Assembler) {#processassembler-process-assembler}
 
-Die `ProcessAssembler` -Prozess führt mehrere Teilprozesse nacheinander in einem einzelnen Workflow-Schritt aus. So verwenden Sie die `ProcessAssembler`erstellen Sie einen einzelnen Schritt dieses Typs in Ihrem Workflow und legen Sie seine Argumente fest, um die Namen und Argumente der auszuführenden Teilprozesse anzugeben.
+Der `ProcessAssembler`-Prozess führt mehrere Teilprozesse nacheinander in einem einzigen Workflow-Schritt aus. Erstellen Sie für die Nutzung des `ProcessAssembler` einen einzelnen entsprechenden Schritt im Workflow und legen Sie die Argumente so fest, dass sie die Namen und Argumente der auszuführenden Teilprozesse angeben.
 
 * **Java™-Klasse**: `com.day.cq.workflow.impl.process.ProcessAssembler`
 
-* **Nutzlast**: Ein DAM-Asset, eine AEM oder keine Payload (abhängig von den Anforderungen der Teilprozesse).
+* **Payload**: DAM-Asset, AEM-Seite oder keine Payload (je nach Anforderungen der Teilprozesse).
 * **Argumente**:
 
 ```
@@ -131,9 +133,9 @@ Die `ProcessAssembler` -Prozess führt mehrere Teilprozesse nacheinander in eine
 
 Beispiel:
 
-* Extrahieren Sie die Metadaten aus dem Asset.
+* Extrahieren Sie die Metadaten des Assets.
 * Erstellen Sie drei Miniaturansichten der drei angegebenen Größen.
-* Erstellen Sie ein JPEG-Bild aus dem Asset, vorausgesetzt das Asset ist ursprünglich kein GIF oder PNG (in diesem Fall wird keine JPEG erstellt).
+* Erstellen Sie ein JPEG-Bild aus dem Asset, vorausgesetzt, das Asset ist ursprünglich weder eine GIF- noch eine PNG-Datei (in diesem Fall wird kein JPEG-Bild erstellt).
 * Legen Sie das Datum der letzten Änderung für das Asset fest.
 
 ```shell
@@ -155,7 +157,7 @@ Die folgenden Prozesse führen einfache Aufgaben durch oder dienen als Beispiel.
 
 ### Löschen Sie {#delete}
 
-Das Element am angegebenen Pfad wird gelöscht.
+Das Element unter dem angegebenen Pfad wird gelöscht.
 
 * **ECMA-Skript-Pfad**: `/libs/workflow/scripts/delete.ecma`
 
@@ -183,7 +185,7 @@ Dies ist ein Null-Prozess, der `false` für die `check()`-Methode zurückgibt.
 * **Argumente**: Keine
 * **Zeitüberschreitung**: Ignoriert
 
-### sample {#sample}
+### Beispiel {#sample}
 
 Dies ist ein Beispiel für einen ECMAScript-Prozess.
 
@@ -200,10 +202,10 @@ Sperrt die Payload des Workflows.
 * **Java™-Klasse:** `com.day.cq.workflow.impl.process.LockProcess`
 
 * **Payload:** JCR_PATH und JCR_UUID
-* **Argumente:** Keines
+* **Argumente**: Keine
 * **Zeitüberschreitung:** Ignoriert
 
-Der Schritt hat unter den folgenden Umständen keine Auswirkungen:
+Unter folgenden Bedingungen ist der Schritt nicht wirksam:
 
 * Die Payload wurde bereits gesperrt
 * Der Payload-Knoten enthält keinen untergeordneten jcr:content-Knoten
@@ -215,10 +217,10 @@ Entsperrt die Payload des Workflows.
 * **Java™-Klasse:** `com.day.cq.workflow.impl.process.UnlockProcess`
 
 * **Payload:** JCR_PATH und JCR_UUID
-* **Argumente:** Keines
+* **Argumente**: Keine
 * **Zeitüberschreitung:** Ignoriert
 
-Der Schritt hat unter den folgenden Umständen keine Auswirkungen:
+Unter folgenden Bedingungen ist der Schritt nicht wirksam:
 
 * Die Payload wurde bereits entsperrt
 * Der Payload-Knoten enthält keinen untergeordneten jcr:content-Knoten
@@ -229,7 +231,7 @@ Der folgende Prozess führt eine versionsbezogene Aufgabe aus.
 
 ### CreateVersionProcess {#createversionprocess}
 
-Erstellt eine Version der Workflow-Payload (AEM Seite oder DAM-Asset).
+Erstellt eine Version der Workflow-Payload (AEM-Seite oder DAM-Asset).
 
 * **Java™-Klasse**: `com.day.cq.wcm.workflow.process.CreateVersionProcess`
 

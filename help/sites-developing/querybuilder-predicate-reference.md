@@ -7,10 +7,12 @@ content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing,Search,Query Builder
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '2313'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -69,7 +71,7 @@ Unterstützt die Facettenextraktion. Erstellt für jeden Wert (`true` oder `fals
 #### Eigenschaften {#properties}
 
 * **boolproperty**
-Relativer Pfad zur Eigenschaft, z. B. `myFeatureEnabled` oder `jcr:content/myFeatureEnabled`.
+Relativer Pfad der Eigenschaft, z. B. `myFeatureEnabled` oder `jcr:content/myFeatureEnabled`.
 
 * **Wert**
 Wert, auf den die Eigenschaft geprüft werden soll, „`true`“ oder „`false`“.
@@ -120,11 +122,11 @@ Filtern wird nicht unterstützt.
 
 * **property**
 
-  Relativer Pfad zu einem `DATE` -Eigenschaft, beispielsweise `jcr:lastModified`.
+  Relativer Pfad zu einer `DATE`-Eigenschaft, z. B. `jcr:lastModified`.
 
 * **lowerBound**
 
-  Untere Datumsgrenze, für die die Eigenschaft geprüft werden soll, beispielsweise `2014-10-01`.
+  Untere Datumsgrenze, auf welche die Eigenschaft überprüft werden soll, z. B. `2014-10-01`
 
 * **lowerOperation**
 
@@ -132,7 +134,7 @@ Filtern wird nicht unterstützt.
 
 * **upperBound**
 
-  Obere Grenze, für die die Eigenschaft geprüft werden soll, beispielsweise `2014-10-01T12:15:00`.
+  Obere Datumsgrenze, auf welche die Eigenschaft überprüft werden soll, z. B. `2014-10-01T12:15:00`.
 
 * **upperOperation**
 
@@ -247,7 +249,7 @@ Unterstützt die Facettenextraktion. Stellt Buckets für jeden eindeutigen Sprac
 
 * **language**
 
-  ISO-Sprachcode, z. B. &quot;`de`&quot;
+  ISO-Sprach-Code, z. B. „`de`“
 
 ### mainasset {#mainasset}
 
@@ -313,7 +315,7 @@ Ermöglicht die Sortierung der Ergebnisse. Wenn nach mehreren Eigenschaften sort
 
 * **orderby**
 
-  Entweder der Name der JCR-Eigenschaft, der durch ein vorangestelltes @ angegeben wird, z. B. `@jcr:lastModified` oder `@jcr:content/jcr:title`oder einer anderen Eigenschaft in der Abfrage, z. B. `2_property`, nach dem sortiert werden soll.
+  Entweder der JCR-Eigenschaftsname, angezeigt durch ein vorangestelltes „@“, z. B. `@jcr:lastModified` bzw. `@jcr:content/jcr:title`, oder ein anderes Prädikat in der Abfrage, z. B. `2_property`, nach dem sortiert werden soll.
 
 * **sort**
 
@@ -357,7 +359,7 @@ Unterstützt die Facettenextraktion. Stellt für jeden eindeutigen Eigenschaftsw
 
 * **property**
 
-  Relativer Pfad zur Eigenschaft, z. B. `jcr:title`.
+  Relativer Pfad zur Eigenschaft, z. B. `jcr:title`.
 
 * **value**
 
@@ -445,7 +447,7 @@ Unterstützt die Facettenextraktion auf die gleiche Weise wie das Prädikat „d
 
 Stammprädikatgruppe. Unterstützt alle Eigenschaften einer Gruppe und ermöglicht das Festlegen globaler Abfrageparameter.
 
-Der Name &quot;root&quot;wird in einer Abfrage nie verwendet, er ist implizit.
+Der Name „root“ wird in Abfragen nie verwendet, er ist implizit.
 
 #### Eigenschaften {#properties-18}
 
@@ -459,7 +461,7 @@ Der Name &quot;root&quot;wird in einer Abfrage nie verwendet, er ist implizit.
 
 * **p.guessTotal**
 
-  Empfohlen: Vermeiden Sie die Berechnung der vollständigen Ergebnissumme, die kostspielig sein kann. Entweder eine Zahl, die die maximal zu zählende Summe angibt (z. B. 1000, eine Zahl, die Benutzern genügend Feedback zur groben Größe und genauen Zahlen für kleinere Ergebnisse gibt) oder &quot; `true`&quot; nur bis zu dem erforderlichen Minimum zählen. `p.offset` + `p.limit`.
+  Empfohlen: Vermeiden Sie die Berechnung des vollständigen Ergebnisses, da dies aufwendig sein kann. Besser entweder ein Maximalwert, bis zu dem gezählt werden soll (z. B. 1000, eine Zahl, die Benutzenden ausreichendes Feedback zur groben Größe und exakte Zahlen bei kleineren Ergebnissen liefert), oder „`true`“, um nur bis zum kleinsten notwendigen `p.offset` + `p.limit` zu zählen.
 
 * **p.excerpt**
 
@@ -521,7 +523,7 @@ Unterstützt die Facettenextraktion. Stellt Buckets für jedes einzigartige Tag 
 
 * **tag**
 
-  Tag-Titelpfad, der nach z. B. &quot;Asset-Eigenschaften: Ausrichtung/Querformat&quot;sucht.
+  Tag-Titelpfad, nach dem gesucht werden soll, z. B. „Asset-Eigenschaften: Ausrichtung/Querformat“.
 
 * **N_value**
 
@@ -541,7 +543,7 @@ Unterstützt die Facettenextraktion. Stellt Buckets für jedes einzigartige Tag 
 
 * **tagid**
 
-  Tag-ID , damit Sie z. B. nach &quot; `properties:orientation/landscape`&quot;.
+  Tag-ID, damit Sie z. B. nach „`properties:orientation/landscape`“ suchen können.
 
 * **N_value**
 
@@ -585,4 +587,4 @@ Unterstützt die Facettenextraktion. Stellt Buckets für jeden eindeutigen Typ i
 
 * **Typ**
 
-  Knotentyp oder Mixin-Name, nach dem gesucht werden soll, beispielsweise `cq:Page`.
+  Knotentyp bzw. Mixin-Name, nach dem gesucht werden soll, z. B. `cq:Page`.

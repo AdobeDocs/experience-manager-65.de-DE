@@ -8,10 +8,12 @@ topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1418'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -59,11 +61,11 @@ Der Textkörper der Strukturvorlage ist das Formular. Wenn ein Benutzer eine Sei
 
 ### Erstellen einer Strukturvorlage {#creating-a-scaffold}
 
-Um eine Grundlage zu erstellen, navigieren Sie zum **Instrumente** Console, dann **Strukturvorlage für Standardseite** und erstellen Sie eine Seite. Eine *Strukturvorlagen-Vorlage* ist als einseitige Vorlage verfügbar.
+Um eine Strukturvorlage zu erstellen, navigieren Sie zu der **Tools**-Konsole und dann zur Option **Standardseiten-Strukturvorlage** und erstellen Sie eine Seite. Eine *Strukturvorlagen-Vorlage* ist als einseitige Vorlage verfügbar.
 
 Legen Sie in den **Seiteneigenschaften** der neuen Seite die Optionen *Titeltext*, *Beschreibung*, *Zielvorlage* und *Zielpfad* fest, wie oben beschrieben.
 
-Als nächstes müssen Sie die Struktur der Seite festlegen, die mithilfe der Strukturvorlage erstellt wird. Wechseln Sie hierzu auf der Strukturvorlagenseite in den **[Design-Modus](/help/sites-authoring/page-authoring.md#sidekick)**. Es wird ein Link angezeigt, über den Sie die Grundlage im **Dialog Editor**.
+Als nächstes müssen Sie die Struktur der Seite festlegen, die mithilfe der Strukturvorlage erstellt wird. Wechseln Sie hierzu auf der Strukturvorlagenseite in den **[Design-Modus](/help/sites-authoring/page-authoring.md#sidekick)**. Es wird ein Link angezeigt, mit dessen Hilfe Sie die Strukturvorlage im **Dialogfeldeditor** bearbeiten können.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
@@ -73,7 +75,7 @@ Die Dialogdefinition für eine Strukturvorlage funktioniert ähnlich wie bei ein
 
 * Komponenten-Dialogfelddefinitionen werden als normale Dialogfelder gerendert (wie z. B. im mittleren Bereich des Dialogfeldeditors angezeigt), während Dialogfelddefinitionen von Strukturvorlagen zwar als normale Dialogfelder im Dialogfeldeditor angezeigt werden, aber auf der Strukturvorlagen-Seite als Strukturvorlagenformular wiedergegeben werden (wie in der **Nachrichten**-Strukturvorlage oben).
 * Komponentendialogfelder enthalten nur Felder für die Werte, die zum Definieren des Inhalts einer einzelnen bestimmten Komponente erforderlich sind. Ein Dialogfeld einer Strukturvorlage muss Felder für jede Eigenschaft in jedem Absatz der zu erstellenden Seite enthalten.
-* Wenn Komponentendialogfelder vorhanden sind, ist die Komponente, die zum Rendern des angegebenen Inhalts verwendet wird, implizit und daher die `sling:resourceType` -Eigenschaft des Absatzes wird automatisch ausgefüllt, wenn der Absatz erstellt wird. Bei einer Strukturvorlage müssen alle Informationen, die sowohl den Inhalt als auch die zugewiesene Komponente für einen bestimmten Absatz definieren, vom Dialogfeld selbst bereitgestellt werden. In Dialogfeldern von Strukturvorlagen müssen diese Informationen bereitgestellt werden, indem Sie *ausgeblendete* Felder verwenden, um diese Informationen bei der Seitenerstellung zu übermitteln.
+* Bei Dialogfeldern für Komponenten ist die Komponente, die für das Rendern des angegebenen Inhalts verwendet wird, implizit. Daher wird die Eigenschaft `sling:resourceType` des Absatzes automatisch bei dessen Erstellung eingefügt. Bei einer Strukturvorlage müssen alle Informationen, die sowohl den Inhalt als auch die zugewiesene Komponente für einen bestimmten Absatz definieren, vom Dialogfeld selbst bereitgestellt werden. In Dialogfeldern von Strukturvorlagen müssen diese Informationen bereitgestellt werden, indem Sie *ausgeblendete* Felder verwenden, um diese Informationen bei der Seitenerstellung zu übermitteln.
 
 Ein Blick auf die Beispiel-Strukturvorlage **Nachrichten** im Dialog-Editor hilft zu erklären, wie dies funktioniert. Wechseln Sie in den Designmodus auf der Strukturvorlagen-Seite und klicken Sie auf den Link des Dialogfeldeditors.
 
@@ -164,4 +166,4 @@ Nach dem Entsperren können Sie die Vererbung wiederherstellen, indem Sie auf da
 
 >[!NOTE]
 >
->Wenn die Vererbung auf Seitenebene abgebrochen wird (über die Registerkarte Live Copy der Seiteneigenschaften), sind alle Komponenten bearbeitbar in **Strukturvorlage** -Modus (sie werden in einem entsperrten Status angezeigt).
+>Wenn die Vererbung auf Seitenebene (über die Registerkarte „Live Copy“ der Seiteneigenschaften) abgebrochen wird, können alle Komponenten im Modus **Strukturvorlagen** bearbeitet werden (sie werden im entsperrten Status angezeigt).

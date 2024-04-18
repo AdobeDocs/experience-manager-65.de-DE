@@ -7,10 +7,12 @@ topic-tags: integration
 content-type: reference
 exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Integration
+role: Admin
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -25,11 +27,11 @@ Adobe Campaign ist eine Reihe von Lösungen, mit denen Sie Kampagnen personalisi
 >
 >Dieses Dokument beschreibt die Integration von Adobe Campaign mit AEM 6.5, der lokalen oder von AMS gehosteten AEM-Lösung.
 >
->Einzelheiten zur Integration von Adobe Campaign in AEM as a Cloud Service, die Cloud-native AEM-Lösung, finden Sie unter [Siehe dieses Dokument.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html?lang=de)
+>Einzelheiten zur Integration von Adobe Campaign in AEM as a Cloud Service, der Cloud-nativen AEM-Lösung, [finden Sie in diesem Dokument](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html?lang=de).
 
 ## Integrieren mit Adobe Campaign Classic {#acc}
 
-Es gibt mehrere Versionen von Adobe Campaign Classic (ACC). Die Unterstützung für die Integration mit AEM hängt von der ACC-Version ab, die Sie implementiert haben, und davon, ob AEM lokal auf in Adobe Manager Services (AMS) installiert ist.
+Es gibt eine Reihe von Adobe Campaign Classic(ACC)-Versionen. Die Unterstützung für die Integration mit AEM hängt von der ACC-Version ab, die Sie implementiert haben, und davon, ob AEM lokal auf in Adobe Manager Services (AMS) installiert ist.
 
 | ACC-Version | Integration mit AEM 6.5 <br>Lokal | Integration mit AEM 6.5<br>AMS |
 |---|---|---|

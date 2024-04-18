@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '683'
-ht-degree: 71%
+ht-degree: 72%
 
 ---
 
@@ -78,7 +80,7 @@ Diese Registerkarte enthält eine Komponentenstruktur mit folgenden Attributen:
 
 * Erläutert die Kette von Komponenten und Vorlagen, die auf der Seite gerendert werden (SLY, JSP usw.). Die Struktur kann erweitert werden, sodass sie Kontext innerhalb der Hierarchie anzeigt.
 * Zeigt die Server-seitige Berechnungszeit zum Rendern der Komponente an.
-* Ermöglicht das Erweitern der Baumstruktur und Auswählen bestimmter Komponenten innerhalb der Baumstruktur. Die Auswahl bietet Zugriff auf Komponentendetails, z. B.:
+* Ermöglicht es, die Struktur zu erweitern und bestimmte Komponenten innerhalb der Struktur auszuwählen. Die Auswahl bietet Zugriff auf Komponentendetails, z. B.:
 
    * Repository-Pfad
    * Links zu den Skripten (Zugriff über CRXDE Lite)

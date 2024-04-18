@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Integration
+role: Admin
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +36,7 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
 >
 >Alle Kampagneninhalte sollten unter einer `master`-Seite des Typs `cq/personalization/components/ambitpage` erstellt werden.
 >
->Wenn Ihre geplante Kampagnenstruktur beispielsweise etwa so aussieht:
+>Nehmen wir beispielsweise an, Ihre geplante Kampagnenstruktur sieht etwa so aus:
 >
 >`/content/campaigns/teasers/en/campaign-promotion-global`
 >

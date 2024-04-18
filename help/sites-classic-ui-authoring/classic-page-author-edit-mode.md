@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '5991'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -180,11 +182,11 @@ Sie können eine Textsuchabfrage eingeben.
       * **Optionen für die erweiterte Suche**
 
          * **Querybuilder-Eigenschafts-Notation**
-Sie können eine Suchabfrage mit der Querybuilder-Eigenschafts-Notation eingeben. Sie können beispielsweise &quot;fulltext=Marketing&quot;eingeben, damit alle Seiten mit &quot;Marketing&quot;in ihrem Inhalt im Karussell angezeigt werden.
+Geben Sie mit der Querybuilder-Eigenschafts-Notation eine Suchanfrage ein. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.
 Unter [„QueryBuilder API“](/help/sites-developing/querybuilder-api.md) finden Sie eine umfassende Übersicht über Abfrageausdrücke sowie weitere Beispiele.
 
-   * **Sortierreihenfolge**
-Auswählen `jcr:title`, `jcr:created`, `cq:lastModified`oder `cq:template` aus dem Dropdown-Menü aus.
+   * **Sortieren nach**
+Wählen Sie `jcr:title`, `jcr:created`, `cq:lastModified`, oder `cq:template` aus dem Dropdown-Menü aus.
 
    * **Limit**
 Optional. Die maximale Anzahl von Elementen, die Sie im Karussell verwenden möchten.
@@ -308,7 +310,7 @@ Mithilfe der Flash-Komponente können Sie einen Flash-Film laden. Sie können ei
 
    * **Fenstermodus**
 
-     Darstellung des Fensters, z. B. als undurchsichtiges, transparentes oder als eigenständiges (solides) Fenster.
+     Darstellung des Fensters, zum Beispiel deckend, transparent oder als separates (einfarbiges) Fenster.
 
    * **Hintergrundfarbe**
 
@@ -1042,7 +1044,8 @@ Die Seite, die beim Erstellen eines Kontos verwendet wird.
 
       * **Inhalt erstellen**
 
-         * Inhaltspfad Der Inhaltspfad für alle Inhalte, die im Formular ausgegeben werden. Geben Sie einen Pfad ein, der mit einem Schrägstrich (`/`) endet. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
+         * Inhaltspfad
+Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Geben Sie einen Pfad ein, der mit einem Schrägstrich (`/`) endet. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
            `/forms/feedback/`
 
          * **Typ**
