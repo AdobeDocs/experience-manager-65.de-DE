@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: a328b4a8-e8dd-42a0-b73b-94e76c7692a8
-source-git-commit: 91ab786cd7e0dd75b9ad15058a125605245ec5bb
+source-git-commit: a5b48f1f4072f3e10273ec90d6f505815fe584a3
 workflow-type: tm+mt
 source-wordcount: '1119'
 ht-degree: 50%
@@ -27,7 +27,6 @@ AEM Forms 6.5 bietet nun die Möglichkeit, JavaScript-Funktionen zu definieren, 
 
 Die benutzerdefinierten Funktionen erweitern die Funktionen von Formularen, indem sie die Bearbeitung und Verarbeitung der eingegebenen Daten erleichtern, um bestimmten Anforderungen gerecht zu werden. Sie ermöglichen auch eine dynamische Änderung des Formularverhaltens basierend auf vordefinierten Kriterien.
 In Adaptive Forms können Sie benutzerdefinierte Funktionen innerhalb der [Regeleditor eines adaptiven Formulars](/help/forms/using/rule-editor.md) , um spezifische Validierungsregeln für Formularfelder zu erstellen.
-
 Im Folgenden wird die Verwendung einer benutzerdefinierten Funktion beschrieben, in der Benutzer die E-Mail-Adresse eingeben und sichergestellt werden soll, dass die eingegebene E-Mail-Adresse ein bestimmtes Format aufweist (sie enthält ein &quot;@&quot;-Symbol und einen Domänennamen). Erstellen Sie eine benutzerdefinierte Funktion als &quot;ValidateEmail&quot;, die die E-Mail-Adresse als Eingabe verwendet und &quot;true&quot; zurückgibt, wenn sie gültig ist, andernfalls &quot;false&quot;.
 
 ```javascript
