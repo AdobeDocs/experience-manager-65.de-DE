@@ -5,16 +5,16 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Experience Fragments
 role: User
-source-git-commit: fde290e30335b0785d12ea9b5ab6081b1401d230
+source-git-commit: b90b62418edfa9cef36d99de554a340fad07d978
 workflow-type: tm+mt
-source-wordcount: '1504'
-ht-degree: 98%
+source-wordcount: '1509'
+ht-degree: 96%
 
 ---
 
-# Experience Fragments {#experience-fragments}
+# Experience Fragments{#experience-fragments}
 
-Ein Experience Fragment ist eine Gruppe aus einer oder mehreren Komponenten (einschließlich Inhalt und Layout), die innerhalb von Seiten referenziert werden können. Sie können jede beliebige Komponente enthalten.
+In Adobe Experience Manager (AEM) ist ein Experience Fragment eine Gruppe aus einer oder mehreren Komponenten, einschließlich Inhalt und Layout, auf die innerhalb von Seiten verwiesen werden kann. Sie können jede beliebige Komponente enthalten.
 
 Ein Experience Fragment:
 
