@@ -10,10 +10,10 @@ exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: fde290e30335b0785d12ea9b5ab6081b1401d230
 workflow-type: tm+mt
-source-wordcount: '1781'
-ht-degree: 100%
+source-wordcount: '1795'
+ht-degree: 99%
 
 ---
 
@@ -100,6 +100,8 @@ Komponenten, die diese Konvention nicht verwenden, werden nicht berücksichtigt.
 >[!CAUTION]
 >
 >Für Experience Fragments werden ***nur*** [bearbeitbare Vorlagen unterstützt.](/help/sites-developing/page-templates-editable.md)
+>
+>Experience Fragments können nur auf Seiten verwendet werden, die auf bearbeitbaren Vorlagen basieren.
 
 Beim Entwickeln einer neuen Vorlage für Experience Fragments können Sie den Standardverfahren für eine [bearbeitbare Vorlage](/help/sites-developing/page-templates-editable.md) folgen.
 

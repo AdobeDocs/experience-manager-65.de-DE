@@ -5,10 +5,10 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Experience Fragments
 role: User
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: fde290e30335b0785d12ea9b5ab6081b1401d230
 workflow-type: tm+mt
-source-wordcount: '1489'
-ht-degree: 96%
+source-wordcount: '1504'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ Ein Experience Fragment ist eine Gruppe aus einer oder mehreren Komponenten (ein
 Ein Experience Fragment:
 
 * ist Teil eines Erlebnisses (Seite).
-* kann über mehrere Seiten hinweg verwendet werden.
+* Kann auf mehreren Seiten verwendet werden (basierend auf bearbeitbaren Vorlagen).
 * basiert auf einer (bearbeitbaren) Vorlage, die seine Struktur und Komponenten definiert.
 * Diese Vorlage wird verwendet, um die *Stammseite* des Experience Fragments zu erstellen.
 * besteht aus einer oder mehreren Komponenten mit Layout in einem Absatzsystem.
@@ -33,7 +33,7 @@ Experience Fragments können in folgenden Fällen verwendet werden:
 
 * Wenn Autorinnen oder Autoren die Teile einer Seite (die sogenannten Fragmente eines Erlebnisses) wiederverwenden möchten, müssen sie das entsprechende Fragment kopieren und an der gewünschten Stelle einfügen. Das Erstellen und Verwalten dieser zum Kopieren/Einfügen vorgesehenen Erlebnisse sind zeitaufwendige und fehleranfällige Verfahren. Mit Experience Fragments ersparen Sie sich das Kopieren/Einfügen.
 * Zur Unterstützung des Nutzungsszenarios mit Headless-Content-Management-Systemen. Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für deren Bereitstellung für Kunden. In diesem Fall würde das Erlebnis über ein System/einen Touchpoint eines Drittanbieters für den Endnutzer bzw. die Endnutzerin bereitgestellt.
-* Mit [Multi-Site-Management (MSM)](/help/sites-administering/msm.md), da ein Experience Fragment Teil einer Seite ist. Dies gilt sowohl für die einzelnen Fragmente als auch für die Ordner, in denen sie sich befinden.
+* Mit [Multi-Site-Management (MSM)](/help/sites-administering/msm.md); denn ein Experience Fragment ist Teil einer Seite. Dies gilt sowohl für die einzelnen Fragmente als auch für die Ordner, in denen sie sich befinden.
 
 >[!NOTE]
 >
@@ -230,7 +230,7 @@ Je nach Ihren Anforderungen können Sie Varianten eines Experience Fragments ers
 
      >[!NOTE]
      >
-     >Beim Erstellen einer anfänglichen Variante als Live Copy wird der Titel durch Verwendung der Live Copy-Quelle als Master-Variante übernommen.
+     >Wenn Sie eine erste Variante als Live Copy erstellen, wird der Titel durch die Verwendung der Live Copy-Quelle als primäre Variante übernommen.
 
 1. Definieren Sie die erforderlichen Eigenschaften:
 
@@ -251,6 +251,10 @@ Je nach Ihren Anforderungen können Sie Varianten eines Experience Fragments ers
 Sie können Ihr Experience Fragment jetzt beim Erstellen Ihrer Seiten verwenden:
 
 1. Öffnen Sie eine beliebige Seite, um sie zu bearbeiten.
+
+   >[!NOTE]
+   >
+   >Die Seite muss auf einer bearbeitbaren Vorlage basieren.
 
    Zum Beispiel: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
