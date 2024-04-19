@@ -2,14 +2,15 @@
 title: Übersicht über Transaktionsberichte für AEM Forms on JEE
 description: Zählung aller gesendeten, wiedergegebenen, in ein anderes Format konvertierten Formulare und mehr
 feature: Transaction Reports
-source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
+exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
+source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
 
 ---
 
-# Aktivieren und Anzeigen des Transaktionsberichts für AEM Forms on JEE {#transaction-reports-overview}
+# Aktivieren und Anzeigen von Transaktionsberichten für AEM Forms on JEE {#transaction-reports-overview}
 
 <!--Transaction reports in AEM Forms on JEE let you keep a count of all transactions taken place on your AEM Forms deployment. The objective is to provide information about product usage and helps business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
@@ -31,7 +32,7 @@ Standardmäßig ist die Transaktionsaufzeichnung deaktiviert. Führen Sie die fo
    ![sample-transaction-report-jee](assets/enable-transaction-jee.png)
 
 1. Starten Sie den Server neu.
-1. Abgesehen von den Änderungen auf dem Server müssen Sie auf Client-Seite die `adobe-livecycle-client.jar` -Datei in Ihrem Projekt speichern, wenn Sie dieselbe Datei verwenden.
+1. Abgesehen von den Änderungen auf dem Server müssen Sie auf der Client-Seite die `adobe-livecycle-client.jar` -Datei in Ihrem Projekt speichern, wenn Sie dieselbe Datei verwenden.
 
 <!--
 * You can [enable transaction recording](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) from AEM Web Console. view transaction reports on author, processing, or publish instances. View transaction reports on author or processing instances for an aggregated sum of all transactions. View transaction reports on the publish instances for a count of all transactions that take place only on that publish instance from where the report is run.
@@ -74,7 +75,7 @@ For Jboss Cluster:
 ```
 
 Beispiel eines Beispiel-Transaktionsdatensatzes:
-`[2024-02-28 06:11:27] [INFO] TransactionRecord{service=‘GeneratePDFService’, operation=‘HtmlFileToPDF’, internalService=‘GeneratePDFService’, internalOperation=‘HtmlFileToPDF’, transactionOperationType=‘CONVERT’, transactionCount=1, elapsedTime=1906, transactionDate=Wed Feb 28 06:11:25 UTC 2024}`
+`[2024-02-28 06:11:27] [INFO] TransactionRecord{service='GeneratePDFService', operation='HtmlFileToPDF', internalService='GeneratePDFService', internalOperation='HtmlFileToPDF', transactionOperationType='CONVERT', transactionCount=1, elapsedTime=1906, transactionDate=Wed Feb 28 06:11:25 UTC 2024}`
 
 #### Transaktionsregister {#transaction-record-structure-jee}
 
@@ -96,8 +97,8 @@ TransactionRecord
 
 * **service**: Name des Dienstes.
 * **operation**: Vorgangsname.
-* **internalService**: Name des Aufrufs bei einem internen Aufruf, ansonsten identisch mit dem Dienstnamen.
-* **internalOperation**: Name des Aufrufs bei einem internen Aufruf, ansonsten identisch mit dem Vorgangsnamen.
+* **internalService**: Name des Aufrufs, wenn ein interner Aufruf vorhanden ist, andernfalls identisch mit dem Dienstnamen.
+* **internalOperation**: Name des Aufrufs in gibt es einen internen Aufruf, der ansonsten mit dem Vorgangsnamen übereinstimmt.
 * **transactionOperationType**: Transaktionstyp (Senden, Rendern, Konvertieren).
 * **transactionCount**: Gesamtzahl der Transaktionen.
 * **elapsedTime**: Zeit zwischen der Initiierung des Aufrufs und der eingegangenen Antwort.
@@ -125,7 +126,7 @@ TransactionRecord
 
 Die Häufigkeit der Aufzeichnung von Transaktionen wird durch die Aktualisierungsvorgänge auf dem Server für jedes Formular bestimmt, das erfolgreich gesendet, wiedergegeben oder konvertiert wurde.
 
-* In **Dashboard** Wenn die Transaktionsanzahl regelmäßig aktualisiert wird, wird standardmäßig auf 1 Minute gesetzt. Sie können die Häufigkeit aktualisieren, indem Sie die Systemeigenschaft unter `"com.adobe.idp.dsc.transaction.recordFrequency"`. Fügen Sie in AEM Forms für JEE unter JBoss® beispielsweise `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` in `JAVA_OPTS` , um die Aktualisierungshäufigkeit auf 5 Minuten festzulegen.
+* In **Dashboard** festgelegt ist, wird die Transaktionsanzahl regelmäßig aktualisiert. Der Standardwert ist 1 Minute. Sie können die Häufigkeit aktualisieren, indem Sie die Systemeigenschaft unter `"com.adobe.idp.dsc.transaction.recordFrequency"`. Fügen Sie in AEM Forms für JEE unter JBoss® beispielsweise `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` in `JAVA_OPTS` , um die Aktualisierungshäufigkeit auf 5 Minuten festzulegen.
 
 * In **Transaktionslogs**, erfolgt die Aktualisierung für jede Transaktion sofort, wenn ein Formular erfolgreich gesendet, wiedergegeben oder konvertiert wurde.
 

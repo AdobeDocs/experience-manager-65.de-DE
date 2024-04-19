@@ -7,18 +7,18 @@ geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 603edbd2-c012-4d25-99bf-c4f3dc147308
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 31%
+source-wordcount: '110'
+ht-degree: 40%
 
 ---
 
 # Überprüfen der Verwendungsrechte einer PDF-Datei {#review-the-usage-rights-of-a-pdf-file}
 
-Wenn Sie eine PDF-Datei in die Acrobat Reader DC Extensions-Webanwendung hochladen, können Sie diese Informationen einsehen, um zu sehen, ob der Reader erweitert wurde, welche Verwendungsrechte angewendet wurden und deren Ablaufdatum.
+Beim Hochladen einer PDF-Datei in die Acrobat Reader DC Extensions-Webanwendung können Sie diese Informationen anzeigen, um zu sehen, ob der Reader erweitert wurde, welche Verwendungsrechte angewendet wurden und deren Ablaufdatum.
 
-1. Melden Sie sich bei der Web-Anwendung der Acrobat Reader DC-Erweiterungen unter folgender Adresse an: `http://[localhost]:[port]/ReaderExtensions` (*[Port]* ist die Port-Nummer Ihres Anwendungsservers).
-1. Klicken Sie auf Durchsuchen , um die PDF-Datei hochzuladen, und klicken Sie dann auf Info. Die Informationen werden unter dem Dateinamen angezeigt.
+1. Melden Sie sich bei der Acrobat Reader DC Extensions-Webanwendung an unter `http://[localhost]:[port]/ReaderExtensions` , *[port]* ist die Anschlussnummer Ihres Anwendungsservers).
+1. Klicken Sie auf „Durchsuchen“, um die PDF-Datei hochzuladen, und dann auf „Info“.  Die Informationen werden unterhalb des Dateinamens angezeigt.
 
    Weitere Informationen zum Ändern der Verwendungsrechte der Datei finden Sie in der Hilfe zu Acrobat Reader DC Extensions .
