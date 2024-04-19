@@ -9,10 +9,10 @@ exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1615'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -282,7 +282,7 @@ Konfigurieren Sie das Adobe Analytics-Framework, um die Ad-hoc-Hyperlink-Überwa
 
 >[!NOTE]
 >
->Die XSS Antisamy-Konfiguration befindet sich nun in SLING unter dem Pfad **/libs/sling/xss.config.xml**. Die folgenden Regeln müssen hinzugefügt werden, damit Ad-hoc-Hyperlinks funktionieren:
+>Die XSS Antisamy-Konfiguration befindet sich jetzt in SLING unter dem Pfad **/libs/sling/xss.config.xml** und die folgenden Regeln müssen zu Ad-hoc hinzugefügt werden, damit die Verknüpfung funktioniert:
 
 #### Anker-Tag-Regelerweiterung {#anchor-tag-rule-extension}
 

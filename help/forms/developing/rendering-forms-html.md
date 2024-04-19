@@ -1,6 +1,6 @@
 ---
 title: Rendern von Formularen als HTML
-description: Verwenden Sie den Forms-Dienst, um Formulare als Antwort auf eine HTTP-Anforderung von einem Webbrowser als HTML zu rendern. Sie können die Java-API und die Web Service-API verwenden, um Formulare als HTML wiederzugeben.
+description: Verwenden Sie den Forms-Dienst, um Formulare als Antwort auf eine HTTP-Anforderung von einem Webbrowser als HTML zu rendern. Sie können die Java&trade-, API- und Web Service-API verwenden, um Formulare als HTML zu rendern.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -9,10 +9,10 @@ topic-tags: operations
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4104'
-ht-degree: 99%
+source-wordcount: '4099'
+ht-degree: 96%
 
 ---
 
@@ -64,17 +64,17 @@ Sie müssen sich explizit mit den Methoden `xfa.host.pageUp` und `xfa.host.pageD
 >
 >Wenn Sie das Aussehen der Schaltfläche für die digitale HTML-Signatur in einem HTML-Formular anpassen möchten, müssen Sie die folgenden Eigenschaften in der Datei fscdigsig.css (innerhalb der Datei adobe-forms-ds.ear > adobe-forms-ds.war) ändern:
 
-**.fsc-ds-ssb**: Dieses Stylesheet gilt für Felder mit Leerzeichen.
+**`.fsc-ds-ssb`**: Dieses Stylesheet kann angewendet werden, wenn ein leeres Zeichenfeld vorhanden ist.
 
-**.fsc-ds-ssv**: Dieses Stylesheet gilt für ein gültiges Zeichenfeld.
+**`.fsc-ds-ssv`**: Dieses Stylesheet kann angewendet werden, wenn ein Feld für ein gültiges Zeichen vorhanden ist.
 
-**.fsc-ds-ssc**: Dieses Stylesheet gilt für ein gültiges Zeichenfeld, in dem die Daten geändert wurden.
+**`.fsc-ds-ssc`**: Dieses Stylesheet ist verfügbar, wenn ein gültiges Zeichenfeld vorhanden ist, sich die Daten jedoch geändert haben.
 
-**.fsc-ds-ssi**: Dieses Stylesheet gilt für ungültige Zeichenfelder.
+**`.fsc-ds-ssi`**: Dieses Stylesheet kann angewendet werden, wenn ein ungültiges Zeichenfeld vorhanden ist.
 
-**.fsc-ds-popup-bg**: Diese Stylesheet-Eigenschaft wird nicht verwendet.
+**`.fsc-ds-popup-bg`**: Diese Stylesheet-Eigenschaft wird nicht verwendet.
 
-**.fsc-ds-popup-btn**: Diese Stylesheet-Eigenschaft wird nicht verwendet.
+**.`fsc-ds-popup-btn`**: Diese Stylesheet-Eigenschaft wird nicht verwendet.
 
 ## Scripts ausführen {#running-scripts}
 

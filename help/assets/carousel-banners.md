@@ -10,10 +10,10 @@ feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4680'
-ht-degree: 100%
+source-wordcount: '4677'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Mit Karussellbannern können Marketing-Fachleute die Konversionsrate steigern, indem sie auf einfache Art Drehbanner mit Promo-Inhalten erstellen, die auf beliebigen Bildschirmen bereitgestellt werden können.
 
-Das Erstellen und Ändern von Inhalten auf Werbebannern kann zeitaufwendig sein und Ihre Fähigkeit beeinträchtigen, neue Inhalte schnell zu veröffentlichen oder zielgerichteter zu gestalten. Mit Karussellbannern können Sie sich schnell drehende Banner erstellen oder ändern. Sie können Interaktivität hinzufügen, z. B. Hotspots, die mit Produktdetails oder zugehörigen Ressourcen verknüpft sind, und diese auf jedem Bildschirm bereitstellen, sodass Sie neue Werbeinhalte schneller auf den Markt bringen können.
+Das Erstellen und Ändern von Inhalten auf Werbebannern kann zeitaufwendig sein und Ihre Fähigkeit beeinträchtigen, neue Inhalte schnell zu veröffentlichen oder zielgerichteter zu gestalten. Mit Karussellbannern können Sie sich schnell drehende Banner erstellen oder ändern. Sie können Interaktivität wie Hotspots hinzufügen, die Links zu Produktdetails oder zugehörigen Ressourcen enthalten, und diese auf jedem Bildschirm bereitstellen. So können Sie neue Werbeinhalte schneller auf den Markt bringen.
 
 Karussellbanner sind Banner, die durch die Bezeichnung **[!UICONTROL CAROUSELSET]** gekennzeichnet sind.
 
@@ -39,11 +39,11 @@ In diesem Beispiel hat der Benutzer auf eine Imagemap geklickt oder getippt und 
 
 ## Video zur Erstellung von Karussellbannern {#watch-how-carousel-banners-are-created}
 
-Sehen Sie sich eine exemplarische Vorgehensweise dazu an, [wie Karussellbanner erstellt werden](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (10 Minuten und 33 Sekunden). Sie erfahren außerdem, wie eine Vorschau von Karussellbannern angezeigt wird und wie diese bearbeitet und bereitgestellt werden.
+exemplarische Vorgehensweise [Erstellen von Karussellbannern](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)(10 Minuten und 33 Sekunden). Sie erfahren außerdem, wie eine Vorschau von Karussellbannern angezeigt wird und wie diese bearbeitet und bereitgestellt werden.
 
 >[!NOTE]
 >
->Benutzer, die keine Admins sind, müssen der Gruppe **[!UICONTROL dam-users]** hinzugefügt werden, damit sie Karussellbanner erstellen oder bearbeiten können. Sollten Sie Schwierigkeiten beim Erstellen oder Bearbeiten haben, wenden Sie sich an Ihre Systemadmins, um Sie der Gruppe **[!UICONTROL dam-users]** hinzuzufügen.
+>Benutzer ohne Administratorrechte müssen der **[!UICONTROL `dam-users`]** um Karussellbanner erstellen oder bearbeiten zu können. Wenn Sie Probleme beim Erstellen oder Bearbeiten haben, wenden Sie sich an Ihren Systemadministrator, der Sie zum **[!UICONTROL `dam-users`]** hinzugefügt.
 
 ## Schnellstart: Karussellbanner {#quick-start-carousel-banners}
 
@@ -72,7 +72,7 @@ So können Sie Karussellbanner schnell einsetzen:
 
    In Karussellsets navigieren Benutzer durch Bannerbilder und klicken auf Hotspots oder Imagemaps, um auf relevante Inhalte zuzugreifen.
 
-   Um ein Karussellset in Assets zu erstellen, klicken Sie auf **[!UICONTROL Erstellen]** und wählen Sie dann **[!UICONTROL Karussellsets]** aus. Fügen Sie den Folien dann Assets hinzu und klicken Sie auf **[!UICONTROL Speichern]**. Sie können das Erscheinungsbild und Verhalten des Karussells auch direkt im Editor bearbeiten.
+   Um ein Karussellset in Assets zu erstellen, klicken Sie auf **[!UICONTROL Erstellen]** und wählen Sie dann **[!UICONTROL Karussellsets]** aus. Assets zu jeder Folie hinzufügen und auswählen **[!UICONTROL Speichern]**. Sie können das Erscheinungsbild und Verhalten des Karussells auch direkt im Editor bearbeiten.
 
 1. [Fügen Sie Hotspots oder Imagemaps zu einem Bildbanner hinzu](#adding-hotspots-or-image-maps-to-an-image-banner).
 
@@ -98,7 +98,7 @@ Informationen zum Bearbeiten von Karussellsets finden Sie unter [Bearbeiten von 
 
 Ermitteln Sie zunächst die von der vorhandenen Schnellansichtsimplementierung verwendeten dynamischen Variablen, damit Sie die Hotspots oder Imagemap-Daten beim Erstellen von Karussellsets in Experience Manager Assets korrekt eingeben können.
 
-Beim Hinzufügen von Hotspots oder Imagemaps zu einem Bannerbild in Experience Manager Assets müssen Sie jedem Hotspot und jeder Imagemap eine SKU und optional zusätzliche Variablen zuweisen. Mithilfe dieser Variablen werden Hotspots oder Imagemaps später Schnellansichtsinhalten zugeordnet.
+Wenn Sie einem Bannerbild in Experience Manager Assets Hotspots oder Imagemaps hinzufügen, weisen Sie jedem Hotspot oder jeder Imagemap eine SKU und optional zusätzliche Variablen zu. Mithilfe dieser Variablen werden Hotspots oder Imagemaps später Schnellansichtsinhalten zugeordnet.
 
 >[!NOTE]
 >
@@ -134,7 +134,7 @@ Während dieses Vorgangs müssen Sie verschiedene Bereiche der Website mit versc
 
 Im einfachsten Fall ist der einzige variable Teil der Schnellansichts-URL die Produkt-SKU. In diesem Fall ist der SKU-Wert der einzige Datenteil, den Sie benötigen, um dem Bannerbild Hotspots oder Imagemaps hinzuzufügen.
 
-In komplexen Fällen hat die Schnellansichts-URL allerdings mehrere verschiedene Elemente zusätzlich zur SKU, wie Kategorie-ID, Farb-Code und Größen-Code. In diesen Fällen ist jedes Element eine separate Variable in der Hotspot- oder Imagemap-Datendefinition innerhalb der Karussellbanner-Funktion.
+In komplexen Fällen weist die Schnellansichts-URL jedoch verschiedene Elemente auf, die sich zusätzlich zur SKU unterscheiden, z. B. Kategorie-ID, Farbcode und Größencode. In diesen Fällen ist jedes Element eine separate Variable in der Hotspot- oder Imagemap-Datendefinition innerhalb der Karussellbanner-Funktion.
 
 Im Folgenden finden Sie einige Beispiele für Schnellansichts-URLs und die resultierenden Hotspot- oder Imagemap-Variablen:
 
@@ -186,7 +186,7 @@ Informationen zum Hochladen von Bildbannern finden Sie unter [Hochladen von Asse
 
 >[!NOTE]
 >
->Benutzer, die keine Administratoren sind, müssen der Gruppe **[!UICONTROL dam-users]** hinzugefügt werden, damit sie Karussellbanner erstellen oder bearbeiten können. Sollten Sie Schwierigkeiten beim Erstellen oder Bearbeiten haben, wenden Sie sich an den Systemadministrator, der Sie der Gruppe **[!UICONTROL dam-users]** hinzufügen kann.
+>Benutzer ohne Administratorrechte müssen der **[!UICONTROL `dam-users`]** um Karussellbanner erstellen oder bearbeiten zu können. Wenn Sie Probleme beim Erstellen oder Bearbeiten haben, wenden Sie sich an Ihren Systemadministrator, der Sie zum **[!UICONTROL `dam-users`]** hinzugefügt.
 
 **So erstellen Sie Karussellsets:**
 
@@ -286,7 +286,7 @@ Siehe auch [Hinzufügen von Imagemaps](/help/assets/image-maps.md).
 
    * Wählen Sie **[!UICONTROL Schnellansicht]** aus.
 
-      * Wenn Sie Experience Manager Sites- und E-Commerce-Kunde sind, wählen Sie das Produktauswahlsymbol (Lupe) aus, um die Seite „Produkt wählen“ zu öffnen. Wählen Sie das Produkt aus, das Sie verwenden möchten, und wählen Sie dann das Häkchen in der rechten oberen Ecke der Seite aus, um zum Karussellbanner-Editor zurückzukehren.
+      * Wenn Sie Experience Manager Sites- und E-Commerce-Kunde sind, wählen Sie das Produktauswahlsymbol (Lupe) aus, um die Seite „Produkt wählen“ zu öffnen. Wählen Sie das Produkt aus, das Sie verwenden möchten, und klicken Sie dann oben rechts auf der Seite auf das Häkchen, damit Sie zum Karussellbanner-Editor zurückkehren können.
       * Wenn Sie kein Experience Manager Sites- oder E-Commerce-Kunde sind, gehen Sie wie folgt vor:
 
          * Lesen Sie [Ermitteln von Hotspot-Variablen](#identifying-hotspot-and-image-map-variables), wenn Sie diese Variablen definieren müssen.
@@ -336,7 +336,7 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-author
 
 >[!NOTE]
 >
->Benutzer, die keine Administratoren sind, müssen der Gruppe **[!UICONTROL dam-users]** hinzugefügt werden, damit sie Karussellbanner erstellen oder bearbeiten können. Sollten Sie Schwierigkeiten beim Erstellen oder Bearbeiten haben, wenden Sie sich an den Systemadministrator, der Sie der Gruppe **[!UICONTROL dam-users]** hinzufügen kann.
+>Benutzer ohne Administratorrechte müssen der **[!UICONTROL `dam-users`]** um Karussellbanner erstellen oder bearbeiten zu können. Sollten Sie Schwierigkeiten beim Erstellen oder Bearbeiten haben, wenden Sie sich an den Systemadministrator, der Sie der Gruppe **[!UICONTROL dam-users]** hinzufügen kann.
 
 Sie können mehrere Bearbeitungsaufgaben für Karussellsets ausführen, z. B. die folgenden:
 
@@ -354,7 +354,7 @@ Sie können mehrere Bearbeitungsaufgaben für Karussellsets ausführen, z. B. d
    * Bewegen Sie den Mauszeiger über ein Karussellset-Asset und klicken Sie auf **[!UICONTROL Bearbeiten]** (Stiftsymbol).
    * Bewegen Sie den Mauszeiger über ein Karussellset-Asset und wählen Sie in der Symbolleiste **[!UICONTROL Auswählen]** (Häkchensymbol) und dann **[!UICONTROL Bearbeiten]** aus.
 
-   * Wählen Sie ein Karussell-Asset aus und klicken Sie dann links oben auf der Seite auf **[!UICONTROL Bearbeiten]** (Stiftsymbol).
+   * Wählen Sie ein Karussellset-Asset aus und wählen Sie dann oben links auf der Seite die Option **[!UICONTROL Bearbeiten]** (Bleistiftsymbol).
 
 1. Um das Karussellset zu bearbeiten, führen Sie einen der folgenden Schritte aus:
 

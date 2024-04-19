@@ -6,10 +6,10 @@ topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '790'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -64,7 +64,7 @@ Sie erstellen eine **adaptive Vorlage** und wenden das Design auf die Vorlage an
 
    * Ordner `css`: Enthält die .css-Dateien, in denen Sie die im Design zu verwendenden statischen Stile definieren.
 
-   **LESS-Variablendateien**: Dies sind die Dateien, in denen Sie die Variablen definieren oder überschreiben, die beim Definieren von CSS-Stilen verwendet werden.
+   **Weniger Variablendateien**: Dies sind die Dateien, in denen Sie die Variablen definieren oder überschreiben, die beim Definieren von CSS-Stilen verwendet werden.
 
    Adaptive Formulare stellen native Variablen bereit, die in den folgenden `.less` -Dateien:
 

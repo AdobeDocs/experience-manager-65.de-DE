@@ -9,10 +9,10 @@ exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Multi Site Manager
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2837'
-ht-degree: 100%
+source-wordcount: '2838'
+ht-degree: 99%
 
 ---
 
@@ -210,7 +210,7 @@ So erstellen Sie ein Gebiet als Live Copy:
 
 ## Verknüpfen von Sites mit Gebieten {#linking-sites-to-an-area}
 
-Gebiete können entweder mit Seiten oder einer Site verknüpft werden. Gebiete werden von allen Unterseiten übernommen, sofern diese Seiten nicht durch eine Zuordnung auf einer Unterseite überlagert wurden. Im Allgemeinen erfolgen Verknüpfungen jedoch auf Site-Ebene.
+Gebiete können entweder mit Seiten oder einer Site verknüpft werden. Gebiete werden von allen Unterseiten übernommen, es sei denn, diese Seiten werden durch eine Zuordnung auf einer Unterseite überlagert. Im Allgemeinen erfolgen Verknüpfungen jedoch auf Site-Ebene.
 
 Beim Verknüpfen sind nur die Aktivitäten, Erlebnisse und Angebote aus dem ausgewählten Gebiet verfügbar. Dies verhindert eine versehentliche Mischung von unabhängig verwalteten Inhalten. Wird kein weiteres Gebiet konfiguriert, gilt das primäre Gebiet der jeweiligen Marke.
 

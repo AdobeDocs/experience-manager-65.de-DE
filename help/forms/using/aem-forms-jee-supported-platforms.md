@@ -8,9 +8,9 @@ docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: d3822f4dee1b0d571aa06142f4a4f6e27874cf53
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4011'
+source-wordcount: '4010'
 ht-degree: 96%
 
 ---
@@ -722,7 +722,7 @@ Adobe unterstützt dringende oder empfohlene Patches von Drittanbietern und geht
 
 In einigen Fällen unterstützt Adobe keine Updates von Drittanbietern, die Hauptfunktionen verändern und dadurch keine vollständige Abwärtskompatibilität gewährleisten. Einzelheiten zu den unterstützten Updates finden Sie unter [Unterstützte Patch-Definitionen](https://helpx.adobe.com/de/aem-forms/aem-forms-third-party-software-patch.html) für bestimmte Herstellerprodukte und die von Adobe unterstützten Arten von Patches.
 
-Unter Umständen, die außerhalb der Kontrolle von Adobe liegen, können Patches von Drittanbietern, die Abwärtskompatibilität beanspruchen, negative Auswirkungen auf die Produkte von Adobe oder die Kundenumgebung haben. Für diese Fällen empfiehlt Adobe der Kundschaft, die Auswirkungen dringender Drittanbieter-Patches vor ihrer Anwendung in kritischen Systemen zunächst zu prüfen. Adobe wird mit Drittanbietern zusammen die entsprechenden geschäftlichen Anstrengungen unternehmen, um solche Probleme zu beheben, entweder durch die üblichen Adobe-Support-Programme oder, indem Drittanbieter das Problem in ihrem Patch beheben. Dies ist keine Garantie dafür, dass ein neu veröffentlichtes Drittanbieter-Patch, das von Adobe unterstützt wird, wie in der Dokumentation des Anbieters funktioniert oder mit AEM Forms on JEE kompatibel ist.
+Unter Umständen, die außerhalb der Kontrolle von Adobe liegen, können Patches von Drittanbietern, die Abwärtskompatibilität beanspruchen, negative Auswirkungen auf die Produkte von Adobe oder die Kundenumgebung haben. In solchen Fällen empfiehlt Adobe, dass Kunden die Auswirkungen eines dringenden Patches von einem Drittanbieter bewerten, bevor sie es auf kritische Systeme anwenden. Adobe wird mit Drittanbietern zusammen die entsprechenden geschäftlichen Anstrengungen unternehmen, um solche Probleme zu beheben, entweder durch die üblichen Adobe-Support-Programme oder, indem Drittanbieter das Problem in ihrem Patch beheben. Dies ist keine Garantie dafür, dass ein neu veröffentlichtes Drittanbieter-Patch, das von Adobe unterstützt wird, wie in der Dokumentation des Anbieters funktioniert oder mit AEM Forms on JEE kompatibel ist.
 
 Adobe behält sich das Recht vor, die von einer Version von AEM Forms on JEE unterstützten Referenzplattformen von Drittanbietern und deren unterstützte Patch-Definitionen jederzeit zu ändern.
 

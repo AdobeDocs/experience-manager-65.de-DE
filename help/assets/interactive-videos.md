@@ -10,10 +10,10 @@ feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '5926'
-ht-degree: 100%
+source-wordcount: '5927'
+ht-degree: 94%
 
 ---
 
@@ -39,7 +39,7 @@ Um ein interaktives Video mit Shopping-Funktion in Aktion zu sehen, wählen Sie 
 
 >[!NOTE]
 >
->Bei interaktiven Videos, die eine Web-Seite aufrufen, sobald ein Benutzer auf ein Miniaturbild klickt, wird die Anzeige der Popup-Web-Seite auf einigen Geräten blockiert. In diesen Fällen müssen Sie die Popup-Blocker-Einstellung auf dem Gerät ändern. Auf einem Apple iPhone 6 navigieren Sie beispielsweise zu **[!UICONTROL Einstellungen]** > **Safari** > **Popups blockieren** und schieben Sie das Steuerelement auf **[!UICONTROL Aus]**. Wenn Sie ein interaktives Video wiedergeben und auf eine Miniatur klicken, werden Sie gefragt, ob das Popup geöffnet werden soll. Wenn Sie dies akzeptieren, wird die Web-Seite geöffnet.
+>Bei interaktiven Videos, die eine Web-Seite aufrufen, sobald ein Benutzer auf ein Miniaturbild klickt, wird die Anzeige der Popup-Web-Seite auf einigen Geräten blockiert. In diesen Fällen müssen Sie die Popup-Blocker-Einstellung auf dem Gerät ändern. Auf einem Apple iPhone 6 navigieren Sie beispielsweise zu **[!UICONTROL Einstellungen]** > **Safari** > **Popups blockieren** und schieben Sie das Steuerelement auf **[!UICONTROL Aus]**. Wenn Sie jetzt ein interaktives Video wiedergeben und eine Miniaturansicht auswählen, werden Sie aufgefordert, das Popup zu öffnen. Wenn Sie dies akzeptieren, wird die Web-Seite geöffnet.
 
 ### Erstellen von interaktiven Videos {#watch-how-interactive-videos-are-created}
 
@@ -48,7 +48,7 @@ Obwohl die Videoeinführung mit Assets on Demand erstellt wurde, gelten die Prin
 
 ### Adobe-Webinar zu Kundenlösungen {#adobe-customer-success-webinar}
 
-Im Webinar „Verwenden von interaktiven Videos, Link- und YouTube-Freigabe in Experience Manager Assets“ erfahren Sie, wie mit interaktiven Videos und anderen Funktionen konversionsgesteuerte Ereignisse in Video-Marketing-Inhalte eingebunden werden.
+Im Webinar &quot;Using Interactive Video, Link Sharing, and YouTube sharing in Experience Manager Assets&quot;erfahren Sie, wie Sie interaktive Videos und andere Funktionen verwenden können, um konversionsgesteuerte Ereignisse mit Videomarketing-Inhalten zu verknüpfen.
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ Während dieses Vorgangs müssen Sie verschiedene Bereiche der Website mit versc
 
 Im einfachsten Fall ist der einzige variable Teil der Schnellansichts-URL die Produkt-SKU. In diesem Fall ist der Wert der Produkt-SKU der einzige Teil der Daten, der zum Hinzufügen von Miniaturen zu einem Zeitintervall im interaktiven Video in Experience Manager benötigt wird.
 
-In komplexen Fällen hat die Schnellansichts-URL allerdings mehrere verschiedene Elemente zusätzlich zur Produkt-SKU, wie Kategorie-ID, Farb-Code, Größen-Code usw. In solchen Fällen wird jedes dieser Elemente zu einer separaten Variablen bei der Definition der Daten für die Miniatur in Experience Manager.
+In komplexen Fällen weist die Schnellansichts-URL jedoch verschiedene Elemente auf, die sich zusätzlich zur Produkt-SKU unterscheiden, z. B. Kategorie-ID, Farbcode und Größencode. In solchen Fällen wird jedes dieser Elemente zu einer separaten Variablen bei der Definition der Daten für die Miniatur in Experience Manager.
 
 Nachfolgend finden Sie einige Beispiele für Schnellansichts-URLs und die resultierenden Miniatursvariablen:
 
@@ -228,13 +228,13 @@ Sie können jetzt ein Video und die zugehörigen Miniatur-Assets hochladen.
 
 Sie können diese Aufgabe überspringen und mit der nächsten fortfahren, wenn Sie eine der standardmäßig bereitgestellten Viewer-Vorgaben für interaktive Videos, `Shoppable_Video_dark` oder `Shoppable_Video_light`, verwenden möchten.
 
-Wenn Sie in der Authoring-Umgebung eine Miniatur auswählen, wird eine Vorschau des Schnellansichtsdialogfelds angezeigt.
+Wenn Sie in der Authoring-Umgebung auf eine Miniatur klicken, wird eine Vorschau des Schnellansichtsdialogfelds angezeigt.
 
 ![chlimage_1-21](assets/chlimage_1-127.png)
 
 Sie können optional eine eigene benutzerdefinierte Viewer-Vorgabe für interaktive Videos erstellen. Sie können unter anderem den Stil des Video-Players, die interaktiven Miniaturen und die Miniatur-Rasteransicht, die am Ende des Videos angezeigt wird, bestimmen.
 
-Eine Viewer-Vorgabe für interaktive Videos rendert das Video entsprechend sowie alle Zeitleistensegmente, die Sie hinzugefügt haben. Sie verwendet zudem eine standardmäßige Beispielschnellansicht, wenn Sie im Vorschaumodus auf eine Produktminiatur klicken. Auf diese Weise können Sie vor dem Veröffentlichen ihre Interaktivität testen.
+Eine Viewer-Vorgabe für interaktive Videos rendert das Video und alle Zeitleistensegmente, die Sie hinzugefügt haben, ordnungsgemäß. Sie verwendet zudem eine standardmäßige Beispielschnellansicht, wenn Sie im Vorschaumodus auf eine Produktminiatur klicken. Auf diese Weise können Sie vor dem Veröffentlichen ihre Interaktivität testen.
 
 Nachdem Sie die Viewer-Vorgabe gespeichert haben, wird ihr Status automatisch auf der Seite „Viewer-Vorgaben“ auf **Ein** festgelegt. Dieser Status bedeutet, dass sie in der Komponente Dynamic Media sichtbar ist und immer dann, wenn Sie die Vorschau eines Videos damit anzeigen. Denken Sie daran, die neue Viewer-Vorgabe auch manuell zu veröffentlichen.
 
@@ -252,7 +252,7 @@ Wenn Sie falsche Videos oder Bilder hochgeladen haben oder Sie nicht mehr benöt
 
 Um ein Video und seine zugehörigen Miniatur-Assets hochzuladen:
 
-1. Laden Sie das Video und die zugehörigen Miniaturansicht-Assets in den gewünschten Ordner hoch.
+1. Laden Sie das Video und die zugehörigen Miniatur-Assets in den gewünschten Ordner hoch.
 
    Siehe [Hochladen von Assets](/help/assets/manage-assets.md).
 Siehe [Hochladen von Assets mit FTP-Auftragsplanung](/help/assets/manage-assets.md).
@@ -300,7 +300,7 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
 
      Fahren Sie mit dem Wiedergeben und Anhalten des Videos an den Punkten entlang der Zeitleiste fort, an denen Sie ein Segment hinzufügen möchten, bis Sie das Ende des Videos erreicht haben.
 
-1. (Optional) Ziehen Sie die Leiste auf dem **[!UICONTROL Regler für Schnittfensterskalierung]** nach links zum Vergrößern oder nach rechts zum Verkleinern. Auf diese Art können Sie bestimmen, wie viele Details Sie in den Segmenten sehen, die Sie hinzugefügt haben.
+1. (Optional) Ziehen Sie die Leiste auf die **[!UICONTROL Regler für Zeitleistenskalierung]** Vergrößern von links nach rechts bzw. Verkleinern nach rechts, sodass Sie steuern können, wie viele Details der hinzugefügten Segmente angezeigt werden.
 
    ![chlimage_1-22](assets/chlimage_1-128.png)
 
@@ -335,7 +335,7 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
       </tbody>
     </table>
 
-   Die Zeitleiste des Videos beansprucht so viel Platz auf dem Bildschirm, wie für sie verfügbar ist. Anders ausgedrückt, wenn Sie die Größe des Browser-Fensters ändern, werden die hinzugefügten Segmente weiterhin mit ihrer korrekten Breite angezeigt.
+   Die Zeitleiste des Videos beansprucht so viel Platz auf dem Bildschirm, wie für sie verfügbar ist. Daher behalten die hinzugefügten Segmente ihre korrekte Breite bei, wenn die Größe des Browsers geändert wird.
 
    Dies wird durch die folgenden drei Screenshots veranschaulicht, die auf demselben Video basieren. Beachten Sie, dass die Breite jedes Segments abhängig von der Einstellung für die Zeitleistenskalierung geändert wird.
 
@@ -375,7 +375,7 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
 
    * So löschen Sie ein Segment:
 
-     Wählen Sie das letzte Segment in der Zeitleiste aus und wählen Sie dann in der Symbolleiste die Option **[!UICONTROL Segment löschen]**. Wenn zwei oder mehr Segmente ausgewählt werden, ist die Funktion „Segment löschen“ deaktiviert.
+     Wählen Sie das letzte Segment in der Zeitleiste aus und wählen Sie dann in der Symbolleiste die Option **[!UICONTROL Segment löschen]**. Wenn zwei oder mehr Segmente ausgewählt sind, **[!UICONTROL Segment löschen]** deaktiviert ist.
 
      Sie können nur das letzte Segment löschen. Wenn Sie beispielsweise alle Segmente auf der Zeitachse löschen möchten, müssen Sie immer das letzte auswählen und dann **[!UICONTROL Segment löschen]** wählen.
 
@@ -415,7 +415,7 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
       <td><p>Klicken Sie unter „Aktionstyp“ auf <strong>Schnellansicht</strong>.</p> <p>Wenn Sie ein Experience Manager Sites- und E-Commerce-Kunde sind, gehen Sie wie folgt vor:</p> 
        <ul> 
        <li>Beachten Sie, dass das Textfeld „SKU-Wert“ mit der Bestandseinheit (Stock Keeping Unit, SKU) des ausgewählten Produkts vorgefüllt ist. Hierbei handelt es sich um einen eindeutigen Bezeichner für die jeweiligen Produkte oder Services, die Sie anbieten. Dieser Wert wird automatisch ausgefüllt, wenn das Bild mit einem Produkt in Experience Manager Commerce verknüpft ist.</li> 
-       <li>Wenn die vorausgefüllte SKU nicht korrekt ist, wählen Sie das Produktauswahlsymbol (Lupe), um die Seite „Produkt auswählen“ zu öffnen. Wählen Sie das Produkt aus, das Sie verwenden möchten, und aktivieren Sie in der oberen rechten Ecke der Seite das Kästchen, um zum Editor für interaktive Videos zurückzukehren.</li> 
+       <li>Wenn die vorausgefüllte SKU nicht korrekt ist, wählen Sie das Produktauswahlsymbol (Lupe), um die Seite „Produkt auswählen“ zu öffnen. Wählen Sie das Produkt aus, das Sie verwenden möchten, und klicken Sie dann oben rechts auf der Seite auf das Häkchen, damit Sie zum Editor für interaktive Videos zurückkehren können.</li> 
        </ul> <p> Wenn Sie <em>kein</em> Experience Manager Sites- oder E-Commerce-Kunde sind, gehen Sie wie folgt vor:</p> 
        <ul> 
        <li>Informationen hierzu finden Sie unter <a href="/help/assets/carousel-banners.md#identifying-hotspot-and-image-map-variables">Ermitteln von Hotspot-Variablen</a>. Die Variablen müssen definiert werden.  </li> 
@@ -476,7 +476,7 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
 
    Zusammenführen zweier ausgewählter 5-Sekunden-Segmente zu einem 10-Sekunden-Segment.
 
-   * **[!UICONTROL Segment teilen]** – Sie können ein einzelnes Segment in zwei gleich lange Segmente unterteilen. Wenn dem Segment bereits Produktminiaturen zugewiesen sind, werden die Miniaturen im linken Segment zusammengefasst.
+   * **[!UICONTROL Segment teilen]** - Sie können ein einzelnes Segment in zwei gleiche Zeitsegmente unterteilen. Wenn dem Segment bereits Produktminiaturen zugewiesen sind, werden die Miniaturen im linken Segment zusammengefasst.
 
      Klicken Sie in der Zeitleiste auf ein Segment, das Sie in der Hälfte teilen möchten, und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Segment teilen]**.
 
@@ -534,7 +534,7 @@ Der kopierte Integrations-Code wird für eine responsive Umgebung festgelegt. Da
 >
 >An dieser Stelle sind Sie fertig, wenn Sie die Interaktivität mit ausschließlich per Hyperlink verbundener Web-Seiten hinzugefügt haben.
 >
->Wenn Sie jedoch Interaktivität hinzugefügt haben, um eine Schnellansicht auszulösen, dienen die Miniaturen neben dem interaktiven Video nur zu Anzeigezwecken. Sie sind noch nicht in Ihre vorhandenen Schnellansichten integriert. In einem solchen Fall müssen Sie das interaktive Video in die vorhandenen Schnellansichten auf Ihrer Website integrieren.
+>Wenn Sie jedoch Interaktivität hinzugefügt haben, um eine Schnellansicht auszulösen, dienen die Miniaturen neben dem interaktiven Video nur zu Anzeigezwecken. Sie sind noch nicht in Ihre vorhandenen Schnellansichten integriert. In solchen Fällen müssen Sie das interaktive Video in die Schnellansicht auf Ihrer Website integrieren.
 
 **Beispiel**
 
@@ -569,7 +569,7 @@ Beachten Sie, dass der Einbettungs-Code für Videos standardmäßig wir folgt la
 </script>
 ```
 
-Zur Integration müssen Sie den Video-Einbettungs-Code nur durch den Einbettungs-Code des interaktiven Videos aus Experience Manager ersetzen. Das Ergebnis sehen Sie unter folgender URL. Auf der Seite ist zwar ein interaktives Video vorhanden, es ist jedoch noch nicht mit den Schnellansichten integriert:
+Zur Integration müssen Sie den Video-Einbettungs-Code nur durch den Einbettungs-Code des interaktiven Videos aus Experience Manager ersetzen. Die Ergebnisse finden Sie unter der folgenden URL. Auf der Seite ist zwar ein interaktives Video vorhanden, es ist jedoch noch nicht mit den Schnellansichten integriert:
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=de](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=de)
 
@@ -601,7 +601,7 @@ In einem solchen Ereignis-Handler nimmt der Frontend-Code Folgendes vor:
 * Er erstellt anhand der Miniaturen eine Schnellansichts-URL.
 * Er löst den Schnellansichts-Ladevorgang vom Backend aus und rendert die Schnellansicht auf dem Bildschirm, um sie anzuzeigen.
 
-Außerdem unterstützt der interaktive Video-Viewer den Vollbildmodus. Endbenutzer lösen Schnellansichten aus, indem sie eine Miniaturansicht auswählen, ohne das Vollbild verlassen zu müssen. Um diese Funktion zu erzielen, ändern Sie den Frontend-Code so, dass das modale Dialogfeld für die Schnellansicht am Container des Viewers angehängt ist. Fügen Sie keinen Dokument-TEXT oder ein anderes Web-Seitenelement hinzu, das nicht verfügbar ist, wenn der Viewer im Vollbildmodus angezeigt wird. Der Code, der für diese Aufgabe zuständig ist, muss auf einen weiteren Viewer-Callback lauschen, der gesendet wird, nachdem der Viewer auf der Seite geladen wurde.
+Außerdem unterstützt der interaktive Video-Viewer den Vollbildmodus. Endbenutzer lösen Schnellansichten aus, indem sie eine Miniaturansicht auswählen, ohne das Vollbild verlassen zu müssen. Um diese Funktion zu erzielen, ändern Sie den Frontend-Code so, dass das modale Dialogfeld für die Schnellansicht am Container des Viewers angehängt ist. Fügen Sie keinen Dokument-TEXT oder ein anderes Web-Seitenelement hinzu, das nicht verfügbar ist, wenn der Viewer im Vollbildmodus angezeigt wird. Der Code, der diesen Auftrag ausführt, muss einen oder mehrere Viewer-Rückrufe überwachen, die nach dem Viewer gesendet werden, der auf der Seite geladen wird.
 
 Der von Experience Manager zurückgegebene Einbettungs-Code verfügt über einen einsatzbereiten Ereignis-Handler. Er ist auskommentiert, wie im folgenden hervorgehobenen Code-Fragment zu sehen ist:
 
@@ -693,7 +693,7 @@ Sie können sehen, wie diese Schritte auf die Demowebsite angewendet werden, um 
 /datafeed/$CategoryId$-$SKU$.json
 ```
 
-Diese URL kann einfach innerhalb der Handlers `quickViewActivate` rekonstruiert werden, indem die Felder `categoryId` und `sku` verwendet werden, die im durch den Code des Viewers an den Handler übergebenen Objekt `inData` verfügbar sind:
+Es ist einfach, diese URL innerhalb der `quickViewActivate` -Handler mithilfe von `categoryId` und `sku` in den verfügbaren Feldern `inData` -Objekt, das über den Code des Viewers an den Handler übergeben wird, wie im Folgenden gezeigt:
 
 ```xml
 var sku=inData.sku;
@@ -707,7 +707,7 @@ Auf der Demo-Website wird die Anzeige des Schnellansichtsdialogfelds durch einen
 loadQuickView(quickViewUrl);
 ```
 
-Zuletzt stellen Sie sicher, dass Ihr Schnellansichtsdialogfeld an das Containerelement des Viewers angehängt wird. Der Standard-Einbettungs-Code bietet Beispielschritte, um diese Funktion zu erzielen. Um einen Verweis auf das Container-Element des Viewers zu erhalten, können Sie die folgenden Codezeilen verwenden:
+Zuletzt stellen Sie sicher, dass Ihr Schnellansichtsdialogfeld an das Containerelement des Viewers angehängt wird. Der eingebettete Code bietet Beispielschritte, um diese Funktion zu erreichen. Um einen Verweis auf das Container-Element des Viewers zu erhalten, können Sie die folgenden Codezeilen verwenden:
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component

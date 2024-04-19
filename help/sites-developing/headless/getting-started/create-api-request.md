@@ -5,16 +5,16 @@ exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 95%
+source-wordcount: '548'
+ht-degree: 92%
 
 ---
 
 # Schnellstartanleitung für Headless: Abrufen und Bereitstellen von Inhaltsfragmenten {#accessing-delivering-content-fragments}
 
-Erfahren Sie, wie Sie die AEM Assets-REST-API zum Verwalten von Inhaltsfragmenten und die GraphQL-API für die Headless-Bereitstellung von Inhalten der Inhaltsfragmente verwenden.
+Erfahren Sie, wie Sie mit der AEM Assets REST-API Inhaltsfragmente verwalten und mit der GraphQL-API die Headless-Bereitstellung von Inhaltsfragmentinhalten durchführen können.
 
 ## Was sind GraphQL- und Assets-REST-APIs? {#what-are-the-apis}
 
@@ -28,7 +28,7 @@ Der Rest dieses Handbuchs konzentriert sich auf den GraphQL-Zugriff und die Bere
 
 ## Bereitstellen eines Inhaltsfragments mit GraphQL {#how-to-deliver-a-content-fragment}
 
-Informationsarchitektinnen und -architekten müssen Abfragen für ihre Kanalendpunkte entwerfen, um Inhalte bereitzustellen. Diese Abfragen dürfen pro Endpunkt und Modell nur einmal berücksichtigt werden. Für die Zwecke dieses Erste-Schritte-Handbuchs dürfen Sie nur einen erstellen.
+Informationsarchitektinnen und -architekten müssen Abfragen für ihre Kanalendpunkte entwerfen, um Inhalte bereitzustellen. Berücksichtigen Sie diese Abfragen nur einmal pro Endpunkt und Modell. Erstellen Sie für dieses Erste-Schritte-Handbuch nur eine.
 
 1. Melden Sie sich bei AEM an und rufen Sie die [GraphiQL-Oberfläche](/help/sites-developing/headless/graphql-api/graphiql-ide.md) auf:
    * Beispiel: `http://<host>:<port>/aem/graphiql.html`.

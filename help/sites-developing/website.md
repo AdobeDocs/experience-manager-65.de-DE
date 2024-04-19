@@ -1,6 +1,6 @@
 ---
-title: Erstellen einer Website mit vollem Funktionsumfang (JSP)
-description: In diesem Tutorial erfahren Sie, wie Sie mit Adobe Experience Manager (AEM) Websites mit vollem Funktionsumfang erstellen.
+title: Erstellen einer vollständigen Website (JSP)
+description: In diesem Tutorial erfahren Sie, wie Sie mit Adobe Experience Manager (AEM) eine Website mit vollem Funktionsumfang erstellen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -10,14 +10,14 @@ exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4920'
-ht-degree: 100%
+source-wordcount: '4919'
+ht-degree: 99%
 
 ---
 
-# Erstellen einer Website mit vollem Funktionsumfang (JSP){#create-a-fully-featured-website-jsp}
+# Erstellen einer vollständigen Website (JSP){#create-a-fully-featured-website-jsp}
 
 >[!NOTE]
 >

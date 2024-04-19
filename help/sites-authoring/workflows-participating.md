@@ -10,10 +10,10 @@ exl-id: e47270e8-bace-4d0f-a088-7269b6356315
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1521'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -173,7 +173,7 @@ Sie können auch die Zeitleiste verwenden, um einen Schritt zu delegieren und/od
 
 ### Wechseln zu einem vorherigen Teilnehmerschritt {#performing-step-back-on-a-participant-step}
 
-Wenn Sie erkennen, dass ein Schritt oder eine Reihe von Schritten wiederholt werden muss, können Sie zu einem vorherigen Schritt zurückkehren. Auf diese Weise können Sie einen früheren Schritt im Workflow zur erneuten Verarbeitung auswählen. Der Workflow kehrt zu dem von Ihnen angegebenen Schritt zurück und fährt dann dort fort.
+Wenn Sie erkennen, dass ein Schritt oder eine Reihe von Schritten wiederholt werden muss, können Sie zu einem vorherigen Schritt zurückkehren. Damit können Sie einen Schritt auswählen, der zuvor im Workflow zur erneuten Verarbeitung aufgetreten ist. Der Workflow kehrt zu dem von Ihnen angegebenen Schritt zurück und fährt dann dort fort.
 
 Bei dieser Aktion können Sie Folgendes angeben:
 

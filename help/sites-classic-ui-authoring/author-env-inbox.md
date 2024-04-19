@@ -10,10 +10,10 @@ exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 58%
+ht-degree: 55%
 
 ---
 
@@ -106,8 +106,8 @@ Um über nur über die angegebene Seite Benachrichtigungen zu erhalten, setzen S
 
 Wenn Sie sich für den Erhalt von Benachrichtigungen in Ihrem AEM-Posteingang entschieden haben, werden in Ihrem Posteingang Benachrichtigungen angezeigt. Sie können [Anzeigen von Benachrichtigungen](#viewing-your-notifications)und wählen Sie dann die erforderlichen Benachrichtigungen aus, um:
 
-* Genehmigen durch Klicken auf **Genehmigen**, woraufhin der Wert in der Spalte **Lesen** auf **true** gesetzt wird.
+* Akzeptieren durch Klicken auf **Genehmigen**: der Wert im **Lesen** Spalte ist auf **true**.
 
-* Löschen durch Klicken auf **Löschen**.
+* Beseitigen Sie sie durch Klicken auf **Löschen**.
 
 ![chlimage_1-5](assets/chlimage_1-5.jpeg)

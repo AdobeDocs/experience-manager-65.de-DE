@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: 1f5a2cf3-ef6b-45b4-8fa8-b300e492fee1
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 98%
@@ -75,7 +75,7 @@ Wenn die Validierung fehlschlägt, wird eine Ausnahme ausgelöst und die Protoko
 
 **Die Prüfergebnisse in einer Protokolldatei speichern**
 
-Der Assembler-Service gibt die Validierungsergebnisse zurück, die Sie in eine XML-Protokolldatei schreiben können. Die Menge der Details, die der Assembler-Service in die Protokolldatei schreibt, hängt von der von Ihnen festgelegten Laufzeitoption ab.
+Der Assembler-Dienst gibt die Überprüfungsergebnisse zurück, die Sie in eine XML-Protokolldatei schreiben können. Die Menge der Details, die der Assembler-Service in die Protokolldatei schreibt, hängt von der von Ihnen festgelegten Laufzeitoption ab.
 
 **Siehe auch**
 
@@ -153,7 +153,7 @@ So validieren Sie ein DDX-Dokument mithilfe der Assembler Service-API (Webservic
 
    >[!NOTE]
    >
-   >Ersetzen Sie localhost durch die IP-Adresse des Forms-Servers.
+   >Ersetzen Sie „localhost“ durch die IP-Adresse des Formular-Servers.
 
 1. Erstellen Sie einen PDF Assembler-Client.
 

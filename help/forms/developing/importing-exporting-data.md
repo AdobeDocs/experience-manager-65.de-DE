@@ -8,10 +8,10 @@ topic-tags: operations
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '2754'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -29,7 +29,7 @@ Der Form Data Integration-Service erlaubt sowohl das Importieren von Daten in ei
 Je nach PDF-Formulartyp können Formulardaten in einem der folgenden Formate vorliegen:
 
 * Eine XFDF-Datei, die eine XML-Version des Acrobat-Formulardatenformats ist.
-* Eine XDP-Datei, die eine XML-Datei mit Formularfelddefinitionen ist. Sie kann auch Formularfelddaten und eine eingebettete PDF-Datei enthalten. Eine von Designer generierte XDP-Datei kann nur verwendet werden, wenn in ihr ein Base-64-kodiertes PDF-Dokument eingebettet ist.
+* Eine XDP-Datei, die eine XML-Datei ist, welche Formularfelddefinitionen enthält.  Sie kann auch Formularfelddaten und eine eingebettete PDF-Datei enthalten.  Eine von Designer generierte XDP-Datei kann nur verwendet werden, wenn in ihr ein Base-64-kodiertes PDF-Dokument eingebettet ist.
 
 Sie können diese Aufgaben mit dem Form Data Integration-Service erledigen:
 
@@ -48,7 +48,7 @@ Um Daten in ein Formular zu importieren, das in Designer erstellt wurde, müssen
 
 ![ie_ie_loanformdata](assets/ie_ie_loanformdata.png)
 
-Um Datenwerte in dieses Formular zu importieren, müssen Sie über eine gültige XDP XML-Datenquelle verfügen, die dem Formular entspricht. Sie können keine beliebige XML-Datenquelle verwenden, um Daten mithilfe des Form Data Integration-Services in ein Formular zu importieren. Der Unterschied zwischen einer beliebigen XML-Datenquelle und einer XDP-XML-Datenquelle besteht darin, dass eine XDP-Datenquelle der XML Forms Architecture (XFA) entspricht. Die folgende XML-Datei stellt eine XDP-XML-Datenquelle dar, die dem Beispielformular für einen Hypothekenantrag entspricht.
+Um Datenwerte in dieses Formular zu importieren, müssen Sie über eine gültige XDP-XML-Datenquelle verfügen, die dem Formular entspricht. Sie können keine beliebige XML-Datenquelle verwenden, um Daten mithilfe des Form Data Integration-Services in ein Formular zu importieren. Der Unterschied zwischen einer beliebigen XML-Datenquelle und einer XDP-XML-Datenquelle besteht darin, dass eine XDP-Datenquelle der XML Forms Architecture (XFA) entspricht. Die folgende XML-Datei stellt eine XDP-XML-Datenquelle dar, die dem Beispielformular für einen Hypothekenantrag entspricht.
 
 ```xml
  <?xml version="1.0" encoding="UTF-8" ?>
@@ -120,7 +120,7 @@ Um Daten in ein PDF-Formular zu importieren, müssen Sie entweder auf ein in Des
 
 **Referenzieren einer XML-Datenquelle**
 
-Um Formulardaten zu importieren, müssen Sie auf eine gültige Datenquelle verweisen. Um Daten in ein in Designer erstelltes XFA-XML-Formular zu importieren, müssen Sie eine XDP-XML-Datenquelle verwenden. Wenn Sie auf ein Acrobat-Formular verweisen, müssen Sie eine XFDF-Datenquelle verwenden. Sie müssen für jedes Feld, in das Sie Daten importieren möchten, einen Wert angeben. Wenn ein Element in der XML-Datenquelle keinem Feld im Formular entspricht, wird das Element ignoriert.
+Um Formulardaten zu importieren, müssen Sie auf eine gültige Datenquelle verweisen. Um Daten in ein in Designer erstelltes XFA-XML-Formular zu importieren, müssen Sie eine XDP-XML-Datenquelle verwenden. Wenn Sie auf ein Acrobat-Formular verweisen, müssen Sie eine XFDF-Datenquelle verwenden. Sie müssen für jedes Feld, in das Sie Daten importieren möchten, einen Wert angeben. Falls ein Element in der XML-Datenquelle keinem Feld im Formular entspricht, wird das Element ignoriert.
 
 **Importieren der Daten in das PDF-Formular**
 
@@ -174,7 +174,7 @@ Importieren von Formulardaten mit der Form Data Integration-API (Java):
    * Das `com.adobe.idp.Document`-Objekt, in dem das PDF-Formular gespeichert wird.
    * Das `com.adobe.idp.Document`-Objekt, in dem Formulardaten gespeichert werden.
 
-   Die `importData` -Methode gibt eine `com.adobe.idp.Document` -Objekt, das ein PDF-Formular speichert, das die Daten in der XML-Datenquelle enthält.
+   Die Methode `importData` gibt ein `com.adobe.idp.Document`-Objekt zurück, in dem ein PDF-Formular gespeichert ist, das die Daten aus der XML-Datenquelle enthält.
 
 1. Speichern Sie das Formular als PDF-Datei.
 
@@ -239,7 +239,7 @@ Importieren von Formulardaten mithilfe der Form Data Integration-API (Web-Servic
    * Das `BLOB`-Objekt, in dem das PDF-Formular gespeichert wird.
    * Das `BLOB`-Objekt, in dem Formulardaten gespeichert werden.
 
-   Die `importData` -Methode gibt eine `BLOB` -Objekt, das ein PDF-Formular speichert, das die Daten in der XML-Datenquelle enthält.
+   Die Methode `importData` gibt ein `BLOB`-Objekt zurück, in dem ein PDF-Formular gespeichert ist, das die Daten aus der XML-Datenquelle enthält.
 
 1. Speichern Sie das Formular als PDF-Datei.
 
@@ -390,8 +390,8 @@ Exportieren von Formulardaten mithilfe der Form Data Integration-API (Web-Servic
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Speicherort der XML-Datei darstellt.
    * Erstellen Sie ein Byte-Array, in dem der Dateninhalt des `BLOB`-Objekt gespeichert wird, das von der `exportData`-Methode zurückgegeben wird. Füllen Sie das Byte-Array, indem Sie den Wert aus dem `MTOM`-Feld des `BLOB`-Objekts abrufen.
-   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor verwenden und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie die Inhalte des Byte-Arrays in eine XML-Datei, indem Sie die `Write`-Methode des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
+   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine XML-Datei, indem Sie die `System.IO.BinaryWriter` -Objekt `Write` -Methode verwenden und das Byte-Array übergeben.
 
 **Siehe auch**
 

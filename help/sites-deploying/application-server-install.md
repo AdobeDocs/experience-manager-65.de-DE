@@ -9,10 +9,10 @@ exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 98%
+source-wordcount: '1166'
+ht-degree: 91%
 
 ---
 
@@ -178,7 +178,7 @@ Hierbei wird ein einfaches Server-Layout mit nur einem Administrator-Server verw
    * Entfernen Sie die Kommentarzeichen für den anfänglichen Parameter „sling.home“ und legen Sie diesen Pfad nach Bedarf fest (siehe „Allgemeine Beschreibung“).
    * Packen Sie die Datei „web.xml“ erneut.
 
-* AEM-WAR-Datei als Anwendung bereitstellen (für die anderen Einstellungen die Standardeinstellungen verwenden)
+* Bereitstellen AEM WAR-Datei als Anwendung (für die anderen Einstellungen verwenden Sie die Standardeinstellungen)
 * Die Installation kann einige Zeit dauern …
 * Überprüfen Sie, ob die Installation wie oben unter „Allgemeine Beschreibung“ abgeschlossen wurde (beispielsweise durch Untersuchen der Datei „error.log“).
 * Sie können den Kontextstamm auf der Konfigurationsregisterkarte der Webanwendung in der WebLogic-`/console` ändern.
@@ -234,18 +234,18 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
      </multipart-config>
      ```
 
-* **Bereitstellung der AEM-Webanwendung**
+* **Bereitstellung der AEM-Web-Anwendung**
 
-   * Laden Sie die AEM-WAR-Datei herunter.
-   * Nehmen Sie bei Bedarf Ihre Konfigurationen in der Datei „web.xml“ vor (siehe oben unter „Allgemeine Beschreibung“).
+   * Laden Sie AEM WAR-Datei herunter.
+   * Nehmen Sie bei Bedarf Konfigurationen in web.xml vor (siehe oben in der allgemeinen Beschreibung).
 
-      * Entpacken Sie die Datei „WEB-INF/web.xml“.
-      * Ändern Sie den Parameter „sling.run.modes“ in „publish“ (veröffentlichen).
-      * Entfernen Sie die Kommentarzeichen für den ursprünglichen Parameter „sling.home“ und legen Sie diesen Pfad nach Bedarf fest.
-      * Packen Sie die Datei „web.xml“ erneut.
+      * Entpacken Sie die Datei WEB-INF/web.xml .
+      * Ändern Sie den Parameter sling.run.modes in publish.
+      * Entfernen Sie die Auskommentierung des anfänglichen Parameters sling.home und legen Sie diesen Pfad nach Bedarf fest.
+      * Replizieren Sie die Datei web.xml .
 
-   * Benennen Sie die AEM-WAR-Datei in „ROOT.war“ um, wenn Sie sie als „root webapp“ bereitstellen möchten. Benennen Sie sie beispielsweise in „aemauthor.war“ um, wenn „aemauthor“ als Kontextstamm fungieren soll.
-   * Kopieren Sie sie in den Tomcat-Ordner „webapps“.
+   * Benennen Sie AEM WAR-Datei in ROOT.war um, wenn Sie sie als Root-Webapp bereitstellen möchten. Benennen Sie sie in aemauthor.war um, wenn Sie aemauthor als Kontextstamm verwenden möchten.
+   * Kopieren Sie es in den Ordner webapps von Tomcat.
    * Warten Sie, bis AEM installiert ist.
 
 ## Fehlerbehebung {#troubleshooting}

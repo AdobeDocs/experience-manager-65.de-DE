@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: 096fd2ac-616f-484a-b093-9d98b2f87093
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '2065'
 ht-degree: 99%
@@ -142,7 +142,7 @@ So ermitteln Sie mithilfe der Assembler-Service-API (Java), ob ein PDF-Dokument 
    * Erstellen Sie ein `java.util.Map`-Objekt, das mithilfe eines `HashMap`-Konstruktors zum Speichern des Eingabe-PDF-Dokuments verwendet wird.
    * Fügen Sie dem `java.util.Map`-Objekt durch Aufrufen seiner `put`-Methode und Übergeben der folgenden Argumente einen Eintrag hinzu:
 
-      * Eine Zeichenfolge, die den Speichernamen repräsentiert. Dieser Wert muss mit dem Wert des im DDX-Dokument angegebenen Quellelements übereinstimmen. Beispielsweise lautet der Wert des Quellelements im DDX-Dokument, das in diesem Abschnitt eingeführt wird, Loan.pdf.
+      * Eine Zeichenfolge, die den Speichernamen repräsentiert. Dieser Wert muss mit dem Wert des im DDX-Dokument angegebenen Quellelements übereinstimmen. Beispielsweise lautet der Wert des Quellelements im DDX-Dokument, das in diesem Abschnitt eingeführt wird, „Loan.pdf“.
       * Ein `com.adobe.idp.Document`-Objekt, das das PDF-Eingabedokument enthält.
 
 1. Legen Sie Laufzeitoptionen fest.
@@ -243,7 +243,7 @@ Stellen Sie mithilfe der Assembler-Service-API (Webservice) fest, ob ein PDF-Dok
 
    * Greifen Sie auf das Feld `documents` des `AssemblerResult`-Objekts zu, wobei es sich um ein `Map`-Objekt handelt, das die XML-Daten enthält, die angeben, ob das PDF-Eingabedokument ein PDF/A-Dokument ist.
    * Führen Sie eine Iteration über das `Map`-Objekt aus, um jedes Zieldokument zu erhalten. Anschließend ändern Sie den Wert dieses Array-Elements in `BLOB`.
-   * Extrahieren Sie die Binärdaten, die die XML-Daten darstellen, indem Sie auf das Feld `MTOM` des `BLOB`-Objekts zugreifen. Dieses Feld speichert ein Array von Bytes, das sich als XML-Datei ausgeben lässt.
+   * Extrahieren Sie die Binärdaten, die die XML-Daten darstellen, indem Sie auf das Feld `MTOM` des `BLOB`-Objekts zugreifen. Dieses Feld speichert ein Array von Bytes, in die Sie als XML-Datei schreiben können.
 
 **Siehe auch**
 

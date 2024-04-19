@@ -9,10 +9,10 @@ exl-id: cd4f3b4c-5488-4ca7-9c1e-b4c819fda8e8
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 90%
+source-wordcount: '612'
+ht-degree: 84%
 
 ---
 
@@ -50,7 +50,7 @@ Durch die Berücksichtigung dieser fünf Prinzipien lässt sich ein System erzie
 
 ### Befolgen des Robustheitsgrundsatzes {#follow-the-robustness-principle}
 
-Der Robustheitsgrundsatz besagt, dass Sie streng sein sollten, bei dem, was Sie senden, und offen bei dem, was Sie von anderen akzeptieren. Anders ausgedrückt: Wenn Sie Nachrichten an Dritte senden, sollten Sie die Spezifikationen vollständig einhalten. Wenn Sie jedoch Nachrichten von einem Drittanbieter erhalten, sollten Sie nicht konforme Nachrichten akzeptieren, solange die Bedeutung der Nachricht klar ist.
+Der Robustheitsgrundsatz besagt, dass Sie streng sein sollten, bei dem, was Sie senden, und offen bei dem, was Sie von anderen akzeptieren. Anders ausgedrückt: Wenn Sie Nachrichten an einen Drittanbieter senden, sollten Sie die Spezifikationen vollständig einhalten. Wenn Sie jedoch Nachrichten von einem Drittanbieter erhalten, sollten Sie nicht konforme Nachrichten akzeptieren, solange die Bedeutung der Nachricht klar ist.
 
 ### Implementierung von Sammlungen in eigenen Modulen {#implement-spikes-in-their-own-modules}
 

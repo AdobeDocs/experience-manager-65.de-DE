@@ -9,10 +9,10 @@ exl-id: e14a9cda-890f-46b7-9433-1b52eb91eae3
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '171'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -36,7 +36,7 @@ Das Skript kann auch einen benutzerdefinierten Pfad analysieren, der in der Befe
 
 Im Kommentar in der Datei finden Sie Angaben zur Ausführung:
 
-Analysieren Sie die Datei `access.log` von CQ. Dabei werden verschiedene Daten extrapoliert und eine Markdown-Ausgabe wird auf `stdout` erstellt.
+Analysieren von CQ `access.log` Hochladen verschiedener Informationen und Generieren einer Markdown-Ausgabe auf `stdout`.
 
 ## Nutzung {#usage}
 

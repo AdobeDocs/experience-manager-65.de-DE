@@ -10,10 +10,10 @@ exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '3442'
-ht-degree: 99%
+source-wordcount: '3441'
+ht-degree: 94%
 
 ---
 
@@ -249,7 +249,7 @@ Diese CTA-Komponente kann dazu verwendet werden, der Landingpage einen Text-Link
 Unterstützte Eigenschaften
 
 * Label mit Optionen für Fettschrift, Kursivschrift und Unterstreichen
-* Ziel-URL mit Unterstützung für Drittanbieter- und AEM-URLs
+* Target-URL, unterstützt Drittanbieter- und AEM-URL
 * Seiten-Render-Optionen („Identisches Fenster“, „Neues Fenster“ usw.)
 
 HTML-Tag, um die Click-Through-Komponente in die importierte Zip aufzunehmen. Hier verweist „href“ auf die Ziel-URL und „View Product Details“ auf Bezeichnungen und so weiter.
@@ -282,7 +282,7 @@ Unterstützte Eigenschaften
 
 * Beschneiden von Bildern, Drehen
 * Hover-Text, Beschreibung, Größe in px
-* Ziel-URL mit Unterstützung für Drittanbieter- und AEM-URLs
+* Target-URL, unterstützt Drittanbieter- und AEM-URL
 * Seiten-Render-Optionen („Identisches Fenster“, „Neues Fenster“ usw.)
 
 HTML-Tag mit in der importierten ZIP-Datei enthaltenem grafischen Link: Hier verweist „href“ auf die Ziel-URL, „img src“ ist das Render-Bild und „title“ wird als Hover-Text verwendet und so weiter.
@@ -368,11 +368,11 @@ HTML-Tag mit in der importierten Zip enthaltenem grafischen Link: Hier verweist 
 
 ### Parsys {#parsys}
 
-Das AEM-parsys ist eine Container-Komponente, die andere AEM-Komponenten enthalten kann. Es ist möglich, eine parsys-Komponente in die importierte HTML einzufügen. Dadurch können Benutzende bearbeitbare AEM-Komponenten zur Landingpage hinzufügen bzw. daraus löschen, selbst nachdem sie importiert wurde.
+Die AEM Parsys-Komponente ist eine Container-Komponente, die andere AEM Komponenten enthalten kann. Es ist möglich, der importierten HTML eine Parsys-Komponente hinzuzufügen. Dadurch können Benutzende bearbeitbare AEM-Komponenten zur Landingpage hinzufügen bzw. daraus löschen, selbst nachdem sie importiert wurde.
 
 Das Absatzsystem bietet Benutzenden die Möglichkeit, mithilfe des Sidekicks Komponenten hinzuzufügen.
 
-HTML-Markup zum Einfügen einer parsys-Komponente (`foundation/components/parsys`) in das HTML im Designpaket:
+HTML Markup zum Einfügen einer Parsys-Komponente ( `foundation/components/parsys`) in der HTML innerhalb des Designpakets:
 
 ```xml
 <div data-cq-component="parsys">
@@ -383,9 +383,9 @@ HTML-Markup zum Einfügen einer parsys-Komponente (`foundation/components/parsys
 
 Durch Integration des oben genannten Markups in den HTML-Code geschieht Folgendes:
 
-* Es wird eine AEM-parsys-Komponente (foundation/components/parsys) in die Landingpage eingefügt, die nach dem Importieren des Design-Pakets erstellt wurde.
-* Startet den Sidekick mit Standardkomponenten. Neue Komponenten können zur Landingpage hinzugefügt werden, indem Komponenten aus dem Sidekick in die parsys-Komponente gezogen werden.
-* Zwei Titelkomponenten sind ebenfalls Teil des Absatzsystems.
+* Fügt eine AEM Parsys-Komponente (foundation/components/parsys) in die Landingpage ein, die nach dem Import des Designpakets erstellt wurde.
+* Startet den Sidekick mit Standardkomponenten. Neue Komponenten können zur Einstiegsseite hinzugefügt werden, indem Komponenten aus dem Sidekick auf die Parsys-Komponente gezogen werden.
+* Zwei Titelkomponenten sind ebenfalls Teil von Parsys.
 
 ### Ziel {#target}
 
@@ -441,7 +441,7 @@ Wenn im HTML-Import keine Kodierung angegeben ist, ist die vom Design-Import-Too
 
 ### Überlagern der Vorlage {#overlaying-template}
 
-Die Vorlage „Leere Einstiegsseite“ kann überlagert werden, indem eine Vorlage erstellt wird unter: `/apps/<appName>/designimporter/templates/<templateName>`
+Die Vorlage für leere Einstiegsseiten kann überlagert werden, indem Sie eine Vorlage erstellen unter: `/apps/<appName>/designimporter/templates/<templateName>`
 
 Die Schritte zum Erstellen einer Vorlage in AEM werden [hier](/help/sites-developing/templates.md) erläutert.
 
@@ -543,7 +543,7 @@ Beim Importieren des Design-Pakets können verschiedene Fehler auftreten, die in
 
 ### Initialisierung des Sidekicks mit für die Landingpage relevanten Komponenten {#initialization-of-sidekick-with-landing-page-relevant-components}
 
-Wenn das Designpaket ein parsys-Komponenten-Markup enthält, werden nach dem Import im Sidekick für Einstiegsseiten relevante Komponenten angezeigt. Sie können neue Komponenten per Drag-and-Drop auf die parsys-Komponente in der Einstiegsseite ziehen. Sie können auch den Design-Modus aufrufen und dem Sidekick neue Komponenten hinzufügen.
+Wenn das Designpaket ein Parsys-Komponenten-Markup enthält, zeigt der Sidekick nach dem Import die für die Landingpage relevanten Komponenten an. Sie können neue Komponenten per Drag-and-Drop auf die Parsys-Komponente innerhalb Ihrer Landingpage ziehen. Sie können auch den Design-Modus aufrufen und dem Sidekick neue Komponenten hinzufügen.
 
 ### Während des Imports werden Fehlermeldungen angezeigt {#error-messages-displayed-during-import}
 

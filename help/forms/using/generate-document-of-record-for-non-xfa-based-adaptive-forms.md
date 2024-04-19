@@ -8,9 +8,9 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4257'
+source-wordcount: '4256'
 ht-degree: 97%
 
 ---
@@ -463,7 +463,7 @@ Beachten Sie die folgenden Hinweise und Einschränkungen beim Arbeiten mit einem
 
 ## Verwenden einer benutzerdefinierten XCI-Datei
 
-Mit einer XCI-Datei können Sie verschiedene Eigenschaften eines Dokuments festlegen. <!-- Forms as a Cloud Service has a master XCI file.--> Sie können eine benutzerdefinierte XCI-Datei verwenden, um eine oder mehrere Standardeigenschaften zu überschreiben, die in Ihrer vorhandenen XCI-Datei angegeben sind. Sie können beispielsweise eine Schriftart in ein Dokument einbetten oder eine getaggte Eigenschaft für alle Dokumente aktivieren. Die folgende Tabelle gibt die XCI-Optionen an:
+Mit einer XCI-Datei können Sie verschiedene Eigenschaften eines Dokuments festlegen. <!-- Forms as a Cloud Service has a master XCI file.--> Sie können eine benutzerdefinierte XCI-Datei verwenden, um eine oder mehrere Standardeigenschaften zu überschreiben, die in der vorhandenen XCI-Datei angegeben sind. Sie können beispielsweise eine Schriftart in ein Dokument einbetten oder eine getaggte Eigenschaft für alle Dokumente aktivieren. Die folgende Tabelle gibt die XCI-Optionen an:
 
 | XCI-Option | Beschreibung |
 |--- |--- |
