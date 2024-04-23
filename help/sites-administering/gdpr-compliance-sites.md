@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Compliance
 role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '823'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ Auf dem Authoring-Server gespeicherte Benutzerkonten und benutzergenerierte Inha
 
 Die für die Authentifizierung von Besuchenden der Website verwendeten Benutzerkonten und die UGC-Inhalte, die auf dem Veröffentlichungs-Server gespeichert werden, werden in der [DSGVO-Dokumentation zur Plattform](/help/managing/data-protection-and-privacy.md) erläutert.
 
-Standardmäßig speichern die Komponenten von AEM Sites keine von Besuchern auf dem Publishing-Server eingegebenen Daten. Es wird empfohlen, diese Daten zur weiteren Verarbeitung an ein Drittanbietersystem oder an Adobe Campaign zu übermitteln.
+Standardmäßig speichern die Komponenten von AEM Sites keine von Besuchenden auf dem Publishing-Server eingegebenen Daten. Es wird empfohlen, diese Daten zur weiteren Verarbeitung an ein Drittanbietersystem oder an Adobe Campaign zu übermitteln.
 
 ## Opt-in/Opt-out {#opt-in-opt-out}
 
