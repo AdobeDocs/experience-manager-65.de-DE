@@ -10,10 +10,11 @@ kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '2338'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +71,7 @@ Die CSS- und JavaScript-Dateien, die für das Rendern der Designs/Stile der Stor
 
 Markenspezifische Stile können auf AEM CIF-Kernkomponenten angewendet werden, indem das von diesen Client-Bibliotheken verwaltete CSS hinzugefügt und überschrieben wird. Kenntnisse dazu, wie Client-Bibliotheken strukturiert sind und auf der Seite eingeschlossen werden, sind von entscheidender Bedeutung.
 
-Die [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de) ist ein spezielles [Webpack](https://webpack.js.org/) -Projekt zum Verwalten aller Frontend-Assets für ein Projekt. Dadurch können Frontend-Entwickler eine beliebige Zahl von Sprachen und Technologien wie [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) und vieles mehr nutzen.
+Das [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de) ist ein dediziertes [webpack](https://webpack.js.org/)-Projekt für die Verwaltung aller Frontend-Assets eines Projekts. Dadurch können Frontend-Entwickelnde eine beliebige Zahl von Sprachen und Technologien wie [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) und vieles mehr nutzen.
 
 Das `ui.frontend`-Modul ist ebenfalls ein Maven-Modul und mit dem größeren Projekt durch Einsatz eines NPM-Moduls (dem [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator)) integriert. Während eines Builds kopiert `aem-clientlib-generator` die kompilierten CSS- und JavaScript-Dateien im `ui.apps`-Modul in eine Client-Bibliothek.
 
@@ -262,7 +263,7 @@ Es gibt mehrere Optionen zum Einschließen einer Client-seitigen Bibliothek. Seh
 
    ![Vorlage bearbeiten](../assets/style-cif-component/edit-template.png)
 
-   Dadurch wird die **Landingpage** Vorlage **Startseite** -Seite basiert auf .
+   Dadurch wird die Vorlage für die **Landingpage** geöffnet, auf der die **Startseite** basiert.
 
    >[!NOTE]
    >
@@ -281,7 +282,7 @@ Es gibt mehrere Optionen zum Einschließen einer Client-seitigen Bibliothek. Seh
    * `venia.dependencies` – Stellt beliebige Anbieterbibliotheken bereit, auf die `venia.site` angewiesen ist.
    * `venia.site` – Dies ist die Kategorie für `clientlib-site`, die das `ui.frontend`-Modul generiert.
 
-   Beachten Sie, dass andere Vorlagen die gleiche Richtlinie verwenden: **Inhaltsseite**, **Landingpage** usw. Durch die Wiederverwendung derselben Richtlinie können wir sicherstellen, dass dieselben Client-Bibliotheken auf allen Seiten enthalten sind.
+   Beachten Sie, dass andere Vorlagen die gleiche Richtlinie verwenden: **Inhaltsseite**, **Landingpage** usw. Durch die Wiederverwendung der Richtlinie können wir sicherstellen, dass auf allen Seiten dieselben Client-Bibliotheken enthalten sind.
 
    Der Vorteil einer Nutzung von Vorlagen und Seitenrichtlinien zur Verwaltung des Einschließens von Client-Bibliotheken besteht darin, dass Sie die Richtlinie je nach Vorlage ändern können. Möglicherweise verwalten Sie zwei verschiedene Marken innerhalb derselben AEM-Instanz. Jede Marke weist ihren eigenen Stil oder ihr eigenes *Design* auf, doch die Basisbibliotheken und der Code sind identisch. Ein weiteres Beispiel: Wenn Sie über eine größere Client-Bibliothek verfügen, die Sie nur auf bestimmten Seiten anzeigen möchten, können Sie eine Einzelseitenrichtlinie nur für diese Vorlage erstellen.
 

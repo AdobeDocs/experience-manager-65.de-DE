@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2b2a5de0-e7c7-4417-a217-4b929bc7dcfb
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '473'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
@@ -51,23 +54,23 @@ Unter dem **Benutzeraktivitäten** angeben, welche Aktivitäten angezeigt werden
 
 ![user-activities](assets/user-activities.png)
 
-* **Maximale Anzahl von Aktivitäten**
+* **Maximale Aktivitätsanzahl**
 
   Die Anzahl der anzuzeigenden Aktivitäten
 
-* **Stream-Ressourcenpfad**
+* **Pfad der Stream-Ressource**
 
   Leer lassen, um die Community-Site oder Community-Gruppe standardmäßig zu verwenden. Der Pfad der Stream-Ressource identifiziert die Quelle der Aktivitäten. Der Standardwert ist leer.
 
-* **Ansicht der Benutzeraktivitäten anzeigen**
+* **Anzeigen der Ansicht von Benutzeraktivitäten**
 
   Wenn diese Option aktiviert ist, enthält die Aktivitätsseite einen Tab, der Aktivitäten auf der Basis der vom aktuellen Mitglied innerhalb der Community generierten Aktivitäten filtert. Die Option Standard ist aktiviert.
 
-* **Ansicht aller Aktivitäten anzeigen**
+* **Ansicht &quot;Alle Aktivitäten&quot;anzeigen**
 
   Wenn diese Option aktiviert ist, enthält die Aktivitätsseite einen Tab, der alle in der Community generierten Aktivitäten enthält, auf die das aktuelle Mitglied Zugriff hat. Die Option Standard ist aktiviert.
 
-* **Follower-Ansicht anzeigen**
+* **Anzeige nach Ansicht**
 
   Wenn diese Option aktiviert ist, enthält die Aktivitätsseite einen Tab, der Aktivitäten nach denen filtert, denen das aktuelle Mitglied folgt. Die Option Standard ist aktiviert.
 

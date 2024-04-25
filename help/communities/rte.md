@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 821e32f4-da8d-4bbb-936a-0844b8a24cdd
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 4%
+source-wordcount: '237'
+ht-degree: 3%
 
 ---
 
@@ -58,7 +61,7 @@ So fügen Sie die Hyperlink-Optionen zur Symbolleiste hinzu:
 
 * Symbolleiste mit dem Namen `links`&quot;
    * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
-* Klicken Sie auf **[!UICONTROL Alle speichern]**
+* Auswählen **[!UICONTROL Alle speichern]**
 
 #### /libs/clientlibs/social/commons/scf/ckrte.js {#libs-clientlibs-social-commons-scf-ckrte-js}
 

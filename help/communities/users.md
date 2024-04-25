@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '1910'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -70,12 +72,12 @@ Um in der Autorenumgebung registrierte Benutzer und Benutzergruppen zu verwalten
 
 | Wenn Gruppenmitglied... | Primäre Rolle |
 |---|---|
-| Administrierende | Die Gruppe Administratoren besteht aus Systemadministratoren, die über alle Fähigkeiten eines Community-Administrators und die Fähigkeit verfügen, die Gruppe Community-Administratoren zu verwalten. |
+| Admins | Die Gruppe Administratoren besteht aus Systemadministratoren, die über alle Fähigkeiten eines Community-Administrators und die Fähigkeit verfügen, die Gruppe Community-Administratoren zu verwalten. |
 | Community-Administratoren | Die Gruppe Community-Administratoren wird automatisch Mitglied aller Community-Sites und aller auf der Site erstellten Community-Gruppen. Die Administratorgruppe ist ein erstmaliges Mitglied der Gruppe Community-Administratoren . In der Autorenumgebung können Community-Administratoren Community-Sites erstellen, Sites verwalten, Mitglieder verwalten (sie können Mitglieder aus der Community verbieten) und Inhalte moderieren. |
 | Community &lt;*Site-Name*> Sitecontentmanager | Der Community-Site-Inhaltsmanager kann herkömmliche AEM erstellen, Seiten für eine Community-Site erstellen und ändern. |
 | Ohne | Ein anonymer Site-Besucher kann nicht auf die Autorenumgebung zugreifen. |
 
-### Systemadministratoren {#system-administrators}
+### Systemadministrierende {#system-administrators}
 
 Mitglieder der Administratorgruppe sind Systemadministratoren, die die Ersteinrichtung einer AEM für die Autoren- und Veröffentlichungsumgebung durchführen können.
 
@@ -85,7 +87,7 @@ In Produktionsumgebungen sollte die standardmäßige Administratorgruppe geände
 
 Befolgen Sie unbedingt die [Sicherheitscheckliste](../../help/sites-administering/security-checklist.md).
 
-## Publishing-Umgebung {#publish-environment}
+## Veröffentlichungsumgebung {#publish-environment}
 
 ### Mitgliedschaft {#becoming-a-member}
 

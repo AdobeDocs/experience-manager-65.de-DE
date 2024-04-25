@@ -7,10 +7,11 @@ topic-tags: repo_restructuring
 feature: Upgrading
 exl-id: d555422e-dc97-4d45-9525-4299d22315e2
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 44%
+ht-degree: 45%
 
 ---
 
@@ -22,7 +23,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
 
 * [Verschiedenes](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#misc)
 
-**Vor der künftigen Aktualisierung**
+**Vor einer zukünftigen Aktualisierung**
 
 * [Echosign-Cloud-Service-Konfiguration](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#echosign-cloud-service-configuration)
 * [Recaptcha-Cloud-Service-Konfigurationen](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#recaptcha-cloud-service-configurations)
@@ -87,7 +88,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
 | **Leitfaden für die Neustrukturierung** | Das Ändern dieser Client-Bibliotheken wurde nie empfohlen oder unterstützt. Wenn Änderungen an diesen Client-Bibliotheken vorgenommen wurden, sollten sie zurückgesetzt werden, um den AEM Code zu verwenden. |
 | **Anmerkungen** | Nicht zutreffend |
 
-## Vor der künftigen Aktualisierung {#prior-to-upgrade}
+## Vor einer zukünftigen Aktualisierung {#prior-to-upgrade}
 
 ### Echosign-Cloud-Service-Konfiguration {#echosign-cloud-service-configuration}
 

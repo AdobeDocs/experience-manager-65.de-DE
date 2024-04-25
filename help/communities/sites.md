@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 05a944a3-adb1-47b4-b4a5-15bac91c995e
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -38,17 +40,17 @@ Wählen Sie zunächst `Create`.
 
 Dadurch wird der Site-Editor-Bereich geöffnet, der drei Unterbereiche enthält:
 
-### Basisinformationen {#basic-info}
+### Grundlegende Informationen {#basic-info}
 
 ![site-template-basicinfo](assets/site-template-basicinfo.png)
 
 Im Bedienfeld &quot;Grundlegende Informationen&quot;werden ein Name, eine Beschreibung und die Frage, ob die Vorlage aktiviert oder deaktiviert ist, konfiguriert:
 
-* **[!UICONTROL Name der Community-Site-Vorlage]**
+* **[!UICONTROL Community-Site-Vorlagenname]**
 
   Die Vorlagenname-ID.
 
-* **[!UICONTROL Beschreibung der Community-Site-Vorlage]**
+* **[!UICONTROL Community-Site-Vorlage]**
 
   Die Vorlagenbeschreibung.
 

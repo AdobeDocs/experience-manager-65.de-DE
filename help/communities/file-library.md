@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 10%
+source-wordcount: '741'
+ht-degree: 2%
 
 ---
 
@@ -51,7 +54,7 @@ Auswählen der platzierten `File Library` -Komponente, damit Sie auf die `Config
 
 Unter dem **Kommentare** -Registerkarte angeben, ob und wie Kommentare für hochgeladene Dateien angezeigt werden:
 
-* **Kommentare in Dateien zulassen**
+* **Kommentare zu Dateien zulassen**
 
   Wenn diese Option aktiviert ist, lassen Sie Kommentare zu hochgeladenen Dateien zu. Die Option Standard ist deaktiviert.
 
@@ -59,11 +62,11 @@ Unter dem **Kommentare** -Registerkarte angeben, ob und wie Kommentare für hoch
 
   Beschränkt die Anzahl der pro Seite angezeigten Kommentare und die angezeigte Anzahl der Antworten. Der Standardwert ist **10**.
 
-* **Max. Dateigröße**
+* **Maximale Dateigröße**
 
   Dieser Wert begrenzt die Größe der hochgeladenen Datei. Der Standardwert ist 104857600 (10 MB).
 
-* **Maximale Nachrichtenlänge**
+* **Max. Nachrichtenlänge**
 
   Maximale Zeichenanzahl, die in das Textfeld eingegeben werden kann. Der Standardwert beträgt 4096 Zeichen.
 
@@ -87,7 +90,7 @@ Unter dem **Kommentare** -Registerkarte angeben, ob und wie Kommentare für hoch
 
   Wenn die Option Tagging zulassen aktiviert ist, sind die verfügbaren Tags auf die aktivierten Namespaces beschränkt. Wenn keine Namespaces aktiviert sind, sind alle zulässig. Der Standardwert ist alle Namespaces.
 
-* **Empfehlungsgrenze**
+* **Empfehlungslimit**
 
   Wenn die Option Tagging zulassen aktiviert ist, beschränkt diese Einstellung die Anzahl der vorgeschlagenen Tags, die angezeigt werden sollen. Wenn auf -1 gesetzt, gibt es keine Begrenzung. Der Standardwert ist -1.
 
@@ -95,7 +98,7 @@ Unter dem **Kommentare** -Registerkarte angeben, ob und wie Kommentare für hoch
 
   Wenn diese Option aktiviert ist, ist die Möglichkeit, für eine Datei zu stimmen, aktiviert. Die Option Standard ist deaktiviert.
 
-* **Folgende zulassen**
+* **Folgende erlauben**
 
   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Blog-Artikel hinzu, mit der Mitglieder [benachrichtigt](/help/communities/notifications.md) von neuen Stellen. Die Option Standard ist deaktiviert.
 
@@ -107,11 +110,11 @@ Unter dem **Kommentare** -Registerkarte angeben, ob und wie Kommentare für hoch
 
   Schränken Sie die maximale Anzahl der Erwähnungen ein, die in einem Beitrag zulässig sind. Der Standardwert ist 10.
 
-* **UI-Erwähnungsmuster**
+* **Benutzeroberflächen-Erwähnungsmuster**
 
   Geben Sie die zulässige Musterzeichenfolge an, damit Sie den registrierten Benutzer in einem Beitrag mit Tags versehen (@mention). Zum Beispiel: `~{{familyName}}{{givenName}}`.
 
-* **Antworten mit Diskussionsfaden zulassen**
+* **Threaded-Antworten zulassen**
 
   Ist diese Option aktiviert, können Antworten auf gepostete Kommentare zugelassen werden. Die Option Standard ist deaktiviert.
 
@@ -119,7 +122,7 @@ Unter dem **Kommentare** -Registerkarte angeben, ob und wie Kommentare für hoch
 
 Unter dem **Benutzermoderation** -Tab konfigurieren Sie die Moderation von Kommentaren, falls Kommentare zulässig sind:
 
-* **Vor der Moderation**
+* **Vormoderation**
 
   Wenn diese Option aktiviert ist, müssen Kommentare genehmigt werden, bevor sie auf einer Veröffentlichungs-Site angezeigt werden. Die Option Standard ist deaktiviert.
 
@@ -139,7 +142,7 @@ Unter dem **Benutzermoderation** -Tab konfigurieren Sie die Moderation von Komme
 
   Ist diese Option aktiviert, können Besucher Kommentare als unangemessen kennzeichnen. Die Option Standard ist deaktiviert.
 
-* **Liste mit Kenn-zeichnungsgründen**
+* **Liste der Kennzeichnungsgründe**
 
   Wenn diese Option aktiviert ist, können Besucher aus einer Dropdown-Liste den Grund auswählen, aus dem ein Kommentar als unangemessen gekennzeichnet wird. Die Option Standard ist deaktiviert.
 

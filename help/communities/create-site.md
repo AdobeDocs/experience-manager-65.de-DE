@@ -7,10 +7,13 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1578'
-ht-degree: 3%
+source-wordcount: '1556'
+ht-degree: 1%
 
 ---
 
@@ -96,7 +99,7 @@ Aktivieren Sie alle Kontrollkästchen für [Benutzerverwaltung](/help/communitie
 
 Die Tags, die auf Community-Inhalte angewendet werden, werden durch die Auswahl AEM Namespaces gesteuert, die zuvor durch die [Tagging-Konsole](/help/sites-administering/tags.md#tagging-console) (z. B. [Tutorial-Namespace](/help/communities/setup.md#create-tutorial-tags)).
 
-Die Suche nach Namespaces ist mit der Typvorsuche einfach. Beispiel:
+Die Suche nach Namespaces ist mit der Typvorsuche einfach. Zum Beispiel:
 
 * Typ `tut`
 * Klicken Sie auf `Tutorial`
@@ -109,7 +112,7 @@ Die Suche nach Namespaces ist mit der Typvorsuche einfach. Beispiel:
 
 Damit ein Community-Mitglied (oder eine Gruppe von Mitgliedern) die Site als Community-Manager erleben kann, verwenden Sie die Typvorsuche und wählen Sie den Mitglied- oder Gruppennamen aus den Optionen in der Dropdown-Liste aus.
 
-Beispiel:
+Zum Beispiel:
 
 * Typ `q`
 * Quinn Harper auswählen
@@ -132,7 +135,7 @@ Wenn Adobe Analytics lizenziert ist und ein Analytics Cloud-Dienst und -Framewor
 
 Siehe [Analytics-Konfiguration für Communities-Funktionen](/help/communities/analytics.md).
 
-![Analyse](assets/analytics.png)
+![analytics](assets/analytics.png)
 
 #### ÜBERSETZUNG {#translation}
 
@@ -149,7 +152,7 @@ Die [Übersetzungsparameter](/help/communities/sites-console.md#translation) Geb
 
 ### Schritt 4: Erstellen der Communities-Site {#step-create-communities-site}
 
-Wählen Sie **Erstellen.**
+Auswählen **Erstellen Sie.**
 
 ![create-site](assets/create-site2.png)
 
@@ -171,7 +174,7 @@ Bei Auswahl des vierten Ellipsensymbols (Weitere Aktionen) werden die Optionen &
 
 Von links nach rechts sind sie:
 
-* **Site öffnen**
+* **Seite öffnen**
 
   Wenn Sie das Stiftsymbol auswählen, wird die Community-Site im Bearbeitungsmodus &quot;Autor&quot;geöffnet, in dem Sie Seitenkomponenten hinzufügen oder konfigurieren können.
 
@@ -179,11 +182,11 @@ Von links nach rechts sind sie:
 
   Wenn Sie das Eigenschaftensymbol auswählen, wird die Community-Site zum Ändern von Eigenschaften wie dem Titel oder zum Ändern des Designs geöffnet.
 
-* **Site veröffentlichen**
+* **Website veröffentlichen**
 
   Durch Auswahl des Weltsymbols wird die Community-Site veröffentlicht (z. B. wenn Ihr Veröffentlichungsserver auf Ihrem lokalen Computer ausgeführt wird, ist standardmäßig localhost:4503 eingestellt).
 
-* **Site exportieren**
+* **Export-Site**
 
   Durch Auswahl des Exportsymbols wird ein Paket der Community-Site erstellt, das beide in gespeichert ist. [Package Manager](/help/sites-administering/package-manager.md) und heruntergeladen. UGC ist nicht im Site-Paket enthalten.
 
@@ -262,7 +265,7 @@ Erste Schritte:
 1. Melden Sie sich in der Veröffentlichungsinstanz mit Administratorrechten an.
 1. Navigieren Sie zu [https://localhost:4503/crx/de](https://localhost:4503/crx/de).
 1. Erweitern Sie im Projektbrowser die `/etc/map.`
-1. Wählen Sie den `http`-Knoten aus:
+1. Wählen Sie die `http` node:
 
    * Auswählen **Knoten erstellen:**
 
@@ -284,7 +287,7 @@ Erste Schritte:
       * **Typ** Zeichenfolge
       * **Wert** /content/sites/engage/en.html
 
-1. Klicken Sie auf **Alle speichern.**
+1. Auswählen **Alle speichern**
 1. (Optional) Löschen Sie den Browser-Verlauf.
 1. Navigieren Sie zu https://localhost:4503/.
 

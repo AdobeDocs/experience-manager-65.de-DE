@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '684'
-ht-degree: 4%
+ht-degree: 2%
 
 ---
 
@@ -48,7 +51,7 @@ Um sicherzustellen, dass das neueste Feature Pack installiert ist, gehen Sie zu:
 
 * [Neueste Versionen](deploy-communities.md#latest-releases)
 
-## Konfigurieren Sie Analytics {#configure-analytics}
+## Analytics konfig. {#configure-analytics}
 
 Wann [Adobe Analytics ist für die Community-Site konfiguriert.](analytics.md), stehen Informationen zur Community-Aktivität zur Verfügung, die das Erlebnis der Community-Mitglieder verbessern und den Administratoren der Site Feedback geben.
 
@@ -78,7 +81,7 @@ Mitglieder der Community-Administratoren-Gruppe können Community-Sites erstelle
 
 Benutzer erstellen in *author*, dem die Rolle &quot;Community-Administrator&quot;zugewiesen wurde:
 
-* In der Autoreninstanz
+* Auf der Autoreninstanz
 
    * Beispiel: [http://localhost:4502/](http://localhost:4503/)
 

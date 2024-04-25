@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 4a49d14c-e6f0-4791-904e-8f30e47f7cde
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 28%
+ht-degree: 18%
 
 ---
 
@@ -49,25 +52,25 @@ Siehe auch interaktive [Handbuch zu Community-Komponenten](/help/communities/com
 | Community-Aktivitätenliste | [Aktivitätstrends](/help/communities/trends.md) |
 | Community-Gruppenmitgliederliste | [Community-Gruppen](/help/communities/creating-groups.md) |
 | Nachricht erstellen | [Messaging](/help/communities/configure-messaging.md) |
-| Präsentierter Inhalt | [Präsentierter Inhalt](/help/communities/featured.md) |
+| Präsentierter Inhalt | [Vorgestellte Inhalte](/help/communities/featured.md) |
 | Dateibibliothek | [Dateibibliothek](/help/communities/file-library.md) |
-| Folgen | [Soziales Diagramm](/help/communities/socialgraph.md) |
-| Folgende | [Soziales Diagramm](/help/communities/socialgraph.md) |
+| Folgen | [Sozialdiagramm](/help/communities/socialgraph.md) |
+| Folgende | [Sozialdiagramm](/help/communities/socialgraph.md) |
 | Forum | [Forum](/help/communities/forum.md) |
-| Ideen | [Ideen](/help/communities/ideation-feature.md) |
+| Ideen | [Idee](/help/communities/ideation-feature.md) |
 | Leaderboard | [Scoring und Abzeichen](/help/communities/enabling-leaderboard.md) |
-| Likes | [Likes](/help/communities/liking.md) |
+| Likes | [Gefällt mir](/help/communities/liking.md) |
 | Meldung | [Messaging](/help/communities/configure-messaging.md) |
 | Nachrichtenliste | [Messaging](/help/communities/configure-messaging.md) |
 | Fragen und Antworten | [Fragen und Antworten](/help/communities/working-with-qna.md) |
 | Schnellsuche | [Suchen](/help/communities/search.md) |
 | Bewertung | [Bewertung](/help/communities/rating.md) |
 | Verwandte Fragen | [Fragen und Antworten](/help/communities/working-with-qna.md) |
-| Bewertungen | [Bewertungen](/help/communities/reviews.md) |
-| Bewertungszusammenfassung (Anzeige) | [Bewertungen](/help/communities/reviews.md) |
+| Bewertungen | [Überprüfungen](/help/communities/reviews.md) |
+| Bewertungszusammenfassung (Anzeige) | [Überprüfungen](/help/communities/reviews.md) |
 | Suchen | [Suchen](/help/communities/search.md) |
 | Suchergebnis | [Suchen](/help/communities/search.md) |
-| Social Tag-Cloud | [Social Tag-Cloud](/help/communities/tagcloud.md) |
+| Social Tag-Cloud | [Social Tag Cloud](/help/communities/tagcloud.md) |
 | Abstimmung | [Abstimmung](/help/communities/voting.md) |
 
 >[!NOTE]

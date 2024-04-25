@@ -9,10 +9,12 @@ docset: aem65
 pagetitle: Community Groups Console
 role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1688'
-ht-degree: 3%
+source-wordcount: '1698'
+ht-degree: 1%
 
 ---
 
@@ -72,7 +74,7 @@ So greifen Sie auf die Gruppenkonsole zu:
 
 ![Mehrsprachige Community-Gruppen](assets/multi-lingual-group.png)
 
-* **Community-Gruppenname**
+* **Community-Gruppentitel**
 
   Ein Anzeigetitel für die Gruppe.
 Der Titel wird auf der veröffentlichten Site für die Gruppe angezeigt.
@@ -81,7 +83,7 @@ Der Titel wird auf der veröffentlichten Site für die Gruppe angezeigt.
 
   Eine Beschreibung der Gruppe.
 
-* **Community-Gruppen-Stammverzeichnis**
+* **Community-Gruppenstamm**
 
   Der Stammpfad zur Gruppe.
 Der Standardstamm ist die übergeordnete Site, der Stammordner kann jedoch an einen beliebigen Speicherort auf der Website verschoben werden. Es wird nicht empfohlen, sie zu ändern.
@@ -140,7 +142,7 @@ Beachten Sie beim Erstellen oder Auswählen eines Bildes Folgendes:
 
 ![Community-Gruppenmitglieder auswählen](assets/group-admin.png)
 
-**Community-Gruppenmoderatoren**
+**Community-Gruppen-Moderatoren**
 
 Standardmäßig wird die Liste der Moderatoren der übergeordneten Community-Site übernommen.
 
@@ -172,7 +174,7 @@ Die Mitgliedschaftseinstellung ermöglicht die Auswahl einer der drei Möglichke
 
   Wenn diese Option ausgewählt ist, ist die Community-Gruppe eine geheime Gruppe. Die Mitglieder der Gemeinschaft müssen ausdrücklich eingeladen werden. Eingeladene Mitglieder werden in das Suchfeld eingegeben. Mitglieder können später mithilfe der [Mitglieder und Gruppenkonsolen](/help/communities/members.md) die Autorenumgebung. Die Option Standard ist nicht ausgewählt.
 
-**MINIATUR**
+**THUMBNAIL**
 
 ![community-group-thumbnail](assets/community-group-thumbnail.png)
 

@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: ac54f06e-1545-44bb-9f8f-970f161ebb72
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1112'
-ht-degree: 4%
+source-wordcount: '1111'
+ht-degree: 3%
 
 ---
 
@@ -75,7 +77,7 @@ So erstellen Sie eine Übersetzungsintegration, die einen Connector für Überse
 * Wählen Sie **[!UICONTROL Tools]**
 * Auswählen **[!UICONTROL Aktivitäten]**
 * Auswählen **[!UICONTROL Cloud]**
-* Wählen Sie **[!UICONTROL Cloud Services]** aus
+* Auswählen **[!UICONTROL Cloud Service]**
 * Nach unten scrollen zu **[!UICONTROL Übersetzungsintegration]**
 
   ![Translation-Integration](assets/translation-integration.png)
@@ -123,7 +125,7 @@ Wählen Sie eine Kategorie aus, die den zu übersetzenden Inhalt beschreibt. Der
 (Optional) Durch Auswahl eines Gebietsschemas zum Speichern von benutzergenerierten Inhalten werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Standardmäßig wählen Sie das Gebietsschema für die [Basissprache](sites-console.md#translation) für die Website. Auswahl `No Common Store` Deaktiviert die globale Übersetzung. Standardmäßig ist die globale Übersetzung deaktiviert.
 
 * **[!UICONTROL Assets]** tab: kann als Standard beibehalten werden.
-* Wählen Sie **[!UICONTROL OK]** aus
+* Wählen Sie **[!UICONTROL OK]** aus.
 
 #### Aktivierung {#activation}
 

@@ -8,7 +8,9 @@ content-type: reference
 pagetitle: Communities Tools
 role: Admin
 exl-id: ba6c4ad3-c393-42d8-9f1f-d59947c3e7ab
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%
@@ -21,7 +23,7 @@ Um auf die Communities Tools-Konsole zuzugreifen, melden Sie sich bei Ihrer Auto
 
 * Über die globale Navigation: **[!UICONTROL Instrumente]** > **[!UICONTROL Communities]**.
 
-  ![Communities](assets/communities-home.png)
+  ![communities](assets/communities-home.png)
 
 * [Site-Vorlagen](sites.md) - Konsole für die Erstellung und Verwaltung von Site-Vorlagen.
 

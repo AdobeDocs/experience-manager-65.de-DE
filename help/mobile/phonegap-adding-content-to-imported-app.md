@@ -7,10 +7,13 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 pagetitle: Is your hybrid app ready for AEM Mobile?
 exl-id: 4625890c-2b76-4c78-88e8-23741bc09f5b
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '718'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -18,7 +21,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Sie haben Ihre Hybrid PhoneGap- oder Cordova-App in AEM importiert, was? Wahrscheinlich möchten Sie Ihrer App bearbeitbare Inhalte hinzufügen. Um diese Aufgabe zu erfüllen, benötigen Sie ein allgemeines Verständnis der Struktur einer AEM App. Eine App in AEM ist in der Regel in zwei Teile unterteilt. &quot;Shell&quot;und &quot;Inhalt&quot;. Die &quot;Shell&quot;umfasst die statischen Teile Ihrer App, z. B. die PhoneGap-Konfigurationsdateien, das App-Framework und die Navigationssteuerelemente. Der Inhalt des von Ihnen importierten Archivs wird als Teil der Shell gespeichert. Im Kontext dieses Dokuments ist die Shell der gesamte nicht AEM erstellte Inhalt Ihrer Hybrid PhoneGap-App, der vom App-Entwickler erstellt wurde.
 

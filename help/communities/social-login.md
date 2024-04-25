@@ -7,7 +7,9 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '2672'
 ht-degree: 1%
@@ -106,7 +108,7 @@ Die [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicat
 
    ![config-propertyNamespace](assets/config-propertiespng.png)
 
-   * Weitere Informationen finden Sie in der Dokumentation zum [Konfigurationsbrowser](/help/sites-administering/configurations.md).
+   * Weitere Informationen finden Sie in der Dokumentation zum [Konfigurations-Browser](/help/sites-administering/configurations.md).
 
 1. **Erstellen/Bearbeiten** Facebook-Cloud-Service-Konfiguration.
 
@@ -255,7 +257,7 @@ Die [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicat
 
    ![twitterconfigpropng](assets/twitterconfigproppng.png)
 
-   * Weitere Informationen finden Sie in der Dokumentation zum [Konfigurationsbrowser](/help/sites-administering/configurations.md).
+   * Weitere Informationen finden Sie in der Dokumentation zum [Konfigurations-Browser](/help/sites-administering/configurations.md).
 
 1. Erstellen/Bearbeiten Sie die Cloud-Service-Konfiguration für Twitter.
 

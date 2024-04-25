@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 2e02db9f-294d-4d4a-92da-3ab1d38416ab
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 12%
+source-wordcount: '591'
+ht-degree: 3%
 
 ---
 
@@ -38,15 +41,15 @@ Das Löschen der automatisch erstellten JSP-Datei erfolgt dadurch, dass stattdes
 
 1. Erstellen Sie einen Speicherort für benutzerdefinierte Anwendungen:
 
-   * Wählen Sie den `/apps`-Knoten aus
+   * Wählen Sie die `/apps` Knoten
 
       * **Ordner erstellen** benannt **[!UICONTROL custom]**
 
-   * Wählen Sie den `/apps/custom`-Knoten aus
+   * Wählen Sie die `/apps/custom` Knoten
 
       * **Ordner erstellen** benannt **[!UICONTROL Komponenten]**
 
-1. Wählen Sie den `/apps/custom/components`-Knoten aus
+1. Wählen Sie die `/apps/custom/components` Knoten
 
    * **[!UICONTROL Erstellen > Komponente..]**
 
@@ -56,16 +59,16 @@ Das Löschen der automatisch erstellten JSP-Datei erfolgt dadurch, dass stattdes
       * **Supertyp**: *social/commons/components/hbs/comments*
       * **Gruppe**: *Benutzerdefiniert*
 
-   * Wählen Sie **[!UICONTROL Weiter]** aus
-   * Wählen Sie **[!UICONTROL Weiter]** aus
-   * Wählen Sie **[!UICONTROL Weiter]** aus
-   * Wählen Sie **[!UICONTROL OK]** aus
+   * Auswählen **[!UICONTROL Nächste]**
+   * Auswählen **[!UICONTROL Nächste]**
+   * Auswählen **[!UICONTROL Nächste]**
+   * Wählen Sie **[!UICONTROL OK]** aus.
 
 1. Erweitern Sie den erstellten Knoten: `/apps/custom/components/comments`
-1. Klicken Sie auf **[!UICONTROL Alle speichern]**
-1. Klicken Sie mit der rechten Maustaste `comments.jsp`
+1. Auswählen **[!UICONTROL Alle speichern]**
+1. Rechtsklick `comments.jsp`
 1. Wählen Sie **[!UICONTROL Löschen]** aus
-1. Klicken Sie auf **[!UICONTROL Alle speichern]**
+1. Auswählen **[!UICONTROL Alle speichern]**
 
 ![create-component](assets/create-component.png)
 
@@ -86,16 +89,16 @@ Das Löschen der automatisch erstellten JSP-Datei erfolgt dadurch, dass stattdes
       * **Supertyp**: *social/commons/components/hbs/comments/comment*
       * **Gruppe**: `*.hidden*`
 
-   * Wählen Sie **[!UICONTROL Weiter]** aus
-   * Wählen Sie **[!UICONTROL Weiter]** aus
-   * Wählen Sie **[!UICONTROL Weiter]** aus
-   * Wählen Sie **[!UICONTROL OK]** aus
+   * Auswählen **[!UICONTROL Nächste]**
+   * Auswählen **[!UICONTROL Nächste]**
+   * Auswählen **[!UICONTROL Nächste]**
+   * Wählen Sie **[!UICONTROL OK]** aus.
 
 1. Erweitern Sie den erstellten Knoten: `/apps/custom/components/comments/comment`
-1. Klicken Sie auf **[!UICONTROL Alle speichern]**
-1. Klicken Sie mit der rechten Maustaste `comment.jsp`
+1. Auswählen **[!UICONTROL Alle speichern]**
+1. Rechtsklick `comment.jsp`
 1. Wählen Sie **[!UICONTROL Löschen]** aus
-1. Klicken Sie auf **[!UICONTROL Alle speichern]**
+1. Auswählen **[!UICONTROL Alle speichern]**
 
 ![create-child-component](assets/create-child-component.png)
 
@@ -115,7 +118,7 @@ Verwenden [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md
    * Ändern Sie den Wert der `data-scf-component` Attribut (~line 20):
 
       * Von `social/commons/components/hbs/comments`
-      * An `/apps/custom/components/comments`
+      * nach `/apps/custom/components/comments`
 
    * Nehmen Sie die benutzerdefinierte Kommentarkomponente (~line 75) auf:
 
@@ -132,10 +135,10 @@ Verwenden [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md
    * Ändern Sie den Wert des data-scf-component -Attributs (~ Zeile 19)
 
       * Von `social/commons/components/hbs/comments/comment`
-      * An `/apps/custom/components/comments/comment`
+      * nach `/apps/custom/components/comments/comment`
 
 * Auswählen `/apps/custom` Knoten
-* Klicken Sie auf **[!UICONTROL Alle speichern]**
+* Auswählen **[!UICONTROL Alle speichern]**
 
 ## Erstellen eines Client-Bibliotheksordners {#create-a-client-library-folder}
 
@@ -153,7 +156,7 @@ Verwenden [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md
       * **Name** `categories` **Typ** `String` **Wert** `cq.social.author.hbs.comments` `Multi`
       * **Name** `dependencies` **Typ** `String` **Wert** `cq.social.scf` `Multi`
 
-* Klicken Sie auf **[!UICONTROL Alle speichern]**
+* Auswählen **[!UICONTROL Alle speichern]**
 * Mit `/apps/custom/components/comments/clientlib`Erstellen Sie für den ausgewählten Knoten drei Dateien:
 
    * **Name**: `css.txt`
@@ -161,7 +164,7 @@ Verwenden [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md
    * **Name**: customkommentssystem.js
 
 * Geben Sie &quot;customommentssystem.js&quot;als Inhalt von ein. `js.txt`
-* Klicken Sie auf **[!UICONTROL Alle speichern]**
+* Auswählen **[!UICONTROL Alle speichern]**
 
 ![comments-clientlibs](assets/comments-clientlibs.png)
 
@@ -189,7 +192,7 @@ Geben Sie folgenden Text als Inhalt von ein `customcommentsystem.js`:
 })($CQ, _, Backbone, SCF);
 ```
 
-* Klicken Sie auf **[!UICONTROL Alle speichern]**
+* Auswählen **[!UICONTROL Alle speichern]**
 
 ## App veröffentlichen {#publish-the-app}
 

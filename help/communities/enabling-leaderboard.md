@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 8b4d56d9-ba73-4eda-9773-3daaa9237abe
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 10%
+source-wordcount: '418'
+ht-degree: 2%
 
 ---
 
@@ -58,12 +61,12 @@ Unter dem **[!UICONTROL Einstellungen]** angeben, welche Informationen zum Mitgl
   Ein beschreibender Name, der für die Pinnwand angezeigt wird und die für die Anzeige von Abzeichen und Bewertungen ausgewählten Regeln widerspiegelt.
 Der Standardwert ist `Leaderboard` wenn nichts eingegeben wird.
 
-* **Abzeichen**
+* **Badge**
 
   Wenn diese Option aktiviert ist, wird eine Spalte für Badge-Symbole in die Leaderboard eingefügt.
 Die Option Standard ist deaktiviert.
 
-* **Abzeichenname**
+* **Badge Name**
 
   Wenn diese Option aktiviert ist, wird eine Spalte für den Badge-Namen in die Leaderboard aufgenommen.
 Die Option Standard ist deaktiviert.
@@ -77,7 +80,7 @@ Die Option Standard ist deaktiviert.
 
 Unter dem **Regeln** Registerkarte, der Community-Site und den zugehörigen Scoring- und Badging-Regeln
 
-* **Speicherort für Regel**
+* **Regelstandort**
 
   (Erforderlich) Der Speicherort, an dem die Regel Scoring/Badging konfiguriert ist.
 
@@ -85,11 +88,11 @@ Unter dem **Regeln** Registerkarte, der Community-Site und den zugehörigen Scor
 
   (Erforderlich) Bestimmte Regel, die die anzuzeigenden Werte generiert.
 
-* **Abzeichenregel**
+* **Badging-Regel**
 
   (Erforderlich) Bestimmte Regel, die das anzuzeigende Badge generiert.
 
-* **Anzeigelimit**
+* **Anzeigebeschränkung**
 
   Anzahl der Mitglieder, die pro Seite angezeigt werden sollen Der Standardwert ist 10.
 
@@ -110,9 +113,9 @@ Leaderboard-Komponentenkonfiguration:
 
 * Registerkarte Regeln :
 
-   * Speicherort für Regel = `/content/sites/<site name>/jcr:content`
-   * Bewertungsregel = `/libs/settings/community/scoring/rules/forums-scoring`
-   * Abzeichenregel = `/libs/settings/community/badging/rules//reference-badging`
+   * Regelspeicherort = `/content/sites/<site name>/jcr:content`
+   * Scoring Rule = `/libs/settings/community/scoring/rules/forums-scoring`
+   * Badging-Regel = `/libs/settings/community/badging/rules//reference-badging`
    * Anzeigelimit = `10`
 
 ![Participant Lederboard](assets/participants-leaderboard.png)
@@ -133,9 +136,9 @@ Leaderboard-Komponentenkonfiguration:
 
 * Registerkarte Regeln :
 
-   * Speicherort für Regel = `/content/sites/<site name>/jcr:content`
-   * Bewertungsregel = `/libs/settings/community/scoring/rules/adv-forums-scoring`
-   * Abzeichenregel = `/libs/settings/community/badging/rules/adv-forums-badging`
+   * Regelspeicherort = `/content/sites/<site name>/jcr:content`
+   * Scoring Rule = `/libs/settings/community/scoring/rules/adv-forums-scoring`
+   * Badging-Regel = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Anzeigelimit = `10`
 
 ![Expertenvorstand](assets/experts-leaderboard.png)

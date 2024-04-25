@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 9d350935-129a-40d3-89f4-2e6f69676e5e
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 2%
+source-wordcount: '706'
+ht-degree: 5%
 
 ---
 
@@ -17,9 +20,9 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Die Verwaltung von App-Inhalten erfordert eine kollektive Anstrengung von [Entwickler](#developer), Inhalt [Autoren](#author)und [Administratoren](#administrator). Autoren bearbeiten Seiten, die auf Vorlagen und Komponenten basieren, die von App-Entwicklern generiert wurden.
+Die Verwaltung von App-Inhalten erfordert eine kollektive Anstrengung [Entwickler](#developer), Inhalt [Autoren](#author), und [Administratoren](#administrator). Autoren bearbeiten Seiten, die auf Vorlagen und Komponenten basieren, die von App-Entwicklern generiert wurden.
 
 Schließlich veröffentlichen Administratoren strategisch den aktualisierten App-Inhalt.
 
@@ -37,11 +40,11 @@ Schließlich veröffentlichen Administratoren strategisch den aktualisierten App
 >
 >Siehe [Mobil mit Inhaltssynchronisierung](/help/mobile/phonegap-contentsync.md) Weitere Informationen finden Sie im Abschnitt für Entwickler .
 
-Hier können Inhalte in AEM Mobile ähnlich wie in AEM Sites erstellt, bearbeitet und gelöscht werden.
+Hier können Inhalte in AEM Mobile auf die gleiche Weise erstellt, bearbeitet und gelöscht werden wie in AEM Sites.
 
 Die **Kachel &quot;Seiteninhalt verwalten&quot;** zeigt die Anzahl der Seiten verwalteten Inhalts an und zuletzt geändert für eine bestimmte Payload. Sie können einen Drilldown in den Inhalt durchführen, um Seiten zu erstellen, zu kopieren, zu verschieben, zu löschen und zu aktualisieren, indem Sie auf jeden Datensatz in der Kachel klicken.
 
-Sobald der Inhalt aktualisiert wurde, können Administratoren eine Payload für Inhaltsaktualisierungen Over-the-Air (OTA) für Kunden über die **Kachel &quot;Inhaltspakete verwalten&quot;.**
+Sobald der Inhalt aktualisiert wurde, können Administratoren eine Payload für Inhaltsaktualisierungen Over-the-Air (OTA) für Kunden über die **Kachel Inhaltspakete verwalten .**
 
 ![chlimage_1-161](assets/chlimage_1-161.png)
 
@@ -59,7 +62,7 @@ Hier, *AEM Administratoren* Sie können Ihre Apps schnell und einfach aktualisie
 
 Einmal *AEM-Autoren* über die Kachel Inhalt verwalten Inhalt hinzugefügt oder geändert haben, *AEM Administratoren* können diese Änderungen mit einer Aktualisierung von Inhaltspaketen an Kunden weiterleiten.
 
-Die Aktion &quot;Inhaltspaket&quot;ermöglicht die *AEM-Autor* , um Seiteninhalte zu erstellen und zu bearbeiten, während das Entwicklungsteam Änderungen am Design und an der Implementierung einer Host-Anwendung vornimmt, einschließlich Navigation, Stil, serverseitiger Logik, Vorlagen und Komponenten, und diese Änderungen dann an Kunden weiterleitet, ohne dass sie erneut an die verschiedenen Stores zur Verteilung gesendet werden müssen.
+Die Aktion &quot;Inhaltspaket&quot;ermöglicht die *AEM* , um Seiteninhalte zu erstellen und zu bearbeiten, während das Entwicklungsteam Änderungen am Design und an der Implementierung einer Host-Anwendung vornimmt, einschließlich Navigation, Stil, serverseitiger Logik, Vorlagen und Komponenten, und diese Änderungen dann an Kunden weiterleitet, ohne dass sie erneut an die verschiedenen Stores zur Verteilung gesendet werden müssen.
 
 **So veröffentlichen Sie neue oder aktualisierte Inhalte**
 
@@ -67,7 +70,7 @@ Wählen Sie ein Inhaltspaket aus der Kachel aus, in diesem Beispiel das englisch
 
 ![chlimage_1-163](assets/chlimage_1-163.png)
 
-Wählen Sie als Nächstes die **Staging** -Aktion oben rechts, um die Inhaltsaktualisierung zu erstellen. Fügen Sie die entsprechenden Aktualisierungsinformationen hinzu und klicken Sie auf Fertig .
+Wählen Sie als Nächstes die **Staging** oben rechts, um die Inhaltsaktualisierung zu erstellen. Fügen Sie die entsprechenden Aktualisierungsinformationen hinzu und klicken Sie auf Fertig .
 
 ![chlimage_1-164](assets/chlimage_1-164.png)
 
@@ -79,7 +82,7 @@ Durch das Staging und Aktualisieren von Inhalten können mehrere Aktualisierunge
 >
 >Der gestaffelte Inhalt kann vor der Veröffentlichung mit der AEM Überprüfungs-App überprüft werden.
 >
->Siehe [Mobil-Schnellstart für AEM Verifizierung](/help/mobile/phonegap-mobile-quickstart.md) Weitere Informationen zur AEM Verify-App.
+>Siehe [Mobile Schnellstart für AEM Verifizierung](/help/mobile/phonegap-mobile-quickstart.md) Weitere Informationen zur AEM Verify-App.
 
 ![chlimage_1-165](assets/chlimage_1-165.png)
 

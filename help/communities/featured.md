@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: 76b76e0e-531b-4f80-be70-68532ef81a7f
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 6%
+source-wordcount: '339'
+ht-degree: 5%
 
 ---
 
@@ -64,11 +67,11 @@ Unter dem **[!UICONTROL Einstellungen]** -Tab, um den Inhalt für die Funktion z
 
   Der Titel für die Liste der vorgestellten Inhalte. Beispiel: `Featured Questions` oder `Featured Ideas`. Der Standardwert ist `Featured Content` , wenn leer gelassen.
 
-* **[!UICONTROL Position des präsentierten Inhalts]**
+* **[!UICONTROL Speicherort des speziellen Inhalts]**
 
   *(Erforderlich)* Navigieren Sie zu der Seite, die den Inhalt enthält, der möglicherweise angezeigt wird (die Komponenten dieser Seite müssen so konfiguriert sein, dass &quot;Vorgestellter Inhalt zulassen&quot;konfiguriert werden). Zum Beispiel: `/content/sites/engage/en/forum`.
 
-* **[!UICONTROL Anzeigelimit]**
+* **[!UICONTROL Anzeigebeschränkung]**
 
   Die maximale Anzahl der anzuzeigenden speziellen Inhalte. Der Standardwert lautet 5.
 

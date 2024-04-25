@@ -7,10 +7,13 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 27e1bff3-385e-4ced-87af-54044b7e8812
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 2%
+source-wordcount: '260'
+ht-degree: 0%
 
 ---
 
@@ -48,7 +51,7 @@ Verwenden [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
         -->
      ```
 
-* Klicken Sie auf **Alle speichern**
+* Auswählen **Alle speichern**
 
 ### Benutzerdefinierte App replizieren {#replicate-custom-app}
 
@@ -60,7 +63,7 @@ Eine Möglichkeit hierfür ist:
 
    * Auswählen **[!UICONTROL Instrumente]** > **[!UICONTROL Aktivitäten]** > **[!UICONTROL Replikation]**.
    * Auswählen **[!UICONTROL Baum aktivieren]**.
-   * Setzen Sie `Start Path` auf `/apps/custom`.
+   * Satz `Start Path` nach `/apps/custom`.
    * Auswahl deaktivieren **[!UICONTROL Nur geändert]**.
    * Auswählen **[!UICONTROL Aktivieren]** Schaltfläche.
 

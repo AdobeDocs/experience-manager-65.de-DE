@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 5%
+source-wordcount: '952'
+ht-degree: 1%
 
 ---
 
@@ -67,7 +70,7 @@ Nachdem die Vererbung abgebrochen wurde, können Sie das Konfigurationssymbol au
 
 ![configure-message-list](assets/configure-message-list.png)
 
-#### Registerkarte „Allgemein“ {#basic-tab}
+#### Registerkarte &quot;Allgemein&quot; {#basic-tab}
 
 ![basic-tab-messagelist](assets/basic-tab-messagelist.png)
 
@@ -107,7 +110,7 @@ Nachdem die Vererbung abgebrochen wurde, können Sie das Konfigurationssymbol au
 
   Wenn diese Option aktiviert ist, zeigt eine `Mark Unread` -Schaltfläche, über die eine Nachricht als gelesen gekennzeichnet werden kann.
 
-* **Schaltfläche „Löschen“**
+* **Schaltfläche &quot;Löschen&quot;**
 
   Wenn diese Option aktiviert ist, zeigt eine `Delete` -Schaltfläche, über die eine Nachricht als gelesen gekennzeichnet werden kann. Dupliziert die Löschfunktion, wenn **`Message Options`** ebenfalls aktiviert ist.
 
@@ -119,7 +122,7 @@ Nachdem die Vererbung abgebrochen wurde, können Sie das Konfigurationssymbol au
 
   Die angegebene Anzahl entspricht der maximalen Anzahl an Nachrichten, die pro Seite in einem Paginierungsschema angezeigt werden. Wenn keine Zahl angegeben (leer gelassen) wird, werden alle Nachrichten angezeigt und es wird keine Paginierung durchgeführt.
 
-* **Zeitstempelmuster**
+* **Zeitstempel**
 
   Stellen Sie Zeitstempelmuster für eine oder mehrere Sprachen bereit. Der Standardwert ist für en, de, fr, es, ja, zh_CN, ko_KR.
 
@@ -141,7 +144,7 @@ Nachdem die Vererbung abgebrochen wurde, können Sie das Konfigurationssymbol au
 
 ![config-compse-message](assets/config-compose-message.png)
 
-#### Registerkarte „Allgemein“ {#basic-tab-1}
+#### Registerkarte &quot;Allgemein&quot; {#basic-tab-1}
 
 ![basic-tab-compse](assets/basic-tab-compose.png)
 
@@ -153,7 +156,7 @@ Nachdem die Vererbung abgebrochen wurde, können Sie das Konfigurationssymbol au
 
   Geben Sie die URL der Seite ein, die angezeigt wird, wenn der Absender die Nachricht abbricht. Zum Beispiel: `../messaging.html`.
 
-* **Maximale Länge des Nachrichtenbetreffs**
+* **Maximale Länge des Nachrichtenbetreibers**
 
   Die maximal zulässige Anzahl von Zeichen im Feld Betreff. Beispiel: 500. Der Standardwert ist keine Begrenzung.
 
@@ -177,11 +180,11 @@ Nachdem die Vererbung abgebrochen wurde, können Sie das Konfigurationssymbol au
 
   Geben Sie den Text ein, der neben dem `Subject` -Feld. Der Standardwert ist `Subject`.
 
-* **Angehängtes Dateifeld anzeigen**
+* **Feld für Dateianhang anzeigen**
 
   Wenn diese Option aktiviert ist, zeigen Sie die `Attachment` und aktivieren Sie das Hinzufügen von Dateianlagen zur Nachricht. Die Option Standard ist nicht aktiviert.
 
-* **Dateietikett anhängen**
+* **Dateinamen anhängen**
 
   Geben Sie den Text ein, der neben dem `Attachment` -Feld. Der Standardwert ist **`Attach File`**.
 
@@ -197,6 +200,6 @@ Nachdem die Vererbung abgebrochen wurde, können Sie das Konfigurationssymbol au
 
   Ist diese Option aktiviert, wird die Verwendung eines benutzerdefinierten Textfelds &quot;Inhalt&quot;mit einem eigenen Rich-Text-Editor angezeigt. Die Option Standard ist nicht aktiviert.
 
-* **Zeitstempelmuster**
+* **Zeitstempel**
 
   Stellen Sie Zeitstempelmuster für eine oder mehrere Sprachen bereit. Der Standardwert ist für en, de, fr, es, ja, zh_CN, ko_KR.

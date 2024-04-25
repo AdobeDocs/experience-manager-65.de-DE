@@ -9,9 +9,11 @@ docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2851'
+source-wordcount: '2856'
 ht-degree: 3%
 
 ---
@@ -156,7 +158,7 @@ Scoring-Regeln sind die Grundlage für die Vergabe von Badges.
 
 Jede Scoring-Regel ist eine Liste mit einer oder mehreren Unterregeln. Scoring-Regeln werden auf den Community-Site-Inhalt angewendet, um die Regeln zu identifizieren, die bei der Aktivierung von Badges angewendet werden sollen.
 
-Scoring-Regeln werden vererbt, sind jedoch nicht additiv. Beispiel:
+Scoring-Regeln werden vererbt, sind jedoch nicht additiv. Zum Beispiel:
 
 * Wenn Seite 2 die Scoring-Regel2 enthält und ihr Vorgänger Seite 1 die Scoring-Regel 1 enthält.
 * Eine Aktion auf einer Komponente &quot;Seite 2&quot;ruft sowohl Regel1 als auch Regel2 auf.
@@ -196,7 +198,7 @@ Standardmäßig werden Punkte dem Mitglied zugewiesen, das eine Aktion durchfüh
 
 Jede Unterregel kann in einer oder mehreren Scoring-Regeln enthalten sein.
 
-Der Name der Unterregel folgt normalerweise dem Muster der Verwendung einer *subject*, *Objekt*, und *verb*. Beispiel:
+Der Name der Unterregel folgt normalerweise dem Muster der Verwendung einer *subject*, *Objekt*, und *verb*. Zum Beispiel:
 
 * member-comment-create
 * member-receive-Votum
@@ -302,7 +304,7 @@ Badging-Regeln verknüpfen Scoring-Regeln mit Abzeichen, indem Folgendes angegeb
 
 Badging-Regeln sind Knoten des Typs `cq:Page` mit Eigenschaften auf `jcr:content` -Knoten, der Scoring-Regeln mit Bewertungen und Abzeichen korreliert.
 
-Die Badging-Regeln beinhalten eine obligatorische `thresholds` -Eigenschaft, die eine geordnete Liste von Bewertungen darstellt, die Abzeichen zugeordnet sind. Die Werte müssen in zunehmendem Wert geordnet werden. Beispiel:
+Die Badging-Regeln beinhalten eine obligatorische `thresholds` -Eigenschaft, die eine geordnete Liste von Bewertungen darstellt, die Abzeichen zugeordnet sind. Die Werte müssen in zunehmendem Wert geordnet werden. Zum Beispiel:
 
 * `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
@@ -339,7 +341,7 @@ Die `scoringRules` -Eigenschaft einer Badging-Regel schränkt einfach ein, welch
    <td><em>(erforderlich)</em> Eine mehrwertige Zeichenfolge des Formulars "number|path"
     <ul>
      <li>number = Wert</li>
-     <li>| = die vertikale Linie char (U+007C)</li>
+     <li>| = vertikaler Zeilenchar (U+007C)</li>
      <li>path = vollständiger Pfad zur Badge-Bild-Ressource</li>
     </ul> Die Zeichenfolgen müssen so angeordnet sein, dass die Zahlen an Wert zunehmen und zwischen der Zahl und dem Pfad kein Leerzeichen angezeigt wird.<br /> Beispieleintrag :<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
@@ -375,7 +377,7 @@ In der Version sind zwei Badging-Regeln enthalten, die dem [Foren und Kommentar-
 
 Änderungen oder Ergänzungen an Badging-Regeln oder Bildern, die in der Autorenumgebung vorgenommen werden, müssen in der Veröffentlichungsumgebung installiert werden.
 
-## Zuweisen und Sperren von Abzeichen {#assign-and-revoke-badges}
+## Zuteilen und Entziehen von Abzeichen {#assign-and-revoke-badges}
 
 Abzeichen können Mitgliedern zugewiesen werden, indem sie entweder die [Mitgliederkonsole](/help/communities/members.md#badges-tab) oder programmgesteuert mithilfe von cURL-Befehlen.
 
@@ -575,22 +577,22 @@ Es ist möglich, schnell mit der [Tutorial &quot;Erste Schritte&quot;](/help/com
    * **Name**: `badgingRules`
    * **Typ**: `String`
    * Auswählen **Multi**
-   * Klicken Sie auf **Hinzufügen**
+   * Auswählen **Hinzufügen**
    * Geben Sie `/libs/settings/community/badging/rules/forums-badging` ein
-   * Klicken Sie auf **+**
+   * Auswählen **+**
    * Geben Sie `/libs/settings/community/badging/rules/comments-badging` ein
-   * Wählen Sie **OK** aus
+   * Wählen Sie **OK** aus.
 
 * Fügen Sie die Eigenschaft scoringRules hinzu:
 
    * **Name**: `scoringRules`
    * **Typ**: `String`
    * Auswählen **Multi**
-   * Klicken Sie auf **Hinzufügen**
+   * Auswählen **Hinzufügen**
    * Geben Sie `/libs/settings/community/scoring/rules/forums-scoring` ein
-   * Klicken Sie auf **+**
+   * Auswählen **+**
    * Geben Sie `/libs/settings/community/scoring/rules/comments-scoring` ein
-   * Wählen Sie **OK** aus
+   * Wählen Sie **OK** aus.
 
 * Klicken Sie auf **Alle speichern**.
 
@@ -613,7 +615,7 @@ Stellen Sie als Nächstes sicher, dass die Forum- und Kommentarkomponenten die A
 
 Als Nächstes [erneut veröffentlichen](/help/communities/sites-console.md#publishing-the-site) die Community-Site.
 
-Abschließend,
+Schließlich
 
 * Navigieren Sie zur Komponente in der Veröffentlichungsinstanz.
 * Melden Sie sich als Community-Mitglied an (z. B. weston.mccall@dodgit.com / Kennwort).

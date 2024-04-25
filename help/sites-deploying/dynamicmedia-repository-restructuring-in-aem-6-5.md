@@ -1,16 +1,17 @@
 ---
 title: Umstrukturierung des Dynamic-Media-Repositorys in Adobe Experience Manager 6.5
-description: Erfahren Sie, wie Sie die erforderlichen Änderungen vornehmen können, um in Experience Manager 6.5 für Dynamic Media zur neuen Repository-Struktur zu migrieren.
+description: Erfahren Sie, wie Sie die erforderlichen Änderungen vornehmen können, um zur neuen Repository-Struktur in Experience Manager 6.5 für Dynamic Media zu migrieren.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 feature: Upgrading
 exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -92,7 +93,7 @@ Wie auf der übergeordneten Seite [Umstrukturierung des Dynamic-Media-Repository
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
-   <td><p>Sie können das unten stehende Migrationsskript ausführen, um es an das neueste Modell anzupassen:</p> <p><em>https://Server-Adresse:Serverport/libs/settings/dam/dm/presets.migratedmcontent.jso</em></p> </td>
+   <td><p>Sie können das untenstehende Migrationsskript ausführen, damit eine Anpassung an das aktuelle Modell erfolgt:</p> <p><em>https://Server-Adresse:Serverport/libs/settings/dam/dm/presets.migratedmcontent.jso</em></p> </td>
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td>

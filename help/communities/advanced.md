@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 1%
+source-wordcount: '1056'
+ht-degree: 2%
 
 ---
 
@@ -62,7 +64,7 @@ Die erweiterte Scoring-Engine bietet eine OSGi-Konfiguration mit Parametern, die
 * **Scoring-Gewichtungen**
 
   Geben Sie für ein Thema das Verb an, dem bei der Berechnung des Ergebnisses die höchste Priorität eingeräumt werden soll. Ein oder mehrere Themen können eingegeben werden, jedoch auf **ein Verb pro Thema**. Siehe [Themen und Verben](/help/communities/implementing-scoring.md#topics-and-verbs).
-Eingestiegen als `topic,verb` mit Escapezeichen. Beispiel:
+Eingestiegen als `topic,verb` mit Escapezeichen. Zum Beispiel:
   `/social/forum/hbs/social/forum\,ADD`
 Standardmäßig ist das ADD-Verb für QnA- und Forenkomponenten festgelegt.
 

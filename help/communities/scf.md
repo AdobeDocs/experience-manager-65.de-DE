@@ -6,9 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 5ca58bc3-8505-4d91-9cd1-6b2e2671f1be
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1478'
 ht-degree: 1%
 
 ---
@@ -196,7 +199,7 @@ Das Framework verwendet serverseitige Handlebars-Vorlagen, um die Komponenten f�
 Die folgenden Konventionen werden zum Definieren und Verwenden von CSS-Klassen empfohlen:
 
 * Verwenden Sie eindeutig Namespace-CSS-Klassenselektornamen und vermeiden Sie allgemeine Namen wie &quot;Überschrift&quot;und &quot;Bild&quot;.
-* Definieren Sie bestimmte Stile für die Klassenauswahl, damit die CSS-Stylesheets gut mit anderen Elementen und Stilen auf der Seite funktionieren. Zum Beispiel: `.social-forum .topic-list .li { color: blue; }`
+* Definieren Sie bestimmte Stile für die Klassenauswahl, damit die CSS-Stylesheets gut mit anderen Elementen und Stilen auf der Seite funktionieren. Beispiel: `.social-forum .topic-list .li { color: blue; }`
 * Halten Sie CSS-Klassen für die Formatierung getrennt von CSS-Klassen für UX, die von JavaScript gesteuert werden.
 
 ### Clientseitige Anpassungen {#client-side-customizations}

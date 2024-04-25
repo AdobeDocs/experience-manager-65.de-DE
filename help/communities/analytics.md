@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2701'
-ht-degree: 6%
+source-wordcount: '2658'
+ht-degree: 2%
 
 ---
 
@@ -62,7 +64,7 @@ In diesem Abschnitt der Dokumentation wird beschrieben, wie Sie eine Analytics R
 
 Um die Funktionen von Analytics for Communities zu konfigurieren, müssen Sie sich an Ihren Kundenbetreuer wenden, um ein Adobe Analytics-Konto einzurichten. [Report Suite](#adobe-analytics-report-suite-for-video-reporting). Nach der Feststellung sollten folgende Informationen verfügbar sein:
 
-* **Unternehmensname**
+* **Firmenname**
 
   Das mit dem Adobe Analytics-Konto verknüpfte Unternehmen.
 
@@ -100,21 +102,21 @@ Durch Anmeldung bei [Adobe Experience Cloud](https://experienceleague.adobe.com/
 
    * type **`Counter`**
 
-      * nicht **`Counter (no subrelations)`**
+      * not **`Counter (no subrelations)`**
 
    * Kann vorhandene Ereignisse wiederverwenden (umbenennen) oder Ereignisse erstellen, die für Communities-Funktionen verwendet werden können
 
-* [Video-Management](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=de)
+* [Videomanagement](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=de)
 
    * Videoberichterkonsole
 
       * Aktivieren `Video Core`
-      * Wählen Sie Speichern aus
+      * Wählen Sie „Speichern“ aus
 
    * Video Core Measurement Console
 
       * Klicken Sie auf `Use Solution Variables`
-      * Wählen Sie Speichern aus
+      * Wählen Sie „Speichern“ aus
 
 Wenn Sie eine **neue Report Suite** festgelegt ist, kann eine neue Report Suite nur über 4 eVars und 6 Ereignisvariablen verfügen, während für Communities 11 eVars und 7 Ereignisvariablen erforderlich sind.
 
@@ -196,7 +198,7 @@ Die erste Erstellung einer neuen Analytics-Konfiguration führt zur Anzeige der 
 
 ![analytics-settings](assets/analytics-settings.png)
 
-* **Unternehmen**
+* **Firma**
 
   Das mit dem Adobe Analytics-Konto verknüpfte Unternehmen.
 
@@ -212,7 +214,7 @@ Die erste Erstellung einer neuen Analytics-Konfiguration führt zur Anzeige der 
 
   Wählen Sie das Analytics-Rechenzentrum aus, in dem die Report Suite gehostet wird.
 
-* **Kein Verfolgungs-Tag zur Seite hinzufügen**
+* **Fügen Sie der Seite kein Tracking-Tag hinzu**
 
   Behalten Sie die Standardeinstellung bei (deaktiviert).
 
@@ -220,11 +222,11 @@ Die erste Erstellung einer neuen Analytics-Konfiguration führt zur Anzeige der 
 
   Behalten Sie die Standardeinstellung bei (deaktiviert).
 
-* **Nachts keine Seitenimpressionen importieren (verfassen)**
+* **Seitenimpressionen nicht nächtlich importieren (Autor)**
 
   Behalten Sie die Standardeinstellung bei (deaktiviert).
 
-* **Nachts keine Seitenimpressionen importieren (veröffentlichen)**
+* **Seitenimpressionen nicht nächtlich importieren (veröffentlichen)**
 
   Behalten Sie die Standardeinstellung bei (deaktiviert).
 
@@ -260,7 +262,7 @@ Geben Sie beispielsweise *communities*.
 
 * *Vorlage*
 
-  Klicken Sie auf `Adobe Analytics Framework`.
+  Wählen Sie `Adobe Analytics Framework`.
 
 * Wählen Sie **Erstellen** aus.
 
@@ -302,7 +304,7 @@ Die Sidekick ist nicht erforderlich und kann so minimiert werden, dass sie den Z
 
 1. Wählen Sie eine `Run Mode`.
 
-1. Auswählen **Veröffentlichen**.
+1. Wählen Sie **Veröffentlichen** aus.
 
 ![analytics-framework2](assets/analytics-framework2.png)
 
@@ -420,7 +422,7 @@ Im Folgenden finden Sie ein Beispiel für standardmäßige Zuordnungen:
   </tr>
   <tr>
    <td><strong>event1<br /> Resource Play</strong></td>
-   <td><em>(eine)</em></td>
+   <td><em>a)</em></td>
    <td><em>-</em></td>
    <td><em>-</em></td>
    <td><em>-</em></td>
@@ -433,79 +435,79 @@ Im Folgenden finden Sie ein Beispiel für standardmäßige Zuordnungen:
   </tr>
   <tr>
    <td><strong>event2<br /> SCFView</strong></td>
-   <td><em>(eine)</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>a)</em></td>
+   <td><em>b)</em></td>
+   <td><em>c)</em></td>
+   <td><em>d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>event3<br /> SCFCreate (Post)</strong></td>
    <td><em>-</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>b)</em></td>
+   <td><em>c)</em></td>
+   <td><em>d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>event4<br /> SCFFollow</strong></td>
    <td><em>-</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>b)</em></td>
+   <td><em>c)</em></td>
+   <td><em>d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>event5<br /> SCFVoteUp</strong></td>
    <td><em>-</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>b)</em></td>
+   <td><em>c)</em></td>
+   <td><em>d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>event6<br /> SCFVoteDown</strong></td>
    <td><em>-</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>b)</em></td>
+   <td><em>c)</em></td>
+   <td><em>d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>event7<br /> SCFRate</strong></td>
    <td><em>-</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>b)</em></td>
+   <td><em>c)</em></td>
+   <td><em>d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>

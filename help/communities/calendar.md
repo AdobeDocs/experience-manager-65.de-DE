@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: c9b34b00-525d-4ca3-bd18-11bb7ce66787
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 7%
+source-wordcount: '1158'
+ht-degree: 1%
 
 ---
 
@@ -75,11 +78,11 @@ Unter dem **Einstellungen** auf, geben Sie an, ob Tags auf Kalendereinträge ang
 
   Wenn diese Option aktiviert ist, können Sie zulassen, dass Dateianlagen zu einem Kalenderereignis oder Kommentar hinzugefügt werden. Die Option Standard ist aktiviert.
 
-* **Folgende zulassen**
+* **Folgende erlauben**
 
   Wenn diese Option aktiviert ist, können Mitglieder Ereignisse verfolgen, die in den Kalender veröffentlicht wurden. Die Option Standard ist aktiviert.
 
-* **Max. Dateigröße**
+* **Maximale Dateigröße**
 
   Nur relevant, wenn `Allow File Uploads` aktiviert ist. Dieses Feld begrenzt die Größe (in Byte) einer hochgeladenen Datei. Der Standardwert ist 104857600 (10 MB).
 
@@ -91,15 +94,15 @@ Unter dem **Einstellungen** auf, geben Sie an, ob Tags auf Kalendereinträge ang
 
   Nur relevant, wenn die Option Datei-Uploads zulassen aktiviert ist. Maximale Anzahl der Bytes, die eine hochgeladene Bilddatei aufweisen kann. Der Standardwert ist 2097152** **(2 MB).
 
-* **Zugelassene Bildtypen für Deckblätter**
+* **Zulässige Deckungsbildtypen**
 
   Eine kommagetrennte Liste von Bilddateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Der Standardwert ist `.jpg,.jpeg,.png,.gif,.bmp`.
 
-* **Antworten mit Diskussionsfaden zulassen**
+* **Threaded-Antworten zulassen**
 
   Wenn diese Option aktiviert ist, erlauben Sie Antworten auf Kommentare, die zum Kalenderereignis veröffentlicht wurden. Die Option Standard ist aktiviert.
 
-* **Benutzern das Löschen von Anmerkungen und Ereignissen ermöglichen**
+* **Benutzern das Löschen von Kommentaren und Ereignissen ermöglichen**
 
   Wenn diese Option aktiviert ist, können Mitglieder die von ihnen veröffentlichten Kommentare und Kalenderereignisse löschen. Die Option Standard ist aktiviert.
 
@@ -109,13 +112,13 @@ Unter dem **Einstellungen** auf, geben Sie an, ob Tags auf Kalendereinträge ang
 
 * **Breadcrumbs anzeigen**
 
-  Breadcrumbs auf Ereignisseite anzeigen. Die Option Standard ist aktiviert.
+  Breadcrumbs auf der Ereignisseite anzeigen. Die Option Standard ist aktiviert.
 
-* **Datumsbereich-Filter**
+* **Datumsbereichsfilter**
 
   Definiert die Anzahl der Tage, die zum aktuellen Datum hinzugefügt werden, um den &quot;An&quot;-Wert des Seitenfilters für die Auflistung von Kalenderereignissen zu berechnen. Die Standardnummer ist 30.
 
-* **Feature-Inhalt zulassen**
+* **Zulassen von speziellen Inhalten**
 
   Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](/help/communities/featured.md). Die Option Standard ist deaktiviert.
 
@@ -123,7 +126,7 @@ Unter dem **Benutzermoderation** -Registerkarte angeben, wie die veröffentlicht
 
 #### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
-* **Posts ablehnen**
+* **Posts verweigern**
 
   Wenn diese Option aktiviert ist, können Moderatoren vertrauenswürdiger Mitglieder Beiträge ablehnen und verhindern, dass der Beitrag im öffentlichen Forum erscheint. Die Option Standard ist aktiviert.
 
@@ -135,7 +138,7 @@ Unter dem **Benutzermoderation** -Registerkarte angeben, wie die veröffentlicht
 
   Ist diese Option aktiviert, können Mitglieder Ereignisse oder Kommentare anderer Mitglieder als unangemessen kennzeichnen. Die Option Standard ist aktiviert.
 
-* **Liste mit Kenn-zeichnungsgründen**
+* **Liste der Kennzeichnungsgründe**
 
   Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste den Grund auswählen, aus dem Ereignisse oder Kommentare als unangemessen gekennzeichnet werden. Die Option Standard ist deaktiviert.
 
@@ -159,7 +162,7 @@ Unter dem **Tag-Feld** Registerkarte die Tags, die angewendet werden können, so
 
   Relevant, wenn `Allow Tagging` wird unter dem **Einstellungen** Registerkarte. Die Tags, die angewendet werden können, beschränken sich auf die Tags innerhalb der aktivierten Namespace-Kategorien. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) und &quot;Alle Tags einschließen&quot;. Der Standardwert ist &quot;none&quot;, was bedeutet, dass alle Namespaces zulässig sind.
 
-* **Empfehlungsgrenze**
+* **Empfehlungslimit**
 
   Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht wird. Der Standardwert ist **-**1 (keine Beschränkungen).
 
@@ -171,7 +174,7 @@ Unter dem **Tag-Feld** Registerkarte die Tags, die angewendet werden können, so
 
 Unter dem **Übersetzung** -Registerkarte, wenn die Übersetzung für die Community-Site aktiviert ist, kann die Übersetzung so eingestellt werden, dass anstelle bestimmter Beiträge der gesamte Thread (Ereignis und Kommentare) übersetzt wird.
 
-* **Alles übersetzen**
+* **Alle übersetzen**
 
   Wenn diese Option aktiviert ist, werden Ereignis und Kommentare in die bevorzugte Sprache des Benutzers übersetzt. Die Option Standard ist aktiviert.
 

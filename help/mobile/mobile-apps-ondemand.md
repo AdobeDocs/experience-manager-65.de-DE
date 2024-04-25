@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: 357e75f8-2c98-4377-afef-016d58505b4d
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 4%
+source-wordcount: '270'
+ht-degree: 11%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 >[!NOTE]
 >
@@ -31,7 +34,7 @@ ht-degree: 4%
 
 ## AEM Mobile Author {#aem-mobile-author}
 
-Ein ***AEM-Autor* (oder *Marketer*)**verwendet benutzerdefinierte oder vordefinierte Vorlagen und Komponenten, um Seiten hinzuzufügen und zu bearbeiten, Komponenten per Drag-and-Drop zu verschieben und Medien aller Typen aus dem DAM hinzuzufügen, einschließlich Bildern, Videos und Textfragmenten (Inhaltsfragmente). AEM integrierte Inhaltseditor wird dann von *AEM-Autoren* , um umfangreiche und relevante Erlebnisse innerhalb der App zu erstellen, einschließlich der Integration in die restliche Adobe Experience Cloud.
+Ein ***AEM* (oder *Marketer*)**verwendet benutzerdefinierte oder vordefinierte Vorlagen und Komponenten, um Seiten hinzuzufügen und zu bearbeiten, Komponenten per Drag-and-Drop zu verschieben und Medien aller Typen aus dem DAM hinzuzufügen, einschließlich Bildern, Videos und Textfragmenten (Inhaltsfragmente). AEM integrierte Inhaltseditor wird dann von *AEM-Autoren* , um umfangreiche und relevante Erlebnisse innerhalb der App zu erstellen, einschließlich der Integration in die restliche Adobe Experience Cloud.
 
 Ein AEM-Autor ist für die folgenden Aufgaben beim Erstellen einer App mit AEM Mobile On-demand Services verantwortlich.
 

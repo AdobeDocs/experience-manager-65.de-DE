@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 897a04b9-e357-4f1c-8aa0-2c2528f8556d
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 6%
+ht-degree: 11%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Die **App verwalten** Die Kachel und die Seite &quot;App verwalten&quot;bieten eine Möglichkeit, Anwendungsmetadaten anzuzeigen und zu bearbeiten. App-Metadaten sind erforderliche Details, um eine Anwendung für den Store eines Anbieters freizugeben. Dazu können gängige Metadaten, iOS-Metadaten und Screenshots gehören. Siehe [App-Kachel verwalten](/help/mobile/phonegap-app-details-tile.md) Weitere Informationen zu allgemeinen und iOS-Metadaten.
 

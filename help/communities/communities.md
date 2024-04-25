@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 3ed3768a-1b3c-45a1-a34c-61694cd407d9
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 6%
+source-wordcount: '390'
+ht-degree: 5%
 
 ---
 
@@ -32,15 +35,15 @@ Einen Überblick und die ersten Schritte finden Sie unter:
 
 ## Empfohlene Bereitstellungen {#recommended-deployments}
 
-* [Community-Inhaltsspeicherung](working-with-srp.md): beschreibt die verfügbaren Optionen des Social Resource Providers (SRP) für einen UGC Common Store
-* [Empfohlene Topologien für Communities](topologies.md): Erörtert Topologien basierend auf Anwendungsfall und SRP-Auswahl
+* [Community-Inhaltsspeicherung](working-with-srp.md): beschreibt die verfügbaren Optionen des Social Resource Providers (SRP) für einen UGC Common Store.
+* [Empfohlene Topologien für Communities](topologies.md): Erörtert Topologien basierend auf Anwendungsfall und SRP-Auswahl.
 
 ## Social Component Framework {#social-component-framework}
 
 * [Social Component Framework](scf.md): Übersicht über Framework und APIs.
-* [SCF Handlebars Helpers](handlebars-helpers.md): Standard-Helfer und wie Sie benutzerdefinierte Helfer schreiben.
-* [Clientseitige Anpassung](client-customize.md): Anpassen des Codes, der im Browser ausgeführt wird.
-* [Serverseitige Anpassung](server-customize.md): Anpassen des Codes, der auf dem Server ausgeführt wird.
+* [SCF Handlebars Helpers](handlebars-helpers.md): Standard-Helfer und wie benutzerdefinierte Helfer geschrieben werden.
+* [Clientseitige Anpassung](client-customize.md): Anpassung des Codes, der im Browser ausgeführt wird.
+* [Serverseitige Anpassung](server-customize.md): Anpassung des Codes, der auf dem Server ausgeführt wird.
 * [Storage Resource Provider (SRP)](srp.md): Übersicht über die Speicherung von Community-Inhalten.
 * [Kodierungsrichtlinien](code-guide.md): Richtlinien, Tipps und Tricks.
 * [Handbuch zu Community-Komponenten](components-guide.md): interaktives Entwicklungstool.
@@ -58,7 +61,7 @@ AEM Communities-Komponenten, -Funktionen und -Funktionen stellen die Bausteine f
 ## Community-Mitglieder {#community-members}
 
 * [Verwalten von Benutzern und Benutzergruppen](users.md)
-* [Anmeldung über Social Media bei Facebook und Twitter](social-login.md)
+* [Social-Anmeldung mit Facebook und Twitter](social-login.md)
 
 ## Community-Gruppen {#community-groups}
 

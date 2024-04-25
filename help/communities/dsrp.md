@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 3%
+source-wordcount: '589'
+ht-degree: 1%
 
 ---
 
@@ -87,7 +89,7 @@ Auf der Autoreninstanz, um auf die Speicherkonfigurationskonsole zuzugreifen
 
 * **SolrConfiguration**
 
-   * **[](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html)Zookeeper-Host**
+   * **[Zookeeper](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html) Host**
 
      Lassen Sie diesen Wert leer, wenn Solr mit dem internen ZooKeeper ausgeführt wird. Andernfalls beim Ausführen in [SolrCloud-Modus](solr.md#solrcloud-mode) mit einem externen ZooKeeper diesen Wert auf den URI für den ZooKeeper festlegen, z. B. *my.server.com:80*
 
@@ -101,7 +103,7 @@ Auf der Autoreninstanz, um auf die Speicherkonfigurationskonsole zuzugreifen
 
      *default*: collection1
 
-* Klicken Sie auf **[!UICONTROL Übermitteln]**.
+* Wählen Sie **[!UICONTROL Absenden]**.
 
 ### Migrationsschritte bei Null Ausfallzeiten für Standardwerte {#zerodt-migration-steps}
 

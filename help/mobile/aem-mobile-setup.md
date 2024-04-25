@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 exl-id: 0ead982d-2315-4947-b762-596aa2aa42a1
-source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 2%
+source-wordcount: '910'
+ht-degree: 3%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 >[!CAUTION]
 >
@@ -81,7 +84,7 @@ Führen Sie die Konfigurationsschritte aus, damit die AEM Mobile-Integrationen o
    1. **(Obligatorisch)** Geben Sie die erforderlichen Felder ein:
 
       1. Client-ID.
-      1. Client-Geheimnis.
+      1. Client Secret.
 
    1. **(Optional)** Bearbeiten Sie vorhandene Werte.
 
@@ -104,7 +107,7 @@ Führen Sie die Konfigurationsschritte aus, damit die AEM Mobile-Integrationen o
    1. Geräte-ID eingeben
    1. Geräte-Token eingeben
    1. Auswählen ***Testgerätekonfiguration*** , sodass Sie die eingegebenen Werte validieren können
-   1. Wählen Sie OK aus
+   1. OK auswählen
 
 ## Hinzufügen von AEM Mobile-Benutzerrollen und Zuweisen von Berechtigungen {#adding-aem-mobile-user-roles-and-assigning-permissions}
 
@@ -113,8 +116,8 @@ Nachdem Sie ein Projekt erstellt haben, sollten Sie Rollen erstellen und Benutze
 Bei der Entwicklung von AEM Mobile-Apps gibt es drei verschiedene Rollen:
 
 * Administrator
-* Entwickler
-* Autor
+* Entwicklerin oder Entwickler
+* Author
 
 Weitere Informationen zum Erstellen von Rollen mit unterschiedlichen Berechtigungen wie zum Erstellen von Apps oder zum Erstellen und Veröffentlichen von Inhalten finden Sie unter [Erstellen von Benutzerrollen und Gewähren von Zugriff](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) in der AEM Mobile-Hilfe.
 

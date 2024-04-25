@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '726'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -46,7 +48,7 @@ Diese Konfiguration eignet sich für *Nicht-Produktion* Umgebungen, z. B. für E
 
       * Verwenden Sie mindestens Version 2.6
 
-* Grundlegende Konfiguration
+* Standardkonfiguration
 
    * Befolgen Sie die MongoDB-Installationsanweisungen.
    * Für mongod konfigurieren:
@@ -98,7 +100,7 @@ Die folgenden Befehle sind ein Beispiel für die Einrichtung einer Replikatgrupp
    * Solr-Version 7.0.
    * Solr erfordert Java™ 1.7 oder höher.
 
-* Grundlegende Konfiguration
+* Standardkonfiguration
 
    * Folgen Sie dem Solr-Setup &quot;example&quot;.
    * Es ist kein Dienst erforderlich.
@@ -168,8 +170,8 @@ Um den gemeinsamen MongoDB-Speicher zu testen und zu überprüfen, posten Sie ei
 
    * Navigieren Sie zum Solr-Dashboard: [http://localhost:8983/solr/](http://localhost:8983/solr/).
    * Benutzer `core selector` auswählen `collection1`.
-   * Auswählen `Query`.
-   * Auswählen `Execute Query`.
+   * Wählen Sie `Query`.
+   * Wählen Sie `Execute Query`.
 
    ![ugc-solr](assets/ugc-solr.png)
 

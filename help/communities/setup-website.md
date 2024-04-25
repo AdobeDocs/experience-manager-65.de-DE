@@ -6,7 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 1f60a0d4-a272-45e8-9742-4b706be8502e
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 2%
@@ -39,8 +42,8 @@ Der Code in diesem Tutorial basiert darauf, dass der Hauptordnername für Anwend
 >* Knotennamen können Leerzeichen enthalten. Bei Verwendung in einem URI muss das Leerzeichen jedoch entweder als &quot;%20&quot;oder &quot;+&quot;kodiert werden.
 >* Knotennamen können Bindestriche und Unterstriche enthalten, müssen jedoch kodiert werden, wenn sie in einer Java™-Datei als Paketname referenziert werden. Sowohl Bindestriche als auch Unterstriche sind mit einem Unterstrich gefolgt von ihrem Unicode-Wert maskiert:
 >
-* Bindestrich wird zu &quot;_002d&quot;
-* Unterstrich wird zu &#39;_005f&#39;
+>   * Bindestrich wird zu &quot;_002d&quot;
+>   * Unterstrich wird zu &#39;_005f&#39;
 
 ## Einrichten des Anwendungsverzeichnisses (/apps) {#setup-the-application-directory-apps}
 

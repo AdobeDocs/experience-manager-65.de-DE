@@ -7,10 +7,13 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '599'
-ht-degree: 4%
+ht-degree: 2%
 
 ---
 
@@ -51,7 +54,7 @@ Diese Konsolen ähneln der Communities Sites-Konsole.
    * **[!UICONTROL Zusätzliche verfügbare Community-Gruppensprachen]**: Wählen Sie über das Dropdown-Menü die verfügbaren Gemeinschaftsgruppensprachen aus. Im Menü werden alle Sprachen angezeigt, in denen die übergeordnete Community-Site erstellt wird. Benutzer können in diesem Schritt unter diesen Sprachen auswählen, um Gruppen in mehreren Gebietsschemas zu erstellen. Dieselbe Gruppe wird in mehreren angegebenen Sprachen in der Gruppenkonsole der jeweiligen Community-Sites erstellt.
    * **[!UICONTROL Community-Gruppenname]**: arts
    * **[!UICONTROL Vorlage]**: Dropdown zur Auswahl `Reference Group`
-   * Wählen Sie **[!UICONTROL Weiter]** aus
+   * Auswählen **[!UICONTROL Nächste]**
 
 ![Verschachtelte Community-Gruppen](assets/parent-to-nestedgroup.png)
 
@@ -75,7 +78,7 @@ Fahren Sie mit den folgenden Einstellungen durch die anderen Bedienfelder:
       * **[!UICONTROL Miniaturansicht]**
          * `optional.*`
 
-      * **[!UICONTROL Wählen Sie Weiter]** aus.
+      * **[!UICONTROL Weiter auswählen]**.
 
 * Wählen Sie **[!UICONTROL Erstellen]** aus.
 
@@ -85,7 +88,7 @@ Die `groups` -Ordner enthält nun zwei Gruppen (aktualisieren Sie die Seite).
 
 ![Verschachteln der Gruppen](assets/create-community-group.png)
 
-####  Gruppe veröffentlichen {#publish-group}
+#### Gruppe veröffentlichen {#publish-group}
 
 Vor dem Erstellen von Gruppen, die innerhalb der `arts` -Gruppe, bewegen Sie den Mauszeiger über die `arts` und wählen Sie das Veröffentlichungssymbol aus, um es zu veröffentlichen.
 
@@ -111,7 +114,7 @@ Die `arts` -Gruppe sollte auch `groups` -Ordner, jedoch einer, der leer ist und 
    * Vorlage: `Reference Group`
    * Mitgliedschaft: Auswahl `Required Membership`, eine offene Gruppe, der Mitglieder beitreten können.
 
-1. **[!UICONTROL Verlauf]**
+1. **[!UICONTROL Geschichte]**
 
    * Titel: `Art History`
    * Name: `history`

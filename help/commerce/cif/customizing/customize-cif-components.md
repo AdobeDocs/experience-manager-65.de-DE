@@ -12,10 +12,11 @@ kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '2302'
-ht-degree: 88%
+ht-degree: 90%
 
 ---
 
@@ -35,7 +36,7 @@ Die Marke Venia hat vor kurzem begonnen, Produkte mit nachhaltigen Materialien z
 
 ## Voraussetzungen {#prerequisites}
 
-Zum Absolvieren dieses Tutorials ist eine lokale Entwicklungsumgebung erforderlich. Dazu gehört eine laufende Instanz von AEM, die konfiguriert und mit einer Adobe Commerce-Instanz verbunden ist. Überprüfen Sie die Anforderungen und Schritte zum [Einrichten einer lokalen Entwicklungsumgebung mit AEM](../develop.md). Um dem Tutorial vollständig zu folgen, benötigen Sie Berechtigungen zum Hinzufügen von [Attribute zu einem Produkt](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Commerce.
+Zum Absolvieren dieses Tutorials ist eine lokale Entwicklungsumgebung erforderlich. Dazu gehört eine laufende Instanz von AEM, die konfiguriert und mit einer Adobe Commerce-Instanz verbunden ist. Überprüfen Sie die Anforderungen und Schritte zum [Einrichten einer lokalen Entwicklungsumgebung mit AEM](../develop.md). Zum Absolvieren des ganzen Tutorials benötigen Sie die Berechtigung, in Adobe Commerce [Attribute einem Produkt](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) hinzuzufügen.
 
 Außerdem benötigen Sie eine GraphQL-IDE wie [GraphiQL](https://github.com/graphql/graphiql) oder eine Browser-Erweiterung, um die Code-Beispiele und Tutorials ausführen zu können. Wenn Sie eine Browser-Erweiterung installieren, vergewissern Sie sich, dass diese Anfrage-Header festlegen kann. In Google Chrome ist der _Altair GraphQL Client_ eine Erweiterung, die dazu geeignet ist.
 
@@ -226,7 +227,7 @@ Dies ist eine neue Methode, um die Logik zu kapseln und anzugeben, ob das `eco_f
    private ProductTeaser productTeaser;
    ```
 
-   Bei allen Methoden, die nicht überschrieben oder geändert werden, können Sie den Wert zurückgeben, der `ProductTeaser` gibt zurück. Zum Beispiel:
+   Bei allen Methoden, die nicht überschrieben oder geändert werden, können Sie den Wert zurückgeben, der von `ProductTeaser` zurückgegeben wird. Zum Beispiel:
 
    ```java
    @Override
@@ -353,7 +354,7 @@ In diesem Fall möchten Sie ein Banner über dem Teaser darstellen, um anzuzeige
        componentGroup="Venia - Commerce"/>
    ```
 
-   Die Komponentendefinition für die Produkt-Teaser-Komponente in diesem Projekt befindet sich oben. Beachten Sie die Eigenschaft `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. Dies ist ein Beispiel für das Erstellen einer [Proxy-Komponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=de#create-proxy-components). Anstatt alle Produkt-Teaser-HTL-Skripte aus den AEM CIF Kernkomponenten zu kopieren und einzufügen, können Sie die `sling:resourceSuperType` , um alle Funktionen zu übernehmen.
+   Die Komponentendefinition für die Produkt-Teaser-Komponente in diesem Projekt befindet sich oben. Beachten Sie die Eigenschaft `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. Dies ist ein Beispiel für das Erstellen einer [Proxy-Komponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=de#create-proxy-components). Anstatt alle Produkt-Teaser-HTL-Skripte aus den AEM CIF-Kernkomponenten zu kopieren und einzufügen, können Sie mit `sling:resourceSuperType` sämtliche Funktionen übernehmen.
 
 1. Öffnen Sie die Datei `productteaser.html`. Dies ist eine Kopie der `productteaser.html`-Datei des [CIF-Produkt-Teasers](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html).
 
@@ -491,7 +492,7 @@ Sie haben Ihre erste AEM-CIF-Komponente angepasst. Laden Sie die [fertigen Lösu
 
 ## Bonusaufgabe {#bonus-challenge}
 
-Überprüfen Sie die Funktionalität des Abzeichens **Neu**, das bereits im Produkt-Teaser implementiert wurde. Versuchen Sie, ein zusätzliches Kontrollkästchen hinzuzufügen, damit Autorinnen bzw. Autoren steuern können, wann das **Umweltfreundlich**-Zeichen angezeigt werden soll. Komponentendialogfeld aktualisieren unter `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
+Überprüfen Sie die Funktionalität des Abzeichens **Neu**, das bereits im Produkt-Teaser implementiert wurde. Versuchen Sie, ein zusätzliches Kontrollkästchen hinzuzufügen, damit Autorinnen bzw. Autoren steuern können, wann das **Umweltfreundlich**-Zeichen angezeigt werden soll. Aktualisieren Sie das Komponentendialogfeld unter `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
 
 ![Aufgabe zur Implementierung neuer Abzeichen](../assets/customize-cif-components/new-badge-implementation-challenge.png)
 

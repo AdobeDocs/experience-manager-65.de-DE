@@ -1,19 +1,22 @@
 ---
-title: Handbuch der Community-Komponenten
+title: Handbuch zu Community-Komponenten
 description: Ein interaktives Entwicklungstool für die ersten Schritte mit dem Social Component Framework (SCF)
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 12c0eae5-fd76-4480-a012-25d3312f3570
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 3%
+source-wordcount: '1153'
+ht-degree: 1%
 
 ---
 
-# Handbuch der Community-Komponenten  {#community-components-guide}
+# Handbuch zu Community-Komponenten  {#community-components-guide}
 
 Das Komponentenleitfaden der Community ist ein interaktives Entwicklungstool für die [Social Component Framework (SCF)](scf.md). Es bietet eine Liste der verfügbaren Adobe Experience Manager (AEM) Communities-Komponenten oder der komplexeren Funktionen, die aus mehreren Komponenten erstellt wurden.
 
@@ -34,11 +37,11 @@ Die Interaktionen mit den Communities-Komponenten variieren je nach:
 * Der Server (Autor oder Veröffentlichung).
 * Ob der Site-Besucher angemeldet ist oder nicht.
 * Bei Anmeldung werden die dem Mitglied zugewiesenen Berechtigungen zugewiesen.
-* Gibt an, ob der Standard-SRP [JSRP](jsrp.md), wird verwendet.
+* Ob der Standard-SRP [JSRP](jsrp.md), wird verwendet.
 
 Fügen Sie beim Autor Folgendes ein, um den Bearbeitungsmodus zu aktivieren: `editor.html` oder `cf#` als erstes Pfadsegment nach dem Servernamen:
 
-* Standard-Benutzeroberfläche:
+* Standardbenutzeroberfläche:
 
   [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
 
@@ -58,7 +61,7 @@ Fügen Sie beim Autor Folgendes ein, um den Bearbeitungsmodus zu aktivieren: `ed
 >
 >Wenn Sie nicht mit AEM vertraut sind, lesen Sie die Dokumentation unter [grundlegende Handhabung](../../help/sites-authoring/basic-handling.md).
 
-### Homepage {#home-page}
+### Startseite {#home-page}
 
 Das Handbuch enthält eine Liste von SCF-Komponenten, die links auf der Seite für die Vorschau und das Prototyping verfügbar sind.
 
@@ -68,19 +71,19 @@ Komponentenleitfaden, wie in einer Autoreninstanz im Bearbeitungsmodus angezeigt
 
 ## Komponentenseiten {#component-pages}
 
-Wählen Sie eine Komponente aus der Liste auf der linken Seite der Seite aus.
+Wählen Sie eine Komponente aus der Liste links auf der Seite aus.
 
 ![community-component-pages](assets/community-component2.png)
 
 Der Hauptteil des Handbuchs wird angezeigt:
 
 1. Titel: Der Name der ausgewählten Komponente
-1. [Client-seitige Bibliotheken](#client-side-libraries): Liste einer oder mehrerer erforderlicher Kategorien
-1. [Einschließlich](scf.md#add-or-include-a-communities-component): Wenn die Komponente dynamisch eingeschlossen werden kann, kann der Status im Bearbeitungsmodus des Autors umgeschaltet werden:
+1. [Client-seitige Bibliotheken](#client-side-libraries): Eine Liste der erforderlichen Kategorien
+1. [Einschließlich](scf.md#add-or-include-a-communities-component): Wenn die Komponente dynamisch eingeschlossen sein kann, kann der Status im Bearbeitungsmodus des Autors umgeschaltet werden:
 
-   * Wenn hinzugefügt, wird folgender Text angezeigt: &quot;Diese Komponente wird über ihren par -Knoten einbezogen.&quot;
+   * Wenn der Text hinzugefügt wird, lautet der angezeigte Text: &quot;Diese Komponente wird über ihren par -Knoten einbezogen.&quot;
    * Wenn enthalten, lautet der angezeigte Text: &quot;Diese Komponente wird dynamisch einbezogen.&quot;
-   * Wenn dies nicht möglich ist, wird kein Text angezeigt
+   * Wenn nicht enthalten, wird kein Text angezeigt
 
 1. Beispielkomponente oder -funktion: eine aktive Instanz der Komponente oder Funktion. Wenn eine Komponente geändert werden soll, kann sie durch Änderungen an den Vorlagen, CSS und Daten im Registerkartenabschnitt geändert werden.
 
@@ -90,9 +93,9 @@ Der Hauptteil des Handbuchs wird angezeigt:
 
 ### Autoreninteraktionen {#author-interactions}
 
-Wenn Sie das Handbuch in einer Autoreninstanz verwenden, ist es möglich, die Konfiguration einer Komponente durch Öffnen des Dialogfelds zu erleben. Informationen für Entwickler finden Sie im Abschnitt [Komponenten- und Funktionsgrundlagen](essentials.md) -Abschnitt der Dokumentation, während die Dialogfeldeinstellungen unter [Communities-Komponenten](author-communities.md) für Autoren.
+Wenn Sie das Handbuch in einer Autoreninstanz verwenden, ist es möglich, die Konfiguration einer Komponente zu erleben, indem Sie das zugehörige Dialogfeld öffnen. Informationen für Entwickler finden Sie im Abschnitt [Komponenten- und Funktionsgrundlagen](essentials.md) -Abschnitt der Dokumentation, während die Dialogfeldeinstellungen unter [Communities-Komponenten](author-communities.md) -Abschnitt für Autoren.
 
-Im Komponentenleitfaden für die Community-Komponenten werden einige Einstellungen für den Komponenten-Dialog mit dem [Einschließlich](scf.md#add-or-include-a-communities-component) Status umschalten. Um zwischen der Verwendung der vorhandenen Ressource oder einer dynamisch eingeschlossenen Ressource umzuschalten, wählen Sie im Bearbeitungsmodus sowohl die Komponente als auch den einschließbaren Text aus und doppelklicken Sie, um das Bearbeitungsdialogfeld zu öffnen:
+Im Komponentenleitfaden für die Community-Komponenten werden einige Einstellungen für den Komponenten-Dialog mit dem [Einschließlich](scf.md#add-or-include-a-communities-component) Status ein-/ausschalten. Um zwischen der Verwendung der vorhandenen Ressource oder einer dynamisch eingeschlossenen Ressource umzuschalten, wählen Sie im Bearbeitungsmodus sowohl die Komponente als auch den einschließbaren Text aus und doppelklicken Sie, um das Bearbeitungsdialogfeld zu öffnen:
 
 ![community-component3](assets/community-component3.png)
 
@@ -104,11 +107,11 @@ Unter dem **Vorlagen** tab:
 
   Wenn diese Option deaktiviert ist, verwendet das Komponentenleitfaden die vorhandene Ressource im Repository (einen jcr-Knoten, der einem par -Knoten untergeordnet ist).
 
-   * angezeigter Text: &quot;Diese Komponente wird über ihren par -Knoten einbezogen.&quot;
+   * Der angezeigte Text lautet: &quot;Diese Komponente wird über ihren par -Knoten einbezogen.&quot;
 
   Wenn diese Option aktiviert ist, verwendet das Komponentenleitfaden Sling, um eine Komponente des resourceType des untergeordneten Knotens (nicht vorhandene Ressource) dynamisch einzuschließen.
 
-   * angezeigter Text: &quot;Diese Komponente wird dynamisch einbezogen.&quot;
+   * Der angezeigte Text lautet: &quot;Diese Komponente wird dynamisch einbezogen.&quot;
 
   Die Option Standard ist deaktiviert.
 
@@ -118,7 +121,7 @@ Bei Verwendung des Handbuchs in einer Veröffentlichungsinstanz ist es möglich,
 
 >[!NOTE]
 >
->Beachten Sie, wenn das SRP standardmäßig auf [JSRP](jsrp.md)festgelegt ist, dann ist der in die Veröffentlichungsinstanz eingegebene benutzergenerierte Inhalt nur in der Veröffentlichungsinstanz sichtbar und wird *not* aus dem [Moderation](moderate-ugc.md) auf der Autoreninstanz.
+>Beachten Sie, wenn das SRP standardmäßig auf [JSRP](jsrp.md)festgelegt ist, dann ist der in die Veröffentlichungsinstanz eingegebene benutzergenerierte Inhalt nur in der Veröffentlichungsinstanz sichtbar und *not* aus dem [Moderation](moderate-ugc.md) auf der Autoreninstanz.
 
 ## Client-seitige Bibliotheken {#client-side-libraries}
 
@@ -154,13 +157,13 @@ Verwenden der Kommentarkomponente als Beispiel für die Autoren- oder Veröffent
 
    Beispiel: `/content/community-components/en/comments/jcr:content`
 
-1. Eigenschaft hinzufügen
+1. Hinzufügen einer Eigenschaft
 
    * **Name** `scg:showIde`
    * **Typ** `String`
    * **Wert** `true`
 
-1. Klicken Sie auf **[!UICONTROL Alle speichern]**
+1. Auswählen **[!UICONTROL Alle speichern]**
 1. Laden Sie die Seite &quot;Kommentare&quot;im Handbuch erneut.
 
    [http://localhost:4503/content/community-components/en/comments.html](http://localhost:4503/content/community-components/en/comments.html)
@@ -173,7 +176,7 @@ Verwenden der Kommentarkomponente als Beispiel für die Autoren- oder Veröffent
 
 ### Registerkarte &quot;Vorlagen&quot; {#templates-tab}
 
-Wählen Sie den Tab Vorlagen aus, um die mit der Komponente verknüpften Vorlagen anzuzeigen.
+Wählen Sie den Tab Vorlagen aus, um die der Komponente zugeordneten Vorlagen anzuzeigen.
 
 Mit dem Vorlagen-Editor können lokale Bearbeitungen kompiliert und auf die Beispielkomponenteninstanz oben auf der Seite angewendet werden, ohne dass sich dies auf die Komponente im Repository auswirkt.
 

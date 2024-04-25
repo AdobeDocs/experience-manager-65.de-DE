@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: e130bab4-524d-4413-ba8b-53d0ed9e8623
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 12%
+source-wordcount: '1132'
+ht-degree: 1%
 
 ---
 
@@ -56,17 +59,17 @@ Auswählen der platzierten `Ideation` -Komponente, damit Sie auf die `Configure`
 
 Unter dem **[!UICONTROL Einstellungen]** Registerkarte Einstellungen für Ideen und Kommentare festlegen:
 
-* **Anhangminiatur zulassen**
-* **Max. Anhangminiaturgröße**
-* **Minimale Bildgröße für Miniaturansicht**
-* **Max. Miniaturgröße**
-* **Privilegierte Mitglieder zulassen**
-* **Zugelassene privilegierte Mitglieder**
-* **Benutzergenerierte Inhalte im Autoren-Bearbeitungsmodus blockieren**
-* **Ideen-Titel**
+* **Miniaturansicht des Anhangs zulassen**
+* **Maximale Größe der Miniaturansichten anhängen**
+* **Mindestbildgröße für Miniaturansichten**
+* **Maximale Größe der Miniaturansichten**
+* **Zulassen von privilegierten Mitgliedern**
+* **Zugelassene berechtigte Mitglieder**
+* **Vom Benutzer generierte Inhalte im Bearbeitungsmodus des Autors blockieren**
+* **Ideentitel**
 
 * Der Anzeigetitel für die Idee. Der Standardwert ist `Ideation`.
-* **Ideen-Beschreibung**
+* **Ideenbeschreibung**
 
   Eine Beschreibung, die als Untertitel für die Idee angezeigt wird. Der Standardwert ist keine Beschreibung.
 
@@ -94,7 +97,7 @@ Unter dem **[!UICONTROL Einstellungen]** Registerkarte Einstellungen für Ideen 
 
   Wenn diese Option aktiviert ist, können der Idee oder dem Kommentar Dateianlagen hinzugefügt werden. Die Option Standard ist deaktiviert.
 
-* **Max. Dateigröße**
+* **Maximale Dateigröße**
 
   Nur relevant, wenn `Allow File Uploads` aktiviert ist. Dieses Feld begrenzt die Größe (in Byte) einer hochgeladenen Datei. Der Standardwert ist 104857600 (10 MB).
 
@@ -114,11 +117,11 @@ Unter dem **[!UICONTROL Einstellungen]** Registerkarte Einstellungen für Ideen 
 
   Sofern aktiviert, können Sie über die Kommentare einer Idee abstimmen. Die Option Standard ist deaktiviert.
 
-* **Benutzern das Löschen von Anmerkungen und Themen ermöglichen**
+* **Benutzern das Löschen von Kommentaren und Themen ermöglichen**
 
   Wenn diese Option aktiviert ist, können Mitglieder die Kommentare und Ideen löschen, die sie veröffentlicht haben. Die Option Standard ist deaktiviert.
 
-* **Folgende zulassen**
+* **Folgende erlauben**
 
   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Ideenbeiträge hinzu, mit der Mitglieder [benachrichtigt](/help/communities/notifications.md) von neuen Stellen. Die Option Standard ist deaktiviert.
 
@@ -130,25 +133,25 @@ Unter dem **[!UICONTROL Einstellungen]** Registerkarte Einstellungen für Ideen 
 
   Sofern aktiviert, können Sie über die Kommentare einer Idee abstimmen. Die Option Standard ist deaktiviert.
 
-* **Abzeichen anzeigen**
+* **Anzeigemarken**
 
   Wenn diese Option aktiviert ist, zeigen Sie Earned und Assored [Badges](/help/communities/implementing-scoring.md) mit der Idee eines Mitglieds. Die Option Standard ist deaktiviert.
 
 * **Antworten auf Listenseite nicht abrufen**
 
-* **Feature-Inhalt zulassen**
+* **Zulassen von speziellen Inhalten**
 
   Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](/help/communities/featured.md). Die Option Standard ist deaktiviert.
 
 * **Erwähnung aktivieren**
 * **Max. Erwähnungen**
-* **UI-Erwähnungsmuster**
+* **Benutzeroberflächen-Erwähnungsmuster**
 
 #### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
 Unter dem **[!UICONTROL Benutzermoderation]** -Registerkarte angeben, wie die veröffentlichten Ideen und Kommentare (benutzergenerierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
-* **Posts ablehnen**
+* **Posts verweigern**
 
   Wenn diese Option aktiviert ist, können Moderatoren vertrauenswürdiger Mitglieder Beiträge ablehnen und verhindern, dass der Beitrag im öffentlichen Forum erscheint. Die Option Standard ist deaktiviert.
 
@@ -160,7 +163,7 @@ Unter dem **[!UICONTROL Benutzermoderation]** -Registerkarte angeben, wie die ve
 
   Wenn diese Option aktiviert ist, können Mitglieder Themen oder Kommentare anderer Mitglieder als unangemessen kennzeichnen. Die Option Standard ist deaktiviert.
 
-* **Liste mit Kenn-zeichnungsgründen**
+* **Liste der Kennzeichnungsgründe**
 
   Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste den Grund auswählen, aus dem Themen oder Kommentare als unangemessen gekennzeichnet werden. Die Option Standard ist deaktiviert.
 
@@ -184,7 +187,7 @@ Unter dem **[!UICONTROL Tag-Feld]** Registerkarte die Tags, die angewendet werde
 
   Relevant, wenn `Allow Tagging` wird unter dem **[!UICONTROL Einstellungen]** Registerkarte. Die Tags, die angewendet werden können, beschränken sich auf die Tags innerhalb der aktivierten Namespace-Kategorien. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) und &quot;Alle Tags einschließen&quot;. Der Standardwert ist &quot;none&quot;, was bedeutet, dass alle Namespaces zulässig sind.
 
-* **Empfehlungsgrenze**
+* **Empfehlungslimit**
 
   Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht wird. Ein Wert von **-1** bedeutet keine Begrenzung. Der Standardwert ist 0.
 

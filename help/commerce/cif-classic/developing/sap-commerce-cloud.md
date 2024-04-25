@@ -1,16 +1,18 @@
 ---
 title: Entwicklung mit SAP Commerce Cloud
-description: Das SAP Commerce Cloud Integration Framework beinhaltet eine Integrationsschicht mit einer API.
+description: Das Integrations-Framework SAP Commerce Cloud enthält eine Integrationsebene mit einer API.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '2303'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +20,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->Das eCommerce-Framework kann mit jeder eCommerce-Lösung verwendet werden. Bestimmte Einzelheiten und Beispiele, die hier behandelt werden, finden Sie unter [hybris](https://www.sap.com/germany/products/crm.html) -Lösung.
+>Das eCommerce-Framework kann mit jeder eCommerce-Lösung verwendet werden. Bestimmte hier behandelte Aspekte und Beispiele beziehen sich auf die [hybris](https://www.sap.com/germany/products/crm.html)-Lösung.
 
 Das Integrations-Framework enthält eine Integrationsebene mit einer API. Damit können Sie:
 
@@ -406,7 +408,7 @@ public class AxisFilter implements VariantFilter {
 
 * Der Warenkorb wird von `CommerceSession:` gesteuert:
 
-   * Die `CommerceSession` führt Hinzufügen oder Entfernen usw. durch.
+   * Die `CommerceSession` führt das Hinzufügen, Entfernen usw. durch.
    * `CommerceSession` nimmt auch die diversen Berechnungen des Warenkorbs vor. ``
 
 * Obwohl dies nicht direkt mit dem Warenkorb zusammenhängt, muss `CommerceSession` auch Katalogpreisinformationen angeben (da sie die Preise steuert).
@@ -574,7 +576,7 @@ Vor einer vorhandenen hybris-Implementierung kann ein AEM-Font-End platziert wer
 
 * hybris > AEM
 
-   * Beim Anmelden bei AEM (falls das System einen Benutzer erkennt):
+   * Beim Anmelden bei AEM (falls das System die Person erkennt):
 
       * Versuchen Sie, sich mit dem angegebenen Benutzernamen/Kennwort bei Hybris anzumelden.
       * Falls erfolgreich, erstellen Sie eine neue Benutzerin oder einen neuen Benutzer in AEM mit demselben Kennwort (AEM-spezifisches Salt wird zu AEM-spezifischem Hash).

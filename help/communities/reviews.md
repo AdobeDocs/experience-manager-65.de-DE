@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 4%
+source-wordcount: '1290'
+ht-degree: 1%
 
 ---
 
@@ -85,11 +88,11 @@ Unter dem **[!UICONTROL Überprüfungen]** -Registerkarte angeben, wie Überprü
 
   Wenn diese Option aktiviert ist, können Dateianlagen für die Überprüfung hochgeladen werden. Die Option Standard ist deaktiviert.
 
-* **Max. Dateigröße**
+* **Maximale Dateigröße**
 
   Nur relevant, wenn **[!UICONTROL Datei-Uploads zulassen]** aktiviert ist. Dieses Feld begrenzt die Größe (in Byte) einer hochgeladenen Datei. Der Standardwert ist 10 MB.
 
-* **[!UICONTROL Maximale Nachrichtenlänge]**
+* **[!UICONTROL Max. Nachrichtenlänge]**
 
   Maximale Zeichenanzahl, die in das Textfeld eingegeben werden kann. Der Standardwert beträgt 4096 Zeichen.
 
@@ -109,7 +112,7 @@ Unter dem **[!UICONTROL Benutzermoderation]** Registerkarte angeben, wie die ver
 
 ![user-moderation](assets/configure-review4.png)
 
-* **[!UICONTROL Vor der Moderation]**
+* **[!UICONTROL Vormoderation]**
 
   Wenn diese Option aktiviert ist, müssen Überprüfungen genehmigt werden, bevor sie auf einer Veröffentlichungs-Site erscheinen. Die Option Standard ist deaktiviert.
 
@@ -117,19 +120,19 @@ Unter dem **[!UICONTROL Benutzermoderation]** Registerkarte angeben, wie die ver
 
   Wenn diese Option aktiviert ist, kann das Mitglied, das die Überprüfung veröffentlicht hat, sie löschen. Die Option Standard ist deaktiviert.
 
-* **[!UICONTROL Bewertungen ablehnen]**
+* **[!UICONTROL Reviews verweigern]**
 
   Wenn diese Option aktiviert ist, können Moderatoren Bewertungen ablehnen. Die Option Standard ist deaktiviert.
 
-* **[!UICONTROL Bewertungen schließen/erneut öffnen]**
+* **[!UICONTROL Prüfungen schließen/erneut öffnen]**
 
   Wenn diese Option aktiviert ist, können Moderatoren Bewertungen schließen und erneut öffnen. Die Option Standard ist deaktiviert.
 
-* **[!UICONTROL Bewertungen kennzeichnen]**
+* **[!UICONTROL Flag-Reviews]**
 
   Ist diese Option aktiviert, können Mitglieder Bewertungen als unangemessen kennzeichnen. Die Option Standard ist deaktiviert.
 
-* **[!UICONTROL Liste mit Kenn-zeichnungsgründen]**
+* **[!UICONTROL Liste der Kennzeichnungsgründe]**
 
   Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste den Grund auswählen, aus dem eine Überprüfung als unangemessen gekennzeichnet wird. Die Option Standard ist deaktiviert.
 
@@ -195,13 +198,13 @@ Unter dem **[!UICONTROL Ressourcentypen]** Registerkarte den benutzerdefinierten
 
 ![Kommentare und Abstimmungen](assets/configure-review7.png)
 
-* **[!UICONTROL Kommentarressourcentyp]**
+* **[!UICONTROL Kommentar-Ressourcentyp]**
 
   Navigieren Sie zum resourceType eines erweiterten `comment`Komponente (einzelner Kommentar) in /apps. Zum Beispiel: `/apps/social/commons/components/hbs/comments/comment`.
 
   Diese Ressource identifiziert den resourceType des UGC, der erstellt wurde, wenn ein Besucher einen Kommentar veröffentlicht.
 
-* **[!UICONTROL Abstimmungs-Ressourcentyp]**
+* **[!UICONTROL Abstimmungsressourcentyp]**
 
   Navigieren Sie zum resourceType eines erweiterten `voting`-Komponente in /apps. Zum Beispiel: `/apps/social/components/hbs/voting`.
 

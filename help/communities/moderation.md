@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2038'
-ht-degree: 4%
+source-wordcount: '2028'
+ht-degree: 2%
 
 ---
 
@@ -155,18 +157,18 @@ Die Site beschränkt die Anzeige des referenzierten benutzergenerierten Inhalts 
 Der Content-Typ beschränkt die angezeigte referenzierte benutzergenerierte Inhaltsanzeige auf Beiträge des ausgewählten Ressourcentyps. Es können ein oder mehrere der folgenden Typen ausgewählt werden. Alle Typen werden angezeigt, wenn keine ausgewählt sind.
 
 * **Kommentar**
-* **Forenthema**
-* **Forumsantwort**
-* **Frage**
-* **Antwort**
+* **Forumthema**
+* **Forumantwort**
+* **Frage zur Servicequalität**
+* **QnA-Antwort**
 * **Blog-Artikel**
 * **Blog-Kommentar**
 * **Kalenderereignis**
 * **Kalenderkommentar**
-* **Ordner in Dateibibliothek**
-* **Dokument in Dateibibliothek**
+* **Ordner der Dateibibliothek**
+* **File Library Document**
 * **Idee**
-* **Ideen-Kommentar**
+* **Ideenkommentar**
 
 ![content-types](assets/content-types.png)
 
@@ -174,7 +176,7 @@ Der Content-Typ beschränkt die angezeigte referenzierte benutzergenerierte Inha
 
 So fügen Sie zusätzliche Ressourcen zum Filtern hinzu:
 
-* Melden Sie sich bei Ihrer Authoring-Instanz als Admin 
+* Melden Sie sich bei Ihrer Autoreninstanz als Administrator an.
 * Öffnen [Web-Konsole](https://localhost:4502/system/console/configMgr).
 * Suchen `AEM Communities Moderation Dashboard Filters`.
 * Wählen Sie die Konfiguration aus, damit Sie sie im Bearbeitungsmodus öffnen können.
@@ -186,7 +188,7 @@ So fügen Sie zusätzliche Ressourcen zum Filtern hinzu:
 
   ![additional-contenttype](assets/additional-contenttype.png)
 
-* Wählen Sie Speichern aus.
+* Wählen Sie „Speichern“ aus.
 * Aktualisieren Sie die Konsole Communities - Moderation .
 
 Das Ergebnis ist ein neuer, auswählbarer Filter für `Voting` unter `Content Type` Filtergruppe.
@@ -215,7 +217,7 @@ Sobald ein Inhaltselement gekennzeichnet ist, bleibt es so lange gekennzeichnet,
 
 Mitglieder beschränken die referenzierte UGC, die für UGC angezeigt wird, die durch den eingegebenen Mitgliedsnamen veröffentlicht wurde.
 
-![Mitglieder](assets/members.png)
+![members](assets/members.png)
 
 #### Veröffentlichungszeitraum {#posted-in-the-last}
 
@@ -317,13 +319,13 @@ Wenn Sie mit einem einzelnen Beitrag arbeiten, wird das Symbol Antworten angezei
 
 #### Zulassen {#allow}
 
-![zulassen](assets/allow.png)
+![allow](assets/allow.png)
 
 Wenn Sie mit einem einzelnen Beitrag arbeiten, wird das Symbol Zulassen angezeigt, wenn der Beitrag entweder gekennzeichnet oder abgelehnt wurde. Wenn die Option Zulassen aktiviert ist, werden alle Flags gelöscht.
 
 #### Ablehnen {#deny}
 
-![ablehnen](assets/deny.png)
+![Ablehnen](assets/deny.png)
 
 Die **Ablehnen** Die Moderationsaktion ist nur für moderierte Inhalte verfügbar und wird nur im Mehrfachauswahlmodus bei nicht moderierten Inhalten angezeigt.
 
@@ -335,13 +337,13 @@ Inhalt, der den Status &quot;Ausstehend&quot;verlässt, kann nie in den Status &
 
 #### Löschen {#delete}
 
-![löschen](assets/delete.png)
+![delete](assets/delete.png)
 
 Im Einzelauswahl- oder Massenmodus können Sie Elemente auswählen und löschen. Die Löschaktion führt zu einem Bestätigungsdialogfeld. Nach dem Löschen werden diese Elemente sofort aus dem Inhaltsbereich entfernt. **Sobald UGC gelöscht wurde, wird es dauerhaft aus dem Repository entfernt und kann später nicht mehr abgerufen werden**.
 
 #### Schließen {#close}
 
-![schließen](assets/close.png)
+![close](assets/close.png)
 
 Beim Arbeiten mit einem einzelnen Beitrag wird ein Symbol Schließen angezeigt, wenn der UGC-Typ die Möglichkeit unterstützt, weitere Beiträge für diese Ressource zu verhindern.
 
@@ -353,7 +355,7 @@ Wenn Sie mit einem einzelnen Beitrag arbeiten, wird beim Bewegen des Mauszeigers
 
 Um zum Inhaltsbereich zurückzukehren und mehrere UGC-Beiträge anzuzeigen, wählen Sie das X in der oberen rechten Ecke des Detailbereichs der Ansicht aus.
 
-Beispiel:
+Zum Beispiel:
 
 ![moderation-history](assets/moderation-history.png)
 
@@ -367,6 +369,6 @@ Bewegen Sie dazu den Mauszeiger über den Beitrag, um die `View Detail` und wäh
 
 Um zum Inhaltsbereich zurückzukehren und mehrere UGC-Beiträge anzuzeigen, wählen Sie das X in der oberen rechten Ecke des Detailbereichs der Ansicht aus.
 
-Beispiel:
+Zum Beispiel:
 
 ![view1](assets/view1.png)

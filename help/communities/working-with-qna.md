@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 17081710-35e0-4f5b-9485-1f85c065fd70
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 10%
+source-wordcount: '1389'
+ht-degree: 1%
 
 ---
 
@@ -55,19 +58,19 @@ Auswählen der platzierten `QnA` -Komponente, damit Sie auf die `Configure` -Sym
 
 Unter dem **Einstellungen** Registerkarte Einstellungen für Themen (Fragen) und Antworten (Antworten) festlegen:
 
-* **Anhangminiatur zulassen**
+* **Miniaturansicht des Anhangs zulassen**
 
   Wenn diese Option aktiviert ist, wird eine Miniaturansicht des angehängten Bildes erstellt.
 
-* **Max. Anhangminiaturgröße**
+* **Maximale Größe der Miniaturansichten anhängen**
 
   Maximale Größe (in Pixel) des Miniaturbilds des Anhangs. Der Standardwert ist 800 x 800.
 
-* **Minimale Bildgröße für Miniaturansicht**
+* **Mindestbildgröße für Miniaturansichten**
 
   Mindestgröße (in Byte) des Bildes zum Generieren von Miniaturansichten für Inline-Bilder. Der Standardwert ist 100000 Bytes (100 KB).
 
-* **Max. Miniaturgröße**
+* **Maximale Größe der Miniaturansichten**
 
   Maximale Größe (in Pixel) des Miniaturbilds für Inline-Bilder. Der Standardwert ist 800 x 800.
 
@@ -95,11 +98,11 @@ Unter dem **Einstellungen** Registerkarte Einstellungen für Themen (Fragen) und
 
   Wenn diese Option aktiviert ist, können der Frage oder dem Kommentar Dateianlagen hinzugefügt werden. Die Option Standard ist deaktiviert.
 
-* **Folgende zulassen**
+* **Folgende erlauben**
 
   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Forumsbeiträge hinzu, mit der Mitglieder [benachrichtigt](/help/communities/notifications.md) von neuen Stellen. Die Option Standard ist deaktiviert.
 
-* **Fixierung zulassen**
+* **Zulassen von Pinnwänden**
 
   Wenn diese Option aktiviert ist, können Forumsthemen an den Anfang der Themenliste gesetzt werden. Die Option Standard ist deaktiviert.
 
@@ -107,7 +110,7 @@ Unter dem **Einstellungen** Registerkarte Einstellungen für Themen (Fragen) und
 
   Wenn diese Option aktiviert ist, können Mitglieder per E-Mail über neue Beiträge informiert werden ([Abonnement](/help/communities/subscriptions.md)). Erfordert, dass Folgendes aktiviert wird und [E-Mail konfiguriert](/help/communities/email.md). Die Option Standard ist deaktiviert.
 
-* **Max. Dateigröße**
+* **Maximale Dateigröße**
 
   Nur relevant, wenn `Allow File Uploads` aktiviert ist. Dieses Feld begrenzt die Größe (in Byte) einer hochgeladenen Datei. Der Standardwert ist 104857600 (10 MB).
 
@@ -127,26 +130,26 @@ Unter dem **Einstellungen** Registerkarte Einstellungen für Themen (Fragen) und
 
   Wenn diese Option aktiviert ist, fügen Sie die Funktion Abstimmung einer Frage hinzu. Die Option Standard ist deaktiviert.
 
-* **Benutzern das Löschen von Anmerkungen und Themen ermöglichen**
+* **Benutzern das Löschen von Kommentaren und Themen ermöglichen**
 
   Wenn diese Option aktiviert ist, können Mitglieder die von ihnen veröffentlichten Kommentare und Fragen löschen. Die Option Standard ist deaktiviert.
 
-* **Privilegierte Mitglieder zulassen**
+* **Zulassen von privilegierten Mitgliedern**
 
   Wenn diese Option aktiviert ist, dürfen nur privilegierte Mitglieder Inhalte erstellen.
 
-* **Benutzergenerierte Inhalte im Autoren-Bearbeitungsmodus blockieren**
+* **Vom Benutzer generierte Inhalte im Bearbeitungsmodus des Autors blockieren**
 
   Wenn diese Option aktiviert ist, wird benutzergenerierter Inhalt bei der Bearbeitung im Autorenmodus blockiert.
 
-* **Ausgewählte Antwort an den Anfang verschieben**
+* **Ausgewählte Antwort nach oben verschieben**
 
   Wenn diese Option aktiviert ist, ist die erste angezeigte Antwort eine ausgewählte Antwort. Die Option Standard ist deaktiviert.
-* **Abzeichen anzeigen**
+* **Anzeigemarken**
 
   Wenn diese Option aktiviert ist, zeigen Sie Earned und Assored [Badges](/help/communities/implementing-scoring.md) mit dem Blogeintrag eines Mitglieds. Die Option Standard ist deaktiviert.
 
-* **Feature-Inhalt zulassen**
+* **Zulassen von speziellen Inhalten**
 
   Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](/help/communities/featured.md). Die Option Standard ist deaktiviert.
 
@@ -158,7 +161,7 @@ Unter dem **Einstellungen** Registerkarte Einstellungen für Themen (Fragen) und
 
   Schränken Sie die maximale Anzahl der Erwähnungen ein, die in einem Beitrag zulässig sind. Der Standardwert ist 10.
 
-* **UI-Erwähnungsmuster**
+* **Benutzeroberflächen-Erwähnungsmuster**
 
   Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag mit Tags zu versehen (@mention). Zum Beispiel: `~{{familyName}}{{givenName}}`.
 
@@ -181,7 +184,7 @@ Wenn diese Option aktiviert ist, können Moderatoren auf Veröffentlichungsseite
 
   Ist diese Option aktiviert, können Mitglieder Fragen oder Antworten anderer Mitglieder als unangemessen kennzeichnen. Die Option Standard ist deaktiviert.
 
-* **Liste mit Kenn-zeichnungsgründen**
+* **Liste der Kennzeichnungsgründe**
 
   Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste den Grund auswählen, aus dem eine Frage oder Antwort als unangemessen gekennzeichnet wird. Die Option Standard ist deaktiviert.
 
@@ -205,7 +208,7 @@ Unter dem **Tag-Feld** Registerkarte die Tags, die angewendet werden können, so
 
   Relevant, wenn `Allow Tagging` wird unter dem **Einstellungen** Registerkarte. Die Tags, die angewendet werden können, beschränken sich auf die Tags innerhalb der aktivierten Namespace-Kategorien. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) und &quot;Alle Tags einschließen&quot;. Der Standardwert ist &quot;none&quot;, was bedeutet, dass alle Namespaces zulässig sind.
 
-* **Empfehlungsgrenze**
+* **Empfehlungslimit**
 
   Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht wird. Der Wert **-**1 bedeutet keine Beschränkungen. Der Standardwert ist 0.
 

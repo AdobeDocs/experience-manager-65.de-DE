@@ -1,15 +1,18 @@
 ---
 title: AEM Adobe PhoneGap
-description: AEM ist mit PhoneGap integriert, sodass Sie einfach Apps mit AEM Seiten erstellen können. Auf dieser Seite erhalten Sie Informationen zu den ersten Schritten mit Adobe PhoneGap Enterprise.
+description: AEM kann in PhoneGap integriert werden, damit Sie mithilfe von AEM-Seiten problemlos Apps erstellen können. Auf dieser Seite erhalten Sie Informationen zu den ersten Schritten mit Adobe PhoneGap Enterprise.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 content-type: reference
 exl-id: d989e235-5993-4738-8523-5b9a5f6bf712
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '486'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
@@ -17,9 +20,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-AEM ist mit PhoneGap integriert, sodass Sie einfach Apps mit AEM Seiten erstellen können. Mit PhoneGap können Benutzer Dienstprogrammanwendungen erstellen, mit denen Benutzer mit dem Inhalt arbeiten können. Mit der Inhaltssynchronisierung können Sie versionierte Archive von Seiten für das Bundling mit Apps erstellen.
+AEM kann in PhoneGap integriert werden, damit Sie mithilfe von AEM-Seiten problemlos Apps erstellen können. Mit PhoneGap können Benutzer Dienstprogrammanwendungen erstellen, mit denen Benutzer mit dem Inhalt arbeiten können. Mit der Inhaltssynchronisierung können Sie versionierte Archive von Seiten für das Bundling mit Apps erstellen.
 
 In der Regel wird ein ***AEM Administrator*** ist für das Hinzufügen einer neuen Anwendung zum AEM Mobile-Katalog verantwortlich, entweder durch Erstellen einer App mithilfe des Erstellungsassistenten oder durch Importieren einer bestehenden Anwendung.
 

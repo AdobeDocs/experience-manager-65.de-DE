@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: daf7bf39-a105-46eb-ab7b-1c59484949e2
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 1%
+source-wordcount: '951'
+ht-degree: 3%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 [Einzelseiten-Apps](https://en.wikipedia.org/wiki/Single-page_application) (SPA) eine kritische Masse erreicht haben, die weithin als das effektivste Muster für die Erstellung nahtloser Erlebnisse mit Webtechnologie angesehen wird. Durch Befolgen eines SPA können Sie eine Anwendung erstellen, die eine identische Leistung wie eine Desktop- oder mobile Anwendung erbringt, aber aufgrund ihrer Grundlage in offenen Webstandards eine Vielzahl von Geräteplattformen und Formfaktoren erreicht.
 
@@ -27,7 +30,7 @@ AEM 6.1 unterstützt die Erstellung und Verwaltung von SPA über AEM Apps. Diese
 
 ## SPA in AEM Apps {#spa-in-aem-apps}
 
-Das Single Page Application Framework in AEM Apps ermöglicht die hohe Leistung einer AngularJS-App und ermöglicht es Autoren (oder anderen nicht-technischen Mitarbeitern), den Inhalt der App über die Touch-optimierte Drag &amp; Drop-Editorumgebung zu erstellen und zu verwalten, die traditionell für die Verwaltung von Websites reserviert ist. Sie haben bereits eine Website mit AEM erstellt? Die Wiederverwendung von Inhalten, Komponenten, Workflows, Assets und Berechtigungen ist in AEM Apps einfach.
+Das Single Page Application Framework in AEM Apps ermöglicht die hohe Leistung einer AngularJS-App und ermöglicht es Autoren (oder anderen nicht-technischen Mitarbeitern), den Inhalt der App über die Touch-optimierte Drag &amp; Drop-Editorumgebung zu erstellen und zu verwalten, die traditionell für die Verwaltung von Websites reserviert ist. Sie haben bereits eine Website mit AEM erstellt? Sie können feststellen, dass die Wiederverwendung von Inhalten, Komponenten, Workflows, Assets und Berechtigungen in AEM Apps einfach ist.
 
 ## AngularJS-Anwendungsmodul {#angularjs-application-module}
 
@@ -80,7 +83,7 @@ Für ein komplexeres Controller-Beispiel öffnen Sie das Skript ng-template-page
 
 Im obigen Beispiel wird der Parameter aus dem `$routeParams` wird ausgeführt und dann in die Verzeichnisstruktur massiert, in der die JSON-Daten gespeichert werden. Durch den Umgang mit der SKU `id` auf diese Weise können Sie eine einzelne Produktvorlage bereitstellen, die die Produktdaten für potenziell Tausende von verschiedenen Produkten rendern kann. Dies ist ein weitaus skalierbareres Modell, das eine individuelle Route für jedes Element in einer (potenziell) massiven Produktdatenbank erfordert.
 
-Hier arbeiten auch zwei Komponenten: ng-product erweitert den Umfang mit den Daten, die es aus dem oben stehenden Abschnitt extrahiert `$http` aufrufen. Es gibt auch ein ng-image auf dieser Seite, das wiederum den Bereich mit dem Wert erweitert, den es aus der Antwort abruft. Durch Angular `$http` -Dienst verwenden, wartet jede Komponente geduldig, bis die Anfrage abgeschlossen ist und das von ihr erstellte Versprechen erfüllt ist.
+Es gibt hier auch zwei Komponenten: ng-product erweitert den Umfang mit den Daten, die es aus den oben genannten Daten extrahiert `$http` aufrufen. Es gibt auch ein ng-image auf dieser Seite, das wiederum den Bereich mit dem Wert erweitert, den es aus der Antwort abruft. Durch Angular `$http` -Dienst verwenden, wartet jede Komponente geduldig, bis die Anfrage abgeschlossen ist und das von ihr erstellte Versprechen erfüllt ist.
 
 ## Die nächsten Schritte {#the-next-steps}
 

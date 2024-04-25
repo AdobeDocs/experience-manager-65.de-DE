@@ -6,9 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 89858814-6625-4a56-8359-cc1eca402816
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -46,22 +49,22 @@ In diesem Tutorial wird davon ausgegangen, dass eine AEM Autoreninstanz und eine
 
 Im Folgenden finden Sie einige hilfreiche Links für Entwickler, die mit der AEM-Plattform neu sind:
 
-* [Erste Schritte](../../help/sites-deploying/deploy.md#getting-started): für die Bereitstellung AEM Instanzen.
+* [Erste Schritte](../../help/sites-deploying/deploy.md#getting-started): zur Bereitstellung AEM Instanzen.
 
    * [Grundlagen](../../help/sites-developing/the-basics.md): für Entwickler von Websites und Funktionen.
-   * [Erste Schritte für Autoren](../../help/sites-authoring/first-steps.md): für die Bearbeitung von Seiteninhalten.
+   * [Erste Schritte für Autoren](../../help/sites-authoring/first-steps.md): für das Authoring von Seiteninhalten.
 
 ## Verwenden der CRXDE Lite-Entwicklungsumgebung {#using-crxde-lite-development-environment}
 
 AEM Entwickler verbringen einen Großteil ihrer Zeit im [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) Entwicklungsumgebung auf einer Autoreninstanz. CRXDE Lite bietet einen weniger eingeschränkten Zugriff auf das CRX-Repository. Klassische UI-Tools und Touch-optimierte UI-Konsolen bieten einen strukturierteren Zugriff auf bestimmte Bereiche des CRX-Repositorys.
 
-Nach der Anmeldung mit Administratorrechten gibt es verschiedene Möglichkeiten, auf die CRXDE Lite zuzugreifen:
+Nach der Anmeldung mit Administratorrechten gibt es verschiedene Möglichkeiten, auf CRXDE Lite zuzugreifen:
 
 1. Wählen Sie in der globalen Navigation die Option Navigation aus. **[!UICONTROL Tools > CRXDE Lite]**.
 
    ![crxde-lite](assets/tools-crxde.png)
 
-2. Aus dem [Startseite der klassischen Benutzeroberfläche](http://localhost:4502/welcome.html), scrollen Sie nach unten und klicken Sie auf **[!UICONTROL CRXDE Lite]** im rechten Bereich.
+2. Aus dem [Startseite der klassischen Benutzeroberfläche](http://localhost:4502/welcome.html)nach unten scrollen und auf **[!UICONTROL CRXDE Lite]** im rechten Bereich.
 
    ![classic-ui-crxde](assets/classic-ui-crxde.png)
 
@@ -69,13 +72,13 @@ Nach der Anmeldung mit Administratorrechten gibt es verschiedene Möglichkeiten,
 
    Beispiel für eine lokale Autoreninstanz: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
-Um mit CRXDE Lite arbeiten zu können, müssen Sie sich mit Entwickler- oder Administratorrechten anmelden. Für die standardmäßige localhost-Instanz können Sie sich mit
+Um mit CRXDE Lite arbeiten zu können, müssen Sie sich mit Entwickler- oder Administratorberechtigungen anmelden. Für die standardmäßige localhost-Instanz können Sie sich mit
 
 * `username: admin`
 * `password: admin`
 
 
-Diese Anmeldung endet mit einer Zeitüberschreitung und Sie müssen sich regelmäßig mit dem Pulldown am rechten Ende der CRXDE Lite-Symbolleiste erneut anmelden.
+Diese Anmeldung erfolgt mit einer Zeitüberschreitung und Sie müssen sich regelmäßig über das Pulldown am rechten Ende der CRXDE Lite-Symbolleiste erneut anmelden.
 
 Wenn Sie nicht angemeldet sind, können Sie nicht im JCR-Repository navigieren oder Bearbeitungs-/Speichervorgänge durchführen.
 

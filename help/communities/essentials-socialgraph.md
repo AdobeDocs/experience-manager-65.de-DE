@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 5%
+source-wordcount: '225'
+ht-degree: 4%
 
 ---
 
@@ -52,7 +55,7 @@ Die `following` -Komponente listet die Mitglieder auf, die dem aktuellen Mitglie
    <td>Siehe <a href="socialgraph.md">Social-Diagramm verwenden</a></td>
   </tr>
   <tr>
-   <td><strong> optionale <br />-Eigenschaft</strong></td>
+   <td><strong> optional<br /> property</strong></td>
    <td>
     <ul>
      <li>Name: <strong><code>outgoing</code></strong></li>

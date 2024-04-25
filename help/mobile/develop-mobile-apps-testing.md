@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing
 content-type: reference
 exl-id: e10e1904-7016-4eb0-9408-36297285f378
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '975'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Angesichts der breiten Palette von Geräten auf dem Markt und Geräten, die veröffentlicht werden, ist das Testen Ihrer Apps unerlässlich geworden. In diesem Bereich können Funktionalität und Benutzerfreundlichkeit niedrige Bewertungen in einem Appstore generieren, aber ein einzelner Fehler kann dazu führen, dass Ihre App deinstalliert wird. Bei Ihren Testplänen und der Qualitätssicherung muss besondere Aufmerksamkeit geschenkt werden. Der folgende Link behandelt viele Themen, die allgemein angesprochen werden müssen, wie z. B. die Identifizierung Ihrer Umgebung, die Definition von Testfällen, Arten von Tests, Annahmen und die Einbeziehung von Kunden. Außerdem werden Tools erläutert, die bei den Tests helfen. Interne Tools wie [Hobbes](/help/sites-developing/hobbes.md), kann beim webbasierten UI-Test helfen. [Tough Day](/help/sites-developing/tough-day.md) Sie können Ihre Instanzen mit einer simulierten Last unter Stress stellen. Wenn Ihre Testumgebung bereits über Erfahrung mit Drittanbieter-Tools wie Selenium verfügt, können auch diese verwendet werden.
 

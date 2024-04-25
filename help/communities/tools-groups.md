@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: aed2c3f2-1b5e-4065-8cec-433abb738ef5
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 3%
+source-wordcount: '545'
+ht-degree: 2%
 
 ---
 
@@ -51,7 +53,7 @@ Dadurch wird der Site-Editor-Bereich angezeigt, der drei Unterbereiche enthält:
 
 Im Bedienfeld &quot;Grundlegende Informationen&quot;werden ein Name, eine Beschreibung und die Frage, ob die Vorlage aktiviert oder deaktiviert ist, konfiguriert:
 
-* **Neuer Name für Gruppenvorlage**
+* **Neuer Name der Gruppenvorlage**
 
   Die Vorlagenname-ID.
 

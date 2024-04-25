@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 9%
+source-wordcount: '411'
+ht-degree: 6%
 
 ---
 
@@ -23,11 +25,11 @@ Für AEM Communities gibt es verschiedene Berichte, auf die über die Autorenumg
 
 Die verschiedenen Berichte sind im Allgemeinen:
 
-* [Ansichtsbericht](#views-report)
+* [Bericht &quot;Ansichten&quot;](#views-report)
 
   Bietet eine Grafik mit den Inhalten von Community-Mitgliedern und Site-Besuchern für jede Community-Site.
 
-* [Post-Bericht](#posts-report)
+* [Beitragsbericht](#posts-report)
 
   Bietet eine Grafik verschiedener Arten von Beiträgen von Community-Mitgliedern zu jeder Community-Site.
 
@@ -45,11 +47,11 @@ Tabellarische Berichte können zur nachfolgenden Verarbeitung im CSV-Format expo
 
       * Erstellen Sie einen Bericht für die ausgewählte Community-Site, den ausgewählten Benutzer oder die Gruppe und die Zuweisung.
 
-   * **[!UICONTROL Post-Bericht]**
+   * **[!UICONTROL Beitragsbericht]**
 
       * Erstellen Sie einen Bericht für die ausgewählte Community-Site, den Inhaltstyp und den Zeitraum.
 
-   * **[!UICONTROL Ansichtsbericht]**
+   * **[!UICONTROL Bericht &quot;Ansichten&quot;]**
 
       * einen Bericht für die ausgewählte Community-Site, den Content-Typ und den Zeitraum erstellen.
 
@@ -67,7 +69,7 @@ Wählen Sie die Berichtskriterien aus:
 
   Wählen Sie eine Community-Site aus.
 
-* **[!UICONTROL Inhaltstyp]**
+* **[!UICONTROL Content-Typ]**
 
   Sie können Alle Inhalte auswählen oder eine der Funktionen auswählen, die auf der Site vorhanden sind.
 
@@ -96,7 +98,7 @@ Wählen Sie die Berichtskriterien aus:
 
   Wählen Sie eine Community-Site aus.
 
-* **[!UICONTROL Inhaltstyp]**
+* **[!UICONTROL Content-Typ]**
 
   Sie können Alle Inhalte auswählen oder eine der Funktionen auswählen, die auf der Site vorhanden sind.
 

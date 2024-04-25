@@ -9,10 +9,11 @@ audience: developer
 feature: Commerce Integration Framework
 exl-id: 1e7c3748-92b5-45f1-8dd9-f1816e3e34aa
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +23,7 @@ Adobe Experience Manager Content and Commerce Authoring bietet eine Reihe von Au
 
 ## Produktauswahl {#product-picker}
 
-Um die Produktauswahl in einer Projektkomponente zu verwenden, müssen Entwickelnde `commerce/gui/components/common/cifproductfield` zu einem Komponentendialogfeld hinzufügen. Verwenden Sie beispielsweise Folgendes für die `cq:dialog`:
+Um die Produktauswahl in einer Projektkomponente zu verwenden, müssen Entwickelnde `commerce/gui/components/common/cifproductfield` zu einem Komponentendialogfeld hinzufügen. Verwenden Sie beispielsweise Folgendes für `cq:dialog`:
 
 ```xml
 <product jcr:primaryType="nt:unstructured"

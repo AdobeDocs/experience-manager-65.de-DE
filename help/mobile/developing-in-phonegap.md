@@ -1,14 +1,17 @@
 ---
 title: PhoneGap
-description: Diese Seite dient als Ausgangspunkt für die Entwicklung von Apps mit PhoneGap Enterprise mit AEM. AEM ist mit PhoneGap integriert, sodass Sie einfach Apps mit AEM Seiten erstellen können. Mit PhoneGap können Benutzer Dienstprogrammanwendungen erstellen, mit denen Benutzer mit dem Inhalt arbeiten können.
+description: Diese Seite dient als Ausgangspunkt für die Entwicklung von Apps mit PhoneGap Enterprise mit AEM. AEM kann in PhoneGap integriert werden, damit Sie mithilfe von AEM-Seiten problemlos Apps erstellen können. Mit PhoneGap können Benutzer Dienstprogrammanwendungen erstellen, mit denen Benutzer mit dem Inhalt arbeiten können.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 9a97e11b-a683-490a-ab7b-158de32984ef
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '248'
-ht-degree: 2%
+ht-degree: 21%
 
 ---
 
@@ -16,9 +19,9 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-AEM ist mit PhoneGap integriert, sodass Sie einfach Apps mit AEM Seiten erstellen können. Mit PhoneGap können Benutzer Dienstprogrammanwendungen erstellen, mit denen Benutzer mit dem Inhalt arbeiten können. Mit der Inhaltssynchronisierung können Sie versionierte Archive von Seiten für das Bundling mit Apps erstellen.
+AEM kann in PhoneGap integriert werden, damit Sie mithilfe von AEM-Seiten problemlos Apps erstellen können. Mit PhoneGap können Benutzer Dienstprogrammanwendungen erstellen, mit denen Benutzer mit dem Inhalt arbeiten können. Mit der Inhaltssynchronisierung können Sie versionierte Archive von Seiten für das Bundling mit Apps erstellen.
 
 >[!NOTE]
 >

@@ -6,7 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: 56af5362-78de-4308-8958-63a45e8573cc
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 5%
@@ -25,7 +28,7 @@ Diese Seite dokumentiert die `Social Tag Cloud` Einstellungen des Komponentendia
 
 Detaillierte Informationen für Entwickler finden Sie unter [Tag-Grundlagen](tag.md).
 
-Siehe [Verwalten von Tags](../../help/sites-administering/tags.md) für Informationen zum Erstellen und Verwalten von Tags und darüber, auf welche Inhalts-Tags angewendet wurden.
+Informationen zum Erstellen und Verwalten von Tags sowie dazu, welchen Inhalten Tags zugewiesen wurden, finden Sie unter [Verwalten von Tags](../../help/sites-administering/tags.md).
 
 ## Hinzufügen einer Social Tag Cloud {#adding-a-social-tag-cloud}
 
@@ -79,10 +82,10 @@ Verwenden der **[!UICONTROL Social Tag Cloud (Design)]** Registerkarte angeben, 
 
   Wenn diese Option aktiviert ist, zeigt die Titel für die übergeordneten Tags und den Namespace für jedes angewendete Tag an.
 
-  Beispiel:
+  Zum Beispiel:
 
    * Aktiviert: `Geometrixx Media: Gadgets / Cars`
-   * Deaktiviert: `Cars`
+   * deaktiviert: `Cars`
 
   Für ein einfaches Tag gibt es keinen Unterschied.
 
@@ -107,7 +110,7 @@ Verwenden der **[!UICONTROL Social Tag Cloud (Design)]** Registerkarte angeben, 
 
   Die Option Standard ist deaktiviert.
 
-* **[!UICONTROL Verknüpfungsvorlage]**
+* **[!UICONTROL Link-Vorlage]**
 
   Eine andere Vorlage als die Standardvorlage, mit der die Links in einer Tag-Cloud angezeigt werden, wenn Links über das Dialogfeld &quot;Komponentenbearbeitung&quot;aktiviert werden.
 

@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 8d965e94-c368-481d-b000-6e22456c34db
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 0%
+source-wordcount: '904'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Möchten Sie ansprechende und relevante Erlebnisse für Ihre Mobile App-Benutzer erstellen? Wenn Sie das Adobe Mobile Services SDK nicht verwenden, um den Lebenszyklus und die Nutzung von Anwendungen zu überwachen und zu messen, worauf basieren Sie dann auf Ihren Entscheidungen? Wo sind Ihre treusten Kunden? Wie können Sie garantieren, dass Sie relevant bleiben und Konversionen optimieren?
 
@@ -115,7 +118,7 @@ Durch die Instrumentierung Ihres Quellcodes mit diesen Methodenaufrufen können 
 
 *com.adobe.cq.mobile.mobileservices.impl.service.MobileServicesHttpClientImp* l legt die folgenden Eigenschaften für die Verbindung mit AMS offen:
 
-| **Bezeichnung** | **Beschreibung** | **Standard** |
+| **Titel** | **Beschreibung** | **Standard** |
 |---|---|---|
 | API-Endpunkt | Die Basis-URL der Adobe Mobile Services-HTTP-APIs | https://api.omniture.com |
 | Config Endpoint | Die URL, die zum Abrufen der ADB Mobile-Konfiguration für die jeweilige Report Suite-ID verwendet wird | /ams/1.0/app/config/ |

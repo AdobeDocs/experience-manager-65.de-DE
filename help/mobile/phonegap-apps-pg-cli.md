@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 2%
+source-wordcount: '658'
+ht-degree: 6%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Als Entwickler können Sie Ihre App jederzeit auf einem Gerät oder in einem Emulator ausführen, sofern Sie Ihre Entwicklungsumgebung konfiguriert haben.
 
@@ -88,9 +91,9 @@ phonegap run ios
 >1. Führen Sie `phonegap create helloWorld` aus.
 >1. Navigieren Sie zu helloWorld (cd helloWorld).
 >1. Ausführen `phonegap run android` (oder ersetzen Sie Android™ durch iOS wie oben beschrieben).
-1. Emulator öffnet die neu erstellte PhoneGap-App mit der Meldung &quot;Device Ready&quot;, wenn die JavaScript Bridge zu nativ betriebsbereit ist.
+>1. Emulator öffnet die neu erstellte PhoneGap-App mit der Meldung &quot;Device Ready&quot;, wenn die JavaScript Bridge zu nativ betriebsbereit ist.
 >
-Mit dieser Fehlerbehebung wird überprüft, ob Ihre PhoneGap-CLI-Entwicklungsumgebung ordnungsgemäß ausgeführt wird.
+>Mit dieser Fehlerbehebung wird überprüft, ob Ihre PhoneGap-CLI-Entwicklungsumgebung ordnungsgemäß ausgeführt wird.
 
 ## Debuggen von JavaScript mit Safari- und IOS-Debugging {#debug-javascripts-with-safari-and-ios-debug}
 
@@ -151,7 +154,7 @@ Sie können Haltepunkte an einer beliebigen Stelle in Ihrer Quelle festlegen. We
 
 >[!NOTE]
 >
-Bewegen Sie die Maus, um die Werte der Variablen in der aktuellen Methode anzuzeigen.
+>Bewegen Sie die Maus, um die Werte der Variablen in der aktuellen Methode anzuzeigen.
 
 ## Die nächsten Schritte {#the-next-steps}
 

@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1670'
-ht-degree: 8%
+source-wordcount: '1696'
+ht-degree: 1%
 
 ---
 
@@ -71,27 +74,27 @@ Auswählen der platzierten `Blog` -Komponente, damit Sie auf die `Configure` -Sy
 
 Unter dem **Einstellungen** -Registerkarte die grundlegenden Funktionen des Blogs festlegen:
 
-* **Anhangminiatur zulassen**
+* **Miniaturansicht des Anhangs zulassen**
 
   Wenn diese Option aktiviert ist, wird eine Miniaturansicht des angehängten Bildes erstellt.
 
-* **Max. Anhangminiaturgröße**
+* **Maximale Größe der Miniaturansichten anhängen**
 
   Maximale Größe (in Pixel) des Miniaturbilds des Anhangs. Der Standardwert ist 800 x 800.
 
-* **Minimale Bildgröße für Miniaturansicht**
+* **Mindestbildgröße für Miniaturansichten**
 
   Mindestgröße (in Byte) des Bildes zum Generieren von Miniaturansichten für Inline-Bilder. Der Standardwert ist 100000 Bytes (100 KB).
 
-* **Max. Miniaturgröße**
+* **Maximale Größe der Miniaturansichten**
 
   Maximale Größe (in Pixel) des Miniaturbilds für Inline-Bilder. Der Standardwert ist 800 x 800.
 
-* **Privilegierte Mitglieder zulassen**
+* **Zulassen von privilegierten Mitgliedern**
 
   Wenn diese Option aktiviert ist, dürfen nur privilegierte Mitglieder Inhalte erstellen.
 
-* **Zugelassene privilegierte Mitglieder**
+* **Zugelassene berechtigte Mitglieder**
 
   Fügen Sie die berechtigten Mitglieder hinzu, die Inhalte erstellen dürfen.
 
@@ -137,7 +140,7 @@ Unter dem **Einstellungen** -Registerkarte die grundlegenden Funktionen des Blog
 
   Wenn diese Option aktiviert ist, können Sie einem Blogeintrag oder Kommentar Dateianlagen hinzufügen. Die Option Standard ist deaktiviert.
 
-* **Max. Dateigröße**
+* **Maximale Dateigröße**
 
   Nur relevant, wenn `Allow File Uploads` aktiviert ist. Dieses Feld begrenzt die Größe (in Byte) einer hochgeladenen Datei. Der Standardwert ist 104857600 (10 MB).
 
@@ -157,11 +160,11 @@ Unter dem **Einstellungen** -Registerkarte die grundlegenden Funktionen des Blog
 
   Wenn diese Option aktiviert ist, fügen Sie die Funktion Abstimmung in einen Blogeintrag ein. Die Option Standard ist deaktiviert.
 
-* **Benutzern das Löschen von Anmerkungen und Themen ermöglichen**
+* **Benutzern das Löschen von Kommentaren und Themen ermöglichen**
 
   Wenn diese Option aktiviert ist, können Mitglieder die Kommentare und Blogeinträge löschen, die sie veröffentlicht haben. Die Option Standard ist deaktiviert.
 
-* **Folgende zulassen**
+* **Folgende erlauben**
 
   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Blog-Artikel hinzu, mit der Mitglieder [benachrichtigt](/help/communities/notifications.md) von neuen Stellen. Die Option Standard ist deaktiviert.
 
@@ -169,13 +172,13 @@ Unter dem **Einstellungen** -Registerkarte die grundlegenden Funktionen des Blog
 
   Wenn diese Option aktiviert ist, können Mitglieder per E-Mail über neue Beiträge informiert werden ([Abonnement](/help/communities/subscriptions.md)). Erfordert `Allow Following` zu überprüfen und [E-Mail konfiguriert](/help/communities/email.md). Die Option Standard ist deaktiviert.
 
-* **Abzeichen anzeigen**
+* **Anzeigemarken**
 
   Wenn diese Option aktiviert ist, zeigen Sie Earned und Assored [Badges](/help/communities/implementing-scoring.md) mit dem Blogeintrag eines Mitglieds. Die Option Standard ist deaktiviert.
 
-* **Keine Antworten auf der Listenseite erhalten**
+* **Antworten auf Listenseite nicht abrufen**
 
-* **Feature-Inhalt zulassen**
+* **Zulassen von speziellen Inhalten**
 
   Wenn diese Option aktiviert ist, wird die Idee als [präsentierte Inhalte](/help/communities/featured.md). Die Option Standard ist deaktiviert.
 
@@ -187,7 +190,7 @@ Unter dem **Einstellungen** -Registerkarte die grundlegenden Funktionen des Blog
 
   Schränken Sie die maximale Anzahl der Erwähnungen ein, die in einem Beitrag zulässig sind. Der Standardwert ist 10.
 
-* **UI-Erwähnungsmuster**
+* **Benutzeroberflächen-Erwähnungsmuster**
 
   Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag mit Tags zu versehen (@mention). Zum Beispiel: `~{{familyName}}{{givenName}}`.
 
@@ -195,7 +198,7 @@ Unter dem **Einstellungen** -Registerkarte die grundlegenden Funktionen des Blog
 
 Unter dem **Benutzermoderation** -Registerkarte die Moderationseinstellungen angeben:
 
-* **Posts ablehnen**
+* **Posts verweigern**
 
   Wenn diese Option aktiviert ist, dürfen Moderatoren vertrauenswürdiger Mitglieder Beiträge ablehnen und verhindern, dass der Beitrag im öffentlichen Forum erscheint. Die Option Standard ist deaktiviert.
 
@@ -207,7 +210,7 @@ Unter dem **Benutzermoderation** -Registerkarte die Moderationseinstellungen ang
 
   Wenn diese Option aktiviert ist, können Mitglieder Themen oder Kommentare anderer Mitglieder als unangemessen kennzeichnen. Die Option Standard ist deaktiviert.
 
-* **Liste mit Kenn-zeichnungsgründen**
+* **Liste der Kennzeichnungsgründe**
 
   Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste den Grund auswählen, aus dem Themen oder Kommentare als unangemessen gekennzeichnet werden. Die Option Standard ist deaktiviert.
 
@@ -231,7 +234,7 @@ Unter dem **Tag-Feld** Registerkarte angeben, welche Tags angewendet werden kön
 
   Relevant, wenn `Allow Tagging` wird unter dem **Einstellungen** Registerkarte. Die Tags, die angewendet werden können, beschränken sich auf die Tags innerhalb der aktivierten Namespace-Kategorien. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) und &quot;Alle Tags einschließen&quot;. Der Standardwert ist &quot;none&quot;, was bedeutet, dass alle Namespaces zulässig sind.
 
-* **Empfehlungsgrenze**
+* **Empfehlungslimit**
 
   Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht wird. Der Wert -1 bedeutet keine Beschränkungen. Der Standardwert ist 0.
 
@@ -269,7 +272,7 @@ Unter dem **Journal-Seitenleisten-Einstellungen** -Registerkarte das Datumsforma
 
    * Beispiel: `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
-* **Empfehlungsgrenze**
+* **Empfehlungslimit**
 
   Die Anzahl der anzuzeigenden Blogartikel. Der Wert -1 bedeutet keine Begrenzung. Der Standardwert ist -1.
 

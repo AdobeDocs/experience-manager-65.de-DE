@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
-source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 7%
+source-wordcount: '983'
+ht-degree: 2%
 
 ---
 
@@ -71,11 +74,11 @@ Unter dem **Kommentare** -Tab angeben, wie Kommentare von Besuchern eingegeben w
 
   Wenn diese Option aktiviert ist, wird die Option zum Hochladen einer Datei mit dem Texteingabefeld angezeigt. Die Option Standard ist deaktiviert.
 
-* **Max. Dateigröße**
+* **Maximale Dateigröße**
 
   Nur relevant, wenn die Option Datei-Uploads zulassen aktiviert ist. Dieser Wert begrenzt die Größe der hochgeladenen Datei. Der Standardwert ist 10 MB.
 
-* **Maximale Nachrichtenlänge**
+* **Max. Nachrichtenlänge**
 
   Maximale Zeichenanzahl, die in das Textfeld eingegeben werden kann. Der Standardwert beträgt 4096 Zeichen.
 
@@ -91,11 +94,11 @@ Unter dem **Kommentare** -Tab angeben, wie Kommentare von Besuchern eingegeben w
 
   Wenn diese Option aktiviert ist, wird das Texteingabefeld angezeigt. Die Option Standard ist deaktiviert.
 
-* **Folgende zulassen**
+* **Folgende erlauben**
 
   Wenn diese Option aktiviert ist, können Mitglieder Kommentare folgen. Die Option Standard ist deaktiviert.
 
-* **Abzeichen anzeigen**
+* **Anzeigemarken**
 
   Wenn diese Option aktiviert ist, können Sie die Anzeige von verdienten und vergebenen Abzeichen zulassen. Die Option Standard ist deaktiviert.
 
@@ -103,7 +106,7 @@ Unter dem **Kommentare** -Tab angeben, wie Kommentare von Besuchern eingegeben w
 
 Unter dem **Benutzermoderation** Registerkarte angeben, wie die veröffentlichten Kommentare verwaltet werden. Weitere Informationen finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
-* **Vor der Moderation**
+* **Vormoderation**
 
   Wenn diese Option aktiviert ist, müssen Kommentare genehmigt werden, bevor sie auf einer Veröffentlichungs-Site angezeigt werden. Die Option Standard ist deaktiviert.
 
@@ -123,7 +126,7 @@ Unter dem **Benutzermoderation** Registerkarte angeben, wie die veröffentlichte
 
   Ist diese Option aktiviert, können Mitglieder Kommentare als unangemessen kennzeichnen. Die Option Standard ist deaktiviert.
 
-* **Liste mit Kenn-zeichnungsgründen**
+* **Liste der Kennzeichnungsgründe**
 
   Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste den Grund auswählen, aus dem ein Kommentar als unangemessen gekennzeichnet wird. Die Option Standard ist deaktiviert.
 
@@ -161,15 +164,15 @@ Unter dem **Ressourcentypen** Registerkarte den benutzerdefinierten resourceType
 
 ![resource-type](assets/resource-type.png)
 
-* **Kommentarressourcentyp**
+* **Kommentar-Ressourcentyp**
 
-  Navigieren Sie zum resourceType eines erweiterten `comment` Komponente (einzelner Kommentar) in /apps. Zum Beispiel: `/apps/social/commons/components/hbs/comments/comment`
+  Navigieren Sie zum resourceType eines erweiterten `comment` Komponente (einzelner Kommentar) in /apps. Beispiel: `/apps/social/commons/components/hbs/comments/comment`
 
   Diese Ressource identifiziert den resourceType des UGC, der erstellt wurde, wenn ein Besucher einen Kommentar veröffentlicht.
 
-* **Abstimmungs-Ressourcentyp**
+* **Abstimmungsressourcentyp**
 
-  Navigieren Sie zum resourceType eines erweiterten `voting` -Komponente in /apps. Zum Beispiel: `/apps/social/components/hbs/voting`
+  Navigieren Sie zum resourceType eines erweiterten `voting` -Komponente in /apps. Beispiel: `/apps/social/components/hbs/voting`
 
   Diese Ressource identifiziert den Ressourcentyp des UGC, der erstellt wurde, wenn ein Besucher eine Stimme sendet.
 

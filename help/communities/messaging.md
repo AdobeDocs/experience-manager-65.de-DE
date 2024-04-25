@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: ee94f093-fd14-49f2-9990-fbe853d924b1
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 1%
+source-wordcount: '840'
+ht-degree: 0%
 
 ---
 
@@ -99,7 +101,7 @@ Um eine Konfiguration hinzuzufügen, wählen Sie das Pluszeichen &quot;**+**&#39
 
   Wenn Gruppennachrichten aktiviert sind, geben Sie die maximale Anzahl von Empfängern an, an die Gruppennachrichten gleichzeitig gesendet werden können. Der Standardwert ist *100*.
 
-* **Batch-Größe**
+* **Stapelgröße**
 
   Anzahl der Nachrichten, die im Batch-Vorgang an eine große Empfängergruppe gesendet werden. Der Standardwert ist *100*.
 

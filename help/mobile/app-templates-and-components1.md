@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: 58d95325-7cb1-4204-842d-17add70e1fbf
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '408'
-ht-degree: 9%
+ht-degree: 14%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Eine Vorlage wird verwendet, um eine Seite zu erstellen, und definiert, welche Komponenten im ausgewählten Bereich verwendet werden können. Eine Vorlage ist eine Hierarchie von Knoten, die dieselbe Struktur wie die zu erstellende Seite aufweist, jedoch keinen tatsächlichen Inhalt hat.
 
@@ -32,7 +35,7 @@ Jede Vorlage stellt Ihnen eine Auswahl an Komponenten zur Verfügung, die Sie ve
 
 Eine Vorlage ist die Basis einer Seite.
 
-Um eine Seite zu erstellen, muss die Vorlage kopiert werden (Knotenbaum **/apps/&lt;myapp>/templates/&lt;mytemplate>**) an die entsprechende Position im Site-Baum: Dies geschieht, wenn eine Seite mit dem **Websites** Registerkarte.
+Um eine Seite zu erstellen, muss die Vorlage kopiert werden (Knotenbaum **/apps/&lt;myapp>/templates/&lt;mytemplate>**) an die entsprechende Position im Site-Baum: Dies geschieht, wenn eine Seite mithilfe der **Websites** Registerkarte.
 
 Durch diese Kopieraktion erhält die Seite auch ihren anfänglichen Inhalt (normalerweise nur Inhalte der obersten Ebene) und die Eigenschaft sling:resourceType, den Pfad zur Seitenkomponente, die zum Rendern der Seite verwendet wird (alles im untergeordneten Knoten jcr:content).
 
@@ -47,8 +50,8 @@ Eine Vorlage wird unter einem Knoten des Typs **cq:Template**.
 
 Verschiedene Eigenschaften können festgelegt werden, insbesondere:
 
-* **jcr:title** - Titel der Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt.
-* **jcr:description** - Beschreibung der Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt.
+* **jcr:title** - Titel für die Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt.
+* **jcr:description** - Beschreibung für die Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt.
 
 Dieser Knoten enthält *a jcr:content (cq:PageContent)* -Knoten, der als Grundlage für den Inhaltsknoten der resultierenden Seiten verwendet wird. Diese verweisen auf die Verwendung von *sling:resourceType*, die Komponente, die zum Rendern des tatsächlichen Inhalts einer neuen Seite verwendet werden soll.
 

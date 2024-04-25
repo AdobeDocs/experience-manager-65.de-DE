@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 3d72cbdf-5eb4-477d-aa61-035a846f7dcb
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 14%
+source-wordcount: '289'
+ht-degree: 5%
 
 ---
 
@@ -33,16 +36,16 @@ Einige Knoten im Pfad sind Ordner und einige sind Komponenten.
 1. Erstellen `/apps/social` (falls noch nicht vorhanden)
    * Auswählen `/apps` Knoten
    * **[!UICONTROL Erstellen > Ordner]**
-      * Namen eingeben: `social`
+      * Name eingeben: `social`
 1. Auswählen `social` Knoten
    * **[!UICONTROL Erstellen]** > **[!UICONTROL Ordner]**
-      * Namen eingeben: `commons`
+      * Name eingeben: `commons`
 1. Auswählen `commons` Knoten
    * **[!UICONTROL Erstellen > Ordner]**
-      * Namen eingeben: `components`
+      * Name eingeben: `components`
 1. Auswählen `components` Knoten
    * **[!UICONTROL Erstellen > Ordner]**.
-      * Namen eingeben: `hbs`
+      * Name eingeben: `hbs`
 1. Auswählen `hbs` Knoten
    * **[!UICONTROL Erstellen]** > **[!UICONTROL Komponente erstellen]**
       * Titel eingeben: `comments`
@@ -61,14 +64,14 @@ Einige Knoten im Pfad sind Ordner und einige sind Komponenten.
       * Obertyp: `social/commons/components/comments/comment`
       * Gruppe eingeben: `.hidden`
       * Klicks **[!UICONTROL Nächste]** bis **[!UICONTROL OK]**
-   * Klicken Sie auf **[!UICONTROL Alle speichern]**
+   * Auswählen **[!UICONTROL Alle speichern]**
 1. Standard löschen `comments.jsp`
    * Knoten auswählen `/apps/social/commons/components/hbs/comments/comments.jsp`
    * Wählen Sie **[!UICONTROL Löschen]** aus
 1. Löschen Sie die standardmäßige Datei comment.jsp .
-   * Wählen Sie den Knoten  aus.`/apps/social/commons/components/hbs/comments/comment/comment.jsp`
+   * Knoten auswählen `/apps/social/commons/components/hbs/comments/comment/comment.jsp`
    * Wählen Sie **[!UICONTROL Löschen]** aus
-   * Klicken Sie auf **[!UICONTROL Alle speichern]**
+   * Auswählen **[!UICONTROL Alle speichern]**
 
 >[!NOTE]
 >
@@ -87,6 +90,6 @@ Die Überlagerung selbst `Type`(Eigenschaft `sling:resourceType`) muss eine rela
    * Typ: `String`
    * Wert: `social/commons/components/hbs/comments/comment`
 1. Grün auswählen `[+] Add`
-   * Klicken Sie auf **[!UICONTROL Alle speichern]**
+   * Auswählen **[!UICONTROL Alle speichern]**
 
 ![create-nodes](assets/create-nodes.png)

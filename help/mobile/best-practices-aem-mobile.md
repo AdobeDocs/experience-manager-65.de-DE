@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: 63ceaba6-b796-4c13-a86d-f0609ec679c9
-source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 1%
+source-wordcount: '577'
+ht-degree: 4%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Das Erstellen einer AEM Mobile On-demand Services-App unterscheidet sich vom Erstellen einer App, die direkt in der Cordova- (oder PhoneGap-)Shell ausgeführt wird. Die Entwickler sollten mit folgenden Themen vertraut sein:
 
@@ -85,4 +88,4 @@ Die folgenden Richtlinien helfen zuständigen AEM-Entwicklern bei Sites, die mob
 Weitere Informationen zu den beiden anderen Rollen und Zuständigkeiten finden Sie in den folgenden Ressourcen:
 
 * [Administrator](/help/mobile/aem-mobile.md)
-* [Autor](/help/mobile/aem-mobile-on-demand.md)
+* [Author](/help/mobile/aem-mobile-on-demand.md)

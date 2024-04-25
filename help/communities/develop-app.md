@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '593'
-ht-degree: 7%
+ht-degree: 5%
 
 ---
 
@@ -118,7 +121,7 @@ Verwenden von CRXDE Lite:
 
 **Zeigen Sie die Seite in einem Browser im Bearbeitungsmodus an:**
 
-* Standard-Benutzeroberfläche: `http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html`
+* Standardbenutzeroberfläche: `http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html`
 
 Sie sollten nicht nur die Überschrift sehen **Community Play**, aber auch die Benutzeroberfläche zum Bearbeiten des Seiteninhalts.
 
@@ -152,7 +155,7 @@ Wählen Sie außerdem **[!UICONTROL Allgemein]** Komponenten wie
 * Bild
 * Tabelle
 * Text
-* Titel (Fundament)
+* Titel (Foundation)
 
 >[!NOTE]
 >
@@ -173,9 +176,9 @@ In diesem Beispiel wird die Stammseite statisch so eingestellt, dass sie zur eng
 * Auf der Registerkarte ERWEITERT
 
    * Navigieren Sie zum Eintrag Umleiten zu **[!UICONTROL Websites]** > **[!UICONTROL SCF-Sandbox-Site]** > **[!UICONTROL SCF-Sandbox]**
-   * Klicken Sie auf **[!UICONTROL OK]**
+   * Klicks **[!UICONTROL OK]**
 
-* Klicken Sie auf **[!UICONTROL OK]**
+* Klicks **[!UICONTROL OK]**
 
 Nachdem die Site veröffentlicht wurde, wird beim Navigieren zur Stammseite in einer Veröffentlichungsinstanz die englische Seite umgeleitet.
 

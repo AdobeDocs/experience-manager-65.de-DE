@@ -8,10 +8,11 @@ content-type: reference
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '1954'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -81,7 +82,7 @@ So aktualisieren Sie mit der Web-Konsole eine Konfiguration:
 
 1. Greifen Sie mithilfe einer der folgenden Methoden auf die Registerkarte **Konfiguration** der Web-Konsole zu:
 
-   * Öffnen der Web-Konsole über den Link auf der **Tool > Vorgänge** Menü. Nach der Anmeldung in der Konsole können Sie dieses Dropdown-Menü verwenden:
+   * Öffnen Sie die Web-Konsole über den Link im Menü **Tools > Vorgänge**. Nach der Anmeldung in der Konsole können Sie dieses Dropdown-Menü verwenden:
 
      **OSGi >**
 
@@ -96,7 +97,7 @@ So aktualisieren Sie mit der Web-Konsole eine Konfiguration:
    * Klicken Sie auf das Symbol **Bearbeiten** für dieses Bundle.
    * Klicken Sie auf den **Namen** des Bundles
 
-1. Ein Dialogfeld wird angezeigt. Hier können Sie nach Bedarf Änderungen vornehmen. Legen Sie beispielsweise die **Protokollebene** nach `INFO`:
+1. Ein Dialogfeld wird angezeigt. Hier können Sie nach Bedarf Änderungen vornehmen. Setzen Sie beispielsweise die **Protokollebene** auf `INFO`:
 
    ![chlimage_1-140](assets/chlimage_1-140.png)
 
@@ -230,7 +231,7 @@ Um die neue Konfiguration zum Repository hinzuzufügen, gehen Sie folgendermaße
    * Typ: `sling:OsgiConfig`
    * Name: die persistente Identität (PID),
 
-     Verwenden Sie beispielsweise AEM WCM-Versionsmanager . `com.day.cq.wcm.core.impl.VersionManagerImpl`
+     Für den AEM WCM-Versions-Manager verwenden Sie z. B. `com.day.cq.wcm.core.impl.VersionManagerImpl`.
 
    >[!NOTE]
    >

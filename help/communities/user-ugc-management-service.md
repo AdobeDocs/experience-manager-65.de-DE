@@ -8,10 +8,12 @@ topic-tags: administering
 docset: aem65
 role: Admin
 exl-id: 526ef0fa-3f20-4de4-8bc5-f435c60df0d0
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '558'
-ht-degree: 2%
+ht-degree: 8%
 
 ---
 
@@ -19,7 +21,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Die DSGVO wird in den folgenden Abschnitten als Beispiel verwendet, die betroffenen Details gelten jedoch für alle Datenschutz- und Datenschutzbestimmungen wie DSGVO, CCPA usw.
+>Die DSGVO wird in den folgenden Abschnitten als Beispiel benutzt, aber die genannten Details lassen sich auf alle Regulierungen zum Datenschutz anwenden; zum Beispiel GDPR, CCPA usw.
 
 AEM Communities stellt native APIs zur Verwaltung von Benutzerprofilen und zur Massenverwaltung benutzergenerierter Inhalte bereit. Nach der Aktivierung wird die **UserUgcManagement** Der -Dienst ermöglicht es berechtigten Benutzern (Community-Administratoren und -Moderatoren), Benutzerprofile zu deaktivieren und UGC-Dateien für bestimmte Benutzer per Massenlöschung oder Massenexport zu löschen. Diese APIs ermöglichen es auch den Datenverantwortlichen und Verarbeitern von Kundendaten, die Datenschutz-Grundverordnung (DSGVO) der Europäischen Union und andere DSGVO-inspirierte Datenschutzmandate einzuhalten.
 

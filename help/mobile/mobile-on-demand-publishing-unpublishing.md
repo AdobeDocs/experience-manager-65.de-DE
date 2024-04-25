@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: 3924bb8f-27cb-4648-8be2-9444e9a58c66
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 2%
+source-wordcount: '271'
+ht-degree: 9%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Sobald Sie mit Inhaltsverwaltungsaktionen für Artikel, Banner und Sammlungen vertraut sind, können Sie Ihre Inhalte veröffentlichen. Außerdem können Sie die Veröffentlichung des Inhalts rückgängig machen.
 
@@ -27,7 +30,7 @@ Sobald Sie mit Inhaltsverwaltungsaktionen für Artikel, Banner und Sammlungen ve
 
 ## Veröffentlichen/Veröffentlichung des Inhalts rückgängig machen {#publishing-unpublishing-the-content}
 
-Dies unterscheidet sich von einer &quot;AEM-Veröffentlichung&quot;. Sie senden keine Inhalte an eine AEM-Veröffentlichungs-Server-Instanz, um sie öffentlich sichtbar zu machen. Hier informieren Sie Mobile On-Demand, dass der ausgewählte Inhalt in der Live-Mobile On-Demand-App veröffentlicht werden soll.
+Dies unterscheidet sich von der AEM &quot;Veröffentlichen&quot;. Sie senden keine Inhalte an eine AEM Veröffentlichungs-Server-Instanz, um sie öffentlich sichtbar zu machen. Hier informieren Sie Mobile On-Demand, dass der ausgewählte Inhalt in der Live-Mobile On-Demand-App veröffentlicht werden soll.
 
 >[!NOTE]
 >
@@ -36,7 +39,7 @@ Dies unterscheidet sich von einer &quot;AEM-Veröffentlichung&quot;. Sie senden 
 Der allgemeine Workflow zum Veröffentlichen/Rückgängigmachen der Veröffentlichung eines Artikels:
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Wählen Sie einen Artikel aus.
+1. Wählen Sie einen Artikel.
 1. Fügen Sie bei Bedarf in der Listenansicht weitere Artikel hinzu.
 1. Wählen Sie in der Aktionsleiste Veröffentlichen aus. Nach einigen Augenblicken werden Ihre Artikel jetzt öffentlich sein.
 1. Gehen Sie wie oben beschrieben vor, um die Veröffentlichung von Artikeln rückgängig zu machen.

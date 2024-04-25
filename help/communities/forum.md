@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2b1a4917-9db6-436a-a5fd-c102fe41fb9d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1219'
-ht-degree: 10%
+source-wordcount: '1233'
+ht-degree: 2%
 
 ---
 
@@ -58,16 +61,16 @@ Auswählen der platzierten `Forum` -Komponente, damit Sie auf die `Configure` -S
 
 Unter dem **Einstellungen** Registerkarte Einstellungen für Themen und Antworten festlegen:
 
-* **Anhangminiatur zulassen**
+* **Miniaturansicht des Anhangs zulassen**
 
   Wenn diese Option aktiviert ist, wird eine Miniaturansicht des angehängten Bildes erstellt.
 
-* **Max. Anhangminiaturgröße**
+* **Maximale Größe der Miniaturansichten anhängen**
 
   Maximale Größe (in Pixel) des Miniaturbilds des Anhangs. Der Standardwert ist 800 x 800.
 
 * **Mindestbildgröße für Miniaturansichten**
-* **Max. Miniaturgröße**
+* **Maximale Größe der Miniaturansichten**
 
   Maximale Größe (in Pixel) des Miniaturbilds für Inline-Bilder. Der Standardwert ist 800 x 800.
 
@@ -95,15 +98,15 @@ Unter dem **Einstellungen** Registerkarte Einstellungen für Themen und Antworte
 
   Wenn diese Option aktiviert ist, können dem Thema oder Kommentar Dateianlagen hinzugefügt werden. Die Option Standard ist deaktiviert.
 
-* **Folgende zulassen**
+* **Folgende erlauben**
 
   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Forumsbeiträge hinzu, mit der Mitglieder [benachrichtigt](/help/communities/notifications.md) von neuen Stellen. Die Option Standard ist deaktiviert.
 
-* **Fixierung zulassen**
+* **Zulassen von Pinnwänden**
 
   Wenn diese Option aktiviert ist, können Forumsthemen an den Anfang der Themenliste gesetzt werden. Die Option Standard ist deaktiviert.
 
-* **Feature-Inhalt zulassen**
+* **Zulassen von speziellen Inhalten**
 
   Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](/help/communities/featured.md). Die Option Standard ist deaktiviert.
 
@@ -111,7 +114,7 @@ Unter dem **Einstellungen** Registerkarte Einstellungen für Themen und Antworte
 
   Wenn diese Option aktiviert ist, können Mitglieder per E-Mail über neue Beiträge informiert werden ([Abonnement](/help/communities/subscriptions.md)). Erfordert `Allow Following` zu überprüfen und [E-Mail konfiguriert](/help/communities/email.md). Die Option Standard ist deaktiviert.
 
-* **Max. Dateigröße**
+* **Maximale Dateigröße**
 
   Nur relevant, wenn `Allow File Uploads` aktiviert ist. Dieses Feld begrenzt die Größe (in Byte) einer hochgeladenen Datei. Der Standardwert ist 104857600 (10 MB).
 
@@ -122,7 +125,7 @@ Unter dem **Einstellungen** Registerkarte Einstellungen für Themen und Antworte
 * **Maximale Dateigröße für Bildanhang**
 Nur relevant, wenn die Option Datei-Uploads zulassen aktiviert ist. Maximale Anzahl der Bytes, die eine hochgeladene Bilddatei aufweisen kann. Der Standardwert ist 2097152 (2 MB).
 
-* **Antworten mit Diskussionsfaden zulassen**
+* **Threaded-Antworten zulassen**
 
   Wenn diese Option aktiviert ist, erlauben Sie Antworten auf Kommentare, die zum Thema gepostet wurden. Die Option Standard ist deaktiviert.
 
@@ -130,7 +133,7 @@ Nur relevant, wenn die Option Datei-Uploads zulassen aktiviert ist. Maximale Anz
 
   Wenn diese Option aktiviert ist, fügen Sie die Abstimmungsfunktion in ein Thema ein. Die Option Standard ist deaktiviert.
 
-* **Benutzern das Löschen von Anmerkungen und Themen ermöglichen**
+* **Benutzern das Löschen von Kommentaren und Themen ermöglichen**
 
   Wenn diese Option aktiviert ist, können Mitglieder die von ihnen veröffentlichten Kommentare und Themen löschen. Die Option Standard ist deaktiviert.
 
@@ -138,15 +141,15 @@ Nur relevant, wenn die Option Datei-Uploads zulassen aktiviert ist. Maximale Anz
 
   Wenn diese Option aktiviert ist, zeigen Sie Navigations-Breadcrumbs auf Themenseiten an. Die Option Standard ist aktiviert.
 
-* **Abzeichen anzeigen**
+* **Anzeigemarken**
 
   Wenn diese Option aktiviert ist, zeigen Sie Earned und Assored [Badges](/help/communities/implementing-scoring.md) mit dem Blogeintrag eines Mitglieds. Die Option Standard ist deaktiviert.
 
-* **Privilegierte Mitglieder zulassen**
+* **Zulassen von privilegierten Mitgliedern**
 
   Wenn diese Option aktiviert ist, dürfen nur privilegierte Mitglieder Inhalte erstellen.
 
-* **Zugelassene privilegierte Mitglieder**
+* **Zugelassene berechtigte Mitglieder**
 
   Fügen Sie die berechtigten Mitglieder hinzu, die Inhalte erstellen dürfen.
 
@@ -162,7 +165,7 @@ Nur relevant, wenn die Option Datei-Uploads zulassen aktiviert ist. Maximale Anz
 
   Schränken Sie die maximale Anzahl der Erwähnungen ein, die in einem Beitrag zulässig sind. Der Standardwert ist 10.
 
-* **UI-Erwähnungsmuster**
+* **Benutzeroberflächen-Erwähnungsmuster**
 
   Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag mit Tags zu versehen (@mention). Zum Beispiel: `~{{familyName}}{{givenName}}`.
 
@@ -174,7 +177,7 @@ Nur relevant, wenn die Option Datei-Uploads zulassen aktiviert ist. Maximale Anz
 
 Unter dem **Benutzermoderation** auf, geben Sie an, wie die veröffentlichten Themen und Antworten (benutzergenerierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
-* **Posts ablehnen**
+* **Posts verweigern**
 
   Wenn diese Option aktiviert ist, dürfen Moderatoren vertrauenswürdiger Mitglieder Beiträge ablehnen und verhindern, dass der Beitrag im öffentlichen Forum erscheint. Die Option Standard ist deaktiviert.
 
@@ -182,7 +185,7 @@ Unter dem **Benutzermoderation** auf, geben Sie an, wie die veröffentlichten Th
 
   Wenn diese Option aktiviert ist, können Moderatoren von vertrauenswürdigen Mitgliedern ein Thema schließen, um weitere Bearbeitungen und Kommentare vorzunehmen, und ein Thema möglicherweise erneut öffnen. Die Option Standard ist deaktiviert.
 
-* **Themen verschieben**
+* **Verschieben von Themen**
 
   Wenn diese Option aktiviert ist, können Moderatoren auf der Veröffentlichungsseite Themen verschieben. Die Option Standard ist aktiviert.
 
@@ -190,7 +193,7 @@ Unter dem **Benutzermoderation** auf, geben Sie an, wie die veröffentlichten Th
 
   Wenn diese Option aktiviert ist, können Mitglieder Themen oder Kommentare anderer Mitglieder als unangemessen kennzeichnen. Die Option Standard ist deaktiviert.
 
-* **Liste mit Kenn-zeichnungsgründen**
+* **Liste der Kennzeichnungsgründe**
 
   Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste den Grund auswählen, aus dem Themen oder Kommentare als unangemessen gekennzeichnet werden. Die Option Standard ist deaktiviert.
 
@@ -214,7 +217,7 @@ Unter dem **Tag-Feld** Registerkarte die Tags, die angewendet werden können, so
 
   Relevant, wenn `Allow Tagging` wird unter dem **Einstellungen** Registerkarte. Die Tags, die angewendet werden können, beschränken sich auf die Tags innerhalb der aktivierten Namespace-Kategorien. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) und &quot;Alle Tags einschließen&quot;. Der Standardwert ist &quot;none&quot;, was bedeutet, dass alle Namespaces zulässig sind.
 
-* **Empfehlungsgrenze**
+* **Empfehlungslimit**
 
   Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht wird. Der Standardwert ist **-**1 (keine Beschränkungen).
 
@@ -222,7 +225,7 @@ Unter dem **Tag-Feld** Registerkarte die Tags, die angewendet werden können, so
 
 Unter dem **Übersetzung** -Registerkarte, wenn die Übersetzung für die Community-Site aktiviert ist, kann die Übersetzung so eingestellt sein, dass das gesamte Thema oder ausgewählte Beiträge übersetzt werden.
 
-* **Alles übersetzen**
+* **Alle übersetzen**
 
   Wenn diese Option aktiviert ist, wird der Forum-Thread in die bevorzugte Sprache des Benutzers übersetzt. Die Option Standard ist deaktiviert.
 

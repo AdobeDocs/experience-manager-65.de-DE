@@ -5,10 +5,13 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 1%
+source-wordcount: '976'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +19,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Mobile Apps sollten alle Inhalte in AEM nach Bedarf verwenden können, um das zielgerichtete App-Erlebnis bereitzustellen.
 
@@ -38,7 +41,7 @@ Es gibt drei Hauptmaterialtypen, die Content Services bereitstellt:
 
 Asset-Sammlungen sind AEM Konstrukte, die Verweise auf andere Sammlungen enthalten.
 
-Eine Asset-Sammlung kann über Content Services verfügbar gemacht werden. Der Aufruf einer Asset-Sammlung in einer Anfrage gibt ein Objekt zurück, das eine Liste der Assets einschließlich ihrer URLs ist. Der Zugriff auf Assets erfolgt über eine URL. Die URL wird in einem Objekt bereitgestellt. Beispiel:
+Eine Asset-Sammlung kann über Content Services verfügbar gemacht werden. Der Aufruf einer Asset-Sammlung in einer Anfrage gibt ein Objekt zurück, das eine Liste der Assets einschließlich ihrer URLs ist. Der Zugriff auf Assets erfolgt über eine URL. Die URL wird in einem Objekt bereitgestellt. Zum Beispiel:
 
 * Eine Seitenentität gibt die JSON (Seitenobjekt) zurück, die eine Bildreferenz enthält. Die Bildreferenz ist eine URL, mit der die Asset-Binärdatei für das Bild abgerufen wird.
 * Bei einer Anforderung einer Liste von Assets in einem Ordner wird die JSON-Datei mit Details zu allen Entitäten in diesem Ordner zurückgegeben. Diese Liste ist ein Objekt. Die JSON-Datei enthält URL-Verweise, mit denen die Asset-Binärdatei für jedes Asset in diesem Ordner abgerufen wird.

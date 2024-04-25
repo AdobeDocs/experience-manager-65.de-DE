@@ -6,9 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 1dc568cd-315c-4944-9a3e-e5d7794e5dc0
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '488'
 ht-degree: 2%
 
 ---
@@ -63,13 +66,13 @@ Platzieren Sie die benutzerdefinierte Site-Vorlage im Überlagerungsordner:
 
 `/apps/social/console/components/hbs/sitepage/vertical-sitepage.hbs`
 
-Identifizieren Sie die benutzerdefinierte Vorlage, indem Sie eine `page-template` Eigenschaft zum Konfigurationsknoten:
+Identifizieren Sie die benutzerdefinierte Vorlage, indem Sie eine `page-template` -Eigenschaft zum Konfigurationsknoten:
 
 `/content/sites/sample/en/configuration`
 
 ![crxde-siteconfiguration](assets/crxde-siteconfiguration.png)
 
-Stellen Sie sicher, dass **Alle speichern** und replizieren benutzerspezifischen Code für alle Adobe Experience Manager (AEM)-Instanzen (benutzerspezifischer Code ist nicht enthalten, wenn der Community-Site-Inhalt über die Konsole veröffentlicht wird).
+Stellen Sie sicher, **Alle speichern** und replizieren benutzerspezifischen Code für alle Adobe Experience Manager (AEM)-Instanzen (benutzerspezifischer Code ist nicht enthalten, wenn der Community-Site-Inhalt über die Konsole veröffentlicht wird).
 
 Es wird empfohlen, benutzerdefinierten Code zu replizieren, indem Sie [Package erstellen](../../help/sites-administering/package-manager.md#creating-a-new-package) und stellen Sie sie auf allen Instanzen bereit.
 
@@ -123,9 +126,9 @@ Dadurch werden nur benutzergenerierte Inhalte (in der Veröffentlichungsinstanz 
 
 ### Community-Benutzergruppen {#community-user-groups}
 
-In allen Autoren- und Veröffentlichungsinstanzen von der [Sicherheitskonsole](../../help/sites-administering/security.md), suchen und entfernen Sie die [Benutzergruppen](users.md) die sind:
+In allen Autoren- und Veröffentlichungsinstanzen von der [Sicherheitskonsole](../../help/sites-administering/security.md), suchen und entfernen Sie die [Benutzergruppen](users.md) die
 
 * Präfix mit `community`
 * Gefolgt von [eindeutige Site-ID](#community-unique-site-id)
 
-Beispiel: `community-engage-x0e11-members`.
+Zum Beispiel: `community-engage-x0e11-members`.
