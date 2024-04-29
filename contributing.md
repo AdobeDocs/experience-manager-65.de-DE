@@ -1,8 +1,8 @@
 ---
 source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '506'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 # Beiträge zur Adobe Experience Manager-Dokumentation
@@ -34,7 +34,7 @@ Wählen Sie die Methode aus, die für Sie zum Bearbeiten der Dokumentation in Gi
 
 ### Erstellen eines Problems {#create-an-issue}
 
-Haben Sie einen Vorschlag, eine Beobachtung zu den aktuellen Dokumenten oder eine Frage dazu, wie etwas beschrieben wird? Dann erstellen Sie ein Problem. Probleme eignen sich auch hervorragend, wenn Sie etwas beizutragen haben, sich aber nicht wohl fühlen, die Dokumente zu bearbeiten oder selbst eine Pull-Anforderung zu stellen.
+Haben Sie einen Vorschlag, eine Beobachtung zu den aktuellen Dokumenten oder eine Frage dazu, wie etwas beschrieben wird? Dann erstellen Sie ein Problem. Probleme eignen sich auch, wenn Sie etwas beizutragen haben, jedoch lieber nicht selbst die Dokumente bearbeiten oder eine Pull-Anforderung erstellen möchten.
 
 Mithilfe von Problemen können Sie Ihre Verbesserungsidee für Dokumente einfach beschreiben, damit ein Team-Mitglied von AEM Docs sie überprüfen kann. Zum Erstellen eines Problems klicken Sie einfach auf einer beliebigen Seite oben im rechten Navigationsbereich auf den Link **Ein Problem protokollieren**.
 

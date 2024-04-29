@@ -9,7 +9,7 @@ feature: HTML5 Forms
 exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '393'
 ht-degree: 100%
 
@@ -79,10 +79,10 @@ Eine vorhandene HTML-Anwendung kann die FormBridge-API nutzen, um mit einem Form
    >Das Tag &lt;div id=&quot;rightdiv&quot;> in **Zeile 18** bezeichnet das HTML-Fragment des XFA-Formulars.
    >
    >
-   >Die Seite wird in zwei Container unterteilt: **links** und **rechts**. Der rechte Container enthält das Formular. Der linke Container enthält zwei Eingabefelder und einen Teil der externen HTML-Seite.
+   Die Seite wird in zwei Container unterteilt: **links** und **rechts**. Der rechte Container enthält das Formular. Der linke Container enthält zwei Eingabefelder und einen Teil der externen HTML-Seite.
    >
    >
-   >Der folgende Screenshot zeigt, wie das Formular in einem Browser angezeigt wird.
+   Der folgende Screenshot zeigt, wie das Formular in einem Browser angezeigt wird.
 
    ![Portal](assets/portal.jpg)
 

@@ -4,9 +4,9 @@ description: Verwenden des Service „execute script“ aus der Workbench von AE
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '983'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Viele Prozess-Management-Workflows für AEM Forms auf JEE beinhalten XML. XML-In
 
 Bei einfachen XML-Einstellungen kann der Service `Set Value` verwendet werden. Es handelt sich dabei um einen Standard-Service von AEM Forms on JEE. Dieser Service legt den Wert eines oder mehrerer Datenelemente im Prozessdatenmodell fest. Für Szenarien mit einer einfachen bedingten „wenn, dann“-Logik kann dieser Service den Zweck erfüllen.
 
-In komplexeren Situationen ist der Set Value-Dienst jedoch nicht so effektiv. In diesen Situationen muss man sich auf einen robusteren Satz von Programmierbefehlen verlassen, wie sie beispielsweise eine Programmiersprache wie Java bietet. Die Verwendung von Java™ zum Erstellen komplexer XML-Dateien kann viel einfacher und klarer sein als das Erstellen eines XML-Dokuments aus einfachem Text im Service „Set Value“. Darüber hinaus ist es einfacher, bedingte Programmierung in Java™ einzubinden als in den Service „Set Value“.
+In komplexeren Situationen ist der Service „Set Value“ jedoch nicht so effektiv. In diesen Situationen muss man sich auf einen robusteren Satz von Programmierbefehlen verlassen, wie sie beispielsweise eine Programmiersprache wie Java bietet. Die Verwendung von Java™ zum Erstellen komplexer XML-Dateien kann viel einfacher und klarer sein als das Erstellen eines XML-Dokuments aus einfachem Text im Service „Set Value“. Darüber hinaus ist es einfacher, bedingte Programmierung in Java™ einzubinden als in den Service „Set Value“.
 
 ## Verwenden des Service „Execute Script“ in einem Prozess {#using-execute-script-service-in-process}
 

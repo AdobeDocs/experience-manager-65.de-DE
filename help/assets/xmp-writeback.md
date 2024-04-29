@@ -8,9 +8,9 @@ exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '798'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ Die Metadatenänderungen werden in die Ausgabeformate „thumbnail.140.100.png�
 
 [!DNL Experience Manager Assets] unterstützt das Filtern von Blockierungslisten und Zulassungslisten von Eigenschaften/Knoten nach XMP-Metadaten, die von den Binärdateien des Assets gelesen und in JCR gespeichert werden, wenn Assets aufgenommen werden.
 
-Bei der Filterung über eine Blockierungsliste können Sie alle XMP-Metadateneigenschaften importieren – mit Ausnahme der Eigenschaften, für die ein Ausschluss angegeben ist. Bei Asset-Typen wie INDD-Dateien mit großen Mengen XMP Metadaten (z. B. 1.000 Knoten mit 10.000 Eigenschaften) sind die Namen der zu filternden Knoten jedoch nicht immer im Voraus bekannt. Wenn beim Filtern mit einer Blockierungsliste eine große Anzahl von Assets mit zahlreichen XMP Metadaten importiert werden kann, wird die [!DNL Experience Manager] Bei der Implementierung können Stabilitätsprobleme auftreten, z. B. blockierte Beobachtungswarteschlangen.
+Bei der Filterung über eine Blockierungsliste können Sie alle XMP-Metadateneigenschaften importieren – mit Ausnahme der Eigenschaften, für die ein Ausschluss angegeben ist. Jedoch ist der Name der zu filternden Knoten für Elementtypen wie INDD-Dateien mit enormen Mengen an XMP-Metadaten (z. B. 1.000 Knoten mit 10.000 Eigenschaften) nicht immer bereits im Voraus bekannt. Wenn durch das Filtern über eine Blockierungsliste eine große Anzahl von Assets mit vielen XMP-Metadaten importiert werden kann, kann es zu Stabilitätsproblemen in der [!DNL Experience Manager]-Bereitstellung kommen, z. B. zu blockierten Beobachtungswarteschlangen.
 
 Durch Filtern von XMP-Metadaten über die Zulassungsliste wird dieses Problem behoben, indem Sie die zu importierenden XMP-Eigenschaften definieren können. Auf diese Weise werden andere/unbekannte XMP-Eigenschaften ignoriert. Aus Gründen der Abwärtskompatibilität können Sie einige dieser Eigenschaften dem Filter hinzufügen, der eine Blockierungsliste verwendet.
 
@@ -88,7 +88,7 @@ Durch Filtern von XMP-Metadaten über die Zulassungsliste wird dieses Problem be
 
 1. Um Configuration Manager zu öffnen, rufen Sie `https://[aem_server]:[port]/system/console/configMgr` auf.
 1. Öffnen Sie die Konfiguration **[!UICONTROL Adobe CQ DAM XmpFilter]**.
-1. Um die Filterung mithilfe einer Zulassungsliste anzuwenden, wählen Sie **[!UICONTROL Anwenden der Zulassungsliste auf XMP Eigenschaften]** und geben Sie die Eigenschaften an, die in die **[!UICONTROL Zulässige XML-Namen für XMP Filterung]** ankreuzen.
+1. Um die Filterfunktion über eine Zulassungsliste anzuwenden, klicken Sie auf **[!UICONTROL Apply Allowlist to XMP Properties]** (Zulassungsliste auf XMP-Eigenschaften anwenden) und geben Sie die Eigenschaften an, die in das Feld **[!UICONTROL Allowed XML Names for XMP filtering]** (Zulässige XML-Namen für XMP-Filterfunktion) importiert werden sollen.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 

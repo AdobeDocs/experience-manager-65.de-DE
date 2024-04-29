@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren von Ersatzschriftarten
-description: Erfahren Sie, wie Sie Fallback-Schriftarten für AEM Forms konfigurieren. Sie können die Datei "FontManagerResources.properties"verwenden, um die Standardschriftarten den Fallback-Schriftarten manuell zuzuordnen.
+description: Erfahren Sie, wie Sie Ersatzschriftarten für AEM Forms konfigurieren. Sie können die Datei „FontManagerResources.properties“ verwenden, um die Standardschriftarten den Ersatzschriftarten manuell zuzuordnen.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
@@ -9,36 +9,36 @@ feature: PDF Generator
 exl-id: 76dd2b0c-9f16-47bf-a565-99277be750fb
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '264'
-ht-degree: 29%
+ht-degree: 100%
 
 ---
 
 # Konfigurieren von Ersatzschriftarten {#configuring-fallback-fonts}
 
-Sie können die Datei &quot;FontManagerResources.properties&quot;manuell konfigurieren, um die standardmäßigen AEM Forms-Schriftarten Fallback (oder Ersatz) zuzuordnen, wenn die Standardschriftarten nicht auf dem Server verfügbar sind. Diese Eigenschaftendatei befindet sich in der Datei &quot;adobe-fontmanager.jar&quot;.
+Sie können die Datei „FontManagerResources.properties“ zum Zuordnen der AEM Forms-Standardschriftarten zu Ersatzschriftarten manuell konfigurieren, falls die Standardschriftarten auf dem Server nicht verfügbar sind. Diese Eigenschaftendatei ist in der Datei „adobe-fontmanager.jar“ enthalten.
 
 >[!NOTE]
 >
->Die Konfiguration von Ersatzschriftarten gilt auch für den Assembler-Dienst.
+>Die Konfiguration der Ersatzschriftarten gilt auch für den Assembler-Dienst.
 
 1. Wechseln Sie im Ordner „*`[aem-forms root]`*/configurationManager/export“ zur Datei „adobe-livecycle-*`[appserver]`*.ear“, erstellen Sie eine Sicherungskopie und dekomprimieren Sie die Originaldatei.
-1. Suchen Sie die Datei &quot;adobe-fontmanager.jar&quot;und dekomprimieren Sie sie.
-1. Suchen Sie die Datei &quot;FontManagerResources.properties&quot;und öffnen Sie sie in einem Texteditor.
-1. Ändern Sie die Speicherorte und Namen der generischen und Fallback-Schriftart nach Bedarf und speichern Sie die Datei.
+1. Suchen Sie die Datei „adobe-fontmanager.jar“ und dekomprimieren Sie sie.
+1. Suchen Sie die Datei „FontManagerResources.properties“ und öffnen Sie sie in einem Texteditor.
+1. Ändern Sie die Speicherorte und Namen der Standard- und Ersatzschriftarten den Anforderungen entsprechend und speichern Sie die Datei.
 
-   Die Schriftarteinträge in der Datei „FontManagerResources.properties“ sind relativ zum Ordner „*`[aem-forms root]`*/fonts“. Wenn Sie Schriftarten angeben, die keine standardmäßigen AEM Forms-Schriftarten sind, müssen Sie diese Schriftarten in dieser Ordnerstruktur installieren (entweder in einem vorhandenen Ordner oder in einem neu erstellten Ordner).
+   Die Schriftarteinträge in der Datei „FontManagerResources.properties“ sind relativ zum Ordner „*`[aem-forms root]`*/fonts“. Wenn Sie Schriftarten angeben, die keine AEM Forms-Standardschriftarten sind, müssen Sie diese Schriftarten in dieser Verzechnisstruktur installieren (entweder in einem vorhandenen oder einem neu erstelltem Verzeichnis).
 
    >[!NOTE]
    >
-   >Wenn die angegebene Schriftart oder Standardschriftart kein bestimmtes Unicode-Zeichen enthält oder nicht verfügbar ist, wird das Zeichen gemäß der folgenden Priorität aus einer Fallback-Schriftart übernommen:
+   >Wenn die angegebene Schriftart bzw. Standardschriftart kein spezifisches Unicode-Zeichen enthält oder nicht verfügbar ist, wird das Zeichen gemäß der folgenden Priorität in einer Ersatzschriftart ausgewählt:
 
    * Gebietsschemaspezifische Schriftart
-   * ROOT-Schriftart, wenn Gebietsschema nicht festgelegt ist
-   * Generische Schriftart, nach Reihenfolge durchsucht in der Fallback-Tabelle
+   * ROOT-Schriftart, wenn kein Gebietsschema festgelegt ist
+   * Allgemeine Schriftart, die gemäß der in der Tabelle mit den Ersatzschriftarten festgelegten Reihenfolge gesucht wird
 
-1. Komprimieren Sie die Datei &quot;adobe-fontmanager.jar&quot;neu.
+1. Komprimieren Sie die Datei „adobe-fontmanager.jar“ wieder.
 1. Komprimieren Sie die Datei „adobe-livecycle-*`[appserver]`*.ear“ neu und stellen Sie sie anschließend manuell oder durch Ausführen von Configuration Manager erneut bereit.
 
 >[!NOTE]

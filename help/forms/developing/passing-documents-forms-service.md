@@ -1,6 +1,6 @@
 ---
 title: Übergeben von Dokumenten an den Forms-Service
-description: Übergeben Sie ein com.adobe.idp.Document-Objekt, das den Formularentwurf enthält, an den Forms-Service. Der Forms-Dienst rendert den Formularentwurf im Objekt com.adobe.idp.Document .
+description: Übergeben Sie ein com.adobe.idp.Document-Objekt, das den Formularentwurf enthält, an den Forms-Service. Der Forms-Dienst rendert den Formularentwurf, der sich im com.adobe.idp.Document-Objekt befindet.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -10,9 +10,9 @@ role: Developer
 exl-id: 29c7ebda-407a-464b-a9db-054163f5b737
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1677'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 98%
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
 
-Der AEM Forms-Service gibt interaktive PDF-Formulare an Client-Geräte aus, in der Regel Webbrowser, um Informationen von Benutzern zu erfassen. Ein interaktives PDF-Formular basiert auf einem Formularentwurf, der normalerweise in Designer erstellt und als XDP-Datei gespeichert wird. Was AEM Forms betrifft, können Sie ein `com.adobe.idp.Document`-Objekt, das den Formularentwurf enthält, an den Forms-Service übergeben. Der Forms-Dienst rendert den Formularentwurf dann im `com.adobe.idp.Document` -Objekt.
+Der AEM Forms-Service gibt interaktive PDF-Formulare an Client-Geräte aus, in der Regel Webbrowser, um Informationen von Benutzern zu erfassen. Ein interaktives PDF-Formular basiert auf einem Formularentwurf, der normalerweise in Designer erstellt und als XDP-Datei gespeichert wird. Was AEM Forms betrifft, können Sie ein `com.adobe.idp.Document`-Objekt, das den Formularentwurf enthält, an den Forms-Service übergeben. Der Forms-Dienst rendert dann den Formularentwurf, der sich im `com.adobe.idp.Document`-Objekt befindet.
 
 Ein Vorteil der Übergabe eines `com.adobe.idp.Document`-Objekts an den Forms-Service ist, dass andere Service-Vorgänge eine `com.adobe.idp.Document`-Instanz zurückgeben. Das heißt, Sie können eine `com.adobe.idp.Document`-Instanz von einem anderen Service-Vorgang erhalten und sie wiedergeben. Nehmen Sie zum Beispiel an, dass eine XDP-Datei in einem Knoten von Content Services (veraltet) mit dem Namen `/Company Home/Form Designs` gespeichert ist, wie in der folgenden Abbildung gezeigt.
 

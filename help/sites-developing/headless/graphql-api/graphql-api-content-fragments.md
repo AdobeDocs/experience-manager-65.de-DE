@@ -6,9 +6,9 @@ exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4796'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -197,7 +197,8 @@ Wenn Benutzende beispielsweise ein Inhaltsfragmentmodell mit dem Namen `Article`
 
    * Drei von ihnen wurden auf Benutzerseite kontrolliert: `author`, `main`, und `referencearticle`.
 
-   * Die anderen Felder wurden automatisch von AEM hinzugefügt und stellen hilfreiche Methoden dar, um Informationen zu einem bestimmten Inhaltsfragment bereitzustellen. In diesem Beispiel (die Variable [Helper-Felder](#helper-fields)) `_path`, `_metadata`, `_variations`.
+   * Die anderen Felder wurden automatisch von AEM hinzugefügt und stellen hilfreiche Methoden dar, um Informationen zu einem bestimmten Inhaltsfragment bereitzustellen. In diesem Beispiel sind dies
+(die [Helferfelder](#helper-fields)) `_path`, `_metadata`, `_variations`.
 
 1. Nachdem ein Benutzer ein Inhaltsfragment basierend auf dem Modell „Article“ erstellt hat, kann es über GraphQL abgefragt werden. Beispiele finden Sie in den [Beispielabfragen](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#graphql-sample-queries) (basierend auf einer [Beispielstruktur für Inhaltsfragmente zur Verwendung mit GraphQL](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)).
 
@@ -503,7 +504,7 @@ Eine Filterdefinition (als das `filter`-Argument an eine Abfrage übergeben) ent
 
 Sie können `_logOp` weglassen, wenn Sie Elemente mit `AND` kombinieren wollen, und `_operator`, wenn Sie auf Gleichheit prüfen wollen, da diese Werte Standardwerte sind.
 
-Das folgende Beispiel zeigt eine vollständige Abfrage, die alle Personen filtert, die über eine `lastName` von `Provo` verfügen oder `sjö` enthalten, ohne die Groß-/Kleinschreibung zu beachten:
+Das folgende Beispiel zeigt eine vollständige Abfrage, die alle Personen filtert, die über eine `lastName` von `Provo` verfügen oder `sjö` enthalten, ohne Beachtung von Groß-/Kleinschreibung:
 
 ```graphql
 {
@@ -530,11 +531,11 @@ Das folgende Beispiel zeigt eine vollständige Abfrage, die alle Personen filter
 }
 ```
 
-Wenn eine GraphQL-Abfrage mit optionalen Variablen ausgeführt wird, wenn ein bestimmter Wert **not** für die optionale Variable angegeben ist, wird die Variable bei der Filterbewertung ignoriert. Das bedeutet, dass die Abfrageergebnisse alle Werte enthalten, beide `null` und nicht `null`für die Eigenschaft, die mit der Filtervariablen verknüpft ist.
+Wenn eine GraphQL-Abfrage zum Filtern von Ergebnissen mit optionalen Variablen ausgeführt wird und **kein** bestimmter Wert für die optionale Variable angegeben ist, wird die Variable bei der Filterbewertung ignoriert. Das bedeutet, dass die Abfrageergebnisse alle Werte (die `null` und nicht `null` sind) für die mit der Filtervariablen verknüpfte Eigenschaft enthalten.
 
 >[!NOTE]
 >
->Wenn eine `null` Wert ist *explizit* für eine solche Variable angegeben ist, stimmt der Filter nur überein mit `null` -Werte für die entsprechende Eigenschaft.
+>Wenn ein `null`-Wert *explizit* für eine solche Variable angegeben ist, gleicht der Filter nur die `null`-Werte für die entsprechende Eigenschaft ab.
 
 In der folgenden Abfrage wird beispielsweise kein Wert für die Eigenschaft `lastName` angegeben:
 
@@ -551,7 +552,7 @@ query getAuthorsFilteredByLastName($authorLastName: String) {
 }
 ```
 
-Alle Autoren werden zurückgegeben:
+Alle Autorinnen und Autoren werden zurückgegeben:
 
 ```graphql
 {
@@ -754,7 +755,7 @@ Das Caching persistierter Abfragen ist im Dispatcher standardmäßig nicht aktiv
 
 ### Aktivieren der Caching-Funktion für persistierte Abfragen {#enable-caching-persisted-queries}
 
-Um das Zwischenspeichern persistenter Abfragen zu aktivieren, sind folgende Aktualisierungen an den Dispatcher-Konfigurationsdateien erforderlich:
+Um das Caching persistierter Abfragen zu aktivieren, sind folgende Aktualisierungen an den Dispatcher-Konfigurationsdateien erforderlich:
 
 * `<conf.d/rewrites/base_rewrite.rules>`
 
@@ -766,9 +767,9 @@ Um das Zwischenspeichern persistenter Abfragen zu aktivieren, sind folgende Aktu
 
   >[!NOTE]
   >
-  >Der Dispatcher fügt das Suffix hinzu `.json` an alle gespeicherten Abfrage-URLs, damit das Ergebnis zwischengespeichert werden kann.
+  >Der Dispatcher fügt das Suffix `.json` zu allen persistierten Abfrage-URLs hinzu, damit das Ergebnis zwischengespeichert werden kann.
   >
-  >Dadurch wird sichergestellt, dass die Abfrage den Anforderungen des Dispatchers für Dokumente entspricht, die zwischengespeichert werden können. Weitere Informationen finden Sie unter [Wie werden die Dispatcher-Rückgabedokumente zurückgegeben?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=de#how-does-the-dispatcher-return-documents%3F)
+  >Dadurch wird sichergestellt, dass die Abfrage den Anforderungen des Dispatchers für Dokumente entspricht, die zwischengespeichert werden können. Weitere Informationen finden Sie unter [Wie gibt der Dispatcher Dokumente zurück?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=de#how-does-the-dispatcher-return-documents%3F)
 
 * `<conf.dispatcher.d/filters/ams_publish_filters.any>`
 

@@ -11,9 +11,9 @@ role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2274'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -39,10 +39,10 @@ Beim Erstellen eines Bildsets empfiehlt Adobe die folgenden Best Practices und e
 
 | Begrenzungstyp | Best Practice | Grenzwert |
 | --- | --- | --- |
-| Anzahl der doppelten Assets pro Satz | Keine Duplikate | 20 ‡ |
+| Anzahl der doppelten Assets pro Satz | Keine Duplikate | 20‡ |
 | Maximale Anzahl an Bildern pro Set | 5–10 Bilder pro Set | 1000 |
 
-‡ Best Practice ist, keine doppelten Assets in einem Satz zu haben. Die Beschränkung beträgt 20 Duplikate für ein einzelnes Asset. Wenn Sie ein weiteres Duplikat für dieses Asset innerhalb dieses Satzes hinzufügen, gibt die Anfrage entweder einen Fehler aus oder ignoriert das Duplikat.
+‡ Best Practice ist, keine doppelten Assets in einem Satz zu haben. Das Limit beträgt 20 Duplikate für ein einzelnes Asset. Wenn Sie ein weiteres Duplikat für dieses Asset innerhalb dieses Satzes hinzufügen, gibt die Anfrage entweder einen Fehler aus oder ignoriert das Duplikat.
 
 Siehe auch [Grenzwerte für Dynamic Media](/help/assets/limitations.md).
 
@@ -144,10 +144,10 @@ Beim Erstellen eines Bildsets empfiehlt Adobe die folgenden Best Practices und e
 
 | Begrenzungstyp | Best Practice | Grenzwert |
 | --- | --- | --- |
-| Anzahl der doppelten Assets pro Satz | Keine Duplikate | 20 ‡ |
+| Anzahl der doppelten Assets pro Satz | Keine Duplikate | 20‡ |
 | Maximale Anzahl an Bildern pro Set | 5–10 Bilder pro Set | 1000 |
 
-‡ Best Practice ist, keine doppelten Assets in einem Satz zu haben. Die Beschränkung beträgt 20 Duplikate für ein einzelnes Asset. Wenn Sie ein weiteres Duplikat für dieses Asset innerhalb dieses Satzes hinzufügen, gibt die Anfrage entweder einen Fehler aus oder ignoriert das Duplikat.
+‡ Best Practice ist, keine doppelten Assets in einem Satz zu haben. Das Limit beträgt 20 Duplikate für ein einzelnes Asset. Wenn Sie ein weiteres Duplikat für dieses Asset innerhalb dieses Satzes hinzufügen, gibt die Anfrage entweder einen Fehler aus oder ignoriert das Duplikat.
 
 Siehe auch [Grenzwerte für Dynamic Media](/help/assets/limitations.md).
 

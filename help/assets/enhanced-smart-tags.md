@@ -8,9 +8,9 @@ exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1559'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -81,7 +81,7 @@ Der Service wendet Smart-Tags auf Asset-Ausgabedarstellungen der folgenden MIME-
 
 ## Onboarding {#onboarding}
 
-Der Smart Content Service kann als Add-on zu [!DNL Experience Manager]. Nach dem Kauf wird eine E-Mail an den Administrator Ihres Unternehmens mit einem Link zu [!DNL Adobe I/O].
+Der Smart Content Service kann als Add-on zu [!DNL Experience Manager] erworben werden. Nach dem Kauf wird eine E-Mail mit einem Link zu [!DNL Adobe I/O] an die oder den Admin Ihres Unternehmens gesendet. 
 
 Die bzw. der Admin kann über diesen Link den Smart Content Service mit [!DNL Experience Manager] integrieren. Weitere Informationen zum Integrieren des Services mit [!DNL Experience Manager Assets] finden Sie im Abschnitt [Konfigurieren von Smart-Tags](config-smart-tagging.md).
 
@@ -183,7 +183,7 @@ Darüber hinaus können Sie Tags einen höheren Rang zuweisen, um ihre Relevanz 
 1. Suchen Sie im Suchfeld nach Assets, indem Sie ein Tag als Keyword verwenden.
 1. Überprüfen Sie die Suchergebnisse, um Bilder zu ermitteln, die Sie für Ihre Suche nicht relevant finden.
 1. Wählen Sie ein solches Bild aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Tags verwalten]**.
-1. Prüfen Sie die Tags auf der Seite **[!UICONTROL Tags verwalten]**. Wenn das Bild nicht anhand eines bestimmten Tags durchsucht werden soll, wählen Sie das Tag aus und klicken Sie auf **[!UICONTROL Löschen]** aus der Symbolleiste. Klicken Sie alternativ auf das `x`-Symbol, das neben einem Tag angezeigt wird.
+1. Prüfen Sie die Tags auf der Seite **[!UICONTROL Tags verwalten]**. Wenn Sie nicht möchten, dass das Bild anhand eines bestimmten Tags gesucht wird, wählen Sie das Tag aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Löschen]**. Klicken Sie alternativ auf das `x`-Symbol, das neben einem Tag angezeigt wird.
 1. Wenn Sie einem Tag einen höheren Rang zuweisen möchten, wählen Sie optional den Tag aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Hochstufen]**. Das höhergestufte Tag wird in den Abschnitt **[!UICONTROL Tags]** verschoben.
 1. Klicken Sie auf **[!UICONTROL Speichern]** und dann auf **[!UICONTROL OK]**.
 1. Gehen Sie zur Seite **[!UICONTROL Eigenschaften]** des betreffenden Bildes. Beachten Sie, dass das hochgestufte Tag eine hohe Relevanz erhält und es aus diesem Grund höher in den Suchergebnissen angezeigt wird.

@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie ein AEM Forms on JEE-Server-Cluster konfiguri
 exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3945'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -210,7 +210,7 @@ Auf UNIX®-Systemen verweigern NFS-Konfigurationen häufig das Stammeigentum ode
 Damit ein Cluster ordnungsgemäß funktioniert, muss von allen Cluster-Mitgliedern dieselbe Datenbank gemeinsam genutzt werden. Die Möglichkeiten, dies falsch zu machen, umfassen im Wesentlichen:
 
 * versehentlich IDP_DS, EDC_DS, AdobeDefaultSA_DS oder andere erforderliche Datenquellen auf separaten Cluster-Knoten unterschiedlich festlegen, sodass die Knoten auf verschiedene Datenbanken verweisen.
-* versehentlich mehrere separate Knoten zum Freigeben einer Datenbank festlegen, wenn dies nicht der Fall sein sollte.
+* versehentlich mehrere separate Knoten so einstellen, dass sie eine Datenbank gemeinsam nutzen, obwohl sie das nicht sollten.
 
 Abhängig von Ihrem Programm-Server kann es normal sein, dass die JDBC-Verbindung auf Cluster-Ebene definiert wird, sodass unterschiedliche Definitionen auf verschiedenen Knoten nicht möglich sind. Bei JBoss® ist es jedoch gänzlich möglich, alles so einzurichten, dass eine Datenquelle wie IDP_DS in Knoten 1 auf eine Datenbank verweist, aber in Knoten 2 auf etwas anderes.
 
@@ -245,7 +245,7 @@ and ones like:
 
 ### Quartz Scheduler {#quartz-scheduler}
 
-Die Verwendung des internen Quartz-Schedulers durch AEM Forms on JEE in einem Cluster soll im Allgemeinen automatisch der globalen Cluster-Konfiguration von AEM Forms on JEE folgen. Es gibt jedoch einen Fehler, Nr. 2794033, der dazu führt, dass die automatische Cluster-Konfiguration von Quartz fehlschlägt, wenn für Gemfire anstelle einer Multicast-Autodiscovery TCP-Locators verwendet werden. In diesem Fall wird Quartz fälschlicherweise in einem Nicht-Cluster-Modus ausgeführt. Dies führt zu Deadlocks und Datenbeschädigungen in den Quartz-Tabellen. Die Nebenwirkungen sind in Version 8.2.x schlimmer als in Version 9.0, da Quartz nicht so viel verwendet wird, aber noch da ist.
+Die Verwendung des internen Quartz-Schedulers durch AEM Forms on JEE in einem Cluster soll im Allgemeinen automatisch der globalen Cluster-Konfiguration von AEM Forms on JEE folgen. Es gibt jedoch einen Fehler, Nr. 2794033, der dazu führt, dass die automatische Cluster-Konfiguration von Quartz fehlschlägt, wenn für Gemfire anstelle einer Multicast-Autodiscovery TCP-Locators verwendet werden. In diesem Fall wird Quartz fälschlicherweise in einem Nicht-Cluster-Modus ausgeführt. Dies führt zu Deadlocks und Datenbeschädigungen in den Quartz-Tabellen. Die Auswirkungen sind in Version 8.2.x schlimmer als in Version 9.0, da Quartz zwar nicht mehr so häufig verwendet wird, aber noch in Gebrauch ist.
 
 Für dieses Problem sind folgende Fehlerbehebungen verfügbar: 8.2.1.2 QF2.143 und 9.0.0.2 QF2.44.
 

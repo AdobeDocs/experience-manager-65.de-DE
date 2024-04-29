@@ -8,9 +8,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2593'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -168,20 +168,20 @@ Der Editor für adaptive Formulare verfügt über die Übermittlungsaktion **Auf
 
 Verwenden Sie nach der erfolgreichen Konfiguration die Übermittlungsaktion [Microsoft® Power Automate-Fluss aufrufen](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action), um Daten an einen Power Automate-Fluss zu senden.
 
-## An Microsoft® SharePoint-Liste übermitteln{#submit-to-sharedrive}
+## Übermitteln an eine Microsoft® SharePoint-Liste{#submit-to-sharedrive}
 
 >[!NOTE]
 >
-Die Funktion &quot;An Microsoft® SharePoint-Liste übermitteln&quot;wurde mit AEM 6.5 Forms Service Pack 19 (6.5.19.0) eingeführt.
+Die Funktion „An eine Microsoft® SharePoint-Liste übermitteln“ wurde mit AEM 6.5 Forms Service Pack 19 (6.5.19.0) eingeführt.
 
-Die **[!UICONTROL An SharePoint übermitteln]** -Übermittlungsaktion verbindet ein adaptives Formular mit einem Microsoft® SharePoint-Speicher. Sie können die Formulardatendatei, die Anlagen oder das Datensatzdokument an den verbundenen Microsoft® Sharepoint-Speicher senden.
+Die Sendeaktion **[!UICONTROL An SharePoint senden]** verbindet ein adaptives Formular mit einem Microsoft® SharePoint-Speicher. Sie können die Formulardatendatei, die Anlagen oder das Datensatzdokument an den verbundenen Microsoft® Sharepoint-Speicher senden. 
 
-### Verbinden eines adaptiven Formulars mit einer Microsoft® SharePoint-Liste {#connect-af-sharepoint-list}
+### Verbinden eines adaptiven Formulars mit der Microsoft® SharePoint-Liste {#connect-af-sharepoint-list}
 
-So verbinden Sie ein adaptives Formular mit der Microsoft® SharePoint-Liste:
+Verbinden eines adaptiven Formulars mit der Microsoft® SharePoint-Liste:
 
-1. [SharePoint-Listenkonfiguration erstellen](#create-sharepoint-list-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® Sharepoint-Listenspeicher verbunden.
-1. [Verwenden Sie die **Senden mit Formulardatenmodell** Übermittlungsaktion in einem adaptiven Formular](#use-submit-using-fdm): Sendet Ihre adaptiven Formulardaten an die konfigurierte Microsoft® SharePoint.
+1. [Erstellen einer SharePoint-Listenkonfiguration](#create-sharepoint-list-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® Sharepoint-Listenspeicher verbunden.
+1. [Verwenden der Sendeaktion **Mit Formulardatenmodell senden** in einem adaptiven Formular](#use-submit-using-fdm): Dadurch werden die Daten Ihres adaptiven Formulars an den konfigurierten Microsoft® SharePoint gesendet.
 
 #### Erstellen einer Microsoft SharePoint-Listenkonfiguration {#create-sharepoint-list-configuration}
 
@@ -193,7 +193,7 @@ So verbinden Sie AEM Forms mit Ihrer Microsoft® SharePoint-Liste:
 1. Geben Sie **[!UICONTROL Titel]**, **[!UICONTROL Client-ID]**, **[!UICONTROL Client-Geheimnis]** und **[!UICONTROL OAuth-URL]** an. Informationen zum Abrufen der Client-ID, des Client-Geheimnisses und der Mandanten-ID für die OAuth-URL finden Sie in der [Dokumentation von Microsoft®](https://learn.microsoft.com/de-de/graph/auth-register-app-v2).
    * Sie können die `Client ID` und das `Client Secret` Ihrer App über das Microsoft® Azure-Portal abrufen.
    * Fügen Sie im Microsoft® Azure-Portal den Umleitungs-URI als `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html` hinzu. Ersetzen Sie `[author-instance]` durch die URL Ihrer Autoreninstanz.
-   * Fügen Sie die API-Berechtigungen `offline_access` und `Sites.Manage.All` auf der Registerkarte **Microsoft® Graph** hinzu, um Lese- und Schreibberechtigungen bereitzustellen. Hinzufügen `AllSites.Manage` -Berechtigung in der **Sharepoint** , um mit den SharePoint-Daten remote zu interagieren.
+   * Fügen Sie die API-Berechtigungen `offline_access` und `Sites.Manage.All` auf der Registerkarte **Microsoft® Graph** hinzu, um Lese- und Schreibberechtigungen bereitzustellen. Fügen Sie auf der Registerkarte **Sharepoint** die Berechtigung `AllSites.Manage` hinzu, um remote mit den SharePoint-Daten zu interagieren.
    * Verwenden der OAuth-URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Ersetzen Sie `<tenant-id>` durch die `tenant-id` Ihrer App aus dem Microsoft® Azure-Portal.
 
      >[!NOTE]
@@ -204,16 +204,16 @@ So verbinden Sie AEM Forms mit Ihrer Microsoft® SharePoint-Liste:
 1. Wählen Sie **[!UICONTROL SharePoint-Site]** und **[!UICONTROL SharePoint-Liste]** aus der Dropdown-Liste.
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für die Microsoft® SharePoint-Liste zu erstellen.
 
-#### Verwenden der Sendeaktion mit einem Fomulardatenmodell in einem adaptiven Formular {#use-submit-using-fdm}
+#### Verwenden von „Absenden mit Formulardatenmodell“ in einem adaptiven Formular {#use-submit-using-fdm}
 
 Sie können die erstellte SharePoint-Listenkonfiguration in einem adaptiven Formular verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einer SharePoint-Liste zu speichern. Führen Sie die folgenden Schritte aus, um eine SharePoint-Listenspeicherkonfiguration in einem adaptiven Formular zu verwenden:
 
 1. [Erstellen eines Formulardatenmodells mithilfe von Microsoft](/help/forms/using/create-form-data-model.md)
 1. [Konfigurieren des Formulardatenmodells zum Abrufen und Senden von Daten](/help/forms/using/work-with-form-data-model.md#configure-services)
-1. [Adaptives Formular erstellen](/help/forms/using/create-adaptive-form.md).
+1. [Erstellen eines adaptiven Formulars](/help/forms/using/create-adaptive-form.md)
 1. [Konfigurieren einer Übermittlungsaktion mit einem Formulardatenmodell](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)
 
-Wenn Sie das Formular senden, werden die Daten im angegebenen Microsoft® Sharepoint-Listenspeicher gespeichert.
+Wenn Sie das Formular absenden, werden die Daten im angegebenen Microsoft® Sharepoint-Listenspeicher gespeichert.
 
 >[!NOTE]
 >
@@ -226,7 +226,7 @@ Die folgenden Spaltentypen werden in der Microsoft® SharePoint-Liste nicht unte
 
 >[!NOTE]
 >
-Um Konfigurationswerte festzulegen, [generieren Sie OSGi-Konfigurationen mit dem AEM-SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de#generating-osgi-configurations-using-the-aem-sdk-quickstart) und [stellen Sie die Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de#deployment-process) in Ihrer Cloud Service-Instanz bereit.
+Um Konfigurationswerte festzulegen, [generieren Sie OSGi-Konfigurationen mit dem AEM-SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de#generating-osgi-configurations-using-the-aem-sdk-quickstart) und [stellen Sie die Konfiguration in Ihrer Cloud Service-Instanz bereit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de#deployment-process).
 
 ## Server-seitige Überprüfung im adaptiven Formular {#server-side-revalidation-in-adaptive-form}
 
@@ -236,7 +236,7 @@ Die Funktion für eine erneute Server-seitige Validierung enthält die Möglichk
 
 ### Was soll auf dem Server validiert werden? {#what-to-validate-on-server-br}
 
-Alle nativen Feldvalidierungen eines adaptiven Formulars, die erneut auf dem Server ausgeführt werden, sind:
+Alle standardmäßig einsetzbaren Feldvalidierungen eines adaptiven Formulars, die erneut auf dem Server ausgeführt werden, sind:
 
 * Erforderlich
 * Validierungbild-Klausel

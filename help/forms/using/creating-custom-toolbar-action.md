@@ -1,6 +1,6 @@
 ---
 title: Erstellen einer benutzerdefinierten Symbolleistenaktion
-description: Formularentwickler können benutzerdefinierte Symbolleistenaktionen für adaptive Formulare in AEM Forms erstellen. Mit benutzerdefinierten Aktionen können Formularautoren ihren Endbenutzern mehr Workflows und Optionen bereitstellen.
+description: Formularentwickler können benutzerdefinierte Symbolleistenaktionen für adaptive Formulare in AEM Forms erstellen. Mit benutzerdefinierten Aktionen können Formularautorinnen und Formularautoren den Endbenutzenden mehr Workflows und Optionen bereitstellen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
@@ -8,9 +8,9 @@ docset: aem65
 exl-id: 17f7f0e1-09d8-45cd-a4f6-0846bdb079b6
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '496'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 68%
 
 ## Voraussetzungen {#prerequisite}
 
-Bevor Sie eine benutzerdefinierte Symbolleistenaktion erstellen, sollten Sie sich mit [Verwenden Client-seitiger Bibliotheken](/help/sites-developing/clientlibs.md) und [Entwickeln mit CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+Bevor Sie eine benutzerdefinierte Symbolleistenaktion erstellen, machen Sie sich mit den Informationen unter [Verwendung Client-seitiger Bibliotheken](/help/sites-developing/clientlibs.md) und [Entwickeln mit CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) vertraut.
 
 ## Was ist eine Aktion {#what-is-an-action-br}
 
-Ein adaptives Formular bietet eine Symbolleiste, mit der ein Formularautor eine Reihe von Optionen konfigurieren kann. Diese Optionen werden als Aktionen für das adaptive Formular definiert. Klicken Sie in der Symbolleiste für den Bereich auf die Schaltfläche zum Bearbeiten, um die Aktionen festzulegen, die von adaptiven Formularen unterstützt werden.
+Ein adaptives Formular enthält eine Symbolleiste, mit der eine Formularautorin oder ein Formularautor mehrere Optionen konfigurieren kann. Diese Optionen werden als Aktionen für das adaptive Formular definiert. Klicken Sie in der Symbolleiste für den Bereich auf die Schaltfläche zum Bearbeiten, um die Aktionen festzulegen, die von adaptiven Formularen unterstützt werden.
 
 ![Standard-Symbolleistenaktionen](assets/default_toolbar_actions.png)
 
-Neben den standardmäßig bereitgestellten Aktionen können Sie benutzerdefinierte Aktionen in der Symbolleiste erstellen. Sie können beispielsweise eine Aktion hinzufügen, mit der der Benutzer alle adaptiven Formularfelder überprüfen kann, bevor ein Formular gesendet wird.
+Neben den standardmäßig bereitgestellten Aktionen können Sie auch benutzerdefinierte Aktionen in der Symbolleiste erstellen. Beispielsweise können Sie eine Aktion hinzufügen, damit Benutzende alle Felder des adaptiven Formulars überprüfen können, bevor das Formular gesendet wird.
 
 ## Schritte zum Erstellen einer benutzerdefinierten Aktion in einem adaptiven Formular {#steps}
 
@@ -41,9 +41,9 @@ Zur Veranschaulichung der Erstellung einer benutzerdefinierten Symbolleistenakti
    ![Hierarchie der Knoten zur Anpassung der Symbolleiste](assets/action3.png)
 
 1. Wählen Sie den `cq:template`-Knoten im `reviewbeforesubmit`-Knoten. Stellen Sie sicher, dass der Wert der Eigenschaft `guideNodeClass` `guideButton` lautet, und ändern Sie die Eigenschaft `jcr:title` entsprechend.
-1. Ändern Sie die Typeigenschaft im Knoten `cq:Template`. Ändern Sie für das aktuelle Beispiel die Eigenschaft type in button.
+1. Ändern Sie die Typeigenschaft im Knoten `cq:Template`. Ändern Sie die Typeigenschaft für das aktuelle Beispiel in „button“.
 
-   Der Typwert wird als CSS-Klasse in der generierten HTML für die Komponente hinzugefügt. Benutzer können diese CSS-Klasse verwenden, um ihre Aktionen zu gestalten. Die Standardstile für mobile und Desktopgeräte werden für die Typwerte „button“, „submit“, „reset“ und „save“ bereitgestellt.
+   Der Typwert wird als CSS-Klasse in der generierten HTML für die Komponente hinzugefügt. Benutzende können diese CSS-Klasse verwenden, um ihre Aktionen stilistisch zu gestalten. Die Standardstile für mobile und Desktopgeräte werden für die Typwerte „button“, „submit“, „reset“ und „save“ bereitgestellt.
 
 1. Wählen Sie die benutzerdefinierte Aktion aus dem Dialogfeld zur Symbolleistenbearbeitung des adaptiven Formulars. Eine Überprüfungsschaltfläche wird in der Symbolleiste für den Bereich angezeigt.
 
@@ -183,6 +183,6 @@ Zur Veranschaulichung der Erstellung einer benutzerdefinierten Symbolleistenakti
 
 ## Stichproben {#samples}
 
-Das folgende Archiv enthält ein Inhaltspaket. Das Paket enthält ein adaptives Formular im Zusammenhang mit der oben genannten Demo der benutzerdefinierten Symbolleistenaktion.
+Das folgende Archiv enthält ein Inhaltspaket. Das Paket enthält ein adaptives Formular, das mit der oben genannten Demonstration der benutzerdefinierten Symbolleistenaktion verknüpft ist.
 
 [Datei laden](assets/customtoolbaractiondemo.zip)

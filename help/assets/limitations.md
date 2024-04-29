@@ -10,9 +10,9 @@ role: User
 exl-id: e4d4059e-ac0b-42e7-910c-001310796574
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '347'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -32,12 +32,12 @@ Wenn Sie ein Rotationsset oder Bildset erstellen oder PDFs zur Seitenextrahierun
 | Asset – Art des Grenzwerts | Best Practice | Erzwungene Begrenzung |
 | --- | --- | --- |
 | **Bild**: Anzahl der smarten Zuschnitte pro Bild | 5 | 100 |
-| **Alle Sets**: Anzahl doppelter Assets pro Set | Keine Duplikate | 20 ‡ |
+| **Alle Sets**: Anzahl doppelter Assets pro Set | Keine Duplikate | 20‡ |
 | **Alle Sets**: Maximale Anzahl von Assets pro Set | 5–10 Bilder pro Set | 1000 |
 | **Rotationsset**: Maximale Anzahl von Zeilen/Spalten pro 2D-Set | 12–18 Bilder pro Set | 1000 |
 | **PDF**: Maximale Zahl der Seiten für eine PDF-Datei, die für die Extraktion berücksichtigt werden sollen |  | 100 (für alle PDFs) |
 
-‡ Best Practice ist, keine doppelten Assets in einem Satz zu haben. Die Beschränkung beträgt 20 Duplikate für ein einzelnes Asset. Wenn Sie ein weiteres Duplikat für dieses Asset innerhalb dieses Satzes hinzufügen, gibt die Anfrage entweder einen Fehler aus oder ignoriert das Duplikat.
+‡ Best Practice ist, keine doppelten Assets in einem Satz zu haben. Das Limit beträgt 20 Duplikate für ein einzelnes Asset. Wenn Sie ein weiteres Duplikat für dieses Asset innerhalb dieses Satzes hinzufügen, gibt die Anfrage entweder einen Fehler aus oder ignoriert das Duplikat.
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
 ## Nicht unterstützte Webbrowser- und Betriebssystemkombinationen für Dynamic Media {#unsupported-browser-os}
@@ -59,7 +59,7 @@ Dynamic Media unterstützt nicht die folgenden Kombinationen aus Webbrowser und 
 <!-- CQDOC-19433 (original ticket)
 and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
 
-Seit dem Mittwoch, 30. April 2024 stellt Adobe Dynamic Media die Unterstützung für Folgendes ein:
+Seit dem 30. April 2024 stellt Adobe Dynamic Media die Unterstützung für Folgendes ein:
 
 * SSL (Secure Socket Layer) 2.0
 * SSL 3.0

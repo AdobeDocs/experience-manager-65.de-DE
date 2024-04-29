@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1118'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -113,7 +113,7 @@ Falls der globale Dokumentenspeicher an einem anderen als dem ursprünglichen Sp
 
 >[!NOTE]
 >
->Wenn Sie die Dokumentenspeicherung in der Datenbank aktiviert haben, müssen Sie den Speicherort des globalen Dokumentenspeichers nicht ändern.
+>Wenn Sie den Dokumentenspeicher in der Datenbank aktiviert haben, müssen Sie den Speicherort des globalen Dokumentenspeichers nicht ändern.
 
 >[!NOTE]
 >

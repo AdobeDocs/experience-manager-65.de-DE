@@ -9,9 +9,9 @@ docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4024'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -183,7 +183,7 @@ Sie haben ggf. die Möglichkeit, Anhänge lokal hinzuzufügen, zu aktualisieren,
 
 ### Speichern Ihrer Arbeit ohne Abschließen der Aufgabe {#save-your-work-without-completing-the-task}
 
-1. Wählen Sie auf jeder Registerkarte **Speichern**.
+1. Wählen Sie auf einer beliebigen Registerkarte **Speichern** aus.
 
    Das Dialogfeld „Als Entwurf speichern“ wird angezeigt. Der Standardname des Entwurfs entspricht dem der Aufgabe aus der Aufgabenvorlage.
 
@@ -191,12 +191,12 @@ Sie haben ggf. die Möglichkeit, Anhänge lokal hinzuzufügen, zu aktualisieren,
 
    >[!NOTE]
    >
-   >Sie können Workspace so konfigurieren, dass Informationen, die von einem Benutzer als Entwurf eingegeben wurden, von Zeit zu Zeit automatisch gespeichert werden. Wenn die automatische Speicherung aktiviert ist und ein Benutzer an einem Entwurf arbeitet, wird der Entwurf in regelmäßigen Abständen gespeichert. Bei automatischem Speichern wird automatisch der Standardname der Aufgabe übernommen.
+   >Sie können Workspace so konfigurieren, dass Informationen, die von einem Benutzer als Entwurf eingegeben wurden, von Zeit zu Zeit automatisch gespeichert werden. Wenn die automatische Speicherung aktiviert ist und ein Benutzer an einem Entwurf arbeitet, wird der Entwurf in regelmäßigen Abständen gespeichert. Bei der automatischen Speicherung wird der Standardname der Aufgabe automatisch übernommen.
    >
    >
    >Weitere Informationen finden Sie unter „Entwurf regelmäßig speichern“ unter [Verwalten von Voreinstellungen](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
-1. Geben Sie im Dialogfeld &quot;Als Entwurf speichern&quot;einen eindeutigen Namen für die Aufgabe an und wählen Sie **OK**.
+1. Geben Sie im Dialogfeld „Als Entwurf speichern“ einen eindeutigen Namen für die Aufgabe ein und wählen Sie **OK** aus.
 
    ![saveasdraftdialog_name](assets/saveasdraftdialog_name.png)
 

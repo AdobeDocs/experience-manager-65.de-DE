@@ -8,9 +8,9 @@ feature: Correspondence Management
 exl-id: c9c007d0-c545-4738-b11b-4c50986342ee
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '846'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -246,13 +246,13 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
   </tr>
   <tr>
    <td><p>Brief-Cache-Größe</p> </td>
-   <td><p>Geben Sie die maximale Anzahl von Briefen an, die im Cache gespeichert werden sollen.</p> <p>Eine Änderung dieses Werts führt zur Bereinigung von <code>in-memory</code> zwischenspeichern.</p> </td>
+   <td><p>Geben Sie die maximale Anzahl von Briefen an, die im Cache gespeichert werden sollen.</p> <p>Das Ändern dieses Werts führt zur Bereinigung des <code>in-memory</code>-Caches.</p> </td>
    <td><p>100</p> </td>
    <td><p>Jeder numerische Wert</p> </td>
   </tr>
   <tr>
    <td><p>Brief-Cache aktivieren</p> </td>
-   <td><p>Brief-Cache aktivieren/deaktivieren</p> <p>Eine Änderung dieses Werts führt zur Bereinigung von <code>in-memory </code> zwischenspeichern.</p> </td>
+   <td><p>Brief-Cache aktivieren/deaktivieren</p> <p>Das Ändern dieses Werts führt zur Bereinigung des <code>in-memory </code>-Caches.</p> </td>
    <td><p>Ja</p> </td>
    <td><p>true/false</p> </td>
   </tr>

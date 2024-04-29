@@ -7,9 +7,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: ff9bf466-228d-40e6-9389-15c1f2ed1d2e
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '736'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Sie können ein adaptives Formular so konfigurieren, dass der Inhalt basierend a
 
 Die Option „Automatisches Speichern“ ist für ein adaptives Formular nicht standardmäßig aktiviert.  Sie können die Option „Automatisches Speichern“ über den Abschnitt **Automatisches Speichern** eines adaptiven Formulars aktivieren. Der Abschnitt **Automatisches Speichern** bietet mehrere weitere Konfigurationsoptionen. Führen Sie zum Aktivieren und Konfigurieren der Option „Automatisches Speichern“ für ein adaptives Formular folgende Schritte durch: 
 
-1. Um auf den Abschnitt &quot;Automatisches Speichern&quot;in den Eigenschaften zuzugreifen, wählen Sie eine Komponente aus und klicken Sie dann auf ![Feldebene](assets/field-level.png) > **[!UICONTROL Container für adaptive Formulare]** und wählen Sie ![cmppr](assets/cmppr.png).
+1. Um auf den Abschnitt für das automatische Speichern in den Eigenschaften zuzugreifen, wählen Sie eine Komponente und dann ![field-level](assets/field-level.png) > **[!UICONTROL Container für adaptive Formulare]** und anschließend ![cmppr](assets/cmppr.png).
 1. **[!UICONTROL Aktivieren]** Sie im Abschnitt **[!UICONTROL Automatische Speicherung]** die Option zum automatischen Speichern.
 1. Geben Sie im Feld **[!UICONTROL Ereignis für adaptives Formular]** den Wert „1“ oder „TRUE“ ein, um das Formular automatisch speichern zu lassen, wenn das Formular im Browser geladen wird. Sie können außerdem einen bedingten Ausdruck für ein Ereignis angeben, bei dem, wenn es ausgelöst wird, der Status „true“ zurückgegeben und der Inhalt des Formulars gespeichert wird.
 1. Geben Sie den Auslöser an. Die automatische Speicherung wird gemäß Ihrer Konfiguration ausgelöst. Ihre Optionen sind:
@@ -84,6 +84,6 @@ Sie können ein benutzerdefiniertes Ereignis implementieren, um die Funktion fü
 
 1. Öffnen Sie das adaptive Formular im Authoring-Modus.
 
-1. Wählen Sie im Bearbeitungsmodus eine Komponente aus, wählen Sie dann ![field-leve](assets/field-level.png) > **[!UICONTROL Container eines adaptiven Formulars]** und dann ![cmppr](assets/cmppr.png).
+1. Wählen Sie im Bearbeitungsmodus eine Komponente, ![field-level](assets/field-level.png) > **[!UICONTROL Container für adaptive Formulare]** und dann ![cmppr](assets/cmppr.png) aus.
 1. Öffnen Sie in den Eigenschaften den Abschnitt **[!UICONTROL Allgemein]**. Geben Sie im Feld **[!UICONTROL Client-Bibliothekskategorie]** den Wert der Kategorieeigenschaft ein, der beim Erstellen der Client-Bibliotheksordner definiert wurde.
 1. Öffnen Sie den Abschnitt „Automatisches Speichern“. Geben Sie im Feld **[!UICONTROL Automatisch nach diesem Ereignis speichern]** ein benutzerdefiniertes Ereignis an, das in der Client-Bibliothek bereits definiert ist. Klicken Sie auf **[!UICONTROL OK]**.

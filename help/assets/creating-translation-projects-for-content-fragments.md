@@ -10,9 +10,9 @@ role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '984'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
 
@@ -20,49 +20,49 @@ ht-degree: 36%
 
 Zusätzlich zu Assets unterstützt Adobe Experience Manager (AEM) Assets Sprachkopie-Workflows für [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) (einschließlich Varianten). Um Sprachkopie-Workflows auf Inhaltsfragmenten auszuführen, ist keine zusätzliche Optimierung erforderlich. In jedem Workflow wird das gesamte Inhaltsfragment zur Übersetzung gesendet.
 
-Die Typen von Workflows, die Sie für Inhaltsfragmente ausführen können, ähneln den Workflow-Typen, die Sie für Assets ausführen. Außerdem stimmen die in den einzelnen Workflow-Typen verfügbaren Optionen mit den Optionen überein, die unter den entsprechenden Workflow-Typen für Assets verfügbar sind.
+Die Workflow-Typen, die Sie bei Inhaltsfragmenten ausführen können, entsprechen den Workflow-Typen, die Sie für Assets ausführen können. Die Optionen, die bei jedem Workflow-Typ verfügbar sind, stimmen zudem mit den Optionen überein, die unter den entsprechenden Workflow-Typen für Assets verfügbar sind.
 
-Sie können die folgenden Arten von Sprachkopie-Workflows für Inhaltsfragmente ausführen:
+Sie können die folgenden Typen von Sprachkopie-Workflows bei Inhaltsfragmenten ausführen:
 
 **Erstellen und übersetzen**
 
-In diesem Workflow werden zu übersetzende Inhaltsfragmente in den Sprachstamm der Sprache kopiert, in die Sie übersetzen möchten. Darüber hinaus wird, abhängig von den gewählten Optionen, ein Übersetzungsprojekt für die Inhaltsfragmente in der Projektekonsole erstellt. Abhängig von den Einstellungen kann das Übersetzungsprojekt manuell gestartet oder automatisch ausgeführt werden, sobald das Übersetzungsprojekt erstellt wurde.
+In diesem Workflow wird das zu übersetzende Inhaltsfragment in den Sprachstamm der Sprache kopiert, in die übersetzt werden soll. Darüber hinaus wird, abhängig von den gewählten Optionen, ein Übersetzungsprojekt für die Inhaltsfragmente in der Projektekonsole erstellt. Abhängig von den Einstellungen kann das Übersetzungsprojekt manuell gestartet oder automatisch ausgeführt werden, sobald das Übersetzungsprojekt erstellt wurde.
 
 **Aktualisieren von Sprachkopien**
 
-Wenn das Quellinhaltsfragment aktualisiert oder geändert wird, muss das entsprechende Gebietsschema/das sprachspezifische Inhaltsfragment erneut übersetzt werden. Der Workflow Sprachkopien aktualisieren übersetzt eine zusätzliche Gruppe von Inhaltsfragmenten und fügt sie in eine Sprachkopie für ein bestimmtes Gebietsschema ein. In diesem Fall werden die übersetzten Inhaltsfragmente zum Zielordner hinzugefügt, der bereits zuvor übersetzte Inhaltsfragmente enthält.
+Wenn das Quellinhaltsfragment aktualisiert oder geändert wird, muss das entsprechende Gebietsschema/das sprachspezifische Inhaltsfragment erneut übersetzt werden. Der Workflow „Sprachkopien aktualisieren“ übersetzt eine zusätzliche Gruppe von Inhaltsfragmenten und schließt diese in einer Sprachkopie für ein bestimmtes Gebietsschema ein. In diesem Fall werden die übersetzten Inhaltsfragmente dem Zielordner hinzugefügt, der bereits zuvor übersetzte Inhaltsfragmente enthält.
 
 ## Workflow für das Erstellen und Übersetzen {#create-and-translate-workflow}
 
-Der Workflow Erstellen und Übersetzen umfasst die folgenden Optionen. Die mit der jeweiligen Option verbundenen Verfahrensschritte ähneln denen, die mit der entsprechenden Option für Assets verbunden sind.
+Der Workflow für das Erstellen und Übersetzen umfasst die folgenden Optionen. Die mit der jeweiligen Option verbundenen Verfahrensschritte ähneln denen, die mit der entsprechenden Option für Assets verbunden sind.
 
 * Nur Struktur erstellen: Verfahrensschritte finden Sie unter [Erstellen einer Struktur nur für Assets](translation-projects.md#create-structure-only).
-* Erstellen Sie ein Übersetzungsprojekt: Verfahrensschritte finden Sie unter [Erstellen eines Übersetzungsprojekts für Assets](translation-projects.md#create-a-new-translation-project).
+* Übersetzungsprojekt erstellen: Verfahrensschritte finden Sie unter [Erstellen eines Übersetzungsprojekts für Assets](translation-projects.md#create-a-new-translation-project).
 * Hinzufügen zu vorhandenem Übersetzungsprojekt: Verfahrensschritte finden Sie unter [Hinzufügen zu einem vorhandenen Übersetzungsprojekt für Assets](translation-projects.md#add-to-existing-translation-project).
 
-## Workflow &quot;Sprachkopien aktualisieren&quot; {#update-language-copies-workflow}
+## Workflow zum Aktualisieren von Sprachkopien {#update-language-copies-workflow}
 
-Der Workflow Sprachkopien aktualisieren umfasst die folgenden Optionen. Die mit der jeweiligen Option verbundenen Verfahrensschritte ähneln denen, die mit der entsprechenden Option für Assets verbunden sind.
+Der Workflow zum Aktualisieren der Sprachkopien umfasst die folgenden Optionen. Die mit der jeweiligen Option verbundenen Verfahrensschritte ähneln denen, die mit der entsprechenden Option für Assets verbunden sind.
 
-* Erstellen Sie ein Übersetzungsprojekt: Verfahrensschritte finden Sie unter [Erstellen eines Übersetzungsprojekts für Assets](translation-projects.md#create-a-new-translation-project) (Workflow aktualisieren).
+* Übersetzungsprojekt erstellen: Verfahrensschritte finden Sie unter [Erstellen eines Übersetzungsprojekts für Assets](translation-projects.md#create-a-new-translation-project) (Update-Workflow).
 * Hinzufügen zu vorhandenem Übersetzungsprojekt: Verfahrensschritte finden Sie unter [Hinzufügen zu einem vorhandenen Übersetzungsprojekt für Assets](translation-projects.md#add-to-existing-translation-project) (Update-) Workflow.
 
 Sie können auch temporäre Sprachkopien für Fragmente erstellen, ähnlich wie Sie temporäre Kopien für Assets erstellen. Weitere Informationen finden Sie unter [Erstellen temporärer Sprachkopien für Assets](translation-projects.md#creating-temporary-language-copies).
 
 ## Übersetzen von Fragmenten mit gemischten Medien {#translating-mixed-media-fragments}
 
-Mit AEM können Sie Inhaltsfragmente übersetzen, die verschiedene Arten von Medien-Assets und Sammlungen enthalten. Wenn Sie ein Inhaltsfragment übersetzen, das Inline-Assets enthält, werden die übersetzten Kopien dieser Assets im Zielsprachenstamm gespeichert.
+In AEM können Sie Inhaltsfragmente übersetzen, die unterschiedliche Arten von Medien-Assets und Sammlungen enthalten. Wenn Sie ein Inhaltsfragment übersetzen, das Inline-Assets enthält, werden die übersetzten Kopien dieser Assets im Zielsprachstamm gespeichert.
 
-Wenn das Inhaltsfragment eine Sammlung enthält, werden die Assets in der Sammlung zusammen mit dem Inhaltsfragment übersetzt. Die übersetzten Kopien der Assets werden im entsprechenden Zielsprachenstamm an einem Speicherort gespeichert, der dem physischen Speicherort der Quell-Assets unter dem Ausgangssprachenstamm entspricht.
+Wenn das Inhaltsfragment eine Sammlung umfasst, werden die darin enthaltenen Assets zusammen mit dem Inhaltsfragment übersetzt. Die übersetzten Kopien der Assets werden in dem jeweiligen Zielsprachstamm an einem Speicherort gespeichert, der dem physischen Speicherort der Quell-Assets unter dem Ausgangssprachstamm entspricht.
 
-Um Inhaltsfragmente, die gemischte Medien enthalten, übersetzen zu können, bearbeiten Sie zunächst das standardmäßige Übersetzungs-Framework, um die Übersetzung von Inline-Assets und Sammlungen zu ermöglichen, die mit Inhaltsfragmenten verknüpft sind.
+Um Inhaltsfragmente zu übersetzen, die gemischte Medien enthalten, bearbeiten Sie zunächst das standardmäßige Übersetzungs-Framework, um die Übersetzung von mit Inhaltsfragmenten verknüpften Inline-Assets und Sammlungen zu ermöglichen.
 
-1. Klicken Sie auf das AEM und navigieren Sie zu **[!UICONTROL Tools > Bereitstellung > Cloud Service]**.
-1. Suchen **[!UICONTROL Übersetzungsintegration]** under **[!UICONTROL Adobe Marketing Cloud]** und klicken Sie auf **[!UICONTROL Konfigurationen anzeigen]**.
+1. Klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Bereitstellung > Cloud-Services]**.
+1. Klicken Sie unter **[!UICONTROL Adobe Marketing Cloud]** in **[!UICONTROL Übersetzungsintegration]** auf **[!UICONTROL Konfigurationen anzeigen]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
 
-1. Klicken Sie in der Liste der verfügbaren Konfigurationen auf **[!UICONTROL Standardkonfiguration (Konfiguration der Übersetzungsintegration)]** , um die **[!UICONTROL Standardkonfiguration]** Seite.
+1. Klicken Sie in der Liste der verfügbaren Konfigurationen auf **[!UICONTROL Standardkonfiguration (Konfiguration für Übersetzungsintegration)]**, um die Seite **[!UICONTROL Standardkonfiguration]** zu öffnen.
 
    ![chlimage_1-445](assets/chlimage_1-445.png)
 
@@ -70,7 +70,7 @@ Um Inhaltsfragmente, die gemischte Medien enthalten, übersetzen zu können, bea
 
    ![chlimage_1-446](assets/chlimage_1-446.png)
 
-1. Navigieren Sie zum **[!UICONTROL Assets]** und wählen Sie **[!UICONTROL Inline-Medien-Assets und zugehörige Sammlungen]** aus dem **[!UICONTROL Übersetzen von Inhaltsfragment-Assets]** Liste. Klicken Sie auf **[!UICONTROL OK]**, um die Änderungen zu speichern.
+1. Navigieren Sie zu der Registerkarte **[!UICONTROL Assets]** und wählen Sie aus der Liste **[!UICONTROL Inhaltsfragment-Assets übersetzen]** die Option **[!UICONTROL Eingebundene Medien-Assets und zugeordnete Sammlungen]** aus. Klicken Sie auf **[!UICONTROL OK]**, um die Änderungen zu speichern.
 
    ![chlimage_1-447](assets/chlimage_1-447.png)
 
@@ -78,7 +78,7 @@ Um Inhaltsfragmente, die gemischte Medien enthalten, übersetzen zu können, bea
 
    ![chlimage_1-448](assets/chlimage_1-448.png)
 
-1. Klicken Sie auf **[!UICONTROL Asset einfügen]** Symbol.
+1. Klicken Sie auf das Symbol **[!UICONTROL Asset einfügen]**.
 
    ![chlimage_1-449](assets/chlimage_1-449.png)
 
@@ -86,11 +86,11 @@ Um Inhaltsfragmente, die gemischte Medien enthalten, übersetzen zu können, bea
 
    ![Einfügen eines Assets in ein Inhaltsfragment](assets/column-view.png)
 
-1. Klicken Sie auf **[!UICONTROL Inhalt verknüpfen]** Symbol.
+1. Klicken Sie auf das Symbol **[!UICONTROL Inhalt verknüpfen]**.
 
    ![chlimage_1-451](assets/chlimage_1-451.png)
 
-1. Klicks **[!UICONTROL Inhalt verknüpfen]**.
+1. Klicken Sie auf **[!UICONTROL Inhalt verknüpfen]**.
 
    ![chlimage_1-452](assets/chlimage_1-452.png)
 
@@ -98,16 +98,16 @@ Um Inhaltsfragmente, die gemischte Medien enthalten, übersetzen zu können, bea
 
    ![chlimage_1-453](assets/chlimage_1-453.png)
 
-1. Wählen Sie das Inhaltsfragment aus und klicken Sie auf das **[!UICONTROL GlobalNav]** Symbol.
-1. Auswählen **[!UICONTROL Verweise]** aus dem Menü, um die **[!UICONTROL Verweise]** -Bereich.
+1. Wählen Sie das Inhaltsfragment aus und klicken Sie auf das Symbol **[!UICONTROL GlobalNav]**.
+1. Wählen Sie im Menü die Option **[!UICONTROL Verweise]** aus, um das Bedienfeld **[!UICONTROL Verweise]** anzuzeigen.
 
    ![chlimage_1-454](assets/chlimage_1-454.png)
 
-1. Klicks **[!UICONTROL Sprachkopien]** under **[!UICONTROL Kopien]** , um die Sprachkopien anzuzeigen.
+1. Klicken Sie unter **[!UICONTROL Kopien]** auf **[!UICONTROL Sprachkopien]**, um die Sprachkopien anzuzeigen.
 
    ![chlimage_1-455](assets/chlimage_1-455.png)
 
-1. Klicks **[!UICONTROL Erstellen und übersetzen]** von unten im Bedienfeld aus, um die **[!UICONTROL Erstellen und übersetzen]** angezeigt.
+1. Klicken Sie im unteren Bereich des Bedienfelds auf **[!UICONTROL Erstellen und übersetzen]**, um das Dialogfeld **[!UICONTROL Erstellen und übersetzen]** anzuzeigen.
 
    ![chlimage_1-456](assets/chlimage_1-456.png)
 
@@ -119,7 +119,7 @@ Um Inhaltsfragmente, die gemischte Medien enthalten, übersetzen zu können, bea
 
    ![chlimage_1-458](assets/chlimage_1-458.png)
 
-1. Geben Sie den Titel des Projekts im **[!UICONTROL Projekttitel]** und klicken Sie anschließend auf **Erstellen**.
+1. Geben Sie im Feld **[!UICONTROL Projekttitel]** den Titel des Projekts ein und klicken Sie dann auf **Erstellen**.
 
    ![chlimage_1-459](assets/chlimage_1-459.png)
 
@@ -131,8 +131,8 @@ Um Inhaltsfragmente, die gemischte Medien enthalten, übersetzen zu können, bea
 
    ![chlimage_1-461](assets/chlimage_1-461.png)
 
-1. Überprüfen Sie in der Kachel Übersetzungsauftrag die Anzahl der zu übersetzenden Assets.
-1. Aus dem **[!UICONTROL Übersetzungsauftrag]** Kachel, starten Sie den Übersetzungsauftrag.
+1. Überprüfen Sie auf der Kachel „Übersetzungsauftrag“ die Anzahl der zu übersetzenden Assets.
+1. Starten Sie den Übersetzungsauftrag über die Kachel **[!UICONTROL Übersetzungsauftrag]**.
 
    ![chlimage_1-462](assets/chlimage_1-462.png)
 
@@ -140,7 +140,7 @@ Um Inhaltsfragmente, die gemischte Medien enthalten, übersetzen zu können, bea
 
    ![chlimage_1-463](assets/chlimage_1-463.png)
 
-1. Klicken Sie auf das Inhaltsfragment, um den Pfad der übersetzten verknüpften Assets zu überprüfen.
+1. Klicken Sie auf das Inhaltsfragment, um den Pfad der übersetzten zugehörigen Assets zu überprüfen.
 
    ![chlimage_1-464](assets/chlimage_1-464.png)
 
@@ -150,14 +150,14 @@ Um Inhaltsfragmente, die gemischte Medien enthalten, übersetzen zu können, bea
 
    Beachten Sie, dass nur der Inhalt der Sammlung übersetzt wird. Die Sammlung selbst wird nicht übersetzt.
 
-1. Navigieren Sie zum Pfad des übersetzten verknüpften Assets. Beachten Sie, dass das übersetzte Asset unter dem Zielsprachenstamm gespeichert wird.
+1. Navigieren Sie zum Pfad des übersetzten zugehörigen Assets. Beachten Sie, dass das übersetzte Asset unter dem Zielsprachenstamm gespeichert wird.
 
    ![chlimage_1-466](assets/chlimage_1-466.png)
 
-1. Navigieren Sie zu den Assets in der Sammlung, die zusammen mit dem Inhaltsfragment übersetzt werden. Beachten Sie, dass die übersetzten Kopien der Assets im entsprechenden Zielsprachenstamm gespeichert werden.
+1. Navigieren Sie zu den Assets in der Sammlung, die zusammen mit dem Inhaltsfragment übersetzt werden. Beachten Sie, dass die übersetzten Kopien der Assets im entsprechenden Stammverzeichnis der Zielsprache gespeichert werden.
 
    ![chlimage_1-467](assets/chlimage_1-467.png)
 
    >[!NOTE]
    >
-   >Die Verfahren zum Hinzufügen eines Inhaltsfragments zu einem vorhandenen Projekt oder zum Durchführen von Aktualisierungs-Workflows ähneln den entsprechenden Verfahren für Assets. Anleitungen zu diesen Verfahren finden Sie in den für Assets beschriebenen Verfahren.
+   >Die Verfahren zum Hinzufügen eines Inhaltsfragments zu einem vorhandenen Projekt oder zum Durchführen von Aktualisierungsworkflows ähneln den entsprechenden Verfahren für Assets. Hinweise zu diesen Verfahren finden Sie in den für Assets beschriebenen Verfahren.

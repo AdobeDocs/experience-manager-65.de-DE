@@ -7,9 +7,9 @@ feature: Projects
 exl-id: eee768e3-3eb4-46fa-b9ae-9ef8764a3a94
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '442'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ In [!DNL Adobe Experience Manager Assets] sind mehrsprachige Assets in Ordnern e
 
 Jeder Sprachordner wird als Sprachkopie bezeichnet. Der Stammordner einer Sprachkopie, auch als Sprachstamm bezeichnet, identifiziert die Sprache des Inhalts in der Sprachkopie. Zum Beispiel ist */content/dam/it* der Stamm der italienischen Sprache für die italienische Sprachkopie. Sprachkopien müssen einen [korrekt konfigurierten Sprachstamm](preparing-assets-for-translation.md#creating-a-language-root) verwenden, damit die korrekte Sprache ausgewählt wird, wenn Übersetzungen von Quell-Assets durchgeführt werden.
 
-Die Hauptsprache ist die Sprachkopie, für die Sie ursprünglich Assets hinzufügen. Die Hauptsprache ist die Quelle, die in andere Sprachen übersetzt wird. Eine Beispielordnerhierarchie enthält mehrere Sprachstämme:
+Die Sprachkopie, für die Sie ursprünglich Assets hinzufügen, ist die primäre Sprache.  Die primäre Sprache ist die Quelle, die in andere Sprachen übersetzt wird. Eine Beispielordnerhierarchie enthält mehrere Sprachstämme:
 
 ```shell
 /content
@@ -37,16 +37,16 @@ Die Hauptsprache ist die Sprachkopie, für die Sie ursprünglich Assets hinzufü
 
 Führen Sie die folgenden Schritte aus, um Ihre Assets für die Übersetzung vorzubereiten:
 
-1. Erstellen Sie den Sprachstamm Ihrer Primärsprache. Beispielsweise lautet der Sprachstamm der englischen Sprachkopie in der Beispielordnerhierarchie `/content/dam/en`. Stellen Sie sicher, dass der Sprachstamm entsprechend den Informationen unter [Erstellen eines Sprachstamms](preparing-assets-for-translation.md#creating-a-language-root) konfiguriert ist.
+1. Erstellen Sie den Sprachstamm für Ihre primäre Sprache.  Beispielsweise lautet der Sprachstamm der englischen Sprachkopie in der Beispielordnerhierarchie `/content/dam/en`. Stellen Sie sicher, dass der Sprachstamm entsprechend den Informationen unter [Erstellen eines Sprachstamms](preparing-assets-for-translation.md#creating-a-language-root) konfiguriert ist.
 
-1. Fügen Sie Ihrer Primärsprache Assets hinzu.
+1. Fügen Sie Assets zu Ihrer primären Sprache hinzu.
 1. Erstellen Sie den Sprachstamm der jeweiligen Zielsprache, für die Sie eine Sprachkopie benötigen.
 
 ## Erstellen eines Sprachstamms {#creating-a-language-root}
 
 Um den Sprachstamm zu erstellen, erstellen Sie einen Ordner und verwenden Sie einen ISO-Sprach-Code als Wert für die Name-Eigenschaft. Nachdem Sie den Sprachstamm erstellt haben, können Sie eine Sprachkopie auf jeder Ebene im Sprachstamm erstellen.
 
-Beispielsweise verfügt die Stammseite der italienischsprachigen Kopie der Beispielhierarchie über `it` als Eigenschaft „Name“. Die Eigenschaft Name wird als Name des Asset-Knotens im Repository verwendet und bestimmt daher den Pfad der Assets. (`https://[aem_server]:[port]/assets.html/content/dam/it/`).
+Beispielsweise verfügt die Stammseite der italienischsprachigen Kopie der Beispielhierarchie über `it` als Eigenschaft „Name“. Die Eigenschaft „Name“ wird als Name des Asset-Knotens im Repository verwendet und bestimmt daher den Pfad des Assets. (`https://[aem_server]:[port]/assets.html/content/dam/it/`).
 
 1. Klicken Sie in der [!DNL Assets]-Konsole auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Ordner]** aus dem Menü aus.
 
@@ -62,7 +62,7 @@ Beispielsweise verfügt die Stammseite der italienischsprachigen Kopie der Beisp
 
 In der [!DNL Experience Manager]-Benutzeroberfläche gibt es ein Bedienfeld **[!UICONTROL Verweise]**, das eine Liste der in [!DNL Assets] erstellten Sprachstämme anzeigt.
 
-1. Im [!DNL Assets] die Primärsprache auswählen, für die Sie Sprachkopien erstellen möchten.
+1. Wählen Sie in der [!DNL Assets]-Konsole die primäre Sprache aus, für die Sie Sprachkopien erstellen möchten.
 1. Wählen Sie in der linken Leiste die Option **[!UICONTROL Verweise]** aus, um den Bereich [!UICONTROL Verweise] zu öffnen.
 
    ![chlimage_1-122](assets/chlimage_1-122.png)

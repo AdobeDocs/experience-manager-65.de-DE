@@ -7,9 +7,9 @@ feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1619'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -81,11 +81,11 @@ Im AWS-Betrieb können, wenn statt eines RAID-Arrays mit EBS-Volumes ein zentral
 
 #### Leistungsprobleme {#performance-concerns}
 
-Bei einem freigegebenen Datenspeicher müssen die Binärdateien auf einem Laufwerk gespeichert werden, das an ein Netzwerk angebunden und für alle Instanzen freigegeben ist. Da der Zugriff auf diese Binärdateien über ein Netzwerk erfolgt, wird die Systemleistung beeinträchtigt. Eine schnelle Netzwerkverbindung zu einem schnellen Festplattenarray kann diesen Effekt teilweise auffangen. Dies ist jedoch eine teure Angelegenheit. Wenn AWS-Vorgänge ausgeführt werden, sind alle Festplatten remote und benötigen eine Netzwerkverbindung. Bei temporären Volumen gehen Daten verloren, wenn die Instanz gestartet oder angehalten wird.
+Bei einem freigegebenen Datenspeicher müssen die Binärdateien auf einem Laufwerk gespeichert werden, das an ein Netzwerk angebunden und für alle Instanzen freigegeben ist. Da der Zugriff auf diese Binärdateien über ein Netzwerk erfolgt, wird die Systemleistung beeinträchtigt. Eine schnelle Netzwerkverbindung zu einem schnellen Festplattenarray kann diesen Effekt teilweise auffangen. Dies ist jedoch eine teure Angelegenheit. Bei AWS-Vorgängen liegen alle Festplatten remote vor, sodass eine Netzwerkanbindung erforderlich ist. Bei temporären Volumen gehen Daten verloren, wenn die Instanz gestartet oder angehalten wird.
 
 #### Latenz {#latency}
 
-Die Latenz in S3-Implementierungen wird durch die Schreib-Threads im Hintergrund eingeführt. Sicherungsverfahren müssen diese Latenz berücksichtigen. Darüber hinaus können Lucene-Indizes beim Erstellen eines Backups unvollständig bleiben. Dies gilt für alle zeitkritischen Dateien, die in den S3-Datenspeicher geschrieben und von einer anderen Instanz aus aufgerufen werden.
+Die Latenz in S3-Implementierungen wird durch die Schreib-Threads im Hintergrund eingeführt. Backup-Verfahren müssen diese Latenz berücksichtigen. Darüber hinaus können Lucene-Indizes beim Erstellen eines Backups unvollständig bleiben. Dies gilt für alle zeitkritischen Dateien, die in den S3-Datenspeicher geschrieben und von einer anderen Instanz aus aufgerufen werden.
 
 ### Knotenspeicher oder Dokumentspeicher {#node-store-document-store}
 
@@ -104,7 +104,7 @@ Setzen Sie für das Repository SSDs oder Festplatten mit einem IOPS-Level von me
 
 ## Netzwerk {#network}
 
-[!DNL Assets] verfügt über mehrere Anwendungsfälle, die die Netzwerkleistung wichtiger machen als bei vielen unserer [!DNL Experience Manager] Projekte. Eine Kundin oder ein Kunde kann zwar über einen schnellen Server verfügen, aber wenn die Netzwerkverbindung nicht für die Auslastung durch die Benutzenden ausreicht, die Assets hochladen und aus dem System herunterladen, scheint der Server nach wie vor langsam zu sein. Eine gute Methodik zum Bestimmen des Drosselpunkts (Choke Point) bei der Netzwerkverbindung von Benutzenden zu [!DNL Experience Manager] finden Sie in den [Assets-Hinweisen zum Benutzererlebnis sowie zur Instanzdimensionierung, Workflow-Bewertung und Netzwerktopologie](/help/assets/assets-network-considerations.md).
+Für [!DNL Assets] gibt es verschiedene Anwendungsfälle, bei denen die Netzwerkleistung eine größere Bedeutung hat als bei vielen anderen unserer [!DNL Experience Manager]-Projekte. Eine Kundin oder ein Kunde kann zwar über einen schnellen Server verfügen, aber wenn die Netzwerkverbindung nicht für die Auslastung durch die Benutzenden ausreicht, die Assets hochladen und aus dem System herunterladen, scheint der Server nach wie vor langsam zu sein. Eine gute Methodik zum Bestimmen des Drosselpunkts (Choke Point) bei der Netzwerkverbindung von Benutzenden zu [!DNL Experience Manager] finden Sie in den [Assets-Hinweisen zum Benutzererlebnis sowie zur Instanzdimensionierung, Workflow-Bewertung und Netzwerktopologie](/help/assets/assets-network-considerations.md).
 
 ## Beschränkungen {#limitations}
 

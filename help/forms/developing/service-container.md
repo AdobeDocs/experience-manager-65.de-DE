@@ -1,6 +1,6 @@
 ---
 title: Dienst-Container
-description: AEM Forms-Dienste im Dienstcontainer
+description: AEM Forms-Dienste im Dienst-Container
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,9 +9,9 @@ role: Developer
 exl-id: 6abf2401-5a87-4f72-9028-74580df5b9de
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '923'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 93%
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
 
-AEM Forms-Dienste im Dienstcontainer (einschließlich Standarddiensten wie dem Encryption-Dienst, langlebigen und kurzlebigen Prozessen) können mit verschiedenen Anbietern aufgerufen werden, z. B. einem EJB-Anbieter. Ein EJB-Anbieter ermöglicht den Aufruf von AEM Forms-Services über RMI/IIOP. Ein Webservice-Anbieter stellt Services als Web-Services (WSDL-Generierung) unter Verwendung von Standards wie SOAP/HTTP und SOAP/JMS bereit.
+AEM Forms-Dienste im Dienst-Container (einschließlich Standarddiensten wie dem Encryption-Dienst, langlebigen und kurzlebigen Prozessen) können mit verschiedenen Anbietern, z. B. einem EJB-Anbieter, aufgerufen werden. Ein EJB-Anbieter ermöglicht den Aufruf von AEM Forms-Services über RMI/IIOP. Ein Webservice-Anbieter stellt Services als Web-Services (WSDL-Generierung) unter Verwendung von Standards wie SOAP/HTTP und SOAP/JMS bereit.
 
 In der folgenden Tabelle werden die verschiedenen Methoden zum programmgesteuerten Aufrufen von AEM Forms-Services beschrieben.
 
@@ -59,7 +59,7 @@ Die folgende Abbildung zeigt die verschiedenen Möglichkeiten, wie AEM Forms-Ser
 Der Service-Container bietet die folgenden Funktionen:
 
 * Ermöglicht den Aufruf von AEM Forms-Services mit verschiedenen Methoden. Sie können einen Service konfigurieren, indem Sie Endpunkte festlegen, damit er mit allen Methoden aufgerufen werden kann: Remoting, die Java-API, Web-Services und REST. (Siehe [Programmgesteuertes Verwalten von Endpunkten](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints).)
-* Konvertiert eine Nachricht in ein normalisiertes Format, das als Aufrufanfrage bezeichnet wird. Eine Aufrufanforderung wird von einer Clientanwendung (oder einem anderen Dienst) an einen Dienst im Dienstcontainer gesendet. Eine Aufrufanfrage enthält Informationen wie den Namen des aufzurufenden Services und Datenwerte, die zur Durchführung des Vorgangs erforderlich sind. Viele Services benötigen ein Dokument, um einen Vorgang auszuführen. Daher enthält eine Aufrufanfrage normalerweise ein Dokument, bei dem es sich um PDF-Daten, XDP-Daten, XML-Daten usw. handeln kann.
+* Konvertiert eine Nachricht in ein normalisiertes Format, das als Aufrufanfrage bezeichnet wird. Eine Aufrufanfrage wird von einer Client-Anwendung (oder einem anderen Dienst) an einen Dienst im Dienst-Container gesendet. Eine Aufrufanfrage enthält Informationen wie den Namen des aufzurufenden Services und Datenwerte, die zur Durchführung des Vorgangs erforderlich sind. Viele Services benötigen ein Dokument, um einen Vorgang auszuführen. Daher enthält eine Aufrufanfrage normalerweise ein Dokument, bei dem es sich um PDF-Daten, XDP-Daten, XML-Daten usw. handeln kann.
 * Sendet Aufrufanfragen an entsprechende Services (der Name des aufzurufenden Services ist Teil der Aufrufanfrage).
 * Führt Aufgaben durch wie die Bestimmung, ob der Aufrufer berechtigt ist, den angegebenen Service-Vorgang aufzurufen. Die Aufrufanfrage muss einen gültigen Benutzernamen und ein gültiges Kennwort für AEM Forms enthalten.
 

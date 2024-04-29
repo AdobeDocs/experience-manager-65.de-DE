@@ -1,6 +1,6 @@
 ---
-title: Encryption Service Java&trade; API QuickStart(SOAP)
-description: Erfahren Sie, wie Sie die kennwortbasierte/zertifikatbasierte Verschlüsselung verschlüsseln, entfernen, entsperren und den Verschlüsselungstyp für PDF-Dokumente mithilfe von Java&trade, API im SOAP-Modus ermitteln.
+title: Schnellstart (SOAP) für die Java™-API für den Verschlüsselungsdienst
+description: Erfahren Sie, wie Sie Verschlüsselungen vornehmen, die kennwortbasierte/zertifikatsbasierte Verschlüsselung entfernen, Entsperrungen vornehmen und den Verschlüsselungstyp für PDF-Dokumente mithilfe der Java™-API im SOAP-Modus ermitteln.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,35 +9,35 @@ role: Developer
 exl-id: e8b2aa43-ac27-410d-a809-56bfd1c2fcb1
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '465'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
-# Schnellstart für Verschlüsselungsdienst Java™ API (SOAP) {#encryption-service-java-api-quickstart-soap}
+# Schnellstart (SOAP) für die Java™-API für den Verschlüsselungsdienst {#encryption-service-java-api-quickstart-soap}
 
-[Schnellstart (SOAP-Modus): Verschlüsseln eines PDF-Dokuments mit Java](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
+[Schnellstart (SOAP-Modus): Verschlüsseln eines PDF-Dokuments unter Verwendung der Java™-API](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Kennwortbasierte Verschlüsselung mit Java entfernen](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
+[Schnellstart (SOAP-Modus): Entfernen einer kennwortbasierten Verschlüsselung unter Verwendung der Java™-API](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Verschlüsseln eines PDF-Dokuments mit einem Zertifikat mit Java](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
+[Schnellstart (SOAP-Modus): Verschlüsseln eines PDF-Dokuments mit einem Zertifikat unter Verwendung der Java™-API](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Zertifikatbasierte Verschlüsselung mit Java entfernen](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
+[Schnellstart (SOAP-Modus): Entfernen einer zertifikatsbasierten Verschlüsselung unter Verwendung der Java™-API](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Entsperren eines verschlüsselten PDF-Dokuments mithilfe des Java-Codes](encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api)
+[Schnellstart (SOAP-Modus): Entsperren eines verschlüsselten PDF-Dokuments unter Verwendung der Java™-API](encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Bestimmen des Verschlüsselungstyps mithilfe von Java](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
+[Schnellstart (SOAP-Modus): Bestimmen des Verschlüsselungstyps unter Verwendung der Java™-API](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
 AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 
 >[!NOTE]
 >
->Schnellstarts beim Programmieren mit AEM Formularen basieren auf dem Forms-Server, der auf JBoss® Application Server und dem Microsoft® Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX® verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungs-Server verwenden, müssen Sie ebenfalls sicherstellen, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Die Schnellstarts für die Programmierung mit AEM Forms basieren auf dem Forms Server, der auf dem JBoss® Application Server und dem Microsoft® Windows-Betriebssystem eingesetzt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX® verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungs-Server verwenden, müssen Sie ebenfalls sicherstellen, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Schnellstart (SOAP-Modus): Verschlüsseln eines PDF-Dokuments mit der Java™ API {#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api}
+## Schnellstart (SOAP-Modus): Verschlüsseln eines PDF-Dokuments mithilfe der Java™-API {#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api}
 
-Das folgende Java™-Codebeispiel verschlüsselt ein PDF-Dokument mit dem Namen *Loan.pdf* mit dem Kennwortwert von `OpenPassword`. Das primäre Kennwort lautet `PermissionPassword`. Das geschützte PDF-Dokument wird als PDF-Datei mit dem Namen *EncryptLoan.pdf* gespeichert. (Siehe [Verschlüsseln von PDF-Dokumenten mit einem Kennwort](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
+Im folgenden Java™-Code-Beispiel wird ein PDF-Dokument namens *Loan.pdf* mit dem Kennwortwert `OpenPassword` verschlüsselt. Das primäre Kennwort lautet `PermissionPassword`. Das geschützte PDF-Dokument wird als PDF-Datei mit dem Namen *EncryptLoan.pdf* gespeichert. (Siehe [Verschlüsseln von PDF-Dokumenten mit einem Kennwort](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
 
 ```java
  /*
@@ -155,9 +155,9 @@ Das folgende Java™-Codebeispiel verschlüsselt ein PDF-Dokument mit dem Namen 
  }
 ```
 
-## Schnellstart (SOAP-Modus): Kennwortbasierte Verschlüsselung mithilfe der Java™ API entfernen {#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api}
+## Schnellstart (SOAP-Modus): Entfernen einer kennwortbasierten Verschlüsselung mithilfe der Java™-API {#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api}
 
-Im folgenden Java™-Codebeispiel wird die kennwortbasierte Verschlüsselung von einem PDF-Dokument namens entfernt *EncryptLoan.pdf*. Der primäre Kennwortwert zum Entfernen der kennwortbasierten Verschlüsselung lautet *PermissionPassword*. Das ungeschützte PDF-Dokument wird als PDF-Datei mit dem Namen *noEncryptionLoan.pdf* gespeichert. (Siehe [Entfernen der Kennwortverschlüsselung](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption).)
+Im folgenden Java™-Code-Beispiel wird eine kennwortbasierte Verschlüsselung von einem PDF-Dokument namens *EncryptLoan.pdf* entfernt. Der primäre Kennwortwert, der zum Entfernen der kennwortbasierten Verschlüsselung verwendet wird, lautet *PermissionPassword*. Das ungeschützte PDF-Dokument wird als PDF-Datei mit dem Namen *noEncryptionLoan.pdf* gespeichert. (Siehe [Entfernen der Kennwortverschlüsselung](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption).)
 
 ```java
  /*
@@ -252,9 +252,9 @@ Im folgenden Java™-Codebeispiel wird die kennwortbasierte Verschlüsselung von
  }
 ```
 
-## Schnellstart (SOAP-Modus): Verschlüsseln eines PDF-Dokuments mit einem Zertifikat mithilfe der Java™ API {#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api}
+## Schnellstart (SOAP-Modus): Verschlüsseln eines PDF-Dokuments mit einem Zertifikat mithilfe der Java™-API {#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api}
 
-Das folgende Java™-Codebeispiel verschlüsselt ein PDF-Dokument mit dem Namen *Loan.pdf* mit einem Zertifikat mit dem Namen *Encryption.cer*. Das verschlüsselte PDF-Dokument wird als PDF-Datei mit dem Namen *EncryptLoanCert.pdf* gespeichert. (Siehe [Verschlüsseln von PDF-Dokumenten mit Zertifikaten](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).)
+Im folgenden Java™-Code-Beispiel wird ein PDF-Dokument namens *Loan.pdf* mit einem Zertifikat namens *Encryption.cer* verschlüsselt. Das verschlüsselte PDF-Dokument wird als PDF-Datei mit dem Namen *EncryptLoanCert.pdf* gespeichert. (Siehe [Verschlüsseln von PDF-Dokumenten mit Zertifikaten](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).)
 
 ```java
  /*
@@ -381,9 +381,9 @@ Das folgende Java™-Codebeispiel verschlüsselt ein PDF-Dokument mit dem Namen 
  
 ```
 
-## Schnellstart (SOAP-Modus): Zertifikatbasierte Verschlüsselung mithilfe der Java™ API entfernen {#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api}
+## Schnellstart (SOAP-Modus): Entfernen einer zertifikatsbasierten Verschlüsselung mithilfe der Java™-API {#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api}
 
-Das folgende Java™-Codebeispiel entfernt die zertifikatbasierte Verschlüsselung von einem PDF-Dokument mit dem Namen *EncryptLoanCert.pdf*. Der Alias des öffentlichen Schlüssels, der zum Entfernen der Verschlüsselung verwendet wird, lautet `Encryption`. Das ungeschützte PDF-Dokument wird als PDF-Datei mit dem Namen *noEncryptionLoan.pdf* gespeichert. (Siehe [Entfernen einer zertifikatbasierten Verschlüsselung](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption).)
+Im folgenden Java™-Code-Beispiel wird eine zertifikatsbasierte Verschlüsselung von einem PDF-Dokument namens *EncryptLoanCert.pdf* entfernt. Der Alias des öffentlichen Schlüssels, der zum Entfernen der Verschlüsselung verwendet wird, lautet `Encryption`. Das ungeschützte PDF-Dokument wird als PDF-Datei mit dem Namen *noEncryptionLoan.pdf* gespeichert. (Siehe [Entfernen einer zertifikatbasierten Verschlüsselung](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption).)
 
 ```java
  /*
@@ -478,9 +478,9 @@ Das folgende Java™-Codebeispiel entfernt die zertifikatbasierte Verschlüsselu
  }
 ```
 
-## Schnellstart (SOAP-Modus): Entsperren eines verschlüsselten PDF-Dokuments mithilfe der Java™ API {#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api}
+## Schnellstart (SOAP-Modus): Entsperren eines verschlüsselten PDF-Dokuments mithilfe der Java™-API {#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api}
 
-Das folgende Java™-Codebeispiel entsperrt ein kennwortverschlüsseltes PDF-Dokument mit dem Namen *EncryptLoan.pdf*. (Siehe [Entsperren verschlüsselter PDF-Dokumente](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents).)
+Im folgenden Java™-Code-Beispiel wird ein kennwortverschlüsseltes PDF-Dokument namens *EncryptLoan.pdf* entsperrt. (Siehe [Entsperren verschlüsselter PDF-Dokumente](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents).)
 
 ```java
  /*
@@ -574,9 +574,9 @@ Das folgende Java™-Codebeispiel entsperrt ein kennwortverschlüsseltes PDF-Dok
  
 ```
 
-## Schnellstart (SOAP-Modus): Bestimmen des Verschlüsselungstyps mithilfe der Java™ API {#quick-start-soap-mode-determining-encryption-type-using-the-java-api}
+## Schnellstart (SOAP-Modus): Bestimmen des Verschlüsselungstyps mithilfe der Java™-API {#quick-start-soap-mode-determining-encryption-type-using-the-java-api}
 
-Im folgenden Java™-Codebeispiel wird der Verschlüsselungstyp bestimmt, der zum Schutz eines PDF-Dokuments mit dem Namen *EncryptLoan.pdf*. (Siehe [Bestimmen des Verschlüsselungstyps](/help/forms/developing/encrypting-decrypting-pdf-documents.md#determining-encryption-type).)
+Im folgenden Java™-Code-Beispiel wird der Verschlüsselungstyp bestimmt, mit dem ein PDF-Dokument namens *EncryptLoan.pdf* geschützt ist. (Siehe [Bestimmen des Verschlüsselungstyps](/help/forms/developing/encrypting-decrypting-pdf-documents.md#determining-encryption-type).)
 
 ```java
  /*

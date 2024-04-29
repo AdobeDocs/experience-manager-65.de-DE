@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: cdb7ff54-7891-45b1-a921-10b01ef5188d
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1196'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -72,13 +72,13 @@ Die Datei mit den globalen Einstellungen für Workspace enthält die folgenden E
 
 Die Einstellungen unter *specialRoutes* geben die Eigenschaften der Sonderrouten („Genehmigen“ und „Ablehnen“) in Workspace an. Unter bestimmten Umständen werden die Schaltflächen für diese Routen auf den Aufgabenkarten in Workspace angezeigt und die Benutzenden können sie auswählen, ohne das Formular zu öffnen. Sie können die Einstellungen für specialRoutes in der globalen Einstellungsdatei ändern, um benutzerdefinierte Namen für die Genehmigung und Ablehnung hinzuzufügen oder zusätzliche Routen zu erstellen.
 
-**client_specialRoutes_routes_approve_style:** Der Name des Stils, der sich im Workspace-Design befindet und die Symbole der Schaltfläche &quot;Genehmigen&quot;angibt. Der Stil muss Werte für ein aktiviertes und ein deaktiviertes Symbol enthalten. Um einen Stil für eine benutzerdefinierte Schaltfläche zu definieren, müssen Sie die folgende Vorlage verwenden:
-` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` Die CSS-Datei von Workspace ist in die Datei &quot;workspace-theme.swf&quot;eingebettet, die sich in der Datei &quot;adobe-workspace-client.ear > adobe-workspace-client.war&quot;befindet. Um das Erscheinungsbild von Workspace zu ändern, müssen Sie die Datei „workspace-theme.swf“ erneut kompilieren.
+**client_specialRoutes_routes_approve_style:** Der Name des Stils, der sich im Workspace-Design befindet und die Symbole für die Genehmigungsschaltfläche angibt. Der Stil muss Werte für ein aktiviertes und ein deaktiviertes Symbol enthalten. Zum Definieren eines Stils für eine benutzerdefinierte Schaltfläche müssen Sie die folgende Vorlage verwenden:
+` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` Die Workspace-CCS-Datei ist in der Datei „workspace-theme.swf“ eingebettet, die in der Datei „adobe-workspace-client.ear > adobe-workspace-client.war“ enthalten ist. Um das Erscheinungsbild von Workspace zu ändern, müssen Sie die Datei „workspace-theme.swf“ erneut kompilieren.
 
 **client_specialRoutes_routes_deny_names:** Die verschiedenen Zeichenfolgen, die ein Workbench-Benutzer verwenden kann, um als „Ablehnen“ interpretiert zu werden. Bei den Zeichenfolgen muss die Groß-/Kleinschreibung beachtet werden. Der Standardwert lautet beispielsweise Ablehnen. Wenn der Workspace-Benutzer das Wort Ablehnen in einem Prozess verwendet, wird es nicht erkannt. Der Begriff Ablehnen muss dieser Einstellung hinzugefügt werden, damit die Routenschaltfläche angepasst und mit dem Stil versehen wird.
 
-**client_specialRoutes_routes_deny_style:** Der Name des Stils, der sich in der Workspace-Designdatei befindet und die Symbole für die Schaltfläche &quot;Ablehnen&quot;angibt. Der Stil muss Werte für ein aktiviertes und ein deaktiviertes Symbol enthalten. Um einen Stil für eine benutzerdefinierte Schaltfläche zu definieren, müssen Sie die folgende Vorlage verwenden:
-`  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_routes_approve_names:** Die verschiedenen Zeichenfolgen, die ein Workbench-Benutzer als &quot;Genehmigen&quot;interpretieren kann. Bei den Zeichenfolgen muss die Groß-/Kleinschreibung beachtet werden. Der Standardwert lautet beispielsweise „genehmigen“. Wenn der Workspace-Benutzer das Wort „Genehmigen“ in einem Prozess verwendet, wird es nicht erkannt. Der Begriff „Genehmigen“ muss dieser Einstellung hinzugefügt werden, damit die Routenschaltfläche angepasst und mit dem Stil versehen wird.
+**client_specialRoutes_routes_deny_style:** Der Name des Stils, der sich in der Workspace-Design-Datei befindet und die Symbole für die Ablehnungsschaltfläche angibt. Der Stil muss Werte für ein aktiviertes und ein deaktiviertes Symbol enthalten. Zum Definieren eines Stils für eine benutzerdefinierte Schaltfläche müssen Sie die folgende Vorlage verwenden:
+`  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_routes_approve_names:** Die verschiedenen Zeichenfolgen, die Workspace-Benutzende in der Bedeutung von „Genehmigen“ verwenden können. Bei den Zeichenfolgen muss die Groß-/Kleinschreibung beachtet werden. Der Standardwert lautet beispielsweise „genehmigen“. Wenn der Workspace-Benutzer das Wort „Genehmigen“ in einem Prozess verwendet, wird es nicht erkannt. Der Begriff „Genehmigen“ muss dieser Einstellung hinzugefügt werden, damit die Routenschaltfläche angepasst und mit dem Stil versehen wird.
 
 **client_specialRoutes_names:** Die Schlüssel zum Lokalisieren des benutzerdefinierten Zeichenfolgenwerts aus den Ressourcendateien. Jeder Eintrag in dieser Einstellung muss die Werte für Namen und Stil enthalten.
 
@@ -110,13 +110,13 @@ For additional information on JGroups and Workspace, see [JGroups and AEM forms 
 
 ### formView-Einstellungen {#formview-settings}
 
-**client_formView_openFormInFullScreen:** Wählen Sie zum Anzeigen aller Formulare in Workspace im Vollbildmodus für diese Option die Einstellung „true“. Standardmäßig ist diese Option auf „false“ festgelegt und die Formulare werden nicht im Vollbildmodus angezeigt. Der User-Dienst enthält eine Option zum Öffnen des Dokuments, das einer Aufgabe zugeordnet ist, im Vollbildmodus. Auf diese Weise können Sie die Anzeige pro Prozess steuern.
+**client_formView_openFormInFullScreen:** Wählen Sie zum Anzeigen aller Formulare in Workspace im Vollbildmodus für diese Option die Einstellung „true“. Standardmäßig ist diese Option auf „false“ festgelegt und die Formulare werden nicht im Vollbildmodus angezeigt. Der Benutzerdienst enthält eine Option zum Öffnen des Dokuments, die einer Aufgabe im Vollbildmodus zugeordnet ist. Auf diese Weise können Sie die Anzeige pro Prozess steuern.
 
 **client_routes_formViewOnly:** Bei der Einstellung „True“ werden Routen nicht in der Karten- oder Listenansicht von Workspace angezeigt. Der Standardwert „False“ bedeutet, dass Routen in der Karten- und Listenansicht angezeigt werden.
 
 ### Andere Einstellungen {#other-settings}
 
-**client_mimeTypes_openOutsideBrowser:** Der MIME-Typ von Dokumenten, die außerhalb der Workspace-Browserinstanz geöffnet werden. Wenn die Prozesse Ihres Unternehmens einen zusätzlichen MIME-Typ erfordern, geben Sie ihn hier an. Die Standardwerte lauten:
+**client_mimeTypes_openOutsideBrowser:** Der MIME-Typ der Dokumente, die außerhalb der Workspace-Browser-Instanz geöffnet werden. Wenn die Prozesse Ihres Unternehmens einen zusätzlichen MIME-Typ erfordern, geben Sie ihn hier an. Die Standardwerte lauten:
 
 * `application/msword`
 * `application/msexcel`

@@ -1,6 +1,6 @@
 ---
 title: Überwachen von Ereignissen
-description: Wenn die Prüffunktion aktiviert ist, können Sie mit Document Security bestimmte Ereignistypen überwachen. Sie können die Ereignisliste mithilfe von Document Security einfach durchsuchen und sortieren.
+description: Wenn die Auditing-Funktion aktiviert ist, können Sie mithilfe von Document Security bestimmte Ereignistypen überwachen. Mithilfe von Document Security können Sie die Ereignisliste einfach durchsuchen und sortieren.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
@@ -9,51 +9,51 @@ feature: Document Security
 exl-id: 078b9ad1-16e2-40f4-92dc-e4093c0bb6ac
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '958'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 
 # Überwachen von Ereignissen {#monitoring-events}
 
-Wenn die Prüffunktion aktiviert ist, können Sie mit Document Security bestimmte Ereignistypen überwachen. Die Ereignisse, die Sie sehen können, hängen von Ihrer Rolle ab:
+Wenn die Auditing-Funktion aktiviert ist, können Sie mithilfe von Document Security bestimmte Ereignistypen überwachen. Die Ereignisse, die Sie sehen können, hängen von Ihrer Rolle ab:
 
 **Benutzer:** Sind in der Lage, geprüfte Ereignisse für ihre richtliniengeschützten Dokumente sowie andere geschützte Dokumente, die sie erhalten und verwenden, anzuzeigen.
 
 **Richtliniensatzkoordinatoren:** Sind in der Lage, geprüfte Ereignisse, einschließlich Dokument- und Richtlinienereignissen, für Dokumente anzuzeigen, die von Richtlinien in ihren Richtliniensätzen geschützt werden.
 
-**Administratoren:** Sind in der Lage, geprüfte Ereignisse im Zusammenhang mit allen richtliniengeschützten Dokumenten und Benutzern anzuzeigen. Administratoren können auch andere Ereignistypen verfolgen, einschließlich Benutzer-, Dokument-, Richtlinien- und Systemereignissen.
+**Administratoren:** Sind in der Lage, geprüfte Ereignisse im Zusammenhang mit allen richtliniengeschützten Dokumenten und Benutzern anzuzeigen. Admins können auch andere Arten von Ereignissen verfolgen, darunter Benutzer-, Dokument-, Richtlinien- und System-Ereignisse.
 
 >[!NOTE]
 >
->Ereignisse, die für eine Kopie eines richtliniengeschützten Dokuments ausgeführt werden, werden auch als Ereignisse im ursprünglich geschützten Dokument verfolgt.
+>Ereignisse, die an einer Kopie eines richtliniengeschützten Dokuments ausgeführt werden, werden auch als Ereignisse am ursprünglichen geschützten Dokument verfolgt.
 
-(Siehe [Ereignisprüfungsoptionen](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options).
+(Siehe [Ereignis-Auditing-Optionen](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options).)
 
-Ein fehlgeschlagenes Ereignis wird aufgezeichnet, wenn ein nicht autorisierter Benutzer versucht, ein Dokument anzuzeigen oder versucht, sich mit einem falschen Benutzernamen oder Kennwort anzumelden.
+Ein fehlgeschlagenes Ereignis wird aufgezeichnet, wenn nicht autorisierte Benutzende versuchen, ein Dokument anzuzeigen oder sich mit einem falschen Benutzernamen oder Kennwort anzumelden.
 
 >[!NOTE]
 >
->Fehlgeschlagene anonyme Zugriffsereignisse für Dokumente können protokolliert werden, wenn eine Richtlinie so bearbeitet wird, dass der anonyme Zugriff entfernt wird. Wenn ein autorisierter Empfänger versucht, auf ein Dokument zuzugreifen, das von der bearbeiteten Richtlinie geschützt wird, wird der anonyme Zugriff zwar weiterhin versucht, schlägt jedoch fehl.
+>Fehlgeschlagene anonyme Zugriffsereignisse für Dokumente können protokolliert werden, wenn eine Richtlinie bearbeitet wird, um den anonymen Zugriff zu entfernen. Wenn autorisierte Empfängerinnen oder Empfänger versuchen, auf ein Dokument zuzugreifen, das durch die bearbeitete Richtlinie geschützt ist, wird zwar weiterhin ein anonymer Zugriff versucht, der Versuch schlägt jedoch fehl.
 
-Wenn eine Richtlinie den anonymen Benutzerzugriff zulässt, der Administrator jedoch später den anonymen Zugriff für Document Security deaktiviert, schlägt der anonyme Zugriff für mit der Richtlinie geschützte Dokumente fehl und das Ereignis wird nicht protokolliert.
+Wenn eine Richtlinie den anonymen Benutzerzugriff zulässt, die Admins den anonymen Zugriff jedoch später aus Gründen der Dokumentensicherheit deaktivieren, schlägt der anonyme Zugriff für mit der Richtlinie geschützte Dokumente fehl und das Ereignis wird nicht protokolliert.
 
-## Ereignisprüfung aktivieren {#enable-event-auditing}
+## Aktivieren des Ereignis-Auditings {#enable-event-auditing}
 
-Diese Einrichtungsanforderungen müssen erfüllt sein, damit die Ereignisprüfung stattfindet:
+Damit ein Ereignis-Auditing stattfinden kann, müssen die folgenden Einrichtungsanforderungen erfüllt sein:
 
-* Das System oder der Administrator muss die Prüffunktion für den Server aktivieren.
+* Die Auditing-Funktion für den Server muss vom System oder durch Admins aktiviert werden.
 
-  (Siehe [Ereignisprüfungs- und Datenschutzeinstellungen konfigurieren](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings).
+  (Siehe [Konfigurieren von Ereignis-Auditing- und Datenschutzeinstellungen](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings).)
 
-* Für die Richtlinie, die Sie zum Schutz des Dokuments verwenden, muss die Prüfung aktiviert sein. (Siehe [Richtlinien erstellen und bearbeiten](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
+* Für die Richtlinie, die Sie zum Schutz des Dokuments verwenden, muss das Auditing aktiviert sein. (Siehe [Erstellen und Bearbeiten von Richtlinien](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
 
 ## Suchen nach einem Ereignis {#search-for-an-event}
 
-Sie können die Ereignisliste durchsuchen und detailliertere Beschreibungen zu Ereignissen anzeigen. Zu den detaillierten Beschreibungen gehören Informationen wie die Ereignis-ID, Beschreibung, IP-Adresse, Organisation, betroffene Benutzer, Datum und Uhrzeit des Ereignisses, verweigerte Aktivitäten und Offline-Ereignisse (wenn Benutzer versuchen, ein Dokument zu verwenden, wenn sie nicht mit Document Security verbunden sind).
+Sie können die Ereignisliste durchsuchen und ausführlichere Beschreibungen zu Ereignissen anzeigen. Die ausführlichen Beschreibungen enthalten Informationen wie die Ereignis-ID, Beschreibung, IP-Adresse, Organisation, betroffene Benutzende, Datum und Uhrzeit des Ereignisses, abgelehnte Aktivitäten und Offline-Ereignisse (wenn Benutzende versuchen, ein Dokument zu verwenden, ohne mit der Dokumentensicherheit verbunden zu sein).
 
-Sie können auf der Seite &quot;Ereignisse&quot;nach Ereignissen suchen, indem Sie eine Kombination aus Ereignissuchkriterien und den Datumsangaben der Ereignisse verwenden. Die Ereignisse, nach denen Sie suchen können, hängen von Ihrer Rolle ab:
+Sie können auf der Seite „Ereignisse“ nach Ereignissen suchen, indem Sie eine Kombination aus Ereignissuchkriterien und den Daten verwenden, an denen die Ereignisse auftraten. Die Ereignisse, nach denen Sie suchen können, hängen von Ihrer Rolle ab:
 
 **Benutzer:** Sind in der Lage, geprüfte Ereignisse für ihre richtliniengeschützten Dokumente sowie andere geschützte Dokumente, die sie erhalten und verwenden, anzuzeigen. Die folgenden Suchoptionen sind verfügbar:
 
@@ -69,7 +69,7 @@ wenn ich Richtliniensatzkoordinator bin:** Richtliniensatzkoordinatoren mit der 
 
 **Richtlinienereignisse, wenn ich Richtliniensatzkoordinator bin:** Richtliniensatzkoordinatoren mit der Berechtigung zum Anzeigen von Ereignissen können Ereignisse finden, die mit Richtlinien in ihren Richtliniensätzen in Zusammenhang stehen.
 
-**Administratoren:** Sind in der Lage, geprüfte Ereignisse im Zusammenhang mit allen richtliniengeschützten Dokumenten und Benutzern anzuzeigen. Administratoren können auch andere Typen verfolgen. Außerdem können Administratoren die Ereignissuche je nach Benutzertyp weiter unterteilen:
+**Administratoren:** Sind in der Lage, geprüfte Ereignisse im Zusammenhang mit allen richtliniengeschützten Dokumenten und Benutzern anzuzeigen. Admins können darüber hinaus andere Typen nachverfolgen.  Außerdem können Admins die Ereignissuche je nach Benutzertyp weiter unterteilen:
 
 **Bekannte Benutzer:** Benutzer, die in den Quellordnern gefunden werden können oder als externe Benutzer registriert sind.
 
@@ -77,33 +77,33 @@ wenn ich Richtliniensatzkoordinator bin:** Richtliniensatzkoordinatoren mit der 
 
 **Systembenutzer:** Vom Server ausgelöste Ereignisse, z. B. eine Ordnersynchronisierung.
 
-1. Klicken Sie auf der Document Security-Seite auf Ereignisse.
-1. Wählen Sie in der Liste &quot;Suchen&quot;die Suchkriterien aus, die Sie verwenden möchten. Je nach Auswahl in der Liste &quot;Suchen&quot;wird eine zweite Liste mit zusätzlichen Suchkriterien angezeigt. Falls zutreffend, geben Sie die Suchkriterien in das Textfeld ein.
+1. Klicken Sie auf der Document Security-Seite auf „Ereignisse“.
+1. Wählen Sie in der Liste „Suchen“ die gewünschten Suchkriterien aus.  Abhängig von der Auswahl in der Liste „Suchen“ wird eine zweite Liste mit weiteren Suchkriterien angezeigt.  Geben Sie, falls möglich, in das Textfeld die Suchkriterien ein.
 
-   Weitere Informationen zu bestimmten Ereignistypen finden Sie unter [Ereignisprüfungsoptionen](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options).
+   Weitere Einzelheiten zu bestimmten Ereignistypen finden Sie unter [Ereignis-Auditing-Optionen](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options).
 
-1. Wählen Sie in der Liste &quot;Benutzer&quot;den Benutzertyp aus, der das Ereignis ausgeführt hat:
+1. Wählen Sie in der Liste „Benutzer“ den Benutzertyp aus, der das Ereignis verursacht hat.
 
-   * Wenn Sie &quot;Bekannter Benutzer&quot;auswählen, wird ein zweites Suchfeld angezeigt, in das Sie den Benutzernamen oder die E-Mail-Adresse des Benutzers eingeben müssen.
+   * Wenn Sie „Bekannter Benutzer“ auswählen, wird ein zweites Suchfeld angezeigt, in das Sie den Benutzernamen und die E-Mail-Adresse der Person eingeben müssen.
    * Wenn Sie diese Angaben nicht kennen, klicken Sie auf das Adressbuchsymbol, um den Benutzer anhand des Benutzernamens oder der E-Mail-Adresse zu suchen.
 
-1. Wählen Sie in der Liste &quot;Datum&quot;eine Datumsbereichsoption aus. Wenn Sie &quot;Benutzerdefinierte Datumswerte&quot;auswählen, werden Felder angezeigt, in die Sie das Datum im Format JJJ/MM/TT eingeben. Alternativ können Sie die Datumsauswahl verwenden, um den Datumsbereich anzugeben:
+1. Wählen Sie in der Liste „Datum“ eine Datumsbereichsoption aus. Wenn Sie „Eigene Daten“ auswählen, werden Felder eingeblendet, in die Sie das Datum im Format TT.MM.JJJJ eingeben, oder Sie können über die Datumsauswahl den Datumsbereich angeben:
 
-   * Klicken Sie auf den Kalender , um die Datumsauswahl zu öffnen.
-   * Verwenden Sie die Pfeile, um ein Jahr und einen Monat zu finden.
-   * Klicken Sie auf einen Tag des Monats im Kalender.
-   * Klicken Sie auf OK , um die Datumsauswahl zu schließen.
+   * Klicken Sie auf den Kalender, um die Datumsauswahl zu öffnen.
+   * Bestimmen Sie mithilfe der Pfeilschaltflächen ein Jahr und einen Monat.
+   * Klicken Sie auf dem Kalender auf einen Monatstag.
+   * Klicken Sie auf „OK“, um die Datumsauswahl zu schließen.
 
-1. Wählen Sie in der Liste Anzeigen die Anzahl der Suchergebnisse aus, die pro Seite angezeigt werden sollen.
+1. Wählen Sie in der Liste „Anzeigen“ die Anzahl der pro Seite anzuzeigenden Suchergebnisse aus.
 1. Klicken Sie auf „Suchen“.
 
-   Fehlgeschlagene Ereignisse werden in der Liste mit dem Symbol &quot;Verweigert&quot;markiert.
+   Fehlgeschlagene Ereignisse werden in der Liste mit dem Symbol „Verweigert“ gekennzeichnet.
 
 1. Um Details zu einem Ereignis anzuzeigen, klicken Sie auf die Beschreibung des Ereignisses in der Liste.
 
 ## Sortieren der Ereignisliste {#sort-the-event-list}
 
-Sie können die Ereignisliste nach Spaltenüberschrift sortieren, um Ereignisse leichter zu finden. Dreieckssymbole neben der Spaltenüberschrift geben an, welche Spalte derzeit zum Sortieren verwendet wird. Ein nach oben zeigendes Dreieck gibt eine aufsteigende Reihenfolge an, während ein nach unten zeigendes Dreieck eine absteigende Reihenfolge angibt.
+Sie können die Ereignisliste nach Spaltenüberschrift sortieren, um Ereignisse leichter zu finden. Ein Dreieckssymbol neben der Spaltenüberschrift gibt an, nach welcher Spalte gegenwärtig sortiert wird. Ein nach oben zeigendes Dreieck gibt eine aufsteigende Reihenfolge an, ein nach unten zeigendes Dreieck gibt eine absteigende Reihenfolge an.
 
-1. Klicken Sie auf die entsprechende Spaltenüberschrift.
-1. Um die Sortierreihenfolge zu ändern, klicken Sie erneut auf die Spaltenüberschrift.
+1. Klicken Sie auf die gewünschte Spaltenüberschrift.
+1. Um die Sortierreihenfolge zu ändern, klicken Sie nochmals auf die Spaltenüberschrift.

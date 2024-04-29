@@ -7,9 +7,9 @@ feature: Developer Tools
 exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '340'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -70,8 +70,8 @@ Nach Speichern der Änderungen in einem [!DNL Camera Raw]-Bild wird die neue Aus
 
 ## Best Practices, bekannte Probleme und Einschränkungen {#best-practices}
 
-Die Funktionalität weist die folgenden Einschränkungen auf:
+Für die Funktionalität gelten folgende Einschränkungen:
 
-* Die Funktion unterstützt nur JPEG-Darstellungen. Es wird unter Windows 64 Bit, Mac OS und RHEL 7.x unterstützt.
-* Metadaten-Writeback wird für RAW- und DNG-Formate nicht unterstützt.
+* Die Funktion unterstützt nur JPEG-Darstellungen. Sie wird unter Windows 64-Bit, macOS und RHEL 7.x unterstützt.
+* Das Writeback von Metadaten wird für RAW- und DNG-Formate nicht unterstützt.
 * Für die [!DNL Camera Raw]-Bibliothek gelten Beschränkungen bei der gleichzeitig verarbeiteten Gesamtanzahl von Pixeln. Derzeit kann sie eine maximale Größe von 65.000 Pixel auf der langen Seite einer Datei oder 512 MP verarbeiten, je nachdem, welches Kriterium zuerst erfüllt wird.

@@ -10,7 +10,7 @@ feature: Adaptive Forms, Core Components
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1921'
 ht-degree: 100%
 
@@ -285,7 +285,7 @@ Wenn das Paket installiert wurde, ist das Design zur Auswahl verfügbar.
 Schritte zum Anwenden eines Designs auf ein adaptives Formular:
 
 1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an.
-1. Geben Sie Ihre Anmeldedaten auf der Experience Manager-Anmeldeseite ein. Wählen Sie **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente**.
+1. Geben Sie Ihre Anmeldedaten auf der Experience Manager-Anmeldeseite ein. Wählen Sie **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente** aus.
 1. Klicken Sie auf **Erstellen** > **Adaptive Formulare**.
 1. Wählen Sie eine Vorlage mit Kernkomponenten für adaptive Formulare aus und klicken Sie auf **Weiter**. Es wird **Eigenschaften hinzufügen** angezeigt
 1. Geben Sie den **Namen** für Ihr adaptives Formular an.

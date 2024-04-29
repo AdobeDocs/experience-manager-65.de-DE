@@ -9,9 +9,9 @@ role: Developer
 exl-id: d61c20a9-27c6-4b57-ab00-dfaa77fe3f75
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '524'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt 
 
 >[!NOTE]
 >
->Schnellstart für die Programmierung mit AEM Forms basiert auf dem Forms-Server-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem, z. B. UNIX, verwenden, ersetzen Sie die Windows-spezifischen Pfade durch Pfade, die von dem jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungs-Server verwenden, müssen Sie ebenfalls sicherstellen, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Der Schnellstart in „Programmieren mit AEM Forms“ basiert auf dem Formular-Server-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem, z. B. UNIX, verwenden, ersetzen Sie die Windows-spezifischen Pfade durch Pfade, die von dem jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungs-Server verwenden, müssen Sie ebenfalls sicherstellen, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Schnellstart (SOAP-Modus): Zuweisung von Aufgaben mit der Java-API {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
@@ -499,7 +499,7 @@ Das folgende Java-Codebeispiel ruft Formulardaten von einer Aufgabe mit dem Kenn
 
 ## Schnellstart (SOAP-Modus): Ändern von Formulardaten mit der Java-API {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird ein Formular mit Daten aktualisiert, die sich im *FormData.xml* -Datei.
+Das folgende Java-Code-Beispiel aktualisiert ein Formular mit Daten, die sich in der Datei *FormData.xml* befinden.
 
 ```java
  /*

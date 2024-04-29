@@ -6,9 +6,9 @@ role: User
 exl-id: 6212457e-a171-4c33-8d19-54c26516e981
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '510'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -36,11 +36,11 @@ In Bezug auf die Berechtigung zum Löschen müssen Inhaltsfragmente aus zwei Per
 
 >[!NOTE]
 >
->Wenn ein Benutzer über keine [Löschen](/help/sites-administering/security.md#actions) -Berechtigungen verwenden, wird der Inhaltsfragment-Editor in *schreibgeschützt* -Modus.
+>Wenn Benutzende nicht über die Berechtigung zum [Löschen](/help/sites-administering/security.md#actions) verfügen, wird der Inhaltsfragment-Editor im *schreibgeschützten* Modus ausgeführt.
 
 >[!NOTE]
 >
->Siehe auch [Benutzerverwaltungsvorgänge in AEM überprüfen](/help/sites-administering/audit-user-management-operations.md).
+>Siehe auch [Prüfen von Benutzerverwaltungsvorgängen in AEM](/help/sites-administering/audit-user-management-operations.md).
 
 ## Nur für Editor-Funktionen erforderliche Berechtigungen {#permissions-required-for-editor-functionality-only}
 
@@ -50,9 +50,9 @@ Beispielsweise wenn Varianten bearbeitet oder Metadaten oder verknüpfte Inhalte
 
 >[!NOTE]
 >
->Die zum Bearbeiten/Aktualisieren eines Inhaltsfragments erforderlichen Löschberechtigungen sind in der Löschberechtigung enthalten [zugewiesen über Benutzer- und/oder Gruppenverwaltung](/help/sites-administering/security.md#managing-permissions).
+>Die zum Bearbeiten oder Aktualisieren eines Inhaltsfragments benötigten Rechte zum Löschen erhalten sie mit der Löschberechtigung, die [über die Benutzer- und/oder Gruppenverwaltung zugewiesen wird](/help/sites-administering/security.md#managing-permissions).
 
-Die zum Bearbeiten oder Aktualisieren eines Fragments benötigten Rechte müssen auf den Knoten, der das Fragment enthält, oder einen entsprechenden übergeordneten Knoten angewendet werden (auf allen Ebenen unter `/content/dam`). Wenn sie einem übergeordneten Knoten zugewiesen sind, werden die Berechtigungen auf alle Knoten in diesem Zweig angewendet.
+Die zum Bearbeiten oder Aktualisieren eines Fragments benötigten Rechte müssen auf den Knoten, der das Fragment enthält, oder einen entsprechenden übergeordneten Knoten angewendet werden (auf allen Ebenen unter `/content/dam`). Wenn die Zuweisung an einen übergeordneten Knoten erfolgt, werden die Berechtigungen auf alle Knoten in dieser Verzweigung angewendet.
 
 Beispiel: Ein Ordner, der alle Inhaltsfragmente enthält, z. B.:
 

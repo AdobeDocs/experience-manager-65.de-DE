@@ -9,9 +9,9 @@ role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7848'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -914,7 +914,7 @@ Nachdem Sie die neue Umgebungsvariable erstellt haben, müssen Sie den Server ne
 
 >[!NOTE]
 >
-> Es wird empfohlen, den SDK-Server mit dem Befehl &quot;Strg + C&quot;neu zu starten. Das Neustart des AEM SDK-Servers mit alternativen Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
+> Es wird empfohlen, den SDK-Server mit dem Tastaturbefehl „Strg+C“ neu zu starten. Das Neustarten des AEM SDK-Servers mithilfe alternativer Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 **Erstellen einer Systemvariablen in der Windows XP-Umgebung**
 

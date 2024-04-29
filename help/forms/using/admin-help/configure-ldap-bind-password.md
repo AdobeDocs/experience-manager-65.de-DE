@@ -8,15 +8,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: c72794f5-8767-409e-a1df-91a8fdc54d18
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '183'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
 # Konfigurieren des LDAP-Bindungskennworts{#configure-the-ldap-bind-password}
 
-Um Sicherheitsrisiken zu vermeiden, ist das Feld für das Bindungskennwort in der exportierten Konfigurationsdatei (config.xml) nicht konfiguriert. Bevor Sie die Konfigurationsdatei in ein anderes System importieren, müssen Sie dieses Kennwort konfigurieren. Dieses Kennwort setzt ein vorhandenes Kennwort außer Kraft, das in der Datenbank gespeichert ist. Ein Null-Kennwort überschreibt keinen vorhandenen Kennwortwert, der nicht null ist.
+Um Sicherheitsrisiken zu vermeiden, ist das Feld für das Bindungskennwort in der exportierten Konfigurationsdatei (config.xml) nicht konfiguriert. Konfigurieren Sie dieses Kennwort unbedingt, bevor Sie die Konfigurationsdatei in ein anderes System importieren. Dieses Kennwort setzt ein bestehendes, in der Datenbank gespeichertes Kennwort außer Kraft. Ein Null-Kennwort setzt einen vorhandenen Nicht-Null-Kennwortwert nicht außer Kraft.
 
 1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Benutzerverwaltung“ > „Konfiguration“ > „Konfigurationsdateien importieren und exportieren“.
 1. Um die aktuellen Konfigurationseinstellungen in eine Datei zu exportieren, klicken Sie auf „Exportieren“ und speichern die Konfigurationsdatei an einem anderen Speicherort.

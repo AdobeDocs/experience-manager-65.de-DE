@@ -9,9 +9,9 @@ feature: PDF Generator
 exl-id: 402c1fd4-c6c8-494e-b452-b56a91c4a397
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '884'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Wenn Sie OpenOffice, Microsoft® Word oder Microsoft® PowerPoint unter Windows 
 
    `xhost +local:user1@`
 
-   Weitere Informationen finden Sie in der Dokumentation zum xhost-Befehl .
+   Weitere Details finden Sie in der Dokumentation zum xhost-Befehl.
 
 1. Starten Sie den Server neu.
 

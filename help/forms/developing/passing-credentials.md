@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Berechtigungen mithilfe von WS-Security-Heade
 exl-id: 519d57ad-81ab-4caf-ae25-4390ae2eee13
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '215'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ In diesem Dokument werden folgende Themen behandelt:
 
 ## Voraussetzungen {#requirements}
 
-Um dieses Dokument optimal nutzen zu können, benötigen Sie ein solides Verständnis der AEM Forms on JEE-Software.
+Um dieses Dokument optimal nutzen zu können, benötigen Sie ein solides Verständnis der AEM Forms auf JEE-Software.
 
 >[!MORELIKETHIS]
 >

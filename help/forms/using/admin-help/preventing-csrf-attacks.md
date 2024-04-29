@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: e17fc114-eba5-4e1b-8e70-ad6af7008018
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '955'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 97%
 
 ## Funktionsweise von CSRF-Angriffen {#how-csrf-attacks-work}
 
-Cross-Site Request Forgery (CSRF) ist eine Website-Schwachstelle, bei der der Browser eines gültigen Benutzers verwendet wird, um eine böswillige Anfrage zu senden, möglicherweise über einen iFrame. Da der Browser Cookies auf Domain-Basis sendet, wenn die Benutzerin oder der Benutzer bei einer Anwendung angemeldet ist, sind die Benutzerdaten möglicherweise gefährdet.
+Cross-Site Request Forgery (CSRF) ist eine Website-Schwachstelle, bei der eine böswillige Anfrage über einen legitimen Benutzer-Browser gesendet wird, unter Umständen per iFrame. Da der Browser Cookies auf Domain-Basis sendet, wenn die Benutzerin oder der Benutzer bei einer Anwendung angemeldet ist, sind die Benutzerdaten möglicherweise gefährdet.
 
 Angenommen, Sie sind in einem Browser bei der Administrationskonsole angemeldet. Sie erhalten eine E-Mail-Nachricht mit einem Link. Sie klicken auf den Link, über den eine neue Registerkarte im Browser geöffnet wird. Die von Ihnen geöffnete Seite enthält einen ausgeblendeten iFrame, der eine böswillige Anfrage beim Formular-Server mithilfe des Cookies aus Ihrer authentifizierten AEM Forms-Sitzung erzeugt. Da die Benutzerverwaltung einen gültigen Cookie erhält, wird die Anfrage weitergegeben.
 

@@ -1,6 +1,6 @@
 ---
-title: AEM Forms für OSGi-Gruppen und -Berechtigungen
-description: Benutzer Gruppen zuweisen, um Adobe Experience Manager (AEM) Forms auf OSGi zu verwalten
+title: Gruppen und Berechtigungen bei AEM Forms auf OSGi
+description: Zuweisen von Benutzenden zu Gruppen, um Adobe Experience Manager (AEM) Forms auf OSGi zu verwalten
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
@@ -10,22 +10,22 @@ role: Admin
 exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '289'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
-# AEM Forms für OSGi-Gruppen und -Berechtigungen{#aem-forms-on-osgi-groups-and-privileges}
+# Gruppen und Berechtigungen bei AEM Forms auf OSGi{#aem-forms-on-osgi-groups-and-privileges}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
-Sie können [Gruppen erstellen](/help/sites-administering/user-group-ac-admin.md#group-administration) und Richtlinien zuweisen und [Benutzer](/help/sites-administering/user-group-ac-admin.md#user-administration) zu den Gruppen in Adobe Experience Manager (AEM). Diese Richtlinien steuern die Berechtigungen der Benutzer, die Teil der Gruppe sind.
+Sie können [Gruppen erstellen](/help/sites-administering/user-group-ac-admin.md#group-administration) und Richtlinien zuweisen sowie [Benutzende](/help/sites-administering/user-group-ac-admin.md#user-administration) zu den Gruppen in Adobe Experience Manager (AEM) zuweisen. Diese Richtlinien steuern die Berechtigungen der Benutzenden, die zu der jeweiligen Gruppe gehören.
 
-Nach der Installation [AEM Forms Add-On-Paket](../../forms/using/installing-configuring-aem-forms-osgi.md), sind die in diesem Artikel erwähnten Gruppen, wie Formularbenutzer und Formular-Power-Benutzer, automatisch für die Zuweisung verfügbar. In der folgenden Tabelle sind die Aufgaben aufgeführt, die ein Benutzer je nach Gruppenzuweisung für AEM Forms unter OSGi ausführen kann:
+Sobald Sie das [AEM Forms-Add-On-Paket](../../forms/using/installing-configuring-aem-forms-osgi.md) installiert haben, werden die in diesem Artikel genannten Gruppen, wie „forms-users“ und „forms-power-user“, automatisch für die Zuweisung zur Verfügung gestellt. In der folgenden Tabelle sind die Aufgaben aufgeführt, die Benutzende für AEM Forms auf OSGi basierend auf den Gruppenzuweisungen ausführen können:
 
 <table>
  <tbody>
@@ -49,7 +49,7 @@ Nach der Installation [AEM Forms Add-On-Paket](../../forms/using/installing-conf
     <ul> 
      <li>Erstellen, Vorschau, Veröffentlichen und Senden adaptiver Formulare</li> 
      <li>Erstellen, Anzeigen (in der Vorschau) und Veröffentlichen von interaktiven Kommunikationen und Dokumentfragmenten</li> 
-     <li>Erstellen von Skripten für adaptive Formulare mithilfe eines Code-Editors</li> 
+     <li>Erstellen von Skripten für adaptive Formulare mithilfe des Code-Editors</li> 
      <li>Hochladen von Assets einschließlich Skripten</li> 
      <li>Erstellen von Designs</li> 
      <li>Importieren von Paketen, die XDP enthalten</li> 
@@ -96,7 +96,7 @@ Nach der Installation [AEM Forms Add-On-Paket](../../forms/using/installing-conf
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>Verwenden AEM Inbox-Anwendungen<br /> <strong>Hinweis: </strong>Sie müssen über Gruppenzuweisungen für cm-agent-users und workflow-users verfügen, um in AEM Posteingang auf die Benutzeroberfläche für interaktive Kommunikationsagenten zugreifen zu können.</li> 
+     <li>Verwenden Sie AEM-Posteingangs-Anwendungen<br /> <strong>Hinweis: </strong>Sie müssen über Gruppenzuweisungen für „cm-agent-users“ und „workflow-users“ verfügen, um im AEM-Posteingang auf die Benutzeroberfläche des Interactive Communications Agent zuzugreifen.</li> 
      <li>Verwalten von Workflow-Instanzen</li> 
     </ul> </td> 
   </tr>
@@ -105,7 +105,7 @@ Nach der Installation [AEM Forms Add-On-Paket](../../forms/using/installing-conf
    <td>
     <ul> 
      <li>Konfigurieren von PDF Generator</li> 
-     <li>Überwachten Ordner konfigurieren</li> 
+     <li>Konfigurieren des überwachten Ordners</li> 
      <li>Verwalten von Workflow-Programmen</li> 
     </ul> </td> 
   </tr>

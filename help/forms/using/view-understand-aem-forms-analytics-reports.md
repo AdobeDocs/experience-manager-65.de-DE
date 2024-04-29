@@ -8,9 +8,9 @@ docset: aem65
 exl-id: c5a4e6f6-f331-41e9-a0a9-51a30df6e2cd
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1056'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Wenn eine Benutzerin bzw. ein Benutzer mit dem Formular interagiert, werden die 
 * 2 für Speichern
 * 1 für Hilfe
 * 1 für jeden Validierungsfehler
-* 1 für Formularwiedergabe + 1 für standardmäßigen Bereichsbesuch + 1 für standardmäßigen ersten Feldbesuch
+* 1 für Formular-Ausgabedarstellung + 1 für standardmäßigen Bereichsbesuch + 1 für standardmäßigen ersten Feldbesuch
 * 2 für Formularabbruch
 
 >[!NOTE]

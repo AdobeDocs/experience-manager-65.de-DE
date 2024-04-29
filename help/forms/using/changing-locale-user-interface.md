@@ -9,9 +9,9 @@ docset: aem65
 exl-id: 9a069486-02a8-4058-adfb-4e0e49d8c0cf
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '556'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Bevor Sie die obengenannten Schritte ausführen, achten Sie darauf, die hier auf
 
 >[!NOTE]
 >
->Informationen zum Ändern der Sprache des Anmeldebildschirms von AEM Forms Workspace finden Sie unter [Anmeldebildschirm erstellen](../../forms/using/creating-new-login-screen.md).
+>Informationen zum Ändern der Sprache des Anmeldebildschirms von AEM Forms Workspace finden Sie unter [Erstellen eines Anmeldebildschirms](../../forms/using/creating-new-login-screen.md).
 
 ## Lokalisieren von Text {#localizing-text}
 

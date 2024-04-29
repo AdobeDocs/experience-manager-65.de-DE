@@ -8,9 +8,9 @@ feature: Adaptive Forms
 exl-id: b549f176-409a-4d81-8c2b-73d0dd0c6649
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1107'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation mit de
 1. Öffnen Sie die Seite AEM Sites im Bearbeitungsmodus, in die Sie ein adaptives Formular oder eine interaktive Kommunikation einbetten möchten.
 1. Fügen Sie die Komponente **AEM Forms for SPA** auf der Seite ein, indem Sie eine der folgenden Optionen verwenden:
 
-   * Wählen Sie den Layout-Container auf der Seite Sites aus und wählen Sie **+** und wählen Sie die **AEM Formular für SPA** -Komponente.
+   * Wählen Sie den Layout-Container auf der Seite „Sites“, dann **+** und schließlich die Komponente **AEM Forms for SPA** aus.
 
    * Ziehen Sie die Komponente **AEM Forms for SPA** aus dem Komponenten-Browser auf die Seite.
    * Suchen Sie im Assets-Browser nach einem adaptiven Formular oder einer interaktiven Kommunikation und ziehen Sie es per Drag &amp; Drop auf die Seite „Sites“. Es bettet das Formular in einen AEM Forms for SPA-Komponenten-Container ein.
@@ -65,7 +65,7 @@ Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation mit de
    >
    >Das Rendern von mehreren AEM Forms SPA-Container-Komponenten auf einer Seite wird nicht unterstützt. Sie können mehrere AEM Forms SPA-Container auf einer Seite haben, es wird jedoch jeweils nur eine Komponente gerendert. Stellen Sie sicher, dass nur eine Komponente auf einer Seite sichtbar ist, um Abweichungen zu vermeiden.
 
-1. Wählen Sie die eingebettete AEM Forms SPA Container-Komponente auf der Siteseite aus und wählen Sie dann ![settings_icon](assets/settings_icon.png) in der Aktionsleiste. Das Dialogfeld **AEM Forms-Container bearbeiten** wird geöffnet.
+1. Wählen Sie auf der Seite „Sites“ die eingebettete AEM Forms-Container-Komponente und dann in der Aktionsleiste das Symbol ![settings_icon](assets/settings_icon.png) aus. Das Dialogfeld **AEM Forms-Container bearbeiten** wird geöffnet.
 1. Geben Sie im Dialogfeld **AEM Forms-Container bearbeiten** Folgendes an:
 
    * **Asset-Typ:** Wählen Sie den Typ des einzubettenden Assets. Die Optionen sind **adaptives Formular** und **interaktive Kommunikation**
@@ -75,7 +75,7 @@ Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation mit de
 
    * **Design**: Wählen Sie ein Design, das die Formatierung der Komponenten in Ihrem adaptiven Formular oder interaktiver Kommunikation definiert. Zur Formatierung gehören Eigenschaften des Erscheinungsbildes, wie Schriftschnitt, Hintergrundfarbe, Abmessungen und Ausrichtung.
 
-1. Auswählen ![done_icon](assets/done_icon.png) , um die Einstellungen zu speichern. Das adaptive Formular oder die interaktive Kommunikation ist jetzt in der Seite eingebettet.
+1. Wählen Sie ![done_icon](assets/done_icon.png), um die Änderungen zu speichern. Das adaptive Formular oder die interaktive Kommunikation ist jetzt in der Seite eingebettet.
 
 ## Veröffentlichen von eingebetteten adaptiven Formularen und interaktiver Kommunikation {#publish-embedded-adaptive-form-and-interactive-communication}
 
@@ -92,7 +92,7 @@ Die AEM Sites-Seite behält einen Verweis auf das adaptive Formular und die inte
 Um eine Konfiguration oder Eigenschaft des eingebetteten adaptiven Formulars zu ändern, führen Sie einen der folgenden Schritte aus.
 
 * Öffnen Sie das ursprüngliche Formular in adaptiven Formularen oder interaktiver Kommunikation in den entsprechenden Editoren und modifizieren Sie diese.
-* Wählen Sie das adaptive Formular oder die interaktive Kommunikation auf der Seite Sites im Bearbeitungsmodus aus und wählen Sie dann **In einem neuen Fenster bearbeiten**. Das ursprügliche Formular wird im Bearbeitungsmodus geöffnet. 
+* Wählen Sie das adaptive Formular oder die interaktive Kommunikation auf der Sites-Seite im Bearbeitungsmodus und dann **In neuem Fenster bearbeiten** aus. Das ursprügliche Formular wird im Bearbeitungsmodus geöffnet. 
 
 ## Aspekte und Best Practices {#considerations-and-best-practices}
 

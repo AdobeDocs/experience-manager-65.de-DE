@@ -8,9 +8,9 @@ feature: Transaction Reports
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: d3822f4dee1b0d571aa06142f4a4f6e27874cf53
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '881'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -89,6 +89,6 @@ Bei der Transaktionsberichterstattung werden alle im Bericht angezeigten Informa
 
 ## Ähnliche Artikel {#related-articles}
 
-* [Übersicht über Transaktionsberichte für AEM Forms auf OSGi](../../forms/using/transaction-reports-overview.md)
-* [Transaktionsberichte Abrechnungsfähige APIs für AEM Forms auf OSGi](../../forms/using/transaction-reports-billable-apis.md)
-* [Zeichnen Sie eine Transaktion für benutzerdefinierte Implementierungen für AEM Forms auf OSGi auf](/help/forms/using/record-transaction-custom-implementation.md)
+* [Überblick über Transaktionsberichte für AEM Forms on OSGi](../../forms/using/transaction-reports-overview.md)
+* [Abrechenbare APIs für Transaktionsberichte für AEM Forms on OSGi](../../forms/using/transaction-reports-billable-apis.md)
+* [Aufzeichnen einer Transaktion für benutzerdefinierte Implementierungen für AEM Forms auf OSGi](/help/forms/using/record-transaction-custom-implementation.md)

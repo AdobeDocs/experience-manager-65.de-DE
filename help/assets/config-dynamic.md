@@ -13,9 +13,9 @@ exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7738'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
->Ende der Unterstützung für Secure Socket Layer 2.0 und 3.0 sowie Transport Layer Security 1.0 und 1.1.
+>Ende der Unterstützung für Secure Socket Layer 2.0 und 3.0 und Transport Layer Security 1.0 und 1.1
 >Ab dem 30. April 2024 wird Adobe Dynamic Media die Unterstützung für Folgendes einstellen:
 >
 >* SSL (Secure Socket Layer) 2.0
@@ -45,7 +45,7 @@ ht-degree: 99%
 > `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
 > `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
 >
-> Siehe auch [Dynamic Media-Einschränkungen](/help/assets/limitations.md).
+> Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
 
 <!-- FOR ABOVE - CQDOC-19433 (original ticket)
 and CQDOC-19792 (removed as per this ticket December 5, 2022) -->

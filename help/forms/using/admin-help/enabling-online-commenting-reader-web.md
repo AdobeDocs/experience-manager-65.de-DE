@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 6db1e998-f810-4715-b0b7-981e8d807cf8
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '113'
-ht-degree: 15%
+ht-degree: 100%
 
 ---
 
 # Aktivieren der Online-Kommentierung für das Adobe Reader-Plug-in für Webbrowser {#enabling-online-commenting-for-adobe-reader-web-browser-plug-in}
 
-Um die Symbolleiste &quot;Kommentar&quot;und &quot;Markup&quot;in einer PDF-Datei zu aktivieren, die mithilfe des Adobe Reader-Webbrowser-Plug-ins angezeigt wird, muss ein Back-End für die Zusammenarbeit vorhanden sein, z. B. ein Überprüfungsserver. Wenn kein Back-End für die Zusammenarbeit verfügbar ist, müssen Sie die PDF-Datei auf Ihrem Computer speichern, die Datei in Adobe Reader überprüfen und markieren und sie an den Urheber zurücksenden.
+Zum Aktivieren der Symbolleiste „Kommentieren und markieren“ in einer PDF-Datei, die mithilfe des Adobe Reader-Webbrowser-Plug-ins angezeigt wird, muss ein Back-End für die Zusammenarbeit vorhanden sein, wie z. B. ein Vorschau-Server. Steht kein Back-End für die Zusammenarbeit zur Verfügung, müssen Sie die PDF-Datei auf Ihrem Computer speichern, sie dort in Adobe Reader überarbeiten und markieren und anschließend an die Absenderin oder den Absender zurücksenden.
 
-Wenn Onlinekommentierung in einer nicht kollaborativen Umgebung erforderlich ist, wenden Sie sich für weitere Informationen an den Adobe Support.
+Wenn die Online-Kommentierung in einer Umgebung ohne Zusammenarbeitsfunktionalität erforderlich ist, wenden Sie sich wegen weiterer Informationen an den Adobe-Support.

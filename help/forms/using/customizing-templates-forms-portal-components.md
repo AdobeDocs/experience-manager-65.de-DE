@@ -9,9 +9,9 @@ feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1242'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 92%
 
 Grundlegende Kenntnisse zu HTML und CSS
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 In der Benutzeroberfläche von AEM Forms können Sie jedem beliebigen Formular Metadaten hinzufügen. Mit benutzerdefinierten Metadaten können Sie das Anwendererlebnis beim Auflisten und Durchsuchen von Formularen in Ihrem Unternehmen verbessern.
 
@@ -83,19 +83,19 @@ Beim folgenden Beispiel handelt es sich um eine Implementierung einer benutzerde
 
 Eine benutzerdefinierte Vorlage für eine beliebige Formularportal-Komponente enthält wiederholbare und nicht wiederholbare Einträge. Wiederholbare Einträge sind die grundlegenden Einheiten für die Auflistung. Beispiele für wiederholbare Einträge sind die Komponenten „Suche und Auflister“, „Entwürfe und Sendungen“ sowie „Link“.
 
-Forms Portal bietet eine Syntax für Platzhalter zur Anzeige benutzerdefinierter/vordefinierter Metadaten. Die Platzhalter werden nach der Anzeige der Ergebnisse von Formularen, Entwürfen oder Übermittlungen angezeigt.
+Das Formularportal bietet eine Syntax für Platzhalter zur Anzeige von benutzerdefinierten bzw. vorkonfigurierten Metadaten. Die Platzhalter werden nach der Anzeige der Ergebnisse von Formularen, Entwürfen oder Übermittlungen angezeigt.
 
 Um einen wiederholbaren Eintrag einzuschließen, konfigurieren Sie den Wert des Attributs **data-repeatable** als **true**.
 
 *Im gezeigten Beispiel sind oben in der benutzerdefinierten Vorlage zwei Div-Elemente vorhanden. Das erste mit der CSS-Klasse „__FP_boxes-container“ fungiert als Containerelement für die aufgelisteten Formulare. Das zweite mit der CSS-Klasse „__FP_boxes“ ist eine Vorlage für die Basiseinheiten, in diesem Fall ein Formular. Das Attribut **data-repeatable**im Div-Element weist den Wert **true**auf.*
 
-Jeder Platzhalter verfügt über einen exklusiven vordefinierten Metadatensatz. Um die benutzerdefinierten Metadaten an einer bestimmten Position im Formular anzuzeigen, fügen Sie die **${metadata_prop}-Eigenschaft** an der entsprechenden Position hinzu.
+Jeder Platzhalter verfügt über einen exklusiven, vorkonfigurierten Metadatensatz. Um die benutzerdefinierten Metadaten an einer bestimmten Position im Formular anzuzeigen, fügen Sie die **Eigenschaft ${metadata_prop}** an der entsprechenden Position hinzu.
 
 *Im Beispiel wird die Metadateneigenschaft in mehreren Instanzen verwendet. Sie wird z. B. bei **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**und **path**in der genannten Weise verwendet.*
 
 ## Vorkonfigurierte Metadaten {#out-of-the-box-metadata}
 
-Verschiedene Forms Portal-Komponenten bieten exklusive Sets von vordefinierten Metadaten, die Sie für die Auflistung verwenden können.
+Verschiedene Formularportal-Komponenten bieten exklusive, vorkonfigurierte Metadatensätze, die Sie für Auflistungen verwenden können.
 
 ### Komponente „Suche und Auflister“ {#search-amp-lister-component}
 
@@ -116,7 +116,7 @@ Verschiedene Forms Portal-Komponenten bieten exklusive Sets von vordefinierten M
 
 Unterstützung für Lokalisierung, Sortierung und Verwendung von Konfigurationseigenschaften in der Benutzeroberfläche (nur Search &amp; Lister):
 
-1. **Lokalisierungsunterstützung**: Verwenden Sie zum Lokalisieren von statischem Text das Attribut . `${localize-YOUR_TEXT}` und stellen Sie den lokalisierten Wert zur Verfügung, falls noch nicht vorhanden.
+1. **Lokalisierungsunterstützung**: Zur Lokalisierung von beliebigem statischem Text verwenden Sie das Attribut `${localize-YOUR_TEXT}` und stellen Sie den lokalisierten Wert bereit, sofern er nicht bereits vorhanden ist.
    *Im genannten Beispiel werden die Attribute `${localize-Apply}` und `${localize-Download}` verwendet, um den Text „Apply“ und „Download“ zu lokalisieren.*
 
 1. **Unterstützung für die Sortierung**: Klicken Sie auf das HTML-Element, um die Suchergebnisse zu sortieren. Um eine Sortierung in ein Tabellen-Layout einzufügen, fügen Sie der jeweiligen Tabellenkopfzeile das Attribut „data-sortKey“ hinzu. Fügen Sie außerdem seinen Wert als die Metadaten hinzu, nach denen Sie sortieren möchten.
@@ -144,8 +144,8 @@ So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header
 * **diffTime**: Differenz zwischen der aktuellen Zeit und der letzten Speicheraktion für den Entwurf. Alternativ: Differenz zwischen der aktuellen Zeit und der letzten Übermittlungsaktion für die Übermittlung.
 * **iconClass**: CSS-Klasse zur Anzeige des ersten Buchstabens des Entwurfs/der Übermittlung. Das Formularportal umfasst die folgenden Klassen, die verschiedene farbige Hintergründe bieten.
 * **owner**: die Person, die den Entwurf/die Übermittlung erstellt hat.
-* **Heute**: Erstellungsdatum des Entwurfs oder der Übermittlung in `DD:MM:YYYY` Format.
-* **TimeNow**: Zeitpunkt der Erstellung des Entwurfs oder der Übermittlung in `HH:MM:SS` Format: 24 Stunden
+* **Today**: Erstellungsdatum des Entwurfs oder der Übermittlung im Format `DD:MM:YYYY`.
+* **TimeNow**: Erstellungszeitpunkt des Entwurfs oder der Übermittlung im 24-Stunden-Format `HH:MM:SS`
 
 *Hinweis:*
 
@@ -170,7 +170,7 @@ So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header
 ## Tipps, Tricks und bekannte Probleme {#tips-tricks-and-known-issues}
 
 1. Verwenden Sie in einer benutzerdefinierten Vorlage keine einfachen Anführungszeichen (&#39;).
-1. Bei benutzerdefinierten Metadaten speichern Sie diese Eigenschaft nur im Knoten **jcr:content/metadata**. Wenn Sie sie an einem anderen Ort speichern, kann Forms Portal die Metadaten nicht anzeigen.
+1. Bei benutzerdefinierten Metadaten speichern Sie diese Eigenschaft nur im Knoten **jcr:content/metadata**. Wenn Sie sie an einem anderen Ort speichern, kann das Formularportal die Metadaten nicht anzeigen.
 1. Stellen Sie sicher, dass der Name von benutzerdefinierten bzw. bereits vorhandenen Metadaten keinen Doppelpunkt (:) enthält. Wenn dies der Fall ist, können Sie ihn nicht auf der Benutzeroberfläche anzeigen.
 1. **data-repeatable** hat keinerlei Bedeutung für eine Komponente des Typs **Link**. Adobe empfiehlt, diese Eigenschaften in einer Vorlage für eine Komponente des Typs „Link“ zu vermeiden.
 

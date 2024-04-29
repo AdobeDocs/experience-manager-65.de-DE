@@ -7,7 +7,7 @@ role: Admin
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '986'
 ht-degree: 100%
 
@@ -137,7 +137,7 @@ Wenn Sie AEM-Admin sind, können Sie Benutzerdaten aus Workflow-Instanzen lösch
 
    1. Navigieren Sie zu `https://'[server]:[port]'/aem/start.html` und melden Sie sich als Administrator an.
    1. Navigieren Sie zu **[!UICONTROL Tools > Workflow > Instanzen]**.
-   1. Wählen Sie relevante Workflow-Instanzen für die Benutzerin bzw. den Benutzer und dann **[!UICONTROL Beenden]** aus, um laufende Instanzen zu beenden.
+   1. Wählen Sie relevante Workflow-Instanzen für die Person aus und wählen Sie dann **[!UICONTROL Beenden]** aus, um laufende Instanzen zu beenden.
 
       Weitere Informationen zum Arbeiten mit Workflow-Instanzen finden Sie unter [Verwalten von Workflow-Instanzen](/help/sites-administering/workflows-administering.md).
 

@@ -9,9 +9,9 @@ role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '8133'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ Um ein PDF-Dokument mit einem Kennwort zu verschlüsseln, geben Sie vier Werte a
 
 Geben Sie die zu verschlüsselnden PDF-Dokumentressourcen an. Sie können das gesamte PDF-Dokument, alles außer den Metadaten des Dokuments oder nur die Anlagen des Dokuments verschlüsseln. Wenn Sie nur die Anhänge des Dokuments verschlüsseln, wird ein Benutzer beim Versuch, auf die Dateianhänge zuzugreifen, zur Eingabe eines Kennworts aufgefordert.
 
-Beim Verschlüsseln eines PDF-Dokuments können Sie Berechtigungen festlegen, die mit dem geschützten Dokument verknüpft sind. Durch Festlegen von Berechtigungen können Sie die Aktionen steuern, die ein Benutzer, der ein kennwortverschlüsseltes PDF-Dokument öffnet, durchführen darf. Zum erfolgreichen Extrahieren von Formulardaten müssen Sie beispielsweise die folgenden Berechtigungen festlegen:
+Beim Verschlüsseln eines PDF-Dokuments können Sie Berechtigungen festlegen, die mit dem geschützten Dokument verknüpft sind. Durch Festlegen von Berechtigungen können Sie die Aktionen steuern, die ein Benutzer, der ein kennwortverschlüsseltes PDF-Dokument öffnet, durchführen darf. Um beispielsweise Formulardaten erfolgreich zu extrahieren, müssen Sie die folgenden Berechtigungen festlegen
 
 * PASSWORD_EDIT_ADD
 * PASSWORD_EDIT_MODIFY
@@ -139,7 +139,7 @@ So verschlüsseln Sie ein PDF-Dokument mit einem Kennwort mithilfe der Verschlü
    * Erstellen Sie ein `PasswordEncryptionOptionSpec`-Objekt, indem Sie seinen Konstruktor aufrufen.
    * Geben Sie die zu verschlüsselnden PDF-Dokumentressourcen an, indem Sie die Methode `setEncryptOption` des `PasswordEncryptionOptionSpec`-Objekts aufrufen und einen `PasswordEncryptionOption`-Auflistungswert übergeben, der die zu verschlüsselnden Dokumentressourcen angibt. Um beispielsweise das gesamte PDF-Dokument einschließlich der Metadaten und Anlagen zu verschlüsseln, geben Sie `PasswordEncryptionOption.ALL` an.
    * Erstellen Sie ein `java.util.List`-Objekt, das die Verschlüsselungsberechtigungen speichert, indem Sie den `ArrayList`-Konstruktor verwenden.
-   * Geben Sie eine Berechtigung an, indem Sie die Methode `add` des `java.util.List`-Objekts aufrufen und einen Auflistungswert übergeben, der der festzulegenden Berechtigung entspricht. Um beispielsweise die Berechtigung festzulegen, mit der ein Benutzer Daten im PDF-Dokument kopieren kann, geben Sie `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Wiederholen Sie diesen Schritt für jede festzulegende Berechtigung.)
+   * Geben Sie eine Berechtigung an, indem Sie die Methode `add` des `java.util.List`-Objekts aufrufen und einen Auflistungswert übergeben, der der festzulegenden Berechtigung entspricht. Um zum Beispiel die Berechtigung festzulegen, die es Benutzenden erlaubt, Daten im PDF-Dokument zu kopieren, geben Sie `PasswordEncryptionPermission.PASSWORD_EDIT_COPY` an. (Wiederholen Sie diesen Schritt für jede festzulegende Berechtigung.)
    * Geben Sie die Acrobat-Kompatibilitätsoption an, indem Sie die Methode `setCompatability` des `PasswordEncryptionOptionSpec`-Objekts aufrufen und einen Auflistungswert übergeben, der die Acrobat-Kompatibilitätsstufe angibt. Sie können beispielsweise `PasswordEncryptionCompatability.ACRO_7` angeben.
    * Geben Sie den Kennwortwert an, mit dem ein Benutzer das verschlüsselte PDF-Dokument öffnen kann, indem Sie die Methode `setDocumentOpenPassword` des `PasswordEncryptionOptionSpec`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der das Kennwort zum Öffnen darstellt.
    * Geben Sie den Wert des übergeordneten Kennworts an, mit dem ein Benutzer die Verschlüsselung des PDF-Dokuments aufheben kann, indem Sie die Methode `setPermissionPassword` des `PasswordEncryptionOptionSpec`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der das übergeordnete Kennwort darstellt.
@@ -242,7 +242,7 @@ Mit der zertifikatsbasierten Verschlüsselung können Sie ein Dokument für best
 
 Einer der Schlüssel agiert als der private Schlüssel eines Benutzers. Wichtig ist, dass nur der Benutzer Zugriff auf diesen Schlüssel hat. Der andere Schlüssel ist der öffentliche Schlüssel des Benutzers, der mit Dritten geteilt werden kann.
 
-Ein öffentliches Schlüsselzertifikat enthält den öffentlichen Schlüssel eines Benutzers sowie Identifizierungsinformationen. Das X.509-Format wird zum Speichern von Zertifikaten verwendet. Zertifikate werden in der Regel von einer Zertifizierungsstelle ausgestellt und digital signiert, bei der es sich um eine anerkannte Stelle handelt, die ein Maß an Vertrauen in die Gültigkeit des Zertifikats bietet. Zertifikate haben ein Ablaufdatum, nach dem sie nicht mehr gültig sind. Darüber hinaus enthalten Zertifikatsperrlisten Informationen zu Zertifikaten, die vor ihrem Ablaufdatum widerrufen wurden. Zertifikatsperrlisten werden regelmäßig von Zertifizierungsstellen veröffentlicht. Der Sperrstatus eines Zertifikats kann auch über das Online Certificate Status Protocol (OCSP) über das Netzwerk abgerufen werden.
+Ein öffentliches Schlüsselzertifikat enthält den öffentlichen Schlüssel eines Benutzers sowie Identifizierungsinformationen. Das X.509-Format dient zum Speichern von Zertifikaten. Zertifikate werden meist von einer Zertifizierungsstelle ausgestellt und digital signiert, bei der es sich um eine anerkannte Instanz handelt, die ein Maß an Vertrauen in die Gültigkeit des Zertifikats ermöglicht. Zertifikate haben ein Ablaufdatum, nach dem sie nicht mehr gültig sind. Darüber hinaus liefern Zertifikatsperrlisten Informationen zu Zertifikaten, die vor ihrem Ablaufdatum gesperrt wurden. Zertifikatsperrlisten werden regelmäßig von Zertifizierungsstellen veröffentlicht. Der Sperrstatus eines Zertifikats kann auch mittels des Online-Zertifikatstatusprotokolls (Online Certificate Status Protocol, OCSP) über das Netzwerk abgerufen werden.
 
 >[!NOTE]
 >
@@ -286,7 +286,7 @@ Um einen Vorgang des Verschlüsselungs-Services programmgesteuert durchführen z
 
 **Abrufen eines zu verschlüsselnden PDF-Dokuments**
 
-Rufen Sie ein unverschlüsseltes PDF-Dokument zum Verschlüsseln ab. Wenn Sie versuchen, ein bereits verschlüsseltes PDF-Dokument zu verschlüsseln, wird eine Ausnahme ausgelöst.
+Rufen Sie zum Verschlüsseln ein unverschlüsseltes PDF-Dokument ab. Wenn Sie versuchen, ein bereits verschlüsseltes PDF-Dokument zu verschlüsseln, wird eine Ausnahme ausgelöst.
 
 **Referenzieren des Zertifikats**
 
@@ -496,7 +496,7 @@ Um einen Vorgang des Verschlüsselungs-Services programmgesteuert durchführen z
 
 **Abrufen des verschlüsselten PDF-Dokuments**
 
-Rufen Sie ein verschlüsseltes PDF-Dokument ab, um die zertifikatbasierte Verschlüsselung zu entfernen. Wenn Sie versuchen, die Verschlüsselung von einem nicht verschlüsselten PDF-Dokument zu entfernen, wird eine Ausnahme ausgelöst. Wenn Sie versuchen, die zertifikatbasierte Verschlüsselung aus einem kennwortverschlüsselten Dokument zu entfernen, wird eine Ausnahme ausgelöst.
+Rufen Sie ein verschlüsseltes PDF-Dokument ab, um die zertifikatbasierte Verschlüsselung entfernen zu können. Wenn Sie versuchen, die Verschlüsselung von einem nicht verschlüsselten PDF-Dokument zu entfernen, wird eine Ausnahme ausgelöst. Wenn Sie versuchen, die zertifikatbasierte Verschlüsselung aus einem kennwortverschlüsselten Dokument zu entfernen, wird eine Ausnahme ausgelöst.
 
 **Entfernen der Verschlüsselung**
 
@@ -657,7 +657,7 @@ Um einen Vorgang des Verschlüsselungs-Services programmgesteuert durchführen z
 
 **Abrufen des verschlüsselten PDF-Dokuments**
 
-Rufen Sie ein verschlüsseltes PDF-Dokument ab, um kennwortbasierte Verschlüsselung zu entfernen. Wenn Sie versuchen, die Verschlüsselung aus einem nicht verschlüsselten PDF-Dokument zu entfernen, wird eine Ausnahme ausgelöst.
+Rufen Sie ein verschlüsseltes PDF-Dokument ab, um die kennwortbasierte Verschlüsselung entfernen zu können. Wenn Sie versuchen, die Verschlüsselung aus einem nicht verschlüsselten PDF-Dokument zu entfernen, wird eine Ausnahme ausgelöst.
 
 **Entfernen des Kennworts**
 
@@ -981,7 +981,7 @@ Um einen Vorgang des Verschlüsselungs-Services programmgesteuert durchführen z
 
 **Abrufen des verschlüsselten PDF-Dokuments**
 
-Rufen Sie ein PDF-Dokument ab, um den Verschlüsselungstyp zu bestimmen, der ihn schützt.
+Rufen Sie ein PDF-Dokument ab, um die Art der Verschlüsselung zu bestimmen, durch die es geschützt wird.
 
 **Ermitteln des Verschlüsselungstyps**
 

@@ -6,9 +6,9 @@ feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2038'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Mithilfe von Designs können Sie ein adaptives Formular mit einem unverwechselba
 
 Am Ende des Tutorials sollten Sie zu Folgendem in der Lage sein:
 
-* Anwenden eines vorkonfigurierten Designs auf ein adaptives Formular
+* Anwenden eines vorkonfigurierten Designs auf ein adaptives Formular.
 * Erstellen eines Designs für ein adaptives Formular mit dem Design-Editor
 * Gestalten einzelner Komponenten
 * Bonusabschnitt: Verwenden von Web Fonts in einem benutzerdefinierten Design
@@ -443,7 +443,7 @@ Einige Stile gelten nur für eine bestimmte Komponente. Diese Komponenten werden
 Sie können verschiedene Schriftarten verwenden, um ein adaptives Formular zu entwerfen. Möglicherweise sind die Schriftarten, die zum Entwerfen des adaptiven Formulars verwendet werden, nicht auf allen Geräten vorhanden, auf denen das adaptive Formular angezeigt wird. Sie können einen Webfont-Dienst verwenden, um die benötigten Schriftarten auf dem Zielgerät bereitzustellen.
 
 [!DNL Adobe Fonts] ist solch ein Webfont-Dienst. Sie können den Dienst mit adaptiven Formularen konfigurieren und verwenden. So verwenden Sie [!DNL Adobe Fonts] in einem adaptiven Formular:
-1. Durchsuchen Sie die [Bibliothek mit Adobe-Schriftarten](https://fonts.adobe.com/) und wählen Sie die Schriftart, um Ihr Formular zu gestalten.
+1. Durchsuchen Sie die [Bibliothek mit Adobe-Schriftarten](https://fonts.adobe.com/) und wählen Sie die gewünschte Schriftart für Ihr Formular aus.
 <!--
 >[!NOTE]
 >
@@ -453,39 +453,39 @@ Sie können verschiedene Schriftarten verwenden, um ein adaptives Formular zu en
 >
 > Sie können Tags oder Filter hinzufügen, um die Liste der Schriftarten zu verfeinern.
 
-1. Klicken Sie auf die Schaltfläche &lt;/>, um die Familie zu einem Webprojekt hinzuzufügen, falls Sie eine Schriftart finden.
+1. Falls Ihnen eine Schriftart gefällt, klicken Sie auf die Schaltfläche „&lt;/>“, um die Schriftartfamilie zu einem Web-Projekt hinzuzufügen.
 
-   ![select-font-from-font-library](assets/select-font-from-font-library.png)
+   ![Auswählen einer Schriftart aus der Schriftartbibliothek](assets/select-font-from-font-library.png)
 
-   Der Bildschirm &quot;Schriftarten zu einem Webprojekt hinzufügen&quot;wird angezeigt.
+   Der Bildschirm „Schriftarten zu einem Webprojekt hinzufügen“ wird angezeigt.
 
    >[!NOTE]
    >
-   > Sie können Ihrem Webprojekt nur Schriftarten hinzufügen, wenn die Schaltfläche &lt;/> verfügbar ist.
+   > Sie können Ihrem Web-Projekt nur Schriftarten hinzufügen, wenn die Schaltfläche „&lt;/>“ verfügbar ist.
 
-2. Benennen Sie Ihr Webprojekt.
-3. Aktivieren Sie die Kontrollkästchen, um die Schriftgewichtung und -stile auszuwählen, die Sie einbeziehen möchten.
+2. Benennen Sie Ihr Web-Projekt.
+3. Aktivieren Sie die entsprechenden Kontrollkästchen, um die gewünschten Schriftstärken und Schriftschnitte auszuwählen.
 
-   ![Schriftartbibliothek hinzufügen](assets/add-a-font-window.png)
+   ![Hinzufügen einer Schriftartbibliothek](assets/add-a-font-window.png)
 
-4. Auswählen **Klicks** , um das Projekt zu erstellen.
-5. Kopieren Sie den Einbettungscode und die URL aus dem Bildschirm.
-   ![Einbettungscode und URL](assets/font-add-url.png)
+4. Wählen Sie **Klicken** aus, um das Projekt zu erstellen. 
+5. Kopieren Sie den Einbettungs-Code und die URL vom Bildschirm.
+   ![Einbettungs-Code und URL](assets/font-add-url.png)
 
-6. Klicks **Fertig** , um das Webprojektfenster zu schließen.
-7. Melden Sie sich bei Ihrer AEM-Instanz an und navigieren Sie zur URL `http://server:port/crx/de/index.jsp#`
-8. Erstellen Sie eine Ordnerstruktur in CRXDE, beispielsweise `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`.
-9. Navigieren Sie zur neu erstellten `clientlibs` und fügen Sie den `allowProxy` und `categories` Eigenschaften.
-10. Navigieren Sie zu `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` und erstellen Sie einen css-Ordner.
-11. Gehen Sie zum erstellten CSS-Ordner und erstellen Sie eine Datei. Erstellen Sie beispielsweise eine Datei als `fonts.css` und fügen Sie den Einbettungscode zusammen mit der URL ein.
+6. Klicken Sie auf **Fertig**, um das Fenster für das Web-Projekt zu schließen.
+7. Melden Sie sich bei Ihrer AEM-Instanz an und rufen Sie die URL `http://server:port/crx/de/index.jsp#` auf
+8. Erstellen Sie eine Ordnerstruktur in CRXDE, z. B. `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`.
+9. Gehen Sie zum neu erstellten Ordner `clientlibs` und fügen Sie die Eigenschaften `allowProxy` und `categories` hinzu.
+10. Navigieren Sie zu `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` und erstellen Sie einen neuen CSS-Ordner.
+11. Gehen Sie zum angelegten CSS-Ordner und erstellen Sie eine Datei. Erstellen Sie beispielsweise eine Datei `fonts.css` und fügen Sie den Einbettungs-Code zusammen mit der URL ein.
    ![Ordnerstruktur](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. Speichern Sie die Änderungen.
 
 >[!NOTE]
 >
-> Um die hinzugefügten benutzerdefinierten Schriftarten in einem adaptiven Formular zu verwenden, stellen Sie sicher, dass der Client-Bibliotheksname in der **[!UICONTROL Client-Bibliothekskategorie]** entspricht dem in der Kategorieoption des Ordners clientlib angegebenen Namen.
+> Um die hinzugefügten benutzerdefinierten Schriftarten in einem adaptiven Formular zu verwenden, stellen Sie sicher, dass der Name der Client-Bibliothek in der **[!UICONTROL Client-Bibliothekskategorie]** dem Namen entspricht, der in der Kategorieoption des clientlib-Ordners angegeben ist.
 
-Die eingeschlossenen Schriftarten sind jetzt für das adaptive Formular über die folgende benutzerdefinierte Schriftarten-Client-Bibliothek verfügbar.
+Die eingeschlossenen Schriftarten sind nun für das adaptive Formular über die folgende benutzerdefinierte Schriftarten-Client-Bibliothek verfügbar.
 
 
 <!--

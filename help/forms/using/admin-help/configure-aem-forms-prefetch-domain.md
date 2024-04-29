@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von AEM Formularen für Vorabrufdomäneninformationen
+title: Konfigurieren Sie AEM Forms zum vorherigen Abrufen von Domain-Informationen
 description: Konfigurieren Sie AEM Forms, um Domain-Informationen zuvor abzurufen, wenn es zu einer langsameren Reaktionszeit kommt, aufgrund der tief verschachtelten Gruppen oder wenn Sie ein Mitglied mehrerer Gruppen sind.
 contentOwner: admin
 content-type: reference
@@ -8,19 +8,19 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: cf5283a5-dbfb-460d-a8bd-11cd15ab8640
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '180'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
-# Konfigurieren von AEM Formularen für Vorabrufdomäneninformationen {#configure-aem-forms-to-prefetchdomain-information}
+# Konfigurieren Sie AEM Forms zum vorherigen Abrufen von Domain-Informationen {#configure-aem-forms-to-prefetchdomain-information}
 
-Für Benutzer kann es zu einer langsameren Reaktionszeit kommen, wenn sie vielen Gruppen angehören (z. B. 500 oder mehr) oder wenn die Gruppen tief verschachtelt sind (z. B. 30 Ebenen). Wenn dieses Problem auftritt, können Sie AEM Forms so konfigurieren, dass Informationen aus bestimmten Domains vorher abgerufen werden.
+Bei Benutzenden kann es zu einer langsameren Reaktionszeit kommen, wenn sie vielen Gruppen angehören (z. B. 500 oder mehr) oder wenn die Gruppen tief verschachtelt sind (z. B. 30 Ebenen). Wenn dieses Problem auftritt, können Sie AEM Forms so konfigurieren, dass Informationen aus bestimmten Domains vorher abgerufen werden.
 
 1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > Benutzerverwaltung > Konfiguration > Konfigurationsdateien importieren und exportieren]**.
 1. Um die aktuellen Konfigurationseinstellungen in eine Datei zu exportieren, klicken Sie auf **[!UICONTROL Exportieren]** und speichern die Konfigurationsdatei an einem anderen Speicherort.
-1. Fügen Sie den folgenden Knoten hinzu (fett markiert):
+1. Fügen Sie den folgenden Knoten (fett gedruckt) hinzu:
 
    ```xml
     <node name="UM">
@@ -37,7 +37,7 @@ Für Benutzer kann es zu einer langsameren Reaktionszeit kommen, wenn sie vielen
     <node name="APSAuditService">
    ```
 
-   In diesem Beispiel werden mehrere Domains zum vorherigen Abrufen konfiguriert. Die Domain-Namen werden durch ein „/“ getrennt. Dies wird im obigen Beispiel mit *Domäne_Name1*, *Domain_Name2*, und *Domain_Name3*.
+   In diesem Beispiel werden mehrere Domains zum vorherigen Abrufen konfiguriert. Die Domain-Namen werden durch ein „/“ getrennt. Dies wird im oben stehenden Beispiel mit *Domain_Name1*, *Domain_Name2* und *Domain_Name3* gezeigt.
 
 1. Um die aktualisierte Datei zu importieren, klicken Sie in „Benutzerverwaltung“ auf **[!UICONTROL Konfiguration > Konfigurationsdateien im- und exportieren]**.
 1. Klicken Sie auf **[!UICONTROL Durchsuchen]**, um die Datei zu suchen, klicken Sie dann auf „Importieren“ und anschließend auf **[!UICONTROL OK]**.

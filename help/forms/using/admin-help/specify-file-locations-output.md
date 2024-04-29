@@ -1,6 +1,6 @@
 ---
 title: Angeben der Dateispeicherorte für die Ausgabe
-description: Erfahren Sie, wie Sie Dateispeicherorte für die Ausgabe für bestimmte Dateitypen angeben, z. B. Inhaltsstamm-URI, XCI-Konfigurationsdatei, Cache und Standard.
+description: Erfahren Sie, wie Sie Dateispeicherorte für die Ausgabe für bestimmte Dateitypen angeben, z. B. Inhaltsstamm-URI, XCI-Konfigurationsdatei, Cache und Standard.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
@@ -8,23 +8,23 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 620c69d6-4fe1-46d6-b5d4-3b562142e547
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '327'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
 # Angeben der Dateispeicherorte für die Ausgabe {#specify-file-locations-for-output}
 
-Sie können die Speicherorte angeben, an denen Output nach bestimmten erforderlichen Dateitypen sucht.
+Sie können die Speicherorte angeben, an denen die Ausgabe nach bestimmten Typen von erforderlichen Dateien suchen soll.
 
 1. Klicken Sie in der Administration-Console auf „Dienste“ > „Ausgabe“.
-1. Geben Sie unter Standorte die entsprechenden Optionen an.
+1. Geben Sie unter „Speicherorte“ die entsprechenden Optionen an.
 1. Klicken Sie auf Speichern.
 
 ## Speicherorteinstellungen {#locations-settings}
 
-**Inhaltsstamm-URI**: Der URI oder der absolute Speicherort des Repositorys, aus dem Formulare abgerufen werden. Dieser Wert wird mit dem Parameter sForm kombiniert, der über die API angegeben wird, um den absoluten Pfad zu dem Formular zu erzeugen, das abgerufen wird. Dieser Wert kann auf einen Ordner oder einen Webspeicherort verweisen, auf den über HTTP zugegriffen werden kann.
+**Inhaltsstamm-URI**: Der URI oder der absolute Speicherort des Repositorys, aus dem Formulare abgerufen werden. Dieser Wert wird mit dem Parameter sForm kombiniert, der über die API angegeben wird, um den absoluten Pfad zu dem Formular zu erzeugen, das abgerufen wird. Dieser Wert kann auf einen Ordner oder einen Web-Speicherort verweisen, auf den über HTTP zugegriffen werden kann.
 
  Der Standardwert ist eine leere Zeichenfolge.
 
@@ -32,7 +32,7 @@ Sie können die Speicherorte angeben, an denen Output nach bestimmten erforderli
 
 Der Standardwert ist `com/adobe/formServer/PA/pa_output.xci`.
 
-**Cache-Speicherort**: Gibt den Speicherort für den Output-Datenträger-Cache an. Wenn Sie diese Einstellung ändern, werden alle vorhandenen Cache-Informationen vom aktuellen Speicherort zurückgesetzt und ein neuer Cache wird am neuen Speicherort erstellt. Wählen Sie eine der folgenden Optionen aus:
+**Cache-Speicherort**: Gibt den Speicherort für den Output-Datenträger-Cache an. Nachdem Sie diese Einstellung geändert haben, werden alle vorhandenen Cache-Informationen am aktuellen Speicherort zurückgesetzt und es wird ein neuer Cache am neuen Speicherort erstellt. Wählen Sie eine der folgenden Optionen aus:
 
 **Standardspeicherort:** Dies ist die Standardauswahl. Wenn diese Option ausgewählt ist, wird der Zwischenspeicher an einem Speicherort erstellt, der von dem von Ihnen verwendeten Anwendungsserver abhängig ist:
 
@@ -44,4 +44,4 @@ Der Standardwert ist `com/adobe/formServer/PA/pa_output.xci`.
 
 >[!NOTE]
 >
->Wenn Sie ein Bereinigungsprogramm für temporäre Dateien verwenden, während das Löschen dieser Verzeichnisse keine Auswirkungen auf die Funktionalität hat, kann dies die Leistung kurzzeitig erheblich beeinträchtigen, bis der neue Cache erstellt wird. Um dieses Problem zu vermeiden, sollten Sie diese Ordner nicht löschen, während Sie den temporären Ordner für AEM Formulare löschen.
+>Wenn Sie ein Bereinigungsprogramm für temporäre Dateien verwenden, hat das Löschen dieser Verzeichnisse zwar keine Auswirkungen auf die Funktionalität, die Leistung kann jedoch kurzzeitig erheblich beeinträchtigt werden, bis der neue Cache erstellt wurde. Um dieses Problem zu vermeiden, sollten Sie diese Ordner nicht löschen, während die temporären Ordner von AEM Forms gelöscht werden.

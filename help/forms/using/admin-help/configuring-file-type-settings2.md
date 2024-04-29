@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6159'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -186,7 +186,7 @@ Aktivieren Sie diese Optionen, um festzulegen, wie Inhalte angezeigt werden, wie
 
 **Seiten-Layout**: Wählen Sie die Art des Seiten-Layouts für das PDF-Dokument.
 
-**Vergrößerung**: Wählen Sie die voreingestellte Vergrößerung für die Ansicht beim Öffnen des PDF-Dokuments oder wählen Sie einen benutzerdefinierten Wert. Wenn Sie eine Standardeinstellung auswählen, wird die standardmäßige Acrobat-Vergrößerung verwendet.
+**Vergrößerung**: Wählen Sie die voreingestellte Vergrößerung für die Ansicht beim Öffnen des PDF-Dokuments oder wählen Sie einen benutzerdefinierten Wert. Das Übernehmen der Standardeinstellung bedeutet, dass die Standardvergrößerung von Acrobat verwendet werden soll.
 
 **Auf folgender Seite öffnen**: Geben Sie die Nummer der Seite an, auf der das PDF-Dokument geöffnet werden soll.
 
@@ -214,7 +214,7 @@ Aktivieren Sie diese Optionen, um das Erscheinungsbild des Fensters festzulegen:
 
 ## „Flashvideos in PDF“-Einstellungen {#flash-videos-to-pdf-settings}
 
-PDF Generator unterstützt die Funktion zum Senden von Videos für Adobe Flash (SWF- oder FLV-Datei) und zum Erstellen einer PDF-Datei mit eingebettetem Video für Adobe Flash. Für diese Konvertierung muss keine Adobe-Flash Player auf dem Forms-Server installiert sein. Anweisungen zum Zugriff auf diese Option finden Sie unter [Erstellen oder Bearbeiten von Dateitypeinstellungen](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+PDF Generator unterstützt die Funktion zum Senden von Videos für Adobe Flash (SWF- oder FLV-Datei) und zum Erstellen einer PDF-Datei mit eingebettetem Video für Adobe Flash. Für diese Konversion braucht Adobe Flash Player nicht auf dem Formular-Server installiert zu sein. Anweisungen zum Zugriff auf diese Option finden Sie unter [Erstellen oder Bearbeiten von Dateitypeinstellungen](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **Dateinamenerweiterungen:** Durch Kommas getrennte Liste von Dateinamenerweiterungen, die konvertiert werden können.
 
@@ -249,7 +249,7 @@ Anweisungen zum Zugriff auf diese Einstellung finden Sie unter [Erstellen oder B
 
    * Wählen Sie bei Bedarf einen anderen Schriftartenordner aus dem Dropdown-Menü **Schriftquelle**. In diesem Dropdown-Menü werden die Schriftartenordner aufgelistet, die in **Startseite > Einstellungen > Core-System > Core-Konfigurationen** angegeben wurden.
    * Wählen Sie eine oder mehrere Schriftarten aus der Liste **Verfügbare Schriftarten** und klicken Sie auf **Hinzufügen**. Diese Schriftarten werden der Liste **Einbettung für folgende Schriftarten aufheben** hinzugefügt.
-   * Wenn Sie die Einbettung für einige Schriftarten aufheben möchten, die nicht auf dem Forms-Server vorhanden sind, geben Sie die Namen dieser Schriftarten in die **Einbettung für Schriftarten aufheben** ankreuzen. Klicken Sie auf **Hinzufügen**.
+   * Wenn Sie die Einbettung für einige Schriftarten aufheben möchten, die auf dem Formular-Server nicht vorhanden sind, geben Sie die Namen dieser Schriftarten in das Feld **Schriftarten für die Aufhebung der Einbettung hinzufügen** ein. Klicken Sie auf **Hinzufügen**.
 
    >[!NOTE]
    >
@@ -293,7 +293,7 @@ Wählen Sie **Transparenz**, um die Transparenzeinstellungen beim Optimieren von
 >
 >Die Auflösung für Verlauf und Gitter sollte im Allgemeinen auf 150 bis 300 ppi eingestellt werden, da sich die Qualität von Verläufen, Schlagschatten und weichen Kanten mit höheren Auflösungen nicht verbessert. Hingegen wird durch höhere Auflösungen die Druckzeit verlängert und die Datei unnötig vergrößert.
 
-**Text in Pfade konvertieren**: Wandelt alle Textobjekte (Punkttext, Flächentext und Pfadtext) in Pfade um und ignoriert alle Textglyphen-Informationen auf Seiten mit Transparenz. Mit dieser Option wird sichergestellt, dass die Breite des Textes während der Reduzierung konsistent bleibt. Beachten Sie, dass die Aktivierung dieser Option dazu führt, dass kleine Schriften etwas dicker erscheinen, wenn sie in Acrobat angezeigt oder auf Desktop-Druckern mit niedriger Auflösung gedruckt werden. Die Qualität des auf Druckern oder Bildträgern mit hoher Auflösung gedruckten Typs wird dadurch nicht beeinträchtigt.
+**Text in Pfade konvertieren**: Wandelt alle Textobjekte (Punkttext, Flächentext und Pfadtext) in Pfade um und ignoriert alle Textglyphen-Informationen auf Seiten mit Transparenz. Mit dieser Option wird sichergestellt, dass die Breite des Textes während der Reduzierung konsistent bleibt. Beachten Sie, dass die Aktivierung dieser Option dazu führt, dass kleine Schriften etwas dicker erscheinen, wenn sie in Acrobat angezeigt oder auf Desktop-Druckern mit niedriger Auflösung gedruckt werden. Sie hat keinen Einfluss auf die Textqualität, wenn die Datei auf Druckern mit hoher Auflösung oder Belichtern gedruckt wird.
 
 **Konturen in Pfade konvertieren** Wandelt auf Seiten mit Transparenz alle Konturen in einfache ausgefüllte Pfade um. Mit dieser Option wird sichergestellt, dass die Breite von Konturen beim Reduzieren unverändert bleibt. Beachten Sie, dass dünne Konturen geringfügig dicker angezeigt werden und die Leistung des Reduzierens beeinträchtigen werden könnte, wenn Sie diese Option aktivieren.
 
@@ -311,7 +311,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 Die folgende Tabelle zeigt gängige Druckertypen und ihre Auflösung in dpi, ihre Standard-Rasterweite in Zeilen pro Zoll (lpi) und eine Resampling-Auflösung für Bilder in Pixel pro Zoll (ppi). Wenn Sie beispielsweise auf einem 600-dpi-Laserdrucker drucken, geben Sie 170 für die Auflösung ein, mit der Bilder neu berechnet werden sollen.
 
-**Bilder**: Wählen Sie diese Option, um Komprimierungs- und Neuberechnungsoptionen für Farb-, Graustufen- und Schwarzweißbilder festzulegen. Sie können mit diesen Optionen experimentieren, um einen guten Kompromiss zwischen Dateigröße und Bildqualität zu finden. Die Auflösungseinstellung für Farb- und Graustufenbilder sollte dem 1,5- bis 2-fachen der Rasterweitenlinierung entsprechen, mit der die Datei gedruckt wird. Die Auflösung für Schwarzweißbilder sollte mit der des Ausgabegeräts übereinstimmen. Durch das Speichern eines Schwarzweißbilds mit einer Auflösung von mehr als 1500 dpi wird die Dateigröße erhöht, ohne dass sich die Bildqualität spürbar verbessert. Bilder, die vergrößert werden, wie beispielsweise Karten, erfordern möglicherweise höhere Auflösungen.
+**Bilder**: Wählen Sie diese Option, um Komprimierungs- und Neuberechnungsoptionen für Farb-, Graustufen- und Schwarzweißbilder festzulegen. Sie können mit diesen Optionen experimentieren, um einen guten Kompromiss zwischen Dateigröße und Bildqualität zu finden. Die Auflösungseinstellung für Farb- und Graustufenbilder sollte dem 1,5- bis 2-fachen der Rasterweitenlinierung entsprechen, mit der die Datei gedruckt wird. Die Auflösung für Schwarzweißbilder sollte mit der des Ausgabegeräts übereinstimmen. Das Speichern eines Schwarzweißbilds mit einer Auflösung von mehr als 1500 dpi erhöht allerdings die Dateigröße, ohne die Bildqualität spürbar zu verbessern. Bilder, die vergrößert werden, wie beispielsweise Karten, erfordern möglicherweise höhere Auflösungen.
 
 >[!NOTE]
 >

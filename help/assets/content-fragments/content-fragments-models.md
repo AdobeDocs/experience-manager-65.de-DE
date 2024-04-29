@@ -6,9 +6,9 @@ role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2310'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 
 1. **Entfernen eines Feldes**
 
-   Wählen Sie das gewünschte Feld aus und klicken Sie dann auf das Papierkorbsymbol. Sie werden aufgefordert, die Aktion zu bestätigen.
+   Wählen Sie das entsprechende Feld aus und klicken Sie auf das Papierkorbsymbol. Sie werden aufgefordert, die Aktion zu bestätigen.
 
    ![remove](assets/cfm-models-06.png)
 
@@ -235,7 +235,8 @@ AEM bietet einen Wiederholungsschutz für:
 * Inhaltsreferenzen
 Verhindert, dass der Benutzer dem aktuellen Fragment einen Verweis hinzufügt. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
 >
-* Fragmentverweise in GraphQL Wenn Sie eine Deep-Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die von einander referenziert werden, wird beim ersten Auftreten null zurückgegeben.
+* Fragmentverweise in GraphQL
+Wenn Sie eine Deep-Abfrage erstellen, die mehrere, sich gegenseitig referenzierende Inhaltsfragmente zurückgibt, gibt sie beim ersten Auftreten NULL zurück.
 
 ### Inhaltsreferenz {#content-reference}
 

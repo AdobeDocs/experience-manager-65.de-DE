@@ -7,9 +7,9 @@ docset: aem65
 exl-id: f6c24894-c322-4c44-b001-8978954d6e53
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '525'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Das Beryl-Design wird vom adaptiven We.Gov-Formular verwendet, und hebt die Verw
 
 ## Exec {#exec}
 
-Exec theme vermeidet durchgehende Hintergrundfüllungen, um Formularkomponenten hervorzuheben. Durch Auswählen und Klicken auf Komponenten werden die Schriftfarben geändert. Im Vergleich zum standardmäßigen Canvas-Design ändert sich die Schriftfarbe des Texts auf der ausgewählten Registerkarte in dunkelblau. Beachten Sie, dass sich die Navigations- und Senden-Schaltflächen vom Beryl-Design unterscheiden.
+Das Exec-Design vermeidet einfarbige Hintergrundfüllungen, um die Formularkomponenten hervorzuheben.  Das Auswählen von und Klicken auf Komponenten ändert die Schriftfarben.  Im Vergleich zum standardmäßigen Arbeitsflächen-Design ändert sich die Schriftfarbe des Textes auf der ausgewählten Registerkarte zu Dunkelblau. Beachten Sie, wie sich die Navigations- und Senden-Schaltflächen vom Beryl-Design unterscheiden.
 
 ![Exec-Design](assets/exec.png)
 
@@ -56,7 +56,7 @@ Exec theme vermeidet durchgehende Hintergrundfüllungen, um Formularkomponenten 
 
 ## Exec Light {#exec-light}
 
-Exec Light-Design verwendet Leerzeichen, um ein nahtloses Erlebnis zu erstellen. Die Schaltflächen Weiter und Senden erhalten eine durchgehende Füllung und einen 3D-Schatten. Ausgewählte Registerkarten auf der linken Seite erhalten einen Pfeil anstelle von doppelten Häkchen.
+Das Exec Light-Design verwendet Leerräume, um ein nahtloses Erlebnis zu erstellen.  Die Schaltflächen „Weiter“ und „Senden“ erhalten eine durchgehende Füllung und einen 3D-Schatten.  Ausgewählte Registerkarten links erhalten einen Pfeil statt Doppelhäkchen.
 
 ![Exec light-Design](assets/exec-light.png)
 
@@ -66,7 +66,7 @@ Exec Light-Design verwendet Leerzeichen, um ein nahtloses Erlebnis zu erstellen.
 
 ## Liberty {#liberty}
 
-Das Thema &quot;Freiheit&quot;verwendet einen minimalistischen Ansatz, um das Wichtige hervorzuheben. Die Schriftfarbe der besuchten Registerkarte ändert sich beispielsweise in Grün. Sie können nur den unteren Umriss des Textfelds sehen, das das Erscheinungsbild eines papierbasierten Formulars mit Linien emuliert. Das aktive Textfeld hat einen schwarzen unteren Umriss, während andere einen hellgrauen unteren Umriss erhalten.
+Das Liberty-Design verwendet eine minimalistische Herangehensweise, um das Wichtige hervorzuheben.  Beispielsweise ändert sich die Schriftfarbe der besuchten Registerkarte zu Grün.  Sie können nur die untere Kontur des Textfelds sehen, was den Look eines papierbasierten Formulars mit Linien simuliert.  Die untere Kontur des aktiven Textfelds ist schwarze, während die untere Kontur anderer Felder hellgrau ist.
 
 ![Liberty-Design](assets/liberty.png)
 

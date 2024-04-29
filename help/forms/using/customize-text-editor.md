@@ -1,6 +1,6 @@
 ---
 title: Anpassen des Texteditors
-description: Erfahren Sie, wie Sie den Texteditor in einer Adobe Experience Manager Forms-Umgebung anpassen.
+description: Erfahren Sie, wie Sie den Texteditor in einer Adobe Experience Manager Forms-Umgebung anpassen können.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
@@ -9,17 +9,17 @@ feature: Correspondence Management
 exl-id: 1dd3f55c-24f7-4331-a9a3-c9223e613fec
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '597'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 # Texteditor anpassen{#customize-text-editor}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
-Sie können den Texteditor in der Benutzeroberfläche &quot;Assets verwalten&quot;und &quot;Korrespondenz erstellen&quot;anpassen, um weitere Schriftarten und Schriftgrößen hinzuzufügen. Diese Schriftarten enthalten englische und nicht-englische Schriftarten wie Japanisch.
+Sie können den Texteditor in der Benutzeroberfläche „Assets verwalten und Korrespondenz erstellen“ anpassen, um weitere Schriftarten und Schriftgrade hinzuzufügen. Diese Schriftarten enthalten englische und nicht-englische Schriftarten wie Japanisch.
 
 In den Schrifteinstellungen können Sie folgende Änderungen vornehmen:
 
@@ -158,14 +158,14 @@ Gehen Sie wie folgt vor, um Schriftarten durch Bearbeiten der Datei „tbxeditor
       </editorConfig>
       ```
 
-   1. Nehmen Sie die erforderlichen Änderungen in der Datei vor, damit Sie Folgendes in den Schrifteinstellungen ändern können:
+   1. Nehmen Sie die erforderlichen Änderungen in der Datei vor, um Folgendes in den Einstellungen für die Schriftart zu ändern:
 
       * Hinzufügen oder Entfernen von Schriftfamilie und -größe
       * Eigenschaften wie Höhe und Zeichenabstand
       * Standardwerte für Schriftfamilie und -größe, Höhe, Zeichenabstand und Datumsformat
       * Einzüge für Aufzählungszeichen
 
-      Um beispielsweise eine japanische Schriftart mit dem Namen Sazanami Mincho Medium hinzuzufügen, müssen Sie den folgenden Eintrag in die XML-Datei einfügen: `<font>Sazanami Mincho Medium</font>`. Sie müssen diese Schriftart auch auf dem Clientcomputer installieren, der für den Zugriff auf die Schriftartanpassung und die Bearbeitung dieser Schriftart verwendet wird. Weitere Informationen finden Sie unter[ Hinzufügen von benutzerdefinierten Schriften zum Clientcomputer](#addcustomfonts).
+      Um zum Beispiel eine japanische Schriftart mit dem Namen Sazanami Mincho Medium hinzuzufügen, müssen Sie Folgendes in der XML-Datei eintragen: `<font>Sazanami Mincho Medium</font>`. Außerdem müssen Sie diese Schriftart auf dem Client-Computer installieren, über den auf die Schriftartanpassung zugegriffen und mit dieser gearbeitet wird. Weitere Informationen finden Sie unter[ Hinzufügen von benutzerdefinierten Schriften zum Clientcomputer](#addcustomfonts).
 
       Sie können auch die Standardeinstellungen für verschiedene Aspekte des Textes ändern und die Schriftarten aus dem Texteditor entfernen, indem Sie die Einträge entfernen.
 
@@ -173,7 +173,7 @@ Gehen Sie wie folgt vor, um Schriftarten durch Bearbeiten der Datei „tbxeditor
 
 ## Fügen Sie dem Client-Computer benutzerdefinierte Schriftarten hinzu {#addcustomfonts}
 
-Wenn Sie auf eine Schriftart im Correspondence Management-Texteditor zugreifen, muss sie auf dem Clientcomputer vorhanden sein, den Sie für den Zugriff auf Correspondence Management verwenden. Um eine benutzerdefinierte Schriftart im Texteditor verwenden zu können, müssen Sie diese zunächst auf dem Clientcomputer installieren.
+Wenn Sie auf eine Schriftart im Correspondence Management-Texteditor zugreifen, muss sie auf dem Client-Computer vorhanden sein, mit dem Sie auf Correspondence Management zugreifen. Um eine benutzerdefinierte Schriftart im Texteditor verwenden zu können, müssen Sie diese zunächst auf dem Client-Computer installieren.
 
 Weitere Informationen zum Installieren von Schriftarten finden Sie hier:
 
@@ -182,7 +182,7 @@ Weitere Informationen zum Installieren von Schriftarten finden Sie hier:
 
 ## Zugriff auf Schriftartanpassungen {#access-font-customizations}
 
-Nachdem Sie die Schriftarten im `tbxeditor-config.xml` -Datei in CRX installiert und die erforderlichen Schriftarten auf dem Clientcomputer installiert, der für den Zugriff auf AEM Forms verwendet wird, werden die Änderungen im Texteditor angezeigt.
+Nachdem Sie Schriftarten in der Datei `tbxeditor-config.xml` in CRX geändert und die erforderlichen Schriftarten auf dem für den AEM Forms-Zugriff verwendeten Client-Computer installiert haben, werden die Änderungen im Texteditor angezeigt.
 
 Zum Beispiel wird die Schriftart Sazanami Mincho Medium, die in der Prozedur [Anpassen von Schriftarten durch Bearbeiten der Datei „tbxeditor-config.xml“ in CRX](#customizefonts) hinzugefügt wurde, in der Texteditor-Schnittstelle wie folgt angezeigt:
 

@@ -1,6 +1,6 @@
 ---
 title: Profile für die Verarbeitung von Metadaten, Bildern und Videos
-description: Profile enthalten eine Reihe von Regeln rund um die Optionen, die auf in einen Ordner hochgeladene Assets angewendet werden. Geben Sie an, welches Metadatenprofil und welches Videokodierungsprofil auf hochgeladene Video-Assets angewendet werden soll. Bei Bild-Assets können Sie auch angeben, welches Bildprofil auf Bild-Assets angewendet werden soll, damit sie ordnungsgemäß zugeschnitten werden.
+description: Profile enthalten eine Reihe von Regeln rund um die Optionen, die auf in einen Ordner hochgeladene Assets angewendet werden. Geben Sie an, welches Metadaten- und welches Videokodierungsprofil auf Video-Assets angewendet werden soll, die Sie hochladen. Bei Bild-Assets können Sie auch angeben, welches Bildprofil auf Bild-Assets angewendet werden soll, um sie ordnungsgemäß zuzuschneiden.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
@@ -11,9 +11,9 @@ feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1392'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -21,15 +21,15 @@ ht-degree: 88%
 
 Profile sind Rezepte, die vorgeben, welche Optionen auf Assets angewendet werden, die in einen Ordner hochgeladen werden. Beispielsweise können Sie angeben, welches Metadatenprofil und welches Videokodierungsprofil auf Video-Assets angewendet wird, die Sie hochladen. Alternativ können Sie angeben, welche Imaging-Profile auf Image-Assets angewendet werden, damit sie entsprechend zugeschnitten werden.
 
-Diese Regeln können das Hinzufügen von Metadaten, das smarte Zuschneiden von Bildern oder die Erstellung von Videokodierungsprofilen umfassen. In Adobe Experience Manager können Sie drei Arten von Profilen erstellen. Sie werden unter den folgenden Links detailliert vorgestellt:
+Dazu kann das Hinzufügen von Metadaten, das smarte Zuschneiden von Bildern oder die Erstellung von Videokodierungsprofilen gehören. In Adobe Experience Manager können Sie drei Arten von Profilen erstellen. Sie werden unter den folgenden Links detailliert vorgestellt:
 
 * [Metadatenprofile](/help/assets/metadata-config.md#metadata-profiles)
 * [Bildprofile](/help/assets/image-profiles.md)
 * [Videoprofile](/help/assets/video-profiles.md)
 
-Sie benötigen Administratorrechte, um Metadaten-, Bild- oder Videoprofile zu erstellen, zu bearbeiten und zu löschen.
+Um Metadaten-, Bild- oder Videoprofile erstellen, bearbeiten oder löschen zu können, benötigen Sie Administratorrechte.
 
-Nachdem Sie Ihre Metadaten, Bilder oder Videoprofile erstellt haben, weisen Sie sie einem oder mehreren Ordnern zu, die Sie als Ziel für neu hochgeladene Assets verwenden.
+Nachdem Sie Ihr Metadaten-, Bild- oder Videoprofil erstellt haben, weisen Sie es mindestens einem Ordner zu, den Sie als Ziel für neu hochgeladene Assets verwenden.
 
 Ein wichtiges Konzept zur Verwendung von Profilen in Experience Manager Assets ist deren Zuweisung zu Ordnern. In einem Profil sind Einstellungen in Form von Metadatenprofilen zusammen mit Videoprofilen oder Bildprofilen enthalten. Mit diesen Einstellungen wird der Inhalt eines Ordners und seiner zugehörigen Unterordner verarbeitet. Wie Sie Ihre Dateien und Ordner benennen, wie Sie Unterordner anordnen und wie Sie die Dateien in diesen Ordnern verarbeiten, hat daher eine erhebliche Auswirkung darauf, wie diese Assets durch ein Profil verarbeitet werden.
 Indem Sie konsistente und geeignete Datei- und Ordnernamensstrategien zusammen mit angemessenen Metadatenpraktiken einsetzen, können Sie die Sammlung Ihrer digitalen Assets optimal nutzen und sicherstellen, dass die richtigen Dateien vom richtigen Profil verarbeitet werden.
@@ -48,7 +48,7 @@ Indem Sie konsistente und geeignete Datei- und Ordnernamensstrategien zusammen m
 
 Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vorhandenes Verarbeitungsprofil verfügt, das Sie nachträglich geändert haben.
 
-Angenommen, Sie haben ein Bildprofil erstellt und es einem Ordner zugewiesen. Bei allen Bild-Assets, die Sie in den Ordner hochgeladen haben, wurde automatisch das Bildprofil auf die Assets angewendet. Später entscheiden Sie sich jedoch, dem Profil ein neues Verhältnis für den smarten Zuschnitt hinzuzufügen. Anstatt die Assets erneut auszuwählen und in den Ordner hochzuladen, führen Sie einfach die *Dynamic Media-Neuverarbeitung* <!-- *Scene7: Reprocess Assets* --> Arbeitsablauf.
+Angenommen, Sie haben ein Bildprofil erstellt und es einem Ordner zugewiesen. Bei allen Bild-Assets, die Sie in den Ordner hochgeladen haben, wurde automatisch das Bildprofil auf die Assets angewendet. Später entscheiden Sie sich jedoch, dem Profil ein neues Verhältnis für den smarten Zuschnitt hinzuzufügen. Anstatt die Assets erneut auszuwählen und in den Ordner hochzuladen, führen Sie einfach den Workflow *Dynamic Media-Neuverarbeitung* <!-- *Scene7: Reprocess Assets* -->aus.
 
 Sie können den Neuverarbeitungs-Workflow für ein Asset ausführen, bei dem die Verarbeitung beim ersten Mal fehlgeschlagen ist. Selbst wenn Sie kein Verarbeitungsprofil bearbeitet oder angewendet haben, können Sie den Neuverarbeitungs-Workflow jederzeit für einen Asset-Ordner ausführen.
 
@@ -66,7 +66,7 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
 **Neuverarbeitung von Assets in einem Ordner:**
 
-1. Navigieren Sie in Experience Manager auf der Seite &quot;Assets&quot;zu einem Ordner mit Assets, dem ein Verarbeitungsprofil zugewiesen ist und für den Sie die **[!UICONTROL Dynamic Media-Neuverarbeitung]** Workflow,
+1. Navigieren Sie in Experience Manager auf der Seite „Assets“ zu einem Ordner mit Assets, dem ein Verarbeitungsprofil zugewiesen ist und für den Sie den Workflow **[!UICONTROL Dynamic Media-Neuverarbeitung]** anwenden möchten.
 
    Bei Ordnern, denen bereits ein Verarbeitungsprofil zugewiesen wurde, wird der Name des Profils direkt unter dem Ordnernamen in der Kartenansicht angezeigt.
 
@@ -82,7 +82,7 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
    ![Workflow zur Neuverarbeitung von Assets 1](/help/assets/assets/reprocess-assets1.png)
 
 1. Wählen Sie **[!UICONTROL Workflow starten]** aus.
-1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Workflow starten]** die Option **[!UICONTROL Dynamic Media Reprocess]** aus.
+1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Workflow starten]** die Option **[!UICONTROL Dynamic Media erneut verarbeiten]** aus.
 1. (Optional) Geben Sie im Textfeld **Titel des Workflows eingeben** einen Namen für den Workflow ein. Sie können den Namen gegebenenfalls verwenden, um auf die Workflow-Instanz zu verweisen.
 
    ![Assets erneut verarbeiten 2](/help/assets/assets/reprocess-assets2.png)
@@ -98,12 +98,12 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 **Anpassen der Batch-Größe des Neuverarbeitungs-Workflows:**
 
 1. Klicken Sie in Experience Manager auf **[!UICONTROL Adobe Experience Manager]**, um auf die globale Navigationskonsole zuzugreifen. Klicken Sie dann auf das Symbol **[!UICONTROL Tools]** (Hammer) > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
-1. Wählen Sie auf der Seite „Workflow-Modelle“ in der Karten- oder Listenansicht **[!UICONTROL Dynamic Media Reprocess]** aus.
+1. Wählen Sie auf der Seite „Workflow-Modelle“ in der Karten- oder Listenansicht **[!UICONTROL Dynamic Media erneut verarbeiten]** aus.
 
-   ![Seite &quot;Workflow-Modelle&quot;mit Dynamic Media-Neuverarbeitungs-Workflow in der Kartenansicht ausgewählt](/help/assets/assets-dm/reprocess-assets7.png)
+   ![Seite „Workflow-Modelle“ mit in der Kartenansicht ausgewähltem Workflow „Dynamic Media erneut verarbeiten“](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**. Eine neue Browser-Registerkarte öffnet die Workflow-Modellseite „Dynamic Media Reprocess“.
-1. Klicken Sie oben rechts auf der Workflow-Seite „Dynamic Media Reprocess“ auf **[!UICONTROL Bearbeiten]**, um den Workflow zu entsperren.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**. In einer neuen Browser-Registerkarte öffnet sich die Workflow-Modellseite „Dynamic Media-Neuverarbeitung“.
+1. Klicken Sie oben rechts auf der Workflow-Seite „Dynamic Media-Neuverarbeitung“ auf **[!UICONTROL Bearbeiten]**, um den Workflow zu entsperren.
 1. Wählen Sie im Workflow die Komponente „Massen-Upload in Scene7“ aus, um die Symbolleiste zu öffnen, und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Konfigurieren]**.
 
    ![Komponente „Massen-Upload in Scene7“](/help/assets/assets-dm/reprocess-assets8.png)
@@ -120,11 +120,11 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
 1. Klicken Sie oben rechts im Dialogfeld **[!UICONTROL Massen-Upload in Scene7 – Schritt-Eigenschaften]** auf **[!UICONTROL Fertig]**.
 
-1. Klicken Sie oben rechts auf der Workflow-Modellseite „Dynamic Media Reprocess“ auf **[!UICONTROL Synchronisieren]**. Wenn Sie **[!UICONTROL Synchronisiert]** sehen, ist das Workflow-Laufzeitmodell erfolgreich synchronisiert und bereit, Assets in einem Ordner erneut zu verarbeiten.
+1. Klicken Sie oben rechts auf der Workflow-Modellseite „Dynamic Media-Neuverarbeitung“ auf **[!UICONTROL Sync]**. Wenn Sie **[!UICONTROL Synchronisiert]** sehen, ist das Workflow-Laufzeitmodell erfolgreich synchronisiert und bereit, Assets in einem Ordner erneut zu verarbeiten.
 
    ![Synchronisieren des Workflow-Modells](/help/assets/assets-dm/reprocess-assets1.png)
 
-1. Schließen Sie die Browser-Registerkarte, auf der das Workflow-Modell „Dynamic Media Reprocess“ angezeigt wird.
+1. Schließen Sie die Browser-Registerkarte, auf der das Workflow-Modell „Dynamic Media-Neuverarbeitung“ angezeigt wird.
 
 <!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
 1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.

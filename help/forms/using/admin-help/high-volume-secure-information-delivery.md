@@ -9,9 +9,9 @@ feature: Document Security
 exl-id: 616e8821-ca96-4471-9120-0e1076a06178
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '320'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 92%
 
 In einer Massenproduktionsumgebung, wie z. B. der Erstellung von geschützten monatlichen Rechnungen für ein Telecom-Unternehmen, kann das Erstellen von Lizenzen, die für jedes einzelne Dokument spezifisch sind, ein ressourcenintensiver Prozess werden. In solchen Fällen unterstützt die Dokumentensicherheit die Zuordnung von Lizenzen zu Benutzenden anstatt zu Dokumenten. Die für eine Person generierte Lizenz wird für alle Dokumente verwendet, die für diese Person geschützt sind.
 
-Ein Vorteil dieses Ansatzes besteht darin, dass die Größe der Document Security-Datenbank nicht linear mit den Dokumenten wächst, sondern mit der Anzahl der Benutzer. Da Sie die Lizenz für eine Person nur einmal erstellen müssen, wird der anschließende Schutz von Dokumenten durch diese Richtlinien schneller. Funktionen wie Offline-Zugriff, Ablauf von Dokumenten und Widerruf werden für alle derartigen Dokumente unterstützt.
+Ein Vorteil dieser Vorgehensweise besteht darin, dass die Größe der Dokumentensicherheits-Datenbank nicht linear mit der Anzahl der Dokumente anwächst, sondern mit der Anzahl der Benutzenden. Da Sie die Lizenz für eine Person nur einmal erstellen müssen, wird der anschließende Schutz von Dokumenten durch diese Richtlinien schneller. Funktionen wie Offline-Zugriff, Ablauf von Dokumenten und Widerruf werden für alle derartigen Dokumente unterstützt.
 
 Die Dokumentensicherheit unterstützt auch abstrakte Richtlinien. Abstrakte Richtlinien sind Richtlinienvorlagen, die alle Richtlinienattribute wie Dokumentensicherheitseinstellungen und Nutzungsrechte beinhalten, jedoch keine Prinzipalliste. Admins können anhand der abstrakten Richtlinie eine beliebige Anzahl von Richtlinien mit verschiedenen Prinzipalen erstellen, die Zugriff auf die Dokumente haben. An der abstrakten Richtlinie vorgenommene Änderungen wirken sich nicht auf die Richtlinien aus, die anhand der abstrakten Richtlinie generiert wurden.
 

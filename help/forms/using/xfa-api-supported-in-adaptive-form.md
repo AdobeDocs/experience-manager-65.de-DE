@@ -1,6 +1,6 @@
 ---
 title: XFA-Unterstützung in XDP-basierten adaptiven Formularen
-description: Listet unterstützte XFA-Ereignisse, Eigenschaften, Skripte und Überprüfungen in adaptiven Formularen auf.
+description: Listet unterstützte XFA-Ereignisse, -Eigenschaften, -Skripte und -Validierungen in adaptiven Formularen auf.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 docset: aem65
@@ -8,9 +8,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: 255be73f-3169-457c-aaa7-a2fb59f1f2cd
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '732'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -20,21 +20,21 @@ ht-degree: 67%
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
-Adaptive Formulare unterstützen verschiedene XFA-Ereignisse, Eigenschaften, Skripte und Überprüfungen, die in einer XDP-Datei definiert sind, darunter:
+Adaptive Formulare bieten Unterstützung für verschiedene XFA-Ereignisse, Eigenschaften, Skripte und Validierungen, die in einer XDP-Datei definiert sind, darunter:
 
 * Ausführung von Skripten, die für Ereignisse in der XDP-Datei definiert wurden.
 * Erfassen von Standardwerten und Verhaltenseigenschaften für Felder in der XDP-Datei.
-* Ausführung von Überprüfungsskripten, die in der XDP-Datei definiert sind.
+* Ausführung von Validierungsskripten, die in der XDP-Datei definiert wurden.
 
-Wenn ein adaptives Formular basierend auf einer XDP-Datei erstellt wird, werden die Eigenschaften, Ereignisse und Überprüfungen automatisch in die Benutzeroberfläche zum Erstellen von Formularen eingefügt. Allerdings können Formularautoren einige dieser Elemente überschreiben, um ein anderes Erlebnis bereitzustellen.
+Wenn ein adaptives Formular anhand einer XDP-Datei erstellt wurde, werden die Eigenschaften, Ereignisse und Validierungen in der Benutzeroberfläche zur Erstellung adaptiver Formulare automatisch ausgefüllt. Allerdings können Formularautoren einige dieser Elemente überschreiben, um ein anderes Erlebnis bereitzustellen.
 
-In diesem Artikel werden unterstützte XFA-Ereignisse, Eigenschaften und Überprüfungen aufgelistet, die in adaptiven Formularen berücksichtigt werden, und erläutert, wie sie in adaptiven Formularen überschrieben werden.
+Dieser Artikel erläutert die unterstützten XFA-Ereignisse, Eigenschaften und Validierungen, die in adaptiven Formularen berücksichtigt werden, und beschreibt, wie sie dort überschrieben werden können.
 
 ## Unterstützte XFA-Elemente und deren Zuordnung in adaptiven Formularen {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
 ### Felder {#fields}
 
-Wenn ein adaptives Formular mit einer XDP-Datei erstellt wird, können Sie ein XFA-Feld per Drag-and-Drop in das adaptive Formular ziehen. In der folgenden Tabelle ist aufgeführt, wie XFA-Felder adaptiven Formularfeldern zugeordnet werden.
+Wenn ein adaptives Formular anhand einer XDP-Datei erstellt wird, können Sie ein XFA-Textfeld per Drag-and-Drop auf das adaptive Formular ziehen. Die folgende Tabelle listet auf, wie den Feldern in adaptiven Formularen XFA-Felder zugeordnet werden.
 
 <table>
  <tbody>
@@ -103,7 +103,7 @@ Wenn ein adaptives Formular mit einer XDP-Datei erstellt wird, können Sie ein X
 
 ### Eigenschaften {#properties}
 
-Die folgende Tabelle erfasst, wie sich verschiedene XFA-Skripte, die in den XDP-Dateien definiert sind, in adaptiven Formularen verhalten.
+Die folgende Tabelle erfasst, wie verschiedene XFA-Skripte, die in den XDP-Dateien definiert sind, sich in adaptiven Formularen verhalten.
 
 <table>
  <tbody>
@@ -157,23 +157,23 @@ Die folgende Tabelle erfasst, wie sich verschiedene XFA-Skripte, die in den XDP-
   </tr>
   <tr>
    <td><p>maxChar<em> (Textfeld)</em></p> </td>
-   <td><p>Der Maximum characters allowed-Eigenschaft im adaptiven Formular zugeordnet.</p> </td>
+   <td><p>Der Eigenschaft „Maximum characters allowed“ im adaptiven Formular zugeordnet.</p> </td>
   </tr>
   <tr>
    <td><p>multiline<em> (Textfeld)</em></p> </td>
-   <td><p>Der Allow multiple lines-Eigenschaft im adaptiven Formular zugeordnet.</p> </td>
+   <td><p>Der Eigenschaft „Allow multiple lines“ im adaptiven Formular zugeordnet.</p> </td>
   </tr>
   <tr>
    <td><p>fracDigit<em> (numerisches Feld, Dezimalfeld)</em></p> </td>
-   <td><p>Der Frac digits-Eigenschaft im adaptiven Formular zugeordnet.</p> </td>
+   <td><p>Der Eigenschaft „Frac digits“ im adaptiven Formular zugeordnet.</p> </td>
   </tr>
   <tr>
    <td><p>leadDigit<em> (numerisches Feld, Dezimalfeld)</em></p> </td>
-   <td><p>Der Lead digits-Eigenschaft im adaptiven Formular zugeordnet.</p> </td>
+   <td><p>Der Eigenschaft „Lead digits“ im adaptiven Formular zugeordnet.</p> </td>
   </tr>
   <tr>
    <td><p>multiSelect<em> (Listenfeld)</em></p> </td>
-   <td><p>Der Allows multiple selection-Eigenschaft im adaptiven Formular zugeordnet.</p> </td>
+   <td><p>Der Eigenschaft „Allows multiple selection“ im adaptiven Formular zugeordnet.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -194,7 +194,7 @@ Die folgende Tabelle erfasst, wie verschiedene XFA-Skripten, die in der XDP-Date
   </tr>
   <tr>
    <td><p>calculate</p> </td>
-   <td><p>Dem Ausdruck für die Berechnung im adaptiven Formular zugeordnet.</p> </td>
+   <td><p>Dem Berechnungsausdruck im adaptiven Formular zugeordnet.</p> </td>
   </tr>
   <tr>
    <td><p>validate </p> </td>
@@ -210,7 +210,7 @@ Die folgende Tabelle erfasst, wie verschiedene XFA-Skripten, die in der XDP-Date
   </tr>
   <tr>
    <td><p>click (Schaltflächen)</p> </td>
-   <td><p>Dem Klick-Ausdruck der Schaltfläche zugeordnet.</p> </td>
+   <td><p>Dem Klickereignis-Ausdruck der Schaltfläche zugeordnet.</p> </td>
   </tr>
   <tr>
    <td><p>Unterstützung für Server-seitiges Skript</p> </td>
@@ -266,4 +266,4 @@ Die folgende Tabelle erfasst, wie XFA-Überprüfungen den Überprüfungen in ada
 
 >[!NOTE]
 >
->Sie können die obligatorische Eigenschaft für Optionsfelder und Kontrollkästchengruppen im adaptiven Formular, die an XFA-Kontrollkästchen gebunden sind, nicht überschreiben.
+>Es ist nicht möglich, die obligatorische Eigenschaft für die Gruppen von Optionsfeldern und Kontrollkästchen im adaptiven Formular außer Kraft zu setzen, die an XFA-Prüfungsschaltflächen gebunden sind.

@@ -1,6 +1,6 @@
 ---
 title: Funktionsunterschiede zwischen HTML5- und PDF-Formularen
-description: Erfahren Sie mehr über die Funktionsunterschiede zwischen HTML5-Formularen und PDF forms.
+description: Erfahren Sie mehr über die Funktionsunterschiede zwischen HTML5- und PDF-Formularen.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,15 +10,15 @@ feature: HTML5 Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '447'
-ht-degree: 30%
+ht-degree: 100%
 
 ---
 
 # Funktionsunterschiede zwischen HTML5- und PDF-Formularen {#feature-differentiation-between-html-forms-and-pdf-forms}
 
-Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5-Formulare und PDF forms:
+Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5- und PDF-Formulare:
 
 <table>
  <tbody>
@@ -29,13 +29,13 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5-Formulare und 
   </tr>
   <tr>
    <td>Barcodes<br /> </td>
-   <td>Nicht auf Benutzeroberflächenebene verfügbar. </td>
+   <td>Nicht verfügbar auf Benutzeroberflächenebene. </td>
    <td>Unterstützt</td>
   </tr>
   <tr>
    <td>Unterschriftsfeld<br /> </td>
-   <td><strong>Digitale Signaturen</strong> werden nicht unterstützt, aber ein neuer <strong>Scribble-Signatur</strong> wird für papierähnliche Signaturen hinzugefügt. Sie können ihre Signatur mithilfe des <strong>Scribble-Signatur</strong> -Feld. Die Signatur wird im Formular als Bild gespeichert. Sie können Geolocation-Informationen im Abschnitt <strong>Scribble-Signatur</strong> -Feld.</td>
-   <td>Signaturfeld verfügbar für <strong>Digitale Signaturen</strong>.</td>
+   <td><strong>Digitale Signaturen</strong> werden nicht unterstützt, aber ein neues <strong>Freihand-Signatur</strong>-Feld wurde für papierähnliche Signaturen hinzugefügt. Die Signatur kann im Feld <strong>Freihand-Signatur</strong> auf dem Formular eingegeben werden. Die Signatur wird auf dem Formular als Bild gespeichert.  Sie können die Geotagging-Informationen im Feld <strong>Freihand-Signatur</strong> speichern.</td>
+   <td>Signaturfeld für <strong>digitale Signaturen</strong> verfügbar.</td>
   </tr>
   <tr>
    <td>Datenzusammenführung</td>
@@ -44,27 +44,27 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5-Formulare und 
   </tr>
   <tr>
    <td>Bilder</td>
-   <td>Das Daten-URI-Schema wird zum Anzeigen von Bildern verwendet. Alle modernen Versionen von Browsern unterstützen dieses Schema, es gibt jedoch Unterschiede in der Bandbreite der Bildformate, die von jedem Browser unterstützt werden.<br /> </td>
+   <td>Das Daten-URI-Schema wird für die Darstellung von Bildern verwendet.  Alle modernen Browser unterstützen dieses Schema, es gibt jedoch Unterschiede bei den Bildformaten, die die einzelnen Browser unterstützen.<br /> </td>
    <td>Die Formate .gif, .png, .jpeg, .bmp und .tiff werden unterstützt.</td>
   </tr>
   <tr>
    <td>Seitenumbruch<br /> </td>
-   <td><p>Ein HTML5-Formular ist in Bereiche und Felder unterteilt, damit es ähnlich wie PDF forms aussieht. Die Seitengröße wird dynamisch berechnet. Wenn der gesamte Seiteninhalt in einem HTML5-Formular gelöscht oder als ausgeblendet markiert wird, wird die leere Seite ausgeblendet. Zwischen den Seiten über und unter der leeren Seite wird kein leeres Leerzeichen (Leerzeichen) angezeigt.</p> <p>Wenn Datenzusammenführung oder Skripte Inhalte zu einer Seite hinzufügen, wird die Länge der Seite erweitert, um den neu hinzugefügten Inhalt aufzunehmen. Dem Formular werden keine neuen Seiten hinzugefügt, um den neu hinzugefügten Inhalt aufzunehmen. </p> <p><strong>Hinweis:</strong> Wenn der gesamte Seiteninhalt in einem HTML5-Formular gelöscht oder als ausgeblendet markiert wird, bleibt die leere Seite (Leerraum) zwischen der ersten und zweiten Seite sichtbar, jedoch nicht zwischen allen anderen Seiten.</p> </td>
+   <td><p>Ein HTML5-Formular ist in Bereiche und Felder unterteilt, damit es wie ein PDF-Formular wirkt. Die Seitengröße wird dynamisch berechnet. Wenn der gesamte Seiteninhalt in einem HTML5-Formular gelöscht oder als ausgeblendet markiert wird, wird die leere Seite ausgeblendet. Zwischen den Seiten über und unter der leeren Seite wird kein Leerzeichen angezeigt.</p> <p>Wird einer Seite durch Datenzusammenführung oder Skripte Inhalt hinzugefügt, wird die Seite erweitert, damit der neu hinzukommende Inhalt Platz findet. Dem Formular werden keine neuen Seiten für den neuen Inhalt hinzugefügt. </p> <p><strong>Hinweis:</strong> Wenn der gesamte Inhalt einer Seite in einem HTML5-Formular gelöscht oder als ausgeblendet markiert wird, bleibt zwischen der ersten und zweiten, nicht jedoch zwischen anderen Seiten ein Leerzeichen sichtbar.</p> </td>
    <td>Paginierung in PDF hängt vom zusammengeführten Dateninhalt oder dem Benutzerinhalt ab. Abhängig davon wird die Seitenanzahl erhöht bzw. verringert.</td>
   </tr>
   <tr>
    <td>Kopf- und Fußzeilen </td>
-   <td>Unterstützt. <br /> <br /> Da HTML5-Mobile Forms Seitenumbrüche nicht unterstützen, werden Kopf- und Fußzeilen nur einmal angezeigt. Sie können sie jedoch im Layout so einrichten, dass sie an mehreren Stellen in der Mobile Forms-Vorschau angezeigt werden.<br /> </td>
+   <td>Unterstützt. <br /> <br /> Da HTML5-Mobile Forms Seitenumbrüche nicht unterstützen, werden Kopf- und Fußzeilen nur einmal angezeigt. Sie können sie jedoch im Layout so einrichten, dass sie an mehreren Stellen in der Vorschau für Mobile-Formulare angezeigt werden.<br /> </td>
    <td>Unterstützt.</td>
   </tr>
   <tr>
    <td>Benutzerdefinierte Widgets</td>
-   <td>Widgets können angepasst werden, um das Benutzererlebnis auf Mobilgeräten zu verbessern.<br /> </td>
-   <td>Alle Widgets sind gesperrt und kein benutzerdefiniertes Widget kann als Plug-in verwendet werden.<br /> </td>
+   <td>Widgets können angepasst werden, um das Anwendererlebnis auf mobilen Geräten zu optimieren.<br /> </td>
+   <td>Alle Widgets werden blockiert und kein benutzerdefiniertes Widget kann als Plug-In verwendet werden.<br /> </td>
   </tr>
   <tr>
    <td>XFA-Skript-API</td>
-   <td>Unterstützt die am häufigsten verwendeten XFA-Skriptkonstrukte. Eine detaillierte Liste der unterstützten Konstrukte finden Sie unter <a href="/help/forms/using/scripting-support.md">Skriptunterstützung</a>.</td>
+   <td>Unterstützt die am häufigsten verwendeten XFA-Skriptkonstrukte. Eine detaillierte Liste der unterstützten Konstrukte finden Sie unter <a href="/help/forms/using/scripting-support.md">Unterstützung der Skripterstellung</a>.</td>
    <td>Unterstützt alle XFA-Skriptkonstrukte.</td>
   </tr>
   <tr>

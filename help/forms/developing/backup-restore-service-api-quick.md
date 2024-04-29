@@ -1,6 +1,6 @@
 ---
-title: Sicherungs- und Wiederherstellungs-Service API-Schnellstarts
-description: Erfahren Sie, wie AEM Forms-Schnellstarts zur Sicherung und Wiederherstellung der API effiziente Prozesse zur Erstellung und Wiederherstellung von Backups ermöglichen.
+title: Schnellstarts für die Sicherungs- und Wiederherstellungs-Service-API
+description: Erfahren Sie, wie die Schnellstarts für die Sicherungs- und Wiederherstellungs-Service-API in AEM Forms effiziente Sicherungs- und Wiederherstellungsprozesse ermöglichen.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,9 +9,9 @@ role: Developer
 exl-id: ae17fd3a-0ba4-4a00-907b-811e500b0e14
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '256'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 

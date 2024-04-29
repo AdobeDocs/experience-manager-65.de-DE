@@ -9,9 +9,9 @@ role: Admin
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1967'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -19,14 +19,14 @@ ht-degree: 89%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
 ## Übersicht  {#overview-nbsp}
 
 Metadaten ermöglichen eine einfachere Kategorisierung und Organisation der Assets und erleichtern Benutzern die Suche nach einem bestimmten Asset.
 
-AEM Forms stellt standardmäßig einen definierten Metadatensatz für jeden Asset-Typ bereit. Neben den Standardmetadaten können Sie auch benutzerdefinierte Metadaten zu den einzelnen Asset-Typen hinzufügen. AEM Forms bietet Ihnen außerdem die richtigen Mittel, um alle Metadaten effizient für Ihre Formulare zu erstellen, zu verwalten und auszutauschen.
+AEM Forms stellt standardmäßig einen definierten Metadatensatz für jeden Asset-Typ bereit. Neben den Standardmetadaten können Sie auch benutzerdefinierte Metadaten zu den einzelnen Asset-Typen hinzufügen. AEM Forms bietet Ihnen außerdem die richtigen Mittel zum effizienten Erstellen, Verwalten und Austauschen all dieser Metadaten für Ihre Formulare.
 
 Wenn Sie Entwickler oder Site-Eigentümer sind, können Sie Forms Portal (die Endbenutzeroberfläche für AEM Forms) so anpassen, dass die in Ihrem Unternehmen verwendeten Metadaten widergespiegelt werden. Weitere Informationen zu Forms Portal finden Sie unter [Einführung in das Veröffentlichen von Formularen in einem Portal](../../forms/using/introduction-publishing-forms.md).
 
@@ -128,7 +128,7 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
     <ul> 
      <li>Geben Sie über die Schaltfläche zum Übermitteln von HTTP beim Erstellen eines XFA-Formulars in AEM Forms Designer eine Übermittlungs-URL direkt in einer Formularvorlage an.</li> 
      <li>Wählen Sie in der AEM Forms-Benutzeroberfläche ein Formular aus und geben Sie eine Übermittlungs-URL bei der Bearbeitung der Metadateneigenschaften an.</li> 
-     <li>Bearbeiten Sie in Forms Portal die Komponente "Search &amp; Lister"und geben Sie auf der Registerkarte "Formularlink"eine Sende-URL an.</li> 
+     <li>Bearbeiten Sie im Formularportal die Komponente „Suche und Auflister“ und legen Sie eine Übermittlungs-URL auf der Registerkarte „Formular-Link“ fest.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -163,10 +163,10 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
   <tr> 
    <td>Auswahl des Formularmodells (XDP/XSD)</td> 
    <td>Adaptives Formular</td> 
-   <td><p>Gibt an, welches Formularmodell beim Authoring des adaptiven Formulars verwendet wird. Diese Eigenschaft kann folgende Werte haben:</p> 
+   <td><p>Gibt an, welches Formularmodell beim Erstellen des adaptiven Formulars verwendet wird. Diese Eigenschaft kann folgende Werte haben:</p> 
     <ul> 
-     <li>Formularvorlage: Eine Formularvorlage wird aus den im Repository vorhandenen ausgewählt. Dieser Wert kann aktualisiert werden.</li> 
-     <li>XML-Schema: Eine XSD-Datei wird hochgeladen. Dieser Wert kann aktualisiert werden.</li> 
+     <li>Formularvorlage: Eine Formularvorlage wird aus den im Repository vorhandenen ausgewählt. Dieser Wert kann geändert werden.</li> 
+     <li>XML-Schema: Eine XSD-Datei wird hochgeladen. Dieser Wert kann geändert werden.</li> 
      <li>Ohne</li> 
     </ul> 
     <div>
@@ -195,7 +195,7 @@ Assets verfügen über vorhandene Eigenschaftswerte, die im schreibgeschützten 
 
 1. Auf der daraufhin geöffneten Eigenschaftsseite wird ein Schema angezeigt, das nur die Metadateneigenschaften mit einem Wert enthält.
 
-   Die Eigenschaftenseite verfügt über eine Symbolleiste mit zwei Aktionssymbolen:
+   Die Eigenschaftsseite enthält eine Symbolleiste mit zwei Aktionssymbolen:
 
    * Bearbeiten: ![aem6forms_edit](assets/aem6forms_edit.png) Bearbeiten der Metadateneigenschaftswerte
    * Anzeigen: ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Navigieren Sie zur Seite mit den Formulardetails, auf der das Formular im Vorschaumodus geöffnet wird.
@@ -234,7 +234,7 @@ Im linken Bedienfeld der Eigenschaftsseite wird die Miniaturansicht des Formular
 
 Für alle Formulartypen haben Sie die Möglichkeit, ein Bild hochzuladen, indem Sie auf **[!UICONTROL Bild hochladen]** klicken und im lokalen Verzeichnis nach einer Grafikdatei suchen. Das ausgewählte Bild wird anstelle des Standardbilds als Miniaturansicht verwendet.
 
-Für adaptive Formulare stehen zusätzliche Funktionen zur Verfügung, mit denen der Benutzer eine Miniaturansicht als Momentaufnahme der aktuellen Vorschau des adaptiven Formulars generieren kann. Da AEM Forms auch das Authoring adaptiver Formulare unterstützt, kann sich die Vorschau des adaptiven Formulars ändern, wenn Sie das adaptive Formular ändern. Diese Funktion zum Generieren einer Miniaturansicht hilft Ihnen beim Abrufen einer neuen Miniaturansicht für das adaptive Formular, die auf dem aktuellen Vorschaustatus basiert. Klicken Sie auf **[!UICONTROL Vorschau generieren]**, um diese Aktion durchzuführen.
+Bei adaptiven Formularen werden zusätzliche Funktionen bereitgestellt, mit denen Benutzende eine Miniaturansicht als Momentaufnahme der aktuellen Vorschau des adaptiven Formulars generieren können. Da AEM Forms auch das Authoring adaptiver Formulare unterstützt, kann sich die Vorschau des adaptiven Formulars ändern, wenn Sie das adaptive Formular ändern. Mit dieser Funktion zum Generieren einer Miniaturansicht können Sie eine neue Miniaturansicht für das adaptive Formular erzeugen, die auf dem aktuellen Vorschaustatus basiert. Klicken Sie auf **[!UICONTROL Vorschau generieren]**, um diese Aktion durchzuführen.
 
 >[!NOTE]
 >
@@ -293,12 +293,12 @@ AEM Forms stellt die Metadatenschemata der unterstützten Formulartypen in diese
 
 1. Klicken Sie auf eine Komponente, die Sie gerade verschoben haben. Geben Sie in der Registerkarte „Einstellungen“, die im rechten Bedienfeld geöffnet wird, die Informationen für folgende Felder ein:
 
-   1. Geben Sie eine Feldbezeichnung an, die als Anzeigename über dem im Schema platzierten Feld verwendet wird (z. B. Abteilung)
+   1. Geben Sie eine Feldbezeichnung an, die als Anzeigename über dem im Schema platzierten Feld verwendet wird (z. B. „Abteilung“).
    1. Unter dem Feld „Zu Eigenschaft zuordnen“ wird ein bereits befüllter Wert angezeigt **„./jcr:content/metadata/default&#39;**. Ändern Sie „**default**“ in einen gewünschten Eigenschaftsnamen, mit dem die Eigenschaft im CRX-Repository gespeichert wird (zum Beispiel „./jcr:content/metadata/department“)
 
       >[!NOTE]
       >
-      >Ändern Sie nicht das Präfix „./jcr:content/metadata/&quot;, da es den Pfad definiert, in dem die Eigenschaft gespeichert ist.
+      >Ändern Sie nicht das Präfix „./jcr:content/metadata/“, da es den Pfad definiert, unter dem die Eigenschaft gespeichert ist.
       >
       >Außerdem muss der Eigenschaftsname eindeutig sein, um zu vermeiden, dass Werte für zwei oder mehr Eigenschaften am selben Speicherort im Repository geschrieben werden. Daher wird empfohlen, den Wert „default“ zu ändern.
 

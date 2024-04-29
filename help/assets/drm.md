@@ -8,9 +8,9 @@ exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
 hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1425'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -92,7 +92,7 @@ Damit die [!DNL Assets]-Konsole die verweisenden ebenenübergreifenden Assets ne
 Die [!DNL Assets]-Konsole kann verschiedene Status für Assets anzeigen. Abhängig vom aktuellen Status eines bestimmten Assets zeigt die zugehörige Kartenansicht eine Beschreibung des Zustands an, z. B. „Abgelaufen“, „Veröffentlicht“, „Genehmigt“, „Abgelehnt“ usw.
 
 1. Wählen Sie in der [!DNL Assets]-Benutzeroberfläche ein Asset aus.
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Veröffentlichen]**. Wenn Sie **Veröffentlichen** Klicken Sie in der Symbolleiste auf **[!UICONTROL Mehr]** in der Symbolleiste und suchen Sie **[!UICONTROL Veröffentlichen]** ![Veröffentlichungsoption](assets/do-not-localize/publish-globe.png) -Option.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Veröffentlichen]**. Falls Sie **Veröffentlichen** in der Symbolleiste nicht sehen, klicken Sie in der Symbolleiste auf **[!UICONTROL Mehr]** und suchen Sie nach der Option **[!UICONTROL Veröffentlichen]** ![Option „Veröffentlichen“](assets/do-not-localize/publish-globe.png).
 1. Wählen Sie im Menü **[!UICONTROL Veröffentlichen]** aus und schließen Sie danach das Bestätigungsdialogfeld.
 1. Beenden Sie den Auswahlmodus. Der Veröffentlichungsstatus des Assets wird in der Kartenansicht im unteren Bereich der Miniatur des Assets angezeigt. In der Listenansicht zeigt die Spalte „Veröffentlicht“ die Zeit an, zu der das Asset veröffentlicht wurde.
 

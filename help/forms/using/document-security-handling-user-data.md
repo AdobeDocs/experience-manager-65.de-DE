@@ -1,5 +1,5 @@
 ---
-title: Dokumentensicherheit | Umgang mit Benutzerdaten
+title: Document Security | Umgang mit Benutzerdaten
 description: Erfahren Sie, wie Sie mit AEM Forms Document Security Benutzerdaten und Datenspeicher verwalten sowie Benutzerdaten aufrufen, löschen und exportieren können.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -7,13 +7,13 @@ role: Admin
 exl-id: 00c01a12-1180-4f35-9179-461bf177c787
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '923'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
-# Dokumentensicherheit | Umgang mit Benutzerdaten {#document-security-handling-user-data}
+# Document Security | Umgang mit Benutzerdaten {#document-security-handling-user-data}
 
 Mit der AEM Forms-Dokumentsicherheit können Sie vordefinierte Sicherheitseinstellungen für Ihre Dokumente erstellen, speichern und anwenden. Dadurch wird sichergestellt, dass nur autorisierte Benutzende die Dokumente verwenden können. Sie können Dokumente mithilfe von Richtlinien schützen. Eine Richtlinie ist eine Zusammenstellung von Informationen, die unter anderem Sicherheitseinstellungen und eine Liste der berechtigten Benutzenden umfasst. Sie können eine Richtlinie auf ein oder mehrere Dokumente anwenden und Benutzende autorisieren, die in der AEM Forms JEE-Benutzerverwaltung hinzugefügt wurden.
 
@@ -21,7 +21,7 @@ Mit der AEM Forms-Dokumentsicherheit können Sie vordefinierte Sicherheitseinste
 
 ## Benutzerdaten und Datenspeicher {#user-data-and-data-stores}
 
-Document Security speichert Richtlinien und Daten zu geschützten Dokumenten, einschließlich Benutzerdaten, in einer Datenbank wie My Sql, Oracle, MS® SQL Server und IBM® DB2®. Darüber hinaus werden die Daten für autorisierte Benutzende in einer Richtlinie in der Benutzerverwaltung gespeichert. Informationen zu den in der Benutzerverwaltung gespeicherten Daten finden Sie unter [Benutzerverwaltung für Formulare: Umgang mit Benutzerdaten](/help/forms/using/user-management-handling-user-data.md).
+Im Rahmen von Document Security werden Richtlinien und Daten in Bezug auf geschützte Dokumente gespeichert, einschließlich Benutzerdaten in einer Datenbank, z. B. MySQL, Oracle, MS® SQL Server und IBM® DB2®. Darüber hinaus werden die Daten für autorisierte Benutzende in einer Richtlinie in der Benutzerverwaltung gespeichert. Informationen zu den in der Benutzerverwaltung gespeicherten Daten finden Sie unter [Benutzerverwaltung für Formulare: Umgang mit Benutzerdaten](/help/forms/using/user-management-handling-user-data.md).
 
 Die folgende Tabelle zeigt, wie im Rahmen der Dokumentsicherheit Daten in Datenbanktabellen organisiert werden.
 
@@ -37,7 +37,7 @@ Die folgende Tabelle zeigt, wie im Rahmen der Dokumentsicherheit Daten in Datenb
   </tr>
   <tr>
    <td><code>EdcAuditEntity</code></td>
-   <td>Speichert Informationen über Prüfereignisse wie Benutzerereignisse, Dokumentereignisse und Richtlinienereignisse.</td>
+   <td>Speichert Informationen zu Auditing-Ereignissen wie Benutzerereignissen, Dokumentereignissen und Richtlinienereignissen.</td>
   </tr>
   <tr>
    <td><p><code>EdcLicenseEntity</code></p> </td>
@@ -68,7 +68,7 @@ Die folgende Tabelle zeigt, wie im Rahmen der Dokumentsicherheit Daten in Datenb
    <td>Speichert Informationen zu archivierten Richtlinien. Eine archivierte Richtlinie enthält ihre Richtlinien-XML, die als Blob-Objekt gespeichert ist.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPolicySetPrincipalEntity</code></p> <p><code>EdcPolicySetPrincipalEnt</code><br /> (Oracle und MS® SQL-Datenbanken)</p> </td>
+   <td><p><code>EdcPolicySetPrincipalEntity</code></p> <p><code>EdcPolicySetPrincipalEnt</code><br /> (Oracle- und MS SQL®-Datenbanken)</p> </td>
    <td>Speichert die Zuordnung zwischen Richtliniensatz und Benutzern.</td>
   </tr>
   <tr>
@@ -80,9 +80,9 @@ Die folgende Tabelle zeigt, wie im Rahmen der Dokumentsicherheit Daten in Datenb
 
 ## Zugreifen auf und Löschen von Benutzerdaten {#access-and-delete-user-data}
 
-Sie können Document Security-Daten für Benutzer in den Datenbanken aufrufen und exportieren und bei Bedarf dauerhaft löschen.
+Sie können auf Dokumentensicherheitsdaten für Benutzende in den Datenbanken zugreifen, sie exportieren und bei Bedarf dauerhaft löschen.
 
-Um Benutzerdaten aus einer Datenbank zu exportieren oder zu löschen, müssen Sie mithilfe eines Datenbank-Clients eine Verbindung zur Datenbank herstellen und die Prinzipal-ID anhand einiger persönlich identifizierbarer Informationen des Benutzers ermitteln. Um beispielsweise die Haupt-ID eines Benutzers mit einer Anmelde-ID abzurufen, führen Sie den folgenden Befehl `select` in der Datenbank aus.
+Um Benutzerdaten aus einer Datenbank zu exportieren oder zu löschen, müssen Sie mithilfe eines Datenbank-Clients eine Verbindung mit der Datenbank herstellen und anhand personenbezogener Daten der Benutzerin bzw. des Benutzers die Prinzipal-ID ermitteln. Um beispielsweise die Haupt-ID eines Benutzers mit einer Anmelde-ID abzurufen, führen Sie den folgenden Befehl `select` in der Datenbank aus.
 
 Ersetzen Sie im Befehl `select` die `<user_login_id>` durch die Anmelde-ID des Benutzers, dessen Haupt-ID Sie aus der Datenbanktabelle `EdcPrincipalUserEntity` abrufen möchten.
 
@@ -94,11 +94,11 @@ Wenn Sie die Prinzipal-ID kennen, können Sie die Benutzerdaten exportieren oder
 
 ### Exportieren von Benutzerdaten {#export-user-data}
 
-Führen Sie die folgenden Datenbankbefehle aus, damit Sie Benutzerdaten für eine Prinzipal-ID aus Datenbanktabellen exportieren können. Ersetzen Sie `<principal_id>` im Befehl `select` durch die Haupt-ID des Benutzers, dessen Daten Sie exportieren möchten.
+Führen Sie die folgenden Datenbankbefehle aus, um Benutzerdaten für eine Prinzipal-ID aus Datenbanktabellen zu exportieren.  Ersetzen Sie `<principal_id>` im Befehl `select` durch die Haupt-ID des Benutzers, dessen Daten Sie exportieren möchten.
 
 >[!NOTE]
 >
->Die folgenden Befehle verwenden Datenbanktabellennamen in My SQL- und IBM® DB2®-Datenbanken. Wenn Sie diese Befehle auf Oracle- und MS® SQL-Datenbanken ausführen, ersetzen Sie `EdcPolicySetPrincipalEntity` mit `EdcPolicySetPrincipalEnt` in den Befehlen.
+>Die folgenden Befehle verwenden Datenbanktabellennamen in My SQL- und IBM® DB2®-Datenbanken. Wenn Sie diese Befehle auf Oracle- und MS® SQL-Datenbanken ausführen, ersetzen Sie in den Befehlen `EdcPolicySetPrincipalEntity` durch `EdcPolicySetPrincipalEnt`.
 
 ```sql
 Select * from EdcPrincipalKeyEntity where principalid = '<principal_id>';
@@ -132,8 +132,8 @@ Um vollständige Daten über einen Benutzer im System zu erhalten, müssen Sie a
 
 Führen Sie folgende Schritte aus, um Dokumentsicherheitsdaten für eine Prinzipal-ID aus Datenbanktabellen zu löschen.
 
-1. Fahren Sie den AEM Forms-Server herunter.
-1. Führen Sie die folgenden Datenbankbefehle aus, damit Sie Daten für die Prinzipal-ID aus Datenbanktabellen für Document Security löschen können. Ersetzen Sie im Befehl `Delete` den Wert `<principal_id>` durch die Haupt-ID des Benutzers, dessen Daten Sie löschen möchten.
+1. Fahren Sie den AEM-Fomular-Server herunter.
+1. Gehen Sie wie folgt vor, um Daten für die Prinzipal-ID aus Datenbanktabellen für Document Security zu löschen. Ersetzen Sie im Befehl `Delete` den Wert `<principal_id>` durch die Haupt-ID des Benutzers, dessen Daten Sie löschen möchten.
 
    ```sql
    Delete from EdcPrincipalKeyEntity where principalid = '<principal_id>';
@@ -154,12 +154,12 @@ Führen Sie folgende Schritte aus, um Dokumentsicherheitsdaten für eine Prinzip
 1. Aktive und archivierte Richtlinien-XML-Dateien werden in den Datenbanktabellen `EdcPolicyXmlEntity` bzw. `EdcPolicyArchiveEntity` gespeichert. Führen Sie die folgenden Schritte aus, um Daten für einen Benutzer aus diesen Tabellen zu löschen:
 
    1. Öffnen Sie den XML-Blob jeder Zeile in der Tabelle `EdcPolicyXMLEntity` oder `EdcPolicyArchiveEntity` und extrahieren Sie die XML-Datei. Die XML-Datei ähnelt der unten gezeigten.
-   1. Bearbeiten Sie die XML-Datei, damit Sie den Blob für die Prinzipal-ID entfernen können.
+   1. Bearbeiten Sie die XML-Datei, um den Blob für die Prinzipal-ID zu entfernen.
    1. Wiederholen Sie die Schritte 1 und 2 für die andere Datei.
 
    >[!NOTE]
    >
-   >Entfernen Sie den vollständigen Blob im `Principal` -Tag für eine Prinzipal-ID oder die Richtlinien-XML kann beschädigt oder unbrauchbar werden.
+   >Entfernen Sie den kompletten Blob innerhalb des `Principal`-Tags für eine Prinzipal-ID, da sonst die XML-Richtlinie beschädigt oder unbrauchbar werden kann.
 
    ```xml
    <ns2:Principal PrincipalNameType="USER">
@@ -192,7 +192,7 @@ Führen Sie folgende Schritte aus, um Dokumentsicherheitsdaten für eine Prinzip
 
    **Verwenden der Verwaltungskonsole** 
 
-   1. Melden Sie sich als Administrator bei der Forms JEE Administration Console unter https:// an.[*server*]:[*port*]/adminui.
+   1. Melden Sie sich als Admin auf der Forms-JEE-Administrationskonsole unter https://[*Server*]:[*Port*]/adminui an.
    1. Navigieren Sie zu **[!UICONTROL Dienste > Dokumentensicherheit > Richtliniensätze]**.
    1. Öffnen Sie einen Richtliniensatz und löschen Sie die Benutzerin oder den Benutzer aus der Richtlinie.
 
@@ -200,7 +200,7 @@ Führen Sie folgende Schritte aus, um Dokumentsicherheitsdaten für eine Prinzip
 
    Benutzende der Funktion „Dokumentsicherheit“ mit der Berechtigung zum Erstellen persönlicher Richtlinien können Benutzerdaten aus ihren Richtlinien löschen. Gehen Sie dazu wie folgt vor:
 
-   1. Benutzer mit persönlichen Richtlinien melden sich auf ihrer Document Security-Webseite unter https:// an.[*server*]:[*port*]/edc.
+   1. Benutzende, die über persönliche Richtlinien verfügen, melden sich auf ihrer Document Security-Webseite unter https://[*Server*]:[*Port*]/edc an.
    1. Navigieren Sie zu **[!UICONTROL Dienste > Dokumentensicherheit > Meine Richtlinien]**.
    1. Öffnen Sie eine Richtliniengruppe und löschen Sie den Benutzer aus der Richtlinie.
 
@@ -209,4 +209,4 @@ Führen Sie folgende Schritte aus, um Dokumentsicherheitsdaten für eine Prinzip
    >Administratoren können über die Verwaltungskonsole in **[!UICONTROL Dienste > Dokumentensicherheit > Meine Richtlinien]** Benutzerdaten aus persönlichen Richtlinien anderer Benutzer suchen, darauf zugreifen und sie löschen.
 
 1. Löschen Sie die Daten für die Prinzipal-ID aus der Benutzerverwaltungsdatenbank. Detaillierte Schritte finden Sie unter [Benutzerverwaltung für Formulare | Umgang mit Benutzerdaten](/help/forms/using/user-management-handling-user-data.md).
-1. Starten Sie den AEM Forms-Server.
+1. Starten Sie den AEM-Formular-Server.

@@ -9,9 +9,9 @@ role: Developer
 exl-id: cff65f74-ba95-438e-88a4-5ec7d22aafba
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1380'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Diese Aufgaben können Sie mit dem XMP Utilities-Service ausführen:
 
 ## Importieren von Metadaten in PDF-Dokumente {#importing-metadata-into-pdf-documents}
 
-Sie können die XMP Utilities Java- und Web-Service-APIs verwenden, um XMP-Metadaten programmgesteuert in ein PDF-Dokument zu importieren. Metadaten enthalten Informationen zu einem PDF-Dokument, z. B. den Autor des Dokuments und Schlüsselwörter zum Dokument. Metadaten können sich im Dialogfeld Dokumenteigenschaften des Dokuments befinden, wie in der folgenden Abbildung dargestellt.
+Sie können die XMP Utilities Java- und Web-Service-APIs verwenden, um XMP-Metadaten programmgesteuert in ein PDF-Dokument zu importieren. Metadaten enthalten Informationen zu einem PDF-Dokument, z. B. den Autor des Dokuments und Schlüsselwörter zum Dokument. Metadaten können sich im Dialogfeld „Dokumenteigenschaften“ des Dokuments befinden, wie in der folgenden Abbildung dargestellt.
 
 ![ww_ww_metadatadialog](assets/ww_ww_metadatadialog.png)
 

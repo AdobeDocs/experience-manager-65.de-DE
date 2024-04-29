@@ -7,9 +7,9 @@ topic-tags: integrations
 exl-id: fdc91054-3f7e-4cbf-bdfa-7d7a621747f1
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -48,11 +48,11 @@ Ihre Marke wird jetzt auf der Seite „Aktivitäten“ aufgeführt. 
 
    Im Abschnitt „Ziele und Einstellungen“ können Sie den Zeitplan und die Priorität für Ihre Aktivität festlegen. Legen Sie das Start- und Enddatum, die Priorität für die Aktivität, die Zielmetrik sowie weitere Metriken fest und wählen Sie **Speichern** aus.
 
-   Die Aktivität wird jetzt in Ihrer Markenseite aufgeführt.
+   Die Aktivität wird jetzt auf Ihrer Markenseite aufgeführt.
 
    >[!NOTE]
    >
-   >Sie können den Fehler &quot;Ihre Aktivität wurde gespeichert, aber nicht mit Target synchronisiert&quot;ignorieren. Grund: Das folgende Erlebnis enthält keine Angebote“, wenn er beim Speichern der Aktivität auftritt.
+   >Sie können folgenden Fehler ignorieren: „Ihre Aktivität wurde gespeichert, aber nicht mit Target synchronisiert. Grund: Das folgende Erlebnis enthält keine Angebote“, wenn er beim Speichern der Aktivität auftritt.
 
 1. Um Target zu aktivieren, bearbeiten Sie die.jsp-Datei, wobei Sie die Client-Bibliotheken aufnehmen, die von Ihrer Vorlage für adaptive Formulare verwendet werden.
 

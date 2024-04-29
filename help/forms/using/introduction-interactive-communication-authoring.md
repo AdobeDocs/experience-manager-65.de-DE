@@ -9,9 +9,9 @@ feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1318'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Die Benutzeroberfläche für das Erstellen von [interaktiver Kommunikation](/hel
 * WYSIWYG Drag-and-Drop-Dokumenteditor
 * Integriertes Repository für Assets – die Assets, die auf den Server hochgeladen und dort erstellt wurden, sind im Asset-Browser der Authoring-Oberfläche der interaktiven Kommunikation verfügbar.
 
-Wenn Sie [Erstellen oder Bearbeiten einer vorhandenen interaktiven Kommunikation](../../forms/using/create-interactive-communication.md)verwenden Sie die folgenden Elemente der Benutzeroberfläche:
+Wenn Sie eine [interaktive Kommunikation erstellen oder eine vorhandene bearbeiten](../../forms/using/create-interactive-communication.md), verwenden Sie die folgenden Elemente der Benutzeroberfläche:
 
 * [Seitenleiste](#sidebar)
 * [Seitensymbolleiste](#page-toolbar)
@@ -53,7 +53,8 @@ Mit dem Kanal-Browser können Sie zwischen Druck- und Internet-Kanal der interak
 
 * **Eigenschaften-Browser**
 
-  Hier können Sie die Eigenschaften einer Komponente bearbeiten. Die Eigenschaften sind je nach Komponente verschieden. Beispiel: Um die Eigenschaften des Dokumentcontainers anzuzeigen: Wählen Sie eine Komponente und dann ![Feldebene](assets/field-level.png) > **Dokumentcontainer** und wählen Sie ![cmppr](assets/cmppr.png).
+  Hier können Sie die Eigenschaften einer Komponente bearbeiten. Die Eigenschaften sind je nach Komponente verschieden. So zeigen Sie beispielsweise die Eigenschaften des Dokument-Containers an: 
+Wählen Sie eine Komponente, dann ![field-level](assets/field-level.png) > **Dokument-Container** und schließlich ![cmppr](assets/cmppr.png) aus.
 
 * **Assets-Browser** Trennt verschiedene Arten von Inhalten wie Layout-Fragmente, Bilder, Dokumente, Seiten, Videos. Der Autor kann Assets in die interaktive Kommunikation ziehen und ablegen.
 
@@ -61,7 +62,7 @@ Mit dem Kanal-Browser können Sie zwischen Druck- und Internet-Kanal der interak
 
 | **Komponente** | **Druckkanal** | **Web-Kanal** | **Funktionalität** |
 |---|---|---|---|
-| Diagramm | ✓ | ✓ | Fügt ein Diagramm hinzu, das Sie in einer interaktiven Kommunikation für die visuelle Darstellung zweidimensionaler Daten verwenden können, die aus einem Formulardatenmodellsammlungselement abgerufen werden. |
+| Diagramm | ✓ | ✓ | Fügt ein Diagramm hinzu, das Sie in interaktiver Kommunikation zur visuellen Darstellung von zweidimensionalen Daten verwenden können, die aus einem FDM-Sammlungselement abgerufen werden. |
 | Dokumentfragment | ✓ | ✓ | Ermöglicht Ihnen das Hinzufügen einer wiederverwendbaren Komponente, eines Textes, einer Liste oder einer Bedingung zu einer interaktiven Kommunikation. Die wiederverwendbare Komponente, die Sie einer interaktiven Kommunikation hinzufügen, kann entweder formulardatenmodellbasiert sein oder ohne ein Formulardatenmodell sein. |
 | Bild | ✓ | ✓ | Ermöglicht das Einfügen eines Bildes. |
 | Bedienfeld | - | ✓ | Die Bedienfeldkomponente ist ein Platzhalter zum Gruppieren anderer Komponenten und steuert, wie eine Gruppe von Komponenten in einer interaktiven Kommunikation angeordnet wird. Mit einer Bedienfeldkomponente können Sie auch eine Gruppe von Komponenten für die Endbenutzenden wiederholbar machen, z. B. in mehreren Einträgen, die zum Ausfüllen von Bildungsnachweisen erforderlich sind. Es ist sinnvoll, einen Bereich jeweils für eine Registerkarte einer interaktiven Kommunikation mit mehreren Registerkarten zu verwenden. |
@@ -79,14 +80,14 @@ Mit dem Kanal-Browser können Sie zwischen Druck- und Internet-Kanal der interak
 
 Die wichtigsten Punkte beim Arbeiten mit interaktiven Kommunikationskomponenten sind:
 
-* Jede Komponente verfügt über zugehörige Eigenschaften, die ihre Darstellung und Funktion steuern. Um die Eigenschaften einer Komponente zu konfigurieren, wählen Sie die Komponente aus und wählen Sie ![cmppr](assets/cmppr.png) , um die Komponenteneigenschaften im Eigenschaftenbrowser zu öffnen.
-* Eine Komponente wird mit ihrem Elementnamen identifiziert. Wenn Sie ![cmppr](assets/cmppr.png)können Sie den Namen der Komponente ändern, indem Sie den Wert des Felds Elementname im Eigenschaftenbrowser ändern. Das Feld „Elementname“ akzeptiert nur Buchstaben, Zahlen, Bindestriche (-) und Unterstriche (_). Andere Sonderzeichen sind nicht zulässig, und der Elementname sollte mit einem Buchstaben beginnen.
+* Jede Komponente verfügt über zugehörige Eigenschaften, die ihre Darstellung und Funktion steuern. Wählen Sie zum Konfigurieren der Eigenschaften einer Komponente erst die Komponente und dann ![cmppr](assets/cmppr.png), um die Komponenteneigenschaften im Eigenschaften-Browser zu öffnen.
+* Eine Komponente wird mit ihrem Elementnamen gekennzeichnet. Wenn Sie ![cmppr](assets/cmppr.png) auswählen, können Sie den Namen der Komponente ändern, indem Sie den Wert des Felds „Elementname“ im Eigenschaften-Browser ändern. Das Feld „Elementname“ akzeptiert nur Buchstaben, Zahlen, Bindestriche (-) und Unterstriche (_). Andere Sonderzeichen sind nicht zulässig, und der Elementname sollte mit einem Buchstaben beginnen.
 * Sie können die Titel-Eigenschaft einer Komponente einer interaktiven Kommunikation inline im Editor ändern, ohne den Eigenschaften-Browser zu öffnen, solange der Titel in der interaktiven Kommunikation sichtbar ist. Gehen Sie dazu wie folgt vor:
 
-   1. Wählen Sie diese Option, um eine Komponente auszuwählen, die über eine Eigenschaft &quot;Title&quot;verfügt und deren Eigenschaft &quot;Hide title&quot;deaktiviert ist.
-   1. Auswählen ![aem_6_3_edit](assets/aem_6_3_edit.png) um den Titel bearbeitbar zu machen.
+   1. Wählen Sie eine Komponente aus, in der die Eigenschaft „Titel“ vorhanden und deren Eigenschaft „Titel ausblenden“ deaktiviert ist.
+   1. Wählen Sie ![aem_6_3_edit](assets/aem_6_3_edit.png) aus, damit der Titel bearbeitet werden kann.
 
-   1. Ändern Sie den Titel und drücken Sie die Eingabetaste oder wählen Sie eine beliebige Stelle außerhalb der Komponente, um die Änderungen zu speichern. Drücken Sie die Esc-Taste, um die Änderungen zu verwerfen.
+   1. Ändern Sie den Titel und drücken Sie die Eingabetaste oder wählen Sie eine beliebige Stelle außerhalb der Komponente aus, um die Änderungen zu speichern. Drücken Sie die Esc-Taste, um die Änderungen zu verwerfen.
 
 ## Komponenten-Symbolleiste {#component-toolbar}
 
@@ -94,9 +95,9 @@ Die wichtigsten Punkte beim Arbeiten mit interaktiven Kommunikationskomponenten 
 
 Wenn Sie eine Komponente auswählen, wird eine Symbolleiste angezeigt, über die Sie mit ihr arbeiten können. Sie erhalten Optionen zum Ausschneiden, Einfügen, Verschieben und Angeben von Eigenschaften der Komponenten. Ihre Optionen sind:
 
-A.**Konfigurieren**: Wenn Sie **Konfigurieren**, sind die Komponenteneigenschaften in der Seitenleiste sichtbar.
+A. **Konfigurieren**: Wenn Sie **Konfigurieren** auswählen, werden in der Seitenleiste die Komponenteneigenschaften sichtbar.
 
-B.**Regeln bearbeiten**: Wenn Sie Regeln bearbeiten auswählen, wird der Regeleditor angezeigt, in dem Sie Regeln für die ausgewählte Komponente bearbeiten und erstellen können. Im Regeleditor können Sie auch andere Formularobjekte (Komponenten) auswählen und Regeln für diese Formularobjekte bearbeiten/erstellen.
+B. **Regeln bearbeiten**: Wenn Sie „Regeln bearbeiten“ auswählen, wird der Regeleditor angezeigt, in dem Sie Regeln für die ausgewählte Komponente bearbeiten und erstellen können. Im Regeleditor können Sie auch andere Formularobjekte (Komponenten) auswählen und Regeln für diese Formularobjekte bearbeiten/erstellen.
 
 C. **Kopieren**: Sie können die Kopieroption verwenden, um eine Komponente zu kopieren und an andere Positionen im Formular einzufügen.
 

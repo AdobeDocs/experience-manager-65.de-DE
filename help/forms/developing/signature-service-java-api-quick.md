@@ -9,9 +9,9 @@ role: Developer
 exl-id: 34069505-a6cf-4540-932b-604f81823178
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '868'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Der folgende Schnellstart für die Java-API (SOAP) ist für den AEM Forms-JEE-Si
 
 [Schnellstart (SOAP-Modus): Anwenden des Dokumentzeitstempels mithilfe der Java-API](#quick-start-soap-mode-apply-document-timestamp-using-the-java-api)
 
-AEM Forms JEE-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden und der Verbindungsmodus sollte auf SOAP festgelegt werden.
+AEM Forms-JEE-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 
 >[!NOTE]
 >

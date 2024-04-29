@@ -6,9 +6,9 @@ docset: aem65
 exl-id: 288d5459-bc69-4328-b6c9-4b4960bf4977
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2478'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -195,7 +195,7 @@ Aya beantwortet einige Fragen, um ihre Eignung zu bestätigen, indem sie ein kur
 
    >[!NOTE]
    >
-   >Wenn der Benutzer mehr als 200.000 USD pro Jahr verdient, sind diese nicht berechtigt.
+   >Wenn die Person mehr als 200.000 $ pro Jahr verdient, ist sie nicht berechtigt.
 
 1. Klicken Sie auf **Bin ich berechtigt?**.
 1. Klicken Sie auf **Jetzt anwenden**, um fortzufahren.
@@ -338,7 +338,7 @@ George genehmigt Ayas Antrag, und dank eines bestehenden automatisierten Workflo
 
 1. Navigieren Sie zur linken oberen Ecke und klicken Sie auf **Genehmigen**, um den Antrag zu genehmigen.
 1. In dem Modal können Sie eine Nachricht für den CX-Lead hinterlassen.
-1. Klicken Sie auf Fertig.
+1. Klicken Sie auf „Fertig“.
 1. (Bürgerrolle) Öffnen Sie Ihren E-Mail-Client, um die an Aya gesendete E-Mail anzuzeigen.
 
    ![Anzeigen der an Aya gesendeten E-Mail](/help/forms/using/assets/email_client.png)
@@ -387,7 +387,7 @@ George genehmigt Ayas Antrag, und dank eines bestehenden automatisierten Workflo
 
 1. Wenn Sie wieder in AEM sind, navigieren Sie zur linken oberen Ecke und klicken Sie auf **Absenden**, um den Antrag einzureichen.
 1. Im Modal können Sie eine Nachricht hinterlassen.
-1. Klicken Sie auf Fertig.
+1. Klicken Sie auf „Fertig“.
 
    ![Registerkarte Aktivitäten](/help/forms/using/assets/activities_tab.png) ![Neuen Kontakt bestätigen](/help/forms/using/assets/confirm_new_contact.png)
 

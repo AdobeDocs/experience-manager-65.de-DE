@@ -1,30 +1,30 @@
 ---
 title: Beispiel zur Integrierung der Komponente „Entwürfe und Sendungen“ in die Datenbank
-description: Referenzimplementierung von benutzerdefinierten Daten- und Metadatendiensten zur Integration der Komponente für Entwurf und Übermittlung in eine Datenbank.
+description: Referenzimplementierung von benutzerdefinierten Daten- und Metadatendiensten zur Integration der Komponente „Entwürfe und Sendungen“ in eine Datenbank.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1502'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
 # Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank {#sample-for-integrating-drafts-submissions-component-with-database}
 
-## Beispielübersicht {#sample-overview}
+## Überblick zum Beispiel {#sample-overview}
 
-Mit der Komponente für Entwurf und Übermittlung des AEM Forms-Portals können Benutzer ihre Formulare als Entwürfe speichern und später von jedem Gerät aus senden. Außerdem können Benutzer ihre gesendeten Formulare im Portal anzeigen. Um diese Funktion zu aktivieren, stellt AEM Forms Daten- und Metadatendienste bereit, mit denen die von einem Benutzer im Formular eingegebenen Daten sowie die mit Entwürfen und gesendeten Formularen verknüpften Formularmetadaten gespeichert werden können. Diese Daten werden standardmäßig im CRX-Repository gespeichert. Da Benutzer mit Formularen jedoch über AEM Veröffentlichungsinstanz interagieren, die sich im Allgemeinen außerhalb der Unternehmens-Firewall befindet, sollten Unternehmen die Datenspeicherung so anpassen, dass sie sicherer und zuverlässiger ist.
+Mit der Komponente „Entwürfe und Sendungen“ des AEM Forms-Portals können Benutzende ihre Formulare als Entwürfe speichern und zu einem späteren Zeitpunkt von jedem beliebigen Gerät senden. Zudem können die Benutzenden ihre übermittelten Formulare im Portal anzeigen. Um diese Funktion zu aktivieren, bietet AEM Forms Daten- und Metadatendienste an, um die von Benutzenden im Formular eingegebenen Daten sowie die mit Entwürfen und gesendeten Formularen verknüpften Metadaten zu speichern. Diese Daten werden standardmäßig im CRX-Repository gespeichert. Da die Benutzenden mit den Formularen jedoch über eine AEM-Veröffentlichunginstanz interagieren, die in der Regel außerhalb der Unternehmens-Firewall liegt, sollten Sie die Datenspeicherung so anpassen, dass sie sicherer und zuverlässiger ist.
 
-Das in diesem Dokument gezeigte Beispiel ist eine Referenzimplementierung von benutzerdefinierten Daten- und Metadatendiensten zur Integration der Komponente für Entwurf und Übermittlung in eine Datenbank. Die in der Beispielimplementierung verwendete Datenbank ist **MySQL 5.6.24**. Sie können die Komponente für Entwurf und Übermittlung jedoch in eine beliebige Datenbank Ihrer Wahl integrieren.
+Bei dem in diesem Dokument gezeigten Beispiel handelt es sich um eine Referenzimplementierung benutzerdefinierter Daten- und Metadatendienste zur Integration der Komponente „Entwürfe und Sendungen“ in eine Datenbank. In der Beispielimplementierung wird die Datenbank **MySQL 5.6.24** verwendet. Sie können die Komponente „Entwürfe und Sendungen“ jedoch in eine Datenbank Ihrer Wahl integrieren.
 
 >[!NOTE]
 >
->* Die in diesem Dokument erläuterten Beispiele und Konfigurationen entsprechen MySQL 5.6.24 und Sie müssen sie für Ihr Datenbanksystem entsprechend ersetzen.
->* Stellen Sie sicher, dass Sie die neueste Version des AEM Forms Add-On-Pakets installiert haben. Eine Liste der verfügbaren Packages finden Sie in der [AEM Forms-Versionen](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) Artikel.
+>* Die Beispiele und Konfigurationen in diesem Dokument entsprechen MySQL 5.6.24. Sie müssen sie für Ihr Datenbanksystem entsprechend anpassen.
+>* Stellen Sie sicher, dass Sie die neueste Version des AEM Forms-Add-On-Pakets installiert haben. Eine Liste der verfügbaren Pakete finden Sie im Artikel [AEM Forms-Versionen](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html).
 >* Das Beispielpaket funktioniert nur mit Übermittlungsaktionen für adaptive Formulare.
 
 ## Beispiel installieren und konfigurieren {#set-up-and-configure-the-sample}
@@ -33,7 +33,7 @@ Führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinst
 
 1. Laden Sie das folgende **aem-fp-db-integration-sample-pkg-6.1.2.zip**-Paket auf Ihr Dateisystem herunter.
 
-   Beispielpaket für die Datenbankintegration
+   Beispielpaket zur Datenbankintegration:
 
 [Datei laden](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
@@ -41,7 +41,7 @@ Führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinst
 1. Klicken Sie auf **[!UICONTROL Paket hochladen]**.
 
 1. Navigieren Sie zum Paket **aem-fp-db-integration-sample-pkg-6.1.2.zip**, wählen Sie es aus und klicken Sie auf **[!UICONTROL OK]**.
-1. Klicks **[!UICONTROL Installieren]** neben dem Paket klicken, um das Paket zu installieren.
+1. Klicken Sie neben dem Paket auf **[!UICONTROL Installieren]**, um das Paket zu installieren.
 1. Gehen Sie zur Seite **[!UICONTROL Konfiguration der AEM-Webkonsole]**
 unter https://[*host*]:[*port*]/system/console/configMgr.
 1. Klicken Sie, um die **[!UICONTROL Konfiguration des Forms Portals für Entwurf und Übermittlung]** im Bearbeitungsmodus zu öffnen.
@@ -72,11 +72,11 @@ unter https://[*host*]:[*port*]/system/console/configMgr.
 
    So geben Sie einen anderen Namen für die Metadatentabelle an:
 
-   * Suchen Sie in der Web-Konsolenkonfiguration nach der Beispielimplementierung des Forms Portal Metadata Service und klicken Sie darauf. Sie können die Werte der Datenquelle, Metadaten/zusätzlichen Metadatentabellennamen ändern.
+   * Klicken Sie auf der Seite zur Web-Konsolenkonfiguration auf die Beispielimplementierung des Formularportal-Metadatendienstes. Sie können die Werte der Datenquelle, Metadaten/zusätzlichen Metadatentabellennamen ändern.
 
    So geben Sie einen anderen Namen für die Datentabelle an:
 
-   * Suchen Sie in der Web Console-Konfiguration nach Forms Portal Data Service Sample Implementation (Beispielimplementierung des Datendienstes ) und klicken Sie darauf. Sie können die Werte der Datenquelle und des Datentabellennamens ändern.
+   * Klicken Sie auf der Seite zur Web-Konsolenkonfiguration auf die Beispielimplementierung des Formularportal-Datendienstes. Sie können die Werte der Datenquelle und Datentabellennamen ändern.
 
    >[!NOTE]
    >
@@ -85,7 +85,7 @@ unter https://[*host*]:[*port*]/system/console/configMgr.
 1. Belassen Sie die anderen Konfigurationen und klicken Sie auf **[!UICONTROL Speichern]**.
 
 1. Die Datenbankverbindung kann über die Apache Sling Connection Pooled Datenquelle erfolgen.
-1. Suchen Sie für die Apache Sling-Verbindung nach und klicken Sie auf , um zu öffnen. **[!UICONTROL Apache Sling Connection Pooled DataSource]** im Bearbeitungsmodus in der Web-Konsolenkonfiguration. Geben Sie die Werte für die Eigenschaften an, wie in der folgenden Tabelle beschrieben:
+1. Klicken Sie für die Apache Sling-Verbindung in der Konfiguration der Web-Konsole im Bearbeitungsmodus auf **[!UICONTROL Apache Sling Connection Pooled DataSource]**. Geben Sie die Werte für die Eigenschaften an, wie in der folgenden Tabelle beschrieben:
 
 <table>
  <tbody>
@@ -95,7 +95,7 @@ unter https://[*host*]:[*port*]/system/console/configMgr.
   </tr>
   <tr>
    <td>Datenquellenname</td>
-   <td><p>Ein Datenquellenname zum Filtern von Treibern aus dem Datenquellenpool</p> <p><strong>Hinweis: </strong><em>In der Beispielimplementierung wird FormsPortal als Datenquellenname verwendet.</em></p> </td>
+   <td><p>Ein Datenquellenname für das Filtern der Treiber aus dem Datenquellen-Pool</p> <p><strong>Hinweis: </strong><em>In der Beispielimplementierung wird „FormsPortal“ als Datenquellenname verwendet.</em></p> </td>
   </tr>
   <tr>
    <td>JDBC-Treiberklasse</td>
@@ -158,18 +158,18 @@ unter https://[*host*]:[*port*]/system/console/configMgr.
 
 >[!NOTE]
 >
->* Der JDBC-Treiber für MySQL wird nicht mit dem Beispiel geliefert. Stellen Sie sicher, dass Sie ihn bereitgestellt haben, und geben Sie die erforderlichen Informationen zum Konfigurieren des JDBC-Verbindungspools an.
->* Weisen Sie Ihre Autoren- und Veröffentlichungsinstanzen auf die Verwendung derselben Datenbank zu. Der Wert des URI-Felds für die JDBC-Verbindung muss für alle Autoren- und Veröffentlichungsinstanzen identisch sein.
+>* Der JDBC-Treiber für MySQL wird nicht mit dem Beispiel geliefert.  Stellen Sie sicher, dass Sie ihn bereitgestellt haben, und geben Sie die erforderlichen Informationen ein, um den JDBC-Verbindungs-Pool zu konfigurieren.
+>* Lassen Sie Ihre Autoren- und Veröffentlichungsinstanzen auf dieselbe Datenbank verweisen.  Der Wert des URI-Feldes für die JDBC-Verbindung muss für alle Autoren- und Veröffentlichungsinstanzen gleich sein.
 
 1. Belassen Sie die anderen Konfigurationen und klicken Sie auf **[!UICONTROL Speichern]**.
 
-1. Wenn Sie bereits eine Tabelle im Datenbankschema haben, fahren Sie mit dem nächsten Schritt fort.
+1. Wenn bereits eine Tabelle im Datenbankschema vorhanden ist, fahren Sie mit dem nächsten Schritt fort.
 
-   Wenn im Datenbankschema noch keine Tabelle vorhanden ist, führen Sie andernfalls die folgenden SQL-Anweisungen aus, um separate Tabellen für Daten, Metadaten und zusätzliche Metadaten im Datenbankschema zu erstellen:
+   Wenn Sie noch keine Tabelle im Datenbankschema haben, führen Sie die folgenden SQL-Anweisungen aus, um separate Tabellen für Daten, Metadaten und weitere Metadaten im Datenbankschema zu erstellen:
 
    >[!NOTE]
    >
-   >Sie benötigen keine anderen Datenbanken für Autoren- und Veröffentlichungsinstanzen. Verwenden Sie dieselbe Datenbank für alle Autor- und Veröffentlichungsinstanzen. 
+   >Sie benötigen nicht verschiedene Datenbanken für Autoren- und Veröffentlichungsinstanzen. Verwenden Sie dieselbe Datenbank für alle Autor- und Veröffentlichungsinstanzen. 
 
    **SQL-Anweisung für Datentabelle**
 
@@ -246,15 +246,15 @@ unter https://[*host*]:[*port*]/system/console/configMgr.
    `time` varchar(255) DEFAULT NULL);
    ```
 
-1. Wenn Sie bereits über die Tabellen (Daten, Metadaten und additionalmetadatatable) im Datenbankschema verfügen, führen Sie die folgenden Tabellen-Abfragen aus:
+1. Wenn die Tabellen („data“, „metadata“ und „additionalmetadatatable“) bereits im Datenbankschema vorhanden sind, führen Sie folgende Abfragen zum Ändern von Tabellen aus:
 
-   **SQL-Anweisung zum Ändern der Datentabelle**
+   **SQL-Anweisung zum Ändern der Tabelle „data“**
 
    ```sql
    ALTER TABLE `data` CHANGE `owner` `owner` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
    ```
 
-   **SQL-Anweisung zum Ändern der Metadatentabelle**
+   **SQL-Anweisung zum Ändern der Tabelle „metadata“**
 
    ```sql
    ALTER TABLE metadata add markedForDeletion varchar(45) DEFAULT NULL
@@ -289,13 +289,13 @@ unter https://[*host*]:[*port*]/system/console/configMgr.
    CHANGE `xdpRef` `xdpRef` VARCHAR(1000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
    ```
 
-   **SQL-Anweisung zum Ändern der Tabelle additionalmetadatatable**
+   **SQL-Anweisung zum Ändern der Tabelle „additionalmetadatatable“**
 
    ```sql
    ALTER TABLE `additionalmetadatatable` CHANGE `value` `value` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, CHANGE `key` `key` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
    ```
 
-Die Beispielimplementierung ist jetzt konfiguriert. Sie können sie verwenden, um Ihre Entwürfe und Übermittlungen aufzulisten und dabei alle Daten und Metadaten in einer Datenbank zu speichern. Sehen wir uns nun an, wie Daten- und Metadatendienste im Beispiel konfiguriert werden.
+Die Beispielimplementierung ist jetzt konfiguriert. Sie können sie verwenden, um Ihre Entwürfe und Sendungen aufzulisten, während Sie alle Daten und Metadaten in einer Datenbank speichern. Als Nächstes geht es darum, wie im Beispiel die Daten- und Metadatendienste konfiguriert werden.
 
 ## Installieren der Datei mysql-connector-java-5.1.39-bin.jar {#install-mysql-connector-java-bin-jar-file}
 
@@ -313,7 +313,7 @@ Führen Sie die folgenden Schritte auf allen Autoren- und Veröffentlichungsinst
 
 >[!NOTE]
 >
-> Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mithilfe alternativer Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+> Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 ## Beispielcode für Formularportaldaten und Metadatendienst {#sample-code-for-forms-portal-data-and-metadata-service}
 
@@ -321,14 +321,14 @@ Die folgende Zip enthält`FormsPortalSampleDataServiceImpl` und`FormsPortalSampl
 
 [Datei laden](assets/sample_package.zip)
 
-## Länge des Dateinamens überprüfen  {#verify-length-of-the-file-name}
+## Überprüfen der Länge des Dateinamens  {#verify-length-of-the-file-name}
 
-Die Datenbankimplementierung von Forms Portal verwendet eine zusätzliche Metadatentabelle. Die Tabelle verfügt über einen zusammengesetzten Primärschlüssel, der auf den Spalten Schlüssel und ID der Tabelle basiert. MySQL ermöglicht Primärschlüssel mit einer Länge von bis zu 255 Zeichen. Sie können das folgende clientseitige Überprüfungsskript verwenden, um die Länge des Dateinamens zu überprüfen, der an das Datei-Widget angehängt ist. Die Validierung wird ausgeführt, wenn eine Datei angehängt wird. Das im folgenden Verfahren bereitgestellte Skript zeigt eine Meldung an, wenn der Dateiname größer als 150 ist (einschließlich Erweiterung). Sie können das Skript modifizieren, um es auf eine andere Anzahl von Zeichen zu überprüfen. 
+Die Datenbankimplementierung des Formularportals verwendet eine zusätzliche Metadatentabelle. Die Tabelle hat einen zusammengesetzten Primärschlüssel, der auf den Schlüssel- und ID-Spalten der Tabelle basiert. MySQL ermöglicht Primärschlüssel bis zu einer Länge von 255 Zeichen. Sie können das folgende Client-seitige Validierungsskript verwenden, um die Länge des Dateinamens zu überprüfen, der an das Datei-Widget angehängt ist. Die Überprüfung wird ausgeführt, wenn eine Datei angehängt ist. Das Skript, das im folgenden Verfahren bereitgestellt wird, zeigt eine Meldung an, wenn der Dateiname (einschließlich Erweiterung) mehr als 150 Zeichen hat. Sie können das Skript modifizieren, um es auf eine andere Anzahl von Zeichen zu überprüfen. 
 
-Führen Sie die folgenden Schritte aus, um [eine Client-Bibliothek](/help/sites-developing/clientlibs.md) und verwenden Sie das Skript:
+Führen Sie die folgenden Schritte aus, um eine [Client-Bibliothek](/help/sites-developing/clientlibs.md) zu erstellen und das Skript zu verwenden:
 
-1. Melden Sie sich bei CRXDE an und navigieren Sie zu /etc/clientlibs/
-1. Erstellen Sie einen Knoten des Typs **cq:ClientLibraryFolder** und geben Sie den Namen des Knotens an. Beispiel: `validation`.
+1. Melden Sie sich bei CRXDE an und navigieren Sie zu „/etc/clientlibs/“.
+1. Erstellen Sie einen Knoten vom Typ **cq:ClientLibraryFolder** und geben Sie einen Knotennamen an. Beispiel: `validation`.
 
    Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
@@ -398,7 +398,7 @@ Führen Sie die folgenden Schritte aus, um [eine Client-Bibliothek](/help/sites-
 
    >[!NOTE]
    >
-   >Das Skript ist für die vordefinierte Anhang-Widget-Komponente bestimmt. Wenn Sie das vordefinierte Anhang-Widget angepasst haben, ändern Sie das obige Skript, um die entsprechenden Änderungen zu übernehmen.
+   >Das Skript ist für eine vorkonfigurierte Anlagen-Widget-Komponente. Wenn Sie das vorkonfigurierte Anlagen-Widget angepasst haben, ändern Sie das obige Skript, um entsprechende Änderungen zu implementieren.
 
 1. Fügen Sie dem in Schritt 2 erstellten Ordner die folgende Eigenschaft hinzu und klicken Sie auf **[!UICONTROL Alle speichern]**.
 

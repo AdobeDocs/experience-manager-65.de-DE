@@ -8,9 +8,9 @@ feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6188'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -250,7 +250,7 @@ Anweisungen zum Zugriff auf diese Einstellung finden Sie unter [Erstellen oder B
 
    * Wählen Sie bei Bedarf einen anderen Schriftartenordner aus dem Dropdown-Menü **Schriftquelle**. In diesem Dropdown-Menü werden die Schriftartenordner aufgelistet, die in **Startseite > Einstellungen > Core-System > Core-Konfigurationen** angegeben wurden.
    * Wählen Sie eine oder mehrere Schriftarten aus der Liste **Verfügbare Schriftarten** und klicken Sie auf **Hinzufügen**. Diese Schriftarten werden der Liste **Einbettung für folgende Schriftarten aufheben** hinzugefügt.
-   * Wenn Sie die Einbettung für einige Schriftarten aufheben möchten, die nicht auf dem Forms-Server vorhanden sind, geben Sie die Namen dieser Schriftarten in die **Einbettung für Schriftarten aufheben** ankreuzen. Klicken Sie auf **Hinzufügen**.
+   * Wenn Sie die Einbettung für einige Schriftarten aufheben möchten, die auf dem Formular-Server nicht vorhanden sind, geben Sie die Namen dieser Schriftarten in das Feld **Schriftarten für die Aufhebung der Einbettung hinzufügen** ein. Klicken Sie auf **Hinzufügen**.
 
    >[!NOTE]
    >
@@ -294,7 +294,7 @@ Wählen Sie **Transparenz**, um die Transparenzeinstellungen beim Optimieren von
 >
 >Die Auflösung für Verlauf und Gitter sollte im Allgemeinen auf 150 bis 300 ppi eingestellt werden, da sich die Qualität von Verläufen, Schlagschatten und weichen Kanten mit höheren Auflösungen nicht verbessert. Hingegen wird durch höhere Auflösungen die Druckzeit verlängert und die Datei unnötig vergrößert.
 
-**Text in Pfade konvertieren**: Wandelt alle Textobjekte (Punkttext, Flächentext und Pfadtext) in Pfade um und ignoriert alle Textglyphen-Informationen auf Seiten mit Transparenz. Mit dieser Option wird sichergestellt, dass die Breite des Textes während der Reduzierung konsistent bleibt. Beachten Sie, dass die Aktivierung dieser Option dazu führt, dass kleine Schriften etwas dicker erscheinen, wenn sie in Acrobat angezeigt oder auf Desktop-Druckern mit niedriger Auflösung gedruckt werden. Die Qualität des auf Druckern oder Bildträgern mit hoher Auflösung gedruckten Typs wird dadurch nicht beeinträchtigt.
+**Text in Pfade konvertieren**: Wandelt alle Textobjekte (Punkttext, Flächentext und Pfadtext) in Pfade um und ignoriert alle Textglyphen-Informationen auf Seiten mit Transparenz. Mit dieser Option wird sichergestellt, dass die Breite des Textes während der Reduzierung konsistent bleibt. Beachten Sie, dass die Aktivierung dieser Option dazu führt, dass kleine Schriften etwas dicker erscheinen, wenn sie in Acrobat angezeigt oder auf Desktop-Druckern mit niedriger Auflösung gedruckt werden. Sie hat keinen Einfluss auf die Textqualität, wenn die Datei auf Druckern mit hoher Auflösung oder Belichtern gedruckt wird.
 
 **Konturen in Pfade konvertieren** Wandelt auf Seiten mit Transparenz alle Konturen in einfache ausgefüllte Pfade um. Mit dieser Option wird sichergestellt, dass die Breite von Konturen beim Reduzieren unverändert bleibt. Beachten Sie, dass dünne Konturen geringfügig dicker angezeigt werden und die Leistung des Reduzierens beeinträchtigen werden könnte, wenn Sie diese Option aktivieren.
 

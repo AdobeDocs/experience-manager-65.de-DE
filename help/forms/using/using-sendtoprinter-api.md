@@ -1,6 +1,6 @@
 ---
 title: Verwenden der SendToPrinter-API
-description: Verwenden des sendToPrinter-Dienstes zum Senden eines Dokuments an den Drucker.
+description: Verwenden des sendToPrinter-Dienstes zum Senden eines Dokuments an den Drucker
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
@@ -8,9 +8,9 @@ feature: Document Services
 exl-id: 585d4053-1056-4d2b-a9df-9516775afe50
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '364'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -34,12 +34,12 @@ Sie können in AEM Forms den sendToPrinter-Dienst verwenden, um ein Dokument an 
 
 ## Verwenden des SendToPrinter-Dienstes {#using-sendtoprinter-service}
 
-In der folgenden Tabelle ist aufgeführt:
+In der folgenden Tabelle wird Folgendes aufgeführt:
 
-* Informationen zu printerName oder printServer, die für verschiedene Protokolle verwendet werden sollen.
-* Wert oder Ausnahme, die ein Drucker für verschiedene Kombinationen von Drucker-Server-URI und Name des Druckers zurückgibt
+* Informationen zu printerName oder printServer, die für verschiedene Protokolle verwendet werden können
+* Wert oder Ausnahme, die ein Drucker für verschiedene Kombinationen von Drucker-Server-URI und Druckername zurückgibt
 
-| Protokoll (Zugriffsmechanismus) | Druckserver-URI (PrinterSpec.printServer) | Name des Druckers (PrinterSpec.printerName) | Ergebnis |
+| Protokoll (Zugriffsmechanismus) | Drucker-Server-URI (PrinterSpec.printServer) | Druckername (PrinterSpec.printerName) | Ergebnis |
 |--- |--- |--- |--- |
 | SharedPrinter | Alle | Leer | Ausnahme: Das erforderliche Argument sPrinterName darf nicht leer sein. |
 | SharedPrinter | Alle | Ungültig | Ausnahmefehler, der besagt, dass der Drucker nicht gefunden werden kann. |
@@ -56,12 +56,12 @@ In der folgenden Tabelle ist aufgeführt:
 | DirectIP | Ungültig | Alle | Ausnahmefehler, der besagt, dass der Drucker nicht gefunden werden kann. |
 | DirectIP | Valid | Alle | Erfolgreicher Druckauftrag. |
 | CIFS | Valid | Leer | Erfolgreicher Druckauftrag. |
-| CIFS | Ungültig | Alle | unbekannter Fehler beim Drucken mit CIF. |
+| CIFS | Ungültig | Alle | Ein unbekannter Fehler beim Drucken mit CIFS. |
 | CIFS | Leer | Alle | ein Ausnahmefehler, der besagt, dass das erforderliche sPrintServerUri-Argument nicht leer sein darf. |
 
 ## Authentifizierungsunterstützung {#authentication-support}
 
-Authentifizierung wird nur für CIF Drucken unterstützt. Geben Sie zur Authentifizierung in PrinterSpec Benutzername/Kennwort/Domain ein. Sie können ein Kennwort mit AEM Granite CyprtoSupport Service verschlüsseln, indem Sie die folgenden Schritte ausführen:
+Authentifizierung wird nur für CIFS-Druck unterstützt. Geben Sie zur Authentifizierung in PrinterSpec Benutzername/Kennwort/Domain ein. Sie können ein Kennwort mit AEM Granite CyprtoSupport Service verschlüsseln, indem Sie die folgenden Schritte ausführen:
 
 1. Wechseln Sie zu https://&lt;server>:&lt;port>/system/console.
 

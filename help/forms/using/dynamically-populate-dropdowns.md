@@ -1,6 +1,6 @@
 ---
 title: Dynamisches Füllen von Dropdownlisten
-description: Verfahren zum dynamischen Füllen von Dropdownlisten basierend auf einer Logik
+description: Verfahren zum dynamischen Füllen von Dropdown-Listen basierend auf einer Logik
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
@@ -8,9 +8,9 @@ docset: aem65
 exl-id: 64b88423-aaae-4258-bf48-73df5c9353ea
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '328'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -147,7 +147,7 @@ Gehen Sie von einem Szenario aus, in dem Sie die Dropdownliste **Bundesland** ba
 
    ![Erstellen eines Dropdown-Knotens](assets/dropdown-node.png)
 
-1. Komprimieren Sie den Inhaltsknoten und betten Sie die JAR-Datei an einem bestimmten Speicherort ein (z. B. /apps/myfolder/demo/install/). Stellen Sie dieselbe Datei auf dem Server bereit.
+1. Komprimieren Sie den Inhaltsknoten und betten Sie die JAR-Datei an einem bestimmten Speicherort ein (z. B. „/apps/myfolder/demo/install/“). Stellen Sie dieselbe Datei auf dem Server bereit.
 1. Erstellen Sie ein adaptives Formular und fügen Sie zwei Dropdownlisten, „Land“ und „Bundesland“, hinzu. Die Liste „Land“ kann die Namen von Ländern enthalten. Die Liste „Bundesland“ kann dynamisch die Namen der Bundesländer für das in der ersten Liste ausgewählte Land einfügen.
 
    Fügen Sie die Namen der Länder hinzu, die Sie in der Liste „Land“ anzeigen möchten. Fügen Sie in der Liste „Bundesland“ ein Skript hinzu, mit dem sie basierend auf dem in der Liste „Land“ gewählten Land ausgefüllt wird.

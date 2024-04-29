@@ -11,9 +11,9 @@ feature: Forms Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '595'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
-> Die 64-Bit-Version des Designers wurde mit AEM 6.5 Forms Service Pack 19 (6.5.19.0) eingeführt.
+> Die 64-Bit-Version von Designer wurde mit AEM 6.5 Forms Service Pack 19 (6.5.19.0) eingeführt. 
 
 
 
@@ -50,7 +50,7 @@ Designer ist als eigenständiges Installationsprogramm sowie als Teil von WorkBe
 
    >[!NOTE]
    > 
-   >* Die 32-Bit-Version von Forms Designer wird voraussichtlich ab AEM 6.5 Forms Service Packs 20 (6.5.20.0) nicht mehr unterstützt. Adobe empfiehlt ein Upgrade auf Forms Designer 64-Bit.
+   >* Die 32-Bit-Version von Forms Designer wird voraussichtlich ab AEM 6.5 Forms Service Packs 20 (6.5.20.0) nicht mehr unterstützt. Adobe empfiehlt ein Upgrade auf die 64-Bit-Version von Forms Designer.
    >* Die 64-Bit-Version von Forms Designer ist nur für AEM 6.5 Forms Service Packs 19 (6.5.19.0) oder höher verfügbar.
    >* Ab Adobe Experience Manager 6.5 Forms Service Pack 15 (6.5.15.0) umfasst die Version von Forms Designer auch die Version des Service Packs. Beispielsweise ist 6.5.15.20221112.1.0 die Versionsnummer für Service Pack 15. Hier ist 6.5.15 die Version des Service Packs.
 

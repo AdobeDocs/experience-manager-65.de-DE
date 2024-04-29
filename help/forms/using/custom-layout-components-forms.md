@@ -1,6 +1,6 @@
 ---
 title: Erstellen benutzerdefinierter Layout-Komponenten für adaptive Formulare
-description: Verfahren zum Erstellen benutzerdefinierter Layoutkomponenten für adaptive Formulare.
+description: Verfahren zum Erstellen benutzerdefinierter Layout-Komponenten für adaptive Formulare.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
@@ -8,9 +8,9 @@ docset: aem65
 exl-id: 544b06f9-2456-4c05-88c2-b5349947742d
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '270'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 75%
 
 ## Voraussetzung {#prerequisite}
 
-Wissen bezüglich Layouts, das für das Erstellen/Verwenden benutzerdefinierter Layouts nötig ist. Siehe [Ändern des Bedienfeldlayouts](../../forms/using/layout-capabilities-adaptive-forms.md).
+Wissen bezüglich Layouts, das für das Erstellen/Verwenden benutzerdefinierter Layouts nötig ist. Siehe [Ändern des Bedienfeld-Layouts](../../forms/using/layout-capabilities-adaptive-forms.md).
 
-## Komponente für Bedienfeldlayout für adaptive Formulare {#adaptive-form-panel-layout-component}
+## Komponente für das Bedienfeld-Layout für adaptive Formulare {#adaptive-form-panel-layout-component}
 
-Die Komponente für das Bedienfeldlayout für adaptive Formulare steuert, wie adaptive Formularkomponenten in einem Bedienfeld im Verhältnis zur Benutzeroberfläche angeordnet werden.
+Mit der Komponente für das Bedienfeld-Layout für adaptive Formulare wird gesteuert, wie die Komponenten des adaptiven Formulars in einem Bedienfeld im Verhältnis zur Benutzeroberfläche angelegt werden.
 
-## Benutzerdefiniertes Bedienfeldlayout erstellen {#creating-a-custom-panel-layout}
+## Erstellen eines benutzerdefinierten Bedienfeld-Layouts {#creating-a-custom-panel-layout}
 
 1. Navigieren Sie zum Speicherort `/crx/de`.
 1. Kopieren Sie ein Bedienfeld-Layout vom Speicherort `/libs/fd/af/layouts/panel` (zum Beispiel `tabbedPanelLayout`) nach `/apps` (zum Beispiel `/apps/af-custom-layout`).
@@ -198,7 +198,7 @@ qtip
    </div>
    ```
 
-1. Öffnen Sie ein adaptives Formular im Bearbeitungsmodus. Das Bedienfeldlayout, das Sie definiert haben, wird der Liste zum Konfigurieren von Bedienfeldlayouts hinzugefügt.
+1. Öffnen Sie ein adaptives Formular im Bearbeitungsmodus. Das Bedienfeld-Layout, das Sie definiert haben, wird der Liste zur Konfiguration der Bedienfeld-Layouts hinzugefügt.
 
    ![Benutzerdefiniertes Bedienfeld-Layout wird in der Liste der Bedienfeld-Layouts angezeigt](assets/auth-layt.png) ![Screenshot des adaptiven Formulars mit benutzerdefiniertem Bedienfeld-Layout](assets/s1.png) ![Screenshot zur Demonstration der Umschaltfunktion des benutzerdefinierten Layouts](assets/s2.png)
 

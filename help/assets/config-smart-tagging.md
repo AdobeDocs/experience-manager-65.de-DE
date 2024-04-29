@@ -7,15 +7,15 @@ feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2227'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # Vorbereiten von [!DNL Assets] für Smart-Tagging {#configure-asset-tagging-using-the-smart-content-service}
 
-Bevor Sie mit dem Tagging Ihrer Assets mit Smart Content Services beginnen können, integrieren Sie [!DNL Experience Manager Assets] mit Adobe Developer Console zur Verwendung des Smart-Service von [!DNL Adobe Sensei]. Nach der Konfiguration trainieren Sie den Service mit einigen Bildern und einem Tag.
+Bevor Sie mit dem Tagging Ihrer Assets per Smart Content Services beginnen können, integrieren Sie [!DNL Experience Manager Assets] in die Adobe Developer Console, um den Smart-Service von [!DNL Adobe Sensei] zu nutzen. Trainieren Sie nach der Konfiguration den Service mit einigen Bildern und einem Tag.
 
 >[!NOTE]
 >

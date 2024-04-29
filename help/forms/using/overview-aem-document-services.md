@@ -1,6 +1,6 @@
 ---
 title: Übersicht über AEM-Dokumentendienste
-description: AEM Document Services sind eine Reihe von OSGi-Diensten zum Erstellen, Zusammenstellen und Sichern von PDF-Dokumenten.
+description: Bei den AEM-Dokumentendiensten handelt es sich um eine Reihe von OSGi-Diensten zum Erstellen, Zusammenstellen und Sichern von PDF-Dokumenten.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
@@ -9,9 +9,9 @@ feature: Document Services
 exl-id: 4c8a3877-1a3c-410d-ad1f-69c73ba4fcc1
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1413'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
 
@@ -23,49 +23,49 @@ ht-degree: 36%
 | AEM 6.5 | Dieser Artikel |
 
 
-AEM Document Services sind eine Reihe von OSGi-Diensten zum Erstellen, Zusammenstellen und Sichern von PDF-Dokumenten. Document Services enthält die folgenden Dienste:
+Bei den AEM-Dokumentendiensten handelt es sich um eine Reihe von OSGi-Diensten zum Erstellen, Zusammenstellen und Sichern von PDF-Dokumenten. Document Services enthält die folgenden Dienste:
 
 ## Ausgabe-Service {#output-service}
 
-Mit dem Output-Dienst können Sie Dokumente in verschiedenen Formaten erstellen, darunter PDF, Laserdruckerformate und Beschriftungsdruckerformate. Laser-Druckerformate sind PostScript und Printer Control Language (PCL). In der folgenden Liste sind die Beschriftungsdruckerformate aufgeführt:
+Der Output-Dienst ermöglicht das Erstellen von Dokumenten in verschiedenen Formaten, einschließlich PDF, Laser-Druckerformaten und Etikettendruckerformaten. Laser-Druckerformate sind PostScript und Printer Control Language (PCL). In der nachfolgenden Liste sind Etikettendruckerformate aufgeführt:
 
 * Zebra (ZPL)
 * Intermec (IPL)
 * Datamax (DPL)
 * TecToshiba (TPCL)
 
-Ein Dokument kann an einen Netzwerkdrucker, einen lokalen Drucker oder eine Datei im Dateisystem gesendet werden. Der Output-Dienst führt XML-Formulardaten mit einem Formularentwurf zusammen, um ein Dokument zu generieren. Der Output-Dienst kann ein Dokument generieren, ohne XML-Formulardaten in das Dokument zusammenzuführen. Der primäre Workflow besteht jedoch darin, Daten in dem Dokument zusammenzuführen.
+Ein Dokument kann auf einen Netzwerkdrucker, einen lokalen Drucker oder in eine Datei im Dateisystem übertragen werden. Der Output-Dienst führt XML-Formulardaten mit einem Formularentwurf zusammen, um ein Dokument zu erstellen. Der Output-Dienst kann Dokumente generieren, ohne XML-Formulardaten im Dokument zusammenzuführen. Der primäre Workflow besteht jedoch darin, Daten in dem Dokument zusammenzuführen.
 
 >[!NOTE]
 >
->Ein Formularentwurf wird normalerweise mit Designer erstellt. Informationen zum Erstellen von Formularentwürfen für den Output-Dienst finden Sie in der Designer-Hilfe.
+>Ein Formularentwurf wird in der Regel mithilfe von Designer erstellt. Informationen zum Erstellen von Formularentwürfen für den Output-Dienst finden Sie in der Designer-Hilfe.
 
-Bei Verwendung des Output-Dienstes zum Zusammenführen von XML-Daten mit einem Formularentwurf ist das Ergebnis ein nicht interaktives PDF-Dokument. Bei einem nicht interaktiven PDF-Dokument können Benutzer keine Daten in die Felder eingeben. Im Gegensatz dazu können Sie mit dem Forms-Dienst ein interaktives PDF-Formular erstellen, mit dem Benutzer Daten in die Felder eingeben können.
+Wenn Sie den Output-Dienst zum Zusammenführen von XML-Daten mit einem Formularentwurf verwenden, ist das Ergebnis ein nicht interaktives PDF-Dokument. Bei einem nicht interaktiven PDF-Dokument können Benutzer keine Daten in die Felder eingeben. Dagegen können Sie den Forms-Dienst verwenden, um ein interaktives PDF-Formular zu erstellen, mit dem Benutzende Daten in die Felder eingeben können.
 
-Die folgenden vier Output-Dienstvorgänge stehen zur Verwendung zur Verfügung:
+Die folgenden vier Output-Dienstvorgänge stehen zur Verfügung:
 
-* **generatePDFOuput**: Führt einen Formularentwurf mit Daten zusammen, um ein PDF-Dokument zu generieren
+* **generatePDFOuput**: Führt einen Formularentwurf mit Daten zusammen, um ein PDF-Dokument zu erstellen.
 * **generatePrintedOutput**: Führt einen Formularentwurf mit Formulardaten zusammen, um ein Dokument zu erstellen, das entweder an einer Laserdrucker oder einen Beschriftungsnetzwerkdrucker gesendet werden soll.
 
-* **generatePDFOutputBatch**: Führt mehrere Vorlagen mit mehreren Datensätzen in einem einzigen Aufruf zusammen, um einen Stapel von PDF-Dateien zu generieren. Es gibt auch die Möglichkeit, eine einzelne PDF zu generieren, indem alle PDF kombiniert werden
+* **generatePDFOutputBatch**: Führt mehrere Vorlagen mit mehreren Datensätzen in einem einzigen Aufruf zusammen, um einen Batch PDF-Dateien zu generieren. Es gibt auch eine Option zum Generieren einer einzigen PDF durch Kombinieren aller PDFs.
 * **generatePrintedOutputBatch**: Führt mehrere Vorlagen mit mehreren Dateneinträgen in einem einzigen Aufruf zusammen, um einen Stapel gedruckter Dokumente (PS, PCL, ZPL, DPL, IPL, TPCL) zu erzeugen. Es gibt auch eine Option zum Generieren eines einzigen Druckdokuments.
 
 ## Assembler-Service {#assembler-service}
 
-Mit dem Assembler-Dienst können Sie PDF- und XDP-Dokumente kombinieren, neu anordnen und erweitern und Informationen über PDF-Dokumente abrufen. Jeder Auftrag, der an den Assembler-Dienst gesendet wird, umfasst ein DDX-Dokument (Document Description XML), Quelldokumente und externe Ressourcen (Zeichenfolgen und Grafiken). Das DDX-Dokument enthält Anweisungen zur Verwendung der Quelldokumente zum Erstellen eines Satzes von Zieldokumenten.
+Mit dem Assembler-Dienst können Sie PDF- und XDP-Dokumente kombinieren, neu anordnen und erweitern sowie Informationen zu PDF-Dokumenten erhalten. Jeder an den Assembler-Dienst übermittelte Auftrag umfasst ein DDX-Dokument (Document Description XML), Quelldokumente und externe Ressourcen (Zeichenfolgen und Grafiken). Das DDX-Dokument enthält Anweisungen dazu, wie die Quelldokumente zum Erstellen eines Satzes von Zieldokumenten verwendet werden.
 
-Neben den oben genannten Funktionen gilt für den Assembler-Dienst Folgendes:
+Neben den oben genannten stehen beim Assembler-Dienst die folgenden Funktionen zur Verfügung:
 
-* Konvertiert PDF-Dokumente in den PDF/A-Standard.
+* Der Dienst wandelt PDF-Dokumente in den PDF/A-Standard um.
 * Der Dienst wandelt PDF-Formulare, in Designer erstellte XML-Formulare und in Acrobat erstellte PDF-Formulare in PDF/A-1b, PDF/A-2b und PDFA/A-3b um.
 * Der Dienst konvertiert signierte und nicht signierte PDF-Dokumente (Digital Signatures erforderlich).
-* Validiert die Konformität einer PDF/A-Datei und konvertiert sie bei Bedarf.
+* Der Dienst überprüft die Kompatibilität von PDF/A-Dateien und wandelt diese bei Bedarf um.
 
-### Über DDX {#about-ddx}
+### Informationen zu DDX {#about-ddx}
 
-Verwenden Sie bei Verwendung des Assembler-Dienstes eine XML-basierte Sprache namens Document Description XML (DDX), um die gewünschte Ausgabe zu definieren. DDX ist eine deklarative Markup-Sprache, deren Elemente Bausteine von Dokumenten darstellen. Diese Bausteine umfassen PDF-Dokumente, XDP-Dokumente, XDP-Formularfragmente und andere Elemente wie Kommentare, Lesezeichen und formatierten Text.
+Verwenden Sie bei Nutzung des Assembler-Dienstes eine XML-basierte Sprache namens „Document Description XML“ (DDX), um die gewünschte Ausgabe zu definieren. DDX ist eine deklarative Markup-Sprache, deren Elemente Dokumentbausteine darstellen. Diese Bausteine umfassen PDF-Dokumente, XDP-Dokumente, XDP-Formularfragmente sowie andere Elemente wie Kommentare, Lesezeichen und formatierten Text.
 
-DDX-Dokument kann Zieldokumente mit folgenden Eigenschaften angeben:
+DDX-Dokumente können Zieldokumente mit folgenden Eigenschaften angeben:
 
 * Ein PDF-Dokument, das aus mehreren PDF-Dokumenten assembliert ist.
 * Mehrere PDF-Dokumente, die von einem einzelnen PDF-Dokument aufgeteilt wurden.
@@ -73,14 +73,14 @@ DDX-Dokument kann Zieldokumente mit folgenden Eigenschaften angeben:
 * Ein XDP-Dokument, das aus mehreren XDP-Dokumenten assembliert ist.
 * Ein XDP-Dokument, das XML-Fragmente enthält, die dynamisch in ein XDP-Dokument eingefügt wurden.
 * Ein PDF-Dokument, das ein XDP-Dokument packt.
-* XML-Dateien, die über die Merkmale eines PDF-Dokuments berichten. Zu den gemeldeten Eigenschaften gehören Text, Kommentare, Formulardaten, Dateianlagen, in PDF-Portfolios verwendete Dateien, Lesezeichen und PDF-Eigenschaften. Zu den PDF-Eigenschaften gehören Formulareigenschaften, Seitendrehung und Dokumentautor.
+* XML-Dateien, die die die Eigenschaften eines PDF-Dokuments melden. Zu den gemeldeten Eigenschaften gehören Text, Kommentare, Formulardaten, Dateianlagen, in PDF-Portfolios verwendete Dateien, Lesezeichen und PDF-Eigenschaften. Zu den PDF-Eigenschaften gehören Formulareigenschaften, Seitendrehung und Dokumentautorin bzw. Dokumentautor.
 
-Sie können DDX verwenden, um PDF-Dokumente im Rahmen der Dokumentzusammenführung oder -zerlegung zu erweitern. Sie können eine beliebige Kombination der folgenden Effekte festlegen:
+Mithilfe von DDX können zusammen mit der Dokumentzusammenführung und -aufteilung PDF-Dokumente erweitert werden. Sie können eine beliebige Kombination der folgenden Effekte angeben:
 
 * Hinzufügen von Wasserzeichen oder Hintergründen zu ausgewählten Seiten (oder deren Entfernung)
 * Hinzufügen von Kopf- und Fußzeilen zu ausgewählten Seiten (oder deren Entfernung)
-* Entfernt die Struktur und Navigationsfunktionen eines PDF-Packages oder PDF-Portfolios. Das Ergebnis ist eine einzelne PDF-Datei.
-* Seitentitel neu nummerieren. Seitenbeschriftungen werden normalerweise für die Seitennummerierung verwendet.
+* Entfernen der Struktur und Navigationsfunktionen eines PDF-Pakets oder PDF-Portfolios Das Ergebnis ist eine einzelne PDF-Datei.
+* Neunummerieren von Seitenbeschriftungen. Seitenbeschriftungen dienen meist der Seitennummerierung.
 * Importieren von Metadaten aus einem anderen Quelldokument
 * Hinzufügen oder Entfernen von Dateianlagen, Lesezeichen, Hyperlinks, Kommentaren und JavaScript.
 * Festlegen der Ansicht beim Öffnen und Optimierung der Anzeige im Internet
@@ -89,7 +89,7 @@ Sie können DDX verwenden, um PDF-Dokumente im Rahmen der Dokumentzusammenführu
 * Ändern der Größe von ausgewählten Seiten.
 * Zusammenführen von Daten mit einer XFA-basierten PDF-Datei.
 
-Sie können eine einfache Eingabezuordnung verwenden, um die Speicherorte der Quell- und Zieldokumente anzugeben. Sie können auch die folgenden URL-Typen für externe Daten verwenden:
+Sie können eine einfache Eingabe-Map zum Angeben der Speicherorte für Quell- und Zieldokumente verwenden. Sie können auch die folgenden URL-Typen für externe Daten verwenden:
 
 * File
 * FTP
@@ -97,13 +97,13 @@ Sie können eine einfache Eingabezuordnung verwenden, um die Speicherorte der Qu
 
 ## DocAssurance-Dienst {#doc-assurance-service}
 
-Der DocAssurance-Dienst unterstützt Sie beim Verschlüsseln und Entschlüsseln von Dokumenten, beim Erweitern der Funktionen von Adobe Reader mit zusätzlichen Nutzungsrechten sowie beim Hinzufügen digitaler Signaturen zu Ihren Dokumenten. Ihre Benutzer können einfach mit PDF forms und Dokumenten interagieren, während Ihr Unternehmen die Sicherheit, Archivierung und Compliance verbessert.
+Der DocAssurance-Dienst unterstützt Sie beim Verschlüsseln und Entschlüsseln von Dokumenten, beim Erweitern der Funktionen von Adobe Reader mit zusätzlichen Nutzungsrechten sowie beim Hinzufügen digitaler Signaturen zu Ihren Dokumenten. Ihre Benutzenden können mühelos mit PDF-Formularen und -Dokumenten interagieren. Ihr Unternehmen profitiert dabei von mehr Sicherheit sowie besserer Archivierung und Compliance.
 
 Der DocAssurance-Dienst umfasst drei Dienste: Signature, Encryption und Reader Extension.
 
-### Signature-Dienst {#signature-service}
+### Signaturdienst {#signature-service}
 
-Mit dem Signature-Dienst können Sie mit digitalen Signaturen und Dokumenten auf dem AEM-Server arbeiten. Der Signatur-Dienst wird beispielsweise in der Regel in folgenden Situationen verwendet:
+Der Signature-Dienst ermöglicht das Arbeiten mit digitalen Signaturen und Dokumenten auf dem AEM-Server. Der Signatur-Dienst wird beispielsweise in der Regel in folgenden Situationen verwendet:
 
 * Der AEM-Server zertifiziert ein Formular, bevor es an eine Person zum Öffnen mithilfe von Acrobat oder Adobe Reader gesendet wird.
 * Der AEM-Server überprüft eine Signatur, die einem Formular mithilfe von Acrobat oder Adobe Reader hinzugefügt wurde.
@@ -113,26 +113,26 @@ Der Signature-Dienst greift auf Zertifikate und Berechtigungen zu, die im Trust 
 
 ### Encryption-Service {#encryption-service}
 
-Mit dem Encryption-Dienst können Sie Dokumente verschlüsseln und entschlüsseln. Wenn ein Dokument verschlüsselt wird, ist sein Inhalt unlesbar. Sie können das gesamte PDF-Dokument (einschließlich Inhalt, Metadaten und Anlagen), alles außer den Metadaten oder nur die Anlagen verschlüsseln. Eine autorisierte Person kann das Dokument entschlüsseln, um Zugriff auf seinen Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, müssen die Benutzenden das Kennwort zum Öffnen angeben, damit das Dokument in Reader oder Adobe Acrobat angezeigt werden kann. Wenn ein PDF-Dokument mit einem Zertifikat verschlüsselt ist, muss der Benutzer das PDF-Dokument mit einem privaten Schlüssel (Zertifikat) entschlüsseln. Der zum Entschlüsseln des PDF-Dokuments verwendete private Schlüssel muss dem öffentlichen Schlüssel entsprechen, der zum Verschlüsseln verwendet wird.
+Der Encryption-Dienst ermöglicht das Ver- und Entschlüsseln von Dokumenten. Wenn ein Dokument verschlüsselt wird, ist sein Inhalt unlesbar. Beim Verschlüsseln eines PDF-Dokuments können Sie das gesamte PDF-Dokument (einschließlich Inhalt, Metadaten und Anlagen), alles außer den Metadaten oder nur die Anlagen verschlüsseln. Eine autorisierte Person kann das Dokument entschlüsseln, um Zugriff auf seinen Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, müssen die Benutzenden das Kennwort zum Öffnen angeben, damit das Dokument in Reader oder Adobe Acrobat angezeigt werden kann. Wenn ein PDF-Dokument mit einem Zertifikat verschlüsselt ist, müssen Benutzende das PDF-Dokument mithilfe eines privaten Schlüssels (Zertifikats) entschlüsseln. Der private Schlüssel zum Entschlüsseln des PDF-Dokuments muss dem öffentlichen Schlüssel entsprechen, der zum Verschlüsseln verwendet wurde.
 
-### Reader Extension-Dienst {#reader-extension-service}
+### Dienst „Reader-Erweiterung“ {#reader-extension-service}
 
-Der Reader Extensions-Dienst ermöglicht Ihrem Unternehmen die einfache Freigabe interaktiver PDF-Dokumente, indem die Funktionalität von Adobe Reader um zusätzliche Verwendungsrechte erweitert wird. Der Reader Extensions-Dienst funktioniert mit Adobe Reader 7.0 oder höher. Der Dienst fügt einem PDF-Dokument Verwendungsrechte hinzu. Diese Aktion aktiviert Funktionen, die normalerweise nicht verfügbar sind, wenn ein PDF-Dokument mit Adobe Reader geöffnet wird, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments. Externe Benutzende benötigen keine zusätzliche Software oder Plug-ins für das Verwenden von Dokumenten mit aktivierten Benutzerrechten.
+Der Reader Extensions-Dienst ermöglicht Unternehmen die einfache Freigabe interaktiver PDF-Dokumente durch Erweitern der Funktionalität von Adobe Reader durch zusätzliche Verwendungsrechte. Der Reader Extensions-Dienst funktioniert mit Adobe Reader 7.0 oder höher. Der Dienst fügt einem PDF-Dokument Verwendungsrechte hinzu. Diese Aktion aktiviert Funktionen, die normalerweise nicht verfügbar sind, wenn ein PDF-Dokument in Adobe Reader geöffnet wird, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments. Externe Benutzende benötigen keine zusätzliche Software oder Plug-ins für das Verwenden von Dokumenten mit aktivierten Benutzerrechten.
 
-Wenn PDF-Dokumente über die entsprechenden Verwendungsrechte verfügen, können Empfänger die folgenden Aktivitäten in Adobe Reader durchführen:
+Bei PDF-Dokumenten, denen entsprechende Verwendungsrechte hinzugefügt wurden, können Empfängerinnen und Empfänger die folgenden Aktivitäten in Adobe Reader durchführen:
 
-* Ausfüllen von PDF-Dokumenten und -Formularen online oder offline, sodass Empfänger lokale Kopien für ihre Datensätze speichern und die hinzugefügten Informationen beibehalten können
-* Speichern Sie PDF-Dokumente auf einer lokalen Festplatte, um das Originaldokument und alle weiteren Kommentare, Daten oder Anlagen beizubehalten.
-* Anhängen von Dateien und Medienclips an PDF-Dokumente
-* Signieren, Zertifizieren und Authentifizieren von PDF-Dokumenten durch die Anwendung digitaler Signaturen mithilfe von PKI-Technologien (PKI-Technologien), die dem Industriestandard entsprechen
-* Elektronische Übermittlung ausgefüllter oder mit Anmerkungen versehener PDF-Dokumente
-* Verwenden von PDF-Dokumenten und -Formularen als intuitives Entwicklungs-Frontend für interne Datenbanken und Webdienste
-* Geben Sie PDF-Dokumente für andere frei, damit Überprüfer Kommentare mithilfe intuitiver Markup-Tools hinzufügen können. Zu diesen Tools gehören elektronische Haftnotizen, Stempel, Highlights und Text-Durchstreichung. Dieselben Funktionen sind in Acrobat verfügbar.
-* Unterstützt die Dekodierung mit Strichcode versehener Formulare.
+* Ausfüllen von PDF-Dokumenten und Formularen online oder offline, sodass Empfängerinnen und Empfänger lokale Kopien speichern können, ohne hinzufügte Informationen zu verlieren
+* Speichern von PDF-Dokumenten auf einer lokalen Festplatte, um das Originaldokument und alle weiteren Kommentare, Daten oder Anlagen beizubehalten
+* Anhängen von Dateien und Medien-Clips an PDF-Dokumente
+* Signieren, Zertifizieren und Authentifizieren von PDF-Dokumenten durch die Anwendung digitaler Signaturen mithilfe von PKI-Technologien (PKI = Public Key Infrastructure), die dem Industriestandard entsprechen
+* Elektronisches Senden ausgefüllter oder mit Anmerkungen versehener PDF-Dokumente
+* Verwenden von PDF-Dokumenten und -Formularen als intuitives Entwicklungs-Frontend für interne Datenbanken und Web-Dienste
+* Freigeben von PDF-Dokumenten für andere Benutzende, sodass Prüfende mit intuitiven Markup-Werkzeugen Kommentare hinzufügen können Zu diesen Werkzeugen gehören elektronische Haftnotizen, Stempel, Hervorheben und Durchstreichen. Dieselben Funktionen sind in Acrobat verfügbar.
+* Unterstützen der Dekodierung von Barcode-Formularen.
 
-Diese speziellen Benutzerfunktionen werden automatisch aktiviert, wenn ein PDF-Dokument mit aktivierten Benutzerrechten in Adobe Reader geöffnet wird. Wenn der Benutzer die Arbeit mit einem Dokument mit aktivierten Benutzerrechten beendet hat, sind diese Funktionen in Adobe Reader erneut deaktiviert. Sie bleiben deaktiviert, bis der Benutzer ein anderes PDF-Dokument mit aktivierten Benutzerrechten erhält.
+Diese speziellen Benutzerfunktionen werden automatisch aktiviert, wenn ein PDF-Dokument mit aktivierten Rechten in Adobe Reader geöffnet wird. Wenn Benutzende die Arbeit mit einem Dokument mit aktivierten Rechten beendet haben, sind diese Funktionen in Adobe Reader wieder deaktiviert. Sie bleiben deaktiviert, bis die Benutzenden ein anderes PDF-Dokument mit aktivierten Rechten erhält.
 
-Standardmäßig ist der DocAssurance-Dienst nicht verfügbar. Informationen zum Konfigurieren des DocAssurance-Services finden Sie unter [Installation und Konfiguration von Dokumenten-Services](../../forms/using/install-configure-document-services.md).
+Der DocAssurance-Dienst ist nicht vorkonfiguriert verfügbar. Informationen zum Konfigurieren des DocAssurance-Services finden Sie unter [Installation und Konfiguration von Dokumenten-Services](../../forms/using/install-configure-document-services.md).
 
 ## An Drucker senden {#send-to-printer-service}
 

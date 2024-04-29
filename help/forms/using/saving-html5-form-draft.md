@@ -1,6 +1,6 @@
 ---
 title: Speichern eines HTML5-Formulars als Entwurf
-description: Speichern Sie ein HTML5-Formular als Entwurf und setzen Sie das Formular zu einem späteren Zeitpunkt fort.
+description: Sie können ein HTML5-Formular als Entwurf speichern und das Formular zu einem späteren Zeitpunkt ausfüllen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
@@ -9,19 +9,19 @@ feature: HTML5 Forms
 exl-id: a9879445-d626-4279-8a95-a9009294b483
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '299'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
 # Speichern eines HTML5-Formulars als Entwurf {#saving-an-html-form-as-a-draft}
 
-Sie können ein HTML5-Formular als Entwurf speichern und das Formular zu einem späteren Zeitpunkt ausfüllen. Forms Portal ermöglicht jedem Benutzer das Speichern und Wiederherstellen eines HTML5-Formulars. Fügen Sie zum Aktivieren der Funktion „Als Entwurf speichern“ die folgenden Konfigurationen zum Profilknoten hinzu:
+Sie können ein HTML5-Formular als Entwurf speichern und das Formular zu einem späteren Zeitpunkt ausfüllen. Im Formularportal können Benutzende HTML5-Formulare speichern und wiederherstellen. Fügen Sie zum Aktivieren der Funktion „Als Entwurf speichern“ die folgenden Konfigurationen zum Profilknoten hinzu:
 
 ## Benutzerdefiniertes Profil zum Aktivieren der Funktion „Als Entwurf speichern“ {#custom-profile-to-allow-save-as-draft-feature}
 
-In AEM Forms gibt es standardmäßig das Profil **Als Entwurf speichern**. Sie können ein Formular mit dem Profil Als Entwurf speichern wiedergeben, um die Entwurfsfunktion für ein HTML5-Formular zu aktivieren. Sie können ein HTML-Renderprofil für ein Formular in [Forms Manager](/help/forms/using/introduction-managing-forms.md).
+In AEM Forms gibt es standardmäßig das Profil **Als Entwurf speichern**. Sie können ein Formular mit dem Profil „Als Entwurf speichern“ rendern, um die Entwurfsfunktion für ein HTML5-Formular zu aktivieren. Sie können HTML-Render-Profile für ein Formular in [Forms Manager](/help/forms/using/introduction-managing-forms.md) angeben.
 
 Fügen Sie zum Aktivieren der Funktion „Als Entwurf speichern“ für Ihr bestehendes [benutzerdefiniertes Profil](/help/forms/using/custom-profile.md) die folgenden Eigenschaften zu Ihrem benutzerdefinierten Profilknoten hinzu: 
 
@@ -37,20 +37,20 @@ Fügen Sie zum Aktivieren der Funktion „Als Entwurf speichern“ für Ihr best
    <td>mfAllowFPDraft</td>
    <td>Zeichenfolge</td>
    <td>Ja</td>
-   <td><p>Aktiviert die Funktion "Als Entwurf speichern"</p> <p>für dieses Profil.</p> </td>
+   <td><p>Aktiviert die Funktion „Als Entwurf speichern“</p> <p>für dieses Profil.</p> </td>
   </tr>
   <tr>
    <td>mfAllowAttachments</td>
    <td>Zeichenfolge</td>
    <td>Ja</td>
-   <td><p>Ermöglicht das Hochladen von Anlagen</p> <p>mit diesem Profil.</p> </td>
+   <td><p>Ermöglicht das Hochladen von Anhängen</p> <p>mit diesem Profil.</p> </td>
   </tr>
  </tbody>
 </table>
 
-## Speicherung und Auflistung von Entwürfen {#drafts-storage-and-listing}
+## Speichern und Auflisten von Entwürfen {#drafts-storage-and-listing}
 
-Nachdem Sie die Funktion &quot;Als Entwurf speichern&quot;für ein Formular aktiviert haben, wird das Formular beim Speichern im [Komponente &quot;Drafts and Submissions&quot;](/help/forms/using/draft-submission-component.md). Sie können das gespeicherte Formular aus der Komponente &quot;Drafts and Submissions&quot;abrufen und mit dem Ausfüllen beginnen.
+Nach der Aktivierung der Funktion „Als Entwurf speichern“ wird das Formular, wenn es gespeichert wurde, in der Komponente [Drafts and Submission (Entwurf und Übermittlung)](/help/forms/using/draft-submission-component.md) aufgelistet. Sie können das gespeicherte Formular aus der Komponente „Drafts and Submissions“ (Entwurf und Übermittlung) abrufen und mit dem Ausfüllen beginnen.
 
 Fügen Sie zum Aktivieren der Formularauflistung für die Komponente „Entwürfe und Übermittlungen“ die folgende Eigenschaft zum Profilknoten hinzu:
 

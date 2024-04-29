@@ -1,6 +1,6 @@
 ---
 title: Gestenanpassung
-description: Erfahren Sie, wie Sie die Gesten in der AEM Forms-App anpassen. Sie können die Gesten anpassen, um eine unterschiedliche Methode zur Interaktion mit der Anwendung bereitzustellen.
+description: Erfahren Sie, wie Sie die Gesten in der AEM Forms-App anpassen. Sie können die Gesten anpassen, um eine individuelle Methode der Interaktion mit der Anwendung bereitzustellen.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,9 +8,9 @@ topic-tags: forms-app
 exl-id: 6debb1a7-7889-4fdd-87c7-ecb87cc0b1f5
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '309'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 

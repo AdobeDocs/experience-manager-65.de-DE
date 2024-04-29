@@ -8,13 +8,13 @@ feature: Transaction Reports
 exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: d3822f4dee1b0d571aa06142f4a4f6e27874cf53
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '476'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# Transaktionsberichte für AEM Forms unter OSGi {#transaction-reports-overview}
+# Transaktionsberichte für AEM Forms on OSGi {#transaction-reports-overview}
 
 <!--## Introduction {#introduction}
 
@@ -38,7 +38,7 @@ Aktionen wie das Senden eines PDF-Formulars, die Verwendung der Agent-Benutzerob
 
 ## Unterstützte Topologie {#supported-topology}
 
-Transaktionsberichte sind nur in AEM Forms in der OSGi-Umgebung verfügbar. Es unterstützt die Topologien „Autor-Veröffentlichen“, „Autor-Verarbeiten-Veröffentlichen“ und „Nur Verarbeiten“. Zum Beispiel Topologien, siehe [Architektur und Bereitstellungstopologien für AEM Forms](../../forms/using/transaction-reports-overview.md).
+Transaktionsberichte sind nur in AEM Forms in der OSGi-Umgebung verfügbar. Es unterstützt die Topologien „Autor-Veröffentlichen“, „Autor-Verarbeiten-Veröffentlichen“ und „Nur Verarbeiten“. Weitere Informationen zu Topologien finden Sie unter [Architektur und Bereitstellungstopologien für AEM Forms](../../forms/using/transaction-reports-overview.md).
 
 Die Anzahl der Transaktionen wird von Veröffentlichungsinstanzen zu Autoren- oder Verarbeitungsinstanzen umgekehrt repliziert. Unten finden Sie eine Beispieltopologie für „Autor-Veröffentlichen“:
 
@@ -59,5 +59,5 @@ Die Anzahl der Transaktionen wird von Veröffentlichungsinstanzen zu Autoren- od
 ## Ähnliche Artikel {#related-articles}
 
 * [Anzeigen und Verstehen eines Transaktionsberichts für AEM Forms auf OSGi](../../forms/using/viewing-and-understanding-transaction-reports.md)
-* [Transaktionsberichte Abrechnungsfähige APIs für AEM Forms auf OSGi](../../forms/using/transaction-reports-billable-apis.md)
-* [Zeichnen Sie eine Transaktion für benutzerdefinierte Implementierungen für AEM Forms auf OSGi auf](/help/forms/using/record-transaction-custom-implementation.md)
+* [Abrechenbare APIs für Transaktionsberichte für AEM Forms on OSGi](../../forms/using/transaction-reports-billable-apis.md)
+* [Aufzeichnen einer Transaktion für benutzerdefinierte Implementierungen für AEM Forms auf OSGi](/help/forms/using/record-transaction-custom-implementation.md)

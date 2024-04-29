@@ -6,9 +6,9 @@ role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5633'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -309,7 +309,7 @@ Sie können Benutzern, die keine Administratoren sind, die Verwendung des PDF Ge
 
 >[!NOTE]
 >
-> Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mithilfe alternativer Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+> Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 ### (Nur Windows) Deaktivieren der Benutzerkontensteuerung (UAC) {#disable-user-account-control-uac}
 
@@ -370,11 +370,11 @@ Kopieren Sie die Unicode-Schriftart in die folgenden Ordner, so wie es für Ihr 
 Das AEM Forms Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das Paket enthält die AEM Forms-Dokumentendienste und andere AEM Forms-Funktionen. Führen Sie die folgenden Schritte aus, um das Paket zu installieren:
 
 1. Öffnen Sie [Software Distribution](https://experience.adobe.com/downloads). Zum Anmelden bei Software Distribution benötigen Sie eine Adobe ID.
-1. Auswählen **[!UICONTROL Adobe Experience Manager]** im Kopfzeilenmenü verfügbar.
+1. Wählen Sie im Kopfzeilenmenü **[!UICONTROL Adobe Experience Manager]** aus.
 1. Im Abschnitt **[!UICONTROL Filter]**:
    1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** aus.
    2. Wählen Sie die Version aus und geben Sie sie für das Paket ein. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
-1. Wählen Sie den für Ihr Betriebssystem zutreffenden Paketnamen aus und wählen Sie **[!UICONTROL EULA-Bedingungen akzeptieren]** und wählen Sie **[!UICONTROL Herunterladen]**.
+1. Wählen Sie den für Ihr Betriebssystem zutreffenden Paketnamen, dann **[!UICONTROL EULA-Bedingungen akzeptieren]** und dann **[!UICONTROL Herunterladen]** aus.
 1. Öffnen Sie [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
@@ -496,7 +496,7 @@ Mithilfe der Trust Store-Verwaltung können Sie Zertifikate importieren, bearbei
 
 1. Melden Sie sich bei der AEM Forms-Instanz als Administrator an.
 1. Navigieren Sie zu **[!UICONTROL Tools]** >  **[!UICONTROL Sicherheit]** >  **[!UICONTROL Trust Store]**.
-1. Klicken Sie auf  **[!UICONTROL TrustStore erstellen]**. Kennwort festlegen und auswählen **[!UICONTROL Speichern]**.
+1. Klicken Sie auf  **[!UICONTROL TrustStore erstellen]**. Geben Sie ein Kennwort ein und wählen Sie **[!UICONTROL Speichern]**.
 
 ### Einrichten von Zertifikaten für die Reader-Erweiterung und den Verschlüsselungsdienst {#set-up-certificates-for-reader-extension-and-encryption-service}
 
@@ -562,14 +562,14 @@ Der Assembler-Dienst hängt vom Reader Extension-Dienst, vom Signature-Dienst, v
  </tbody>
 </table>
 
-### (Nur Windows) Registrierungseintrag für Microsoft® Project konfigurieren {#configure-registry-entry-for-microsoft-project}
+### (Nur Windows) Konfigurieren des Registrierungseintrags für Microsoft® Project {#configure-registry-entry-for-microsoft-project}
 
-Nachdem Sie das AEM Forms-Add-on und Microsoft® Project auf Ihrem Computer installiert haben, registrieren Sie einen Eintrag für Microsoft® Project an der 64-Bit-Stelle. Dies erleichtert die Ausführung von Konversionstests von Projekt zu PDFG. Im Folgenden werden die Schritte beschrieben, die den Registrierungsprozess beschreiben:
+Nachdem Sie das AEM Forms-Add-on und Microsoft® Project auf Ihrem Computer installiert haben, registrieren Sie einen Eintrag für Microsoft® Project am 64-Bit-Speicherort. Dies vereinfacht die Ausführung von Konvertierungstests von Project zu PDFG. Die folgenden Schritte sind zum Konfigurieren eines Registrierungseintrags erforderlich:
 
-1. Öffnen Sie den Microsoft® Windows Registry-Editor (regedit), gehen Sie zum Öffnen des Registrierungs-Editors zu Start > Ausführen, geben Sie regedit ein und klicken Sie auf OK.
-1. Navigieren Sie zu `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat PDFMaker\<version>\Office\SupportedApp`und erstellen Sie eine neue **Binärer Wert** registrieren und umbenennen in **Projekt**.
-1. Ändern Sie den Datenwert der erstellten Binärregistrierung auf 01 und klicken Sie auf OK.
-1. Schließen Sie den Registrierungseintrag.
+1. Öffnen Sie den Microsoft® Windows-Registrierungs-Editor (regedit). Gehen Sie hierzu zu „Start“ > „Ausführen“, geben Sie „regedit“ ein und klicken Sie auf „OK“.
+1. Navigieren Sie zu `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat PDFMaker\<version>\Office\SupportedApp`, erstellen Sie einen neuen **Binärwert** und benennen Sie ihn in **Project** um.
+1. Ändern Sie den Datenwert der erstellten Binärregistrierung in „01“ und klicken Sie auf „OK“.
+1. Schließen Sie den Registrierungs-Editor.
 
 
 ## Bekannte Probleme und Fehlerbehebung {#known-issues-and-troubleshooting}
@@ -801,27 +801,27 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
 Wenn der Benutzer versucht, Word- oder Excel-Dateien unter Microsoft Windows Server in PDF zu konvertieren, tritt folgender Fehler auf:
 
 *Fehlermeldung des primären Konverters:
-ALC-PDG-015-003-Das System kann die Eingabedatei nicht öffnen. Senden Sie die Datei erneut oder kontaktieren Sie Ihren Systemadministrator.*
+ALC-PDG-015-003-Das System kann die Eingabedatei nicht öffnen. Senden Sie Ihre Datei erneut ab oder kontaktieren Sie Ihre System-Admins.*
 
 Informationen zum Beheben des Problems finden Sie unter [Konvertieren von Word- oder Excel-Dateien in PDF ist unter Windows Server nicht möglich](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
 
 +++
 
-+++ Excel-Dateien können unter Windows Server 2019 nicht in PDF konvertiert werden
++++ Konvertieren von Excel-Dateien in PDF ist unter Windows Server 2019 nicht möglich
 
 Wenn Sie Microsoft Excel 2019 auf Microsoft Windows Server 2019 in PDF konvertieren, müssen Sie Folgendes sicherstellen:
 
 * Bei Verwendung des PDF Generator-Dienstes sollte Ihr Windows-Computer keine aktive Remote-Verbindung mit dem AEM-Server (Windows RDP-Sitzung) haben.
-* Der Standarddrucker muss auf Adobe PDF eingestellt sein.
+* Der Standarddrucker muss als Adobe PDF eingerichtet sein.
 
   >[!NOTE]
   >* Für Apple macOS und Ubuntu OS müssen Sie die oben genannten Einstellungen nicht konfigurieren.
 
 +++
 
-+++ XPS-Dateien können nicht in PDF konvertiert werden
++++ Konvertieren von XPS-Dateien in PDF nicht möglich
 
-Um das Problem zu beheben, [Erstellen eines funktionsspezifischen Registrierungsschlüssels unter Windows](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
+Um das Problem zu beheben, [erstellen Sie einen funktionsspezifischen Registrierungsschlüssel unter Windows](https://helpx.adobe.com/de/acrobat/kb/unable-convert-xps-to-pdfs.html).
 
 +++
 

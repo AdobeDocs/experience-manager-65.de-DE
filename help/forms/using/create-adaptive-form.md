@@ -5,9 +5,9 @@ feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1314'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ AEM [!DNL Forms] bietet viele Komponenten zum Anzeigen von Informationen in eine
 
 1. Wählen Sie ein Bild aus. Die Symbolleiste wird angezeigt.  Wählen Sie ![cmppr](assets/cmppr.png) aus. Der Eigenschaften-Browser wird auf der linken Seite des Bildschirms geöffnet. **[!UICONTROL Suchen Sie]** das Logo und laden Sie es hoch. Wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) aus. Das Bild erscheint in der Kopfzeile.
 
-   Sie können die Option Datei laden auswählen, um das in diesem Artikel verwendete Logo herunterzuladen, wenn Sie keines haben.
+   Sie können „Datei abrufen“ auswählen, um das in diesem Artikel verwendete Logo herunterzuladen, falls Sie keines haben.
 
 [Datei laden](assets/logo.png)
 

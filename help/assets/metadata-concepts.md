@@ -7,9 +7,9 @@ feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2665'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -161,15 +161,15 @@ Die programmspezifischen Metadaten umfassen technische und beschreibende Metadat
 
 ## Metadatenschema-Referenz {#metadata-schemata-reference}
 
-Die folgende Referenz enthält Informationen zu bestimmten Metadatenschemata (in alphabetischer Reihenfolge) sowie eine Liste von Eigenschaften und deren Definitionen.
+Die folgende Referenz enthält Informationen zu bestimmten Metadatenschemata (in alphabetischer Reihenfolge) sowie eine Liste mit Eigenschaften und den zugehörigen Definitionen.
 
 ### Dublin Core {#dublin-core}
 
-Dublin Core-Metadaten bieten einen standardisierten Satz von Konventionen zur Beschreibung von Assets, um deren Auffindbarkeit zu verbessern. In [!DNL Assets] beschreibt Dublin Core digitale Assets wie Videos, Audio, Bilder und Dokumente.
+Dublin Core-Metadaten bieten einen standardisierten Satz von Konventionen zur Beschreibung von Assets, damit sie einfacher zu finden sind. In [!DNL Assets] beschreibt Dublin Core digitale Assets wie Videos, Audio, Bilder und Dokumente.
 
-Der einfache Dublin Core Metadata Element Set (DCMES) enthält 15 Metadatenelemente, wie in der folgenden Tabelle aufgeführt. Jedes Dublin Core-Element ist optional und kann wiederholt werden. Sie können Dublin Core-Metadateninformationen genauso wie solche für medientypspezifische Metadaten hinzufügen oder löschen.
+Das einfache Dublin Core Metadata Element Set (DCMES) enthält 15 Metadatenelemente, die in der folgenden Tabelle aufgeführt werden. Jedes Dublin Core-Element ist optional und kann wiederholt werden. Sie können Dublin Core-Metadateninformationen genauso wie solche für medientypspezifische Metadaten hinzufügen oder löschen.
 
-Neben dem DCMES wurden auch noch andere Metadatenelemente von der Dublin Core Initiative erstellt. Siehe [Dublin Core-Initiative](https://dublincore.org/) für weitere Informationen.
+Zusätzlich zum DCMES wurden auch noch andere Metadatenelemente von der Dublin Core Initiative erstellt. Weitere Informationen finden Sie unter [Dublin Core Initiative](https://dublincore.org/).
 
 | Eigenschaft | Beschreibung |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------ |
@@ -191,9 +191,9 @@ Neben dem DCMES wurden auch noch andere Metadatenelemente von der Dublin Core In
 
 ### IPTC {#iptc}
 
-Der International Press Telecommunications Council (IPTC) ist ein Konsortium von Nachrichtenagenturen auf der ganzen Welt - eines seiner Ziele ist die Entwicklung und Aufrechterhaltung technischer Standards. Die IPTC hat eine Reihe von Fotometadaten-Standards für Bilder definiert, die fast universell von Fotografen akzeptiert werden. Diese Metadatenstandards waren Teil des umfassenderen Standards IPTC Information Interchange Model (IIM), der in den 90er Jahren erstellt wurde.
+Der International Press Telecommunications Council (IPTC) ist eine Arbeitsgemeinschaft aus Nachrichtenagenturen aus der ganzen Welt. Eines seiner Ziele ist die Entwicklung und Aufrechterhaltung technischer Standards. Der IPTC definiert ein Set aus Fotometadaten-Standards für Bilder, das fast universell von Fotografen anerkannt wird. Diese Metadatenstandards waren Teil des umfassenderen Standards „IPTC Information Interchange Model“ (IIM), der in den 90er Jahren erstellt wurde.
 
-Obwohl die IPTC-Kopfzeileninformationen größtenteils durch XMP ersetzt wurden, stehen ein IPTC-Kernschema und ein Erweiterungsschema für XMP zur Verfügung. In Bildprogrammen werden sowohl XMP als auch IPTC-Eigenschaften synchronisiert.
+Obwohl die IPTC-Kopfzeileninformationen größtenteils von XMP abgelöst wurden, sind ein IPTC-Kernschema und ein Erweiterungsschema für XMP verfügbar. In Bildprogrammen werden XMP- und IPTC-Eigenschaften synchronisiert.
 
 ## Metadatengesteuerte Workflows {#metadata-driven-workflows}
 
@@ -274,7 +274,7 @@ Erfahren Sie mehr darüber, wie [!DNL Adobe Experience Manager Assets] IPTC-Meta
 
 [!DNL Adobe Experience Manager Assets] unterstützt den IPTC-Metadatenstandard, der häufig zum Beschreiben von Assets verwendet wird. Auf diese Weise verbessert [!DNL Assets] die Akzeptanz der eigenen Bilder bei den verschiedenen Beteiligten wie Fotografen, Werbeagenturen, Bibliotheken und Museen.
 
-Das Standard-Metadatenschema für Assets enthält jetzt die Metadatenschemata IPTC Core und IPTC Extension , um umfassende Metadateneigenschaften zu definieren, mit denen Benutzer präzise und zuverlässige Daten über Personen, Standorte und Produkte hinzufügen können, die in einem Bild angezeigt werden. Es unterstützt auch Daten, Namen und Kennungen zur Erstellung des Bildes sowie eine flexible Methode zum Ausdrücken von Rechtsinformationen.
+Das Standard-Metadatenschema für Assets enthält jetzt die Metadatenschemata „IPTC Core“ und „IPTC Extension“, um umfassende Metadateneigenschaften zu definieren, mit denen Benutzende präzise und zuverlässige Daten über Personen, Standorte und Produkte hinzufügen können, die in einem Bild angezeigt werden. Es unterstützt auch Daten, Namen und Kennungen zur Erstellung des Bildes sowie eine flexible Methode, um Rechtsinformationen auszudrücken.
 
 Die Eigenschaftenseite für Assets enthält jetzt separate Registerkarten, auf denen die IPTC Core- und IPTC Extension-Metadaten in bearbeitbaren Feldern angezeigt werden.
 
@@ -297,7 +297,7 @@ Diese Bewertungen sind auf der Registerkarte **[!UICONTROL Erweitert]** im Berei
 
 Diese Bewertung ist eine schreibgeschützte Eigenschaft und liegt zwischen 1 und 5. Sie können im Suchbereich nach Assets basierend auf ihrer kreativen Bewertung suchen.
 
-Diese Eigenschaft ist jedoch derzeit nicht indiziert, um Konflikte mit benutzerdefinierten Änderungen zu vermeiden, die von Benutzern vorgenommen werden.
+Diese Eigenschaft ist jedoch derzeit nicht indiziert, um Konflikte mit benutzerdefinierten Änderungen zu vermeiden, die von Benutzenden vorgenommen werden.
 
 ### Unterstützung von Keywords {#keyword-support}
 

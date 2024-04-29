@@ -1,47 +1,47 @@
 ---
 title: Härten (Absichern) und Schützen von AEM-Formularen in OSGi-Umgebungen
-description: Erfahren Sie mehr über Empfehlungen und Best Practices zum Schützen von AEM Forms auf einem OSGi-Server.
+description: Hier finden Sie Empfehlungen und Best Practices zum Schutz von AEM Forms auf einem OSGi-Server.
 topic-tags: Security
 role: Admin
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1434'
-ht-degree: 18%
+ht-degree: 100%
 
 ---
 
 # Härten (Absichern) und Schützen von AEM-Formularen in OSGi-Umgebungen {#hardening-and-securing-aem-forms-on-osgi-environment}
 
-Erfahren Sie mehr über Empfehlungen und Best Practices zum Schützen von AEM Forms auf einem OSGi-Server.
+Hier finden Sie Empfehlungen und Best Practices zum Schutz von AEM Forms auf einem OSGi-Server.
 
-Die Sicherung einer Serverumgebung ist für ein Unternehmen von größter Bedeutung. In diesem Artikel werden Empfehlungen und Best Practices zum Schützen von Servern beschrieben, auf denen AEM Forms ausgeführt wird. Dies ist kein umfangreiches Dokument zur Härtung von Hosts für Ihr Betriebssystem. Stattdessen werden in diesem Artikel verschiedene Einstellungen für die Sicherheitshärtung beschrieben, die Sie implementieren sollten, um die Sicherheit Ihrer bereitgestellten Anwendung zu erhöhen. Um sicherzustellen, dass die Anwendungsserver sicher bleiben, sollten Sie jedoch zusätzlich zu den Empfehlungen in diesem Artikel auch Verfahren zur Sicherheitsüberwachung, -erkennung und -reaktion implementieren. Das Dokument enthält auch Best Practices und Richtlinien zum Schützen von personenbezogenen Daten (PII).
+Der Schutz der Server-Umgebung ist von größter Wichtigkeit für ein Unternehmen. In diesem Artikel werden Empfehlungen und Best Practices für den Schutz der Server beschrieben, auf denen AEM Forms ausgeführt wird. Dieses Dokument stellt keine umfassende Anleitung zum Härten (Absichern) des Betriebssystems dar. Stattdessen wird in diesem Artikel eine Reihe von Einstellungen zum Stärken der Sicherheit beschrieben, die Sie implementieren sollten, um die Sicherheit der bereitgestellten Anwendung zu verbessern. Um den Schutz der Anwendungs-Server sicherzustellen, sollten Sie jedoch außer den in diesem Artikel empfohlenen Maßnahmen auch Überwachungs-, Erkennungs- und Reaktionsabläufe für die Sicherheit implementieren. Das Dokument enthält ferner Best Practices und Richtlinien zum Schützen von PII (Personally Identifiable Information, personenbezogene Informationen).
 
-Dieser Artikel richtet sich an Berater, Sicherheitsexperten, Systemarchitekten und IT-Fachleute, die für die Planung der Anwendungs- oder Infrastrukturentwicklung und -implementierung von AEM Forms verantwortlich sind. Diese Rollen umfassen die folgenden allgemeinen Rollen:
+Die Zielgruppe dieses Artikels sind IT-Beraterinnen und -Berater, Sicherheitsfachkräfte, Systemarchitektinnen und Systemarchitekten sowie IT-Fachkräfte, die für die Planung der Anwendungs- oder Infrastrukturentwicklung sowie die Bereitstellung von AEM Forms verantwortlich sind. Zu diesen Rollen zählen die folgenden gängigen Rollen:
 
-* IT- und Betriebsingenieure, die sichere Webanwendungen und -server in ihren eigenen oder Kundenorganisationen bereitstellen müssen.
+* IT- und Produktionsingenieurinnen und -ingenieure, die sichere Web-Anwendungen und -Server in ihren eigenen oder Kundenunternehmen bereitstellen müssen.
 * Architekten und Systemplaner mit der Aufgabe, die Architekturentwicklung für die Kunden in ihren Unternehmen zu planen.
-* IT-Sicherheitsspezialisten, die sich auf die plattformübergreifende Sicherheit innerhalb ihres Unternehmens konzentrieren.
-* Berater von Adobe und Partner, die detaillierte Ressourcen für Kunden und Partner benötigen.
+* Fachkräfte für IT-Sicherheit, die schwerpunktmäßig für die plattformübergreifende Sicherheit innerhalb ihrer Unternehmen zuständig sind.
+* Beraterinnen und Berater von Adobe sowie Partner, die detaillierte Ressourcen für Kundschaft sowie Partner benötigen.
 
 Die folgende Abbildung zeigt Komponenten und Protokolle, die in einer typischen AEM Forms-Bereitstellung verwendet werden, einschließlich der entsprechenden Firewall-Topologie:
 
 ![typical-architecture](assets/typical-architecture.png)
 
-AEM Forms ist in hohem Maße anpassbar und kann in vielen verschiedenen Umgebungen verwendet werden. Einige der Empfehlungen gelten möglicherweise nicht für Ihre Organisation.
+AEM Forms kann in hohem Maß angepasst und in vielen verschiedenen Umgebungen eingesetzt werden. Einige der Empfehlungen sind möglicherweise für Ihr Unternehmen nicht relevant.
 
-## Sichere Transportschicht {#secure-transport-layer}
+## Sichere Transportebene {#secure-transport-layer}
 
-Sicherheitslücken in der Transportschicht gehören zu den ersten Bedrohungen für einen Internet-orientierten oder Intranet-orientierten Anwendungsserver. In diesem Abschnitt wird der Prozess zum Absichern von Hostrechnern im Netzwerk gegen diese Schwachstellen beschrieben. Dabei geht es um die Netzwerksegmentierung, das Härten des TCP/IP-Stacks (Transmission Control Protocol/Internet Protocol) und die Verwendung von Firewalls für den Schutz des Hosts.
+Sicherheitslücken in der Transportebene gehören zu den Hauptbedrohungen für Internet- oder Intranet-orientierte Anwendungs-Server. In diesem Abschnitt wird der Prozess zum Absichern von Hostrechnern im Netzwerk gegen diese Schwachstellen beschrieben. Dabei geht es um die Netzwerksegmentierung, das Härten des TCP/IP-Stacks (Transmission Control Protocol/Internet Protocol) und die Verwendung von Firewalls für den Schutz des Hosts.
 
-### Beliebige offene Endpunkte begrenzen  {#limit-open-endpoints}
+### Begrenzen offener Endpunkte  {#limit-open-endpoints}
 
-Eine Organisation kann über eine externe Firewall verfügen, um den Zugriff zwischen einem Endbenutzer und einer AEM Forms-Veröffentlichungsfarm zu beschränken. Die Organisation kann auch über eine interne Firewall verfügen, um den Zugriff zwischen einer Veröffentlichungsfarm und anderen Elementen innerhalb der Organisation zu beschränken (z. B. Autoreninstanz, Verarbeitungsinstanz, Datenbanken). Lassen Sie mithilfe von Firewalls den Zugriff auf eine begrenzte Anzahl von AEM Forms-URLs für Endbenutzer und zwischen den Elementen innerhalb des Unternehmens zu:
+In einem Unternehmen kann eine externe Firewall vorhanden sein, um den Zugriff zwischen den Endbenutzenden und der AEM Forms-Veröffentlichungsfarm zu begrenzen. Das Unternehmen kann außerdem eine interne Firewall verwenden, um den Zugriff zwischen einer Veröffentlichungsfarm und anderen unternehmensinternen Elementen (z. B. Autoreninstanz, Verarbeitungsinstanz, Datenbanken) zu begrenzen. Lassen Sie mithilfe von Firewalls den Zugriff auf eine begrenzte Anzahl von AEM Forms-URLs für Endbenutzer und zwischen den Elementen innerhalb des Unternehmens zu:
 
-#### Externe Firewall konfigurieren  {#configure-external-firewall}
+#### Konfigurieren der externen Firewall  {#configure-external-firewall}
 
-Sie können eine externe Firewall konfigurieren, um bestimmten AEM Forms-URLs den Zugriff auf das Internet zu ermöglichen. Der Zugriff auf diese URLs ist erforderlich zum Ausfüllen eines adaptiven Formulars, für HTML5, einen Correspondence Management-Brief oder die Anmeldung bei einem AEM Forms-Server:
+Sie können eine externe Firewall konfigurieren, um für bestimmte AEM Forms-URLs den Zugriff auf das Internet zu erlauben. Der Zugriff auf diese URLs ist erforderlich zum Ausfüllen eines adaptiven Formulars, für HTML5, einen Correspondence Management-Brief oder die Anmeldung bei einem AEM Forms-Server:
 
 <table> 
  <tbody>
@@ -93,9 +93,9 @@ Sie können eine externe Firewall konfigurieren, um bestimmten AEM Forms-URLs de
  </tbody>
 </table>
 
-#### Interne Firewall konfigurieren  {#configure-internal-firewall}
+#### Konfigurieren der internen Firewall  {#configure-internal-firewall}
 
-Sie können die interne Firewall so konfigurieren, dass bestimmte AEM Forms-Komponenten (z. B. Autoreninstanz, Verarbeitungsinstanz, Datenbanken) mit der Veröffentlichungs-Farm und anderen im Topologieschema erwähnten internen Komponenten kommunizieren können:
+Sie können die interne Firewall konfigurieren, um bestimmten Komponenten von AEM Forms (z. B. Autoreninstanz, Verarbeitungsinstanz, Datenbanken) die Kommunikation mit der Veröffentlichungsfarm und anderen im Topologiediagramm genannten internen Komponenten zu ermöglichen:
 
 <table> 
  <tbody>
@@ -108,19 +108,19 @@ Sie können die interne Firewall so konfigurieren, dass bestimmte AEM Forms-Komp
    <td>/bin/receive</td> 
   </tr>
   <tr>
-   <td>Verarbeitungsserver</td> 
+   <td>Verarbeitungs-Server</td> 
    <td>/content/forms/fp/*</td> 
   </tr>
   <tr>
-   <td>Forms Workflow Add-On-Server (AEM Forms on JEE-Server)</td> 
+   <td>Forms Workflow-Add-On-Server (AEM Forms auf JEE-Server)</td> 
    <td>/soap/sdk</td> 
   </tr>
  </tbody>
 </table>
 
-#### Einrichten von Repository-Berechtigungen und Zugriffssteuerungslisten (ACLs) {#setup-repository-permissions-and-access-control-lists-acls}
+#### Einrichten von Repository-Berechtigungen und Zugriffskontrolllisten (Access Control Lists, ACLs) {#setup-repository-permissions-and-access-control-lists-acls}
 
-Standardmäßig sind auf den Veröffentlichungsknoten verfügbare Assets für alle zugänglich. Der schreibgeschützte Zugriff ist für alle Assets aktiviert. Sie ist erforderlich, um den anonymen Zugriff zu aktivieren. Wenn Sie die Formularansicht beschränken und den Zugriff nur an authentifizierte Benutzer senden möchten, verwenden Sie eine gemeinsame Gruppe, um nur authentifizierten Benutzern Lesezugriff auf die Assets zu gewähren, die auf den Veröffentlichungsknoten verfügbar sind. Die folgenden Speicherorte/Verzeichnisse enthalten Formularelemente, die gehärtet werden müssen (schreibgeschützter Zugriff für authentifizierte Benutzer):
+Standardmäßig sind Assets auf den Veröffentlichungsknoten für alle Benutzenden zugänglich. Der Lesezugriff ist für alle Assets aktiviert. Dies ist erforderlich, um anonymen Zugriff zuzulassen. Wenn Sie die Formularansicht einschränken und nur authentifizierten Personen Zugriff gewähren möchten, verwenden Sie eine gemeinsame Gruppe, um nur authentifizierten Personen schreibgeschützten Zugriff auf die auf den Veröffentlichungsknoten verfügbaren Assets zu gewähren. Die folgenden Speicherorte/Verzeichnisse enthalten Formular-Assets, die durch Beschränken des Lesezugriffs auf authentifizierte Personen abgesichert („gehärtet“) werden müssen:
 
 * /content/&amp;ast;
 * /etc.clientlibs/fd/&amp;ast;
@@ -128,71 +128,71 @@ Standardmäßig sind auf den Veröffentlichungsknoten verfügbare Assets für al
 
 ## Sichere Verarbeitung von Formulardaten  {#securely-handle-forms-data}
 
-AEM Forms speichert Daten an vordefinierten Speicherorten und temporären Ordnern. Schützen Sie diese Daten, um eine unbefugte Nutzung zu verhindern.
+AEM Forms speichert Daten unter vordefinierten Speicherorten und temporären Ordnern. Schützen Sie diese Daten, um eine unbefugte Nutzung zu verhindern.
 
-### Periodische Bereinigung des temporären Ordners einrichten {#setup-periodic-cleanup-of-temporary-folder}
+### Einrichten einer periodischen Bereinigung des temporären Ordners {#setup-periodic-cleanup-of-temporary-folder}
 
-Wenn Sie Formulare für Dateianhänge konfigurieren, überprüfen oder eine Vorschau von Komponenten anzeigen, werden die entsprechenden Daten auf den Veröffentlichungsknoten unter /tmp/fd/ gespeichert. Die Daten werden regelmäßig bereinigt. Sie können den standardmäßigen Bereinigungsauftrag für Daten so ändern, dass er aggressiver ist. Um den für die Datenbereinigung geplanten Auftrag zu ändern, öffnen Sie AEM Web Console, öffnen Sie die Aufgabe &quot;Bereinigung des temporären AEM Forms-Speichers&quot;und ändern Sie den Cron-Ausdruck.
+Wenn Sie Formulare für Dateianhänge konfigurieren, überprüfen oder Komponenten in der Vorschau anzeigen, werden die entsprechenden Daten auf den Veröffentlichungsknoten unter „/tmp/fd/“ gespeichert. Die Daten werden regelmäßig bereinigt. Sie können den Auftrag zur standardmäßigen Datenbereinigung ändern und aggressiver einstellen. Um den geplanten Auftrag zur Bereinigung der Daten zu ändern, öffnen Sie die AEM Web-Konsole und dann die Aufgabe zum Bereinigen des temporären Speichers von AEM Forms und ändern Sie den Cron-Ausdruck.
 
-In den oben genannten Szenarien werden die Daten nur für authentifizierte Benutzer gespeichert. Darüber hinaus sind die Daten durch Zugriffssteuerungslisten (ACLs) geschützt. Die Änderung der Datenbereinigung ist daher ein weiterer Schritt zum Schutz von Informationen.
+In den oben genannten Szenarien werden die Daten nur für authentifizierte Benutzende gespeichert. Darüber hinaus sind die Daten durch Zugriffskontrolllisten (Access Control Lists, ACLs) geschützt. Die Änderung der Datenbereinigung ist damit ein weiterer Schritt zum Schutz der Informationen.
 
-### Sichere Daten, die von der Sendeaktion des Forms Portal gespeichert werden {#secure-data-saved-by-forms-portal-submit-action}
+### Sichern der durch die Übermittlungsaktion des Formularportals gespeicherten Daten {#secure-data-saved-by-forms-portal-submit-action}
 
-Standardmäßig speichert die Übermittlungsaktion des Forms Portal für adaptive Formulare Daten im lokalen Repository des Veröffentlichungsknotens. Die Daten werden unter /content/forms/fp gespeichert. **Es wird nicht empfohlen, Daten in der Veröffentlichungsinstanz zu speichern.**
+Standardmäßig speichert die Übermittlungsaktion von adaptiven Formularen im Formularportal Daten im lokalen Repository des Veröffentlichungsknotens. Die Daten werden unter „/content/forms/fp“ gespeichert. **Wir raten davon ab, Daten auf der Veröffentlichungsinstanz zu speichern.**
 
-Sie können den Speicherdienst so konfigurieren, dass er über den Kabel an den Verarbeitungscluster sendet, ohne dass irgendetwas lokal auf dem Veröffentlichungsknoten gespeichert wird. Der Verarbeitungscluster befindet sich in einer sicheren Zone hinter der privaten Firewall und die Daten bleiben geschützt.
+Sie können den Speicherdienst so konfigurieren, dass er über das Netzwerk an den Verarbeitungs-Cluster sendet, ohne dass Daten lokal auf dem Veröffentlichungsknoten gespeichert werden. Der Verarbeitungs-Cluster befindet sich in einer sicheren Zone hinter der privaten Firewall und die Daten bleiben sicher.
 
-Verwenden Sie die Anmeldeinformationen des Verarbeitungsservers für AEM DS-Einstellungsdienst, um Daten vom Veröffentlichungsknoten an den Verarbeitungsserver zu posten. Verwenden Sie die Anmeldeinformationen eines eingeschränkten Benutzers ohne Administratorrechte mit Lese- und Schreibzugriff auf das Repository des Verarbeitungsservers. Weitere Informationen finden Sie unter [Konfigurieren von Speicherdiensten für Entwürfe und Übermittlungen](/help/forms/using/configuring-draft-submission-storage.md).
+Verwenden Sie die Anmeldedaten des Verarbeitungs-Servers für den AEM DS-Einstellungsdienst, um Daten vom Veröffentlichungsknoten an den Verarbeitungs-Server zu senden. Verwenden Sie die Anmeldedaten einer Person mit eingeschränkten Rechten, die nicht zu den Admins gehört und über Lese- und Schreibzugriff auf das Repository des Verarbeitungs-Servers verfügt. Weitere Informationen finden Sie unter [Konfigurieren von Speicherdiensten für Entwürfe und Übermittlungen](/help/forms/using/configuring-draft-submission-storage.md).
 
-### Sichere Daten, die vom Formulardatenmodell (FDM) verarbeitet werden {#secure-data-handled-by-form-data-model-fdm}
+### Sichern der durch das Formulardatenmodell (FDM) verarbeiteten Daten {#secure-data-handled-by-form-data-model-fdm}
 
-Verwenden Sie Benutzerkonten mit den erforderlichen Mindestberechtigungen zum Konfigurieren von Datenquellen für das Formulardatenmodell (FDM). Die Verwendung des Administratorkontos kann unbefugten Benutzern den offenen Zugriff auf Metadaten- und Schemaentitäten ermöglichen.\
-Die Datenintegration stellt außerdem Methoden zum Autorisieren von FDM-Dienstanfragen bereit. Sie können zur Validierung einer Anforderung Berechtigungsmechanismen vor und nach der Ausführung einfügen. Die Dienstanforderungen werden beim Vorausfüllen eines Formulars, beim Senden eines Formulars und beim Aufrufen von Diensten über eine Regel generiert.
+Verwenden Sie Benutzerkonten mit den minimal erforderlichen Berechtigungen zum Konfigurieren der Datenquellen für das Formulardatenmodell (FDM). Wenn Sie ein Konto mit administrativen Rechten verwenden, erhalten nicht autorisierte Personen möglicherweise offenen Zugriff auf Metadaten und Schema-Entitäten.\
+Die Datenintegration stellt außerdem Methoden zum Autorisieren von FDM-Dienstanfragen bereit. Sie können vor und nach der Ausführung Autorisierungsmechanismen einfügen, um Anfragen zu validieren. Die Dienstanforderungen werden beim Vorausfüllen und beim Absenden eines Formulars sowie beim Aufrufen von Diensten mithilfe einer Regel generiert.
 
-**Autorisierung vor der Verarbeitung:** Sie können die Autorisierung vor der Verarbeitung verwenden, um die Authentizität einer Anforderung zu überprüfen, bevor Sie sie ausführen. Sie können Eingaben, Dienst- und Anfragedetails verwenden, um die Ausführung der Anfrage zu ermöglichen oder zu stoppen. Wenn die Ausführung angehalten wird, können Sie die Datenintegrationsausnahme OPERATION_ACCESS_DENIED zurückgeben. Sie können auch die Clientanforderung ändern, bevor Sie sie zur Ausführung senden. Beispielsweise durch Ändern der Eingabe und Hinzufügen zusätzlicher Informationen.
+**Autorisierung vor Verarbeitung:** Mithilfe der Autorisierung vor der Verarbeitung können Sie die Authentizität einer Anfrage validieren, bevor diese ausgeführt wird. Dabei können Sie die Ausführung der Anfrage mithilfe von Eingaben sowie Dienst- und Anfragedetails zulassen oder blockieren. Für den Fall, dass die Ausführung gestoppt wird, können Sie die Datenintegrationsausnahme „OPERATION_ACCESS_DENIED“ ausgeben lassen. Sie können darüber hinaus die Client-Anfrage ändern, bevor sie zur Ausführung übermittelt wird. So könnten Sie beispielsweise die Eingabe ändern und zusätzliche Informationen hinzufügen.
 
-**Autorisierung nach Verarbeitung:** Mithilfe der Autorisierung nach Verarbeitung können Sie die Ergebnisse validieren und kontrollieren, bevor sie an den Anforderer zurückgegeben werden. Sie können auch zusätzliche Daten filtern, prunen und in Ergebnisse einfügen.
+**Autorisierung nach Verarbeitung:** Mithilfe der Autorisierung nach Verarbeitung können Sie die Ergebnisse validieren und kontrollieren, bevor sie an den Anforderer zurückgegeben werden. Sie können auch zusätzliche Daten filtern, bereinigen und in Ergebnisse einfügen.
 
-### Benutzerzugriff beschränken {#limit-user-access}
+### Begrenzen des Benutzerzugriffs {#limit-user-access}
 
 Für Autoren-, Veröffentlichungs- und Verarbeitungsinstanzen sind unterschiedliche Benutzerrollen erforderlich. Führen Sie keine Instanzen mit Administrator-Anmeldedaten aus.
 
-**Auf einer Veröffentlichungsinstanz:**
+**In einer Veröffentlichungsinstanz:**
 
-* Nur Benutzer der Gruppe &quot;forms-users&quot;können Formulare in der Vorschau anzeigen, Entwürfe erstellen und senden.
-* Nur Benutzer der Gruppe &quot;cm-user-agent&quot;können Correspondence Management-Briefe in der Vorschau anzeigen.
-* Deaktivieren Sie den gesamten nicht erforderlichen anonymen Zugriff.
+* Nur Benutzende der Gruppe „forms-users“ können Formulare in der Vorschau anzeigen, Entwürfe erstellen und Formulare absenden.
+* Nur Benutzende der Gruppe „cm-user-agent“ können Korrespondenzverwaltungs-Briefe in der Vorschau anzeigen.
+* Deaktivieren Sie jeglichen nicht erforderlichen anonymen Zugriff.
 
 **Auf einer Autoreninstanz:**
 
-* Es gibt einen anderen Satz vordefinierter Gruppen mit spezifischen Berechtigungen für jede Person. Benutzer zu Gruppe zuordnen.
+* Für jede Rolle steht jeweils eine Reihe vordefinierter Gruppen mit spezifischen Berechtigungen zur Verfügung. Benutzer zu Gruppe zuordnen.
 
-   * Benutzer der Gruppe &quot;forms-user&quot;:
+   * Benutzende der Gruppe „forms-user“:
 
-      * kann ein Formular erstellen, ausfüllen, veröffentlichen und senden.
-      * kann kein XDP-basiertes adaptives Formular erstellen.
-      * nicht berechtigt sind, Skripte für adaptive Formulare zu schreiben.
-      * kann XDP nicht importieren oder ein Paket, das XDP enthält
+      * können ein Formular erstellen, ausfüllen, veröffentlichen und absenden
+      * können kein XDP-basiertes adaptives Formular erstellen
+      * sind nicht berechtigt, Skripte für adaptive Formulare zu schreiben
+      * können weder XDP importieren noch Pakete, die XDP enthalten
 
    * Benutzer der Gruppe „forms-power-user“ können alle Typen von Formularen erstellen, ausfüllen, veröffentlichen und senden, Skripte für adaptive Formulare schreiben und Pakete importieren, die XDP enthalten.
-   * Ein Benutzer von template-authors und template-power-user kann eine Vorlage in der Vorschau anzeigen und erstellen.
-   * Ein Benutzer von fdm-authors kann ein Formulardatenmodell erstellen und ändern.
-   * Ein Benutzer der Gruppe &quot;cm-user-agent&quot;kann Correspondence Management-Briefe erstellen, in der Vorschau anzeigen und veröffentlichen.
-   * Ein Benutzer der Gruppe &quot;Workflow-Editoren&quot;kann eine Inbox-Anwendung und ein Workflow-Modell erstellen.
+   * Benutzende der Gruppen „template-authors“ und „template-power-user“ können Vorlagen in der Vorschau anzeigen und erstellen.
+   * Benutzende der Gruppe „fdm-authors“ können Formulardatenmodelle erstellen und ändern.
+   * Benutzende der Gruppe „cm-user-agent“ können Korrespondenzverwaltungs-Briefe erstellen, in der Vorschau anzeigen und veröffentlichen.
+   * Benutzende der Gruppe „workflow-editors“ können Posteingang-Anwendungen und Workflow-Modelle erstellen.
 
-**Beim Verarbeitungsautor:**
+**Beim Verarbeiten des Authorings:**
 
-* Erstellen Sie für Anwendungsfälle zum Remote-Speichern und Senden einen Benutzer mit Lese-, Erstellungs- und Änderungsberechtigungen für den Inhalts-/Formular-/fp-Pfad des CRX-Repository.
-* Fügen Sie Benutzer zu Workflow-Benutzergruppen hinzu, um einem Benutzer die Verwendung AEM Posteingangsanwendungen zu ermöglichen.
+* Erstellen Sie für Anwendungsfälle zum Remote-Speichern und -Absenden Benutzende mit Lese-, Erstellungs- und Änderungsberechtigungen für den Pfad „content/form/fp“ des CRX-Repositorys.
+* Fügen Sie Benutzende zur Gruppe „workflow-user“ hinzu, um ihnen die Verwendung der AEM-Posteingang-Anwendungen zu ermöglichen.
 
-## Sichern von Intranetelementen einer AEM Forms-Umgebung {#secure-intranet-elements-of-an-aem-forms-environment}
+## Sichern von Intranet-Elementen einer AEM Forms-Umgebung {#secure-intranet-elements-of-an-aem-forms-environment}
 
-Im Allgemeinen werden Verarbeitungscluster und Forms Workflow-Add-on (AEM Forms on JEE) hinter einer Firewall ausgeführt. Diese werden also als sicher betrachtet. Dennoch können Sie diese Umgebungen mit einigen weiteren Maßnahmen absichern:
+Im Allgemeinen werden Verarbeitungs-Cluster und das Forms Workflow-Add-on (AEM Forms on JEE) hinter einer Firewall ausgeführt. Sie können daher als sicher betrachtet werden. Dennoch können Sie diese Umgebungen mit einigen weiteren Maßnahmen absichern:
 
-### Sicherer Verarbeitungscluster {#secure-processing-cluster}
+### Sichern eines Verarbeitungs-Clusters {#secure-processing-cluster}
 
-Ein Verarbeitungscluster wird im Autorenmodus ausgeführt, verwendet ihn jedoch nicht für Entwicklungsaktivitäten. Lassen Sie nicht zu, dass normale Benutzer in die Gruppen „content-authors“ und „form-users“ aufgenommen werden.
+Ein Verarbeitungs-Cluster wird im Authoring-Modus ausgeführt. Verwenden Sie ihn jedoch nicht für Entwicklungszwecke. Lassen Sie nicht zu, dass normale Benutzer in die Gruppen „content-authors“ und „form-users“ aufgenommen werden.
 
-### Verwenden AEM Best Practices zur Sicherung einer AEM Forms-Umgebung {#use-aem-best-practices-to-secure-an-aem-forms-environment}
+### Verwenden der Best Practices in AEM zur Sicherung einer AEM Forms-Umgebung {#use-aem-best-practices-to-secure-an-aem-forms-environment}
 
-Dieses Dokument enthält spezifische Anweisungen für die AEM Forms-Umgebung. Sie sollten sicherstellen, dass Ihre zugrunde liegende AEM-Installation bei der Bereitstellung sicher ist. Detaillierte Anweisungen finden Sie in der Dokumentation zur [AEM-Sicherheits-Checkliste](/help/sites-administering/security-checklist.md).
+Dieses Dokument enthält spezifische Anweisungen für eine AEM Forms-Umgebung. Sie sollten sicherstellen, dass Ihre zugrundeliegende AEM-Installation bei der Bereitstellung sicher ist. Detaillierte Anweisungen finden Sie in der Dokumentation zur [AEM-Sicherheits-Checkliste](/help/sites-administering/security-checklist.md).

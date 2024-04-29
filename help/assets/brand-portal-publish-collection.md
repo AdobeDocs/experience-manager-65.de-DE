@@ -1,6 +1,6 @@
 ---
 title: Veröffentlichen von Sammlungen in Brand Portal
-description: Erfahren Sie, wie Sie Sammlungen in Brand Portal veröffentlichen und deren Veröffentlichung rückgängig machen können.
+description: Erfahren Sie, wie Sie Sammlungen in Brand Portal veröffentlichen und Veröffentlichungen rückgängig machen können.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: brand-portal
@@ -11,9 +11,9 @@ role: User
 exl-id: 8f426012-d9ec-418e-8ab6-78e4aeff7538
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '321'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Spätere Änderungen an der ursprünglichen Sammlung in AEM Assets spiegeln sich
 >
 >Inhaltsfragmente können nicht in Brand Portal veröffentlicht werden. Wenn Sie daher in der AEM-Autoreninstanz Inhaltsfragmente auswählen, ist die Aktion **In Brand Portal veröffentlichen** nicht verfügbar.
 >
->Wenn Sammlungen, die Inhaltsfragmente enthalten, aus AEM Autoreninstanz in Brand Portal veröffentlicht werden, werden alle Inhalte des Ordners mit Ausnahme der Inhaltsfragmente auf die Brand Portal-Benutzeroberfläche repliziert.
+>Wenn Sammlungen, die Inhaltsfragmente enthalten, über AEM Author in Brand Portal veröffentlicht werden, wird der gesamte Inhalt des Ordners mit Ausnahme der Inhaltsfragmente in der Brand Portal-Oberfläche repliziert.
 
 ## Veröffentlichen einer Sammlung in Brand Portal {#publish-a-collection-to-brand-portal}
 

@@ -8,9 +8,9 @@ feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3842'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ Verwenden Sie den Datenwörterbucheditor zum Erstellen eines Datenwörterbuchs o
    * Nur der Composite-Typ ist als DDE der obersten Ebene in einem Datenwörterbuch zulässig.
    * Name, Referenzname und Elementtypen sind obligatorische Felder für Datenwörterbücher und DDEs.
    * Der Referenzname muss eindeutig sein.
-   * Ein übergeordnetes DDE (Composite) darf nicht zwei untergeordnete DDE mit demselben Namen haben.
+   * Ein übergeordnetes DDE (Composite) darf nicht zwei untergeordnete DDEs mit demselben Namen haben.
    * „Enums“ enthalten nur Primitive-Zeichenfolgentypen.
 
    Weitere Informationen zu Composite-, Collection- und Primitive-Elementen und zum Arbeiten mit Datenwörterbuchelementen finden Sie unter [Zuordnen von Datenwörterbuchelementen zum XML-Schema](#mappingddetoschema).
@@ -465,7 +465,7 @@ Der Datenwörterbucheditor erzwingt folgende Validierungen beim Erstellen oder A
 * Composite- und Collection-Elemente sind auf Blattebene nicht zulässig. Nur Primitive-Elemente (String, Date, Number, Boolean) sind auf Blattebene zulässig. Diese Validierung stellt sicher, dass es keine Composite- oder Collection-Elemente ohne untergeordnetes DDE gibt.
 * Beim Hochladen von XSD-Dateien zum Erstellen eines Datenwörterbuchs fordert der Datenwörterbucheditor ein Element der obersten Ebene an, wenn mehrere Elemente vorhanden sind.
 * Der Name ist der einzige erforderliche Parameter für ein Datenwörterbuch.
-* Ein übergeordnetes DDE (Composite) darf nicht zwei untergeordnete DDE mit demselben Namen haben
+* Ein übergeordnetes DDE (Composite) darf nicht zwei untergeordnete DDEs mit demselben Namen haben.
 * Stellt sicher, dass ein DDE nur als „berechnet“ gekennzeichnet ist, wenn es sich nicht um einen erforderlichen Parameter handelt. Ein erforderliches Element kann nicht berechnet werden und ein berechnetes Element kann nicht erforderlich sein. Außerdem dürfen Collection- und Composite-Elemente keine berechneten Elemente sein.
 * Stellt sicher, dass ein DDE nur als „erforderlich“ gekennzeichnet ist, wenn es nicht berechnet wird. Außerdem wird sichergestellt, dass es sich nicht um das „collectionElement“ handelt, das den Collection-Typ (die einzigen untergeordneten Elemente eines Collection-Elements) angibt.
 * Leere oder duplizierte Schlüssel sind in den erweiterten Eigenschaften für ein Datenwörterbuch oder DDE nicht zulässig.

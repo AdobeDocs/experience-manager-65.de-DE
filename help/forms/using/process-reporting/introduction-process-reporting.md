@@ -8,9 +8,9 @@ docset: aem65
 exl-id: 674d28dc-7353-49de-9e12-b1998e1509c7
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '294'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Process Reporting bietet außerdem die Möglichkeit, die Berichts- und Abfrageda
 
 Verwenden Sie Filter, um eine bestimmte Ansicht Ihrer Daten zu erhalten.
 
-Sie können Prozesse oder Aufgaben nach ID, Dauer, Start- und Enddatum, Prozessinitiator usw. suchen.
+Sie können Prozesse oder Aufgaben nach ID, Dauer, Start- und Enddatum, Prozessinitiator usw. durchsuchen.
 
 Sie können mehrere Filter kombinieren, um bestimmte Berichte zu erstellen.
 

@@ -4,7 +4,7 @@ description: Experience Manager Forms kann mit bestimmten Versionen von Oracle J
 exl-id: 6a8a7cb7-77d6-4bfc-82f3-82d0fddfc10a
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '160'
 ht-degree: 100%
 

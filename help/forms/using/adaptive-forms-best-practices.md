@@ -7,9 +7,9 @@ feature: Adaptive Forms, Foundation Components, Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 474a14a247afecdd8415f75997279d1ecd394cda
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5504'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 84%
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Mit Adobe Experience Manager(AEM)-Formularen können Sie komplexe Transaktionen in einfache, beeindruckende digitale Erlebnisse transformieren. Allerdings bedarf es gemeinsamer Anstrengungen, ein effizientes und produktives AEM Forms-System zu implementieren, zu erstellen, auszuführen und zu warten.
 
@@ -64,7 +64,7 @@ Nachdem Sie Ihr AEM-Projekt eingerichtet haben, definieren Sie eine Strategie f�
 * Eine adaptive Formularvorlage ist eine spezielle AEM-Seite, die die Struktur und die Informationen für Kopfzeile und Fußzeile eines adaptiven Formulars definiert. Eine Vorlage enthält vorkonfigurierte Layouts, Stile und eine einfache Struktur für ein adaptives Formular. AEM Forms bietet Standardvorlagen und -Komponenten, die Sie verwenden können, um adaptive Formulare zu erstellen. Sie können jedoch benutzerdefinierte Vorlagen und Komponenten entsprechend Ihren Anforderungen erstellen. Es wird empfohlen, Anforderungen für zusätzliche Vorlagen und Komponenten zu erfassen, die Sie in Ihren adaptiven Formularen benötigen. Weitere Informationen finden Sie unter [Anpassen von adaptiven Formularen und Komponenten](/help/forms/using/adaptive-forms-best-practices.md#customize-components).
 * Mit AEM Forms können Sie adaptive Formulare erstellen, die auf folgenden Formularmodellen basieren. Die Formularmodelle fungieren als Schnittstelle für den Datenaustausch zwischen einem Formular und einem AEM-System und liefern eine XML-basierte Struktur für den Datenfluss innerhalb und außerhalb eines adaptiven Formulars. Außerdem legen die Formularmodelle die Regeln und Beschränkungen für adaptive Formulare in Form von Schema- und XFA-Beschränkungen fest.
 
-   * **Keines**: Adaptive Formulare, die mit dieser Option erstellt wurden, verwenden kein Formularmodell. Die XML-Datendatei, die aus diesen Formularen generiert wird, hat eine flache Struktur mit Feldern und entsprechenden Werten.
+   * **Keine**: Adaptive Formulare, die mit dieser Option erstellt worden sind, verwenden kein Formularmodell. Die XML-Datendatei, die aus diesen Formularen generiert wird, hat eine flache Struktur mit Feldern und entsprechenden Werten.
    * **XML- oder JSON-Schema**: XML- und JSON-Schemata stellen die Struktur dar, in der Daten vom Back-End-System in Ihrer Organisation produziert oder genutzt werden. Sie können ein Schema mit einem adaptiven Formular verknüpfen und dem adaptiven Formular mithilfe der Elemente aus dem Schema dynamische Inhalte hinzufügen. Die Elemente des Schemas stehen auf der Registerkarte „Datenmodellobjekt“ des Inhalts-Browsers für das Erstellen von adaptiven Formularen zur Verfügung. Sie können die Schemaelemente zum Erstellen des Formulars ziehen und ablegen.
    * **XFA-Formularvorlage**: Dieses Formularmodell ist ideal, wenn bereits ein Bestand an XFA-basierten HTML5-Formularen vorhanden ist. Es bietet eine direkte Möglichkeit, Ihre XFA-basierten Formulare in adaptive Formulare zu konvertieren. Alle vorhandenen XFA-Regeln bleiben in den zugehörigen adaptiven Formularen erhalten. Die resultierenden adaptiven Formulare unterstützen XFA-Konstrukte, z. B. Überprüfungen, Ereignisse, Eigenschaften und Muster.
    * **Formulardatenmodell**: Dies ist das bevorzugte Formularmodell, wenn Sie Ihre Backend-Systeme wie Datenbanken, Web-Services und AEM-Benutzerprofile integrieren möchten, um adaptive Formulare vorauszufüllen und übermittelte Formulardaten zurück in die Backend-Systeme zu schreiben. Mit einem Formulardatenmodell-Editor können Sie Entitäten und Dienste in einem Formulardatenmodell definieren und konfigurieren, das Sie zum Erstellen adaptiver Formulare verwenden können. Weitere Informationen finden Sie unter [AEM Forms-Datenintegration](/help/forms/using/data-integration.md).
@@ -134,7 +134,7 @@ Der Regeleditor bietet einen visuellen Editor und einen Code-Editor zum Schreibe
 
 * Verweisen Sie auf Komponenten durch die relative eindeutige Hierarchie, um Konflikte zu vermeiden. Beispiel: `parentName.fieldName`.
 
-* Wenn Sie komplexe oder häufig verwendete Regeln verarbeiten, sollten Sie in Erwägung ziehen, Geschäftslogik als Funktionen in einer separaten Client-Bibliothek zu schreiben, die Sie über adaptive Formulare hinweg angeben und wiederverwenden können. Die Client-Bibliothek sollte eine eigenständige Bibliothek sein und darf keine externen Abhängigkeiten, außer von jQuery und Underscore.js haben. Sie können die Client-Bibliothek auch benutzen, um [serverseitige erneute Überprüfung](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form) der übermittelten Formulardaten zu erzwingen.
+* Beim Bearbeiten von komplexen oder häufig verwendeten Regeln sollten Sie die Business-Logik als Funktionen in eine separate Client-Bibliothek schreiben, die Sie in adaptiven Formularen festlegen und wieder verwenden können. Die Client-Bibliothek sollte eine eigenständige Bibliothek sein und darf keine externen Abhängigkeiten, außer von jQuery und Underscore.js haben. Sie können die Client-Bibliothek auch benutzen, um [serverseitige erneute Überprüfung](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form) der übermittelten Formulardaten zu erzwingen.
 * Adaptive Formulare bieten eine Reihe von APIs, über die Sie kommunizieren und Aktionen für adaptive Formulare anzeigen können. Einige der wichtigsten APIs sind im Folgenden aufgeführt. Weitere Informationen finden Sie in der [Referenz zur JavaScript-Bibliotheks-API für adaptive Formulare](https://adobe.com/go/learn_aemforms_documentation_63_de).
 
    * `guideBridge.reset()`: Setzt ein Formular zurück.
@@ -356,65 +356,65 @@ Eine der größten Herausforderungen für Unternehmen besteht im Umgang mit pers
 * Verwenden Sie einen sicheren externen Speicherort wie eine Datenbank, um Daten aus Entwürfen und übermittelten Formularen zu speichern. Siehe [Konfigurieren von externem Speicher für Entwürfe und eingereichte Formulardaten](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
 * Verwenden Sie die Formularkomponente „Geschäftsbedingungen“, um die ausdrückliche Zustimmung der Benutzenden vor Aktivierung der automatischen Speicherung einzuholen. Aktivieren Sie in diesem Fall die automatische Speicherung nur, wenn die Benutzenden den Bedingungen in der Komponente „Geschäftsbedingungen“ zustimmen.
 
-## Wählen Sie den Regeleditor, den Code-Editor oder benutzerdefinierte Client-Bibliotheken für Ihr adaptives Formular aus. {#RuleEditor-CodeEditor-ClientLibs}
+## Auswählen von Regeleditor, Code-Editor oder benutzerdefinierten Client-Bibliotheken für adaptive Formulare {#RuleEditor-CodeEditor-ClientLibs}
 
 ### Regeleditor {#rule-editor}
 
 <!--The AEM Forms Rule Editor offers predefined functions for defining rules in adaptive forms without extensive programming. It facilitates the implementation of conditional logic, data validation, and integration with external sources. This visual interface is especially valuable for business users and form designers, enabling them to create dynamic and complex rules with ease, here we discusss few use cases where rule editor allows you to:-->
 
-Der AEM Forms-Regeleditor bietet eine visuelle Benutzeroberfläche zum Erstellen und Verwalten von Regeln, wodurch eine umfangreiche Kodierung weniger erforderlich ist. Dies kann besonders für Geschäftsbenutzer oder Formularentwickler nützlich sein, die möglicherweise keine fortgeschrittenen Programmierkenntnisse haben, aber Geschäftsregeln in den Formularen definieren und verwalten müssen. Hier werden einige Anwendungsfälle besprochen, in denen der Regeleditor Ihnen Folgendes ermöglicht:
+Der AEM Forms-Regeleditor bietet eine visuelle Benutzeroberfläche zum Erstellen und Verwalten von Regeln, wodurch sich der Programmieraufwand deutlich reduziert. Dies kann insbesondere für Business-Anwenderinnen und Business-Anwender oder Formularentwicklerinnen und Formularentwickler nützlich sein, die möglicherweise keine größeren Programmierkenntnisse besitzen, aber Geschäftsregeln in den Formularen definieren und verwalten müssen. Hier werden einige Anwendungsfälle besprochen, in denen der Regeleditor Folgendes ermöglicht:
 
-* <!-- Allows you --> So definieren Sie Geschäftsregeln für Ihre Formulare, ohne dass eine umfangreiche Programmierung erforderlich ist.
-* <!-- Use the Rule Editor when you need --> So implementieren Sie Bedingungslogik in Ihren Formularen. Dazu gehören das Ein- oder Ausblenden von Formularelementen, das Ändern von Feldwerten basierend auf bestimmten Bedingungen oder das dynamische Ändern des Verhaltens Ihrer Formulare.
-* <!--When you want --> Um Datenvalidierungsregeln für Formularübermittlungen zu erzwingen, kann der Regeleditor zum Definieren von Validierungsbedingungen verwendet werden.
-* <!-- When you need --> Um Ihre Formulare in externe Datenquellen (FDM) oder Dienste zu integrieren, kann der Regeleditor beim Definieren von Regeln zum Abrufen, Anzeigen oder Bearbeiten von Daten während der Formularinteraktionen helfen.
-* <!-- If you want -->Um dynamische und interaktive Formulare zu erstellen, die auf Benutzeraktionen reagieren, können Sie mit dem Regeleditor Regeln definieren, die das Verhalten von Formularelementen in Echtzeit steuern.
+* <!-- Allows you --> Definieren von Geschäftsregeln für Ihre Formulare, ohne dass eine umfangreiche Programmierung erforderlich ist.
+* <!-- Use the Rule Editor when you need --> Implementieren von Bedingungslogik in Ihren Formularen. Dazu gehören das Ein- oder Ausblenden von Formularelementen, das Ändern von Feldwerten basierend auf bestimmten Bedingungen oder das dynamische Ändern des Verhaltens Ihrer Formulare.
+* <!--When you want --> Durchsetzen von Datenvalidierungsregeln bei Formularübermittlungen. Der Regeleditor kann hier zum Definieren von Validierungsbedingungen verwendet werden.
+* <!-- When you need --> Integrieren Ihrer Formulare in externe Datenquellen (Formulardatenmodell) oder Dienste. Der Regeleditor kann hier beim Definieren von Regeln zum Abrufen, Anzeigen oder Bearbeiten von Daten während Formularinteraktionen helfen.
+* <!-- If you want -->Erstellen dynamischer und interaktiver Formulare, die auf Benutzeraktionen reagieren. Mit dem Regeleditor können Sie hier Regeln definieren, die das Verhalten von Formularelementen in Echtzeit steuern.
 
-Der Regel-Editor ist sowohl für AEM Forms Foundation-Komponenten als auch für Kernkomponenten verfügbar.
+Der Regeleditor ist sowohl für Foundation-Komponenten als auch für Kernkomponenten von AEM Forms verfügbar.
 
 ### Code-Editor {#code-editor}
 
-Der Code-Editor ist ein Tool in Adobe Experience Manager (AEM) Forms, mit dem Sie benutzerdefinierte Skripte und Code für komplexere und erweiterte Funktionen in Ihren Formularen schreiben können. Hier werden einige Anwendungsfälle besprochen:
+Der Code-Editor ist ein Tool in Adobe Experience Manager (AEM) Forms, mit dem Sie benutzerdefinierte Skripte und Code für komplexere und erweiterte Funktionen in Ihre Formulare schreiben können. Hier werden einige Anwendungsfälle besprochen:
 
-* Wenn Sie benutzerdefinierte clientseitige Logik oder Verhaltensweisen implementieren müssen, die über die Funktionen des AEM Forms Rule Editors hinausgehen. Mit dem Code-Editor können Sie JavaScript-Code schreiben, um komplexe Interaktionen, Berechnungen oder Überprüfungen zu handhaben.
-* Wenn für Ihr Formular eine serverseitige Verarbeitung oder Integration mit externen Systemen erforderlich ist, können Sie mit dem Code-Editor benutzerdefinierte serverseitige Skripte schreiben. Sie können auf die guideBridge-API im Code-Editor zugreifen, um jede komplexe Logik in Formularereignissen und -objekten zu implementieren.
+* Wenn Sie benutzerdefinierte Client-seitige Logik oder Verhaltensweisen implementieren müssen, die über die Funktionen des AEM Forms-Regeleditors hinausgehen, können Sie mit dem Code-Editor JavaScript-Code schreiben, um komplexe Interaktionen, Berechnungen oder Überprüfungen abzuwickeln.
+* Wenn für Ihr Formular eine Server-seitige Verarbeitung oder Integration mit externen Systemen erforderlich ist, können Sie mit dem Code-Editor benutzerdefinierte Server-seitige Skripte schreiben. Sie können auf die guideBridge-API im Code-Editor zugreifen, um komplexe Logik in Formularereignissen und -objekten zu implementieren.
 * Wenn Sie stark angepasste Benutzeroberflächen benötigen, die über die Standardfunktionen von AEM Forms-Komponenten hinausgehen, können Sie mit dem Code-Editor benutzerdefinierte Stile und Verhaltensweisen implementieren oder sogar benutzerdefinierte Formularkomponenten erstellen.
 * Wenn Ihr Formular asynchrone Vorgänge wie das asynchrone Laden von Daten umfasst, können Sie diese Vorgänge mit dem Code-Editor über benutzerdefinierten asynchronen JavaScript-Code verwalten.
 
-Beachten Sie, dass die Verwendung des Code-Editors ein gutes Verständnis der JavaScript- und AEM Forms-Architektur erfordert. Stellen Sie außerdem bei der Implementierung von benutzerdefiniertem Code sicher, dass Sie die Best Practices befolgen, die Sicherheitsrichtlinien einhalten und Ihren Code gründlich testen, um potenzielle Probleme in Produktionsumgebungen zu vermeiden. Sie können mithilfe des Code-Editors einen Rückruf für FDM implementieren.
+Beachten Sie, dass die Verwendung des Code-Editors gute Kenntnisse in JavaScript und der AEM Forms-Architektur voraussetzt. Stellen Sie außerdem bei der Implementierung von benutzerdefiniertem Code sicher, dass Sie die Best Practices befolgen, die Sicherheitsrichtlinien einhalten und Ihren Code gründlich testen, um potenzielle Probleme in Produktionsumgebungen zu vermeiden. Sie können mithilfe des Code-Editors eine Rückruffunktion für Formulardatenmodelle implementieren.
 
-Der Code-Editor ist nur für die AEM Forms Foundation-Komponente verfügbar. Für Kernkomponenten des adaptiven Formulars können Sie benutzerdefinierte Funktionen verwenden, um eigene Formularregeln zu erstellen, wie im nächsten Abschnitt beschrieben.
+Der Code-Editor ist nur für die Foundation-Komponente von AEM Forms verfügbar. Für die Kernkomponenten des adaptiven Formulars können Sie mithilfe benutzerdefinierter Funktionen eigene Formularregeln erstellen, wie im nächsten Abschnitt beschrieben.
 
 ### Benutzerdefinierte Funktionen {#custom-client-libs}
 
-Die Verwendung benutzerdefinierter Client-Bibliotheken in AEM Forms (Adobe Experience Manager Forms) kann in verschiedenen Szenarien von Vorteil sein, um die Funktionalität, den Stil oder das Verhalten Ihrer Formulare zu verbessern. In einigen Situationen kann die Verwendung benutzerdefinierter Client-Bibliotheken sinnvoll sein:
+Die Verwendung benutzerdefinierter Client-Bibliotheken in AEM Forms (Adobe Experience Manager Forms) kann in verschiedenen Szenarien von Vorteil sein, um Funktionalität, Stil oder Verhalten Ihrer Formulare zu verbessern. In bestimmten Situationen kann die Verwendung benutzerdefinierter Client-Bibliotheken sinnvoll sein:
 
-* Wenn Sie ein eindeutiges Design oder Branding für Ihre Formulare implementieren müssen, das über die Funktionen der von AEM Forms bereitgestellten Standardstil-Optionen hinausgeht, können Sie benutzerdefinierte Client-Bibliotheken erstellen, um das Erscheinungsbild zu steuern.
-* Wenn Sie eine benutzerdefinierte clientseitige Logik benötigen, die Wiederverwendbarkeit von Methoden über mehrere Formulare hinweg oder Verhalten, das nicht durch die standardmäßigen AEM Forms-Funktionen erreicht werden kann. Dazu können dynamische Formularinteraktionen, benutzerdefinierte Validierungen oder die Integration mit Bibliotheken von Drittanbietern gehören.
-* Verbesserung der Leistung Ihrer Formulare durch Optimierung und Minimierung clientseitiger Ressourcen. Benutzerdefinierte Client-Bibliotheken können verwendet werden, um JavaScript- und CSS-Dateien zu bündeln und zu komprimieren, wodurch die gesamte Seitenladezeit reduziert wird.
-* Wenn Sie zusätzliche JavaScript-Bibliotheken oder Frameworks integrieren müssen, die nicht in der standardmäßigen AEM Forms-Einrichtung enthalten sind. Dies kann für Funktionen wie erweiterte Datumsauswahl, Diagramme oder andere interaktive Komponenten erforderlich sein.
+* Wenn Sie ein eindeutiges Design oder Branding für Ihre Formulare implementieren müssen, das über die Funktionen der von AEM Forms bereitgestellten standardmäßigen Stiloptionen hinausgeht, können Sie benutzerdefinierte Client-Bibliotheken erstellen und darüber das Look-and-Feel steuern.
+* Wenn eine benutzerdefinierte Client-seitige Logik und die Wiederverwendbarkeit von Methoden über mehrere Formulare hinweg oder Verhalten benötigt wird und sich dies nicht durch die standardmäßigen AEM Forms-Funktionen erreichen lässt. Dazu können dynamische Formularinteraktionen, benutzerdefinierte Validierungen oder die Integration in Bibliotheken von Drittanbietern gehören.
+* Um die Leistung Ihrer Formulare durch Optimierung und Minimierung Client-seitiger Ressourcen zu verbessern.  Benutzerdefinierte Client-Bibliotheken können verwendet werden, um JavaScript- und CSS-Dateien zu bündeln und zu komprimieren, wodurch die Seitenladezeit insgesamt reduziert wird.
+* Wenn Sie zusätzliche JavaScript-Bibliotheken oder -Frameworks integrieren müssen, die nicht im standardmäßigen AEM Forms-Setup enthalten sind. Dies kann für Funktionen wie erweiterte Datumsauswahl, Diagramme oder andere interaktive Komponenten erforderlich sein.
 
-Bevor Sie sich für die Verwendung benutzerdefinierter Client-Bibliotheken entscheiden, müssen Sie den Wartungsaufwand, potenzielle Konflikte mit zukünftigen Updates und die Einhaltung Best Practices berücksichtigen. Stellen Sie sicher, dass Ihre Anpassungen gut dokumentiert sind und getestet werden, um Probleme bei Upgrades oder der Zusammenarbeit mit anderen Entwicklern zu vermeiden.
+Bevor Sie sich für die Verwendung benutzerdefinierter Client-Bibliotheken entscheiden, müssen Sie den Wartungsaufwand, potenzielle Konflikte mit zukünftigen Updates und die Einhaltung von Best Practices berücksichtigen. Stellen Sie sicher, dass Ihre Anpassungen gut dokumentiert sind und getestet werden, um Probleme bei Upgrades oder der Zusammenarbeit mit anderen Entwickelnden zu vermeiden.
 
 >[!NOTE]
-> Benutzerdefinierte Funktion ist sowohl für AEM Forms Foundation-Komponenten als auch für Kernkomponenten verfügbar.
+> Benutzerdefinierte Funktionen sind sowohl für Foundation-Komponenten als auch für Kernkomponenten von AEM Forms verfügbar.
 
-**Vorteile von benutzerdefinierten Funktionen:**
+**Vorteile benutzerdefinierter Funktionen:**
 
-**Benutzerdefinierte Funktionen** einen erheblichen Vorteil gegenüber dem **Code-Editor** weil sie eine klare Trennung zwischen Inhalt und Code bietet, die die Zusammenarbeit verbessert und Workflows optimiert. Es wird empfohlen, benutzerdefinierte Funktionen für die folgenden Vorteile zu verwenden:
+**Benutzerdefinierte Funktionen** haben einen erheblichen Vorteil gegenüber dem **Code-Editor**, weil sie eine klare Trennung zwischen Inhalt und Code bieten, was die Zusammenarbeit verbessert und Workflows optimiert. Es wird empfohlen, benutzerdefinierte Funktionen zu verwenden, um folgende Vorteile zu erhalten:
 
-* **Nahtlose Verwendung der Versionskontrolle wie Git:**
-   * Die Isolierung von Code aus Inhalten reduziert Git-Konflikte während des Content Managements erheblich und fördert ein gut organisiertes Repository.
-   * Benutzerdefinierte Funktionen sind für Projekte nützlich, bei denen mehrere Mitarbeiter gleichzeitig arbeiten.
+* **Nahtlose Verwendung einer Versionskontrolle wie Git:**
+   * Code und Inhalte voneinander zu isolieren, führt zu einer deutlichen Reduzierung von Git-Konflikten beim Content-Management und einem gut organisierten Repository.
+   * Benutzerdefinierte Funktionen sind für Projekte nützlich, an denen mehrere Mitwirkende gleichzeitig arbeiten.
 
 * **Technische Vorteile:**
    * Benutzerdefinierte Funktionen bieten Modularität und Kapselung.
    * Module können unabhängig entwickelt, getestet und gewartet werden.
-   * Verbessert die Wiederverwendbarkeit und Wartbarkeit von Code.
+   * Wiederverwendbarkeit und Wartbarkeit von Code werden verbessert.
 
 * **Effizienter Entwicklungsprozess:**
-   * Die Modularität ermöglicht es Entwicklern, sich auf bestimmte Funktionen zu konzentrieren.
-   * Verringert die Belastung der Entwickler, indem die Komplexität der gesamten Codebasis für einen effizienteren Entwicklungsprozess reduziert wird.
+   * Dank Modularität können sich Entwickelnde auf bestimmte Funktionen konzentrieren.
+   * Entwickelnde werden entlastet, indem die Komplexität der gesamten Code-Basis für einen effizienteren Entwicklungsprozess reduziert wird.
 
 
 

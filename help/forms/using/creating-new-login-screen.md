@@ -1,6 +1,6 @@
 ---
-title: Anmeldebildschirm erstellen
-description: So ändern Sie die Anmeldeseite von LiveCycle-Modulen, z. B. von AEM Forms Workspace oder Forms Manager.
+title: Erstellen eines Anmeldebildschirms
+description: Gehen Sie wie folgt vor, um die Anmeldeseite von LiveCycle-Modulen zu ändern, z. B. AEM Forms Workspace oder Forms Manager.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -8,13 +8,13 @@ docset: aem65
 exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '444'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Anmeldebildschirm erstellen{#creating-a-new-login-screen}
+# Erstellen eines Anmeldebildschirms{#creating-a-new-login-screen}
 
 Sie können den Anmeldebildschirm aller AEM Forms-Module ändern, die den AEM Forms-Anmeldebildschirm verwenden. Beispielsweise wirken sich die Änderungen auf den Anmeldebildschirm von Forms Manager und AEM Forms Workspace aus.
 
@@ -291,7 +291,7 @@ css.newLoginContentArea {
 1. Fügen Sie neue Bilder in `/apps/livecycle/core/content/login` hinzu. So fügen Sie ein Bild hinzu:
 
    1. Installieren Sie den WebDAV-Client.
-   1. Navigieren Sie mithilfe eines WebDAV-Clients zum Ordner `/apps/livecycle/core/content/login`. Weitere Informationen finden Sie unter [WebDAV-Zugriff](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+   1. Navigieren Sie mithilfe eines WebDAV-Clients zum Ordner `/apps/livecycle/core/content/login`. Weitere Informationen finden Sie unter [WebDAV-Zugriff](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=de).
 
    1. Fügen Sie neue Bilder hinzu.
 

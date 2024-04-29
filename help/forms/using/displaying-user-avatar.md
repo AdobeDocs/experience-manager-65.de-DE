@@ -1,6 +1,6 @@
 ---
 title: Anzeigen des Benutzeravatars
-description: So passen Sie den AEM Forms-Arbeitsbereich an, um das Bild eines angemeldeten Benutzers anzuzeigen.
+description: Erfahren Sie, wie Sie AEM Forms Workspace anpassen können, um das Bild einer angemeldeten Person anzuzeigen.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,22 +8,22 @@ topic-tags: forms-workspace
 exl-id: ee0708b0-b630-4a2b-84b6-3c0b92dd7777
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '189'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
 # Anzeigen des Benutzeravatars {#displaying-the-user-avatar}
 
-Der Avatar des angemeldeten Benutzers wird in der oberen rechten Ecke von AEM Forms Workspace angezeigt. Außerdem werden die Avatare der direkt unterstellten Mitarbeiter in der hierarchischen Struktur in der Manageransicht angezeigt. Sie können AEM Forms Workspace so konfigurieren, dass die Benutzerbilder aus Ihrer Datenbank, z. B. vom LDAP-Server, abgerufen werden.
+Der Avatar des angemeldeten Benutzers wird in der oberen rechten Ecke von AEM Forms Workspace angezeigt. Auch die Avatare von direkt unterstellten Mitarbeiterinnen und Mitarbeitern in der Organisationshierarchie werden in der Manager-Ansicht angezeigt. Sie können AEM Forms Workspace so konfigurieren, dass die Benutzerbilder aus Ihrer Datenbank, z. B. vom LDAP-Server, abgerufen werden.
 
 >[!NOTE]
 >
 >Für Benutzerbilder wird nur das Seitenverhältnis 1:1 unterstützt.
 
 1. Erstellen Sie ein DSC mithilfe der Informationen, die im nächsten Schritt angegeben werden. Weitere Informationen erhalten Sie unter „Entwickeln von Komponenten für AEM Forms“ im Handbuch [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).
-1. Definieren Sie im DSC eine neue SPI, die mithilfe der Methoden getCurrentUserImageUrl und getUserImageUrl eine Bild-URL für einen AEM Forms-Benutzer abruft. Im Folgenden finden Sie ein Beispiel für ein Java™-Codefragment:
+1. Definieren Sie im DSC eine neue SPI, die mithilfe der Methoden getCurrentUserImageUrl und getUserImageUrl eine Bild-URL für einen AEM Forms-Benutzer abruft. Im Folgenden finden Sie ein beispielhaftes Java™-Code-Fragment:
 
    ```java
    public class DemoUserImageURLProviderService {
@@ -38,9 +38,9 @@ Der Avatar des angemeldeten Benutzers wird in der oberen rechten Ecke von AEM Fo
    }
    ```
 
-1. Erstellen Sie eine Datei &quot;component.xml&quot;. Stellen Sie sicher, dass spec-id wie im Code-Snippet unten gezeigt ist.
+1. Erstellen Sie die Datei „component.xml“. Stellen Sie sicher, dass „spec-id“ wie im Code-Fragment unten angezeigt wird.
 
-   Das folgende Codefragment ist ein Beispiel. Passen Sie es an Ihre spezifischen Anforderungen an.
+   Das folgende Code-Fragment ist ein Beispiel. Passen Sie es an Ihre individuellen Anforderungen an.
 
    ```java
    <component xmlns="https://adobe.com/idp/dsc/component/document">
@@ -80,5 +80,5 @@ Der Avatar des angemeldeten Benutzers wird in der oberen rechten Ecke von AEM Fo
    </component>
    ```
 
-1. Stellen Sie DSC über Workbench bereit. Starten Sie den Service `ProcessManagementClientSessionService` neu.
+1. Stellen Sie das DSC über Workbench bereit. Starten Sie den Service `ProcessManagementClientSessionService` neu.
 1. Möglicherweise müssen Sie den Browser aktualisieren oder sich für den Benutzer erneut abmelden/anmelden.

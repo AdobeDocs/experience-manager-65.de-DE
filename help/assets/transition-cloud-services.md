@@ -1,14 +1,14 @@
 ---
 title: Anwenden von Übersetzungs-Cloud-Services auf Ordner
-description: Anwenden von Übersetzungs-Cloud-Services auf Ordner in Adobe Experience Manager.
+description: Wenden Sie Übersetzungs-Cloud-Services auf Ordner in Adobe Experience Manager an.
 role: Admin
 feature: Translation
 exl-id: f17a33d7-eb2f-406b-8d6c-a3bf564c8702
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '396'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 

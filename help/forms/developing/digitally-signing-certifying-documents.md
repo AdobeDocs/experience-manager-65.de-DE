@@ -9,9 +9,9 @@ role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '16917'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -598,7 +598,7 @@ Nachdem Sie diesen Konfigurationswert zur Datei „cknfastrc“ hinzugefügt hab
 
     >[!NOTE]
     >
-    > Es wird empfohlen, den Befehl &quot;Strg + C&quot;zum Neustart des SDK zu verwenden. Das Neustart des AEM SDK mithilfe alternativer Methoden, z. B. das Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM Entwicklungsumgebung führen.
+    > Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mithilfe alternativer Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 **Signatur ist nicht vertrauenswürdig**
 

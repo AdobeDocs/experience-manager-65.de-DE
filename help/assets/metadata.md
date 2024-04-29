@@ -9,9 +9,9 @@ exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2332'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Die folgenden Methoden können zum Hinzufügen von Metadaten zu digitalen Assets
 
 * In [!DNL Experience Manager Assets] können Sie Metadaten von Assets auf der Seite [!UICONTROL Eigenschaften] manuell hinzufügen oder bearbeiten.
 
-* Sie können [Metadatenprofile](/help/assets/metadata-config.md#metadata-profiles) Funktionalität der [!DNL Experience Manager Assets] , um beim Hochladen von Assets in DAM automatisch Metadaten hinzuzufügen.
+* Sie können [Metadatenprofil](/help/assets/metadata-config.md#metadata-profiles)-Funktionen von [!DNL Experience Manager Assets] verwenden, um beim Hochladen von Assets in DAM automatisch Metadaten hinzuzufügen.
 
 ## Hinzufügen oder Bearbeiten von Metadaten in [!DNL Experience Manager Assets] {#add-edit-metadata}
 

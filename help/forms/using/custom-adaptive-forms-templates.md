@@ -8,9 +8,9 @@ docset: aem65
 exl-id: 35b50573-0be8-469d-a1ac-f51b9aaa5fef
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1267'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -18,33 +18,33 @@ ht-degree: 66%
 
 >[!NOTE]
 >
->AEM Forms hat dynamische Vorlagen eingeführt. Mit dem AEM Sites-Vorlageneditor können Sie [dynamische Vorlagen erstellen oder bearbeiten](../../forms/using/template-editor.md). Die im folgenden Artikel erwähnten Vorlagen sind statische Vorlagen. Diese sind bei einer Standardinstallation nicht verfügbar. [Kompatibilitätspaket installieren](../../forms/using/compatibility-package.md), um diese Vorlagen in Ihrer Umgebung zu erhalten.
+>AEM Forms hat dynamische Vorlagen eingeführt. Mit dem AEM Sites-Vorlageneditor können Sie [dynamische Vorlagen erstellen oder bearbeiten](../../forms/using/template-editor.md). Bei den im folgenden Artikel genannten Vorlagen handelt es sich um statische Vorlagen. Diese sind bei einer Standardinstallation nicht verfügbar. [Kompatibilitätspaket installieren](../../forms/using/compatibility-package.md), um diese Vorlagen in Ihrer Umgebung zu erhalten.
 
 ## Voraussetzungen {#prerequisites}
 
 * Grundlagen zu den [Seitenvorlagen](/help/sites-authoring/templates.md) und zum [Authoring adaptiver Formulare](https://helpx.adobe.com/de/aem-forms/6-1/introduction-forms-authoring.html?lang=de-DE)
 
-* Grundlegendes zu AEM [Client-seitige Bibliotheken](/help/sites-developing/clientlibs.md)
+* Grundlagen zu den [Client-seitigen Bibliotheken](/help/sites-developing/clientlibs.md) in AEM
 
 ## Adaptive Formularvorlage {#adaptive-form-template}
 
-Eine adaptive Formularvorlage ist eine spezielle AEM-Seitenvorlage mit bestimmten Eigenschaften und einer vorgegebenen Inhaltsstruktur, aus denen ein adaptives Formular erstellt wird. Die Vorlage verfügt über vorkonfigurierte Layouts, Stile und eine grundlegende anfängliche Inhaltsstruktur.
+Eine adaptive Formularvorlage ist eine spezielle AEM-Seitenvorlage mit bestimmten Eigenschaften und einer vorgegebenen Inhaltsstruktur, aus der ein adaptives Formular erstellt wird. Die Vorlage hat vorkonfigurierte Layouts, Stile und eine einfache, bereits vorgegebene Inhaltsstruktur.
 
 Änderungen an der Inhaltsstruktur einer Formularvorlage werden nicht in das aus der Vorlage erstellte Formular übernommen.
 
-## Standardvorlagen für adaptive Formulare {#default-adaptive-form-templates}
+## Adaptive Standardformularvorlagen {#default-adaptive-form-templates}
 
-AEM QuickStart bietet die folgenden adaptiven Formularvorlagen:
+Ein AEM-Schnellstart bietet die folgenden adaptiven Formularvorlagen:
 
 * Vorlage für eine Umfrage: Ermöglicht die Erstellung eines einseitigen adaptiven Formulars mithilfe eines responsiven Layouts mit mehreren vorkonfigurierten Spalten. Das Layout passt sich automatisch an die jeweilige Bildschirmgröße an.
 * Einfache Registrierungsvorlage: Ermöglicht die Erstellung eines mehrere Schritte erfordernden adaptiven Formulars mithilfe eines Assistenten-Layouts. In diesem Layout können Sie für jeden Schritt einen Terminierungsausdruck festlegen, der vor dem Übergang zum nächsten Schritt überprüft wird.
 * Registrierungsvorlage mit Registerkarten: Ermöglicht die Erstellung eines aus mehreren Registerkarten bestehenden adaptiven Formulars mithilfe eines Layouts, in dem sich links Registerkarten befinden, über die die Register in beliebiger Reihenfolge aufgerufen werden können.
-* Erweiterte Registrierungsvorlage: Ermöglicht die Erstellung eines Formulars mit mehreren Registerkarten und Assistenten. Es verwendet ein Layout mit Registerkarten auf der linken Seite, mit dem Sie Registerkarten in beliebiger Reihenfolge aufrufen können. Es werden Adobe Document Cloud eSign-Dienste zum Signieren und zur Prüfung verwendet.
+* Erweiterte Registrierungsvorlage: Ermöglicht die Erstellung eines Formulars mit mehreren Registerkarten und Assistenten. Es wird ein Layout verwendet, bei dem sich die Registerkarten links befinden. Dabei können die Registerkarten in beliebiger Reihenfolge aufgerufen werden. Es werden Adobe Document Cloud eSign-Dienste zum Signieren und zur Prüfung verwendet.
 * Leere Vorlage: Ermöglicht die Erstellung eines Formulars ohne Kopf- und Fußzeile sowie ohne Anfangsinhalt. Sie können Komponenten wie Textfelder, Schaltflächen und Bilder hinzufügen. Mit der leeren Vorlage können Sie ein Formular erstellen, das Sie [in AEM Site-Seiten einbetten](/help/forms/using/embed-adaptive-form-aem-sites.md) können.
 
-Außerdem ist für diese Vorlagen die Eigenschaft `sling:resourceType` auf die entsprechende Seitenkomponente gesetzt. Die Seitenkomponente rendert die CQ-Seite mit dem Container für adaptive Formulare, der wiederum adaptive Formulare rendert.
+Außerdem ist für diese Vorlagen die Eigenschaft `sling:resourceType` auf die entsprechende Seitenkomponente gesetzt. Die Seitenkomponente rendert die CQ-Seite mit dem Container des adaptiven Formulars, der seinerseits das adaptive Formular rendert.
 
-In der folgenden Tabelle wird die Verknüpfung zwischen Vorlagen und Seitenkomponenten aufgezählt:
+Die folgende Tabelle zeigt die Zuordnung zwischen Vorlagen und Seitenkomponenten:
 
 <table>
  <tbody>
@@ -71,11 +71,11 @@ In der folgenden Tabelle wird die Verknüpfung zwischen Vorlagen und Seitenkompo
  </tbody>
 </table>
 
-## Erstellen einer Vorlage für ein adaptives Formular mithilfe des Vorlageneditors {#creating-an-adaptive-form-template-using-template-editor}
+## Erstellen einer adaptiven Formularvorlage mithilfe des Vorlageneditors {#creating-an-adaptive-form-template-using-template-editor}
 
-Sie können die Struktur und den anfänglichen Inhalt eines adaptiven Formulars unter Verwendung des Vorlagen-Editors angeben. Sie möchten beispielsweise, dass alle Formularautoren nur über wenige Textfelder, Navigationsschaltflächen und eine Senden-Schaltfläche in einem Registrierungsformular verfügen. Sie können eine Vorlage erstellen, die Autoren verwenden können, um ein Formular zu erstellen, das mit anderen Registrierungsformularen konsistent ist. Mit dem AEM Vorlagen-Editor können Sie:
+Sie können die Struktur und den anfänglichen Inhalt eines adaptiven Formulars unter Verwendung des Vorlagen-Editors angeben. Beispiel: Sie möchten, dass alle Formularautorinnen und Formularautoren in einem Registrierungsformular Textfelder, Navigationsschaltflächen und eine Schaltfläche zum Senden verwenden. Sie können eine Vorlage erstellen, die Autorinnen und Autoren verwenden können, damit ihr Formular konsistent mit anderen Registrierungsformularen ist. Mit dem AEM-Vorlageneditor haben Sie folgende Möglichkeiten:
 
-* Kopf- und Fußzeilenkomponenten eines Formulars in der Strukturebene hinzufügen
+* Kopf- und Fußzeilenkomponenten eines Formulars in der Strukturebene hinzufügen.
 * Den anfänglichen Inhalt für das Formular angeben.
 * Legen Sie ein Design fest.
 * Geben Sie Aktionen wie Senden, Zurücksetzen und Navigation fest.
@@ -84,7 +84,7 @@ Weitere Informationen finden Sie unter [Vorlagen-Editor](../../forms/using/templ
 
 ## Erstellen einer adaptiven Formularvorlage aus CRXDE {#creating-an-adaptive-form-template-from-crxde}
 
-Anstatt die verfügbaren Vorlagen zu verwenden, können Sie eine Vorlage erstellen und sie zum Erstellen adaptiver Formulare verwenden. Benutzerdefinierte Vorlagen basieren auf verschiedenen Seitenkomponenten, die Container für adaptive Formulare und Seitenelemente wie Kopf- und Fußzeilen referenzieren.
+Anstatt die verfügbaren Vorlagen zu verwenden, können Sie auch eine Vorlage erstellen und diese für die Erstellung adaptiver Formulare verwenden. Benutzerdefinierte Vorlagen basieren auf verschiedenen Seitenkomponenten, die Container für adaptive Formulare und Seitenelemente wie Kopf- und Fußzeilen referenzieren.
 
 Diese Komponenten können Sie aus der Basisseitenkomponente Ihrer Website erstellen. Alternativ können Sie auch die Seitenkomponente des adaptiven Formulars erweitern, das in den mitgelieferten Vorlagen verwendet wird.
 
@@ -92,11 +92,11 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Vorlage wie d
 
 1. Navigieren Sie auf Ihrer Authoring-Instanz zu CRXDE Lite.
 
-1. Erstellen Sie im Ordner /apps die Ordnerstruktur für Ihre Anwendung. Wenn der Anwendungsname beispielsweise &quot;mycompany&quot;lautet, erstellen Sie einen Ordner mit diesem Namen. Normalerweise enthält der Anwendungsordner Komponenten, Konfigurationen, Vorlagen, src und Installationsordner. Für dieses Beispiel reicht es aus, wenn Sie die Ordner „components“, „configuration“ und „templates“ erstellen.
+1. Erstellen Sie im Verzeichnis „/apps“ die Ordnerstruktur für Ihre Anwendung. Lautet der Anwendungsname beispielsweise „mycompany“, so erstellen Sie einen Ordner mit diesem Namen. In der Regel enthält das Anwendungsverzeichnis die Ordner „components“, „configuration“, „templates“, „src“ und „installation“. Für dieses Beispiel reicht es aus, wenn Sie die Ordner „components“, „configuration“ und „templates“ erstellen.
 
 1. Navigieren Sie zum Ordner „/libs/fd/af/templates“.
 1. Kopieren Sie den Knoten `simpleEnrollmentTemplate`.
-1. Navigieren Sie zum Ordner /apps/mycompany/templates . Klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Einfügen]**.
+1. Navigieren Sie zum Ordner „/apps/mycompany/templates“. Klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Einfügen]**.
 1. Benennen Sie bei Bedarf den kopierten Vorlagenknoten um. Nennen Sie ihn zum Beispiel „enrollment-template“. 
 
 1. Navigieren Sie zu „/apps/mycompany/templates/enrollment-template“.
@@ -113,16 +113,16 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Vorlage wie d
 
 1. Erstellen Sie nun für den Typ `cq:Page` den Knoten „/etc/designs/mycompany“. 
 
-## Erstellen einer Seitenkomponente für adaptive Formulare {#create-an-adaptive-form-page-component}
+## Erstellen einer adaptiven Formularseitenkomponente {#create-an-adaptive-form-page-component}
 
-Die benutzerdefinierte Vorlage hat denselben Stil wie die Standardvorlage, da die Vorlage auf die Seitenkomponente /libs/fd/af/components/page/base verweist. Der Komponentenverweis befindet sich in der Eigenschaft `sling:resourceType` unter dem Knoten „/apps/mycompany/templates/enrollment-template/jcr:content“. Da es sich bei der Basis um eine Kernproduktkomponente handelt, sollten Sie diese Komponente nicht ändern.
+Die benutzerdefinierte Vorlage hat den gleichen Stil wie die Standardvorlage, da die Vorlage auf die Seitenkomponente „/libs/fd/af/components/page/base“ verweist. Der Komponentenverweis befindet sich in der Eigenschaft `sling:resourceType` unter dem Knoten „/apps/mycompany/templates/enrollment-template/jcr:content“. Da es sich bei der Basis um eine Kernproduktkomponente handelt, sollten Sie diese Komponente nicht ändern.
 
 1. Navigieren Sie zum Knoten /apps/mycompany/templates/enrollment-template/jcr:content und setzen Sie die Eigenschaft `sling:resourceType` auf „/apps/mycompany/components/page/enrollmentpage“.
 1. Kopieren Sie den Knoten „/libs/fd/af/components/page/base“ in den Ordner „/apps/mycompany/components/page“. 
 
 1. Benennen Sie die kopierte Komponente in `enrollmentpage` um.
 
-1. **(Nur bei bereits vorhandener Inhaltsseite)** Führen Sie die folgenden Schritte (a-d) aus, wenn die Komponente `contentpage` bereits für Ihre Website vorhanden ist. Wenn Sie keine vorhandene `contentpage`-Komponente für Ihre Website verwenden, können Sie die `resourceSuperType`-Eigenschaft auf die vordefinierte Basisseite verweisen.
+1. **(Nur bei bereits vorhandener Inhaltsseite)** Führen Sie die folgenden Schritte (a-d) aus, wenn die Komponente `contentpage` bereits für Ihre Website vorhanden ist. Wenn die Komponente `contentpage` noch nicht für Ihre Website vorhanden ist, können Sie die Eigenschaft `resourceSuperType` so einstellen, dass sie auf die vorkonfigurierte Basisseite verweist.
 
    1. Setzen Sie die Eigenschaft `sling:resourceSuperType` für den Knoten `enrollmentpage` auf „mycompany/components/page/contentpage“. Die Komponente `contentpage` ist die Basisseitenkomponente Ihrer Site. Sie kann durch andere Seitenkomponenten erweitert werden. Entfernen Sie Skriptdateien unter `enrollmentpage`, außer `head.jsp`, `content.jsp` und `library.jsp`. Die Komponente `sling:resourceSuperType`, in diesem Fall `contentpage`, enthält alle diese Skripte. Kopf- und Fußzeile sowie Navigationsleiste werden aus der Komponente `contentpage` übernommen.
 
@@ -143,10 +143,10 @@ Die benutzerdefinierte Vorlage hat denselben Stil wie die Standardvorlage, da di
 
 ## Erstellen einer Client-Bibliothek für adaptive Formulare {#creating-an-adaptive-form-client-library}
 
-Die `head.jsp`-Datei der Komponente `enrollmentpage` der neuen Vorlage enthält eine Client-Bibliothek namens `guide.theme.simpleEnrollment`. Die Standardvorlage verwendet auch diese Client-Bibliothek. Ändern Sie den Stil in der neuen Vorlage mit einer der folgenden Methoden:
+Die `head.jsp`-Datei der Komponente `enrollmentpage` der neuen Vorlage enthält eine Client-Bibliothek namens `guide.theme.simpleEnrollment`. Die Standardvorlage verwendet ebenfalls diese Client-Bibliothek. Ändern Sie den Stil in der neuen Vorlage mit einer der folgenden Methoden:
 
 * Definieren Sie ein benutzerdefiniertes Design, durch das Sie das Standarddesign`guide.theme.simpleEnrollment` ersetzen. 
-* Definieren Sie eine neue Client-Bibliothek unter /etc/designs/mycompany. Schließen Sie die Client-Bibliothek nach dem Eintrag des Standarddesigns auf der JSP-Seite ein. Binden Sie alle überschriebenen Stile und zusätzlichen JavaScript-Dateien in dieser Client-Bibliothek ein.
+* Definieren Sie unter „/etc/designs/mycompany“ eine neue Client-Bibliothek. Schließen Sie die Client-Bibliothek nach dem Eintrag des Standard-Designs in der JSP-Seite ein. Binden Sie alle überschriebenen Stile und zusätzlichen JavaScript-Dateien in dieser Client-Bibliothek ein.
 
 >[!NOTE]
 >

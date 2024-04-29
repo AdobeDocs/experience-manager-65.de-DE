@@ -10,9 +10,9 @@ docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3565'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -107,7 +107,7 @@ Wenn das Paket geändert wurde oder noch nie aufgebaut wurde, wird der Status al
 
 ## Paketeinstellungen {#package-settings}
 
-Ein Paket ist im Wesentlichen ein Satz von Filtern und den Repository-Daten, die auf diesen Filtern basieren. Mithilfe der Package Manager-Benutzeroberfläche können Sie auf ein Paket und dann auf die Schaltfläche **Bearbeiten** klicken, um die Details eines Pakets, einschließlich der folgenden Einstellungen, anzuzeigen.
+Ein Paket ist im Wesentlichen ein Satz von Filtern und den Repository-Daten, die auf diesen Filtern basieren. Mithilfe der Package Manager-Benutzeroberfläche können Sie auf ein Paket und dann auf die Schaltfläche **Bearbeiten** klicken, um die Details eines Pakets einschließlich der folgenden Einstellungen anzuzeigen.
 
 * [Allgemeine Einstellungen](#general-settings)
 * [Paketfilter](#package-filters)
@@ -274,7 +274,7 @@ Möglicherweise müssen Sie [das Paket neu aufbauen](#building-a-package), um se
 
 ### Neuverpacken eines Pakets {#rewrapping-a-package}
 
-Sobald ein Paket aufgebaut wurde, kann es neu verpackt werden. Beim Neuverpacken werden die Paketinformationen wie Miniaturansicht, Beschreibung usw. geändert, ohne dass der Paketinhalt geändert wird.
+Sobald ein Paket aufgebaut wurde, kann es neu verpackt werden. Beim Neuverpacken werden die Paketinformationen wie Miniaturansicht, Beschreibung usw. geändert, ohne dass der Inhalt des Pakets geändert wird.
 
 1. [Greifen Sie auf Package Manager zu.](#accessing)
 
@@ -284,7 +284,7 @@ Sobald ein Paket aufgebaut wurde, kann es neu verpackt werden. Beim Neuverpacken
 
 1. Klicken Sie zum Speichern auf **Speichern**.
 
-1. Wenn Sie auf **Weiter** > **Neu verpacken** klicken, werden Sie über ein Dialogfeld zur Bestätigung aufgefordert.
+1. Wenn Sie auf **Weiter** > **Neu verpacken** klicken, erscheint ein Dialogfeld, das Sie zur Bestätigung auffordert.
 
 ### Anzeigen anderer Paketversionen {#other-versions}
 
@@ -294,7 +294,7 @@ Da jede Version eines Pakets in der Liste ebenso wie jedes andere Paket angezeig
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
-1. Wenn Sie auf **Mehr** > **Andere Versionen** klicken, öffnet sich ein Dialogfeld mit einer Liste von anderen Versionen desselben Pakets mit Statusinformationen.
+1. Wenn Sie auf **Mehr** > **Andere Versionen** klicken, öffnet sich ein Dialogfeld mit einer Liste anderer Versionen desselben Pakets mit Statusinformationen.
 
 ### Anzeigen von Paketinhalten und Testen der Installation {#viewing-package-contents-and-testing-installation}
 
@@ -304,11 +304,11 @@ Nach dem Aufbau eines Pakets können Sie dessen Inhalt anzeigen.
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
-1. Um den Inhalt anzuzeigen, klicken Sie auf **Mehr** > **Inhalt**. Package Manager listet den vollständigen Paketinhalt im Aktivitätsprotokoll auf.
+1. Um den Inhalt anzuzeigen, klicken Sie auf **Mehr** > **Inhalte**. Package Manager listet dann den vollständigen Paketinhalt im Aktivitätsprotokoll auf.
 
-   ![Paketinhalt](assets/package-contents.png)
+   ![Paketinhalte](assets/package-contents.png)
 
-1. Klicken Sie auf **Mehr** > **Installation testen**, um einen Probelauf der Installation durchzuführen. Package Manager berichtet im Aktivitätsprotokoll die Ergebnisse so, als ob die Installation durchgeführt worden wäre.
+1. Klicken Sie auf **Mehr** > **Installation testen**, um einen Probelauf der Installation durchzuführen. Package Manager berichtet im Aktivitätsprotokoll so über die Ergebnisse, als ob die Installation durchgeführt worden wäre.
 
    ![Testen der Installation](assets/test-install.png)
 
@@ -359,11 +359,11 @@ Package Manager kann die folgenden Validierungen durchführen:
 
 ##### Validieren von OSGi-Paketimporten {#osgi-package-imports}
 
-**Was wird überprüft?**
+**Folgendes wird geprüft**
 
-Diese Validierung prüft das Paket auf JAR-Dateien (OSGi-Bundles), extrahiert deren `manifest.xml`-Datei (die die versionierten Abhängigkeiten enthält, die für das OSGi-Bundle erforderlich sind) und stellt sicher, dass die AEM-Instanz die Abhängigkeiten mit den richtigen Versionen exportiert.
+Diese Validierung prüft das Paket auf JAR-Dateien (OSGi-Bundles), extrahiert deren Datei `manifest.xml` (die die versionierten Abhängigkeiten enthält, die für das OSGi-Bundle erforderlich sind) und stellt sicher, dass die AEM-Instanz diese Abhängigkeiten mit den richtigen Versionen exportiert.
 
-**Wie wird der Bericht angezeigt?**
+**Wie die Berichterstellung erfolgt**
 
 Eventuelle versionierte Abhängigkeiten, die von der AEM-Instanz nicht erfüllt werden können, werden im Aktivitätsprotokoll von Package Manager aufgeführt.
 
@@ -377,13 +377,13 @@ Um Fehler aufgrund nicht erfüllter OSGi-Bundles zu beheben, muss die Abhängigk
 
 ##### Bestätigen von Überlagerungen {#overlays}
 
-**Was wird überprüft?**
+**Was wird geprüft?**
 
 Diese Validierung ermittelt, ob das zu installierende Paket eine Datei enthält, die in der AEM-Zielinstanz bereits überlagert ist.
 
 Beispiel: Bei einer bestehenden Überlagerung unter `/apps/sling/servlet/errorhandler/404.jsp` ändert ein Paket, das `/libs/sling/servlet/errorhandler/404.jsp` enthält, die vorhandene Datei unter `/libs/sling/servlet/errorhandler/404.jsp`.
 
-**Berichterstellung**
+**Wie die Berichterstellung erfolgt**
 
 Solche Überlagerungen werden im Aktivitätsprotokoll von Package Manager beschrieben.
 
@@ -401,11 +401,11 @@ Zur Behebung dieses Problems muss der Verantwortliche für die Überlagerungsdat
 
 ##### Bestätigen von ACLs {#acls}
 
-**Was wird überprüft?**
+**Was wird geprüft?**
 
 Diese Validierung prüft, welche Berechtigungen hinzugefügt werden, wie sie verarbeitet werden (Zusammenführen/Ersetzen) und ob die aktuellen Berechtigungen betroffen sind.
 
-**Wie wird der Bericht angezeigt?**
+**Wie die Berichterstellung erfolgt**
 
 Die Berechtigungen werden im Aktivitätsprotokoll von Package Manager beschrieben.
 
@@ -480,7 +480,7 @@ Pakete werden durch ihre Filter definiert. Sie können Package Manager anweisen,
 
 ### Installieren von Paketen {#installing-packages}
 
-Beim Hochladen eines Pakets wird nur der Paketinhalt zum Repository hinzugefügt, das Paket ist jedoch nicht verfügbar. Installieren Sie das hochgeladene Paket, um den Inhalt des Pakets zu verwenden.
+Beim Hochladen eines Pakets wird nur der Paketinhalt zum Repository hinzugefügt, das Paket ist jedoch nicht verfügbar. Installieren Sie das hochgeladene Paket, um den Inhalt des Pakets verwenden zu können.
 
 >[!CAUTION]
 >
@@ -580,7 +580,7 @@ AEM-Pakete können verwendet werden, um Inhalte über AEM-Umgebungen hinweg zu e
 
 [Softwareverteilung](https://downloads.experiencecloud.adobe.com) ist ein zentralisierter Dienst, der die Suche und den Download AEM Packages vereinfacht.
 
-Weitere Informationen finden Sie unter [Dokumentation zur Softwareverteilung.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de)
+Weitere Informationen finden Sie unter [Dokumentation zur Software-Verteilung](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
 
 >[!NOTE]
 >

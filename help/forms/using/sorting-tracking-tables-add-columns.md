@@ -1,21 +1,21 @@
 ---
 title: Anpassen von Verfolgungstabellen
-description: Gehen Sie wie folgt vor, um die Anzeige der Details von Benutzerprozessen in der Aufgabentabelle anzupassen, die auf der Registerkarte "Tracking"von AEM Forms Workspace angezeigt wird.
+description: Gehen Sie wie folgt vor, um die Anzeige der Details von Benutzerprozessen in der Aufgabentabelle zu speichern, die auf der Registerkarte „Tracking“ in AEM Forms Workspace angezeigt wird.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: 9ab657cc-fa8e-4168-8a68-e38ac5c51b29
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '330'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
 
 # Anpassen von Verfolgungstabellen{#customize-tracking-tables}
 
-Die Registerkarte „Tracking“ in AEM Forms Workspace wird verwendet, um die Details von Prozessinstanzen anzuzeigen, an denen der angemeldete Benutzer beteiligt ist. Um die Tracking-Tabellen anzuzeigen, wählen Sie zunächst einen Prozessnamen im linken Bereich aus, um die zugehörige Instanzenliste im mittleren Bereich anzuzeigen. Wählen Sie eine Prozessinstanz aus, um eine Tabelle der von dieser Instanz generierten Aufgaben im rechten Bereich anzuzeigen. Standardmäßig zeigen die Tabellenspalten die folgenden Aufgabenattribute an (das entsprechende Attribut im Aufgabenmodell wird in Klammern angegeben):
+Die Registerkarte „Tracking“ in AEM Forms Workspace wird verwendet, um die Details von Prozessinstanzen anzuzeigen, an denen der angemeldete Benutzer beteiligt ist. Um die Tracking-Tabellen anzuzeigen, wählen Sie zunächst einen Prozessnamen im linken Bereich aus, um die zugehörige Instanzenliste im mittleren Bereich anzuzeigen. Wählen Sie eine Prozessinstanz aus, um im rechten Bereich eine Tabelle von Aufgaben anzuzeigen, die von dieser Instanz generiert werden. Standardmäßig enthalten die Tabellenspalten die folgenden Aufgabenattribute (das entsprechende Attribut im Aufgabenmodell wird in Klammern angegeben):
 
 * ID ( `taskId`)
 * Name ( `stepName`)
@@ -114,9 +114,9 @@ Die übrigen Attribute im Aufgabenmodell, die für die Anzeige in der Aufgabenta
 
 Für die folgenden Anpassungen in der Aufgabentabelle müssen Sie semantische Änderungen im Quellcode vornehmen. In der [Einführung zum Anpassen von AEM Forms Workspace](/help/forms/using/introduction-customizing-html-workspace.md) finden Sie Anweisungen, wie Sie semantische Änderungen mithilfe von Workspace SDK vornehmen und ein minimiertes Paket aus der geänderten Quelle erstellen können.
 
-## Tabellenspalten und ihre Reihenfolge ändern {#changing-table-columns-and-their-order}
+## Ändern von Tabellenspalten und ihrer Reihenfolge {#changing-table-columns-and-their-order}
 
-1. Um die in der Tabelle angezeigten Aufgabenattribute und ihre Reihenfolge zu ändern, konfigurieren Sie die Datei /ws/js/runtime/templates/processinstancehistory.html :
+1. Um die in der Tabelle angezeigten Aufgabenattribute und ihre Reihenfolge zu ändern, konfigurieren Sie die Datei „/ws/js/runtime/templates/processinstancehistory.html“:
 
    ```html
    <table>
@@ -150,9 +150,9 @@ Für die folgenden Anpassungen in der Aufgabentabelle müssen Sie semantische Ä
    </table>
    ```
 
-## Tracking-Tabelle sortieren {#sorting-a-tracking-table}
+## Sortieren einer Tracking-Tabelle {#sorting-a-tracking-table}
 
-So sortieren Sie die Aufgabenlistentabelle, wenn Sie auf die Spaltenüberschrift klicken:
+So sortieren Sie die Aufgabenlistentabelle beim Klicken auf die Spaltenüberschrift:
 
 1. Registrieren Sie einen Klick-Handler für `.fixedTaskTableHeader th` in der Datei `js/runtime/views/processinstancehistory.js`.
 
@@ -174,9 +174,9 @@ So sortieren Sie die Aufgabenlistentabelle, wenn Sie auf die Spaltenüberschrift
 
 1. Legen Sie die Methode `TaskTableHeaderClick` in `js/runtime/util/history.js` offen.
 
-   Die Methode sucht das Aufgabenattribut aus dem click -Ereignis, sortiert die Aufgabenliste nach diesem Attribut und rendert die Aufgabentabelle mit der sortierten Aufgabenliste.
+   Die Methode sucht nach dem Aufgabenattribut im Klick-Ereignis, sortiert die Aufgabenliste nach diesem Attribut und rendert die Aufgabentabelle mit der sortierten Aufgabenliste.
 
-   Die Sortierung erfolgt mithilfe der Backbone-Sortierfunktion in der tasklist-Sammlung, indem eine Vergleichfunktion bereitgestellt wird.
+   Die Sortierung erfolgt mit der Backbone-Sortierfunktion in der Aufgabenlistensammlung, indem eine Vergleichsfunktion bereitgestellt wird.
 
    ```javascript
        return {

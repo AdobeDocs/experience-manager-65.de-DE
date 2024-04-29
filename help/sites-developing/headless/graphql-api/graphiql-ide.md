@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '783'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ Sie können eine neue Abfrage sofort ausführen oder eine persistente Abfrage la
 
 In beiden Fällen ist die Abfrage, die im Editor-Bereich angezeigt wird, die Abfrage, die ausgeführt wird, wenn Sie entweder:
 
-* Klicken Sie auf **Ausführen der Abfrage** icon
+* auf das Symbol **Abfrage ausführen** klicken
 * die Tastaturkombination `Control-Enter` verwenden.
 
 ## Abfragevariablen {#query-variables}

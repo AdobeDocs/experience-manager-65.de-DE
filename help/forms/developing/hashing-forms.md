@@ -1,16 +1,16 @@
 ---
 title: Wie lassen sich Hashes in dynamischen PDF-Formularen erzeugen und verwenden?
-description: Erstellen und Verwenden von Hashes in dynamischen PDF forms
+description: Erzeugen und Verwenden von Hashes in dynamischen PDF-Formularen.
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1189'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# Erzeugen und Verwenden von Hashes in dynamischen PDF-Formularen {#generate-work-with-hashes-dynamic-pdf-forms}
+# Erzeugen und Verwenden von Hashes in dynamischen PDF-Formularen. {#generate-work-with-hashes-dynamic-pdf-forms}
 
 ## Vorausgesetztes Wissen {#prerequisite-knowledge}
 
@@ -20,7 +20,7 @@ Einige Erfahrung mit AEM Forms on JEE Designer ist erforderlich, ebenso wie die 
 
 Anfang
 
-Wenn Sie ein Kennwort in Ihrem PDF-Formular ausblenden möchten und es nicht im Quellcode oder an einer anderen Stelle im PDF-Dokument als Klartext enthalten sein soll, ist es wichtig zu wissen, wie MD4-, MD5-, SHA-1- und SHA-256-Hashes generiert und funktioniert.
+Wenn Sie ein Kennwort in Ihrem PDF-Formular verstecken möchten und es nicht im Quell-Code oder an einer anderen Stelle im PDF-Dokument als Klartext enthalten sein soll, müssen Sie wissen, wie MD4-, MD5-, SHA-1- und SHA-256-Hashes erzeugt werden können und funktionieren.
 
 Ziel ist es, das Kennwort zu verschleiern, indem ein eindeutiger Hash erzeugt und dieser Hash im PDF-Dokument gespeichert wird. Dieser eindeutige Hash kann von verschiedenen Hash-Funktionen erzeugt werden, und in diesem Artikel wird Ihnen gezeigt, wie man sie innerhalb des PDF-Formulars erzeugt und wie man mit ihnen arbeitet.
 
@@ -32,7 +32,7 @@ Mit AEM Forms on JEE Designer können Sie die verschiedenen Hash-Funktionen als 
 
 * SHA-1 und SHA-256 – wie von NIST definiert
 
-Der größte Vorteil der Verwendung von Hashes besteht darin, dass Sie Kennwörter nicht direkt durch Vergleich klarer Textzeichenfolgen vergleichen müssen. Stattdessen können Sie die beiden Hashes der beiden Passwörter vergleichen. Da es unwahrscheinlich ist, dass zwei verschiedene Zeichenfolgen denselben Hash aufweisen, können Sie bei zwei identischen Hashes davon ausgehen, dass auch die verglichenen Zeichenfolgen (in diesem Fall die Kennwörter) identisch sind.
+Der größte Vorteil der Verwendung von Hashes besteht darin, dass Sie Kennwörter nicht direkt durch Vergleich von Klartext-Zeichenfolgen vergleichen müssen. Sie können stattdessen die beiden Hashes der beiden Kennwörter vergleichen. Da es unwahrscheinlich ist, dass zwei verschiedene Zeichenfolgen denselben Hash aufweisen, können Sie bei zwei identischen Hashes davon ausgehen, dass auch die verglichenen Zeichenfolgen (in diesem Fall die Kennwörter) identisch sind.
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ Die Beispieldateien für diesen Artikel enthalten zwei PDF-Formulare. Im ersten 
 
 Gehen Sie wie folgt vor, um das erste Beispiel auszuprobieren:
 
-1. Öffnen Sie nach dem Herunterladen und Entpacken der Beispieldateien die Datei „hashing_forms_sample1.pdf“ mit AEM Forms on JEE Designer. Alternativ können Sie Adobe Reader oder Adobe Acrobat Professional verwenden, um das Beispiel zu öffnen und anzuzeigen, der Quellcode wird jedoch nicht angezeigt.
+1. Öffnen Sie nach dem Herunterladen und Entpacken der Beispieldateien die Datei „hashing_forms_sample1.pdf“ mit AEM Forms on JEE Designer. Stattdessen können Sie auch Adobe Reader oder Adobe Acrobat Professional verwenden, um das Beispiel zu öffnen und anzuzeigen. Allerdings können Sie dann den Quell-Code nicht sehen.
 1. Geben Sie im Textfeld mit der Beschriftung [!UICONTROL Klartext] ein Passwort oder eine andere Nachricht ein, für die Sie einen Hash-Wert generieren möchten.
 1. Klicken Sie auf eine der vier Schaltflächen, um den MD4-, MD5-, SHA-1- oder SHA-256-Hash-Wert zu generieren. Je nachdem, auf welche Schaltfläche Sie geklickt haben, wird eine der vier Hash-Funktionen aufgerufen, die eine hexadezimale Ausgabe erzeugen, und Ihre Zeichenfolge oder Nachricht wird in einen Hash-Wert umgewandelt.
 
@@ -90,7 +90,7 @@ Das zweite Beispiel zeigt, wie Hash-Werte im Hintergrund verglichen werden, ohne
 
 Gehen Sie wie folgt vor, um das zweite Beispiel auszuprobieren:
 
-1. Öffnen Sie `hashing_forms_sample2.pdf` mit AEM Forms on JEE Designer. Alternativ können Sie Adobe Reader oder Adobe Acrobat Professional verwenden, um das Beispiel zu öffnen und anzuzeigen, der Quellcode wird jedoch nicht angezeigt.
+1. Öffnen Sie `hashing_forms_sample2.pdf` mit AEM Forms on JEE Designer. Stattdessen können Sie auch Adobe Reader oder Adobe Acrobat Professional verwenden, um das Beispiel zu öffnen und anzuzeigen. Allerdings können Sie dann den Quell-Code nicht sehen.
 1. Wählen Sie eines der beiden Kennwortfelder mit der Beschriftung [!UICONTROL Password MAN] oder [!UICONTROL Password FRAU] und geben Sie die Kennwörter ein:
    1. Das Kennwort für den Mann lautet `bob`
    1. Das Kennwort für die Frau lautet `alice`
@@ -110,7 +110,7 @@ if (soHASHING_SHA256.hex_sha256(this.rawValue) == passwd_man_hashed.rawValue){
 
 ## Wie geht es jetzt weiter? {#next-steps}
 
-Wo brauchen Sie so etwas? Stellen Sie sich ein PDF-Formular vor, das Felder enthält, die nur von autorisierten Personen ausgefüllt werden sollten. Durch das Schützen dieser Felder mit einem Kennwort, das nirgends im Dokument wie in Sample_2.pdf im Klartext zu sehen ist, können Sie sicherstellen, dass diese Felder nur für Benutzer zugänglich sind, die das Kennwort kennen.
+Wo brauchen Sie so etwas? Stellen Sie sich ein PDF-Formular vor, das Felder enthält, die nur von autorisierten Personen ausgefüllt werden sollten. Da diese Felder durch ein Kennwort geschützt sind, das nirgendwo im Klartext des Dokuments zu sehen ist, wie in Sample_2.pdf gezeigt, können nur die Benutzenden auf diese Felder zugreifen, die dieses Kennwort kennen.
 
 Ich empfehle Ihnen, die beiden PDF-Beispieldateien weiter zu studieren.  Sie können mit der Beispieldatei „Sample_1.pdf“ neue Hash-Werte generieren und die generierten Werte verwenden, um entweder das Kennwort oder die Hash-Funktion zu ändern, die in „Sample_2.pdf“ verwendet wird.  Die im Abschnitt „Zuschreibungen“ aufgelisteten Ressourcen enthalten auch zusätzliche Informationen zum Hashing und zu den spezifischen JavaScript-Implementierungen, die in diesem Artikel verwendet werden.
 

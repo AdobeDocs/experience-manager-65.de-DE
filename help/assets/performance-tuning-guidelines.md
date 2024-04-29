@@ -8,9 +8,9 @@ feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2728'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -128,7 +128,7 @@ Welche Strategie der Netzwerkoptimierung Sie verwenden, hängt in erster Linie v
 
 ### Übergangs-Workflows {#transient-workflows}
 
-Stellen Sie den Workflow [!UICONTROL DAM-Update-Asset] nach Möglichkeit auf „Übergang“ ein. Die Einstellung reduziert den Mehraufwand für die Verarbeitung von Workflows erheblich, da in diesem Fall Workflows nicht durch die normalen Tracking- und Archivierungsprozesse weitergeleitet werden müssen.
+Stellen Sie den Workflow [!UICONTROL DAM-Update-Asset] nach Möglichkeit auf „Übergang“ ein. Die Einstellung trägt zu einer erheblichen Reduzierung des Overheads bei, der für die Verarbeitung der Workflows benötigt wird, da die Workflows in diesem Fall nicht die normalen Tracking- und Archivierungsprozesse durchlaufen müssen.
 
 1. Navigieren Sie zu `/miscadmin` in der [!DNL Experience Manager]-Bereitstellung unter `https://[aem_server]:[port]/miscadmin`.
 

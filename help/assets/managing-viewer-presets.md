@@ -12,9 +12,9 @@ role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4422'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -113,7 +113,7 @@ Administratoren können bei der Erstellung von Viewer-Vorgaben die folgenden Ric
   </tr>
   <tr>
    <td><strong>Panoramabild</strong></td>
-   <td><p>Die Viewer für Panoramabilder und PanoramaVR rendern kugelförmige Panoramabilder, um Benutzer in ein 360-Grad-Betrachtungserlebnis eines Raums, einer Eigenschaft, eines Standorts oder einer Landschaft einzutauchen.</p> <p>Damit ein hochgeladenes Bild als Kugelpanorama gilt, muss es entweder eine oder beide der folgenden Eigenschaften aufweisen:</p>
+   <td><p>Die Viewer für Panoramabilder und PanoramicVR rendern kugelförmige Panoramabilder, damit Benutzende in ein 360°-Zuschauererlebnis eines Raums, einer Eigenschaft, eines Standorts oder einer Landschaft eintauchen können.</p> <p>Damit ein hochgeladenes Bild als Kugelpanorama gilt, muss es entweder eine oder beide der folgenden Eigenschaften aufweisen:</p>
     <ul>
      <li>Ein Seitenverhältnis von 2:1.</li>
      <li>Mit den Keywords <code>equirectangular</code> oder <code>spherical</code> und <code>panorama</code> oder <code>spherical </code> und <code>panoramic</code> als Tags versehen. Weitere Informationen finden Sie unter <a href="/help/sites-authoring/tags.md">Verwenden von Tags</a>.</li>
@@ -403,7 +403,7 @@ Experience Manager zeigt viele verschiedene Viewer-Vorgaben an, wenn Sie ein Ass
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-1. Ändern Sie in der Eigenschaft „Limit“ den Wert auf die gewünschte Zahl, z. B. `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`.
+1. Ändern Sie den Wert in der Eigenschaft „Limit“ auf die gewünschte Zahl, z. B. `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`.
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
 ## Erstellen einer neuen Viewer-Vorgabe {#creating-a-new-viewer-preset}

@@ -9,9 +9,9 @@ feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2167'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ Wenn Sie Dokumentzugriffsberechtigungen sperren oder reaktivieren, werden die Ä
 
 * Wenn das Dokument online und geschlossen ist, wird die Änderung wirksam, wenn sich die Empfängerin bzw. der Empfänger das nächste Mal mit der Dokumentensicherheit durch Öffnen eines richtliniengeschützten Dokuments synchronisiert.
 * Wenn das Dokument online und geöffnet ist, wird die Änderung beim Schließen des Dokuments durch die Empfängerin bzw. den Empfänger wirksam.
-* Wenn das Dokument offline ist (d. h. ohne Internetverbindung verwendet wird, z. B. auf einem Laptop), wird die Änderung bei der nächsten Synchronisation des Empfängers mit Document Security wirksam.
+* Wenn das Dokument offline ist (beispielsweise auf einem Laptop ohne Internet-Verbindung verwendet wird), wird die Änderung übernommen, sobald die Empfängerin oder der Empfänger das Dokument mit der Dokumentensicherheit synchronisiert.
 
 **Sperren des Zugriffs auf ein richtliniengeschütztes Dokument**
 

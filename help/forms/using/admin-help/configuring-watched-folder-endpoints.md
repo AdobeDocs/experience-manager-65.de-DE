@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7192'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -240,8 +240,8 @@ Die Ausgabe des überwachten Ordners kann ein einzelnes Dokument, eine Liste von
 
 Admins können den Dateityp angeben, von dem ein Dienst aufgerufen werden kann. Für jeden überwachten Ordner können mehrere Dateimuster angegeben werden. Ein Dateimuster kann eine der folgenden Dateieigenschaften sein:
 
-* Dateien mit bestimmten Dateinamenerweiterungen. Beispiel: &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf
-* Dateien mit bestimmten Namen. Zum Beispiel Daten.*
+* Dateien mit bestimmten Dateinamenerweiterungen, z. B. &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf
+* Dateien mit bestimmten Namen, z. B. data.*
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
    * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;

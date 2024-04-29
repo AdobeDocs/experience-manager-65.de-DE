@@ -1,6 +1,6 @@
 ---
 title: Panoramabilder
-description: Erfahren Sie, wie Sie mit Panoramabildern in Dynamic Media arbeiten.
+description: Erfahren Sie, wie Sie in Dynamic Media mit interaktiven Bildern arbeiten.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,15 +11,15 @@ role: User, Admin
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # Panoramabilder{#panoramic-images}
 
-In diesem Abschnitt wird beschrieben, wie Sie mit dem Viewer für Panoramabilder kugelförmige Panoramabilder rendern, um interaktive 360-Grad-Anzeigeerlebnisse für einen Raum, eine Eigenschaft, einen Standort oder eine Landschaft zu ermöglichen.
+In diesem Abschnitt wird beschrieben, wie Sie mit dem Viewer für Panoramabilder Kugelpanoramen für ein intensives 360-Grad-Betrachtungserlebnis eines Zimmers, einer Immobilie, eines Ortes oder einer Landschaft ausgeben können.
 
 Informationen hierzu finden Sie unter [Verwalten von Viewer-Vorgaben](/help/assets/managing-viewer-presets.md).
 
@@ -48,7 +48,7 @@ Damit der Viewer für Panoramabilder in Adobe Experience Manager ordnungsgemäß
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Setup]** > **[!UICONTROL Anwendungseinrichtung]** > **[!UICONTROL Veröffentlichungseinrichtung]** > **[!UICONTROL Image-Server]**.
 1. Wählen Sie auf der Image-Server-Veröffentlichungsseite im Dropdownmenü **[!UICONTROL Veröffentlichungskontext]** oben die Option **[!UICONTROL Image-Serving]** aus.
 
-1. Suchen Sie auf derselben Seite &quot;Veröffentlichung zum Image-Server&quot;die Überschrift **[!UICONTROL Anforderungsattribute]**.
+1. Suchen Sie auf derselben Bild-Server-Veröffentlichungsseite die Überschrift **[!UICONTROL Anfrage-Attribute]**.
 1. Suchen Sie unter der Überschrift „Anfrage-Attribute“ die Option **[!UICONTROL Maximale Größe des Antwortbildes]**. Erhöhen Sie anschließend die Werte in den entsprechenden Feldern „Breite“ und „Höhe“ auf die größtmögliche Bildgröße für Panoramabilder.
 
    Bei Dynamic Media Classic liegt die Obergrenze bei 25.000.000 Pixel. Die zulässige Maximalgröße für Bilder mit einem Seitenverhältnis von 2:1 ist 7000 x 3500. In der Regel ist für Desktopbildschirme jedoch eine Größe von 4096 x 2048 Pixel ausreichend.
@@ -57,10 +57,10 @@ Damit der Viewer für Panoramabilder in Adobe Experience Manager ordnungsgemäß
    >
    >Es werden nur Bilder innerhalb der zulässigen Maximalgröße unterstützt. Anfragen zu Bildern oberhalb der Obergrenze geben einen „403“-Fehler zurück.
 
-1. Führen Sie unter der Überschrift &quot;Anfrageattribute&quot;die folgenden Schritte aus:
+1. Führen Sie unter der Überschrift „Anfrage-Attribute“ die folgenden Schritte aus:
 
-   * Stellen Sie den Anforderungsverschleierungsmodus auf **[!UICONTROL Behinderte]**.
-   * Stellen Sie den Anfragensperrmodus auf **[!UICONTROL Behinderte]**.
+   * Stellen Sie den Anfrageverschleierungsmodus auf **[!UICONTROL Deaktiviert]**.
+   * Legen Sie den Anfragesperrmodus auf **[!UICONTROL Deaktiviert]** fest.
 
    Diese Einstellungen sind für die Verwendung der `Panoramic Media`-WCM-Komponente in Experience Manager erforderlich.
 

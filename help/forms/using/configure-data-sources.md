@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren von Datenquellen
-description: Erfahren Sie, wie Sie verschiedene Arten von Datenquellen konfigurieren, damit Sie Formulardatenmodelle erstellen können.
+description: Erfahren Sie, wie Sie verschiedene Arten von Datenquellen konfigurieren können, um Formulardatenmodelle zu erstellen.
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
@@ -8,9 +8,9 @@ feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2073'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 92%
 
 Mit der AEM Forms-Datenintegration können Sie unterschiedliche Datenquellen konfigurieren und Verbindungen zu ihnen herzustellen. Die folgenden Datenquellen werden standardmäßig unterstützt. Es ist jedoch möglich, mit nur wenigen Anpassungen auch andere Datenquellen zu integrieren.
 
-* Relationale Datenbanken - MySQL, Microsoft SQL Server, IBM DB2, Oracle RDBMS, postgreSQL und Sybase
+* Relationale Datenbanken: MySQL, Microsoft SQL Server, IBM DB2, Oracle RDBMS, postgreSQL und Sybase
 * AEM-Benutzerprofil 
 * RESTful-Webservices
 * SOAP-basierte Webservices
@@ -39,7 +39,7 @@ Die Datenintegration unterstützt standardmäßig die Authentifizierungstypen OA
 Sie können relationale Datenbanken mithilfe der AEM-Web-Konsolenkonfiguration konfigurieren. Gehen Sie folgendermaßen vor:
 
 1. Wechseln Sie zur AEM-Web-Konsole unter `https://server:host/system/console/configMgr`.
-1. Suchen Sie die Konfiguration **[!UICONTROL Apache Sling Connection Pooled DataSource]**. Tippen Sie darauf, um die Konfiguration im Bearbeitungsmodus zu öffnen.
+1. Suchen Sie die Konfiguration **[!UICONTROL Apache Sling Connection Pooled DataSource]**. Wählen Sie die Konfiguration aus, um sie im Bearbeitungsmodus zu öffnen.
 1. Geben Sie im Konfigurationsdialogfeld die Details für die Datenbank an, die Sie konfigurieren möchten, z. B.:
 
    * Name der Datenquelle
@@ -53,7 +53,7 @@ Sie können relationale Datenbanken mithilfe der AEM-Web-Konsolenkonfiguration k
    >Stellen Sie sicher, dass Sie vertrauliche Informationen wie Kennwörter verschlüsseln, bevor Sie die Datenquelle konfigurieren. Gehen Sie zum Verschlüsseln wie folgt vor:
    >
    > 1. Wechseln Sie zu https://&#39;[server]:[port]&#39;/system/console/crypto.
-   > 1. Im **[!UICONTROL Nur Text]** -Feld das Kennwort oder eine beliebige Zeichenfolge zum Verschlüsseln angeben und auswählen **[!UICONTROL Protect]**.
+   > 1. Geben Sie im Feld **[!UICONTROL Plain Text]** das Kennwort oder eine beliebige Zeichenfolge zum Verschlüsseln an und wählen Sie **[!UICONTROL Protect]** aus.
    >
    >Der verschlüsselte Text wird im Feld „Protected Text“ angezeigt, das Sie in der Konfiguration angeben können.
 
@@ -74,7 +74,7 @@ Sie können relationale Datenbanken mithilfe der AEM-Web-Konsolenkonfiguration k
 Sie können das AEM-Benutzerprofil mithilfe der Benutzerprofil-Connector-Konfiguration in der AEM-Web-Konsole konfigurieren. Gehen Sie folgendermaßen vor:
 
 1. Wechseln Sie zur AEM-Web-Console unter https://&#39;[server]:[port]&#39;system/console/configMgr.
-1. Suchen nach **[!UICONTROL AEM Forms-Datenintegrationen - Benutzerprofil-Connector-Konfiguration]** und wählen Sie aus, um die Konfiguration im Bearbeitungsmodus zu öffnen.
+1. Suchen Sie nach **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** und tippen Sie darauf, um die Konfiguration im Bearbeitungsmodus zu öffnen.
 1. Im Dialogfeld für die Benutzerprofil-Connector-Konfiguration können Sie Benutzerprofileigenschaften hinzufügen, entfernen oder aktualisieren. Die angegebenen Eigenschaften sind zur Verwendung im Formulardatenmodell verfügbar. Verwenden Sie das folgende Format, um Benutzerprofileigenschaften festzulegen:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
@@ -150,7 +150,7 @@ Führen Sie die folgenden Schritte aus, um den HTTP-Client des Formulardatenmode
 
 1. Melden Sie sich bei der [!DNL Experience Manager Forms]-Autoreninstanz als Administrator an und wechseln Sie zu den [!DNL Experience Manager]-Webkonsolen-Paketen. Die Standard-URL lautet [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
-1. Auswählen **[!UICONTROL HTTP-Client-Konfiguration des Formulardatenmodells für REST-Datenquelle]**.
+1. Wählen Sie **[!UICONTROL HTTP-Client-Konfiguration des Formulardatenmodells für REST-Datenquellen]**.
 
 1. Im Dialogfeld [!UICONTROL HTTP-Client-Konfiguration des Formulardatenmodells für REST-Datenquelle]:
 
@@ -192,7 +192,7 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Stellen Si
 
 >[!NOTE]
 >
-Formulardatenmodell unterstützt [OData Version 4](https://www.odata.org/documentation/).
+Das Formulardatenmodell unterstützt [OData Version 4](https://www.odata.org/documentation/).
 Eine schrittweise Anleitung zum Konfigurieren von Microsoft Dynamics 365, online oder On-Premise, finden Sie unter [Microsoft Dynamics OData-Konfiguration](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Datenquellen]**. Wählen Sie den Ordner aus, in dem Sie eine Cloud-Konfiguration erstellen möchten.
@@ -207,7 +207,7 @@ Eine schrittweise Anleitung zum Konfigurieren von Microsoft Dynamics 365, online
 
    >[!NOTE]
    >
-   Wählen Sie den OAuth 2.0-Authentifizierungstyp aus, um eine Verbindung mit Microsoft Dynamics-Diensten herzustellen, indem Sie den OData-Endpunkt als Dienststamm verwenden.
+   Wählen Sie den OAuth 2.0-Authentifizierungstyp, um eine Verbindung mit Microsoft Dynamics-Diensten herzustellen, die den OData-Endpunkt als Dienststamm nutzen.
 
 1. Wählen Sie **Erstellen**, um die Cloud-Konfiguration für den OData-Service zu erstellen.
 
@@ -217,11 +217,11 @@ Wenn Sie die gegenseitige Authentifizierung für das Formulardatenmodell aktivie
 
 1. Laden Sie den privaten Schlüssel (Zertifikat) auf den [!DNL AEM Forms]-Server hoch. So laden Sie den privaten Schlüssel hoch:
    1. Melden Sie sich bei Ihrem [!DNL AEM Forms]-Server als Administrator an.
-   1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Benutzer]**. Wählen Sie die `fd-cloudservice` Benutzer und wählen Sie **[!UICONTROL Eigenschaften]**.
-   1. Öffnen Sie die **[!UICONTROL Keystore]** Registerkarte, erweitern Sie die **[!UICONTROL Privaten Schlüssel aus KeyStore-Datei hinzufügen]** -Option, laden Sie die KeyStore-Datei hoch, geben Sie die Alias und Kennwörter an und wählen Sie **[!UICONTROL Einsenden]**. Das Zertifikat wird hochgeladen.  Der Alias für den privaten Schlüssel wird im Zertifikat erwähnt und beim Erstellen des Zertifikats festgelegt.
+   1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Benutzer]**. Wählen Sie die Benutzerin bzw. den Benutzer `fd-cloudservice` und dann **[!UICONTROL Eigenschaften]** aus.
+   1. Öffnen Sie die Registerkarte **[!UICONTROL Keystore]**, erweitern Sie die Option **[!UICONTROL Privaten Schlüssel aus KeyStore-Datei hinzufügen]**, laden Sie die KeyStore-Datei hoch, geben Sie die Aliasnamen und Kennwörter an und wählen Sie **[!UICONTROL Senden]** aus. Das Zertifikat wird hochgeladen.  Der Alias für den privaten Schlüssel wird im Zertifikat erwähnt und beim Erstellen des Zertifikats festgelegt.
 1. Laden Sie das Vertrauenszertifikat in den Global Trust Store hoch. Hochladen des Zertifikats:
    1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Trust Store]**.
-   1. Erweitern Sie die **[!UICONTROL Zertifikat aus CER-Datei hinzufügen]** auswählen **[!UICONTROL Zertifikatdatei auswählen]**, laden Sie das Zertifikat hoch und wählen Sie **[!UICONTROL Einsenden]**.
+   1. Erweitern Sie die Option **[!UICONTROL Zertifikat aus CER-Datei hinzufügen]**, wählen Sie **[!UICONTROL Zertifikatsdatei auswählen]**, laden Sie das Zertifikat hoch und wählen Sie **[!UICONTROL Senden]** aus.
 1. Konfigurieren Sie [SOAP](#configure-soap-web-services)- oder [RESTful](#configure-restful-web-services)-Web-Services als Datenquelle und wählen Sie als Authentifizierungstyp **[!UICONTROL Gegenseitige Authentifizierung]**. Wenn Sie mehrere selbstsignierte Zertifikate für `fd-cloudservice`-Benutzer konfigurieren, geben Sie den Schlüsselaliasnamen für das Zertifikat an.
 
 ## Nächste Schritte {#next-steps}

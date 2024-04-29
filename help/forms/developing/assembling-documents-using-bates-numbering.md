@@ -10,9 +10,9 @@ role: Developer
 exl-id: 2a4e21c4-f2f5-44cd-b8ed-7b572782a2f1
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1910'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 99%
 
 Mithilfe der Bates-Nummerierung können Sie PDF-Dokumente zusammenstellen, die eindeutige Seitenkennungen enthalten. *Bates-Nummerierung* ist eine Methode zur Anwendung von eindeutigen Identifikatoren auf einen Stapel verwandter Dokumente. Jede Seite im Dokument (oder in einer Gruppe von Dokumenten) erhält eine Bates-Nummer, mit der die Seite eindeutig identifiziert wird. Beispielsweise können Fertigungsdokumente, die Materialaufstellungsinformationen enthalten und mit der Herstellung einer Baugruppe verbunden sind, eine Kennung enthalten. Eine Bates-Nummer enthält einen numerischen Wert, der sequenziell inkrementiert wird, sowie ein optionales Präfix und Suffix. Das Präfix + numerisch + Suffix wird als *Bates-Muster* bezeichnet.
 
-Die folgende Abbildung zeigt ein PDF-Dokument, das eine eindeutige Kennung in der Kopfzeile des Dokuments enthält.
+Die folgende Abbildung zeigt ein PDF-Dokument mit einer eindeutigen Kennung in der Kopfzeile des Dokuments.
 
 ![au_au_batesnumber](assets/au_au_batesnumber.png)
 

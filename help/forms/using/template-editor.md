@@ -1,6 +1,6 @@
 ---
 title: Adaptive Formularvorlagen
-description: Erstellen Sie Vorlagen für adaptive Formulare, indem Sie die grundlegende Struktur und den anfänglichen Formularinhalt mithilfe des Vorlagen-Editors definieren.
+description: Erstellen Sie adaptive Formularvorlagen, indem Sie mithilfe des Vorlageneditors die grundlegende Struktur und anfängliche Formularinhalte definieren.
 contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -9,9 +9,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2030'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -28,29 +28,29 @@ ht-degree: 78%
 
 Wenn Sie ein Formular erstellen, fügen Sie Felder und Komponenten hinzu, um Formularstruktur, Inhalt und Aktionen im Editor zu definieren. Sie können Felder und Komponenten im`guideRootPanel` des Formularcontainers hinzufügen. Mit dem Vorlageneditor können Sie eine Vorlage erstellen, die eine grundlegende Struktur und anfänglichen Inhalt enthält, die Autorinnen und Autoren zum Erstellen von Formularen verwenden können.
 
-Beispiel: Sie möchten, dass alle Autoren in einem Registrierungsformular bestimmte Textfelder, Navigationsschaltflächen und eine Schaltfläche zum Senden verwenden. Sie können eine Vorlage mit den Komponenten erstellen, die Autoren verwenden können, damit ihr Formular konsistent mit anderen Registrierungsformularen ist. Wenn Autoren die Vorlage zum Erstellen eines adaptiven Formulars verwenden, übernimmt das neue Formular die Struktur und die Komponenten, die Sie in der Vorlage angegeben haben. Mit dem Vorlageneditor können Sie:
+Beispiel: Sie möchten, dass alle Autoren in einem Registrierungsformular bestimmte Textfelder, Navigationsschaltflächen und eine Schaltfläche zum Senden verwenden. Sie können eine Vorlage mit den Komponenten erstellen, die Autoren verwenden können, damit ihr Formular konsistent mit anderen Registrierungsformularen ist. Wenn Autorinnen oder Autoren die Vorlage verwenden, um ein adaptives Formular zu erstellen, übernimmt das neue Formular die Struktur und die Komponenten, die Sie in der Vorlage festgelegt haben. Mit dem Vorlageneditor können Sie:
 
 * Kopf- und Fußzeilenkomponenten eines Formulars in der Strukturebene hinzufügen.
 * Den anfänglichen Inhalt für das Formular angeben.
-* Geben Sie ein Design und Übermittlungsaktionen an.
+* Design und Übermittlungsaktionen festlegen.
 
 ## Arbeiten mit Vorlagen {#working-with-templates}
 
-Sie können über das Menü Tools auf den Vorlagen-Editor zugreifen, indem Sie zu **Adobe Experience Manager > Tools > Vorlagen**. Hier befinden sich die Vorlagen in Ordnern für bearbeitbare Vorlagen. AEM bietet einen globalen Ordner zum Organisieren von Vorlagen. Er ist jedoch nicht standardmäßig aktiviert. Sie können Ihren Administrator bitten, den globalen Ordner zu aktivieren, oder einen Ordner für Vorlagen erstellen. Weitere Informationen zum Erstellen von Ordnern finden Sie unter [Vorlagenordner](/help/sites-developing/page-templates-editable.md).
+Sie können über das Menü „Tools“ auf den Vorlageneditor zugreifen. Navigieren Sie hierzu zu **Adobe Experience Manager > Tools > Vorlagen**. Hier befinden sich die Vorlagen in Ordnern für bearbeitbare Vorlagen. In AEM steht ein globaler Ordner zum Organisieren von Vorlagen zur Verfügung. Er ist jedoch nicht standardmäßig aktiviert. Sie können Ihren Administrator bitten, den globalen Ordner zu aktivieren, oder einen Ordner für Vorlagen erstellen. Weitere Informationen zum Erstellen von Ordnern finden Sie unter [Vorlagenordner](/help/sites-developing/page-templates-editable.md).
 
-Nachdem Sie ausgewählt haben, um einen Ordner zu öffnen, wird die Schaltfläche Erstellen angezeigt, mit der Sie eine Vorlage für adaptive Formulare erstellen können.
+Sobald Sie einen Ordner auswählen, um ihn zu öffnen, wird die Schaltfläche „Erstellen“ angezeigt, mit der Sie eine Vorlage für adaptive Formulare erstellen können.
 
 ### Erstellen einer Vorlage {#create-template}
 
 Nachdem Sie einen Ordner erstellt haben, öffnen Sie den Ordner und führen Sie die folgenden Schritte aus, um eine Vorlage zu erstellen:
 
-1. Wählen Sie in der Vorlagenkonsole die Option **Erstellen** in dem Ordner, den Sie erstellt haben.
-1. Wählen Sie im Abschnitt Vorlagentyp auswählen die Option **Adaptive Formularvorlage** und wählen **Nächste**.
+1. Wählen Sie in der Vorlagenkonsole im erstellten Ordner die Option **Erstellen** aus.
+1. Wählen Sie im Abschnitt zur Auswahl des Vorlagentyps die Option **Adaptive Formularvorlage** und dann **Weiter** aus.
 
-1. Geben Sie im Abschnitt „Vorlagendetails“ einen Namen für die Vorlage an und wählen Sie **Erstellen**.
-Sie können eine Beschreibung und eine Miniaturansicht hinzufügen, die angezeigt wird, wenn Sie die erstellte Vorlage beim Formular-Authoring auswählen.
+1. Geben Sie im Abschnitt „Vorlagendetails“ einen Namen für die Vorlage an und wählen Sie **Erstellen** aus.
+Sie können eine Beschreibung und eine Miniaturansicht hinzufügen, die angezeigt wird, wenn sich beim Verfassen von Formularen die erstellte Vorlage auswählen lässt.
 
-1. Wählen Sie **Fertig**, um zur Konsole zurückzukehren, oder **Öffnen**, um die Vorlage im Editor zu öffnen.
+1. Wählen Sie **Fertig** aus, um zur Konsole zurückzukehren, oder **Öffnen**, um die Vorlage im Editor zu öffnen.
 
 ### Benutzeroberfläche des Vorlageneditors {#template-editor-ui}
 
@@ -101,9 +101,9 @@ Kopf- und Fußzeile in der Strukturebene hinzugefügt
 
 #### Sperren/Entsperren von Komponenten in der Strukturebene {#locking-unlocking-components-in-the-structure-layer}
 
-Wenn Sie die Vorlage bearbeiten, wenn die Strukturebene ausgewählt ist, können Sie die Kopf- und Fußzeile der Vorlage entsperren. Wenn eine Komponente in der Vorlage entsperrt ist, können Formularautoren die Komponente im adaptiven Formular bearbeiten, das die Vorlage verwendet. Das Sperren einer Komponente verhindert, dass Formularautoren sie im adaptiven Formular bearbeiten. Die Sperroption ist in der Komponenten-Symbolleiste verfügbar.
+Wenn Sie die Vorlage bearbeiten, wenn die Strukturebene ausgewählt ist, können Sie die Kopf- und Fußzeile der Vorlage entsperren. Wenn eine Komponente in der Vorlage entsperrt wurde, können Formularautorinnen und -autoren die Komponente in dem adaptiven Formular bearbeiten, das die Vorlage verwendet. Das Sperren einer Komponente verhindert, dass sie im adaptiven Formular von Formularautorinnen und -autoren bearbeitet werden kann. Die Sperroption ist in der Komponenten-Symbolleiste verfügbar.
 
-Beispielsweise können Sie die Kopfzeilenkomponente zur Vorlage hinzufügen. Wenn Sie die Komponente auswählen, wird in der Komponenten-Symbolleiste eine Sperroption angezeigt. In der Regel enthält die Kopfzeile den Firmennamen und das Logo und Sie möchten nicht, dass Formularautorinnen und -autoren das Logo und die Kopfzeile in einer Vorlage ändern. In einem adaptiven Formular, das mit der Vorlage erstellt wurde, in der die Kopfzeilenkomponente gesperrt ist, können Formularautoren das Logo und den Unternehmensnamen nicht ändern.
+Beispielsweise können Sie die Kopfzeilenkomponente zur Vorlage hinzufügen. Wenn Sie die Komponente auswählen, wird in der Komponenten-Symbolleiste eine Sperroption angezeigt. In der Regel enthält die Kopfzeile den Firmennamen und das Logo und Sie möchten nicht, dass Formularautorinnen und -autoren das Logo und die Kopfzeile in einer Vorlage ändern. In einem adaptiven Formular, das anhand einer Vorlage mit gesperrter Kopfzeilenkomponente erstellt wurde, können Formularautorinnen und -autoren das Logo und den Firmennamen nicht ändern.
 
 >[!NOTE]
 >
@@ -111,16 +111,16 @@ Beispielsweise können Sie die Kopfzeilenkomponente zur Vorlage hinzufügen. Wen
 
 ### Anfänglicher Inhalt {#initial-content}
 
-Wenn die Option Anfänglicher Inhalt ausgewählt ist, wird der Container des adaptiven Formulars der Vorlage wie ein adaptives Formular zur Bearbeitung geöffnet. Wie beim Authoring eines adaptiven Formulars können Sie anfängliche Einstellungen festlegen, z. B. ein Design und Übermittlungsaktionen.
+Wenn die Option „Anfänglicher Inhalt“ ausgewählt ist, wird der Container für das adaptive Formular der Vorlage wie ein adaptives Formular zur Bearbeitung geöffnet. Wie beim Authoring eines adaptiven Formulars können Sie anfängliche Einstellungen festlegen, z. B. das Design und die Übermittlungsaktionen.
 
-Formularautorinnen und -autoren verwenden sie als Grundlage zum Erstellen eines Formulars. Die Struktur des Inhaltsflusses wird in der Ebene „Anfänglicher Inhalt“ der Vorlage angegeben. Um zum Bearbeiten des anfänglichen Inhalts der Formularvorlage zu wechseln, wählen Sie vor der Vorschau in der Seitensymbolleiste die Option ![Arbeitsfläche-Dropdown](assets/canvas-drop-down.png) **> Anfänglicher Inhalt**.
+Formularautorinnen und -autoren verwenden sie als Grundlage zum Erstellen eines Formulars. Die Struktur des Inhaltsflusses wird in der Ebene „Anfänglicher Inhalt“ der Vorlage angegeben. Um zur Bearbeitung des anfänglichen Inhalts der Formularvorlage zu wechseln, bevor Sie die Vorschau in der Seitensymbolleiste anzeigen, wählen Sie ![canvas-drop-down](assets/canvas-drop-down.png) **Anfänglicher Inhalt** aus.
 ![Ebene „Anfänglicher Inhalt“ im Vorlageneditor](assets/initial-content-layer.png)
 
 In der Ebene „Anfänglicher Inhalt“ im Vorlageneditor ist der Container des adaptiven Formulars zum Festlegen von Eigenschaften ausgewählt.
 
 ![Anfänglicher Inhalt](assets/initial-content-layer-1.png)
 
-Auf der Ebene Anfänglicher Inhalt erstellen Sie die adaptive Formularvorlage, die Ihre Autoren als Grundlage verwenden. Das Erstellen einer Vorlage ähnelt dem Erstellen eines Formulars. Sie verwenden die in der Seitenleiste verfügbaren Optionen. Die Seitenleiste bietet Browser für Inhalte, Eigenschaften, Assets und Komponenten.
+In der Ebene „Anfänglicher Inhalt“ erstellen Sie die adaptive Formularvorlage, die Ihre Autorinnen und Autoren als Grundlage verwenden. Das Erstellen einer Vorlage ähnelt dem Erstellen eines Formulars. Sie verwenden die in der Seitenleiste verfügbaren Optionen. Die Seitenleiste bietet Browser für Inhalte, Eigenschaften, Assets und Komponenten.
 
 Weitere Informationen finden Sie unter [Randleiste](../../forms/using/introduction-forms-authoring.md#sidebar).
 
@@ -128,7 +128,7 @@ Weitere Informationen finden Sie unter [Randleiste](../../forms/using/introducti
 >
 >Wenn Sie als Übermittlungsaktion „Inhalt speichern“ oder „PDF speichern“ auswählen, wird die Option zum Angeben des Speicherpfads angezeigt. Wenn Sie den Pfad in der Vorlage angeben, haben alle daraus erstellten Formulare denselben Pfad. Sie können den richtigen Speicherpfad angeben oder sicherstellen, dass Formularautorinnen und -autoren ihn aktualisieren, um zu verhindern, dass Daten aus jedem Formular an demselben Speicherort gespeichert werden.
 
-#### Erstellen einer adaptiven Formularvorlage mit Registerkarten und Bedienfeldern  {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
+#### Erstellen einer adaptiven Formularvorlage mit Registerkarten und Bedienfeldern  {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
 
 Nehmen wir an, Sie möchten eine Vorlage mit den folgenden Registerkarten erstellen:
 
@@ -144,7 +144,7 @@ Sie haben ein Logo hinzugefügt, einen Titel angegeben und eine Fußzeile in der
 * Sie können die Bedienfeldkomponente aus dem Komponenten-Browser in der Seitenleiste ziehen.
 * Sie können ein untergeordnetes Bedienfeld von `guideRootPanel` aus der Symbolleiste hinzufügen.
 
-Um die Registerkarten „Allgemeine Informationen“ und „Berufliche Informationen“ zu erstellen, fügen Sie zwei Bedienfelder im untergeordneten Bedienfeld von `guideRootPanel` hinzu. Wählen Sie die Bedienfelder aus und wählen Sie dann ![cmppr](assets/cmppr.png), um die Eigenschaften in der Seitenleiste zu öffnen. Ändern Sie die Elementnamen in `general-info` und `professional-info` und die Titel in „Allgemeine Informationen“ bzw. „Berufliche Informationen“. Wählen Sie in der Randleiste „Inhalt“, um den Inhalts-Browser zu öffnen. Wählen Sie in der Registerkarte „Formularobjekte“ `guideRootPanel` aus. Im Editor ist „guideRootPanel“ ausgewählt. Wählen Sie ![cmppr](assets/cmppr.png) in der Komponenten-Symbolleiste, um dessen Eigenschaften zu öffnen. Wählen Sie im Feld „Bedienfeld-Layout“ **Registerkarten oben** und wählen Sie dann **Fertig**. Die Vorlagenstruktur mit Registerkarten wird angewendet.
+Um die Registerkarten „Allgemeine Informationen“ und „Berufliche Informationen“ zu erstellen, fügen Sie zwei Bedienfelder im untergeordneten Bedienfeld von `guideRootPanel` hinzu. Wählen Sie die Bedienfelder und dann ![cmppr](assets/cmppr.png) aus, um die Eigenschaften in der Seitenleiste zu öffnen. Ändern Sie die Elementnamen in `general-info` und `professional-info` und die Titel in „Allgemeine Informationen“ bzw. „Berufliche Informationen“. Wählen Sie in der Seitenleiste einen Inhalt, um den Inhalts-Browser zu öffnen. Wählen Sie in der Registerkarte „Formularobjekte“ `guideRootPanel` aus. Im Editor ist „guideRootPanel“ ausgewählt. Wählen Sie in der Komponenten-Symbolleiste das Symbol ![cmppr](assets/cmppr.png) aus, um die zugehörigen Eigenschaften zu öffnen. Wählen Sie im Feld „Bedienfeldlayout“ die Option **Registerkarten oben** und dann **Fertig** aus. Die Vorlagenstruktur mit Registerkarten wird angewendet.
 
 #### Hinzufügen von Inhalten in Registerkarten {#adding-content-in-tabs}
 
@@ -160,27 +160,27 @@ Nachdem Sie Felder hinzugefügt haben, können Sie Schaltflächen wie „Senden�
 
 ### Aktivieren der Vorlage {#enabling-the-template}
 
-Wenn Sie eine Vorlage erstellen, wird sie als Entwurf hinzugefügt. Aktivieren Sie die Vorlage, um sie zum Erstellen adaptiver Formulare zu verwenden. Aktivieren einer Vorlage:
+Wenn Sie eine Vorlage erstellen, wird sie als Entwurf hinzugefügt. Aktivieren Sie die Vorlage, um sie zum Erstellen von adaptiven Formularen zu verwenden. Aktivieren einer Vorlage:
 
 1. Navigieren Sie zu **Adobe Experience Manager > Werkzeuge > Vorlagen** und öffnen Sie den Ordner, in dem Sie die Vorlage erstellt haben.
 
 1. Die Vorlage, die Sie erstellt haben, ist als Entwurf gekennzeichnet.
-1. Wählen Sie die Vorlage aus und wählen Sie dann **Aktivieren** in der Symbolleiste.
+1. Wählen Sie die Vorlage und dann in der Symbolleiste die Option **Aktivieren** aus.
 Wenn Sie ein adaptives Formular erstellen, wird die Vorlage aufgeführt, wenn Sie aufgefordert werden, eine Vorlage auszuwählen.
 
 ## Importieren oder Exportieren einer Vorlage {#importing-or-exporting-a-template}
 
-Ein Formular funktioniert mit seiner Vorlage. Wenn Sie ein adaptives Formular herunterladen, das mit einer benutzerdefinierten Vorlage erstellt wurde, wird die Vorlage nicht heruntergeladen. Wenn Sie das Formular in eine andere AEM Forms-Instanz importieren, wird es ohne Vorlage importiert. Wenn ein Formular importiert wird, aber die Vorlage nicht verfügbar ist, wird das Formular nicht gerendert. Es ist auch möglich, die benutzerdefinierte Vorlage vom `/conf`-Knoten in `https://<server>:<port>/crx/packmgr` zu verpacken und es in die AEM Forms-Instanz zu importieren, in die Sie das Formular hochladen möchten.
+Ein Formular funktioniert mit seiner Vorlage. Wenn Sie ein adaptives Formular herunterladen, das mit einer benutzerdefinierten Vorlage erstellt wurde, wird die Vorlage nicht heruntergeladen. Wenn Sie das Formular in eine andere AEM Forms-Instanz importieren, wird es ohne die zugehörige Vorlage importiert. Wenn ein Formular importiert wird, aber die Vorlage nicht verfügbar ist, wird das Formular nicht gerendert. Es ist auch möglich, die benutzerdefinierte Vorlage vom `/conf`-Knoten in `https://<server>:<port>/crx/packmgr` zu verpacken und es in die AEM Forms-Instanz zu importieren, in die Sie das Formular hochladen möchten.
 
 ## Erstellen eines adaptiven Formulars mithilfe der Vorlage {#creating-an-adaptive-form-using-the-template}
 
-Nachdem Sie eine Vorlage erstellt und aktiviert haben, ist sie im Forms Manager verfügbar, wenn Sie ein adaptives Formular erstellen. Informationen zum Verwenden einer Vorlage und Erstellen eines adaptiven Formulars finden Sie unter [Erstellen eines adaptiven Formulars](../../forms/using/creating-adaptive-form.md).
+Nachdem Sie eine Vorlage erstellt und aktiviert haben, steht sie im Formular-Manager zur Verfügung, wenn Sie ein adaptives Formular erstellen. Weitere Informationen zum Verwenden einer Vorlage und Erstellen eines adaptiven Formulars finden Sie unter [Erstellen eines adaptiven Formulars](../../forms/using/creating-adaptive-form.md).
 
-## Ändern der Anzeigeoption von nativen Vorlagen  {#change-display-option-of-out-of-the-box-templates}
+## Ändern der Anzeigeoptionen vorkonfigurierter Vorlagen  {#change-display-option-of-out-of-the-box-templates}
 
-Sie können benutzerdefinierte Vorlagen für adaptive Formulare erstellen, um die grundlegende Struktur und den anfänglichen Inhalt zu definieren. AEM Forms bietet außerdem eine Standardvorlage für adaptive Formulare. Sie können wählen, ob Sie die Vorlagen anzeigen oder ausblenden möchten.
+Sie können benutzerdefinierte Vorlagen für adaptive Formulare erstellen, um die grundlegende Struktur und den anfänglichen Inhalt zu definieren. AEM Forms bietet außerdem eine Reihe vorkonfigurierter Vorlagen für adaptive Formulare. Sie können wählen, ob Sie die Vorlagen anzeigen oder ausblenden möchten.
 
-Führen Sie die folgenden Schritte aus, um Vorlagen ein- und auszublenden:
+Führen Sie die folgenden Schritte aus, um Vorlagen ein- bzw. auszublenden:
 
 1. Melden Sie sich bei der Autor-Instanz von AEM Forms an und navigieren Sie zu **Tools** > **Vorgänge** > **Web-Konsole**.
 
@@ -191,9 +191,9 @@ Führen Sie die folgenden Schritte aus, um Vorlagen ein- und auszublenden:
 1. Suchen und öffnen Sie die **FormsManager-Konfigurations** einstellungen:
 
    * Um die adaptiven Formularvorlage ein- oder auszublenden, aktivieren oder deaktivieren Sie die Option **Einbeziehen der standardmäßigen AF- und AD-Vorlagen**.
-   * Um die adaptiven Formularvorlage, die in AEM 6.0 Forms oder AEM 6.1 Forms hinzugefügt wurden, jetzt aber veraltet sind, ein- oder auszublenden, aktivieren oder deaktivieren Sie die Option **Einbeziehen der AEM 6.0 AF-Vorlagen**. Wenn diese Option aktiviert ist, muss die **Vordefinierte AF- und AD-Vorlagen einschließen** Konfiguration zu aktivieren.
+   * Um die adaptiven Formularvorlage, die in AEM 6.0 Forms oder AEM 6.1 Forms hinzugefügt wurden, jetzt aber veraltet sind, ein- oder auszublenden, aktivieren oder deaktivieren Sie die Option **Einbeziehen der AEM 6.0 AF-Vorlagen**. Wenn diese Option aktiviert ist, müssen Sie die Konfiguration zum **Einbeziehen der vorkonfigurierten AF- und AD-Vorlagen** aktivieren, damit sie wirksam wird.
 
-1. Klicken Sie auf **Speichern**. Die Anzeigeoptionen für die vordefinierten Vorlagen werden geändert.
+1. Klicken Sie auf **Speichern**. Die Anzeigeoptionen für die vorkonfigurierten Vorlagen werden geändert.
 
 ## Empfehlungen {#recommendations}
 

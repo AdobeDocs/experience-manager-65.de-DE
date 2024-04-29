@@ -1,15 +1,15 @@
 ---
 title: Form Bridge APIs für HTML5-Formulare
-description: Externe Anwendungen verwenden die FormBridge-API, um eine Verbindung zum XFA Mobile Form herzustellen. Die API sendet ein FormBridgeInitialized-Ereignis im übergeordneten Fenster.
+description: Externe Anwendungen verwenden die FormBridge-API, um eine Verbindung zu einem Mobile-XFA-Formular herzustellen. Die API löst ein FormBridgeInitialized-Ereignis auf dem übergeordneten Fenster aus.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 exl-id: b598ef47-49ff-4806-8cc7-4394aa068eaa
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '938'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 84%
 
 Sie können die Form Bridge APIs verwenden, um einen Übertragungskanal zwischen XFA-basierten HTML5-Formularen und Ihren Programmen zu öffnen. Die Form Bridge APIs bieten eine **Verbindungs**-API, um die Verbindung zu erstellen.
 
-Die **Verbindungs**-API akzeptiert einen Handler als ein Argument. Nachdem eine erfolgreiche Verbindung zwischen XFA-basiertem HTML5-Formular und Form Bridge erstellt wurde, wird der Handle aufgerufen.
+Die **Verbindungs**-API akzeptiert einen Handler als ein Argument. Nachdem eine Verbindung zwischen XFA-basierten HTML5-Formularen und Form Bridge erstellt wurde, wird der Handler aufgerufen.  
 
 Sie können den folgenden Beispielcode verwenden, um die Verbindung zu erstellen.
 
@@ -40,7 +40,7 @@ window.addEventListener("FormBridgeInitialized",
 
 **getBridgeVersion()**
 
-Gibt die Versionsnummer der Skriptbibliothek aus
+Gibt die Versionsnummer der Scripting-Bibliothek zurück
 
 * **Eingabe**: keine
 * **Ausgabe**: Versionsnummer der Skriptbibliothek
@@ -60,8 +60,8 @@ Gibt die Versionsnummer der Skriptbibliothek aus
    * **handler:** Funktion, die ausgeführt wird, wenn Form Bridge verbunden ist.
    * **context**: Das Objekt, auf das der Kontext (dieses) der *handler*-Funktion festgelegt wird.
 
-* **Ausgabe**: Keine
-* **Fehler**: Keine
+* **Ausgabe**: keine
+* **Fehler**: keine
 
 **getDataXML(options)** Gibt die Daten des aktuellen Formulars im XML-Format zurück
 
@@ -70,15 +70,15 @@ Gibt die Versionsnummer der Skriptbibliothek aus
    * **options:** JavaScript-Objekt, das die folgenden Eigenschaften enthält:
 
       * **Error:** Fehlerhandler-Funktion
-      * **success**: Erfolgshandler-Funktion. Diese Funktion wird an ein Objekt übergeben, das XML enthält in *data* -Eigenschaft.
-      * **context**: Das Objekt, dem der Kontext (dies) des *success* -Funktion festgelegt ist
+      * **success**: Erfolgshandler-Funktion. Dieser Funktion wird ein Objekt übergeben, das XML in der Eigenschaft *data* enthält.
+      * **context**: Das Objekt, auf das der Kontext (this) der Funktion *success* festgelegt wird.
       * **validationChecker**: Funktion, um die Validierungsfehler zu prüfen, die vom Server erhalten wurden. Der Überprüfungsfunktion wird ein Array von Fehlerstrings übergeben.
       * **formState**: Der JSON-Status des XFA-Formulars, für das XML-Daten zurückgegeben werden sollen. Wenn nicht anders angegeben, wird Daten-XML für das aktuell gerenderte Formular zurückgegeben.
 
 * **Ausgabe:** keine
 * **Fehler:** keine
 
-**registerConfig(configName, config)** Registriert Benutzer-/Portal-spezifische Konfigurationen mit FormBridge. Diese Konfigurationen überschreiben die Standardkonfigurationen. Die unterstützten Konfigurationen werden im Abschnitt &quot;config&quot;angegeben.
+**registerConfig(configName, config)** Registriert Benutzer-/Portal-spezifische Konfigurationen mit FormBridge. Diese Konfigurationen überschreiben die Standardkonfigurationen. Die unterstützten Konfigurationen sind im Abschnitt „config“ angegeben.
 
 * **Eingabe:**
 
@@ -154,7 +154,7 @@ Gibt die Versionsnummer der Skriptbibliothek aus
 
 * **Fehler:** keine
 
-**restoreFormState(options)**: Stellt den Formularstatus aus dem bereitgestellten JSON-Status im Optionenobjekt wieder her. Der Status wird angewendet und Erfolgs- oder Fehler-Handler werden aufgerufen, nachdem der Vorgang abgeschlossen ist.
+**restoreFormState(options)**: Stellt den Formularstatus aus dem bereitgestellten JSON-Status im Optionenobjekt wieder her. Der Status wird angewendet und Erfolgs- oder Fehlerhandler werden aufgerufen, nachdem der Vorgang abgeschlossen ist.
 
 * **Eingabe:**
 
@@ -172,7 +172,7 @@ Gibt die Versionsnummer der Skriptbibliothek aus
 
 * **Eingabe**: SOM-Ausdruck des Felds, auf das der Fokus gelegt werden soll.
 * **Ausgabe:** keine
-* **Fehler:** Löst eine Ausnahme aus, wenn ein falscher SOM-Ausdruck vorhanden ist
+* **Fehler**: Löst im Fall eines falschen SOM-Ausdrucks einen Ausnahmefehler aus.
 
 **setFieldValue (som, value)**: Legt den Wert der Felder für die gegebenen SOM-Ausdrücke fest
 
@@ -182,7 +182,7 @@ Gibt die Versionsnummer der Skriptbibliothek aus
    * **value**: Array der Werte, die den SOM-Ausdrücken in einem **SOM**-Array entsprechen. Wenn der Datentyp des Werts nicht mit fieldType übereinstimmt, wird der Wert nicht geändert.
 
 * **Ausgabe:** keine
-* **Fehler:** Löst eine Ausnahme aus, wenn ein falscher SOM-Ausdruck vorliegt
+* **Fehler**: Löst im Fall eines falschen SOM-Ausdrucks einen Ausnahmefehler aus.
 
 **getFieldValue (som)**: Gibt den Wert der Felder für die gegebenen SOM-Ausdrücke zurück
 

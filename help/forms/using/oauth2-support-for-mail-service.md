@@ -1,28 +1,28 @@
 ---
-title: Konfigurieren der OAuth2-basierten Authentifizierung für Microsoft® (Forms JEE OAuth); Office 365-E-Mail-Serverprotokolle
-description: Konfigurieren der OAuth2-basierten Authentifizierung für Microsoft® (Forms JEE OAuth); Office 365-E-Mail-Serverprotokolle
+title: Konfigurieren der OAuth2-basierten Authentifizierung für Microsoft® (Forms JEE OAuth); Office 365-Mailserver-Protokolle
+description: Konfigurieren der OAuth2-basierten Authentifizierung für Microsoft® (Forms JEE OAuth); Office 365-Mailserver-Protokolle
 exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '986'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# Integrieren von AEM Forms in Microsoft® Office 365-E-Mail-Serverprotokolle {#oauth2-support-for-the-microsoft-mail-server-protocols}
+# Integration von AEM Forms mit den Mailserver-Protokollen von Microsoft® Office 365 {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
 Um es Unternehmen zu ermöglichen, sichere E-Mail-Anforderungen zu erfüllen, bietet AEM Forms OAuth 2.0-Unterstützung für die Integration mit Microsoft® Office 365-Mailserver-Protokollen. Sie können den OAuth 2.0-Authentifizierungsdienst von Azure Active Directory (Azure AD) verwenden, um sich mit verschiedenen Protokollen wie IMAP, POP oder SMTP zu verbinden und auf die E-Mail-Daten von Office 365-Benutzenden zuzugreifen. Nachfolgend finden Sie eine schrittweise Anleitung zur Konfiguration der Microsoft® Office 365-Mailserver-Protokolle für die Authentifizierung über den OAuth 2.0-Dienst:
 
 1. Melden Sie sich unter [https://portal.azure.com/](https://portal.azure.com/) an, suchen Sie in der Suchleiste nach **Azure Active Directory** und klicken Sie auf das Ergebnis.
 Alternativ können Sie direkt zu [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) navigieren
-1. Klicks **Hinzufügen** > **App-Registrierung** > **Neue Registrierung**.
+1. Klicken Sie auf **Hinzufügen** > **App-Registrierung** > **Neue Registrierung**.
 
    ![App-Registrierung](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
 
 1. Füllen Sie die Informationen entsprechend Ihren Anforderungen aus und klicken Sie dann auf **Registrieren**.
-   ![Unterstütztes Konto](/help/forms/using/assets/azure_suuportedaccountype.png)
-Im oben genannten Fall **Konten in jedem Unternehmensverzeichnis (Beliebiges Azure AD-Verzeichnis - Multitenant) und persönlichen Microsoft®-Konten (z. B. Skype, Xbox)** ausgewählt ist.
+   ![Unterstütztes Konto](/help/forms/using/assets/azure_suuportedaccountype.png) 
+In dem Fall oben ist die Option **Konten in einem beliebigen Organisationsverzeichnis (beliebiges Azure AD-Verzeichnis – Multitenant) und persönliche Microsoft®-Konten (z. B. Skype, Xbox)** ausgewählt.
 
    >[!NOTE]
    >
@@ -34,7 +34,7 @@ Im oben genannten Fall **Konten in jedem Unternehmensverzeichnis (Beliebiges Azu
 
    ![Geheimer Schlüssel](/help/forms/using/assets/azure_secretkey.png)
 
-1. Um Berechtigungen hinzuzufügen, wechseln Sie zur neu erstellten App und wählen Sie **API-Berechtigungen** > **Berechtigungen hinzufügen** > **Microsoft® Diagramm** > **Delegierte Berechtigungen**.
+1. Um Berechtigungen hinzuzufügen, gehen Sie zu der neu erstellten App und wählen Sie **API-Berechtigungen** > **Berechtigung hinzufügen** > **Microsoft® Graph** > **Delegierte Berechtigungen**.
 1. Aktivieren Sie die Kontrollkästchen für die folgenden Berechtigungen für die App und klicken Sie auf **Berechtigung hinzufügen**:
 
    * `IMAP.AccessUser.All`
@@ -75,14 +75,14 @@ Als Nächstes müssen Sie den Autorisierungs-Code generieren, wie in den folgend
    >
    > Wenn es sich um eine Einzelmandanten-Anwendung handelt, ersetzen Sie `common` durch Ihre `[tenantid]` in der folgenden URL, um den Autorisierungs-Code zu generieren: `https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/authorize?client_id=[[clientid]]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20openid%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
 
-1. Wenn Sie die oben genannte URL eingeben, werden Sie zum Anmeldebildschirm weitergeleitet:
+1. Wenn Sie die obige URL eingeben, werden Sie zum Anmeldebildschirm weitergeleitet:
    ![Anmeldebildschirm](/help/forms/using/assets/azure_loginscreen.png)
 
 1. Geben Sie die E-Mail-Adresse ein, klicken Sie auf **Weiter**, und der Bildschirm für die App-Berechtigung erscheint:
 
    ![Berechtigung zulassen](/help/forms/using/assets/azure_permission.png)
 
-1. Wenn Sie Berechtigungen zulassen, werden Sie wie folgt zu einer neuen URL umgeleitet: `https://login.microsoftonline.com/common/oauth2/nativeclient?code=<code>&session_state=[session_id]`
+1. Wenn Sie die Berechtigung erteilen, werden Sie auf eine neue URL umgeleitet: `https://login.microsoftonline.com/common/oauth2/nativeclient?code=<code>&session_state=[session_id]`
 
 1. Kopieren Sie den Wert von `<code>` aus der obigen URL von `0.ASY...` nach `&session_state` in der obigen URL.
 
@@ -135,7 +135,7 @@ Konfigurieren Sie nun den E-Mail-Dienst auf dem aktuellen JEE-Server, indem Sie 
 
    >[!NOTE]
    >
-   >Bei Bedarf können Sie die Authentifizierungseinstellung für Auth 2.0 in Standardauthentifizierung für einen bestimmten Prozess in einer Workbench ändern. Legen Sie dazu die **OAuth 2.0-Authentifizierung** Wert als &quot;False&quot;unter **Globale Einstellungen verwenden** im **Verbindungseinstellungen** Registerkarte.
+   >Bei Bedarf können Sie die Authentifizierungseinstellung für Auth 2.0 in „Standardauthentifizierung“ für einen bestimmten Prozess in einer Workbench ändern. Legen Sie dazu auf der Registerkarte **Verbindungseinstellungen** unter **Globale Einstellungen verwenden** den Wert **OAuth 2.0-Authentifizierung** als „False“ fest.
 
 ## So aktivieren Sie OAuth-Aufgabenbenachrichtigungen {#enable_oauth_task}
 
@@ -149,7 +149,7 @@ Konfigurieren Sie nun den E-Mail-Dienst auf dem aktuellen JEE-Server, indem Sie 
 
    >[!NOTE]
    >
-   > Weitere Informationen zu den Aufgabenbenachrichtigungen finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
+   > Weitere Informationen zu den Aufgabenbenachrichtigungen finden Sie [hier](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints#create-an-email-endpoint-for-the-complete-task-service).
 
 ## So konfigurieren Sie den E-Mail-Endpunkt {#configure_email_endpoint}
 
@@ -163,7 +163,7 @@ Konfigurieren Sie nun den E-Mail-Dienst auf dem aktuellen JEE-Server, indem Sie 
 
    >[!NOTE]
    >
-   > Um weitere Informationen zur Konfiguration von E-Mail-Endpunkten zu erhalten, klicken Sie auf [E-Mail-Endpunkt konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html).
+   > Um weitere Informationen zur Konfiguration von E-Mail-Endpunkten zu erhalten, klicken Sie auf [E-Mail-Endpunkt konfigurieren](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints).
 
 ## Fehlerbehebung {#troubleshooting}
 

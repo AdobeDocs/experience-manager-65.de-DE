@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d72a3977-1423-49e0-899b-234bb76be378
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1580'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -120,7 +120,7 @@ Wenn Sie die Authentifizierung für eine Unternehmens- oder Hybrid-Domain konfig
 
 ## Just-in-time-Bereitstellung von Benutzenden {#just-in-time-provisioning-of-users}
 
-Just-in-time-Bereitstellung erstellt automatisch einen Benutzer in der User Management-Datenbank, nachdem der Benutzer über einen Authentifizierungsanbieter authentifiziert wurde. Relevante Rollen und Gruppen werden außerdem der neuen Person dynamisch zugewiesen. Sie können Just-in-time-Bereitstellung für Unternehmens- und Hybrid-Domains aktivieren.
+Bei der Just-in-time-Bereitstellung wird automatisch eine Benutzerin oder ein Benutzer in der Benutzerverwaltungsdatenbank erstellt, nachdem dieser Mensch über einen Authentifizierungsanbieter authentifiziert wurde. Relevante Rollen und Gruppen werden außerdem der neuen Person dynamisch zugewiesen. Sie können Just-in-time-Bereitstellung für Unternehmens- und Hybrid-Domains aktivieren.
 
 Im vorliegenden Verfahren wird beschrieben, wie die herkömmliche Authentifizierung in AEM Forms funktioniert:
 

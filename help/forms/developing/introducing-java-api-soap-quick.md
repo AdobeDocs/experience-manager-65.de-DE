@@ -1,6 +1,6 @@
 ---
 title: Einführung in die Kurzanleitung zur Java™-API
-description: Erfahren Sie, wie AEM Forms-Vorgänge mithilfe von AEM Forms Java&trade ausgeführt werden können. Die stark typisierte API ist für die SOAP-Verbindung aktiviert.
+description: Erfahren Sie, wie Vorgänge in AEM Forms mithilfe der stark typisierten und mit einer SOAP-Verbindung ausgestatteten AEM Forms Java&trade;-API ausgeführt werden können.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,9 +9,9 @@ role: Developer
 exl-id: 1d4062ef-fb24-4527-b899-896ce757beda
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '532'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Die Kurzanleitung zu den Adobe AEM Forms-APIs kann Sie bei der schnelleren Entwi
 
 AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 
-Der Schnellstart für Java™-stark typisierte API bietet eine Liste von JAR-Dateien, die zum Ausführen der Java™-Anwendung erforderlich sind. Die meisten Java™-Schnellstarts sind Konsolenanwendungen, die innerhalb von `main` ausgeführt werden. Das Forms Java™-Schnellstart-API mit starker Typisierung wird jedoch als Java™-Servlet implementiert, das in einer Webanwendung ausgeführt wird.
+Der stark typisierte Java™-API-Schnellstart bietet eine Liste von JAR-Dateien, die zum Ausführen der Java™-Anwendung erforderlich sind. Die meisten Java™-Schnellstarts sind Konsolenanwendungen, die innerhalb von `main` ausgeführt werden. Der stark typisierte Forms Java™-API-Schnellstart wird jedoch als Java™-Servlet implementiert, das innerhalb einer Web-Anwendung ausgeführt wird.
 
 Die Liste der JAR-Dateien befindet sich in einem Kommentarabschnitt am Anfang des Schnellstarts. Der folgende Kommentar befindet sich beispielsweise in einem Ausgabe-Schnellstart und ist eine typische JAR-Dateiliste, die in jedem Java™-Schnellstart enthalten ist.
 

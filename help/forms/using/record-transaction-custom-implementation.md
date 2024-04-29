@@ -1,6 +1,6 @@
 ---
 title: Aufzeichnen einer Transaktion für benutzerdefinierte Implementierungen
-description: Verwenden Sie die TransactionRecorder-API, um Aktionen aufzuzeichnen, die nicht automatisch als Transaktionen erfasst werden.
+description: Verwenden der TransactionRecorder-API, um Aktionen aufzuzeichnen, die nicht automatisch als Transaktionen gezählt werden.
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
@@ -8,13 +8,13 @@ feature: Transaction Reports
 exl-id: b0c4f72a-e65f-453a-af66-5d9f98a9d6df
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: d3822f4dee1b0d571aa06142f4a4f6e27874cf53
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '222'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
-# Zeichnen Sie eine Transaktion für benutzerdefinierte Implementierungen für AEM Forms auf OSGi auf {#record-a-transaction-for-custom-implementations}
+# Aufzeichnen einer Transaktion für benutzerdefinierte Implementierungen für AEM Forms auf OSGi {#record-a-transaction-for-custom-implementations}
 
 Verwenden der TransactionRecorder-API, um Aktionen aufzuzeichnen, die nicht automatisch als Transaktionen gezählt werden
 
@@ -90,6 +90,6 @@ $.ajax({
 
 ## Ähnliche Artikel {#related-articles}
 
-* [Übersicht über Transaktionsberichte für AEM Forms auf OSGi](/help/forms/using/transaction-reports-overview.md)
-* [Anzeigen und Verstehen von Transaktionsberichten für AEM Forms auf OSGi](/help/forms/using/viewing-and-understanding-transaction-reports.md)
-* [Transaktionsberichte Abrechnungsfähige APIs für AEM Forms auf OSGi](/help/forms/using/transaction-reports-billable-apis.md)
+* [Überblick über Transaktionsberichte für AEM Forms on OSGi](/help/forms/using/transaction-reports-overview.md)
+* [Anzeigen und Verstehen von Transaktionsberichten für AEM Forms on OSGi](/help/forms/using/viewing-and-understanding-transaction-reports.md)
+* [Abrechenbare APIs für Transaktionsberichte für AEM Forms on OSGi](/help/forms/using/transaction-reports-billable-apis.md)

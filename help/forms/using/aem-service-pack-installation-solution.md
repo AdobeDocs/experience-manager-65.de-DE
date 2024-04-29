@@ -4,9 +4,9 @@ description: Fehler bei CRX/Bundle und Startseitendienst nicht verfügbar, sobal
 exl-id: dfe015a3-3a24-41c5-aede-8e086851d62b
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '276'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Wenn nach der Installation von [AEM 6.5.15.0 Service Pack](https://experience.ad
 
    >[!NOTE]
    >
-   >In diesem Fall `bundle.info` under `bundle52` enthält nicht die `org.apache.felix.http.bridge` Bundle, überprüfen Sie die Bundle-Nummer in eckiger Klammer neben `org.apache.felix.http.bridge`. Navigieren Sie dann zu [aem-forms root]\crx-repository\launchpad\felix\bundle[x] und führen Sie die nächsten Schritte an dieser Stelle aus.
+   >Falls `bundle.info` unter `bundle52` nicht das Bundle `org.apache.felix.http.bridge` enthält, überprüfen Sie die Bundle-Nummer in der eckigen Klammer neben `org.apache.felix.http.bridge`. Navigieren Sie dann zu [aem-forms root]\crx-repository\launchpad\felix\bundle[x] und führen Sie die nächsten Schritte an dieser Stelle aus.
 
 1. Navigieren Sie zur URL `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`.
 1. Suchen Sie nach `bundle.jar` und benennen Sie `bundle.jar` in `bundle.jar.bak` um.

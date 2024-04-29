@@ -8,15 +8,15 @@ feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '591'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # APIs zum Zugriff auf Briefinstanzen {#apis-to-access-letter-instances}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Durch Verwenden der Correspondence Management-Benutzeroberfläche „Korrespondenzen erstellen“ können Sie Entwürfe laufender Briefinstanzen speichern. Außerdem sind gesendete Briefinstanzen vorhanden.
 
@@ -34,7 +34,7 @@ Correspondence Management stellt APIs zum Abrufen von Briefinstanzen über den L
 
 >[!NOTE]
 >
->LetterInstanceService ist ein OSGI-Dienst und seine Instanz kann mithilfe von @Reference in Java™ abgerufen werden
+>LetterInstanceService ist ein OSGI-Dienst, dessen Instanz mithilfe von @Reference abgerufen werden kann, und zwar in der Java™-
 >Klasse oder sling.getService(LetterInstanceService. Class) in JSP.
 
 ### Verwendung von getAllLetterInstances {#using-nbsp-getallletterinstances}

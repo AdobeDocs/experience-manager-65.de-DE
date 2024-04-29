@@ -1,6 +1,6 @@
 ---
 title: Erstellen von benutzerdefinierten Erscheinungsbildern für adaptive Formularfelder
-description: Anpassen des Erscheinungsbilds von nativen Komponenten in Adaptive Forms.
+description: Passen Sie das Erscheinungsbild einsatzbereiter Komponenten in adaptiven Formularen an.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
@@ -8,9 +8,9 @@ docset: aem65
 exl-id: 770e257a-9ffd-46a4-9703-ff017ce9caed
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1702'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 67%
 
 ## Einführung {#introduction}
 
-Adaptive Formulare verwenden die [Erscheinungsbild-Framework](/help/forms/using/introduction-widgets.md) um Ihnen zu helfen, benutzerdefinierte Erscheinungsbilder für adaptive Formularfelder zu erstellen und ein anderes Benutzererlebnis zu bieten. Ersetzen Sie zum Beispiel Optionsfelder und aktivieren Sie Felder mit Schaltflächen oder verwenden Sie benutzerdefinierte jQuery-Plugins, um Benutzereingaben in Feldern wie Telefonnummern oder E-Mail-ID einzuschränken.
+Adaptive Formulare nutzen das [Framework für da Erscheinungsbild](/help/forms/using/introduction-widgets.md), um Ihnen beim Erstellen von benutzerdefinierten Erscheinungsbildern für adaptive Formularfelder zu helfen und ein neuartiges Anwendererlebnis zu bieten. Ersetzen Sie zum Beispiel Optionsfelder und aktivieren Sie Felder mit Schaltflächen oder verwenden Sie benutzerdefinierte jQuery-Plugins, um Benutzereingaben in Feldern wie Telefonnummern oder E-Mail-ID einzuschränken.
 
-In diesem Dokument wird erläutert, wie Sie mit einem jQuery-Plug-in diese alternativen Erlebnisse für adaptive Formularfelder erstellen können. Darüber hinaus wird ein Beispiel zum Erstellen eines benutzerdefinierten Erscheinungsbilds für numerische Feldkomponenten gezeigt, das als numerischer Schritt oder Schieberegler angezeigt wird.
+In diesem Dokument wird erläutert, wie ein jQuery-Plug-in verwendet wird, um diese alternativen Erlebnisse für adaptive Formularfelder zu erstellen.  Darüber hinaus demonstriert es ein Beispiel dafür, wie ein benutzerdefiniertes Erscheinungsbild für eine numerische Feldkomponente erstellt wird, damit sie als numerischer Schritt oder Schieberegler dargestellt wird.
 
-Sehen wir uns zunächst die Schlüsselbegriffe und Konzepte an, die in diesem Artikel verwendet werden.
+Werfen wir einen Blick auf die in diesem Artikel verwendeten Schlüsselbegriffe und Konzepte.
 
-**Erscheinungsbild** Bezieht sich auf den Stil, das Aussehen und die Anordnung verschiedener Elemente eines adaptiven Formularfelds. Normalerweise enthält es eine Beschriftung, einen interaktiven Bereich zur Eingabe, ein Hilfesymbol sowie kurze und lange Beschreibungen des Felds. Die in diesem Artikel beschriebene Anpassung des Erscheinungsbilds gilt für das Erscheinungsbild des Eingabebereichs des Felds.
+**Erscheinungsbild** Bezieht sich auf den Stil, das Aussehen und die Anordnung verschiedener Elemente eines adaptiven Formularfelds. Es umfasst in der Regel eine Bezeichnung, einen interaktiven Bereich für Eingaben, ein Hilfesymbol sowie kurze und lange Beschreibungen des Feldes.  Die in diesem Artikel besprochene Anpassung des Erscheinungsbilds gilt für das Erscheinungsbild des Feld-Eingabebereichs.
 
 **jQuery-Plug-in** Stellt einen Standardmechanismus basierend auf dem jQuery-Widget-Framework bereit, um ein alternatives Erscheinungsbild zu implementieren.
 
@@ -36,7 +36,7 @@ Sehen wir uns zunächst die Schlüsselbegriffe und Konzepte an, die in diesem Ar
 
 ## Schritte zum Erstellen eines benutzerdefinierten Erscheinungsbilds {#steps-to-create-a-custom-appearance}
 
-Die Schritte zum Erstellen eines benutzerdefinierten Erscheinungsbilds auf hoher Ebene lauten wie folgt:
+Die allgemeinen Schritte zum Erstellen eines benutzerdefinierten Erscheinungsbilds sind wie folgt:
 
 1. **Projekt erstellen**: Erstellen Sie ein Maven-Projekt, das ein Inhaltspaket generiert, das in AEM bereitgestellt wird.
 1. **Vorhandene Widget-Klasse erweitern**: Erweitern Sie eine vorhandene Widget-Klasse und überschreiben Sie die erforderlichen Klassen.
@@ -45,9 +45,9 @@ Die Schritte zum Erstellen eines benutzerdefinierten Erscheinungsbilds auf hoher
 1. **Projekt erstellen und installieren**: Erstellen Sie das Maven-Projekt und installieren Sie den generierten Inhalt in AEM.
 1. **Adaptives Formular aktualisieren**: Aktualisieren Sie die Eigenschaften adaptiver Formularfelder zur Nutzung des benutzerdefinierten Erscheinungsbilds.
 
-### Projekt erstellen {#create-a-project}
+### Erstellen eines Projekts {#create-a-project}
 
-Ein Maven-Archetyp ist ein Ausgangspunkt für die Erstellung eines benutzerdefinierten Erscheinungsbilds. Die Details des zu verwendenden Archetyps lauten wie folgt:
+Ein Maven-Archetyp bildet den Ausgangspunkt zum Erstellen eines benutzerdefinierten Erscheinungsbilds.  Die Details des zu verwendenden Archetyps lauten folgendermaßen:
 
 * **Repository**: https://repo1.maven.org/maven2/com/adobe/
 * **Artefakt-ID**: custom-appearance-archetype
@@ -58,15 +58,15 @@ Führen Sie den folgenden Befehl aus, um ein lokales Projekt basierend auf dem A
 
 `mvn archetype:generate -DarchetypeRepository=https://repo1.maven.org/maven2/com/adobe/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
 
-Der Befehl lädt die Maven-Plug-ins und Archetypinformationen aus dem Repository herunter und generiert ein Projekt, das auf den folgenden Informationen basiert:
+Mit dem Befehl werden die Maven-Plug-ins und Archetypinformationen aus dem Repository heruntergeladen und ein Projekt basierend auf den folgenden Informationen generiert:
 
-* **groupId**: Vom generierten Maven-Projekt verwendete Gruppen-ID
-* **artifactId**: Vom generierten Maven-Projekt verwendete Artefakt-ID.
-* **version**: Version für das generierte Maven-Projekt.
-* **package**: Für die Dateistruktur verwendetes Paket.
-* **artifactName**: Artefaktname des generierten AEM-Pakets.
-* **packageGroup**: Paketgruppe des generierten AEM-Pakets.
-* **widgetName**: Name des Erscheinungsbilds, der als Referenz verwendet wird.
+* **groupId**: die vom generierten Maven-Projekt verwendete Gruppen-ID
+* **artifactId**: die vom generierten Maven-Projekt verwendete Artefakt-ID.
+* **version**: die Version für das generierte Maven-Projekt.
+* **package**: das für die Dateistruktur verwendete Paket.
+* **artifactName**: der Artefaktname des generierten AEM-Pakets.
+* **packageGroup**: die Paketgruppe des generierten AEM-Pakets.
+* **widgetName**: der zu Referenzzwecken verwendete Name des Erscheinungsbilds.
 
 Das generierte Projekt hat die folgende Struktur:
 
@@ -104,11 +104,11 @@ Das generierte Projekt hat die folgende Struktur:
                                      └───javascript
 ```
 
-### Vorhandene Widget-Klasse erweitern {#extend-an-existing-widget-class}
+### Erweitern der vorhandenen Widget-Klasse {#extend-an-existing-widget-class}
 
-Nachdem die Projektvorlage erstellt wurde, nehmen Sie die folgenden Änderungen nach Bedarf vor:
+Nehmen Sie nach Erstellen der Projektvorlage bei Bedarf die folgenden Änderungen vor:
 
-1. Schließen Sie die Drittanbieter-Plug-in-Abhängigkeit zum Projekt ein.
+1. Schließen Sie die Abhängigkeit vom Plug-in des Drittanbieters in das Projekt ein.
 
    1. Platzieren Sie die Fremdanbieter- oder benutzerdefinierten jQuery-Plug-ins im Ordner `jqueryplugin/javascript` und zugehörige CSS-Dateien im Ordner `jqueryplugin/css`. Weitere Informationen finden Sie in den JS- und CSS-Dateien im Ordner `jqueryplugin/javascript and jqueryplugin/css`.
 
@@ -124,7 +124,7 @@ Nachdem die Projektvorlage erstellt wurde, nehmen Sie die folgenden Änderungen 
   </tr>
   <tr>
    <td><code>render</code></td>
-   <td>Die Renderfunktion gibt das jQuery-Objekt für das standardmäßige HTML-Element des Widgets zurück. Das standardmäßige HTML-Element sollte fokussierbar sein. Zum Beispiel <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code> und <code>&lt;li&gt;</code>. Das zurückgegebene Element wird als <code>$userControl</code> verwendet. Wenn <code>$userControl</code> die oben stehende Bedingung angibt, funktioniert die Klasse <code>AbstractWidget</code> erwartungsgemäß. Ansonsten müssen einige allgemeine APIs (focus, click) geändert werden. </td>
+   <td>Die Render-Funktion gibt das jQuery-Objekt für das standardmäßige HTML-Element des Widgets zurück.  Das standardmäßige HTML-Element sollte fokussierbar sein. Zum Beispiel <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code> und <code>&lt;li&gt;</code>. Das zurückgegebene Element wird als <code>$userControl</code> verwendet. Wenn <code>$userControl</code> die oben stehende Bedingung angibt, funktioniert die Klasse <code>AbstractWidget</code> erwartungsgemäß. Ansonsten müssen einige allgemeine APIs (focus, click) geändert werden. </td>
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
@@ -138,7 +138,7 @@ Nachdem die Projektvorlage erstellt wurde, nehmen Sie die folgenden Änderungen 
   </tr>
   <tr>
    <td><code>getCommitValue</code></td>
-   <td>Das jQuery-Widget-Framework lädt die Funktion jedes Mal, wenn der Wert des jQuery-Widgets im XFA-Modell gespeichert wird (z. B. beim exit-Ereignis eines Textfelds). Die Implementierung sollte den Wert zurückgeben, der im Widget gespeichert wird. Der Handler erhält den neuen Wert für die Option.</td>
+   <td>Das jQuery-Widget-Framework lädt Funktionen, sobald der Wert des jQuery-Widgets im XFA-Modell gespeichert wird (beispielsweise bei einem exit-Ereignis eines Textfelds).  Die Implementierung sollte den Wert zurückgeben, der im Widget gespeichert wird. Der Handler erhält den neuen Wert für die Option.</td>
   </tr>
   <tr>
    <td><code>showValue</code></td>
@@ -154,16 +154,16 @@ Nachdem die Projektvorlage erstellt wurde, nehmen Sie die folgenden Änderungen 
 1. Aktualisieren Sie bei Bedarf die JavaScript-Datei im Ordner `integration/javascript`.
 
    * Ersetzen Sie den Text `__widgetName__` durch den tatsächlichen Widget-Namen.
-   * Erweitern Sie das Widget von einer geeigneten vordefinierten Widget-Klasse. In den meisten Fällen handelt es sich um die Widget-Klasse, die dem vorhandenen Widget entspricht, das ersetzt wird. Der Name der übergeordneten Klasse wird an mehreren Standorten verwendet, daher wird empfohlen, nach allen Instanzen der Zeichenfolge `xfaWidget.textField` in der Datei zu suchen und sie durch die eigentliche übergeordnete Klasse zu ersetzen, die verwendet wird.
+   * Erweitern Sie das Widget aus einer geeigneten vorkonfigurierten Widget-Klasse.  In den meisten Fällen handelt es sich dabei um die Widget-Klasse, die mit dem vorhandenen Widget übereinstimmt, das ersetzt wird.  Der Name der übergeordneten Klasse wird an mehreren Standorten verwendet, daher wird empfohlen, nach allen Instanzen der Zeichenfolge `xfaWidget.textField` in der Datei zu suchen und sie durch die eigentliche übergeordnete Klasse zu ersetzen, die verwendet wird.
    * Erweitern Sie die Methode `render`, um eine alternative UI bereitzustellen. Das ist der Standort, von dem aus das jQuery-Plugin aufgerufen wird, um die UI oder das Interaktionsverhalten zu aktualisieren. Die Methode `render` sollte ein Benutzersteuerelement zurückgeben.
 
    * Erweitern Sie die Methode `getOptionsMap`, um alle Optionseinstellungen zu überschreiben, die durch Änderungen am Widget beeinflusst wurden. Die Funktion gibt eine Zuordnung zurück, die Informationen bereitstellt, damit die Aktion nach Änderung einer Option durchgeführt werden kann. Die Schlüssel sind die Optionen des Widgets und die Werte sind die Funktionen, die aufgerufen werden, sobald eine Änderung in dieser Option erkannt wird.
    * Die Methode `getEventMap` ordnet durch das Widget ausgelöste Ereignisse den Ereignissen zu, die durch das adaptive Formularmodell benötigt werden. Der Standardwert ordnet Standard-HTML-Ereignisse für das Standard-Widget zu. Es muss aktualisiert werden, falls ein alternatives Widget ausgelöst wird.
    * `showDisplayValue` und `showValue` wenden die Display- und Edit-Picture-Klausel an und können überschrieben werden, um ein alternatives Verhalten zu erzielen.
 
-   * Die Methode `getCommitValue` wird durch das Framework für adaptive Formulare aufgerufen, wenn das Ereignis `commit` auftritt. Im Allgemeinen handelt es sich um das exit -Ereignis, mit Ausnahme der Dropdown-, Optionsfeld- und Kontrollkästchen-Elemente, in denen es bei einer Änderung auftritt. Weitere Informationen finden Sie unter [Adaptive Forms-Ausdrücke](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p).
+   * Die Methode `getCommitValue` wird durch das Framework für adaptive Formulare aufgerufen, wenn das Ereignis `commit` auftritt. (Im Allgemeinen handelt es sich um das exit-Ereignis, mit Ausnahme der Elemente Dropdown-Liste, Optionsfeld und Kontrollkästchen, wenn es bei einer Änderung auftritt.)  Weitere Informationen finden Sie unter[ Adaptive Formularausdrücke](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p).
 
-   * Die Vorlagendatei bietet eine Beispielimplementierung für verschiedene Methoden. Entfernen Sie Methoden, die nicht erweitert werden sollen.
+   * Die Vorlagendatei bietet eine Beispielimplementierung für verschiedene Methoden.  Entfernen Sie Methoden, die nicht erweitert werden sollen.
 
 ### Erstellen einer Client-Bibliothek {#create-a-client-library}
 
@@ -171,7 +171,7 @@ Das durch den Maven-Archetyp generierte Beispielprojekt erstellt automatisch erf
 
 ### Erstellen und Installieren {#build-and-install}
 
-Führen Sie zum Erstellen des Projekts den folgenden Befehl auf der Shell aus, um ein CRX-Paket zu generieren, das auf dem AEM-Server installiert werden muss.
+Führen Sie zum Erstellen des Projekts den folgenden Befehl in der Shell aus, um ein CRX-Paket zu generieren, das auf einem AEM-Server installiert werden muss.
 
 `mvn clean install`
 
@@ -179,17 +179,17 @@ Führen Sie zum Erstellen des Projekts den folgenden Befehl auf der Shell aus, u
 >
 >Das Maven-Projekt bezieht sich auf ein Remote-Repository in der POM-Datei. Dies dient nur zu Referenzzwecken und die Repository-Informationen werden gemäß Maven-Standards in der Datei `settings.xml` erfasst.
 
-### Adaptives Formular aktualisieren {#update-the-adaptive-form}
+### Aktualisieren des adaptiven Formulars {#update-the-adaptive-form}
 
-So wenden Sie das benutzerdefinierte Erscheinungsbild auf ein adaptives Formularfeld an:
+Anwenden des benutzerdefinierten Erscheinungsbilds auf ein adaptives Formularfeld:
 
 1. Öffnen Sie Ihr adaptives Formular im Bearbeitungsmodus.
-1. Öffnen Sie die **Eigenschaft** Dialogfeld für das Feld, auf das Sie das benutzerdefinierte Erscheinungsbild anwenden möchten.
+1. Öffnen Sie das Dialogfeld **Eigenschaft** für das Feld, auf das Sie das benutzerdefinierte Erscheinungsbild anwenden möchten.
 1. Aktualisieren Sie auf der Registerkarte **Stile** die Eigenschaft `CSS class`, um den Namen des Erscheinungsbilds zum Format `widget_<widgetName>` hinzufügen. Beispiel: **widget_numericstepper**
 
-## Beispiel: Erstellen eines benutzerdefinierten Erscheinungsbilds   {#sample-create-a-custom-appearance-nbsp}
+## Beispiel: Erstellen eines benutzerspezifischen Berichts  {#sample-create-a-custom-appearance-nbsp}
 
-Sehen wir uns nun ein Beispiel an, um ein benutzerdefiniertes Erscheinungsbild für ein numerisches Feld zu erstellen, das als numerischer Schritt oder Schieberegler angezeigt wird. Führen Sie die folgenden Schritte durch:
+Werfen wir nun einen Blick auf ein Beispiel, um ein benutzerdefiniertes Erscheinungsbild für ein numerisches Feld zu erstellen, damit es als numerischer Schritt oder Schieberegler dargestellt wird.  Führen Sie die folgenden Schritte durch:
 
 1. Führen Sie den folgenden Befehl aus, um ein lokales Projekt basierend auf dem Maven-Archetyp zu erstellen:
 
@@ -226,7 +226,7 @@ Sehen wir uns nun ein Beispiel an, um ein benutzerdefiniertes Erscheinungsbild f
 
       ![eclipse-screenshot](assets/eclipse-screenshot.png)
 
-1. Wählen Sie das Widget für das benutzerdefinierte Erscheinungsbild aus. In diesem Beispiel wird das folgende Widget für numerische Schritte verwendet:
+1. Wählen Sie das Widget aus, das für das benutzerdefinierte Erscheinungsbild verwendet werden soll.  In diesem Beispiel wird das Widget für numerische Schritte verwendet:
 
    [https://www.jqueryscript.net/form/User-Friendly-Number-Input-Spinner-with-jQuery-Bootstrap.html](https://www.jqueryscript.net/form/User-Friendly-Number-Input-Spinner-with-jQuery-Bootstrap.html)
 
@@ -236,8 +236,8 @@ Sehen wir uns nun ein Beispiel an, um ein benutzerdefiniertes Erscheinungsbild f
    * Die Methode `set value` des Widgets legt den Wert fest, nachdem der Fokus auf das Feld festgelegt wurde. Es ist eine obligatorische Anforderung für das Widget eines adaptiven Formulars.
    * Die Methode `render` muss überschrieben werden, um die Methode `bootstrapNumber` aufzurufen.
 
-   * Es gibt keine zusätzliche Abhängigkeit für das Plug-in außer dem Hauptquellcode des Plug-ins.
-   * Das Beispiel führt keine Formatierung für den Schritt durch, sodass kein zusätzliches CSS erforderlich ist.
+   * Mit Ausnahme des Haupt-Quell-Codes gibt es für das Plug-in keine zusätzliche Abhängigkeit.
+   * In dem Beispiel werden keine Stile auf die Schritte angewendet, daher ist kein zusätzliches CSS erforderlich.
    * Das `$userControl`-Objekt sollte in der `render`-Methode verfügbar sein. Es ist ein Feld vom Typ `text`, das mit dem Plugin-Typ geklont wird.
 
    * Die Schaltflächen **+** und **-** sollten deaktiviert werden, wenn das Feld deaktiviert wird.
@@ -317,4 +317,4 @@ Sehen wir uns nun ein Beispiel an, um ein benutzerdefiniertes Erscheinungsbild f
 
    1. Aktualisieren Sie in der Registerkarte „Stile“ die Eigenschaft **[!UICONTROL CSS-Klasse]**, um `widget_numericStepper` hinzuzufügen.
 
-Das von Ihnen erstellte neue Erscheinungsbild kann jetzt verwendet werden.
+Das erstellte, neue Erscheinungsbild ist jetzt verfügbar.
