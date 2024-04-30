@@ -156,8 +156,8 @@ Dieser Abschnitt enthält Details und Anweisungen zur Konfiguration des Demopake
 
 1. Konfigurieren Sie den Service für die Verbindung mit dem gewünschten SMTP-Server:
 
-   1. **Hostname des SMTP-Servers**: zum Beispiel (smtp.gmail.com)
-   1. **Server-Port**: zum Beispiel (465) für Gmail mit SSL
+   1. **SMTP server hostname** (Host-Name des SMTP-Servers): z. B. „smtp.gmail.com“
+   1. **Server Port**: z. B. „465“ für Gmail mit SSL
    1. **SMTP User:** (SMTP-Benuztende) demo@ &lt;companyname> .com
    1. **„Von“-Adresse**: aemformsdemo@adobe.com
 

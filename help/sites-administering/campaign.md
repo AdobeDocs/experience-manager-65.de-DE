@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Es gibt eine Reihe von Adobe Campaign Classic(ACC)-Versionen. Die Unterstützung
 | ACC-Version | Integration mit AEM 6.5 <br>Lokal | Integration mit AEM 6.5<br>AMS |
 |---|---|---|
 | [v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=de) | Unterstützt | Unterstützt  |
-| [v8 Client Console](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=de) | Unterstützt | Unterstützt  |
+| [Client-Konsole v8](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=de) | Unterstützt | Unterstützt  |
 
 Die folgende Dokumentation beschreibt die Integration von AEM mit Adobe Campaign Classic.
 

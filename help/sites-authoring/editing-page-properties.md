@@ -8,7 +8,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1855'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Sie können die erforderlichen Eigenschaften für eine Seite definieren. Diese k
 
 Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
-### Einfach {#basic}
+### Allgemein {#basic}
 
 * **Titel**
 
@@ -190,7 +190,7 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 
 * **Freigabe in Social Media**
 
-  Definiert die auf der Seite verfügbaren Freigabeoptionen. Zeigt die Optionen an, die für die [Freigabe der Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html) zur Verfügung stehen.
+  Definiert die auf der Seite verfügbaren Freigabeoptionen. Zeigt die Optionen an, die für die [Freigabe der Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=de) zur Verfügung stehen.
 
    * **Benutzerfreigabe für Facebook aktivieren**
    * **Benutzerfreigabe für Pinterest aktivieren**

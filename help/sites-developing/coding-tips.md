@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '857'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Für AEM-Codes gelten die folgenden Konventionen:
 * Java™-Implementierungen werden in einem impl-Paket unter ihrer API platziert.
 
 
-Diese Konventionen gelten nicht notwendigerweise für Kundenimplementierungen, aber es ist wichtig, Konventionen zu definieren und einzuhalten, damit der Code aufrechterhalten werden kann.
+Diese Konventionen gelten nicht unbedingt für Kundenimplementierungen. Es ist jedoch wichtig, dass Konventionen definiert und eingehalten werden, sodass der Code verwaltbar bleibt.
 
 Idealerweise sollten Namen den Zweck beschreiben. Ein guter Hinweis darauf, dass Namen nicht so deutlich sind wie gewünscht, ist das Vorhandensein von Kommentaren, die erklären, wozu die Variable oder die Methode dient:
 
@@ -61,7 +61,7 @@ Idealerweise sollten Namen den Zweck beschreiben. Ein guter Hinweis darauf, dass
  </tbody>
 </table>
 
-### Wiederholen Sie sich nicht  {#don-t-repeat-yourself}
+### Wiederholungen vermeiden  {#don-t-repeat-yourself}
 
 Dieses Prinzip sieht vor, dass derselbe Codesatz niemals dupliziert werden sollte. Dies gilt auch für Elemente wie Zeichenfolgentexte. Code-Duplikate erhöhen die Fehleranfälligkeit, wenn etwas geändert werden muss, und sollten gesucht und entfernt werden.
 

@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 84%
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 84%
 
 ## Auslegen des Designs auf Upgrades {#design-for-upgrades}
 
-Bei der Erweiterung von vordefinierten Verhaltensweisen ist es wichtig, Upgrades zu beachten. Nehmen Sie Anpassungen immer im Verzeichnis /apps vor und überlagern Sie entweder die entsprechenden Knoten im Verzeichnis /libs oder verwenden Sie „sling:resourceSuperType“, um das Standardverhalten zu erweitern. Zwar können Änderungen erforderlich sein, um neue AEM-Versionen zu unterstützen, doch die neue Version sollte Ihre Anpassungen nicht überschreiben, wenn diese Best Practice befolgt wird.
+Bei der Erweiterung standardmäßiger Verhaltensweisen ist es wichtig, Upgrades zu berücksichtigen. Nehmen Sie Anpassungen immer im Verzeichnis /apps vor und überlagern Sie entweder die entsprechenden Knoten im Verzeichnis /libs oder verwenden Sie „sling:resourceSuperType“, um das Standardverhalten zu erweitern. Zwar können Änderungen erforderlich sein, um neue AEM-Versionen zu unterstützen, doch die neue Version sollte Ihre Anpassungen nicht überschreiben, wenn diese Best Practice befolgt wird.
 
 ### Wiederverwenden von Vorlagen und Komponenten, sofern möglich {#reuse-template-and-components-when-possible}
 
@@ -54,11 +54,11 @@ Der Robustheitsgrundsatz besagt, dass Sie streng sein sollten, bei dem, was Sie 
 
 ### Implementierung von Sammlungen in eigenen Modulen {#implement-spikes-in-their-own-modules}
 
-Sammlungen und Testcode sind Teil jeder agilen Software-Implementierung. Sie möchten jedoch sicherstellen, dass sie nicht ohne die entsprechende Aufsicht in die Produktions-Code-Basis gelangen. Daher wird empfohlen, Sammlungen in ihrem eigenen Modul zu erstellen.
+Sammlungen und Testcode sind Teil jeder agilen Software-Implementierung. Sie sollten allerdings sicherstellen, dass sie nicht ohne entsprechende Kontrolle in die Produktions-Code-Basis gelangen. Daher wird empfohlen, Sammlungen in ihrem eigenen Modul zu erstellen.
 
 ### Implementieren von Datenmigrationsskripten in ihrem eigenen Modul {#implement-data-migration-scripts-in-their-own-module}
 
-Bei Datenmigrationsskripten handelt es sich zwar um Produktions-Code, doch diese werden nur einmal beim ersten Start einer Site ausgeführt. Wenn die Site live ist, werden die Skripte daher zu totem Code. Um sicherzustellen, dass Sie keinen Implementierungscode erstellen, der von den Migrationsskripten abhängig ist, sollten diese in ihrem eigenen Modul implementiert werden. Auf diese Weise können wir diesen Code sofort nach dem Start entfernen und aus dem System entfernen, sodass kein toter Code mehr im System vorhanden ist.
+Bei Datenmigrationsskripten handelt es sich zwar um Produktions-Code, doch diese werden nur einmal beim ersten Start einer Site ausgeführt. Wenn die Site live ist, werden die Skripte daher zu totem Code. Um sicherzustellen, dass Sie keinen Implementierungs-Code erstellen, der von den Migrationsskripten abhängig ist, sollten diese in einem eigenen Modul implementiert werden. Auf diese Weise können wir diesen Code sofort nach dem Start entfernen und aus dem System entfernen, sodass kein toter Code mehr im System vorhanden ist.
 
 ### Befolgen veröffentlichter Maven-Konventionen in POM-Dateien {#follow-published-maven-conventions-in-pom-files}
 

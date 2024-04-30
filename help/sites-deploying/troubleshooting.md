@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '1227'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -76,26 +76,26 @@ Verwenden Sie Java™-Befehlsoptionen, um die Speichereinstellungen der JVM zu d
 
 Geben Sie die Speichereinstellungsoption beim Starten von AEM WCM über die Befehlszeile an. Die Start-/Stopp-Skripte für AEM WCM oder benutzerdefinierten Skripte zur Verwaltung des Starts von AEM WCM können ebenfalls geändert werden, um die erforderlichen Speichereinstellungen zu definieren.
 
-Wenn Sie Ihre Heap-Größe bereits auf 512 MB definiert haben, können Sie das Speicherproblem weiter analysieren, indem Sie einen Heap-Dump erstellen.
+Wenn Sie die Heap-Größe bereits auf 512 MB festgelegt haben, können Sie das Speicherproblem näher untersuchen, indem Sie ein Heap-Abbild (auch als Heapdump bezeichnet) erstellen.
 
 Verwenden Sie den folgenden Befehl, um automatisch ein Heap-Abbild zu erstellen, wenn nicht genügend Arbeitsspeicher verfügbar ist:
 
 java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
-Diese Methode generiert eine Heap-Dump-Datei (**java_…hprof**) immer dann, wenn dem Prozess der Speicher ausgeht. Der Prozess kann nach der Erstellung des Heap-Dumps fortgesetzt werden.
+Diese Methode generiert eine Heap-Dump-Datei (**java_…hprof**) immer dann, wenn dem Prozess der Speicher ausgeht. Der Vorgang läuft möglicherweise noch weiter, nachdem das Heap-Abbild erstellt wurde.
 
-Häufig sind drei Heap-Dump-Dateien erforderlich, die über einen bestimmten Zeitraum erfasst wurden, um das Problem zu analysieren:
+Häufig sind drei über einen bestimmten Zeitraum erfasste Heapdump-Dateien erforderlich, um das Problem zu analysieren:
 
-* Vor dem Auftreten eines Fehlers
-* Fehler 1
-* Fehler 2
-* *Idealerweise wäre es auch gut, Informationen nach der Auflösung des Ereignisses zu sammeln*
+* vor dem Auftreten eines Fehlers
+* während Fehler 1
+* während Fehler 2
+* *idealerweise Sammlung von Informationen auch nach der Auflösung des Ereignisses*
 
-Diese können verglichen werden, um Änderungen zu sehen und zu sehen, wie Objekte Speicher verwenden.
+Diese können verglichen werden, um Änderungen zu sehen und festzustellen, wie Objekte Speicher verwenden.
 
 >[!NOTE]
 >
->Wenn Sie diese Informationen regelmäßig erfassen oder Erfahrung mit dem Lesen von Heap-Dumps haben, kann eine Heap-Dump-Datei ausreichen, um das Problem zu analysieren.
+>Wenn Sie diese Informationen regelmäßig erfassen oder Erfahrung mit dem Lesen von Heap-Abbildern haben, kann eine Heapdump-Datei ausreichen, um das Problem zu analysieren.
 
 ### Der AEM-Begrüßungsbildschirm wird nach einem Doppelklick auf den AEM-Schnellstart nicht im Browser angezeigt {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 

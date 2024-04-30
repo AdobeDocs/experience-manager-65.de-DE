@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '5868'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -201,7 +201,7 @@ Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle K
    <td><p>Diese Prüfung wird für alle Event-Listener und Hintergrundbeobachter schrittweise durchgeführt. Sie vergleicht die <code>queueSize </code> mit ihrer <code>maxQueueSize</code> und:</p>
     <ul>
      <li>gibt den Status „Kritisch“ zurück, wenn der Wert für <code>queueSize</code> den Wert für <code>maxQueueSize</code> übersteigt (d. h., wenn Ereignisse entfernt werden)</li>
-     <li>gibt eine Warnung zurück, wenn die <code>queueSize</code> Wert über <code>maxQueueSize * WARN_THRESHOLD</code> (der Standardwert ist 0,75) </li>
+     <li>gibt eine Warnung zurück, wenn der Wert für <code>queueSize</code> über dem <code>maxQueueSize * WARN_THRESHOLD</code> liegt (der Standardwert liegt bei 0,75) </li>
     </ul> <p>Die maximale Länge jeder Warteschlange stammt aus separaten Konfigurationen (Oak und AEM) und kann von dieser Konsistenzprüfung nicht konfiguriert werden. Das MBean für diese Konsistenzprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -225,12 +225,12 @@ Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle K
    <td>Asynchrone Indizes</td>
    <td><p>Die Prüfung auf asynchrone Indizes:</p>
     <ul>
-     <li>gibt den Status "Kritisch"zurück, wenn mindestens eine Indizierungsspur fehlschlägt</li>
+     <li>gibt den Status „Kritisch“ zurück, wenn mindestens eine Indizierungsspur fehlschlägt</li>
      <li>prüft <code>lastIndexedTime</code> für alle Indizierungsspuren und:
       <ul>
-       <li>gibt den Status "Kritisch"zurück, wenn er vor mehr als 2 Stunden liegt </li>
-       <li>gibt einen Warnungsstatus zurück, wenn dieser zwischen 2 Stunden und 45 Minuten zurückliegt </li>
-       <li>gibt den Status "OK"zurück, wenn er vor weniger als 45 Minuten liegt </li>
+       <li>gibt den Status „Kritisch“ zurück, wenn sie mehr als 2 Stunden zurückliegt </li>
+       <li>gibt den Status „Warnung“ zurück, wenn sie zwischen 2 Stunden und 45 Minuten zurückliegt </li>
+       <li>gibt den Status „OK“ zurück, wenn sie weniger als 45 Minuten zurückliegt </li>
       </ul> </li>
      <li>Wenn keine dieser Bedingungen erfüllt ist, wird der Status „OK“ zurückgegeben.</li>
     </ul> <p>Die Statusschwellen „Kritisch“ und „Warnung“ sind konfigurierbar. Das MBean für diese Konsistenzprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Hinweis: </strong>Diese Konsistenzprüfung ist in AEM 6.4 und als Backport in AEM 6.3.0.1 verfügbar.</p> </td>
@@ -265,17 +265,17 @@ Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle K
       Diese Prüfung überprüft die Anzahl an Aufträgen, die sich in der Warteschlange des Auftrags-Managers befinden, vergleicht sie mit dem Schwellenwert <code>maxNumQueueJobs</code> und:
     </div>
     <ul>
-     <li>gibt einen "Kritisch"zurück, wenn mehr als <code>maxNumQueueJobs</code> sich in der Warteschlange befinden</li>
-     <li>gibt einen "Kritisch"zurück, wenn lang laufende aktive Aufträge vorhanden sind, die älter als 1 Stunde sind</li>
-     <li>gibt einen "Kritisch"zurück, wenn Aufträge in der Warteschlange vorhanden sind und die letzte fertige Auftragszeit älter als 1 Stunde ist</li>
+     <li>gibt den Status „Kritisch“ zurück, wenn sich mehr als <code>maxNumQueueJobs</code> in der Warteschlange befinden</li>
+     <li>gibt den Status „Kritisch“ zurück, wenn es lang andauernde aktive Aufträge gibt, die seit mehr als einer Stunde ausgeführt werden</li>
+     <li>gibt den Status „Kritisch“ zurück, wenn es Aufträge in der Warteschlange gibt und der letzte abgeschlossene Auftrag länger als 1 Stunde zurückliegt</li>
     </ul> <p>Nur der Parameter „Maximale Anzahl an Aufträgen in der Warteschlange“ kann konfiguriert werden und hat den Standardwert 1000.</p> <p>Das MBean für diese Konsistenzprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingJobs%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=slingJobs,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Anfrageleistung</td>
    <td><p>Diese Prüfung untersucht die <code>granite.request.metrics.timer</code> <a href="http://localhost:4502/system/console/slingmetrics" target="_blank">Sling-Metrik</a> und:</p>
     <ul>
-     <li>gibt einen "Kritisch"zurück, wenn der 75. Perzentil-Wert über dem kritischen Schwellenwert liegt (der Standardwert ist 500 Millisekunden)</li>
-     <li>gibt eine Warnung zurück, wenn der 75. Perzentil-Wert über dem Warnschwellenwert liegt (der Standardwert ist 200 Millisekunden)</li>
+     <li>gibt den Status „Kritisch“ zurück, wenn der 75. Perzentilwert über dem Schwellenwert für „Kritisch“ liegt (der Standardwert beträgt 500 Millisekunden)</li>
+     <li>gibt eine Warnung zurück, wenn der 75. Perzentilwert über dem Schwellenwert für „Warnnung“ liegt (der Standardwert beträgt 200 Millisekunden)</li>
     </ul> <p>Das MBean für diese Konsistenzprüfung ist <em> </em><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DrequestsStatus%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -286,8 +286,8 @@ Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle K
    <td>Festplattenspeicher</td>
    <td><p>Diese Prüfung untersucht das MBean <code>FileStoreStats</code>, ruft die Größe des NodeStores und den Umfang des verfügbaren Festplatten-Speicherplatzes auf der NodeStore-Partition ab und:</p>
     <ul>
-     <li>gibt eine Warnung zurück, wenn das Verhältnis zwischen verfügbarem Speicherplatz und Repository-Größe kleiner als der Warnschwellenwert ist (der Standardwert ist 10)</li>
-     <li>gibt einen "Kritisch"zurück, wenn das Verhältnis zwischen verfügbarem Speicherplatz und Repository-Größe kleiner als der kritische Schwellenwert ist (der Standardwert ist 2).</li>
+     <li>gibt eine Warnung zurück, wenn das Verhältnis zwischen verfügbarem Festplatten-Speicherplatz und Repository-Größe unter dem Schwellenwert für „Warnung“ liegt (der Standardwert ist 10)</li>
+     <li>gibt den Status „Kritisch“ zurück, wenn das Verhältnis zwischen verfügbarem Festplatten-Speicherplatz und Repository-Größe unter dem Schwellenwert für „Kritisch“ liegt (der Standardwert ist 2)</li>
     </ul> <p>Beide Werte sind konfigurierbar. Die Prüfung funktioniert nur auf Instanzen mit einem Segmentspeicher.</p> <p>Das MBean für diese Konsistenzprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DDiskSpaceHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=DiskSpaceHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -310,15 +310,15 @@ Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle K
    <td>Code-Cache-Prüfung</td>
    <td><p>Eine Konsistenzprüfung, die mehrere JVM-Bedingungen überprüft, die einen in Java™ 7 vorhandenen Code-Cache-Fehler auslösen können:</p>
     <ul>
-     <li>gibt eine Warnung zurück, wenn die Instanz unter Java™ 7 ausgeführt wird, wobei die Code-Cache-Bereinigung aktiviert ist.</li>
-     <li>gibt eine Warnung zurück, wenn die Instanz auf Java™ 7 ausgeführt wird und die Größe des reservierten Code-Caches kleiner als ein Mindestschwellenwert ist (der Standardwert ist 90 MB)</li>
+     <li>gibt eine Warnung zurück, wenn die Instanz auf Java™ 7 ausgeführt wird, wobei die Codecache-Bereinigung aktiviert ist</li>
+     <li>gibt eine Warnung zurück, wenn die Instanz auf Java™ 7 ausgeführt wird und die Größe des reservierten Codecaches kleiner als ein Mindestschwellenwert ist (der Standardwert ist 90 MB)</li>
     </ul> <p>Der Schwellenwert <code>minimum.code.cache.size</code> ist konfigurierbar. Weitere Informationen zum Fehler finden Sie, wenn Sie unter <a href="https://bugs.java.com/bugdatabase/"> nach der Fehler-ID 8012547</a> suchen.</p> <p>Das MBean für diese Konsistenzprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Fehler bei Ressourcen-Suchpfaden</td>
    <td><p>Prüft, ob unter dem Pfad <code>/apps/foundation/components/primary</code> Ressourcen vorhanden sind, und:</p>
     <ul>
-     <li>gibt eine Warnung zurück, wenn untergeordnete Knoten unter <code>/apps/foundation/components/primary</code></li>
+     <li>gibt eine Warnung aus, wenn hierunter untergeordnete Knoten vorhanden sind: <code>/apps/foundation/components/primary</code></li>
     </ul> <p>Das MBean für diese Konsistenzprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DresourceSearchPathErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=resourceSearchPathErrorHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
  </tbody>

@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1166'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
@@ -178,7 +178,7 @@ Hierbei wird ein einfaches Server-Layout mit nur einem Administrator-Server verw
    * Entfernen Sie die Kommentarzeichen für den anfänglichen Parameter „sling.home“ und legen Sie diesen Pfad nach Bedarf fest (siehe „Allgemeine Beschreibung“).
    * Packen Sie die Datei „web.xml“ erneut.
 
-* Bereitstellen AEM WAR-Datei als Anwendung (für die anderen Einstellungen verwenden Sie die Standardeinstellungen)
+* Stellen Sie die AEM-WAR-Datei als Anwendung bereit (verwenden Sie für andere Einstellungen die Standardeinstellungen)
 * Die Installation kann einige Zeit dauern …
 * Überprüfen Sie, ob die Installation wie oben unter „Allgemeine Beschreibung“ abgeschlossen wurde (beispielsweise durch Untersuchen der Datei „error.log“).
 * Sie können den Kontextstamm auf der Konfigurationsregisterkarte der Webanwendung in der WebLogic-`/console` ändern.

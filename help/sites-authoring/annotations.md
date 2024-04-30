@@ -12,7 +12,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '633'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Zum Erstellen und Ansehen von Anmerkungen wird ein spezieller [Modus](/help/site
 
 >[!NOTE]
 >
->Beachten Sie Folgendes: [Kommentare](/help/sites-authoring/basic-handling.md#timeline) Sie können auch Feedback zu einer Seite geben.
+>Denken Sie daran, dass Sie auch mithilfe von [Kommentaren](/help/sites-authoring/basic-handling.md#timeline) Feedback zu einer Seite geben können.
 
 >[!NOTE]
 >

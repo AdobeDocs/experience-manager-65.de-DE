@@ -1,6 +1,6 @@
 ---
 title: Ermitteln von Seiteninformationen im JSON-Format
-description: Um die Seiteninformationen abzurufen, senden Sie eine Anfrage an das PageInfo-Servlet, um die Seitenmetadaten im JSON-Format abzurufen
+description: Senden Sie zum Abrufen von Seiteninformationen eine Anforderung an das PageInfo-Servlet, um die Seitenmetadaten im JSON-Format zu erhalten.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
@@ -12,13 +12,13 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '931'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
 # Ermitteln von Seiteninformationen im JSON-Format{#obtaining-page-information-in-json-format}
 
-Um die Seiteninformationen abzurufen, senden Sie eine Anfrage an das PageInfo-Servlet, um die Seitenmetadaten im JSON-Format abzurufen.
+Senden Sie zum Abrufen von Seiteninformationen eine Anforderung an das PageInfo-Servlet, um die Seitenmetadaten im JSON-Format zu erhalten.
 
 Das PageInfo-Servlet gibt Informationen über Ressourcen im Repository zurück. Das Servlet ist an die URL `https://<server>:<port>/libs/wcm/core/content/pageinfo.json` gebunden und verwendet den Parameter `path`, um die Ressource zu identifizieren. Die folgende Beispiel-URL gibt Informationen zum Knoten `/content/we-retail/us/en` zurück:
 
@@ -28,7 +28,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 >[!NOTE]
 >
->Wenn Sie Seiteninformationen im JSON-Format benötigen, um Inhalte für Kanäle bereitzustellen, die keine herkömmlichen AEM Webseiten sind, wie z. B.:
+>Wenn Sie Seiteninformationen im JSON-Format benötigen, um Inhalte für Kanäle bereitzustellen, bei denen es sich nicht um herkömmliche AEM-Web-Seiten handelt, beispielsweise:
 >
 >* Single Page Applications (SPA)
 >* native Mobile Apps
@@ -40,18 +40,18 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 Seitenkomponenten können einem oder mehreren `com.day.cq.wcm.api.PageInfoProvider`-Diensten zugeordnet werden, die Seitenmetadaten generieren. Das PageInfo-Servlet ruft jeden PageInfoProvider-Dienst auf und aggregiert die Metadaten:
 
-1. Der HTTP-Client sendet eine Anfrage an das PageInfo-Servlet, das die URL der Seite enthält.
+1. Der HTTP-Client sendet eine Anforderung an das PageInfo-Servlet, das die URL der Seite enthält.
 1. Das PageInfo-Servlet erkennt, welche Komponente die Seite rendert.
-1. Das PageInfo-Servlet ruft jeden PageInfoProvider auf, der mit der Komponente verknüpft ist.
-1. Das Servlet aggregiert die Metadaten, die jeder PageInfoProvider zurückgibt, und fügt die Metadaten zur HTTP-Antwort in einem JSON-Objekt hinzu.
+1. Das PageInfo-Servlet ruft jeden PageInfoProvider-Dienst auf, der der Komponente zugeordnet ist.
+1. Das Servlet aggregiert die Metadaten, die jeder PageInfoProvider-Dienst zurückgibt, und fügt die Metadaten der HTTP-Antwort in einem JSON-Objekt hinzu.
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
 >[!NOTE]
 >
->Ähnlich wie PageInfoProviders-Dienste verwenden Sie ListInfoProviders-Dienste, um Listen von Informationen im JSON-Format zu aktualisieren. (Siehe [Anpassen der Websites-Administrationskonsole](/help/sites-developing/customizing-siteadmin.md).
+>Ähnlich wie PageInfoProviders-Dienste verwenden Sie ListInfoProviders-Dienste, um Listen von Informationen im JSON-Format zu aktualisieren. (Siehe [Anpassen der Websites-Administrationskonsole](/help/sites-developing/customizing-siteadmin.md).)
 
-## Standardmäßige Seiteninformationsanbieter {#default-page-information-providers}
+## Standardmäßige PageInfoProvider-Dienste {#default-page-information-providers}
 
 Die `/libs/foundation/components/page`-Komponente ist den folgenden PageInfoProvider-Diensten zugeordnet:
 
@@ -474,18 +474,18 @@ Konfigurieren Sie den Day CQ WCM Workflow Package Info Provider-Dienst so, dass 
 
 >[!NOTE]
 >
->Die Registerkarte &quot;Workflow&quot;von Sidekick verwendet das PageInfo-Servlet, um eine Liste von Workflow-Paketen abzurufen. In der Liste können Sie das Paket auswählen, dem die aktuelle Seite hinzugefügt werden soll. Die erstellten Filter wirken sich auf diese Liste aus.
+>Die Registerkarte „Workflow“ des Sidekicks verwendet das PageInfo-Servlet, um eine Liste von Workflow-Paketen abzurufen.  Aus der Liste können Sie das Paket auswählen, zu dem die aktuelle Seite hinzugefügt werden soll.  Die Filter, die Sie erstellen, wirken sich auf diese Liste aus.
 >
 
 Die ID des Diensts lautet `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`. Um einen Filter zu erstellen, geben Sie einen Wert für eine `workflowpackageinfoprovider.filter`-Eigenschaft an.
 
-Eigenschaftswerte erhalten das Präfix + oder - , gefolgt vom Paketpfad:
+Eigenschaftswerten wird ein Plus- oder Minuszeichen vorangestellt, gefolgt vom Paketpfad:
 
-* Der Pfad ist der Pfad des Stammknotens des Workflow-Pakets. Der Pfad verwendet die FileVault-Syntax.
-* Um ein Paket einzuschließen, verwenden Sie das Präfix + .
-* Um ein Paket auszuschließen, verwenden Sie das Präfix - .
+* Der Pfad ist der Pfad des Stammknotens des Workflow-Pakets.  Der Pfad verwendet die FileVault-Syntax.
+* Verwenden Sie ein vorangestelltes Pluszeichen, um ein Paket einzuschließen.
+* Verwenden Sie ein vorangestelltes Minuszeichen, um ein Paket auszuschließen.
 
-Der Dienst wendet das kumulative Ergebnis aller Filter an. Beispielsweise schließen die folgenden Filterwerte alle Workflow-Pakete mit Ausnahme der im Ordner Editions enthaltenen aus:
+Der Dienst wendet das kumulierte Ergebnis aller Filter an.  Beispielsweise werden mit den folgenden Filterwerten alle Workflow-Pakete mit Ausnahme derjenigen im Ordner „Editions“ ausgeschlossen:
 
 ```
 -/etc/workflow/packages(/.*)?
@@ -498,8 +498,8 @@ Der Dienst wendet das kumulative Ergebnis aller Filter an. Beispielsweise schlie
 
 Gehen Sie beispielsweise zum Konfigurieren des Diensts mithilfe von CRXDE Lite wie folgt vor:
 
-1. CRXDE Lite öffnen ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
-1. Erstellen Sie im Konfigurationsordner Ihrer Anwendung einen Knoten:
+1. Öffnen Sie CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Erstellen Sie im Ordner „config“ Ihrer Anwendung einen Knoten:
 
    * Name: `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`
    * Typ: `sling:OsgiConfig`
@@ -508,16 +508,16 @@ Gehen Sie beispielsweise zum Konfigurieren des Diensts mithilfe von CRXDE Lite w
 
    * Name: `workflowpackageinfoprovider.filter`
    * Typ: `String[]`
-   * Wert: Der Pfad zum Workflow-Paket im richtigen Format.
+   * Wert: Der Pfad zum Workflow-Paket mit dem richtigen Format.
 
 1. Klicken Sie auf Alle speichern.
 
-So konfigurieren Sie den Dienst in Ihrer Projektquelle:
+Gehen Sie wie folgt vor, um den Dienst in Ihrer Projektquelle zu konfigurieren:
 
-1. Suchen oder erstellen Sie den Konfigurationsordner für Ihre AEM Anwendung in Ihrer Projektquelle.
+1. Suchen oder erstellen Sie den Konfigurationsordner für Ihre AEM-Anwendung in Ihrer Projektquelle.
 
    Wenn Sie beispielsweise den Archetyp „multimodule“ des Content Package Maven-Plug-ins zum Erstellen Ihres Projekts verwenden, lautet der Ordnerpfad `<projectroot>/content/src/ for example, content/src/main/content/jcr_root/apps/<appname>/config`.
-1. Erstellen Sie im Konfigurationsordner eine Textdatei mit dem Namen com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml
+1. Erstellen Sie im Ordner „config“ eine Textdatei mit dem Namen com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml.
 1. Kopieren Sie den folgenden Text in die Datei:
 
    ```
@@ -534,17 +534,17 @@ So konfigurieren Sie den Dienst in Ihrer Projektquelle:
 
 1. Speichern Sie die Datei.
 
-## Erstellen eines Seiteninformationsanbieters {#creating-a-page-information-provider}
+## Erstellen von PageInfoProvider-Diensten {#creating-a-page-information-provider}
 
-Erstellen Sie einen benutzerdefinierten Page Information Provider-Dienst, um Seitenmetadaten hinzuzufügen, die Ihre Anwendung einfach abrufen kann.
+Erstellen Sie einen benutzerdefinierten PageInfoProvider-Dienst, um Seitenmetadaten hinzuzufügen, die Ihre Anwendung leicht abrufen kann.
 
 1. Implementieren Sie die Schnittstelle `com.day.cq.wcm.api.PageInfoProvider`.
-1. Bündeln und stellen Sie die Klasse als OSGi-Dienst bereit.
-1. Erstellen Sie eine Seitenkomponente in Ihrer Anwendung. Verwenden Sie `foundation/components/page` als Wert der `sling:resourceSuperType`-Eigenschaft.
+1. Bündeln Sie die Klasse und stellen Sie sie als OSGi-Dienst bereit.
+1. Erstellen Sie eine Seitenkomponente in Ihrer Anwendung.  Verwenden Sie `foundation/components/page` als Wert der `sling:resourceSuperType`-Eigenschaft.
 
 1. Fügen Sie unter dem Komponentenknoten `cq:infoProviders` einen Knoten hinzu.
 1. Fügen Sie unter dem Knoten `cq:infoProviders` einen Knoten für Ihren PageInfoProvider-Dienst hinzu. Sie können einen beliebigen Namen für den Knoten angeben.
-1. Fügen Sie dem Knoten PageInfoProvider die folgende Eigenschaft hinzu:
+1. Fügen Sie die folgende Eigenschaft zu Ihrem PageInfoProvider-Knoten hinzu:
 
    * Name: className
    * Typ: String
@@ -552,7 +552,7 @@ Erstellen Sie einen benutzerdefinierten Page Information Provider-Dienst, um Sei
 
 Für Ressourcen, die Ihre Anwendungsseitenkomponente als `sling:resourceType` verwenden, gibt das PageInfo-Servlet die benutzerdefinierten PageInfoProvider-Metadaten zusätzlich zu den standardmäßigen PageInfoProvider-Metadaten zurück.
 
-### Beispiel für eine PageInfoProvider-Implementierung {#example-pageinfoprovider-implementation}
+### PageInfoProvider-Beispielimplementierung {#example-pageinfoprovider-implementation}
 
 Die folgende Java-Klasse implementiert [PageInfoProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) und gibt die veröffentlichte URL der aktuellen Seitenressource zurück.
 
@@ -601,7 +601,7 @@ public class PageUrlInfoProvider implements PageInfoProvider {
 }
 ```
 
-Das folgende Beispiel zeigt in CRXDE Lite die Seitenkomponente, die für die Verwendung des PageUrlInfoProvider-Dienstes konfiguriert ist:
+Das folgende Beispiel in CRXDE Lite zeigt die Seitenkomponente, die für die Verwendung des PageUrlInfoProvider-Dienstes konfiguriert ist:
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 

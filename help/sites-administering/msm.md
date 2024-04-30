@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '2665'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -154,7 +154,7 @@ Auf MSM kann mithilfe verschiedener Optionen der jeweiligen Konsole direkt über
 
 >[!NOTE]
 >
->MSM kann sowohl mit Seiten als auch mit [Experience Fragments](/help/sites-authoring/experience-fragments.md) da diese Fragmente Teil eines Erlebnisses (Seite) sind.
+>MSM kann sowohl mit Seiten als auch mit [Experience Fragments](/help/sites-authoring/experience-fragments.md) verwendet werden, da diese Fragmente Teil eines Erlebnisses (Seite) sind.
 
 >[!NOTE]
 >
@@ -198,7 +198,7 @@ Zur Einführung bietet die folgende Tabelle einen Überblick über die wichtigst
   </tr>
   <tr>
    <td><strong>Blueprint-Konfiguration</strong></td>
-   <td>Vordefinierte Konfiguration, die einen Quellpfad angibt.</td>
+   <td>Vordefinierte Konfiguration zur Angabe eines Quellpfads.</td>
    <td>Wenn in einer Blueprint-Konfiguration auf eine Blueprint-Seite verwiesen wird, wird der Rollout-Befehl verfügbar.</td>
   </tr>
   <tr>

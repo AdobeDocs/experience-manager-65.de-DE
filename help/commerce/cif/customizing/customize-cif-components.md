@@ -16,13 +16,13 @@ role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '2302'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Anpassen von Adobe Experience Manager-CIF-Kernkomponenten {#customize-cif-components}
 
-Das [CIF-Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) ist eine Referenz-Code-Basis für die Verwendung von [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components). In diesem Tutorial wird beschrieben, wie Sie die Komponente [Produkt-Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) weiter erweitern können, um ein benutzerdefiniertes Attribut von Adobe Commerce anzuzeigen. Außerdem erfahren Sie mehr über die GraphQL-Integration zwischen Adobe Experience Manager (AEM) und Adobe Commerce sowie über die Erweiterungs-Hooks, die von den CIF Kernkomponenten bereitgestellt werden.
+Das [CIF-Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) ist eine Referenz-Code-Basis für die Verwendung von [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components). In diesem Tutorial wird beschrieben, wie Sie die Komponente [Produkt-Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) weiter erweitern können, um ein benutzerdefiniertes Attribut von Adobe Commerce anzuzeigen. Außerdem erfahren Sie mehr über die GraphQL-Integration zwischen Adobe Experience Manager (AEM) und Adobe Commerce sowie die von den CIF-Kernkomponenten bereitgestellten Erweiterungs-Hooks.
 
 >[!TIP]
 >
@@ -42,7 +42,7 @@ Außerdem benötigen Sie eine GraphQL-IDE wie [GraphiQL](https://github.com/grap
 
 ## Venia-Projekt klonen {#clone-venia-project}
 
-Sie klonen die [Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) und überschreiben dann die Standardstile.
+Sie klonen das [Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) und überschreiben dann die Standardstile.
 
 >[!NOTE]
 >
@@ -93,7 +93,7 @@ Die Produkt-Teaser-Komponente wird im Laufe dieses Tutorials erweitert. Als erst
 
 ## Hinzufügen eines benutzerdefinierten Attributs in Adobe Commerce {#add-custom-attribute}
 
-Die in AEM angezeigten Produkte und Produktdaten werden in Adobe Commerce gespeichert. Fügen Sie als Nächstes ein Attribut für **Umweltfreundlich** als Teil des Produktattributs, das mithilfe der Adobe Commerce-Benutzeroberfläche festgelegt wurde.
+Die in AEM angezeigten Produkte und Produktdaten werden in Adobe Commerce gespeichert. Als Nächstes fügen Sie als Teil des Produktattributs, das mithilfe der Adobe Commerce-Benutzeroberfläche definiert wird, ein Attribut für **Umweltfreundlich** hinzu.
 
 >[!TIP]
 >
@@ -141,7 +141,7 @@ Die in AEM angezeigten Produkte und Produktdaten werden in Adobe Commerce gespei
 
 Bevor Sie mit dem AEM-Code anfangen, sollten Sie [Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) mithilfe einer GraphQL-IDE erkunden. Die Adobe Commerce-Integration mit AEM erfolgt hauptsächlich über eine Reihe von GraphQL-Abfragen. Das Verstehen und Ändern der GraphQL-Abfragen ist eine der wichtigsten Methoden zum Erweitern der CIF-Kernkomponenten.
 
-Verwenden Sie anschließend eine GraphQL-IDE, um zu prüfen, ob das `eco_friendly`-Attribut dem Produktattributsatz hinzugefügt wurde. Screenshots in diesem Tutorial verwenden die Google Chrome-Erweiterung _Altair GraphQL Client_.
+Verwenden Sie anschließend eine GraphQL-IDE, um zu prüfen, ob das `eco_friendly`-Attribut dem Produktattributsatz hinzugefügt wurde. Screenshots in diesem Tutorial stellen den _Altair GraphQL Client_ der Google Chrome-Erweiterung dar.
 
 1. Öffnen Sie die GraphQL-IDE und geben Sie die URL `http://<server>/graphql` in die URL-Leiste Ihrer IDE oder Erweiterung ein.
 2. Fügen Sie die folgende [Produktabfrage](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) hinzu, wobei `YOUR_SKU` die **SKU** des in der vorherigen Übung verwendeten Produkts ist:
@@ -188,7 +188,7 @@ Der Wert **Ja** entspricht der Ganzzahl **1**. Dies ist nützlich, wenn Sie die 
 
 ## Sling-Modell für den Produkt-Teaser aktualisieren {#updating-sling-model-product-teaser}
 
-Als Nächstes erweitern Sie die Geschäftslogik des Produkt-Teasers, indem Sie ein Sling-Modell implementieren. [Sling-Modelle](https://sling.apache.org/documentation/bundles/models.html) sind von Anmerkungen gesteuerte &quot;POJOs&quot;(Plain Old Java™ Objects), die eine beliebige Geschäftslogik implementieren, die von der Komponente benötigt wird. Sling-Modelle werden mit den HTL-Skripten als Teil der Komponente verwendet. Befolgen Sie die [Delegationsmuster für Sling-Modelle](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) damit Sie Teile des vorhandenen Produkt-Teaser-Modells erweitern können.
+Als Nächstes erweitern Sie die Geschäftslogik des Produkt-Teasers, indem Sie ein Sling-Modell implementieren. [Sling-Modelle](https://sling.apache.org/documentation/bundles/models.html) sind von Anmerkungen gesteuerte „POJOs“ (Plain Old Java™ Objects), die eine beliebige von der Komponente benötigte Business-Logik implementieren. Sling-Modelle werden mit den HTL-Skripten als Teil der Komponente verwendet. Folgen Sie dem [Delegationsmuster für Sling-Modelle](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models), damit Sie Teile des bestehenden Produkt-Teaser-Modells erweitern können.
 
 Sling-Modelle werden als Java™ implementiert und können im **Kernmodul** des erstellten Projekts gefunden werden.
 
@@ -202,7 +202,7 @@ Verwenden Sie [eine IDE Ihrer Wahl](https://experienceleague.adobe.com/docs/expe
 
    Es wurde bereits eine neue Methode mit dem Namen `isShowBadge()` zur Anzeige eines Abzeichens hinzugefügt, wenn das Produkt als „Neu“ gilt.
 
-1. Hinzufügen einer Methode `isEcoFriendly()` zur -Benutzeroberfläche:
+1. Fügen Sie der Schnittstelle eine Methode `isEcoFriendly()` hinzu:
 
    ```java
    @ProviderType
@@ -328,7 +328,7 @@ Dies ist eine neue Methode, um die Logik zu kapseln und anzugeben, ob das `eco_f
 
    Bei der obigen Methode wird der `productRetriever` genutzt, um das Produkt abzurufen, während die `getAsInteger()`-Methode dazu dient, den Wert des `eco_friendly`-Attributs abzurufen. Anhand der zuvor ausgeführten GraphQL-Abfragen wissen Sie, dass – wenn das Attribut `eco_friendly` auf **Ja** gesetzt ist – tatsächlich die Ganzzahl **1** als Wert erwartet wird.
 
-   Nachdem das Sling-Modell aktualisiert wurde, aktualisieren Sie das Komponenten-Markup, um einen Indikator für **Umweltfreundlich** basierend auf dem Sling-Modell.
+   Nachdem das Sling-Modell aktualisiert wurde, aktualisieren Sie das Komponenten-Markup, um basierend auf dem Sling-Modell ein Zeichen für **Umweltfreundlich** anzuzeigen.
 
 ## Anpassen des Markups für den Produkt-Teaser {#customize-markup-product-teaser}
 
@@ -338,7 +338,7 @@ In diesem Fall möchten Sie ein Banner über dem Teaser darstellen, um anzuzeige
 
 >[!NOTE]
 >
->Wenn Sie eine Komponente mit den CIF Produkt- und Kategorieauswahlen wie diesem Produkt-Teaser oder der CIF Seitenkomponente anpassen, stellen Sie sicher, dass Sie die erforderlichen `cif.shell.picker` clientlib für die Komponentendialogfelder. Weitere Informationen finden Sie unter [Verwenden der CIF-Produkt- und Kategorieauswahl](use-cif-pickers.md).
+>Wenn Sie eine Komponente wie diesen Produkt-Teaser oder die CIF-Seitenkomponente mit der CIF-Produkt- und Kategorieauswahl anpassen, stellen Sie sicher, dass Sie die erforderliche `cif.shell.picker`-clientlib für die Komponentendialogfelder einschließen. Weitere Informationen finden Sie unter [Verwenden der CIF-Produkt- und Kategorieauswahl](use-cif-pickers.md).
 
 1. Navigieren Sie in der IDE zum `ui.apps`-Modul und erweitern Sie es. Erweitern Sie dann die Ordnerhierarchie zu `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` und überprüfen Sie die `.content.xml`-Datei.
 
@@ -371,7 +371,7 @@ In diesem Fall möchten Sie ein Banner über dem Teaser darstellen, um anzuzeige
 
    Beachten Sie, dass das Sling-Modell für `MyProductTeaser` verwendet und der `product`-Variablen zugewiesen wird.
 
-1. Bearbeiten `productteaser.html` , damit die `isEcoFriendly` in der vorherigen Übung implementierte Methode:
+1. Ändern Sie `productteaser.html` so, dass die in der vorherigen Übung implementierte Methode `isEcoFriendly` aufgerufen wird:
 
    ```html
    ...

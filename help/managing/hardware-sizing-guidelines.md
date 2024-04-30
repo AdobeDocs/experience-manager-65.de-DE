@@ -13,7 +13,7 @@ role: Developer,Leader
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2833'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -122,8 +122,8 @@ Für Benchmarking-Zwecke hat Adobe einige Benchmark-Tests für eigenständige Au
 
 * **Benchmarktest 1** Berechnung des maximalen Durchsatzes eines Lastprofils, bei dem Benutzer eine einfache Erstellung einer Seite auf einer Grundlast von 300 vorhandenen Seiten durchführen, die alle von ähnlicher Art sind. Die Schritte bestanden darin, sich bei der Website anzumelden, eine Seite mit einer SWF und Bild/Text zu erstellen, eine Tag-Cloud hinzuzufügen und die Seite zu aktivieren.
 
-   * **Ergebnis**
-Der maximale Durchsatz für eine einfache Seitenerstellung, wie oben beschrieben (als eine Transaktion betrachtet), beträgt 1730 Transaktionen/Stunde.
+   * **Ergebnis** 
+Der maximale Durchsatz für eine einfache Seitenerstellung wie oben beschrieben – als eine Transaktion betrachtet – betrug 1730 Transaktionen/Stunde.
 
 * **Benchmarktest 2** Berechnung des maximalen Durchsatzes, wenn das Lastprofil eine Mischung aus frischer Seitenerstellung (10 %), Änderung einer bestehenden Seite (80 %) und anschließender Änderung einer Seite in Folge (10 %) aufweist. Die Komplexität der Seiten bleibt gleich wie im Profil des Benchmarktests 1. Die grundlegende Änderung der Seite erfolgt durch Hinzufügen eines Bildes und Ändern des Textinhalts. Die Übung wurde erneut auf einer Grundlast von 300 Seiten mit der gleichen Komplexität wie in Benchmark-Test 1 durchgeführt.
 
@@ -133,7 +133,7 @@ Der maximale Durchsatz für eine einfache Seitenerstellung, wie oben beschrieben
 >
 >Die Durchsatzrate unterscheidet nicht zwischen Bewegungsarten innerhalb eines Lastprofils. Der Ansatz zur Messung des Durchsatzes stellt sicher, dass ein fester Anteil jeder Art von Transaktion in die Arbeitslast einbezogen wird.
 
-Die beiden oben genannten Tests zeigen deutlich, dass der Durchsatz je nach Betriebsart variiert. Verwenden Sie die Aktivitäten in Ihrer Umgebung als Grundlage für die Dimensionierung Ihres Systems. Sie erhalten einen besseren Durchsatz durch weniger intensive Aktionen wie Ändern (was auch häufiger vorkommt).
+Die beiden oben genannten Tests zeigen deutlich, dass der Durchsatz je nach Betriebsart variiert. Verwenden Sie die Aktivitäten in Ihrer Umgebung als Grundlage für die Dimensionierung Ihres Systems. Sie erhalten einen besseren Durchsatz mit weniger intensiven Aktionen wie z. B. Modifizieren (was auch häufiger vorkommt).
 
 ### Caching {#caching}
 
@@ -143,12 +143,13 @@ In der Autorenumgebung ist die Effizienz der Zwischenspeicherung in der Regel de
 
 In der Autorenumgebung sind die Anzahl der parallel arbeitenden Autorinnen und Autoren und die Belastung des Systems durch ihre Interaktionen die wichtigsten limitierenden Faktoren. Adobe empfiehlt Ihnen daher, Ihr System auf Basis des gemeinsamen Datendurchsatzes zu skalieren.
 
-In solchen Fällen führte Adobe Benchmarktests auf einem Cluster mit freigegebenen ohne zwei Knoten von Autoreninstanzen durch.
+Für solche Szenarien hat Adobe Benchmark-Tests auf einem Cluster mit zwei Knoten durchgeführt, die von Autoreninstanzen genutzt werden, welche nichts gemeinsam nutzen.
 
-* **Benchmarktest 1a** Mit einem aktiv-aktiven Shared-Nothing-Cluster von 2 Autoreninstanzen berechnen Sie den maximalen Durchsatz mit einem Lastprofil, bei dem Benutzer eine einfache Seitenübung auf einer Grundlast von 300 vorhandenen Seiten durchführen, die alle von ähnlicher Art sind.
+* **Benchmarktest 1a**
+Mit einem aktiv-aktiven Shared-Nothing-Cluster von 2 Autoreninstanzen berechnen Sie den maximalen Durchsatz mit einem Lastprofil, bei dem Benutzer eine einfache Seitenübung auf einer Grundlast von 300 vorhandenen Seiten durchführen, die alle von ähnlicher Art sind.
 
-   * **Ergebnis**
-Der maximale Durchsatz für eine einfache Seitenerstellungs-Übung, wie oben beschrieben (als eine Transaktion betrachtet), beträgt 2016 Transaktionen/Stunde. Dies ist eine Steigerung von ca. 16 % im Vergleich zu einer eigenständigen Autoreninstanz für den gleichen Benchmarktest.
+   * **Ergebnis** 
+Der maximale Durchsatz für eine einfache Seitenerstellung wie oben beschrieben – als eine Transaktion betrachtet – betrug 2016 Transaktionen/Stunde.  Dies ist eine Steigerung von ca. 16 % im Vergleich zu einer eigenständigen Autoreninstanz für den gleichen Benchmarktest.
 
 * **Benchmarktest 2b**
 Bei einem aktiv-aktiven Shared-Nothing-Cluster von 2 Autoreninstanzen wird der maximale Durchsatz berechnet, wenn das Lastprofil einen Mix aus frischer Seitenerstellung (10 %), Änderung einer bestehenden Seite (80 %) und Erstellung und Änderung einer Seite in Folge (10 %) aufweist. Die Komplexität der Seite bleibt gleich wie im Profil des Benchmarktests 1. Die grundlegende Änderung der Seite erfolgt durch Hinzufügen eines Bildes und Ändern des Textinhalts. Auch hier wurde die Übung auf einer Grundlast von 300 Seiten mit derselben Komplexität wie im Benchmark-Test 1 durchgeführt.
@@ -173,7 +174,7 @@ Siehe auch [Parallelisierung](/help/managing/hardware-sizing-guidelines.md#paral
 
 ### Hardware-Empfehlungen {#hardware-recommendations}
 
-Sie können für Ihre Autorenumgebung normalerweise die gleiche Hardware verwenden, die für Ihre Veröffentlichungsumgebung empfohlen wird. In der Regel ist der Website-Traffic auf Authoring-Systemen geringer, aber auch die Cache-Effizienz ist geringer. Entscheidend ist jedoch die Anzahl der parallel arbeitenden Autoren und die Art der Aktionen, die am System vorgenommen werden. Im Allgemeinen ist AEM-Clustering (der Autorenumgebung) am effektivsten bei der Skalierung von Lesevorgängen. Mit anderen Worten: Ein AEM-Cluster lässt sich gut bei Autorinnen und Autoren skalieren, die grundlegende Bearbeitungsvorgänge ausführen.
+Sie können für Ihre Autorenumgebung normalerweise die gleiche Hardware verwenden, die für Ihre Veröffentlichungsumgebung empfohlen wird. Normalerweise ist der Website-Traffic auf Autorensystemen geringer, aber auch die Cache-Effizienz ist geringer. Entscheidend ist jedoch die Anzahl der parallel arbeitenden Autoren und die Art der Aktionen, die am System vorgenommen werden. Im Allgemeinen ist AEM-Clustering (der Autorenumgebung) am effektivsten bei der Skalierung von Lesevorgängen. Mit anderen Worten: Ein AEM-Cluster lässt sich gut bei Autorinnen und Autoren skalieren, die grundlegende Bearbeitungsvorgänge ausführen.
 
 Die Benchmark-Tests bei Adobe wurden mit dem Betriebssystem RedHat® 5.5 durchgeführt, das auf einer Hardware-Plattform Hewlett-Packard ProLiant DL380 G5 mit folgender Konfiguration lief:
 
@@ -209,7 +210,7 @@ Die Cache-Quote gibt den Prozentsatz an Seiten an, die der Dispatcher zurückgeb
 
 ### Komplexität von Vorlagen und Anwendungen {#complexity-of-templates-and-applications}
 
-Wenn Sie komplexe Vorlagen verwenden, benötigt AEM mehr Zeit zum Rendern einer Seite. Seiten aus dem Zwischenspeicher sind davon nicht betroffen, aber die Seitengröße ist für die gesamte Antwortzeit relevant. Das Rendern einer komplexen Seite kann ohne Weiteres zehnmal länger dauern als das Rendern einer einfachen Seite.
+Wenn Sie komplexe Vorlagen verwenden, benötigt AEM mehr Zeit, um eine Seite zu rendern. Seiten aus dem Zwischenspeicher sind davon nicht betroffen, aber die Seitengröße ist für die gesamte Antwortzeit relevant. Das Rendern einer komplexen Seite kann ohne Weiteres zehnmal länger dauern als das Rendern einer einfachen Seite.
 
 ### Formel {#formula}
 
@@ -275,7 +276,7 @@ Wenn Sie eine komplexere Website haben, benötigen Sie auch leistungsfähigere W
 
 ## Zusätzliche anwendungsspezifische Berechnungen {#additional-use-case-specific-calculations}
 
-Berücksichtigen Sie neben der Berechnung für eine Standard-Webanwendung spezifische Faktoren für die folgenden Anwendungsfälle. Die berechneten Werte werden der Standardberechnung hinzugefügt.
+Berücksichtigen Sie neben der Berechnung für eine standardmäßige Web-Anwendung spezifische Faktoren für die folgenden Anwendungsfälle. Die berechneten Werte werden der Standardberechnung hinzugefügt.
 
 ### Asset-spezifische Hinweise {#assets-specific-considerations}
 
@@ -285,7 +286,7 @@ Weisen Sie mindestens 16 GB Heap zu und konfigurieren Sie den Workflow [!UICONT
 
 >[!NOTE]
 >
-Ein höherer Bilddurchsatz bedeutet, dass die Rechenressourcen mit den System-I/O und umgekehrt Schritt halten müssen. Wenn beispielsweise Workflows durch den Import von Bildern gestartet werden, kann das Hochladen vieler Bilder über WebDAV zu einem Rückstau von Workflows führen.
+Ein höherer Datendurchsatz bedeutet, dass die Rechenressourcen mit der System-E/A Schritt halten müssen und umgekehrt. Wenn beispielsweise Workflows durch den Import von Bildern gestartet werden, kann das Hochladen vieler Bilder über WebDAV zu einem Rückstau von Workflows führen.
 >
 Die Verwendung von separaten Festplatten für TarPM, Datenspeicher und Suchindex kann helfen, das E/A-Verhalten des Systems zu optimieren (in der Regel ist es jedoch sinnvoll, den Suchindex lokal zu halten).
 

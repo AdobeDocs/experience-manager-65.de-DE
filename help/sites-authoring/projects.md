@@ -8,7 +8,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1360'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Als Benutzer haben Sie folgende Möglichkeiten:
 
 ## Zugriffsanfrorderungen {#access-requirements}
 
-Erstellt eine standardmäßige AEM und erfordert keine zusätzliche Einrichtung.
+„Projekte“ ist eine standardmäßige AEM-Funktion und erfordert keine zusätzliche Einrichtung.
 
 Damit Benutzer in „Projekte“ andere Benutzer/Gruppen sehen können, während sie mit Projektfunktionen wie Erstellen von Projekten, Erstellen von Aufgaben/Workflows, Anzeigen und Verwalten des Teams arbeiten, benötigen sie Lesezugriff auf `/home/users` und `/home/groups`.
 

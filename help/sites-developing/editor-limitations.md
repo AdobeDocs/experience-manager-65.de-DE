@@ -1,6 +1,6 @@
 ---
 title: Editor-Einschränkungen
-description: Der Editor in der Touch-optimierten Benutzeroberfläche verwendet Überlagerungen, um mit Inhalten zu interagieren, die in einem iframe enthalten sind. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler.
+description: Der Editor in der Touch-optimierten Benutzeroberfläche verwendet Überlagerungen, um mit den in einem iFrame eingeschlossenen Inhalten zu interagieren. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickelnde.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -12,13 +12,13 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '308'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
 # Editor-Einschränkungen{#editor-limitations}
 
-Der Editor in der Touch-optimierten Benutzeroberfläche verwendet Überlagerungen, um mit Inhalten zu interagieren, die in einem iframe enthalten sind. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler. Diese Seite fasst diese Einschränkungen zusammen und bietet nach Möglichkeit Lösungen oder Umgehungen.
+Der Editor in der Touch-optimierten Benutzeroberfläche verwendet Überlagerungen, um mit den in einem iFrame eingeschlossenen Inhalten zu interagieren. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler. Diese Seite fasst diese Einschränkungen zusammen und bietet nach Möglichkeit Lösungen oder Umgehungen.
 
 ## Funktionale Einschränkungen {#functional-limitations}
 
@@ -32,7 +32,7 @@ Beim [Bearbeiten einer Seite](/help/sites-authoring/editing-content.md) sind Lin
 
 ### Strukturseiten {#structure-pages}
 
-Seiten können nicht benannt werden `structure`. Seiten, die `structure` im Seiteneditor nicht bearbeitbar sind.
+Seiten können nicht `structure` genannt werden. Seiten mit dem Namen `structure` können im Seiteneditor nicht bearbeitet werden.
 
 ## CSS-Einschränkungen {#css-limitations}
 
@@ -42,15 +42,15 @@ Entwickler sehen sich hinsichtlich der Interaktionen des Editors mit CSS möglic
 
 Absolut positionierte Elemente können Probleme bei der Position ihrer Überlagerung verursachen.
 
-* Stellen Sie in diesem Fall sicher, dass die Dimensionen des absolut positionierten Elements korrekt sind, da der Editor eine Überlagerung mit exakt denselben Dimensionen erstellt.
+* Stellen Sie in diesem Fall sicher, dass die Abmessungen des absolut positionierten Elements korrekt sind, da der Editor eine Überlagerung mit exakt denselben Abmessungen erstellt.
 
 ### vh-Einheiten {#vh-units}
 
-`vh` -Einheiten werden nicht unterstützt, da die iframe-Höhe automatisch von Adobe Experience Manager (AEM) angepasst werden muss.
+`vh`-Einheiten werden nicht unterstützt, da die iFrame-Höhe von Adobe Experience Manager automatisch angepasst werden muss.
 
 ### Feste Hintergrundbilder {#fixed-background-images}
 
-Feste Hintergrundbilder werden beim Scrollen möglicherweise nicht als fest angezeigt, da sie in einen iframe eingebettet sind.
+Feste Hintergrundbilder werden beim Scrollen nicht als fest angezeigt, weil sie in einen iFrame eingebettet sind.
 
 * Wird in der Kopfzeile **Seite als veröffentlicht anzeigen** ausgewählt, wird die Seite korrekt angezeigt.
 
@@ -58,7 +58,7 @@ Feste Hintergrundbilder werden beim Scrollen möglicherweise nicht als fest ange
 
 100 % Höhe wird im Hauptteilelement einer Seite nicht unterstützt.
 
-* Eine Problemumgehung ist möglich, einen Vollbildtext zu implementieren, indem das Textelement wie folgt &quot;gestreckt&quot;wird:
+* Dieses Problem kann umgangen werden, um einen bildschirmfüllenden Hauptteil zu implementieren, indem das Hauptteilelement wie folgt gestreckt wird:
 
 ```xml
 body {

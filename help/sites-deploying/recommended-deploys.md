@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '1758'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -97,7 +97,7 @@ Die Vorteile:
 
 ### Oak-Cluster mit MongoMK-Failover für hohe Verfügbarkeit in einem einzigen Rechenzentrum {#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter}
 
-Dieser Ansatz bedeutet, dass mehrere Oak-Instanzen auf ein MongoDB-Replikat in einem einzigen Rechenzentrum zugreifen und so einen aktiv-aktiven Cluster für die AEM-Autorenumgebung erstellen. Replikat-Sets in MongoDB werden verwendet, um eine hohe Verfügbarkeit und Redundanz im Falle eines Hardware- oder Netzwerkausfalls zu gewährleisten.
+Dieser Ansatz bedeutet, dass mehrere Oak-Instanzen auf ein MongoDB-Replikat in einem einzigen Rechenzentrum zugreifen und so einen aktiv-aktiven Cluster für die AEM-Autorenumgebung erstellen. In MongoDB dienen Replikatsätze dazu, bei Hardware- oder Netzwerkausfällen für hohe Verfügbarkeit und Redundanz zu sorgen.
 
 ![chlimage_1-18](assets/chlimage_1-18.png)
 

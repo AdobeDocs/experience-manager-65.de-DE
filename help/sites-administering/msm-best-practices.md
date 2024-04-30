@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '1599'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -54,11 +54,11 @@ Die Verwendung einer Blueprint-Konfiguration hat allerdings folgende Vorteile:
 
 Ohne Verweis auf eine Blueprint-Konfiguration können Rollouts nur von Live Copies selbst initiiert werden, wobei im Wesentlichen Inhalt aus der Quelle abgerufen wird.
 
-Wenn Sie eine Site mit einer Live Copy erstellen, ist es von Vorteil, Blueprint-Konfigurationen zu erstellen, um die Verfügbarkeit des vollständigen MSM-Funktionssatzes sicherzustellen.
+Wenn Sie eine Website mit Live Copy erstellen, empfiehlt es sich, Blueprint-Konfigurationen zu erstellen, um die Verfügbarkeit sämtlicher MSM-Funktionen sicherzustellen.
 
 >[!NOTE]
 >
->Beachten Sie, dass CUGs auf der Registerkarte „Berechtigungen“ aus Blueprints nicht zu Live Copies ausgerollt werden können. Berücksichtigen Sie dies, wenn Sie eine Live Copy konfigurieren.
+>Beachten Sie, dass CUGs auf der Registerkarte „Berechtigungen“ nicht aus Blueprints zu Live Copies ausgerollt werden können. Berücksichtigen Sie dies, wenn Sie eine Live Copy konfigurieren.
 
 ## Komponenten- und Container-Synchronisierung {#components-and-container-synchronization}
 
@@ -108,7 +108,7 @@ MSM kann Sie auf zwei Arten beim Erstellen mehrsprachiger Websites unterstützen
    * Während MSM selbst **keine Inhaltsübersetzung anbietet**, kann dies mit entsprechenden Übersetzungs-Connectoren von Drittanbietern integriert werden. Beachten Sie Folgendes:
 
       * Mit MSM können Sie die Vererbung auf Seiten- und/oder Komponentenebene unterbinden. So können Sie verhindern, dass übersetzter Inhalt aus einer Live Copy beim nächsten Rollout durch noch nicht übersetzten Inhalt aus einer Blueprint überschrieben wird.
-      * Einige Übersetzungs-Connectoren von Dritten bieten eine automatisierte Verwaltung der MSM-Vererbung.
+      * Einige Übersetzungs-Connectoren von Drittanbietern bieten eine automatisierte Verwaltung der MSM-Vererbung.
 
         Weitere Informationen erhalten Sie von Ihrem Übersetzungsdienstleister.
 

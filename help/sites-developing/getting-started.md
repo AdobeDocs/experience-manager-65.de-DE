@@ -18,9 +18,9 @@ ht-degree: 100%
 ---
 
 
-# Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial {#getting-started-developing-aem-sites-wknd-tutorial}
+# Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial{#getting-started-developing-aem-sites-wknd-tutorial}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Sind Sie neu bei der Entwicklung mit AEM? Benötigen Sie einen Auffrischungskurs zu Best Practices? Dann sind Sie hier richtig!
 

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '4256'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 97%
 | AEM 6.5 | Dieser Artikel |
 
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Nachdem Ihre Kunden ein Formular gesendet haben, möchten sie im Allgemeinen einen Beleg (in gedruckter Form oder im Dokumentformat) über die eingegebenen Informationen behalten, um später darauf Bezug nehmen zu können. Dies wird als Datensatzdokument bezeichnet.
 
@@ -33,7 +33,7 @@ In diesem Artikel erfahren Sie, wie Sie ein Datensatzdokument für adaptive Form
 
 >[!NOTE]
 >
-> Die Unterstützung zum Anpassen Ihrer adaptiven Formularfragmente und ihrer Felder im Editor für adaptive Formulare wurde mit AEM 6.5 Forms Service Pack 19 (6.5.19.0) eingeführt.
+> Die Unterstützung zum Anpassen adaptiver Formularfragmente und der zugehörigen Felder im Editor für adaptive Formulare wurde mit AEM 6.5 Forms Service Pack 19 (6.5.19.0) eingeführt.
 
 
 >[!NOTE]
@@ -281,7 +281,7 @@ Sie können ein Formularmodell auch bei der Erstellung eines Formulars auswähle
 
 1. Wählen Sie auf der Registerkarte „Formularmodell“ im Abschnitt „Konfiguration von Nachweisvorlagen“ eine der folgenden Optionen aus:
 
-   **Keines** Wählen Sie diese Option, wenn Sie das Datensatzdokument für das Formular nicht konfigurieren möchten.
+   **Keine** Wählen Sie diese Option aus, wenn Sie kein Datensatzdokument für das Formular konfigurieren möchten.
 
    **Formularvorlage als Dokument einer Datensatzvorlage verknüpfen** Wählen Sie diese Option, wenn Sie eine XDP-Datei haben, die Sie als Vorlage für das Datensatzdokument verwenden möchten. Wenn Sie diese Option wählen, werden alle im AEM Forms-Repository verfügbaren XDP-Dateien angezeigt. Wählen Sie die entsprechende Datei aus.
 
@@ -450,7 +450,7 @@ AEM Forms wendet die dritte Musterseite auf den Bereich und alle nachfolgenden B
 
 >[!NOTE]
 >
-> Sie können nicht mehrere Masterseiten auf ein Datensatzdokument für ein adaptives Formularfragment anwenden.
+> Sie können nicht mehrere Musterseiten auf ein Datensatzdokument für ein adaptives Formularfragment anwenden.
 
 ## Wichtige Aspekte beim Arbeiten mit einem Datensatzdokument {#key-considerations-when-working-with-document-of-record}
 
@@ -506,10 +506,10 @@ Mit einer XCI-Datei können Sie verschiedene Eigenschaften eines Dokuments festl
   
 -->
 
-### Verwenden einer benutzerdefinierten XCI-Datei in Ihrer lokalen Forms-Entwicklungsumgebung
+### Verwenden Sie eine benutzerdefinierte XCI-Datei in Ihrer lokalen Forms-Entwicklungsumgebung
 
 1. Laden Sie die XCI-Datei in Ihre lokale Entwicklungsumgebung hoch.
-1. Öffnen <!--Cloud Service SDK--> Konfigurationsmanager. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+1. Öffnen Sie <!--Cloud Service SDK--> Configuration Manager. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
 1. Suchen und öffnen Sie die Konfiguration **[!UICONTROL Web-Kanal für adaptive Formulare und Interaktive Kommunikation]**.
 1. Geben Sie den Pfad der XCI-Datei an und klicken Sie auf **[!UICONTROL Speichern]**.
 

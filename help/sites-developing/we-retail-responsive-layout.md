@@ -1,6 +1,6 @@
 ---
-title: Testen von responsivem Layout in We.Retail
-description: Erfahren Sie, wie Sie mit We.Retail responsives Layout in Adobe Experience Manager ausprobieren.
+title: Ausprobieren von responsivem Layout in We.Retail
+description: Erfahren Sie, wie Sie responsive Layouts in Adobe Experience Manager mit We.Retail ausprobieren.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -12,11 +12,11 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# Testen von responsivem Layout in We.Retail{#trying-out-responsive-layout-in-we-retail}
+# Ausprobieren von responsivem Layout in We.Retail{#trying-out-responsive-layout-in-we-retail}
 
 Alle We.Retail-Seiten verwenden die Layout-Container-Komponente, um responsives Design zu implementieren. Der Layout-Container bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können. Dieses Raster kann das Layout entsprechend der Geräte-/Fenstergröße und dem Format neu anordnen. Die Komponente wird zusammen mit dem **Layout**-Modus im Seiteneditor verwendet, mit dem Sie Ihr responsives Layout je nach Gerät erstellen und bearbeiten können.
 
@@ -46,4 +46,4 @@ Alle We.Retail-Seiten verwenden die Layout-Container-Komponente, um responsives 
 
 ## Weiterführende Informationen {#further-information}
 
-Weitere Informationen finden Sie im Authoring-Dokument . [Responsives Layout](/help/sites-authoring/responsive-layout.md) oder das Administratordokument [Konfigurieren des Layout-Containers und des Layout-Modus](/help/sites-administering/configuring-responsive-layout.md) für vollständige technische Details.
+Weitere Informationen und umfassende technische Details finden Sie im Dokument [Responsives Layout](/help/sites-authoring/responsive-layout.md) oder im Admin-Dokument [Konfigurieren von Layout-Container und Layout-Modus](/help/sites-administering/configuring-responsive-layout.md).

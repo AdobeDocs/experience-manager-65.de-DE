@@ -9,7 +9,7 @@ role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '1856'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -474,7 +474,7 @@ Einstiegspunkt für die Such-API ist die `CommerceService#search`-Methode, die e
 
    * Der ClientContext `SegmentMgr` löst Segmente auf und der ClientContext `CartMgr` löst Promotions auf. Jede Promotion, die mindestens einem aufgelösten Segment unterliegt, wird ausgelöst.
 
-      * Ausgelöste Promotions werden über einen AJAX Aufruf zur Neuberechnung des Warenkorbs an den Server zurückgesendet.
+      * Ausgelöste Promotions werden über einen AJAX-Aufruf an den Server zurückgesendet, um den Warenkorb neu zu berechnen.
       * Ausgelöste Promotions (und hinzugefügte Gutscheine) werden auch im ClientContext-Bedienfeld angezeigt.
 
 Das Hinzufügen/Entfernen eines Gutscheins aus einem Warenkorb erfolgt über die `CommerceSession`-API:

@@ -167,7 +167,7 @@ So verwenden Sie Dynamic Media und Dynamic Media Classic gleichzeitig:
    1. (Optional) Richten Sie Videos in der Dynamic Media Classic-Konfiguration ein. Sie können die Videokodierung für Dynamic Media und/oder Dynamic Media Classic aktivieren. Dynamische Ausgabedarstellungen werden für die Vorschau und Wiedergabe lokal in der Experience Manager-Instanz verwendet, während Ausgabedarstellungen von Dynamic Media Classic-Videos auf Dynamic Media Classic-Servern generiert und gespeichert werden. Wenden Sie bei der Einrichtung der Videokodierungs-Services für Dynamic Media und Dynamic Media Classic ein [Videoverarbeitungsprofil](/help/assets/video-profiles.md) auf den Dynamic Media Classic-Asset-Ordner an.
    1. (Optional) [Konfigurieren Sie eine sichere Vorschau in Dynamic Media Classic](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene).
 
-#### Beschränkungen {#limitations}
+#### Einschränkungen {#limitations}
 
 Wenn sowohl Dynamic Media Classic als auch Dynamic Media aktiviert sind, gelten die folgenden Beschränkungen:
 

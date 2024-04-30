@@ -1,6 +1,6 @@
 ---
 title: Synchronisieren von adaptiven Formularen mit XFA-Formularvorlagen
-description: Erfahren Sie, wie Sie Formulare mit XFA-/XDP-Dateien synchronisieren. Es verwendet erneut Felder von Formularen, die mit Änderungen synchronisiert werden, die an den entsprechenden Feldern in den XFA-/XDP-Dateien vorgenommen wurden.
+description: Erfahren Sie, wie Sie Formulare mit XFA-/XDP-Dateien synchronisieren. Verwendet erneut Felder von Formularen, die mit Änderungen synchronisiert werden, die an den entsprechenden Feldern in den XFA-/XDP-Dateien vorgenommen wurden.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 docset: aem65
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1226'
-ht-degree: 87%
+ht-degree: 92%
 
 ---
 
@@ -115,7 +115,7 @@ Sie müssen nicht auf den Link in der Fehlermeldung klicken, um die Felder in de
 
 ### Gelöschte Felder in der XDP-Datei {#deleted-fields-in-xdp-file}
 
-Wenn ein Feld, das zuvor in ein adaptives Formular kopiert wurde, aus einer XDP-Datei gelöscht wird, wird im Authoring-Modus eine Fehlermeldung angezeigt, die besagt, dass das Feld nicht in der XDP-Datei vorhanden ist. In diesem Fall müssen Sie das Feld manuell aus dem adaptiven Formular löschen oder die Eigenschaft `bindRef` im Komponentendialogfeld löschen.
+Wenn ein zuvor in ein adaptives Formular kopiertes Feld in einer XDP-Datei gelöscht wird, wird eine Fehlermeldung im Autorenmodus angezeigt, die angibt, dass das Feld in der XDP-Datei nicht vorhanden ist. In diesem Fall müssen Sie das Feld manuell aus dem adaptiven Formular löschen oder die Eigenschaft `bindRef` im Komponentendialogfeld löschen.
 
 Die folgenden Schritte veranschaulichen diesen Vorgang für die Assets, die in dem Beispiel in diesem Artikel verwendet wurden:
 

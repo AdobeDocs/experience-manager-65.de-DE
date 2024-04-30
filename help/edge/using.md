@@ -8,7 +8,7 @@ role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Mit Edge Delivery ist das Authoring einfach, schnell und flexibel. Sie können z
 * Dokumentenbasiertes Authoring (z. B. Microsoft Word oder Google Docs) – [Weitere Informationen finden Sie unter diesem Link](https://www.hlx.live/docs/authoring).
 * Seiteneditor/Universeller Editor – Wenden Sie sich an den Adobe-Vertrieb.
 
-Wenn es document-basiertes Authoring gibt, können Sie mit einer Vielzahl von Quellen wie Microsoft Word- und Google-Dokumenten arbeiten. Dokumente aus diesen Quellen werden zu Seiten auf Ihrer Website. Überschriften, Listen, Bilder, Schriftelemente und Videos können von der ursprünglichen Quelle auf Ihre Website übertragen werden. Sie können Metadaten für SEO-Zwecke hinzufügen oder Blöcke verwenden, um mit strukturierten Inhalten zu arbeiten und Funktionen hinzuzufügen.
+Beim dokumentenbasierten Authoring können Sie mit verschiedenen Quellen wie Microsoft Word und Google Docs arbeiten. Dokumente aus diesen Quellen werden zu Seiten auf Ihrer Website. Überschriften, Listen, Bilder, Schriftelemente und Videos können von der ursprünglichen Quelle auf Ihre Website übertragen werden. Sie können Metadaten für SEO-Zwecke hinzufügen oder Blöcke verwenden, um mit strukturierten Inhalten zu arbeiten und Funktionen hinzuzufügen.
 
 ## Veröffentlichung {#publishing-edge}
 
@@ -31,7 +31,7 @@ Mit Edge Delivery erfolgt die Veröffentlichung von Inhalten unabhängig von Ihr
 
 ## Edge Delivery Services und GitHub {#github-edge}
 
-Die Edge-Bereitstellung verwendet GitHub, damit Kunden Code direkt über ihr GitHub-Repository verwalten und bereitstellen können. Sie können beispielsweise Inhalte entweder in Google Docs oder Microsoft Word schreiben und die Funktionalität Ihrer Site mithilfe von CSS und JavaScript in GitHub entwickeln. Websites werden automatisch für jede Ihrer Verzweigungen erstellt, von der Inhaltsvorschau bis zur Produktion. Jede Ressource, die Sie in Ihr GitHub-Repository einfügen, steht auf Ihrer Website ohne Erstellungsprozess zur Verfügung.
+Edge Delivery nutzt GitHub, damit Kundinnen und Kunden Code direkt über ihr GitHub-Repository verwalten und bereitstellen können. Sie können beispielsweise Inhalte entweder in Google Docs oder Microsoft Word schreiben und die Funktionalität Ihrer Site mithilfe von CSS und JavaScript in GitHub entwickeln. Websites werden automatisch für jede Ihrer Verzweigungen erstellt, von der Inhaltsvorschau bis zur Produktion. Jede Ressource, die Sie in Ihr GitHub-Repository einfügen, steht auf Ihrer Website ohne Erstellungsprozess zur Verfügung.
 
 ## Verwenden des Sidekicks {#using-sidekick}
 
@@ -60,4 +60,4 @@ Weitere Informationen finden Sie auf den folgenden Seiten:
 * Weitere Informationen zu den ersten Schritten mit Edge Delivery finden Sie im Abschnitt [Build](https://www.hlx.live/docs/#build) der Edge Delivery-Dokumentation.
 * Informationen zum Erstellen und Veröffentlichen von Inhalten mithilfe von Edge Delivery finden Sie im Abschnitt [Veröffentlichen](https://www.hlx.live/docs/authoring).
 * Informationen zur Verwendung der Sidekick-Erweiterung finden Sie auf der Seite [Sidekick verwenden](https://www.hlx.live/docs/sidekick).
-* Informationen zum AEM finden Sie in der [Seite &quot;Authoring-Konzepte&quot;](/help/sites-authoring/author.md))
+* Informationen zum AEM-Authoring finden Sie auf der Seite [Authoring-Konzepte](/help/sites-authoring/author.md)

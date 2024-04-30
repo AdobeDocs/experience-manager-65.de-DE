@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '5753'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Jede Aktualisierung des Repositorys erzeugt eine Inhaltsrevision. Daher wächst 
 
 Mit AEM 6.3 und höher wurde eine Online-Version dieser Funktion namens Online-Revisionsbereinigung eingeführt. Verglichen mit der Offline-Revisionsbereinigung, bei der die AEM-Instanz beendet werden muss, kann die Online-Revisionsbereinigung ausgeführt werden, wenn die AEM-Instanz online ist. Die Online-Revisionsbereinigung ist standardmäßig aktiviert und ist die empfohlene Methode zur Durchführung der Revisionsbereinigung.
 
-**Hinweis**: [Im Video](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) finden Sie eine Einführung in die Verwendung der Online-Revisionsbereinigung.
+**Hinweis**: [Im Video](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=de) finden Sie eine Einführung in die Verwendung der Online-Revisionsbereinigung.
 
 Der Revisionsbereinigungsprozess besteht aus drei Phasen: **Schätzung**, **Komprimierung** und **Bereinigung**. Die Schätzung bestimmt, ob die nächste Phase (Komprimierung) ausgeführt werden soll oder nicht, je nachdem, wie viel Speicherabfall möglicherweise erfasst wird. Während der Komprimierungsphase werden Segmente und TAR-Dateien neu geschrieben, wobei nicht verwendete Inhalte ausgeschlossen werden. In der Bereinigungsphase werden dann die alten Segmente entfernt, einschließlich des möglicherweise vorhandenen Speicherabfalls. Im Offline-Modus kann in der Regel mehr Speicherplatz zurückgewonnen werden, da der Online-Modus den AEM-Arbeitssatz berücksichtigen muss, in dem zusätzliche Segmente nicht erfasst werden.
 
@@ -554,7 +554,7 @@ Die Fehlerprotokolleinträge sind ausführlich, falls es bei der Online-Revision
   <tr>
     <td>Nicht zutreffend</td>
     <td>TarMK GC #2: Die Verdichtung scheiterte in 32.902 min (1974140 ms), nach 5 Zyklen.</td>
-    <td>Diese Meldung bedeutet nicht, dass ein nicht behebbarer Fehler aufgetreten ist, sondern nur, dass die Komprimierung nach einigen Versuchen beendet wurde. Lesen Sie auch den <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">folgenden Absatz.</a></td>
+    <td>Diese Meldung besagt nicht, dass ein nicht behebbarer Fehler aufgetreten ist, sondern nur, dass die Komprimierung nach einigen Versuchen beendet wurde. Lesen Sie auch den <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">folgenden Absatz.</a></td>
     <td>Lesen Sie die folgende <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">Oak-Dokumentation</a> und die letzte Frage im Abschnitt „Ausführen der Online-Revisionsbereinigung“.</a></td>
   </td>
   </tr>

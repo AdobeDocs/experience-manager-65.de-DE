@@ -12,7 +12,7 @@ role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '131'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ Knoten im Repository unterliegen den Benennungskonventionen des [Java Content Re
 
 Die klassische Benutzeroberfläche weist stärkere Einschränkungen auf:
 
-* Validiert den Asset-Namen, wenn entweder:
+* Prüft den Asset-Namen bei expliziten Knotennamen, wenn:
 
-   * Ein Asset-Titel wird zur Konvertierung in den Knotennamen bereitgestellt
+   * ein Asset-Titel für die Konvertierung in den Knotennamen bereitgestellt wird
    * ein expliziter Knotenname angegeben ist
 
 * Gültige Zeichen (nur diese Zeichen sind tatsächlich gültig, wenn ein Asset in der klassischen Benutzeroberfläche erstellt wird):

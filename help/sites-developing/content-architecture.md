@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '421'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 97%
 Das Model von David Nüscheler („David’s Model“) wurde vor Jahren entworfen, hat aber bis heute Gültigkeit. Die wichtigsten Grundsätze des Modells lauten:
 
 * Erst die Daten, dann die Struktur. Zumindest gegebenenfalls.
-* Gestalten Sie die Inhaltshierarchie, lassen Sie sie nicht passieren.
+* Steuern Sie die Inhaltshierarchie, anstatt sie dem Zufall zu überlassen.
 * Workspaces sind für `clone()`, `merge()` und `update()` vorgesehen.
 * Bei gleichgeordneten Elementen mit identischem Namen ist Vorsicht geboten.
 * Verweise richten mehr Schaden an, als sie nutzen.

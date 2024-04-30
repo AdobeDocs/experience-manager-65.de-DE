@@ -12,7 +12,7 @@ role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1635'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -137,7 +137,7 @@ Sie können die folgenden [!UICONTROL erweiterten] Einstellungen bearbeiten, ind
 
 #### Wiedergabe von sicheren Videos {#how-to-delivery-secure-video}
 
-Wenn Sie in Experience Manager 6.2 [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480) installieren, können Sie festlegen, ob ein Video über eine sichere SSL-Verbindung (HTTPS) oder eine unsichere Verbindung (HTTP) wiedergegeben wird. Standardmäßig wird das Videobereitstellungsprotokoll automatisch vom Protokoll der eingebetteten Webseite übernommen. Wenn die Webseite über HTTPS geladen wird, wird das Video ebenfalls über HTTPS wiedergegeben. Umgekehrt wird das Video über HTTP wiedergegeben, wenn die Web-Seite HTTP verwendet. In den meisten Fällen ist dieses Verhalten korrekt und es müssen keine Konfigurationsänderungen vorgenommen werden. Sie können dieses Standardverhalten jedoch überschreiben. Hängen Sie `VideoPlayer.ssl=on` entweder an das Ende eines URL-Pfads oder an die Liste der anderen Viewer-Konfigurationsparameter in einem Einbettungs-Code-Snippet an. Beide Aktionen erzwingen die sichere Videowiedergabe.
+Wenn Sie in Experience Manager 6.2 [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480) installieren, können Sie festlegen, ob ein Video über eine sichere SSL-Verbindung (HTTPS) oder eine unsichere Verbindung (HTTP) wiedergegeben wird. Standardmäßig wird automatisch das Videowiedergabeprotokoll der Web-Seite übernommen, in die das Video eingebettet wird. Wenn die Webseite über HTTPS geladen wird, wird das Video ebenfalls über HTTPS wiedergegeben. Umgekehrt wird das Video über HTTP wiedergegeben, wenn die Web-Seite HTTP verwendet. In den meisten Fällen ist dieses Verhalten korrekt und es müssen keine Konfigurationsänderungen vorgenommen werden. Sie können dieses Standardverhalten jedoch überschreiben. Hängen Sie `VideoPlayer.ssl=on` entweder an das Ende eines URL-Pfads oder an die Liste der anderen Viewer-Konfigurationsparameter in einem Einbettungs-Code-Snippet an. Beide Aktionen erzwingen die sichere Videowiedergabe.
 
 Weitere Informationen zur sicheren Videowiedergabe sowie zur Verwendung des Konfigurationsattributs `VideoPlayer.ssl` in Ihrem URL-Pfad finden Sie im Referenzhandbuch zu den Viewern unter [Sichere Videowiedergabe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html?lang=de). Neben dem Video-Viewer ist die sichere Videowiedergabe auch für den Viewer für gemischte Medien und den Viewer für interaktive Videos verfügbar.
 

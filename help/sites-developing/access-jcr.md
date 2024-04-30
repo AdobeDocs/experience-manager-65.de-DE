@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '567'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -36,23 +36,23 @@ Sie können programmgesteuert Knoten und Eigenschaften ändern, die sich innerha
 
 Es gibt unterschiedliche Verfahren zur Herstellung einer Verbindung mit einem Repository. In diesem Entwicklungsartikel wird eine statische Methode verwendet, die der Klasse `org.apache.jackrabbit.commons.JcrUtils` zuzuordnen ist. Der Name der Methode lautet `getRepository`. Diese Methode verwendet einen Zeichenfolgenparameter, der die URL des Adobe CQ-Servers darstellt. Zum Beispiel: `http://localhost:4503/crx/server`.
 
-Die `getRepository` -Methode gibt eine `Repository` -Instanz, wie im folgenden Codebeispiel gezeigt.
+Die Methode `getRepository` gibt eine `Repository`-Instanz zurück, was im folgenden Code-Beispiel veranschaulicht wird.
 
 ```java
 //Create a connection to the AEM JCR repository running on local host
 Repository repository = JcrUtils.getRepository("http://localhost:4503/crx/server");
 ```
 
-## Sitzungsinstanz erstellen {#create-a-session-instance}
+## Erstellen einer Sitzungsinstanz {#create-a-session-instance}
 
-Die `Repository` -Instanz stellt das CRX-Repository dar. Sie verwenden die `Repository` -Instanz, um eine Sitzung mit dem Repository einzurichten. Um eine Sitzung zu erstellen, rufen Sie die `Repository` -Instanz `login` -Methode und übergeben Sie eine `javax.jcr.SimpleCredentials` -Objekt. Die `login` -Methode gibt eine `javax.jcr.Session` -Instanz.
+Die `Repository`-Instanz stellt das CRX-Repository dar. Mit der `Repository`-Instanz stellen Sie eine Sitzung mit dem Repository her. Zum Erstellen einer Sitzung rufen Sie die Methode `login` der `Repository`-Instanz auf und übergeben ein `javax.jcr.SimpleCredentials`-Objekt. Die Methode `login` gibt eine `javax.jcr.Session`-Instanz zurück.
 
-Sie erstellen eine `SimpleCredentials` -Objekt mithilfe des -Konstruktors und Übergabe der folgenden string-Werte:
+Sie erstellen ein `SimpleCredentials`-Objekt, indem Sie seinen Konstruktor verwenden und die folgenden Zeichenfolgenwerte übergeben:
 
 * den Benutzernamen
 * das zugehörige Kennwort
 
-Rufen Sie beim Übergeben des zweiten Parameters die `toCharArray` -Methode. Der folgende Code zeigt, wie Sie die `login` -Methode, die eine `javax.jcr.Sessioninstance`.
+Rufen Sie bei der Übergabe des zweiten Parameters die Methode `toCharArray` des Zeichenfolgeobjekts auf. Der folgende Code zeigt, wie Sie die Methode `login` aufrufen, die eine `javax.jcr.Sessioninstance` zurückgibt.
 
 ```java
 //Create a Session instance
@@ -61,14 +61,14 @@ javax.jcr.Session session = repository.login( new SimpleCredentials("admin", "ad
 
 ## Erstellen einer Knoteninstanz {#create-a-node-instance}
 
-Verwenden Sie eine `Session` Instanz zum Erstellen einer `javax.jcr.Node` -Instanz. A `Node` -Instanz können Sie Knotenvorgänge ausführen. Beispielsweise können Sie einen Knoten erstellen. Um einen Knoten zu erstellen, der den Stammknoten darstellt, rufen Sie die `Session` -Instanz `getRootNode` -Methode, wie in der folgenden Codezeile dargestellt.
+Verwenden Sie eine `Session`-Instanz, um eine `javax.jcr.Node`-Instanz zu erstellen. Mit einer `Node`-Instanz können Sie Knotenvorgänge durchführen. Beispielsweise können Sie einen Knoten erstellen. Um einen Knoten zu erstellen, der den Stammknoten darstellt, rufen Sie die Methode `getRootNode` der `Session`-Instanz auf, wie in der folgenden Code-Zeile veranschaulicht.
 
 ```java
 //Create a Node
 Node root = session.getRootNode();
 ```
 
-Nachdem Sie `Node` -Instanz können Sie Aufgaben wie das Erstellen eines anderen Knotens und das Hinzufügen eines Werts dazu ausführen. Der folgende Code erstellt beispielsweise zwei Knoten und fügt dem zweiten Knoten einen Wert hinzu.
+Nach der Erstellung der `Node`-Instanz können Sie verschiedene Aufgaben ausführen, z. B. einen anderen Knoten erstellen und ihm einen Wert hinzufügen. Der folgende Code erstellt beispielsweise zwei Knoten und fügt dem zweiten Knoten einen Wert hinzu.
 
 ```java
 // Store content
@@ -78,7 +78,7 @@ day.setProperty("message", "Adobe CQ is part of the Adobe Digital Marketing Suit
 
 ## Abrufen von Knotenwerten {#retrieve-node-values}
 
-Um einen Knoten und dessen Wert abzurufen, rufen Sie die `Node` -Instanz `getNode` -Methode verwenden und einen Zeichenfolgenwert übergeben, der den vollständig qualifizierten Pfad zum Knoten darstellt. Betrachten Sie die im vorherigen Code-Beispiel erstellte Knotenstruktur.  Um den Tagesknoten abzurufen, geben Sie „adobe/day“ an, wie im folgenden Code gezeigt:
+Zum Abrufen eines Knotens und seines Werts rufen Sie die Methode `getNode` der `Node`-Instanz auf und übergeben Sie einen Zeichenfolgenwert, der den vollqualifizierten Pfad zum Knoten darstellt. Betrachten Sie die im vorherigen Code-Beispiel erstellte Knotenstruktur.  Um den Tagesknoten abzurufen, geben Sie „adobe/day“ an, wie im folgenden Code gezeigt:
 
 ```java
 // Retrieve content
@@ -89,7 +89,7 @@ System.out.println(node.getProperty("message").getString());
 
 ## Erstellen von Knoten im Adobe CQ-Repository {#create-nodes-in-the-adobe-cq-repository}
 
-Das folgende Java™-Codebeispiel stellt eine Java™-Klasse dar, die eine Verbindung zu Adobe CQ herstellt. `Session` und fügt neue Knoten hinzu. Einem Knoten wird ein Datenwert zugewiesen, woraufhin der Wert des Knotens und seines Pfades aus der Konsole geschrieben wird. Melden Sie sich ab, um die Sitzung zu beenden.
+Im folgenden Java™-Code-Beispiel wird eine Java™-Klasse dargestellt, die eine Verbindung mit Adobe CQ herstellt, eine `Session`-Instanz erstellt und neue Knoten hinzufügt. Einem Knoten wird ein Datenwert zugewiesen, woraufhin der Wert des Knotens und seines Pfades aus der Konsole geschrieben wird. Melden Sie sich ab, um die Sitzung zu beenden.
 
 ```java
 /*

@@ -13,7 +13,7 @@ role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '184'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -31,6 +31,6 @@ Um zu verstehen, wie Sie SPAs mit Adobe Experience Platform Launch integrieren k
 
 >[!NOTE]
 >
->Die referenzierte KB wurde erstellt, um die Adobe Experience Platform Launch-Integration mit SPA zu ermöglichen, die nicht den Adobe Experience Manager SPA Editor verwenden. Diese Methoden sollten auch eine Adobe Experience Platform Launch-Integration mit SPAs ermöglichen, die für die Verwendung des SPA-Editors erstellt wurden.
+>Der genannte Knowledgebase-Artikel wurde erstellt, um eine Adobe Experience Platform Launch-Integration in SPAs zu ermöglichen, die nicht den SPA-Editor von Adobe Experience Manager nutzen. Diese Methoden sollten auch eine Adobe Experience Platform Launch-Integration mit SPAs ermöglichen, die für die Verwendung des SPA-Editors erstellt wurden.
 >
 >Der Einsatz von Redux zusammen mit den JavaScript-SPA-Bibliotheken wurde noch nicht vollständig untersucht. Die Unterstützung für Redux ist in einer zukünftigen Version des SPA-Editors geplant.

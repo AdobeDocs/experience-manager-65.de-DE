@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '2313'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -575,7 +575,7 @@ Facettenextraktion wird nicht unterstützt.
 
 * **all**
 
-  (bool) Durchsuchen Sie den gesamten Tag-Volltext, d. h. alle Titel, Beschreibungen usw. Hat Vorrang vor &quot;l `ang`&quot;.
+  (bool) Suchen im gesamten Tag-Volltext, d. h. alle Titel, Beschreibungen usw. Hat Vorrang vor „l `ang`“.
 
 ### Typ {#type}
 

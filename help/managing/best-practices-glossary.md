@@ -13,7 +13,7 @@ role: Admin,Architect,Data Architect,Developer,Leader
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '6926'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1131,11 +1131,11 @@ Es sollte ein eindeutiges Verfahren für die Abnahme von Spezifikationen auf Kun
 
 ### Auswahl der Mitarbeitenden für die AEM-Admin-Schulung {#staff-selected-for-aem-administrator-training}
 
-Interne Mitarbeiter, die eine Schulung benötigen, damit sie die Lösung verwalten können.
+Interne Mitarbeiterinnen und Mitarbeiter, die für die Verwaltung der Lösung geschult werden müssen.
 
-### Für die Autoren- und Endanwenderschulung ausgewählte Mitarbeitende {#staff-selected-for-author-and-end-user-training}
+### Für die Autoren- und Endanwenderschulung ausgewählte Mitarbeiterinnen und Mitarbeiter {#staff-selected-for-author-and-end-user-training}
 
-Interne Mitarbeiter, die eine Schulung benötigen, damit sie die Lösung erstellen können.
+Interne Mitarbeiterinnen und Mitarbeiter, die für Authoring in der Lösung geschult werden müssen.
 
 ### Projektbeteiligte {#stakeholders}
 

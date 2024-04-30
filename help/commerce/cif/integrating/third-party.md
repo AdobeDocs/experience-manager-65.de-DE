@@ -9,13 +9,13 @@ role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '489'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Integration von AEM und Drittanbieter-Commerce-Lösungen mithilfe des Commerce Integration Framework {#aem-third-party}
 
-Die Integration von Lösungen außerhalb von Adobe Commerce ist ein häufiges Szenario für CIF. Drittanbieterlösungen mit verschiedenen APIs und Schemas werden über eine Integrationsschicht verbunden.
+Die Integration von Lösungen außerhalb von Adobe Commerce ist ein häufiges Szenario für CIF. Drittanbieterlösungen mit verschiedenen APIs und Schemata werden über eine Integrationsebene verbunden.
 
 ## Architektur {#architecture}
 

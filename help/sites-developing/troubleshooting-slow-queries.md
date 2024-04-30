@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '2237'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Die ersten beiden Klassifizierungen von Abfragen (ohne Index und mit schlechter 
 
 Die Untersuchung jedes potenziellen Ergebnisses wird als „Durchlaufen“ bezeichnet.
 
-Da jedes potenzielle Ergebnis überprüft werden muss, steigen die Kosten zur Bestimmung der tatsächlichen Ergebnismenge linear mit der Anzahl der potenziellen Ergebnisse.
+Da jedes potenzielle Ergebnis überprüft werden muss, steigen die Kosten zur Bestimmung des tatsächlichen Ergebnissatzes linear mit der Anzahl potenzieller Ergebnisse.
 
 Durch das Hinzufügen von Abfragebeschränkungen und das Anpassen von Indizes können die Indexdaten in einem optimierten Format gespeichert werden, das einen schnellen Abruf der Ergebnisse ermöglicht und die lineare Inspektion potenzieller Ergebnismengen verringert oder beseitigt.
 
@@ -122,9 +122,9 @@ Weitere Abfragebeschränkungen verringern die möglichen Ergebnismengen und erla
 
 Ebenso würde ohne eine weitere Indexregel für die Eigenschaft `cq:tags` selbst eine Volltextabfrage mit einer Einschränkung auf `cq:tags` schlecht abschneiden, da die Ergebnisse aus dem Index alle Volltexttreffer zurückgeben würden. Die Einschränkung auf cq:tags würde anschließend gefiltert werden.
 
-Eine weitere Ursache für ein Filtern nach dem Index sind Zugangssteuerungslisten, die bei der Entwicklung oft übersehen werden. Versuchen Sie sicherzustellen, dass die Abfrage keine Pfade zurückgibt, auf die die Benutzenden möglicherweise nicht zugreifen können. Dies kann durch eine bessere Inhaltsstruktur und durch Bereitstellung relevanter Pfadbeschränkungen für die Abfrage erfolgen.
+Eine weitere Ursache für ein Filtern nach dem Index sind Zugangssteuerungslisten, die bei der Entwicklung oft übersehen werden. Versuchen Sie sicherzustellen, dass die Abfrage keine Pfade zurückgibt, auf die die Benutzenden möglicherweise nicht zugreifen können. Dies kann durch eine bessere Inhaltsstruktur sowie durch Bereitstellung relevanter Pfadbeschränkungen für die Abfrage erfolgen.
 
-Eine nützliche Methode, um festzustellen, ob der Lucene-Index viele Ergebnisse zurückgibt, von denen nur eine kleine Teilmenge als Abfrageergebnis zurückgegeben wird, besteht darin, DEBUG-Protokolle für `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex` zu aktivieren. Auf diese Weise können Sie sehen, wie viele Dokumente aus dem Index geladen werden. Die Anzahl der Ergebnisse im Vergleich zur Anzahl der geladenen Dokumente sollte nicht unverhältnismäßig sein. Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md).
+Eine nützliche Methode, um festzustellen, ob der Lucene-Index viele Ergebnisse zurückgibt, von denen nur eine kleine Teilmenge als Abfrageergebnis zurückgegeben wird, besteht darin, DEBUG-Protokolle für `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex` zu aktivieren. Auf diese Weise können Sie sehen, wie viele Dokumente aus dem Index geladen werden. Die Anzahl der letztendlichen Ergebnisse sollte nicht unverhältnismäßig gering im Vergleich zur Anzahl der geladenen Dokumente sein. Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md).
 
 #### Nach der Bereitstellung {#post-deployment-1}
 
@@ -179,7 +179,7 @@ AEM unterstützt die folgenden Abfragesprachen:
 * JCR-SQL2
 * XPath
 
-Im folgenden Beispiel wird Query Builder verwendet, da es die gängigste Abfragesprache ist, die von AEM-Entwicklern verwendet wird. Die gleichen Prinzipien gelten jedoch für JCR-SQL2 und XPath.
+Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwickelnden am häufigsten verwendet wird. Die Prinzipien sind jedoch auch auf JCR-SQL2 und XPath anwendbar.
 
 1. Fügen Sie eine Knotentyp-Einschränkung hinzu, sodass die Abfrage auf einen vorhandenen Lucene-Eigenschaftsindex aufgelöst wird.
 
@@ -467,9 +467,9 @@ Stellen Sie daher sicher, dass Indizes Abfragen erfüllen, es sei denn, die Komb
 
 * **Oak Index Definition Generator unter`https://oakutils.appspot.com/generate/index`** <!-- The above URL is 404 as of April 24, 2023 -->
 
-   * Generieren Sie optimale Lucence-Eigenschafts-Indizes aus XPath- oder JCR-SQL2-Abfragen.
+   * Generieren Sie optimale Lucene-Eigenschafts-Indizes aus XPath- oder JCR-SQL2-Abfragen.
 
-* **_AEM Chrome-Plug-in_** <!-- For whatever reason, the URL to this extension was causing too many redirects when doing the request so it was removed entirely to get rid of the error; users can easily look up the extension in Google instead. DO NOT ADD THE URL AGAIN!-->
+* **_AEM-Chrome-Plug-in_** <!-- For whatever reason, the URL to this extension was causing too many redirects when doing the request so it was removed entirely to get rid of the error; users can easily look up the extension in Google instead. DO NOT ADD THE URL AGAIN!-->
 
-   * Die _AEM Chrome-Plug-in_ ist eine Google Chrome-Webbrowsererweiterung, die Protokolldaten pro Anforderung, einschließlich Ausführungs-Abfragen und deren Abfrageplänen, in der Entwicklungs-Tools-Konsole des Browsers verfügbar macht.
-   * Erfordert die Installation und Aktivierung [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) auf AEM.
+   * Das _AEM-Chrome-Plug-in_ ist eine Webbrowser-Erweiterung für Google Chrome, die Protokolldaten für einzelne Anfragen, z. B. ausgeführte Abfragen und ihre Abfragepläne, in der Entwicklerkonsole des Browsers ausgibt.
+   * Voraussetzung sind die Installation und Aktivierung von [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) in AEM.

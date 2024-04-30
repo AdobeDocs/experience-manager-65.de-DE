@@ -13,7 +13,7 @@ role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '9070'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -116,7 +116,7 @@ AEM fügt Ihren Bildern standardmäßig einen **ALT-Text** hinzu. Für die klass
 Es gibt verschiedene Arten von nichttextlichem Inhalt. Daher hängt der Wert der Textalternative von der Rolle ab, die die Grafik auf der Web-Seite spielt. Zu den allgemeinen Faustregeln gehören:
 
 * Textalternativen sollten kurz sein, doch sollten sie die wesentlichen Informationen, die durch den nichttextlichen Inhalt bereitgestellt werden, eindeutig erfassen.
-* Lange Beschreibungen (mehr als 100 Zeichen) sollten vermieden werden. Wenn eine Textalternative mehr Details erfordert:
+* Lange Beschreibungen (mehr als 100 Zeichen) sollten vermieden werden. Wenn eine Textalternative mehr Details erfordert:
 
    * Geben Sie im Alternativtext eine kurze Beschreibung an
    * und fügen Sie irgendwo anders auf der entsprechenden Seite oder auf einer anderen Web-Seite eine längere Beschreibung ein. Verlinken Sie zu dieser separaten Beschreibung, indem Sie das Bild zu einem Link machen, oder indem Sie einen Text-Link neben dem Bild platzieren.
@@ -678,15 +678,17 @@ Wenn Bilder von Text verwendet werden müssen, nutzen Sie CSS, um die Bilder von
 * Level A
 * Pausieren, Beenden, Ausblenden: Für sich bewegende, blinkende, scrollende oder sich automatisch aktualisierende Informationen gelten folgenden Regeln:
 
-   * Verschieben, Blinken, Scrollen: Für alle bewegten, blinkenden oder scrollenden Informationen, die
-      * a) automatisch beginnt,
-      * b) länger als fünf Sekunden dauert und
-      * (c) parallel mit anderen Inhalten präsentiert wird, gibt es einen Mechanismus, mit dem der Benutzer sie anhalten, stoppen oder verbergen kann, es sei denn, die Bewegung, das Blinken oder das Scrollen ist Teil einer Aktivität, in der sie unerlässlich ist.
-   * Automatische Aktualisierung: Für alle Informationen zur automatischen Aktualisierung, die
-      * a) automatisch beginnt und
-      * (b) parallel mit anderen Inhalten präsentiert wird, gibt es einen Mechanismus, mit dem der Benutzer sie anhalten, stoppen oder ausblenden oder die Häufigkeit der Aktualisierung steuern kann, es sei denn, die automatische Aktualisierung ist Teil einer Aktivität, in der sie wichtig ist.
+   * Bewegen, Blinken, Scrollen: Für alle sich bewegenden, blinkenden oder scrollenden Informationen, die
+      * a) automatisch gestartet werden,
+      * b) länger als fünf Sekunden dauern und
+      * (c) parallel mit anderen Inhalten angezeigt werden,
+gibt es einen Mechanismus, mit dem Benutzende sie anhalten, stoppen oder verbergen können, es sei denn, die Bewegung, das Blinken oder das Scrollen ist ein wesentlicher Teil einer Aktivität.
+   * Automatische Aktualisierung: Für alle automatisch aktualisierten Informationen, die
+      * a) automatisch gestartet und
+      * (b) parallel zu anderen Inhalten angezeigt werden,
+gibt es einen Mechanismus, mit dem Benutzende sie pausieren, stoppen oder verbergen oder die Häufigkeit der Aktualisierung steuern können, es sei denn, die automatische Aktualisierung ist ein wesentlicher Teil einer Aktivität.
 
-Beachten Sie Folgendes:
+Folgendes sollte beachtet werden:
 
 1. Die Anforderungen für flackernden oder blinkenden Inhalt finden Sie unter [Gestalten Sie Inhalte nicht auf Arten, von denen bekannt ist, dass sie zu Anfällen führen (2.3)](#seizures).
 1. Jeglicher Inhalt, der dieses Erfolgskriterium nicht erfüllt, kann die Möglichkeit eines Benutzers beeinträchtigen, die gesamte Seite zu nutzen. Daher muss jeglicher Inhalt auf einer Web-Seite (egal ob er dazu dient, andere Erfolgskriterien zu erfüllen oder nicht) dieses Erfolgskriterium erfüllen. Siehe [Konformitätsanforderung 5: Nicht-Interferenz](https://www.w3.org/TR/WCAG20/#cc5).

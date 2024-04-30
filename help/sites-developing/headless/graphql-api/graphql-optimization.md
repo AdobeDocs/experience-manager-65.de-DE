@@ -84,7 +84,7 @@ GraphQL-Abfragen und ihre JSON-Antworten können im Cache gespeichert werden, we
 
 Siehe:
 
-* [Verwenden von CDN in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
+* [Verwenden von CDN in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de#using-dispatcher-with-a-cdn)
 
 #### Festlegen von HTTP-Cache-Control-Headern {#set-http-cache-control-headers}
 

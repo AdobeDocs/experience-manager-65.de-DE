@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '1484'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Bevor Sie fortfahren, stellen Sie sicher, dass Sie sich mit Ihren Anmeldedaten b
 
 ### Konfigurieren von AEM zur Verwendung Ihrer Adobe Analytics-Datenzentren {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Adobe Analytics-[Datenzentren](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html) erfassen, verarbeiten und speichern die mit Ihrer Adobe Analytics Report Suite verbundenen Daten. Sie müssen AEM so konfigurieren, dass es das Datenzentrum nutzt, in dem Ihre Adobe Analytics-Report Suite gehostet wird. Das Datenzentrum wird in Ihrem Vertrag erwähnt. Wenden Sie sich für diese Informationen an die Admins in Ihrer Organisation.
+Adobe Analytics-[Datenzentren](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=de) erfassen, verarbeiten und speichern die mit Ihrer Adobe Analytics Report Suite verbundenen Daten. Sie müssen AEM so konfigurieren, dass es das Datenzentrum nutzt, in dem Ihre Adobe Analytics-Report Suite gehostet wird. Das Datenzentrum wird in Ihrem Vertrag erwähnt. Wenden Sie sich für diese Informationen an die Admins in Ihrer Organisation.
 
 Verwenden Sie bei Bedarf Folgendes, um zum richtigen Datenzentrum weitergeleitet zu werden: `https://api.omniture.com/`.
 

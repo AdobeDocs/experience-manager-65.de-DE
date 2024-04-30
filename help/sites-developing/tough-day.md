@@ -10,7 +10,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1825'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 97%
 
 ## Was ist Tough Day 2? {#what-is-tough-day}
 
-&quot;Tough Day 2&quot;ist eine Anwendung, mit der Sie die Grenzwerte Ihrer AEM testen können. Sie können diesen direkt mit der standardmäßigen Test-Suite ausführen oder an Ihre Testanforderungen anpassen. In [dieser Aufnahme](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=de) sehen Sie eine Präsentation der Anwendung.
+„Tough Day 2“ ist eine Anwendung, mit der Sie einen Stresstest Ihrer AEM-Instanz durchführen können. Sie können diesen direkt mit der standardmäßigen Test-Suite ausführen oder an Ihre Testanforderungen anpassen. In [dieser Aufnahme](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=de) sehen Sie eine Präsentation der Anwendung.
 
 >[!CAUTION]
 >
@@ -133,7 +133,7 @@ Die relevanten Parameter finden Sie in der folgenden Liste:
 | `--port=<Val>` | Der Port des Hosts. | 4502 |  |
 | `--user=<Val>` | Der Benutzername für die Instanz. | admin |  |
 | `--password=<Val>` | Kennwort für den angegebenen Benutzer. | admin |  |
-| `--duration=<Val>` | Die Dauer der Tests. Kann in **s** Sekunden, **m** Minuten, **h** unseres und **d** ays. | 1d |  |
+| `--duration=<Val>` | Die Dauer der Tests. Kann in Sekunden (**s**), Minuten (**m**), Stunden (**h**) und Tagen (**d**) angegeben werden. | 1d |  |
 | `--timeout=<Val>` | Gibt an, wie lange ein Test ausgeführt wird, bevor er unterbrochen und als fehlgeschlagen markiert wird. In Sekunden angegeben. | 180 |  |
 | `--suite=<Val>` | Der Wert kann eine oder eine Liste (durch Kommas getrennt) von vordefinierter Test-Suites sein. | toughday |  |
 | `--configfile=<Val>` | Die angesprochene yaml-Konfigurationsdatei. |  |  |
@@ -403,7 +403,7 @@ Tough Day 2 erstellt einen Protokollordner im selben Verzeichnis, in dem Sie To
 * **toughday.log**: enthält Meldungen zum Anwendungsstatus, Debugging-Informationen und globale Meldungen
 * **toughday_&lt;testname>.log**: Meldungen zum genannten Test
 
-Die Protokolle werden nicht überschrieben. Bei nachfolgenden Testausführungen werden Meldungen an die vorhandenen Protokolle angehängt. Die Protokolle haben mehrere Ebenen. Weitere Informationen finden Sie unter [loglevel-Parameter.](#global-parameters).
+Die Protokolle werden nicht überschrieben. Bei nachfolgenden Testausführungen werden Meldungen an die vorhandenen Protokolle angehängt. Für die Protokolle gibt es mehrere Ebenen. Weitere Informationen hierzu finden Sie unter dem Parameter [loglevel](#global-parameters).
 
 <!--
 #### Example Usage {#example-usage}

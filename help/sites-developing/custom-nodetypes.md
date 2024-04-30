@@ -1,6 +1,6 @@
 ---
 title: Benutzerdefinierte Knotentypen
-description: Adobe Experience Manager (AEM) basiert auf Sling und verwendet ein JCR-Repository mit Knotentypen, die von beiden angeboten werden, AEM bietet aber auch eine Reihe benutzerdefinierter Knotentypen
+description: Adobe Experience Manager (AEM) basiert auf Sling und verwendet ein JCR-Repository mit Knotentypen, die von beiden angeboten werden, aber AEM bietet auch eine Reihe von benutzerdefinierten Knotentypen
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -12,13 +12,13 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1848'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
 # Benutzerdefinierte Knotentypen{#custom-node-types}
 
-Da Adobe Experience Manager (AEM) auf Sling basiert und ein JCR-Repository verwendet, sind Knotentypen verfügbar, die von beiden bereitgestellt werden:
+Da Adobe Experience Manager (AEM) auf Sling basiert und ein JCR-Repository verwendet, sind von beiden bereitgestellte Knotentypen für die Verwendung verfügbar:
 
 * [JCR-Knotentypen](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling-Knotentypen](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
@@ -148,7 +148,7 @@ Definiert die standardmäßige CQ-Seite.
 
 **Beschreibung**
 
-Definiert einen Mixintyp, der Knoten als Pseudoseiten markiert. Das heißt, dass sie für die Seiten- und WCM-Bearbeitungsunterstützung angepasst werden können.
+Definiert einen Mixintyp, der Knoten als Pseudoseiten markiert. Das heißt, diese können zur Unterstützung der Seiten- und WCM-Bearbeitung angepasst werden.
 
 **Definition**
 
@@ -163,9 +163,9 @@ Definiert den Standardknoten für den Seiteninhalt mit den von WCM verwendeten M
 * `@prop jcr:title` - Titel der Seite.
 * `@prop jcr:description` - Beschreibung der Seite.
 * `@prop cq:template` - Pfad zur Vorlage, mit der die Seite erstellt wurde.
-* `@prop cq:allowedTemplates` - Liste der regulären Ausdrücke, mit denen die Pfade zur zulässigen Vorlage bestimmt werden.
-* `@prop pageTitle` - Der Titel wird im `<title>` -Tag.
-* `@prop navTitle` - In der Navigation verwendeter Titel.
+* `@prop cq:allowedTemplates` – Liste der regulären Ausdrücke, die verwendet werden, um die Pfade zur zulässigen Vorlage zu bestimmen.
+* `@prop pageTitle` – Titel, der im `<title>`-Tag angezeigt wird.
+* `@prop navTitle` – Titel, der in der Navigation verwendet wird.
 * `@prop hideInNav` - Gibt an, ob die Seite in der Navigation ausgeblendet werden soll.
 * `@prop onTime` - Zeitpunkt, zu dem die Seite gültig wird.
 * `@prop offTime` - Zeitpunkt, zu dem die Seite ungültig wird.
@@ -200,13 +200,13 @@ Definiert eine CQ-Vorlage.
 * `@node jcr:content` - Standardinhalt für neue Seiten.
 * `@node icon.png` - Eine Datei, die ein charakteristisches Symbol enthält.
 * `@node thumbnail.png` - Eine Datei, die eine charakteristische Miniaturansicht enthält.
-* `@node workflows` - Automatische Zuweisung der Workflow-Konfiguration. Die Konfiguration folgt der folgenden Struktur:
+* `@node workflows` - Automatische Zuweisung der Workflow-Konfiguration. Die Konfiguration folgt der nachstehenden Struktur:
    * `+ workflows`
       * `+ name1`
          * `- cq:path`
             * `- cq:workflowName`
-* `@prop allowedParents` - Reguläre Ausdrucksmuster zur Bestimmung der Pfade zu Vorlagen, die als übergeordnete Vorlagen zulässig sind.
-* `@prop allowedChildren` - Reguläre Ausdrucksmuster zur Bestimmung der Pfade zu Vorlagen, die als untergeordnete Vorlagen zulässig sind.
+* `@prop allowedParents` – Muster regulärer Ausdrücke, um die Pfade zu Vorlagen zu bestimmen, die als übergeordnete Vorlagen zulässig sind.
+* `@prop allowedChildren` – Muster regulärer Ausdrücke, um die Pfade zu Vorlagen zu bestimmen, die als untergeordnete Vorlagen zulässig sind.
 * `@prop ranking` - Position innerhalb der Liste der Vorlagen im Dialogfeld „Seite erstellen“.
 
 **Definition**
@@ -235,15 +235,15 @@ Definiert eine CQ-Komponente.
 * `@prop dialogPath` - Pfad zum primären Dialogfeld (Alternative zum Dialogfeld).
 * `@node design_dialog` - Dialogfeld „Design“.
 * `@prop cq:cellName` - Name der Designzellle.
-* `@prop cq:isContainer` - Gibt an, ob es sich um eine Container-Komponente handelt. Erzwingt die Verwendung der Zellnamen der untergeordneten Komponenten anstelle von Pfadnamen. Beispielsweise ist die `parsys`-Komponente eine Container-Komponente. Wenn dieser Wert nicht definiert ist, wird überprüft, ob eine `cq:childEditConfig` vorliegt.
+* `@prop cq:isContainer` – Gibt an, ob es sich um eine Container-Komponente handelt. Damit wird die Verwendung der Zellnamen der untergeordneten Komponenten anstelle von Pfadnamen erzwungen. Beispielsweise ist die `parsys`-Komponente eine Container-Komponente. Wenn dieser Wert nicht definiert ist, wird überprüft, ob eine `cq:childEditConfig` vorliegt.
 * `@prop cq:noDecoration` - Wenn der Wert auf „true“ festgelegt ist, werden keine `div`-Decoration-Tags beim Einbinden der Komponente gesetzt.
 * `@node cq:editConfig` - Die Konfiguration, die die Parameter für die Bearbeitungsleiste definiert.
 * `@node cq:childEditConfig` - Die Bearbeitungskonfiguration, die an untergeordnete Komponenten vererbt wird.
 * `@node cq:htmlTag` - Definiert zusätzliche Tag-Attribute, die dem „einschließenden“ `div`-Tag beim Einbinden der Komponente hinzugefügt werden.
 * `@node icon.png` - Eine Datei, die ein charakteristisches Symbol enthält.
 * `@node thumbnail.png` - Eine Datei, die eine charakteristische Miniaturansicht enthält.
-* `@prop allowedParents` - Reguläre Ausdrucksmuster zur Bestimmung der Pfade von Komponenten, die als übergeordnete Komponenten zulässig sind.
-* `@prop allowedChildren` - Reguläre Ausdrucksmuster zur Bestimmung der Pfade von Komponenten, die als untergeordnete Komponenten zulässig sind.
+* `@prop allowedParents` – Muster regulärer Ausdrücke, um die Pfade von Komponenten zu bestimmen, die als übergeordnete Komponenten zulässig sind.
+* `@prop allowedChildren` – Muster regulärer Ausdrücke, um die Pfade von Komponenten zu bestimmen, die als untergeordnete Komponenten zulässig sind.
 * `@node virtual` - Enthält Unterknoten, die virtuelle Komponenten widerspiegeln, welche zum Verschieben der Komponenten per Drag-and-Drop verwendet werden.
 * `@prop componentGroup` - Name der Komponentengruppe, der zum Verschieben der Komponenten per Drag-and-Drop verwendet wird.
 * `@node cq:infoProviders` - Enthält Unterknoten, von denen jeder eine Eigenschaft `className` aufweist, die auf einen `PageInfoProvider` verweisen.
@@ -317,9 +317,9 @@ Definiert die Konfiguration für „EditBar“.
 
 **Beschreibung**
 
-Konfiguriert ein Ablageziel einer Komponente. Der Name dieses Knotens wird als ID zum Ziehen und Ablegen verwendet.
+Konfiguriert ein Ablageziel einer Komponente.  Der Name dieses Knotens wird als ID für per Drag-and-Drop zu verschiebende Komponenten verwendet.
 
-* `@prop accept` - Liste der MIME-Typen, die von diesem Droptarget akzeptiert werden, z. B. `["image/*"]`
+* `@prop accept` – Liste der MIME-Typen, die von diesem Ablageziel akzeptiert werden, beispielsweise `["image/*"]`
 * `@prop groups` - Liste der Drag-and-Drop-Gruppen, die eine Quelle akzeptieren.
 * `@prop propertyName` - Name der Eigenschaft, die zum Speichern des Verweises verwendet wird.
 
@@ -335,7 +335,7 @@ Konfiguriert ein Ablageziel einer Komponente. Der Name dieses Knotens wird als I
 
 **Beschreibung**
 
-Definiert eine virtuelle CQ-Komponente. Derzeit nur für den neuen Komponenten-Drag-and-Drop-Assistenten verwendet.
+Definiert eine virtuelle CQ-Komponente.  Wird derzeit nur für den neuen Assistenten zum Verschieben von Komponenten per Drag-and-Drop verwendet.
 
 * `@prop jcr:title` - Titel dieser Komponente.
 * `@prop jcr:description` - Beschreibung dieser Komponente.
@@ -343,8 +343,8 @@ Definiert eine virtuelle CQ-Komponente. Derzeit nur für den neuen Komponenten-D
 * `@node cq:childEditConfig` - Die Bearbeitungskonfiguration, die an untergeordnete Komponenten vererbt wird.
 * `@node icon.png` - Eine Datei, die ein charakteristisches Symbol enthält.
 * `@node thumbnail.png` - Eine Datei, die eine charakteristische Miniaturansicht enthält.
-* `@prop allowedParents` - Reguläre Ausdrucksmuster zur Bestimmung der Pfade von Komponenten, die als übergeordnete Komponenten zulässig sind.
-* `@prop allowedChildren` - Reguläre Ausdrucksmuster zur Bestimmung der Pfade von Komponenten, die als untergeordnete Komponenten zulässig sind.
+* `@prop allowedParents` – Muster regulärer Ausdrücke, um den Pfad bzw. die Pfade von Komponenten zu bestimmen, die als übergeordnete Komponenten zulässig sind.
+* `@prop allowedChildren` – Muster regulärer Ausdrücke, um den Pfad bzw. die Pfade von Komponenten zu bestimmen, die als untergeordnete Komponenten zulässig sind.
 * `@prop componentGroup` - Name der Komponentengruppe, der zum Verschieben der Komponenten per Drag-and-Drop verwendet wird.
 
 **Definition**
@@ -364,7 +364,7 @@ Definiert eine virtuelle CQ-Komponente. Derzeit nur für den neuen Komponenten-D
 
 **Beschreibung**
 
-Definiert die (Client-seitigen) Listener, die bei einem Bearbeitungsereignis ausgeführt werden sollen. Die Werte müssen entweder auf eine gültige clientseitige Listener-Funktion verweisen oder einen vordefinierten Tastaturbefehl enthalten:
+Definiert die (Client-seitigen) Listener, die bei einem Bearbeitungsereignis ausgeführt werden sollen. Die Werte müssen entweder auf eine gültige Client-seitige Listener-Funktion verweisen oder eine vordefinierte Verknüpfung enthalten:
 
 * `REFRESH_PAGE`
 * `REFRESH_SELF`
@@ -428,7 +428,7 @@ Miniaturansicht zur Darstellung eines DAM-Assets
    * `mixin`
    * `+ dam:thumbnails (nt:folder)`
 
-## Versandcontainer-Liste {#delivery-container-list}
+## Bereitstellungs-Container-Liste {#delivery-container-list}
 
 ### cq:containerList {#cq-containerlist}
 
@@ -447,7 +447,7 @@ Container-Liste
 
 **Beschreibung**
 
-Der Knotentyp `cq:attributes` ist für die ContentBus-Version-Tags. Dieser Knoten verfügt nur über eine Reihe von Eigenschaften, von denen drei vordefiniert sind: &quot;created&quot;, &quot;csd&quot;und &quot;timestamp&quot;.
+Der Knotentyp `cq:attributes` ist für die ContentBus-Version-Tags. Dieser Knoten weist nur eine Reihe von Eigenschaften auf, von denen drei vordefiniert sind: „created“, „csd“ und „timestamp“.
 
 * `@prop created (long) mandatory copy` - Zeitstempel der Erstellung der Versionsinformationen, in der Regel der Zeitpunkt des Eincheckens der Vorgängerversion oder der Seitenerstellung.
 * `@prop csd (string) mandatory copy` - csd-Standardattribut, Kopie der Eigenschaft „cq:csd“ des Seitenknotens
@@ -488,9 +488,9 @@ Die Elemente in einer `cq:Cq4ContentPage` sind:
 
 Abrufkonfiguration
 
-* `@prop source (String) mandatory` - Datenquellen-URI. Erforderlich und darf nicht leer sein.
-* `@prop target (String)` - Der Zielspeicherort, an dem die aus der Datenquelle abgerufenen Daten gespeichert werden. Optional und standardmäßig auf den Knoten cq:PollConfig .
-* `@prop interval (Long)` - Das Intervall in Sekunden, in dem neue oder aktualisierte Daten aus der Datenquelle abgerufen werden. Optional und standardmäßig 30 Minuten (1800 Sekunden).
+* `@prop source (String) mandatory` – Datenquellen-URI. Dieser ist erforderlich und darf nicht leer sein.
+* `@prop target (String)` – Der Zielspeicherort, an dem die aus der Datenquelle abgerufenen Daten gespeichert werden. Dieser ist optional und standardmäßig auf den Knoten „cq:PollConfig“ festgelegt.
+* `@prop interval (Long)` – Das Intervall in Sekunden, in dem neue oder aktualisierte Daten aus der Datenquelle abgerufen werden. Dies ist optional und standardmäßig auf 30 Minuten (1800 Sekunden) festgelegt.
 * [Erstellen benutzerdefinierter Datenimportdienste für Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **Definition**
@@ -581,9 +581,9 @@ Definiert ein LiveSync-Mixin. Wenn ein Knoten in eine LiveRelationship mit einem
 
 **Beschreibung**
 
-Definiert ein LiveSyncCancelled-Mixin. Abbrechen des LiveSync-Verhaltens eines (kontrollierten) Live Copy-Knotens, der aufgrund eines seiner übergeordneten Elemente an einer LiveRelationship beteiligt sein kann.
+Definiert ein LiveSyncCancelled-Mixin. Bricht die LiveSync eines Live Copy- gesteuerten Knotens ab, der sich in einer LiveRelationship mit einem übergeordneten Knoten befindet.
 
-* `@prop cq:isCancelledForChildren` - Definiert, ob eine LiveSync abgebrochen wird, auch für untergeordnete Elemente.
+* `@prop cq:isCancelledForChildren` – Legt fest, ob eine LiveSync abgebrochen wird. Dies gilt auch für untergeordnete Knoten.
 
 **Definition**
 
@@ -751,7 +751,7 @@ Definiert eine Anwendungsberechtigungs-ACE.
    * `- path mandatory`
    * `- deny (boolean)`
 
-## Site-Importtool {#site-importer}
+## Site-Import-Tool {#site-importer}
 
 ### cq:ComponentExtractorSource {#cq-componentextractorsource}
 
@@ -817,7 +817,7 @@ Jeder Benutzer/jede öffentliche Website kann den Inhalt (im Web 2.0-Stil) mit 
 
 **Beschreibung**
 
-Fügt einen Unterkoten `cq:userContent`, der von Benutzern geändert werden kann. Jeder Benutzer verfügt über `cq:userContent/<userid>` untergeordneten Knoten, der normalerweise über das Mixin verfügt `cq:UserTaggable`.
+Fügt einen Unterkoten `cq:userContent`, der von Benutzern geändert werden kann. Jede Benutzerin bzw. jeder Benutzer hat einen eigenen Unterknoten `cq:userContent/<userid>`, der normalerweise über das Mixin `cq:UserTaggable` verfügt.
 
 **Definition**
 
@@ -1065,7 +1065,7 @@ Workflow-Daten
 
 **Beschreibung**
 
-Automatische Zuweisung der Workflow-Konfiguration. Die Konfiguration folgt der folgenden Struktur:
+Automatische Zuweisung der Workflow-Konfiguration. Die Konfiguration folgt der nachstehenden Struktur:
 * `workflows`
    * `+ name1`
       * `- cq:path`

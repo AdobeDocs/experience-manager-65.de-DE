@@ -377,7 +377,7 @@ Die Definition einer Komponente umfasst:
 
 **Vorlage** Eine Vorlage ist die Grundlage für einen bestimmten Seitentyp. Beim Erstellen einer Seite auf der Registerkarte „Websites“ müssen Benutzende eine Vorlage auswählen. Die neue Seite wird dann durch Kopieren dieser Vorlage erstellt.
 
-Eine Vorlage ist eine Hierarchie von Knoten, die dieselbe Struktur wie die zu erstellende Seite aufweist, jedoch keinen tatsächlichen Inhalt hat.
+Eine Vorlage ist eine Hierarchie von Knoten, die dieselbe Struktur aufweist wie die zu erstellende Seite, aber keine Inhalte.
 
 Sie definiert die Seitenkomponente, die zum Rendern der Seite verwendet wird, und den Standardinhalt (primären Top-Level-Inhalt). Der Inhalt definiert, wie er gerendert wird, da AEM inhaltsorientiert ist.
 

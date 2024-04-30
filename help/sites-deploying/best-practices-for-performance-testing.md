@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '1790'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ Auf dem Markt ist eine Vielzahl von Tools für Leistungstests erhältlich. Stell
 
 * **Load Runner** ist ein Enterprise-Produkt für Auslastungstests. Eine kostenlose Evaluierungsversion ist verfügbar. Weitere Informationen finden Sie unter [https://www.microfocus.com/de-de/portfolio/performance-engineering/overview](https://www.microfocus.com/de-de/portfolio/performance-engineering/overview).
 
-* Website-Belastungstests-Tools wie [Vercara](https://vercara.com/website-performance-management) Kann auch verwendet werden.
+* Website-Belastungstests-Tools wie [Vercara](https://vercara.com/website-performance-management) können ebenfalls verwendet werden.
 * Beim Testen mobiler oder responsiver Websites muss ein separater Satz von Tools verwendet werden. Diese drosseln die Netzwerkbrandbreite, um langsamere mobile Verbindungen wie 3G oder EDGE zu simulieren. Zu den gängigeren Tools gehören:
 
    * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)** mit einer benutzerfreundlichen Oberfläche und einer relativ niedrigen Ebene im Netzwerk-Stack. Es sind OS X- und iOS-Versionen verfügbar.
@@ -75,7 +75,7 @@ Die Dokumentation [Überwachung der Leistung](/help/sites-deploying/monitoring-a
 
 **Entwicklermodus in der Touch-Benutzeroberfläche**
 
-Eine der neuen Funktionen der Touch-Benutzeroberfläche von AEM 6 ist der Entwicklermodus. So wie Autoren und Autorinnen zwischen Bearbeitungs- und Vorschaumodi wechseln können, können Entwickelnde in der Autoren-Benutzeroberfläche in den Entwicklermodus wechseln. Auf diese Weise können Sie die Renderzeit für jede Komponente auf der Seite sehen und Stacktraces von Fehlern sehen. Weitere Informationen zum Entwicklermodus finden Sie in dieser [CQ Gems-Präsentation](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
+Eine der neuen Funktionen der Touch-Benutzeroberfläche von AEM 6 ist der Entwicklermodus. So wie Autoren und Autorinnen zwischen Bearbeitungs- und Vorschaumodi wechseln können, können Entwickelnde in der Autoren-Benutzeroberfläche in den Entwicklermodus wechseln. Auf diese Weise können Sie die Renderzeit für jede Komponente auf der Seite sehen und Stacktraces von Fehlern sehen. Weitere Informationen zum Entwicklermodus finden Sie in dieser [CQ Gems-Präsentation](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=de).
 
 **Verwendung von rlog.jar zum Lesen der Anfrageprotokolle**
 
@@ -152,7 +152,7 @@ Nach dem Ausführen von Leistungstests auf der Authoring-Instanz müssen alle fe
 
 * Wenn beim Bearbeiten bestimmter Seiten oder Komponenten in Authoring-Instanzen Probleme auftreten, sehen Sie sich die fragliche Seite mithilfe des Entwicklermodus der Touch-optimierten Benutzeroberfläche an. Dadurch erhalten Sie eine Aufschlüsselung der einzelnen Inhaltsbereiche auf der Seite und ihrer Ladezeiten.
 * Minimieren Sie alle JS- und CSS-Dateien auf der Site. Siehe diesen [Blogpost](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
-* Entfernen Sie eingebettete CSS- und JS-Elemente aus den Komponenten. Sie sollten in den Client-seitigen Bibliotheken enthalten und minimiert sein, um die Anzahl der zum Rendern der Seite erforderlichen Anfragen zu minimieren.
+* Entfernen Sie eingebettete CSS- und JS-Elemente aus den Komponenten. Diese sollten in den Client-seitigen Bibliotheken enthalten und minimiert sein, um die Anzahl der zum Rendern der Seite benötigten Anfragen zu minimieren.
 * Verwenden Sie Browser-Tools wie den Chrome-Tab „Netzwerk“, um die Server-Anfragen zu überprüfen und festzustellen, welche am längsten dauern.
 
 Nach Identifizierung von Problembereichen kann der Anwendungs-Code im Hinblick auf Leistungsoptimierungen untersucht werden. Sollten AEM-Standardfunktionen nicht ordnungsgemäß verwendet werden können, wenden Sie sich an den Adobe-Support, um Unterstützung zu erhalten.

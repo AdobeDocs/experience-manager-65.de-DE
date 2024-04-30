@@ -14,7 +14,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '3722'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -127,7 +127,7 @@ Die **We.Retail Mobile-Demo-Website** verwendet die folgenden Mobile-Komponenten
 
 #### Erstellen einer Mobile-Komponente {#creating-a-mobile-component}
 
-Mit dem mobilen Framework AEM können Sie Komponenten entwickeln, die für das Gerät, das die Anforderung ausgibt, empfindlich sind. Die folgenden Code-Beispiele zeigen, wie Sie die AEM-Mobile-API in einer Komponenten-jsp verwenden und insbesondere wie Sie:
+Das AEM-Mobile-Framework ermöglicht die Entwicklung von Komponenten, die auf das Gerät, das die Anfrage stellt, abgestimmt sind. Die folgenden Code-Beispiele zeigen, wie Sie die AEM-Mobile-API in einer Komponenten-jsp verwenden und insbesondere wie Sie:
 
 * das Gerät aus der Anfrage abrufen:
   `Device device = slingRequest.adaptTo(Device.class);`
@@ -383,7 +383,7 @@ Wenn der Wert der Eigenschaft `cq:variantDomain` eines `cq:siteVariant`-Knotens 
 
 ### Definieren einer gerätegruppenspezifischen URL {#defining-a-device-group-specific-url}
 
-Wenn Sie keine alternativen Links verwenden möchten, können Sie für jede `DeviceGroup`. Adobe empfiehlt, eine eigene Client-Bibliothek zu erstellen, die die Client-Bibliothek `browsermap.standard` einbettet, aber die Gerätegruppen neu definiert.
+Wenn Sie keine alternativen Links verwenden möchten, können Sie für jede `DeviceGroup` eine globale URL konfigurieren. Adobe empfiehlt, eine eigene Client-Bibliothek zu erstellen, die die Client-Bibliothek `browsermap.standard` einbettet, aber die Gerätegruppen neu definiert.
 
 BrowserMap ist so konzipiert, dass Gerätegruppendefinitionen überschrieben werden können, indem eine neue Gerätegruppe mit demselben Namen für das `BrowserMap`-Objekt aus Ihrer angepassten Client-Bibliothek erstellt und hinzugefügt wird.
 
@@ -501,7 +501,7 @@ Nachdem Sie Ihre benutzerdefinierte `BrowserMap`-Client-Bibliothek erstellt habe
 
 ### Ausschließen von BrowserMap von bestimmten Seiten {#excluding-browsermap-from-certain-pages}
 
-Wenn Sie die BrowserMap-Bibliothek aus einigen Seiten ausschließen möchten, für die Sie keine Client-Erkennung benötigen, können Sie ein Anforderungsattribut hinzufügen:
+Wenn Sie die BrowserMap-Bibliothek von einigen Ihrer Seiten ausschließen möchten, auf denen Sie keine Client-Erkennung benötigen, können Sie ein Anfrageattribut hinzufügen:
 
 ```xml
 <%

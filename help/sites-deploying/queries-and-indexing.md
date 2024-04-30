@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '3034'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -224,7 +224,7 @@ Sehen wir uns folgende Beispielabfrage an:
 select * from [nt:base] where [alias] = '/admin'
 ```
 
-Um einen Lucene-Eigenschaftsindex für die obige Abfrage zu definieren, können Sie die folgende Definition hinzufügen, indem Sie einen Knoten unter erstellen. **`oak:index`:**
+Um einen Lucene-Eigenschaftenindex für die obige Abfrage zu definieren, können Sie folgende Definition hinzufügen, indem Sie unter **`oak:index`einen Knoten erstellen:**
 
 * **Name:** `LucenePropertyIndex`
 * **Typ:** `oak:QueryIndexDefinition`

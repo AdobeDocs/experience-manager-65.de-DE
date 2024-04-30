@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '790'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -66,7 +66,7 @@ Sie erstellen eine **adaptive Vorlage** und wenden das Design auf die Vorlage an
 
    **Weniger Variablendateien**: Dies sind die Dateien, in denen Sie die Variablen definieren oder überschreiben, die beim Definieren von CSS-Stilen verwendet werden.
 
-   Adaptive Formulare stellen native Variablen bereit, die in den folgenden `.less` -Dateien:
+   Adaptive Formulare stellen vorkonfigurierte Variablen bereit, die in den folgenden `.less`-Dateien definiert sind:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
@@ -108,7 +108,7 @@ Sie erstellen eine **adaptive Vorlage** und wenden das Design auf die Vorlage an
 
    **Less mixin-Dateien:** Sie können die Funktionen definieren, die Variablen als Argumente akzeptieren. Die Ausgabe dieser Funktionen sind die resultierenden Stile. Verwenden Sie diese Mixins in verschiedenen Stilen, um Wiederholungen von CSS-Stilen zu vermeiden.
 
-   Adaptive Formulare stellen vordefinierte Mixins bereit, die definiert wurden in:
+   Adaptive Formulare stellen auch vorkonfigurierte Mixins bereit, die in der folgenden Datei definiert sind:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/adaptiveforms-mixins.less`
 

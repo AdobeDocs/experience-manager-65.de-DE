@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1803'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -97,7 +97,7 @@ Die lokale Entwicklungsumgebung umfasst drei Hauptbereiche:
 
 Nachdem die lokale Entwicklungsumgebung eingerichtet wurde, können Sie die Bereitstellung von Inhalten für die React-App simulieren, indem Sie lokal einen statischen Knoten-Server bereitstellen.
 
-Weitere Informationen zum Einrichten einer lokalen Entwicklungsumgebung und allen Abhängigkeiten, die für die Inhaltsvorschau erforderlich sind, finden Sie in der [Dokumentation zur Produktionsbereitstellung](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html).
+Weitere Informationen zum Einrichten einer lokalen Entwicklungsumgebung und allen Abhängigkeiten, die für die Inhaltsvorschau erforderlich sind, finden Sie in der [Dokumentation zur Produktionsbereitstellung](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html?lang=de).
 
 ## Vorbereiten Ihres AEM Headless-Programms für die Live-Schaltung {#prepare-your-aem-headless-application-for-golive}
 
@@ -144,7 +144,7 @@ Die Bereitstellung in der Produktion kann davon abhängen, ob Sie über eine *tr
 
 ## Bereitstellen in der Produktion mit Maven {#deploy-to-production-maven}
 
-Für eine *traditionelle* Implementierung (außer AMS) mithilfe von Maven können Sie sich das [WKND-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build) ansehen, um einen Überblick zu bekommen.
+Für eine *traditionelle* Implementierung (außer AMS) mithilfe von Maven können Sie sich das [WKND-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=de#build) ansehen, um einen Überblick zu bekommen.
 
 ## Bereitstellen in der Produktion mit Cloud Manager {#deploy-to-production-cloud-manager}
 

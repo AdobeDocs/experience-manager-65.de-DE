@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2999'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -209,7 +209,7 @@ Inhaltsfragmentnamen müssen für Inhaltsautoren beschreibend sein. AEM behandel
 
 Weitere Informationen zu AEM-Seitennamenkonventionen finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources).
 
-##### Inhaltsverschachtelung nicht überschreiben {#content-nesting}
+##### Verschachtelung von Inhalten nicht überstrapazieren {#content-nesting}
 
 [Inhaltsfragmente](#content-fragments) werden in AEM verwendet, um Headless-Inhalte zu erstellen. AEM unterstützt bis zu zehn Verschachtelungsebenen von Inhalten für Inhaltsfragmente. Beachten Sie jedoch, dass AEM alle im übergeordneten Inhaltsfragment definierten Verweise iterativ auflösen und dann überprüfen muss, ob in allen gleichrangigen Elementen Verweise auf untergeordnete Elemente vorhanden sind. Diese Vorgänge können sich schnell summieren und zu einem Leistungsproblem werden.
 

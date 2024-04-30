@@ -13,7 +13,7 @@ role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '3360'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -454,7 +454,7 @@ Um Komponenten zur Landingpage hinzuzufügen, ziehen Sie Komponenten per Drag-an
 
 Zum Löschen einer Landingpage gehen Sie wie beim Löschen einer normalen AEM-Seite vor.
 
-Die einzige Ausnahme besteht darin, dass beim Löschen einer Desktop-Landingpage auch die entsprechende mobile Landingpage gelöscht wird (sofern vorhanden), jedoch nicht umgekehrt.
+Die einzige Ausnahme besteht darin, dass beim Löschen einer Desktop-Landingpage auch die entsprechende mobile Landingpage (sofern vorhanden) gelöscht wird, nicht aber umgekehrt.
 
 ### Veröffentlichen einer Landingpage {#publishing-a-landing-page}
 

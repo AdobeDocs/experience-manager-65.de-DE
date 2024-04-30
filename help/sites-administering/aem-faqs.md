@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '936'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -84,11 +84,11 @@ Lesen Sie die Informationen unter [Verstehen der Gründe für die Aktualisierung
 
 Wenn die Person, die die Filmdateien hochlädt, keine Löschberechtigungen unter dem Asset-Knoten hat, schlägt das Löschen der Chunk-Knoten fehl und der Upload wird neu gestartet.
 
-#### Welche Standardeinstellungen gelten für native Konfigurationen beim Erstellen der Sprachkopie? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
+#### Was sind die Standardeinstellungen für vorkonfigurierte Konfigurationen beim Erstellen von Sprachkopien? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
 Wenn Sie über die Touch-Benutzeroberfläche eine Sprachkopie erstellen (**Verweise** > **Sprachkopie aktualisieren**), wird unter der neuen Sprache ein neuer DAM-Ordner erstellt und von dort aus wird auf Assets verwiesen.
 
-Dies ist die Standardeinstellung für vordefinierte Konfigurationen. Sie können in Übersetzungskonfigurationen für die Option **Seiten-Assets übersetzen** die Einstellung **Nicht übersetzen** festlegen.
+Dies ist die Standardeinstellung für vorkonfigurierte Konfigurationen. Sie können in Übersetzungskonfigurationen für die Option **Seiten-Assets übersetzen** die Einstellung **Nicht übersetzen** festlegen.
 Klicken Sie dazu in AEM 6.4 auf **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services**.
 
 #### Wie lässt sich eine AEM-Komponente deaktivieren, die zu einem exponentiellen Wachstum des AEM-Segmentspeichers führt (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}

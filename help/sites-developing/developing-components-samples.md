@@ -13,7 +13,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Den Code dieser Seite finden Sie auf GitHub.
 
 >[!NOTE]
 >
->Dieses Code-Beispiel bezieht sich auf die AEM Gems-Sitzung zum Thema [Anpassen von Dialogfeldern](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
+>Dieses Code-Beispiel bezieht sich auf die AEM Gems-Sitzung zum Thema [Anpassen von Dialogfeldern](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=de).
 
 ## Verwandte Ressourcen {#related-resources}
 

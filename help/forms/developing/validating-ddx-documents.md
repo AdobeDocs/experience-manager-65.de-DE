@@ -71,7 +71,7 @@ Wenn Sie ein DDX-Dokument validieren möchten, müssen Sie bestimmte Laufzeitopt
 
 Nachdem Sie den Assembler-Service-Client erstellt, auf das DDX-Dokument verwiesen und Laufzeitoptionen festgelegt haben, können Sie den `invokeDDX`-Vorgang zum Überprüfen des DDX-Dokuments aufrufen. Bei der Validierung des DDX-Dokuments können Sie `null` als map-Parameter übergeben (dieser Parameter speichert in der Regel PDF-Dokumente, die der Assembler benötigt, um die im DDX-Dokument angegebenen Vorgänge auszuführen).
 
-Wenn die Validierung fehlschlägt, wird eine Ausnahme ausgelöst und die Protokolldatei enthält Details, die erklären, warum das DDX-Dokument ungültig ist. Diese Details können Sie von der `OperationException`-Instanz abgerufen werden. Nach der grundlegenden XML-Analyse und Schemaprüfung wird die Validierung anhand der DDX-Spezifikation durchgeführt. Alle Fehler, die im DDX-Dokument enthalten sind, werden im Protokoll angegeben.
+Wenn die Validierung fehlschlägt, wird eine Ausnahme ausgelöst und die Protokolldatei enthält Details, die erklären, warum das DDX-Dokument ungültig ist. Diese Details können Sie von der `OperationException`-Instanz abgerufen werden. Nach der grundlegenden XML-Analyse und Schemaprüfung wird die Validierung anhand der DDX-Spezifikation durchgeführt. Alle im DDX-Dokument enthaltenen Fehler werden im Protokoll angegeben.
 
 **Die Prüfergebnisse in einer Protokolldatei speichern**
 

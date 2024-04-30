@@ -11,7 +11,7 @@ role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '762'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -99,7 +99,7 @@ Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
  </tbody>
 </table>
 
-eCommerce übernimmt zusammen mit dem Produktdatenmanagement (PIM) die Aktivitäten einer Website, die sich auf den Verkauf von Produkten über einen Online-Store konzentriert:
+Zusammen mit dem Produktinformations-Management (PIM) verarbeitet eCommerce die Aktivitäten auf einer Website mit Schwerpunkt auf dem Verkauf von Produkten über einen Onlineshop:
 
 * Erstellung, Lebensdauer und Veralterung eines Produkts
 * Preisverwaltung

@@ -13,7 +13,7 @@ role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Damit die Seite erstellt werden kann, muss eine Client-Bibliothek mit dem Namen 
 * Wenn die Vorlage bearbeitbar ist, fügen Sie der Seitenrichtlinie die Kategorie der Client-Bibliothek hinzu.
 * Fügen Sie die Client-Bibliothekskomponente mit der `customfooterlibs.html` der Seitenkomponente hinzu.
 
-Vergessen Sie nicht, die Aufnahme der `cq.authoring.pagemodel.messaging` -Kategorie in den Kontext des Seiteneditors ein.
+Vergessen Sie nicht, die Einbeziehung der Kategorie `cq.authoring.pagemodel.messaging` auf den Kontext des Seiteneditors zu beschränken.
 
 ## Kommunikationsdatentyp {#communication-data-type}
 

@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '3441'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -110,7 +110,7 @@ Im folgenden Abschnitt wird beschrieben, wie Sie Ihre HTML-Datei so bearbeiten, 
 >
 >HTML-Markup zum Konvertieren von Teilen der Einstiegsseiten in AEM-Komponenten verfügt sowohl über eine lange als auch über eine kurze Tag-Deklarierung. Beide werden für jede Komponente beschrieben.
 
-### Beschränkungen {#limitations}
+### Einschränkungen {#limitations}
 
 Beachten Sie vor dem Import die folgenden Einschränkungen:
 
@@ -566,7 +566,7 @@ Nachdem die Landingpage importiert wurde, werden die Dateien (Bilder, CSS, JS us
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
-Angenommen, die Landingpage wird im Rahmen der Kampagne erstellt. `We.Retail` und der Name der Landingpage lautet **myBlankLandingPage** der Speicherort, an dem die ZIP-Dateien gespeichert werden, lautet wie folgt:
+Angenommen, die Landingpage wird unter der Kampagne `We.Retail` erstellt und der Name der Landingpage lautet **myBlankLandingPage**. In diesem Fall werden die ZIP-Dateien unter folgendem Pfad gespeichert:
 
 `/etc/designs/default/canvas/content/campaigns/geometrixx/myBlankLandingPage`
 

@@ -12,7 +12,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ Außerdem sind die Tastaturbefehle für alle Gebietsschemata und Tastatur-Layout
 
 ## Deaktivieren von Tastaturbefehlen {#deactivating-keyboard-shortcuts}
 
-AEM bietet Tastaturbefehle für einige der häufig verwendeten Funktionen (Bearbeiten, Eigenschaften, Kopieren/Einfügen, Anzeigen verschiedener Menüs in der Seitenleiste usw.).
+AEM bietet Tastaturbefehle für einige häufig verwendete Funktionen (Bearbeiten, Eigenschaften, Kopieren/Einfügen, Anzeigen verschiedener Menüs in der Seitenleiste usw.).
 
 Für Benutzerinnen oder Benutzer, die keine Tastaturbefehle verwenden oder bestimmte Barrierefreiheitsanforderungen haben, können alle Tastaturbefehle deaktiviert werden.
 

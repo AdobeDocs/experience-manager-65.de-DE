@@ -12,13 +12,13 @@ role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # AEM Brackets-Erweiterung{#aem-brackets-extension}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Die AEM Brackets-Erweiterung bietet einen reibungslosen Workflow für die Bearbeitung von AEM-Komponenten und Client-Bibliotheken und nutzt den [Brackets](https://brackets.io/)-Code-Editor, um auf Photoshop-Dateien und -Ebenen zuzugreifen. Die durch die Erweiterung gebotene einfache Synchronisation (kein Maven oder File Vault erforderlich) erhöht die Effizienz der Entwickler und hilft auch Frontend-Entwicklern mit begrenztem AEM-Wissen, an Projekten teilzunehmen. Diese Erweiterung bietet auch Unterstützung für die [HTML Template Language (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de), die JSP die Komplexität nimmt, um die Komponentenentwicklung einfacher und sicherer zu machen.
 
@@ -72,11 +72,11 @@ Das Projekt muss mindestens Folgendes enthalten:
 
 1. eine Datei `filter.xml` (z. B. `myproject/META-INF/vault/filter.xml`); für weitere Informationen zur Struktur der Datei `filter.xml` siehe [Workspace-Filter-Definition](https://jackrabbit.apache.org/filevault/filter.html)
 
-Im Menü **Datei** von Brackets wählen Sie **Ordner öffnen...** und wählen Sie entweder den Ordner `jcr_root` oder den übergeordneten Projektordner.
+Wählen Sie im Menü **Datei** von Brackets **Ordner öffnen…** und wählen Sie entweder den Ordner `jcr_root` oder den übergeordneten Projektordner.
 
 >[!NOTE]
 >
->Wenn Sie kein eigenes Projekt mit einem Inhaltspaket haben, können Sie die [HTL TodoMVC-Beispiel](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). Klicken Sie auf GitHub auf **Zip-Datei herunterladen**, extrahieren Sie die Dateien lokal und öffnen Sie wie oben beschrieben den Ordner `jcr_root` in Brackets. Führen Sie dann die folgenden Schritte aus, um die **Projekteinstellungen** einzurichten, und laden Sie schließlich das gesamte Paket in Ihre AEM-Entwicklungsinstanz hoch, indem Sie **das Content-Package exportieren**, wie weiter unten im Abschnitt „Vollständige Content-Package-Synchronisierung“ beschrieben.
+>Wenn Sie kein eigenes Projekt mit einem content-package haben, können Sie das [HTL TodoMVC-Beispiel](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc) ausprobieren. Klicken Sie auf GitHub auf **Zip-Datei herunterladen**, extrahieren Sie die Dateien lokal und öffnen Sie wie oben beschrieben den Ordner `jcr_root` in Brackets. Führen Sie dann die folgenden Schritte aus, um die **Projekteinstellungen** einzurichten, und laden Sie schließlich das gesamte Paket in Ihre AEM-Entwicklungsinstanz hoch, indem Sie **das Content-Package exportieren**, wie weiter unten im Abschnitt „Vollständige Content-Package-Synchronisierung“ beschrieben.
 >
 >Nach diesen Schritten sollten Sie in der Lage sein, auf die URL `/content/todo.html` in Ihrer AEM-Entwicklungsinstanz zuzugreifen, und Sie können Änderungen am Code in Brackets vornehmen und sehen, wie nach einer Aktualisierung im Webbrowser die Änderungen sofort mit dem AEM-Server synchronisiert wurden.
 
@@ -86,10 +86,10 @@ Um Ihren Inhalt mit einer AEM-Entwicklungsinstanz zu synchronisieren, müssen Si
 
 ![chlimage_1-55](assets/chlimage_1-55a.png)
 
-In den Projekteinstellungen können Sie Folgendes definieren:
+Über die Projekteinstellungen können Sie Folgendes definieren:
 
 1. Server-URL (z. B. `http://localhost:4502`)
-1. Ob Server ohne gültiges HTTPS-Zertifikat toleriert werden sollen (deaktivieren Sie diese Option, falls nicht erforderlich)
+1. Ob Server toleriert werden sollen, die kein gültiges HTTPS-Zertifikat haben (Option deaktiviert lassen, sofern nicht erforderlich)
 1. Benutzername, der für die Synchronisierung von Inhalten verwendet wird (z. B. `admin`)
 1. Benutzerkennwort (z. B. `admin`)
 
@@ -113,7 +113,7 @@ Dadurch werden nur Änderungen von Brackets mit der AEM-Instanz synchronisiert, 
 
 ### Vollständige Content-Package-Synchronisierung {#full-content-package-synchronization}
 
-Im **AEM** Menü, die **Inhaltspaket exportieren** oder **Inhaltspaket importieren** können Sie das gesamte Projekt mit dem Server synchronisieren.
+Im Menü **AEM** können Sie mit den Optionen **Content-Package exportieren** oder **Content-Package importieren** das gesamte Projekt mit dem Server synchronisieren.
 
 ![chlimage_1-57](assets/chlimage_1-57a.png)
 

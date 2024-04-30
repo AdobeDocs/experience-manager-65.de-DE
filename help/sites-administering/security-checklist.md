@@ -13,7 +13,7 @@ role: Admin,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2959'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -110,11 +110,11 @@ Adobe empfiehlt, benutzerdefinierte Fehler-Handler-Seiten festzulegen, insbesond
 
 >[!NOTE]
 >
->Weitere Details finden Sie im Artikel [Erstellen von benutzerdefinierten Skripten oder Fehler-Handlern](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html).
+>Weitere Details finden Sie im Artikel [Erstellen von benutzerdefinierten Skripten oder Fehler-Handlern](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=de).
 
 ### Vollständige Dispatcher-Sicherheits-Checkliste {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher ist ein wichtiger Teil Ihrer Infrastruktur. Adobe empfiehlt dringend, dass Sie die [Dispatcher-Sicherheitscheckliste](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) durchgehen.
+AEM Dispatcher ist ein wichtiger Teil Ihrer Infrastruktur. Adobe empfiehlt dringend, dass Sie die [Dispatcher-Sicherheitscheckliste](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=de) durchgehen.
 
 >[!CAUTION]
 >

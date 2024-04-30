@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '2093'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -155,7 +155,7 @@ Weitere Informationen finden Sie unter [Ressourcenzuordnung](/help/sites-deployi
 Replikationsagenten sind als Mechanismus für folgende Vorgänge von zentraler Bedeutung für AEM:
 
 * [Veröffentlichen (Aktivieren)](/help/sites-authoring/publishing-pages.md) von Inhalten von einer Autoren- in einer Veröffentlichungsumgebung
-* explizites Leeren von Inhalten aus dem Dispatcher-Cache
+* expliziten Leeren von Inhalten aus dem Dispatcher-Cache.
 * Zurückgeben von Benutzereingaben (z. B. Formulareingaben) aus der Veröffentlichungsumgebung an die Autorenumgebung (unter Kontrolle der Autorenumgebung).
 
 Weitere Informationen finden Sie unter [Replikation](/help/sites-deploying/replication.md).
@@ -190,7 +190,7 @@ Mit der Veröffentlichung der AEM-Dokumentendienste und AEM-Dokumentsicherheit h
 
 [Mit der Abladung werden Verarbeitungsaufgaben auf die Experience Manager-Instanzen in einer Topologie verteilt. ](/help/sites-deploying/offloading.md) Mit der Abladung können Sie bestimmte Experience Manager-Instanzen zur Durchführung bestimmter Verarbeitungsarten verwenden. Durch eine spezielle Verarbeitung können Sie die Nutzung der verfügbaren Server-Ressourcen maximieren.
 
-Topologien sind lose gekoppelte Experience Manager-Cluster, die an der Abladung beteiligt sind. Ein Cluster besteht aus einer oder mehreren Experience Manager-Server-Instanzen (eine einzelne Instanz gilt als Cluster).
+Topologien sind lose verknüpfte Experience Manager-Cluster, die an der Abladung beteiligt sind. Ein Cluster besteht aus einer oder mehreren Experience Manager-Server-Instanzen (eine einzelne Instanz gilt als Cluster).
 
 Weitere Informationen zum Anzeigen oder Ändern der Topologiemitgliedschaft finden Sie unter [Verwalten von Topologien](/help/sites-deploying/offloading.md#administering-topologies).
 

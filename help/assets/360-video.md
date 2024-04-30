@@ -1,6 +1,6 @@
 ---
 title: 360-Grad-/VR-Video
-description: Erfahren Sie, wie Sie in Dynamic Media 360- und VR-Videos (Virtual Reality) verwenden.
+description: Erfahren Sie mehr über die Arbeit mit und die Verwendung von 360-Grad- und Virtual Reality(VR)-Videos in Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: beef1f49b7563d824357043f4ed78fdaf70015cd
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 

@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '1754'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -120,7 +120,7 @@ In der folgenden Tabelle sind die standardmäßigen CQ-Variablen beschrieben, di
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
-   <td>Enthält Informationen zu dem Segment, das beispielsweise angezeigt wurde: <code>2:O:4-8</code> </td>
+   <td>Enthält Informationen zum angezeigten Segment, z. B. <code>2:O:4-8</code> </td>
   </tr>
  </tbody>
 </table>

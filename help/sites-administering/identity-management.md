@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 315171dca4501718a34fd33f937334f7e7958963
 workflow-type: tm+mt
 source-wordcount: '1249'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -150,9 +150,9 @@ Dazu gehört das Definieren einer entsprechenden Eigenschaft im Benutzerprofil a
 
 * für den Benutzer sichtbar und zugänglich ist
 * zwei Status für jede Eigenschaft definiert
-* Hiermit können Sie zwischen den beiden definierten Status wechseln
+* das Umschalten zwischen den beiden definierten Status ermöglicht
 
-Dies geschieht mithilfe von:
+Dies geschieht mithilfe:
 
 * [Statusanbieter](#state-providers)
 

@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '2635'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -88,17 +88,17 @@ Wiederverwendung von Code: Unsere OSGi-basierte Produktarchitektur und die Philo
 
 Lose Kopplung: Wir bevorzugen lose gekoppelte Interaktionen gegenüber engen Abhängigkeiten und „unerwünschter Intimität“. Die lose Kopplung ermöglicht auch mehr Wiederverwendung von Code.
 
-### Demo nicht unterbrechen {#don-t-break-the-demo}
+### Zerstören Sie die Demo nicht {#don-t-break-the-demo}
 
 Machen Sie sich mit Demo-Skripten und Produktfunktionen vertraut, die am häufigsten in Demos angezeigt werden. Verstehen Sie, dass nichts, was Sie tun, jemals eine „Demo-Skript“ -Funktion zerstören sollte. Das Kernprodukt sollte immer demofähig sein, auch während der Entwicklung.
 
 ### Design für Zuverlässigkeit {#design-for-reliability}
 
-Wir bemühen uns, Funktionen auf Fail-Soft-Weise zu entwerfen und zu kodieren, sodass (z. B.) ein Problem mit einem einzelnen DOM-Element nicht dazu führt, dass eine ganze Seite nicht gerendert wird. Mit anderen Worten: Machen Sie Dinge, die tödlich sein sollten, tödlich. Machen Sie alles andere überlebensfähig.  Machen Sie das Produkt „nachsichtig“.
+Wir bemühen uns, Funktionen im Hinblick auf Fail-Soft zu entwerfen und zu kodieren, sodass (zum Beispiel) ein Problem mit einem einzelnen DOM-Element nicht dazu führt, dass eine ganze Seite nicht gerendert wird. Mit anderen Worten: Machen Sie Dinge, die tödlich sein sollten, tödlich. Machen Sie alles andere überlebensfähig.  Machen Sie das Produkt „nachsichtig“.
 
 ### Abnormal ist das neue Normal {#abnormal-is-the-new-normal}
 
-Abhängig von den Shutdown-Hooks sollten Sie beim Start eine Bereinigung durchführen. Abnormale Beendigung ist normale Beendigung.
+Verlassen Sie sich nicht auf Shutdown-Hooks, sondern sorgen Sie für eine Bereinigung beim Start. Abnormale Beendigung ist normale Beendigung.
 
 `shutdown == kill -9 == power outage`
 

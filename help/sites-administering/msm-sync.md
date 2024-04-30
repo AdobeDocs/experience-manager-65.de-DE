@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '2672'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ In der folgenden Tabelle sind die Rollout-Konfigurationen aufgeführt, die mit A
   </tr>
   <tr>
    <td>Standard-Rollout-Konfiguration</td>
-   <td>Standard-Rollout-Konfiguration, mit der Sie den Rollout-Prozess für den Rollout-Trigger starten und Aktionen ausführen können: Erstellen, Aktualisieren, Löschen von Inhalten und Sortieren von untergeordneten Knoten.</td>
+   <td>Standard-Rollout-Konfiguration, die den Start des Rollout-Prozesses beim Auslöser „Bei Rollout“ ermöglicht und Aktionen ausführt: Erstellen, Aktualisieren, Löschen von Inhalten und Sortieren untergeordneter Knoten.</td>
    <td>Bei Rollout</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> productUpdate<br /> orderChildren</td>
   </tr>
@@ -110,7 +110,7 @@ In der folgenden Tabelle sind die Rollout-Konfigurationen aufgeführt, die mit A
   </tr>
   <tr>
    <td>DPS-Rollout-Konfiguration für Veröffentlichungen</td>
-   <td>Rollout-Konfiguration für DPS-Veröffentlichung , mit der Sie den Rollout-Prozess für den Rollout-Trigger starten und gleichzeitig die Bindungseigenschaften des FolioProducer beim ersten Rollout ausschließen können</td>
+   <td>DPS-Rollout-Konfiguration, die den Start eines Rollout-Prozesses beim Auslöser „Bei Rollout“ ermöglicht, während FolioProducer-Bindungseigenschaften beim anfänglichen Rollout ausgeschlossen werden</td>
    <td>Bei Rollout</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> orderChildren<br /> dpsMetadataFilter</td>
   </tr>

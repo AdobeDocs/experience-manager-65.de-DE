@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '821'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Für die AEM-CIF-Kernkomponenten wird das Caching auf Komponentenbasis konfiguri
 
 ### Konfiguration
 
-Nach der Konfiguration für eine bestimmte Komponente speichert der Cache die von den einzelnen Cache-Konfigurationseinträgen definierten GraphQL-Abfragen und -Antworten zwischen. Die Größe des Caches und die Caching-Dauer jedes Eintrags sind auf Projektbasis festzulegen, z. B. je nachdem, wie oft sich die Katalogdaten ändern können oder wie wichtig es ist, dass eine Komponente immer die neuestmöglichen Daten anzeigt. Beachten Sie, dass es keine Cache-Invalidierung gibt. Gehen Sie daher beim Festlegen der Cache-Dauer vorsichtig vor.
+Nach der Konfiguration für eine bestimmte Komponente speichert der Cache die von den einzelnen Cache-Konfigurationseinträgen definierten GraphQL-Abfragen und -Antworten zwischen. Die Größe des Caches und die Caching-Dauer jedes Eintrags sind auf Projektbasis festzulegen, z. B. je nachdem, wie oft sich die Katalogdaten ändern können oder wie wichtig es ist, dass eine Komponente immer die neuestmöglichen Daten anzeigt. Beachten Sie, dass der Cache nicht invalidiert wird. Gehen Sie daher beim Festlegen der Caching-Dauer umsichtig vor.
 
 Beim Konfigurieren des Cachings für Komponenten muss der Cache-Name dem Namen der **Proxy-Komponenten** entsprechen, die Sie in Ihrem Projekt definieren.
 
@@ -46,7 +46,7 @@ venia/components/structure/navigation:true:10:600
 
 wenn die Verwendung der [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia) erwogen wird. Beachten Sie, dass der Komponenten-Proxy-Namen `venia/components/structure/navigation` und **nicht** der Name der CIF-Navigationskomponente (`core/cif/components/structure/navigation/v1/navigation`) verwendet wird.
 
-Das Caching für andere Komponenten sollte auf Projektbasis definiert werden, üblicherweise in Abstimmung mit dem auf Dispatcher-Ebene konfigurierten Cachings. Beachten Sie, dass diese Caches nicht aktiv invalidiert werden. Daher sollte die Aufbewahrungsfrist für die Zwischenspeicherung sorgfältig festgelegt werden. Es gibt keine &quot;Einheitsgröße für alle&quot;-Werte, die mit allen möglichen Projekten und Anwendungsfällen übereinstimmen würden. Stellen Sie sicher, dass Sie eine Caching-Strategie auf Projektebene definieren, die den Anforderungen Ihres Projekts am besten entspricht.
+Das Caching für andere Komponenten sollte auf Projektbasis definiert werden, üblicherweise in Abstimmung mit dem auf Dispatcher-Ebene konfigurierten Cachings. Denken Sie daran, dass diese Caches nicht invalidiert werden. Daher sollte die Caching-Dauer mit Umsicht festgelegt werden. Es gibt keine „Universalwerte“, die sich für alle Projekte und Anwendungsfälle eignen. Stellen Sie sicher, dass Sie eine Caching-Strategie auf Projektebene definieren, die den Anforderungen Ihres Projekts am besten entspricht.
 
 ## Dispatcher-Caching {#dispatcher}
 

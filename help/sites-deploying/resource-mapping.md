@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ Neue Zuordnungsdefinitionen werden im Repository erstellt.
 
 >[!NOTE]
 >
->Es stehen viele Ressourcen zur Verfügung, die die Definition regulärer Ausdrücke erläutern. Beispiel: [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>Es steht eine Vielzahl von Ressourcen zur Verfügung, die das Definieren regulärer Ausdrücke erläutern, z. B. [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ### Erstellen von Zuordnungsdefinitionen in AEM {#creating-mapping-definitions-in-aem}
 

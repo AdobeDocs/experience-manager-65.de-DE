@@ -13,7 +13,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '629'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -99,7 +99,7 @@ Beachten Sie bei der Migration die folgenden wichtigen Unterschiede zwischen der
  </tbody>
 </table>
 
-Das heißt, dass die Migration eines Bereichs Ihrer Benutzeroberfläche von der klassischen Benutzeroberfläche zur Touch-Benutzeroberfläche bedeutet, dass ein *ExtJS-Widget* zu *Sling-Komponente*. Um dies zu vereinfachen, basiert die Touch-optimierte Benutzeroberfläche auf dem Granite-UI-Framework, das bereits einige Sling-Komponenten für die Benutzeroberfläche bereitstellt (als Granite-UI-Komponenten bezeichnet).
+Das heißt, dass die Migration eines Bereichs Ihrer Benutzeroberfläche von der klassischen Benutzeroberfläche zur Touch-optimierten Benutzeroberfläche die Portierung eines *ExtJS-Widgets* zu einer *Sling-Komponente* bedeutet. Um dies zu vereinfachen, basiert die Touch-optimierte Benutzeroberfläche auf dem Granite-UI-Framework, das bereits einige Sling-Komponenten für die Benutzeroberfläche bereitstellt (als Granite-UI-Komponenten bezeichnet).
 
 Bevor Sie beginnen, überprüfen Sie den Status und die zugehörigen Empfehlungen:
 
@@ -150,7 +150,7 @@ Umfassende Informationen zur Entwicklung von AEM finden Sie in der Sammlung von 
 * [Benutzerhandbuch für Entwickler](/help/sites-developing/getting-started.md)
 * [Dokumentation zur Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [Tutorials und Videos zu AEM 6.5 Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=de)
-* [Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial ](/help/sites-developing/getting-started.md)
+* [Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial](/help/sites-developing/getting-started.md)
 * [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=de)
 * [AEM-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/)
 

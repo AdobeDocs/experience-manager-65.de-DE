@@ -8,7 +8,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '13636'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -696,15 +696,16 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.2.1 erfüllen](https://ww
 * Erfolgskriterium 2.2.2
 * Level A
 * Pausieren, Beenden, Ausblenden: Für sich bewegende, blinkende, scrollende oder sich automatisch aktualisierende Informationen gelten folgenden Regeln:
-   * Verschieben, Blinken, Scrollen: Für alle bewegten, blinkenden oder scrollenden Informationen, die
-      * a) automatisch beginnt,
-      * b) länger als fünf Sekunden dauert und
-      * (C) parallel mit anderen Inhalten präsentiert wird, gibt es einen Mechanismus, mit dem der Benutzer sie anhalten, stoppen oder verbergen kann, es sei denn, die Bewegung, das Blinken oder das Scrollen ist Teil einer Aktivität, in der sie wichtig ist.
-   * Automatische Aktualisierung: Für alle Informationen zur automatischen Aktualisierung, die
-      * a) automatisch beginnt und
-      * (b) parallel zu anderen Inhalten präsentiert wird, gibt es einen Mechanismus, mit dem der Benutzer sie anhalten, stoppen oder ausblenden oder die Häufigkeit der Aktualisierung steuern kann, es sei denn, die automatische Aktualisierung ist Teil einer Aktivität, in der sie wichtig ist.
+   * Bewegen, Blinken, Scrollen: Für alle sich bewegenden, blinkenden oder scrollenden Informationen, die
+      * a) automatisch gestartet werden,
+      * b) länger als fünf Sekunden dauern und
+      * (c) parallel mit anderen Inhalten angezeigt werden, gibt es einen Mechanismus, mit dem Benutzende sie anhalten, stoppen oder verbergen können, es sei denn, die Bewegung, das Blinken oder das Scrollen ist ein wesentlicher Teil einer Aktivität.
+   * Automatische Aktualisierung: Für alle automatisch aktualisierten Informationen, die
+      * a) automatisch gestartet und
+      * (b) parallel zu anderen Inhalten angezeigt werden,
+gibt es einen Mechanismus, mit dem Benutzende sie pausieren, stoppen oder verbergen oder die Häufigkeit der Aktualisierung steuern können, es sei denn, die automatische Aktualisierung ist ein wesentlicher Teil einer Aktivität.
 
-Beachten Sie Folgendes:
+Folgendes sollte beachtet werden:
 
 1. Die Anforderungen für flackernde oder blinkende Inhalte finden Sie unter „Gestalten Sie Inhalte nicht auf Arten, von denen bekannt ist, dass sie zu Anfällen führen“ (2.3).
 1. Jeglicher Inhalt, der dieses Erfolgskriterium nicht erfüllt, kann die Möglichkeit eines Benutzers beeinträchtigen, die gesamte Seite zu nutzen. Daher muss jeglicher Inhalt auf einer Web-Seite (egal ob er dazu dient, andere Erfolgskriterien zu erfüllen oder nicht) dieses Erfolgskriterium erfüllen. Siehe [Konformitätsanforderung 5: Nicht-Interferenz](https://www.w3.org/TR/WCAG20/#cc5).
@@ -1263,7 +1264,7 @@ Mit diesem Erfolgskriterium sollen Benutzer mit Behinderungen dabei unterstützt
 
 Benutzer mit Behinderungen machen möglicherweise eher Fehler. Personen mit Leseschwäche können Zahlen und Buchstaben vertauschen und Personen mit motorischen Behinderungen können versehentlich Tasten drücken. Wenn Benutzer die Möglichkeit erhalten, Aktionen rückgängig zu machen, können sie einen Fehler korrigieren, der schwerwiegende Folgen haben könnte. Durch die Möglichkeit, Informationen zu überprüfen und zu korrigieren, kann der Benutzer einen Fehler erkennen, bevor er eine Handlung mit schwerwiegenden Folgen vornimmt.
 
-Vom Benutzer steuerbare Daten sind vom Benutzer einsehbare Daten, die der Benutzer durch eine absichtliche Aktion ändern und/oder löschen kann. Beispiele für die Kontrolle solcher Daten durch den Benutzer wären die Aktualisierung der Telefonnummer und Adresse für das Benutzerkonto oder das Löschen eines Datensatzes früherer Rechnungen von einer Website. Es bezieht sich nicht auf Dinge wie Internetprotokolle und Überwachungsdaten von Suchmaschinen, die der Benutzer nicht direkt anzeigen oder damit interagieren kann.
+Vom Benutzer steuerbare Daten sind vom Benutzer einsehbare Daten, die der Benutzer durch eine absichtliche Aktion ändern und/oder löschen kann. Beispiele für die Kontrolle solcher Daten durch den Benutzer wären die Aktualisierung der Telefonnummer und Adresse für das Benutzerkonto oder das Löschen eines Datensatzes früherer Rechnungen von einer Website. Es geht hier nicht um Dinge wie Internet-Protokolle und Überwachungsdaten von Suchmaschinen, die Benutzende nicht direkt einsehen oder mit denen sie nicht direkt interagieren können.
 
 #### Erfüllen: Fehlervermeidung (rechtliche, finanzielle, Daten) (3.3.4) {#how-to-meet-error-prevention-legal-financial-data}
 

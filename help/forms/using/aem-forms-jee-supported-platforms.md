@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '4010'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -362,7 +362,7 @@ Beachten Sie die folgenden Ausnahmen, wenn Sie eine Plattform auswählen, auf de
 1. AEM Forms on JEE unterstützt keine rollenbasierte Zugriffssteuerung (RBAC) für JBoss®.
 1. AEM Forms on JEE unterstützt Oracle Java™ SE 11 (64 Bit) SDK nur für Anwendungs-Server® JBoss EAP 7.4.
 1. JDK-Versionen, die höher als 1.8.0_281 sind, werden für WebLogic-Server nicht unterstützt. (FORMS-8498)
-1. JDK 11.0.20 wird zur Installation des AEM Forms auf JEE-Installationsprogramms nicht unterstützt. Nur JDK 11.0.19 oder frühere Versionen werden zur Installation des AEM Forms on JEE-Installationsprogramms unterstützt.
+1. JDK 11.0.20 wird zur Installation des AEM Forms on JEE-Installationsprogramms nicht unterstützt. Nur JDK 11.0.19 oder frühere Versionen werden zur Installation des AEM Forms on JEE-Installationsprogramms unterstützt.
 
 <!-- 
 1. [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312) 
@@ -376,7 +376,7 @@ Außerdem sollten Sie die folgenden Punkte beachten, wenn Sie die Software für 
 - AEM Forms on JEE unterstützt Plattformen in Abhängigkeit der Unterstützung durch Drittanbieter.  Einige Kombinationen werden von Drittanbietern möglicherweise nicht zugelassen. Zum Beispiel haben viele Anbieter ihre Anwendungsserver nicht mit Oracle zertifiziert. Daher unterstützt auch AEM Forms on JEE diese Kombinationen nicht.  Um sicherzugehen, dass Sie die unterstützten Softwareversionen auswählen, sollten Sie auch die Support-Matrix dieser Drittanbieter überprüfen.
 - AEM Forms auf JEE unterstützt keine TarMK Cold Standby.
 - AEM Forms auf JEE unterstützt kein vertikales Clustering.
-- AEM Forms on JEE unterstützt keine MySQL-Datenbank in einer Clusterumgebung.
+- AEM Forms on JEE unterstützt nicht die MySQL-Datenbank in einer Cluster-Umgebung.
 - Eine Liste der entfernten bzw. der aktualisierten Plattformen finden Sie in dem Dokument [AEM 6.5 Forms - Übersicht über die neuen Funktionen](../../forms/using/whats-new.md).
 
 ### LDAP-Server (optional) {#ldap-servers-optional}
@@ -493,7 +493,7 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
 >- Der PDF Generator-Service unterstützt nicht Microsoft® Windows 10.
 >- PDF Generator kann keine Dateien mit Microsoft® Visio 2019 konvertieren.
 >- PDF Generator kann keine Dateien mit Microsoft® Project 2019 konvertieren.
->- Wenn eine Microsoft® Office-Installation aus irgendeinem Grund deaktiviert oder nicht lizenziert wird, z. B. wenn eine lizenzierte Volumeninstallation einen KMS-Host nicht innerhalb eines bestimmten Zeitraums finden kann, können Konvertierungen fehlschlagen, bis die Installation neu lizenziert und reaktiviert wird.
+>- Wenn eine Microsoft® Office-Installation aus irgendeinem Grund deaktiviert oder unlizenziert wird, z. B. weil eine Installation mit Volumenlizenz einen KMS-Host nicht innerhalb eines bestimmten Zeitraums finden kann, können Konvertierungen fehlschlagen, bis die Installation neu lizenziert und reaktiviert wird.
 
 <!-- Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.-->

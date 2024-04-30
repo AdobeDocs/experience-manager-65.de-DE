@@ -8,13 +8,13 @@ role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Anwenderdefinierte HTTP-Kopfzeilen {#custom-http-headers}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Um mehr Kontrolle über ihr Backend zu erhalten, können Autoren anwenderdefinierte HTTP-Kopfzeilen konfigurieren, die zusammen mit den bereits von CIF gesendeten Kopfzeilen an die Commerce-Engine gesendet werden. Häufige Anwendungsfälle sind Multi-Store-Setups, in denen Sie HTTP-Kopfzeilen verwenden können, um die Antwort des Commerce-Backends zu steuern.
 
@@ -37,7 +37,7 @@ Die Komponenten, die die obige Cloud-Service-Konfiguration verwenden, senden die
 
 ## Einschränkungen {#restrictions}
 
-Der Dienst ermöglicht zwar die Definition von Kopfzeilennamen, einschließlich der standardmäßigen, aber sie stehen nicht zur Konfiguration zur Verfügung. Mit anderen Worten: Sie können die standardmäßigen HTTP-Kopfzeilen nicht mit dieser Funktion überschreiben. Eine Liste mit eingeschränkten Kopfzeilennamen finden Sie [hier](https://developer.mozilla.org/de-DE/docs/Web/HTTP/Headers). Darüber hinaus gibt es zwei weitere Kopfzeilen, die nicht verwendet werden können:
+Der Service ermöglicht zwar die Definition von Kopfzeilennamen, einschließlich der standardmäßigen Namen, aber sie stehen nicht zur Konfiguration zur Verfügung. Mit anderen Worten: Sie können die standardmäßigen HTTP-Kopfzeilen nicht mit dieser Funktion überschreiben. Eine Liste mit eingeschränkten Kopfzeilennamen finden Sie [hier](https://developer.mozilla.org/de-DE/docs/Web/HTTP/Headers). Darüber hinaus gibt es zwei weitere Kopfzeilen, die nicht verwendet werden können:
 
 * „Store“ – wird von CIF verwendet, um den Adobe Commerce-Store zu identifizieren.
 * „Preview-Version“ – wird von CIF zum Abrufen von Staging-Produkten verwendet.

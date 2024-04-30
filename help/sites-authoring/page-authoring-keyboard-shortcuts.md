@@ -12,7 +12,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 |  | `Ctrl-y` | [Letzte Änderung wiederholen](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Mehrere Absätze auswählen |
 |  | `Ctrl-c` | Kopieren von ausgewählten Absätzen |
-|  | `Ctrl-x` | Ausgewählte Absätze ausschneiden (ausgeschnittene Absätze werden in der Benutzeroberfläche erst nach dem Einfügen ausgeblendet) |
+|  | `Ctrl-x` | Ausgewählte Absätze ausschneiden (Ausblenden ausgeschnittener Absätze in der Benutzeroberfläche erst nach dem Einfügen) |
 |  | `Ctrl-v` | Zuvor ausgeschnittene oder kopierte Absätze einfügen |
 |  | `Ctrl-Backspace` | Ausgewählte Absätze löschen |
 | Modus **Bearbeiten** – Rich-Text-Editor | `Ctrl-b` | Fett |

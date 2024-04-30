@@ -1,6 +1,6 @@
 ---
 title: Cloud Service-Konfigurationen
-description: Sie können vorhandene Instanzen erweitern, um eigene Konfigurationen zu erstellen
+description: Sie können die vorhandenen Instanzen erweitern, um eigenen Konfigurationen zu erstellen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -12,30 +12,30 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '552'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
 # Cloud Service-Konfigurationen{#cloud-service-configurations}
 
-Konfigurationen dienen dazu, die Logik und Struktur zum Speichern von Dienstkonfigurationen bereitzustellen.
+Konfigurationen sollen die Logik und Struktur für die Speicherung von Dienstkonfigurationen bereitstellen.
 
-Sie können die vorhandenen Instanzen erweitern, um Ihre eigenen Konfigurationen zu erstellen.
+Sie können die vorhandenen Instanzen erweitern, um eigenen Konfigurationen zu erstellen.
 
 ## Konzepte {#concepts}
 
-Die bei der Entwicklung der Konfigurationen verwendeten Prinzipien basieren auf folgenden Konzepten:
+Die Prinzipien, die bei der Entwicklung von Konfigurationen zum Einsatz kommen, basieren auf den folgenden Konzepten:
 
 * Dienste/Adapter werden zum Abrufen der Konfigurationen verwendet.
-* Konfigurationen (z. B. Eigenschaften/Absätze) werden von den übergeordneten Elementen übernommen.
-* Referenziert von Analyseknoten nach Pfad.
-* Einfach erweiterbar.
+* Konfigurationen (z. B. Eigenschaften/Absätze) werden von den übergeordneten Elementen geerbt.
+* Die Verweise erfolgen von Analyseknoten nach Pfad.
+* Sie sind einfach erweiterbar.
 * Sie können auch komplexere Konfigurationen unterstützen, z. B. [Adobe Analytics ](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Unterstützung für Abhängigkeiten (z. B. [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) -Plug-ins benötigen eine [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) Konfiguration).
+* Abhängigkeiten werden unterstützt (z. B. benötigen [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)-Plug-ins eine [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)-Konfiguration).
 
 ## Struktur {#structure}
 
-Der Basispfad der Konfigurationen lautet:
+Der Basispfad der Konfigurationen ist:
 
 `/etc/cloudservices`.
 
@@ -43,20 +43,20 @@ Für jeden Konfigurationstyp werden eine Vorlage und eine Komponente bereitgeste
 
 Gehen Sie wie folgt vor, um eine Konfiguration für neue Dienste bereitzustellen:
 
-* Erstellen Sie eine Service-Seite in
+* Erstellen Sie eine Dienstseite, und zwar unter:
 
   `/etc/cloudservices`
 
-* Darunter:
+* Und darunter:
 
-   * eine Konfigurationsvorlage
+   * eine Konfigurationsvorlage und
    * eine Konfigurationskomponente
 
 Die Vorlage und die Komponente müssen `sling:resourceSuperType` von der Basisvorlage erben:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-Oder die Basiskomponente
+Oder von der Basiskomponente:
 
 `cq/cloudserviceconfigs/components/configpage`
 
@@ -70,7 +70,7 @@ Ihre Vorlage erweitert die Basisvorlage:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-Und definieren Sie eine `resourceType` , der auf die benutzerdefinierte Komponente verweist.
+Sie definiert zudem einen `resourceType`, der auf die angepasste Komponente verweist.
 
 ```xml
 /libs/cq/analytics/templates/sitecatalyst
@@ -103,7 +103,7 @@ Ihre Komponente sollte die Basiskomponente erweitern:
 /libs/cq/analytics/components/generictrackerpage
 ```
 
-Nachdem Sie Ihre Vorlage und Komponente eingerichtet haben, können Sie Ihre Konfiguration hinzufügen, indem Sie Unterseiten hinzufügen unter:
+Nach dem Einrichten der Vorlage und der Komponente können Sie Ihre Konfiguration hinzufügen, indem Sie unter folgendem Pfad untergeordnete Seiten hinzufügen:
 
 `/etc/cloudservices/<service-name>`
 
@@ -136,22 +136,22 @@ propertyname
 
 ### API {#api}
 
-Referenzdokumentation zur API finden Sie unter [com.day.cq.wcm.webservicesupport](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
+Die Referenzdokumentation zur API finden Sie unter [com.day.cq.wcm.webservicesupport](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
 
 ### AEM-Integration {#aem-integration}
 
 Verfügbare Dienste sind auf der Registerkarte **Cloud-Services** des Dialogfelds **Seiteneigenschaften** aufgeführt (bei jeder Seite, die von `foundation/components/page` oder `wcm/mobile/components/page` erbt).
 
-Die Registerkarte bietet außerdem Folgendes:
+Die Registerkarte bietet zusätzlich:
 
-* einen Link zum Speicherort, an dem Sie den Dienst aktivieren können
-* eine Konfiguration (Unterknoten des Dienstes) aus einem Pfadfeld auswählen
+* einen Link zu dem Verzeichnis, in dem Sie den Dienst aktivieren können
+* die Auswahl einer Konfiguration (untergeordneter Knoten des Dienstes) aus einem Pfadfeld
 
 #### Kennwortverschlüsselung {#password-encryption}
 
-Beim Speichern von Benutzeranmeldeinformationen für den Dienst sollten alle Kennwörter verschlüsselt werden.
+Beim Speichern der Benutzeranmeldedaten für den Dienst sollten alle Kennwörter verschlüsselt werden.
 
-Sie können dies erreichen, indem Sie ein ausgeblendetes Formularfeld hinzufügen. Dieses Feld sollte eine Anmerkung enthalten. `@Encrypted` im Eigenschaftsnamen, d. h. für die `password` -Feld würde der Name wie folgt geschrieben:
+Zu diesem Zweck können Sie ein ausgeblendetes Formularfeld hinzufügen. Dieses Feld sollte im Eigenschaftsnamen die Anmerkung `@Encrypted` enthalten; d. h., im Feld `password` würde der Name wie folgt geschrieben:
 
 `password@Encrypted`
 
@@ -175,7 +175,7 @@ Diese Eigenschaft wird dann automatisch (mit dem `CryptoSupport`-Dienst) durch d
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Referenzpfad zu einer Komponente, die automatisch in die Seite aufgenommen werden soll.<br /> Dies wird für zusätzliche Funktionen und JS-Einschlüsse genutzt.<br /> Dazu gehört die Komponente auf der Seite, auf der <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> enthalten ist (normalerweise vor dem <code>body</code>-Tag).<br /> Im Falle von Adobe Analytics und Adobe Target verwenden wir dies, um zusätzliche Funktionen wie JavaScript-Aufrufe zur Verfolgung des Besucherverhaltens einzuschließen.</td>
+   <td>Referenzpfad zu einer Komponente, die automatisch in die Seite aufgenommen werden soll.<br /> Dies wird für zusätzliche Funktionen und JS-Einschlüsse genutzt.<br /> Dazu gehört die Komponente auf der Seite, auf der <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> enthalten ist (normalerweise vor dem <code>body</code>-Tag).<br /> Bei Adobe Analytics und Adobe Target schließen wir damit zusätzliche Funktionen ein, z. B. JavaScript-Aufrufe, um das Verhalten der Besuchenden nachzuverfolgen.</td>
   </tr>
   <tr>
    <td>description</td>

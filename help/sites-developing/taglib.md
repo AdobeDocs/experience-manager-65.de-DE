@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '2452'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Die globale Seite deklariert zudem die [Sling-Bibliothek](/help/sites-developing
 
 ### &lt;ui:includeClientLib> {#ui-includeclientlib}
 
-Das Tag `<ui:includeClientLib>` enthält eine AEM-HTML-Client-Bibliothek, bei der es sich um eine JS-, CSS- oder Design-Bibliothek handeln kann. Für mehrere Einschlüsse verschiedener Typen, z. B. js und css, muss dieses Tag mehrmals in der JSP verwendet werden. Dieses Tag ist ein praktischer Wrapper für die Service-Schnittstelle ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
+Das Tag `<ui:includeClientLib>` enthält eine AEM-HTML-Client-Bibliothek, bei der es sich um eine JS-, CSS- oder Design-Bibliothek handeln kann. Wenn mehrere verschiedene Typen enthalten sind, wie etwa JS und CSS, muss dieses Tag mehrfach in JSP verwendet werden. Dieses Tag ist ein praktischer Wrapper für die Service-Schnittstelle ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
 
 Es weist folgende Attribute auf:
 
@@ -120,7 +120,7 @@ Es weist die folgenden optionalen Attribute auf:
 
 **tagName**: Name des Elements, das eine nicht leere Ausgabe umgibt. Standardmäßig ist DIV eingestellt.
 
-**placeholder**: Standardwert, der im Bearbeitungsmodus für null oder leeren Text verwendet wird, also der Platzhalter. Die Standardüberprüfung wird nach der optionalen Formatierung und Maskierung durchgeführt, d. h. nach dem Schreibvorgang wird sie unverändert in die Ausgabe geschrieben. Standardwert ist:
+**placeholder**: Standardwert, der im Bearbeitungsmodus für null oder leeren Text verwendet wird, also der Platzhalter. Die standardmäßige Prüfung wird nach der optionalen Formatierung und dem Escape-Vorgang ausgeführt, d. h., es wird im vorliegenden Format in die Ausgabe geschrieben. Standardwert ist:
 
 `<div><span class="cq-text-placeholder">&para;</span></div>`
 
@@ -259,7 +259,7 @@ Sollten Sie `<cq:include>` oder `<sling:include>` verwenden?
 >
 >`<cq:includeClientLib>` ist seit AEM 5.6 veraltet. Stattdessen sollte [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) verwendet werden.
 
-Das Tag `<cq:includeClientLib>` enthält eine AEM-HTML-Client-Bibliothek, bei der es sich um eine JS-, CSS- oder Design-Bibliothek handeln kann. Für mehrere Einschlüsse verschiedener Typen, z. B. js und css, muss dieses Tag mehrmals in der JSP verwendet werden. Dieses Tag ist ein praktischer Wrapper für die Service-Schnittstelle `com.day.cq.widget.HtmlLibraryManager`.
+Das Tag `<cq:includeClientLib>` enthält eine AEM-HTML-Client-Bibliothek, bei der es sich um eine JS-, CSS- oder Design-Bibliothek handeln kann. Wenn mehrere verschiedene Typen enthalten sind, wie etwa JS und CSS, muss dieses Tag mehrfach in JSP verwendet werden. Dieses Tag ist ein praktischer Wrapper für die Service-Schnittstelle `com.day.cq.widget.HtmlLibraryManager`.
 
 Es weist folgende Attribute auf:
 
@@ -548,7 +548,7 @@ Es weist folgende Attribute auf:
 
 >[!NOTE]
 >
->Die Auflösung der Ressource und des Skripts, das im Tag `<sling:include>` enthalten ist, ist dieselbe wie bei einer normalen URL-Auflösung in Sling. Standardmäßig werden die Selektoren, Erweiterungen usw. aus der aktuellen Anfrage auch für das eingeschlossene Skript verwendet. Sie können über die Tag-Attribute geändert werden: z. B. `replaceSelectors="foo.bar"` können Sie die Selektoren überschreiben.
+>Die Auflösung der Ressource und des Skripts, das im Tag `<sling:include>` enthalten ist, ist dieselbe wie bei einer normalen URL-Auflösung in Sling. Standardmäßig werden die Selektoren, Erweiterungen usw. aus der aktuellen Anfrage auch für das eingeschlossene Skript verwendet. Sie können durch die Tag-Attribute geändert werden. Beispielsweise können Sie mit `replaceSelectors="foo.bar"` die Selektoren überschreiben.
 
 Beispiele:
 

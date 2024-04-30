@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1552'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Durch diese Integration können AEM und Adobe Campaign Classic unabhängig vonei
 
 ## Integrationsschritte {#integration-steps}
 
-Die Integration von AEM und Campaign erfordert in beiden Lösungen mehrere Schritte.
+Die Integration von AEM und Campaign erfordert in beiden Lösungen eine Reihe von Schritten.
 
 1. [Installieren des AEM-Integrationspakets in Campaign](#install-package)
 1. [Erstellen eines Benutzers für AEM in Campaign](#create-operator)
@@ -44,12 +44,12 @@ Dieses Dokument führt Sie im Detail durch die einzelnen Schritte.
 
 * Administratorzugriff auf Adobe Campaign Classic
    * Für die Integration benötigen Sie eine funktionierende Adobe Campaign Classic-Instanz, einschließlich einer konfigurierten Datenbank.
-   * Weitere Informationen zum Einrichten und Konfigurieren von Adobe Campaign Classic finden Sie unter [Adobe Campaign Classic-Dokumentation,](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=de) insbesondere das Handbuch zur Installation und Konfiguration.
+   * Weitere Informationen zum Einrichten und Konfigurieren von Adobe Campaign Classic finden Sie in der [Adobe Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=de), insbesondere im Handbuch zur Installation und Konfiguration.
 * Administratorzugriff auf AEM
 
 ## Installieren des AEM-Integrationspakets in Campaign {#install-package}
 
-Die **AEM** -Paket in Adobe Campaign enthält mehrere Standardkonfigurationen, die für die Verbindung mit AEM erforderlich sind.
+Das **AEM-Integrationspaket** in Adobe Campaign enthält eine Reihe von Standardkonfigurationen, die für die Verbindung mit AEM erforderlich sind.
 
 1. Als Administrator melden Sie sich mit der Client-Konsole bei der Adobe Campaign-Instanz an.
 
@@ -73,11 +73,11 @@ Das Integrationspaket ist jetzt installiert.
 
 ## Erstellen des Benutzers für AEM in Campaign {#create-operator}
 
-Das Integrationspaket erstellt automatisch den `aemserver`-Benutzer, den AEM verwendet, um eine Verbindung mit Adobe Campaign herzustellen. Definieren Sie eine Sicherheitszone für diesen Operator und legen Sie sein Kennwort fest.
+Das Integrationspaket erstellt automatisch die Benutzerin oder den Benutzer von `aemserver`, die bzw. den AEM verwendet, um eine Verbindung mit Adobe Campaign herzustellen. Definieren Sie eine Sicherheitszone für diese Person und legen Sie ihr Kennwort fest.
 
-1. Melden Sie sich mit der Client-Konsole bei Adobe Campaign als Administrator an.
+1. Melden Sie sich mit der Client-Konsole bei Adobe Campaign als Admin an.
 
-1. Auswählen **Instrumente** > **Explorer** aus der Menüleiste.
+1. Wählen Sie **Tools** > **Explorer** in der Menüleiste.
 
 1. Navigieren Sie im Explorer zum Knoten **Administration** > **Zugriffsverwaltung** > **Benutzer**.
 
@@ -115,7 +115,7 @@ Das Integrationspaket erstellt automatisch den `aemserver`-Benutzer, den AEM ver
    >
    >Standardmäßig ist keine Sicherheitszone für den Operator konfiguriert. Damit AEM eine Verbindung zu Adobe Campaign herstellen kann, müssen Sie einen Bereich auswählen, wie in den vorherigen Schritten beschrieben.
    >
-   >Wir empfehlen Ihnen dringend, eine speziell AEM zugewiesene Sicherheitszone zu erstellen, um Sicherheitsprobleme zu vermeiden. Weitere Informationen zu diesem Thema finden Sie im Abschnitt [Dokumentation zu Adobe Campaign Classic.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html?lang=de)
+   >Wir empfehlen Ihnen dringend, eine speziell AEM zugewiesene Sicherheitszone zu erstellen, um Sicherheitsprobleme zu vermeiden. Weitere Informationen zu diesem Thema finden Sie in der [Dokumentation zu Adobe Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html?lang=de).
 
 1. Kehren Sie im Campaign-Client zum `aemserver`-Operator zurück und wählen Sie die Registerkarte **Allgemein** aus.
 
@@ -127,7 +127,7 @@ Das Integrationspaket erstellt automatisch den `aemserver`-Benutzer, den AEM ver
 
 ## Konfigurieren der Campaign-Integration in AEM {#campaign-integration}
 
-AEM [den Operator, den Sie bereits in Campaign eingerichtet haben](#create-operator) zur Kommunikation mit Campaign
+AEM verwendet [die Benutzerin bzw. den Benutzer, die oder den Sie bereits in Campaign eingerichtet haben](#create-operator), zur Kommunikation mit Campaign
 
 1. Melden Sie sich bei Ihrer AEM Authoring-Instanz als Admin an.
 
@@ -208,7 +208,7 @@ Die Veröffentlichungsinstanz muss vom Adobe Campaign-Server aus erreichbar sein
 Damit Campaign mit AEM kommunizieren kann, müssen Sie ein Kennwort für den `campaign-remote`-Benutzer in AEM festlegen.
 
 1. Melden Sie sich in AEM als Admin an.
-1. Klicken Sie in der Hauptnavigationskonsole auf **Instrumente** in der linken Leiste.
+1. Klicken Sie in der Hauptnavigationskonsole in der linken Leiste auf **Tools**.
 1. Klicken Sie anschließend auf **Sicherheit** > **Benutzer**, um die Benutzer-Administration-Console zu öffnen. 
 1. Suchen Sie den `campaign-remote`-Benutzer.
 1. Wählen Sie den `campaign-remote`-Benutzer aus und klicken Sie auf **Eigenschaften**, um den Benutzer zu bearbeiten.
@@ -221,9 +221,9 @@ Damit Campaign mit AEM kommunizieren kann, müssen Sie ein Kennwort für den `ca
 
 Bei der [Installation des **AEM-Integrationspakets** in Campaign](#install-package) wird ein externes Konto für AEM erstellt. Durch die Konfiguration dieses externen Kontos kann Adobe Campaign eine Verbindung zu AEM herstellen und so eine bidirektionale Kommunikation zwischen beiden Lösungen ermöglichen.
 
-1. Melden Sie sich mit der Client-Konsole bei Adobe Campaign als Administrator an.
+1. Melden Sie sich mit der Client-Konsole bei Adobe Campaign als Admin an.
 
-1. Auswählen **Instrumente** > **Explorer** aus der Menüleiste.
+1. Wählen Sie in der Menüleiste **Tools** > **Explorer**.
 
 1. Navigieren Sie im Explorer zum Knoten **Administration** > **Platform** > **Externe Konten**.
 

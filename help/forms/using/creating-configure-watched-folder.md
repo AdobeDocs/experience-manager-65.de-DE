@@ -49,7 +49,7 @@ Führen Sie die folgenden Schritte aus, um einen überwachten Ordner zu erstelle
 
    >[!NOTE]
    >
-   >Wenn Sie **Dienst** für das Feld **Prozessdateien, die Folgendes verwenden** gewählt haben, muss der Wert des Feldes „Dienstname“ (inputProcessorType) in Klammern gesetzt werden. Beispiel: (foo=bar).
+   >Wenn Sie **Dienst** für das Feld **Prozessdateien, die Folgendes verwenden** gewählt haben, muss der Wert des Feldes „Dienstname“ (inputProcessorType) in Klammern gesetzt werden. Hier ein Beispiel: (foo=bar).
 
    ```java
    @Component(metatype = true, immediate = true, label = "WF Test Service", description = "WF Test Service")

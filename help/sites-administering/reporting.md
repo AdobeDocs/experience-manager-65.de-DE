@@ -1,6 +1,6 @@
 ---
 title: Reporting
-description: Erfahren Sie, wie Sie mit Reporting in Adobe Experience Manager arbeiten (AEM).
+description: Erfahren Sie, wie Sie mit Berichten in Adobe Experience Manager (AEM) arbeiten.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '2782'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -199,7 +199,7 @@ Wenn Momentaufnahmen erfasst werden, haben Sie folgende Möglichkeiten:
 
 >[!NOTE]
 >
->Die vorkonfigurierten Berichte sind nicht leistungsintensiv, es wird jedoch dennoch empfohlen, in einer Produktionsumgebung tägliche Momentaufnahmen zu verwenden. Führen Sie diese täglichen Momentaufnahmen nach Möglichkeit zu einer Tageszeit aus, zu der auf Ihrer Website nicht viel Aktivität vorhanden ist. Dies kann mit dem `Daily snapshots (repconf.hourofday)` Parameter für **Day CQ-Berichtkonfiguration**. Siehe [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) für weitere Informationen zur Konfiguration.
+>Die vorkonfigurierten Berichte sind nicht leistungsintensiv, es wird jedoch dennoch empfohlen, in einer Produktionsumgebung tägliche Momentaufnahmen zu verwenden. Führen Sie diese täglichen Momentaufnahmen nach Möglichkeit zu einer Tageszeit aus, zu der auf Ihrer Website nicht viel Aktivität vorhanden ist. Dies kann mit dem Parameter `Daily snapshots (repconf.hourofday)` für **Day CQ Reporting Configuration** definiert werden. Weitere Informationen zur entsprechenden Konfiguration finden Sie unter [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md).
 
 #### Anzeigelimits {#display-limits}
 

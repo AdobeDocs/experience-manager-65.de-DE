@@ -13,7 +13,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '4896'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -97,13 +97,13 @@ Erstellen Sie eine Client-Bibliothek wie folgt:
 Fügen Sie die Client-Bibliothek wie folgt in die Seitenkomponenten-JSP ein:
 
 * um sowohl JavaScript-Code als auch Stylesheets einzuschließen:
-  `<ui:includeClientLib categories="<category-name1>, <category-name2>, ..."/>`
-where `<category-nameX>` ist der Name der clientseitigen Bibliothek.
+  `<ui:includeClientLib categories="<category-name1>, <category-name2>, ..."/>` 
+wenn `<category-nameX>` der Name der Client-seitigen Bibliothek ist.
 
 * um nur JavaScript-Code einzuschließen:
   `<ui:includeClientLib js="<category-name>"/>`
 
-Weitere Informationen finden Sie in der Beschreibung des [&lt;ui:includeclientlib>](/help/sites-developing/taglib.md#lt-ui-includeclientlib) -Tag.
+Weitere Informationen finden Sie in der Beschreibung des Tags [&lt;ui:includeClientLib>](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
 
 Manchmal sollte eine Client-Bibliothek nur im Authoring-Modus verfügbar sein und im Publishing-Modus ausgeschlossen werden. Dies lässt sich wie folgt erreichen:
 
@@ -135,16 +135,16 @@ Dialogfelder werden normalerweise zum Bearbeiten von Inhalten verwendet, können
 
 `https://localhost:4502/<path-to-dialog>.-1.json`
 
-Die erste Komponente der **Verwenden von ExtJS-Widgets** -Gruppe in der Sidekick heißt **1. Dialoggrundlagen** und umfasst vier grundlegende Dialogfelder, die mit vordefinierten Widgets und ohne benutzerdefinierte JavaScript-Logik erstellt wurden. Die Dialogfelder werden unter `/apps/extjstraining/components/dialogbasics` gespeichert. Die grundlegenden Dialogfelder sind:
+Die erste Komponente der Gruppe **Verwenden von ExtJS-Widgets** im Sidekick heißt **1. Dialogfeld-Grundlagen** und umfasst vier grundlegende Dialogfelder, die mit vordefinierten Widgets und ohne benutzerdefinierte JavaScript-Logik erstellt wurden. Die Dialogfelder werden unter `/apps/extjstraining/components/dialogbasics` gespeichert. Die grundlegenden Dialogfelder sind:
 
 * das Dialogfeld „Full“ (Knoten `full`): Es zeigt ein Fenster mit drei Registerkarten an, wobei jede Registerkarte zwei Textfelder enthält.
 * das Dialogfeld „Single Panel“ (Knoten `singlepanel`): Es zeigt ein Fenster mit einer Registerkarte mit zwei Textfeldern an.
 * das Dialogfeld „Multi Panel“ (Knoten `multipanel`): Es zeigt dasselbe an wie das Dialogfeld „Full“, ist aber anders aufgebaut.
 * das Dialogfeld „Design“ (Knoten `design`): Es zeigt ein Fenster mit zwei Registerkarten an. Die erste Registerkarte besitzt ein Textfeld, ein Dropdown-Menü und einen ausblendbaren Textbereich. Die zweite Registerkarte verfügt über einen Feldsatz mit vier Textfeldern und einen ausblendbaren Feldsatz mit zwei Textfeldern.
 
-Fügen Sie die **1. Dialoggrundlagen** -Komponente in der Beispielseite:
+Fügen Sie die **1. Dialogfeld-Grundlagen**-Komponente in der Beispielseite ein:
 
-1. Fügen Sie die **1. Dialoggrundlagen** -Komponente auf der Beispielseite aus der **Verwenden von ExtJS-Widgets** im **Sidekick**.
+1. Fügen Sie die **1. Dialogfeld-Grundlagen**-Komponente über die Registerkarte **Verwenden von ExtJS Widgets** im **Sidekick** zur Beispielseite hinzu.
 1. Die Komponente zeigt einen Titel, etwas Text und einen Link **EIGENSCHAFTEN** an. Wenn Sie den Link auswählen, werden die Eigenschaften des im Repository gespeicherten Absatzes angezeigt. Wählen Sie das Symbol erneut aus, um die Eigenschaften auszublenden.
 
 Die Komponente wird wie im Folgenden dargestellt:
@@ -235,15 +235,15 @@ So verwenden Sie das Dialogfeld **Rich**:
 
 ### Dynamische Dialogfelder {#dynamic-dialogs}
 
-Die zweite Komponente der **Verwenden von ExtJS-Widgets** -Gruppe in der Sidekick heißt **2. Dynamische Dialogfelder** und umfasst drei dynamische Dialogfelder, die mit vordefinierten Widgets und **mit angepasster JavaScript-Logik**. Die Dialogfelder werden unter `/apps/extjstraining/components/dynamicdialogs` gespeichert. Die dynamischen Dialogfelder sind:
+Die zweite Komponente der Gruppe **Verwenden von ExtJS-Widgets** im Sidekick heißt **2. Dynamische Dialogfelder** und umfasst drei dynamische Dialogfelder mit vordefinierten Widgets und **mit angepasster JavaScript-Logik**. Die Dialogfelder werden unter `/apps/extjstraining/components/dynamicdialogs` gespeichert. Die dynamischen Dialogfelder sind:
 
 * das Dialogfeld „Registerkarten wechseln“ (Knoten `switchtabs`): Es zeigt ein Fenster mit zwei Registerkarten. Die erste Registerkarte verfügt über eine Optionsfeldauswahl mit drei Optionen: Wenn eine Option ausgewählt ist, wird eine Registerkarte angezeigt, die sich auf die Option bezieht. Die zweite Registerkarte enthält zwei Textfelder.
 * das Dialogfeld „Beliebig“ (Knoten `arbitrary`): Es zeigt ein Fenster mit einer Registerkarte an. Die Registerkarte verfügt über ein Feld, in das Sie Assets ziehen oder hochladen können, und ein Feld, das Informationen über die Seite, die es umfasst, und das Asset (falls auf eines verwiesen wird) anzeigt.
 * das Dialogfeld „Felder umschalten“ (Knoten `togglefield`): Es zeigt ein Fenster mit einer Registerkarte. Die Registerkarte verfügt über ein Kontrollkästchen: Ist es aktiviert, wird ein Feldsatz mit zwei Textfeldern angezeigt.
 
-So schließen Sie die **2. Dynamische Dialogfelder** -Komponente auf der Beispielseite:
+Einschließen der **2. Dynamische Dialogfelder**-Komponente auf der Beispielseite:
 
-1. Fügen Sie die **2. Dynamische Dialogfelder** -Komponente auf der Beispielseite aus der **Verwenden von ExtJS-Widgets** im **Sidekick**.
+1. Fügen Sie die **2. Dynamische Dialogfelder**-Komponente über die Registerkarte **Verwenden von ExtJS Widgets** im **Sidekick** hinzu.
 1. Die Komponente zeigt einen Titel, etwas Text und einen Link **EIGENSCHAFTEN** an. Wenn Sie den Link auswählen, werden die Eigenschaften des im Repository gespeicherten Absatzes angezeigt. Wählen Sie das Symbol erneut aus, um die Eigenschaften auszublenden.
 
 Die Komponente wird wie im Folgenden dargestellt:
@@ -371,9 +371,9 @@ Die im Lieferumfang von AEM enthaltenen vordefinierten Widgets sollten die meist
 * Das Dialogfeld „Tree Browse“ (`treebrowse`-Knoten) zeigt ein Fenster mit einer Registerkarte, die ein Pfadbrowser-Widget enthält: Wenn Sie auf den Pfeil klicken, wird ein Fenster geöffnet, in dem Sie eine Hierarchie durchsuchen und ein Element auswählen können. Der Pfad des Elements wird dann dem Pfadfeld hinzugefügt und wird beibehalten, wenn das Dialogfeld geschlossen wird.
 * Ein Dialogfeld, das auf dem Rich-Text-Editor-Plug-in basiert (Knoten `rteplugin`) und dem Rich-Text-Editor eine benutzerdefinierte Schaltfläche hinzufügt, mit der benutzerdefinierter Text in den Haupttext eingefügt werden kann. Es besteht aus einem `richtext`-Widget (RTE) und einer benutzerdefinierten Funktion, die durch den RTE-Plug-in-Mechanismus hinzugefügt wird.
 
-Die benutzerdefinierten Widgets und das Plug-in sind in der Komponente namens **3. Benutzerdefinierte Widgets** des **Verwenden von ExtJS-Widgets** Paket. Um diese Komponente in die Beispielseite aufzunehmen:
+Die benutzerdefinierten Widgets und das Plug-in sind in der Komponente namens **3. Benutzerdefinierte Widgets** des **Verwenden von ExtJS-Widgets**-Pakets enthalten. Um diese Komponente in die Beispielseite aufzunehmen:
 
-1. Fügen Sie die **3. Benutzerdefinierte Widgets** -Komponente auf der Beispielseite aus der **Verwenden von ExtJS-Widgets** im **Sidekick**.
+1. Fügen Sie die **3. Benutzerdefinierte Widgets**-Komponente über die Registerkarte **Verwenden von ExtJS-Widgets** im **Sidekick** zur Beispielseite hinzu.
 1. Die Komponente zeigt einen Titel, etwas Text und, wenn Sie auf den Link **EIGENSCHAFTEN** klicken, die Eigenschaften des im Repository gespeicherten Absatzes an. Durch erneutes Klicken werden die Eigenschaften verborgen.
 Die Komponente wird wie im Folgenden dargestellt:
 
@@ -459,7 +459,7 @@ Um das Widget-basierte Dialogfeld **Benutzerdefiniertes Treebrowse** zu verwende
 
 #### Beispiel 3: Rich-Text-Editor(RTE)-Plug-in {#example-rich-text-editor-rte-plug-in}
 
-Das **Rich-Text-Editor(RTE)-Plug-in** basierte Dialogfeld ist ein auf dem Rich-Text-Editor basierendes Dialogfeld, das eine benutzerdefinierte Schaltfläche zum Einfügen eines benutzerdefinierten Textes in eckigen Klammern enthält. Der benutzerdefinierte Text kann durch eine serverseitige Logik analysiert werden (in diesem Beispiel nicht implementiert), z. B. um Text hinzuzufügen, der am angegebenen Pfad definiert ist:
+Das **Rich-Text-Editor(RTE)-Plug-in** basierte Dialogfeld ist ein auf dem Rich-Text-Editor basierendes Dialogfeld, das eine benutzerdefinierte Schaltfläche zum Einfügen eines benutzerdefinierten Textes in eckigen Klammern enthält. Der eigene Text kann auch anhand einer Server-seitigen Logik geparst werden (in diesem Beispiel nicht implementiert), um beispielsweise Text hinzuzufügen, der am jeweiligen Pfad definiert ist:
 
 Das auf dem **RTE-Plug-in** basierende Dialogfeld:
 
@@ -508,7 +508,7 @@ Das im Lieferumfang enthaltene ` [CQ.Ext.tree.TreePanel](https://developer.adobe
 
 Fügen Sie die Komponente **Tree Overview** wie folgt der Beispielseite hinzu:
 
-1. Fügen Sie die **4. Baumübersicht** -Komponente auf der Beispielseite aus der **Verwenden von ExtJS-Widgets** im **Sidekick**.
+1. Fügen Sie die **4. Übersicht über die Baumstruktur**-Komponenteüber die Registerkarte **Verwenden von ExtJS-Widgets** im **Sidekick** zur Beispielseite hinzu.
 1. Die Komponente zeigt:
    * einen Titel und etwas Text
    * einen Link **EIGENSCHAFTEN**: klicken Sie darauf, um die Eigenschaften des im Repository gespeicherten Absatzes anzuzeigen. Klicken Sie erneut, um die Eigenschaften zu verbergen.
@@ -575,7 +575,7 @@ Die im Paket **Verwenden von ExtJS Widgets** enthaltene Komponente „Raster-Üb
 
 Fügen Sie die Komponente „Raster-Übersicht“ wie folgt der Beispielseite hinzu:
 
-1. Fügen Sie die **5. Rasterübersicht** -Komponente auf der Beispielseite aus der **Verwenden von ExtJS-Widgets** im **Sidekick**.
+1. Fügen Sie die **5. Raster-Übersicht**-Komponente über die Registerkarte **Verwenden von ExtJS-Widgets** im **Sidekick** zur Beispielseite hinzu.
 1. Die Komponente zeigt:
    * einen Titel und etwas Text.
    * einen Link **EIGENSCHAFTEN**: klicken Sie darauf, um die Eigenschaften des im Repository gespeicherten Absatzes anzuzeigen. Klicken Sie erneut, um die Eigenschaften zu verbergen.

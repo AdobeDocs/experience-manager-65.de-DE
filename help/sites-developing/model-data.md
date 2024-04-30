@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1775'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ Ich persönlich ziehe es vor, zunächst Hierarchiekonventionen anstelle des Knot
 
 #### Beispiel {#example-2}
 
-Ich würde ein einfaches Blogging-System wie folgt modellieren. Anfangs interessiere ich mich nicht einmal für die jeweiligen Knotentypen, die ich zu diesem Zeitpunkt verwende.
+Ich würde ein einfaches Blogging-System wie folgt modellieren. Dabei mache ich mir zunächst auch keine Gedanken um die jeweiligen an dieser Stelle verwendeten Knotentypen.
 
 ```xml
 /content/myblog
@@ -90,9 +90,9 @@ Ich würde ein einfaches Blogging-System wie folgt modellieren. Anfangs interess
 /content/myblog/comments/iphone_shipping/i_like_it_too/i_hate_it
 ```
 
-Ich denke, dass sich die Struktur des Inhalts anhand des Beispiels ohne weitere Erklärungen verstehen lässt.
+Es scheint mir klar, dass sich die Struktur des Inhalts anhand des Beispiels ohne weitere Erklärungen verstehen lässt.
 
-Was am Anfang unerwartet ist, ist, warum ich die &quot;Kommentare&quot; nicht mit dem &quot;Post&quot; speichern würde, was auf die Zugriffskontrolle zurückzuführen ist, die ich gerne in einer einigermaßen hierarchischen Weise anwenden möchte.
+Überraschend ist möglicherweise zunächst, dass ich die „comments“ nicht mit dem „post“ speichere, was auf die Zugriffskontrolle zurückzuführen ist, die ich auf angemessen hierarchische Weise anwenden möchte.
 
 Mit dem obigen Content-Modell kann ich es „anonymen“ Benutzenden ohne Weiteres gestatten, Kommentare zu erstellen, ohne dabei den Schreibschutz für den Rest des Workspace für diese Benutzenden aufzuheben.
 
@@ -100,7 +100,7 @@ Mit dem obigen Content-Modell kann ich es „anonymen“ Benutzenden ohne Weiter
 
 #### Erklärung {#explanation-3}
 
-Wenn Sie nicht `clone()`, `merge()` oder `update()` -Methoden in Ihrer Anwendung ist wahrscheinlich ein einziger Arbeitsbereich der richtige Weg.
+Wenn Sie in Ihrer Anwendung nicht die Methoden `clone()`, `merge()` oder `update()` verwenden, sollten Sie sich für einen einzigen Workspace entscheiden.
 
 „Korrespondierende Knoten“ sind ein in den JCR-Spezifikationen definiertes Konzept. Im Wesentlichen handelt es sich dabei um Knoten, die denselben Inhalt in verschiedenen sogenannten Workspaces repräsentieren.
 
@@ -167,7 +167,7 @@ Angenommen, ich lasse „Verweise“ von einem Dokument (a) zu einem anderen Dok
 
 Also würde ich diese Verweise entweder über „schwache Referenzen“ modellieren (in JCR v1.0 läuft das im Wesentlichen auf Zeichenfolgeneigenschaften hinaus, die die UUID des Zielknotens enthalten) oder einfach einen Pfad verwenden. Mitunter ist ein Pfad zunächst sinnvoller.
 
-Ich denke, es gibt Anwendungsfälle, in denen ein System wirklich nicht funktionieren kann, wenn eine Referenz in Gefahr ist, aber ich kann aus meiner direkten Erfahrung einfach kein gutes &quot;reales&quot;, aber einfaches Beispiel entwickeln.
+Möglicherweise gibt es Anwendungsfälle, in denen ein System wirklich nicht funktionieren kann, solange ein Verweis nicht zugeordnet wird, aber ein praktisches Beispiel fällt mir dazu nicht ein.
 
 ### 6. Regel: Dateien sind Dateien. {#rule-files-are-files}
 

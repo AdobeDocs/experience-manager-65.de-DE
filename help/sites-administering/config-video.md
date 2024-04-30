@@ -12,13 +12,13 @@ role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '479'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 # Konfigurieren der Videokomponente {#configure-the-video-component}
 
-Die [Videokomponente](/help/sites-authoring/default-components-foundation.md#video) können Sie ein vordefiniertes, natives Video-Asset auf Ihrer Seite platzieren.
+Mit der [Videokomponente](/help/sites-authoring/default-components-foundation.md#video) können Sie ein vordefiniertes, vorkonfiguriertes Video-Asset auf Ihrer Seite platzieren.
 
 Damit eine korrekte Transkodierung erfolgt, installiert ein Admin FFmpeg separat. Siehe [Installieren von FFmpeg und Konfigurieren von AEM](#install-ffmpeg). Admins können auch [Videoprofile](#configure-video-profiles) für die Verwendung mit HTML5-Elementen konfigurieren..
 
@@ -84,4 +84,4 @@ Gehen Sie wie folgt vor, um **AEM zu konfigurieren**:
 
 >[!NOTE]
 >
->Änderungen an den standardmäßigen Workflow-Modellen bleiben beim Upgrade Ihrer AEM-Instanz nicht erhalten. Adobe empfiehlt, die geänderten Workflow-Modelle zu kopieren, bevor Sie sie bearbeiten. Kopieren Sie beispielsweise die vordefinierte [!UICONTROL DAM-Update-Asset] -Modell vor der Bearbeitung des FFmpeg-Transkodierungsschritts im [!UICONTROL DAM-Update-Asset] -Modell, um Videoprofilnamen auszuwählen, die vor dem Upgrade vorhanden waren. Anschließend können Sie die `/apps` -Knoten, damit AEM die benutzerdefinierten Änderungen am vordefinierten Modell abrufen kann.
+>Standardmäßige vorkonfigurierte Workflow-Modelle bleiben beim Upgrade Ihrer AEM-Instanz nicht erhalten. Adobe empfiehlt, die geänderten Workflow-Modelle zu kopieren, bevor Sie sie bearbeiten. Kopieren Sie beispielsweise das vorkonfigirierte Modell [!UICONTROL DAM-Update-Asset], bevor Sie den FFmpeg-Transkodierungsschritt im Modell [!UICONTROL DAM-Update-Asset] ändern, um bereits vor dem Upgrade vorhandene Videoprofilnamen auszuwählen. Sie können dann den Knoten `/apps` überlagern, damit AEM die benutzerdefinierten Änderungen am vorkonfigurierten Modell abrufen kann.

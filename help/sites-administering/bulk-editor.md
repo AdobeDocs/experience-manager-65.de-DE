@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -122,8 +122,8 @@ Im Beispiel oben werden alle Seiten, die Ihren Suchkriterien entsprechen, zurüc
 * **path:** Durchsucht nur Knoten unter diesem Pfad. Wenn Sie mehr als einen Begriff mit einem Pfad-Präfix festlegen, wird nur das letzte berücksichtigt.
 * **type:** Gibt nur Knoten des angegebenen Knotentyps zurück. Das schließt primäre und Mixin-Typen ein.  Sie können mehrere Knotentypen durch Kommas voneinander getrennt festlegen.  GQL gibt Knoten zurück, die einen der festgelegten Typen aufweisen.
 * **order:** Sortiert das Ergebnis nach den bestimmten Eigenschaften. Sie können mehrere Eigenschaftsnamen durch Kommas voneinander getrennt festlegen.  Um das Ergebnis in absteigender Reihenfolge zu sortieren, setzen Sie einfach ein Minuszeichen als Präfix des Eigenschaftsnamens. Zum Beispiel: order:-name.  Ein Pluszeichen gibt das Ergebnis in aufsteigender Reihenfolge zurück. Dies ist auch die Standardeinstellung.
-* **limit:** Begrenzt die Anzahl der Ergebnisse mithilfe eines Intervalls. Beispiel: limit:10..20. Das Intervall basiert auf null. Der Startwert ist ein-, der Endwert ausgeschlossen. Sie können auch eine Öffnung `interval:limit:10..` oder `limit:..20`
-Wenn die Punkte weggelassen und nur ein Wert angegeben wird, gibt GQL höchstens diese Anzahl von Ergebnissen zurück. Beispiel: `limit:10` (gibt die ersten zehn Ergebnisse zurück).
+* **limit:** Begrenzt die Anzahl der Ergebnisse mithilfe eines Intervalls. Beispiel: limit:10..20. Das Intervall basiert auf null. Der Startwert ist ein-, der Endwert ausgeschlossen. Sie können auch ein offenes `interval:limit:10..` oder `limit:..20` angeben
+Wenn Sie die Punkte weglassen und nur einen Wert angeben, gibt GQL höchstens diese Anzahl an Ergebnissen zurück. Beispiel: `limit:10` (gibt die ersten zehn Ergebnisse zurück).
 
 ### Exportieren von Inhalten {#exporting-content}
 

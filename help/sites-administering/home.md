@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '63'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -20,8 +20,8 @@ Erfahren Sie mehr über die Verwaltung von AEM 6.5. Diese Handbücher decken Si
 ## Wichtige Artikel zur Verwaltung
 
 * [Multi-Site-Management](/help/sites-administering/msm.md)
-* [MSM und Übersetzung](/help/sites-administering/msm-and-translation.md)
+* [MSM und Übersetzungen](/help/sites-administering/msm-and-translation.md)
 * [Vorgangs-Dashboard](/help/sites-administering/operations-dashboard.md)
 * [Sichern und Wiederherstellen](/help/sites-administering/backup-and-restore.md)
 * [Personalisierung](/help/sites-administering/personalization.md)
-* [Integration von Drittanbietern](/help/sites-administering/third-party-services.md)
+* [Integrationen von Drittanbietern](/help/sites-administering/third-party-services.md)

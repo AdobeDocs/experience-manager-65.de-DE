@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '471'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 78%
 
 Komponenten können angepasst werden, um einen JSON-Export ihrer Inhalte basierend auf einem Modeler-Framework zu generieren.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Der JSON-Export basiert auf [Sling-Modellen](https://sling.apache.org/documentation/bundles/models.html) und auf dem Framework des [Sling Model Exporter](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) (der sich wiederum auf [Jackson-Anmerkungen](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) stützt).
 
@@ -35,7 +35,7 @@ Zunächst muss ein Sling-Modell für die Komponente definiert werden.
 
 >[!NOTE]
 >
->Ein Beispiel für die Verwendung von Sling-Modellen finden Sie unter [Entwickeln von Sling Model Exportern in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=de).
+>Ein Beispiel für die Verwendung von Sling-Modellen finden Sie unter [Entwickeln von Sling-Modell-Exportern in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=de).
 
 Die Implementierungsklasse des Sling-Modells muss wie folgt kommentiert werden:
 
@@ -51,7 +51,7 @@ Außerdem kann die Sling-Modell-Klasse dadurch in der `ComponentExporter`-Oberfl
 
 >[!NOTE]
 >
->Jackson-Anmerkungen werden nicht auf der Ebene der Sling-Modell-Klasse, sondern auf der Ebene der Modell-Oberfläche angegeben. Damit wird sichergestellt, dass der JSON-Export als Teil der Komponenten-API gewertet wird.
+>Jackson-Anmerkungen werden nicht auf der Ebene der Sling-Modell-Klasse festgelegt, sondern auf der Ebene der Modell-Oberfläche. Damit wird sichergestellt, dass der JSON-Export als Teil der Komponenten-API gewertet wird.
 
 >[!NOTE]
 >
@@ -69,15 +69,15 @@ In einem solchen Fall muss der `model`-Selektor jedoch der erste Selektor und `.
 
 ## Kommentieren der Sling-Modell-Oberfläche {#annotate-the-sling-model-interface}
 
-Um vom JSON Exporter-Framework berücksichtigt zu werden, sollte die Modellschnittstelle die `ComponentExporter` -Schnittstelle (oder `ContainerExporter`, wenn eine Container-Komponente vorhanden ist).
+Damit sie im JSON Exporter-Framework beachtet wird, sollte die Oberfläche von `ComponentExporter` (oder `ContainerExporter` bei Container-Komponenten) in der Modelloberfläche implementiert werden.
 
 Für die entsprechende Sling-Modell-Oberfläche (`MyComponent`) wird in diesem Fall über [Jackson-Anmerkungen](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) definiert, wie sie exportiert (serialisiert) werden soll.
 
-Es müssen die richtigen Anmerkungen für die Modell-Oberfläche angewendet werden, um zu definieren, welche Methoden serialisiert werden sollen. Standardmäßig werden alle Methoden, die die übliche Benennungskonvention für Getter einhalten, serialisiert und leiten ihre JSON-Eigenschaftsnamen von den Getter-Namen aus. Um dies zu vermeiden bzw. zu überschreiben, benennen Sie die JSON-Eigenschaft mit `@JsonIgnore` oder `@JsonProperty` um.
+Es müssen die richtigen Anmerkungen für die Modell-Oberfläche angewendet werden, um zu definieren, welche Methoden serialisiert werden sollen. Standardmäßig werden alle Methoden serialisiert, die die gängigen Namenskonventionen für Abfragemethoden einhalten. Ihre JSON-Eigenschaftsnamen werden dabei naturgemäß von den Namen der Abfragemethode abgeleitet. Um dies zu vermeiden bzw. zu überschreiben, benennen Sie die JSON-Eigenschaft mit `@JsonIgnore` oder `@JsonProperty` um.
 
 ## Beispiel {#example}
 
-Die Kernkomponenten haben seit der Veröffentlichung den JSON-Export unterstützt [1.1.0 der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und kann als Referenz verwendet werden.
+Die Kernkomponenten unterstützen den JSON-Export seit der Version [1.1.0 der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). Sie können als Referenz verwendet werden.
 
 Ein Beispiel ist die Sling-Modell-Implementierung der Bild-Kernkomponente und deren kommentierte Oberfläche.
 

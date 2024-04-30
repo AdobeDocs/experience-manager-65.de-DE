@@ -13,7 +13,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '4843'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -605,7 +605,7 @@ Es gibt zahlreiche vorhandene Konfigurationen im Repository. Sie können ganz ei
 
 ### Komponenten-Platzhalter {#component-placeholders}
 
-Komponenten müssen immer HTML-Inhalte wiedergeben, die für den Autor sichtbar sind, auch wenn die Komponente keinen Inhalt hat. Andernfalls könnte sie visuell aus der Benutzeroberfläche des Editors verschwinden, sodass sie zwar technisch vorhanden, aber auf der Seite und im Editor unsichtbar ist. In einem solchen Fall können die Autoren die leere Komponente nicht auswählen und damit interagieren.
+Komponenten müssen immer HTML-Inhalte wiedergeben, die für den Autor sichtbar sind, auch wenn die Komponente keinen Inhalt hat. Andernfalls könnte sie visuell aus der Benutzeroberfläche des Editors verschwinden, sodass sie zwar technisch vorhanden, aber auf der Seite und im Editor unsichtbar ist. In einem solchen Fall können die Autorinnen und Autoren die leere Komponente nicht auswählen und mit ihr interagieren.
 
 Aus diesem Grund sollten Komponenten einen Platzhalter darstellen, solange sie beim Rendern der Seite im Seiteneditor (wenn der WCM-Modus `edit` oder `preview` ist) keine sichtbare Ausgabe erzeugen.
 Das typische HTML-Markup für einen Platzhalter sieht wie folgt aus:
@@ -1029,7 +1029,7 @@ Der Knoten `cq:listeners` (Knotentyp `cq:EditListenersConfig`) legt fest, was ge
 >  * `aftermove`
 >  * `aftercopy`
 
-Der Ereignis-Handler kann mit einer benutzerdefinierten Implementierung implementiert werden. Beispiel: wobei `project.customerAction` ist eine statische Methode:
+Der Ereignis-Handler kann mit einer benutzerdefinierten Implementierung implementiert werden. Zum Beispiel wo `project.customerAction` eine statische Methode ist:
 
 `afteredit = "project.customerAction"`
 

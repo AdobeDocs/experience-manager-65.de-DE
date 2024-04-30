@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Mit Adobe Experience Manager (AEM) können Sie Inhaltsfragmente zusammen mit der
 
 Ein Headless-Content-Management-System (CMS) ist:
 
-* &quot;*Ein Headless-Content-Management-System (oder Headless-CMS) ist ein reines Back-End-Content-Management-System (CMS), das von Grund auf als Inhalts-Repository erstellt wurde und Inhalte über eine API für die Anzeige auf jedem Gerät zugänglich macht.*
+* „*Ein Headless-Content-Management-System oder Headless-CMS ist ein Backend-Content-Management-System (CMS), das von Grund auf als Content-Repository erstellt wurde und Inhalte über eine API für die Anzeige auf jedem Gerät zugänglich macht.*“
 
   Weitere Informationen finden Sie in [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
 

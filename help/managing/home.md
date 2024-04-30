@@ -8,13 +8,13 @@ role: Admin,Architect,Data Architect,Developer,Leader
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '90'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
 # AEM 6.5-Verwaltungsanleitung
 
-Erfahren Sie, wie Sie ein AEM-Projekt erfolgreich verwalten können. Unterstützt von wichtigen Ressourcen, zusammen mit Best Practices und Richtlinien.
+Erfahren Sie, wie Sie ein AEM-Projekt erfolgreich verwalten können, mit Unterstützung durch wichtige Ressourcen, zusammen mit Best Practices und Richtlinien.
 
 ## Wichtige -Artikel
 

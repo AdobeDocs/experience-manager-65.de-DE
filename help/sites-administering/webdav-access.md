@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1118'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -191,7 +191,7 @@ macOS hat sich nun über WebDAV mit AEM verbunden und Sie können ihn wie jeden 
 
 ### Linux® {#linux}
 
-Die Verbindung über WebDAV unter Linux® erfordert keine Konfiguration, erfordert jedoch einige Schritte, um die Verbindung herzustellen, die je nach Desktop-Umgebung variieren.
+Die Verbindung über WebDAV unter Linux® setzt keine Konfiguration voraus, erfordert zum Herstellen der Verbindung jedoch verschiedene Schritte, die je nach Desktop-Umgebung variieren.
 
 #### GNOME {#gnome}
 

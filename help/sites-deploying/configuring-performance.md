@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '6470'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -494,7 +494,7 @@ Der Dispatcher bietet mehrere integrierte Mechanismen, mit denen Sie die Leistun
 >
 >Allgemein beinhalten viele Caching-Strategien die Auswahl von geeigneten URLs ausgewählt, und sie verlassen sich nicht auf diese zusätzlichen Daten.
 >
->Mit Dispatcher Version 4.1.11 können Sie auch Antwort-Header zwischenspeichern; siehe [Caching von HTTP-Antwort-Headern](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
+>Mit Dispatcher Version 4.1.11 können Sie auch Antwort-Header zwischenspeichern; siehe [Caching von HTTP-Antwort-Headern](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#configuring-the-dispatcher-cache-cache).
 >
 
 ### Berechnen des Dispatcher-Cache-Verhältnisses {#calculating-the-dispatcher-cache-ratio}
@@ -511,7 +511,7 @@ Die Formel zur Berechnung des Cache-Verhältnisses lautet:
 
 Wenn beispielsweise die Gesamtzahl der Anfragen 129491 und die Anzahl der von der Publishing-Instanz bereitgestellten Anforderungen 58959 beträgt, dann ist das Cache-Verhältnis: **(129491 - 58959)/129491= 54,5 %**.
 
-Wenn Sie keine 1-zu-1-Kopplung zwischen Publisher und Dispatcher haben, fügen Sie Anforderungen von allen Dispatchern und Herausgebern hinzu, um eine genaue Messung zu erhalten. Siehe auch [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md).
+Wenn Sie keine 1-zu-1-Kopplung zwischen Publisher und Dispatcher haben, fügen Sie Anfragen von allen Dispatchern und Publishern hinzu, um eine genaue Messung zu erhalten. Siehe auch [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md).
 
 >[!NOTE]
 >
@@ -530,7 +530,7 @@ Mit der Dispatcher-Version 4.1.11 können Sie Antwort-Header zwischenspeichern. 
 
 #### Vermeiden von URL-Parametern {#avoid-url-parameters}
 
-Vermeiden Sie nach Möglichkeit URL-Parameter für Seiten, die Sie zwischenspeichern möchten. Wenn Sie beispielsweise über eine Bildergalerie verfügen, wird die folgende URL nie zwischengespeichert (es sei denn, der Dispatcher ist [entsprechend konfiguriert](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)):
+Vermeiden Sie nach Möglichkeit URL-Parameter für Seiten, die Sie zwischenspeichern möchten. Wenn Sie beispielsweise über eine Bildergalerie verfügen, wird die folgende URL nie zwischengespeichert (es sei denn, der Dispatcher ist [entsprechend konfiguriert](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#configuring-the-dispatcher-cache-cache)):
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
@@ -618,7 +618,7 @@ Bezüglich der Mischung von eingeschränkten und öffentlichen Inhalten auf eine
 
 #### Sticky-Verbindungen  {#sticky-connections}
 
-[Sticky-Verbindungen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) stellen sicher, dass die Dokumente für eine Benutzerin oder einen Benutzer alle auf demselben Server erstellt werden. Wenn eine Benutzerin oder ein Benutzer diesen Ordner verlässt und später zu ihm zurückkehrt, bleibt die Verbindung erhalten. Um alle Dokumente zu speichern, die Sticky-Verbindungen für die Website erfordern, definieren Sie einen Ordner. Dieser sollte keine anderen Dokumente enthalten. Diese Funktion ist wichtig, wenn Sie personalisierte Seiten und Sitzungsdaten verwenden.
+[Sticky-Verbindungen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de#the-benefits-of-load-balancing) stellen sicher, dass die Dokumente für eine Benutzerin oder einen Benutzer alle auf demselben Server erstellt werden. Wenn eine Benutzerin oder ein Benutzer diesen Ordner verlässt und später zu ihm zurückkehrt, bleibt die Verbindung erhalten. Um alle Dokumente zu speichern, die Sticky-Verbindungen für die Website erfordern, definieren Sie einen Ordner. Dieser sollte keine anderen Dokumente enthalten. Diese Funktion ist wichtig, wenn Sie personalisierte Seiten und Sitzungsdaten verwenden.
 
 #### MIME-Typen {#mime-types}
 

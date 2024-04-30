@@ -8,7 +8,7 @@ role: Admin, Architect,Data Architect,Developer,User,Leader
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Der Begriff „Headless“ bezeichnet Systeme, bei denen der Inhalt von der Art 
 
 Üblicherweise würden Sie Ihre Inhalte in einem CMS verwalten und dasselbe CMS wäre für die Wiedergabe dieser Inhalte auf Ihren Webseiten verantwortlich.
 
-Headless bedeutet jetzt, dass Ihr Content-Set im CMS verwaltet und dann von einer oder mehreren (unabhängigen) Anwendungen aufgerufen werden kann.
+Headless bedeutet nun, dass Ihr Inhaltssatz im CMS verwaltet werden kann und dann von einer oder mehreren (unabhängigen) Anwendungen aufgerufen werden kann.
 
 Das bedeutet, dass Ihre Inhalte auf jedem Gerät und in einer Vielzahl von Formaten bereitgestellt werden können. Dadurch wird der gesamte Prozess viel flexibler und Sie müssen sich auch keine Gedanken über Layout und Formatierung machen.
 

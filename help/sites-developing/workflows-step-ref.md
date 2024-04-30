@@ -13,7 +13,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '3227'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Die folgenden Eigenschaften sind für viele Workflow-Schrittkomponenten auf der 
 
 * **Benachrichtigen Sie den Benutzer bzw. die Benutzerinn per E-Mail**
 
-   * Benachrichtigen Sie die Teilnehmer, indem Sie ihnen eine E-Mail senden, wenn der Workflow den Schritt erreicht.
+   * Benachrichtigen Sie die Teilnehmenden, indem Sie ihnen eine E-Mail senden, wenn der Workflow den Schritt erreicht.
    * Wenn diese Option aktiviert ist, wird eine E-Mail an den Benutzer bzw. die Benutzerin, die durch die Eigenschaft **Benutzer/Gruppe** definiert ist, oder an jedes Mitglied der Gruppe gesendet, wenn eine Gruppe definiert ist.
 
 * **Benutzer/Gruppe**
@@ -187,7 +187,7 @@ Die **ODER-Teilung** erstellt eine Verzweigung im Workflow, nach der nur eine de
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [Schritt ODER-Teilung](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable).
+>Weitere Informationen finden Sie unter [Schritt ODER-Teilung](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html?lang=de#use-a-variable).
 
 ![Verzweigung mithilfe der ODER-Teilung](assets/variables_orsplit_new.png)
 

@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '6185'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -358,7 +358,7 @@ Informationen zum Anpassen der Größe des internen WiredTiger-Cache finden Sie 
 
 NUMA (Non-Uniform Memory Access) ermöglicht es einem Kernel zu verwalten, wie Speicher den Prozessorkernen zugeordnet wird. Obwohl dieser Prozess versucht, den Speicherzugriff für die Kerne zu beschleunigen, um sicherzustellen, dass sie auf die benötigten Daten zugreifen können, beeinträchtigt NUMA MMAP und führt zusätzliche Latenzzeiten ein, da Lesevorgänge nicht vorhergesagt werden können. Daher muss NUMA für den `mongod`-Prozess auf allen fähigen Betriebssystemen deaktiviert werden.
 
-Im Wesentlichen ist in einer NUMA-Architektur der Speicher mit den CPUs verbunden und die CPUs sind mit einem Bus verbunden. In einer SMP- oder UMA-Architektur ist der Speicher mit dem Bus verbunden und wird von den CPUs gemeinsam genutzt. Wenn ein Thread Speicher auf einer NUMA-CPU zuweist, wird er gemäß einer Richtlinie zugewiesen. Standardmäßig wird Speicher zugeordnet, der an die lokale CPU des Threads angebunden ist, es sei denn, es ist keine freie vorhanden. In einem solchen Fall wird dann Speicher von einer freien CPU verwendet, allerdings mit höherem Aufwand. Nach der Zuweisung wechselt der Speicher nicht mehr zwischen den CPUs. Die Zuordnung erfolgt anhand einer Richtlinie, die vom übergeordneten Thread vererbt wird. Letztendlich ist dies der Thread, über den der Prozess gestartet wurde.
+Im Wesentlichen ist in einer NUMA-Architektur der Speicher mit den CPUs verbunden und die CPUs sind mit einem Bus verbunden. In einer SMP- oder UMA-Architektur ist der Speicher mit dem Bus verbunden und wird von den CPUs gemeinsam genutzt. Wenn ein Thread Speicher auf einer NUMA-CPU zuweist, wird er gemäß einer Richtlinie zugewiesen. Standardmäßig wird Speicher zugeordnet, der an die lokale CPU des Threads angebunden ist, es sei denn, es ist keine freie vorhanden. In einem solchen Fall wird dann Speicher von einer freien CPU verwendet, allerdings mit höherem Aufwand. Nach der Zuordnung wechselt der Speicher nicht mehr zwischen den CPUs. Die Zuordnung erfolgt anhand einer Richtlinie, die vom übergeordneten Thread vererbt wird. Letztendlich ist dies der Thread, über den der Prozess gestartet wurde.
 
 In vielen Datenbanken, die den Computer als eine mehrfache, einheitliche Speicherarchitektur betrachten, führt dieses Szenario dazu, dass die anfängliche CPU zuerst voll wird und die sekundäre CPU erst später gefüllt wird. Dies gilt insbesondere dann, wenn ein zentraler Thread für die Zuordnung von Speicherpuffern verantwortlich ist. Zur Lösung muss mithilfe des folgenden Befehls die NUMA-Richtlinie des Haupt-Threads geändert werden, mit dem der `mongod`-Prozess gestartet wird:
 

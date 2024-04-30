@@ -1,6 +1,6 @@
 ---
 title: Konzepte der Touch-optimierten Benutzeroberfläche von Adobe Experience Manager
-description: Mit Adobe Experience Manager 5.6 führte Adobe eine neue Touch-optimierte Benutzeroberfläche mit responsivem Design für die Autorenumgebung ein
+description: Mit Adobe Experience Manager 5.6 hat Adobe eine neue Touch-optimierte Benutzeroberfläche mit responsivem Design für die Autorenumgebung eingeführt.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -13,13 +13,13 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '2147'
-ht-degree: 26%
+ht-degree: 100%
 
 ---
 
 # Konzepte der Touch-optimierten Benutzeroberfläche von Adobe Experience Manager{#concepts-of-the-aem-touch-enabled-ui}
 
-Adobe Experience Manager (AEM) verfügt über eine Touch-optimierte Benutzeroberfläche mit [responsives Design](/help/sites-authoring/responsive-layout.md) für die Autorenumgebung, die sowohl für Touch- als auch für Desktop-Geräte entwickelt wurde.
+Adobe Experience Manager (AEM) bietet eine Touch-optimierte Benutzeroberfläche mit [responsivem Design](/help/sites-authoring/responsive-layout.md) für die Autorenumgebung, die sowohl für Touch- als auch für Desktop-Geräte entwickelt wurde.
 
 >[!NOTE]
 >
@@ -30,83 +30,83 @@ Die Touch-optimierte Benutzeroberfläche umfasst Folgendes:
 * Suite-Kopfzeile:
    * Zeigt das Logo an.
    * Enthält einen Link zu „Globale Navigation“.
-   * Bietet einen Link zu anderen generischen Aktionen, z. B. Suche, Hilfe, Experience Cloud-Lösungen, Benachrichtigungen und Benutzereinstellungen.
+   * Enthält einen Link zu anderen allgemeinen Aktionen, z. B. „Suchen“, „Hilfe“, „Experience Cloud-Lösungen“, „Benachrichtigungen“ und „Benutzereinstellungen“.
 * Leiste auf der linken Seite (Anzeige bei Bedarf, kann ausgeblendet werden):
    * Zeitleiste
    * Verweise
    * Filter
-* Die Navigationskopfzeile, die ebenfalls kontextabhängig ist und Folgendes anzeigen kann:
-   * Gibt an, welche Konsole Sie derzeit verwenden, oder Ihren Standort oder beides in dieser Konsole
-   * Auswahl für die linke Leiste
+* Kontextabhängige Navigationskopfzeile:
+   * Anzeige, welche Konsole Sie derzeit verwenden, bzw. Ihrer Position in der Konsole
+   * Auswahl für die Leiste auf der linken Seite
    * Breadcrumb
    * Zugriff auf geeignete Aktionen vom Typ **Erstellen**
-   * Anzeigen von Auswahlen
-* Der Inhaltsbereich, der:
-   * Listet die Inhaltselemente auf (z. B. Seiten, Assets, Forumsbeiträge usw.)
-   * Kann nach Bedarf formatiert werden, z. B. Spalte, Karte oder Liste
+   * Anzeige der Auswahl
+* Inhaltsbereich:
+   * Auflistung der Inhaltselemente (Seiten, Assets, Foren-Posts usw.)
+   * Formatierung nach Wunsch, z. B. Spalte, Karte oder Liste
    * Nutzung eines responsiven Designs (Größe der Anzeige wird je nach Gerät bzw. Fenstergröße automatisch angepasst)
-   * Scrollen unendlich (keine Seitennummerierung mehr, alle Elemente werden in einem Fenster aufgelistet)
+   * Unendliches Scrollen (keine Paginierung mehr, alle Elemente in einem Fenster)
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
 >[!NOTE]
 >
->Fast alle AEM Funktionen wurden auf die Touch-optimierte Benutzeroberfläche portiert. In einigen wenigen Fällen wird die Funktionalität jedoch auf die klassische Benutzeroberfläche zurückgesetzt. Siehe [Funktionsstatus der Touch-optimierten Benutzeroberfläche](/help/release-notes/touch-ui-features-status.md) für weitere Informationen.
+>Nahezu für die gesamte AEM-Funktionalität wurde eine Portierung zur Touch-optimierten Benutzeroberfläche durchgeführt. In einigen wenigen Fällen wird aber die Funktionalität der klassischen Benutzeroberfläche genutzt. Weitere Informationen erhalten Sie unter [Status der Funktionen der Touch-optimierten Benutzeroberfläche](/help/release-notes/touch-ui-features-status.md).
 
-Die Touch-optimierte Benutzeroberfläche wurde von Adobe entwickelt, um die Konsistenz des Benutzererlebnisses über mehrere Produkte hinweg zu gewährleisten. Er basiert auf:
+Die Touch-optimierte Benutzeroberfläche wurde von Adobe entwickelt, um produktübergreifend die Einheitlichkeit des Anwendererlebnisses sicherzustellen. Sie basiert auf den folgenden Komponenten:
 
-* **Coral-Benutzeroberfläche** (CUI) eine Implementierung des visuellen Adobe-Stils für die Touch-optimierte Benutzeroberfläche. Die Coral-Benutzeroberfläche bietet alles, was Ihr Produkt/Projekt/Ihre Webanwendung benötigt, um den visuellen Stil der Benutzeroberfläche zu übernehmen.
-* **Granite-Benutzeroberfläche** -Komponenten werden mit der Coral-Benutzeroberfläche erstellt.
+* Die **Coral-Benutzeroberfläche** (CUI) ist eine Implementierung des visuellen Adobe-Stils für die Touch-optimierte Benutzeroberfläche. Mit der Coral-Benutzeroberfläche verfügen Sie über alle Elemente, die Sie benötigen, um den visuellen Benutzeroberflächenstil für Ihr Produkt, Ihr Projekt oder Ihre Web-Anwendung einzuführen.
+* Komponenten der **Granite-Benutzeroberfläche** werden mithilfe der Coral-Benutzeroberfläche erstellt.
 
-Die Grundprinzipien der Touch-optimierten Benutzeroberfläche sind:
+Die Grundprinzipien der Touch-optimierten Benutzeroberfläche lauten:
 
-* Mobilgeräte zuerst (mit Blick auf Desktop)
+* Mobile Nutzung an erster Stelle („Mobile first“), ohne den Desktop zu vergessen
 * Responsives Design
-* Kontextbezogene Anzeige
-* Wiederverwendbar
-* Einschließen der eingebetteten Referenzdokumentation
-* Einschließen eingebetteter Tests
-* Bottom-up-Design, um sicherzustellen, dass diese Prinzipien auf jedes Element und jede Komponente angewendet werden
+* Anzeige je nach Kontext
+* Wiederverwendbarkeit
+* Einbettung von Referenzdokumentation
+* Einbettung von Tests
+* Bottom-up-Design zur Sicherstellung, dass diese Prinzipien auf alle Elemente und Komponenten angewendet werden
 
-Einen weiteren Überblick über die Struktur der Touch-optimierten Benutzeroberfläche finden Sie unter [Struktur der AEM Touch-optimierten Benutzeroberfläche](/help/sites-developing/touch-ui-structure.md).
+Einen weiteren Überblick über die Struktur der Touch-optimierten Benutzeroberfläche finden Sie unter [Struktur der Touch-optimierten Benutzeroberfläche von AEM](/help/sites-developing/touch-ui-structure.md).
 
-## AEM Technologiestapel {#aem-technology-stack}
+## AEM-Technologie-Stack {#aem-technology-stack}
 
-AEM verwendet die Granite-Plattform als Basis und die Granite-Plattform umfasst unter anderem das Java™ Content Repository.
+Für AEM wird die Granite-Plattform als Basis genutzt. Sie enthält unter anderem das Java™ Content Repository.
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
 ## Granite {#granite}
 
-Granite ist ein Adobe zum Öffnen des Webstapels und bietet verschiedene Komponenten, darunter:
+Granite ist der Open Web Stack von Adobe mit verschiedenen Komponenten, z. B.:
 
-* Ein Anwendungs-Starter
-* Ein OSGi-Framework, in dem alles bereitgestellt wird
-* Mehrere OSGi-Kompendium-Dienste zur Unterstützung von Bauanwendungen
-* Ein umfassendes Protokollierungs-Framework mit verschiedenen Protokollierungs-APIs
-* Die CRX-Repository-Implementierung der JCR-API-Spezifikation
-* Das Apache Sling Web Framework
+* Anwendungsstarter
+* OSGi-Framework zur Aufnahme aller Bereitstellungen
+* Verschiedene OSGi-Kompendiumdienste als Hilfe bei der Anwendungserstellung
+* Umfassendes Framework für die Protokollierung mit verschiedenen Protokollierungs-APIs
+* CRX-Repository-Implementierung der JCR-API-Spezifikation
+* Apache Sling Web Framework
 * Zusätzliche Teile des aktuellen CRX-Produkts
 
 >[!NOTE]
 >
->Granite wird als offenes Entwicklungsprojekt innerhalb der Adobe ausgeführt: Beiträge zum Code, Diskussionen und Probleme werden aus dem gesamten Unternehmen übernommen.
+>Granite wird als offenes Entwicklungsprojekt in Adobe ausgeführt: Beiträge zum Code, zu Diskussionen und zu Problemen kommen aus dem gesamten Unternehmen.
 >
->Granite ist jedoch **not** ein Open-Source-Projekt. Es basiert stark auf mehreren Open-Source-Projekten (insbesondere Apache Sling, Felix, Jackrabbit und Lucene), aber Adobe zeichnet eine klare Linie zwischen dem, was öffentlich ist und dem, was intern ist.
+>Granite ist aber **kein** Open-Source-Projekt. Es basiert in hohem Maße auf mehreren Open-Source-Projekten (vor allem Apache Sling, Felix, Jackrabbit und Lucene), aber Adobe achtet genau darauf, was öffentlich und was intern ist.
 
 ## Granite-Benutzeroberfläche {#granite-ui}
 
-Die Granite-Engineering-Plattform bietet außerdem ein Framework für die Foundation-Benutzeroberfläche. Die wichtigsten Ziele sind:
+Mit der Granite-Engineering-Plattform wird auch ein Benutzeroberflächen-Framework als Grundlage bereitgestellt. Hiermit soll vor allem Folgendes erreicht werden:
 
-* Bereitstellen granularer UI-Widgets
-* Implementieren Sie die Benutzeroberflächenkonzepte und illustrieren Sie die Best Practices (Rendern von langen Listen, Filtern von Listen, CRUD von Objekten, CUD-Assistenten usw.)
-* Bereitstellung einer erweiterbaren und Plug-in-basierten Verwaltungsbenutzeroberfläche
+* Bereitstellung von Benutzeroberflächen-Widgets mit hoher Granularität
+* Implementierung der Benutzeroberflächen-Konzepte und Darstellung der Best Practices (Rendering langer Listen, Filterung von Listen, CRUD für Objekte, CUD-Assistenten usw.)
+* Bereitstellung einer erweiterbaren und Plug-in-basierten Administrationsbenutzeroberfläche
 
-Diese erfüllen die Anforderungen:
+Hierfür werden die folgenden Anforderungen erfüllt:
 
-* Respektieren von &quot;mobile first&quot;
-* Erweiterbar
-* Überschreiben einfach
+* Respektierung des Ansatzes „Mobile first“
+* Erweiterbarkeit
+* Einfache Außerkraftsetzung
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 GraniteUI.pdf
@@ -114,37 +114,37 @@ GraniteUI.pdf
 [Datei abrufen](assets/graniteui.pdf)
 Die Granite-Benutzeroberfläche:
 
-* Verwendet die RESTful-Architektur von Sling
-* Implementiert Komponentenbibliotheken zum Erstellen inhaltsorientierter Webanwendungen
-* Bietet granulare UI-Widgets
-* Bietet eine standardmäßige, standardisierte Benutzeroberfläche
-* Ist erweiterbar
-* Wird sowohl für mobile als auch für Desktop-Geräte entwickelt (berücksichtigt zuerst mobile Geräte)
-* Kann in jeder beliebigen Granite-basierten Plattform/jedem beliebigen Produkt/Projekt verwendet werden, z. B. AEM
+* Nutzung der RESTful-Architektur von Sling
+* Implementierung von Komponentenbibliotheken, die für die Erstellung von inhaltszentrierten Web-Anwendungen bestimmt sind
+* Bereitstellung von Benutzeroberflächen-Widgets mit hoher Granularität
+* Bereitstellung einer einheitlichen Standardbenutzeroberfläche
+* Erweiterbarkeit
+* Gleichzeitige Auslegung für Mobil- und Desktop-Geräte (Respektierung des Ansatzes „Mobile first“)
+* Nutzung für alle Granite-basierten Plattformen/Produkte/Projekte, z. B. AEM
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
 * [Granite-Benutzeroberfläche – Foundation-Komponenten](#granite-ui-foundation-components) Diese Bibliothek mit Grundlagenkomponenten kann von anderen Bibliotheken verwendet oder erweitert werden.
 * [Granite-Benutzeroberfläche – Verwaltungskomponenten](#granite-ui-administration-components)
 
-### Client-seitig und Server-seitig {#client-side-vs-server-side}
+### Client-Seite und Server-Seite {#client-side-vs-server-side}
 
-Die Client-Server-Kommunikation in der Granite-Benutzeroberfläche besteht aus Hypertext, nicht aus Objekten. Daher ist es nicht erforderlich, dass der Client die Geschäftslogik versteht
+Die Client/Server-Kommunikation der Granite-Benutzeroberfläche besteht aus Hypertext und nicht aus Objekten. Es ist also nicht erforderlich, dass der Client die Business-Logik versteht
 
-* Der Server ergänzt die HTML mit semantischen Daten.
-* Der Client reichert den Hypertext mit Hypermedia (Interaktion) an
+* Der Server erweitert den HTML-Code um semantische Daten
+* Der Client erweitert den Hypertext um „Hypermedia“ (Interaktion)
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
 #### Clientseite {#client-side}
 
-Dabei wird eine Erweiterung des HTML-Vokabulars verwendet, vorausgesetzt der Autor kann seine Absicht zum Erstellen einer interaktiven Webanwendung zum Ausdruck bringen. Dies ist ein ähnlicher Ansatz wie [WAI-ARIA](https://www.w3.org/TR/wai-aria/) und [Mikroformate](https://microformats.org/).
+Hierfür wird eine Erweiterung des HTML-Vokabulars verwendet, die bereitgestellt wird, damit die Autorin oder der Autor die Absicht zur Erstellung einer interaktiven Web-App erklären kann. Dies ist ein ähnlicher Ansatz wie bei [WAI-ARIA](https://www.w3.org/TR/wai-aria/) und [Mikroformaten](https://microformats.org/).
 
-Sie besteht in erster Linie aus einer Sammlung von Interaktionsmustern (z. B. asynchrones Senden eines Formulars), die von JS- und CSS-Codes interpretiert werden und clientseitig ausgeführt werden. Die Rolle der Client-Seite besteht darin, das Markup für Interaktivität zu verbessern (das vom Server als Hypermedia-Angebot angegeben wird).
+Er umfasst hauptsächlich eine Sammlung von Interaktionsmustern (z. B. asynchrone Übermittlung eines Formulars), die anhand von JS- und CSS-Code implementiert und auf der Client-Seite ausgeführt werden. Die Rolle der Client-Seite besteht darin, das Markup zu erweitern (als Hypermedia-Affordanz des Servers bereitgestellt), um Interaktivität zu erzielen.
 
-Die Client-Seite ist unabhängig von jeder Server-Technologie. Solange der Server das entsprechende Markup bereitstellt, kann die Client-Seite seine Rolle erfüllen.
+Die Client-Seite ist unabhängig von der Server-Technologie. Solange der Server das entsprechende Markup bereitstellt, kann die Client-Seite ihre Rolle erfüllen.
 
-Derzeit werden die JS- und CSS-Codes als Granite bereitgestellt [clientlibs](/help/sites-developing/clientlibs.md) unter der Kategorie:
+Derzeit wird der JS- und CSS-Code als Granite-[clientlibs](/help/sites-developing/clientlibs.md)-Element unter der folgenden Kategorie bereitgestellt:
 
 `granite.ui.foundation and granite.ui.foundation.admin`
 
@@ -152,9 +152,9 @@ Die Bereitstellung erfolgt im Rahmen des Inhaltspakets:
 
 `granite.ui.content`
 
-#### Serverseitig {#server-side}
+#### Server-Seite {#server-side}
 
-Dies wird durch eine Sammlung von Sling-Komponenten gebildet, die es dem Autor ermöglichen, *zusammensetzen* eine schnelle Webapp. Der Entwickler entwickelt Komponenten, der Autor stellt die Komponenten zu einer Webanwendung zusammen. Die Rolle der Server-Seite besteht darin, dem Client das Hypermedia-Angebot (Markup) zu geben.
+Diese besteht aus einer Sammlung von Sling-Komponenten, die der Autorin oder dem Autor die schnelle *Erstellung* einer Web-App ermöglichen. Die Entwicklerin bzw. der Entwickler entwickelt Komponenten, die Autorin bzw. der Autor stellt die Komponenten zu einer Web-Anwendung zusammen. Die Rolle der Server-Seite besteht darin, die Hypermedia-Affordanz (Markup) für den Client bereitzustellen.
 
 Derzeit befinden sich die Komponenten im Granite-Repository unter:
 
@@ -176,7 +176,7 @@ Die Unterschiede zwischen der Granite-Benutzeroberfläche und ExtJS (für die kl
   </tr>
   <tr>
    <td>Remote-Prozessaufruf<br /> </td>
-   <td>Staatliche Übergänge</td>
+   <td>Statusübergänge</td>
   </tr>
   <tr>
    <td>Datenübertragungsobjekte</td>
@@ -199,35 +199,35 @@ Die Unterschiede zwischen der Granite-Benutzeroberfläche und ExtJS (für die kl
 
 ### Foundation-Komponenten der Granite-Benutzeroberfläche {#granite-ui-foundation-components}
 
-Die [Foundation-Komponenten der Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) stellen die grundlegenden Bausteine bereit, die zum Erstellen einer beliebigen Benutzeroberfläche erforderlich sind. Dazu gehören unter anderem:
+Mit den [Foundation-Komponenten der Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) werden die grundlegenden Bausteine bereitgestellt, die für die Erstellung einer Benutzeroberfläche benötigt werden, z. B.:
 
 * Schaltfläche
 * Hyperlink
 * Benutzer-Avatar
 
-Die Foundation-Komponenten finden Sie unter:
+Die Foundation-Komponenten befinden sich unter:
 
 `/libs/granite/ui/components/foundation`
 
-Diese Bibliothek enthält eine Granite-UI-Komponente für jedes Coral-Element. Eine Komponente ist inhaltsgesteuert, wobei sich ihre Konfiguration im Repository befindet. Dies ermöglicht die Erstellung einer Granite-Benutzeroberflächen-Anwendung, ohne dass manuell HTML-Markup geschrieben werden muss.
+Diese Bibliothek enthält eine Granite-Benutzeroberflächen-Komponente für jedes Coral-Element. Eine Komponente ist inhaltsorientiert und die zugehörige Konfiguration befindet sich im Repository. Dies ermöglicht die Erstellung einer Granite-Benutzeroberflächen-Anwendung, ohne dass manuell HTML-Markup geschrieben werden muss.
 
 Zweck:
 
 * Komponentenmodell für HTML-Elemente
-* Komponentenkomposition
-* Automatische Tests von Einheiten und Funktionen
+* Komposition der Komponenten
+* Automatisches Testen von Einheiten und Funktionalität
 
 Implementierung:
 
-* Repository-basierte Komposition und Konfiguration
-* Verwenden der von der Granite-Plattform bereitgestellten Testeinrichtungen
-* JSP-Vorlage
+* Komposition und Konfiguration auf Repository-Basis
+* Nutzung von Testeinrichtungen der Granite-Plattform
+* JSP-Vorlagen
 
 Diese Bibliothek mit Foundation-Komponenten kann von anderen Bibliotheken verwendet oder erweitert werden.
 
-### ExtJS und zugehörige Granite-UI-Komponenten {#extjs-and-corresponding-granite-ui-components}
+### ExtJS und zugehörige Granite-Benutzeroberflächen-Komponenten {#extjs-and-corresponding-granite-ui-components}
 
-Bei der Aktualisierung von ExtJS-Code zur Verwendung der Granite-Benutzeroberfläche bietet die folgende Liste einen praktischen Überblick über ExtJS-xtypes und Knotentypen mit den entsprechenden Granite-UI-Ressourcentypen.
+Die folgende Liste enthält eine nützliche Übersicht über ExtJS-xtype und -Knotentypen mit den entsprechenden Granite-Benutzeroberflächen-Ressourcentypen für die Aktualisierung von ExtJS-Code zur Verwendung der Granite-Benutzeroberfläche.
 
 | **ExtJS xtype** | **Ressourcentyp der Granite-Benutzeroberfläche** |
 |---|---|
@@ -256,75 +256,75 @@ Bei der Aktualisierung von ExtJS-Code zur Verwendung der Granite-Benutzeroberfl�
 
 ### Granite-Benutzeroberfläche – Verwaltungskomponenten {#granite-ui-administration-components}
 
-Die [Verwaltungskomponenten der Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) auf den Foundation-Komponenten aufbauen, um allgemeine Bausteine bereitzustellen, die von jeder Administration-Anwendung implementiert werden können. Dazu gehören unter anderem:
+Die [Administrationskomponenten der Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) stellen die Foundation-Komponenten für die Bereitstellung von generischen Bausteinen dar, die von allen Administrationsanwendungen implementiert werden können. Dazu zählen u. a.:
 
 * Globale Navigationsleiste
 * Leiste (Skelett)
-* Suchbereich
+* Suchbedienfeld
 
 Zweck:
 
-* Einheitliches Erscheinungsbild für Verwaltungsanwendungen
-* RAD für Applikationen zur Administration
+* Einheitliches Look-and-Feel für Administrationsanwendungen
+* RAD für Administrationsanwendungen
 
 Implementierung:
 
 * Vordefinierte Komponenten mit den Foundation-Komponenten
-* Komponenten können angepasst werden
+* Anpassbarkeit der Komponenten
 
 ## Coral-Benutzeroberfläche {#coral-ui}
 
 CoralUI.pdf
 
 [Datei abrufen](assets/coralui.pdf)
-Die Coral-Benutzeroberfläche (CUI) ist eine Implementierung des visuellen Adobe-Stils für die Touch-optimierte Benutzeroberfläche, der für Konsistenz des Benutzererlebnisses über mehrere Produkte hinweg sorgt. Die Coral-Benutzeroberfläche bietet alles, was Sie benötigen, um den visuellen Stil der Authoring-Umgebung zu übernehmen.
+Die Coral-Benutzeroberfläche (CUI) ist eine Implementierung des visuellen Stils von Adobe für die Touch-optimierte Benutzeroberfläche. Sie wurde entwickelt, um produktübergreifend die Einheitlichkeit des Anwendererlebnisses sicherzustellen. Die Coral-Benutzeroberfläche bietet alles, was Sie benötigen, um den visuellen Stil der Authoring-Umgebung zu übernehmen.
 
 >[!CAUTION]
 >
->Die Coral-Benutzeroberfläche ist eine UI-Bibliothek, die AEM Kunden zum Erstellen von Anwendungen und Webschnittstellen innerhalb der Grenzen ihrer lizenzierten Nutzung des Produkts zur Verfügung gestellt wird.
+>Die Coral-Benutzeroberfläche ist eine Benutzeroberflächenbibliothek, die für AEM-Kundinnen und -Kunden erhältlich ist, um Anwendungen und Web-Oberflächen innerhalb der Lizenzgrenzen des Produkts zu erstellen.
 >
 >Die Nutzung der Coral-Benutzeroberfläche ist nur unter folgenden Bedingungen bzw. für folgende Zwecke zulässig:
 >
 >
->* Wenn es versandt und mit AEM gebündelt wurde.
->* Wird verwendet, wenn die vorhandene Benutzeroberfläche der Authoring-Umgebung erweitert wird.
+>* Bei Lieferung im Bundle mit AEM.
+>* Zur Verwendung beim Erweitern der vorhandenen Benutzeroberfläche der Authoring-Umgebung.
 >* Begleitmaterial, Anzeigen und Präsentationen von Adobe
->* Die Benutzeroberfläche von Anwendungen mit Adobe-Branding (die Schriftart darf nicht für andere Zwecke verfügbar sein).
->* Mit geringfügigen Anpassungen.
+>* Für die Benutzeroberfläche von Anwendungen unter der Marke Adobe (Schriftart darf nicht frei für andere Zwecke verfügbar sein).
+>* Mit geringen Anpassungen.
 >
->Die Verwendung der Coral-Benutzeroberfläche sollte in folgenden Fällen vermieden werden:
+>Die Nutzung der Coral-Benutzeroberfläche sollte in folgenden Fällen vermieden werden:
 >
->* Dokumente und andere nicht mit Adobe in Verbindung stehende Elemente.
->* Umgebungen zur Inhaltserstellung (in denen die vorhergehenden Elemente möglicherweise von anderen generiert werden).
->* Anwendungen/Komponenten/Webseiten, die nicht eindeutig mit Adobe verbunden sind.
+>* Bei Dokumenten und anderen Elementen, die sich nicht auf Adobe beziehen.
+>* In Umgebungen für die Inhaltserstellung (in denen die Ausgangselemente ggf. von Dritten generiert werden)
+>* Bei Anwendungen/Komponenten/Web-Seiten, die nicht eindeutig mit Adobe verknüpft sind.
 >
 
 Die Coral-Benutzeroberfläche ist eine Sammlung von Bausteinen für die Entwicklung von Web-Anwendungen.
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
 
-Sie ist vollständig modular konzipiert und jedes Modul stellt basierend auf seiner primäre Rolle eine eigene Ebene dar. Obwohl die Ebenen so konzipiert wurden, dass sie sich gegenseitig unterstützen, können sie bei Bedarf auch unabhängig voneinander verwendet werden. Dies ermöglicht die Implementierung des Coral-Benutzererlebnisses in jeder HTML-fähigen Umgebung.
+Sie ist vollständig modular konzipiert und jedes Modul stellt basierend auf seiner primäre Rolle eine eigene Ebene dar. Die Ebenen sind so konzipiert, dass sie sich gegenseitig unterstützen, aber sie können bei Bedarf auch unabhängig voneinander verwendet werden. Dies ermöglicht es, das Coral-Anwendererlebnis in allen HTML-fähigen Umgebungen zu implementieren.
 
-In der Coral-Benutzeroberfläche ist es nicht erforderlich, ein bestimmtes Entwicklungsmodell und/oder eine bestimmte Plattform zu verwenden. Hauptziel von Coral ist die Bereitstellung eines einheitlichen und sauberen HTML5-Markups, unabhängig von der eigentlichen Methode, mit der dieses Markup ausgegeben wird. Er kann für Client- oder Server-seitiges Rendering, Vorlagen, JSP, PHP oder auch Adobe Flash-RIA-Anwendungen verwendet werden, um nur einige zu nennen.
+Für die Coral-Benutzeroberfläche muss kein bestimmtes Entwicklungsmodell bzw. keine bestimmte Plattform verwendet werden. Hauptziel von Coral ist es, einheitlichen und sauberen HTML5-Markupcode bereitzustellen, und zwar unabhängig von der eigentlichen Methode, die zum Ausgeben des Markupcodes verwendet wird. Er kann für Client- oder Server-seitiges Rendering, Vorlagen, JSP, PHP oder auch Adobe Flash-RIA-Anwendungen verwendet werden, um nur einige zu nennen.
 
-### HTML-Elemente - Markup-Ebene {#html-elements-the-markup-layer}
+### HTML-Elemente – Markup-Ebene {#html-elements-the-markup-layer}
 
-Die HTML-Elemente bieten ein einheitliches Erscheinungsbild für alle Elemente der grundlegenden Benutzeroberfläche (einschließlich Navigationsleiste, Schaltfläche, Menü, Leiste usw.).
+Über die HTML-Elemente wird ein einheitliches Look-and-Feel für alle Basiselemente der Benutzeroberfläche (z. B. Navigationsleiste, Schaltfläche, Menü, Leiste usw.) erzielt.
 
-Auf der grundlegendsten Ebene ist ein HTML-Element ein HTML-Tag mit einem dedizierten Klassennamen. Komplexere Elemente können aus mehreren Tags zusammengestellt werden, die ineinander geschachtelt sind (auf spezifische Weise).
+Auf der einfachsten Ebene ist ein HTML-Element ein HTML-Tag mit einem dedizierten Klassennamen. Komplexere Elemente können aus mehreren Tags zusammengestellt werden, die ineinander geschachtelt sind (auf spezifische Weise).
 
-Das CSS wird verwendet, um das eigentliche Erscheinungsbild bereitzustellen. Um das Erscheinungsbild einfach anzupassen (z. B. beim Branding), werden tatsächliche Stilwerte als Variablen deklariert, die durch die [WENIGER](https://lesscss.org/) Präprozessor während der Laufzeit.
+Das CSS wird verwendet, um das eigentliche Erscheinungsbild bereitzustellen. Um eine einfache Anpassung des Look-and-Feels (z. B. für Branding-Fälle) zu ermöglichen, werden die tatsächlichen Stilwerte als Variablen deklariert, die zur Laufzeit vom [LESS](https://lesscss.org/)-Präprozessor erweitert werden.
 
 Zweck:
 
-* Grundlegende Benutzeroberflächen-Elemente mit einem gemeinsamen Erscheinungsbild bereitstellen
-* Standardrastersystem bereitstellen
+* Bereitstellung von Basiselementen der Benutzeroberfläche mit einheitlichem Look-and-Feel
+* Bereitstellung des standardmäßigen Rastersystems
 
 Implementierung:
 
-* HTML-Tags mit Stilen, die von [Bootstrap](https://twitter.github.com/bootstrap/)
-* Klassen werden in LESS-Dateien definiert
-* Symbole werden als Schriftspritzen definiert
+* HTML-Tags mit von [Bootstrap](https://twitter.github.com/bootstrap/) inspirierten Stilen
+* Definition von Klassen in LESS-Dateien
+* Definition von Symbolen als Schriftart-Sprites
 
 Beispiel für verwendeten Markup-Code:
 
@@ -357,26 +357,26 @@ Die tatsächlichen Werte werden in einer LESS-Variablendatei definiert (der folg
 @baseFontFamily: @sansFontFamily;
 ```
 
-### Element-Plugins {#element-plugins}
+### Element-Plug-ins {#element-plugins}
 
-Viele HTML-Elemente müssen eine gewisse Dynamik aufweisen, z. B. das Öffnen und Schließen von Popup-Menüs. Dies ist die Rolle der Element-Plug-ins, die solche Aufgaben durch Manipulation des DOM mit JavaScript ausführen.
+Viele der HTML-Elemente müssen ein bestimmtes dynamisches Verhalten aufweisen, z. B. das Öffnen und Schließen von Popup-Menüs. Dies ist die Rolle der Element-Plug-ins, mit denen diese Aufgaben erreicht werden, indem das DOM per JavaScript geändert wird.
 
-Ein Plug-in ist entweder:
+Für ein Plug-in gilt einer der folgenden Fälle:
 
-* Für den Betrieb mit einem bestimmten DOM-Element entwickelt. Für ein Dialogfeld-Plug-in wird beispielsweise `DIV class=dialog` erwartet.
+* Es ist für ein spezifisches DOM-Element ausgelegt. Für ein Dialogfeld-Plug-in wird beispielsweise `DIV class=dialog` erwartet.
 * Es ist generischer Art. Über einen Layout-Manager wird beispielsweise das Layout für eine Liste mit `DIV`- oder `LI`-Elementen bereitgestellt.
 
-Das Plug-in-Verhalten kann mit Parametern angepasst werden, indem Sie:
+Das Plug-in-Verhalten kann auf folgende Arten mit Parametern angepasst werden:
 
 * Übergeben der Parameter mit einem JavaScript-Aufruf
 * Verwenden von dedizierten `data-*`-Attributen, die an den HTML-Markup-Code gebunden sind
 
 Entwickler können für jedes Plug-in den besten Ansatz wählen, aber die Faustregel lautet:
 
-* `data-*`-Attribute für Optionen, die sich auf das HTML-Layout beziehen. So legen Sie beispielsweise die Anzahl der Spalten fest
-* API-Optionen/-Klassen für Funktionen im Zusammenhang mit Daten. Beispiel: Erstellung der Liste der anzuzeigenden Elemente
+* `data-*`-Attribute für Optionen, die sich auf das HTML-Layout beziehen. Beispielsweise zum Angeben der Anzahl von Spalten
+* API-Optionen/-Klassen für Funktionalität in Verbindung mit Daten. Beispiel: Erstellung der Liste mit den anzuzeigenden Elementen
 
-Dasselbe Konzept wird für die Implementierung der Formularüberprüfung verwendet. Für ein Element, das validiert werden soll, müssen Sie das erforderliche Eingabeformular als benutzerdefiniertes `data-*`-Attribut angeben. Dieses Attribut wird dann als Option für ein Validierungs-Plug-in verwendet.
+Dasselbe Konzept wird auch verwendet, um eine Formularvalidierung zu implementieren. Für ein Element, das validiert werden soll, müssen Sie das erforderliche Eingabeformular als benutzerdefiniertes `data-*`-Attribut angeben. Dieses Attribut wird dann als Option für ein Validierungs-Plug-in verwendet.
 
 >[!NOTE]
 >
@@ -384,14 +384,14 @@ Dasselbe Konzept wird für die Implementierung der Formularüberprüfung verwend
 
 Zweck:
 
-* Dynamisches Verhalten für HTML-Elemente bereitstellen
-* Bereitstellung benutzerdefinierter Layouts, die mit reinem CSS nicht möglich sind
-* Formularüberprüfung durchführen
-* Erweiterte DOM-Manipulation durchführen
+* Bereitstellen von dynamischem Verhalten für HTML-Elemente
+* Bereitstellen von benutzerdefinierten Layouts, die mit reinem CSS nicht möglich sind
+* Durchführen einer Formularvalidierung
+* Durchführen der erweiterten DOM-Bearbeitung
 
 Implementierung:
 
-* jQuery-Plug-in, gebunden an bestimmte DOM-Elemente
+* jQuery-Plug-in, an spezifische DOM-Elemente gebunden
 * Verwenden von `data-*`-Attributen zum Anpassen des Verhaltens
 
 Ein Auszug aus Markup-Beispiel-Code (beachten Sie die als Daten-&#42;-Attribute angegebenen Optionen):
@@ -424,27 +424,27 @@ Aufruf des jQuery-Plug-ins:
 $('.cards').cardlayout ();
 ```
 
-Dies zeigt Folgendes:
+Dieser Vorgang führt zu folgendem Ergebnis:
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
-Die `cardLayout` -Plug-in legt die im `UL` -Elemente basierend auf ihren jeweiligen Höhen und unter Berücksichtigung der Breite des Elternteils.
+Mit dem `cardLayout`-Plug-in wird das Layout für die eingebundenen `UL`-Elemente basierend auf der entsprechenden Höhe erstellt und außerdem wird die Breite des übergeordneten Elements berücksichtigt.
 
-### HTML-Elemente-Widgets {#html-elements-widgets}
+### Widgets für HTML-Elemente {#html-elements-widgets}
 
-Ein Widget kombiniert ein oder mehrere grundlegende Elemente mit einem JavaScript-Plug-in, um UI-Elemente auf &quot;höherer Ebene&quot;zu bilden. Dadurch können komplexere Verhaltensweisen sowie ein komplexeres Erscheinungsbild implementiert werden, als ein einzelnes Element liefern könnte. Gute Beispiele hierfür sind die Tag-Auswahl oder Leisten-Widgets.
+In einem Widget werden ein oder mehrere grundlegende Elemente mit einem JavaScript-Plug-in kombiniert, um sozusagen Benutzeroberflächenelemente höherer Ebene zu erhalten. Auf diese Weise können ein komplexeres Verhalten und außerdem ein komplexeres Look-and-Feel als mit einem einzelnen Element implementiert werden. Gute Beispiele hierfür sind die Tag-Auswahl oder Leisten-Widgets.
 
-Ein Widget kann benutzerdefinierte Ereignisse sowohl auslösen als auch darauf lauschen, um eine Kooperation mit anderen Widgets der Seite zu ermöglichen. Einige Widgets sind native jQuery-Widgets, die die Coral-HTML-Elemente verwenden.
+Ein Widget kann benutzerdefinierte Ereignisse sowohl auslösen als auch darauf lauschen, um eine Kooperation mit anderen Widgets der Seite zu ermöglichen. Bei einigen Widgets handelt es sich um native jQuery-Widgets, für die die Coral-HTML-Elemente verwendet werden.
 
 Zweck:
 
-* Implementieren von UI-Elementen auf höherer Ebene mit komplexem Verhalten
+* Implementieren von Benutzeroberflächen-Elementen höherer Ebene für komplexeres Verhalten
 * Auslösen und Verarbeiten von Ereignissen
 
 Implementierung:
 
-* jQuery-Plug-in + HTML Markup
-* Kann Client-/Server-seitige Vorlagen verwenden
+* jQuery-Plug-in und HTML-Markup
+* Nutzung Client/Server-seitiger Vorlagen
 
 Beispiel-Markup:
 
@@ -459,7 +459,7 @@ $(".tagManager").tagsManager({
         prefilled: ["Pisa", "Rome"] })
 ```
 
-Das Plug-in gibt HTML Markup aus (dieses Markup verwendet grundlegende Elemente, die intern andere Plug-ins verwenden können):
+Das Plug-in gibt HTML-Markup aus (hierfür werden grundlegende Elemente verwendet, die ggf. intern andere Plug-ins nutzen):
 
 ```
 <span>Pisa</code>
@@ -475,26 +475,26 @@ Das Plug-in gibt HTML Markup aus (dieses Markup verwendet grundlegende Elemente,
        autocomplete="off">
 ```
 
-Dies zeigt Folgendes:
+Dieser Vorgang führt zu folgendem Ergebnis:
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 
 ### Dienstprogrammbibliothek {#utility-library}
 
-Diese Bibliothek ist eine Sammlung von JavaScript-Helper-Plug-ins und/oder Funktionen, die:
+Diese Bibliothek ist eine Sammlung mit JavaScript-Hilfs-Plug-ins bzw. -Funktionen, für die Folgendes gilt:
 
-* Benutzeroberflächenunabhängig
-* Entscheidend für die Erstellung von Web-Anwendungen mit vollem Funktionsumfang
+* Unabhängig von der Benutzeroberfläche
+* Trotzdem wichtig für die Erstellung von Web-Anwendungen mit vollem Funktionsumfang
 
-Dazu gehören die XSS-Handhabung und der Ereignisbus.
+Hierzu gehören auch die XSS-Verarbeitung und der „Event Bus“.
 
-Die HTML-Element-Plug-ins und Widgets können zwar auf Funktionen der Dienstprogrammbibliothek beruhen, die Dienstprogrammbibliothek kann jedoch keine feste Abhängigkeit von den Elementen und Widgets selbst aufweisen.
+Die HTML-Element-Plug-ins und -Widgets können zwar auf Funktionalität basieren, die über die Dienstprogrammbibliothek bereitgestellt wird, aber die Dienstprogrammbibliothek darf keine feste Abhängigkeit von den Elementen oder Widgets selbst aufweisen.
 
 Zweck:
 
 * Bereitstellung von allgemeiner Funktionalität
-* Implementierung des Ereignisbus
-* Clientseitige Vorlagen
+* Event-Bus-Implementierung
+* Client-seitige Vorlagen
 * XSS
 
 Implementierung:

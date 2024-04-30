@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '1609'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Damit LDAP mit AEM funktioniert, müssen Sie drei OSGi-Konfigurationen erstellen
 
 >[!NOTE]
 >
->Sehen Sie sich das Tutorial [Oak&#39;s External Login Module – Authenticating with LDAP and Beyond](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html) an, um sich ausführlich über externe Anmeldemodule zu informieren.
+>Sehen Sie sich das Tutorial [Oak&#39;s External Login Module – Authenticating with LDAP and Beyond](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=de) an, um sich ausführlich über externe Anmeldemodule zu informieren.
 >
 >Weitere Informationen zum Konfigurieren von Experience Manager mit Apache DS finden Sie unter [Konfigurieren von Adobe Experience Manager 6.5 für Apache Directory Service](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805).
 
@@ -280,12 +280,12 @@ Um die Debug-Protokollierung zu aktivieren, müssen Sie Folgendes tun:
 
 * Protokollstufe: Debug
 * Protokolldatei logs/ldap.log
-* Nachrichtenmuster: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Meldungsmuster: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Logger: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Protokollstufe: Debug
 * Protokolldatei: logs/external.log
-* Nachrichtenmuster: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Meldungsmuster: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Logger: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## Hinweis zur Gruppenzuordnung {#a-word-on-group-affiliation}

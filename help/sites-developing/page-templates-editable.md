@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3186'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -49,7 +49,7 @@ Bei den in diesem Dokument beschriebenen Schritten wird vorausgesetzt, dass Sie 
 >[!NOTE]
 >
 >Das folgende Tutorial kann auch für das Einrichten einer bearbeitbaren Seitenvorlage in einem neuen Projekt von Interesse sein:
->[Erste Schritte mit AEM Sites Teil 2 – Erstellen einer Basisseite und Vorlage](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html)
+>[Erste Schritte mit AEM Sites Teil 2 – Erstellen einer Basisseite und Vorlage](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=de)
 
 ## Erstellen neuer Vorlagen {#creating-a-new-template}
 

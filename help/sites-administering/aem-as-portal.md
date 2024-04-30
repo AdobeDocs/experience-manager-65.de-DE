@@ -615,7 +615,7 @@ Bei der Implementierung eines solchen Dienstes ist darauf zu achten, dass die Ei
 | **Name** | **Beschreibung** | **Standardverhalten** |
 |---|---|---|
 | Authenticator | Stellt Authentifizierungsinformationen für AEM bereit | Verwendet einen konfigurierbaren technischen Benutzer für sowohl Author als auch Publish. Alternativ kann SSO verwendet werden. |
-| HTMLRewriter | Links und Bilder neu schreiben | Schreibt AEM-Links zu Portal-Links um, kann durch einen UrlMapper und einen TextMapper erweitert werden. |
+| HTMLRewriter | Schreibt Links, Bilder usw. um | Schreibt AEM-Links zu Portal-Links um, kann durch einen UrlMapper und einen TextMapper erweitert werden. |
 | HttpClientService | Verarbeitet alle HTTP-Verbindungen | Standardimplementierung. |
 | LocaleHandler | Verarbeitet die Gebietsschema-Informationen | Schreibt einen Link zum Inhalt in Bezug auf das Gebietsschema neu. |
 | LocaleDetector | Ermittelt das Gebietsschema der Benutzenden | Verwendet das vom Portal bereitgestellte Gebietsschema. |

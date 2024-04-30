@@ -13,7 +13,7 @@ role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '1638'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Taggen von Inhalten und Verwenden der AEM-Tagging-Infrastruktur:
 
 Die Deklaration eines Tags wird im Repository in einem Knoten vom Typ `cq:Tag` erfasst
 
-Ein Tag kann ein einfaches Wort sein (zum Beispiel `sky`) oder stellen eine hierarchische Taxonomie dar (z. B. `fruit/apple`, d. h. sowohl das generische `fruit` und spezifischere `apple`).
+Ein Tag kann ein einfaches Wort) sein (z. B. `sky`) oder eine hierarchische Taxonomie darstellen (z. B. `fruit/apple`, womit sowohl `fruit` im Allgemeinen als auch `apple` im Speziellen gemeint ist).
 
 Tags werden anhand einer eindeutigen Tag-ID identifiziert.
 
@@ -78,7 +78,7 @@ In AEM ist der Basispfad `/content/cq:tags` und der Stammknoten ist vom Typ `cq:
 
 ### Tag-Namespace {#tag-namespace}
 
-Mithilfe von Namespaces können Sie Elemente gruppieren. Der häufigste Anwendungsfall ist ein Namespace pro Site (z. B. öffentlich, intern und portal) oder pro größerer Anwendung (z. B. WCM, Assets, Communities). Namespaces können aber auch anderweitig eingesetzt werden. Namespaces werden in der Benutzeroberfläche verwendet, um nur die Untergruppe von Tags anzuzeigen (d. h. die Tags eines bestimmten Namespace), die für den aktuellen Inhalt gültig ist.
+Mithilfe von Namespaces können Sie Elemente gruppieren. Der vorherrschende Anwendungsfall besteht darin, einen Namespace pro Site (z. B. öffentlich, intern und Portal) oder pro größerer Anwendung (z. B. WCM, Assets oder Communitys) zu verwenden. Namespaces können aber auch anderweitig eingesetzt werden. Namespaces werden in der Benutzeroberfläche verwendet, um nur die Untergruppe von Tags (d. h. die Tags eines bestimmten Namespace) anzuzeigen, die auf den aktuellen Inhalt anwendbar sind.
 
 Der Namespace des Tags ist die erste Ebene im Teilbaum der Taxonomie, der den Knoten direkt unterhalb des [Stammknotens der Taxonomie darstellt](#taxonomy-root-node). Ein Namespace ist ein Knoten vom Typ `cq:Tag`, dessen übergeordnetes Element nicht vom Knotentyp `cq:Tag` ist.
 

@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '2887'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -175,7 +175,7 @@ Die entsprechende Eigenschaft für den Dialogfeldmodus lautet `name`.
 
 ## Aktivieren von RTE-Funktionen durch Aktivieren von Plug-ins {#enable-rte-functionalities-by-activating-plug-ins}
 
-RTE-Funktionen werden über eine Reihe von Plug-ins mit jeweils einer Eigenschaft „Funktionen“ bereitgestellt. Sie können die Funktionen so konfigurieren, dass die verschiedenen Funktionen der einzelnen Plug-ins aktiviert oder deaktiviert werden.
+RTE-Funktionen werden über eine Reihe von Plug-ins mit jeweils einer Funktionseigenschaft bereitgestellt. Sie können die Funktionen so konfigurieren, dass die verschiedenen Funktionen der einzelnen Plug-ins aktiviert oder deaktiviert werden.
 
 Ausführliche Konfigurationen der RTE-Plug-ins finden Sie unter [Aktivieren und Konfigurieren der RTE-Plug-ins](/help/sites-administering/configure-rich-text-editor-plug-ins.md).
 
@@ -261,7 +261,7 @@ Die verfügbaren Optionen im RTE werden von der Benutzeroberflächenkonfiguratio
 * Wenn die Benutzeroberflächen-Konfiguration des RTE entfernt oder ein Element nicht aktiviert wird, kann die Inhaltsrichtlinie sie nicht konfigurieren.
 * Ein Autor hat nur auf die Funktionen Zugriff, die durch die Benutzeroberflächen-Konfigurationen und Content-Richtlinien zur Verfügung gestellt werden.
 
-Beispielsweise können Sie die [Dokumentation zur Text-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor) sehen.
+Beispielsweise können Sie die [Dokumentation zur Text-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=de#the-text-component-and-the-rich-text-editor) sehen.
 
 ## Anpassen der Zuordnung zwischen Symbolleistenelementen und Befehlen {#iconstoolbar}
 

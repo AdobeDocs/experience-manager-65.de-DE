@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1795'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Dieser Artikel baut auf diesen Grundlagen auf, sodass Sie verstehen, wie Sie Ihr
 
 *Die Welt da draußen ist groß und schlecht*.
 
-Vielleicht, aber vielleicht auch nicht. Es ist sicherlich eine überwältigende Mehrheit ***kompliziert*** Welt da draußen. Die Datenmodellierung wird verwendet, um eine vereinfachte Darstellung eines sehr (sehr) kleinen Unterabschnitts zu definieren, wobei die spezifischen Informationen verwendet werden, die für einen bestimmten Zweck benötigt werden.
+Vielleicht, aber vielleicht auch nicht. Mit Sicherheit ist die Welt aber sehr ***kompliziert*** geworden. Die Datenmodellierung wird verwendet, um eine vereinfachte Darstellung eines sehr (sehr) kleinen Unterabschnitts zu definieren, wobei die spezifischen Informationen verwendet werden, die für einen bestimmten Zweck benötigt werden.
 
 >[!NOTE]
 >

@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '706'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -119,11 +119,11 @@ Falls Sie den Dispatcher verwenden, müssen Sie eine Dispatcher-Farm mit den fol
 
 * [virtualhosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#identifying-virtual-hosts-virtualhosts): Entspricht dem Pfad zu den Seiten, auf die die CUG angewendet wird
 * \sessionmanagement: siehe unten.
-* [cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache): Ein Zwischenspeicher-Verzeichnis, das für die Dateien vorgesehen ist, auf die die CUG angewendet wird
+* [cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#configuring-the-dispatcher-cache-cache): Ein Zwischenspeicher-Verzeichnis, das für die Dateien vorgesehen ist, auf die die CUG angewendet wird
 
 ### Konfigurieren des Dispatcher-Sitzungs-Managements für CUGs {#configuring-dispatcher-session-management-for-cugs}
 
-Konfigurieren Sie das [Sitzungsmanagement in der Datei dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) für die CUG. Der Authentifizierungs-Handler, der verwendet wird, wenn der Zugriff auf CUG-Seiten angefordert wird, bestimmt, wie Sie das Sitzungsmanagement konfigurieren.
+Konfigurieren Sie das [Sitzungsmanagement in der Datei dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#enabling-secure-sessions-sessionmanagement) für die CUG. Der Authentifizierungs-Handler, der verwendet wird, wenn der Zugriff auf CUG-Seiten angefordert wird, bestimmt, wie Sie das Sitzungsmanagement konfigurieren.
 
 ```xml
 /sessionmanagement
@@ -137,7 +137,7 @@ Konfigurieren Sie das [Sitzungsmanagement in der Datei dispatcher.any](https://e
 >Wenn für eine Dispatcher-Farm das Sitzungsmanagement aktiviert ist, werden alle von der Farm verarbeiteten Seiten nicht zwischengespeichert. Um Seiten zwischenzuspeichern, die sich außerhalb der CUG befinden, erstellen Sie eine zweite Farm in der Datei dispatcher.any
 >, die die Nicht-CUG-Seiten verarbeitet.
 
-1. Konfigurieren Sie [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement), indem Sie `/directory` festlegen, zum Beispiel:
+1. Konfigurieren Sie [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#enabling-secure-sessions-sessionmanagement), indem Sie `/directory` festlegen, zum Beispiel:
 
    ```xml
    /sessionmanagement

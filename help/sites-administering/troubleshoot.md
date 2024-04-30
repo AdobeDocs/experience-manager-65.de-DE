@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '536'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ Ein Thread-Speicherauszug ist eine Liste aller Java™-Threads, die derzeit akti
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Weitere Informationen dazu finden Sie in der Dokumentation [Erstellen von Thread-Speicherauszügen von einem JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html).
+Weitere Informationen dazu finden Sie in der Dokumentation [Erstellen von Thread-Speicherauszügen von einem JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=de).
 
 ### Überprüfen auf nicht beendete JCR-Sitzungen {#checking-for-unclosed-jcr-sessions}
 

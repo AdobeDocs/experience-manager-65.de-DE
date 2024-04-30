@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '1954'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -174,7 +174,7 @@ Da derselbe Konfigurationsparameter an mehreren Orten gespeichert wird, geht das
 
 >[!NOTE]
 >
->Lesen Sie auch, [wie Sie eine Repository-basierte Konfiguration für nur eine bestimmte Instanz definieren](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html).
+>Lesen Sie auch, [wie Sie eine Repository-basierte Konfiguration für nur eine bestimmte Instanz definieren](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=de).
 
 ### Hinzufügen einer neuen Konfiguration zum Repository {#adding-a-new-configuration-to-the-repository}
 
@@ -249,7 +249,7 @@ Um die neue Konfiguration zum Repository hinzuzufügen, gehen Sie folgendermaße
    * Typ: entsprechend 
    * Wert: nach Bedarf.
 
-   Sie dürfen nur Eigenschaften für die Parameter erstellen, die Sie konfigurieren möchten, andere verwenden weiterhin die von AEM festgelegten Standardwerte.
+   Sie müssen nur Eigenschaften für die Parameter erstellen, die konfiguriert werden sollen. Die anderen verwenden weiterhin die von AEM festgelegten Standardwerte.
 
 1. Speichern Sie alle Änderungen.
 

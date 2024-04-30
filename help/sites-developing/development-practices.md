@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '617'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -67,4 +67,4 @@ Pfadfinder haben eine Regel: „Hinterlass es besser, als du es vorgefunden hast
 
 ### Implementierung von YAGNI-Funktionen vermeiden {#avoid-implementing-yagni-features}
 
-YAGNI (You Are Not Gonna Need It) Features sind Dinge, die implementiert werden, wenn wir erwarten, dass wir etwas in der Zukunft brauchen, auch wenn wir es jetzt nicht benötigen. Idealerweise sollte der einfachste Code implementiert werden, der heute funktioniert, und anhand konstanter Refaktorierung sichergestellt werden, dass sich die Architektur des Systems mit den Anforderungen und der Zeit weiterentwickelt. Dies ermöglicht eine Konzentration auf das Wesentliche und verhindert, dass der Code aufgebläht wird und die Funktionen überhandnehmen.
+YAGNI-Funktionen („You Are Not Gonna Need It“, zu Deutsch: „Du wirst es nicht brauchen“) sind Elemente, die implementiert werden, wenn erwartet wird, dass sie zwar in der Zukunft, aber nicht momentan benötigt werden. Idealerweise sollte der einfachste Code implementiert werden, der heute funktioniert, und anhand konstanter Refaktorierung sichergestellt werden, dass sich die Architektur des Systems mit den Anforderungen und der Zeit weiterentwickelt. Dies ermöglicht eine Konzentration auf das Wesentliche und verhindert, dass der Code aufgebläht wird und die Funktionen überhandnehmen.

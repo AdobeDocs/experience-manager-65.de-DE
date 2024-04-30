@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '4520'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -143,7 +143,7 @@ Folgende Werte werden empfohlen:
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
 
-In AEM 6.3 sind die beiden oben genannten Parameter vorkonfiguriert und können über die OSGi QueryEngineSettings beibehalten werden.
+In AEM 6.3 sind die beiden oben stehenden Parameter standardmäßig vorkonfiguriert und können über die OSGi QueryEngineSettings beibehalten werden.
 
 Weitere Informationen finden Sie unter: [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
@@ -406,7 +406,7 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
 
 ### Textvorextraktion von Binärdateien {#text-pre-extraction-of-binaries}
 
-Textvorextraktion ist der Prozess der Extrahierung und Verarbeitung von Text aus Binärdateien direkt aus dem Datenspeicher über einen isolierten Prozess und der direkten Offenlegung des extrahierten Textes für nachfolgende Neuindizierungen von Oak-Indizes.
+Die Vorextraktion von Text ist das Extrahieren und Verarbeiten von Text aus Binärdateien, und zwar direkt aus dem Datenspeicher über einen isolierten Prozess, sowie das direkte Offenlegen des extrahierten Texts für nachfolgende Neuindizierungen/Indizierungen von Oak-Indizes.
 
 * Die Oak-Textvorextraktion wird für die Neuindizierung/Indizierung von Lucene-Indizes in Repositorys mit großen Dateimengen (Binärdateien) empfohlen, die extrahierbaren Text enthalten (z. B. PDF, Word Docs, PPTs und TXT), der für die Volltextsuche über bereitgestellte Oak-Indizes qualifiziert ist. Beispiel: `/oak:index/damAssetLucene`.
 * Von einer Textvorextraktion profitiert lediglich die Neuindizierung/Indizierung von Lucene-Indizes, aber NICHT von Oak-Eigenschaftenindizes, da Eigenschaftenindizes keinen Text aus Binärdateien extrahieren.

@@ -8,7 +8,7 @@ role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '138'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Die Bereitstellung der erstellten Pakete in AEM wird vom Adobe Content Package M
 >
 >Weiterführende Ressourcen:
 >
->* Informationen zur Bereitstellung von AEM-Anwendungen im Artikel zum [Adobe Content Package Maven-Plug-in](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) in der Dokumentation zu AEM as a Cloud Service.
+>* Informationen zur Bereitstellung von AEM-Anwendungen im Artikel zum [Adobe Content Package Maven-Plug-in](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=de#developer-tools) in der Dokumentation zu AEM as a Cloud Service.
 >* Informationen zur Strukturierung moderner AEM-Projekte im Artikel zur [AEM-Projektstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=de) in der Dokumentation zu AEM as a Cloud Service.
 >* Informationen zum Starten eines neuen AEM-Projekts mit dem Archetyp in der Dokumentation zum [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de).
 >

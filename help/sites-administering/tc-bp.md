@@ -1,6 +1,6 @@
 ---
 title: Best Practices für die Übersetzung
-description: Finden Sie Best Practices, die von Adobe-Engineering- und Beratungsteams zusammengestellt werden, um Sie bei der Erstellung und Ausführung von Übersetzungsprojekten zu unterstützen.
+description: Hier finden Sie Best Practices für die Einrichtung und Ausführung von Übersetzungsprojekten – zusammengestellt von Technik- und Beratungs-Teams von Adobe.
 feature: Language Copy
 exl-id: 01a81c4b-cb30-4f7e-b281-7194ebb5fc70
 solution: Experience Manager, Experience Manager Sites
@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '837'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,13 +29,13 @@ Das Erstellen bzw. Erweitern einer globalen Web-Präsenz kann ein komplexer Proz
 
 ## Site-Struktur {#site-structure}
 
-* Beginnen Sie den Entwurf der Site-Struktur mit der Untersuchung Ihrer Inhalte und stellen Sie fest, wo und in welcher Sprache Inhalte verfasst werden. Dieser Ort sollte die oberste Ebene Ihrer Site sein.
-* Bewährt und empfohlen ist eine **sprachbasierte Struktur** mit höchstens drei Ebenen zwischen den Autorenaktivitäten auf höchster Ebene und den landesspezifischen Websites.
+* Beginnen Sie den Entwurf der Site-Struktur mit der Untersuchung Ihrer Inhalte und stellen Sie fest, wo und in welcher Sprache Inhalte verfasst werden. Dieser Ort muss die höchste Ebene Ihrer Website darstellen.
+* Bewährt und empfohlen ist eine **sprachbasierte Struktur** mit höchstens drei Ebenen zwischen den Autorenaktivitäten auf höchster Ebene und den landesspezifischen Sites.
 * Verwenden Sie für sprachen- bzw. länderspezifische Websites eine Namenskonvention, die den **W3C-Standards** entspricht.
 * Legen Sie fest, wie Inhalte nach Regionen und Ländern verteilt werden. Berücksichtigen Sie Länder, in denen dieselbe Sprache gesprochen wird. Es wird empfohlen, Sprachstämme zu erstellen, eine Ebene nicht aktivierter Seiten, auf denen übersetzte Inhalte überprüft und geändert und dann an eine länderspezifische Website mit der jeweiligen Sprache verteilt oder von ihr abgerufen werden können.
 * Zum Erstellen von Sprachstämmen gibt es zwei Ansätze, einen mit Sprachkopien und einen mit MSM-/Live Copies.
 
-   * Der Sprachkopie-Ansatz wird von AEM nativen Übersetzungsintegrations-Framework verwendet und ist daher der einfachste Einstiegsweg. Das Framework bietet eine Benutzeroberfläche, die es zunächst einfach macht, inhaltliche Änderungen vom Stamm der Hauptsprache (z. B. Englisch) an Sprachstämme weiterzugeben und zu übersetzen. Mit dem Wachstum des Projekts wird die Workflow-Automatisierung jedoch immer notwendiger für die Verwaltung der Übersetzung der steigenden Anzahl von Seiten und/oder Sprachen.
+   * Der Ansatz mit den Sprachkopien wird vom standardmäßigen Übersetzungsintegrations-Framework von AEM verwendet und stellt daher die einfachste Methode für den Anfang dar. Das Framework bietet eine Benutzeroberfläche, die es zunächst einfach macht, inhaltliche Änderungen vom Stamm der Hauptsprache (z. B. Englisch) an Sprachstämme weiterzugeben und zu übersetzen. Mit dem Wachstum des Projekts wird die Workflow-Automatisierung jedoch immer notwendiger für die Verwaltung der Übersetzung der steigenden Anzahl von Seiten und/oder Sprachen.
    * Der Ansatz mit MSM/Live Copies ist möglicherweise eine Alternative für fortgeschrittene Anwendungsfälle mit größeren, komplexeren Websites. Zur Verwaltung der komplexen Vererbungsverhältnisse zwischen der Hauptsprache und den Sprachstämmen sowie zur Verringerung des Risikos, bestehende Übersetzungen zu überschreiben, sind starke Governance und effiziente Workflow-Automatisierung erforderlich. Diese Verwaltung ist mithilfe von Übersetzungs-Connectors möglich. In [MSM und mehrsprachige Websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites) finden Sie weitere Informationen.
 
 * Wenn bei der primären Sprache globale Varianten vorliegen, ist eine Option, mit MSM eine Live Copy vom globalen Stamm zur Übersetzung zu erstellen. Wenn beispielsweise in einem Stamm in amerikanischem Englisch eine Bearbeitung durchgeführt wird, erstellen Sie einen Stamm in internationalem Englisch als Live Copy und Grundlage für die Übersetzung in andere Sprachen.

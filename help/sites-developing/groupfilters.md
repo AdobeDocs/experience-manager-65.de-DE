@@ -14,7 +14,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -30,11 +30,11 @@ Entwerfen Sie Ihre Filter so, dass Sie Kombinationen von ihnen verwenden können
 
 Nachdem Sie einen Filter erstellt haben, können Sie ihn in der [Gruppenkonfiguration](/help/sites-developing/mobile.md#creating-a-device-group) verwenden.
 
-## Die Filter Java™-Klasse {#the-filter-java-class}
+## Die Filter-Java™-Klasse {#the-filter-java-class}
 
 Ein Gerätegruppenfilter ist eine OSGi-Komponente, die die Schnittstelle [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) implementiert. Bei der Bereitstellung stellt die Implementierungsklasse einen Filterdienst bereit, der für Gerätegruppenkonfigurationen verfügbar ist.
 
-Die in diesem Artikel beschriebene Lösung verwendet das Apache Felix Maven-SCR-Plug-in, um die Entwicklung von Komponenten und Diensten zu erleichtern. Daher verwendet die Beispiel-Java™-Klasse die `@Component`und `@Service` Anmerkungen. Die Klasse hat die folgende Struktur:
+Die in diesem Artikel beschriebene Lösung verwendet das Apache Felix Maven-SCR-Plug-in, um die Entwicklung von Komponenten und Diensten zu erleichtern. Daher verwendet die Beispiel-Java™-Klasse die `@Component`- und `@Service`-Anmerkungen. Die Klasse hat die folgende Struktur:
 
 ```java
 package com.adobe.example.myapp;
@@ -68,7 +68,7 @@ public class myDeviceGroupFilter implements DeviceGroupFilter {
 
 Geben Sie Code für die folgenden Methoden an:
 
-* `getDescription`: Gibt die Filterbeschreibung zurück. Die Beschreibung wird im Konfigurationsdialogfeld Gerätegruppen angezeigt.
+* `getDescription`: Gibt die Filterbeschreibung zurück. Die Beschreibung wird im Konfigurationsdialogfeld „Gerätegruppe“ angezeigt.
 * `getTitle`: Gibt den Namen des Filters zurück. Der Name wird angezeigt, wenn Sie Filter für die Gerätegruppe auswählen.
 * `matches`: Legt fest, ob das Gerät über die erforderlichen Funktionen verfügt.
 
@@ -164,7 +164,7 @@ public class ScreenSizeLarge implements DeviceGroupFilter {
 }
 ```
 
-Der String -Wert, den die getTitle -Methode zurückgibt, wird in der Dropdown-Liste der Gerätegruppeneigenschaften angezeigt.
+Der Zeichenfolgenwert, den die getTitle-Methode zurückgibt, wird in der Dropdown-Liste der Gerätegruppeneigenschaften angezeigt.
 
 ![filteraddtogroup](assets/filteraddtogroup.png)
 
@@ -178,7 +178,7 @@ Der folgende POM-Code ist nützlich, wenn Sie Maven zum Erstellen Ihrer Anwendun
 
 **Plug-ins:**
 
-* Apache Maven Compiler Plugin: Kompiliert Java™-Klassen aus dem Quellcode.
+* Apache Maven Compiler-Plug-in: Kompiliert Java™-Klassen aus dem Quell-Code.
 * Apache Felix Maven Bundle-Plug-in: Erstellt das Bundle und das Manifest.
 * Apache Felix Maven SCR-Plug-in: Erstellt die Komponentendeskriptordatei und konfiguriert den Manifest-Header der Dienstkomponente.
 
@@ -192,7 +192,7 @@ Die DeviceGroup- und DeviceGroupFilter-Schnittstellen sind im Day Communique 5 W
 
 Zum Zeitpunkt der Erstellung ist 5.5.2 die Version des WCM Mobile API-Bundles, das in der neuesten Version von AEM enthalten ist. Verwenden Sie die Adobe-Web-Konsole ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)), um sicherzustellen, dass es sich um die Paketversion handelt, die in Ihrer Umgebung bereitgestellt wird.
 
-**POM:** (Ihr POM verwendet eine andere groupId und Version.)
+**POM:** (Ihr POM verwendet eine andere Gruppen-ID und Version.)
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0"
@@ -257,4 +257,4 @@ Zum Zeitpunkt der Erstellung ist 5.5.2 die Version des WCM Mobile API-Bundles, d
 </project>
 ```
 
-Fügen Sie das Profil, das im Abschnitt [Abrufen des Inhaltspaket-Maven-Plugins](/help/sites-developing/vlt-mavenplugin.md) enthalten ist, zu Ihrer Maven-Einstellungsdatei hinzu, um das öffentliche Adobe-Repository zu verwenden.
+Fügen Sie das Profil, das im Abschnitt [Abrufen des Inhaltspakets-Maven-Plug-ins](/help/sites-developing/vlt-mavenplugin.md) enthalten ist, zu Ihrer Maven-Einstellungsdatei hinzu, um das öffentliche Adobe-Repository zu verwenden.

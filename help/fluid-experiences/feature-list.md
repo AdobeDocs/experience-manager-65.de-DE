@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '268'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ In den folgenden Tabellen sind die Funktionen von AEM Fluid Experiences mit eine
 
 ## Weitere Informationen {#learn-more}
 
-* [Fluid Experiences für Headless-Anwendungsfälle](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html)
+* [Fluid Experiences für Headless-Anwendungsfälle](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=de)
 * [AEM Content Service: Was, Warum und Wie?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=de)
-* [Häufig gestellte Fragen zu Drittanbieterzugriff](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html)
+* [Häufig gestellte Fragen zu Drittanbieterzugriff](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=de)
 * [Verwenden von Sling-APIs](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=de#sling-models)

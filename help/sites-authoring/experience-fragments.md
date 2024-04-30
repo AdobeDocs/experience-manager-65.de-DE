@@ -33,7 +33,7 @@ Experience Fragments können in folgenden Fällen verwendet werden:
 
 * Wenn Autorinnen oder Autoren die Teile einer Seite (die sogenannten Fragmente eines Erlebnisses) wiederverwenden möchten, müssen sie das entsprechende Fragment kopieren und an der gewünschten Stelle einfügen. Das Erstellen und Verwalten dieser zum Kopieren/Einfügen vorgesehenen Erlebnisse sind zeitaufwendige und fehleranfällige Verfahren. Mit Experience Fragments ersparen Sie sich das Kopieren/Einfügen.
 * Zur Unterstützung des Nutzungsszenarios mit Headless-Content-Management-Systemen. Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für deren Bereitstellung für Kunden. In diesem Fall würde das Erlebnis über ein System/einen Touchpoint eines Drittanbieters aufgenommen und dann an die Endbenutzerin bzw. den Endbenutzer weitergeben werden.
-* Mit [Multi-Site-Management (MSM)](/help/sites-administering/msm.md); denn ein Experience Fragment ist Teil einer Seite. Dies gilt sowohl für die einzelnen Fragmente als auch für die Ordner, in denen sie sich befinden.
+* Mit [Multi-Site-Management (MSM)](/help/sites-administering/msm.md), da ein Experience Fragment Teil einer Seite ist. Dies gilt sowohl für die einzelnen Fragmente als auch für die Ordner, in denen sie sich befinden.
 
 >[!NOTE]
 >

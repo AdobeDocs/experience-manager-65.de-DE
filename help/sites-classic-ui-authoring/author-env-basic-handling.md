@@ -154,7 +154,7 @@ Die folgenden sind verfügbar, ein Teil dieser Felder wird standardmäßig angez
 <table>
  <tbody>
   <tr>
-   <td><strong>Spalte</strong></td>
+   <td><strong>Säulendiagramm</strong></td>
    <td><strong>Beschreibung</strong></td>
   </tr>
   <tr>

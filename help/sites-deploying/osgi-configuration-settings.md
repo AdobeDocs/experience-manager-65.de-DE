@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '3360'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Die folgenden OSGi-Konfigurationseinstellungen (aufgeführt nach Bundle) sind f�
 
 >[!NOTE]
 >
->Das OSGi Configuration Diff-Tool, Teil der [AEM Tools](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html), kann verwendet werden, um die standardmäßigen OSGi-Konfigurationen aufzulisten.
+>Das OSGi Configuration Diff-Tool, Teil der [AEM Tools](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=de), kann verwendet werden, um die standardmäßigen OSGi-Konfigurationen aufzulisten.
 
 >[!NOTE]
 >
@@ -273,7 +273,7 @@ Falls ein konfigurierter Pfadwert mit einem Schrägstrich endet, wird die gesamt
 
 >[!CAUTION]
 >
->Wenn Sie die Einstellung für **Minimieren** oder **Gzip** ändern, löschen Sie die Inhalte des Clientlibs-Caches. Mehr Details finden Sie im [Knowledgebase-Artikel](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html).
+>Wenn Sie die Einstellung für **Minimieren** oder **Gzip** ändern, löschen Sie die Inhalte des Clientlibs-Caches. Mehr Details finden Sie im [Knowledgebase-Artikel](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=de).
 
 >[!NOTE]
 >

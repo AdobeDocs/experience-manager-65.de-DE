@@ -12,13 +12,13 @@ role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '640'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Entwicklung von AEM-Projekten mit IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Um mit der AEM-Entwicklung auf IntelliJ zu beginnen, sind die folgenden Schritte erforderlich.
 
@@ -109,7 +109,7 @@ IntelliJ IDEA muss wissen, wo die JSPs zum Debugging zu finden sind. Da IDEA die
 1. Klicken Sie auf das **+** und wählen Sie **JSR45 Remote** aus.
 1. Wählen Sie im Konfigurationsdialogfeld **Konfigurieren** neben **Anwendungsserver** aus und konfigurieren Sie einen generischen Server.
 1. Legen Sie die Startseite auf eine passende URL fest, wenn Sie beim Beginn des Debuggens einen Browser öffnen möchten.
-1. Alle entfernen **Vor dem Start** Aufgaben, wenn Sie vlt autosync verwenden, oder konfigurieren Sie geeignete Maven-Aufgaben, falls Sie dies nicht tun
+1. Entfernen Sie alle Aufgaben der Rubrik **Vor dem Launch**, falls Sie die automatische Synchronisierung von VLT nutzen, oder konfigurieren Sie andernfalls geeignete Maven-Aufgaben
 1. Passen Sie im Fenster **Start/Verbindung** den Port an, sofern erforderlich.
 1. Kopieren Sie die Befehlszeilenargumente, die IntelliJ IDEA vorschlägt.
 

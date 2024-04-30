@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '2318'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -52,7 +52,7 @@ Bei der Erstellung eines Auftrags befindet sich die Payload nur auf der Instanz,
 
 ## Verwalten von Topologien {#administering-topologies}
 
-Topologien sind lose gekoppelte Experience Manager-Cluster, die an der Abladung beteiligt sind. Ein Cluster besteht aus einer oder mehreren Experience Manager-Server-Instanzen (eine einzelne Instanz gilt als Cluster).
+Topologien sind lose verknüpfte Experience Manager-Cluster, die an der Abladung beteiligt sind. Ein Cluster besteht aus einer oder mehreren Experience Manager-Server-Instanzen (eine einzelne Instanz gilt als Cluster).
 
 Jede Experience Manager-Instanz führt die folgenden Offloading-bezogenen Dienste aus:
 

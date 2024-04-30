@@ -1,6 +1,6 @@
 ---
 title: Seitenvorlagen – statisch
-description: Eine Vorlage wird zum Erstellen einer Seite verwendet und definiert, welche Komponenten im ausgewählten Bereich verwendet werden können
+description: Eine Vorlage wird verwendet, um eine Seite zu erstellen. Sie definiert, welche Komponenten im ausgewählten Umfang genutzt werden können.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -13,18 +13,18 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1601'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 # Seitenvorlagen – statisch{#page-templates-static}
 
-Eine Vorlage wird verwendet, um eine Seite zu erstellen, und definiert, welche Komponenten im ausgewählten Bereich verwendet werden können. Eine Vorlage ist eine Hierarchie von Knoten, die dieselbe Struktur wie die zu erstellende Seite aufweist, jedoch keinen tatsächlichen Inhalt hat.
+Eine Vorlage wird verwendet, um eine Seite zu erstellen. Sie definiert, welche Komponenten im ausgewählten Umfang genutzt werden können. Eine Vorlage ist eine Hierarchie von Knoten, die dieselbe Struktur aufweist wie die zu erstellende Seite, aber keine Inhalte.
 
-Jede Vorlage stellt Ihnen eine Auswahl an Komponenten zur Verfügung, die Sie verwenden können.
+Jede Vorlage stellt Ihnen eine Auswahl an Komponenten bereit, die Sie verwenden können.
 
 * Vorlagen bestehen aus [Komponenten](/help/sites-developing/components.md);
-* Komponenten verwenden Widgets und ermöglichen den Zugriff auf Widgets und diese werden zum Rendern des Inhalts verwendet.
+* Komponenten nutzen Widgets und bieten Zugriff auf Widgets. Mit Widgets werden die Inhalte gerendert.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Jede Vorlage stellt Ihnen eine Auswahl an Komponenten zur Verfügung, die Sie ve
 
 ## Eigenschaften und untergeordnete Knoten einer Vorlage {#properties-and-child-nodes-of-a-template}
 
-Eine Vorlage ist ein Knoten des Typs cq:Template und hat die folgenden Eigenschaften und untergeordneten Knoten:
+Eine Komponente ist ein Knoten vom Typ „cq:Template“ mit den folgenden Eigenschaften und untergeordneten Knoten:
 
 <table>
  <tbody>
@@ -103,27 +103,27 @@ Eine Vorlage ist die Basis einer Seite.
 
 Um eine Seite zu erstellen, müssen Sie die Vorlage (Knotenbaumstruktur `/apps/<myapp>/template/<mytemplate>`) an die entsprechende Stelle in der Website-Baumstruktur kopieren: Dies geschieht, wenn eine Seite über die Registerkarte **Websites** erstellt wird.
 
-Durch diese Kopieraktion erhält die Seite auch ihren anfänglichen Inhalt (normalerweise nur Inhalte der obersten Ebene) und die Eigenschaft sling:resourceType, den Pfad zur Seitenkomponente, die zum Rendern der Seite verwendet wird (alles im untergeordneten Knoten jcr:content).
+Über diesen Kopiervorgang erhält die Seite auch ihren anfänglichen Inhalt (in der Regel nur den Inhalt der obersten Ebene) und die Eigenschaft „sling:resourceType“, den Pfad zur Seitenkomponente, die zum Rendern der Seite verwendet wird (alles im untergeordneten Knoten „jcr:content“).
 
-## Strukturierung von Vorlagen {#how-templates-are-structured}
+## Strukturieren von Vorlagen {#how-templates-are-structured}
 
-Zwei Aspekte sind zu berücksichtigen:
+Zwei Aspekte müssen berücksichtigt werden:
 
 * die Struktur der Vorlage selbst
-* die Struktur des Inhalts, der bei Verwendung einer Vorlage erzeugt wird
+* die Struktur des Inhalts, der bei Verwendung einer Vorlage erstellt wird
 
 ### Die Struktur einer Vorlage {#the-structure-of-a-template}
 
-Eine Vorlage wird unter einem Knoten des Typs **cq:Template**.
+Eine Vorlage wird unter einem Knoten vom Typ **cq:Template** erstellt.
 
 ![screen_shot_2012-02-13at63646pm](assets/screen_shot_2012-02-13at63646pm.png)
 
 Verschiedene Eigenschaften können festgelegt werden, insbesondere:
 
-* **jcr:title** - Titel für die Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt.
-* **jcr:description** - Beschreibung für die Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt.
+* **jcr:title** – Titel für die Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt.
+* **jcr:description** – Beschreibung für die Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt.
 
-Dieser Knoten enthält einen Knoten jcr:content (cq:PageContent) , der als Grundlage für den Inhaltsknoten der resultierenden Seiten verwendet wird. Er verweist mithilfe von sling:resourceType auf die Komponente, die zum Rendern des tatsächlichen Inhalts einer neuen Seite verwendet werden soll.
+Dieser Knoten enthält einen Knoten „jcr:content“ (cq:PageContent), der als Basis für den Inhaltsknoten der erzeugten Seiten genutzt wird. Dabei wird mit sling:resourceType auf die Komponenten verwiesen, die für das Rendern des tatsächlichen Inhalts einer neuen Seite verwendet werden sollen.
 
 ![screen_shot_2012-02-13at64010pm](assets/screen_shot_2012-02-13at64010pm.png)
 
@@ -135,35 +135,35 @@ Mit dieser Komponente wird die Struktur und das Design des Inhalts definiert, we
 
 Mit Vorlagen werden Seiten des Typs `cq:Page` erstellt (wie bereits erwähnt, ist eine Seite eine besondere Art der Komponente). Jede AEM-Seite weist den strukturierten Knoten `jcr:content` auf. Dies:
 
-* vom Typ cq:PageContent
-* ist ein strukturierter Knotentyp, der eine definierte Inhaltsdefinition enthält
+* ist vom Typ „cq:PageContent“
+* ist ein strukturierter Knotentyp, der eine festgelegte Inhaltsdefinition enthält
 * weist die Eigenschaft `sling:resourceType` auf, die auf die Komponente verweist, welche die Sling-Skripte zum Rendern des Inhalts enthält
 
 ### Standardvorlagen {#default-templates}
 
-AEM enthält standardmäßig verschiedene Standardvorlagen. Manchmal sollten Sie die Vorlagen unverändert verwenden. In diesem Fall müssen Sie sicherstellen, dass die Vorlage für Ihre Website verfügbar ist.
+AEM bietet verschiedene Standardvorlagen, die standardmäßig verfügbar sind. Mitunter können Sie die Vorlagen unverändert nutzen. In diesem Fall müssen Sie sicherstellen, dass die Vorlage für Ihre Website verfügbar ist.
 
-Beispielsweise enthält AEM mehrere Vorlagen, darunter eine Inhaltsseite und eine Homepage.
+AEM enthält beispielsweise verschiedene Vorlagen, darunter eine Inhaltsseite und eine Homepage.
 
 | **Titel** | **Komponente** | **Speicherort** | **Zweck** |
 |---|---|---|---|
-| Startseite | homepage | geometrixx | Die Geometrixx-Homepage-Vorlage. |
-| Inhaltsseite | contentpage | geometrixx | Die Inhaltsseitenvorlage des Geometrixx. |
+| Startseite | homepage | geometrixx | Die Vorlage für die Geometrixx-Homepage. |
+| Inhaltsseite | contentpage | geometrixx | Die Vorlage für die Geometrixx-Inhaltsseite. |
 
 #### Anzeigen von Standardvorlagen {#displaying-default-templates}
 
-Um eine Liste aller Vorlagen im Repository anzuzeigen, gehen Sie wie folgt vor:
+Eine Liste aller Vorlagen im Repository können Sie wie folgt anzeigen:
 
-1. Öffnen Sie unter CRXDE Lite die **Instrumente** Menü und klicken Sie **Abfrage**.
+1. Öffnen Sie in CRXDE Lite das Menü **Tools** und klicken Sie auf **Abfrage**.
 
-1. Im Tab Abfrage
-1. As **Typ** auswählen **XPath**.
+1. Auf der Registerkarte „Abfrage“:
+1. Wählen Sie als **Typ** die Option **XPath** aus.
 
 1. Geben Sie in das Eingabefeld **Abfrage** diese Zeichenfolge ein: //element(&#42;, cq:Template)
 
 1. Klicken Sie auf **Ausführen**. Die Liste wird im Ergebnisfeld angezeigt.
 
-Normalerweise nehmen Sie eine vorhandene Vorlage und entwickeln eine neue für Ihre eigene Verwendung. Siehe [Entwickeln von Seitenvorlagen](#developing-page-templates) für weitere Informationen.
+Normalerweise können Sie eine vorhandene Vorlage verwenden und auf dieser Basis eine neue Vorlage zur eigenen Verwendung entwickeln. Weitere Informationen finden Sie unter [Entwickeln von Seitenvorlagen](#developing-page-templates).
 
 Damit eine vorhandene Vorlage für Ihre Website aktiviert und im Dialogfeld **Seite erstellen** angezeigt wird, wenn Sie eine Seite direkt unter **Websites** in der **Websites**-Konsole erstellen, legen Sie für die Eigenschaft „allowedPaths“ des Vorlagenknotens folgenden Wert fest: **/content(/.&#42;)?**
 
@@ -175,13 +175,13 @@ Wenn Stile in der Benutzeroberfläche im [Designmodus](/help/sites-authoring/def
 >
 >Adobe empfiehlt nur die Anwendung von Designs durch den [Designmodus](/help/sites-authoring/default-components-designmode.md).
 >
->Das Ändern von Designs beispielsweise im CRXDE Lite ist keine Best Practice und die Anwendung solcher Designs kann vom erwarteten Verhalten abweichen.
+>Das Ändern von Designs in CRXDE Lite ist beispielsweise nicht ratsam, und die Anwendung derartiger Designs kann von erwarteten Verhaltensweisen abweichen.
 
 Wenn Entwürfe nur im Designmodus angewendet werden, sind die folgenden Abschnitte, [Auflösung des Designpfads](/help/sites-developing/page-templates-static.md#design-path-resolution), [Entscheidungsbaum](/help/sites-developing/page-templates-static.md#decision-tree) und das [Beispiel](/help/sites-developing/page-templates-static.md#example), nicht anwendbar.
 
 ### Auflösung des Designpfads {#design-path-resolution}
 
-Beim Rendern von Inhalten, die auf einer statischen Vorlage basieren, versucht AEM, das relevanteste Design und die relevantesten Stile auf den Inhalt anzuwenden, basierend auf einer Umkehrung der Inhaltshierarchie.
+Beim Rendern von Inhalten, die auf einer statischen Vorlage basieren, versucht AEM, das relevanteste Design und die relevantesten Stile auf den Inhalt anzuwenden. Hierzu erfolgt zunächst ein Durchlauf der Inhaltshierarchie.
 
 AEM bestimmt den relevantesten Stil für einen Inhaltsknoten in der folgenden Reihenfolge:
 
@@ -203,7 +203,7 @@ Denken Sie an eine einfache Inhaltsstruktur wie die folgende, bei der ein Design
 
 `/root/branch/leaf`
 
-In der folgenden Tabelle wird beschrieben, wie AEM einen Entwurf auswählt.
+In der folgenden Tabelle wird beschrieben, wie AEM ein Design auswählt.
 
 <table>
  <tbody>
@@ -264,23 +264,23 @@ In der folgenden Tabelle wird beschrieben, wie AEM einen Entwurf auswählt.
 
 ## Entwickeln von Seitenvorlagen {#developing-page-templates}
 
-AEM Seitenvorlagen sind einfach Modelle, die zum Erstellen von Seiten verwendet werden. Sie können so wenig oder so viel anfänglichen Inhalt wie nötig enthalten. Ihre Rolle besteht darin, die richtigen anfänglichen Knotenstrukturen zu erstellen, wobei die erforderlichen Eigenschaften (hauptsächlich sling:resourceType) so eingestellt sind, dass sie die Bearbeitung und Wiedergabe ermöglichen.
+AEM-Seitenvorlagen sind schlicht Modelle, die zum Erstellen von Seiten verwendet werden. Sie können anfänglich so wenig oder viel Inhalt enthalten, wie erforderlich ist. Ihre Aufgabe besteht darin, die korrekten anfänglichen Knotenstrukturen zu erstellen, wobei die benötigten Eigenschaften (v. a. „sling:resourceType“) so eingestellt werden, dass sie Bearbeitungs- und Render-Vorgänge zulassen.
 
 ### Erstellen einer Vorlage (basierend auf einer vorhandenen Vorlage) {#creating-a-new-template-based-on-an-existing-template}
 
-Eine neue Vorlage kann komplett neu erstellt werden, aber oft wird stattdessen eine vorhandene Vorlage kopiert und aktualisiert, um Ihnen Zeit und Mühe zu sparen. Beispielsweise können die Vorlagen in Geometrixx für die ersten Schritte verwendet werden.
+Eine neue Vorlage kann komplett neu erstellt werden. Um Zeit und Aufwand zu reduzieren, können Sie stattdessen aber auch eine vorhandene Vorlage kopieren und aktualisieren. So können Sie z. B. zum Einstieg die Vorlagen von Geometrixx nutzen.
 
 So erstellen Sie eine Vorlage basierend auf einer vorhandenen Vorlage:
 
-1. Kopieren Sie eine vorhandene Vorlage (vorzugsweise mit einer Definition, die dem, was Sie erreichen möchten, möglichst ähnlich ist) in einen neuen Knoten.
+1. Kopieren Sie eine vorhandene Vorlage (vorzugsweise mit einer Definition, die der von Ihnen gewünschten Definition möglichst ähnlich ist) in einen neuen Knoten.
 
-   Vorlagen werden in **/apps/&lt;website-name>/templates/&lt;template-name>**.
+   Vorlagen sind im Verzeichnis **/apps/&lt;Website-Name>/templates/&lt;Vorlagenname>** gespeichert.
 
    >[!NOTE]
    >
-   >Die Liste der verfügbaren Vorlagen hängt vom Speicherort der neuen Seite und den in den einzelnen Vorlagen angegebenen Platzierungsbeschränkungen ab. Siehe [Formularverfügbarkeit](#templateavailibility).
+   >Die Liste der verfügbaren Vorlagen hängt vom Ort der neuen Seite und den Einschränkungen für die Platzierung ab, die in jeder Vorlage vorgegeben sind. Siehe [Vorlagenverfügbarkeit](#templateavailibility).
 
-1. Ändern Sie die **jcr:title** des neuen Vorlagenknotens, um dessen neue Rolle widerzuspiegeln. Sie können auch die **jcr:description** gegebenenfalls. Stellen Sie sicher, dass Sie die Vorlagenverfügbarkeit der Seite entsprechend ändern.
+1. Ändern Sie den **jcr:title** des neuen Vorlagenknotens, um seine Rolle widerzuspiegeln. Sie können bei Bedarf außerdem die **jcr:description** aktualisieren. Stellen Sie sicher, dass Sie die Vorlagenverfügbarkeit der Seite entsprechend ändern.
 
    >[!NOTE]
    >
@@ -288,37 +288,37 @@ So erstellen Sie eine Vorlage basierend auf einer vorhandenen Vorlage:
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
-1. Kopieren Sie die Komponente, auf der die Vorlage basiert (dies wird durch die Variable **sling:resourceType** -Eigenschaft der **jcr:content** -Knoten in der Vorlage), um eine Instanz zu erstellen.
+1. Kopieren Sie die Komponente, auf der die Vorlage basiert (dies ist an der Eigenschaft **sling:resourceType** des Knotens **jcr:content** in der Vorlage zu erkennen), um eine neue Instanz zu erstellen.
 
-   Komponenten werden unter **/apps/&lt;website-name>/components/&lt;component-name>**.
+   Komponenten sind im Verzeichnis **/apps/&lt;Website-Name>/components/&lt;Komponentenname>** gespeichert.
 
-1. Aktualisieren Sie die **jcr:title** und **jcr:description** der neuen Komponente.
-1. Ersetzen Sie thumbnail.png , wenn ein neues Miniaturbild in der Vorlagenauswahlliste angezeigt werden soll (Größe 128 x 98 Pixel).
-1. Aktualisieren Sie die **sling:resourceType** der Vorlage **jcr:content** -Knoten, um auf die neue Komponente zu verweisen.
-1. Nehmen Sie zusätzliche Änderungen an der Funktionalität oder dem Design der Vorlage, der zugrunde liegenden Komponente oder beidem vor.
+1. Aktualisieren Sie den **jcr:title** und die **jcr:description** der neuen Komponente.
+1. Ersetzen Sie die Datei „thumbnail.png“, wenn Sie möchten, dass ein neues Miniaturbild in der Vorlagen-Auswahlliste angezeigt wird (Größe: 128 x 98 Pixel).
+1. Aktualisieren Sie den **sling:resourceType** des Knotens **jcr:content** der Vorlage, um auf die neue Komponente zu verweisen.
+1. Nehmen Sie weitere Änderungen an der Funktionalität oder dem Design der Vorlage, der zugrunde liegenden Komponente oder beidem vor.
 
    >[!NOTE]
    >
-   >Änderungen an den **/apps/&lt;website>/templates/&lt;template-name>** -Knoten wirken sich auf die Vorlageninstanz aus (wie in der Auswahlliste).
+   >Änderungen, die am Knoten **/apps/&lt;Website>/templates/&lt;Vorlagenname>** vorgenommen werden, wirken sich auf die Vorlageninstanz aus (wie in der Auswahlliste).
    >
    >
-   Änderungen an den **/apps/&lt;website>/components/&lt;component-name>** -Knoten wirken sich auf die Inhaltsseite aus, die bei Verwendung der Vorlage erstellt wird.
+   Änderungen, die am Knoten **/apps/&lt;Website>/components/&lt;Komponentenname>** vorgenommen werden, wirken sich auf die Inhaltsseite aus, die mit der Vorlage erstellt wird.
 
-   Jetzt können Sie mit der neuen Vorlage eine Seite auf Ihrer Website erstellen.
+   Sie können jetzt eine Seite Ihrer Website mit der neuen Vorlage erstellen.
 
 >[!NOTE]
 >
-Die Client-Bibliothek des Editors setzt voraus, dass die `cq.shared` -Namespace in Inhaltsseiten verwenden, und wenn dies nicht vorhanden ist, wird der JavaScript-Fehler `Uncaught TypeError: Cannot read property 'shared' of undefined` Ergebnisse.
+Die Client-Bibliothek des Editors setzt voraus, dass der Namespace `cq.shared` in den Inhaltsseiten vorhanden ist. Wenn nicht, wird der JavaScript-Fehler `Uncaught TypeError: Cannot read property 'shared' of undefined` ausgegeben.
 >
 Alle Beispielinhaltsseiten enthalten `cq.shared`, sodass jeglicher darauf basierender Inhalt automatisch `cq.shared` umfasst. Wenn Sie sich jedoch ganz neue eigene Inhaltsseiten erstellen möchten, die nicht auf Beispielinhalt basieren, müssen Sie sicherstellen, dass Sie den Namespace `cq.shared` einbinden.
 >
 Weitere Informationen finden Sie unter [Verwendung Client-seitiger Bibliotheken](/help/sites-developing/clientlibs.md).
 
-## Verfügbarmachen einer vorhandenen Vorlage {#making-an-existing-template-available}
+## Bereitstellen einer vorhandenen Vorlage {#making-an-existing-template-available}
 
-Dieses Beispiel zeigt, wie eine Vorlage für bestimmte Inhaltspfade verwendet werden kann. Die Vorlagen, die dem Seitenautor beim Erstellen von Seiten zur Verfügung stehen, werden durch die Logik bestimmt, die in [Formularverfügbarkeit](/help/sites-developing/templates.md#template-availability).
+Dieses Beispiel zeigt, wie Sie zulassen können, dass eine Vorlage für bestimmte Inhaltspfade genutzt werden kann. Die Vorlagen, die Autorinnen und Autoren bei der Erstellung von Seiten zur Verfügung stehen, werden durch die unter [Vorlagenverfügbarkeit](/help/sites-developing/templates.md#template-availability) definierte Logik bestimmt.
 
 1. Navigieren Sie in CRXDE Lite zu der Vorlage, die Sie für Ihre Seite verwenden möchten, z. B. zur Newsletter-Vorlage.
-1. Ändern Sie die `allowedPaths` -Eigenschaft und andere Eigenschaften, die für [Vorlagenverfügbarkeit](/help/sites-developing/templates.md#template-availability). Beispielsweise `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` bedeutet, dass diese Vorlage in jedem Pfad unter `/content/geometrixx-outdoors` zulässig ist.
+1. Ändern Sie die Eigenschaft `allowedPaths` und andere Eigenschaften, die für die [Vorlagenverfügbarkeit](/help/sites-developing/templates.md#template-availability) genutzt werden. Beispielsweise `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` bedeutet, dass diese Vorlage in jedem Pfad unter `/content/geometrixx-outdoors` zulässig ist.
 
    ![chlimage_1-89](assets/chlimage_1-89.png)

@@ -12,17 +12,17 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '582'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 # Verwenden von Bedingungen zum Ausblenden {#using-hide-conditions}
 
-Ausblendungsbedingungen können verwendet werden, um zu bestimmen, ob eine Komponentenressource gerendert wird oder nicht. Etwa wenn eine Vorlagenautorin oder ein Vorlagenautor die Kernkomponente [Listenkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=de) im [Vorlageneditor](/help/sites-authoring/templates.md) konfiguriert und beschließt, die Optionen zum Erstellen der Liste auf Basis untergeordneter Seiten zu deaktivieren. Durch Deaktivieren dieser Option im Dialogfeld &quot;Design&quot;wird eine Eigenschaft so festgelegt, dass beim Rendern der Listenkomponente die Bedingung zum Ausblenden ausgewertet und die Option zum Anzeigen untergeordneter Seiten nicht angezeigt wird.
+Ausblendungsbedingungen können verwendet werden, um zu bestimmen, ob eine Komponentenressource gerendert wird oder nicht. Etwa wenn eine Vorlagenautorin oder ein Vorlagenautor die Kernkomponente [Listenkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=de) im [Vorlageneditor](/help/sites-authoring/templates.md) konfiguriert und beschließt, die Optionen zum Erstellen der Liste auf Basis untergeordneter Seiten zu deaktivieren. Durch das Deaktivieren dieser Option im Design-Dialogfeld wird eine Eigenschaft so festgelegt, dass beim Rendern der Listenkomponente die Bedingung zum Ausblenden ausgewertet und die Option zum Anzeigen untergeordneter Seiten nicht angezeigt wird.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
-Dialogfelder können mit zahlreichen Optionen für den Benutzer komplex werden, der möglicherweise nur einen Bruchteil der verfügbaren Optionen verwendet. Dies kann dazu führen, dass Benutzende mit der Benutzeroberfläche überfordert sind.
+Dialogfelder können aufgrund der zahlreichen Optionen komplex für die Benutzenden sein, die möglicherweise nur einen kleinen Teil der ihnen zur Verfügung stehenden Optionen nutzen. Dies kann dazu führen, dass Benutzende mit der Benutzeroberfläche überfordert sind.
 
 Durch die Verwendung von Ausblendungsbedingungen können Admins, Entwicklungspersonen und Superuser Ressourcen anhand eines Regelsatzes ausblenden. Mit dieser Funktion können sie entscheiden, welche Ressourcen angezeigt werden sollen, wenn eine Autorin oder ein Autor Inhalte bearbeitet.
 
@@ -48,7 +48,7 @@ ${cqDesign.myProperty == true}
 ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 != 1 || header.myHeader}
 ```
 
-Beachten Sie beim Definieren Ihres Ausblendeausdrucks Folgendes:
+Beachten Sie beim Definieren Ihrer Bedingung zum Ausblenden Folgendes:
 
 * Damit sie gültig ist, sollte der Umfang, in dem sich die Eigenschaft befindet, ausgedrückt werden (beispielsweise `cqDesign.myProperty`).
 * Werte sind schreibgeschützt.
@@ -56,9 +56,9 @@ Beachten Sie beim Definieren Ihres Ausblendeausdrucks Folgendes:
 
 ## Beispiel {#example}
 
-Beispiele für Bedingungen zum Ausblenden finden sich überall in AEM und insbesondere in den [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). Betrachten Sie beispielsweise die [Listenkernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=de).
+Beispiele für Bedingungen zum Ausblenden finden sich überall in AEM und insbesondere in den [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). Denken Sie beispielsweise an die [Listenkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=de).
 
-[Mit dem Vorlageneditor](/help/sites-authoring/templates.md) können Vorlagenautorinnen und -autoren im Design-Dialogfeld festlegen, welche Optionen der Listenkomponente dem Seitenautor zur Verfügung stehen. Optionen wie die Erlaubnis, dass die Liste eine statische Liste, eine Liste untergeordneter Seiten, eine Liste mit getaggten Seiten usw. sein soll, können aktiviert oder deaktiviert werden.
+[Mit dem Vorlageneditor](/help/sites-authoring/templates.md) können Vorlagenautorinnen und -autoren im Design-Dialogfeld festlegen, welche Optionen der Listenkomponente der Autorin bzw. dem Autor der Seite zur Verfügung stehen. Optionen wie die Erlaubnis, dass die Liste eine statische Liste, eine Liste untergeordneter Seiten, eine Liste mit getaggten Seiten usw. sein kann, können aktiviert oder deaktiviert werden.
 
 Wenn eine Vorlagenautorin oder ein Vorlagenautor die Option für untergeordnete Seiten deaktiviert, wird eine Design-Eigenschaft festgelegt und eine Ausblendebedingung dafür ausgewertet, wodurch die Option für die Seitenautorin bzw. den Seitenautor nicht gerendert wird.
 

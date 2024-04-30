@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ AEM bietet:
 
    * `ResourceNameRolloutConflictHandler`
 
-* Die Möglichkeit, eine [angepasster Handler](#customized-handlers).
+* die Möglichkeit, einen [benutzerdefinierten Handler](#customized-handlers) zu implementieren.
 * Den Service-Ranking-Mechanismus, mit dem Sie die Priorität jedes einzelnen Handlers festlegen können. Der Service mit dem höchsten Ranking wird verwendet.
 
 ### Standard-Konflikt-Handler {#default-conflict-handler}

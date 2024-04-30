@@ -11,12 +11,12 @@ feature: Administering,Personalization
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Personalisierung  {#personalization}
+# Personalisierung {#personalization}
 
 ## Was ist Personalisierung? {#what-is-personalization}
 
@@ -47,7 +47,7 @@ Es gibt zwei Arten von Personalisierung:
 
 #### Explizit {#explicit}
 
-* Anpassung: Der Benutzer wählt aus verschiedenen Inhaltsquellen aus.
+* Benutzerspezifische Anpassung: Die Benutzerin oder der Benutzer wählt aus einer Reihe von Inhaltsquellen aus.
 
 #### Implizit {#implicit}
 

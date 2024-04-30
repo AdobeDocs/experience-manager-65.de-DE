@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '3652'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -140,7 +140,7 @@ Es gibt verschiedene Optionen zum Bereitstellen des Repositorys von Adobe Experi
 1. Gilt nur für AEM Forms:
    * Die Unterstützung für Oracle Database 12c wurde entfernt und die Unterstützung für Oracle Database 19c wurde hinzugefügt.
    * Die Unterstützung für Microsoft® SQL Server 2016 wurde entfernt und die Unterstützung für Microsoft® SQL Server 2019 wurde hinzugefügt.
-1. Wird für AEM Forms nicht unterstützt.
+1. Wird nicht für AEM-Formulare unterstützt.
 
 >[!NOTE]
 >
@@ -211,7 +211,7 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
 
    >[!NOTE]
    >
-   >Für Linux-basierte Server (OSGI- und JEE-Stack) erfordert das AEM Forms-Add-on Laufzeitabhängigkeiten wie:
+   >Für Linux-basierte Server (OSGI- und JEE-Stack) erfordert das AEM Forms-Add-on Laufzeitabhängigkeiten, z. B.:
    >* glibc.x86_64 (2.17-196)
    >* libX11.x86_64 (1.6.7-4)
    >* zlib.x86-64 (1.2.7-17)
@@ -241,7 +241,7 @@ Für eine Cloud-native Umgebung sollten Sie sich das neueste Angebot aus der AEM
 
 Adobe bietet auch Adobe Managed Services an, um AEM auf Azure oder AWS bereitzustellen. Adobe Managed Services liefert die Erfahrung und Kenntnisse, die Experten zur Bereitstellung und Ausführung von AEM in diesen Cloud-Computing-Umgebungen benötigen. Siehe die [zusätzliche Dokumentation zu Adobe Managed Services](https://business.adobe.com/de/products/experience-manager/managed-services.html?aemClk=t).
 
-In allen anderen Fällen der Bereitstellung von AEM auf Azure, AWS oder einer anderen Cloud-Computing-Umgebung beschränkt sich Unterstützung von Adobe auf die virtuelle Rechenumgebung. Diese virtuelle Umgebung muss in Übereinstimmung mit den auf dieser Seite aufgeführten technischen Spezifikationen ausgeführt werden. Jedes gemeldete Problem, das im Zusammenhang mit AEM in einer dieser Cloud-Umgebungen auftritt, muss unabhängig von einem Cloud-Service reproduzierbar sein, der speziell für die Cloud-Computing-Umgebung gilt. Das heißt, es sei denn, der Cloud-Service wird im Rahmen der auf dieser Seite aufgelisteten technischen Anforderungen unterstützt, z. B. Azure Blob Storage oder AWS S3.
+In allen anderen Fällen der Bereitstellung von AEM auf Azure, AWS oder einer anderen Cloud-Computing-Umgebung beschränkt sich Unterstützung von Adobe auf die virtuelle Rechenumgebung. Diese virtuelle Umgebung muss in Übereinstimmung mit den auf dieser Seite aufgeführten technischen Spezifikationen ausgeführt werden. Jedes gemeldete Problem, das im Zusammenhang mit AEM in einer dieser Cloud-Umgebungen auftritt, muss unabhängig von einem Cloud-Service reproduzierbar sein, der speziell für die Cloud-Computing-Umgebung gilt. Dies ist nicht der Fall, wenn der Cloud-Service im Rahmen der auf dieser Seite aufgelisteten technischen Anforderungen unterstützt wird, z. B. Azure Blob Storage oder AWS S3.
 
 Für die Bereitstellung von AEM auf Azure oder AWS außerhalb von Adobe Managed Services wird von Adobe dringend empfohlen, direkt mit dem Cloud-Anbieter zu arbeiten. Oder Sie arbeiten mit Adobe-Partnern zusammen, die die Bereitstellung von AEM in der gewünschten Cloud-Umgebung unterstützen. Der ausgewählte Cloud-Anbieter oder -Partner ist für die Größenspezifikationen, das Design und die Implementierung der Architektur verantwortlich, um Ihre spezifischen Anforderungen an Leistung, Auslastung, Skalierbarkeit und Sicherheit zu erfüllen.
 
@@ -364,11 +364,11 @@ Der Betrieb ist nahtlos, da keine spezielle Konfiguration erforderlich ist. Sie 
 
 Wenn eine IP-Adresse angegeben werden muss, können Sie (nach Bedarf) aus folgenden Optionen auswählen:
 
-* Eine IPv6-Adresse. Beispiel: `https://[ab12::34c5:6d7:8e90:1234]:4502`
+* Eine IPv6-Adresse.  Beispiel: `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
-* Eine IPv4-Adresse. Beispiel: `https://123.1.1.4:4502`
+* Eine IPv4-Adresse.  Beispiel: `https://123.1.1.4:4502`
 
-* Ein Servername. Beispiel: `https://www.yourserver.com:4502`
+* Einen Server-Namen.  Beispiel: `https://www.yourserver.com:4502`
 
 * Der Standardfall `localhost` wird für IPv4- und IPv6-Netzwerkinstallationen angenommen. Beispiel: `https://localhost:4502`
 
@@ -535,8 +535,8 @@ Windows x86:
 * Beschleuniger für Video-Hardware (optional)
 * Acrobat Pro DC, Acrobat Standard DC oder Adobe Acrobat Reader DC
 * Administratorrechte für die Installation von Designer
-* Microsoft Visual C++ 2019 (VC 14.28 oder höher) 32-Bit-Laufzeit für 32-Bit-AEM Forms Designer
-* Microsoft Visual C++ 2019 (VC 14.28 oder höher) 64-Bit-Laufzeitumgebung für AEM Forms Designer 64-Bit (sowohl für OSGI- als auch JEE-Stack)
+* Microsoft Visual C++ 2019 (VC 14.28 oder höher) 32-Bit-Runtime für die 32-Bit-Version von AEM Forms Designer
+* Microsoft Visual C++ 2019 (VC 14.28 oder höher) 64-Bit-Laufzeitumgebung für die 64-Bit-Version von AEM Forms Designer (sowohl für OSGi- als auch JEE-Stack)
 
 [Installieren und Konfigurieren von AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)
 
@@ -553,6 +553,6 @@ Das Zurückschreiben von XMP-Daten wird für die folgenden Plattformen und Datei
 
 * **Dateiformate**: JPEG, PNG, TIFF, PDF, INDD, AI und EPS.
 
-### Anforderungen an AEM Assets zur Verarbeitung von Metadaten-lastigen Assets unter Linux® {#assetsonlinux}
+### Anforderungen für die Verarbeitung von Metadaten-lastigen Assets durch AEM Assets unter Linux® {#assetsonlinux}
 
-Für den XMPFilesProcessor-Prozess ist die Bibliothek GLIBC_2.14 erforderlich. Verwenden Sie einen Linux®-Kernel, der GLIBC_2.14 enthält, z. B. Linux® Kernel Version 3.1.x. Sie verbessert die Leistung bei der Verarbeitung von Assets, die eine große Menge an Metadaten enthalten, z. B. PSD-Dateien. Die Verwendung einer früheren Version von GLIBC führt zu Fehlern in Protokollen, die mit `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP` beginnen.
+Für den XMPFilesProcessor-Prozess ist die Bibliothek GLIBC_2.14 erforderlich. Verwenden Sie einen Linux®-Kernel, der GLIBC_2.14 enthält, zum Beispiel Linux®-Kernel Version 3.1.x. Dies verbessert die Leistung bei der Verarbeitung von Assets, die eine große Menge an Metadaten enthalten, z. B. PSD-Dateien. Die Verwendung einer früheren Version von GLIBC führt zu Fehlern in Protokollen, die mit `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP` beginnen.

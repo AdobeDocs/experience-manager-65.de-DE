@@ -98,7 +98,7 @@ Best Practices bezüglich der Leistung sind hier aufgeführt:
   </tr>
   <tr>
    <td>Verwenden des Dispatchers mit einem CDN </td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">Verwenden des Dispatchers mit einem CDN</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de#using-dispatcher-with-a-cdn">Verwenden des Dispatchers mit einem CDN</a></td>
    <td>Ein CDN (Content Delivery Network) wie Akamai Edge Delivery oder Amazon Cloud Front stellt Inhalte von einem Speicherort in der Nähe des Endbenutzers bereit.</td>
   </tr>
   <tr>

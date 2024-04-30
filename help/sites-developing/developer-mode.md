@@ -1,6 +1,6 @@
 ---
 title: Entwicklermodus
-description: Der Entwicklermodus öffnet ein seitliches Bedienfeld mit mehreren Registerkarten, die Entwicklern Informationen über die aktuelle Seite bereitstellen.
+description: Der Entwicklermodus öffnet einen Seitenbereich mit mehreren Registerkarten mit Informationen für Entwickelnde zur aktuellen Seite.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
@@ -13,17 +13,17 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '683'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
 # Entwicklermodus{#developer-mode}
 
-Beim Bearbeiten von Seiten in Adobe Experience Manager (AEM) werden mehrere [Modi](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) verfügbar sind, einschließlich des Entwicklermodus. Dadurch wird ein seitliches Bedienfeld mit mehreren Registerkarten geöffnet, über die Entwickler Informationen zur aktuellen Seite erhalten. Die drei Registerkarten sind:
+Beim Bearbeiten von Seiten in Adobe Experience Manager (AEM) sind diverse [Modi](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) verfügbar, u. a. auch der Entwicklermodus. In diesem Modus wird ein Seitenbereich mit mehreren Registerkarten geöffnet, die Entwicklerinnen und Entwicklern Informationen über die aktuelle Seite liefern. Die drei Registerkarten sind:
 
 * **[Komponenten](#components)** zum Anzeigen von Struktur- und Leistungsinformationen.
 * **[Tests](#tests)** für die Durchführung von Tests und die Analyse der Ergebnisse.
-* **[Fehler](#errors)** um alle auftretenden Probleme zu sehen.
+* **[Fehler](#errors)** zur Anzeige auftretender Probleme.
 
 Diese Informationen unterstützen Entwickler bei Folgendem:
 
@@ -45,7 +45,7 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >
 >Der Entwicklermodus ist nur für eine Standard-Authoring-Instanz verfügbar, die nicht den Ausführungsmodus „nosamplecontent“ verwendet.
 >
->Bei Bedarf kann er für die Verwendung konfiguriert werden:
+>Falls nötig, kann der Modus konfiguriert werden für die Verwendung:
 >
 >* auf einer Autoreninstanz mit dem Ausführungsmodus „nosamplecontent“
 >* auf einer Veröffentlichungsinstanz
@@ -57,7 +57,7 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >Siehe:
 >
 >* Knowledgebase-Artikel zum [Beheben von Fehlern in der Touch-optimierten AEM-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/kb/troubleshooting-aem-touchui-issues.html) für weitere Tipps und Tools.
->* AEM-Gems-Sitzung [AEM 6.0 Entwicklermodus](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
+>* AEM-Gems-Sitzung [AEM 6.0 Entwicklermodus](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=de).
 >
 
 ## Öffnen des Entwicklermodus {#opening-developer-mode}
@@ -78,14 +78,14 @@ Der Bereich ist in zwei Registerkarten unterteilt:
 
 Diese Registerkarte enthält eine Komponentenstruktur mit folgenden Attributen:
 
-* Erläutert die Kette von Komponenten und Vorlagen, die auf der Seite gerendert werden (SLY, JSP usw.). Die Struktur kann erweitert werden, sodass sie Kontext innerhalb der Hierarchie anzeigt.
-* Zeigt die Server-seitige Berechnungszeit zum Rendern der Komponente an.
+* Zeigt die Kette der Komponenten und Vorlagen, die auf dieser Seite gerendert wurden (SLY, JSP usw.). Die Struktur kann erweitert werden, sodass sie Kontext innerhalb der Hierarchie anzeigt.
+* Zeigt die Server-seitige Verarbeitungszeit zum Rendern der Komponente.
 * Ermöglicht es, die Struktur zu erweitern und bestimmte Komponenten innerhalb der Struktur auszuwählen. Die Auswahl bietet Zugriff auf Komponentendetails, z. B.:
 
    * Repository-Pfad
    * Links zu den Skripten (Zugriff über CRXDE Lite)
 
-* Die ausgewählten Komponenten (im Inhaltsfluss durch einen blauen Rahmen gekennzeichnet) werden in der Inhaltsstruktur hervorgehoben (und umgekehrt).
+* Die ausgewählten Komponenten (im Inhaltsfluss, durch einen blauen Rahmen gekennzeichnet) werden in der Inhaltsstruktur hervorgehoben (und umgekehrt).
 
 Dies kann Folgendes erleichtern:
 
@@ -117,7 +117,7 @@ Jeder Komponenteneintrag kann (z. B.) Folgendes beinhalten:
 
 >[!CAUTION]
 >
->Einige Links zeigen auf das Skript unter `/libs`. Diese sind allerdings nur für Referenzzwecke bestimmt. Sie dürfen **keine** Elemente unter `/libs` bearbeiten, da von Ihnen gemachte Änderungen möglicherweise verloren gehen. Dies liegt daran, dass sich diese Verzweigung bei jedem Upgrade oder Anwenden eines Hotfixes oder Feature Packs ändern kann. Nehmen Sie die erforderlichen Änderungen unter `/apps`. Siehe [Überlagerungen und Überschreibungen](/help/sites-developing/overlays.md).
+>Einige Links zeigen auf das Skript unter `/libs`. Diese sind allerdings nur für Referenzzwecke bestimmt. Sie dürfen **keine** Elemente unter `/libs` bearbeiten, da von Ihnen gemachte Änderungen möglicherweise verloren gehen. Grund dafür ist, dass diese Verzweigung jedes Mal geändert wird, wenn Sie ein Upgrade durchführen oder ein Hotfix bzw. ein Feature Pack anwenden. Nehmen Sie die erforderlichen Änderungen unter `/apps` vor. Siehe [Überlagerungen und Überschreibungen](/help/sites-developing/overlays.md).
 
 ### Fehler {#errors}
 
@@ -128,7 +128,7 @@ Zwar ist zu hoffen, dass die Registerkarte **Fehler** niemals Daten anzeigt (wie
 * Eine Warnung, falls die Komponente einen Eintrag in das Fehlerprotokoll schreibt, und Details zum Fehler sowie direkte Links zum entsprechenden Code in CRXDE Lite.
 * Eine Warnung, falls die Komponente eine Admin-Sitzung öffnet.
 
-Wenn beispielsweise eine nicht definierte Methode aufgerufen wird, wird der resultierende Fehler im **Fehler** tab:
+Wird beispielsweise eine nicht definierte Methode aufgerufen, wird der daraus resultierende Fehler auf der Registerkarte **Fehler** angezeigt:
 
 ![chlimage_1-17](assets/chlimage_1-17.png)
 
@@ -138,6 +138,6 @@ Der Komponenteneintrag in der Struktur auf der Registerkarte „Komponenten“ w
 
 >[!CAUTION]
 >
->In AEM 6.2 wurden die Testfunktionen des Entwicklermodus als eigenständige Tools-Anwendung neu implementiert.
+>In AEM 6.2 wurden die Testfunktionen für den Entwicklermodus neu als eigenständige Tools-Anwendung implementiert.
 >
->Ausführliche Informationen finden Sie unter [Testen der Benutzeroberfläche](/help/sites-developing/hobbes.md).
+>Ausführliche Informationen finden Sie unter [Testen der Benutzeroberfläche](/help/sites-developing/hobbes.md).

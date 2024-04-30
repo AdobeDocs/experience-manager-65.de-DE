@@ -1,6 +1,6 @@
 ---
 title: Multi Site Manager und Übersetzung
-description: Erfahren Sie, wie Sie Ihre Inhalte in Ihrem gesamten Projekt wiederverwenden und mehrsprachige Websites in Adobe Experience Manager verwalten können.
+description: Erfahren Sie, wie Sie Ihre Inhalte projektübergreifend wiederverwenden und mehrsprachige Websites in Adobe Experience Manager verwalten können.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '365'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 

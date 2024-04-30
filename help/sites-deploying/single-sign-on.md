@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 40%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,34 +20,34 @@ ht-degree: 40%
 
 Mithilfe von Single Sign-On (SSO) können Sie durch die einmalige Eingabe Ihrer Zugangsdaten (z. B. Ihres Benutzernamens und Passworts) auf mehrere Systeme zugreifen. Ein separates System (auch als vertrauenswürdiger Authenticator bezeichnet) führt die Authentifizierung durch und stellt Experience Manager die Benutzeranmeldeinformationen zur Verfügung. Experience Manager überprüft die Zugriffsberechtigungen und setzt diese für die Benutzerin oder den Benutzer durch (legt also fest, auf welche Ressourcen die Benutzerin oder der Benutzer zugreifen darf).
 
-Der Handler-Dienst der SSO-Authentifizierung (`com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) verarbeitet die von der vertrauenswürdigen Authentifizierung bereitgestellten Authentifizierungsergebnisse. Der SSO-Authentifizierungs-Handler sucht nach einer SSO-Kennung (SSID) als Wert eines speziellen Attributs an den folgenden Speicherorten in dieser Reihenfolge:
+Der Handler-Dienst der SSO-Authentifizierung (`com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) verarbeitet die von der vertrauenswürdigen Authentifizierung bereitgestellten Authentifizierungsergebnisse. Der SSO-Authentifizierungs-Handler sucht nach einer SSO-Kennung (SSID) als Wert eines speziellen Attributs an folgenden Stellen und in dieser Reihenfolge:
 
-1. Anfrage-Header
+1. Anfrage-Headern
 1. Cookies
-1. Anfrageparameter
+1. Anforderungsparametern
 
-Wenn ein Wert gefunden wird, ist die Suche abgeschlossen und dieser Wert wird verwendet.
+Wenn ein Wert gefunden wird, ist die Suche beendet und dieser Wert wird verwendet.
 
-Konfigurieren Sie die folgenden beiden Dienste, um den Namen des Attributs zu erkennen, das die SSID speichert:
+Konfigurieren Sie die folgenden beiden Dienste, um den Namen des Attributs zu identifizieren, in dem die SSID gespeichert ist:
 
-* Das Anmeldemodul.
-* Der SSO-Authentifizierungsdienst.
+* Anmeldemodul.
+* SSO-Authentifizierungsdienst.
 
-Geben Sie denselben Attributnamen für beide Services an. Das Attribut ist in den `SimpleCredentials` enthalten, die beim `Repository.login` angegeben werden. Der Wert des Attributs ist irrelevant und wird ignoriert. Das bloße Vorhandensein ist wichtig und wird überprüft.
+Geben Sie denselben Attributnamen für beide Dienste an. Das Attribut ist in den `SimpleCredentials` enthalten, die beim `Repository.login` angegeben werden. Der Wert des Attributs ist unwichtig und wird ignoriert. Er muss einfach nur vorhanden sein, und genau dies wird überprüft.
 
-## SSO konfigurieren {#configuring-sso}
+## Konfigurieren von SSO {#configuring-sso}
 
-Um SSO für eine AEM-Instanz zu konfigurieren, konfigurieren Sie [SSO Authentication Handler](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
+Um SSO für eine AEM-Instanz zu konfigurieren, konfigurieren Sie den [SSO-Authentifizierungs-Handler](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
 
 1. Bei der Verwendung von AEM gibt es mehrere Methoden zur Verwaltung der Konfigurationseinstellungen für solche Dienste. Weitere Informationen und empfohlene Praktiken finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
-   Beispielsweise für NTLM:
+   Legen Sie beispielsweise für NTLM Folgendes fest:
 
    * **Pfad:** nach Bedarf, z. B. `/`
    * **Kopfzeilennamen**: `LOGON_USER`
    * **ID-Format**: `^<DOMAIN>\\(.+)$`
 
-     Hierbei gilt `<*DOMAIN*>` wird durch den Namen Ihrer eigenen Domain ersetzt.
+     `<*DOMAIN*>` steht dabei für den Namen Ihrer eigenen Domain.
 
    Für CoSign:
 
@@ -65,28 +65,28 @@ Um SSO für eine AEM-Instanz zu konfigurieren, konfigurieren Sie [SSO Authentica
 
 >[!CAUTION]
 >
->Stellen Sie sicher, dass Benutzende nicht direkt auf AEM zugreifen können, wenn SSO konfiguriert ist.
+>Stellen Sie sicher, dass Benutzende nicht direkt auf AEM zugreifen können, falls SSO konfiguriert ist.
 >
->Da Benutzer einen Webserver verwenden müssen, auf dem der Agent Ihres SSO-Systems ausgeführt wird, ist sichergestellt, dass kein Benutzer direkt eine Kopfzeile, ein Cookie oder einen Parameter senden kann, die dazu führen, dass der Benutzer von AEM als vertrauenswürdig eingestuft wird, da der Agent solche Informationen filtert, wenn sie von außen gesendet werden.
+>Wenn der Benutzerzugriff ausschließlich über einen Webserver erfolgt, auf dem der Agent Ihres SSO-Systems ausgeführt wird, ist sichergestellt, dass Benutzende nicht direkt Header, Cookies oder Parameter senden können, die dazu führen, dass Benutzende von AEM als vertrauenswürdig eingestuft werden, da der Agent derartige von externen Standorten gesendete Daten filtert.
 >
->Jeder Benutzer, der direkt auf Ihre AEM-Instanz zugreifen kann, ohne den Webserver zu verwenden, kann wie jeder andere Benutzer agieren, indem er die Kopfzeile, das Cookie oder den Parameter sendet, wenn die Namen bekannt sind.
+>Alle Benutzenden, die direkt auf die AEM-Instanz zugreifen können (d. h. nicht über den Webserver) können als beliebige Benutzende agieren, indem sie Header, Cookies oder Parameter senden, sofern die Namen bekannt sind.
 >
->Stellen Sie außerdem sicher, dass Sie von Kopfzeilen, Cookies und Anfrageparameternamen nur den konfigurieren, der für Ihre SSO-Einrichtung erforderlich ist.
+>Stellen Sie auch sicher, dass Sie nur die Header-, Cookies- und Anfrageparameternamen konfigurieren, die für das SSO-Setup erforderlich sind.
 >
 
 >[!NOTE]
 >
->Single Sign-On wird häufig verwendet mit [LDAP](/help/sites-administering/ldap-config.md).
+>Single Sign-On wird häufig zusammen mit [LDAP](/help/sites-administering/ldap-config.md) verwendet.
 
 >[!NOTE]
 >
->Wenn Sie außerdem die [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) mit dem Microsoft® Internet Information Server (IIS), ist dann eine zusätzliche Konfiguration erforderlich in:
+>Falls Sie auch den [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) mit Microsoft® Internet Information Server (IIS) verwenden, ist eine zusätzliche Konfiguration erforderlich:
 >
 >* `disp_iis.ini`
 >* IIS
 >
 >Legen Sie in `disp_iis.ini` Folgendes fest:
->(siehe [Installieren des Dispatchers mit dem Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) Ausführliche Informationen)
+>(Einzelheiten finden Sie unter [Installieren des Dispatchers mit Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=de#microsoft-internet-information-server))
 >
 >* `servervariables=1` (leitet IIS-Server-Variablen als Anforderungskopfzeilen an die Remote-Instanz weiter)
 >* `replaceauthorization=1` (ersetzt alle Kopfzeilen mit dem Namen „Authorization“ mit Ausnahme von „Basic“ durch die Entsprechung von „Basic“)
@@ -95,10 +95,10 @@ Um SSO für eine AEM-Instanz zu konfigurieren, konfigurieren Sie [SSO Authentica
 >
 >* Deaktivieren Sie die Option **Anonymer Zugriff**.
 >
->* aktivieren **Integrierte Windows-Authentifizierung**
+>* Aktivieren Sie die Option **Integrierte Windows-Authentifizierung**
 >
 
-Mithilfe der können Sie sehen, welcher Authentifizierungs-Handler auf einen beliebigen Abschnitt der Inhaltsstruktur angewendet wird. **Authenticator** Option der Felix-Konsole; zum Beispiel:
+Mithilfe der **Authentifizierungsoption** in der Felix-Konsole können Sie sehen, welcher Authentifizierungs-Handler auf welchen Abschnitt in der Inhaltsstruktur angewendet wird, z. B.:
 
 `http://localhost:4502/system/console/slingauth`
 
@@ -154,20 +154,20 @@ Sie können auch den folgenden curl-Befehl verwenden, um die `TestHeader`-Kopfze
 
 >[!NOTE]
 >
->Bei Verwendung des Anforderungsparameters in einem Browser wird nur ein Teil der HTML angezeigt - ohne CSS. Dies liegt daran, dass alle Anfragen von der HTML ohne den Abfrageparameter erfolgen.
+>Bei Verwendung des Anfrageparameters in einem Browser sehen Sie nur einen Teil des HTML-Codes ohne CSS. Dies liegt daran, dass alle Anfragen aus dem HTML-Code ohne den Anfrageparameter erfolgen.
 
 ## Entfernen von AEM-Abmelde-Links {#removing-aem-sign-out-links}
 
-Bei Verwendung von SSO werden die An- und Abmeldung extern verarbeitet, sodass AEM-eigene Abmelde-Links nicht mehr anwendbar sind und entfernt werden sollten.
+Bei Verwendung von SSO werden An- und Abmeldung extern gehandhabt, sodass AEM-Abmelde-Links nicht mehr gültig sind und entfernt werden sollten.
 
-Der Abmelde-Link auf dem Willkommensbildschirm kann mithilfe der folgenden Schritte entfernt werden.
+Sie können den Abmelde-Link auf dem Begrüßungsbildschirm mit folgenden Schritten entfernen:
 
 1. Überlagern Sie `/libs/cq/core/components/welcome/welcome.jsp` über `/apps/cq/core/components/welcome/welcome.jsp`.
 1. Entfernen Sie folgenden Teil aus der JSP-Datei:
 
    `<a href="#" onclick="signout('<%= request.getContextPath() %>');" class="signout"><%= i18n.get("sign out", "welcome screen") %>`
 
-Um den Abmelde-Link zu entfernen, der im persönlichen Menü des Benutzers oben rechts verfügbar ist, führen Sie die folgenden Schritte aus:
+Gehen Sie wie folgt vor, um den Abmelde-Link oben rechts im persönlichen Menü der Benutzerin oder des Benutzers zu entfernen:
 
 1. Überlagern Sie `/libs/cq/ui/widgets/source/widgets/UserInfo.js` über `/apps/cq/ui/widgets/source/widgets/UserInfo.js`.
 

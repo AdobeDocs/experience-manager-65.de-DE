@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '5792'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -205,7 +205,7 @@ AEM WCM-System zeichnet detaillierte Protokolle auf. Nach dem Entpacken und Aufr
 
 Die Rotation von Protokolldateien bezieht sich auf den Prozess, der das Wachstum der Datei begrenzt, indem regelmäßig eine Datei erstellt wird. In AEM wird eine Protokolldatei mit dem Namen `error.log` täglich nach den vorgegebenen Regeln rotiert:
 
-* Die `error.log` -Datei wird entsprechend dem Muster umbenannt. `{original_filename}.yyyy-MM-dd`. Zum Beispiel wird am 11. Juli 2010 die aktuelle Protokolldatei in `error.log-2010-07-10` umbenannt und dann eine neue `error.log` erstellt.
+* Die Datei `error.log` wird nach dem Muster `{original_filename}.yyyy-MM-dd` umbenannt. Zum Beispiel wird am 11. Juli 2010 die aktuelle Protokolldatei in `error.log-2010-07-10` umbenannt und dann eine neue `error.log` erstellt.
 
 * Vorherige Protokolldateien werden nicht gelöscht. Also sind Sie dafür verantwortlich, alte Protokolldateien regelmäßig zu löschen, um den Speicherbedarf zu beschränken.
 
@@ -543,7 +543,7 @@ Die für das Erfassen von Informationen eingesetzten Methoden können auch zur k
 
 Nachfolgend finden Sie eine Liste mit häufigen Leistungsproblemen sowie Vorschlägen, wie Sie diese erkennen und beheben können.
 
-| Bereich | Symptom | Zum Steigern der Kapazität: | Zum Reduzieren des Volumens: |
+| Flächendiagramm | Symptom | Zum Steigern der Kapazität: | Zum Reduzieren des Volumens: |
 |---|---|---|---|
 | Client | Hohe Client-CPU-Auslastung. | Installieren Sie eine Client-CPU mit höherer Leistung. | Vereinfachen Sie das (HTML-)Layout. |
 |   | Geringe CPU-Auslastung des Servers. | Aktualisieren Sie auf einen schnelleren Browser. | Optimieren Sie den Client-seitigen Cache. |
@@ -1097,9 +1097,9 @@ Im Folgenden finden Sie eine Liste mit Vorschlägen, was Sie überprüfen sollte
 >
 >In folgenden Artikeln finden Sie weitere Informationen:
 >
->* [Thread-Dumps](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+>* [Thread-Dumps](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=de)
 >* [Analyse von Speicherproblemen](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=de)
->* [Analyse mit dem integrierten Profiler](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
+>* [Analyse mit dem integrierten Profiler](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=de)
 >* [Analyse langsamer und blockierter Prozesse](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
@@ -1142,7 +1142,7 @@ Wenn Ihrem System der Festplattenspeicher ausgeht oder Sie feststellen, dass die
 * Haben Sie die [Versionsbereinigung](/help/sites-deploying/version-purging.md) deaktiviert?
 * Wissensdatenbank:
 
-   * [Zu viele geöffnete Dateien](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
+   * [Zu viele geöffnete Dateien](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=de)
    * [Journal verbraucht zu viel Festplattenspeicher](https://helpx.adobe.com/de/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Regelmäßige Leistungsbeeinträchtigung {#regular-performance-degradation}

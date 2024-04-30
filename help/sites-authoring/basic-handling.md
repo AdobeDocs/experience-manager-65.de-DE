@@ -13,7 +13,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2964'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Wenn eine Benutzerin oder ein Benutzer zum ersten Mal auf eine Konsole zugreift,
 
 Klicken Sie auf **Weiter**, um zur nächsten Seite des Überblicks zu wechseln. Klicken Sie zum Schließen auf **Schließen** oder auf eine beliebige Stelle außerhalb des Dialogfelds „Überblick“.
 
-Die Übersicht wird beim nächsten Zugriff auf eine Konsole neu gestartet, es sei denn, Sie sehen alle Folien oder aktivieren die Option **Nicht erneut anzeigen**.
+Der Überblick wird bei Ihrem nächsten Zugriff auf eine Konsole wieder gestartet, es sei denn, Sie haben alle Folien angesehen oder die Option **Nicht mehr anzeigen** aktiviert.
 
 ## Globale Navigation {#global-navigation}
 

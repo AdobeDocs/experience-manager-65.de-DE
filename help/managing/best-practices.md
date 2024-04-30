@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Projekten – Checkliste mit Best Practices
+title: Verwalten von Projekten – Checkliste für Best Practices
 description: Die Verwaltung eines Projekts zur Implementierung von Adobe Experience Manager (AEM) erfordert Planung und Know-how. Die Checklisten für Projekte bieten eine Zusammenstellung der Best Practices für die Projektabwicklung. Sie führen Sie durch alle Phasen des Projektlebenszyklus und bieten eine allgemeine Statusüberwachung.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
