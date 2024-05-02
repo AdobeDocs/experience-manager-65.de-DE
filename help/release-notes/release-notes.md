@@ -7,9 +7,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 source-git-commit: 685d8016400570170dc02dc2be77651aea6e028c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3783'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 95%
 
 Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enthalten sind:
 
-* Dynamic Media unterstützt jetzt das verlustfreie HEIC-Bildformat für Apple iOS/iPadOS. Siehe [fmt](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt) in der Bildbereitstellungs- und Rendering-API von Dynamic Media.
+* Dynamic Media unterstützt jetzt das verlustfreie HEIC-Bildformat für Apple iOS/iPadOS. Siehe [fmt](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt) in der Bildbereitstellungs- und Rendering-API von Dynamic Media.
 * Der Multisite Manager (MSM) unterstützt jetzt Experience Fragment-Strukturen, einschließlich Ordnern und Unterordnern, für ein effizientes Massen-Rollout von Experience Fragments in Live Copies.
 
 ### [!DNL Forms]
@@ -144,7 +144,7 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 
 #### [!DNL Dynamic Media]{#assets-dm-6520}
 
-* Ab dem Donnerstag, 1. Mai 2024 wird Adobe Dynamic Media die Unterstützung für Folgendes einstellen:
+* Ab dem 1. Mai 2024 wird Adobe Dynamic Media die Unterstützung für Folgendes einstellen:
 
    * SSL (Secure Socket Layer) 2.0
    * SSL 3.0
@@ -184,7 +184,7 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 * Wenn Benutzende eine vorhandene Option in einer Optionsfeldgruppe aktualisieren, werden falsche Übersetzungswerte veröffentlicht. (FORMS-12575)
 * Wenn Benutzende auf einem Android™-Gerät Zeichen zu einem adaptiven Formular hinzufügen, können sie bei Fokusverlust auf Android™-Geräten mehr als die definierte maximale Zeichenanzahl in das Textfeld eingeben. Dies funktioniert jedoch, wenn HTML5 als Eingabetyp ausgewählt wird. (FORMS-12748)
 * Aufgrund der übereinstimmenden Beschriftungen „Arial® labelledby“ und „Arial® label“ können Bildschirmlesehilfen nicht zwischen diesen beiden unterscheiden. Um das Problem zu beheben, wird für die Formularfelder die Beschriftung „aria-labelledby“ durch „aria-describedby“ ersetzt. (FORMS-12436)
-* Ein Autor verwendet die Komponente &quot;Adaptive Forms - Embed (v2)&quot;, um ein adaptives Formular in seine Sites-Seite einzubetten. Wenn das eingebettete Formular eine CAPTCHA-Komponente enthält (CAPTCHA-Dienst > reCAPTCHA, Einstellungen > reCAPTCHA-v2), wird die Site-Seite nicht gerendert. Dies tritt auf, wenn der Benutzer versucht, die Site-Seite mit &quot;Als veröffentlicht anzeigen&quot;in der Autoreninstanz anzuzeigen. Der folgende Fehler wird wie folgt angezeigt (FORMS-11859):
+* Eine Autorin oder ein Autor verwendet die Komponente „Adaptives Formular – Einbetten (v2)“, um ein adaptives Formular in der Sites-Seite einzubetten. Wenn das eingebettete Formular eine CAPTCHA-Komponente enthält (CAPTCHA-Service > reCAPTCHA, Einstellungen > reCAPTCHA-v2), wird die Site-Seite nicht gerendert. Dies geschieht, wenn die Benutzerin oder der Benutzer versucht, die Site-Seite mit der Option „Als veröffentlicht anzeigen“ in der Autoreninstanz anzuzeigen. Der folgende Fehler wird wie folgt angezeigt (FORMS-11859):
   `Failed to construct 'URL': Invalid base URL at Object.renderRecaptcha`
 
 * Wenn Benutzende versuchen, das Datum mithilfe der Komponente „Datumsauswahl“ auszuwählen, wird der Wert nicht aktualisiert und zeigt NULL an. (FORMS-12742, FORMS-12736)
@@ -223,11 +223,11 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 
 * Wenn in AEM Forms 6.5.18.0 ein adaptives Formular veröffentlicht wird, werden alle Abhängigkeiten, einschließlich Richtlinien, erneut veröffentlicht, selbst wenn keine Änderungen an ihnen vorgenommen wurden. (FORMS-10454)
 
-* Wenn ein Benutzer beim Ausführen des Konfigurationsmanagers auf AEM Forms 6.5.19.1 mit JBoss® Turnkey-Einrichtung &quot;Microsoft® SharePoint&quot;auswählt, schlägt die LiveCycle JBoss®-EAR-Installation fehl und es wird der folgende Fehler angezeigt: (FORMS-12463)
+* Wenn Benutzende beim Ausführen des Konfigurations-Managers in AEM Forms 6.5.19.1 mit JBoss® Turnkey-Einrichtung die Option „Microsoft® SharePoint“ auswählen, schlägt die LiveCycle JBoss®-EAR-Installation fehl und es wird der folgende Fehler angezeigt: (FORMS-12463)
 
   ` Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.`
 
-* Wenn ein Benutzer ein Dokumentfragment mithilfe des Formulardatenmodells in AEM Forms Service Pack 6.5.19.0 erstellt, erscheinen die Variablennamen im Seitenbereich undefiniert. Die Variablennamen werden jedoch angezeigt, wenn sie im Formularbereich abgelegt oder angeklickt werden. (FORMS-13238)
+* Wenn Benutzende ein Dokumentfragment mithilfe des Formulardatenmodells in AEM Forms Service Pack 6.5.19.0 erstellen, werden die Variablennamen im Seitenbereich undefiniert angezeigt. Die Variablennamen werden jedoch korrekt angezeigt, wenn sie im Formularbereich abgelegt werden oder wenn auf sie geklickt wird. (FORMS-13238)
 
 
 #### [!DNL Forms Designer] {#forms-designer-6520}
@@ -492,10 +492,10 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
 * Der Vorbefüllungsdienst schlägt in interaktiven Kommunikationen mit einer NULL-Zeigerausnahme fehl. (CQDOC-21355)
 * Mit adaptiven Formularen können Sie benutzerdefinierte Funktionen mit ECMAScript Version 5 oder früher verwenden. Wenn eine benutzerdefinierte Funktion ECMAScript-Version 6 oder höher verwendet, z. B. „let“, „const“ oder Pfeilfunktionen, wird der Regeleditor möglicherweise nicht ordnungsgemäß geöffnet.
-* Benutzerinnen und Benutzer können keinen Korrespondenz-Management-Brief erstellen. Wenn ein Benutzer einen Brief erstellt, wird ein Fehler mit der Beschreibung &quot;`Object Object`&quot; angezeigt und der Brief nicht erstellt wurde. Miniaturansichten für Layouts können auch nicht auf dem Bildschirm zur Brieferstellung geladen werden. Sie können das [aktuelle AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) installieren, um das Problem zu beheben. (FORMS-13496)
-* Der interaktive Kommunikationsdienst erstellt das PDF-Dokument, die Benutzerdaten werden jedoch nicht automatisch in die Formularfelder eingefügt. Der Vorbefüllungsdienst funktioniert nicht wie erwartet. Sie können das [aktuelle AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) installieren, um das Problem zu beheben. (FORMS-13413, FORMS-13493)
-* Der Editor „Überprüfen und Korrigieren“ des Service zur automatischen Formularkonvertierung kann nicht geladen werden. Sie können das [aktuelle AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) installieren, um das Problem zu beheben. (FORMS-13491)
-* Nach der Aktualisierung von AEM 6.5 Forms Service Pack 18 (6.5.18.0) oder AEM 6.5 Forms Service Pack 19 (6.5.19.0) auf AEM 6.5 Forms Service Pack 20 (6.5.20.0) tritt bei Benutzenden ein JSP-Kompilierungsfehler auf. Sie können keine adaptiven Formulare öffnen oder erstellen, und bei anderen AEM-Schnittstellen wie dem Seiteneditor, der AEM Forms-Benutzeroberfläche und dem AEM Workflow-Editor treten Fehler auf. Sie können das [aktuelle AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) installieren, um das Problem zu beheben. (FORMS-13492)
+* Benutzerinnen und Benutzer können keinen Korrespondenz-Management-Brief erstellen. Wenn eine Benutzerin oder ein Benutzer einen Brief erstellt, wird ein Fehler mit der Beschreibung „`Object Object`“ angezeigt und der Brief wird nicht erstellt. Miniaturansichten für Layouts können auch nicht auf dem Bildschirm zur Brieferstellung geladen werden. Sie können das [aktuelle AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) installieren, um das Problem zu beheben. (FORMS-13496)
+* Der interaktive Kommunikationsdienst erstellt das PDF-Dokument, die Benutzerdaten werden jedoch nicht automatisch in die Formularfelder eingefügt. Der Vorbefüllungsdienst funktioniert nicht wie erwartet. Sie können das [aktuelle AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) installieren, um das Problem zu beheben. (FORMS-13413, FORMS-13493)
+* Der Editor „Überprüfen und Korrigieren“ des Service zur automatischen Formularkonvertierung kann nicht geladen werden. Sie können das [aktuelle AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) installieren, um das Problem zu beheben. (FORMS-13491)
+* Nach der Aktualisierung von AEM 6.5 Forms Service Pack 18 (6.5.18.0) oder AEM 6.5 Forms Service Pack 19 (6.5.19.0) auf AEM 6.5 Forms Service Pack 20 (6.5.20.0) tritt bei Benutzenden ein JSP-Kompilierungsfehler auf. Sie können keine adaptiven Formulare öffnen oder erstellen, und bei anderen AEM-Schnittstellen wie dem Seiteneditor, der AEM Forms-Benutzeroberfläche und dem AEM Workflow-Editor treten Fehler auf. Sie können das [aktuelle AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) installieren, um das Problem zu beheben. (FORMS-13492)
 
 <!--Customers can install the  latest AEM 6.5 Forms Service Pack to resolve the aforementioned issues.  Here are the direct links for the supported operating systems:
 * [AEM 6.5 Forms Service Pack 20 for Apple macOS](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-OSX-PKG-6.0.1192.zip)
@@ -538,10 +538,10 @@ In den nachfolgenden Textdokumenten sind die in dieser [!DNL Experience Manager
 Diese Websites sind nur für Kunden verfügbar. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe Account Manager.
 
 * [Produktdownload unter licensing.adobe.com](https://licensing.adobe.com/)
-* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
+* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/de/docs/customer-one/using/home).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] Produktseite](https://business.adobe.com/de/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] Dokumentation zu 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65)
+>* [[!DNL Experience Manager] Dokumentation zu 6.5](https://experienceleague.adobe.com/de/docs/experience-manager-65)
 >* [Abonnieren von Adobe-Prioritäts-Produkt-Updates](https://www.adobe.com/subscription/priority-product-update.html)
