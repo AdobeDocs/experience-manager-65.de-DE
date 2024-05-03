@@ -7,8 +7,9 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 4254c2cb-66cc-4a46-b447-bc5e32def7a0
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+role: User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 100%
 
@@ -18,7 +19,7 @@ ht-degree: 100%
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 In einem Workflow wie etwa einem Antrag zum Eröffnen eines Bankkontos müssen Benutzende mehrere Formulare ausfüllen. Anstatt sie zu bitten, eine Reihe von Formularen auszufüllen, können Sie die Formulare zusammenfassen und ein großes (übergeordnetes) Formular erstellen. Wenn Sie ein adaptives Formular zu dem größeren Formular hinzufügen, wird es als Panel (untergeordnetes Formular) hinzugefügt. Sie fügen eine Reihe untergeordneter Formulare hinzu, um ein übergeordnetes Formular zu erstellen. Sie können Panels je nach Benutzereingabe ein- oder ausblenden. Schaltflächen im übergeordneten Formular, z. B. „Absenden“ und „Zurücksetzen“, setzen die Schaltflächen im untergeordneten Formular außer Kraft. Um ein adaptives Formular im übergeordneten Formular hinzuzufügen, können Sie das adaptive Formular per Drag-and-Drop aus dem Asset-Browser ziehen (so wie adaptive Formularfragmente).
 

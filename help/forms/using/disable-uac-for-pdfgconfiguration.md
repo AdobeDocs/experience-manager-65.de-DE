@@ -3,8 +3,9 @@ title: Deaktivieren von UAC für eine PDFG-Konfiguration, die sowohl für JEE al
 description: Erfahren Sie, mit welchen Schritten Sie UAC für die PDFG-Konfiguration deaktivieren können, um die Konvertierung von Word in PDF zu korrigieren.
 exl-id: 785b7bb4-7158-45ea-a1e5-eebf3dc3ebc3
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+role: User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 100%
 

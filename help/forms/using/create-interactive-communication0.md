@@ -7,8 +7,9 @@ docset: aem65
 feature: Interactive Communication
 exl-id: aaacee66-6bbe-498b-91b1-3a9545ff1aeb
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+role: Admin, User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 100%
 
@@ -48,12 +49,12 @@ Die folgende Liste führt die Ressourcen auf, die in diesem Tutorial bereits ers
 
 1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
 1. Tippen Sie auf **Erstellen** und wählen Sie **Interaktive Kommunikation** aus. Der Assistent **Erstellen einer interaktiven Kommunikation** wird angezeigt.
-1. Geben Sie **create_first_ic** im Feld **Titel** und im Feld **Name** an. Wählen Sie **FDM_Create_First_IC** als Formulardatenmodell und anschließend **Weiter** aus.
+1. Geben Sie **create_first_ic** im Feld **Titel** und im Feld **Name** an. Wählen Sie **FDM_Create_First_IC** als Formulardatenmodell aus und dann **Weiter**.
 1. Im Assistenten **Kanäle**:
 
-   1. Geben Sie **create_first_ic_print_template** als Druckvorlage an und wählen Sie **Auswählen** aus. Stellen Sie sicher, dass das Kontrollkästchen **Druck als Master für Webkanal verwenden** nicht aktiviert ist.
+   1. Geben Sie als Druckvorlage **create_first_ic_print_template** an und wählen Sie **Auswählen** aus. Stellen Sie sicher, dass das Kontrollkästchen **Druck als Primärkanal für Web-Kanal verwenden** nicht aktiviert ist.
 
-   1. Geben Sie den Ordner **Create_First_IC_templates** > **Create_First_IC_Web_Template** als Webvorlage an und wählen Sie **Auswählen** aus.
+   1. Geben Sie den Ordner **Create_First_IC_templates** > **Create_First_IC_Web_Template** als Web-Vorlage ein und wählen Sie **Auswählen** aus.
 
    1. Wählen Sie **Erstellen** aus.
 
@@ -203,7 +204,7 @@ Führen Sie die folgenden Schritte aus, um den Inhalt des Web-Kanals mithilfe de
 
 1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
 1. Tippen Sie auf **Erstellen** und wählen Sie **Interaktive Kommunikation** aus. Der Assistent **Erstellen einer interaktiven Kommunikation** wird angezeigt.
-1. Geben Sie **create_first_ic** im Feld **Titel** und im Feld **Name** an. Wählen Sie **FDM_Create_First_IC** als Formulardatenmodell und dann **Weiter** aus.
+1. Geben Sie **create_first_ic** im Feld **Titel** und im Feld **Name** an. Wählen Sie **FDM_Create_First_IC** als Formulardatenmodell aus und dann **Weiter**.
 1. Im Assistenten **Kanäle**:
 
    1. Geben Sie **create_first_ic_print_template** als Druckvorlage an und wählen Sie **Auswählen** aus.

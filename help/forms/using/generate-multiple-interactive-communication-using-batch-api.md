@@ -8,8 +8,9 @@ topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+role: User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 100%
 
@@ -148,7 +149,7 @@ Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Datensätze) m
    1. Geben Sie die den **[!UICONTROL Namen]** und den physischen **[!UICONTROL Pfad]** des Ordners an. Beispiel: `c:\batchprocessing`.
    1. Wählen Sie die Option **[!UICONTROL Service]** im Feld **[!UICONTROL Datei verarbeiten mit]**.
    1. Wählen Sie den Service **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** im Feld **[!UICONTROL Service-Name]**.
-   1. Geben Sie ein **[!UICONTROL Ausgabedateimuster]** an. Beispiel: Das %F/-[Muster](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=de#about-file-patterns) gibt an, dass der überwachte Ordner Eingabedateien in einem Unterordner des Ordners „Watched Folder\input“ finden kann.
+   1. Geben Sie ein **[!UICONTROL Ausgabedateimuster]** an. Beispiel: Das %F/ [Muster](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=de#about-file-patterns) gibt an, dass der überwachte Ordner Eingabedateien in einem Unterordner des Ordners „Watched Folder\input“ finden kann.
 1. So konfigurieren Sie die erweiterten Parameter:
    1. Öffnen Sie die Registerkarte **[!UICONTROL Erweitert]** und fügen Sie die folgenden benutzerdefinierten Eigenschaften hinzu:
 

@@ -3,10 +3,12 @@ title: Übersicht über Transaktionsberichte - AEM Forms.
 description: Führen Sie eine Zählung aller gesendeten Formulare, gesendeten Dokumente, wiedergegebenen interaktiven Nachrichten, in ein anderes Format konvertierten Dokumenten usw. durch.
 topic-tags: forms-manager
 feature: Transaction Reports
-source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
+exl-id: 6e5e29ef-eb90-4573-8745-1966a238bc03
+role: Admin, User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '232'
-ht-degree: 14%
+ht-degree: 25%
 
 ---
 
@@ -24,14 +26,12 @@ Im Folgenden finden Sie umfassende Anweisungen zum Aktivieren von Transaktionen,
 **Transaktionsberichte für AEM Forms on JEE**
 
 * [Aktivieren und Anzeigen des Transaktionsberichts für AEM Forms on JEE](/help/forms/using/transaction-report-overview-jee.md)
-* [Liste der abrechnungsfähigen APIs für AEM Forms on JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)
-* [Eine Transaktion für benutzerdefinierte Komponenten-APIs aufzeichnen](/help/forms/using/record-transaction-custom-component-jee.md)
+* [Liste der kostenpflichtigen APIs für AEM Forms auf JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)
+* [Aufzeichnen einer Transaktion für APIs mit benutzerdefinierten Komponenten](/help/forms/using/record-transaction-custom-component-jee.md)
 
 **Transaktionsberichte für AEM Forms auf OSGi**
 
 * [Transaktionsberichte für AEM Forms on OSGi](/help/forms/using/transaction-reports-overview.md)
 * [Anzeigen und Verstehen von Transaktionsberichten für AEM Forms auf OSGi](/help/forms/using/viewing-and-understanding-transaction-reports.md)
-* [Liste der abrechnungsfähigen APIs für AEM Forms unter OSGi](/help/forms/using/transaction-reports-billable-apis.md)
+* [Liste der kostenpflichtigen APIs für AEM Forms auf OSGi](/help/forms/using/transaction-reports-billable-apis.md)
 * [Zeichnen Sie eine Transaktion für eine benutzerdefinierte Implementierung für AEM Forms auf OSGi auf](/help/forms/using/record-transaction-custom-implementation.md)
-
-

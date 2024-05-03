@@ -3,10 +3,11 @@ title: Übersicht über Transaktionsberichte für AEM Forms on JEE
 description: Zählung aller gesendeten, wiedergegebenen, in ein anderes Format konvertierten Formulare und mehr
 feature: Transaction Reports
 exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
-source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
+role: Admin, User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '529'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -156,5 +157,5 @@ The transaction count is reverse replicated from publish instances to author or 
 
 ## Ähnliche Artikel {#related-articles}
 
-* [Liste der abrechnungsfähigen APIs für AEM Forms on JEE](../../forms/using/transaction-reports-billable-apis-jee.md)
+* [Liste der kostenpflichtigen APIs für AEM Forms auf JEE](../../forms/using/transaction-reports-billable-apis-jee.md)
 * [Eine Transaktion für benutzerdefinierte Komponenten-APIs für AEM Forms on JEE aufzeichnen](/help/forms/using/record-transaction-custom-component-jee.md)
