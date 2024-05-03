@@ -72,7 +72,7 @@ Wenn Sie beim Erstellen der Freihand-Signatur auf das Geolocation-Symbol klicken
 
 >[!NOTE]
 >
-Das Einbetten der geografischen Informationen ist auf einem iPad obligatorisch.
+>Das Einbetten der geografischen Informationen ist auf einem iPad obligatorisch.
 
 Auf einem iPad wird das Geolocation-Symbol standardmäßig nicht angezeigt. Die geografischen Informationen werden automatisch eingebettet, wenn Sie auf **OK** klicken.
 
