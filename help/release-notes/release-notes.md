@@ -6,10 +6,10 @@ exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 685d8016400570170dc02dc2be77651aea6e028c
-workflow-type: ht
-source-wordcount: '3783'
-ht-degree: 100%
+source-git-commit: 4f4d5494d4e630e6f16f8a8e6a6a609925a91457
+workflow-type: tm+mt
+source-wordcount: '3828'
+ht-degree: 98%
 
 ---
 
@@ -244,6 +244,12 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 * Wenn Benutzende in AEM Forms Designer eine XDP-Datei erstellen, wird bei der PDF-Ausgabe das Tag für Schaltflächenformulare nicht im übergeordneten Absatz-Tag (p-Tag) geschachtelt. (LC-3921719)
 
 * Wenn Benutzende in AEM Forms Designer eine XDP-Datei erstellen und bei der PDF-Ausgabe durch die Formular-Tags navigieren, wird das Hintergrundobjekt ebenfalls mit Tags versehen. (LC-3921687)
+
+#### [!DNL Document Services] {#forms-document-services-6520}
+
+* (Nur AEM Forms on JEE) Der PDF Generator-Dienst kann die auf dem  verfügbaren Schriftarten nicht auflisten. Folglich bleibt das Schriftauswahlfenster auf der Seite &quot;Adobe PDF-Einstellungen&quot;in der PDFG Admin-Benutzeroberfläche leer, wodurch das Einbetten ausgewählter Schriftarten effektiv verhindert wird. (FORMS-12095)
+
+
 
 ### Fundament {#foundation-6520}
 
