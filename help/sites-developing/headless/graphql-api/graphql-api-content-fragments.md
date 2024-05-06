@@ -5,9 +5,9 @@ feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
-source-wordcount: '4796'
+source-git-commit: 47aac4b19bfbd29395fb09f3c27c981e7aa908f6
+workflow-type: tm+mt
+source-wordcount: '4984'
 ht-degree: 100%
 
 ---
@@ -1048,6 +1048,39 @@ Um beispielsweise Zugriff auf Anfragen mit dem Referrer `my.domain` zu gewähren
 >Alle GraphQL-[Schemata](#schema-generation) (abgeleitet von Inhaltsfragmentmodellen, die **aktiviert** wurden) können über den GraphQL-Endpunkt gelesen werden.
 >
 >Diese Funktion bedeutet, dass Sie sicherstellen müssen, dass keine sensiblen Daten verfügbar sind, da sie auf diese Weise weitergeleitet werden könnten. Dazu gehören zum Beispiel Informationen, die in der Modelldefinition als Feldnamen vorhanden sein könnten.
+
+## Einschränkungen {#limitations}
+
+Zum Schutz vor potenziellen Problemen gibt es Standardbeschränkungen für Abfragen:
+
+* Die Abfrage darf nicht mehr als 1 Million (1024 × 1024) Zeichen enthalten.
+* Die Abfrage darf nicht mehr als 15.000 Token enthalten.
+* Die Abfrage darf nicht mehr als 200.000 Whitespace-Token enthalten.
+
+Außerdem müssen Sie Folgendes beachten:
+
+* Es wird ein Feldkonfliktfehler zurückgegeben, wenn Ihre GraphQL-Abfrage Felder mit demselben Namen in zwei (oder mehr) Modellen enthält und die folgenden Bedingungen erfüllt sind:
+
+   * Etwa in folgendem Fall:
+
+      * Zwei (oder mehr Modelle) als mögliche Verweise werden verwendet, wenn sie im Inhaltsfragmentverweis als zulässiger **Modelltyp** definiert sind.
+
+     und:
+
+      * Diese beiden Modelle haben Felder mit einem gemeinsamen Namen. Das bedeutet, dass in beiden Modellen der gleiche Name vorkommt.
+
+     und
+
+      * Diese Felder weisen unterschiedliche Datentypen auf.
+
+   * Zum Beispiel:
+
+      * Wenn zwei (oder mehr) Fragmente mit verschiedenen Modellen (z. B. `M1`, `M2`) als mögliche Verweise (Inhaltsverweis oder Fragmentverweis) aus einem anderen Fragment verwendet werden, z. B. `Fragment1` `MultiField/List`,
+      * und diese beiden Fragmente mit verschiedenen Modellen (`M1`, `M2`) Felder mit demselben Namen, aber unterschiedlichen Typen haben.
+Beispiel:
+         * `M1.Title` als `Text`
+         * `M2.Title` als `Text/MultiField`
+      * Dann tritt ein Feldkonfliktfehler auf, wenn die GraphQL-Abfrage das `Title`-Feld enthält.
 
 ## Authentifizierung {#authentication}
 
