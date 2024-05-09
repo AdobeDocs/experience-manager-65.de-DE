@@ -5,10 +5,11 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 2e5754022fb40409500bb57b3b7576bf8ec9a605
+exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
+source-git-commit: 566230aa14f24c2401d1e77965b542825eeb7fc9
 workflow-type: tm+mt
-source-wordcount: '3770'
-ht-degree: 97%
+source-wordcount: '3908'
+ht-degree: 94%
 
 ---
 
@@ -489,6 +490,11 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
 ### Bekannte Probleme bei AEM Forms {#known-issues-aem-forms-6520}
 
+* In einem adaptiven Formular, das auf einer XDP mit eingebetteten Skripten auf Kontrollkästchen basiert, werden die Skripten für Elemente nach diesen Kontrollkästchen nicht ausgeführt. (FORMS-14244)
+* Zeilen im Datumsauswahl-Widget werden abgeschnitten, wenn durch Monate im Popup-Widget für Felder mit Bearbeitungsmuster/Anzeigemuster navigiert wird. (FORMS-13620)
+* Formularübermittlungen schlagen fehl, wenn versucht wird, den DOR-Dienst (Document of Record) im Backend zu verwenden. Die Fehlermeldung &quot;Sendeaktion konnte nicht abgeschlossen werden, da die Formularressource nicht korrekt zugewiesen ist.&quot; (FORMS-13798)
+* Wenn ein adaptives Formular von einer Adobe Experience Manager-Veröffentlichungsinstanz an einen Adobe Experience Manager-Workflow gesendet wird, kann der Workflow die Anlagen nicht speichern. (FORMS-14209)
+* Bei der Installation des AEM 6.5 Forms Service Pack 20-Pakets (AEM Forms Add-On-Paket für SP20) weist die AEM Sites-Benutzeroberfläche eine erhebliche Leistungsbeeinträchtigung auf. (FORMS-13791)
 * Der Vorbefüllungsdienst schlägt in interaktiven Kommunikationen mit einer NULL-Zeigerausnahme fehl. (CQDOC-21355)
 * Mit adaptiven Formularen können Sie benutzerdefinierte Funktionen mit ECMAScript Version 5 oder früher verwenden. Wenn eine benutzerdefinierte Funktion ECMAScript-Version 6 oder höher verwendet, z. B. „let“, „const“ oder Pfeilfunktionen, wird der Regeleditor möglicherweise nicht ordnungsgemäß geöffnet.
 * Benutzerinnen und Benutzer können keinen Korrespondenz-Management-Brief erstellen. Wenn eine Benutzerin oder ein Benutzer einen Brief erstellt, wird ein Fehler mit der Beschreibung „`Object Object`“ angezeigt und der Brief wird nicht erstellt. Miniaturansichten für Layouts können auch nicht auf dem Bildschirm zur Brieferstellung geladen werden. Sie können das [aktuelle AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) installieren, um das Problem zu beheben. (FORMS-13496)
