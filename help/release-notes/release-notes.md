@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 566230aa14f24c2401d1e77965b542825eeb7fc9
+source-git-commit: c165755c19ac64fdd253bff9163f48ddf4732623
 workflow-type: tm+mt
-source-wordcount: '3908'
-ht-degree: 94%
+source-wordcount: '4046'
+ht-degree: 91%
 
 ---
 
@@ -530,6 +530,11 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 1. Stop the application server.
 
 -->
+* In einem adaptiven Formular, das auf einer XDP mit eingebetteten Skripten auf Kontrollkästchen basiert, werden die Skripten für Elemente nach diesen Kontrollkästchen nicht ausgeführt. (FORMS-14244)
+* Zeilen im Datumsauswahl-Widget werden abgeschnitten, wenn durch Monate im Popup-Widget für Felder mit Bearbeitungsmuster/Anzeigemuster navigiert wird. (FORMS-13620)
+* Formularübermittlungen schlagen fehl, wenn versucht wird, den DOR-Dienst (Document of Record) im Backend zu verwenden. Die Fehlermeldung &quot;Sendeaktion konnte nicht abgeschlossen werden, da die Formularressource nicht korrekt zugewiesen ist.&quot; (FORMS-13798)
+* Wenn ein adaptives Formular von einer Adobe Experience Manager-Veröffentlichungsinstanz an einen Adobe Experience Manager-Workflow gesendet wird, kann der Workflow die Anlagen nicht speichern. (FORMS-14209)
+* Bei der Installation des AEM 6.5 Forms Service Pack 20-Pakets (AEM Forms Add-On-Paket für SP20) weist die AEM Sites-Benutzeroberfläche eine erhebliche Leistungsbeeinträchtigung auf. (FORMS-13791)
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 
