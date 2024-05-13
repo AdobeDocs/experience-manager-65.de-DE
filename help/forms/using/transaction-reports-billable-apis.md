@@ -8,14 +8,19 @@ feature: Transaction Reports
 exl-id: e92f1b59-79ef-40fa-af9a-7380cd701a75
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 100%
+source-wordcount: '1754'
+ht-degree: 99%
 
 ---
 
 # Abrechenbare APIs für Transaktionsberichte für AEM Forms on OSGi {#transaction-reports-billable-apis}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/transaction-reports-billable-apis) |
+| AEM 6.5 | Dieser Artikel |
 
 AEM Forms bietet mehrere APIs zum Senden von Formularen, zum Verarbeiten von Dokumenten und zum Rendern von Dokumenten. Einige APIs werden als Transaktionen verbucht, andere können kostenlos verwendet werden. Dieses Dokument enthält eine Liste aller APIs, die in einem Transaktionsbericht als Transaktionen verbucht werden. Im Folgenden finden Sie einige gängige Szenarien, in denen eine kostenpflichtige API verwendet wird:
 

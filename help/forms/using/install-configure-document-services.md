@@ -3,12 +3,11 @@ title: Installieren und Konfiguration von Dokumentendiensten
 description: Installieren Sie AEM Forms-Dokumentendienste, um PDF-Dokumente zu erstellen, zusammenzustellen, zu verteilen, zu archivieren, digitale Signaturen zur Einschränkung des Zugriffs auf Dokumente hinzuzufügen und Formulare mit Barcode zu entschlüsseln..
 topic-tags: installing
 role: Admin, User, Developer
-exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
 workflow-type: tm+mt
-source-wordcount: '5633'
-ht-degree: 100%
+source-wordcount: '5703'
+ht-degree: 98%
 
 ---
 
@@ -298,6 +297,10 @@ Das Benutzerkonto, das zum Starten des Anwendungsservers verwendet wird, muss di
 1. Öffnen Sie den Gruppenrichtlinien-Editor für Microsoft® Windows. Klicken Sie zum Öffnen des Gruppenrichtlinien-Editors auf **[!UICONTROL Start]**, geben Sie im Suchfeld **gpedit.msc** ein und klicken Sie auf **[!UICONTROL Gruppenrichtlinien-Editor]**.
 1. Navigieren Sie zu **[!UICONTROL Lokale Computerrichtlinie]** > **[!UICONTROL Computer-Konfiguration]** > **[!UICONTROL Windows-Einstellungen]** > **[!UICONTROL Sicherheitseinstellungen]** > **[!UICONTROL Lokale Richtlinien]** > **[!UICONTROL Zuweisung von Benutzerrechten]** und bearbeiten Sie die Richtlinie **[!UICONTROL Token auf Prozessebene ersetzen]**, damit diese in der Gruppe „Admins“ übernommen wird.
 1. Fügen Sie dem Eintrag „Token auf Prozessebene ersetzen“ Benutzende hinzu.
+
+>[!NOTE]
+>
+> Wenn der AEM-Server als Dienst unter LSA ausgeführt wird und die explizite Zuweisung dieser Berechtigung an einen Benutzer möglicherweise nicht erforderlich ist, bedeutet dies, dass, abgesehen von der für PDFG auf der VM erforderlichen Installation, keine anderen Anwendungen/Komponenten installiert werden, Sie die **Berechtigung für Token auf Prozessebene ersetzen** und nur lokale Dienste und Netzwerkdienstkonten sollten das Recht haben.
 
 ### (Nur Windows) Aktivieren des PDF Generator-Services für Benutzer, die keine Administratoren sind {#enable-the-pdf-generator-service-for-non-administrators}
 
