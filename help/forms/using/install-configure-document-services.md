@@ -4,13 +4,13 @@ description: Installieren Sie AEM Forms-Dokumentendienste, um PDF-Dokumente zu e
 topic-tags: installing
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
+exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
+source-git-commit: 0a1a0d8e3a2794bda247e7b07a2ef9d9fcac7c13
 workflow-type: tm+mt
-source-wordcount: '5703'
-ht-degree: 98%
+source-wordcount: '5660'
+ht-degree: 99%
 
 ---
-
 
 # Installieren und Konfiguration von Dokumentendiensten {#installing-and-configuring-document-services}
 
@@ -300,7 +300,7 @@ Das Benutzerkonto, das zum Starten des Anwendungsservers verwendet wird, muss di
 
 >[!NOTE]
 >
-> Wenn der AEM-Server als Dienst unter LSA ausgeführt wird und die explizite Zuweisung dieser Berechtigung an einen Benutzer möglicherweise nicht erforderlich ist, bedeutet dies, dass, abgesehen von der für PDFG auf der VM erforderlichen Installation, keine anderen Anwendungen/Komponenten installiert werden, Sie die **Berechtigung für Token auf Prozessebene ersetzen** und nur lokale Dienste und Netzwerkdienstkonten sollten das Recht haben.
+> Wenn der AEM-Server wie oben beschrieben als Dienst unter dem LocalSystem-Konto (LSA) ausgeführt wird, ist es nicht erforderlich, diese Berechtigung explizit einem Benutzer zuzuweisen.
 
 ### (Nur Windows) Aktivieren des PDF Generator-Services für Benutzer, die keine Administratoren sind {#enable-the-pdf-generator-service-for-non-administrators}
 
