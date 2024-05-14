@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 55421ab730382eb9aa603f898182865649f66349
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 100%
+source-wordcount: '1573'
+ht-degree: 99%
 
 ---
 
@@ -68,7 +68,7 @@ Eine dynamische Gruppe enthält nur Benutzende. Sie kann nicht andere Gruppen en
 
 ### Dynamische Gruppen auf Basis von E-Mail-Domains automatisch erstellen {#automatically-create-dynamic-groups-based-on-email-domains}
 
-1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Benutzerverwaltung“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“.
+1. Klicken Sie auf Einstellungen > User Management > Konfiguration > Erweiterte Systemattribute konfigurieren.
 1. Aktivieren Sie das Kontrollkästchen unter „Automatische Erstellung einer dynamischen Gruppe“.
 1. Geben Sie an, wann User Manager auf neue E-Mail-Domains prüfen soll. Diese Zeit sollte nach der Domain-Synchronisierungszeit liegen, da die Erstellung dynamischer Gruppen nur sinnvoll ist, wenn die Domain-Synchronisierung abgeschlossen ist.
 
