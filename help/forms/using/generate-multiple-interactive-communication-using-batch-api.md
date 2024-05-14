@@ -9,10 +9,10 @@ feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 066528bd9c2d7db9705a9d47ed6ea91a584129cb
 workflow-type: tm+mt
 source-wordcount: '2134'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -119,9 +119,7 @@ Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Datensätze) m
    1. Wählen Sie Ihren Service zum Abrufen aus dem Feld „Lese-Service“ im Bereich „Eigenschaften bearbeiten“ aus.
    1. Wählen Sie das Stiftsymbol für das Argument des Lese-Service aus, um das Argument an ein Anfrageattribut zu binden, und geben Sie den Bindungswert an. Er bindet das Dienstargument an das angegebene Bindungsattribut oder den angegebenen Literalwert, der an den Dienst als Argument übergeben wird, um mit dem angegebenen Wert verknüpfte Details aus der Datenquelle abzurufen.
 
-      <br>
-        In diesem Beispiel nimmt das Argument ID den Wert des Attributs ID des Benutzerprofils an und übergibt ihn als Argument an den Lese-Service. Dieser liest Werte aus zugeordneten Eigenschaften aus dem Datenmodellobjekt „employee“ für die angegebene ID und gibt sie zurück. Wenn Sie beispielsweise im ID-Feld im Formular den Wert „00250“ festlegen, liest der Lesedienst die Informationen zu der Person mit der Mitarbeiter-ID „00250“.
-        <br>
+      In diesem Beispiel nimmt das id-Argument den Wert des id-Attributs des Benutzerprofils und übergibt ihn als Argument an den Lesedienst. Dieser liest Werte aus zugeordneten Eigenschaften aus dem Datenmodellobjekt „employee“ für die angegebene ID und gibt sie zurück. Wenn Sie also 00250 im Feld ID im Formular angeben, liest der Lesedienst Details zum Mitarbeiter mit der Mitarbeiter-ID 00250.
 
       ![Konfigurieren des Anfrageattributs](assets/request-attribute.png)
 
