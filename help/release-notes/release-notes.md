@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 source-git-commit: c165755c19ac64fdd253bff9163f48ddf4732623
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4046'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -80,8 +80,8 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
-* Verschachtelte Konfigurationsordner wurden nicht mehr unterstützt und die Ordner des Inhaltsfragmentmodells waren nach dem Upgrade auf AEM 6.5.18 oder auf AEM 6.5.19 nicht mehr sichtbar. (SITES-18110)
-* Einige Unterordner können nicht aus geerbten Inhaltsfragmentmodellen auswählen. Sie müssen Ordner unterstützen, ohne über eine `jcr:content`-Eigenschaft zu verfügen, auch wenn die über die Benutzeroberfläche erstellten DAM-Ordner einen solchen Knoten aufweisen. (SITES-17943)
+* Verschachtelte Konfigurationsordner wurden nicht mehr unterstützt und Inhaltsfragmentmodell-Ordner waren nach der Aktualisierung auf AEM 6.5.18 oder AEM 6.5.19 nicht mehr sichtbar. (SITES-18110)
+* Einige Unterordner können nicht aus übernommenen Inhaltsfragmentmodellen auswählen. Sie müssen Ordner unterstützen, ohne über eine `jcr:content`-Eigenschaft zu verfügen, auch wenn die über die Benutzeroberfläche erstellten DAM-Ordner einen solchen Knoten aufweisen. (SITES-17943)
 
 #### [!DNL Content Fragments] – GraphQL-API {#sites-graphql-api-6520}
 
@@ -99,7 +99,7 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 #### Core-Backend{#sites-core-backend-6520}
 
 * Wenn die Funktion „Quick Publish“ eines Inhaltsfragments verwendet wird, wird das Fragment weiter geladen und nicht veröffentlicht. Das heißt, nach einer Service Pack-Aktualisierung von AEM 6.5.7 auf AEM 6.5.17 funktioniert die Funktion „Quick Publish“ nicht für Inhaltsfragmente. Als die Person es mit einer verwalteten Veröffentlichung versuchte, funktionierte dies zwar, als sie jedoch versuchte, die Funktion „Quick Publish“ zu verwenden, wurde die Veröffentlichung nicht durchgeführt.  Genau gesagt: `com.day.cq.wcm.core.impl.reference.ActivationReferenceSearchBuilder` hat den Absturz des Systems verursacht. (SITES-17311)
-* Inhaltsfragmente können mit Jackson Exporter nicht serialisiert werden: Das Laden der Seite bricht ab, wenn ein Inhaltsfragment auf einer Seite referenziert ist (verwendet Jackson Exporter-Code) und ein beliebiges Tag, das zu einem Inhaltsfragment hinzugefügt wurde. (SITES-18096)
+* Inhaltsfragmente können mit Jackson Exporter nicht serialisiert werden: Das Laden der Seite bricht ab, wenn ein Inhaltsfragment auf einer Seite referenziert ist (verwendet Jackson Exporter-Code) und ein beliebiges Tag zu einem Inhaltsfragment hinzugefügt wird. (SITES-18096)
 
 #### Kernkomponenten{#sites-core-components-6520}
 
@@ -276,7 +276,7 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 
 * Nach der Bereitstellung von AEM 6.5 Service Pack 18 trat ein Problem mit der Registerkarte „Filter“ im Editor für Übersetzungsregeln auf. Wenn ein Kontext ausgewählt ist, erscheint durch Klicken auf „Bearbeiten“ > „Speichern“ beim nächsten Öffnen desselben Kontexts ein doppeltes Anführungszeichen als HTML-Zeichen. Im Grunde wurden die Übersetzungsregeln nicht korrekt gespeichert. (NPR-41624)
 * Probleme im Zusammenhang mit Inhaltsfragment-Übersetzungen, bei denen die übersetzten Zeichenfolgen vom Übersetzungsanbieter an AEM zurückgesendet werden, aber auf der Ebene `/content/projects` stecken bleiben und die Inhaltsfragmente nicht aktualisiert wurden. (NPR-41516)
-* Beim Erstellen einer Sprachkopie wird eine Fehlermeldung angezeigt. Sie tritt auf einer Seite auf, auf die in einer Seiteneigenschaft ein Inhaltsfragment referenziert wird, wobei Inhaltsfragmentmodelle verwendet werden. (NPR-41441)
+* Beim Erstellen einer Sprachkopie wird eine Fehlermeldung angezeigt. Sie tritt auf einer Seite auf, die ein Inhaltsfragment enthält, auf das mit Inhaltsfragmentmodellen in einer Seiteneigenschaft verwiesen wird. (NPR-41441)
 * Links in Experience Fragments werden während der Sprachkopie nicht an die richtige Sprache angepasst. Stattdessen verweist das Experience Fragment auf das primäre Gebietsschema. (NPR-41343)
 
 #### Benutzeroberfläche{#foundation-ui-6520}
@@ -490,11 +490,11 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
 ### Bekannte Probleme bei AEM Forms {#known-issues-aem-forms-6520}
 
-* In einem adaptiven Formular, das auf einer XDP mit eingebetteten Skripten auf Kontrollkästchen basiert, werden die Skripten für Elemente nach diesen Kontrollkästchen nicht ausgeführt. (FORMS-14244)
-* Zeilen im Datumsauswahl-Widget werden abgeschnitten, wenn durch Monate im Popup-Widget für Felder mit Bearbeitungsmuster/Anzeigemuster navigiert wird. (FORMS-13620)
-* Formularübermittlungen schlagen fehl, wenn versucht wird, den DOR-Dienst (Document of Record) im Backend zu verwenden. Die Fehlermeldung &quot;Sendeaktion konnte nicht abgeschlossen werden, da die Formularressource nicht korrekt zugewiesen ist.&quot; (FORMS-13798)
-* Wenn ein adaptives Formular von einer Adobe Experience Manager-Veröffentlichungsinstanz an einen Adobe Experience Manager-Workflow gesendet wird, kann der Workflow die Anlagen nicht speichern. (FORMS-14209)
-* Bei der Installation des AEM 6.5 Forms Service Pack 20-Pakets (AEM Forms Add-On-Paket für SP20) weist die AEM Sites-Benutzeroberfläche eine erhebliche Leistungsbeeinträchtigung auf. (FORMS-13791)
+* In einem adaptiven Formular, das auf einer XDP mit eingebetteten Skripten auf Kontrollkästchen basiert, werden die Skripte für Elemente nach diesen Kontrollkästchen nicht ausgeführt. (FORMS-14244)
+* Zeilen im Datumsauswahl-Widget werden abgeschnitten, wenn im Popup-Widget für Felder mit Bearbeitungs-/Anzeigemuster Monate durchlaufen werden. (FORMS-13620)
+* Formulareinreichungen schlagen fehl, wenn versucht wird, den DoR-Service (Document of Record; Nachweis) im Backend zu verwenden. Die Fehlermeldung lautet: „Sendeaktion konnte nicht abgeschlossen werden, da die Formularressource nicht ordnungsgemäß zugewiesen ist“. (FORMS-13798)
+* Wenn ein adaptives Formular aus einer Adobe Experience Manager-Veröffentlichungsinstanz an einen Adobe Experience Manager-Workflow gesendet wird, können die Anlagen nicht vom Workflow gespeichert werden. (FORMS-14209)
+* Bei der Installation des AEM 6.5 Forms Service Pack 20-Pakets (AEM Forms-Add-on-Paket für SP20) verschlechtert sich die Leistung der AEM Sites-Benutzeroberfläche erheblich. (FORMS-13791)
 * Der Vorbefüllungsdienst schlägt in interaktiven Kommunikationen mit einer NULL-Zeigerausnahme fehl. (CQDOC-21355)
 * Mit adaptiven Formularen können Sie benutzerdefinierte Funktionen mit ECMAScript Version 5 oder früher verwenden. Wenn eine benutzerdefinierte Funktion ECMAScript-Version 6 oder höher verwendet, z. B. „let“, „const“ oder Pfeilfunktionen, wird der Regeleditor möglicherweise nicht ordnungsgemäß geöffnet.
 * Benutzerinnen und Benutzer können keinen Korrespondenz-Management-Brief erstellen. Wenn eine Benutzerin oder ein Benutzer einen Brief erstellt, wird ein Fehler mit der Beschreibung „`Object Object`“ angezeigt und der Brief wird nicht erstellt. Miniaturansichten für Layouts können auch nicht auf dem Bildschirm zur Brieferstellung geladen werden. Sie können das [aktuelle AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) installieren, um das Problem zu beheben. (FORMS-13496)
@@ -530,11 +530,11 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 1. Stop the application server.
 
 -->
-* In einem adaptiven Formular, das auf einer XDP mit eingebetteten Skripten auf Kontrollkästchen basiert, werden die Skripten für Elemente nach diesen Kontrollkästchen nicht ausgeführt. (FORMS-14244)
-* Zeilen im Datumsauswahl-Widget werden abgeschnitten, wenn durch Monate im Popup-Widget für Felder mit Bearbeitungsmuster/Anzeigemuster navigiert wird. (FORMS-13620)
-* Formularübermittlungen schlagen fehl, wenn versucht wird, den DOR-Dienst (Document of Record) im Backend zu verwenden. Die Fehlermeldung &quot;Sendeaktion konnte nicht abgeschlossen werden, da die Formularressource nicht korrekt zugewiesen ist.&quot; (FORMS-13798)
-* Wenn ein adaptives Formular von einer Adobe Experience Manager-Veröffentlichungsinstanz an einen Adobe Experience Manager-Workflow gesendet wird, kann der Workflow die Anlagen nicht speichern. (FORMS-14209)
-* Bei der Installation des AEM 6.5 Forms Service Pack 20-Pakets (AEM Forms Add-On-Paket für SP20) weist die AEM Sites-Benutzeroberfläche eine erhebliche Leistungsbeeinträchtigung auf. (FORMS-13791)
+* In einem adaptiven Formular, das auf einer XDP mit eingebetteten Skripten auf Kontrollkästchen basiert, werden die Skripte für Elemente nach diesen Kontrollkästchen nicht ausgeführt. (FORMS-14244)
+* Zeilen im Datumsauswahl-Widget werden abgeschnitten, wenn im Popup-Widget für Felder mit Bearbeitungs-/Anzeigemuster Monate durchlaufen werden. (FORMS-13620)
+* Formulareinreichungen schlagen fehl, wenn versucht wird, den DoR-Service (Document of Record; Nachweis) im Backend zu verwenden. Die Fehlermeldung lautet: „Sendeaktion konnte nicht abgeschlossen werden, da die Formularressource nicht ordnungsgemäß zugewiesen ist“. (FORMS-13798)
+* Wenn ein adaptives Formular aus einer Adobe Experience Manager-Veröffentlichungsinstanz an einen Adobe Experience Manager-Workflow gesendet wird, können die Anlagen nicht vom Workflow gespeichert werden. (FORMS-14209)
+* Bei der Installation des AEM 6.5 Forms Service Pack 20-Pakets (AEM Forms-Add-on-Paket für SP20) verschlechtert sich die Leistung der AEM Sites-Benutzeroberfläche erheblich. (FORMS-13791)
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 
