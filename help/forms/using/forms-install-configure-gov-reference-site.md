@@ -9,7 +9,7 @@ role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '4534'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -504,7 +504,7 @@ Das in diesem Abschnitt erstellte Zertifikat wird verwendet, um den Integrations
 
 Vergewissern Sie sich, dass Sie die Möglichkeit haben, eine Integration in Ihrer Adobe-Domain zu erstellen. Wenn nicht, wenden Sie sich dafür an Ihr Systemadministrations-Team.
 
-1. Navigieren Sie zum [Adobe Developer-Konsole](https://developer.adobe.com/console/).
+1. Navigieren Sie zu [Adobe Developer Console](https://developer.adobe.com/console/).
 
 1. Klicken Sie auf Integration erstellen.
 

@@ -11,17 +11,17 @@ role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '2099'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # Zugreifbare adaptive Formulare erstellen{#creating-accessible-adaptive-forms}
 
-<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird ein älterer Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird ein älterer Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 ## Einführung {#introduction}
 
-Ein barrierefreies Formular ist ein Formular, das alle verwenden können, einschließlich von Benutzenden mit Behinderungen. Adaptive Formulare verfügen über eine Reihe von Merkmalen und Funktionen, die die Benutzerfreundlichkeit für Benutzende mit unterschiedlichen Fähigkeiten verbessern. Die Integration von Barrierefreiheit in adaptive Formulare ermöglicht nicht nur eine möglichst breite Zielgruppe für Inhalte, sondern ist auch eine Anforderung bei der Bereitstellung von Dokumenten in Ländern, in denen die Einhaltung von Barrierefreiheitsstandards vorgeschrieben ist. Mit AEM Forms können Formularentwickler die Barrierefreiheitsstandards einhalten.
+Ein barrierefreies Formular ist ein Formular, das alle verwenden können, einschließlich von Benutzenden mit Behinderungen. Adaptive Formulare verfügen über eine Reihe von Merkmalen und Funktionen, die die Benutzerfreundlichkeit für Benutzende mit unterschiedlichen Fähigkeiten verbessern. Die Integration barrierefreier Ein-/Ausgabehilfen in adaptive Formulare ermöglicht nicht nur eine größtmögliche Zielgruppe für den Inhalt, dies ist auch eine Anforderung beim Bereitstellen von Dokumenten in Regionen, in denen die Einhaltung von Standards zur Barrierefreiheit obligatorisch ist. Mit AEM Forms können Formularentwickler die Barrierefreiheitsstandards einhalten.
 
 Beim Verfassen eines adaptiven Formulars müssen Autorinnen und Autoren die folgenden Punkte berücksichtigen, um barrierefreie adaptive Formulare zu erstellen:
 
@@ -37,18 +37,18 @@ Sie benötigen ein Tool für Barrierefreiheit wie **ANDI (Accessible Name and De
 
 ### Herunterladen und Installieren des Test-Tools für Barrierefreiheit
 
-Das Tool &quot;Accessible Name and Description Inspector (ANDI)&quot;hilft Ihnen bei der Identifizierung und Behebung von Problemen bei der Einhaltung von Barrierefreiheitsbestimmungen in Webinhalten. Es ist das empfohlene Tool gemäß den Trusted Tester-Richtlinien v5 des Ministeriums für Innere Sicherheit. Es wurde von der Abteilung „Social Security Administration“ der USA entwickelt, um Webinhalte auf die Einhaltung von Section 508-Anforderungen hin zu überprüfen. Das Tool:
+Das Tool ANDI (Accessible Name and Description Inspector) hilft Ihnen bei der Identifizierung und Behebung von Problemen mit der Barrierefreiheit in Web-Inhalten. Es ist das empfohlene Tool gemäß den Trusted Tester-Richtlinien v5 des Ministeriums für Innere Sicherheit. Es wurde von der Abteilung „Social Security Administration“ der USA entwickelt, um Webinhalte auf die Einhaltung von Section 508-Anforderungen hin zu überprüfen. Das Tool:
 
 * Hilft bei der Erkennung von Barrierefreiheitsproblemen auf einer Web-Seite
 * Macht Vorschläge zur Verbesserung der Barrierefreiheit
 * Erkennt Probleme mit der Barrierefreiheit der Tastaturnutzbarkeit und dem Farbkontrast
 * Identifiziert eindeutig den Inhalt von Bildschirmlesehilfen gemäß den Standards
 
-ANDI funktioniert mit allen gängigen Internetbrowsern. Siehe [ANDI-Dokumentation](https://www.ssa.gov/accessibility/andi/help/install.html) für detaillierte Anweisungen zur Konfiguration und Verwendung des Tools.
+ANDI funktioniert mit allen gängigen Internetbrowsern. Detaillierte Anweisungen zum Konfigurieren und Verwenden des Tools finden Sie in der [ANDI-Dokumentation](https://www.ssa.gov/accessibility/andi/help/install.html).
 
 ### Herunterladen und Installieren des „Ultramarine-Accessible“-Designs
 
-Das „Ultramarine-Accessible“-Design („Ultramarinblau – Barrierefreiheit“) ist ein Referenzdesign. Es wird veranschaulicht, wie Farbkontrast und andere Probleme mit der Barrierefreiheit in einem adaptiven Formular behoben werden. Adobe empfiehlt, ein benutzerdefiniertes Design für die Produktionsumgebung zu erstellen, das auf den von Ihrem Unternehmen genehmigten Stilen basiert. Führen Sie die folgenden Schritte aus, um das Thema in Ihre AEM-Instanz hochzuladen:
+Das „Ultramarine-Accessible“-Design („Ultramarinblau – Barrierefreiheit“) ist ein Referenzdesign. Es veranschaulicht, wie Sie Farbkontrast- und andere Probleme mit der Barrierefreiheit in einem adaptiven Formular beheben können. Adobe empfiehlt, ein benutzerdefiniertes Design für die Produktionsumgebung zu erstellen, das auf den von Ihrem Unternehmen genehmigten Stilen basiert. Führen Sie die folgenden Schritte aus, um das Thema in Ihre AEM-Instanz hochzuladen:
 
 1. Laden Sie das Designpaket herunter.
 1. Navigieren Sie in Ihrer AEM-Instanz zu **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![Navigation](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formulare]**.
@@ -63,7 +63,7 @@ Sie sollten sich auf vier wichtige Aspekte konzentrieren: Tastaturnavigation, Fa
 Wenden Sie das Design „Ultramarine-Accessible“ auf Ihr vorhandenes adaptives Formular an. So wenden Sie das Design an:
 
 1. Öffnen Sie Ihr adaptives Formular zum Bearbeiten.
-1. Wählen Sie eine Komponente und das übergeordnete Symbol aus. Wählen Sie im Kontextmenü **[!UICONTROL Container für adaptive Formulare]** und wählen Sie dann das Symbol Konfigurieren aus.
+1. Wählen Sie eine Komponente und das übergeordnete Symbol aus. Wählen Sie im Kontextmenü die Option **[!UICONTROL Container für adaptive Formulare]** und dann das Symbol „Konfigurieren“ aus.
 1. Wählen Sie im Eigenschaften-Browser das Design „Ultramarine-barrierefrei“ und dann das Symbol **[!UICONTROL Speichern]** aus.
 1. Aktualisieren Sie das Browser-Fenster. Das Design wird auf das adaptive Formular angewendet.
 
@@ -71,11 +71,11 @@ Nachdem Sie ein barrierefreies Design angewendet haben, führen Sie die folgende
 
 1. Fügen Sie einen aussagekräftigen Alternativtext für das Logobild im adaptiven Formular hinzu.
 
-   Geben Sie einen aussagekräftigen Alternativtext für Bilder in den Kopf- und Fußzeilenkomponenten der Vorlage für das adaptive Formular ein. Wenn Sie die Vorlage korrigieren und sie zum Erstellen eines adaptiven Formulars verwenden, übernehmen die adaptiven Formulare alle auf die Barrierefreiheit bezogenen Fehlerbehebungen, die auf die Kopf- und Fußzeile der Vorlage angewendet werden.  Nehmen Sie für ein vorhandenes adaptives Formular Änderungen auf der Ebene des adaptiven Formulars vor. Änderungen an einer adaptiven Formularvorlage fließen nicht automatisch in ein vorhandenes adaptives Formular.
+   Geben Sie einen aussagekräftigen Alternativtext für Bilder in den Kopf- und Fußzeilenkomponenten der Vorlage für das adaptive Formular ein. Wenn Sie die Vorlage korrigieren und zum Erstellen eines adaptiven Formulars verwenden, übernimmt das adaptive Formular alle Korrekturen, die im Interesse der Barrierefreiheit an der Kopf- und Fußzeile der Vorlage vorgenommen wurden.  Nehmen Sie Änderungen für ein vorhandenes adaptives Formular auf Ebene des adaptiven Formulars vor. Änderungen, die an einer Vorlage für adaptive Formulare vorgenommen wurden, werden nicht automatisch in schon vorhandene adaptive Formulare eingespielt.
 
 1. Fügen Sie dem adaptiven Formular eine Überschriftenkomponente hinzu, die den Formularnamen enthält. Wenn Ihr Formularentwurf einen Firmennamen angibt, fügen Sie auch für den Firmennamen eine separate Überschriftenkomponente hinzu.
 
-   Die meisten Barrierefreiheits-Tools informieren Benutzer über die Hierarchie der Inhalte, damit sie die Struktur der Web-Seite besser verstehen. Legen Sie unterschiedliche Überschriftenebenen für den Organisationsnamen und den Formularnamentext im adaptiven Formular fest, um eine hierarchische Struktur für diese Texte bereitzustellen. Verwenden Sie außerdem vor jedem Bereich und Abschnitt eine Textkomponente mit einer entsprechenden Überschriftenebene, um eine Hierarchie zu erstellen.
+   Die meisten Barrierefreiheits-Tools informieren Benutzer über die Hierarchie der Inhalte, damit sie die Struktur der Web-Seite besser verstehen. Legen Sie im adaptiven Formular unterschiedliche Überschriftenebenen für den Namen des Unternehmens und des Formulars fest, um eine hierarchische Struktur dieser Texte zu erzielen. Verwenden Sie außerdem vor jedem Bereich und Abschnitt eine Textkomponente mit einer entsprechenden Überschriftenebene, um eine Hierarchie zu erstellen.
 
    ![Anwenden eines Kopfzeilenstils](assets/apply-style.gif)
 
@@ -91,7 +91,7 @@ Nachdem Sie ein barrierefreies Design angewendet haben, führen Sie die folgende
 
 1. Legen Sie einen benutzerdefinierten barrierefreien Text für die Datumsauswahl-Komponente fest. Zum Beispiel: „Geben Sie Ihr Geburtsdatum ein.“ Bildschirmlesehilfen lesen diese benutzerdefinierten barrierefreien Texte.
 
-1. Verwenden Sie für Komponenten des adaptiven Formulars kurze statt langer Beschreibungen. Eine lange Beschreibung fügt die Schaltfläche „Hilfe“ hinzu. Stellen Sie sicher, dass das adaptive Formular keine Hilfe-Schaltfläche aufweist.
+1. Verwenden Sie für Komponenten des adaptiven Formulars kurze statt langer Beschreibungen. Eine lange Beschreibung fügt die Schaltfläche „Hilfe“ hinzu. Vergewissern Sie sich, dass das adaptive Formular über keine Schaltfläche „Hilfe“ verfügt.
 
 1. Fügen Sie allen schreibgeschützten Tabellenzellen einen benutzerdefinierten barrierefreien Text hinzu. Deaktivieren Sie außerdem alle schreibgeschützten Zellen von Tabellen.
 
@@ -124,7 +124,7 @@ Gehen Sie wie folgt vor, um die Barrierefreiheitsoptionen zu verwenden:
 
 >[!NOTE]
 >
->* Optionsfelder und Kontrollkästchen können nur zwei Optionen für die Barrierefreiheit haben, nämlich &quot;Benutzerdefinierter Text&quot;und &quot;Titel&quot;.
+>* Optionsfelder und Kontrollkästchen können nur zwei Optionen für die Barrierefreiheit aufweisen, nämlich „Eigener Text“ und „Titel“.
 >* Bei XFA-basierten adaptiven Formularen wird die Barrierefreiheitsoption von den in der XDP festgelegten Barrierefreiheitsoptionen übernommen. QuickInfos aus der XDP werden der Kurzbeschreibung zugeordnet und die Beschriftung dem Titel. Die anderen Optionen bleiben gleich.
 
 ### 3. Angabe von Textäquivalenten für Bilder {#provide-text-equivalents-for-images}
@@ -182,7 +182,7 @@ Für die Datumsauswahl-Komponente in adaptiven Formularen stehen die folgenden T
 
 ## Verwenden des Barrierefreiheits-Tools, um noch verbleibende Probleme hinsichtlich der Barrierefreiheit zu ermitteln
 
-Der Accessible Name and Description Inspector (ANDI) unterstützt Sie beim Identifizieren und Beheben von Problemen bei der Einhaltung von Barrierefreiheitsregeln in einem adaptiven Formular. So suchen Sie mit dem ANDI-Tool nach Barrierefreiheitsproblemen in einem adaptiven Formular:
+ANDI (Accessible Name and Description Inspector) unterstützt Sie beim Identifizieren und Beheben von Problemen mit der Barrierefreiheit in einem adaptiven Formular. So suchen Sie mit dem ANDI-Tool nach Barrierefreiheitsproblemen in einem adaptiven Formular:
 
 1. Öffnen Sie das adaptives Formular im Vorschaumodus.
 1. Klicken Sie auf das als Lesezeichen gespeicherte Symbol für das ANDI-Tool. Das ANDI-Tool analysiert das adaptive Formular und zeigt Probleme bezüglich der Barrierefreiheit an. Weitere Informationen zur Verwendung des Tools finden Sie in der [ANDI-Dokumentation](https://www.ssa.gov/accessibility/andi/help/howtouse.html).

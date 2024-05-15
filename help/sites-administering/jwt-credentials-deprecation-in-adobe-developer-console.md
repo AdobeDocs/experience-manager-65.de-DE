@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 36c95ea717a0abcb0b6ef9b0796a94d7b0f66329
 workflow-type: tm+mt
 source-wordcount: '456'
-ht-degree: 69%
+ht-degree: 75%
 
 ---
 
@@ -36,7 +36,7 @@ Mit der AEM Author-Benutzeroberfläche können Kundinnen und Kunden von AEM Inte
 
 ![Integrieren von AEM mit anderen Lösungen](/help/sites-administering/assets/jwt-deprecation.png)
 
-Zum Beispiel finden Sie [hier](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/integration-target-ims) die Anweisungen zum Konfigurieren der Integration mit Adobe Target. Der API-Schlüssel im [Abschließen der IMS-Konfiguration in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/integration-target-ims#completing-the-ims-configuration-in-aem) sollte in den OAuth-Server-zu-Server-Berechtigungstyp migriert werden, sobald AEM diese Anmeldeinformationen Mitte Mai unterstützt. Diese Anweisungen werden Mitte Mai aktualisiert, damit Sie die neuen OAuth Server-zu-Server-Anmeldedaten anwenden können.
+Zum Beispiel finden Sie [hier](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/integration-target-ims) die Anweisungen zum Konfigurieren der Integration mit Adobe Target. Der API-Schlüssel im Abschnitt [Abschließen der IMS-Konfiguration in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/integration-target-ims#completing-the-ims-configuration-in-aem) sollte in den OAuth-Server-zu-Server-Anmeldedatentyp migriert werden, sobald AEM diese Anmeldedaten Mitte Mai unterstützt. Diese Anweisungen werden Mitte Mai aktualisiert, damit Sie die neuen OAuth Server-zu-Server-Anmeldedaten anwenden können.
 
 ## Cloud Manager-APIs {#cloud-manager-apis}
 

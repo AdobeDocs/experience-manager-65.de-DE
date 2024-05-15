@@ -11,7 +11,7 @@ role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '1226'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Der Artikel verwendet ein Beispiel, um zu veranschaulichen, wie Sie das adaptive
 
 Nachdem Sie das Paket hochgeladen haben, können Sie diese Assets in der Benutzeroberfläche von AEM Forms anzeigen.
 
-Installieren Sie das Paket mithilfe des Package Manager: `https://<server>:<port>/crx/packmgr/index.jsp`
+Installieren Sie das Paket mit dem Package Manager: `https://<server>:<port>/crx/packmgr/index.jsp`
 
 Das Paket enthält die folgenden Assets:
 
@@ -64,7 +64,7 @@ Das Paket enthält die folgenden Assets:
 
 >[!NOTE]
 >
->In den vorherigen Schritten haben Sie eine Eigenschaft eines Felds in der XDP-Datei überschrieben. Diese Eigenschaft wird daher nicht synchronisiert, wenn die entsprechende Eigenschaft in der XDP-Datei später bearbeitet wird.
+>In den vorangegangenen Schritten haben Sie eine Eigenschaft eines Felds in der XDP-Datei überschrieben. Diese Eigenschaft wird daher nicht synchronisiert, wenn die entsprechende Eigenschaft in der XDP-Datei später geändert wird.
 
 ## Erkennen von Änderungen in der XDP-Datei {#detecting-changes-in-xdp-file}
 
@@ -134,7 +134,7 @@ Das gelöschte Feld wird außerdem mit einem Symbol gekennzeichnet, um einen Feh
 
 >[!NOTE]
 >
->Die Felder im adaptiven Formular, die eine inkorrekte Bindung aufweisen (einen ungültigen `bindRef`-Wert im Bearbeitungsdialogfeld) werden ebenfalls als gelöschte Felder betrachtet. Wenn der Autor diese Fehler nicht behebt und das adaptive Formular veröffentlicht, wird das Feld als normales ungebundenes adaptives Formularfeld behandelt und in den ungebundenen Abschnitt der Ausgabe-XML-Datei aufgenommen.
+>Die Felder im adaptiven Formular, die eine inkorrekte Bindung aufweisen (einen ungültigen `bindRef`-Wert im Bearbeitungsdialogfeld) werden ebenfalls als gelöschte Felder betrachtet. Wenn die Autorin bzw. der Autor diese Fehler nicht behebt und das adaptive Formular veröffentlicht, wird das Feld als normales ungebundenes adaptives Formularfeld behandelt und in den ungebundenen Abschnitt der XML-Ausgabedatei aufgenommen.
 
 ## Downloads {#downloads}
 

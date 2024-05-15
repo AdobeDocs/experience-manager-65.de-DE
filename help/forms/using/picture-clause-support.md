@@ -13,7 +13,7 @@ role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '659'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ Unterstützter Ausdruck für Date Picture-Klausel:
 
 >[!NOTE]
 >
-> Entsprechend dem Design unterstützt das Datumsfeld in HTML5 Forms nicht die `MM-YYYY` Muster im Bearbeitungsformat. Das Muster wird jedoch im Anzeigeformat unterstützt.
+> Das Datumsfeld in HTML5-Formularen unterstützt das Muster `MM-YYYY` im Bearbeitungsformat nicht wie erwartet. Das Muster wird jedoch im Anzeigeformat unterstützt.
 
 ## Numeric Picture-Klausel {#numeric-picture-clause}
 

@@ -9,7 +9,7 @@ role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ECMAScript ist eine Skriptsprache. Sie wird für die Client-seitige Skripterstel
    * (Pfad für Schritt „Aufgabe zuweisen“) `/apps/fd/dashboard/scripts/participantChooser`
    * (Pfad für Signaturschritt) `/apps/fd/workflow/scripts/adobesign`
 
-1. Fügen Sie der .ecma-Datei ECMAScript hinzu, das über die Logik zur dynamischen Auswahl eines Benutzers verfügt. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+1. Fügen Sie der ECMA-Datei ein ECMAScript hinzu, welches über eine Logik zur dynamischen Auswahl von Benutzenden verfügt. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
    Beispielskripte finden Sie unter [Beispiele für ECMAScripts zur dynamischen Auswahl eines Benutzers oder einer Gruppe](/help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group).
 

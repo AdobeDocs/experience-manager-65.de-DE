@@ -11,15 +11,15 @@ role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '110'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
 # Überprüfen der Verwendungsrechte einer PDF-Datei {#review-the-usage-rights-of-a-pdf-file}
 
-Beim Hochladen einer PDF-Datei in die Acrobat Reader DC Extensions-Webanwendung können Sie diese Informationen anzeigen, um zu sehen, ob der Reader erweitert wurde, welche Verwendungsrechte angewendet wurden und deren Ablaufdatum.
+Wenn Sie eine PDF-Datei in die Web-Anwendung Acrobat Reader DC-Erweiterungen hochladen, können Sie diese Informationen anzeigen, um zu prüfen, ob sie vom Typ „Reader Extended“ ist, und um geltende Verwendungsrechte samt Ablaufdatum anzuzeigen.
 
-1. Melden Sie sich bei der Acrobat Reader DC Extensions-Webanwendung an unter `http://[localhost]:[port]/ReaderExtensions` , *[port]* ist die Anschlussnummer Ihres Anwendungsservers).
+1. Melden Sie sich bei der Web-Anwendung Acrobat Reader DC-Erweiterungen unter folgender Adresse an: `http://[localhost]:[port]/ReaderExtensions` (*[Port]* ist die Port-Nummer Ihres Anwendungs-Servers).
 1. Klicken Sie auf „Durchsuchen“, um die PDF-Datei hochzuladen, und dann auf „Info“.  Die Informationen werden unterhalb des Dateinamens angezeigt.
 
-   Weitere Informationen zum Ändern der Verwendungsrechte der Datei finden Sie in der Hilfe zu Acrobat Reader DC Extensions .
+   Detaillierte Informationen zum Ändern der Verwendungsrechte für die Datei finden Sie in der Hilfe zu den Acrobat Reader DC-Erweiterungen.

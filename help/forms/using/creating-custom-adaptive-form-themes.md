@@ -10,7 +10,7 @@ role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '790'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ Sie erstellen eine **adaptive Vorlage** und wenden das Design auf die Vorlage an
 
    * Ordner `css`: Enthält die .css-Dateien, in denen Sie die im Design zu verwendenden statischen Stile definieren.
 
-   **Weniger Variablendateien**: Dies sind die Dateien, in denen Sie die Variablen definieren oder überschreiben, die beim Definieren von CSS-Stilen verwendet werden.
+   **LESS-Variablendateien**: Dies sind die Dateien, in denen Sie die Variablen definieren oder überschreiben, die beim Definieren von CSS-Stilen verwendet werden.
 
    Adaptive Formulare stellen vorkonfigurierte Variablen bereit, die in den folgenden `.less`-Dateien definiert sind:
 
