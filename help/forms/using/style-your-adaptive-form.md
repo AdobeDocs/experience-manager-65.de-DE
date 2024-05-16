@@ -7,7 +7,7 @@ exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2038'
 ht-degree: 100%
 
@@ -40,9 +40,9 @@ Ihr Formular sollte nach Abschluss des Tutorials etwa wie folgt aussehen:
 
 Laden Sie die unten bereitgestellten Header-Stile und Logobilder auf Ihren lokalen Computer herunter. Die Kopfzeile des adaptiven Formulars `shipping-address-add-update-form` verwendet die kopfzeilenartigen und Logo-Bilder. Das kopfzeilenartige Bild erscheint auf der rechten Seite der Kopfzeile.
 
-[Datei abrufen](assets/header-style.png)
+[Abrufen der Datei](assets/header-style.png)
 
-[Datei abrufen](assets/logo-1.png)
+[Abrufen der Datei](assets/logo-1.png)
 
 ## Schritt 1: Anwenden eines Designs auf Ihr adaptives Formular {#step-apply-a-theme-to-your-adaptive-form}
 

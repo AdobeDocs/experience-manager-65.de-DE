@@ -9,7 +9,7 @@ exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6905'
 ht-degree: 100%
 
@@ -512,9 +512,9 @@ Dieses Beispiels zeigt, wie Sie eine dynamische und eine statische Tabelle erste
    Weitere Informationen zum Arbeiten mit Layout-Fragmenten finden Sie unter [Layout-Fragmente](#layoutfragments).
 Weitere Informationen zum Entwerfen von Layouts finden Sie unter [Designer-Hilfe](https://help.adobe.com/de_DE/AEMForms/6.1/DesignerHelp/).
 
-[Datei abrufen](assets/static.xdp.zip)
+[Abrufen der Datei](assets/static.xdp.zip)
 
-[Datei abrufen](assets/dynamic.xdp.zip)
+[Abrufen der Datei](assets/dynamic.xdp.zip)
 
 1. Laden Sie die XDP-Dateien auf AEM Forms hoch.
 1. Erstellen Sie ein Layout-Fragment basierend auf der dynamischen XDP. Die Registerkarte „Tabelle“ der Eigenschaften zeigt an, dass die Tabelle dynamisch ist (Feld „Konfiguration für“). Die Anzahl der Zeilen (1) und Spalten (3) wird aus dem XDP-/Layout-Fragment abgeleitet.

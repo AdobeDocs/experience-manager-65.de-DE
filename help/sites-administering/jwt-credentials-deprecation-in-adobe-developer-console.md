@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 source-git-commit: 36c95ea717a0abcb0b6ef9b0796a94d7b0f66329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '456'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -21,13 +21,13 @@ Mit der [Adobe Developer Console](https://developer.adobe.com/console) können K
 
 Dieser Artikel bietet zusätzliche Informationen dazu, wie Kundinnen und Kunden von AEM 6.5 auf diese Einstellung reagieren sollten.
 
-Die wichtigste Information ist derzeit, dass AEM-Funktionen die neuen OAuth Server-zu-Server-Anmeldedaten noch nicht unterstützen. Der Support wird in Kürze verfügbar sein - bis Mitte Mai 2024 über ein spezielles Kompatibilitätspaket zur Installation für AEM 6.5, wenn Sie das neueste Service Pack 20 oder niedriger ausführen (Service Pack 21 und höher wird es automatisch einschließen). Möglicherweise haben Sie eine E-Mail mit Anweisungen zum Migrieren Ihrer JWT-Anmeldedaten erhalten. Bitte warten Sie jedoch mit der Migration der Anmeldedaten bis AEM den neuen OAuth-Server-zu-Server-Anmeldedatentyp unterstützt.
+Die wichtigste Information ist derzeit, dass AEM-Funktionen die neuen OAuth Server-zu-Server-Anmeldedaten noch nicht unterstützen. Support wird bald verfügbar sein: Bis Mitte Mai 2024 durch ein spezielles Kompatibilitätspaket, das für AEM 6.5 installiert werden kann, wenn Sie das neueste Service Pack 20 oder niedriger ausführen (ab Service Pack 21 und höher wird es automatisch eingeschlossen sein). Möglicherweise haben Sie eine E-Mail mit Anweisungen zum Migrieren Ihrer JWT-Anmeldedaten erhalten. Bitte warten Sie jedoch mit der Migration der Anmeldedaten, bis AEM den neuen OAuth-Server-zu-Server-Anmeldedatentyp unterstützt.
 
-In den folgenden Abschnitten werden die Szenarien aufgelistet, in denen Kunden ihre JWT-Anmeldeinformationen (Service Account) durch OAuth Server-zu-Server-Anmeldeinformationen ersetzen müssen (oder in einigen Fällen nicht), sobald AEM sie Mitte Mai unterstützt. Weitere Informationen dazu, wie die Anmeldedaten in Zukunft ersetzt werden können, finden Sie [hier](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview).
+In den folgenden Abschnitten werden die Szenarien aufgeführt, in denen Kundinnen und Kunden ihre Dienstkonten(JWT)-Anmeldedaten durch OAuth Server-zu-Server-Anmeldedaten ersetzen müssen (oder in einigen Fällen dies nicht tun sollten), sobald AEM sie ab Mitte Mai unterstützt. Weitere Informationen dazu, wie die Anmeldedaten in Zukunft ersetzt werden können, finden Sie [hier](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview).
 
 ## Integrieren von AEM mit anderen Adobe-Lösungen {#integrating-aem-with-other-adobe-solutions}
 
-**Aktion**: Warten Sie bis zur Migration Mitte Mai 2024, wenn AEM dies unterstützt.
+**Aktion**: Warten Sie mit einer Migration bis Mitte Mai 2024, wenn AEM sie unterstützt.
 
 **Relevante AEM-Versionen**: Adobe Managed Services (Service Pack 20 und darunter).
 
@@ -36,11 +36,11 @@ Mit der AEM Author-Benutzeroberfläche können Kundinnen und Kunden von AEM Inte
 
 ![Integrieren von AEM mit anderen Lösungen](/help/sites-administering/assets/jwt-deprecation.png)
 
-Zum Beispiel finden Sie [hier](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/integration-target-ims) die Anweisungen zum Konfigurieren der Integration mit Adobe Target. Der API-Schlüssel im Abschnitt [Abschließen der IMS-Konfiguration in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/integration-target-ims#completing-the-ims-configuration-in-aem) sollte in den OAuth-Server-zu-Server-Anmeldedatentyp migriert werden, sobald AEM diese Anmeldedaten Mitte Mai unterstützt. Diese Anweisungen werden Mitte Mai aktualisiert, damit Sie die neuen OAuth Server-zu-Server-Anmeldedaten anwenden können.
+Zum Beispiel finden Sie [hier](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/sites/administering/integration/integration-target-ims) die Anweisungen zum Konfigurieren der Integration mit Adobe Target. Der API-Schlüssel im Abschnitt [Abschließen der IMS-Konfiguration in AEM](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/sites/administering/integration/integration-target-ims#completing-the-ims-configuration-in-aem) sollte in den OAuth-Server-zu-Server-Anmeldedatentyp migriert werden, sobald AEM diese Anmeldedaten Mitte Mai unterstützt. Diese Anweisungen werden Mitte Mai überarbeitet, damit Sie die neuen OAuth Server-zu-Server-Anmeldedaten anwenden können.
 
 ## Cloud Manager-APIs {#cloud-manager-apis}
 
-**Aktion**: Warten Sie bis zur Migration Mitte Mai 2024, wenn AEM dies unterstützt.
+**Aktion**: Warten Sie mit einer Migration bis Mitte Mai 2024, wenn AEM dies unterstützen wird.
 
 **Relevante AEM-Versionen**: Adobe Managed Services (Service Pack 20 und darunter).
 
