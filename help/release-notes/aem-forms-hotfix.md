@@ -5,10 +5,10 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 5e2799505bc6d69cd5898445a9300ad162ef74fd
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 100%
+source-wordcount: '518'
+ht-degree: 86%
 
 ---
 
@@ -28,6 +28,26 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
     <td><strong>Datum</strong></td>
     <td><strong>Hotfix-Downloadlink (AEM Software Distribution-Link)</strong></td>
     <td><strong>Behobene Probleme</strong></td>
+  </tr>
+  <tr>
+    <td>Freitag, 16. Mai 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-win-pkg-6.0.1192-010.zip">Hotfix für AEM Service Pack 6.5.20.0 für Microsoft Windows</a> </li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-linux-pkg-6.0.1192-010.zip">Hotfix für AEM Service Pack 6.5.20.0 für Linux </a> </li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-osx-pkg-6.0.1192-010.zip">Hotfix für AEM Service Pack 6.5.20.0 für Apple macOS</a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li>In einem adaptiven Formular, das auf einer XDP mit eingebetteten Skripten auf Kontrollkästchen basiert, werden die Skripte für Elemente nach diesen Kontrollkästchen nicht ausgeführt. Für dieses Problem ist ein Hotfix verfügbar. (FORMS-14244) </li>
+     <li> Zeilen im Datumsauswahl-Widget werden abgeschnitten, wenn im Popup-Widget für Felder mit Bearbeitungs-/Anzeigemuster Monate durchlaufen werden. Für dieses Problem ist ein Hotfix verfügbar. (FORMS-13620) </li>
+     <li>Formulareinreichungen schlagen fehl, wenn versucht wird, den DoR-Service (Document of Record; Nachweis) im Backend zu verwenden. Die Fehlermeldung lautet: „Sendeaktion konnte nicht abgeschlossen werden, da die Formularressource nicht ordnungsgemäß zugewiesen ist“. (FORMS-13798) </li>
+     <li>Wenn ein adaptives Formular von einer Adobe Experience Manager-Veröffentlichungsinstanz an einen Adobe Experience Manager-Workflow gesendet wird, kann der Workflow die Anlagen nicht speichern.  (FORMS-14209) </li>
+     <li> Bei der Installation des AEM 6.5 Forms Service Pack 20-Pakets (AEM Forms Add-On-Paket für SP20) weist die AEM Sites-Benutzeroberfläche eine erhebliche Leistungsbeeinträchtigung auf.  (FORMS-13791) </li>
+     <li>Der Vorbefüllungsdienst schlägt in interaktiven Kommunikationen mit einer NULL-Zeigerausnahme fehl. (CQDOC-21355)</li>
+    </ul>
+    </td>    
   </tr>
   <tr>
     <td>29. Januar 2024</td>

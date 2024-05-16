@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: c165755c19ac64fdd253bff9163f48ddf4732623
-workflow-type: ht
-source-wordcount: '4046'
-ht-degree: 100%
+source-git-commit: 5e2799505bc6d69cd5898445a9300ad162ef74fd
+workflow-type: tm+mt
+source-wordcount: '3994'
+ht-degree: 97%
 
 ---
 
@@ -490,12 +490,12 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
 ### Bekannte Probleme bei AEM Forms {#known-issues-aem-forms-6520}
 
-* In einem adaptiven Formular, das auf einer XDP mit eingebetteten Skripten auf Kontrollkästchen basiert, werden die Skripte für Elemente nach diesen Kontrollkästchen nicht ausgeführt. (FORMS-14244)
-* Zeilen im Datumsauswahl-Widget werden abgeschnitten, wenn im Popup-Widget für Felder mit Bearbeitungs-/Anzeigemuster Monate durchlaufen werden. (FORMS-13620)
-* Formulareinreichungen schlagen fehl, wenn versucht wird, den DoR-Service (Document of Record; Nachweis) im Backend zu verwenden. Die Fehlermeldung lautet: „Sendeaktion konnte nicht abgeschlossen werden, da die Formularressource nicht ordnungsgemäß zugewiesen ist“. (FORMS-13798)
-* Wenn ein adaptives Formular aus einer Adobe Experience Manager-Veröffentlichungsinstanz an einen Adobe Experience Manager-Workflow gesendet wird, können die Anlagen nicht vom Workflow gespeichert werden. (FORMS-14209)
-* Bei der Installation des AEM 6.5 Forms Service Pack 20-Pakets (AEM Forms-Add-on-Paket für SP20) verschlechtert sich die Leistung der AEM Sites-Benutzeroberfläche erheblich. (FORMS-13791)
-* Der Vorbefüllungsdienst schlägt in interaktiven Kommunikationen mit einer NULL-Zeigerausnahme fehl. (CQDOC-21355)
+* In einem adaptiven Formular, das auf einer XDP mit eingebetteten Skripten auf Kontrollkästchen basiert, werden die Skripte für Elemente nach diesen Kontrollkästchen nicht ausgeführt. Für dieses Problem ist ein Hotfix verfügbar. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie unter [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md) (FORMS-14244)
+* Zeilen im Datumsauswahl-Widget werden abgeschnitten, wenn im Popup-Widget für Felder mit Bearbeitungs-/Anzeigemuster Monate durchlaufen werden. Für dieses Problem ist ein Hotfix verfügbar. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie unter [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md) (FORMS-13620)
+* Formulareinreichungen schlagen fehl, wenn versucht wird, den DoR-Service (Document of Record; Nachweis) im Backend zu verwenden. Die Fehlermeldung lautet: „Sendeaktion konnte nicht abgeschlossen werden, da die Formularressource nicht ordnungsgemäß zugewiesen ist“. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie unter [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md) (FORMS-13798)
+* Wenn ein adaptives Formular aus einer Adobe Experience Manager-Veröffentlichungsinstanz an einen Adobe Experience Manager-Workflow gesendet wird, können die Anlagen nicht vom Workflow gespeichert werden. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie unter [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md)  (FORMS-14209)
+* Bei der Installation des AEM 6.5 Forms Service Pack 20-Pakets (AEM Forms-Add-on-Paket für SP20) verschlechtert sich die Leistung der AEM Sites-Benutzeroberfläche erheblich. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie unter [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md)  (FORMS-13791)
+* Der Vorbefüllungsdienst schlägt in interaktiven Kommunikationen mit einer NULL-Zeigerausnahme fehl. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie unter [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md) (CQDOC-21355)
 * Mit adaptiven Formularen können Sie benutzerdefinierte Funktionen mit ECMAScript Version 5 oder früher verwenden. Wenn eine benutzerdefinierte Funktion ECMAScript-Version 6 oder höher verwendet, z. B. „let“, „const“ oder Pfeilfunktionen, wird der Regeleditor möglicherweise nicht ordnungsgemäß geöffnet.
 * Benutzerinnen und Benutzer können keinen Korrespondenz-Management-Brief erstellen. Wenn eine Benutzerin oder ein Benutzer einen Brief erstellt, wird ein Fehler mit der Beschreibung „`Object Object`“ angezeigt und der Brief wird nicht erstellt. Miniaturansichten für Layouts können auch nicht auf dem Bildschirm zur Brieferstellung geladen werden. Sie können das [aktuelle AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) installieren, um das Problem zu beheben. (FORMS-13496)
 * Der interaktive Kommunikationsdienst erstellt das PDF-Dokument, die Benutzerdaten werden jedoch nicht automatisch in die Formularfelder eingefügt. Der Vorbefüllungsdienst funktioniert nicht wie erwartet. Sie können das [aktuelle AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) installieren, um das Problem zu beheben. (FORMS-13413, FORMS-13493)
@@ -530,11 +530,6 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 1. Stop the application server.
 
 -->
-* In einem adaptiven Formular, das auf einer XDP mit eingebetteten Skripten auf Kontrollkästchen basiert, werden die Skripte für Elemente nach diesen Kontrollkästchen nicht ausgeführt. (FORMS-14244)
-* Zeilen im Datumsauswahl-Widget werden abgeschnitten, wenn im Popup-Widget für Felder mit Bearbeitungs-/Anzeigemuster Monate durchlaufen werden. (FORMS-13620)
-* Formulareinreichungen schlagen fehl, wenn versucht wird, den DoR-Service (Document of Record; Nachweis) im Backend zu verwenden. Die Fehlermeldung lautet: „Sendeaktion konnte nicht abgeschlossen werden, da die Formularressource nicht ordnungsgemäß zugewiesen ist“. (FORMS-13798)
-* Wenn ein adaptives Formular aus einer Adobe Experience Manager-Veröffentlichungsinstanz an einen Adobe Experience Manager-Workflow gesendet wird, können die Anlagen nicht vom Workflow gespeichert werden. (FORMS-14209)
-* Bei der Installation des AEM 6.5 Forms Service Pack 20-Pakets (AEM Forms-Add-on-Paket für SP20) verschlechtert sich die Leistung der AEM Sites-Benutzeroberfläche erheblich. (FORMS-13791)
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 
