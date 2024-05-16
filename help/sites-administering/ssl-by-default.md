@@ -10,7 +10,7 @@ exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 9b766fe6e253782be3bc47849b4857216274ae20
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 100%
@@ -183,13 +183,13 @@ Nachstehend finden Sie ein Beispiel für das Erstellen eines selbstsignierten Ze
    openssl x509 -req -days 365 -in localhost.csr -signkey localhostprivate.key -out localhost.crt
    ```
 
-Konvertieren Sie den privaten Schlüssel in das DER-Format. Dies liegt daran, dass der SSL-Assistent den Schlüssel im DER-Format erfordert:
+1. Konvertieren Sie den privaten Schlüssel in das DER-Format. Dies liegt daran, dass der SSL-Assistent den Schlüssel im DER-Format erfordert:
 
-```shell
-openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
-```
+   ```shell
+   openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
+   ```
 
-Laden Sie abschließend in Schritt 2 des visuellen SSL/TLS-Assistenten, der am Anfang dieser Seite beschrieben wird, die Datei **localhostprivate.der** als privaten Schlüssel und **localhost.crt** als SSL-/TLS-Zertifikat hoch.
+1. Laden Sie abschließend in Schritt 2 des visuellen SSL/TLS-Assistenten, der am Anfang dieser Seite beschrieben wird, die Datei **localhostprivate.der** als privaten Schlüssel und **localhost.crt** als SSL-/TLS-Zertifikat hoch.
 
 ### Aktualisieren der SSL-/TLS-Konfiguration über cURL {#updating-the-ssl-tls-configuration-via-curl}
 
