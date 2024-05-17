@@ -310,15 +310,15 @@ Sobald die Cloud-Konfiguration abgeschlossen ist, sollten Sie das Formulardatenm
 
    >[!NOTE]
    >
-   Klicken Sie nach dem Testen der Services auf **Abbrechen** um sicherzustellen, dass unfreiwillige Änderungen nicht an das Formulardatenmodell weitergegeben werden.
+   >Klicken Sie nach dem Testen der Services auf **Abbrechen** um sicherzustellen, dass unfreiwillige Änderungen nicht an das Formulardatenmodell weitergegeben werden.
 
    >[!NOTE]
    >
-   Es wurde berichtet, dass ein AEM Server-Neustart erforderlich war, damit die Datenquelle erfolgreich an das FDM gebunden werden konnte.
+   >Es wurde berichtet, dass ein AEM Server-Neustart erforderlich war, damit die Datenquelle erfolgreich an das FDM gebunden werden konnte.
 
    >[!NOTE]
    >
-   Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+   >Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 #### Testen des Formulardatenmodells (Derby) {#test-fdm-derby}
 
@@ -423,7 +423,7 @@ Administratoren können Benutzern AEM Analytics-Berechtigungen erteilen, indem s
 
 >[!NOTE]
 >
-AEM Forms-Analytics-Daten sind offline oder ohne Adobe Analytics-Cloud-Konfiguration verfügbar, wenn das Paket `we-gov-forms.ui.analytics-<version>.zip` installiert ist. Für AEM Sites-Daten ist jedoch eine aktive Cloud-Konfiguration erforderlich.
+>AEM Forms-Analytics-Daten sind offline oder ohne Adobe Analytics-Cloud-Konfiguration verfügbar, wenn das Paket `we-gov-forms.ui.analytics-<version>.zip` installiert ist. Für AEM Sites-Daten ist jedoch eine aktive Cloud-Konfiguration erforderlich.
 
 1. Navigieren Sie zu *https://&lt;aemserver>:&lt;port>/sites.html/content*
 1. Wählen Sie die „AEM Forms We.Gov-Site“ aus, um die Seiten der Site anzuzeigen.
@@ -452,7 +452,7 @@ AEM Forms-Analytics-Daten sind offline oder ohne Adobe Analytics-Cloud-Konfigura
 
 >[!NOTE]
 >
-AEM Forms Analytics-Daten sind offline oder ohne Adobe Analytics Cloud-Konfiguration verfügbar, wenn das Paket `we-gov-forms.ui.analytics-<version>.zip` installiert ist, für AEM Sites-Daten ist jedoch eine aktive Cloud-Konfiguration erforderlich.
+>AEM Forms Analytics-Daten sind offline oder ohne Adobe Analytics Cloud-Konfiguration verfügbar, wenn das Paket `we-gov-forms.ui.analytics-<version>.zip` installiert ist, für AEM Sites-Daten ist jedoch eine aktive Cloud-Konfiguration erforderlich.
 
 1. Gehen Sie zu
 
@@ -498,7 +498,7 @@ Damit der Service ordnungsgemäß mit dem Konvertierungs-Tool für Formulare kom
 
 >[!NOTE]
 >
-Das in diesem Abschnitt erstellte Zertifikat wird verwendet, um den Integrations-Service in Adobe I/O zu erstellen. Sobald Benutzer den Integrations-Service erstellt haben, können Benutzer diese Informationen aus Adobe I/O verwenden, um die Konfiguration abzuschließen.
+>Das in diesem Abschnitt erstellte Zertifikat wird verwendet, um den Integrations-Service in Adobe I/O zu erstellen. Sobald Benutzer den Integrations-Service erstellt haben, können Benutzer diese Informationen aus Adobe I/O verwenden, um die Konfiguration abzuschließen.
 
 #### Erstellen der Integration in Adobe I/O {#create-integration-adobeio}
 
@@ -797,7 +797,7 @@ Um sie so zu konfigurieren, dass sie im Workflow aktiviert werden, müssen Benut
 
    >[!NOTE]
    >
-   Auch wenn Benutzende den Dienst auf der Seite des Konfigurations-Managers aktivieren, müssen sie dennoch eine Dienstkonfiguration einrichten, um mit den angefragten externen Diensten kommunizieren zu können.
+   >Auch wenn Benutzende den Dienst auf der Seite des Konfigurations-Managers aktivieren, müssen sie dennoch eine Dienstkonfiguration einrichten, um mit den angefragten externen Diensten kommunizieren zu können.
 
    ![WeGov-Formularpaket](assets/aftia-configuration-options.jpg)
 
