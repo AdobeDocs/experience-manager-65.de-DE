@@ -9,20 +9,27 @@ exl-id: de5c634a-c0d7-4e69-b941-d2fbfe83117d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: ad8f849384e58511de97611d1b26c4fc96022062
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 100%
+source-wordcount: '313'
+ht-degree: 87%
 
 ---
 
 # Erstellen benutzerdefinierter AEM-Seitenvorlagen mit Adobe Campaign-Formularkomponenten{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-Auf dieser Seite wird anhand der Implementierung der Geometrixx-Outdoors-Vorlage (`/apps/geometrixx-outdoors/components/page_campaign_profile` ) erläutert, wie Sie eine benutzerdefinierte Seitenvorlage auf Basis von [Adobe Campaign-Formularkomponenten](/help/sites-authoring/adobe-campaign-components.md) erstellen. Darüber hinaus erhalten Sie wichtige Informationen, die Sie ggf. bei der Erstellung Ihrer eigenen benutzerdefinierten Vorlage benötigen.
+Auf dieser Seite wird beschrieben, wie Sie eine benutzerdefinierte Seitenvorlage erstellen, die [Adobe Campaign-Formular](/help/sites-authoring/adobe-campaign-components.md) Komponenten durch Prüfung der Vorlage &quot;Geometrixx-Outdoors&quot;(`/apps/geometrixx-outdoors/components/page_campaign_profile`) implementiert ist und Sie auf wichtige Informationen verweist, die Sie beim Erstellen Ihrer eigenen benutzerdefinierten Vorlage benötigen.
 
 >[!NOTE]
 >
 >[E-Mail- und Formularbeispiele sind nur in Geometrixx verfügbar](/help/sites-developing/we-retail.md). Laden Sie Geometrixx-Beispielinhalt aus Package Share herunter.
+
+>[!CAUTION]
+>
+>Die E-Mail-Komponenten von AEM werden nicht mehr unterstützt. Aufgrund der Art von E-Mails, bei denen Inhalt und Stil zusammengeführt werden, können die standardmäßig von AEM bereitgestellten E-Mail-Komponenten von Kunden nur eingeschränkt wiederverwendet werden, da benutzerdefinierte Stile in allen Komponenten implementiert werden müssen, die für Projekte erforderlich sind.
+>
+>E-Mail-Komponenten können auf Projektebene implementiert werden. Die veralteten AEM-E-Mail-Komponenten veranschaulichen, wie dies erreicht werden kann. Verwenden Sie diese veralteten Komponenten jedoch nicht in Projekten.
+
 
 Um eine benutzerdefinierte AEM-Seitenvorlage mit Adobe Campaign-Formularkomponenten zu erstellen, müssen Sie über Folgendes verfügen:
 
