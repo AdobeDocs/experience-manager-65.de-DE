@@ -1,6 +1,6 @@
 ---
 title: Video in Dynamic Media
-description: Erfahren Sie, wie Sie mit Videos in Dynamic Media arbeiten, z. B. Best Practices für die Kodierung von Videos, Hinzufügen von Multi-Audio und Multi-Untertiteln zu Videos und Video-Miniaturansichten.
+description: Erfahren Sie, wie Sie mit Videos in Dynamic Media arbeiten, z. B. Best Practices für die Videokodierung, Hinzufügen mehrerer Audio- und Untertitelspuren zu Videos und Videominiaturen.
 mini-toc-levels: 3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,10 +11,10 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
-source-wordcount: '11187'
-ht-degree: 100%
+source-git-commit: a49af471c5fc2f799687173bff6cdcb21505740a
+workflow-type: tm+mt
+source-wordcount: '11213'
+ht-degree: 96%
 
 ---
 
@@ -425,7 +425,7 @@ Im folgenden Beispiel hat das Quellvideo Abmessungen von 1920 x 1080. Die drei 
 
 In Dynamic Media wird empfohlen, MP4 H.264-Videokodierungsvorgaben zu verwenden. Da MP4-Dateien den H.264-Video-Codec nutzen, erhalten Sie damit hohe Videoqualität, aber auch eine komprimierte Dateigröße.
 
-### Aktivieren der Unterstützung für DASH sowie für mehrfache Untertitel und mehrfache Audiospuren in Ihrem Dynamic Media-Konto {#enable-dash}
+### Aktivieren Sie DASH, Unterstützung für mehrere Beschriftungen und Audiospuren in Ihrem Dynamic Media-Konto. {#enable-dash}
 
 **Über das Aktivieren von DASH in Ihrem Konto**
 DASH (Digital Adaptive Streaming über HTTP) ist der internationale Standard für Video-Streaming und wird in verschiedenen Video-Playern verwendet. Wenn DASH in Ihrem Konto aktiviert ist, können Sie entweder DASH oder HLS für adaptives Video-Streaming auswählen. Sie können auch beide Optionen beim automatischen Wechseln zwischen Playern wählen, wenn **[!UICONTROL auto]** als Wiedergabetyp in der Viewer-Vorgabe ausgewählt ist.
@@ -444,15 +444,15 @@ Die Aktivierung von DASH in Ihrem Konto erfordert zwei Schritte:
 * Konfigurieren von Dynamic Media für die Verwendung von DASH, was Sie einfach selbst tun können.
 * Konfigurieren von Experience Manager 6.5 für die Verwendung von DASH, das mithilfe eines von Ihnen erstellten und gesendeten Adobe-Support-Falles durchgeführt wird.
 
-**Über das Aktivieren der Unterstützung für mehrfache Untertitel und mehrfache Audiospuren in Ihrem Konto**
+**Über die Aktivierung der Unterstützung für mehrere Untertitel und Audio-Track in Ihrem Konto**
 
-Wenn Sie einen Adobe Support-Fall erstellen, um DASH für Ihr Konto zu aktivieren, profitieren Sie auch von der automatischen Aktivierung der Unterstützung für mehrfache Untertitel und mehrfache Audiospuren. Nach der Aktivierung werden alle nachfolgenden Videos, die Sie hochladen, mit einer neuen Backend-Architektur verarbeitet, die das Hinzufügen von mehrfachen Untertiteln und mehrfachen Audiospuren zu Ihren Videos unterstützt.
+Gleichzeitig erstellen Sie eine Adobe-Support-Anfrage, damit DASH für Ihr Konto aktiviert wird. Außerdem profitieren Sie davon, dass die Unterstützung für mehrere Untertitel und Audio-Track automatisch aktiviert wird. Nach der Aktivierung werden alle nachfolgenden Videos, die Sie hochladen, mit einer neuen Backend-Architektur verarbeitet, die Unterstützung für das Hinzufügen mehrerer Beschriftungen und Audiospuren zu Ihren Videos enthält.
 
 >[!IMPORTANT]
 >
->Alle Videos, die Sie *vor* der Aktivierung der Unterstützung für mehrfache Untertitel und mehrfache Audiospuren in Ihrem Dynamic Media-Konto hochgeladen haben, [müssen erneut verarbeitet werden](/help/assets/processing-profiles.md#reprocessing-assets). Dieser Schritt zur erneuten Verarbeitung des Videos ist notwendig, damit die Möglichkeit besteht, mehrfache Untertitel und mehrfache Audiospuren zu verwenden. Die Video-URLs funktionieren nach der erneuten Verarbeitung weiterhin und werden wie gewohnt wiedergegeben.
+>Alle hochgeladenen Videos *before* mehrere Untertitel- und Audio-Tracking-Unterstützung für Ihr Dynamic Media-Konto zu ermöglichen, [muss erneut verarbeitet werden](/help/assets/processing-profiles.md#reprocessing-assets). Dieser Schritt zur erneuten Verarbeitung von Videos ist erforderlich, damit mehrere Beschriftungen und Audiospuren verfügbar sind. Die Video-URLs funktionieren nach der erneuten Verarbeitung weiterhin und werden wie gewohnt wiedergegeben.
 
-**So aktivieren Sie die Unterstützung für DASH sowie für mehrfache Untertitel und mehrfache Audiospuren in Ihrem Dynamic Media-Konto:**
+**So aktivieren Sie DASH, mehrere Beschriftungen und die Unterstützung mehrerer Audiospuren für Ihr Dynamic Media-Konto:**
 
 <!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager 6.5, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
@@ -471,7 +471,7 @@ Wenn Sie einen Adobe Support-Fall erstellen, um DASH für Ihr Konto zu aktiviere
 
    * Name des Hauptansprechpartners, E-Mail, Telefon.
    * Name Ihres Dynamic Media-Kontos.
-   * Geben Sie an, dass in Ihrem Dynamic Media-Konto in Experience Manager 6.5 die Unterstützung für DASH sowie für mehrfache Untertitel und mehrfache Audiospuren aktiviert werden soll.
+   * Geben Sie an, dass DASH, mehrere Beschriftungen und mehrere Audiospuren in Ihrem Dynamic Media-Konto in Experience Manager 6.5 aktiviert werden sollen.
 
 1. Der Kunden-Support von Adobe nimmt Sie in der Reihenfolge der eingereichten Anfragen in die Warteliste auf.
 1. Wenn Ihre Anfrage bearbeitet werden kann, setzt sich der Kunden-Support mit Ihnen in Verbindung, um den Termin für die Aktivierung zu koordinieren und festzulegen.
@@ -479,7 +479,7 @@ Wenn Sie einen Adobe Support-Fall erstellen, um DASH für Ihr Konto zu aktiviere
 1. Jetzt können Sie eine der folgenden Aktionen ausführen:
 
    * Erstellen Sie Ihre [Video-Viewer-Vorgabe](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) wie gewohnt.
-   * [Fügen Sie Ihrem Video mehrfache Untertitel und mehrfache Audiospuren hinzu](#add-msma).
+   * [Hinzufügen mehrerer Beschriftungen und Audiospuren](#add-msma) zu Ihrem Video.
 
 ## Anzeigen von Videoberichten {#viewing-video-reports}
 
@@ -593,13 +593,13 @@ Verwenden Sie das [Adobe Dynamic Media-Viewer-Referenzhandbuch](https://experien
 
 
 
-## Über die Unterstützung für mehrfache Untertitel und mehrfache Audiospuren bei Videos in Dynamic Media{#about-msma}
+## Über die Unterstützung mehrerer Untertitel und Audiospuren für Videos in Dynamic Media{#about-msma}
 
-Mit der Funktion für mehrfache Untertitel und mehrfache Audiospuren in Dynamic Media können Sie einem primären Video mühelos mehrfache Untertitel und Audiospuren hinzufügen. Diese Funktion bedeutet, dass Ihre Videos für eine globale Zielgruppe zugänglich sind. Sie können ein einzelnes veröffentlichtes primäres Video für eine globale Zielgruppe in mehreren Sprachen anpassen und die Richtlinien zur Barrierefreiheit für verschiedene geografische Regionen einhalten. Autorinnen und Autoren können die Untertitel und Audiospuren auch über eine einzige Registerkarte in der Benutzeroberfläche verwalten.
+Mit der Funktion für mehrere Untertitel und Audiospuren in Dynamic Media können Sie einem Hauptvideo einfach mehrere Untertitel und Audiospuren hinzufügen. Diese Funktion bedeutet, dass Ihre Videos für eine globale Zielgruppe zugänglich sind. Sie können ein einzelnes veröffentlichtes primäres Video für eine globale Zielgruppe in mehreren Sprachen anpassen und die Richtlinien zur Barrierefreiheit für verschiedene geografische Regionen einhalten. Autorinnen und Autoren können die Untertitel und Audiospuren auch über eine einzige Registerkarte in der Benutzeroberfläche verwalten.
 
 ![Registerkarte „Untertitel und Audiospuren“ in Dynamic Media zusammen mit einer Tabelle mit hochgeladenen .VTT-Untertiteldateien und hochgeladenen .MP3-Audiospur-Dateien für ein Video.](assets-dm/msma-subtitle-audiotracks-tab.png)
 
-Für das Hinzufügen von mehrfachen Untertiteln und mehrfachen Audiospuren zu Ihrem primären Video sind unter anderem die folgenden Anwendungsfälle zu berücksichtigen:
+Zu den Nutzungsszenarios, in denen Sie mehrere Beschriftungen und Audiospuren zu Ihrem primären Video hinzufügen sollten, zählen die folgenden:
 
 | Typ | Nutzungsszenario |
 |--- |--- |
@@ -609,28 +609,28 @@ Für das Hinzufügen von mehrfachen Untertiteln und mehrfachen Audiospuren zu Ih
 |  | Kommentarspuren |
 |  | Beschreibendes Audio |
 
-Alle [in Dynamic Media unterstützten Videoformate](/help/assets/assets-formats.md) und alle Dynamic Media-Video-Viewer – mit Ausnahme des Dynamic Media-Viewers *Video_360* – werden für die Verwendung mit mehrfachen Untertiteln und mehrfachen Audiospuren unterstützt.
+Alle [Unterstützte Videoformate in Dynamic Media](/help/assets/assets-formats.md) und alle Dynamic Media-Video-Viewer mit Ausnahme der Dynamic Media *Video_360* Viewer - wird für die Verwendung mit mehreren Beschriftungen und Audiospuren unterstützt.
 
-Die Funktion für mehrfache Untertitel und mehrfache Audiospuren ist für Ihr Dynamic Media-Konto über einen Funktionsumschalter verfügbar, der vom Adobe-Support aktiviert werden muss.
+Für Ihr Dynamic Media-Konto stehen mehrere Funktionen für Beschriftungen und Audio-Tracking zur Verfügung, indem Sie einen Feature-Umschalter aktivieren, der vom Adobe-Support aktiviert werden muss.
 
-### Hinzufügen mehrerer Untertitel und mehrerer Audiospuren zu einem Video {#add-msma}
+### Hinzufügen mehrerer Beschriftungen und Audiospuren zu Ihrem Video {#add-msma}
 
-Bevor Sie Ihrem Video mehrere Untertitel und mehrere Audiospuren hinzufügen, stellen Sie Folgendes sicher:
+Bevor Sie mehrere Beschriftungen und Audiospuren zu Ihrem Video hinzufügen, stellen Sie sicher, dass Sie bereits über Folgendes verfügen:
 
 * Dynamic Media ist in einer AEM-Umgebung eingerichtet.
 * Ein [Dynamic Media-Videoprofil wurde auf den Ordner angewendet, in dem Ihre Videos aufgenommen werden](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
-* [Die Funktion für mehrfache Untertitel und mehrfache Audiospuren ist in Ihrem Dynamic Media-Konto aktiviert.](#enable-dash).
+* [In Ihrem Dynamic Media-Konto sind mehrere Beschriftungen und Audiospuren aktiviert.](#enable-dash).
 
 Hinzugefügte (verdeckte) Untertitel werden in den Formaten WebVTT und Adobe VTT unterstützt. Außerdem werden hinzugefügte Audiospurdateien mit dem MP3-Format unterstützt.
 
 >[!IMPORTANT]
 >
->Alle Videos, die Sie *vor* der Aktivierung der Unterstützung für mehrfache Untertitel und mehrfache Audiospuren in Ihrem Dynamic Media-Konto hochgeladen haben, [müssen erneut verarbeitet werden](/help/assets/processing-profiles.md#reprocessing-assets). Dieser Schritt zur erneuten Verarbeitung des Videos ist notwendig, damit die Möglichkeit besteht, mehrfache Untertitel und mehrfache Audiospuren zu verwenden. Die Video-URLs funktionieren nach der erneuten Verarbeitung weiterhin und werden wie gewohnt wiedergegeben.
+>Alle hochgeladenen Videos *before* mehrere Untertitel- und Audio-Tracking-Unterstützung für Ihr Dynamic Media-Konto zu ermöglichen, [muss erneut verarbeitet werden](/help/assets/processing-profiles.md#reprocessing-assets). Dieser Schritt zur erneuten Verarbeitung von Videos ist erforderlich, damit mehrere Beschriftungen und Audiospuren verfügbar sind. Die Video-URLs funktionieren nach der erneuten Verarbeitung weiterhin und werden wie gewohnt wiedergegeben.
 
-**So fügen Sie Ihrem Video mehrfache Untertitel und mehrfache Audiospuren hinzu:**
+**So fügen Sie Ihrem Video mehrere Beschriftungen und Audiospuren hinzu:**
 
 1. [Laden Sie das primäre Video in einen Ordner hoch](/help/assets/managing-video-assets.md#upload-and-preview-video-assets), dem bereits ein Videoprofil zugewiesen ist.
-1. Navigieren Sie zum hochgeladenen Video-Asset, dem mehrfache Untertitel und mehrfache Audiospuren hinzugefügt werden sollen.
+1. Navigieren Sie zum hochgeladenen Video-Asset, dem Sie mehrere Beschriftungen und Audiospuren hinzufügen möchten.
 1. Wählen Sie im Asset-Auswahlmodus entweder in der Listen- oder Kartenansicht das Video-Asset aus.
 1. Wählen Sie in der Symbolleiste das Symbol „Eigenschaften“ (ein Kreis mit einem darin enthaltenen „i“) aus.
    ![Ausgewähltes Video-Asset mit Häkchen auf der Miniaturansicht des Videos und in der Symbolleiste hervorgehobenes Symbol zum Anzeigen der Eigenschaften ](assets-dm/msma-selectedasset-propertiesbutton.png)*Ausgewähltes Video-Asset in der Kartenansicht*
@@ -853,7 +853,7 @@ Die ursprüngliche Audiospur, die aus einer primären Datei extrahiert wurde, ka
 
 >[!IMPORTANT]
 >
->Adobe empfiehlt, dass Sie in Ihrem Dynamic Media-Konto die [Funktion für mehrfache Untertitel und mehrfache Audiospuren aktivieren](#enable-dash). Auf diese Weise können Sie die neueste Dynamic Media-Backend-Architektur und einen vereinfachten Arbeitsablauf zum Hinzufügen von Einblendtiteln, Untertiteln und Audiospuren zu Ihren Videos nutzen.
+>Adobe empfiehlt, dass Sie [Aktivieren der Funktion für mehrere Beschriftungen und Audiospuren](#enable-dash) auf Ihrem Dynamic Media-Konto. Auf diese Weise können Sie die neueste Dynamic Media-Backend-Architektur und einen vereinfachten Arbeitsablauf zum Hinzufügen von Einblendtiteln, Untertiteln und Audiospuren zu Ihren Videos nutzen.
 
 Sorgen Sie dafür, dass Ihre Videos Märkte auf der ganzen Welt erreichen, indem Sie Untertitel zu einzelnen Videos oder adaptiven Videosets hinzufügen. Wenn Sie verdeckte Untertitel hinzufügen, müssen Sie die Audiodaten nicht synchronisieren oder Muttersprachler bzw. Muttersprachlerinnen damit beauftragen, das Audio in einer anderen Sprache neu aufzuzeichnen. Das Video wird in der Sprache, in der es aufgenommen wurde, wiedergegeben. Fremdsprachliche Untertitel werden angezeigt, sodass auch Nutzer anderer Sprachen den Audioteil verstehen können.
 
