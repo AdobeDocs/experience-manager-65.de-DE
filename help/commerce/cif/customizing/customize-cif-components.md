@@ -1,20 +1,12 @@
 ---
 title: CIF-Kernkomponenten anpassen
 description: Erfahren Sie, wie Sie Adobe Experience Manager-CIF-Kernkomponenten anpassen können. In diesem Tutorial wird beschrieben, wie Sie eine CIF-Kernkomponente sicher erweitern können, um geschäftsspezifische Anforderungen zu erfüllen. Erfahren Sie, wie Sie eine GraphQL-Abfrage erweitern, um ein benutzerdefiniertes Attribut zurückzugeben und das neue Attribut in einer CIF-Kernkomponente anzuzeigen.
-sub-product: Commerce
-topics: Development
-version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
-feature: Commerce Integration Framework
-kt: 4279
-thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
+feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
-workflow-type: tm+mt
+source-git-commit: 54f2b7fda39f97c4f8a1d28ac51b7b998bf8e4a1
+workflow-type: ht
 source-wordcount: '2302'
 ht-degree: 100%
 
@@ -58,7 +50,7 @@ Sie klonen das [Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) un
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
    ```
 
 1. Fügen Sie die erforderlichen OSGi-Konfigurationen hinzu, um so Ihre AEM-Instanz mit einer Adobe Commerce-Instanz zu verbinden, oder fügen Sie die Konfigurationen dem neu erstellten Projekt hinzu.
@@ -400,7 +392,7 @@ In diesem Fall möchten Sie ein Banner über dem Teaser darstellen, um anzuzeige
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
    ```
 
 1. Öffnen Sie ein neues Browser-Fenster. Navigieren Sie zu AEM und dann zur **OSGi-Konsole** > **Status** > **Sling-Modelle**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
@@ -479,7 +471,7 @@ An diesem Punkt funktioniert die Logik dafür, wann das Zeichen **Umweltfreundli
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
    ```
 
 1. Aktualisieren Sie zur **Venia-Startseite** unter [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html), wo der Produkt-Teaser hinzugefügt wurde.
