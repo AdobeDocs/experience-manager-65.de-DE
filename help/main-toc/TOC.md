@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: 9bacc16657c83329ff7b02dc8b233908e9deb2e1
-workflow-type: ht
-source-wordcount: '7406'
-ht-degree: 100%
+source-git-commit: b274d150ccffb93858de6a3a8f7e05441776d0fb
+workflow-type: tm+mt
+source-wordcount: '7400'
+ht-degree: 99%
 
 ---
 
@@ -74,6 +74,7 @@ ht-degree: 100%
    + [Zuordnung benutzerdefinierter Benutzergruppen in AEM 6.5](/help/sites-administering/cug-mapping.md)
    + [Cookie-Unterstützung für dieselbe Website](/help/sites-administering/same-site-cookie-support.md)
    + [Einstellung der JWT-Anmeldedaten in Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [Einrichten von IMS-Integrationen für AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
 + Sites {#sites}
    + Authoring {#authoring}
       + Wesentliche Aufgaben, Tools und Konzepte für die Inhaltserstellung in AEM {#essentials}
@@ -226,7 +227,6 @@ ht-degree: 100%
          + [Konfigurieren des Linktrackings für Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
          + [Zuordnen von Komponentendaten zu Adobe Analytics-Eigenschaften](/help/sites-administering/adobeanalytics-mapping.md)
          + [Konfigurieren von Videotracking für Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
-         + [Integration mit Adobe Analytics unter Verwendung von IMS](/help/sites-administering/integration-analytics-ims.md)
          + [Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)](/help/sites-administering/scene7-http2faq.md)
          + [Fehlerbehebung bei der Adobe Campaign-Integration](/help/sites-administering/troubleshooting-campaignintegration.md)
          + [SharePoint Connector-Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse](/help/sites-administering/sharepoint-connector-licenses.md)
@@ -250,7 +250,6 @@ ht-degree: 100%
          + [Integrieren mit Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md)
          + [Manuelles Konfigurieren der Integration mit Adobe Target](/help/sites-administering/target-configuring.md)
          + [Voraussetzungen für die Integration mit Adobe Target](/help/sites-administering/target-requirements.md)
-         + [Integration mit Adobe Target unter Verwendung von IMS](/help/sites-administering/integration-target-ims.md)
          + [Adobe Classifications](/help/sites-administering/adobeanalytics-classifications.md)
          + [Lösungsintegration](/help/sites-administering/integration.md)
          + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-administering/experience-fragments-target.md)

@@ -10,38 +10,14 @@ exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: dcb55b3b185fe5dccf52377a12556e33d818e410
 workflow-type: tm+mt
-source-wordcount: '1513'
-ht-degree: 100%
+source-wordcount: '1438'
+ht-degree: 99%
 
 ---
 
-# Exportieren von Experience Fragments nach Adobe Target {#exporting-experience-fragments-to-adobe-target}
-
->[!CAUTION]
->
->Einige Funktionen auf dieser Seite erfordern die Anwendung von AEM 6.5.3.0 (oder höher).
->
->6.5.3.0:
->
->* **Externalizer-Domains** können jetzt ausgewählt werden.
->  **Hinweis:** Externalizer-Domains sind nur für den Inhalt des Experience Fragments relevant, das an Target gesendet wird, und nicht für Metadaten wie Inhalte zum Anzeigen von Angeboten.
->
->6.5.2.0:
->
->* Experience Fragments können in Folgendes exportiert werden:
->
->   * den Standardarbeitsbereich
->   * einen benannten Arbeitsbereich, der in der Cloud-Konfiguration angegeben ist.
->   * **Hinweis:** Für den Export in bestimmte Arbeitsbereiche ist Adobe Target Premium erforderlich.
->
->* AEM muss [mit Adobe Target über IMS integriert](/help/sites-administering/integration-target-ims.md) sein.
->
->AEM 6.5.0.0 und 6.5.1.0:
->
->* Die AEM Experience Fragments werden in den Standardarbeitsbereich von Adobe Target exportiert.
->* AEM muss gemäß den Anweisungen unter [Integration mit Adobe Target](/help/sites-administering/target.md) mit Adobe Target integriert werden.
+# Exportieren von Experience Fragments nach Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
 Sie können [Experience Fragments](/help/sites-authoring/experience-fragments.md), die in Adobe Experience Manager (AEM) erstellt wurden, nach Adobe Target (Target) exportieren. Diese können dann als Angebote in Target-Aktivitäten verwendet werden, um Erlebnisse im benötigten Umfang zu testen und zu personalisieren.
 
@@ -51,7 +27,13 @@ Es gibt drei Formatoptionen für den Export eines Experience Fragments in Adobe 
 * JSON: Unterstützung der Headless-Inhaltsbereitstellung
 * HTML und JSON
 
-AEM Experience Fragments können in den Standardarbeitsbereich in Adobe Target oder in benutzerdefinierte Arbeitsbereiche für Adobe Target exportiert werden. Dies erfolgt über die Adobe Developer Console, für die AEM [mit Adobe Target über IMS integriert](/help/sites-administering/integration-target-ims.md) sein muss.
+AEM Experience Fragments können in den Standardarbeitsbereich in Adobe Target oder in benutzerdefinierte Arbeitsbereiche für Adobe Target exportiert werden. Dies erfolgt über die Adobe Developer Console, für die AEM [mit Adobe Target über IMS integriert](/help/sites-administering/setting-up-ims-integrations-for-aem.md) sein muss.
+
+>[!NOTE]
+>
+>[IMS-Integrationen sind jetzt mit S2S OAuth konfiguriert](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+>
+>Frühere Konfigurationen wurden mit [JWT-Berechtigungen, die in der Adobe Developer Console nicht mehr unterstützt werden](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md), erstellt.
 
 >[!NOTE]
 >
@@ -71,14 +53,17 @@ AEM Experience Fragments können in den Standardarbeitsbereich in Adobe Target o
 
 ## Voraussetzungen {#prerequisites}
 
->[!CAUTION]
->
->Einige Funktionen auf dieser Seite erfordern die Anwendung von AEM 6.5.3.0.
-
 Verschiedene Aktionen sind erforderlich:
 
-1. Sie müssen [AEM mit Adobe Target über IMS integrieren](/help/sites-administering/integration-target-ims.md).
-2. Experience Fragments werden aus der AEM-Autoreninstanz exportiert. Daher müssen Sie auf der Autoreninstanz [den AEM Link Externalizer konfigurieren](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer), um sicherzustellen, dass alle Verweise im Experience Fragment für die Web-Bereitstellung externalisiert werden.
+1. Sie müssen [AEM mit Adobe Target über IMS integrieren](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+
+   >[!NOTE]
+   >
+   >[IMS-Integrationen sind jetzt mit S2S OAut konfiguriert](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+   >
+   >Frühere Konfigurationen wurden mit [JWT-Berechtigungen, die in der Adobe Developer Console nicht mehr unterstützt werden](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md), erstellt.
+
+1. Experience Fragments werden aus der AEM-Autoreninstanz exportiert. Daher müssen Sie auf der Autoreninstanz [den AEM Link Externalizer konfigurieren](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer), um sicherzustellen, dass alle Verweise im Experience Fragment für die Web-Bereitstellung externalisiert werden.
 
    >[!NOTE]
    >
