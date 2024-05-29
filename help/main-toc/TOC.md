@@ -7,9 +7,9 @@ user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Mana
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
 source-git-commit: b274d150ccffb93858de6a3a8f7e05441776d0fb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7400'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1353,7 +1353,7 @@ ht-degree: 99%
          + [Testen der Benutzeroberfläche](/help/sites-developing/hobbes.md)
          + [Komponenten für Inhaltsfragmente](/help/sites-developing/components-content-fragments.md)
          + [Ermitteln von Seiteninformationen im JSON-Format](/help/sites-developing/pageinfo.md)
-         + Internationalisierung {#internationalization}
+         + Internationalisierung{#internationalization}
             + [Internationalisieren von Komponenten](/help/sites-developing/i18n.md)
             + [Internationalisierung von UI-Zeichenfolgen](/help/sites-developing/i18n-dev.md)
             + [Verwalten von Wörterbüchern mithilfe des Übersetzers](/help/sites-developing/i18n-translator.md)

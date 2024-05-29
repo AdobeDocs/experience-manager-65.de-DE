@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 source-git-commit: dcb55b3b185fe5dccf52377a12556e33d818e410
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1438'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -59,9 +59,9 @@ Verschiedene Aktionen sind erforderlich:
 
    >[!NOTE]
    >
-   >[IMS-Integrationen sind jetzt mit S2S OAut konfiguriert](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+   >[IMS-Integrationen sind jetzt mit S2S OAuth konfiguriert](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
    >
-   >Frühere Konfigurationen wurden mit [JWT-Berechtigungen, die in der Adobe Developer Console nicht mehr unterstützt werden](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md), erstellt.
+   >Frühere Konfigurationen wurden mit [JWT-Berechtigungen erstellt, die in der Adobe Developer Console nicht mehr unterstützt werden](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 1. Experience Fragments werden aus der AEM-Autoreninstanz exportiert. Daher müssen Sie auf der Autoreninstanz [den AEM Link Externalizer konfigurieren](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer), um sicherzustellen, dass alle Verweise im Experience Fragment für die Web-Bereitstellung externalisiert werden.
 
