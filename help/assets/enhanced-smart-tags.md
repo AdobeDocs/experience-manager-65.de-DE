@@ -7,10 +7,10 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
-source-wordcount: '1559'
-ht-degree: 100%
+source-git-commit: 45452acf73adc76aacebff9aa0dd42565abbd358
+workflow-type: tm+mt
+source-wordcount: '1575'
+ht-degree: 99%
 
 ---
 
@@ -194,3 +194,9 @@ Darüber hinaus können Sie Tags einen höheren Rang zuweisen, um ihre Relevanz 
 * Die Nutzung des Smart Content Services ist auf bis zu 2 Millionen getaggte Bilder pro Jahr beschränkt. Alle doppelten Bilder, die verarbeitet und mit Tags versehen werden, werden als getaggtes Bild gezählt.
 * Wenn Sie den Tagging-Workflow über die Zeitleiste ausführen, können Sie Tags gleichzeitig auf maximal 15 Assets anwenden.
 * Smart-Tags funktionieren nur für die Bildformate PNG und JPG. Unterstützte Assets, deren Ausgabedarstellungen in diesen beiden Formaten erstellt wurden, werden also mit Smart Tags versehen.
+
+>[!MORELIKETHIS]
+>
+>* [Übersicht und Schulung für Smart-Tags](enhanced-smart-tags.md)
+>* [Konfigurieren von Smart-Tagging](config-smart-tagging.md)
+>* [Video-Tutorial zu Smart-Tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=de)
