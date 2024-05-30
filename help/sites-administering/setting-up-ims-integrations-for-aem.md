@@ -2,9 +2,9 @@
 title: Einrichten von IMS-Integrationen für AEM
 description: Erfahren Sie, wie Sie IMS-Integrationen für AEM einrichten.
 source-git-commit: bca98907b79f12572879273ece41ec8d82fed1b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '438'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 92%
 
 >[!NOTE]
 >
->Mit der [Adobe Developer Console](https://developer.adobe.com/console) können Kundinnen und Kunden von Adobe Anmeldedaten generieren, die den Zugriff auf verschiedene APIs ermöglichen. Dabei können sie unter verschiedenen Anmeldedatentypen wählen, von OAuth Server-zu-Server bis zu Single-Page-App. Einer dieser Anmeldedatentypen, Anmeldedaten für Dienstkonten (JWT), wurde mit Service Pack 20 zugunsten der OAuth Server-zu-Server-Anmeldedaten eingestellt. Diese Änderung kann wieder auf ältere Service Packs portiert werden, beginnend mit Service Pack 11 bis Service Pack 20 mit einem Hotfix, den Sie herunterladen können [here](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
+>Mit der [Adobe Developer Console](https://developer.adobe.com/console) können Kundinnen und Kunden von Adobe Anmeldedaten generieren, die den Zugriff auf verschiedene APIs ermöglichen. Dabei können sie unter verschiedenen Anmeldedatentypen wählen, von OAuth Server-zu-Server bis zu Single-Page-App. Einer dieser Anmeldedatentypen, Anmeldedaten für Dienstkonten (JWT), wurde mit Service Pack 20 zugunsten der OAuth Server-zu-Server-Anmeldedaten eingestellt. Diese Änderung kann mithilfe eines Hotfixes, den Sie [hier](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip) herunterladen können, auf ältere Service Packs, beginnend mit Service Pack 11 bis hin zu Service Pack 20, zurückportiert werden.
 
 Adobe Experience Manager (AEM) kann mit vielen anderen Adobe-Lösungen integriert werden. Zum Beispiel Adobe Target, Adobe Analytics und vielen weiteren.
 
