@@ -8,9 +8,9 @@ docset: aem65
 role: Admin,User
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
-source-wordcount: '2509'
+source-git-commit: 0e2c9c911ae824c55d958180a84f23079bae8263
+workflow-type: tm+mt
+source-wordcount: '2508'
 ht-degree: 100%
 
 ---
@@ -57,7 +57,7 @@ Sie können keine adaptiven Formulare, interaktive Kommunikation, adaptiven Form
 
 Hochladen von Assets für Formulare und Dokumente:
 
->[!VIDEO](https://vimeo.com/de/)
+<!--[!VIDEO](https://vimeo.com/)-->
 
 1. Melden Sie sich bei der AEM Forms-Instanz an.
 1. Wählen Sie erst das Symbol „Experience Manager“ ![adobeexperiencemanager](assets/adobeexperiencemanager.png), dann das Symbol „Navigation“ ![compass](assets/compass.png) und anschließend „Formulare“ > „Formulare und Dokumente“ aus.
