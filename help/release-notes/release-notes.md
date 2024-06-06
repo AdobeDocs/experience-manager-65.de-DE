@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 source-git-commit: 6bf2d6409a15be02a247fab84caa743e8542da13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3032'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -28,11 +28,11 @@ ht-degree: 74%
 | Version | 6.5.21.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Typ | Service Pack-Version |
 | Datum | Donnerstag, 6. Juni 2024 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| Download-URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.21.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Download-URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/de/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.21.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
 ## Was in [!DNL Experience Manager] 6.5.21.0 enthalten ist {#what-is-included-in-aem-6521}
 
-[!DNL Experience Manager] 6.5.21.0 umfasst neue Funktionen, wichtige von Kunden angeforderte Verbesserungen und Fehlerbehebungen. Es enthält auch Verbesserungen hinsichtlich Leistung, Stabilität und Sicherheit, die seit der ersten Verfügbarkeit von 6.5 im April 2019 veröffentlicht wurden. [Installieren Sie dieses Service Pack](#install) für [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.21.0 umfasst neue Funktionen, wichtige kundenseitig angeforderte Verbesserungen und Fehlerbehebungen. Diese Version enthält zudem Leistungs-, Stabilitäts- und Sicherheitsverbesserungen, die seit der ersten Verfügbarkeit der Version 6.5 im April 2019 veröffentlicht wurden. [Installieren Sie dieses Service Pack](#install) für [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -48,16 +48,16 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 
 #### Verbesserungen
 
-Im Folgenden finden Sie eine Liste der in dieser Version enthaltenen Verbesserungen:
+Im Folgenden finden Sie die Liste der Fehlerbehebungen in dieser Version.
 
-* Die Registerkarte IPTC unterstützt jetzt [!UICONTROL Alternativtext] und [!UICONTROL Erweiterte Beschreibung] Textfelder. (ASSETS-34918)
+* Die Registerkarte „IPTC“ bietet nun Unterstützung für die Textfelder [!UICONTROL Alternativtext] und [!UICONTROL Erweiterte Beschreibung]. (ASSETS-34918)
 
 #### Fehlerbehebungen für die Barrierefreiheit
 
-Im Folgenden finden Sie eine Liste der in dieser Version enthaltenen Fehlerbehebungen zur Barrierefreiheit:
+Im Folgenden finden Sie eine Liste der in dieser Version enthaltenen Fehlerbehebungen für die Barrierefreiheit:
 
-* Wenn der Verarbeitungsstatus eines Assets fehlgeschlagen oder Metadaten fehlgeschlagen ist, funktioniert die Benutzeroberfläche für Beschriftungen und Audiospuren nicht ordnungsgemäß. (ASSETS-37281)
-* Wenn Sie Asset-Metadaten speichern und versuchen, sie zu bearbeiten, wird der Sprachname nicht angezeigt. (ASSETS-37281)
+* Wenn der Verarbeitungsstatus eines Assets „Fehlgeschlagen“ oder „Metadaten fehlgeschlagen“ lautet, funktioniert die Benutzeroberfläche „Untertitel und Audiospuren“ nicht ordnungsgemäß. (ASSETS-37281)
+* Wenn Sie Asset-Metadaten speichern und bearbeiten möchten, wird die Sprachbezeichnung nicht angezeigt. (ASSETS-37281)
 
 <!-- ### [!DNL Forms]
 * A -->
@@ -83,7 +83,7 @@ Im Folgenden finden Sie eine Liste der in dieser Version enthaltenen Fehlerbeheb
 #### [!DNL Content Fragments]{#sites-contentfragments-6521}
 
 * Die doppelte Einbeziehung der Formularelemente wurde korrigiert. (SITES-21109)
-* Beim Erstellen eines Inhaltsfragments reagiert die Schaltfläche „Schließen“ manchmal nicht mehr. Die gesamte Seite friert dadurch ein und es ist eine Seitenaktualisierung erforderlich, um das Inhaltsfragment zu schließen. Was das Problem bei der Versionserstellung betrifft, erstellt das System eine neue Version eines Inhaltsfragments. Dieses Problem tritt auch dann auf, wenn der Benutzer keine Änderungen vorgenommen hat, indem er einfach mit dem RTE oder einem Textfeld interagiert. (SITES-21187)
+* Beim Erstellen eines Inhaltsfragments reagiert die Schaltfläche „Schließen“ manchmal nicht mehr. Die gesamte Seite friert dadurch ein und es ist eine Seitenaktualisierung erforderlich, um das Inhaltsfragment zu schließen. Was das Problem bei der Versionserstellung betrifft, erstellt das System eine neue Version eines Inhaltsfragments. Dieses Problem tritt auch dann auf, wenn die Benutzerin oder der Benutzer keine Änderungen vorgenommen, sondern einfach mit dem RTE oder einem Textfeld interagiert hat. (SITES-21187)
 
 #### [!DNL Content Fragments] – GraphQL-API {#sites-graphql-api-6521}
 
@@ -112,7 +112,7 @@ Im Folgenden finden Sie eine Liste der in dieser Version enthaltenen Fehlerbeheb
 #### Experience Fragments{#sites-experiencefragments-6521}
 
 * Beim Rollout von Experience Fragments von `masters/language` nach `country/language` werden keine Querverweise aktualisiert. (SITES-21172)
-* Nicht nur in `cq:allowedTemplates` angegebene Vorlagen, sondern auch Vorlagen, bei denen `allowedPaths` auf Vorlagenebene konfiguriert ist, werden beim Erstellen eines neuen Experience Fragments als Optionen angezeigt. (SITES-20855)
+* Nicht nur die in `cq:allowedTemplates` angegebenen Vorlagen, sondern auch Vorlagen, bei denen `allowedPaths` auf Vorlagenebene konfiguriert ist, werden beim Erstellen eines neuen Experience Fragments als Optionen angezeigt. (SITES-20855)
 
 <!-- #### Foundation Components (Legacy){#sites-foundation-components-legacy-6521}
 
@@ -124,7 +124,7 @@ Im Folgenden finden Sie eine Liste der in dieser Version enthaltenen Fehlerbeheb
 
 #### MSM – Live Copies{#sites-msm-live-copies-6521}
 
-* Überlagern der Seitenkomponente, um in den Seiteneigenschaften Registerkarten hinzuzufügen. In einem Fall handelt es sich dabei um die Seitenkonfiguration, die über eine Eigenschaft zum Hinzufügen einer Experience Fragment-URL verfügt. Der in den Seiteneigenschaften für das Experience Fragment konfigurierte Link ändert sich für keine Sprachkopien, die für diese Seite erstellt wurden. Der konfigurierte Link sollte sich mit der Sprachkopie-URL ändern. (SITES-19580)
+* Die Seitenkomponente wird überlagert, um in den Seiteneigenschaften Registerkarten hinzuzufügen. In einem Fall handelt es sich dabei um die Seitenkonfiguration, die über eine Eigenschaft zum Hinzufügen einer Experience Fragment-URL verfügt. Der in den Seiteneigenschaften für das Experience Fragment konfigurierte Link ändert sich für keine Sprachkopien, die für diese Seite erstellt wurden. Der konfigurierte Link sollte sich mit der Sprachkopie-URL ändern. (SITES-19580)
 
 #### Seiteneditor{#sites-pageeditor-6521}
 
@@ -134,16 +134,16 @@ Im Folgenden finden Sie eine Liste der in dieser Version enthaltenen Fehlerbeheb
 
 * Wenn ein Asset in Brand Portal veröffentlicht wird, bleibt der Veröffentlichungsstatus inkonsistent. (ASSETS-36807)
 * Assets werden nicht gelöscht, wenn Sie sie mithilfe eines API-Aufrufs aus einer Instanz löschen. (ASSETS-35131)
-* Wenn Sie versuchen, Metadaten zu importieren, wird eine `question mark (?)` ersetzt die Einfügung von Zeichen in einer anderen Sprache als Englisch.  (ASSETS-35091)
-* Wann `dc:title` -Eigenschaft mit Datentypzeichenfolge verwendet wird, funktioniert die Inhaltsstruktur für Assets nach der Installation von Service Pack 6.5.19 nicht ordnungsgemäß. (ASSETS-34684)
+* Wenn Sie versuchen, Metadaten zu importieren, werden eingefügte Zeichen in einer anderen Sprache als Englisch durch ein `question mark (?)` ersetzt.  (ASSETS-35091)
+* Wenn die Eigenschaft `dc:title` mit einer Datentypzeichenfolge verwendet wird, funktioniert die Asset-Inhaltsstruktur nach der Service Pack 6.5.19-Installation nicht ordnungsgemäß. (ASSETS-34684)
 * Wenn ein Asset-Name ein Sonderzeichen enthält, wird ein Fehler angezeigt. (ASSETS-33248)
 
 #### [!DNL Dynamic Media]{#assets-dm-6521}
 
-* In AEM 6.5.18 werden nicht alle Hotspots angezeigt, die einem Asset hinzugefügt wurden, wenn Sie die Hotspots bearbeiten. Alle Hotspots funktionieren jedoch in einem veröffentlichten Asset, können jedoch später nicht mehr bearbeitet werden, wenn dies erforderlich ist. (ASSETS-33609)
-* Die neuesten EPS-Dateien, die hochgeladen werden, generieren nach der Neuverarbeitung keine Miniaturansichten. (ASSETS-32617)
-* Unter Tools > Assets > Veröffentlichungseinstellungen von Dynamic Media > Anforderungsattribute werden die Eingaben `Width(px)` und `Height(px)` In Spanisch, Italienisch und Portugiesisch sieht es anders aus. Sie sind für diese Orte nicht aufeinander abgestimmt. (ASSETS-31896)
-* Ab dem 1. Mai 2024 hat Adobe Dynamic Media die Unterstützung für Folgendes eingestellt:
+* In AEM 6.5.18 werden beim Bearbeiten von Hotspots nicht alle Hotspots angezeigt, die einem Asset hinzugefügt wurden. Alle Hotspots funktionieren allerdings in einem veröffentlichten Asset, können jedoch später im Bedarfsfall nicht mehr bearbeitet werden. (ASSETS-33609)
+* Mit den neuesten EPS-Dateien, die hochgeladen werden, werden nach der erneuten Verarbeitung keine Miniaturansichten generiert. (ASSETS-32617)
+* Unter „Tools“ > „Assets“ > „Veröffentlichungs-Setup für Dynamic Media“ > Registerkarte „Anfrage-Attribute“ sehen die Eingaben `Width(px)` und `Height(px)` in Spanisch, Italienisch und Portugiesisch anders aus. Sie sind hier nicht aufeinander abgestimmt. (ASSETS-31896)
+* Seit dem 1. Mai 2024 unterstützt Adobe Dynamic Media Folgendes nicht mehr:
    * SSL (Secure Socket Layer) 2.0
    * SSL 3.0
    * TLS (Transport Layer Security) 1.0 und 1.1
@@ -165,7 +165,7 @@ Im Folgenden finden Sie eine Liste der in dieser Version enthaltenen Fehlerbeheb
 
 ### [!DNL Forms]{#forms-6521}
 
-Die Fehlerbehebungen in [!DNL Experience Manager] Forms werden eine Woche nach dem geplanten Veröffentlichungsdatum des [!DNL Experience Manager] Service Packs über ein separates Add-on-Paket bereitgestellt. In diesem Fall ist die Paket-Version des AEM Forms-Add-Ons 6.5.21.0 für Donnerstag, den Freitag, 13. Juni 2024 geplant. Nach der Veröffentlichung wird diesem Abschnitt eine Liste mit Forms-Fehlerbehebungen und -Verbesserungen hinzugefügt.
+Die Fehlerbehebungen in [!DNL Experience Manager] Forms werden eine Woche nach dem geplanten Veröffentlichungsdatum des [!DNL Experience Manager] Service Packs über ein separates Add-on-Paket bereitgestellt. In diesem Fall ist die Paket-Version des AEM Forms-Add-Ons 6.5.21.0 für Donnerstag, den 13. Juni 2024 geplant. Nach der Veröffentlichung wird diesem Abschnitt eine Liste mit Forms-Fehlerbehebungen und -Verbesserungen hinzugefügt.
 
 <!-- #### [!DNL Adaptive Forms]
 
@@ -180,7 +180,7 @@ Die Fehlerbehebungen in [!DNL Experience Manager] Forms werden eine Woche nach d
 
 #### Apache Felix {#foundation-apachefelix-6521}
 
-* Aktualisierungsproblem mit AEM 6.5 Service Pack 19 (SP19), bei dem der Kontextstammpfad des Anwendungsservers für nicht autorisierte Anfragen an Apache Felix nach der Installation von SP19 fehlt. Aktualisieren Sie auf Apache Felix Web Management Console 4.9.8. (NPR-41933)
+* Upgrade-Problem bei AEM 6.5 Service Pack 19 (SP19), bei dem der Kontextstammpfad des Anwendungs-Servers für nicht autorisierte Anfragen an Apache Felix nach der Installation von SP19 fehlt. Aktualisieren Sie auf Apache Felix Web Management Console 4.9.8. (NPR-41933)
 
 #### Campaign{#foundation-campaign-6521}
 
@@ -193,7 +193,7 @@ Die Fehlerbehebungen in [!DNL Experience Manager] Forms werden eine Woche nach d
 
 #### Cloud Services{#foundation-cloudservices-6521}
 
-* Entfernen Sie Google Guava aus AEM Cloud Services. (CQ-4356436)
+* Entfernen Sie Google Guava aus AEM-Cloud-Services. (CQ-4356436)
 
 <!-- #### Communities {#foundation-communities-6521}
 
@@ -205,15 +205,15 @@ Die Fehlerbehebungen in [!DNL Experience Manager] Forms werden eine Woche nach d
 
 #### Granite{#foundation-granite-6521}
 
-* Die Auswahl von **Löschen** oder **Ändern** without **Durchsuchen** -Berechtigung im Konfigurationsbrowser. (GRANITE-51002)
+* Sie können **Löschen** oder **Verändern** ohne die Berechtigung **Durchsuchen** nicht im Konfigurations-Browser auswählen. (GRANITE-51002)
 
 #### Integrationen{#foundation-integrations-6521}
 
 * In Bezug auf `cq-target-integration` muss die ungetestete Verwendung von Google Guava entfernt werden. (CQ-4357101)
-* Ersetzen von Service-Konto-Anmeldeinformationen (JSON Web Token oder JWT) durch OAuth2-Server-zu-Server-Anmeldeinformationen (auch als Service Principals bezeichnet). (NPR-41994)
+* Ersetzen von Service-Konto-Anmeldeinformationen (JSON-Webtoken bzw. JWT) durch OAuth2-Server-zu-Server-Anmeldeinformationen (auch als Dienstprinzipale bezeichnet). (NPR-41994)
 * Die Anfrage „Zielgruppe erstellen“ schlägt mit der Identity Management System(IMS)-Konfiguration fehl. (NPR-41888)
-* Wenn eine Kundin oder ein Kunde versucht, die Payload-Seite anzuzeigen, wird der Inhalt aufgrund einer fehlerhaften URL nicht richtig angezeigt. Es wird der Fehler 404 angezeigt. Ein fehlendes Fragezeichen-Symbol in der URL verursachte vor den Abfrageparametern den Fehler. Dieses Problem erfordert, dass der Kunde das Fragezeichen-Symbol einfügt, um die Payload-Seite korrekt anzuzeigen. (NPR-41957)
-* Entfernen Sie den Code und die Abhängigkeiten von Adobe Search&amp;Promote aus AEM 6.5, die das Ende der Lebensdauer am [September 2022 gemäß Bekanntmachung](https://experienceleague.adobe.com/de/docs/discontinued/using/search-promote). (NPR-41855)
+* Wenn eine Kundin oder ein Kunde versucht, die Payload-Seite anzuzeigen, wird der Inhalt aufgrund einer fehlerhaften URL nicht richtig angezeigt und der Fehler 404 angezeigt. Der Fehler wurde durch ein fehlendes Fragezeichensymbol in der URL, vor den Abfrageparametern, verursacht. Bei diesem Problem muss die Kundin oder der Kunde das Fragezeichensymbol einfügen, um die Payload-Seite korrekt anzuzeigen. (NPR-41957)
+* Entfernen Sie den Code und die Abhängigkeiten von Adobe Search&amp;Promote aus AEM 6.5, das [gemäß Bekanntmachung im September 2022](https://experienceleague.adobe.com/de/docs/discontinued/using/search-promote) das Ende seiner Nutzungsdauer erreicht hat. (NPR-41855)
 
 #### Lokalisierung{#foundation-localization-6521}
 
@@ -222,8 +222,8 @@ Die Fehlerbehebungen in [!DNL Experience Manager] Forms werden eine Woche nach d
 
 #### Platform{#foundation-platform-6521}
 
-* Der Fehler `Unclosed resource resolver` tritt bei `com.day.cq.mailer.impl.DefaultMailService` auf. Die vorkonfigurierte Klasse `MessageGatewayService` wurde ohne Ressourcen-Resolver verwendet. Das Problem trat auf jeder Seite mit einer Formularsendeschaltfläche auf, die eine E-Mail mit dieser Klasse sendet. (NPR-41853)
-* Im **Über Adobe Experience Manager** angezeigt, ist das Jahr des Urheberrechts noch 2023. (CQ-4356349)
+* Der Fehler `Unclosed resource resolver` tritt bei `com.day.cq.mailer.impl.DefaultMailService` auf. Die vorkonfigurierte Klasse `MessageGatewayService` wurde ohne Ressourcen-Resolver verwendet. Das Problem ist auf jeder Seite mit einer Schaltfläche zur Formularübermittlung aufgetreten, die eine E-Mail mithilfe dieser Klasse sendet. (NPR-41853)
+* Im Dialogfeld **Info zu Adobe Experience Manager** wird 2023 nach wie vor als Copyright-Jahr angezeigt. (CQ-4356349)
 
 
 <!-- #### Sling{#foundation-sling-6521}
@@ -233,14 +233,14 @@ Die Fehlerbehebungen in [!DNL Experience Manager] Forms werden eine Woche nach d
 #### Übersetzung{#foundation-translation-6521}
 
 * Der standardmäßige Übersetzungsstatus von AEM 6.5.19 wird nicht wie für einen Launch erwartet aktualisiert. Nachdem eine übersetzte Datei in einen Übersetzungsauftrag importiert wird, der mit einem AEM-Launch verknüpft ist, sollte sich der Status in `Approved` ändern. Stattdessen ändert sich der Status in `Ready for Review`, was nicht dem erwarteten Verhalten entspricht. (NPR-41756)
-* Beim Erstellen mehrerer Konfigurationen und Navigieren zu den Konfigurationen für Übersetzungs-Cloud-Services werden nicht alle Elemente in der Benutzeroberfläche angezeigt. Es werden nur die ersten 40 Elemente/Ordner angezeigt. Verzögertes Laden wird ausgelöst, es werden jedoch keine weiteren Inhalte hinzugefügt. (NPR-41829)
-* Unleserliche Zeichen treten auf, wenn auf der Seite &quot;Berechtigungen&quot;in der Touch-Benutzeroberfläche Japanisch angezeigt wird. (NPR-41794)
-* AEM 6.5.14 und 6.5.9 senden keine Emoji zur Übersetzung. (CQ-4357000)
+* Beim Erstellen mehrerer Konfigurationen und Navigieren zu den Konfigurationen für Übersetzungs-Cloud-Services werden nicht alle Elemente in der Benutzeroberfläche angezeigt. Es werden nur die ersten 40 Elemente/Ordner angezeigt. Lazy Loading wird ausgelöst, es werden jedoch keine weiteren Inhalte hinzugefügt. (NPR-41829)
+* Auf der Seite „Berechtigungen“ in der Touch-Benutzeroberfläche werden im Japanischen unleserliche Zeichen angezeigt. (NPR-41794)
+* AEM 6.5.14 und 6.5.9 senden kein Emoji zur Übersetzung. (CQ-4357000)
 
 #### Benutzeroberfläche{#foundation-ui-6521}
 
 * Unter „Tools“ > „Sicherheit“ > „Benutzer“ > &lt;Benutzername> > „Profile“ wird das Dialogfeld **Benutzereinstellungen bearbeiten** beim Klicken auf „Abbrechen“ nicht geschlossen. (NPR-41793)
-* Die `pathfield`-Granite-Komponente bei `/libs/granite/ui/components/coral/foundation/form/pathfield` aktiviert nicht die Schaltfläche **[!UICONTROL Auswählen]**, wenn ein Asset ausgewählt ist. Nachdem das Pfadfeld ausgefüllt wurde und der Benutzer das Asset-Kontrollkästchen aktiviert hat, wird das **[!UICONTROL Auswählen]** -Schaltfläche nicht aktiviert ist; sie ändert sich nicht von grau in blau. (NPR-41970)
+* Die `pathfield`-Granite-Komponente bei `/libs/granite/ui/components/coral/foundation/form/pathfield` aktiviert die Schaltfläche **[!UICONTROL Auswählen]** nicht, wenn ein Asset ausgewählt ist. Nachdem das Pfadfeld eingeblendet wurde und die Benutzerin oder der Benutzer das Asset-Kontrollkästchen aktiviert hat, wird die Schaltfläche **[!UICONTROL Auswählen]** nicht aktiviert und bleibt grau, anstatt blau zu werden. (NPR-41970)
 * Es gibt ein Problem mit dem Referenzfeld für das Inhaltsfragmentmodell (Content Fragment Model, CFM) in AEM. Obwohl das CFM-Referenzfeld als obligatorisch festgelegt wurde, können Benutzende unter bestimmten Umständen auf „Speichern“ klicken, um Inhalte mit Nicht-CFM-Werten zu speichern. Die Schaltfläche „Speichern“ sollte abgeblendet (nicht verfügbar) sein. (NPR-41894)
 * Die Standarddialogfelder der Coral-Benutzeroberfläche, die die Aktion `successresponse` verwenden, müssen nach der Aktion eine Erfolgsantwort auslösen. In AEM 6.5 Service Pack 19 wird die Neuladeaktion jedoch nicht aufgerufen und es wird keine Meldung angezeigt. (NPR-41797)
 * AEM-Benachrichtigungs-Links funktionieren nicht in AEM 6.5 Service Pack 18. Beim Upgrade auf Service Pack 18 funktionieren die Links für AEM-Benachrichtigungen nicht, wenn die Nachrichten über die Schaltfläche „Benachrichtigungen“ ausgewählt werden. (NPR-41792)
@@ -258,7 +258,7 @@ Die Fehlerbehebungen in [!DNL Experience Manager] Forms werden eine Woche nach d
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
 * [!DNL Experience Manager] 6.5.21.0 erfordert [!DNL Experience Manager] 6.5. Siehe die [Upgrade-Dokumentation](/help/sites-deploying/upgrade.md) für detaillierte Anweisungen. <!-- UPDATE FOR EACH NEW RELEASE -->
-* Der Service Pack-Download ist über die [Adobe-Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.21.0.zip) verfügbar.
+* Der Service Pack-Download ist über die [Adobe-Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/de/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.21.0.zip) verfügbar.
 * Bei einer Bereitstellung mit MongoDB und mehreren Instanzen installieren Sie [!DNL Experience Manager] 6.5.21.0 mithilfe von Package Manager auf einer der Autoreninstanzen.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
@@ -273,7 +273,7 @@ Die Fehlerbehebungen in [!DNL Experience Manager] Forms werden eine Woche nach d
 
 1. Erstellen Sie vor der Installation eine Momentaufnahme oder ein neues Backup Ihrer [!DNL Experience Manager]-Instanz.
 
-1. Laden Sie das Service Pack von dem [Software-Verteilungsportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.21.0.zip) herunter.<!-- UPDATE FOR EACH NEW RELEASE -->
+1. Laden Sie das Service Pack von dem [Software-Verteilungsportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/de/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.21.0.zip) herunter.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Öffnen Sie Package Manager und wählen Sie dann **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen. Weitere Informationen finden Sie unter [Package Manager](/help/sites-administering/package-manager.md).
 
@@ -283,11 +283,11 @@ Die Fehlerbehebungen in [!DNL Experience Manager] Forms werden eine Woche nach d
 
 >[!NOTE]
 >
->Das Dialogfeld in der Benutzeroberfläche von Package Manager wird manchmal während der Service Pack-Installation beendet. Adobe empfiehlt, auf die Stabilisierung von Fehlerprotokollen zu warten, bevor auf die Bereitstellung zugegriffen wird. Warten Sie auf die spezifischen Protokolle im Zusammenhang mit der Deinstallation des Aktualisierungspakets, bevor Sie sich vergewissern, dass die Installation erfolgreich war. Normalerweise tritt dieses Problem in der [!DNL Safari] -Browser, kann jedoch gelegentlich in jedem Browser auftreten.
+>Das Dialogfeld in der Benutzeroberfläche von Package Manager wird manchmal während der Service Pack-Installation beendet. Adobe empfiehlt, auf die Stabilisierung von Fehlerprotokollen zu warten, bevor auf die Bereitstellung zugegriffen wird. Warten Sie auf die spezifischen Protokolle im Zusammenhang mit der Deinstallation des Aktualisierungspakets, bevor Sie sich vergewissern, dass die Installation erfolgreich war. Dieses Problem tritt vor allem im [!DNL Safari]-Browser auf, kann jedoch gelegentlich in jedem Browser auftreten.
 
 **Automatische Installation**
 
-Es gibt zwei verschiedene Methoden, mit denen Sie installieren können [!DNL Experience Manager] 6.5.21.0.<!-- UPDATE FOR EACH NEW RELEASE -->
+Es gibt zwei verschiedene Methoden, mit denen Sie [!DNL Experience Manager] 6.5.21.0 installieren können.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 * Platzieren Sie das Paket in den Ordner `../crx-quickstart/install`, wenn der Server online verfügbar ist. Das Paket wird automatisch installiert.
 * Verwenden Sie die [HTTP-API von Package Manager](/help/sites-administering/package-manager.md#package-share). Verwenden Sie `cmd=install&recursive=true`, damit die verschachtelten Pakete installiert werden.
@@ -304,7 +304,7 @@ Informationen zu den Plattformen, die für diese Version zertifiziert sind, find
 
 1. Alle OSGi-Bundles sind in der OSGi-Konsole entweder **[!UICONTROL AKTIV]** oder **[!UICONTROL FRAGMENT]** (zu verwendende Web-Konsole: `/system/console/bundles`).
 
-1. Das OSGi-Paket `org.apache.jackrabbit.oak-core` ist Version 1.22.20 oder höher (Webkonsole verwenden: `/system/console/bundles`). <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
+1. Das OSGi-Bundle `org.apache.jackrabbit.oak-core` hat die Version 1.22.20 oder höher (zu verwendende Web-Konsole: `/system/console/bundles`). <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
 ### Installieren des Service Packs für [!DNL Experience Manager] Forms{#install-aem-forms-add-on-package}
 
@@ -421,7 +421,7 @@ Neue Ordner `cache` und `diff-cache` werden automatisch erstellt und es gibt kei
 
   Nach diesen Schritten sollten die GraphQL-Abfragen schneller funktionieren.
 
-* Beim Versuch, Inhaltsfragmente, Sites oder Seiten zu verschieben, zu löschen oder zu veröffentlichen, tritt beim Abrufen von Inhaltsfragmentverweisen ein Problem auf. Die Hintergrundabfrage schlägt fehl. Das heißt, die Funktionalität funktioniert nicht.
+* Beim Versuch, Inhaltsfragmente, Sites oder Seiten zu verschieben, zu löschen oder zu veröffentlichen, tritt ein Problem auf, wenn Inhaltsfragmentreferenzen abgerufen werden. Die Hintergrundabfrage schlägt fehl. Das heißt, die Funktionalität funktioniert nicht.
 Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigenschaften zum Indexdefinitionsknoten `/oak:index/damAssetLucene` hinzufügen (eine Neuindizierung ist nicht erforderlich):
 
   ```xml
@@ -439,15 +439,15 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
    * „Wenn die Adobe Target-Integration mithilfe der Target Standard-API (IMS-Authentifizierung) in [!DNL Experience Manager] konfiguriert wird, führt der Export von Experience Fragments nach Target dazu, dass falsche Angebotstypen erstellt werden.“ Anstelle des Typs „Experience Fragment“/source „Adobe Experience Manager“ erstellt Target mehrere Angebote mit dem Typ „HTML“/ Quelle „Adobe Target Classic“.
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: Keine Wartungsfenster unter granite/operations/maintenance gefunden.
    * Die Server-seitige Validierung des adaptiven Formulars schlägt fehl, wenn Aggregatfunktionen wie SUM, MAX und MIN verwendet werden. (CQ-4274424)
-   * `com.adobe.granite.maintenance.impl.TaskScheduler` : Keine Wartungsfenster in Granite/Betrieb/Wartung gefunden.
+   * `com.adobe.granite.maintenance.impl.TaskScheduler`: Keine Wartungsfenster unter „granite/operations/maintenance“ gefunden.
    * Der Hotspot in einem interaktiven Dynamic Media-Bild ist nicht sichtbar, wenn Sie eine Vorschau des Assets mit dem Viewer für Banner mit Shopping-Funktion anzeigen.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]`: Zeitüberschreitung beim Warten darauf, dass die Registrierung geändert wird, um das Aufheben der Registrierung abzuschließen.
 
-* Ab AEM 6.5.15 weist die vom Bundle ```org.apache.servicemix.bundles.rhino``` bereitgestellte Rhino-JavaScript-Engine ein neues Hoisting-Verhalten auf. Skripte, die den strikten Modus (```use strict;```) ihre korrekten Variablen deklarieren. Andernfalls werden sie nicht ausgeführt und geben am Ende einen Laufzeitfehler zurück.
+* Ab AEM 6.5.15 weist die vom Bundle ```org.apache.servicemix.bundles.rhino``` bereitgestellte Rhino-JavaScript-Engine ein neues Hoisting-Verhalten auf. Skripte, die den Strict-Modus (```use strict;```) verwenden, müssen ihre korrekten Variablen deklarieren. Andernfalls werden sie nicht ausgeführt und geben am Ende einen Laufzeitfehler zurück.
 
-* Durch die Installation von Tags für zugehörige native Inhalte mithilfe eines offiziellen Aktualisierungspakets wird die Spracheigenschaft der `/content/cq:tags` -Knoten auf Standard umzustellen. Diese Aktion gilt für Service Packs, Security Service Packs, erweiterte Feature Packs, kumulative Feature Packs, Patches usw. Daher ist es erforderlich, sie vor der Installation aus den Eigenschaften hinzuzufügen.
+* Durch die Installation von Tagging-bezogenen, vorkonfigurierten Inhalten mithilfe eines offiziellen Aktualisierungspakets wird die Spracheigenschaft des Knotens `/content/cq:tags` auf den Standard zurückgesetzt. Diese Aktion gilt für Service Packs, Security Service Packs, Extended Feature Packs, Cumulative Feature Packs, Patches usw. Daher ist es erforderlich, sie vor der Installation aus den Eigenschaften hinzuzufügen.
 
-### Bekanntes Problem für AEM Sites {#known-issues-aem-sites-6521}
+### Bekannte Probleme bei AEM Sites {#known-issues-aem-sites-6521}
 
 * SITES-17934 – Inhaltsfragmente – Vorschau schlägt aufgrund des DoS-Schutzes für eine umfassende Fragment-Baumstruktur fehl. Siehe den [KB-Artikel zu den standardmäßigen GraphQL Query Executor-Konfigurationsoptionen](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-23945)
 
@@ -455,15 +455,15 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
 * In einem adaptiven Formular, das auf einer XDP mit eingebetteten Skripten auf Kontrollkästchen basiert, werden die Skripte für Elemente nach diesen Kontrollkästchen nicht ausgeführt. (FORMS-14244)
 * Benutzerinnen und Benutzer können keinen Korrespondenz-Management-Brief erstellen. Wenn eine Benutzerin oder ein Benutzer einen Brief erstellt, wird ein Fehler mit der Beschreibung „`Object Object`“ angezeigt und der Brief wird nicht erstellt. Miniaturansichten für Layouts können auch nicht auf dem Bildschirm zur Brieferstellung geladen werden. Sie können das [aktuelle AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) installieren, um das Problem zu beheben. (FORMS-13496)
-* Der Dienst für interaktive Kommunikation erstellt das PDF-Dokument, die Daten des Benutzers werden jedoch nicht automatisch in die Formularfelder eingefügt. Der Vorbefüllungsdienst funktioniert nicht wie erwartet. Sie können das [aktuelle AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) installieren, um das Problem zu beheben. (FORMS-13413, FORMS-13493)
-* Der Editor &quot;Überprüfen und Korrigieren&quot;(RnC) eines automated forms conversion-Dienstes kann nicht geladen werden. Sie können das [aktuelle AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) installieren, um das Problem zu beheben. (FORMS-13491)
+* Der Dienst für die interaktive Kommunikation erstellt das PDF-Dokument, die Benutzerdaten werden jedoch nicht automatisch in die Formularfelder eingefügt. Der Vorbefüllungsdienst funktioniert nicht wie erwartet. Sie können das [aktuelle AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) installieren, um das Problem zu beheben. (FORMS-13413, FORMS-13493)
+* Der Prüf- und Korrektur-Editor des Dienstes zur automatischen Formularkonvertierung kann nicht geladen werden. Sie können das [aktuelle AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) installieren, um das Problem zu beheben. (FORMS-13491)
 * Nach der Aktualisierung von AEM 6.5 Forms Service Pack 18 (6.5.18.0) oder AEM 6.5 Forms Service Pack 19 (6.5.19.0) auf AEM 6.5 Forms Service Pack 20 (6.5.20.0) tritt bei Benutzenden ein JSP-Kompilierungsfehler auf. Sie können keine adaptiven Formulare öffnen oder erstellen, und bei anderen AEM-Schnittstellen wie dem Seiteneditor, der AEM Forms-Benutzeroberfläche und dem AEM Workflow-Editor treten Fehler auf. Sie können das [aktuelle AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) installieren, um das Problem zu beheben. (FORMS-13492)
 * Zeilen im Datumsauswahl-Widget werden abgeschnitten, wenn im Popup-Widget für Felder mit Bearbeitungs-/Anzeigemuster Monate durchlaufen werden. (FORMS-13620)
 * Formulareinreichungen schlagen fehl, wenn versucht wird, den DoR-Service (Document of Record; Nachweis) im Backend zu verwenden. Die Fehlermeldung lautet: „Sendeaktion konnte nicht abgeschlossen werden, da die Formularressource nicht ordnungsgemäß zugewiesen ist“. (FORMS-13798)
 * Wenn ein adaptives Formular aus einer Adobe Experience Manager-Veröffentlichungsinstanz an einen Adobe Experience Manager-Workflow gesendet wird, können die Anlagen nicht vom Workflow gespeichert werden. (FORMS-14209)
-* Bei der Installation des AEM 6.5 Forms Service Pack 20-Pakets (AEM Forms Add-On-Paket für SP20) weist die AEM Sites-Benutzeroberfläche eine erhebliche Leistungsbeeinträchtigung auf. (FORMS-13791)
+* Bei der Installation des AEM 6.5 Forms Service Pack 20-Pakets (AEM Forms-Add-on-Paket für SP20) verschlechtert sich die Leistung der AEM Sites-Benutzeroberfläche erheblich. (FORMS-13791)
 * Der Vorbefüllungsdienst schlägt in interaktiven Kommunikationen mit einer NULL-Zeigerausnahme fehl. (CQDOC-21355)
-* Mit adaptiven Formularen können Sie benutzerdefinierte Funktionen mit ECMAScript Version 5 oder früher verwenden. Wenn eine benutzerdefinierte Funktion ECMAScript-Version 6 oder höher verwendet, z. B. `let`, `const`oder Pfeilfunktionen, wird der Regeleditor möglicherweise nicht ordnungsgemäß geöffnet.
+* Mit adaptiven Formularen können Sie benutzerdefinierte Funktionen mit ECMAScript Version 5 oder früher verwenden. Wenn eine benutzerdefinierte Funktion ECMAScript-Version 6 oder höher verwendet, z. B. `let`, `const` oder Pfeilfunktionen, wird der Regeleditor möglicherweise nicht ordnungsgemäß geöffnet.
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 
@@ -483,5 +483,5 @@ Diese Websites sind nur für Kunden verfügbar. Wenn Sie Kunde sind und Zugriff 
 >
 >* [[!DNL Experience Manager] Produktseite](https://business.adobe.com/de/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] Dokumentation zu 6.5](https://experienceleague.adobe.com/de/docs/experience-manager-65)
->* [Abonnieren von Adobe Priority-Produktupdates](https://www.adobe.com/subscription/priority-product-update.html)
+>* [Abonnieren von Adobe-Prioritäts-Produkt-Updates](https://www.adobe.com/subscription/priority-product-update.html)
 
