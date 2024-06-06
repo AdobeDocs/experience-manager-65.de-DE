@@ -1,6 +1,6 @@
 ---
-title: Erstellen einer vollständigen Website (JSP)
-description: In diesem Tutorial erfahren Sie, wie Sie mit Adobe Experience Manager (AEM) eine Website mit vollem Funktionsumfang erstellen.
+title: Erstellen von Websites mit vollem Funktionsumfang (JSP)
+description: In diesem Tutorial erfahren Sie, wie Sie mit Adobe Experience Manager (AEM) Websites mit vollem Funktionsumfang erstellen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -10,14 +10,14 @@ exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: ed7183efa57db6d97941e3acc99d126c2fc0f6c5
 workflow-type: tm+mt
 source-wordcount: '4919'
 ht-degree: 99%
 
 ---
 
-# Erstellen einer vollständigen Website (JSP){#create-a-fully-featured-website-jsp}
+# Erstellen von Websites mit vollem Funktionsumfang (JSP){#create-a-fully-featured-website-jsp}
 
 >[!NOTE]
 >
@@ -477,7 +477,7 @@ So fügen Sie topnav in Ihre Contentpage-Komponente ein:
 
 #### Verbessern von Seiten mit Untertiteln {#enhancing-pages-with-subtitles}
 
-Die Komponente „Seite“ definiert Eigenschaften, mit denen Sie Untertitel für Seiten bereitstellen können. Fügen Sie Untertitel hinzu, die Informationen zum Seiteninhalt bereitstellen.
+Die Seitenkomponente definiert Eigenschaften, mit denen Sie Beschriftungen für Seiten bereitstellen können. Fügen Sie Beschriftungen hinzu, die Informationen zum Seiteninhalt bereitstellen.
 
 1. Öffnen Sie in Ihrem Browser die Seite **Produkte**.
 1. Klicken Sie im Sidekick auf der Registerkarte **Seite** auf **Seiteneigenschaften**.
