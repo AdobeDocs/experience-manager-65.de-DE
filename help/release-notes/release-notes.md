@@ -5,10 +5,11 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 6bf2d6409a15be02a247fab84caa743e8542da13
-workflow-type: ht
-source-wordcount: '3032'
-ht-degree: 100%
+exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
+source-git-commit: 4035bfae6a525292ca71b182ebed2ac9839426b8
+workflow-type: tm+mt
+source-wordcount: '3050'
+ht-degree: 99%
 
 ---
 
@@ -219,6 +220,12 @@ Die Fehlerbehebungen in [!DNL Experience Manager] Forms werden eine Woche nach d
 
 * Im Vorlageneditor ist die Textzeichenfolge *`No video available.`* nicht lokalisiert. (SITES-13190)
 * Zeichenfolgen nach der Aktivierung oder Deaktivierung einer Person sind unter **Tools** > **Sicherheit** > **Benutzer** > *beliebiger_Benutzername* > **Aktivieren** > **OK** und bei Auswahl von *beliebiger_Benutzername* > **Deaktivieren** > **OK** nicht lokalisiert.  (NPR-41737)
+
+#### Oak {#foundation-oak-6521}
+
+* Behebung von Leistungsregressionen - Vermeiden Sie Bereichsabfragen bei ähnlichen Bedingungen. (OAK-9481)
+
+* Die neue Oak-Version ist 1.22.20.
 
 #### Platform{#foundation-platform-6521}
 
@@ -484,4 +491,3 @@ Diese Websites sind nur für Kunden verfügbar. Wenn Sie Kunde sind und Zugriff 
 >* [[!DNL Experience Manager] Produktseite](https://business.adobe.com/de/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] Dokumentation zu 6.5](https://experienceleague.adobe.com/de/docs/experience-manager-65)
 >* [Abonnieren von Adobe-Prioritäts-Produkt-Updates](https://www.adobe.com/subscription/priority-product-update.html)
-
