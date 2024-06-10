@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: ed7183efa57db6d97941e3acc99d126c2fc0f6c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4919'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -477,7 +477,7 @@ So fügen Sie topnav in Ihre Contentpage-Komponente ein:
 
 #### Verbessern von Seiten mit Untertiteln {#enhancing-pages-with-subtitles}
 
-Die Seitenkomponente definiert Eigenschaften, mit denen Sie Beschriftungen für Seiten bereitstellen können. Fügen Sie Beschriftungen hinzu, die Informationen zum Seiteninhalt bereitstellen.
+Die Seitenkomponente definiert Eigenschaften, mit denen Sie Untertitel für Seiten bereitstellen können. Fügen Sie Untertitel hinzu, die Informationen zum Seiteninhalt bieten.
 
 1. Öffnen Sie in Ihrem Browser die Seite **Produkte**.
 1. Klicken Sie im Sidekick auf der Registerkarte **Seite** auf **Seiteneigenschaften**.

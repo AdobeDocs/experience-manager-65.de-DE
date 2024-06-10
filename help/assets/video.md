@@ -12,9 +12,9 @@ role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: aeb243421ed2212625e85c3d5b76322e4c33f1d2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '11201'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -452,7 +452,7 @@ Wenn Sie einen Adobe-Support-Fall erstellen, um DASH für Ihr Konto zu aktiviere
 >
 >Alle Videos, die Sie *vor* Aktivierung der Unterstützung für mehrfache Untertitel und mehrere Audiospuren in Ihrem Dynamic Media-Konto hochgeladen haben, [müssen erneut verarbeitet werden](/help/assets/processing-profiles.md#reprocessing-assets). Dieser Schritt zur erneuten Verarbeitung des Videos ist erforderlich, damit für diese die Funktion für mehrfache Untertitel und Audiospuren verfügbar ist. Die Video-URLs funktionieren nach der erneuten Verarbeitung weiterhin und werden wie gewohnt wiedergegeben.
 
-**So aktivieren Sie DASH, Unterstützung für mehrere Untertitel und mehrere Audiospuren in Ihrem Dynamic Media-Konto:**
+**Aktivieren der Unterstützung für DASH sowie für mehrfache Untertitel und mehrere Audiospuren in Ihrem Dynamic Media-Konto:**
 
 <!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager 6.5, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
@@ -471,7 +471,7 @@ Wenn Sie einen Adobe-Support-Fall erstellen, um DASH für Ihr Konto zu aktiviere
 
    * Name des Hauptansprechpartners, E-Mail, Telefon.
    * Name Ihres Dynamic Media-Kontos.
-   * Geben Sie an, dass DASH, mehrere Beschriftungen und mehrere Audiospuren in Ihrem Dynamic Media-Konto in Experience Manager 6.5 aktiviert werden sollen.
+   * Geben Sie an, dass in Ihrem Dynamic Media-Konto in Experience Manager 6.5 die Unterstützung für DASH sowie für mehrfache Untertitel und mehrere Audiospuren aktiviert werden soll.
 
 1. Der Kunden-Support von Adobe nimmt Sie in der Reihenfolge der eingereichten Anfragen in die Warteliste auf.
 1. Wenn Ihre Anfrage bearbeitet werden kann, setzt sich der Kunden-Support mit Ihnen in Verbindung, um den Termin für die Aktivierung zu koordinieren und festzulegen.
@@ -656,7 +656,7 @@ Hinzugefügte Untertitel und Beschriftungen werden in den Formaten WebVTT und Ad
      | Dateiname | Der Standarddateiname wird aus dem Originaldateinamen abgeleitet. Der Dateiname kann nur beim Hochladen geändert werden und später nicht mehr. Die Zeichenanforderungen für Dateinamen entsprechen denen für AEM Assets.<br>Derselbe Dateiname kann nicht für zusätzliche Untertiteldateien und Audiospurdateien verwendet werden. |
      | Sprache | Wählen Sie die Sprache des Untertitels aus. |
      | Typ | Wählen Sie den Typ des verwendeten Untertitels aus.<br>**Untertitel**: Der im Video angezeigte Untertiteltext, der den Dialog übersetzt oder umschreibt.<br>**Beschriftung**: Der Text umfasst neben der Übersetzung oder Transkription des Dialogs auch Hintergrundgeräusche, Sprecherunterscheidung und andere relevante Informationen, wodurch der Inhalt für gehörlose oder schwerhörige Personen leichter zugänglich wird. |
-     | Bezeichnung | Der Text, der für den Namen des Untertitels in der Popup-Liste **[!UICONTROL Audio oder Beschriftung auswählen]** im Medien-Player angezeigt wird. Die Beschriftung ist das, was ein Kunde sieht, das einer Beschriftungsspur entspricht. Zum Beispiel: `English (CC)`. |
+     | Bezeichnung | Der Text, der für den Namen des Untertitels in der Popup-Liste **[!UICONTROL Audio oder Beschriftung auswählen]** im Medien-Player angezeigt wird. Das Label ist das, was Kundinnen und Kunden angezeigt wird, und entspricht einer Untertitelspur. Zum Beispiel: `English (CC)`. |
 
      Sie können Metadaten von Untertiteln später bei Bedarf ändern oder bearbeiten. Wenn das Video veröffentlicht wird, werden diese Details in öffentlichen URLs in veröffentlichten Videos angezeigt.
 
@@ -681,7 +681,7 @@ Hinzugefügte Untertitel und Beschriftungen werden in den Formaten WebVTT und Ad
    >Abhängig von den Caching-Einstellungen Ihrer Instanz kann es mehrere Minuten dauern, bis die verarbeiteten Metadaten in der Vorschau und in veröffentlichten URLs widergespiegelt werden.
 
 1. (Optional) Wenn Sie im vorherigen Schritt **[!UICONTROL Speichern und schließen]** statt **[!UICONTROL Speichern]** ausgewählt haben, können Sie dennoch den Verarbeitungsstatus der hochgeladenen Dateien anzeigen. Siehe [Anzeigen des Lebenszyklusstatus hochgeladener Untertitel- und Audiospurdateien](#lifecycle-status-video).
-1. (Optional) Zeigen Sie vor der Veröffentlichung eine Vorschau des Videos an, um sicherzustellen, dass Untertitel und Audio erwartungsgemäß funktionieren. Siehe [Vorschau eines Videos mit mehreren Untertiteln und Audiospuren anzeigen](#preview-video-audio-subtitle)
+1. (Optional) Zeigen Sie vor der Veröffentlichung eine Vorschau des Videos an, um sicherzustellen, dass Untertitel und Audio erwartungsgemäß funktionieren. Siehe [Anzeigen eines Videos mit mehrfachen Untertiteln und Audiospuren in einer Vorschau](#preview-video-audio-subtitle).
 1. Veröffentlichen Sie das Video. Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
 
 #### Grundlegendes zum Hinzufügen von Untertitel- und Audiospurdateien zu einem bereits veröffentlichten Video
@@ -762,9 +762,9 @@ Wählen Sie im Dialogfeld **Als Standard festlegen** die Option **[!UICONTROL Er
 1. Wählen Sie oben rechts die Option **[!UICONTROL Speichern und schließen]** aus.
 1. Veröffentlichen Sie das Video. Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
 
-### Vorschau eines Videos mit mehreren Untertiteln und Audiospuren anzeigen{#preview-video-audio-subtitle}
+### Anzeigen eines Videos mit mehrfachen Untertiteln und Audiospuren in einer Vorschau{#preview-video-audio-subtitle}
 
-Nachdem Untertiteldateien und Audiotrack-Dateien in ein Video hochgeladen und verarbeitet wurden, können Sie mit dem Dynamic Media-Video-Viewer (oder ggf. anderen Viewer-Typen) eine Vorschau aller verschiedenen Spuren anzeigen. Durch die Vorschau erfahren Sie, wie Ihr Video für Ihre Kundinnen und Kunden aussieht und klingt, und stellen sicher, dass es sich wie erwartet verhält.
+Wenn Untertitel- und Audiospurdateien für ein Video hochgeladen und verarbeitet wurden, können Sie mit dem Dynamic Media-Video-Viewer (oder ggf. anderen Viewer-Typen) alle verschiedenen Spuren in einer Vorschau anzeigen. Durch die Vorschau erfahren Sie, wie Ihr Video für Ihre Kundinnen und Kunden aussieht und klingt, und stellen sicher, dass es sich wie erwartet verhält.
 
 Wenn Sie mit dem Video zufrieden sind, können Sie es mit einer der folgenden Methoden [veröffentlichen](publishing-dynamicmedia-assets.md).
 
@@ -788,7 +788,7 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynam
 
    ![Auswahl des Video-Viewers aus der Dropdown-Liste „Viewer“](assets-dm/msma-dmviewerselected.png)
 
-1. Wählen Sie in der rechten unteren Ecke links neben dem Lautstärkesymbol das Sprechblasensymbol aus und wählen Sie dann denjenigen Audioinhalt bzw. Untertitel aus, den Sie hören und/oder sehen möchten. Bei Bedarf können Sie unter Beschriftungen die Option **[!UICONTROL Aus]** keine Beschriftungen anzuzeigen.
+1. Wählen Sie in der rechten unteren Ecke links neben dem Lautstärkesymbol das Sprechblasensymbol aus und wählen Sie dann denjenigen Audioinhalt bzw. Untertitel aus, den Sie hören und/oder sehen möchten. Bei Bedarf können Sie unter „Untertitel“ die Option **[!UICONTROL Aus]** auswählen, damit keine Untertitel angezeigt werden.
 
    ![Popup-Liste für Audio und Untertitel im Video-Viewer.](assets-dm/msma-selectaudiosubtitle.png)*Simulation einer Person, die Audio und Untertitel für die Videowiedergabe auswählt.*
 
@@ -849,7 +849,7 @@ Die ursprüngliche Audiospur, die aus einer primären Datei extrahiert wurde, ka
 
 
 
-## Hinzufügen geschlossener Untertitel zu einem Video {#adding-captions-to-video}
+## Hinzufügen von verdeckten Untertiteln zu Videos {#adding-captions-to-video}
 
 >[!IMPORTANT]
 >
@@ -869,7 +869,7 @@ Dynamic Media konvertiert Untertiteldateien in das JSON-Format (JavaScript Objec
 
 Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie unter [Statische Inhalte (keine Bilder) bereitstellen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html?lang=de#image-serving-api) in der *API-Hilfe für die Bereitstellung und das Rendern von Bildern in Dynamic Media*.
 
-**So fügen Sie einem Video geschlossene Untertitel hinzu:**
+**Hinzufügen von verdeckten Untertiteln zu einem Video:**
 
 1. Verwenden Sie ein Drittanbieterprogramm bzw. einen Service, um Ihre Untertiteldatei für ein Video zu erstellen.
 
@@ -877,7 +877,7 @@ Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie
 
    Siehe [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
 
-   Es gibt viele Websites, die sowohl kostenlose als auch Premium-Tools und -Dienste anbieten, die Sie verwenden können, um WebVTT-Untertiteldateien außerhalb von Dynamic Media zu erstellen. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
+   Auf zahlreichen Websites werden sowohl kostenlose als auch Premium-Tools und -Dienste angeboten, die Sie verwenden können, um WebVTT-Untertitel/Untertiteldateien außerhalb von Dynamic Media zu erstellen. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
    <!--[WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
@@ -889,7 +889,7 @@ Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie
 
    >[!NOTE]
    >
-   >Für globale Unterstützung von Videountertiteln in verschiedenen Sprachen ist zu beachten, dass der WebVTT-Standard separate .vtt-Dateien und Abrufe für jede Sprache benötigt, die Sie unterstützen möchten.
+   >Für eine globale Unterstützung von Videountertiteln in verschiedenen Sprachen ist zu beachten, dass der WebVTT-Standard für jede Sprache, die unterstützt werden soll, separate .vtt-Dateien und Aufrufe erfordert.
 
    Im Allgemeinen sollte die VTT-Untertiteldatei denselben Namen haben wie die Videodatei, an den jedoch ein Kürzel für die Sprache wie -EN, -FR oder -DE angehängt ist. Dies kann Ihnen helfen, die Generierung von Video-URLs mit Ihrem vorhandenen Web-Content-Management-System zu automatisieren.
 
