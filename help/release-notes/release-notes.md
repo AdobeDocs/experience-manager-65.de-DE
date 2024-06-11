@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 source-git-commit: 004cf5b30fa3bd108a45a8b6322f2ee3d3085ee5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3050'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -223,7 +223,7 @@ Die Fehlerbehebungen in [!DNL Experience Manager] Forms werden eine Woche nach d
 
 #### Oak {#foundation-oak-6521}
 
-* Behebung von Leistungsregressionen - Vermeiden Sie Bereichsabfragen bei ähnlichen Bedingungen. (OAK-9481)
+* Behebung von Performance-Regressionen: Vermeiden von Bereichsabfragen bei Like-Bedingungen. (OAK-9481)
 * Die neue Oak-Version ist 1.22.20.
 
 #### Platform{#foundation-platform-6521}
