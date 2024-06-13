@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 004cf5b30fa3bd108a45a8b6322f2ee3d3085ee5
+source-git-commit: 371d325287c9d3d11d154c3121f001dad3f3b986
 workflow-type: tm+mt
-source-wordcount: '3050'
-ht-degree: 100%
+source-wordcount: '3842'
+ht-degree: 69%
 
 ---
 
@@ -44,6 +44,16 @@ ht-degree: 100%
 Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enthalten sind:
 
 * Neue, benutzerfreundlichere Anmeldedaten für die Server-zu-Server-Authentifizierung, die den vorhandenen Anmeldedatentyp „Service-Konto (JWT)“ ersetzt. (NPR-41994)
+
+* Verbesserungen am Regeleditor in AEM Forms:
+   * Unterstützung für die Implementierung verschachtelter Bedingungen mit `When-then-else` Funktionalität.
+   * Überprüfen oder Zurücksetzen von Bedienfeldern und Formularen, einschließlich Feldern.
+   * Unterstützung für moderne JavaScript-Funktionen wie let- und pfeile Funktionen (ES10-Unterstützung) innerhalb der benutzerdefinierten Funktionen.
+* AutoTag-API für PDF-Barrierefreiheit: AEM Forms on OSGi unterstützt jetzt die neue AutoTag-API zur Verbesserung der PDF für Barrierefreiheitsstandards durch Hinzufügen von Tags: Absätzen und Listen. Dadurch werden PDF leichter zugänglich für Benutzer mit Hilfstechnologien.
+* 16-Bit-PNG-Unterstützung: Der ImageToPdf-Dienst von PDF Generator unterstützt jetzt die Konvertierung von PNGs mit einer 16-Bit-Farbtiefe.
+* Anwenden von Artefakten auf einzelne Textblöcke in XDP-Dateien: In Forms Designer wurde eine neue Funktion eingeführt, mit der Benutzer Einstellungen für einzelne Textblöcke in XDP-Dateien konfigurieren können, um die Elemente zu steuern, die in den resultierenden PDF wie Artefakte behandelt werden, wie Kopf- und Fußzeilen, damit sie für Hilfstechnologien zugänglich sind. Zu den Hauptfunktionen gehören das Markieren von Textbausteinen als Artefakte und das Einbetten dieser Einstellungen in die XDP-Metadaten. Der Forms Output-Dienst wendet diese Einstellungen während der PDF-Erstellung an und stellt dabei eine ordnungsgemäße PDF/UA-Tagging-Funktion sicher.
+* AEM Forms Designer ist zertifiziert für `GB18030:2022` Standard. Mit dieser Zertifizierung unterstützt jetzt Forms Designer chinesischen Unicode-Zeichensatz, der die Eingabe chinesischer Zeichen in alle bearbeitbaren Felder und Dialogfelder ermöglicht.
+
 
 ### [!DNL Assets]
 
@@ -121,7 +131,11 @@ Im Folgenden finden Sie eine Liste der in dieser Version enthaltenen Fehlerbeheb
 
 <!-- #### Launches{#sites-launches-6521} -->
 
+
+<!-- ### [!DNL Forms]-->
+
 <!-- DELETED MAY 22, 2024 FROM TOTAL RELEASE CANDIDATE ISSUES * The `sourceRootResource` configured in the Launch configuration within CRXDE Lite points to content that no longer exists, leading to a malfunction when attempts are made to delete launches. Delete launches even if the page is deleted or if the path is not the same. (SITES-20750) -->
+
 
 #### MSM – Live Copies{#sites-msm-live-copies-6521}
 
@@ -166,7 +180,54 @@ Im Folgenden finden Sie eine Liste der in dieser Version enthaltenen Fehlerbeheb
 
 ### [!DNL Forms]{#forms-6521}
 
-Die Fehlerbehebungen in [!DNL Experience Manager] Forms werden eine Woche nach dem geplanten Veröffentlichungsdatum des [!DNL Experience Manager] Service Packs über ein separates Add-on-Paket bereitgestellt. In diesem Fall ist die Paket-Version des AEM Forms-Add-Ons 6.5.21.0 für Donnerstag, den 13. Juni 2024 geplant. Nach der Veröffentlichung wird diesem Abschnitt eine Liste mit Forms-Fehlerbehebungen und -Verbesserungen hinzugefügt.
+#### [!DNL Adaptive Forms] {#forms-6520}
+
+* Wenn ein adaptives Formular aus einer Adobe Experience Manager-Veröffentlichungsinstanz an einen Adobe Experience Manager-Workflow gesendet wird, können die Anlagen nicht vom Workflow gespeichert werden. (FORMS-14209)
+* Wenn ein Benutzer in OSGi auf die Schaltfläche &quot;Auf PDF drucken&quot;in AEM Forms Service Pack 15 (6.5.15.0) klickt, schlägt die clientseitige Validierung fehl. Dies wird durch die Fehlermeldungen im Fenster der Developer Tools Console deutlich. (FORMS-14029)
+* Wenn ein Benutzer ein Formular AEM 6.5 Forms Service Pack 17 (6.5.17.0) oder AEM 6.5 Forms Service Pack 18 (6.5.18.0) oder AEM 6.5 Forms Service Pack 19 (6.5.19.0) sendet, funktioniert die Übersetzung von &quot;Vielen Dank&quot;-Nachrichten nicht ordnungsgemäß. Obwohl die Nachrichten korrekt im Wörterbuch übersetzt sind. (FORMS-13846)
+* Wenn ein Benutzer eine Vorschau eines Formulars mit einer Komponente für die Datumsauswahl anzeigt, wird das Feld für die Datumsauswahl mit den anderen Formularfeldern falsch ausgerichtet. (FORMS-13763)
+* Wenn ein Benutzer in der Umgebung von AEM Forms Service Pack 19 (6.5.19.0) die API aufruft, um Zahlen zu formatieren, werden die formatierten Zahlen nicht mit den entsprechenden Gebietsschemata abgestimmt und die Währungszeichen werden nicht korrekt angezeigt. Das Problem besteht unabhängig vom Gebietsschemaparameter, der auf &quot;de_DE&quot;oder &quot;en_US&quot;festgelegt ist. (FORMS-13759)
+* Wenn ein Benutzer in der Umgebung von AEM Forms Service Pack 19 (6.5.19.0) 16-Bit-PNGs mithilfe des Img2Pdf PDFG-Dienstes in PDF konvertiert, schlägt dies fehl und kann den Dienst &quot;Acrobat Image Conversion verwenden&quot;nicht nutzen. (FORMS-13754)
+* Wenn ein Benutzer in AEM Forms Service Pack 19 (6.5.19.1) eine vorhandene JobOptions-Datei im Bereich &quot;Dienste/PDF Generator/Adobe PDF-Einstellungen&quot;der Verwaltungswebschnittstelle von AEM Forms JEE (adminui) hochlädt, schlägt der Upload fehl und es wird eine Fehlermeldung angezeigt (FORMS-13597):
+  `"An error has occurred while processing your request. Please use the breadcrumb links to navigate to another page."`
+* Wenn ein Benutzer von AEM Forms Service Pack 15 (6.5.15.0) auf AEM Forms Service Pack (6.5.17.0) oder AEM Forms Service Pack (6.5.19.0) migriert, wird der FD-Schlüssel dupliziert, wodurch die Formulare nicht richtig übersetzt werden. (FORMS-13461)
+* Wenn ein Benutzer Dispatcher vor den Autoren stellt, die von der Bereitstellungstopologie auf AMS unterstützt werden, hängt/schlägt die Übermittlung der Aufgabe zuweisen fehl. (FORMS-8010)
+* Fehlerbehebungen zur Barrierefreiheit:
+   * Auf Symbole auf der Seite &quot;formsanddocuments&quot;kann jetzt gemäß dem ANDI-Standard zugegriffen werden. (FORMS-13094)
+   * Benutzer können über die Tastatur auf die Symbolleiste zugreifen, um Inhalte auf der Bearbeitungsseite zu speichern oder zu bearbeiten. Die Symbolleiste wird entsprechend dem ANDI-Standard erweitert. (FORMS-13102)
+   * Formularfelder vom Typ &quot;Erforderlich oder obligatorisch&quot;sind gemäß dem ANDI-Standard verfügbar. (FORMS-13097)
+
+* Wenn ein Benutzer versucht, ein Formular beim Laden der Seite anzuzeigen, schlägt die Wiedergabe fehl. (FORMS-13594)
+* Die Datumseingabe-Feldkomponente funktioniert im Internet Explorer-Kompatibilitätsmodus nicht ordnungsgemäß auf Microsoft Edge. (FORMS-13170)
+* Angehaltene E-Mail-Benachrichtigung mit Anhang konnte nicht gesendet werden, wenn die Fehlerbehebung für [additional-steps-to-use-email-with-attachments](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) auf dem Server ausgeführt wird. (FORMS-14227)
+* Wenn ein Benutzer in AEM Forms Workspace auf Service Pack 18 (6.5.18.0) Kommentare zu einem hochgeladenen Dokument sendet, führt dies dazu, dass die Dokumentdatei beschädigt wird. (FORMS-13735)
+* Wenn ein Benutzer in der Bearbeitungsoberfläche versucht, im Seitenbereich (durch Umschalten) der Asset-Registerkarte in der Bearbeitungsschnittstelle nach einem adaptiven Formular zu suchen, schlägt die Suche in AEM Forms Service Pack 18 (6.5.18.0) oder AEM Forms Service Pack 19 (6.5.19.0) oder AEM Forms Service Pack 20 (6.5.20.0) fehl. (FORMS-14117)
+* Wenn ein Benutzer ein Formular bearbeitet, das auf Deutsch erstellt und in Englisch übersetzt wurde, wird zwischen den Modi &quot;Vorschau&quot;und &quot;Bearbeiten&quot;eine inkonsistente Sprache angezeigt. Dadurch werden RadioButton- und Checkbox-Komponenten während des Bearbeitungsmodus auf Englisch angezeigt, während sie im Vorschaumodus korrekt auf Deutsch angezeigt werden. (FORMS-13910)
+* Prozessbereinigungs-Prozess-Tool schlägt mit dem Fehler fehl `NoClassDefFoundError: org/omg/CORBA/UserException`. (FORMS-13751)
+* Wenn ein Benutzer versucht, ein adaptives Formular (AF) in eine externe Webseite oder in AEM Sites einzubetten, indem er einen Einbettungs-Container verwendet, führt der Guide-Container für das adaptive Formular ein ARIA-BEZEICHNIS mit der Rolle=&quot;main&quot; für das eingebettete Formular ein. Gemäß den ARIA-Richtlinien sollte pro Seite nur ein role=&quot;main&quot; vorhanden sein. Wenn ein Benutzer daher für den Hauptinhalt seiner Seite eine weitere role=&quot;main&quot; hinzufügt, wird diese als Problem mit der Barrierefreiheit gekennzeichnet. (FORMS-13538)
+* Unter AEM Forms Service Pack 19 (6.5.19.0) behalten die Dropdown-Liste in einem adaptiven Formular bei Verwendung des Platzhaltertexts den Wert id=&quot;emptyValue&quot; bei. Wenn also ein Formular mehrere Dropdown-Komponenten enthält, hat jeder id=&quot;emptyValue&quot;, was gemäß den ARIA-Richtlinien nicht korrekt ist. (FORMS-13370).
+* Wenn ein Benutzer eine interaktive Kommunikation neu lädt, nachdem die Daten über XML gesendet wurden, tritt in der generierten PDF ein leerer Leerraum zwischen dem Textblock auf. (FORMS-13481)
+* IPH fehlt für den Bildschirm &quot;Schritt für die DSC-Bereitstellung vorbereiten&quot;, während ConfigurationManager ausgeführt wird. (FORMS-10699)
+* Wenn ein Benutzer ein neues Wörterbuch hinzufügt, um ein Formular mit vorhandenen Wörterbüchern zu übersetzen, werden die alten Übersetzungen ungültig. Es treten folgende Probleme auf: (FORMS-13576)
+   * Einige Felder können die übersetzten Daten nicht ausfüllen.
+   * Einige Felder werden nicht in die neue Sprache übersetzt, obwohl die Daten erfolgreich im Wörterbuch gespeichert wurden.
+
+#### [!DNL Forms Designer] {#forms-desgner-6520}
+
+* Wenn ein Benutzer mit AEM Forms Designer in der Umgebung von AEM Forms Service Pack 19 (6.5.19.0) eine neue Tabelle zu einem vorhandenen Formular hinzufügt, stürzt es ab. (LC-3921978)
+* Wenn ein Benutzer ein adaptives Formular in einer Linux-Umgebung rendert, entsteht ein zusätzlicher Abstand zwischen den Feldkomponenten. (LC-3921957)
+* Wenn ein Benutzer mithilfe des Output-Dienstes eine XTG-Datei in das PostScript-Format konvertiert, schlägt der Fehler fehl:           `(AEM_OUT_001_003:Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE)`. (LC-3921720)
+
+  Um das Problem zu beheben: Überprüfen Sie, ob die Daten Sonderzeichen wie &quot;Zero Width Space&quot;(0x200b) enthalten. Wenn ja, verwenden Sie das Flag, indem Sie das Tag hinzufügen `<behaviorOverride>patch-LC3921720:1</behaviorOverride>` in der XCI-Datei, wie in [custom_xfa.xci](/help/forms/using/assets/custom_xfa.xci) -Datei.
+
+* Bei Verwendung von AEM Forms Service Pack 18 (6.5.18.0) in einer Linux-Umgebung stürzt XMLFM auf CPUs ab, die keine AVX/AVX2-Anweisungen mit AMD-Prozessoren unterstützen. (LC-3921718)
+* Wenn ein Benutzer mithilfe des Forms Output-Dienstes eine PDF aus XDP erstellt, kann der Benutzer &quot;Einstellungen&quot;für &quot;einzelne Textblöcke&quot;in der XDP nicht konfigurieren, um zu steuern, was &quot;künstlich&quot;ist. (LC-3921954)
+
+<!--
+Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.21.0 Forms add-on package release is scheduled for Thursday, June 13, 2024. A list of Forms fixes and enhancements is added to this section post the release.
+
+-->
+
 
 <!-- #### [!DNL Adaptive Forms]
 
@@ -181,12 +242,12 @@ Die Fehlerbehebungen in [!DNL Experience Manager] Forms werden eine Woche nach d
 
 #### Apache Felix {#foundation-apachefelix-6521}
 
+
 * Upgrade-Problem bei AEM 6.5 Service Pack 19 (SP19), bei dem der Kontextstammpfad des Anwendungs-Servers für nicht autorisierte Anfragen an Apache Felix nach der Installation von SP19 fehlt. Aktualisieren Sie auf Apache Felix Web Management Console 4.9.8. (NPR-41933)
 
 #### Campaign{#foundation-campaign-6521}
 
 * AEM 6.5 Service Pack 15 erzeugt kontinuierliche Fehlerprotokolle mit signifikanten Einträgen. Die folgenden Probleme wurden gemeldet:
-
    * „404 INFO“-Fehler wegen fehlender Ressource im Pfad `/libs/granite/ui/content/shell/start.html`
    * Fehlerprotokolleintrag für eine nicht abgefangene SlingException aufgrund von `NullPointerException` bei `CampaignsDataSourceServlet.java:147`
 
@@ -199,6 +260,7 @@ Die Fehlerbehebungen in [!DNL Experience Manager] Forms werden eine Woche nach d
 <!-- #### Communities {#foundation-communities-6521}
 
 * U -->
+
 
 <!-- #### Content distribution{#foundation-content-distribution-6521}
 
@@ -457,19 +519,24 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
 * SITES-17934 – Inhaltsfragmente – Vorschau schlägt aufgrund des DoS-Schutzes für eine umfassende Fragment-Baumstruktur fehl. Siehe den [KB-Artikel zu den standardmäßigen GraphQL Query Executor-Konfigurationsoptionen](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-23945)
 
+<!--
+
+### Known issues for AEM Forms {#known-issues-aem-forms-6521}
+-->
+
 ### Bekannte Probleme bei AEM Forms {#known-issues-aem-forms-6521}
 
-* In einem adaptiven Formular, das auf einer XDP mit eingebetteten Skripten auf Kontrollkästchen basiert, werden die Skripte für Elemente nach diesen Kontrollkästchen nicht ausgeführt. (FORMS-14244)
-* Benutzerinnen und Benutzer können keinen Korrespondenz-Management-Brief erstellen. Wenn eine Benutzerin oder ein Benutzer einen Brief erstellt, wird ein Fehler mit der Beschreibung „`Object Object`“ angezeigt und der Brief wird nicht erstellt. Miniaturansichten für Layouts können auch nicht auf dem Bildschirm zur Brieferstellung geladen werden. Sie können das [aktuelle AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) installieren, um das Problem zu beheben. (FORMS-13496)
-* Der Dienst für die interaktive Kommunikation erstellt das PDF-Dokument, die Benutzerdaten werden jedoch nicht automatisch in die Formularfelder eingefügt. Der Vorbefüllungsdienst funktioniert nicht wie erwartet. Sie können das [aktuelle AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) installieren, um das Problem zu beheben. (FORMS-13413, FORMS-13493)
-* Der Prüf- und Korrektur-Editor des Dienstes zur automatischen Formularkonvertierung kann nicht geladen werden. Sie können das [aktuelle AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) installieren, um das Problem zu beheben. (FORMS-13491)
-* Nach der Aktualisierung von AEM 6.5 Forms Service Pack 18 (6.5.18.0) oder AEM 6.5 Forms Service Pack 19 (6.5.19.0) auf AEM 6.5 Forms Service Pack 20 (6.5.20.0) tritt bei Benutzenden ein JSP-Kompilierungsfehler auf. Sie können keine adaptiven Formulare öffnen oder erstellen, und bei anderen AEM-Schnittstellen wie dem Seiteneditor, der AEM Forms-Benutzeroberfläche und dem AEM Workflow-Editor treten Fehler auf. Sie können das [aktuelle AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) installieren, um das Problem zu beheben. (FORMS-13492)
-* Zeilen im Datumsauswahl-Widget werden abgeschnitten, wenn im Popup-Widget für Felder mit Bearbeitungs-/Anzeigemuster Monate durchlaufen werden. (FORMS-13620)
-* Formulareinreichungen schlagen fehl, wenn versucht wird, den DoR-Service (Document of Record; Nachweis) im Backend zu verwenden. Die Fehlermeldung lautet: „Sendeaktion konnte nicht abgeschlossen werden, da die Formularressource nicht ordnungsgemäß zugewiesen ist“. (FORMS-13798)
-* Wenn ein adaptives Formular aus einer Adobe Experience Manager-Veröffentlichungsinstanz an einen Adobe Experience Manager-Workflow gesendet wird, können die Anlagen nicht vom Workflow gespeichert werden. (FORMS-14209)
-* Bei der Installation des AEM 6.5 Forms Service Pack 20-Pakets (AEM Forms-Add-on-Paket für SP20) verschlechtert sich die Leistung der AEM Sites-Benutzeroberfläche erheblich. (FORMS-13791)
-* Der Vorbefüllungsdienst schlägt in interaktiven Kommunikationen mit einer NULL-Zeigerausnahme fehl. (CQDOC-21355)
-* Mit adaptiven Formularen können Sie benutzerdefinierte Funktionen mit ECMAScript Version 5 oder früher verwenden. Wenn eine benutzerdefinierte Funktion ECMAScript-Version 6 oder höher verwendet, z. B. `let`, `const` oder Pfeilfunktionen, wird der Regeleditor möglicherweise nicht ordnungsgemäß geöffnet.
+
+* Nach der Installation von AEM Forms JEE Service Pack 21 (6.5.21.0), wenn Sie doppelte Einträge von Geode JARs finden `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` unter `<AEM_Forms_Installation>/lib/caching/lib` Ordner (FORMS-14926).
+
+  Führen Sie zur Behebung dieses Problems folgende Schritte durch:
+
+   1. Beenden Sie die Locators und den Server in der angegebenen Reihenfolge, wenn sie ausgeführt werden.
+   1. Installieren Sie den Patch erneut, indem Sie das Patch-Installationsprogramm im Administratormodus ausführen (Wichtig).
+   1. Bestätigen Sie, dass nur die Geode-JARs mit `version 1.15.1.2` vorhanden sind.
+
+  >[!NOTE]
+  > Es ist keine Aktion erforderlich, wenn nur die Geode-jars mit `version 1.15.1.2` vorhanden sind.
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 

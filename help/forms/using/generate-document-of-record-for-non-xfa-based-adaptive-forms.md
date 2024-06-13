@@ -1,18 +1,17 @@
 ---
 title: Generieren eines Datensatzdokuments für adaptive Formulare
-description: In diesem Artikel erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument (Document of Record, DoR) für adaptive Formulare erstellen können.
+description: Erklärt, wie Sie Datensatzdokument (DoR) für adaptive Formulare generieren können.
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
-exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
-source-wordcount: '4256'
-ht-degree: 100%
+source-git-commit: f8013aeedb79f900158df2291f7f641353bb4c05
+workflow-type: tm+mt
+source-wordcount: '4308'
+ht-degree: 95%
 
 ---
 
@@ -313,47 +312,52 @@ Für die Lokalisierung der Branding-Informationen, die Sie auf der Registerkarte
 1. Wählen Sie ![dortab](/help/forms/using/assets/dortab.png) aus. Die Registerkarte „Datensatzdokument“ wird angezeigt.
 1. Wählen Sie entweder die Standardvorlage oder eine benutzerdefinierte Vorlage aus, um das Datensatzdokument zu rendern. Wenn Sie die Standardvorlage auswählen, wird eine Miniaturvorschau des Datensatzdokuments unterhalb der Dropdown-Liste „Vorlage“ angezeigt.
 
-   ![brandingtemplate](/help/forms/using/assets/brandingtemplate.png)
+   ![brandingtemplate](/help/forms/using/assets/brandingtemplateupdate.png)
 
    Wenn Sie sich für eine benutzerdefinierte Vorlage entscheiden, navigieren zu einer XDP-Datei auf Ihrem AEM Forms-Server und wählen Sie sie aus. Wenn Sie eine Vorlage verwenden möchten, die sich noch nicht auf Ihrem AEM Forms-Server befindet, müssen Sie die XDP-Datei zuerst auf Ihren AEM Forms-Server hochladen.
 
-1. Abhängig davon, ob Sie eine standardmäßige oder benutzerdefinierte Vorlage auswählen, werden einige oder alle der folgenden Eigenschaften auf der Registerkarte „Datensatzdokument“ angezeigt. Legen Sie die folgenden entsprechend fest:
+### Eigenschaften der Masterseite (#master-page-properties)
 
-   * **Logo-Bild:** Sie können entweder das Logo-Bild des adaptiven Formulars verwenden, eines in DAM auswählen oder eines von Ihrem Computer hochladen.
-   * **Formulartitel**
-   * **Kopfzeilentext**
-   * **Haftungsausschluss-Bezeichnung**
-   * **Haftungsausschluss**
-   * **Text des Haftungsausschlusses**
-   * **Akzentfarbe:** Die Farbe, in der Kopfzeilentext und Trennlinien im PDF des aufzuzeichnenden Dokuments dargestellt werden.
-   * **Schriftfamilie:** Schriftfamilie des Textes im Datensatzdokument-PDF. 
-   * **Für Kontrollkästchen und Optionsschaltflächenkomponenten nur ausgewählte Werte einblenden**
-   * **Trennzeichen für mehrere ausgewählte Werte**
-   * **Formularobjekte, die nicht mit dem Datenmodell verbunden sind, einschließen**
-   * **Ausgeblendete Felder vom Datensatzdokument ausschließen**
-   * **Beschreibung von Bereichen ausblenden**
+Je nachdem, ob Sie eine Standard- oder eine benutzerdefinierte Vorlage auswählen, werden auf der Registerkarte &quot;Datensatzdokument&quot;einige oder alle der folgenden Eigenschaften der Masterseite angezeigt, wie in der Abbildung oben dargestellt. Legen Sie die folgenden entsprechend fest:
 
-   Wenn die von Ihnen ausgewählte benutzerdefinierte XDP-Vorlage mehrere Masterseiten enthält, werden die Eigenschaften für diese Seiten im Abschnitt **[!UICONTROL Inhalt]** auf der Registerkarte **[!UICONTROL Datensatzdokument]** angezeigt.
+* **Logo-Bild:** Sie können entweder das Logo-Bild des adaptiven Formulars verwenden, eines in DAM auswählen oder eines von Ihrem Computer hochladen.
+* **Formulartitel**
+* **Kopfzeilentext**
+* **Haftungsausschluss-Bezeichnung**
+* **Haftungsausschluss**
+* **Text des Haftungsausschlusses**
 
-   ![Eigenschaften primäre seite ](assets/master-page-properties.png)
+  <!--
+    * **Accent Color**: The color in which header text and separator lines are rendered in the document or record PDF
+    * **Font Family**: Font family of the text in the document of record PDF
+    * **For Check Box and Radio Button components, show only the selected values**
+    * **Separator for multiple selected value(s)**
+    * **Include form objects that are not bound to data model**
+    * **Exclude hidden fields from the document of record**
+    * **Hide description of panels**
+    -->
 
-   Die Eigenschaften der Masterseiten umfassen Logobild, Kopfzeilentext, Formulartitel, Haftungsausschlussüberschrift und Haftungsausschlusstext. Sie können Eigenschaften für adaptive Formulare oder XDP-Vorlagen auf das Datensatzdokument anwenden. AEM Forms wendet standardmäßig die Vorlageneigenschaften auf das Datensatzdokument an. Sie können auch benutzerdefinierte Werte für die Eigenschaften der Masterseiten definieren. Informationen zum Anwenden mehrerer Masterseiten in einem Datensatzdokument finden Sie unter [Anwenden mehrerer Masterseiten in einem Datensatzdokument](#apply-multiple-master-pages-dor).
+  Wenn die von Ihnen ausgewählte benutzerdefinierte XDP-Vorlage mehrere Masterseiten enthält, werden die Eigenschaften für diese Seiten im Abschnitt **[!UICONTROL Inhalt]** auf der Registerkarte **[!UICONTROL Datensatzdokument]** angezeigt.
 
-   >[!NOTE]
-   >
-   >Wenn Sie eine Vorlage für ein adaptives Formular verwenden, die mit einer Version von Designer vor 6.3 erstellt wurde, müssen Sie sicherstellen, dass im Root-Unterformular der Vorlage für das adaptive Formular folgendes vorhanden ist, damit Akzentfarbe und Schriftfamilie funktionieren:
+  ![Eigenschaften primäre seite ](assets/master-page-properties.png)
 
-   ```xml
-   <proto>
-   <font typeface="Arial"/>
-   <fill>
-   <color value="4,166,203"/>
-   </fill>
-   <edge>
-   <color value="4,166,203"/>
-   </edge>
-   </proto>
-   ```
+  Die Eigenschaften der Masterseiten umfassen Logobild, Kopfzeilentext, Formulartitel, Haftungsausschlussüberschrift und Haftungsausschlusstext. Sie können Eigenschaften für adaptive Formulare oder XDP-Vorlagen auf das Datensatzdokument anwenden. AEM Forms wendet standardmäßig die Vorlageneigenschaften auf das Datensatzdokument an. Sie können auch benutzerdefinierte Werte für die Eigenschaften der Masterseiten definieren. Informationen zum Anwenden mehrerer Masterseiten in einem Datensatzdokument finden Sie unter [Anwenden mehrerer Masterseiten in einem Datensatzdokument](#apply-multiple-master-pages-dor).
+
+  >[!NOTE]
+  >
+  >Wenn Sie eine Vorlage für ein adaptives Formular verwenden, die mit einer Version von Designer vor 6.3 erstellt wurde, müssen Sie sicherstellen, dass im Root-Unterformular der Vorlage für das adaptive Formular folgendes vorhanden ist, damit Akzentfarbe und Schriftfamilie funktionieren:
+
+  ```xml
+  <proto>
+  <font typeface="Arial"/>
+  <fill>
+  <color value="4,166,203"/>
+  </fill>
+  <edge>
+  <color value="4,166,203"/>
+  </edge>
+  </proto>
+  ```
 
 1. Wählen Sie „Fertig“ aus, um die Branding-Änderungen zu speichern.
 
@@ -411,8 +415,23 @@ Informationen zum Anwenden von Seitenumbrüchen und zum Anwenden mehrerer Master
 
 **Einstellungen auf Formularebene**
 
-* **Ungebundene Felder in DoR einbeziehen:** Durch Festlegen dieser Eigenschaft werden ungebundenen Felder aus dem Schema-basierten adaptiven Formular im Datensatzdokument berücksichtigt. Diese Option ist standardmäßig aktiviert.
-* **Felder aus DoR ausschließen, falls ausgeblendet**: Legen Sie die Eigenschaft fest, um beim Senden des Formulars die ausgeblendeten Felder vom [!UICONTROL Datensatzdokument] auszuschließen. Wenn Sie [Auf dem Server erneut überprüfen](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) aktivieren, berechnet der Server die ausgeblendeten Felder neu, bevor er diese Felder aus dem [!UICONTROL Datensatzdokument] ausschließt.
+* **[!UICONTROL GRUNDLAGE]**
+   * **Vorlage:** Sie können die Vorlage Standard oder Benutzerdefiniert auswählen.
+     ![Alternativtext](image.png)
+   * **Akzentfarbe:** Sie können die Vorlagenfarbe der [!UICONTROL Datensatzdokument].
+   * **Schriftfamilie:** Wählen Sie Schrifttyp für die [!UICONTROL Datensatzdokument] Texte.
+   * **Ungebundene Felder in DoR einschließen:** Durch Festlegen der Eigenschaft werden ungebundene Felder aus dem Schema-basierten adaptiven Formular in eingeschlossen. [!UICONTROL Datensatzdokument]. Diese Option ist standardmäßig aktiviert.
+   * **Felder aus DoR ausschließen, falls ausgeblendet**: Legen Sie die Eigenschaft fest, um beim Senden des Formulars die ausgeblendeten Felder vom [!UICONTROL Datensatzdokument] auszuschließen. Wenn Sie [Auf dem Server erneut überprüfen](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)berechnet der Server die ausgeblendeten Felder neu, bevor diese Felder aus dem [!UICONTROL Datensatzdokument]
+* **[!UICONTROL EIGENSCHAFTEN FÜR FORMULARFELDER]**
+   * Wenn Sie die Option auswählen **Für Kontrollkästchen- und Optionsfeld-Komponente nur die ausgewählten Werte anzeigen**, wird die DoR-Ausgabe nur mit ausgewählten Werten generiert.
+   * Sie können Trennzeichen für mehrere ausgewählte Werte auswählen oder einen anderen Trennzeichentyp wählen.
+   * Ausrichtung der Optionen
+      * Vertikal
+      * Horizontal
+      * Gleich wie adaptives Formular
+     >[!NOTE]
+     > Die vertikale und horizontale Ausrichtung gilt nur für Optionsfelder und Kontrollkästchen
+* **[!UICONTROL MASTERSEITENEIGENSCHAFTEN]** Weitere Informationen finden Sie unter [Eigenschaften der Masterseite](#master-page-properties-master-page-properties)
 
 ## Anwenden eines Seitenumbruchs in einem Datensatzdokument {#apply-page-breaks-in-dor}
 

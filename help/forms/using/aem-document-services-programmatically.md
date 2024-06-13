@@ -1,17 +1,16 @@
 ---
 title: Programmgesteuerte Verwendung der AEM-Dokumentendienste
-description: Erfahren Sie, wie Sie Dokumentendienste-APIs zum digitalen Signieren, Verschlüsseln und Generieren von PDF-Dokumenten verwenden können.
+description: Erfahren Sie, wie Sie Document Services-APIs zum digitalen Signieren, Verschlüsseln, Taggen und Generieren von PDF-Dokumenten verwenden.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 feature: Document Services
-exl-id: f2e4f509-cca2-44a3-9231-e1954b0fefe3
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
-source-wordcount: '6346'
-ht-degree: 100%
+source-git-commit: 341ad5a1f8c0e0cde95c97871da889c17868ef9b
+workflow-type: tm+mt
+source-wordcount: '6409'
+ht-degree: 98%
 
 ---
 
@@ -5056,5 +5055,115 @@ File createPDF(File inputFile, String inputFilename, String pdfSettings, String 
    xmpDoc = null;
   }
  }
+}
+```
+
+### Doc Utility Services {#doc-utility-services}
+
+<!-- Document utilities with synchronous APIs help you <!--convert documents from PDF to XDP file format, Clone a PDF, Retrieve PDF properties (Redact), Multiclone PDF, Sanitise PDF for retrieving uninteneded hidden information, and tag PDF documents with lists and paragraphs. Details of each APIs are given below: -->
+
+#### Auto-Tag-PDF-Dokumente {#auto-tag-api}
+
+Die Auto-Tag-PDF-API hilft, ein PDF-Dokument durch Hinzufügen von Tags zugänglich zu machen. Sie unterstützt das Tagging von Textblöcken (Absätzen) und Aufzählungslisten in einem Operator.
+
+![PDF-Dokument mit automatischem Tagging](assets/auto-tag-api.png)
+
+**Syntax**: `tag(Document inDoc)`
+
+**Eingabeparameter**
+
+<table>
+ <tbody>
+  <tr>
+   <th>Parameter</th>
+   <th>Beschreibung</th>
+  </tr>
+  <tr>
+   <td><code>inDoc</code><br /> </td>
+   <td>Dokumentobjekt, das PDF enthält.<br /> </td>
+  </tr>
+ </tbody>
+</table>
+
+Der folgende Java-Code markiert das PDF-Dokument mit Listen und Absätzen.
+
+```java
+/*************************************************************************
+ *
+ * ADOBE CONFIDENTIAL
+ * ___________________
+ *
+ * Copyright 2014 Adobe Systems Incorporated
+ * All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ **************************************************************************/
+package com.adobe.fd.pdfutility.services.impl;
+import com.adobe.aem.transaction.core.ITransactionRecorder;
+import com.adobe.aemfd.docmanager.Document;
+import com.adobe.fd.jbig2.wrapper.api.JBIG2Wrapper;
+import com.adobe.fd.pdfutility.services.PDFUtilityService;
+import com.adobe.fd.pdfutility.services.client.*;
+import com.adobe.internal.pdftoolkit.core.exceptions.PDFIOException;
+import com.adobe.internal.pdftoolkit.core.exceptions.PDFInvalidDocumentException;
+import com.adobe.internal.pdftoolkit.core.exceptions.PDFSecurityException;
+import com.adobe.internal.pdftoolkit.pdf.document.*;
+import com.adobe.internal.pdftoolkit.services.pdftagging.structlib.StructLib;
+import com.adobe.internal.pdfutil.util.IOUtils;
+import com.adobe.internal.pdfutil.util.JBIG2CustomFilter;
+import com.day.cq.dam.handler.gibson.fontmanager.FontManagerService;
+import org.apache.felix.scr.annotations.Component;
+import org.apache.felix.scr.annotations.Reference;
+import org.apache.felix.scr.annotations.Service;
+import org.osgi.service.component.ComponentContext;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import java.io.IOException;
+import java.util.List;
+
+/**
+ * The following Java code example is used to tag the PDF document with lists and paragraphs.
+ */
+
+public PDFDocument tag(final Document inDoc) throws PDFUtilityException {
+        if (LOGGER.isTraceEnabled()) {
+            LOGGER.trace(pdfUtilService, "tag");
+}
+        if (inDoc == null) {
+            LOGGER.info(PDFUtilityMsgSet.UTL_S00_001_MISSING_DOCUMENT);
+            throw new PDFUtilityException(PDFUtilityMsgSet.getMessage(PDFUtilityMsgSet.UTL_S00_001_MISSING_DOCUMENT, null));
+}
+PDFDocument outDoc;
+        try {
+PDFOpenOptions openOptions = PDFOpenOptions.newInstance();
+            openOptions.setFontSet(fontManagerService.getPdfFontSet());
+            outDoc = IOUtils.toPDFDocument(inDoc, openOptions);
+StructLib.AutoTagDoc(outDoc);
+            LOGGER.info("Successfully tagged the PDF document.");
+} catch (PDFSecurityException e) {
+            LOGGER.error(PDFUtilityMsgSet.UTL_S00_015_PDF_SECURITY_ERROR);
+            throw new PDFUtilityException(PDFUtilityMsgSet.getMessage(PDFUtilityMsgSet.UTL_S00_015_PDF_SECURITY_ERROR, null), e);
+} catch (PDFIOException e) {
+            LOGGER.error(PDFUtilityMsgSet.UTL_S00_011_PDF_IO_ERROR);
+            throw new PDFUtilityException(PDFUtilityMsgSet.getMessage(PDFUtilityMsgSet.UTL_S00_011_PDF_IO_ERROR, null), e);
+} catch (PDFInvalidDocumentException e) {
+            LOGGER.info(PDFUtilityMsgSet.UTL_S00_003_INVALID_PDF_DOCUMENT);
+            throw new PDFUtilityException(PDFUtilityMsgSet.getMessage(PDFUtilityMsgSet.UTL_S00_003_INVALID_PDF_DOCUMENT, null), e);
+} catch (IOException e) {
+            LOGGER.error(PDFUtilityMsgSet.UTL_S00_016_PDF_GENERAL_ERROR);
+            throw new PDFUtilityException(PDFUtilityMsgSet.getMessage(PDFUtilityMsgSet.UTL_S00_016_PDF_GENERAL_ERROR, null), e);
+} finally {
+            if (LOGGER.isTraceEnabled()) {
+                LOGGER.trace(pdfUtilService, "tag");
+}
+}
+        return outDoc;
 }
 ```
