@@ -7,9 +7,9 @@ user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Mana
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
 source-git-commit: bd661b0a73046e7ccfb07a430983857f753ed442
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7421'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -622,7 +622,7 @@ ht-degree: 99%
       + [Erstellen von Designs für auf Kernkomponenten basierende adaptive Formulare](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
       + [Erstellen und Verwenden einer benutzerdefinierten Funktion in einem adaptiven Formular](/help/forms/using/create-and-use-custom-functions.md)
       + [Regeleditor](/help/forms/using/rule-editor-core-components.md)
-      + [Erstellen und Verwenden benutzerdefinierter Funktionen in Kernkomponenten adaptiver Formulare](/help/forms/using/create-and-use-custom-functions-core-components.md)
+      + [Erstellen und Verwenden einer benutzerdefinierten Funktion in Kernkomponenten für adaptive Formulare](/help/forms/using/create-and-use-custom-functions-core-components.md)
       + [Erstellen und Verwenden von benutzerdefinierten Fehler-Handlern für auf Kernkomponenten basierende adaptive Formulare](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
    + Adaptiv Forms- einfaches Authoring {#adaptive-forms-basic-authoring}
       + [Best Practices für die Arbeit mit adaptiven Formularen](/help/forms/using/adaptive-forms-best-practices.md)
@@ -664,7 +664,7 @@ ht-degree: 99%
       + [Erstellen eines adaptiven Formulars mit einem Satz adaptiver Formulare](/help/forms/using/create-adaptive-form-using-adaptive-form-set.md)
       + [Adaptive Formularvorlagen](/help/forms/using/template-editor.md)
       + [Adaptive Formularausdrücke](/help/forms/using/adaptive-form-expressions.md)
-      + [Generierung eines Datensatzdokuments für adaptive Formulare](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+      + [Generierung eines Nachweises für adaptive Formulare](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
       + [Verbessern der Performance umfangreicher Formulare durch verzögertes Laden ](/help/forms/using/lazy-loading-adaptive-forms.md)
       + [Vorbefüllen von Feldern in adaptiven Formularen](/help/forms/using/prepopulate-adaptive-form-fields.md)
       + [Verwenden von SOM-Ausdrücken in adaptiven Formularen](/help/forms/using/using-som-expressions-adaptive-forms.md)

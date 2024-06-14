@@ -1,6 +1,6 @@
 ---
 title: Programmgesteuerte Verwendung der AEM-Dokumentendienste
-description: Erfahren Sie, wie Sie Document Services-APIs zum digitalen Signieren, Verschlüsseln, Taggen und Generieren von PDF-Dokumenten verwenden.
+description: Erfahren Sie, wie Sie Dokumentendienste-APIs zum digitalen Signieren, Verschlüsseln, Taggen und Generieren von PDF-Dokumenten verwenden können.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
@@ -8,9 +8,9 @@ feature: Document Services
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 341ad5a1f8c0e0cde95c97871da889c17868ef9b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6409'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -5058,11 +5058,11 @@ File createPDF(File inputFile, String inputFilename, String pdfSettings, String 
 }
 ```
 
-### Doc Utility Services {#doc-utility-services}
+### Dokument-Dienstprogrammdienste {#doc-utility-services}
 
 <!-- Document utilities with synchronous APIs help you <!--convert documents from PDF to XDP file format, Clone a PDF, Retrieve PDF properties (Redact), Multiclone PDF, Sanitise PDF for retrieving uninteneded hidden information, and tag PDF documents with lists and paragraphs. Details of each APIs are given below: -->
 
-#### Auto-Tag-PDF-Dokumente {#auto-tag-api}
+#### Automatisches Taggen von PDF-Dokumenten {#auto-tag-api}
 
 Die Auto-Tag-PDF-API hilft, ein PDF-Dokument durch Hinzufügen von Tags zugänglich zu machen. Sie unterstützt das Tagging von Textblöcken (Absätzen) und Aufzählungslisten in einem Operator.
 

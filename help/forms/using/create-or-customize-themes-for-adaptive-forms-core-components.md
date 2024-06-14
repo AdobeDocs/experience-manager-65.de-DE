@@ -10,9 +10,9 @@ feature: Adaptive Forms, Core Components
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: aa8f8ea6ec3787cd1de76a72fe05f0993c2d6b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1939'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -36,9 +36,9 @@ Die AEM 6.5-Umgebung bietet die folgenden aufgelisteten Designs für auf Kernkom
 * [Design „WKND“](https://github.com/adobe/aem-forms-theme-wknd)
 * [Design „EASEL“](https://github.com/adobe/aem-forms-theme-easel)
 * [FSI-Design](https://github.com/adobe/aem-forms-theme-fsi)
-* [Gesundheitswesen](https://github.com/adobe/aem-forms-theme-healthcare)
-* [Öffentliches Thema](https://github.com/adobe/aem-forms-theme-public)
-* [Fertigungsdesign](https://github.com/adobe/aem-forms-theme-manufacturing)
+* [Design „Healthcare“](https://github.com/adobe/aem-forms-theme-healthcare)
+* [Design „Public“](https://github.com/adobe/aem-forms-theme-public)
+* [Design „Manufacturing“](https://github.com/adobe/aem-forms-theme-manufacturing)
 
 ## Grundlegendes zur Struktur der Designs {#understanding-structure-of-theme}
 
@@ -61,8 +61,8 @@ AEM Forms 6.5 bietet die folgenden aufgelisteten Designs für Kernkomponenten-ba
 * [Canvas-Design](https://github.com/adobe/aem-forms-theme-canvas)
 * [Design „WKND“](https://github.com/adobe/aem-forms-theme-wknd)
 * [Design „EASEL“](https://github.com/adobe/aem-forms-theme-easel)
-* [Öffentliches Thema](https://github.com/adobe/aem-forms-theme-public)
-* [Fertigungsdesign](https://github.com/adobe/aem-forms-theme-manufacturing)
+* [Design „Public“](https://github.com/adobe/aem-forms-theme-public)
+* [Design „Manufacturing“](https://github.com/adobe/aem-forms-theme-manufacturing)
 
 Sie können [jedes dieser Designs anpassen, um ein Design zu erstellen](#customize-a-theme-core-components).
 

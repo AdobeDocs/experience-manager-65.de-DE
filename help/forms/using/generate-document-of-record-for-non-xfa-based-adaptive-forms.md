@@ -1,6 +1,6 @@
 ---
-title: Generieren eines Datensatzdokuments für adaptive Formulare
-description: Erklärt, wie Sie Datensatzdokument (DoR) für adaptive Formulare generieren können.
+title: Generierung eines Nachweises für adaptive Formulare
+description: In diesem Artikel erfahren Sie, wie Sie einen Nachweis (Document of Record, DoR) für adaptive Formulare erstellen können.
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,9 +9,9 @@ feature: Adaptive Forms, Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f8013aeedb79f900158df2291f7f641353bb4c05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4308'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -316,9 +316,9 @@ Für die Lokalisierung der Branding-Informationen, die Sie auf der Registerkarte
 
    Wenn Sie sich für eine benutzerdefinierte Vorlage entscheiden, navigieren zu einer XDP-Datei auf Ihrem AEM Forms-Server und wählen Sie sie aus. Wenn Sie eine Vorlage verwenden möchten, die sich noch nicht auf Ihrem AEM Forms-Server befindet, müssen Sie die XDP-Datei zuerst auf Ihren AEM Forms-Server hochladen.
 
-### Eigenschaften der Masterseite (#master-page-properties)
+### Eigenschaften der Musterseite (#master-page-properties)
 
-Je nachdem, ob Sie eine Standard- oder eine benutzerdefinierte Vorlage auswählen, werden auf der Registerkarte &quot;Datensatzdokument&quot;einige oder alle der folgenden Eigenschaften der Masterseite angezeigt, wie in der Abbildung oben dargestellt. Legen Sie die folgenden entsprechend fest:
+Abhängig davon, ob Sie eine standardmäßige oder benutzerdefinierte Vorlage auswählen, werden einige oder alle der folgenden Eigenschaften der Musterseite auf der Registerkarte „Nachweis“ angezeigt, wie in der Abbildung oben dargestellt. Legen Sie die folgenden entsprechend fest:
 
 * **Logo-Bild:** Sie können entweder das Logo-Bild des adaptiven Formulars verwenden, eines in DAM auswählen oder eines von Ihrem Computer hochladen.
 * **Formulartitel**
@@ -415,23 +415,23 @@ Informationen zum Anwenden von Seitenumbrüchen und zum Anwenden mehrerer Master
 
 **Einstellungen auf Formularebene**
 
-* **[!UICONTROL GRUNDLAGE]**
-   * **Vorlage:** Sie können die Vorlage Standard oder Benutzerdefiniert auswählen.
-     ![Alternativtext](image.png)
-   * **Akzentfarbe:** Sie können die Vorlagenfarbe der [!UICONTROL Datensatzdokument].
-   * **Schriftfamilie:** Wählen Sie Schrifttyp für die [!UICONTROL Datensatzdokument] Texte.
-   * **Ungebundene Felder in DoR einschließen:** Durch Festlegen der Eigenschaft werden ungebundene Felder aus dem Schema-basierten adaptiven Formular in eingeschlossen. [!UICONTROL Datensatzdokument]. Diese Option ist standardmäßig aktiviert.
-   * **Felder aus DoR ausschließen, falls ausgeblendet**: Legen Sie die Eigenschaft fest, um beim Senden des Formulars die ausgeblendeten Felder vom [!UICONTROL Datensatzdokument] auszuschließen. Wenn Sie [Auf dem Server erneut überprüfen](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)berechnet der Server die ausgeblendeten Felder neu, bevor diese Felder aus dem [!UICONTROL Datensatzdokument]
-* **[!UICONTROL EIGENSCHAFTEN FÜR FORMULARFELDER]**
-   * Wenn Sie die Option auswählen **Für Kontrollkästchen- und Optionsfeld-Komponente nur die ausgewählten Werte anzeigen**, wird die DoR-Ausgabe nur mit ausgewählten Werten generiert.
+* **[!UICONTROL EINFACH]**
+   * **Vorlage:** Sie können die Vorlage „Standard“ oder „Benutzerdefiniert“ auswählen.
+     ![Alt-Text](image.png)
+   * **Akzentfarbe:** Sie können die Vorlagenfarbe des [!UICONTROL Nachweises] vordefinierten.
+   * **Schriftfamilie:** Wählen Sie den Schrifttyp für die Texte des [!UICONTROL Nachweises] aus.
+   * **Ungebundene Felder in Nachweis einbeziehen**: Wenn aktiviert, werden ungebundene Felder aus einem Schema-basierten adaptiven Formular im [!UICONTROL Nachweis] eingefügt. Diese Option ist standardmäßig aktiviert.
+   * **Felder aus DoR ausschließen, falls ausgeblendet**: Legen Sie die Eigenschaft fest, um beim Senden des Formulars die ausgeblendeten Felder vom [!UICONTROL Datensatzdokument] auszuschließen. Wenn Sie [Auf dem Server erneut überprüfen](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) aktivieren, berechnet der Server die ausgeblendeten Felder neu, bevor er diese Felder aus dem [!UICONTROL Nachweis] ausschließt.
+* **[!UICONTROL FORMULARFELDEIGENSCHAFTEN]**
+   * Wenn Sie die Option auswählen **Für Kontrollkästchen und Optionsschaltflächenkomponenten nur ausgewählte Werte einblenden**, wird die Ausgabe des Nachweises nur mit ausgewählten Werten generiert.
    * Sie können Trennzeichen für mehrere ausgewählte Werte auswählen oder einen anderen Trennzeichentyp wählen.
    * Ausrichtung der Optionen
       * Vertikal
       * Horizontal
       * Gleich wie adaptives Formular
      >[!NOTE]
-     > Die vertikale und horizontale Ausrichtung gilt nur für Optionsfelder und Kontrollkästchen
-* **[!UICONTROL MASTERSEITENEIGENSCHAFTEN]** Weitere Informationen finden Sie unter [Eigenschaften der Masterseite](#master-page-properties-master-page-properties)
+     > Die vertikale und horizontale Ausrichtung gilt nur für Optionsschaltflächen und Kontrollkästchen
+* **[!UICONTROL MUSTERSEITENEIGENSCHAFTEN]** Weitere Informationen finden Sie unter [Eigenschaften der Musterseite](#master-page-properties-master-page-properties)
 
 ## Anwenden eines Seitenumbruchs in einem Datensatzdokument {#apply-page-breaks-in-dor}
 
