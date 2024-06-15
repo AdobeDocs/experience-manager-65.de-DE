@@ -4,22 +4,21 @@ description: AEM Forms unterstützt benutzerdefinierte Funktionen, mit denen Ben
 keywords: Fügen Sie eine benutzerdefinierte Funktion hinzu, verwenden Sie eine benutzerdefinierte Funktion, erstellen Sie eine benutzerdefinierte Funktion, verwenden Sie eine benutzerdefinierte Funktion im Regeleditor.
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: e7ad5c0149e428265598c806421131fe74fad350
+source-git-commit: f633fdfda531cc29ce6274e0367708cc4909a0cd
 workflow-type: tm+mt
-source-wordcount: '3394'
+source-wordcount: '3385'
 ht-degree: 5%
 
 ---
 
 # Benutzerdefinierte Funktionen in adaptiven Forms-Kernkomponenten
 
-<span class="preview"> Dieser Artikel enthält Inhalte für Funktionen im Rahmen des Programms für frühe Anwender. Auf diese Funktionen vor der Veröffentlichung kann nur über unsere [Pre-Release-Kanal](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes#forms). Die Funktionen des Vorversionsprogramms sind:
-<!-- * Optional parameter support in Custom Functions-->
+In diesem Artikel wird das Erstellen benutzerdefinierter Funktionen mit der neuesten Kernkomponente für adaptive Formulare beschrieben, die die neuesten Funktionen aufweist, z. B.:
 * Caching-Funktion für benutzerdefinierte Funktionen
 * Globale Unterstützung von Objekt- und Feldobjekten für benutzerdefinierte Funktionen
 * Unterstützung für moderne JavaScript-Funktionen wie let- und pfeile Funktionen (ES10-Unterstützung)
 
-Stellen Sie sicher, dass [aktuelle Formularversion](https://github.com/adobe/aem-core-forms-components/tree/release/650) in Ihrer AEM Forms-Kernkomponentenumgebung verwenden, um die Funktionen vor der Veröffentlichung in benutzerdefinierten Funktionen zu verwenden. </span>
+Stellen Sie sicher, dass [aktuelle Formularversion](https://github.com/adobe/aem-core-forms-components/tree/release/650) in Ihrer AEM Forms-Kernkomponentenumgebung verwenden, um die neuesten Funktionen in benutzerdefinierten Funktionen zu verwenden. </span>
 
 
 | Version | Artikel-Link |

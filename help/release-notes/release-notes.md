@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 1ba2782fcc81e5090dced4eed83a3a4911676f09
+source-git-commit: e3219d57e069e546b177015e675666a8b927fb49
 workflow-type: tm+mt
-source-wordcount: '3819'
+source-wordcount: '3825'
 ht-degree: 68%
 
 ---
@@ -199,7 +199,7 @@ Im Folgenden finden Sie eine Liste der in dieser Version enthaltenen Fehlerbeheb
 
 * Wenn ein Benutzer versucht, ein Formular beim Laden der Seite anzuzeigen, schlägt die Wiedergabe fehl. (FORMS-13594)
 * Die Datumseingabe-Feldkomponente funktioniert im Internet Explorer-Kompatibilitätsmodus nicht ordnungsgemäß auf Microsoft Edge. (FORMS-13170)
-* Angehaltene E-Mail-Benachrichtigung mit Anhang konnte nicht gesendet werden, wenn die Fehlerbehebung für [additional-steps-to-use-email-with-attachments](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) auf dem Server ausgeführt wird. (FORMS-14227)
+* Angehaltene E-Mail-Benachrichtigung mit Anhang konnte nicht gesendet werden, wenn die Fehlerbehebung für [Zusätzliche Schritte zur Verwendung von E-Mails mit Anhängen](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) auf dem Server ausgeführt wird. (FORMS-14227)
 * Wenn ein Benutzer in AEM Forms Workspace auf Service Pack 18 (6.5.18.0) Kommentare zu einem hochgeladenen Dokument sendet, führt dies dazu, dass die Dokumentdatei beschädigt wird. (FORMS-13735)
 * Wenn ein Benutzer in AEM Forms Service Pack 18 (6.5.18.0) oder Service Pack 19 (6.5.19.0) oder Service Pack 20 (6.5.20.0) versucht, über das Seitenbedienfeld nach einem adaptiven Formular zu suchen, schlägt die Suche fehl. (FORMS-14117)
 * Wenn ein Benutzer ein Formular bearbeitet, das auf Deutsch erstellt und in Englisch übersetzt wurde, wird zwischen den Modi &quot;Vorschau&quot;und &quot;Bearbeiten&quot;eine inkonsistente Sprache angezeigt. Dadurch werden RadioButton- und Checkbox-Komponenten während des Bearbeitungsmodus auf Englisch angezeigt, während sie im Vorschaumodus korrekt auf Deutsch angezeigt werden. (FORMS-13910)
@@ -212,7 +212,7 @@ Im Folgenden finden Sie eine Liste der in dieser Version enthaltenen Fehlerbeheb
    * Einige Felder können die übersetzten Daten nicht ausfüllen.
    * Einige Felder werden nicht in die neue Sprache übersetzt, obwohl die Daten erfolgreich im Wörterbuch gespeichert wurden.
 
-#### [!DNL Forms Designer] {#forms-desgner-6520}
+#### [!DNL Forms Designer] {#forms-desgner-6521}
 
 * Wenn ein Benutzer mit AEM Forms Designer in der Umgebung von AEM Forms Service Pack 19 (6.5.19.0) eine neue Tabelle zu einem vorhandenen Formular hinzufügt, stürzt es ab. (LC-3921978)
 * Wenn ein Benutzer ein adaptives Formular in einer Linux®-Umgebung rendert, entsteht ein zusätzlicher Abstand zwischen den Feldkomponenten. (LC-3921957)

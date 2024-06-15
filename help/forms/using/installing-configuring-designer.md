@@ -10,10 +10,10 @@ role: Admin, User, Developer
 feature: Forms Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 09eae6e3550e9e8505c042e23d6569971841d441
-workflow-type: ht
-source-wordcount: '767'
-ht-degree: 100%
+source-git-commit: 6ef7e07f0b83b76981240533122aee8c3ee298c7
+workflow-type: tm+mt
+source-wordcount: '787'
+ht-degree: 89%
 
 ---
 
@@ -108,8 +108,11 @@ Wenn Sie ein eigenständiges Installationsprogramm für AEM Forms Designer verwe
 
 ## Häufig gestellte Fragen {#fandq}
 
-* **Kann eine Benutzerin oder ein Benutzer direkt auf 64-Bit aktualisieren?**
-   * Ja, Benutzerinnen und Benutzer können direkt auf den 64-Bit-Designer aktualisieren. Zur Aktualisierung installieren Sie das vollständige [SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip) Designer-Installationsprogramm und wenden Sie darüber die nachfolgende Designer-Patchversion an.
+* **Kann ein Benutzer 64-Bit-Designer direkt aktualisieren oder installieren?**
+   * Ja, Benutzer können 64-Bit-Designer direkt aktualisieren oder installieren. Zur Aktualisierung installieren Sie das vollständige [SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip) Designer-Installationsprogramm und wenden Sie darüber die nachfolgende Designer-Patchversion an.
+
+     >[!NOTE]
+     > Deinstallieren Sie vor dem Upgrade auf 64-Bit Designer zunächst den 32-Bit-Designer, sofern er vorhanden ist.
 
 * **Können Benutzerinnen und Benutzer sowohl 32-Bit als auch 64-Bit auf ihrem System installiert lassen?**
    * Nein, 32-Bit- und 64-Bit-Installationen funktionieren nicht auf derselben Maschine. Es kann nur entweder ein 32-Bit- oder ein 64-Bit-Designer installiert sein.
@@ -117,6 +120,6 @@ Wenn Sie ein eigenständiges Installationsprogramm für AEM Forms Designer verwe
 * **Wie überprüfe ich, ob eine Benutzerin oder ein Benutzer den 64-Bit- oder den 32-Bit-Designer verwendet?**
    * Es gibt zwei Möglichkeiten, die Version von Forms Designer zu überprüfen:
 
-      1. Öffnen Sie Designer, gehen Sie zu „Hilfe“ und klicken Sie auf „Über Designer“. Es werden Ihnen dann Informationen zur Designer-Version sowie die Bit-Informationen angezeigt. Beispielsweise sehen Sie am Ende „64-Bit“, wie hier gezeigt:
+      1. Öffnen Sie Designer, gehen Sie zur Hilfe, klicken Sie auf Über Designer und Sie sehen Designer-Versionsinformationen zusammen mit den Bit-Informationen. Sie sehen beispielsweise, dass 64-Bit am Ende der Version geschrieben ist, wie hier gezeigt:
          `6.5.21.20240522.1.161 | 64 bit`
-      1. Öffnen Sie Designer. Oben links sehen Sie ein Markensymbol, das 64-Bit-Informationen zum Produktnamen enthält.
+      1. Öffnen Sie Designer. Oben links sehen Sie ein Branding-Symbol mit 64-Bit-Informationen mit dem Produktnamen.

@@ -4,20 +4,19 @@ description: Mit dem adaptiven Forms-Regeleditor können Sie dynamische Verhalte
 feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
-source-git-commit: 7e9b4cc233d4040faf61241b3cbe52d26bfdba1e
+source-git-commit: f633fdfda531cc29ce6274e0367708cc4909a0cd
 workflow-type: tm+mt
-source-wordcount: '5599'
+source-wordcount: '5588'
 ht-degree: 81%
 
 ---
 
 # Hinzufügen von Regeln zu einer Kernkomponente für adaptive Formulare {#adaptive-forms-rule-editor}
 
-<span class="preview"> Dieser Artikel enthält Inhalte für einige Funktionen vor der Veröffentlichung. Auf diese Funktionen vor der Veröffentlichung kann nur über unsere [Pre-Release-Kanal](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes#forms). Die Funktionen des Vorversionsprogramms sind:
+Dieser Artikel enthält die neuesten Funktionen des Regeleditors für adaptive Forms-Kernkomponenten, die:
 * Unterstützung für die Implementierung verschachtelter Bedingungen mit der Funktion &quot;When-then-else&quot;
 * Überprüfen oder Zurücksetzen von Bedienfeldern und Formularen, einschließlich Feldern
 * Unterstützung für moderne JavaScript-Funktionen wie Let- und Pfeilfunktionen (ES10-Unterstützung) innerhalb der benutzerdefinierten Funktionen.
-</span>
 
 Mit der Funktion &quot;Regeleditor&quot;können Benutzer und Entwickler von Formularen Regeln in adaptive Formularobjekte schreiben. Diese Regeln definieren Aktionen für den Trigger von Formularobjekten basierend auf den voreingestellten Bedingungen, Benutzereingaben und Benutzeraktionen im Formular. Dies ermöglicht noch größere Effizienz für ein schnelles und korrektes Ausfüllen der Formulare.
 
