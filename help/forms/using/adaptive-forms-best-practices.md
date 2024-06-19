@@ -7,10 +7,10 @@ feature: Adaptive Forms, Foundation Components, Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
-source-wordcount: '5504'
-ht-degree: 100%
+source-git-commit: 4637779a38e05b3a88adc644c52e574155cba4b5
+workflow-type: tm+mt
+source-wordcount: '5538'
+ht-degree: 99%
 
 ---
 
@@ -63,6 +63,7 @@ Weitere Informationen finden Sie unter[ Erstellen von AEM-Projekten mit Apache M
 Nachdem Sie Ihr AEM-Projekt eingerichtet haben, definieren Sie eine Strategie für das Authoring und Anpassen von Vorlagen für adaptive Formulare und Komponenten.
 
 * Eine adaptive Formularvorlage ist eine spezielle AEM-Seite, die die Struktur und die Informationen für Kopfzeile und Fußzeile eines adaptiven Formulars definiert. Eine Vorlage enthält vorkonfigurierte Layouts, Stile und eine einfache Struktur für ein adaptives Formular. AEM Forms bietet Standardvorlagen und -Komponenten, die Sie verwenden können, um adaptive Formulare zu erstellen. Sie können jedoch benutzerdefinierte Vorlagen und Komponenten entsprechend Ihren Anforderungen erstellen. Es wird empfohlen, Anforderungen für zusätzliche Vorlagen und Komponenten zu erfassen, die Sie in Ihren adaptiven Formularen benötigen. Weitere Informationen finden Sie unter [Anpassen von adaptiven Formularen und Komponenten](/help/forms/using/adaptive-forms-best-practices.md#customize-components).
+* Es wird empfohlen, die Formularpakete über die Benutzeroberfläche von Form Manager anstelle der Benutzeroberfläche von CRX Package Manager hochzuladen, da das Hochladen von Paketen über CRX Package Manager manchmal zu Anomalien führen kann.
 * Mit AEM Forms können Sie adaptive Formulare erstellen, die auf folgenden Formularmodellen basieren. Die Formularmodelle fungieren als Schnittstelle für den Datenaustausch zwischen einem Formular und einem AEM-System und liefern eine XML-basierte Struktur für den Datenfluss innerhalb und außerhalb eines adaptiven Formulars. Außerdem legen die Formularmodelle die Regeln und Beschränkungen für adaptive Formulare in Form von Schema- und XFA-Beschränkungen fest.
 
    * **Keine**: Adaptive Formulare, die mit dieser Option erstellt worden sind, verwenden kein Formularmodell. Die XML-Datendatei, die aus diesen Formularen generiert wird, hat eine flache Struktur mit Feldern und entsprechenden Werten.

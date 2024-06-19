@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: e3219d57e069e546b177015e675666a8b927fb49
+source-git-commit: 4637779a38e05b3a88adc644c52e574155cba4b5
 workflow-type: tm+mt
-source-wordcount: '3825'
-ht-degree: 79%
+source-wordcount: '3907'
+ht-degree: 75%
 
 ---
 
@@ -41,18 +41,22 @@ ht-degree: 79%
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
+### [!DNL Forms]
+
 Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enthalten sind:
 
-* Neue, benutzerfreundlichere Anmeldedaten für die Server-zu-Server-Authentifizierung, die den vorhandenen Anmeldedatentyp „Service-Konto (JWT)“ ersetzt. (NPR-41994)
-
-* Verbesserungen des Regeleditors in AEM Forms
+* **Unterstützung für Oauth-Anmeldedaten**: Eine neue und benutzerfreundlichere Berechtigung für die Server-zu-Server-Authentifizierung, die die vorhandene JWT-Berechtigung (Service Account) ersetzt. (NPR-41994)
+* **Verbesserungen am Regeleditor in AEM Forms**:
    * Unterstützung für die Implementierung verschachtelter Bedingungen mit `When-then-else`-Funktionalität.
    * Überprüfen oder Zurücksetzen von Bereichen und Formularen, einschließlich Feldern.
    * Unterstützung für moderne JavaScript-Funktionen wie Let- und Pfeilfunktionen (ES10-Unterstützung) innerhalb der benutzerdefinierten Funktionen.
-* AutoTag-API für PDF-Barrierefreiheit: AEM Forms on OSGi unterstützt jetzt die neue AutoTag-API zur Verbesserung der PDF für Barrierefreiheitsstandards durch Hinzufügen von Tags: Absätze und Listen. Dadurch werden PDF für Benutzende mit Hilfstechnologien leichter zugänglich.
-* 16-Bit-PNG-Unterstützung: Der ImageToPdf-Dienst von PDF Generator unterstützt jetzt die Konversion von PNGs mit einer 16-Bit-Farbtiefe.
-* Anwenden von Artefakten auf einzelne Textblöcke in XDPs: Mit Forms Designer können Benutzer jetzt Einstellungen für einzelne Textblöcke in XDP-Dateien konfigurieren. Mit dieser Funktion können Sie die Elemente steuern, die in den resultierenden PDF als Artefakte behandelt werden. Diese Elemente wie Kopf- und Fußzeilen werden für Hilfstechnologien verfügbar gemacht. Zu den Hauptfunktionen gehören das Markieren von Textbausteinen als Artefakte und das Einbetten dieser Einstellungen in die XDP-Metadaten. Der Forms Output-Dienst wendet diese Einstellungen während der PDF-Erstellung an und stellt dabei eine ordnungsgemäße PDF-/UA-Tagging-Funktion sicher.
-* AEM Forms Designer ist nach dem Standard `GB18030:2022` zertifiziert. Mit dieser Zertifizierung unterstützt Forms Designer jetzt den chinesischen Unicode-Zeichensatz, mit dem Sie chinesische Zeichen in alle bearbeitbaren Felder und Dialogfelder eingeben können.
+* **AutoTag-API für PDF-Barrierefreiheit**: AEM Forms on OSGi unterstützt jetzt die neue AutoTag-API zur Verbesserung der PDF für Barrierefreiheitsstandards durch Hinzufügen von Tags: Absätze und Listen. Dadurch werden PDF für Benutzende mit Hilfstechnologien leichter zugänglich.
+* **16-Bit-PNG-Unterstützung**: Der ImageToPdf-Dienst des PDF Generators unterstützt jetzt die Konvertierung von PNGs mit einer 16-Bit-Farbtiefe.
+* **Anwenden von Artefakten auf einzelne Textblöcke in XDPs**: Mit Forms Designer können Benutzer jetzt Einstellungen für einzelne Textblöcke in XDP-Dateien konfigurieren. Mit dieser Funktion können Sie die Elemente steuern, die in den resultierenden PDF als Artefakte behandelt werden. Diese Elemente wie Kopf- und Fußzeilen werden für Hilfstechnologien verfügbar gemacht. Zu den Hauptfunktionen gehören das Markieren von Textbausteinen als Artefakte und das Einbetten dieser Einstellungen in die XDP-Metadaten. Der Forms Output-Dienst wendet diese Einstellungen während der PDF-Erstellung an und stellt dabei eine ordnungsgemäße PDF-/UA-Tagging-Funktion sicher.
+* **AEM Forms Designer ist zertifiziert für `GB18030:2022` standard**: Mit der `GB18030:2022` -Zertifizierung unterstützt Forms Designer jetzt den chinesischen Unicode-Zeichensatz, mit dem Sie chinesische Zeichen in alle bearbeitbaren Felder und Dialogfelder eingeben können.
+* **Unterstützung für WebToPDF-Route in JEE Server**: Der PDF Generator-Dienst unterstützt jetzt die WebToPDF-Route zum Konvertieren von HTML-Dateien in PDF-Dokumente auf JEE, zusätzlich zu den Routen Webkit und WebCapture (nur Windows). Die WebToPDF-Route ist zwar bereits auf OSGi verfügbar, wurde aber jetzt auch auf JEE erweitert. Sowohl auf JEE- als auch auf OSGi-Plattformen unterstützt der PDF Generator-Dienst die folgenden Routen über verschiedene Betriebssysteme hinweg:
+   * **Windows**: Webkit, WebCapture, WebToPDF
+   * **Linux**: Webkit, WebToPDF
 
 
 ### [!DNL Assets]
@@ -528,16 +532,15 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 ### Bekannte Probleme bei AEM Forms {#known-issues-aem-forms-6521}
 
 
-* Nach der Installation von AEM Forms JEE Service Pack 21 (6.5.21.0), wenn Sie doppelte Einträge von Geode jars finden `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` unter `<AEM_Forms_Installation>/lib/caching/lib` Ordner (FORMS-14926).
+* Nach der Installation von AEM Forms JEE Service Pack 21 (6.5.21.0), wenn Sie doppelte Einträge von Geode jars finden `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` unter `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926), führen Sie die folgenden Schritte aus, um das Problem zu beheben:
 
-  Führen Sie zur Behebung dieses Problems folgende Schritte durch:
+   1. Stoppen Sie die Locators, wenn sie ausgeführt werden.
+   1. Beenden Sie den AEM Server.
+   1. Navigieren Sie zu `<AEM_Forms_Installation>/lib/caching/lib`.
+   1. Entfernen Sie alle Geode Patch-Dateien außer `geode-*-1.15.1.2.jar`. Bestätigen Sie, dass nur die Geode-JAR-Dateien mit `version 1.15.1.2` vorhanden sind.
+   1. Öffnen Sie die Eingabeaufforderung im Administratormodus.
+   1. Installieren Sie den Geode-Patch mit dem `geode-*-1.15.1.2.jar` -Datei.
 
-   1. Beenden Sie die Locators und den Server in der angegebenen Reihenfolge, falls sie ausgeführt werden.
-   1. Installieren Sie den Patch erneut, indem Sie das Patch-Installationsprogramm im Administratormodus ausführen (wichtig).
-   1. Bestätigen Sie, dass nur die Geode-JAR-Dateien mit `version 1.15.1.2` vorhanden sind.
-
-  >[!NOTE]
-  > Es ist keine Aktion erforderlich, wenn nur die Geode-JAR-Dateien mit `version 1.15.1.2` vorhanden sind.
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 
