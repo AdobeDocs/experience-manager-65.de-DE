@@ -1,6 +1,6 @@
 ---
 title: Rendern von Formularen als HTML
-description: Verwenden Sie den Forms-Dienst, um Formulare als Antwort auf eine HTTP-Anforderung von einem Webbrowser als HTML zu rendern. Sie können die Java&trade-, API- und Web Service-API verwenden, um Formulare als HTML zu rendern.
+description: Verwenden Sie den Forms-Dienst, um Formulare als Antwort auf eine HTTP-Anforderung von einem Webbrowser als HTML zu rendern. Sie können die Java&trade;-API und die Web Service-API verwenden, um Formulare als HTML zu rendern.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -9,10 +9,10 @@ topic-tags: operations
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '4099'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -64,13 +64,13 @@ Sie müssen sich explizit mit den Methoden `xfa.host.pageUp` und `xfa.host.pageD
 >
 >Wenn Sie das Aussehen der Schaltfläche für die digitale HTML-Signatur in einem HTML-Formular anpassen möchten, müssen Sie die folgenden Eigenschaften in der Datei fscdigsig.css (innerhalb der Datei adobe-forms-ds.ear > adobe-forms-ds.war) ändern:
 
-**`.fsc-ds-ssb`**: Dieses Stylesheet kann angewendet werden, wenn ein leeres Zeichenfeld vorhanden ist.
+**`.fsc-ds-ssb`**: Dieses Stylesheet gilt bei einem leeren Signaturfeld.
 
-**`.fsc-ds-ssv`**: Dieses Stylesheet kann angewendet werden, wenn ein Feld für ein gültiges Zeichen vorhanden ist.
+**`.fsc-ds-ssv`**: Dieses Stylesheet gilt bei einem gültigen Signaturfeld.
 
-**`.fsc-ds-ssc`**: Dieses Stylesheet ist verfügbar, wenn ein gültiges Zeichenfeld vorhanden ist, sich die Daten jedoch geändert haben.
+**`.fsc-ds-ssc`**: Dieses Stylesheet gilt bei einem gültigen Signaturfeld mit geänderten Daten.
 
-**`.fsc-ds-ssi`**: Dieses Stylesheet kann angewendet werden, wenn ein ungültiges Zeichenfeld vorhanden ist.
+**`.fsc-ds-ssi`**: Dieses Stylesheet gilt bei einem ungültigen Signaturfeld.
 
 **`.fsc-ds-popup-bg`**: Diese Stylesheet-Eigenschaft wird nicht verwendet.
 

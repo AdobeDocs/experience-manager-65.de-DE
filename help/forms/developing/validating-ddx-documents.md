@@ -9,10 +9,10 @@ topic-tags: operations
 role: Developer
 exl-id: 1f5a2cf3-ef6b-45b4-8fa8-b300e492fee1
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1507'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -73,9 +73,9 @@ Nachdem Sie den Assembler-Service-Client erstellt, auf das DDX-Dokument verwiese
 
 Wenn die Validierung fehlschlägt, wird eine Ausnahme ausgelöst und die Protokolldatei enthält Details, die erklären, warum das DDX-Dokument ungültig ist. Diese Details können Sie von der `OperationException`-Instanz abgerufen werden. Nach der grundlegenden XML-Analyse und Schemaprüfung wird die Validierung anhand der DDX-Spezifikation durchgeführt. Alle im DDX-Dokument enthaltenen Fehler werden im Protokoll angegeben.
 
-**Die Prüfergebnisse in einer Protokolldatei speichern**
+**Speichern der Prüfergebnisse in einer Protokolldatei**
 
-Der Assembler-Dienst gibt die Überprüfungsergebnisse zurück, die Sie in eine XML-Protokolldatei schreiben können. Die Menge der Details, die der Assembler-Service in die Protokolldatei schreibt, hängt von der von Ihnen festgelegten Laufzeitoption ab.
+Der Assembler-Dienst gibt die Validierungsergebnisse zurück, die Sie in eine XML-Protokolldatei schreiben können. Die Menge der Details, die der Assembler-Service in die Protokolldatei schreibt, hängt von der von Ihnen festgelegten Laufzeitoption ab.
 
 **Siehe auch**
 

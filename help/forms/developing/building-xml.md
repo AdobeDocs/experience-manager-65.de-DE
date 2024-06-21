@@ -3,9 +3,10 @@ title: Wie kann der Service „execute script“ aus der Workbench von AEM Forms
 description: Verwenden des Service „execute script“ aus der Workbench von AEM Forms on JEE zum Erstellen von XML-Daten
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 100%
 

@@ -8,8 +8,8 @@ topic-tags: operations
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+source-git-commit: 29cc7281e34487881ff9334f4cf00f3d013de11b
+workflow-type: tm+mt
 source-wordcount: '8133'
 ht-degree: 100%
 
@@ -165,6 +165,7 @@ So verschlüsseln Sie ein PDF-Dokument mit einem Kennwort mithilfe der Verschlü
 [Schnellstart (SOAP-Modus): Verschlüsseln eines PDF-Dokuments unter Verwendung der Java-API](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 

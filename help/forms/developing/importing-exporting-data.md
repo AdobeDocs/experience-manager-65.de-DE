@@ -8,10 +8,10 @@ topic-tags: operations
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2754'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -391,7 +391,7 @@ Exportieren von Formulardaten mithilfe der Form Data Integration-API (Web-Servic
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Speicherort der XML-Datei darstellt.
    * Erstellen Sie ein Byte-Array, in dem der Dateninhalt des `BLOB`-Objekt gespeichert wird, das von der `exportData`-Methode zurückgegeben wird. Füllen Sie das Byte-Array, indem Sie den Wert aus dem `MTOM`-Feld des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine XML-Datei, indem Sie die `System.IO.BinaryWriter` -Objekt `Write` -Methode verwenden und das Byte-Array übergeben.
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine XML-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
 

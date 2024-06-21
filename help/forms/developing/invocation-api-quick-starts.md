@@ -8,10 +8,10 @@ topic-tags: develop
 role: Developer
 exl-id: bee0eebb-c21d-472c-bbdf-28d8c3a5ed4a
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1248'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -1019,7 +1019,7 @@ Ein unsicheres PDF-Dokument basierend auf einer PDF-Datei mit dem Namen *loan.pd
 
 >[!NOTE]
 >
->Viele Schnellstarts, die zeigen, wie AEM Forms-Dienstvorgänge ausgeführt werden, enthalten ein MTOM-Codebeispiel.
+>Viele Kurzanleitungen, die zeigen, wie Service-Vorgänge in AEM Forms durchgeführt werden können, enthalten ein Beispiel mit MTOM-Code.
 
 ## Kurzanleitung: Aufrufen eines Services mit SwaRef in einem Java-Projekt {#quick-start-invoking-a-service-using-swaref-in-a-java-project}
 
