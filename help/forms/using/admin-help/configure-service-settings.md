@@ -9,9 +9,9 @@ exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: 1e978cbece1401a18137ef98a3a9bf6cd666e48f
+source-git-commit: f1a18575e8b8f925f8adbe18e189f3916b5e353d
 workflow-type: tm+mt
-source-wordcount: '10828'
+source-wordcount: '10824'
 ht-degree: 98%
 
 ---
@@ -260,9 +260,9 @@ Folgende Einstellungen sind für den Generate PDF-Dienst verfügbar:
 
 **Fallback-Konverter für HTML-zu-PDF-Konvertierungen:** Geben Sie den Konverter für HTML-zu-PDF-Konvertierungen an, wenn der primäre Konverter fehlschlägt. Standardmäßig ist WebCapture (nur Windows) ausgewählt.
 
-**Acrobat-Bildkonvertierung verwenden (nur Windows)**: Wenn diese Einstellung aktiviert ist, verwendet der Generate PDF-Servic für alle Konvertierungen von Bildern in PDF Acrobat X Pro. Diese Einstellung ist nur dann sinnvoll, wenn mit dem standardmäßigen, reinen Java-Konvertierungsmechanismus ein erheblicher Teil der Eingabebilder nicht erfolgreich konvertiert werden kann. Der Standardwert lautet false.
+**Acrobat-Bildkonvertierung verwenden (nur Windows):** Wenn diese Einstellung wahr ist, verwendet der Generate PDF-Dienst Acrobat für alle &quot;Bild in PDF&quot;-Konvertierungen. Diese Einstellung ist nur dann sinnvoll, wenn mit dem standardmäßigen, reinen Java-Konvertierungsmechanismus ein erheblicher Teil der Eingabebilder nicht erfolgreich konvertiert werden kann. Der Standardwert lautet false.
 
-**Acrobat-basierte AutoCAD-Konvertierungen aktivieren (nur Windows)**: Wenn diese Einstellung aktiviert ist, verwendet der Generate PDF-Service für alle Konvertierungen von DWG in PDF Acrobat X Pro. Diese Einstellung ist nur sinnvoll, wenn AutoCAD nicht auf dem Server installiert ist bzw. wenn der AutoCAD-Konvertierungsmechanismus nicht in der Lage ist, Dateien erfolgreich zu konvertieren.
+**Aktivieren Sie Acrobat-basierte AutoCAD-Konvertierungen (nur Windows):** Wenn diese Einstellung wahr ist, verwendet der Generate PDF-Dienst Acrobat für alle DWG-zu-PDF-Konvertierungen. Diese Einstellung ist nur sinnvoll, wenn AutoCAD nicht auf dem Server installiert ist bzw. wenn der AutoCAD-Konvertierungsmechanismus nicht in der Lage ist, Dateien erfolgreich zu konvertieren.
 
 **Reguläre Ausdrücke zum Auffinden nicht zulässiger
 Sonderzeichen in Benutzernamen (nur Windows)**: Gibt Zeichen an, welche die Vorgänge zum Erstellen und Optimieren von PDF-Dateien beeinträchtigen, wenn die Zeichen im Benutzernamen enthalten sind.
