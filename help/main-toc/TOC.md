@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: 4994a015099e1e50bf59342a8973ce68b9347568
-workflow-type: ht
-source-wordcount: '7421'
-ht-degree: 100%
+source-git-commit: 2513ae7e193bdae3387210b07661b9c7a22b0156
+workflow-type: tm+mt
+source-wordcount: '7429'
+ht-degree: 99%
 
 ---
 
@@ -1198,6 +1198,7 @@ ht-degree: 100%
       + [Fehlschlagen des Datenbank-Backups beim Upgrade auf 6.5.12.0 für MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [Beim Drucken einer großen Anzahl von PDFs auf WorkBench schlägt die PDF-Generierung fehl](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [Ordnungsgemäßes Neustarten von AEM SDK](/help/forms/using/restart-aem-sdk.md)
+      + [Der PaperCapture-Dienst kann OCRs auf PDF nicht ausführen](/help/forms/using/papercapture-service-resolution.md)
    + Alte Dokumentation {#legacy-documentation}
       + [Verwenden des Service „execute script“ in AEM Forms on JEE Workbench zum Erstellen von XML-Daten](/help/forms/developing/building-xml.md)
       + [Komprimieren und Dekomprimieren von Dateien mithilfe eines benutzerdefinierten DSC von AEM Forms auf JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)
