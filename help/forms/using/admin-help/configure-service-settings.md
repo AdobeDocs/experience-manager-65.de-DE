@@ -7,11 +7,12 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
-source-wordcount: '10702'
-ht-degree: 100%
+source-git-commit: 1e978cbece1401a18137ef98a3a9bf6cd666e48f
+workflow-type: tm+mt
+source-wordcount: '10828'
+ht-degree: 98%
 
 ---
 
@@ -225,7 +226,7 @@ Die folgenden Einstellungen sind für den Verschlüsselungsdienst verfügbar.
 >
 >Verwenden Sie einfache Authentifizierung (Benutzername und Kennwort) nur, wenn die Verbindung mit SSL (unter Verwendung von LDAPS) geschützt ist.
 
-**Kompatibilitätsmodus:**
+<!-- **Compatibility Mode:**-->
 
 ## Einstellungen des FTP-Dienstes {#ftp-service-settings}
 
@@ -253,7 +254,11 @@ Folgende Einstellungen sind für den Generate PDF-Dienst verfügbar:
 
 **Dateitypeinstellungen**: Der Name der vorkonfigurierten Dateitypeinstellungen, die auf einen Konvertierungsauftrag angewendet werden sollen, wenn diese Einstellungen nicht als Bestandteil der API-Aufrufparameter angegeben wurden. Sie können die Dateitypeinstellungen in Administration Console konfigurieren, indem Sie auf „Dienste“ > „ PDF Generator “ > „Dateitypeinstellungen“ klicken.
 
-**Acrobat WebCapture verwenden (nur Windows)**: Wenn diese Einstellung aktiviert ist, verwendet der Generate PDF-Service für alle Konvertierungen von HTML in PDF Acrobat X Pro. Auf diese Weise kann die Qualität der aus HTML erzeugten PDF-Dateien verbessert werden, obwohl die Leistung möglicherweise etwas langsamer wird. Der Standardwert lautet false.
+**WebCapture verwenden (nur Windows):** Wenn diese Einstellung wahr ist, verwendet der Generate PDF-Dienst Acrobat für alle HTML-zu-PDF-Konvertierungen. Auf diese Weise kann die Qualität der aus HTML erzeugten PDF-Dateien verbessert werden, obwohl die Leistung möglicherweise etwas langsamer wird. Der Standardwert lautet false.
+
+**Primärer Konverter für HTML in PDF-Konvertierungen:** Der Generate PDF-Dienst bietet mehrere Routen zum Konvertieren von HTML-Dateien in PDF-Dokumente: Webkit, WebCapture (nur Windows) und WebToPDF. Diese Einstellung ermöglicht es dem Benutzer, den primären Konverter zum Konvertieren von HTML in PDF auszuwählen. Standardmäßig ist WebToPDF ausgewählt.
+
+**Fallback-Konverter für HTML-zu-PDF-Konvertierungen:** Geben Sie den Konverter für HTML-zu-PDF-Konvertierungen an, wenn der primäre Konverter fehlschlägt. Standardmäßig ist WebCapture (nur Windows) ausgewählt.
 
 **Acrobat-Bildkonvertierung verwenden (nur Windows)**: Wenn diese Einstellung aktiviert ist, verwendet der Generate PDF-Servic für alle Konvertierungen von Bildern in PDF Acrobat X Pro. Diese Einstellung ist nur dann sinnvoll, wenn mit dem standardmäßigen, reinen Java-Konvertierungsmechanismus ein erheblicher Teil der Eingabebilder nicht erfolgreich konvertiert werden kann. Der Standardwert lautet false.
 
@@ -268,21 +273,23 @@ Sonderzeichen in Benutzernamen (nur Windows)**: Gibt Zeichen an, welche die Vorg
 
 **OCR-Pool-Größe**: Die Pool-Größe des PaperCaptureService, den PDF Generator für optische Zeichenerkennung (OCR) verwendet. Der Standardwert dieser Einstellung (empfohlen für Einzelprozessorsysteme) ist 3, wobei der Wert für Multiprozessorsysteme erhöht werden kann. Diese Einstellung ist nur auf Windows-Systemen gültig.
 
+**ImageToPDF max-Seiten im Speicher für TIFF-Konvertierungen:** Diese Einstellung legt die maximale Anzahl von Seiten eines TIFF-Bildes fest, die im Speicher verbleiben können, bevor sie während der Konvertierung in PDF auf die Festplatte geleert werden. Der Standardwert für diese Einstellung ist 500. Dieser Wert kann erhöht werden, wenn dem ImageToPDF-Konvertierungsprozess zusätzlicher Arbeitsspeicher zugewiesen wird.
+
 **Ersatzschriftfamilie für HTML-zu-PDF-Konvertierungen**: Der Name der Schriftfamilie, die in PDF-Dokumenten verwendet werden soll, wenn die im Original-HTML verwendete Schriftart nicht für den AEM-Formular-Server verfügbar ist. Geben Sie eine Schriftfamilie an, wenn Sie HTML-Seiten konvertieren möchten, die nicht verfügbare Schriftarten verwenden. Beispielsweise könnten Seiten, die in regionalen Sprachen verfasst wurden, nicht verfügbare Schriftarten verwenden.
 
 **Logik für native Konvertierungen wiederholen**: Steuert Wiederholungsversuche zur PDF-Generierung, wenn der erste Konvertierungsversuch fehlgeschlagen ist
 
-**Nicht wiederholen**
+* **Nicht wiederholen**
 
-Die PDF-Konvertierung wird nicht wiederholt, wenn der erste Konvertierungsversuch fehlgeschlagen ist.
+  Die PDF-Konvertierung wird nicht wiederholt, wenn der erste Konvertierungsversuch fehlgeschlagen ist.
 
-**Erneut versuchen**
+* **Erneut versuchen**
 
-Die PDF-Konvertierung wird wiederholt, unabhängig davon, ob der Timeout-Schwellenwert erreicht wurde. Die standardmäßige Timeout-Dauer für den ersten Versuch beträgt 270 Sekunden.
+  Die PDF-Konvertierung wird wiederholt, unabhängig davon, ob der Timeout-Schwellenwert erreicht wurde. Die standardmäßige Timeout-Dauer für den ersten Versuch beträgt 270 Sekunden.
 
-**Wiederholen, wenn die Zeit ausreicht**
+* **Wiederholen, wenn die Zeit ausreicht**
 
-Die PDF-Konvertierung wird wiederholt, wenn die für den ersten Konvertierungsversuch benötigte Zeit kürzer als die angegebene Timeout-Dauer war. Wenn beispielsweise die Timeout-Dauer 270 Sekunden beträgt und der erste Versuch 200 Sekunden gedauert hat, wird PDF Generator die Konvertierung erneut versuchen. Wenn der erste Versuch selbst die 270 Sekunden in Anspruch genommen hat, wird die Konvertierung nicht erneut versucht.
+  Die PDF-Konvertierung wird wiederholt, wenn die für den ersten Konvertierungsversuch benötigte Zeit kürzer als die angegebene Timeout-Dauer war. Wenn beispielsweise die Timeout-Dauer 270 Sekunden beträgt und der erste Versuch 200 Sekunden gedauert hat, wird PDF Generator die Konvertierung erneut versuchen. Wenn der erste Versuch selbst die 270 Sekunden in Anspruch genommen hat, wird die Konvertierung nicht erneut versucht.
 
 ## Einstellungen für Guides ES4 Utilities-Dienste {#guides-es4-utilities-service-settings}
 
