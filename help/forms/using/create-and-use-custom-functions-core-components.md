@@ -4,7 +4,9 @@ description: AEM Forms unterstützt benutzerdefinierte Funktionen, mit denen Ben
 keywords: Fügen Sie eine benutzerdefinierte Funktion hinzu, verwenden Sie eine benutzerdefinierte Funktion, erstellen Sie eine benutzerdefinierte Funktion, verwenden Sie eine benutzerdefinierte Funktion im Regeleditor.
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: f633fdfda531cc29ce6274e0367708cc4909a0cd
+roles: Admin, Developer
+exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
+source-git-commit: 6c902ca08b7689e428facdc4150f443dad089bff
 workflow-type: tm+mt
 source-wordcount: '3385'
 ht-degree: 5%
@@ -14,6 +16,7 @@ ht-degree: 5%
 # Benutzerdefinierte Funktionen in adaptiven Forms-Kernkomponenten
 
 In diesem Artikel wird das Erstellen benutzerdefinierter Funktionen mit der neuesten Kernkomponente für adaptive Formulare beschrieben, die die neuesten Funktionen aufweist, z. B.:
+
 * Caching-Funktion für benutzerdefinierte Funktionen
 * Globale Unterstützung von Objekt- und Feldobjekten für benutzerdefinierte Funktionen
 * Unterstützung für moderne JavaScript-Funktionen wie let- und pfeile Funktionen (ES10-Unterstützung)
@@ -1003,5 +1006,3 @@ Wenn die benutzerdefinierten Funktionen geändert werden, wird die Zwischenspeic
    * Klassenmethoden
    * Standardparameter
    * REST-Parameter
-
-
