@@ -3,11 +3,11 @@ title: Best Practices für die Arbeit mit adaptiven Formularen
 description: Das Dokument erläutert bewährte Verfahren zur Einrichtung eines AEM Forms-Projekts, zur Entwicklung adaptiver Formulare und zur Optimierung der Leistung für AEM Forms-Systeme.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms, Foundation Components, Core Components
+feature: Adaptive Forms,Foundation Components,Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 4637779a38e05b3a88adc644c52e574155cba4b5
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '5538'
 ht-degree: 99%

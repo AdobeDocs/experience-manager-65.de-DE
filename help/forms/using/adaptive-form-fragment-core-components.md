@@ -3,12 +3,12 @@ title: Was sind adaptive Formularfragmente?
 description: Adaptive Formulare bieten einen Mechanismus zum Erstellen eines Formularsegments (z. B. eines Bedienfelds oder einer Gruppe von Feldern) und zum Verwenden dieses Segments in einem beliebigen adaptiven Formular. Sie können auch ein vorhandenes Bedienfeld als Fragment speichern.
 topic-tags: author
 keywords: Adaptive Formularfragmente hinzufügen, adaptive Formularfragmente, Formularfragment erstellen, Fragment zu einem adaptiven Formular hinzufügen, Fragmente verwalten
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms,Core Components
 exl-id: 4a1ba259-8eb5-408f-8ee7-4868f98cca03
 solution: Experience Manager, Experience Manager Forms
 role: Admin, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+workflow-type: tm+mt
 source-wordcount: '1840'
 ht-degree: 100%
 

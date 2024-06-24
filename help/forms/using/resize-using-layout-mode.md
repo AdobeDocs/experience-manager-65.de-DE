@@ -1,12 +1,12 @@
 ---
 title: Verwenden des Layout-Modus zum Ändern der Größe von Komponenten für adaptive Formulare
 description: Definieren Sie die Position von Komponenten mithilfe des responsiven Rasters, das im Layout-Modus verfügbar ist
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 5cf76cb1-c92c-4aed-9945-37494fef2d29
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 100%
 

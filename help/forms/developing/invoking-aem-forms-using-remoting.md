@@ -8,8 +8,9 @@ topic-tags: coding
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+feature: Adaptive Forms,APIs & Integrations,Workbench
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+workflow-type: tm+mt
 source-wordcount: '4604'
 ht-degree: 100%
 
@@ -131,7 +132,7 @@ docRef.text = "Text for my document";  // Optionally, you can override the ser
 
 >[!NOTE]
 >
->Wenn AEM Forms so konfiguriert ist, dass unsichere Dokumente hochgeladen werden können, können Sie zum Hochladen eines Dokuments einen Benutzer verwenden, der nicht die Rolle „Document Upload Application User“ hat. Ein Benutzer kann auch über die Berechtigung zum Hochladen von Dokumenten verfügen. Wenn AEM Forms jedoch so konfiguriert ist, dass nur sichere Dokumente zugelassen werden, stellen Sie sicher, dass der Benutzer über die Rolle „Document Upload Application User“ oder die Berechtigung „Document Upload“ verfügt. (Weitere Informationen unter [Konfigurieren von AEM Forms zum Akzeptieren sicherer und unsicherer Dokumente](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).)
+Wenn AEM Forms so konfiguriert ist, dass unsichere Dokumente hochgeladen werden können, können Sie zum Hochladen eines Dokuments einen Benutzer verwenden, der nicht die Rolle „Document Upload Application User“ hat. Ein Benutzer kann auch über die Berechtigung zum Hochladen von Dokumenten verfügen. Wenn AEM Forms jedoch so konfiguriert ist, dass nur sichere Dokumente zugelassen werden, stellen Sie sicher, dass der Benutzer über die Rolle „Document Upload Application User“ oder die Berechtigung „Document Upload“ verfügt. (Weitere Informationen unter [Konfigurieren von AEM Forms zum Akzeptieren sicherer und unsicherer Dokumente](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).)
 
 Sie verwenden standardmäßige Flash-Upload-Funktionen für die vorgesehene Upload-URL: `https://SERVER:PORT/remoting/lcfileupload`. Anschließend können Sie das `DocumentReference`-Objekt immer dann verwenden, wenn ein Eingabeparameter vom Typ `Document` erwartet wird.
 ` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`Der Remoting-Schnellstart verwendet das Remoting-Upload-Servlet, um eine PDF-Datei an den `MyApplication/EncryptDocument`-Prozess zu übergeben. (Weitere Informationen unter [Aufrufen eines kurzlebigen Prozesses durch Übergeben eines unsicheren Dokuments mithilfe von AEM Forms Remoting (für AEM Forms nicht mehr unterstützt)](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting).)
@@ -196,7 +197,7 @@ Führen Sie die folgenden Aufgaben aus, um einen AEM Forms-Prozess aus einem mit
 
 >[!NOTE]
 >
->In diesem Abschnitt wird beschrieben, wie Sie einen AEM Forms-Prozess aufrufen und ein Dokument hochladen, wenn AEM Forms für das Hochladen unsicherer Dokumente konfiguriert ist. Weitere Informationen zum Aufrufen von AEM Forms-Prozessen und Hochladen sicherer Dokumente sowie zum Konfigurieren von AEM Forms für die Annahme sicherer und unsicherer Dokumente finden Sie unter [Übergeben sicherer Dokumente zum Aufrufen von Prozessen mithilfe von Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
+In diesem Abschnitt wird beschrieben, wie Sie einen AEM Forms-Prozess aufrufen und ein Dokument hochladen, wenn AEM Forms für das Hochladen unsicherer Dokumente konfiguriert ist. Weitere Informationen zum Aufrufen von AEM Forms-Prozessen und Hochladen sicherer Dokumente sowie zum Konfigurieren von AEM Forms für die Annahme sicherer und unsicherer Dokumente finden Sie unter [Übergeben sicherer Dokumente zum Aufrufen von Prozessen mithilfe von Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
 
 **Erstellen einer mx:RemoteObject-Instanz**
 
@@ -302,7 +303,7 @@ Bei der benutzerdefinierten Authentifizierung sendet der Server einen Fehler an 
 
 >[!NOTE]
 >
->Informationen zum Ausführen der Authentifizierung mit HTTP-Token finden Sie unter [Erstellen von Flash Builder-Anwendungen, die die SSO-Authentifizierung mithilfe von HTTP-Token durchführen](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens).
+Informationen zum Ausführen der Authentifizierung mit HTTP-Token finden Sie unter [Erstellen von Flash Builder-Anwendungen, die die SSO-Authentifizierung mithilfe von HTTP-Token durchführen](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens).
 
 ### Verwenden der benutzerdefinierten Authentifizierung {#using-custom-authentication}
 
@@ -310,7 +311,7 @@ Sie aktivieren die benutzerdefinierte Authentifizierung in der Administration-Co
 
 >[!NOTE]
 >
->In der vorherigen Version von AEM Forms haben Sie Anmeldeinformationen an ein Ziel gesendet, indem Sie die `RemoteObject.setCredentials`-Methode aufgerufen haben. Die `setCredentials`-Methode hat die Anmeldeinformationen erst beim ersten Versuch der Komponente, eine Verbindung zum Server herzustellen, an den Server übergeben. Wenn die Komponente ein fehlerhaftes Ereignis ausgegeben hat, konnten Sie daher nicht sicher sein, ob der Fehler aufgrund eines Authentifizierungsfehlers oder aus einem anderen Grund aufgetreten ist. Die `ChannelSet.login`-Methode stellt eine Verbindung zum Server her, wenn Sie sie aufrufen, damit Sie Authentifizierungsprobleme sofort verarbeiten können. Sie können auch weiterhin die `setCredentials`-Methode verwenden, allerdings wird die Verwendung der `ChannelSet.login`-Methode empfohlen.
+In der vorherigen Version von AEM Forms haben Sie Anmeldeinformationen an ein Ziel gesendet, indem Sie die `RemoteObject.setCredentials`-Methode aufgerufen haben. Die `setCredentials`-Methode hat die Anmeldeinformationen erst beim ersten Versuch der Komponente, eine Verbindung zum Server herzustellen, an den Server übergeben. Wenn die Komponente ein fehlerhaftes Ereignis ausgegeben hat, konnten Sie daher nicht sicher sein, ob der Fehler aufgrund eines Authentifizierungsfehlers oder aus einem anderen Grund aufgetreten ist. Die `ChannelSet.login`-Methode stellt eine Verbindung zum Server her, wenn Sie sie aufrufen, damit Sie Authentifizierungsprobleme sofort verarbeiten können. Sie können auch weiterhin die `setCredentials`-Methode verwenden, allerdings wird die Verwendung der `ChannelSet.login`-Methode empfohlen.
 
 Da mehrere Ziele dieselben Kanäle und das dazugehörige „ChannelSet“-Objekt verwenden können, wird eine Person, wenn sie sich bei einem Ziel anmeldet, auch bei jedem anderen Ziel angemeldet, das denselben Kanal oder dieselben Kanäle verwendet. Wenn zwei Komponenten unterschiedliche Anmeldeinformationen auf dasselbe „ChannelSet“-Objekt anwenden, werden die zuletzt angewendeten Anmeldeinformationen verwendet. Wenn mehrere Komponenten dasselbe authentifizierte „ChannelSet“-Objekt verwenden, werden bei Aufruf der `logout`-Methode alle Komponenten bei den Zielen abgemeldet.
 
@@ -456,7 +457,7 @@ Wenn ein AEM Forms-Service mit AEM Forms Remoting (nicht mehr unterstützt für 
 
 >[!NOTE]
 >
->Wenn ein Cookie ungültig ist oder fehlt, gibt es keine implizite Umleitung zu einer Anmeldeseite. Daher können Sie weiterhin einen anonymen Service aufrufen.
+Wenn ein Cookie ungültig ist oder fehlt, gibt es keine implizite Umleitung zu einer Anmeldeseite. Daher können Sie weiterhin einen anonymen Service aufrufen.
 
 Sie können den Single-Sign-On-Mechanismus von AEM Forms umgehen, indem Sie eine Client-Anwendung schreiben, die sich selbst an- und abmeldet. Wenn Sie den Single-Sign-On-Mechanismus umgehen, können Sie mit Ihrer Anwendung entweder eine einfache oder eine benutzerdefinierte Authentifizierung verwenden.
 
@@ -551,7 +552,7 @@ Verwenden Sie beim Übergeben eines sicheren Dokuments Single Sign-on und geben 
 
 >[!NOTE]
 >
->Wenn Sie eine Rolle erstellen und Mitglieder dieser Rolle sichere Dokumente hochladen sollen, vergewissern Sie sich, dass Sie die Berechtigung zum Hochladen von Dokumenten angeben.
+Wenn Sie eine Rolle erstellen und Mitglieder dieser Rolle sichere Dokumente hochladen sollen, vergewissern Sie sich, dass Sie die Berechtigung zum Hochladen von Dokumenten angeben.
 
 AEM Forms unterstützt einen Vorgang mit dem Namen `getFileUploadToken`, der ein Token zurückgibt, das an das Upload-Servlet übergeben wird. Die `DocumentReference.constructRequestForUpload`-Methode benötigt eine URL zu AEM Forms zusammen mit dem Token, das von der `LC.FileUploadAuthenticator.getFileUploadToken`-Methode zurückgegeben wird. Diese Methode gibt ein `URLRequest`-Objekt zurück, das beim Aufruf des Upload-Servlets verwendet wird. Der folgende Code veranschaulicht diese Anwendungslogik.
 
@@ -620,8 +621,8 @@ Mit Administration-Console können Sie, wenn Sie ein Dokument von einer Flex-Cli
 
 >[!NOTE]
 >
->* Um AEM Forms so zu konfigurieren, dass unsichere Dokumente akzeptiert werden, wählen Sie die Option „Unsicheren Dokumenten-Upload von Flex-Anwendungen zulassen“ aus. Starten Sie dann eine Anwendung oder einen Service neu, um sicherzustellen, dass die Einstellung wirksam wird.
->* Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+* Um AEM Forms so zu konfigurieren, dass unsichere Dokumente akzeptiert werden, wählen Sie die Option „Unsicheren Dokumenten-Upload von Flex-Anwendungen zulassen“ aus. Starten Sie dann eine Anwendung oder einen Service neu, um sicherzustellen, dass die Einstellung wirksam wird.
+* Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 
 ### Schnellstart: Aufrufen eines kurzlebigen Prozesses durch Übergeben eines sicheren Dokuments mithilfe von Remoting {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
@@ -976,7 +977,7 @@ Die Felder der ActionScript-Klasse entsprechen den Feldern, die zum komplexen AE
 
 >[!NOTE]
 >
->Eine gute Möglichkeit, die Feldnamen zu einem komplexen Forms-Typ zu ermitteln, besteht darin, die WSDL eines Services in einem Webbrowser anzuzeigen. Eine WSDL gibt die komplexen Typen eines Services und die entsprechenden Datenelemente an. Die folgende WSDL wird für den Kundendienst verwendet: `https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.`
+Eine gute Möglichkeit, die Feldnamen zu einem komplexen Forms-Typ zu ermitteln, besteht darin, die WSDL eines Services in einem Webbrowser anzuzeigen. Eine WSDL gibt die komplexen Typen eines Services und die entsprechenden Datenelemente an. Die folgende WSDL wird für den Kundendienst verwendet: `https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.`
 
 Die ActionScript-Klasse „Kunde“ gehört zu einem Paket namens „Kunde“. Es wird empfohlen, alle ActionScript-Klassen, die komplexen AEM Forms-Datentypen zugeordnet sind, in ihrem eigenen Paket zu platzieren. Erstellen Sie einen Ordner im src-Ordner des Flex-Projekts und legen Sie die ActionScript-Datei im Ordner ab, wie in der folgenden Abbildung dargestellt.
 
@@ -988,7 +989,7 @@ Im folgenden Beispiel-Code wird der Kundendienst aufgerufen und ein neuer Kunde 
 
 >[!NOTE]
 >
->Bevor Sie diese Kurzanleitung ausführen können, müssen Sie die benutzerdefinierte Bank-Komponente erstellen und bereitstellen.
+Bevor Sie diese Kurzanleitung ausführen können, müssen Sie die benutzerdefinierte Bank-Komponente erstellen und bereitstellen.
 
 ```java
  <?xml version="1.0" encoding="utf-8"?>

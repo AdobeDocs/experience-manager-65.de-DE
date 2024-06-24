@@ -3,9 +3,9 @@ title: Installationsproblem mit dem Service Pack von AEM Forms JEE 6.5.15.0 in d
 description: Das Service Pack von AEM Forms JEE 6.5.15.0 wird nicht ordnungsgemäß in der JBoss® Linux®-Umgebung installiert. Patch-Änderungen werden nicht auf den Anwendungs-Server angewendet. Fügen Sie die Datei „RUP_BOM.xml“ zum XML-Verzeichnis hinzu.
 exl-id: 96ecbe58-a859-4432-a2d8-3d5dc0eaf989
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms,AEM Forms on JEE
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 100%

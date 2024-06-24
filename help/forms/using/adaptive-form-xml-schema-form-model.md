@@ -1,13 +1,13 @@
 ---
 title: Wie erstelle ich adaptive Formulare mithilfe des XML-Schemas?
 description: Erfahren Sie, wie Sie ein XML-Schema als Formularmodell in einem adaptiven Formular verwenden. Sie können bestehende XSD-Vorlagen anwenden, um adaptive Formulare zu erstellen und Schemaelemente per Drag-und-Drop aus XSD auf Ihr adaptives Formular zu ziehen. Finden Sie anhand eines Beispiels für ein XML-Schema mehr heraus, fügen Sie Feldern mithilfe des XML-Schemas spezielle Eigenschaften hinzu und beschränken Sie die gültigen Werte für eine Komponente eines adaptiven Formulars.
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+workflow-type: tm+mt
 source-wordcount: '1121'
 ht-degree: 100%
 

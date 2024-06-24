@@ -4,12 +4,12 @@ description: Mit Forms können Sie eine Übermittlungsaktion konfigurieren, um z
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+workflow-type: tm+mt
 source-wordcount: '2593'
 ht-degree: 100%
 
@@ -77,7 +77,7 @@ Konfigurieren der Übermittlungsaktion „An REST-Endpunkt übermitteln“
 
 >[!NOTE]
 >
->Alle Felder müssen über verschiedene Elementnamen verfügen, um als Parameter in der REST-URL weitergeleitet zu werden, auch dann, wenn die Felder in verschiedenen Bereichen platziert sind.
+Alle Felder müssen über verschiedene Elementnamen verfügen, um als Parameter in der REST-URL weitergeleitet zu werden, auch dann, wenn die Felder in verschiedenen Bereichen platziert sind.
 
 ### Post hat Daten an eine Ressource oder einen externen REST-Endpunkt übermittelt  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
@@ -108,7 +108,7 @@ Bei der Übermittlungsaktion **E-Mail senden** wird nach erfolgreicher Übermit
 
 >[!NOTE]
 >
->Alle Formularfelder müssen unterschiedliche Elementnamen haben, auch wenn sie in verschiedenen Bereichen platziert werden, um Formulardaten in eine E-Mail aufnehmen zu können.
+Alle Formularfelder müssen unterschiedliche Elementnamen haben, auch wenn sie in verschiedenen Bereichen platziert werden, um Formulardaten in eine E-Mail aufnehmen zu können.
 
 ## PDF mittels E-Mail senden {#send-pdf-via-email}
 
@@ -116,7 +116,7 @@ Bei der Übermittlungsaktion **PDF mittels E-Mail senden** wird bei erfolgreiche
 
 >[!NOTE]
 >
->Diese Übermittlungsaktion ist für XFA-basierte adaptive Formulare und XSD-basierte adaptive Formulare verfügbar, die die Datensatzdokument-Vorlage haben.
+Diese Übermittlungsaktion ist für XFA-basierte adaptive Formulare und XSD-basierte adaptive Formulare verfügbar, die die Datensatzdokument-Vorlage haben.
 
 ## Workflow für Formulare aufrufen {#invoke-a-forms-workflow}
 
@@ -150,7 +150,7 @@ Die Übermittlungsaktion platziert Folgendes am Payload-Speicherort des Workflow
 
 >[!NOTE]
 >
->Variablen können unabhängig davon verwendet werden, ob das Workflow-Modell für die externe Datenspeicherung markiert ist oder nicht.
+Variablen können unabhängig davon verwendet werden, ob das Workflow-Modell für die externe Datenspeicherung markiert ist oder nicht.
 
 * **Anlagen**: Mit der Option **[!UICONTROL Anlagenpfad]** können Sie den Ordnernamen zum Speichern der in das adaptive Formular hochgeladenen Anlagen angeben. Der Ordner wird immer relativ zur Payload erstellt. Wenn der Workflow für die externe Datenspeicherung markiert ist, verwenden Sie die Variablenoption und wählen Sie die Variable aus der Liste der Variablen aus, die für das Workflow-Modell verfügbar sind.
 
@@ -173,7 +173,7 @@ Verwenden Sie nach der erfolgreichen Konfiguration die Übermittlungsaktion [Mi
 
 >[!NOTE]
 >
->Die Funktion „An eine Microsoft® SharePoint-Liste übermitteln“ wurde mit AEM 6.5 Forms Service Pack 19 (6.5.19.0) eingeführt.
+Die Funktion „An eine Microsoft® SharePoint-Liste übermitteln“ wurde mit AEM 6.5 Forms Service Pack 19 (6.5.19.0) eingeführt.
 
 Die Sendeaktion **[!UICONTROL An SharePoint senden]** verbindet ein adaptives Formular mit einem Microsoft® SharePoint-Speicher. Sie können die Formulardatendatei, die Anlagen oder das Datensatzdokument an den verbundenen Microsoft® Sharepoint-Speicher senden. 
 
@@ -199,7 +199,7 @@ So verbinden Sie AEM Forms mit Ihrer Microsoft® SharePoint-Liste:
 
      >[!NOTE]
      >
-     >Ob das Feld **Client-Geheimnis** obligatorisch oder optional ist, hängt von der Konfiguration Ihrer Azure Active Directory-Anwendung ab. Wenn Ihre Anwendung so konfiguriert ist, dass sie ein Client-Geheimnis verwendet, ist die Angabe des Client-Geheimnisses obligatorisch.
+     Ob das Feld **Client-Geheimnis** obligatorisch oder optional ist, hängt von der Konfiguration Ihrer Azure Active Directory-Anwendung ab. Wenn Ihre Anwendung so konfiguriert ist, dass sie ein Client-Geheimnis verwendet, ist die Angabe des Client-Geheimnisses obligatorisch.
 
 1. Klicken Sie auf **[!UICONTROL Verbinden]**. Bei erfolgreicher Verbindung erscheint die Meldung `Connection Successful`.
 1. Wählen Sie **[!UICONTROL SharePoint-Site]** und **[!UICONTROL SharePoint-Liste]** aus der Dropdown-Liste.
@@ -218,16 +218,16 @@ Wenn Sie das Formular absenden, werden die Daten im angegebenen Microsoft® Shar
 
 >[!NOTE]
 >
->Die folgenden Spaltentypen werden in der Microsoft® SharePoint-Liste nicht unterstützt:
->* Bildspalte
->* Metadatenspalte
->* Personenspalte
->* Externe Datenspalte
+Die folgenden Spaltentypen werden in der Microsoft® SharePoint-Liste nicht unterstützt:
+* Bildspalte
+* Metadatenspalte
+* Personenspalte
+* Externe Datenspalte
 
 
 >[!NOTE]
 >
->Um Konfigurationswerte festzulegen, [generieren Sie OSGi-Konfigurationen mit dem AEM-SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de#generating-osgi-configurations-using-the-aem-sdk-quickstart) und [stellen Sie die Konfiguration in Ihrer Cloud Service-Instanz bereit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de#deployment-process).
+Um Konfigurationswerte festzulegen, [generieren Sie OSGi-Konfigurationen mit dem AEM-SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de#generating-osgi-configurations-using-the-aem-sdk-quickstart) und [stellen Sie die Konfiguration in Ihrer Cloud Service-Instanz bereit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de#deployment-process).
 
 ## Server-seitige Überprüfung im adaptiven Formular {#server-side-revalidation-in-adaptive-form}
 
@@ -255,7 +255,7 @@ Wenn Endbenutzerinnen oder -benutzer diese Validierungen umgehen und die Formula
 
 >[!NOTE]
 >
->Die Server-seitige Validierung prüft das Formularmodell. Es wird empfohlen, eine separate Client-Bibliothek für Validierungen zu erstellen und sie nicht mit anderen Elementen wie HTML-Stil und DOM-Manipulation in derselben Client-Bibliothek zu mischen.
+Die Server-seitige Validierung prüft das Formularmodell. Es wird empfohlen, eine separate Client-Bibliothek für Validierungen zu erstellen und sie nicht mit anderen Elementen wie HTML-Stil und DOM-Manipulation in derselben Client-Bibliothek zu mischen.
 
 ### Unterstützende benutzerdefinierte Funktionen in Validierungsausdrücken {#supporting-custom-functions-in-validation-expressions-br}
 
