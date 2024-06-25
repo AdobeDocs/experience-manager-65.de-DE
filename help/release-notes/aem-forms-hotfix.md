@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: f9e98d7de24d516eab163d42f6c1c3155915856e
+source-git-commit: ad71f1c92bba90000f72319536fffd255fb4db6e
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '673'
 ht-degree: 79%
 
 ---
@@ -41,7 +41,7 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
      </td>
     <td>
     <ul>
-    <li> Nach der Aktualisierung auf AEM Forms Service Pack 6.5.21.0 kann der PaperCapture-Dienst OCR-Vorgänge (Optical Character Recognition) auf PDF nicht ausführen. Informationen zum Beheben des Problems finden Sie im Abschnitt <a href="/help/forms/using/papercapture-service-resolution.md"> Fehlerbehebung</a> Artikel.(CQDOC-21680) </li>
+    <li> Nach der Aktualisierung auf AEM Forms Service Pack 6.5.21.0 kann der PaperCapture-Dienst OCR-Vorgänge (Optical Character Recognition) auf PDF nicht ausführen. Installationsanweisungen finden Sie im Abschnitt <a href="/help/forms/using/papercapture-service-resolution.md"> Fehlerbehebung</a> Artikel.(CQDOC-21680) </li>
     </ul>
     </td>    
   </tr>
