@@ -9,7 +9,7 @@ exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 source-git-commit: 8f5b6aee8a48690f1ac2706f25d45e7e9424e219
 workflow-type: tm+mt
 source-wordcount: '3999'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -45,16 +45,16 @@ ht-degree: 91%
 
 Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enthalten sind:
 
-* **Unterstützung für Oauth-Anmeldedaten**: Eine neue und benutzerfreundlichere Berechtigung für die Server-zu-Server-Authentifizierung, die die vorhandene JWT-Berechtigung (Service Account) ersetzt. (NPR-41994)
-* **Verbesserungen am Regeleditor in AEM Forms**:
+* **Unterstützung für OAuth-Anmeldedaten**: Neue, benutzerfreundlichere Anmeldedaten für die Server-zu-Server-Authentifizierung, die den vorhandenen Anmeldedatentyp „Service-Konto (JWT)“ ersetzt. (NPR-41994)
+* **Verbesserungen des Regeleditors in AEM Forms**:
    * Unterstützung für die Implementierung verschachtelter Bedingungen mit `When-then-else`-Funktionalität.
    * Überprüfen oder Zurücksetzen von Panels und Formularen, einschließlich Feldern.
    * Unterstützung für moderne JavaScript-Funktionen wie Let- und Pfeilfunktionen (ES10-Unterstützung) innerhalb der benutzerdefinierten Funktionen.
-* **AutoTag-API für PDF-Barrierefreiheit**: AEM Forms on OSGi unterstützt jetzt die neue AutoTag-API zur Verbesserung der PDF für Barrierefreiheitsstandards durch Hinzufügen von Tags: Absätze und Listen. Dadurch werden PDF für Benutzende mit Hilfstechnologien leichter zugänglich.
-* **16-Bit-PNG-Unterstützung**: Der ImageToPdf-Dienst des PDF Generators unterstützt jetzt die Konvertierung von PNGs mit einer 16-Bit-Farbtiefe.
-* **Anwenden von Artefakten auf einzelne Textblöcke in XDPs**: Mit Forms Designer können Benutzer jetzt Einstellungen für einzelne Textblöcke in XDP-Dateien konfigurieren. Mit dieser Funktion können Sie die Elemente steuern, die in den resultierenden PDFs als Artefakte behandelt werden. Diese Elemente – wie Kopf- und Fußzeilen – werden für Hilfstechnologien verfügbar gemacht. Zu den Hauptfunktionen gehören das Markieren von Textbausteinen als Artefakte und das Einbetten dieser Einstellungen in die XDP-Metadaten. Der Ausgabe-Service von Forms wendet diese Einstellungen während der PDF-Erstellung an und stellt dabei ein ordnungsgemäßes PDF/UA-Tagging sicher.
-* **AEM Forms Designer ist zertifiziert für `GB18030:2022` standard**: Mit der `GB18030:2022` -Zertifizierung unterstützt Forms Designer jetzt den chinesischen Unicode-Zeichensatz, mit dem Sie chinesische Zeichen in alle bearbeitbaren Felder und Dialogfelder eingeben können.
-* **Unterstützung für WebToPDF-Route in JEE Server**: Der PDF Generator-Dienst unterstützt jetzt die WebToPDF-Route zum Konvertieren von HTML-Dateien in PDF-Dokumente auf JEE, zusätzlich zu den Routen Webkit und WebCapture (nur Windows). Die WebToPDF-Route ist zwar bereits auf OSGi verfügbar, wurde aber jetzt auch auf JEE erweitert. Sowohl auf JEE- als auch auf OSGi-Plattformen unterstützt der PDF Generator-Dienst die folgenden Routen über verschiedene Betriebssysteme hinweg:
+* **AutoTag-API für PDF-Barrierefreiheit**: AEM Forms auf OSGi unterstützt jetzt die neue AutoTag-API zur Verbesserung von PDFs entsprechend den Barrierefreiheitsstandards durch Hinzufügen von Tags: Absätze und Listen. Dadurch werden PDFs für Benutzende mit Hilfstechnologien leichter zugänglich.
+* **16-Bit-PNG-Unterstützung**: Der ImageToPdf-Dienst von PDF Generator unterstützt jetzt die Konversion von PNGs mit einer 16-Bit-Farbtiefe.
+* **Anwenden von Artefakten auf einzelne Textblöcke in XDPs**: Mit Forms Designer können Benutzende jetzt Einstellungen für einzelne Textblöcke in XDP-Dateien konfigurieren. Mit dieser Funktion können Sie die Elemente steuern, die in den resultierenden PDFs als Artefakte behandelt werden. Diese Elemente – wie Kopf- und Fußzeilen – werden für Hilfstechnologien verfügbar gemacht. Zu den Hauptfunktionen gehören das Markieren von Textbausteinen als Artefakte und das Einbetten dieser Einstellungen in die XDP-Metadaten. Der Ausgabe-Service von Forms wendet diese Einstellungen während der PDF-Erstellung an und stellt dabei ein ordnungsgemäßes PDF/UA-Tagging sicher.
+* **AEM Forms Designer ist nach dem Standard `GB18030:2022` zertifiziert**: Mit der Zertifizierung `GB18030:2022` unterstützt Forms Designer jetzt den chinesischen Unicode-Zeichensatz, was die Eingabe chinesischer Zeichen in alle bearbeitbaren Felder und Dialogfelder ermöglicht.
+* **Unterstützung der WebToPDF-Route in JEE Server**: Der PDF Generator-Dienst unterstützt jetzt die WebToPDF-Route für die Konvertierung von HTML-Dateien in PDF-Dokumente auf JEE, zusätzlich zu den Routen „Webkit“ und „WebCapture“ (nur Windows). Die WebToPDF-Route ist zwar bereits auf OSGi verfügbar, wurde aber jetzt auch auf JEE erweitert. Sowohl auf JEE- als auch auf OSGi-Plattformen unterstützt der PDF Generator-Dienst die folgenden Routen über verschiedene Betriebssysteme hinweg:
    * **Windows**: Webkit, WebCapture, WebToPDF
    * **Linux**: Webkit, WebToPDF
 
@@ -532,14 +532,14 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 ### Bekannte Probleme bei AEM Forms {#known-issues-aem-forms-6521}
 
 
-* Nach der Installation von AEM Forms JEE Service Pack 21 (6.5.21.0), wenn Sie doppelte Einträge von Geode jars finden `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` unter `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926), führen Sie die folgenden Schritte aus, um das Problem zu beheben:
+* Wenn Sie nach der Installation von AEM Forms JEE Service Pack 21 (6.5.21.0) doppelte Einträge von Geode-JAR-Dateien `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` unter dem Ordner `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926) finden, führen Sie die folgenden Schritte durch, um das Problem zu beheben:
 
-   1. Stoppen Sie die Locators, wenn sie ausgeführt werden.
-   1. Beenden Sie den AEM Server.
-   1. Navigieren Sie zu `<AEM_Forms_Installation>/lib/caching/lib`.
-   1. Entfernen Sie alle Geode Patch-Dateien außer `geode-*-1.15.1.2.jar`. Bestätigen Sie, dass nur die Geode-JAR-Dateien mit `version 1.15.1.2` vorhanden sind.
-   1. Öffnen Sie die Eingabeaufforderung im Administratormodus.
-   1. Installieren Sie den Geode-Patch mit dem `geode-*-1.15.1.2.jar` -Datei.
+   1. Beenden der Locators, falls sie noch ausgeführt werden.
+   1. Beenden des AEM-Servers.
+   1. Wechseln zum Ordner `<AEM_Forms_Installation>/lib/caching/lib`.
+   1. Entfernen aller Geode-Patch-Dateien außer `geode-*-1.15.1.2.jar`. Bestätigen, dass nur die Geode-JAR-Dateien mit `version 1.15.1.2` vorhanden sind.
+   1. Öffnen der Eingabeaufforderung im Administratormodus.
+   1. Installieren des Geode-Patches mithilfe der Datei `geode-*-1.15.1.2.jar`.
 
 * Wenn ein Benutzer versucht, einen Briefentwurf mit gespeicherten XML-Daten in der Vorschau anzuzeigen, bleibt er hängen `Loading` für einige spezifische Buchstaben angeben. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Abschnitt [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) Artikel. (FORMS-14521)
 
