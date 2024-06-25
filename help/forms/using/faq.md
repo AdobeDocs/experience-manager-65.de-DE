@@ -13,7 +13,7 @@ role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2007'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -172,7 +172,7 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
    Antwort: HTML5-Formulare unterstützen keine Anzeigemuster für schwebende Felder.
 
-1. Welches Format hat das Datumsfeld in HTML5 Forms?
+1. Welches Format hat das Datumsfeld in HTML5-Formularen?
 Antwort: Das Datumsfeld akzeptiert das ISO-Format JJJJ-MM-TT. Wenn Sie ein Datum in einem anderen Format angeben, übernimmt das Datumsfeld die Formatierung erst, wenn der Benutzer das Feld mit der Tabulatortaste verlässt.
 
 ### Skripterstellung {#scripting}
