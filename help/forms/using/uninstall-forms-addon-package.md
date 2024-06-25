@@ -6,9 +6,9 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 975f1f580404ea1f2940aec5981f5668dced4b95
+source-git-commit: 2755e414ea23ebc1472e9c08d832eca93f28311b
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '228'
 ht-degree: 1%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 1%
 
 # Deinstallieren des AEM Forms Add-On-Pakets von AEM Instanz
 
-In diesem Artikel werden die Schritte beschrieben, die zur ordnungsgemäßen Deinstallation des AEM Forms Add-On-Pakets von einer AEM Forms SDK-Instanz erforderlich sind. Führen Sie diese Schritte aus, um das Entfernen des Forms-Add-On-Pakets sicherzustellen und potenzielle Probleme mit Ihrer AEM-Umgebung zu vermeiden.
+In diesem Artikel werden die Schritte beschrieben, die zur ordnungsgemäßen Deinstallation des AEM Forms Add-On-Pakets von einer AEM Forms SDK-Instanz erforderlich sind. Führen Sie diese Schritte aus, um sicherzustellen, dass das Forms-Add-On-Paket entfernt wird, und so potenzielle Probleme mit Ihrer AEM-Umgebung vermieden werden.
 
-## Voraussetzungen
+## Voraussetzung
 
-Stellen Sie sicher, dass Sie Formulare und Daten sichern, um Datenverlust zu vermeiden.
+Stellen Sie sicher, dass Sie eine Sicherung durchführen, um Datenverlust zu vermeiden.
 
 ## Deinstallieren des AEM Forms Add-On-Pakets
 
