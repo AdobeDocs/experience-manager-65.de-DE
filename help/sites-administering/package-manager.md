@@ -9,10 +9,10 @@ content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
-source-wordcount: '3565'
-ht-degree: 100%
+source-git-commit: c705667e60ccfbc4612ef3212dbe549e6bea66a9
+workflow-type: tm+mt
+source-wordcount: '3568'
+ht-degree: 97%
 
 ---
 
@@ -155,7 +155,7 @@ Verwenden Sie ein eindeutiges Symbol für Ihr Paket. Verwenden Sie kein von Adob
 
 Filter identifizieren die Repository-Knoten, die in das Paket eingeschlossen werden sollen. Eine **Filterdefinition** legt die folgenden Informationen fest:
 
-* Den **Stammpfad** der einzufügenden Inhalte
+* Die **Stammpfad** des einzuschließenden Inhalts
 * **Regeln**, durch die spezifische Knoten unterhalb des Stammpfads eingeschlossen oder ausgeschlossen werden
 
 Sie können Regeln mithilfe der Schaltfläche **+** hinzufügen. Sie können Regeln mithilfe der Schaltfläche **-** entfernen.
@@ -168,18 +168,22 @@ Sie können eine oder mehrere Filterdefinitionen für ein Paket definieren. Verw
 
 ![Registerkarte „Filter“](assets/edit-filter.png)
 
-Beim Erstellen von Filtern können Sie einen Pfad definieren oder einen regulären Ausdruck verwenden, um alle Knoten anzugeben, die Sie ein- oder ausschließen möchten.
+Beim Erstellen von Regeln definieren Sie einen regulären Ausdruck (auch als regex, regexp oder rationaler Ausdruck bezeichnet), um alle Knoten anzugeben, die ein- oder ausgeschlossen werden sollen.
 
 | Regeltyp | Beschreibung |
 |---|---|
-| include | Das Einbeziehen eines Verzeichnisses schließt dieses Verzeichnis und alle Dateien und Ordner in diesem Verzeichnis ein (d. h. die gesamte Unterstruktur), aber es werden **keine** anderen Dateien oder Ordner unter dem angegebenen Stammpfad einbezogen. |
-| exclude | Beim Ausschließen eines Verzeichnisses werden dieses Verzeichnis sowie alle Dateien und Ordner in diesem Verzeichnis (d. h. die gesamte Unterstruktur) ausgeschlossen. |
+| include | Include umfasst alle Dateien und Ordner im angegebenen Verzeichnis, die mit dem regulären Ausdruck übereinstimmen. Einschließen **nicht** andere Dateien oder Ordner aus unter dem angegebenen Stammpfad einschließen. |
+| exclude | Ausschließen schließt alle Dateien und Ordner aus, die dem regulären Ausdruck entsprechen. |
 
 Paketfilter werden meistens definiert, wenn Sie das Paket zum ersten Mal [erstellen.](#creating-a-new-package) Sie können jedoch auch später bearbeitet werden. Danach sollte das Paket neu aufgebaut werden, um seinen Inhalt basierend auf den neuen Filterdefinitionen zu aktualisieren.
 
 >[!TIP]
 >
 >Ein Paket kann mehrere Filterdefinitionen enthalten, sodass sich Knoten von verschiedenen Orten einfach in einem Paket kombinieren lassen.
+
+>[!TIP]
+>
+>Hintergrundinformationen finden Sie unter [Apache Jackrabbit - Workspace-Filter](https://jackrabbit.apache.org/filevault/filter.html) Dokumentation.
 
 ### Abhängigkeiten {#dependencies}
 
