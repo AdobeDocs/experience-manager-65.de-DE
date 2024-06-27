@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '10824'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -254,15 +254,15 @@ Folgende Einstellungen sind für den Generate PDF-Dienst verfügbar:
 
 **Dateitypeinstellungen**: Der Name der vorkonfigurierten Dateitypeinstellungen, die auf einen Konvertierungsauftrag angewendet werden sollen, wenn diese Einstellungen nicht als Bestandteil der API-Aufrufparameter angegeben wurden. Sie können die Dateitypeinstellungen in Administration Console konfigurieren, indem Sie auf „Dienste“ > „ PDF Generator “ > „Dateitypeinstellungen“ klicken.
 
-**WebCapture verwenden (nur Windows):** Wenn diese Einstellung wahr ist, verwendet der Generate PDF-Dienst Acrobat für alle HTML-zu-PDF-Konvertierungen. Auf diese Weise kann die Qualität der aus HTML erzeugten PDF-Dateien verbessert werden, obwohl die Leistung möglicherweise etwas langsamer wird. Der Standardwert lautet false.
+**WebCapture verwenden (nur Windows):** Wenn diese Einstellung aktiviert ist, verwendet der Generate PDF-Dienst Acrobat für alle Konvertierungen von HTML in PDF. Auf diese Weise kann die Qualität der aus HTML erzeugten PDF-Dateien verbessert werden, obwohl die Leistung möglicherweise etwas langsamer wird. Der Standardwert lautet false.
 
-**Primärer Konverter für HTML in PDF-Konvertierungen:** Der Generate PDF-Dienst bietet mehrere Routen zum Konvertieren von HTML-Dateien in PDF-Dokumente: Webkit, WebCapture (nur Windows) und WebToPDF. Diese Einstellung ermöglicht es dem Benutzer, den primären Konverter zum Konvertieren von HTML in PDF auszuwählen. Standardmäßig ist WebToPDF ausgewählt.
+**Primärer Converter für HTML-in-PDF-Konvertierungen:** Der Generate PDF-Dienst bietet mehrere Routen zum Konvertieren von HTML-Dateien in PDF-Dokumente: Webkit, WebCapture (nur Windows) und Web in PDF. Diese Einstellung ermöglicht es Benutzenden, den primären Converter zum Konvertieren von HTML in PDF auszuwählen. Standardmäßig wird WebToPDF ausgewählt.
 
-**Fallback-Konverter für HTML-zu-PDF-Konvertierungen:** Geben Sie den Konverter für HTML-zu-PDF-Konvertierungen an, wenn der primäre Konverter fehlschlägt. Standardmäßig ist WebCapture (nur Windows) ausgewählt.
+**Fallback-Converter für HTML-in-PDF-Konvertierungen:** Geben Sie den Converter für Konvertierungen von HTML in PDF an, falls der primäre Converter fehlschlägt. Standardmäßig ist WebCapture (nur Windows) ausgewählt.
 
-**Acrobat-Bildkonvertierung verwenden (nur Windows):** Wenn diese Einstellung wahr ist, verwendet der Generate PDF-Dienst Acrobat für alle &quot;Bild in PDF&quot;-Konvertierungen. Diese Einstellung ist nur dann sinnvoll, wenn mit dem standardmäßigen, reinen Java-Konvertierungsmechanismus ein erheblicher Teil der Eingabebilder nicht erfolgreich konvertiert werden kann. Der Standardwert lautet false.
+**Acrobat-Bildkonvertierung verwenden (nur Windows):** Wenn diese Einstellung aktiviert ist, verwendet der Generate PDF-Dienst Acrobat für alle Konvertierungen von Bildern in PDF. Diese Einstellung ist nur dann sinnvoll, wenn mit dem standardmäßigen, reinen Java-Konvertierungsmechanismus ein erheblicher Teil der Eingabebilder nicht erfolgreich konvertiert werden kann. Der Standardwert lautet false.
 
-**Aktivieren Sie Acrobat-basierte AutoCAD-Konvertierungen (nur Windows):** Wenn diese Einstellung wahr ist, verwendet der Generate PDF-Dienst Acrobat für alle DWG-zu-PDF-Konvertierungen. Diese Einstellung ist nur sinnvoll, wenn AutoCAD nicht auf dem Server installiert ist bzw. wenn der AutoCAD-Konvertierungsmechanismus nicht in der Lage ist, Dateien erfolgreich zu konvertieren.
+**Acrobat-basierte AutoCAD-Konvertierungen aktivieren (nur Windows):** Wenn diese Einstellung aktiviert ist, verwendet der Generate PDF-Dienst Acrobat für alle Konvertierungen von DWG in PDF. Diese Einstellung ist nur sinnvoll, wenn AutoCAD nicht auf dem Server installiert ist oder wenn der AutoCAD-Konvertierungsmechanismus nicht in der Lage ist, Dateien erfolgreich zu konvertieren.
 
 **Reguläre Ausdrücke zum Auffinden nicht zulässiger
 Sonderzeichen in Benutzernamen (nur Windows)**: Gibt Zeichen an, welche die Vorgänge zum Erstellen und Optimieren von PDF-Dateien beeinträchtigen, wenn die Zeichen im Benutzernamen enthalten sind.
@@ -273,7 +273,7 @@ Sonderzeichen in Benutzernamen (nur Windows)**: Gibt Zeichen an, welche die Vorg
 
 **OCR-Pool-Größe**: Die Pool-Größe des PaperCaptureService, den PDF Generator für optische Zeichenerkennung (OCR) verwendet. Der Standardwert dieser Einstellung (empfohlen für Einzelprozessorsysteme) ist 3, wobei der Wert für Multiprozessorsysteme erhöht werden kann. Diese Einstellung ist nur auf Windows-Systemen gültig.
 
-**ImageToPDF max-Seiten im Speicher für TIFF-Konvertierungen:** Diese Einstellung legt die maximale Anzahl von Seiten eines TIFF-Bildes fest, die im Speicher verbleiben können, bevor sie während der Konvertierung in PDF auf die Festplatte geleert werden. Der Standardwert für diese Einstellung ist 500. Dieser Wert kann erhöht werden, wenn dem ImageToPDF-Konvertierungsprozess zusätzlicher Arbeitsspeicher zugewiesen wird.
+**Höchstzahl an ImageToPDF-Seiten im Arbeitsspeicher für TIFF-Konvertierung:** Diese Einstellung legt die maximale Anzahl von Seiten eines TIFF-Bildes fest, die im Speicher verbleiben können, bevor sie während der Konvertierung in PDF auf die Festplatte geleert werden. Der Standardwert für diese Einstellung ist 500. Dieser Wert kann erhöht werden, wenn dem ImageToPDF-Konvertierungsprozess zusätzlicher Speicher zugewiesen wird.
 
 **Ersatzschriftfamilie für HTML-zu-PDF-Konvertierungen**: Der Name der Schriftfamilie, die in PDF-Dokumenten verwendet werden soll, wenn die im Original-HTML verwendete Schriftart nicht für den AEM-Formular-Server verfügbar ist. Geben Sie eine Schriftfamilie an, wenn Sie HTML-Seiten konvertieren möchten, die nicht verfügbare Schriftarten verwenden. Beispielsweise könnten Seiten, die in regionalen Sprachen verfasst wurden, nicht verfügbare Schriftarten verwenden.
 

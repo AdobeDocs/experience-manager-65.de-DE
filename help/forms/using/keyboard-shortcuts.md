@@ -9,7 +9,7 @@ exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1192'
 ht-degree: 100%
 
@@ -48,10 +48,10 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 
 >[!NOTE]
 >
->Mehrfachauswahl auf einem Desktop-Gerät:
+Mehrfachauswahl auf einem Desktop-Gerät:
 >
->* Windows: Strg+Klick auf die gewünschten Komponenten.
->* macOS: Befehl+Klick auf die erforderlichen Komponenten.
+* Windows: Strg+Klick auf die gewünschten Komponenten.
+* macOS: Befehl+Klick auf die erforderlichen Komponenten.
 >
 
 ## Themen-Editor  {#themeeditor}
@@ -66,7 +66,7 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 
 >[!NOTE]
 >
->Mit „&amp;ast;“ markierte Tastaturbefehle können unter macOS sowohl mit der Strg- als auch mit der Befehlstaste verwendet werden.
+Mit „&amp;ast;“ markierte Tastaturbefehle können unter macOS sowohl mit der Strg- als auch mit der Befehlstaste verwendet werden.
 
 ## Inhalts-Browser  {#contentbrowser}
 
