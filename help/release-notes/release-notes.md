@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 source-git-commit: 8f5b6aee8a48690f1ac2706f25d45e7e9424e219
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3999'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -541,9 +541,9 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
    1. Öffnen der Eingabeaufforderung im Administratormodus.
    1. Installieren des Geode-Patches mithilfe der Datei `geode-*-1.15.1.2.jar`.
 
-* Wenn ein Benutzer versucht, einen Briefentwurf mit gespeicherten XML-Daten in der Vorschau anzuzeigen, bleibt er hängen `Loading` für einige spezifische Buchstaben angeben. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Abschnitt [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) Artikel. (FORMS-14521)
+* Wenn Benutzende versuchen, einen Briefentwurf mit gespeicherten XML-Daten in der Vorschau anzuzeigen, bleibt er für bestimmte Buchstaben im `Loading`-Zustand hängen. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (FORMS-14521)
 
-* Nach der Aktualisierung auf AEM Forms Service Pack 6.5.21.0 wird die `PaperCapture` -Dienst führt keine OCR-Vorgänge (Optical Character Recognition) auf PDF durch. Der Dienst generiert keine Ausgabe in Form einer PDF oder einer Protokolldatei. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Abschnitt [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) Artikel. (CQDOC-21680)
+* Nach der Aktualisierung auf AEM Forms Service Pack 6.5.21.0 kann der `PaperCapture`-Dienst keine OCR-Vorgänge (Optical Character Recognition) für PDFs mehr durchführen. Der Dienst generiert keine Ausgabe in Form einer PDF oder einer Protokolldatei. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (CQDOC-21680)
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 
