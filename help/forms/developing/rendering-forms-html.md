@@ -93,7 +93,7 @@ Formularskripte, die sich im Ereignis form:ready befinden, werden nur einmal wä
 
 >[!NOTE]
 >
-In einem mehrseitigen Formular werden Änderungen, die von JavaScript an einer Seite vorgenommen werden, nicht beibehalten, wenn Sie zu einer anderen Seite wechseln.
+>In einem mehrseitigen Formular werden Änderungen, die von JavaScript an einer Seite vorgenommen werden, nicht beibehalten, wenn Sie zu einer anderen Seite wechseln.
 
 Sie können benutzerdefinierte Skripte vor dem Senden eines Formulars aufrufen. Diese Funktion funktioniert in allen verfügbaren Browsern. Sie kann jedoch nur verwendet werden, wenn Benutzer das HTML-Formular wiedergeben, dessen `Output Type`-Eigenschaft auf `Form Body` gesetzt ist. Dies wird nicht funktionieren, wenn `Output Type` `Full HTML` ist. Die Schritte zur Konfiguration dieser Funktion finden Sie unter Konfigurieren von Formularen in der Administrationshilfe.
 
@@ -167,7 +167,7 @@ Das folgende Skript erhält die `fillColor` eines Feldes auf der Grundlage des W
 
 >[!NOTE]
 >
-Statische Objekte werden nicht in einem wiedergegebenen HTML-Formular angezeigt, wenn sie in einer Tabellenzelle verschachtelt sind. Beispielsweise werden ein in einer Tabellenzelle verschachtelter Kreis und Rechteck nicht in einem Render-HTML-Formular angezeigt. Dieselben statischen Objekte werden jedoch korrekt angezeigt, wenn sie sich außerhalb der Tabelle befinden.
+>Statische Objekte werden nicht in einem wiedergegebenen HTML-Formular angezeigt, wenn sie in einer Tabellenzelle verschachtelt sind. Beispielsweise werden ein in einer Tabellenzelle verschachtelter Kreis und Rechteck nicht in einem Render-HTML-Formular angezeigt. Dieselben statischen Objekte werden jedoch korrekt angezeigt, wenn sie sich außerhalb der Tabelle befinden.
 
 ## HTML-Formulare digital signieren {#digitally-signing-html-forms}
 
@@ -190,7 +190,7 @@ Es wird empfohlen, die Verwendung von Validierungsregeln für Formularfelder bei
 
 >[!NOTE]
 >
-Weitere Informationen über den Forms-Dienst finden Sie unter [Dienstreferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen über den Forms-Dienst finden Sie unter [Dienstreferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Zusammenfassung der Schritte {#summary-of-steps}
 
@@ -226,11 +226,11 @@ HTTP-URLs, an die Formulardaten gesendet werden, können durch Festlegen der Zie
 
 >[!NOTE]
 >
-Das Rendern eines HTML-Formulars mit einer Symbolleiste ist optional.
+>Das Rendern eines HTML-Formulars mit einer Symbolleiste ist optional.
 
 >[!NOTE]
 >
-Wenn Sie ein AHTML-Formular rendern, wird empfohlen, keine Symbolleiste zum Formular hinzuzufügen.
+>Wenn Sie ein AHTML-Formular rendern, wird empfohlen, keine Symbolleiste zum Formular hinzuzufügen.
 
 **Rendern eines HTML-Formulars**
 
@@ -282,7 +282,7 @@ So rendern Sie ein HTML-Formular mithilfe der Forms-API (Java):
 
    >[!NOTE]
    >
-   Formulare werden nicht erfolgreich in HTML gerendert, wenn die Option `StandAlone` `true` ist und `ApplicationWebRoot` auf einen anderen Server als den J2EE-Anwendungs-Server verweist, auf dem AEM Forms gehostet wird (der Wert von `ApplicationWebRoot` wird mithilfe des `URLSpec`-Objekts angegeben, das an die Methode `(Deprecated) renderHTMLForm` des `FormsServiceClient`-Objekts übergeben wird). Wenn es sich bei `ApplicationWebRoot` um einen anderen Server als den handelt, auf dem AEM Forms gehostet wird, muss der der URI-Wert des Web-Stamms in der Administration Console als URI-Wert für das Web-Programm des Formulars festgelegt werden. Dazu können Sie sich bei Administration Console anmelden, auf „Services“ > „Forms“ klicken und den URI des Web-Stamms auf https://server-name:port/FormServer setzen. Speichern Sie dann Ihre Einstellungen.
+   >Formulare werden nicht erfolgreich in HTML gerendert, wenn die Option `StandAlone` `true` ist und `ApplicationWebRoot` auf einen anderen Server als den J2EE-Anwendungs-Server verweist, auf dem AEM Forms gehostet wird (der Wert von `ApplicationWebRoot` wird mithilfe des `URLSpec`-Objekts angegeben, das an die Methode `(Deprecated) renderHTMLForm` des `FormsServiceClient`-Objekts übergeben wird). Wenn es sich bei `ApplicationWebRoot` um einen anderen Server als den handelt, auf dem AEM Forms gehostet wird, muss der der URI-Wert des Web-Stamms in der Administration Console als URI-Wert für das Web-Programm des Formulars festgelegt werden. Dazu können Sie sich bei Administration Console anmelden, auf „Services“ > „Forms“ klicken und den URI des Web-Stamms auf https://server-name:port/FormServer setzen. Speichern Sie dann Ihre Einstellungen.
 
 1. Rendern eines HTML-Formulars
 
@@ -340,7 +340,7 @@ So rendern Sie ein HTML-Formular mithilfe der Forms-API (Webservice):
 
    >[!NOTE]
    >
-   Formulare werden nicht erfolgreich in HTML gerendert, wenn die Option `StandAlone` `true` ist und `ApplicationWebRoot` auf einen anderen Server als den J2EE-Anwendungs-Server verweist, auf dem AEM Forms gehostet wird (der Wert von `ApplicationWebRoot` wird mithilfe des `URLSpec`-Objekts angegeben, das an die Methode `(Deprecated) renderHTMLForm` des `FormsServiceClient`-Objekts übergeben wird). Wenn es sich bei `ApplicationWebRoot` um einen anderen Server als den handelt, auf dem AEM Forms gehostet wird, muss der der URI-Wert des Web-Stamms in der Administration Console als URI-Wert für das Web-Programm des Formulars festgelegt werden. Dazu können Sie sich bei Administration Console anmelden, auf „Services“ > „Forms“ klicken und den URI des Web-Stamms auf https://server-name:port/FormServer setzen. Speichern Sie dann Ihre Einstellungen.
+   >Formulare werden nicht erfolgreich in HTML gerendert, wenn die Option `StandAlone` `true` ist und `ApplicationWebRoot` auf einen anderen Server als den J2EE-Anwendungs-Server verweist, auf dem AEM Forms gehostet wird (der Wert von `ApplicationWebRoot` wird mithilfe des `URLSpec`-Objekts angegeben, das an die Methode `(Deprecated) renderHTMLForm` des `FormsServiceClient`-Objekts übergeben wird). Wenn es sich bei `ApplicationWebRoot` um einen anderen Server als den handelt, auf dem AEM Forms gehostet wird, muss der der URI-Wert des Web-Stamms in der Administration Console als URI-Wert für das Web-Programm des Formulars festgelegt werden. Dazu können Sie sich bei Administration Console anmelden, auf „Services“ > „Forms“ klicken und den URI des Web-Stamms auf https://server-name:port/FormServer setzen. Speichern Sie dann Ihre Einstellungen.
 
 1. Rendern eines HTML-Formulars
 
