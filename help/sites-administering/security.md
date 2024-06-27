@@ -10,10 +10,10 @@ exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
-workflow-type: ht
-source-wordcount: '5398'
-ht-degree: 100%
+source-git-commit: 84979bbb49d47ec47c898a6747f64048b577c365
+workflow-type: tm+mt
+source-wordcount: '5409'
+ht-degree: 99%
 
 ---
 
@@ -96,7 +96,7 @@ In der folgenden Tabelle finden Sie eine Aufstellung der einzelnen Elemente zusa
   <tr>
    <td>contributor</td>
    <td>Gruppe</td>
-   <td><p>Grundlegende Berechtigungen, die es Benutzenden erlauben, Inhalte zu schreiben (rein funktionsbezogen).</p> <p>Weist der „/content“-Struktur keine Berechtigungen zu. Muss für die einzelnen Gruppen oder Benutzenden zugewiesen werden.</p> </td>
+   <td><p>Grundlegende Berechtigungen, die es dem Benutzer ermöglichen, Inhalte zu schreiben (wie in, nur die für die grundlegende Funktionalität erforderlichen Berechtigungen).</p> <p>Weist keine Berechtigungen für den Zugriff auf die /content-Struktur selbst zu. Diese müssen speziell für die einzelnen Gruppen oder Benutzer zugewiesen werden.</p> </td>
    <td> </td>
   </tr>
   <tr>
