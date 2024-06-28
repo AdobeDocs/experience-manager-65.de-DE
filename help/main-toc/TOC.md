@@ -1205,7 +1205,7 @@ ht-degree: 99%
       + [Beim Drucken einer großen Anzahl von PDFs auf WorkBench schlägt die PDF-Generierung fehl](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [Ordnungsgemäßes Neustarten von AEM SDK](/help/forms/using/restart-aem-sdk.md)
       + [Der PaperCapture-Dienst kann OCRs auf PDF nicht ausführen](/help/forms/using/papercapture-service-resolution.md)
-      + [Deinstallieren des AEM Forms Add-On-Pakets](/help/forms/using/uninstall-forms-addon-package.md)
+      + [Deinstallieren des AEM Forms-Add-On-Pakets](/help/forms/using/uninstall-forms-addon-package.md)
    + Alte Dokumentation {#legacy-documentation}
       + [Verwenden des Service „execute script“ in AEM Forms on JEE Workbench zum Erstellen von XML-Daten](/help/forms/developing/building-xml.md)
       + [Komprimieren und Dekomprimieren von Dateien mithilfe eines benutzerdefinierten DSC von AEM Forms auf JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)
