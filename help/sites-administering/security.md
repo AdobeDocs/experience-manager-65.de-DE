@@ -11,9 +11,9 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 84979bbb49d47ec47c898a6747f64048b577c365
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5409'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ In der folgenden Tabelle finden Sie eine Aufstellung der einzelnen Elemente zusa
   <tr>
    <td>contributor</td>
    <td>Gruppe</td>
-   <td><p>Grundlegende Berechtigungen, die es dem Benutzer ermöglichen, Inhalte zu schreiben (wie in, nur die für die grundlegende Funktionalität erforderlichen Berechtigungen).</p> <p>Weist keine Berechtigungen für den Zugriff auf die /content-Struktur selbst zu. Diese müssen speziell für die einzelnen Gruppen oder Benutzer zugewiesen werden.</p> </td>
+   <td><p>Grundlegende Berechtigungen (d. h. nur die für die grundlegende Funktionalität erforderlichen Berechtigungen), die es den Benutzenden ermöglichen, Inhalte zu schreiben.</p> <p>Weist keine Berechtigungen zum Zugriff auf die „/content“-Baumstruktur zu. Diese müssen spezifisch für die einzelnen Gruppen oder Benutzenden zugewiesen werden.</p> </td>
    <td> </td>
   </tr>
   <tr>
