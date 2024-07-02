@@ -7,9 +7,9 @@ user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Mana
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
 source-git-commit: 721837590521aeaa82ab8a960098eba87c0ffb43
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7456'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -881,7 +881,7 @@ ht-degree: 99%
       + [Best Practices für die Barrierefreiheit]{#accessibility-best-practices}
          + [Einführung](/help/forms/using/introduction-accessibility-forms-designer.md)
          + [Best Practices zum Erstellen von Formularen](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
-         + [Verfahren zum Testen der Barrierefreiheit von Formularen](/help/forms/using/techniques-for-testing-form-accessibility.md)
+         + [Techniken zum Testen der Barrierefreiheit von Formularen](/help/forms/using/techniques-for-testing-form-accessibility.md)
          + [Zuordnung zwischen Richtlinien und Best Practices](/help/forms/using/mapping-between-guidelines-and-best-practices.md)
          + [Nützliche Links](/help/forms/using/useful-links-accessibility-forms-designer.md)
    + Passen Sie AEM Forms an {#customize-aem-forms}
