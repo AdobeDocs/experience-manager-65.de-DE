@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 2266f67d834341715b7300ff366f93d960110dac
-workflow-type: ht
-source-wordcount: '1734'
-ht-degree: 100%
+source-git-commit: f2f6f7efe67efdfc88863593844cc172a4815622
+workflow-type: tm+mt
+source-wordcount: '1697'
+ht-degree: 99%
 
 ---
 
@@ -140,12 +140,9 @@ Navigieren Sie zum entsprechenden Ordner und geben Sie in einer Shell Folgendes 
 
 +++
 
-+++5. Installation des Servlet-Fragments (AEM Service Pack 6.5.14.0 oder früher) (**Obligatorische Installation**)
++++5. Installieren Sie das Servlet-Fragment, falls es nicht installiert ist (**Erforderlicher Schritt**)
 
->[!NOTE]
->
-> * Wenn Sie ein Upgrade von **AEM Service Pack 6.5.15.0** durchführen, ist die Installation des **Servlet-Fragments** nicht erforderlich. Für die Versionen **AEM Service Pack 6.5.14.0** oder früher ist es **zwingend erforderlich, das Servlet-Fragment zu installieren**.
-
+<!-- >[!NOTE] > > * If you are upgrading from **AEM Service Pack 6.5.15.0**, the installation of the **servlet fragment** is not required. For versions **AEM Service Pack 6.5.14.0** or earlier, it is **mandatory to install** the servlet fragment. -->
 
 So laden Sie das Servlet-Fragment herunter und installieren es:
 
