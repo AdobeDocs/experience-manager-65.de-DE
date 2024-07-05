@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: b24a1b225b2d798db26be1533e2e74bf08fdaa5d
+source-git-commit: 4883ed159b945093b8530e6ec2c2217d4f3c2409
 workflow-type: tm+mt
-source-wordcount: '4070'
-ht-degree: 98%
+source-wordcount: '4099'
+ht-degree: 97%
 
 ---
 
@@ -547,7 +547,10 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
 * Wenn Benutzer von AEM 6.5 Forms Service Pack 18 (6.5.18.0) oder AEM 6.5 Forms Service Pack 19 (6.5.19.0) auf AEM 6.5 Forms Service Pack 20 (6.5.20.0) oder AEM 6.5 Forms Service Pack 21 (6.5.21.0) aktualisieren, wird eine JSP-Kompilierung angezeigt Fehlerkorrektur - dadurch wird verhindert, dass adaptive Formulare geöffnet oder erstellt werden, und es werden auch Fehler mit anderen AEM Benutzeroberflächen wie dem Seiteneditor, AEM Forms Benutzeroberfläche und AEM Workflow-Editor verursacht. (FORMS-15256)
 
-
+  Wenn ein solches Problem auftritt, führen Sie die folgenden Schritte aus, um es zu beheben:
+   1. Navigieren Sie zum Verzeichnis . `/libs/fd/aemforms/install/` in CRXDE.
+   1. Löschen Sie das Bundle mit dem Namen `com.adobe.granite.ui.commons-5.10.26.jar`.
+   1. Starten Sie den AEM-Server neu.
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 
