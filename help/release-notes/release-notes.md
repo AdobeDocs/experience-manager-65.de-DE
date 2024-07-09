@@ -9,7 +9,7 @@ exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 source-git-commit: 4883ed159b945093b8530e6ec2c2217d4f3c2409
 workflow-type: tm+mt
 source-wordcount: '4099'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -191,7 +191,7 @@ Im Folgenden finden Sie eine Liste der in dieser Version enthaltenen Fehlerbeheb
 * Wenn Benutzende ein Formular mit dem AEM 6.5 Forms Service Pack 17 (6.5.17.0) oder Service Pack 18 (6.5.18.0) oder Service Pack 19 (6.5.19.0) senden, funktioniert die Übersetzung von „Vielen Dank“-Nachrichten nicht ordnungsgemäß. Die Nachrichten sind jedoch korrekt im Wörterbuch übersetzt. (FORMS-13846)
 * Wenn Benutzende die Vorschau eines Formulars mit einer Komponente für die Datumsauswahl anzeigen, wird das Feld für die Datumsauswahl nicht richtig mit den anderen Formularfeldern ausgerichtet. (FORMS-13763)
 * Wenn Benutzende in der Umgebung von AEM Forms Service Pack 19 (6.5.19.0) die API aufrufen, um Zahlen zu formatieren, werden die formatierten Zahlen nicht mit den entsprechenden Gebietsschemata abgestimmt. Daher werden die Währungszeichen nicht korrekt angezeigt. Das Problem bleibt unabhängig davon bestehen, ob der Gebietsschemaparameter auf „de_DE“ oder „en_US“ festgelegt ist. (FORMS-13759)
-* Wenn Benutzende in der Umgebung von AEM Forms Service Pack 19 (6.5.19.0) 16-Bit-PNGs mithilfe des Img2Pdf PDFG-Dienstes in PDF konvertieren, schlägt dieser Vorgang fehl und der Dienst „Acrobat Image Conversion verwenden“ kann nicht verwendet werden.  (FORMS-13754)
+* Wenn Benutzende in der Umgebung von AEM Forms Service Pack 19 (6.5.19.0) 16-Bit-PNGs mithilfe des Img2Pdf PDFG-Dienstes in PDF konvertieren, schlägt dieser Vorgang fehl und der Dienst „Acrobat Image Conversion verwenden“ kann nicht verwendet werden. (FORMS-13754)
 * Wenn Benutzende in AEM Forms Service Pack 19 (6.5.19.1) eine vorhandene JobOptions-Datei im Bereich „Dienste/PDF Generator/Adobe PDF-Einstellungen“ von adminui von AEM Forms JEE hochladen möchten, schlägt dies fehl. Außerdem wird die folgende Fehlermeldung angezeigt (FORMS-13597):
   `"An error has occurred while processing your request. Please use the breadcrumb links to navigate to another page."`
 * Wenn Benutzende von AEM Forms Service Pack 15 (6.5.15.0) auf AEM Forms Service Pack (6.5.17.0) oder AEM Forms Service Pack (6.5.19.0) migrieren, wird der FD-Schlüssel dupliziert, wodurch die Formulare nicht richtig übersetzt werden. (FORMS-13461)
@@ -286,7 +286,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 #### Lokalisierung{#foundation-localization-6521}
 
 * Im Vorlageneditor ist die Textzeichenfolge *`No video available.`* nicht lokalisiert. (SITES-13190)
-* Zeichenfolgen nach der Aktivierung oder Deaktivierung einer Person sind unter **Tools** > **Sicherheit** > **Benutzer** > *beliebiger_Benutzername* > **Aktivieren** > **OK** und bei Auswahl von *beliebiger_Benutzername* > **Deaktivieren** > **OK** nicht lokalisiert.  (NPR-41737)
+* Zeichenfolgen nach der Aktivierung oder Deaktivierung einer Person sind unter **Tools** > **Sicherheit** > **Benutzer** > *beliebiger_Benutzername* > **Aktivieren** > **OK** und bei Auswahl von *beliebiger_Benutzername* > **Deaktivieren** > **OK** nicht lokalisiert. (NPR-41737)
 
 #### Oak {#foundation-oak-6521}
 
@@ -346,7 +346,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 1. Erstellen Sie vor der Installation eine Momentaufnahme oder ein neues Backup Ihrer [!DNL Experience Manager]-Instanz.
 
-1. Laden Sie das Service Pack von dem [Software-Verteilungsportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.21.0.zip) herunter.<!-- UPDATE FOR EACH NEW RELEASE -->
+1. Laden Sie das Service Pack von dem [Software-Verteilungsportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.21.0.zip) herunter. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Öffnen Sie Package Manager und wählen Sie dann **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen. Weitere Informationen finden Sie unter [Package Manager](/help/sites-administering/package-manager.md).
 
@@ -373,7 +373,7 @@ Es gibt zwei verschiedene Methoden, mit denen Sie [!DNL Experience Manager] 6.5.
 
 Informationen zu den Plattformen, die für diese Version zertifiziert sind, finden Sie in den [technischen Anforderungen](/help/sites-deploying/technical-requirements.md).
 
-1. Die Seite mit den Produktinformationen (`/system/console/productinfo`) zeigt die aktualisierte Versionszeichenfolge `Adobe Experience Manager (6.5.21.0)` unter [!UICONTROL Installierte Produkte] an.<!-- UPDATE FOR EACH NEW RELEASE -->
+1. Die Seite mit den Produktinformationen (`/system/console/productinfo`) zeigt die aktualisierte Versionszeichenfolge `Adobe Experience Manager (6.5.21.0)` unter [!UICONTROL Installierte Produkte] an. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Alle OSGi-Bundles sind in der OSGi-Konsole entweder **[!UICONTROL AKTIV]** oder **[!UICONTROL FRAGMENT]** (zu verwendende Web-Konsole: `/system/console/bundles`).
 
@@ -545,7 +545,7 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
 * Nach der Aktualisierung auf AEM Forms Service Pack 6.5.21.0 kann der `PaperCapture`-Dienst keine OCR-Vorgänge (Optical Character Recognition) für PDFs mehr durchführen. Der Dienst generiert keine Ausgabe in Form einer PDF oder einer Protokolldatei. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (CQDOC-21680)
 
-* Wenn Benutzer von AEM 6.5 Forms Service Pack 18 (6.5.18.0) oder AEM 6.5 Forms Service Pack 19 (6.5.19.0) auf AEM 6.5 Forms Service Pack 20 (6.5.20.0) oder AEM 6.5 Forms Service Pack 21 (6.5.21.0) aktualisieren, wird eine JSP-Kompilierung angezeigt Fehlerkorrektur - dadurch wird verhindert, dass adaptive Formulare geöffnet oder erstellt werden, und es werden auch Fehler mit anderen AEM Benutzeroberflächen wie dem Seiteneditor, AEM Forms Benutzeroberfläche und AEM Workflow-Editor verursacht. (FORMS-15256)
+* Wenn Benutzende von AEM 6.5 Forms Service Pack 18 (6.5.18.0) oder AEM 6.5 Forms Service Pack 19 (6.5.19.0) auf AEM 6.5 Forms Service Pack 20 (6.5.20.0) oder AEM 6.5 Forms Service Pack 21 (6.5.21.0) aktualisieren, tritt ein JSP-Kompilierungsfehler auf. Dieser verhindert, dass adaptive Formulare geöffnet oder erstellt werden, und führt außerdem zu Fehlern mit anderen AEM-Benutzeroberflächen wie dem Seiteneditor, der AEM Forms-Benutzeroberfläche und dem AEM-Workflow-Editor. (FORMS-15256)
 
   Wenn ein solches Problem auftritt, führen Sie die folgenden Schritte aus, um es zu beheben:
    1. Navigieren Sie zum Verzeichnis . `/libs/fd/aemforms/install/` in CRXDE.
