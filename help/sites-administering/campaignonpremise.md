@@ -9,10 +9,10 @@ exl-id: a7281ca0-461f-4762-a631-6bb539596200
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 6fb844ea428c15adab71503dde6138e46eabf0a3
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 100%
+source-wordcount: '1564'
+ht-degree: 99%
 
 ---
 
@@ -88,6 +88,10 @@ Das Integrationspaket erstellt automatisch die Benutzerin oder den Benutzer von 
    ![Sicherheitszone festlegen](assets/access-rights.png)
 
 1. Wählen Sie die entsprechende Sicherheitszone aus und definieren Sie die vertrauenswürdige IP-Maske nach Bedarf.
+
+   >[!CAUTION]
+   >
+   >Die zu konfigurierende Sicherheitszone ist **Netzwerk privater Unternehmen (VPN+LAN)**.
 
 1. Klicken Sie auf **Speichern**.
 
@@ -201,7 +205,7 @@ Sie haben den Externalizer konfiguriert, und Adobe Campaign kann nun auf Ihre In
 
 >[!NOTE]
 >
->Die Veröffentlichungsinstanz muss vom Adobe Campaign-Server aus erreichbar sein. Falls sie auf `localhost:4503` oder einen anderen Server verweist, den Adobe Campaign nicht erreichen kann, werden Bilder von AEM nicht auf der Adobe Campaign-Konsole angezeigt.
+Die Veröffentlichungsinstanz muss vom Adobe Campaign-Server aus erreichbar sein. Falls sie auf `localhost:4503` oder einen anderen Server verweist, den Adobe Campaign nicht erreichen kann, werden Bilder von AEM nicht auf der Adobe Campaign-Konsole angezeigt.
 
 ## Konfigurieren des Benutzers „campaign-remote“ in AEM {#configure-user}
 
