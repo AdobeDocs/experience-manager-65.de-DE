@@ -5,10 +5,10 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: ad71f1c92bba90000f72319536fffd255fb4db6e
-workflow-type: ht
-source-wordcount: '673'
-ht-degree: 100%
+source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
+workflow-type: tm+mt
+source-wordcount: '903'
+ht-degree: 75%
 
 ---
 
@@ -28,6 +28,23 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
     <td><strong>Datum</strong></td>
     <td><strong>Hotfix-Downloadlink (AEM Software Distribution-Link)</strong></td>
     <td><strong>Behobene Probleme</strong></td>
+  </tr>
+  <tr>
+    <td>Donnerstag, 10. Juli 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/jboss/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-jboss.zip.zip">Hotfix für AEM Service Pack 6.5.21.0 unter Windows für JBoss JEE-Server </a> </li>
+      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/jboss/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-jboss.tar.gz">Hotfix für AEM Service Pack 6.5.21.0 unter Linux für JBoss JEE-Server </a> </li>
+       <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/websphere/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-websphere.zip.zip">Hotfix für AEM Service Pack 6.5.21.0 unter Windows für Webshpere JEE-Server </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/websphere/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-websphere.tar.gz">Hotfix für AEM Service Pack 6.5.21.0 unter Linux für Webshpere JEE-Server</a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/weblogic/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-weblogic.zip.zip">Hotfix für AEM Service Pack 6.5.21.0 unter Windows für Weblogic JEE-Server </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/weblogic/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-weblogic.tar.gz">Hotfix für AEM Service Pack 6.5.21.0 unter Linux für Weblogic JEE-Server</a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul><li>Wenn ein Benutzer auf dem JEE-Server auf AEM Forms Service Pack 20 (6.5.20.0) aktualisiert und PDF mithilfe von Ausgabediensten generiert, werden die PDF mit Zugänglichkeitsproblemen gerendert. (LC-3922112)</li><li>Mit dem Ausgabedienst auf AEM Forms JEE generierte getaggte PDF zeigen "Warnung bezüglich unangemessener Struktur". (LC-3922038)</li><li>Wenn ein Formular auf AEM Forms JEE gesendet wird, werden die Instanzen eines sich wiederholenden XML-Elements aus den Daten entfernt. (LC-3922017)</li><li>Wenn ein Benutzer in einer Linux-Umgebung ein adaptives Formular (auf JEE) auf dem HTML rendert, schlägt die Wiedergabe fehl. (LC-3921957)</li><li>Wenn ein Benutzer mithilfe des Output-Dienstes auf AEM Forms JEE eine XTG-Datei in das PostScript-Format konvertiert, schlägt der Fehler fehl: AEM_OUT_001_003: Unerwartete Ausnahme: PAExecute Failure: XFA_RENDER_FAILURE. (LC-3921720)</li><li>Nach der Aktualisierung auf AEM Forms Service Pack 18 (6.5.18.0) auf dem JEE-Server kann ein Benutzer beim Senden eines Formulars HTML5 oder PDF forms nicht rendern und XMLFM stürzt ab. (LC-3921718)
+    </ul>
+    </td>    
   </tr>
   <tr>
     <td>21. Juni 2024</td>
