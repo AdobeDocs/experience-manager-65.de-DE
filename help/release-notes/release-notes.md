@@ -9,7 +9,7 @@ exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
 workflow-type: tm+mt
 source-wordcount: '4332'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -547,8 +547,8 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 * Wenn Benutzende von AEM 6.5 Forms Service Pack 18 (6.5.18.0) oder AEM 6.5 Forms Service Pack 19 (6.5.19.0) auf AEM 6.5 Forms Service Pack 20 (6.5.20.0) oder AEM 6.5 Forms Service Pack 21 (6.5.21.0) aktualisieren, tritt ein JSP-Kompilierungsfehler auf. Dieser verhindert, dass adaptive Formulare geöffnet oder erstellt werden, und führt außerdem zu Fehlern mit anderen AEM-Benutzeroberflächen wie dem Seiteneditor, der AEM Forms-Benutzeroberfläche und dem AEM-Workflow-Editor. (FORMS-15256)
 
   Wenn ein solches Problem auftritt, führen Sie die folgenden Schritte aus, um es zu beheben:
-   1. Navigieren Sie zum Verzeichnis . `/libs/fd/aemforms/install/` in CRXDE.
-   1. Löschen Sie das Bundle mit dem Namen `com.adobe.granite.ui.commons-5.10.26.jar`.
+   1. Navigieren Sie in CRXDE zum Verzeichnis `/libs/fd/aemforms/install/`.
+   1. Löschen Sie das Bundle `com.adobe.granite.ui.commons-5.10.26.jar`.
    1. Starten Sie den AEM-Server neu.
 
 * Wenn ein Benutzer auf dem JEE-Server auf AEM Forms Service Pack 20 (6.5.20.0) aktualisiert und PDF mithilfe von Ausgabediensten generiert, werden die PDF mit Zugänglichkeitsproblemen gerendert. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922112)
