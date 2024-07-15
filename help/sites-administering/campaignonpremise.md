@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 source-git-commit: 6fb844ea428c15adab71503dde6138e46eabf0a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1564'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -91,7 +91,7 @@ Das Integrationspaket erstellt automatisch die Benutzerin oder den Benutzer von 
 
    >[!CAUTION]
    >
-   >Die zu konfigurierende Sicherheitszone ist **Private Unternehmensnetzwerk (VPN+LAN)**.
+   >Die zu konfigurierende Sicherheitszone ist **Privates Unternehmensnetzwerk (VPN+LAN)**.
 
 1. Klicken Sie auf **Speichern**.
 
