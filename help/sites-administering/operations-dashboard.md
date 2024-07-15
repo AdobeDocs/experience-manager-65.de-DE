@@ -10,10 +10,10 @@ exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: e4c8901ab9484d91a1f5ced285efe60613984aeb
 workflow-type: tm+mt
-source-wordcount: '5868'
-ht-degree: 100%
+source-wordcount: '5686'
+ht-degree: 99%
 
 ---
 
@@ -330,74 +330,9 @@ Standardmäßig werden bei einer vordefinierten AEM-Instanz alle 60 Sekunden Kon
 
 Sie können den **Zeitraum** in der [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) mit der **Konfiguration der Konsistenzprüfung von Anfragen** (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics) festlegen.
 
-## Überwachung mit Nagios {#monitoring-with-nagios}
+## Überwachung mit externen Diensten {#monitoring-with-external-services}
 
-Das Konsistenzprüfungs-Dashboard kann über die Granite JMX Mbeans in Nagios integriert werden. Das nachfolgende Beispiel zeigt, wie Sie eine Prüfung hinzufügen, die verwendeten Speicher auf dem Server anzeigt, auf dem AEM ausgeführt wird.
-
-1. Installieren und konfigurieren Sie Nagios auf dem Überwachungs-Server.
-1. Installieren Sie anschließend den Nagios Remote Plugin Executor (NRPE).
-
-   >[!NOTE]
-   >
-   >Weitere Informationen zur Installation von Nagios und NRPE auf Ihrem System finden Sie in der [Nagios-Dokumentation](https://library.nagios.com/library/products/nagios-core/manuals//).
-
-1. Fügen Sie eine Host-Definition für den AEM-Server hinzu. Sie können diese Aufgabe über die Nagios XI-Web-Schnittstelle mithilfe von Configuration Manager durchführen:
-
-   1. Öffnen Sie einen Browser und zeigen Sie auf den Nagios-Server.
-   1. Klicken Sie im oberen Menü auf die Schaltfläche **Konfigurieren**.
-   1. Klicken Sie in der linken Spur unter **Erweiterte Konfiguration** auf **Core-Konfigurations-Manager**.
-   1. Klicken Sie unter dem Abschnitt **Überwachung** auf den Link **Hosts**.
-   1. Fügen Sie die Hostdefinition hinzu:
-
-   ![chlimage_1-118](assets/chlimage_1-118.png)
-
-   Nachfolgend finden Sie ein Beispiel einer Host-Konfigurationsdatei unter Verwendung von Nagios Core:
-
-   ```xml
-   define host {
-      address 192.168.0.5
-      max_check_attempts 3
-      check_period 24x7
-      check-command check-host-alive
-      contacts admin
-      notification_interval 60
-      notification_period 24x7
-   }
-   ```
-
-1. Installieren Sie Nagios und NRPE auf dem AEM-Server.
-1. Installieren Sie das Plug-in [check_http_json](https://github.com/phrawzty/check_http_json) auf beiden Servern.
-1. Definieren Sie einen generischen JSON-Prüfbefehl auf beiden Servern:
-
-   ```xml
-   define command{
-   
-       command_name    check_http_json-int
-   
-       command_line    /usr/lib/nagios/plugins/check_http_json --user "$ARG1$" --pass "$ARG2$" -u 'https://$HOSTNAME$:$ARG3$/$ARG4$' -e '$ARG5$' -w '$ARG6$' -c '$ARG7$'
-   
-   }
-   ```
-
-1. Fügen Sie einen Dienst für verwendeten Speicher auf dem AEM-Server hinzu:
-
-   ```xml
-   define service {
-   
-       use generic-service
-   
-       host_name my.remote.host
-   
-       service_description AEM Author Used Memory
-   
-       check_command  check_http_json-int!<cq-user>!<cq-password>!<cq-port>!system/sling/monitoring/mbeans/java/lang/Memory.infinity.json!{noname}.mbean:attributes.HeapMemoryUsage.mbean:attributes.used.mbean:value!<warn-threshold-in-bytes>!<critical-threshold-in-bytes>
-   
-       }
-   ```
-
-1. Überprüfen Sie, ob das Nagios-Dashboard den neu erstellten Dienst anzeigt:
-
-   ![chlimage_1-119](assets/chlimage_1-119.png)
+Die Integration mit externen Technologien oder Anbietern ist möglich. Weitere Informationen finden Sie in der entsprechenden Dokumentation.
 
 ## Diagnose-Tools {#diagnosis-tools}
 
