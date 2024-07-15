@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4332'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Einige der wichtigsten Funktionen und Verbesserungen, die in dieser Version enth
 * **16-Bit-PNG-Unterstützung**: Der ImageToPdf-Dienst von PDF Generator unterstützt jetzt die Konversion von PNGs mit einer 16-Bit-Farbtiefe.
 * **Anwenden von Artefakten auf einzelne Textblöcke in XDPs**: Mit Forms Designer können Benutzende jetzt Einstellungen für einzelne Textblöcke in XDP-Dateien konfigurieren. Mit dieser Funktion können Sie die Elemente steuern, die in den resultierenden PDFs als Artefakte behandelt werden. Diese Elemente – wie Kopf- und Fußzeilen – werden für Hilfstechnologien verfügbar gemacht. Zu den Hauptfunktionen gehören das Markieren von Textbausteinen als Artefakte und das Einbetten dieser Einstellungen in die XDP-Metadaten. Der Ausgabe-Service von Forms wendet diese Einstellungen während der PDF-Erstellung an und stellt dabei ein ordnungsgemäßes PDF/UA-Tagging sicher.
 * **AEM Forms Designer ist nach dem Standard `GB18030:2022` zertifiziert**: Mit der Zertifizierung `GB18030:2022` unterstützt Forms Designer jetzt den chinesischen Unicode-Zeichensatz, was die Eingabe chinesischer Zeichen in alle bearbeitbaren Felder und Dialogfelder ermöglicht.
-* [Unterstützung für die WebToPDF-Route in JEE Server](/help/forms/using/admin-help/configure-service-settings.md#generate-pdf-service-settings-generate-pdf-service-settings), die den PDF Generator-Dienst verwendet, unterstützt jetzt die WebToPDF-Route zum Konvertieren von HTML-Dateien in PDF-Dokumente in JEE, zusätzlich zu den bestehenden WebKit- und WebCapture-Routen (nur Windows). Während die WebToPDF-Route bereits auf OSGi verfügbar und auf JEE erweitert ist. Jetzt unterstützt der PDF Generator-Dienst auf JEE- und OSGi-Plattformen die folgenden Routen über verschiedene Betriebssysteme hinweg:
+* [Unterstützung der WebToPDF-Route in JEE Server](/help/forms/using/admin-help/configure-service-settings.md#generate-pdf-service-settings-generate-pdf-service-settings): Der PDF Generator-Dienst unterstützt jetzt die WebToPDF-Route für die Konvertierung von HTML-Dateien in PDF-Dokumente auf JEE, zusätzlich zu den bereits vorhandenen Routen „Webkit“ und „WebCapture“ (nur Windows). Während die WebToPDF-Route bereits auf OSGi verfügbar war, wurde sie auf JEE erweitert. Jetzt unterstützt der PDF Generator-Dienst sowohl auf JEE- als auch auf OSGi-Plattformen die folgenden Routen über verschiedene Betriebssysteme hinweg:
    * **Windows**: Webkit, WebCapture, WebToPDF
    * **Linux®**: Webkit, WebToPDF
 
@@ -551,12 +551,12 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
    1. Löschen Sie das Bundle `com.adobe.granite.ui.commons-5.10.26.jar`.
    1. Starten Sie den AEM-Server neu.
 
-* Wenn ein Benutzer auf dem JEE-Server auf AEM Forms Service Pack 20 (6.5.20.0) aktualisiert und PDF mithilfe von Ausgabediensten generiert, werden die PDF mit Zugänglichkeitsproblemen gerendert. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922112)
-* Wenn ein Benutzer mit dem Ausgabedienst auf JEE getaggte PDF generiert, wird &quot;Warnung bezüglich unangemessener Struktur&quot;angezeigt. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922038)
+* Wenn Benutzende auf AEM Forms Service Pack 20 (6.5.20.0) auf JEE Server aktualisieren und mithilfe von Ausgabe-Services PDF-Dateien generieren, werden die PDF-Dateien mit Problemen bezüglich der Barrierefreiheit gerendert. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922112)
+* Wenn Benutzende getaggte PDF-Dateien mit dem Ausgabe-Service auf JEE generieren, wird eine Warnung zu einer unangemessenen Struktur angezeigt. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922038)
 * Wenn ein Formular auf AEM Forms JEE gesendet wird, werden die Instanzen eines sich wiederholenden XML-Elements aus den Daten entfernt. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922017)
-* Wenn ein Benutzer in einer Linux-Umgebung ein adaptives Formular (auf JEE) auf dem HTML rendert, schlägt die Wiedergabe fehl. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3921957)
-* Wenn ein Benutzer mithilfe des Output-Dienstes auf AEM Forms JEE eine XTG-Datei in das PostScript-Format konvertiert, schlägt der Fehler fehl: `AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE`. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3921720)
-* Nach der Aktualisierung auf AEM Forms Service Pack 18 (6.5.18.0) auf dem JEE-Server kann ein Benutzer beim Senden eines Formulars HTML5 oder PDF forms nicht rendern und XMLFM stürzt ab. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3921718)
+* Wenn Benutzende in einer Linux-Umgebung ein adaptives Formular (auf JEE) in HTML rendern, schlägt das Rendern fehl. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3921957)
+* Wenn Benutzende mithilfe des Ausgabe-Services von AEM Forms JEE eine XTG-Datei in das PostScript-Format konvertieren, schlägt der Vorgang mit folgendem Fehler fehl: `AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE`. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3921720)
+* Nach dem Upgrade auf AEM Forms Service Pack 18 (6.5.18.0) auf JEE Server wird ein von Benutzenden gesendetes Formular nicht als HTML5- oder PDF-Formular gerendert und XMLFM stürzt ab. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3921718)
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 
