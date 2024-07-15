@@ -201,7 +201,6 @@ Im Folgenden finden Sie eine Beschreibung der Auswirkungen, die im Repository au
   >Die Eigenschaft `cq:backlinks` wird dem verschobenen oder zusammengeführten Tag nur hinzugefügt, wenn eine der folgenden Bedingungen erfüllt ist:
   >
   >1. Tag wird im Inhalt verwendet (was bedeutet, dass es einen Verweis hat).
-
   >1. Das Tag enthält bereits verschobene untergeordnete Elemente.
 
 * Das Lesen einer `cq:tags`-Eigenschaft eines Inhaltsknotens umfasst die folgende Auflösung:
